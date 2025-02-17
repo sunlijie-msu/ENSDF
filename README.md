@@ -1,2 +1,2 @@
 # A35
- A35 ENSDF
+ A35 Mass Chain Evaluation for ENSDF.
