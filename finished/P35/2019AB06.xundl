@@ -1,0 +1,404 @@
+ 36SI    37AL B-N DECAY:XUNDL-5        2023OG04                           202311
+ 36SI c  Compiled (unevaluated) dataset from 2023Og04:                          
+ 36SI c  Phys. Rev. C 108, 034304 (2023)                                        
+ 36SI c  Compiled by J. Chen (FRIB, MSU),September 9, 2023                      
+ 36SI c  2023Og04: {+37}Al ions were produced by fragmentation of a 140         
+ 36SI2c  MeV/nucleon {+48}Ca beam from the Coupled Cyclotron Facility (CCF) of  
+ 36SI3c  NSCL at Michigan State University on a 642 mg/cm{+2} {+9}Be target.    
+ 36SI4c  Fragments were separated and identified using the A1900 spectrometer on
+ 36SI5c  an event-by-event basis according to energy loss and time-of-flight    
+ 36SI6c  information. The selected ions were implanted into a 51mm|*51mm|*3mm   
+ 36SI7c  CeBr{-3} detector and |b-delayed |g rays were detected with an array of
+ 36SI8c  15 LaBr{-3}(Ce) detectors in a ring at 90|' and the Segmented Germanium
+ 36SI9c  Array (SeGA) of 16 HPGe detectors in two concentric rings in the       
+ 36SIac  Beta-SeGA configuration. Measured E|g, I|g, |g|g-coin, |b|g-coin.      
+ 36SI cG E,RI$From 2023Og04. Intensities are relative to I|g=100 {I6} of 156|g  
+ 36SI2cG in {+37}Si from {+37}Al |b{+-} decay.                                  
+ 36SI cL E,J$From Adopted Levels of {+36}Si in ENSDF database (2018 update)     
+ 37AL  P 0            (5/2+)            10.7 MS   13             14.17E3  19    
+ 37AL cP J$From systematics (2021Ko07) and shell-model predictions (2019Mo01)   
+ 37AL cP T$From Adopted Levels of {+37}Al in ENSDF database (2012 update).      
+ 37AL2cP Others: 11.5 ms {I4} (2015St14), 11.3 ms {I4} (2019Ab06)               
+ 37AL cP QP$From 2021Wa16 (AME2020)                                             
+ 36SI  N                       1.0                                              
+ 36SI PN                                                                     5  
+ 36SI  G 1504        4       1                                                  
+ 36SI  L 0           0+                                                         
+ 36SI  L 1409        2+                                                         
+ 36SI  G 1409        59      4                                                  
+ 36SI  L 2850        (4+)                                                       
+ 36SI  G 1442        4       1                                                  
+
+ 37AL    9BE(48CA,37ALG):T1/2:XUNDL-3  2019AB06                           202111
+ 37AL c  Compiled (unevaluated) dataset from 2019Ab06:                          
+ 37AL c  Phys. Rev. C 100, 014323 (2019)                                        
+ 37AL c  Compiled by E.A. McCutchan (NNDC,BNL) October 8, 2021                  
+ 37AL c  {+37}Al ions were produced by fragmentation of a 140                   
+ 37AL2c  MeV/nucleon {+48}Ca beam from NSCL at Michigan State University on a   
+ 37AL3c  775 mg/cm{+2} Be target. Fragments were separated and identified       
+ 37AL4c  using the A1900 spectrometer. The selected ions were implanted into    
+ 37AL5c  a 16 x 16 segmented planar double-sided strip detector surrounded      
+ 37AL6c  by 16 detectors of SeGA. Measured |b|g(t). Deduced half-life,          
+ 37AL7c  beta-delayed neutron branch.                                           
+ 37AL  L 0           5/2+              11.3 MS   4                              
+ 37AL2 L %B-=100$ %B-N=52 5 (2019Ab06)                                          
+ 37AL cL J$From shell-model calculations                                        
+ 37AL cL T$From |b-156|g,562|g(t) (2019Ab06).                                   
+ 37AL cL %B-N$from measurement of |b decay of {+36}Si to {+36}P and             
+ 37AL2cL using known absolute branching ratios of |g rays in {+36}P.            
+
+ 37SI    37AL B- DECAY:XUNDL-5         2019AB06                           202111
+ 37SI c  Compiled (unevaluated) dataset from 2019Ab06:                          
+ 37SI c  Phys. Rev. C 100, 014323 (2019)                                        
+ 37SI c  Compiled by E.A. McCutchan (NNDC,BNL) October 8, 2021                  
+ 37SI c  {+37}Al ions were produced by fragmentation of a 140 MeV/nucleon       
+ 37SI2c  {+48}Ca beam from NSCL at Michigan State University on a 775           
+ 37SI3c  mg/cm{+2} Be target. Fragments were separated and identified using     
+ 37SI4c  the A1900 spectrometer. The selected ions were implanted into a 16 x   
+ 37SI5c  16 segmented planar double-sided strip detector surrounded by 16       
+ 37SI6c  detectors of SeGA. Measured E|g, I|g, |g|g, |b|g, |b|g(t)              
+ 37SI cL E,J$From Figure 3 of 2019Ab06                                          
+ 37AL  P 0            5/2+              11.3 MS   4              16.40E3  15    
+ 37AL cP T$From |b|g(t) (2019Ab06).                                             
+ 37SI  N 0.24                   1.0       1.0                                   
+ 37SI cN NR$from total number of implants (2019Ab06), although exact            
+ 37SI2cN normalization not provide by 2019Ab06. Compiler deduces normalization  
+ 37SI3cN from %I|b=9.6 in Figure 3 of 2019Ab06                                  
+ 37SI PN                                                                     4  
+ 37SI  L 0            (5/2-)            135 MS    8                             
+ 37SI cL T$from |b-861|g(t) (2019Ab06)                                          
+ 37SI  L 68        1  (7/2-)                                                    
+ 37SI cL $the 68|g from this level likely not observed due to attenuation in    
+ 37SI2cL the implant detector.                                                  
+ 37SI  L 156       1  (3/2-)                                                    
+ 37SI  G 156          100                                                       
+ 37SI  L 717       1  (3/2+)                                                    
+ 37SI  G 562          92                                                        
+ 37SI  G 717          34                                                        
+ 37SI  B             31.3    9           4.72    3                              
+ 37SIS B EAV=7544 74                                                            
+ 37SI  L 1270      1  (5/2+)                                                    
+ 37SI  G 1115         16                                                        
+ 37SI  G 1202         7                                                         
+ 37SI  G 1270         17                                                        
+ 37SI  B             9.6     9           5.16    5                              
+ 37SIS B EAV=7272 74                                                            
+
+ 37SI    37SI B-:T1/2:XUNDL-6          2019AB06                           202111
+ 37SI c  Compiled (unevaluated) dataset from 2019Ab06:                          
+ 37SI c  Phys. Rev. C 100, 014323 (2019)                                        
+ 37SI c  Compiled by E.A. McCutchan (NNDC,BNL) October 8, 2021                  
+ 37SI c  {+37}Al ions were produced by fragmentation of a 140                   
+ 37SI2c  MeV/nucleon {+48}Ca beam from NSCL at Michigan State University on a   
+ 37SI3c  775 mg/cm{+2} Be target. Fragments were separated and identified       
+ 37SI4c  using the A1900 spectrometer. The selected ions were implanted into    
+ 37SI5c  a 16 x 16 segmented planar double-sided strip detector surrounded      
+ 37SI6c  by 16 detectors of SeGA. Measured |b|g(t). Deduced half-life of        
+ 37SI7c  {+37}Si populated in the decay of {+37}Al.                             
+ 37SI  L 0           (5/2-)            135 MS    8                              
+ 37SI2 L %B-=100                                                                
+ 37SI cL T$From |b-861|g(t) (2019Ab06). Other: 138 ms {I4} from combined        
+ 37SI2cL to |b(t) of {+37}Al and {+37}Si.                                       
+
+ 37SI    37AL B- DECAY:XUNDL-7         2023OG04                           202311
+ 37SI c  Compiled (unevaluated) dataset from 2023Og04:                          
+ 37SI c  Phys. Rev. C 108, 034304 (2023)                                        
+ 37SI c  Compiled by J. Chen (FRIB, MSU), September 9, 2023                     
+ 37SI c  2023Og04: {+37}Al ions were produced by fragmentation of a 140         
+ 37SI2c  MeV/nucleon {+48}Ca beam from the Coupled Cyclotron Facility (CCF) of  
+ 37SI3c  NSCL at Michigan State University on a 642 mg/cm{+2} {+9}Be target.    
+ 37SI4c  Fragments were separated and identified using the A1900 spectrometer on
+ 37SI5c  an event-by-event basis according to energy loss and time-of-flight    
+ 37SI6c  information. The selected ions were implanted into a 51mm|*51mm|*3mm   
+ 37SI7c  CeBr{-3} detector and |b-delayed |g rays were detected with an array of
+ 37SI8c  15 LaBr{-3}(Ce) detectors in a ring at 90|' and the Segmented Germanium
+ 37SI9c  Array (SeGA) of 16 HPGe detectors in two concentric rings in the       
+ 37SIac  Beta-SeGA configuration. Measured E|g, I|g, |g|g-coin, |b|g-coin,      
+ 37SIbc  |b|g(t). Deduced levels, halflives, |g-ray transition strengths.       
+ 37SIcc  Comparisons with shell-model calculations using SDPF-|m, SDPF-U-Si and 
+ 37SIdc  FSU interactions.                                                      
+ 37SI cG E,RI$From 2023Og04                                                     
+ 37SI cL E,J$As given in 2023Og04                                               
+ 37SI cL T$From |b|g(t) in 2023Og04                                             
+ 37AL  P 0            (5/2+)            10.7 MS   13             16.38E3  21    
+ 37AL cP J$From systematics (2021Ko07) and shell-model predictions (2019Mo01)   
+ 37AL cP T$From Adopted Levels of {+37}Al in ENSDF database (2012 update).      
+ 37AL2cP Others: 11.5 ms {I4} (2015St14), 11.3 ms {I4} (2019Ab06)               
+ 37AL cP QP$From 2021Wa16 (AME2020)                                             
+ 37SI  N                       1.0                                              
+ 37SI PN                                                                     5  
+ 37SI  G 2465        2       1                                                  
+ 37SI cG E$newly observed transition in 2023Go04                                
+ 37SI  L 0            (5/2-)                                                    
+ 37SI  L 68           (7/2-)                                                    
+ 37SI  G 68                                                                    S
+ 37SI cG $Not observed in {+37}Al |b{+-} decay (2023Og04)                       
+ 37SI  L 156          (3/2-)           3.20 NS   4                              
+ 37SI  G 156          100    6 [M1]                                             
+ 37SIB G BM1=0.00324 4 (2023Og04)                                               
+ 37SI  L 717          (3/2+)                                                    
+ 37SI  G 562          88     5                                                  
+ 37SI  G 717          31     2                                                  
+ 37SI  L 1270         (5/2+)                                                    
+ 37SI  G 1115         15     1                                                  
+ 37SI  G 1202         7      1                                                  
+ 37SI  G 1270         16     2                                                  
+
+ 37P     37SI B- DECAY:XUNDL-5         2019AB06                           202111
+ 37P  c  Compiled (unevaluated) dataset from 2019Ab06:                          
+ 37P  c  Phys. Rev. C 100, 014323 (2019)                                        
+ 37P  c  Compiled by E.A. McCutchan (NNDC,BNL) October 8, 2021                  
+ 37P  c  {+37}Al ions were produced by fragmentation of a 140 MeV/nucleon       
+ 37P 2c  {+48}Ca beam from NSCL at Michigan State University on a 775           
+ 37P 3c  mg/cm{+2} Be target. Fragments were separated and identified using     
+ 37P 4c  the A1900 spectrometer. The selected ions were implanted into a 16 x   
+ 37P 5c  16 segmented planar double-sided strip detector surrounded by 16       
+ 37P 6c  detectors of SeGA. The decay of {+37}P was studied as a daughter to    
+ 37P 7c  the {+37}Al decay chain. Measured E|g, I|g, |g|g, |b|g using 16        
+ 37P 8c  detectors of the SeGA array.                                           
+ 37P  cL E$From a least-squares fit to E|g, by compiler.                        
+ 37P  cL J$As proposed by 2019Ab06                                              
+ 37P  cB IB$As given by 2019Ab06.  Compiler cannot consistently reproduce       
+ 37P 2cB these, however, normalization procedure is not explicilty stated in    
+ 37P 3cB 2019Ab06.                                                              
+ 37SI  P 0            (5/2-)            135 MS    8              12.42E3  12    
+ 37SI cP T$from 2019Ab06.                                                       
+ 37P   N 0.49                   1.0       1.0                                   
+ 37P  cN NR$Procedure for normalization not stated by 2019Ab06.  Value given    
+ 37P 2cN here is deduced by compiler by requiring %I|b=14.7 for the 4569-keV    
+ 37P 3cN level as given in Figure 6 of 2019Ab06.  However, this value does not  
+ 37P 4cN consistently reproduce the feedings to all other levels.               
+ 37P   L 0            1/2+                                                      
+ 37P   L 861.0     5  3/2+                                                      
+ 37P   G 860.9     5  100                                                       
+ 37P   L 1299.7    6  5/2+                                                      
+ 37P   G 438.7     5  30     5                                                  
+ 37P   G 1300.1    10 95     5                                                  
+ 37P   L 2200.2    8                                                            
+ 37P   G 901                                                                    
+ 37P  cG E$shown in Figure 6 but not included in Table I.                       
+ 37P   G 1338.7    10 14     2                                                  
+ 37P   B             2       1           6.11    22                             
+ 37P S B EAV=4849 60                                                            
+ 37P   L 2480.1    10                                                           
+ 37P   G 1180.6    10 20     3                                                  
+ 37P   L 2664.2    9                                                            
+ 37P   G 1364.5    10 14     2                                                  
+ 37P   G 1802.5    15 13     3                                                  
+ 37P   B             2       1           6.02    22                             
+ 37P S B EAV=4620 60                                                            
+ 37P   L 3267.6    21                                                           
+ 37P   G 2406.5    20 4      1                                                  
+ 37P   B             2.7     5           5.75    9                              
+ 37P S B EAV=4322 60                                                            
+ 37P   L 3625.0    21                                                           
+ 37P   G 2763.9    20 9      3                                                  
+ 37P   B             4.7     5           5.43    6                              
+ 37P S B EAV=4146 60                                                            
+ 37P   L 3778.8    11                                                           
+ 37P   G 1114.3                                                                 
+ 37P  cG E$doublet with 1115-keV transition in {+37}Si, intensity could not be  
+ 37P 2cG determined.                                                            
+ 37P   G 1299                                                                   
+ 37P  cG E$shown in Figure 6 but only a 1300.1|g indicated in Table I,          
+ 37P 2cG presumably from the 1300-keV level.                                    
+ 37P   L 3866      3                                                            
+ 37P   G 3005.0    30 1      LT                                                 
+ 37P   B             2.0     5           5.75    12                             
+ 37P S B EAV=4027 60                                                            
+ 37P   L 4110.3    13                                                           
+ 37P   G 1910.0    10 14     2                                                  
+ 37P   B             9.8     6           5.00    5                              
+ 37P S B EAV=3907 60                                                            
+ 37P   L 4335.4    11                                                           
+ 37P   G 3035                                                                  ?
+ 37P  cG E$shown in Figure 6 but not included in Table I.                       
+ 37P   G 3477.3    25 2      1                                                  
+ 37P   B             1.8     4           5.68    11                             
+ 37P S B EAV=3796 60                                                            
+ 37P   L 4550      3                                                            
+ 37P   G 3688.3    25 8      3                                                  
+ 37P   B             3.8     6           5.30    8                              
+ 37P S B EAV=3690 60                                                            
+ 37P   L 4568      3                                                            
+ 37P   G 3268.4    25 30     8                                                  
+ 37P   B             14.7    40          4.71    13                             
+ 37P S B EAV=3681 60                                                            
+ 37P   L 4726      3                                                            
+ 37P   G 3864.8    25 8      3                                                  
+ 37P   B             5.0     5           5.13    6                              
+ 37P S B EAV=3603 60                                                            
+
+ 37S     37P B- DECAY:XUNDL-4          2019AB06                           202111
+ 37S  c  Compiled (unevaluated) dataset from 2019Ab06:                          
+ 37S  c  Phys. Rev. C 100, 014323 (2019)                                        
+ 37S  c  Compiled by E.A. McCutchan (NNDC,BNL) October 13, 2021                 
+ 37S  c  {+37}Al ions were produced by fragmentation of a 140                   
+ 37S 2c  MeV/nucleon {+48}Ca beam from NSCL at Michigan State University on a   
+ 37S 3c  775 mg/cm{+2} Be target. Fragments were separated and identified       
+ 37S 4c  using the A1900 spectrometer. The selected ions were implanted into    
+ 37S 5c  a 16 x 16 segmented planar double-sided strip detector surrounded      
+ 37S 6c  by 16 detectors of SeGA.  The decay of {+37}P was studied as a         
+ 37S 7c  daughter to the {+37}Al decay chain. Measured E|g, I|g, |g|g,          
+ 37S 8c  |b|g using 16 detectors of the SeGA array.                             
+ 37S  c  All data are from Figure 12 of 2019Ab06, except where noted.           
+ 37P   P  0            1/2+            2.31 S    13             7900      40    
+ 37P  cP T$from the Adopted Levels of {+37}P in the ENSDF database              
+ 37S   N                        1.0                                             
+ 37S   L 0             7/2-                                                     
+ 37S   L 646       1   3/2-                                                     
+ 37S   G 646                                                                    
+ 37S   L 1397      1   (3/2+)                                                   
+ 37S   G 751                                                                    
+ 37S   L 2229      1   1/2+                                                     
+ 37S  cL $log {Ift} of 4.70 {I8} is given by 2019A06, for this level.           
+ 37S   G 1583                                                                   
+ 37S   L 2748      2                                                            
+ 37S   G 2102                                                                   
+ 37S   L 2900      2                                                            
+ 37S   G 2254                                                                   
+ 37S   L 3972      3                                                           ?
+ 37S   G 3326                                                                  ?
+
+ 39SI    9BE(48CA,39SIG):T1/2:XUNDL-3  2019AB06                           202111
+ 39SI c  Compiled (unevaluated) dataset from 2019Ab06:                          
+ 39SI c  Phys. Rev. C 100, 014323 (2019)                                        
+ 39SI c  Compiled by E.A. McCutchan (NNDC,BNL) July 13, 2021                    
+ 39SI c  {+39}S ions were produced by fragmentation of a 140                    
+ 39SI2c  MeV/nucleon {+48}Ca beam from NSCL at Michigan State University on a   
+ 39SI3c  775 mg/cm{+2} Be target. Fragments were separated and identified       
+ 39SI4c  using the A1900 spectrometer. The selected ions were implanted into    
+ 39SI5c  a 16 x 16 segmented planar double-sided strip detector surrounded      
+ 39SI6c  by 16 detectors of SeGA. Measured |b|g(t). Deduced half-life,          
+ 39SI7c  beta-delayed neutron branch.                                           
+ 39SI  L 0           (5/2-)            38.6 MS   13                             
+ 39SI2 L %B-=100$ %B-N=33 5 (2019Ab06)                                          
+ 39SI cL J$From shell-model calculations                                        
+ 39SI cL T$From implant-|b(t) (2019Ab06). Other: 39.2 ms {I31} from             
+ 39SI2cL 355|g(t) (2019Ab06).                                                   
+ 39SI cL %B-N$from measurement of |b decay of {+38}P to {+38}Si and             
+ 39SI2cL using known absolute branching ratios of |g rays in {+38}P decay.      
+
+ 39P     39SI B- DECAY:XUNDL-4         2019AB06                           202111
+ 39P  c  Compiled (unevaluated) dataset from 2019Ab06:                          
+ 39P  c  Phys. Rev. C 100, 014323 (2019)                                        
+ 39P  c  Compiled by E.A. McCutchan (NNDC,BNL) October 8, 2021                  
+ 39P  c  {+39}Si ions were produced by fragmentation of a 140 MeV/nucleon       
+ 39P 2c  {+48}Ca beam from NSCL at Michigan State University on a 775           
+ 39P 3c  mg/cm{+2} Be target. Fragments were separated and identified using     
+ 39P 4c  the A1900 spectrometer. The selected ions were implanted into a 16 x   
+ 39P 5c  16 segmented planar double-sided strip detector surrounded by 16       
+ 39P 6c  detectors of SeGA. Measured E|g, I|g, |g|g, |b|g using 16 detectors    
+ 39P 7c  of the SeGA array.                                                     
+ 39P  cL E$From a least-squares fit to E|g, by compiler.                        
+ 39P  cL J$As proposed by 2019Ab06                                              
+ 39SI  P 0            (5/2-)            38.6 MS   13             15.09E3  18    
+ 39SI cP T$from 2019Ab06.                                                       
+ 39P   N 0.345                  1.0                                             
+ 39P  cN NR$Stated by 2019Ab06 as determined from total number of {+39}Si       
+ 39P 2cN implants, however, value not explicility provided.  Decay scheme is    
+ 39P 3cN normalized by compiler using I|b{+-}7.6 to the 3783-keV level.         
+ 39P  cN BR$%|b{+-}n=33 {I3} determined by 2019Ab06                             
+ 39P   L 0            1/2+                                                      
+ 39P   L 355.3     4  3/2+                                                      
+ 39P   G 355.1     5  84     3                                                  
+ 39P   B             7.4     30          5.76    18                             
+ 39P S B EAV=7072 89                                                            
+ 39P   L 972.9     4  5/2+                                                      
+ 39P   G 616.8     10 10     1                                                  
+ 39P   G 973.1     5  100                                                       
+ 39P   B             6.2     28          5.75    20                             
+ 39P S B EAV=6768 89                                                            
+ 39P   L 1599.3    20                                                           
+ 39P   G 1244      2  18     2                                                  
+ 39P   B             2.4     4           6.06    8                              
+ 39P S B EAV=6460 89                                                            
+ 39P   L 2173.0    20                                                           
+ 39P   G 1200      2  24     3                                                  
+ 39P   B             2.4     3           5.97    7                              
+ 39P S B EAV=6178 89                                                            
+ 39P   L 2191.8    8                                                            
+ 39P   G 1218.5    10 15     3                                                  
+ 39P   G 1836.9    10 19     2                                                  
+ 39P   B             2.5     4           5.95    8                              
+ 39P S B EAV=6168 89                                                            
+ 39P   L 2523.3    11                                                           
+ 39P   G 1550.3    10 25     3                                                  
+ 39P   B             5.3     10          5.57    9                              
+ 39P S B EAV=6005 89                                                            
+ 39P   L 2623.0    20                                                           
+ 39P   G 2267.7    20 3      1                                                  
+ 39P   B             0.9     3           6.33    15                             
+ 39P S B EAV=5956 89                                                            
+ 39P   L 2977.0    20                                                           
+ 39P   G 2004      2  4      1                                                  
+ 39P   B             1.4     3           6.07    10                             
+ 39P S B EAV=5782 89                                                            
+ 39P   L 3182.0    11                                                           
+ 39P   G 2209                                                                  ?
+ 39P  cG E$shown in Figure 10 but not included in Table I.                      
+ 39P   B             0.7     3           6.34    19                             
+ 39P S B EAV=5681 89                                                            
+ 39P   L 3389.9    13                                                           
+ 39P   G 1198                                                                  ?
+ 39P  cG E$shown in Figure 10 but not included in Table I.                      
+ 39P   B             2.4     3           5.77    7                              
+ 39P S B EAV=5578 89                                                            
+ 39P   L 3784.1    15                                                           
+ 39P   G 2812      2  10     2                                                  
+ 39P   G 3427.8    20 12     3                                                  
+ 39P   B             7.6     19          5.20    12                             
+ 39P S B EAV=5384 89                                                            
+ 39P   L 3833      3                                                            
+ 39P   G 2233.4    15 11     2                                                  
+ 39P   B             3.6     6           5.51    9                              
+ 39P S B EAV=5360 89                                                            
+ 39P   L 4146.1    20                                                           
+ 39P   G 3173      2  9      2                                                  
+ 39P   B             2.9     6           5.55    10                             
+ 39P S B EAV=5205 89                                                            
+ 39P   L 4162.3    20                                                           
+ 39P   G 3189.2    20 14     3                                                  
+ 39P   B             4.7     7           5.33    8                              
+ 39P S B EAV=5197 89                                                            
+ 39P   L 4340.8    15                                                           
+ 39P   G 1817.5    10 9      2                                                  
+ 39P   B             3.1     5           5.48    8                              
+ 39P S B EAV=5109 89                                                            
+
+ 39S     39P B- DECAY:XUNDL-3          2019AB06                           202111
+ 39S  c  Compiled (unevaluated) dataset from 2019Ab06:                          
+ 39S  c  Phys. Rev. C 100, 014323 (2019)                                        
+ 39S  c  Compiled by E.A. McCutchan (NNDC,BNL) October 13, 2021                 
+ 39S  c  {+39}Si ions were produced by fragmentation of a 140                   
+ 39S 2c  MeV/nucleon {+48}Ca beam from NSCL at Michigan State University on a   
+ 39S 3c  775 mg/cm{+2} Be target. Fragments were separated and identified       
+ 39S 4c  using the A1900 spectrometer. The selected ions were implanted into    
+ 39S 5c  a 16 x 16 segmented planar double-sided strip detector surrounded      
+ 39S 6c  by 16 detectors of SeGA.  The decay of {+39}P was studied as a         
+ 39S 7c  daughter to the {+39}Si decay chain. Measured E|g, I|g, |g|g,          
+ 39S 8c  |b|g using 16 detectors of the SeGA array.                             
+ 39S  c  All data are from Figure 12 of 2019Ab06, except where noted.           
+ 39S  cG RI$From discussion in 2019Ab06.                                        
+ 39P   P  0            1/2+            0.28 S    4              10.39E3   12    
+ 39P  cP T$From the Adopted Levels of {+39}P in the ENSDF database.             
+ 39S   N                        1.0                                             
+ 39S   L 0             (5/2-)                                                   
+ 39S   L 59            (7/2-)                                                   
+ 39S   G 59                                                                     
+ 39S   L 398       1   (3/2-)                                                   
+ 39S   G 339                                                                    
+ 39S   G 398                                                                    
+ 39S   L 1525      1   (3/2+)                                                   
+ 39S   G 1127         48     4                                                  
+ 39S   G 1525         100    7                                                  
+ 39S   L 2611      2                                                            
+ 39S   G 2213                                                                   
+ 39S   L 3163      3                                                            
+ 39S   G 2765                                                                   
+ 39S   L 3509      3                                                            
+ 39S  cL E$compiler considers E=3309 given by 2019Ab06 to be a typo, as both    
+ 39S 2cL energy sum of 3110|g depopulating this level and feeding the 398 level 
+ 39S 3cL and scale of energy in the drawing of Figure 12 - suggest the energy   
+ 39S 4cL is 3509.                                                               
+ 39S   G 3110                                                                   
