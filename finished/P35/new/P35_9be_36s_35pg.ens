@@ -1,7 +1,8 @@
  35P     9BE(36S,35PG)                 2016MU03                  ENSDF    202509
- 35P   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$
- 35P 2 H CIT=ENSDF$CUT=30-Sep-2025$
- 35P  c  J|p=0+ for {+36}S target
+ 35P   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
+ 35P 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35P  dL E$Least-squares fitting is done by GLSC (version 17-Jan-2025)          
+ 35P  c  J|p=0+ for {+36}S target                                               
  35P  c  2016Mu03: A secondary beam {+36}S was produced via the projectile      
  35P 2c  fragmentation of a 140-MeV/nucleon {+48}Ca primary beam impinging on a 
  35P 3c  846-mg/cm{+2} {+9}Be target at the coupled cyclotron facility at NSCL, 
@@ -17,93 +18,73 @@
  35P dc  at the focal plane of the S800 spectrometer. Prompt |g-rays from the   
  35P ec  de-excitation of the {+35}P residues were detected by seven modules of 
  35P fc  the GRETINA Ge array. Measured E|g, I|g, ({+35}P)|g-coin, |g|g-coin,   
- 35P gc  parallel momentum distributions of 8 populated states in {+35}P        
- 35P hc  residues. Deduced levels, J, |p, L-transfers, fractional populations,  
- 35P ic  inclusive and partial knockout cross sections, and spectroscopic       
- 35P jc  factors. This work is also part of the thesis 2015MuZY.                
- 35P  cL $The measured inclusive cross section that leads to {+35}P, from       
- 35P 2cL incoming {+36}S projectiles, is 51 mb {I1}. 95.3% of this measured     
- 35P 3cL cross section corresponds to the direct knockout (KO) process. The     
- 35P 4cL partial experimental cross sections {I|s{-f}} in 2016Mu03 are given    
- 35P 5cL by{I b{-f}}|*{I|s{-inc}}. For the dominant KO final states, {If},      
- 35P 6cL {I|s{-f}} = {Ib{-f,KO}}|*{I|s{-inc,KO}}, where {Ib{-f,KO}} =           
- 35P 7cL {Ib{-f}}/0.953, showing that 95.3% of the total inclusive              
- 35P 8cL experimental cross section {I|s{-inc}} is attributed to states         
- 35P 9cL populated by the direct proton KO mechanism and {I|s{-inc,KO}} is the  
- 35P acL measured inclusive KO cross section.                                   
-
- 35P  cL E$From a least-squares fit to |g-ray energies.
- 35P  cL E(B)$From a two-step reaction mechanism. These states may have J{+|p}  
- 35P 2cL negative or/and > 5/2.                                                 
- 35P  cL J$From the Adopted Levels of {+35}P in the ENSDF database, unless      
- 35P 2cL otherwise stated.                                                      
- 35P  cL L(C)$From the comparision of experimental parallel momentum            
- 35P 2cL distributions with the calculated distributions assuming {Il}=2        
- 35P 3cL proton removal from the {+36}S ground state.                           
- 35P  cL L(D)$From the comparison of experimental parallel momentum             
- 35P 2cL distributions with the calculated distributions assuming {Il}=1        
- 35P 3cL proton removal from the {+36}S ground state.                           
-
- 35P  cL S$The normalized experimental proton spectroscopic factors of {+35}P   
- 35P 2cL final states populated in the one-proton knockout reaction, deduced    
- 35P 3cL from the measured partial cross sections and the calculated cross      
- 35P 4cL sections. C{+2}S{-norm} sum to (2J+1) in the case of a fully occupied  
- 35P 5cL subshell.                                                              
+ 35P gc  the inclusive knockout cross section for producing {+35}P from {+36}S, 
+ 35P hc  the fractional populations and parallel momentum distributions of 8    
+ 35P ic  populated states in {+35}P residues. Deduced levels, J, |p,            
+ 35P jc  L-transfers, partial knockout cross sections and spectroscopic factors.
+ 35P kc  Calculated single-particle cross sections (|s{-sp}) for proton removal 
+ 35P lc  and parallel momentum distributions using the eikonal model. This work 
+ 35P mc  is also part of the thesis 2015MuZY.                                   
+ 35P  cL $The inclusive cross section |s{-inc}{+exp} for producing {+35}P from  
+ 35P 2cL {+36}S is measured to be 51 mb {I1}. 95.3% of |s{-inc}{+exp}           
+ 35P 3cL corresponds to a direct knockout process |s{-inc,KO}{+exp} from the    
+ 35P 4cL p-sd shell. The remaining 4.7% is possibly attributed to a two-step    
+ 35P 5cL process charge-exchange or {+36}S core excitation by inelastic         
+ 35P 6cL scattering, followed by a proton removal.                              
+ 35P  cL E$From a least-squares fit to |g-ray energies.                         
+ 35P  cL E(A)$Populated by a two-step reaction mechanism, likely with J|>5/2 and
+ 35P 2cL negative parities.                                                     
+ 35P  cL L$The orbital angular momentum was deduced by comparing the            
+ 35P 2cL experimental and calculated parallel momentum distributions of each    
+ 35P 3cL {+35}P state.                                                          
+ 35P  cL S$The spectroscopic factor                                             
+ 35P 2cL C{+2}S=b{-f}{+KO}|s{-inc,KO}{+exp}/R{-s}|s{-f}{+sp}, where b{-f}{+KO}  
+ 35P 3cL is the knockout population fraction, |s{-inc,KO}{+exp} is the measured 
+ 35P 4cL inclusive knockout cross section, R{-s} is the quenching factor from a 
+ 35P 5cL systematics study 2014To14, and |s{-f}{+sp} is the eikonal model       
+ 35P 6cL calculated single-particle cross section.                              
  35P  cL S$LABEL=C{+2}S                                                         
- 35P  PN                                                                     5  
- 35P   L 0.0          1/2+                             0        2.2      7     
- 35P  cL $|s{-f} = 16.0 {I36}.                                                  
- 35P  cL L$from the comparison of the experimental parallel momentum            
- 35P 2cL distribution with the calculated distribution for {Il}=0 proton        
- 35P 3cL removal from the {+36}S ground state which corresponds to J|p=1/2+.    
- 35P   L 2388.0    13 3/2+                             2        0.7      3 C   
- 35P  cL $|s{-f} = 4.0 {I18}.                                                   
+ 35P   L 0.0          1/2+                             0        2.2       7     
+ 35P  cL $b{-f}{+KO}=32.9(75)%, |s{-f}{+sp}=13.5 mb, R{-s}=0.55 {I11}.          
+ 35P   L 2388      1                                   2        0.7       3     
+ 35P  cL $b{-f}{+KO}=8.2(38)%, |s{-f}{+sp}=10.2 mb, R{-s}=0.52 {I10}.           
  35P   G 2386      2                                                            
- 35P   L 3861.9    13 5/2+                             2        2.7      8 C   
- 35P  cL $|s{-f} = 13.9 {I30}                                                   
+ 35P   L 3862      1                                   2        2.7       8     
+ 35P  cL $b{-f}{+KO}=28.6(61)%, |s{-f}{+sp}=10.6 mb, R{-s}=0.49 {I10}.          
  35P   G 1473      2                                                            
  35P   G 3860      2                                                            
- 35P   L 4101.0    20 (7/2-)                                                   
- 35P F L FLAG=B                                                                 
+ 35P   L 4101      2                                                        A   
  35P   G 237       2                                                            
- 35P   L 4383.0    24                                                          
- 35P F L FLAG=B                                                                 
+ 35P   L 4383      3                                                        A   
  35P   G 1995      2                                                            
- 35P   L 4493.7    20 (7/2-)                           3        0.30     7     
- 35P  cL $|s{-f} = 1.5 {I2}                                                     
- 35P  cL L$from the experimental parallel momentum distribution with the        
- 35P 2cL calculated one computed for {Il}=3 proton removal from the {+36}S      
- 35P 3cL ground state.                                                          
+ 35P   L 4494      2                                   3        0.30      7     
+ 35P  cL $b{-f}{+KO}=3.0(5)%, |s{-f}{+sp}=10.7 mb, R{-s}=0.48 {I10}.            
  35P   G 391       2                                                            
  35P   G 634       2                                                            
- 35P   L 4667.1    14 5/2+                             2        1.0      2 C   
- 35P  cL $|s{-f} = 4.8 {I5}                                                     
+ 35P   L 4667      2                                   2        1.0       2     
+ 35P  cL $b{-f}{+KO}=9.9(11)%, |s{-f}{+sp}=10.3 mb, R{-s}=0.47 {I9}.            
  35P   G 804       2                                                            
  35P   G 2279      2                                                            
  35P   G 4668      2                                                            
- 35P   L 4767.6    23                                                      B   
+ 35P   L 4768      2                                                        A   
  35P   G 274       2                                                            
  35P   G 666       2                                                            
- 35P   L 4962      3                                                       B   
+ 35P   L 4962      3                                                        A   
  35P   G 469       2                                                            
- 35P   L 5089      3                                                       B   
+ 35P   L 5089      3                                                        A   
  35P   G 127       2                                                            
  35P   G 321       2                                                            
- 35P   L 5200.1    14 5/2+                             2        1.5      3 C   
- 35P  cL $|s{-f} = 7.4 {I7}                                                     
+ 35P   L 5200      2                                   2        1.5       3     
+ 35P  cL $b{-f}{+KO}=15.2(15)%, |s{-f}{+sp}=10.2 mb, R{-s}=0.47 {I9}.           
  35P   G 1337      2                                                            
  35P   G 2811      2                                                            
  35P   G 5202      2                                                            
- 35P   L 5709.5    20 (1/2-)                           1        0.21     16D   
- 35P  cL $|s{-f} = 0.73 {I53}                                                   
- 35P  cL J${Il}=1 proton removal from the {+36}S ground state, most likely      
- 35P 2cL corresponds to deep-hole configurations involving the 1p{-1/2}         
- 35P 3cL orbital.                                                               
+ 35P   L 5710      2  (1/2-)                           1        0.21      16    
+ 35P  cL $b{-f}{+KO}=1.5(11)%, |s{-f}{+sp}=10.8 mb, R{-s}=0.47 {I9}.            
+ 35P  cL J$tentative; inteprted as the deeply bound 1p{-1/2} proton removal.
  35P   G 5709      2                                                            
- 35P   L 7526.9    20 (1/2-)                           1        0.20     6 D   
- 35P  cL $|s{-f} = 0.63 {I15}                                                   
- 35P  cL J${Il}=1 proton removal from the {+36}S ground state, most likely      
- 35P 2cL corresponds to deep-hole configurations involving the 1p{-1/2}         
- 35P 3cL orbital.                                                               
+ 35P   L 7527      2  (1/2-)                           1        0.20      6     
+ 35P  cL $b{-f}{+KO}=1.3(3)%, |s{-f}{+sp}=10.2 mb, R{-s}=0.44 {I9}.             
+ 35P  cL J$tentative; inteprted as the deeply bound 1p{-1/2} proton removal.
  35P   G 7526      2                                                            
                                                                                 
