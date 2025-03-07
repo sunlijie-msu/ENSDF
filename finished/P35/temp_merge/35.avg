@@ -1,5 +1,5 @@
 Program for consistency check: output for averaging results for gamma energies and intensities (version 02/07/2025)
-Generated at: Wed 03/05/2025 at 05:21:14 PM EST
+Generated at: Fri 03/07/2025 at 01:06:31 AM EST
 
 **************** Level=2386.9 in 35P     *******************ID#=1-2
 
@@ -293,6 +293,64 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 ### unweighted average comment (all values):
  35P  cG RI$unweighted average of 61 {I4} (2008Wi09) and 32.6 {I9} (2015Ch56)   
+
+
+**************** Level=4381.8     Gamma=1995 in 35P     *******************ID#=1-5-1
+
+------ average E------
+Data points of E record
+*                      2008WI09   1995(1)             weight=50.00%
+*                      2015CH56   1994(1)             weight=50.00%
+
+Averaging results:
+           weighted average:      1994.5(7)            (internal)
+                                  1994.5(5)            (external)
+                                  chi**2/(n-1)=0.500     [critical=4.605]
+         unweighted average:      1994.5(5)           
+           (of all values)        chi**2/(n-1)=0.500     [critical=4.605]
+
+   suggested adopted result:      1995(1)             
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cG E$weighted average of 1995 {I1} (2008Wi09) and 1994 {I1} (2015Ch56)    
+
+### unweighted average comment (all values):
+ 35P  cG E$unweighted average of 1995 {I1} (2008Wi09) and 1994 {I1} (2015Ch56)  
+
+### Non-average comment:
+ 35P  cG E$from 2008Wi09. Other: 1994 {I1} (2015Ch56)                           
+
+
+<For Gamma=1995 from Level=4381.8>
+------ average RI------
+Data points of RI record
+*                      2008WI09   2(1)                weight=59.02%
+*                      2015CH56   14.2(12)            weight=40.98%
+
+Averaging results:
+           weighted average:      7.0(8)               (internal)
+                                  7(6)                 (external)
+                                  chi**2/(n-1)=61.000     [critical=4.605]
+         unweighted average:      8(6)                
+           (of all values)        chi**2/(n-1)=74.420     [critical=4.605]
+
+   suggested adopted result:      8(6)                
+    (Unweighted-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cG RI$weighted average of 2 {I1} (2008Wi09) and 14.2 {I12} (2015Ch56)     
+
+### unweighted average comment (all values):
+ 35P  cG RI$unweighted average of 2 {I1} (2008Wi09) and 14.2 {I12} (2015Ch56)   
 
 
 **************** Level=4493.3 in 35P     *******************ID#=1-6

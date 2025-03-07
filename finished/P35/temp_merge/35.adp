@@ -1,9 +1,8 @@
 Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 02/07/2025)
-Generated at: Wed 03/05/2025 at 05:21:37 PM EST                                 
+Generated at: Fri 03/07/2025 at 01:06:37 AM EST                                 
                                                                                 
  35P   G 1353      1 9.2     11                                                 
  35P   G 1592      1 7.7     10                                                 
- 35P   G 1994      1 14.2    12                                                 
  35P   L 0             1/2+                                                     
  35P   L 2386.9    7   3/2+            0.69 PS   LT                             
  35P  cL T$from 2019Gr08                                                        
@@ -29,10 +28,11 @@ Generated at: Wed 03/05/2025 at 05:21:37 PM EST
  35P  cG RI$unweighted average of 61 {I4} (2008Wi09) and 32.6 {I9} (2015Ch56)   
  35P   G 1715      1 4       1                                                  
  35P   G 4102      1 33      5                                                  
- 35P F G FLAG=A                                                                 
  35P  cG E,RI$from 2008Wi09                                                     
  35P   L 4381.8    10                                                           
- 35P   G 1995      1 2       1                                                  
+ 35P   G 1995      1 8       6                                                  
+ 35P  cG E$from 2008Wi09. Other: 1994 {I1} (2015Ch56)                           
+ 35P  cG RI$unweighted average of 2 {I1} (2008Wi09) and 14.2 {I12} (2015Ch56)   
  35P   L 4493.3    8    (7/2-)         2.29 PS   49                             
  35P  cL T$from 2019Gr08                                                        
  35P  cL T$measured mean lifetime |t=3.3 ps {I7} (2019Gr08).                    

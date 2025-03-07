@@ -1,5 +1,5 @@
 Program for consistency check: output for original lines grouped by level and gamma energies (version 02/07/2025)
-Generated at: Wed 03/05/2025 at 05:21:14 PM EST
+Generated at: Fri 03/07/2025 at 01:06:31 AM EST
 
 
 
@@ -11,8 +11,6 @@ Generated at: Wed 03/05/2025 at 05:21:14 PM EST
                       2015CH56--->B     35P   G 1353      1  9.2    11                                                  *** 
  UNPLACED GAMMA------------------------ 35P   G 1592      1  7.7    10                                                 
                       2015CH56--->B     35P   G 1592      1  7.7    10                                                  *** 
- UNPLACED GAMMA------------------------ 35P   G 1994      1  14.2   12                                                 
-                      2015CH56--->B     35P   G 1994      1  14.2   12                                                  *** 
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL********************************* 35P   L 0             1/2+                                                     
                   *new XREF new tags    35P X L XREF=ABC
@@ -62,14 +60,15 @@ Generated at: Wed 03/05/2025 at 05:21:14 PM EST
  GAMMA--------------------------------- 35P   G 4102      1 33      5                                                  
                       2008WI09--->A     35P   G 4102      1 33      5                                                   *** EG=4102       FL=0          JF=1/2+
                       2015CH56--->B     35P   G 4101                                                                    *** EG=4101       FL=0          JF=1/2+
-                      2019GR08--->C     35P   G 4101                   [E3]                                             *** EG=4101       FL=0          JF=1/2+
-                      2015CH56--->B     35P F G FLAG=A                                                                 
+                      2019GR08--->C     35P   G 4101                                                                    *** EG=4101       FL=0          JF=1/2+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL********************************* 35P   L 4381.8    10                                                           
-                  *new XREF new tags    35P X L XREF=A
+                  *new XREF new tags    35P X L XREF=AB
                       2008WI09--->A     35P   L 4381.8    10                                                            *** possible JPI=(1/2,3/2,5/2,7/2+)
+                      2015CH56--->B     35P   L 4381                                                                    *** possible JPI=(1/2,3/2,5/2,7/2+)
  GAMMA--------------------------------- 35P   G 1995      1 2       1                                                  
                       2008WI09--->A     35P   G 1995      1 2       1                                                   *** EG=1995       FL=2386.9     JF=3/2+
+                      2015CH56--->B     35P   G 1994      1  14.2   12                                                  *** EG=1994       FL=2386.1     JF=3/2+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL********************************* 35P   L 4493.3    8    (7/2-)                                                  
                   *new XREF new tags    35P X L XREF=ABC
@@ -168,10 +167,10 @@ Generated at: Wed 03/05/2025 at 05:21:14 PM EST
 Statistics of levels and gammas from all datasets of 35P:
                              DSID     #of levels       #of gammas       level range
                          2008WI09        13               25            0          to     6220.4
-                         2015CH56        8                16            0          to     5089.2
+                         2015CH56        9                16            0          to     5089.2
                          2019GR08        8                13            0          to       5089
 
-                         IN TOTAL        29               54            0          to     6220.4
+                         IN TOTAL        30               54            0          to     6220.4
 
 
 
@@ -179,12 +178,12 @@ Statistics of levels and gammas from all datasets of 35P:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                    35P        0            0            29           54             155              3
+                    35P        0            0            30           54             153              3
 
-               IN TOTAL        0            0            29           54             155              3
+               IN TOTAL        0            0            30           54             153              3
 
 Number of nuclides     : 1
 Number of blocks       : 3
 Number of references   : 4
-Number of lines in files: 158
+Number of lines in files: 156
 (from all blocks including abstract, comment, reference)
