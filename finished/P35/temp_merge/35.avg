@@ -1,21 +1,30 @@
-Program for consistency check: output for averaging results for gamma energies and intensities (version 02/07/2025)
-Generated at: Tue 03/11/2025 at 05:52:07 PM EDT
+Program for consistency check: output for averaging results for gamma energies and intensities (version 01/22/2025)
+Generated at: Tue 03/11/2025 at 09:38:35 PM EDT
 
-**************** Level=2386.5 in 35P     *******************ID#=1-2
+**************** Level=2386.6 in 35P     *******************ID#=1-2
 
 ------ average E------
 Data points of E record
-*                 35SI B- DECAY   2386.5(5)           weight=66.22%
-*                 208PB(36S,XG)   2386.7(7)           weight=33.78%
+*                 35SI B- DECAY   2386.5(5)           weight=56.04%
+*                 9BE(36S,35PG)   2388(1)             weight=14.01%
+*                 208PB(36S,XG)   2386.7(7)           weight=28.59%
+### (weight<2.00% not considered in weighted average)
+                    2H(36S,3HE)   2388(13)            weight=0.08%
+                   34S(18O,17F)   2420(40)            weight=0.01%
+                 36S(POL D,3HE)   2386(6)             weight=0.39%
+                  37CL(11B,13N)   2389(4)             weight=0.88%
 
 Averaging results:
-           weighted average:      2386.6(4)            (internal)
-                                  2386.57(10)          (external)
-                                  chi**2/(n-1)=0.054     [critical=4.605]
-         unweighted average:      2386.60(10)         
-           (of all values)        chi**2/(n-1)=0.020     [critical=4.605]
+           weighted average:      2386.8(4)            (internal)
+                                  2386.8(4)            (external)
+                                  chi**2/(n-1)=0.907     [critical=3.780]
+           weighted average:      2386.8(4)            (internal)
+            (of all values)       2386.79(26)          (external)
+                                  chi**2/(n-1)=0.473     [critical=2.639]
+         unweighted average:      2392(5)             
+           (of all values)        chi**2/(n-1)=153.222     [critical=2.639]
 
-   suggested adopted result:      2386.6(5)           
+   suggested adopted result:      2386.8(5)           
        (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
@@ -23,27 +32,38 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35P  cL E$weighted average of 2386.5 {I5} from {+35}Si |b{+-} decay and 2386.7 
- 35P 2cL {I7} from ({+36}S,X|g)                                                 
+ 35P  cL E$weighted average of 2386.5 {I5} from {+35}Si |b{+-} decay, 2388 {I1} 
+ 35P 2cL from ({+36}S,{+35}P|g), and 2386.7 {I7} from ({+36}S,X|g). Others: 2388
+ 35P 3cL {I13} from ({+36}S,{+3}He), 2420 {I40} from ({+18}O,{+17}F), 2386 {I6} 
+ 35P 4cL from (pol d,{+3}He), and 2389 {I4} from ({+11}B,{+13}N)                
+
+### weighted average comment (all values):
+ 35P  cL E$weighted average of 2386.5 {I5} from {+35}Si |b{+-} decay, 2388 {I13}
+ 35P 2cL from ({+36}S,{+3}He), 2388 {I1} from ({+36}S,{+35}P|g), 2420 {I40} from
+ 35P 3cL ({+18}O,{+17}F), 2386 {I6} from (pol d,{+3}He), 2389 {I4} from         
+ 35P 4cL ({+11}B,{+13}N), and 2386.7 {I7} from ({+36}S,X|g)                     
 
 ### unweighted average comment (all values):
- 35P  cL E$unweighted average of 2386.5 {I5} from {+35}Si |b{+-} decay and      
- 35P 2cL 2386.7 {I7} from ({+36}S,X|g)                                          
+ 35P  cL E$unweighted average of 2386.5 {I5} from {+35}Si |b{+-} decay, 2388    
+ 35P 2cL {I13} from ({+36}S,{+3}He), 2388 {I1} from ({+36}S,{+35}P|g), 2420     
+ 35P 3cL {I40} from ({+18}O,{+17}F), 2386 {I6} from (pol d,{+3}He), 2389 {I4}   
+ 35P 4cL from ({+11}B,{+13}N), and 2386.7 {I7} from ({+36}S,X|g)                
 
 
-**************** Level=2386.5     Gamma=2386.4 in 35P     *******************ID#=1-2-1
+**************** Level=2386.6     Gamma=2386.3 in 35P     *******************ID#=1-2-1
 
 ------ average E------
 Data points of E record
-*                 35SI B- DECAY   2386.4(6)           weight=73.53%
-*                 208PB(36S,XG)   2386(1)             weight=26.47%
+*                 35SI B- DECAY   2386.4(6)           weight=68.97%
+*                 9BE(36S,35PG)   2386(2)             weight=6.21%
+*                 208PB(36S,XG)   2386(1)             weight=24.83%
 
 Averaging results:
            weighted average:      2386.3(5)            (internal)
-                                  2386.29(18)          (external)
-                                  chi**2/(n-1)=0.118     [critical=4.605]
-         unweighted average:      2386.20(20)         
-           (of all values)        chi**2/(n-1)=0.080     [critical=4.605]
+                                  2386.28(13)          (external)
+                                  chi**2/(n-1)=0.069     [critical=3.780]
+         unweighted average:      2386.13(13)         
+           (of all values)        chi**2/(n-1)=0.053     [critical=3.780]
 
    suggested adopted result:      2386.3(6)           
        (Weighted-Of-All)
@@ -53,29 +73,38 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35P  cG E$weighted average of 2386.4 {I6} from {+35}Si |b{+-} decay and 2386   
- 35P 2cG {I1} from ({+36}S,X|g)                                                 
+ 35P  cG E$weighted average of 2386.4 {I6} from {+35}Si |b{+-} decay, 2386 {I2} 
+ 35P 2cG from ({+36}S,{+35}P|g), and 2386 {I1} from ({+36}S,X|g)                
 
 ### unweighted average comment (all values):
- 35P  cG E$unweighted average of 2386.4 {I6} from {+35}Si |b{+-} decay and 2386 
- 35P 2cG {I1} from ({+36}S,X|g)                                                 
+ 35P  cG E$unweighted average of 2386.4 {I6} from {+35}Si |b{+-} decay, 2386    
+ 35P 2cG {I2} from ({+36}S,{+35}P|g), and 2386 {I1} from ({+36}S,X|g)           
 
 
-**************** Level=3859.7 in 35P     *******************ID#=1-3
+**************** Level=3859.9 in 35P     *******************ID#=1-3
 
 ------ average E------
 Data points of E record
-*                 35SI B- DECAY   3859.7(5)           weight=66.22%
-*                 208PB(36S,XG)   3860.8(7)           weight=33.78%
+*                 35SI B- DECAY   3859.7(5)           weight=52.90%
+*                   2H(36S,3HE)   3860(2)             weight=3.31%
+*                 9BE(36S,35PG)   3862(1)             weight=13.23%
+*                36S(POL D,3HE)   3857(2)             weight=3.31%
+*                 208PB(36S,XG)   3860.8(7)           weight=26.99%
+### (weight<2.00% not considered in weighted average)
+                     36S(D,3HE)   3864(10)            weight=0.13%
+                  37CL(11B,13N)   3860(10)            weight=0.13%
 
 Averaging results:
-           weighted average:      3860.1(4)            (internal)
-                                  3860.1(5)            (external)
-                                  chi**2/(n-1)=1.635     [critical=4.605]
-         unweighted average:      3860.3(6)           
-           (of all values)        chi**2/(n-1)=0.605     [critical=4.605]
+           weighted average:      3860.2(4)            (internal)
+                                  3860.2(5)            (external)
+                                  chi**2/(n-1)=1.885     [critical=3.017]
+           weighted average:      3860.2(4)            (internal)
+            (of all values)       3860.2(4)            (external)
+                                  chi**2/(n-1)=1.281     [critical=2.639]
+         unweighted average:      3860.5(8)           
+           (of all values)        chi**2/(n-1)=4.663     [critical=2.639]
 
-   suggested adopted result:      3860.1(5)           
+   suggested adopted result:      3860.2(5)           
        (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
@@ -83,27 +112,38 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35P  cL E$weighted average of 3859.7 {I5} from {+35}Si |b{+-} decay and 3860.8 
- 35P 2cL {I7} from ({+36}S,X|g)                                                 
+ 35P  cL E$weighted average of 3859.7 {I5} from {+35}Si |b{+-} decay, 3860 {I2} 
+ 35P 2cL from ({+36}S,{+3}He), 3862 {I1} from ({+36}S,{+35}P|g), 3857 {I2} from 
+ 35P 3cL (pol d,{+3}He), and 3860.8 {I7} from ({+36}S,X|g). Others: 3864 {I10}  
+ 35P 4cL from (d,{+3}He) and 3860 {I10} from ({+11}B,{+13}N)                    
+
+### weighted average comment (all values):
+ 35P  cL E$weighted average of 3859.7 {I5} from {+35}Si |b{+-} decay, 3860 {I2} 
+ 35P 2cL from ({+36}S,{+3}He), 3862 {I1} from ({+36}S,{+35}P|g), 3864 {I10} from
+ 35P 3cL (d,{+3}He), 3857 {I2} from (pol d,{+3}He), 3860 {I10} from             
+ 35P 4cL ({+11}B,{+13}N), and 3860.8 {I7} from ({+36}S,X|g)                     
 
 ### unweighted average comment (all values):
- 35P  cL E$unweighted average of 3859.7 {I5} from {+35}Si |b{+-} decay and      
- 35P 2cL 3860.8 {I7} from ({+36}S,X|g)                                          
+ 35P  cL E$unweighted average of 3859.7 {I5} from {+35}Si |b{+-} decay, 3860    
+ 35P 2cL {I2} from ({+36}S,{+3}He), 3862 {I1} from ({+36}S,{+35}P|g), 3864 {I10}
+ 35P 3cL from (d,{+3}He), 3857 {I2} from (pol d,{+3}He), 3860 {I10} from        
+ 35P 4cL ({+11}B,{+13}N), and 3860.8 {I7} from ({+36}S,X|g)                     
 
 
-**************** Level=3859.7     Gamma=1473.4 in 35P     *******************ID#=1-3-1
+**************** Level=3859.9     Gamma=1473.5 in 35P     *******************ID#=1-3-1
 
 ------ average E------
 Data points of E record
-*                 35SI B- DECAY   1473.4(5)           weight=80.00%
-*                 208PB(36S,XG)   1474(1)             weight=20.00%
+*                 35SI B- DECAY   1473.4(5)           weight=76.19%
+*                 9BE(36S,35PG)   1473(2)             weight=4.76%
+*                 208PB(36S,XG)   1474(1)             weight=19.05%
 
 Averaging results:
            weighted average:      1473.5(5)            (internal)
-                                  1473.52(24)          (external)
-                                  chi**2/(n-1)=0.288     [critical=4.605]
-         unweighted average:      1473.70(30)         
-           (of all values)        chi**2/(n-1)=0.180     [critical=4.605]
+                                  1473.50(18)          (external)
+                                  chi**2/(n-1)=0.176     [critical=3.780]
+         unweighted average:      1473.47(29)         
+           (of all values)        chi**2/(n-1)=0.253     [critical=3.780]
 
    suggested adopted result:      1473.5(5)           
        (Weighted-Of-All)
@@ -113,15 +153,15 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35P  cG E$weighted average of 1473.4 {I5} from {+35}Si |b{+-} decay and 1474   
- 35P 2cG {I1} from ({+36}S,X|g)                                                 
+ 35P  cG E$weighted average of 1473.4 {I5} from {+35}Si |b{+-} decay, 1473 {I2} 
+ 35P 2cG from ({+36}S,{+35}P|g), and 1474 {I1} from ({+36}S,X|g)                
 
 ### unweighted average comment (all values):
- 35P  cG E$unweighted average of 1473.4 {I5} from {+35}Si |b{+-} decay and 1474 
- 35P 2cG {I1} from ({+36}S,X|g)                                                 
+ 35P  cG E$unweighted average of 1473.4 {I5} from {+35}Si |b{+-} decay, 1473    
+ 35P 2cG {I2} from ({+36}S,{+35}P|g), and 1474 {I1} from ({+36}S,X|g)           
 
 
-<For Gamma=1473.4 from Level=3859.7>
+<For Gamma=1473.5 from Level=3859.9>
 ------ average RI------
 Data points of RI record
 *                 35SI B- DECAY   14.1(33)            weight=15.25%
@@ -150,21 +190,22 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  35P 2cG {I14} from ({+36}S,X|g)                                                
 
 
-**************** Level=3859.7     Gamma=3859.5 in 35P     *******************ID#=1-3-2
+**************** Level=3859.9     Gamma=3860.2 in 35P     *******************ID#=1-3-2
 
 ------ average E------
 Data points of E record
-*                 35SI B- DECAY   3859.5(10)          weight=50.00%
-*                 208PB(36S,XG)   3861(1)             weight=50.00%
+*                 35SI B- DECAY   3859.5(10)          weight=44.44%
+*                 9BE(36S,35PG)   3860(2)             weight=11.11%
+*                 208PB(36S,XG)   3861(1)             weight=44.44%
 
 Averaging results:
-           weighted average:      3860.3(7)            (internal)
-                                  3860.3(8)            (external)
-                                  chi**2/(n-1)=1.125     [critical=4.605]
-         unweighted average:      3860.3(8)           
-           (of all values)        chi**2/(n-1)=1.125     [critical=4.605]
+           weighted average:      3860.2(7)            (internal)
+                                  3860.2(5)            (external)
+                                  chi**2/(n-1)=0.569     [critical=3.780]
+         unweighted average:      3860.2(5)           
+           (of all values)        chi**2/(n-1)=0.583     [critical=3.780]
 
-   suggested adopted result:      3860.3(10)          
+   suggested adopted result:      3860.2(10)          
        (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
@@ -172,15 +213,15 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35P  cG E$weighted average of 3859.5 {I10} from {+35}Si |b{+-} decay and 3861  
- 35P 2cG {I1} from ({+36}S,X|g)                                                 
+ 35P  cG E$weighted average of 3859.5 {I10} from {+35}Si |b{+-} decay, 3860 {I2}
+ 35P 2cG from ({+36}S,{+35}P|g), and 3861 {I1} from ({+36}S,X|g)                
 
 ### unweighted average comment (all values):
- 35P  cG E$unweighted average of 3859.5 {I10} from {+35}Si |b{+-} decay and 3861
- 35P 2cG {I1} from ({+36}S,X|g)                                                 
+ 35P  cG E$unweighted average of 3859.5 {I10} from {+35}Si |b{+-} decay, 3860   
+ 35P 2cG {I2} from ({+36}S,{+35}P|g), and 3861 {I1} from ({+36}S,X|g)           
 
 
-<For Gamma=3859.5 from Level=3859.7>
+<For Gamma=3860.2 from Level=3859.9>
 ------ average RI------
 Data points of RI record
 *                 35SI B- DECAY   100(7)              weight=17.29%
@@ -212,19 +253,20 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  35P  cG RI$from ({+36}S,X|g). Other: 100 {I7} from {+35}Si |b{+-} decay        
 
 
-**************** Level=4101.2 in 35P     *******************ID#=1-4
+**************** Level=4101.5 in 35P     *******************ID#=1-4
 
 ------ average E------
 Data points of E record
-*                 35SI B- DECAY   4101.2(5)           weight=66.22%
-*                 208PB(36S,XG)   4102.1(7)           weight=33.78%
+*                 35SI B- DECAY   4101.2(5)           weight=63.58%
+*                 9BE(36S,35PG)   4101(2)             weight=3.97%
+*                 208PB(36S,XG)   4102.1(7)           weight=32.44%
 
 Averaging results:
            weighted average:      4101.5(4)            (internal)
-                                  4101.5(4)            (external)
-                                  chi**2/(n-1)=1.094     [critical=4.605]
-         unweighted average:      4101.7(5)           
-           (of all values)        chi**2/(n-1)=0.405     [critical=4.605]
+                                  4101.48(30)          (external)
+                                  chi**2/(n-1)=0.578     [critical=3.780]
+         unweighted average:      4101.43(34)         
+           (of all values)        chi**2/(n-1)=0.343     [critical=3.780]
 
    suggested adopted result:      4101.5(5)           
        (Weighted-Of-All)
@@ -234,48 +276,46 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35P  cL E$weighted average of 4101.2 {I5} from {+35}Si |b{+-} decay and 4102.1 
- 35P 2cL {I7} from ({+36}S,X|g)                                                 
+ 35P  cL E$weighted average of 4101.2 {I5} from {+35}Si |b{+-} decay, 4101 {I2} 
+ 35P 2cL from ({+36}S,{+35}P|g), and 4102.1 {I7} from ({+36}S,X|g)              
 
 ### unweighted average comment (all values):
- 35P  cL E$unweighted average of 4101.2 {I5} from {+35}Si |b{+-} decay and      
- 35P 2cL 4102.1 {I7} from ({+36}S,X|g)                                          
+ 35P  cL E$unweighted average of 4101.2 {I5} from {+35}Si |b{+-} decay, 4101    
+ 35P 2cL {I2} from ({+36}S,{+35}P|g), and 4102.1 {I7} from ({+36}S,X|g)         
 
 
-**************** Level=4101.2     Gamma=241.4 in 35P     *******************ID#=1-4-1
+**************** Level=4101.5     Gamma=241.3 in 35P     *******************ID#=1-4-1
 
 ------ average E------
 Data points of E record
-*                 35SI B- DECAY   241.4(3)            weight=91.74%
-*                 208PB(36S,XG)   241(1)              weight=8.26%
+*                 35SI B- DECAY   241.4(3)            weight=89.89%
+*                 9BE(36S,35PG)   237(2)              weight=2.02%
+*                 208PB(36S,XG)   241(1)              weight=8.09%
 
 Averaging results:
-           weighted average:      241.37(29)           (internal)
-                                  241.37(11)           (external)
-                                  chi**2/(n-1)=0.147     [critical=4.605]
-         unweighted average:      241.20(20)          
-           (of all values)        chi**2/(n-1)=0.080     [critical=4.605]
+           weighted average:      241.28(29)           (internal)
+                                  241.3(5)             (external)
+                                  chi**2/(n-1)=2.409     [critical=3.780]
+         unweighted average:      239.8(14)           
+           (of all values)        chi**2/(n-1)=5.920     [critical=3.780]
 
-   suggested adopted result:      241.4(3)            
-           (Non-Average)
+   suggested adopted result:      241.3(5)            
+       (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35P  cG E$weighted average of 241.4 {I3} from {+35}Si |b{+-} decay and 241 {I1}
- 35P 2cG from ({+36}S,X|g)                                                      
+ 35P  cG E$weighted average of 241.4 {I3} from {+35}Si |b{+-} decay, 237 {I2}   
+ 35P 2cG from ({+36}S,{+35}P|g), and 241 {I1} from ({+36}S,X|g)                 
 
 ### unweighted average comment (all values):
- 35P  cG E$unweighted average of 241.4 {I3} from {+35}Si |b{+-} decay and 241   
- 35P 2cG {I1} from ({+36}S,X|g)                                                 
-
-### Non-average comment:
- 35P  cG E$from {+35}Si |b{+-} decay. Other: 241 {I1} from ({+36}S,X|g)         
+ 35P  cG E$unweighted average of 241.4 {I3} from {+35}Si |b{+-} decay, 237 {I2} 
+ 35P 2cG from ({+36}S,{+35}P|g), and 241 {I1} from ({+36}S,X|g)                 
 
 
-<For Gamma=241.4 from Level=4101.2>
+<For Gamma=241.3 from Level=4101.5>
 ------ average RI------
 Data points of RI record
 *                 35SI B- DECAY   74.1(30)            weight=84.48%
@@ -304,7 +344,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  35P 2cG {I7} from ({+36}S,X|g)                                                 
 
 
-**************** Level=4101.2     Gamma=1714.7 in 35P     *******************ID#=1-4-2
+**************** Level=4101.5     Gamma=1714.8 in 35P     *******************ID#=1-4-2
 
 ------ average E------
 Data points of E record
@@ -334,7 +374,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  35P 2cG {I1} from ({+36}S,X|g)                                                 
 
 
-<For Gamma=1714.7 from Level=4101.2>
+<For Gamma=1714.8 from Level=4101.5>
 ------ average RI------
 Data points of RI record
 *                 35SI B- DECAY   16(4)               weight=15.30%
@@ -368,7 +408,7 @@ Note:  Combined weight means both unc+ and unc- of each input value are used to 
  35P 2cG {I17} from ({+36}S,X|g)                                                
 
 
-**************** Level=4101.2     Gamma=4100.8 in 35P     *******************ID#=1-4-3
+**************** Level=4101.5     Gamma=4101.4 in 35P     *******************ID#=1-4-3
 
 ------ average E------
 Data points of E record
@@ -398,7 +438,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  35P 2cG {I1} from ({+36}S,X|g)                                                 
 
 
-<For Gamma=4100.8 from Level=4101.2>
+<For Gamma=4101.4 from Level=4101.5>
 ------ average RI------
 Data points of RI record
 *                 35SI B- DECAY   100(6)              weight=64.00%
@@ -427,21 +467,22 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  35P 2cG from ({+36}S,X|g)                                                      
 
 
-**************** Level=4381.3 in 35P     *******************ID#=1-5
+**************** Level=4381.8 in 35P     *******************ID#=1-6
 
 ------ average E------
 Data points of E record
-*                 35SI B- DECAY   4381.3(8)           weight=60.98%
-*                 208PB(36S,XG)   4381.9(10)          weight=39.02%
+*                 35SI B- DECAY   4381.3(8)           weight=58.44%
+*                 9BE(36S,35PG)   4383(3)             weight=4.16%
+*                 208PB(36S,XG)   4381.9(10)          weight=37.40%
 
 Averaging results:
-           weighted average:      4381.5(6)            (internal)
-                                  4381.53(29)          (external)
-                                  chi**2/(n-1)=0.220     [critical=4.605]
-         unweighted average:      4381.60(30)         
-           (of all values)        chi**2/(n-1)=0.180     [critical=4.605]
+           weighted average:      4381.6(6)            (internal)
+                                  4381.60(29)          (external)
+                                  chi**2/(n-1)=0.224     [critical=3.780]
+         unweighted average:      4382.1(5)           
+           (of all values)        chi**2/(n-1)=0.743     [critical=3.780]
 
-   suggested adopted result:      4381.5(8)           
+   suggested adopted result:      4381.6(8)           
        (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
@@ -449,27 +490,28 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35P  cL E$weighted average of 4381.3 {I8} from {+35}Si |b{+-} decay and 4381.9 
- 35P 2cL {I10} from ({+36}S,X|g)                                                
+ 35P  cL E$weighted average of 4381.3 {I8} from {+35}Si |b{+-} decay, 4383 {I3} 
+ 35P 2cL from ({+36}S,{+35}P|g), and 4381.9 {I10} from ({+36}S,X|g)             
 
 ### unweighted average comment (all values):
- 35P  cL E$unweighted average of 4381.3 {I8} from {+35}Si |b{+-} decay and      
- 35P 2cL 4381.9 {I10} from ({+36}S,X|g)                                         
+ 35P  cL E$unweighted average of 4381.3 {I8} from {+35}Si |b{+-} decay, 4383    
+ 35P 2cL {I3} from ({+36}S,{+35}P|g), and 4381.9 {I10} from ({+36}S,X|g)        
 
 
-**************** Level=4381.3     Gamma=1994.8 in 35P     *******************ID#=1-5-1
+**************** Level=4381.8     Gamma=1994.9 in 35P     *******************ID#=1-6-1
 
 ------ average E------
 Data points of E record
-*                 35SI B- DECAY   1994.8(6)           weight=73.53%
-*                 208PB(36S,XG)   1995(1)             weight=26.47%
+*                 35SI B- DECAY   1994.8(6)           weight=68.97%
+*                 9BE(36S,35PG)   1995(2)             weight=6.21%
+*                 208PB(36S,XG)   1995(1)             weight=24.83%
 
 Averaging results:
            weighted average:      1994.9(5)            (internal)
-                                  1994.85(9)           (external)
-                                  chi**2/(n-1)=0.029     [critical=4.605]
-         unweighted average:      1994.90(10)         
-           (of all values)        chi**2/(n-1)=0.020     [critical=4.605]
+                                  1994.86(7)           (external)
+                                  chi**2/(n-1)=0.017     [critical=3.780]
+         unweighted average:      1994.93(7)          
+           (of all values)        chi**2/(n-1)=0.013     [critical=3.780]
 
    suggested adopted result:      1994.9(6)           
        (Weighted-Of-All)
@@ -479,27 +521,33 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35P  cG E$weighted average of 1994.8 {I6} from {+35}Si |b{+-} decay and 1995   
- 35P 2cG {I1} from ({+36}S,X|g)                                                 
+ 35P  cG E$weighted average of 1994.8 {I6} from {+35}Si |b{+-} decay, 1995 {I2} 
+ 35P 2cG from ({+36}S,{+35}P|g), and 1995 {I1} from ({+36}S,X|g)                
 
 ### unweighted average comment (all values):
- 35P  cG E$unweighted average of 1994.8 {I6} from {+35}Si |b{+-} decay and 1995 
- 35P 2cG {I1} from ({+36}S,X|g)                                                 
+ 35P  cG E$unweighted average of 1994.8 {I6} from {+35}Si |b{+-} decay, 1995    
+ 35P 2cG {I2} from ({+36}S,{+35}P|g), and 1995 {I1} from ({+36}S,X|g)           
 
 
-**************** Level=4493.5 in 35P     *******************ID#=1-6
+**************** Level=4493.6 in 35P     *******************ID#=1-7
 
 ------ average E------
 Data points of E record
-*                 35SI B- DECAY   4493.5(6)           weight=64.00%
-*                 208PB(36S,XG)   4494.2(8)           weight=36.00%
+*                 35SI B- DECAY   4493.5(6)           weight=60.48%
+*                 9BE(36S,35PG)   4494(2)             weight=5.44%
+*                 208PB(36S,XG)   4494.2(8)           weight=34.02%
+### (weight<2.00% not considered in weighted average)
+                 36S(POL D,3HE)   4474(21)            weight=0.05%
 
 Averaging results:
            weighted average:      4493.8(5)            (internal)
-                                  4493.75(34)          (external)
-                                  chi**2/(n-1)=0.490     [critical=4.605]
-         unweighted average:      4493.9(4)           
-           (of all values)        chi**2/(n-1)=0.245     [critical=4.605]
+                                  4493.77(24)          (external)
+                                  chi**2/(n-1)=0.252     [critical=3.780]
+           weighted average:      4493.8(5)            (internal)
+            (of all values)       4493.76(32)          (external)
+                                  chi**2/(n-1)=0.463     [critical=3.319]
+         unweighted average:      4489(5)             
+           (of all values)        chi**2/(n-1)=99.090     [critical=3.319]
 
    suggested adopted result:      4493.8(6)           
        (Weighted-Of-All)
@@ -509,27 +557,35 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35P  cL E$weighted average of 4493.5 {I6} from {+35}Si |b{+-} decay and 4494.2 
- 35P 2cL {I8} from ({+36}S,X|g)                                                 
+ 35P  cL E$weighted average of 4493.5 {I6} from {+35}Si |b{+-} decay, 4494 {I2} 
+ 35P 2cL from ({+36}S,{+35}P|g), and 4494.2 {I8} from ({+36}S,X|g). Other: 4474 
+ 35P 3cL {I21} from (pol d,{+3}He)                                              
+
+### weighted average comment (all values):
+ 35P  cL E$weighted average of 4493.5 {I6} from {+35}Si |b{+-} decay, 4494 {I2} 
+ 35P 2cL from ({+36}S,{+35}P|g), 4474 {I21} from (pol d,{+3}He), and 4494.2 {I8}
+ 35P 3cL from ({+36}S,X|g)                                                      
 
 ### unweighted average comment (all values):
- 35P  cL E$unweighted average of 4493.5 {I6} from {+35}Si |b{+-} decay and      
- 35P 2cL 4494.2 {I8} from ({+36}S,X|g)                                          
+ 35P  cL E$unweighted average of 4493.5 {I6} from {+35}Si |b{+-} decay, 4494    
+ 35P 2cL {I2} from ({+36}S,{+35}P|g), 4474 {I21} from (pol d,{+3}He), and 4494.2
+ 35P 3cL {I8} from ({+36}S,X|g)                                                 
 
 
-**************** Level=4493.5     Gamma=392.3 in 35P     *******************ID#=1-6-1
+**************** Level=4493.6     Gamma=392.3 in 35P     *******************ID#=1-7-1
 
 ------ average E------
 Data points of E record
-*                 35SI B- DECAY   392.3(3)            weight=91.74%
-*                 208PB(36S,XG)   392(1)              weight=8.26%
+*                 35SI B- DECAY   392.3(3)            weight=89.89%
+*                 9BE(36S,35PG)   391(2)              weight=2.02%
+*                 208PB(36S,XG)   392(1)              weight=8.09%
 
 Averaging results:
-           weighted average:      392.28(29)           (internal)
-                                  392.28(8)            (external)
-                                  chi**2/(n-1)=0.083     [critical=4.605]
-         unweighted average:      392.15(15)          
-           (of all values)        chi**2/(n-1)=0.045     [critical=4.605]
+           weighted average:      392.25(29)           (internal)
+                                  392.25(14)           (external)
+                                  chi**2/(n-1)=0.240     [critical=3.780]
+         unweighted average:      391.8(4)            
+           (of all values)        chi**2/(n-1)=0.463     [critical=3.780]
 
    suggested adopted result:      392.3(3)            
            (Non-Average)
@@ -539,18 +595,19 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35P  cG E$weighted average of 392.3 {I3} from {+35}Si |b{+-} decay and 392 {I1}
- 35P 2cG from ({+36}S,X|g)                                                      
+ 35P  cG E$weighted average of 392.3 {I3} from {+35}Si |b{+-} decay, 391 {I2}   
+ 35P 2cG from ({+36}S,{+35}P|g), and 392 {I1} from ({+36}S,X|g)                 
 
 ### unweighted average comment (all values):
- 35P  cG E$unweighted average of 392.3 {I3} from {+35}Si |b{+-} decay and 392   
- 35P 2cG {I1} from ({+36}S,X|g)                                                 
+ 35P  cG E$unweighted average of 392.3 {I3} from {+35}Si |b{+-} decay, 391 {I2} 
+ 35P 2cG from ({+36}S,{+35}P|g), and 392 {I1} from ({+36}S,X|g)                 
 
 ### Non-average comment:
- 35P  cG E$from {+35}Si |b{+-} decay. Other: 392 {I1} from ({+36}S,X|g)         
+ 35P  cG E$from {+35}Si |b{+-} decay. Others: 391 {I2} from ({+36}S,{+35}P|g)   
+ 35P 2cG and 392 {I1} from ({+36}S,X|g)                                         
 
 
-<For Gamma=392.3 from Level=4493.5>
+<For Gamma=392.3 from Level=4493.6>
 ------ average RI------
 Data points of RI record
 *                 35SI B- DECAY   100(5)              weight=92.04%
@@ -582,19 +639,20 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  35P  cG RI$from {+35}Si |b{+-} decay. Other: 100 {I17} from ({+36}S,X|g)       
 
 
-**************** Level=4493.5     Gamma=633.7 in 35P     *******************ID#=1-6-2
+**************** Level=4493.6     Gamma=633.6 in 35P     *******************ID#=1-7-2
 
 ------ average E------
 Data points of E record
-*                 35SI B- DECAY   633.7(5)            weight=80.00%
-*                 208PB(36S,XG)   633(1)              weight=20.00%
+*                 35SI B- DECAY   633.7(5)            weight=76.19%
+*                 9BE(36S,35PG)   634(2)              weight=4.76%
+*                 208PB(36S,XG)   633(1)              weight=19.05%
 
 Averaging results:
            weighted average:      633.6(5)             (internal)
-                                  633.56(28)           (external)
-                                  chi**2/(n-1)=0.392     [critical=4.605]
-         unweighted average:      633.4(4)            
-           (of all values)        chi**2/(n-1)=0.245     [critical=4.605]
+                                  633.58(21)           (external)
+                                  chi**2/(n-1)=0.219     [critical=3.780]
+         unweighted average:      633.57(30)          
+           (of all values)        chi**2/(n-1)=0.263     [critical=3.780]
 
    suggested adopted result:      633.6(5)            
        (Weighted-Of-All)
@@ -604,15 +662,15 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35P  cG E$weighted average of 633.7 {I5} from {+35}Si |b{+-} decay and 633 {I1}
- 35P 2cG from ({+36}S,X|g)                                                      
+ 35P  cG E$weighted average of 633.7 {I5} from {+35}Si |b{+-} decay, 634 {I2}   
+ 35P 2cG from ({+36}S,{+35}P|g), and 633 {I1} from ({+36}S,X|g)                 
 
 ### unweighted average comment (all values):
- 35P  cG E$unweighted average of 633.7 {I5} from {+35}Si |b{+-} decay and 633   
- 35P 2cG {I1} from ({+36}S,X|g)                                                 
+ 35P  cG E$unweighted average of 633.7 {I5} from {+35}Si |b{+-} decay, 634 {I2} 
+ 35P 2cG from ({+36}S,{+35}P|g), and 633 {I1} from ({+36}S,X|g)                 
 
 
-<For Gamma=633.7 from Level=4493.5>
+<For Gamma=633.6 from Level=4493.6>
 ------ average RI------
 Data points of RI record
 *                 35SI B- DECAY   38(5)               weight=66.22%
@@ -641,7 +699,147 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  35P 2cG from ({+36}S,X|g)                                                      
 
 
-**************** Level=4869.4 in 35P     *******************ID#=1-8
+**************** Level=4664 in 35P     *******************ID#=1-8
+
+------ average E------
+Data points of E record
+*                   2H(36S,3HE)   4666(9)             weight=3.20%
+*                 9BE(36S,35PG)   4667(2)             weight=64.77%
+*                    36S(D,3HE)   4664(10)            weight=2.59%
+*                36S(POL D,3HE)   4665(3)             weight=28.79%
+### (weight<2.00% not considered in weighted average)
+                  37CL(11B,13N)   4640(20)            weight=0.65%
+
+Averaging results:
+           weighted average:      4666.3(16)           (internal)
+                                  4666.3(6)            (external)
+                                  chi**2/(n-1)=0.121     [critical=3.319]
+           weighted average:      4666.1(16)           (internal)
+            (of all values)       4666.1(12)           (external)
+                                  chi**2/(n-1)=0.521     [critical=3.017]
+         unweighted average:      4660(5)             
+           (of all values)        chi**2/(n-1)=131.300     [critical=3.017]
+
+   suggested adopted result:      4666(2)             
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cL E$weighted average of 4666 {I9} from ({+36}S,{+3}He), 4667 {I2} from   
+ 35P 2cL ({+36}S,{+35}P|g), 4664 {I10} from (d,{+3}He), and 4665 {I3} from (pol 
+ 35P 3cL d,{+3}He). Other: 4640 {I20} from ({+11}B,{+13}N)                      
+
+### weighted average comment (all values):
+ 35P  cL E$weighted average of 4666 {I9} from ({+36}S,{+3}He), 4667 {I2} from   
+ 35P 2cL ({+36}S,{+35}P|g), 4664 {I10} from (d,{+3}He), 4665 {I3} from (pol     
+ 35P 3cL d,{+3}He), and 4640 {I20} from ({+11}B,{+13}N)                         
+
+### unweighted average comment (all values):
+ 35P  cL E$unweighted average of 4666 {I9} from ({+36}S,{+3}He), 4667 {I2} from 
+ 35P 2cL ({+36}S,{+35}P|g), 4664 {I10} from (d,{+3}He), 4665 {I3} from (pol     
+ 35P 3cL d,{+3}He), and 4640 {I20} from ({+11}B,{+13}N)                         
+
+
+**************** Level=4765.9 in 35P     *******************ID#=1-9
+
+------ average E------
+Data points of E record
+*                 9BE(36S,35PG)   4768(2)             weight=20.00%
+*                 208PB(36S,XG)   4767.1(10)          weight=80.00%
+
+Averaging results:
+           weighted average:      4767.3(9)            (internal)
+                                  4767.3(4)            (external)
+                                  chi**2/(n-1)=0.162     [critical=4.605]
+         unweighted average:      4767.6(5)           
+           (of all values)        chi**2/(n-1)=0.405     [critical=4.605]
+
+   suggested adopted result:      4767.3(10)          
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cL E$weighted average of 4768 {I2} from ({+36}S,{+35}P|g) and 4767.1 {I10}
+ 35P 2cL from ({+36}S,X|g)                                                      
+
+### unweighted average comment (all values):
+ 35P  cL E$unweighted average of 4768 {I2} from ({+36}S,{+35}P|g) and 4767.1    
+ 35P 2cL {I10} from ({+36}S,X|g)                                                
+
+
+**************** Level=4765.9     Gamma=273 in 35P     *******************ID#=1-9-1
+
+------ average E------
+Data points of E record
+*                 9BE(36S,35PG)   274(2)              weight=20.00%
+*                 208PB(36S,XG)   273(1)              weight=80.00%
+
+Averaging results:
+           weighted average:      273.2(9)             (internal)
+                                  273.2(4)             (external)
+                                  chi**2/(n-1)=0.200     [critical=4.605]
+         unweighted average:      273.5(5)            
+           (of all values)        chi**2/(n-1)=0.500     [critical=4.605]
+
+   suggested adopted result:      273(1)              
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cG E$weighted average of 274 {I2} from ({+36}S,{+35}P|g) and 273 {I1} from
+ 35P 2cG ({+36}S,X|g)                                                           
+
+### unweighted average comment (all values):
+ 35P  cG E$unweighted average of 274 {I2} from ({+36}S,{+35}P|g) and 273 {I1}   
+ 35P 2cG from ({+36}S,X|g)                                                      
+
+### Non-average comment:
+ 35P  cG E$from ({+36}S,X|g). Other: 274 {I2} from ({+36}S,{+35}P|g)            
+
+
+**************** Level=4765.9     Gamma=664 in 35P     *******************ID#=1-9-2
+
+------ average E------
+Data points of E record
+*                 9BE(36S,35PG)   666(2)              weight=20.00%
+*                 208PB(36S,XG)   664(1)              weight=80.00%
+
+Averaging results:
+           weighted average:      664.4(9)             (internal)
+                                  664.4(8)             (external)
+                                  chi**2/(n-1)=0.800     [critical=4.605]
+         unweighted average:      665.0(10)           
+           (of all values)        chi**2/(n-1)=2.000     [critical=4.605]
+
+   suggested adopted result:      664(1)              
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cG E$weighted average of 666 {I2} from ({+36}S,{+35}P|g) and 664 {I1} from
+ 35P 2cG ({+36}S,X|g)                                                           
+
+### unweighted average comment (all values):
+ 35P  cG E$unweighted average of 666 {I2} from ({+36}S,{+35}P|g) and 664 {I1}   
+ 35P 2cG from ({+36}S,X|g)                                                      
+
+### Non-average comment:
+ 35P  cG E$from ({+36}S,X|g). Other: 666 {I2} from ({+36}S,{+35}P|g)            
+
+
+**************** Level=4869.3 in 35P     *******************ID#=1-10
 
 ------ average E------
 Data points of E record
@@ -671,7 +869,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  35P 2cL 4869.0 {I8} from ({+36}S,X|g)                                          
 
 
-**************** Level=4869.4     Gamma=768.0 in 35P     *******************ID#=1-8-3
+**************** Level=4869.3     Gamma=767.9 in 35P     *******************ID#=1-10-3
 
 ------ average E------
 Data points of E record
@@ -701,7 +899,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  35P 2cG {I1} from ({+36}S,X|g)                                                 
 
 
-<For Gamma=768.0 from Level=4869.4>
+<For Gamma=767.9 from Level=4869.3>
 ------ average RI------
 Data points of RI record
 *                 35SI B- DECAY   66(12)              weight=73.53%
@@ -730,7 +928,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  35P 2cG {I20} from ({+36}S,X|g)                                                
 
 
-**************** Level=4869.4     Gamma=1009.9 in 35P     *******************ID#=1-8-4
+**************** Level=4869.3     Gamma=1009.7 in 35P     *******************ID#=1-10-4
 
 ------ average E------
 Data points of E record
@@ -760,19 +958,20 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  35P 2cG {I1} from ({+36}S,X|g)                                                 
 
 
-**************** Level=4962.4 in 35P     *******************ID#=1-9
+**************** Level=4959.3 in 35P     *******************ID#=1-11
 
 ------ average E------
 Data points of E record
-*                 35SI B- DECAY   4962.4(7)           weight=74.61%
-*                 208PB(36S,XG)   4962.1(12)          weight=25.39%
+*                 35SI B- DECAY   4962.4(7)           weight=71.70%
+*                 9BE(36S,35PG)   4962(3)             weight=3.90%
+*                 208PB(36S,XG)   4962.1(12)          weight=24.40%
 
 Averaging results:
            weighted average:      4962.3(6)            (internal)
-                                  4962.32(13)          (external)
-                                  chi**2/(n-1)=0.047     [critical=4.605]
-         unweighted average:      4962.25(15)         
-           (of all values)        chi**2/(n-1)=0.045     [critical=4.605]
+                                  4962.31(10)          (external)
+                                  chi**2/(n-1)=0.029     [critical=3.780]
+         unweighted average:      4962.17(12)         
+           (of all values)        chi**2/(n-1)=0.043     [critical=3.780]
 
    suggested adopted result:      4962.3(7)           
        (Weighted-Of-All)
@@ -782,27 +981,28 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35P  cL E$weighted average of 4962.4 {I7} from {+35}Si |b{+-} decay and 4962.1 
- 35P 2cL {I12} from ({+36}S,X|g)                                                
+ 35P  cL E$weighted average of 4962.4 {I7} from {+35}Si |b{+-} decay, 4962 {I3} 
+ 35P 2cL from ({+36}S,{+35}P|g), and 4962.1 {I12} from ({+36}S,X|g)             
 
 ### unweighted average comment (all values):
- 35P  cL E$unweighted average of 4962.4 {I7} from {+35}Si |b{+-} decay and      
- 35P 2cL 4962.1 {I12} from ({+36}S,X|g)                                         
+ 35P  cL E$unweighted average of 4962.4 {I7} from {+35}Si |b{+-} decay, 4962    
+ 35P 2cL {I3} from ({+36}S,{+35}P|g), and 4962.1 {I12} from ({+36}S,X|g)        
 
 
-**************** Level=4962.4     Gamma=468.9 in 35P     *******************ID#=1-9-1
+**************** Level=4959.3     Gamma=468.9 in 35P     *******************ID#=1-11-1
 
 ------ average E------
 Data points of E record
-*                 35SI B- DECAY   468.9(4)            weight=96.15%
-*                 208PB(36S,XG)   468(2)              weight=3.85%
+*                 35SI B- DECAY   468.9(4)            weight=92.59%
+*                 9BE(36S,35PG)   469(2)              weight=3.70%
+*                 208PB(36S,XG)   468(2)              weight=3.70%
 
 Averaging results:
            weighted average:      468.9(4)             (internal)
-                                  468.87(17)           (external)
-                                  chi**2/(n-1)=0.195     [critical=4.605]
-         unweighted average:      468.5(5)            
-           (of all values)        chi**2/(n-1)=0.405     [critical=4.605]
+                                  468.87(12)           (external)
+                                  chi**2/(n-1)=0.100     [critical=3.780]
+         unweighted average:      468.63(32)          
+           (of all values)        chi**2/(n-1)=0.303     [critical=3.780]
 
    suggested adopted result:      468.9(4)            
            (Non-Average)
@@ -812,18 +1012,207 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35P  cG E$weighted average of 468.9 {I4} from {+35}Si |b{+-} decay and 468 {I2}
- 35P 2cG from ({+36}S,X|g)                                                      
+ 35P  cG E$weighted average of 468.9 {I4} from {+35}Si |b{+-} decay, 469 {I2}   
+ 35P 2cG from ({+36}S,{+35}P|g), and 468 {I2} from ({+36}S,X|g)                 
 
 ### unweighted average comment (all values):
- 35P  cG E$unweighted average of 468.9 {I4} from {+35}Si |b{+-} decay and 468   
- 35P 2cG {I2} from ({+36}S,X|g)                                                 
+ 35P  cG E$unweighted average of 468.9 {I4} from {+35}Si |b{+-} decay, 469 {I2} 
+ 35P 2cG from ({+36}S,{+35}P|g), and 468 {I2} from ({+36}S,X|g)                 
 
 ### Non-average comment:
- 35P  cG E$from {+35}Si |b{+-} decay. Other: 468 {I2} from ({+36}S,X|g)         
+ 35P  cG E$from {+35}Si |b{+-} decay. Others: 469 {I2} from ({+36}S,{+35}P|g)   
+ 35P 2cG and 468 {I2} from ({+36}S,X|g)                                         
 
 
-**************** Level=5560.7 in 35P     *******************ID#=1-12
+**************** Level=5010 in 35P     *******************ID#=1-12
+
+------ average E------
+Data points of E record
+*                  34S(18O,17F)   5070(40)            weight=20.00%
+*                 37CL(11B,13N)   5010(20)            weight=80.00%
+
+Averaging results:
+           weighted average:      5022(18)             (internal)
+                                  5022(24)             (external)
+                                  chi**2/(n-1)=1.800     [critical=4.605]
+         unweighted average:      5040(30)            
+           (of all values)        chi**2/(n-1)=1800.000     [critical=4.605]
+
+   suggested adopted result:      5022(24)            
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cL E$weighted average of 5070 {I40} from ({+18}O,{+17}F) and 5010 {I20}   
+ 35P 2cL from ({+11}B,{+13}N)                                                   
+
+### unweighted average comment (all values):
+ 35P  cL E$unweighted average of 5070 {I40} from ({+18}O,{+17}F) and 5010 {I20} 
+ 35P 2cL from ({+11}B,{+13}N)                                                   
+
+
+**************** Level=5087.5 in 35P     *******************ID#=1-13
+
+------ average E------
+Data points of E record
+*                 9BE(36S,35PG)   5089(3)             weight=11.84%
+*                 208PB(36S,XG)   5089.8(11)          weight=88.09%
+### (weight<2.00% not considered in weighted average)
+                   34S(18O,17F)   5070(40)            weight=0.07%
+
+Averaging results:
+           weighted average:      5089.7(10)           (internal)
+                                  5089.71(26)          (external)
+                                  chi**2/(n-1)=0.063     [critical=4.605]
+           weighted average:      5089.7(10)           (internal)
+            (of all values)       5089.7(4)            (external)
+                                  chi**2/(n-1)=0.153     [critical=3.780]
+         unweighted average:      5083(7)             
+           (of all values)        chi**2/(n-1)=125.612     [critical=3.780]
+
+   suggested adopted result:      5089.8(11)          
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cL E$weighted average of 5089 {I3} from ({+36}S,{+35}P|g) and 5089.8 {I11}
+ 35P 2cL from ({+36}S,X|g). Other: 5070 {I40} from ({+18}O,{+17}F)              
+
+### weighted average comment (all values):
+ 35P  cL E$weighted average of 5089 {I3} from ({+36}S,{+35}P|g), 5070 {I40} from
+ 35P 2cL ({+18}O,{+17}F), and 5089.8 {I11} from ({+36}S,X|g)                    
+
+### unweighted average comment (all values):
+ 35P  cL E$unweighted average of 5089 {I3} from ({+36}S,{+35}P|g), 5070 {I40}   
+ 35P 2cL from ({+18}O,{+17}F), and 5089.8 {I11} from ({+36}S,X|g)               
+
+### Non-average comment:
+ 35P  cL E$from ({+36}S,X|g). Others: 5089 {I3} from ({+36}S,{+35}P|g) and 5070 
+ 35P 2cL {I40} from ({+18}O,{+17}F)                                             
+
+
+**************** Level=5087.5     Gamma=128 in 35P     *******************ID#=1-13-1
+
+------ average E------
+Data points of E record
+*                 9BE(36S,35PG)   127(2)              weight=20.00%
+*                 208PB(36S,XG)   128(1)              weight=80.00%
+
+Averaging results:
+           weighted average:      127.8(9)             (internal)
+                                  127.8(4)             (external)
+                                  chi**2/(n-1)=0.200     [critical=4.605]
+         unweighted average:      127.5(5)            
+           (of all values)        chi**2/(n-1)=0.500     [critical=4.605]
+
+   suggested adopted result:      128(1)              
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cG E$weighted average of 127 {I2} from ({+36}S,{+35}P|g) and 128 {I1} from
+ 35P 2cG ({+36}S,X|g)                                                           
+
+### unweighted average comment (all values):
+ 35P  cG E$unweighted average of 127 {I2} from ({+36}S,{+35}P|g) and 128 {I1}   
+ 35P 2cG from ({+36}S,X|g)                                                      
+
+### Non-average comment:
+ 35P  cG E$from ({+36}S,X|g). Other: 127 {I2} from ({+36}S,{+35}P|g)            
+
+
+**************** Level=5087.5     Gamma=322 in 35P     *******************ID#=1-13-2
+
+------ average E------
+Data points of E record
+*                 9BE(36S,35PG)   321(2)              weight=20.00%
+*                 208PB(36S,XG)   322(1)              weight=80.00%
+
+Averaging results:
+           weighted average:      321.8(9)             (internal)
+                                  321.8(4)             (external)
+                                  chi**2/(n-1)=0.200     [critical=4.605]
+         unweighted average:      321.5(5)            
+           (of all values)        chi**2/(n-1)=0.500     [critical=4.605]
+
+   suggested adopted result:      322(1)              
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cG E$weighted average of 321 {I2} from ({+36}S,{+35}P|g) and 322 {I1} from
+ 35P 2cG ({+36}S,X|g)                                                           
+
+### unweighted average comment (all values):
+ 35P  cG E$unweighted average of 321 {I2} from ({+36}S,{+35}P|g) and 322 {I1}   
+ 35P 2cG from ({+36}S,X|g)                                                      
+
+### Non-average comment:
+ 35P  cG E$from ({+36}S,X|g). Other: 321 {I2} from ({+36}S,{+35}P|g)            
+
+
+**************** Level=5198 in 35P     *******************ID#=1-14
+
+------ average E------
+Data points of E record
+*                   2H(36S,3HE)   5202(8)             weight=5.54%
+*                 9BE(36S,35PG)   5200(2)             weight=88.60%
+*                    36S(D,3HE)   5202(10)            weight=3.54%
+*                36S(POL D,3HE)   5189(13)            weight=2.10%
+### (weight<2.00% not considered in weighted average)
+                  37CL(11B,13N)   5220(40)            weight=0.22%
+
+Averaging results:
+           weighted average:      5200.0(19)           (internal)
+                                  5200.0(10)           (external)
+                                  chi**2/(n-1)=0.273     [critical=3.319]
+           weighted average:      5200.0(19)           (internal)
+            (of all values)       5200.0(10)           (external)
+                                  chi**2/(n-1)=0.267     [critical=3.017]
+         unweighted average:      5203(5)             
+           (of all values)        chi**2/(n-1)=123.800     [critical=3.017]
+
+   suggested adopted result:      5200(2)             
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cL E$weighted average of 5202 {I8} from ({+36}S,{+3}He), 5200 {I2} from   
+ 35P 2cL ({+36}S,{+35}P|g), 5202 {I10} from (d,{+3}He), and 5189 {I13} from (pol
+ 35P 3cL d,{+3}He). Other: 5220 {I40} from ({+11}B,{+13}N)                      
+
+### weighted average comment (all values):
+ 35P  cL E$weighted average of 5202 {I8} from ({+36}S,{+3}He), 5200 {I2} from   
+ 35P 2cL ({+36}S,{+35}P|g), 5202 {I10} from (d,{+3}He), 5189 {I13} from (pol    
+ 35P 3cL d,{+3}He), and 5220 {I40} from ({+11}B,{+13}N)                         
+
+### unweighted average comment (all values):
+ 35P  cL E$unweighted average of 5202 {I8} from ({+36}S,{+3}He), 5200 {I2} from 
+ 35P 2cL ({+36}S,{+35}P|g), 5202 {I10} from (d,{+3}He), 5189 {I13} from (pol    
+ 35P 3cL d,{+3}He), and 5220 {I40} from ({+11}B,{+13}N)                         
+
+### Non-average comment:
+ 35P  cL E$from ({+36}S,{+35}P|g). Others: 5202 {I8} from ({+36}S,{+3}He), 5202 
+ 35P 2cL {I10} from (d,{+3}He), 5189 {I13} from (pol d,{+3}He), and 5220 {I40}  
+ 35P 3cL from ({+11}B,{+13}N)                                                   
+
+
+**************** Level=5560.7 in 35P     *******************ID#=1-16
 
 ------ average E------
 Data points of E record
@@ -853,7 +1242,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  35P 2cL 5560.1 {I12} from ({+36}S,X|g)                                         
 
 
-**************** Level=5560.7     Gamma=1459.7 in 35P     *******************ID#=1-12-1
+**************** Level=5560.7     Gamma=1459.4 in 35P     *******************ID#=1-16-1
 
 ------ average E------
 Data points of E record
@@ -881,5 +1270,133 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 ### unweighted average comment (all values):
  35P  cG E$unweighted average of 1459.7 {I5} from {+35}Si |b{+-} decay and 1458 
  35P 2cG {I1} from ({+36}S,X|g)                                                 
+
+
+**************** Level=5710 in 35P     *******************ID#=1-17
+
+------ average E------
+Data points of E record
+### (1 value has weight>2.00%; all values considered in weighted average)
+                    2H(36S,3HE)   5706(38)            weight=0.28%
+*                 9BE(36S,35PG)   5710(2)             weight=99.72%
+
+Averaging results:
+           weighted average:      5710.0(20)           (internal)
+                                  5709.99(21)          (external)
+                                  chi**2/(n-1)=0.011     [critical=6.635]
+         unweighted average:      5708.0(20)          
+           (of all values)        chi**2/(n-1)=8.000     [critical=4.605]
+
+   suggested adopted result:      5710(2)             
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cL E$weighted average of 5706 {I38} from ({+36}S,{+3}He) and 5710 {I2}    
+ 35P 2cL from ({+36}S,{+35}P|g)                                                 
+
+### unweighted average comment (all values):
+ 35P  cL E$unweighted average of 5706 {I38} from ({+36}S,{+3}He) and 5710 {I2}  
+ 35P 2cL from ({+36}S,{+35}P|g)                                                 
+
+### Non-average comment:
+ 35P  cL E$from ({+36}S,{+35}P|g). Other: 5706 {I38} from ({+36}S,{+3}He)       
+
+
+**************** Level=5.86E3 in 35P     *******************ID#=1-18
+
+------ average E------
+Data points of E record
+*                  34S(18O,17F)   5890(70)            weight=33.78%
+*                 37CL(11B,13N)   5840(50)            weight=66.22%
+
+Averaging results:
+           weighted average:      5.86E3(4)            (internal)
+                                  5857(24)             (external)
+                                  chi**2/(n-1)=0.338     [critical=4.605]
+         unweighted average:      5865(25)            
+           (of all values)        chi**2/(n-1)=1250.000     [critical=4.605]
+
+   suggested adopted result:      5.86E3(5)           
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cL E$weighted average of 5890 {I70} from ({+18}O,{+17}F) and 5840 {I50}   
+ 35P 2cL from ({+11}B,{+13}N)                                                   
+
+### unweighted average comment (all values):
+ 35P  cL E$unweighted average of 5890 {I70} from ({+18}O,{+17}F) and 5840 {I50} 
+ 35P 2cL from ({+11}B,{+13}N)                                                   
+
+
+**************** Level=7440 in 35P     *******************ID#=1-22
+
+------ average E------
+Data points of E record
+*                  34S(18O,17F)   7440(60)            weight=20.00%
+*                36S(POL D,3HE)   7520(30)            weight=80.00%
+
+Averaging results:
+           weighted average:      7504(27)             (internal)
+                                  7504(32)             (external)
+                                  chi**2/(n-1)=1.422     [critical=4.605]
+         unweighted average:      7.48E3(4)           
+           (of all values)        chi**2/(n-1)=3200.000     [critical=4.605]
+
+   suggested adopted result:      7504(32)            
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cL E$weighted average of 7440 {I60} from ({+18}O,{+17}F) and 7520 {I30}   
+ 35P 2cL from (pol d,{+3}He)                                                    
+
+### unweighted average comment (all values):
+ 35P  cL E$unweighted average of 7440 {I60} from ({+18}O,{+17}F) and 7520 {I30} 
+ 35P 2cL from (pol d,{+3}He)                                                    
+
+
+**************** Level=7520 in 35P     *******************ID#=1-23
+
+------ average E------
+Data points of E record
+### (1 value has weight>2.00%; all values considered in weighted average)
+*                 9BE(36S,35PG)   7527(2)             weight=99.56%
+                 36S(POL D,3HE)   7520(30)            weight=0.44%
+
+Averaging results:
+           weighted average:      7527.0(20)           (internal)
+                                  7527.0(5)            (external)
+                                  chi**2/(n-1)=0.054     [critical=6.635]
+         unweighted average:      7523.5(35)          
+           (of all values)        chi**2/(n-1)=24.500     [critical=4.605]
+
+   suggested adopted result:      7527(2)             
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cL E$weighted average of 7527 {I2} from ({+36}S,{+35}P|g) and 7520 {I30}  
+ 35P 2cL from (pol d,{+3}He)                                                    
+
+### unweighted average comment (all values):
+ 35P  cL E$unweighted average of 7527 {I2} from ({+36}S,{+35}P|g) and 7520 {I30}
+ 35P 2cL from (pol d,{+3}He)                                                    
+
+### Non-average comment:
+ 35P  cL E$from ({+36}S,{+35}P|g). Other: 7520 {I30} from (pol d,{+3}He)        
 
 
