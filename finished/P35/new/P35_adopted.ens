@@ -25,24 +25,27 @@
  35P  c  1999Ai02: Products from {+55}Mn fragmentation on Si target at the      
  35P 2c  National Superconducting Cyclotron Laboratory at Michigan State        
  35P 3c  University. Measured cross section. Deduced strong absorption radii.   
- 35P  c  2007No13: {+9}Be({+40}Ar,X) and {+181}Ta({+40}Ar,X) at E-100           
- 35P 2c  MeV/nucleon at the RIKEN Accelerator Research Facility. Measured       
- 35P 3c  momentum distribution and production cross sections.                   
+ 35P  c  2007No13: {+9}Be({+40}Ar,X) and {+181}Ta({+40}Ar,X) at 100-MeV/nucleon 
+ 35P 2c  at the RIKEN Accelerator Research Facility. Measured momentum          
+ 35P 3c  distribution and production cross sections.                            
  35P  c  1987Wa10: shell-model calculations for {+35}Si |b{+-} decay scheme,    
  35P 2c  {+35}P levels, decay branching ratios, log {Ift}, and Gamow-Teller     
  35P 3c  transition strengths.                                                  
  35P  c  1986Wo02: shell-model calculations for {+35}P levels and single nucleon
  35P 2c  transfer spectroscopic factors.                                        
+ 35P  c  2012BoZT: shell-model calculations for {+35}P levels, J, |p, and       
+ 35P 2c  lifetimes.                                                             
  35P  c  Theoretical calculations (binding energies, dipole moments, quadrupole 
  35P 2c  moments, radii, levels, J|p, etc.): 2009No01, 2004Kh16, 2003Sm02,      
  35P 3c  1999Du05, 1988Wa04, 1983Wi08, 1975JeZX.                                
- 35P  cL E$From a least-squares fit to |g-ray energies for levels connected with
- 35P 2cL |g transitions, from particle-transfer reactions for other levels, or  
- 35P 3cL from proton elastic scattering for resonances.                         
+ 35P  cL E$ From a least-squares fit to |g-ray energies for levels connected    
+ 35P 2cL with |g transitions, from particle-transfer reactions for other levels,
+ 35P 3cL or from proton elastic scattering for resonances.                      
  35P  cG RI(A)$ From ({+36}S,X|g).                                              
- 35P  cG E(B)$ From ({+36}S,{+35}P|g).                                           
+ 35P  cG E(B)$ From ({+36}S,{+35}P|g).                                          
  35P  cL T$ From the differential recoil-distance method (2019Gr08) in          
- 35P 2cL ({+36}S,X|g), unless otherwise noted.                                  
+ 35P 2cL ({+36}S,X|g) or from the R-matrix analysis of ({+34}Si,p) for          
+ 35P 3cL resonances.                                                            
  35P   XA35SI B- DECAY (0.78 S)                                                 
  35P   XB36SI B-N DECAY (503 MS)                                                
  35P   XC1H(34SI,P):RESONANCES                                                  
@@ -102,23 +105,26 @@
  35P   G 1994.9    6 100                                                        
  35P  cG E$ weighted average of 1994.8 {I6} from {+35}Si |b{+-} decay, 1995 {I2}
  35P 2cG from ({+36}S,{+35}P|g), and 1995 {I1} from ({+36}S,X|g).               
- 35P  cG $ placement by 1988DuZS, 2008Wi09, and 2016Mu03. 1988DuZT and 1987Wa10 
+ 35P  cG $ Placement by 1988DuZS, 2008Wi09, and 2016Mu03. 1988DuZT and 1987Wa10 
  35P 2cG placed this |g as the 6096->4101 transition. 1988Or01 placed this |g as
  35P 3cG the 6488->4493 transition.                                             
  35P   L 4494.1    12 (7/2-)           2.29 PS   49                             
  35P X L XREF=AEH(4474)JK                                                       
- 35P  cL J$ L=(3) from the momentum distribution in ({+36}S,{+35}P|g); from     
- 35P 2cL comparisons with shell-model calculations (1987Wa10, 2019Gr08).        
+ 35P  cL J$ L({+36}S,{+35}P|g)=(3) from 0+; comparisons with shell-model        
+ 35P 2cL calculations (1987Wa10, 2019Gr08).                                     
  35P   G 392.3     3 100     5 [M1,E2]                                          
  35P  cG E$ weighted average of 392.3 {I3} from {+35}Si |b{+-} decay, 391 {I2}  
  35P 2cG from ({+36}S,{+35}P|g), and 392 {I1} from ({+36}S,X|g).                
  35P  cG RI$ weighted average of 100 {I5} from {+35}Si |b{+-} decay and 100     
  35P 2cG {I17} from ({+36}S,X|g)                                                
+ 35P  cG $B(M1)(W.u.)=0.119 {I+33-21} if M1                                     
+ 35P  cG $B(E2)(W.u.)=2.9|*10{+3} {I+8-5} exceeds RUL=100 if E2                 
  35P   G 633.6     5 34      5 [E1]                                             
  35P  cG E$ weighted average of 633.7 {I5} from {+35}Si |b{+-} decay, 634 {I2}  
  35P 2cG from ({+36}S,{+35}P|g), and 633 {I1} from ({+36}S,X|g)                 
  35P  cG RI$ weighted average of 38 {I5} from {+35}Si |b{+-} decay and 27 {I7}  
  35P 2cG from ({+36}S,X|g)                                                      
+ 35P B G BE1W=2.8E-4 +8-6                                                       
  35P   L 4666.2    16 5/2+                                                      
  35P X L XREF=DEGHI(4640)                                                       
  35P  cL J$ L(pol d,{+3}He)=2 from 0+ and L+1/2 transfer from analyzing power.  
@@ -192,8 +198,8 @@
  35P  cG E,RI$ from {+35}Si |b{+-} decay.                                       
  35P   L 5709.5    23 (1/2-)                                                    
  35P X L XREF=DE                                                                
- 35P  cL J$ inteprted as the deeply bound 1p{-1/2} proton removal from 0+       
- 35P 2cL ({+36}S,{+35}P|g); 5709|g to 1/2+.                                     
+ 35P  cL J$ L({+36}S,{+35}P|g)=1 from 0+; inteprted as the deeply bound 1p{-1/2}
+ 35P 2cL proton removal from 0+ ({+36}S,{+35}P|g); 5709|g to 1/2+.              
  35P   G 5709      2                                                        B   
  35P   L 5.86E3    5                                                            
  35P X L XREF=F(5890)I(5840)                                                    
@@ -216,8 +222,8 @@
  35P X L XREF=F                                                                 
  35P   L 7526.9    23 (1/2-)                                                    
  35P X L XREF=EH(7520)                                                          
- 35P  cL J$ inteprted as the deeply bound 1p{-1/2} proton removal from 0+       
- 35P 2cL ({+36}S,{+35}P|g); 7526|g to 1/2+.                                     
+ 35P  cL J$ L({+36}S,{+35}P|g)=1 from 0+; inteprted as the deeply bound 1p{-1/2}
+ 35P 2cL proton removal from 0+ ({+36}S,{+35}P|g); 7526|g to 1/2+.              
  35P   G 7526      2                                                            
  35P   L 7590      20                                                           
  35P X L XREF=I                                                                 
@@ -245,4 +251,4 @@
  35P X L XREF=C                                                                 
  35P   L 17355     15                  32 KEV    22                             
  35P X L XREF=C                                                                 
-                                                                                
+
