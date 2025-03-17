@@ -1,11 +1,12 @@
-Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 02/07/2025)
-Generated at: Fri 03/14/2025 at 02:37:41 PM EDT                                 
+Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 02/26/2025)
+Generated at: Fri 03/14/2025 at 07:25:28 PM EDT                                 
                                                                                 
  35P     ADOPTED LEVELS, GAMMAS                                  ENSDF    202509
  35P   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
  35P 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35P   H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35P 2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
+ 35P  dG CC$From BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  35P  dL E$Least-squares fitting is done by GLSC (version 17-Jan-2025)          
  35P   Q 3988.4    19 8380.4 20 12155.120-12332.029    2021WA16                 
  35P  cQ $S(2n)=14663.1 {I22}, S(2p)=30938 {I7} (2021Wa16)                      
@@ -46,9 +47,10 @@ Generated at: Fri 03/14/2025 at 02:37:41 PM EDT
  35P 3cL or from proton elastic scattering for resonances.                      
  35P  cG RI(A)$ From ({+36}S,X|g).                                              
  35P  cG E(B)$ From ({+36}S,{+35}P|g).                                          
- 35P  cL T$ From the differential recoil-distance method (2019Gr08) in          
- 35P 2cL ({+36}S,X|g) or from the R-matrix analysis of ({+34}Si,p) for          
- 35P 3cL resonances.                                                            
+ 35P  cL T$LABEL=T{-1/2} or |G                                                  
+ 35P  cL T$ T{-1/2} from the differential recoil-distance method (2019Gr08) in  
+ 35P 2cL ({+36}S,X|g) and widths from the R-matrix analysis of ({+34}Si,p) for  
+ 35P 3cL resonances, unless otherwise noted.                                    
  35P   XA35SI B- DECAY (0.78 S)                                                 
  35P   XB36SI B-N DECAY (503 MS)                                                
  35P   XC1H(34SI,P):RESONANCES                                                  
@@ -72,6 +74,8 @@ Generated at: Fri 03/14/2025 at 02:37:41 PM EDT
  35P  cL T$from ({+36}S,X|g)                                                    
  35P  cL J$ L(pol d,{+3}He)=2 from 0+ and L-1/2 transfer from analyzing power.  
  35P   G 2386.3    6 100       [M1,E2]                                          
+ 35P S G  CC=0.00046 5$KC=5.94E-6 25$LC=4.42E-7 18$MC=3.36E-8 14                
+ 35P S G  IPC=0.00046 5                                                         
  35P  cG E$weighted average of 2386.4 {I6} from {+35}Si |b{+-} decay, 2386 {I2} 
  35P 2cG from ({+36}S,{+35}P|g), and 2386 {I1} from ({+36}S,X|g)                
  35P   L 3860.4    11 5/2+             0.69 PS   LT                             
@@ -79,11 +83,15 @@ Generated at: Fri 03/14/2025 at 02:37:41 PM EDT
  35P  cL T$from ({+36}S,X|g)                                                    
  35P  cL J$ L(pol d,{+3}He)=2 from 0+ and L+1/2 transfer from analyzing power.  
  35P   G 1473.5    5 15.6    14 [M1,E2]                                         
+ 35P S G  CC=8.3E-5 13$KC=1.39E-5 13$LC=1.04E-6 10$MC=7.9E-8 7                  
+ 35P S G  IPC=6.8E-5 11                                                         
  35P  cG E$weighted average of 1473.4 {I5} from {+35}Si |b{+-} decay, 1473 {I2} 
  35P 2cG from ({+36}S,{+35}P|g), and 1474 {I1} from ({+36}S,X|g)                
  35P  cG RI$weighted average of 14.1 {I33} from {+35}Si |b{+-} decay and 15.9   
  35P 2cG {I14} from ({+36}S,X|g)                                                
  35P   G 3860.2    10 100.0  32 [E2]                                            
+ 35P S G  KC=2.90E-6 4$LC=2.155E-7 30$MC=1.638E-8 23                            
+ 35P S G  IPC=0.001120 16                                                       
  35P  cG E$weighted average of 3859.5 {I10} from {+35}Si |b{+-} decay, 3860 {I2}
  35P 2cG from ({+36}S,{+35}P|g), and 3861 {I1} from ({+36}S,X|g)                
  35P  cG RI$from ({+36}S,X|g). Other: 100 {I7} from {+35}Si |b{+-} decay        
@@ -98,12 +106,16 @@ Generated at: Fri 03/14/2025 at 02:37:41 PM EDT
  35P 2cG {I7} from ({+36}S,X|g)                                                 
  35P  cG RI$ other: 74.1 {I30} from {+35}Si |b{+-} decay.                       
  35P   G 1714.8    6 11      5 [M2]                                         A   
+ 35P S G  CC=7.93E-5 11$KC=1.668E-5 23$LC=1.242E-6 17$MC=9.44E-8 13             
+ 35P S G  IPC=6.13E-5 9                                                         
  35P  cG E$weighted average of 1714.7 {I6} from {+35}Si |b{+-} decay and 1715   
  35P 2cG {I1} from ({+36}S,X|g)                                                 
  35P  cG RI$unweighted average of 16 {I4} from {+35}Si |b{+-} decay and 6.6     
  35P 2cG {I17} from ({+36}S,X|g)                                                
  35P  cG RI$ other: 16 {4} from {+35}Si |b{+-} decay.                           
  35P   G 4101.4    10 77     23 [E3]                                        A   
+ 35P S G  CC=0.000924 13$KC=3.47E-6 5$LC=2.58E-7 4$MC=1.961E-8 27               
+ 35P S G  IPC=0.000920 13                                                       
  35P  cG E$weighted average of 4100.8 {I10} from {+35}Si |b{+-} decay and 4102  
  35P 2cG {I1} from ({+36}S,X|g)                                                 
  35P  cG RI$unweighted average of 100 {I6} from {+35}Si |b{+-} decay and 54 {I8}
@@ -116,19 +128,23 @@ Generated at: Fri 03/14/2025 at 02:37:41 PM EDT
  35P   G 1994.9    6 100                                                        
  35P  cG E$weighted average of 1994.8 {I6} from {+35}Si |b{+-} decay, 1995 {I2} 
  35P 2cG from ({+36}S,{+35}P|g), and 1995 {I1} from ({+36}S,X|g)                
- 35P  cG $placement by 1988DuZS, 2008Wi09, and 2016Mu03. 1988DuZT and 1987Wa10  
+ 35P  cG $Placement by 1988DuZS, 2008Wi09, and 2016Mu03. 1988DuZT and 1987Wa10  
  35P 2cG placed this |g as the 6096->4101 transition. 1988Or01 placed this |g as
  35P 3cG the 6488->4493 transition.                                             
  35P   L 4494.1    12 (7/2-)           2.29 PS   49                             
  35P X L XREF=AEH(4474)JK                                                       
  35P  cL T$from ({+36}S,X|g)                                                    
- 35P  cL J$ L({+36}S,{+35}P|g)=(3) from 0+; comparisons with shell-model        
+ 35P  cL J$ L({+36}S,{+35}P)=(3) from 0+; comparisons with shell-model          
  35P 2cL calculations (1987Wa10, 2019Gr08).                                     
  35P   G 392.3     3 100     5 [M1,E2]                                          
  35P  cG E$from {+35}Si |b{+-} decay. Others: 391 {I2} from ({+36}S,{+35}P|g)   
  35P 2cG and 392 {I1} from ({+36}S,X|g)                                         
  35P  cG RI$from {+35}Si |b{+-} decay. Other: 100 {I17} from ({+36}S,X|g)       
+ 35P  cG MR$ deduced by evaluators for RUL=100 for B(E2)(W.u.).                 
+ 35P  cG $B(M1)(W.u.)=0.119 {I+33-21} if M1.                                    
+ 35P  cG $B(E2)(W.u.)=2.9|*10{+3} {I+8-5} exceeds RUL=100 if E2.                
  35P   G 633.6     5 34      5 [E1]                                             
+ 35P B G BE1W=2.8E-4 +8-6                                                       
  35P  cG E$weighted average of 633.7 {I5} from {+35}Si |b{+-} decay, 634 {I2}   
  35P 2cG from ({+36}S,{+35}P|g), and 633 {I1} from ({+36}S,X|g)                 
  35P  cG RI$weighted average of 38 {I5} from {+35}Si |b{+-} decay and 27 {I7}   
@@ -153,7 +169,7 @@ Generated at: Fri 03/14/2025 at 02:37:41 PM EDT
  35P X L XREF=AK                                                                
  35P   G 374       1 60      20                                             A   
  35P  cG E$ from ({+36}S,X|g).                                                  
- 35P   G 487       1 20      20                                             A   
+ 35P   G 487       1 40      LT                                             A   
  35P  cG E$ from ({+36}S,X|g).                                                  
  35P   G 767.9     4 75      15                                             A   
  35P  cG E$weighted average of 768.0 {I4} from {+35}Si |b{+-} decay and 767 {I1}
@@ -210,7 +226,7 @@ Generated at: Fri 03/14/2025 at 02:37:41 PM EDT
  35P  cG E,RI$ from {+35}Si |b{+-} decay.                                       
  35P   L 5709.5    23 (1/2-)                                                    
  35P X L XREF=DE                                                                
- 35P  cL J$ L({+36}S,{+35}P|g)=1 from 0+; inteprted as the deeply bound 1p{-1/2}
+ 35P  cL J$ L({+36}S,{+35}P)=1 from 0+; inteprted as the deeply bound 1p{-1/2}  
  35P 2cL proton removal from 0+ ({+36}S,{+35}P|g); 5709|g to 1/2+.              
  35P   G 5709      2                                                        B   
  35P   L 5.86E3    5                                                            
@@ -234,7 +250,7 @@ Generated at: Fri 03/14/2025 at 02:37:41 PM EDT
  35P X L XREF=FH(7520*)                                                         
  35P   L 7526.9    23 (1/2-)                                                    
  35P X L XREF=EH(7520*)                                                         
- 35P  cL J$ L({+36}S,{+35}P|g)=1 from 0+; inteprted as the deeply bound 1p{-1/2}
+ 35P  cL J$ L({+36}S,{+35}P)=(1) from 0+; inteprted as the deeply bound 1p{-1/2}
  35P 2cL proton removal from 0+ ({+36}S,{+35}P|g); 7526|g to 1/2+.              
  35P   G 7526      2                                                            
  35P   L 7590      20                                                           
