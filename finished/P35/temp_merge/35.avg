@@ -1,5 +1,5 @@
 Program for consistency check: output for averaging results for gamma energies and intensities (version 02/26/2025)
-Generated at: Mon 03/24/2025 at 02:52:40 PM EDT
+Generated at: Mon 03/24/2025 at 03:11:03 PM EDT
 
 **************** Level=2386.9 in 35P     *******************ID#=1-2
 
@@ -570,6 +570,35 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  35P  cL E$unweighted average of 4493.5 {I6} from {+35}Si |b{+-} decay, 4494    
  35P 2cL {I2} from ({+36}S,{+35}P|g), 4474 {I21} from (pol d,{+3}He), and 4494.2
  35P 3cL {I8} from ({+36}S,X|g)                                                 
+
+
+<For Level=4494.1>
+------ average T------
+Data points of T record
+*                 35SI B- DECAY   2.29(49)            weight=50.00%
+*                 208PB(36S,XG)   2.29(49)            weight=50.00%
+
+Averaging results:
+           weighted average:      2.29(35)             (internal)
+                                  2.29(0)              (external)
+                                  chi**2/(n-1)=0.000     [critical=4.605]
+         unweighted average:      2.29(0)             
+           (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
+
+   suggested adopted result:      2.3(5)              
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35P  cL T$weighted average of 2.29 ps {I49} from {+35}Si |b{+-} decay and 2.29 
+ 35P 2cL ps {I49} from ({+36}S,X|g)                                             
+
+### unweighted average comment (all values):
+ 35P  cL T$unweighted average of 2.29 ps {I49} from {+35}Si |b{+-} decay and    
+ 35P 2cL 2.29 ps {I49} from ({+36}S,X|g)                                        
 
 
 **************** Level=4494.1     Gamma=392.3 in 35P     *******************ID#=1-7-1

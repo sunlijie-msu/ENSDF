@@ -1,4 +1,4 @@
-Java RULER 02/18/2025 calculation report        generated at: Sun 03/23/2025 at 10:29:27 PM EDT
+Java RULER 02/18/2025 calculation report        generated at: Mon 03/24/2025 at 04:15:16 PM EDT
 
    input file : D:\X\ND\Files\A35\finished\P35\new\P35_adopted.ens
    output dir : D:\X\ND\Files\A35\finished\P35\temp_merge
@@ -75,19 +75,18 @@ BrIccs=<BrIccS.exe> is working ok.
   
 * <3> Use uncertainties from <MONTE-CARLO> error propagation:
    EL=2386.9
-   EG=2386.3 6  BR(%g)=99.9540 50  BR(%g+%ce)=100  Mult=[M1,E2]  CC=0.00046 5
+   EG=2386.3 6  BR(%g)=99.954 5  BR(%g+%ce)=100  Mult=[M1,E2]  CC=0.00046 5
    T1/2(g) LT 3.45E-13 (sec)   T1/2(g+ce) LT 6.90E-13 (sec)
-    BM1(UP)>0.0157                  BM1(DOWN)>0.00783               BM1W>0.00437 (RUL=10)  (symmetrized)
-           =0.0157<BM1(UP)<49170             =0.00783<BM1(DOWN)<24585    =0.00437<BM1W<13727  (original)
+    BM1(UP)>0.0157                  BM1(DOWN)>0.00784               BM1W>0.00438 (RUL=10)  (symmetrized)
+           =0.0157<BM1(UP)<43570             =0.00784<BM1(DOWN)<21785    =0.00438<BM1W<12164  (original)
       (T1/2 is limit. Monte-Carlo approach is not suitable.)
-    BE2(UP)>0.00394                 BE2(DOWN)>0.00197               BE2W>2.9 (RUL=100)  (symmetrized)
-           =0.00394<BE2(UP)<12395            =0.00197<BE2(DOWN)<6197    =2.9<BE2W<9113221  (original)
+    BE2(UP)>0.00395                 BE2(DOWN)>0.00198               BE2W>2.9 (RUL=100)  (symmetrized)
+           =0.00395<BE2(UP)<10978            =0.00198<BE2(DOWN)<5489    =2.9<BE2W<8071333  (original)
       (T1/2 is limit. Monte-Carlo approach is not suitable.)
   
   ** Minimum and Maximum approach is adopted due to limits in input values **
   **   Results from other approaches might not be reliable for such case   **
   
-   (limit value is suppressed in the new output file)
 **** new line:  35P  cG $B(M1)(W.u.)>0.0023 if M1, B(E2)(W.u.)>1.6 if E2                       
 
 ----------------------------------------------------------------------------------------------------
@@ -132,17 +131,16 @@ BrIccs=<BrIccS.exe> is working ok.
    EL=3860.4
    EG=1473.5 5  BR(%g)=13.5 11  BR(%g+%ce)=13.5 11  Mult=[M1,E2]  CC=8.3E-5 13
    T1/2(g) LT 2.56E-12 (sec)   T1/2(g+ce) LT 2.56E-12 (sec)
-    BM1(UP)>0.00526                 BM1(DOWN)>0.00351               BM1W>0.00196 (RUL=10)  (symmetrized)
-           =0.00526<BM1(UP)<18840            =0.00351<BM1(DOWN)<12560    =0.00196<BM1W<7013  (original)
+    BM1(UP)>0.00529                 BM1(DOWN)>0.00353               BM1W>0.00197 (RUL=10)  (symmetrized)
+           =0.00529<BM1(UP)<20487            =0.00353<BM1(DOWN)<13658    =0.00197<BM1W<7626  (original)
       (T1/2 is limit. Monte-Carlo approach is not suitable.)
-    BE2(UP)>0.00347                 BE2(DOWN)>0.00231               BE2W>3.4 (RUL=100)  (symmetrized)
-           =0.00347<BE2(UP)<12454            =0.00231<BE2(DOWN)<8302    =3.4<BE2W<1.22E7  (original)
+    BE2(UP)>0.00349                 BE2(DOWN)>0.00233               BE2W>3.43 (RUL=100)  (symmetrized)
+           =0.00349<BE2(UP)<13542            =0.00233<BE2(DOWN)<9028    =3.43<BE2W<1.33E7  (original)
       (T1/2 is limit. Monte-Carlo approach is not suitable.)
   
   ** Minimum and Maximum approach is adopted due to limits in input values **
   **   Results from other approaches might not be reliable for such case   **
   
-   (limit value is suppressed in the new output file)
 **** new line:  35P  cG $B(M1)(W.u.)>0.0012 if M1, B(E2)(W.u.)>2.1 if E2                       
    
 --->gamma#2-2: EG=3860.2 10  BR(%g)=86.4 14  BR(%g+%ce)=86.5 14  Mult=[E2]  CC=1.12E-3 2
@@ -177,14 +175,13 @@ BrIccs=<BrIccS.exe> is working ok.
    EL=3860.4
    EG=3860.2 10  BR(%g)=86.4 11  BR(%g+%ce)=86.5 11  Mult=[E2]  CC=1.12E-3 2
    T1/2(g) LT 3.99E-13 (sec)   T1/2(g+ce) LT 3.99E-13 (sec)
-    BE2(UP)>4.5E-4                  BE2(DOWN)>1.5E-4                BE2W>0.221 (RUL=100)  (symmetrized)
-           =4.5E-4<BE2(UP)<1298              =1.5E-4<BE2(DOWN)<433      =0.221<BE2W<636085  (original)
+    BE2(UP)>4.52E-4                 BE2(DOWN)>1.51E-4               BE2W>0.222 (RUL=100)  (symmetrized)
+           =4.52E-4<BE2(UP)<1410             =1.51E-4<BE2(DOWN)<470     =0.222<BE2W<690919  (original)
       (T1/2 is limit. Monte-Carlo approach is not suitable.)
   
   ** Minimum and Maximum approach is adopted due to limits in input values **
   **   Results from other approaches might not be reliable for such case   **
   
-   (limit value is suppressed in the new output file)
 **** new line:  35P B G BE2W GT 0.12                                                           
 
 ----------------------------------------------------------------------------------------------------
@@ -223,8 +220,8 @@ BrIccs=<BrIccS.exe> is working ok.
   
 * <3> Use uncertainties from <MONTE-CARLO> error propagation:
    EL=4101.7
-   EG=241.3 5  BR(%g)=62.2 36  BR(%g+%ce)=62.3 +37-35  Mult=[E1]  CC=0.000665 10
-   T1/2(g) GT 9.35E-11 (sec)   T1/2(g+ce) GT 9.3E-11 (sec)
+   EG=241.3 5  BR(%g)=62.2 36  BR(%g+%ce)=62.3 37  Mult=[E1]  CC=0.000665 10
+   T1/2(g) GT 9.61E-11 (sec)   T1/2(g+ce) GT 9.31E-11 (sec)
     BE1(UP)<3.73E-6                 BE1(DOWN)<2.80E-6               BE1W<4.06E-4 (RUL=0.1)
            =3.73E-6 +0-373                   =2.80E-6 +0-280            =4.06E-4 +0-406  (original)
       (T1/2 is limit. Monte-Carlo approach is not suitable.)
@@ -232,7 +229,6 @@ BrIccs=<BrIccS.exe> is working ok.
   ** Minimum and Maximum approach is adopted due to limits in input values **
   **   Results from other approaches might not be reliable for such case   **
   
-   (limit value is suppressed in the new output file)
 **** new line:  35P B G BE1W LT 4.4E-4                                                         
    
 --->gamma#3-2: EG=1714.8 6  BR(%g)=4.1 +15-13  BR(%g+%ce)=4.1 +15-13  Mult=[M2]  CC=7.93E-5 11
@@ -266,7 +262,7 @@ BrIccs=<BrIccS.exe> is working ok.
 * <3> Use uncertainties from <MONTE-CARLO> error propagation:
    EL=4101.7
    EG=1714.8 6  BR(%g)=4.1 11  BR(%g+%ce)=4.1 11  Mult=[M2]  CC=7.93E-5 11
-   T1/2(g) GT 9.06E-10 (sec)   T1/2(g+ce) GT 9.45E-10 (sec)
+   T1/2(g) GT 9.47E-10 (sec)   T1/2(g+ce) GT 9.63E-10 (sec)
     BM2(UP)<0.0411                  BM2(DOWN)<0.0205                BM2W<0.116 (RUL=3)
            =0.0411 +0-411                    =0.0205 +0-205             =0.116 +0-116  (original)
       (T1/2 is limit. Monte-Carlo approach is not suitable.)
@@ -274,7 +270,6 @@ BrIccs=<BrIccS.exe> is working ok.
   ** Minimum and Maximum approach is adopted due to limits in input values **
   **   Results from other approaches might not be reliable for such case   **
   
-   (limit value is suppressed in the new output file)
 **** new line:  35P B G BM2W LT 0.16                                                           
    
 --->gamma#3-3: EG=4101.4 10  BR(%g)=34 5  BR(%g+%ce)=34 5  Mult=[E3]  CC=0.000924 13
@@ -307,8 +302,8 @@ BrIccs=<BrIccS.exe> is working ok.
   
 * <3> Use uncertainties from <MONTE-CARLO> error propagation:
    EL=4101.7
-   EG=4101.4 10  BR(%g)=33.5 36  BR(%g+%ce)=33.6 +35-38  Mult=[E3]  CC=0.000924 13
-   T1/2(g) GT 1.53E-10 (sec)   T1/2(g+ce) GT 1.57E-10 (sec)
+   EG=4101.4 10  BR(%g)=33.6 +35-38  BR(%g+%ce)=33.5 36  Mult=[E3]  CC=0.000924 13
+   T1/2(g) GT 1.53E-10 (sec)   T1/2(g+ce) GT 1.54E-10 (sec)
     BE3(UP)<0.00121                 BE3(DOWN)<3.03E-4               BE3W<4.16 (RUL=100)
            =0.00121 +0-121                   =3.03E-4 +0-303            =4.16 +0-416  (original)
       (T1/2 is limit. Monte-Carlo approach is not suitable.)
@@ -316,15 +311,14 @@ BrIccs=<BrIccS.exe> is working ok.
   ** Minimum and Maximum approach is adopted due to limits in input values **
   **   Results from other approaches might not be reliable for such case   **
   
-   (limit value is suppressed in the new output file)
 **** new line:  35P B G BE3W LT 4.8                                                            
 
 ----------------------------------------------------------------------------------------------------
  35P   L 4494.1    12 (7/2-)           2.29 PS   49                             
- 35P   G 392.3     3 100     5 [M1+E2]                                          
+ 35P   G 392.3     3 100     5 [M1+E2]   0.22    LT                             
  35P   G 633.6     5 34      5 [E1]                                             
    
---->gamma#2-1: EG=392.3 3  BR(%g)=74.6 29  BR(%g+%ce)=74.7 30  Mult=[M1+E2]  CC=0.000199 12
+--->gamma#2-1: EG=392.3 3  BR(%g)=74.6 37  BR(%g+%ce)=74.6 37  Mult=[M1+E2]  MR=0.22 LT  CC=0.000199 12
    
         Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
                      (uncertainties in T1/2 are from uncertainty in EG)
@@ -336,43 +330,42 @@ BrIccs=<BrIccS.exe> is working ok.
    
 * <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
    EL=4494.1
-   EG=392.3 3  BR(%g)=74.6 30  BR(%g+%ce)=74.6 30  Mult=[M1+E2]  CC=0.000199 12
+   EG=392.3 3  BR(%g)=74.6 30  BR(%g+%ce)=74.6 30  Mult=[M1+E2]  MR=0.22 LT  CC=0.000199 12
    T1/2(g)=3.1E-12 7 (sec)   T1/2(g+ce)=3.1E-12 7 (sec)
-    BM1(UP)=0.2128 463              BM1(DOWN)=0.2128 463            BM1W=0.1188 259 (RUL=10)
-    BE2(UP)=1.985 432               BE2(DOWN)=1.985 432             BE2W=2.92E3 64 (RUL=100)
+    BM1(UP)=0.2103 460              BM1(DOWN)=0.2103 460            BM1W=0.1174 257 (RUL=10)  (symmetrized)
+    BE2(UP)=0.0237 +472-237         BE2(DOWN)=0.0237 +472-237       BE2W=35 +70-35 (RUL=100)
   
->>>>>>> Warning: BE2W=2.9E3 7 exceeds RUL=100
+>>>>>>> Warning: BE2W LT 104 upper limit exceeds RUL=100
 
    **Results might be invalid due to limit or large relative uncertainties in input variables**
    ** dv/v >= 10% is considered large:
-   **    T12:  21.4%     
+   **    T12:  21.4%     MR:  100.0%    MR_factor(L+1):  197.6%    
   
 * <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
    EL=4494.1
-   EG=392.3 3  BR(%g)=74.6 37  BR(%g+%ce)=74.6 37  Mult=[M1+E2]  CC=0.000199 12
+   EG=392.3 3  BR(%g)=74.6 37  BR(%g+%ce)=74.6 37  Mult=[M1+E2]  MR=0.22 LT  CC=0.000199 12
    T1/2(g)=3.1E-12 +9-8 (sec)   T1/2(g+ce)=3.1E-12 +9-8 (sec)
-    BM1(UP)=0.213 +72-47            BM1(DOWN)=0.213 +72-47          BM1W=0.1188 +403-261 (RUL=10)
-    BE2(UP)=1.98 +68-44             BE2(DOWN)=1.98 +68-44           BE2W=2.92E3 +100-64 (RUL=100)
+    BM1(UP)=0.210 +75-52            BM1(DOWN)=0.210 +75-52          BM1W=0.1174 +417-289 (RUL=10)
+    BE2(UP)=0.024 +99-24            BE2(DOWN)=0.024 +99-24          BE2W=35 +146-35 (RUL=100)
   
->>>>>>> Warning: BE2W=2.9E3 +10-7 exceeds RUL=100
+>>>>>>> Warning: BE2W LT 181 upper limit exceeds RUL=100
   
 * <3> Use uncertainties from <MONTE-CARLO> error propagation:
    EL=4494.1
-   EG=392.3 3  BR(%g)=74.6 29  BR(%g+%ce)=74.7 30  Mult=[M1+E2]  CC=0.000199 12
+   EG=392.3 3  BR(%g)=74.6 +31-29  BR(%g+%ce)=74.6 30  Mult=[M1+E2]  MR=0.22 LT  CC=0.000199 12
    T1/2(g)=3.1E-12 7 (sec)   T1/2(g+ce)=3.1E-12 7 (sec)
-    BM1(UP)=0.213 +60-39            BM1(DOWN)=0.213 +60-39          BM1W=0.1188 +334-215 (RUL=10)
-    BM1(UP)=0.213 +60-39            BM1(DOWN)=0.213 +60-39          BM1W=0.1188 +334-215 (RUL=10) (Median)
-    BE2(UP)=1.98 +56-36             BE2(DOWN)=1.98 +56-36           BE2W=2.92E3 +82-53 (RUL=100)
-    BE2(UP)=1.99 +56-36             BE2(DOWN)=1.99 +56-36           BE2W=2.92E3 +82-53 (RUL=100) (Median)
+    BM1(UP)=0.210 +62-36            BM1(DOWN)=0.210 +62-36          BM1W=0.1174 +346-198 (RUL=10)
+    BM1(UP)=0.213 +60-38            BM1(DOWN)=0.213 +60-38          BM1W=0.1188 +332-212 (RUL=10) (Median)
+    BE2(UP)=0.0237 +0-237           BE2(DOWN)=0.0237 +0-237         BE2W=34.9 +0-349 (RUL=100)
+    2.07E-16<BE2(UP)<9.49E-5        2.07E-16<BE2(DOWN)<9.49E-5      3.04E-13<BE2W<0.14 (RUL=100) (Median)  (symmetrized)
   
->>>>>>> Warning: BE2W=2.9E3 +8-5 exceeds RUL=100
->>>>>>> Warning: BE2W=2.9E3 +8-5 exceeds RUL=100
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
   
-**** new line:  35P  cG $B(M1)(W.u.)=0.119 {I+34-22} if M1                                     
-  symmetrized:  35P  cG $B(M1)(W.u.)=0.126 {I28} if M1                                         
+**** new line:  35P B G BM1W=0.117 +42-29                                                      
 **** old line:  35P B G BM1W=0.117 +42-29                                                      
    
---->gamma#2-2: EG=633.6 5  BR(%g)=25.3 30  BR(%g+%ce)=25.3 30  Mult=[E1]  CC=4.64E-5 7
+--->gamma#2-2: EG=633.6 5  BR(%g)=25.4 +28-30  BR(%g+%ce)=25.3 30  Mult=[E1]  CC=4.64E-5 7
    
         Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
                      (uncertainties in T1/2 are from uncertainty in EG)
@@ -400,22 +393,22 @@ BrIccs=<BrIccS.exe> is working ok.
   
 * <3> Use uncertainties from <MONTE-CARLO> error propagation:
    EL=4494.1
-   EG=633.6 5  BR(%g)=25.3 30  BR(%g+%ce)=25.3 30  Mult=[E1]  CC=4.64E-5 7
+   EG=633.6 5  BR(%g)=25.4 +28-30  BR(%g+%ce)=25.3 30  Mult=[E1]  CC=4.64E-5 7
    T1/2(g)=9.0E-12 +24-21 (sec)   T1/2(g+ce)=9.0E-12 +24-21 (sec)
-    BE1(UP)=2.53E-6 +77-54          BE1(DOWN)=1.90E-6 +58-41        BE1W=2.75E-4 +84-59 (RUL=0.1)
-    BE1(UP)=2.53E-6 +77-54          BE1(DOWN)=1.90E-6 +58-40        BE1W=2.75E-4 +84-58 (RUL=0.1) (Median)
+    BE1(UP)=2.53E-6 +76-53          BE1(DOWN)=1.90E-6 +57-40        BE1W=2.75E-4 +83-58 (RUL=0.1)
+    BE1(UP)=2.52E-6 +77-52          BE1(DOWN)=1.89E-6 +58-39        BE1W=2.74E-4 +84-56 (RUL=0.1) (Median)
   
-**** new line:  35P B G BE1W=2.8E-4 +9-6                                                       
+**** new line:  35P B G BE1W=2.8E-4 +8-6                                                       
   symmetrized:  35P B G BE1W=2.9E-4 7                                                          
 **** old line:  35P B G BE1W=2.8E-4 +8-6                                                       
 
 
 Done calculations!
-4 warnings for calculated transition strengths.
+2 warnings for calculated transition strengths.
     (see warning messages starting with >>>>>)
 
    # of bricc calculations: 1
-            Total time (s): 0.035
-  average time/calculation: 0.035
+            Total time (s): 0.188
+  average time/calculation: 0.188
 
 # of gammas in calculation: 8
