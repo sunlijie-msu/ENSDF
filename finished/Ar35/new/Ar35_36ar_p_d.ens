@@ -1,20 +1,22 @@
- 35AR    36AR(P,D)                     1968JO04,1968KO11         11NDS    201111
+ 35AR    36AR(P,D)                     1968JO04,1968KO11         ENSDF    202509
+ 35AR  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
+ 35AR2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35AR  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35AR2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35AR c  1968Jo04: E=27.5 MeV proton beam produced from the University of       
- 35AR2c  Colorado Nuclear Physics Laboratory 1.3 m FFAG cyclotron. Target:      
- 35AR3c  gas targets of natural argon (99.6%) and enriched {+36}Ar (99%).       
+ 35AR c  J|p=0+ for {+36}Ar ground state.                                       
+ 35AR c  1968Jo04: a 27.5-MeV {I1} proton beam was produced by the 1.3-m FFAG   
+ 35AR2c  cyclotron at the University of Colorado Nuclear Physics Laboratory. Gas
+ 35AR3c  targets were natural argon (99.6% {+40}Ar) and 99.0% enriched {+36}Ar. 
  35AR4c  Detectors: a telescope of a 0.228 mm transmission surface barrier      
  35AR5c  detector and a 0.37 cm lithium-drifted stopping counter, FWHM=120 keV. 
  35AR6c  Measured |s(E{-d},|q). Deduced levels, L, spectroscopic factors.       
- 35AR c  1968Ko11: E=33.6 MeV proton beam of 1 to 100 nA produced from the      
- 35AR2c  Michigan State University sector-focusing cyclotron. Target: a gas     
+ 35AR c  1968Ko11: a 33.6-MeV proton beam was produced by the 64-in.            
+ 35AR2c  sector-focusing cyclotron at Michigan State University. Target: a gas  
  35AR3c  target of isotropically enriched {+36}Ar (>99%). Detectors: a |DE-E    
  35AR4c  telescope of a 279 |m silicon surface barrier detector and a 3 mm      
- 35AR5c  lithium-drifted silicon counter, FWHM=130 keV; a CsI(Tl)as a           
- 35AR6c  monitor throughout the work. Measured |s(E{-d},|q). Deduced levels,    
- 35AR7c  J|p, L, spectroscopic factors.                                         
- 35AR cL $ Target {+36}Ar J|p=0+, giving final J|p=L+1/2 or L-1/2               
+ 35AR5c  lithium-drifted silicon counter, FWHM=130 keV; a CsI(Tl)as a monitor   
+ 35AR6c  throughout the work. Measured |s(E{-d},|q). Deduced levels, J|p, L,    
+ 35AR7c  spectroscopic factors.                                                 
  35AR cL E(A)$ Weighted average from 1968Jo04 and 1968Ko11                      
  35AR cL L(A)$ From both 1968Jo04 and 1968Ko11, unless otherwise noted          
  35AR cL E(B),L(B),S(B)$ From 1968Jo04, unless otherwise noted                  
@@ -22,7 +24,7 @@
  35AR cL J,L$ From the comparison of the DWBA predictions with experimental data
  35AR cL $Spectroscopic factor C{+2}S: N*C{+2}S=|s(|q){+exp}/|s(|q){+DWBA},     
  35AR2cL where N=1.65*3/2 in 1968Jo04.                                          
- 35AR CL S$LABEL=C2S                                                            
+ 35AR cL S$LABEL=C{+2}S                                                         
  35AR  L 0                                             2                    A   
  35AR cL S$2.92 in 1968Jo04; 3.02 or 1.76 for different radii in 1968Ko11       
  35AR  L 1180      20                                  0                    A   
@@ -31,7 +33,7 @@
  35AR  L 2615      20                                  2        0.42,0.28   C   
  35AR cL E$weighted average of 2600 {I20} in 1968Ko11 and 2630 {I20} in         
  35AR2cL 1968Jo04.                                                              
- 35AR cL L$ 1 from 1968Jo04, in disagreement with  L({+3}He,|a)=2               
+ 35AR cL L$ 1 from 1968Jo04, in disagreement with L({+3}He,|a)=2                
  35AR cL S$0.12 from 1968Jo04                                                   
  35AR  L 2970      20                                  2                    A   
  35AR cL S$3.10 or 2.47 in 1968Jo04; 2.31 or 1.53 in 1968Ko11                   
@@ -50,4 +52,4 @@
  35AR  L 6700      20                                  3        2.60        B   
  35AR  L 6820      30                                  2        0.72,0.51   C   
  35AR  L 7030      20                                  2        2.20,1.79   B   
-                                                                                
+
