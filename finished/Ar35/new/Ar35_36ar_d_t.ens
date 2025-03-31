@@ -1,24 +1,40 @@
- 35AR    36AR(D,T)                     1970WH04                  11NDS    201111
+ 35AR    36AR(D,T)                     1970WH04,2015FR01         ENSDF    202509
+ 35AR  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
+ 35AR2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35AR  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35AR2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35AR c  1970Wh04: E=21.0,21.6 MeV deuteron beams with intensities of 20 nA to  
- 35AR2c  750 nA produced from the Yale MP tandem Van de Graaff accelerator.     
- 35AR3c  Target: a {+36}Ar target. Detector: a |DE-E telescope of silicon       
- 35AR4c  barrier detectors (140|m and 530|m) for detecting tritons. Measured    
- 35AR5c  |s(E{-t},|q). Deduced level energies, L for levels of 1180, 2635, 2985 
- 35AR6c  and 3200 keV.                                                          
- 35AR cL $ Target {+36}Ar J|p=0+                                                
- 35AR cL E$ From 1970Wh04                                                       
- 35AR cL L$ From the comparison of the DWBA predictions with data               
- 35AR cL $Spectroscopic factor C{+2}S: N*C{+2}S=|s(|q){+exp}/|s(|q){+DWBA},     
- 35AR2cL where N=3.33 in 1970Wh04.                                              
- 35AR CL S$LABEL=C2S                                                            
- 35AR  L 0                                                      3.4             
- 35AR  L 1180      10                                  0        1.4             
- 35AR  L 1700                                          (2)      0.2       LT    
- 35AR cL E$very weak in 1970Wh04                                                
- 35AR  L 2635      20                                  (1,2)                    
- 35AR cL S$(0.11,0.032) for J|p=3/2-; (0.5) for J|p=3/2+                        
- 35AR  L 2985      20                                  2        2.6             
- 35AR  L 3200      20                                  3        0.11,0.33       
-                                                                                
+ 35AR c  J|p=0+ for {+36}Ar ground state.                                       
+ 35AR c  1970Wh04: 21.0,21.6 MeV deuteron beams were produced at the Yale MP    
+ 35AR2c  tandem Van de Graaff accelerator. The target was a {+36}Ar gas cell.   
+ 35AR3c  Tritons were detected using a 140-|mm-530-|mm thick |DE-E telescope of 
+ 35AR4c  silicon surface barrier detectors with FWHM=65-70 keV. Measured        
+ 35AR5c  |s(E{-t},|q). Deduced levels, L, and spectroscopic factors from        
+ 35AR6c  JULIE-DWBA analysis of the measured |s(|q). Comparisons with           
+ 35AR7c  shell-model calculations.                                              
+ 35AR c  2015Fr01: E=22 MeV, 300-700 nA {+2}H beams were produced at the        
+ 35AR2c  Maier-Leibnitz Laboratorium (MLL) in Garching, Germany. The target was 
+ 35AR3c  produced at the Center of Experimental Nuclear Physics and Astrophysics
+ 35AR4c  (CENPA) by implanting 3-6 |mg/cm{+2} of {+36}Ar ions into 30 |mg/cm{+2}
+ 35AR5c  natural abundance carbon foils. Reaction products were momentum        
+ 35AR6c  analyzed with a Q3D magnetic spectrograph. Measured E{-t},             
+ 35AR7c  |s(E{-t},|q). Typical FWHM was |?9 keV, and 16 keV in the 54|'         
+ 35AR8c  spectrum. Deduced levels, proton resonance energies, level densities.  
+ 35AR9c  Comparisons with shell-model calculations. Relevance to                
+ 35ARac  {+34g,m}Cl(p,|g){+35}Ar thermonuclear reaction rates, but adequate     
+ 35ARbc  information (about widths) is still lacking to obtain these rates      
+ 35AR cL E$From 1970Wh04 for low-lying states and from 2015Fr01 for resonances. 
+ 35AR cL $Spectroscopic factor C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N, where N=3.33
+ 35AR2cL is a normalization factor adopted by 1970Wh04 from 1966Ba54.           
+ 35AR cL S$LABEL=C{+2}S                                                         
+ 35AR  L 0            3/2+                                      3.4             
+ 35AR  L 1180      10 1/2+                             0        1.4             
+ 35AR  L 1700         5/2+                             (2)      0.2       LT    
+ 35AR  L 2635      20 (3/2+)                           (2)      0.5           
+ 35AR cL S$for J|p=3/2+. 1970Wh04 states that there is a large uncertainty in   
+ 35AR2cL the spectroscopic strength. 1970Wh04 also gives S=0.11 or 0.032        
+ 35AR3cL assuming L=1, J|p=3/2-.                                                
+ 35AR  L 2986      20                                  2        2.6             
+ 35AR  L 3200      20 7/2-                             3        0.33,0.11       
+ 35AR cL S$assuming r{-0n}=1.25 F and V{-n}~60 MeV, respectively. 1970Wh04      
+ 35AR2cL states that there is a large uncertainty in the spectroscopic strength.
+
