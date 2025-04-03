@@ -3,25 +3,33 @@
  35AR2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35AR  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35AR2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35AR c  J|p=0+ for {+36}Ar ground state.                                       
- 35AR c  1975Da14: E=6.375,6.390,6.660 MeV {+3}He beam produced from the        
- 35AR2c  University of Alberta Van de Graaff accelerator. Targets: 150          
- 35AR3c  |mg/cm{+2} layers of Ag{-2}S on silver backings. Detector: an NE213    
- 35AR4c  liquid scintillator for detecting neutrons a 10% efficient Ge(Li)      
- 35AR5c  detector at 90 degree for detecting |g-rays. Measured time-of-flight   
- 35AR6c  (tof), |s(E{-n},|q), E|g, n|g-coin. Deduced levels, J|p, L for levels  
- 35AR7c  of 0, 1184.2, 1749.8, 2600.8 and 5537 keV.                             
- 35AR cG E$ From level energy difference                                        
- 35AR cL E,L$ From 1975Da14                                                     
- 35AR cL $ Target {+33}S J|p=3/2+                                               
- 35AR  G 1466.0    6                                                            
- 35AR  L 0                                             (0)                      
+ 35AR c  J|p=3/2+ for {+33}S ground state.                                      
+ 35AR c  1975Da14: a {+3}He{++} beam was produced from the University of Alberta
+ 35AR2c  Van de Graaff accelerator. Targets were 150 |mg/cm{+2} layers of       
+ 35AR3c  Ag{-2}S (59% {+33}S) on silver backings. At E({+3}He)=6.375 MeV,       
+ 35AR4c  neutrons were detected using an NE213 liquid scintillator placed at    
+ 35AR5c  |q{-lab}=0|', 10|', and 20|'. At E({+3}He)=6.660 MeV, neutrons were    
+ 35AR6c  detected using the NE213 scintillator placed at |q{-lab}=0|' and 20|'. 
+ 35AR7c  At E({+3}He)=6.390 MeV, neutrons were detected using the NE213         
+ 35AR8c  scintillator placed at |q{-lab}=0|' and neutron-coincidenct |g rays    
+ 35AR9c  were detected using a 10% efficient Ge(Li) detector placed at 90|'.    
+ 35ARac  Measured time-of-flight (TOF) spectra of neutrons, |s(E{-n},|q), E|g,  
+ 35ARbc  n|g-coin. Deduced Q values, levels, L{-2p}, J, |p, and isospin.        
+ 35AR cL E$From 1975Da14.                                                       
+ 35AR cL L$Implied by the observed maximum at |q=0|' in |s(E{-n},|q)            
+ 35AR cG E$Deduced from the excitation energies from 1975Da14.                  
+ 35AR  G 1446.0    6                                                            
+ 35AR  L 0            3/2+                             (0)                      
+ 35AR cL J$3/2+ mirror {+35}Cl g.s.                                             
  35AR  L 1184.2    6                                                            
  35AR  G 1184.2                                                                 
  35AR  L 1749.8    9                                                            
  35AR  G 1749.8                                                                 
- 35AR  L 2600.8    15                                  (0)                      
+ 35AR  L 2600.8    15 3/2+                             (0)                      
+ 35AR cL J$3/2+ mirror level in {+35}Cl and shell-model calculations (1970Wi07) 
  35AR  G 2600.8                                                                 
- 35AR  L 5537      25                                  (0)                      
+ 35AR  L 5537      25 3/2+                             (0)                      
+ 35AR cL $(|p1d{-3/2}){+2}(|n1d{-3/2}){+1} configuration formed by the J|p=0+,  
+ 35AR2cL T=1 (|p1d{-3/2}){+2} diproton transfer from {+3}He to {+33}S of        
+ 35AR3cL {+32}S~#(|n1d{-3/2}){+1} configuration. First T=3/2 state in {+35}Ar.  
  35AR2 L ISPIN=3/2                                                              
-                                                                                
