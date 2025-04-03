@@ -22,46 +22,57 @@
  35AR cL $Spectroscopic factor C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N, where       
  35AR2cL N=1.65*3/2 is a normalization factor adopted by 1968Jo04. The DWBA     
  35AR3cL calculation in 1968Ko11 assumed neutron-well radius parameter          
- 35AR4cL r{-0n}=1.15 F (d{-5/2}) and 1.35 F (d{-3/2}), respectively, to fit the 
- 35AR5cL forward-angle {IJ}-dependence observed in the L=2 angular              
- 35AR6cL distributions. 1968Ko11 states that a large change in radius results in
- 35AR7cL a large change in the magnitude of the calculated DWBA cross-section   
- 35AR8cL and this gives rise to problems in extracting absolute spectroscopic   
- 35AR9cL factors, therefore, the C{+2}S from 1968Ko11 are not adopted but are   
- 35ARacL given in the comments. However, there is some evidence that the radius 
+ 35AR4cL r{-0n}=1.15 F for d{-5/2} pickup and 1.35 F for d{-3/2} pickup,        
+ 35AR5cL respectively, to reproduce the forward-angle J-dependence observed in  
+ 35AR6cL the L=2 deuteron angular distributions. 1968Ko11 demonstrates that a   
+ 35AR7cL larger radius results in a larger DWBA-calculated cross section and    
+ 35AR8cL this gives rise to problems in extracting absolute spectroscopic       
+ 35AR9cL factors, and therefore, the evaluators put the C{+2}S from 1968Ko11 in 
+ 35ARacL comments. 1968Ko11 states that there is some evidence that the radius  
  35ARbcL parameter corresponding to the best DWBA fit to the data might also    
- 35ARccL result in the most trustworthy value for the spectroscopic factor.     
+ 35ARccL result in the                                                          
+ 35ARccL most trustworthy value for the spectroscopic factor.                   
  35AR cL L$From 1968Jo04 and 1968Ko11, unless otherwise noted                   
  35AR cL S$From 1968Jo04                                                        
  35AR cL S$LABEL=C{+2}S                                                         
- 35AR  L 0            3/2+                             2        2.92         
+ 35AR  L 0            3/2+                             2        2.92            
+ 35AR cL J$assigned based on the 3/2+ ground state of {+35}Cl.                  
  35AR cL S$other: 3.03 for 1.15 F and 1.76 for 1.35 F (better fit) (1968Ko11)   
  35AR  L 1180      20 1/2+                             0        2.50            
- 35AR cL E$from 1968Jo04 and 1968Ko11                                           
+ 35AR cL E,J$from 1968Jo04 and 1968Ko11                                         
  35AR cL S$other: 1.29 for 1.15 F and 1.05 for 1.35 F (1968Ko11)                
- 35AR  L 1700      30 5/2+                                                      
+ 35AR  L 1700      30 (5/2+)                                                    
  35AR cL E$from 1968Ko11                                                        
+ 35AR cL J$assigned based on the 5/2+ mirror level in {+35}Cl (1968Ko11).       
  35AR cL S$0.1 for 1.15 F from 1968Ko11                                         
  35AR  L 2615      20 (3/2+)                           2                        
  35AR cL E$weighted average of 2630 {I20} (1968Jo04) and 2600 {I20} (1968Ko11)  
+ 35AR cL J$assigned based on the J dependence of the observed deuteron angular  
+ 35AR2cL distributions (1968Ko11).                                              
  35AR cL L,S$0.42 for 1.15 F and 0.28 for 1.35 F (better fit) for L=2 from      
  35AR2cL 1968Ko11 Other: C{+2}S=0.12 for L=1 from 1968Jo04. 1973Be26 determined 
  35AR3cL L=2 from {+36}Ar({+3}He,|a){+35}Ar and states that L=1 is probably in  
  35AR4cL error as this level corresponds well with the known 3/2+ state at 2695 
  35AR5cL keV in {+35}Cl and there are no nearby negative-parity states in       
  35AR6cL {+35}Cl.                                                               
- 35AR  L 2970      20 (5/2+)                           2        2.47            
+ 35AR  L 2970      20 (5/2)+                           2        2.47            
  35AR cL E$weighted average of 2990 {I20} (1968Jo04) and 2950 {I20} (1968Ko11)  
+ 35AR cL J$assigned based on the J dependence of the observed deuteron angular  
+ 35AR2cL distributions (1968Ko11).                                              
  35AR cL S$assuming 5/2+ (1968Jo04). Other: 3.10 assuming 3/2+ (1968Jo04). 2.31 
  35AR2cL for 1.15 F (better fit) and 1.53 for 1.35 F from 1968Ko11              
  35AR  L 3200      20 7/2-                             3        0.63            
  35AR cL E$weighted average of 3210 {I20} (1968Jo04) and 3190 {I20} (1968Ko11)  
+ 35AR cL J$assigned based on the shell model and the mirror level in {+35}Cl    
+ 35AR2cL (1968Ko11).                                                            
  35AR cL S$other: 0.64 for 1.15 F and 0.37 for 1.35 F (better fit) (1968Ko11)   
- 35AR  L 4756      28 1/2+                             0        0.172           
+ 35AR  L 4756      28 (1/2+)                           0        0.172           
  35AR cL E$weighted average of 4770 {I20} (1968Jo04) and 4700 {I40} (1968Ko11)  
+ 35AR cL J$from 1968Ko11.
  35AR cL S$other: 0.05 for 1.15 F and 0.04 for 1.35 F (1968Ko11)                
  35AR  L 5102      20 7/2-                             3        0.46            
  35AR cL E$weighted average of 5110 {I20} (1968Jo04) and 5070 {I40} (1968Ko11)  
+ 35AR cL J$assumed from simple shell-model considerations (1968Jo04).           
  35AR cL L$from 1968Jo04. L is not reported in 1968Ko11. 1973Be26 determined L=2
  35AR2cL from {+36}Ar({+3}He,|a){+35}Ar and states that L=2 gives a much better 
  35AR3cL account of the data than does L=3.                                     
@@ -76,12 +87,12 @@
  35AR cL S$for 3/2+ and 5/2+, respectively (1968Jo04). Other: 1.18 for 1.15 F   
  35AR2cL and 0.83 for 1.35 F (better fit) (1968Ko11)                            
  35AR  L 6620      30 (1/2+)                           0               
- 35AR cL E,L$from 1968Ko11                                                      
+ 35AR cL E,J,L$from 1968Ko11                                                    
  35AR cL S$0.24 for 1.15 F and 0.19 for 1.35 F (1968Ko11)                       
  35AR  L 6700      20 7/2-                             3        2.60            
- 35AR cL E,L,S$from 1968Jo04                                                    
+ 35AR cL E,J,L,S$from 1968Jo04                                                  
  35AR  L 6820      30 (3/2,5/2)+                       2                        
- 35AR cL E,L,S$from 1968Ko11 only                                               
+ 35AR cL E,J,L$from 1968Ko11
  35AR cL S$0.72 for 1.15 F (better fit) and 0.51 for 1.35 F (1968Ko11)          
  35AR  L 7030      20 (3/2,5/2)+                       2        2.20,1.79       
  35AR cL S$for 3/2+ and 5/2+, respectively (1968Jo04).                          
