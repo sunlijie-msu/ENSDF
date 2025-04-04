@@ -1,20 +1,28 @@
- 35AR    24MG(16O,ANG)                 2007DE14,2005DEZZ         11NDS    201111
+ 35AR    24MG(16O,ANG)                 2007DE14,2005DEZZ         ENSDF    202509
+ 35AR  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
+ 35AR2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35AR  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35AR2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35AR c  2007De14,2005DeZZ: E=70 MeV {+16}O beam produced from the XTU-Tandem   
- 35AR2c  accelerator at Legnaro National Laboratory. Target: a 400 |mg/cm{+2}   
- 35AR3c  self-supporting target of {+24}Mg. Detectors: the GASP spectrometer    
- 35AR4c  of 40 Compton-suppressed HPGe detectors and a multiplicity filter      
- 35AR5c  of 80 BGO scintillators, in conjunction with the 4|p charged-particle  
- 35AR6c  detector ISIS and a neutron ring of 6 BC501A scintillators.            
- 35AR7c  Measured E|g, I|g, |g|g, |g(|q), |gp-coin. Deduced high-spin levels,   
- 35AR8c  J|p from the ADO ratios.                                               
- 35AR cG $R{-ADO}=[I|g(34|')+I|g(146|')]/2I|g(90|'). Expected values for        
- 35AR2cG this geometry are: |?1.3 for |DJ=2, quadrupole and |?0.8 for           
- 35AR3cG |DJ=1, dipole transitions                                              
- 35AR cL E$ From least-squares fit to E|g's                                     
- 35AR cL J$ From the transition multipolarities deduced from measured ADO ratios
- 35AR2cL in 2007De14                                                            
+ 35AR c  2007De14,2005DeZZ: a 70-MeV {+16}O beam was produced by the XTU-Tandem 
+ 35AR2c  accelerator at the Legnaro National Laboratory, Italy. The arget was a 
+ 35AR3c  400 |mg/cm{+2} self-supporting target of {+24}Mg. |g ray from fusion   
+ 35AR4c  evaporation reactions of {+16}O({+24}Mg,|an|g){+35}Ar and              
+ 35AR5c  {+16}O({+24}Mg,|ap|g){+35}Cl were detected using the GASP spectrometer,
+ 35AR6c  which consists of an array of 40 Compton-suppressed HPGe detectors and 
+ 35AR7c  a multiplicity filter of 80 BGO scintillators of 80 BGO scintillators. 
+ 35AR8c  The GASP spectrometer is operated in conjunction with the 4|p          
+ 35AR9c  charged-particle detector ISIS and a neutron ring of 6 BC501A          
+ 35ARac  scintillators. The events were collected when at least two Ge detectors
+ 35ARbc  and one BGO scintillator were fired in coincidence. Measured E|g, I|g, 
+ 35ARcc  |g|g, |an|g-coin, |ap|g-coin, |g(|q), |g|g(|q)(ADO). Deduced levels, J,
+ 35ARdc  |p, and transition multipolarities from |g-ray Angular Distribution    
+ 35ARec  from Oriented nuclei ratios.                                           
+ 35AR cG $R{-ADO}=[I|g(34|')+I|g(146|')]/2I|g(90|'). Expected values are        
+ 35AR2cG R{-ADO}|?1.3 for stretched quadrupole (|DJ=2) and {-ADO}|?0.8 for      
+ 35AR3cG stretched dipole (|DJ=1) transitions.                                  
+ 35AR cL E$From a least-squares fit to |g-ray energies.                         
+ 35AR cL J$From mirror levels in {+35}Cl and from the measured ADO ratios in    
+ 35AR2cL 2007De14                                                               
  35AR CL BAND(A)$ Band based on f{-7/2} orbital                                 
  35AR PN                                                                     5  
  35AR  L 0.0          3/2+                                                      
@@ -61,4 +69,4 @@
  35AR  L 12276.4   33 23/2-                                                 A   
  35AR  G 2370.9    25   15   5                                                  
  35AR cG $ R{-ADO}=1.8 {I4}                                                     
-                                                                                
+
