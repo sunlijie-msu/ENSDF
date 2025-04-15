@@ -1,5 +1,17 @@
 # Copilot Instructions
 
+## Important Rules
+- Never modify the first line or bottom line of any file
+- All edits must be made between these boundaries
+- NEVER modify the indentation of the first line or bottom line of any .ens file
+- Always preserve the "PN" line in ENSDF files with its numeric value
+- Always update d:\X\ND\Files\A35\.vscode\change.log after making significant changes
+
+## ENSDF Column Positioning Requirements
+- BR (Branching Ratio) values must be positioned at column 32
+- Strict adherence to column positions is critical for all ENSDF records
+- When editing values, maintain proper spacing according to ENSDF format
+
 ## Formatting Guidelines for ENSDF Files
 
 When editing Evaluated Nuclear Structure Data File (ENSDF) files, please adhere to the following structure rules:
