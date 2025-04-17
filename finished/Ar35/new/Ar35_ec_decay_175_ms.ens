@@ -3,6 +3,8 @@
  35AR2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35AR  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35AR2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
+ 35AR DE EAV,LOGFT$FROM BetaShape v2.4 (Jun-2024) 2023MO21.                     
+ 35AR dL E$Least-squares fitting is done by GLSC (version 21-Mar-2025)          
  35AR c  1980Ew02,1979Ca15: A 600-MeV proton beam was produced from the         
  35AR2c  synchrocyclotron at CERN-ISOLDE and bombard a ScC{-2} target. The      
  35AR3c  {+45}Sc(p,8n3p) spallation reaction products diffused out of the target
@@ -14,12 +16,12 @@
  35AR9c  positron activities were determined using a 700-|mm thick silicon      
  35ARAc  detector. Protons were detected using a 20-|mm-700-|mm thick |DE-E     
  35ARBc  telescope of silicon surface barrier detectors with FWHM=50 keV.       
- 35ARCc  Measured E|g<4.8 MeV, I|g, E{-p}>0.9 MeV, I{-p}. Deduced Deduced       
+ 35ARCc  Measured E|g(<5 MeV), I|g, E{-p}(>0.9 MeV), I{-p}. Deduced Deduced     
  35ARDc  levels, J, |p, decay branching ratios, log {Ift}, parent {+35}K        
  35AREc  T{-1/2}, and coeffcients of the isobaric multiplet mass equation for   
  35ARFc  A=36, T=2 quartets. Comparisons with shell-model calculations and the  
- 35ARGc  mirror nucleus {+35}Cl. Also see abstracts 1979HaZY, 1979HaZT.        
- 35ARHc
+ 35ARGc  mirror nucleus {+35}Cl. Also see abstracts 1979HaZY, 1979HaZT.         
+ 35ARHc                                                                         
  35AR c  2018Sa54: A 36-MeV/nucleon {+36}Ar primary beam was produced from the  
  35AR2c  K500 cyclotron at Texas A&M University. The secondary {+35}K beam was  
  35AR3c  produced via the {+1}H({+36}Ar,{+35}K)2n reaction of {+36}Ar bombarding
@@ -27,15 +29,15 @@
  35AR5c  into a 45-|mm DSSD sandwiched between a 140-|mm SSSD and a 1-mm Si-pad 
  35AR6c  detector in a pulsed-beam mode. |e+|b{++}-delayed protons were detected
  35AR7c  by the implantation detector. |g rays were detected by two HPGe        
- 35AR8c  detectors. Measured E{-p}>300 keV, I{-p}, E|g, I|g, p|g-coin,          
+ 35AR8c  detectors. Measured E{-p}(>300 keV), I{-p}, E|g, I|g, p|g-coin,        
  35AR9c  |g|g-coin. Deduced parent {+35}K T{-1/2}.                              
- 35ARAc
+ 35ARAc                                                                         
  35AR c  2019ChZU: Same beam production as 2018Sa54. {+35}K was implanted into  
  35AR2c  the AstroBox2 detector filled with 800-Torr P5 gas. |e+|b{++}-delayed  
  35AR3c  protons were detected by the implantation detector. |g rays were       
- 35AR4c  detected by 4 Clover Ge detectors. Measured E{-p}>100 keV, I{-p}, E|g, 
- 35AR5c  I|g, p|g-coin, |g|g-coin.                                              
- 35AR6c  
+ 35AR4c  detected by 4 Clover Ge detectors. Measured E{-p}(>100 keV), I{-p},    
+ 35AR5c  E|g, I|g, p|g-coin, |g|g-coin.                                         
+ 35AR6c                                                                         
  35AR c  1998Sc19: A polarized {+35}K beam was produced via the fragmentation of
  35AR2c  500-MeV/nucleon {+40}Ca impinging on a {+9}Be target at GSI, separated 
  35AR3c  using |DE-tof by FRS, momentum-selected by slits, and implanted into a 
@@ -51,62 +53,108 @@
  35AR5c  {+35}K ground state from |b-NMR.                                       
  35AR c  Theoretical studies involving {+35}K decay: shell model (1985Br29,     
  35AR2c  2003Sm02, Surender et al., Annals of Physics 470, 169772 (2024))       
- 35AR cG E,RI$From 1980Ew02.                                                    
- 35AR cL E$From a least-squares fit to |g-ray energies in 1980Ew02  
+ 35AR cG $1980Ew02 states that they have generated a pandemonium test in the    
+ 35AR2cG same spirit as in 1977Ha51 and find that less than one percent of the  
+ 35AR3cG |g-ray intensity from {+35}K decay should be missed for that reason.   
+ 35AR cG E,RI$From 1980Ew02.
+ 35AR cL E$From a least-squares fit to |g-ray energies in 1980Ew02              
  35AR cL J$From the Adopted Levels                                              
  35K   P 0           3/2+              175 MS    2              11874.4   9     
- 35K  cP J,T$From Adopted Levels of {+35}K                                     
+ 35K  cP J,T$From Adopted Levels of {+35}K                                      
  35K  cP T$Weighted average of 175 ms {I2} (2018Sa54), 178 ms {I8} (1998Sc19),  
  35K 2cP and 190 ms {I30} (1980Ew02).                                           
- 35K  cP QP$From 2021Wa16.
- 35AR  N 0.50      2           1.0       1.0                                    
+ 35K  cP QP$From 2021Wa16.                                                      
+ 35AR  N 0.505     29          1.0       1.0                                    
+ 35AR cN NR$From |S%I|g(|g to g.s.)=80.6 {I40}, deduced from                    
+ 35AR2cN 100-|S%I{-p}-%I(|e+|b{++})(g.s.), where |S%I{-p}=%(|e+|b{++})=0.37     
+ 35AR3cN {I15} (1980Ew02) and %I(|e+|b{++})(g.s.)=19 {I4} (1980Ew02),           
+ 35AR4cN corresponding to log {Ift}=5.07 {I5}, which was deduced from the {+35}S
+ 35AR5cN (g.s.)->{+35}Cl (g.s.) mirror log {Ift}=5.01 {I2} with a small         
+ 35AR6cN asymmetry correction.                                                  
  35AR PN                                                                     4  
- 35AR  G 2697.7    6
- 35AR cG $Unplaced |g ray, accounts for 1.2% |b-feeding (1980Ew02)
+ 35AR  G 2697.7    6                                                            
+ 35AR cG $Unplaced |g ray, accounts for no more than 1.2% |e+|b{++}-feeding     
+ 35AR2cG (1980Ew02)                                                             
  35AR  L 0            3/2+                                                      
- 35AR  E                19   4  0.0016 3   5.07  10             19        4
- 35AR cE TI$deduced from mirror {+35}S to {+35}Cl g.s. log {Ift}=5.01 {I2}      
- 35AR2cE correcting for asymmetry systematics (1980Ew02).                       
+ 35AR  E             19      4 0.0018  4 5.1     1              19        4     
+ 35AR cE TI$from 1980Ew02 assuming mirror log {Ift} with a small asymmetry      
+ 35AR2cE correction.                                                            
+ 35ARS E EAV=5170.29 44$CK=8.275E-5 92$CL=8.78E-6 11$CM=1.158E-6 19             
  35AR  L 1184.01   25 1/2+                                                      
- 35AR  E                2.2  7             5.77  14             2.2       7     
+ 35AR  E             2.2     7 2.8E-4  9 5.8     +2-1           2.2       7     
+ 35ARS E EAV=4586.92 46$CK=1.145E-4 13$CL=1.215E-5 15$CM=1.602E-6 26            
  35AR  G 1184.0    3  14.3   7                                                  
- 35AR  L 1750.7     3  (5/2)+                                                   
- 35AR  E               11.9  9  0.0017113  4.91   4             11.9      9     
+ 35AR2 G %IG=7.2 5                                                              
+ 35AR  L 1750.72   25  (5/2)+                                                   
+ 35AR  E             11.9    9 0.00181 14 4.91   4              11.9      9     
+ 35ARS E EAV=4308.03 46$CK=1.358E-4 15$CL=1.441E-5 18$CM=1.901E-6 31            
  35AR  G 1750.5    3  28     1                                                  
- 35AR  L 2638.0     3 3/2+,5/2+                                                 
- 35AR  E                0.4  LE             6.2  GE             0.4       LE    
+ 35AR2 G %IG=14.1 9                                                             
+ 35AR  L 2637.99   26 3/2+,5/2+                                                 
+ 35AR  E             0.4     LE          6.2     GE             0.4       LE    
+ 35ARS E EAV=3871.90$CK=1.819E-4 20$CL=1.930E-5 24$CM=2.546E-6 42            
  35AR  G 886.8     5  0.9    3                                                  
+ 35AR2 G %IG=0.46 +19-17                                                        
  35AR  G 2638.0    4  5.5    7                                                  
+ 35AR2 G %IG=2.8 5                                                              
  35AR  L 2982.79   12 3/2+,5/2+                                                 
- 35AR  E                26   3  0.0057 7   4.27   6             26        3     
+ 35AR  E             26.0    22 0.0060 5 4.27    4              26.0      22    
+ 35ARS E EAV=3702.63 45$CK=2.057E-4 23$CL=2.182E-5 27$CM=2.879E-6 47            
  35AR  G 1798.9    5  3.5    6                                                  
- 35AR  G 2982.68   13 100    4                                                 
- 35AR  L 4065.0     4 1/2+,3/2+,5/2+                                           ?
- 35AR  E               0.55  30            5.64  24             0.55      30    
+ 35AR2 G %IG=1.8 4                                                              
+ 35AR  G 2982.68   13 100    4                                                  
+ 35AR2 G %IG=50.5 27                                                            
+ 35AR  L 4065.0    4  1/2+,3/2+,5/2+                                           ?
+ 35AR  E             0.56    33 2.0E-4 12 5.6    +4-2           0.56      33    
+ 35ARS E EAV=3172.24 48$CK=3.147E-4 35$CL=3.339E-5 42$CM=4.405E-6 72            
  35AR  G 1426.8    4  3.0    5                                                  
- 35AR  L 4528.2     4 1/2+,3/2+,5/2+                                            
- 35AR  E                0.7  4             5.39  25             0.7       4     
+ 35AR2 G %IG=1.5 +4-3                                                           
+ 35AR  L 4528.2    4  1/2+,3/2+,5/2+                                            
+ 35AR  E             0.7     4 3E-4    2 5.4     +4-2           0.7       4     
+ 35ARS E EAV=2945.75 48$CK=3.860E-4 44$CL=4.095E-5 52$CM=5.403E-6 89            
  35AR  G 4527.9    7  2.6    7                                                  
- 35AR  L 4725.9     6 1/2+                                                      
- 35AR  E                2.1  4             4.85   9             2.1       4     
+ 35AR2 G %IG=1.3 4                                                              
+ 35AR  L 4725.9    6  1/2+                                                      
+ 35AR  E             2.1     4 0.0010  2 4.9     1              2.1       4     
+ 35ARS E EAV=2849.20 54$CK=4.232E-4 48$CL=4.490E-5 57$CM=5.924E-6 97            
  35AR  G 3542.0    6  2.9    6                                                  
+ 35AR2 G %IG=1.5 4                                                              
  35AR  G 4724.5    11 1.2    5                                                  
+ 35AR2 G %IG=0.61 +30-27                                                        
  35AR  L 4785.8    11  1/2+                                                     
- 35AR  E                1.0  4             5.15  18             1.0       4     
+ 35AR  E             1.0     4 5E-4    2 5.2     2              1.0       4     
+ 35ARS E EAV=2819.96 68$CK=4.354E-4 50$CL=4.620E-5 59$CM=6.09E-6 10             
  35AR  G 4785.4    11 1.9    7                                                  
+ 35AR2 G %IG=1.0 4                                                              
  35AR  L 5572.66   15 3/2+                                                      
  35AR2 L ISPIN=3/2                                                              
- 35AR  E                36   3   0.026 2   3.31   5             36        3     
+ 35AR  E             36.3    24 0.0265 18 3.31   4              36.3      24    
+ 35ARS E EAV=2436.61 44$CK=6.519E-4 74$CL=6.918E-5 87$CM=9.13E-6 15             
  35AR  G 1044.4    4  1.3    4                                                  
+ 35AR2 G %IG=0.66 +25-23                                                        
  35AR  G 1507.4    5  1.9    4                                                  
- 35AR  G 2589.8    1  52     2                                                 
+ 35AR2 G %IG=0.96 +27-25                                                        
+ 35AR  G 2589.8    1  52     2                                                  
+ 35AR2 G %IG=26.3 18                                                            
  35AR  G 2934.5    5  3.5    6                                                  
+ 35AR2 G %IG=1.8 4                                                              
  35AR  G 3821.7    7  3.5    7                                                  
+ 35AR2 G %IG=1.8 5                                                              
  35AR  G 4387.2    9  3.5    8                                                  
+ 35AR2 G %IG=1.8 5                                                              
  35AR  G 5572.3    10 6.1    16                                                 
- 35AR cG $1980Ew02 only observed its double escape peak at 4550 keV.
+ 35AR2 G %IG=3.1 +10-9                                                          
+ 35AR cG $1980Ew02 observed the double escape peak at 4550 keV of this |g ray.  
+ 35AR  L 6348      11 1/2+,3/2+,5/2+                                            
+ 35AR  L 7053      11 1/2+,3/2+,5/2+                                            
+ 35AR  L 7255      11 1/2+,3/2+,5/2+                                            
+ 35AR  L 7283      11 1/2+,3/2+,5/2+                                            
+ 35AR  L 7431      11 1/2+,3/2+,5/2+                                            
  35AR  L 7510      20 1/2+,3/2+,5/2+                                           ?
- 35AR  E               0.15  6  0.0004217  4.79  18             0.15      6     
+ 35AR  E             0.15    6 4.2E-4  17 4.8    +3-2           0.15      6     
+ 35ARS E EAV=1501.5 96$CK=0.002492 71$CL=2.646E-4 77$CM=3.49E-5 11              
  35AR  L 8395      20 1/2+,3/2+,5/2+                                           ?
- 35AR  E               0.06  3  0.0004418  4.57  19             0.062     26    
-
+ 35AR cL $E{-p0}=2480 {I2}
+ 35AR  E             0.062   26 4.3E-4 18 4.6    +3-2           0.062     26    
+ 35ARS E EAV=1082.1 94$CK=0.00620 22$CL=6.59E-4 24$CM=8.69E-5 32                
+                                                                                

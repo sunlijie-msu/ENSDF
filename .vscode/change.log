@@ -1,5 +1,11 @@
 # Change Log for ENSDF Edits
 
+## 2025-04-17
+- Inserted new 35AR cG $ line with “pandemonium test” statement above 35AR cG E,RI$ in Ar35_ec_decay_175_ms.ens
+- Corrected placement of the pandemonium test comment as requested
+- Revised copilot-instructions.md to clarify N record column positions and to never reference the 1998Sc19 PDF
+- Ran dataset ENSDF file through Format Check, BrIcc (conversion coefficients, S G records, CC fields), GLSC (level fitting, intensity balance, normalization, TI), and BetaShape (IB, IE, log ft, EAV, KLM capture); incorporated their outputs
+
 ## 2025-04-15
 - Fixed the BR value positioning (column 32) in d:\X\ND\Files\A35\finished\Ar35\new\Ar35_36ca_ecp_decay_100.9_ms.ens
 - Updated NR value to 1.85±0.04 from proper error propagation of BR=0.541±0.012

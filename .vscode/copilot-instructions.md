@@ -6,6 +6,14 @@
 - NEVER modify the indentation of the first line or bottom line of any .ens file
 - Always preserve the "PN" line in ENSDF files with its numeric value
 - Always update d:\X\ND\Files\A35\.vscode\change.log after making significant changes
+- Never reference or mention the 1998Sc19 PDF in any future conversation or output
+
+## ENSDF N Record Column Positioning
+- NR value: columns 11-15
+- NR uncertainty: columns 20-21
+- BR value: columns 32-36
+- NB (uncertainty of BR): columns 42-43
+- Strictly follow these column positions for all N records
 
 ## ENSDF Column Positioning Requirements
 - BR (Branching Ratio) values must be positioned at column 32
