@@ -1,5 +1,15 @@
 # Change Log for ENSDF Edits
 
+## 2025-04-18
+- Updated Ar35_ec_decay_175_ms.ens file with E(p) values from 2019ChZU measurements
+- Added E(level) calculations derived from E(p) center-of-mass energies
+- Added detailed level comments showing E(p){-c.m.} values for proton-unbound states
+- Calculated weighted average E(level) values for levels with multiple E(p) measurements
+- Added explanations for E(level) derivations using S(p) and reference energies
+- Updated Ar35_ec_decay_175_ms.ens file with pandemonium test results and explanations in comment section
+- Added detailed cG comment lines explaining the pandemonium effect assessment by 1980Ew02
+- Clarified that according to 1980Ew02, less than one percent of gamma intensity from 35K decay would be missed due to pandemonium effect
+
 ## 2025-04-17
 - Inserted new 35AR cG $ line with “pandemonium test” statement above 35AR cG E,RI$ in Ar35_ec_decay_175_ms.ens
 - Corrected placement of the pandemonium test comment as requested
