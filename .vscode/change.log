@@ -1,5 +1,29 @@
 # Change Log for ENSDF Edits
 
+## 2025-04-20
+- Updated Ar35_adopted.ens:
+  - Changed reference from 2012WA38 to 2021WA16 in the Q record
+  - Updated Q-value uncertainties: 0.9→0.9, 0.8→0.7, 0.8→0.7, 0.8→0.7
+  - Changed J assignment for level 2982.79 keV from "3/2+,5/2+" to "5/2+" only
+  - Changed J assignment for 5113 keV level to "(3/2,5/2)+" from "3/2+,5/2+"
+  - Corrected level ordering at ~6.3 MeV (6332, 6345 keV with XREF=A(6348*))
+  - Added XREF=A reference markers to levels at 7255, 7427 and 7509 keV
+  - Changed 7504 keV to 7509 keV and updated its log ft from "4.79 {i18}" to "<5.0"
+  - Updated XREF=A(8393?) reference for 8395 keV level with uncertainty indicator
+  - Improved precision of E(level) to 4785.7 keV (from 4785.8) for consistency
+  - Added "F" reference for 32S(A,N) reaction in XREF section
+  - Changed XREF ordering and relettered cross-references for various datasets
+  - Added multipolarities to gamma transitions:
+    - Added E2 to 1750.6 keV gamma from 1750.7 keV level
+    - Added E2 to 2603.0 keV gamma from 2603.1 keV level
+    - Changed from "(M2)" to "M2" for 3197.0 keV gamma from 3196.9 keV level
+    - Added E2 to 2187.1 keV gamma from 5384.2 keV level
+    - Added M1 to 381.6 keV gamma from 5765.8 keV level
+    - Added E2 to transitions from 9905.5 keV level (1693.3, 1796.3 keV)
+    - Added E2 to 2370.9 keV gamma from 12276.4 keV level
+  - Fixed format of the J$L comment at 0.0 keV level (proper "|" symbol)
+  - Removed redundant spaces in gamma energy and intensity fields for proper column alignment
+
 ## 2025-04-18
 - Updated Ar35_ec_decay_175_ms.ens file with E(p) values from 2019ChZU measurements
 - Added E(level) calculations derived from E(p) center-of-mass energies
