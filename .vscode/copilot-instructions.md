@@ -8,6 +8,27 @@
 - Always update d:\X\ND\Files\A35\.vscode\change.log after making significant changes
 - Never reference or mention the 1998Sc19 PDF in any future conversation or output
 
+## Automatic Change Tracking
+- Track all changes made to ENSDF files throughout each workday
+- At the end of each workday, update the change.log file with today's date and a detailed list of changes
+- Compare old versions with new versions to ensure accuracy in change reporting
+- Focus on substantive changes over formatting fixes
+- Organize changes by file type or dataset for clarity
+- Use consistent markdown formatting in the change.log file
+
+## Change.log Documentation Guidelines
+- Begin each day's entry with the date in format: `## YYYY-MM-DD`
+- Include specific details about:
+  - Energy level changes and uncertainties
+  - Spin-parity (J) assignment changes
+  - Reference updates (e.g., 2012WA38 → 2021WA16)
+  - Multipolarity assignments to gamma transitions
+  - Level ordering corrections
+  - Cross-reference (XREF) additions or updates
+  - E(p) values and E(level) calculations
+  - log ft value modifications
+- Never hallucinate changes - verify all differences through direct comparison
+
 ## ENSDF N Record Column Positioning
 - NR value: columns 11-15
 - NR uncertainty: columns 20-21
