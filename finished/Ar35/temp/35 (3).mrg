@@ -1,5 +1,5 @@
 Program for consistency check: output for original lines grouped by level and gamma energies (version 03/30/2025)
-Generated at: Mon 04/21/2025 at 09:44:55 PM EDT
+Generated at: Mon 04/21/2025 at 09:59:16 PM EDT
 
 
 Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
@@ -103,10 +103,10 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      36AR(P,D)--->H  H     35AR cL E$from 1968Ko11.
                      36AR(P,D)--->H  H     35AR cL J$assigned based on the 5/2+ mirror level in {+35}Cl (1968Ko11).       
                      36AR(P,D)--->H  H     35AR cL S$0.1 for 1.15 F from 1968Ko11.
- GAMMA------------------------------------ 35AR  G 1750.6    3 100       E2                                                --- EG=1750.6     FL=0.0        JF=3/2+
+ GAMMA------------------------------------ 35AR  G 1750.6    3 100       Q                                                 --- EG=1750.6     FL=0.0        JF=3/2+
          35K EC DECAY (175 MS)--->A  A     35AR  G 1750.5    3 100                                                         *** EG=1750.5     FL=0          JF=3/2+
                  16O(24MG,ANG)--->D  D     35AR  G 1750.7    4 100                                                         *** EG=1750.7     FL=0.0        JF=3/2+
-                 24MG(16O,ANG)--->E  E     35AR  G 1750.8    5 100       Q                                                 *** EG=1750.8     FL=0.0        JF=3/2+
+                 24MG(16O,ANG)--->E  E     35AR  G 1750.8    5 100        Q                                                *** EG=1750.8     FL=0.0        JF=3/2+
                    33S(3HE,NG)--->G  G     35AR  G 1749.8                                                                  *** EG=1749.8     FL=0          JF=3/2+
          35K EC DECAY (175 MS)--->A  A     35AR2 G %IG=14.1 9                                                             
                  16O(24MG,ANG)--->D  D     35AR cG $R(|g(|q))=1.41 {I14}.
@@ -118,7 +118,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       32S(A,N)--->F  F     35AR  L 2030      80                                                           
                       32S(A,N)--->F  F     35AR cL $Threshold E(|a){-lab}=11.97 MeV {I80}.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35AR  L 2603.1    5  7/2+                                                       --- possible JPI=(3/2+,5/2+,7/2+,9/2+)
+ LEVEL************************************ 35AR  L 2603.1    5  7/2+                                                       --- possible JPI=1/2,3/2,5/2,7/2,9/2: 593.7g from 3196.9, 5/2-,7/2-; 593.7g from 3196.9, 5/2-,7/2-; 593.7g from 3196.9, 5/2-,7/2-;...
                      *new XREF new tags    35ARX L XREF=DEG
                      *new XREF old tags    35ARX L XREF=DEG
                      #old XREF in Adopted  35ARX L XREF=DEG
@@ -131,9 +131,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 35AR  G 851.9     9 12.3    33                                                  --- EG=851.9      FL=1750.7     JF=(5/2)+
                  16O(24MG,ANG)--->D  D     35AR  G 852       1 10      5                                              A    *** EG=852        FL=1750.8     JF=5/2+
                  24MG(16O,ANG)--->E  E     35AR  G 851.8     9 13.3    33                                                  *** EG=851.8      FL=1750.8     JF=5/2+
- GAMMA------------------------------------ 35AR  G 2603.0    5 100     10 E2                                               --- EG=2603.0     FL=0.0        JF=3/2+
+ GAMMA------------------------------------ 35AR  G 2603.0    5 100     10 Q                                                --- EG=2603.0     FL=0.0        JF=3/2+
                  16O(24MG,ANG)--->D  D     35AR  G 2603.0    5 100     22                                                  *** EG=2603.0     FL=0.0        JF=3/2+
-                 24MG(16O,ANG)--->E  E     35AR  G 2602.6    15 100    10Q                                                 *** EG=2602.6     FL=0.0        JF=3/2+
+                 24MG(16O,ANG)--->E  E     35AR  G 2602.6    15 100    10 Q                                                *** EG=2602.6     FL=0.0        JF=3/2+
                    33S(3HE,NG)--->G  G     35AR  G 2600.7                                                                  *** EG=2600.7     FL=0          JF=3/2+
                  16O(24MG,ANG)--->D  D     35AR cG $R(|g(|q))=1.01 {I17}.
                  24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.37 {I20}.
@@ -210,8 +210,8 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                  16O(24MG,ANG)--->D  D     35AR  G 593       1 16      8                                                   *** EG=593        FL=2603.2     JF=(7/2+)
                  24MG(16O,ANG)--->E  E     35AR  G 593.7     2 16.4    30                                                  *** EG=593.7      FL=2603.0     JF=7/2+
  GAMMA------------------------------------ 35AR  G 1446.2    2 100     8 E1                                                --- EG=1446.2     FL=1750.7     JF=(5/2)+
-                 16O(24MG,ANG)--->D  D     35AR  G 1446.2    2 100     9 D                                                 *** EG=1446.2     FL=1750.8     JF=5/2+
-                 24MG(16O,ANG)--->E  E     35AR  G 1446.1    6 100     8 D                                                 *** EG=1446.1     FL=1750.8     JF=5/2+
+                 16O(24MG,ANG)--->D  D     35AR  G 1446.2    2 100     9  D                                                *** EG=1446.2     FL=1750.8     JF=5/2+
+                 24MG(16O,ANG)--->E  E     35AR  G 1446.1    6 100     8  D                                                *** EG=1446.1     FL=1750.8     JF=5/2+
                    33S(3HE,NG)--->G  G     35AR  G 1446.0    6                                                             *** EG=1446.0     FL=1749.8     JF=
                  16O(24MG,ANG)--->D  D     35AR cG $R(|g(|q))=0.71 {I9}.
                  24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=0.87 {I19}.
@@ -219,8 +219,8 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                    33S(3HE,NG)--->G  G     35AR2cG Levels from {+16}O({+24}Mg,|an|g){+35}Ar (2004Ek01) and                
                    33S(3HE,NG)--->G  G     35AR3cG {+24}Mg({+16}O,|an|g){+35}Ar (2007De14).                               
  GAMMA------------------------------------ 35AR  G 3197.0    7 21      5 M2                                                --- EG=3197.0     FL=0.0        JF=3/2+
-                 16O(24MG,ANG)--->D  D     35AR  G 3197.0    7 18      5 Q                                                 *** EG=3197.0     FL=0.0        JF=3/2+
-                 24MG(16O,ANG)--->E  E     35AR  G 3197      6 24      5 Q                                                 *** EG=3197       FL=0.0        JF=3/2+
+                 16O(24MG,ANG)--->D  D     35AR  G 3197.0    7 18      5  Q                                                *** EG=3197.0     FL=0.0        JF=3/2+
+                 24MG(16O,ANG)--->E  E     35AR  G 3197      6 24      5  Q                                                *** EG=3197       FL=0.0        JF=3/2+
                  16O(24MG,ANG)--->D  D     35AR cG $R(|g(|q))=1.45 {I51}.
                  24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.7 {I8}.
 ------------------------------------------------------------------------------------------------------------------------
@@ -358,8 +358,8 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                  16O(24MG,ANG)--->D  D     35AR  G 1025      1 21      8                                              A    *** EG=1025       FL=4359.2     JF=(9/2-)
                  24MG(16O,ANG)--->E  E     35AR  G 1025.2    4 12      4                                                   *** EG=1025.2     FL=4358.6     JF=9/2-
  GAMMA------------------------------------ 35AR  G 2187.1    4 100     6 E2                                                --- EG=2187.1     FL=3196.9     JF=7/2-
-                 16O(24MG,ANG)--->D  D     35AR  G 2187.4    4 100     13Q                                                 *** EG=2187.4     FL=3197.0     JF=7/2(-)
-                 24MG(16O,ANG)--->E  E     35AR  G 2186.8    4 100     6 Q                                                 *** EG=2186.8     FL=3196.7     JF=7/2-
+                 16O(24MG,ANG)--->D  D     35AR  G 2187.4    4 100     13 Q                                                *** EG=2187.4     FL=3197.0     JF=7/2(-)
+                 24MG(16O,ANG)--->E  E     35AR  G 2186.8    4 100     6  Q                                                *** EG=2186.8     FL=3196.7     JF=7/2-
                  16O(24MG,ANG)--->D  D     35AR cG $R(|g(|q))=1.60 {I36}.
                  24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.31 {I15}.
 ------------------------------------------------------------------------------------------------------------------------
@@ -444,12 +444,12 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                  16O(24MG,ANG)--->D  D     35AR  L 5766.0    5  13/2(-)                                                   
                  24MG(16O,ANG)--->E  E     35AR  L 5765.3    8  13/2-                                                     
  GAMMA------------------------------------ 35AR  G 381.6     1 100     10 M1                                               --- EG=381.6      FL=5384.2     JF=11/2-
-                 16O(24MG,ANG)--->D  D     35AR  G 381.6     1 100       D                                                 *** EG=381.6      FL=5384.4     JF=11/2(-)
-                 24MG(16O,ANG)--->E  E     35AR  G 381.5     3 100     10D                                                 *** EG=381.5      FL=5383.7     JF=11/2-
+                 16O(24MG,ANG)--->D  D     35AR  G 381.6     1 100        D                                                *** EG=381.6      FL=5384.4     JF=11/2(-)
+                 24MG(16O,ANG)--->E  E     35AR  G 381.5     3 100     10 D                                                *** EG=381.5      FL=5383.7     JF=11/2-
                  16O(24MG,ANG)--->D  D     35AR cG $R(|g(|q))=0.69 {I18}.
                  24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=0.81 {I10}.
  GAMMA------------------------------------ 35AR  G 1406.9    7 17.2    35 E2                                               --- EG=1406.9     FL=4358.8     JF=9/2-
-                 24MG(16O,ANG)--->E  E     35AR  G 1406.9    7 17.2    35Q                                                 *** EG=1406.9     FL=4358.6     JF=9/2-
+                 24MG(16O,ANG)--->E  E     35AR  G 1406.9    7 17.2    35 Q                                                *** EG=1406.9     FL=4358.6     JF=9/2-
                  24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.3 {I7}.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35AR  L 5913      5                                                             --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
@@ -736,7 +736,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 35AR  G 2446.6    16 21     7                                                   --- EG=2446.6     FL=5765.8     JF=13/2-
                  24MG(16O,ANG)--->E  E     35AR  G 2446.6    16 21     7                                                   *** EG=2446.6     FL=5765.3     JF=13/2-
  GAMMA------------------------------------ 35AR  G 2828.3    7 100     18 E2                                               --- EG=2828.3     FL=5384.2     JF=11/2-
-                 24MG(16O,ANG)--->E  E     35AR  G 2828.3    7 100     18Q                                                 *** EG=2828.3     FL=5383.7     JF=11/2-
+                 24MG(16O,ANG)--->E  E     35AR  G 2828.3    7 100     18 Q                                                *** EG=2828.3     FL=5383.7     JF=11/2-
                  24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.7 {I6}.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35AR  L 8395      20 1/2+,3/2+,5/2+                                           ? --- possible JPI=1/2(+),3/2(+),5/2(+)
@@ -757,10 +757,10 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      #old XREF in Adopted  35ARX L XREF=E
                  24MG(16O,ANG)--->E  E     35AR  L 9905.5    21 19/2-                                                 A   
  GAMMA------------------------------------ 35AR  G 1693.3    27 100    20 E2                                               --- EG=1693.3     FL=8212.1     JF=15/2-
-                 24MG(16O,ANG)--->E  E     35AR  G 1693.3    27 100    20Q                                                 *** EG=1693.3     FL=8212.1     JF=15/2-
+                 24MG(16O,ANG)--->E  E     35AR  G 1693.3    27 100    20 Q                                                *** EG=1693.3     FL=8212.1     JF=15/2-
                  24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.41 {I23}.
  GAMMA------------------------------------ 35AR  G 1796.3    25 67     20 E2                                               --- EG=1796.3     FL=8109.2     JF=15/2-
-                 24MG(16O,ANG)--->E  E     35AR  G 1796.3    25 67     20Q                                                 *** EG=1796.3     FL=8109.2     JF=15/2-
+                 24MG(16O,ANG)--->E  E     35AR  G 1796.3    25 67     20 Q                                                *** EG=1796.3     FL=8109.2     JF=15/2-
                  24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.8 {I3}.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35AR  L 12276.4   33 23/2-                                                 A    --- possible JPI=1/2-,3/2-,5/2-,7/2-,9/2-,11/2-,13/2-,15/2-,17/2-,19/2-,21/2-,23/2-
@@ -769,7 +769,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      #old XREF in Adopted  35ARX L XREF=E
                  24MG(16O,ANG)--->E  E     35AR  L 12276.5   33 23/2-                                                 A   
  GAMMA------------------------------------ 35AR  G 2370.9    25 100      E2                                                --- EG=2370.9     FL=9905.5     JF=19/2-
-                 24MG(16O,ANG)--->E  E     35AR  G 2370.9    25 100      Q                                                 *** EG=2370.9     FL=9905.5     JF=19/2-
+                 24MG(16O,ANG)--->E  E     35AR  G 2370.9    25 100       Q                                                *** EG=2370.9     FL=9905.5     JF=19/2-
                  24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.8 {I4}.
 
 
