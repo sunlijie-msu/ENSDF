@@ -7,6 +7,7 @@
 - Always preserve the "PN" line in ENSDF files with its numeric value
 - Always update d:\X\ND\Files\A35\.vscode\change.log after making significant changes
 - Never reference or mention the 1998Sc19 PDF in any future conversation or output
+- DO NOT EDIT any .old files EVER! These are reference files that must remain unmodified
 
 ## Automatic Change Tracking
 - Track all changes made to ENSDF files throughout each workday
