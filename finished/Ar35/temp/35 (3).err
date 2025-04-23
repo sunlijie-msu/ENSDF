@@ -1,31 +1,29 @@
 Program for consistency check: output for Error and Warnings (version 03/30/2025)
-Generated at: Mon 04/21/2025 at 09:59:16 PM EDT
+Generated at: Wed 04/23/2025 at 03:33:04 PM EDT
 
-################################################################################
-In Adopted dataset of 35AR
-
- 35AR  L 0.0          3/2+             1.7756 S  10                             
- 35AR2 L MOMM1=+0.6322 2 (2002Ma41,2011StZZ)                                    
- 35AR2 L MOME2=-0.084 15 (1996Kl04,2011StZZ)                                    
-         *                                                                        <W> Check if MOMM1 and reference are updated with 2019STZV or 2020STZV
-                                                                                      Check if MOME2 and reference are updated with 2021STZZ
 
 ################################################################################
 In dataset of 35AR: XA 35K EC DECAY (175 MS)     XREF Tag=A
 
  35AR  L 0            3/2+                                                      
                                        *                                          <W> T1/2 is available from Adopted but empty here
-                                                                                        Adopted T1/2=1.7756 S 10 this T1/2=
+                                                                                        Adopted T1/2=1.7756 S 14 this T1/2=
  35AR  L 2637.99   26 3/2+,5/2+                                                 
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=3/2+ this JPI=3/2+,5/2+
  35AR  L 2982.79   12 3/2+,5/2+                                                 
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=5/2+ this JPI=3/2+,5/2+
- 35AR  L 4785.8    11  1/2+                                                     
+ 35AR  L 4065.0    4  1/2+,3/2+,5/2+                                           ?
+                     *                                                            <E> JPI commented from Adopted but inconsistent
+                                                                                        Adopted JPI=(1/2+,3/2+,5/2+) this JPI=1/2+,3/2+,5/2+
+ 35AR  L 4528.2    4  1/2+,3/2+,5/2+                                            
+                     *                                                            <E> JPI commented from Adopted but inconsistent
+                                                                                        Adopted JPI=(1/2+,3/2+,5/2+) this JPI=1/2+,3/2+,5/2+
+ 35AR  L 4785.8    11 1/2+                                                      
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=1/2+,3/2+,5/2+ this JPI=1/2+
- 35AR  L 6348      11                                                           
+ 35AR  L 6348      11 1/2,3/2,5/2                                               
                      *                                                            <W> JPI commented from Adopted but multiple matches found in Adopted:
  35AR  L 7053      11                                                           
                      *                                                            <W> JPI commented from Adopted but empty
@@ -74,6 +72,10 @@ In dataset of 35AR: XI 36AR(D,T)     XREF Tag=I
  35AR  L 6037      3                                                            
                      *                                                            <W> JPI commented from Adopted but empty
                                                                                         Adopted JPI=3/2+,5/2+ this JPI=
+ 35AR  L 6055      3                                                           ?
+         *                                                                        <W> questionable level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        6037       3 3/2+,5/2+           XREF=H(6024)IJ(6033)
  35AR  L 6617      2                                                            
                      *                                                            <W> JPI commented from Adopted but empty
                                                                                         Adopted JPI=1/2+ this JPI=

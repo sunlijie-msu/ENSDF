@@ -1,5 +1,5 @@
 Program for consistency check: output for original lines grouped by level and gamma energies (version 03/30/2025)
-Generated at: Mon 04/21/2025 at 09:59:16 PM EDT
+Generated at: Wed 04/23/2025 at 03:33:04 PM EDT
 
 
 Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
@@ -27,7 +27,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  35AR  XJ36AR(3HE,A)                   J-J 36AR(3HE,A)
 ################################## new tag show first below ############################################################
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35AR  L 0.0          3/2+             1.7756 S  10                              --- possible JPI=3/2+,5/2+
+ LEVEL************************************ 35AR  L 0.0          3/2+             1.7756 S  14                              --- possible JPI=3/2+,5/2+
                      *new XREF new tags    35ARX L XREF=ABCDEFGHIJ
                      *new XREF old tags    35ARX L XREF=ABCDEFGHIJ
                      #old XREF in Adopted  35ARX L XREF=ABCDEFGHIJ
@@ -106,11 +106,11 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 35AR  G 1750.6    3 100       Q                                                 --- EG=1750.6     FL=0.0        JF=3/2+
          35K EC DECAY (175 MS)--->A  A     35AR  G 1750.5    3 100                                                         *** EG=1750.5     FL=0          JF=3/2+
                  16O(24MG,ANG)--->D  D     35AR  G 1750.7    4 100                                                         *** EG=1750.7     FL=0.0        JF=3/2+
-                 24MG(16O,ANG)--->E  E     35AR  G 1750.8    5 100        Q                                                *** EG=1750.8     FL=0.0        JF=3/2+
+                 24MG(16O,ANG)--->E  E     35AR  G 1750.8    5 100                                                         *** EG=1750.8     FL=0.0        JF=3/2+
                    33S(3HE,NG)--->G  G     35AR  G 1749.8                                                                  *** EG=1749.8     FL=0          JF=3/2+
          35K EC DECAY (175 MS)--->A  A     35AR2 G %IG=14.1 9                                                             
                  16O(24MG,ANG)--->D  D     35AR cG $R(|g(|q))=1.41 {I14}.
-                 24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.46 {I24}.
+                 24MG(16O,ANG)--->E  E     35AR cG $R{-ADO}=1.46 {I24}.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35AR  L 2030      80                                                           
                      *new XREF new tags    35ARX L XREF=F
@@ -118,16 +118,16 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       32S(A,N)--->F  F     35AR  L 2030      80                                                           
                       32S(A,N)--->F  F     35AR cL $Threshold E(|a){-lab}=11.97 MeV {I80}.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35AR  L 2603.1    5  7/2+                                                       --- possible JPI=1/2,3/2,5/2,7/2,9/2: 593.7g from 3196.9, 5/2-,7/2-; 593.7g from 3196.9, 5/2-,7/2-; 593.7g from 3196.9, 5/2-,7/2-;...
+ LEVEL************************************ 35AR  L 2603.1    5  7/2+                                                       --- possible JPI=1/2,3/2,5/2,7/2,9/2: 593.7g from 3196.9, 5/2-,7/2-; 593.7g from 3196.9, 5/2-,7/2-
                      *new XREF new tags    35ARX L XREF=DEG
                      *new XREF old tags    35ARX L XREF=DEG
                      #old XREF in Adopted  35ARX L XREF=DEG
                  16O(24MG,ANG)--->D  D     35AR  L 2603.2    4  (7/2+)                                                    
                  24MG(16O,ANG)--->E  E     35AR  L 2603.0    7  7/2+                                                      
                    33S(3HE,NG)--->G  G     35AR  L 2600.8    15                                                           
-                   33S(3HE,NG)--->G  G     35AR cL J$L({+3}He,n)=(0) observed for a 2.60-MeV state (1975Da14), possibly   
-                   33S(3HE,NG)--->G  G     35AR2cL mirror the 3/2+ level at 2694 keV in {+35}Cl rather than the 7/2+ level
-                   33S(3HE,NG)--->G  G     35AR3cL at 2646 keV.                                                           
+                   33S(3HE,NG)--->G  G     35AR cL J$1975Da14 observed L({+3}He,n)=(0) for a 2.60-MeV level in {+35}Ar,   
+                   33S(3HE,NG)--->G  G     35AR2cL implying the existence of a 3/2+ level. Evaluators believe that        
+                   33S(3HE,NG)--->G  G     35AR3cL L({+3}He,n)=(0) corresponds to the 2638-keV level in {+35}Ar.          
  GAMMA------------------------------------ 35AR  G 851.9     9 12.3    33                                                  --- EG=851.9      FL=1750.7     JF=(5/2)+
                  16O(24MG,ANG)--->D  D     35AR  G 852       1 10      5                                              A    *** EG=852        FL=1750.8     JF=5/2+
                  24MG(16O,ANG)--->E  E     35AR  G 851.8     9 13.3    33                                                  *** EG=851.8      FL=1750.8     JF=5/2+
@@ -136,7 +136,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                  24MG(16O,ANG)--->E  E     35AR  G 2602.6    15 100    10 Q                                                *** EG=2602.6     FL=0.0        JF=3/2+
                    33S(3HE,NG)--->G  G     35AR  G 2600.7                                                                  *** EG=2600.7     FL=0          JF=3/2+
                  16O(24MG,ANG)--->D  D     35AR cG $R(|g(|q))=1.01 {I17}.
-                 24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.37 {I20}.
+                 24MG(16O,ANG)--->E  E     35AR cG $R{-ADO}=1.37 {I20}.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35AR  L 2638.0    3  3/2+                                                       --- possible JPI=3/2+,5/2+
                      *new XREF new tags    35ARX L XREF=AH(2615)IJ
@@ -209,20 +209,20 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 35AR  G 593.7     2 16.4    30                                                  --- EG=593.7      FL=2603.1     JF=7/2+
                  16O(24MG,ANG)--->D  D     35AR  G 593       1 16      8                                                   *** EG=593        FL=2603.2     JF=(7/2+)
                  24MG(16O,ANG)--->E  E     35AR  G 593.7     2 16.4    30                                                  *** EG=593.7      FL=2603.0     JF=7/2+
- GAMMA------------------------------------ 35AR  G 1446.2    2 100     8 E1                                                --- EG=1446.2     FL=1750.7     JF=(5/2)+
+ GAMMA------------------------------------ 35AR  G 1446.2    2 100     8 D                                                 --- EG=1446.2     FL=1750.7     JF=(5/2)+
                  16O(24MG,ANG)--->D  D     35AR  G 1446.2    2 100     9  D                                                *** EG=1446.2     FL=1750.8     JF=5/2+
                  24MG(16O,ANG)--->E  E     35AR  G 1446.1    6 100     8  D                                                *** EG=1446.1     FL=1750.8     JF=5/2+
                    33S(3HE,NG)--->G  G     35AR  G 1446.0    6                                                             *** EG=1446.0     FL=1749.8     JF=
                  16O(24MG,ANG)--->D  D     35AR cG $R(|g(|q))=0.71 {I9}.
-                 24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=0.87 {I19}.
+                 24MG(16O,ANG)--->E  E     35AR cG $R{-ADO}=0.87 {I19}.
                    33S(3HE,NG)--->G  G     35AR cG $Unplaced |g in 1975Da14. Evaluators placed it based on the Adopted    
                    33S(3HE,NG)--->G  G     35AR2cG Levels from {+16}O({+24}Mg,|an|g){+35}Ar (2004Ek01) and                
                    33S(3HE,NG)--->G  G     35AR3cG {+24}Mg({+16}O,|an|g){+35}Ar (2007De14).                               
- GAMMA------------------------------------ 35AR  G 3197.0    7 21      5 M2                                                --- EG=3197.0     FL=0.0        JF=3/2+
+ GAMMA------------------------------------ 35AR  G 3197.0    7 21      5 Q                                                 --- EG=3197.0     FL=0.0        JF=3/2+
                  16O(24MG,ANG)--->D  D     35AR  G 3197.0    7 18      5  Q                                                *** EG=3197.0     FL=0.0        JF=3/2+
                  24MG(16O,ANG)--->E  E     35AR  G 3197      6 24      5  Q                                                *** EG=3197       FL=0.0        JF=3/2+
                  16O(24MG,ANG)--->D  D     35AR cG $R(|g(|q))=1.45 {I51}.
-                 24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.7 {I8}.
+                 24MG(16O,ANG)--->E  E     35AR cG $R{-ADO}=1.7 {I8}.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35AR  L 3884      10 1/2+                                                       --- possible JPI=1/2+
                      *new XREF new tags    35ARX L XREF=J
@@ -236,7 +236,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      #old XREF in Adopted  35ARX L XREF=J
                    36AR(3HE,A)--->J  J     35AR  L 4012      10 (3/2)-                           1        0.065            *** possible JPI=1/2-,3/2-
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35AR  L 4065.0    4  1/2+,3/2+,5/2+                                           ? --- possible JPI=(1/2,3/2,5/2)
+ LEVEL************************************ 35AR  L 4065.0    4  (1/2+,3/2+,5/2+)                                         ? --- possible JPI=(1/2,3/2,5/2)
                      *new XREF new tags    35ARX L XREF=A(?)
                      *new XREF old tags    35ARX L XREF=A(?)
                      #old XREF in Adopted  35ARX L XREF=A(?)
@@ -258,7 +258,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      #old XREF in Adopted  35ARX L XREF=J
                    36AR(3HE,A)--->J  J     35AR  L 4142      10 (3/2)-                           1        0.025            *** possible JPI=1/2-,3/2-
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35AR  L 4358.8    8  9/2-                                                       --- possible JPI=(1/2-,3/2-,5/2-,7/2-,9/2-,11/2-): 1406.9g E2 from 5765.8, 1/2-,3/2-,5/2-,7/2-,9/2-,11/2-,13/2-; 1406.9g E2 from 5765.8, 1/2-,3/2-,5/2-,7/2-,9/2-,11/2-,13/2-; 1406.9g E2 from 5765.8, 1/2-,3/2-,5/2-,7/2-,9/2-,11/2-,13/2-;...
+ LEVEL************************************ 35AR  L 4358.8    8  9/2-                                                       --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2)
                      *new XREF new tags    35ARX L XREF=DEJ
                      *new XREF old tags    35ARX L XREF=DEJ
                      #old XREF in Adopted  35ARX L XREF=DEJ
@@ -267,13 +267,13 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                    36AR(3HE,A)--->J  J     35AR  L 4350      10                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
  GAMMA------------------------------------ 35AR  G 1162.0    8 65      24                                                  --- EG=1162.0     FL=3196.9     JF=7/2-
                  16O(24MG,ANG)--->D  D     35AR  G 1162      1 41      11                                                  *** EG=1162       FL=3197.0     JF=7/2(-)
-                 24MG(16O,ANG)--->E  E     35AR  G 1162.0    8 88      18                                                  *** EG=1162.0     FL=3196.7     JF=7/2-
-                 24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=0.95 {I25}.
+                 24MG(16O,ANG)--->E  E     35AR  G 1162.0    8 88      18 (D)                                              *** EG=1162.0     FL=3196.7     JF=7/2-
+                 24MG(16O,ANG)--->E  E     35AR cG $R{-ADO}=0.95 {I25}.
  GAMMA------------------------------------ 35AR  G 1756      1 100     15                                                  --- EG=1756       FL=2603.1     JF=7/2+
                  16O(24MG,ANG)--->D  D     35AR  G 1756      1 100     15                                             A    *** EG=1756       FL=2603.2     JF=(7/2+)
                  24MG(16O,ANG)--->E  E     35AR  G 1756.3    14 100    53                                                  *** EG=1756.3     FL=2603.0     JF=7/2+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35AR  L 4528.2    4  1/2+,3/2+,5/2+                                             --- possible JPI=1/2(+),3/2(+),5/2(+)
+ LEVEL************************************ 35AR  L 4528.2    4  (1/2+,3/2+,5/2+)                                           --- possible JPI=1/2(+),3/2(+),5/2(+)
                      *new XREF new tags    35ARX L XREF=AJ
                      *new XREF old tags    35ARX L XREF=AJ
                      #old XREF in Adopted  35ARX L XREF=AJ
@@ -306,7 +306,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      *new XREF new tags    35ARX L XREF=AH(4756*)J
                      *new XREF old tags    35ARX L XREF=AH(4756*)J
                      #old XREF in Adopted  35ARX L XREF=AH(4756*)J
-         35K EC DECAY (175 MS)--->A  A     35AR  L 4785.8    11  1/2+                                                      *** possible JPI=1/2(+),3/2(+),5/2(+): logft=5.2(2) from 3/2+
+         35K EC DECAY (175 MS)--->A  A     35AR  L 4785.8    11 1/2+                                                       *** possible JPI=1/2(+),3/2(+),5/2(+): logft=5.2(2) from 3/2+
                      36AR(P,D)--->H  H(*)  35AR  L 4756      28 (1/2+)                           0        0.172            *** possible JPI=1/2+
                    36AR(3HE,A)--->J  J     35AR  L 4782      10                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
          35K EC DECAY (175 MS)--->A  A     35AR  E             1.0     4 5E-4    2 5.2     2              1.0       4     
@@ -345,7 +345,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      #old XREF in Adopted  35ARX L XREF=J
                    36AR(3HE,A)--->J  J     35AR  L 5205      10                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35AR  L 5384.2    6  11/2-                                                 A    --- possible JPI=1/2-,3/2-,5/2-,7/2-,9/2-,11/2-
+ LEVEL************************************ 35AR  L 5384.2    6  11/2-                                                 A    --- possible JPI=1/2,3/2,5/2,7/2,9/2,11/2
                      *new XREF new tags    35ARX L XREF=DEH(5400)J
                      *new XREF old tags    35ARX L XREF=DEH(5400)J
                      #old XREF in Adopted  35ARX L XREF=DEH(5400)J
@@ -357,11 +357,11 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 35AR  G 1025.2    4 14      4                                                   --- EG=1025.2     FL=4358.8     JF=9/2-
                  16O(24MG,ANG)--->D  D     35AR  G 1025      1 21      8                                              A    *** EG=1025       FL=4359.2     JF=(9/2-)
                  24MG(16O,ANG)--->E  E     35AR  G 1025.2    4 12      4                                                   *** EG=1025.2     FL=4358.6     JF=9/2-
- GAMMA------------------------------------ 35AR  G 2187.1    4 100     6 E2                                                --- EG=2187.1     FL=3196.9     JF=7/2-
+ GAMMA------------------------------------ 35AR  G 2187.1    4 100     6 Q                                                 --- EG=2187.1     FL=3196.9     JF=7/2-
                  16O(24MG,ANG)--->D  D     35AR  G 2187.4    4 100     13 Q                                                *** EG=2187.4     FL=3197.0     JF=7/2(-)
                  24MG(16O,ANG)--->E  E     35AR  G 2186.8    4 100     6  Q                                                *** EG=2186.8     FL=3196.7     JF=7/2-
                  16O(24MG,ANG)--->D  D     35AR cG $R(|g(|q))=1.60 {I36}.
-                 24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.31 {I15}.
+                 24MG(16O,ANG)--->E  E     35AR cG $R{-ADO}=1.31 {I15}.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35AR  L 5484      10 3/2+,5/2+                                                  --- possible JPI=3/2+,5/2+
                      *new XREF new tags    35ARX L XREF=G(5537*)J
@@ -376,14 +376,14 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                    33S(3HE,NG)--->G  G(*)  35AR4cL {+35}Ar.                                                               
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35AR  L 5572.66   15 3/2+                                                       --- possible JPI=3/2+,5/2+
-                     *new XREF new tags    35ARX L XREF=AC(5570*)G(5537*)H(5598*)J(5591*)
-                     *new XREF old tags    35ARX L XREF=AC(5570*)G(5537*)H(5598*)J(5591*)
-                     #old XREF in Adopted  35ARX L XREF=AC(5570*)G(5537*)H(5598*)J(5591*)
+                     *new XREF new tags    35ARX L XREF=ACG(5537*)H(5598)J(5591)
+                     *new XREF old tags    35ARX L XREF=ACG(5537*)H(5598)J(5591)
+                     #old XREF in Adopted  35ARX L XREF=AC(5570)G(5537)H(5598)J(5591)
          35K EC DECAY (175 MS)--->A  A     35AR  L 5572.66   15 3/2+                                                       *** possible JPI=1/2+,3/2+,5/2+: logft=3.31(4) from 3/2+
-                    1H(36AR,D)--->C  C(*)  35AR  L 5570                                                                    *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
+                    1H(36AR,D)--->C  C     35AR  L 5570                                                                    *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                    33S(3HE,NG)--->G  G(*)  35AR  L 5537      25 (3/2+)                           (0)                      
-                     36AR(P,D)--->H  H(*)  35AR  L 5598      20 (3/2,5/2)+                       2        2.93,2.37        *** possible JPI=3/2+,5/2+
-                   36AR(3HE,A)--->J  J(*)  35AR  L 5591      10 (3/2,5/2)+                       2        1.98,1.14   A    *** possible JPI=3/2+,5/2+
+                     36AR(P,D)--->H  H     35AR  L 5598      20 (3/2,5/2)+                       2        2.93,2.37        *** possible JPI=3/2+,5/2+
+                   36AR(3HE,A)--->J  J     35AR  L 5591      10 (3/2,5/2)+                       2        1.98,1.14   A    *** possible JPI=3/2+,5/2+
          35K EC DECAY (175 MS)--->A  A     35AR2 L ISPIN=3/2                                                              
          35K EC DECAY (175 MS)--->A  A     35AR  E             36.3    24 0.0265 18 3.31   4              36.3      24    
                    33S(3HE,NG)--->G  G(*)  35AR2 L ISPIN=3/2                                                              
@@ -391,13 +391,13 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                    33S(3HE,NG)--->G  G(*)  35AR2cL T=1 (|p1d{-3/2}){+2} diproton transfer from {+3}He to {+33}S of        
                    33S(3HE,NG)--->G  G(*)  35AR3cL {+32}S~#(|n1d{-3/2}){+1} configuration. Tentative first T=3/2 state in 
                    33S(3HE,NG)--->G  G(*)  35AR4cL {+35}Ar.                                                               
-                     36AR(P,D)--->H  H(*)  35AR cL E$weighted average of 5610 {I20} (1968Jo04) and 5570 {I30} (1968Ko11).
-                     36AR(P,D)--->H  H(*)  35AR cL S$for 3/2+ and 5/2+, respectively (1968Jo04). Other: 1.77 for 1.15 F   
-                     36AR(P,D)--->H  H(*)  35AR2cL (better fit) and 1.25 for 1.35 F (1968Ko11).
- GAMMA------------------------------------ 35AR  G 1044.4    4 2.5     8                                                   --- EG=1044.4     FL=4528.2     JF=1/2+,3/2+,5/2+
+                     36AR(P,D)--->H  H     35AR cL E$weighted average of 5610 {I20} (1968Jo04) and 5570 {I30} (1968Ko11).
+                     36AR(P,D)--->H  H     35AR cL S$for 3/2+ and 5/2+, respectively (1968Jo04). Other: 1.77 for 1.15 F   
+                     36AR(P,D)--->H  H     35AR2cL (better fit) and 1.25 for 1.35 F (1968Ko11).
+ GAMMA------------------------------------ 35AR  G 1044.4    4 2.5     8                                                   --- EG=1044.4     FL=4528.2     JF=(1/2+,3/2+,5/2+)
          35K EC DECAY (175 MS)--->A  A     35AR  G 1044.4    4 2.5     8                                                   *** EG=1044.4     FL=4528.2     JF=1/2+,3/2+,5/2+
          35K EC DECAY (175 MS)--->A  A     35AR2 G %IG=0.66 +25-23                                                        
- GAMMA------------------------------------ 35AR  G 1507.4    5 3.7     8                                                   --- EG=1507.4     FL=4065.0     JF=1/2+,3/2+,5/2+
+ GAMMA------------------------------------ 35AR  G 1507.4    5 3.7     8                                                   --- EG=1507.4     FL=4065.0     JF=(1/2+,3/2+,5/2+)
          35K EC DECAY (175 MS)--->A  A     35AR  G 1507.4    5 3.7     8                                                   *** EG=1507.4     FL=4065.0     JF=1/2+,3/2+,5/2+
          35K EC DECAY (175 MS)--->A  A     35AR2 G %IG=0.96 +27-25                                                        
  GAMMA------------------------------------ 35AR  G 2589.8    1 100     4                                                   --- EG=2589.8     FL=2982.79    JF=5/2+
@@ -418,17 +418,6 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          35K EC DECAY (175 MS)--->A  A     35AR cG $1980Ew02 observed the double escape peak at 4550 keV of this |g ray.  
          35K EC DECAY (175 MS)--->A  A     35AR2cG 2018Sa54 observed the photopeak at 5572 keV.                           
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35AR  L 5592      10 3/2+,5/2+                                                  --- possible JPI=3/2+,5/2+
-                     *new XREF new tags    35ARX L XREF=C(5570*)H(5598*)J(5591*)
-                     *new XREF old tags    35ARX L XREF=C(5570*)H(5598*)J(5591*)
-                     #old XREF in Adopted  35ARX L XREF=C(5570*)H(5598*)J(5591*)
-                    1H(36AR,D)--->C  C(*)  35AR  L 5570                                                                    *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
-                     36AR(P,D)--->H  H(*)  35AR  L 5598      20 (3/2,5/2)+                       2        2.93,2.37        *** possible JPI=3/2+,5/2+
-                   36AR(3HE,A)--->J  J(*)  35AR  L 5591      10 (3/2,5/2)+                       2        1.98,1.14   A    *** possible JPI=3/2+,5/2+
-                     36AR(P,D)--->H  H(*)  35AR cL E$weighted average of 5610 {I20} (1968Jo04) and 5570 {I30} (1968Ko11).
-                     36AR(P,D)--->H  H(*)  35AR cL S$for 3/2+ and 5/2+, respectively (1968Jo04). Other: 1.77 for 1.15 F   
-                     36AR(P,D)--->H  H(*)  35AR2cL (better fit) and 1.25 for 1.35 F (1968Ko11).
-------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35AR  L 5613.2    11 (11/2-)                                                    --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2,15/2)
                      *new XREF new tags    35ARX L XREF=E
                      *new XREF old tags    35ARX L XREF=E
@@ -437,20 +426,20 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 35AR  G 1254.6    8 100                                                         --- EG=1254.6     FL=4358.8     JF=9/2-
                  24MG(16O,ANG)--->E  E     35AR  G 1254.6    8 100                                                         *** EG=1254.6     FL=4358.6     JF=9/2-
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35AR  L 5765.8    6  13/2-                                                      --- possible JPI=1/2-,3/2-,5/2-,7/2-,9/2-,11/2-,13/2-
+ LEVEL************************************ 35AR  L 5765.8    6  13/2-                                                      --- possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2
                      *new XREF new tags    35ARX L XREF=DE
                      *new XREF old tags    35ARX L XREF=DE
                      #old XREF in Adopted  35ARX L XREF=DE
                  16O(24MG,ANG)--->D  D     35AR  L 5766.0    5  13/2(-)                                                   
                  24MG(16O,ANG)--->E  E     35AR  L 5765.3    8  13/2-                                                     
- GAMMA------------------------------------ 35AR  G 381.6     1 100     10 M1                                               --- EG=381.6      FL=5384.2     JF=11/2-
+ GAMMA------------------------------------ 35AR  G 381.6     1 100     10 D                                                --- EG=381.6      FL=5384.2     JF=11/2-
                  16O(24MG,ANG)--->D  D     35AR  G 381.6     1 100        D                                                *** EG=381.6      FL=5384.4     JF=11/2(-)
                  24MG(16O,ANG)--->E  E     35AR  G 381.5     3 100     10 D                                                *** EG=381.5      FL=5383.7     JF=11/2-
                  16O(24MG,ANG)--->D  D     35AR cG $R(|g(|q))=0.69 {I18}.
-                 24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=0.81 {I10}.
- GAMMA------------------------------------ 35AR  G 1406.9    7 17.2    35 E2                                               --- EG=1406.9     FL=4358.8     JF=9/2-
-                 24MG(16O,ANG)--->E  E     35AR  G 1406.9    7 17.2    35 Q                                                *** EG=1406.9     FL=4358.6     JF=9/2-
-                 24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.3 {I7}.
+                 24MG(16O,ANG)--->E  E     35AR cG $R{-ADO}=0.81 {I10}.
+ GAMMA------------------------------------ 35AR  G 1406.9    7 17.2    35 Q                                                --- EG=1406.9     FL=4358.8     JF=9/2-
+                 24MG(16O,ANG)--->E  E     35AR  G 1406.9    7 17.2    35 (Q)                                              *** EG=1406.9     FL=4358.6     JF=9/2-
+                 24MG(16O,ANG)--->E  E     35AR cG $R{-ADO}=1.3 {I7}.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35AR  L 5913      5                                                             --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                      *new XREF new tags    35ARX L XREF=IJ
@@ -462,7 +451,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  LEVEL************************************ 35AR  L 5991      3                                                             --- possible JPI=3/2+,5/2+
                      *new XREF new tags    35ARX L XREF=H(6024*)I
                      *new XREF old tags    35ARX L XREF=H(6024*)I
-                     #old XREF in Adopted  35ARX L XREF=H(6024*)I
+                     #old XREF in Adopted  35ARX L XREF=I
                      36AR(P,D)--->H  H(*)  35AR  L 6024      20 (3/2,5/2)+                       2        1.58,1.31        *** possible JPI=3/2+,5/2+
                      36AR(D,T)--->I  I     35AR  L 5991      3                                                             *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                      36AR(P,D)--->H  H(*)  35AR cL E$weighted average of 6030 {I20} (1968Jo04) and 6010 {I30} (1968Ko11).
@@ -472,7 +461,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  LEVEL************************************ 35AR  L 6037      3  3/2+,5/2+                                                  --- possible JPI=3/2+,5/2+
                      *new XREF new tags    35ARX L XREF=H(6024*)IJ(6033*)
                      *new XREF old tags    35ARX L XREF=H(6024*)IJ(6033*)
-                     #old XREF in Adopted  35ARX L XREF=H(6024*)IJ(6033*)
+                     #old XREF in Adopted  35ARX L XREF=H(6024)IJ(6033)
                      36AR(P,D)--->H  H(*)  35AR  L 6024      20 (3/2,5/2)+                       2        1.58,1.31        *** possible JPI=3/2+,5/2+
                      36AR(D,T)--->I  I     35AR  L 6037      3                                                             *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                    36AR(3HE,A)--->J  J(*)  35AR  L 6033      10 (3/2,5/2)+                       2        1.3,0.755   A    *** possible JPI=3/2+,5/2+
@@ -481,12 +470,11 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      36AR(P,D)--->H  H(*)  35AR2cL and 0.83 for 1.35 F (better fit) (1968Ko11).
                      36AR(D,T)--->I  I     35AR cL $May be a doublet (2015Fr01).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35AR  L 6055      3                                                           ? --- possible JPI=3/2+,5/2+
+ LEVEL************************************ 35AR  L 6055      3                                                           ?
                      *new XREF new tags    35ARX L XREF=H(6024*)I(?)J(6033*)
                      *new XREF old tags    35ARX L XREF=H(6024*)I(?)J(6033*)
-                     #old XREF in Adopted  35ARX L XREF=H(6024*)I(6055?)J(6033*)
                      36AR(P,D)--->H  H(*)  35AR  L 6024      20 (3/2,5/2)+                       2        1.58,1.31        *** possible JPI=3/2+,5/2+
-                     36AR(D,T)--->I  I(?)  35AR  L 6055      3                                                           ? *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
+                     36AR(D,T)--->I  I(?)  35AR  L 6055      3                                                           ? *** possible JPI=3/2+,5/2+
                    36AR(3HE,A)--->J  J(*)  35AR  L 6033      10 (3/2,5/2)+                       2        1.3,0.755   A    *** possible JPI=3/2+,5/2+
                      36AR(P,D)--->H  H(*)  35AR cL E$weighted average of 6030 {I20} (1968Jo04) and 6010 {I30} (1968Ko11).
                      36AR(P,D)--->H  H(*)  35AR cL S$for 3/2+ and 5/2+, respectively (1968Jo04). Other: 1.18 for 1.15 F   
@@ -530,7 +518,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      *new XREF new tags    35ARX L XREF=A(6348*)I
                      *new XREF old tags    35ARX L XREF=A(6348*)I
                      #old XREF in Adopted  35ARX L XREF=A(6348*)I
-         35K EC DECAY (175 MS)--->A  A(*)  35AR  L 6348      11                                                            *** possible JPI=(1/2,3/2,5/2): logft=7.2(1) from 3/2+
+         35K EC DECAY (175 MS)--->A  A(*)  35AR  L 6348      11 1/2,3/2,5/2                                                *** possible JPI=(1/2,3/2,5/2): logft=7.2(1) from 3/2+
                      36AR(D,T)--->I  I     35AR  L 6332      3                                                             *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
          35K EC DECAY (175 MS)--->A  A(*)  35AR cL $E(p0){-c.m.}=452 keV {I11} (2019ChZU).
          35K EC DECAY (175 MS)--->A  A(*)  35AR  E             0.0025  5 2.9E-6  6 7.2     1              2.5E-3    5     
@@ -539,7 +527,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      *new XREF new tags    35ARX L XREF=A(6348*)I
                      *new XREF old tags    35ARX L XREF=A(6348*)I
                      #old XREF in Adopted  35ARX L XREF=A(6348*)I
-         35K EC DECAY (175 MS)--->A  A(*)  35AR  L 6348      11                                                            *** possible JPI=(1/2,3/2,5/2): logft=7.2(1) from 3/2+
+         35K EC DECAY (175 MS)--->A  A(*)  35AR  L 6348      11 1/2,3/2,5/2                                                *** possible JPI=(1/2,3/2,5/2): logft=7.2(1) from 3/2+
                      36AR(D,T)--->I  I     35AR  L 6345      3                                                             *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
          35K EC DECAY (175 MS)--->A  A(*)  35AR cL $E(p0){-c.m.}=452 keV {I11} (2019ChZU).
          35K EC DECAY (175 MS)--->A  A(*)  35AR  E             0.0025  5 2.9E-6  6 7.2     1              2.5E-3    5     
@@ -631,7 +619,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  LEVEL************************************ 35AR  L 6673      4  5/2-,7/2-                                                  --- possible JPI=5/2-,7/2-
                      *new XREF new tags    35ARX L XREF=H(6700)I
                      *new XREF old tags    35ARX L XREF=H(6700)I
-                     #old XREF in Adopted  35ARX L XREF=H(6700)I(6672)
+                     #old XREF in Adopted  35ARX L XREF=H(6700)I
                      36AR(P,D)--->H  H     35AR  L 6700      20 7/2-                             3        2.60             *** possible JPI=5/2-,7/2-
                      36AR(D,T)--->I  I     35AR  L 6672      3                                                             *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                      36AR(P,D)--->H  H     35AR cL E,J,L,S$from 1968Jo04.
@@ -690,20 +678,20 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                    36AR(3HE,A)--->J  J     35AR  L 7423      10                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
          35K EC DECAY (175 MS)--->A  A     35AR cL $E(p3){-c.m.}=869 keV {I11} (2019ChZU).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35AR  L 7509      10 1/2+,3/2+,5/2+                                             --- possible JPI=1/2(+),3/2(+),5/2(+)
+ LEVEL************************************ 35AR  L 7509      10 1/2+,3/2+,5/2+                                             --- possible JPI=(1/2+,3/2+,5/2+)
                      *new XREF new tags    35ARX L XREF=AJ
                      *new XREF old tags    35ARX L XREF=AJ
                      #old XREF in Adopted  35ARX L XREF=AJ
-         35K EC DECAY (175 MS)--->A  A     35AR  L 7518      11 1/2+,3/2+,5/2+                                             *** possible JPI=1/2(+),3/2(+),5/2(+): logft=5.0(LT) from 3/2+
+         35K EC DECAY (175 MS)--->A  A     35AR  L 7518      11 1/2+,3/2+,5/2+                                             *** possible JPI=(1/2+,3/2+,5/2+): logft=5.0 from 3/2+
                    36AR(3HE,A)--->J  J     35AR  L 7502      10                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
          35K EC DECAY (175 MS)--->A  A     35AR cL E$weighted average of E(level) of 7497 {I20}, 7510 {I20}, and 7527     
-         35K EC DECAY (175 MS)--->A  A     35AR2cL {I11} reported by 2019ChZU with E(p3){-c.m.}=965 {I11}. The former two 
-         35K EC DECAY (175 MS)--->A  A     35AR3cL E(level) were deduced from E(p0){-c.m.}=1601 {I20} (1980Ew02) and      
-         35K EC DECAY (175 MS)--->A  A     35AR4cL E(p1){-c.m.}=1467 {I20} (1980Ew02), respectively, with the             
-         35K EC DECAY (175 MS)--->A  A     35AR5cL corresponding E(level)({+34}Cl) (2012Ni10) and S(p)({+35}Ar)=5896.2    
-         35K EC DECAY (175 MS)--->A  A     35AR6cL {I7} (2021Wa16).
-         35K EC DECAY (175 MS)--->A  A     35AR  E             0.09    GT2.53E-4   5.0     LT             0.09      GT    
-         35K EC DECAY (175 MS)--->A  A     35AR cE TI$0.15 {I6} I(p0+p1)(1980Ew02). Evaluators adopted a lower limit due  
+         35K EC DECAY (175 MS)--->A  A     35AR2cL {I11}. The former two E(level) are deduced from E(p0){-c.m.}=1601 {I20}
+         35K EC DECAY (175 MS)--->A  A     35AR3cL (1980Ew02) and E(p1){-c.m.}=1467 {I20} (1980Ew02), respectively, with  
+         35K EC DECAY (175 MS)--->A  A     35AR4cL the corresponding E(level)({+34}Cl) (2012Ni10) and S(p)({+35}Ar)=5896.2
+         35K EC DECAY (175 MS)--->A  A     35AR5cL {I7} (2021Wa16). The 7527 {I11} is from 2019ChZU with E(p3){-c.m.}=965 
+         35K EC DECAY (175 MS)--->A  A     35AR6cL {I11}.                                                                 
+         35K EC DECAY (175 MS)--->A  A     35AR  E             0.090   GT 3E-4   GT 5.0                   0.09      GT    
+         35K EC DECAY (175 MS)--->A  A     35AR cE TI$0.15 {I6} I(p0+p1) (1980Ew02). Evaluators adopted a lower limit due 
          35K EC DECAY (175 MS)--->A  A     35AR2cE to unreported I(p3) (2019ChZU).
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35AR  L 7840      10                                                            --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
@@ -718,7 +706,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      #old XREF in Adopted  35ARX L XREF=J
                    36AR(3HE,A)--->J  J     35AR  L 8019      10                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35AR  L 8109.2    14 15/2-                                                 A    --- possible JPI=(1/2-,3/2-,5/2-,7/2-,9/2-,11/2-,13/2-,15/2-): 1796.3g E2 from 9905.5, 1/2-,3/2-,5/2-,7/2-,9/2-,11/2-,13/2-,15/2-,17/2-,19/2-; 1796.3g E2 from 9905.5, 1/2-,3/2-,5/2-,7/2-,9/2-,11/2-,13/2-,15/2-,17/2-,19/2-; 1796.3g E2 from 9905.5, 1/2-,3/2-,5/2-,7/2-,9/2-,11/2-,13/2-,15/2-,17/2-,19/2-;...
+ LEVEL************************************ 35AR  L 8109.2    14 (15/2-)                                               A    --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2,15/2)
                      *new XREF new tags    35ARX L XREF=E
                      *new XREF old tags    35ARX L XREF=E
                      #old XREF in Adopted  35ARX L XREF=E
@@ -728,16 +716,16 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 35AR  G 2725.7    14 50     13                                                  --- EG=2725.7     FL=5384.2     JF=11/2-
                  24MG(16O,ANG)--->E  E     35AR  G 2725.7    14 50     13                                                  *** EG=2725.7     FL=5383.7     JF=11/2-
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35AR  L 8212.1    10 15/2-                                                      --- possible JPI=1/2-,3/2-,5/2-,7/2-,9/2-,11/2-,13/2-,15/2-
+ LEVEL************************************ 35AR  L 8212.1    10 (15/2-)                                                    --- possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2,15/2
                      *new XREF new tags    35ARX L XREF=E
                      *new XREF old tags    35ARX L XREF=E
                      #old XREF in Adopted  35ARX L XREF=E
                  24MG(16O,ANG)--->E  E     35AR  L 8212.1    10 15/2-                                                     
  GAMMA------------------------------------ 35AR  G 2446.6    16 21     7                                                   --- EG=2446.6     FL=5765.8     JF=13/2-
                  24MG(16O,ANG)--->E  E     35AR  G 2446.6    16 21     7                                                   *** EG=2446.6     FL=5765.3     JF=13/2-
- GAMMA------------------------------------ 35AR  G 2828.3    7 100     18 E2                                               --- EG=2828.3     FL=5384.2     JF=11/2-
+ GAMMA------------------------------------ 35AR  G 2828.3    7 100     18 Q                                                --- EG=2828.3     FL=5384.2     JF=11/2-
                  24MG(16O,ANG)--->E  E     35AR  G 2828.3    7 100     18 Q                                                *** EG=2828.3     FL=5383.7     JF=11/2-
-                 24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.7 {I6}.
+                 24MG(16O,ANG)--->E  E     35AR cG $R{-ADO}=1.7 {I6}.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35AR  L 8395      20 1/2+,3/2+,5/2+                                           ? --- possible JPI=1/2(+),3/2(+),5/2(+)
                      *new XREF new tags    35ARX L XREF=A(?)
@@ -751,31 +739,31 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          35K EC DECAY (175 MS)--->A  A(?)  35AR5cL (2012Ni10) and S(p)({+35}Ar)=5896.2 {I7} (2021Wa16).                   
          35K EC DECAY (175 MS)--->A  A(?)  35AR  E             0.062   26 4.3E-4 18 4.6    +3-2           0.062     26    
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35AR  L 9905.5    21 19/2-                                                 A    --- possible JPI=1/2-,3/2-,5/2-,7/2-,9/2-,11/2-,13/2-,15/2-,17/2-,19/2-
+ LEVEL************************************ 35AR  L 9905.5    21 (19/2-)                                               A    --- possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2,15/2,17/2,19/2
                      *new XREF new tags    35ARX L XREF=E
                      *new XREF old tags    35ARX L XREF=E
                      #old XREF in Adopted  35ARX L XREF=E
                  24MG(16O,ANG)--->E  E     35AR  L 9905.5    21 19/2-                                                 A   
- GAMMA------------------------------------ 35AR  G 1693.3    27 100    20 E2                                               --- EG=1693.3     FL=8212.1     JF=15/2-
+ GAMMA------------------------------------ 35AR  G 1693.3    27 100    20 Q                                                --- EG=1693.3     FL=8212.1     JF=(15/2-)
                  24MG(16O,ANG)--->E  E     35AR  G 1693.3    27 100    20 Q                                                *** EG=1693.3     FL=8212.1     JF=15/2-
-                 24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.41 {I23}.
- GAMMA------------------------------------ 35AR  G 1796.3    25 67     20 E2                                               --- EG=1796.3     FL=8109.2     JF=15/2-
+                 24MG(16O,ANG)--->E  E     35AR cG $R{-ADO}=1.41 {I23}.
+ GAMMA------------------------------------ 35AR  G 1796.3    25 67     20 Q                                                --- EG=1796.3     FL=8109.2     JF=(15/2-)
                  24MG(16O,ANG)--->E  E     35AR  G 1796.3    25 67     20 Q                                                *** EG=1796.3     FL=8109.2     JF=15/2-
-                 24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.8 {I3}.
+                 24MG(16O,ANG)--->E  E     35AR cG $R{-ADO}=1.8 {I3}.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35AR  L 12276.4   33 23/2-                                                 A    --- possible JPI=1/2-,3/2-,5/2-,7/2-,9/2-,11/2-,13/2-,15/2-,17/2-,19/2-,21/2-,23/2-
+ LEVEL************************************ 35AR  L 12276.4   33 (23/2-)                                               A    --- possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2,15/2,17/2,19/2,21/2,23/2
                      *new XREF new tags    35ARX L XREF=E
                      *new XREF old tags    35ARX L XREF=E
                      #old XREF in Adopted  35ARX L XREF=E
                  24MG(16O,ANG)--->E  E     35AR  L 12276.5   33 23/2-                                                 A   
- GAMMA------------------------------------ 35AR  G 2370.9    25 100      E2                                                --- EG=2370.9     FL=9905.5     JF=19/2-
+ GAMMA------------------------------------ 35AR  G 2370.9    25 100      Q                                                 --- EG=2370.9     FL=9905.5     JF=(19/2-)
                  24MG(16O,ANG)--->E  E     35AR  G 2370.9    25 100       Q                                                *** EG=2370.9     FL=9905.5     JF=19/2-
-                 24MG(16O,ANG)--->E  E     35AR cG $ R{-ADO}=1.8 {I4}.
+                 24MG(16O,ANG)--->E  E     35AR cG $R{-ADO}=1.8 {I4}.
 
 
 Statistics of levels and gammas from all datasets of 35AR:
                              DSID     #of levels       #of gammas       level range
-           ADOPTED LEVELS, GAMMAS        62               37            0.0        to    12276.4
+           ADOPTED LEVELS, GAMMAS        60               37            0.0        to    12276.4
             35K EC DECAY (175 MS)        17               19            0          to       8393
         36CA ECP DECAY (100.9 MS)        2                1             0          to     1184.3
                        1H(36AR,D)        5                0             0          to       5570
@@ -787,7 +775,7 @@ Statistics of levels and gammas from all datasets of 35AR:
                         36AR(D,T)        28               0             0          to       6672
                       36AR(3HE,A)        34               0             0          to       8019
 
-                         IN TOTAL        191              92            0.0        to    12276.5
+                         IN TOTAL        189              92            0.0        to    12276.5
 
 
 
@@ -795,12 +783,12 @@ Statistics of levels and gammas from all datasets of 35AR:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                   35AR        62           37           191          92             1104             10
+                   35AR        60           37           189          92             1108             10
 
-               IN TOTAL        62           37           191          92             1104             10
+               IN TOTAL        60           37           189          92             1108             10
 
 Number of nuclides     : 1
 Number of blocks       : 11
-Number of references   : 69
-Number of lines in files: 1115
+Number of references   : 70
+Number of lines in files: 1119
 (from all blocks including abstract, comment, reference)
