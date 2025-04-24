@@ -1,31 +1,22 @@
 # Change Log for ENSDF Edits
 
 ## 2025-04-24
-- Completed consistency check for Ar35_adopted.ens using Program Check (version 03/30/2025)
-- Updated header information in Ar35_adopted.ens:
-  - Changed authors to "LIJIE SUN AND JUN CHEN"
-  - Updated CUT date to "30-Sep-2025"
-  - Added GLSC version reference (21-Mar-2025) in dL comment line
-
-- Improved and expanded level documentation in Ar35_adopted.ens:
-  - Enhanced J$ comments with explicit reaction information (e.g., "from 0+")
-  - Added mirror level information throughout (e.g., "Mirror level: 3/2+ {+35}Cl g.s.")
-  - Updated rms charge radius to 3.3636 fm {I42} (2013An02)
-  - Added experimental context for early measurements (e.g., 1963Ne05 observation notes)
-  - Reorganized reference markers in XREF fields with clearer notation for tentative assignments
-  - Improved parentage for assignments with (?) designations
-
-- Refined nuclear structure information:
-  - Updated J-pi assignments with more consistent parenthetical notation
+- Modified Ar35_adopted.ens based on consistency check results:
+  - Added explicit gamma-ray source identifiers using "K" comment markers for gamma rays from {+35}K |e decay
+  - Added cG E,RI$ statement at the beginning: "From ({+16}O,|an|g), unless otherwise noted"
+  - Updated cG M$ section with clearer information about |g|g(|q)(ADO) and R(|g(|q)) measurements
+  - Added cG E(K),RI(K)$ statement to identify gamma rays from {+35}K |e decay
+  - Enhanced cL E$ explanation to clarify source of level energies from "|e+|b{++}-delayed proton decays"
+  - Added weighted averaging details for gamma transition energies and intensities
+  - Modified "Evaluated rms charge radius" to "Evaluated rms nuclear charge radius R="
+  - Improved uncertainties for weighted averages across multiple datasets
+  - Added "other:" prefix to alternative measurements to clarify primary vs. secondary data
+  - Added tentative multipolarity assignments with parentheses, e.g., "(D)" and "(Q)"
+  - Standardized J-pi assignments with more consistent parenthetical notation
+  - Enhanced cross-reference (XREF) notations with clearer uncertain assignment indicators
+  - Added mirror level information for key states throughout the file
+  - Updated uncertainty representation for log ft values to use {I+n-n} format
   - Added directional gamma-ray information (|DJ values) for key transitions
-  - Enhanced reaction path descriptions in level comments
-  - Reorganized comma placement and formatting in comment sections
-  - Improved citation formatting for references (e.g., 2019StZV, 2021StZZ)
-
-- Updated uncertainty representation and log ft values:
-  - Changed uncertainty notation format (e.g., from "log {Ift}=5.07 {i10}" to "log {Ift}=5.6 {I+4-2}")
-  - Updated half-life uncertainty for ground state (10→14)
-  - Refined energy level precision based on consistency check results
 
 ## 2025-04-23
 - Changed multipolarity notation format across multiple files to use D/Q notation instead of E1/E2/M1/M2:
