@@ -1,5 +1,32 @@
 # Change Log for ENSDF Edits
 
+## 2025-04-24
+- Completed consistency check for Ar35_adopted.ens using Program Check (version 03/30/2025)
+- Updated header information in Ar35_adopted.ens:
+  - Changed authors to "LIJIE SUN AND JUN CHEN"
+  - Updated CUT date to "30-Sep-2025"
+  - Added GLSC version reference (21-Mar-2025) in dL comment line
+
+- Improved and expanded level documentation in Ar35_adopted.ens:
+  - Enhanced J$ comments with explicit reaction information (e.g., "from 0+")
+  - Added mirror level information throughout (e.g., "Mirror level: 3/2+ {+35}Cl g.s.")
+  - Updated rms charge radius to 3.3636 fm {I42} (2013An02)
+  - Added experimental context for early measurements (e.g., 1963Ne05 observation notes)
+  - Reorganized reference markers in XREF fields with clearer notation for tentative assignments
+  - Improved parentage for assignments with (?) designations
+
+- Refined nuclear structure information:
+  - Updated J-pi assignments with more consistent parenthetical notation
+  - Added directional gamma-ray information (|DJ values) for key transitions
+  - Enhanced reaction path descriptions in level comments
+  - Reorganized comma placement and formatting in comment sections
+  - Improved citation formatting for references (e.g., 2019StZV, 2021StZZ)
+
+- Updated uncertainty representation and log ft values:
+  - Changed uncertainty notation format (e.g., from "log {Ift}=5.07 {i10}" to "log {Ift}=5.6 {I+4-2}")
+  - Updated half-life uncertainty for ground state (10→14)
+  - Refined energy level precision based on consistency check results
+
 ## 2025-04-23
 - Changed multipolarity notation format across multiple files to use D/Q notation instead of E1/E2/M1/M2:
   - Updated Ar35_adopted.ens:

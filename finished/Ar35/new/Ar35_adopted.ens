@@ -3,14 +3,15 @@
  35AR2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35AR  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35AR2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
+ 35AR dL E$Least-squares fitting is done by GLSC (version 21-Mar-2025)          
  35AR  Q -11874.4  9 12740.3 7 5896.2  7 -6429.7 7     2021WA16                 
  35AR cQ $S(2n)=29805.6 {I8}, S(2p)=11039.4 {I7}, Q(|e)=5966.2 {I7} (2021Wa16)  
  35AR c  Isotope discovery: {+32}S(|a,n){+35}Ar at Purdue                       
  35AR2c  (1940Ki12,1941Ki01,1941El04).                                          
  35AR c  Shell-model calculations: 2020RiZX, 2020RiZZ, 2020Ri06.                
  35AR cL E$From a least-squares fit to |g-ray energies for levels connected with
- 35AR2cL |g transitions, from particle-transfer reactions for other levels, or  
- 35AR3cL from proton elastic scattering for resonances.                         
+ 35AR2cL |g transitions, from particle-transfer reactions or {+35}K |e decay for
+ 35AR3cL other levels.                                                          
  35AR cL BAND(A)$Band based on f{-7/2} orbital.                                 
  35AR  XA35K EC DECAY (175 MS)                                                  
  35AR  XB36CA ECP DECAY (100.9 MS)                                              
@@ -39,7 +40,7 @@
  35AR3cL (1963Ne05), 1.770 s {I6} (1969Wi18), 1.787 s {I12} (1971Ge04), 1.774 s 
  35AR4cL {I4} (1977Az01), and 1.7754 s {I11} (2006Ia05).                        
  35AR cL $Evaluated rms charge radius=3.3636 fm {I42} (2013An02).               
- 35AR  L 1184.03   25 1/2+                                                      
+ 35AR  L 1184.08   25 1/2+                                                      
  35ARX L XREF=ABCF(890)GHIJ                                                     
  35AR cL E$1963Ne05 (|a,n) observed the first excited state in {+35}Ar at 890   
  35AR2cL {I50} keV.                                                             
@@ -47,7 +48,7 @@
  35AR  G 1184.1    3 100                                                        
  35AR cG E$weighted average of 1184.0 {I3} from {+35}K |e decay and 1184.3 {I4} 
  35AR2cG from {+36}Ca |ep decay                                                 
- 35AR  L 1750.7    3  (5/2)+                                                    
+ 35AR  L 1750.78   22 (5/2)+                                                    
  35ARX L XREF=ADEF(2030)GH(1700)I(1700)J(1738)                                  
  35AR cL E$1963Ne05 (|a,n) observed the second excited state in {+35}Ar at 2030 
  35AR2cL {I80} keV.                                                             
@@ -55,7 +56,7 @@
  35AR  G 1750.6    3 100                                                        
  35AR cG E$weighted average of 1750.5 {I3} from {+35}K |e decay, 1750.7 {I4}    
  35AR2cG from ({+24}Mg,|an|g), and 1750.8 {I5} from ({+16}O,|an|g)              
- 35AR  L 2603.1    5  7/2(+)                                                    
+ 35AR  L 2603.22   28 7/2(+)                                                    
  35ARX L XREF=DEG                                                               
  35AR cL J$|DJ=2 |g to 3/2+ in ({+16}O,|an|g). Mirror level: 7/2+ at 2646 keV in
  35AR2cL {+35}Cl.                                                               
@@ -68,7 +69,7 @@
  35AR cG E$from ({+24}Mg,|an|g). Other: 2602.6 {I15} from ({+16}O,|an|g)        
  35AR cG RI$from ({+16}O,|an|g). Other: 100 {I22} from ({+24}Mg,|an|g)          
  35AR cG M$from ({+16}O,|an|g).                                                 
- 35AR  L 2638.0    3  3/2+                                                      
+ 35AR  L 2638.01   26 3/2+                                                      
  35ARX L XREF=AH(2615)IJ                                                        
  35AR cL J$L(p,d)=L({+3}He,|a)=2 from 0+ with J dependence in (p,d).            
  35AR  G 886.8     5 16      6                                                  
@@ -82,10 +83,10 @@
  35AR cG E,RI$from {+35}K |e decay.                                             
  35AR  G 2982.68   13 100    4                                                  
  35AR cG E,RI$from {+35}K |e decay.                                             
- 35AR  L 3196.9    4  7/2-                                                  A   
+ 35AR  L 3196.98   26 7/2-                                                  A   
  35ARX L XREF=CDEGHIJ                                                           
  35AR cL J$L(p,d)=L({+3}He,|a)=3 from 0+. |DJ=1 |g to (5/2)+ and |DJ=2 |g to    
- 35AR2cL 3/2+ in ({+16}O,|an|g) and (+24Mg,|an|g).                              
+ 35AR2cL 3/2+ in ({+16}O,|an|g) and ({+24}Mg,|an|g).                            
  35AR  G 593.7     2 16.4    30                                                 
  35AR cG E$from ({+16}O,|an|g). Other: 593 {I1} from ({+24}Mg,|an|g)            
  35AR cG RI$from ({+16}O,|an|g). Other: 16 {I8} from ({+24}Mg,|an|g)            
@@ -115,19 +116,19 @@
  35AR  L 4142      10 1/2-,3/2-                                                 
  35ARX L XREF=J                                                                 
  35AR cL J$L({+3}He,|a)=1 from 0+.                                              
- 35AR  L 4358.8    8  (9/2-)                                                    
+ 35AR  L 4359.0    5  (9/2-)                                                    
  35ARX L XREF=DEJ                                                               
  35AR cL J$|DJ=(1) |g to 7/2- in ({+16}O,|an|g). |g to 7/2(+) in ({+24}Mg,|an|g)
- 35AR2cL and ({+16}O,|an|g). Mirror level: 9/2- at 4348 keV in {+35}Cl.         
+ 35AR2cL and ({+16}O,|an|g). Possible mirror level: 9/2- at 4348 keV in {+35}Cl.
  35AR  G 1162.0    8 65      24 (D)                                             
  35AR cG E$from ({+16}O,|an|g). Other: 1162 {I1} from ({+24}Mg,|an|g)           
  35AR cG RI$unweighted average of 41 {I11} from ({+24}Mg,|an|g) and 88 {I18}    
  35AR2cG from ({+16}O,|an|g)                                                    
- 35AR cG M$from ({+16}O,|an|g)                                                  
+ 35AR cG M$from ({+16}O,|an|g).                                                 
  35AR  G 1756      1 100     15                                                 
  35AR cG E$from ({+24}Mg,|an|g). Other: 1756.3 {I14} from ({+16}O,|an|g)        
  35AR cG RI$from ({+24}Mg,|an|g). Other: 1.0E2 {I5} from ({+16}O,|an|g)         
- 35AR  L 4528.2    4  (1/2+,3/2+,5/2+)                                          
+ 35AR  L 4528.3    4  (1/2+,3/2+,5/2+)                                          
  35ARX L XREF=AJ                                                                
  35AR cL J$possibly allowed |e+|b{++} feeding from 3/2+ parent with log         
  35AR2cL {Ift}=5.4 {I+4-2}.                                                     
@@ -140,7 +141,7 @@
  35AR cG E,RI$from {+35}K |e decay.                                             
  35AR  G 4724.5    11 41     17                                                 
  35AR cG E,RI$from {+35}K |e decay.                                             
- 35AR  L 4785.7    11 1/2+,3/2+,5/2+                                            
+ 35AR  L 4785.8    11 1/2+,3/2+,5/2+                                            
  35ARX L XREF=AH(4756*)J                                                        
  35AR cL J$possibly allowed |e+|b{++} feeding from 3/2+ parent with log         
  35AR2cL {Ift}=5.2 {I2}. L(p,d)=0 from 0+.                                      
@@ -148,14 +149,14 @@
  35AR cG E,RI$from {+35}K |e decay.                                             
  35AR  L 5048      10                                                           
  35ARX L XREF=J                                                                 
- 35AR  L 5113      10 3/2+,5/2+
+ 35AR  L 5113      10 3/2+,5/2+                                                 
  35ARX L XREF=HJ                                                                
  35AR cL E$weighted average of 5102 {I20} from (p,d) and 5116 {I10} from        
  35AR2cL ({+3}He,|a).                                                           
- 35AR cL J$L({+3}He,|a)=2 from 0+. Other: L(p,d)=3 from 0+ (1968Jo04).          
+ 35AR cL J$L({+3}He,|a)=2 from 0+. Discrepancy: L(p,d)=3 from 0+ (1968Jo04).    
  35AR  L 5205      10                                                           
  35ARX L XREF=J                                                                 
- 35AR  L 5384.2    6  11/2-                                                 A   
+ 35AR  L 5384.2    4  11/2-                                                 A   
  35ARX L XREF=DEH(5400)J                                                        
  35AR cL J$|DJ=2 |g to 7/2- in ({+16}O,|an|g) and ({+24}Mg,|an|g). |g to (9/2-) 
  35AR2cL in ({+16}O,|an|g) and ({+24}Mg,|an|g).                                 
@@ -169,10 +170,10 @@
  35AR cG RI$from ({+16}O,|an|g). Other: 100 {I13} from ({+24}Mg,|an|g)          
  35AR cG M$from ({+16}O,|an|g).                                                 
  35AR  L 5484      10 3/2+,5/2+                                                 
- 35ARX L XREF=J                                                         
+ 35ARX L XREF=J                                                                 
  35AR cL J$L({+3}He,|a)=2 from 0+.                                              
- 35AR  L 5572.66   15 3/2+                                                      
- 35ARX L XREF=ACG(5537)H(5598)J(5591)                                 
+ 35AR  L 5572.67   15 3/2+                                                      
+ 35ARX L XREF=ACG(5537)H(5598)J(5591)                                           
  35AR2 L ISPIN=3/2                                                              
  35AR cL J$isobaric analog state of 3/2+ {+35}K g.s. with log {Ift}=3.31 {I4}.  
  35AR2cL L(p,d)=L({+3}He,|a)=2 from 0+. L({+3}He,n)=(0) from 3/2+.              
@@ -183,11 +184,11 @@
  35AR  G 3821.7    7 6.7     14                                                 
  35AR  G 4387.2    9 6.7     16                                                 
  35AR  G 5572.3    10 11.7   31                                                 
- 35AR  L 5613.2    11 (11/2-)                                                   
+ 35AR  L 5613.6    9  (11/2-)                                                   
  35ARX L XREF=E                                                                 
  35AR cL J$Possible mirror level: 11/2- at 5927 keV in {+35}Cl.                 
  35AR  G 1254.6    8 100                                                        
- 35AR  L 5765.8    6  (13/2-)                                                   
+ 35AR  L 5765.8    5  (13/2-)                                                   
  35ARX L XREF=DE                                                                
  35AR cL J$|DJ=1 |g to 11/2- in ({+16}O,|an|g) and ({+24}Mg,|an|g). |DJ=(2) |g  
  35AR2cL to (9/2-) in ({+16}O,|an|g).                                           
@@ -200,12 +201,12 @@
  35ARX L XREF=IJ                                                                
  35AR cL E$from (d,t). Other: 5911 {I10} from ({+3}He,|a)                       
  35AR  L 5991      3                                                            
- 35ARX L XREF=I                                                         
+ 35ARX L XREF=I                                                                 
  35AR  L 6037      3  3/2+,5/2+                                                 
- 35ARX L XREF=H(6024)IJ(6033)                                                 
+ 35ARX L XREF=H(6024)IJ(6033)                                                   
  35AR cL J$L(p,d)=L({+3}He,|a)=2 from 0+.                                       
  35AR  L 6055      3                                                           ?
- 35ARX L XREF=I(?)
+ 35ARX L XREF=I(?)                                                              
  35AR  L 6076      3                                                            
  35ARX L XREF=I                                                                 
  35AR  L 6163      3                                                            
@@ -213,23 +214,23 @@
  35AR cL E$weighted average of 6164 {I3} from (d,t) and 6153 {I10} from         
  35AR2cL ({+3}He,|a)                                                            
  35AR  L 6253      3                                                            
- 35ARX L XREF=IJ                                                         
+ 35ARX L XREF=IJ                                                                
  35AR cL E$from (d,t). Other: 6258 {I10} from ({+3}He,|a).                      
  35AR  L 6273      3                                                            
- 35ARX L XREF=I                                                         
+ 35ARX L XREF=I                                                                 
  35AR  L 6302      3                                                            
  35ARX L XREF=I                                                                 
  35AR  L 6332      3                                                            
- 35ARX L XREF=I                                                         
- 35AR  L 6345      3  1/2,3/2,5/2
- 35ARX L XREF=AI
+ 35ARX L XREF=I                                                                 
+ 35AR  L 6345      3  1/2,3/2,5/2                                               
+ 35ARX L XREF=AI                                                                
  35AR cL E$from (d,t). Other: 6348 {I11} from {+35}K |e decay.                  
  35AR cL J$possibly allowed |e+|b{++} feeding from 3/2+ parent with log         
  35AR2cL {Ift}=7.2 {I1}.                                                        
  35AR  L 6415      2                                                            
  35ARX L XREF=I                                                                 
  35AR  L 6439      4                                                           ?
- 35ARX L XREF=I(?)                                                          
+ 35ARX L XREF=I(?)                                                              
  35AR  L 6460      3                                                            
  35ARX L XREF=I                                                                 
  35AR  L 6523      3                                                            
@@ -237,7 +238,7 @@
  35AR  L 6557      3                                                            
  35ARX L XREF=I                                                                 
  35AR  L 6585      3                                                            
- 35ARX L XREF=I                                                         
+ 35ARX L XREF=I                                                                 
  35AR  L 6606      3                                                            
  35ARX L XREF=H(6620*)IJ(6631*)                                                 
  35AR  L 6617      2  1/2+                                                      
@@ -286,29 +287,30 @@
  35ARX L XREF=J                                                                 
  35AR  L 8019      10                                                           
  35ARX L XREF=J                                                                 
- 35AR  L 8109.2    14 (15/2-)                                               A   
+ 35AR  L 8109.7    13 (15/2-)                                               A   
  35ARX L XREF=E                                                                 
  35AR cL J$|g to 11/2- and 13/2- in ({+16}O,|an|g). Possible mirror level: 15/2-
  35AR2cL at 8319 keV in {+35}Cl.                                                
  35AR  G 2342.6    28 100    25                                                 
  35AR  G 2725.7    14 50     13                                                 
- 35AR  L 8212.1    10 (15/2-)                                                   
+ 35AR  L 8212.6    8  (15/2-)                                                   
  35ARX L XREF=E                                                                 
  35AR cL J$|DJ=2 |g to 11/2- and |g to 13/2- in ({+16}O,|an|g). Possible mirror 
  35AR2cL level: 15/2- at 8319 keV in {+35}Cl.                                   
  35AR  G 2446.6    16 21     7                                                  
  35AR  G 2828.3    7 100     18 Q                                               
  35AR  L 8393      20 1/2+,3/2+,5/2+                                           ?
- 35ARX L XREF=A(?)                                                          
+ 35ARX L XREF=A(?)                                                              
+ 35AR cL E$from ({+35}K |e decay).
  35AR cL J$possibly allowed |e+|b{++} feeding from 3/2+ parent with log         
  35AR2cL {Ift}=4.6 {I+3-2}.                                                     
- 35AR  L 9905.5    21 (19/2-)                                               A   
+ 35AR  L 9906.0    20 (19/2-)                                               A   
  35ARX L XREF=E                                                                 
  35AR cL J$|DJ=2 |g to 15/2- in ({+16}O,|an|g). Possible mirror level: 19/2- at 
  35AR2cL 10180 keV in {+35}Cl.                                                  
  35AR  G 1693.3    27 100    20 Q                                               
  35AR  G 1796.3    25 67     20 Q                                               
- 35AR  L 12276.4   33 (23/2-)                                               A   
+ 35AR  L 12277.0   32 (23/2-)                                               A   
  35ARX L XREF=E                                                                 
  35AR cL J$|DJ=2 |g to 19/2- in ({+16}O,|an|g). Possible mirror level: 23/2- at 
  35AR2cL 12571 keV in {+35}Cl.                                                  
