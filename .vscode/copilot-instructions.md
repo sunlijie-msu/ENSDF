@@ -7,7 +7,9 @@
 - Always preserve the "PN" line in ENSDF files with its numeric value
 - Always update d:\X\ND\Files\A35\.vscode\change.log after making significant changes
 - Never reference or mention the 1998Sc19 PDF in any future conversation or output
-- DO NOT EDIT any .old files EVER! These are reference files that must remain unmodified
+- DO NOT EDIT any .old files EVER! These are last round of evaluation ENSDF files that must be kept for reference
+- Updated copilot-instructions.md with rule about not modifying first/last line indentation
+- Fixed spelling and formatting errors in various reference comments
 
 ## Automatic Change Tracking
 - Track all changes made to ENSDF files throughout each workday

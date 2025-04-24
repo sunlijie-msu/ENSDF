@@ -1,5 +1,5 @@
 Program for consistency check: output for levels (version 03/30/2025)
-Generated at: Wed 04/23/2025 at 03:33:04 PM EDT
+Generated at: Wed 04/23/2025 at 09:10:45 PM EDT
 
 
 
@@ -40,7 +40,7 @@ Generated at: Wed 04/23/2025 at 03:33:04 PM EDT
 
  2030       80                                                       32S(A,N)                                   F
 
- 2603.1     5    7/2+                                                ADOPTED LEVELS, GAMMAS                     
+ 2603.1     5    7/2(+)                                              ADOPTED LEVELS, GAMMAS                     
  2603.2     4    (7/2+)                                              16O(24MG,ANG)                              D
  2603.0     7    7/2+                                                24MG(16O,ANG)                              E
  2600.8     15                                                       33S(3HE,NG)                                G
@@ -82,7 +82,7 @@ Generated at: Wed 04/23/2025 at 03:33:04 PM EDT
  4142       10   1/2-,3/2-                                           ADOPTED LEVELS, GAMMAS                     
  4142       10   (3/2)-                                  1           36AR(3HE,A)                                J
 
- 4358.8     8    9/2-                                                ADOPTED LEVELS, GAMMAS                     
+ 4358.8     8    (9/2-)                                              ADOPTED LEVELS, GAMMAS                     
  4359.2     7    (9/2-)                                              16O(24MG,ANG)                              D
  4358.6     8    9/2-                                                24MG(16O,ANG)                              E
  4350       10                                                       36AR(3HE,A)                                J
@@ -106,7 +106,7 @@ Generated at: Wed 04/23/2025 at 03:33:04 PM EDT
 
  5102       20   7/2-                                    3           36AR(P,D)                                  H
 
- 5113       10   (3/2,5/2)+                                          ADOPTED LEVELS, GAMMAS                     
+ 5113       10   3/2+,5/2+                                           ADOPTED LEVELS, GAMMAS                     
  5116       10   (3/2,5/2)+                              2           36AR(3HE,A)                                J
 
  5205       10                                                       ADOPTED LEVELS, GAMMAS                     
@@ -132,7 +132,7 @@ Generated at: Wed 04/23/2025 at 03:33:04 PM EDT
  5613.2     11   (11/2-)                                             ADOPTED LEVELS, GAMMAS                     
  5613.2     11   (11/2-)                                             24MG(16O,ANG)                              E
 
- 5765.8     6    13/2-                                               ADOPTED LEVELS, GAMMAS                     
+ 5765.8     6    (13/2-)                                             ADOPTED LEVELS, GAMMAS                     
  5766.0     5    13/2(-)                                             16O(24MG,ANG)                              D
  5765.3     8    13/2-                                               24MG(16O,ANG)                              E
 
@@ -149,6 +149,7 @@ Generated at: Wed 04/23/2025 at 03:33:04 PM EDT
  6037       3                                                        36AR(D,T)                                  I
  6033       10   (3/2,5/2)+                              2           36AR(3HE,A)                                J(*)
 
+ 6055       3                                                        ADOPTED LEVELS, GAMMAS                     
  6024       20   (3/2,5/2)+                              2           36AR(P,D)                                  H(*)
  6055       3                                                        36AR(D,T)                                  I(?)
  6033       10   (3/2,5/2)+                              2           36AR(3HE,A)                                J(*)
@@ -175,7 +176,7 @@ Generated at: Wed 04/23/2025 at 03:33:04 PM EDT
  6348       11   1/2,3/2,5/2                                         35K EC DECAY (175 MS)                      A(*)
  6332       3                                                        36AR(D,T)                                  I
 
- 6345       3                                                        ADOPTED LEVELS, GAMMAS                     
+ 6345       3    1/2,3/2,5/2                                         ADOPTED LEVELS, GAMMAS                     
  6348       11   1/2,3/2,5/2                                         35K EC DECAY (175 MS)                      A(*)
  6345       3                                                        36AR(D,T)                                  I
 
@@ -264,7 +265,7 @@ Generated at: Wed 04/23/2025 at 03:33:04 PM EDT
  8212.1     10   (15/2-)                                             ADOPTED LEVELS, GAMMAS                     
  8212.1     10   15/2-                                               24MG(16O,ANG)                              E
 
- 8395       20   1/2+,3/2+,5/2+                                      ADOPTED LEVELS, GAMMAS                     
+ 8393       20   1/2+,3/2+,5/2+                                      ADOPTED LEVELS, GAMMAS                     
  8393       20   1/2+,3/2+,5/2+                                      35K EC DECAY (175 MS)                      A(?)
 
  9905.5     21   (19/2-)                                             ADOPTED LEVELS, GAMMAS                     
@@ -277,7 +278,7 @@ Generated at: Wed 04/23/2025 at 03:33:04 PM EDT
 
 Statistics of levels and gammas from all datasets of 35AR:
                              DSID     #of levels       #of gammas       level range
-           ADOPTED LEVELS, GAMMAS        60               37            0.0        to    12276.4
+           ADOPTED LEVELS, GAMMAS        61               37            0.0        to    12276.4
             35K EC DECAY (175 MS)        17               19            0          to       8393
         36CA ECP DECAY (100.9 MS)        2                1             0          to     1184.3
                        1H(36AR,D)        5                0             0          to       5570
@@ -289,7 +290,7 @@ Statistics of levels and gammas from all datasets of 35AR:
                         36AR(D,T)        28               0             0          to       6672
                       36AR(3HE,A)        34               0             0          to       8019
 
-                         IN TOTAL        189              92            0.0        to    12276.5
+                         IN TOTAL        190              92            0.0        to    12276.5
 
 
 
@@ -297,12 +298,12 @@ Statistics of levels and gammas from all datasets of 35AR:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                   35AR        60           37           189          92             1108             10
+                   35AR        61           37           190          92             1120             10
 
-               IN TOTAL        60           37           189          92             1108             10
+               IN TOTAL        61           37           190          92             1120             10
 
 Number of nuclides     : 1
 Number of blocks       : 11
 Number of references   : 70
-Number of lines in files: 1119
+Number of lines in files: 1131
 (from all blocks including abstract, comment, reference)

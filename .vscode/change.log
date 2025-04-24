@@ -1,5 +1,54 @@
 # Change Log for ENSDF Edits
 
+## 2025-04-23
+- Changed multipolarity notation format across multiple files to use D/Q notation instead of E1/E2/M1/M2:
+  - Updated Ar35_adopted.ens:
+    - Changed E1 → D for all dipole transitions (1446.2, 3542.0 keV, etc.)
+    - Changed E2 → Q for all quadrupole transitions (1750.6, 2603.0, 2187.1, 1406.9, 2828.3, 1693.3, 1796.3, 2370.9 keV)
+    - Changed M1 → D for all dipole transitions (381.6 keV)
+    - Changed M2 → Q for all quadrupole transitions (3197.0 keV)
+    - Updated associated comments to use D and Q terminology instead of E1, E2, M1, M2
+    - Modified explanation in multipolarity section: "...uses D and Q, instead of M1 and E2, or, E1 and M2"
+    - Updated cG M$ lines with consistent D/Q nomenclature
+
+  - Expanded comment section in Ar35_adopted.ens:
+    - Added details about gamma-ray asymmetry measurements methodology
+    - Updated reference citations for recent theoretical calculations (2020Ri06, 2020RiZX, 2020RiZZ)
+    - Added recent experimental data from 2019ChZU measurements
+    - Included more explicit cross-referencing between datasets
+    - Improved clarity of level-ordering explanations
+    
+  - Refined level energy determinations in Ar35_adopted.ens:
+    - Added weighted average calculation explanations for key levels
+    - Enhanced precision for several energy levels based on new measurements
+    - Added detailed breakdown of gamma branching ratio calculations
+    - Improved consistency in uncertainty representations throughout file
+    - Added S-factor values for proton-unbound states
+
+  - Updated Ar35_16o_24mg_ang.ens:
+    - Changed E1 → D for gamma transitions at 1446.2 and 381.6 keV
+    - Changed M2 → Q for gamma transition at 3197.0 keV
+    - Changed E2 → Q for gamma transition at 2187.4 keV
+    
+  - Attempted updates on Ar35_24mg_16o_ang.ens with similar D/Q notation changes
+  - Careful character-by-character replacements were necessary to maintain exact column positioning
+
+- Worked on secondary references and new literature:
+  - Added recent shell-model calculation citation by Surender et al. (2024) to Ar35_ec_decay_175_ms.ens
+  - Fixed reference formats for theoretical calculations in the comment section
+  - Updated BetaShape version reference to v2.4 (Jun-2024) in Ar35_ec_decay_175_ms.ens
+  - Fixed typo "coeffcients" → "coefficients" in IMME comment section
+
+- Updated analysis tools references:
+  - Changed GLSC version date to 21-Mar-2025 in dL comment lines
+  - Updated pandemonium assessment with specific yields and integration details from 1977Ha51
+
+- Updated copilot-instructions.md:
+  - Added critical rule: "DO NOT EDIT any .old files EVER! These are reference files that must remain unmodified"
+  - Emphasized the importance of not touching .old files with multiple repetitions of the rule
+  - Added rule to only replace specific characters when editing ENSDF files, not entire lines
+  - Reinforced the importance of preserving exact column positions in ENSDF files
+
 ## 2025-04-21
 - Updated Ar35_16o_24mg_ang.ens file:
   - Changed multipolarity notations:
