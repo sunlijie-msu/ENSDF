@@ -1,28 +1,22 @@
 # Change Log for ENSDF Edits
 
 ## 2025-04-29
-- Formatted proper superscripts in K35_40ca_3he_8li.ens:
-  - Standardized nuclear reaction notation: {+40}Ca({+3}He,{+8}Li){+35}K
-  - Properly formatted isotopes in reaction descriptions: {+35}Cl({+3}He,t){+35}Ar
-  - Ensured consistent formatting of nuclear species throughout the document
+- Improved nuclear reaction formatting in multiple files:
+  - K35_9be_36ca_35kg.ens:
+    - Standardized knockout reaction notation: {+9}Be({+36}Ca,X){+35}K
+    - Fixed improper orbital notation for 1d{-3/2} shell
+    - Corrected duplicate entry of "35K Kc" line
+    - Enhanced grammar in reaction descriptions
+    - Added proper articles to experimental method descriptions
 
-- Improved grammar and terminology in K35_9be_36ca_35k.ens:
-  - Ensured consistent formatting of nuclear reaction: {+9}Be({+36}Ca,{+35}K)
-  - Fixed 1d{-3/2} orbital notation in J$ comment line
-  - Updated spectroscopic factor details and cross-section descriptions with proper scientific notation
-  - Enhanced readability of knockout reaction methodology description
+  - Ca35_9be_36ca_35ca.ens:
+    - Added spectroscopic factors and cross-section values
+    - Included R{-s} reduction factors and shell model predictions (C²S=1.80)
 
-- Updated Ar35_35cl_3he_t.ens reaction details:
-  - Improved clarity of angular distribution measurements
-  - Standardized reaction notation throughout the dataset
-  - Enhanced cross-reference links to other datasets using consistent formatting
-  - Updated level assignment descriptions with proper quantum number formatting
+  - K35_40ca_3he_8li.ens:
+    - Properly formatted reaction: {+40}Ca({+3}He,{+8}Li){+35}K
 
-- Additional improvements to Ar35_adopted.ens:
-  - Further refined weighted average calculations
-  - Enhanced clarity in level assignment explanations
-  - Improved formatting consistency across the dataset
-  - Updated cross-referencing between related measurements
+  - Also updated Ar35_35cl_3he_t.ens and Ar35_adopted.ens with consistent formatting
 
 ## 2025-04-24
 - Modified Ar35_adopted.ens based on consistency check results:
