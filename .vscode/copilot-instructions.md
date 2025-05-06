@@ -10,6 +10,30 @@
 - DO NOT EDIT any .old files EVER! These are last round of evaluation ENSDF files that must be kept for reference
 - Updated copilot-instructions.md with rule about not modifying first/last line indentation
 - Fixed spelling and formatting errors in various reference comments
+- DO NOT add extra spaces when adding Jπ values or other information to ENSDF records
+- DO NOT shift existing numbers in each line when adding new information
+- Focus primarily on K35 and P35 files - Ar35 files are already completed
+
+## Spin-Parity (Jπ) Placement
+- When adding spin-parity values to levels, place them exactly at column 23
+- Example: `35K   L 4788      49 1/2+,3/2+`
+  - Energy value (4788) remains at columns 11-15
+  - Uncertainty (49) remains at columns 17-18  
+  - Jπ (1/2+,3/2+) starts precisely at column 23
+- Never add additional spaces that would shift uncertainty values
+
+## Grammar and Spelling Fixes
+- Common typos to watch for and fix:
+  - "stoped" → "stopped"
+  - "usign" → "using"
+  - "coeffcients" → "coefficients"
+  - "preocesses" → "processes"
+  - "deduded" → "deduced"
+  - "paticles" → "particles"
+  - "mesured" → "measured"
+- Add missing articles (a, an, the) and conjunctions (and, or) where appropriate
+- Fix awkward sentence structures (e.g., "...but causing an IMME breakdown" → "...which caused an IMME breakdown")
+- Maintain scientific accuracy while improving English readability
 
 ## Automatic Change Tracking
 - Track all changes made to ENSDF files throughout each workday

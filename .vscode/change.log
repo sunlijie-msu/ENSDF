@@ -1,5 +1,37 @@
 # Change Log for ENSDF Edits
 
+## 2025-05-05
+- Added spin-parity (Jπ) values "1/2+,3/2+" to all levels with XREF=A in K35_adopted.ens:
+  - Applied to levels at 3781, 4018, 4788, 4982, 5249, 5533, 5710, 5865, 6089, 6335, and 9168 keV
+  - Ensured proper column positioning with Jπ values starting exactly at column 23
+  - Maintained correct alignment of energy values and uncertainties
+
+- Removed levels without uncertainties from K35_adopted.ens:
+  - Deleted levels at 4520, 5493, 5716, 6302, 6585, and 7813 keV
+  - Removed their corresponding XREF lines
+  - These levels had energy values without specified uncertainties in columns 17-18
+
+- Fixed English grammar issues in multiple files:
+  - K35_40ca_3he_8li.ens:
+    - Corrected "Measured the cross section for producing" to "Measured the cross section of {+40}Ca({+3}He,{+8}Li){+35}K leading to"
+  - K35_9be_36ca_35k.ens:
+    - Added missing "for" in "to search for decay |g of any excited states"
+    - Added missing "the" before "knockout cross sections"
+    - Added missing "and" in "Deduced J, |p, and orbital angular momenta"
+    - Enhanced J comment: "J assignment based on knockout from proton 1d{-3/2} orbital"
+  - Ar35_35cl_3he_t.ens:
+    - Fixed awkward grammar "but causing an IMME breakdown" to "which caused an IMME breakdown"
+
+- Fixed spelling error in K35_ec_decay_25.7_ms.ens:
+  - Corrected "stoped" to "stopped" in experimental description
+
+- Updated copilot-instructions.md with new guidelines:
+  - Added warnings against adding spaces that shift column positions
+  - Added detailed section on proper Jπ placement at column 23
+  - Added section on common English grammar and spelling fixes
+  - Added instruction to focus primarily on K35 and P35 files
+  - Emphasized the importance of preserving exact column positions
+
 ## 2025-04-30
 - Fixed typos in multiple files:
   - Corrected "usign" to "using" in Ar35_36ca_ecp_decay_100.9_ms.ens
