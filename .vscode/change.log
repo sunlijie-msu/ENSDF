@@ -1,5 +1,21 @@
 # Change Log for ENSDF Edits
 
+## 2025-05-06
+- Modified K35_ec_decay_25.7_ms.ens file with critical changes:
+  - Changed title line from "35CA EC DECAY (25.7 MS)" to "35CA EC+B+ DECAY (25.7 MS)"
+  - Added new comment section: "The decay scheme is considered relatively complete as all observed individual I(1p) and I(2p) add up to almost 100% in 1999Tr04."
+  - Replaced simplistic TI comment with detailed explanation of intensity normalization:
+    - Added explanation of how TI values are deduced from I(p) values with 0.994 normalization factor
+    - Clarified that original %|SI(1p)=96.4 {I18} and %|SI(2p)=4.2 {I3} sum to 100.6%
+    - Documented evaluator's renormalization from 100.6% to 100%
+    - Added details about original I(p) determination methodology
+  - Added explanation for TI(X) values and clarified that Log ft values for unresolved levels are displayed without uncertainties
+  
+- Identified reference "1991De26" in K35_ec_decay_25.7_ms.ens:
+  - Found as part of theoretical studies involving {+35}Ca decay 
+  - Referenced in context of IAS calculations
+  - Specifically regarding branching ratio I(2p)/I(1p)=1 for the IAS
+
 ## 2025-05-05
 - Added spin-parity (Jπ) values "1/2+,3/2+" to all levels with XREF=A in K35_adopted.ens:
   - Applied to levels at 3781, 4018, 4788, 4982, 5249, 5533, 5710, 5865, 6089, 6335, and 9168 keV
@@ -143,7 +159,7 @@
   - Changed reference from 2012WA38 to 2021WA16 in the Q record
   - Updated Q-value uncertainties: 0.9→0.9, 0.8→0.7, 0.8→0.7, 0.8→0.7
   - Changed J assignment for level 2982.79 keV from "3/2+,5/2+" to "5/2+" only
-  - Changed J assignment for 5113 keV level to "(3/2,5/2)+" from "3/2+,5/2+"
+  - Changed J assignment for 5113 keV level to "(3/2,5/2)+" from "3/2+,5/2+" 
   - Corrected level ordering at ~6.3 MeV (6332, 6345 keV with XREF=A(6348*))
   - Added XREF=A reference markers to levels at 7255, 7427 and 7509 keV
   - Changed 7504 keV to 7509 keV and updated its log ft from "4.79 {i18}" to "<5.0"

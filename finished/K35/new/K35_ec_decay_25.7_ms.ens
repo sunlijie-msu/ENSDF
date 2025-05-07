@@ -1,4 +1,4 @@
- 35K     35CA EC DECAY (25.7 MS)       1999TR04,1985Ay01         ENSDF    202509
+ 35K     35CA EC+B+ DECAY (25.7 MS)    1999TR04,1985Ay01         ENSDF    202509
  35K   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
  35K 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35K   H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
@@ -32,6 +32,8 @@
  35K Ac  A=35, T=5/2 sextuplets IMME.                                           
  35K  c  Theoretical studies involving {+35}Ca decay: 2003Sm02, 1991De26,       
  35K 2c  1990Br26                                                               
+ 35K  c  The decay scheme is considered relatively complete as all observed     
+ 35K 2c  individual I(1p) and I(2p) add up to almost 100% in 1999Tr04.          
  35K  cL E$Evaluators deduced E(level)({+35}K)=E(p){-lab}|*[m(p)+m({+34}Ar)]/m(\
  35K 2cL {+34}Ar)+S(p)({+35}K)+E(level)({+34}Ar), with S(p)({+35}K)=83.6 {I5}   
  35K 3cL (2021Wa16), E(level)({+34}Ar) from 2012Ni10, and E(p){-lab} from       
@@ -45,10 +47,15 @@
  35K 2cL unresolved protons populating one daughter state in {+34}Ar, which are 
  35K 3cL not included in the Adopted Levels.                                    
  35K  cL J,T$From the Adopted Levels.                                           
- 35K  cE TI$From I(p) obtained from the number of observed proton events and the
- 35K 2cE total number of implants, with simulated proton-detection efficiencies 
- 35K 3cE (1999Tr04).                                                            
- 35K  cE TI(X)$Feeding to a group of unresolved levels in {+35}K.               
+ 35K  cE TI$Deduced from the I(p) values in 1999Tr04 multiplied by 0.994. The   
+ 35K 2cE original %|SI(1p)=96.4 {I18} and %|SI(2p)=4.2 {I3} in 1999Tr04 lead to 
+ 35K 3cE %|SI(1p)+%|SI(2p)=100.6. The evaluators perform a renormalization of   
+ 35K 4cE 100.6 to 100, which yields the factor of 0.994. The original I(p) in   
+ 35K 5cE 1999Tr04 was determined from the number of observed proton events and  
+ 35K 6cE the total number of implants, with simulated proton-detection          
+ 35K 7cE efficiencies.                                                          
+ 35K  cE TI(X)$Feeding to a group of unresolved levels in {+35}K. The           
+ 35K 2cE corresponding Log {Ift} values are displayed without uncertainties.    
  35CA  P 0            1/2+             25.7 MS   2              1.595E4   11    
  35CA cP J,T$From the Adopted Levels of {+35}Ca.                                
  35CA cP QP$Deduced by evaluators from mass excesses of 4777 {I105} for {+35}Ca 
@@ -58,9 +65,9 @@
  35K   L 0            3/2+             175 MS    2                              
  35K  cL T$weighted average of 175 ms {I2} (2018Sa54), 178 ms {I8} (1998Sc19),  
  35K 2cL and 190 ms {I30} (1980Ew02).                                           
- 35K   L 1553      5  1/2+                                                      
+ 35K   L 1553      5  (1/2)+                                                    
  35K  cL $E(p0){-lab}=1427 {I5}, proton line 1 in 1999Tr04.                     
- 35K   E             48.5    13 0.0030 4 4.26    3              48.5      13    
+ 35K   E             48.2    13 0.0030 4 4.26    3              48.2      13    
  35K S E EAV=6417 54$CK=5.52E-5 62$CL=5.19E-6 58$CM+=8.66E-7 88                 
  35K   L 3781      26 1/2+,3/2+                                                 
  35K  cL $E(p0){-lab}=3592 {I25}, proton line 5 in 1999Tr04.                    
@@ -86,7 +93,7 @@
  35K 2cL E(level)=4982 {I13}.                                                   
  35K  cL E$weighted average of the two E(level) values of 4977 {I39} (p0) and   
  35K 2cL 4982 {I13} (p1).                                                       
- 35K   E             10.2    7 0.0014  2 4.32    6              10.2      7     
+ 35K   E             10.1    7 0.0014  2 4.32    6              10.1      7     
  35K S E EAV=4725 54$CK=1.26E-4 15$CL=1.18E-5 14$CM+=1.97E-6 22                 
  35K  cE TI$%I(p0)=4.2 {I4}, %I(p1)=6.0 {I5}                                    
  35K   L 5249      73 1/2+,3/2+                                                 
@@ -113,11 +120,11 @@
  35K S E EAV=4361   $CK=1.56E-4 19$CL=1.47E-5 18$CM+=2.45E-6 27                 
  35K   L 5865      38 1/2+,3/2+                                                 
  35K  cL $E(p0){-lab}=5616 {I37}, proton line 14 in 1999Tr04.                   
- 35K   E             1.43    17 2.6E-4 5 5.0     1              1.43      17    
+ 35K   E             1.42    17 2.6E-4 5 5.0     1              1.42      17    
  35K S E EAV=4287 59$CK=1.63E-4 21$CL=1.54E-5 19$CM+=2.56E-6 29                 
  35K   L 6089      62 1/2+,3/2+                                                 
  35K  cL $E(p0){-lab}=5834 {I60}, proton line 15 in 1999Tr04.                   
- 35K   E             1.40    19 2.7E-4 5 4.9     1              1.40      19    
+ 35K   E             1.39    19 2.7E-4 5 4.9     1              1.39      19    
  35K S E EAV=4179 64$CK=1.76E-4 23$CL=1.65E-5 22$CM+=2.75E-6 32                 
  35K   L 6302                                                               X   
  35K  cL $E(p3){-lab}=1909-2647, proton group 2 in 1999Tr04, corresponding to   
@@ -131,15 +138,17 @@
  35K   L 6585                                                               X   
  35K  cL $E(p0){-lab}=5983-6649, proton group 16 in 1999Tr04, corresponding to  
  35K 2cL E(level)=6243-6928.                                                    
- 35K   E             1.09    17 2.5E-4 5 4.9                    1.09      17X   
+ 35K   E             1.08    17 2.5E-4 5 4.9                    1.08      17X   
  35K S E EAV=3933   $CK=2.07E-4 27$CL=1.95E-5 25$CM+=3.24E-6 37                 
  35K   L 7813                                                               X   
  35K  cL $E(p0){-lab}=7131-7887, proton group 18 in 1999Tr04, corresponding to  
  35K 2cL E(level)=7424-8203.                                                    
  35K   E             1.1     2 4.0E-4  9 4.6                    1.1       2 X   
  35K S E EAV=3335   $CK=3.27E-4 44$CL=3.07E-5 42$CM+=5.13E-6 63                 
- 35K   L 9168      23 1/2+                                                 
+ 35K   L 9168      23 1/2+                                                      
  35K 2 L ISPIN=5/2                                                              
+ 35K  cL E$weighted average of the three E(level) values of 9144 {I92} (p0),    
+ 35K 2cL 9157 {I23} (p1), and 9186 {I27} (2p0).                                 
  35K  cL $E(p0){-lab}=8802 {I89}, proton line 19 in 1999Tr04, corresponding to  
  35K 2cL E(level)=9144 {I92}.                                                   
  35K  cL $E(p1){-lab}=6783 {I22}, proton line 17 in 1999Tr04, corresponding to  
@@ -148,8 +157,6 @@
  35K 2cL E(level)=9186 {I27} with S(2p)({+35}K)=4747.5 {I6} (2021Wa16) and      
  35K 3cL adding a +7-keV correction for the difference in the recoil effect     
  35K 4cL between 1p and 2p emissions (1999Tr04).                                
- 35K  cL E$weighted average of the three E(level) values of 9144 {I92} (p0),    
- 35K 2cL 9157 {I23} (p1), and 9186 {I27} (2p0).                                 
  35K  cL $Other: E(2p0){-lab}=4089 {I30}, E(2p0){-c.m.}=4311 {I40} (1985Ay01),  
  35K 2cL corresponding to E(level)=9059 {I41} in {+35}K with                    
  35K 3cL S(2p)({+35}K)=4747.5 {I6} (2021Wa16). 1985Ay01 also observed           
