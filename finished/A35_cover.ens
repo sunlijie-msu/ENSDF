@@ -3,9 +3,9 @@
  35P 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35    H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35  2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35   C  TITL$Nuclear Structure and Decay Data for A=35 Isobars
- 35   c  AUTH$LIJIE SUN AND JUN CHEN                           
- 35   c  INST$Facility for Rare Isotope Beams, 
+ 35   c  TITL$Nuclear Structure and Decay Data for A=35 Isobars                 
+ 35   c  AUTH$LIJIE SUN AND JUN CHEN                                            
+ 35   c  INST$Facility for Rare Isotope Beams,                                  
  35  #c       Michigan State University, East Lansing, MI 48824, USA
  35   c  ABST$Experimental nuclear structure and decay data are evaluated for 10
  35  2c  known nuclides of mass number A=35 (Na,Mg,Al,Si,P,S,Cl,Ar,K,Ca).       
@@ -16,48 +16,51 @@
  35  7c  published by 2011Ch48, 1990En08 (also 1998En04 update) and 1978En02. No
  35  8c  excited states are known in {+35}Na, {+35}Mg. No |g rays are known in  
  35  9c  {+35}K or {+35}Ca. Experimental data for {+35}Al and {+35}Si are       
- 35  ac  limited and their radioactive decay schemes seem incomplete in view of 
- 35  bc  large Q values and known excitations much below than allowed by Q      
- 35  cc  values. The {+35}S, {+35}Cl and {+35}Ar nuclides remain as the most    
- 35  dc  extensively studied from many different reactions and decays.          
+ 35  Ac  limited and their radioactive decay schemes seem incomplete in view of 
+ 35  Bc  large Q values and known excitations much below than allowed by Q      
+ 35  Cc  values. The {+35}S, {+35}Cl and {+35}Ar nuclides remain as the most    
+ 35  Dc  extensively studied from many different reactions and decays.          
 
 
  35   c  ABST$A large number of levels of astrophysical interest were discovered
  35  2c  in a high-resolution {+36}Ar(d,t){+35}Ar measurement without J, |p, or 
  35  3c  lifetimes. {+35}K %(|e+|b{++})p=0.37 {I15} for E(p)>0.9 MeV (1980Ew02).
  35  4c  E(p)<0.9 MeV has also been observed (2018Sa54,2019ChZU) but without    
- 35  5c  obtaining I(p). Many {+35}K levels discovered in {+35}Ca |e decay are   
+ 35  5c  obtaining I(p). Many {+35}K levels discovered in {+35}Ca |e decay are  
  35  6c  unresolved. The 2p emission mechanism from {+35}K should be            
  35  7c  investigated and the existence of the intermediate state in {+34}Ar    
  35  8c  proposed by 1985Ay01 should be confirmed.                              
 
 
- 35   c  CUT$Literature available up to September 30, 2025 has been consulted, with the help of the primary bibliographic source, the NSR database (2011Pr03) available at Brookhaven National Laboratory web page: www.nndc.bnl.gov/nsr/.
+ 35   c  CUT$Literature available up to September 30, 2025 has been consulted,  
+ 35  2c  with the help of the primary bibliographic source, the NSR database    
+ 35  3c  (2011Pr03) available at Brookhaven National Laboratory web page:       
+ 35  4c  www.nndc.bnl.gov/nsr/.                                                 
  35   c  COMM$The statistical analysis of |g-ray data and deduced level schemes 
  35  2c  is carried out through computer codes available at NNDC, BNL website:  
  35  3c  www.nndc.bnl.gov. The direct feedings to excited states in |b{+-} and  
- 35  4c  |e decays have generally been computed from I(|g+ce) intensity         
- 35  5c  balances at each level; the associated log| {Ift} values are           
- 35  6c  calculated using log| {Ift} code. All Q values have been adopted from  
- 35  7c  2011AuZZ, an interim mass adjustment file. These values are compared   
- 35  8c  with those in the published AME-2003 (2003Au03). Static magnetic       
- 35  9c  dipole and quadruple moments have been adopted from 2011StZZ and       
- 35  Ac  1989Ra17 when available. Nuclear charge radii have been adopted from   
- 35  Bc  the update of 2004An14 by I. Angeli, which are available on the        
- 35  Cc  website: http://cdfe.sinp.msu.ru. In cases where weighted averaging    
- 35  Dc  procedures have been used and the number of independent measurements   
- 35  Ec  is small (four or less), the assigned uncertainty is generally the     
- 35  Fc  higher of the two values: the one given by the averaging procedure and 
- 35  Gc  the lowest uncertainty quoted for a measurement in the dataset.        
+ 35  4c  |e decays have generally been computed from I(|g+ce) intensity balances
+ 35  5c  at each level; the associated log| {Ift} values are calculated using   
+ 35  6c  log| {Ift} code. All Q values have been adopted from 2011AuZZ, an      
+ 35  7c  interim mass adjustment file. These values are compared with those in  
+ 35  8c  the published AME-2003 (2003Au03). Static magnetic dipole and quadruple
+ 35  9c  moments have been adopted from 2011StZZ and 1989Ra17 when available.   
+ 35  Ac  Nuclear charge radii have been adopted from the update of 2004An14 by  
+ 35  Bc  I. Angeli, which are available on the website: http://cdfe.sinp.msu.ru.
+ 35  Cc  In cases where weighted averaging procedures have been used and the    
+ 35  Dc  number of independent measurements is small (four or less), the        
+ 35  Ec  assigned uncertainty is generally the higher of the two values: the one
+ 35  Fc  given by the averaging procedure and the lowest uncertainty quoted for 
+ 35  Gc  a measurement in the dataset.                                          
  35   c  ACKN$All the previous evaluations of A=35 nuclides by Late Professor   
  35  2c  Peter Endt (1998En04 update, 1990En08, 1978En02, 1973EnVA, 1967En05,   
  35  3c  1962En05, 1957En01, 1954En19) provided an invaluable resource for the  
  35  4c  current work. The evaluators thank Dr. M. Saha Sarkar (SINP, Kolkata)  
  35  5c  for a detailed review of this work and many useful comments.           
- 35   c  FUND$Work supported by Office of Nuclear Physics, Office of Science,   
- 35  xc  US Department of Energy, and by Natural Sciences and Engineering       
- 35  xc  Research Council (NSERC) of Canada.                                    
- 35   C  CIT$NDS 112,2715 (2011)                                                
+ 35   c  FUND$Work supported by Office of Nuclear Physics, Office of Science, US
+ 35  2c  Department of Energy, and by Natural Sciences and Engineering Research 
+ 35  3c  Council (NSERC) of Canada.                                             
+ 35   c  CIT$NDS 112,2715 (2011)                                                
  35   c  See the next page for tables containing: Mirror States (T=1/2) of      
  35  2c  {+35}Cl and {+35}Ar and Isospin Quadruplet States                      
  35  #c  (T=3/2) in A=35.                                                       
@@ -110,4 +113,4 @@
  35   c  Note: the above two tables are updates of the corresponding tables in  
  35  2c  the evaluation by 1998En04. The levels and J|p values are from Adopted 
  35  3c  Levels in this evaluation for the relevant nuclides.                   
-                                                                                
+
