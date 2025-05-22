@@ -1,7 +1,7 @@
 # Copilot Instructions
 
 ## Important Rules
-- Never modify the first line or bottom line of any file
+- Never modify the first line or bottom line of any .ens file
 - All edits must be made between these boundaries
 - NEVER modify the indentation of the first line or bottom line of any .ens file
 - Always preserve the "PN" line in ENSDF files with its numeric value

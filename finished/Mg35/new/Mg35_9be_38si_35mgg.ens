@@ -4,41 +4,36 @@
  35MG  H TYP=FUL$AUT=BALRAJ SINGH AND JUN CHEN$CIT=ENSDF$CUT=15-DEC-2017$       
  35MG  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35MG2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35MG c  2011Ga15: E=83 MeV/nucleon {+38}Si beam produced by fragmentation of   
- 35MG2c  140 MeV/nucleon {+48}Ca primary beam delivered by the Coupled Cyclotron
- 35MG3c  Facility of the National Superconducting Cyclotron Laboratory (NSCL)   
- 35MG4c  onto a 752 mg/cm{+2} {+9}Be fragmentation target. Isotope of interest  
- 35MG5c  selected in the A1900 fragment separator and detected in the focal     
- 35MG6c  plane of the S800 spectrograph. A 32-fold segmented high-purity        
- 35MG7c  germanium detector array (SeGA) for detecting |g-ray. Measured E|g.    
- 35MG8c  Deduced levels. Compared with shell model calculations.                
- 35MG cG E(A)$Another possible placement for these two transitions is that they 
- 35MG2cG are from different initial levels to the same final level. Note that   
- 35MG3cG 49 keV {I11} energy difference corresponds to the energy spacing of    
- 35MG4cG the 3/2- and 5/2- doublet near the ground state                        
- 35MG cL $In Adopted Levels, all the three transitions are assigned to different
- 35MG2cL levels, feeding the same level at 0+x, which may be the g.s. or a      
- 35MG3cL low-lying excited state                                                
- 35MG cL E$From E|g values. A low-lying excited state below 80 keV could not    
- 35MG2cL have been detected with the threshold setting of the SeGA array.       
- 35MG cL J$From a Monte-Carlo Shell-Model calculations using the SDPF-M         
- 35MG2cL effective interaction, predicting eight excited states below 1.2 MeV.  
- 35MG  L 0           (5/2-)                                                     
- 35MG  L 0+X                                                                    
- 35MG cL E,J$3/2- state at 30 keV predicted by shell model calculations         
- 35MG  L 0+Y                                                                    
- 35MG  L 49+Y      11                                                           
- 35MG  L 446+X     5                                                            
+ 35MG c  2011Ga15: A {+38}Si secondary beam was produced via the projectile     
+ 35MG2c  fragmentation of a 140-MeV/nucleon {+48}Ca primary beam impinging on a 
+ 35MG3c  {+9}Be target and selected by the A1900 separator at NSCL, MSU. The    
+ 35MG4c  secondary target was a 376(4)-mg/cm{+2} {+9}Be target. The reaction    
+ 35MG5c  leading to {+35}Mg from {+38}Si is likely dominated by the two-proton  
+ 35MG6c  knockout into the continuum of {+36}Mg and subsequent neutron emission.
+ 35MG7c  The reaction residues were selected and identified by the S800         
+ 35MG8c  spectrograph using the |DE-ToF method. The |g rays in coincidence with 
+ 35MG9c  reaction residues were detected using a 32-fold segmented high-purity  
+ 35MGAc  germanium detector array (SeGA) at 90|' and 37|'. Measured E|g(>80 keV)
+ 35MGBc  and deduced levels. Results were compared with Monte Carlo shell-model 
+ 35MGCc  calculations using the SDPF-M effective interaction that allows for    
+ 35MGDc  unrestricted mixing of neutron particle-hole configurations across the 
+ 35MGEc  N = 20 gap, and with conventional shell-model calculations with the    
+ 35MGFc  SDPF-U effective interaction that does not include neutron intruder    
+ 35MGGc  configurations in the model space.                                     
+ 35MG cG $No clear |g|g coincidence was observed. Other possible placements:    
+ 35MG2cG 670|g and 621|g both populate the g.s.; 670|g and 621|g both populate  
+ 35MG3cG the 3/2- first excited state at the predicted 30 keV.                  
+ 35MG cL E$From measured E|g.                                                   
+ 35MG cL J$Predicted by the SDPF-M shell model.                                 
+ 35MG  L 0            (5/2-)                                                    
+ 35MG  L 49        11 (3/2-)                                                   ?
+ 35MG cL E$30 keV predicted by the SDPF-M shell model.                          
+ 35MG  L 446       5                                                            
  35MG  G 446       5                                                            
- 35MGF G FL=0+X                                                                 
- 35MG cG E$strong |g transition, could be a transition to the ground state      
- 35MG2cG or the low-lying excited state from any of the predicted excited states
- 35MG3cG at 350 keV with J|p=7/2-; 360 keV with J|p=3/2+, 400 keV with J|p=1/2-,
- 35MG4cG or 560 keV with J|p=7/2-.                                              
- 35MG  L 670+Y     8                                                            
- 35MG  G 621       7                                                        A   
- 35MG cG $In 2017Mo26, a transition of 616 keV {I8}, considered to be the same  
- 35MG2cG as 621 gamma here, is assigned to a separate level                     
- 35MG  G 670       8                                                        A   
- 35MGF G FL=0+Y                                                                 
-                                                                                
+ 35MG cG $A strong |g transition populating the g.s. or the 3/2- first excited  
+ 35MG2cG state.                                                                 
+ 35MG  L 495       12                                                          ?
+ 35MG  G 446       5                                                            
+ 35MG  L 670       8                                                            
+ 35MG  G 621       7                                                            
+ 35MG  G 670       8                                                            
