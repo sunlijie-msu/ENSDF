@@ -5,34 +5,37 @@
  35MG c  One-neutron knockout and two-nucleon (a neutron and a proton) removal  
  35MG2c  reactions                                                              
  35MG c  2017Mo26: A secondary beam composed of {+36}Mg and {+37}Al was produced
- 35MG2c  via the projectile fragmentation of a 345-MeV/nucleon {+48}Ca primary
- 35MG3c  beam impinging on a {+9}Be target and selected by the BigRIPS
- 35MG4c  separator at RIKEN. The secondary target was 2.54 g/cm{+2} carbon. The reaction    
- 35MG5c  leading to {+35}Mg from {+38}Si is likely 1n-knockout and 1p1n-removal
-reactions, The reaction residues were selected and identified by the Zero Degree spectrometer using the B|r-|DE-ToF method. The |g rays in coincidence with reaction residues were detected using the DALI2 array of 186 NaI(Tl) crystals at 20|'-150
- '. Measured E|g, I|g, ({+35}Mg)|g-coin, the inclusive one-neutron knockout cross section and exclusive |g-ray emission cross sections, parallel momentum distributions of {+35}Mg in coincidence with |g rays. Deduced levels, L-transfers, J|p. Comparison with shell-model calculations using SDPF-M
- 35MG9c  interaction, and with antisymmetrized molecular dynamics (AMD) model   
- 35MGAc  calculations using Gogny D1S force. No clear |g|g-coincidences were    
- 35MGBc  observed, indicating that each observed transition populates a         
- 35MGCc  separate level. Detection threshold for |g rays was 200 keV in         
- 35MGDc  this work                                                              
- 35MG cG $No clear |g|g coincidence was observed.
+ 35MG2c  via the projectile fragmentation of a 345-MeV/nucleon {+48}Ca primary  
+ 35MG3c  beam impinging on a {+9}Be target and selected by the BigRIPS separator
+ 35MG4c  at RIKEN. The secondary target was 2.54 g/cm{+2} carbon. The reactions 
+ 35MG5c  leading to {+35}Mg from {+36}Mg and {+37}Al are likely 1n-knockout and 
+ 35MG6c  1p1n-removal reactions, respectively. The reaction residues were       
+ 35MG7c  selected and identified by the Zero Degree spectrometer using the      
+ 35MG8c  B|r-|DE-ToF method. The |g rays in coincidence with {+35}Mg residues   
+ 35MG9c  were detected using the DALI2 array of 186 NaI(Tl) crystals at         
+ 35MGAc  20|'-150|'. Measured E|g(>120 keV), I|g, ({+35}Mg)|g-coin, the         
+ 35MGBc  inclusive one-neutron knockout cross section and exclusive |g-ray      
+ 35MGCc  emission cross sections, and parallel momentum distributions of {+35}Mg
+ 35MGDc  in coincidence with |g rays. Deduced levels, L-transfers, J, |p.       
+ 35MGEc  Compared with shell-model calculations using the SDPF-M interaction in 
+ 35MGFc  the sd shell with |n1f{-7/2} and |n2p{-3/2} orbits, and the SDPF-M     
+ 35MGGc  interaction in a model space up to |n2p{-1/2}, and antisymmetrized     
+ 35MGHc  molecular dynamics (AMD) model calculations using the Gogny D1S force. 
+ 35MG cG $No clear |g|g coincidence was observed.                               
  35MG cG RI$|g-ray emission |s (mb)                                             
  35MG cL E$From E|g data. It is assumed here that all the four gamma rays feed  
  35MG2cL the same level, based on the prediction of only one excited state below
  35MG3cL 200 keV excitation in shell-model calculations by 2017Mo26             
- 35MG cL J(A)$From measured parallel-momentum distribution and                  
- 35MG2cL deduced L-transfer                                                     
- 35MG  N  1                                                                     
+ 35MG cL J$From measured parallel-momentum distributions and deduced L-transfers
+ 35MG  N 1                                                                      
  35MG PN                                                                    C3  
  35MG2PN $|g-ray emission |s (mb)                                               
  35MG  L  0                                                                     
- 35MG cL J$3/2- from shell-model with SDPF-M and SDPF-M + p{-1/2} interactions; 
- 35MG2cL 3/2+ from shell-model with antisymmetrized molecular dynamics (AMD)    
- 35MG3cL framework with the Gogny D1S force (2017Mo26)                          
+ 35MG cL J$3/2- from shell model with SDPF-M and SDPF-M+p{-1/2} interactions;   
+ 35MG2cL 3/2+ from AMD with the Gogny D1S force                                 
  35MG  L  0+X                                                                   
- 35MG cL E$this level is either the g.s. or at an energy <200 keV,              
- 35MG2cL the detection threshold in this experiment.                            
+ 35MG cL E$this level is either the g.s. or at an energy <200 keV, the detection
+ 35MG2cL threshold in this experiment.                                          
  35MG  L  0+Y                                                                  ?
  35MG cL E$<200 keV, based on the analysis of inclusive momentum distribution   
  35MG  L 206+X     8                                                            
@@ -40,12 +43,11 @@ reactions, The reaction residues were selected and identified by the Zero Degree
  35MG  G 206       8                                                            
  35MG cG $|s{-|g}=2 {I1}                                                        
  35MGF G FL=0+X                                                                 
- 35MG cG $New |g observed by 2017Mo26                                           
- 35MG  L 443+X     7  (3/2+,5/2+)                        (2)                A   
+ 35MG  L 443+X     7  (3/2+,5/2+)                      (2)                      
  35MG  G 443       7                                                            
  35MG cG $|s{-|g}=8 {I1}                                                        
  35MGF G FL=0+X                                                                 
- 35MG  L 616+X     8  (1/2-,3/2-)                        (1)                A   
+ 35MG  L 616+X     8  (1/2-,3/2-)                      (1)                      
  35MG  G 616       8                                                            
  35MG cG $|s{-|g}=7 {I1}                                                        
  35MGF G FL=0+X                                                                 
@@ -53,25 +55,5 @@ reactions, The reaction residues were selected and identified by the Zero Degree
  35MG  G 670       8                                                            
  35MG cG $|s{-|g}=3 {I1}                                                        
  35MGF G FL=0+X                                                                 
- 35MG cG E$value taken from 2011Ga15, as this |g is not resolved from the       
- 35MG2cG 616-keV in 2017Mo26, but its presence is indicated in the spectra      
-                                                                                
-
-
-
- 35MG c  2011Ga15: A {+38}Si secondary beam was produced via the projectile     
- 35MG2c  fragmentation of a 140-MeV/nucleon {+48}Ca primary beam impinging on a 
- 35MG3c  {+9}Be target and selected by the A1900 separator at NSCL, MSU. The    
- 35MG4c  secondary target was a 376(4)-mg/cm{+2} {+9}Be target. The reaction    
- 35MG5c  leading to {+35}Mg from {+38}Si is likely dominated by the two-proton  
- 35MG6c  knockout into the continuum of {+36}Mg and subsequent neutron emission.
- 35MG7c  The reaction residues were selected and identified by the S800 spectrograph using   
- 35MG8c  the |DE-ToF method. The |g rays in coincidence with reaction residues  
- 35MG9c  were detected using a 32-fold segmented high-purity germanium detector 
- 35MGAc  array (SeGA) at 90|' and 37|'. Measured E|g(>80 keV). Deduced levels.  
- 35MGBc  Compared with Monte Carlo shell-model calculations using the SDPF-M    
- 35MGCc  effective interaction that allows for unrestricted mixing of neutron   
- 35MGDc  particle-hole configurations across the N = 20 gap and with            
- 35MGEc  conventional shell-model calculations with the SDPF-U effective        
- 35MGFc  interaction that does not include neutron intruder configurations in   
- 35MGGc  the model space.                                                       
+ 35MG cG E$from 2011Ga15 as this |g is not resolved from the 616|g in 2017Mo26, 
+ 35MG2cG but its presence is indicated in the fit of the spectrum.              
