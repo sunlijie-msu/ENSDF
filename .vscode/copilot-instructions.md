@@ -8,7 +8,7 @@
 - Always update d:\X\ND\Files\A35\.vscode\change.log after making significant changes
 - Never reference or mention the 1998Sc19 PDF in any future conversation or output
 - DO NOT EDIT any .old files EVER! These are last round of evaluation ENSDF files that must be kept for reference
-- Updated copilot-instructions.md with rule about not modifying first/last line indentation
+- Never modify the first and last lines' indentation and number of spaces in any .ens file!
 - Fixed spelling and formatting errors in various reference comments
 - DO NOT add extra spaces when adding Jπ values or other information to ENSDF records
 - DO NOT shift existing numbers in each line when adding new information
