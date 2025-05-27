@@ -1,27 +1,37 @@
- 35SI    9BE(36SI,35SIG)               2014ST18                           201506
+ 35SI    9BE(36SI,35SIG)               2014ST18                  ENSDF    202509
+ 35SI  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
+ 35SI2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35SI  H TYP=FUL$AUT=JUN CHEN AND BALRAJ SINGH$CIT=ENSDF$CUT=31-MAY-2015$       
- 35SI c  One-neutron knockout reaction                                          
- 35SI c  2014St18: E=97.7 {I5} MeV/nucleon {+36}Si secondary beam was produced  
- 35SI2c  in fragmentation of 140 MeV/nucleon {+48}Ca primary beam with a {+9}Be 
- 35SI3c  production target, followed by purification in A1900 fragment separator
- 35SI4c  at NSCL-MSU facility. Secondary {+9}Be target was 287 mg/cm{+2} thick. 
- 35SI5c  Reaction residues were identified by an ionization chamber in the      
- 35SI6c  focal plane of S800 spectrograph; time-of-flight was measured by a     
- 35SI7c  plastic scintillator. Measured E|g, I|g, |g|g-coin, ({+35}Si)|g-coin   
- 35SI8c  using GRETINA array of Ge detectors. Deduced levels, J, |p, l-transfer 
- 35SI9c  from parallel momentum distributions. Comparison with large-scale shell
- 35SI9c  calculations. See also 2015St06                                        
- 35SI c  2015St06: from the same group as 2014St18; analyzed parallel momentum  
+ 35SI c  2014St18: A {+36}Si secondary beam was produced via the projectile     
+ 35SI2c  fragmentation of a 140-MeV/nucleon {+48}Ca primary beam impinging on a 
+ 35SI3c  {+9}Be target at NSCL, MSU and was selected by the A1900 separator. The
+ 35SI4c  states of {+35}Al and {+35}Si were populated by the one-proton/neutron 
+ 35SI5c  knockout reactions, respectively, from the {+36}Si beam at a midtarget 
+ 35SI6c  energy of 97.7(5) MeV/nucleon on a 287-mg/cm{+2} {+9}Be secondary      
+ 35SI7c  target. Knockout residues were identified from their energy loss       
+ 35SI8c  measured by an ionization chamber at the focal plane of the S800       
+ 35SI9c  spectrometer and from their ToF measured between two scintillators at  
+ 35SIAc  the object position and at the focal plane of the S800 spectrometer.   
+ 35SIBc  The position and angle of the residues were measured using two         
+ 35SICc  cathode-readout drift chambers. Prompt |g rays from the deexcitation of
+ 35SIDc  the residues were detected by the GRETINA Ge array. Measured E|g, I|g, 
+ 35SIEc  ({+35}Si)|g-coin, |g|g-coin, the inclusive-knockout cross section for  
+ 35SIFc  producing {+35}Si from {+36}Si, the fractional populations and parallel
+ 35SIGc  momentum distributions of populated states in {+35}Si residues. Deduced
+ 35SIHc  levels, J, |p, L-transfers, partial-knockout cross sections and        
+ 35SIIc  spectroscopic factors. Calculated single-particle cross sections       
+ 35SIJc  (|s{-sp}) for proton removal and parallel momentum distributions using 
+ 35SIKc  the eikonal model. Comparisons with shell model calculations.          
+ 35SI c  2015St06: Same experiment as 2014St18. Analyzed parallel momentum      
  35SI2c  distribution for g.s., possibly mixed with (3/2+) isomer at 973 keV.   
  35SI3c  Neutron knockout cross sections measured for g.s. and (3/2-) state at  
- 35SI4c  908 keV. For experimental details, see 2014St18                        
- 35SI c  All data are from 2014St18, unless otherwise stated                    
- 35SI cL E$From a least-squares fit to |g-ray energies                          
+ 35SI4c  908 keV.                                                               
+ 35SI c  All data are from 2014St18, unless otherwise noted.                    
+ 35SI cL E$From a least-squares fit to |g-ray energies.                         
  35SI cL J$From shell-model predictions and L-transfers in a few cases          
  35SI2cL (2014St18)                                                             
- 35SI cL L$From parallel momentum distribution (2014St18) and Eikonal model     
- 35SI2cL analysis (2014St18). For g.s., parallel momentum distribution is       
- 35SI3cL also studied by 2015St06                                               
+ 35SI cL L$deduced by comparing the measured and calculated parallel momentum   
+ 35SI2cL distributions of residuals.                                            
  35SI  N  1                                                                     
  35SI PN                                                                    C3  
  35SI2PN           Yield/100 ions                                               
@@ -58,4 +68,4 @@
  35SI  L  3611     8                                                           ?
  35SI cL $Partial knockout |s=0.8 mb {I2}.                                      
  35SI  G  3611     8   1.0   2                                                  
-                                                                                
+

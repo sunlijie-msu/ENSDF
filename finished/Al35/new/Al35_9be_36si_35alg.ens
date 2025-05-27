@@ -2,20 +2,31 @@
  35AL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
  35AL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35AL  H TYP=FUL$AUT=BALRAJ SINGH AND JUN CHEN$CIT=ENSDF$CUT=15-DEC-2017$       
- 35AL c  One-proton knockout reaction                                           
- 35AL c  2014St18: {+36}Si secondary beam at 97.7 {I5} MeV/nucleon was produced 
- 35AL2c  in fragmentation of 140 MeV/nucleon {+48}Ca primary beam with a {+9}Be 
- 35AL3c  production target, followed by purification in A1900 fragment separator
- 35AL4c  at NSCL-MSU facility. Secondary {+9}Be target was 287 mg/cm{+2} thick. 
- 35AL5c  Reaction residues were identified by an ionization chamber in the      
- 35AL6c  focal plane of S800 spectrograph; time-of-flight was measured by a     
- 35AL7c  plastic scintillator. Measured E|g, I|g, |g|g-coin, ({+35}Al)|g-coin   
- 35AL8c  using GRETINA array of Ge detectors. Deduced levels, J|p, L-transfer   
- 35AL9c  from parallel momentum distributions. Comparison with large-scale shell
- 35AL9c  calculations                                                           
- 35AL cL E$From least-squares fit to E|g data                                   
- 35AL cL L$From parallel momentum distribution (2014St18) and Eikonal model     
- 35AL2cL analysis                                                               
+ 35AL c  One-proton knockout reaction from J|p=0+ {+36}Si ground state.         
+ 35AL c  2014St18: A {+36}Si secondary beam was produced via the projectile     
+ 35AL2c  fragmentation of a 140-MeV/nucleon {+48}Ca primary beam impinging on a 
+ 35AL3c  {+9}Be target at NSCL, MSU and was selected by the A1900 separator. The
+ 35AL4c  states of {+35}Al and {+35}Si were populated by the one-proton/neutron 
+ 35AL5c  knockout reactions, respectively, from the {+36}Si beam at a midtarget 
+ 35AL6c  energy of 97.7(5) MeV/nucleon on a 287-mg/cm{+2} {+9}Be secondary      
+ 35AL7c  target. Knockout residues were identified from their energy loss       
+ 35AL8c  measured by an ionization chamber at the focal plane of the S800       
+ 35AL9c  spectrometer and from their ToF measured between two scintillators at  
+ 35ALAc  the object position and at the focal plane of the S800 spectrometer.   
+ 35ALBc  The position and angle of the residues were measured using two         
+ 35ALCc  cathode-readout drift chambers. Prompt |g rays from the deexcitation of
+ 35ALDc  the residues were detected by the GRETINA Ge array. Measured E|g, I|g, 
+ 35ALEc  ({+35}Al)|g-coin, |g|g-coin, the inclusive-knockout cross section for  
+ 35ALFc  producing {+35}Al from {+36}Si, the fractional populations and parallel
+ 35ALGc  momentum distributions of populated states in {+35}Al residues. Deduced
+ 35ALHc  levels, J, |p, L-transfers, partial-knockout cross sections and        
+ 35ALIc  spectroscopic factors. Calculated single-particle cross sections       
+ 35ALJc  (|s{-sp}) for proton removal and parallel momentum distributions using 
+ 35ALKc  the eikonal model. Comparisons with shell model calculations.          
+ 35AL cL S$Spectroscopic factor C{+2}S=|s{-exp}/|s{-sp}.                        
+ 35AL cL E$From a least-squares fit to |g-ray energies.                         
+ 35AL cL L$deduced by comparing the measured and calculated parallel momentum   
+ 35AL2cL distributions of residuals.                                            
  35AL  N  1                                                                     
  35AL PN                                                                    C3  
  35AL2PN $Yield/100 ions                                                        
@@ -51,4 +62,4 @@
  35AL  L  4275     9                                       2                   ?
  35AL cL $Partial knockout |s=0.5 mb {I1}.                                      
  35AL  G  4275     9   3     1                                                  
-                                                                                
+
