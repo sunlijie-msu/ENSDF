@@ -1,0 +1,158 @@
+Program for consistency check: output for original lines grouped by level and gamma energies (version 05/16/2025)
+Generated at: Wed 05/28/2025 at 02:45:32 PM EDT
+
+
+Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
+         available data in the corresponding dataset, including decay data (logft or HF), L-transfer, and decaying
+         and feeding gammas of each level, and so on.
+      2. possible JPI presented at the end of each adopted record line is deduced by combining data from all
+         individual datasets (data from the record lines only and might be incomplete since arguments only presented
+         in comments haven't been considered, like shell-model calculations, analyzing power, atomic method for g.s.
+         spin, and other qualitative arguments).
+
+*** All possible JPI values are for reference purpose only and should not be taken as the final adopted assignments ***
+
+
+########################################################################################################################
+        new XREFs                        old XREFs
+ 35MG  XA35NA B- DECAY (2.1 MS)        A-A 35NA B- DECAY (1.8 MS)
+ 35MG  XB9BE(38SI,35MGG)               B-B 9BE(38SI,35MGG)
+ 35MG  XCC(36MG,35MGG),(37AL,35MGG)    C-C C(36MG,35MGG),(37AL,35MGG)
+################################## new tag show first below ############################################################
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35MG  L 0            (3/2-,5/2-)      11.3 MS   6                               ---
+                     *new XREF new tags    35MGX L XREF=BC
+                     *new XREF old tags    35MGX L XREF=BC
+                     #old XREF in Adopted  35MGX L XREF=BC
+               9BE(38SI,35MGG)--->B  B     35MG  L 0            (5/2-)                                                    
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG  L 0                                                                      
+               9BE(38SI,35MGG)--->B  B     35MG cL J$From shell-model calculations with the SDPF-M interaction.           
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG cL J$3/2- from shell-model calculations with the SDPF-M and               
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG2cL SDPF-M+2p{-1/2} interactions; 3/2+ from AMD with the Gogny D1S force   
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG3cL (2017Mo26).                                                            
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35MG  L 0+X                                                                     ---
+                     *new XREF new tags    35MGX L XREF=BC
+                     *new XREF old tags    35MGX L XREF=BC
+                     #old XREF in Adopted  35MGX L XREF=BC
+               9BE(38SI,35MGG)--->B  B     35MG  L 0+X                                                                    
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG  L 0+X                                                                    
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG cL E$<200 keV; the detection threshold in 2017Mo26. 1/2- at 141 keV from  
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG2cL shell-model calculations with the SDPF-M+2p{-1/2} interaction.         
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35MG  L 0+Y                                                                   ? ---
+                     *new XREF new tags    35MGX L XREF=C(?)
+                     *new XREF old tags    35MGX L XREF=C(?)
+                     #old XREF in Adopted  35MGX L XREF=C
+    C(36MG,35MGG),(37AL,35MGG)--->C  C(?)  35MG  L 0+Y          (5/2-,7/2-)                                              ?
+    C(36MG,35MGG),(37AL,35MGG)--->C  C(?)  35MG cL E$<200 keV; the detection threshold. 2017Mo26 suggested a low-lying L=3
+    C(36MG,35MGG),(37AL,35MGG)--->C  C(?)  35MG2cL level from the observed 42(1)% L=3 component in the inclusive parallel 
+    C(36MG,35MGG),(37AL,35MGG)--->C  C(?)  35MG3cL momentum distribution.                                                 
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35MG  L 0+Z                                                                    
+                     *new XREF new tags    35MGX L XREF=B
+                     *new XREF old tags    35MGX L XREF=B
+               9BE(38SI,35MGG)--->B  B     35MG  L 0+Z                                                                    
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35MG  L 206+X     8                                                             ---
+                     *new XREF new tags    35MGX L XREF=C
+                     *new XREF old tags    35MGX L XREF=C
+                     #old XREF in Adopted  35MGX L XREF=C
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG  L 206+X     8                                                            
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG cL J$|g-ray intensity is too low to be assigned to the 1/2- level at 141  
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG2cL keV from shell-model calculations with the SDPF-M+2p{-1/2} interaction 
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG3cL (2017Mo26).                                                            
+ GAMMA------------------------------------ 35MG  G 206       8   100                                                       --- EG=206        FL=0+x        JF=
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG  G 206       8                                                             *** EG=206        FL=0+x        JF=
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MGF G FL=0+X                                                                 
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG cG $|s{-|g}=2 {I1}.
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35MG  L 443+X     7  (3/2+,5/2+)                      (2)                      
+                     *new XREF new tags    35MGX L XREF=C
+                     *new XREF old tags    35MGX L XREF=C
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG  L 443+X     7  (3/2+,5/2+)                      (2)                      
+ GAMMA------------------------------------ 35MG  G 443       7                                                            
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG  G 443       7                                                             *** EG=443        FL=0+x        JF=
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MGF G FL=0+X                                                                 
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG cG $|s{-|g}=8 {I1}. 2017Mo26 assigned this |g to the 3/2+ at 788 keV ->   
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG2cG 3/2- g.s. transition based on shell-model calculations with the        
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG3cG SDPF-M+2p{-1/2} interaction (2017Mo26).                                
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35MG  L 445+X     5  (3/2+,5/2+)                                           A    ---
+                     *new XREF new tags    35MGX L XREF=B
+                     *new XREF old tags    35MGX L XREF=B
+                     #old XREF in Adopted  35MGX L XREF=BC
+               9BE(38SI,35MGG)--->B  B     35MG  L 446+X     5                                                            
+ GAMMA------------------------------------ 35MG  G 445       5   100                                                       --- EG=445        FL=0+x        JF=
+               9BE(38SI,35MGG)--->B  B     35MG  G 446       5                                                             *** EG=446        FL=0+x        JF=
+               9BE(38SI,35MGG)--->B  B     35MGF G FL=0+X                                                                 
+               9BE(38SI,35MGG)--->B  B     35MG cG E$strong |g transition observed in 2011Ga15; could correspond to a     
+               9BE(38SI,35MGG)--->B  B     35MG2cG transition to the g.s. or the shell-model predicted low-lying excited  
+               9BE(38SI,35MGG)--->B  B     35MG3cG state from any of the shell-model predicted levels at 350 keV with     
+               9BE(38SI,35MGG)--->B  B     35MG4cG J|p=7/2-; 360 keV with J|p=3/2+, 400 keV with J|p=1/2-, or 560 keV with
+               9BE(38SI,35MGG)--->B  B     35MG5cG J|p=7/2-.                                                              
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35MG  L 616+X     8  (1/2-,3/2-)                      (1)                      
+                     *new XREF new tags    35MGX L XREF=C
+                     *new XREF old tags    35MGX L XREF=C
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG  L 616+X     8  (1/2-,3/2-)                      (1)                      
+ GAMMA------------------------------------ 35MG  G 616       8                                                            
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG  G 616       8                                                             *** EG=616        FL=0+x        JF=
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MGF G FL=0+X                                                                 
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG cG $|s{-|g}=7 {I1}. 2017Mo26 assigned this |g to the 3/2- at 664 keV ->   
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG2cG 1/2- at 141 keV transition based on shell-model calculations with the  
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG3cG SDPF-M+2p{-1/2} interaction (2017Mo26).                                
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35MG  L 619+X     7  (1/2-,3/2-)                                           A    ---
+ GAMMA------------------------------------ 35MG  G 619       7  100                                                        --- EG=619        FL=0+x        JF=
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35MG  L 670+X     8                                                             ---
+                     *new XREF new tags    35MGX L XREF=B(621+z)C
+                     *new XREF old tags    35MGX L XREF=B(621+z)C
+                     #old XREF in Adopted  35MGX L XREF=BC
+               9BE(38SI,35MGG)--->B  B     35MG  L 621+Z     7                                                            
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG  L 670+X     8                                                            
+ GAMMA------------------------------------ 35MG  G 621       7                                                            
+               9BE(38SI,35MGG)--->B  B     35MG  G 621       7                                                             *** EG=621        FL=0+z        JF=
+               9BE(38SI,35MGG)--->B  B     35MGF G FL=0+Z                                                                 
+ GAMMA------------------------------------ 35MG  G 670       8  100                                                        --- EG=670        FL=0+x        JF=
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG  G 670       8                                                             *** EG=670        FL=0+x        JF=
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MGF G FL=0+X                                                                 
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG cG $|s{-|g}=3 {I1}.
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG cG E$From 2011Ga15, as this |g is not resolved from the 616|g in 2017Mo26,
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG2cG but its presence is indicated in the fit of the spectrum. 2017Mo26     
+    C(36MG,35MGG),(37AL,35MGG)--->C  C     35MG3cG stated that the origin of the 670|g remained vague.                    
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35MG  L 670+Z     8                                                            
+                     *new XREF new tags    35MGX L XREF=B
+                     *new XREF old tags    35MGX L XREF=B
+               9BE(38SI,35MGG)--->B  B     35MG  L 670+Z     8                                                            
+ GAMMA------------------------------------ 35MG  G 670       8                                                            
+               9BE(38SI,35MGG)--->B  B     35MG  G 670       8                                                             *** EG=670        FL=0+z        JF=
+               9BE(38SI,35MGG)--->B  B     35MGF G FL=0+Z                                                                 
+
+
+Statistics of levels and gammas from all datasets of 35MG:
+                             DSID     #of levels       #of gammas       level range
+           ADOPTED LEVELS, GAMMAS        7                4             0          to      670+x
+           35NA B- DECAY (2.1 MS)        0                1             
+                  9BE(38SI,35MGG)        6                3             0          to      670+z
+       C(36MG,35MGG),(37AL,35MGG)        7                4             0          to      670+x
+
+                         IN TOTAL        20               12            0
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Statistics of all datasets from input ENSDF files:
+                Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
+                               Levels       Gammas     L Records    G Records                      (non-Adopted)
+                   35MG        7            4            20           12             300              3
+
+               IN TOTAL        7            4            20           12             300              3
+
+Number of nuclides     : 1
+Number of blocks       : 4
+Number of references   : 48
+Number of lines in files: 304
+(from all blocks including abstract, comment, reference)

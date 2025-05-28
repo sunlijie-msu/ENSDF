@@ -1,0 +1,33 @@
+Program for consistency check: output for Error and Warnings (version 05/16/2025)
+Generated at: Wed 05/28/2025 at 02:45:32 PM EDT
+
+################################################################################
+In Adopted dataset of 35MG
+
+ 35MG  XA35NA B- DECAY (1.8 MS)
+         *                                                                        <E> DSID in XREF list does not match DSID in the dataset:
+                                                                                          35NA B- DECAY (2.1 MS)
+
+################################################################################
+In dataset of 35MG: XB 9BE(38SI,35MGG)     XREF Tag=B
+
+ 35MG  L 621+Z     7                                                            
+ 35MG  G 621       7                                                            
+         *                                                                        <W> This gamma is missing in Adopted Gammas at level=670+x
+         *                                                                        <W> Similar gammas placed differently in Adopted:
+                                                                                        619(7)         from level=619+x       JPI=(1/2-,3/2-)         
+
+################################################################################
+In dataset of 35MG: XC C(36MG,35MGG),(37AL,35MGG)     XREF Tag=C
+
+ 35MG  L 443+X     7  (3/2+,5/2+)                      (2)                      
+ 35MG  G 443       7                                                            
+         *                                                                        <W> Similar gammas placed differently in Adopted:
+                                                                                        445(5)         from level=445+x       JPI=(3/2+,5/2+)         
+ 35MG  L 616+X     8  (1/2-,3/2-)                      (1)                      
+ 35MG  G 616       8                                                            
+         *                                                                        <W> Similar gammas placed differently in Adopted:
+                                                                                        619(7)         from level=619+x       JPI=(1/2-,3/2-)         
+
+
+End of report
