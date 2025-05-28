@@ -1,5 +1,5 @@
 Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 05/16/2025)
-Generated at: Wed 05/28/2025 at 02:46:31 PM EDT                                 
+Generated at: Wed 05/28/2025 at 03:27:23 PM EDT                                 
                                                                                 
  35MG    ADOPTED LEVELS, GAMMAS                                  ENSDF    202509
  35MG  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
@@ -39,10 +39,10 @@ Generated at: Wed 05/28/2025 at 02:46:31 PM EDT
  35MG3c  rays.                                                                  
  35MG c  Mass measurements: 2025Ly01, 2007Ju03, 2001Sa72, 2000Sa21, 1991Or01    
  35MG c  Theoretical calculations (binding energies, deformation, quadrupole    
- 35MG2c  moments, radii, levels, J, |p, mass, T{-1/2}, etc): 2021Ka07, 2020Mi15,
- 35MG3c  2016Ba59, 2016Sa46, 2016Sh05, 2015Sh21, 2014Ga13, 2014Wa14, 2013Ch31,  
- 35MG4c  2013Li39, 2013Sh05, 2012Fo27, 2012Ho19, 2007Ha53, 2006Zh19, 2005Ch71,  
- 35MG5c  2004Kh16, 1996Re10, 1991Pa19, 1991Pa21.                                
+ 35MG2c  moments, radii, levels, J, |p, mass, T{-1/2}, etc): 2023Ra22, 2021Ka07,
+ 35MG3c  2020Mi15, 2016Ba59, 2016Sa46, 2016Sh05, 2015Sh21, 2014Ga13, 2014Wa14,  
+ 35MG4c  2013Ch31, 2013Li39, 2013Sh05, 2012Fo27, 2012Ho19, 2007Ha53, 2006Zh19,  
+ 35MG5c  2005Ch71, 2004Kh16, 1996Re10, 1991Pa19, 1991Pa21.                      
  35MG cL E$From E|g data.                                                       
  35MG cL J(A)$From measured parallel-momentum distribution and deduced          
  35MG2cL L-transfer (2017Mo26)                                                  
@@ -57,15 +57,14 @@ Generated at: Wed 05/28/2025 at 02:46:31 PM EDT
  35MG2cL 52 {I11} (1999YoZW, preliminary).                                      
  35MG cL $Theoretical %|b{+-}0n=29, %|b{+-}1n=66, %|b{+-}2n=5 (2021Mi17).       
  35MG cL $Theoretical %|b{+-}0n=65, %|b{+-}1n=32, %|b{+-}2n=3 (2019Mo01).       
- 35MG cL J$3/2- proposed by 2017Mo26 from shell-Model calculations with the     
- 35MG2cL SDPF-M interaction, and the SDPF-M interaction including the p{-1/2}   
- 35MG3cL orbit; a closely spaced 3/2- and 5/2- doublet predicted by 2011Ga15    
- 35MG4cL with 5/2- g.s. from Monte-Carlo shell-model calculations using the     
- 35MG5cL SDPF-M effective interaction, and 3/2- g.s. for shell-model            
- 35MG6cL calculations using the SDPF-U interaction. 2017Mo26 also predict 3/2+  
- 35MG7cL from shell-model calculations in the antisymmetrized molecular dynamics
- 35MG8cL (AMD) framework with the Gogny D1S force. Others: 7/2- from systematics
- 35MG9cL (2017Au03), 3/2- from theory (1997Mo25).                               
+ 35MG cL J$3/2- from shell-model calculations with the SDPF-M and               
+ 35MG2cL SDPF-M+2p{-1/2} interactions (2017Mo26). Near degenerate 30-keV 3/2-   
+ 35MG3cL and 5/2- g.s. from Monte Carlo shell-model calculations with the SDPF-M
+ 35MG4cL interaction (2011Ga15), and 3/2- g.s. from shell-model calculations    
+ 35MG5cL with the SDPF-U interaction (2011Ga15). 3/2- from projection of the    
+ 35MG6cL odd-neutron angular momentum along the symmetry axis and parity of the 
+ 35MG7cL wave function (2019Mo01). Others: 3/2+ from antisymmetrized molecular  
+ 35MG8cL dynamics (AMD) calculations with the Gogny D1S force (2017Mo26).       
  35MG cL T$11.3 ms {I5} (stat) {I4} (syst) (2013StZY, implant-|b correlation).  
  35MG2cL Other: 72 ms {I43} (2008ReZZ,1995ReZZ) and 14 ms {I3} (Ref.[Kun12] in  
  35MG3cL 2013StZY, preliminary). Other: |?9 ms (1999YoZW, implant-|b            
@@ -84,8 +83,6 @@ Generated at: Wed 05/28/2025 at 02:46:31 PM EDT
  35MGX L XREF=C(0+y?)                                                           
  35MG cL E$2017Mo26 suggest a level at an energy of <200 keV from analysis of   
  35MG2cL measured parallel momentum distributions.                              
- 35MG  L 0+Z                                                                    
- 35MGX L XREF=B                                                                 
  35MG  L 206+X     8                                                            
  35MGX L XREF=C                                                                 
  35MG cL J$not 1/2- from shell-model calculations (2017Mo26).                   
@@ -104,13 +101,14 @@ Generated at: Wed 05/28/2025 at 02:46:31 PM EDT
  35MGX L XREF=C                                                                 
  35MG  G 616       8                                                            
  35MG  L 670+X     8                                                            
- 35MGX L XREF=B(621+z)C                                                         
- 35MG  G 621       7                                                            
- 35MG  G 670       8                                                            
+ 35MGX L XREF=B(621+x)C                                                         
+ 35MG  G 646       25                                                           
  35MGF G FL=0+X                                                                 
+ 35MG cG E$unweighted average of 621 {I7} from ({+38}Si,{+35}Mg|g) and 670 {I8} 
+ 35MG2cG from ({+36}Mg,{+35}Mg|g)                                               
  35MG cG E$From 2011Ga15 as this |g is not resolved from the 616|g in 2017Mo26, 
  35MG2cG but its presence is indicated in the fit of the spectrum.              
- 35MG  L 670+Z     8                                                            
+ 35MG  L 670+X     8                                                            
  35MGX L XREF=B                                                                 
  35MG  G 670       8                                                            
                                                                                 

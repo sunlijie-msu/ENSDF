@@ -1,5 +1,5 @@
 Program for consistency check: output for gammas ordered by gamma energies (version 05/16/2025)
-Generated at: Wed 05/28/2025 at 02:45:32 PM EDT
+Generated at: Wed 05/28/2025 at 03:27:13 PM EDT
 
 
 
@@ -22,14 +22,13 @@ Generated at: Wed 05/28/2025 at 02:45:32 PM EDT
  619        7    100                                                         619+x                  0+x                     ADOPTED LEVELS, GAMMAS
                                                                                         (1/2-,3/2-)                          
 
- 621        7                                                                621+z                  0+z                     9BE(38SI,35MGG)
-
  661                                                                         UNPLACED                                       35NA B- DECAY (2.1 MS)
 
  670        8    100                                                         670+x                  0+x                     ADOPTED LEVELS, GAMMAS
+ 621        7                                                                621+x                  0+x                     9BE(38SI,35MGG)
  670        8                                                                670+x                  0+x                     C(36MG,35MGG),(37AL,35MGG)
 
- 670        8                                                                670+z                  0+z                     9BE(38SI,35MGG)
+ 670        8                                                                670+x                  0+x                     9BE(38SI,35MGG)
 
 
 
@@ -37,10 +36,10 @@ Statistics of levels and gammas from all datasets of 35MG:
                              DSID     #of levels       #of gammas       level range
            ADOPTED LEVELS, GAMMAS        7                4             0          to      670+x
            35NA B- DECAY (2.1 MS)        0                1             
-                  9BE(38SI,35MGG)        6                3             0          to      670+z
+                  9BE(38SI,35MGG)        5                3             0          to      670+x
        C(36MG,35MGG),(37AL,35MGG)        7                4             0          to      670+x
 
-                         IN TOTAL        20               12            0
+                         IN TOTAL        19               12            0
 
 
 
@@ -48,12 +47,12 @@ Statistics of levels and gammas from all datasets of 35MG:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                   35MG        7            4            20           12             300              3
+                   35MG        7            4            19           12             298              3
 
-               IN TOTAL        7            4            20           12             300              3
+               IN TOTAL        7            4            19           12             298              3
 
 Number of nuclides     : 1
 Number of blocks       : 4
-Number of references   : 48
-Number of lines in files: 304
+Number of references   : 47
+Number of lines in files: 302
 (from all blocks including abstract, comment, reference)
