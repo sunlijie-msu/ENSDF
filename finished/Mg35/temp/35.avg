@@ -1,33 +1,36 @@
 Program for consistency check: output for averaging results for gamma energies and intensities (version 05/16/2025)
-Generated at: Wed 05/28/2025 at 03:27:13 PM EDT
+Generated at: Wed 05/28/2025 at 04:01:31 PM EDT
 
 **************** Level=670+x     Gamma=670 in 35MG     *******************ID#=1-9-1
 
 ------ average E------
 Data points of E record
-*               9BE(38SI,35MGG)   621(7)              weight=56.64%
-*    C(36MG,35MGG),(37AL,35MGG)   670(8)              weight=43.36%
+*               9BE(38SI,35MGG)   670(8)              weight=50.00%
+*    C(36MG,35MGG),(37AL,35MGG)   670(8)              weight=50.00%
 
 Averaging results:
-           weighted average:      642.3(53)            (internal)
-                                  642(24)              (external)
-                                  chi**2/(n-1)=21.248     [critical=4.605]
-         unweighted average:      646(25)             
-           (of all values)        chi**2/(n-1)=1200.500     [critical=4.605]
+           weighted average:      670.0(57)            (internal)
+                                  670.0(0)             (external)
+                                  chi**2/(n-1)=0.000     [critical=4.605]
+         unweighted average:      670.0(0)            
+           (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
 
-   suggested adopted result:      646(25)             
-    (Unweighted-Average)
+   suggested adopted result:      670(8)              
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35MG cG E$weighted average of 621 {I7} from ({+38}Si,{+35}Mg|g) and 670 {I8}   
+ 35MG cG E$weighted average of 670 {I8} from ({+38}Si,{+35}Mg|g) and 670 {I8}   
  35MG2cG from ({+36}Mg,{+35}Mg|g)                                               
 
 ### unweighted average comment (all values):
- 35MG cG E$unweighted average of 621 {I7} from ({+38}Si,{+35}Mg|g) and 670 {I8} 
+ 35MG cG E$unweighted average of 670 {I8} from ({+38}Si,{+35}Mg|g) and 670 {I8} 
  35MG2cG from ({+36}Mg,{+35}Mg|g)                                               
+
+### Non-average comment:
+ 35MG cG E$from ({+38}Si,{+35}Mg|g). Other: 670 {I8} from ({+36}Mg,{+35}Mg|g)   
 
 

@@ -1,5 +1,5 @@
 Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 05/16/2025)
-Generated at: Wed 05/28/2025 at 03:27:23 PM EDT                                 
+Generated at: Wed 05/28/2025 at 04:04:41 PM EDT                                 
                                                                                 
  35MG    ADOPTED LEVELS, GAMMAS                                  ENSDF    202509
  35MG  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
@@ -74,21 +74,24 @@ Generated at: Wed 05/28/2025 at 03:27:23 PM EDT
  35MG  L 0+X                                                                    
  35MGX L XREF=BC                                                                
  35MG cL E$from ({+36}Mg,{+35}Mg|g)                                             
- 35MG cL E$this level is either the g.s. or at an energy <200 keV, the detection
- 35MG2cL threshold in the experiment by 2017Mo26. It could also be a 30-keV     
- 35MG3cL state, 3/2- predicted in shell-model calculations by 2011Ga15.         
- 35MG4cL Shell-model calculations by 2017Mo26 predict either a 5/2- level or a  
- 35MG5cL 1/2- level below 200 keV excitation, depending on the interaction used.
+ 35MG cL E$x|<80 keV (2011Ga15 detection threshold); x|<200 keV (2017Mo26       
+ 35MG2cL detection threshold). Monte Carlo shell-model calculations with the    
+ 35MG3cL SDPF-M interaction predicts a 3/2- level at 30 keV (2011Ga15).         
+ 35MG4cL Shell-model calculations with the SDPF-M interaction predicts a 5/2-   
+ 35MG5cL level at 84 keV (2017Mo26). Shell-model calculations with the          
+ 35MG6cL SDPF-M+2p{-1/2} interaction predicts a 1/2- level at 141 keV.          
  35MG  L 0+Y                                                                   ?
  35MGX L XREF=C(0+y?)                                                           
- 35MG cL E$2017Mo26 suggest a level at an energy of <200 keV from analysis of   
- 35MG2cL measured parallel momentum distributions.                              
+ 35MG cL E$y|<200 keV (2017Mo26 detection threshold). 2017Mo26 suggested a      
+ 35MG2cL low-lying L=3 level from the observed L=3 component in the inclusive   
+ 35MG3cL parallel momentum distribution.                                        
  35MG  L 206+X     8                                                            
  35MGX L XREF=C                                                                 
- 35MG cL J$not 1/2- from shell-model calculations (2017Mo26).                   
+ 35MG cL J$2017Mo26 stated that based on the observed weak |g-ray intensity,    
+ 35MG2cL this level is not the 1/2- level at 141 keV predicted by shell-model   
+ 35MG3cL calculations with the SDPF-M+2p{-1/2} interaction.                     
  35MG  G 206       8                                                            
  35MGF G FL=0+X                                                                 
- 35MG cG $New |g observed by 2017Mo26.                                          
  35MG  L 443+X     7  (3/2+,5/2+)                                               
  35MGX L XREF=C                                                                 
  35MG  G 443       7                                                            
@@ -100,15 +103,17 @@ Generated at: Wed 05/28/2025 at 03:27:23 PM EDT
  35MG  L 616+X     8  (1/2-,3/2-)                                               
  35MGX L XREF=C                                                                 
  35MG  G 616       8                                                            
- 35MG  L 670+X     8                                                            
- 35MGX L XREF=B(621+x)C                                                         
- 35MG  G 646       25                                                           
- 35MGF G FL=0+X                                                                 
- 35MG cG E$unweighted average of 621 {I7} from ({+38}Si,{+35}Mg|g) and 670 {I8} 
- 35MG2cG from ({+36}Mg,{+35}Mg|g)                                               
- 35MG cG E$From 2011Ga15 as this |g is not resolved from the 616|g in 2017Mo26, 
- 35MG2cG but its presence is indicated in the fit of the spectrum.              
- 35MG  L 670+X     8                                                            
+ 35MG  L 619+X     7  (1/2-,3/2-)                                           A   
  35MGX L XREF=B                                                                 
+ 35MG  G 621       7                                                            
+ 35MGF G FL=0+X                                                                 
+ 35MG cG E$weighted average of 616 {I8} (2017Mo26) and 621 {I7} (2011Ga15).     
+ 35MG  L 670+X     8                                                            
+ 35MGX L XREF=BC                                                                
  35MG  G 670       8                                                            
+ 35MGF G FL=0+X                                                                 
+ 35MG cG E$from ({+38}Si,{+35}Mg|g). Other: 670 {I8} from ({+36}Mg,{+35}Mg|g)   
+ 35MG cG E$From 2011Ga15, as this |g is not resolved from the 616|g in 2017Mo26,
+ 35MG2cG but its presence is indicated in the fit of the spectrum. 2017Mo26     
+ 35MG3cG stated that the origin of the 670|g remained vague.                    
                                                                                 
