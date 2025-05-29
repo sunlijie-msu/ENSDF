@@ -22,6 +22,19 @@
   - Jπ (1/2+,3/2+) starts precisely at column 23
 - Never add additional spaces that would shift uncertainty values
 
+## Relative Intensity (RI) Placement in G-Records
+- RI values in G-records should always start from column 24.
+- The RI value itself should be left-justified within a 7-character field.
+- RI uncertainty should occupy the next two columns (columns 31-32).
+- Example: `35AL  G 1473      5  1.1    2`
+  - NUCID (`35AL`) in columns 1-5
+  - Record type (`G`) in column 9
+  - E (Energy - `1473`) in columns 11-18 (padded with spaces if needed, uncertainty `5` in cols 17-18)
+  - Space in column 23
+  - RI (`1.1` left-justified in 7 chars) in columns 24-30
+  - DRI (RI uncertainty - `2`) in columns 31-32
+  - Other fields (MR, CC, etc.) follow from column 33.
+
 ## Grammar and Spelling Fixes
 - Common typos to watch for and fix:
   - "stoped" → "stopped"
