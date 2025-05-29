@@ -2,6 +2,8 @@
  35SI  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
  35SI2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35SI  H TYP=FUL$AUT=JUN CHEN AND BALRAJ SINGH$CIT=ENSDF$CUT=31-MAY-2015$       
+ 35SI dL E$Least-squares fitting is done by GLSC (version 15-May-2025)          
+ 35SI c  One-neutron knockout reaction from J|p=0+ {+36}Si ground state.        
  35SI c  2014St18: A {+36}Si secondary beam was produced via the projectile     
  35SI2c  fragmentation of a 140-MeV/nucleon {+48}Ca primary beam impinging on a 
  35SI3c  {+9}Be target at NSCL, MSU and was selected by the A1900 separator. The
@@ -14,29 +16,21 @@
  35SIAc  the object position and at the focal plane of the S800 spectrometer.   
  35SIBc  The position and angle of the residues were measured using two         
  35SICc  cathode-readout drift chambers. Prompt |g rays from the deexcitation of
- 35SIDc  the residues were detected by the GRETINA Ge array. Measured E|g, I|g, 
- 35SIEc  ({+35}Si)|g-coin, |g|g-coin, the inclusive-knockout cross section for  
- 35SIFc  producing {+35}Si from {+36}Si, the fractional populations and parallel
- 35SIGc  momentum distributions of populated states in {+35}Si residues. Deduced
- 35SIHc  levels, J, |p, L-transfers, partial-knockout cross sections and        
- 35SIIc  spectroscopic factors. Calculated single-particle cross sections       
- 35SIJc  (|s{-sp}) for proton removal and parallel momentum distributions using 
- 35SIKc  the eikonal model. Comparisons with shell model calculations.          
- 35SI c  2015St06: Same experiment as 2014St18. Analyzed parallel momentum      
- 35SI2c  distribution for g.s., possibly mixed with (3/2+) isomer at 973 keV.   
- 35SI3c  Neutron knockout cross sections measured for g.s. and (3/2-) state at  
- 35SI4c  908 keV.                                                               
- 35SI c  All data are from 2014St18, unless otherwise noted.                    
+ 35SIDc  the residues were detected by the GRETINA Ge array. Measured           
+ 35SIEc  Doppler-corrected E|g, I|g, ({+35}Si)|g-coin, |g|g-coin, the parallel  
+ 35SIFc  momentum distributions of populated states in {+35}Si residues. Deduced
+ 35SIGc  levels, J, |p, L-transfers, inclusive and exclusive knockout cross     
+ 35SIHc  section for producing {+35}Si from {+36}Si. Calculations using eikonal 
+ 35SIIc  model and shell model calculations with SDPF-U and SDPF-MU             
+ 35SIJc  interactions.                                                          
+ 35SI cL $Total knockout |s=81 mb {I2} for producing {+35}Si from {+36}Si.      
  35SI cL E$From a least-squares fit to |g-ray energies.                         
- 35SI cL J$From shell-model predictions and L-transfers in a few cases          
- 35SI2cL (2014St18)                                                             
- 35SI cL L$deduced by comparing the measured and calculated parallel momentum   
- 35SI2cL distributions of residuals.                                            
+ 35SI cL L$Deduced by comparing the measured and eikonal-calculated parallel    
+ 35SI2cL momentum distributions of residuals.                                   
  35SI  N  1                                                                     
- 35SI PN                                                                    C3  
+ 35SI PN                                                                    C   
  35SI2PN           Yield/100 ions                                               
- 35SI  L  0           (7/2-)                                                    
- 35SI cL $Total knockout |s=81 mb {I2}.                                         
+ 35SI  L 0            (7/2-)                                                    
  35SI cL $Partial knockout |s=52 mb {I4}.                                       
  35SI cL $One-neutron knockout |s=23 mb {I6} (2015St06)                         
  35SI  L 908       4  (3/2-)            55 PS    14                             
@@ -44,28 +38,28 @@
  35SI cL $Partial knockout |s=8 mb {I3} (2014St18,2015St06)                     
  35SI  G 908       4  25     2                                               C  
  35SI2 G BE2=0.0017 +4-5 (2014St18)                                             
- 35SI  L 973        7  (3/2+)                                                   
+ 35SI  L 973       7   (3/2+)                                                   
  35SI cL $Partial knockout |s=29 mb {I6} (2015St06)                             
- 35SI  L 1688       6   1/2+                               0                    
+ 35SI  L 1688      6    1/2+                               0                    
  35SI cL $Partial knockout |s=13 mb {I1} (2014St18,2015St06)                    
- 35SI  G  715      4  1.9    2                                                  
- 35SI  G  780      4   13    1                                               C  
- 35SI  L  1970     6                                                            
+ 35SI  G 715       4  1.9    2                                                  
+ 35SI  G 780       4   13    1                                               C  
+ 35SI  L 1970      6                                                            
  35SI cL $Partial knockout |s=1.1 mb {I2}.                                      
- 35SI  G  1970     6   1.4   2                                                  
- 35SI  L 2042       7   (1/2-)                             0,1                  
+ 35SI  G 1970      6   1.4   2                                                  
+ 35SI  L 2042      7    (1/2-)                             0,1                  
  35SI cL $Partial knockout |s=1.3 mb {I2}.                                      
  35SI  G 1134      5   1.5   2                                               C  
- 35SI  L  2164     6    (5/2+)                             2,3                  
+ 35SI  L 2164      6    (5/2+)                             2,3                  
  35SI cL $Partial knockout |s=1.1 mb {I2}.                                      
- 35SI  G  2164     6   1.4   2                                                  
- 35SI  L  2275     6                                                            
+ 35SI  G 2164      6   1.4   2                                                  
+ 35SI  L 2275      6                                                            
  35SI cL $Partial knockout |s=1.6 mb {I2}.                                      
- 35SI  G  2275     6   2.0   3                                                  
- 35SI  L  2377     7                                                            
+ 35SI  G 2275      6   2.0   3                                                  
+ 35SI  L 2377      7                                                            
  35SI cL $Partial knockout |s=2.1 mb {I2}.                                      
- 35SI  G  2377     7   2.5   3                                                  
- 35SI  L  3611     8                                                           ?
+ 35SI  G 2377      7   2.5   3                                                  
+ 35SI  L 3611      8                                                           ?
  35SI cL $Partial knockout |s=0.8 mb {I2}.                                      
- 35SI  G  3611     8   1.0   2                                                  
-
+ 35SI  G 3611      8   1.0   2                                                  
+                                                                                

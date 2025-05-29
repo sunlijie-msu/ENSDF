@@ -2,6 +2,7 @@
  35AL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
  35AL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35AL  H TYP=FUL$AUT=BALRAJ SINGH AND JUN CHEN$CIT=ENSDF$CUT=15-DEC-2017$       
+ 35AL dL E$Least-squares fitting is done by GLSC (version 15-May-2025)          
  35AL c  One-proton knockout reaction from J|p=0+ {+36}Si ground state.         
  35AL c  2014St18: A {+36}Si secondary beam was produced via the projectile     
  35AL2c  fragmentation of a 140-MeV/nucleon {+48}Ca primary beam impinging on a 
@@ -16,51 +17,48 @@
  35ALBc  The position and angle of the residues were measured using two         
  35ALCc  cathode-readout drift chambers. Prompt |g rays from the deexcitation of
  35ALDc  the residues were detected by the GRETINA Ge array. Measured           
- 35ALEc  Doppler-corrected E|g, I|g, ({+35}Al)|g-coin, |g|g-coin, the           
- 35ALFc  inclusive-knockout cross section for producing {+35}Al from {+36}Si,   
- 35ALGc  the fractional populations and parallel momentum distributions of      
- 35ALHc  populated states in {+35}Al residues. Deduced levels, J, |p,           
- 35ALIc  L-transfers, partial-knockout cross sections and spectroscopic factors.
- 35ALJc  Calculated single-particle cross sections (|s{-sp}) for proton removal 
- 35ALKc  and parallel momentum distributions using the eikonal model.           
- 35ALLc  Comparisons with shell model calculations.                             
- 35AL cL S$Spectroscopic factor C{+2}S=|s{-exp}/|s{-sp}.                        
+ 35ALEc  Doppler-corrected E|g, I|g, ({+35}Al)|g-coin, |g|g-coin, the parallel  
+ 35ALFc  momentum distributions of populated states in {+35}Al residues. Deduced
+ 35ALGc  levels, J, |p, L-transfers, inclusive and exclusive knockout cross     
+ 35ALHc  section for producing {+35}Al from {+36}Si. Calculations using eikonal 
+ 35ALIc  model and shell model calculations with SDPF-U and SDPF-MU             
+ 35ALJc  interactions.                                                          
+ 35AL cL $Total knockout |s=22 mb {I1} for producing {+35}Al from {+36}Si.      
  35AL cL E$From a least-squares fit to |g-ray energies.                         
- 35AL cL L$deduced by comparing the measured and calculated parallel momentum   
- 35AL2cL distributions of residuals.                                            
+ 35AL cL L$Deduced by comparing the measured and eikonal-calculated parallel    
+ 35AL2cL momentum distributions of residuals.                                   
  35AL  N  1                                                                     
- 35AL PN                                                                    C3  
- 35AL2PN $Yield/100 ions                                                        
- 35AL  G  1473     5   1.1   2                                                  
- 35AL  G  3060     8   1.6   4                                                  
- 35AL  L  0           (5/2+)                                                    
- 35AL cL $Total knockout |s=22 mb {I1}.                                         
+ 35AL PN                                                                    C   
+ 35AL2PN           Yield/100 ions                                                        
+ 35AL  G 1473      5   1.1   2                                                  
+ 35AL  G 3060      8   1.6   4                                                  
+ 35AL  L 0            (5/2+)                           2                        
  35AL cL $Partial knockout |s=13 mb {I2}.                                       
- 35AL cL J$From shell-model prediction                                          
- 35AL  L  802      4                                                            
+ 35AL cL J$Interpreted as the 1d{-5/2} proton removal from {+36}Si.             
+ 35AL  L 801       3                                                            
  35AL cL $Partial knockout |s=1.0 mb {I7}.                                      
  35AL  G 802       4  10     1                                               C  
- 35AL  L 1003      4                                                            
+ 35AL  L 1005      3                                                            
  35AL cL $Partial knockout |s=0.8 mb {I9}.                                      
  35AL  G 1003      4  19     1                                               C  
- 35AL  L  1864     5                                                            
+ 35AL  L 1865      4                                                            
  35AL cL $Partial knockout |s=1.0 mb {I2}.                                      
- 35AL  G   859     4   3.6   3                                               C  
- 35AL  G  1064     4   0.8   2                                                  
- 35AL  L 1972      4                                       2                    
+ 35AL  G 859       4   3.6   3                                               C  
+ 35AL  G 1064      4   0.8   2                                                  
+ 35AL  L 1973      4                                   2                        
  35AL cL $Partial knockout |s=3.2 mb {I5}.                                      
- 35AL  G  968      4  4.4    3                                               C  
+ 35AL  G 968       4  4.4    3                                               C  
  35AL  G 1174      5  2.8    3                                                  
  35AL  G 1972      6  7.5    5                                                  
- 35AL  L  2734     7                                                            
+ 35AL  L 2733      7                                                            
  35AL cL $Partial knockout |s=0.5 mb {I1}.                                      
- 35AL  G  1932     6   2.5   3                                               C  
- 35AL  L  3243     5                                       2                    
+ 35AL  G 1932      6   2.5   3                                               C  
+ 35AL  L 3244      5                                   2                        
  35AL cL $Partial knockout |s=2.6 mb {I3}.                                      
- 35AL  G  2237     6   7.8   6                                               C  
- 35AL  G  2440     7   1.4   2                                                  
- 35AL  G  3250     8   3.3   4                                                  
- 35AL  L  4275     9                                       2                   ?
+ 35AL  G 2237      6   7.8   6                                               C  
+ 35AL  G 2440      7   1.4   2                                                  
+ 35AL  G 3250      8   3.3   4                                                  
+ 35AL  L 4275      9                                   2                       ?
  35AL cL $Partial knockout |s=0.5 mb {I1}.                                      
- 35AL  G  4275     9   3     1                                                  
+ 35AL  G 4275      9   3     1                                                  
 
