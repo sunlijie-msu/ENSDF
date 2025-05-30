@@ -51,8 +51,6 @@
  35MG5c  2005Ch71, 2004Kh16, 1996Re10, 1991Pa19, 1991Pa21.                      
  35MG cL E$From E|g data in ({+38}Si,{+35}Mg|g) and                             
  35MG2cL ({+36}Mg,{+35}Mg|g),({+37}Al,{+35}Mg|g)                                
- 35MG cL J(A)$From measured parallel-momentum distributions and deduced         
- 35MG2cL L-transfers in ({+36}Mg,{+35}Mg|g),({+37}Al,{+35}Mg|g)                 
  35MG  XA35NA B- DECAY (2.1 MS)                                                 
  35MG  XB9BE(38SI,35MGG)                                                        
  35MG  XCC(36MG,35MGG),(37AL,35MGG)                                             
@@ -80,11 +78,12 @@
  35MG  L 0+X                                                                    
  35MGX L XREF=BC                                                                
  35MG cL E$x|<80 keV (2011Ga15 detection threshold); x|<200 keV (2017Mo26       
- 35MG2cL detection threshold). Monte Carlo shell-model calculations with the    
- 35MG3cL SDPF-M interaction predicts a 3/2- level at 30 keV (2011Ga15).         
- 35MG4cL Shell-model calculations with the SDPF-M interaction predicts a 5/2-   
- 35MG5cL level at 84 keV (2017Mo26). Shell-model calculations with the          
- 35MG6cL SDPF-M+2p{-1/2} interaction predicts a 1/2- level at 141 keV.          
+ 35MG2cL detection threshold).                                                  
+ 35MG cL J$Shell-model calculations with the SDPF-M+2p{-1/2} interaction predict
+ 35MG2cL a 1/2- level at 141 keV (2017Mo26). Shell-model calculations with the  
+ 35MG3cL SDPF-M interaction predict a 5/2- level at 84 keV (2017Mo26). Monte    
+ 35MG4cL Carlo shell-model calculations with the SDPF-M interaction predict a   
+ 35MG5cL 3/2- level at 30 keV (2011Ga15).                                       
  35MG  L 0+Y                                                                   ?
  35MGX L XREF=C(0+y?)                                                           
  35MG cL E$y|<200 keV (2017Mo26 detection threshold). 2017Mo26 suggested a      
@@ -97,13 +96,17 @@
  35MG3cL calculations with the SDPF-M+2p{-1/2} interaction.                     
  35MG  G 206       8  100                                                      
  35MGF G FL=0+X                                                                 
- 35MG  L 445+X     5  (3/2+,5/2+)                                           A   
+ 35MG  L 445+X     5  (3/2+,5/2+)                                               
  35MGX L XREF=BC                                                                
- 35MG  G 445       5  100                                                      
+ 35MG cL J$L({+36}Mg,{+35}Mg)=(2) from 0+. 3/2+ from shell-model calculations   
+ 35MG2cL with the SDPF-M+2p{-1/2} interaction (2017Mo26).                       
+ 35MG  G 445       5  100                                                       
  35MGF G FL=0+X                                                                 
  35MG cG E$weighted average of 443 {I7} (2017Mo26) and 446 {I5} (2011Ga15)      
- 35MG  L 619+X     7  (1/2-,3/2-)                                           A   
+ 35MG  L 619+X     7  (1/2-,3/2-)                                               
  35MGX L XREF=BC                                                                
+ 35MG cL J$L({+36}Mg,{+35}Mg)=(1) from 0+. 3/2- from shell-model calculations   
+ 35MG2cL with the SDPF-M+2p{-1/2} interaction (2017Mo26).
  35MG  G 619       7  100                                                       
  35MGF G FL=0+X                                                                 
  35MG cG E$weighted average of 616 {I8} (2017Mo26) and 621 {I7} (2011Ga15)      
