@@ -1,10 +1,12 @@
+Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 05/19/2025)
+Generated at: Thu 05/29/2025 at 10:07:33 PM EDT                                 
+                                                                                
  35AL    ADOPTED LEVELS, GAMMAS                                  ENSDF    202509
  35AL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
  35AL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35AL  H TYP=FUL$AUT=BALRAJ SINGH AND JUN CHEN$CIT=ENSDF$CUT=15-DEC-2017$       
  35AL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35AL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35AL dL E$Least-squares fitting is done by GLSC (version 15-May-2025)          
  35AL  Q 14170     40 5297   8 15830.7 89-14894.078    2021WA16                 
  35AL cQ SP,QA$Deduced by the evaluator using mass excesses of 8318 {I5} for    
  35AL2cQ {+34}Mg: a weighted average of 8323 {I7} (2019As04) and 8315 {I5}      
@@ -75,21 +77,21 @@
  35AL c  Theoretical calculations (binding energies, deformation, quadrupole    
  35AL2c  moments, radii, levels, J, |p, mass, T{-1/2}, etc): 2016Sa46, 2014Ca21,
  35AL3c  2013Li39, 2013Sh05, 2011Ki12, 2009Yo05, 2004Kh16, 1994Po05.            
- 35AL cG E,RI$From {+9}Be({+36}Si,{+35}Al|g), unless otherwise noted.           
+ 35AL cG E,RI$From {+9}Be({+36}Si,{+35}Al|g)                                    
  35AL cL E$From a least-squares fit to |g-ray energies.                         
  35AL  XA36MG B-N DECAY (6.9 MS)                                                
  35AL  XB9BE(36SI,35ALG)                                                        
  35AL  XCPB(35AL,34ALNG)                                                        
  35AL  XDCOULOMB EXCITATION                                                     
  35AL PN                                                                     6  
- 35AL  L 0            (5/2)+           38.3 MS   4                              
+ 35AL  L 0            (5/2+)           38.3 MS   4                              
  35ALX L XREF=ABCD                                                              
  35AL2 L %B-=100$ %B-N=38 2 (2015Bi05) $ %B-2N=0 (2001Nu01)                     
  35AL cL $%|b{+-}n: From 2015Bi05 evaluation; weighted average of 38 {I2}       
  35AL2cL (2005Ti11, 38 {I3} in 2006AnZW) and 41 {I13} (2001Nu01,2002Nu02).      
  35AL3cL Others: 26 {I4} (1995ReZZ,2008ReZZ); 40 {I10} (1989Le16); 87 {I+37-25} 
  35AL4cL (1988Mu08).                                                            
- 35AL cL J$From shell-model calculations and L({+36}Si,{+35}Al)=2 from 0+.      
+ 35AL cL J$From shell-model calculations.                                       
  35AL cL $Major configurations deduced by 2017Ch36 from Coulomb breakup of      
  35AL2cL {+35}Al on Pb target: for J|p({+35}Al g.s.)=5/2+, (g.s.,4- in          
  35AL3cL {+34}Al)~#|np{-3/2} + (46 keV,1+ in {+34}Al)~#|nd{-3/2}. For J|p=1/2+  
@@ -107,22 +109,22 @@
  35AL8cL |b-decay). Value is 37.6 ms {I14} in 2015Bi05 evaluation, which did    
  35AL9cL include the 2017Ha23 result.                                           
  35AL cL $Reduced strong absorption radius=1.188 fm{+2} {I14} from 2006Kh08.    
- 35AL  L 802       3                                                            
+ 35AL  L 802       4                                                            
  35ALX L XREF=AB                                                                
  35AL  G 802       4 100                                                        
- 35AL  L 1007      4                                                            
+ 35AL  L 1003      4                                                            
  35ALX L XREF=BD(1020)                                                          
+ 35AL cL $B(E2)=0.0142 {i52} (1999Ib01). 2000PrZX give B(E2)|<0.0125 {i56} or   
+ 35AL2cL B(E1)|<0.00020 {i9}, authors also deduce values for B(M1) and B(M2).   
  35AL  G 1006      6 100                                                        
- 35AL cG $B(E2)=0.0142 {I52} (1999Ib01). B(E1)|<0.00020 {I9}, B(E2)|<0.0125     
- 35AL2cG {I56}, B(M1)|<0.0024 {I11}, and 5/2{++}->3/2{++/-} |s=30 mb {I14}      
- 35AL3cG (2000PrZX). The multipolarities are assumed.                           
  35AL cG E$weighted average of 1003 {I4} from ({+36}Si,{+35}Al|g) and 1020 {I9} 
  35AL2cG from Coulomb excitation                                                
- 35AL  L 1866      4                                                            
+ 35AL cG E$From {+9}Be({+36}Si,{+35}Al|g). Other: 1020 {I8} from Coul. ex.      
+ 35AL  L 1864      5                                                            
  35ALX L XREF=B                                                                 
  35AL  G 859       4 100     8                                                  
  35AL  G 1064      4 22      6                                                  
- 35AL  L 1975      4                                                            
+ 35AL  L 1972      4                                                            
  35ALX L XREF=B                                                                 
  35AL  G 968       4 59      4                                                  
  35AL  G 1174      5 37      4                                                  
@@ -130,7 +132,7 @@
  35AL  L 2734      7                                                            
  35ALX L XREF=B                                                                 
  35AL  G 1932      6 100                                                        
- 35AL  L 3245      5                                                            
+ 35AL  L 3243      5                                                            
  35ALX L XREF=B                                                                 
  35AL  G 2237      6 100     8                                                  
  35AL  G 2440      7 18.0    26                                                 
@@ -138,4 +140,4 @@
  35AL  L 4275      9                                                           ?
  35ALX L XREF=B(4275?)                                                          
  35AL  G 4275      9 100                                                        
-
+                                                                                

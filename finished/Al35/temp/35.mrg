@@ -1,0 +1,162 @@
+Program for consistency check: output for original lines grouped by level and gamma energies (version 05/16/2025)
+Generated at: Thu 05/29/2025 at 10:20:58 PM EDT
+
+
+Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
+         available data in the corresponding dataset, including decay data (logft or HF), L-transfer, and decaying
+         and feeding gammas of each level, and so on.
+      2. possible JPI presented at the end of each adopted record line is deduced by combining data from all
+         individual datasets (data from the record lines only and might be incomplete since arguments only presented
+         in comments haven't been considered, like shell-model calculations, analyzing power, atomic method for g.s.
+         spin, and other qualitative arguments).
+
+*** All possible JPI values are for reference purpose only and should not be taken as the final adopted assignments ***
+
+
+########################################################################################################################
+        new XREFs                        old XREFs
+ 35AL  XA36MG B-N DECAY (6.9 MS)       A-A 36MG B-N DECAY (6.9 MS)
+ 35AL  XB9BE(36SI,35ALG)               B-B 9BE(36SI,35ALG)
+ 35AL  XCPB(35AL,34ALNG)               C-C PB(35AL,34ALNG)
+ 35AL  XDCOULOMB EXCITATION            D-D COULOMB EXCITATION
+################################## new tag show first below ############################################################
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35AL  L 0            (5/2+)           38.3 MS   4                               --- possible JPI=3/2+,5/2+
+                     *new XREF new tags    35ALX L XREF=ABCD
+                     *new XREF old tags    35ALX L XREF=ABCD
+                     #old XREF in Adopted  35ALX L XREF=ABCD
+       36MG B-N DECAY (6.9 MS)--->A  A     35AL  L 0            (5/2+)                                                    
+               9BE(36SI,35ALG)--->B  B     35AL  L 0            (5/2+)                           2                         *** possible JPI=3/2+,5/2+
+               PB(35AL,34ALNG)--->C  C     35AL  L 0            (5/2+,3/2+,1/2+)                                          
+            COULOMB EXCITATION--->D  D     35AL  L 0            (5/2+)                                                    
+       36MG B-N DECAY (6.9 MS)--->A  A     35AL cL J$From the Adopted Levels.
+               9BE(36SI,35ALG)--->B  B     35AL cL $Partial knockout |s=13 mb {I2}.                                       
+               9BE(36SI,35ALG)--->B  B     35AL cL J$Interpreted as the 1d{-5/2} proton removal from {+36}Si.             
+               PB(35AL,34ALNG)--->C  C     35AL cL J$From comparisons of measured differential Coulomb dissociation cross 
+               PB(35AL,34ALNG)--->C  C     35AL2cL section of {+35}Al breaking up into {+34}Al in its g.s. and/or 46-keV  
+               PB(35AL,34ALNG)--->C  C     35AL3cL isomer with theoretical calculations from the direct breakup model     
+               PB(35AL,34ALNG)--->C  C     35AL4cL using the plane-wave approximation assuming the valence neutron at     
+               PB(35AL,34ALNG)--->C  C     35AL5cL different orbitals. Shell-model calculations using the SDPF-M          
+               PB(35AL,34ALNG)--->C  C     35AL6cL interaction, and Coulomb breakup results favor 5/2+.                   
+               PB(35AL,34ALNG)--->C  C     35AL cL $Major configurations and spectroscopic factor for neutron deduced by  
+               PB(35AL,34ALNG)--->C  C     35AL2cL 2017Ch36: (g.s.,4- in {+34}Al)~#|np{-3/2}, spectroscopic factor=0.36   
+               PB(35AL,34ALNG)--->C  C     35AL3cL {I9} + (46 keV,1+ in {+34}Al)~#|nd{-3/2}, spectroscopic factor=1.47    
+               PB(35AL,34ALNG)--->C  C     35AL4cL {I22} for J|p=5/2+ of {+35}Al g.s. For J|p=1/2+ or 3/2+ of {+35}Al     
+               PB(35AL,34ALNG)--->C  C     35AL5cL g.s., (g.s.,4- in {+34}Al)~#|nf{-7/2}, spectroscopic factor=1.03 {I43} 
+               PB(35AL,34ALNG)--->C  C     35AL6cL + (46 keV,1+ in {+34}Al)~#|ns{-1/2}, spectroscopic factor=0.62 {I7}.   
+               PB(35AL,34ALNG)--->C  C     35AL7cL Other configurations for J|p=1/2+,3/2+ of {+35}Al g.s.: (46 keV,1+ in  
+               PB(35AL,34ALNG)--->C  C     35AL8cL {+34}Al)~#|ns{-1/2}, spectroscopic factor=0.72 {I8}; and (46 keV,1+ in 
+               PB(35AL,34ALNG)--->C  C     35AL9cL {+34}Al)~#|ns{-1/2}, spectroscopic factor=0.45 {I7} + (46 keV,1+ in    
+               PB(35AL,34ALNG)--->C  C     35ALAcL {+34}Al)~#|nd{-5/2}, spectroscopic factor=0.94 {I22}.
+            COULOMB EXCITATION--->D  D     35AL cL J$From the Adopted Levels.
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35AL  L 802       3                                                             --- possible JPI=(1/2,3/2,5/2,7/2,9/2+)
+                     *new XREF new tags    35ALX L XREF=AB
+                     *new XREF old tags    35ALX L XREF=AB
+                     #old XREF in Adopted  35ALX L XREF=AB
+       36MG B-N DECAY (6.9 MS)--->A  A     35AL  L 803                                                                    
+               9BE(36SI,35ALG)--->B  B     35AL  L 801       3                                                             *** possible JPI=(1/2,3/2,5/2,7/2,9/2+): 2440g from 3244,
+               9BE(36SI,35ALG)--->B  B     35AL cL $Partial knockout |s=1.0 mb {I7}.                                      
+ GAMMA------------------------------------ 35AL  G 802       4 100                                                         --- EG=802        FL=0          JF=(5/2+)
+       36MG B-N DECAY (6.9 MS)--->A  A     35AL  G 803                                                                     *** EG=803        FL=0          JF=(5/2+)
+               9BE(36SI,35ALG)--->B  B     35AL  G 802       4 1.0E2                                                   C   *** EG=802        FL=0          JF=(5/2+)
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35AL  L 1007      4                                                             --- possible JPI=(1/2,3/2,5/2,7/2,9/2+)
+                     *new XREF new tags    35ALX L XREF=BD(1020)
+                     *new XREF old tags    35ALX L XREF=BD(1020)
+                     #old XREF in Adopted  35ALX L XREF=BD(1020)
+               9BE(36SI,35ALG)--->B  B     35AL  L 1005      3                                                             *** possible JPI=(1/2,3/2,5/2,7/2,9/2+): 2237g from 3244,
+            COULOMB EXCITATION--->D  D     35AL  L 1020      9                                                            
+               9BE(36SI,35ALG)--->B  B     35AL cL $Partial knockout |s=0.8 mb {I9}.                                      
+            COULOMB EXCITATION--->D  D     35AL cL E$From measured E|g.                                                   
+            COULOMB EXCITATION--->D  D     35AL cL $B(E2)=0.0142 {I52} (1999Ib01). B(E1)|<0.00020 {I9}, B(E2)|<0.0180     
+            COULOMB EXCITATION--->D  D     35AL2cL {I56}, B(M1)|<0.0024 {I11}, and 5/2{++}->3/2{++/-} |s=30 mb {I14}      
+            COULOMB EXCITATION--->D  D     35AL3cL (2000PrZX). The multipolarities are assumed.                           
+ GAMMA------------------------------------ 35AL  G 1006      6 100                                                         --- EG=1006       FL=0          JF=(5/2+)
+               9BE(36SI,35ALG)--->B  B     35AL  G 1003      4 1.0E2                                                   C   *** EG=1003       FL=0          JF=(5/2+)
+            COULOMB EXCITATION--->D  D     35AL  G 1020      9 1.0E2                                                       *** EG=1020       FL=0          JF=(5/2+)
+            COULOMB EXCITATION--->D  D     35AL cG E$Weighted average of 1006 {I19} (1999Ib01) and 1023 {I9} (2000PrZX).  
+            COULOMB EXCITATION--->D  D     35AL2cG 2000PrZX reports E|g=1023 {I8} in Table 4.9 and E|g=1023 {I9} in Table 
+            COULOMB EXCITATION--->D  D     35AL3cG 4.10.                                                                  
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35AL  L 1866      4                                                             --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
+                     *new XREF new tags    35ALX L XREF=B
+                     *new XREF old tags    35ALX L XREF=B
+                     #old XREF in Adopted  35ALX L XREF=B
+               9BE(36SI,35ALG)--->B  B     35AL  L 1865      4                                                             *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
+               9BE(36SI,35ALG)--->B  B     35AL cL $Partial knockout |s=1.0 mb {I2}.                                      
+ GAMMA------------------------------------ 35AL  G 859       4 100     8                                                   --- EG=859        FL=1007       JF=
+               9BE(36SI,35ALG)--->B  B     35AL  G 859       4 100     8                                               C   *** EG=859        FL=1005       JF=
+ GAMMA------------------------------------ 35AL  G 1064      4 22      6                                                   --- EG=1064       FL=802        JF=
+               9BE(36SI,35ALG)--->B  B     35AL  G 1064      4 22      6                                                   *** EG=1064       FL=801        JF=
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35AL  L 1975      4                                                             --- possible JPI=3/2+,5/2+
+                     *new XREF new tags    35ALX L XREF=B
+                     *new XREF old tags    35ALX L XREF=B
+                     #old XREF in Adopted  35ALX L XREF=B
+               9BE(36SI,35ALG)--->B  B     35AL  L 1973      4                                   2                         *** possible JPI=3/2+,5/2+
+               9BE(36SI,35ALG)--->B  B     35AL cL $Partial knockout |s=3.2 mb {I5}.                                      
+ GAMMA------------------------------------ 35AL  G 968       4 59      4                                                   --- EG=968        FL=1007       JF=
+               9BE(36SI,35ALG)--->B  B     35AL  G 968       4 59      4                                               C   *** EG=968        FL=1005       JF=
+ GAMMA------------------------------------ 35AL  G 1174      5 37      4                                                   --- EG=1174       FL=802        JF=
+               9BE(36SI,35ALG)--->B  B     35AL  G 1174      5 37      4                                                   *** EG=1174       FL=801        JF=
+ GAMMA------------------------------------ 35AL  G 1972      6 100     7                                                   --- EG=1972       FL=0          JF=(5/2+)
+               9BE(36SI,35ALG)--->B  B     35AL  G 1972      6 100     7                                                   *** EG=1972       FL=0          JF=(5/2+)
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35AL  L 2734      7                                                             --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
+                     *new XREF new tags    35ALX L XREF=B
+                     *new XREF old tags    35ALX L XREF=B
+                     #old XREF in Adopted  35ALX L XREF=B
+               9BE(36SI,35ALG)--->B  B     35AL  L 2733      7                                                             *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
+               9BE(36SI,35ALG)--->B  B     35AL cL $Partial knockout |s=0.5 mb {I1}.                                      
+ GAMMA------------------------------------ 35AL  G 1932      6 100                                                         --- EG=1932       FL=802        JF=
+               9BE(36SI,35ALG)--->B  B     35AL  G 1932      6 1.0E2                                                   C   *** EG=1932       FL=801        JF=
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35AL  L 3245      5                                                             --- possible JPI=3/2+,5/2+
+                     *new XREF new tags    35ALX L XREF=B
+                     *new XREF old tags    35ALX L XREF=B
+                     #old XREF in Adopted  35ALX L XREF=B
+               9BE(36SI,35ALG)--->B  B     35AL  L 3244      5                                   2                         *** possible JPI=3/2+,5/2+
+               9BE(36SI,35ALG)--->B  B     35AL cL $Partial knockout |s=2.6 mb {I3}.                                      
+ GAMMA------------------------------------ 35AL  G 2237      6 100     8                                                   --- EG=2237       FL=1007       JF=
+               9BE(36SI,35ALG)--->B  B     35AL  G 2237      6 100     8                                               C   *** EG=2237       FL=1005       JF=
+ GAMMA------------------------------------ 35AL  G 2440      7 18.0    26                                                  --- EG=2440       FL=802        JF=
+               9BE(36SI,35ALG)--->B  B     35AL  G 2440      7 18.0    26                                                  *** EG=2440       FL=801        JF=
+ GAMMA------------------------------------ 35AL  G 3250      8 42      5                                                   --- EG=3250       FL=0          JF=(5/2+)
+               9BE(36SI,35ALG)--->B  B     35AL  G 3250      8 42      5                                                   *** EG=3250       FL=0          JF=(5/2+)
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35AL  L 4275      9                                                           ? --- possible JPI=3/2+,5/2+
+                     *new XREF new tags    35ALX L XREF=B(?)
+                     *new XREF old tags    35ALX L XREF=B(?)
+                     #old XREF in Adopted  35ALX L XREF=B(4275?)
+               9BE(36SI,35ALG)--->B  B(?)  35AL  L 4275      9                                   2                       ? *** possible JPI=3/2+,5/2+
+               9BE(36SI,35ALG)--->B  B(?)  35AL cL $Partial knockout |s=0.5 mb {I1}.                                      
+ GAMMA------------------------------------ 35AL  G 4275      9 100                                                         --- EG=4275       FL=0          JF=(5/2+)
+               9BE(36SI,35ALG)--->B  B(?)  35AL  G 4275      9 1.0E2                                                       *** EG=4275       FL=0          JF=(5/2+)
+
+
+Statistics of levels and gammas from all datasets of 35AL:
+                             DSID     #of levels       #of gammas       level range
+           ADOPTED LEVELS, GAMMAS        8                12            0          to       4275
+          36MG B-N DECAY (6.9 MS)        2                1             0          to        803
+                  9BE(36SI,35ALG)        8                14            0          to       4275
+                  PB(35AL,34ALNG)        1                0             0
+               COULOMB EXCITATION        2                1             0          to       1020
+
+                         IN TOTAL        21               28            0          to       4275
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Statistics of all datasets from input ENSDF files:
+                Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
+                               Levels       Gammas     L Records    G Records                      (non-Adopted)
+                   35AL        8            12           21           28             312              4
+
+               IN TOTAL        8            12           21           28             312              4
+
+Number of nuclides     : 1
+Number of blocks       : 5
+Number of references   : 53
+Number of lines in files: 317
+(from all blocks including abstract, comment, reference)

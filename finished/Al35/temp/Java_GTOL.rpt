@@ -1,0 +1,124 @@
+** Java program for fitting gammas&calculating feedings (version 05/15/2025) **
+Generated at: Thu 05/29/2025 at 10:16:59 PM EDT
+
+ Input file: D:\X\ND\A35\finished\Al35\new\Al35_adopted.ens
+Report file: D:\X\ND\Files\Java_GTOL.rpt
+Output file: D:\X\ND\Files\Java_GTOL.out
+
+Rules for assigning uncertainties to gamma energies where not available:
+(unless otherwise specified by "DEG=" at the end (col>80) of gamma line)
+   Rule 0: No. of decimal digits=0, uncertainty=1
+   Rule 1: No. of decimal digits=1, uncertainty=0.5
+   Rule 2: No. of decimal digits=2, uncertainty=0.05
+
+(Above rules are by default for all gamma-ray energies, and will be;
+ overridden by a DEG option at the end of a gamma-line individually
+ or by a global DEG option at the top of a dataset)
+
+
+ assumptions for non-numerical uncertainties in RI and TI, unless otherwise specified:
+    DRI                assumed %DRI        
+    -----------        ------------        
+    Empty              20
+    LT or LE           50 for DRI(+); assumed RI=DRI(-)=%(100-this value)
+    GT or GE           100000000 for DRI(+); assumed DRI(-)=0
+    AP                 50
+    CA                 50
+    SY                 50
+
+   * DCC theory=1.4% assumed if DCC not given
+   * Uncertainty Limit=35 for rounding-up uncertainty in output
+
+
+   * Gammas marked by "?" are also used in the fitting and intensity calculations
+   * All gammas marked by "S" are ignored in the fitting and intensity calculations
+   * RI flagged by "&" are used as upper limits (RI+DRI) in intensity calculations:
+           Adjusted RI=(RI+DRI)/2=Adjusted DRI
+   * Maximum&Minimum approach is used to propagate large uncertainty (>10%) except E(level)
+
+
+##########################################################################################
+        GTOL report for dataset: << ADOPTED LEVELS, GAMMAS >>
+##########################################################################################
+
+
+-------------------------------------------------------------------------------------------------------------------
+                 Level Energies From Input (old), Fitting (new), and Adjustments for uncertainties                 
+-------------------------------------------------------------------------------------------------------------------
+#Level  old           Input        From fit       After adding dE of base levels:          Has Gamma:        Fixed 
+        kept                      (original)       metastable    fixed("G")/other     Deexciting  Feeding     Type 
+------ ------ --------------- ---------------    --------------- ----------------     ---------- ----------  ------
+     1  kept             0               0    *         -----            -----           ---        Yes        D   
+     2                 802  4        801.9 31           -----              802  3 &      Yes        Yes       ---  
+     3                1003  4         1007  4           -----            -----           Yes        Yes       ---  
+     4                1864  5         1866  4           -----            -----           Yes         No       ---  
+     5                1972  4         1975  4           -----            -----           Yes         No       ---  
+     6  kept          2734  7         2734  7           -----            -----           Yes         No       ---  
+     7                3243  5         3245  5           -----            -----           Yes         No       ---  
+     8  kept          4275  9         4275  9           -----            -----           Yes        ---       ---  
+-------------------------------------------------------------------------------------------------------------------
+NOTE: --- indicates Not Applicable.
+        * indicates level fixed in fitting.
+        & from original uncertainty adjusted based on input settings.
+        # non-numerical uncertainty is from fitting gammas or end-level.
+      Quoted values under "From fit" for fixed levels are taken from their input values.
+      Fixed Type="A": assumed fixed by GTOL for level not connected to any level; not used in the fitting.
+                ="D": assumed fixed by GTOL for meta-stable level, with %(all decay modes but IT)>99.75;
+                      uncertainty will be added after fitting (1st level always this type by default).
+                ="S": assumed fixed by GTOL for level which causes singular matrix problem; uncertainty=0 assumed.
+                ="F": energy is fixed and uncertainty=0 assumed for fitting.
+                ="G": energy is fixed in fitting and uncertainty will be added after fitting.
+           Only type "F" and "G" are set by user by inserting the type letter in the energy field (col 10-20).
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                            Input and fitted Gamma Energies                                                             
+#Gamma        Input EG    Adjusted dEG   Initial Level     Final Level     EG From fit   Difference   Diff/dEG  #sigma       Chi2    %Chi2      Input EG
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+     1         802  4         -----            802  3            0            801.9 31       0.0849      0.021       0      0.000     0.05        802  4 
+     2        1006  6         -----           1007  4            0             1007  4      -0.7242      0.121       0      0.015     1.61       1006  6 
+     3         859  4         -----           1866  4         1007  4         859.1 33      -0.0957      0.024       0      0.001     0.06        859  4 
+     4        1064  4         -----           1866  4          802  3        1063.9 33       0.0957      0.024       0      0.001     0.06       1064  4 
+     5         968  4         -----           1975  4         1007  4         967.8 32       0.2085      0.052       0      0.003     0.30        968  4 
+     6        1174  5         -----           1975  4          802  3        1172.6 34       1.4005      0.280       0      0.078     8.69       1174  5 
+     7        1972  6         -----           1975  4            0             1975  4      -2.4858      0.414       0      0.172    19.01       1972  6 
+     8        1932  6         -----           2734  7          802  3          1932  6      -0.0000      0.000       0      0.000     0.00       1932  6 
+     9        2237  6         -----           3245  5         1007  4          2238  4      -0.9780      0.163       0      0.027     2.94       2237  6 
+    10        2440  7         -----           3245  5          802  3          2443  5      -2.7780      0.397       0      0.157    17.44       2440  7 
+    11        3250  8         -----           3245  5            0             3245  5       5.3669      0.671       1      0.450    49.83       3250  8 
+    12        4275  9         -----           4275  9            0             4275  9       0.0000      0.000       0      0.000     0.00       4275  9 
+                                                                                                                 chi2=      0.903
+                                                                                                             chi2/dof=      0.181
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE: * at initial level indicates level fixed in the fitting.
+      ## in #sigma column marks number of sigma>=4.
+      Quoted level energies are from fit.
+      #sigma=round(Diff/dEG), by which the input EG differs from the fitted one.
+      dEG=1 keV is assigned if not given, unless otherwise specified at the end of each gamma line.
+
+
+#of Levels= 8      #of fixed Levels= 1      #of Gammas in fitting= 12
+Degrees of Freedom (dof)= 5
+    Chi2= 0.9031
+Chi2/dof= 0.1806
+(critical Chi2/dof= 3.0170)
+
+
+
+
+List of gammas with uncertainty in RI being adjusted:
+-----------------------------------------------
+  E(gamma)   E(level)            RI            
+                      -------------------------
+                          Original     Adjusted
+-----------------------------------------------
+       802        802       100          100  0
+      1006       1003       100          100  0
+      1932       2734       100          100  0
+      4275       4275       100          100  0
+-----------------------------------------------
+
+
+End of report
+

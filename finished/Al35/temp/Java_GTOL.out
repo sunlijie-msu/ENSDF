@@ -82,14 +82,14 @@
  35AL  XCPB(35AL,34ALNG)                                                        
  35AL  XDCOULOMB EXCITATION                                                     
  35AL PN                                                                     6  
- 35AL  L 0            (5/2)+           38.3 MS   4                              
+ 35AL  L 0            (5/2+)           38.3 MS   4                              
  35ALX L XREF=ABCD                                                              
  35AL2 L %B-=100$ %B-N=38 2 (2015Bi05) $ %B-2N=0 (2001Nu01)                     
  35AL cL $%|b{+-}n: From 2015Bi05 evaluation; weighted average of 38 {I2}       
  35AL2cL (2005Ti11, 38 {I3} in 2006AnZW) and 41 {I13} (2001Nu01,2002Nu02).      
  35AL3cL Others: 26 {I4} (1995ReZZ,2008ReZZ); 40 {I10} (1989Le16); 87 {I+37-25} 
  35AL4cL (1988Mu08).                                                            
- 35AL cL J$From shell-model calculations and L({+36}Si,{+35}Al)=2 from 0+.      
+ 35AL cL J$From shell-model calculations.                                       
  35AL cL $Major configurations deduced by 2017Ch36 from Coulomb breakup of      
  35AL2cL {+35}Al on Pb target: for J|p({+35}Al g.s.)=5/2+, (g.s.,4- in          
  35AL3cL {+34}Al)~#|np{-3/2} + (46 keV,1+ in {+34}Al)~#|nd{-3/2}. For J|p=1/2+  
@@ -112,12 +112,12 @@
  35AL  G 802       4 100                                                        
  35AL  L 1007      4                                                            
  35ALX L XREF=BD(1020)                                                          
+ 35AL cL $B(E2)=0.0142 {i52} (1999Ib01). 2000PrZX give B(E2)|<0.0125 {i56} or   
+ 35AL2cL B(E1)|<0.00020 {i9}, authors also deduce values for B(M1) and B(M2).   
  35AL  G 1006      6 100                                                        
- 35AL cG $B(E2)=0.0142 {I52} (1999Ib01). B(E1)|<0.00020 {I9}, B(E2)|<0.0125     
- 35AL2cG {I56}, B(M1)|<0.0024 {I11}, and 5/2{++}->3/2{++/-} |s=30 mb {I14}      
- 35AL3cG (2000PrZX). The multipolarities are assumed.                           
  35AL cG E$weighted average of 1003 {I4} from ({+36}Si,{+35}Al|g) and 1020 {I9} 
  35AL2cG from Coulomb excitation                                                
+ 35AL cG E$From {+9}Be({+36}Si,{+35}Al|g). Other: 1020 {I8} from Coul. ex.      
  35AL  L 1866      4                                                            
  35ALX L XREF=B                                                                 
  35AL  G 859       4 100     8                                                  
@@ -138,4 +138,4 @@
  35AL  L 4275      9                                                           ?
  35ALX L XREF=B(4275?)                                                          
  35AL  G 4275      9 100                                                        
-
+                                                                                
