@@ -1,4 +1,4 @@
- 35SI    9BE(36SI,35SIG)               2014ST18                  ENSDF    202509
+ 35SI    9BE(36SI,35SIG)               2014ST18,2015ST06         ENSDF    202509
  35SI  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
  35SI2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35SI  H TYP=FUL$AUT=JUN CHEN AND BALRAJ SINGH$CIT=ENSDF$CUT=31-MAY-2015$       
@@ -21,45 +21,74 @@
  35SIFc  momentum distributions of populated states in {+35}Si residues. Deduced
  35SIGc  levels, J, |p, L-transfers, inclusive and exclusive knockout cross     
  35SIHc  section for producing {+35}Si from {+36}Si. Calculations using eikonal 
- 35SIIc  model and shell model calculations with SDPF-U and SDPF-MU             
- 35SIJc  interactions.                                                          
+ 35SIIc  reaction model and shell model spectroscopic strengths with SDPF-U and 
+ 35SIJc  SDPF-MU interactions.                                                  
+ 35SI c  2015St06: Further theoretical discussions on the data from 2014St18.   
+ 35SI d  Also see Steven Ragnar Stroberg, Ph.D. thesis, Michigan State          
+ 35SI2d  University, 2014. Single-particle structure of neutron-rich silicon    
+ 35SI3d  isotopes and the breakdown of the N=28 shell closure.                  
+ 35SI4d  https://doi.org/doi:10.25335/dgc1-a966                                 
  35SI cL $Total knockout |s=81 mb {I2} for producing {+35}Si from {+36}Si.      
  35SI cL E$From a least-squares fit to |g-ray energies.                         
  35SI cL L$Deduced by comparing the measured and eikonal-calculated parallel    
  35SI2cL momentum distributions of residuals.                                   
+ 35SI cG E,RI$From 2014St18, unless otherwise noted.                            
  35SI  N  1                                                                     
  35SI PN                                                                    C   
  35SI2PN           Yield/100 ions                                               
  35SI  L 0            (7/2-)                                                    
- 35SI cL $Partial knockout |s=52 mb {I4}.                                       
- 35SI cL $One-neutron knockout |s=23 mb {I6} (2015St06)                         
+ 35SI cL $Partial knockout |s=52 mb {I4}, including an unresolved population of 
+ 35SI2cL the 3/2+ isomer at 973 keV (2014St18).                                 
+ 35SI cL $Partial knockout |s=23 mb {I6}, resolved by the fitting parallel      
+ 35SI2cL momentum distribution subtracting all events that decay by prompt |g   
+ 35SI3cL emission with a linear combination of the theoretical distributions for
+ 35SI4cL neutron removal from the f{-7/2} and d{-3/2} orbits together via the   
+ 35SI5cL |h{+2} minimization method (2015St06).                                 
  35SI  L 908       4  (3/2-)            55 PS    14                             
- 35SI cL T$From analysis of broadened lineshape (2014St18)                      
- 35SI cL $Partial knockout |s=8 mb {I3} (2014St18,2015St06)                     
+ 35SI cL T$lifetime=80 ps {I20} extracted from fitting Geant4 simulation to     
+ 35SI2cL broadened line shapes via the maximum likelihood method (2014St18)     
+ 35SI cL $Partial knockout |s=8 mb {I3}.                                        
  35SI  G 908       4  25     2                                               C  
- 35SI2 G BE2=0.0017 +4-5 (2014St18)                                             
- 35SI  L 973       7   (3/2+)                                                   
- 35SI cL $Partial knockout |s=29 mb {I6} (2015St06)                             
- 35SI  L 1688      6    1/2+                               0                    
- 35SI cL $Partial knockout |s=13 mb {I1} (2014St18,2015St06)                    
+ 35SI2 G BE2=0.0017 +4-5                                                        
+ 35SI  L 973       7  (3/2+)                                                    
+ 35SI cL $Partial knockout |s=29 mb {I6}, resolved by 2015St06.                 
+ 35SI  L 1688      6  1/2+                              0                       
+ 35SI cL $Partial knockout |s=13 mb {I1}.                                       
  35SI  G 715       4  1.9    2                                                  
- 35SI  G 780       4   13    1                                               C  
+ 35SI  G 780       4  13     1                                               C  
  35SI  L 1970      6                                                            
  35SI cL $Partial knockout |s=1.1 mb {I2}.                                      
- 35SI  G 1970      6   1.4   2                                                  
- 35SI  L 2042      7    (1/2-)                             0,1                  
+ 35SI  G 1970      6  1.4    2                                                  
+ 35SI  L 2042      7  (1/2-)                            0,1                     
  35SI cL $Partial knockout |s=1.3 mb {I2}.                                      
- 35SI  G 1134      5   1.5   2                                               C  
- 35SI  L 2164      6    (5/2+)                             2,3                  
+ 35SI  G 1134      5  1.5    2                                               C  
+ 35SI  L 2164      6  (5/2+)                            2,3                     
  35SI cL $Partial knockout |s=1.1 mb {I2}.                                      
- 35SI  G 2164      6   1.4   2                                                  
+ 35SI  G 2164      6  1.4    2                                                  
  35SI  L 2275      6                                                            
  35SI cL $Partial knockout |s=1.6 mb {I2}.                                      
- 35SI  G 2275      6   2.0   3                                                  
- 35SI  L 2377      7                                                            
+ 35SI  G 2275      6  2.0    3                                                  
+ 35SI  L 2377      7                                    2,3                     
  35SI cL $Partial knockout |s=2.1 mb {I2}.                                      
- 35SI  G 2377      7   2.5   3                                                  
+ 35SI  G 2377      7  2.5    3                                                  
  35SI  L 3611      8                                                           ?
  35SI cL $Partial knockout |s=0.8 mb {I2}.                                      
- 35SI  G 3611      8   1.0   2                                                  
-                                                                                
+ 35SI  G 3611      8  1.0    2                                                  
+ 35SI cG $2014St18 observed one |g transition at 3611 keV, which must depopulate
+ 35SI2cG a state that is unbound to neutron emission by at least 1.1 MeV.       
+ 35SI cG $One possible explanation is this {+35}Si level is populated by 1n     
+ 35SI2cG knockout from the deeply-bound 1d{-5/2} orbit in {+36}Si and followed  
+ 35SI3cG by the emission of the other 1d{-5/2} neutron, resulting in a 2p-2h    
+ 35SI4cG configuration dominated by two holes in the deeply bound neutron       
+ 35SI5cG 1d{-5/2} orbit. Such a configuration should have a small overlap with  
+ 35SI6cG the ground state in {+34}Si that has a large contribution of 0p-0h     
+ 35SI7cG configurations, leading to a significantly hindered neutron decay. The 
+ 35SI8cG |g decay, on the other hand, would be a fast 5/2+ -> 7/2- g.s. E1 decay
+ 35SI9cG and could potentially compete with the neutron emission.               
+ 35SI cG $A second possible explanation could be that this state is weakly      
+ 35SI2cG populated in a more complicated multistep reaction pathway. The        
+ 35SI3cG 3611-keV |g results predominantly from events with residue momenta in  
+ 35SI4cG the tail of the momentum distribution. The low-momentum tail is        
+ 35SI5cG associated with more inelastic reactions, which would be consistent    
+ 35SI6cG with a multistep process.                                              
+

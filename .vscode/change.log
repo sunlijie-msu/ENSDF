@@ -1,5 +1,24 @@
 # Change Log for ENSDF Edits
 
+## 2025-06-01
+- Updated `d:\X\ND\A35\finished\Si35\new\Si35_9be_36si_35sig.ens`:
+  - Updated header record: NSR keynumbers to `2014ST18,2015ST06`, ENSDF date to `202509`, and added new H-records.
+  - Expanded general comments for `2014St18` and added comments for `2015St06` and Stroberg Ph.D. thesis.
+  - Added/updated dataset-specific comments (`dL E$`, `cL E$`, `cL L$`, `cG E,RI$`).
+  - Updated comments for partial knockout cross-sections and lifetimes for various levels (0, 908, 973, 1688 keV).
+  - Removed NSR_REF from some specific comment lines (e.g. BE2 value for 908 keV level, partial cross section for 973 keV level).
+  - Shifted L-transfer values to columns 50-53 for several levels.
+  - Removed continuation character `C` from `PN` record.
+  - Added extensive `cG` comments for the 3611 keV level.
+- Updated `d:\X\ND\A35\finished\Mg35\new\Mg35_adopted.ens`:
+  - Reordered general comment paragraphs by year (moved 2013StZY and 2012Kw02).
+- Updated `d:\X\ND\A35\finished\Al35\new\Al35_pb_35al_34alng.ens`:
+  - Corrected NUCID in header records from `35MG` to `35AL`.
+  - Corrected isotope formatting in a comment from `35Al -> 34Al` to `{+35}Al -> {+34}Al`.
+- Updated `d:\X\ND\A35\finished\Al35\new\Al35_adopted.ens`:
+  - Reordered general comment paragraphs by year.
+  - Reformatted `PB(35AL,34ALNG)` reaction comments (spectroscopic factors).
+
 ## 2025-05-30
 - Updated `d:\X\ND\A35\finished\P35\new\P35_adopted.ens`:
   - Clarified that `2021WA16` is a mass evaluation, not a direct measurement, in the general comments.
