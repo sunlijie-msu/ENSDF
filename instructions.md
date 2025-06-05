@@ -63,5 +63,25 @@ All `adopted.ens` files must follow the standardized ordering for general commen
 
 Evaluators should verify section ordering during the review process. Any deviations from this standard must be corrected before final submission.
 
+## PDF Regeneration
+
+To generate PDFs for each isotope in the A=35 chain after finalizing .ens, use the following PowerShell command:
+
+```powershell
+PS D:\X\ND\A35> Set-Location "D:\X\ND\Files"; $element = "Al"; Get-ChildItem "D:\X\ND\A35\finished\${element}35\new\*.ens" | ForEach-Object { java -jar "D:\X\ND\McMaster-MSU-Java-NDS\McMaster_MSU_JAVA_NDS_v3.0_01May2025.jar" $_.FullName "$($_.BaseName).pdf" }
+```
+
+To process all elements automatically, use:
+
+```powershell
+Set-Location "D:\X\ND\Files"; $elements = @("Al", "Ar", "Ca", "K", "Mg", "Na", "Ne", "P", "Si"); foreach ($element in $elements) { Get-ChildItem "D:\X\ND\A35\finished\${element}35\new\*adopted.ens" | ForEach-Object { java -jar "D:\X\ND\McMaster-MSU-Java-NDS\McMaster_MSU_JAVA_NDS_v3.0_01May2025.jar" $_.FullName "$($_.BaseName).pdf" } }
+```
+
+To remove all dummy.ens files from all element folders, use:
+
+```powershell
+Remove-Item "D:\X\ND\A35\finished\*35\new\dummy.ens" -Force
+```
+
 ---
 *Last updated: June 5, 2025*
