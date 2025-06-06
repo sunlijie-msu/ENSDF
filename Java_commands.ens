@@ -1,2 +1,0 @@
-cd /d D:\X\ND\Files
-for %F in ("D:\X\ND\Files\A35\finished\K35\new\*.ens") do java -jar "D:\X\ND\McMaster-MSU-Java-NDS\McMaster_MSU_JAVA_NDS_v3.0_01May2025.jar" "%F" "%~nF.pdf"
