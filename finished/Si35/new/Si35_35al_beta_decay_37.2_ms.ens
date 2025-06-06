@@ -4,6 +4,7 @@
  35SI  H TYP=FUL$AUT=JUN CHEN AND BALRAJ SINGH$CIT=ENSDF$CUT=31-MAY-2015$       
  35SI  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35SI2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
+ 35SI dL E$Least-squares fitting is done by GLSC (version 15-May-2025)          
  35SI c  2005Ti11,2006AnZW: A {+35}Al secondary beam at |?2 pps was produced via
  35SI2c  the fragmentation of a 78-MeV/nucleon {+36}S primary beam and selected 
  35SI3c  by the LISE3 spectrometer at GANIL. A total of 3.46|*10{+5} {+35}Al    
@@ -17,7 +18,6 @@
  35SIBc  scheme consisting of {+35}Si and {+34}Si levels, {+35}Al T{-1/2}, decay
  35SICc  branching ratios, log {Ift}, B(GT), and |b-delayed neutron emission    
  35SIDc  probability. Comparisons with shell-model calculations.                
-
  35SI c  2001Nu01,2002Nu02: Exp 1: A {+35}Al secondary beam at 8 pps was        
  35SI2c  produced via the fragmentation of a UC target with 1.4 GeV protons at  
  35SI3c  ISOLDE, CERN with subsequent surface-ionization and mass separation.   
@@ -32,13 +32,10 @@
  35SICc  lifetime measurement for the 974-keV level in {+35}Si used a thin      
  35SIDc  plastic scintillator for detecting |b and a BaF{-2} detector for       
  35SIEc  detecting |g.                                                          
-
- 35SI c  Other experimental studies on {+35}Al identification, T{-1/2}, and     
- 35SI2c  |b-delayed neutron emission probability: 2017Ha23, 1999YoZW,           
- 35SI3c  1995ReZZ/2008ReZZ, 1989MuZU, 1989Le16, 1988MuZY, 1988Mu08, 1988DuZT,   
- 35SI4c  1988BaYZ, 1987DuZU, 1987BaZI.                                          
+ 35SI c  Other experimental studies on {+35}Al T{-1/2} and |b-delayed neutron   
+ 35SI2c  emission probability: 2017Ha23, 1999YoZW, 1995ReZZ/2008ReZZ, 1989MuZU, 
+ 35SI3c  1989Le16, 1988MuZY, 1988Mu08, 1988DuZT, 1988BaYZ, 1987DuZU, 1987BaZI.  
  35SI c  Theoretical studies involving {+35}Al decay: 2018Yo06, 2013Li39        
- 35SI c  {+35}Al also decays to {+34}Si by |b{+-}n (38% {I2}) (2005Ti11).       
  35SI cB IB$From absolute measurements in 2001Nu01 and/or 2005Ti11 using        
  35SI2cB absolute |g-ray intensities for levels below neutron separation energy 
  35SI3cB and using delayed neutron intensities for levels above.                
@@ -48,38 +45,43 @@
  35SI cL E$From a least-squares fit to |g-ray energies if applicable.           
  35SI cL E(A)$From measured delayed neutron spectrum in 2005Ti11.               
  35SI cL J$From Adopted Levels                                                  
- 35AL  P 0           (5/2)+            38.1 MS   4              14141     80    
- 35AL cP QP$From 2012Wa38.                                                      
+ 35AL  P 0           (5/2)+            38.1 MS   4              14170     40    
  35AL cP J,T$From Adopted Levels of {+35}Al                                     
- 35SI  N 0.45                  1.0       1.0                                    
+ 35AL cP QP$From 2012Wa38.                                                      
+ 35SI  N 0.791     27          1.0       1.0                                    
  35SI cN NR$From 2001Nu01                                                       
  35SI PN                                                                     5  
  35SI  G 1130.4    4 3.2     9                                                  
+ 35SI2 G %IG=2.5 8                                                              
  35SI  G 5629      3 2.4     12                                                 
+ 35SI2 G %IG=1.9 +11-10                                                         
  35SI  L 0           (7/2)-                                                     
  35SI  B             3.0     1             6.04  2                          B   
  35SIS B EAV=6786 40                                                            
  35SI  L 909.95    23(3/2)-                                                     
- 35SI  B             0.9     LT             6.4  GT                         B   
- 35SIS B EAV=6337 40                                                            
  35SI  G 910.11    30 99.7   19                                                 
+ 35SI2 G %IG=78.8 24                                                            
  35SI  L 973.88    18(3/2+)            5.9 NS    6                              
  35SI cL T$From the time spectrum of delayed coincidences in 2001Nu01.          
- 35SI  B             50      3             4.67   3                             
+ 35SI  B             87.1    26            4.67   3                             
  35SIS B EAV=6306 40                                                            
  35SI cB IB$weighted average of 48 {I9} in 2001Nu01 and 50 {I3} in 2005Ti11     
  35SI  G 64.1      3 100       [E1]                    0.0368 8                 
  35SIS G KC=0.0342 7$LC=0.00244 5$MC=0.000158 4                                 
+ 35SI2 G %IG=79                                                                 
  35SI cG $B(E1)(W.u.)=3.5|*10{+-4} {i4} (2001Nu01)                              
  35SI  G 973.78    20 11.8   24 [M2]                                            
+ 35SI2 G %IG=9.3 18                                                             
  35SI cG $B(M2)(W.u.)=0.061 {i7} (2001Nu01)                                     
- 35SI  L 2168.2     4 5/2+                                                      
- 35SI  B             9.2     19            5.2   1                              
+ 35SI  L 2168.2    4  5/2+                                                      
+ 35SI  B             16.1    23            5.2   1                              
  35SIS B EAV=5717 40                                                            
  35SI cB IB$From 2001Nu01. Other: 6.7 {I9} in 2005Ti11 (only 2168|g transition  
  35SI2cB is observed).                                                          
  35SI  G 1194.2    4 5.3     12                                                 
+ 35SI2 G %IG=4.2 11                                                             
  35SI  G 2168.2    6  15     3                                                  
+ 35SI2 G %IG=11.9 21                                                            
  35SI  L 3140                                                               A   
  35SI  B             3.3     2             5.48   4                         D   
  35SIS B EAV=5237 40                                                            
@@ -104,4 +106,3 @@
  35SI  L 7690                                                               A   
  35SI  B             2.7     2             4.47   5                         D   
  35SIS B EAV=2993 40                                                            
-
