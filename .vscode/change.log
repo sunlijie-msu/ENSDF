@@ -1,5 +1,16 @@
 # Change Log for ENSDF Edits
 
+## 2025-06-09
+- Updated `d:\X\ND\A35\.vscode\copilot-instructions.md`:
+  - Added newlines and formatting to PowerShell commands for PDF generation and dummy file removal.
+- Deleted `d:\X\ND\A35\compliance_report.md`.
+- Updated `d:\X\ND\A35\finished\Al35\new\Al35_36mg_b-n_decay_6.9_ms.ens`:
+  - Added N (normalization) and cN (comment on normalization) records related to BR from 1999YoZW.
+- Updated `d:\X\ND\A35\finished\Al35\new\Al35_adopted.ens`:
+  - Corrected XREF dataset identifiers (e.g., C->CH, D->DPB, D->E).
+  - Minor formatting adjustment (extra space) on L records for levels 1975, 3245 keV.
+- Added `d:\X\ND\A35\.github\prompts\.prompt.md` with data checking instructions.
+
 ## 2025-06-01
 - Updated `d:\X\ND\A35\finished\Si35\new\Si35_9be_36si_35sig.ens`:
   - Updated header record: NSR keynumbers to `2014ST18,2015ST06`, ENSDF date to `202509`, and added new H-records.
