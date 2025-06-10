@@ -1,27 +1,51 @@
 # Change Log for ENSDF Edits
 
+## 2025-06-10
+- Updated `d:\\X\\ND\\A35\\finished\\K35\\new\\K35_adopted.ens`:
+  - Corrected NSR keynumber formatting (e.g., `2023BO17` to `2023Bo17`) for multiple references.
+  - Updated `%ECP` value and related comments for the 0.0 keV level (e.g., `$%|ep: from 1980Ew02 for E(p)>0.9 MeV...`).
+- Updated `d:\\X\\ND\\A35\\.vscode\\copilot-instructions.md`:
+  - Added a new section detailing NSR keynumber formatting rules (second letter of author lowercase, except in header).
+  - Modified the NSR keynumber formatting rule to include Q record as an exception for uppercase.
+  - Added rule under "Automatic Change Tracking" to always update both change.log files.
+  - Added rule under "Automatic Change Tracking": "Never create new or duplicate `change.log` files. Only use the existing `d:\\X\\ND\\A35\\.vscode\\change.log` and `d:\\X\\ND\\A35\\change.log` files."
+- Updated `d:\\X\\ND\\A35\\finished\\Al35\\new\\Al35_adopted.ens`:
+  - Changed `%B-N` from `36 3` to `37 4`.
+  - Updated comment for `%|b{+-}n` to "Unweighted average..." and added details about evaluator's additions for I|g from {+34}Si levels.
+- Updated `d:\\X\\ND\\A35\\finished\\Ar35\\new\\Ar35_35k_ec_decay_175_ms.ens`:
+  - Changed `DE EAV...` to `dE EAV...` on line 6.
+  - Modified `cN NR$` comment (lines 79-82) changing `|S%I{-p}` to `%(|e+|b{++})p`.
+- Updated `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_35al_beta_decay_38.1_ms.ens`:
+  - Changed `cL J,T$ Adopted Levels` to `cL J,T$ Adopted Levels of {+35}Si`.
+  - Changed `cB IB$ For bound levels, from the absolute...` to `cB IB$ For bound levels, from |g-ray intensity balance at each level . the absolute...`.
+  - Changed `cP J,T$ From Adopted Levels...` to `cP J,T$ From the Adopted Levels...`.
+  - Changed `cN NR$ |S%I|g(|g to g.s.)=61 {I3}` to `60 {I4}` and `|S%I{-n}=36 {I3}` to `%|b{+-}n=37 {I4}`.
+- Created/Modified `d:\\X\\ND\\A35\\test.ens` with content similar to `Si35_35al_beta_decay_38.1_ms.ens` but with some differences (e.g., `NR` value in N record, `E(n)` comment, `J` comment for levels).
+- Created/Modified `d:\\X\\ND\\A35\\change.log` (root level).
+- Regenerated `d:\\X\\ND\\A35\\finished\\K35\\pdf\\K35_adopted.pdf`.
+
 ## 2025-06-09
-- Updated `d:\X\ND\A35\.vscode\copilot-instructions.md`:
+- Updated `d:\\X\\ND\\A35\\.vscode\\copilot-instructions.md`:
   - Added newlines and formatting to PowerShell commands for PDF generation and dummy file removal.
-- Deleted `d:\X\ND\A35\compliance_report.md`.
-- Updated `d:\X\ND\A35\finished\Al35\new\Al35_36mg_b-n_decay_6.9_ms.ens`:
+- Deleted `d:\\X\\ND\\A35\\compliance_report.md`.
+- Updated `d:\\X\\ND\\A35\\finished\\Al35\\new\\Al35_36mg_b-n_decay_6.9_ms.ens`:
   - Added N (normalization) and cN (comment on normalization) records related to BR from 1999YoZW.
-- Updated `d:\X\ND\A35\finished\Al35\new\Al35_adopted.ens`:
+- Updated `d:\\X\\ND\\A35\\finished\\Al35\\new\\Al35_adopted.ens`:
   - Corrected XREF dataset identifiers (e.g., C->CH, D->DPB, D->E).
   - Minor formatting adjustment (extra space) on L records for levels 1975, 3245 keV.
-- Added `d:\X\ND\A35\.github\prompts\.prompt.md` with data checking instructions.
+- Added `d:\\X\\ND\\A35\\.github\\prompts\\.prompt.md` with data checking instructions.
 
 ## 2025-06-09 (Si35 updates)
-- `d:\X\ND\A35\finished\Si35\new\Si35_35al_beta_decay_38.1_ms.ens`:
+- `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_35al_beta_decay_38.1_ms.ens`:
     - Corrected G-record spacing (manual user fix after agent attempts).
     - Added `$E(n0){-c.m.}$ comments for levels 3140, 3450, 3770, 5190, and 5760 keV.
     - Corrected `35Si` to `{+35}Si` in a comment block (around lines 67-70).
     - Deleted 'D' flags from column 77 in Beta (B) records.
-- `d:\X\ND\A35\.vscode\copilot-instructions.md`:
+- `d:\\X\\ND\\A35\\.vscode\\copilot-instructions.md`:
     - Updated with detailed ENSDF 'G' record formatting rules.
 
 ## 2025-06-01
-- Updated `d:\X\ND\A35\finished\Si35\new\Si35_9be_36si_35sig.ens`:
+- Updated `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_9be_36si_35sig.ens`:
   - Updated header record: NSR keynumbers to `2014ST18,2015ST06`, ENSDF date to `202509`, and added new H-records.
   - Expanded general comments for `2014St18` and added comments for `2015St06` and Stroberg Ph.D. thesis.
   - Added/updated dataset-specific comments (`dL E$`, `cL E$`, `cL L$`, `cG E,RI$`).
@@ -30,30 +54,30 @@
   - Shifted L-transfer values to columns 50-53 for several levels.
   - Removed continuation character `C` from `PN` record.
   - Added extensive `cG` comments for the 3611 keV level.
-- Updated `d:\X\ND\A35\finished\Mg35\new\Mg35_adopted.ens`:
+- Updated `d:\\X\\ND\\A35\\finished\\Mg35\\new\\Mg35_adopted.ens`:
   - Reordered general comment paragraphs by year (moved 2013StZY and 2012Kw02).
-- Updated `d:\X\ND\A35\finished\Al35\new\Al35_pb_35al_34alng.ens`:
+- Updated `d:\\X\\ND\\A35\\finished\\Al35\\new\\Al35_pb_35al_34alng.ens`:
   - Corrected NUCID in header records from `35MG` to `35AL`.
   - Corrected isotope formatting in a comment from `35Al -> 34Al` to `{+35}Al -> {+34}Al`.
-- Updated `d:\X\ND\A35\finished\Al35\new\Al35_adopted.ens`:
+- Updated `d:\\X\\ND\\A35\\finished\\Al35\\new\\Al35_adopted.ens`:
   - Reordered general comment paragraphs by year.
   - Reformatted `PB(35AL,34ALNG)` reaction comments (spectroscopic factors).
 
 ## 2025-05-30
-- Updated `d:\X\ND\A35\finished\P35\new\P35_adopted.ens`:
+- Updated `d:\\X\\ND\\A35\\finished\\P35\\new\\P35_adopted.ens`:
   - Clarified that `2021WA16` is a mass evaluation, not a direct measurement, in the general comments.
   - Removed `2021WA16` from the list of theoretical calculation NSRs and retained `2019GR08`.
 
 ## 2025-05-29
-- Updated `d:\X\ND\A35\finished\Mg35\new\Mg35_adopted.ens`:
+- Updated `d:\\X\\ND\\A35\\finished\\Mg35\\new\\Mg35_adopted.ens`:
   - Reordered general comment paragraphs chronologically (newest to oldest).
-- Updated `d:\X\ND\A35\finished\K35\new\K35_adopted.ens`:
+- Updated `d:\\X\\ND\\A35\\finished\\K35\\new\\K35_adopted.ens`:
   - Added `2023ZH10` to the mass measurements.
   - Revised the list of theoretical calculation NSRs to include `2023BO17`, `2023FO05`, `2022ZO01`, `2020MA25`, `2016SI02`, `2016ME17`, and `2003SM02`.
   - Updated the description of calculated quantities to include "mass, T{-1/2}, reaction rates".
 
 ## 2025-05-28
-- Updated `d:\X\ND\A35\finished\P35\new\P35_adopted.ens`:
+- Updated `d:\\X\\ND\\A35\\finished\\P35\\new\\P35_adopted.ens`:
   - Refined the list of theoretical NSRs in the general comment section to include: 2023ME02, 2023CH17, 2020SA44, 2020MA25, 2020FO04, 2019AB06, 2012BOZT, and 2009No01.
   - Ensured all NSRs in the 'Theoretical calculations' comment are in reverse chronological order and correctly formatted.
   - Verified that 2012BoZT was already present and correctly placed.

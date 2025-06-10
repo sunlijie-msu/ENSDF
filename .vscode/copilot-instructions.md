@@ -1,3 +1,4 @@
+``````instructions
 `````instructions
 ````instructions
 # Copilot Instructions
@@ -15,6 +16,10 @@
 - DO NOT add extra spaces when adding Jπ values or other information to ENSDF records
 - DO NOT shift existing numbers in each line when adding new information
 - Focus primarily on K35 and P35 files - Ar35 files are already completed
+
+## NSR Keynumber Formatting
+- NSR (Nuclear Science References) keynumbers cited in comments or other records (e.g., Q-record, L-record for T1/2, moments) should have the second letter of the author's name in lowercase. For example, `2023BO17` should be `2023Bo17`, `2021WA16` should be `2021Wa16`.
+- The only exception is when a keynumber appears in the first line header record or Q record of an ENSDF dataset (columns 61-68), where it should be all uppercase.
 
 ## Spin-Parity (Jπ) Placement
 - When adding spin-parity values to levels, place them exactly at column 23
@@ -53,6 +58,8 @@
 ## Automatic Change Tracking
 - Track all changes made to ENSDF files throughout each workday
 - At the end of each workday, update the change.log file with today's date and a detailed list of changes
+- Always update `d:\X\ND\A35\.vscode\change.log` (and `d:\X\ND\A35\change.log` if intended to be a duplicate) after making significant changes to track all modifications.
+- Never create new or duplicate `change.log` files. Only use the existing `d:\X\ND\A35\.vscode\change.log` and `d:\X\ND\A35\change.log` files.
 - Compare old versions with new versions to ensure accuracy in change reporting
 - Focus on substantive changes over formatting fixes
 - Organize changes by file type or dataset for clarity
