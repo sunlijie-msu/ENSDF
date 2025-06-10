@@ -11,6 +11,15 @@
   - Minor formatting adjustment (extra space) on L records for levels 1975, 3245 keV.
 - Added `d:\X\ND\A35\.github\prompts\.prompt.md` with data checking instructions.
 
+## 2025-06-09 (Si35 updates)
+- `d:\X\ND\A35\finished\Si35\new\Si35_35al_beta_decay_38.1_ms.ens`:
+    - Corrected G-record spacing (manual user fix after agent attempts).
+    - Added `$E(n0){-c.m.}$ comments for levels 3140, 3450, 3770, 5190, and 5760 keV.
+    - Corrected `35Si` to `{+35}Si` in a comment block (around lines 67-70).
+    - Deleted 'D' flags from column 77 in Beta (B) records.
+- `d:\X\ND\A35\.vscode\copilot-instructions.md`:
+    - Updated with detailed ENSDF 'G' record formatting rules.
+
 ## 2025-06-01
 - Updated `d:\X\ND\A35\finished\Si35\new\Si35_9be_36si_35sig.ens`:
   - Updated header record: NSR keynumbers to `2014ST18,2015ST06`, ENSDF date to `202509`, and added new H-records.

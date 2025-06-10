@@ -1,3 +1,4 @@
+`````instructions
 ````instructions
 # Copilot Instructions
 
@@ -222,6 +223,68 @@ Remove-Item "D:\\X\\ND\\A35\\finished\\*35\\new\\dummy.ens" -Force
 
 ```
 
+## ENSDF 'G' Record Formatting Rules:
+
+Based on the specific parsing of lines like `35SI  G 1130.4    4  3.2    9`:
+
+1.  **Eγ (Energy of the gamma ray):**
+    *   The Eγ value starts in **column 10**.
+    *   The field for Eγ (value plus any trailing spaces) spans **columns 10-19**.
+    *   The Eγ value is placed starting at column 10, and any remaining characters within columns 10-19 are spaces.
+    *   *Example for `1130.4`*: `1130.4` occupies columns 10-15, followed by 4 spaces in columns 16-19.
+
+2.  **ΔEγ (Uncertainty in Eγ):**
+    *   Occupies **columns 20-21**.
+    *   If ΔEγ is a single digit (e.g., `4`), it is placed in column 20, followed by a space in column 21 (formatted as `4 `).
+    *   If ΔEγ is two digits (e.g., `30`), it occupies columns 20 and 21 (formatted as `30`).
+
+3.  **Spacing after ΔEγ:**
+    *   **Column 22** is always a space.
+
+4.  **RI (Relative Intensity of the gamma ray):**
+    *   The RI value starts in **column 23**.
+    *   The field for RI (value plus any trailing spaces) spans **columns 23-29**.
+    *   The RI value is placed starting at column 23, and any remaining characters within columns 23-29 are spaces.
+    *   *Example for `3.2`*: `3.2` occupies columns 23-25, followed by 4 spaces in columns 26-29.
+    *   *Example for `99.7`*: `99.7` occupies columns 23-26, followed by 3 spaces in columns 27-29.
+
+5.  **ΔRI (Uncertainty in RI):**
+    *   Occupies **columns 30-31**.
+    *   If ΔRI is a single digit (e.g., `9`), it is placed in column 30, followed by a space in column 31 (formatted as `9 `).
+    *   If ΔRI is two digits (e.g., `19`), it occupies columns 30 and 31 (formatted as `19`).
+    *   If there is no ΔRI, columns 30-31 should be left blank (formatted as `  `).
+
+6.  **Mult. (Multipolarity of the transition) and other fields:**
+    *   These follow after column 31.
+    *   Typically, there will be at least one space in column 32 before other fields like Multipolarity begin.
+    *   The exact starting column for Multipolarity can vary (e.g., column 34 or 36, depending on other content and spacing).
+
+**Examples based on this specific parsing:**
+
+*   Line: `35SI  G 1130.4    4  3.2    9`
+    *   NUCID: `35SI` (cols 1-5)
+    *   Record Type: `G` (col 9)
+    *   Eγ: `1130.4` (value in cols 10-15) followed by 4 spaces (cols 16-19). Display: `1130.4    `
+    *   ΔEγ: `4` (value `4` in col 20, space in col 21). Display: `4 `
+    *   Space: (col 22). Display: ` `
+    *   RI: `3.2` (value in cols 23-25) followed by 4 spaces (cols 26-29). Display: `3.2    `
+    *   ΔRI: `9` (value `9` in col 30, space in col 31). Display: `9 `
+
+*   Line: `35SI  G 910.11    30 99.7   19`
+    *   Eγ: `910.11` (value in cols 10-15) followed by 4 spaces (cols 16-19). Display: `910.11    `
+    *   ΔEγ: `30` (value in cols 20-21). Display: `30`
+    *   Space: (col 22). Display: ` `
+    *   RI: `99.7` (value in cols 23-26) followed by 3 spaces (cols 27-29). Display: `99.7   `
+    *   ΔRI: `19` (value in cols 30-31). Display: `19`
+
+*   Line: `35SI  G 64.1      3  100       [E1]                   0.0368 8`
+    *   Eγ: `64.1` (value in cols 10-13) followed by 6 spaces (cols 14-19). Display: `64.1      `
+    *   ΔEγ: `3` (value `3` in col 20, space in col 21). Display: `3 `
+    *   Space: (col 22). Display: ` `
+    *   RI: `100` (value in cols 23-25) followed by 4 spaces (cols 26-29). Display: `100    `
+    *   ΔRI: (none) Blank in cols 30-31. Display: `  `
+    *   (Spaces in cols 32-35, then `[E1]` starts col 36 in this specific example)
+
 ## Important Additional Rules
 
 - Do not modify A31.ens, A32.ens or A33.ens!
@@ -229,4 +292,4 @@ Remove-Item "D:\\X\\ND\\A35\\finished\\*35\\new\\dummy.ens" -Force
 ---
 *Last updated: June 5, 2025*
 // @auto_load in future sessions: true
-````
+`````
