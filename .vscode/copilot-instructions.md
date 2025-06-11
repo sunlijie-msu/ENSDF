@@ -59,7 +59,7 @@
 - Track all changes made to ENSDF files throughout each workday
 - At the end of each workday, update the change.log file with today's date and a detailed list of changes
 - Always update `d:\X\ND\A35\.vscode\change.log` (and `d:\X\ND\A35\change.log` if intended to be a duplicate) after making significant changes to track all modifications.
-- Never create new or duplicate `change.log` files. Only use the existing `d:\X\ND\A35\.vscode\change.log` and `d:\X\ND\A35\change.log` files.
+- Never create new or duplicate `change.log` files. Only use the existing `d:\X\ND\A35\.vscode\change.log`.
 - Compare old versions with new versions to ensure accuracy in change reporting
 - Focus on substantive changes over formatting fixes
 - Organize changes by file type or dataset for clarity

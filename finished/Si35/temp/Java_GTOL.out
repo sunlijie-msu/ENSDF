@@ -6,7 +6,7 @@
  35SI2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
  35SI dB EAV,LOGFT$FROM BetaShape v2.4 (Jun-2024) 2023Mo21.                     
  35SI dG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
- 35SI dL E$Least-squares fitting is done by GLSC (version 15-May-2025)          
+ 35SI dL E$Least-squares fitting is done by GLSC (version 03-Jun-2025)          
  35SI c  2005Ti11,2006AnZW: A {+35}Al secondary beam at |?2 pps was produced via
  35SI2c  the fragmentation of a 78-MeV/nucleon {+36}S primary beam and selected 
  35SI3c  by the LISE3 spectrometer at GANIL. A total of 3.46|*10{+5} {+35}Al    
@@ -47,21 +47,17 @@
  35SI2cL |g transitions. For unbound levels, from 2005Ti11 based on the neutron 
  35SI3cL time-of-flight spectrum.                                               
  35SI cL J,T$From the Adopted Levels of {+35}Si                                 
- 35SI cB IB$For bound excited states, I|b{+-} is from |g+ce intensity balance at
- 35SI2cB each state. Quoted I|b{+-} values without uncertainties are considered 
- 35SI3cB upper limits due to the incomplete decay scheme, and the associated log
- 35SI4cB {Ift} values are considered lower limits. For unbound excited states,  
- 35SI5cB I|b{+-} is from the absolute I|b{+-} in 2005Ti11 based on neutron      
- 35SI6cB intensities.                                                           
- 35SI cG E,RI$From 2001Nu01                                                     
- 35SI cG M$Deduced from J|p.                                                    
+ 35SI cB IB$For bound levels, I(|b{+-}) from |g+ce intensity balance at each    
+ 35SI2cB level, unless otherwise noted. For unbound levels, I(|b{+-}) from the  
+ 35SI3cB absolute I|b{+-} in 2005Ti11 based on neutron intensities.             
+ 35SI cG E,RI,M$From 2001Nu01                                                   
  35AL  P 0           (5/2)+            38.1 MS   4              14170     40    
  35AL cP J,T$From the Adopted Levels of {+35}Al                                 
  35AL cP QP$From 2021Wa16                                                       
  35SI  N 0.47                  1.0       1.0                                    
- 35SI cN NR$0.47 {I4} from |S%I(|g+ce to g.s.)=60 {I4}, deduced from            
- 35SI2cN 100-%|b{+-}n-%I|b{+-}(g.s.), where %|b{+-}n=37 {I4} from the Adopted   
- 35SI3cN Levels of {+35}Al and %I|b{+-}(g.s.)=3.0 {I10} from 2001Nu01. The      
+ 35SI cN NR$0.47 {I4} from |S%I|g(|g to g.s.)=60 {I4}, deduced from             
+ 35SI2cN 100-%|b{+-}n-%I(|b{+-})(g.s.), where %|b{+-}n=37 {I4} from the Adopted 
+ 35SI3cN Levels of {+35}Al and %I(|b{+-})(g.s.)=3.0 {I10} from 2001Nu01. The    
  35SI4cN deduced normalization factor should be considered an upper limit due to
  35SI5cN potential missing |g transitions from unobserved levels in the gap to  
  35SI6cN the ground state. Other: 0.45 from 2001Nu01, based on %|b{+-}n=41      
@@ -70,7 +66,7 @@
  35SI  G 1130.4    4  3.2    9                                                  
  35SI2 G %IG=1.5                                                                
  35SI  G 5629      3  2.4    12                                                 
- 35SI2 G %IG=1.1                                                                
+ 35SI2 G %IG=1.2                                                                
  35SI  L 0            (7/2)-                                                    
  35SI  B             3.0     10          6.1     2                              
  35SIS B EAV=6771 20                                                            
@@ -79,33 +75,29 @@
  35SI3cB of excited states of {+35}Si with the decay of {+35}Si activity and    
  35SI4cB assuming no direct {+35}Si production.                                 
  35SI  L 909.95    23 (3/2)-           55 PS     14                             
- 35SI  B 
- 35SI cB IB$<0.9 from 2001Nu01. The net feeding is deduced to be -1.9 {I9} from 
- 35SI2cB |g+ce intensity balance.                                               
+ 35SI cL $Calculated Net Feeding from |g+ce Intensity Balance is consistent with
+ 35SI2cL 0.                                                                     
  35SI  G 910.11    30 99.7   19 [E2]                                            
  35SIS G  CC=4.13E-5 6$KC=3.84E-5 5$LC=2.74E-6 4$MC=1.805E-7 25                 
- 35SI2 G %IG=47                                                                 
+ 35SI2 G %IG=48                                                                 
  35SI  L 973.88    18 (3/2+)           5.9 NS    6                              
- 35SI cL T$lifetime=8.5 ns {I9} from the |b|g(t) in 2001Nu01, also adopted in   
- 35SI2cL the Adopted Levels.                                                    
- 35SI  B             52                  4.7                                    
+ 35SI cL T$lifetime=8.5 ns {I9} from the |b|g(t) in 2001Nu01. This value is     
+ 35SI2cL adopted in the Adopted Levels.                                         
+ 35SI  B             53                  4.7                                    
  35SIS B EAV=6293 20                                                            
- 35SI cB IB$48 {I9} from 2001Nu01; 50 {I3} from 2005Ti11.                       
  35SI  G 64.1      3  100       [E1]                   0.0368 8                 
  35SIS G  KC=0.0342 7$LC=0.00244 5$MC=0.0001581 33                              
- 35SI2 G %IG=47                                                                 
+ 35SI2 G %IG=48                                                                 
  35SI  G 973.78    20 11.8   24 [M2]                                            
  35SIS G  CC=5.05E-5 7$KC=4.69E-5 7$LC=3.36E-6 5$MC=2.211E-7 31                 
- 35SI2 G %IG=5.6                                                                
  35SI  L 2168.16   36 5/2+                                                      
- 35SI  B             9.5                 5.2                                    
+ 35SI  B             9.7                 5.2                                    
  35SIS B EAV=5706 20                                                            
- 35SI cB IB$9.2 {I19} from 2001Nu01; 6.7 {I9} from 2005Ti11 with only one branch
- 35SI2cB 2168|g observed.                                                       
+ 35SI cB IB$Other: 6.7 {I9} from 2005Ti11 with only one branch 2168|g observed. 
  35SI  G 1194.2    4  5.3    12                                                 
  35SI2 G %IG=2.5                                                                
  35SI  G 2168.2    6  15     3                                                  
- 35SI2 G %IG=7.1                                                                
+ 35SI2 G %IG=7.2                                                                
  35SI  L 3140                                                                   
  35SI cL $Deduced E(n0){-c.m.}=666.                                             
  35SI  B             3.3     2           5.5                                    
@@ -138,4 +130,4 @@
  35SI cL $Deduced E(n1){-c.m.}=1890.                                            
  35SI  B             2.7     2           4.5                                    
  35SIS B EAV=2995                                                               
-
+                                                                                

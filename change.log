@@ -1,25 +1,5 @@
+// filepath: d:\X\ND\A35\.vscode\change.log
 # Change Log for ENSDF Edits
-
-## 2025-06-10 (Evening)
-- Updated `d:\\X\\ND\\A35\\finished\\Ar35\\new\\Ar35_35k_ec_decay_175_ms.ens`:
-  - Removed trailing spaces from L records (e.g., 2637.99, 2982.79, 4785.8, 6348 keV levels).
-  - Added `LT` qualifier to LOGFT for the 7527 keV level E record.
-- Updated `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_35al_beta_decay_38.1_ms.ens`:
-  - Revised general comments for `cL J,T`, `cB IB`, and `cG M`.
-  - Updated N record (NR value and uncertainty) and associated `cN NR` comment.
-  - Adjusted %IG for 5629 keV G record.
-  - Added B record and `cB IB` comment for 909.95 keV L record; updated %IG for 910.11 keV G record.
-  - Updated `cL T` comment for 973.88 keV L record.
-  - Updated B record and added `cB IB` comment for 973.88 keV L record; updated %IG for 64.1 keV G record and added %IG for 973.78 keV G record.
-  - Updated E and DE for 2168.16 keV L record.
-  - Updated B record and `cB IB` comment for 2168.16 keV L record; updated %IG for 2168.2 keV G record.
-- Regenerated `d:\\X\\ND\\A35\\finished\\Si35\\pdf\\Si35_35al_beta_decay_38.1_ms.pdf`.
-- Created/Updated analysis output files in `d:\\X\\ND\\A35\\finished\\Si35\\temp\\`:
-  - `GLSC_combined.out`
-  - `Java_GABS.out`
-  - `Java_GABS.rpt`
-  - `Java_GTOL.out`
-  - `Java_GTOL.rpt`
 
 ## 2025-06-10
 - Updated `d:\\X\\ND\\A35\\finished\\K35\\new\\K35_adopted.ens`:
@@ -315,3 +295,24 @@
 - Added concise 1998Sc19 reference comment describing {+35}K polarization and g-factor measurements
 - Updated copilot-instructions.md with rule about not modifying first/last line indentation
 - Fixed spelling and formatting errors in various reference comments
+
+## 2025-06-10 (Evening)
+- Updated `d:\\X\\ND\\A35\\finished\\Ar35\\new\\Ar35_35k_ec_decay_175_ms.ens`:
+  - Removed trailing spaces from L records (e.g., 2637.99, 2982.79, 4785.8, 6348 keV levels).
+  - Added `LT` qualifier to LOGFT for the 7527 keV level E record.
+- Updated `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_35al_beta_decay_38.1_ms.ens`:
+  - Revised general comments for `cL J,T`, `cB IB`, and `cG M`.
+  - Updated N record (NR value and uncertainty) and associated `cN NR` comment.
+  - Adjusted %IG for 5629 keV G record.
+  - Added B record and `cB IB` comment for 909.95 keV L record; updated %IG for 910.11 keV G record.
+  - Updated `cL T` comment for 973.88 keV L record.
+  - Updated B record and added `cB IB` comment for 973.88 keV L record; updated %IG for 64.1 keV G record and added %IG for 973.78 keV G record.
+  - Updated E and DE for 2168.16 keV L record.
+  - Updated B record and `cB IB` comment for 2168.16 keV L record; updated %IG for 2168.2 keV G record.
+- Regenerated `d:\\X\\ND\\A35\\finished\\Si35\\pdf\\Si35_35al_beta_decay_38.1_ms.pdf`.
+- Created/Updated analysis output files in `d:\\X\\ND\\A35\\finished\\Si35\\temp\\`:
+  - `GLSC_combined.out`
+  - `Java_GABS.out`
+  - `Java_GABS.rpt`
+  - `Java_GTOL.out`
+  - `Java_GTOL.rpt`
