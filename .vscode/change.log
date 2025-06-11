@@ -1,5 +1,19 @@
 # Change Log for ENSDF Edits
 
+## 2025-06-11
+- Updated `d:\\\\X\\\\ND\\\\A35\\\\finished\\\\Si35\\\\new\\\\Si35_adopted.ens`:
+  - Formatted reaction string in `cL J$` comment for the 0.0 keV level: `L({2}H({34}Si,pγ))=L({9}Be({36}Si,{35}Siγ))` to `L({2}H({34}Si,p))=L({36}Si,{35}Si)=3 from 0+ and |nf{-7/2} configuration from shell model.`
+  - Corrected formatting of `cL J$` comments for the 909.95 keV and 2044 keV levels.
+  - Updated `cL T$` comment for the 909.95 keV level.
+  - Updated `cL T$` comment for the 973.88 keV level.
+  - Updated `cL J$` comment for the 1689 keV level.
+  - Updated `cG E$` and `cG RI$` comments for the 1134 keV gamma transition.
+  - Updated `cL J$` comment for the 2168.2 keV level.
+  - Updated `cL E$` and `cL J$` comments for the 5500 keV level.
+  - General review and minor corrections to reaction formatting and references in comments.
+- Updated `d:\\\\X\\\\ND\\\\A35\\\\.vscode\\\\copilot-instructions.md`:
+  - Clarified that only `d:\\\\X\\\\ND\\\\A35\\\\.vscode\\\\change.log` should be used and updated.
+
 ## 2025-06-10 (Evening)
 - Updated `d:\\X\\ND\\A35\\finished\\Ar35\\new\\Ar35_35k_ec_decay_175_ms.ens`:
   - Removed trailing spaces from L records (e.g., 2637.99, 2982.79, 4785.8, 6348 keV levels).
