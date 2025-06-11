@@ -50,11 +50,12 @@
  35SI c  Theoretical calculations (binding energies, deformation, quadrupole    
  35SI2c  moments, radii, levels, J|p, etc.): 2011Ka03, 2009No01, 2008Wi11,      
  35SI3c  2007Ch82, 2004Kh16, 1999Du05, 1994Mo37, 1994Po05, 1987Wa10, 1986Wo02.  
- 35SI cG E,RI$From {+35}Al |b{+-} decay, unless otherwise noted.                
- 35SI cG E(K,B),RI(K)$From {+9}Be({+36}Si,{+35}Si|g)                            
  35SI cL E$From a least-squares fit to |g-ray energies for levels connected with
  35SI2cL |g transitions; from {+35}Al |b{+-}-delayed neutron decays for other   
  35SI3cL levels, unless otherwise noted.                                        
+ 35SI cL J(J)$Allowed |b{+-} feeding from (5/2)+ parent.
+ 35SI cG E,RI$From {+35}Al |b{+-} decay, unless otherwise noted.                
+ 35SI cG E(A,E),RI(A)$From {+9}Be({+36}Si,{+35}Si|g)                            
  35SI  XA35AL B- DECAY (38.1 MS)                                                
  35SI  XB36AL B-N DECAY (12.0 MS)                                               
  35SI  XC37AL B-2N DECAY (11.4 MS)                                              
@@ -64,11 +65,13 @@
  35SI  L 0            (7/2)-           0.78 S    12                             
  35SIX L XREF=ABCDE                                                             
  35SI2 L %B-=100$ %B-N<5 (1995ReZZ,2008ReZZ)                                    
- 35SI2 L MOMM1=(-)1.638 4 (2007Ne14,2019StZV)                                   
- 35SI cL MOMM1$From |b-NMR (2007Ne14).                                          
+ 35SI2 L MOMM1=(-)1.639 4 (2007Ne14,2019StZV)                                   
+ 35SI cL MOMM1$From original (-)1.638 {I4} using |b-NMR (2007Ne14) with         
+ 35SI2cL corrections by 2019StZV.                                               
  35SI cL J$L({+2}H({+34}Si,p))=L({+36}Si,{+35}Si)=3 from 0+ and |nf{-7/2}       
  35SI2cL configuration from shell model.                                        
- 35SI cL T$From |b|g(t) (1988DuZS,1988DuZT). Other: 0.87 s {I17} (1986Du07).    
+ 35SI cL T$From |b|g(t) (1988DuZS,1988DuZT). Other: 0.87 s {I17} by the same    
+ 35SI2cL group (1986Du07).                                                      
  35SI cL $Reduced strong absorption radius r{+2}{-0}=1.261 fm{+2} {I35} from the
  35SI2cL energy-integrated |s of Si({+35}Si,X) (2006Kh08) and r{+2}{-0}=1.258   
  35SI3cL fm{+2} {I92} from the energy-integrated |s of Si({+35}Si,X) (1999Ai02).
@@ -95,54 +98,53 @@
  35SI  L 1689.4    28 1/2+                                                      
  35SIX L XREF=E                                                                 
  35SI cL J$L({+36}Si,{+35}Si)=0 from 0+.                                        
- 35SI  G 715       4 14.6    16                                             K   
- 35SI  G 780       4 100     8                                              K   
+ 35SI  G 715       4 14.6    16                                             A   
+ 35SI  G 780       4 100     8                                              A   
  35SI  L 1970      6                                                            
  35SIX L XREF=E                                                                 
- 35SI  G 1970      6 100                                                    K   
+ 35SI  G 1970      6 100                                                    E   
  35SI  L 2044      5  (1/2)-                                                    
  35SIX L XREF=DE                                                                
  35SI cL J$L({+2}H({+34}Si,p))=1 from 0+ and |np{-1/2} configuration from shell 
  35SI2cL model.                                                                 
- 35SI  G 1134      5 100                                                    B   
+ 35SI  G 1134      5 100                                                    E   
  35SI cG E$Other: 1134 {I6} from {+2}H({+34}Si,p|g).                            
- 35SI cG RI$From ({+36}Si,{+35}Si|g) and {+2}H({+34}Si,p|g).                    
  35SI  L 2168.2    4  (5/2+)                                                    
  35SIX L XREF=AE                                                                
- 35SI cL J$L({+36}Si,{+35}Si)=2,3 from 0+ and from shell model. A possible      
- 35SI2cL isobaric analog state in {+35}P with L({+1}H({+34}Si,p))=2 from        
- 35SI3cL R-matrix analysis in 2012Im01.                                         
+ 35SI cL J$From shell model and its possible isobaric analog state in {+35}P    
+ 35SI2cL with L({+1}H({+34}Si,p))=2 from R-matrix analysis in 2012Im01.         
+ 35SI3cL L({+36}Si,{+35}Si)=2,3 from 0+.                                        
  35SI  G 1194.2    4 35      8                                                  
  35SI  G 2168.2    6 100     20                                                 
  35SI cG E$Other: 2164 {I6} from ({+36}Si,{+35}Si|g).                           
  35SI  L 2275      6                                                            
  35SIX L XREF=E                                                                 
- 35SI  G 2275      6 100                                                    K   
+ 35SI  G 2275      6 100                                                    E   
  35SI  L 2377      7                                                            
  35SIX L XREF=E                                                                 
- 35SI  G 2377      7 100                                                    K   
- 35SI  L 3140                                                                   
+ 35SI  G 2377      7 100                                                    E   
+ 35SI  L 3140         (3/2+,5/2+,7/2+)                                      J   
  35SIX L XREF=A                                                                 
- 35SI  L 3450                                                                   
+ 35SI  L 3450         (3/2+,5/2+,7/2+)                                      J   
  35SIX L XREF=A                                                                 
  35SI  L 3611      8                                                           ?
  35SIX L XREF=E(?)                                                          
- 35SI  G 3611      8 100                                                    K   
- 35SI  L 3770                                                                   
+ 35SI  G 3611      8 100                                                    E   
+ 35SI  L 3770         (3/2+,5/2+,7/2+)                                      J   
  35SIX L XREF=A                                                                 
- 35SI  L 5190                                                                   
+ 35SI  L 5190         (3/2+,5/2+,7/2+)                                      J   
  35SIX L XREF=A                                                                 
  35SI  L 5500      AP (5/2)-                                                    
  35SIX L XREF=D                                                                 
  35SI cL E$A broad level at |?5500 deduced from E{-p} in {+2}H({+34}Si,p).      
  35SI cL J$L({+2}H({+34}Si,p))=3 from 0+ and |nf{-5/2} configuration from shell 
  35SI2cL model.                                                                 
- 35SI  L 5760                                                                   
+ 35SI  L 5760         (3/2+,5/2+,7/2+)                                      J   
  35SIX L XREF=A                                                                 
- 35SI  L 6330                                                                   
+ 35SI  L 6330         (3/2+,5/2+,7/2+)                                      J   
  35SIX L XREF=A                                                                 
- 35SI  L 7360                                                                   
+ 35SI  L 7360         (3/2+,5/2+,7/2+)                                      J   
  35SIX L XREF=A                                                                 
- 35SI  L 7690                                                                   
+ 35SI  L 7690         (3/2+,5/2+,7/2+)                                      J   
  35SIX L XREF=A                                                                 
 
