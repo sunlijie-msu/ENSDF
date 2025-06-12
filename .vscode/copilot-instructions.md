@@ -29,6 +29,14 @@
   - Jπ (1/2+,3/2+) starts precisely at column 23
 - Never add additional spaces that would shift uncertainty values
 
+## L-Transfer Rules for Jπ Deduction
+- L=0 → Jπ: `1/2+`
+- L=1 → Jπ: `1/2-,3/2-`
+- L=2 → Jπ: `3/2+,5/2+`
+- L=3 → Jπ: `5/2-,7/2-`
+- These are general rules; always confirm with specific experimental data or adopted level schemes if available.
+- L-values themselves should NOT be entered into the Jπ column.
+
 ## Relative Intensity (RI) Placement in G-Records
 - RI values in G-records should always start from column 24.
 - The RI value itself should be left-justified within a 7-character field.

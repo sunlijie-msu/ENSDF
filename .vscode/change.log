@@ -1,25 +1,17 @@
 # Change Log for ENSDF Edits
 
 ## 2025-06-11
-- Reverted Jπ changes in `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_35al_beta_decay_38.1_ms.ens`:
+- Reverted agent's incorrect Jπ changes in `d:\X\ND\A35\finished\Si35\new\Si35_35al_beta_decay_38.1_ms.ens` (reflects user undoing prior agent errors):
   - Restored Jπ for 2168.16 keV level from `(5/2+)` to `5/2+`.
   - Removed Jπ values `(3/2+,5/2+,7/2+)` from L-records for levels 3140, 3450, 3770, 5190, 5760, 6330, 7360, and 7690 keV.
-- Updated `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_35al_beta_decay_38.1_ms.ens`:
+- Updated `d:\X\ND\A35\finished\Si35\new\Si35_35al_beta_decay_38.1_ms.ens` (accepted changes):
   - Changed Jπ for 2168.16 keV level from `5/2+` to `(5/2+)`.
   - Added Jπ values `(3/2+,5/2+,7/2+)` to L-records for levels 3140, 3450, 3770, 5190, 5760, 6330, 7360, and 7690 keV.
-- Verified J,T for parent {+35}Al in `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_35al_beta_decay_38.1_ms.ens` against `d:\\X\\ND\\A35\\finished\\Al35\\new\\Al35_adopted.ens`. Confirmed (5/2)+ and accuracy of the comment "From the Adopted Levels of {+35}Al".
-- Updated `d:\\\\X\\\\ND\\\\A35\\\\finished\\\\Si35\\\\new\\\\Si35_adopted.ens`:
-  - Formatted reaction string in `cL J$` comment for the 0.0 keV level: `L({2}H({34}Si,pγ))=L({9}Be({36}Si,{35}Siγ))` to `L({2}H({34}Si,p))=L({36}Si,{35}Si)=3 from 0+ and |nf{-7/2} configuration from shell model.`
-  - Corrected formatting of `cL J$` comments for the 909.95 keV and 2044 keV levels.
-  - Updated `cL T$` comment for the 909.95 keV level.
-  - Updated `cL T$` comment for the 973.88 keV level.
-  - Updated `cL J$` comment for the 1689 keV level.
-  - Updated `cG E$` and `cG RI$` comments for the 1134 keV gamma transition.
-  - Updated `cL J$` comment for the 2168.2 keV level.
-  - Updated `cL E$` and `cL J$` comments for the 5500 keV level.
-  - General review and minor corrections to reaction formatting and references in comments.
-- Updated `d:\\\\X\\\\ND\\\\A35\\\\.vscode\\\\copilot-instructions.md`:
-  - Clarified that only `d:\\\\X\\\\ND\\\\A35\\\\.vscode\\\\change.log` should be used and updated.
+  - Updated T comment for the 973.88 keV level to `cL T$From |b|g(t) in {+35}Al |b{+-} decay (2001Nu01). Adopted value.`
+- Verified J,T for parent {+35}Al in `d:\X\ND\A35\finished\Si35\new\Si35_35al_beta_decay_38.1_ms.ens` against `d:\X\ND\A35\finished\Al35\new\Al35_adopted.ens`. Confirmed (5/2)+ and accuracy of the comment "From the Adopted Levels of {+35}Al".
+- Manually reverted agent's incorrect edits to `d:\X\ND\A35\finished\P35\new\P35_adopted.ens`.
+- Manually reverted agent's incorrect edits to `d:\X\ND\A35\.vscode\copilot-instructions.md`.
+- Manually reverted agent's incorrect edits to `d:\X\ND\A35\.vscode\change.log`. (This update now reflects the accurate log for today).
 
 ## 2025-06-10 (Evening)
 - Updated `d:\\X\\ND\\A35\\finished\\Ar35\\new\\Ar35_35k_ec_decay_175_ms.ens`:
