@@ -1,6 +1,13 @@
 # Change Log for ENSDF Edits
 
 ## 2025-06-11
+- Reverted Jπ changes in `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_35al_beta_decay_38.1_ms.ens`:
+  - Restored Jπ for 2168.16 keV level from `(5/2+)` to `5/2+`.
+  - Removed Jπ values `(3/2+,5/2+,7/2+)` from L-records for levels 3140, 3450, 3770, 5190, 5760, 6330, 7360, and 7690 keV.
+- Updated `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_35al_beta_decay_38.1_ms.ens`:
+  - Changed Jπ for 2168.16 keV level from `5/2+` to `(5/2+)`.
+  - Added Jπ values `(3/2+,5/2+,7/2+)` to L-records for levels 3140, 3450, 3770, 5190, 5760, 6330, 7360, and 7690 keV.
+- Verified J,T for parent {+35}Al in `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_35al_beta_decay_38.1_ms.ens` against `d:\\X\\ND\\A35\\finished\\Al35\\new\\Al35_adopted.ens`. Confirmed (5/2)+ and accuracy of the comment "From the Adopted Levels of {+35}Al".
 - Updated `d:\\\\X\\\\ND\\\\A35\\\\finished\\\\Si35\\\\new\\\\Si35_adopted.ens`:
   - Formatted reaction string in `cL J$` comment for the 0.0 keV level: `L({2}H({34}Si,pγ))=L({9}Be({36}Si,{35}Siγ))` to `L({2}H({34}Si,p))=L({36}Si,{35}Si)=3 from 0+ and |nf{-7/2} configuration from shell model.`
   - Corrected formatting of `cL J$` comments for the 909.95 keV and 2044 keV levels.
