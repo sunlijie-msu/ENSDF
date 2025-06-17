@@ -300,11 +300,71 @@ Based on the specific parsing of lines like `35SI  G 1130.4    4  3.2    9`:
     *   ΔRI: (none) Blank in cols 30-31. Display: `  `
     *   (Spaces in cols 32-35, then `[E1]` starts col 36 in this specific example)
 
-## Important Additional Rules
+## ENSDF Special Character and Symbol Formatting
 
-- Do not modify A31.ens, A32.ens or A33.ens!
+When editing ENSDF files, use these character codes for proper display of scientific notation:
 
----
-*Last updated: June 5, 2025*
+### Superscripts and Subscripts
+- `{+n}` → superscript (e.g., `{+3}He` displays as ³He)
+- `{-n}` → subscript (e.g., `H{-2}O` displays as H₂O)
+- `{+-n}` → negative superscript (e.g., `{+-4}` displays as ⁻⁴)
+
+### Greek Letters and Mathematical Symbols
+**Greek lowercase:**
+- `|a` → α (alpha), `|b` → β (beta), `|c` → η (eta), `|d` → δ (delta)
+- `|e` → ε (varepsilon), `|f` → φ (phi), `|g` → γ (gamma), `|h` → χ (chi)
+- `|i` → ι (iota), `|j` → ε (epsilon), `|k` → κ (kappa), `|l` → λ (lambda)
+- `|m` → μ (mu), `|n` → ν (nu), `|p` → π (pi), `|q` → θ (theta)
+- `|r` → ρ (rho), `|s` → σ (sigma), `|t` → τ (tau), `|u` → υ (upsilon)
+- `|w` → ω (omega), `|x` → ξ (xi), `|y` → ψ (psi), `|z` → ζ (zeta)
+
+**Greek uppercase:**
+- `|D` → Δ (Delta), `|F` → Φ (Phi), `|G` → Γ (Gamma), `|L` → Λ (Lambda)
+- `|P` → Π (Pi), `|Q` → Θ (Theta), `|S` → Σ (Sigma), `|U` → Υ (Upsilon)
+- `|W` → Ω (Omega), `|X` → Ξ (Xi), `|Y` → Ψ (Psi)
+
+**Mathematical symbols:**
+- `|*` → × (times), `|?` → ≈ (approx), `|<` → ≤ (leq), `|>` → ≥ (geq)
+- `|'` → ° (degree), `|+` → ± (plus-minus), `|-` → ∓ (minus-plus)
+- `|=` → ≠ (not equal), `|@` → ∞ (infinity), `|^` → ↑ (up arrow)
+- `|_` → ↓ (down arrow), `|&` → ≡ (equiv), `|(` → ← (left arrow)
+- `|)` → → (right arrow), `|.` → ∝ (proportional), `||` → | (vertical bar)
+
+### Common Scientific Notation Examples
+- `%(|e+|b{++})p` → %(ε+β⁺)p
+- `|*10{+-4}` → ×10⁻⁴  
+- `|s(E({+3}He),|q)` → σ(E(³He),θ)
+- `|g|g-coin` → γγ-coin
+- `{+208}Pb({+36}S,{+35}S)` → ²⁰⁸Pb(³⁶S,³⁵S)
+- `|dj` → ΔJ (delta J)
+- `~*` → · (center dot)
+- `|"{` → overbar start (e.g., `|"{A}` → Ā)
+- `|%{n}` → √n (square root)
+- `|,` → ½ (one-half fraction)
+
+### Usage Guidelines
+- Always use these codes in ENSDF comment lines and data fields
+- Maintain consistency throughout the file
+- Double-check formatting after editing to ensure proper display
+
+## Quick Commands
+
+### Fix Format
+When you type "Fix Format" as a command, the Copilot Agent will automatically:
+
+1. **Convert text to proper ENSDF notation**:
+   - Greek letters → `|a`, `|b`, `|g`, `|d`, `|e`, `|q`, `|l`, `|m`, `|n`, `|p`, `|r`, `|s`, `|t`, `|w`, etc.
+   - Isotope notation → `{+A}Element` format (e.g., `35S` → `{+35}S`)
+
+2. **Standardize mathematical and scientific symbols**:
+   - Multiplication signs → `|*`
+   - Degree symbols → `|'` 
+   - Approximately → `|?`
+   - Less/greater than or equal → `|<`, `|>`
+   - Plus-minus → `|+`
+   - Times symbol → `|*`
+
+**Usage**: Simply type "Fix Format" and the agent will scan the current file and apply these specific ENSDF formatting corrections.
+
 // @auto_load in future sessions: true
-`````
+``````
