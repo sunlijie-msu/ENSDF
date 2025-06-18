@@ -1,6 +1,7 @@
- 35S     208PB(36S,35SG)               2022GR07                  ENSDF    202509
+ 35S     208PB(36S,35SG)               2010WaZT,2022GR07         ENSDF    202509
  35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
  35S 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35S  dL E$Least-squares fitting is done by GLSC (version 03-Jun-2025)          
  35S  c  2022Gr07: A 215-MeV {+36}S beam was produced from the XTU-Tandem       
  35S 2c  ALPI-superconducting linear accelerator complex at the INFN Legnaro    
  35S 3c  National Laboratory, Italy. The target was 1 mg/cm{+2} 99.7% enriched  
@@ -13,31 +14,56 @@
  35S Ac  corrections, ({+35}S)|g-coin, and level lifetimes using the            
  35S Bc  differential recoil-distance method (DRDM). Compared with shell-model  
  35S Cc  calculations. Measured E|g, I|g, fragment-|g-coin, recoil distance.    
- 35S Dc  Deduced levels, lifetimes. Comparisons with shell-model calculations   
- 35S Ec  with PSDPF, SDPF-U, and FSU effective interactions.                    
- 35S  c  2010WaZT,2010Wa12: A 215-MeV {+36}S beam was produced from the         
+ 35S Dc  Deduced levels, lifetimes. Compared with shell-model calculations with 
+ 35S Ec  PSDPF, SDPF-U, and FSU effective interactions.                         
+ 35S  c  2010WaZT,2010Wa20: A 215-MeV {+36}S{+9} beam was produced from the     
  35S 2c  XTU-Tandem ALPI-superconducting linear accelerator complex at the INFN 
- 35S 3c  Legnaro National Laboratory, Italy. The target was 1 mg/cm{+2} 99.7%   
- 35S 4c  enriched {+208}Pb with 1 mg/cm{+2} Nb backing and mounted onto the     
- 35S 5c  Cologne differential plunger. Projectile-like fragments produced in    
- 35S 6c  binary grazing reactions were separated and identified by the PRISMA   
- 35S 7c  spectrometer. |g rays were detected using the CLARA array of 22        
- 35S 8c  escape-suppressed Ge clover detectors covering the azimuthal angles    
- 35S 9c  from 98|' to 180|'. Measured E|g with Doppler corrections, I|g, and    
- 35S Ac  ({+35}Si)|g-coin. Deduced levels. Compared with shell-model            
- 35S Bc  calculations.                                                          
- 35S  cG E$From 2022Gr07.                                                       
- 35S  cL T$From recoil-distance method with decay-curve analysis.               
- 35S   L 0.0          3/2+                                                      
- 35S   L 1572         1/2+             2.29 PS   14                             
- 35S  cL T$Lifetime=3.3 ps {I2} from 2022Gr07.
- 35S   G 1572                                                                   
- 35S   L 1991         7/2-                                                      
- 35S   G 1991                                                                   
- 35S   L 2717      7  5/2+                                                      
- 35S   G 2717                                                                   
- 35S  cL $The ground state and first excited 1/2+ state of {+35}S are           
+ 35S 3c  Legnaro National Laboratory, Italy. The target was 300 |mg/cm{+2} 99.7%
+ 35S 4c  enriched {+208}Pb with 20 |mg/cm{+2} carbon backing. Projectile-like   
+ 35S 5c  fragments produced in binary grazing reactions were separated and      
+ 35S 6c  identified by the PRISMA spectrometer. |g rays were detected using the 
+ 35S 7c  CLARA array of 22 escape-suppressed Ge clover detectors covering the   
+ 35S 8c  azimuthal angles from 98|' to 180|'. Measured E|g with Doppler         
+ 35S 9c  corrections, I|g, and ({+35}S)|g-coin. Deduced levels. Compared with   
+ 35S Ac  shell-model calculations.                                              
+ 35S  c  2010WaZT states that the observed |g-ray transitions are consistent    
+ 35S 2c  with previous published work and no attempt has been made here to      
+ 35S 3c  construct an independent level scheme.                                 
+ 35S  cG E$From 2010WaZT.                                                       
+ 35S  PN                                                                     5  
+ 35S   G 1227      1  5.2    9                                                  
+ 35S   G 3034      3  7.2    9                                                  
+ 35S   L 0            3/2+                                                      
+ 35S  cL $2022Gr07 shell-model calculated configuration:                        
  35S 2cL |p(1d{-5/2}){+6}(2s{-1/2}){+2}~#|n(1d{-5/2}){+6}(2s{-1/2}){+2}(1d{-3/2\
- 35S 3cL }){+3} and |p(1d{-5/2}){+6}(2s{-1/2}){+2}~#|n(1d{-5/2}){+6}(2s{-1/2}){\
- 35S 4cL 1}(1d{-3/2}){+4}, respectively.                                        
+ 35S 3cL }){+3} (77%)                                                           
+ 35S   L 1572.0    9  1/2+             2.29 PS   14                             
+ 35S  cL $2022Gr07 shell-model calculated configuration:                        
+ 35S 2cL |p(1d{-5/2}){+6}(2s{-1/2}){+2}~#|n(1d{-5/2}){+6}(2s{-1/2}){+1}(1d{-3/2\
+ 35S 3cL }){+4} (44%)                                                           
+ 35S  cL T$Lifetime=3.3 ps {I2} from 2022Gr07 using the recoil-distance method  
+ 35S 2cL with decay-curve analysis.                                             
+ 35S   G 1572      1  100.0  24                                                 
+ 35S  cG $2022Gr07 shell-model calculated B(E2; 1/2+ to 3/2+) = 35.2 e{+2}      
+ 35S 2cG fm{+4} (5.2 W.u.), B(M1; 1/2+ to 3/2+) = 0.0204 |m{+2}{-N}             
+ 35S 3cG (1.14|*10{+-2} W.u.), and mixing ratio [|d{+2} = |l(E2)/|l(M1)] = 0.30.
+ 35S   L 1991.1    9  7/2-                                                      
+ 35S   G 1991      1  37.2   18                                                 
+ 35S   L 2347.1    13 3/2-                                                      
+ 35S   G 2347      2  6.5    9                                                  
+ 35S   L 2717.1    14 5/2+                                                      
+ 35S   G 2717      2  14.5   15                                                 
+ 35S   G 370       1  3.2    6                                                  
+ 35S   L 3421      2  5/2+                                                      
+ 35S   G 3421      2  8.6    10                                                 
+ 35S   L 3558.1    14 (3/2-,5/2-)                                               
+ 35S   G 1986      2  3.7    6                                                 ?
+ 35S   G 1567      2  9.6    9                                                 ?
+ 35S   G 1211      2  1.7    7                                                 ?
+ 35S   L 3593      2  (1/2+,7/2+)                                               
+ 35S   G 3593      2  8.8    11                                                 
+ 35S   L 3818.1    14 (9/2-,11/2-)                                              
+ 35S   G 1827      1  12.9   11                                                 
+ 35S   L 4023.1    22 (9/2-,11/2-)                                              
+ 35S   G 2032      2  13.1   12                                                 
 

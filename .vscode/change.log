@@ -12,10 +12,28 @@
   - Fixed approximate value notation: `V{-n}~60 MeV` → `V{-n}|?60 MeV` in Ar35_36ar_d_t.ens
   - Confirmed proper usage of `|?` for approximate values instead of standalone `~`
 
+- **S35_208pb_36s_35sg.ens comprehensive dataset expansion** (User's work):
+  - **Header updates**: Added 2010WaZT reference to keynumber field, added GLSC fitting line
+  - **Complete level scheme overhaul**: Added 9 new levels with precise energies and uncertainties:
+    * 1572.0(9) keV 1/2+ → 1572(1) keV 1/2+ (with 2.29 ps lifetime)
+    * 1991.1(9) keV 7/2-, 2347.1(13) keV 3/2-, 2717.1(14) keV 5/2+
+    * 3421(2) keV 5/2+, 3558.1(14) keV (3/2-,5/2-), 3593(2) keV (1/2+,7/2+)
+    * 3818.1(14) keV (9/2-,11/2-), 4023.1(22) keV (9/2-,11/2-)
+  - **Gamma-ray data**: Added complete G-records with proper ENSDF column formatting:
+    * Primary transitions: 1572, 1991, 2347, 2717, 3421, 3593, 1827, 2032 keV
+    * Secondary transitions: 370, 1986, 1567, 1211 keV (some tentative)
+    * Unplaced gammas: 1227(1), 3034(3) keV with PN normalization record
+  - **Shell-model theoretical data**: Added comprehensive B(E2), B(M1) values and mixing ratio
+  - **Configuration assignments**: Added detailed shell-model configurations for 0+ and 1/2+ states
+  - **Experimental details**: Updated 2010WaZT description with corrected reference and target details
+  - **Format corrections**: Applied proper ENSDF notation for Greek letters (δ→|d, λ→|l)
+
 - **Copilot instructions updates** (Agent's work):
   - Added comprehensive academic citation tense guidelines
   - Clarified ENSDF mathematical symbol encoding (especially `|?` for approximate values)
-  - Restored "Fix Format" command section for superscripts/subscripts
+  - Restored "Fix format!" command trigger for superscripts/subscripts
+  - Added critical ENSDF column format reference with G-record and L-record specifications
+  - **Added "What changed?" command trigger**: Automated workflow for change detection and change.log updates using what-changed.ps1
 
 ## 2025-06-17
 - **Comprehensive A=35 mass chain evaluation and dataset updates** (User's work):

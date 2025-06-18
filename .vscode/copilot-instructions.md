@@ -1,8 +1,34 @@
+````````instructions
 ```````instructions
 ``````instructions
 `````instructions
 ````instructions
 # Copilot Instructions
+
+## Command Triggers
+
+### "What changed?" Command Trigger:
+When the user types "What changed?" (case-insensitive), automatically:
+
+1. **Run the PowerShell script to detect changes:**
+   ```powershell
+   cd "d:\X\ND\A35\.vscode"; .\what-changed.ps1 filename.ens
+   ```
+   - Use the script to compare files and identify specific changes
+   - Run for any recently modified .ens files in the workspace
+
+2. **Update change.log with evidence-based entries:**
+   - Add new entries to the current date section (2025-06-18)
+   - Use the what-changed.ps1 output to document exact changes
+   - Include file paths, specific edits, and context
+   - Categorize changes: header updates, level additions, gamma data, formatting, etc.
+
+3. **Provide a summary to the user:**
+   - List files that were changed
+   - Summarize the types of changes made
+   - Confirm that change.log has been updated
+
+**Important:** Always use the what-changed.ps1 script for change detection rather than assumptions. This ensures accuracy and evidence-based documentation.
 
 ## Important Rules
 - Never modify the first line or bottom line of any .ens file
@@ -301,6 +327,65 @@ Based on the specific parsing of lines like `35SI  G 1130.4    4  3.2    9`:
     *   ΔRI: (none) Blank in cols 30-31. Display: `  `
     *   (Spaces in cols 32-35, then `[E1]` starts col 36 in this specific example)
 
+
+
+## Academic Citation Conventions
+
+### Tense Usage in ENSDF Comments
+Nuclear physics follows scientific academic conventions for citing previous research:
+
+**Use PAST TENSE for all citations and references to completed studies:**
+- ✅ "Authors stated that..." 
+- ✅ "Smith reported gamma-ray energies..."
+- ✅ "Garcia et al. found spectroscopic factors..."
+- ✅ "1994FO04 measured transition probabilities..."
+- ✅ "2023Gr04 observed level structures..."
+- ✅ "Previous evaluators concluded that..."
+
+**Avoid PRESENT TENSE for citations:**
+- ❌ "Authors state that..."
+- ❌ "Smith reports that..."
+- ❌ "Garcia et al. find that..."
+
+### Rationale
+- **Scientific convention**: Nuclear physics uses past tense to describe completed experimental studies
+- **Objectivity**: Past tense provides neutral, reporting tone for documented findings
+- **Professional standard**: Aligns with APA style and nuclear physics journal conventions
+- **Clarity**: Situates findings in their historical context as completed research
+
+### Application in ENSDF
+- Comment lines describing experimental methods and results
+- References to previous measurements and evaluations
+- Citations of literature values and adopted data
+- Descriptions of what authors concluded or observed
+
+**Consistency is essential** - use past tense uniformly throughout all citation contexts to maintain professional academic tone.
+
+## Quick Commands
+
+### Fix Format Command Trigger:
+When you type "Fix format!" as a command, the Copilot Agent will automatically:
+
+1. **Convert text to proper ENSDF notation**:
+   - Greek letters → `|a`, `|b`, `|g`, `|d`, `|e`, `|q`, `|l`, `|m`, `|n`, `|p`, `|r`, `|s`, `|t`, `|w`, etc.
+   - Isotope notation → `{+A}Element` format (e.g., `35S` → `{+35}S`)
+
+2. **Standardize mathematical and scientific symbols**:
+   - Multiplication signs → `|*`
+   - Degree symbols → `|'` 
+   - Approximately → `|?`
+   - Less/greater than or equal → `|<`, `|>`
+   - Plus-minus → `|+`
+   - Times symbol → `|*`
+
+3. **Fix superscripts and subscripts**:
+   - Superscripts → `{+text}` format
+   - Subscripts → `{-text}` format
+   - Mass numbers → `{+A}Element`
+   - Nuclear states → proper formatting
+
+**Usage**: Simply type "Fix format!" and the agent will scan the current file and apply these specific ENSDF formatting corrections.
+
 ## ENSDF Special Character and Symbol Formatting
 
 When editing ENSDF files, use these character codes for proper display of scientific notation:
@@ -351,62 +436,35 @@ When editing ENSDF files, use these character codes for proper display of scient
 - Maintain consistency throughout the file
 - Double-check formatting after editing to ensure proper display
 
-## Academic Citation Conventions
+## ENSDF Column Format Reference (CRITICAL - NO MISTAKES ALLOWED)
 
-### Tense Usage in ENSDF Comments
-Nuclear physics follows scientific academic conventions for citing previous research:
+### G-Record Format (Gamma Rays):
+```
+Columns: 123456789012345678901234567890123456789012345678901234567890123456789012345678
+Format:  35XX  G EEEE.E   DE  II.I   DI  [M]  [A]  [B]  [C]              
+Example: 35S   G 1572.0    1  100.0  24                                   
+```
 
-**Use PAST TENSE for all citations and references to completed studies:**
-- ✅ "Authors stated that..." 
-- ✅ "Smith reported gamma-ray energies..."
-- ✅ "Garcia et al. found spectroscopic factors..."
-- ✅ "1994FO04 measured transition probabilities..."
-- ✅ "2023Gr04 observed level structures..."
-- ✅ "Previous evaluators concluded that..."
+**Column Positions:**
+- 1-5: NUCID (35S, 35SI, etc.)
+- 9: Record type (G)
+- 10-19: E gamma (right-justified, with uncertainty)
+- 20-29: Intensity (left-justified in 10-char field)
+- 30-31: Intensity uncertainty
+- 32+: Additional fields (multipolarity, etc.)
 
-**Avoid PRESENT TENSE for citations:**
-- ❌ "Authors state that..."
-- ❌ "Smith reports that..."
-- ❌ "Garcia et al. find that..."
+### L-Record Format (Levels):
+```
+Columns: 123456789012345678901234567890123456789012345678901234567890123456789012345678
+Format:  35XX  L EEEE.E   DE  JP               T        DT
+Example: 35S   L 1572.0    1  1/2+             2.29 PS   14
+```
 
-### Rationale
-- **Scientific convention**: Nuclear physics uses past tense to describe completed experimental studies
-- **Objectivity**: Past tense provides neutral, reporting tone for documented findings
-- **Professional standard**: Aligns with APA style and nuclear physics journal conventions
-- **Clarity**: Situates findings in their historical context as completed research
+**BEFORE EDITING ANY ENSDF FILE:**
+1. Check existing format in the file
+2. Count columns manually: 1234567890123456789012345678901234567890
+3. Verify against this reference
+4. Double-check after editing
 
-### Application in ENSDF
-- Comment lines describing experimental methods and results
-- References to previous measurements and evaluations
-- Citations of literature values and adopted data
-- Descriptions of what authors concluded or observed
-
-**Consistency is essential** - use past tense uniformly throughout all citation contexts to maintain professional academic tone.
-
-## Quick Commands
-
-### Fix Format
-When you type "Fix Format" as a command, the Copilot Agent will automatically:
-
-1. **Convert text to proper ENSDF notation**:
-   - Greek letters → `|a`, `|b`, `|g`, `|d`, `|e`, `|q`, `|l`, `|m`, `|n`, `|p`, `|r`, `|s`, `|t`, `|w`, etc.
-   - Isotope notation → `{+A}Element` format (e.g., `35S` → `{+35}S`)
-
-2. **Standardize mathematical and scientific symbols**:
-   - Multiplication signs → `|*`
-   - Degree symbols → `|'` 
-   - Approximately → `|?`
-   - Less/greater than or equal → `|<`, `|>`
-   - Plus-minus → `|+`
-   - Times symbol → `|*`
-
-3. **Fix superscripts and subscripts**:
-   - Superscripts → `{+text}` format
-   - Subscripts → `{-text}` format
-   - Mass numbers → `{+A}Element`
-   - Nuclear states → proper formatting
-
-**Usage**: Simply type "Fix Format" and the agent will scan the current file and apply these specific ENSDF formatting corrections.
-
-// @auto_load in future sessions: true
-```````
+**NO EXCUSES FOR COLUMN MISTAKES - THIS IS NUCLEAR DATA!**
+````````
