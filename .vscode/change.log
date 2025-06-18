@@ -1,22 +1,43 @@
 # Change Log for ENSDF Edits
 
 ## 2025-06-17
-- **Major A=35 mass chain evaluation update** (User's work): Updated header information and processing tools across multiple A=35 adopted files:
-  - All adopted files updated with new authorship "LIJIE SUN AND JUN CHEN", cut-off date "30-Sep-2025", and ENSDF 202509 publication code
-  - `d:\X\ND\A35\finished\Si35\new\Si35_adopted.ens`: Updated Java-RULER to version 10-Jun-2025, GLSC to version 03-Jun-2025
-  - `d:\X\ND\A35\finished\P35\new\P35_adopted.ens`: Maintained existing tool versions (Java-RULER 18-Feb-2025, GLSC 21-Mar-2025)  
-  - `d:\X\ND\A35\finished\Na35\new\Na35_adopted.ens`: Updated with consistent header format
-  - Si35 temp files regenerated with today's timestamp (June 17, 2025 at 9:16 PM EDT)
+- **Comprehensive A=35 mass chain evaluation and dataset updates** (User's work):
+  
+  **Major header and metadata updates across all A=35 adopted files:**
+  - Updated authorship to "LIJIE SUN AND JUN CHEN" with cut-off date "30-Sep-2025" and ENSDF 202509 publication code
+  
+  **Extensive Si35 dataset overhaul (45+ changes per file):**
+  - `Si35_adopted.ens`: Major dataset reference systematization similar to P35
+    - Updated XREF cross-references from ABCDE → ABCDEF throughout
+    - Systematically updated reaction notation: `L({+2}H({+34}Si,p))` → `L=X from 0+ in {+2}H({+34}Si,{+35}Si)`
+    - Added specific dataset attributions: `{+9}Be({+36}Si,{+35}Si|g)`, `{+208}Pb({+36}S,{+35}Si|g)`
+    - Enhanced gamma-ray energy comments with complete source information
+    - Updated processing tools (Java-RULER 10-Jun-2025, GLSC 03-Jun-2025)
+  - `Si35_2h_34si_pg.ens` → `Si35_2h_34si_35sig.ens`: Complete file rewrite (48 changes)
+    - Comprehensive update of experimental details and methodology descriptions
+    - Enhanced nuclear reaction descriptions and detector specifications
+    - Updated all level and gamma-ray assignments with improved precision
+  - `Si35_208pb_36s_xg.ens` → `Si35_208pb_36s_35sig.ens`: File replacement (24 additions, 25 deletions)
+  - All other Si35 .ens files: Header updates and reaction notation improvements
+  - Complete regeneration of all Si35 temp analysis files with current timestamp
+  - Updated all Si35 PDF outputs with latest dataset versions
+  
+  **Extensive P35 dataset improvements (185 insertions, 192 deletions):**
+  - Systematically updated dataset references from generic `({+36}S,X|g)` to specific `{+208}Pb({+36}S,{+35}P|g)` and `{+9}Be({+36}S,{+35}P|g)`
+  - Updated all XREF cross-references throughout the file for dataset consistency
+  - Added periods to comment lines and improved scientific notation consistency
+  - Enhanced gamma-ray energy and intensity reference attributions
+  - Updated level J assignments and reaction notation formatting
+  
+  **Na35 dataset updates:**
+  - File rename: `Na35_9be_48ca_x.ens` → `Na35_9be_48ca_35na.ens`
+  - Standardized header format and updated associated PDF files
+  
+  **Total scope:** 50 files changed, 684 insertions(+), 539 deletions(-)
 
-- Updated `d:\X\ND\XUNDL\2025LIAA_CF10919_115Sb.ens` (Agent's work):
-  - Fixed grammar in M comment line: "Deduced by compilers from measured |g|g(ADO), except for the |g 159.6, 428.2, 540.4, 905.3 are assigned by authors." → "Deduced by compilers from measured |g|g(ADO), except for |g 159.6, 428.2, 540.4, 905.3 which are assigned by authors."
-  - Removed unnecessary "the" before gamma-ray energies and improved sentence structure for better grammatical flow.
-
-- Updated `d:\X\ND\A35\finished\Si35\new\Si35_2h_34si_35sig.ens` (Agent's work):
-  - Applied "Fix Format" command to convert nuclear reaction notation to proper ENSDF rich text:
-    - `36S(d,p)37S` → `{+36}S(d,p){+37}S`
-    - `34Si(d,p)35Si` → `{+34}Si(d,p){+35}Si`
-  - Mass numbers now properly formatted using ENSDF superscript notation `{+A}` for nuclear reactions.
+- **Minor agent contributions:**
+  - `d:\X\ND\XUNDL\2025LIAA_CF10919_115Sb.ens`: Grammar fix in M comment line
+  - Nuclear reaction notation formatting assistance (part of larger Si35 overhaul)
 
 ## 2025-06-16
 - Updated `d:\X\ND\A35\.vscode\copilot-instructions.md`:
