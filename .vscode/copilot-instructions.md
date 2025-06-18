@@ -1,3 +1,4 @@
+```````instructions
 ``````instructions
 `````instructions
 ````instructions
@@ -329,6 +330,9 @@ When editing ENSDF files, use these character codes for proper display of scient
 - `|=` → ≠ (not equal), `|@` → ∞ (infinity), `|^` → ↑ (up arrow)
 - `|_` → ↓ (down arrow), `|&` → ≡ (equiv), `|(` → ← (left arrow)
 - `|)` → → (right arrow), `|.` → ∝ (proportional), `||` → | (vertical bar)
+- **Important:** For approximate values, use `|?` (which gives both ≈ and ~ symbols)
+- Standalone `~` is NOT allowed for approximate values in ENSDF
+- `~` only works in special contexts (names like `G~urdal`, mass notation like `A~160`)
 
 ### Common Scientific Notation Examples
 - `%(|e+|b{++})p` → %(ε+β⁺)p
@@ -347,6 +351,38 @@ When editing ENSDF files, use these character codes for proper display of scient
 - Maintain consistency throughout the file
 - Double-check formatting after editing to ensure proper display
 
+## Academic Citation Conventions
+
+### Tense Usage in ENSDF Comments
+Nuclear physics follows scientific academic conventions for citing previous research:
+
+**Use PAST TENSE for all citations and references to completed studies:**
+- ✅ "Authors stated that..." 
+- ✅ "Smith reported gamma-ray energies..."
+- ✅ "Garcia et al. found spectroscopic factors..."
+- ✅ "1994FO04 measured transition probabilities..."
+- ✅ "2023Gr04 observed level structures..."
+- ✅ "Previous evaluators concluded that..."
+
+**Avoid PRESENT TENSE for citations:**
+- ❌ "Authors state that..."
+- ❌ "Smith reports that..."
+- ❌ "Garcia et al. find that..."
+
+### Rationale
+- **Scientific convention**: Nuclear physics uses past tense to describe completed experimental studies
+- **Objectivity**: Past tense provides neutral, reporting tone for documented findings
+- **Professional standard**: Aligns with APA style and nuclear physics journal conventions
+- **Clarity**: Situates findings in their historical context as completed research
+
+### Application in ENSDF
+- Comment lines describing experimental methods and results
+- References to previous measurements and evaluations
+- Citations of literature values and adopted data
+- Descriptions of what authors concluded or observed
+
+**Consistency is essential** - use past tense uniformly throughout all citation contexts to maintain professional academic tone.
+
 ## Quick Commands
 
 ### Fix Format
@@ -364,7 +400,13 @@ When you type "Fix Format" as a command, the Copilot Agent will automatically:
    - Plus-minus → `|+`
    - Times symbol → `|*`
 
+3. **Fix superscripts and subscripts**:
+   - Superscripts → `{+text}` format
+   - Subscripts → `{-text}` format
+   - Mass numbers → `{+A}Element`
+   - Nuclear states → proper formatting
+
 **Usage**: Simply type "Fix Format" and the agent will scan the current file and apply these specific ENSDF formatting corrections.
 
 // @auto_load in future sessions: true
-``````
+```````

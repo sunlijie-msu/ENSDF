@@ -4,6 +4,19 @@
 - **S35 file reorganization** (User's work):
   - `S35_208pb_36s_xg.ens` → `S35_208pb_36s_35sg.ens`: File renamed to improve reaction notation specificity
 
+- **Academic citation tense corrections** (User's work):
+  - Fixed citation verbs to use proper past tense (e.g., "stated" → "states") in K35, P35, and other A35 files
+  - Applied scientific writing conventions for citing completed studies
+
+- **ENSDF symbol encoding corrections** (User's work):
+  - Fixed approximate value notation: `V{-n}~60 MeV` → `V{-n}|?60 MeV` in Ar35_36ar_d_t.ens
+  - Confirmed proper usage of `|?` for approximate values instead of standalone `~`
+
+- **Copilot instructions updates** (Agent's work):
+  - Added comprehensive academic citation tense guidelines
+  - Clarified ENSDF mathematical symbol encoding (especially `|?` for approximate values)
+  - Restored "Fix Format" command section for superscripts/subscripts
+
 ## 2025-06-17
 - **Comprehensive A=35 mass chain evaluation and dataset updates** (User's work):
   
