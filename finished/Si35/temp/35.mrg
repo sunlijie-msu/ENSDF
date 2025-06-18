@@ -1,5 +1,5 @@
-Program for consistency check: output for original lines grouped by level and gamma energies (version 05/20/2025)
-Generated at: Wed 06/11/2025 at 11:58:04 AM EDT
+Program for consistency check: output for original lines grouped by level and gamma energies (version 06/12/2025)
+Generated at: Tue 06/17/2025 at 09:16:23 PM EDT
 
 
 Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
@@ -18,25 +18,27 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  35SI  XA35AL B- DECAY (38.1 MS)       A-A 35AL B- DECAY (38.1 MS)
  35SI  XB36AL B-N DECAY (12.0 MS)      B-B 36AL B-N DECAY (12.0 MS)
  35SI  XC37AL B-2N DECAY (11.4 MS)     C-C 37AL B-2N DECAY (11.4 MS)
- 35SI  XD2H(34SI,PG)                   D-D 2H(34SI,PG)
+ 35SI  XD2H(34SI,35SIG)                D-D 2H(34SI,35SIG)
  35SI  XE9BE(36SI,35SIG)               E-E 9BE(36SI,35SIG)
+ 35SI  XF208PB(36S,35SIG)              F-F 208PB(36S,35SIG)
 ################################## new tag show first below ############################################################
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35SI  L 0            (7/2)-           0.78 S    12                              --- possible JPI=5/2-,7/2-
-                     *new XREF new tags    35SIX L XREF=ABCDE
-                     *new XREF old tags    35SIX L XREF=ABCDE
-                     #old XREF in Adopted  35SIX L XREF=ABCDE
-       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 0            (7/2)-                                                     *** possible JPI=(3/2,5/2,7/2): logft=6.1(2) from (5/2)+
-      36AL B-N DECAY (12.0 MS)--->B  B     35SI  L 0                                                                      
-     37AL B-2N DECAY (11.4 MS)--->C  C     35SI  L 0                                                                      
-                   2H(34SI,PG)--->D  D     35SI  L 0            7/2-                              3        0.56     6     
+                     *new XREF new tags    35SIX L XREF=ABCDEF
+                     *new XREF old tags    35SIX L XREF=ABCDEF
+                     #old XREF in Adopted  35SIX L XREF=ABCDEF
+       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 0            (7/2)-           0.78 S    12                              *** possible JPI=(3/2,5/2,7/2): logft=6.1(2) from (5/2)+
+      36AL B-N DECAY (12.0 MS)--->B  B     35SI  L 0            (7/2)-           0.78 S    12                             
+     37AL B-2N DECAY (11.4 MS)--->C  C     35SI  L 0            (7/2)-           0.78 S    12                             
+                2H(34SI,35SIG)--->D  D     35SI  L 0            7/2-                              3        0.56     6      *** possible JPI=5/2-,7/2-
                9BE(36SI,35SIG)--->E  E     35SI  L 0            (7/2-)                            3                        *** possible JPI=5/2-,7/2-
+              208PB(36S,35SIG)--->F  F     35SI  L 0            (7/2-)                                                    
        35AL B- DECAY (38.1 MS)--->A  A     35SI  B             3.0     10          6.1     2                              
        35AL B- DECAY (38.1 MS)--->A  A     35SI cB IB$2001Nu01 stated that the |b branch to the {+35}Si ground state was  
        35AL B- DECAY (38.1 MS)--->A  A     35SI2cB evaluated by comparing the total |g intensity due to the deexcitation  
        35AL B- DECAY (38.1 MS)--->A  A     35SI3cB of excited states of {+35}Si with the decay of {+35}Si activity and    
        35AL B- DECAY (38.1 MS)--->A  A     35SI4cB assuming no direct {+35}Si production.                                 
-                   2H(34SI,PG)--->D  D     35SI cL $Interpreted as the 1f{-7/2} neutron on top of the {+34}Si core.       
+                2H(34SI,35SIG)--->D  D     35SI cL $Interpreted as the 1f{-7/2} neutron on top of the {+34}Si core.       
                9BE(36SI,35SIG)--->E  E     35SI cL $Partial knockout |s=52 mb {I4}, including an unresolved population of 
                9BE(36SI,35SIG)--->E  E     35SI2cL the 3/2+ isomer at 973 keV (2014St18).                                 
                9BE(36SI,35SIG)--->E  E     35SI cL $Partial knockout |s=23 mb {I6}, resolved by the fitting parallel      
@@ -46,31 +48,34 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                9BE(36SI,35SIG)--->E  E     35SI5cL |h{+2} minimization method (2015St06).                                 
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35SI  L 909.95    23 (3/2)-           55 PS     14                              --- possible JPI=NA: check contradicting data
-                     *new XREF new tags    35SIX L XREF=ABCDE
-                     *new XREF old tags    35SIX L XREF=ABCDE
-                     #old XREF in Adopted  35SIX L XREF=ABCDE
+                     *new XREF new tags    35SIX L XREF=ABCDEF
+                     *new XREF old tags    35SIX L XREF=ABCDEF
+                     #old XREF in Adopted  35SIX L XREF=ABCDEF
        35AL B- DECAY (38.1 MS)--->A  A     35SI  L 909.95    23 (3/2)-           55 PS     14                              *** possible JPI=NA: check contradicting data
-      36AL B-N DECAY (12.0 MS)--->B  B     35SI  L 910                                                                    
-     37AL B-2N DECAY (11.4 MS)--->C  C     35SI  L 910                                                                    
-                   2H(34SI,PG)--->D  D     35SI  L 910       3  3/2-                              1        0.69     10    
+      36AL B-N DECAY (12.0 MS)--->B  B     35SI  L 910          (3/2)-           55 PS     14                             
+     37AL B-2N DECAY (11.4 MS)--->C  C     35SI  L 910          (3/2)-           55 PS     14                             
+                2H(34SI,35SIG)--->D  D     35SI  L 910       3  3/2-                              1        0.69     10     *** possible JPI=1/2-,3/2-
                9BE(36SI,35SIG)--->E  E     35SI  L 908       4  (3/2-)            55 PS    14     1                        *** possible JPI=1/2-,3/2-
+              208PB(36S,35SIG)--->F  F     35SI  L 910       1  (3/2-)                                                    
        35AL B- DECAY (38.1 MS)--->A  A     35SI  B                                                                        
-       35AL B- DECAY (38.1 MS)--->A  A     35SI cB IB$<0.9 from 2001Nu01. The net feeding is deduced to be -1.9 {I9} from 
-       35AL B- DECAY (38.1 MS)--->A  A     35SI2cB |g+ce intensity balance.                                               
-                   2H(34SI,PG)--->D  D     35SI cL $Interpreted as the 2p{-3/2} neutron on top of the {+34}Si core.       
-                   2H(34SI,PG)--->D  D     35SI cL E$Other: 906 keV {I32} from measured E{-p}. 2014Bu01 deduced that a    
-                   2H(34SI,PG)--->D  D     35SI2cL contamination of the proton spectrum at E(level)=906 keV {I32} due to  
-                   2H(34SI,PG)--->D  D     35SI3cL transfer to the 3/2+ level at 970 keV is less than 30% of the 3/2-     
-                   2H(34SI,PG)--->D  D     35SI4cL component with a confidence limit of 3|s.                              
+       35AL B- DECAY (38.1 MS)--->A  A     35SI cB IB$<0.9 from 2001Nu01 without considering the conversion electron of   
+       35AL B- DECAY (38.1 MS)--->A  A     35SI2cB the 974->910 transition. The net feeding is deduced to be -1.9 {I9}    
+       35AL B- DECAY (38.1 MS)--->A  A     35SI3cB from the |g+ce intensity balance.                                      
+                2H(34SI,35SIG)--->D  D     35SI cL $Interpreted as the 2p{-3/2} neutron on top of the {+34}Si core.       
+                2H(34SI,35SIG)--->D  D     35SI cL E$Other: 906 {I32} from measured E{-p}. 2014Bu01 deduced that a        
+                2H(34SI,35SIG)--->D  D     35SI2cL contamination of the proton spectrum at E(level)=906 {I32} due to      
+                2H(34SI,35SIG)--->D  D     35SI3cL transfer to the 3/2+ level at 970 keV is less than 30% of the 3/2-     
+                2H(34SI,35SIG)--->D  D     35SI4cL component with a confidence limit of 3|s.                              
                9BE(36SI,35SIG)--->E  E     35SI cL T$lifetime=80 ps {I20} extracted from fitting Geant4 simulation to     
                9BE(36SI,35SIG)--->E  E     35SI2cL broadened line shapes via the maximum likelihood method (2014St18).
                9BE(36SI,35SIG)--->E  E     35SI cL $Partial knockout |s=8 mb {I3}.                                        
- GAMMA------------------------------------ 35SI  G 910.11    30 100                                                        --- EG=910.11     FL=0          JF=(7/2)-
+ GAMMA------------------------------------ 35SI  G 910.11    30 100       [E2]                                             --- EG=910.11     FL=0          JF=(7/2)-
        35AL B- DECAY (38.1 MS)--->A  A     35SI  G 910.11    30 100       [E2]                                             *** EG=910.11     FL=0          JF=(7/2)-
-      36AL B-N DECAY (12.0 MS)--->B  B     35SI  G 910                                                                     *** EG=910        FL=0          JF=
-     37AL B-2N DECAY (11.4 MS)--->C  C     35SI  G 910                                                                     *** EG=910        FL=0          JF=
-                   2H(34SI,PG)--->D  D     35SI  G 910       3                                                             *** EG=910        FL=0          JF=7/2-
+      36AL B-N DECAY (12.0 MS)--->B  B     35SI  G 910                                                                     *** EG=910        FL=0          JF=(7/2)-
+     37AL B-2N DECAY (11.4 MS)--->C  C     35SI  G 910                                                                     *** EG=910        FL=0          JF=(7/2)-
+                2H(34SI,35SIG)--->D  D     35SI  G 910       3                                                             *** EG=910        FL=0          JF=7/2-
                9BE(36SI,35SIG)--->E  E     35SI  G 908       4 100                                                     C   *** EG=908        FL=0          JF=(7/2-)
+              208PB(36S,35SIG)--->F  F     35SI  G 910       1 100                                                         *** EG=910        FL=0          JF=(7/2-)
        35AL B- DECAY (38.1 MS)--->A  A     35SI2 G %IG=47                                                                 
       36AL B-N DECAY (12.0 MS)--->B  B     35SI cG E$From 2023Lu07.                                                       
       36AL B-N DECAY (12.0 MS)--->B  B     35SI cG $2023Lu07 observed the 910|g within the 100-ms window following the    
@@ -82,27 +87,30 @@ Note: 1. possible JPI presented at the end of each record line of each individua
       36AL B-N DECAY (12.0 MS)--->B  B     35SI3cG {+36}Mg, indicating its origin from the granddaughter generation.      
      37AL B-2N DECAY (11.4 MS)--->C  C     35SI cG $2013StZY reported the |g-ray intensity of 2(3)% relative to a 156|g in
      37AL B-2N DECAY (11.4 MS)--->C  C     35SI2cG {+37}Al decay.                                                         
-               9BE(36SI,35SIG)--->E  E     35SI2 G BE2=0.0017 +4-5                                                        
+                2H(34SI,35SIG)--->D  D     35SI cG E$Other: 905 {I1} from 2007GeAA.                                       
+               9BE(36SI,35SIG)--->E  E     35SI2 G BE2=0.0017 +4-5 (2014St18)                                             
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35SI  L 973.88    18 (3/2+)           5.9 NS    6                               --- possible JPI=(3/2+,5/2+)
-                     *new XREF new tags    35SIX L XREF=AE
-                     *new XREF old tags    35SIX L XREF=AE
-                     #old XREF in Adopted  35SIX L XREF=AE
+                     *new XREF new tags    35SIX L XREF=AEF
+                     *new XREF old tags    35SIX L XREF=AEF
+                     #old XREF in Adopted  35SIX L XREF=AEF
        35AL B- DECAY (38.1 MS)--->A  A     35SI  L 973.88    18 (3/2+)           5.9 NS    6                               *** possible JPI=(3/2+,5/2+,7/2+): logft=4.7 from (5/2)+
                9BE(36SI,35SIG)--->E  E     35SI  L 973       7  (3/2+)                                                     *** possible JPI=(1/2,3/2,5/2+): 715g from 1688,1/2+
-       35AL B- DECAY (38.1 MS)--->A  A     35SI cL T$lifetime=8.5 ns {I9} from the |b|g(t) in 2001Nu01, also adopted in   
-       35AL B- DECAY (38.1 MS)--->A  A     35SI2cL the Adopted Levels.                                                    
+              208PB(36S,35SIG)--->F  F     35SI  L 974       1  (3/2+)                                                    
+       35AL B- DECAY (38.1 MS)--->A  A     35SI cL T$lifetime=8.5 ns {I9} from |b|g(t) in 2001Nu01, also adopted in the   
+       35AL B- DECAY (38.1 MS)--->A  A     35SI2cL Adopted Levels.                                                        
        35AL B- DECAY (38.1 MS)--->A  A     35SI  B             52                  4.7                                    
        35AL B- DECAY (38.1 MS)--->A  A     35SI cB IB$48 {I9} from 2001Nu01; 50 {I3} from 2005Ti11.                       
                9BE(36SI,35SIG)--->E  E     35SI cL $Partial knockout |s=29 mb {I6}, resolved by 2015St06.                 
- GAMMA------------------------------------ 35SI  G 64.1      3 100                                                         --- EG=64.1       FL=909.95     JF=(3/2)-
+ GAMMA------------------------------------ 35SI  G 64.1      3 100        [E1]                   0.0368 8                  --- EG=64.1       FL=909.95     JF=(3/2)-
        35AL B- DECAY (38.1 MS)--->A  A     35SI  G 64.1      3 100        [E1]                   0.0368 8                  *** EG=64.1       FL=909.95     JF=(3/2)-
        35AL B- DECAY (38.1 MS)--->A  A     35SI2 G %IG=47                                                                 
  GAMMA------------------------------------ 35SI  G 973.78    20 11.8   24 [M2]                                             --- EG=973.78     FL=0          JF=(7/2)-
        35AL B- DECAY (38.1 MS)--->A  A     35SI  G 973.78    20 11.8   24 [M2]                                             *** EG=973.78     FL=0          JF=(7/2)-
+              208PB(36S,35SIG)--->F  F(?)  35SI  G 974       1 100                                                       ? *** EG=974        FL=0          JF=(7/2-)
        35AL B- DECAY (38.1 MS)--->A  A     35SI2 G %IG=5.6                                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35SI  L 1689      3  1/2+                                                       --- possible JPI=1/2+
+ LEVEL************************************ 35SI  L 1689.4    28 1/2+                                                       --- possible JPI=1/2+
                      *new XREF new tags    35SIX L XREF=E
                      *new XREF old tags    35SIX L XREF=E
                      #old XREF in Adopted  35SIX L XREF=E
@@ -119,29 +127,30 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      #old XREF in Adopted  35SIX L XREF=E
                9BE(36SI,35SIG)--->E  E     35SI  L 1970      6                                                             *** possible JPI=(1/2-,3/2,5/2,7/2,9/2,11/2-)
                9BE(36SI,35SIG)--->E  E     35SI cL $Partial knockout |s=1.1 mb {I2}.                                      
- GAMMA------------------------------------ 35SI  G 1970      6 100                                                    B    --- EG=1970       FL=0          JF=(7/2)-
+ GAMMA------------------------------------ 35SI  G 1970      6 100                                                    E    --- EG=1970       FL=0          JF=(7/2)-
                9BE(36SI,35SIG)--->E  E     35SI  G 1970      6 100                                                         *** EG=1970       FL=0          JF=(7/2-)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35SI  L 2044      5  (1/2)-                                                     --- possible JPI=1/2,3/2-
+ LEVEL************************************ 35SI  L 2044      5  (1/2)-                                                     --- possible JPI=1/2-,3/2-
                      *new XREF new tags    35SIX L XREF=DE
                      *new XREF old tags    35SIX L XREF=DE
                      #old XREF in Adopted  35SIX L XREF=DE
-                   2H(34SI,PG)--->D  D     35SI  L 2044      7  1/2-                              1        0.73     10    
+                2H(34SI,35SIG)--->D  D     35SI  L 2044      7  1/2-                              1        0.73     10     *** possible JPI=1/2-,3/2-
                9BE(36SI,35SIG)--->E  E     35SI  L 2042      7  (1/2-)                            0,1                      *** possible JPI=1/2,3/2-
-                   2H(34SI,PG)--->D  D     35SI cL $Interpreted as the 2p{-1/2} neutron on top of the {+34}Si core.       
-                   2H(34SI,PG)--->D  D     35SI cL E$Other: 2060 {I50} from measured E{-p}.                               
-                   2H(34SI,PG)--->D  D     35SI cL J$2014Bu01 stated that J|p is likely to be 1/2- as its large           
-                   2H(34SI,PG)--->D  D     35SI2cL spectroscopic factor value discards another large L=1, 3/2- component. 
+                2H(34SI,35SIG)--->D  D     35SI cL $Interpreted as the 2p{-1/2} neutron on top of the {+34}Si core.       
+                2H(34SI,35SIG)--->D  D     35SI cL E$Other: 2060 {I50} from measured E{-p}.                               
+                2H(34SI,35SIG)--->D  D     35SI cL J$2014Bu01 stated that J|p is likely to be 1/2- as its large           
+                2H(34SI,35SIG)--->D  D     35SI2cL spectroscopic factor value discards another large L=1, 3/2- component. 
                9BE(36SI,35SIG)--->E  E     35SI cL $Partial knockout |s=1.3 mb {I2}.                                      
- GAMMA------------------------------------ 35SI  G 1134      5 100                                                    B    --- EG=1134       FL=909.95     JF=(3/2)-
-                   2H(34SI,PG)--->D  D     35SI  G 1134      6                                                             *** EG=1134       FL=910        JF=3/2-
+ GAMMA------------------------------------ 35SI  G 1134      5 100                                                    E    --- EG=1134       FL=909.95     JF=(3/2)-
+                2H(34SI,35SIG)--->D  D     35SI  G 1134      6                                                             *** EG=1134       FL=910        JF=3/2-
                9BE(36SI,35SIG)--->E  E     35SI  G 1134      5 100                                                     C   *** EG=1134       FL=908        JF=(3/2-)
+                2H(34SI,35SIG)--->D  D     35SI cG E$Other: 1133 {I3} from 2007GeAA.                                      
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35SI  L 2168.2    4  5/2+                                                       --- possible JPI=(3/2+,5/2+)
+ LEVEL************************************ 35SI  L 2168.2    4  (5/2+)                                                     --- possible JPI=(3/2+,5/2+)
                      *new XREF new tags    35SIX L XREF=AE
                      *new XREF old tags    35SIX L XREF=AE
                      #old XREF in Adopted  35SIX L XREF=AE
-       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 2168.16   36 5/2+                                                       *** possible JPI=(3/2+,5/2+,7/2+): logft=5.2 from (5/2)+
+       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 2168.16   36 (5/2+)                                                     *** possible JPI=(3/2+,5/2+,7/2+): logft=5.2 from (5/2)+
                9BE(36SI,35SIG)--->E  E     35SI  L 2164      6  (5/2+)                            2,3                      *** possible JPI=3/2+,5/2,7/2-
        35AL B- DECAY (38.1 MS)--->A  A     35SI  B             9.5                 5.2                                    
        35AL B- DECAY (38.1 MS)--->A  A     35SI cB IB$9.2 {I19} from 2001Nu01; 6.7 {I9} from 2005Ti11 with only one branch
@@ -161,7 +170,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      #old XREF in Adopted  35SIX L XREF=E
                9BE(36SI,35SIG)--->E  E     35SI  L 2275      6                                                             *** possible JPI=(1/2-,3/2,5/2,7/2,9/2,11/2-)
                9BE(36SI,35SIG)--->E  E     35SI cL $Partial knockout |s=1.6 mb {I2}.                                      
- GAMMA------------------------------------ 35SI  G 2275      6 100                                                    B    --- EG=2275       FL=0          JF=(7/2)-
+ GAMMA------------------------------------ 35SI  G 2275      6 100                                                    E    --- EG=2275       FL=0          JF=(7/2)-
                9BE(36SI,35SIG)--->E  E     35SI  G 2275      6 100                                                         *** EG=2275       FL=0          JF=(7/2-)
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35SI  L 2377      7                                                             --- possible JPI=(1/2-,3/2,5/2,7/2,9/2,11/2-)
@@ -172,32 +181,32 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                9BE(36SI,35SIG)--->E  E     35SI cL $Partial knockout |s=2.1 mb {I2}.                                      
                9BE(36SI,35SIG)--->E  E     35SI cL L$2014St18 showed L=0,1,2,3 fits to the measured parallel momentum     
                9BE(36SI,35SIG)--->E  E     35SI2cL distribution but did not specify L. L=0 seems unlikely.                
- GAMMA------------------------------------ 35SI  G 2377      7 100                                                    B    --- EG=2377       FL=0          JF=(7/2)-
+ GAMMA------------------------------------ 35SI  G 2377      7 100                                                    E    --- EG=2377       FL=0          JF=(7/2)-
                9BE(36SI,35SIG)--->E  E     35SI  G 2377      7 100                                                         *** EG=2377       FL=0          JF=(7/2-)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35SI  L 3140                                                                    --- possible JPI=(3/2+,5/2+,7/2+)
+ LEVEL************************************ 35SI  L 3140         (3/2+,5/2+,7/2+)                                      J    --- possible JPI=(3/2+,5/2+,7/2+)
                      *new XREF new tags    35SIX L XREF=A
                      *new XREF old tags    35SIX L XREF=A
                      #old XREF in Adopted  35SIX L XREF=A
-       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 3140                                                                    *** possible JPI=(3/2+,5/2+,7/2+): logft=5.5 from (5/2)+
+       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 3140         (3/2+,5/2+,7/2+)                                           *** possible JPI=(3/2+,5/2+,7/2+): logft=5.5 from (5/2)+
        35AL B- DECAY (38.1 MS)--->A  A     35SI cL $Deduced E(n0){-c.m.}=666.                                             
        35AL B- DECAY (38.1 MS)--->A  A     35SI  B             3.3     2           5.5                                    
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35SI  L 3450                                                                    --- possible JPI=(3/2+,5/2+,7/2+)
+ LEVEL************************************ 35SI  L 3450         (3/2+,5/2+,7/2+)                                      J    --- possible JPI=(3/2+,5/2+,7/2+)
                      *new XREF new tags    35SIX L XREF=A
                      *new XREF old tags    35SIX L XREF=A
                      #old XREF in Adopted  35SIX L XREF=A
-       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 3450                                                                    *** possible JPI=(3/2+,5/2+,7/2+): logft=5.2 from (5/2)+
+       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 3450         (3/2+,5/2+,7/2+)                                           *** possible JPI=(3/2+,5/2+,7/2+): logft=5.2 from (5/2)+
        35AL B- DECAY (38.1 MS)--->A  A     35SI cL $Deduced E(n0){-c.m.}=976.                                             
        35AL B- DECAY (38.1 MS)--->A  A     35SI  B             6.0     3           5.2                                    
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35SI  L 3611      8                                                           ? --- possible JPI=(1/2-,3/2,5/2,7/2,9/2,11/2-)
                      *new XREF new tags    35SIX L XREF=E(?)
                      *new XREF old tags    35SIX L XREF=E(?)
-                     #old XREF in Adopted  35SIX L XREF=E(3611?)
+                     #old XREF in Adopted  35SIX L XREF=E(?)
                9BE(36SI,35SIG)--->E  E(?)  35SI  L 3611      8                                                           ? *** possible JPI=(1/2-,3/2,5/2,7/2,9/2,11/2-)
                9BE(36SI,35SIG)--->E  E(?)  35SI cL $Partial knockout |s=0.8 mb {I2}.                                      
- GAMMA------------------------------------ 35SI  G 3611      8 100                                                    B    --- EG=3611       FL=0          JF=(7/2)-
+ GAMMA------------------------------------ 35SI  G 3611      8 100                                                    E    --- EG=3611       FL=0          JF=(7/2)-
                9BE(36SI,35SIG)--->E  E(?)  35SI  G 3611      8 100                                                         *** EG=3611       FL=0          JF=(7/2-)
                9BE(36SI,35SIG)--->E  E(?)  35SI cG $2014St18 observed one |g transition at 3611 keV, which must depopulate
                9BE(36SI,35SIG)--->E  E(?)  35SI2cG a state that is unbound to neutron emission by at least 1.1 MeV.       
@@ -217,61 +226,61 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                9BE(36SI,35SIG)--->E  E(?)  35SI5cG associated with more inelastic reactions, which would be consistent    
                9BE(36SI,35SIG)--->E  E(?)  35SI6cG with a multistep process.                                              
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35SI  L 3770                                                                    --- possible JPI=(3/2+,5/2+,7/2+)
+ LEVEL************************************ 35SI  L 3770         (3/2+,5/2+,7/2+)                                      J    --- possible JPI=(3/2+,5/2+,7/2+)
                      *new XREF new tags    35SIX L XREF=A
                      *new XREF old tags    35SIX L XREF=A
                      #old XREF in Adopted  35SIX L XREF=A
-       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 3770                                                                    *** possible JPI=(3/2+,5/2+,7/2+): logft=5.4 from (5/2)+
+       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 3770         (3/2+,5/2+,7/2+)                                           *** possible JPI=(3/2+,5/2+,7/2+): logft=5.4 from (5/2)+
        35AL B- DECAY (38.1 MS)--->A  A     35SI cL $Deduced E(n0){-c.m.}=1296.                                            
        35AL B- DECAY (38.1 MS)--->A  A     35SI  B             3.2     2           5.4                                    
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35SI  L 5190                                                                    --- possible JPI=(3/2+,5/2+,7/2+)
+ LEVEL************************************ 35SI  L 5190         (3/2+,5/2+,7/2+)                                      J    --- possible JPI=(3/2+,5/2+,7/2+)
                      *new XREF new tags    35SIX L XREF=A
                      *new XREF old tags    35SIX L XREF=A
                      #old XREF in Adopted  35SIX L XREF=A
-       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 5190                                                                    *** possible JPI=(3/2+,5/2+,7/2+): logft=4.6 from (5/2)+
+       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 5190         (3/2+,5/2+,7/2+)                                           *** possible JPI=(3/2+,5/2+,7/2+): logft=4.6 from (5/2)+
        35AL B- DECAY (38.1 MS)--->A  A     35SI cL $Deduced E(n0){-c.m.}=2716.                                            
        35AL B- DECAY (38.1 MS)--->A  A     35SI  B             8.9     3           4.6                                    
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35SI  L 5500      AP (5/2)-                                                     ---
+ LEVEL************************************ 35SI  L 5500      AP (5/2)-                                                     --- possible JPI=5/2-,7/2-
                      *new XREF new tags    35SIX L XREF=D
                      *new XREF old tags    35SIX L XREF=D
                      #old XREF in Adopted  35SIX L XREF=D
-                   2H(34SI,PG)--->D  D     35SI  L 5500      AP 5/2-                              3        0.32     3     
-                   2H(34SI,PG)--->D  D     35SI cL $Interpreted as the 1f{-5/2} neutron on top of the {+34}Si core.       
-                   2H(34SI,PG)--->D  D     35SI cL S$2014Bu01 reports S=0.32 {I4} in Fig. 2, S=0.32 {I2} in text on page  
-                   2H(34SI,PG)--->D  D     35SI2cL 3, S=0.32 {I3} in text on page 4, and a full error bar |?0.05 in Fig.  
-                   2H(34SI,PG)--->D  D     35SI3cL 3.                                                                     
+                2H(34SI,35SIG)--->D  D     35SI  L 5500      AP 5/2-                              3        0.32     3      *** possible JPI=5/2-,7/2-
+                2H(34SI,35SIG)--->D  D     35SI cL $Interpreted as the 1f{-5/2} neutron on top of the {+34}Si core.       
+                2H(34SI,35SIG)--->D  D     35SI cL S$2014Bu01 reports S=0.32 {I4} in Fig. 2, S=0.32 {I2} in text on page  
+                2H(34SI,35SIG)--->D  D     35SI2cL 3, S=0.32 {I3} in text on page 4, and a full error bar |?0.05 in Fig.  
+                2H(34SI,35SIG)--->D  D     35SI3cL 3.                                                                     
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35SI  L 5760                                                                    --- possible JPI=(3/2+,5/2+,7/2+)
+ LEVEL************************************ 35SI  L 5760         (3/2+,5/2+,7/2+)                                      J    --- possible JPI=(3/2+,5/2+,7/2+)
                      *new XREF new tags    35SIX L XREF=A
                      *new XREF old tags    35SIX L XREF=A
                      #old XREF in Adopted  35SIX L XREF=A
-       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 5760                                                                    *** possible JPI=(3/2+,5/2+,7/2+): logft=4.8 from (5/2)+
+       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 5760         (3/2+,5/2+,7/2+)                                           *** possible JPI=(3/2+,5/2+,7/2+): logft=4.8 from (5/2)+
        35AL B- DECAY (38.1 MS)--->A  A     35SI cL $Deduced E(n0){-c.m.}=3286.                                            
        35AL B- DECAY (38.1 MS)--->A  A     35SI  B             4.5     2           4.8                                    
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35SI  L 6330                                                                    --- possible JPI=(3/2+,5/2+,7/2+)
+ LEVEL************************************ 35SI  L 6330         (3/2+,5/2+,7/2+)                                      J    --- possible JPI=(3/2+,5/2+,7/2+)
                      *new XREF new tags    35SIX L XREF=A
                      *new XREF old tags    35SIX L XREF=A
                      #old XREF in Adopted  35SIX L XREF=A
-       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 6330                                                                    *** possible JPI=(3/2+,5/2+,7/2+): logft=4.5 from (5/2)+
+       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 6330         (3/2+,5/2+,7/2+)                                           *** possible JPI=(3/2+,5/2+,7/2+): logft=4.5 from (5/2)+
        35AL B- DECAY (38.1 MS)--->A  A     35SI cL $Deduced E(n0){-c.m.}=3856; E(n1){-c.m.}=530.                          
        35AL B- DECAY (38.1 MS)--->A  A     35SI  B             6.8     3           4.5                                    
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35SI  L 7360                                                                    --- possible JPI=(3/2+,5/2+,7/2+)
+ LEVEL************************************ 35SI  L 7360         (3/2+,5/2+,7/2+)                                      J    --- possible JPI=(3/2+,5/2+,7/2+)
                      *new XREF new tags    35SIX L XREF=A
                      *new XREF old tags    35SIX L XREF=A
                      #old XREF in Adopted  35SIX L XREF=A
-       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 7360                                                                    *** possible JPI=(3/2+,5/2+,7/2+): logft=4.6 from (5/2)+
+       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 7360         (3/2+,5/2+,7/2+)                                           *** possible JPI=(3/2+,5/2+,7/2+): logft=4.6 from (5/2)+
        35AL B- DECAY (38.1 MS)--->A  A     35SI cL $Deduced E(n1){-c.m.}=1560.                                            
        35AL B- DECAY (38.1 MS)--->A  A     35SI  B             2.6     2           4.6                                    
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35SI  L 7690                                                                    --- possible JPI=(3/2+,5/2+,7/2+)
+ LEVEL************************************ 35SI  L 7690         (3/2+,5/2+,7/2+)                                      J    --- possible JPI=(3/2+,5/2+,7/2+)
                      *new XREF new tags    35SIX L XREF=A
                      *new XREF old tags    35SIX L XREF=A
                      #old XREF in Adopted  35SIX L XREF=A
-       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 7690                                                                    *** possible JPI=(3/2+,5/2+,7/2+): logft=4.5 from (5/2)+
+       35AL B- DECAY (38.1 MS)--->A  A     35SI  L 7690         (3/2+,5/2+,7/2+)                                           *** possible JPI=(3/2+,5/2+,7/2+): logft=4.5 from (5/2)+
        35AL B- DECAY (38.1 MS)--->A  A     35SI cL $Deduced E(n1){-c.m.}=1890.                                            
        35AL B- DECAY (38.1 MS)--->A  A     35SI  B             2.7     2           4.5                                    
 
@@ -282,10 +291,11 @@ Statistics of levels and gammas from all datasets of 35SI:
           35AL B- DECAY (38.1 MS)        12               7             0          to       7690
          36AL B-N DECAY (12.0 MS)        2                1             0          to        910
         37AL B-2N DECAY (11.4 MS)        2                1             0          to        910
-                      2H(34SI,PG)        4                2             0          to       5500
+                   2H(34SI,35SIG)        4                2             0          to       5500
                   9BE(36SI,35SIG)        10               9             0          to       3611
+                 208PB(36S,35SIG)        3                2             0          to        974
 
-                         IN TOTAL        49               32            0          to       7690
+                         IN TOTAL        52               34            0          to       7690
 
 
 
@@ -293,12 +303,12 @@ Statistics of levels and gammas from all datasets of 35SI:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                   35SI        19           12           49           32             515              5
+                   35SI        19           12           52           34             561              6
 
-               IN TOTAL        19           12           49           32             515              5
+               IN TOTAL        19           12           52           34             561              6
 
 Number of nuclides     : 1
-Number of blocks       : 6
-Number of references   : 55
-Number of lines in files: 521
+Number of blocks       : 7
+Number of references   : 58
+Number of lines in files: 568
 (from all blocks including abstract, comment, reference)
