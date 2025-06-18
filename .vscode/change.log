@@ -1,5 +1,9 @@
 # Change Log for ENSDF Edits
 
+## 2025-06-18
+- **S35 file reorganization** (User's work):
+  - `S35_208pb_36s_xg.ens` → `S35_208pb_36s_35sg.ens`: File renamed to improve reaction notation specificity
+
 ## 2025-06-17
 - **Comprehensive A=35 mass chain evaluation and dataset updates** (User's work):
   
@@ -750,69 +754,3 @@
 - Added concise 1998Sc19 reference comment describing {+35}K polarization and g-factor measurements
 - Updated copilot-instructions.md with rule about not modifying first/last line indentation
 - Fixed spelling and formatting errors in various reference comments
-
-## 2025-06-16
-- Updated `d:\X\ND\A35\.vscode\copilot-instructions.md`:
-  - Condensed and reorganized instructions for better usability, removing redundancies and grouping related rules.
-  - Added comprehensive ENSDF special character and symbol formatting guide including:
-    - Complete Greek alphabet (lowercase and uppercase) with proper ENSDF codes
-    - Mathematical symbols (×, ≈, ≤, ≥, ±, ∓, arrows, etc.)
-    - Superscript/subscript notation using `{+n}` and `{-n}`
-    - Scientific notation examples and practical usage guidelines
-  - Added "Fix Format" quick command that triggers automatic conversion of text to proper ENSDF notation and standardization of mathematical symbols.
-  - Updated last modified date to June 16, 2025.
-
-- Updated `d:\X\ND\A35\finished\P35\new\P35_160gd_37cl_xg.ens`:
-  - Converted reaction notation to proper ENSDF format: `160Gd+37Cl->160Dy+35P+2n` → `{+160}Gd+{+37}Cl->{+160}Dy+{+35}P+2n`.
-
-- Updated `d:\X\ND\A35\finished\S35\new\S35_208pb_36s_xg.ens`:
-  - Fixed grammar: "Comparison with" → "Comparisons with" (line 13) for parallel structure consistency.
-  - Added missing periods to comment lines 20 and 21 for proper punctuation.
-  - Applied "Fix Format" command to convert special characters to ENSDF notation:
-    - Converted `35S` → `{+35}S` in shell model configuration comments
-    - Converted Greek letters: π → `|p`, ν → `|n`
-    - Converted tensor product symbol ⊗ → `~#`
-    - Converted mathematical notation to proper ENSDF subscript/superscript format using `{-n}` and `{+n}`
-    - Reformatted shell model configurations from Unicode to ENSDF rich text format.
-
-- Updated `d:\X\ND\A35\finished\Si35\new\Si35_208pb_36s_xg.ens`:
-  - Contains the 208PB(36S,XG) reaction data for 35Si from 2010WAZT.
-
-## 2025-06-11
-- Reverted agent's incorrect Jπ changes in `d:\X\ND\A35\finished\Si35\new\Si35_35al_beta_decay_38.1_ms.ens` (reflects user undoing prior agent errors):
-  - Restored Jπ for 2168.16 keV level from `(5/2+)` to `5/2+`.
-  - Removed Jπ values `(3/2+,5/2+,7/2+)` from L-records for levels 3140, 3450, 3770, 5190, 5760, 6330, 7360, and 7690 keV.
-- Updated `d:\X\ND\A35\finished\Si35\new\Si35_35al_beta_decay_38.1_ms.ens` (accepted changes):
-  - Changed Jπ for 2168.16 keV level from `5/2+` to `(5/2+)`.
-  - Added Jπ values `(3/2+,5/2+,7/2+)` to L-records for levels 3140, 3450, 3770, 5190, 5760, 6330, 7360, and 7690 keV.
-  - Updated T comment for the 973.88 keV level to `cL T$From |b|g(t) in {+35}Al |b{+-} decay (2001Nu01). Adopted value.`
-- Verified J,T for parent {+35}Al in `d:\X\ND\A35\finished\Si35\new\Si35_35al_beta_decay_38.1_ms.ens` against `d:\X\ND\A35\finished\Al35\new\Al35_adopted.ens`. Confirmed (5/2)+ and accuracy of the comment "From the Adopted Levels of {+35}Al".
-- Manually reverted agent's incorrect edits to `d:\X\ND\A35\finished\P35\new\P35_adopted.ens`.
-- Manually reverted agent's incorrect edits to `d:\X\ND\A35\.vscode\copilot-instructions.md`.
-- Manually reverted agent's incorrect edits to `d:\X\ND\A35\.vscode\change.log`. (This update now reflects the accurate log for today).
-
-## 2025-06-10 (Evening)
-- Updated `d:\\X\\ND\\A35\\finished\\Ar35\\new\\Ar35_35k_ec_decay_175_ms.ens`:
-  - Removed trailing spaces from L records (e.g., 2637.99, 2982.79, 4785.8, 6348 keV levels).
-  - Added `LT` qualifier to LOGFT for the 7527 keV level E record.
-- Updated `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_35al_beta_decay_38.1_ms.ens`:
-  - Revised general comments for `cL J,T`, `cB IB`, and `cG M`.
-  - Updated N record (NR value and uncertainty) and associated `cN NR` comment.
-  - Adjusted %IG for 5629 keV G record.
-  - Added B record and `cB IB` comment for 909.95 keV L record; updated %IG for 910.11 keV G record.
-  - Updated `cL T` comment for 973.88 keV L record.
-  - Updated B record and added `cB IB` comment for 973.88 keV L record; updated %IG for 64.1 keV G record and added %IG for 973.78 keV G record.
-  - Updated E and DE for 2168.16 keV L record.
-  - Updated B record and `cB IB` comment for 2168.16 keV L record; updated %IG for 2168.2 keV G record.
-- Regenerated `d:\\X\\ND\\A35\\finished\\Si35\\pdf\\Si35_35al_beta_decay_38.1_ms.pdf`.
-- Created/Updated analysis output files in `d:\\X\\ND\\A35\\finished\\Si35\\temp\\`:
-  - `GLSC_combined.out`
-  - `Java_GABS.out`
-  - `Java_GABS.rpt`
-  - `Java_GTOL.out`
-  - `Java_GTOL.rpt`
-
-## 2025-06-10
-- Updated `d:\\X\\ND\\A35\\finished\\K35\\new\\K35_adopted.ens`:
-  - Corrected NSR keynumber formatting (e.g., `2023BO17` to `2023Bo17`) for multiple references.
-  - Updated `%ECP` value
