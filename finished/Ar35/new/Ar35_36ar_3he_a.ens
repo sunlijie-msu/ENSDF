@@ -1,4 +1,4 @@
- 35AR    36AR(3HE,A)                   1973BE26                  ENSDF    202509
+ 35AR    36AR(3HE,A)                   1973BE26,1998VOAA         ENSDF    202509
  35AR  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
  35AR2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35AR  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
@@ -13,9 +13,15 @@
  35AR7c  zero-range DWUCK-DWBA analysis of the measured |s(|q). Comparisons with
  35AR8c  shell-model calculations and the mirror nucleus {+35}Cl. Also see      
  35AR9c  1972MiZO.                                                              
- 35AR d  Also see Stilianos Vouzoukas, Ph.D. thesis, University of Notre Dame,  
- 35AR2d  1998. A study of the levels of astrophysical importance in 32Cl and    
- 35AR3d  35Ar.                                                                  
+ 35AR c  1998VoAA: A 25-MeV {+3}He at 0.5-|mA intensity was provided from the FN
+ 35AR2c  Tandem accelerator at the Nuclear Structure Laboratory of the          
+ 35AR3c  University of Notre Dame. The targets were made by implanting 75-keV   
+ 35AR4c  {+36}Ar into 40 |mg/cm{+2} carbon foils from the University of Toledo  
+ 35AR5c  ion source. The reaction products were momentum analyzed by the Notre  
+ 35AR6c  Dame broad-range magnetic spectrograph. The particles were subsequently
+ 35AR7c  detected at the focal surface of the spectrograph by a position        
+ 35AR8c  sensitive proportional gas detector backed with a plastic scintillator.
+ 35AR9c  Measured E{-|a}. Deduced levels.                                       
  35AR cL $Spectroscopic factor C{+2}S=(2j+1)|*|s(|q){-exp}/|s(|q){-DWBA}/N,     
  35AR2cL where the isospin Clebsch-Gordan coefficient C{+2} is 1/2 in this case,
  35AR3cL j is the total angular momentum of the transferred neutron, and the    
@@ -27,6 +33,7 @@
  35AR9cL {+35}Cl({+3}He,d){+36}Ar(g.s.) S=4.73 (1970Mo10) and the 1973Be26      
  35ARAcL measured {+36}Ar({+3}He,|a){+35}Ar(g.s.) NS=85.4. 1973Be26 adopted the 
  35ARBcL average N=16.8.                                                        
+ 35AR cL E(B)$From 1973Be26.                                                    
  35AR cL J$As given in 1973Be26, also used for extracting C{+2}S.               
  35AR cL S$Converted from the S values in 1973Be26 with C{+2}=1/2.              
  35AR cL S(A)$1973Be26 states that the differences for j=3/2 and 5/2 are small  
@@ -39,38 +46,65 @@
  35AR8cL levels probably have 5/2+.                                             
  35AR cL S$LABEL=C{+2}S                                                         
  35AR  L 0            3/2+                             2        2.545           
- 35AR  L 1179      10 1/2+                             0        1.19            
- 35AR  L 1738      10 5/2+                             2        0.025           
- 35AR  L 2637      10 3/2+                             2        0.57            
- 35AR  L 2982      10 5/2+                             2        1.39            
- 35AR  L 3193      10 7/2-                             3        0.39            
- 35AR  L 3884      10 1/2+                             0        0.02            
- 35AR  L 4012      10 (3/2)-                           1        0.065           
- 35AR  L 4110      10                                                       
- 35AR  L 4142      10 (3/2)-                           1        0.025           
- 35AR  L 4350      10                                                           
- 35AR  L 4530      10                                                       
- 35AR  L 4721      10 1/2+                             0        0.05            
- 35AR  L 4782      10                                                       
- 35AR  L 5048      10                                                       
- 35AR  L 5116      10 (3/2,5/2)+                       2        0.25,0.145  A   
- 35AR  L 5205      10                                                       
- 35AR  L 5387      10                                                       
- 35AR  L 5484      10 (3/2,5/2)+                       2        0.77,0.445  A   
- 35AR  L 5591      10 (3/2,5/2)+                       2        1.98,1.14   A   
- 35AR  L 5911      10                                                           
- 35AR  L 6033      10 (3/2,5/2)+                       2        1.3,0.755   A   
- 35AR  L 6153      10                                                           
- 35AR  L 6258      10                                                           
- 35AR  L 6631      10 1/2+                             0        0.36            
- 35AR cL $probable doublet                                                      
- 35AR  L 6827      10                                                           
- 35AR  L 6959      10                                                           
- 35AR  L 7055      10                                                           
- 35AR  L 7117      10                                                           
- 35AR  L 7293      10                                                           
- 35AR  L 7423      10                                                           
- 35AR  L 7502      10                                                           
- 35AR  L 7840      10                                                           
- 35AR  L 8019      10                                                           
+ 35AR  L 1175      2  1/2+                             0        1.19            
+ 35AR cL E$weighted average of 1179 {I10} (1973Be26) and 1175 {I2} (1998VoAA)   
+ 35AR  L 1747      2  5/2+                             2        0.025           
+ 35AR cL E$weighted average of 1738 {I10} (1973Be26) and 1747 {I2} (1998VoAA)   
+ 35AR  L 2649      2  3/2+                             2        0.57            
+ 35AR cL E$weighted average of 2637 {I10} (1973Be26) and 2649 {I2} (1998VoAA)   
+ 35AR  L 2983      2  5/2+                             2        1.39            
+ 35AR cL E$weighted average of 2982 {I10} (1973Be26) and 2983 {I2} (1998VoAA)   
+ 35AR  L 3197      2  7/2-                             3        0.39            
+ 35AR cL E$weighted average of 3193 {I10} (1973Be26) and 3197 {I2} (1998VoAA)   
+ 35AR  L 3882      5  1/2+                             0        0.02            
+ 35AR cL E$weighted average of 3884 {I10} (1973Be26) and 3881 {I5} (1998VoAA)   
+ 35AR  L 4001      3  (3/2)-                           1        0.065           
+ 35AR cL E$weighted average of 4012 {I10} (1973Be26) and 4000 {I3} (1998VoAA)   
+ 35AR  L 4113      4                                                        
+ 35AR cL E$weighted average of 4110 {I10} (1973Be26) and 4113 {I4} (1998VoAA)   
+ 35AR  L 4135      4  (3/2)-                           1        0.025           
+ 35AR cL E$weighted average of 4142 {I10} (1973Be26) and 4134 {I4} (1998VoAA)   
+ 35AR  L 4350      6                                                            
+ 35AR cL E$weighted average of 4350 {I10} (1973Be26) and 4350 {I6} (1998VoAA)   
+ 35AR  L 4515      5                                                        
+ 35AR cL E$weighted average of 4530 {I10} (1973Be26) and 4514 {I3} (1998VoAA)   
+ 35AR  L 4713      6  1/2+                             0        0.05            
+ 35AR cL E$weighted average of 4721 {I10} (1973Be26) and 4710 {I6} (1998VoAA)   
+ 35AR  L 4774      6                                                        
+ 35AR cL E$weighted average of 4782 {I10} (1973Be26) and 4771 {I6} (1998VoAA)   
+ 35AR  L 5059      11                                                       
+ 35AR cL E$weighted average of 5048 {I10} (1973Be26) and 5069 {I4} (1998VoAA)   
+ 35AR  L 5116      2  (3/2,5/2)+                       2        0.25,0.145  A   
+ 35AR cL E$weighted average of 5116 {I10} (1973Be26) and 5116 {I2} (1998VoAA)   
+ 35AR  L 5207      3                                                        
+ 35AR cL E$weighted average of 5205 {I10} (1973Be26) and 5207 {I3} (1998VoAA)   
+ 35AR  L 5389      8                                                        
+ 35AR cL E$weighted average of 5387 {I10} (1973Be26) and 5391 {I8} (1998VoAA)   
+ 35AR  L 5482      2  (3/2,5/2)+                       2        0.77,0.445  A   
+ 35AR cL E$weighted average of 5484 {I10} (1973Be26) and 5482 {I2} (1998VoAA)   
+ 35AR  L 5594      2  (3/2,5/2)+                       2        1.98,1.14   A   
+ 35AR cL E$weighted average of 5591 {I10} (1973Be26) and 5594 {I2} (1998VoAA)   
+ 35AR  L 5916      3                                                            
+ 35AR cL E$weighted average of 5911 {I10} (1973Be26) and 5916 {I3} (1998VoAA)   
+ 35AR  L 6036      3  (3/2,5/2)+                       2        1.3,0.755   A   
+ 35AR cL E$weighted average of 6033 {I10} (1973Be26) and 6036 {I3} (1998VoAA)   
+ 35AR  L 6162      2                                                            
+ 35AR cL E$weighted average of 6153 {I10} (1973Be26) and 6162 {I2} (1998VoAA)   
+ 35AR  L 6262      10                                                           
+ 35AR cL E$weighted average of 6258 {I10} (1973Be26) and 6267 {I12} (1998VoAA)  
+ 35AR  L 6615      3  1/2+                             0        0.36            
+ 35AR cL E$weighted average of 6631 {I10} (1973Be26) and 6614 {I2} (1998VoAA)   
+ 35AR cL $Probable doublet in 1973Be26.                                         
+ 35AR  L 6823      2                                                            
+ 35AR cL E$weighted average of 6827 {I10} (1973Be26) and 6823 {I2} (1998VoAA)   
+ 35AR  L 6948      2                                                            
+ 35AR cL E$weighted average of 6959 {I10} (1973Be26) and 6948 {I2} (1998VoAA)   
+ 35AR  L 7043      4                                                            
+ 35AR cL E$weighted average of 7055 {I10} (1973Be26) and 7042 {I3} (1998VoAA)   
+ 35AR  L 7117      10                                                       B   
+ 35AR  L 7293      10                                                       B   
+ 35AR  L 7423      10                                                       B   
+ 35AR  L 7502      10                                                       B   
+ 35AR  L 7840      10                                                       B   
+ 35AR  L 8019      10                                                       B   
 

@@ -1,5 +1,40 @@
 # Change Log for ENSDF Edits
 
+## 2025-06-19
+- **Ar35_36ar_3he_a.ens major dataset integration** (Agent's work):
+  - **Header updates**: Added 1998VoAA reference alongside 1973BE26 in keynumber field
+  - **Complete level energy modernization**: Updated all 27 levels from 1973Be26-only values to weighted averages with 1998VoAA data:
+    * Energy precision dramatically improved from ±10 keV to ±2-6 keV uncertainties
+    * Examples: 1179±10 → 1175±2, 1738±10 → 1747±2, 2637±10 → 2649±2 keV
+    * Last 6 high-energy levels (7117-8019 keV) retained ±10 keV and marked with "B" flag
+  - **Added comprehensive comment system**: Each level now includes weighted average calculation explanation
+    * Format: "E$weighted average of [1973Be26 value] {I10} (1973Be26) and [1998VoAA value] {I[unc]} (1998VoAA)"
+  - **Detailed 1998VoAA experimental description**: Replaced thesis reference with complete experimental setup
+    * 25-MeV ³He beam from FN Tandem accelerator at Notre Dame
+    * Target preparation: 75-keV ³⁶Ar implanted into 40 μg/cm² carbon foils
+    * Detection system: broad-range magnetic spectrograph with position-sensitive proportional gas detector
+  - **Added "E(B)$From 1973Be26" comment for data provenance tracking
+
+- **S35 dataset header modernization** (Agent's work):
+  - **S35_37cl_d_a_37cl_d_ag.ens**: Updated from "11NDS 201111" to "ENSDF 202509" format
+    * Added new authorship line: "LIJIE SUN AND JUN CHEN"
+    * Improved comment formatting and line breaks for readability
+  - **S35_37cl_p_3he.ens**: Complete experimental description overhaul
+    * Converted all citations to proper past tense following academic conventions
+    * Added clear reaction summary: "³⁷Cl→³⁵S+1p1n from J^π=3/2+ ³⁷Cl ground state"
+    * Enhanced DWBA analysis descriptions with proper theoretical context
+    * Improved technical specifications formatting for detectors and experimental setup
+
+- **Documentation and tooling enhancements** (Agent's work):
+  - **Enhanced copilot-instructions.md**: Added critical command triggers and automation
+    * "Self-Calibrate Columns" command for precise ENSDF column verification
+    * "What changed?" command for automated change detection and documentation
+    * Comprehensive ENSDF column format reference with exact positioning rules
+    * Enhanced Greek letter and mathematical symbol encoding guidelines
+  - **Updated change.log documentation standards**: Improved categorization and detail tracking
+
+- **File management**: Created temporary files for reference (1973Be26.ens, 1998VoAA.ens) and removed test.ens
+
 ## 2025-06-18
 - **S35 file reorganization** (User's work):
   - `S35_208pb_36s_xg.ens` → `S35_208pb_36s_35sg.ens`: File renamed to improve reaction notation specificity
@@ -34,6 +69,10 @@
   - Restored "Fix format!" command trigger for superscripts/subscripts
   - Added critical ENSDF column format reference with G-record and L-record specifications
   - **Added "What changed?" command trigger**: Automated workflow for change detection and change.log updates using what-changed.ps1
+  - **Self-Calibrate Columns**: Added command trigger to verify exact column positions
+  - Implemented character-by-character column mapping for ENSDF records
+  - Created automated verification workflow for precise nuclear data formatting
+  - Fixed misconceptions about column positions in ENSDF L and G records
 
 ## 2025-06-17
 - **Comprehensive A=35 mass chain evaluation and dataset updates** (User's work):
