@@ -15,6 +15,33 @@
   - **No ENSDF data files modified** - Focus was on tooling improvements
   - **Tools tested and verified**: column-calibrate.ps1 successfully analyzes P35_208pb_36s_35pg.ens
 
+- **Enhanced ENSDF Column Calibration with PowerShell History Analysis**:
+  - **Major column-calibrate.ps1 enhancement**: Analyzed PowerShell history to integrate advanced features
+    * **Character-by-character mapping**: Added -Detailed flag for position-by-position analysis
+    * **Enhanced field extraction**: Improved L/G record field parsing with proper column boundaries
+    * **Comprehensive validation**: Added detailed error checking for NUCID, record type, energy fields
+    * **Readability space validation**: Critical col 22 space checking for human readability
+    * **Corrected column assignments**: J-π and RI fields properly start at column 23 (not 22)
+  - **PowerShell history insights integrated**:
+    * Character mapping functions from history analysis (lines 1182-1186)
+    * Field analysis improvements from detailed column testing (lines 1070-1120)  
+    * Enhanced validation logic from interactive testing sessions
+    * Proper function organization to avoid PowerShell execution order issues
+  - **Improved script architecture**:
+    * Functions defined before usage (PowerShell requirement)
+    * Enhanced error messages with specific character position reporting
+    * Optional detailed analysis with -Detailed switch parameter
+    * Professional color-coded output with comprehensive field breakdown
+  - **Validation improvements**: Script now detects and reports column formatting issues
+    * Short records (< 80 characters)
+    * Missing readability spaces at column 22
+    * Empty required fields (NUCID, energy, J-π/RI)
+    * Incorrect record types at position 8
+  - **Testing completed**: Enhanced script validated against real ENSDF files
+    * Successfully analyzed P35_208pb_36s_35pg.ens with both standard and detailed modes
+    * Identified actual formatting issues in sample G-records
+    * Confirmed proper field extraction and boundary detection
+
 ## 2025-06-19
 - **Ar35_36ar_3he_a.ens major dataset integration** (Agent's work):
   - **Header updates**: Added 1998VoAA reference alongside 1973BE26 in keynumber field
@@ -236,7 +263,7 @@
 ## 2025-06-01
 - Updated `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_9be_36si_35sig.ens`:
   - Updated header record: NSR keynumbers to `2014ST18,2015ST06`, ENSDF date to `202509`, and added new H-records.
-  - Expanded general comments for `2014St18` and added comments for `2015St06` and Stroberg Ph.D. thesis.
+  - Expanded general comments for `2014St18` and added comments for `2015ST06` and Stroberg Ph.D. thesis.
   - Added/updated dataset-specific comments (`dL E$`, `cL E$`, `cL L$`, `cG E,RI$`).
   - Updated comments for partial knockout cross-sections and lifetimes for various levels (0, 908, 973, 1688 keV).
   - Removed NSR_REF from some specific comment lines (e.g. BE2 value for 908 keV level, partial cross section for 973 keV level).
@@ -592,7 +619,7 @@
 ## 2025-06-01
 - Updated `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_9be_36si_35sig.ens`:
   - Updated header record: NSR keynumbers to `2014ST18,2015ST06`, ENSDF date to `202509`, and added new H-records.
-  - Expanded general comments for `2014St18` and added comments for `2015St06` and Stroberg Ph.D. thesis.
+  - Expanded general comments for `2014St18` and added comments for `2015ST06` and Stroberg Ph.D. thesis.
   - Added/updated dataset-specific comments (`dL E$`, `cL E$`, `cL L$`, `cG E,RI$`).
   - Updated comments for partial knockout cross-sections and lifetimes for various levels (0, 908, 973, 1688 keV).
   - Removed NSR_REF from some specific comment lines (e.g. BE2 value for 908 keV level, partial cross section for 973 keV level).
@@ -839,3 +866,19 @@
 - Added concise 1998Sc19 reference comment describing {+35}K polarization and g-factor measurements
 - Updated copilot-instructions.md with rule about not modifying first/last line indentation
 - Fixed spelling and formatting errors in various reference comments
+
+## 2025-06-16
+- **Python Version of Column Calibration Script Created**:
+  - **New column_calibrate.py**: Full Python implementation with identical functionality to PowerShell version
+    * **Enhanced Python features**: Better regex matching, UTF-8 support, argparse for professional CLI
+    * **Color-coded output**: ANSI color codes for terminal formatting
+    * **Identical functionality**: All PowerShell features including character mapping, field analysis, validation
+    * **Python advantages**: More familiar syntax, better string handling, cross-platform compatibility
+    * **Command-line interface**: `python column_calibrate.py file.ens [--detailed]`
+  - **Updated copilot-instructions.md**: Added both PowerShell and Python options for Self-Calibrate command
+    * Users can now choose their preferred language (PowerShell or Python)
+    * Both scripts provide identical ENSDF column analysis capabilities
+  - **Testing completed**: Python version validated against real ENSDF files
+    * Successfully analyzed P35_208pb_36s_35pg.ens with both standard and detailed modes
+    * Confirmed identical output and validation results compared to PowerShell version
+    * Proper error detection and field boundary analysis working correctly

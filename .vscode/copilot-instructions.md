@@ -12,13 +12,15 @@
 
 ### "Self-Calibrate Columns" Command:
 When the user types "Self-Calibrate Columns", automatically:
-Run the PowerShell script: `.\column-calibrate.ps1 "currentfile.ens"`
+**PowerShell version:** `.\column-calibrate.ps1 "currentfile.ens"` (or with `-Detailed` flag)
+**Python version:** `python column_calibrate.py "currentfile.ens"` (or with `--detailed` flag)
 
-**Script performs:**
+**Both scripts perform:**
 1. Display a column ruler (1-80) to visualize data placement
 2. Extract sample ENSDF records (L and G types) from the current file
 3. Analyze critical field positions per ENSDF Manual specifications
-4. Show field mappings for verification
+4. Show field mappings and validation results
+5. Character-by-character mapping (when detailed flag is used)
 
 **L-record fields (per ENSDF Manual Section 9):**
    - NUCID: Columns 1-5 (e.g., "35P  ")
@@ -28,7 +30,8 @@ Run the PowerShell script: `.\column-calibrate.ps1 "currentfile.ens"`
    - Must be blank: Column 9
    - E (Level energy): Columns 10-19 (Must not be blank)
    - DE (Energy uncertainty): Columns 20-21
-   - J (Spin and parity): Columns 22-39
+   - Space: Column 22 (for readability)
+   - J (Spin and parity): Columns 23-39
    - T (Half-life): Columns 40-49 (units must be given)
    - DT (Half-life uncertainty): Columns 50-55
    - L (Angular momentum transfer): Columns 56-64
@@ -44,7 +47,8 @@ Run the PowerShell script: `.\column-calibrate.ps1 "currentfile.ens"`
    - Must be blank: Column 9
    - E (Gamma-ray energy): Columns 10-19 (Must not be blank)
    - DE (Energy uncertainty): Columns 20-21
-   - RI (Relative photon intensity): Columns 22-29
+   - Space: Column 22 (for readability)
+   - RI (Relative photon intensity): Columns 23-29
    - DRI (Uncertainty in RI): Columns 30-31
    - M (Multipolarity): Columns 32-41
    - MR (Mixing ratio): Columns 42-49
