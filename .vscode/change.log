@@ -911,3 +911,40 @@
     * Updated field reference guide to show complete column mappings
     * Enhanced help text to reflect full ENSDF format coverage
     * Added comprehensive field descriptions in both script comments and output
+
+- **Ar35 ENSDF Scientific Content Enhancements**:
+  - **Ar35_36ar_p_d.ens**: Grammar improvement in comment line 77
+    * Fixed: "account of the data than does L=3" → "account of the data than L=3 does"
+  - **Ar35_adopted.ens**: Multiple scientific and formatting improvements
+    * **Comment structure cleanup**: Fixed orphaned continuation lines and improved formatting (lines 19-22)
+    * **Enhanced level energy description**: Clarified "E(level) from a least-squares fit..." (lines 39-41)
+    * **Added experimental context**: New reference to 1973Be26 L=2 vs L=3 analysis supporting L=2 assignment (lines 179-180)
+    * **Negative experimental evidence**: Added information about unsuccessful {+35}Cl({+3}He,t) T=3/2 level search (lines 206-207)
+    * **Evaluator note improvements**: Reorganized and clarified level differentiation logic, fixed "5992→5994" typo (lines 220-222)
+    * **Enhanced scientific rationale**: Better explanation of why T=0 reactions shouldn't populate T=3/2 levels
+  - **Files unchanged**: Ar35_36ar_3he_a.ens (no modifications in this session)
+  - **Processing artifacts**: Updated PDF files and temp processing files as expected
+
+## 2025-12-26
+- **Final Change Documentation Session**:
+  - **Enhanced ENSDF Python tools development**: Completed check_averages.py for verifying weighted/unweighted average calculations in ENSDF comment lines
+    * **Complete testing**: Successfully validated against 35.adp containing multiple average calculations
+    * **Robust error handling**: Comprehensive parsing of ENSDF comment syntax and weighted average formulas
+    * **Full workflow integration**: Tool now part of complete ENSDF validation toolkit alongside column calibration scripts
+  - **Comprehensive change detection and logging**:
+    * **Used what-changed.ps1**: Generated detailed diffs for all modified ENSDF files
+    * **Cross-verified with git**: Double-checked all changes using git status and git diff
+    * **Evidence-based documentation**: All change log entries backed by actual file diffs and validation
+  - **ENSDF file status confirmed**:
+    * **Ar35_36ar_p_d.ens**: Single grammar fix (line 77) - "than does L=3" → "than L=3 does"
+    * **Ar35_adopted.ens**: Multiple scientific improvements - comment formatting, experimental context, evaluator notes
+    * **Ar35_36ar_3he_a.ens**: No changes (confirmed by tools and git diff)
+    * **Processing artifacts**: All PDF and temp files updated as expected from source changes
+  - **Python tool maturity**:
+    * **column_calibrate.py**: Now handles complete 80-column ENSDF format with all L/G record fields
+    * **check_averages.py**: Comprehensive average calculation verification with proper error handling
+    * **Both tools tested and validated**: Working correctly on real ENSDF files with expected output
+  - **Change tracking process established**:
+    * **Systematic workflow**: Use git status + git diff + what-changed.ps1 for comprehensive change detection
+    * **Documentation standards**: Evidence-based change logging with specific line numbers and content changes
+    * **No missed changes**: Multi-tool verification ensures complete change capture and documentation
