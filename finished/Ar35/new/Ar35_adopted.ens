@@ -3,7 +3,7 @@
  35AR2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35AR  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35AR2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35AR dL E$Least-squares fitting is done by GLSC (version 21-Mar-2025)          
+ 35AR dL E$Least-squares fitting is done by GLSC (version 03-Jun-2025)          
  35AR  Q -11874.4  9 12740.3 7 5896.2  7 -6429.7 7     2021WA16                 
  35AR cQ $Q(|b{+-}n)=-29632 {I17}, from mass excesses of -1487 {I17} for {+34}K 
  35AR2cQ measured by 2024Dr01; -23047.3 {I7} for {+35}Ar from 2021Wa16. Value   
@@ -77,7 +77,7 @@
  35AR cG E$weighted average of 1184.0 {I3} from {+35}K |e decay and 1184.3 {I4} 
  35AR2cG from {+36}Ca |ep decay                                                 
  35AR  L 1750.78   22 (5/2)+                                                    
- 35ARX L XREF=ADEF(2030)GI(1700)J(1700)K(1738)                                  
+ 35ARX L XREF=ADEF(2030)GI(1700)J(1700)K                                        
  35AR cL E$1963Ne05 (|a,n) observed the second excited state in {+35}Ar at 2030 
  35AR2cL {I80} keV.                                                             
  35AR cL J$L({+3}He,|a)=2 from 0+. Mirror level: 5/2+ at 1763 keV in {+35}Cl.   
@@ -98,7 +98,7 @@
  35AR2cG from ({+16}O,|an|g)                                                    
  35AR cG RI$other: 100 {I22} from ({+24}Mg,|an|g)                               
  35AR  L 2638.01   26 3/2+                                                      
- 35ARX L XREF=AI(2615)JK                                                        
+ 35ARX L XREF=AI(2615)JK(2649)                                                  
  35AR cL J$L(p,d)=L({+3}He,|a)=2 from 0+ with J dependence in (p,d).            
  35AR  G 886.8     5 16      6                                              K   
  35AR  G 2638.0    4 100     13                                             K   
@@ -121,13 +121,13 @@
  35AR2cG from ({+16}O,|an|g), and 1446.0 {I6} from ({+3}He,n|g)                 
  35AR cG RI$other: 100 {I9} from ({+24}Mg,|an|g)                                
  35AR  G 3197.0    7 21      5 Q                                                
- 35AR cG E$From ({+24}Mg,|an|g). Other: 3197 {I6} from ({+16}O,|an|g)           
+ 35AR cG E$from ({+24}Mg,|an|g). Other: 3197 {I6} from ({+16}O,|an|g)           
  35AR cG RI$weighted average of 18 {I5} from ({+24}Mg,|an|g) and 24 {I5} from   
  35AR2cG ({+16}O,|an|g)                                                         
- 35AR  L 3884      10 1/2+                                                      
+ 35AR  L 3882      5  1/2+                                                      
  35ARX L XREF=K                                                                 
  35AR cL J$L({+3}He,|a)=0 from 0+.                                              
- 35AR  L 4012      10 1/2-,3/2-                                                 
+ 35AR  L 4001      3  1/2-,3/2-                                                 
  35ARX L XREF=K                                                                 
  35AR cL J$L({+3}He,|a)=1 from 0+.                                              
  35AR  L 4065.0    4  (1/2+,3/2+,5/2+)                                         ?
@@ -135,9 +135,9 @@
  35AR cL J$possibly allowed |e+|b{++} feeding from 3/2+ parent with log         
  35AR2cL {Ift}=5.6 {I+4-2}.                                                     
  35AR  G 1426.8    4 100                                                    E   
- 35AR  L 4110      10                                                           
+ 35AR  L 4113      4                                                            
  35ARX L XREF=K                                                                 
- 35AR  L 4142      10 1/2-,3/2-                                                 
+ 35AR  L 4135      4  1/2-,3/2-                                                 
  35ARX L XREF=K                                                                 
  35AR cL J$L({+3}He,|a)=1 from 0+.                                              
  35AR  L 4359.0    5  (9/2-)                                                    
@@ -152,34 +152,35 @@
  35AR  G 1756      1 100     15                                                 
  35AR cG E$weighted average of 1756 {I1} from ({+24}Mg,|an|g) and 1756.3 {I14}  
  35AR2cG from ({+16}O,|an|g)                                                    
- 35AR cG RI$From ({+24}Mg,|an|g). Other: 100 {I53} from ({+16}O,|an|g)          
+ 35AR cG RI$from ({+24}Mg,|an|g). Other: 100 {I53} from ({+16}O,|an|g)          
  35AR  L 4528.3    4  (1/2+,3/2+,5/2+)                                          
- 35ARX L XREF=AK                                                                
+ 35ARX L XREF=AK(4515)                                                          
  35AR cL J$possibly allowed |e+|b{++} feeding from 3/2+ parent with log         
  35AR2cL {Ift}=5.4 {I+4-2}.                                                     
  35AR  G 4527.9    7 100                                                    E   
  35AR  L 4725.9    6  1/2+                                                      
- 35ARX L XREF=AHI(4756*)K                                                        
+ 35ARX L XREF=AHI(4756*)K(4713)                                                 
  35AR cL J$L({+3}He,|a)=0 from 0+. Other: L(p,d)=0 from 0+ for a group at 4756  
  35AR2cL {I28}.                                                                 
  35AR  G 3542.0    6 100     21                                             K   
  35AR  G 4724.5    11 41     17                                             K   
  35AR  L 4785.8    11 1/2+,3/2+,5/2+                                            
- 35ARX L XREF=AHI(4756*)K                                                        
+ 35ARX L XREF=AHI(4756*)K(4774)                                                 
  35AR cL J$allowed |e+|b{++} feeding from 3/2+ parent with log {Ift}=5.2 {I2}.  
  35AR2cL Other: L(p,d)=0 from 0+ for a group at 4756 {I28}.                     
  35AR  G 4785.4    11 100                                                   E   
- 35AR  L 5048      10                                                           
+ 35AR  L 5059      11                                                           
  35ARX L XREF=K                                                                 
- 35AR  L 5113      10 3/2+,5/2+                                                 
- 35ARX L XREF=HIK                                                                
- 35AR cL E$weighted average of 5102 {I20} from (p,d) and 5116 {I10} from        
+ 35AR  L 5116      2  3/2+,5/2+                                                 
+ 35ARX L XREF=HIK                                                               
+ 35AR cL E$weighted average of 5102 {I20} from (p,d) and 5116 {I2} from         
  35AR2cL ({+3}He,|a).                                                           
  35AR cL J$L({+3}He,|a)=2 from 0+. Discrepancy: L(p,d)=3 from 0+ (1968Ko04).    
- 35AR  L 5205      10                                                           
- 35ARX L XREF=HK                                                                 
+ 35AR  L 5207      3                                                            
+ 35ARX L XREF=HK                                                                
+ 35AR cL E$from ({+3}He,|a)                                                     
  35AR  L 5384.2    4  (11/2-)                                               A   
- 35ARX L XREF=DEI(5400)K                                                        
+ 35ARX L XREF=DEHI(5400)K                                                       
  35AR cL J$|DJ=2 |g to 7/2- in ({+16}O,|an|g) and ({+24}Mg,|an|g); band         
  35AR2cL assignment. |g to (9/2-) in ({+16}O,|an|g) and ({+24}Mg,|an|g).        
  35AR3cL Possible mirror level: 11/2- at 5407 keV in {+35}Cl.                   
@@ -192,11 +193,12 @@
  35AR cG E$weighted average of 2187.4 {I4} from ({+24}Mg,|an|g) and 2186.8 {I4} 
  35AR2cG from ({+16}O,|an|g)                                                    
  35AR cG RI$other: 100 {I13} from ({+24}Mg,|an|g)                               
- 35AR  L 5484      10 3/2+,5/2+                                                 
- 35ARX L XREF=HK                                                                 
+ 35AR  L 5482      2  3/2+,5/2+                                                 
+ 35ARX L XREF=HK                                                                
+ 35AR cL E$from ({+3}He,|a)                                                     
  35AR cL J$L({+3}He,|a)=2 from 0+.                                              
  35AR  L 5572.67   15 3/2+                                                      
- 35ARX L XREF=AG(5537)                                           
+ 35ARX L XREF=AG(5537)                                                          
  35AR2 L ISPIN=3/2                                                              
  35AR cL J$isobaric analog state of 3/2+ {+35}K g.s. with log {Ift}=3.31 {I4}.  
  35AR2cL L({+3}He,n)=(0) from 3/2+.                                             
@@ -207,12 +209,12 @@
  35AR  G 3821.7    7 6.7     14                                             K   
  35AR  G 4387.2    9 6.7     16                                             K   
  35AR  G 5572.3    10 11.7   31                                             K   
- 35AR  L 5592      10 3/2+,5/2+
- 35ARX L XREF=C(5570)HIK
+ 35AR  L 5594      2  3/2+,5/2+                                                 
+ 35ARX L XREF=C(5570)HIK                                                        
  35AR cL $Evaluators consider the 5992 level to be different from the T=3/2     
  35AR2cL level at 5572.67 because (p,d) and ({+3}He,|a) from T=0 should not     
  35AR3cL populate T=3/2 levels.                                                 
- 35AR cL E$weighted average of 5598 {I20} from (p,d) and 5591 {I10} from        
+ 35AR cL E$weighted average of 5598 {I20} from (p,d) and 5594 {I2} from         
  35AR2cL ({+3}He,|a).                                                           
  35AR cL J$L(p,d)=L({+3}He,|a)=2 from 0+.                                       
  35AR  L 5613.6    9  (11/2-)                                                   
@@ -228,32 +230,34 @@
  35AR cG E$weighted average of 381.6 {I1} from ({+24}Mg,|an|g) and 381.5 {I3}   
  35AR2cG from ({+16}O,|an|g)                                                    
  35AR  G 1406.9    7 17.2    35 (Q)                                             
- 35AR  L 5913      5                                                            
- 35ARX L XREF=HJK                                                                
- 35AR cL E$From (d,t). Other: 5911 {I10} from ({+3}He,|a)                       
+ 35AR  L 5915      3                                                            
+ 35ARX L XREF=HJK                                                               
+ 35AR cL E$weighted average of 5913 {I5} from (d,t) and 5916 {I3} from          
+ 35AR2cL ({+3}He,|a)                                                            
  35AR  L 5991      3                                                            
  35ARX L XREF=J                                                                 
  35AR  L 6037      3  3/2+,5/2+                                                 
- 35ARX L XREF=HI(6024)JK(6033)                                                   
+ 35ARX L XREF=HI(6024)JK                                                        
+ 35AR cL E$weighted average of 6037 {I3} from (d,t) and 6036 {I3} from          
+ 35AR2cL ({+3}He,|a). Other: 6024 {I20} from (p,d)                              
  35AR cL J$L(p,d)=L({+3}He,|a)=2 from 0+.                                       
  35AR  L 6055      3                                                           ?
  35ARX L XREF=J(?)                                                              
  35AR  L 6076      3                                                            
  35ARX L XREF=J                                                                 
- 35AR  L 6163      3                                                            
+ 35AR  L 6163      2                                                            
  35ARX L XREF=JK                                                                
- 35AR cL E$weighted average of 6164 {I3} from (d,t) and 6153 {I10} from         
+ 35AR cL E$weighted average of 6164 {I3} from (d,t) and 6162 {I2} from          
  35AR2cL ({+3}He,|a)                                                            
  35AR  L 6253      3                                                            
- 35ARX L XREF=JK                                                                
- 35AR cL E$From (d,t). Other: 6258 {I10} from ({+3}He,|a).                      
+ 35ARX L XREF=JK(6262*)                                                         
  35AR  L 6273      3                                                            
- 35ARX L XREF=J                                                                 
+ 35ARX L XREF=JK(6262*)                                                         
  35AR  L 6302      3                                                            
  35ARX L XREF=J                                                                 
  35AR  L 6332      3                                                            
  35ARX L XREF=J                                                                 
- 35AR  L 6345      3  (1/2,3/2,5/2)                                               
+ 35AR  L 6345      3  (1/2,3/2,5/2)                                             
  35ARX L XREF=AJ                                                                
  35AR cL E$From (d,t). Other: 6348 {I11} from {+35}K |e decay.                  
  35AR cL J$|e+|b{++} feeding from 3/2+ parent with log {Ift}=7.2 {I1}.          
@@ -270,31 +274,30 @@
  35AR  L 6585      3                                                            
  35ARX L XREF=J                                                                 
  35AR  L 6606      3                                                            
- 35ARX L XREF=I(6620*)JK(6631*)                                                 
- 35AR  L 6617      2                                                        
- 35ARX L XREF=I(6620*)JK(6631*)                                                 
- 35AR cL J$L(p,d)=L({+3}He,|a)=0 from 0+ gives 1/2+ for a group at 6620 {I30}   
- 35AR2cL and 6631 {I10}, respectively, which could be a multiplet of            
- 35AR3cL 6606+6617+6644+6651 in (d,t).                                          
+ 35ARX L XREF=I(6620*)J                                                         
+ 35AR  L 6616      2  1/2+                                                      
+ 35ARX L XREF=I(6620*)JK                                                        
+ 35AR cL E$weighted average of 6617 {I2} from (d,t) and 6615 {I3} from          
+ 35AR2cL ({+3}He,|a). Other: 6620 {I30} from (p,d)                              
+ 35AR cL J$L({+3}He,|a)=L(p,d)=0 from 0+.                                       
  35AR  L 6644      3                                                            
- 35ARX L XREF=I(6620*)JK(6631*)                                                 
+ 35ARX L XREF=I(6620*)J                                                         
  35AR  L 6651      3                                                            
- 35ARX L XREF=I(6620*)JK(6631*)                                                 
+ 35ARX L XREF=I(6620*)J                                                         
  35AR  L 6673      4  5/2-,7/2-                                                 
  35ARX L XREF=I(6700)J                                                          
  35AR cL E$weighted average of 6700 {I20} from (p,d) and 6672 {I3} from (d,t)   
  35AR cL J$L(p,d)=3 from 0+.                                                    
- 35AR  L 6826      10 3/2+,5/2+                                                 
+ 35AR  L 6823      2  3/2+,5/2+                                                 
  35ARX L XREF=IK                                                                
- 35AR cL E$weighted average of 6820 {I30} from (p,d) and 6827 {I10} from        
- 35AR2cL ({+3}He,|a)                                                            
+ 35AR cL E$from ({+3}He,|a). Other: 6820 {I30} from (p,d)                       
  35AR cL J$L(p,d)=2 from 0+.                                                    
- 35AR  L 6959      10                                                           
+ 35AR  L 6948      2                                                            
  35ARX L XREF=K                                                                 
- 35AR  L 7051      10 3/2+,5/2+                                                 
+ 35AR  L 7044      4  3/2+,5/2+                                                 
  35ARX L XREF=AI(7030)K                                                         
  35AR cL E$weighted average of 7053 {I11} from {+35}K |e decay, 7030 {I20} from 
- 35AR2cL (p,d), and 7055 {I10} from ({+3}He,|a)                                 
+ 35AR2cL (p,d), and 7043 {I4} from ({+3}He,|a)                                  
  35AR cL J$L(p,d)=2 from 0+.                                                    
  35AR  L 7117      10                                                           
  35ARX L XREF=K                                                                 
@@ -345,4 +348,4 @@
  35AR cL J$|DJ=2 |g to (19/2-) in ({+16}O,|an|g); band assignment. Possible     
  35AR2cL mirror level: 23/2- at 12571 keV in {+35}Cl.                           
  35AR  G 2370.9    25 100       Q                                               
-
+                                                                                

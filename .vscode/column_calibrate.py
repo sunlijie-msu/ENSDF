@@ -2,6 +2,7 @@
 """
 ENSDF Column Calibration Script (Python Version)
 Enhanced with PowerShell History Analysis insights
+Complete L and G record field extraction
 
 Usage: python column_calibrate.py "path/to/file.ens" [--detailed]
 """
@@ -49,7 +50,7 @@ def analyze_ensdf_fields(record: str, record_type: str) -> None:
     print()
     
     if record_type == "L":
-        # L-record field analysis
+        # L-record field analysis - Complete ENSDF format
         fields = {
             'NUCID': record[0:5].strip() if len(record) >= 5 else "N/A",
             'Record type': record[7] if len(record) >= 8 else "N/A",
@@ -58,7 +59,10 @@ def analyze_ensdf_fields(record: str, record_type: str) -> None:
             'Readability space': record[21] if len(record) >= 22 else "N/A",
             'J-π': record[21:39].strip() if len(record) >= 39 else "N/A",
             'Half-life': record[39:49].strip() if len(record) >= 49 else "N/A",
-            'Half-life uncertainty': record[49:55].strip() if len(record) >= 55 else "N/A"
+            'Half-life uncertainty': record[49:55].strip() if len(record) >= 55 else "N/A",
+            'L (Angular momentum)': record[55:64].strip() if len(record) >= 64 else "N/A",
+            'S (Spectroscopic strength)': record[64:74].strip() if len(record) >= 74 else "N/A",
+            'DS (Uncertainty in S)': record[74:76].strip() if len(record) >= 76 else "N/A"
         }
         
         colored_print("Field Analysis:", Colors.GREEN)
@@ -70,9 +74,12 @@ def analyze_ensdf_fields(record: str, record_type: str) -> None:
         print(f"  J-π (cols 22-39): '{fields['J-π']}'")
         print(f"  Half-life (cols 40-49): '{fields['Half-life']}'")
         print(f"  Half-life uncertainty (cols 50-55): '{fields['Half-life uncertainty']}'")
+        print(f"  L (Angular momentum) (cols 56-64): '{fields['L (Angular momentum)']}'")
+        print(f"  S (Spectroscopic strength) (cols 65-74): '{fields['S (Spectroscopic strength)']}'")
+        print(f"  DS (Uncertainty in S) (cols 75-76): '{fields['DS (Uncertainty in S)']}'")
         
     elif record_type == "G":
-        # G-record field analysis
+        # G-record field analysis - Complete ENSDF format
         fields = {
             'NUCID': record[0:5].strip() if len(record) >= 5 else "N/A",
             'Record type': record[7] if len(record) >= 8 else "N/A",
@@ -81,7 +88,17 @@ def analyze_ensdf_fields(record: str, record_type: str) -> None:
             'Readability space': record[21] if len(record) >= 22 else "N/A",
             'Relative intensity': record[21:29].strip() if len(record) >= 29 else "N/A",
             'Intensity uncertainty': record[29:31].strip() if len(record) >= 31 else "N/A",
-            'Multipolarity': record[31:41].strip() if len(record) >= 41 else "N/A"
+            'Multipolarity': record[31:41].strip() if len(record) >= 41 else "N/A",
+            'Mixing ratio': record[41:49].strip() if len(record) >= 49 else "N/A",
+            'Mixing ratio uncertainty': record[49:55].strip() if len(record) >= 55 else "N/A",
+            'Conversion coefficient': record[55:62].strip() if len(record) >= 62 else "N/A",
+            'CC uncertainty': record[62:64].strip() if len(record) >= 64 else "N/A",
+            'Total conversion coefficient': record[64:72].strip() if len(record) >= 72 else "N/A",
+            'TCC uncertainty': record[72:76].strip() if len(record) >= 76 else "N/A",
+            'Continuation': record[76:77].strip() if len(record) >= 77 else "N/A",
+            'Coincidence flag': record[77:78].strip() if len(record) >= 78 else "N/A",
+            'Question flag': record[78:79].strip() if len(record) >= 79 else "N/A",
+            'Footnote flag': record[79:80].strip() if len(record) >= 80 else "N/A"
         }
         
         colored_print("Field Analysis:", Colors.GREEN)
@@ -93,6 +110,16 @@ def analyze_ensdf_fields(record: str, record_type: str) -> None:
         print(f"  Relative intensity (cols 22-29): '{fields['Relative intensity']}'")
         print(f"  Intensity uncertainty (cols 30-31): '{fields['Intensity uncertainty']}'")
         print(f"  Multipolarity (cols 32-41): '{fields['Multipolarity']}'")
+        print(f"  Mixing ratio (cols 42-49): '{fields['Mixing ratio']}'")
+        print(f"  Mixing ratio uncertainty (cols 50-55): '{fields['Mixing ratio uncertainty']}'")
+        print(f"  Conversion coefficient (cols 56-62): '{fields['Conversion coefficient']}'")
+        print(f"  CC uncertainty (cols 63-64): '{fields['CC uncertainty']}'")
+        print(f"  Total conversion coefficient (cols 65-72): '{fields['Total conversion coefficient']}'")
+        print(f"  TCC uncertainty (cols 73-76): '{fields['TCC uncertainty']}'")
+        print(f"  Continuation (col 77): '{fields['Continuation']}'")
+        print(f"  Coincidence flag (col 78): '{fields['Coincidence flag']}'")
+        print(f"  Question flag (col 79): '{fields['Question flag']}'")
+        print(f"  Footnote flag (col 80): '{fields['Footnote flag']}'")
     
     print()
 
@@ -230,7 +257,7 @@ Examples:
         colored_print("Sample L-records:", Colors.GREEN)
         for record in l_records:
             print(record)
-            colored_print("  NUCID (1-5), L (8), Energy (10-19), DE (20-21), Space (22), J (23-39), T (40-49), DT (50-55)", Colors.GRAY)
+            colored_print("  NUCID (1-5), L (8), Energy (10-19), DE (20-21), Space (22), J (23-39), T (40-49), DT (50-55), L (56-64), S (65-74), DS (75-76)", Colors.GRAY)
             print()
             
             # Show detailed field analysis
@@ -245,7 +272,7 @@ Examples:
         colored_print("Sample G-records:", Colors.GREEN)
         for record in g_records:
             print(record)
-            colored_print("  NUCID (1-5), G (8), Energy (10-19), DE (20-21), Space (22), RI (23-29), DRI (30-31), M (32-41)", Colors.GRAY)
+            colored_print("  NUCID (1-5), G (8), Energy (10-19), DE (20-21), Space (22), RI (23-29), DRI (30-31), M (32-41), MR (42-49), DMR (50-55), CC (56-62), DCC (63-64), TCC (65-72), DTCC (73-76), C (77), [+] (78), [?] (79), [*] (80)", Colors.GRAY)
             print()
             
             # Show detailed field analysis
@@ -261,9 +288,9 @@ Examples:
         for record in l_records:
             issues = validate_ensdf_fields(record, "L")
             if not issues:
-                colored_print("  ✓ Format OK", Colors.GREEN)
+                colored_print("  [OK] Format OK", Colors.GREEN)
             else:
-                colored_print("  ⚠ Issues found:", Colors.RED)
+                colored_print("  [!] Issues found:", Colors.RED)
                 for issue in issues:
                     colored_print(f"    {issue}", Colors.RED)
         print()
@@ -273,9 +300,9 @@ Examples:
         for record in g_records:
             issues = validate_ensdf_fields(record, "G")
             if not issues:
-                colored_print("  ✓ Format OK", Colors.GREEN)
+                colored_print("  [OK] Format OK", Colors.GREEN)
             else:
-                colored_print("  ⚠ Issues found:", Colors.RED)
+                colored_print("  [!] Issues found:", Colors.RED)
                 for issue in issues:
                     colored_print(f"    {issue}", Colors.RED)
         print()
@@ -289,21 +316,24 @@ Examples:
     print(f"  Comment lines: {stats['comments']}")
     print()
     
-    colored_print("✓ Column calibration complete", Colors.GREEN)
-    colored_print("✓ Python version with enhanced PowerShell history insights", Colors.GREEN)
+    colored_print("[OK] Column calibration complete", Colors.GREEN)
+    colored_print("[OK] Python version with enhanced PowerShell history insights", Colors.GREEN)
     print()
+    
     colored_print("=== ENSDF Column Reference ===", Colors.CYAN)
-    print("L-records: NUCID(1-5) L(8) Energy(10-19) DE(20-21) [space](22) J-π(23-39) T(40-49) DT(50-55)")
-    print("G-records: NUCID(1-5) G(8) Energy(10-19) DE(20-21) [space](22) RI(23-29) DRI(30-31) M(32-41)")
+    print("L-records: NUCID(1-5) L(8) Energy(10-19) DE(20-21) [space](22) J-π(23-39) T(40-49) DT(50-55) L(56-64) S(65-74) DS(75-76)")
+    print("G-records: NUCID(1-5) G(8) Energy(10-19) DE(20-21) [space](22) RI(23-29) DRI(30-31) M(32-41) MR(42-49) DMR(50-55) CC(56-62) DCC(63-64) TCC(65-72) DTCC(73-76) C(77) [+](78) [?](79) [*](80)")
     print()
     colored_print("Key improvements from PowerShell history analysis:", Colors.YELLOW)
-    print("  • Enhanced field extraction and validation")
-    print("  • Character-by-character mapping (use --detailed flag)")
-    print("  • Corrected column assignments for readability space at col 22")
-    print("  • J-π and RI fields properly start at column 23")
-    print("  • Comprehensive field validation with specific error messages")
-    print("  • Python regex for robust record matching")
-    print("  • Better error handling and UTF-8 support")
+    print("  - Enhanced field extraction and validation")
+    print("  - Character-by-character mapping (use --detailed flag)")
+    print("  - Corrected column assignments for readability space at col 22")
+    print("  - J-π and RI fields properly start at column 23")
+    print("  - Complete L-record field extraction including L, S, and DS fields")
+    print("  - Complete G-record field extraction including all fields to column 80")
+    print("  - Comprehensive field validation with specific error messages")
+    print("  - Python regex for robust record matching")
+    print("  - Better error handling and UTF-8 support")
 
 
 if __name__ == "__main__":
