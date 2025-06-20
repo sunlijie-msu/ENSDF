@@ -1,0 +1,773 @@
+** Java program for fitting gammas&calculating feedings (version 06/03/2025) **
+Generated at: Fri 06/20/2025 at 06:57:15 PM EDT
+
+ Input file: D:\X\ND\A35\finished\Ar35\new\dummy.ens
+Report file: D:\X\ND\Files\Java_GTOL.rpt
+Output file: D:\X\ND\Files\Java_GTOL.out
+
+Rules for assigning uncertainties to gamma energies where not available:
+(unless otherwise specified by "DEG=" at the end (col>80) of gamma line)
+   Rule 0: No. of decimal digits=0, uncertainty=1
+   Rule 1: No. of decimal digits=1, uncertainty=0.5
+   Rule 2: No. of decimal digits=2, uncertainty=0.05
+
+(Above rules are by default for all gamma-ray energies, and will be;
+ overridden by a DEG option at the end of a gamma-line individually
+ or by a global DEG option at the top of a dataset)
+
+
+ assumptions for non-numerical uncertainties in RI and TI, unless otherwise specified:
+    DRI                assumed %DRI        
+    -----------        ------------        
+    Empty              20
+    LT or LE           50 for DRI(+); assumed RI=DRI(-)=%(100-this value)
+    GT or GE           100000000 for DRI(+); assumed DRI(-)=0
+    AP                 50
+    CA                 50
+    SY                 50
+
+   * DCC theory=1.4% assumed if DCC not given
+   * Uncertainty Limit=35 for rounding-up uncertainty in output
+
+
+   * Gammas marked by "?" are also used in the fitting and intensity calculations
+   * All gammas marked by "S" are ignored in the fitting and intensity calculations
+   * RI flagged by "&" are used as upper limits (RI+DRI) in intensity calculations:
+           Adjusted RI=(RI+DRI)/2=Adjusted DRI
+   * Maximum&Minimum approach is used to propagate large uncertainty (>10%) except E(level)
+
+
+##########################################################################################
+        GTOL report for dataset: << 16O(24MG,ANG) >>
+##########################################################################################
+
+
+-------------------------------------------------------------------------------------------------------------------
+                 Level Energies From Input (old), Fitting (new), and Adjustments for uncertainties                 
+-------------------------------------------------------------------------------------------------------------------
+#Level  old           Input        From fit       After adding dE of base levels:          Has Gamma:        Fixed 
+        kept                      (original)       metastable    fixed("G")/other     Deexciting  Feeding     Type 
+------ ------ --------------- ---------------    --------------- ----------------     ---------- ----------  ------
+     1  kept           0.0             0.0    *         -----            -----           ---        Yes        D   
+     2  kept        1750.8  3      1750.75 32           -----           1750.8  3 &      Yes        Yes       ---  
+     3  kept        2603.2  4       2603.2  4           -----            -----           Yes        Yes       ---  
+     4  kept        3197.0  4      3196.97 35           -----           3197.0  4 &      Yes        Yes       ---  
+     5  kept        4359.2  7       4359.2  7           -----            -----           Yes        Yes       ---  
+     6  kept        5384.4  5       5384.4  5           -----            -----           Yes        Yes       ---  
+     7  kept        5766.0  5       5766.0  5           -----            -----           Yes        ---       ---  
+-------------------------------------------------------------------------------------------------------------------
+NOTE: --- indicates Not Applicable.
+        * indicates level fixed in fitting.
+        & from original uncertainty adjusted based on input settings.
+        # non-numerical uncertainty is from fitting gammas or end-level.
+      Quoted values under "From fit" for fixed levels are taken from their input values.
+      Fixed Type="A": assumed fixed by GTOL for level not connected to any level; not used in the fitting.
+                ="D": assumed fixed by GTOL for meta-stable level, with %(all decay modes but IT)>99.75;
+                      uncertainty will be added after fitting (1st level always this type by default).
+                ="S": assumed fixed by GTOL for level which causes singular matrix problem; uncertainty=0 assumed.
+                ="F": energy is fixed and uncertainty=0 assumed for fitting.
+                ="G": energy is fixed in fitting and uncertainty will be added after fitting.
+           Only type "F" and "G" are set by user by inserting the type letter in the energy field (col 10-20).
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                            Input and fitted Gamma Energies                                                             
+#Gamma        Input EG    Adjusted dEG   Initial Level     Final Level     EG From fit   Difference   Diff/dEG  #sigma       Chi2    %Chi2      Input EG
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+     1      1750.7  4         -----         1750.8  3          0.0          1750.71 32      -0.0074      0.019       0      0.000     0.04     1750.7  4 
+     2         852  1         -----         2603.2  4       1750.8  3         852.4  5      -0.4213      0.421       0      0.178    18.16        852  1 
+     3      2603.0  5         -----         2603.2  4          0.0           2603.1  4      -0.0829      0.166       0      0.028     2.82     2603.0  5 
+     4         593  1         -----         3197.0  4       2603.2  4         593.8  5      -0.7791      0.779       1      0.607    62.11        593  1 
+     5      1446.2  2         -----         3197.0  4       1750.8  3       1446.19 19       0.0150      0.075       0      0.006     0.58     1446.2  2 
+     6      3197.0  7         -----         3197.0  4          0.0          3196.82 35       0.1853      0.265       0      0.070     7.17     3197.0  7 
+     7        1162  1         -----         4359.2  7       3197.0  4        1162.2  6      -0.2160      0.216       0      0.047     4.77       1162  1 
+     8        1756  1         -----         4359.2  7       2603.2  4        1756.0  7       0.0260      0.026       0      0.001     0.07       1756  1 
+     9        1025  1         -----         5384.4  5       4359.2  7        1025.2  7      -0.1900      0.190       0      0.036     3.69       1025  1 
+    10      2187.4  4         -----         5384.4  5       3197.0  4        2187.4  4       0.0304      0.076       0      0.006     0.59     2187.4  4 
+    11       381.6  1         -----         5766.0  5       5384.4  5        381.60 10       0.0000      0.000       0      0.000     0.00      381.6  1 
+                                                                                                                 chi2=      0.977
+                                                                                                             chi2/dof=      0.195
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE: * at initial level indicates level fixed in the fitting.
+      ## in #sigma column marks number of sigma>=4.
+      Quoted level energies are from fit.
+      #sigma=round(Diff/dEG), by which the input EG differs from the fitted one.
+      dEG=1 keV is assigned if not given, unless otherwise specified at the end of each gamma line.
+
+
+#of Levels= 7      #of fixed Levels= 1      #of Gammas in fitting= 11
+Degrees of Freedom (dof)= 5
+    Chi2= 0.9774
+Chi2/dof= 0.1955
+(critical Chi2/dof= 3.0170)
+
+
+-----------------------------------------------------------------------------------------------------------------
+                     Calculated Net Feeding from (gamma+ce) Intensity Balance at Each Level                      
+-----------------------------------------------------------------------------------------------------------------
+         Level        RI           RI         RI          TI           TI         TI          Net Feeding (%)  
+                     (OUT)        (IN)       (NET)       (OUT)        (IN)       (NET)        CALC*       INPUT
+-----------------------------------------------------------------------------------------------------------------
+        0.0           0         155 12     -155 12        0         155 12    -155 12        -155 12            
+     1750.8  3      100  7       80  7       20 10      100  7       80  7      20 10          20 10            
+     2603.2  4       45  9       39  7        6 17       45  9       39  7       6 17           6 17            
+     3197.0  4      102 10       35  4       67 14      102 10       35  4      67 14          67 14            
+     4359.2  7       38  5      5.0 20       33  7       38  5      5.0 20      33  7          33  7            
+     5384.4  5       29  4     26.0 30        3  7       29  4     26.0 30       3  7           3  7            
+     5766.0  5     26.0 30        0        26.0 30     26.0 30        0       26.0 30        26.0 30            
+
+                                                                      Sum of Feedings=       155 26         0 0
+-----------------------------------------------------------------------------------------------------------------
+From input:
+  NR=              For normalizing RI to per 100 parent decays via this branch
+  NT=              For normalizing TI to per 100 parent decays via this branch
+  BR=              Branching ratio of this decay branch among all decay branches
+  NB=              For normalizing IB to per 100 parent decays via this branch
+
+* Calculated feedings are based on input NR. Uncertainties could be over-counted for gammas used in
+    normalization to deduce NR.
+  More accurate level feedings could be obtained directly from the normalization process for deducing NR
+    where correlations are taken into account. See the table of level feedings in Java_GABS.rpt.
+
+
+
+
+##########################################################################################
+        GTOL report for dataset: << 1H(36AR,D) >>
+##########################################################################################
+
+No gamma data
+
+
+
+
+##########################################################################################
+        GTOL report for dataset: << 24MG(16O,ANG) >>
+##########################################################################################
+
+
+-------------------------------------------------------------------------------------------------------------------
+                 Level Energies From Input (old), Fitting (new), and Adjustments for uncertainties                 
+-------------------------------------------------------------------------------------------------------------------
+#Level  old           Input        From fit       After adding dE of base levels:          Has Gamma:        Fixed 
+        kept                      (original)       metastable    fixed("G")/other     Deexciting  Feeding     Type 
+------ ------ --------------- ---------------    --------------- ----------------     ---------- ----------  ------
+     1  kept           0.0             0.0    *         -----            -----           ---        Yes        D   
+     2  kept        1750.8  5       1750.8  5           -----            -----           Yes        Yes       ---  
+     3  kept        2603.0  7       2603.0  7           -----            -----           Yes        Yes       ---  
+     4  kept        3196.7  7       3196.7  7           -----            -----           Yes        Yes       ---  
+     5  kept        4358.6  8       4358.6  8           -----            -----           Yes        Yes       ---  
+     6  kept        5383.7  7       5383.7  7           -----            -----           Yes        Yes       ---  
+     7  kept        5613.2 11       5613.2 11           -----            -----           Yes         No       ---  
+     8  kept        5765.3  8       5765.3  8           -----            -----           Yes        Yes       ---  
+     9  kept        8109.2 14       8109.2 14           -----            -----           Yes        Yes       ---  
+    10  kept        8212.1 10       8212.1 10           -----            -----           Yes        Yes       ---  
+    11  kept        9905.5 21       9905.5 21           -----            -----           Yes        Yes       ---  
+    12  kept       12276.5 33      12276.5 33           -----            -----           Yes        ---       ---  
+-------------------------------------------------------------------------------------------------------------------
+NOTE: --- indicates Not Applicable.
+        * indicates level fixed in fitting.
+        & from original uncertainty adjusted based on input settings.
+        # non-numerical uncertainty is from fitting gammas or end-level.
+      Quoted values under "From fit" for fixed levels are taken from their input values.
+      Fixed Type="A": assumed fixed by GTOL for level not connected to any level; not used in the fitting.
+                ="D": assumed fixed by GTOL for meta-stable level, with %(all decay modes but IT)>99.75;
+                      uncertainty will be added after fitting (1st level always this type by default).
+                ="S": assumed fixed by GTOL for level which causes singular matrix problem; uncertainty=0 assumed.
+                ="F": energy is fixed and uncertainty=0 assumed for fitting.
+                ="G": energy is fixed in fitting and uncertainty will be added after fitting.
+           Only type "F" and "G" are set by user by inserting the type letter in the energy field (col 10-20).
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                            Input and fitted Gamma Energies                                                             
+#Gamma        Input EG    Adjusted dEG   Initial Level     Final Level     EG From fit   Difference   Diff/dEG  #sigma       Chi2    %Chi2      Input EG
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+     1      1750.8  5         -----         1750.8  5          0.0           1750.8  5       0.0297      0.059       0      0.004     0.29     1750.8  5 
+     2       851.8  9         -----         2603.0  7       1750.8  5         852.2  5      -0.3692      0.410       0      0.168    13.71      851.8  9 
+     3      2602.6 15         -----         2603.0  7          0.0           2602.9  7      -0.2936      0.196       0      0.038     3.12     2602.6 15 
+     4       593.7  2         -----         3196.7  7       2603.0  7        593.74 20      -0.0394      0.197       0      0.039     3.17      593.7  2 
+     5      1446.1  6         -----         3196.7  7       1750.8  5        1445.9  5       0.2069      0.345       0      0.119     9.69     1446.1  6 
+     6        3197  6         -----         3196.7  7          0.0           3196.6  7       0.4143      0.069       0      0.005     0.39       3197  6 
+     7      1162.0  8         -----         4358.6  8       3196.7  7        1161.8  4       0.2013      0.252       0      0.063     5.16     1162.0  8 
+     8      1756.3 14         -----         4358.6  8       2603.0  7        1755.5  5       0.7830      0.559       1      0.313    25.50     1756.3 14 
+     9      1025.2  4         -----         5383.7  7       4358.6  8       1025.15 33       0.0479      0.120       0      0.014     1.17     1025.2  4 
+    10      2186.8  4         -----         5383.7  7       3196.7  7        2186.9  4      -0.1142      0.286       0      0.082     6.65     2186.8  4 
+    11      1254.6  8         -----         5613.2 11       4358.6  8        1254.6  8      -0.0000      0.000       0      0.000     0.00     1254.6  8 
+    12       381.5  3         -----         5765.3  8       5383.7  7        381.56 28      -0.0568      0.189       0      0.036     2.92      381.5  3 
+    13      1406.9  7         -----         5765.3  8       4358.6  8        1406.7  4       0.2032      0.290       0      0.084     6.87     1406.9  7 
+    14      2342.6 28         -----         8109.2 14       5765.3  8        2343.9 12      -1.2453      0.445       0      0.198    16.12     2342.6 28 
+    15      2725.7 14         -----         8109.2 14       5383.7  7        2725.4 12       0.3252      0.232       0      0.054     4.40     2725.7 14 
+    16      2446.6 16         -----         8212.1 10       5765.3  8        2446.8  7      -0.1471      0.092       0      0.008     0.69     2446.6 16 
+    17      2828.3  7         -----         8212.1 10       5383.7  7        2828.3  6       0.0247      0.035       0      0.001     0.10     2828.3  7 
+    18      1693.3 27         -----         9905.5 21       8212.1 10        1693.4 20      -0.0517      0.019       0      0.000     0.03     1693.3 27 
+    19      1796.3 25         -----         9905.5 21       8109.2 14        1796.3 19       0.0444      0.018       0      0.000     0.03     1796.3 25 
+    20      2370.9 25         -----        12276.5 33       9905.5 21        2370.9 25      -0.0000      0.000       0      0.000     0.00     2370.9 25 
+                                                                                                                 chi2=      1.227
+                                                                                                             chi2/dof=      0.136
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE: * at initial level indicates level fixed in the fitting.
+      ## in #sigma column marks number of sigma>=4.
+      Quoted level energies are from fit.
+      #sigma=round(Diff/dEG), by which the input EG differs from the fitted one.
+      dEG=1 keV is assigned if not given, unless otherwise specified at the end of each gamma line.
+
+
+#of Levels= 12      #of fixed Levels= 1      #of Gammas in fitting= 20
+Degrees of Freedom (dof)= 9
+    Chi2= 1.2268
+Chi2/dof= 0.1363
+(critical Chi2/dof= 2.4070)
+
+
+-----------------------------------------------------------------------------------------------------------------
+                     Calculated Net Feeding from (gamma+ce) Intensity Balance at Each Level                      
+-----------------------------------------------------------------------------------------------------------------
+         Level        RI           RI         RI          TI           TI         TI          Net Feeding (%)  
+                     (OUT)        (IN)       (NET)       (OUT)        (IN)       (NET)        CALC*       INPUT
+-----------------------------------------------------------------------------------------------------------------
+        0.0           0         176 11     -176 11        0         176 11    -176 11        -176 11            
+     1750.8  5      100  9       75  6       25 11      100  9       75  6      25 11          25 11            
+     2603.0  7       68  6       28  9       40 16       68  6       28  9      40 16          40 16            
+     3196.7  7       94  6       64  4       30  8       94  6       64  4      30  8          30  8            
+     4358.6  8       32 10       26  6        6 15       32 10       26  6       6 15           6 15            
+     5383.7  7       55  4       61  6       -6  7       55  4       61  6      -6  7          -6  7            
+     5613.2 11       15  5        0          15  5       15  5        0         15  5          15  5            
+     5765.3  8     34.0 32     14.0 28       20  6     34.0 32     14.0 28      20  6          20  6            
+     8109.2 14     12.0 23     10.0 30        2  5     12.0 23     10.0 30       2  5           2  5            
+     8212.1 10       34  6     15.0 30       19  9       34  6     15.0 30      19  9          19  9            
+     9905.5 21       25  4       15  5       10  9       25  4       15  5      10  9          10  9            
+    12276.5 33       15  5        0          15  5       15  5        0         15  5          15  5            
+
+                                                                      Sum of Feedings=       182 30         0 0
+-----------------------------------------------------------------------------------------------------------------
+From input:
+  NR=              For normalizing RI to per 100 parent decays via this branch
+  NT=              For normalizing TI to per 100 parent decays via this branch
+  BR=              Branching ratio of this decay branch among all decay branches
+  NB=              For normalizing IB to per 100 parent decays via this branch
+
+* Calculated feedings are based on input NR. Uncertainties could be over-counted for gammas used in
+    normalization to deduce NR.
+  More accurate level feedings could be obtained directly from the normalization process for deducing NR
+    where correlations are taken into account. See the table of level feedings in Java_GABS.rpt.
+
+
+
+
+##########################################################################################
+        GTOL report for dataset: << 32S(A,N) >>
+##########################################################################################
+
+No gamma data
+
+
+
+
+##########################################################################################
+        GTOL report for dataset: << 33S(3HE,NG) >>
+##########################################################################################
+
+
+-------------------------------------------------------------------------------------------------------------------
+                 Level Energies From Input (old), Fitting (new), and Adjustments for uncertainties                 
+-------------------------------------------------------------------------------------------------------------------
+#Level  old           Input        From fit       After adding dE of base levels:          Has Gamma:        Fixed 
+        kept                      (original)       metastable    fixed("G")/other     Deexciting  Feeding     Type 
+------ ------ --------------- ---------------    --------------- ----------------     ---------- ----------  ------
+     1  kept             0               0    *         -----            -----           ---        Yes        D   
+     2              1184.2  6       1184.2  5           -----            -----           Yes         No       ---  
+     3              1749.8  9       1749.9  5           -----            -----           Yes        Yes       ---  
+     4              2600.8 15       2600.8  5           -----            -----           Yes         No       ---  
+     5              3195.8 11       3195.9  8           -----            -----           Yes         No       ---  
+     6                5537 25        -----              -----            -----            No        ---        A   
+-------------------------------------------------------------------------------------------------------------------
+NOTE: --- indicates Not Applicable.
+        * indicates level fixed in fitting.
+        & from original uncertainty adjusted based on input settings.
+        # non-numerical uncertainty is from fitting gammas or end-level.
+      Quoted values under "From fit" for fixed levels are taken from their input values.
+      Fixed Type="A": assumed fixed by GTOL for level not connected to any level; not used in the fitting.
+                ="D": assumed fixed by GTOL for meta-stable level, with %(all decay modes but IT)>99.75;
+                      uncertainty will be added after fitting (1st level always this type by default).
+                ="S": assumed fixed by GTOL for level which causes singular matrix problem; uncertainty=0 assumed.
+                ="F": energy is fixed and uncertainty=0 assumed for fitting.
+                ="G": energy is fixed in fitting and uncertainty will be added after fitting.
+           Only type "F" and "G" are set by user by inserting the type letter in the energy field (col 10-20).
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                            Input and fitted Gamma Energies                                                             
+#Gamma        Input EG    Adjusted dEG   Initial Level     Final Level     EG From fit   Difference   Diff/dEG  #sigma       Chi2    %Chi2      Input EG
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+     1      1184.2           1184.2  5      1184.2  5            0           1184.2  5       0.0000      0.000       0      0.000     0.00     1184.2    
+     2      1749.8           1749.8  5      1749.9  5            0           1749.8  5      -0.0000      0.000       0      0.000     0.00     1749.8    
+     3      2600.7           2600.7  5      2600.8  5            0           2600.7  5       0.0000      0.000       0      0.000     0.00     2600.7    
+     4      1446.0  6         -----         3195.9  8       1749.9  5        1446.0  6      -0.0000      0.000       0      0.000     0.00     1446.0  6 
+                                                                                                                 chi2=      0.000
+                                                                                                             chi2/dof=      0.000
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE: * at initial level indicates level fixed in the fitting.
+      ## in #sigma column marks number of sigma>=4.
+      Quoted level energies are from fit.
+      #sigma=round(Diff/dEG), by which the input EG differs from the fitted one.
+      dEG=1 keV is assigned if not given, unless otherwise specified at the end of each gamma line.
+
+
+
+
+
+
+##########################################################################################
+        GTOL report for dataset: << 35CL(3HE,T) >>
+##########################################################################################
+
+No gamma data
+
+
+
+
+##########################################################################################
+        GTOL report for dataset: << 35K EC DECAY (175 MS) >>
+##########################################################################################
+
+
+-------------------------------------------------------------------------------------------------------------------
+                 Level Energies From Input (old), Fitting (new), and Adjustments for uncertainties                 
+-------------------------------------------------------------------------------------------------------------------
+#Level  old           Input        From fit       After adding dE of base levels:          Has Gamma:        Fixed 
+        kept                      (original)       metastable    fixed("G")/other     Deexciting  Feeding     Type 
+------ ------ --------------- ---------------    --------------- ----------------     ---------- ----------  ------
+     1  kept             0               0    *         -----            -----           ---        Yes        D   
+     2  kept       1184.01 25      1184.01 25           -----            -----           Yes        Yes       ---  
+     3  kept       1750.72 25      1750.72 25           -----            -----           Yes        Yes       ---  
+     4  kept       2637.99 26      2637.99 26           -----            -----           Yes        Yes       ---  
+     5  kept       2982.79 12      2982.79 12           -----            -----           Yes        Yes       ---  
+     6  kept        4065.0  4       4065.0  4           -----            -----           Yes        Yes       ---  
+     7  kept        4528.2  4       4528.2  4           -----            -----           Yes        Yes       ---  
+     8  kept        4725.9  6       4725.9  6           -----            -----           Yes         No       ---  
+     9  kept        4785.8 11       4785.8 11           -----            -----           Yes         No       ---  
+    10  kept       5572.66 15      5572.66 15           -----            -----           Yes         No       ---  
+    11                6348 11        -----              -----            -----            No         No        A   
+    12                7053 11        -----              -----            -----            No         No        A   
+    13                7255 11        -----              -----            -----            No         No        A   
+    14                7283 11        -----              -----            -----            No         No        A   
+    15                7431 11        -----              -----            -----            No         No        A   
+    16                7518 11        -----              -----            -----            No         No        A   
+    17                8393 20        -----              -----            -----            No        ---        A   
+-------------------------------------------------------------------------------------------------------------------
+NOTE: --- indicates Not Applicable.
+        * indicates level fixed in fitting.
+        & from original uncertainty adjusted based on input settings.
+        # non-numerical uncertainty is from fitting gammas or end-level.
+      Quoted values under "From fit" for fixed levels are taken from their input values.
+      Fixed Type="A": assumed fixed by GTOL for level not connected to any level; not used in the fitting.
+                ="D": assumed fixed by GTOL for meta-stable level, with %(all decay modes but IT)>99.75;
+                      uncertainty will be added after fitting (1st level always this type by default).
+                ="S": assumed fixed by GTOL for level which causes singular matrix problem; uncertainty=0 assumed.
+                ="F": energy is fixed and uncertainty=0 assumed for fitting.
+                ="G": energy is fixed in fitting and uncertainty will be added after fitting.
+           Only type "F" and "G" are set by user by inserting the type letter in the energy field (col 10-20).
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                            Input and fitted Gamma Energies                                                             
+#Gamma        Input EG    Adjusted dEG   Initial Level     Final Level     EG From fit   Difference   Diff/dEG  #sigma       Chi2    %Chi2      Input EG
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+     1      1184.0  3         -----        1184.01 25            0          1183.99 25       0.0120      0.040       0      0.002     0.03     1184.0  3 
+     2      1750.5  3         -----        1750.72 25            0          1750.67 25      -0.1705      0.568       1      0.323     6.79     1750.5  3 
+     3       886.8  5         -----        2637.99 26      1750.72 25        887.26 31      -0.4629      0.926       1      0.857    18.02      886.8  5 
+     4      2638.0  4         -----        2637.99 26            0          2637.89 26       0.1142      0.286       0      0.082     1.71     2638.0  4 
+     5      1798.9  5         -----        2982.79 12      1184.01 25       1798.73 26       0.1740      0.348       0      0.121     2.55     1798.9  5 
+     6     2982.68 13         -----        2982.79 12            0          2982.65 12       0.0312      0.240       0      0.058     1.21    2982.68 13 
+     7      1426.8  4         -----         4065.0  4      2637.99 26       1426.96 33      -0.1576      0.394       0      0.155     3.26     1426.8  4 
+     8      4527.9  7         -----         4528.2  4            0           4527.9  4      -0.0237      0.034       0      0.001     0.02     4527.9  7 
+     9      3542.0  6         -----         4725.9  6      1184.01 25        3541.7  5       0.3117      0.520       1      0.270     5.67     3542.0  6 
+    10      4724.5 11         -----         4725.9  6            0           4725.6  6      -1.0477      0.952       1      0.907    19.07     4724.5 11 
+    11      4785.4 11         -----         4785.8 11            0           4785.4 11       0.0000      0.000       0      0.000     0.00     4785.4 11 
+    12      1044.4  4         -----        5572.66 15       4528.2  4       1044.41 35      -0.0078      0.019       0      0.000     0.01     1044.4  4 
+    13      1507.4  5         -----        5572.66 15       4065.0  4        1507.7  4      -0.2463      0.493       1      0.243     5.10     1507.4  5 
+    14      2589.8  1         -----        5572.66 15      2982.79 12       2589.78 10       0.0254      0.254       0      0.065     1.36     2589.8  1 
+    15      2934.5  5         -----        5572.66 15      2637.99 26       2934.54 27      -0.0380      0.076       0      0.006     0.12     2934.5  5 
+    16      3821.7  7         -----        5572.66 15      1750.72 25       3821.72 27      -0.0211      0.030       0      0.001     0.02     3821.7  7 
+    17      4387.2  9         -----        5572.66 15      1184.01 25       4388.36 27      -1.1575      1.286       1      1.654    34.77     4387.2  9 
+    18      5572.3 10         -----        5572.66 15            0          5572.19 15       0.1134      0.113       0      0.013     0.27     5572.3 10 
+                                                                                                                 chi2=      4.757
+                                                                                                             chi2/dof=      0.529
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE: * at initial level indicates level fixed in the fitting.
+      ## in #sigma column marks number of sigma>=4.
+      Quoted level energies are from fit.
+      #sigma=round(Diff/dEG), by which the input EG differs from the fitted one.
+      dEG=1 keV is assigned if not given, unless otherwise specified at the end of each gamma line.
+
+
+#of Levels= 17      #of fixed Levels= 8      #of Gammas in fitting= 18
+Degrees of Freedom (dof)= 9
+    Chi2= 4.7573
+Chi2/dof= 0.5286
+(critical Chi2/dof= 2.4070)
+
+
+-----------------------------------------------------------------------------------------------------------------
+                     Calculated Net Feeding from (gamma+ce) Intensity Balance at Each Level                      
+-----------------------------------------------------------------------------------------------------------------
+         Level        RI           RI         RI          TI           TI         TI          Net Feeding (%)  
+                     (OUT)        (IN)       (NET)       (OUT)        (IN)       (NET)        CALC*       INPUT
+-----------------------------------------------------------------------------------------------------------------
+          0           0         160  5     -160  5        0         160  5    -160  5         -81  5       19  4
+    1184.01 25     14.3  7      9.9 12      4.4 19     14.3  7      9.9 12     4.4 19         2.2 11      2.2  7
+    1750.72 25     28.0 10      4.4  8     23.6 18     28.0 10      4.4  8    23.6 18        11.9 11     11.9  9
+    2637.99 26      6.4  8      6.5  8     -0.1 16      6.4  8      6.5  8    -0.1 16        -0.1  5      0.4 LE
+    2982.79 12      104  4     52.0 20       52  5      104  4     52.0 20      52  5        26.0 27     26.0 22
+     4065.0  4      3.0  5      1.9  4      1.1  9      3.0  5      1.9  4     1.1  9         0.6  5     0.56 33
+     4528.2  4      2.6  7      1.3  4      1.3 11      2.6  7      1.3  4     1.3 11         0.7  6      0.7  4
+     4725.9  6      4.1  8        0         4.1  8      4.1  8        0        4.1  8         2.1  5      2.1  4
+     4785.8 11      1.9  7        0         1.9  7      1.9  7        0        1.9  7         1.0  4      1.0  4
+    5572.66 15     71.8 29        0        71.8 29     71.8 29        0       71.8 29        36.3 26     36.3 24
+       6348           0           0           0           0           0          0              0  0   2.5E-3  5
+       7053           0           0           0           0           0          0              0  0            
+       7255           0           0           0           0           0          0              0  0            
+       7283           0           0           0           0           0          0              0  0            
+       7431           0           0           0           0           0          0              0  0            
+       7518           0           0           0           0           0          0              0  0     0.09 GT
+       8393           0           0           0           0           0          0              0  0    0.062 26
+
+                                                                      Sum of Feedings=         81 4       100 6
+-----------------------------------------------------------------------------------------------------------------
+From input:
+  NR=  0.505 29    For normalizing RI to per 100 parent decays via this branch
+  NT=              For normalizing TI to per 100 parent decays via this branch
+  BR=    1.0       Branching ratio of this decay branch among all decay branches
+  NB=    1.0       For normalizing IB to per 100 parent decays via this branch
+
+* Calculated feedings are based on input NR. Uncertainties could be over-counted for gammas used in
+    normalization to deduce NR.
+  More accurate level feedings could be obtained directly from the normalization process for deducing NR
+    where correlations are taken into account. See the table of level feedings in Java_GABS.rpt.
+
+
+
+
+##########################################################################################
+        GTOL report for dataset: << 36AR(3HE,A) >>
+##########################################################################################
+
+No gamma data
+
+
+
+
+##########################################################################################
+        GTOL report for dataset: << 36AR(D,T) >>
+##########################################################################################
+
+No gamma data
+
+
+
+
+##########################################################################################
+        GTOL report for dataset: << 36AR(P,D) >>
+##########################################################################################
+
+No gamma data
+
+
+
+
+##########################################################################################
+        GTOL report for dataset: << 36CA ECP DECAY (100.9 MS) >>
+##########################################################################################
+
+
+-------------------------------------------------------------------------------------------------------------------
+                 Level Energies From Input (old), Fitting (new), and Adjustments for uncertainties                 
+-------------------------------------------------------------------------------------------------------------------
+#Level  old           Input        From fit       After adding dE of base levels:          Has Gamma:        Fixed 
+        kept                      (original)       metastable    fixed("G")/other     Deexciting  Feeding     Type 
+------ ------ --------------- ---------------    --------------- ----------------     ---------- ----------  ------
+     1  kept             0               0    *         -----            -----           ---        Yes        D   
+     2  kept        1184.3  4       1184.3  4           -----            -----           Yes        ---       ---  
+-------------------------------------------------------------------------------------------------------------------
+NOTE: --- indicates Not Applicable.
+        * indicates level fixed in fitting.
+        & from original uncertainty adjusted based on input settings.
+        # non-numerical uncertainty is from fitting gammas or end-level.
+      Quoted values under "From fit" for fixed levels are taken from their input values.
+      Fixed Type="A": assumed fixed by GTOL for level not connected to any level; not used in the fitting.
+                ="D": assumed fixed by GTOL for meta-stable level, with %(all decay modes but IT)>99.75;
+                      uncertainty will be added after fitting (1st level always this type by default).
+                ="S": assumed fixed by GTOL for level which causes singular matrix problem; uncertainty=0 assumed.
+                ="F": energy is fixed and uncertainty=0 assumed for fitting.
+                ="G": energy is fixed in fitting and uncertainty will be added after fitting.
+           Only type "F" and "G" are set by user by inserting the type letter in the energy field (col 10-20).
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                            Input and fitted Gamma Energies                                                             
+#Gamma        Input EG    Adjusted dEG   Initial Level     Final Level     EG From fit   Difference   Diff/dEG  #sigma       Chi2    %Chi2      Input EG
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+     1      1184.3  4         -----         1184.3  4            0           1184.3  4       0.0000      0.000       0      0.000     0.00     1184.3  4 
+                                                                                                                 chi2=      0.000
+                                                                                                             chi2/dof=      0.000
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE: * at initial level indicates level fixed in the fitting.
+      ## in #sigma column marks number of sigma>=4.
+      Quoted level energies are from fit.
+      #sigma=round(Diff/dEG), by which the input EG differs from the fitted one.
+      dEG=1 keV is assigned if not given, unless otherwise specified at the end of each gamma line.
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+                     Calculated Net Feeding from (gamma+ce) Intensity Balance at Each Level                      
+-----------------------------------------------------------------------------------------------------------------
+         Level        RI           RI         RI          TI           TI         TI          Net Feeding (%)  
+                     (OUT)        (IN)       (NET)       (OUT)        (IN)       (NET)        CALC*       INPUT
+-----------------------------------------------------------------------------------------------------------------
+          0           0         1.2  4     -1.2  4        0         1.2  4    -1.2  4        -1.2  4            
+     1184.3  4      1.2  4        0         1.2  4      1.2  4        0        1.2  4         1.2  4            
+
+                                                                      Sum of Feedings=        1.2 4         0 0
+-----------------------------------------------------------------------------------------------------------------
+From input:
+  NR=   1.85  4    For normalizing RI to per 100 parent decays via this branch
+  NT=              For normalizing TI to per 100 parent decays via this branch
+  BR=  0.541 12    Branching ratio of this decay branch among all decay branches
+  NB=    1.0       For normalizing IB to per 100 parent decays via this branch
+
+* Calculated feedings are based on input NRBR.
+  More accurate level feedings could be obtained directly from the normalization process for deducing NR
+    where correlations are taken into account. See the table of level feedings in Java_GABS.rpt.
+
+
+
+
+Delayed-particle feeding to each level in 35AR
+------------------------------------
+  E(level)    IP(rel)         %IP   
+------------------------------------
+         0      53.8 19      53.8 19
+    1184.3       1.2  4       1.2  4
+  unplaced         0  0         0  0
+
+      sum=      55.0 20      55.0 20
+------------------------------------
+
+
+Delayed-particle feeding from each intermediate level in 36K
+--------------------------------------------------
+   EI(36K)    IP(rel)         %IP          %IP   
+                            input NP    from norm
+--------------------------------------------------
+      3354       8.4 12       8.4 12       8.3 11
+    4281.7      38.6 11      38.6 11      38.0 15
+      4449       2.6  9       2.6  9       2.6  9
+      4663       1.3  2       1.3  2      1.28 20
+      5242       0.6  2       0.6  2      0.59 20
+      5753       0.9  2       0.9  2      0.89 20
+      5927       2.2  5       2.2  5     2.2 +6-5
+      6791       0.4  2       0.4  2  0.39 +21-20
+
+      sum=      55.0 20      55.0 20      54.1 21
+--------------------------------------------------
+Total %I(p) from input (from BR field)=   54.1 12
+  input NP=    1.0       For normalizing IP(rel) to per 100 parent decays
+    new NP=   0.98  4
+
+
+                     List of all delayed-particle branches                      
+--------------------------------------------------------------------------------
+       EP         EI(36K)      E(35AR)      IP(rel)       %IP          %IP   
+                                                        input NP    from norm
+--------------------------------------------------------------------------------
+      1.37E3       4281.7       1184.3       1.2  4       1.2  4       1.2  4
+     1648 18         3354            0       8.4 12       8.4 12       8.3 11
+   2549.9 22       4281.7            0      37.4 10      37.4 10      36.8 14
+     2713 21         4449            0       2.6  9       2.6  9       2.6  9
+     2921 35         4663            0       1.3  2       1.3  2      1.28 20
+     3484 21         5242            0       0.6  2       0.6  2      0.59 20
+   3.98E3  7         5753            0       0.9  2       0.9  2      0.89 20
+   4.15E3  5         5927            0       2.2  5       2.2  5     2.2 +6-5
+   4.99E3  7         6791            0       0.4  2       0.4  2  0.39 +21-20
+
+                                  sum=      55.0 20      55.0 20      54.1 21
+--------------------------------------------------------------------------------
+Total %I(p) from input (from BR field)=   54.1 12
+  input NP=    1.0       For normalizing IP(rel) to per 100 parent decays
+    new NP=   0.98  4
+
+
+##########################################################################################
+        GTOL report for dataset: << ADOPTED LEVELS, GAMMAS >>
+##########################################################################################
+
+
+-------------------------------------------------------------------------------------------------------------------
+                 Level Energies From Input (old), Fitting (new), and Adjustments for uncertainties                 
+-------------------------------------------------------------------------------------------------------------------
+#Level  old           Input        From fit       After adding dE of base levels:          Has Gamma:        Fixed 
+        kept                      (original)       metastable    fixed("G")/other     Deexciting  Feeding     Type 
+------ ------ --------------- ---------------    --------------- ----------------     ---------- ----------  ------
+     1  kept           0.0             0.0    *         -----            -----           ---        Yes        D   
+     2  kept       1184.08 25      1184.08 25           -----            -----           Yes        Yes       ---  
+     3  kept       1750.78 22      1750.78 22           -----            -----           Yes        Yes       ---  
+     4  kept       2603.22 28      2603.22 28           -----            -----           Yes        Yes       ---  
+     5  kept       2638.01 26      2638.01 26           -----            -----           Yes        Yes       ---  
+     6  kept       2982.79 12      2982.79 12           -----            -----           Yes        Yes       ---  
+     7  kept       3196.98 26      3196.98 26           -----            -----           Yes        Yes       ---  
+     8                3882  5        -----              -----            -----            No         No        A   
+     9                4001  3        -----              -----            -----            No         No        A   
+    10  kept        4065.0  4       4065.0  4           -----            -----           Yes        Yes       ---  
+    11                4113  4        -----              -----            -----            No         No        A   
+    12                4135  4        -----              -----            -----            No         No        A   
+    13  kept        4359.0  5       4359.0  5           -----            -----           Yes        Yes       ---  
+    14  kept        4528.3  4       4528.3  4           -----            -----           Yes        Yes       ---  
+    15  kept        4725.9  6       4725.9  6           -----            -----           Yes         No       ---  
+    16  kept        4785.8 11       4785.8 11           -----            -----           Yes         No       ---  
+    17                5059 11        -----              -----            -----            No         No        A   
+    18                5116  2        -----              -----            -----            No         No        A   
+    19                5207  3        -----              -----            -----            No         No        A   
+    20  kept        5384.2  4       5384.2  4           -----            -----           Yes        Yes       ---  
+    21                5482  2        -----              -----            -----            No         No        A   
+    22  kept       5572.67 15      5572.67 15           -----            -----           Yes         No       ---  
+    23                5594  2        -----              -----            -----            No         No        A   
+    24  kept        5613.6  9       5613.6  9           -----            -----           Yes         No       ---  
+    25  kept        5765.8  5       5765.8  5           -----            -----           Yes        Yes       ---  
+    26                5915  3        -----              -----            -----            No         No        A   
+    27                5991  3        -----              -----            -----            No         No        A   
+    28                6037  3        -----              -----            -----            No         No        A   
+    29                6055  3        -----              -----            -----            No         No        A   
+    30                6076  3        -----              -----            -----            No         No        A   
+    31                6163  2        -----              -----            -----            No         No        A   
+    32                6253  3        -----              -----            -----            No         No        A   
+    33                6273  3        -----              -----            -----            No         No        A   
+    34                6302  3        -----              -----            -----            No         No        A   
+    35                6332  3        -----              -----            -----            No         No        A   
+    36                6345  3        -----              -----            -----            No         No        A   
+    37                6415  2        -----              -----            -----            No         No        A   
+    38                6439  4        -----              -----            -----            No         No        A   
+    39                6460  3        -----              -----            -----            No         No        A   
+    40                6523  3        -----              -----            -----            No         No        A   
+    41                6557  3        -----              -----            -----            No         No        A   
+    42                6585  3        -----              -----            -----            No         No        A   
+    43                6606  3        -----              -----            -----            No         No        A   
+    44                6616  2        -----              -----            -----            No         No        A   
+    45                6644  3        -----              -----            -----            No         No        A   
+    46                6651  3        -----              -----            -----            No         No        A   
+    47                6673  4        -----              -----            -----            No         No        A   
+    48                6823  2        -----              -----            -----            No         No        A   
+    49                6948  2        -----              -----            -----            No         No        A   
+    50                7044  4        -----              -----            -----            No         No        A   
+    51                7117 10        -----              -----            -----            No         No        A   
+    52                7255 11        -----              -----            -----            No         No        A   
+    53                7289 10        -----              -----            -----            No         No        A   
+    54                7427 10        -----              -----            -----            No         No        A   
+    55                7509 10        -----              -----            -----            No         No        A   
+    56                7840 10        -----              -----            -----            No         No        A   
+    57                8019 10        -----              -----            -----            No         No        A   
+    58  kept        8109.7 13       8109.7 13           -----            -----           Yes        Yes       ---  
+    59  kept        8212.6  8       8212.6  8           -----            -----           Yes        Yes       ---  
+    60                8393 20        -----              -----            -----            No         No        A   
+    61  kept        9906.0 20       9906.0 20           -----            -----           Yes        Yes       ---  
+    62  kept       12277.0 32      12277.0 32           -----            -----           Yes        ---       ---  
+-------------------------------------------------------------------------------------------------------------------
+NOTE: --- indicates Not Applicable.
+        * indicates level fixed in fitting.
+        & from original uncertainty adjusted based on input settings.
+        # non-numerical uncertainty is from fitting gammas or end-level.
+      Quoted values under "From fit" for fixed levels are taken from their input values.
+      Fixed Type="A": assumed fixed by GTOL for level not connected to any level; not used in the fitting.
+                ="D": assumed fixed by GTOL for meta-stable level, with %(all decay modes but IT)>99.75;
+                      uncertainty will be added after fitting (1st level always this type by default).
+                ="S": assumed fixed by GTOL for level which causes singular matrix problem; uncertainty=0 assumed.
+                ="F": energy is fixed and uncertainty=0 assumed for fitting.
+                ="G": energy is fixed in fitting and uncertainty will be added after fitting.
+           Only type "F" and "G" are set by user by inserting the type letter in the energy field (col 10-20).
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                            Input and fitted Gamma Energies                                                             
+#Gamma        Input EG    Adjusted dEG   Initial Level     Final Level     EG From fit   Difference   Diff/dEG  #sigma       Chi2    %Chi2      Input EG
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+     1      1184.1  3         -----        1184.08 25          0.0          1184.06 25       0.0440      0.147       0      0.022     0.40     1184.1  3 
+     2      1750.6  3         -----        1750.78 22          0.0          1750.73 22      -0.1343      0.448       0      0.200     3.71     1750.6  3 
+     3       851.9  9         -----        2603.22 28      1750.78 22        852.43 24      -0.5289      0.588       1      0.345     6.40      851.9  9 
+     4      2603.0  5         -----        2603.22 28          0.0          2603.12 28      -0.1174      0.235       0      0.055     1.02     2603.0  5 
+     5       886.8  5         -----        2638.01 26      1750.78 22        887.22 30      -0.4182      0.836       1      0.700    12.96      886.8  5 
+     6      2638.0  4         -----        2638.01 26          0.0          2637.91 26       0.0952      0.238       0      0.057     1.05     2638.0  4 
+     7      1798.9  5         -----        2982.79 12      1184.08 25       1798.67 26       0.2343      0.469       0      0.220     4.07     1798.9  5 
+     8     2982.68 13         -----        2982.79 12          0.0          2982.66 12       0.0235      0.181       0      0.033     0.61    2982.68 13 
+     9       593.7  2         -----        3196.98 26      2603.22 28        593.76 18      -0.0559      0.279       0      0.078     1.45      593.7  2 
+    10      1446.2  2         -----        3196.98 26      1750.78 22       1446.17 18       0.0307      0.153       0      0.024     0.44     1446.2  2 
+    11      3197.0  7         -----        3196.98 26          0.0          3196.83 26       0.1741      0.249       0      0.062     1.15     3197.0  7 
+    12      1426.8  4         -----         4065.0  4      2638.01 26       1426.95 33      -0.1540      0.385       0      0.148     2.75     1426.8  4 
+    13      1162.0  8         -----         4359.0  5      3196.98 26        1162.0  4       0.0090      0.011       0      0.000     0.00     1162.0  8 
+    14        1756  1         -----         4359.0  5      2603.22 28        1755.7  4       0.2742      0.274       0      0.075     1.39       1756  1 
+    15      4527.9  7         -----         4528.3  4          0.0           4527.9  4      -0.0312      0.045       0      0.002     0.04     4527.9  7 
+    16      3542.0  6         -----         4725.9  6      1184.08 25        3541.7  5       0.3273      0.546       1      0.298     5.51     3542.0  6 
+    17      4724.5 11         -----         4725.9  6          0.0           4725.6  6      -1.1001      1.000       1      1.000    18.53     4724.5 11 
+    18      4785.4 11         -----         4785.8 11          0.0           4785.4 11       0.0000      0.000       0      0.000     0.00     4785.4 11 
+    19      1025.2  4         -----         5384.2  4       4359.0  5       1025.19 32       0.0082      0.021       0      0.000     0.01     1025.2  4 
+    20      2187.1  4         -----         5384.2  4      3196.98 26       2187.15 35      -0.0461      0.115       0      0.013     0.25     2187.1  4 
+    21      1044.4  4         -----        5572.67 15       4528.3  4       1044.41 35      -0.0102      0.025       0      0.001     0.01     1044.4  4 
+    22      1507.4  5         -----        5572.67 15       4065.0  4        1507.6  4      -0.2407      0.481       0      0.232     4.29     1507.4  5 
+    23      2589.8  1         -----        5572.67 15      2982.79 12       2589.78 10       0.0233      0.233       0      0.054     1.00     2589.8  1 
+    24      2934.5  5         -----        5572.67 15      2638.01 26       2934.53 27      -0.0288      0.058       0      0.003     0.06     2934.5  5 
+    25      3821.7  7         -----        5572.67 15      1750.78 22       3821.67 25       0.0327      0.047       0      0.002     0.04     3821.7  7 
+    26      4387.2  9         -----        5572.67 15      1184.08 25       4388.30 27      -1.0995      1.222       1      1.492    27.64     4387.2  9 
+    27      5572.3 10         -----        5572.67 15          0.0          5572.20 15       0.1035      0.104       0      0.011     0.20     5572.3 10 
+    28      1254.6  8         -----         5613.6  9       4359.0  5        1254.6  8      -0.0000      0.000       0      0.000     0.00     1254.6  8 
+    29       381.6  1         -----         5765.8  5       5384.2  4        381.60 10      -0.0043      0.043       0      0.002     0.03      381.6  1 
+    30      1406.9  7         -----         5765.8  5       4359.0  5       1406.78 33       0.1160      0.166       0      0.027     0.51     1406.9  7 
+    31      2342.6 28         -----         8109.7 13       5765.8  5        2343.8 12      -1.2070      0.431       0      0.186     3.44     2342.6 28 
+    32      2725.7 14         -----         8109.7 13       5384.2  4        2725.4 12       0.3159      0.226       0      0.051     0.94     2725.7 14 
+    33      2446.6 16         -----         8212.6  8       5765.8  5        2446.7  7      -0.1073      0.067       0      0.004     0.08     2446.6 16 
+    34      2828.3  7         -----         8212.6  8       5384.2  4        2828.3  6       0.0170      0.024       0      0.001     0.01     2828.3  7 
+    35      1693.3 27         -----         9906.0 20       8212.6  8        1693.4 20      -0.0526      0.019       0      0.000     0.01     1693.3 27 
+    36      1796.3 25         -----         9906.0 20       8109.7 13        1796.3 19       0.0451      0.018       0      0.000     0.01     1796.3 25 
+    37      2370.9 25         -----        12277.0 32       9906.0 20        2370.9 25      -0.0000      0.000       0      0.000     0.00     2370.9 25 
+                                                                                                                 chi2=      5.398
+                                                                                                             chi2/dof=      0.300
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE: * at initial level indicates level fixed in the fitting.
+      ## in #sigma column marks number of sigma>=4.
+      Quoted level energies are from fit.
+      #sigma=round(Diff/dEG), by which the input EG differs from the fitted one.
+      dEG=1 keV is assigned if not given, unless otherwise specified at the end of each gamma line.
+
+
+#of Levels= 62      #of fixed Levels= 43      #of Gammas in fitting= 37
+Degrees of Freedom (dof)= 18
+    Chi2= 5.3984
+Chi2/dof= 0.2999
+(critical Chi2/dof= 1.9340)
+
+
+
+
+List of gammas with uncertainty in RI being adjusted:
+-----------------------------------------------
+  E(gamma)   E(level)            RI            
+                      -------------------------
+                          Original     Adjusted
+-----------------------------------------------
+    1184.1    1184.08       100          100  0
+    1750.6    1750.78       100          100  0
+    1426.8     4065.0       100          100  0
+    4527.9     4528.3       100          100  0
+    4785.4     4785.8       100          100  0
+    1254.6     5613.6       100          100  0
+    2370.9    12277.0       100          100  0
+-----------------------------------------------
+
+
+End of report
+
