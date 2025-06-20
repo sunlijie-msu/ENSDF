@@ -1,5 +1,20 @@
 # Change Log for ENSDF Edits
 
+## 2025-06-20
+- **ENSDF Column Calibration System Development**:
+  - **Created column-calibrate.ps1**: Dedicated PowerShell script for ENSDF field analysis
+    * Features: Column ruler display, L/G record extraction, field mapping verification
+    * Handles proper ENSDF Manual Section 9 & 14 specifications
+    * Error handling for missing files and invalid paths
+    * Professional output with color-coded field descriptions
+  - **Updated copilot-instructions.md**: 
+    * Replaced inline PowerShell debugging with script reference
+    * Added official ENSDF Manual field specifications for L and G records
+    * Integrated authoritative column positions from ENSDF Manual Sections 9 & 14
+    * Updated Self-Calibrate Columns command to use dedicated script
+  - **No ENSDF data files modified** - Focus was on tooling improvements
+  - **Tools tested and verified**: column-calibrate.ps1 successfully analyzes P35_208pb_36s_35pg.ens
+
 ## 2025-06-19
 - **Ar35_36ar_3he_a.ens major dataset integration** (Agent's work):
   - **Header updates**: Added 1998VoAA reference alongside 1973BE26 in keynumber field
