@@ -882,3 +882,32 @@
     * Successfully analyzed P35_208pb_36s_35pg.ens with both standard and detailed modes
     * Confirmed identical output and validation results compared to PowerShell version
     * Proper error detection and field boundary analysis working correctly
+
+## 2025-06-20 (Continued)
+- **Major Python Column Calibration Enhancement**:
+  - **Complete G-record field extraction**: Extended column_calibrate.py from basic 41-column analysis to full 80-column ENSDF format
+    * **Previously missing G-record fields added**:
+      - Mixing ratio (cols 42-49)
+      - Mixing ratio uncertainty (cols 50-55) 
+      - Conversion coefficient (cols 56-62)
+      - CC uncertainty (cols 63-64)
+      - Total conversion coefficient (cols 65-72)
+      - TCC uncertainty (cols 73-76)
+      - Continuation flag (col 77)
+      - Coincidence flag (col 78)
+      - Question flag (col 79)
+      - Footnote flag (col 80)
+    * **Enhanced field labeling**: Updated column reference documentation to show complete G-record format
+    * **Fixed L-record L field extraction**: Corrected L (Angular momentum transfer) field extraction from columns 56-64
+  - **Comprehensive ENSDF format support**: Script now properly handles all standard ENSDF record fields
+    * L-records: Complete 11-field extraction including L, S, and DS fields
+    * G-records: Complete 18-field extraction covering entire 80-column format
+    * Maintains backward compatibility with existing functionality
+  - **Testing validation**: Script successfully tested on 35.adp with 134 L-records and 37 G-records
+    * Correctly identified and extracted all field types
+    * Proper validation of field boundaries and content
+    * Enhanced error reporting for short records and formatting issues
+  - **Documentation updates**: 
+    * Updated field reference guide to show complete column mappings
+    * Enhanced help text to reflect full ENSDF format coverage
+    * Added comprehensive field descriptions in both script comments and output
