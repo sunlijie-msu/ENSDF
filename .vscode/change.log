@@ -1,5 +1,41 @@
 # Change Log for ENSDF Edits
 
+## 2025-06-22
+- **S35_37cl_d_a_37cl_d_ag.ens formatting improvements** (Evidence from what-changed.ps1):
+  - **Line 1**: ID line updated to include both primary references
+    * Before: ` 35S     37CL(D,A),37CL(D,AG)          1972VA07                  ENSDF    202509`
+    * After: ` 35S     37CL(D,A),37CL(D,AG)          1975VAYG,1972VA07         ENSDF    202509`
+    * Reason: Added 1975VAYG as primary reference providing most complete data
+  - **Lines 6-26**: Complete comment section reformatting with ENSDF conventions
+    * Converted reaction notation to proper format: `{+37}Cl(d,|a|g){+35}S`
+    * Consolidated experimental details for better readability
+    * Fixed isotope notation with proper superscripts/subscripts
+    * Enhanced scientific context and measurement descriptions
+  - **Lines 29-30**: Level assignment comments enhanced
+    * Before: Basic reference citations without context
+    * After: Added scientific context: "based on |g-ray energies" and "{+34}S(d,p|g){+35}S"
+  - **Line 37**: Level record spacing correction
+    * Before: ` 35S   L 2348.2    203/2-` (missing space)
+    * After: ` 35S   L 2348.2    20 3/2-` (proper spacing between uncertainty and J-π)
+  - **Line 42**: Level record spacing correction  
+    * Before: ` 35S   L 2939.2    13(3/2,5/2)` (missing space)
+    * After: ` 35S   L 2939.2    13 (3/2,5/2)` (proper spacing before parentheses)
+
+- **Weekly Effort Log update** (Evidence from git diff):
+  - **Line 43**: Progress report revision for June 15-21, 2025 period
+    * Before: "Added 3 reaction datasets for 35S"
+    * After: "Added 4 reaction datasets for 35S" 
+    * Also added "and data consistency check" to training description
+    * Changed "revised all the Adopted datasets" to "updated their Adopted datasets"
+    * Reason: Corrected dataset count and improved accuracy of work description
+
+- **Generated files updated**:
+  - **finished/S35/pdf/S35_37cl_d_a_37cl_d_ag.pdf**: New PDF generated from updated ENSDF file
+  - **finished/S35/pdf/S35_37cl_p_3he.pdf**: New PDF generated (file not tracked in git)
+  - **finished/S35/pdf/S35_208pb_36s_35sg.pdf**: Modified PDF file
+
+**Validation**: All changes follow ENSDF format standards with proper column alignment and notation conventions.
+
 ## 2025-06-20
 - **ENSDF Column Calibration System Development**:
   - **Created column-calibrate.ps1**: Dedicated PowerShell script for ENSDF field analysis
