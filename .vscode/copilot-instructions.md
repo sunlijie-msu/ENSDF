@@ -7,6 +7,11 @@
 - This ensures ALL modified files are identified and processed
 - Missing this step = incomplete change tracking!
 
+**CRITICAL FORMATTING RULE**: ALL ENSDF values AND uncertainties MUST be LEFT-JUSTIFIED in their fields!
+- Energy values, RI values, half-lives, J-π, AND their uncertainties (DE, DRI, DT, etc.)
+- Special markers (GT, LT) within uncertainty fields are also left-justified
+- NEVER right-justify or center ANY ENSDF field content!
+
 ## Command Triggers
 
 ### "Self-Calibrate Columns"
@@ -49,15 +54,15 @@ Example: 35P   L 1572.0    1  1/2+             2.29 PS  14        2        1.23 
 | BLANK | 7 | ✓ | Must be blank |
 | TYPE | 8 | ✓ | "L" |
 | BLANK | 9 | ✓ | Must be blank |
-| E | 10-19 | ✓ | Level energy |
-| DE | 20-21 | | Energy uncertainty |
+| E | 10-19 | ✓ | Level energy (LEFT-JUSTIFIED) |
+| DE | 20-21 | | Energy uncertainty (LEFT-JUSTIFIED) |
 | SPACE | 22 | ✓ | Readability space |
-| J | 23-39 | | Spin-parity (start at col 23) |
-| T | 40-49 | | Half-life with units |
-| DT | 50-55 | | Half-life uncertainty |
+| J | 23-39 | | Spin-parity (LEFT-JUSTIFIED at col 23) |
+| T | 40-49 | | Half-life with units (LEFT-JUSTIFIED) |
+| DT | 50-55 | | Half-life uncertainty (LEFT-JUSTIFIED) |
 | L | 56-64 | | Angular momentum transfer |
 | S | 65-74 | | Spectroscopic strength |
-| DS | 75-76 | | Uncertainty in S |
+| DS | 75-76 | | Uncertainty in S (LEFT-JUSTIFIED) |
 | C | 77 | | Comment flag |
 
 ### G-Record Format (Gamma Transitions):
@@ -74,21 +79,33 @@ Example: 35P   G 1572.0    1  100.0  4   [E2]     1.23   0.45  0.0368 8   1.23  
 | BLANK | 7 | ✓ | Must be blank |
 | TYPE | 8 | ✓ | "G" |
 | BLANK | 9 | ✓ | Must be blank |
-| E | 10-19 | ✓ | Gamma energy |
-| DE | 20-21 | | Energy uncertainty |
+| E | 10-19 | ✓ | Gamma energy (LEFT-JUSTIFIED) |
+| DE | 20-21 | | Energy uncertainty (LEFT-JUSTIFIED) |
 | SPACE | 22 | ✓ | Readability space |
-| RI | 23-29 | | Relative photon intensity |
-| DRI | 30-31 | | Uncertainty in RI |
+| RI | 23-29 | | Relative photon intensity (LEFT-JUSTIFIED at col 23) |
+| DRI | 30-31 | | Uncertainty in RI (LEFT-JUSTIFIED, including GT, LT markers) |
 | M | 32-41 | | Multipolarity |
 | MR | 42-49 | | Mixing ratio |
-| DMR | 50-55 | | Uncertainty in MR |
+| DMR | 50-55 | | Uncertainty in MR (LEFT-JUSTIFIED) |
 | CC | 56-62 | | Conversion coefficient |
-| DCC | 63-64 | | Uncertainty in CC |
+| DCC | 63-64 | | Uncertainty in CC (LEFT-JUSTIFIED) |
 | TI | 65-74 | | Total transition intensity |
-| DTI | 75-76 | | Uncertainty in TI |
+| DTI | 75-76 | | Uncertainty in TI (LEFT-JUSTIFIED) |
 | C | 77 | | Comment flag |
 
 **Critical**: ENSDF files are parsed by automated systems requiring exact positions. One column off = data rejection.
+
+**UNCERTAINTY LEFT-JUSTIFICATION RULE**: ALL uncertainties (DE, DRI, DMR, DCC, DTI, DT, DS, etc.) MUST be left-justified in their respective fields, just like the values themselves. Special markers (GT, LT) within uncertainty fields are also left-justified.
+
+**LEFT-JUSTIFICATION RULE**: ALL values AND uncertainties MUST be left-justified within their respective fields. This includes:
+- Energy values (E field) and their uncertainties (DE field)
+- J-π values (spin-parity) and any associated uncertainties
+- Half-life values (T field) and their uncertainties (DT field)
+- RI values (relative intensity) and their uncertainties (DRI field)
+- Mixing ratios (MR field) and their uncertainties (DMR field)
+- Conversion coefficients (CC field) and their uncertainties (DCC field)
+- All numerical and text values AND their uncertainties
+Never right-justify or center ANY values OR uncertainties in ENSDF records!
 
 ## Essential Rules
 
@@ -99,10 +116,15 @@ Example: 35P   G 1572.0    1  100.0  4   [E2]     1.23   0.45  0.0368 8   1.23  
 - Make all edits between first and last line boundaries only
 
 ### Column Positioning
-- **J-π placement**: Always start at column 23, never add spaces that shift uncertainties
-- **RI values**: Start at column 23 (G-records), left-justified in 7-char field
-- **BR values**: Position at column 32 (N-records)
-- **NR values**: Columns 11-15 (N-records)
+- **J-π placement**: Always start at column 23, LEFT-JUSTIFIED (never add spaces that shift uncertainties)
+- **Energy values**: LEFT-JUSTIFIED in their designated columns (10-19)
+- **RI values**: Start at column 23, **LEFT-JUSTIFIED** in 7-char field (23-29)
+- **DRI values**: Position at columns 30-31 (including special markers like GT, LT)
+- **Half-life values**: LEFT-JUSTIFIED in T field (columns 40-49)
+- **BR values**: Position at column 32 (N-records), LEFT-JUSTIFIED
+- **NR values**: Columns 11-15 (N-records), LEFT-JUSTIFIED
+
+**CRITICAL**: ALL values must be LEFT-JUSTIFIED within their respective fields - never right-justified or centered!
 
 ### NSR Keynumber Formatting
 - **In comments/records**: Second letter lowercase (`2023Bo17`, `2021Wa16`)

@@ -1,5 +1,64 @@
 # Change Log for ENSDF Edits
 
+## 2024-12-28: Comprehensive S35 Format and Content Updates
+
+**ENSDF File Modified:**
+**S35_37cl_d_a_37cl_d_ag.ens**: Major formatting and content standardization
+
+### Energy Level Uncertainty Updates:
+- **Line 33**: L 1990.0 uncertainty: 11 → 10 (1.992±0.010 MeV)
+- **Line 35**: L 2348.2 uncertainty: 20 → 10 (2.348±0.010 MeV) 
+- **Line 38**: L 2716.7 uncertainty: 11 → 10 (2.714±0.010 MeV)
+- **Line 63**: L 4027.7 uncertainty: 22 → 10 (4.025±0.010 MeV)
+
+### Content Format Improvements:
+- **Lines 9, 14-16**: Added missing hyphens in target descriptions (10|mg/cm → 10-|mg/cm)
+- **Line 16**: Fixed line ending alignment and spacing
+- **Line 30**: Corrected period placement in J comment
+- **Line 31**: Added proper spacing to 3/2+ assignment
+
+### G-Record Energy and RI Precision Enhancements:
+- **Lines 33-34**: G 1572 → G 1572.2, added proper RI formatting
+- **Lines 34-36**: G 1990 → G 1989.9, changed from "98 LT" to "100"
+- **Lines 37-39**: G 776 → G 776.0, G 2348 → G 2348.1, enhanced precision
+- **Line 41**: G 2717 → G 2716.6, standardized RI formatting
+- **Line 43**: G 2939 → G 2939.1, removed "98 LT" format
+- **Line 45**: G 3423 standardized RI to "100"
+- **Lines 47-48**: Enhanced precision: G 1213 → G 1212.6, G 1571 → G 1570.8
+- **Line 50**: G 3598 → G 3598.2, standardized RI
+- **Lines 53-54**: Enhanced precision: G 2232 → G 2231.3, G 3804 → G 3803.4
+- **Line 56**: G 1828 → G 1828.1, standardized RI
+- **Lines 58-60**: Enhanced precision throughout: G 1541 → G 1540.8, etc.
+- **Line 62**: G 2032 → G 2032.1, removed comment flag
+- **Lines 65-67**: Enhanced precision: G 1089 → G 1088.5, etc., removed comment flags
+- **Line 69**: G 4110 → G 4108, removed "95 GT" format
+- **Lines 72-73**: Updated G-records for 4180 level with new branching
+- **Lines 77-81**: Enhanced precision for 4302 and 4480 levels
+
+### Comment Updates:
+- **Lines 27-29**: Enhanced comment descriptions with proper references
+- **Lines 34, 36, 39, 64**: Added level energy comments with 1955Pa54 references
+- **Lines 51, 70, 75**: Added RI comments for >95% values
+
+### Evidence/Verification:
+- Used what-changed.ps1 to detect all modifications
+- Enhanced energy precision throughout file
+- Standardized RI formatting and removed non-standard "LT/GT" notations
+- Added proper reference comments for alternative energy values
+- All uncertainties now left-justified as per ENSDF standards
+
+**Reason**: Comprehensive format standardization to meet ENSDF Manual requirements, enhanced precision, and improved scientific documentation consistency.
+
+## 2024-12-28: Enhanced LEFT-JUSTIFICATION Documentation for ALL Uncertainties
+
+**Documentation Modified:**
+**copilot-instructions.md**:
+- Enhanced LEFT-JUSTIFICATION RULE to explicitly include ALL uncertainties (DE, DRI, DMR, DCC, DTI, DT, DS, etc.)
+- Added specific "LEFT-JUSTIFIED" notation to all uncertainty field descriptions in G-record and L-record tables
+- Added prominent "UNCERTAINTY LEFT-JUSTIFICATION RULE" section emphasizing uncertainties must be left-justified
+- Clarified that special markers (GT, LT) within uncertainty fields are also left-justified
+- **Reason**: Ensure complete documentation that ALL ENSDF values AND uncertainties must be left-justified, not just primary values
+
 ## 2025-06-23 Column Alignment and NSR Reference Updates
 
 **ENSDF Files Modified:**
