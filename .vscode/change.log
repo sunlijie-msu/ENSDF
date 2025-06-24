@@ -1,5 +1,39 @@
 # Change Log for ENSDF Edits
 
+## 2024-12-28: P35 and S35 Grammar and Content Enhancements
+
+**ENSDF Files Modified:**
+
+### **P35_2h_34si_35pg.ens**: Grammar and Content Updates
+- **Lines 2-3**: Added ENSDF header updates (LIJIE SUN AND JUN CHEN authorship, 2025 cut-off)
+- **Line 4**: Added dL comment about GLSC least-squares fitting (version 03-Jun-2025)
+- **Lines 13-14**: Enhanced grammar in level energy comment: 
+  - Original: "assuming |DE|g=1 keV due to uncertainties in 2007GeZX are not given"
+  - Revised: "assuming |DE|g=1 keV since uncertainties were not given in 2007GeZX"
+  - **Grammar improvements**: "due to" → "since", "are not given" → "were not given" (past tense)
+
+### **S35_2h_34s_pg.ens**: Comprehensive Content and Format Updates
+- **Line 1**: Updated dataset identifier: "11NDS 201111" → "ENSDF 202509"
+- **Lines 2-3**: Added current ENSDF headers (LIJIE SUN AND JUN CHEN authorship)
+- **Line 6**: Added reaction description: "{+34}S(d,p){+35}S in inverse kinematics"
+- **Lines 7-13**: Enhanced experimental description formatting and content:
+  - Added article "A" before beam description
+  - Enhanced target description with proper backing materials (Cu, Al, Mg)
+  - Improved detector description with proper positioning (0°)
+  - Corrected measurement description: "two {+35}S levels" instead of generic description
+  - Enhanced analysis method description: "lineshape analysis"
+- **Line 14**: Improved comment formatting: "From Adopted Levels" → "From the Adopted Levels"
+- **Lines 17, 19**: Added specific lifetime comments from original source (1973Wa10)
+
+### Evidence/Verification:
+- Used what-changed.ps1 to detect all modifications
+- Grammar corrections follow academic standards (past tense for completed studies)
+- Enhanced scientific precision and clarity in experimental descriptions
+- Proper ENSDF header updates to current evaluation standards
+- Added source-specific lifetime values for scientific accuracy
+
+**Reason**: Grammar standardization, enhanced scientific content description, updated ENSDF headers, and improved experimental detail accuracy.
+
 ## 2024-12-28: Comprehensive S35 Format and Content Updates
 
 **ENSDF File Modified:**
