@@ -1,5 +1,60 @@
 # Change Log for ENSDF Edits
 
+## 2025-06-23 Column Alignment and NSR Reference Updates
+
+**ENSDF Files Modified:**
+
+**Ar35_35k_ec_decay_175_ms.ens** (line 67):
+- Changed: `35AR cL J$From the Adopted Levels` 
+- To: `35AR cL J,T$From the Adopted Levels`
+- Reason: Added T (half-life) to comment flag for completeness
+
+**Ar35_36ar_3he_a.ens** (multiple lines):
+- Changed NSR reference from `1998VoAA` to `1998VoZY` throughout file (title line and ~30 comment lines)
+- Added L-transfer value to comment: `35AR cL E(B)$From 1973Be26.` → `35AR cL E(B),L$From 1973Be26.`
+- Reason: Corrected NSR keynumber format and enhanced comment flags
+
+**Ar35_36ca_ecp_decay_100.9_ms.ens** (not detailed in output):
+- Minor formatting updates
+
+**Ar35_adopted.ens** (not detailed in output):  
+- Minor formatting updates
+
+**P35_2h_34si_35pg.ens** (lines 1, 5, 12):
+- Changed NSR reference from `2007GeAA` to `2007GeZX` in title and comments
+- Reason: Corrected NSR keynumber format
+
+**S35_37cl_d_a_37cl_d_ag.ens** (major restructuring):
+- Line 1: Added `1975VAYG,` to title line references
+- Lines 6-28: Completely rewrote general comments for better organization and clarity
+- Line 30: Enhanced comment `35S  cL E$From 1975VaYG` → `35S  cL E$From 1975VaYG based on |g-ray energies.`
+- Line 31: Enhanced comment `35S  cL J$From |g(|q) in 1972Va07` → `35S  cL J$From |g(|q) of {+34}S(d,p|g){+35}S in 1972Va07`
+- Line 33: Fixed L-record spacing: `35S   L 0           3/2+` → `35S   L 0            3/2+`
+- Lines 37-40: Fixed G-record column alignment for RI values and uncertainties
+- Lines 42-46: Corrected G-record RI values from "98 LT" format to proper intensities
+- Line 48: Fixed L-record spacing and parentheses
+- Lines 48-50: Updated G-records with proper intensity values
+- Line 52: Added new comment line `35S  cG RI$>95 in 1975VaYG`
+- Line 82: Removed trailing newline
+
+**Si35_208pb_36s_35sig.ens** (line 5):
+- Fixed superscript notation: `{+36}S{+9}` → `{+36}S{+9+}`
+- Reason: Corrected ion charge state notation
+
+**Column Alignment Issues Addressed:**
+- Fixed ENSDF G-record RI (relative intensity) positioning to start at column 23
+- Corrected uncertainty positioning to columns 30-31  
+- Used Python column calibration tool to verify exact character positions
+- Ensured compliance with ENSDF Manual formatting standards
+
+**NSR Reference Updates:**
+- Updated outdated or incorrect NSR keynumbers to current format
+- Maintained consistency between title lines and comment references
+
+**Files Changed:** 8 ENSDF files modified, multiple PDF regenerations, temp file updates
+**Tools Used:** column-calibrate.py, what-changed.ps1, git status/diff
+**Quality Check:** Self-calibrated columns before/after edits to ensure ENSDF compliance
+
 ## 2025-06-22
 - **S35_37cl_d_a_37cl_d_ag.ens formatting improvements** (Evidence from what-changed.ps1):
   - **Line 1**: ID line updated to include both primary references

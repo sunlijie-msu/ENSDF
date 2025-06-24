@@ -1,5 +1,12 @@
 # ENSDF Nuclear Data Evaluation Instructions
 
+## ⚠️ CRITICAL WORKFLOW REMINDER ⚠️
+**ALWAYS START WITH: `git status`**
+- Before any "What changed?" workflow
+- Before any change detection or documentation
+- This ensures ALL modified files are identified and processed
+- Missing this step = incomplete change tracking!
+
 ## Command Triggers
 
 ### "Self-Calibrate Columns"
@@ -10,10 +17,15 @@ Execute column validation on current ENSDF file:
 **Process**: Display 80-char ruler → Extract L/G records → Validate against ENSDF Manual → Report issues
 
 ### "What changed?"
+**MANDATORY FIRST STEP**: Always run `git status` to identify ALL modified files.
+
 Execute comprehensive change detection and documentation:
-1. Run `.\.vscode\what-changed.ps1 "filename.ens"` for each modified .ens file
-2. Update `change.log` with evidence-based entries (never assume changes)
-3. Document with line numbers, before/after content, and scientific context
+1. **FIRST**: Run `git status` to list all modified files
+2. Run `.\.vscode\what-changed.ps1 "filename.ens"` for each modified .ens file  
+3. Update `change.log` with evidence-based entries (never assume changes)
+4. Document with line numbers, before/after content, and scientific context
+
+**Remember**: Git status MUST be the first step - missing files means incomplete documentation!
 
 ### "Fix format!"
 Auto-convert text to proper ENSDF notation:
@@ -174,18 +186,22 @@ foreach ($element in $elements) {
 ```
 
 ### Change Detection Process
-1. **Pre-work**: `git status`, `git diff --name-only HEAD`
+1. **Pre-work (MANDATORY)**: `git status`, `git diff --name-only HEAD`
 2. **During work**: Track file modifications systematically  
-3. **Post-work**: Use all detection tools, cross-verify results
+3. **Post-work**: Use all detection tools on ALL files from git status
 4. **Documentation**: Evidence-based change.log entries with line numbers
 
+**CRITICAL REMINDER**: Always start with `git status` - this shows the complete picture!
+
 ### Verification Checklist
-- [ ] `git status` - all modified files
-- [ ] `git diff --name-only HEAD` - complete list
+- [ ] **FIRST**: `git status` - identify ALL modified files (MANDATORY)
+- [ ] `git diff --name-only HEAD` - complete list verification
 - [ ] `git ls-files --others --exclude-standard` - untracked files
-- [ ] `what-changed.ps1` on each modified ENSDF file
+- [ ] `what-changed.ps1` on each modified ENSDF file from git status
 - [ ] Update `change.log` with evidence-based entries
 - [ ] Comprehensive commit message
+
+**Remember**: Start every workflow with git status!
 
 ### Git Commit Template
 ```
