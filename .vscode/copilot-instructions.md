@@ -26,11 +26,11 @@ Execute column validation on current ENSDF file:
 
 Execute comprehensive change detection and documentation:
 1. **FIRST**: Run `git status` to list all modified files
-2. Run `.\.vscode\what-changed.ps1 "filename.ens"` for each modified .ens file  
+2. **For each file**: Run `git diff HEAD~1 "filename"` to see what changed  
 3. Update `change.log` with evidence-based entries (never assume changes)
-4. Document with line numbers, before/after content, and scientific context
+4. Document with line numbers, before/after content, and scientific/technical context
 
-**Remember**: Git status MUST be the first step - missing files means incomplete documentation!
+**Remember**: Git status MUST be the first step - missing files means incomplete documentation! Use git diff to see specific changes in each file.
 
 ### "Fix format!"
 Auto-convert text to proper ENSDF notation:
@@ -221,13 +221,30 @@ foreach ($element in $elements) {
 
 **CRITICAL REMINDER**: Always start with `git status` - this shows the complete picture!
 
+### File Categories to Track
+- **ENSDF source files**: *.ens files (most important)
+- **Generated PDFs**: *.pdf files (expected to change when source changes)
+- **Processing artifacts**: temp/*.* files (expected, document but don't commit)
+- **Tools and scripts**: .vscode/*.* files (important for tooling changes)
+- **Documentation**: README.md, change.log, etc.
+
+### Evidence-Based Documentation Rules
+Every change log entry should be backed by:
+- Specific file diffs from `git diff HEAD~1 "filename"`
+- Line numbers where changes occurred
+- Actual before/after content when significant
+- Explanation of why the change was made
+
+**Key principle**: Use multiple detection methods and always cross-verify. If git shows a file changed, dig deeper with git diff. If you modified an ENSDF file, expect to see corresponding PDF changes.
+
 ### Verification Checklist
 - [ ] **FIRST**: `git status` - identify ALL modified files (MANDATORY)
 - [ ] `git diff --name-only HEAD` - complete list verification
 - [ ] `git ls-files --others --exclude-standard` - untracked files
-- [ ] `what-changed.ps1` on each modified ENSDF file from git status
+- [ ] `git diff HEAD~1 "filename"` on each modified file from git status
 - [ ] Update `change.log` with evidence-based entries
 - [ ] Comprehensive commit message
+- [ ] Cross-check: did any ENSDF changes result in expected PDF updates?
 
 **Remember**: Start every workflow with git status!
 
@@ -253,6 +270,31 @@ Files changed: X modified, Y untracked
 Brief scope and impact summary
 ```
 
+### Example Commit Structure
+```
+Title: Enhance ENSDF column calibration tools and improve Ar35 scientific content
+
+Summary:
+- Enhanced Python column calibration script with complete 80-column ENSDF format support
+- Improved scientific content and formatting in Ar35 ENSDF files
+- Completed comprehensive change tracking and documentation
+
+ENSDF Tools:
+- column_calibrate.py: Extended from 41-column to complete 80-column ENSDF support
+- check_averages.py: Completed and tested average calculation verification tool
+
+Scientific Content:
+- Ar35_36ar_p_d.ens: Fixed grammar in L=3 vs L=2 comparison (line 77)
+- Ar35_adopted.ens: Multiple scientific and formatting enhancements
+
+Processing Artifacts:
+- PDF files: Regenerated Ar35_36ar_3he_a.pdf, Ar35_36ar_p_d.pdf, Ar35_adopted.pdf
+- Temp files: Updated all analysis outputs (35.err, 35.fed, 35.fmt, etc.)
+
+Files changed: 15 modified, 2 untracked
+Completion of comprehensive ENSDF column calibration tooling and systematic improvement of Ar35 nuclear data content.
+```
+
 ## Project Structure
 
 ### Core Files (Most Critical)
@@ -264,10 +306,10 @@ Brief scope and impact summary
 - `finished/[Element]/temp/*.*` - Analysis tool artifacts
 
 ### Tools
+- `ens2pdf.py` - Python script for automated ENSDF to PDF conversion
 - `.vscode/column-calibrate.ps1` - PowerShell column validator
 - `.vscode/column_calibrate.py` - Python column validator
-- `.vscode/check_averages.py` - Average calculation validator  
-- `.vscode/what-changed.ps1` - Change detection script
+- `.vscode/check_averages.py` - Average calculation validator
 
 ### Reference Files (NEVER EDIT)
 - `*.old` files - Previous evaluation rounds, keep untouched
