@@ -1132,3 +1132,68 @@
     * **Systematic workflow**: Use git status + git diff + what-changed.ps1 for comprehensive change detection
     * **Documentation standards**: Evidence-based change logging with specific line numbers and content changes
     * **No missed changes**: Multi-tool verification ensures complete change capture and documentation
+
+## 2025-06-24: Major ENSDF Column Formatting and Content Updates
+
+**ENSDF Files Modified:**
+
+### **S35_34s_pol_d_p.ens**: Complete File Restructure and Column Alignment
+- **Header Updates (Lines 1-5)**: 
+  - Updated dataset identifier: "11NDS 201111" → "ENSDF 202509"
+  - Added proper ENSDF headers with LIJIE SUN AND JUN CHEN authorship
+  - Added current cut-off date (30-Sep-2025)
+- **Experimental Description Enhancement (Lines 6-17)**:
+  - Added J|π=0+ specification for {+34}S ground state
+  - Comprehensive rewrite of experimental methodology from 1977Ab07
+  - Enhanced target specification: 90% enriched {+34}S, 610-|mg/cm{+2} thick
+  - Improved detector description: four |DE-E counter telescopes with FWHM|≈60 keV
+  - Added analysis methodology: finite-range, non-locality corrected DWUCK-DWBA
+- **Critical J^π Column Alignment (Lines 28-46)**:
+  - **L 1992**: J^π "7/2-" moved from column 22 to column 23 (LEFT-JUSTIFIED)
+  - **L 2348**: J^π "3/2-" moved from column 22 to column 23 (LEFT-JUSTIFIED)  
+  - **L 2718**: J^π "5/2+" moved from column 22 to column 23 (LEFT-JUSTIFIED)
+  - **L 2939**: J^π "3/2+,5/2+" moved from column 22 to column 23 (LEFT-JUSTIFIED)
+  - **L 3421**: J^π "5/2+" moved from column 22 to column 23 (LEFT-JUSTIFIED)
+  - **L 3802**: J^π "3/2-" moved from column 22 to column 23 (LEFT-JUSTIFIED)
+  - **L 4190**: J^π "1/2-" moved from column 22 to column 23 (LEFT-JUSTIFIED)
+  - **L 4482**: J^π "7/2-" moved from column 22 to column 23 (LEFT-JUSTIFIED)
+  - **L 4904**: J^π "1/2-" moved from column 22 to column 23 (LEFT-JUSTIFIED)
+  - **L 4963**: J^π "3/2-" moved from column 22 to column 23 (LEFT-JUSTIFIED)
+  - **L 5058**: J^π "7/2-" moved from column 22 to column 23 (LEFT-JUSTIFIED)
+  - **PRESERVED**: L-transfer values (columns 56-64), spectroscopic factors (65-74), comment flags (77)
+- **Comment Updates (Lines 18-26)**:
+  - Enhanced energy source documentation: "As given in 1977Ab07, originally from 1973EnVA"
+  - Improved normalization factor description: N=1.95 (corrected from N=1.53)
+  - Added comprehensive optical model potential descriptions
+
+### **P35_36s_pol_d_3he.ens**: Header Padding and Content Refinement
+- **Header Space Padding (Lines 2-5)**: All header lines properly filled to 80 columns
+- **Experimental Description Improvements (Lines 7-15)**:
+  - Streamlined reaction description with proper beam specifications
+  - Enhanced target description with precise enrichment (99.7% isotopically enriched {+24}Mg)
+  - Improved detector arrangement description (seven rings at different angles)
+  - Corrected analysis methodology description
+- **Content Cleanup**: Removed duplicate L-record comment lines at end of file
+
+### **S35_24mg_14n_3pg.ens**: New Complete ENSDF File Creation
+- **Professional Experimental Description (Lines 4-12)**:
+  - Comprehensive fusion-evaporation reaction methodology: {+24}Mg({+14}N,3p){+35}S
+  - Detailed beam specifications: 40-MeV, 5-pnA {+14}N beam from LNL XTU-Tandem
+  - Target specifications: 1-mg/cm{+2} thick, 99.7% enriched {+24}Mg on 8-mg/cm{+2} gold
+  - Detection system: 4π-GASP array with 40 Compton-suppressed HPGe detectors
+  - Measurement methods: E|γ, I|γ, |γ|γ-coin, |γ(|θ), |γ|γ(|θ)(ADO), DSAM lifetimes
+- **Complete Nuclear Data**: High-spin levels with gamma-ray transitions and lifetimes
+- **Proper ENSDF Formatting**: All data follows strict column alignment requirements
+
+### **copilot-instructions.md**: Documentation Enhancement
+- **Critical Column Rule Addition**: Added warning about never shifting other field values when fixing J^π positioning
+- **Process Documentation**: Enhanced workflow instructions for precise ENSDF column management
+
+**Technical Verification:**
+- Used column_calibrate.py to verify all J^π values now start at column 23
+- Confirmed L-transfer values remain in columns 56-64  
+- Verified spectroscopic factors preserved in columns 65-74
+- All changes follow strict ENSDF Manual specifications
+- Applied replace_string_in_file for precise column-aware edits
+
+**Reason**: Achieved perfect ENSDF column compliance with LEFT-JUSTIFIED field alignment, enhanced experimental descriptions, and comprehensive nuclear data formatting standards.

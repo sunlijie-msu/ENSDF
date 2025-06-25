@@ -126,6 +126,12 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
 
 **CRITICAL**: ALL values must be LEFT-JUSTIFIED within their respective fields - never right-justified or centered!
 
+**⚠️ CRITICAL COLUMN RULE**: When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns!
+- L-transfer values: Must stay in columns 56-64
+- Spectroscopic factors: Must stay in columns 65-74
+- Comment flags: Must stay in column 77
+- Only adjust spacing between fields - never move field data to incorrect columns!
+
 ### NSR Keynumber Formatting
 - **In comments/records**: Second letter lowercase (`2023Bo17`, `2021Wa16`)
 - **In headers/Q-records**: All uppercase (`2023BO17`, `2021WA16`)

@@ -1,12 +1,16 @@
- 35S     24MG(14N,3PG):XUNDL-1         2014AY01                           201401
- 35S  c  Compiled (unevaluated) dataset from 2014Ay01:                          
- 35S 2c  Phys Rev C 89, 014310 (2014)                                           
- 35S  c  Compiled by B. Singh (McMaster), Jan 15, 2014                          
- 35S  c  E({+14}N)=40 MeV. Measured E|g, I|g, |g|g-coin, |g(|q), |g|g(|q)(ADO), 
- 35S 2c  level lifetimes by DSAM using GASP array of 40 Compton-suppressed HPGe 
- 35S 3c  detectors at LNL, XTU-tandem accelerator facility at Legnaro. Deduced  
- 35S 4c  high-spin levels, J, |p. Comparison with large-scale shell model       
- 35S 5c  calculations                                                           
+ 35S     24MG(14N,3PG)                 2014AY01                  ENSDF    202509
+ 35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
+ 35S 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35S  c  2014Ay01: {+24}Mg({+14}N,3p){+35}S fusion-evaporation reaction using a 
+ 35S 2c  40-MeV, 5-pnA {+14}N beam delivered by the LNL XTU-Tandem accelerator  
+ 35S 3c  and impinged on 1-mg/cm{+2} thick, 99.7% isotopically enriched {+24}Mg 
+ 35S 4c  evaporated on an 8-mg/cm{+2} gold layer. |g rays were detected using   
+ 35S 5c  4|p-GASP array composed of 40 Compton-suppressed large volume HPGe     
+ 35S 6c  detectors arranged in seven rings at different angles with respect to  
+ 35S 7c  beam axis. Events were collected when at least two germanium detectors 
+ 35S 8c  fired in coincidence. Measured E|g, I|g, |g|g-coin, |g(|q),            
+ 35S 9c  |g|g(|q)(ADO), level lifetimes via DSAM. Deduced high-spin levels, J,  
+ 35S Ac  |p. Comparison with large-scale shell model calculations.              
  35S  cG $R{-ADO}=(I|g(34|')+I|g(146|')/2I|g(90|'); expected ratios are 0.8 for 
  35S 2cG stretched dipoles and 1.4 for stretched quadrupoles or |DJ=0, dipoles  
  35S  cG M,MR$From |g(|q) and |g|g(|q) data (2014Ay01)                          
@@ -15,8 +19,8 @@
  35S 2cL J|p asignments are from Adopted Levels in ENSDF database               
  35S  cL T$From DSAM and line-shape (2014Ay01), unless otherwise stated         
  35S  cL T(E)$From Adopted Levels in ENSDF database                             
- 35S  CL BAND(A)$|DJ=1 sequence based on 7/2-                                   
- 35S  CL BAND(B)$Sequence based on 3/2+                                         
+ 35S  cL BAND(A)$|DJ=1 sequence based on 7/2-                                   
+ 35S  cL BAND(B)$Sequence based on 3/2+                                         
  35S  PN                                                                     5  
  35S   L 0.0          3/2+                                                  B   
  35S   L 1572.4     3 1/2+              2.3 PS   4                          E   
@@ -111,4 +115,4 @@
  35S   G    843.9  8    1.6  2   M1                                             
  35S 2 G BM1=0.44 12                                                            
  35S  cG $R{-ADO}=0.8 {I3}                                                      
-                                                                                
+
