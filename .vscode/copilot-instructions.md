@@ -39,10 +39,47 @@ Auto-convert text to proper ENSDF notation:
 - Superscripts/subscripts: Use `{+n}` and `{-n}` format
 
 ### "Convert ENSDF to PDF"
-Natural language request processing for ENSDF-to-PDF conversion:
-- **Example requests**: "Convert S35_24mg_14n_3pg.ens to PDF", "Generate PDF from the adopted file", "Make PDF for the current ENSDF file"
-- **Process**: Automatically locates the specified .ens file, runs the Java conversion tool, and optionally opens the resulting PDF
-- **Usage**: Simply describe which ENSDF file you want converted to PDF using natural language
+Natural language request processing for ENSDF-to-PDF conversion using the enhanced `ens2pdf.py` script:
+
+**Example requests**:
+- "Convert S35_24mg_14n_3pg.ens to PDF"
+- "Generate PDF from the adopted file"
+- "Make PDF for the current ENSDF file"
+- "ens2pdf for the current ens"
+- "Convert Si35 files to PDF and open them"
+
+**Process**: Automatically locates the specified .ens file, runs the Java conversion tool, and opens the resulting PDF
+
+**Script Usage**:
+```bash
+# Convert single file by name
+python ens2pdf.py Si35_adopted
+
+# Convert with full file path
+python ens2pdf.py "finished/Si35/new/Si35_adopted.ens"
+
+# Convert all files for an element
+python ens2pdf.py Si
+
+# Convert files matching pattern
+python ens2pdf.py "Si35_*sig"
+
+# Convert and open in VS Code (default)
+python ens2pdf.py Si35_adopted --open
+
+# Convert and open in system viewer
+python ens2pdf.py Si35_adopted --open --system
+```
+
+**Features**:
+- **Smart PDF Opening**: Tries VS Code first, falls back to system viewer gracefully
+- **Full Path Support**: Handles both relative names and complete file paths
+- **Pattern Matching**: Use wildcards to convert multiple files
+- **Cross-Platform**: Works on Windows, macOS, and Linux
+- **Error Handling**: Graceful fallback when VS Code CLI tools aren't available
+- **User Feedback**: Clear messages about conversion status and where PDF opened
+
+**PDF Location**: All PDFs are generated in `D:/X/ND/Files/` directory
 
 ## ENSDF Column Format Standards (CRITICAL - NO MISTAKES ALLOWED)
 
