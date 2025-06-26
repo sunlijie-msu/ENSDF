@@ -2,55 +2,109 @@ https://enterprise.nscl.msu.edu/workorders/workorders/view/RC106517.N31K3L.W0938
 https://enterprise.nscl.msu.edu/workorders/workorders/view/RC106517.N31K3L.W05109#progress
 
 Progress Notes for RC106517.N31K3L.W09387
+
 Lijie Sun – 9 February 2025 - 15 February 2025
 Received training from my line manager on A=35 evaluation and completed the 35Si β-decay data set.
+
 Lijie Sun – 16 February 2025 - 22 February 2025
 Received training from my line manager on A=35 evaluation and completed 7 reaction data sets for 35P.
+
 Lijie Sun – 23 February 2025 - 1 March 2025
 Received training from my line manager regarding the A=35 evaluation. Revised 4 reaction data sets and added 1 new data set for 35P.
+
 Lijie Sun – 2 March 2025 - 8 March 2025
 Received training from my line manager regarding the A=35 evaluation. Added 1 new data set and revised all 11 reaction data sets for the 35P adopted data set.
+
 Lijie Sun – 9 March 2025 - 15 March 2025
 Addressed one general request through the FRIENDS project. Received training from my line manager regarding the A=35 evaluation and added the adopted data set for 35P.
+
 Lijie Sun – 16 March 2025 - 22 March 2025
 Received training from my line manager regarding the A=35 evaluation. Added a decay data set for 60Zn. Revised the adopted data set for 35P.
+
 Lijie Sun – 23 March 2025 - 29 March 2025
 Received training from my line manager regarding the A=35 evaluation. Completed all data sets for 35P. Added 4 reaction data sets for 35Ar.
+
 Lijie Sun – 30 March 2025 - 5 April 2025
 Received training from my line manager regarding the A=35 evaluation. Revised 4 reaction data sets and added 3 reaction data sets for 35Ar.
+
 Lijie Sun – 6 April 2025 - 12 April 2025
 Received training from my line manager regarding the A=35 evaluation. Revised the ECP dataset and added the EC and one new reaction dataset for 35Ar.
+
 Lijie Sun – 13 April 2025 - 19 April 2025
 Addressed a FRIENDS general request regarding transfer reaction angular distributions. Communicated 36Ca and 35K data issues to the BEApR evaluator at Berkeley. Received training from my line manager regarding the A=35 evaluation. Revised two decay datasets and added the Adopted dataset for 35Ar.
+
 Lijie Sun – 20 April 2025 - 26 April 2025
 Addressed a FRIENDS general request regarding BetaShape. Communicated additional 36Ca data issues to the BEApR evaluator at Berkeley.
 Received training from my line manager regarding the A=35 evaluation. Completed all datasets for 35Ar and added a knockout reaction dataset for 35K and 35Ca, respectively.
+
 Lijie Sun – 27 April 2025 - 3 May 2025
 Addressed the data needs for E25052. Received training from my line manager regarding the A=35 evaluation. Added 3 reaction datasets and the Adopted dataset for 35Ca. Added 2 reaction datasets, 1 decay dataset, and the Adopted dataset for 35K.
+
 Lijie Sun – 4 May 2025 - 10 May 2025
 Received training from my line manager regarding the A=35 evaluation. Revised all datasets for 35K, added the Adopted dataset for 35Ne, and added 3 datasets for 35Na.
+
 Lijie Sun – 11 May 2025 - 17 May 2025
 Communicated 31Ar and 35Ca data issues to the BEApR evaluator at Berkeley. Revised the Adopted dataset for 35Na and added the decay dataset for 35Mg.
+
 Lijie Sun – 18 May 2025 - 24 May 2025
 Published a paper in Phys. Rev. C. Received training from my line manager regarding the A=35 evaluation. Added 2 datasets for 35Mg, 1 decay dataset for 35Al, and 1 decay dataset for 35Si.
+
 Lijie Sun – 25 May 2025 - 31 May 2025
 Addressed a FRIENDS general request on log ft and B(GT) calculations. Received training from my line manager regarding the A=35 evaluation. Added the Adopted dataset for 35Mg. Added 3 reaction datasets and the Adopted dataset for 35Al. Added 2 reaction datasets for 35Si.
+
 Lijie Sun – 1 June 2025 - 7 June 2025
 Coauthored a Deep Learning paper in Nucl. Instrum. Methods A. Communicated 31Ar and 35Ca data issues to the BEApR evaluator at Berkeley. Received training from my line manager regarding the A=35 evaluation. Revised the Adopted datasets for 35Mg, 35Al, 35Si, 35P, 35Ar, 35K, and 35Ca. Added 2 reaction and 1 decay datasets for 35Si.
+
 Lijie Sun – 8 June 2025 - 14 June 2025
 Coauthored a paper in Nucl. Phys. Rev. on 22Na+p elastic scattering in inverse kinematics. Received training from my line manager regarding the A=35 evaluation and data consistency check. Completed all datasets for 35Si. Revised the Adopted datasets for 35P. Performed data consistency check for CF10919 and XUNDL compilation for 115Sb data in 2025LiAA.
+
 Lijie Sun – 15 June 2025 - 21 June 2025
 Received training from my line manager regarding the A=35 evaluation and data consistency check. Added 34Si(d,n)35P, 36Ar(3He,a)35Ar, 34Si(d,p)35Si, 208Pb(36S,35Si) reaction datasets and updated their Adopted datasets accordingly. Added 4 reaction datasets for 35S.
 
 
 
-Performance Review:
-Finalized and validated datasets for 35Si, 35Al, 35Ar, 35Ca, 35K, 35Mg, 35Na, 35P, and 35S. Updated Adopted datasets for 35Al, 35Ar, 35K, 35Mg, 35Na, 35P, and 35S with latest experimental data. Consolidated ENSDF evaluation documentation and standardized change tracking processes to improve workflow efficiency for A=35 completion. FRIB Integral Experimental Nuclear Data Service.
-ENSDF Evaluation: A=35 (Mar 2025 - Sep 2025) covering 11 nuclides: 35Ne, 35Na, 35Mg, 35Al, 35Si, 35P, 35S, 35Cl, 35Ar, 35K, 35Ca.
-XUNDL Compilation: Compiled 1 dataset (Jun 2025 - Jun 2025).
-Data Review: Reviewed 1 paper  (Jun 2025 - Jun 2025).
+# FRIB Laboratory Activities
 
-Streamline and automate the ENSDF-evaluation process
-Study in depth the possibilities of using AI and ML techniques in VS Code.
-3.	Research:
-4.	Presentations:
+## Nuclear Data Group
+
+The MSU Nuclear Data Center is a member of the U.S. Nuclear Data Program (USNDP) and the International Network of Nuclear Structure and Decay Data (NSDD) evaluators. It plays an integral role in both national and international nuclear data networks. Our activities are conducted in close collaboration with the USNDP to optimize the effectiveness of U.S. nuclear data initiatives.
+
+The MSU Nuclear Data Center enhances scientific discoveries at FRIB by promptly compiling, evaluating, and disseminating new data from FRIB experiments. We provide comprehensive data support to FRIB users throughout all experimental stages under the FRIENDS (FRIB Integral Experimental Nuclear Data Services) project framework.
+
+Since 2015, the MSU Nuclear Data Center has been consistently recognized as one of the most productive data centers within the USNDP and NSDD networks.
+
+## Responsibilities and Duties
+
+#### ENSDF Evaluation
+- **Period**: Mar 2025 - Sep 2025
+- **Scope**: 11 nuclides (<sup>35</sup>Ne, <sup>35</sup>Na, <sup>35</sup>Mg, <sup>35</sup>Al, <sup>35</sup>Si, <sup>35</sup>P, <sup>35</sup>S, <sup>35</sup>Cl, <sup>35</sup>Ar, <sup>35</sup>K, <sup>35</sup>Ca)
+- **Output**: 80 datasets
+
+#### XUNDL Compilation
+- **Period**: Since June 2025
+- **Output**: Compiled 1 dataset
+
+#### Data Consistency Check
+- **Period**: Since June 2025  
+- **Output**: Reviewed 1 paper
+
+### Technical Development
+Explore the use of AI agent within VS Code to streamline and automate the ENSDF-evaluation process
+
+### Research
+- **Period**: Since June 2025
+- **Output**: Coauthored 2 papers in Phys. Rev. C and Nucl. Instrum. Methods A
+- **Papers**:
+  - "Deep Learning for Nuclear Data Evaluation" in Nucl. Instrum. Methods A
+  - "22Na+p elastic scattering in inverse kinematics" in Nucl. Phys. Rev.
+  - "Deep Learning for Nuclear Data Evaluation" in Phys. Rev. C
+  - "Deep Learning for Nuclear Data Evaluation" in Nucl. Instrum. Methods A
+  - "22Na+p elastic scattering in inverse kinematics" in Nucl. Phys. Rev.
+  - "Deep Learning for Nuclear Data Evaluation" in Phys. Rev. C
+
+### Collaborations
+- **FRIB Laboratory**: Collaborated with the FRIB Nuclear Data Group to support experimental nuclear data services.
+- **USNDP**: Worked closely with the U.S. Nuclear Data Program to align efforts and share resources.
+- **NSDD**: Engaged with the International Network of Nuclear Structure and Decay Data evaluators to ensure global standards and practices in nuclear data evaluation.
+- **BEApR Evaluators**: Communicated data issues and collaborated on data consistency checks with BEApR evaluators at Berkeley.
+- **FRIENDS Project**: Actively participated in the FRIENDS project to provide integral experimental nuclear data services at FRIB.
