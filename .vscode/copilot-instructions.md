@@ -26,7 +26,7 @@ Execute column validation on current ENSDF file:
 
 Execute comprehensive change detection and documentation:
 1. **FIRST**: Run `git status` to list all modified files
-2. **For each file**: Run `git diff HEAD~1 "filename"` to see what changed  
+2. **For each file**: Run `git diff HEAD~1 "filename"` to see what changed
 3. Update `change.log` with evidence-based entries (never assume changes)
 4. Document with line numbers, before/after content, and scientific/technical context
 
@@ -38,13 +38,56 @@ Auto-convert text to proper ENSDF notation:
 - Math symbols: `×` → `|*`, `≈` → `|?`, `±` → `|+`, etc.
 - Superscripts/subscripts: Use `{+n}` and `{-n}` format
 
+### "Convert ENSDF to PDF"
+Natural language request processing for ENSDF-to-PDF conversion using the enhanced `ens2pdf.py` script:
+
+**Example requests**: 
+- "Convert S35_24mg_14n_3pg.ens to PDF"
+- "Generate PDF from the adopted file" 
+- "Make PDF for the current ENSDF file"
+- "ens2pdf for the current ens"
+- "Convert Si35 files to PDF and open them"
+
+**Process**: Automatically locates the specified .ens file, runs the Java conversion tool, and opens the resulting PDF
+
+**Script Usage**:
+```bash
+# Convert single file by name
+python ens2pdf.py Si35_adopted
+
+# Convert with full file path  
+python ens2pdf.py "finished/Si35/new/Si35_adopted.ens"
+
+# Convert all files for an element
+python ens2pdf.py Si
+
+# Convert files matching pattern
+python ens2pdf.py "Si35_*sig"
+
+# Convert and open in VS Code (default)
+python ens2pdf.py Si35_adopted --open
+
+# Convert and open in system viewer
+python ens2pdf.py Si35_adopted --open --system
+```
+
+**Features**:
+- **Smart PDF Opening**: Tries VS Code first, falls back to system viewer gracefully
+- **Full Path Support**: Handles both relative names and complete file paths
+- **Pattern Matching**: Use wildcards to convert multiple files
+- **Cross-Platform**: Works on Windows, macOS, and Linux
+- **Error Handling**: Graceful fallback when VS Code CLI tools aren't available
+- **User Feedback**: Clear messages about conversion status and where PDF opened
+
+**PDF Location**: All PDFs are generated in `D:/X/ND/Files/` directory
+
 ## ENSDF Column Format Standards (CRITICAL - NO MISTAKES ALLOWED)
 
 ### L-Record Format (Energy Levels):
 ```
 Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 Format:  35XX  L EEEE.E   DE  JP               T        DT        L        S        DS C
-Example: 35P   L 1572.0    1  1/2+             2.29 PS  14        2        1.23     45 
+Example: 35P   L 1572.0    1  1/2+             2.29 PS  14        2        1.23     45
 ```
 
 | Field | Columns | Required | Description |
@@ -69,7 +112,7 @@ Example: 35P   L 1572.0    1  1/2+             2.29 PS  14        2        1.23 
 ```
 Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 Format:  35XX  G EEEE.E   DE  II.I   DI  [M]      MR     DMR   CC     DCC TI       DTI C
-Example: 35P   G 1572.0    1  100.0  4   [E2]     1.23   0.45  0.0368 8   1.23     45  
+Example: 35P   G 1572.0    1  100.0  4   [E2]     1.23   0.45  0.0368 8   1.23     45
 ```
 
 | Field | Columns | Required | Description |
@@ -105,6 +148,7 @@ Example: 35P   G 1572.0    1  100.0  4   [E2]     1.23   0.45  0.0368 8   1.23  
 - Mixing ratios (MR field) and their uncertainties (DMR field)
 - Conversion coefficients (CC field) and their uncertainties (DCC field)
 - All numerical and text values AND their uncertainties
+
 Never right-justify or center ANY values OR uncertainties in ENSDF records!
 
 ## Essential Rules
@@ -179,7 +223,7 @@ Common corrections: "stoped"→"stopped", "usign"→"using", "coeffcients"→"co
 
 ### General Comment Ordering (adopted.ens files)
 1. **Isotope discovery** (reference): experimental details
-2. **{+A}X production**: production methods and studies  
+2. **{+A}X production**: production methods and studies
 3. **{+A}X decay measurements**: half-life, decay modes
 4. **{+A}X radius measurement**: nuclear radius determinations
 5. **{+A}X mass measurements**: mass spectrometry, Q-values
@@ -187,7 +231,7 @@ Common corrections: "stoped"→"stopped", "usign"→"using", "coeffcients"→"co
 
 ### L-Transfer Rules for J-π Assignment
 - L=0 → J-π: `1/2+`
-- L=1 → J-π: `1/2-,3/2-`  
+- L=1 → J-π: `1/2-,3/2-`
 - L=2 → J-π: `3/2+,5/2+`
 - L=3 → J-π: `5/2-,7/2-`
 
@@ -215,7 +259,7 @@ foreach ($element in $elements) {
 
 ### Change Detection Process
 1. **Pre-work (MANDATORY)**: `git status`, `git diff --name-only HEAD`
-2. **During work**: Track file modifications systematically  
+2. **During work**: Track file modifications systematically
 3. **Post-work**: Use all detection tools on ALL files from git status
 4. **Documentation**: Evidence-based change.log entries with line numbers
 
@@ -301,7 +345,7 @@ Completion of comprehensive ENSDF column calibration tooling and systematic impr
 - `finished/[Element]/new/*.ens` - Primary ENSDF source files
 - `.vscode/change.log` - Comprehensive change tracking
 
-### Generated Files (Expected to Change)  
+### Generated Files (Expected to Change)
 - `finished/[Element]/pdf/*.pdf` - Generated from .ens files
 - `finished/[Element]/temp/*.*` - Analysis tool artifacts
 
@@ -317,9 +361,9 @@ Completion of comprehensive ENSDF column calibration tooling and systematic impr
 ---
 
 ## Focus Areas
-
 **Current Priority**: K35 and P35 files (Ar35 completed)
 
 **Quality Assurance**: Use Self-Calibrate Columns before any ENSDF edits, use What changed? after any modifications
 
 **Remember**: Nuclear data accuracy is critical - when in doubt, verify with tools and cross-check against ENSDF Manual specifications.
+
