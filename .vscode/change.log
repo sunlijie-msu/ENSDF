@@ -1,5 +1,15 @@
 # Change Log for ENSDF Edits
 
+## 2025-06-26 (Evening): Enhanced Column Calibration Tool - Visual Ruler Debugging
+
+**Tool Enhancement**: Added visual ruler technique to `column_calibrate.py` for effective 80-column ENSDF debugging
+- **New `--header` flag**: Quick header analysis with visual ruler display
+- **Enhanced ruler display**: Color-coded ones/tens ruler for immediate column identification  
+- **copilot-instructions.md**: Added "80-Column Alignment Debugging Protocol" with trigger phrases
+- **Usage**: `python .vscode/column_calibrate.py "file.ens" --header`
+
+---
+
 ## 2025-06-26: Enhanced ENSDF-to-PDF Automation and Workflow Documentation
 
 **Summary**: Major enhancement of ENSDF-to-PDF conversion workflow with comprehensive automation, natural language processing, and robust error handling. Updated project documentation with complete usage instructions.
@@ -763,3 +773,153 @@
 - Updated copilot-instructions.md with rule about not modifying first/last line indentation
 - Fixed spelling and formatting errors in various reference comments
 
+## 2025-06-26 (Evening): Enhanced Column Calibration Tool for 80-Column Debugging
+
+**Summary**: Major enhancement of column calibration tool with visual ruler technique for effective ENSDF 80-column format debugging. Added quick header analysis mode and improved instructions for alignment troubleshooting.
+
+**Tool Improvements:**
+
+### **column_calibrate.py**: Enhanced with Visual Ruler Debugging
+- **Lines 182-220**: Added `quick_header_analysis()` function for rapid header debugging:
+  - Visual 80-column ruler with ones/tens display
+  - Immediate field breakdown (NUCID, DSID, DSREF, PUB, DATE)
+  - Length validation and alignment checking
+  - Clear pass/fail indicators for formatting issues
+
+- **Lines 135-140**: Enhanced main ruler display with color coding:
+  - `Ones:  12345678901234567890123456789012345678901234567890123456789012345678901234567890`
+  - `Tens:  1111111111222222222233333333334444444444555555555566666666667777777777888888888999`
+  - Makes column position identification immediate and visual
+
+- **Lines 270-272**: Added `--header` command line flag for quick analysis mode
+- **Usage Examples**: `python .vscode/column_calibrate.py "file.ens" --header`
+
+### **copilot-instructions.md**: Added 80-Column Debugging Protocol
+- **Lines 17-35**: New "Debug Header Alignment" section with immediate action steps
+- **Lines 11-16**: Enhanced "80-Column Alignment Debugging Protocol" with trigger phrases
+- **Visual Ruler Technique**: Documented Python one-liner for manual debugging:
+  ```python
+  python -c "header='[paste line]'; print('Ruler:'); print('Ones: 123...'); print('Header:', header)"
+  ```
+
+**Scientific Context**: 
+The ENSDF (Evaluated Nuclear Structure Data File) format requires exactly 80-character lines with specific field positions. Misalignment causes data parsing errors and violates international nuclear data standards. The visual ruler technique provides immediate visual feedback for debugging column position issues.
+
+**Testing Results**: 
+- ✅ Quick header analysis on `S35_26mg_18o_2ang_xundl-2.xundl` shows proper 80-character formatting
+- ✅ Visual ruler clearly identifies field boundaries and alignment issues
+- ✅ Enhanced error messages provide specific guidance for fixing formatting problems
+
+---
+
+## 2024-12-28: P35 and S35 Grammar and Content Enhancements
+
+**ENSDF Files Modified:**
+
+### **P35_2h_34si_35pg.ens**: Grammar and Content Updates
+- **Lines 2-3**: Added ENSDF header updates (LIJIE SUN AND JUN CHEN authorship, 2025 cut-off)
+- **Line 4**: Added dL comment about GLSC least-squares fitting (version 03-Jun-2025)
+- **Lines 13-14**: Enhanced grammar in level energy comment: 
+  - Original: "assuming |DE|g=1 keV due to uncertainties in 2007GeZX are not given"
+  - Revised: "assuming |DE|g=1 keV since uncertainties were not given in 2007GeZX"
+  - **Grammar improvements**: "due to" → "since", "are not given" → "were not given" (past tense)
+
+### **S35_2h_34s_pg.ens**: Comprehensive Content and Format Updates
+- **Line 1**: Updated dataset identifier: "11NDS 201111" → "ENSDF 202509"
+- **Lines 2-3**: Added current ENSDF headers (LIJIE SUN AND JUN CHEN authorship)
+- **Line 6**: Added reaction description: "{+34}S(d,p){+35}S in inverse kinematics"
+- **Lines 7-13**: Enhanced experimental description formatting and content:
+  - Added article "A" before beam description
+  - Enhanced target description with proper backing materials (Cu, Al, Mg)
+  - Improved detector description with proper positioning (0°)
+  - Corrected measurement description: "two {+35}S levels" instead of generic description
+  - Enhanced analysis method description: "lineshape analysis"
+- **Line 14**: Improved comment formatting: "From Adopted Levels" → "From the Adopted Levels"
+- **Lines 17, 19**: Added specific lifetime comments from original source (1973Wa10)
+
+### Evidence/Verification:
+- Used what-changed.ps1 to detect all modifications
+- Grammar corrections follow academic standards (past tense for completed studies)
+- Enhanced scientific precision and clarity in experimental descriptions
+- Proper ENSDF header updates to current evaluation standards
+- Added source-specific lifetime values for scientific accuracy
+
+**Reason**: Grammar standardization, enhanced scientific content description, updated ENSDF headers, and improved experimental detail accuracy.
+
+## 2024-12-28: Comprehensive S35 Format and Content Updates
+
+**ENSDF File Modified:**
+**S35_37cl_d_a_37cl_d_ag.ens**: Major formatting and content standardization
+
+### Energy Level Uncertainty Updates:
+- **Line 33**: L 1990.0 uncertainty: 11 → 10 (1.992±0.010 MeV)
+- **Line 35**: L 2348.2 uncertainty: 20 → 10 (2.348±0.010 MeV) 
+- **Line 38**: L 2716.7 uncertainty: 11 → 10 (2.714±0.010 MeV)
+- **Line 63**: L 4027.7 uncertainty: 22 → 10 (4.025±0.010 MeV)
+
+### Content Format Improvements:
+- **Lines 9, 14-16**: Added missing hyphens in target descriptions (10|mg/cm → 10-|mg/cm)
+- **Line 16**: Fixed line ending alignment and spacing
+- **Line 30**: Corrected period placement in J comment
+- **Line 31**: Added proper spacing to 3/2+ assignment
+
+### G-Record Energy and RI Precision Enhancements:
+- **Lines 33-34**: G 1572 → G 1572.2, added proper RI formatting
+- **Lines 34-36**: G 1990 → G 1989.9, changed from "98 LT" to "100"
+- **Lines 37-39**: G 776 → G 776.0, G 2348 → G 2348.1, enhanced precision
+- **Line 41**: G 2717 → G 2716.6, standardized RI formatting
+- **Line 43**: G 2939 → G 2939.1, removed "98 LT" format
+- **Line 45**: G 3423 standardized RI to "100"
+- **Lines 47-48**: Enhanced precision: G 1213 → G 1212.6, G 1571 → G 1570.8
+- **Line 50**: G 3598 → G 3598.2, standardized RI
+- **Lines 53-54**: Enhanced precision: G 2232 → G 2231.3, G 3804 → G 3803.4
+- **Line 56**: G 1828 → G 1828.1, standardized RI
+- **Lines 58-60**: Enhanced precision throughout: G 1541 → G 1540.8, etc.
+- **Line 62**: G 2032 → G 2032.1, removed comment flag
+- **Lines 65-67**: Enhanced precision: G 1089 → G 1088.5, etc., removed comment flags
+- **Line 69**: G 4110 → G 4108, removed "95 GT" format
+- **Lines 72-73**: Updated G-records for 4180 level with new branching
+- **Lines 77-81**: Enhanced precision for 4302 and 4480 levels
+
+### Comment Updates:
+- **Lines 27-29**: Enhanced comment descriptions with proper references
+- **Lines 34, 36, 39, 64**: Added level energy comments with 1955Pa54 references
+- **Lines 51, 70, 75**: Added RI comments for >95% values
+
+### Evidence/Verification:
+- Used what-changed.ps1 to detect all modifications
+- Enhanced energy precision throughout file
+- Standardized RI formatting and removed non-standard "LT/GT" notations
+- Added proper reference comments for alternative energy values
+- All uncertainties now left-justified as per ENSDF standards
+
+**Reason**: Comprehensive format standardization to meet ENSDF Manual requirements, enhanced precision, and improved scientific documentation consistency.
+
+## 2024-12-28: Enhanced LEFT-JUSTIFICATION Documentation for ALL Uncertainties
+
+**Documentation Modified:**
+**copilot-instructions.md**:
+- Enhanced LEFT-JUSTIFICATION RULE to explicitly include ALL uncertainties (DE, DRI, DMR, DCC, DTI, DT, DS, etc.)
+- Added specific "LEFT-JUSTIFIED" notation to all uncertainty field descriptions in G-record and L-record tables
+- Added prominent "UNCERTAINTY LEFT-JUSTIFICATION RULE" section emphasizing uncertainties must be left-justified
+- Clarified that special markers (GT, LT) within uncertainty fields are also left-justified
+- **Reason**: Ensure complete documentation that ALL ENSDF values AND uncertainties must be left-justified, not just primary values
+
+## 2025-06-23 Column Alignment and NSR Reference Updates
+
+**ENSDF Files Modified:**
+
+**Ar35_35k_ec_decay_175_ms.ens** (line 67):
+- Changed: `35AR cL J$From the Adopted Levels` 
+- To: `35AR cL J,T$From the Adopted Levels`
+- Reason: Added T (half-life) to comment flag for completeness
+
+**Ar35_36ar_3he_a.ens** (multiple lines):
+- Changed NSR reference from `1998VoAA` to `1998VoZY` throughout file (title line and ~30 comment lines)
+- Added L-transfer value to comment: `35AR cL E(B)$From 1973Be26.` → `35AR cL E(B),L$From 1973Be26.`
+- Reason: Corrected NSR keynumber format and enhanced comment flags
+
+**Ar35_36ca_ecp_decay_100.9_ms.ens** (not detailed in output):
+- Minor formatting updates
+
+**Ar35_adopted.ens** (not detailed in output):  

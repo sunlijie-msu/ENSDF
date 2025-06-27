@@ -43,6 +43,50 @@ def show_character_mapping(record: str, record_type: str) -> None:
     print()
 
 
+def quick_header_analysis(filepath: str) -> None:
+    """Quick header analysis with visual ruler - perfect for debugging alignment issues"""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            header = f.readline().rstrip()
+    except Exception as e:
+        colored_print(f"Error reading file: {e}", Colors.RED)
+        return
+    
+    colored_print("=== QUICK HEADER ANALYSIS (80-Column Debug) ===", Colors.CYAN)
+    print()
+    colored_print("ENSDF 80-Column Ruler:", Colors.YELLOW)
+    colored_print("Ones:  12345678901234567890123456789012345678901234567890123456789012345678901234567890", Colors.WHITE)
+    colored_print("Tens:  1111111111222222222233333333334444444444555555555566666666667777777777888888888999", Colors.CYAN)
+    colored_print("Header:", Colors.GREEN)
+    print(f"       {header}")
+    print()
+    print(f"Length: {len(header)} chars (should be 80)")
+    print()
+    colored_print("ENSDF Header Field Analysis:", Colors.YELLOW)
+    print(f"Cols 1-5 (NUCID):  '{header[0:5] if len(header) >= 5 else 'N/A'}'")
+    print(f"Cols 6-9 (blank):  '{header[5:9] if len(header) >= 9 else 'N/A'}'")
+    print(f"Cols 10-39 (DSID): '{header[9:39] if len(header) >= 39 else 'N/A'}'")
+    print(f"Cols 40-65 (DSREF):'{header[39:65] if len(header) >= 65 else 'N/A'}'")
+    print(f"Cols 66-74 (PUB):  '{header[65:74] if len(header) >= 74 else 'N/A'}'")
+    print(f"Cols 75-80 (DATE): '{header[74:80] if len(header) >= 80 else 'N/A'}'")
+    print()
+    
+    # Validation
+    issues = []
+    if len(header) != 80:
+        issues.append(f"Length is {len(header)}, should be exactly 80")
+    if len(header) >= 9 and header[5:9] != "    ":
+        issues.append("Cols 6-9 should be blank spaces")
+    
+    if issues:
+        colored_print("❌ ISSUES FOUND:", Colors.RED)
+        for issue in issues:
+            colored_print(f"   • {issue}", Colors.RED)
+    else:
+        colored_print("✅ Header format looks good!", Colors.GREEN)
+    print()
+
+
 def analyze_ensdf_fields(record: str, record_type: str) -> None:
     """Enhanced field extraction and analysis"""
     colored_print(f"=== Field Analysis for {record_type}-record ===", Colors.CYAN)
@@ -217,11 +261,14 @@ def main():
 Examples:
   python column_calibrate.py file.ens
   python column_calibrate.py file.ens --detailed
+  python column_calibrate.py file.ens --header    # Quick header analysis with 80-column ruler
         """
     )
     parser.add_argument('filepath', help='Path to ENSDF file')
     parser.add_argument('--detailed', '-d', action='store_true',
                        help='Show character-by-character mapping for each record')
+    parser.add_argument('--header', action='store_true',
+                       help='Quick header analysis with 80-column ruler (perfect for debugging alignment)')
     
     args = parser.parse_args()
     
@@ -229,6 +276,11 @@ Examples:
     if not os.path.exists(args.filepath):
         colored_print(f"Error: File '{args.filepath}' not found", Colors.RED)
         sys.exit(1)
+    
+    # Quick header analysis mode
+    if args.header:
+        quick_header_analysis(args.filepath)
+        return
     
     # Read file content
     try:
@@ -244,9 +296,10 @@ Examples:
     # Header
     colored_print("=== ENSDF Column Calibration (Python Enhanced) ===", Colors.CYAN)
     print()
-    colored_print("Column Ruler (1-80):", Colors.YELLOW)
-    print("12345678901234567890123456789012345678901234567890123456789012345678901234567890")
-    print("         1         2         3         4         5         6         7         8")
+    colored_print("ENSDF 80-Column Ruler (CRITICAL for alignment debugging):", Colors.YELLOW)
+    colored_print("Ones:  12345678901234567890123456789012345678901234567890123456789012345678901234567890", Colors.WHITE)
+    colored_print("Tens:  1111111111222222222233333333334444444444555555555566666666667777777777888888888999", Colors.CYAN)
+    colored_print("       1         2         3         4         5         6         7         8", Colors.GRAY)
     print()
     
     # Extract sample records

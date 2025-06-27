@@ -12,14 +12,52 @@
 - Special markers (GT, LT) within uncertainty fields are also left-justified
 - NEVER right-justify or center ANY ENSDF field content!
 
+## 🎯 80-Column Alignment Debugging Protocol
+**TRIGGER PHRASES**: "not aligned", "wrong columns", "header formatting", "80 characters"
+
+**IMMEDIATE RESPONSE**:
+1. Run `python .vscode/column_calibrate.py "filename" --header` 
+2. Use visual ruler technique for manual verification
+3. Compare with reference ENSDF files
+4. Apply ENSDF manual field specifications:
+   - Cols 1-5: NUCID
+   - Cols 6-9: Must be blank
+   - Cols 10-39: DSID 
+   - Cols 40-65: DSREF
+   - Cols 66-74: PUB
+   - Cols 75-80: DATE
+
+**Never claim alignment is correct without running the calibration tool first!**
+
 ## Command Triggers
 
-### "Self-Calibrate Columns"
+### "Self-Calibrate Columns" 
 Execute column validation on current ENSDF file:
 - **PowerShell**: `.\column-calibrate.ps1 "currentfile.ens"` (add `-Detailed` for character mapping)
-- **Python**: `python column_calibrate.py "currentfile.ens"` (add `--detailed` for character mapping)
+- **Python**: `python .vscode/column_calibrate.py "currentfile.ens"` (add `--detailed` for character mapping)
+- **Quick Header Check**: `python .vscode/column_calibrate.py "currentfile.ens" --header`
+
+**CRITICAL 80-Column Debugging Technique**:
+When dealing with ENSDF alignment issues, ALWAYS use the visual ruler method:
+```python
+python -c "
+header='[paste actual header line here]'
+print('ENSDF 80-Column Ruler:')
+print('Ones:  12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+print('Tens:  1111111111222222222233333333334444444444555555555566666666667777777777888888888999')  
+print('Header:', header)
+print('Length:', len(header))
+"
+```
 
 **Process**: Display 80-char ruler → Extract L/G records → Validate against ENSDF Manual → Report issues
+
+### "Debug Header Alignment"
+**IMMEDIATE ACTION**: When header alignment issues are suspected:
+1. Run `python .vscode/column_calibrate.py "filename" --header`
+2. Compare with working reference files
+3. Use the visual ruler technique to spot misalignments
+4. Check ENSDF manual field positions (1-5, 6-9, 10-39, 40-65, 66-74, 75-80)
 
 ### "What changed?"
 **MANDATORY FIRST STEP**: Always run `git status` to identify ALL modified files.
