@@ -1,4 +1,23 @@
 # Change Log for ENSDF Edits
+## 2025-06-28: Major ENSDF Content and Formatting Update
+
+**Files changed:**
+- finished/S35/new/S35_24mg_14n_3pg.ens
+- finished/S35/new/S35_26mg_18o_2ang.ens
+
+**finished/S35/new/S35_24mg_14n_3pg.ens**
+- Added dataset header comments for transition strength and least-squares fitting (lines 4-5)
+- Updated experiment and analysis comments for clarity and detail (lines 6-18)
+- Rewrote and expanded level and gamma records for ENSDF compliance, including left-justified field values and proper ENSDF notation (lines 19-124)
+- Removed DWN lines and non-ENSDF notations
+
+**finished/S35/new/S35_26mg_18o_2ang.ens**
+- Created/rewrote file with full experiment and analysis comments using ENSDF notation for Greek letters, superscripts, and math symbols (lines 1-24)
+- All values and uncertainties are left-justified in their fields
+- Level and gamma records formatted to ENSDF standards
+- Comments and references updated for clarity and compliance
+
+All changes follow ENSDF formatting and left-justification rules as per project instructions.
 
 ## 2025-06-26 (Evening): Enhanced Column Calibration Tool - Visual Ruler Debugging
 

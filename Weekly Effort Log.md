@@ -1,4 +1,7 @@
 https://enterprise.nscl.msu.edu/workorders/workorders/view/RC106517.N31K3L.W09387#progress
+Nuclear Structure and Decay Data Evaluation
+Project: RC106517 – Compilation and Evaluation of Nuclear Structure and Decay Data
+
 https://enterprise.nscl.msu.edu/workorders/workorders/view/RC106517.N31K3L.W05109#progress
 
 Progress Notes for RC106517.N31K3L.W09387
@@ -86,25 +89,18 @@ Since 2015, the MSU Nuclear Data Center has been consistently recognized as one 
 
 #### Data Consistency Check
 - **Period**: Since June 2025  
-- **Output**: Reviewed 1 paper
+- **Output**: Reviewed 1 PRC paper
 
 ### Technical Development
 Explore the use of AI agent within VS Code to streamline and automate the ENSDF-evaluation process
 
 ### Research
-- **Period**: Since June 2025
-- **Output**: Coauthored 2 papers in Phys. Rev. C and Nucl. Instrum. Methods A
-- **Papers**:
-  - "Deep Learning for Nuclear Data Evaluation" in Nucl. Instrum. Methods A
-  - "22Na+p elastic scattering in inverse kinematics" in Nucl. Phys. Rev.
-  - "Deep Learning for Nuclear Data Evaluation" in Phys. Rev. C
-  - "Deep Learning for Nuclear Data Evaluation" in Nucl. Instrum. Methods A
-  - "22Na+p elastic scattering in inverse kinematics" in Nucl. Phys. Rev.
-  - "Deep Learning for Nuclear Data Evaluation" in Phys. Rev. C
+- **Period**: Since Feb 2025
+- **Publications**: 1 paper in Phys. Rev. C as the 1st author and 1 paper in Nucl. Instrum. Methods A as a coauthor.
 
 ### Collaborations
-- **FRIB Laboratory**: Collaborated with the FRIB Nuclear Data Group to support experimental nuclear data services.
+- **FRIENDS Support**: Actively participated in the FRIENDS project to provide integral experimental nuclear data services to FRIB users.
+- **FRIB Laboratory**: Collaborated with the Wrede Group to conduct PAC approved experiments.
 - **USNDP**: Worked closely with the U.S. Nuclear Data Program to align efforts and share resources.
 - **NSDD**: Engaged with the International Network of Nuclear Structure and Decay Data evaluators to ensure global standards and practices in nuclear data evaluation.
-- **BEApR Evaluators**: Communicated data issues and collaborated on data consistency checks with BEApR evaluators at Berkeley.
-- **FRIENDS Project**: Actively participated in the FRIENDS project to provide integral experimental nuclear data services at FRIB.
+- **BEApR**: Communicated data issues and collaborated on data consistency checks with BEApR evaluators at Berkeley.
