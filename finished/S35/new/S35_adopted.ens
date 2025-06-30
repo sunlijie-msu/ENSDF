@@ -1,37 +1,38 @@
- 35S     ADOPTED LEVELS, GAMMAS                                  11NDS    201111
+ 35S     ADOPTED LEVELS, GAMMAS                                  ENSDF    202509
+ 35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
+ 35S 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35S   H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35S 2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35S   Q 167.32    3 6985.84 4 11586.5 9 -8322.106     2012WA38                 
- 35S  cQ $Note: Current evaluation has used the following Q record              
- 35S 2cQ $ 167.33    3 {I6985}.84 {I5} 11586.5 {I8}-8322.06 {I6}    2011AuZZ    
- 35S  cQ $S(2n)=18402.96 {I4}, S(2p)=22909.8 {I7} (2011AuZZ)                    
- 35S  cQ $Values in 2003Au03: Q(|b{+-})=167.18 {i9}, S(p)=11578 {i5},           
- 35S 2cQ Q(|a)=-8322.27 {i11} S(2n)=18403.00 {i10}, S(2p)=22932 {i16}           
- 35S  c  First isotope identification by E. B. Andersen  using Cl(n,X) reaction.
- 35S  d  Isotope identification: E. B. Andersen, Z. Phys. Chemie 32B (1936) 237.
+ 35S   Q 167.322   26 6985.844 11586.5 8 -8322.096     2021WA16                 
+ 35S  cQ $S(2n)=18402.99 {I4}, S(2p)=22909.8 {I7} (2021Wa16)                    
+ 35S  c  Isotope discovery (2012Th10): Cl(n,X) reaction at Physical Institute of
+ 35S 2c  Aarhus University (1936An01).                                          
+ 35S  c  35S cross-section measurements: 35Cl(n,p)35S (2020Ku17,2019Ba16).      
+ 35S 2c  Projectile fragmentation 9Be(40Ar,X) and 181Ta(40Ar,X)                 
+ 35S 3c  (2012ZH06,2007NO13). Spallation 1H(136Xe,X) (2007NA31).                
  35S  cG E$ Values with |DE are primarily from (d,p|g), (d,|a|g) and (n,|g)     
  35S 2cG (E=thermal). Weighted average taken when E|g's are available from both.
  35S 3cG Others are deduced from level-energy differences.                      
  35S  cG RI$ Primarily from (d,|a|g), (d,p|g) and (n,|g). Weighted average taken
  35S 2cG when I|g's are available from more than one reference, unless otherwise
  35S 3cG noted.                                                                 
- 35S  cG RI(A)$From 1978En02                                                   
- 35S  cG M,MR$From |g(|q) in (|d,p|g). If T{-1/2} is unknown and parity is     
+ 35S  cG RI(A)$From 1978En02                                                    
+ 35S  cG M,MR$From |g(|q) in (|d,p|g). If T{-1/2} is unknown and parity is      
  35S 2cG determined not by polarization measurements, evaluators use D and Q,   
  35S 3cG instead of M1 and E2, or, E1 and M2.                                   
- 35S  cL E$From E|g data when measured |g-ray energies are available.          
- 35S 2cL In other cases weighted averages are taken of values available         
- 35S 2cL from different reactions                                               
- 35S  cL J$From analyzing power measurement or/and the comparison of the DWBA  
+ 35S  cL E$From E|g data when measured |g-ray energies are available. In other  
+ 35S 2cL cases weighted averages are taken of values available from different   
+ 35S 3cL reactions                                                              
+ 35S  cL J$From analyzing power measurement or/and the comparison of the DWBA   
  35S 2cL prediction of cross section with experimental data in particle-transfer
  35S 3cL reactions or/and from angular distribution measurements of |g-rays.    
- 35S 4cL When assigning J|p to a level based on |g transitions from this        
- 35S 5cL level to a level of known J|p, evaluators use the following rules:     
- 35S 6cL if E|g<4 MeV, transitions are only considered to be E1,M1 or E2; if    
- 35S 7cL E|g>4 MeV, M2 and E3 are considered to be possible. In particle        
- 35S 8cL transfer reactions, target J|p=0+ for {+34}S in (d,p) reaction and     
- 35S 9cL J|p=3/2+ for {+37}Cl in (p,{+3}He) and (d,|a) reactions.               
- 35S  cL T$From (d,p|g) and ({+32}S,n|g) using DSAM (Doppler shift attenuation 
+ 35S 4cL When assigning J|p to a level based on |g transitions from this level  
+ 35S 5cL to a level of known J|p, evaluators use the following rules: if E|g<4  
+ 35S 6cL MeV, transitions are only considered to be E1,M1 or E2; if E|g>4 MeV,  
+ 35S 7cL M2 and E3 are considered to be possible. In particle transfer          
+ 35S 8cL reactions, target J|p=0+ for {+34}S in (d,p) reaction and J|p=3/2+ for 
+ 35S 9cL {+37}Cl in (p,{+3}He) and (d,|a) reactions.                            
+ 35S  cL T$From (d,p|g) and ({+32}S,n|g) using DSAM (Doppler shift attenuation  
  35S 2cL method). Weighted averages taken when values from both are available.  
  35S   XA35P B- DECAY (47.3 S)                                                  
  35S   XB2H(34S,PG)                                                             
@@ -52,43 +53,43 @@
  35S  cL MOMM1$+1.00 {I4} or -1.07 {I4} from 1954Bu05 using Microwave absorption
  35S 2cL method, negative value is less likely from systematics of odd-A S      
  35S 3cL isotopes                                                               
- 35S  dL $ Note that positive sign of 1.07 {I4} value quoted in 2011StZZ seems  
- 35S 2dL a misprint                                                             
+ 35S  dL $ Note that positive sign of 1.07 {I4} value quoted in 2011StZZ seems a
+ 35S 2dL misprint                                                               
  35S  cL MOME2$From multiconfigurational Hartree-Fock calculated efg's in       
- 35S 2cL 1990Su19, also +0.045 {I10} (1954Bi40) using Microwave                 
- 35S 3cL absorption method                                                      
+ 35S 2cL 1990Su19, also +0.045 {I10} (1954Bi40) using Microwave absorption      
+ 35S 3cL method                                                                 
  35S  cL J$spin from microwave spectroscopy (1949Co12, 1951We11), parity from   
  35S 2cL L(pol d,p)=2 and L-1/2 from analyzing powers                           
  35S  cL T$weighted average of 87.1 d {I12} (1947Hu06), 86.35 d {I17}           
- 35S 2cL (1959Co56), 87.16 d {I10} (1958Se49), 88.8 d {I10}(1959Ca12),          
- 35S 3cL 89.0 d {I5} (1961Wy01), 87.1 d {I9} (1961Oz01), 87.9 d {I3} (1965Fl02),
- 35S 4cL 87.39 d {I10} (1968Wo06), 87.5 d {I4} (1969La34),                      
- 35S 5cL 87.38 d {I3} (1999Pa18). Other: 88 d {I3} (1941Ka01)                   
+ 35S 2cL (1959Co56), 87.16 d {I10} (1958Se49), 88.8 d {I10}(1959Ca12), 89.0 d   
+ 35S 3cL {I5} (1961Wy01), 87.1 d {I9} (1961Oz01), 87.9 d {I3} (1965Fl02), 87.39 
+ 35S 4cL d {I10} (1968Wo06), 87.5 d {I4} (1969La34), 87.38 d {I3} (1999Pa18).   
+ 35S 5cL Other: 88 d {I3} (1941Ka01)                                            
  35S   L 1572.378  19 1/2+             2.3 PS    4                              
- 35S  DL $A1572.29    3                                                         
- 35S  DL $B1574                          2.29 PS   35                           
- 35S  DL $C1572.369   9                                                         
- 35S  DL $E1572.92   19 1/2+                             0        0.34      9   
- 35S  DL $F1572        1/2+                              0        0.27,0.18     
- 35S  DL $G1572.5     41/2+              1.3 PS    GT                           
- 35S  DL $H1575      10                                  0+2                    
- 35S  DL $I1575.1     6 1/2+                                                    
+ 35S  dL $A1572.29 3                                                            
+ 35S  dL $B1574 2.29 PS 35                                                      
+ 35S  dL $C1572.369 9                                                           
+ 35S  dL $E1572.92 19 1/2+ 0 0.34 9                                             
+ 35S  dL $F1572 1/2+ 0 0.27,0.18                                                
+ 35S  dL $G1572.5 41/2+ 1.3 PS GT                                               
+ 35S  dL $H1575 10 0+2                                                          
+ 35S  dL $I1575.1 6 1/2+                                                        
  35S X L XREF=ABCEFGHI                                                          
  35S  cL J$ L(pol d,p)=0 and L+1/2 from analyzing powers                        
  35S   G   1572.334   100      [M1,E2]                                          
- 35S  DG $A1572.25   3  98.80   3                                               
- 35S  DG $C1572.33   1  100    1                                                
- 35S  DG $G1572        100                                                      
+ 35S  dG $A1572.25 3 98.80 3                                                    
+ 35S  dG $C1572.33 1 100 1                                                      
+ 35S  dG $G1572 100                                                             
  35S  cG $If M1, B(M1)(W.u.)=0.0025 {I5}; if E2, B(E2)(W.u.)=3.8 {I7}           
- 35S  DG $I1575         100                                                     
+ 35S  dG $I1575 100                                                             
  35S   L 1991.28    5 7/2-             1.02 NS   5                              
- 35S  DL $A1994                                                                 
- 35S  DL $C1991.28    5                                                         
- 35S  DL $E1991.08   16 7/2-                             3        0.68      18  
- 35S  DL $F1992        7/2-                              3        1.16,0.73     
- 35S  DL $G1991.7     4 7/2-             1.02 NS   5                            
- 35S  DL $H1992      10                                  3+5                    
- 35S  DL $I1993.1     6 5/2-,7/2-                                               
+ 35S  dL $A1994                                                                 
+ 35S  dL $C1991.28 5                                                            
+ 35S  dL $E1991.08 16 7/2- 3 0.68 18                                            
+ 35S  dL $F1992 7/2- 3 1.16,0.73                                                
+ 35S  dL $G1991.7 4 7/2- 1.02 NS 5                                              
+ 35S  dL $H1992 10 3+5                                                          
+ 35S  dL $I1993.1 6 5/2-,7/2-                                                   
  35S X L XREF=A(?)CEFGHIJ                                                       
  35S  cL J$ L(pol d,p)=3 and L+1/2 from analyzing powers                        
  35S   G   418.96     2      LT                                                 
@@ -107,7 +108,7 @@
  35S   L 2717.00    3 5/2+             69 FS     24                             
  35S X L XREF=A(?)CEFGHI                                                        
  35S  cL J$ L(pol d,p)=2 and L+1/2 from analyzing powers                        
- 35S  cL           See comment with 5841.3 level.                               
+ 35S  cL See comment with 5841.3 level.                                         
  35S   G   368.5   4 5                                                          
  35S   G   726.8     5       LT                                                 
  35S   G   1144.59 2 5       LT                                                 
@@ -143,769 +144,768 @@
  35S X L XREF=A(?)EGHI                                                          
  35S  cL J$ |g to 3/2+ and L(p,{+3}He)=2+4                                      
  35S   G   658       10      LT                                                 
- 35S  DG $G657         10      LT                                               
+ 35S  dG $G657 10 LT                                                            
  35S   G   880       11      LT                                                 
- 35S  DG $G874         11      LT                                               
+ 35S  dG $G874 11 LT                                                            
  35S   G   1250      15      LT                                                 
- 35S  DG $G1244.5      15      LT                                               
+ 35S  dG $G1244.5 15 LT                                                         
  35S   G   1601      17      LT                                                 
- 35S  DG $G1601        17      LT                                               
+ 35S  dG $G1601 17 LT                                                           
  35S   G   2020      17      LT                                                 
- 35S  DG $G2020        17      LT                                               
+ 35S  dG $G2020 17 LT                                                           
  35S   G   3592      100                                                        
- 35S  DG $G3592        100                                                      
- 35S  DG $I3601        95      LT                                               
+ 35S  dG $G3592 100                                                             
+ 35S  dG $I3601 95 LT                                                           
  35S   L 3675      10 (1/2-,3/2-)                                               
- 35S  DL $A3675                                                                 
- 35S  DL $E3675      10                                  (1)                    
- 35S  DL $G3675                                                                 
+ 35S  dL $A3675                                                                 
+ 35S  dL $E3675 10 (1)                                                          
+ 35S  dL $G3675                                                                 
  35S X L XREF=A(?)EG                                                            
  35S  cL J$ L(d,p)=(1)                                                          
  35S   L 3801.958  23 3/2-             25 FS     18                             
- 35S  DL $A3802                                                                 
- 35S  DL $C3801.949  17                                           0.08          
- 35S  DL $E3801.9    3                                   1                      
- 35S  DL $F3802        3/2-                              1        0.10,0.08     
- 35S  DL $G3802.5     53/2-              25 FS     18                           
- 35S  DL $I3806.2     8                                                         
+ 35S  dL $A3802                                                                 
+ 35S  dL $C3801.949 17 0.08                                                     
+ 35S  dL $E3801.9 3 1                                                           
+ 35S  dL $F3802 3/2- 1 0.10,0.08                                                
+ 35S  dL $G3802.5 53/2- 25 FS 18                                                
+ 35S  dL $I3806.2 8                                                             
  35S X L XREF=A(?)CEFGI                                                         
  35S  cL J$ L(pol d,p)=1 and L+1/2 from analyzing powers                        
  35S   G   243.89     0.6    LT                                                 
- 35S  DG $C  243.89     0.6    LT                                               
+ 35S  dG $C 243.89 0.6 LT                                                       
  35S   G   863.28  28 1.0     4                                                 
- 35S  DG $C863.28    28 1.0     4                                               
- 35S  DG $G867         9       LT                                               
+ 35S  dG $C863.28 28 1.0 4                                                      
+ 35S  dG $G867 9 LT                                                             
  35S   G   1084.79 15 1.7    4                                                  
- 35S  DG $C1084.79   15 1.7    4                                                
- 35S  DG $G1084         11     5                                                
+ 35S  dG $C1084.79 15 1.7 4                                                     
+ 35S  dG $G1084 11 5                                                            
  35S   G   1454.09 4  15     2                                                  
- 35S  DG $C1454.09   4  15     2                                                
- 35S  DG $G1454.5       18     7                                                
+ 35S  dG $C1454.09 4 15 2                                                       
+ 35S  dG $G1454.5 18 7                                                          
  35S   G   1811       1.0    LT                                                 
- 35S  DG $G1811        9       LT                                               
+ 35S  dG $G1811 9 LT                                                            
  35S   G  2229.510 16 92      6 [E1]                                            
  35S B G BE1W=0.0010 8                                                          
- 35S  DG $C2229.510  16 92      6                                               
- 35S  DG $G2230        93      9                                                
- 35S  DG $I2231        61      5                                                
+ 35S  dG $C2229.510 16 92 6                                                     
+ 35S  dG $G2230 93 9                                                            
+ 35S  dG $I2231 61 5                                                            
  35S   G   3801.69 8 100     5  [E1]                                            
  35S B G BE1W=0.00022 16                                                        
- 35S  DG $C3801.69   8 100     6                                                
- 35S  DG $G3802        100     9                                                
- 35S  DG $I3806        100     5                                                
+ 35S  dG $C3801.69 8 100 6                                                      
+ 35S  dG $G3802 100 9                                                           
+ 35S  dG $I3806 100 5                                                           
  35S   L 3818.1     4 (3/2:9/2)-                                                
- 35S  DL $F3818                                                                 
- 35S  DL $G3815.7    11                                                         
- 35S  DL $H3811      10                                  3                      
- 35S  DL $I3821.2    12                                                         
+ 35S  dL $F3818                                                                 
+ 35S  dL $G3815.7 11                                                            
+ 35S  dL $H3811 10 3                                                            
+ 35S  dL $I3821.2 12                                                            
  35S X L XREF=FGHI                                                              
  35S  cL J$ L(p,{+3}He)=3 and |g to 7/2-                                        
  35S   G   879.4     2       LT                                             A   
  35S   G   1101.1    2       LT                                             A   
  35S   G   1470.3    2       LT                                             A   
  35S   G   1826.7    100                                                        
- 35S  DG $G1824        100                                                      
- 35S  DG $I1828        98      LT                                               
+ 35S  dG $G1824 100                                                             
+ 35S  dG $I1828 98 LT                                                           
  35S   G   2245.7    2       LT                                             A   
  35S   G   3817.9    2       LT                                             A   
  35S   L 3866      10                                                          ?
- 35S  DL $E3866      10                                                        ?
+ 35S  dL $E3866 10 ?                                                            
  35S X L XREF=E                                                                 
  35S   L 3885.3     4 (3/2-,5/2)                                                
- 35S  DL $G3885.5     5                                                         
+ 35S  dL $G3885.5 5                                                             
  35S X L XREF=G                                                                 
  35S  cL J$ |g's to 3/2+,3/2- and 7/2-                                          
  35S   G   464       30      LT                                                 
- 35S  DG $G464         30      LT                                               
+ 35S  dG $G464 30 LT                                                            
  35S   G   950       12      LT                                                 
- 35S  DG $G950         12      LT                                               
+ 35S  dG $G950 12 LT                                                            
  35S   G   1167      15      LT                                                 
- 35S  DG $G1167        15      LT                                               
+ 35S  dG $G1167 15 LT                                                           
  35S   G   1537.5    18      LT                                                 
- 35S  DG $G1537.5      18      LT                                               
+ 35S  dG $G1537.5 18 LT                                                         
  35S   G   1894      100                                                        
- 35S  DG $G1894        100                                                      
+ 35S  dG $G1894 100                                                             
  35S   G   2313      16      LT                                                 
- 35S  DG $G2313        16      LT                                               
+ 35S  dG $G2313 16 LT                                                           
  35S   G   3886      16      7                                                  
- 35S  DG $G3885        16      LT                                               
+ 35S  dG $G3885 16 LT                                                           
  35S   L 3890.5     6 (3/2-,5/2)                                                
- 35S  DL $E3896      11                                                         
- 35S  DL $I3892.2     7                                                         
+ 35S  dL $E3896 11                                                              
+ 35S  dL $I3892.2 7                                                             
  35S X L XREF=EI                                                                
  35S  cL J$ |g's to 3/2+,3/2- and 7/2-                                          
  35S   G   1541      89      9                                                  
- 35S  DG $I1541        40      4                                                
+ 35S  dG $I1541 40 4                                                            
  35S   G   1899      100     11                                                 
- 35S  DG $I1899        45      5                                                
+ 35S  dG $I1899 45 5                                                            
  35S   G   3892      33      7                                                  
- 35S  DG $I3892        15      3                                                
+ 35S  dG $I3892 15 3                                                            
  35S   L 4022.3    10 (3/2-:11/2-)                                              
- 35S  DL $J4022                                                                 
+ 35S  dL $J4022                                                                 
  35S X L XREF=J                                                                 
  35S  cL J$|g to 7/2-                                                           
  35S   G   2031        100                                                      
- 35S  DG $J  2031      100                                                      
+ 35S  dG $J 2031 100                                                            
  35S   L 4025.9     4 (1/2:5/2)+                                                
- 35S  DL $E4025      10                                                         
- 35S  DL $G4025.5     5                                                         
- 35S  DL $H4027      10                                  2                      
- 35S  DL $I4030.2     7                                                         
+ 35S  dL $E4025 10                                                              
+ 35S  dL $G4025.5 5                                                             
+ 35S  dL $H4027 10 2                                                            
+ 35S  dL $I4030.2 7                                                             
  35S X L XREF=EGHI                                                              
  35S  cL J$ |g's to 1/2+ and L(p,{+3}He)=2                                      
  35S   G   470       14      LT                                                 
- 35S  DG $G462         14      LT                                               
+ 35S  dG $G462 14 LT                                                            
  35S   G   604       28      LT                                                 
- 35S  DG $G604         28      LT                                               
+ 35S  dG $G604 28 LT                                                            
  35S   G   1090      94      24                                                 
- 35S  DG $G1090        94      24                                               
+ 35S  dG $G1090 94 24                                                           
  35S   G   1307      22      LT                                                 
- 35S  DG $G1307        22      LT                                               
+ 35S  dG $G1307 22 LT                                                           
  35S   G   1677.5    92      33                                                 
- 35S  DG $G1677.5      92      33                                               
- 35S  DG $I1679        18      5                                                
+ 35S  dG $G1677.5 92 33                                                         
+ 35S  dG $I1679 18 5                                                            
  35S   G   2034      28      LT                                                 
- 35S  DG $G2034        28      LT                                               
- 35S  DG $I2037        100     7                                                
+ 35S  dG $G2034 28 LT                                                           
+ 35S  dG $I2037 100 7                                                           
  35S   G   2453      100     33                                                 
- 35S  DG $G2453        100     33                                               
- 35S  DG $I2455        18      5                                                
+ 35S  dG $G2453 100 33                                                          
+ 35S  dG $I2455 18 5                                                            
  35S   G   4025      13      LT                                                 
- 35S  DG $G4025        13      LT                                               
+ 35S  dG $G4025 13 LT                                                           
  35S   L 4106.4     4 (1/2,3/2,5/2)+   55 FS     LT                             
- 35S  DL $C4105.6    8                                                          
- 35S  DL $E4109      10                                                         
- 35S  DL $G4107.5     5                  55 FS     LT                           
- 35S  DL $H4114      10                                  0+2                    
- 35S  DL $I4110.3    10                                                         
+ 35S  dL $C4105.6 8                                                             
+ 35S  dL $E4109 10                                                              
+ 35S  dL $G4107.5 5 55 FS LT                                                    
+ 35S  dL $H4114 10 0+2                                                          
+ 35S  dL $I4110.3 10                                                            
  35S X L XREF=CEGHI                                                             
  35S  cL J$ |g's to 3/2+ and L(p,{+3}He)=0+2                                    
  35S   G   547       5       LT                                                 
- 35S  DG $G544         5       LT                                               
+ 35S  dG $G544 5 LT                                                             
  35S   G   686       5       LT                                                 
- 35S  DG $G686         5       LT                                               
+ 35S  dG $G686 5 LT                                                             
  35S   G   1167      15      7                                                  
- 35S  DG $G1172        15      7                                                
+ 35S  dG $G1172 15 7                                                            
  35S   G   1389      11      LT                                                 
- 35S  DG $G1389        11      LT                                               
+ 35S  dG $G1389 11 LT                                                           
  35S   G   1759.5    6       LT                                                 
- 35S  DG $G1759.5      6       LT                                               
+ 35S  dG $G1759.5 6 LT                                                          
  35S   G   2116      8       LT                                                 
- 35S  DG $G2116        8       LT                                               
+ 35S  dG $G2116 8 LT                                                            
  35S   G   2535      6       LT                                                 
- 35S  DG $G2535        6       LT                                               
+ 35S  dG $G2535 6 LT                                                            
  35S   G   4105.3  8 100     7                                                  
- 35S  DG $C4105.3    8 100     35                                               
- 35S  DG $G4107        100     7                                                
- 35S  DG $I4110        100     LT                                               
+ 35S  dG $C4105.3 8 100 35                                                      
+ 35S  dG $G4107 100 7                                                           
+ 35S  dG $I4110 100 LT                                                          
  35S   L 4180      3  (1/2,3/2,5/2+)                                            
- 35S  DL $G4180      3                                                          
- 35S  DL $H4186      10                                  (2,3)                  
- 35S  DL $I4186.2     6                                                         
+ 35S  dL $G4180 3                                                               
+ 35S  dL $H4186 10 (2,3)                                                        
+ 35S  dL $I4186.2 6                                                             
  35S X L XREF=GHI                                                               
  35S  cL J$ |g to 1/2+                                                          
  35S   G   1835      23      5                                                  
- 35S  DG $I1835        23      5                                                
+ 35S  dG $I1835 23 5                                                            
  35S   G   2193      9       5                                                  
- 35S  DG $I2193        9       5                                                
+ 35S  dG $I2193 9 5                                                             
  35S   G   2611      22      3                                                  
- 35S  DG $I2611        22      3                                                
+ 35S  dG $I2611 22 3                                                            
  35S   G   4186      100     8                                                  
- 35S  DG $I4186        100     8                                                
+ 35S  dG $I4186 100 8                                                           
  35S   L 4189.280  21 1/2-             35 FS     LT                             
- 35S  DL $C4189.271  16                                           0.15          
- 35S  DL $E4189.87   26                                  1                      
- 35S  DL $F4190        1/2-                              1        0.15,0.13     
- 35S  DL $G4189.5     4                  35 FS     LT                           
+ 35S  dL $C4189.271 16 0.15                                                     
+ 35S  dL $E4189.87 26 1                                                         
+ 35S  dL $F4190 1/2- 1 0.15,0.13                                                
+ 35S  dL $G4189.5 4 35 FS LT                                                    
  35S X L XREF=CEFG                                                              
  35S  cL J$ L(pol d,p)=1 and L-1/2 from analyzing powers                        
  35S   G   387       8       LT                                                 
- 35S  DG $G387         8       LT                                               
+ 35S  dG $G387 8 LT                                                             
  35S   G   597       8       LT                                                 
- 35S  DG $G597         8       LT                                               
+ 35S  dG $G597 8 LT                                                             
  35S   G   631.32  24 2.2    3                                                  
- 35S  DG $C631.32    24 2.2    3                                                
- 35S  DG $G626         8       LT                                               
+ 35S  dG $C631.32 24 2.2 3                                                      
+ 35S  dG $G626 8 LT                                                             
  35S   G   768       8       LT                                                 
- 35S  DG $G768         8       LT                                               
+ 35S  dG $G768 8 LT                                                             
  35S   G   1250.61 5  8      1                                                  
- 35S  DG $C1250.61   5  8      1                                                
- 35S  DG $G1254        10      LT                                               
+ 35S  dG $C1250.61 5 8 1                                                        
+ 35S  dG $G1254 10 LT                                                           
  35S   G   1471      10      LT                                                 
- 35S  DG $G1471        10      LT                                               
+ 35S  dG $G1471 10 LT                                                           
  35S   G  1841.426 15 85     8                                                  
- 35S  DG $C1841.426  15 80     8                                                
- 35S  DG $RI$1972Dz13 gives 3.6 {I8}                                            
- 35S  DG $G1841.5      92      10                                               
+ 35S  dG $C1841.426 15 80 8                                                     
+ 35S  dG $RI$1972Dz13 gives 3.6 {I8}                                            
+ 35S  dG $G1841.5 92 10                                                         
  35S   G   2198      15      LT                                                 
- 35S  DG $G2198        15      LT                                               
+ 35S  dG $G2198 15 LT                                                           
  35S   G   2616.87 3 9       3                                                  
- 35S  DG $C2616.87   3  9      3                                                
- 35S  DG $RI$1972Dz13 gives 1.3 {I4}                                            
- 35S  DG $G2617        12      LT                                               
+ 35S  dG $C2616.87 3 9 3                                                        
+ 35S  dG $RI$1972Dz13 gives 1.3 {I4}                                            
+ 35S  dG $G2617 12 LT                                                           
  35S   G   4188.95 8  100    7                                                  
- 35S  DG $C4188.95   8  100    7                                                
- 35S  DG $RI$1985Ke08 gives 24 {I2}                                             
- 35S  DG $G4189        100     10                                               
+ 35S  dG $C4188.95 8 100 7                                                      
+ 35S  dG $RI$1985Ke08 gives 24 {I2}                                             
+ 35S  dG $G4189 100 10                                                          
  35S   L 4302.6     7 (1/2:5/2,7/2-)                                            
- 35S  DL $E4305      8                                                          
- 35S  DL $G4302      4                                                          
- 35S  DL $H4290      10                                  (2)                    
- 35S  DL $I4304.2     8                                                         
+ 35S  dL $E4305 8                                                               
+ 35S  dL $G4302 4                                                               
+ 35S  dL $H4290 10 (2)                                                          
+ 35S  dL $I4304.2 8                                                             
  35S X L XREF=EGHI                                                              
  35S  cL J$ |g's to 3/2+ and 3/2-                                               
  35S   G   1953      100     9                                                  
- 35S  DG $I1953        100     9                                                
+ 35S  dG $I1953 100 9                                                           
  35S   G   4304      69      9                                                  
- 35S  DG $I4304        41      5                                                
+ 35S  dG $I4304 41 5                                                            
  35S   L 4477.64    7 (1/2,3/2,5/2)+   62 FS     LT                             
- 35S  DL $C4477.61    7                                                         
- 35S  DL $E4481      8                                                          
- 35S  DL $F4482        7/2-                              3        0.06,0.05     
- 35S  DL $G4480.5     4                  62 FS     LT                           
- 35S  DL $H4489      10                                  2                      
- 35S  DL $I4485.2     6                                                         
+ 35S  dL $C4477.61 7                                                            
+ 35S  dL $E4481 8                                                               
+ 35S  dL $F4482 7/2- 3 0.06,0.05                                                
+ 35S  dL $G4480.5 4 62 FS LT                                                    
+ 35S  dL $H4489 10 2                                                            
+ 35S  dL $I4485.2 6                                                             
  35S X L XREF=CEFGHI                                                            
  35S  cL J$ |g's to 1/2+ and L(p,{+3}He)=2; J|p=7/2- and L=3 from (pol d,p)     
  35S 2cL presumably erroneous.                                                  
  35S   G   595       8       LT                                                 
- 35S  DG $G595         8       LT                                               
+ 35S  dG $G595 8 LT                                                             
  35S   G   678       8       LT                                                 
- 35S  DG $G678         8       LT                                               
+ 35S  dG $G678 8 LT                                                             
  35S   G   880       8       LT                                                 
- 35S  DG $G888         8       LT                                               
+ 35S  dG $G888 8 LT                                                             
  35S   G   917       8       LT                                                 
- 35S  DG $G917         8       LT                                               
+ 35S  dG $G917 8 LT                                                             
  35S   G   1059      16      LT                                                 
- 35S  DG $G1059        16      LT                                               
+ 35S  dG $G1059 16 LT                                                           
  35S   G   1539      12      LT                                                 
- 35S  DG $G1545        12      LT                                               
+ 35S  dG $G1545 12 LT                                                           
  35S   G   1760.55 11 100    12                                                 
- 35S  DG $C1760.55   11 100    14                                               
- 35S  DG $G1762        100     12                                               
- 35S  DG $I1765        92      10                                               
+ 35S  dG $C1760.55 11 100 14                                                    
+ 35S  dG $G1762 100 12                                                          
+ 35S  dG $I1765 92 10                                                           
  35S   G   2130      13      LT                                                 
- 35S  DG $G2132.5      13      LT                                               
+ 35S  dG $G2132.5 13 LT                                                         
  35S   G   2489      38      10                                                 
- 35S  DG $G2489        16      LT                                               
- 35S  DG $I2492        38      10                                               
+ 35S  dG $G2489 16 LT                                                           
+ 35S  dG $I2492 38 10                                                           
  35S   G   2905.1  4  89     14                                                 
- 35S  DG $C2905.1    4  96     27                                               
- 35S  DG $G2908        64      11                                               
- 35S  DG $I2910        100     10                                               
+ 35S  dG $C2905.1 4 96 27                                                       
+ 35S  dG $G2908 64 11                                                           
+ 35S  dG $I2910 100 10                                                          
  35S   G   4480      26      5                                                  
- 35S  DG $G4480        20      LT                                               
- 35S  DG $I4485        26      5                                                
+ 35S  dG $G4480 20 LT                                                           
+ 35S  dG $I4485 26 5                                                            
  35S   L 4576      8  (1/2:5/2)+                                                
- 35S  DL $E4575      8                                                          
- 35S  DL $F4575                                                                 
- 35S  DL $H4577      10                                  0+2                    
+ 35S  dL $E4575 8                                                               
+ 35S  dL $F4575                                                                 
+ 35S  dL $H4577 10 0+2                                                          
  35S X L XREF=EFH                                                               
  35S  cL J$ L(p,{+3}He)=0+2                                                     
  35S   L 4617      10                                                           
- 35S  DL $H4617      10                                  (1,2)                  
+ 35S  dL $H4617 10 (1,2)                                                        
  35S X L XREF=H                                                                 
  35S   L 4839      8  (1/2:9/2)+                                                
- 35S  DL $E4837      8                                                          
- 35S  DL $F4837                                                                 
- 35S  DL $H4843      10                                  2                      
+ 35S  dL $E4837 8                                                               
+ 35S  dL $F4837                                                                 
+ 35S  dL $H4843 10 2                                                            
  35S X L XREF=EFH                                                               
  35S  cL J$ L(p,{+3}He)=2                                                       
  35S   L 4903.32    8 1/2-                                                      
- 35S  DL $C4903.357  16                                           0.49          
- 35S  DL $E4903.28   16 1/2-                             1        0.776         
- 35S  DL $F4904        1/2-                              1        0.48,0.41     
+ 35S  dL $C4903.357 16 0.49                                                     
+ 35S  dL $E4903.28 16 1/2- 1 0.776                                              
+ 35S  dL $F4904 1/2- 1 0.48,0.41                                                
  35S X L XREF=CEF                                                               
  35S  cL J$ L(pol d,p)=1 and L-1/2 from analyzing powers                        
  35S   G    1101.37   0.43   11                                                 
- 35S  DG $C1101.92   31 0.43   11                                               
+ 35S  dG $C1101.92 31 0.43 11                                                   
  35S   G    1345.25   0.6    LT                                                 
- 35S  DG $C   1345.25   0.6    LT                                               
+ 35S  dG $C 1345.25 0.6 LT                                                      
  35S   G    1964.65   4.9    13                                                 
- 35S  DG $C1964.8    2  4.9    13                                               
+ 35S  dG $C1964.8 2 4.9 13                                                      
  35S   G    2186.29   52     7                                                  
- 35S  DG $C2184.09   19 52     7                                                
+ 35S  dG $C2184.09 19 52 7                                                      
  35S   G    2555.47   41     4                                                  
- 35S  DG $C2555.492  14 41     4                                                
+ 35S  dG $C2555.492 14 41 4                                                     
  35S   G    2911.89   0.6    LT                                                 
- 35S  DG $C   2911.89   0.6    LT                                               
+ 35S  dG $C 2911.89 0.6 LT                                                      
  35S   G    3330.81   100    9                                                  
- 35S  DG $C3330.81   14 100    9                                                
+ 35S  dG $C3330.81 14 100 9                                                     
  35S   G    4902.98   54     3                                                  
- 35S  DG $C4902.97   4  54     3                                                
+ 35S  dG $C4902.97 4 54 3                                                       
  35S   L 4963.09    3 3/2-                                                      
- 35S  DL $C4963.083  23                                           0.19          
- 35S  DL $E4963.12   16 3/2-                             1        0.218         
- 35S  DL $F4963        3/2-                              1        0.19,0.17     
- 35S  DL $H4963      10                                  (0+2)                  
+ 35S  dL $C4963.083 23 0.19                                                     
+ 35S  dL $E4963.12 16 3/2- 1 0.218                                              
+ 35S  dL $F4963 3/2- 1 0.19,0.17                                                
+ 35S  dL $H4963 10 (0+2)                                                        
  35S X L XREF=CEFH                                                              
  35S  cL J$ L(pol d,p)=1 and L+1/2 from analyzing powers                        
  35S   G   1161.05 20 0.96   14                                                 
- 35S  DG $C1161.05   20 0.96   14                                               
+ 35S  dG $C1161.05 20 0.96 14                                                   
  35S   G  1404.967 24 10.5   11                                                 
- 35S  DG $C1404.967  24 10.5   11                                               
+ 35S  dG $C1404.967 24 10.5 11                                                  
  35S   G   2246.00    0.6    LT                                                 
- 35S  DG $C   2246.00   0.6    LT                                               
+ 35S  dG $C 2246.00 0.6 LT                                                      
  35S   G   2615.2  2  19     2                                                  
- 35S  DG $C2615.2    2  19     2                                                
+ 35S  dG $C2615.2 2 19 2                                                        
  35S   G   2972.0  4  3.2    11                                                 
- 35S  DG $C2972.0    4  3.2    11                                               
+ 35S  dG $C2972.0 4 3.2 11                                                      
  35S   G   3390.56 5  100    9                                                  
- 35S  DG $C3390.56   5  100    9                                                
+ 35S  dG $C3390.56 5 100 9                                                      
  35S   G   4962.84 8  41     4                                                  
- 35S  DG $C4962.84   8  41     4                                                
+ 35S  dG $C4962.84 8 41 4                                                       
  35S   L 4990      10 (1/2:5/2)+                                                
- 35S  DL $H4990      10                                  0+2                    
+ 35S  dL $H4990 10 0+2                                                          
  35S X L XREF=H                                                                 
  35S  cL J$ L(p,{+3}He)=0+2                                                     
  35S   L 5058       8 7/2-                                                      
- 35S  DL $E5058      8                                                          
- 35S  DL $F5058        7/2-                              3        0.03,0.03     
+ 35S  dL $E5058 8                                                               
+ 35S  dL $F5058 7/2- 3 0.03,0.03                                                
  35S X L XREF=EF                                                                
  35S  cL J$ L(pol d,p)=3 and L+1/2 from analyzing powers                        
  35S   L 5127      10 (1/2:9/2)+                                                
- 35S  DL $E5126      11                                                         
- 35S  DL $F5126                                                                 
- 35S  DL $H5127      10                                  2                      
+ 35S  dL $E5126 11                                                              
+ 35S  dL $F5126                                                                 
+ 35S  dL $H5127 10 2                                                            
  35S X L XREF=EFH                                                               
  35S  cL J$ L(p,{+3}He)=2                                                       
  35S   L 5344      4  (1/2:11/2)-                                               
- 35S  DL $E5344      4                                                          
- 35S  DL $H5345      10                                  3                      
+ 35S  dL $E5344 4                                                               
+ 35S  dL $H5345 10 3                                                            
  35S X L XREF=EH                                                                
  35S  cL J$ L(p,{+3}He)=3                                                       
  35S   L 5475      10                                                          ?
- 35S  DL $E5475      10                                                        ?
+ 35S  dL $E5475 10 ?                                                            
  35S X L XREF=E                                                                 
  35S   L 5550      10 (1/2:11/2)(-)                                             
- 35S  DL $H5550      10                                  (3)                    
+ 35S  dL $H5550 10 (3)                                                          
  35S X L XREF=H                                                                 
  35S  cL J$ L(p,{+3}He)=(3)                                                     
  35S   L 5752.5    8  (1/2:9/2-)                                                
- 35S  DL $C5752.5    8                                                          
+ 35S  dL $C5752.5 8                                                             
  35S X L XREF=C                                                                 
  35S  cL J$ |g to 3/2+                                                          
  35S   G   5752.0  8  100                                                       
- 35S  DG $C5752.0    8  100                                                     
+ 35S  dG $C5752.0 8 100                                                         
  35S   L 5771      10 (1/2:9/2)+                                                
- 35S  DL $H5771      10                                  2                      
+ 35S  dL $H5771 10 2                                                            
  35S X L XREF=H                                                                 
  35S  cL J$ L(p,{+3}He)=2                                                       
  35S   L 5841.3    10 (1/2:7/2-)                                                
- 35S  cL E$Level not in 1990En08, but introduced in private                    
- 35S 2cL communication (S. Raman to P. M. Endt). This level is                  
- 35S 3cL populated by 1144.6|g from thermal neutron capture state               
- 35S 4cL (previously placed from 2717.1 level) and is depopulated by            
- 35S 5cL 4268.6|g (previously placed from thermal neutron capture               
- 35S 6cL state).                                                                
+ 35S  cL E$Level not in 1990En08, but introduced in private communication (S.   
+ 35S 2cL Raman to P. M. Endt). This level is populated by 1144.6|g from thermal 
+ 35S 3cL neutron capture state (previously placed from 2717.1 level) and is     
+ 35S 4cL depopulated by 4268.6|g (previously placed from thermal neutron capture
+ 35S 5cL state).                                                                
  35S X L XREF=C                                                                 
  35S  cL J$ |g to 1/2+                                                          
  35S   G   4268.65    100                                                       
  35S   L 5915      10                                                          ?
- 35S  DL $H5915      10                                  (2,3)                 ?
+ 35S  dL $H5915 10 (2,3) ?                                                      
  35S X L XREF=H                                                                 
  35S   L 5980      10                                                           
- 35S  DL $E5980      10                                                         
+ 35S  dL $E5980 10                                                              
  35S X L XREF=E                                                                 
  35S   L 6018.8     6 (1/2:9/2-)                                                
- 35S  DL $C6018.8    6                                                          
+ 35S  dL $C6018.8 6                                                             
  35S X L XREF=C                                                                 
  35S  cL J$ |g to 3/2+                                                          
  35S   G   6018.2  6  100                                                       
- 35S  DG $C6018.2    6  100                                                     
+ 35S  dG $C6018.2 6 100                                                         
  35S   L 6078.48    4 1/2-,3/2-                                                 
- 35S  DL $C6078.48    4                                                         
- 35S  DL $E6078.6    13                                  1        0.086,0.042 C 
+ 35S  dL $C6078.48 4                                                            
+ 35S  dL $E6078.6 13 1 0.086,0.042 C                                            
  35S X L XREF=CE                                                                
  35S  cL J$ L(d,p)=1                                                            
  35S   G   3139.9  5  22     7                                                  
- 35S  DG $C3139.9    5  22     7                                                
+ 35S  dG $C3139.9 5 22 7                                                        
  35S   G   6077.87 11 100    11                                                 
- 35S  DG $C6077.87   11 100    11                                               
+ 35S  dG $C6077.87 11 100 11                                                    
  35S   L 6129      10 (1/2,3/2,5/2)+                                            
- 35S  DL $H6129      10                                  0+2                    
+ 35S  dL $H6129 10 0+2                                                          
  35S X L XREF=H                                                                 
  35S  cL J$ L(p,{+3}He)=0+2                                                     
  35S   L 6293.93    6 (1/2:9/2-)                                                
- 35S  DL $C6293.93    6                                                         
- 35S  DL $E6292      8                                                          
+ 35S  dL $C6293.93 6                                                            
+ 35S  dL $E6292 8                                                               
  35S X L XREF=CE                                                                
  35S  cL J$ |g to 3/2+                                                          
  35S   G   6293.2  4  100                                                       
- 35S  DG $C6293.2    4  100                                                     
+ 35S  dG $C6293.2 4 100                                                         
  35S   L 6334      8                                                            
- 35S  DL $E6334      8                                                          
+ 35S  dL $E6334 8                                                               
  35S X L XREF=E                                                                 
  35S   L 6354.89   23 (1/2:9/2-)                                                
- 35S  DL $C6354.89   23                                                         
- 35S  DL $H6347      10                                  (2)                    
+ 35S  dL $C6354.89 23                                                           
+ 35S  dL $H6347 10 (2)                                                          
  35S X L XREF=CH                                                                
  35S  cL J$ |g to 3/2+                                                          
  35S   G   6355.0  6  100                                                       
- 35S  DG $C6355.0    6  100                                                     
+ 35S  dG $C6355.0 6 100                                                         
  35S   L 6419.9    11 (1/2:9/2-)                                                
- 35S  DL $C6419.9    11                                                         
+ 35S  dL $C6419.9 11                                                            
  35S X L XREF=C                                                                 
  35S  cL J$ |g to 3/2+                                                          
  35S   G   6419.3  11 100                                                       
- 35S  DG $C6419.3    11 100                                                     
+ 35S  dG $C6419.3 11 100                                                        
  35S   L 6446      8                                                            
- 35S  DL $E6446      8                                                          
+ 35S  dL $E6446 8                                                               
  35S X L XREF=E                                                                 
  35S   L 6496      8                                                            
- 35S  DL $E6496      8                                                          
+ 35S  dL $E6496 8                                                               
  35S X L XREF=E                                                                 
  35S   L 6537.7    14                                                           
- 35S  DL $E6537.7    14                                                         
+ 35S  dL $E6537.7 14                                                            
  35S X L XREF=E                                                                 
  35S   L 6545.1    13                                                           
- 35S  DL $E6545.1    13                                                         
+ 35S  dL $E6545.1 13                                                            
  35S X L XREF=E                                                                 
  35S   L 6584      10                                                           
- 35S  DL $E6584      10                                                         
+ 35S  dL $E6584 10                                                              
  35S X L XREF=E                                                                 
  35S   L 6629.43   10 (1/2:9/2-)                                                
- 35S  DL $C6629.43   10                                                         
+ 35S  dL $C6629.43 10                                                           
  35S X L XREF=C                                                                 
  35S  cL J$ |g to 3/2+                                                          
  35S   G   6628.5  6  100                                                       
- 35S  DG $C6628.5    6  100                                                     
+ 35S  dG $C6628.5 6 100                                                         
  35S   L 6635.2    13                                                           
- 35S  DL $E6635.2    13                                                         
+ 35S  dL $E6635.2 13                                                            
  35S X L XREF=E                                                                 
  35S   L 6654      10                                                           
- 35S  DL $H6654      10                                  (3)                    
+ 35S  dL $H6654 10 (3)                                                          
  35S X L XREF=H                                                                 
  35S   L 6684      9  (1/2:9/2)+                                                
- 35S  DL $E6677      8                                                          
- 35S  DL $H6696      10                                  2                      
+ 35S  dL $E6677 8                                                               
+ 35S  dL $H6696 10 2                                                            
  35S X L XREF=EH                                                                
  35S  cL J$ L(p,{+3}He)=2                                                       
  35S   L 6761.0    12 (1/2:9/2-)                                                
- 35S  DL $C6761.0    12                                                         
+ 35S  dL $C6761.0 12                                                            
  35S X L XREF=C                                                                 
  35S  cL J$ |g to 3/2+                                                          
  35S   G   6760.3  12 100                                                       
- 35S  DG $C6760.3    12 100                                                     
+ 35S  dG $C6760.3 12 100                                                        
  35S   L 6891.3    14                                                           
- 35S  DL $E6891.3    14                                                         
+ 35S  dL $E6891.3 14                                                            
  35S X L XREF=E                                                                 
  35S   L 6986.10    3   1/2+                                                   S
- 35S  DL $C6986.097  23                                                         
- 35S  DL $D6985.60      1/2+                             0        -0.305       ?
+ 35S  dL $C6986.097 23                                                          
+ 35S  dL $D6985.60 1/2+ 0 -0.305 ?                                              
  35S X L XREF=C                                                                 
- 35S  cL J$s-wave resonance capture state                                      
+ 35S  cL J$s-wave resonance capture state                                       
  35S   G 356.66    9  0.07   1                                                  
- 35S  DG $C356.66    9  0.07   1                                                
+ 35S  dG $C356.66 9 0.07 1                                                      
  35S   G 631.32    24 0.11   2                                                  
- 35S  DG $C631.32    24 0.11   2                                                
+ 35S  dG $C631.32 24 0.11 2                                                     
  35S   G 692.16    5  0.25   3                                                  
- 35S  DG $C692.16    5  0.25   3                                                
+ 35S  dG $C692.16 5 0.25 3                                                      
  35S   G 907.608   23 1.1    2                                                  
- 35S  DG $C907.608   23 1.1    2                                                
+ 35S  dG $C907.608 23 1.1 2                                                     
  35S   G 2022.954  9  18     1                                                  
- 35S  DG $C2022.954  9  18     1                                                
+ 35S  dG $C2022.954 9 18 1                                                      
  35S   G 2082.72   7  29     2                                                  
- 35S  DG $C2082.72   7  29     2                                                
+ 35S  dG $C2082.72 7 29 2                                                       
  35S   G 2508.39   8  0.7    1                                                  
- 35S  DG $C2508.39   8  0.7    1                                                
+ 35S  dG $C2508.39 8 0.7 1                                                      
  35S   G 2796.73   4  9.4    4                                                  
- 35S  DG $C2796.73   4  9.4    4                                                
+ 35S  dG $C2796.73 4 9.4 4                                                      
  35S   G 3183.84   9  11.1   6                                                  
- 35S  DG $C3183.84   9  11.1   6                                                
+ 35S  dG $C3183.84 9 11.1 6                                                     
  35S   G 4268.64   14 0.64   8                                                  
- 35S  DG $C4268.64   14 0.64   8                                                
+ 35S  dG $C4268.64 14 0.64 8                                                    
  35S   G 4637.87   8  100    4                                                  
- 35S  DG $C4637.87   8  100    4                                                
+ 35S  dG $C4637.87 8 100 4                                                      
  35S   G 6985.7    10 0.07   2                                                  
- 35S  DG $C6985.7    10 0.07   2                                                
+ 35S  dG $C6985.7 10 0.07 2                                                     
  35S   L 7018.95   4                                                            
- 35S  DL $D7018.95   4                                   [2]      34.03     1   
- 35S  DL $E7022      10                                                         
+ 35S  dL $D7018.95 4 [2] 34.03 1                                                
+ 35S  dL $E7022 10                                                              
  35S X L XREF=DE                                                                
  35S   L 7072.73   5                                                            
- 35S  DL $D7072.73   5                                            89.40     3   
+ 35S  dL $D7072.73 5 89.40 3                                                    
  35S X L XREF=D                                                                 
  35S   L 7074.39   6                                                            
- 35S  DL $D7074.39   6                                            91.12     4   
+ 35S  dL $D7074.39 6 91.12 4                                                    
  35S X L XREF=D                                                                 
  35S   L 7097.8    3                                                            
- 35S  DL $D7097.8    3                                   [2]      115.2     3   
+ 35S  dL $D7097.8 3 [2] 115.2 3                                                 
  35S X L XREF=D                                                                 
  35S   L 7099.91   20                                                           
- 35S  DL $D7099.91   20                                  [2]      117.4     2   
+ 35S  dL $D7099.91 20 [2] 117.4 2                                               
  35S X L XREF=D                                                                 
  35S   L 7100.79   4 3/2                                                        
- 35S  DL $D7100.79   4 3/2                               [1]      118.30    1   
+ 35S  dL $D7100.79 4 3/2 [1] 118.30 1                                           
  35S X L XREF=D                                                                 
  35S  cL J$ R-Matrix analysis of resonances in (n,n)                            
  35S   L 7143.33   11                                                           
- 35S  DL $D7143.33   11                                  [2]      162.1     1 A 
- 35S  DL $H7151      10                                  (4)                   ?
+ 35S  dL $D7143.33 11 [2] 162.1 1 A                                             
+ 35S  dL $H7151 10 (4) ?                                                        
  35S X L XREF=DH                                                                
  35S   L 7210.49   5                                                            
- 35S  DL $D7210.49   5                                   [2]      231.25    2   
+ 35S  dL $D7210.49 5 [2] 231.25 2                                               
  35S X L XREF=D                                                                 
  35S   L 7218.1    4                                                            
- 35S  DL $D7218.1    4                                   [2]      239.0     4   
+ 35S  dL $D7218.1 4 [2] 239.0 4                                                 
  35S X L XREF=D                                                                 
  35S   L 7234.0    5                                                            
- 35S  DL $D7234.0    5                                   [2]      255.5     5   
+ 35S  dL $D7234.0 5 [2] 255.5 5                                                 
  35S X L XREF=D                                                                 
  35S   L 7239.9    6                                                            
- 35S  DL $D7239.9    6                                   [2]      261.5     6   
+ 35S  dL $D7239.9 6 [2] 261.5 6                                                 
  35S X L XREF=D                                                                 
  35S   L 7253.2    6                                                            
- 35S  DL $D7253.2    6                                   [2]      275.3     6   
+ 35S  dL $D7253.2 6 [2] 275.3 6                                                 
  35S X L XREF=D                                                                 
  35S   L 7275.99   5  1/2+                                                      
- 35S  DL $D7275.99   5  1/2                              0        298.70    3   
+ 35S  dL $D7275.99 5 1/2 0 298.70 3                                             
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=0                                                            
  35S   L 7279                                                                   
- 35S  DL $D7279                                                   302           
+ 35S  dL $D7279 302                                                             
  35S X L XREF=D                                                                 
  35S   L 7289.9    8                                                            
- 35S  DL $D7289.9    8                                   [2]      313.0     8   
+ 35S  dL $D7289.9 8 [2] 313.0 8                                                 
  35S X L XREF=D                                                                 
  35S   L 7294.26   7 3/2-                                                       
- 35S  DL $D7294.26   7  3/2                              1        317.51    5   
+ 35S  dL $D7294.26 7 3/2 1 317.51 5                                             
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 7331.06   5  1/2+                                                      
- 35S  DL $D7331.06   5  1/2                              0        355.41    2   
+ 35S  dL $D7331.06 5 1/2 0 355.41 2                                             
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=0                                                            
  35S   L 7338.24   20                                                           
- 35S  DL $D7338.24   20                                  [1]      362.8     2   
+ 35S  dL $D7338.24 20 [1] 362.8 2                                               
  35S X L XREF=D                                                                 
  35S   L 7343.97   20                                                           
- 35S  DL $D7343.97   20                                  [2]      368.7     2   
+ 35S  dL $D7343.97 20 [2] 368.7 2                                               
  35S X L XREF=D                                                                 
  35S   L 7347.3    5                                                            
- 35S  DL $D7347.3    5                                   [2]      372.1     5   
+ 35S  dL $D7347.3 5 [2] 372.1 5                                                 
  35S X L XREF=D                                                                 
  35S   L 7348.0    5                                                            
- 35S  DL $D7348.0    5                                   [2]      372.8     5   
+ 35S  dL $D7348.0 5 [2] 372.8 5                                                 
  35S X L XREF=D                                                                 
  35S   L 7353.9    5                                                            
- 35S  DL $D7353.9    5                                   [2]      379.0     5   
+ 35S  dL $D7353.9 5 [2] 379.0 5                                                 
  35S X L XREF=D                                                                 
  35S   L 7357.6    5                                                            
- 35S  DL $D7357.6    5                                   [2]      382.8     5   
+ 35S  dL $D7357.6 5 [2] 382.8 5                                                 
  35S X L XREF=D                                                                 
  35S   L 7370.63   6 1/2-                                                       
- 35S  DL $D7370.63   6 1/2                               1        396.14    4   
+ 35S  dL $D7370.63 6 1/2 1 396.14 4                                             
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 7375      10                                                           
- 35S  DL $D7372.0                                                 397.6         
- 35S  DL $H7375      10                                                        ?
+ 35S  dL $D7372.0 397.6                                                         
+ 35S  dL $H7375 10 ?                                                            
  35S X L XREF=DH                                                                
  35S   L 7396.0    6                                                            
- 35S  DL $D7396.0    6                                   [2]      422.3     6   
+ 35S  dL $D7396.0 6 [2] 422.3 6                                                 
  35S X L XREF=D                                                                 
  35S   L 7404.7    6                                                            
- 35S  DL $D7404.7    6                                   [2]      431.2     6   
+ 35S  dL $D7404.7 6 [2] 431.2 6                                                 
  35S X L XREF=D                                                                 
  35S   L 7408.76   11 3/2-                                                      
- 35S  DL $D7408.76   11 3/2                              1        435.4     1   
+ 35S  dL $D7408.76 11 3/2 1 435.4 1                                             
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 7411.62   7                                                            
- 35S  DL $D7411.62   7                                   [2]      438.35    5   
+ 35S  dL $D7411.62 7 [2] 438.35 5                                               
  35S X L XREF=D                                                                 
  35S   L 7416.57   4                                                            
- 35S  DL $D7416.57   4                                   [2]      443.45    1   
+ 35S  dL $D7416.57 4 [2] 443.45 1                                               
  35S X L XREF=D                                                                 
  35S   L 7429.1    6                                                            
- 35S  DL $D7429.1    6                                   [2]      456.4     6   
+ 35S  dL $D7429.1 6 [2] 456.4 6                                                 
  35S X L XREF=D                                                                 
  35S   L 7433.63   5                                                            
- 35S  DL $D7433.63   5                                   [2]      461.01    2   
+ 35S  dL $D7433.63 5 [2] 461.01 2                                               
  35S X L XREF=D                                                                 
  35S   L 7436.4    4                                                            
- 35S  DL $D7436.4    4                                   [1]      463.9     4   
+ 35S  dL $D7436.4 4 [1] 463.9 4                                                 
  35S X L XREF=D                                                                 
  35S   L 7442.21   5 1/2+                                                       
- 35S  DL $D7442.21   5 1/2                               0        469.85    2   
+ 35S  dL $D7442.21 5 1/2 0 469.85 2                                             
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=0                                                            
  35S   L 7462.3    6                                                            
- 35S  DL $D7462.3    6                                   [2]      490.5     6   
+ 35S  dL $D7462.3 6 [2] 490.5 6                                                 
  35S X L XREF=D                                                                 
  35S   L 7481.22   7 1/2-                                                       
- 35S  DL $D7481.22   6 1/2                               1        510.02    4   
- 35S  DL $E7482.7    13                                                         
+ 35S  dL $D7481.22 6 1/2 1 510.02 4                                             
+ 35S  dL $E7482.7 13                                                            
  35S X L XREF=DE                                                                
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 7494.7    6                                                            
- 35S  DL $D7494.7    6                                   [2]      523.8     6   
+ 35S  dL $D7494.7 6 [2] 523.8 6                                                 
  35S X L XREF=D                                                                 
  35S   L 7542.4    6                                                            
- 35S  DL $D7542.4    6                                   [2]      573.0     6   
+ 35S  dL $D7542.4 6 [2] 573.0 6                                                 
  35S X L XREF=D                                                                 
  35S   L 7604.1    6                                                            
- 35S  DL $D7604.1    6                                   [2]      636.5     6   
+ 35S  dL $D7604.1 6 [2] 636.5 6                                                 
  35S X L XREF=D                                                                 
  35S   L 7609.33   5 3/2-                                                       
- 35S  DL $D7609.33   5 3/2                               1        641.93    3   
+ 35S  dL $D7609.33 5 3/2 1 641.93 3                                             
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 7649.0    6                                                            
- 35S  DL $D7649.0    6                                   [2]      682.7     6   
+ 35S  dL $D7649.0 6 [2] 682.7 6                                                 
  35S X L XREF=D                                                                 
  35S   L 7655.7    6                                                            
- 35S  DL $D7655.7    6                                   [2]      689.7     6   
+ 35S  dL $D7655.7 6 [2] 689.7 6                                                 
  35S X L XREF=D                                                                 
  35S   L 7663.98   11                                                           
- 35S  DL $D7663.98   11                                  [2]      698.2     1   
+ 35S  dL $D7663.98 11 [2] 698.2 1                                               
  35S X L XREF=D                                                                 
  35S   L 7678.4    7                                                            
- 35S  DL $D7678.4    7                                   [2]      713.0     7   
+ 35S  dL $D7678.4 7 [2] 713.0 7                                                 
  35S X L XREF=D                                                                 
  35S   L 7712      10 (3/2:13/2)+                                              ?
- 35S  DL $H7712      10                                  4                     ?
+ 35S  dL $H7712 10 4 ?                                                          
  35S X L XREF=H                                                                 
  35S  cL J$ L(p,{+3}He)=4                                                       
  35S   L 7731.1    7                                                            
- 35S  DL $D7731.1    7                                   [2]      767.3     7   
+ 35S  dL $D7731.1 7 [2] 767.3 7                                                 
  35S X L XREF=D                                                                 
  35S   L 7749.8    4                                                            
- 35S  DL $D7749.8    4                                   [1]      786.5     4   
+ 35S  dL $D7749.8 4 [1] 786.5 4                                                 
  35S X L XREF=D                                                                 
  35S   L 7761.53   7 3/2-                                                       
- 35S  DL $D7761.53   7 3/2                               1        798.65    6   
+ 35S  dL $D7761.53 7 3/2 1 798.65 6                                             
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 7776.25   11 1/2-                                                      
- 35S  DL $D7776.25   11 1/2                              1        813.8     1   
- 35S  DL $H7770      10                                                         
+ 35S  dL $D7776.25 11 1/2 1 813.8 1                                             
+ 35S  dL $H7770 10                                                              
  35S X L XREF=DH                                                                
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 7798.07   9 1/2+                                                       
- 35S  DL $D7798.07   9 1/2                               0        836.27    8   
+ 35S  dL $D7798.07 9 1/2 0 836.27 8                                             
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=0                                                            
  35S   L 7812.32   7 3/2+                                                       
- 35S  DL $D7812.32   7 3/2                               2        850.94    6   
+ 35S  dL $D7812.32 7 3/2 2 850.94 6                                             
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=2 and R-Matrix analysis of resonances in (n,n)               
  35S   L 7853.33   7 3/2-                                                       
- 35S  DL $D7853.33   7 3/2                               1        893.17    6   
+ 35S  dL $D7853.33 7 3/2 1 893.17 6                                             
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 7861.9    12                                                           
- 35S  DL $D7861.9    12                                  [2]      902.0     12  
+ 35S  dL $D7861.9 12 [2] 902.0 12                                               
  35S X L XREF=D                                                                 
  35S   L 7880.8    12                                                           
- 35S  DL $D7880.8    12                                  [2]      921.5     12  
+ 35S  dL $D7880.8 12 [2] 921.5 12                                               
  35S X L XREF=D                                                                 
  35S   L 7889.1    12                                                           
- 35S  DL $D7889.1    12                                  [2]      930.0     12  
+ 35S  dL $D7889.1 12 [2] 930.0 12                                               
  35S X L XREF=D                                                                 
  35S   L 7894.71   7 3/2-                                                       
- 35S  DL $D7894.71   7 3/2                               1        935.78    6   
+ 35S  dL $D7894.71 7 3/2 1 935.78 6                                             
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 7899.8    3                                                            
- 35S  DL $D7899.8    3                                   [2]      941.0     3   
+ 35S  dL $D7899.8 3 [2] 941.0 3                                                 
  35S X L XREF=D                                                                 
  35S   L 7934.2    15                                                           
- 35S  DL $D7934.2    15                                  [2]      976.4     15  
+ 35S  dL $D7934.2 15 [2] 976.4 15                                               
  35S X L XREF=D                                                                 
  35S   L 7939.6    15                                                           
- 35S  DL $D7939.6    15                                  [2]      982.0     15  
+ 35S  dL $D7939.6 15 [2] 982.0 15                                               
  35S X L XREF=D                                                                 
  35S   L 7955.05   11 3/2-                                                      
- 35S  DL $D7955.05   11 3/2                              1        997.9     1   
+ 35S  dL $D7955.05 11 3/2 1 997.9 1                                             
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 7974.27   11 3/2-                                                      
- 35S  DL $D7974.27   11 3/2                              1        1017.7    1   
+ 35S  dL $D7974.27 11 3/2 1 1017.7 1                                            
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 8019.63   20                                                           
- 35S  DL $D8019.63   20                                  [2]      1064.4    2   
+ 35S  dL $D8019.63 20 [2] 1064.4 2                                              
  35S X L XREF=D                                                                 
  35S   L 8041.29   20                                                           
- 35S  DL $D8041.29   20                                  [2]      1086.7    2   
+ 35S  dL $D8041.29 20 [2] 1086.7 2                                              
  35S X L XREF=D                                                                 
  35S   L 8076.54   20                                                           
- 35S  DL $D8076.54   20                                  [2]      1123.0    2   
+ 35S  dL $D8076.54 20 [2] 1123.0 2                                              
  35S X L XREF=D                                                                 
  35S   L 8078.0    3                                                            
- 35S  DL $D8078.0    3                                   [2]      1124.5    3   
+ 35S  dL $D8078.0 3 [2] 1124.5 3                                                
  35S X L XREF=D                                                                 
  35S   L 8093.0    5 1/2-                                                       
- 35S  DL $D8093.0    5 1/2                               1        1140.0    5   
- 35S  DL $H8103      10                                  (1+3)                  
+ 35S  dL $D8093.0 5 1/2 1 1140.0 5                                              
+ 35S  dL $H8103 10 (1+3)                                                        
  35S X L XREF=DH                                                                
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 8143.75   20                                                           
- 35S  DL $D8143.75   20                                  [2]      1192.2    2   
+ 35S  dL $D8143.75 20 [2] 1192.2 2                                              
  35S X L XREF=D                                                                 
  35S   L 8160      10 (1/2:7/2)(-)                                              
- 35S  DL $H8160      10                                  (1)                    
+ 35S  dL $H8160 10 (1)                                                          
  35S X L XREF=H                                                                 
  35S  cL J$ L(p,{+3}He)=(1)                                                     
  35S   L 8187.2    3 1/2-                                                       
- 35S  DL $D8187.2    3 1/2                               1        1237.0    3   
+ 35S  dL $D8187.2 3 1/2 1 1237.0 3                                              
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 8211.3    3                                                            
- 35S  DL $D8211.3    3                                   [1]      1261.8    3   
+ 35S  dL $D8211.3 3 [1] 1261.8 3                                                
  35S X L XREF=D                                                                 
  35S   L 8224.3    4 1/2-                                                       
- 35S  DL $D8224.3    4 1/2                               1        1275.1    4   
+ 35S  dL $D8224.3 4 1/2 1 1275.1 4                                              
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 8228.5    4                                                            
- 35S  DL $D8228.5    4                                   [2]      1279.4    4   
+ 35S  dL $D8228.5 4 [2] 1279.4 4                                                
  35S X L XREF=D                                                                 
  35S   L 8244.1    3                                                            
- 35S  DL $D8244.1    3                                   [2]      1295.5    3   
+ 35S  dL $D8244.1 3 [2] 1295.5 3                                                
  35S X L XREF=D                                                                 
  35S   L 8256.41   20 3/2-                                                      
- 35S  DL $D8256.41   20 3/2                              1        1308.2    2   
+ 35S  dL $D8256.41 20 3/2 1 1308.2 2                                            
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 8262.5    4  5/2+                                                      
- 35S  DL $D8262.5    4  5/2                              2        1314.5    4   
+ 35S  dL $D8262.5 4 5/2 2 1314.5 4                                              
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=2 and R-Matrix analysis of resonances in (n,n)               
  35S   L 8273.4    4   1/2                                                      
- 35S  DL $D8273.4    4 1/2                               [1]      1325.7    4   
+ 35S  dL $D8273.4 4 1/2 [1] 1325.7 4                                            
  35S X L XREF=D                                                                 
  35S  cL J$ R-Matrix analysis of resonances in (n,n)                            
  35S   L 8298.3    3                                                            
- 35S  DL $D8298.3    3                                   [2]      1351.4    3   
+ 35S  dL $D8298.3 3 [2] 1351.4 3                                                
  35S X L XREF=D                                                                 
  35S   L 8333.9    4 3/2-                                                       
- 35S  DL $D8333.9    4 3/2                               1        1388.0    4   
+ 35S  dL $D8333.9 4 3/2 1 1388.0 4                                              
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 8336.0    4                                                            
- 35S  DL $D8336.0    4                                   [2]      1390.1    4   
+ 35S  dL $D8336.0 4 [2] 1390.1 4                                                
  35S X L XREF=D                                                                 
  35S   L 8391.4    4 3/2-                                                       
- 35S  DL $D8391.4    4 3/2                               1        1447.2    4   
+ 35S  dL $D8391.4 4 3/2 1 1447.2 4                                              
  35S X L XREF=D                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n)               
  35S   L 8393.8    3                                                            
- 35S  DL $D8393.8    3                                   [2]      1449.6    3   
+ 35S  dL $D8393.8 3 [2] 1449.6 3                                                
  35S X L XREF=D                                                                 
  35S   L 8406.6    3                                                            
- 35S  DL $D8406.6    3                                   [2]      1462.9    3   
+ 35S  dL $D8406.6 3 [2] 1462.9 3                                                
  35S X L XREF=D                                                                 
  35S   L 8418.9    5 (1/2:9/2)+                                                 
- 35S  DL $D8418.9    4                                   [2]      1475.5    4   
- 35S  DL $H8430      10                                  2                      
+ 35S  dL $D8418.9 4 [2] 1475.5 4                                                
+ 35S  dL $H8430 10 2                                                            
  35S X L XREF=DH                                                                
  35S  cL J$ L(p,{+3}He)=2                                                       
  35S   L 9155      10 (1/2:9/2)+                                                
- 35S  DL $H9155      10                                  2                      
+ 35S  dL $H9155 10 2                                                            
  35S 2 L ISPIN=5/2                                                              
  35S X L XREF=H                                                                 
  35S  cL J$ L(p,{+3}He)=2                                                       
-                                                                                
+

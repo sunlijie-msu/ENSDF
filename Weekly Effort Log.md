@@ -64,7 +64,12 @@ Coauthored a paper in Nucl. Phys. Rev. on 22Na+p elastic scattering in inverse k
 Lijie Sun – 15 June 2025 - 21 June 2025
 Received training from my line manager regarding the A=35 evaluation and data consistency check. Added 34Si(d,n)35P, 36Ar(3He,a)35Ar, 34Si(d,p)35Si, 208Pb(36S,35Si) reaction datasets and updated their Adopted datasets accordingly. Added 4 reaction datasets for 35S.
 
+Lijie Sun – 22 June 2025 - 28 June 2025
+Received training from my line manager regarding the A=35 evaluation. Added 6 reaction datasets for 35S. Reviewed 1 paper submitted to Scientific Reports for data consistency.
 
+
+Prompt tuning vs. fine tuning:
+What's the difference between prompt tuning and fine tuning? Really good way to think about it is, in fine tuning, you're actually rewiring the brain of the model, versus in prompt tuning, you're just giving the LLM better instructions. Prompt tuning helps LLMs perform better on a specific task without having to retrain the entire model, and this is done by creating something called a soft prompt. A prompt is essentially like instruction manual for how the LLM should respond to your request, instead of having to go back and retrain the entire model, like when you are fine tuning. Instead, you can give the LLM a couple of examples, and it will learn from those examples that you've given. Sometimes soft prompts can be really hard to interpret, but they are a really great way to teach an LLM how to pick up a new task relatively easily and efficiently. Fine tuning, on the other hand, is a lot more expensive because think about it like you're trying to rewire and retrain the entire brain of the machine learning model. One thing that you can't do with prompt tuning, that you can do with fine tuning, though, is that you're changing the internal parameters, like the weights and biases of the actual model itself, which is why a lot of companies now are opting to prompt tune instead of fine tune, especially if it's a small task that needs to get achieved, fine tuning is going to be a lot more expensive, because you're going to need all of that compute power to actually retrain all of the model and data.
 
 # FRIB Laboratory Activities
 
@@ -101,6 +106,6 @@ Explore the use of AI agent within VS Code to streamline and automate the ENSDF-
 ### Collaborations
 - **FRIENDS Support**: Actively participated in the FRIENDS project to provide integral experimental nuclear data services to FRIB users.
 - **FRIB Laboratory**: Collaborated with the Wrede Group to conduct PAC approved experiments.
-- **USNDP**: Worked closely with the U.S. Nuclear Data Program to align efforts and share resources.
-- **NSDD**: Engaged with the International Network of Nuclear Structure and Decay Data evaluators to ensure global standards and practices in nuclear data evaluation.
+- **USNDP**: Worked closely with the U.S. Nuclear Data Program to align efforts and share resources. Contributed to NSR.
+- **NSDD**: Engaged with the International Network of Nuclear Structure and Decay Data evaluators to ensure global standards and practices in nuclear data evaluation. Contributed to X4PDF.
 - **BEApR**: Communicated data issues and collaborated on data consistency checks with BEApR evaluators at Berkeley.
