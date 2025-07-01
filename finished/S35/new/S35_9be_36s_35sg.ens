@@ -1,7 +1,7 @@
-35S     9BE(36S,35SG)                 2015MUZY                  ENSDF    202509
+ 35S     9BE(36S,35SG)                 2015MUZY                  ENSDF    202509
  35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
  35S 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
- 35S  dL E$Least-squares fitting is done by GLSC (version 17-Jan-2025)          
+ 35S  dL E$Least-squares fitting is done by GLSC (version 03-Jun-2025)          
  35S  c  J|p=0+ for {+36}S ground state.                                        
  35S  c  2015MuZY: A secondary beam {+36}S was produced via the projectile      
  35S 2c  fragmentation of a 140-MeV/nucleon {+48}Ca primary beam impinging on a 
@@ -22,9 +22,12 @@
  35S Hc  the fractional populations and parallel momentum distributions of 11   
  35S Ic  populated states in {+35}S residues. Deduced levels, J, |p,            
  35S Jc  L-transfers, partial knockout cross sections and spectroscopic factors.
- 35S Kc  Calculated single-particle cross sections (|s{-sp}) for proton removal 
+ 35S Kc  Calculated single-particle cross sections (|s{-sp}) for neutron removal
  35S Lc  and parallel momentum distributions using the eikonal model.           
- 35S Mc
+ 35S Mc                                                                         
+ 35S  cG E$Evaluators assume |g-ray energy uncertainties based on the statement 
+ 35S 2cG in 2016Mu03 that |g-ray energy centroids were determined with an       
+ 35S 3cG uncertainty of 2 keV.                                                  
  35S  cL $The inclusive cross section |s{-inc}{+exp} for producing {+35}S from  
  35S 2cL {+36}S is measured to be 63.7 mb {I6}.                                 
  35S  cL E$From a least-squares fit to |g-ray energies.                         
@@ -40,28 +43,36 @@
  35S  cL S$LABEL=C{+2}S                                                         
  35S   L 0.0          3/2+                             2        3.2       7     
  35S  cL $b{-f}=43.3% {I47}, |s{-f}{+sp}=13.1 mb, R{-s}=0.66 {I13}.             
- 35S   L 1572      1  1/2+                             0        1.1       3     
+ 35S   L 1575      2  1/2+                             0        1.1       3     
  35S  cL $b{-f}=18.6% {I31}, |s{-f}{+sp}=16.1 mb, R{-s}=0.64 {I13}.             
  35S   G 1576      2                                                            
- 35S   L 
- 35S  cL $----------------------------------------------------------------------
- 35S  cL $ Experimental spectroscopic factors for {+35}S from {+36}S(|-1n){+35}S
- 35S  cL $ (single-neutron removal from {+36}S), from 2015MuZY, Table 5.4.
- 35S  cL $ Energies, orbital angular momenta (L), population fractions (b{-f}),
- 35S  cL $ exclusive cross sections (b{-f}|*|s{-inc}{+exp}), single-particle cross
- 35S  cL $ sections (|s{-sp}), ratio factors (R{-s}), and normalized spectroscopic
- 35S  cL $ factors (C{+2}S{+exp}{-norm}) for states populated in {+36}S(|-1n){+35}S.
- 35S  cL $
- 35S  cL $  E(keV)  L  b{-f}(%)    b{-f}|*|s{-inc}{+exp}(mb)  |s{-sp}(mb)  R{-s}    C{+2}S{+exp}{-norm}
- 35S  cL $  0       2  43.3(4.7)   27.6(3.0)                  13.1        0.66(13) 3.2(7)
- 35S  cL $  1572    0  18.6(3.1)   11.8(2.0)                  16.1        0.64(13) 1.1(3)
- 35S  cL $  1990    3  0.0(2.9)    0.0(1.8)                   12.7        0.69(14) 0.0(2)
- 35S  cL $  2348    1  5.3(1.3)    3.4(8)                     13.1        0.70(14) 0.4(1)
- 35S  cL $  2717    2  6.4(1.6)    4.1(1.0)                   11.4        0.62(12) 0.6(2)
- 35S  cL $  2939    0  5.7(1.6)    3.6(1.0)                   13.5        0.61(12) 0.4(2)
- 35S  cL $  3421    2  5.1(1.0)    3.2(6)                     11.0        0.61(12) 0.5(1)
- 35S  cL $  3595    2  3.0(7)      1.9(4)                     11.0        0.60(12) 0.3(1)
- 35S  cL $  3818    3  4.0(9)      2.5(6)                     11.8        0.72(14) 0.3(1)
- 35S  cL $  3890    0  2.3(5)      1.5(3)                     13.5        0.72(14) 0.15(4)
- 35S  cL $  4025    2  6.4(1.0)    4.1(6)                     12.1        0.60(12) 0.6(1)
- 35S  cL $----------------------------------------------------------------------
+ 35S   L 1991      2  7/2-                             3        0.2       LT    
+ 35S  cL $b{-f}<2.9%, |s{-f}{+sp}=12.7 mb, R{-s}=0.69 {I14}.                    
+ 35S   G 1990      2                                                           ?
+ 35S   L 2353      2  3/2-                             1        0.4       1     
+ 35S  cL $b{-f}=5.3% {I13}, |s{-f}{+sp}=13.1 mb, R{-s}=0.70 {I14}.              
+ 35S   G 778       2                                                            
+ 35S   G 2352      2                                                            
+ 35S   L 2720      2  5/2+                             2        0.6       2     
+ 35S  cL $b{-f}=6.4% {I16}, |s{-f}{+sp}=11.4 mb, R{-s}=0.62 {I12}.              
+ 35S   G 2720      2                                                            
+ 35S   L 2943      2  1/2+                             0        0.4       2     
+ 35S  cL $b{-f}=5.7% {I16}, |s{-f}{+sp}=13.5 mb, R{-s}=0.61 {I12}.              
+ 35S   G 2943      2                                                            
+ 35S   L 3425      2  5/2+                             2        0.5       1     
+ 35S  cL $b{-f}=5.1% {I10}, |s{-f}{+sp}=11.0 mb, R{-s}=0.61 {I12}.              
+ 35S   G 3425      2                                                            
+ 35S   L 3602      2                                   2        0.3       1     
+ 35S  cL $b{-f}=3.0% {I7}, |s{-f}{+sp}=11.0 mb, R{-s}=0.60 {I12}.               
+ 35S   G 3602      2                                                            
+ 35S   L 3821      3                                   3        0.3       1     
+ 35S  cL $b{-f}=4.0% {I9}, |s{-f}{+sp}=11.8 mb, R{-s}=0.72 {I14}.               
+ 35S   G 1830      2                                                            
+ 35S   L 3895      3  1/2+                             0        0.15      4     
+ 35S  cL $b{-f}=2.3% {I5}, |s{-f}{+sp}=13.5 mb, R{-s}=0.72 {I14}.               
+ 35S   G 1542      2                                                            
+ 35S   L 4028      2                                   2        0.6       1     
+ 35S  cL $b{-f}=6.4% {I10}, |s{-f}{+sp}=12.1 mb, R{-s}=0.60 {I12}.              
+ 35S   G 1309      2                                                            
+ 35S   G 2037      2                                                            
+

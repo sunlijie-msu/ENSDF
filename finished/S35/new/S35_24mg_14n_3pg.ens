@@ -16,8 +16,9 @@
  35S Bc  calculations.                                                          
  35S  cG $R{-ADO}=[I|g(34|')+I|g(146|')]/2I|g(90|'). Expected values are 0.8 for
  35S 2cG stretched dipole (|DJ=1) and 1.4 for stretched quadrupole (|DJ=2) or   
- 35S 3cG unstretched dipole (DJ=0) transitions.                                 
- 35S  cG M,MR$From |g(|q) and |g|g(|q)(ADO) data in 2014Ay01.                   
+ 35S 3cG unstretched dipole (|DJ=0) transitions.                                
+ 35S  cG M,MR$From |g(|q), |g|g(|q)(ADO) data, and RUL when T{-1/2} is available
+ 35S 2cG in 2014Ay01.                                                           
  35S  cL E$From a least-squares fit to |g-ray energies.                         
  35S  cL J$As given in 2014Ay01, which quotes the known J|p assignments for four
  35S 2cL low-lying levels at 1572, 1991, 2347, and 2717 from 2011Ch48. 2014Ay01 
@@ -42,15 +43,13 @@
  35S   G 2347.8    3  3.8    3                                                  
  35S   L 2717.1    3  5/2+                                                      
  35S   G 2717.0    4  0.5    3                                                  
- 35S  cG M$Assigned by evaluators based on the known J|p.                       
  35S   L 3594.7    3  7/2+                                                  B   
  35S   G 877.6     5  0.4    1                                                  
  35S   G 3594.7    7  4.3    4  Q                                               
  35S  cG $R{-ADO}=1.36 {I16}.                                                   
  35S   L 3816.0    3  9/2-             0.28 PS   3                          A   
  35S   G 1824.6    2  24.9   15 M1+E2    +0.55   9                              
- 35S 2 G A2=+0.48 4$ A4=+0.08 6                                                 
- 35S  cG $R{-ADO}=1.58 {I5}.                                                    
+ 35S  cG $R{-ADO}=1.58 {I5}, A{-2}=+0.48 {I4}, A{-4}=+0.08 {I6}                 
  35S B G BM1W=0.0099 +14-12 $BE2W=3.4 +10-9                                     
  35S   L 3886.4    4  5/2+                                                      
  35S   G 1538.4    8  0.5    2                                                  
@@ -59,12 +58,11 @@
  35S   L 4023.2    3  11/2-            0.32 PS   3                          A   
  35S   G 207.0     5  0.4    2                                                  
  35S   G 2031.8    3  68     4  E2                                              
- 35S 2 G A2=+0.29 4$ A4=-0.10 6                                                 
- 35S  cG $R{-ADO}=1.41 {I10}.                                                   
+ 35S  cG $R{-ADO}=1.41 {I10}, A{-2}=+0.29 {I4}, A{-4}=-0.10 {I6}.               
  35S B G BE2W=7.5 +8-7                                                          
  35S   L 4822.9    3  9/2+                                                      
  35S   G 1006.8    2  0.8    1  D                                               
- 35S  cG $R{-ADO}=1.37 {I11}.                                                   
+ 35S  cG $R{-ADO}=1.37 {I11}, consistent with |DJ=0.                            
  35S   G 1228.1    3  1.1    1  D                                               
  35S  cG $R{-ADO}=0.78 {I9}.                                                    
  35S   G 2831.4    9  0.4    1                                                  
@@ -73,12 +71,12 @@
  35S   G 2908.3    5  1.1    2  D                                               
  35S  cG $R{-ADO}=0.74 {I14}.                                                   
  35S   L 5010.2    3  11/2-            0.45 PS   8                              
- 35S   G 986.9     3  4.4    2  M1                                              
- 35S  cG $R{-ADO}=1.30 {I13}.                                                   
- 35S B G BM1W=0.036 +8-6                                                        
+ 35S   G 986.9     3  4.4    2  D                                               
+ 35S  cG $R{-ADO}=1.30 {I13}, consistent with |DJ=0.                            
+ 35S B G BE1W=0.00102 +22-16 $BM1W=0.036 +8-6                                   
  35S   G 3018.5    7  1.9    2  E2                                              
  35S  cG $R{-ADO}=1.35 {I34}.                                                   
- 35S B G BE2W=0.22 +5-4                                                         
+ 35S B G BE2W=0.223 +49-39                                                      
  35S   L 5412.2    3  9/2+                                                      
  35S   G 1389.0    4  3.9    4  D                                               
  35S  cG $R{-ADO}=0.79 {I11}.                                                   
@@ -88,7 +86,7 @@
  35S   G 465.3     3  1.2    1  D                                               
  35S  cG $R{-ADO}=0.71 {I9}.                                                    
  35S   G 867.3     3  1.9    1  D                                               
- 35S  cG $R{-ADO}=1.36 {I20}.                                                   
+ 35S  cG $R{-ADO}=1.36 {I20}, consistent with |DJ=0.                            
  35S   G 977.8     3  1.6    1  D+Q                                             
  35S  cG $R{-ADO}=1.43 {I16}.                                                   
  35S   G 1054.5    3  3.0    2  D                                               
@@ -114,11 +112,9 @@
  35S   G 827.8     6  0.3    1                                                  
  35S   G 880.2     4  0.8    1                                                  
  35S   G 1302.2    2  13.5   8  E2                                              
- 35S 2 G A2=+0.27 5$ A4=-0.07 5                                                 
- 35S  cG $R{-ADO}=1.40 {I5}.                                                    
- 35S B G BE2W=6.6 +41-19                                                        
+ 35S  cG $R{-ADO}=1.40 {I5}, A{-2}=+0.27 {I5}, A{-4}=-0.07 {I5}.                
+ 35S B G BE2W=6.6 +42-19                                                        
  35S   L 8023.7    9  17/2+            0.15 PS   4                          B   
  35S   G 843.9     8  1.6    2  D                                               
  35S  cG $R{-ADO}=0.8 {I3}.                                                     
- 35S B G BM1W=0.24 +9-5                                                         
 
