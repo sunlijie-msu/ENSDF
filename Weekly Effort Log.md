@@ -97,7 +97,7 @@ Since 2015, the MSU Nuclear Data Center has been consistently recognized as one 
 - **Output**: Reviewed 1 PRC paper
 
 ### Technical Development
-Explore the use of AI agent within VS Code to streamline and automate the ENSDF-evaluation process
+Explore the use of AI agent within VS Code to streamline and automate the workflow by prompt tuning the agent to assist in data evaluation tasks. This includes automating repetitive tasks, enhancing data consistency checks, and improving overall efficiency in data processing.
 
 ### Research
 - **Period**: Since Feb 2025
