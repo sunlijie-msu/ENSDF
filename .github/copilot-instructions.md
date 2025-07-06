@@ -16,7 +16,7 @@
 **TRIGGER PHRASES**: "not aligned", "wrong columns", "header formatting", "80 characters"
 
 **IMMEDIATE RESPONSE**:
-1. Run `python .vscode/column_calibrate.py "filename" --header` 
+1. Run `python .github/column_calibrate.py "filename" --header` 
 2. Use visual ruler technique for manual verification
 3. Compare with reference ENSDF files
 4. Apply ENSDF manual field specifications:
@@ -34,8 +34,8 @@
 ### "Self-Calibrate Columns" 
 Execute column validation on current ENSDF file:
 - **PowerShell**: `.\column-calibrate.ps1 "currentfile.ens"` (add `-Detailed` for character mapping)
-- **Python**: `python .vscode/column_calibrate.py "currentfile.ens"` (add `--detailed` for character mapping)
-- **Quick Header Check**: `python .vscode/column_calibrate.py "currentfile.ens" --header`
+- **Python**: `python .github/column_calibrate.py "currentfile.ens"` (add `--detailed` for character mapping)
+- **Quick Header Check**: `python .github/column_calibrate.py "currentfile.ens" --header`
 
 **CRITICAL 80-Column Debugging Technique**:
 When dealing with ENSDF alignment issues, ALWAYS use the visual ruler method:
@@ -54,7 +54,7 @@ print('Length:', len(header))
 
 ### "Debug Header Alignment"
 **IMMEDIATE ACTION**: When header alignment issues are suspected:
-1. Run `python .vscode/column_calibrate.py "filename" --header`
+1. Run `python .github/column_calibrate.py "filename" --header`
 2. Compare with working reference files
 3. Use the visual ruler technique to spot misalignments
 4. Check ENSDF manual field positions (1-5, 6-9, 10-39, 40-65, 66-74, 75-80)
@@ -64,11 +64,20 @@ print('Length:', len(header))
 
 Execute comprehensive change detection and documentation:
 1. **FIRST**: Run `git status` to list all modified files
-2. **For each file**: Run `git diff HEAD~1 "filename"` to see what changed
-3. Update `change.log` with evidence-based entries (never assume changes)
-4. Document with line numbers, before/after content, and scientific/technical context
+2. **Verify completeness**: Run `git diff --name-only HEAD` for cross-verification
+3. **Check untracked files**: Run `git ls-files --others --exclude-standard`
+4. **For each modified file**: Run `git diff HEAD~1 "filename"` to see what changed
+5. **For moved files**: Use `git show HEAD~1:old/path/file` to examine previous content
+6. **Update change.log** with evidence-based entries (never assume changes)
+7. **Document with**:
+   - Line numbers where changes occurred
+   - Before/after content for significant changes
+   - Scientific/technical context and rationale
+   - File movement/reorganization details
 
-**Remember**: Git status MUST be the first step - missing files means incomplete documentation! Use git diff to see specific changes in each file.
+**PowerShell Considerations**: Use `Select-Object -First N` instead of `head` for output limiting.
+
+**Remember**: Git status MUST be the first step - missing files means incomplete documentation! Always cross-verify with multiple git commands to ensure complete coverage.
 
 ### "Fix format!"
 Auto-convert text to proper ENSDF notation:
@@ -219,7 +228,7 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
 - **In headers/Q-records**: All uppercase (`2023BO17`, `2021WA16`)
 
 ### Change Tracking
-- **Always** update `.vscode/change.log` after significant changes
+- **Always** update `.github/change.log` after significant changes
 - **Never** create duplicate change.log files
 - Use evidence-based documentation with specific line numbers
 - **Never** document assumed changes - always verify with tools
@@ -307,7 +316,7 @@ foreach ($element in $elements) {
 - **ENSDF source files**: *.ens files (most important)
 - **Generated PDFs**: *.pdf files (expected to change when source changes)
 - **Processing artifacts**: temp/*.* files (expected, document but don't commit)
-- **Tools and scripts**: .vscode/*.* files (important for tooling changes)
+- **Tools and scripts**: .github/*.* files (important for tooling changes)
 - **Documentation**: README.md, change.log, etc.
 
 ### Evidence-Based Documentation Rules
@@ -324,11 +333,14 @@ Every change log entry should be backed by:
 - [ ] `git diff --name-only HEAD` - complete list verification
 - [ ] `git ls-files --others --exclude-standard` - untracked files
 - [ ] `git diff HEAD~1 "filename"` on each modified file from git status
+- [ ] For moved files: `git show HEAD~1:old/path/file | Select-Object -First 20` (PowerShell)
+- [ ] For large outputs: Use `Select-Object -First N` to limit output in PowerShell
 - [ ] Update `change.log` with evidence-based entries
+- [ ] Document file movements/reorganizations with full context
 - [ ] Comprehensive commit message
 - [ ] Cross-check: did any ENSDF changes result in expected PDF updates?
 
-**Remember**: Start every workflow with git status!
+**Remember**: Start every workflow with git status and use PowerShell-compatible commands!
 
 ### Git Commit Template
 ```
@@ -381,7 +393,7 @@ Completion of comprehensive ENSDF column calibration tooling and systematic impr
 
 ### Core Files (Most Critical)
 - `finished/[Element]/new/*.ens` - Primary ENSDF source files
-- `.vscode/change.log` - Comprehensive change tracking
+- `.github/change.log` - Comprehensive change tracking
 
 ### Generated Files (Expected to Change)
 - `finished/[Element]/pdf/*.pdf` - Generated from .ens files
@@ -389,9 +401,9 @@ Completion of comprehensive ENSDF column calibration tooling and systematic impr
 
 ### Tools
 - `ens2pdf.py` - Python script for automated ENSDF to PDF conversion
-- `.vscode/column-calibrate.ps1` - PowerShell column validator
-- `.vscode/column_calibrate.py` - Python column validator
-- `.vscode/check_averages.py` - Average calculation validator
+- `.github/column-calibrate.ps1` - PowerShell column validator
+- `.github/column_calibrate.py` - Python column validator
+- `.github/check_averages.py` - Average calculation validator
 
 ### Reference Files (NEVER EDIT)
 - `*.old` files - Previous evaluation rounds, keep untouched

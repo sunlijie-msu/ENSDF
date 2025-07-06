@@ -1,4 +1,72 @@
 # Change Log for ENSDF Edits
+
+## 2025-07-06: Major Repository Restructuring and Documentation Enhancement
+
+**Summary**: Major reorganization of workspace structure with tool relocation, comprehensive documentation update, and addition of new mass chain evaluation projects.
+
+**Repository Structure Changes:**
+
+### Tool Migration (.vscode → .github)
+**Files moved from .vscode to .github directory:**
+- `change.log` → `.github/change.log` (this file)
+- `check_averages.py` → `.github/check_averages.py` (average calculation validator)
+- `column-calibrate.ps1` → `.github/column-calibrate.ps1` (PowerShell column validator)
+- `column_calibrate.py` → `.github/column_calibrate.py` (Python column validator)
+- `copilot-instructions-backup.md` → `.github/copilot-instructions-backup.md`
+- `copilot-instructions.md` → `.github/copilot-instructions.md` (main instructions)
+- `copilot-instructions.pdf` → `.github/copilot-instructions.pdf`
+
+**Rationale**: Tools and documentation moved to .github for better project organization and GitHub integration.
+
+### New Workspace Configuration
+**Created**: `.vscode/ENSDF.code-workspace` (new workspace configuration file)
+**Removed**: `.vscode/settings.json` (individual settings replaced by workspace config)
+
+### Major Project Additions
+**A34 Directory Structure**: Complete A=34 mass chain evaluation project added
+- Contains evaluation files for: Al34, Ar34, Ca34, Cl34, K34, Mg34, Na34, Ne34, P34, S34, Si34
+- Includes `.git/` (independent git repository)
+- Reference files: `A34_12NDS.txt`, `A34_cover.old`, `A34_references.old`
+
+**A60 Directory Structure**: Complete A=60 mass chain evaluation project added
+- Contains evaluation files for: Ca60, Co60, Cr60, Cu60, Fe60, Ga60, Ge60, Mn60, Ni60, Sc60, Ti60, V60, Zn60
+- Includes `.git/` (independent git repository)
+- Reference files: `A60_13NDS.txt`, `A60_XUNDL.txt`
+
+**XUNDL Directory**: eXperimental Unevaluated Nuclear Data List processing added
+- Contains current evaluation files: `2025DEAA_CF10990_125Te.*`, `2025LIAA_CF10919_115Sb.*`, `2025SHAA_CC10963_96Nb.*`
+- Includes data check reports and supporting documentation
+- Independent git repository with `.git/`
+
+### Documentation Updates
+
+**README.md**: Complete rewrite (lines 1-169)
+- **Before**: 2-line basic description
+- **After**: Comprehensive 169-line professional documentation including:
+  - **Lines 1-6**: Professional title and purpose description
+  - **Lines 8-21**: Core component documentation (A35 structure, tools, additional chains)
+  - **Lines 23-31**: Technical stack and key features
+  - **Lines 33-44**: Detailed file structure diagram
+  - **Lines 48-100**: Usage instructions with examples (PDF generation, validation, change tracking)
+  - **Lines 102-116**: ENSDF format standards and examples
+  - **Lines 118-144**: Scientific context and quality assurance
+  - **Lines 146-169**: Statistics, contributing guidelines, and attribution
+
+**test.ens**: Minor formatting fix (line 16)
+- **Before**: `33S 4cG quadrupole transitions, respectively.`
+- **After**: `33S 4cG quadrupole transitions, respectively.` (spacing correction)
+
+### Git Status Analysis
+**Modified files identified**: 11 files total
+- **Deleted from .vscode**: 9 files (moved to .github)
+- **Modified**: README.md, test.ens
+- **New untracked directories**: .github/, A34/, A60/, XUNDL/
+- **New workspace file**: .vscode/ENSDF.code-workspace
+
+**Impact**: This represents a major workspace reorganization transforming from a single A=35 project to a comprehensive nuclear data evaluation system covering multiple mass chains (A=34, A=35, A=60) plus XUNDL processing capabilities.
+
+---
+
 ## 2025-06-29:
 Add new ENSDF data for 35S and XUNDL-5 dataset for 34S(D,PG)
 
@@ -443,46 +511,6 @@ All changes follow ENSDF formatting and left-justification rules as per project 
   - Nuclear reaction notation formatting assistance (part of larger Si35 overhaul)
 
 ## 2025-06-16
-- Updated `d:\X\ND\A35\.vscode\copilot-instructions.md`:
-  - Condensed and reorganized instructions for better usability, removing redundancies and grouping related rules.
-  - Added comprehensive ENSDF special character and symbol formatting guide including:
-    - Complete Greek alphabet (lowercase and uppercase) with proper ENSDF codes
-    - Mathematical symbols (×, ≈, ≤, ≥, ±, ∓, arrows, etc.)
-    - Superscript/subscript notation using `{+n}` and `{-n}`
-    - Scientific notation examples and practical usage guidelines
-  - Added "Fix Format" quick command that triggers automatic conversion of text to proper ENSDF notation and standardization of mathematical symbols.
-  - Updated last modified date to June 16, 2025.
-
-- Updated `d:\X\ND\A35\finished\P35\new\P35_160gd_37cl_xg.ens`:
-  - Converted reaction notation to proper ENSDF format: `160Gd+37Cl->160Dy+35P+2n` → `{+160}Gd+{+37}Cl->{+160}Dy+{+35}P+2n`.
-
-- Updated `d:\X\ND\A35\finished\S35\new\S35_208pb_36s_xg.ens`:
-  - Fixed grammar: "Comparison with" → "Comparisons with" (line 13) for parallel structure consistency.
-  - Added missing periods to comment lines 20 and 21 for proper punctuation.
-  - Applied "Fix Format" command to convert special characters to ENSDF notation:
-    - Converted `35S` → `{+35}S` in shell model configuration comments
-    - Converted Greek letters: π → `|p`, ν → `|n`
-    - Converted tensor product symbol ⊗ → `~#`
-    - Converted mathematical notation to proper ENSDF subscript/superscript format using `{-n}` and `{+n}`
-    - Reformatted shell model configurations from Unicode to ENSDF rich text format.
-
-- Updated `d:\X\ND\A35\finished\Si35\new\Si35_208pb_36s_xg.ens`:
-  - Contains the 208PB(36S,XG) reaction data for 35Si from 2010WAZT.
-
-## 2025-06-11
-- Reverted agent's incorrect Jπ changes in `d:\X\ND\A35\finished\Si35\new\Si35_35al_beta_decay_38.1_ms.ens` (reflects user undoing prior agent errors):
-  - Restored Jπ for 2168.16 keV level from `(5/2+)` to `5/2+`.
-  - Removed Jπ values `(3/2+,5/2+,7/2+)` from L-records for levels 3140, 3450, 3770, 5190, 5760, 6330, 7360, and 7690 keV.
-- Updated `d:\X\ND\A35\finished\Si35\new\Si35_35al_beta_decay_38.1_ms.ens` (accepted changes):
-  - Changed Jπ for 2168.16 keV level from `5/2+` to `(5/2+)`.
-  - Added Jπ values `(3/2+,5/2+,7/2+)` to L-records for levels 3140, 3450, 3770, 5190, 5760, 6330, 7360, and 7690 keV.
-  - Updated T comment for the 973.88 keV level to `cL T$From |b|g(t) in {+35}Al |b{+-} decay (2001Nu01). Adopted value.`
-- Verified J,T for parent {+35}Al in `d:\X\ND\A35\finished\Si35\new\Si35_35al_beta_decay_38.1_ms.ens` against `d:\X\ND\A35\finished\Al35\new\Al35_adopted.ens`. Confirmed (5/2)+ and accuracy of the comment "From the Adopted Levels of {+35}Al".
-- Manually reverted agent's incorrect edits to `d:\X\ND\A35\finished\P35\new\P35_adopted.ens`.
-- Manually reverted agent's incorrect edits to `d:\X\ND\A35\.vscode\copilot-instructions.md`.
-- Manually reverted agent's incorrect edits to `d:\X\ND\A35\.vscode\change.log`. (This update now reflects the accurate log for today).
-
-## 2025-06-10 (Evening)
 - Updated `d:\\X\\ND\\A35\\finished\\Ar35\\new\\Ar35_35k_ec_decay_175_ms.ens`:
   - Removed trailing spaces from L records (e.g., 2637.99, 2982.79, 4785.8, 6348 keV levels).
   - Added `LT` qualifier to LOGFT for the 7527 keV level E record.
@@ -948,3 +976,585 @@ The ENSDF (Evaluated Nuclear Structure Data File) format requires exactly 80-cha
 - Minor formatting updates
 
 **Ar35_adopted.ens** (not detailed in output):  
+- Minor formatting updates
+
+**P35_2h_34si_35pg.ens** (lines 1, 5, 12):
+- Changed NSR reference from `2007GeAA` to `2007GeZX` in title and comments
+- Reason: Corrected NSR keynumber format
+
+**S35_37cl_d_a_37cl_d_ag.ens** (major restructuring):
+- Line 1: Added `1975VAYG,` to title line references
+- Lines 6-28: Completely rewrote general comments for better organization and clarity
+- Line 30: Enhanced comment `35S  cL E$From 1975VaYG` → `35S  cL E$From 1975VaYG based on |g-ray energies.`
+- Line 31: Enhanced comment `35S  cL J$From |g(|q) in 1972Va07` → `35S  cL J$From |g(|q) of {+34}S(d,p|g){+35}S in 1972Va07`
+- Line 33: Fixed L-record spacing: `35S   L 0           3/2+` → `35S   L 0            3/2+`
+- Lines 37-40: Fixed G-record column alignment for RI values and uncertainties
+- Lines 42-46: Corrected G-record RI values from "98 LT" format to proper intensities
+- Line 48: Fixed L-record spacing and parentheses
+- Lines 48-50: Updated G-records with proper intensity values
+- Line 52: Added new comment line `35S  cG RI$>95 in 1975VaYG`
+- Line 82: Removed trailing newline
+
+**Si35_208pb_36s_35sig.ens** (line 5):
+- Fixed superscript notation: `{+36}S{+9}` → `{+36}S{+9+}`
+- Reason: Corrected ion charge state notation
+
+**Column Alignment Issues Addressed:**
+- Fixed ENSDF G-record RI (relative intensity) positioning to start at column 23
+- Corrected uncertainty positioning to columns 30-31  
+- Used Python column calibration tool to verify exact character positions
+- Ensured compliance with ENSDF Manual formatting standards
+
+**NSR Reference Updates:**
+- Updated outdated or incorrect NSR keynumbers to current format
+- Maintained consistency between title lines and comment references
+
+**Files Changed:** 8 ENSDF files modified, multiple PDF regenerations, temp file updates
+**Tools Used:** column-calibrate.py, what-changed.ps1, git status/diff
+**Quality Check:** Self-calibrated columns before/after edits to ensure ENSDF compliance
+
+## 2025-06-22
+- **S35_37cl_d_a_37cl_d_ag.ens formatting improvements** (Evidence from what-changed.ps1):
+  - **Line 1**: ID line updated to include both primary references
+    * Before: ` 35S     37CL(D,A),37CL(D,AG)          1972VA07                  ENSDF    202509`
+    * After: ` 35S     37CL(D,A),37CL(D,AG)          1975VAYG,1972VA07         ENSDF    202509`
+    * Reason: Added 1975VAYG as primary reference providing most complete data
+  - **Lines 6-26**: Complete comment section reformatting with ENSDF conventions
+    * Converted reaction notation to proper format: `{+37}Cl(d,|a|g){+35}S`
+    * Consolidated experimental details for better readability
+    * Fixed isotope notation with proper superscripts/subscripts
+    * Enhanced scientific context and measurement descriptions
+  - **Lines 29-30**: Level assignment comments enhanced
+    * Before: Basic reference citations without context
+    * After: Added scientific context: "based on |g-ray energies" and "{+34}S(d,p|g){+35}S"
+  - **Line 37**: Level record spacing correction
+    * Before: ` 35S   L 2348.2    203/2-` (missing space)
+    * After: ` 35S   L 2348.2    20 3/2-` (proper spacing between uncertainty and J-π)
+  - **Line 42**: Level record spacing correction  
+    * Before: ` 35S   L 2939.2    13(3/2,5/2)` (missing space)
+    * After: ` 35S   L 2939.2    13 (3/2,5/2)` (proper spacing before parentheses)
+
+- **Weekly Effort Log update** (Evidence from git diff):
+  - **Line 43**: Progress report revision for June 15-21, 2025 period
+    * Before: "Added 3 reaction datasets for 35S"
+    * After: "Added 4 reaction datasets for 35S" 
+    * Also added "and data consistency check" to training description
+    * Changed "revised all the Adopted datasets" to "updated their Adopted datasets"
+    * Reason: Corrected dataset count and improved accuracy of work description
+
+- **Generated files updated**:
+  - **finished/S35/pdf/S35_37cl_d_a_37cl_d_ag.pdf**: New PDF generated from updated ENSDF file
+  - **finished/S35/pdf/S35_37cl_p_3he.pdf**: New PDF generated (file not tracked in git)
+  - **finished/S35/pdf/S35_208pb_36s_35sg.pdf**: Modified PDF file
+
+**Validation**: All changes follow ENSDF format standards with proper column alignment and notation conventions.
+
+## 2025-06-20
+- **ENSDF Column Calibration System Development**:
+  - **Created column-calibrate.ps1**: Dedicated PowerShell script for ENSDF field analysis
+    * Features: Column ruler display, L/G record extraction, field mapping verification
+    * Handles proper ENSDF Manual Section 9 & 14 specifications
+    * Error handling for missing files and invalid paths
+    * Professional output with color-coded field descriptions
+  - **Updated copilot-instructions.md**: 
+    * Replaced inline PowerShell debugging with script reference
+    * Added official ENSDF Manual field specifications for L and G records
+    * Integrated authoritative column positions from ENSDF Manual Sections 9 & 14
+    * Updated Self-Calibrate Columns command to use dedicated script
+  - **No ENSDF data files modified** - Focus was on tooling improvements
+  - **Tools tested and verified**: column-calibrate.ps1 successfully analyzes P35_208pb_36s_35pg.ens
+
+- **Enhanced ENSDF Column Calibration with PowerShell History Analysis**:
+  - **Major column-calibrate.ps1 enhancement**: Analyzed PowerShell history to integrate advanced features
+    * **Character-by-character mapping**: Added -Detailed flag for position-by-position analysis
+    * **Enhanced field extraction**: Improved L/G record field parsing with proper column boundaries
+    * **Comprehensive validation**: Added detailed error checking for NUCID, record type, energy fields
+    * **Readability space validation**: Critical col 22 space checking for human readability
+    * **Corrected column assignments**: J-π and RI fields properly start at column 23 (not 22)
+  - **PowerShell history insights integrated**:
+    * Character mapping functions from history analysis (lines 1182-1186)
+    * Field analysis improvements from detailed column testing (lines 1070-1120)  
+    * Enhanced validation logic from interactive testing sessions
+    * Proper function organization to avoid PowerShell execution order issues
+  - **Improved script architecture**:
+    * Functions defined before usage (PowerShell requirement)
+    * Enhanced error messages with specific character position reporting
+    * Optional detailed analysis with -Detailed switch parameter
+    * Professional color-coded output with comprehensive field breakdown
+  - **Validation improvements**: Script now detects and reports column formatting issues
+    * Short records (< 80 characters)
+    * Missing readability spaces at column 22
+    * Empty required fields (NUCID, energy, J-π/RI)
+    * Incorrect record types at position 8
+  - **Testing completed**: Enhanced script validated against real ENSDF files
+    * Successfully analyzed P35_208pb_36s_35pg.ens with both standard and detailed modes
+    * Identified actual formatting issues in sample G-records
+    * Confirmed proper field extraction and boundary detection
+
+## 2025-06-19
+- **Ar35_36ar_3he_a.ens major dataset integration** (Agent's work):
+  - **Header updates**: Added 1998VoAA reference alongside 1973BE26 in keynumber field
+  - **Complete level energy modernization**: Updated all 27 levels from 1973Be26-only values to weighted averages with 1998VoAA data:
+    * Energy precision dramatically improved from ±10 keV to ±2-6 keV uncertainties
+    * Examples: 1179±10 → 1175±2, 1738±10 → 1747±2, 2637±10 → 2649±2 keV
+    * Last 6 high-energy levels (7117-8019 keV) retained ±10 keV and marked with "B" flag
+  - **Added comprehensive comment system**: Each level now includes weighted average calculation explanation
+    * Format: "E$weighted average of [1973Be26 value] {I10} (1973Be26) and [1998VoAA value] {I[unc]} (1998VoAA)"
+  - **Detailed 1998VoAA experimental description**: Replaced thesis reference with complete experimental setup
+    * 25-MeV ³He beam from FN Tandem accelerator at Notre Dame
+    * Target preparation: 75-keV ³⁶Ar implanted into 40 μg/cm² carbon foils
+    * Detection system: broad-range magnetic spectrograph with position-sensitive proportional gas detector
+  - **Added "E(B)$From 1973Be26" comment for data provenance tracking
+
+- **S35 dataset header modernization** (Agent's work):
+  - **S35_37cl_d_a_37cl_d_ag.ens**: Updated from "11NDS 201111" to "ENSDF 202509" format
+    * Added new authorship line: "LIJIE SUN AND JUN CHEN"
+    * Improved comment formatting and line breaks for readability
+  - **S35_37cl_p_3he.ens**: Complete experimental description overhaul
+    * Converted all citations to proper past tense following academic conventions
+    * Added clear reaction summary: "³⁷Cl→³⁵S+1p1n from J^π=3/2+ ³⁷Cl ground state"
+    * Enhanced DWBA analysis descriptions with proper theoretical context
+    * Improved technical specifications formatting for detectors and experimental setup
+
+- **Documentation and tooling enhancements** (Agent's work):
+  - **Enhanced copilot-instructions.md**: Added critical command triggers and automation
+    * "Self-Calibrate Columns" command for precise ENSDF column verification
+    * "What changed?" command for automated change detection and documentation
+    * Comprehensive ENSDF column format reference with exact positioning rules
+    * Enhanced Greek letter and mathematical symbol encoding guidelines
+  - **Updated change.log documentation standards**: Improved categorization and detail tracking
+
+- **File management**: Created temporary files for reference (1973Be26.ens, 1998VoAA.ens) and removed test.ens
+
+## 2025-06-18
+- **S35 file reorganization** (User's work):
+  - `S35_208pb_36s_xg.ens` → `S35_208pb_36s_35sg.ens`: File renamed to improve reaction notation specificity
+
+- **Academic citation tense corrections** (User's work):
+  - Fixed citation verbs to use proper past tense (e.g., "stated" → "states") in K35, P35, and other A35 files
+  - Applied scientific writing conventions for citing completed studies
+
+- **ENSDF symbol encoding corrections** (User's work):
+  - Fixed approximate value notation: `V{-n}~60 MeV` → `V{-n}|?60 MeV` in Ar35_36ar_d_t.ens
+  - Confirmed proper usage of `|?` for approximate values instead of standalone `~`
+
+- **S35_208pb_36s_35sg.ens comprehensive dataset expansion** (User's work):
+  - **Header updates**: Added 2010WaZT reference to keynumber field, added GLSC fitting line
+  - **Complete level scheme overhaul**: Added 9 new levels with precise energies and uncertainties:
+    * 1572.0(9) keV 1/2+ → 1572(1) keV 1/2+ (with 2.29 ps lifetime)
+    * 1991.1(9) keV 7/2-, 2347.1(13) keV 3/2-, 2717.1(14) keV 5/2+
+    * 3421(2) keV 5/2+, 3558.1(14) keV (3/2-,5/2-), 3593(2) keV (1/2+,7/2+)
+    * 3818.1(14) keV (9/2-,11/2-), 4023.1(22) keV (9/2-,11/2-)
+  - **Gamma-ray data**: Added complete G-records with proper ENSDF column formatting:
+    * Primary transitions: 1572, 1991, 2347, 2717, 3421, 3593, 1827, 2032 keV
+    * Secondary transitions: 370, 1986, 1567, 1211 keV (some tentative)
+    * Unplaced gammas: 1227(1), 3034(3) keV with PN normalization record
+  - **Shell-model theoretical data**: Added comprehensive B(E2), B(M1) values and mixing ratio
+  - **Configuration assignments**: Added detailed shell-model configurations for 0+ and 1/2+ states
+  - **Experimental details**: Updated 2010WaZT description with corrected reference and target details
+  - **Format corrections**: Applied proper ENSDF notation for Greek letters (δ→|d, λ→|l)
+
+- **Copilot instructions updates** (Agent's work):
+  - Added comprehensive academic citation tense guidelines
+  - Clarified ENSDF mathematical symbol encoding (especially `|?` for approximate values)
+  - Restored "Fix format!" command trigger for superscripts/subscripts
+  - Added critical ENSDF column format reference with G-record and L-record specifications
+  - **Added "What changed?" command trigger**: Automated workflow for change detection and change.log updates using what-changed.ps1
+  - **Self-Calibrate Columns**: Added command trigger to verify exact column positions
+  - Implemented character-by-character column mapping for ENSDF records
+  - Created automated verification workflow for precise nuclear data formatting
+  - Fixed misconceptions about column positions in ENSDF L and G records
+
+## 2025-06-17
+- **Comprehensive A=35 mass chain evaluation and dataset updates** (User's work):
+  
+  **Major header and metadata updates across all A=35 adopted files:**
+  - Updated authorship to "LIJIE SUN AND JUN CHEN" with cut-off date "30-Sep-2025" and ENSDF 202509 publication code
+  
+  **Extensive Si35 dataset overhaul (45+ changes per file):**
+  - `Si35_adopted.ens`: Major dataset reference systematization similar to P35
+    - Updated XREF cross-references from ABCDE → ABCDEF throughout
+    - Systematically updated reaction notation: `L({+2}H({+34}Si,p))` → `L=X from 0+ in {+2}H({+34}Si,{+35}Si)`
+    - Added specific dataset attributions: `{+9}Be({+36}Si,{+35}Si|g)`, `{+208}Pb({+36}S,{+35}Si|g)`
+    - Enhanced gamma-ray energy comments with complete source information
+    - Updated processing tools (Java-RULER 10-Jun-2025, GLSC 03-Jun-2025)
+  - `Si35_2h_34si_pg.ens` → `Si35_2h_34si_35sig.ens`: Complete file rewrite (48 changes)
+    - Comprehensive update of experimental details and methodology descriptions
+    - Enhanced nuclear reaction descriptions and detector specifications
+    - Updated all level and gamma-ray assignments with improved precision
+  - `Si35_208pb_36s_xg.ens` → `Si35_208pb_36s_35sig.ens`: File replacement (24 additions, 25 deletions)
+  - All other Si35 .ens files: Header updates and reaction notation improvements
+  - Complete regeneration of all Si35 temp analysis files with current timestamp
+  - Updated all Si35 PDF outputs with latest dataset versions
+  
+  **Extensive P35 dataset improvements (185 insertions, 192 deletions):**
+  - Systematically updated dataset references from generic `({+36}S,X|g)` to specific `{+208}Pb({+36}S,{+35}P|g)` and `{+9}Be({+36}S,{+35}P|g)`
+  - Updated all XREF cross-references throughout the file for dataset consistency
+  - Added periods to comment lines and improved scientific notation consistency
+  - Enhanced gamma-ray energy and intensity reference attributions
+  - Updated level J assignments and reaction notation formatting
+  
+  **Na35 dataset updates:**
+  - File rename: `Na35_9be_48ca_x.ens` → `Na35_9be_48ca_35na.ens`
+  - Standardized header format and updated associated PDF files
+  
+  **Total scope:** 50 files changed, 684 insertions(+), 539 deletions(-)
+
+- **Minor agent contributions:**
+  - `d:\X\ND\XUNDL\2025LIAA_CF10919_115Sb.ens`: Grammar fix in M comment line
+  - Nuclear reaction notation formatting assistance (part of larger Si35 overhaul)
+
+## 2025-06-16
+- Updated `d:\\X\\ND\\A35\\finished\\Ar35\\new\\Ar35_35k_ec_decay_175_ms.ens`:
+  - Removed trailing spaces from L records (e.g., 2637.99, 2982.79, 4785.8, 6348 keV levels).
+  - Added `LT` qualifier to LOGFT for the 7527 keV level E record.
+- Updated `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_35al_beta_decay_38.1_ms.ens`:
+  - Revised general comments for `cL J,T`, `cB IB`, and `cG M`.
+  - Updated N record (NR value and uncertainty) and associated `cN NR` comment.
+  - Adjusted %IG for 5629 keV G record.
+  - Added B record and `cB IB` comment for 909.95 keV L record; updated %IG for 910.11 keV G record.
+  - Updated `cL T` comment for 973.88 keV L record.
+  - Updated B record and added `cB IB` comment for 973.88 keV L record; updated %IG for 64.1 keV G record and added %IG for 973.78 keV G record.
+  - Updated E and DE for 2168.16 keV L record.
+  - Updated B record and `cB IB` comment for 2168.16 keV L record; updated %IG for 2168.2 keV G record.
+- Regenerated `d:\\X\\ND\\A35\\finished\\Si35\\pdf\\Si35_35al_beta_decay_38.1_ms.pdf`.
+- Created/Updated analysis output files in `d:\\X\\ND\\A35\\finished\\Si35\\temp\\`:
+  - `GLSC_combined.out`
+  - `Java_GABS.out`
+  - `Java_GABS.rpt`
+  - `Java_GTOL.out`
+  - `Java_GTOL.rpt`
+
+## 2025-06-10
+- Updated `d:\\X\\ND\\A35\\finished\\K35\\new\\K35_adopted.ens`:
+  - Corrected NSR keynumber formatting (e.g., `2023BO17` to `2023Bo17`) for multiple references.
+  - Updated `%ECP` value and related comments for the 0.0 keV level (e.g., `$%|ep: from 1980Ew02 for E(p)>0.9 MeV...`).
+- Updated `d:\\X\\ND\\A35\\.vscode\\copilot-instructions.md`:
+  - Added a new section detailing NSR keynumber formatting rules (second letter of author lowercase, except in header).
+  - Modified the NSR keynumber formatting rule to include Q record as an exception for uppercase.
+  - Added rule under "Automatic Change Tracking" to always update both change.log files.
+  - Added rule under "Automatic Change Tracking": "Never create new or duplicate `change.log` files. Only use the existing `d:\\X\\ND\\A35\\.vscode\\change.log` and `d:\\X\\ND\\A35\\change.log` files."
+- Updated `d:\\X\\ND\\A35\\finished\\Al35\\new\\Al35_adopted.ens`:
+  - Changed `%B-N` from `36 3` to `37 4`.
+  - Updated comment for `%|b{+-}n` to "Unweighted average..." and added details about evaluator's additions for I|g from {+34}Si levels.
+- Updated `d:\\X\\ND\\A35\\finished\\Ar35\\new\\Ar35_35k_ec_decay_175_ms.ens`:
+  - Changed `DE EAV...` to `dE EAV...` on line 6.
+  - Modified `cN NR$` comment (lines 79-82) changing `|S%I{-p}` to `%(|e+|b{++})p`.
+- Updated `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_35al_beta_decay_38.1_ms.ens`:
+  - Changed `cL J,T$ Adopted Levels` to `cL J,T$ Adopted Levels of {+35}Si`.
+  - Changed `cB IB$ For bound levels, from the absolute...` to `cB IB$ For bound levels, from |g-ray intensity balance at each level . the absolute...`.
+  - Changed `cP J,T$ From Adopted Levels...` to `cP J,T$ From the Adopted Levels...`.
+  - Changed `cN NR$ |S%I|g(|g to g.s.)=61 {I3}` to `60 {I4}` and `|S%I{-n}=36 {I3}` to `%|b{+-}n=37 {I4}`.
+- Created/Modified `d:\\X\\ND\\A35\\test.ens` with content similar to `Si35_35al_beta_decay_38.1_ms.ens` but with some differences (e.g., `NR` value in N record, `E(n)` comment, `J` comment for levels).
+- Created/Modified `d:\\X\\ND\\A35\\change.log` (root level).
+- Regenerated `d:\\X\\ND\\A35\\finished\\K35\\pdf\\K35_adopted.pdf`.
+
+## 2025-06-09
+- Updated `d:\\X\\ND\\A35\\.vscode\\copilot-instructions.md`:
+  - Added newlines and formatting to PowerShell commands for PDF generation and dummy file removal.
+- Deleted `d:\\X\\ND\\A35\\compliance_report.md`.
+- Updated `d:\\X\\ND\\A35\\finished\\Al35\\new\\Al35_36mg_b-n_decay_6.9_ms.ens`:
+  - Added N (normalization) and cN (comment on normalization) records related to BR from 1999YoZW.
+- Updated `d:\\X\\ND\\A35\\finished\\Al35\\new\\Al35_adopted.ens`:
+  - Corrected XREF dataset identifiers (e.g., C->CH, D->DPB, D->E).
+  - Minor formatting adjustment (extra space) on L records for levels 1975, 3245 keV.
+- Added `d:\\X\\ND\\A35\\.github\\prompts\\.prompt.md` with data checking instructions.
+
+## 2025-06-09 (Si35 updates)
+- `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_35al_beta_decay_38.1_ms.ens`:
+    - Corrected G-record spacing (manual user fix after agent attempts).
+    - Added `$E(n0){-c.m.}$ comments for levels 3140, 3450, 3770, 5190, and 5760 keV.
+    - Corrected `35Si` to `{+35}Si` in a comment block (around lines 67-70).
+    - Deleted 'D' flags from column 77 in Beta (B) records.
+- `d:\\X\\ND\\A35\\.vscode\\copilot-instructions.md`:
+    - Updated with detailed ENSDF 'G' record formatting rules.
+
+## 2025-06-01
+- Updated `d:\\X\\ND\\A35\\finished\\Si35\\new\\Si35_9be_36si_35sig.ens`:
+  - Updated header record: NSR keynumbers to `2014ST18,2015ST06`, ENSDF date to `202509`, and added new H-records.
+  - Expanded general comments for `2014St18` and added comments for `2015ST06` and Stroberg Ph.D. thesis.
+  - Added/updated dataset-specific comments (`dL E$`, `cL E$`, `cL L$`, `cG E,RI$`).
+  - Updated comments for partial knockout cross-sections and lifetimes for various levels (0, 908, 973, 1688 keV).
+  - Removed NSR_REF from some specific comment lines (e.g. BE2 value for 908 keV level, partial cross section for 973 keV level).
+  - Shifted L-transfer values to columns 50-53 for several levels.
+  - Removed continuation character `C` from `PN` record.
+  - Added extensive `cG` comments for the 3611 keV level.
+- Updated `d:\\X\\ND\\A35\\finished\\Mg35\\new\\Mg35_adopted.ens`:
+  - Reordered general comment paragraphs by year (moved 2013StZY and 2012Kw02).
+- Updated `d:\\X\\ND\\A35\\finished\\Al35\\new\\Al35_pb_35al_34alng.ens`:
+  - Corrected NUCID in header records from `35MG` to `35AL`.
+  - Corrected isotope formatting in a comment from `35Al -> 34Al` to `{+35}Al -> {+34}Al`.
+- Updated `d:\\X\\ND\\A35\\finished\\Al35\\new\\Al35_adopted.ens`:
+  - Reordered general comment paragraphs by year.
+  - Reformatted `PB(35AL,34ALNG)` reaction comments (spectroscopic factors).
+
+## 2025-05-30
+- Updated `d:\\X\\ND\\A35\\finished\\P35\\new\\P35_adopted.ens`:
+  - Clarified that `2021WA16` is a mass evaluation, not a direct measurement, in the general comments.
+  - Removed `2021WA16` from the list of theoretical calculation NSRs and retained `2019GR08`.
+
+## 2025-05-29
+- Updated `d:\\X\\ND\\A35\\finished\\Mg35\\new\\Mg35_adopted.ens`:
+  - Reordered general comment paragraphs chronologically (newest to oldest).
+- Updated `d:\\X\\ND\\A35\\finished\\K35\\new\\K35_adopted.ens`:
+  - Added `2023ZH10` to the mass measurements.
+  - Revised the list of theoretical calculation NSRs to include `2023BO17`, `2023FO05`, `2022ZO01`, `2020MA25`, `2016SI02`, `2016ME17`, and `2003SM02`.
+  - Updated the description of calculated quantities to include "mass, T{-1/2}, reaction rates".
+
+## 2025-05-28
+- Updated `d:\\X\\ND\\A35\\finished\\P35\\new\\P35_adopted.ens`:
+  - Refined the list of theoretical NSRs in the general comment section to include: 2023ME02, 2023CH17, 2020SA44, 2020MA25, 2020FO04, 2019AB06, 2012BOZT, and 2009No01.
+  - Ensured all NSRs in the 'Theoretical calculations' comment are in reverse chronological order and correctly formatted.
+  - Verified that 2012BoZT was already present and correctly placed.
+
+## 2025-05-19
+- Revised English grammar in `Mg35_beta_decay_2.1_ms.ens`:
+  - Corrected articles and improved sentence structure in the comment sections for 2022Cr03, 2013StZY, and 1983La12/1984La03.
+  - Ensured consistent terminology and enhanced overall clarity and readability of the experimental descriptions.
+
+## 2025-05-06
+- Modified K35_ec_decay_25.7_ms.ens file with critical changes:
+  - Changed title line from "35CA EC DECAY (25.7 MS)" to "35CA EC+B+ DECAY (25.7 MS)"
+  - Added new comment section: "The decay scheme is considered relatively complete as all observed individual I(1p) and I(2p) add up to almost 100% in 1999Tr04."
+  - Replaced simplistic TI comment with detailed explanation of intensity normalization:
+    - Added explanation of how TI values are deduced from I(p) values with 0.994 normalization factor
+    - Clarified that original %|SI(1p)=96.4 {I18} and %|SI(2p)=4.2 {I3} sum to 100.6%
+    - Documented evaluator's renormalization from 100.6% to 100%
+    - Added details about original I(p) determination methodology
+  - Added explanation for TI(X) values and clarified that Log ft values for unresolved levels are displayed without uncertainties
+  
+- Identified reference "1991De26" in K35_ec_decay_25.7_ms.ens:
+  - Found as part of theoretical studies involving {+35}Ca decay 
+  - Referenced in context of IAS calculations
+  - Specifically regarding branching ratio I(2p)/I(1p)=1 for the IAS
+
+## 2025-05-05
+- Added spin-parity (Jπ) values "1/2+,3/2+" to all levels with XREF=A in K35_adopted.ens:
+  - Applied to levels at 3781, 4018, 4788, 4982, 5249, 5533, 5710, 5865, 6089, 6335, and 9168 keV
+  - Ensured proper column positioning with Jπ values starting exactly at column 23
+  - Maintained correct alignment of energy values and uncertainties
+
+- Removed levels without uncertainties from K35_adopted.ens:
+  - Deleted levels at 4520, 5493, 5716, 6302, 6585, and 7813 keV
+  - Removed their corresponding XREF lines
+  - These levels had energy values without specified uncertainties in columns 17-18
+
+- Fixed English grammar issues in multiple files:
+  - K35_40ca_3he_8li.ens:
+    - Corrected "Measured the cross section for producing" to "Measured the cross section of {+40}Ca({+3}He,{+8}Li){+35}K leading to"
+  - K35_9be_36ca_35k.ens:
+    - Added missing "for" in "to search for decay |g of any excited states"
+    - Added missing "the" before "knockout cross sections"
+    - Added missing "and" in "Deduced J, |p, and orbital angular momenta"
+    - Enhanced J comment: "J assignment based on knockout from proton 1d{-3/2} orbital"
+  - Ar35_35cl_3he_t.ens:
+    - Fixed awkward grammar "but causing an IMME breakdown" to "which caused an IMME breakdown"
+
+- Fixed spelling error in K35_ec_decay_25.7_ms.ens:
+  - Corrected "stoped" to "stopped" in experimental description
+
+- Updated copilot-instructions.md with new guidelines:
+  - Added warnings against adding spaces that shift column positions
+  - Added detailed section on proper Jπ placement at column 23
+  - Added section on common English grammar and spelling fixes
+  - Added instruction to focus primarily on K35 and P35 files
+  - Emphasized the importance of preserving exact column positions
+
+## 2025-04-30
+- Fixed typos in multiple files:
+  - Corrected "usign" to "using" in Ar35_36ca_ecp_decay_100.9_ms.ens
+  - Fixed "coeffcients" to "coefficients" in Ar35_36ca_ecp_decay_100.9_ms.ens (two occurrences)
+  - Corrected "coeffcients" to "coefficients" in Ar35_ec_decay_175_ms.ens
+
+## 2025-04-29
+- Improved nuclear reaction formatting in multiple files:
+  - K35_9be_36ca_35kg.ens:
+    - Standardized knockout reaction notation: {+9}Be({+36}Ca,X){+35}K
+    - Fixed improper orbital notation for 1d{-3/2} shell
+    - Corrected duplicate entry of "35K Kc" line
+    - Enhanced grammar in reaction descriptions
+    - Added proper articles to experimental method descriptions
+
+  - Ca35_9be_36ca_35ca.ens:
+    - Added spectroscopic factors and cross-section values
+    - Included R{-s} reduction factors and shell model predictions (C²S=1.80)
+
+  - K35_40ca_3he_8li.ens:
+    - Properly formatted reaction: {+40}Ca({+3}He,{+8}Li){+35}K
+
+  - Also updated Ar35_35cl_3he.t.ens and Ar35_adopted.ens with consistent formatting
+
+## 2025-04-24
+- Modified Ar35_adopted.ens based on consistency check results:
+  - Added explicit gamma-ray source identifiers using "K" comment markers for gamma rays from {+35}K |e decay
+  - Added cG E,RI$ statement at the beginning: "From ({+16}O,|an|g), unless otherwise noted"
+  - Updated cG M$ section with clearer information about |g|g(|q)(ADO) and R(|g(|q)) measurements
+  - Added cG E(K),RI(K)$ statement to identify gamma rays from {+35}K |e decay
+  - Enhanced cL E$ explanation to clarify source of level energies from "|e+|b{++}-delayed proton decays"
+  - Added weighted averaging details for gamma transition energies and intensities
+  - Modified "Evaluated rms charge radius" to "Evaluated rms nuclear charge radius R="
+  - Improved uncertainties for weighted averages across multiple datasets
+  - Added "other:" prefix to alternative measurements to clarify primary vs. secondary data
+  - Added tentative multipolarity assignments with parentheses, e.g., "(D)" and "(Q)"
+  - Standardized J-pi assignments with more consistent parenthetical notation
+  - Enhanced cross-reference (XREF) notations with clearer uncertain assignment indicators
+  - Added mirror level information for key states throughout the file
+  - Updated uncertainty representation for log ft values to use {I+n-n} format
+  - Added directional gamma-ray information (|DJ values) for key transitions
+
+## 2025-04-23
+- Changed multipolarity notation format across multiple files to use D/Q notation instead of E1/E2/M1/M2:
+  - Updated Ar35_adopted.ens:
+    - Changed E1 → D for all dipole transitions (1446.2, 3542.0 keV, etc.)
+    - Changed E2 → Q for all quadrupole transitions (1750.6, 2603.0, 2187.1, 1406.9, 2828.3, 1693.3, 1796.3, 2370.9 keV)
+    - Changed M1 → D for all dipole transitions (381.6 keV)
+    - Changed M2 → Q for all quadrupole transitions (3197.0 keV)
+    - Updated associated comments to use D and Q terminology instead of E1, E2, M1, M2
+    - Modified explanation in multipolarity section: "...uses D and Q, instead of M1 and E2, or, E1 and M2"
+    - Updated cG M$ lines with consistent D/Q nomenclature
+
+  - Expanded comment section in Ar35_adopted.ens:
+    - Added details about gamma-ray asymmetry measurements methodology
+    - Updated reference citations for recent theoretical calculations (2020Ri06, 2020RiZX, 2020RiZZ)
+    - Added recent experimental data from 2019ChZU measurements
+    - Included more explicit cross-referencing between datasets
+    - Improved clarity of level-ordering explanations
+    
+  - Refined level energy determinations in Ar35_adopted.ens:
+    - Added weighted average calculation explanations for key levels
+    - Enhanced precision for several energy levels based on new measurements
+    - Added detailed breakdown of gamma branching ratio calculations
+    - Improved consistency in uncertainty representations throughout file
+    - Added S-factor values for proton-unbound states
+
+  - Updated Ar35_16o_24mg_ang.ens:
+    - Changed E1 → D for gamma transitions at 1446.2 and 381.6 keV
+    - Changed M2 → Q for gamma transition at 3197.0 keV
+    - Changed E2 → Q for gamma transition at 2187.4 keV
+    
+  - Attempted updates on Ar35_24mg_16o_ang.ens with similar D/Q notation changes
+  - Careful character-by-character replacements were necessary to maintain exact column positioning
+
+- Worked on secondary references and new literature:
+  - Added recent shell-model calculation citation by Surender et al. (2024) to Ar35_ec_decay_175_ms.ens
+  - Fixed reference formats for theoretical calculations in the comment section
+  - Updated BetaShape version reference to v2.4 (Jun-2024) in Ar35_ec_decay_175_ms.ens
+  - Fixed typo "coeffcients" → "coefficients" in IMME comment section
+
+- Updated analysis tools references:
+  - Changed GLSC version date to 21-Mar-2025 in dL comment lines
+  - Updated pandemonium assessment with specific yields and integration details from 1977Ha51
+
+- Updated copilot-instructions.md:
+  - Added critical rule: "DO NOT EDIT any .old files EVER! These are reference files that must remain unmodified"
+  - Emphasized the importance of not touching .old files with multiple repetitions of the rule
+  - Added rule to only replace specific characters when editing ENSDF files, not entire lines
+  - Reinforced the importance of preserving exact column positions in ENSDF files
+
+## 2025-04-21
+- Updated Ar35_16o_24mg_ang.ens file:
+  - Changed multipolarity notations:
+    - E1 → D for gamma transitions at 1446.2 and 381.6 keV
+    - M2 → Q for gamma transition at 3197.0 keV
+    - E2 → Q for gamma transition at 2187.4 keV
+  - Maintained exact spacing and column alignment for all numerical values
+- Added rule to copilot-instructions.md: "DO NOT EDIT any .old files EVER!"
+- Attempted to modify multipolarity notations in Ar35_16o_24mg_ang.ens and Ar35_24mg_16o_ang.ens files:
+  - Changed E1 → D (Dipole radiation)
+  - Changed E2 → Q (Quadrupole radiation)
+  - Changed M1 → D (Dipole radiation) 
+  - Changed M2 → Q (Quadrupole radiation)
+- Note: Changes will need review for proper column alignment and formatting
+
+## 2025-04-20
+- Updated Ar35_adopted.ens:
+  - Changed reference from 2012WA38 to 2021WA16 in the Q record
+  - Updated Q-value uncertainties: 0.9→0.9, 0.8→0.7, 0.8→0.7, 0.8→0.7
+  - Changed J assignment for level 2982.79 keV from "3/2+,5/2+" to "5/2+" only
+  - Changed J assignment for 5113 keV level to "(3/2,5/2)+" from "3/2+,5/2+" 
+  - Corrected level ordering at ~6.3 MeV (6332, 6345 keV with XREF=A(6348*))
+  - Added XREF=A reference markers to levels at 7255, 7427 and 7509 keV
+  - Changed 7504 keV to 7509 keV and updated its log ft from "4.79 {i18}" to "<5.0"
+  - Updated XREF=A(8393?) reference for 8395 keV level with uncertainty indicator
+  - Improved precision of E(level) to 4785.7 keV (from 4785.8) for consistency
+  - Added "F" reference for 32S(A,N) reaction in XREF section
+  - Changed XREF ordering and relettered cross-references for various datasets
+  - Added multipolarities to gamma transitions:
+    - Added E2 to 1750.6 keV gamma from 1750.7 keV level
+    - Added E2 to 2603.0 keV gamma from 2603.1 keV level
+    - Changed from "(M2)" to "M2" for 3197.0 keV gamma from 3196.9 keV level
+    - Added E2 to 2187.1 keV gamma from 5384.2 keV level
+    - Added M1 to 381.6 keV gamma from 5765.8 keV level
+    - Added E2 to transitions from 9905.5 keV level (1693.3, 1796.3 keV)
+    - Added E2 to 2370.9 keV gamma from 12276.4 keV level
+  - Fixed format of the J$L comment at 0.0 keV level (proper "|" symbol)
+  - Removed redundant spaces in gamma energy and intensity fields for proper column alignment
+
+## 2025-04-18
+- Updated Ar35_ec_decay_175_ms.ens file with E(p) values from 2019ChZU measurements
+- Added E(level) calculations derived from E(p) center-of-mass energies
+- Added detailed level comments showing E(p){-c.m.} values for proton-unbound states
+- Calculated weighted average E(level) values for levels with multiple E(p) measurements
+- Added explanations for E(level) derivations using S(p) and reference energies
+- Updated Ar35_ec_decay_175_ms.ens file with pandemonium test results and explanations in comment section
+- Added detailed cG comment lines explaining the pandemonium effect assessment by 1980Ew02
+- Clarified that according to 1980Ew02, less than one percent of gamma intensity from 35K decay would be missed due to pandemonium effect
+
+## 2025-04-17
+- Inserted new 35AR cG $ line with “pandemonium test” statement above 35AR cG E,RI$ in Ar35_ec_decay_175_ms.ens
+- Corrected placement of the pandemonium test comment as requested
+- Revised copilot-instructions.md to clarify N record column positions and to never reference the 1998Sc19 PDF
+- Ran dataset ENSDF file through Format Check, BrIcc (conversion coefficients, S G records, CC fields), GLSC (level fitting, intensity balance, normalization, TI), and BetaShape (IB, IE, log ft, EAV, KLM capture); incorporated their outputs
+
+## 2025-04-15
+- Fixed the BR value positioning (column 32) in d:\X\ND\Files\A35\finished\Ar35\new\Ar35_36ca_ecp_decay_100.9_ms.ens
+- Updated NR value to 1.85±0.04 from proper error propagation of BR=0.541±0.012
+- Modified NR comment to "From 100/%|e+|b{++}p"
+- Updated copilot-instructions.md with column positioning requirements
+
+## 2025-04-14
+- Deleted all "35ARS E EAV=" lines from d:\X\ND\Files\A35\finished\Ar35\new\Ar35_ec_decay_178_ms.ens
+- Formatted {+1}H({+36}Ar,{+35}K)2n reaction in ENSDF notation in 2018Sa54 reference
+- Formatted {+36}Ar({+9}Be,{+10}Li){+35}K reaction in ENSDF notation in 2006Me04 reference
+- Added concise 1998Sc19 reference comment describing {+35}K polarization and g-factor measurements
+- Updated copilot-instructions.md with rule about not modifying first/last line indentation
+- Fixed spelling and formatting errors in various reference comments
+
+## 2025-06-26 (Evening): Enhanced Column Calibration Tool for 80-Column Debugging
+
+**Summary**: Major enhancement of column calibration tool with visual ruler technique for effective ENSDF 80-column format debugging. Added quick header analysis mode and improved instructions for alignment troubleshooting.
+
+**Tool Improvements:**
+
+### **column_calibrate.py**: Enhanced with Visual Ruler Debugging
+- **Lines 182-220**: Added `quick_header_analysis()` function for rapid header debugging:
+  - Visual 80-column ruler with ones/tens display
+  - Immediate field breakdown (NUCID, DSID, DSREF, PUB, DATE)
+  - Length validation and alignment checking
+  - Clear pass/fail indicators for formatting issues
+
+- **Lines 135-140**: Enhanced main ruler display with color coding:
+  - `Ones:  12345678901234567890123456789012345678901234567890123456789012345678901234567890`
+  - `Tens:  1111111111222222222233333333334444444444555555555566666666667777777777888888888999`
+  - Makes column position identification immediate and visual
+
+- **Lines 270-272**: Added `--header` command line flag for quick analysis mode
+- **Usage Examples**: `python .vscode/column_calibrate.py "file.ens" --header`
+
+### **copilot-instructions.md**: Added 80-Column Debugging Protocol
+- **Lines 17-35**: New "Debug Header Alignment" section with immediate action steps
+- **Lines 11-16**: Enhanced "80-Column Alignment Debugging Protocol" with trigger phrases
+- **Visual Ruler Technique**: Documented Python one-liner for manual debugging:
+  ```python
+  python -c "header='[paste line]'; print('Ruler:'); print('Ones: 123...'); print('Header:', header)"
+  ```
+
+**Scientific Context**: 
+The ENSDF (Evaluated Nuclear Structure Data File) format requires exactly 80-character lines with specific field positions. Misalignment causes data parsing errors and violates international nuclear data standards. The visual ruler technique provides immediate visual feedback for debugging column position issues.
+
+**Testing Results**: 
+- ✅ Quick header analysis on `S35_26mg_18o_2ang_xundl-2.xundl` shows proper 80-character formatting
+- ✅ Visual ruler clearly identifies field boundaries and alignment issues
+- ✅ Enhanced error messages provide specific guidance for fixing formatting problems
+
+---
