@@ -67,6 +67,10 @@ Received training from my line manager regarding the A=35 evaluation and data co
 Lijie Sun – 22 June 2025 - 28 June 2025
 Received training from my line manager regarding the A=35 evaluation. Added 6 reaction datasets for 35S. Reviewed 1 paper submitted to Scientific Reports for data consistency.
 
+Lijie Sun – 29 June 2025 - 5 July 2025
+Received training from my line manager regarding the A=35 evaluation and data consistency check. Added 1 reaction dataset for 35S. Performed data consistency check for CF10990 and XUNDL compilation for 125Te data in 2025DeAA. Implementing AI Agent through GitHub Copilot to enhance ENSDF formatting efficiency.
+
+
 
 Prompt tuning vs. fine tuning:
 What's the difference between prompt tuning and fine tuning? Really good way to think about it is, in fine tuning, you're actually rewiring the brain of the model, versus in prompt tuning, you're just giving the LLM better instructions. Prompt tuning helps LLMs perform better on a specific task without having to retrain the entire model, and this is done by creating something called a soft prompt. A prompt is essentially like instruction manual for how the LLM should respond to your request, instead of having to go back and retrain the entire model, like when you are fine tuning. Instead, you can give the LLM a couple of examples, and it will learn from those examples that you've given. Sometimes soft prompts can be really hard to interpret, but they are a really great way to teach an LLM how to pick up a new task relatively easily and efficiently. Fine tuning, on the other hand, is a lot more expensive because think about it like you're trying to rewire and retrain the entire brain of the machine learning model. One thing that you can't do with prompt tuning, that you can do with fine tuning, though, is that you're changing the internal parameters, like the weights and biases of the actual model itself, which is why a lot of companies now are opting to prompt tune instead of fine tune, especially if it's a small task that needs to get achieved, fine tuning is going to be a lot more expensive, because you're going to need all of that compute power to actually retrain all of the model and data.
@@ -90,14 +94,17 @@ Since 2015, the MSU Nuclear Data Center has been consistently recognized as one 
 
 #### XUNDL Compilation
 - **Period**: Since June 2025
-- **Output**: Compiled 1 dataset
+- **Output**: Compiled 2 datasets for 115Sb, 125Te.
 
 #### Data Consistency Check
-- **Period**: Since June 2025  
-- **Output**: Reviewed 1 PRC paper
+- **Period**: Since June 2025
+- **Output**: Reviewed 2 PRC papers
 
-### Technical Development
+### Technical Innovation
 Explore the use of AI agent within VS Code to streamline and automate the workflow by prompt tuning the agent to assist in data evaluation tasks. This includes automating repetitive tasks, enhancing data consistency checks, and improving overall efficiency in data processing.
+
+AI-assisted Workflow Development
+Column calibration tool for ENSDF 80-column formatting
 
 ### Research
 - **Period**: Since Feb 2025
