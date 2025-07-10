@@ -439,12 +439,29 @@ Completion of comprehensive ENSDF column calibration tooling and systematic impr
 - **Cross-check** with provided data tables
 
 
-DCO Ratio and Polarization Analysis:
-Rule Summary:
+### DCO Ratio and Polarization Analysis
+**Essential for multipolarity assignments in gamma-ray spectroscopy**
 
-DCO(D) ≈ 1.0 → Dipole transition
-DCO(D) ≈ 1.6 → Quadrupole transition
-DCO(Q) ≈ 1.0 → Quadrupole transition
-DCO(Q) ≈ 0.6 → Dipole transition
-POL > 0 → Electric transition
-POL < 0 → Magnetic transition
+#### **DCO Ratio Rules**
+- **DCO(D) ≈ 1.0** → Dipole transition (M1, E1, or M1+E2 with dominant M1)
+- **DCO(D) ≈ 1.6** → Quadrupole transition (E2 or M2)
+- **DCO(Q) ≈ 1.0** → Quadrupole transition (E2 or M2)  
+- **DCO(Q) ≈ 0.6** → Dipole transition (M1, E1, or M1+E2 with dominant M1)
+
+#### **Polarization Rules**
+- **POL > 0** → Electric transition (E1, E2, etc.)
+- **POL < 0** → Magnetic transition (M1, M2, etc.)
+- **POL ≈ 0** → Mixed transition or measurement uncertainty
+
+#### **Quality Control Guidelines**
+- **Expected DCO ranges**: 0.4-1.4 for dipole, 0.8-1.8 for quadrupole
+- **Red flags**: DCO > 2.0 or DCO < 0.3 (possible contamination or experimental issues)
+- **Borderline values**: 0.8-1.2 may require additional analysis
+- **Cross-verification**: Always check DCO consistency with nuclear structure logic
+
+#### **Systematic Analysis Protocol**
+1. **Extract all DCO and POL data** from experimental comments
+2. **Apply rules systematically** to each transition
+3. **Identify inconsistencies** between assigned multipolarity and DCO/POL
+4. **Flag unusual values** (DCO > 2.0) for further investigation
+5. **Document findings** with specific energy, DCO value, and recommended assignment

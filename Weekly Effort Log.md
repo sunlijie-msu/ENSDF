@@ -124,3 +124,6 @@ This meeting marks a milestone in the history of the NSDD network, as it was exa
 
 The final recommendation of the meeting was:"to extend the existing compilation and evaluation efforts and co-operative links to an efficient and coherent network of international co-operation in order to improve the services to the users. This system should be based on the free international exchange of experimental as well as evaluated nuclear data."
 
+We are not talking about AI robots that don't require humans. Instead, we're talking about the Iron Man suit, which needs a human and enhances their abilities. The conversation has shifted from whether we should use AI to how we can use AI most effectively. This is the focus we need to have.
+
+Less typing; more thinking.
