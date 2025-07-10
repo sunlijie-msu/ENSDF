@@ -116,3 +116,11 @@ Column calibration tool for ENSDF 80-column formatting
 - **USNDP**: Worked closely with the U.S. Nuclear Data Program to align efforts and share resources. Contributed to NSR.
 - **NSDD**: Engaged with the International Network of Nuclear Structure and Decay Data evaluators to ensure global standards and practices in nuclear data evaluation. Contributed to X4PDF.
 - **BEApR**: Communicated data issues and collaborated on data consistency checks with BEApR evaluators at Berkeley.
+
+Draft for FRIB Greensheet - May 2026
+FRIB will host the 26th International Network of Nuclear Structure and Decay Data Evaluators (NSDD) meeting from April 15-19, 2026, bringing together nuclear data scientists from around the world. NSDD is a long-running collaborative network that has been convened at sites across the globe and focuses on advances in nuclear structure and decay data evaluation, standardization, and dissemination. FRIB's selection as host reflects our strong contributions to the nuclear data community and global recognition in nuclear structure evaluation. Thank you to everyone who helped make the 26th NSDD meeting a success.
+
+This meeting marks a milestone in the history of the NSDD network, as it was exactly 50 years ago, at a Specialists' Meeting on Nuclear Data for Applications, IAEA, Vienna, 29 April - 3 May 1974 (INDC(NDS)-060), where expert groups on compilation and evaluation of nuclear structure and decay data from all over the world convened to "extend international cooperation in nuclear structure and decay data to meet the growing needs of the basic and applied sciences community for complete and up-to-date recommended nuclear structure and decay data."
+
+The final recommendation of the meeting was:"to extend the existing compilation and evaluation efforts and co-operative links to an efficient and coherent network of international co-operation in order to improve the services to the users. This system should be based on the free international exchange of experimental as well as evaluated nuclear data."
+

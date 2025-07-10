@@ -417,3 +417,34 @@ Completion of comprehensive ENSDF column calibration tooling and systematic impr
 
 **Remember**: Nuclear data accuracy is critical - when in doubt, verify with tools and cross-check against ENSDF Manual specifications.
 
+## Image Data Extraction Protocol
+
+### Level Scheme Analysis
+- **Systematic scanning**: Left-to-right, top-to-bottom approach
+- **Energy identification**: Clear notation for parentheses, uncertainties, tentative assignments
+- **Color coding**: Black (known) vs Red (new) vs other markings
+- **Special notations**: Asterisks (*), question marks (?), parentheses ()
+- **Cross-verification**: Compare extracted data with tabulated lists
+
+### Spectral Analysis
+- **Peak identification**: Exact energy labels, not estimates
+- **Gate verification**: Check coincidence logic with nuclear structure
+- **Contamination markers**: Identify non-target nuclide peaks
+- **Quality indicators**: Intensity, resolution, background
+
+### Quality Control
+- **Never guess or interpolate** energy values
+- **Admit uncertainty** when image quality is poor
+- **Section-by-section verification** before final compilation
+- **Cross-check** with provided data tables
+
+
+DCO Ratio and Polarization Analysis:
+Rule Summary:
+
+DCO(D) ≈ 1.0 → Dipole transition
+DCO(D) ≈ 1.6 → Quadrupole transition
+DCO(Q) ≈ 1.0 → Quadrupole transition
+DCO(Q) ≈ 0.6 → Dipole transition
+POL > 0 → Electric transition
+POL < 0 → Magnetic transition
