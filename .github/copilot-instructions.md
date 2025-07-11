@@ -1,3 +1,6 @@
+---
+applyTo: "**"
+---
 # ENSDF Nuclear Data Evaluation Instructions
 
 ## ⚠️ CRITICAL WORKFLOW REMINDER ⚠️

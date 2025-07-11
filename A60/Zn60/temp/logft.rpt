@@ -1,0 +1,98 @@
+** RadiationReport (update 02/11/2025): report for calculated logft values **
+Generated at: Thu 03/20/2025 at 10:18:30 PM EDT
+
+ Input file: D:\X\ND\Files\A60\finished\Zn60\temp_merge\test.ens
+Report file: D:\X\ND\Files\A60\finished\Zn60\temp_merge\logft.rpt
+
+ assumptions for non-numerical uncertainties in RI and TI, unless otherwise specified:
+    DRI                assumed %DRI        
+    -----------        ------------        
+    Empty              0
+    LT or LE           50 for DRI(+); assumed RI=DRI(-)=%(100-this value)
+   #GT or GE           0 for DRI(+); assumed DRI(-)=0, unless noted below
+    AP                 0
+    CA                 50
+    SY                 50
+
+   # Adjusted RI=(100+RI)/2, DRI=(100-RI)/2 for absolute intensities
+   * DCC theory=1.4% assumed if DCC not given
+   * Uncertainty Limit=35 for rounding-up uncertainty in output
+
+
+********************Dataset=<60GA EC DECAY (69.4 MS)>***********************************************
+
+      60GA  P 0           2+                69.4 MS   3              14160     15    
+      60ZN  N 1.0                   1.0       1.0                                    
+
+
+----------------------------------------------------------------------------------------------------
+      60ZN  L 1003.53   10 2+                                                        
+<old> 60ZN  E                                                        17        4     
+<new> 60ZN  E             17      4 0.007   2 4.9     1              17        4     
+
+<new> 60ZNS E EAV=5834 8$CK=3.52E-4 4$CL=3.87E-5 4$CM+=6.89E-6 7
+
+     Parent JPI=2+    final-level JPI=2+  *allowed*
+     *** IB and IE are recalculated using IT **
+
+     Total decay energy     =13157     15     BR(%)=17        4      partial T1/2 (s) =0.41      +13-8 
+     End-of-point(B+) EMAX  =12135     15    
+     Average energy(B+) EAV =5834      8      EAV/EMAX=0.4808    9     
+
+     EC/B+       =3.98E-4   4      log(EC/B+)  =-3.400    5      ECK/B+         =3.53E-4         
+     ECK/(EC+B+) =3.52E-4   4      ECL/(EC+B+) =3.87E-5   4      EC(M+)/(EC+B+) =6.89E-6   7     
+     I(B+)       =17        4      I(EC)       =0.0068    17    
+
+       log(t)    =-0.39     +12-10       log(f0) =5.25            
+       log(f0*t) =4.86      +12-10       f0*t    =7.2E4     +23-14
+
+       log(f1*t) =7.39      +12-10  (calculated as 1st forbidden unique)
+
+----------------------------------------------------------------------------------------------------
+      60ZN  L 2558.54   23 (2+)                                                      
+<old> 60ZN  E                                                        9.2       9     
+<new> 60ZN  E             9.2     9 0.0055  6 4.83    4              9.2       9     
+
+<new> 60ZNS E EAV=5061 8$CK=5.29E-4 6$CL=5.82E-5 6$CM+=1.034E-5 11
+
+     Parent JPI=2+    final-level JPI=(2+)  *allowed*
+     *** IB and IE are recalculated using IT **
+
+     Total decay energy     =11602     15     BR(%)=9.2       9      partial T1/2 (s) =0.75      8     
+     End-of-point(B+) EMAX  =10580     15    
+     Average energy(B+) EAV =5061      8      EAV/EMAX=0.4784    10    
+
+     EC/B+       =5.98E-4   7      log(EC/B+)  =-3.223    5      ECK/B+         =5.29E-4         
+     ECK/(EC+B+) =5.29E-4   6      ECL/(EC+B+) =5.82E-5   6      EC(M+)/(EC+B+) =1.034E-5  11    
+     I(B+)       =9.2       9      I(EC)       =0.0055    6     
+
+       log(t)    =-0.12     +4-5         log(f0) =4.96            
+       log(f0*t) =4.84      +4-5         f0*t    =6.9E4     7     
+
+       log(f1*t) =7.25      +4-5    (calculated as 1st forbidden unique)
+
+----------------------------------------------------------------------------------------------------
+      60ZN  L 4851.97   32 2+                                                        
+<old> 60ZN  E                                                        44.3      31    
+<new> 60ZN  E             44.3    31 0.055  4 3.65    3              44.3      31    
+
+<new> 60ZNS E EAV=3926 8$CK=0.001090 13$CL=1.198E-4 14$CM+=2.131E-5 24
+
+     Parent JPI=2+    final-level JPI=2+  *allowed*
+     *** IB and IE are recalculated using IT **
+
+     Total decay energy     =9308      15     BR(%)=44.3      31     partial T1/2 (s) =0.157     11    
+     End-of-point(B+) EMAX  =8286      15    
+     Average energy(B+) EAV =3926      8      EAV/EMAX=0.4738    13    
+
+     EC/B+       =0.001232  14     log(EC/B+)  =-2.909    5      ECK/B+         =0.00109         
+     ECK/(EC+B+) =0.001090  13     ECL/(EC+B+) =1.198E-4  14     EC(M+)/(EC+B+) =2.131E-5  24    
+     I(B+)       =44.3      31     I(EC)       =0.055     4     
+
+       log(t)    =-0.805    +30-32       log(f0) =4.45            
+       log(f0*t) =3.649     +30-32       f0*t    =4.46E3    32    
+
+       log(f1*t) =5.863     +30-32  (calculated as 1st forbidden unique)
+
+
+End of LOGFT report

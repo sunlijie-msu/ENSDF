@@ -1,0 +1,147 @@
+Input file:  D:\X\ND\Files\A60\finished\Zn60\temp_merge\2001MA96,2021OR01.ens
+Output file: D:\X\ND\Files\A60\finished\Zn60\temp_merge\2001MA96,2021OR01.new
+
+####################################################  EC DECAYS  ####################################################
+
+---------------------------------------------------------------------------------------------------------------------  1
+
+ 60GA  P 0           2+                69.4 MS   2              14160     15    - PARENT
+ 60ZN  N 0.62      0           1.0                                              - NORMALIZATION
+ 60ZN PN                                                                     4  - PRODUCTION NORMALIZATION
+ 60ZN  L 1003.53   10 2+                                                        - LEVEL
+
+***** BR*NB from PN record *****
+
+From calculation: 'A' transition assumed.
+K =  4.01E-4 (13) | L =  4.46E-5 (14) | M =  7.38E-6 (23) | N =  5.86E-7 (22)
+K/b+ =  4.01E-4 (13) | L/b+ =  4.46E-5 (13) | M/b+ =  7.38E-6 (21) | N/b+ =  5.867E-7 (65) | EC/b+ =  4.54E-4 (14)
+
+Branch splitting:  Iec 0.0077 (23) %  and  Ib+ 17 (5) %
+                   Itot 17 (5) %
+EC component of log ft 4.86 (+17 -13)
+
+*    log ft
+ 60ZN  E                                                        17        5     - OLD CARD
+ 60ZN  E             17       50.0077  234.86    +17-13         17         5    - NEW CARD
+
+*    Probabilities
+ 60ZNS E EAV= $CK=4.01E-4 13$CL=4.46E-5 14$CM+=7.97E-6 23                       - NEW CARD
+
+---------------------------------------------------------------------------------------------------------------------  2
+
+ 60GA  P 0           2+                69.4 MS   2              14160     15    - PARENT
+ 60ZN  N 0.62      0           1.0                                              - NORMALIZATION
+ 60ZN PN                                                                     4  - PRODUCTION NORMALIZATION
+ 60ZN  L 2558.54   23 (2+)                                                      - LEVEL
+
+***** BR*NB from PN record *****
+
+From calculation: 'A' transition assumed.
+K =  5.86E-4 (19) | L =  6.52E-5 (21) | M =  1.079E-5 (35) | N =  8.58E-7 (33)
+K/b+ =  5.87E-4 (19) | L/b+ =  6.53E-5 (20) | M/b+ =  1.079E-5 (31) | N/b+ =  8.58E-7 (10) | EC/b+ =  6.64E-4 (21)
+
+Branch splitting:  Iec 0.00610 (69) %  and  Ib+ 9.2 (10) %
+                   Itot 9.2 (10) %
+EC component of log ft 4.836 (+67 -61)
+
+*    log ft
+ 60ZN  E                                                        9.2       10    - OLD CARD
+ 60ZN  E             9.2     100.00610 694.836   +67-61         9.2       10    - NEW CARD
+
+*    Probabilities
+ 60ZNS E EAV= $CK=5.86E-4 19$CL=6.52E-5 21$CM+=1.165E-5 35                      - NEW CARD
+
+---------------------------------------------------------------------------------------------------------------------  3
+
+ 60GA  P 0           2+                69.4 MS   2              14160     15    - PARENT
+ 60ZN  N 0.62      0           1.0                                              - NORMALIZATION
+ 60ZN PN                                                                     4  - PRODUCTION NORMALIZATION
+ 60ZN  L 4851.97   32 2+                                                        - LEVEL
+
+***** BR*NB from PN record *****
+
+From calculation: 'A' transition assumed.
+K =  0.001167 (38) | L =  1.299E-4 (43) | M =  2.147E-5 (71) | N =  1.708E-6 (67)
+K/b+ =  0.001168 (39) | L/b+ =  1.300E-4 (41) | M/b+ =  2.150E-5 (64) | N/b+ =  1.710E-6 (22) | EC/b+ =  0.001322 (44)
+
+Branch splitting:  Iec 0.0582 (46) %  and  Ib+ 44.0 (32) %
+                   Itot 44.1 (32) %
+EC component of log ft 3.651 (+51 -48)
+
+*    log ft
+ 60ZN  E                                                        44.1      32    - OLD CARD
+ 60ZN  E             44.0    320.0582  463.651   +51-48         44.1      32    - NEW CARD
+
+*    Probabilities
+ 60ZNS E EAV= $CK=0.001167 38$CL=1.299E-4 43$CM+=2.318E-5 71                    - NEW CARD
+
+---------------------------------------------------------------------------------------------------------------------  
+
+-------- Total: 3
+-------- Added lines: 4
+
+
+####################################################  B+ DECAYS  ####################################################
+
+---------------------------------------------------------------------------------------------------------------------  1
+
+ 60GA  P 0           2+                69.4 MS   2              14160     15    - PARENT
+ 60ZN  N 0.62      0           1.0                                              - NORMALIZATION
+ 60ZN PN                                                                     4  - PRODUCTION NORMALIZATION
+ 60ZN  L 1003.53   10 2+                                                        - LEVEL
+
+***** BR*NB from PN record *****
+
+From calculated spectrum: 'A' transition assumed.
+Emean 5790.3 (74) keV   |   log ft (ec & beta +) 4.86 (+16 -12)
+
+*    log ft (ec & beta +)
+ 60ZN  E                                                        17        5     - OLD CARD
+ 60ZN  E             17       50.0077  234.86    +16-12         17         5    - NEW CARD
+
+*    Mean energy
+ 60ZNS E EAV=5790.3 74$CK=4.01E-4 13$CL=4.46E-5 14$CM+=7.97E-6 23               - NEW CARD
+
+---------------------------------------------------------------------------------------------------------------------  2
+
+ 60GA  P 0           2+                69.4 MS   2              14160     15    - PARENT
+ 60ZN  N 0.62      0           1.0                                              - NORMALIZATION
+ 60ZN PN                                                                     4  - PRODUCTION NORMALIZATION
+ 60ZN  L 2558.54   23 (2+)                                                      - LEVEL
+
+***** BR*NB from PN record *****
+
+From calculated spectrum: 'A' transition assumed.
+Emean 5024.9 (74) keV   |   log ft (ec & beta +) 4.846 (+54 -49)
+
+*    log ft (ec & beta +)
+ 60ZN  E                                                        9.2       10    - OLD CARD
+ 60ZN  E             9.2     100.00610 694.846   +54-49         9.2       10    - NEW CARD
+
+*    Mean energy
+ 60ZNS E EAV=5024.9 74$CK=5.86E-4 19$CL=6.52E-5 21$CM+=1.165E-5 35              - NEW CARD
+
+---------------------------------------------------------------------------------------------------------------------  3
+
+ 60GA  P 0           2+                69.4 MS   2              14160     15    - PARENT
+ 60ZN  N 0.62      0           1.0                                              - NORMALIZATION
+ 60ZN PN                                                                     4  - PRODUCTION NORMALIZATION
+ 60ZN  L 4851.97   32 2+                                                        - LEVEL
+
+***** BR*NB from PN record *****
+
+From calculated spectrum: 'A' transition assumed.
+Emean 3900.2 (73) keV   |   log ft (ec & beta +) 3.661 (+38 -35)
+
+*    log ft (ec & beta +)
+ 60ZN  E                                                        44.1      32    - OLD CARD
+ 60ZN  E             44.0    320.0582  463.661   +38-35         44.1      32    - NEW CARD
+
+*    Mean energy
+ 60ZNS E EAV=3900.2 73$CK=0.001167 38$CL=1.299E-4 43$CM+=2.318E-5 71            - NEW CARD
+
+---------------------------------------------------------------------------------------------------------------------  
+
+-------- Total: 3
+-------- Added lines: 1
+

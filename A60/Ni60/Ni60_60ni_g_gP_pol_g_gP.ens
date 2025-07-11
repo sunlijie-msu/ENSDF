@@ -1,0 +1,704 @@
+ 60NI    60NI(G,G'),(POL G,G')         2013SC20                  13NDS    201312
+ 60NI  H TYP=UPD$AUT=E. BROWNE, J. K. TULI$CUT=1-Dec-2013$                      
+ 60NI2 H COM=Included dataset from XUNDL$                                       
+ 60NI  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1849 (2013)$            
+ 60NI2 H CUT=31-Dec-2012$                                                       
+ 60NI c  This dataset is taken (without modifications) from xundl after the     
+ 60NI2c  A=60 evaluation was published in Nuclear Data Sheets.                  
+ 60NI c  The dataset was compiled                                               
+ 60NI3c  by F.G. Kondev (ANL) and B. Singh (McMaster)on Nov 2, 2013.; later     
+ 60NI4c  edited by B. Singh (McMaster) on Nov 13, 2013; e-mail reply            
+ 60NI2c  of Nov 13, 2013 from M. Scheck to B. Singh was incorporated by him;    
+ 60NI3c  level energies changed to those listed in the paper, rather than from  
+ 60NI4c  least-squares fit.                                                     
+ 60NI c  In  e-mail reply of Nov 14, 2013 to B. Singh, M. Scheck,               
+ 60NI2c  supplied numerical data for figure 3                                   
+ 60NI3c  in paper; numerical values of angular correlation included.            
+ 60NI c  Bremsstrahlung measurements using the S-DALINAC accelerator in         
+ 60NI2c  Darmstadt at E|g (max)=6.0, 8.0 and 9.9 MeV. Target=99.8% enriched in  
+ 60NI3c  {+60}Ni. Three HPGe detectors, embedded in a lead shielding, each      
+ 60NI4c  equipped with BGO anti-Compton shielding. Relative |g-ray efficiency,  
+ 60NI5c  up to 10 MeV, was simulated using the GEANT4 toolkit. Second experiment
+ 60NI6c  utilized the High Intensity |g-ray Source (HI|gS) (100% linearly       
+ 60NI7c  polarized photons) at TUNL. Measured E|g, |g|g(|q), polarization,      
+ 60NI8c  (|g,|g') cross sections and branching ratios. Deduced levels, J, |p,   
+ 60NI9c  T{-1/2}, partial widths.                                               
+ 60NI c  B(L| x ray)up and I{-s,f} cross-section values are from 2013Sc20.      
+ 60NI cG $ Expected W(90|')/W(130|') ratios from |g|g(|q) are: 0.708 for        
+ 60NI2cG 0+ -> 1 -> 0+ cascade, 0.85-0.92 for 0+ -> 1 -> 2+, 2.25 for           
+ 60NI3cG 0+ -> 2+ -> 0+, 0.85 for 0+ -> 2+ -> 2+, M1 for 2+ to 2+, and 1.36 for 
+ 60NI4cG 0+ -> 2+ -> 2+, E2 for 2+ to 2+                                        
+ 60NI cG E$From 2013Sc20. Gamma-ray energies listed in 2013Sc20 are mostly      
+ 60NI2cG recoil corrected, according to e-mail reply of Nov 13, 2013 from       
+ 60NI3cG M. Scheck which states "Concerning the recoils I corrected them for the
+ 60NI4cG levels which I had in the Darmstadt spectra. There I had fixed the     
+ 60NI5cG calibration to the {+11}B lines and needed to recalculate the energies.
+ 60NI6cG For the lines only seen in the Duke Spectra it shouldn't matter there I
+ 60NI7cG assumed quite large errors of 4 keV, since I've made an internal       
+ 60NI8cG calibration to the peaks from Darmstadt which by themselves have       
+ 60NI9cG already large errors".                                                 
+ 60NI cG RI$Intensities are branching ratios from |G{-f}/|G values given in     
+ 60NI2cG 2013Sc20, normalized to 100.                                           
+ 60NI cG M$Multipolarity are deduced using the gamma-ray polarization and       
+ 60NI2cG angular-correlation analyses. Angular asymmetry ratios for 90|' and    
+ 60NI3cG 130|' are plotted in Figure 3 of 2013Sc20, but not tabulated           
+ 60NI4cG in the paper.                                                          
+ 60NI cG E(b)$ HI|gS experiment indicates a M1/E1 doublet                       
+ 60NI cG RI(c)$ From Adopted Gammas for {+60}Ni in ENSDF database               
+ 60NI cG E(X)$From Adopted Gammas for {+60}Ni in ENSDF database; not observed   
+ 60NI2cG in the present data                                                    
+ 60NI cG E(Y)$Contaminated by a single-escape peak                              
+ 60NI cL $ B(E1)(|^) values here are in e{+2}b, and B(E2)(|^) values in         
+ 60NI2cL e{+2}b{+2}; 2013Sc20 list these in units of e{+2}fm{+2} and            
+ 60NI3cL e{+2}fm{+4}, respectively. B(M1)(|^) values are in |m{+2}{-N}          
+ 60NI cL E$From 2013Sc20, unless otherwise stated                               
+ 60NI cL J$From 2013Sc20, based on the deduced transition multipolarities,      
+ 60NI2cL unless otherwise stated                                                
+ 60NI cL J(a)$From Adopted Levels of {+60}Ni in ENSDF database                  
+ 60NI cL T$From 2013Sc20, based on the partial |g-ray width to the ground state,
+ 60NI2cL |G{-0}, and the corresponding branching ratios, unless otherwise stated
+ 60NI cL S$Partial |g-ray width to the ground state                             
+ 60NI cL E(b)$ Level observed only in the 6.0-MeV data                          
+ 60NI cL E(c)$ Level observed only in the 10.0-MeV data                         
+ 60NI cL E(d)$ Level observed only in the HI|gS experiment                      
+ 60NI PN                                                                     7  
+ 60NI  L    0.0       0+                                                    a   
+ 60NI  L 1332.7    2  2+               347 FS    GT                         a   
+ 60NI cL $|G{-0} (eV)=1.32|*10{+-3} {ILT}                                       
+ 60NI cL T$>347 fs {I12}                                                        
+ 60NI cL $B(E2)|^<0.195 {I6}                                                    
+ 60NI cL $|G{-0}<0.00132 eV {I4}                                                
+ 60NIF L FLAG=b                                                                 
+ 60NI  G 1332.7    2  100       E2                                              
+ 60NI cG $I{-s,f}<8.6 eVb 8                                                     
+ 60NI cG $ W(90|')/W(130|')=1.03 {I6}                                           
+ 60NI  L 2157.7    10 2+               6.7 FS    GT                         a   
+ 60NI cL $|G{-0} (eV)=0.0010 {ILT}                                              
+ 60NI cL T$>6.7 fs {I33}                                                        
+ 60NI cL $B(E2)|^<0.137 {I52}                                                   
+ 60NI cL $|G{-0}<0.0010 eV {I4}                                                 
+ 60NIF L FLAG=c                                                                 
+ 60NI  G 2157.7    10   15   2  E2                                          c   
+ 60NI cG $I{-s,f}<6.4 eVb 17                                                    
+ 60NI cG $ W(90|')/W(130|')=1.08 {I45}                                          
+ 60NI  L 2284.87   14 0+               1.5 PS    GT                             
+ 60NI cL E,J,T$from Adopted Levels for {+60}Ni in ENSDF database                
+ 60NI  G 952.4     2                                                        X   
+ 60NI  G 2284.87               E0                                           X   
+ 60NI  L 3123.4    8  2+               3.6 FS    GT                         a   
+ 60NI cL $|G{-0} (eV)=0.011 {ILT}                                               
+ 60NI cL T$>3.6 fs {I28}                                                        
+ 60NI cL $B(E2)|^<0.024 {I17}                                                   
+ 60NI cL $|G{-0}<0.011 eV {I8}                                                  
+ 60NIF L FLAG=c                                                                 
+ 60NI  G 1790.9    9    86   4                                              c   
+ 60NI cG $I{-s,f}<19.4 eVb 43                                                   
+ 60NI cG $ W(90|')/W(130|')=1.05 {I30}                                          
+ 60NI  G 3124.1    3     9   1  [E2]                                        c   
+ 60NIF G FLAG=X                                                                 
+ 60NI  L 3193.6    7  1+               3.1 FS    GT                             
+ 60NI cL $|G{-0} (eV)=0.024|*10{+-3} {I8}                                       
+ 60NI cL T$>3.1 fs {I12}                                                        
+ 60NI cL $B(M1)|^<0.190 {I67}                                                   
+ 60NI cL E$level not observed in the 6.0-MeV data                               
+ 60NI  G 1861.2    11   38   1                                              c   
+ 60NI cG $I{-s,f}<11.1 eVb 36                                                   
+ 60NI cG $ W(90|')/W(130|')=1.04 {I63}                                          
+ 60NI  G 3193.3    10   16   1  M1                                          c   
+ 60NI cG $I{-s,f}<4.4 eVb 14                                                    
+ 60NI cG $ W(90|')/W(130|')=0.60 {I33}                                          
+ 60NI  L 3268.9    11 2+               7.42 FS   GT                         a   
+ 60NI cL $|G{-0} (eV)=0.009 {ILT}                                               
+ 60NI cL T$>7.42 fs {I21}                                                       
+ 60NI cL $B(E2)|^<0.0157 {I53}                                                  
+ 60NI cL $|G{-0}<0.009 eV {I2}                                                  
+ 60NI2 L FLAG=c                                                                 
+ 60NI  G 1936.4    11   43   2                                              c   
+ 60NI cG $I{-s,f}<7.4 eVb 27                                                    
+ 60NI cG $ W(90|')/W(130|')=1.10 {I74}                                          
+ 60NI  G 3269.4    3    15   1  [E2]                                        c   
+ 60NIF G FLAG=X                                                                 
+ 60NI  L 3393.3    10 2+               2.4 FS    GT                         a   
+ 60NI cL $|G{-0} (eV)=0.0010 {ILT}                                              
+ 60NI cL T$>2.4 fs {I42}                                                        
+ 60NI cL $B(E2)|^<0.014 {I19}                                                   
+ 60NI cL $|G{-0}<0.0010 eV {I14}                                                
+ 60NI  G 2059.8    10   84   6                                              c   
+ 60NI cG $I{-s,f}<14.5 eVb 37                                                   
+ 60NI cG $ W(90|')/W(130|')=1.03 {I40}                                          
+ 60NI  G 3393.4    8     6   2  [E2]                                        c   
+ 60NIF G FLAG=X                                                                 
+ 60NI  L 3797.9    10 1                118 FS    15                             
+ 60NI cL $|G{-0} (eV)=0.0039 {I10}                                              
+ 60NI cL $B(E1)|^=0.203|*10{+-5} {I26} or B(M1)|^=0.018 {I3}                    
+ 60NI  G 3797.9    10 100                                                       
+ 60NI cG $I{-s,f}=3.1 eVb 4                                                     
+ 60NI cG $ W(90|')/W(130|')=0.79 {I6}                                           
+ 60NI  L 3908       3 1                27 FS     5                              
+ 60NI cL $|G{-0} (eV)=0.017 {I1}                                                
+ 60NI cL E$ 3908.1 {I3} in table IV of 2013Sc20 seems a misprint                
+ 60NI cL $B(E1)|^=0.82|*10{+-5} {I15} or B(M1)|^=0.074 {I14}                    
+ 60NI  G 3908      3  100                                                       
+ 60NI cG $I{-s,f}=12.9 eVb 8                                                    
+ 60NI cG $ W(90|')/W(130|')=0.93 {I8}                                           
+ 60NI  L 4006.7    8  2+               22 FS     4                          a   
+ 60NI cL $|G{-0} (eV)=0.0078 {I15}                                              
+ 60NI cL $B(E2)|^=0.0047 {I7}                                                   
+ 60NI2 L FLAG=b                                                                 
+ 60NI  G 4006.7    11   38   2  E2                                          c   
+ 60NI cG $I{-s,f}=4.2 eVb 4                                                     
+ 60NI cG $ W(90|')/W(130|')=2.18 {I40}                                          
+ 60NI  L 4020.6     3 1+               13 FS     6                              
+ 60NI cL $|G{-0} (eV)=0.020 {I8}                                                
+ 60NI cL $B(M1)|^=0.079 {I18}                                                   
+ 60NI  G 4020.6    3    55   3  M1                                              
+ 60NI cG E,RI$from Adopted Gammas of {+60}Ni in ENSDF database                  
+ 60NI cG $I{-s,f}=8.2 eVb 7                                                     
+ 60NI cG $ W(90|')/W(130|')=0.76 {I6}                                           
+ 60NI  L 4844.5     7 2+               6.9 FS    21                             
+ 60NI cL $|G{-0} (eV)=0.226 {I71}                                               
+ 60NI cL $B(E2)|^=0.0052 {I12}                                                  
+ 60NI2 L FLAG=b                                                                 
+ 60NI  G 4844.5    7    33   2  E2                                          c   
+ 60NI cG $I{-s,f}=6.1 eVb 8                                                     
+ 60NI cG $ W(90|')/W(130|')=2.31 {I96}                                          
+ 60NI  L 5064.5     6 1                2.98 FS   28                             
+ 60NI cL $|G{-0} (eV)=0.124 {I10}                                               
+ 60NI cL $B(E1)|^=2.7|*10{+-5} {I3} or B(M1)|^=0.247 {I18}                      
+ 60NI  G 3732.1    9    19   3                                                  
+ 60NI cG $I{-s,f}=9.2 eVb 21                                                    
+ 60NI cG $ W(90|')/W(130|')=0.79 {I10}                                          
+ 60NI  G 5065.4    7    81   2                                                  
+ 60NI cG $I{-s,f}=43.5 eVb 25                                                   
+ 60NI cG $ W(90|')/W(130|')=0.71 {I7}                                           
+ 60NI  L 5931.4    11 1                21 FS     6                              
+ 60NI cL $|G{-0} (eV)=0.021 {I5}                                                
+ 60NI cL $B(E1)|^=0.285|*10{+-5} {I70} or B(M1)|^=0.0258 {I63}                  
+ 60NI  G 5930.8    11 100                                                       
+ 60NI cG E$contaminated by a transition in {+11}B                               
+ 60NI cG $I{-s,f}=6.8 eVb 17                                                    
+ 60NI cG $ W(90|')/W(130|')=0.84 {I44}                                          
+ 60NI  L 6180.6    6  1-               1.80 FS   28                             
+ 60NI cL $|G{-0} (eV)=0.234 {I34}                                               
+ 60NI cL $B(E1)|^=2.84|*10{+-5} {I41}                                           
+ 60NI  G 4848.4    14    9   4                                                  
+ 60NI cG $I{-s,f}=6.5 eVb 27                                                    
+ 60NI cG $ W(90|')/W(130|')=1.00 {I65}                                          
+ 60NI  G 6180.6    7    91   1  E1                                              
+ 60NI cG $I{-s,f}=64.1 eVb 84                                                   
+ 60NI cG $ W(90|')/W(130|')=0.70 {I40}                                          
+ 60NI  L 6229.0    11 (2+)             20 FS     4                              
+ 60NI cL $|G{-0} (eV)=0.023 {I5}                                                
+ 60NI cL $B(E2)|^=0.0015 {I3}                                                   
+ 60NI cL J$assignment is tentative                                              
+ 60NI  G 6229.0    11 100       (E2)                                            
+ 60NI cG $I{-s,f}=11.4 eVb 24                                                   
+ 60NI cG $ W(90|')/W(130|')=2.16 {I68}                                          
+ 60NI  L 6382.2    10 1                12 FS     3                              
+ 60NI cL $|G{-0} (eV)=0.037 {I10}                                               
+ 60NI cL $B(E1)|^=0.40|*10{+-5} {I11} or B(M1)|^=0.037 {I10}                    
+ 60NI  G 6382.2    10 100                                                   b   
+ 60NI cG $I{-s,f}=10.4 eVb 27                                                   
+ 60NI cG $ W(90|')/W(130|')=0.63 {I20}                                          
+ 60NI  L 6465.2    6  1-               1.7 FS    5                              
+ 60NI cL $|G{-0} (eV)=0.167 {I39}                                               
+ 60NI cL $B(E1)|^=1.77|*10{+-5} {I42}                                           
+ 60NI  G 4180.5    14   23   7                                                  
+ 60NI cG $I{-s,f}=10.4 eVb 38                                                   
+ 60NI cG $ W(90|')/W(130|')=0.91 {I50}                                          
+ 60NI  G 5131.6    10   17   4                                                  
+ 60NI cG $I{-s,f}=7.8 eVb 22                                                    
+ 60NI cG $ W(90|')/W(130|')=0.74 {I21}                                          
+ 60NI cG E$ alternatively, 5131.6|g can be placed from a 7415-keV level         
+ 60NI2cG to 2285, 0+ level                                                      
+ 60NI  G 6465.2    9    60   4  E1                                              
+ 60NI cG $I{-s,f}=27.8 eVb 46                                                   
+ 60NI cG $ W(90|')/W(130|')=0.63 {I8}                                           
+ 60NI  L 6514.6     9 1+               3.0 FS    5                              
+ 60NI cL $|G{-0} (eV)=0.150 {I23}                                               
+ 60NI cL $B(M1)|^=0.140 {I21}                                                   
+ 60NI  G 6514.6    9  100       M1                                              
+ 60NI cG $I{-s,f}=40.6 eVb 62                                                   
+ 60NI cG $ W(90|')/W(130|')=0.59 {I6}                                           
+ 60NI  L 6587.6     6 1-               1.25 FS   28                             
+ 60NI cL $|G{-0} (eV)=0.248 {I43}                                               
+ 60NI cL $B(E1)|^=2.48|*10{+-5} {I43}                                           
+ 60NI  G 4302.0    11   20   4                                                  
+ 60NI cG $I{-s,f}=13.1 eVb 28                                                   
+ 60NI cG $ W(90|')/W(130|')=0.64 {I24}                                          
+ 60NI cG E$seen only at 8.0-MeV measurement                                     
+ 60NI  G 5254.7    10   13   4                                                  
+ 60NI cG $I{-s,f}=8.8 eVb 21                                                    
+ 60NI cG $ W(90|')/W(130|')=0.77 {I17}                                          
+ 60NI  G 6587.6    8    67   2  E1                                              
+ 60NI cG $I{-s,f}=43.8 eVb 63                                                   
+ 60NI cG $ W(90|')/W(130|')=0.68 {I5}                                           
+ 60NI  L 6718.1    10 1-               6.7 FS    13                             
+ 60NI cL $|G{-0} (eV)=0.069 {I14}                                               
+ 60NI cL $B(E1)|^=0.65|*10{+-5} {I13}                                           
+ 60NI  G 6718.1    10 100       E1                                              
+ 60NI cG $I{-s,f}=17.6 eVb 35                                                   
+ 60NI cG $ W(90|')/W(130|')=0.56 {I11}                                          
+ 60NI  L 6736.8    10 (1)              6 FS      3                              
+ 60NI cL $|G{-0} (eV)=0.036 {I21}                                               
+ 60NI cL E,J$level seen only in 8.0-MeV data; spin assignment is tentative      
+ 60NI cL $B(E1)|^=0.34|*10{+-5} {I20} or B(M1)|^=0.031 {I18}                    
+ 60NI  G 4577.7    13   54   11                                                 
+ 60NI cG $I{-s,f}=5.0 eVb 19                                                    
+ 60NI cG $ W(90|')/W(130|')=1.3 {I11}                                           
+ 60NI  G 6736.1    16   46   11                                                 
+ 60NI cG $I{-s,f}=4.2 eVb 15                                                    
+ 60NI cG $ W(90|')/W(130|')=1.03 {I62}                                          
+ 60NI  L 6913.7    7  1+               1.46 FS   28                             
+ 60NI cL $|G{-0} (eV)=0.288 {I47}                                               
+ 60NI cL $B(M1)|^=0.226 {I37}                                                   
+ 60NI  G 5581.0    18    7   3                                                  
+ 60NI cG $I{-s,f}=5.1 eVb 21                                                    
+ 60NI cG $ W(90|')/W(130|')=0.77 {I30}                                          
+ 60NI  G 6913.7    8    93   1  M1                                              
+ 60NI cG $I{-s,f}=64.4 eVb 97                                                   
+ 60NI cG $ W(90|')/W(130|')=0.80 {I8}                                           
+ 60NI  L 7038.7     7 1-               1.3 FS    4                              
+ 60NI cL $|G{-0} (eV)=0.212 {I54}                                               
+ 60NI cL $B(E1)|^=1.75|*10{+-5} {I44}                                           
+ 60NI  G 5705.6    9    39   5                                                  
+ 60NI cG $I{-s,f}=19.5 eVb 36                                                   
+ 60NI cG $ W(90|')/W(130|')=0.72 {I15}                                          
+ 60NI  G 7038.7    10   61   4  E1                                              
+ 60NI cG $I{-s,f}=30.0 eVb 54                                                   
+ 60NI cG $ W(90|')/W(130|')=0.71 {I11}                                          
+ 60NI  L 7473.7     9 1+               2.1 FS    3                              
+ 60NI cL $|G{-0} (eV)=0.214 {I36}                                               
+ 60NI cL $B(M1)|^=0.133 {I23}.                                                  
+ 60NI DL $ Value of 1.47E-5 25 corresponds to B(E1)(|^), which should be        
+ 60NI2DL discarded, according to e-mail reply of Nov 13, 2013 from author       
+ 60NI  G 7473.7    9  100       M1                                              
+ 60NI cG $I{-s,f}=44.2 eVb 75                                                   
+ 60NI cG $ W(90|')/W(130|')=0.60 {I9}                                           
+ 60NI  L 7559.0     8 1-               6.5 FS    22                             
+ 60NI cL $|G{-0} (eV)=0.070 {I24}                                               
+ 60NI cL $B(E1)|^=0.47|*10{+-5} {I16}                                           
+ 60NI  G 7559.0    8  100       E1                                              
+ 60NI cG $I{-s,f}=14.2 eVb 48                                                   
+ 60NI cG $ W(90|')/W(130|')=0.57 {I35}                                          
+ 60NI  L 7646.9     7 1-               0.27 FS   3                              
+ 60NI cL $|G{-0} (eV)=1.67 {I20}                                                
+ 60NI cL $B(E1)|^=10.7|*10{+-5} {I13}                                           
+ 60NI  G 7646.9    7  100       E1                                              
+ 60NI cG $I{-s,f}=330 eVb 39                                                    
+ 60NI cG $ W(90|')/W(130|')=0.70 {I3}                                           
+ 60NI  L 7657.1     8 1+               0.97 FS   14                             
+ 60NI cL $|G{-0} (eV)=0.475 {I70}                                               
+ 60NI cL $B(M1)|^=0.274 {I40}                                                   
+ 60NI  G 7657.1    8  100       M1                                              
+ 60NI cG $I{-s,f}=93 eVb 14                                                     
+ 60NI cG $ W(90|')/W(130|')=0.89 {I9}                                           
+ 60NI  L 7690.9     6 1-               0.208 FS  28                             
+ 60NI cL $|G{-0} (eV)=2.13 {I26}                                                
+ 60NI cL $B(E1)|^=13.4|*10{+-5} {I16}                                           
+ 60NI  G 6358.8    16    2   1                                                  
+ 60NI cG $I{-s,f}=9.7 eVb 30                                                    
+ 60NI cG $ W(90|')/W(130|')=0.77 {I39}                                          
+ 60NI  G 7690.9    7    98   1  E1                                              
+ 60NI cG $I{-s,f}=406 eVb 48                                                    
+ 60NI cG $ W(90|')/W(130|')=0.71 {I3}                                           
+ 60NI  L 7746.9     5 1-               0.55 FS   21                             
+ 60NI cL $|G{-0} (eV)=0.46 {I12}                                                
+ 60NI cL $B(E1)|^=2.83|*10{+-5} {I75}                                           
+ 60NI  G 5461.9    11   11   2                                                  
+ 60NI cG $I{-s,f}=9.5 eVb 21                                                    
+ 60NI cG $ W(90|')/W(130|')=0.61 {I17}                                          
+ 60NI  G 5590.1    10    9   1                                              Y   
+ 60NI cG $I{-s,f}=7.5 eVb 20                                                    
+ 60NI cG $ W(90|')/W(130|')=0.93 {I40}                                          
+ 60NI  G 6413.8    9    27   3                                                  
+ 60NI cG $I{-s,f}=23.4 eVb 44                                                   
+ 60NI cG $ W(90|')/W(130|')=0.83 {I12}                                          
+ 60NI  G 7747.3    8    54   4  E1                                          Y   
+ 60NI cG $I{-s,f}=47.9 eVb 91                                                   
+ 60NI cG $ W(90|')/W(130|')=0.71 {I11}                                          
+ 60NI  L 7761.6     8 1+               1.7 FS    4                              
+ 60NI cL $|G{-0} (eV)=0.276 {I69}                                               
+ 60NI cL $B(M1)|^=0.153 {I38}                                                   
+ 60NI  G 7761.6    8  100       M1                                              
+ 60NI cG E$doublet                                                              
+ 60NI cG $I{-s,f}=53 eVb 13                                                     
+ 60NI cG $ W(90|')/W(130|')=0.81 {I19}                                          
+ 60NI  L 7849.7    10 1+               1.66 FS   28                             
+ 60NI cL $|G{-0} (eV)=0.280 {I46}                                               
+ 60NI cL $B(M1)|^=0.150 {I25}                                                   
+ 60NI  G 7849.7    10 100       M1                                              
+ 60NI cG $I{-s,f}=52.4 eVb 87                                                   
+ 60NI cG $ W(90|')/W(130|')=0.59 {I9}                                           
+ 60NI  L 7879.8    12 1+               2.6 FS    6                              
+ 60NI cL $|G{-0} (eV)=0.176 {I36}                                               
+ 60NI cL $B(M1)|^=0.093 {I19}                                                   
+ 60NI  G 7879.8    12 100       M1                                              
+ 60NI cG $I{-s,f}=32.7 eVb 67                                                   
+ 60NI cG $ W(90|')/W(130|')=0.61 {I15}                                          
+ 60NI  L 7926.1    17 1+               8.2 FS    36                             
+ 60NI cL $|G{-0} (eV)=0.055 {I24}                                               
+ 60NI cL $B(M1)|^=0.029 {I13}                                                   
+ 60NI  G 7926.1    17 100       M1                                              
+ 60NI cG $I{-s,f}=10.1 eVb 45                                                   
+ 60NI cG $ W(90|')/W(130|')=0.45 {I37}                                          
+ 60NI  L 7951.2     8 1+               0.76 FS   14                             
+ 60NI cL $|G{-0} (eV)=0.590 {I86}                                               
+ 60NI cL E$ uncertainty of 0.2 keV in table III of 2013Sc20 seems a misprint    
+ 60NI cL $B(M1)|^=0.304 {I44}                                                   
+ 60NI  G 7951.2    8  100       M1                                              
+ 60NI cG $I{-s,f}=108 eVb 16                                                    
+ 60NI cG $ W(90|')/W(130|')=0.73 {I8}                                           
+ 60NI  L 8042.0    16 1+               7.7 FS    28                             
+ 60NI cL $|G{-0} (eV)=0.059 {I21}                                               
+ 60NI cL $B(M1)|^=0.029 {I11}                                                   
+ 60NI  G 8042.0    16 100       M1                                              
+ 60NI cG $I{-s,f}=10.5 eVb 38                                                   
+ 60NI cG $ W(90|')/W(130|')=0.26 {I23}                                          
+ 60NI  L 8085.5     5 1-               0.201 FS  35                             
+ 60NI cL $|G{-0} (eV)=1.85 {I27}                                                
+ 60NI cL $B(E1)|^=10.0|*10{+-5} {I15}                                           
+ 60NI  G 5800.8    8    13   2                                                  
+ 60NI cG $I{-s,f}=43.6 eVb 74                                                   
+ 60NI cG $ W(90|')/W(130|')=0.57 {I10}                                          
+ 60NI  G 6752.3    13    6   2                                                  
+ 60NI cG $I{-s,f}=19.4 eVb 52                                                   
+ 60NI cG $ W(90|')/W(130|')=0.98 {I40}                                          
+ 60NI  G 8085.7    7    81   2  E1                                              
+ 60NI cG $I{-s,f}=263 eVb 32                                                    
+ 60NI cG $ W(90|')/W(130|')=0.71 {I3}                                           
+ 60NI  L 8111.2    12 1+               3.0 FS    7                              
+ 60NI cL $|G{-0} (eV)=0.154 {I35}                                               
+ 60NI cL $B(M1)|^=0.075 {I17}                                                   
+ 60NI  G 8111.2    12 100       M1                                              
+ 60NI cG $I{-s,f}=27.0 eVb 61                                                   
+ 60NI cG $ W(90|')/W(130|')=0.72 {I22}                                          
+ 60NI  L 8126.0     7 1-               0.45 FS   6                              
+ 60NI cL $|G{-0} (eV)=1.02 {I13}                                                
+ 60NI cL $B(E1)|^=5.45|*10{+-5} {I70}                                           
+ 60NI  G 8126.0    7  100       E1                                              
+ 60NI cG $I{-s,f}=178 eVb 23                                                    
+ 60NI cG $ W(90|')/W(130|')=0.71 {I4}                                           
+ 60NI  L 8188.5     8 1                1.04 FS   21                             
+ 60NI cL $|G{-0} (eV)=0.436 {I68}                                               
+ 60NI cL T,S$ for J|p=1-. For J|p=1+, values are: T{-1/2}=1.66 fs {I35},        
+ 60NI2cL |G{-0}=0.273 eV {I51}                                                  
+ 60NI cL $B(E1)|^=2.27|*10{+-5} {I36} or B(M1)|^=0.129 {I24}                    
+ 60NI  G 8188.5    7  100                                                   b   
+ 60NI cG $I{-s,f}=75 eVb 12 for E1, 46.9 eVb 88 for M1                          
+ 60NI cG $ W(90|')/W(130|')=0.72 {I15}                                          
+ 60NI  L 8260.9     8 1-               0.40 FS   6                              
+ 60NI cL $|G{-0} (eV)=1.13 {I15}                                                
+ 60NI cL $B(E1)|^=5.75|*10{+-5} {I77}                                           
+ 60NI  G 8260.9    8  100       E1                                              
+ 60NI cG $I{-s,f}=191 eVb 25                                                    
+ 60NI cG $ W(90|')/W(130|')=0.65 {I6}                                           
+ 60NI  L 8293.7     7 1-               0.76 FS   28                             
+ 60NI cL $|G{-0} (eV)=0.384 {I95}                                               
+ 60NI cL $B(E1)|^=1.93|*10{+-5} {I48}                                           
+ 60NI  G 6135.5    11   35   5                                                  
+ 60NI cG $I{-s,f}=22.8 eVb 49                                                   
+ 60NI cG $ W(90|')/W(130|')=0.70 {I19}                                          
+ 60NI  G 8293.0    10   65   4  E1                                              
+ 60NI cG $I{-s,f}=41.6 eVb 76                                                   
+ 60NI cG $ W(90|')/W(130|')=0.75 {I15}                                          
+ 60NI  L 8351.2    13 1+               2.4 FS    6                              
+ 60NI cL $|G{-0} (eV)=0.192 {I45}                                               
+ 60NI cL $B(M1)|^=0.085 {I20}                                                   
+ 60NI  G 8351.2    13 100       M1                                              
+ 60NI cG $I{-s,f}=31.7 eVb 74                                                   
+ 60NI cG $ W(90|')/W(130|')=0.64 {I21}                                          
+ 60NI  L 8358.7    15 1+               3.4 FS    11                             
+ 60NI cL $|G{-0} (eV)=0.135 {I43}                                               
+ 60NI cL $B(M1)|^=0.060 {I19}                                                   
+ 60NI  G 8358.7    15 100       M1                                              
+ 60NI cG $I{-s,f}=22.3 eVb 71                                                   
+ 60NI cG $ W(90|')/W(130|')=0.35 {I22}                                          
+ 60NI  L 8406       4 1-               6.3 FS    37                         d   
+ 60NI cL $|G{-0} (eV)=0.072 {I43}                                               
+ 60NI cL $B(E1)|^=0.35|*10{+-5} {I21}                                           
+ 60NI  G 8406      4  100       E1                                              
+ 60NI cG $I{-s,f}=24 eVb 14                                                     
+ 60NI  L 8450.9    16 1                2.3 FS    6                              
+ 60NI cL $|G{-0} (eV)=0.203 {I45}                                               
+ 60NI cL T,S$ for J|p=1-. For J|p=1+, values are: T{-1/2}=4.6 fs {I16},         
+ 60NI2cL |G{-0}=0.100 eV {I35}                                                  
+ 60NI cL $B(E1)|^=0.96|*10{+-5} {I22} or B(M1)|^=0.043 {I15}                    
+ 60NI  G 8450.9    16 100                                                   b   
+ 60NI cG $I{-s,f}=32.7 eVb 73 for E1, 16.1 eVb 57 for M1                        
+ 60NI cG $ W(90|')/W(130|')=0.71 {I44}                                          
+ 60NI  L 8463.4    13 1-               2.7 FS    7                              
+ 60NI cL $|G{-0} (eV)=0.169 {I42}                                               
+ 60NI cL $B(E1)|^=0.80|*10{+-5} {I20}                                           
+ 60NI  G 8463.4    13 100       E1                                              
+ 60NI cG $I{-s,f}=27.3 eVb 67                                                   
+ 60NI cG $ W(90|')/W(130|')=0.70 {I28}                                          
+ 60NI  L 8514.6     9 1-               0.69 FS   14                             
+ 60NI cL $|G{-0} (eV)=0.64 {I10}                                                
+ 60NI cL $B(E1)|^=2.96|*10{+-5} {I48}                                           
+ 60NI  G 8514.6    9  100       E1                                              
+ 60NI cG $I{-s,f}=101 eVb 16                                                    
+ 60NI cG $ W(90|')/W(130|')=0.75 {I11}                                          
+ 60NI  L 8654.7     9 1-               1.32 FS   28                             
+ 60NI cL $|G{-0} (eV)=0.348 {I69}                                               
+ 60NI cL $B(E1)|^=1.54|*10{+-5} {I31}                                           
+ 60NI  G 8654.7    9  100                                                   b   
+ 60NI cG $I{-s,f}=54 eVb 11                                                     
+ 60NI  L 8655.9    7  1+               0.7 FS    6                              
+ 60NI cL $|G{-0} (eV)=0.36 {I23}                                                
+ 60NI cL $B(M1)|^=0.145 {I92}                                                   
+ 60NI  G 7324.2    14   43   7                                                  
+ 60NI cG $I{-s,f}=24.2 eVb 66                                                   
+ 60NI cG $ W(90|')/W(130|')=0.60 {I25}                                          
+ 60NI  G 8655.9    9    57   11                                             b   
+ 60NI cG $I{-s,f}=32 eVb 14                                                     
+ 60NI cG $ W(90|')/W(130|')=0.62 {I54}                                          
+ 60NI  L 8687.7    13 1+               2.6 FS    7                              
+ 60NI cL $|G{-0} (eV)=0.176 {I44}                                               
+ 60NI cL $B(M1)|^=0.069 {I17}                                                   
+ 60NI  G 8687.7    13 100       M1                                              
+ 60NI cG $I{-s,f}=26.8 eVb 67                                                   
+ 60NI cG $ W(90|')/W(130|')=0.49 {I18}                                          
+ 60NI  L 8746.3    12 1-               0.90 FS   21                             
+ 60NI cL $|G{-0} (eV)=0.49 {I11}                                                
+ 60NI cL $B(E1)|^=2.11|*10{+-5} {I46}                                           
+ 60NI  G 8746.3    12 100       E1                                              
+ 60NI cG $I{-s,f}=74 eVb 16                                                     
+ 60NI cG $ W(90|')/W(130|')=0.30 {I20}                                          
+ 60NI  L 8767       4 1+               8 FS      8                              
+ 60NI cL $|G{-0} (eV)=0.059 {I59}                                               
+ 60NI cL $B(M1)|^=0.023 {I23}                                                   
+ 60NI  G 8767      4  100       M1                                              
+ 60NI cG $I{-s,f}=8.8 eVb 88                                                    
+ 60NI cG E,RI$from HI|gS experiment                                             
+ 60NI  L 8777.9    10 1+               1.25 FS   35                             
+ 60NI cL $|G{-0} (eV)=0.361 {I93}                                               
+ 60NI cL $B(M1)|^=0.138 {I36}                                                   
+ 60NI  G 8777.9    10 100       M1                                          b   
+ 60NI cG $I{-s,f}=54 eVb 14                                                     
+ 60NI cG $ W(90|')/W(130|')=0.61 {I23}                                          
+ 60NI  L 8780.9    10 1-               1.25 FS   35                             
+ 60NI cL $|G{-0} (eV)=0.367 {I94}                                               
+ 60NI cL $B(E1)|^=1.55|*10{+-5} {I40}                                           
+ 60NI  G 8780.9    10 100       E1                                          b   
+ 60NI cG $I{-s,f}=55 eVb 14                                                     
+ 60NI  L 8795.2    9  1+               1.11 FS   35                             
+ 60NI cL $|G{-0} (eV)=0.71 {I44}                                                
+ 60NI cL $B(M1)|^=0.27 {I17}                                                    
+ 60NI  G 7459.5    11   55   11                                                 
+ 60NI cG $I{-s,f}=58 eVb 12                                                     
+ 60NI cG $ W(90|')/W(130|')=0.80 {I19}                                          
+ 60NI  G 8795.2    16   45   10 M1                                          Y   
+ 60NI cG $I{-s,f}=48 eVb 19                                                     
+ 60NI cG $ W(90|')/W(130|')=0.51 {I27}                                          
+ 60NI  L 8845.8    14 1+               1.5 FS    4                              
+ 60NI cL $|G{-0} (eV)=0.308 {I76}                                               
+ 60NI cL $B(M1)|^=0.115 {I29}                                                   
+ 60NI  G 8845.8    14 100       M1                                              
+ 60NI cG $I{-s,f}=45 eVb 12                                                     
+ 60NI cG $ W(90|')/W(130|')=0.68 {I24}                                          
+ 60NI  L 8871.0    16 1+               1.6 FS    4                              
+ 60NI cL $|G{-0} (eV)=0.290 {I76}                                               
+ 60NI cL $B(M1)|^=0.108 {I28}                                                   
+ 60NI  G 8871.0    16 100       M1                                              
+ 60NI cG $I{-s,f}=43 eVb 11                                                     
+ 60NI cG $ W(90|')/W(130|')=0.71 {I27}                                          
+ 60NI  L 8889.8    12 1+               0.83 FS   21                             
+ 60NI cL $|G{-0} (eV)=0.56 {I11}                                                
+ 60NI cL $B(M1)|^=0.207 {I41}                                                   
+ 60NI  G 8889.8    12 100       M1                                              
+ 60NI cG $I{-s,f}=82 eVb 16                                                     
+ 60NI cG $ W(90|')/W(130|')=0.80 {I19}                                          
+ 60NI  L 8923.4    10 1-               0.36 FS   6                              
+ 60NI cL $|G{-0} (eV)=1.28 {I23}                                                
+ 60NI cL $B(E1)|^=5.14|*10{+-5} {I94}                                           
+ 60NI  G 8923.4    10 100       E1                                              
+ 60NI cG $I{-s,f}=185 eVb 34                                                    
+ 60NI cG $ W(90|')/W(130|')=0.52 {I19}                                          
+ 60NI  L 9009.8    19 1-               2.1 FS    7                              
+ 60NI cL $|G{-0} (eV)=0.210 {I67}                                               
+ 60NI cL $B(E1)|^=0.82|*10{+-5} {I26}                                           
+ 60NI  G 9009.8    19 100       E1                                              
+ 60NI cG $I{-s,f}=29.8 eVb 96                                                   
+ 60NI cG $ W(90|')/W(130|')=0.62 {I34}                                          
+ 60NI  L 9052.6    24 1-               2.9 FS    12                             
+ 60NI cL $|G{-0} (eV)=0.158 {I65}                                               
+ 60NI cL $B(E1)|^=0.61|*10{+-5} {I25}                                           
+ 60NI  G 9052.6    24 100       E1                                              
+ 60NI cG $I{-s,f}=22.2 eVb 92                                                   
+ 60NI cG $ W(90|')/W(130|')=0.89 {I72}                                          
+ 60NI  L 9068.2    13 1+               1.04 FS   28                             
+ 60NI cL $|G{-0} (eV)=0.43 {I10}                                                
+ 60NI cL $B(M1)|^=0.150 {I36}                                                   
+ 60NI  G 9068.2    13 100       M1                                              
+ 60NI cG $I{-s,f}=61 eVb 15                                                     
+ 60NI cG $ W(90|')/W(130|')=0.75{I25}                                           
+ 60NI  L 9092.7     8 1-               0.132 FS  28                             
+ 60NI cL $|G{-0} (eV)=2.74 {I47}                                                
+ 60NI cL $B(E1)|^=10.4|*10{+-5} {I18}                                           
+ 60NI  G 7761.2    19   20   6  E1                                              
+ 60NI cG $I{-s,f}=76 eVb 25                                                     
+ 60NI cG $ W(90|')/W(130|')=0.94 {I52}                                          
+ 60NI cG E$doublet                                                              
+ 60NI  G 9091.2    8    80   2  E1                                              
+ 60NI cG $I{-s,f}=306 eVb 44                                                    
+ 60NI cG $ W(90|')/W(130|')=0.68 {I7}                                           
+ 60NI  L 9131.5    15 1-               0.90 FS   21                             
+ 60NI cL $|G{-0} (eV)=0.52 {I11}                                                
+ 60NI cL $B(E1)|^=1.95|*10{+-5} {I42}                                           
+ 60NI  G 9131.5    15 100       E1                                              
+ 60NI cG $I{-s,f}=72 eVb 16                                                     
+ 60NI cG $ W(90|')/W(130|')=0.48 {I20}                                          
+ 60NI  L 9148.7    30 1-               0.69 FS   35                             
+ 60NI cL $|G{-0} (eV)=0.63 {I28}                                                
+ 60NI cL $B(E1)|^=2.4|*10{+-5} {I11}                                            
+ 60NI  G 9148.7    30 100       E1                                          Y   
+ 60NI cG $I{-s,f}=87 eVb 38                                                     
+ 60NI cG $ W(90|')/W(130|')=0.68 {I40}                                          
+ 60NI  L 9255.2    25 1-               1.5 FS    7                              
+ 60NI cL $|G{-0} (eV)=0.29 {I13}                                                
+ 60NI cL $B(E1)|^=1.06|*10{+-5} {I47}                                           
+ 60NI  G 9255.2    25 100       E1                                              
+ 60NI cG $I{-s,f}=40 eVb 18                                                     
+ 60NI cG $ W(90|')/W(130|')=0.58 {I45}                                          
+ 60NI  L 9265.7    24 1-               1.4 FS    7                              
+ 60NI cL $|G{-0} (eV)=0.33 {I16}                                                
+ 60NI cL $B(E1)|^=1.19|*10{+-5} {I56}                                           
+ 60NI  G 9265.7    24 100       E1                                              
+ 60NI cG $I{-s,f}=44 eVb 21                                                     
+ 60NI cG $ W(90|')/W(130|')=0.71 {I57}                                          
+ 60NI  L 9273.9    15 1                2.6 FS    19                             
+ 60NI cL $|G{-0} (eV)=0.17 {I13}                                                
+ 60NI cL T,S$ for J|p=1-. For J|p=1+, values are: T{-1/2}=1.2 fs {I6},          
+ 60NI2cL |G{-0}=0.38 eV {I17}                                                   
+ 60NI cL $B(E1)|^=0.63|*10{+-5} {I45} or B(M1)|^=0.124 {I55}                    
+ 60NI  G 9273.9    15 100                                                   b   
+ 60NI cG $I{-s,f}=23 eVb 17 for J|p=1-, 51 eVb 23 for J|p=1+                    
+ 60NI cG $ W(90|')/W(130|')=0.63 {I80}                                          
+ 60NI  L 9300.4    15 1+               0.55 FS   21                             
+ 60NI cL $|G{-0} (eV)=0.84 {I34}                                                
+ 60NI cL $B(M1)|^=0.27 {I11}                                                    
+ 60NI  G 9300.4    15 100       M1                                              
+ 60NI cG $I{-s,f}=111 eVb 45                                                    
+ 60NI cG $ W(90|')/W(130|')=0.83 {I42}                                          
+ 60NI  L 9307.5    14 1-               0.49 FS   21                             
+ 60NI cL $|G{-0} (eV)=0.96 {I36}                                                
+ 60NI cL $B(E1)|^=3.4|*10{+-5} {I13}                                            
+ 60NI  G 9307.5    14 100       E1                                              
+ 60NI cG $I{-s,f}=128 eVb 48                                                    
+ 60NI cG $ W(90|')/W(130|')=0.77 {I34}                                          
+ 60NI  L 9351.8    21 1-               1.9 FS    8                              
+ 60NI cL $|G{-0} (eV)=0.24 {I11}                                                
+ 60NI cL $B(E1)|^=0.85|*10{+-5} {I39}                                           
+ 60NI  G 9351.8    21 100       E1                                              
+ 60NI cG $I{-s,f}=32 eVb 15                                                     
+ 60NI cG $ W(90|')/W(130|')=0.54 {I34}                                          
+ 60NI  L 9394.7    15 1-               0.83 FS   35                             
+ 60NI cL $|G{-0} (eV)=0.56 {I21}                                                
+ 60NI cL $B(E1)|^=1.93|*10{+-5} {I73}                                           
+ 60NI  G 9394.7    15 100       E1                                              
+ 60NI cG $I{-s,f}=73 eVb 28                                                     
+ 60NI cG $ W(90|')/W(130|')=0.65 {I28}                                          
+ 60NI  L 9409.9    17 1-               1.2 FS    5                              
+ 60NI cL $|G{-0} (eV)=0.39 {I16}                                                
+ 60NI cL $B(E1)|^=1.34|*10{+-5} {I56}                                           
+ 60NI  G 9409.9    17 100       E1                                              
+ 60NI cG $I{-s,f}=51 eVb 21                                                     
+ 60NI cG $ W(90|')/W(130|')=0.69 {I37}                                          
+ 60NI  L 9452.3    16 1+               1.0 FS    4                              
+ 60NI cL $|G{-0} (eV)=0.47 {I18}                                                
+ 60NI cL $B(M1)|^=0.143 {I54}                                                   
+ 60NI  G 9452.3    16 100       M1                                              
+ 60NI cG $I{-s,f}=60 eVb 23                                                     
+ 60NI cG $ W(90|')/W(130|')=0.58 {I25}                                          
+ 60NI  L 9464.5    11 1-               0.21 FS   21                             
+ 60NI cL $|G{-0} (eV)=0.80 {I64}                                                
+ 60NI cL $B(E1)|^=2.7|*10{+-5} {I22}                                            
+ 60NI  G 7303.2    16   62   18                                                 
+ 60NI cG $I{-s,f}=64 eVb 19                                                     
+ 60NI cG $ W(90|')/W(130|')=1.04 {I50}                                          
+ 60NI cG E$assignment to this level is tentative and it is based on better      
+ 60NI2cG energy-difference agreement                                            
+ 60NI  G 9464.5    15   38   12 E1                                          b   
+ 60NI cG $I{-s,f}=39 eVb 19                                                     
+ 60NI  L 9466.8    35 1+               1.9 FS    12                             
+ 60NI cL $|G{-0} (eV)=0.23 {I15}                                                
+ 60NI cL $B(M1)|^=0.071 {I46}                                                   
+ 60NI  G 9466.8    35 100       M1                                          b   
+ 60NI cG $I{-s,f}=30 eVb 19                                                     
+ 60NI cG $ W(90|')/W(130|')=0.9 {I10}                                           
+ 60NI  L 9504.1    17 1-               10 FS     4                              
+ 60NI cL $|G{-0} (eV)=0.48 {I20}                                                
+ 60NI cL $B(E1)|^=1.60|*10{+-5} {I66}                                           
+ 60NI  G 9504.1    17 100       E1                                              
+ 60NI cG $I{-s,f}=61 eVb 25                                                     
+ 60NI cG $ W(90|')/W(130|')=1.06 {I76}                                          
+ 60NI  L 9598.2    15 1-               0.62 FS   28                             
+ 60NI cL $|G{-0} (eV)=0.71 {I26}                                                
+ 60NI cL $B(E1)|^=2.31|*10{+-5} {I85}                                           
+ 60NI  G 9598.2    15 100       E1                                              
+ 60NI cG $I{-s,f}=89 eVb 33                                                     
+ 60NI cG $ W(90|')/W(130|')=0.86 {I34}                                          
+ 60NI  L 9639.4    21 1-               3.0 FS    26                         d   
+ 60NI cL $|G{-0} (eV)=0.15 {I13}                                                
+ 60NI cL E$ from E|g. E(level)=9640.0 {I21} listed in table II of 2013Sc20      
+ 60NI cL $B(E1)|^=0.48|*10{+-5} {I40}                                           
+ 60NI  G 9639.4    21 100       E1                                              
+ 60NI cG E$ uncertainty of 0.2 keV in table II of 2013Sc20 seems a misprint     
+ 60NI cG $I{-s,f}=18 eVb 16                                                     
+ 60NI  L 9658.5     8 1-               0.049 FS  14                             
+ 60NI cL $|G{-0} (eV)=8.7 {I24}                                                 
+ 60NI cL $B(E1)|^=27.6|*10{+-5} {I76}                                           
+ 60NI  G 8326.0    16   10   3                                                  
+ 60NI cG $I{-s,f}=111 eVb 33                                                    
+ 60NI cG $ W(90|')/W(130|')=0.78 {I38}                                          
+ 60NI  G 9658.5    9    90   2  E1                                              
+ 60NI cG $I{-s,f}=963 eVb 240                                                   
+ 60NI cG $ W(90|')/W(130|')=0.70 {I8}                                           
+ 60NI  L 9700.6    15 1-               0.8 FS    5                          d   
+ 60NI cL $|G{-0} (eV)=0.54 {I30}                                                
+ 60NI cL $B(E1)|^=1.69|*10{+-5} {I94}                                           
+ 60NI  G 9700.6    15 100       E1                                              
+ 60NI cG $I{-s,f}=66 eVb 37                                                     
+ 60NI  L 9720.2    18 1-               1.2 FS    8                          d   
+ 60NI cL $|G{-0} (eV)=0.36 {I22}                                                
+ 60NI cL $B(E1)|^=1.11|*10{+-5} {I68}                                           
+ 60NI  G 9720.2    18 100       E1                                              
+ 60NI cG $I{-s,f}=44 eVb 27                                                     
+ 60NI  L 9750.6    23 1-               4.2 FS    35                         d   
+ 60NI cL $|G{-0} (eV)=0.111 {I95}                                               
+ 60NI cL $B(E1)|^=0.34|*10{+-5} {I29}                                           
+ 60NI  G 9750.6    23 100       E1                                              
+ 60NI cG $I{-s,f}=13 eVb 12                                                     
+ 60NI  L 9773.9    20 1-               1.9 FS    14                         d   
+ 60NI cL $|G{-0} (eV)=0.24 {I17}                                                
+ 60NI cL $B(E1)|^=0.73|*10{+-5} {I52}                                           
+ 60NI  G 9773.9    20 100       E1                                              
+ 60NI cG $I{-s,f}=29 eVb 20                                                     
+ 60NI  L 9806.6    19 1-               1.6 FS    10                         d   
+ 60NI cL $|G{-0} (eV)=0.29 {I19}                                                
+ 60NI cL $B(E1)|^=0.87|*10{+-5} {I58}                                           
+ 60NI  G 9806.6    19 100       E1                                              
+ 60NI cG $I{-s,f}=35 eVb 23                                                     
+ 60NI  L 9830       4 1+               1.3 FS    6                          d   
+ 60NI cL $|G{-0} (eV)=0.35 {I16}                                                
+ 60NI cL $B(M1)|^=0.097 {I44}                                                   
+ 60NI  G 9830      4  100       M1                                              
+ 60NI cG $I{-s,f}=42 eVb 19                                                     
+ 60NI cG E,RI$ from HI|gS experiment                                            
+ 60NI  L 9831.1    21 1-               1.3 FS    6                          d   
+ 60NI cL $|G{-0} (eV)=0.35 {I16}                                                
+ 60NI cL $B(E1)|^=1.07|*10{+-5} {I49}                                           
+ 60NI  G 9831.1    21 100       E1                                              
+ 60NI cG $I{-s,f}=42 eVb 19                                                     
+ 60NI  L 9870.4    20 1-               0.8 FS    6                          d   
+ 60NI cL $|G{-0} (eV)=0.61 {I43}                                                
+ 60NI cL $B(E1)|^=1.8|*10{+-5} {I13}                                            
+ 60NI  G 9870.4    20 100       E1                                              
+ 60NI cG $I{-s,f}=72 eVb 51                                                     
+ 60NI  L 9892.6    17 1-               0.49 FS   28                         d   
+ 60NI cL $|G{-0} (eV)=0.97 {I60}                                                
+ 60NI cL $B(E1)|^=2.9|*10{+-5} {I18}                                            
+ 60NI  G 9892.6    17 100       E1                                              
+ 60NI cG $I{-s,f}=114 eVb 71                                                    
+                                                                                

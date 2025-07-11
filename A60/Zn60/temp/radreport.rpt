@@ -1,0 +1,129 @@
+** Calculate and Report decay radiations (update 02/11/2025) **
+Generated at: Thu 03/20/2025 at 10:18:30 PM EDT
+
+ Input file: D:\X\ND\Files\A60\finished\Zn60\temp_merge\test.ens
+Report file: D:\X\ND\Files\A60\finished\Zn60\temp_merge\radreport.rpt
+
+ assumptions for non-numerical uncertainties in RI and TI, unless otherwise specified:
+    DRI                assumed %DRI        
+    -----------        ------------        
+    Empty              0
+    LT or LE           50 for DRI(+); assumed RI=DRI(-)=%(100-this value)
+   #GT or GE           0 for DRI(+); assumed DRI(-)=0, unless noted below
+    AP                 0
+    CA                 50
+    SY                 50
+
+   # Adjusted RI=(100+RI)/2, DRI=(100-RI)/2 for absolute intensities
+   * DCC theory=1.4% assumed if DCC not given
+   * Uncertainty Limit=35 for rounding-up uncertainty in output
+
+
+
+########################################################################################
+      Radiation report for dataset: << 60GA EC DECAY (69.4 MS) >>
+########################################################################################
+
+*** Parent level: E=0 keV *T1/2=69.4(3) MS *branching(%)=100 *Q-value=14160(15)
+
+*** EAV will be re-calculated for use in beta radiation calculation ***
+
+
+             List of Energies and Intensities of All Radiations             
+            (multiply 2.13 to convert dose unit to G-Rad/uCi-h)             
+----------------------------------------------------------------------------
+Radiation               Energy             Intensity             Dose     
+   Type                 (keV)                  %              (MeV/Bq-s)  
+----------------------------------------------------------------------------
+AUGER                no intensity data
+B+                   no intensity data
+X-RAY                can't calculate %I(X rays): no Auger intensity data
+GAMMA  1             669.3      3        0.36       9        0.0024    6 
+GAMMA  2             850.8      1        0.75       10       0.0064    9 
+GAMMA  3             913.9      3        0.30       10       0.0027    9 
+GAMMA  4             1003.5     1        62.0       30       0.622     30
+GAMMA  5             1028.6     2        0.38       8        0.0039    8 
+GAMMA  6             1188.4     1        1.60       10       0.0190    12
+GAMMA  7             1201.8     2        0.29       7        0.0035    9 
+GAMMA  8             1413.7     2        0.35       7        0.0050    10
+GAMMA  9             1442.1     1        0.40       8        0.0058    12
+GAMMA  10            1481.4     1        1.30       10       0.0193    15
+GAMMA  11            1554.7     3        7.0        5        0.109     8 
+GAMMA  12            1780.8     6        0.20       10       0.0036    18
+GAMMA  13            2047.2     4        0.70       20       0.014     4 
+GAMMA  14            2293.2     4        6.3        5        0.145     12
+GAMMA  15            2334.2     3        0.80       20       0.019     5 
+GAMMA  16            2434.2     2        1.80       20       0.044     5 
+GAMMA  17            2558.8     4        8.5        6        0.218     16
+GAMMA  18            2624.3     5        0.30       10       0.0079    26
+GAMMA  19            2826.0     2        1.30       20       0.037     6 
+GAMMA  20            2884.0     4        0.80       20       0.023     6 
+GAMMA  21            2996.8     2        2.00       30       0.060     9 
+GAMMA  22            3337.4     1        7.1        6        0.237     20
+GAMMA  23            3394.8     1        7.0        6        0.238     21
+GAMMA  24            3848.5     4        38.0       30       1.46      12
+GAMMA  25            3889.1     3        2.8        8        0.109     31
+GAMMA  26            4000.9     2        2.8        4        0.112     16
+GAMMA  27            4805.0     4        0.40       10       0.019     5 
+GAMMA  28            4850.2     5        0.20       10       0.010     5 
+GAMMA  29            4891.9     3        0.40       10       0.020     5 
+
+
+Annihilation         2.7E2      5        52         10
+----------------------------------------------------------------------------
+Note: 0 weak radiation with %I<0.001 are omitted.
+
+
+                   List of Total Energies and Intensities                   
+            (multiply 2.13 to convert dose unit to G-Rad/uCi-h)             
+----------------------------------------------------------------------------
+Type                 Total Energy            Total               Dose     
+                      (keV/decay)        Intensity (%)        (MeV/Bq-s)  
+----------------------------------------------------------------------------
+Decay total          7.2E3      9        71         7        7.2       9 
+EC                   can't calculate EC decays
+B+                   1.46E3     28       26         5        1.46      28
+Auger                can't calculate Auger electrons
+Gamma (all)          3.58E3     21       156        7        3.58      21
+X Ray                can't calculate X rays
+Unplaced Gamma       1.02E3     12       34         4        1.02      12
+Neutrino             1.58E3     31       26         5        1.58      31
+Recoil               1.97       22                    
+Absorbed             5.3E3      4                            5.3       4 
+Annihilation         2.7E2      5        52         10
+
+Total                1.10E4     9                     
+Q*BR                 14160      15                    
+----------------------------------------------------------------------------
+Note: Decay total=E(beta)+E(Neutrino)
+      Its uncertainty is NOT quadratic sum of uncertainties in E(beta)
+      and E(Neutrino) since these two quantities are correlated
+      Total Energy=sum of Energy*intensity of all same type radiations
+***Warning: energy mismatch: Total and Q*BR
+
+
+         Calculated Continua for B+/B- and Internal Bremsstrahlung          
+            (multiply 2.13 to convert dose unit to G-Rad/uCi-h)             
+----------------------------------------------------------------------------
+Energy Range           <Energy>           <Intensity>            Dose     
+   (keV)              (keV/decay)              %              (MeV/Bq-s)  
+----------------------------------------------------------------------------
+                           calculated B+ spectrum                           
+
+0 - 80               6.6E-4     6        0.00114    10       6.6E-7    +6-7
+80 - 100             7.4E-4     10       8.2E-4     12       7.4E-7    10
+100 - 400            0.109      15       0.035      5        1.09E-4   15
+400 - 600            0.32       5        0.064      9        3.2E-4    5 
+600 - 1000           1.19       17       0.131      18       0.00119   17
+1000 - 2000          19.6       28       1.25       18       0.0196    28
+2000 - 6000          4.0E2      6        7.9        12       0.40      6 
+6000 - 8000          4.9E2      8        7.0        11       0.49      8 
+8000 - 12146         67         17       0.64       16       0.067     +17-16
+
+Total <EB+>=1.46E3 12   <I>= 26.2 20
+    in file:1.46E3 28        26.2 49
+----------------------------------------------------------------------------
+
+
+End of report
+

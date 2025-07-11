@@ -1,0 +1,114 @@
+** Java program for fitting gammas&calculating feedings (version 02/18/2025) **
+Generated at: Fri 03/21/2025 at 10:18:01 PM EDT
+
+ Input file: D:\X\ND\Files\A60\finished\Zn60\temp_merge\2001MA96,2021OR01.ens
+Report file: D:\X\ND\Files\A60\finished\Zn60\temp_merge\Java_GABS.rpt
+Output file: D:\X\ND\Files\A60\finished\Zn60\temp_merge\Java_GABS.out
+
+
+ assumptions for non-numerical uncertainties in RI and TI, unless otherwise specified:
+    DRI                assumed %DRI        
+    -----------        ------------        
+    Empty              20
+    LT or LE           50 for DRI(+); assumed RI=DRI(-)=%(100-this value)
+    GT or GE           100000000 for DRI(+); assumed DRI(-)=0
+    AP                 50
+    CA                 50
+    SY                 50
+
+   * DCC theory=1.4% assumed if DCC not given
+   * Uncertainty Limit=35 for rounding-up uncertainty in output
+
+
+** Normalization factor NR is a multiplier for converting photon intensities (RI)
+**    as given in the dataset to photons per 100 parent decays through the current
+**    decay branch.
+** NR in this analysis is determined by normalizing the sum of RI*(1+ICC) of all
+**    gammas to ground state, to the input value given in the NB record at col#42
+**    for %(Ig+ce) to GS through the current decay branch
+** %IG and its uncertainty from this analysis is determined by %IG=RI*NR*BR, or
+**    %IG=RI*NRBR if NRBR in PN record is present, as photons per 100 parent decays
+**    (through all branches) for those gammas not involved in the deduction of NR.
+**    For those used for normalization, %IG is directly determined independent of
+**    NR to avoid over-estimation of uncertainty in the formula above, especially
+**    when the input uncertainty in RI is large.
+
+   * Gammas marked by "?" are also used in the fitting and intensity calculations
+   * All gammas marked by "S" are ignored in the fitting and intensity calculations
+
+
+##########################################################################################
+        Report of gamma absolute intensities for dataset: << 60GA EC DECAY (69.4 MS) >>
+##########################################################################################
+
+
+*Input NR is used to calculate absolute intensities*
+
+Input NR in N record: 0.62 0
+Input BR in N record: 1.0   (=1.0 if not given)
+
+-----------------------------------------------------------------------------------------------
+     E(gamma)       RI          TI                    %IG                %IG from NR             
+                                                                   New NR*          Input NR     
+-----------------------------------------------------------------------------------------------
+     669.3  3     0.58 15     0.58 15           0.36      9         ---               0.36  9
+     850.8  1     1.21 16     1.21 16           0.75     10         ---               0.75 10
+     913.9  3     0.48 16     0.48 16           0.30     10         ---               0.30 10
+    1028.6  2     0.61 13     0.61 13           0.38      8         ---               0.38  8
+    1188.4  1     2.58 16     2.58 16           1.60     10         ---               1.60 10
+    1201.8  2     0.47 11     0.47 11           0.29      7         ---               0.29  7
+    1413.7  2     0.57 11     0.57 11           0.35      7         ---               0.35  7
+    1442.1  1     0.65 13     0.65 13           0.40      8         ---               0.40  8
+    1481.4  1     2.10 16     2.10 16           1.30     10         ---               1.30 10
+    1780.8  6     0.32 16     0.32 16           0.20     10         ---               0.20 10
+    2047.2  4     1.13 32     1.13 32           0.70     20         ---               0.70 20
+    2334.2  3     1.29 32     1.29 32           0.80     20         ---               0.80 20
+    2434.2  2     2.90 32     2.90 32           1.80     20         ---               1.80 20
+    2624.3  5     0.48 16     0.48 16           0.30     10         ---               0.30 10
+    2826.0  2     2.10 32     2.10 32           1.30     20         ---               1.30 20
+    2884.0  4     1.29 32     1.29 32           0.80     20         ---               0.80 20
+    2996.8  2      3.2  5      3.2  5           1.98     31         ---               1.98 31
+    3337.4  1     11.5 10     11.5 10            7.1      6         ---                7.1  6
+    3394.8  1     11.3 10     11.3 10            7.0      6         ---                7.0  6
+    3889.1  3      4.5 13      4.5 13            2.8      8         ---                2.8  8
+    4000.9  2      4.5  7      4.5  7            2.8      4         ---                2.8  4
+    4805.0  4     0.65 16     0.65 16           0.40     10         ---               0.40 10
+    4850.2  5     0.32 16     0.32 16           0.20     10         ---               0.20 10
+    4891.9  3     0.65 16     0.65 16           0.40     10         ---               0.40 10
+    1003.5  1      100  5      100  5           62.0     31         ---               62.0 31
+    1554.7  3     11.3  8     11.3  8            7.0      5         ---                7.0  5
+    2558.8  4     13.7 10     13.7 10            8.5      6         ---                8.5  6
+    2293.2  4     10.2  8     10.2  8            6.3      5         ---                6.3  5
+    3848.5  4       61  5       61  5           37.8     31         ---               37.8 31
+-----------------------------------------------------------------------------------------------
+NOTE: RI listed here are original values from the input file.
+      TI from input or deduced from RI if not given in the input file.
+      * %IG is present only for gammas used in normalization and
+            others are the same as those in %IG column.
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+                     Calculated Net Feeding from (gamma+ce) Intensity Balance at Each Level                      
+-----------------------------------------------------------------------------------------------------------------
+         Level        RI           RI         RI          TI           TI         TI          Net Feeding (%)  
+                     (OUT)        (IN)       (NET)       (OUT)        (IN)       (NET)        CALC*       INPUT
+-----------------------------------------------------------------------------------------------------------------
+          0         0.0         114  5     -114  5      0.0         114  5    -114  5       -70.5 32            
+    1003.53 10      100  5       72  5       28  7      100  5       72  5      28  7          17  5            
+    2558.54 23     25.0 13     10.2  8     14.8 15     25.0 13     10.2  8    14.8 15         9.2 10            
+    4851.97 32       71  5      0.0          71  5       71  5      0.0         71  5        44.1 32            
+
+                                                                      Sum of Feedings=         71 6         0 0
+-----------------------------------------------------------------------------------------------------------------
+Input normalization factors:
+  NR=   0.62  0    For normalizing RI to per 100 parent decays via this branch
+  NT=              For normalizing TI to per 100 parent decays via this branch
+  BR=    1.0       Branching ratio of this decay branch among all decay branches
+  NB=    1.0       For normalizing IB to per 100 parent decays via this branch
+
+* Calculated feedings are obtained using input NR if given.
+
+
+End of report
+
