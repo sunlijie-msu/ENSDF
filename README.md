@@ -1,23 +1,25 @@
  # Nuclear Data Evaluation System (ENSDF)
 
 ## Primary Purpose
-Evaluation and processing of nuclear structure data for the **A=35 mass chain** using the Evaluated Nuclear Structure Data File (ENSDF) format for international nuclear structure databases.
+Comprehensive evaluation and processing of nuclear structure data using the Evaluated Nuclear Structure Data File (ENSDF) format for international nuclear structure databases. This repository consolidates multiple mass chain evaluations with secure handling of experimental data.
 
 ## Core Components
 
-### ENSDF Data Files (A35 Directory Structure)
-- **Nuclear isotope data**: A=35 chain covering Al35, Ar35, Ca35, Cl35, K35, Mg35, Na35, Ne35, P35, S35, Si35
+### ENSDF Data Files
+- **A=35 mass chain**: Complete evaluation covering Al35, Ar35, Ca35, Cl35, K35, Mg35, Na35, Ne35, P35, S35, Si35
+- **A=34 mass chain**: Nuclear data evaluation for lighter isotopes
+- **A=60 mass chain**: Evaluation project for heavier nuclear systems
 - **Evaluation files**: `.ens` format with nuclear level schemes, gamma transitions, decay data
 - **Reference files**: `.old` format from previous evaluation rounds
 
 ### Processing Tools
 - **`ens2pdf.py`**: Converts ENSDF files to PDF format using Java conversion tool
-- **`column_calibrate.py`**: Validates ENSDF column formatting (critical for 80-column fixed-width format)
-- **`check_averages.py`**: Verifies weighted vs unweighted average calculations in nuclear data
+- **`.github/column_calibrate.py`**: Validates ENSDF column formatting (critical for 80-column fixed-width format)
+- **`.github/check_averages.py`**: Verifies weighted vs unweighted average calculations in nuclear data
 
-### Additional Mass Chains
-- **A34 and A60** evaluation projects
-- **XUNDL** (eXperimental Unevaluated Nuclear Data List) processing
+### Experimental Data Integration
+- **XUNDL submodule**: Secure integration of eXperimental Unevaluated Nuclear Data List (private repository)
+- **Data security**: Private experimental data maintained separately while accessible for evaluation work
 
 ## Technical Stack
 - **Python scripts** for data processing and validation
@@ -35,11 +37,23 @@ Evaluation and processing of nuclear structure data for the **A=35 mass chain** 
 ```
 ├── A35/[Element]35/new/    # Primary ENSDF evaluation files (*.ens)
 ├── A35/[Element]35/old/    # Reference files from previous rounds (*.old)
-├── A34/, A60/                      # Additional mass chain evaluations
-├── XUNDL/                          # Experimental unevaluated data processing
-├── ens2pdf.py                      # PDF conversion tool
-└── .github/                        # Validation scripts & development tools
+├── A34/[Element]34/        # A=34 mass chain evaluation files
+├── A60/[Element]60/        # A=60 mass chain evaluation files
+├── XUNDL/                  # Experimental data (Git submodule → private repository)
+├── ens2pdf.py              # PDF conversion tool
+├── .github/                # Development tools and validation scripts
+│   ├── column_calibrate.py
+│   ├── check_averages.py
+│   └── copilot-instructions.md
+└── .gitmodules             # Git submodule configuration
 ```
+
+## Repository Architecture
+This repository uses a **consolidated multi-project structure** with secure data handling:
+
+- **Public repository**: Contains all evaluated nuclear data files (A34, A35, A60) and processing tools
+- **Private submodule**: XUNDL experimental data accessed via Git submodule from separate private repository
+- **Security model**: Maintains data accessibility for evaluation work while protecting experimental data confidentiality
 
 ## Domain
 Nuclear physics data evaluation and curation for international nuclear structure databases.
