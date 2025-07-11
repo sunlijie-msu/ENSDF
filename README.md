@@ -33,12 +33,12 @@ Evaluation and processing of nuclear structure data for the **A=35 mass chain** 
 
 ## File Structure
 ```
-├── A35/finished/[Element]35/new/    # Primary ENSDF evaluation files (*.ens)
-├── A35/finished/[Element]35/old/    # Reference files from previous rounds (*.old)
+├── A35/[Element]35/new/    # Primary ENSDF evaluation files (*.ens)
+├── A35/[Element]35/old/    # Reference files from previous rounds (*.old)
 ├── A34/, A60/                      # Additional mass chain evaluations
 ├── XUNDL/                          # Experimental unevaluated data processing
 ├── ens2pdf.py                      # PDF conversion tool
-└── .vscode/                        # Validation scripts & development tools
+└── .github/                        # Validation scripts & development tools
 ```
 
 ## Domain
