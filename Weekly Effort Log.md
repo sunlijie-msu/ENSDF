@@ -70,6 +70,9 @@ Received training from my line manager regarding the A=35 evaluation. Added 6 re
 Lijie Sun – 29 June 2025 - 5 July 2025
 Received training from my line manager regarding the A=35 evaluation and data consistency check. Added 1 reaction dataset for 35S. Performed data consistency check for CF10990 and XUNDL compilation for 125Te data in 2025DeAA. Implementing AI Agent through GitHub Copilot to enhance ENSDF formatting efficiency.
 
+Lijie Sun – 6 July 2025 - 12 July 2025
+Received training from my line manager regarding the A=35 evaluation and data consistency check. Added 1 reaction dataset for 35S. Completed data consistency check for CF10990 and XUNDL compilation for 125Te data in 2025DeAA.
+
 
 
 Prompt tuning vs. fine tuning:
