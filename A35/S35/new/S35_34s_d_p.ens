@@ -1,4 +1,4 @@
- 35S     34S(D,P)                      1969MO12,1971VA18,1984PI03ENSDF    202509
+ 35S     34S(D,P)                      2024KU24,1984PI03,1969MO12ENSDF    202509
  35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
  35S 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35S   H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
@@ -16,13 +16,13 @@
  35S Ac  single-neutron spectroscopic factors and strengths from finite-range   
  35S Bc  PTOLEMY-DWBA analysis.                                                 
 
- 35S  c  1969Mo12: a 6.495-MeV deuteron beam was produced from the ONR-CIT      
- 35S 2c  tandem accelerator. The target was an enriched target of 450           
- 35S 3c  {I25}-|mg/cm{+2} CdS (85% {+34}S) evaporated onto a 301                
- 35S 4c  {I15}-|mg/cm{+2} gold foil and a natural target of 289 {I30}-|mg/cm{+2}
- 35S 5c  Sb{+2}S{+3} evaporated onto a 289 {I30}-|mg/cm{+2} gold foil. Protons  
- 35S 6c  were detected using an array of 16 Au-Si surface barrier detectors with
- 35S 7c  FWHM=30 keV. Measured |q(E{-p},|q). Deduced 19 levels.                 
+ 35S  c  1984Pi03: a 12.3-MeV deuteron beam was produced from a cyclotron. The  
+ 35S 2c  target was CdS (61.9% in {+36}S, 37.7% in {+34}S), 100|mg/cm{+2} on a  
+ 35S 3c  20 |mg/cm{+2} carbon backing. Protons were analyzed by a multi-angle   
+ 35S 4c  magnetic spectrograph and detected using a 700-mm long nuclear emulsion
+ 35S 5c  plates Ilford L4. Measured |s(E{-p},|q). Deduced 13 levels, L, J, |p,  
+ 35S 6c  and spectroscopic factors from DWUCK-DWBA analysis for six excited     
+ 35S 7c  states of {+35}S.                                                      
 
  35S  c  1971Va18: a 10-MeV deuteron beam was produced from the Utrecht 6-MV    
  35S 2c  tandem accelerator. Targets were a 100 |mg/cm{+2} PbS on carbon plus   
@@ -32,14 +32,6 @@
  35S 6c  Utrecht split-pole magnetic spectrograph. Measured |q(E{-p},|q).       
  35S 7c  Deduced 17 levels, L, J, |p, spectroscopic factors from DWUCK-DWBA     
  35S 8c  analysis for the ground state and seven excited states of {+35}S.      
-
- 35S  c  1984Pi03: a 12.3-MeV deuteron beam was produced from a cyclotron. The  
- 35S 2c  target was CdS (61.9% in {+36}S, 37.7% in {+34}S), 100|mg/cm{+2} on a  
- 35S 3c  20 |mg/cm{+2} carbon backing. Protons were analyzed by a multi-angle   
- 35S 4c  magnetic spectrograph and detected using a 700-mm long nuclear emulsion
- 35S 5c  plates Ilford L4. Measured |s(E{-p},|q). Deduced 13 levels, L, J, |p,  
- 35S 6c  and spectroscopic factors from DWUCK-DWBA analysis for six excited     
- 35S 7c  states of {+35}S.                                                      
 
  35S  c  1958En51: 6.006- and 6.542-MeV deuteron beams were produced from the   
  35S 2c  MIT-ONR electro-static generator. Targets were Sb2S3 of natural        
@@ -52,6 +44,14 @@
  35S 2c  tandem accelerator. The target was PbS. Protons were detected using    
  35S 3c  silicon surface barrier detectors. Measured |s(E{-p},|q). Deduced L, J,
  35S 4c  and |p for the ground state and one excited state of {+35}S.           
+
+ 35S  c  1969Mo12: a 6.495-MeV deuteron beam was produced from the ONR-CIT      
+ 35S 2c  tandem accelerator. The target was an enriched target of 450           
+ 35S 3c  {I25}-|mg/cm{+2} CdS (85% {+34}S) evaporated onto a 301                
+ 35S 4c  {I15}-|mg/cm{+2} gold foil and a natural target of 289 {I30}-|mg/cm{+2}
+ 35S 5c  Sb{+2}S{+3} evaporated onto a 289 {I30}-|mg/cm{+2} gold foil. Protons  
+ 35S 6c  were detected using an array of 16 Au-Si surface barrier detectors with
+ 35S 7c  FWHM=30 keV. Measured |q(E{-p},|q). Deduced 37 levels.                 
 
  35S  c  1971Ko33: a 6.6-MeV deuteron beam was produced from a cyclotron.       
  35S 2c  Targets were GeS films of 70-80 |mg/cm{+2} (98% enrichment in {+34}S)  
@@ -81,7 +81,7 @@
  35S  c  Theoretical calculations: 1977Os07, 1974Os02.                          
  35S  cL E(A)$From 1969Mo12                                                     
  35S  cL E(B)$From 1971Va18                                                     
- 35S  cL E(C)$From 1984Pi03                                                     
+ 35S  cL E$From 1984Pi03, unless otherwise noted.
  35S  cL E(D)$ Weighted average from 1969Mo12 and 1971Va18                      
  35S  cL E(G)$ Weighted average from 1969Mo12 and 1979So01                      
  35S  cL L$From the comparison of DWBA predictions with the experimental data.  
@@ -90,6 +90,84 @@
  35S 3cL (1971Me12), N=1.53 (1971Va18), N*g=1.53 (1984Pi03).                    
  35S  cL S$From 2024Ku24, unless otherwise noted                                
  35S  cL S$LABEL=C{+2}S                                                         
+ 35S   L 0                                                                      
+ 35S   L 1571.92   19                                  0        0.154           
+ 35S   G 1572                                                                   
+ 35S   L 1991.08   16                                  3        0.841           
+ 35S   G 1991                                                                   
+ 35S   L 2347.59   15                                  1        0.505           
+ 35S  cL E$Others: 2347 {I8} (1969Mo12) and 2336 {I10} (1971Va18)
+ 35S   L 2724      8                                                            
+ 35S  cL E$weighted average of 2722 {I8} (1969Mo12) and 2726 {I8} (1971Va18)    
+ 35S   L 2941      10                                                           
+ 35S  cL E$weighted average of 2943 {I10} (1969Mo12) and 2939 {I10} (1971Va18)  
+ 35S   L 3420      8                                                            
+ 35S  cL E$weighted average of 3422 {I8} (1969Mo12) and 3415 {I12} (1971Va18)   
+ 35S   L 3569      14                                                           
+ 35S  cL E$unweighted average of 3583 {I8} (1969Mo12) and 3555 {I9} (1971Va18)  
+ 35S   L 3596      8                                                            
+ 35S  cL E$from 1969Mo12. Other: 3595 {I9} (1971Va18)                           
+ 35S   L 3675      10                                  (1)      <0.005          
+ 35S   L 3801.90   30                                                           
+ 35S  cL E$from 1984Pi03. Others: 3804 {I8} (1969Mo12) and 3795 {I10} (1971Va18)
+ 35S   L 3866      10                                                          ?
+ 35S   L 3907      10                                                           
+ 35S   L 4025      10                                                           
+ 35S  cL E$from 1969Mo12. Other: 4025 {I10} (1971Va18)                          
+ 35S   L 4109      10                                                           
+ 35S  cL E$weighted average of 4112 {I10} (1969Mo12) and 4105 {I10} (1971Va18)  
+ 35S   L 4189.87   26                                                           
+ 35S  cL E$from 1984Pi03. Others: 4190 {I8} (1969Mo12) and 4196 {I12} (1971Va18)
+ 35S   L 4305      8                                                            
+ 35S  cL E$weighted average of 4302 {I8} (1969Mo12) and 4312 {I12} (1971Va18)   
+ 35S   L 4481      8                                                            
+ 35S  cL E$from 1969Mo12                                                        
+ 35S   L 4575      8                                                            
+ 35S   L 4837      8                                                            
+ 35S   L 4903.28   16                                  1        0.776           
+ 35S  cL E$from 1984Pi03. Other: 4903 {I8} (1969Mo12)                           
+ 35S   L 4963.12   16                                  1        0.218           
+ 35S  cL E$from 1984Pi03. Other: 4965 {I8} (1969Mo12)                           
+ 35S   L 5058      8                                                            
+ 35S  cL E$from 1969Mo12                                                        
+ 35S   L 5126      11                                                           
+ 35S   L 5342      8                                                            
+ 35S   L 5475      10                                                          ?
+ 35S   L 5542      8                                                           ?
+ 35S   L 5740      20 (5/2-)                           3        0.03      1     
+ 35S   L 5890      20 (3/2+)                           2        0.11      2     
+ 35S   L 5980      10                                                           
+ 35S   L 6078.6    13                                  1        0.086,0.042     
+ 35S  cL E$from 1984Pi03. Other: 6080 {I8} (1969Mo12)                           
+ 35S   L 6292      8                                                            
+ 35S   L 6334      8                                                            
+ 35S   L 6344      8                                                            
+ 35S   L 6446      8                                                            
+ 35S   L 6496      8                                                            
+ 35S   L 6537.7    14                                                           
+ 35S   L 6545.1    13                                                           
+ 35S  cL E$from 1984Pi03. Other: 6543 {I8} (1969Mo12)                           
+ 35S   L 6584      10                                                           
+ 35S   L 6635.2    13                                                           
+ 35S  cL E$from 1984Pi03. Other: 6634 {I8} (1969Mo12)                           
+ 35S   L 6677      8                                                            
+ 35S   L 6891.3    14                                                           
+ 35S  cL E$from 1984Pi03. Others: 6892 {I10} (1969Mo12) and 6915 {I30}          
+ 35S 2cL (2024Ku24)                                                             
+ 35S   L 7021      10                                                           
+ 35S  cL E$weighted average of 7022 {I10} (1969Mo12) and 7005 {I35} (2024Ku24)  
+ 35S   L 7150      35                                  (0,3)                    
+ 35S   L 7205      35                                  (1,2)                    
+ 35S   L 7482.7    13                                                           
+ 35S  cL E$from 1984Pi03. Other: 7495 {I40} (2024Ku24)                          
+ 35S   L 7570      40                                  (2,3)                    
+ 35S   L 7640      40                                  (2,3)                    
+                                                                                
+                                                                                
+
+
+
+ Old data evaluation:
  35S   L 0                                             2        0.43      11    
  35S  cL S$Others: 0.33 (1971Ko33), 0.46 (1971Me12)                             
  35S   L 1572.92   19                                  0        0.34      9 C   
