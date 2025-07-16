@@ -9,8 +9,8 @@
  35S 4c  identified using a position-sensitive ionization chamber with two anode
  35S 5c  wires in the isobutane gas (|DE) and a large plastic scintillator (E)  
  35S 6c  at the focal plane. |g rays were detected using a CeBr{-3} Array of    
- 35S 7c  five CeBr{-3} detectors. Measured time-difference spectra of p|g and   
- 35S 8c  deduced T{-1/2} for the 1991 level of {+35}S.                          
+ 35S 7c  five CeBr{-3} detectors. Measured p|g delayed coincidence time spectra 
+ 35S 8c  and deduced T{-1/2} for the 1991 level of {+35}S.                      
  35S 9c
  35S  c  1972Fr11: 3.50- and 4.00-MeV deuteron beams were produced from the 4-MV
  35S 2c  Van de Graaff accelerator at the Nuclear Research Center of Strasbourg,
@@ -22,7 +22,7 @@
  35S 8c  experiment and a NaI crystal at 0|', 30|', 45|', 60|' and 90|' in the  
  35S 9c  second experiment. Measured E|g, |s(E{-p},E{-|g},|q(p|g)). Deduced 12  
  35S Ac  levels, J, |g-ray branching ratios, and mixing ratios. Deduced T{-1/2} 
- 35S Bc  using the Doppler-Shift Attenuation Method (DSAM).                     
+ 35S Bc  for 7 levels using the Doppler-Shift Attenuation Method (DSAM).        
  35S Cc
  35S  c  1972Va07,1975VaYG: a 4.72-MeV deuteron beam of 175 nA was provided from
  35S 2c  the Groningen 5 MV Van de Graaff generator. Targets were 80-|mg/cm{+2} 
@@ -41,8 +41,8 @@
  35S 6c  cm|*7.62 cm NaI(Tl) detector in the angular correlation experiment and 
  35S 7c  a Ge(Li) detector in the lifetime experiment. Measured                 
  35S 8c  |s(E{-p},E{-|g},|q(p|g)). Deduced 3 levels, J, |g-ray branching ratios,
- 35S 9c  and mixing ratios. Deduced T{-1/2} using the Doppler-shift attenuation 
- 35S Ac  method (DSAM).                                                         
+ 35S 9c  and mixing ratios. Deduced T{-1/2} for 3 levels using the Doppler-shift
+ 35S Ac  attenuation method (DSAM).                                             
  35S Bc
  35S  c  1971Pr11: A 4.48-MeV deuteron beam was produced from the insulated-core
  35S 2c  transformer tandem accelerator at the Aerospace Research Laboratories  
@@ -61,123 +61,131 @@
  35S   L 0            3/2+                                                      
  35S   L 1572.5     4 1/2+             1.3 PS    GT                             
  35S  cL E$weighted average from 1970Bu18, 1972Fr11 and 1975VaYG                
- 35S  cL T$From 1970Bu18                                                        
- 35S   G 1572        100                                                        
+ 35S  cL T$>1.3 ps (1970Bu18, |t>1.8 ps); >1.1 ps (1972Fr11, |t>1.6 ps).        
+ 35S   G 1572         100                                                       
  35S  cG $A{-2}=-0.09 {I5}, A{-4}=+0.07 {I6} (1972Fr11)                         
- 35S   L 1991.7     4 7/2-             1.02 NS   5                              
+ 35S   L 1991.7     4 7/2-             1.03 NS   5                              
  35S  cL E$weighted average from 1970Bu18, 1972Fr11 and 1975VaYG                
- 35S  cL T$From 1971Pr11                                                        
- 35S   G 1993        100       (M2+E3)   +0.17   6                              
+ 35S  cL T$weighted average of 1.2 ns {I2} (2024Co04, |t=1.7 ns {I3}) and 1.02  
+ 35S 2cL ns {I5} (1971Pr11, |t=1.47 ns {I7}). Other:|t>4.5 ps using DSAM        
+ 35S 3cL (1970Bu18).                                                            
+ 35S   G 1993         100       (M2+E3)  +0.17   6                              
  35S  cG M$D+Q or M2+E3 from |g(|q) and RUL; M2+E3 from level scheme.           
  35S  cG MR$unweighted average of 0.11 {I4} (1970Bu18), +0.11 {I4} (1972Fr11),  
  35S 2cG and +0.28 {I3} (1972Va07). Others: |d(Q/D)=-1.9 {I7} (1970Bu18) and    
  35S 3cG -0.43 {I3} (1972Va07) for J=5/2.                                       
  35S  cG $A{-2}=+0.35 {I4}, A{-4}=-0.39 {I4} (1972Fr11)                         
- 35S   L 2348.2     4 3/2-             0.71 PS   15                             
+ 35S   L 2348.2     4 3/2-             0.70 PS   12                             
  35S  cL E$weighted average from 1970Bu18, 1972Fr11 and 1975VaYG                
- 35S  cL T$weighted average from 1970Bu18 and 1972Fr11                          
- 35S   G 776          27     1 E1+M2     -0.01   4                              
+ 35S  cL T$weighted average of 0.6 ps {I1} (1970Bu18, |t=0.8 ps {I2}) and 0.85  
+ 35S 2cL ps {I12} (1972Fr11, |t=1.22 ps {I18}).                                 
+ 35S   G 776          27     1  E1+M2    -0.01   4                              
  35S  cG M,MR$From |g(|q) in 1972Fr11                                           
  35S  cG MR$Other: +0<|d<+1.7 (1972Va07)                                        
  35S  cG $A{-2}=-0.37 {I3}, A{-4}=-0.03 {I3} (1972Fr11)                         
- 35S   G 2350         73     1 E1+M2     -0.27   12                             
+ 35S   G 2350         73     1  E1+M2    -0.27   12                             
  35S  cG M,MR$From |g(|q) in 1972Va07                                           
  35S  cG $A{-2}=+0.33 {I2}, A{-4}=-0.05 {I2} (1972Fr11)                         
  35S  cG $B(E1)(W.u.)=4|*10{+-5} (1972Fr11); B(E1)(W.u.)=2.4|*10{+-5},          
  35S 2cG B(M2)(W.u.)=3.9 (1972Va07)                                             
- 35S   L 2718.4     4(3/2,5/2,7/2)     69 FS     24                             
- 35S  cL T$From 1972Fr11                                                        
- 35S   G 370.5       5       LT                                                 
- 35S   G 726.8       5       LT                                                 
- 35S   G 1145.7      5       LT                                                 
- 35S   G 2718        100                                                        
+ 35S   L 2718.4    4  (3/2,5/2,7/2)    69 FS     24                             
+ 35S  cL T$from 1972Fr11 (|t=100 fs {I35}).                                     
+ 35S   G 370.5        5      LT                                                 
+ 35S   G 726.8        5      LT                                                 
+ 35S   G 1145.7       5      LT                                                 
+ 35S   G 2718         100                                                       
  35S  cG $A{-2}=+0.47 {I6}, A{-4}=-0.08 {I7} (1972Fr11)                         
  35S  cG MR$|d(M2/E1)>+0.5, B(M2)(W.u.)>45 or |d(E3/M2)=+0.18 {i18},            
  35S 2cG B(M2)(W.u.)=300 {i120} (1972Fr11)                                      
- 35S   L 2935.5     4(3/2,5/2)                                                  
+ 35S   L 2935.5    4  (3/2,5/2)                                                 
  35S  cL E$weighted average from 1972Fr11 and 1975VaYG                          
  35S  cL J$From 1972Va07                                                        
- 35S   G 587.5       10      LT                                                 
- 35S   G 943.8       20      LT                                                 
- 35S   G 1362.7      15      LT                                                 
- 35S   G 2935        100                                                        
- 35S   L 3421.5     4(3/2,5/2,7/2)     70 FS     LT                             
- 35S   G 486         4       LT                                                 
- 35S   G 703         6       LT                                                 
- 35S   G 1073.5      7       LT                                                 
- 35S   G 1429.8      30      LT                                                 
- 35S   G 1848.7      7       LT                                                 
- 35S   G 3421        100                                                        
+ 35S   G 587.5        10     LT                                                 
+ 35S   G 943.8        20     LT                                                 
+ 35S   G 1362.7       15     LT                                                 
+ 35S   G 2935         100                                                       
+ 35S   L 3421.5    4  (3/2,5/2,7/2)    70 FS     LT                             
+ 35S  cL T$from 1972Fr11 (|t<100 fs).                                           
+ 35S   G 486          4      LT                                                 
+ 35S   G 703          6      LT                                                 
+ 35S   G 1073.5       7      LT                                                 
+ 35S   G 1429.8       30     LT                                                 
+ 35S   G 1848.7       7      LT                                                 
+ 35S   G 3421         100                                                       
  35S  cG $A{-2}=-0.54 {I8}, A{-4}=-0.11 {I7} (1972Fr11)                         
- 35S   L 3563.5     6                                                           
- 35S   L 3592.5     5                                                           
- 35S   G 657         10      LT                                                 
- 35S   G 874         11      LT                                                 
- 35S   G 1244.5      15      LT                                                 
- 35S   G 1601        17      LT                                                 
- 35S   G 2020        17      LT                                                 
- 35S   G 3592        100                                                        
+ 35S   L 3563.5    6                                                           
+ 35S   L 3592.5    5                                                           
+ 35S   G 657          10     LT                                                 
+ 35S   G 874          11     LT                                                 
+ 35S   G 1244.5       15     LT                                                 
+ 35S   G 1601         17     LT                                                 
+ 35S   G 2020         17     LT                                                 
+ 35S   G 3592         100                                                       
  35S   L 3675                                                                   
- 35S   L 3802.5     53/2-              25 FS     18                             
- 35S   G 867         4       LT                                                 
- 35S   G 1084        5       2                                                  
- 35S   G 1454.5      8       3                                                  
- 35S   G 1811        4       LT                                                 
- 35S   G 2230        42      4                                                  
+ 35S   L 3802.5    5  3/2-             25 FS     18                             
+ 35S  cL T$from 1972Fr11 (|t=36 fs {I26}).                                      
+ 35S   G 867          4      LT                                                 
+ 35S   G 1084         5      2                                                  
+ 35S   G 1454.5       8      3                                                  
+ 35S   G 1811         4      LT                                                 
+ 35S   G 2230         42     4                                                  
  35S  cG $A{-2}=-0.56 {I15}, A{-4}=0.0 {I1} (1972Fr11)                          
- 35S   G 3802        45      4                                                  
+ 35S   G 3802         45     4                                                  
  35S  cG $A{-2}=+0.19 {I12}, A{-4}=0.0 {I1} (1972Fr11)                          
  35S   L 3815.7    11                                                           
- 35S   G 1824        100                                                        
- 35S   L 3885.5     5                                                           
- 35S   G 464         30      LT                                                 
- 35S   G 950         12      LT                                                 
- 35S   G 1167        15      LT                                                 
- 35S   G 1537.5      18      LT                                                 
- 35S   G 1894        100                                                        
- 35S   G 2313        16      LT                                                 
- 35S   G 3885        16      LT                                                 
- 35S   L 4025.5     5                                                           
- 35S   G 462         5       LT                                                 
- 35S   G 604         10      LT                                                 
- 35S   G 1090        31      8                                                  
- 35S   G 1307        8       LT                                                 
- 35S   G 1677.5      33      12                                                 
- 35S   G 2034        10      LT                                                 
- 35S   G 2453        36      12                                                 
- 35S   G 4025        13      LT                                                 
- 35S   L 4107.5     5                  55 FS     LT                             
- 35S   G 544         4       LT                                                 
- 35S   G 686         4       LT                                                 
- 35S   G 1172        13      6                                                  
- 35S   G 1389        10      LT                                                 
- 35S   G 1759.5      5       LT                                                 
- 35S   G 2116        7       LT                                                 
- 35S   G 2535        5       LT                                                 
- 35S   G 4107        87      6                                                  
+ 35S   G 1824         100                                                       
+ 35S   L 3885.5    5                                                           
+ 35S   G 464          30     LT                                                 
+ 35S   G 950          12     LT                                                 
+ 35S   G 1167         15     LT                                                 
+ 35S   G 1537.5       18     LT                                                 
+ 35S   G 1894         100                                                       
+ 35S   G 2313         16     LT                                                 
+ 35S   G 3885         16     LT                                                 
+ 35S   L 4025.5    5                                                           
+ 35S   G 462          5      LT                                                 
+ 35S   G 604          10     LT                                                 
+ 35S   G 1090         31     8                                                  
+ 35S   G 1307         8      LT                                                 
+ 35S   G 1677.5       33     12                                                 
+ 35S   G 2034         10     LT                                                 
+ 35S   G 2453         36     12                                                 
+ 35S   G 4025         13     LT                                                 
+ 35S   L 4107.5    5                   55 FS     LT                             
+ 35S  cL T$from 1972Fr11 (|t<80 fs).                                            
+ 35S   G 544          4      LT                                                 
+ 35S   G 686          4      LT                                                 
+ 35S   G 1172         13     6                                                  
+ 35S   G 1389         10     LT                                                 
+ 35S   G 1759.5       5      LT                                                 
+ 35S   G 2116         7      LT                                                 
+ 35S   G 2535         5      LT                                                 
+ 35S   G 4107         87     6                                                  
  35S   L 4180      3                                                            
- 35S   L 4189.5     4                  35 FS     LT                             
- 35S   G 387         4       LT                                                 
- 35S   G 597         4       LT                                                 
- 35S   G 626         4       LT                                                 
- 35S   G 768         4       LT                                                 
- 35S   G 1254        5       LT                                                 
- 35S   G 1471        5       LT                                                 
- 35S   G 1841.5      48      5                                                  
- 35S   G 2198        8       LT                                                 
- 35S   G 2617        6       LT                                                 
- 35S   G 4189        52      5                                                  
- 35S   L 4302       4                                                           
- 35S   L 4480.5     4                  62 FS     LT                             
- 35S   G 595         5       LT                                                 
- 35S   G 678         5       LT                                                 
- 35S   G 888         5       LT                                                 
- 35S   G 917         5       LT                                                 
- 35S   G 1059        10      LT                                                 
- 35S   G 1545        7       LT                                                 
- 35S   G 1762        61      7                                                  
- 35S   G 2132.5      8       LT                                                 
- 35S   G 2489        10      LT                                                 
- 35S   G 2908        39      7                                                  
- 35S   G 4480        12      LT                                                 
+ 35S   L 4189.5    4                   35 FS     LT                             
+ 35S  cL T$from 1972Fr11 (|t<50 fs).                                            
+ 35S   G 387          4      LT                                                 
+ 35S   G 597          4      LT                                                 
+ 35S   G 626          4      LT                                                 
+ 35S   G 768          4      LT                                                 
+ 35S   G 1254         5      LT                                                 
+ 35S   G 1471         5      LT                                                 
+ 35S   G 1841.5       48     5                                                  
+ 35S   G 2198         8      LT                                                 
+ 35S   G 2617         6      LT                                                 
+ 35S   G 4189         52     5                                                  
+ 35S   L 4302      4                                                           
+ 35S   L 4480.5    4                   62 FS     LT                             
+ 35S  cL T$from 1972Fr11 (|t<90 fs).                                            
+ 35S   G 595          5      LT                                                 
+ 35S   G 678          5      LT                                                 
+ 35S   G 888          5      LT                                                 
+ 35S   G 917          5      LT                                                 
+ 35S   G 1059         10     LT                                                 
+ 35S   G 1545         7      LT                                                 
+ 35S   G 1762         61     7                                                  
+ 35S   G 2132.5       8      LT                                                 
+ 35S   G 2489         10     LT                                                 
+ 35S   G 2908         39     7                                                  
+ 35S   G 4480         12     LT                                                 
 
