@@ -1,5 +1,80 @@
 # Change Log for ENSDF Edits
 
+## 2025-07-16: S35 34S(d,pγ) Level Energy Update and Data Integration
+
+**Summary**: Updated S35 34S(d,pγ) dataset with precise level energies from 1972Fr11 images and integrated 1970Bu18 data for weighted averaging. Removed non-1972Fr11 footnoted levels and enhanced scientific documentation.
+
+### Level Energy Updates from 1972Fr11
+
+#### File: `A35/S35/new/S35_34s_d_pg.ens`
+**Updated 11 high-lying level energies** based on systematic extraction from 1972Fr11 images:
+
+**Systematic Energy Replacements:**
+- Line 98: `2718.4 {I4}` → `2718.0 {I10}` (updated energy and uncertainty)
+- Line 108: `2935.5 {I4}` → `2935 {I3}` (updated energy and uncertainty)  
+- Line 115: `3421.5 {I4}` → `3421.0 {I10}` (updated energy and uncertainty)
+- Line 124: `3592 {I5}` → `3592 {I5}` (already correct)
+- Line 133: `3802.5 {I5}` → `3802.0 {I10}` (updated energy and uncertainty)
+- Line 143: `3815.7 {I11}` → `3815 {I3}` (updated energy and uncertainty)
+- Line 145: `3885.5 {I5}` → `3885.0 {I10}` (updated energy and uncertainty)
+- Line 153: `4025.5 {I5}` → `4025.0 {I10}` (updated energy and uncertainty)
+- Line 162: `4107.5 {I5}` → `4107 {I2}` (updated energy and uncertainty)
+- Line 173: `4189.5 {I4}` → `4189 {I2}` (updated energy and uncertainty)
+- Line 186: `4480.5 {I4}` → `4480 {I2}` (updated energy and uncertainty)
+
+**Footnote Processing:**
+- Removed footnoted levels not from 1972Fr11:
+  - 3563±3 (footnote a = 1969Mo12)
+  - 3675±10 (footnote b = 1971Va18)
+  - 4302±8 (footnote a = 1969Mo12)
+- Kept footnoted levels from 1972Fr11:
+  - 3815±3 (footnote c = 1972Fr11)
+  - 2935±3 (footnote d = 1972Fr11)
+
+### Data Integration and Weighted Averaging
+
+#### Combined 1970Bu18 and 1972Fr11 Data:
+**Three levels updated with weighted averages:**
+- Line 60: `1572.5 {I5}` - weighted average of 1574.2 {I10} (1970Bu18) and 1572.3 {I3} (1972Fr11)
+- Line 68: `1992.9 {I17}` - unweighted average of 1994.6 {I10} (1970Bu18) and 1991.2 {I3} (1972Fr11)
+- Line 82: `2348.8 {I13}` - unweighted average of 2350.0 {I10} (1970Bu18) and 2347.5 {I2} (1972Fr11)
+
+#### Header Updates:
+- Line 1: Added 1970Bu18 to dataset reference: `1972FR11,1975VAYG,1970Bu18`
+- Enhanced experimental description consistency across all three studies
+
+### Enhanced Scientific Documentation
+
+#### Angular Distribution Data:
+- Added 1975VaYG angular distribution coefficients (A₂, A₄) to gamma transition comments
+- Maintained existing 1972Fr11 coefficients while adding new experimental data
+- Proper ENSDF uncertainty formatting with {I} notation for tool compatibility
+
+#### Experimental Comments Enhancement:
+- Lines 25-39: Added detailed 1970Bu18 experimental description
+- Lines 40-48: Added 2024Co04 lifetime measurement details
+- Lines 49-57: Enhanced 1971Pr11 experimental description
+- Improved formatting and consistency of experimental methodology descriptions
+
+### Technical Implementation
+
+#### ENSDF Format Compliance:
+- **Energy field positioning**: All energies LEFT-JUSTIFIED in columns 10-19
+- **Uncertainty formatting**: Proper {I} notation for Java tool compatibility
+- **Column alignment**: Maintained 80-column ENSDF format requirements
+- **Comment structure**: Enhanced continuation comments with proper spacing
+
+#### Quality Validation:
+- **Column calibration**: Verified using column_calibrate.py with no formatting errors
+- **Energy extraction**: Systematic verification of 1972Fr11 image values
+- **Data consistency**: Cross-checked weighted averages and experimental attributions
+- **Format validation**: All changes comply with ENSDF Manual specifications
+
+### Data Sources Integration:
+- **Primary dataset**: 1972Fr11 (34S(d,pγ) comprehensive study)
+- **Secondary data**: 1970Bu18 (three lowest excited levels)
+- **Supporting data**: 1975VaYG angular distributions, 2024Co04 lifetime measurements
+
 ## 2025-07-15: S35 34S(d,p) J-π Assignment Completion
 
 **Summary**: Completed systematic addition of J-π assignments to energy levels in S35 34S(d,p) dataset based on comprehensive L-transfer analysis and adopted values from evaluated nuclear data.

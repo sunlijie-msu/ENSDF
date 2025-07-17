@@ -1,29 +1,41 @@
- 35S     34S(N,N),(N,G):RESONANCES     1984CA14,2006MUZX         11NDS    201111
+ 35S     34S(N,N),(N,G):RESONANCES     1984CA14,2018MUZY         ENSDF    202509
+ 35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
+ 35S 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35S   H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35S 2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35S  c  1984Ca14: E{-n}=30-1500 keV neutrons produced from the Oak Ridge       
- 35S 2c  Electron Linear  Accelerator (ORELA). Target: 94.33%-enriched {+34}S   
- 35S 3c  with a 5.54% impurity of {+32}S. Neutron detected by a NE110           
- 35S 4c  proton-recoil detector of 2-cm-thick and 7.5-cm-diam and |g-rays       
- 35S 5c  detected by two non-hydrogenous fluorocarbon scintillators (Ne-226).   
- 35S 6c  Measured |s(E{-n}). Deduced levels, J|p, L, widths and spectroscopic   
- 35S 7c  factors from the comparison of the R-matrix prediction of the cross    
- 35S 8c  section with data.                                                     
- 35S  c  2006MuZX: Compilation of thermal neutron induced cross sections,       
- 35S 2c  resonance parameter data for Z=1-100.                                  
- 35S  d  2006MuZX: S.F.Mughabghab, Atlas of Neutron Resonances, 5ed., Resonance 
- 35S 2d  Parameters and Thermal Cross Sections, Z=1-100, Elsevier, Amsterdam    
- 35S 3d  (2006)                                                                 
- 35S  cL E$From E{-c.m.}+S(n) where S(n)= 6985.84 {I5} (2011AuZZ) and          
- 35S 2cL E{-c.m.} deduced from E{-n}(lab), unless otherwise noted.              
- 35S  cL $g|G{-n} and g|G{-n}|G{-|g}/|G from 1984Ca14. g|G{-n}=(2J+1)|G{-n}/2   
+ 35S  c  2018MuZY: evaluation of neutron resonance energies, J|p values, width  
+ 35S 2c  parameters, and resonance strengths for nuclei of Z=1-60.              
+ 35S  c  1984Ca14: 30-1500-keV neutrons were produced from the Oak Ridge        
+ 35S 2c  Electron Linear Accelerator (ORELA). The target was 94.33%-enriched    
+ 35S 3c  {+34}S with a 5.54% impurity of {+32}S. Neutrons were detected using a 
+ 35S 4c  2-cm-thick and 7.5-cm in diameter NE110 proton-recoil detector.        
+ 35S 5c  Measured |s(E{-n}). Deduced levels, J, |p, L, widths and spectroscopic 
+ 35S 6c  factors by comparing the R-matrix predictions of the cross section with
+ 35S 7c  the data.                                                              
  35S  cL $All resonance parameters including resonance neutron energies, J|p, L,
- 35S 2cL g|G{-n} and |G{-|g} are directly adopted from the compilation in       
- 35S 3cL 2006MuZX, unless otherwise indicated.                                  
- 35S  cL S(A)$ Resonance parameters from 1984Ca14.                              
+ 35S 2cL g|G{-n}, |G{-|g} and resonance strengths are from the compilation and  
+ 35S 3cL evaluation in 2018MuZY, unless otherwise noted.                        
+ 35S  cL $g|G{-n}=(2J+1)|G{-n}/2.                                               
+ 35S  cL E$From E{-c.m.}+S(n) where S(n)=6985.84 {I4} (2021Wa16) and            
+ 35S 2cL E{-c.m.}=E{-n}(lab)|*m({+34}S)/[m{-n}+m({+34}S)]                       
+ 35S  cL T$LABEL=g|G{-n}|G{-|g}/|G                                              
+ 35S  cL S$LABEL=E{-n}(lab) (keV)                                               
+ 35S  cL S(A)$Resonance parameters from 1984Ca14.                               
+ 
+
+
+
+
+
+
+
+
+
+ 
  35S   L 6985.5       1/2+                             0                       ?
  35S  cL $E{-n}(lab)(keV)=-0.305                                                
- 35S  cL E$Fictitious level                                                    
+ 35S  cL E$fictitious level from analysis of resonance spectrum below the S(n)  
+ 35S 2cL threshold.                                                             
  35S  cL $|G{-|g}=3 eV                                                          
  35S   L 7018.89   5                                   [2]                      
  35S  cL $E{-n}(lab)(keV)=34.03 {I1}                                            
@@ -292,4 +304,4 @@
  35S  cL $E{-n}(lab)(keV)=1475.5 {I4}                                           
  35S  cL $g|G{-n}=3795 eV {I340}                                                
  35S  dL $E{-n}=1475.5 eV {I13}; g|G{-n}=37950 eV {I340} (2006MuZX)             
-                                                                                
+
