@@ -9,9 +9,9 @@
  35S 2c  Electron Linear Accelerator (ORELA). The target was 94.33%-enriched    
  35S 3c  {+34}S with a 5.54% impurity of {+32}S. Neutrons were detected using a 
  35S 4c  2-cm-thick and 7.5-cm in diameter NE110 proton-recoil detector.        
- 35S 5c  Measured |s(E{-n}). Deduced levels, J, |p, L, widths and spectroscopic 
- 35S 6c  factors by comparing the R-matrix predictions of the cross section with
- 35S 7c  the data.                                                              
+ 35S 5c  Measured |s(E{-n}). Deduced 81 resonances, J, |p, L, widths and        
+ 35S 6c  spectroscopic factors by comparing the R-matrix predictions of the     
+ 35S 7c  cross section with the data.                                           
  35S  cL $All resonance parameters including resonance neutron energies, J|p, L,
  35S 2cL g|G{-n}, |G{-|g} and resonance strengths are from the compilation and  
  35S 3cL evaluation in 2018MuZY, unless otherwise noted.                        
@@ -21,287 +21,160 @@
  35S  cL T$LABEL=g|G{-n}|G{-|g}/|G                                              
  35S  cL S$LABEL=E{-n}(lab) (keV)                                               
  35S  cL S(A)$Resonance parameters from 1984Ca14.                               
- 
-
-
-
-
-
-
-
-
-
- 
- 35S   L 6985.5       1/2+                             0                       ?
- 35S  cL $E{-n}(lab)(keV)=-0.305                                                
+ 35S   L -0.305       1/2                              0                       ?
  35S  cL E$fictitious level from analysis of resonance spectrum below the S(n)  
  35S 2cL threshold.                                                             
- 35S  cL $|G{-|g}=3 eV                                                          
- 35S   L 7018.89   5                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=34.03 {I1}                                            
- 35S  cL $g|G{-n}|G{-|g}/|G=0.025 eV {I1}                                       
- 35S   L 7072.66   6                                                            
- 35S  cL $E{-n}(lab)(keV)=89.40 {I3}                                            
- 35S  cL $g|G{-n}|G{-|g}/|G=0.14 eV {I4}                                        
- 35S   L 7074.33   6                                                            
- 35S  cL $E{-n}(lab)(keV)=91.12 {I4}                                            
- 35S  cL $g|G{-n}|G{-|g}/|G=0.084 eV {I3}                                       
- 35S   L 7097.7    3                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=115.2 {I3}                                            
- 35S  cL $g|G{-n}|G{-|g}/|G=0.009 eV {I3}                                       
- 35S   L 7099.85   20                                  [2]                      
- 35S  cL $E{-n}(lab)(keV)=117.4 {I2}                                            
- 35S  cL $g|G{-n}=<1 eV; g|G{-n}|G{-|g}/|G=0.033 eV {I5}                        
- 35S   L 7100.73   5 3/2                               [1]                      
- 35S  cL $E{-n}(lab)(keV)=118.30 {I1}                                           
- 35S  cL $g|G{-n}=372 eV {I3}; |G{-|g}=0.70 eV {I4}                             
- 35S   L 7143.27   11                                  [2]                  A   
- 35S  cL $E{-n}(lab)(keV)=162.1 {I1}                                            
- 35S  cL $g|G{-n}=<1 eV; g|G{-n}|G{-|g}/|G=0.42 eV {I1}                         
- 35S  dL $E{-n}=162.1 {I2} (2006MuZX)                                           
- 35S   L 7210.42   5                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=231.25 {I2}                                           
- 35S  cL $g|G{-n}=62 eV {I4}; |G{-|g}=0.30 eV {I2}                              
- 35S   L 7217.9    4                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=239.0 {I4}                                            
- 35S  cL $g|G{-n}=<4 eV; g|G{-n}|G{-|g}/|G=0.33 eV {I2}                         
- 35S   L 7234.0    5                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=255.5 {I5}                                            
- 35S  cL $g|G{-n}=<4 eV; g|G{-n}|G{-|g}/|G=0.19 eV {I1}                         
- 35S   L 7239.8    6                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=261.5 {I6}                                            
- 35S  cL $g|G{-n}=<2 eV; g|G{-n}|G{-|g}/|G=0.06 eV {I2}                         
- 35S   L 7253.2    6                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=275.3 {I6}                                            
- 35S  cL $g|G{-n}=<1 eV; g|G{-n}|G{-|g}/|G=0.35 eV {I2}                         
- 35S   L 7275.93   6  1/2                              0                        
- 35S  cL $E{-n}(lab)(keV)=298.70 {I3}                                           
- 35S  cL $g|G{-n}=9600 eV {I150}; |G{-|g}=2.82 eV {I67}                         
- 35S  cL $C{+2}S=0.024                                                          
- 35S   L 7279.1                                                                 
- 35S  cL $E{-n}(lab)(keV)=302                                                   
- 35S  cL $g|G{-n}|G{-|g}/|G=0.10 {I3}                                           
- 35S   L 7289.8    8                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=313.0 {I8}                                            
- 35S  cL $g|G{-n}=<6 eV; g|G{-n}|G{-|g}/|G=0.31 eV {I3}                         
- 35S  dL $E{-n}=313.0 {I6} (2006MuZX)                                           
- 35S   L 7294.19   7  3/2-                             1                        
- 35S  cL $E{-n}(lab)(keV)=317.51 {I5}                                           
- 35S  cL $g|G{-n}=2500 eV {I25}; |G{-|g}=0.23 eV {I8}                           
- 35S   L 7331.00   5  1/2+                             0                        
- 35S  cL $E{-n}(lab)(keV)=355.41 {I2}                                           
- 35S  cL $g|G{-n}=4810 eV {I80}; |G{-|g}=0.30 eV {I30}                          
- 35S  cL $C{+2}S=0.012                                                          
- 35S   L 7338.18   20                                  [1]                      
- 35S  cL $E{-n}(lab)(keV)=362.8 {I2}                                            
- 35S  cL $g|G{-n}=230 eV {I10}; |G{-|g}=1.06 eV {I7}                            
- 35S   L 7343.91   20                                  [2]                      
- 35S  cL $E{-n}(lab)(keV)=368.7 {I2}                                            
- 35S  cL $g|G{-n}=<2 eV; g|G{-n}|G{-|g}/|G=0.72 eV {I3}                         
- 35S   L 7347.2    5                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=372.1 {I5}                                            
- 35S  cL $g|G{-n}=<2 eV; g|G{-n}|G{-|g}/|G=0.44 eV {I6}                         
- 35S   L 7347.9    5                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=372.8 {I5}                                            
- 35S  cL $g|G{-n}=<2 eV; g|G{-n}|G{-|g}/|G=0.30 eV {I5}                         
- 35S   L 7353.9    5                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=379.0 {I5}                                            
- 35S  cL $g|G{-n}=<10 eV; g|G{-n}|G{-|g}/|G=0.44 eV {I4}                        
- 35S   L 7357.6    5                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=382.8 {I5}                                            
- 35S  cL $g|G{-n}=<6 eV; g|G{-n}|G{-|g}/|G=0.16 eV {I4}                         
- 35S   L 7370.56   6 1/2-                              1                        
- 35S  cL $E{-n}(lab)(keV)=396.14 {I4}                                           
- 35S  cL $g|G{-n}=6430 eV {I150}; |G{-|g}=3.08 eV {I20}                         
- 35S  dL $E{-n}=396.10 {I4} (2006MuZX)                                          
- 35S   L 7372.0                                                                 
- 35S  cL $E{-n}(lab)(keV)=397.6                                                 
- 35S  cL $g|G{-n}|G{-|g}/|G=0.12 eV                                             
- 35S   L 7396.0    6                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=422.3 {I6}                                            
- 35S  cL $g|G{-n}|G{-|g}/|G=0.44 eV {I33}                                       
- 35S   L 7404.6    6                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=431.2 {I6}                                            
- 35S  cL $g|G{-n}=<1 eV; g|G{-n}|G{-|g}/|G=0.21 eV {I5}                         
- 35S   L 7408.68   11 3/2-                             1                        
- 35S  cL $E{-n}(lab)(keV)=435.4 {I1}                                            
- 35S  cL $g|G{-n}=1570 eV {I40}; |G{-|g}=0.91 eV {I8}                           
- 35S   L 7411.55   7                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=438.35 {I5}                                           
- 35S  cL $g|G{-n}=49 eV {I5}                                                    
- 35S   L 7416.50   5                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=443.45 {I1}                                           
- 35S  cL $g|G{-n}=80 eV {I8}; |G{-|g}=0.51 eV {I5}                              
- 35S   L 7429.1    6                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=456.4 {I6}                                            
- 35S  cL $g|G{-n}=<6 eV; |G{-|g}=0.12 eV {I3}                                   
- 35S   L 7433.56   5                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=461.01 {I2}                                           
- 35S  cL $g|G{-n}=50 eV {I5}; |G{-|g}=0.035 eV {I20}                            
- 35S   L 7436.4    4                                   [1]                  A   
- 35S  cL $E{-n}(lab)(keV)=463.9 {I4}                                            
- 35S  cL $g|G{-n}=296 eV {I30}; |G{-|g}=0.28 eV {I3}                            
- 35S  dL $E{-n}=463.9 {I40} (2006MuZX)                                          
- 35S   L 7442.14   5 1/2+                              0                        
- 35S  cL $E{-n}(lab)(keV)=469.85 {I2}                                           
- 35S  cL $g|G{-n}=1050 eV {I35}; |G{-|g}=0.37 eV {I8}                           
- 35S  cL $C{+2}S=0.002                                                          
- 35S   L 7462.2    6                                   [2]                  A   
- 35S  cL $E{-n}(lab)(keV)=490.5 {I6}                                            
- 35S  cL $g|G{-n}=50 eV {I10}; g|G{-n}|G{-|g}/|G=0.33 eV {I4}                   
- 35S  dL $g|G{-n}=50 {I20} (2006MuZX)                                           
- 35S   L 7481.15   6 1/2-                              1                        
- 35S  cL $E{-n}(lab)(keV)=510.02 {I4}                                           
- 35S  cL $g|G{-n}=375 eV {I25}; |G{-|g}=2.1 eV {I1}                             
- 35S   L 7494.5    6                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=523.8 {I6}                                            
- 35S  cL $g|G{-n}=<4 eV; g|G{-n}|G{-|g}/|G=0.17 eV {I4}                         
- 35S   L 7542.3    6                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=573.0 {I6}                                            
- 35S  cL $g|G{-n}=<1 eV; g|G{-n}|G{-|g}/|G=0.21 eV {I3}                         
- 35S   L 7604.0    6                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=636.5 {I6}                                            
- 35S  cL $g|G{-n}=<10 eV; g|G{-n}|G{-|g}/|G=0.90 eV {I8}                        
- 35S   L 7609.26   6 3/2-                              1                        
- 35S  cL $E{-n}(lab)(keV)=641.93 {I3}                                           
- 35S  cL $g|G{-n}=2520 eV {I60}; |G{-|g}=0.51 eV {I6}                           
- 35S   L 7648.9    6                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=682.7 {I6}                                            
- 35S  cL $g|G{-n}=<30 eV; g|G{-n}|G{-|g}/|G=0.21 eV {I3}                        
- 35S   L 7655.7    6                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=689.7 {I6}                                            
- 35S  cL $g|G{-n}=<10 eV; g|G{-n}|G{-|g}/|G=0.80 eV {I5}                        
- 35S   L 7663.91   11                                  [2]                      
- 35S  cL $E{-n}(lab)(keV)=698.2 {I1}                                            
- 35S  cL $g|G{-n}=305 eV {I50}; |G{-|g}=0.80 eV {I8}                            
- 35S   L 7678.3    7                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=713.0 {I7}                                            
- 35S  cL $g|G{-n}=<4 eV; g|G{-n}|G{-|g}/|G=0.45 eV {I7}                         
- 35S   L 7731.0    7                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=767.3 {I7}                                            
- 35S  cL $g|G{-n}=<4 eV; g|G{-n}|G{-|g}/|G=0.31 eV {I13}                        
- 35S  dL $E{-n}=767.3 {I6} (2006MuZX)                                           
- 35S   L 7749.7    4                                   [1]                      
- 35S  cL $E{-n}(lab)(keV)=786.5 {I4}                                            
- 35S  cL $g|G{-n}=18 eV {I6}; |G{-|g}=2.65 eV {I18}                             
- 35S   L 7761.46   8 3/2-                              1                    A   
- 35S  cL $E{-n}(lab)(keV)=798.65 {I6}                                           
- 35S  cL $g|G{-n}=25350 eV {I300}; |G{-|g}=1.52 eV {I50}                        
- 35S  dL $E{-n}=798.65 eV {I60}; g|G{-n}=2535 eV {I300} (2006MuZX)              
- 35S   L 7776.17   11 1/2-                             1                        
- 35S  cL $E{-n}(lab)(keV)=813.8 {I1}                                            
- 35S  cL $g|G{-n}=860 eV {I60}; |G{-|g}=0.19 eV {I13}                           
- 35S   L 7797.99   9 1/2+                              0                        
- 35S  cL $E{-n}(lab)(keV)=836.27 {I8}                                           
- 35S  cL $g|G{-n}=3600 eV {I160}; |G{-|g}=0.39 eV {I18}                         
- 35S  cL $C{+2}S=0.005                                                          
- 35S   L 7812.24   8 3/2+                              2                        
- 35S  cL $E{-n}(lab)(keV)=850.94 {I6}                                           
- 35S  cL $g|G{-n}=2650 eV {I110}; |G{-|g}=0.24 eV {I19}                         
- 35S   L 7853.25   8 3/2-                              1                        
- 35S  cL $E{-n}(lab)(keV)=893.17 {I6}                                           
- 35S  cL $g|G{-n}=4950 eV {I160}; |G{-|g}=0.38 eV {I16}                         
- 35S   L 7861.8    12                                  [2]                      
- 35S  cL $E{-n}(lab)(keV)=902.0 {I12}                                           
- 35S  cL $g|G{-n}=<3 eV; g|G{-n}|G{-|g}/|G=1.13 eV {I19}                        
- 35S   L 7880.8    12                                  [2]                      
- 35S  cL $E{-n}(lab)(keV)=921.5 {I12}                                           
- 35S  cL $g|G{-n}=<20 {I}; g|G{-n}|G{-|g}/|G=0.67 eV {I17}                      
- 35S   L 7889.0    12                                  [2]                      
- 35S  cL $E{-n}(lab)(keV)=930.0 {I12}                                           
- 35S  cL $g|G{-n}=<20 {I}; g|G{-n}|G{-|g}/|G=0.57 eV {I25}                      
- 35S  dL $E{-n}=930.0 {I6} (2006MuZX)                                           
- 35S   L 7894.63   8 3/2-                              1                    A   
- 35S  cL $E{-n}(lab)(keV)=935.78 {I6}                                           
- 35S  cL $g|G{-n}=4100 eV {I160}; |G{-|g}=3.48 eV {I23}                         
- 35S  dL $|G{-|g}=0.348 eV {I230} (2006MuZX)                                    
- 35S   L 7899.7    3                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=941.0 {I3}                                            
- 35S  cL $g|G{-n}=176 eV {I16}                                                  
- 35S  dL $E{-n}=941.03 eV {I6} (2006MuZX)                                       
- 35S   L 7934.1    15                                  [2]                      
- 35S  cL $E{-n}(lab)(keV)=976.4 {I15}                                           
- 35S  cL $g|G{-n}=<2 eV; g|G{-n}|G{-|g}/|G=0.5 eV {I3}                          
- 35S   L 7939.5    15                                  [2]                      
- 35S  cL $E{-n}(lab)(keV)=982.0 {I15}                                           
- 35S  cL $g|G{-n}=<8 eV; g|G{-n}|G{-|g}/|G=0.89 eV {I4}                         
- 35S   L 7954.96   11 3/2-                             1                        
- 35S  cL $E{-n}(lab)(keV)=997.9 {I1}                                            
- 35S  cL $g|G{-n}=930 eV {I80}; |G{-|g}=3.51 eV {I19}                           
- 35S  dL $E{-n}=997.90 {I6}; g|G{-n}=4100 eV {I160}(2006MuZX)                   
- 35S   L 7974.19   11 3/2-                             1                        
- 35S  cL $E{-n}(lab)(keV)=1017.7 {I1}                                           
- 35S  cL $g|G{-n}=4020 eV {I180}; |G{-|g}=1.22 eV {I17}                         
- 35S  dL $E{-n}=1017.70 {I6} (2006MuZX)                                         
- 35S   L 8019.54   20                                  [2]                      
- 35S  cL $E{-n}(lab)(keV)=1064.4 {I2}                                           
- 35S  cL $g|G{-n}=1032 eV {I90}                                                 
- 35S  dL $E{-n}=1064.40 {I6} (2006MuZX)                                         
- 35S   L 8041.20   20                                  [2]                      
- 35S  cL $E{-n}(lab)(keV)=1086.7 {I2}                                           
- 35S  cL $g|G{-n}=2650 eV {I160}                                                
- 35S   L 8076.45   20                                  [2]                      
- 35S  cL $E{-n}(lab)(keV)=1123.0 {I2}                                           
- 35S  cL $g|G{-n}=5480 eV {I388}                                                
- 35S   L 8077.9    3                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=1124.5 {I3}                                           
- 35S  cL $g|G{-n}=4730 eV {I320}                                                
- 35S  dL $E{-n}=1124.5 {I3} (2006MuZX)                                          
- 35S   L 8093.0    5 1/2-                              1                        
- 35S  cL $E{-n}(lab)(keV)=1140.0 {I5}                                           
- 35S  cL $g|G{-n}=34880 eV {I830}                                               
- 35S   L 8143.66   20                                  [2]                      
- 35S  cL $E{-n}(lab)(keV)=1192.2 {I2}                                           
- 35S  cL $g|G{-n}=5510 eV {I290}                                                
- 35S  dL $E{-n}=1192.0 {I2} (2006MuZX)                                          
- 35S   L 8187.2    3 1/2-                              1                        
- 35S  cL $E{-n}(lab)(keV)=1237.0 {I3}                                           
- 35S  cL $g|G{-n}=2945 eV {I230}                                                
- 35S   L 8211.3    3                                   [1]                  A   
- 35S  cL $E{-n}(lab)(keV)=1261.8 {I3}                                           
- 35S  cL $g|G{-n}=975 eV {I86}                                                  
- 35S  dL $g|G{-n}=9750 eV {I86} (2006MuZX)                                      
- 35S   L 8224.2    4 1/2-                              1                        
- 35S  cL $E{-n}(lab)(keV)=1275.1 {I4}                                           
- 35S  cL $g|G{-n}=2170 eV {I180}                                                
- 35S   L 8228.3    4                                   [2]                  A   
- 35S  cL $E{-n}(lab)(keV)=1279.4 {I4}                                           
- 35S  cL $g|G{-n}=1140 eV {I100}                                                
- 35S   L 8244.0    3                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=1295.5 {I3}                                           
- 35S  cL $g|G{-n}=1980 eV {I150}                                                
- 35S   L 8256.31   20 3/2-                             1                        
- 35S  cL $E{-n}(lab)(keV)=1308.2 {I2}                                           
- 35S  cL $g|G{-n}=12475 eV {I770}                                               
- 35S   L 8262.4    4  5/2+                             2                        
- 35S  cL $E{-n}(lab)(keV)=1314.5 {I4}                                           
- 35S  cL $g|G{-n}=6240 eV {I500}                                                
- 35S   L 8273.3    4 1/2                               [1]                      
- 35S  cL $E{-n}(lab)(keV)=1325.7 {I4}                                           
- 35S  cL $g|G{-n}=1635 eV {I145}                                                
- 35S   L 8298.3    3                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=1351.4 {I3}                                           
- 35S  cL $g|G{-n}=14470 eV {I650}                                               
- 35S   L 8333.8    4 3/2-                              1                    A   
- 35S  cL $E{-n}(lab)(keV)=1388.0 {I4}                                           
- 35S  cL $g|G{-n}=28845 eV {I1057}                                              
- 35S  dL $g|G{-n}=2884 eV {I1060} (2006MuZX)                                    
- 35S   L 8335.9    4                                   [2]                      
- 35S  cL $E{-n}(lab)(keV)=1390.1 {I4}                                           
- 35S  cL $g|G{-n}=1955 eV {I170}                                                
- 35S   L 8391.3    4 3/2-                              1                        
- 35S  cL $E{-n}(lab)(keV)=1447.2 {I4}                                           
- 35S  cL $g|G{-n}=27100 eV {I1390}                                              
- 35S   L 8393.6    3                                   [2]                  A   
- 35S  cL $E{-n}(lab)(keV)=1449.6 {I3}                                           
- 35S  cL $g|G{-n}=3025 eV {I260}                                                
- 35S  dL $E{-n}=1449.6 {I4}; g|G{-n}=30250 eV {I260} (2006MuZX)                 
- 35S   L 8406.6    3                                   [2]                  A   
- 35S  cL $E{-n}(lab)(keV)=1462.9 {I3}                                           
- 35S  cL $g|G{-n}=3885 eV {I345}                                                
- 35S  dL $g|G{-n}=38850 eV {I345} (2006MuZX)                                    
- 35S   L 8418.8    4                                   [2]                  A   
- 35S  cL $E{-n}(lab)(keV)=1475.5 {I4}                                           
- 35S  cL $g|G{-n}=3795 eV {I340}                                                
- 35S  dL $E{-n}=1475.5 eV {I13}; g|G{-n}=37950 eV {I340} (2006MuZX)             
+ 35S  cL $|G{-|g}=0.38 eV                                                       
+ 35S   L 34.03     1  1/2              0.025 EV  1     (2)      34.03     1     
+ 35S   L 89.40     3                   0.140 EV  40             89.40     3     
+ 35S   L 91.12     4                   0.084 EV  3              91.12     4     
+ 35S   L 115.2     3                   0.009 EV  3     (2)      115.2     3     
+ 35S   L 117.4     2                   0.033 EV  5     (2)      117.4     2     
+ 35S   L 118.30    1  3/2              0.700 EV  40    (1)      118.30    1     
+ 35S  cL $g|G{-n}=372 eV {I3}; |G{-|g}=0.35 eV {I2}.                            
+ 35S   L 161.2     1                   0.420 EV  10    (2)      161.2     1     
+ 35S  cL $g|G{-n}<1 eV.                                                         
+ 35S   L 231.25    2                   0.300 EV  20    (1)      231.25    2     
+ 35S  cL $g|G{-n}=62 eV {I4}.                                                   
+ 35S   L 239.0     4                   0.330 EV  20    (2)      239.0     4     
+ 35S  cL $g|G{-n}<4 eV.                                                         
+ 35S   L 255.5     5                   0.190 EV  10    (2)      255.5     5     
+ 35S  cL $g|G{-n}<4 eV.                                                         
+ 35S   L 261.5     6                   0.060 EV  20    (2)      261.5     6     
+ 35S  cL $g|G{-n}<2 eV.                                                         
+ 35S   L 275.3     6                   0.350 EV  20    (2)      275.3     6     
+ 35S  cL $g|G{-n}<1 eV.                                                         
+ 35S   L 298.70    3  1/2              2.82 EV   67    0        298.70    3     
+ 35S  cL $g|G{-n}=9600 eV {I150}; |G{-|g}=2.82 eV {I67}.                        
+ 35S   L 302                           0.100 EV  30             302             
+ 35S   L 313.0     6                   0.310 EV  30    (2)      313.0     6     
+ 35S  cL $g|G{-n}<6 eV.                                                         
+ 35S   L 317.51    5  3/2              0.46 EV   16    1        317.51    5     
+ 35S  cL $g|G{-n}=2500 eV {I25}, |G{-|g}=0.23 eV {I8}.                          
+ 35S   L 355.41    2  1/2              0.30 EV   30    0        355.41    2     
+ 35S  cL $g|G{-n}=4810 eV {I80}, |G{-|g}=0.3 eV {I3}.                           
+ 35S   L 362.8     2                   1.060 EV  70    (1)      362.8     2     
+ 35S  cL $g|G{-n}=230 eV {I10}.                                                 
+ 35S   L 368.7     2                   0.720 EV  30    (2)      368.7     2     
+ 35S  cL $g|G{-n}<2 eV.                                                         
+ 35S   L 372.1     5                   0.440 EV  60    (2)      372.1     5     
+ 35S  cL $g|G{-n}<2 eV.                                                         
+ 35S   L 372.8     5                   0.300 EV  50    (2)      372.8     5     
+ 35S  cL $g|G{-n}<2 eV.                                                         
+ 35S   L 379.0     5                   0.440 EV  40    (2)      379.0     5     
+ 35S  cL $g|G{-n}<10 eV.                                                        
+ 35S   L 382.8     5                   0.160 EV  40    (2)      382.8     5     
+ 35S  cL $g|G{-n}<6 eV.                                                         
+ 35S   L 396.10    4  1/2              3.08 EV   20    1        396.10    4     
+ 35S  cL $g|G{-n}=6430 eV {I150}; |G{-|g}=3.08 eV {I20}.                        
+ 35S   L 397.6                         0.120 EV               397.6            
+ 35S   L 422.3     6                   0.44 EV   33    (2)      422.3     6     
+ 35S   L 431.2     6                   0.210 EV  50    (2)      431.2     6     
+ 35S  cL $g|G{-n}<1 eV.                                                         
+ 35S   L 435.4     1  3/2              1.820 EV  16    1        435.4     1     
+ 35S  cL $g|G{-n}=1570 eV {I40}; |G{-|g}=0.91 eV {I8}.                          
+ 35S   L 438.35    5                                   (2)      438.35    5     
+ 35S  cL $g|G{-n}=4.9 eV {I50}.                                                 
+ 35S   L 443.45    1                   0.510 EV  50    (2)      443.45    1     
+ 35S  cL $g|G{-n}=80 eV {I8}.                                                   
+ 35S   L 456.4     6                   0.120 EV  30    (2)      456.4     6     
+ 35S  cL $g|G{-n}<6 eV.                                                         
+ 35S   L 461.01    2                   0.035 EV  20    (2)      461.01    2     
+ 35S  cL $g|G{-n}=50 eV {I5}.                                                   
+ 35S   L 463.9     4                   0.280 EV  30    (1)      463.9     4     
+ 35S  cL $g|G{-n}=296 eV {I30}.                                                 
+ 35S   L 469.85    2  1/2              0.370 EV  80    0        469.85    2     
+ 35S  cL $g|G{-n}=1050 eV {I35}; |G{-|g}=0.37 eV {I8}.                          
+ 35S   L 490.5     6                   0.330 EV  40    (2)      490.5     6     
+ 35S  cL $g|G{-n}=50 eV {I20}.                                                  
+ 35S   L 510.20    4  1/2              2.1 EV    10    1        510.20    4     
+ 35S  cL $g|G{-n}=375 eV {I25}; |G{-|g}=2.1 eV {I1}.                            
+ 35S   L 523.8     6                   0.170 EV  40    (2)      523.8     6     
+ 35S  cL $g|G{-n}<4 eV.                                                         
+ 35S   L 573.0     6                   0.210 EV  30    (2)      573.0     6     
+ 35S  cL $g|G{-n}<1 eV.                                                         
+ 35S   L 636.5     6                   0.500 EV  80    (2)      636.5     6     
+ 35S  cL $g|G{-n}<10 eV.                                                        
+ 35S   L 641.93    3  3/2              1.02 EV   12    1        641.93    3     
+ 35S  cL $g|G{-n}=2520 eV {I60}; |G{-|g}=0.51 eV {I6}.                          
+ 35S   L 682.7     6                   0.210 EV  30    (2)      682.7     6     
+ 35S  cL $g|G{-n}<30 eV.                                                        
+ 35S   L 689.7     6                   0.800 EV  50    (2)      689.7     6     
+ 35S  cL $g|G{-n}<10 eV.                                                        
+ 35S   L 698.2     1                   0.800 EV  80    (2)      698.2     1     
+ 35S  cL $g|G{-n}=305 eV {I50}; |G{-|g}=0.80 eV {I8}.                           
+ 35S   L 713.0     7                   0.450 EV  70    (2)      713.0     7     
+ 35S  cL $g|G{-n}<4 eV.                                                         
+ 35S   L 767.3     6                   0.31 EV   13    (2)      767.3     6     
+ 35S  cL $g|G{-n}<4 eV.                                                         
+ 35S   L 786.5     4                   2.65 EV   18    (1)      786.5     4     
+ 35S  cL $g|G{-n}=18 eV {I6}; |G{-|g}=1.33 eV {I9}.                             
+ 35S   L 798.65    60 3/2                              1        798.65    60    
+ 35S  cL $g|G{-n}=2535 eV {I300}; |G{-|g}=1.52 eV {I50}.                        
+ 35S   L 813.8     1  1/2                              1        813.8     1     
+ 35S  cL $g|G{-n}=860 eV {I60}; |G{-|g}=0.19 eV {I13}.                          
+ 35S   L 836.27    8  1/2                              0        836.27    8     
+ 35S  cL $g|G{-n}=3600 eV {I160}; |G{-|g}=0.39 eV {I18}.                        
+ 35S   L 860.94    6  3/2              0.24 EV   19    2        860.94    6     
+ 35S  cL $g|G{-n}=2650 eV {I110}; |G{-|g}=0.24 eV {I19}.                        
+ 35S   L 893.17    6  3/2              0.38 EV   16    1        893.17    6     
+ 35S  cL $g|G{-n}=4950 eV {I160}; |G{-|g}=0.38 eV {I16}.                        
+ 35S   L 902.0     2                   1.13 EV   19    (2)      902.0     2     
+ 35S  cL $g|G{-n}<3 eV.                                                         
+ 35S   L 921.5     2                   0.67 EV   17    (2)      921.5     2     
+ 35S  cL $g|G{-n}<20 eV.                                                        
+ 35S   L 930.0     6                   0.57 EV   25    (2)      930.0     6     
+ 35S  cL $g|G{-n}<20 eV.                                                        
+ 35S   L 935.78    6  3/2              0.348 EV  23    1        935.78    6     
+ 35S  cL $g|G{-n}=4100 eV {I160}; |G{-|g}=0.348 eV {I23}.                       
+ 35S   L 941.03    6                                   (2)      941.03    6     
+ 35S  cL $g|G{-n}=176 eV {I16}.                                                 
+ 35S   L 976.4     5                   0.50 EV   30    (2)      976.4     5     
+ 35S  cL $g|G{-n}<2 eV.                                                         
+ 35S   L 982.0     6                   0.890 EV  40    (2)      982.0     6     
+ 35S  cL $g|G{-n}<8 eV.                                                         
+ 35S   L 997.90    6  3/2              3.51 EV   19    1        997.90    6     
+ 35S  cL $g|G{-n}=4100 eV {I160}; |G{-|g}=3.51 eV {I19}.                        
+ 35S   L 1017.7    6  3/2              1.22 EV   18    1        1017.7    6     
+ 35S  cL $g|G{-n}=4020 eV {I180}; |G{-|g}=1.22 eV {I18}.                        
+ 35S   L 1064.4    6                                   (2)      1064.4    6     
+ 35S  cL $g|G{-n}=1032 eV {I90}.                                                
+ 35S   L 1086.7    2                                   (2)      1086.7    2     
+ 35S  cL $g|G{-n}=2650 eV {I160}.                                               
+ 35S   L 1123.0    2                                   (2)      1123.0    2     
+ 35S  cL $g|G{-n}=5480 eV {I390}.                                               
+ 35S   L 1124.5    2                                   (2)      1124.5    2     
+ 35S  cL $g|G{-n}=4730 eV {I320}.                                               
+ 35S   L 1140.0    5  1/2                              1        1140.0    5     
+ 35S  cL $g|G{-n}=34880 eV {I830}.                                              
+ 35S   L 1192.0    2                   0.290 EV  50    (2)      1192.0    2     
+ 35S  cL $g|G{-n}=5510 eV {I290}.                                               
+ 35S   L 1237.0    3  1/2              4.97 EV   89    1        1237.0    3     
+ 35S  cL $g|G{-n}=2945 eV {I230}.                                               
+ 35S   L 1261.8    3                   1.61 EV   14    (1)      1261.8    3     
+ 35S  cL $g|G{-n}=9750 eV {I86}.                                                
+ 35S   L 1275.1    4  1/2              3.55 EV   30    1        1275.1    4     
+ 35S  cL $g|G{-n}=2170 eV {I180}.                                               
+ 35S   L 1295.5    3                   0.330 EV  40    (2)      1295.5    3     
+ 35S  cL $g|G{-n}=1980 eV {I150}.                                               
+ 35S   L 1308.2    2  3/2              19.40 EV  23    1        1308.2    2     
+ 35S  cL $g|G{-n}=12475 eV {I770}.                                              
+ 35S   L 1314.5    4  5/2              0.58 EV   23    2        1314.5    4     
+ 35S  cL $g|G{-n}=6240 eV {I500}.                                               
+ 35S   L 1325.7    4  1/2              2.58 EV   23    1        1325.7    4     
+ 35S  cL $g|G{-n}=1635 eV {I145}.                                               
+ 35S   L 1351.4    3                                   (2)      1351.4    3     
+ 35S  cL $g|G{-n}=14470 eV {I650}.                                              
+ 35S   L 1388.0    4  3/2              4.36 EV   60    1        1388.0    4     
+ 35S  cL $g|G{-n}=2884 eV {I1060}.                                              
+ 35S   L 1390.1    4                                   (2)      1390.1    4     
+ 35S  cL $g|G{-n}=1955 eV {I170}.                                               
+ 35S   L 1447.2    4  3/2                              1        1447.2    4     
+ 35S  cL $g|G{-n}=27100 eV {I1390}.                                             
+ 35S   L 1449.6    4                   1.02 EV   12    (2)      1449.6    4     
+ 35S  cL $g|G{-n}=30250 eV {I260}.                                              
+ 35S   L 1462.9    3                   0.890 EV  40    (2)      1462.9    3     
+ 35S  cL $g|G{-n}=88560 eV {I345}.                                              
+ 35S   L 1475.5    3                   0.340 EV  80    (2)      1475.5    3     
+ 35S  cL $g|G{-n}=37960 eV {I340}.                                              
 

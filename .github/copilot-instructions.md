@@ -15,6 +15,35 @@ applyTo: "**"
 - Special markers (GT, LT) within uncertainty fields are also left-justified
 - NEVER right-justify or center ANY ENSDF field content!
 
+## 🚨 CRITICAL FILE CORRUPTION PREVENTION 🚨
+**IMMEDIATE STOP CONDITIONS - NEVER PROCEED IF:**
+1. **File structure corruption detected** - Headers mangled into data lines
+2. **L-records jumbled together** - Multiple L-records on single line
+3. **Column alignment destroyed** - 80-column ENSDF format broken
+4. **Header/data line mixing** - Header elements appearing in L-records
+
+**MANDATORY SAFEGUARDS FOR ENSDF EDITING:**
+1. **ALWAYS read entire file structure first** - Never edit blindly
+2. **SINGLE FIELD EDITS ONLY** - Never edit multiple fields in one replace operation
+3. **PRECISE CONTEXT MATCHING** - Use 5+ lines of unique context before/after
+4. **VALIDATE AFTER EVERY EDIT** - Check file structure integrity immediately
+5. **STOP ON FIRST ERROR** - If any edit fails, STOP and seek user guidance
+
+**FORBIDDEN EDITING PATTERNS:**
+- ❌ Bulk multi-line replacements spanning multiple L-records
+- ❌ Editing without sufficient unique context (minimum 5 lines)
+- ❌ Assuming file structure without reading current state
+- ❌ Continuing after any formatting error
+- ❌ Editing based on outdated file state
+
+**REQUIRED VALIDATION SEQUENCE:**
+1. Read file → 2. Identify target → 3. Single precise edit → 4. Validate structure → 5. STOP if any issues
+
+**File Corruption Recovery:**
+- If structure damaged: User must restore from backup/undo
+- Agent must NOT attempt automatic recovery
+- Document corruption cause for future prevention
+
 ## 🎯 80-Column Alignment Debugging Protocol
 **TRIGGER PHRASES**: "not aligned", "wrong columns", "header formatting", "80 characters"
 
@@ -208,6 +237,38 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
 - **NEVER** modify first/last line indentation or spacing in .ens files
 - **ALWAYS** preserve "PN" line with its numeric value
 - Make all edits between first and last line boundaries only
+
+### ENSDF File Editing Safety Protocol
+**BEFORE ANY EDIT - MANDATORY CHECKS:**
+1. **Read current file state** - Never assume file structure
+2. **Identify target line uniquely** - Must have 5+ lines of unique context
+3. **Single field modification only** - Never edit multiple fields at once
+4. **Validate column positions** - Check field boundaries before editing
+
+**EDITING METHODOLOGY:**
+1. **ONE EDIT AT A TIME** - Never batch multiple field changes
+2. **PRECISE CONTEXT MATCHING** - Use complete L-record + surrounding context
+3. **FIELD-SPECIFIC REPLACEMENTS** - Target only the specific field being changed
+4. **IMMEDIATE VALIDATION** - Check file structure after each edit
+
+**EXAMPLE SAFE EDIT PATTERN:**
+```
+Target: Change T field value from "0.025 EV  1" to "0.027 EV  2" in line with energy 34.03
+
+CORRECT approach:
+- Read file to confirm current state
+- Use complete L-record as context: " 35S   L 34.03     1  1/2              0.025 EV  1     (2)      34.03     1     "
+- Replace only T field portion: "0.025 EV  1" → "0.027 EV  2"
+- Validate file structure immediately
+
+WRONG approach:
+- Assume file state
+- Edit multiple fields simultaneously
+- Use insufficient context
+- Continue editing after any error
+```
+
+**CRITICAL: If any edit causes file corruption, STOP immediately and inform user**
 
 ### Column Positioning
 - **J-π placement**: Always start at column 23, LEFT-JUSTIFIED (never add spaces that shift uncertainties)

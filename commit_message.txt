@@ -1,0 +1,32 @@
+S35 resonance data PNG extraction and file corruption prevention
+
+Summary:
+- Completed systematic extraction of three types of nuclear resonance parameters from PNG images
+- Implemented comprehensive file corruption prevention protocols for safe ENSDF editing
+- Enhanced scientific content accuracy and formatting consistency in S35 resonance files
+
+ENSDF Scientific Content:
+- S35_ng_resonances.ens: Complete format conversion from scattered data to standard ENSDF L-record structure
+  * Converted 315 lines to 160 lines with proper neutron energy format
+  * Extracted gΓnΓγ/Γ values from PNG tables with meV→eV conversion (2 corrections)
+  * Extracted gΓn values from PNG tables (8 new comment lines, 2 corrections)
+  * Extracted Γγ values from PNG tables with semicolon separator format (8 additions)
+  * Enhanced experimental description: "Deduced 81 resonances" specification
+  * Updated fictitious level comment: |G{-|g}=0.38 eV correction
+- S35_ng_E_thermal.ens: Header updates for ENSDF 202509 consistency
+
+Safety Enhancements:
+- copilot-instructions.md: Added comprehensive file corruption prevention protocols
+  * Immediate stop conditions for structure corruption detection
+  * Mandatory safeguards: single field edits, precise context matching
+  * Detailed editing safety protocol with correct vs incorrect examples
+  * File corruption recovery procedures
+
+Processing Artifacts:
+- PNG files: Added 2018MuZY_35S resonance data tables and processing files
+  * Original PNG images and Photoshop processing files (8.8MB each)
+  * Multiple cropped versions for clear visibility of different data columns
+  * Cross-verification against original images to prevent data hallucination
+
+Files changed: 3 modified, 10 untracked
+Completion of systematic PNG data extraction project with enhanced safety protocols for future ENSDF editing operations.

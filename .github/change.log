@@ -1,5 +1,75 @@
 # Change Log for ENSDF Edits
 
+## 2025-07-18: S35 Resonance Data PNG Extraction and File Corruption Prevention
+
+**Summary**: Completed systematic extraction of three types of nuclear resonance parameters from PNG images (gΓnΓγ/Γ, gΓn, and Γγ values) into proper ENSDF format. Implemented comprehensive file corruption prevention protocols based on previous editing challenges.
+
+### Major PNG Data Extraction Project
+
+#### File: `A35/S35/new/S35_ng_resonances.ens`
+**Comprehensive format conversion** from scattered data format to standard ENSDF L-record structure:
+
+**Complete File Restructuring:**
+- **Before**: 315 lines with complex excitation energy format (e.g., "7018.89 5" for 34.03 keV resonance)
+- **After**: 160 lines with standard ENSDF resonance format using neutron energies
+- **Format conversion**: Converted from E(excitation) format to E(neutron lab) format throughout
+- **Column alignment**: All values properly left-justified in designated ENSDF fields
+
+**PNG Data Extraction - Three Parameter Types:**
+1. **gΓnΓγ/Γ values**: Extracted from PNG tables with meV→eV conversion for T field
+   - **930.0 keV**: Updated T field from missing to `0.57 EV 25`
+   - **463.9 keV**: Updated T field from missing to `0.280 EV 30`
+   
+2. **gΓn values**: Extracted from PNG tables (already in eV) for comment lines
+   - **Added 8 new comment lines**: 118.30, 231.25, 298.70, 317.51, 355.41, 396.10, 435.4, 469.85 keV
+   - **Corrected 2 existing values**: 
+     - 1449.6 keV: `3025 eV {I260}` → `30250 eV {I260}`
+     - 1475.5 keV: `3795 eV {I340}` → `37960 eV {I340}`
+
+3. **Γγ values**: Extracted from PNG tables (already in eV) for comment lines with semicolon separator
+   - **Added 8 semicolon-separated Γγ values**: 698.2, 813.8, 836.27, 860.94, 893.17, 935.78, 997.90, 1017.7 keV
+   - **Format**: `$g|G{-n}=XXX eV {IYY}; |G{-|g}=ZZZ eV {IWW}.`
+
+**Scientific Content Improvements:**
+- Lines 5-7: Enhanced experimental description from "Deduced levels, J, π, L, widths and spectroscopic factors" to "Deduced 81 resonances, J, π, L, widths and spectroscopic factors"
+- Line 25: Updated fictitious level comment from `$|G{-|g}=3 eV` to `$|G{-|g}=0.38 eV`
+- All parameter extraction verified against original PNG images with meticulous attention to detail
+
+### File Corruption Prevention Protocol Implementation
+
+#### Enhanced Safety Measures in `.github/copilot-instructions.md`:
+**Added comprehensive file corruption prevention section (lines 18-48)**:
+- **Immediate stop conditions**: File structure corruption, L-record jumbling, column alignment destruction
+- **Mandatory safeguards**: Read file structure first, single field edits only, precise context matching
+- **Forbidden patterns**: Bulk multi-line replacements, insufficient context, continuing after errors
+- **Required validation sequence**: Read → Identify → Edit → Validate → Stop on issues
+
+**Added detailed editing safety protocol (lines 241-275)**:
+- **Pre-edit mandatory checks**: Read current state, unique context identification, single field modification
+- **Safe editing methodology**: One edit at a time, precise context matching, field-specific replacements
+- **Example safe edit pattern**: Complete demonstration of correct vs incorrect approaches
+- **File corruption recovery**: User must restore from backup, agent must not attempt automatic recovery
+
+**Context**: These protocols were developed after experiencing file corruption issues during previous PNG data extraction attempts, ensuring future editing safety.
+
+### Processing Artifacts
+
+#### File: `A35/S35/new/S35_ng_E_thermal.ens`
+**Header updates** for consistency:
+- Line 1: Updated dataset reference from `11NDS 201111` to `ENSDF 202509`
+- Lines 2-3: Added standard ENSDF headers:
+  - `H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$`
+  - `H CIT=ENSDF$CUT=30-Sep-2025$`
+
+#### PNG Image Processing Files Added:
+**Generated image processing files in `A35/S35/temp/`**:
+- **2018MuZY_35S_Page_1.png/psd**: Original PNG images and Photoshop processing files
+- **2018MuZY_35S_Page_2.png/psd**: Second page of resonance data tables
+- **Cropped versions (2)-(4)**: Multiple cropped versions for clear visibility of different data columns
+- **File sizes**: Large processing files (8.8MB PSD files) for detailed image analysis
+
+**Validation**: All extracted values cross-verified against original PNG images with emphasis on precision and avoiding hallucinated data.
+
 ## 2025-07-16: S35 34S(d,pγ) Level Energy Update and Data Integration
 
 **Summary**: Updated S35 34S(d,pγ) dataset with precise level energies from 1972Fr11 images and integrated 1970Bu18 data for weighted averaging. Removed non-1972Fr11 footnoted levels and enhanced scientific documentation.
