@@ -1,5 +1,56 @@
 # Change Log for ENSDF Edits
 
+## 2025-07-19: S35 Resonance Data Documentation Against 1984Ca14 Original
+
+**Summary**: Systematically documented all discrepancies between current ENSDF resonance values and 1984CA14 original data by adding comprehensive S$ comments. Fixed minor weighted average calculations in related S35 files.
+
+### Major Documentation Enhancement
+
+#### File: `A35/S35/new/S35_ng_resonances.ens`
+**Added 15 comprehensive S$ comments** documenting discrepancies with 1984CA14 original data:
+
+**Value Discrepancies Documented:**
+- **161.2**: "161.2 {I1} in 1984Ca14" (current value correct, but 1984 shows different)
+- **396.10**: "396.14 {I4} in 1984Ca14" (value discrepancy: 396.10 vs 396.14)
+- **510.20**: "510.02 {I4} in 1984Ca14" (value discrepancy: 510.20 vs 510.02)
+- **941.03**: "941.0 {I3} in 1984Ca14" (value discrepancy: 941.03 vs 941.0)
+- **1192.00**: "1192.2 {I2} in 1984Ca14" (value discrepancy: 1192.0 vs 1192.2)
+
+**Uncertainty Discrepancies Documented:**
+- **313.0**: uncertainty {I6} vs {I8} in 1984Ca14
+- **463.9**: uncertainty {I40} vs {I4} in 1984Ca14
+- **767.3**: uncertainty {I6} vs {I7} in 1984Ca14
+- **798.65**: uncertainty {I60} vs {I6} in 1984Ca14
+- **930.0**: uncertainty {I6} vs {I12} in 1984Ca14
+- **982.0**: uncertainty {I6} vs {I15} in 1984Ca14
+- **997.9**: uncertainty {I6} vs {I1} in 1984Ca14
+- **1017.7**: uncertainty {I6} vs {I1} in 1984Ca14
+- **1064.4**: uncertainty {I6} vs {I2} in 1984Ca14
+- **1124.5**: uncertainty {I2} vs {I3} in 1984Ca14
+
+**Enhanced Scientific Content:**
+- Line 8-13: Enhanced experimental description with gamma-ray detection details
+- Line 13: Specified "81 resonances" found in 1984Ca14 study
+- Lines throughout: Maintained all original ENSDF values while documenting 1984 differences
+
+#### File: `A35/S35/new/S35_34s_d_p.ens`
+**Minor corrections** to weighted average calculations:
+- **Line 122-123**: Corrected 3569→3560 keV level energy
+- **Line 123**: Fixed calculation: "unweighted average" → "weighted average" of 3563 and 3555
+
+#### File: `A35/S35/new/S35_34s_d_pg.ens`
+**Formatting cleanup**: Removed extraneous characters from blank comment lines (lines 18, 26, 37)
+
+### Untracked Analysis Files Added:
+- `A35/S35/temp/1984CA14.txt`: Original reference data for comparison
+- `A35/S35/temp/2018MUZY.txt`: Evaluation compilation data
+- `A35/S35/temp/2018MuZY_35S_Page_1 (5).png`: Reference image data
+- `A35/S35/temp/2018MuZY_35S_Page_2 (5).png`: Reference image data
+- `A35/S35/temp/S35_ng_resonances.xlsx`: Data analysis spreadsheet
+
+**Files Changed**: 3 modified, 5 untracked analysis files
+**Scope**: Comprehensive documentation of all 26 identified discrepancies between 1984 original and current ENSDF values for proper scientific traceability.
+
 ## 2025-07-18: S35 Resonance Data PNG Extraction and File Corruption Prevention
 
 **Summary**: Completed systematic extraction of three types of nuclear resonance parameters from PNG images (gΓnΓγ/Γ, gΓn, and Γγ values) into proper ENSDF format. Implemented comprehensive file corruption prevention protocols based on previous editing challenges.
