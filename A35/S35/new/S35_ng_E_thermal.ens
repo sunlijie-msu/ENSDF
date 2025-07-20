@@ -3,35 +3,33 @@
  35S 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35S   H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35S 2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35S  c  1985Ra15: Thermal neutron flux of 6x10{+11} n/cm{+2} at the target     
- 35S 2c  position from the Los Alamos Omega West Reactor at nominal 8-MW reactor
- 35S 3c  power level. Targets: stable sulfur isotopes ({+32}S, {+33}S, {+34}S   
- 35S 4c  and {+36}S). Detectors: a 26 cm{+3} coaxial Ge(Li) detector inside a   
- 35S 5c  20-cm-diam by 30-cm-long NaI(Tl) annulus (FWHM=2.3 keV at 1 MeV,       
- 35S 6c  5.5 keV at 6 MeV and 8.8 keV at 11 MeV). Measured |s{-|g}, E|g, I|g.   
- 35S 7c  Deduced levels, branching ratios for the nuclei of {+33}S, {+34}S,     
- 35S 8c  {+35}S and {+37}S.                                                     
+ 35S  c  1985Ra15: 6|*10{+11} n/cm{+2} thermal neutrons at the target position  
+ 35S 2c  were produced from the Los Alamos Omega West Reactor at a nominal 8-MW 
+ 35S 3c  reactor power. |g rays after thermal neutron capture by a 1.09-g, 77.7%
+ 35S 4c  enriched {+34}S target were detected using a 26 cm{+3} coaxial Ge(Li)  
+ 35S 5c  detector inside a 20-cm-diam by 30-cm-long NaI(Tl) annulus with        
+ 35S 6c  FWHM=2.3 keV at 1 MeV, 5.5 keV at 6 MeV and 8.8 keV at 11 MeV. Measured
+ 35S 7c  |s{-|g}, E|g, and I|g for 60 |g-ray transitions. Deduced 20 levels.    
  35S  c  1972Dz13: Thermal neutron beam produced from the thermal column of the 
- 35S 2c  IRT reactor of the Baghdad Nuclear Research Institute. A               
- 35S 3c  97%-enriched sulphur target. A Ge(Li) detector for detecting |g-rays.  
- 35S 4c  Measured E|g, I|g. Deduced levels, branching ratios.                   
+ 35S 2c  IRT reactor of the Baghdad Nuclear Research Institute. A 97%-enriched  
+ 35S 3c  sulphur target. A Ge(Li) detector for detecting |g rays. Measured E|g, 
+ 35S 4c  I|g. Deduced levels, branching ratios.                                 
  35S  c  1985Ke08: Thermal neutron beam of 5x10{+12} cm{-1}s{-1} from the       
  35S 2c  McMaster University Reactor, captured on targets of natural {+32}S and 
  35S 3c  {+34}S. 1 {I10}% efficient Ge centered in a NaI(Tl) annulus, FWHM=     
  35S 4c  3.2-4.4 keV. Measured E|g, I|g. Deduced levels, Q.                     
- 35S  c  1997Be42: Thermal neutron beam from the reactor BR1 of the             
- 35S 2c  "Studiecentrum voor kernenergie" in Mol, Belgium. Target: enriched in  
- 35S 3c  {+34}S by 93.26% and in {+36}S by 5.933%. A Ge-detector for detecting  
- 35S 4c  |g-rays. Measured E|g, I|g. Deduced capture cross section, levels,     
- 35S 5c  spectroscopic factors.                                                 
+ 35S  c  1997Be42: Thermal neutrons were provided from the reactor BR1 of the   
+ 35S 2c  Studiecentrum voor kernenergie in Mol, Belgium. The target was enriched
+ 35S 3c  in {+34}S by 93.26% and in {+36}S by 5.933%. A Ge-detector for         
+ 35S 4c  detecting |g-rays. Measured E|g, I|g. Deduced capture cross section,   
+ 35S 5c  levels, spectroscopic factors.                                         
  35S  c  2007ChZX: Compilation of E|g, I|g from neutron capture for nuclei of   
- 35S 2c  Z=1-92. {I5} primary |g's and 13 secondary |g's reported for {+35}S.   
- 35S  d  2007ChZX: H.D.Choi et al., IAEA-STI/PUB1263 (2007)                     
+ 35S 2c  Z=1-92.                                                                
  35S  cG RI$ Normalized to photons per 100 neutron captures. Multiply 1/0.340 to
  35S 2cG obtain |g-ray cross section in mb (1985Ra15). In all papers,           
- 35S 3cG intensities are normalized to the 4638 transition, 56 {I6} in          
- 35S 4cG 1972Dz13, 59 {I5} in 1985Ke08, 55 {I5} in 1985Ra15,51 {I2} in 1997Be42.
- 35S  cG E,RI$From 1985Ra15, unless otherwise noted.                           
+ 35S 3cG intensities are normalized to the 4638 transition, 56 {I6} in 1972Dz13,
+ 35S 4cG 59 {I5} in 1985Ke08, 55 {I5} in 1985Ra15,51 {I2} in 1997Be42.          
+ 35S  cG E,RI$From 1985Ra15, unless otherwise noted.                            
  35S  cG E(A),RI(A)$ Weighted average from available values among 1972Dz13,     
  35S 2cG 1985Ke08, 1985Ra15 and 1997Be42.                                       
  35S  cG E(X)$ |g-ray placed twice                                              
@@ -42,9 +40,9 @@
  35S  cG RI(D)$1985Ke08 gives 24 {I2}                                           
  35S  cG E(E)$2184.16 {I19} from 1985Ke08                                       
  35S  cG RI(E)$From 1985Ke08                                                    
- 35S  cL E$From least-squares fit to E|g's                                     
- 35S  cL J$From Adopted Levels                                                 
- 35S  cL S$From 1997Be42                                                       
+ 35S  cL E$From least-squares fit to E|g's                                      
+ 35S  cL J$From Adopted Levels                                                  
+ 35S  cL S$From 1997Be42                                                        
  35S   N 1                                                                      
  35S  PN                                                                     4  
  35S   G 663.41    7  0.09   1                                                  
@@ -52,7 +50,9 @@
  35S   G 1381.67   24 0.024  8                                                  
  35S   L 0           3/2+                                                       
  35S   L 1572.369   9 1/2+                                                      
- 35S   G 1572.33   1  32.4   4                                              A   
+ 35S   G 1572.333  8  32.4   4                                              A   
+ 35S  cG E$weighted average of 1572.15 {I16} (1972Dz13) and 1572.333 {I7}       
+ 35S 2cG (1985Ra15)                                                             
  35S   L 1991.28    5 7/2-                                                      
  35S   G 1991.27   5  0.54   6                                                  
  35S   L 2347.779  10 3/2-                                      0.48            
@@ -132,4 +132,4 @@
  35S   G 4268.64   14 0.34   4                                              A   
  35S   G 4637.87   8  53     2                                              A   
  35S   G 6985.7    10 0.036  8                                                  
-                                                                                
+
