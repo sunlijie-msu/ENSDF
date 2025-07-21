@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 """
-ENSDF Column Calibration Script (Python Version)
-Enhanced with PowerShell History Analysis insights
-Complete L and G record field extraction
+ENSDF Column Calibration Script - GitHub Copilot Alignment Fixer
+Focused on L and G record data alignment where Copilot typically fails
 
-Usage: python column_calibrate.py "path/to/file.ens" [--detailed]
+Primary Use Cases:
+1. Fix GitHub Copilot's column misalignments in ENSDF data records
+2. Validate critical field positions after AI-assisted editing
+3. Quick visual alignment check with 80-column ruler
+
+Usage: python column_calibrate.py "path/to/file.ens" [--all] [--visual]
 """
 
 import argparse
@@ -32,204 +36,99 @@ def colored_print(text: str, color: str = Colors.WHITE) -> None:
     print(f"{color}{text}{Colors.RESET}")
 
 
-def show_character_mapping(record: str, record_type: str) -> None:
-    """Show character-by-character mapping for detailed analysis"""
-    colored_print(f"Character-by-character mapping for {record_type}-record:", Colors.YELLOW)
-    
-    for i, char in enumerate(record[:80]):  # ENSDF records are 80 characters
-        pos = i + 1
-        display_char = 'SP' if char == ' ' else repr(char).strip("'")
-        print(f"{pos:2}: '{display_char}'")
-    print()
-
-
-def quick_header_analysis(filepath: str) -> None:
-    """Quick header analysis with visual ruler - perfect for debugging alignment issues"""
-    try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            header = f.readline().rstrip()
-    except Exception as e:
-        colored_print(f"Error reading file: {e}", Colors.RED)
-        return
-    
-    colored_print("=== QUICK HEADER ANALYSIS (80-Column Debug) ===", Colors.CYAN)
-    print()
-    colored_print("ENSDF 80-Column Ruler:", Colors.YELLOW)
-    colored_print("Ones:  12345678901234567890123456789012345678901234567890123456789012345678901234567890", Colors.WHITE)
-    colored_print("Tens:  1111111111222222222233333333334444444444555555555566666666667777777777888888888999", Colors.CYAN)
-    colored_print("Header:", Colors.GREEN)
-    print(f"       {header}")
-    print()
-    print(f"Length: {len(header)} chars (should be 80)")
-    print()
-    colored_print("ENSDF Header Field Analysis:", Colors.YELLOW)
-    print(f"Cols 1-5 (NUCID):  '{header[0:5] if len(header) >= 5 else 'N/A'}'")
-    print(f"Cols 6-9 (blank):  '{header[5:9] if len(header) >= 9 else 'N/A'}'")
-    print(f"Cols 10-39 (DSID): '{header[9:39] if len(header) >= 39 else 'N/A'}'")
-    print(f"Cols 40-65 (DSREF):'{header[39:65] if len(header) >= 65 else 'N/A'}'")
-    print(f"Cols 66-74 (PUB):  '{header[65:74] if len(header) >= 74 else 'N/A'}'")
-    print(f"Cols 75-80 (DATE): '{header[74:80] if len(header) >= 80 else 'N/A'}'")
-    print()
-    
-    # Validation
-    issues = []
-    if len(header) != 80:
-        issues.append(f"Length is {len(header)}, should be exactly 80")
-    if len(header) >= 9 and header[5:9] != "    ":
-        issues.append("Cols 6-9 should be blank spaces")
-    
-    if issues:
-        colored_print("❌ ISSUES FOUND:", Colors.RED)
-        for issue in issues:
-            colored_print(f"   • {issue}", Colors.RED)
-    else:
-        colored_print("✅ Header format looks good!", Colors.GREEN)
-    print()
-
-
-def analyze_ensdf_fields(record: str, record_type: str) -> None:
-    """Enhanced field extraction and analysis"""
-    colored_print(f"=== Field Analysis for {record_type}-record ===", Colors.CYAN)
-    print(f"Record: {record}")
-    print()
-    
-    if record_type == "L":
-        # L-record field analysis - Complete ENSDF format
-        fields = {
-            'NUCID': record[0:5].strip() if len(record) >= 5 else "N/A",
-            'Record type': record[7] if len(record) >= 8 else "N/A",
-            'Energy': record[9:19].strip() if len(record) >= 19 else "N/A",
-            'Energy uncertainty': record[19:21].strip() if len(record) >= 21 else "N/A",
-            'Readability space': record[21] if len(record) >= 22 else "N/A",
-            'J-π': record[21:39].strip() if len(record) >= 39 else "N/A",
-            'Half-life': record[39:49].strip() if len(record) >= 49 else "N/A",
-            'Half-life uncertainty': record[49:55].strip() if len(record) >= 55 else "N/A",
-            'L (Angular momentum)': record[55:64].strip() if len(record) >= 64 else "N/A",
-            'S (Spectroscopic strength)': record[64:74].strip() if len(record) >= 74 else "N/A",
-            'DS (Uncertainty in S)': record[74:76].strip() if len(record) >= 76 else "N/A"
-        }
-        
-        colored_print("Field Analysis:", Colors.GREEN)
-        print(f"  NUCID (cols 1-5): '{fields['NUCID']}'")
-        print(f"  Record type (col 8): '{fields['Record type']}'")
-        print(f"  Energy (cols 10-19): '{fields['Energy']}'")
-        print(f"  Energy uncertainty (cols 20-21): '{fields['Energy uncertainty']}'")
-        print(f"  Readability space (col 22): '{fields['Readability space']}'")
-        print(f"  J-π (cols 22-39): '{fields['J-π']}'")
-        print(f"  Half-life (cols 40-49): '{fields['Half-life']}'")
-        print(f"  Half-life uncertainty (cols 50-55): '{fields['Half-life uncertainty']}'")
-        print(f"  L (Angular momentum) (cols 56-64): '{fields['L (Angular momentum)']}'")
-        print(f"  S (Spectroscopic strength) (cols 65-74): '{fields['S (Spectroscopic strength)']}'")
-        print(f"  DS (Uncertainty in S) (cols 75-76): '{fields['DS (Uncertainty in S)']}'")
-        
-    elif record_type == "G":
-        # G-record field analysis - Complete ENSDF format
-        fields = {
-            'NUCID': record[0:5].strip() if len(record) >= 5 else "N/A",
-            'Record type': record[7] if len(record) >= 8 else "N/A",
-            'Energy': record[9:19].strip() if len(record) >= 19 else "N/A",
-            'Energy uncertainty': record[19:21].strip() if len(record) >= 21 else "N/A",
-            'Readability space': record[21] if len(record) >= 22 else "N/A",
-            'Relative intensity': record[21:29].strip() if len(record) >= 29 else "N/A",
-            'Intensity uncertainty': record[29:31].strip() if len(record) >= 31 else "N/A",
-            'Multipolarity': record[31:41].strip() if len(record) >= 41 else "N/A",
-            'Mixing ratio': record[41:49].strip() if len(record) >= 49 else "N/A",
-            'Mixing ratio uncertainty': record[49:55].strip() if len(record) >= 55 else "N/A",
-            'Conversion coefficient': record[55:62].strip() if len(record) >= 62 else "N/A",
-            'CC uncertainty': record[62:64].strip() if len(record) >= 64 else "N/A",
-            'Total conversion coefficient': record[64:72].strip() if len(record) >= 72 else "N/A",
-            'TCC uncertainty': record[72:76].strip() if len(record) >= 76 else "N/A",
-            'Continuation': record[76:77].strip() if len(record) >= 77 else "N/A",
-            'Coincidence flag': record[77:78].strip() if len(record) >= 78 else "N/A",
-            'Question flag': record[78:79].strip() if len(record) >= 79 else "N/A",
-            'Footnote flag': record[79:80].strip() if len(record) >= 80 else "N/A"
-        }
-        
-        colored_print("Field Analysis:", Colors.GREEN)
-        print(f"  NUCID (cols 1-5): '{fields['NUCID']}'")
-        print(f"  Record type (col 8): '{fields['Record type']}'")
-        print(f"  Energy (cols 10-19): '{fields['Energy']}'")
-        print(f"  Energy uncertainty (cols 20-21): '{fields['Energy uncertainty']}'")
-        print(f"  Readability space (col 22): '{fields['Readability space']}'")
-        print(f"  Relative intensity (cols 22-29): '{fields['Relative intensity']}'")
-        print(f"  Intensity uncertainty (cols 30-31): '{fields['Intensity uncertainty']}'")
-        print(f"  Multipolarity (cols 32-41): '{fields['Multipolarity']}'")
-        print(f"  Mixing ratio (cols 42-49): '{fields['Mixing ratio']}'")
-        print(f"  Mixing ratio uncertainty (cols 50-55): '{fields['Mixing ratio uncertainty']}'")
-        print(f"  Conversion coefficient (cols 56-62): '{fields['Conversion coefficient']}'")
-        print(f"  CC uncertainty (cols 63-64): '{fields['CC uncertainty']}'")
-        print(f"  Total conversion coefficient (cols 65-72): '{fields['Total conversion coefficient']}'")
-        print(f"  TCC uncertainty (cols 73-76): '{fields['TCC uncertainty']}'")
-        print(f"  Continuation (col 77): '{fields['Continuation']}'")
-        print(f"  Coincidence flag (col 78): '{fields['Coincidence flag']}'")
-        print(f"  Question flag (col 79): '{fields['Question flag']}'")
-        print(f"  Footnote flag (col 80): '{fields['Footnote flag']}'")
-    
-    print()
-
-
-def validate_ensdf_fields(record: str, record_type: str) -> List[str]:
-    """Enhanced field validation function"""
+def analyze_critical_alignment(record: str, record_type: str, line_num: int) -> List[str]:
+    """
+    Analyze critical alignment issues that GitHub Copilot commonly creates
+    Focus on the most error-prone field boundaries
+    """
     issues = []
     
-    # Basic length check
     if len(record) < 80:
-        issues.append(f"Record too short: {len(record)} chars (should be 80)")
+        issues.append(f"Line {line_num}: Record too short ({len(record)} chars, need 80)")
+        return issues
     
-    # Check NUCID field (columns 1-5)
-    if len(record) >= 5:
-        nucid = record[0:5]
-        if not nucid.strip():
-            issues.append("NUCID field (cols 1-5) is empty")
-    
-    # Check record type position (column 8)
-    if len(record) >= 8:
-        if record_type == "L" and record[7] != 'L':
-            issues.append(f"Record type not 'L' at position 8 (found: '{record[7]}')")
-        elif record_type == "G" and record[7] != 'G':
-            issues.append(f"Record type not 'G' at position 8 (found: '{record[7]}')")
-    
-    # Check energy field (columns 10-19) - should not be all spaces
-    if len(record) >= 19:
-        energy_field = record[9:19]
-        if not energy_field.strip():
-            issues.append("Energy field (cols 10-19) is empty")
-    
-    # Check readability space at column 22 (critical for human reading)
-    if len(record) >= 22 and record[21] != ' ':
-        issues.append(f"Column 22 should be space for readability (found: '{record[21]}')")
-    
-    # Record type specific validations
+    # Critical position checks where Copilot fails most often
     if record_type == "L":
-        # For L-records, J-π field starts at column 23 (after readability space)
-        if len(record) >= 39:
-            j_pi_field = record[22:39]  # starts at 23 (index 22)
-            if not j_pi_field.strip():
-                issues.append("J-π field (cols 23-39) appears empty")
+        # Check readability space at position 22 (Copilot often removes this)
+        if record[21] != ' ':
+            issues.append(f"Line {line_num}: Missing readability space at col 22 (found: '{record[21]}')")
+        
+        # Check if J-π field starts correctly at position 23
+        j_pi_start = 22  # 0-indexed position 22 = column 23
+        if len(record) > j_pi_start and record[j_pi_start] != ' ' and record[9:19].strip():
+            # Only warn if there's an energy value (real L-record)
+            pass  # J-π can start with non-space
+        
+        # Check S field (columns 65-74) - critical for nuclear data
+        s_field = record[64:74] if len(record) >= 74 else ""
+        if s_field and not s_field[0].isdigit() and s_field[0] != '-' and s_field[0] != ' ':
+            issues.append(f"Line {line_num}: S field (col 65-74) may be misaligned: '{s_field}'")
+        
+        # Check uncertainty field (columns 75-76) - often displaced by Copilot
+        if len(record) >= 76:
+            unc_field = record[74:76]
+            if unc_field.strip() and not unc_field.strip().isdigit():
+                issues.append(f"Line {line_num}: Uncertainty field (col 75-76) suspicious: '{unc_field}'")
+    
     elif record_type == "G":
-        # For G-records, relative intensity starts at column 23 (after readability space)
-        if len(record) >= 29:
-            intensity_field = record[22:29]  # starts at 23 (index 22)
-            if not intensity_field.strip():
-                issues.append("Relative intensity field (cols 23-29) appears empty")
+        # Check readability space at position 22
+        if record[21] != ' ':
+            issues.append(f"Line {line_num}: Missing readability space at col 22 (found: '{record[21]}')")
+        
+        # Check RI field alignment (columns 23-29) - Copilot often shifts this
+        ri_field = record[22:29] if len(record) >= 29 else ""
+        if ri_field.strip() and record[9:19].strip():  # Only if there's energy and RI
+            # Check if RI starts properly at column 23
+            if ri_field[0] != ' ' and not ri_field[0].isdigit() and ri_field[0] != '<':
+                issues.append(f"Line {line_num}: RI field (col 23-29) may be misaligned: '{ri_field}'")
+        
+        # Check DRI field (columns 30-31) - often displaced
+        if len(record) >= 31:
+            dri_field = record[29:31]
+            if dri_field.strip() and not dri_field.strip().isdigit() and dri_field.strip() not in ['GT', 'LT']:
+                issues.append(f"Line {line_num}: DRI field (col 30-31) suspicious: '{dri_field}'")
     
     return issues
 
 
-def extract_records(content: List[str]) -> Tuple[List[str], List[str]]:
-    """Extract L and G records from ENSDF content"""
+def show_visual_alignment(record: str, record_type: str, line_num: int) -> None:
+    """Show visual alignment with ruler - perfect for spotting Copilot errors"""
+    print(f"\nLine {line_num} ({record_type}-record) Alignment Check:")
+    print("Ruler: 12345678901234567890123456789012345678901234567890123456789012345678901234567890")
+    print("Tens:  1111111111222222222233333333334444444444555555555566666666667777777777888888888999")
+    print(f"Data:  {record}")
+    
+    if record_type == "L":
+        print("       |    L    E|DE|J-π              |T       |DT  |L      |S       |DS")
+        print("Field: NUCID  (10-19)(23-39)        (40-49) (50-55)(56-64)(65-74)(75-76)")
+    elif record_type == "G":
+        print("       |    G    E|DE|RI    |DRI|M       |MR   |DMR|CC   |DCC|TI    |DTI")
+        print("Field: NUCID  (10-19)(23-29)(30-31)(32-41)(42-49)(50-55)(56-62)(63-64)(65-74)(75-76)")
+
+
+def extract_data_records(content: List[str]) -> Tuple[List[Tuple[str, int]], List[Tuple[str, int]]]:
+    """Extract L and G records with line numbers - skip headers and comments"""
     l_records = []
     g_records = []
     
-    for line in content:
-        # Match L records: whitespace + NUCID + whitespace + L + whitespace
+    for i, line in enumerate(content, 1):
+        line = line.rstrip()
+        # Skip headers, comments, and other non-data records
+        if len(line) < 8:
+            continue
+        if line.strip().startswith('#'):
+            continue
+        if re.match(r'^\s*\w+\s+[Hc]', line):  # Skip headers and comments
+            continue
+            
+        # Match L records - focus on data records where Copilot causes issues
         if re.match(r'^\s*\w+\s+L\s', line):
-            l_records.append(line.rstrip())
-        # Match G records: whitespace + NUCID + whitespace + G + whitespace
+            l_records.append((line, i))
+        # Match G records
         elif re.match(r'^\s*\w+\s+G\s', line):
-            g_records.append(line.rstrip())
+            g_records.append((line, i))
     
-    return l_records[:2], g_records[:2]  # Take first 2 of each type
+    return l_records, g_records
 
 
 def count_records(content: List[str]) -> Dict[str, int]:
@@ -253,22 +152,30 @@ def count_records(content: List[str]) -> Dict[str, int]:
 
 
 def main():
-    """Main function"""
+    """Main function - Focus on fixing GitHub Copilot alignment issues"""
     parser = argparse.ArgumentParser(
-        description="ENSDF Column Calibration Script (Python Version)",
+        description="ENSDF Column Calibration - Fix GitHub Copilot Alignment Issues",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
+GitHub Copilot Alignment Fixer for ENSDF Files:
+
 Examples:
-  python column_calibrate.py file.ens
-  python column_calibrate.py file.ens --detailed
-  python column_calibrate.py file.ens --header    # Quick header analysis with 80-column ruler
+  python column_calibrate.py file.ens                # Quick alignment check
+  python column_calibrate.py file.ens --visual       # Show visual rulers for misaligned records
+  python column_calibrate.py file.ens --all          # Check all data records (not just samples)
+
+Focus Areas:
+  - L-records: Energy, J-π, T, S fields alignment (cols 10-76)
+  - G-records: Energy, RI, multipolarity alignment (cols 10-76)
+  - Critical readability spaces at column 22
+  - Field boundary preservation after AI editing
         """
     )
     parser.add_argument('filepath', help='Path to ENSDF file')
-    parser.add_argument('--detailed', '-d', action='store_true',
-                       help='Show character-by-character mapping for each record')
-    parser.add_argument('--header', action='store_true',
-                       help='Quick header analysis with 80-column ruler (perfect for debugging alignment)')
+    parser.add_argument('--visual', '-v', action='store_true',
+                       help='Show visual alignment rulers for problematic records')
+    parser.add_argument('--all', '-a', action='store_true',
+                       help='Check all data records instead of just samples')
     
     args = parser.parse_args()
     
@@ -276,11 +183,6 @@ Examples:
     if not os.path.exists(args.filepath):
         colored_print(f"Error: File '{args.filepath}' not found", Colors.RED)
         sys.exit(1)
-    
-    # Quick header analysis mode
-    if args.header:
-        quick_header_analysis(args.filepath)
-        return
     
     # Read file content
     try:
@@ -290,103 +192,94 @@ Examples:
         colored_print(f"Error reading file: {e}", Colors.RED)
         sys.exit(1)
     
-    # Strip newlines but preserve the content
+    # Strip newlines
     content = [line.rstrip('\n\r') for line in content]
     
     # Header
-    colored_print("=== ENSDF Column Calibration (Python Enhanced) ===", Colors.CYAN)
-    print()
-    colored_print("ENSDF 80-Column Ruler (CRITICAL for alignment debugging):", Colors.YELLOW)
-    colored_print("Ones:  12345678901234567890123456789012345678901234567890123456789012345678901234567890", Colors.WHITE)
-    colored_print("Tens:  1111111111222222222233333333334444444444555555555566666666667777777777888888888999", Colors.CYAN)
-    colored_print("       1         2         3         4         5         6         7         8", Colors.GRAY)
+    colored_print("=== ENSDF Column Calibration - GitHub Copilot Fixer ===", Colors.CYAN)
+    print(f"File: {args.filepath}")
     print()
     
-    # Extract sample records
-    l_records, g_records = extract_records(content)
+    # Extract data records with line numbers
+    l_records, g_records = extract_data_records(content)
+    
+    if not l_records and not g_records:
+        colored_print("No L or G records found in file", Colors.YELLOW)
+        return
+    
+    # Limit to samples unless --all is specified
+    if not args.all:
+        l_records = l_records[:3]  # First 3 L-records
+        g_records = g_records[:3]  # First 3 G-records
+    
+    total_issues = 0
+    problematic_records = []
     
     # Analyze L-records
     if l_records:
-        colored_print("Sample L-records:", Colors.GREEN)
-        for record in l_records:
-            print(record)
-            colored_print("  NUCID (1-5), L (8), Energy (10-19), DE (20-21), Space (22), J (23-39), T (40-49), DT (50-55), L (56-64), S (65-74), DS (75-76)", Colors.GRAY)
-            print()
-            
-            # Show detailed field analysis
-            analyze_ensdf_fields(record, "L")
-            
-            # Optional character-by-character mapping
-            if args.detailed:
-                show_character_mapping(record, "L")
+        colored_print(f"Checking {len(l_records)} L-records for alignment issues...", Colors.GREEN)
+        for record, line_num in l_records:
+            issues = analyze_critical_alignment(record, "L", line_num)
+            if issues:
+                total_issues += len(issues)
+                problematic_records.append((record, "L", line_num, issues))
+                colored_print(f"  Line {line_num}: {len(issues)} issue(s) found", Colors.RED)
+                for issue in issues:
+                    print(f"    • {issue.split(': ', 1)[1] if ': ' in issue else issue}")
+            else:
+                colored_print(f"  Line {line_num}: ✓ Alignment OK", Colors.GREEN)
+        print()
     
     # Analyze G-records
     if g_records:
-        colored_print("Sample G-records:", Colors.GREEN)
-        for record in g_records:
-            print(record)
-            colored_print("  NUCID (1-5), G (8), Energy (10-19), DE (20-21), Space (22), RI (23-29), DRI (30-31), M (32-41), MR (42-49), DMR (50-55), CC (56-62), DCC (63-64), TCC (65-72), DTCC (73-76), C (77), [+] (78), [?] (79), [*] (80)", Colors.GRAY)
+        colored_print(f"Checking {len(g_records)} G-records for alignment issues...", Colors.GREEN)
+        for record, line_num in g_records:
+            issues = analyze_critical_alignment(record, "G", line_num)
+            if issues:
+                total_issues += len(issues)
+                problematic_records.append((record, "G", line_num, issues))
+                colored_print(f"  Line {line_num}: {len(issues)} issue(s) found", Colors.RED)
+                for issue in issues:
+                    print(f"    • {issue.split(': ', 1)[1] if ': ' in issue else issue}")
+            else:
+                colored_print(f"  Line {line_num}: ✓ Alignment OK", Colors.GREEN)
+        print()
+    
+    # Show visual alignment for problematic records
+    if args.visual and problematic_records:
+        colored_print("=== VISUAL ALIGNMENT CHECK ===", Colors.CYAN)
+        for record, record_type, line_num, issues in problematic_records:
+            show_visual_alignment(record, record_type, line_num)
+            colored_print(f"Issues found:", Colors.RED)
+            for issue in issues:
+                print(f"  • {issue.split(': ', 1)[1] if ': ' in issue else issue}")
             print()
-            
-            # Show detailed field analysis
-            analyze_ensdf_fields(record, "G")
-            
-            # Optional character-by-character mapping
-            if args.detailed:
-                show_character_mapping(record, "G")
     
-    # Validate sample records
-    if l_records:
-        colored_print("L-record validation:", Colors.YELLOW)
-        for record in l_records:
-            issues = validate_ensdf_fields(record, "L")
-            if not issues:
-                colored_print("  [OK] Format OK", Colors.GREEN)
-            else:
-                colored_print("  [!] Issues found:", Colors.RED)
-                for issue in issues:
-                    colored_print(f"    {issue}", Colors.RED)
+    # Summary
+    colored_print("=== SUMMARY ===", Colors.CYAN)
+    total_records = len(l_records) + len(g_records)
+    problematic_count = len(problematic_records)
+    
+    if total_issues == 0:
+        colored_print(f"✅ All {total_records} records have correct alignment!", Colors.GREEN)
+        colored_print("   GitHub Copilot didn't mess up the columns this time.", Colors.GREEN)
+    else:
+        colored_print(f"❌ Found {total_issues} alignment issues in {problematic_count}/{total_records} records", Colors.RED)
+        colored_print(f"   GitHub Copilot likely misaligned these fields during editing.", Colors.YELLOW)
         print()
-    
-    if g_records:
-        colored_print("G-record validation:", Colors.YELLOW)
-        for record in g_records:
-            issues = validate_ensdf_fields(record, "G")
-            if not issues:
-                colored_print("  [OK] Format OK", Colors.GREEN)
-            else:
-                colored_print("  [!] Issues found:", Colors.RED)
-                for issue in issues:
-                    colored_print(f"    {issue}", Colors.RED)
+        colored_print("Common Copilot mistakes:", Colors.YELLOW)
+        print("  • Removing readability spaces at column 22")
+        print("  • Shifting S field values (columns 65-74)")
+        print("  • Misaligning uncertainty fields (columns 75-76)")
+        print("  • Moving RI values outside columns 23-29")
         print()
+        if not args.visual:
+            colored_print("Tip: Use --visual flag to see alignment rulers for problematic records", Colors.CYAN)
     
-    # Summary statistics
-    stats = count_records(content)
-    colored_print("File Statistics:", Colors.CYAN)
-    print(f"  Total lines: {stats['total']}")
-    print(f"  L-records (levels): {stats['L_records']}")
-    print(f"  G-records (gammas): {stats['G_records']}")
-    print(f"  Comment lines: {stats['comments']}")
     print()
-    
-    colored_print("[OK] Column calibration complete", Colors.GREEN)
-    colored_print("[OK] Python version with enhanced PowerShell history insights", Colors.GREEN)
-    print()
-    
-    colored_print("=== ENSDF Column Reference ===", Colors.CYAN)
-    print("L-records: NUCID(1-5) L(8) Energy(10-19) DE(20-21) [space](22) J-π(23-39) T(40-49) DT(50-55) L(56-64) S(65-74) DS(75-76)")
-    print("G-records: NUCID(1-5) G(8) Energy(10-19) DE(20-21) [space](22) RI(23-29) DRI(30-31) M(32-41) MR(42-49) DMR(50-55) CC(56-62) DCC(63-64) TCC(65-72) DTCC(73-76) C(77) [+](78) [?](79) [*](80)")
-    print()
-    colored_print("Key improvements from PowerShell history analysis:", Colors.YELLOW)
-    print("  - Enhanced field extraction and validation")
-    print("  - Character-by-character mapping (use --detailed flag)")
-    print("  - Corrected column assignments for readability space at col 22")
-    print("  - J-π and RI fields properly start at column 23")
-    print("  - Complete L-record field extraction including L, S, and DS fields")
-    print("  - Complete G-record field extraction including all fields to column 80")
-    print("  - Comprehensive field validation with specific error messages")
-    print("  - Python regex for robust record matching")
-    print("  - Better error handling and UTF-8 support")
+    colored_print("Quick Reference:", Colors.CYAN)
+    print("L-records: Energy(10-19) [space](22) J-π(23-39) T(40-49) L(56-64) S(65-74) DS(75-76)")
+    print("G-records: Energy(10-19) [space](22) RI(23-29) DRI(30-31) M(32-41) MR(42-49)")
 
 
 if __name__ == "__main__":
