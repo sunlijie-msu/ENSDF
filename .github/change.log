@@ -1,5 +1,75 @@
 # Change Log for ENSDF Edits
 
+## 2025-07-19: Systematic JSON/PNG Data Integration and ENSDF File Enhancement
+
+**Summary**: Completed comprehensive nuclear data integration from multiple JSON sources and PNG images into proper ENSDF format. Added three new thermal neutron capture data files, enhanced scientific descriptions, and removed tentative spin-parity assignments. Updated development tools and documentation standards.
+
+### New ENSDF File Creation
+
+#### File: `A35/S35/temp/1972DZ13.ens` (NEW FILE - 47 lines)
+**Complete thermal neutron capture data from PNG extraction**:
+- **Experimental setup**: IRT reactor, Baghdad Nuclear Research Institute, 10-cm³ Ge(Li) detector
+- **Data extracted**: 21 gamma-ray transitions with energies 204.1-8641.5 keV
+- **Format compliance**: All G-records properly formatted with left-justified values
+- **Scientific content**: Complete with detector specifications (FWHM=3.5 keV at 1 MeV, 8 keV at 7 MeV)
+
+#### File: `A35/S35/temp/1985KE08.ens` (NEW FILE - 40 lines) 
+**McMaster University Reactor thermal neutron capture data**:
+- **Experimental details**: 5×10¹² n/cm²/s thermal neutrons, 10% efficient Ge detector
+- **Data integration**: 13 G-records from JSON source with corrected uncertainty conversion
+- **Critical fix**: Corrected uncertainty errors (e.g., 59±5 correctly formatted as 59(5), not 59(50))
+- **Scientific description**: Enhanced detector and beam specifications
+
+#### File: `A35/S35/temp/1997BE42.ens` (NEW FILE - 39 lines)
+**Thermal neutron capture study data**:
+- **Source integration**: Complete L and G records from JSON data with exact decimal preservation
+- **Data content**: 11 gamma-ray transitions with proper intensity uncertainties
+- **Format validation**: All uncertainties correctly converted to ENSDF notation
+- **Quality control**: Maintained absolute fidelity to original JSON precision
+
+### File Enhancement and Cleanup
+
+#### File: `A35/S35/temp/1985RA15.ens` (NEW FILE - 100 lines)
+**Los Alamos Omega West Reactor data with spin-parity cleanup**:
+- **Comprehensive removal**: Eliminated all tentative spin-parity assignments (1/2:9/2-) format
+- **Clean L-records**: Preserved definitive assignments while removing uncertain ones
+- **Scientific integrity**: Maintained experimental data while clarifying assignment uncertainties
+- **Format compliance**: Standard ENSDF L and G record structure throughout
+
+#### File: `A35/S35/new/S35_ng_E_thermal.ens` (Lines 6-25 enhanced)
+**Improved scientific descriptions for three thermal neutron studies**:
+- **1985Ra15**: Added "/s" unit clarification, enhanced experimental description from "after" to "following", added "and γ-ray branching ratios"
+- **1972Dz13**: Comprehensive rewrite from "Thermal neutron beam produced" to detailed experimental setup with detector specifications
+- **1985Ke08**: Enhanced from brief description to complete experimental details including beam flux and detector efficiency
+
+### Documentation and Tools Enhancement
+
+#### File: `.github/copilot-instructions.md` (Lines 532-578 added)
+**Added comprehensive Image Data Extraction Protocol**:
+- **Expert declaration**: Nuclear data scientist expertise statement for image analysis
+- **Precision requirements**: Absolute fidelity to decimal places, no rounding or alteration
+- **ENSDF uncertainty notation**: Complete table with examples for different decimal precision levels
+- **Quality control**: Systematic validation and double-checking requirements
+
+### Project Management Updates
+
+#### File: `Weekly Effort Log.md` (Lines 76-78 added)
+**Work period documentation (July 13-19, 2025)**:
+- DSAM general request completion
+- A=35 evaluation training continuation  
+- 2 new reaction datasets added, 2 existing datasets revised for ³⁵S
+
+#### File: `Statistics.xlsx` (Binary file updated)
+**Updated project statistics** to reflect new file additions and data integration work
+
+### Untracked Files Added
+**Supporting data files for ENSDF integration**:
+- `1972DZ13.json`, `1972DZ13.png`: Source data for thermal neutron capture extraction
+- `1985Ke08.json`: JSON source for McMaster University Reactor data
+- `1997Be42.json`: JSON source for thermal neutron capture measurements
+
+**Impact**: This session represents a major advancement in systematic nuclear data integration, with four new ENSDF files created from diverse sources (PNG images, JSON data), comprehensive scientific description enhancement, and improved data quality control protocols. All work maintains strict ENSDF format compliance with proper left-justification and uncertainty notation.
+
 ## 2025-07-18: S35 Resonance Data PNG Extraction and File Corruption Prevention
 
 **Summary**: Completed systematic extraction of three types of nuclear resonance parameters from PNG images (gΓnΓγ/Γ, gΓn, and Γγ values) into proper ENSDF format. Implemented comprehensive file corruption prevention protocols based on previous editing challenges.

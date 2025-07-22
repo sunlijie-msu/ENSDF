@@ -73,6 +73,9 @@ Received training from my line manager regarding the A=35 evaluation and data co
 Lijie Sun – 6 July 2025 - 12 July 2025
 Received training from my line manager regarding the A=35 evaluation and data consistency check. Added 1 reaction dataset for 35S. Completed data consistency check for CF10990 and XUNDL compilation for 125Te data in 2025DeAA.
 
+Lijie Sun – 13 July 2025 - 19 July 2025
+Addressed a FRIENDS general request on DSAM. Received training from my line manager regarding the A=35 evaluation. Added 2 reaction datasets and revised 2 reaction datasets for 35S.
+
 
 
 Prompt tuning vs. fine tuning:
