@@ -1,5 +1,5 @@
 Program for consistency check: output for averaging results for gamma energies and intensities (version 07/02/2025)
-Generated at: Wed 07/23/2025 at 03:19:30 PM EDT
+Generated at: Wed 07/23/2025 at 03:27:04 PM EDT
 
 **************** Level=1572.2 in 35S     *******************ID#=1-2
 
@@ -1397,47 +1397,36 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 <For Gamma=2022.80 from Level=6986.29>
 ------ average RI------
 Data points of RI record
-*                      1985Ke08   11(1)               weight=37.05%
-*                      1985Ra15   11.4(10)            weight=37.05%
-*                      1997Be42   9.1(12)             weight=25.73%
-                       1972Dz13   12(15)              weight=0.16%
-### (weight<2.00% not considered in weighted average)
-                       1972Dz13   12(15)              weight=0.16%
+*                      1972Dz13   12.0(15)            weight=14.16%
+*                      1985Ke08   11(1)               weight=31.86%
+*                      1985Ra15   11.4(10)            weight=31.86%
+*                      1997Be42   9.1(12)             weight=22.12%
 
 Averaging results:
-           weighted average:      10.7(6)              (internal)
-                                  10.7(7)              (external, combined weight)
-                                  10.7(+7-7)           (external, separate weights)
-                                  chi**2/(n-1)=1.177     [critical=3.780]
-           weighted average:      10.7(6)              (internal)
-            (of all values)       10.7(6)              (external, combined weight)
-            (of all values)       10.7(+6-6)           (external, separate weights)
-                                  chi**2/(n-1)=0.787     [critical=3.319]
+           weighted average:      10.9(6)              (internal)
+                                  10.9(6)              (external)
+                                  chi**2/(n-1)=1.013     [critical=3.319]
          unweighted average:      10.9(6)             
            (of all values)        chi**2/(n-1)=1.569     [critical=3.319]
 
-   suggested adopted result:      10.7(10)            
-       (Weighted-Of-All)
+   suggested adopted result:      11(1)               
+           (Non-Average)
 
-Note:  Combined weight means both unc+ and unc- of each input value are used to calculate
-          the final weight and external uncertainty, as used for the average value and chi2.
-       Separate weights means unc+ and unc- are used separately to calculate corresponding
-          weights and external uncertainties, respectively.
-       Suggested adopted result is just the preference of this average code which adopts
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35S  cG RI$weighted average of 11 {I1} (1985Ke08), 11.4 {I10} (1985Ra15), and  
- 35S 2cG 9.1 {I12} (1997Be42). Other: 12 {I15} (1972Dz13)                       
-
-### weighted average comment (all values):
- 35S  cG RI$weighted average of 12 {I15} (1972Dz13), 11 {I1} (1985Ke08), 11.4   
+ 35S  cG RI$weighted average of 12.0 {I15} (1972Dz13), 11 {I1} (1985Ke08), 11.4 
  35S 2cG {I10} (1985Ra15), and 9.1 {I12} (1997Be42)                             
 
 ### unweighted average comment (all non-limit values with/without unc):
- 35S  cG RI$unweighted average of 12 {I15} (1972Dz13), 11 {I1} (1985Ke08), 11.4 
- 35S 2cG {I10} (1985Ra15), and 9.1 {I12} (1997Be42)                             
+ 35S  cG RI$unweighted average of 12.0 {I15} (1972Dz13), 11 {I1} (1985Ke08),    
+ 35S 2cG 11.4 {I10} (1985Ra15), and 9.1 {I12} (1997Be42)                        
+
+### Non-average comment:
+ 35S  cG RI$from 1985Ke08. Others: 12.0 {I15} (1972Dz13), 11.4 {I10} (1985Ra15),
+ 35S 2cG and 9.1 {I12} (1997Be42)                                               
 
 
 **************** Level=6986.29     Gamma=2082.65 in 35S     *******************ID#=1-22-7
@@ -1483,24 +1472,19 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 <For Gamma=2082.65 from Level=6986.29>
 ------ average RI------
 Data points of RI record
-*                      1985Ke08   17(2)               weight=26.41%
-*                      1985Ra15   15.6(17)            weight=36.56%
-*                      1997Be42   12.6(17)            weight=36.56%
-                       1972Dz13   18(15)              weight=0.47%
-### (weight<2.00% not considered in weighted average)
-                       1972Dz13   18(15)              weight=0.47%
+*                      1972Dz13   18.0(15)            weight=32.06%
+*                      1985Ke08   17(2)               weight=18.03%
+*                      1985Ra15   15.6(17)            weight=24.96%
+*                      1997Be42   12.6(17)            weight=24.96%
 
 Averaging results:
-           weighted average:      14.9(10)             (internal)
-                                  14.9(13)             (external)
-                                  chi**2/(n-1)=1.551     [critical=3.780]
-           weighted average:      14.9(10)             (internal)
-            (of all values)       14.9(11)             (external)
-                                  chi**2/(n-1)=1.048     [critical=3.319]
+           weighted average:      15.9(9)              (internal)
+                                  15.9(12)             (external)
+                                  chi**2/(n-1)=2.020     [critical=3.319]
          unweighted average:      15.8(12)            
            (of all values)        chi**2/(n-1)=5.520     [critical=3.319]
 
-   suggested adopted result:      14.9(17)            
+   suggested adopted result:      15.9(15)            
        (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
@@ -1508,16 +1492,12 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35S  cG RI$weighted average of 17 {I2} (1985Ke08), 15.6 {I17} (1985Ra15), and  
- 35S 2cG 12.6 {I17} (1997Be42). Other: 18 {I15} (1972Dz13)                      
-
-### weighted average comment (all values):
- 35S  cG RI$weighted average of 18 {I15} (1972Dz13), 17 {I2} (1985Ke08), 15.6   
+ 35S  cG RI$weighted average of 18.0 {I15} (1972Dz13), 17 {I2} (1985Ke08), 15.6 
  35S 2cG {I17} (1985Ra15), and 12.6 {I17} (1997Be42)                            
 
 ### unweighted average comment (all non-limit values with/without unc):
- 35S  cG RI$unweighted average of 18 {I15} (1972Dz13), 17 {I2} (1985Ke08), 15.6 
- 35S 2cG {I17} (1985Ra15), and 12.6 {I17} (1997Be42)                            
+ 35S  cG RI$unweighted average of 18.0 {I15} (1972Dz13), 17 {I2} (1985Ke08),    
+ 35S 2cG 15.6 {I17} (1985Ra15), and 12.6 {I17} (1997Be42)                       
 
 
 **************** Level=6986.29     Gamma=2796.6 in 35S     *******************ID#=1-22-9

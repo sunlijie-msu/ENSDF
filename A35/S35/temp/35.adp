@@ -1,5 +1,5 @@
 Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 07/02/2025)
-Generated at: Wed 07/23/2025 at 03:19:33 PM EDT                                 
+Generated at: Wed 07/23/2025 at 03:27:09 PM EDT                                 
                                                                                 
  35S   G 663.41    7 0.090   10                                                 
  35S   G 803.81    9 0.092   14                                                 
@@ -127,16 +127,16 @@ Generated at: Wed 07/23/2025 at 03:19:33 PM EDT
  35S  cG E$weighted average of 908.1 {I3} (1972Dz13) and 907.607 {I14}          
  35S 2cG (1985Ra15)                                                             
  35S  cG RI$weighted average of 0.5 {I1} (1972Dz13) and 0.61 {I10} (1985Ra15)   
- 35S   G 2022.954  9 10.7    10                                                 
+ 35S   G 2022.954  9 11      1                                                  
  35S  cG E$from 1985Ra15. Others: 2022.80 {I20} (1972Dz13) and 2023.0 {I10}     
  35S 2cG (1985Ke08)                                                             
- 35S  cG RI$weighted average of 11 {I1} (1985Ke08), 11.4 {I10} (1985Ra15), and  
- 35S 2cG 9.1 {I12} (1997Be42). Other: 12 {I15} (1972Dz13)                       
- 35S   G 2082.83   17 14.9   17                                                 
+ 35S  cG RI$from 1985Ke08. Others: 12.0 {I15} (1972Dz13), 11.4 {I10} (1985Ra15),
+ 35S 2cG and 9.1 {I12} (1997Be42)                                               
+ 35S   G 2082.83   17 15.9   15                                                 
  35S  cG E$unweighted average of 2082.65 {I16} (1972Dz13), 2083.17 {I7}         
  35S 2cG (1985Ke08), and 2082.681 {I12} (1985Ra15)                              
- 35S  cG RI$weighted average of 17 {I2} (1985Ke08), 15.6 {I17} (1985Ra15), and  
- 35S 2cG 12.6 {I17} (1997Be42). Other: 18 {I15} (1972Dz13)                      
+ 35S  cG RI$weighted average of 18.0 {I15} (1972Dz13), 17 {I2} (1985Ke08), 15.6 
+ 35S 2cG {I17} (1985Ra15), and 12.6 {I17} (1997Be42)                            
  35S   G 2508.39   8 0.38    4                                                  
  35S   G 2796.74   4 4.9     4                                                  
  35S  cG E$weighted average of 2796.83 {I13} (1985Ke08) and 2796.73 {I4}        
