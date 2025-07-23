@@ -1,124 +1,23 @@
-Program for consistency check: output for averaging results for gamma energies and intensities (version 06/12/2025)
-Generated at: Sun 07/13/2025 at 08:20:59 PM EDT
+Program for consistency check: output for averaging results for gamma energies and intensities (version 07/02/2025)
+Generated at: Wed 07/23/2025 at 03:03:15 PM EDT
 
-**************** Level=1581 in 35S     *******************ID#=1-2
-
------- average E------
-Data points of E record
-### (1 value has weight>2.00%; all values with unc  considered in weighted average)
-                       1969Mo12   1581(8)             weight=0.06%
-                       1971Va18   1575(9)             weight=0.04%
-*                      1984Pi03   1571.92(19)         weight=99.90%
-
-Averaging results:
-           weighted average:      1571.93(19)          (internal)
-                                  1571.93(16)          (external)
-                                  chi**2/(n-1)=0.702     [critical=6.635]
-         unweighted average:      1576.0(27)          
-           (of all values)        chi**2/(n-1)=21.322     [critical=3.780]
-
-   suggested adopted result:      1571.92(19)         
-           (Non-Average)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 1581 {I8} (1969Mo12), 1575 {I9} (1971Va18), and  
- 35S 2cL 1571.92 {I19} (1984Pi03)                                               
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 1581 {I8} (1969Mo12), 1575 {I9} (1971Va18), and
- 35S 2cL 1571.92 {I19} (1984Pi03)                                               
-
-### Non-average comment:
- 35S  cL E$from 1984Pi03. Others: 1581 {I8} (1969Mo12) and 1575 {I9} (1971Va18) 
-
-
-**************** Level=1995 in 35S     *******************ID#=1-3
+**************** Level=1572.2 in 35S     *******************ID#=1-2
 
 ------ average E------
 Data points of E record
 ### (1 value has weight>2.00%; all values with unc  considered in weighted average)
-                       1969Mo12   1995(8)             weight=0.04%
-*                      1984Pi03   1991.08(16)         weight=99.96%
+                       1972Dz13   1572.2(10)          weight=0.00%
+                       1985Ke08   1572.54(7)          weight=0.73%
+*                      1985Ra15   1572.372(6)         weight=99.27%
 
 Averaging results:
-           weighted average:      1991.08(16)          (internal)
-                                  1991.08(8)           (external)
-                                  chi**2/(n-1)=0.240     [critical=6.635]
-         unweighted average:      1993.0(20)          
-           (of all values)        chi**2/(n-1)=7.683     [critical=4.605]
+           weighted average:      1572.373(6)          (internal)
+                                  1572.373(10)         (external)
+                                  chi**2/(n-1)=2.877     [critical=6.635]
+         unweighted average:      1572.37(10)         
+           (of all values)        chi**2/(n-1)=0.029     [critical=3.780]
 
-   suggested adopted result:      1991.08(16)         
-           (Non-Average)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 1995 {I8} (1969Mo12) and 1991.08 {I16} (1984Pi03)
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 1995 {I8} (1969Mo12) and 1991.08 {I16}         
- 35S 2cL (1984Pi03)                                                             
-
-### Non-average comment:
- 35S  cL E$from 1984Pi03. Other: 1995 {I8} (1969Mo12)                           
-
-
-**************** Level=2347 in 35S     *******************ID#=1-4
-
------- average E------
-Data points of E record
-### (1 value has weight>2.00%; all values with unc  considered in weighted average)
-                       1969Mo12   2347(8)             weight=0.04%
-                       1971Va18   2336(10)            weight=0.02%
-*                      1984Pi03   2347.59(15)         weight=99.94%
-
-Averaging results:
-           weighted average:      2347.59(15)          (internal)
-                                  2347.59(12)          (external)
-                                  chi**2/(n-1)=0.674     [critical=6.635]
-         unweighted average:      2344(4)             
-           (of all values)        chi**2/(n-1)=42.613     [critical=3.780]
-
-   suggested adopted result:      2347.59(15)         
-           (Non-Average)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 2347 {I8} (1969Mo12), 2336 {I10} (1971Va18), and 
- 35S 2cL 2347.59 {I15} (1984Pi03)                                               
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 2347 {I8} (1969Mo12), 2336 {I10} (1971Va18),   
- 35S 2cL and 2347.59 {I15} (1984Pi03)                                           
-
-### Non-average comment:
- 35S  cL E$from 1984Pi03. Others: 2347 {I8} (1969Mo12) and 2336 {I10} (1971Va18)
-
-
-**************** Level=2722 in 35S     *******************ID#=1-5
-
------- average E------
-Data points of E record
-*                      1969Mo12   2722(8)             weight=50.00%
-*                      1971Va18   2726(8)             weight=50.00%
-
-Averaging results:
-           weighted average:      2724(6)              (internal)
-                                  2724.0(20)           (external)
-                                  chi**2/(n-1)=0.125     [critical=4.605]
-         unweighted average:      2724.0(20)          
-           (of all values)        chi**2/(n-1)=8.000     [critical=4.605]
-
-   suggested adopted result:      2724(8)             
+   suggested adopted result:      1572.373(10)        
        (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
@@ -126,27 +25,201 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35S  cL E$weighted average of 2722 {I8} (1969Mo12) and 2726 {I8} (1971Va18)    
+ 35S  cL E$weighted average of 1572.2 {I10} (1972Dz13), 1572.54 {I7} (1985Ke08),
+ 35S 2cL and 1572.372 {I6} (1985Ra15)                                           
 
 ### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 2722 {I8} (1969Mo12) and 2726 {I8} (1971Va18)  
+ 35S  cL E$unweighted average of 1572.2 {I10} (1972Dz13), 1572.54 {I7}          
+ 35S 2cL (1985Ke08), and 1572.372 {I6} (1985Ra15)                               
 
 
-**************** Level=2943 in 35S     *******************ID#=1-6
+**************** Level=1572.2     Gamma=1572.15 in 35S     *******************ID#=1-2-1
 
 ------ average E------
 Data points of E record
-*                      1969Mo12   2943(10)            weight=50.00%
-*                      1971Va18   2939(10)            weight=50.00%
+### (1 value has weight>2.00%; all values with unc  considered in weighted average)
+                       1972Dz13   1572.15(16)         weight=0.19%
+*                      1985Ra15   1572.333(7)         weight=99.81%
 
 Averaging results:
-           weighted average:      2941(7)              (internal)
-                                  2941.0(20)           (external)
+           weighted average:      1572.333(7)          (internal)
+                                  1572.333(8)          (external)
+                                  chi**2/(n-1)=1.305     [critical=6.635]
+         unweighted average:      1572.24(9)          
+           (of all values)        chi**2/(n-1)=0.017     [critical=4.605]
+
+   suggested adopted result:      1572.333(8)         
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 1572.15 {I16} (1972Dz13) and 1572.333 {I7}       
+ 35S 2cG (1985Ra15)                                                             
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 1572.15 {I16} (1972Dz13) and 1572.333 {I7}     
+ 35S 2cG (1985Ra15)                                                             
+
+
+<For Gamma=1572.15 from Level=1572.2>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   39(4)               weight=29.55%
+*                      1985Ra15   35.0(34)            weight=40.90%
+*                      1997Be42   32(4)               weight=29.55%
+
+Averaging results:
+           weighted average:      35.3(22)             (internal)
+                                  35.3(19)             (external)
+                                  chi**2/(n-1)=0.772     [critical=3.780]
+         unweighted average:      35.3(20)            
+           (of all values)        chi**2/(n-1)=12.333     [critical=3.780]
+
+   suggested adopted result:      35.0(34)            
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 39 {I4} (1972Dz13), 35.0 {I34} (1985Ra15), and  
+ 35S 2cG 32 {I4} (1997Be42)                                                     
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 39 {I4} (1972Dz13), 35.0 {I34} (1985Ra15), and
+ 35S 2cG 32 {I4} (1997Be42)                                                     
+
+### Non-average comment:
+ 35S  cG RI$from 1985Ra15. Others: 39 {I4} (1972Dz13) and 32 {I4} (1997Be42)    
+
+
+**************** Level=2347.6 in 35S     *******************ID#=1-4
+
+------ average E------
+Data points of E record
+*                      1985Ke08   2347.82(3)          weight=5.16%
+*                      1985Ra15   2347.780(7)         weight=94.83%
+                       1972Dz13   2347.6(10)          weight=0.00%
+### (weight<2.00% not considered in weighted average)
+                       1972Dz13   2347.6(10)          weight=0.00%
+
+Averaging results:
+           weighted average:      2347.782(7)          (internal)
+                                  2347.782(9)          (external)
+                                  chi**2/(n-1)=1.689     [critical=4.605]
+           weighted average:      2347.782(7)          (internal)
+            (of all values)       2347.782(6)          (external)
+                                  chi**2/(n-1)=0.861     [critical=3.780]
+         unweighted average:      2347.73(7)          
+           (of all values)        chi**2/(n-1)=0.014     [critical=3.780]
+
+   suggested adopted result:      2347.782(7)         
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cL E$weighted average of 2347.82 {I3} (1985Ke08) and 2347.780 {I7}        
+ 35S 2cL (1985Ra15). Other: 2347.6 {I10} (1972Dz13)                             
+
+### weighted average comment (all values):
+ 35S  cL E$weighted average of 2347.6 {I10} (1972Dz13), 2347.82 {I3} (1985Ke08),
+ 35S 2cL and 2347.780 {I7} (1985Ra15)                                           
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cL E$unweighted average of 2347.6 {I10} (1972Dz13), 2347.82 {I3}          
+ 35S 2cL (1985Ke08), and 2347.780 {I7} (1985Ra15)                               
+
+
+**************** Level=2347.6     Gamma=775.50 in 35S     *******************ID#=1-4-2
+
+------ average E------
+Data points of E record
+### (1 value has weight>2.00%; all values with unc  considered in weighted average)
+                       1972Dz13   775.50(15)          weight=0.16%
+*                      1985Ra15   775.398(6)          weight=99.84%
+
+Averaging results:
+           weighted average:      775.398(6)           (internal)
+                                  775.398(4)           (external)
+                                  chi**2/(n-1)=0.462     [critical=6.635]
+         unweighted average:      775.45(5)           
+           (of all values)        chi**2/(n-1)=0.005     [critical=4.605]
+
+   suggested adopted result:      775.398(6)          
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 775.50 {I15} (1972Dz13) and 775.398 {I6}         
+ 35S 2cG (1985Ra15)                                                             
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 775.50 {I15} (1972Dz13) and 775.398 {I6}       
+ 35S 2cG (1985Ra15)                                                             
+
+### Non-average comment:
+ 35S  cG E$from 1985Ra15. Other: 775.50 {I15} (1972Dz13)                        
+
+
+<For Gamma=775.50 from Level=2347.6>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   19.5(20)            weight=41.94%
+*                      1985Ra15   15.6(17)            weight=58.06%
+
+Averaging results:
+           weighted average:      17.2(13)             (internal)
+                                  17.2(19)             (external)
+                                  chi**2/(n-1)=2.208     [critical=4.605]
+         unweighted average:      17.6(20)            
+           (of all values)        chi**2/(n-1)=7.605     [critical=4.605]
+
+   suggested adopted result:      17.2(19)            
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 19.5 {I20} (1972Dz13) and 15.6 {I17} (1985Ra15) 
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 19.5 {I20} (1972Dz13) and 15.6 {I17}          
+ 35S 2cG (1985Ra15)                                                             
+
+
+**************** Level=2347.6     Gamma=2347.50 in 35S     *******************ID#=1-4-3
+
+------ average E------
+Data points of E record
+*                      1985Ke08   2347.71(3)          weight=11.73%
+*                      1985Ra15   2347.701(11)        weight=87.22%
+                       1972Dz13   2347.50(10)         weight=1.06%
+### (weight<2.00% not considered in weighted average)
+                       1972Dz13   2347.50(10)         weight=1.06%
+
+Averaging results:
+           weighted average:      2347.702(10)         (internal)
+                                  2347.7020(29)        (external)
                                   chi**2/(n-1)=0.080     [critical=4.605]
-         unweighted average:      2941.0(20)          
-           (of all values)        chi**2/(n-1)=8.000     [critical=4.605]
+           weighted average:      2347.700(10)         (internal)
+            (of all values)       2347.700(15)         (external)
+                                  chi**2/(n-1)=2.059     [critical=3.780]
+         unweighted average:      2347.64(7)          
+           (of all values)        chi**2/(n-1)=0.014     [critical=3.780]
 
-   suggested adopted result:      2941(10)            
+   suggested adopted result:      2347.700(15)        
        (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
@@ -154,55 +227,70 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35S  cL E$weighted average of 2943 {I10} (1969Mo12) and 2939 {I10} (1971Va18)  
+ 35S  cG E$weighted average of 2347.71 {I3} (1985Ke08) and 2347.701 {I11}       
+ 35S 2cG (1985Ra15). Other: 2347.50 {I10} (1972Dz13)                            
+
+### weighted average comment (all values):
+ 35S  cG E$weighted average of 2347.50 {I10} (1972Dz13), 2347.71 {I3}           
+ 35S 2cG (1985Ke08), and 2347.701 {I11} (1985Ra15)                              
 
 ### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 2943 {I10} (1969Mo12) and 2939 {I10} (1971Va18)
+ 35S  cG E$unweighted average of 2347.50 {I10} (1972Dz13), 2347.71 {I3}         
+ 35S 2cG (1985Ke08), and 2347.701 {I11} (1985Ra15)                              
 
 
-**************** Level=3422 in 35S     *******************ID#=1-7
-
------- average E------
-Data points of E record
-*                      1969Mo12   3422(8)             weight=69.23%
-*                      1971Va18   3415(12)            weight=30.77%
+<For Gamma=2347.50 from Level=2347.6>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   54(5)               weight=23.49%
+*                      1985Ke08   49(4)               weight=36.70%
+*                      1985Ra15   50(5)               weight=23.49%
+*                      1997Be42   40(6)               weight=16.31%
 
 Averaging results:
-           weighted average:      3420(7)              (internal)
-                                  3419.9(32)           (external)
-                                  chi**2/(n-1)=0.236     [critical=4.605]
-         unweighted average:      3418.5(35)          
-           (of all values)        chi**2/(n-1)=24.500     [critical=4.605]
+           weighted average:      48.9(24)             (internal)
+                                  48.9(26)             (external)
+                                  chi**2/(n-1)=1.096     [critical=3.319]
+         unweighted average:      48.3(30)            
+           (of all values)        chi**2/(n-1)=34.917     [critical=3.319]
 
-   suggested adopted result:      3420(8)             
-       (Weighted-Of-All)
+   suggested adopted result:      49(4)               
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35S  cL E$weighted average of 3422 {I8} (1969Mo12) and 3415 {I12} (1971Va18)   
+ 35S  cG RI$weighted average of 54 {I5} (1972Dz13), 49 {I4} (1985Ke08), 50 {I5} 
+ 35S 2cG (1985Ra15), and 40 {I6} (1997Be42)                                     
 
 ### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 3422 {I8} (1969Mo12) and 3415 {I12} (1971Va18) 
+ 35S  cG RI$unweighted average of 54 {I5} (1972Dz13), 49 {I4} (1985Ke08), 50    
+ 35S 2cG {I5} (1985Ra15), and 40 {I6} (1997Be42)                                
+
+### Non-average comment:
+ 35S  cG RI$from 1985Ke08. Others: 54 {I5} (1972Dz13), 50 {I5} (1985Ra15), and  
+ 35S 2cG 40 {I6} (1997Be42)                                                     
 
 
-**************** Level=3583 in 35S     *******************ID#=1-8
+**************** Level=2717.6 in 35S     *******************ID#=1-5
 
 ------ average E------
 Data points of E record
-*                      1969Mo12   3583(8)             weight=55.86%
-*                      1971Va18   3555(9)             weight=44.14%
+### (1 value has weight>2.00%; all values with unc  considered in weighted average)
+                       1972Dz13   2717.6(7)           weight=0.08%
+                       1985Ke08   2719.05(20)         weight=0.99%
+*                      1985Ra15   2716.990(20)        weight=98.93%
 
 Averaging results:
-           weighted average:      3571(6)              (internal)
-                                  3571(14)             (external)
-                                  chi**2/(n-1)=5.407     [critical=4.605]
-         unweighted average:      3569(14)            
-           (of all values)        chi**2/(n-1)=392.000     [critical=4.605]
+           weighted average:      2717.011(20)         (internal)
+                                  2717.01(15)          (external)
+                                  chi**2/(n-1)=52.877     [critical=6.635]
+         unweighted average:      2717.9(6)           
+           (of all values)        chi**2/(n-1)=1.120     [critical=3.780]
 
-   suggested adopted result:      3569(14)            
+   suggested adopted result:      2717.9(6)           
     (Unweighted-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
@@ -210,508 +298,75 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35S  cL E$weighted average of 3583 {I8} (1969Mo12) and 3555 {I9} (1971Va18)    
+ 35S  cL E$weighted average of 2717.6 {I7} (1972Dz13), 2719.05 {I20} (1985Ke08),
+ 35S 2cL and 2716.990 {I20} (1985Ra15)                                          
 
 ### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 3583 {I8} (1969Mo12) and 3555 {I9} (1971Va18)  
+ 35S  cL E$unweighted average of 2717.6 {I7} (1972Dz13), 2719.05 {I20}          
+ 35S 2cL (1985Ke08), and 2716.990 {I20} (1985Ra15)                              
 
 
-**************** Level=3596 in 35S     *******************ID#=1-9
+**************** Level=3801.96 in 35S     *******************ID#=1-8
 
 ------ average E------
 Data points of E record
-*                      1969Mo12   3596(8)             weight=55.86%
-*                      1971Va18   3595(9)             weight=44.14%
-
-Averaging results:
-           weighted average:      3596(6)              (internal)
-                                  3595.6(5)            (external)
-                                  chi**2/(n-1)=0.007     [critical=4.605]
-         unweighted average:      3595.5(5)           
-           (of all values)        chi**2/(n-1)=0.500     [critical=4.605]
-
-   suggested adopted result:      3596(8)             
-           (Non-Average)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 3596 {I8} (1969Mo12) and 3595 {I9} (1971Va18)    
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 3596 {I8} (1969Mo12) and 3595 {I9} (1971Va18)  
-
-### Non-average comment:
- 35S  cL E$from 1969Mo12. Other: 3595 {I9} (1971Va18)                           
-
-
-**************** Level=3804 in 35S     *******************ID#=1-11
-
------- average E------
-Data points of E record
-### (1 value has weight>2.00%; all values with unc  considered in weighted average)
-                       1969Mo12   3804(8)             weight=0.14%
-                       1971Va18   3795(10)            weight=0.09%
-*                      1984Pi03   3801.90(30)         weight=99.77%
-
-Averaging results:
-           weighted average:      3801.90(30)          (internal)
-                                  3801.90(16)          (external)
-                                  chi**2/(n-1)=0.272     [critical=6.635]
-         unweighted average:      3800.3(27)          
-           (of all values)        chi**2/(n-1)=22.170     [critical=3.780]
-
-   suggested adopted result:      3801.90(30)         
-           (Non-Average)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 3804 {I8} (1969Mo12), 3795 {I10} (1971Va18), and 
- 35S 2cL 3801.90 {I30} (1984Pi03)                                               
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 3804 {I8} (1969Mo12), 3795 {I10} (1971Va18),   
- 35S 2cL and 3801.90 {I30} (1984Pi03)                                           
-
-### Non-average comment:
- 35S  cL E$from 1984Pi03. Others: 3804 {I8} (1969Mo12) and 3795 {I10} (1971Va18)
-
-
-**************** Level=3885 in 35S     *******************ID#=1-12
-
------- average E------
-Data points of E record
-*                      1969Mo12   3885(10)            weight=50.00%
-*                      1971Va18   3866(10)            weight=50.00%
-
-Averaging results:
-           weighted average:      3876(7)              (internal)
-                                  3876(10)             (external)
-                                  chi**2/(n-1)=1.805     [critical=4.605]
-         unweighted average:      3876(10)            
-           (of all values)        chi**2/(n-1)=180.500     [critical=4.605]
-
-   suggested adopted result:      3876(10)            
-       (Weighted-Of-All)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 3885 {I10} (1969Mo12) and 3866 {I10} (1971Va18)  
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 3885 {I10} (1969Mo12) and 3866 {I10} (1971Va18)
-
-
-**************** Level=3885 in 35S     *******************ID#=1-13
-
------- average E------
-Data points of E record
-*                      1969Mo12   3885(10)            weight=50.00%
-*                      1971Va18   3907(10)            weight=50.00%
-
-Averaging results:
-           weighted average:      3896(7)              (internal)
-                                  3896(11)             (external)
-                                  chi**2/(n-1)=2.420     [critical=4.605]
-         unweighted average:      3896(11)            
-           (of all values)        chi**2/(n-1)=242.000     [critical=4.605]
-
-   suggested adopted result:      3896(11)            
-       (Weighted-Of-All)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 3885 {I10} (1969Mo12) and 3907 {I10} (1971Va18)  
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 3885 {I10} (1969Mo12) and 3907 {I10} (1971Va18)
-
-
-**************** Level=4025 in 35S     *******************ID#=1-14
-
------- average E------
-Data points of E record
-*                      1969Mo12   4025(10)            weight=50.00%
-*                      1971Va18   4025(10)            weight=50.00%
-
-Averaging results:
-           weighted average:      4025(7)              (internal)
-                                  4025(0)              (external)
-                                  chi**2/(n-1)=0.000     [critical=4.605]
-         unweighted average:      4025(0)             
-           (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
-
-   suggested adopted result:      4025(10)            
-           (Non-Average)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 4025 {I10} (1969Mo12) and 4025 {I10} (1971Va18)  
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 4025 {I10} (1969Mo12) and 4025 {I10} (1971Va18)
-
-### Non-average comment:
- 35S  cL E$from 1969Mo12. Other: 4025 {I10} (1971Va18)                          
-
-
-**************** Level=4112 in 35S     *******************ID#=1-15
-
------- average E------
-Data points of E record
-*                      1969Mo12   4112(10)            weight=50.00%
-*                      1971Va18   4105(10)            weight=50.00%
-
-Averaging results:
-           weighted average:      4109(7)              (internal)
-                                  4108.5(35)           (external)
-                                  chi**2/(n-1)=0.245     [critical=4.605]
-         unweighted average:      4108.5(35)          
-           (of all values)        chi**2/(n-1)=24.500     [critical=4.605]
-
-   suggested adopted result:      4109(10)            
-       (Weighted-Of-All)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 4112 {I10} (1969Mo12) and 4105 {I10} (1971Va18)  
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 4112 {I10} (1969Mo12) and 4105 {I10} (1971Va18)
-
-
-**************** Level=4190 in 35S     *******************ID#=1-16
-
------- average E------
-Data points of E record
-### (1 value has weight>2.00%; all values with unc  considered in weighted average)
-                       1969Mo12   4190(8)             weight=0.11%
-                       1971Va18   4196(12)            weight=0.05%
-*                      1984Pi03   4189.87(26)         weight=99.85%
-
-Averaging results:
-           weighted average:      4189.87(26)          (internal)
-                                  4189.87(10)          (external)
-                                  chi**2/(n-1)=0.131     [critical=6.635]
-         unweighted average:      4192.0(20)          
-           (of all values)        chi**2/(n-1)=12.265     [critical=3.780]
-
-   suggested adopted result:      4189.87(26)         
-           (Non-Average)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 4190 {I8} (1969Mo12), 4196 {I12} (1971Va18), and 
- 35S 2cL 4189.87 {I26} (1984Pi03)                                               
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 4190 {I8} (1969Mo12), 4196 {I12} (1971Va18),   
- 35S 2cL and 4189.87 {I26} (1984Pi03)                                           
-
-### Non-average comment:
- 35S  cL E$from 1984Pi03. Others: 4190 {I8} (1969Mo12) and 4196 {I12} (1971Va18)
-
-
-**************** Level=4302 in 35S     *******************ID#=1-17
-
------- average E------
-Data points of E record
-*                      1969Mo12   4302(8)             weight=69.23%
-*                      1971Va18   4312(12)            weight=30.77%
-
-Averaging results:
-           weighted average:      4305(7)              (internal)
-                                  4305(5)              (external)
-                                  chi**2/(n-1)=0.481     [critical=4.605]
-         unweighted average:      4307(5)             
-           (of all values)        chi**2/(n-1)=50.000     [critical=4.605]
-
-   suggested adopted result:      4305(8)             
-       (Weighted-Of-All)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 4302 {I8} (1969Mo12) and 4312 {I12} (1971Va18)   
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 4302 {I8} (1969Mo12) and 4312 {I12} (1971Va18) 
-
-
-**************** Level=4903 in 35S     *******************ID#=1-21
-
------- average E------
-Data points of E record
-### (1 value has weight>2.00%; all values with unc  considered in weighted average)
-                       1969Mo12   4903(8)             weight=0.04%
-*                      1984Pi03   4903.28(16)         weight=99.96%
-
-Averaging results:
-           weighted average:      4903.28(16)          (internal)
-                                  4903.280(6)          (external)
-                                  chi**2/(n-1)=0.001     [critical=6.635]
-         unweighted average:      4903.14(14)         
-           (of all values)        chi**2/(n-1)=0.039     [critical=4.605]
-
-   suggested adopted result:      4903.28(16)         
-           (Non-Average)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 4903 {I8} (1969Mo12) and 4903.28 {I16} (1984Pi03)
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 4903 {I8} (1969Mo12) and 4903.28 {I16}         
- 35S 2cL (1984Pi03)                                                             
-
-### Non-average comment:
- 35S  cL E$from 1984Pi03. Other: 4903 {I8} (1969Mo12)                           
-
-
-**************** Level=4965 in 35S     *******************ID#=1-22
-
------- average E------
-Data points of E record
-### (1 value has weight>2.00%; all values with unc  considered in weighted average)
-                       1969Mo12   4965(8)             weight=0.04%
-*                      1984Pi03   4963.12(16)         weight=99.96%
-
-Averaging results:
-           weighted average:      4963.12(16)          (internal)
-                                  4963.12(4)           (external)
-                                  chi**2/(n-1)=0.055     [critical=6.635]
-         unweighted average:      4964.1(10)          
-           (of all values)        chi**2/(n-1)=1.767     [critical=4.605]
-
-   suggested adopted result:      4963.12(16)         
-           (Non-Average)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 4965 {I8} (1969Mo12) and 4963.12 {I16} (1984Pi03)
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 4965 {I8} (1969Mo12) and 4963.12 {I16}         
- 35S 2cL (1984Pi03)                                                             
-
-### Non-average comment:
- 35S  cL E$from 1984Pi03. Other: 4965 {I8} (1969Mo12)                           
-
-
-**************** Level=6080 in 35S     *******************ID#=1-31
-
------- average E------
-Data points of E record
-*                      1969Mo12   6080(8)             weight=2.57%
-*                      1984Pi03   6078.6(13)          weight=97.43%
-
-Averaging results:
-           weighted average:      6078.6(13)           (internal)
-                                  6078.64(22)          (external)
-                                  chi**2/(n-1)=0.030     [critical=4.605]
-         unweighted average:      6079.3(7)           
-           (of all values)        chi**2/(n-1)=0.980     [critical=4.605]
-
-   suggested adopted result:      6078.6(13)          
-           (Non-Average)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 6080 {I8} (1969Mo12) and 6078.6 {I13} (1984Pi03) 
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 6080 {I8} (1969Mo12) and 6078.6 {I13}          
- 35S 2cL (1984Pi03)                                                             
-
-### Non-average comment:
- 35S  cL E$from 1984Pi03. Other: 6080 {I8} (1969Mo12)                           
-
-
-**************** Level=6543 in 35S     *******************ID#=1-38
-
------- average E------
-Data points of E record
-*                      1969Mo12   6543(8)             weight=2.57%
-*                      1984Pi03   6545.1(13)          weight=97.43%
-
-Averaging results:
-           weighted average:      6545.1(13)           (internal)
-                                  6545.05(33)          (external)
-                                  chi**2/(n-1)=0.067     [critical=4.605]
-         unweighted average:      6544.1(11)          
-           (of all values)        chi**2/(n-1)=2.205     [critical=4.605]
-
-   suggested adopted result:      6545.1(13)          
-           (Non-Average)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 6543 {I8} (1969Mo12) and 6545.1 {I13} (1984Pi03) 
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 6543 {I8} (1969Mo12) and 6545.1 {I13}          
- 35S 2cL (1984Pi03)                                                             
-
-### Non-average comment:
- 35S  cL E$from 1984Pi03. Other: 6543 {I8} (1969Mo12)                           
-
-
-**************** Level=6584 in 35S     *******************ID#=1-39
-
------- average E------
-Data points of E record
-*                      1969Mo12   6584(10)            weight=90.00%
-*                      2024Ku24   6625(30)            weight=10.00%
-
-Averaging results:
-           weighted average:      6588(10)             (internal)
-                                  6588(12)             (external)
-                                  chi**2/(n-1)=1.681     [critical=4.605]
-         unweighted average:      6605(21)            
-           (of all values)        chi**2/(n-1)=840.500     [critical=4.605]
-
-   suggested adopted result:      6588(12)            
-       (Weighted-Of-All)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 6584 {I10} (1969Mo12) and 6625 {I30} (2024Ku24)  
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 6584 {I10} (1969Mo12) and 6625 {I30} (2024Ku24)
-
-
-**************** Level=6634 in 35S     *******************ID#=1-40
-
------- average E------
-Data points of E record
-*                      1969Mo12   6634(8)             weight=2.57%
-*                      1984Pi03   6635.2(13)          weight=97.25%
-                       2024Ku24   6625(30)            weight=0.18%
+*                      1985Ke08   3802.08(7)          weight=3.83%
+*                      1985Ra15   3801.955(14)        weight=95.65%
+                       1972Dz13   3801.96(19)         weight=0.52%
 ### (weight<2.00% not considered in weighted average)
-                       2024Ku24   6625(30)            weight=0.18%
+                       1972Dz13   3801.96(19)         weight=0.52%
 
 Averaging results:
-           weighted average:      6635.2(13)           (internal)
-                                  6635.17(19)          (external)
-                                  chi**2/(n-1)=0.022     [critical=4.605]
-           weighted average:      6635.2(13)           (internal)
-            (of all values)       6635.15(34)          (external)
-                                  chi**2/(n-1)=0.068     [critical=3.780]
-         unweighted average:      6631.4(32)          
-           (of all values)        chi**2/(n-1)=31.081     [critical=3.780]
+           weighted average:      3801.960(14)         (internal)
+                                  3801.960(24)         (external)
+                                  chi**2/(n-1)=3.066     [critical=4.605]
+           weighted average:      3801.960(14)         (internal)
+            (of all values)       3801.960(17)         (external)
+                                  chi**2/(n-1)=1.533     [critical=3.780]
+         unweighted average:      3802.00(4)          
+           (of all values)        chi**2/(n-1)=0.005     [critical=3.780]
 
-   suggested adopted result:      6635.2(13)          
-           (Non-Average)
+   suggested adopted result:      3801.960(17)        
+       (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35S  cL E$weighted average of 6634 {I8} (1969Mo12) and 6635.2 {I13} (1984Pi03).
- 35S 2cL Other: 6625 {I30} (2024Ku24)                                           
+ 35S  cL E$weighted average of 3802.08 {I7} (1985Ke08) and 3801.955 {I14}       
+ 35S 2cL (1985Ra15). Other: 3801.96 {I19} (1972Dz13)                            
 
 ### weighted average comment (all values):
- 35S  cL E$weighted average of 6634 {I8} (1969Mo12), 6635.2 {I13} (1984Pi03),   
- 35S 2cL and 6625 {I30} (2024Ku24)                                              
+ 35S  cL E$weighted average of 3801.96 {I19} (1972Dz13), 3802.08 {I7}           
+ 35S 2cL (1985Ke08), and 3801.955 {I14} (1985Ra15)                              
 
 ### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 6634 {I8} (1969Mo12), 6635.2 {I13} (1984Pi03), 
- 35S 2cL and 6625 {I30} (2024Ku24)                                              
-
-### Non-average comment:
- 35S  cL E$from 1984Pi03. Others: 6634 {I8} (1969Mo12) and 6625 {I30} (2024Ku24)
+ 35S  cL E$unweighted average of 3801.96 {I19} (1972Dz13), 3802.08 {I7}         
+ 35S 2cL (1985Ke08), and 3801.955 {I14} (1985Ra15)                              
 
 
-**************** Level=6892 in 35S     *******************ID#=1-42
+**************** Level=3801.96     Gamma=3802.0 in 35S     *******************ID#=1-8-5
 
 ------ average E------
 Data points of E record
-### (1 value has weight>2.00%; all values with unc  considered in weighted average)
-                       1969Mo12   6892(10)            weight=1.92%
-*                      1984Pi03   6891.3(14)          weight=97.87%
-                       2024Ku24   6915(30)            weight=0.21%
+*                      1985Ke08   3801.49(14)         weight=4.35%
+*                      1985Ra15   3801.74(3)          weight=94.70%
+                       1972Dz13   3802.0(3)           weight=0.95%
+### (weight<2.00% not considered in weighted average)
+                       1972Dz13   3802.0(3)           weight=0.95%
 
 Averaging results:
-           weighted average:      6891.4(14)           (internal)
-                                  6891.4(8)            (external)
-                                  chi**2/(n-1)=0.313     [critical=6.635]
-         unweighted average:      6899(8)             
-           (of all values)        chi**2/(n-1)=181.865     [critical=3.780]
+           weighted average:      3801.729(29)         (internal)
+                                  3801.73(5)           (external)
+                                  chi**2/(n-1)=3.049     [critical=4.605]
+           weighted average:      3801.732(29)         (internal)
+            (of all values)       3801.73(4)           (external)
+                                  chi**2/(n-1)=1.928     [critical=3.780]
+         unweighted average:      3801.74(15)         
+           (of all values)        chi**2/(n-1)=0.065     [critical=3.780]
 
-   suggested adopted result:      6891.3(14)          
-           (Non-Average)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 35S  cL E$weighted average of 6892 {I10} (1969Mo12), 6891.3 {I14} (1984Pi03),  
- 35S 2cL and 6915 {I30} (2024Ku24)                                              
-
-### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 6892 {I10} (1969Mo12), 6891.3 {I14} (1984Pi03),
- 35S 2cL and 6915 {I30} (2024Ku24)                                              
-
-### Non-average comment:
- 35S  cL E$from 1984Pi03. Others: 6892 {I10} (1969Mo12) and 6915 {I30}          
- 35S 2cL (2024Ku24)                                                             
-
-
-**************** Level=7022 in 35S     *******************ID#=1-43
-
------- average E------
-Data points of E record
-*                      1969Mo12   7022(10)            weight=92.45%
-*                      2024Ku24   7005(35)            weight=7.55%
-
-Averaging results:
-           weighted average:      7021(10)             (internal)
-                                  7021(5)              (external)
-                                  chi**2/(n-1)=0.218     [critical=4.605]
-         unweighted average:      7014(9)             
-           (of all values)        chi**2/(n-1)=144.500     [critical=4.605]
-
-   suggested adopted result:      7021(10)            
+   suggested adopted result:      3801.73(4)          
        (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
@@ -719,28 +374,105 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35S  cL E$weighted average of 7022 {I10} (1969Mo12) and 7005 {I35} (2024Ku24)  
+ 35S  cG E$weighted average of 3801.49 {I14} (1985Ke08) and 3801.74 {I3}        
+ 35S 2cG (1985Ra15). Other: 3802.0 {I3} (1972Dz13)                              
+
+### weighted average comment (all values):
+ 35S  cG E$weighted average of 3802.0 {I3} (1972Dz13), 3801.49 {I14} (1985Ke08),
+ 35S 2cG and 3801.74 {I3} (1985Ra15)                                            
 
 ### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 7022 {I10} (1969Mo12) and 7005 {I35} (2024Ku24)
+ 35S  cG E$unweighted average of 3802.0 {I3} (1972Dz13), 3801.49 {I14}          
+ 35S 2cG (1985Ke08), and 3801.74 {I3} (1985Ra15)                                
 
 
-**************** Level=7482.7 in 35S     *******************ID#=1-46
+<For Gamma=3802.0 from Level=3801.96>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   3.6(7)              weight=4.67%
+*                      1985Ke08   2.3(2)              weight=57.21%
+*                      1985Ra15   3.09(31)            weight=23.81%
+*                      1997Be42   2.6(4)              weight=14.30%
+
+Averaging results:
+           weighted average:      2.59(15)             (internal)
+                                  2.59(23)             (external)
+                                  chi**2/(n-1)=2.262     [critical=3.319]
+         unweighted average:      2.90(29)            
+           (of all values)        chi**2/(n-1)=0.325     [critical=3.319]
+
+   suggested adopted result:      2.59(23)            
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 3.6 {I7} (1972Dz13), 2.3 {I2} (1985Ke08), 3.09  
+ 35S 2cG {I31} (1985Ra15), and 2.6 {I4} (1997Be42)                              
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 3.6 {I7} (1972Dz13), 2.3 {I2} (1985Ke08), 3.09
+ 35S 2cG {I31} (1985Ra15), and 2.6 {I4} (1997Be42)                              
+
+
+**************** Level=4188.51 in 35S     *******************ID#=1-10
+
+------ average E------
+Data points of E record
+*                      1985Ke08   4189.19(10)         weight=2.19%
+*                      1985Ra15   4189.255(15)        weight=97.26%
+                       1972Dz13   4188.51(20)         weight=0.55%
+### (weight<2.00% not considered in weighted average)
+                       1972Dz13   4188.51(20)         weight=0.55%
+
+Averaging results:
+           weighted average:      4189.254(15)         (internal)
+                                  4189.254(10)         (external)
+                                  chi**2/(n-1)=0.412     [critical=4.605]
+           weighted average:      4189.249(15)         (internal)
+            (of all values)       4189.25(4)           (external)
+                                  chi**2/(n-1)=7.082     [critical=3.780]
+         unweighted average:      4188.99(24)         
+           (of all values)        chi**2/(n-1)=0.170     [critical=3.780]
+
+   suggested adopted result:      4189.254(15)        
+      (Weighted-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cL E$weighted average of 4189.19 {I10} (1985Ke08) and 4189.255 {I15}      
+ 35S 2cL (1985Ra15). Other: 4188.51 {I20} (1972Dz13)                            
+
+### weighted average comment (all values):
+ 35S  cL E$weighted average of 4188.51 {I20} (1972Dz13), 4189.19 {I10}          
+ 35S 2cL (1985Ke08), and 4189.255 {I15} (1985Ra15)                              
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cL E$unweighted average of 4188.51 {I20} (1972Dz13), 4189.19 {I10}        
+ 35S 2cL (1985Ke08), and 4189.255 {I15} (1985Ra15)                              
+
+
+**************** Level=4188.51     Gamma=1839 in 35S     *******************ID#=1-10-3
 
 ------ average E------
 Data points of E record
 ### (1 value has weight>2.00%; all values with unc  considered in weighted average)
-*                      1984Pi03   7482.7(13)          weight=99.89%
-                       2024Ku24   7495(40)            weight=0.11%
+                       1972Dz13   1839(10)            weight=0.00%
+*                      1985Ra15   1841.426(15)        weight=100.00%
 
 Averaging results:
-           weighted average:      7482.7(13)           (internal)
-                                  7482.7(4)            (external)
-                                  chi**2/(n-1)=0.094     [critical=6.635]
-         unweighted average:      7489(6)             
-           (of all values)        chi**2/(n-1)=75.643     [critical=4.605]
+           weighted average:      1841.426(15)         (internal)
+                                  1841.426(4)          (external)
+                                  chi**2/(n-1)=0.059     [critical=6.635]
+         unweighted average:      1840.2(12)          
+           (of all values)        chi**2/(n-1)=2.943     [critical=4.605]
 
-   suggested adopted result:      7482.7(13)          
+   suggested adopted result:      1841.426(15)        
            (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
@@ -748,13 +480,1315 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35S  cL E$weighted average of 7482.7 {I13} (1984Pi03) and 7495 {I40} (2024Ku24)
+ 35S  cG E$weighted average of 1839 {I10} (1972Dz13) and 1841.426 {I15}         
+ 35S 2cG (1985Ra15)                                                             
 
 ### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 7482.7 {I13} (1984Pi03) and 7495 {I40}         
- 35S 2cL (2024Ku24)                                                             
+ 35S  cG E$unweighted average of 1839 {I10} (1972Dz13) and 1841.426 {I15}       
+ 35S 2cG (1985Ra15)                                                             
 
 ### Non-average comment:
- 35S  cL E$from 1984Pi03. Other: 7495 {I40} (2024Ku24)                          
+ 35S  cG E$from 1985Ra15. Other: 1839 {I10} (1972Dz13)                          
+
+
+<For Gamma=1839 from Level=4188.51>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   3.6(8)              weight=6.45%
+*                      1985Ra15   2.14(21)            weight=93.55%
+
+Averaging results:
+           weighted average:      2.23(20)             (internal)
+                                  2.2(4)               (external)
+                                  chi**2/(n-1)=3.116     [critical=4.605]
+         unweighted average:      2.9(7)              
+           (of all values)        chi**2/(n-1)=1.066     [critical=4.605]
+
+   suggested adopted result:      2.2(4)              
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 3.6 {I8} (1972Dz13) and 2.14 {I21} (1985Ra15)   
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 3.6 {I8} (1972Dz13) and 2.14 {I21} (1985Ra15) 
+
+
+**************** Level=4188.51     Gamma=2614.3 in 35S     *******************ID#=1-10-4
+
+------ average E------
+Data points of E record
+*                      1972Dz13   2614.3(3)           weight=50.00%
+*                      1985Ra15   2616.8(3)           weight=50.00%
+
+Averaging results:
+           weighted average:      2615.55(21)          (internal)
+                                  2615.6(13)           (external)
+                                  chi**2/(n-1)=34.722     [critical=4.605]
+         unweighted average:      2615.6(13)          
+           (of all values)        chi**2/(n-1)=3.125     [critical=4.605]
+
+   suggested adopted result:      2615.6(13)          
+    (Unweighted-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 2614.3 {I3} (1972Dz13) and 2616.8 {I3} (1985Ra15)
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 2614.3 {I3} (1972Dz13) and 2616.8 {I3}         
+ 35S 2cG (1985Ra15)                                                             
+
+
+<For Gamma=2614.3 from Level=4188.51>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   1.3(4)              weight=2.97%
+*                      1985Ra15   0.24(7)             weight=97.03%
+
+Averaging results:
+           weighted average:      0.27(7)              (internal)
+                                  0.27(18)             (external)
+                                  chi**2/(n-1)=6.814     [critical=4.605]
+         unweighted average:      0.8(5)              
+           (of all values)        chi**2/(n-1)=0.562     [critical=4.605]
+
+   suggested adopted result:      0.8(5)              
+    (Unweighted-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 1.3 {I4} (1972Dz13) and 0.24 {I7} (1985Ra15)    
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 1.3 {I4} (1972Dz13) and 0.24 {I7} (1985Ra15)  
+
+
+**************** Level=4188.51     Gamma=4189.6 in 35S     *******************ID#=1-10-5
+
+------ average E------
+Data points of E record
+*                      1985Ke08   4188.80(13)         weight=8.51%
+*                      1985Ra15   4188.96(4)          weight=89.89%
+                       1972Dz13   4189.6(3)           weight=1.60%
+### (weight<2.00% not considered in weighted average)
+                       1972Dz13   4189.6(3)           weight=1.60%
+
+Averaging results:
+           weighted average:      4188.95(4)           (internal)
+                                  4188.95(5)           (external)
+                                  chi**2/(n-1)=1.386     [critical=4.605]
+           weighted average:      4188.96(4)           (internal)
+            (of all values)       4188.96(7)           (external)
+                                  chi**2/(n-1)=3.031     [critical=3.780]
+         unweighted average:      4189.12(25)         
+           (of all values)        chi**2/(n-1)=0.179     [critical=3.780]
+
+   suggested adopted result:      4188.95(5)          
+      (Weighted-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 4188.80 {I13} (1985Ke08) and 4188.96 {I4}        
+ 35S 2cG (1985Ra15). Other: 4189.6 {I3} (1972Dz13)                              
+
+### weighted average comment (all values):
+ 35S  cG E$weighted average of 4189.6 {I3} (1972Dz13), 4188.80 {I13} (1985Ke08),
+ 35S 2cG and 4188.96 {I4} (1985Ra15)                                            
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 4189.6 {I3} (1972Dz13), 4188.80 {I13}          
+ 35S 2cG (1985Ke08), and 4188.96 {I4} (1985Ra15)                                
+
+
+<For Gamma=4189.6 from Level=4188.51>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   1.9(4)              weight=23.61%
+*                      1985Ra15   2.72(27)            weight=51.83%
+*                      1997Be42   2.8(4)              weight=23.61%
+                       1985Ke08   24(2)               weight=0.94%
+### (weight<2.00% not considered in weighted average)
+                       1985Ke08   24(2)               weight=0.94%
+
+Averaging results:
+           weighted average:      2.54(20)             (internal)
+                                  2.54(26)             (external)
+                                  chi**2/(n-1)=1.713     [critical=3.780]
+           weighted average:      2.75(20)             (internal)
+            (of all values)       2.8(12)              (external)
+                                  chi**2/(n-1)=39.145     [critical=3.319]
+         unweighted average:      8(6)                
+           (of all values)        chi**2/(n-1)=116.015     [critical=3.319]
+
+   suggested adopted result:      2.54(27)            
+      (Weighted-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 1.9 {I4} (1972Dz13), 2.72 {I27} (1985Ra15), and 
+ 35S 2cG 2.8 {I4} (1997Be42). Other: 24 {I2} (1985Ke08)                         
+
+### weighted average comment (all values):
+ 35S  cG RI$weighted average of 1.9 {I4} (1972Dz13), 24 {I2} (1985Ke08), 2.72   
+ 35S 2cG {I27} (1985Ra15), and 2.8 {I4} (1997Be42)                              
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 1.9 {I4} (1972Dz13), 24 {I2} (1985Ke08), 2.72 
+ 35S 2cG {I27} (1985Ra15), and 2.8 {I4} (1997Be42)                              
+
+
+**************** Level=4903.63 in 35S     *******************ID#=1-12
+
+------ average E------
+Data points of E record
+*                      1985Ke08   4903.28(5)          weight=5.40%
+*                      1985Ra15   4903.354(12)        weight=93.80%
+                       1972Dz13   4903.63(13)         weight=0.80%
+### (weight<2.00% not considered in weighted average)
+                       1972Dz13   4903.63(13)         weight=0.80%
+
+Averaging results:
+           weighted average:      4903.350(12)         (internal)
+                                  4903.350(17)         (external)
+                                  chi**2/(n-1)=2.083     [critical=4.605]
+           weighted average:      4903.352(12)         (internal)
+            (of all values)       4903.352(21)         (external)
+                                  chi**2/(n-1)=3.341     [critical=3.780]
+         unweighted average:      4903.42(11)         
+           (of all values)        chi**2/(n-1)=0.034     [critical=3.780]
+
+   suggested adopted result:      4903.350(17)        
+      (Weighted-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cL E$weighted average of 4903.28 {I5} (1985Ke08) and 4903.354 {I12}       
+ 35S 2cL (1985Ra15). Other: 4903.63 {I13} (1972Dz13)                            
+
+### weighted average comment (all values):
+ 35S  cL E$weighted average of 4903.63 {I13} (1972Dz13), 4903.28 {I5}           
+ 35S 2cL (1985Ke08), and 4903.354 {I12} (1985Ra15)                              
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cL E$unweighted average of 4903.63 {I13} (1972Dz13), 4903.28 {I5}         
+ 35S 2cL (1985Ke08), and 4903.354 {I12} (1985Ra15)                              
+
+
+**************** Level=4903.63     Gamma=2555.9 in 35S     *******************ID#=1-12-3
+
+------ average E------
+Data points of E record
+### (1 value has weight>2.00%; all values with unc  considered in weighted average)
+                       1972Dz13   2555.9(4)           weight=0.12%
+*                      1985Ra15   2555.492(14)        weight=99.88%
+
+Averaging results:
+           weighted average:      2555.492(14)         (internal)
+                                  2555.492(14)         (external)
+                                  chi**2/(n-1)=1.039     [critical=6.635]
+         unweighted average:      2555.70(21)         
+           (of all values)        chi**2/(n-1)=0.083     [critical=4.605]
+
+   suggested adopted result:      2555.492(14)        
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 2555.9 {I4} (1972Dz13) and 2555.492 {I14}        
+ 35S 2cG (1985Ra15)                                                             
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 2555.9 {I4} (1972Dz13) and 2555.492 {I14}      
+ 35S 2cG (1985Ra15)                                                             
+
+### Non-average comment:
+ 35S  cG E$from 1985Ra15. Other: 2555.9 {I4} (1972Dz13)                         
+
+
+<For Gamma=2555.9 from Level=4903.63>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   3.4(7)              weight=16.40%
+*                      1985Ra15   3.09(31)            weight=83.60%
+
+Averaging results:
+           weighted average:      3.14(28)             (internal)
+                                  3.14(12)             (external, combined weight)
+                                  3.14(+12-12)         (external, separate weights)
+                                  chi**2/(n-1)=0.164     [critical=4.605]
+         unweighted average:      3.25(16)            
+           (of all values)        chi**2/(n-1)=0.048     [critical=4.605]
+
+   suggested adopted result:      3.14(31)            
+       (Weighted-Of-All)
+
+Note:  Combined weight means both unc+ and unc- of each input value are used to calculate
+          the final weight and external uncertainty, as used for the average value and chi2.
+       Separate weights means unc+ and unc- are used separately to calculate corresponding
+          weights and external uncertainties, respectively.
+       Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 3.4 {I7} (1972Dz13) and 3.09 {I31} (1985Ra15)   
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 3.4 {I7} (1972Dz13) and 3.09 {I31} (1985Ra15) 
+
+
+**************** Level=4903.63     Gamma=3331.08 in 35S     *******************ID#=1-12-4
+
+------ average E------
+Data points of E record
+*                      1972Dz13   3331.08(15)         weight=6.64%
+*                      1985Ra15   3330.80(4)          weight=93.36%
+
+Averaging results:
+           weighted average:      3330.82(4)           (internal)
+                                  3330.82(7)           (external)
+                                  chi**2/(n-1)=3.254     [critical=4.605]
+         unweighted average:      3330.94(14)         
+           (of all values)        chi**2/(n-1)=0.039     [critical=4.605]
+
+   suggested adopted result:      3330.82(7)          
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 3331.08 {I15} (1972Dz13) and 3330.80 {I4}        
+ 35S 2cG (1985Ra15)                                                             
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 3331.08 {I15} (1972Dz13) and 3330.80 {I4}      
+ 35S 2cG (1985Ra15)                                                             
+
+
+<For Gamma=3331.08 from Level=4903.63>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   7.8(10)             weight=32.89%
+*                      1985Ra15   7.4(7)              weight=67.11%
+
+Averaging results:
+           weighted average:      7.5(6)               (internal)
+                                  7.53(19)             (external, combined weight)
+                                  7.53(+19-19)         (external, separate weights)
+                                  chi**2/(n-1)=0.107     [critical=4.605]
+         unweighted average:      7.60(20)            
+           (of all values)        chi**2/(n-1)=0.080     [critical=4.605]
+
+   suggested adopted result:      7.5(7)              
+       (Weighted-Of-All)
+
+Note:  Combined weight means both unc+ and unc- of each input value are used to calculate
+          the final weight and external uncertainty, as used for the average value and chi2.
+       Separate weights means unc+ and unc- are used separately to calculate corresponding
+          weights and external uncertainties, respectively.
+       Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 7.8 {I10} (1972Dz13) and 7.4 {I7} (1985Ra15)    
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 7.8 {I10} (1972Dz13) and 7.4 {I7} (1985Ra15)  
+
+
+**************** Level=4903.63     Gamma=4903.4 in 35S     *******************ID#=1-12-8
+
+------ average E------
+Data points of E record
+### (1 value has weight>2.00%; all values with unc  considered in weighted average)
+                       1972Dz13   4903.4(3)           weight=1.75%
+*                      1985Ra15   4902.96(4)          weight=98.25%
+
+Averaging results:
+           weighted average:      4902.97(4)           (internal)
+                                  4902.97(6)           (external)
+                                  chi**2/(n-1)=2.113     [critical=6.635]
+         unweighted average:      4903.18(22)         
+           (of all values)        chi**2/(n-1)=0.097     [critical=4.605]
+
+   suggested adopted result:      4902.97(6)          
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 4903.4 {I3} (1972Dz13) and 4902.96 {I4}          
+ 35S 2cG (1985Ra15)                                                             
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 4903.4 {I3} (1972Dz13) and 4902.96 {I4}        
+ 35S 2cG (1985Ra15)                                                             
+
+
+<For Gamma=4903.4 from Level=4903.63>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   3.2(8)              weight=14.75%
+*                      1985Ra15   3.7(4)              weight=59.02%
+*                      1997Be42   4.2(6)              weight=26.23%
+
+Averaging results:
+           weighted average:      3.76(31)             (internal)
+                                  3.76(22)             (external, combined weight)
+                                  3.76(+22-22)         (external, separate weights)
+                                  chi**2/(n-1)=0.525     [critical=3.780]
+         unweighted average:      3.70(29)            
+           (of all values)        chi**2/(n-1)=0.250     [critical=3.780]
+
+   suggested adopted result:      3.8(4)              
+       (Weighted-Of-All)
+
+Note:  Combined weight means both unc+ and unc- of each input value are used to calculate
+          the final weight and external uncertainty, as used for the average value and chi2.
+       Separate weights means unc+ and unc- are used separately to calculate corresponding
+          weights and external uncertainties, respectively.
+       Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 3.2 {I8} (1972Dz13), 3.7 {I4} (1985Ra15), and   
+ 35S 2cG 4.2 {I6} (1997Be42)                                                    
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 3.2 {I8} (1972Dz13), 3.7 {I4} (1985Ra15), and 
+ 35S 2cG 4.2 {I6} (1997Be42)                                                    
+
+
+**************** Level=4963.21 in 35S     *******************ID#=1-13
+
+------ average E------
+Data points of E record
+*                      1985Ke08   4963.53(7)          weight=4.35%
+*                      1985Ra15   4963.071(15)        weight=94.70%
+                       1972Dz13   4963.21(15)         weight=0.95%
+### (weight<2.00% not considered in weighted average)
+                       1972Dz13   4963.21(15)         weight=0.95%
+
+Averaging results:
+           weighted average:      4963.091(15)         (internal)
+                                  4963.09(10)          (external)
+                                  chi**2/(n-1)=41.106     [critical=4.605]
+           weighted average:      4963.092(15)         (internal)
+            (of all values)       4963.09(7)           (external)
+                                  chi**2/(n-1)=20.865     [critical=3.780]
+         unweighted average:      4963.27(14)         
+           (of all values)        chi**2/(n-1)=0.055     [critical=3.780]
+
+   suggested adopted result:      4963.27(14)         
+    (Unweighted-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cL E$weighted average of 4963.53 {I7} (1985Ke08) and 4963.071 {I15}       
+ 35S 2cL (1985Ra15). Other: 4963.21 {I15} (1972Dz13)                            
+
+### weighted average comment (all values):
+ 35S  cL E$weighted average of 4963.21 {I15} (1972Dz13), 4963.53 {I7}           
+ 35S 2cL (1985Ke08), and 4963.071 {I15} (1985Ra15)                              
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cL E$unweighted average of 4963.21 {I15} (1972Dz13), 4963.53 {I7}         
+ 35S 2cL (1985Ke08), and 4963.071 {I15} (1985Ra15)                              
+
+
+**************** Level=4963.21     Gamma=2614.3 in 35S     *******************ID#=1-13-3
+
+------ average E------
+Data points of E record
+*                      1972Dz13   2614.3(3)           weight=30.77%
+*                      1985Ra15   2615.2(2)           weight=69.23%
+
+Averaging results:
+           weighted average:      2614.92(17)          (internal)
+                                  2614.9(4)            (external)
+                                  chi**2/(n-1)=6.229     [critical=4.605]
+         unweighted average:      2614.8(5)           
+           (of all values)        chi**2/(n-1)=0.405     [critical=4.605]
+
+   suggested adopted result:      2614.8(5)           
+    (Unweighted-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 2614.3 {I3} (1972Dz13) and 2615.2 {I2} (1985Ra15)
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 2614.3 {I3} (1972Dz13) and 2615.2 {I2}         
+ 35S 2cG (1985Ra15)                                                             
+
+
+<For Gamma=2614.3 from Level=4963.21>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   1.3(4)              weight=5.88%
+*                      1985Ra15   1.09(10)            weight=94.12%
+
+Averaging results:
+           weighted average:      1.10(10)             (internal)
+                                  1.10(5)              (external, combined weight)
+                                  1.10(+5-5)           (external, separate weights)
+                                  chi**2/(n-1)=0.259     [critical=4.605]
+         unweighted average:      1.20(11)            
+           (of all values)        chi**2/(n-1)=0.022     [critical=4.605]
+
+   suggested adopted result:      1.10(10)            
+       (Weighted-Of-All)
+
+Note:  Combined weight means both unc+ and unc- of each input value are used to calculate
+          the final weight and external uncertainty, as used for the average value and chi2.
+       Separate weights means unc+ and unc- are used separately to calculate corresponding
+          weights and external uncertainties, respectively.
+       Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 1.3 {I4} (1972Dz13) and 1.09 {I10} (1985Ra15)   
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 1.3 {I4} (1972Dz13) and 1.09 {I10} (1985Ra15) 
+
+
+**************** Level=4963.21     Gamma=3390.86 in 35S     *******************ID#=1-13-5
+
+------ average E------
+Data points of E record
+*                      1972Dz13   3390.86(20)         weight=3.97%
+*                      1985Ke08   3390.73(7)          weight=32.44%
+*                      1985Ra15   3390.55(5)          weight=63.58%
+
+Averaging results:
+           weighted average:      3390.62(4)           (internal)
+                                  3390.62(7)           (external)
+                                  chi**2/(n-1)=2.933     [critical=3.780]
+         unweighted average:      3390.71(9)          
+           (of all values)        chi**2/(n-1)=0.024     [critical=3.780]
+
+   suggested adopted result:      3390.62(7)          
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 3390.86 {I20} (1972Dz13), 3390.73 {I7}           
+ 35S 2cG (1985Ke08), and 3390.55 {I5} (1985Ra15)                                
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 3390.86 {I20} (1972Dz13), 3390.73 {I7}         
+ 35S 2cG (1985Ke08), and 3390.55 {I5} (1985Ra15)                                
+
+
+<For Gamma=3390.86 from Level=4963.21>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   5.5(8)              weight=18.73%
+*                      1985Ke08   5.7(6)              weight=33.31%
+*                      1985Ra15   5.5(5)              weight=47.96%
+
+Averaging results:
+           weighted average:      5.57(35)             (internal)
+                                  5.57(7)              (external)
+                                  chi**2/(n-1)=0.037     [critical=3.780]
+         unweighted average:      5.57(7)             
+           (of all values)        chi**2/(n-1)=0.013     [critical=3.780]
+
+   suggested adopted result:      5.6(5)              
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 5.5 {I8} (1972Dz13), 5.7 {I6} (1985Ke08), and   
+ 35S 2cG 5.5 {I5} (1985Ra15)                                                    
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 5.5 {I8} (1972Dz13), 5.7 {I6} (1985Ke08), and 
+ 35S 2cG 5.5 {I5} (1985Ra15)                                                    
+
+
+**************** Level=4963.21     Gamma=4963.2 in 35S     *******************ID#=1-13-6
+
+------ average E------
+Data points of E record
+*                      1985Ke08   4963.34(10)         weight=19.84%
+*                      1985Ra15   4962.63(5)          weight=79.37%
+                       1972Dz13   4963.2(5)           weight=0.79%
+### (weight<2.00% not considered in weighted average)
+                       1972Dz13   4963.2(5)           weight=0.79%
+
+Averaging results:
+           weighted average:      4962.77(5)           (internal)
+                                  4962.77(29)          (external)
+                                  chi**2/(n-1)=40.324     [critical=4.605]
+           weighted average:      4962.78(5)           (internal)
+            (of all values)       4962.78(20)          (external)
+                                  chi**2/(n-1)=20.526     [critical=3.780]
+         unweighted average:      4963.06(22)         
+           (of all values)        chi**2/(n-1)=0.141     [critical=3.780]
+
+   suggested adopted result:      4963.06(22)         
+    (Unweighted-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 4963.34 {I10} (1985Ke08) and 4962.63 {I5}        
+ 35S 2cG (1985Ra15). Other: 4963.2 {I5} (1972Dz13)                              
+
+### weighted average comment (all values):
+ 35S  cG E$weighted average of 4963.2 {I5} (1972Dz13), 4963.34 {I10} (1985Ke08),
+ 35S 2cG and 4962.63 {I5} (1985Ra15)                                            
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 4963.2 {I5} (1972Dz13), 4963.34 {I10}          
+ 35S 2cG (1985Ke08), and 4962.63 {I5} (1985Ra15)                                
+
+
+<For Gamma=4963.2 from Level=4963.21>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   2.6(8)              weight=6.36%
+*                      1985Ra15   2.92(27)            weight=55.82%
+*                      1997Be42   2.18(33)            weight=37.37%
+                       1985Ke08   29(3)               weight=0.45%
+### (weight<2.00% not considered in weighted average)
+                       1985Ke08   29(3)               weight=0.45%
+
+Averaging results:
+           weighted average:      2.62(20)             (internal)
+                                  2.62(25)             (external, combined weight)
+                                  2.62(+25-25)         (external, separate weights)
+                                  chi**2/(n-1)=1.506     [critical=3.780]
+           weighted average:      2.74(20)             (internal)
+            (of all values)       2.7(11)              (external)
+                                  chi**2/(n-1)=26.659     [critical=3.319]
+         unweighted average:      9(7)                
+           (of all values)        chi**2/(n-1)=174.772     [critical=3.319]
+
+   suggested adopted result:      2.62(27)            
+      (Weighted-Average)
+
+Note:  Combined weight means both unc+ and unc- of each input value are used to calculate
+          the final weight and external uncertainty, as used for the average value and chi2.
+       Separate weights means unc+ and unc- are used separately to calculate corresponding
+          weights and external uncertainties, respectively.
+       Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 2.6 {I8} (1972Dz13), 2.92 {I27} (1985Ra15), and 
+ 35S 2cG 2.18 {I33} (1997Be42). Other: 29 {I3} (1985Ke08)                       
+
+### weighted average comment (all values):
+ 35S  cG RI$weighted average of 2.6 {I8} (1972Dz13), 29 {I3} (1985Ke08), 2.92   
+ 35S 2cG {I27} (1985Ra15), and 2.18 {I33} (1997Be42)                            
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 2.6 {I8} (1972Dz13), 29 {I3} (1985Ke08), 2.92 
+ 35S 2cG {I27} (1985Ra15), and 2.18 {I33} (1997Be42)                            
+
+
+**************** Level=6078.23 in 35S     *******************ID#=1-16
+
+------ average E------
+Data points of E record
+### (1 value has weight>2.00%; all values with unc  considered in weighted average)
+                       1972Dz13   6078.23(31)         weight=0.37%
+*                      1985Ra15   6078.469(19)        weight=99.63%
+
+Averaging results:
+           weighted average:      6078.468(19)         (internal)
+                                  6078.468(15)         (external)
+                                  chi**2/(n-1)=0.593     [critical=6.635]
+         unweighted average:      6078.35(12)         
+           (of all values)        chi**2/(n-1)=0.029     [critical=4.605]
+
+   suggested adopted result:      6078.469(19)        
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cL E$weighted average of 6078.23 {I31} (1972Dz13) and 6078.469 {I19}      
+ 35S 2cL (1985Ra15)                                                             
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cL E$unweighted average of 6078.23 {I31} (1972Dz13) and 6078.469 {I19}    
+ 35S 2cL (1985Ra15)                                                             
+
+### Non-average comment:
+ 35S  cL E$from 1985Ra15. Other: 6078.23 {I31} (1972Dz13)                       
+
+
+**************** Level=6078.23     Gamma=6078.2 in 35S     *******************ID#=1-16-2
+
+------ average E------
+Data points of E record
+### (1 value has weight>2.00%; all values with unc  considered in weighted average)
+                       1972Dz13   6078.2(10)          weight=1.20%
+*                      1985Ra15   6077.87(11)         weight=98.80%
+
+Averaging results:
+           weighted average:      6077.87(11)          (internal)
+                                  6077.87(4)           (external)
+                                  chi**2/(n-1)=0.108     [critical=6.635]
+         unweighted average:      6078.04(17)         
+           (of all values)        chi**2/(n-1)=0.054     [critical=4.605]
+
+   suggested adopted result:      6077.87(11)         
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 6078.2 {I10} (1972Dz13) and 6077.87 {I11}        
+ 35S 2cG (1985Ra15)                                                             
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 6078.2 {I10} (1972Dz13) and 6077.87 {I11}      
+ 35S 2cG (1985Ra15)                                                             
+
+### Non-average comment:
+ 35S  cG E$from 1985Ra15. Other: 6078.2 {I10} (1972Dz13)                        
+
+
+<For Gamma=6078.2 from Level=6078.23>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   0.3(1)              weight=13.79%
+*                      1985Ra15   0.36(4)             weight=86.21%
+
+Averaging results:
+           weighted average:      0.35(4)              (internal)
+                                  0.352(21)            (external)
+                                  chi**2/(n-1)=0.310     [critical=4.605]
+         unweighted average:      0.330(30)           
+           (of all values)        chi**2/(n-1)=0.002     [critical=4.605]
+
+   suggested adopted result:      0.35(4)             
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 0.3 {I1} (1972Dz13) and 0.36 {I4} (1985Ra15)    
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 0.3 {I1} (1972Dz13) and 0.36 {I4} (1985Ra15)  
+
+
+**************** Level=6339.4 in 35S     *******************ID#=1-18
+
+------ average E------
+Data points of E record
+*                      1972Dz13   6339.4(5)           weight=16.22%
+*                      1985Ra15   6354.88(22)         weight=83.78%
+
+Averaging results:
+           weighted average:      6352.37(20)          (internal)
+                                  6352(6)              (external)
+                                  chi**2/(n-1)=803.049     [critical=4.605]
+         unweighted average:      6347(8)             
+           (of all values)        chi**2/(n-1)=119.815     [critical=4.605]
+
+   suggested adopted result:      6347(8)             
+    (Unweighted-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cL E$weighted average of 6339.4 {I5} (1972Dz13) and 6354.88 {I22}         
+ 35S 2cL (1985Ra15)                                                             
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cL E$unweighted average of 6339.4 {I5} (1972Dz13) and 6354.88 {I22}       
+ 35S 2cL (1985Ra15)                                                             
+
+
+**************** Level=6986.29 in 35S     *******************ID#=1-22
+
+------ average E------
+Data points of E record
+*                      1985Ke08   6986.27(4)          weight=10.80%
+*                      1985Ra15   6986.089(14)        weight=88.18%
+                       1972Dz13   6986.29(13)         weight=1.02%
+### (weight<2.00% not considered in weighted average)
+                       1972Dz13   6986.29(13)         weight=1.02%
+
+Averaging results:
+           weighted average:      6986.109(13)         (internal)
+                                  6986.11(6)           (external)
+                                  chi**2/(n-1)=18.272     [critical=4.605]
+           weighted average:      6986.111(13)         (internal)
+            (of all values)       6986.11(4)           (external)
+                                  chi**2/(n-1)=10.100     [critical=3.780]
+         unweighted average:      6986.22(7)          
+           (of all values)        chi**2/(n-1)=0.012     [critical=3.780]
+
+   suggested adopted result:      6986.22(7)          
+    (Unweighted-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cL E$weighted average of 6986.27 {I4} (1985Ke08) and 6986.089 {I14}       
+ 35S 2cL (1985Ra15). Other: 6986.29 {I13} (1972Dz13)                            
+
+### weighted average comment (all values):
+ 35S  cL E$weighted average of 6986.29 {I13} (1972Dz13), 6986.27 {I4}           
+ 35S 2cL (1985Ke08), and 6986.089 {I14} (1985Ra15)                              
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cL E$unweighted average of 6986.29 {I13} (1972Dz13), 6986.27 {I4}         
+ 35S 2cL (1985Ke08), and 6986.089 {I14} (1985Ra15)                              
+
+
+**************** Level=6986.29     Gamma=908.1 in 35S     *******************ID#=1-22-5
+
+------ average E------
+Data points of E record
+### (1 value has weight>2.00%; all values with unc  considered in weighted average)
+                       1972Dz13   908.1(3)            weight=0.22%
+*                      1985Ra15   907.607(14)         weight=99.78%
+
+Averaging results:
+           weighted average:      907.608(14)          (internal)
+                                  907.608(23)          (external)
+                                  chi**2/(n-1)=2.694     [critical=6.635]
+         unweighted average:      907.85(25)          
+           (of all values)        chi**2/(n-1)=0.122     [critical=4.605]
+
+   suggested adopted result:      907.608(23)         
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 908.1 {I3} (1972Dz13) and 907.607 {I14}          
+ 35S 2cG (1985Ra15)                                                             
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 908.1 {I3} (1972Dz13) and 907.607 {I14}        
+ 35S 2cG (1985Ra15)                                                             
+
+
+<For Gamma=908.1 from Level=6986.29>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   0.5(1)              weight=50.00%
+*                      1985Ra15   0.61(10)            weight=50.00%
+
+Averaging results:
+           weighted average:      0.56(7)              (internal)
+                                  0.56(6)              (external)
+                                  chi**2/(n-1)=0.605     [critical=4.605]
+         unweighted average:      0.56(6)             
+           (of all values)        chi**2/(n-1)=0.006     [critical=4.605]
+
+   suggested adopted result:      0.56(10)            
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 0.5 {I1} (1972Dz13) and 0.61 {I10} (1985Ra15)   
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 0.5 {I1} (1972Dz13) and 0.61 {I10} (1985Ra15) 
+
+
+**************** Level=6986.29     Gamma=2022.80 in 35S     *******************ID#=1-22-6
+
+------ average E------
+Data points of E record
+### (1 value has weight>2.00%; all values with unc  considered in weighted average)
+                       1972Dz13   2022.80(20)         weight=0.20%
+                       1985Ke08   2023.0(10)          weight=0.01%
+*                      1985Ra15   2022.954(9)         weight=99.79%
+
+Averaging results:
+           weighted average:      2022.954(9)          (internal)
+                                  2022.954(5)          (external)
+                                  chi**2/(n-1)=0.297     [critical=6.635]
+         unweighted average:      2022.92(6)          
+           (of all values)        chi**2/(n-1)=0.011     [critical=3.780]
+
+   suggested adopted result:      2022.954(9)         
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 2022.80 {I20} (1972Dz13), 2023.0 {I10}           
+ 35S 2cG (1985Ke08), and 2022.954 {I9} (1985Ra15)                               
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 2022.80 {I20} (1972Dz13), 2023.0 {I10}         
+ 35S 2cG (1985Ke08), and 2022.954 {I9} (1985Ra15)                               
+
+### Non-average comment:
+ 35S  cG E$from 1985Ra15. Others: 2022.80 {I20} (1972Dz13) and 2023.0 {I10}     
+ 35S 2cG (1985Ke08)                                                             
+
+
+<For Gamma=2022.80 from Level=6986.29>
+------ average RI------
+Data points of RI record
+*                      1985Ke08   11(1)               weight=37.05%
+*                      1985Ra15   11.4(10)            weight=37.05%
+*                      1997Be42   9.1(12)             weight=25.73%
+                       1972Dz13   12(15)              weight=0.16%
+### (weight<2.00% not considered in weighted average)
+                       1972Dz13   12(15)              weight=0.16%
+
+Averaging results:
+           weighted average:      10.7(6)              (internal)
+                                  10.7(7)              (external, combined weight)
+                                  10.7(+7-7)           (external, separate weights)
+                                  chi**2/(n-1)=1.177     [critical=3.780]
+           weighted average:      10.7(6)              (internal)
+            (of all values)       10.7(6)              (external, combined weight)
+            (of all values)       10.7(+6-6)           (external, separate weights)
+                                  chi**2/(n-1)=0.787     [critical=3.319]
+         unweighted average:      10.9(6)             
+           (of all values)        chi**2/(n-1)=1.569     [critical=3.319]
+
+   suggested adopted result:      10.7(10)            
+       (Weighted-Of-All)
+
+Note:  Combined weight means both unc+ and unc- of each input value are used to calculate
+          the final weight and external uncertainty, as used for the average value and chi2.
+       Separate weights means unc+ and unc- are used separately to calculate corresponding
+          weights and external uncertainties, respectively.
+       Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 11 {I1} (1985Ke08), 11.4 {I10} (1985Ra15), and  
+ 35S 2cG 9.1 {I12} (1997Be42). Other: 12 {I15} (1972Dz13)                       
+
+### weighted average comment (all values):
+ 35S  cG RI$weighted average of 12 {I15} (1972Dz13), 11 {I1} (1985Ke08), 11.4   
+ 35S 2cG {I10} (1985Ra15), and 9.1 {I12} (1997Be42)                             
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 12 {I15} (1972Dz13), 11 {I1} (1985Ke08), 11.4 
+ 35S 2cG {I10} (1985Ra15), and 9.1 {I12} (1997Be42)                             
+
+
+**************** Level=6986.29     Gamma=2082.65 in 35S     *******************ID#=1-22-7
+
+------ average E------
+Data points of E record
+*                      1985Ke08   2083.17(7)          weight=2.84%
+*                      1985Ra15   2082.681(12)        weight=96.62%
+                       1972Dz13   2082.65(16)         weight=0.54%
+### (weight<2.00% not considered in weighted average)
+                       1972Dz13   2082.65(16)         weight=0.54%
+
+Averaging results:
+           weighted average:      2082.695(12)         (internal)
+                                  2082.70(8)           (external)
+                                  chi**2/(n-1)=47.410     [critical=4.605]
+           weighted average:      2082.695(12)         (internal)
+            (of all values)       2082.70(6)           (external)
+                                  chi**2/(n-1)=23.744     [critical=3.780]
+         unweighted average:      2082.83(17)         
+           (of all values)        chi**2/(n-1)=0.085     [critical=3.780]
+
+   suggested adopted result:      2082.83(17)         
+    (Unweighted-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 2083.17 {I7} (1985Ke08) and 2082.681 {I12}       
+ 35S 2cG (1985Ra15). Other: 2082.65 {I16} (1972Dz13)                            
+
+### weighted average comment (all values):
+ 35S  cG E$weighted average of 2082.65 {I16} (1972Dz13), 2083.17 {I7}           
+ 35S 2cG (1985Ke08), and 2082.681 {I12} (1985Ra15)                              
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 2082.65 {I16} (1972Dz13), 2083.17 {I7}         
+ 35S 2cG (1985Ke08), and 2082.681 {I12} (1985Ra15)                              
+
+
+<For Gamma=2082.65 from Level=6986.29>
+------ average RI------
+Data points of RI record
+*                      1985Ke08   17(2)               weight=26.41%
+*                      1985Ra15   15.6(17)            weight=36.56%
+*                      1997Be42   12.6(17)            weight=36.56%
+                       1972Dz13   18(15)              weight=0.47%
+### (weight<2.00% not considered in weighted average)
+                       1972Dz13   18(15)              weight=0.47%
+
+Averaging results:
+           weighted average:      14.9(10)             (internal)
+                                  14.9(13)             (external)
+                                  chi**2/(n-1)=1.551     [critical=3.780]
+           weighted average:      14.9(10)             (internal)
+            (of all values)       14.9(11)             (external)
+                                  chi**2/(n-1)=1.048     [critical=3.319]
+         unweighted average:      15.8(12)            
+           (of all values)        chi**2/(n-1)=5.520     [critical=3.319]
+
+   suggested adopted result:      14.9(17)            
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 17 {I2} (1985Ke08), 15.6 {I17} (1985Ra15), and  
+ 35S 2cG 12.6 {I17} (1997Be42). Other: 18 {I15} (1972Dz13)                      
+
+### weighted average comment (all values):
+ 35S  cG RI$weighted average of 18 {I15} (1972Dz13), 17 {I2} (1985Ke08), 15.6   
+ 35S 2cG {I17} (1985Ra15), and 12.6 {I17} (1997Be42)                            
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 18 {I15} (1972Dz13), 17 {I2} (1985Ke08), 15.6 
+ 35S 2cG {I17} (1985Ra15), and 12.6 {I17} (1997Be42)                            
+
+
+**************** Level=6986.29     Gamma=2796.6 in 35S     *******************ID#=1-22-9
+
+------ average E------
+Data points of E record
+*                      1985Ke08   2796.83(13)         weight=8.60%
+*                      1985Ra15   2796.73(4)          weight=90.82%
+                       1972Dz13   2796.6(5)           weight=0.58%
+### (weight<2.00% not considered in weighted average)
+                       1972Dz13   2796.6(5)           weight=0.58%
+
+Averaging results:
+           weighted average:      2796.74(4)           (internal)
+                                  2796.739(28)         (external)
+                                  chi**2/(n-1)=0.542     [critical=4.605]
+           weighted average:      2796.74(4)           (internal)
+            (of all values)       2796.738(21)         (external)
+                                  chi**2/(n-1)=0.309     [critical=3.780]
+         unweighted average:      2796.72(7)          
+           (of all values)        chi**2/(n-1)=0.013     [critical=3.780]
+
+   suggested adopted result:      2796.74(4)          
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 2796.83 {I13} (1985Ke08) and 2796.73 {I4}        
+ 35S 2cG (1985Ra15). Other: 2796.6 {I5} (1972Dz13)                              
+
+### weighted average comment (all values):
+ 35S  cG E$weighted average of 2796.6 {I5} (1972Dz13), 2796.83 {I13} (1985Ke08),
+ 35S 2cG and 2796.73 {I4} (1985Ra15)                                            
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 2796.6 {I5} (1972Dz13), 2796.83 {I13}          
+ 35S 2cG (1985Ke08), and 2796.73 {I4} (1985Ra15)                                
+
+
+<For Gamma=2796.6 from Level=6986.29>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   6.1(8)              weight=11.28%
+*                      1985Ke08   4.3(4)              weight=45.12%
+*                      1985Ra15   5.4(5)              weight=28.87%
+*                      1997Be42   4.9(7)              weight=14.73%
+
+Averaging results:
+           weighted average:      4.91(27)             (internal)
+                                  4.9(4)               (external, combined weight)
+                                  4.9(+4-4)            (external, separate weights)
+                                  chi**2/(n-1)=1.833     [critical=3.319]
+         unweighted average:      5.2(4)              
+           (of all values)        chi**2/(n-1)=0.582     [critical=3.319]
+
+   suggested adopted result:      4.9(4)              
+       (Weighted-Of-All)
+
+Note:  Combined weight means both unc+ and unc- of each input value are used to calculate
+          the final weight and external uncertainty, as used for the average value and chi2.
+       Separate weights means unc+ and unc- are used separately to calculate corresponding
+          weights and external uncertainties, respectively.
+       Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 6.1 {I8} (1972Dz13), 4.3 {I4} (1985Ke08), 5.4   
+ 35S 2cG {I5} (1985Ra15), and 4.9 {I7} (1997Be42)                               
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 6.1 {I8} (1972Dz13), 4.3 {I4} (1985Ke08), 5.4 
+ 35S 2cG {I5} (1985Ra15), and 4.9 {I7} (1997Be42)                               
+
+
+**************** Level=6986.29     Gamma=3184.30 in 35S     *******************ID#=1-22-10
+
+------ average E------
+Data points of E record
+*                      1972Dz13   3184.30(20)         weight=2.93%
+*                      1985Ke08   3183.94(7)          weight=23.89%
+*                      1985Ra15   3183.94(4)          weight=73.18%
+
+Averaging results:
+           weighted average:      3183.951(34)         (internal)
+                                  3183.95(4)           (external)
+                                  chi**2/(n-1)=1.574     [critical=3.780]
+         unweighted average:      3184.06(12)         
+           (of all values)        chi**2/(n-1)=0.043     [critical=3.780]
+
+   suggested adopted result:      3183.95(4)          
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 3184.30 {I20} (1972Dz13), 3183.94 {I7}           
+ 35S 2cG (1985Ke08), and 3183.94 {I4} (1985Ra15)                                
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 3184.30 {I20} (1972Dz13), 3183.94 {I7}         
+ 35S 2cG (1985Ke08), and 3183.94 {I4} (1985Ra15)                                
+
+
+<For Gamma=3184.30 from Level=6986.29>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   7.0(9)              weight=14.78%
+*                      1985Ke08   5.7(6)              weight=33.26%
+*                      1985Ra15   6.2(6)              weight=33.26%
+*                      1997Be42   5.7(8)              weight=18.71%
+
+Averaging results:
+           weighted average:      6.06(35)             (internal)
+                                  6.06(26)             (external)
+                                  chi**2/(n-1)=0.569     [critical=3.319]
+         unweighted average:      6.15(31)            
+           (of all values)        chi**2/(n-1)=0.377     [critical=3.319]
+
+   suggested adopted result:      6.1(6)              
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 7.0 {I9} (1972Dz13), 5.7 {I6} (1985Ke08), 6.2   
+ 35S 2cG {I6} (1985Ra15), and 5.7 {I8} (1997Be42)                               
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 7.0 {I9} (1972Dz13), 5.7 {I6} (1985Ke08), 6.2 
+ 35S 2cG {I6} (1985Ra15), and 5.7 {I8} (1997Be42)                               
+
+
+**************** Level=6986.29     Gamma=4268.4 in 35S     *******************ID#=1-22-11
+
+------ average E------
+Data points of E record
+*                      1972Dz13   4268.4(7)           weight=3.85%
+*                      1985Ra15   4268.65(14)         weight=96.15%
+
+Averaging results:
+           weighted average:      4268.64(14)          (internal)
+                                  4268.64(5)           (external)
+                                  chi**2/(n-1)=0.123     [critical=4.605]
+         unweighted average:      4268.53(13)         
+           (of all values)        chi**2/(n-1)=0.031     [critical=4.605]
+
+   suggested adopted result:      4268.65(14)         
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 4268.4 {I7} (1972Dz13) and 4268.65 {I14}         
+ 35S 2cG (1985Ra15)                                                             
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 4268.4 {I7} (1972Dz13) and 4268.65 {I14}       
+ 35S 2cG (1985Ra15)                                                             
+
+### Non-average comment:
+ 35S  cG E$from 1985Ra15. Other: 4268.4 {I7} (1972Dz13)                         
+
+
+<For Gamma=4268.4 from Level=6986.29>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   0.4(2)              weight=3.85%
+*                      1985Ra15   0.34(4)             weight=96.15%
+
+Averaging results:
+           weighted average:      0.34(4)              (internal)
+                                  0.342(12)            (external)
+                                  chi**2/(n-1)=0.087     [critical=4.605]
+         unweighted average:      0.370(30)           
+           (of all values)        chi**2/(n-1)=0.002     [critical=4.605]
+
+   suggested adopted result:      0.34(4)             
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 0.4 {I2} (1972Dz13) and 0.34 {I4} (1985Ra15)    
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 0.4 {I2} (1972Dz13) and 0.34 {I4} (1985Ra15)  
+
+### Non-average comment:
+ 35S  cG RI$from 1985Ra15. Other: 0.4 {I2} (1972Dz13)                           
+
+
+**************** Level=6986.29     Gamma=4638.4 in 35S     *******************ID#=1-22-12
+
+------ average E------
+Data points of E record
+*                      1985Ke08   4638.10(3)          weight=63.09%
+*                      1985Ra15   4637.91(4)          weight=35.49%
+                       1972Dz13   4638.4(2)           weight=1.42%
+### (weight<2.00% not considered in weighted average)
+                       1972Dz13   4638.4(2)           weight=1.42%
+
+Averaging results:
+           weighted average:      4638.032(24)         (internal)
+                                  4638.03(9)           (external)
+                                  chi**2/(n-1)=14.431     [critical=4.605]
+           weighted average:      4638.037(24)         (internal)
+            (of all values)       4638.04(7)           (external)
+                                  chi**2/(n-1)=8.886     [critical=3.780]
+         unweighted average:      4638.14(14)         
+           (of all values)        chi**2/(n-1)=0.061     [critical=3.780]
+
+   suggested adopted result:      4638.14(14)         
+    (Unweighted-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG E$weighted average of 4638.10 {I3} (1985Ke08) and 4637.91 {I4}         
+ 35S 2cG (1985Ra15). Other: 4638.4 {I2} (1972Dz13)                              
+
+### weighted average comment (all values):
+ 35S  cG E$weighted average of 4638.4 {I2} (1972Dz13), 4638.10 {I3} (1985Ke08), 
+ 35S 2cG and 4637.91 {I4} (1985Ra15)                                            
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG E$unweighted average of 4638.4 {I2} (1972Dz13), 4638.10 {I3}           
+ 35S 2cG (1985Ke08), and 4637.91 {I4} (1985Ra15)                                
+
+
+<For Gamma=4638.4 from Level=6986.29>
+------ average RI------
+Data points of RI record
+*                      1972Dz13   56(6)               weight=21.67%
+*                      1985Ke08   59(5)               weight=31.20%
+*                      1985Ra15   55(5)               weight=31.20%
+*                      1997Be42   50(7)               weight=15.92%
+
+Averaging results:
+           weighted average:      55.7(28)             (internal)
+                                  55.7(17)             (external)
+                                  chi**2/(n-1)=0.374     [critical=3.319]
+         unweighted average:      55.0(19)            
+           (of all values)        chi**2/(n-1)=14.000     [critical=3.319]
+
+   suggested adopted result:      56(5)               
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 35S  cG RI$weighted average of 56 {I6} (1972Dz13), 59 {I5} (1985Ke08), 55 {I5} 
+ 35S 2cG (1985Ra15), and 50 {I7} (1997Be42)                                     
+
+### unweighted average comment (all non-limit values with/without unc):
+ 35S  cG RI$unweighted average of 56 {I6} (1972Dz13), 59 {I5} (1985Ke08), 55    
+ 35S 2cG {I5} (1985Ra15), and 50 {I7} (1997Be42)                                
 
 
