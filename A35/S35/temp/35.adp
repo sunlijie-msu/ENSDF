@@ -1,5 +1,5 @@
 Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 07/02/2025)
-Generated at: Wed 07/23/2025 at 03:27:09 PM EDT                                 
+Generated at: Wed 07/23/2025 at 09:57:55 PM EDT                                 
                                                                                 
  35S   G 663.41    7 0.090   10                                                 
  35S   G 803.81    9 0.092   14                                                 
@@ -48,8 +48,9 @@ Generated at: Wed 07/23/2025 at 03:27:09 PM EDT
  35S   L 4189.255  15 1/2-                                      0.15            
  35S   G 631.32    24 0.060  9                                              &   
  35S   G 1250.61   5 0.214   24                                                 
- 35S   G 1841.426  15 2.2    4                                                  
- 35S  cG E$from 1985Ra15. Other: 1839 {I10} (1972Dz13)                          
+ 35S   G 1840.2    12 2.2    4                                                  
+ 35S  cG E$unweighted average of 1839 {I1} (1972Dz13) and 1841.426 {I15}        
+ 35S 2cG (1985Ra15)                                                             
  35S  cG RI$weighted average of 3.6 {I8} (1972Dz13) and 2.14 {I21} (1985Ra15)   
  35S   G 2615.6    13 0.8    5                                              &   
  35S  cG E$unweighted average of 2614.3 {I3} (1972Dz13) and 2616.8 {I3}         
@@ -66,21 +67,20 @@ Generated at: Wed 07/23/2025 at 03:27:09 PM EDT
  35S   L 4903.354  12 1/2-                                      0.49            
  35S   G 1101.92   31 0.033  8                                                  
  35S   G 1964.8    2 0.37    10                                                 
+ 35S   G 2184.16   19 4.7    5                                                  
  35S   G 2555.492  14 3.14   31                                                 
  35S  cG E$from 1985Ra15. Other: 2555.9 {I4} (1972Dz13)                         
  35S  cG RI$weighted average of 3.4 {I7} (1972Dz13) and 3.09 {I31} (1985Ra15)   
- 35S   G 3330.82   7 7.5     7                                                  
- 35S  cG E$weighted average of 3331.08 {I15} (1972Dz13) and 3330.80 {I4}        
- 35S 2cG (1985Ra15)                                                             
- 35S  cG RI$weighted average of 7.8 {I10} (1972Dz13) and 7.4 {I7} (1985Ra15)    
- 35S   G 4903.07   7 4.3     4                                                  
- 35S   G 3330.64   6 7.7     8                                                  
- 35S   G 2184.16   19 4.7    5                                                  
- 35S   G 4902.97   6 3.8     4                                                  
- 35S  cG E$weighted average of 4903.4 {I3} (1972Dz13) and 4902.96 {I4}          
- 35S 2cG (1985Ra15)                                                             
- 35S  cG RI$weighted average of 3.2 {I8} (1972Dz13), 3.7 {I4} (1985Ra15), and   
- 35S 2cG 4.2 {I6} (1997Be42)                                                    
+ 35S   G 3330.84   13 7.6    7                                                  
+ 35S  cG E$unweighted average of 3331.08 {I15} (1972Dz13), 3330.64 {I6}         
+ 35S 2cG (1985Ke08), and 3330.80 {I4} (1985Ra15)                                
+ 35S  cG RI$weighted average of 7.8 {I10} (1972Dz13), 7.7 {I8} (1985Ke08), and  
+ 35S 2cG 7.4 {I7} (1985Ra15)                                                    
+ 35S   G 4902.99   5 4.0     4                                                  
+ 35S  cG E$weighted average of 4903.07 {I7} (1985Ke08) and 4902.96 {I4}         
+ 35S 2cG (1985Ra15). Other: 4903.4 {I3} (1972Dz13)                              
+ 35S  cG RI$weighted average of 3.2 {I8} (1972Dz13), 4.3 {I4} (1985Ke08), 3.7   
+ 35S 2cG {I4} (1985Ra15), and 4.2 {I6} (1997Be42)                               
  35S   L 4963.071  15 3/2-                                      0.19            
  35S   G 1161.05   20 0.055  8                                                  
  35S   G 1404.967  24 0.60   6                                                  
