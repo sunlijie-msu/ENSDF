@@ -76,6 +76,13 @@ Received training from my line manager regarding the A=35 evaluation and data co
 Lijie Sun – 13 July 2025 - 19 July 2025
 Addressed a FRIENDS general request on DSAM. Received training from my line manager regarding the A=35 evaluation. Added 2 reaction datasets and revised 2 reaction datasets for 35S.
 
+Lijie Sun – 20 July 2025 - 26 July 2025
+Received training from my line manager regarding the A=35 evaluation. Revised 2 reaction datasets and added 1 decay dataset for 35S. Revised the Adopted dataset for 35P. Implemented AI-assisted formatting improvements.
+
+
+
+
+
 
 
 Prompt tuning vs. fine tuning:
