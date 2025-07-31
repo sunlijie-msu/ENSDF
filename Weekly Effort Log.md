@@ -79,10 +79,8 @@ Addressed a FRIENDS general request on DSAM. Received training from my line mana
 Lijie Sun – 20 July 2025 - 26 July 2025
 Received training from my line manager regarding the A=35 evaluation. Revised 2 reaction datasets and added 1 decay dataset for 35S. Revised the Adopted dataset for 35P. Implemented AI-assisted formatting improvements.
 
-
-
-
-
+Lijie Sun – 27 July 2025 - 2 August 2025
+Addressed a FRIENDS general request on B(GT) and B(F) calculations. Received training from my line manager regarding the A=35 evaluation. Revised 2 reaction datasets and 1 decay dataset for 35S. Added the Adopted dataset for 35S. Implemented AI-assisted formatting improvements.
 
 
 Prompt tuning vs. fine tuning:
@@ -125,7 +123,7 @@ Column calibration tool for ENSDF 80-column formatting
 
 ### Collaborations
 - **FRIENDS Support**: Actively participated in the FRIENDS project to provide integral experimental nuclear data services to FRIB users.
-- **FRIB Laboratory**: Collaborated with the Wrede Group to conduct PAC approved experiments.
+- **FRIB Laboratory**: Collaborated with the Wrede Group to conduct PAC-approved experiments.
 - **USNDP**: Worked closely with the U.S. Nuclear Data Program to align efforts and share resources. Contributed to NSR.
 - **NSDD**: Engaged with the International Network of Nuclear Structure and Decay Data evaluators to ensure global standards and practices in nuclear data evaluation. Contributed to X4PDF.
 - **BEApR**: Communicated data issues and collaborated on data consistency checks with BEApR evaluators at Berkeley.
