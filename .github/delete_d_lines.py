@@ -7,7 +7,7 @@ Script to remove specific lines from S35_adopted.ens:
 import re
 import os
 
-def clean_s35_file(filepath):
+def delete_d_lines(filepath):
     """Remove dL and dG records from S35 adopted file"""
     
     # Read the current file
@@ -65,7 +65,7 @@ if __name__ == "__main__":
         exit(1)
     
     try:
-        removed_count = clean_s35_file(filepath)
+        removed_count = delete_d_lines(filepath)
         print(f"\nSummary: Successfully removed {removed_count} lines from S35_adopted.ens")
     except Exception as e:
         print(f"Error: {e}")

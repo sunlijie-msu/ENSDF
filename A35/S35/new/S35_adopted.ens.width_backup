@@ -92,7 +92,7 @@
  35S   L 1991.28   5  7/2-             1.03 NS   5                          A   
  35S X L XREF=CDEFHIJKLMN                                                       
  35S  cL J$L(pol d,p)=3 from 0+ and L+1/2 transfer from analyzing power.        
- 35S  cL T$from |t=1.48 ns {I7}: weighted average of |t=1.7 ns {I3} ((d,p|g),   
+ 35S  cL T$from |t=1.48 ns {I7}, weighted average of |t=1.7 ns {I3} ((d,p|g),   
  35S 2cL 2024Co04, p|g delayed coin.) and |t=1.47 ns {I7} ((d,p|g), 1971Pr11,   
  35S 3cL p|g-delayed coin.). Other: |t>4.5 ps ((d,p|g), 1970Bu18, DSAM).        
  35S   G 1991.26   5  100       M2+E3    +0.17   6                              
@@ -104,19 +104,21 @@
  35S 3cG with the J|p=7/2-.                                                     
  35S   L 2347.789  18 3/2-             0.78 PS   12                             
  35S X L XREF=BCDFHIJLN                                                         
- 35S  cL T$from |t=1.12 ps {I18}: weighted average of |t=1.3 ps {I2}            
+ 35S  cL T$from |t=1.12 ps {I18}, weighted average of |t=1.3 ps {I2}            
  35S 2cL (({+34}S,p|g) (1973Wa10, DSAM), |t=0.8 ps {I2} ((d,p|g), 1970Bu18,     
  35S 3cL DSAM), and |t=1.22 ps {I18} ((d,p|g), 1972Fr11, DSAM).                 
  35S  cL J$L=1 from 0+ in (pol d,p), (d,p), and {+9}Be({+36}S,{+35}S|g) and     
  35S 2cL L+1/2 transfer from analyzing power.                                   
  35S   G 356.66    9 0.084   LT [E2]                                        &   
  35S   G 775.398   6 35.3    27 D                                               
+ 35S B G BE1W=0.00044 8$BM2W=0.3 +27-3                                          
  35S  cG E$from (n,|g) E=thermal. Others: 778 {I2} from {+9}Be({+36}S,{+35}S|g) 
  35S 2cG and 775.4 {I4} from ({+14}N,3p|g)                                      
  35S  cG RI$weighted average of 37 {I5} from ({+14}N,3p|g), 35 {I4} from (n,|g) 
  35S 2cG E=thermal, 37.0 {I28} from (d,p|g), and 33.3 {I27} from (d,|a)         
  35S  cG M$from ({+14}N,3p|g)                                                   
  35S   G 2347.700  19 100.0  27 (E1)                                            
+ 35S B G BE1W=4.1E-5 8$BM2W=2.5 22                                              
  35S  cG E$weighted average of 2352 {I2} from {+9}Be({+36}S,{+35}S|g), 2347.8   
  35S 2cG {I3} from ({+14}N,3p|g), 2347.700 {I15} from (n,|g) E=thermal, and 2347
  35S 3cG {I2} from {+208}Pb({+36}S,{+35}S|g)                                    
@@ -577,21 +579,21 @@
  35S   G 4268.65   14 0.61   7                                                  
  35S   G 4638.14   14 100    9                                                  
  35S   G 6985.7    10 0.064  14                                                 
- 35S   L 7018.89   4                                                            
+ 35S   L 7018.89   4                   0.025 EV  1                              
  35S X L XREF=GH                                                                
  35S  cL E$from (n,n). Other: 7021 {I10} from (d,p)                             
- 35S   L 7072.66   5                                                            
+ 35S   L 7072.66   5                   0.14 EV   4                              
  35S X L XREF=G                                                                 
- 35S   L 7074.33   6                                                            
+ 35S   L 7074.33   6                   0.084 EV  3                              
  35S X L XREF=G                                                                 
- 35S   L 7097.72   30                                                           
+ 35S   L 7097.72   30                  0.009 EV  3                              
  35S X L XREF=GH(7150*)K(7151*)                                                 
- 35S   L 7099.85   20                                                           
+ 35S   L 7099.85   20                  0.033 EV  5                              
  35S X L XREF=GH(7150*)K(7151*)                                                 
  35S   L 7100.73   4  3/2                                                       
  35S X L XREF=G                                                                 
  35S  cL J$ R-Matrix analysis of resonances in (n,n).                           
- 35S   L 7143.27   11                                                           
+ 35S   L 7143.27   11                  0.42 EV   1                              
  35S X L XREF=GH(7150*)K(7151*)                                                 
  35S   L 7179.8    3  15/2+            3.1 PS    12                         B   
  35S X L XREF=DE                                                                
@@ -604,20 +606,20 @@
  35S  cG RI,M$from ({+14}N,3p|g)                                                
  35S   L 7210.42   5                                                            
  35S X L XREF=GH(7205*)                                                         
- 35S   L 7218.0    4                                                            
+ 35S   L 7218.0    4                   0.33 EV   2                              
  35S X L XREF=GH(7205*)                                                         
- 35S   L 7234.0    5                                                            
+ 35S   L 7234.0    5                   0.19 EV   1                              
  35S X L XREF=GH(7205*)                                                         
- 35S   L 7239.8    6                                                            
+ 35S   L 7239.8    6                   0.06 EV   2                              
  35S X L XREF=GH(7205*)                                                         
- 35S   L 7253.2    6                                                            
+ 35S   L 7253.2    6                   0.35 EV   2                              
  35S X L XREF=GH(7205*)                                                         
  35S   L 7275.93   5  1/2+                                                      
  35S X L XREF=G                                                                 
  35S  cL J$ L(n,n)=0.                                                           
  35S   L 7279                                                                   
  35S X L XREF=G(?)                                                              
- 35S   L 7289.8    8                                                            
+ 35S   L 7289.8    8                   0.31 EV   3                              
  35S X L XREF=G                                                                 
  35S   L 7294.19   6  3/2-                                                      
  35S X L XREF=G                                                                 
@@ -627,24 +629,24 @@
  35S  cL J$ L(n,n)=0.                                                           
  35S   L 7338.18   20                                                           
  35S X L XREF=G                                                                 
- 35S   L 7343.91   20                                                           
+ 35S   L 7343.91   20                  0.72 EV   3                              
  35S X L XREF=G                                                                 
- 35S   L 7347.2    5                                                            
+ 35S   L 7347.2    5                   0.44 EV   6                              
  35S X L XREF=G                                                                 
- 35S   L 7347.9    5                                                            
+ 35S   L 7347.9    5                   0.30 EV   5                              
  35S X L XREF=G                                                                 
- 35S   L 7353.9    5                                                            
+ 35S   L 7353.9    5                   0.44 EV   4                              
  35S X L XREF=GK(7375*)                                                         
- 35S   L 7357.6    5                                                            
+ 35S   L 7357.6    5                   0.16 EV   4                              
  35S X L XREF=GK(7375*)                                                         
  35S   L 7370.56   6  1/2-                                                      
  35S X L XREF=GK(7375*)                                                         
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n).              
  35S   L 7375      10                                                           
  35S X L XREF=G(?)K(7375*)                                                      
- 35S   L 7396.0    6                                                            
+ 35S   L 7396.0    6                   0.44 EV   33                             
  35S X L XREF=GK(7375*)                                                         
- 35S   L 7404.6    6                                                            
+ 35S   L 7404.6    6                   0.21 EV   5                              
  35S X L XREF=G                                                                 
  35S   L 7408.68   11 3/2-                                                      
  35S X L XREF=G                                                                 
@@ -653,7 +655,7 @@
  35S X L XREF=G                                                                 
  35S   L 7416.50   4                                                            
  35S X L XREF=G                                                                 
- 35S   L 7429.1    6                                                            
+ 35S   L 7429.1    6                   0.12 EV   3                              
  35S X L XREF=G                                                                 
  35S   L 7433.56   5                                                            
  35S X L XREF=G                                                                 
@@ -662,29 +664,29 @@
  35S   L 7442.14   5  1/2+                                                      
  35S X L XREF=G                                                                 
  35S  cL J$ L(n,n)=0.                                                           
- 35S   L 7462.2    6                                                            
+ 35S   L 7462.2    6                   0.33 EV   4                              
  35S X L XREF=G                                                                 
  35S   L 7481.15   7  1/2-                                                      
  35S X L XREF=GH                                                                
  35S  cL E$weighted average of 7481.15 {I6} from (n,n) and 7482.7 {I13} from    
  35S 2cL (d,p)                                                                  
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n).              
- 35S   L 7494.5    6                                                            
+ 35S   L 7494.5    6                   0.17 EV   4                              
  35S X L XREF=G                                                                 
- 35S   L 7542.3    6                                                            
+ 35S   L 7542.3    6                   0.21 EV   3                              
  35S X L XREF=GH(7570*)                                                         
- 35S   L 7604.0    6                                                            
+ 35S   L 7604.0    6                   0.90 EV   8                              
  35S X L XREF=GH(7570*)                                                         
  35S   L 7609.26   5  3/2-                                                      
  35S X L XREF=G                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n).              
- 35S   L 7648.9    6                                                            
+ 35S   L 7648.9    6                   0.21 EV   3                              
  35S X L XREF=GH(7640*)                                                         
- 35S   L 7655.7    6                                                            
+ 35S   L 7655.7    6                   0.80 EV   5                              
  35S X L XREF=GH(7640*)                                                         
  35S   L 7663.91   11                                                           
  35S X L XREF=GH(7640*)                                                         
- 35S   L 7678.3    7                                                            
+ 35S   L 7678.3    7                   0.45 EV   7                              
  35S X L XREF=GH(7640*)                                                         
  35S   L 7712      10 (3/2:13/2)+                                              ?
  35S X L XREF=G(*)K(7712*)                                                      
@@ -708,20 +710,20 @@
  35S   L 7853.25   7  3/2-                                                      
  35S X L XREF=G                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n).              
- 35S   L 7861.8    12                                                           
+ 35S   L 7861.8    12                  1.13 EV   19                             
  35S X L XREF=G                                                                 
- 35S   L 7880.8    12                                                           
+ 35S   L 7880.8    12                  0.67 EV   17                             
  35S X L XREF=G                                                                 
- 35S   L 7889.0    12                                                           
+ 35S   L 7889.0    12                  0.57 EV   25                             
  35S X L XREF=G                                                                 
  35S   L 7894.63   7  3/2-                                                      
  35S X L XREF=G                                                                 
  35S  cL J$ L(n,n)=1 and R-Matrix analysis of resonances in (n,n).              
  35S   L 7899.70   30                                                           
  35S X L XREF=G                                                                 
- 35S   L 7934.1    15                                                           
+ 35S   L 7934.1    15                  0.5 EV    3                              
  35S X L XREF=G                                                                 
- 35S   L 7939.5    15                                                           
+ 35S   L 7939.5    15                  0.89 EV   4                              
  35S X L XREF=G                                                                 
  35S   L 7954.96   11 3/2-                                                      
  35S X L XREF=G                                                                 
@@ -793,8 +795,6 @@
  35S  cL J$ L(p,{+3}He)=2.                                                      
  35S   L 8755.7    13 (19/2)           1 PS      LT                             
  35S X L XREF=E                                                                 
- 35S  cL T$estimated by 2021Go09 in (18O,2ANG) from residual Doppler energy     
- 35S 2cL shifts observed for the 732|g and 1576|g peaks.                        
  35S   G 731.6     15 57     22 D                                               
  35S   G 1576.3    14 100    22                                                 
  35S   L 9155      10 (1/2:9/2)+                                                
