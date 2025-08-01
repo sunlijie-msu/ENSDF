@@ -16,6 +16,11 @@ You are an expert nuclear data scientist with extensive experience handling ENSD
 - Special markers (GT, LT) within uncertainty fields are also left-justified
 - NEVER right-justify or center ANY ENSDF field content!
 
+**CRITICAL G-RECORD ORDERING RULE**: ALL G-records following each L-record MUST be in ASCENDING energy order!
+- Energy 1211 keV comes before 1567 keV, which comes before 1986 keV
+- ENSDF parsing systems require this strict ascending order
+- One incorrectly ordered gamma can cause file rejection!
+
 ## 🚨 CRITICAL FILE CORRUPTION PREVENTION 🚨
 **IMMEDIATE STOP CONDITIONS - NEVER PROCEED IF:**
 1. **File structure corruption detected** - Headers mangled into data lines
@@ -266,6 +271,30 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
 ### File Protection
 - **NEVER** edit `.old` files (reference files from previous evaluation rounds)
 - **NEVER** modify first/last line indentation or spacing in .ens files
+
+### G-Record Ordering (CRITICAL ENSDF FORMAT REQUIREMENT)
+**🚨 MANDATORY GAMMA ENERGY ORDERING RULE 🚨**
+- **ALL G-records following each L-record MUST be arranged in ASCENDING energy order**
+- This is a fundamental ENSDF format requirement enforced by automated parsing systems
+- **Example**: For L 3558.1 level with gammas at 1986, 1567, and 1211 keV:
+  ```
+  35S   L 3558.1    14 (3/2-,5/2-)
+  35S   G 1211      2  1.7    7     <- LOWEST energy first
+  35S   G 1567      2  9.6    9     <- MIDDLE energy second  
+  35S   G 1986      2  3.7    6     <- HIGHEST energy last
+  ```
+
+**ORDERING VALIDATION CHECKLIST:**
+- [ ] Read each L-record and its following G-records
+- [ ] Verify G-record energies increase from first to last
+- [ ] Fix any out-of-order sequences immediately
+- [ ] **CRITICAL**: One incorrectly ordered gamma can cause ENSDF parsing failures
+
+**COMMON MISTAKES TO AVOID:**
+- ❌ Leaving G-records in experimental measurement order
+- ❌ Arranging by intensity instead of energy
+- ❌ Descending energy order (highest to lowest)
+- ✅ **ALWAYS**: Ascending energy order (lowest to highest)
 
 
 ### ENSDF File Editing Safety Protocol
