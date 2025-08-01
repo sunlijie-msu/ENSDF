@@ -1,7 +1,7 @@
 ---
 applyTo: "**"
 ---
-# ENSDF Nuclear Data Evaluation Instructions
+# Evaluated Nuclear Structure Data File (ENSDF) Instructions for GitHub Copilot
 You are an expert nuclear data scientist with extensive experience handling ENSDF-formatted data.
 
 ## ⚠️ CRITICAL WORKFLOW REMINDER ⚠️
@@ -31,11 +31,12 @@ You are an expert nuclear data scientist with extensive experience handling ENSD
 5. **STOP ON FIRST ERROR** - If any edit fails, STOP and seek user guidance
 
 **FORBIDDEN EDITING PATTERNS:**
+- ❌ Editing based on outdated file state
 - ❌ Bulk multi-line replacements spanning multiple L-records
 - ❌ Editing without sufficient unique context (minimum 5 lines)
 - ❌ Assuming file structure without reading current state
 - ❌ Continuing after any formatting error
-- ❌ Editing based on outdated file state
+
 
 **REQUIRED VALIDATION SEQUENCE:**
 1. Read file → 2. Identify target → 3. Single precise edit → 4. Validate structure → 5. STOP if any issues
@@ -114,9 +115,38 @@ Execute comprehensive change detection and documentation:
 
 ### "Fix format!"
 Auto-convert text to proper ENSDF notation:
-- Greek letters: `35S` → `{+35}S`, `α` → `|a`, `β` → `|b`, etc.
-- Math symbols: `×` → `|*`, `≈` → `|?`, `±` → `|+`, etc.
-- Superscripts/subscripts: Use `{+n}` and `{-n}` format
+
+### Superscripts and Subscripts
+- `{+n}` → superscript (e.g., `{+3}He` displays as ³He)
+- `{-n}` → subscript (e.g., `H{-2}O` displays as H₂O)
+- `{+-n}` → negative superscript (e.g., `10{+-4}` displays as 10⁻⁴)
+
+### Greek Letters and Mathematical Symbols
+**Greek lowercase:**
+- `|a` → α (alpha), `|b` → β (beta), `|c` → η (eta), `|d` → δ (delta)
+- `|e` → ε (varepsilon), `|f` → φ (phi), `|g` → γ (gamma), `|h` → χ (chi)
+- `|i` → ι (iota), `|j` → ε (epsilon), `|k` → κ (kappa), `|l` → λ (lambda)
+- `|m` → μ (mu), `|n` → ν (nu), `|p` → π (pi), `|q` → θ (theta)
+- `|r` → ρ (rho), `|s` → σ (sigma), `|t` → τ (tau), `|u` → υ (upsilon)
+- `|w` → ω (omega), `|x` → ξ (xi), `|y` → ψ (psi), `|z` → ζ (zeta)
+
+**Greek uppercase:**
+- `|D` → Δ (Delta), `|F` → Φ (Phi), `|G` → Γ (Gamma), `|L` → Λ (Lambda)
+- `|P` → Π (Pi), `|Q` → Θ (Theta), `|S` → Σ (Sigma), `|U` → Υ (Upsilon)
+- `|W` → Ω (Omega), `|X` → Ξ (Xi), `|Y` → Ψ (Psi)
+
+**Mathematical symbols:**
+- `|*` → × (times), `|?` → ≈ (approx), `|<` → ≤ (leq), `|>` → ≥ (geq)
+- `|'` → ° (degree), `|+` → ± (plus-minus), `|-` → ∓ (minus-plus)
+- `|=` → ≠ (not equal), `|@` → ∞ (infinity), `|^` → ↑ (up arrow)
+- `|_` → ↓ (down arrow), `|&` → ≡ (equiv), `|(` → ← (left arrow)
+- `|)` → → (right arrow), `|.` → ∝ (proportional), `||` → | (vertical bar)
+
+**Important Rules:**
+- For approximate values, use `|?` (which gives both ≈ and ~ symbols)
+- Standalone `~` is NOT allowed for approximate values in ENSDF
+
+**NEVER modify XREF lists** during format fixes! XREF entries (lines with pattern `NUCID X`) have their own specific formatting rules and should be left unchanged. Only apply format fixes to comment text and other non-XREF content.
 
 ### "Convert ENSDF to PDF"
 Natural language request processing for ENSDF-to-PDF conversion using the enhanced `ens2pdf.py` script:
@@ -172,7 +202,7 @@ Example: 35P   L 1572.0    1  1/2+             2.29 PS  14        2        1.23 
 
 | Field | Columns | Required | Description |
 |-------|---------|----------|-------------|
-| NUCID | 1-5 | ✓ | Nucleus (e.g., "35P  ") |
+| NUCID | 1-5 | ✓ | Nucleus (e.g., "35P  " or "35Cl ") |
 | CONT | 6 | | Continuation flag |
 | BLANK | 7 | ✓ | Must be blank |
 | TYPE | 8 | ✓ | "L" |
@@ -197,7 +227,7 @@ Example: 35P   G 1572.0    1  100.0  4   [E2]     1.23   0.45  0.0368 8   1.23  
 
 | Field | Columns | Required | Description |
 |-------|---------|----------|-------------|
-| NUCID | 1-5 | ✓ | Nucleus (e.g., "35P  ") |
+| NUCID | 1-5 | ✓ | Nucleus (e.g., "35P  " or "35Cl ") |
 | CONT | 6 | | Continuation flag |
 | BLANK | 7 | ✓ | Must be blank |
 | TYPE | 8 | ✓ | "G" |
@@ -236,8 +266,7 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
 ### File Protection
 - **NEVER** edit `.old` files (reference files from previous evaluation rounds)
 - **NEVER** modify first/last line indentation or spacing in .ens files
-- **ALWAYS** preserve "PN" line with its numeric value
-- Make all edits between first and last line boundaries only
+
 
 ### ENSDF File Editing Safety Protocol
 **BEFORE ANY EDIT - MANDATORY CHECKS:**
@@ -457,21 +486,36 @@ Completion of comprehensive ENSDF column calibration tooling and systematic impr
 ## Project Structure
 
 ### Core Files (Most Critical)
-- `finished/[Element]/new/*.ens` - Primary ENSDF source files
+- `A35/[Element]35/new/*.ens` - Primary ENSDF source files (active evaluation)
+- `A34/[Element]34/new/*.ens` - A=34 ENSDF source files
+- `A60/[Element]60/new/*.ens` - A=60 ENSDF source files
 - `.github/change.log` - Comprehensive change tracking
 
 ### Generated Files (Expected to Change)
-- `finished/[Element]/pdf/*.pdf` - Generated from .ens files
-- `finished/[Element]/temp/*.*` - Analysis tool artifacts
+- `A35/[Element]35/pdf/*.pdf` - Generated PDFs from .ens files
+- `A35/[Element]35/temp/*.*` - Analysis tool artifacts
+- `D:/X/ND/Files/*.pdf` - PDF output directory for ens2pdf.py
 
-### Tools
-- `ens2pdf.py` - Python script for automated ENSDF to PDF conversion
+### Tools and Scripts
+- `.github/ens2pdf.py` - Enhanced Python script for automated ENSDF to PDF conversion
 - `.github/column-calibrate.ps1` - PowerShell column validator
-- `.github/column_calibrate.py` - Python column validator
+- `.github/column_calibrate.py` - Python column validator with 80-column support
 - `.github/check_averages.py` - Average calculation validator
+- `.github/image_data_extraction.prompt.md` - Image data extraction guidelines
 
 ### Reference Files (NEVER EDIT)
-- `*.old` files - Previous evaluation rounds, keep untouched
+- `A35/[Element]35/old/*.ens` - Previous evaluation rounds, keep untouched
+- `*.old` files - Reference files from previous evaluations
+
+### Documentation
+- `.github/copilot-instructions.md` - Comprehensive ENSDF evaluation guidelines
+- `README.md` - Project overview and status
+- `Weekly Effort Log.md` - Progress tracking
+- `Statistics.txt/.xlsx` - Project statistics
+
+### External Data
+- `XUNDL/` - eXperimental Unevaluated Nuclear Data List submissions
+- `A35_XUNDL.txt` - XUNDL data compilation for A=35
 
 ---
 
