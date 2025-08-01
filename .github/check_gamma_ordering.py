@@ -17,7 +17,8 @@ Usage:
 
 Examples:
     python .github/check_gamma_ordering.py S35_34s_d_pg.ens --verbose
-    python .github/check_gamma_ordering.py A35/S35/new/*.ens --summary
+    python .github/check_gamma_ordering.py "A35/S35/new/*.ens" --summary
+    python .github/check_gamma_ordering.py "A35/*/new/*adopted.ens" --summary
 
 Author: FRIB Nuclear Data Group
 Date: August 2025
@@ -25,6 +26,7 @@ Date: August 2025
 
 import sys
 import argparse
+import glob
 from pathlib import Path
 from typing import List, Dict, Tuple
 
@@ -63,17 +65,18 @@ class ENSDFGammaChecker:
         """True if line is an L-record (level record) - NOT a comment"""
         if len(line) < 9:
             return False
-        # Position 8 = 'L', position 9 = ' ', and not a comment line
+        # Position 8 = 'L', position 9 = ' ', and position 6 = ' ' (main record, not comment)
         return (line[7] == 'L' and line[8] == ' ' and 
-                (len(line) <= 6 or (line[5] == ' ' and line[6] != 'c')))
+                len(line) > 6 and line[6] == ' ')
 
     def is_gamma_record(self, line: str) -> bool:
-        """True if line is a G-record (gamma record) - NOT a comment"""
+        """True if line is a G-record (gamma record) - NOT a comment, documentation, or other types"""
         if len(line) < 9:
             return False
-        # Position 8 = 'G', position 9 = ' ', and not a comment line
-        return (line[7] == 'G' and line[8] == ' ' and 
-                (len(line) <= 6 or (line[5] == ' ' and line[6] != 'c')))
+        # Main G-record: Position 5=' ', Position 6=' ', Position 7='G', Position 8=' '
+        # This excludes: cG (pos6='c'), dG (pos6='d'), B G (pos5='B'), S G (pos5='S'), etc.
+        return (len(line) > 7 and line[5] == ' ' and line[6] == ' ' and 
+                line[7] == 'G' and line[8] == ' ')
 
     def check_file(self, filename: str) -> bool:
         """Check a single ENSDF file for gamma ordering issues"""
@@ -190,8 +193,8 @@ def main():
         epilog="""
 Examples:
   python check_gamma_ordering.py S35_34s_d_pg.ens --verbose
-  python check_gamma_ordering.py A35/S35/new/*.ens --summary
-  python check_gamma_ordering.py *.ens
+  python check_gamma_ordering.py "A35/S35/new/*.ens" --summary
+  python check_gamma_ordering.py "A35/*/new/*adopted.ens" --summary
         """
     )
     
@@ -203,17 +206,34 @@ Examples:
     
     args = parser.parse_args()
     
+    # Expand wildcards in file arguments
+    expanded_files = []
+    for file_pattern in args.files:
+        if '*' in file_pattern or '?' in file_pattern:
+            # Use glob to expand wildcards
+            matches = glob.glob(file_pattern)
+            if matches:
+                expanded_files.extend(matches)
+            else:
+                print(f"❌ Warning: No files found matching pattern: {file_pattern}")
+        else:
+            expanded_files.append(file_pattern)
+    
+    if not expanded_files:
+        print("❌ Error: No files found to process!")
+        return False
+    
     checker = ENSDFGammaChecker(verbose=args.verbose)
     
     success_count = 0
-    for filename in args.files:
+    for filename in expanded_files:
         try:
             if checker.check_file(filename):
                 success_count += 1
         except Exception as e:
             print(f"❌ Error processing {filename}: {e}")
     
-    if args.summary or len(args.files) > 1:
+    if args.summary or len(expanded_files) > 1:
         checker.print_summary()
     
     # Return non-zero exit code if issues found
