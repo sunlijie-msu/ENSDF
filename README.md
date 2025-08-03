@@ -1,7 +1,7 @@
  # Evaluated Nuclear Structure Data File (ENSDF)
 
 ## Primary Purpose
-This repository contains as the datasets being evaluated by the FRIB Nuclear Data Group. 
+This repository contains the datasets being evaluated by the FRIB Nuclear Data Group. 
 
 ## Core Components
 
