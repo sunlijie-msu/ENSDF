@@ -84,7 +84,7 @@ Addressed a FRIENDS general request on logft, B(GT) and B(F) calculations. Recei
 
 
 
-
+Domain-specific Command Triggers that invoke complex workflows
 
 Prompt tuning vs. fine tuning:
 What's the difference between prompt tuning and fine tuning? Really good way to think about it is, in fine tuning, you're actually rewiring the brain of the model, versus in prompt tuning, you're just giving the LLM better instructions. Prompt tuning helps LLMs perform better on a specific task without having to retrain the entire model, and this is done by creating something called a soft prompt. A prompt is essentially like instruction manual for how the LLM should respond to your request, instead of having to go back and retrain the entire model, like when you are fine tuning. Instead, you can give the LLM a couple of examples, and it will learn from those examples that you've given. Sometimes soft prompts can be really hard to interpret, but they are a really great way to teach an LLM how to pick up a new task relatively easily and efficiently. Fine tuning, on the other hand, is a lot more expensive because think about it like you're trying to rewire and retrain the entire brain of the machine learning model. One thing that you can't do with prompt tuning, that you can do with fine tuning, though, is that you're changing the internal parameters, like the weights and biases of the actual model itself, which is why a lot of companies now are opting to prompt tune instead of fine tune, especially if it's a small task that needs to get achieved, fine tuning is going to be a lot more expensive, because you're going to need all of that compute power to actually retrain all of the model and data.
