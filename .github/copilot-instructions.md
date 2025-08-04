@@ -189,6 +189,40 @@ Natural language request processing for ENSDF-to-PDF conversion using the enhanc
 
 **Process**: Automatically locates the specified .ens file, runs the Java conversion tool, and opens the resulting PDF
 
+### "Weekly Effort Log"
+Natural language request processing for generating comprehensive weekly effort log entries based on git commit analysis:
+
+**Example requests**:
+- "Generate weekly effort log for July 27 - August 2"
+- "Draft my weekly log entry"
+- "Help me write this week's effort log"
+- "Review my work for the weekly report"
+- "Weekly effort log for [start date] to [end date]"
+
+**Process**:
+1. **Git commit analysis**: Run `git log --oneline --since="YYYY-MM-DD" --until="YYYY-MM-DD"` to identify all work done
+The git log command is a Git command used to view the history of commits within a Git repository.
+1. **Categorize activities**:
+   - **ENSDF dataset work**: Identify which nuclides/datasets were modified
+   - **Tool development**: Detect new scripts, validation tools, automation
+   - **AI-assisted improvements**: Find workflow enhancements, formatting tools
+   - **Quality assurance**: Locate validation, checking, and error correction work
+   - **Documentation**: Identify instruction updates, protocol development
+2. **Technical innovation detection**: Look for:
+   - New validation scripts (gamma ordering, column calibration, etc.)
+   - Workflow automation tools
+   - GitHub Copilot integration enhancements
+   - Data consistency checking improvements
+3. **Generate comprehensive summary**: 
+   - List all dataset modifications with specific nuclides
+   - Detail tool development and technical innovations
+   - Highlight AI-assisted workflow improvements
+   - Include validation and quality assurance activities
+   - Reference specific file changes and their scientific impact
+4. **Format for official reporting**: Structure according to established weekly log format
+
+**Key principle**: Use git evidence to ensure no significant work is missed or understated. Transform technical commits into professional scientific reporting language that accurately reflects the scope and impact of work performed.
+
 **Script Usage**:
 ```bash
 # Convert single file by name

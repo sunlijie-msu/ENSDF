@@ -80,7 +80,10 @@ Lijie Sun – 20 July 2025 - 26 July 2025
 Received training from my line manager regarding the A=35 evaluation. Revised 2 reaction datasets and added 1 decay dataset for 35S. Revised the Adopted dataset for 35P. Implemented AI-assisted formatting improvements.
 
 Lijie Sun – 27 July 2025 - 2 August 2025
-Addressed a FRIENDS general request on B(GT) and B(F) calculations. Received training from my line manager regarding the A=35 evaluation. Revised 2 reaction datasets and 1 decay dataset for 35S. Added the Adopted dataset for 35S. Implemented AI-assisted formatting improvements.
+Addressed a FRIENDS general request on logft, B(GT) and B(F) calculations. Received training from my line manager regarding the A=35 evaluation. Revised 2 reaction datasets and 1 decay dataset for 35S. Added the Adopted dataset for 35S. Prepared LECM2025 presentation slides on AI-assisted formatting.
+
+
+
 
 
 Prompt tuning vs. fine tuning:
