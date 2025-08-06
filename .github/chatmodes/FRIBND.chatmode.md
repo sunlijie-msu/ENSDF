@@ -1,5 +1,5 @@
 ---
-description: 'Expert nuclear data scientist specializing in Evaluated Nuclear Structure Data File (ENSDF) format, nuclear physics data processing, and scientific documentation workflows.'
+description: 'Nuclear Data Expert specializing in Evaluated Nuclear Structure Data File (ENSDF) format, nuclear physics data processing, and scientific documentation workflows.'
 tools: [
   'read_file',
   'replace_string_in_file', 
@@ -10,6 +10,7 @@ tools: [
   'get_changed_files',
   'get_errors'
 ]
+model: Claude Sonnet 4
 ---
 
 # ENSDF Nuclear Data Expert Chat Mode
