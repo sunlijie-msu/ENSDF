@@ -1,5 +1,5 @@
 Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 08/01/2025)
-Generated at: Tue 08/05/2025 at 09:09:41 PM EDT                                 
+Generated at: Tue 08/05/2025 at 09:14:58 PM EDT                                 
                                                                                 
  35S     ADOPTED LEVELS, GAMMAS                                  ENSDF    202509
  35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
@@ -258,7 +258,7 @@ Generated at: Tue 08/05/2025 at 09:09:41 PM EDT
  35S 3cG 1830 {I2} from {+9}Be({+36}S,{+35}S|g)                                 
  35S  cG M,MR$from ({+14}N,3p|g).                                               
  35S   L 3885.3    4  (3/2-,5/2)                                                
- 35S X L XREF=DI(3885*)JL(*)                                                    
+ 35S X L XREF=DI(3885*)JL                                                       
  35S  cL J$ |g's to 3/2+,3/2- and 7/2-.                                         
  35S   G 464.0       30      LT                                                 
  35S   G 950         12      LT                                                 
@@ -271,16 +271,11 @@ Generated at: Tue 08/05/2025 at 09:09:41 PM EDT
  35S  cG RI$from (d,|a). Other: 100 {I14} from ({+14}N,3p|g)                    
  35S  cG E,M$from ({+14}N,3p|g).                                                
  35S   G 2312.6      16      LT                                                 
- 35S   G 3884.8      33      7                                                  
- 35S  cG RI$from (d,|a)                                                         
- 35S   L 3890.5    6  (3/2-,5/2)                                                
- 35S X L XREF=CI(3885*)L(*)                                                     
- 35S  cL J$ |g's to 3/2+,3/2- and 7/2-.                                         
- 35S   G 1542      2 89      9                                                  
- 35S  cG RI$from (d,|a)                                                         
- 35S  cG E$from {+9}Be({+36}S,{+35}S|g).                                        
- 35S   G 1898.9      100     11                                                 
  35S   G 3888.8      33      7                                                  
+ 35S  cG E,RI$from (d,|a)                                                       
+ 35S   L 3895      3  1/2+                                                      
+ 35S X L XREF=CI(3885*)                                                         
+ 35S   G 1542      2                                                            
  35S   L 4022.3    10 (3/2-:11/2-)     0.32 PS   3                          A   
  35S X L XREF=DEI(4025*)J(*)K(4027*)LMN                                         
  35S  cL T$from ({+14}N,3p|g)                                                   
