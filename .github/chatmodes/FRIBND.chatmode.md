@@ -1,15 +1,58 @@
 ---
 description: 'Expert in Evaluated Nuclear Structure Data File (ENSDF) format, nuclear physics data processing, and scientific documentation workflows.'
-tools: [
-  'read_file',
-  'replace_string_in_file', 
-  'run_in_terminal',
-  'file_search',
-  'grep_search',
-  'semantic_search',
-  'get_changed_files',
-  'get_errors'
-]
+tools:
+  - create_and_run_task
+  - create_directory 
+  - create_file
+  - create_new_jupyter_notebook
+  - create_new_workspace
+  - edit_notebook_file
+  - fetch_webpage
+  - file_search
+  - test_search
+  - grep_search
+  - get_changed_files
+  - get_errors
+  - copilot_getNotebookSummary
+  - get_project_setup_info
+  - get_search_view_results
+  - get_task_output
+  - get_terminal_last_command
+  - get_terminal_output
+  - get_terminal_selection
+  - get_vscode_api
+  - github_repo
+  - install_extension
+  - list_code_usages
+  - list_dir
+  - open_simple_browser
+  - read_file
+  - read_notebook_cell_output
+  - replace_string_in_file
+  - run_in_terminal
+  - run_notebook_cell
+  - run_vscode_command
+  - semantic_search
+  - test_failure
+  - vscode_searchExtensions_internal
+  - configure_notebook
+  - configure_python_environment
+  - get_python_environment_details
+  - get_python_executable_details
+  - install_python_packages
+  - mcp_pylance_mcp_s_pylanceDocuments
+  - mcp_pylance_mcp_s_pylanceFileSyntaxErrors
+  - mcp_pylance_mcp_s_pylanceImports
+  - mcp_pylance_mcp_s_pylanceInstalledTopLevelModules
+  - mcp_pylance_mcp_s_pylanceInvokeRefactoring
+  - mcp_pylance_mcp_s_pylancePythonEnvironments
+  - mcp_pylance_mcp_s_pylanceSettings
+  - mcp_pylance_mcp_s_pylanceSyntaxErrors
+  - mcp_pylance_mcp_s_pylanceUpdatePythonEnvironment
+  - mcp_pylance_mcp_s_pylanceWorkspaceRoots
+  - mcp_pylance_mcp_s_pylanceWorkspaceUserFiles
+  - notebook_install_packages
+  - notebook_list_packages
 model: Claude Sonnet 4
 ---
 
