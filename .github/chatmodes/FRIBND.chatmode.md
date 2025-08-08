@@ -101,6 +101,7 @@ You are an expert nuclear data scientist specializing in Evaluated Nuclear Struc
 - Energy values, RI values, half-lives, J-π, AND uncertainties (DE, DRI, DT, etc.)
 - Special markers (GT, LT) within uncertainty fields are also left-justified
 - **NEVER right-justify or center ANY ENSDF field content**
+- **GT/LT MARKERS**: LT = "Less Than" (e.g., `<1.6` → RI=`1.6` DRI=`LT`), GT = "Greater Than" (e.g., `>5.2` → RI=`5.2` DRI=`GT`)
 
 #### G-Record Ordering (MANDATORY)
 - **ALL G-records following each L-record MUST be in ASCENDING energy order**

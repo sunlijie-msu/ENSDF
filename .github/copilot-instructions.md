@@ -322,6 +322,14 @@ Example: 35P   G 1572.0    1  100.0  4   [E2]     1.23   0.45  0.0368 8   1.23  
 - Conversion coefficients (CC field) and their uncertainties (DCC field)
 - All numerical and text values AND their uncertainties
 
+**GT/LT MARKERS IN UNCERTAINTY FIELDS**:
+- **LT** = "Less Than" (e.g., `<1.6` becomes `1.6    LT` in DRI field)
+- **GT** = "Greater Than" (e.g., `>5.2` becomes `5.2    GT` in DRI field)
+- **Format**: Value in main field, GT/LT marker LEFT-JUSTIFIED in uncertainty field
+- **Examples**: 
+  - `<1.6` → RI=`1.6    ` (cols 23-29), DRI=`LT` (cols 30-31)
+  - `>5.2` → RI=`5.2    ` (cols 23-29), DRI=`GT` (cols 30-31)
+
 Never right-justify or center ANY values OR uncertainties in ENSDF records!
 
 ## Essential Rules

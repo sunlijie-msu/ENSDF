@@ -31,6 +31,11 @@ No decimal:
 0.0123(45)	0.0123 ± 0.0045
 0.0123(456)	0.0123 ± 0.0456
 
+**GT/LT Markers in ENSDF Data**:
+When extracting data with less-than (<) or greater-than (>) symbols:
+- `<1.6` should be recorded as: RI=`1.6` with uncertainty field=`LT` 
+- `>5.2` should be recorded as: RI=`5.2` with uncertainty field=`GT`
+- These markers go in the uncertainty field (columns 30-31 for RI uncertainties)
 
 Methodically and rigorously complete this extraction without introducing guesses or hallucinations. Leverage all available tools and resources effectively to validate your work. Double-check all values at least once before finalizing your response.
 Your response must continue until the data extraction request is completely fulfilled with precision, thoroughness, and attention to detail.
