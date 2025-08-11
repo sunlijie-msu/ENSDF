@@ -53,7 +53,7 @@ tools:
   - mcp_pylance_mcp_s_pylanceWorkspaceUserFiles
   - notebook_install_packages
   - notebook_list_packages
-model: Claude Sonnet 4
+<!-- model: Claude Sonnet 4 -->
 ---
 
 # ENSDF Nuclear Data Expert Chat Mode

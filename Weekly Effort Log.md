@@ -82,9 +82,11 @@ Received training from my line manager regarding the A=35 evaluation. Revised 2 
 Lijie Sun – 27 July 2025 - 2 August 2025
 Addressed a FRIENDS general request on logft, B(GT) and B(F) calculations. Received training from my line manager regarding the A=35 evaluation. Revised 2 reaction datasets and 1 decay dataset for 35S. Added the Adopted dataset for 35S. Prepared LECM2025 presentation slides on AI-assisted formatting.
 
+Lijie Sun - 3 August 2025 - 9 August 2025
+Received training from my line manager regarding the A=35 evaluation and data consistency check. Revised the Adopted dataset for 35S. Performed the 2nd data consistency check for CF10919 and XUNDL compilation for 115Sb data in 2025LiAA. Performing the data consistency check for CG11116 and XUNDL compilation for 99Nb, 103Nb, and 105Nb data in 2025LiAA. Prepared LECM2025 presentation slides on AI-assisted formatting.
 
 
-Domain-specific Command Triggers that invoke complex workflows
+
 
 Prompt tuning vs. fine tuning:
 What's the difference between prompt tuning and fine tuning? Really good way to think about it is, in fine tuning, you're actually rewiring the brain of the model, versus in prompt tuning, you're just giving the LLM better instructions. Prompt tuning helps LLMs perform better on a specific task without having to retrain the entire model, and this is done by creating something called a soft prompt. A prompt is essentially like instruction manual for how the LLM should respond to your request, instead of having to go back and retrain the entire model, like when you are fine tuning. Instead, you can give the LLM a couple of examples, and it will learn from those examples that you've given. Sometimes soft prompts can be really hard to interpret, but they are a really great way to teach an LLM how to pick up a new task relatively easily and efficiently. Fine tuning, on the other hand, is a lot more expensive because think about it like you're trying to rewire and retrain the entire brain of the machine learning model. One thing that you can't do with prompt tuning, that you can do with fine tuning, though, is that you're changing the internal parameters, like the weights and biases of the actual model itself, which is why a lot of companies now are opting to prompt tune instead of fine tune, especially if it's a small task that needs to get achieved, fine tuning is going to be a lot more expensive, because you're going to need all of that compute power to actually retrain all of the model and data.
@@ -108,11 +110,11 @@ Since 2015, the MSU Nuclear Data Center has been consistently recognized as one 
 
 #### XUNDL Compilation
 - **Period**: Since June 2025
-- **Output**: Compiled 2 datasets for 115Sb, 125Te.
+- **Output**: Compiled datasets for 115Sb, 125Te, 99Nb, 103Nb, 105Nb, 107Nb, 109Nb.
 
 #### Data Consistency Check
 - **Period**: Since June 2025
-- **Output**: Reviewed 2 PRC papers
+- **Output**: 3 rounds of reviews for 2 PRC papers.
 
 ### Technical Innovation
 Explore the use of AI agent within VS Code to streamline and automate the workflow by prompt tuning the agent to assist in data evaluation tasks. This includes automating repetitive tasks, enhancing data consistency checks, and improving overall efficiency in data processing.
