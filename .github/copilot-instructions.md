@@ -40,10 +40,12 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 - Special markers (GT, LT) within uncertainty fields are also left-justified
 - NEVER right-justify or center ANY ENSDF field content!
 
-**CRITICAL G-RECORD ORDERING RULE**: ALL G-records following each L-record MUST be in ASCENDING energy order!
+**🚨 MANDATORY ENSDF ORDERING RULES 🚨**
+1. **ALL L-records MUST be in ASCENDING energy order** (lowest to highest energy)
+2. **ALL G-records following each L-record MUST be in ASCENDING energy order**
 - Energy 1211 keV comes before 1567 keV, which comes before 1986 keV
-- ENSDF parsing systems require this strict ascending order
-- One incorrectly ordered gamma can cause file rejection!
+- ENSDF parsing systems require this strict ascending order for both levels and gammas
+- One incorrectly ordered level or gamma can cause file rejection!
 
 ## 🚨 CRITICAL FILE CORRUPTION PREVENTION 🚨
 **IMMEDIATE STOP CONDITIONS - NEVER PROCEED IF:**
@@ -281,6 +283,8 @@ Example: 35P   L 1572.0    1  1/2+             2.29 PS  14        2        1.23 
 | DS | 75-76 | | Uncertainty in S (LEFT-JUSTIFIED) |
 | C | 77 | | Comment flag |
 
+**⚠️ CRITICAL**: L-records MUST be arranged in ascending energy order throughout the file.
+
 ### G-Record Format (Gamma Transitions):
 ```
 Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
@@ -311,6 +315,8 @@ Example: 35P   G 1572.0    1  100.0  4   [E2]     1.23   0.45  0.0368 8   1.23  
 
 **Critical**: ENSDF files are parsed by automated systems requiring exact positions. One column off = data rejection.
 
+**⚠️ CRITICAL**: G-records following each L-record MUST be in ascending energy order!
+
 **UNCERTAINTY LEFT-JUSTIFICATION RULE**: ALL uncertainties (DE, DRI, DMR, DCC, DTI, DT, DS, etc.) MUST be left-justified in their respective fields, just like the values themselves. Special markers (GT, LT) within uncertainty fields are also left-justified.
 
 **LEFT-JUSTIFICATION RULE**: ALL values AND uncertainties MUST be left-justified within their respective fields. This includes:
@@ -338,10 +344,11 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
 - **NEVER** edit `.old` files (reference files from previous evaluation rounds)
 - **NEVER** modify first/last line indentation or spacing in .ens files
 
-### G-Record Ordering (CRITICAL ENSDF FORMAT REQUIREMENT)
-**🚨 MANDATORY GAMMA ENERGY ORDERING RULE 🚨**
-- **ALL G-records following each L-record MUST be arranged in ASCENDING energy order**
-- This is a fundamental ENSDF format requirement enforced by automated parsing systems
+### ENSDF Record Ordering (CRITICAL FORMAT REQUIREMENTS)
+**🚨 MANDATORY ORDERING RULES 🚨**
+1. **ALL L-records MUST be in ASCENDING energy order** - Levels arranged lowest to highest
+2. **ALL G-records following each L-record MUST be in ASCENDING energy order**
+- This is fundamental ENSDF format enforced by automated parsing systems
 - **Example**: For L 3558.1 level with gammas at 1986, 1567, and 1211 keV:
   ```
   35S   L 3558.1    14 (3/2-,5/2-)
@@ -351,16 +358,18 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
   ```
 
 **ORDERING VALIDATION CHECKLIST:**
+- [ ] Read all L-records and verify energy increases from first to last
 - [ ] Read each L-record and its following G-records
 - [ ] Verify G-record energies increase from first to last
 - [ ] Fix any out-of-order sequences immediately
-- [ ] **CRITICAL**: One incorrectly ordered gamma can cause ENSDF parsing failures
+- [ ] **CRITICAL**: One incorrectly ordered level or gamma can cause ENSDF parsing failures
 
 **COMMON MISTAKES TO AVOID:**
+- ❌ Leaving levels in measurement/experimental order instead of energy order
 - ❌ Leaving G-records in experimental measurement order
 - ❌ Arranging by intensity instead of energy
 - ❌ Descending energy order (highest to lowest)
-- ✅ **ALWAYS**: Ascending energy order (lowest to highest)
+- ✅ **ALWAYS**: Ascending energy order (lowest to highest) for both levels and gammas
 
 
 ### ENSDF File Editing Safety Protocol

@@ -65,7 +65,7 @@ You are an expert nuclear data scientist specializing in Evaluated Nuclear Struc
 
 ### Data Accuracy & Validation
 - **PRIORITIZE ENSDF 80-column format compliance above all else**
-- **Verify all numerical values and uncertainties precisely** - never approximate or guess
+- **Verify all numerical values and uncertainties precisely** - never approximate or round
 - **Implement systematic validation workflows** before any output
 - **Apply comprehensive checking at every step**
 - **Use proper nuclear notation** (`{+35}S`, `|g`, `|b`) and scientific units
@@ -103,18 +103,20 @@ You are an expert nuclear data scientist specializing in Evaluated Nuclear Struc
 - **NEVER right-justify or center ANY ENSDF field content**
 - **GT/LT MARKERS**: LT = "Less Than" (e.g., `<1.6` → RI=`1.6` DRI=`LT`), GT = "Greater Than" (e.g., `>5.2` → RI=`5.2` DRI=`GT`)
 
-#### G-Record Ordering (MANDATORY)
-- **ALL G-records following each L-record MUST be in ASCENDING energy order**
-- Energy 1211 keV comes before 1567 keV, which comes before 1986 keV
-- ENSDF parsing systems require this strict ascending order
-- One incorrectly ordered gamma can cause file rejection
+#### ENSDF Ordering Requirements (MANDATORY)
+**🚨 CRITICAL FORMAT COMPLIANCE 🚨**
+1. **ALL L-records MUST be in ASCENDING energy order** (lowest to highest)
+2. **ALL G-records following each L-record MUST be in ASCENDING energy order**
+- ENSDF parsing systems require strict ascending order for both levels and gammas
+- One incorrectly ordered level or gamma causes file rejection
+- Always verify energy ordering after any structural changes
 
 ### Command Triggers & Workflows
 
 #### "Self-Calibrate Columns"
 Execute column validation on current ENSDF file:
-- **PowerShell**: `.\column-calibrate.ps1 "currentfile.ens"` (add `-Detailed` for mapping)
 - **Python**: `python .github/column_calibrate.py "currentfile.ens"` (add `--detailed`)
+- **PowerShell**: `.\column-calibrate.ps1 "currentfile.ens"` (add `-Detailed` for mapping)
 - **Quick Header Check**: `python .github/column_calibrate.py "currentfile.ens" --header`
 
 #### "What changed?" Workflow
@@ -154,7 +156,7 @@ Process natural language requests for ENSDF-to-PDF conversion:
 
 #### Academic Standards
 - **Use PAST tense** for all references to completed studies
-- Citation format: `2023Bo17` (comments), `2023BO17` (headers)
+- Citation format: `2023Bo17` (comments), `2023BO17` (headers only)
 - Professional scientific language with precise terminology
 
 ### File Protection Rules
