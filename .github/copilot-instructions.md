@@ -35,6 +35,15 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 - This ensures ALL modified files are identified and processed
 - Missing this step = incomplete change tracking!
 
+**🚨 MANDATORY BEFORE ANY ENSDF EDITING 🚨**
+**AUTOMATIC VALIDATION SEQUENCE - NO EXCEPTIONS:**
+1. **FIRST**: `python .github/column_calibrate.py "filename"` - Verify 80-column compliance
+2. **SECOND**: `python .github/check_gamma_ordering.py "filename"` - Verify energy ordering
+3. **ONLY THEN**: Proceed with requested edits
+4. **AFTER EDITS**: Re-run both validation tools to confirm integrity
+
+**THIS IS NOT OPTIONAL - IT IS MANDATORY FOR EVERY ENSDF FILE INTERACTION**
+
 **CRITICAL FORMATTING RULE**: ALL ENSDF values AND uncertainties MUST be LEFT-JUSTIFIED in their fields!
 - Energy values, RI values, half-lives, J-π, AND their uncertainties (DE, DRI, DT, etc.)
 - Special markers (GT, LT) within uncertainty fields are also left-justified
@@ -79,6 +88,7 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 
 ## 🎯 80-Column Alignment Debugging Protocol
 **TRIGGER PHRASES**: "not aligned", "wrong columns", "header formatting", "80 characters"
+**ALSO TRIGGERED**: **ANY ENSDF FILE INTERACTION** - This is MANDATORY, not optional!
 
 **IMMEDIATE RESPONSE**:
 1. Run `python .github/column_calibrate.py "filename" --header` 
@@ -92,6 +102,7 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
    - Cols 66-74: PUB
    - Cols 75-80: DATE
 
+**⚠️ CRITICAL RULE**: Never work on ENSDF files without running column validation first!
 **Never claim alignment is correct without running the calibration tool first!**
 
 ## Command Triggers
@@ -123,6 +134,15 @@ print('Length:', len(header))
 2. Compare with working reference files
 3. Use the visual ruler technique to spot misalignments
 4. Check ENSDF manual field positions (1-5, 6-9, 10-39, 40-65, 66-74, 75-80)
+
+### "Check energy ordering"
+**CRITICAL VALIDATION**: Verify ENSDF energy ordering compliance:
+- **Single file**: `python .github/check_gamma_ordering.py "filename.ens"`
+- **Multiple files**: `python .github/check_gamma_ordering.py "A35/K35/new/*.ens" --summary`
+- **Verbose output**: Add `--verbose` flag for detailed checking process
+- **Summary only**: Add `--summary` flag for overview without file details
+
+**ENSDF Requirements**: ALL L-records in ascending energy order, ALL G-records within each level in ascending energy order. One incorrectly ordered record causes file rejection by ENSDF parsing systems.
 
 ### "What changed?"
 **MANDATORY FIRST STEP**: Always run `git status` to identify ALL modified files.
@@ -374,10 +394,15 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
 
 ### ENSDF File Editing Safety Protocol
 **BEFORE ANY EDIT - MANDATORY CHECKS:**
-1. **Read current file state** - Never assume file structure
-2. **Identify target line uniquely** - Must have 5+ lines of unique context
-3. **Single field modification only** - Never edit multiple fields at once
-4. **Validate column positions** - Check field boundaries before editing
+1. **MANDATORY VALIDATION FIRST**: Run `python .github/column_calibrate.py "filename"` - NEVER skip this!
+2. **MANDATORY ORDERING CHECK**: Run `python .github/check_gamma_ordering.py "filename"` - NEVER skip this!
+3. **Read current file state** - Never assume file structure
+4. **Identify target line uniquely** - Must have 5+ lines of unique context
+5. **Single field modification only** - Never edit multiple fields at once
+6. **Validate column positions** - Check field boundaries before editing
+7. **POST-EDIT VALIDATION**: Re-run both validation tools after any changes
+
+**⚠️ CRITICAL**: If either validation tool shows issues, STOP and fix them before proceeding with edits!
 
 **EDITING METHODOLOGY:**
 1. **ONE EDIT AT A TIME** - Never batch multiple field changes
@@ -604,6 +629,7 @@ Completion of comprehensive ENSDF column calibration tooling and systematic impr
 - `.github/ens2pdf.py` - Enhanced Python script for automated ENSDF to PDF conversion
 - `.github/column-calibrate.ps1` - PowerShell column validator
 - `.github/column_calibrate.py` - Python column validator with 80-column support
+- `.github/check_gamma_ordering.py` - ENSDF energy ordering validator for levels and gamma transitions
 - `.github/check_averages.py` - Average calculation validator
 - `.github/image_data_extraction.prompt.md` - Image data extraction guidelines
 
