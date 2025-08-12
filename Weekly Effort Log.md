@@ -85,6 +85,8 @@ Addressed a FRIENDS general request on logft, B(GT) and B(F) calculations. Recei
 Lijie Sun - 3 August 2025 - 9 August 2025
 Received training from my line manager regarding the A=35 evaluation and data consistency check. Revised the Adopted dataset for 35S. Performed the 2nd data consistency check for CF10919 and XUNDL compilation for 115Sb data in 2025LiAA. Performing the data consistency check for CG11116 and XUNDL compilation for 99Nb, 103Nb, and 105Nb data in 2025AbAA. Prepared LECM2025 presentation slides on AI-assisted formatting.
 
+Lijie Sun - 10 August 2025 - 16 August 2025
+Received training from my line manager regarding the A=35 evaluation and data consistency check. Performed the  data consistency check for CG11116 and XUNDL compilation for 99Nb, 105Nb, 107Nb, and 109Nb data in 2025AbAA. Gave a presentation on AI-assisted ENSDF formatting at LECM2025.
 
 
 
