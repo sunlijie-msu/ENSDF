@@ -88,8 +88,6 @@ Received training from my line manager regarding the A=35 evaluation and data co
 
 
 
-Prompt tuning vs. fine tuning:
-What's the difference between prompt tuning and fine tuning? Really good way to think about it is, in fine tuning, you're actually rewiring the brain of the model, versus in prompt tuning, you're just giving the LLM better instructions. Prompt tuning helps LLMs perform better on a specific task without having to retrain the entire model, and this is done by creating something called a soft prompt. A prompt is essentially like instruction manual for how the LLM should respond to your request, instead of having to go back and retrain the entire model, like when you are fine tuning. Instead, you can give the LLM a couple of examples, and it will learn from those examples that you've given. Sometimes soft prompts can be really hard to interpret, but they are a really great way to teach an LLM how to pick up a new task relatively easily and efficiently. Fine tuning, on the other hand, is a lot more expensive because think about it like you're trying to rewire and retrain the entire brain of the machine learning model. One thing that you can't do with prompt tuning, that you can do with fine tuning, though, is that you're changing the internal parameters, like the weights and biases of the actual model itself, which is why a lot of companies now are opting to prompt tune instead of fine tune, especially if it's a small task that needs to get achieved, fine tuning is going to be a lot more expensive, because you're going to need all of that compute power to actually retrain all of the model and data.
 
 # FRIB Laboratory Activities
 
@@ -104,9 +102,9 @@ Since 2015, the MSU Nuclear Data Center has been consistently recognized as one 
 ## Responsibilities and Duties
 
 #### ENSDF Evaluation
-- **Period**: Mar 2025 - Sep 2025
+- **Period**: Mar 2025 - Oct 2025
 - **Scope**: 11 nuclides (<sup>35</sup>Ne, <sup>35</sup>Na, <sup>35</sup>Mg, <sup>35</sup>Al, <sup>35</sup>Si, <sup>35</sup>P, <sup>35</sup>S, <sup>35</sup>Cl, <sup>35</sup>Ar, <sup>35</sup>K, <sup>35</sup>Ca)
-- **Output**: 80 datasets
+- **Output**: 83 datasets
 
 #### XUNDL Compilation
 - **Period**: Since June 2025
@@ -114,7 +112,7 @@ Since 2015, the MSU Nuclear Data Center has been consistently recognized as one 
 
 #### Data Consistency Check
 - **Period**: Since June 2025
-- **Output**: 3 rounds of reviews for 2 PRC papers.
+- **Output**: 4 rounds of reviews for 3 PRC papers.
 
 ### Technical Innovation
 Explore the use of AI agent within VS Code to streamline and automate the workflow by prompt tuning the agent to assist in data evaluation tasks. This includes automating repetitive tasks, enhancing data consistency checks, and improving overall efficiency in data processing.
@@ -133,13 +131,6 @@ Column calibration tool for ENSDF 80-column formatting
 - **NSDD**: Engaged with the International Network of Nuclear Structure and Decay Data evaluators to ensure global standards and practices in nuclear data evaluation. Contributed to X4PDF.
 - **BEApR**: Communicated data issues and collaborated on data consistency checks with BEApR evaluators at Berkeley.
 
-Draft for FRIB Greensheet - May 2026
-FRIB will host the 26th International Network of Nuclear Structure and Decay Data Evaluators (NSDD) meeting from April 15-19, 2026, bringing together nuclear data scientists from around the world. NSDD is a long-running collaborative network that has been convened at sites across the globe and focuses on advances in nuclear structure and decay data evaluation, standardization, and dissemination. FRIB's selection as host reflects our strong contributions to the nuclear data community and global recognition in nuclear structure evaluation. Thank you to everyone who helped make the 26th NSDD meeting a success.
 
-This meeting marks a milestone in the history of the NSDD network, as it was exactly 50 years ago, at a Specialists' Meeting on Nuclear Data for Applications, IAEA, Vienna, 29 April - 3 May 1974 (INDC(NDS)-060), where expert groups on compilation and evaluation of nuclear structure and decay data from all over the world convened to "extend international cooperation in nuclear structure and decay data to meet the growing needs of the basic and applied sciences community for complete and up-to-date recommended nuclear structure and decay data."
-
-The final recommendation of the meeting was:"to extend the existing compilation and evaluation efforts and co-operative links to an efficient and coherent network of international co-operation in order to improve the services to the users. This system should be based on the free international exchange of experimental as well as evaluated nuclear data."
-
-We are not talking about AI robots that don't require humans. Instead, we're talking about the Iron Man suit, which needs a human and enhances their abilities. The conversation has shifted from whether we should use AI to how we can use AI most effectively. This is the focus we need to have.
 
 Less typing; more thinking.
