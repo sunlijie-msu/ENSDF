@@ -1,16 +1,21 @@
 Java program for checking keynumbers (update 03/12/2025): error report
-Input file: D:\X\ND\Files\dummy_merged.ens
-Generated at: Wed 07/30/2025 at 07:15:58 PM EDT
+Input file: D:\X\ND\ENSDF\A35\S35\new\S35_adopted.ens
+Generated at: Mon 08/18/2025 at 02:52:42 PM EDT
 
 
 
 *** In dataset:  35S : ADOPTED LEVELS, GAMMAS
 
---- Line 64: ------------------------------- line#=64   in  35S : ADOPTED LEVELS, GAMMAS
+--- Line 64: ------------------------------- 
+   2018Py01  : <W> probably irrelevant. Check if typo.
+                   #title=Year-2017 nuclear quadrupole moments
+             Also in: Line 68: 2018Py01
+
+--- Line 74: ------------------------------- 
    1947Hu06  : <W> probably irrelevant. Check if typo.
                    #title=Formation and Properties of Radioactive Lithium
 
---- Line 65: ------------------------------- line#=65   in  35S : ADOPTED LEVELS, GAMMAS
+--- Line 76: ------------------------------- 
    1959Ca12  : <W> probably irrelevant. Check if typo.
                    #title=Direct Determination of the Half-Lives of Nine Nuclides
                    similar keynumber(s) nearby: 1949Co12
@@ -20,7 +25,8 @@ Generated at: Wed 07/30/2025 at 07:15:58 PM EDT
 
 --------------------------------------------------------------------------------
 Keynumbers that are probably irrelevant to the nuclides in input files:
-(probably due to mistyping if so): total number=2
+(probably due to mistyping if so): total number=3
 
 1947Hu06:  35S   title= Formation and Properties of Radioactive Lithium
 1959Ca12:  35S   title= Direct Determination of the Half-Lives of Nine Nuclides
+2018Py01:  35S   title= Year-2017 nuclear quadrupole moments

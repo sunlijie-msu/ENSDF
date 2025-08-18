@@ -1,0 +1,2638 @@
+Java RULER 06/10/2025 calculation report        generated at: Mon 08/18/2025 at 02:52:42 PM EDT
+
+   input file : D:\X\ND\ENSDF\A35\S35\new\S35_adopted.ens
+   output dir : D:\X\ND\Files
+   output file: D:\X\ND\Files\Java_ruler.out
+   report file: D:\X\ND\Files\Java_ruler.rpt
+
+   Calculation settings:
+     * relative uncertainty limit=10% for normal error propagation (Taylor expansion)
+          If any of the variables, E, T1/2, MR-factor and RI, has relative uncertainty
+          greater than this limit, this method is considered invalid.
+     * use input CC in dataset, unless otherwise noted
+     * DCC theory=1.4% assumed if DCC not given
+
+     assumptions for non-numerical uncertainties in RI:
+        DRI                assumed %DRI        
+        -----------        ------------        
+        Empty              20
+        LT or LE           50 for DRI(+); assumed RI=DRI(-)=%(100-this value)
+        GT or GE           100000000 for DRI(+); assumed DRI(-)=0
+        AP                 50
+        CA                 50
+        SY                 50
+        (same for MR and CC except for empty DCC where theory DCC assumed)
+        If MR not given, each component is calculated as pure for MULT=M1+E2 or M1,E2
+
+    ----------------------------------------------------------------------
+     Uncertainties of BXLW will be adopted from the Monte-Carlo method
+        (Number of sample points=10000)
+     unless otherwise specified (for values as limits) in the report file.
+    ----------------------------------------------------------------------
+
+number of data blocks=1
+
+Checking if BrIccs exists and works...
+BrIccs=<BrIccS.exe> is working ok.
+
+********************Dataset=<35S: ADOPTED LEVELS, GAMMAS>*******************************************
+
+----------------------------------------------------------------------------------------------------
+ 35S   L 1572.378  19 1/2+             2.29 PS   14                             
+ 35S   G 1572.327  12 100       (M1)                                            
+   
+--->gamma#1-1: EG=1572.327 12  BR(%g)=100  BR(%g+%ce)=100  Mult=(M1)  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.62628E-16 4       5.66485E-15 13   
+          2     6.8005E-04        1.7655E-01         2     8.6593E-12  3       3.01682E-10 12   
+          3     7.2765E-05        1.8890E-02         3     7.0268E-7   4       2.44786E-5  13   
+          4     8.2380E-06        2.1389E-03         4     0.084472    6       2.94238     20   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=1572.378
+   EG=1572.327 12  BR(%g)=100  BR(%g+%ce)=100  Mult=(M1)  CC=0 (=ti/ri-1)
+   T1/2(g)=2.29E-12 14 (sec)   T1/2(g+ce)=2.29E-12 14 (sec)
+    BM1(UP)=0.002215 136            BM1(DOWN)=0.004431 271          BM1W=0.002474 151 (RUL=10)  (symmetrized)
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=1572.378
+   EG=1572.327 12  BR(%g)=100  BR(%g+%ce)=100  Mult=(M1)  CC=0 (=ti/ri-1)
+   T1/2(g)=2.29E-12 14 (sec)   T1/2(g+ce)=2.29E-12 14 (sec)
+    BM1(UP)=0.002215 +144-128       BM1(DOWN)=0.004431 +289-256     BM1W=0.002474 +161-143 (RUL=10)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=1572.378
+   EG=1572.327 12  BR(%g)=100  BR(%g+%ce)=100  Mult=(M1)  CC=0 (=ti/ri-1)
+   T1/2(g)=2.29E-12 14 (sec)   T1/2(g+ce)=2.29E-12 14 (sec)
+    BM1(UP)=0.002215 +143-130       BM1(DOWN)=0.004431 +286-260     BM1W=0.002474 +160-145 (RUL=10)
+    BM1(UP)=0.002214 +144-129       BM1(DOWN)=0.004428 +288-257     BM1W=0.002472 +161-144 (RUL=10) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BM1W=0.00248 15 
+     BM1UP=0.00222 14 
+     BM1DOWN=0.00443 +26-23 
+  
+**** new line:  35S B G BM1W=0.00248 15                                                        
+
+----------------------------------------------------------------------------------------------------
+ 35S   L 1991.28   5  7/2-             1.03 NS   5                          A   
+ 35S   G 1991.26   5  100       M2+E3    +0.17   6                              
+   
+--->gamma#1-1: EG=1991.26 5  BR(%g)=100  BR(%g+%ce)=100  Mult=M2+E3  MR=+0.17 6  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     8.0065E-17  6       2.78890E-15 21   
+          2     6.8005E-04        1.7655E-01         2     2.6580E-12  3       9.2603E-11  12   
+          3     7.2765E-05        1.8890E-02         3     1.34481E-7  24      4.6848E-6   8    
+          4     8.2380E-06        2.1389E-03         4     0.0100797   23      0.35110     8    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=1991.28
+   EG=1991.26 5  BR(%g)=100  BR(%g+%ce)=100  Mult=M2+E3  MR=+0.17 6  CC=0 (=ti/ri-1)
+   T1/2(g)=1.030E-9 50 (sec)   T1/2(g+ce)=1.030E-9 50 (sec)
+    BM2(UP)=0.03085 162             BM2(DOWN)=0.01543 81            BM2W=0.08738 458 (RUL=3)
+    BE3(UP)=5.34E-4 367             BE3(DOWN)=2.67E-4 184           BE3W=3.67 252 (RUL=100)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    MR:  35.3%     MR_factor(L+1):  68.6%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=1991.28
+   EG=1991.26 5  BR(%g)=100  BR(%g+%ce)=100  Mult=M2+E3  MR=+0.17 6  CC=0 (=ti/ri-1)
+   T1/2(g)=1.030E-9 50 (sec)   T1/2(g+ce)=1.030E-9 50 (sec)
+    BM2(UP)=0.03085 +212-210        BM2(DOWN)=0.01543 106           BM2W=0.0874 60 (RUL=3)  (symmetrized)
+    BE3(UP)=5.34E-4 +470-317        BE3(DOWN)=2.67E-4 +235-159      BE3W=3.67 +323-218 (RUL=100)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=1991.28
+   EG=1991.26 5  BR(%g)=100  BR(%g+%ce)=100  Mult=M2+E3  MR=+0.17 6  CC=0 (=ti/ri-1)
+   T1/2(g)=1.030E-9 50 (sec)   T1/2(g+ce)=1.030E-9 50 (sec)
+    BM2(UP)=0.03085 +160-165        BM2(DOWN)=0.01543 +80-83        BM2W=0.08738 +453-467 (RUL=3)
+            0.03082 163                       0.01541 81                 0.08729 460  (symmetrized)
+    BM2(UP)=0.03077 +168-157        BM2(DOWN)=0.01539 +84-79        BM2W=0.08715 +476-444 (RUL=3) (Median)
+            0.03085 163                       0.01542 81                 0.08736 460  (symmetrized)
+    BE3(UP)=5.34E-4 +420-314        BE3(DOWN)=2.67E-4 +210-157      BE3W=3.67 +289-216 (RUL=100)
+    BE3(UP)=5.27E-4 +427-308        BE3(DOWN)=2.64E-4 +213-154      BE3W=3.62 +293-211 (RUL=100) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BM2W=0.0874 +45-47 $BE3W=3.7 +29-22 
+     BM2UP=0.0308 16 $BE3UP=5.3E-4 +42-32 
+     BM2DOWN=0.01542 29 $BE3DOWN=2.66853E-4 +31-23 
+  
+**** new line:  35S B G BM2W=0.0874 +45-47 $BE3W=3.7 +29-22                                    
+  symmetrized:  35S B G BM2W=0.0873 46 $BE3W=4.1 25                                            
+
+----------------------------------------------------------------------------------------------------
+ 35S   L 2347.789  18 3/2-             0.78 PS   12                             
+ 35S   G 356.66    9 0.084   LT [E2]                                        &   
+ 35S   G 775.398   6 35.3    27 (E1)                                            
+ 35S   G 2347.700  19 100.0  27 (E1)                                            
+   
+--->gamma#3-1: EG=356.66 9  BR(%g)=0.031 +34-31  BR(%g+%ce)=0.031 +34-31  Mult=[E2]  CC=0 (=ti/ri-1)
+               original RI=0.084 LT    assumed 0<RI<0.0840 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.3934E-14  11      4.854E-13   4    
+          2     6.8005E-04        1.7655E-01         2     1.4419E-8   18      5.023E-7    6    
+          3     7.2765E-05        1.8890E-02         3     0.02274     4       0.7922      14   
+          4     8.2380E-06        2.1389E-03         4     5.313E4     12      1.851E6     4    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=2347.789
+   EG=356.66 9  BR(%g)=0.031 31  BR(%g+%ce)=0.031 31  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=2.5E-9 25 (sec)   T1/2(g+ce)=2.5E-9 25 (sec)
+    BE2(UP)=0.00195 +198-195        BE2(DOWN)=0.00390 +395-390      BE2W=5.7 +58-57 (RUL=100)
+            0.00197 196                       0.00393 393                5.8 58  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  15.4%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=2347.789
+   EG=356.66 9  BR(%g)=0.031 +34-31  BR(%g+%ce)=0.031 +34-31  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g) GT 1.02E-9 (sec)   T1/2(g+ce) GT 1.02E-9 (sec)
+    BE2(UP)=0.00195 +286-195        BE2(DOWN)=0.0039 +57-39         BE2W=5.7 +84-57 (RUL=100)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=2347.789
+   EG=356.66 9  BR(%g)=0.031 31  BR(%g+%ce)=0.031 +29-31  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g) GT 1.25E-9 (sec)   T1/2(g+ce) GT 9.08E-10 (sec)
+    BE2(UP)=0.00195 +0-195          BE2(DOWN)=0.00390 +0-390        0<BE2W<5.74 (RUL=100)
+      (BR is limit. Monte-Carlo approach is not suitable.)
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+   (limit value is suppressed in the new output file)
+**** new line:  35S B G BE2W LT 14                                                             
+   
+--->gamma#3-2: EG=775.398 6  BR(%g)=26.1 16  BR(%g+%ce)=26.1 16  Mult=(E1)  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.35597E-15 3       4.72328E-14 11   
+          2     6.8005E-04        1.7655E-01         2     2.96876E-10 12      1.03428E-8  4    
+          3     7.2765E-05        1.8890E-02         3     9.9057E-5   6       0.00345075  19   
+          4     8.2380E-06        2.1389E-03         4     48.964      4       1705.54     12   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=2347.789
+   EG=775.398 6  BR(%g)=26.1 16  BR(%g+%ce)=26.1 16  Mult=(E1)  CC=0 (=ti/ri-1)
+   T1/2(g)=2.99E-12 50 (sec)   T1/2(g+ce)=2.99E-12 50 (sec)
+    BE1(UP)=6.26E-6 103             BE1(DOWN)=3.13E-6 52            BE1W=4.53E-4 75 (RUL=0.1)  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    T12:  15.4%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=2347.789
+   EG=775.398 6  BR(%g)=26.1 20  BR(%g+%ce)=26.1 20  Mult=(E1)  CC=0 (=ti/ri-1)
+   T1/2(g)=3.0E-12 +8-7 (sec)   T1/2(g+ce)=3.0E-12 +8-7 (sec)
+    BE1(UP)=6.26E-6 +171-125        BE1(DOWN)=3.13E-6 +85-63        BE1W=4.53E-4 +124-91 (RUL=0.1)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=2347.789
+   EG=775.398 6  BR(%g)=26.1 16  BR(%g+%ce)=26.1 16  Mult=(E1)  CC=0 (=ti/ri-1)
+   T1/2(g)=3.0E-12 5 (sec)   T1/2(g+ce)=3.0E-12 5 (sec)
+    BE1(UP)=6.26E-6 +118-94         BE1(DOWN)=3.13E-6 +59-47        BE1W=4.53E-4 +85-68 (RUL=0.1)
+    BE1(UP)=6.23E-6 +120-92         BE1(DOWN)=3.12E-6 +60-46        BE1W=4.52E-4 +87-67 (RUL=0.1) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BE1W=4.5E-4 +9-7 
+     BE1UP=6.3E-6 +12-10 
+     BE1DOWN=3.127E-6 +8-7 
+  
+**** new line:  35S B G BE1W=4.5E-4 +9-7                                                       
+  symmetrized:  35S B G BE1W=4.6E-4 8                                                          
+   
+--->gamma#3-3: EG=2347.700 19  BR(%g)=73.9 16  BR(%g+%ce)=73.9 16  Mult=(E1)  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     4.88537E-17 12      1.70173E-15 4    
+          2     6.8005E-04        1.7655E-01         2     1.16677E-12 5       4.06490E-11 17   
+          3     7.2765E-05        1.8890E-02         3     4.24677E-8  24      1.47941E-6  9    
+          4     8.2380E-06        2.1389E-03         4     0.00228990  17      0.079763    6    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=2347.789
+   EG=2347.700 19  BR(%g)=73.9 16  BR(%g+%ce)=73.9 16  Mult=(E1)  CC=0 (=ti/ri-1)
+   T1/2(g)=1.06E-12 17 (sec)   T1/2(g+ce)=1.06E-12 17 (sec)
+    BE1(UP)=3.192E-7 496            BE1(DOWN)=3.192E-7 496          BE1W=4.63E-5 72 (RUL=0.1)  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    T12:  15.4%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=2347.789
+   EG=2347.700 19  BR(%g)=73.9 20  BR(%g+%ce)=73.9 20  Mult=(E1)  CC=0 (=ti/ri-1)
+   T1/2(g)=1.06E-12 19 (sec)   T1/2(g+ce)=1.06E-12 19 (sec)
+    BE1(UP)=3.19E-7 +69-50          BE1(DOWN)=3.19E-7 +69-50        BE1W=4.63E-5 +99-73 (RUL=0.1)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=2347.789
+   EG=2347.700 19  BR(%g)=73.9 16  BR(%g+%ce)=73.9 16  Mult=(E1)  CC=0 (=ti/ri-1)
+   T1/2(g)=1.05E-12 16 (sec)   T1/2(g+ce)=1.06E-12 16 (sec)
+    BE1(UP)=3.19E-7 +57-44          BE1(DOWN)=3.19E-7 +57-44        BE1W=4.63E-5 +82-64 (RUL=0.1)
+    BE1(UP)=3.19E-7 +57-43          BE1(DOWN)=3.19E-7 +57-43        BE1W=4.62E-5 +83-63 (RUL=0.1) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BE1W=4.6E-5 +8-7 
+     BE1UP=3.2E-7 +6-5 
+     BE1DOWN=3.1918E-7 +39-30 
+  
+**** new line:  35S B G BE1W=4.6E-5 +8-7                                                       
+  symmetrized:  35S B G BE1W=4.8E-5 7                                                          
+
+----------------------------------------------------------------------------------------------------
+ 35S   L 2717.00   3  5/2+             69 FS     24                             
+ 35S   G 368.7     5 14      8  [E1]                                            
+ 35S   G 725.1       5       LT [E1]                                            
+ 35S   G 1145.7      5       LT [E2]                                            
+ 35S   G 2717.01   16 100    10 M1+E2    -0.39   5                              
+   
+--->gamma#4-1: EG=368.7 5  BR(%g)=12 6  BR(%g+%ce)=12 6  Mult=[E1]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.261E-14   5       4.393E-13   18   
+          2     6.8005E-04        1.7655E-01         2     1.221E-8    8       4.26E-7     3    
+          3     7.2765E-05        1.8890E-02         3     0.01802     17      0.628       6    
+          4     8.2380E-06        2.1389E-03         4     3.94E4      5       1.373E6     17   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=2717.00
+   EG=368.7 5  BR(%g)=12 6  BR(%g+%ce)=12 6  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=5.9E-13 36 (sec)   T1/2(g+ce)=5.9E-13 36 (sec)
+    BE1(UP)=2.23E-4 138             BE1(DOWN)=1.48E-4 92            BE1W=0.0215 133 (RUL=0.1)  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  57.1%     T12:  34.8%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=2717.00
+   EG=368.7 5  BR(%g)=12 +8-7  BR(%g+%ce)=12 +8-7  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=6E-13 +14-4 (sec)   T1/2(g+ce)=6E-13 +14-4 (sec)
+    BE1(UP)=2.23E-4 +350-156        BE1(DOWN)=1.48E-4 +233-104      BE1W=0.0215 +338-151 (RUL=0.1)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=2717.00
+   EG=368.7 5  BR(%g)=12 6  BR(%g+%ce)=12 6  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=6E-13 +5-3 (sec)   T1/2(g+ce)=6E-13 +6-3 (sec)
+    BE1(UP)=2.23E-4 +193-106        BE1(DOWN)=1.48E-4 +129-70       BE1W=0.0215 +187-102 (RUL=0.1)
+    BE1(UP)=2.35E-4 +181-118        BE1(DOWN)=1.57E-4 +120-79       BE1W=0.0227 +175-114 (RUL=0.1) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BE1W=0.022 +19-10 
+     BE1UP=2.2E-4 +19-11 
+     BE1DOWN=1.483E-4 +13-7 
+  
+**** new line:  35S B G BE1W=0.022 +19-10                                                      
+  symmetrized:  35S B G BE1W=0.027 15                                                          
+   
+--->gamma#4-2: EG=725.1 5(assumed)  BR(%g)=2.1 +29-21  BR(%g+%ce)=2.1 +29-21  Mult=[E1]  CC=0 (=ti/ri-1)
+               original RI=5 LT    assumed 0<RI<5.00 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.658E-15   4       5.776E-14   12   
+          2     6.8005E-04        1.7655E-01         2     4.152E-10   14      1.446E-8    5    
+          3     7.2765E-05        1.8890E-02         3     1.584E-4    8       0.00552     3    
+          4     8.2380E-06        2.1389E-03         4     89.5        6       3119        20   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=2717.00
+   EG=725.1 5(assumed)  BR(%g)=2.1 21  BR(%g+%ce)=2.1 21  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=3.3E-12 +34-33 (sec)   T1/2(g+ce)=3.3E-12 +34-33 (sec)
+    BE1(UP)=2.61E-6 +273-261        BE1(DOWN)=3.48E-6 +364-348      BE1W=5.1E-4 +53-51 (RUL=0.1)
+            2.69E-6 267                       3.58E-6 356                5.2E-4 52  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  34.8%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=2717.00
+   EG=725.1 5(assumed)  BR(%g)=2.1 +29-21  BR(%g+%ce)=2.1 +29-21  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) GT 9.09E-13 (sec)   T1/2(g+ce) GT 9.09E-13 (sec)
+    BE1(UP)=2.6E-6 +69-26           BE1(DOWN)=3.5E-6 +91-35         BE1W=5.1E-4 +132-51 (RUL=0.1)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=2717.00
+   EG=725.1 5(assumed)  BR(%g)= LT 2.1  BR(%g+%ce)= LT 2.1  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) GT 1.06E-12 (sec)   T1/2(g+ce) GT 6.21E-13 (sec)
+    BE1(UP)=2.61E-6 +0-261          BE1(DOWN)=3.48E-6 +0-348        0<BE1W<5.05E-4 (RUL=0.1)
+      (BR is limit. Monte-Carlo approach is not suitable.)
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+   (limit value is suppressed in the new output file)
+**** new line:  35S B G BE1W LT 0.0018                                                         
+   
+--->gamma#4-3: EG=1145.7 5(assumed)  BR(%g)=2.1 +29-21  BR(%g+%ce)=2.1 +29-21  Mult=[E2]  CC=0 (=ti/ri-1)
+               original RI=5 LT    assumed 0<RI<5.00 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     4.204E-16   6       1.4642E-14  19   
+          2     6.8005E-04        1.7655E-01         2     4.216E-11   9       1.469E-9    3    
+          3     7.2765E-05        1.8890E-02         3     6.443E-6    20      2.244E-4    7    
+          4     8.2380E-06        2.1389E-03         4     1.459       6       50.81       20   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=2717.00
+   EG=1145.7 5(assumed)  BR(%g)=2.1 21  BR(%g+%ce)=2.1 21  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=3.3E-12 +34-33 (sec)   T1/2(g+ce)=3.3E-12 +34-33 (sec)
+    BE2(UP)=0.0262 +274-262         BE2(DOWN)=0.0087 +91-87         BE2W=12.8 +134-128 (RUL=100)
+            0.0269 268                        0.0090 89                  13.2 131  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  34.8%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=2717.00
+   EG=1145.7 5(assumed)  BR(%g)=2.1 +29-21  BR(%g+%ce)=2.1 +29-21  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g) GT 9.09E-13 (sec)   T1/2(g+ce) GT 9.09E-13 (sec)
+    BE2(UP)=0.026 +69-26            BE2(DOWN)=0.0087 +229-87        BE2W=12.8 +337-128 (RUL=100)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=2717.00
+   EG=1145.7 5(assumed)  BR(%g)= LT 2.1  BR(%g+%ce)= LT 2.1  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g) GT 4.45E-13 (sec)   T1/2(g+ce) GT 1.04E-13 (sec)
+    BE2(UP)=0.0262 +0-262           0<BE2(DOWN)<0.00873             BE2W=12.8 +0-128 (RUL=100)
+      (BR is limit. Monte-Carlo approach is not suitable.)
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+   (limit value is suppressed in the new output file)
+**** new line:  35S B G BE2W LT 46                                                             
+   
+--->gamma#4-4: EG=2717.01 16  BR(%g)=84.0 +43-70  BR(%g+%ce)=84.0 +45-70  Mult=M1+E2  MR=-0.39 5  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     3.1518E-17  6       1.09785E-15 20   
+          2     6.8005E-04        1.7655E-01         2     5.6201E-13  17      1.9580E-11  6    
+          3     7.2765E-05        1.8890E-02         3     1.5273E-8   6       5.3204E-7   22   
+          4     8.2380E-06        2.1389E-03         4     6.149E-4    3       0.021417    12   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=2717.00
+   EG=2717.01 16  BR(%g)=84 6  BR(%g+%ce)=84 6  Mult=M1+E2  MR=-0.39 5  CC=0 (=ti/ri-1)
+   T1/2(g)=8.2E-14 29 (sec)   T1/2(g+ce)=8.2E-14 29 (sec)
+    BM1(UP)=0.0312 112              BM1(DOWN)=0.0208 74             BM1W=0.01161 415 (RUL=10)  (symmetrized)
+    BE2(UP)=9.22E-4 387             BE2(DOWN)=6.15E-4 258           BE2W=0.904 379 (RUL=100)  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    T12:  34.8%     MR:  12.8%     MR_factor(L+1):  22.3%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=2717.00
+   EG=2717.01 16  BR(%g)=84 11  BR(%g+%ce)=84 11  Mult=M1+E2  MR=-0.39 5  CC=0 (=ti/ri-1)
+   T1/2(g)=8.2E-14 +44-35 (sec)   T1/2(g+ce)=8.2E-14 +44-35 (sec)
+    BM1(UP)=0.0312 +246-116         BM1(DOWN)=0.0208 +164-77        BM1W=0.0116 +92-43 (RUL=10)
+    BE2(UP)=9.2E-4 +104-45          BE2(DOWN)=6.2E-4 +69-30         BE2W=0.90 +102-44 (RUL=100)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=2717.00
+   EG=2717.01 16  BR(%g)=84.0 +43-70  BR(%g+%ce)=84.0 +45-70  Mult=M1+E2  MR=-0.39 5  CC=0 (=ti/ri-1)
+   T1/2(g)=8.2E-14 +32-29 (sec)   T1/2(g+ce)=8.2E-14 +32-28 (sec)
+    BM1(UP)=0.0312 +184-76          BM1(DOWN)=0.0208 +123-51        BM1W=0.0116 +69-28 (RUL=10)
+    BM1(UP)=0.0321 +175-85          BM1(DOWN)=0.0214 +117-57        BM1W=0.0119 +65-32 (RUL=10) (Median)
+    BE2(UP)=9.2E-4 +62-28           BE2(DOWN)=6.15E-4 +412-185      BE2W=0.90 +61-27 (RUL=100)
+    BE2(UP)=9.5E-4 +59-31           BE2(DOWN)=6.36E-4 +391-206      BE2W=0.93 +58-30 (RUL=100) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BM1W=0.012 +7-3 $BE2W=0.9 +6-3 
+     BM1UP=0.031 +19-8 $BE2UP=9E-4 +6-3 
+     BM1DOWN=0.021 +33-14 $BE2DOWN=6.1451E-4 +42-19 
+  
+**** new line:  35S B G BM1W=0.012 +7-3 $BE2W=0.9 +6-3                                         
+  symmetrized:  35S B G BM1W=0.014 5 $BE2W=1.12 45                                             
+
+----------------------------------------------------------------------------------------------------
+ 35S   L 3421.1    3  5/2+             69 FS     LT                             
+ 35S   G 486         4       LT [M1,E2]                                         
+ 35S   G 703.0       6       LT [M1,E2]                                         
+ 35S   G 1072.2      7       LT [E1]                                            
+ 35S   G 1428.1      30      LT [E1]                                            
+ 35S   G 1848.6      7       LT [E2]                                            
+ 35S   G 3423      2 100        [M1,E2]                                         
+   
+--->gamma#6-1: EG=486.0 10(assumed)  BR(%g)=1.6 +23-16  BR(%g+%ce)=1.6 +23-16  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+               original RI=4 LT    assumed 0<RI<4.00 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     5.51E-15    4       1.918E-13   12   
+          2     6.8005E-04        1.7655E-01         2     3.07E-9     3       1.069E-7    11   
+          3     7.2765E-05        1.8890E-02         3     0.00261     4       0.0908      13   
+          4     8.2380E-06        2.1389E-03         4     3.28E3      6       1.143E5     21   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=3421.1
+   EG=486.0 10(assumed)  BR(%g)=1.6 16  BR(%g+%ce)=1.6 16  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=2.2E-12 +31-22 (sec)   T1/2(g+ce)=2.2E-12 +31-22 (sec)
+    BM1(UP)>0                       BM1(DOWN)>0                     BM1W>0 (RUL=10)
+           =0.235 +332-235                   =0.157 +221-157            =0.088 +124-88  (original)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)
+           =1.43 +201-143                    =0.95 +134-95              =1.40E3 +198-140  (original)
+  
+>>>>>>> Warning: BE2W LT 3375 upper limit exceeds RUL=100
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=3421.1
+   EG=486.0 10(assumed)  BR(%g)=1.6 +23-16  BR(%g+%ce)=1.6 +23-16  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 4.34E-5 (sec)   T1/2(g+ce) LT 4.34E-5 (sec)
+    BM1(UP)>0                       BM1(DOWN)>0                     BM1W>0 (RUL=10)  (symmetrized)
+           =0<BM1(UP)<4849270                =0<BM1(DOWN)<3232847       =0<BM1W<1805051  (original)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+           =0<BE2(UP)<2.96E7                 =0<BE2(DOWN)<1.97E7        =0<BE2W<2.9E10  (original)
+  
+>>>>>>> Warning: BM1W LT 1805051 upper limit exceeds RUL=10
+>>>>>>> Warning: BE2W LT 2.9E10 upper limit exceeds RUL=100
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=3421.1
+   EG=486.0 10(assumed)  BR(%g)= LT 1.57  BR(%g+%ce)= LT 1.57  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) GT 2.26E-18 (sec)   T1/2(g+ce) GT 2.31E-18 (sec)
+    BM1(UP)>0                       BM1(DOWN)>0                     BM1W>0 (RUL=10)  (symmetrized)
+           =0<BM1(UP)<520                    =0<BM1(DOWN)<347           =0<BM1W<193  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>1.79E-4 (RUL=100)  (symmetrized)
+           =0<BE2(UP)<3174                   =0<BE2(DOWN)<2116          =1.79E-4<BE2W<3111573  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BM1W LT 193 upper limit exceeds RUL=10
+>>>>>>> Warning: BE2W GT 1.79E-4 upper bound exceeds RUL=100
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#6-2: EG=703.0 5(assumed)  BR(%g)=2.4 +33-24  BR(%g+%ce)=2.4 +33-24  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+               original RI=6 LT    assumed 0<RI<6.00 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.820E-15   4       6.338E-14   14   
+          2     6.8005E-04        1.7655E-01         2     4.846E-10   17      1.688E-8    6    
+          3     7.2765E-05        1.8890E-02         3     1.967E-4    10      0.00685     4    
+          4     8.2380E-06        2.1389E-03         4     118.3       8       4.12E3      3    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=3421.1
+   EG=703.0 5(assumed)  BR(%g)=2.4 23  BR(%g+%ce)=2.4 23  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=1.5E-12 +21-15 (sec)   T1/2(g+ce)=1.5E-12 +21-15 (sec)
+    BM1(UP)>0                       BM1(DOWN)>0                     BM1W>0 (RUL=10)
+           =0.078 +109-78                    =0.078 +109-78             =0.043 +61-43  (original)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)
+           =0.226 +317-226                   =0.226 +317-226            =332 +466-332  (original)
+  
+>>>>>>> Warning: BE2W LT 797 upper limit exceeds RUL=100
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=3421.1
+   EG=703.0 5(assumed)  BR(%g)=2.4 +33-24  BR(%g+%ce)=2.4 +33-24  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 2.86E-5 (sec)   T1/2(g+ce) LT 2.86E-5 (sec)
+    BM1(UP)>0                       BM1(DOWN)>0                     BM1W>0 (RUL=10)  (symmetrized)
+           =0<BM1(UP)<1565633                =0<BM1(DOWN)<1565633       =0<BM1W<874167  (original)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+           =0<BE2(UP)<4552261                =0<BE2(DOWN)<4552261       =0<BE2W<6.69E9  (original)
+  
+>>>>>>> Warning: BM1W LT 874167 upper limit exceeds RUL=10
+>>>>>>> Warning: BE2W LT 6.69E9 upper limit exceeds RUL=100
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=3421.1
+   EG=703.0 5(assumed)  BR(%g)= LT 2.36  BR(%g+%ce)= LT 2.36  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) GT 1.53E-18 (sec)   T1/2(g+ce) GT 1.51E-18 (sec)
+    BM1(UP)>0                       BM1(DOWN)>0                     BM1W>0 (RUL=10)  (symmetrized)
+           =0<BM1(UP)<170                    =0<BM1(DOWN)<170           =0<BM1W<95.1  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+           =0<BE2(UP)<495                    =0<BE2(DOWN)<495           =0<BE2W<728219  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BM1W LT 95.1 upper limit exceeds RUL=10
+>>>>>>> Warning: BE2W LT 728219 upper limit exceeds RUL=100
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#6-3: EG=1072.2 5(assumed)  BR(%g)=2.8 +38-28  BR(%g+%ce)=2.8 +38-28  Mult=[E1]  CC=0 (=ti/ri-1)
+               original RI=7 LT    assumed 0<RI<7.00 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     5.129E-16   7       1.7865E-14  25   
+          2     6.8005E-04        1.7655E-01         2     5.873E-11   14      2.046E-9    5    
+          3     7.2765E-05        1.8890E-02         3     1.025E-5    4       3.570E-4    12   
+          4     8.2380E-06        2.1389E-03         4     2.649       11      92.3        4    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=3421.1
+   EG=1072.2 5(assumed)  BR(%g)=2.8 27  BR(%g+%ce)=2.8 27  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=1.3E-12 +18-13 (sec)   T1/2(g+ce)=1.3E-12 +18-13 (sec)
+    BE1(UP)>0                       BE1(DOWN)>0                     BE1W>0 (RUL=0.1)
+           =4.2E-6 +60-42                    =2.83E-6 +396-283          =4.1E-4 +58-41  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=3421.1
+   EG=1072.2 5(assumed)  BR(%g)=2.8 +38-28  BR(%g+%ce)=2.8 +38-28  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 2.43E-5 (sec)   T1/2(g+ce) LT 2.43E-5 (sec)
+    BE1(UP)>0                       BE1(DOWN)>0                     BE1W>0 (RUL=0.1)  (symmetrized)
+           =0<BE1(UP)<84.5                   =0<BE1(DOWN)<56.3          =0<BE1W<8169  (original)
+  
+>>>>>>> Warning: BE1W LT 8169 upper limit exceeds RUL=0.1
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=3421.1
+   EG=1072.2 5(assumed)  BR(%g)= LT 2.76  BR(%g+%ce)= LT 2.76  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) GT 1.29E-18 (sec)   T1/2(g+ce) GT 1.29E-18 (sec)
+    BE1(UP)>0                       BE1(DOWN)>0                     BE1W>0 (RUL=0.1)  (symmetrized)
+           =0<BE1(UP)<0.0093                 =0<BE1(DOWN)<0.0062        =0<BE1W<0.899  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BE1W LT 0.899 upper limit exceeds RUL=0.1
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#6-4: EG=1428.1 5(assumed)  BR(%g)=12 +11-12  BR(%g+%ce)=12 +11-12  Mult=[E1]  CC=0 (=ti/ri-1)
+               original RI=30 LT    assumed 0<RI<30.0 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     2.1705E-16  23      7.560E-15   8    
+          2     6.8005E-04        1.7655E-01         2     1.4009E-11  25      4.881E-10   9    
+          3     7.2765E-05        1.8890E-02         3     1.378E-6    4       4.800E-5    12   
+          4     8.2380E-06        2.1389E-03         4     0.2008      6       6.995       22   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=3421.1
+   EG=1428.1 5(assumed)  BR(%g)=12 11  BR(%g+%ce)=12 11  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=2.9E-13 +39-29 (sec)   T1/2(g+ce)=2.9E-13 +39-29 (sec)
+    BE1(UP)>0                       BE1(DOWN)>0                     BE1W>0 (RUL=0.1)
+           =3.8E-6 +51-38                    =5.1E-6 +69-51             =7.4E-4 +99-74  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=3421.1
+   EG=1428.1 5(assumed)  BR(%g)=12 +11-12  BR(%g+%ce)=12 +11-12  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 4.78E-6 (sec)   T1/2(g+ce) LT 4.78E-6 (sec)
+    BE1(UP)>0                       BE1(DOWN)>0                     BE1W>0 (RUL=0.1)  (symmetrized)
+           =0<BE1(UP)<63.1                   =0<BE1(DOWN)<84.1          =0<BE1W<12191  (original)
+  
+>>>>>>> Warning: BE1W LT 12191 upper limit exceeds RUL=0.1
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=3421.1
+   EG=1428.1 5(assumed)  BR(%g)= LT 11.8  BR(%g+%ce)= LT 11.8  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 8.77E-10 (sec)   T1/2(g+ce) LT 1.11E-9 (sec)
+    BE1(UP)>0                       BE1(DOWN)>0                     BE1W>0 (RUL=0.1)  (symmetrized)
+           =0<BE1(UP)<0.0113                 =0<BE1(DOWN)<0.0151        =0<BE1W<2.19  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BE1W LT 2.19 upper limit exceeds RUL=0.1
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#6-5: EG=1848.6 5(assumed)  BR(%g)=2.8 +38-28  BR(%g+%ce)=2.8 +38-28  Mult=[E2]  CC=0 (=ti/ri-1)
+               original RI=7 LT    assumed 0<RI<7.00 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.0007E-16  8       3.486E-15   3    
+          2     6.8005E-04        1.7655E-01         2     3.855E-12   5       1.3429E-10  18   
+          3     7.2765E-05        1.8890E-02         3     2.263E-7    4       7.883E-6    15   
+          4     8.2380E-06        2.1389E-03         4     0.01968     5       0.6855      17   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=3421.1
+   EG=1848.6 5(assumed)  BR(%g)=2.8 27  BR(%g+%ce)=2.8 27  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=1.3E-12 +18-13 (sec)   T1/2(g+ce)=1.3E-12 +18-13 (sec)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)
+           =0.0063 +88-63                    =0.00209 +293-209          =3.08 +431-308  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=3421.1
+   EG=1848.6 5(assumed)  BR(%g)=2.8 +38-28  BR(%g+%ce)=2.8 +38-28  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 2.43E-5 (sec)   T1/2(g+ce) LT 2.43E-5 (sec)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+           =0<BE2(UP)<125263                 =0<BE2(DOWN)<41754         =0<BE2W<6.14E7  (original)
+  
+>>>>>>> Warning: BE2W LT 6.14E7 upper limit exceeds RUL=100
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=3421.1
+   EG=1848.6 5(assumed)  BR(%g)= LT 2.76  BR(%g+%ce)= LT 2.76  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g) GT 1.31E-18 (sec)   T1/2(g+ce) GT 1.29E-18 (sec)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+           =0<BE2(UP)<20.5                   =0<BE2(DOWN)<6.83          =0<BE2W<10041  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BE2W LT 10041 upper limit exceeds RUL=100
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#6-6: EG=3423 2  BR(%g)=79 +21-14  BR(%g+%ce)=79 +21-14  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.576E-17   3       5.490E-16   10   
+          2     6.8005E-04        1.7655E-01         2     1.771E-13   5       6.169E-12   18   
+          3     7.2765E-05        1.8890E-02         3     3.032E-9    13      1.056E-7    4    
+          4     8.2380E-06        2.1389E-03         4     7.69E-5     4       0.002679    14   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=3421.1
+   EG=3423 2  BR(%g)=79 10  BR(%g+%ce)=79 10  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=4.4E-14 44 (sec)   T1/2(g+ce)=4.4E-14 44 (sec)
+    BM1(UP)>0                       BM1(DOWN)>0                     BM1W>0 (RUL=10)
+            0.0338 338                        0.0226 225                 0.0126 126  (symmetrized)
+           =0.0337 +340-337                  =0.0224 +226-224           =0.0126 126  (original)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)
+            0.00414 414                       0.00276 276                4.06 406  (symmetrized)
+           =0.00412 +416-412                 =0.00275 +277-275          =4.04 +408-404  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=3421.1
+   EG=3423 2  BR(%g)=79 +21-14  BR(%g+%ce)=79 +21-14  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=4E-14 +6-4 (sec)   T1/2(g+ce)=4E-14 +6-4 (sec)
+    BM1(UP)>0.0139                  BM1(DOWN)>0.00924               BM1W>0.00516 (RUL=10)  (symmetrized)
+           =0.0139<BM1(UP)<359266            =0.00924<BM1(DOWN)<239510    =0.00516<BM1W<133730  (original)
+    BE2(UP)>0.00169                 BE2(DOWN)>0.00113               BE2W>1.66 (RUL=100)  (symmetrized)
+           =0.00169<BE2(UP)<44049            =0.00113<BE2(DOWN)<29366    =1.66<BE2W<4.32E7  (original)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=3421.1
+   EG=3423 2  BR(%g)=79 +4-11  BR(%g+%ce)=79 +4-11  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 4.38E-14 (sec)   T1/2(g+ce) LT 4.38E-14 (sec)
+    BM1(UP)>0.0337                  BM1(DOWN)>0.0224                BM1W>0.0125 (RUL=10)
+           =0.0337<BM1(UP)<108236            =0.0224<BM1(DOWN)<72157    =0.0125<BM1W<40289  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+    BE2(UP)>0.00412                 BE2(DOWN)>0.00275               BE2W>4.04 (RUL=100)
+           =0.00412<BE2(UP)<13252            =0.00275<BE2(DOWN)<8835    =4.04<BE2W<1.3E7  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+   (limit value is suppressed in the new output file)
+**** new line:  35S  cG $B(M1)(W.u.)>0.0052 if M1, B(E2)(W.u.)>1.7 if E2                       
+
+----------------------------------------------------------------------------------------------------
+ 35S   L 3801.958  23 3/2-             25 FS     18                             
+ 35S   G 863.28    28 1.3    4  [E1]                                            
+ 35S   G 1084.79   15 2.2    7  [E1]                                            
+ 35S   G 1454.09   4 18      4  [M1,E2]                                         
+ 35S   G 1809.1      8.9     LT [E2]                                            
+ 35S   G 2229.510  16 88     15 [E1]                                            
+ 35S   G 3801.73   4 100     5  [E1]                                            
+   
+--->gamma#6-1: EG=863.28 28  BR(%g)=0.61 19  BR(%g+%ce)=0.61 19  Mult=[E1]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     9.826E-16   10      3.423E-14   3    
+          2     6.8005E-04        1.7655E-01         2     1.736E-10   3       6.047E-9    10   
+          3     7.2765E-05        1.8890E-02         3     4.672E-5    11      0.001628    4    
+          4     8.2380E-06        2.1389E-03         4     18.63       6       649.0       19   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=3801.958
+   EG=863.28 28  BR(%g)=0.61 19  BR(%g+%ce)=0.61 19  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=4.1E-12 33 (sec)   T1/2(g+ce)=4.1E-12 33 (sec)
+    BE1(UP)=1.65E-6 130             BE1(DOWN)=1.65E-6 130           BE1W=2.39E-4 188 (RUL=0.1)  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  30.8%     T12:  72.0%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=3801.958
+   EG=863.28 28  BR(%g)=0.61 +31-24  BR(%g+%ce)=0.61 +31-24  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=4E-12 +8-4 (sec)   T1/2(g+ce)=4E-12 +8-4 (sec)
+    BE1(UP)=1.7E-6 +73-11           BE1(DOWN)=1.7E-6 +73-11         BE1W=2.4E-4 +105-16 (RUL=0.1)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=3801.958
+   EG=863.28 28  BR(%g)=0.61 19  BR(%g+%ce)=0.61 19  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=4.1E-12 +43-23 (sec)   T1/2(g+ce)=4.1E-12 +43-23 (sec)
+    BE1(UP)=1.65E-6 +199-82         BE1(DOWN)=1.65E-6 +199-82       BE1W=2.39E-4 +288-119 (RUL=0.1)
+    BE1(UP)=1.55E-6 +209-72         BE1(DOWN)=1.55E-6 +209-72       BE1W=2.24E-4 +303-105 (RUL=0.1) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BE1W=2.4E-4 +29-12 
+     BE1UP=1.7E-6 +20-8 
+     BE1DOWN=1.647E-6 +14-6 
+  
+**** new line:  35S B G BE1W=2.4E-4 +29-12                                                     
+  symmetrized:  35S B G BE1W=3.5E-4 21                                                         
+   
+--->gamma#6-2: EG=1084.79 15  BR(%g)=1.03 +33-34  BR(%g+%ce)=1.03 33  Mult=[E1]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     4.9521E-16  21      1.7250E-14  7    
+          2     6.8005E-04        1.7655E-01         2     5.540E-11   4       1.9299E-9   13   
+          3     7.2765E-05        1.8890E-02         3     9.444E-6    9       3.290E-4    3    
+          4     8.2380E-06        2.1389E-03         4     2.385       3       83.08       10   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=3801.958
+   EG=1084.79 15  BR(%g)=1.03 34  BR(%g+%ce)=1.03 34  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=2.4E-12 19 (sec)   T1/2(g+ce)=2.4E-12 19 (sec)
+    BE1(UP)=9.4E-7 74               BE1(DOWN)=1.41E-6 111           BE1W=2.04E-4 161 (RUL=0.1)  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  31.8%     T12:  72.0%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=3801.958
+   EG=1084.79 15  BR(%g)=1.0 +5-4  BR(%g+%ce)=1.0 +5-4  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=2.4E-12 +45-20 (sec)   T1/2(g+ce)=2.4E-12 +45-20 (sec)
+    BE1(UP)=9.4E-7 +414-61          BE1(DOWN)=1.4E-6 +62-9          BE1W=2.0E-4 +90-13 (RUL=0.1)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=3801.958
+   EG=1084.79 15  BR(%g)=1.03 +33-34  BR(%g+%ce)=1.03 33  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=2.4E-12 +25-14 (sec)   T1/2(g+ce)=2.4E-12 +25-14 (sec)
+    BE1(UP)=9.4E-7 +117-47          BE1(DOWN)=1.41E-6 +175-71       BE1W=2.04E-4 +254-103 (RUL=0.1)
+    BE1(UP)=8.7E-7 +123-41          BE1(DOWN)=1.31E-6 +184-62       BE1W=1.90E-4 +267-89 (RUL=0.1) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BE1W=2.0E-4 +25-10 
+     BE1UP=9E-7 +12-5 
+     BE1DOWN=1.405E-6 +8-3 
+  
+**** new line:  35S B G BE1W=2.0E-4 +25-10                                                     
+  symmetrized:  35S B G BE1W=3.0E-4 19                                                         
+   
+--->gamma#6-3: EG=1454.09 4  BR(%g)=8.4 18  BR(%g+%ce)=8.4 18  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     2.05613E-16 17      7.1622E-15  6    
+          2     6.8005E-04        1.7655E-01         2     1.28010E-11 18      4.4597E-10  6    
+          3     7.2765E-05        1.8890E-02         3     1.21456E-6  24      4.2310E-5   8    
+          4     8.2380E-06        2.1389E-03         4     0.17072     4       5.9465      15   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=3801.958
+   EG=1454.09 4  BR(%g)=8.4 18  BR(%g+%ce)=8.4 18  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=3.0E-13 23 (sec)   T1/2(g+ce)=3.0E-13 23 (sec)
+    BM1(UP)=0.0432 325              BM1(DOWN)=0.0432 325            BM1W=0.0241 181 (RUL=10)  (symmetrized)
+    BE2(UP)=0.0293 221              BE2(DOWN)=0.0293 221            BE2W=43.1 324 (RUL=100)  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  22.2%     T12:  72.0%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=3801.958
+   EG=1454.09 4  BR(%g)=8.4 +30-25  BR(%g+%ce)=8.4 +30-25  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=3.0E-13 +43-24 (sec)   T1/2(g+ce)=3.0E-13 +43-24 (sec)
+    BM1(UP)=0.043 +167-26           BM1(DOWN)=0.043 +167-26         BM1W=0.024 +93-14 (RUL=10)
+    BE2(UP)=0.029 +113-17           BE2(DOWN)=0.029 +113-17         BE2W=43 +166-26 (RUL=100)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=3801.958
+   EG=1454.09 4  BR(%g)=8.4 18  BR(%g+%ce)=8.4 18  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=3.0E-13 +27-17 (sec)   T1/2(g+ce)=3.0E-13 +26-16 (sec)
+    BM1(UP)=0.043 +52-20            BM1(DOWN)=0.043 +52-20          BM1W=0.0241 +288-111 (RUL=10)
+    BM1(UP)=0.040 +55-17            BM1(DOWN)=0.040 +55-17          BM1W=0.0225 +304-95 (RUL=10) (Median)
+    BE2(UP)=0.0293 +348-137         BE2(DOWN)=0.0293 +348-137       BE2W=43 +51-20 (RUL=100)
+    BE2(UP)=0.0275 +367-118         BE2(DOWN)=0.0275 +367-118       BE2W=40 +54-18 (RUL=100) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BM1W=0.024 +29-11 $BE2W=4E1 +5-2 
+     BM1UP=0.04 +5-2 $BE2UP=0.029 +35-14 
+     BM1DOWN=0.04 +9-4 $BE2DOWN=0.029296 +24-9 
+  
+**** new line:  35S  cG $B(M1)(W.u.)=0.024 {I+29-11} if M1, B(E2)(W.u.)=4|*10{+1} {I+5-2} if E2
+  symmetrized:  35S  cG $B(M1)(W.u.)=0.035 {I21} if M1, B(E2)(W.u.)=63 {I37} if E2             
+   
+--->gamma#6-4: EG=1809.1 5(assumed)  BR(%g)=2.1 +25-21  BR(%g+%ce)=2.1 +25-21  Mult=[E2]  CC=0 (=ti/ri-1)
+               original RI=8.9 LT    assumed 0<RI<8.90 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.0677E-16  9       3.719E-15   3    
+          2     6.8005E-04        1.7655E-01         2     4.294E-12   6       1.4961E-10  21   
+          3     7.2765E-05        1.8890E-02         3     2.632E-7    5       9.170E-6    18   
+          4     8.2380E-06        2.1389E-03         4     0.02390     6       0.8326      21   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=3801.958
+   EG=1809.1 5(assumed)  BR(%g)=2.1 21  BR(%g+%ce)=2.1 21  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=1.2E-12 +15-12 (sec)   T1/2(g+ce)=1.2E-12 +15-12 (sec)
+    BE2(UP)=0.00122 +148-122        BE2(DOWN)=0.00243 +296-243      BE2W=3.57 +435-357 (RUL=100)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  72.0%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=3801.958
+   EG=1809.1 5(assumed)  BR(%g)=2.1 +25-21  BR(%g+%ce)=2.1 +25-21  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g) GT 1.52E-13 (sec)   T1/2(g+ce) GT 1.52E-13 (sec)
+    BE2(UP)=0.0012 +84-12           BE2(DOWN)=0.0024 +168-24        BE2W=3.6 +247-36 (RUL=100)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=3801.958
+   EG=1809.1 5(assumed)  BR(%g)= LT 2.08  BR(%g+%ce)= LT 2.08  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g) GT 4.18E-15 (sec)   T1/2(g+ce) GT 5.11E-15 (sec)
+    0<BE2(UP)<0.00121               BE2(DOWN)=0.00243 +0-243        BE2W=3.57 +0-357 (RUL=100)
+      (BR is limit. Monte-Carlo approach is not suitable.)
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+   (limit value is suppressed in the new output file)
+**** new line:  35S B G BE2W LT 28                                                             
+   
+--->gamma#6-5: EG=2229.510 16  BR(%g)=41.1 +40-48  BR(%g+%ce)=41.1 +38-48  Mult=[E1]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     5.70423E-17 12      1.98696E-15 4    
+          2     6.8005E-04        1.7655E-01         2     1.51061E-12 6       5.26279E-11 19   
+          3     7.2765E-05        1.8890E-02         3     6.0967E-8   3       2.12383E-6  11   
+          4     8.2380E-06        2.1389E-03         4     0.00364514  24      0.126970    8    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=3801.958
+   EG=2229.510 16  BR(%g)=41.1 44  BR(%g+%ce)=41.1 44  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=6.1E-14 44 (sec)   T1/2(g+ce)=6.1E-14 44 (sec)
+    BE1(UP)=1.30E-5 94              BE1(DOWN)=6.47E-6 471           BE1W=9.4E-4 68 (RUL=0.1)  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  17.0%     T12:  72.0%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=3801.958
+   EG=2229.510 16  BR(%g)=41 7  BR(%g+%ce)=41 7  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=6E-14 +6-5 (sec)   T1/2(g+ce)=6E-14 +6-5 (sec)
+    BE1(UP)=1.30E-5 +411-67         BE1(DOWN)=6.5E-6 +205-34        BE1W=9.4E-4 +298-49 (RUL=0.1)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=3801.958
+   EG=2229.510 16  BR(%g)=41.1 +40-48  BR(%g+%ce)=41.1 +38-48  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=6.1E-14 +49-33 (sec)   T1/2(g+ce)=6.1E-14 +50-33 (sec)
+    BE1(UP)=1.30E-5 +149-57         BE1(DOWN)=6.5E-6 +75-29         BE1W=9.4E-4 +108-41 (RUL=0.1)
+    BE1(UP)=1.20E-5 +159-48         BE1(DOWN)=6.0E-6 +79-24         BE1W=8.7E-4 +115-35 (RUL=0.1) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BE1W=9E-4 +11-4 
+     BE1UP=1.3E-5 +15-6 
+     BE1DOWN=6.47E-6 +10-4 
+  
+**** new line:  35S B G BE1W=9E-4 +11-4                                                        
+  symmetrized:  35S B G BE1W=0.0014 8                                                          
+**** old line:  35S B G BE1W=0.0010 8                                                          
+   
+--->gamma#6-6: EG=3801.73 4  BR(%g)=46.7 +36-39  BR(%g+%ce)=46.7 +36-38  Mult=[E1]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.15049E-17 4       4.00750E-16 13   
+          2     6.8005E-04        1.7655E-01         2     1.04783E-13 6       3.65054E-12 19   
+          3     7.2765E-05        1.8890E-02         3     1.45442E-9  11      5.0666E-8   4    
+          4     8.2380E-06        2.1389E-03         4     2.9907E-5   3       0.00104173  10   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=3801.958
+   EG=3801.73 4  BR(%g)=46.7 38  BR(%g+%ce)=46.7 38  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=5.4E-14 39 (sec)   T1/2(g+ce)=5.4E-14 39 (sec)
+    BE1(UP)=1.48E-6 108             BE1(DOWN)=1.48E-6 108           BE1W=2.15E-4 156 (RUL=0.1)  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    T12:  72.0%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=3801.958
+   EG=3801.73 4  BR(%g)=47 +7-6  BR(%g+%ce)=47 +7-6  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=5E-14 +5-4 (sec)   T1/2(g+ce)=5E-14 +5-4 (sec)
+    BE1(UP)=1.48E-6 +464-73         BE1(DOWN)=1.48E-6 +464-73       BE1W=2.2E-4 +67-11 (RUL=0.1)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=3801.958
+   EG=3801.73 4  BR(%g)=46.7 +36-39  BR(%g+%ce)=46.7 +36-38  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=5.4E-14 +42-28 (sec)   T1/2(g+ce)=5.4E-14 +42-29 (sec)
+    BE1(UP)=1.48E-6 +175-63         BE1(DOWN)=1.48E-6 +175-63       BE1W=2.15E-4 +253-92 (RUL=0.1)
+    BE1(UP)=1.38E-6 +185-53         BE1(DOWN)=1.38E-6 +185-53       BE1W=2.00E-4 +268-77 (RUL=0.1) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BE1W=2.2E-4 +25-9 
+     BE1UP=1.5E-6 +18-6 
+     BE1DOWN=1.484E-6 +12-5 
+  
+**** new line:  35S B G BE1W=2.2E-4 +25-9                                                      
+  symmetrized:  35S B G BE1W=3.2E-4 18                                                         
+
+----------------------------------------------------------------------------------------------------
+ 35S   L 3818.1    4  5/2-,7/2-        0.28 PS   3                          A   
+ 35S   G 1824.7    3 100        M1+E2    +0.55   9                              
+   
+--->gamma#1-1: EG=1824.7 3  BR(%g)=100  BR(%g+%ce)=100  Mult=M1+E2  MR=+0.55 9  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.0405E-16  5       3.6245E-15  18   
+          2     6.8005E-04        1.7655E-01         2     4.114E-12   4       1.4332E-10  12   
+          3     7.2765E-05        1.8890E-02         3     2.479E-7    3       8.635E-6    10   
+          4     8.2380E-06        2.1389E-03         4     0.02213     3       0.7707      12   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=3818.1
+   EG=1824.7 3  BR(%g)=100  BR(%g+%ce)=100  Mult=M1+E2  MR=+0.55 9  CC=0 (=ti/ri-1)
+   T1/2(g)=2.80E-13 30 (sec)   T1/2(g+ce)=2.80E-13 30 (sec)
+    BM1(DOWN)=0.01780 234           BM1W=0.00994 131 (RUL=10)
+    BE2(DOWN)=0.00232 64            BE2W=3.41 93 (RUL=100)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    T12:  10.7%     MR:  16.4%     MR_factor(L+1):  25.1%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=3818.1
+   EG=1824.7 3  BR(%g)=100  BR(%g+%ce)=100  Mult=M1+E2  MR=+0.55 9  CC=0 (=ti/ri-1)
+   T1/2(g)=2.80E-13 30 (sec)   T1/2(g+ce)=2.80E-13 30 (sec)
+    BM1(DOWN)=0.01780 +364-295      BM1W=0.00994 +204-165 (RUL=10)
+    BE2(DOWN)=0.00232 +94-75        BE2W=3.41 +137-110 (RUL=100)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=3818.1
+   EG=1824.7 3  BR(%g)=100  BR(%g+%ce)=100  Mult=M1+E2  MR=+0.55 9  CC=0 (=ti/ri-1)
+   T1/2(g)=2.80E-13 30 (sec)   T1/2(g+ce)=2.80E-13 30 (sec)
+    BM1(DOWN)=0.01780 +251-209      BM1W=0.00994 +140-117 (RUL=10)
+    BM1(DOWN)=0.01778 +253-207      BM1W=0.00993 +141-115 (RUL=10) (Median)
+    BE2(DOWN)=0.00232 +65-60        BE2W=3.41 +96-88 (RUL=100)
+              0.00235 63                 3.46 92  (symmetrized)
+    BE2(DOWN)=0.00232 +66-60        BE2W=3.41 +96-88 (RUL=100) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BM1W=0.0099 +14-12 $BE2W=3.4 +10-9 
+     BM1DOWN=0.0178 $BE2DOWN=0.00232 
+  
+**** new line:  35S B G BM1W=0.0099 +14-12 $BE2W=3.4 +10-9                                     
+  symmetrized:  35S B G BM1W=0.0101 13 $BE2W=3.5 9                                             
+
+----------------------------------------------------------------------------------------------------
+ 35S   L 4022.3    10 11/2-            0.32 PS   3                          A   
+ 35S   G 207.0     5 0.59    30                                                 
+ 35S   G 2032.0    3 100     6 E2                                               
+   
+--->gamma#2-1: EG=207.0 5  BR(%g)=0.59 +30-28  BR(%g+%ce)=0.59 +30-28  CC=0 (=ti/ri-1)
+   
+--->gamma#2-2: EG=2032.0 3  BR(%g)=99.41 +27-31  BR(%g+%ce)=99.41 +28-30  Mult=E2  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     7.535E-17   3       2.6245E-15  12   
+          2     6.8005E-04        1.7655E-01         2     2.4020E-12  18      8.368E-11   6    
+          3     7.2765E-05        1.8890E-02         3     1.1671E-7   12      4.066E-6    4    
+          4     8.2380E-06        2.1389E-03         4     0.008400    11      0.2926      4    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4022.3
+   EG=2032.0 3  BR(%g)=99.41 30  BR(%g+%ce)=99.41 30  Mult=E2  CC=0 (=ti/ri-1)
+   T1/2(g)=3.22E-13 30 (sec)   T1/2(g+ce)=3.22E-13 30 (sec)
+    BE2(UP)=0.00761 72              BE2(DOWN)=0.005075 476          BE2W=7.46 70 (RUL=100)
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4022.3
+   EG=2032.0 3  BR(%g)=99.41 +32-35  BR(%g+%ce)=99.41 +32-35  Mult=E2  CC=0 (=ti/ri-1)
+   T1/2(g)=3.22E-13 31 (sec)   T1/2(g+ce)=3.22E-13 31 (sec)
+    BE2(UP)=0.00761 +82-68          BE2(DOWN)=0.00508 +55-46        BE2W=7.46 +81-67 (RUL=100)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4022.3
+   EG=2032.0 3  BR(%g)=99.41 +27-31  BR(%g+%ce)=99.41 +28-30  Mult=E2  CC=0 (=ti/ri-1)
+   T1/2(g)=3.22E-13 30 (sec)   T1/2(g+ce)=3.22E-13 30 (sec)
+    BE2(UP)=0.00761 +76-66          BE2(DOWN)=0.00508 +51-44        BE2W=7.46 +75-64 (RUL=100)
+    BE2(UP)=0.00760 +78-64          BE2(DOWN)=0.00507 +52-43        BE2W=7.45 +76-63 (RUL=100) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BE2W=7.5 +8-7 
+     BE2UP=0.0076 +8-7 
+     BE2DOWN=0.0050748 5 
+  
+**** new line:  35S B G BE2W=7.5 +8-7                                                          
+  symmetrized:  35S B G BE2W=7.5 7                                                             
+
+----------------------------------------------------------------------------------------------------
+ 35S   L 4106.4    4  (5/2)+           55 FS     LT                             
+ 35S   G 549         4.6     LT                                                 
+ 35S   G 686         4.6     LT [E2]                                            
+ 35S   G 1172        15      7  [M1,E2]                                         
+ 35S   G 1389        12      LT [E2]                                            
+ 35S   G 1758        5.8     LT [E1]                                            
+ 35S   G 2114        8.1     LT [E3]                                            
+ 35S   G 2535        5.8     LT [M1,E2]                                         
+ 35S   G 4105.3    8 100     7  [M1,E2]                                         
+   
+--->gamma#8-1: EG=549.0 10(assumed)  BR(%g)=1.7 +27-17  BR(%g+%ce)=1.7 +27-17  CC=0 (=ti/ri-1)
+               original RI=4.6 LT    assumed 0<RI<4.60 (%DRI=100)
+   
+--->gamma#8-2: EG=686.0 10(assumed)  BR(%g)=1.7 +27-17  BR(%g+%ce)=1.7 +27-17  Mult=[E2]  CC=0 (=ti/ri-1)
+               original RI=4.6 LT    assumed 0<RI<4.60 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.958E-15   9       6.82E-14    3    
+          2     6.8005E-04        1.7655E-01         2     5.48E-10    4       1.908E-8    14   
+          3     7.2765E-05        1.8890E-02         3     2.335E-4    24      0.00813     8    
+          4     8.2380E-06        2.1389E-03         4     147.5       20      5.14E3      7    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4106.4
+   EG=686.0 10(assumed)  BR(%g)=1.7 17  BR(%g+%ce)=1.7 17  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=1.6E-12 +23-16 (sec)   T1/2(g+ce)=1.6E-12 +23-16 (sec)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)
+           =0.230 +323-230                   =0.230 +323-230            =338 +476-338  (original)
+  
+>>>>>>> Warning: BE2W LT 814 upper limit exceeds RUL=100
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4106.4
+   EG=686.0 10(assumed)  BR(%g)=1.7 +27-17  BR(%g+%ce)=1.7 +27-17  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 3.32E-5 (sec)   T1/2(g+ce) LT 3.32E-5 (sec)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+           =0<BE2(UP)<4985869                =0<BE2(DOWN)<4985869       =0<BE2W<7.33E9  (original)
+  
+>>>>>>> Warning: BE2W LT 7.33E9 upper limit exceeds RUL=100
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4106.4
+   EG=686.0 10(assumed)  BR(%g)= LT 1.7  BR(%g+%ce)= LT 1.7  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 1.83E-9 (sec)   T1/2(g+ce) LT 2.26E-9 (sec)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+           =0<BE2(UP)<577                    =0<BE2(DOWN)<577           =0<BE2W<847841  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BE2W LT 847841 upper limit exceeds RUL=100
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#8-3: EG=1172.0 10(assumed)  BR(%g)=11 +8-6  BR(%g+%ce)=11 +8-6  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     3.927E-16   10      1.368E-14   4    
+          2     6.8005E-04        1.7655E-01         2     3.763E-11   16      1.311E-9    6    
+          3     7.2765E-05        1.8890E-02         3     5.50E-6     3       1.915E-4    12   
+          4     8.2380E-06        2.1389E-03         4     1.189       9       41.4        3    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4106.4
+   EG=1172.0 10(assumed)  BR(%g)=11.1 47  BR(%g+%ce)=11.1 47  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=2.5E-13 +27-25 (sec)   T1/2(g+ce)=2.5E-13 +27-25 (sec)
+    BM1(UP)>0                       BM1(DOWN)>0                     BM1W>0 (RUL=10)
+            0.156 155                         0.104 103                  0.058 58  (symmetrized)
+           =0.148 +161-148                   =0.099 +107-99             =0.055 +60-55  (original)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)
+           =0.155 +168-155                   =0.103 +112-103            =152 +165-152  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  46.7%     T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4106.4
+   EG=1172.0 10(assumed)  BR(%g)=11 +8-6  BR(%g+%ce)=11 +8-6  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=3E-13 +8-3 (sec)   T1/2(g+ce)=3E-13 +8-3 (sec)
+    BM1(UP)>0.0342                  BM1(DOWN)>0.0228                BM1W>0.0127 (RUL=10)  (symmetrized)
+           =0.0342<BM1(UP)<2149886           =0.0228<BM1(DOWN)<1433258    =0.0127<BM1W<800256  (original)
+    BE2(UP)>0.0357                  BE2(DOWN)>0.0238                BE2W>35 (RUL=100)  (symmetrized)
+           =0.0357<BE2(UP)<2249735           =0.0238<BE2(DOWN)<1499824    =35<BE2W<2.21E9  (original)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4106.4
+   EG=1172.0 10(assumed)  BR(%g)=11.1 +38-49  BR(%g+%ce)=11.1 +39-49  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 2.48E-13 (sec)   T1/2(g+ce) LT 2.48E-13 (sec)
+    BM1(UP)>0.0039                  BM1(DOWN)>0.0026                BM1W>0.00145 (RUL=10)  (symmetrized)
+           =0.0039<BM1(UP)<433640            =0.0026<BM1(DOWN)<289093    =0.00145<BM1W<161415  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+    BE2(UP)>0.00408                 BE2(DOWN)>0.00272               BE2W>4.0 (RUL=100)  (symmetrized)
+           =0.00408<BE2(UP)<452537           =0.00272<BE2(DOWN)<301691    =4.0<BE2W<4.44E8  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+   (limit value is suppressed in the new output file)
+**** new line:  35S  cG $B(M1)(W.u.)>0.013 if M1, B(E2)(W.u.)>35 if E2                         
+   
+--->gamma#8-4: EG=1389.0 10(assumed)  BR(%g)=4 +6-4  BR(%g+%ce)=4 +6-4  Mult=[E2]  CC=0 (=ti/ri-1)
+               original RI=12 LT    assumed 0<RI<12.0 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     2.359E-16   5       8.217E-15   18   
+          2     6.8005E-04        1.7655E-01         2     1.610E-11   6       5.607E-10   20   
+          3     7.2765E-05        1.8890E-02         3     1.674E-6    9       5.83E-5     3    
+          4     8.2380E-06        2.1389E-03         4     0.2578      17      8.98        6    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4106.4
+   EG=1389.0 10(assumed)  BR(%g)=4.4 43  BR(%g+%ce)=4.4 43  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=6E-13 +9-6 (sec)   T1/2(g+ce)=6E-13 +9-6 (sec)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)
+           =0.0176 +245-176                  =0.0176 +245-176           =25.9 +359-259  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4106.4
+   EG=1389.0 10(assumed)  BR(%g)=4 +6-4  BR(%g+%ce)=4 +6-4  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 1.21E-5 (sec)   T1/2(g+ce) LT 1.21E-5 (sec)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+           =0<BE2(UP)<355840                 =0<BE2(DOWN)<355840        =0<BE2W<5.23E8  (original)
+  
+>>>>>>> Warning: BE2W LT 5.23E8 upper limit exceeds RUL=100
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4106.4
+   EG=1389.0 10(assumed)  BR(%g)= LT 4.43  BR(%g+%ce)= LT 4.43  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 9.88E-10 (sec)   T1/2(g+ce) LT 6.91E-10 (sec)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+           =0<BE2(UP)<41.4                   =0<BE2(DOWN)<41.4          =0<BE2W<60869  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BE2W LT 60869 upper limit exceeds RUL=100
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#8-5: EG=1758.0 10(assumed)  BR(%g)=2.1 +33-21  BR(%g+%ce)=2.1 +33-21  Mult=[E1]  CC=0 (=ti/ri-1)
+               original RI=5.8 LT    assumed 0<RI<5.80 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.1635E-16  20      4.053E-15   7    
+          2     6.8005E-04        1.7655E-01         2     4.956E-12   14      1.727E-10   5    
+          3     7.2765E-05        1.8890E-02         3     3.217E-7    13      1.121E-5    5    
+          4     8.2380E-06        2.1389E-03         4     0.03093     16      1.078       6    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4106.4
+   EG=1758.0 10(assumed)  BR(%g)=2.1 21  BR(%g+%ce)=2.1 21  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=1.3E-12 +18-13 (sec)   T1/2(g+ce)=1.3E-12 +18-13 (sec)
+    BE1(UP)>0                       BE1(DOWN)>0                     BE1W>0 (RUL=0.1)
+           =9.4E-7 +132-94                   =6.3E-7 +88-63             =9.1E-5 +127-91  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4106.4
+   EG=1758.0 10(assumed)  BR(%g)=2.1 +33-21  BR(%g+%ce)=2.1 +33-21  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 2.61E-5 (sec)   T1/2(g+ce) LT 2.61E-5 (sec)
+    BE1(UP)>0                       BE1(DOWN)>0                     BE1W>0 (RUL=0.1)  (symmetrized)
+           =0<BE1(UP)<20                     =0<BE1(DOWN)<13.3          =0<BE1W<1931  (original)
+  
+>>>>>>> Warning: BE1W LT 1931 upper limit exceeds RUL=0.1
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4106.4
+   EG=1758.0 10(assumed)  BR(%g)= LT 2.14  BR(%g+%ce)= LT 2.14  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 1.39E-9 (sec)   T1/2(g+ce) LT 1.41E-9 (sec)
+    BE1(UP)>0                       BE1(DOWN)>0                     BE1W>0 (RUL=0.1)  (symmetrized)
+           =0<BE1(UP)<0.00217                =0<BE1(DOWN)<0.00145       =0<BE1W<0.21  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BE1W LT 0.21 upper limit exceeds RUL=0.1
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#8-6: EG=2114.0 10(assumed)  BR(%g)=3.0 +44-30  BR(%g+%ce)=3.0 +44-30  Mult=[E3]  CC=0 (=ti/ri-1)
+               original RI=8.1 LT    assumed 0<RI<8.10 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     6.691E-17   10      2.331E-15   3    
+          2     6.8005E-04        1.7655E-01         2     1.971E-12   5       6.867E-11   16   
+          3     7.2765E-05        1.8890E-02         3     8.85E-8     3       3.082E-6    10   
+          4     8.2380E-06        2.1389E-03         4     0.00588     3       0.2050      9    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4106.4
+   EG=2114.0 10(assumed)  BR(%g)=3.0 29  BR(%g+%ce)=3.0 29  Mult=[E3]  CC=0 (=ti/ri-1)
+   T1/2(g)=9E-13 +13-9 (sec)   T1/2(g+ce)=9E-13 +13-9 (sec)
+    BE3(UP)>0                       BE3(DOWN)>0                     BE3W>0 (RUL=100)
+           =5.3 +73-53                       =7.0 +98-70                =9.6E4 +134-96  (original)
+  
+>>>>>>> Warning: BE3W LT 230528 upper limit exceeds RUL=100
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4106.4
+   EG=2114.0 10(assumed)  BR(%g)=3.0 +44-30  BR(%g+%ce)=3.0 +44-30  Mult=[E3]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 1.84E-5 (sec)   T1/2(g+ce) LT 1.84E-5 (sec)
+    BE3(UP)>0                       BE3(DOWN)>0                     BE3W>0.00478 (RUL=100)  (symmetrized)
+           =0<BE3(UP)<1.1E8                  =0<BE3(DOWN)<1.46E8        =0.00478<BE3W<2.01E12  (original)
+  
+>>>>>>> Warning: BE3W GT 0.00478 upper bound exceeds RUL=100
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4106.4
+   EG=2114.0 10(assumed)  BR(%g)= LT 2.99  BR(%g+%ce)= LT 2.99  Mult=[E3]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 1.19E-9 (sec)   T1/2(g+ce) LT 1.22E-9 (sec)
+    BE3(UP)>0                       BE3(DOWN)>0                     BE3W>0.011 (RUL=100)  (symmetrized)
+           =0<BE3(UP)<12324                  =0<BE3(DOWN)<16432         =0.011<BE3W<2.26E8  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BE3W GT 0.011 upper bound exceeds RUL=100
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#8-7: EG=2535.0 10(assumed)  BR(%g)=2.1 +33-21  BR(%g+%ce)=2.1 +33-21  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+               original RI=5.8 LT    assumed 0<RI<5.80 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     3.881E-17   5       1.3517E-15  16   
+          2     6.8005E-04        1.7655E-01         2     7.949E-13   16      2.769E-11   6    
+          3     7.2765E-05        1.8890E-02         3     2.482E-8    7       8.645E-7    24   
+          4     8.2380E-06        2.1389E-03         4     0.001148    4       0.03998     14   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4106.4
+   EG=2535.0 10(assumed)  BR(%g)=2.1 21  BR(%g+%ce)=2.1 21  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=1.3E-12 +18-13 (sec)   T1/2(g+ce)=1.3E-12 +18-13 (sec)
+    BM1(UP)>0                       BM1(DOWN)>0                     BM1W>0 (RUL=10)
+           =0.0057 +79-57                    =0.00189 +264-189          =0.00105 +148-105  (original)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)
+           =0.00126 +177-126                 =4.2E-4 +59-42             =0.62 +87-62  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4106.4
+   EG=2535.0 10(assumed)  BR(%g)=2.1 +33-21  BR(%g+%ce)=2.1 +33-21  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 2.61E-5 (sec)   T1/2(g+ce) LT 2.61E-5 (sec)
+    BM1(UP)>0                       BM1(DOWN)>0                     BM1W>0 (RUL=10)  (symmetrized)
+           =0<BM1(UP)<120456                 =0<BM1(DOWN)<40152         =0<BM1W<22419  (original)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+           =0<BE2(UP)<26918                  =0<BE2(DOWN)<8973          =0<BE2W<1.32E7  (original)
+  
+>>>>>>> Warning: BM1W LT 22419 upper limit exceeds RUL=10
+>>>>>>> Warning: BE2W LT 1.32E7 upper limit exceeds RUL=100
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4106.4
+   EG=2535.0 10(assumed)  BR(%g)= LT 2.14  BR(%g+%ce)= LT 2.14  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 9.11E-10 (sec)   T1/2(g+ce) LT 1.93E-9 (sec)
+    BM1(UP)>0                       BM1(DOWN)>0                     BM1W>0 (RUL=10)  (symmetrized)
+           =0<BM1(UP)<13.4                   =0<BM1(DOWN)<4.45          =0<BM1W<2.49  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+           =0<BE2(UP)<2.98                   =0<BE2(DOWN)<0.995         =0<BE2W<1463  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BE2W LT 1463 upper limit exceeds RUL=100
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#8-8: EG=4105.3 8  BR(%g)=74 +19-14  BR(%g+%ce)=74 +19-14  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     9.137E-18   5       3.1826E-16  19   
+          2     6.8005E-04        1.7655E-01         2     7.136E-14   7       2.4862E-12  24   
+          3     7.2765E-05        1.8890E-02         3     8.495E-10   12      2.959E-8    4    
+          4     8.2380E-06        2.1389E-03         4     1.498E-5    3       5.218E-4    9    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4106.4
+   EG=4105.3 8  BR(%g)=74 6  BR(%g+%ce)=74 6  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=3.7E-14 37 (sec)   T1/2(g+ce)=3.7E-14 37 (sec)
+    BM1(UP)>1.18E-5                 BM1(DOWN)>7.85E-6               BM1W>0 (RUL=10)  (symmetrized)
+           =0.0230 230                       =0.0153 153                =0.0086 86  (original)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>9.83E-4 (RUL=100)  (symmetrized)
+           =0.00196 196                      =0.00131 131               =1.92 192  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4106.4
+   EG=4105.3 8  BR(%g)=74 +19-14  BR(%g+%ce)=74 +19-14  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=4E-14 +6-4 (sec)   T1/2(g+ce)=4E-14 +6-4 (sec)
+    BM1(UP)>0.00927                 BM1(DOWN)>0.00618               BM1W>0.00345 (RUL=10)  (symmetrized)
+           =0.00927<BM1(UP)<242810           =0.00618<BM1(DOWN)<161873    =0.00345<BM1W<90382  (original)
+    BE2(UP)>7.89E-4                 BE2(DOWN)>5.26E-4               BE2W>0.773 (RUL=100)  (symmetrized)
+           =7.89E-4<BE2(UP)<20681            =5.26E-4<BE2(DOWN)<13787    =0.773<BE2W<2.03E7  (original)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4106.4
+   EG=4105.3 8  BR(%g)=73.8 +23-81  BR(%g+%ce)=73.8 +21-81  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 3.72E-14 (sec)   T1/2(g+ce) LT 3.72E-14 (sec)
+    BM1(UP)>0.0208                  BM1(DOWN)>0.0139                BM1W>0.00775 (RUL=10)  (symmetrized)
+           =0.0208<BM1(UP)<73718             =0.0139<BM1(DOWN)<49145    =0.00775<BM1W<27440  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+    BE2(UP)>0.00177                 BE2(DOWN)>0.00118               BE2W>1.74 (RUL=100)  (symmetrized)
+           =0.00177<BE2(UP)<6280             =0.00118<BE2(DOWN)<4186    =1.74<BE2W<6155946  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+   (limit value is suppressed in the new output file)
+**** new line:  35S  cG $B(M1)(W.u.)>0.0034 if M1, B(E2)(W.u.)>0.77 if E2                      
+
+----------------------------------------------------------------------------------------------------
+ 35S   L 4189.280  21 1/2-             35 FS     LT                             
+ 35S   G 387         7.7     LT [M1,E2]                                         
+ 35S   G 597         7.7     LT [E1]                                            
+ 35S   G 631.32    24 2.8    LT                                             &   
+ 35S   G 768         7.7     LT [M2]                                            
+ 35S   G 1250.61   5 8.4     10 [E1]                                            
+ 35S   G 1471        9.6     LT [M2]                                            
+ 35S   G 1840.2    12 91     10 [M1,E2]                                         
+ 35S   G 2196        15      LT [M3]                                            
+ 35S   G 2616.8    13 9.5    28 [E1]                                            
+ 35S   G 4188.95   5 100     10 [E1]                                            
+   
+--->gamma#10-1: EG=387.0 10(assumed)  BR(%g)=1.6 +24-16  BR(%g+%ce)=1.6 +24-16  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+                original RI=7.7 LT    assumed 0<RI<7.70 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.091E-14   9       3.80E-13    3    
+          2     6.8005E-04        1.7655E-01         2     9.59E-9     13      3.34E-7     4    
+          3     7.2765E-05        1.8890E-02         3     0.01284     23      0.447       8    
+          4     8.2380E-06        2.1389E-03         4     2.55E4      6       8.88E5      21   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4189.280
+   EG=387.0 10(assumed)  BR(%g)=1.6 16  BR(%g+%ce)=1.6 16  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=1.1E-12 +15-11 (sec)   T1/2(g+ce)=1.1E-12 +15-11 (sec)
+    BM1(UP)>0                       BM1(DOWN)>0                     BM1W>0 (RUL=10)
+           =0.320 +449-320                   =0.64 +90-64               =0.36 +50-36  (original)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)
+           =3.06 +430-306                    =6.1 +86-61                =9.0E3 +127-90  (original)
+  
+>>>>>>> Warning: BE2W LT 21659 upper limit exceeds RUL=100
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4189.280
+   EG=387.0 10(assumed)  BR(%g)=1.6 +24-16  BR(%g+%ce)=1.6 +24-16  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 2.1E-5 (sec)   T1/2(g+ce) LT 2.1E-5 (sec)
+    BM1(UP)>0                       BM1(DOWN)>0                     BM1W>0 (RUL=10)  (symmetrized)
+           =0<BM1(UP)<6563818                =0<BM1(DOWN)<1.31E7        =0<BM1W<7.33E6  (original)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+           =0<BE2(UP)<6.32E7                 =0<BE2(DOWN)<1.26E8        =0<BE2W<1.86E11  (original)
+  
+>>>>>>> Warning: BM1W LT 7.33E6 upper limit exceeds RUL=10
+>>>>>>> Warning: BE2W LT 1.86E11 upper limit exceeds RUL=100
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4189.280
+   EG=387.0 10(assumed)  BR(%g)= LT 1.64  BR(%g+%ce)= LT 1.64  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 1.03E-9 (sec)   T1/2(g+ce) LT 9.58E-10 (sec)
+    BM1(UP)>0                       BM1(DOWN)>0                     BM1W>0 (RUL=10)  (symmetrized)
+           =0<BM1(UP)<1064                   =0<BM1(DOWN)<2128          =0<BM1W<1188  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0.00103 (RUL=100)  (symmetrized)
+           =0<BE2(UP)<10224                  =0<BE2(DOWN)<20448         =0.00103<BE2W<3.01E7  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BM1W LT 1188 upper limit exceeds RUL=10
+>>>>>>> Warning: BE2W GT 0.00103 upper bound exceeds RUL=100
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#10-2: EG=597.0 10(assumed)  BR(%g)=1.6 +24-16  BR(%g+%ce)=1.6 +24-16  Mult=[E1]  CC=0 (=ti/ri-1)
+                original RI=7.7 LT    assumed 0<RI<7.70 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     2.971E-15   15      1.035E-13   5    
+          2     6.8005E-04        1.7655E-01         2     1.097E-9    9       3.82E-8     3    
+          3     7.2765E-05        1.8890E-02         3     6.18E-4     7       0.0215      3    
+          4     8.2380E-06        2.1389E-03         4     515         8       1.79E4      3    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4189.280
+   EG=597.0 10(assumed)  BR(%g)=1.6 16  BR(%g+%ce)=1.6 16  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=1.1E-12 +15-11 (sec)   T1/2(g+ce)=1.1E-12 +15-11 (sec)
+    BE1(DOWN)>0                     BE1W>0 (RUL=0.1)
+             =1.93E-5 +271-193          =0.00279 +392-279  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4189.280
+   EG=597.0 10(assumed)  BR(%g)=1.6 +24-16  BR(%g+%ce)=1.6 +24-16  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 2.1E-5 (sec)   T1/2(g+ce) LT 2.1E-5 (sec)
+    BE1(DOWN)>0                     BE1W>0 (RUL=0.1)  (symmetrized)
+             =0<BE1(DOWN)<394           =0<BE1W<57164  (original)
+  
+>>>>>>> Warning: BE1W LT 57164 upper limit exceeds RUL=0.1
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4189.280
+   EG=597.0 10(assumed)  BR(%g)= LT 1.64  BR(%g+%ce)= LT 1.64  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 9.94E-10 (sec)   T1/2(g+ce) LT 9.96E-10 (sec)
+    BE1(DOWN)>0                     BE1W>0 (RUL=0.1)  (symmetrized)
+             =0<BE1(DOWN)<0.0392        =0<BE1W<5.69  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BE1W LT 5.69 upper limit exceeds RUL=0.1
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#10-3: EG=631.32 24  BR(%g)=0.6 +9-6  BR(%g+%ce)=0.6 +9-6  CC=0 (=ti/ri-1)
+                original RI=2.8 LT    assumed 0<RI<2.80 (%DRI=100)
+   
+--->gamma#10-4: EG=768.0 10(assumed)  BR(%g)=1.6 +24-16  BR(%g+%ce)=1.6 +24-16  Mult=[M2]  CC=0 (=ti/ri-1)
+                original RI=7.7 LT    assumed 0<RI<7.70 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.396E-15   6       4.861E-14   19   
+          2     6.8005E-04        1.7655E-01         2     3.115E-10   20      1.085E-8    7    
+          3     7.2765E-05        1.8890E-02         3     1.059E-4    10      0.00369     4    
+          4     8.2380E-06        2.1389E-03         4     53.4        6       1859        22   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4189.280
+   EG=768.0 10(assumed)  BR(%g)=1.6 16  BR(%g+%ce)=1.6 16  Mult=[M2]  CC=0 (=ti/ri-1)
+   T1/2(g)=1.1E-12 +15-11 (sec)   T1/2(g+ce)=1.1E-12 +15-11 (sec)
+    BM2(UP)>0                       BM2(DOWN)>0                     BM2W>0 (RUL=3)
+           =6.0E2 +84-60                     =1.80E3 +253-180           =1.02E4 +143-102  (original)
+  
+>>>>>>> Warning: BM2W LT 24516 upper limit exceeds RUL=3
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4189.280
+   EG=768.0 10(assumed)  BR(%g)=1.6 +24-16  BR(%g+%ce)=1.6 +24-16  Mult=[M2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 2.1E-5 (sec)   T1/2(g+ce) LT 2.1E-5 (sec)
+    BM2(UP)>0                       BM2(DOWN)>0                     BM2W>5.13E-4 (RUL=3)  (symmetrized)
+           =0<BM2(UP)<1.23E10                =0<BM2(DOWN)<3.69E10       =5.13E-4<BM2W<2.09E11  (original)
+  
+>>>>>>> Warning: BM2W GT 5.13E-4 upper bound exceeds RUL=3
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4189.280
+   EG=768.0 10(assumed)  BR(%g)= LT 1.64  BR(%g+%ce)= LT 1.64  Mult=[M2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 1.0E-9 (sec)   T1/2(g+ce) LT 1.26E-9 (sec)
+    BM2(UP)>0                       BM2(DOWN)>2.02E-4               BM2W>0.00114 (RUL=3)  (symmetrized)
+           =0<BM2(UP)<1218073                =2.02E-4<BM2(DOWN)<3654219    =0.00114<BM2W<2.07E7  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BM2W GT 0.00114 upper bound exceeds RUL=3
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#10-5: EG=1250.61 5  BR(%g)=3.6 +15-10  BR(%g+%ce)=3.6 +15-10  Mult=[E1]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     3.2319E-16  4       1.12578E-14 14   
+          2     6.8005E-04        1.7655E-01         2     2.7201E-11  6       9.4766E-10  19   
+          3     7.2765E-05        1.8890E-02         3     3.4890E-6   10      1.2154E-4   4    
+          4     8.2380E-06        2.1389E-03         4     0.66298     24      23.093      8    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4189.280
+   EG=1250.61 5  BR(%g)=3.59 50  BR(%g+%ce)=3.59 50  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=4.9E-13 49 (sec)   T1/2(g+ce)=4.9E-13 49 (sec)
+    BE1(UP)>0                       BE1(DOWN)>0                     BE1W>0 (RUL=0.1)
+            2.30E-6 230                       4.60E-6 459                6.7E-4 67  (symmetrized)
+           =2.29E-6 +231-229                 =4.57E-6 +461-457          =6.7E-4 67  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  11.9%     T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4189.280
+   EG=1250.61 5  BR(%g)=3.6 +15-10  BR(%g+%ce)=3.6 +15-10  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=5E-13 +9-5 (sec)   T1/2(g+ce)=5E-13 +9-5 (sec)
+    BE1(UP)>8.38E-7                 BE1(DOWN)>1.68E-6               BE1W>2.43E-4 (RUL=0.1)  (symmetrized)
+           =8.38E-7<BE1(UP)<26.8             =1.68E-6<BE1(DOWN)<53.7    =2.43E-4<BE1W<7784  (original)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4189.280
+   EG=1250.61 5  BR(%g)=3.59 +37-55  BR(%g+%ce)=3.59 +38-56  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 4.88E-13 (sec)   T1/2(g+ce) LT 4.88E-13 (sec)
+    BE1(UP)>1.71E-6                 BE1(DOWN)>3.43E-6               BE1W>4.97E-4 (RUL=0.1)  (symmetrized)
+           =1.71E-6<BE1(UP)<7.88             =3.43E-6<BE1(DOWN)<15.8    =4.97E-4<BE1W<2285  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+   (limit value is suppressed in the new output file)
+**** new line:  35S B G BE1W GT 2.4E-4                                                         
+   
+--->gamma#10-6: EG=1471.0 10(assumed)  BR(%g)=2.1 +29-21  BR(%g+%ce)=2.1 +29-21  Mult=[M2]  CC=0 (=ti/ri-1)
+                original RI=9.6 LT    assumed 0<RI<9.60 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.986E-16   4       6.918E-15   14   
+          2     6.8005E-04        1.7655E-01         2     1.208E-11   4       4.209E-10   14   
+          3     7.2765E-05        1.8890E-02         3     1.120E-6    5       3.902E-5    19   
+          4     8.2380E-06        2.1389E-03         4     0.1539      10      5.36        3    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4189.280
+   EG=1471.0 10(assumed)  BR(%g)=2.1 20  BR(%g+%ce)=2.1 20  Mult=[M2]  CC=0 (=ti/ri-1)
+   T1/2(g)=9E-13 +12-9 (sec)   T1/2(g+ce)=9E-13 +12-9 (sec)
+    BM2(UP)>0                       BM2(DOWN)>0                     BM2W>0 (RUL=3)
+           =29.0 +407-290                    =87 +122-87                =4.9E2 +69-49  (original)
+  
+>>>>>>> Warning: BM2W LT 1184 upper limit exceeds RUL=3
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4189.280
+   EG=1471.0 10(assumed)  BR(%g)=2.1 +29-21  BR(%g+%ce)=2.1 +29-21  Mult=[M2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 1.67E-5 (sec)   T1/2(g+ce) LT 1.67E-5 (sec)
+    BM2(UP)>0                       BM2(DOWN)>0                     BM2W>0 (RUL=3)  (symmetrized)
+           =0<BM2(UP)<5.87E8                 =0<BM2(DOWN)<1.76E9        =0<BM2W<9.98E9  (original)
+  
+>>>>>>> Warning: BM2W LT 9.98E9 upper limit exceeds RUL=3
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4189.280
+   EG=1471.0 10(assumed)  BR(%g)= LT 2.05  BR(%g+%ce)= LT 2.05  Mult=[M2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 6.54E-10 (sec)   T1/2(g+ce) LT 7.9E-10 (sec)
+    BM2(UP)>0                       BM2(DOWN)>0                     BM2W>0 (RUL=3)  (symmetrized)
+           =0<BM2(UP)<62624                  =0<BM2(DOWN)<187872        =0<BM2W<1064143  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BM2W LT 1064143 upper limit exceeds RUL=3
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#10-7: EG=1840.2 12  BR(%g)=39 +11-8  BR(%g+%ce)=39 +11-8  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.0145E-16  20      3.534E-15   7    
+          2     6.8005E-04        1.7655E-01         2     3.943E-12   13      1.374E-10   5    
+          3     7.2765E-05        1.8890E-02         3     2.336E-7    11      8.14E-6     4    
+          4     8.2380E-06        2.1389E-03         4     0.02050     12      0.714       4    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4189.280
+   EG=1840.2 12  BR(%g)=38.9 37  BR(%g+%ce)=38.9 37  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=4.5E-14 45 (sec)   T1/2(g+ce)=4.5E-14 45 (sec)
+    BM1(UP)>0                       BM1(DOWN)>0                     BM1W>0 (RUL=10)
+           =0.071 71                         =0.141 141                 =0.079 79  (original)
+    BE2(UP)>0                       BE2(DOWN)>0                     BE2W>0 (RUL=100)
+           =0.0299 299                       =0.060 60                  =88 88  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  11.0%     T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4189.280
+   EG=1840.2 12  BR(%g)=39 +11-8  BR(%g+%ce)=39 +11-8  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=5E-14 +7-5 (sec)   T1/2(g+ce)=5E-14 +7-5 (sec)
+    BM1(UP)>0.0278                  BM1(DOWN)>0.0555                BM1W>0.031 (RUL=10)  (symmetrized)
+           =0.0278<BM1(UP)<748420            =0.0555<BM1(DOWN)<1496840    =0.031<BM1W<835756  (original)
+    BE2(UP)>0.0118                  BE2(DOWN)>0.0235                BE2W>34.6 (RUL=100)  (symmetrized)
+           =0.0118<BE2(UP)<317550            =0.0235<BE2(DOWN)<635099    =34.6<BE2W<9.34E8  (original)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4189.280
+   EG=1840.2 12  BR(%g)=38.9 +23-45  BR(%g+%ce)=38.9 +22-45  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 4.5E-14 (sec)   T1/2(g+ce) LT 4.5E-14 (sec)
+    BM1(UP)>0.0636                  BM1(DOWN)>0.127                 BM1W>0.071 (RUL=10)  (symmetrized)
+           =0.0636<BM1(UP)<241357            =0.127<BM1(DOWN)<482714    =0.071<BM1W<269522  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+    BE2(UP)>0.0268                  BE2(DOWN)>0.0537                BE2W>79 (RUL=100)  (symmetrized)
+           =0.0268<BE2(UP)<102321            =0.0537<BE2(DOWN)<204642    =79<BE2W<3.01E8  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+   (limit value is suppressed in the new output file)
+**** new line:  35S  cG $B(M1)(W.u.)>0.031 if M1, B(E2)(W.u.)>35 if E2                         
+   
+--->gamma#10-8: EG=2196.0 10(assumed)  BR(%g)=3.2 +43-32  BR(%g+%ce)=3.2 +43-32  Mult=[M3]  CC=0 (=ti/ri-1)
+                original RI=15 LT    assumed 0<RI<15.0 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     5.969E-17   8       2.079E-15   3    
+          2     6.8005E-04        1.7655E-01         2     1.629E-12   4       5.677E-11   13   
+          3     7.2765E-05        1.8890E-02         3     6.779E-8    22      2.361E-6    8    
+          4     8.2380E-06        2.1389E-03         4     0.004177    17      0.1455      6    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4189.280
+   EG=2196.0 10(assumed)  BR(%g)=3.2 31  BR(%g+%ce)=3.2 31  Mult=[M3]  CC=0 (=ti/ri-1)
+   T1/2(g)=6E-13 +8-6 (sec)   T1/2(g+ce)=6E-13 +8-6 (sec)
+    BM3(UP)>0                       BM3(DOWN)>0                     BM3W>0 (RUL=10)
+           =2.04E4 +285-204                  =8.2E4 +114-82             =4.3E6 +60-43  (original)
+  
+>>>>>>> Warning: BM3W LT 1.03E7 upper limit exceeds RUL=10
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4189.280
+   EG=2196.0 10(assumed)  BR(%g)=3.2 +43-32  BR(%g+%ce)=3.2 +43-32  Mult=[M3]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 1.05E-5 (sec)   T1/2(g+ce) LT 1.05E-5 (sec)
+    BM3(UP)>0.00106                 BM3(DOWN)>0.00424               BM3W>0.224 (RUL=10)  (symmetrized)
+           =0.00106<BM3(UP)<4.02E11          =0.00424<BM3(DOWN)<1.61E12    =0.224<BM3W<8.51E13  (original)
+  
+>>>>>>> Warning: BM3W GT 0.224 upper bound exceeds RUL=10
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4189.280
+   EG=2196.0 10(assumed)  BR(%g)= LT 3.2  BR(%g+%ce)= LT 3.2  Mult=[M3]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 5.03E-10 (sec)   T1/2(g+ce) LT 5.08E-10 (sec)
+    BM3(UP)>0.0023                  BM3(DOWN)>0.00919               BM3W>0.486 (RUL=10)  (symmetrized)
+           =0.0023<BM3(UP)<4.01E7            =0.00919<BM3(DOWN)<1.61E8    =0.486<BM3W<8.5E9  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BM3W GT 0.486 upper bound exceeds RUL=10
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#10-9: EG=2616.8 13  BR(%g)=4.1 +24-17  BR(%g+%ce)=4.1 +24-17  Mult=[E1]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     3.528E-17   5       1.2289E-15  18   
+          2     6.8005E-04        1.7655E-01         2     6.782E-13   17      2.363E-11   6    
+          3     7.2765E-05        1.8890E-02         3     1.987E-8    7       6.921E-7    24   
+          4     8.2380E-06        2.1389E-03         4     8.62E-4     4       0.03004     14   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4189.280
+   EG=2616.8 13  BR(%g)=4.1 12  BR(%g+%ce)=4.1 12  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=4.3E-13 +45-43 (sec)   T1/2(g+ce)=4.3E-13 +45-43 (sec)
+    BE1(UP)>0                       BE1(DOWN)>0                     BE1W>0 (RUL=0.1)
+            5.8E-7 58                         5.8E-7 58                  8.4E-5 84  (symmetrized)
+           =5.6E-7 +59-56                    =5.6E-7 +59-56             =8.2E-5 +85-82  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  29.5%     T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4189.280
+   EG=2616.8 13  BR(%g)=4.1 +24-17  BR(%g+%ce)=4.1 +24-17  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=4E-13 +10-4 (sec)   T1/2(g+ce)=4E-13 +10-4 (sec)
+    BE1(UP)>1.68E-7                 BE1(DOWN)>1.68E-7               BE1W>2.43E-5 (RUL=0.1)  (symmetrized)
+           =1.68E-7<BE1(UP)<7.53             =1.68E-7<BE1(DOWN)<7.53    =2.43E-5<BE1W<1092  (original)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4189.280
+   EG=2616.8 13  BR(%g)=4.1 +10-13  BR(%g+%ce)=4.1 +11-13  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 4.31E-13 (sec)   T1/2(g+ce) LT 4.31E-13 (sec)
+    BE1(UP)>1.2E-7                  BE1(DOWN)>1.2E-7                BE1W>1.74E-5 (RUL=0.1)  (symmetrized)
+           =1.2E-7<BE1(UP)<1.87              =1.2E-7<BE1(DOWN)<1.87     =1.74E-5<BE1W<271  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+   (limit value is suppressed in the new output file)
+**** new line:  35S B G BE1W GT 2.4E-5                                                         
+   
+--->gamma#10-10: EG=4188.95 5  BR(%g)=43 +11-9  BR(%g+%ce)=43 +11-9  Mult=[E1]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     8.6002E-18  3       2.99572E-16 11   
+          2     6.8005E-04        1.7655E-01         2     6.4517E-14  4       2.24769E-12 14   
+          3     7.2765E-05        1.8890E-02         3     7.3760E-10  6       2.56951E-8  22   
+          4     8.2380E-06        2.1389E-03         4     1.24926E-5  14      4.3515E-4   5    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4189.280
+   EG=4188.95 5  BR(%g)=42.7 37  BR(%g+%ce)=42.7 37  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=4.1E-14 41 (sec)   T1/2(g+ce)=4.1E-14 41 (sec)
+    BE1(UP)>0                       BE1(DOWN)>7.63E-10              BE1W>1.11E-7 (RUL=0.1)  (symmetrized)
+           =7.3E-7 73                        =1.45E-6 145               =2.10E-4 210  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4189.280
+   EG=4188.95 5  BR(%g)=43 +11-9  BR(%g+%ce)=43 +11-9  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=4E-14 +6-4 (sec)   T1/2(g+ce)=4E-14 +6-4 (sec)
+    BE1(UP)>2.9E-7                  BE1(DOWN)>5.79E-7               BE1W>8.4E-5 (RUL=0.1)  (symmetrized)
+           =2.9E-7<BE1(UP)<7.63              =5.79E-7<BE1(DOWN)<15.3    =8.4E-5<BE1W<2211  (original)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4189.280
+   EG=4188.95 5  BR(%g)=42.7 +22-47  BR(%g+%ce)=42.7 +22-47  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 4.1E-14 (sec)   T1/2(g+ce) LT 4.1E-14 (sec)
+    BE1(UP)>6.46E-7                 BE1(DOWN)>1.29E-6               BE1W>1.87E-4 (RUL=0.1)  (symmetrized)
+           =6.46E-7<BE1(UP)<2.5              =1.29E-6<BE1(DOWN)<5.01    =1.87E-4<BE1W<726  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+   (limit value is suppressed in the new output file)
+**** new line:  35S B G BE1W GT 8.4E-5                                                         
+
+----------------------------------------------------------------------------------------------------
+ 35S   L 4477.64   7  (1/2,3/2,5/2)+   62 FS     LT                             
+ 35S   G 595         8.2     LT                                                 
+ 35S   G 678         8.2     LT [E1]                                            
+ 35S   G 888         8.2     LT [M1,E2]                                         
+ 35S   G 922         8.2     LT                                                 
+ 35S   G 1059        16      LT [E2]                                            
+ 35S   G 1545        12      LT                                                 
+ 35S   G 1760.55   11 96     10 [E2]                                            
+ 35S   G 2131        13      LT [E1]                                            
+ 35S   G 2489.9      39      10                                                 
+ 35S   G 2905.1    4 86      12 [M1,E2]                                         
+ 35S   G 4479.7      26      5 [M1,E2]                                          
+   
+--->gamma#11-1: EG=595.0 10(assumed)  BR(%g)=1.4 +23-14  BR(%g+%ce)=1.4 +23-14  CC=0 (=ti/ri-1)
+                original RI=8.2 LT    assumed 0<RI<8.20 (%DRI=100)
+   
+--->gamma#11-2: EG=678.0 10(assumed)  BR(%g)=1.4 +23-14  BR(%g+%ce)=1.4 +23-14  Mult=[E1]  CC=0 (=ti/ri-1)
+                original RI=8.2 LT    assumed 0<RI<8.20 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     2.028E-15   9       7.07E-14    3    
+          2     6.8005E-04        1.7655E-01         2     5.81E-10    4       2.024E-8    15   
+          3     7.2765E-05        1.8890E-02         3     2.54E-4     3       0.00883     9    
+          4     8.2380E-06        2.1389E-03         4     163.9       22      5.71E3      8    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4477.64
+   EG=678.0 10(assumed)  BR(%g)=1.4 14  BR(%g+%ce)=1.4 14  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=2.2E-12 +30-22 (sec)   T1/2(g+ce)=2.2E-12 +30-22 (sec)
+    BE1(DOWN)>0                     BE1W>0 (RUL=0.1)
+             =6.5E-6 +92-65             =9.5E-4 +133-95  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4477.64
+   EG=678.0 10(assumed)  BR(%g)=1.4 +23-14  BR(%g+%ce)=1.4 +23-14  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 4.43E-5 (sec)   T1/2(g+ce) LT 4.43E-5 (sec)
+    BE1(DOWN)>0                     BE1W>0 (RUL=0.1)  (symmetrized)
+             =0<BE1(DOWN)<143           =0<BE1W<20718  (original)
+  
+>>>>>>> Warning: BE1W LT 20718 upper limit exceeds RUL=0.1
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4477.64
+   EG=678.0 10(assumed)  BR(%g)= LT 1.44  BR(%g+%ce)= LT 1.44  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 2.82E-9 (sec)   T1/2(g+ce) LT 2.49E-9 (sec)
+    BE1(DOWN)>0                     BE1W>0 (RUL=0.1)  (symmetrized)
+             =0<BE1(DOWN)<0.0146        =0<BE1W<2.11  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BE1W LT 2.11 upper limit exceeds RUL=0.1
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#11-3: EG=888.0 10(assumed)  BR(%g)=1.4 +23-14  BR(%g+%ce)=1.4 +23-14  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+                original RI=8.2 LT    assumed 0<RI<8.20 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     9.03E-16    3       3.145E-14   11   
+          2     6.8005E-04        1.7655E-01         2     1.507E-10   9       5.25E-9     3    
+          3     7.2765E-05        1.8890E-02         3     3.83E-5     3       0.001336    11   
+          4     8.2380E-06        2.1389E-03         4     14.45       15      503         5    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4477.64
+   EG=888.0 10(assumed)  BR(%g)=1.4 14  BR(%g+%ce)=1.4 14  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=2.2E-12 +30-22 (sec)   T1/2(g+ce)=2.2E-12 +30-22 (sec)
+    BM1(DOWN)>0                     BM1W>0 (RUL=10)
+             =0.0262 +369-262           =0.0147 +206-147  (original)
+    BE2(DOWN)>0                     BE2W>0 (RUL=100)
+             =0.048 +67-48              =70 +99-70  (original)
+  
+>>>>>>> Warning: BE2W LT 169 upper limit exceeds RUL=100
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4477.64
+   EG=888.0 10(assumed)  BR(%g)=1.4 +23-14  BR(%g+%ce)=1.4 +23-14  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 4.43E-5 (sec)   T1/2(g+ce) LT 4.43E-5 (sec)
+    BM1(DOWN)>0                     BM1W>0 (RUL=10)  (symmetrized)
+             =0<BM1(DOWN)<574684        =0<BM1W<320873  (original)
+    BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+             =0<BE2(DOWN)<1048122       =0<BE2W<1.54E9  (original)
+  
+>>>>>>> Warning: BM1W LT 320873 upper limit exceeds RUL=10
+>>>>>>> Warning: BE2W LT 1.54E9 upper limit exceeds RUL=100
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4477.64
+   EG=888.0 10(assumed)  BR(%g)= LT 1.44  BR(%g+%ce)= LT 1.44  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 3.12E-9 (sec)   T1/2(g+ce) LT 2.48E-9 (sec)
+    BM1(DOWN)>0                     BM1W>0 (RUL=10)  (symmetrized)
+             =0<BM1(DOWN)<53.1          =0<BM1W<29.6  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+    BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+             =0<BE2(DOWN)<96.5          =0<BE2W<141864  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BM1W LT 29.6 upper limit exceeds RUL=10
+>>>>>>> Warning: BE2W LT 141864 upper limit exceeds RUL=100
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#11-4: EG=922.0 10(assumed)  BR(%g)=1.4 +23-14  BR(%g+%ce)=1.4 +23-14  CC=0 (=ti/ri-1)
+                original RI=8.2 LT    assumed 0<RI<8.20 (%DRI=100)
+   
+--->gamma#11-5: EG=1059.0 10(assumed)  BR(%g)=2.8 +43-28  BR(%g+%ce)=2.8 +43-28  Mult=[E2]  CC=0 (=ti/ri-1)
+                original RI=16 LT    assumed 0<RI<16.0 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     5.323E-16   15      1.854E-14   5    
+          2     6.8005E-04        1.7655E-01         2     6.25E-11    3       2.177E-9    10   
+          3     7.2765E-05        1.8890E-02         3     1.118E-5    8       3.89E-4     3    
+          4     8.2380E-06        2.1389E-03         4     2.96        3       103.2       9    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4477.64
+   EG=1059.0 10(assumed)  BR(%g)=2.8 28  BR(%g+%ce)=2.8 28  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=1.1E-12 +16-11 (sec)   T1/2(g+ce)=1.1E-12 +16-11 (sec)
+    BE2(DOWN)>0                     BE2W>0 (RUL=100)
+             =0.039 +54-39              =57 +79-57  (original)
+  
+>>>>>>> Warning: BE2W LT 136 upper limit exceeds RUL=100
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4477.64
+   EG=1059.0 10(assumed)  BR(%g)=2.8 +43-28  BR(%g+%ce)=2.8 +43-28  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 2.22E-5 (sec)   T1/2(g+ce) LT 2.22E-5 (sec)
+    BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+             =0<BE2(DOWN)<817813        =0<BE2W<1.2E9  (original)
+  
+>>>>>>> Warning: BE2W LT 1.2E9 upper limit exceeds RUL=100
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4477.64
+   EG=1059.0 10(assumed)  BR(%g)= LT 2.82  BR(%g+%ce)= LT 2.82  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 1.5E-9 (sec)   T1/2(g+ce) LT 1.23E-9 (sec)
+    BE2(DOWN)>0                     BE2W>0 (RUL=100)  (symmetrized)
+             =0<BE2(DOWN)<96.2          =0<BE2W<141449  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BE2W LT 141449 upper limit exceeds RUL=100
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#11-6: EG=1545.0 10(assumed)  BR(%g)=2.1 +33-21  BR(%g+%ce)=2.1 +33-21  CC=0 (=ti/ri-1)
+                original RI=12 LT    assumed 0<RI<12.0 (%DRI=100)
+   
+--->gamma#11-7: EG=1760.55 11  BR(%g)=34 +12-9  BR(%g+%ce)=34 +12-9  Mult=[E2]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     1.15846E-16 22      4.0353E-15  8    
+          2     6.8005E-04        1.7655E-01         2     4.9199E-12  16      1.7140E-10  6    
+          3     7.2765E-05        1.8890E-02         3     3.1843E-7   14      1.1093E-5   5    
+          4     8.2380E-06        2.1389E-03         4     0.030533    17      1.0635      6    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4477.64
+   EG=1760.55 11  BR(%g)=33.8 35  BR(%g+%ce)=33.8 35  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=9E-14 9 (sec)   T1/2(g+ce)=9E-14 9 (sec)
+    BE2(DOWN)>0                     BE2W>0 (RUL=100)
+              0.0366 366                 54 54  (symmetrized)
+             =0.0365 +367-365           =54 54  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  10.4%     T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4477.64
+   EG=1760.55 11  BR(%g)=34 +12-9  BR(%g+%ce)=34 +12-9  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=9E-14 +15-9 (sec)   T1/2(g+ce)=9E-14 +15-9 (sec)
+    BE2(DOWN)>0.0137                BE2W>20.2 (RUL=100)  (symmetrized)
+             =0.0137<BE2(DOWN)<417391    =20.2<BE2W<6.14E8  (original)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4477.64
+   EG=1760.55 11  BR(%g)=33.8 +20-45  BR(%g+%ce)=33.8 +21-44  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 9.17E-14 (sec)   T1/2(g+ce) LT 9.17E-14 (sec)
+    BE2(DOWN)>0.0329                BE2W>48.4 (RUL=100)  (symmetrized)
+             =0.0329<BE2(DOWN)<115046    =48.4<BE2W<1.69E8  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+   (limit value is suppressed in the new output file)
+**** new line:  35S B G BE2W GT 20                                                             
+   
+--->gamma#11-8: EG=2131.0 10(assumed)  BR(%g)=2.3 +36-23  BR(%g+%ce)=2.3 +36-23  Mult=[E1]  CC=0 (=ti/ri-1)
+                original RI=13 LT    assumed 0<RI<13.0 (%DRI=100)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     6.532E-17   9       2.275E-15   3    
+          2     6.8005E-04        1.7655E-01         2     1.894E-12   5       6.597E-11   16   
+          3     7.2765E-05        1.8890E-02         3     8.37E-8     3       2.914E-6    10   
+          4     8.2380E-06        2.1389E-03         4     0.005475    23      0.1907      8    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4477.64
+   EG=2131.0 10(assumed)  BR(%g)=2.3 23  BR(%g+%ce)=2.3 23  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g)=1.4E-12 +19-14 (sec)   T1/2(g+ce)=1.4E-12 +19-14 (sec)
+    BE1(DOWN)>0                     BE1W>0 (RUL=0.1)
+             =3.33E-7 +466-333          =4.8E-5 +68-48  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  100.0%    T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4477.64
+   EG=2131.0 10(assumed)  BR(%g)=2.3 +36-23  BR(%g+%ce)=2.3 +36-23  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 2.76E-5 (sec)   T1/2(g+ce) LT 2.76E-5 (sec)
+    BE1(DOWN)>0                     BE1W>0 (RUL=0.1)  (symmetrized)
+             =0<BE1(DOWN)<7.12          =0<BE1W<1032  (original)
+  
+>>>>>>> Warning: BE1W LT 1032 upper limit exceeds RUL=0.1
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4477.64
+   EG=2131.0 10(assumed)  BR(%g)= LT 2.29  BR(%g+%ce)= LT 2.29  Mult=[E1]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 1.59E-9 (sec)   T1/2(g+ce) LT 1.72E-9 (sec)
+    BE1(DOWN)>0                     BE1W>0 (RUL=0.1)  (symmetrized)
+             =0<BE1(DOWN)<8.18E-4       =0<BE1W<0.119  (original)
+      (T1/2 and BR are limits. Monte-Carlo approach is not suitable.)
+  
+>>>>>>> Warning: BE1W LT 0.119 upper limit exceeds RUL=0.1
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+**** new line: (limit value is suppressed)
+   
+--->gamma#11-9: EG=2489.9 5(assumed)  BR(%g)=14 +8-5  BR(%g+%ce)=14 +8-5  CC=0 (=ti/ri-1)
+   
+--->gamma#11-10: EG=2905.1 4  BR(%g)=30 +12-8  BR(%g+%ce)=30 +12-8  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     2.5784E-17  11      8.981E-16   4    
+          2     6.8005E-04        1.7655E-01         2     4.022E-13   3       1.4011E-11  10   
+          3     7.2765E-05        1.8890E-02         3     9.559E-9    9       3.330E-7    3    
+          4     8.2380E-06        2.1389E-03         4     3.366E-4    4       0.011726    15   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4477.64
+   EG=2905.1 4  BR(%g)=30.3 37  BR(%g+%ce)=30.3 37  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=1.0E-13 10 (sec)   T1/2(g+ce)=1.0E-13 10 (sec)
+    BM1(DOWN)>0                     BM1W>0 (RUL=10)  (symmetrized)
+             =0.0158 158                =0.0088 88  (original)
+    BE2(DOWN)>0                     BE2W>0 (RUL=100)
+              0.00269 268                3.95 395  (symmetrized)
+             =0.00267 +269-267          =3.93 +396-393  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  14.0%     T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4477.64
+   EG=2905.1 4  BR(%g)=30 +12-8  BR(%g+%ce)=30 +12-8  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=1.0E-13 +18-10 (sec)   T1/2(g+ce)=1.0E-13 +18-10 (sec)
+    BM1(DOWN)>0.00575               BM1W>0.00321 (RUL=10)  (symmetrized)
+             =0.00575<BM1(DOWN)<182367    =0.00321<BM1W<101824  (original)
+    BE2(DOWN)>9.77E-4               BE2W>1.44 (RUL=100)  (symmetrized)
+             =9.77E-4<BE2(DOWN)<31015    =1.44<BE2W<4.56E7  (original)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4477.64
+   EG=2905.1 4  BR(%g)=30.3 +23-46  BR(%g+%ce)=30.3 +24-46  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 1.02E-13 (sec)   T1/2(g+ce) LT 1.02E-13 (sec)
+    BM1(DOWN)>0.0123                BM1W>0.00686 (RUL=10)  (symmetrized)
+             =0.0123<BM1(DOWN)<49622    =0.00686<BM1W<27706  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+    BE2(DOWN)>0.00209               BE2W>3.07 (RUL=100)  (symmetrized)
+             =0.00209<BE2(DOWN)<8436    =3.07<BE2W<1.24E7  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+   (limit value is suppressed in the new output file)
+**** new line:  35S  cG $B(M1)(W.u.)>0.0032 if M1, B(E2)(W.u.)>1.4 if E2                       
+   
+--->gamma#11-11: EG=4479.7 5(assumed)  BR(%g)=9.2 +49-31  BR(%g+%ce)=9.2 +49-31  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     7.0320E-18  24      2.4495E-16  8    
+          2     6.8005E-04        1.7655E-01         2     4.613E-14   3       1.6070E-12  9    
+          3     7.2765E-05        1.8890E-02         3     4.611E-10   4       1.6064E-8   13   
+          4     8.2380E-06        2.1389E-03         4     6.829E-6    7       2.3787E-4   24   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=4477.64
+   EG=4479.7 5(assumed)  BR(%g)=9.2 18  BR(%g+%ce)=9.2 18  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=3.4E-13 34 (sec)   T1/2(g+ce)=3.4E-13 34 (sec)
+    BM1(DOWN)>0                     BM1W>0 (RUL=10)
+              0.00131 131                7.3E-4 73  (symmetrized)
+             =0.00130 +132-130          =7.2E-4 +74-72  (original)
+    BE2(DOWN)>0                     BE2W>0 (RUL=100)
+              9.4E-5 94                  0.138 138  (symmetrized)
+             =9.3E-5 +95-93             =0.136 +139-136  (original)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  19.2%     T12:  100.0%    
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=4477.64
+   EG=4479.7 5(assumed)  BR(%g)=9.2 +49-31  BR(%g+%ce)=9.2 +49-31  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=3E-13 +7-3 (sec)   T1/2(g+ce)=3E-13 +7-3 (sec)
+    BM1(DOWN)>4.27E-4               BM1W>2.38E-4 (RUL=10)  (symmetrized)
+             =4.27E-4<BM1(DOWN)<16733    =2.38E-4<BM1W<9343  (original)
+    BE2(DOWN)>3.05E-5               BE2W>0.0449 (RUL=100)  (symmetrized)
+             =3.05E-5<BE2(DOWN)<1197    =0.0449<BE2W<1759801  (original)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=4477.64
+   EG=4479.7 5(assumed)  BR(%g)=9.2 +14-20  BR(%g+%ce)=9.2 +14-20  Mult=[M1,E2]  CC=0 (=ti/ri-1)
+   T1/2(g) LT 3.38E-13 (sec)   T1/2(g+ce) LT 3.38E-13 (sec)
+    BM1(DOWN)>8.1E-4                BM1W>4.52E-4 (RUL=10)  (symmetrized)
+             =8.1E-4<BM1(DOWN)<3952     =4.52E-4<BM1W<2206  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+    BE2(DOWN)>5.79E-5               BE2W>0.0851 (RUL=100)  (symmetrized)
+             =5.79E-5<BE2(DOWN)<282     =0.0851<BE2W<415232  (original)
+      (T1/2 is limit. Monte-Carlo approach is not suitable.)
+  
+  ** Minimum and Maximum approach is adopted due to limits in input values **
+  **   Results from other approaches might not be reliable for such case   **
+  
+#### suggested approach used for values below: MINIMUM and MAXIMUM
+
+  
+   (limit value is suppressed in the new output file)
+**** new line:  35S  cG $B(M1)(W.u.)>2.4|*10{+-4} if M1, B(E2)(W.u.)>0.045 if E2               
+
+----------------------------------------------------------------------------------------------------
+ 35S   L 5010.2    3  11/2-            0.45 PS   8                              
+ 35S   G 986.8     3 100     5 D                                                
+ 35S   G 3018.5    7 43      5 E2                                               
+   
+--->gamma#2-1: EG=986.8 3  BR(%g)=70.0 26  BR(%g+%ce)=69.9 27  Mult=D  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     6.579E-16   6       2.2916E-14  21   
+          2     6.8005E-04        1.7655E-01         2     8.893E-11   14      3.098E-9    5    
+          3     7.2765E-05        1.8890E-02         3     1.832E-5    4       6.382E-4    14   
+          4     8.2380E-06        2.1389E-03         4     5.592       15      194.8       5    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=5010.2
+   EG=986.8 3  BR(%g)=69.9 27  BR(%g+%ce)=69.9 27  Mult=D  CC=0 (=ti/ri-1)
+   T1/2(g)=6.4E-13 12 (sec)   T1/2(g+ce)=6.4E-13 12 (sec)
+    BE1(UP)=7.05E-6 128             BE1(DOWN)=7.05E-6 128           BE1W=0.001022 186 (RUL=0.1)  (symmetrized)
+    BM1(UP)=0.0638 116              BM1(DOWN)=0.0638 116            BM1W=0.0356 65 (RUL=10)  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    T12:  17.8%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=5010.2
+   EG=986.8 3  BR(%g)=69.9 35  BR(%g+%ce)=69.9 35  Mult=D  CC=0 (=ti/ri-1)
+   T1/2(g)=6.4E-13 +16-14 (sec)   T1/2(g+ce)=6.4E-13 +16-14 (sec)
+    BE1(UP)=7.05E-6 +196-137        BE1(DOWN)=7.05E-6 +196-137      BE1W=0.001022 +285-199 (RUL=0.1)
+    BM1(UP)=0.0638 +178-124         BM1(DOWN)=0.0638 +178-124       BM1W=0.0356 +99-69 (RUL=10)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=5010.2
+   EG=986.8 3  BR(%g)=70.0 26  BR(%g+%ce)=69.9 27  Mult=D  CC=0 (=ti/ri-1)
+   T1/2(g)=6.4E-13 12 (sec)   T1/2(g+ce)=6.4E-13 12 (sec)
+    BE1(UP)=7.05E-6 +158-110        BE1(DOWN)=7.05E-6 +158-110      BE1W=0.001022 +229-159 (RUL=0.1)
+    BE1(UP)=7.04E-6 +159-109        BE1(DOWN)=7.04E-6 +159-109      BE1W=0.001021 +230-158 (RUL=0.1) (Median)
+    BM1(UP)=0.0638 +143-99          BM1(DOWN)=0.0638 +143-99        BM1W=0.0356 +80-55 (RUL=10)
+    BM1(UP)=0.0637 +144-98          BM1(DOWN)=0.0637 +144-98        BM1W=0.0356 +80-55 (RUL=10) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BE1W=0.00102 +23-16 $BM1W=0.036 +8-6 
+     BE1UP=7.1E-6 +16-11 $BM1UP=0.064 +14-10 
+     BE1DOWN=7.051E-6 +11-8 $BM1DOWN=0.064 +26-18 
+  
+**** new line:  35S B G BE1W=0.00102 +23-16 $BM1W=0.036 +8-6                                   
+  symmetrized:  35S B G BE1W=0.00107 20 $BM1W=0.037 7                                          
+   
+--->gamma#2-2: EG=3018.5 7  BR(%g)=30.0 27  BR(%g+%ce)=30.0 27  Mult=E2  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     2.2985E-17  16      8.007E-16   6    
+          2     6.8005E-04        1.7655E-01         2     3.321E-13   4       1.1569E-11  14   
+          3     7.2765E-05        1.8890E-02         3     7.312E-9    12      2.547E-7    4    
+          4     8.2380E-06        2.1389E-03         4     2.385E-4    5       0.008307    17   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=5010.2
+   EG=3018.5 7  BR(%g)=30.1 27  BR(%g+%ce)=30.1 27  Mult=E2  CC=0 (=ti/ri-1)
+   T1/2(g)=1.50E-12 30 (sec)   T1/2(g+ce)=1.50E-12 30 (sec)
+    BE2(UP)=2.264E-4 450            BE2(DOWN)=1.509E-4 300          BE2W=0.2219 441 (RUL=100)  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  11.6%     T12:  17.8%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=5010.2
+   EG=3018.5 7  BR(%g)=30.1 35  BR(%g+%ce)=30.1 35  Mult=E2  CC=0 (=ti/ri-1)
+   T1/2(g)=1.50E-12 +50-40 (sec)   T1/2(g+ce)=1.50E-12 +50-40 (sec)
+    BE2(UP)=2.26E-4 +81-57          BE2(DOWN)=1.51E-4 +54-38        BE2W=0.222 +80-56 (RUL=100)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=5010.2
+   EG=3018.5 7  BR(%g)=30.0 27  BR(%g+%ce)=30.0 27  Mult=E2  CC=0 (=ti/ri-1)
+   T1/2(g)=1.50E-12 +32-28 (sec)   T1/2(g+ce)=1.50E-12 +32-29 (sec)
+    BE2(UP)=2.26E-4 +54-40          BE2(DOWN)=1.509E-4 +358-264     BE2W=0.222 +53-39 (RUL=100)
+    BE2(UP)=2.26E-4 +54-39          BE2(DOWN)=1.505E-4 +362-260     BE2W=0.221 +53-38 (RUL=100) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BE2W=0.22 +5-4 
+     BE2UP=2.3E-4 +6-4 
+     BE2DOWN=1.50906E-4 +37-27 
+  
+**** new line:  35S B G BE2W=0.22 +5-4                                                         
+  symmetrized:  35S B G BE2W=0.231 46                                                          
+
+----------------------------------------------------------------------------------------------------
+ 35S   L 6334      8                   50 FS     10                         A   
+ 35S   G 2329.5    9 100     20 D                                               
+ 35S   G 2535.8    11 50     6 E2                                               
+   
+--->gamma#2-1: EG=2329.5 9  BR(%g)=66.7 +48-59  BR(%g+%ce)=66.7 +47-59  Mult=D  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     5.001E-17   6       1.7419E-15  20   
+          2     6.8005E-04        1.7655E-01         2     1.2131E-12  24      4.226E-11   8    
+          3     7.2765E-05        1.8890E-02         3     4.485E-8    12      1.562E-6    4    
+          4     8.2380E-06        2.1389E-03         4     0.002456    9       0.0856      3    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=6334
+   EG=2329.5 9  BR(%g)=67 5  BR(%g+%ce)=67 5  Mult=D  CC=0 (=ti/ri-1)
+   T1/2(g)=7.5E-14 16 (sec)   T1/2(g+ce)=7.5E-14 16 (sec)
+    BE1(DOWN)=4.60E-6 99            BE1W=6.67E-4 143 (RUL=0.1)  (symmetrized)
+    BM1(DOWN)=0.0416 89             BM1W=0.02323 499 (RUL=10)  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  20.0%     T12:  20.0%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=6334
+   EG=2329.5 9  BR(%g)=67 +7-8  BR(%g+%ce)=67 +7-8  Mult=D  CC=0 (=ti/ri-1)
+   T1/2(g)=7.5E-14 +27-20 (sec)   T1/2(g+ce)=7.5E-14 +27-20 (sec)
+    BE1(DOWN)=4.60E-6 +172-122      BE1W=6.67E-4 +249-177 (RUL=0.1)
+    BM1(DOWN)=0.0416 +156-111       BM1W=0.0232 +87-62 (RUL=10)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=6334
+   EG=2329.5 9  BR(%g)=66.7 +48-59  BR(%g+%ce)=66.7 +47-59  Mult=D  CC=0 (=ti/ri-1)
+   T1/2(g)=7.5E-14 +17-15 (sec)   T1/2(g+ce)=7.5E-14 +18-15 (sec)
+    BE1(DOWN)=4.60E-6 +119-88       BE1W=6.67E-4 +173-128 (RUL=0.1)
+    BE1(DOWN)=4.58E-6 +122-86       BE1W=6.63E-4 +176-124 (RUL=0.1) (Median)
+    BM1(DOWN)=0.0416 +108-80        BM1W=0.0232 +60-45 (RUL=10)
+    BM1(DOWN)=0.0414 +110-78        BM1W=0.0231 +61-43 (RUL=10) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BE1W=6.7E-4 +17-13 $BM1W=0.023 +6-5 
+     BE1DOWN=4.60E-6 $BM1DOWN=0.0416 
+  
+**** new line:  35S B G BE1W=6.7E-4 +17-13 $BM1W=0.023 +6-5                                    
+  symmetrized:  35S B G BE1W=7.0E-4 15 $BM1W=0.024 5                                           
+   
+--->gamma#2-2: EG=2535.8 11  BR(%g)=33 +6-5  BR(%g+%ce)=33 +6-5  Mult=E2  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     3.877E-17   5       1.3504E-15  18   
+          2     6.8005E-04        1.7655E-01         2     7.936E-13   17      2.765E-11   6    
+          3     7.2765E-05        1.8890E-02         3     2.476E-8    8       8.63E-7     3    
+          4     8.2380E-06        2.1389E-03         4     0.001144    5       0.03986     16   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=6334
+   EG=2535.8 11  BR(%g)=33 5  BR(%g+%ce)=33 5  Mult=E2  CC=0 (=ti/ri-1)
+   T1/2(g)=1.50E-13 38 (sec)   T1/2(g+ce)=1.50E-13 38 (sec)
+    BE2(DOWN)=0.00360 91            BE2W=5.29 134 (RUL=100)  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  12.0%     T12:  20.0%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=6334
+   EG=2535.8 11  BR(%g)=33 +8-7  BR(%g+%ce)=33 +8-7  Mult=E2  CC=0 (=ti/ri-1)
+   T1/2(g)=1.5E-13 +8-5 (sec)   T1/2(g+ce)=1.5E-13 +8-5 (sec)
+    BE2(DOWN)=0.00360 +197-119      BE2W=5.29 +290-175 (RUL=100)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=6334
+   EG=2535.8 11  BR(%g)=33 +6-5  BR(%g+%ce)=33 +6-5  Mult=E2  CC=0 (=ti/ri-1)
+   T1/2(g)=1.50E-13 +39-36 (sec)   T1/2(g+ce)=1.50E-13 +39-37 (sec)
+    BE2(DOWN)=0.00360 +121-75       BE2W=5.29 +178-110 (RUL=100)
+    BE2(DOWN)=0.00363 +118-78       BE2W=5.34 +174-114 (RUL=100) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BE2W=5.3 +18-11 
+     BE2DOWN=0.00360 
+  
+**** new line:  35S B G BE2W=5.3 +18-11                                                        
+  symmetrized:  35S B G BE2W=5.7 15                                                            
+
+----------------------------------------------------------------------------------------------------
+ 35S   L 7179.8    3  15/2+            3.1 PS    12                         B   
+ 35S   G 827.8     6 2.2     8                                                  
+ 35S   G 880.2     4 5.9     8 [E2]                                             
+ 35S   G 1302.0    3 100     6 E2                                               
+   
+--->gamma#3-1: EG=827.8 6  BR(%g)=2.0 7  BR(%g+%ce)=2.0 +7-8  CC=0 (=ti/ri-1)
+   
+--->gamma#3-2: EG=880.2 4  BR(%g)=5.5 +8-7  BR(%g+%ce)=5.5 8  Mult=[E2]  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     9.270E-16   13      3.229E-14   5    
+          2     6.8005E-04        1.7655E-01         2     1.575E-10   4       5.487E-9    13   
+          3     7.2765E-05        1.8890E-02         3     4.078E-5    13      0.001421    5    
+          4     8.2380E-06        2.1389E-03         4     15.65       7       544.9       22   
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=7179.8
+   EG=880.2 4  BR(%g)=5.5 8  BR(%g+%ce)=5.5 8  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=5.7E-11 24 (sec)   T1/2(g+ce)=5.7E-11 24 (sec)
+    BE2(UP)=0.00251 104             BE2(DOWN)=0.00189 78            BE2W=2.77 114 (RUL=100)  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    RI:  13.6%     T12:  38.7%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=7179.8
+   EG=880.2 4  BR(%g)=5.5 +11-10  BR(%g+%ce)=5.5 +11-10  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=5.7E-11 +40-28 (sec)   T1/2(g+ce)=5.7E-11 +40-28 (sec)
+    BE2(UP)=0.00251 +243-103        BE2(DOWN)=0.00189 +182-78       BE2W=2.77 +268-114 (RUL=100)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=7179.8
+   EG=880.2 4  BR(%g)=5.5 +8-7  BR(%g+%ce)=5.5 8  Mult=[E2]  CC=0 (=ti/ri-1)
+   T1/2(g)=5.7E-11 +24-22 (sec)   T1/2(g+ce)=5.7E-11 +25-22 (sec)
+    BE2(UP)=0.00251 +159-76         BE2(DOWN)=0.00189 +119-57       BE2W=2.77 +175-84 (RUL=100)
+    BE2(UP)=0.00250 +160-75         BE2(DOWN)=0.00188 +120-56       BE2W=2.76 +176-83 (RUL=100) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BE2W=2.8 +18-9 
+     BE2UP=0.0025 +16-8 
+     BE2DOWN=0.0018858 +11-5 
+  
+**** new line:  35S B G BE2W=2.8 +18-9                                                         
+  symmetrized:  35S B G BE2W=3.4 13                                                            
+   
+--->gamma#3-3: EG=1302.0 3  BR(%g)=92.5 11  BR(%g+%ce)=92.5 11  Mult=E2  CC=0 (=ti/ri-1)
+   
+        Weisskopf single-particle B(XL)(s.p.)(down) and half-lives T1/2(s.p.) in second:
+                     (uncertainties in T1/2 are from uncertainty in EG)
+          L     B(EL)sp           B(ML)sp            L     T1/2(EL)sp          T1/2(ML)sp       
+          1     6.8971E-03        1.7910E+00         1     2.8641E-16  20      9.977E-15   7    
+          2     6.8005E-04        1.7655E-01         2     2.224E-11   3       7.748E-10   9    
+          3     7.2765E-05        1.8890E-02         3     2.632E-6    4       9.169E-5    15   
+          4     8.2380E-06        2.1389E-03         4     0.4614      10      16.07       3    
+   
+* <1> Use uncertainties from <TAYLOR EXPANSION> error propagation:
+   EL=7179.8
+   EG=1302.0 3  BR(%g)=92.5 11  BR(%g+%ce)=92.5 11  Mult=E2  CC=0 (=ti/ri-1)
+   T1/2(g)=3.4E-12 13 (sec)   T1/2(g+ce)=3.4E-12 13 (sec)
+    BE2(UP)=0.00602 233             BE2(DOWN)=0.00451 175           BE2W=6.64 257 (RUL=100)  (symmetrized)
+
+   **Results might be invalid due to limit or large relative uncertainties in input variables**
+   ** dv/v >= 10% is considered large:
+   **    T12:  38.7%     
+  
+* <2> Use uncertainties from <MINIMUM and MAXIMUM> of each variable:
+   EL=7179.8
+   EG=1302.0 3  BR(%g)=92.5 +17-19  BR(%g+%ce)=92.5 +17-19  Mult=E2  CC=0 (=ti/ri-1)
+   T1/2(g)=3.4E-12 14 (sec)   T1/2(g+ce)=3.4E-12 14 (sec)
+    BE2(UP)=0.00602 +400-177        BE2(DOWN)=0.00451 +300-133      BE2W=6.64 +441-196 (RUL=100)
+  
+* <3> Use uncertainties from <MONTE-CARLO> error propagation:
+   EL=7179.8
+   EG=1302.0 3  BR(%g)=92.5 11  BR(%g+%ce)=92.5 11  Mult=E2  CC=0 (=ti/ri-1)
+   T1/2(g)=3.4E-12 13 (sec)   T1/2(g+ce)=3.4E-12 13 (sec)
+    BE2(UP)=0.00602 +365-167        BE2(DOWN)=0.00451 +274-126      BE2W=6.64 +402-185 (RUL=100)
+    BE2(UP)=0.00601 +365-167        BE2(DOWN)=0.00451 +274-125      BE2W=6.63 +403-184 (RUL=100) (Median)
+  
+#### suggested approach used for values below: MONTE-CARLO
+     BE2W=6.6 +40-19 
+     BE2UP=0.0060 +37-17 
+     BE2DOWN=0.0045134 +25-12 
+  
+**** new line:  35S B G BE2W=6.6 +40-19                                                        
+  symmetrized:  35S B G BE2W=8.0 30                                                            
+
+
+Done calculations!
+57 warnings for calculated transition strengths.
+    (see warning messages starting with >>>>>)
+
+   # of bricc calculations: 1
+            Total time (s): 0.03
+  average time/calculation: 0.03
+
+# of gammas in calculation: 52
