@@ -1,5 +1,5 @@
 Program for consistency check: output for original lines grouped by level and gamma energies (version 08/01/2025)
-Generated at: Mon 08/18/2025 at 03:16:33 PM EDT
+Generated at: Mon 08/18/2025 at 07:39:17 PM EDT
 
 
 Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
@@ -371,10 +371,10 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 35S   G 3558.1    5 18      4                                                   --- EG=3558.1     FL=0.0        JF=3/2+
             34S(N,G) E=THERMAL--->F  F     35S   G 3558.1    5 18      4                                                   *** EG=3558.1     FL=0          JF=
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35S   L 3594.8    4  3/2+,5/2+                                             B    --- possible JPI=NA: check contradicting data
+ LEVEL************************************ 35S   L 3594.8    4  (7/2)+                                                B    --- possible JPI=NA: check contradicting data
                      *new XREF new tags    35S X L XREF=DEI(3596*)JK(3598*)L(*)N
                      *new XREF old tags    35S X L XREF=DEI(3596*)JK(3598*)L(*)N
-                     #old XREF in Adopted  35S X L XREF=C(3602)DEI(3596)JK(3598)LN
+                     #old XREF in Adopted  35S X L XREF=DEI(3596)JK(3598)LN
                  24MG(14N,3PG)--->D  D     35S   L 3594.7    3  7/2+                                                  B   
                 26MG(18O,2ANG)--->E  E     35S   L 3594.2    7  (7/2+)                                                A   
                       34S(D,P)--->I  I(*)  35S   L 3596      8                                                        M    *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
@@ -405,9 +405,10 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                 26MG(18O,2ANG)--->E  E     35S  cG $R{-ADO}=0.93 {I20}.
                     37CL(D,AG)--->L  L(*)  35S  cG RI$>95 in 1975VaYG.                                                    
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35S   L 3602      2                                   2        0.3       1     
+ LEVEL************************************ 35S   L 3602      2  3/2+,5/2+                                                  --- possible JPI=3/2+,5/2+
                      *new XREF new tags    35S X L XREF=CI(3596*)K(3598*)L(*)
                      *new XREF old tags    35S X L XREF=CI(3596*)K(3598*)L(*)
+                     #old XREF in Adopted  35S X L XREF=C
                  9BE(36S,35SG)--->C  C     35S   L 3602      2                                   2        0.3       1      *** possible JPI=3/2+,5/2+
                       34S(D,P)--->I  I(*)  35S   L 3596      8                                                        M    *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                    37CL(P,3HE)--->K  K(*)  35S   L 3598      10                                  2+4                       *** possible JPI=3/2+,5/2+,7/2+,9/2+
@@ -415,7 +416,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                  9BE(36S,35SG)--->C  C     35S  cL $b{-f}=3.0% {I7}, |s{-f}{+sp}=11.0 mb, R{-s}=0.60 {I12}.               
                       34S(D,P)--->I  I(*)  35S  cL E$other: 3595 {I9} (1971Va18).
                    37CL(P,3HE)--->K  K(*)  35S  cL $|s{-max}=27.8 |mb/sr.
- GAMMA------------------------------------ 35S   G 3602      2                                                            
+ GAMMA------------------------------------ 35S   G 3602      2 100                                                         --- EG=3602       FL=0.0        JF=3/2+
                  9BE(36S,35SG)--->C  C     35S   G 3602      2                                                             *** EG=3602       FL=0.0        JF=3/2+
                     37CL(D,AG)--->L  L(*)  35S   G 3598.2      100                                                         *** EG=3598.2     FL=0          JF=3/2+
                     37CL(D,AG)--->L  L(*)  35S  cG RI$>95 in 1975VaYG.                                                    
@@ -473,7 +474,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
             34S(N,G) E=THERMAL--->F  F     35S 2cG {I31} (1985Ra15), and 2.6 {I4} (1997Be42).
                      34S(D,PG)--->J  J     35S  cG $A{-2}=+0.19 {I12}, A{-4}=0.0 {I1} (1972Fr11).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35S   L 3818.1    4  5/2-,7/2-        0.28 PS   3                          A    --- possible JPI=5/2-,7/2-
+ LEVEL************************************ 35S   L 3818.1    4  (7/2)-           0.28 PS   3                          A    --- possible JPI=5/2-,7/2-
                      *new XREF new tags    35S X L XREF=CDEHJK(3811*)LN
                      *new XREF old tags    35S X L XREF=CDEHJK(3811*)LN
                      #old XREF in Adopted  35S X L XREF=CDEHJK(3811*)LN
@@ -539,7 +540,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                  9BE(36S,35SG)--->C  C     35S   G 1542      2                                                             *** EG=1542       FL=2353       JF=3/2-
  GAMMA------------------------------------ 35S   G 3884.8      33      7                                                   --- EG=3884.8     FL=0.0        JF=3/2+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35S   L 4022.3    10 11/2-            0.32 PS   3                          A    --- possible JPI=(3/2-)
+ LEVEL************************************ 35S   L 4022.3    10 (11/2)-          0.32 PS   3                          A    --- possible JPI=(3/2-)
                      *new XREF new tags    35S X L XREF=DEI(4025*)LMN
                      *new XREF old tags    35S X L XREF=DEI(4025*)LMN
                      #old XREF in Adopted  35S X L XREF=DEMN
@@ -550,7 +551,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        160GD(34S,XG),(37CL,XG)--->M  M     35S   L 4022         (9/2-)                                                    
                208PB(36S,35SG)--->N  N     35S   L 4023.1    22 (9/2-,11/2-)                                              
                       34S(D,P)--->I  I(*)  35S  cL E$weighted average of 4025 {I10} (1969Mo12) and 4025 {I10} (1971Va18).
- GAMMA------------------------------------ 35S   G 207.0     5 0.59    30                                                  --- EG=207.0      FL=3818.1     JF=5/2-,7/2-
+ GAMMA------------------------------------ 35S   G 207.0     5 0.59    30                                                  --- EG=207.0      FL=3818.1     JF=(7/2)-
                  24MG(14N,3PG)--->D  D     35S   G 207.0     5 0.59    30                                                  *** EG=207.0      FL=3816.0     JF=9/2-
  GAMMA------------------------------------ 35S   G 2032.0    3 100     6 E2                                                --- EG=2032.0     FL=1991.28    JF=7/2-
                  24MG(14N,3PG)--->D  D     35S   G 2031.8    3 100     6  E2                                               *** EG=2031.8     FL=1991.4     JF=7/2-
@@ -596,7 +597,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 35S   G 4024.8      36      LT                                                  --- EG=4024.8     FL=0.0        JF=3/2+
                      34S(D,PG)--->J  J     35S   G 4024.8      36      LT                                                  *** EG=4024.8     FL=0          JF=3/2+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35S   L 4106.4    4  (5/2)+           55 FS     LT                              --- possible JPI=(5/2+)
+ LEVEL************************************ 35S   L 4106.4    4  (3/2-,5/2+)      55 FS     LT                              --- possible JPI=(5/2+)
                      *new XREF new tags    35S X L XREF=FIJKL
                      *new XREF old tags    35S X L XREF=FIJKL
                      #old XREF in Adopted  35S X L XREF=FIJKL
@@ -610,19 +611,19 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                    37CL(P,3HE)--->K  K     35S  cL $|s{-max}=8.8 |mb/sr.
  GAMMA------------------------------------ 35S   G 549         4.6     LT                                                  --- EG=549        FL=3558.09    JF=(3/2-,5/2+)
                      34S(D,PG)--->J  J     35S   G 549         4.6     LT                                                  *** EG=549        FL=3558       JF=(3/2-,5/2+)
- GAMMA------------------------------------ 35S   G 686         4.6     LT                                                  --- EG=686        FL=3421.1     JF=5/2+
+ GAMMA------------------------------------ 35S   G 686         4.6     LT [M1,E2]                                          --- EG=686        FL=3421.1     JF=5/2+
                      34S(D,PG)--->J  J     35S   G 686         4.6     LT                                                  *** EG=686        FL=3421.0     JF=5/2+
- GAMMA------------------------------------ 35S   G 1172        15      7                                                   --- EG=1172       FL=2938.64    JF=(3/2)+
+ GAMMA------------------------------------ 35S   G 1172        15      7 [M1,E2]                                           --- EG=1172       FL=2938.64    JF=(3/2)+
                      34S(D,PG)--->J  J     35S   G 1172        15      7                                                   *** EG=1172       FL=2935       JF=3/2+
- GAMMA------------------------------------ 35S   G 1389        12      LT                                                  --- EG=1389       FL=2717.00    JF=5/2+
+ GAMMA------------------------------------ 35S   G 1389        12      LT [M1,E2]                                          --- EG=1389       FL=2717.00    JF=5/2+
                      34S(D,PG)--->J  J     35S   G 1389        12      LT                                                  *** EG=1389       FL=2718.0     JF=5/2+
- GAMMA------------------------------------ 35S   G 1758        5.8     LT                                                  --- EG=1758       FL=2347.789   JF=3/2-
+ GAMMA------------------------------------ 35S   G 1758        5.8     LT [E1]                                             --- EG=1758       FL=2347.789   JF=3/2-
                      34S(D,PG)--->J  J     35S   G 1758        5.8     LT                                                  *** EG=1758       FL=2348.8     JF=3/2-
- GAMMA------------------------------------ 35S   G 2114        8.1     LT                                                  --- EG=2114       FL=1991.28    JF=7/2-
+ GAMMA------------------------------------ 35S   G 2114        8.1     LT [E1]                                             --- EG=2114       FL=1991.28    JF=7/2-
                      34S(D,PG)--->J  J     35S   G 2114        8.1     LT                                                  *** EG=2114       FL=1992.9     JF=7/2-
- GAMMA------------------------------------ 35S   G 2535        5.8     LT                                                  --- EG=2535       FL=1572.378   JF=1/2+
+ GAMMA------------------------------------ 35S   G 2535        5.8     LT [E2]                                             --- EG=2535       FL=1572.378   JF=1/2+
                      34S(D,PG)--->J  J     35S   G 2535        5.8     LT                                                  *** EG=2535       FL=1572.33    JF=1/2+
- GAMMA------------------------------------ 35S   G 4105.3    8 100     7                                                   --- EG=4105.3     FL=0.0        JF=3/2+
+ GAMMA------------------------------------ 35S   G 4105.3    8 100     7 [M1,E2]                                           --- EG=4105.3     FL=0.0        JF=3/2+
             34S(N,G) E=THERMAL--->F  F     35S   G 4105.3    8 100                                                         *** EG=4105.3     FL=0          JF=
                      34S(D,PG)--->J  J     35S   G 4107        100     7                                                   *** EG=4107       FL=0          JF=3/2+
                     37CL(D,AG)--->L  L     35S   G 4108        100                                                         *** EG=4108       FL=0          JF=3/2+
@@ -631,7 +632,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  LEVEL************************************ 35S   L 4180      3  (1/2,3/2,5/2+)                                             --- possible JPI=1/2-,3/2-
                      *new XREF new tags    35S X L XREF=H(4190*)I(*)J(4189*)K(4186*)L
                      *new XREF old tags    35S X L XREF=H(4190*)I(*)J(4189*)K(4186*)L
-                     #old XREF in Adopted  35S X L XREF=L
+                     #old XREF in Adopted  35S X L XREF=K(4186*)L
                   34S(POL D,P)--->H  H(*)  35S   L 4190         1/2-                             1        0.15,0.13   A    *** possible JPI=1/2-,3/2-
                       34S(D,P)--->I  I(*)  35S   L 4189.87   26 1/2-                             1        0.17      2 P    *** possible JPI=1/2-,3/2-
                      34S(D,PG)--->J  J(*)  35S   L 4189      2  1/2-             35 FS     LT                             
@@ -651,7 +652,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  LEVEL************************************ 35S   L 4189.280  21 1/2-             35 FS     LT                              --- possible JPI=(3/2-): 2796.74g from 6986.10, (1/2,3/2,5/2)
                      *new XREF new tags    35S X L XREF=FH(4190*)I(*)J(4189*)K(4186*)L
                      *new XREF old tags    35S X L XREF=FH(4190*)I(*)J(4189*)K(4186*)L
-                     #old XREF in Adopted  35S X L XREF=FHIJKL
+                     #old XREF in Adopted  35S X L XREF=FHIJK(4186*)
             34S(N,G) E=THERMAL--->F  F     35S   L 4189.243  33                                                           
                   34S(POL D,P)--->H  H(*)  35S   L 4190         1/2-                             1        0.15,0.13   A    *** possible JPI=1/2-,3/2-
                       34S(D,P)--->I  I(*)  35S   L 4189.87   26 1/2-                             1        0.17      2 P    *** possible JPI=1/2-,3/2-
@@ -665,7 +666,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                    37CL(P,3HE)--->K  K(*)  35S  cL $|s{-max}=5.6 |mb/sr.
  GAMMA------------------------------------ 35S   G 387         7.7     LT [M1,E2]                                          --- EG=387        FL=3801.958   JF=3/2-
                      34S(D,PG)--->J  J(*)  35S   G 387         7.7     LT                                                  *** EG=387        FL=3802.0     JF=3/2-
- GAMMA------------------------------------ 35S   G 597         7.7     LT [E1]                                             --- EG=597        FL=3594.8     JF=3/2+,5/2+
+ GAMMA------------------------------------ 35S   G 597         7.7     LT [E1]                                             --- EG=597        FL=3594.8     JF=(7/2)+
                      34S(D,PG)--->J  J(*)  35S   G 597         7.7     LT                                                  *** EG=597        FL=3592       JF=(1/2TO7/2)+
  GAMMA------------------------------------ 35S   G 631.32    24 2.8    LT                                             &    --- EG=631.32     FL=3558.09    JF=(3/2-,5/2+)
             34S(N,G) E=THERMAL--->F  F     35S   G 631.32    24 2.4    4                                              &    *** EG=631.32     FL=3558.082   JF=
@@ -734,7 +735,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      34S(D,PG)--->J  J     35S   G 595         8.2     LT                                                  *** EG=595        FL=3885.0     JF=(3/2-,5/2)
  GAMMA------------------------------------ 35S   G 678         8.2     LT [E1]                                             --- EG=678        FL=3801.958   JF=3/2-
                      34S(D,PG)--->J  J     35S   G 678         8.2     LT                                                  *** EG=678        FL=3802.0     JF=3/2-
- GAMMA------------------------------------ 35S   G 888         8.2     LT [M1,E2]                                          --- EG=888        FL=3594.8     JF=3/2+,5/2+
+ GAMMA------------------------------------ 35S   G 888         8.2     LT [M1,E2]                                          --- EG=888        FL=3594.8     JF=(7/2)+
                      34S(D,PG)--->J  J     35S   G 888         8.2     LT                                                  *** EG=888        FL=3592       JF=(1/2TO7/2)+
  GAMMA------------------------------------ 35S   G 922         8.2     LT                                                  --- EG=922        FL=3558.09    JF=(3/2-,5/2+)
                      34S(D,PG)--->J  J     35S   G 922         8.2     LT                                                  *** EG=922        FL=3558       JF=(3/2-,5/2+)
@@ -797,12 +798,12 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       34S(D,P)--->I  I     35S   L 4837      8                                                        M    *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                    37CL(P,3HE)--->K  K     35S   L 4843      10                                  2                         *** possible JPI=1/2+,3/2+,5/2+,7/2+,9/2+
                    37CL(P,3HE)--->K  K     35S  cL $|s{-max}=15.9 |mb/sr.
- GAMMA------------------------------------ 35S   G 1006.8    2 66      15 D                                                --- EG=1006.8     FL=3818.1     JF=5/2-,7/2-
+ GAMMA------------------------------------ 35S   G 1006.8    2 66      15 D                                                --- EG=1006.8     FL=3818.1     JF=(7/2)-
                  24MG(14N,3PG)--->D  D     35S   G 1006.8    2 73      9  D                                                *** EG=1006.8     FL=3816.0     JF=9/2-
                 26MG(18O,2ANG)--->E  E     35S   G 1007.2    11 36     18  D                                               *** EG=1007.2     FL=3815.0     JF=(9/2-)
                  24MG(14N,3PG)--->D  D     35S  cG $R{-ADO}=1.37 {I11}, consistent with |DJ=0.                            
                 26MG(18O,2ANG)--->E  E     35S  cG $R{-ADO}=0.87 {I15}.
- GAMMA------------------------------------ 35S   G 1228.1    3 100     9 D                                                 --- EG=1228.1     FL=3594.8     JF=3/2+,5/2+
+ GAMMA------------------------------------ 35S   G 1228.1    3 100     9 D                                                 --- EG=1228.1     FL=3594.8     JF=(7/2)+
                  24MG(14N,3PG)--->D  D     35S   G 1228.1    3 100     9  D                                                *** EG=1228.1     FL=3594.7     JF=7/2+
                 26MG(18O,2ANG)--->E  E     35S   G 1228.3    6 100     18                                                  *** EG=1228.3     FL=3594.2     JF=(7/2+)
                  24MG(14N,3PG)--->D  D     35S  cG $R{-ADO}=0.78 {I9}.                                                    
@@ -815,7 +816,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      #old XREF in Adopted  35S X L XREF=DE
                  24MG(14N,3PG)--->D  D     35S   L 4899.7    4  9/2+                                                      
                 26MG(18O,2ANG)--->E  E     35S   L 4899.6    7  (9/2+)                                                    
- GAMMA------------------------------------ 35S   G 1305.3    4 55      18                                                  --- EG=1305.3     FL=3594.8     JF=3/2+,5/2+
+ GAMMA------------------------------------ 35S   G 1305.3    4 55      18                                                  --- EG=1305.3     FL=3594.8     JF=(7/2)+
                  24MG(14N,3PG)--->D  D     35S   G 1304.8    12 55     18                                                  *** EG=1304.8     FL=3594.7     JF=7/2+
                 26MG(18O,2ANG)--->E  E     35S   G 1305.3    4 100                                                         *** EG=1305.3     FL=3594.2     JF=(7/2+)
  GAMMA------------------------------------ 35S   G 2908.3    5 100     18 D                                                --- EG=2908.3     FL=1991.28    JF=7/2-
@@ -916,7 +917,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      #old XREF in Adopted  35S X L XREF=DE
                  24MG(14N,3PG)--->D  D     35S   L 5010.2    3  11/2-            0.45 PS   8                              
                 26MG(18O,2ANG)--->E  E     35S   L 5009.8    6  (11/2-)                                                   
- GAMMA------------------------------------ 35S   G 986.8     3 100     5 D                                                 --- EG=986.8      FL=4022.3     JF=11/2-
+ GAMMA------------------------------------ 35S   G 986.8     3 100     5 D                                                 --- EG=986.8      FL=4022.3     JF=(11/2)-
                  24MG(14N,3PG)--->D  D     35S   G 986.9     3 100     5  D                                                *** EG=986.9      FL=4023.2     JF=11/2-
                 26MG(18O,2ANG)--->E  E     35S   G 986.6     3 100         D                                               *** EG=986.6      FL=4023.1     JF=(11/2-)
                  24MG(14N,3PG)--->D  D     35S B G BE1W=0.00102 +22-16 $BM1W=0.036 +8-6                                   
@@ -957,7 +958,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      #old XREF in Adopted  35S X L XREF=DE
                  24MG(14N,3PG)--->D  D     35S   L 5412.2    3  9/2+                                                      
                 26MG(18O,2ANG)--->E  E     35S   L 5412.4    6  (9/2+)                                                    
- GAMMA------------------------------------ 35S   G 1389.0    4 100     10 D                                                --- EG=1389.0     FL=4022.3     JF=11/2-
+ GAMMA------------------------------------ 35S   G 1389.0    4 100     10 D                                                --- EG=1389.0     FL=4022.3     JF=(11/2)-
                  24MG(14N,3PG)--->D  D     35S   G 1389.0    4 100     10 D                                                *** EG=1389.0     FL=4023.2     JF=11/2-
                 26MG(18O,2ANG)--->E  E     35S   G 1389.0    8 100                                                         *** EG=1389.0     FL=4023.1     JF=(11/2-)
                  24MG(14N,3PG)--->D  D     35S  cG $R{-ADO}=0.79 {I11}.                                                   
@@ -1041,15 +1042,15 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                 26MG(18O,2ANG)--->E  E     35S   G 1055.6    4 100     26  D                                               *** EG=1055.6     FL=4822.4     JF=(9/2+)
                  24MG(14N,3PG)--->D  D     35S  cG $R{-ADO}=0.72 {I11}.                                                   
                 26MG(18O,2ANG)--->E  E     35S  cG $R{-ADO}=0.67 {I18}.
- GAMMA------------------------------------ 35S   G 1854.4    4 44.7    26                                                  --- EG=1854.4     FL=4022.3     JF=11/2-
+ GAMMA------------------------------------ 35S   G 1854.4    4 44.7    26                                                  --- EG=1854.4     FL=4022.3     JF=(11/2)-
                  24MG(14N,3PG)--->D  D     35S   G 1854.4    4 44.7    26                                                  *** EG=1854.4     FL=4023.2     JF=11/2-
                 26MG(18O,2ANG)--->E  E     35S   G 1854.5    42 72     36                                                  *** EG=1854.5     FL=4023.1     JF=(11/2-)
- GAMMA------------------------------------ 35S   G 2061.6    4 98      5 D                                                 --- EG=2061.6     FL=3818.1     JF=5/2-,7/2-
+ GAMMA------------------------------------ 35S   G 2061.6    4 98      5 D                                                 --- EG=2061.6     FL=3818.1     JF=(7/2)-
                  24MG(14N,3PG)--->D  D     35S   G 2061.5    3 100     5  D                                                *** EG=2061.5     FL=3816.0     JF=9/2-
                 26MG(18O,2ANG)--->E  E     35S   G 2063.3    14 82     16  D                                               *** EG=2063.3     FL=3815.0     JF=(9/2-)
                  24MG(14N,3PG)--->D  D     35S  cG $R{-ADO}=0.65 {I9}.                                                    
                 26MG(18O,2ANG)--->E  E     35S  cG $R{-ADO}=0.58 {I41}.
- GAMMA------------------------------------ 35S   G 2283.0    4 52      16                                                  --- EG=2283.0     FL=3594.8     JF=3/2+,5/2+
+ GAMMA------------------------------------ 35S   G 2283.0    4 52      16                                                  --- EG=2283.0     FL=3594.8     JF=(7/2)+
                  24MG(14N,3PG)--->D  D     35S   G 2282.9    4 68.4    26                                                  *** EG=2282.9     FL=3594.7     JF=7/2+
                 26MG(18O,2ANG)--->E  E     35S   G 2283.5    10 36     8                                                   *** EG=2283.5     FL=3594.2     JF=(7/2+)
  GAMMA------------------------------------ 35S   G 3886.0    13 7.9    26                                                  --- EG=3886.0     FL=1991.28    JF=7/2-
@@ -1121,9 +1122,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 35S   G 887.0     7 40      10 D                                                --- EG=887.0      FL=5412.2     JF=9/2+
                  24MG(14N,3PG)--->D  D     35S   G 887.0     7 40      10 D                                                *** EG=887.0      FL=5412.2     JF=9/2+
                  24MG(14N,3PG)--->D  D     35S  cG $R{-ADO}=0.6 {I3}.                                                     
- GAMMA------------------------------------ 35S   G 2275.9    6 100     20                                                  --- EG=2275.9     FL=4022.3     JF=11/2-
+ GAMMA------------------------------------ 35S   G 2275.9    6 100     20                                                  --- EG=2275.9     FL=4022.3     JF=(11/2)-
                  24MG(14N,3PG)--->D  D     35S   G 2275.9    6 100     20                                                  *** EG=2275.9     FL=4023.2     JF=11/2-
- GAMMA------------------------------------ 35S   G 2483.6    8 90      20                                                  --- EG=2483.6     FL=3818.1     JF=5/2-,7/2-
+ GAMMA------------------------------------ 35S   G 2483.6    8 90      20                                                  --- EG=2483.6     FL=3818.1     JF=(7/2)-
                  24MG(14N,3PG)--->D  D     35S   G 2483.6    8 90      20                                                  *** EG=2483.6     FL=3816.0     JF=9/2-
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35S   L 6334      8                   50 FS     10                         A    --- possible JPI=NA: check contradicting data
@@ -1134,7 +1135,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       34S(D,P)--->I  I     35S   L 6334      8                                                        M    *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                    37CL(P,3HE)--->K  K(*)  35S   L 6347      10                                  (2)                       *** possible JPI=(1/2+,3/2+,5/2+,7/2+,9/2+)
                    37CL(P,3HE)--->K  K(*)  35S  cL $|s{-max}=4.8 |mb/sr.
- GAMMA------------------------------------ 35S   G 2329.5    9 100     20 D                                                --- EG=2329.5     FL=4022.3     JF=11/2-
+ GAMMA------------------------------------ 35S   G 2329.5    9 100     20 D                                                --- EG=2329.5     FL=4022.3     JF=(11/2)-
                  24MG(14N,3PG)--->D  D     35S   G 2329.5    9 100     20 D                                                *** EG=2329.5     FL=4023.2     JF=11/2-
                  24MG(14N,3PG)--->D  D     35S B G BE1W=6.7E-4 +17-13 $BM1W=0.023 +6-5                                    
                  24MG(14N,3PG)--->D  D     35S  cG $R{-ADO}=0.8 {I3}.                                                     
@@ -1996,7 +1997,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
 
 Statistics of levels and gammas from all datasets of 35S:
                              DSID     #of levels       #of gammas       level range
-           ADOPTED LEVELS, GAMMAS        151              153           0.0        to    12469.1
+           ADOPTED LEVELS, GAMMAS        152              154           0.0        to    12469.1
             35P B- DECAY (47.3 S)        3                2             0          to     2938.4
                        2H(34S,PG)        3                2             0          to       2350
                     9BE(36S,35SG)        11               12            0.0        to       4028
@@ -2012,7 +2013,7 @@ Statistics of levels and gammas from all datasets of 35S:
           160GD(34S,XG),(37CL,XG)        3                2             0          to       4022
                   208PB(36S,35SG)        10               14            0          to     4023.1
 
-                         IN TOTAL        454              416           0.0        to    12469.1
+                         IN TOTAL        455              417           0.0        to    12469.1
 
 
 
@@ -2020,12 +2021,12 @@ Statistics of levels and gammas from all datasets of 35S:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                    35S        151          153          454          416            2395             14
+                    35S        152          154          455          417            2398             14
 
-               IN TOTAL        151          153          454          416            2395             14
+               IN TOTAL        152          154          455          417            2398             14
 
 Number of nuclides     : 1
 Number of blocks       : 15
 Number of references   : 93
-Number of lines in files: 2410
+Number of lines in files: 2413
 (from all blocks including abstract, comment, reference)
