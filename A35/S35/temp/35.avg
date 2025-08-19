@@ -1,5 +1,5 @@
 Program for consistency check: output for averaging results for gamma energies and intensities (version 08/01/2025)
-Generated at: Tue 08/19/2025 at 04:19:24 PM EDT
+Generated at: Tue 08/19/2025 at 04:48:42 PM EDT
 
 **************** Level=1572.378 in 35S     *******************ID#=1-2
 
@@ -2143,17 +2143,23 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 ------ average E------
 Data points of E record
-*                     (14N,3PG)   4822.9(3)           weight=80.00%
-*                    (18O,2ANG)   4822.4(6)           weight=20.00%
+*                     (14N,3PG)   4822.9(3)           weight=79.91%
+*                    (18O,2ANG)   4822.4(6)           weight=19.98%
+                          (D,P)   4837(8)             weight=0.11%
+### (weight<2.00% not considered in weighted average)
+                          (D,P)   4837(8)             weight=0.11%
 
 Averaging results:
            weighted average:      4822.80(27)          (internal)
                                   4822.80(20)          (external)
                                   chi**2/(n-1)=0.556     [critical=4.605]
-         unweighted average:      4822.65(25)         
-           (of all values)        chi**2/(n-1)=0.125     [critical=4.605]
+           weighted average:      4822.82(27)          (internal)
+            (of all values)       4822.8(4)            (external)
+                                  chi**2/(n-1)=1.851     [critical=3.780]
+         unweighted average:      4827(5)             
+           (of all values)        chi**2/(n-1)=68.704     [critical=3.780]
 
-   suggested adopted result:      4822.8(3)           
+   suggested adopted result:      4822.8(4)           
        (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
@@ -2162,11 +2168,15 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 ### weighted average comment:
  35S  cL E$weighted average of 4822.9 {I3} from ({+14}N,3p|g) and 4822.4 {I6}   
- 35S 2cL from ({+18}O,2|an|g)                                                   
+ 35S 2cL from ({+18}O,2|an|g). Other: 4837 {I8} from (d,p)                      
+
+### weighted average comment (all values):
+ 35S  cL E$weighted average of 4822.9 {I3} from ({+14}N,3p|g), 4822.4 {I6} from 
+ 35S 2cL ({+18}O,2|an|g), and 4837 {I8} from (d,p)                              
 
 ### unweighted average comment (all non-limit values with/without unc):
- 35S  cL E$unweighted average of 4822.9 {I3} from ({+14}N,3p|g) and 4822.4 {I6} 
- 35S 2cL from ({+18}O,2|an|g)                                                   
+ 35S  cL E$unweighted average of 4822.9 {I3} from ({+14}N,3p|g), 4822.4 {I6}    
+ 35S 2cL from ({+18}O,2|an|g), and 4837 {I8} from (d,p)                         
 
 
 **************** Level=4822.9     Gamma=1006.8 in 35S     *******************ID#=1-26-1

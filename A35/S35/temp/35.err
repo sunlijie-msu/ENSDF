@@ -1,5 +1,5 @@
 Program for consistency check: output for Error and Warnings (version 08/01/2025)
-Generated at: Tue 08/19/2025 at 04:19:25 PM EDT
+Generated at: Tue 08/19/2025 at 04:48:42 PM EDT
 
 ################################################################################
 In Adopted dataset of 35S
@@ -11,10 +11,6 @@ In Adopted dataset of 35S
  35S   G 2020        17      LT                                                 
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
                                                                                         JI=(7/2)+ JF(1572.378)=1/2+
- 35S   L 4477.64   7  (5/2+)           62 FS     LT                             
- 35S   G 2905.1    4 90      14 [M1,E2]                                         
-                               *                                                  <E> Mult=M1 is inconsistent with spin-parity change
-                                                                                        JI=(5/2+) JF(1572.378)=1/2+
  35S   L 5752.5    8  (1/2:9/2-)                                                
  35S   G 5752.0    8 100                                                        
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5752.0
@@ -131,14 +127,14 @@ In dataset of 35S: XD 24MG(14N,3PG)     XREF Tag=D
 
  35S   L 4822.9    3  9/2+                                                      
                      *                                                            <W> JPI here contradicts to adopted. Please check
-                                                                                        Adopted JPI=??? this JPI=9/2+
+                                                                                        Adopted JPI=(9/2-) this JPI=9/2+
 
 ################################################################################
 In dataset of 35S: XE 26MG(18O,2ANG)     XREF Tag=E
 
  35S   L 4822.4    6  (9/2+)                                                    
                      *                                                            <W> JPI here contradicts to adopted. Please check
-                                                                                        Adopted JPI=??? this JPI=(9/2+)
+                                                                                        Adopted JPI=(9/2-) this JPI=(9/2+)
 
 ################################################################################
 In dataset of 35S: XI 34S(D,P)     XREF Tag=I
@@ -213,8 +209,6 @@ In dataset of 35S: XJ 34S(D,PG)     XREF Tag=J
 ################################################################################
 In dataset of 35S: XK 37CL(P,3HE)     XREF Tag=K
 
- 35S   L 4290      10                                  (2)                      
-         *                                                                        <E> Tag=K of this dataset missing in XREF of matched Adopted Level=4302.6
  35S   L 5345      10                                  3                        
                                                        *                          <W> L=3 inconsistent with JPI=(1/2:11/2-) from Adopted Levels for E=5343
                                                                                          possible JPI from L=3 and target JPI=3/2+

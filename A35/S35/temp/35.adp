@@ -1,5 +1,5 @@
 Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 08/01/2025)
-Generated at: Tue 08/19/2025 at 04:19:30 PM EDT                                 
+Generated at: Tue 08/19/2025 at 04:48:47 PM EDT                                 
                                                                                 
  35S     ADOPTED LEVELS, GAMMAS                                  ENSDF    202509
  35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
@@ -437,8 +437,9 @@ Generated at: Tue 08/19/2025 at 04:19:30 PM EDT
  35S 2cL gives (1/2+ to 9/2+).                                                  
  35S   L 4617      10                                                           
  35S X L XREF=K                                                                 
- 35S   L 4822.9    3  ???                                                       
- 35S X L XREF=DE                                                                
+ 35S   L 4822.9    3  (9/2-)                                                    
+ 35S X L XREF=DEH(4837*)I(4837*)                                                
+ 35S  cL J$1006.8|g D, |DJ=0 to (9/2)- and 1228.1|g D, |DJ=1 to (7/2)+.         
  35S   G 1006.8    2 66      15 D                                               
  35S  cG E$from ({+14}N,3p|g). Other: 1007.2 {I11} from ({+18}O,2|an|g)         
  35S  cG RI$weighted average of 73 {I9} from ({+14}N,3p|g) and 36 {I18} from    
@@ -450,13 +451,14 @@ Generated at: Tue 08/19/2025 at 04:19:30 PM EDT
  35S  cG M$from ({+14}N,3p|g).                                                  
  35S   G 2831.4    9 36      9                                                  
  35S  cG E,RI$from ({+14}N,3p|g).                                               
- 35S   L 4839      8  (+)                                                       
- 35S X L XREF=HIK                                                               
+ 35S   L 4843      10 (+)                                                       
+ 35S X L XREF=H(4837*)I(4837*)K                                                 
  35S  cL E$weighted average of 4837 {I8} from (d,p) and 4843 {I10} from         
- 35S 2cL (p,{+3}He)                                                             
+ 35S 2cL (p,{+3}He). Other: 4837 from (pol d,p).                                
  35S  cL J$L=2 from 3/2+ in (p,{+3}He). L=2 gives 1/2+ to 9/2+.                 
  35S   L 4899.7    4  5/2,9/2                                                   
  35S X L XREF=DE                                                                
+ 35S  cL J$2908.3|g D, |DJ=1 to 7/2-.                                           
  35S   G 1305.3    4 55      18                                                 
  35S  cG E$from ({+18}O,2|an|g). Other: 1304.8 {I12} from ({+14}N,3p|g)         
  35S  cG RI$from ({+14}N,3p|g).                                                 
