@@ -1,5 +1,5 @@
 Program for consistency check: output for levels (version 08/01/2025)
-Generated at: Mon 08/18/2025 at 07:39:17 PM EDT
+Generated at: Mon 08/18/2025 at 10:42:41 PM EDT
 
 
 
@@ -179,12 +179,12 @@ Generated at: Mon 08/18/2025 at 07:39:17 PM EDT
  4186       10                                           (2,3)       37CL(P,3HE)                                K(*)
  4187       3                                                        37CL(D,AG)                                 L
 
- 4302.6     7    (1/2:7/2-)                                          ADOPTED LEVELS, GAMMAS                     
+ 4302.6     7                                                        ADOPTED LEVELS, GAMMAS                     
  4305       8                                                        34S(D,P)                                   I
  4290       10                                           (2)         37CL(P,3HE)                                K
  4302       4                                                        37CL(D,AG)                                 L
 
- 4477.64    7    (1/2,3/2,5/2)+       62 FS LT                       ADOPTED LEVELS, GAMMAS                     
+ 4477.64    7    (5/2+)               62 FS LT                       ADOPTED LEVELS, GAMMAS                     
  4477.62    7                                                        34S(N,G) E=THERMAL                         F
  4481       8    3/2+,7/2-                               2,3         34S(D,P)                                   I(*)
  4480       2    (1/2,3/2,5/2)+       62 FS LT                       34S(D,PG)                                  J
@@ -195,7 +195,7 @@ Generated at: Mon 08/18/2025 at 07:39:17 PM EDT
  4482            7/2-                                    3           34S(POL D,P)                               H
  4481       8    3/2+,7/2-                               2,3         34S(D,P)                                   I(*)
 
- 4576       8    (1/2:5/2)+                                          ADOPTED LEVELS, GAMMAS                     
+ 4576       8    (1/2:9/2+)                                          ADOPTED LEVELS, GAMMAS                     
  4575                                                                34S(POL D,P)                               H
  4575       8                                                        34S(D,P)                                   I
  4577       10                                           0+2         37CL(P,3HE)                                K
@@ -203,14 +203,16 @@ Generated at: Mon 08/18/2025 at 07:39:17 PM EDT
  4617       10                                                       ADOPTED LEVELS, GAMMAS                     
  4617       10                                           (1,2)       37CL(P,3HE)                                K
 
- 4839       8    (1/2:9/2)+                                          ADOPTED LEVELS, GAMMAS                     
+ 4822.9     3    ???                                                 ADOPTED LEVELS, GAMMAS                     
  4822.9     3    9/2+                                                24MG(14N,3PG)                              D
  4822.4     6    (9/2+)                                              26MG(18O,2ANG)                             E
+
+ 4839       8    (1/2:9/2+)                                          ADOPTED LEVELS, GAMMAS                     
  4837                                                                34S(POL D,P)                               H
  4837       8                                                        34S(D,P)                                   I
  4843       10                                           2           37CL(P,3HE)                                K
 
- 4899.7     4    9/2+                                                ADOPTED LEVELS, GAMMAS                     
+ 4899.7     4    5/2,9/2                                             ADOPTED LEVELS, GAMMAS                     
  4899.7     4    9/2+                                                24MG(14N,3PG)                              D
  4899.6     7    (9/2+)                                              26MG(18O,2ANG)                             E
 
@@ -223,10 +225,12 @@ Generated at: Mon 08/18/2025 at 07:39:17 PM EDT
 
  4963.09    3    3/2-                                                ADOPTED LEVELS, GAMMAS                     
  4963.084   25                                                       34S(N,G) E=THERMAL                         F
- 4963            3/2-                                    1           34S(POL D,P)                               H
- 4963.12    16   3/2-                                    1           34S(D,P)                                   I
+ 4963            3/2-                                    1           34S(POL D,P)                               H(*)
+ 4963.12    16   3/2-                                    1           34S(D,P)                                   I(*)
 
- 4990       10   (1/2:5/2)+                                          ADOPTED LEVELS, GAMMAS                     
+ 4990       10   (1/2:9/2+)                                          ADOPTED LEVELS, GAMMAS                     
+ 4963            3/2-                                    1           34S(POL D,P)                               H(*)
+ 4963.12    16   3/2-                                    1           34S(D,P)                                   I(*)
  4990       10                                           0+2         37CL(P,3HE)                                K
 
  5010.2     3    11/2-                0.45 PS 8                      ADOPTED LEVELS, GAMMAS                     
@@ -237,12 +241,12 @@ Generated at: Mon 08/18/2025 at 07:39:17 PM EDT
  5058            7/2-                                    3           34S(POL D,P)                               H
  5058       8    7/2-                                    3           34S(D,P)                                   I
 
- 5127       10   (1/2:9/2)+                                          ADOPTED LEVELS, GAMMAS                     
+ 5127       10   (1/2:9/2+)                                          ADOPTED LEVELS, GAMMAS                     
  5126                                                                34S(POL D,P)                               H
  5126       11                                                       34S(D,P)                                   I
  5127       10                                           2           37CL(P,3HE)                                K
 
- 5343       8    (1/2:11/2)-                                         ADOPTED LEVELS, GAMMAS                     
+ 5343       8    (1/2:11/2-)                                         ADOPTED LEVELS, GAMMAS                     
  5342       8                                                        34S(D,P)                                   I
  5345       10                                           3           37CL(P,3HE)                                K
 
@@ -657,7 +661,7 @@ Generated at: Mon 08/18/2025 at 07:39:17 PM EDT
 
 Statistics of levels and gammas from all datasets of 35S:
                              DSID     #of levels       #of gammas       level range
-           ADOPTED LEVELS, GAMMAS        152              154           0.0        to    12469.1
+           ADOPTED LEVELS, GAMMAS        153              154           0.0        to    12469.1
             35P B- DECAY (47.3 S)        3                2             0          to     2938.4
                        2H(34S,PG)        3                2             0          to       2350
                     9BE(36S,35SG)        11               12            0.0        to       4028
@@ -673,7 +677,7 @@ Statistics of levels and gammas from all datasets of 35S:
           160GD(34S,XG),(37CL,XG)        3                2             0          to       4022
                   208PB(36S,35SG)        10               14            0          to     4023.1
 
-                         IN TOTAL        455              417           0.0        to    12469.1
+                         IN TOTAL        456              417           0.0        to    12469.1
 
 
 
@@ -681,12 +685,12 @@ Statistics of levels and gammas from all datasets of 35S:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                    35S        152          154          455          417            2398             14
+                    35S        153          154          456          417            2425             14
 
-               IN TOTAL        152          154          455          417            2398             14
+               IN TOTAL        153          154          456          417            2425             14
 
 Number of nuclides     : 1
 Number of blocks       : 15
 Number of references   : 93
-Number of lines in files: 2413
+Number of lines in files: 2440
 (from all blocks including abstract, comment, reference)
