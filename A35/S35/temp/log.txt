@@ -1,0 +1,264 @@
+McMaster-MSU JAVA-NDS v3.0 (update 08/01/2025) for generating pdf output for ENSDF dataset
+Generated at: Mon 08/18/2025 at 04:09:37 PM EDT
+
+output dir: D:\X\ND\Files
+output LaTeX file: S35_adopted.tex
+===========================================
+Start writing tables and drawing figures...
+--->35S: ADOPTED LEVELS, GAMMAS
+
+**Keynumbers are auto-corrected for letter case**
+
+Table production completed with automatic settings.
+Time elapsed: 0.824 seconds
+
+
+Running the following shell script to create PDF file: S35_adopted.pdf
+D:\X\ND\Files\NDS.bat
+Waiting for PDF to be created...
+PDF file is successfully created!
+
+Deleting auxiliary files (figure, LaTeX, etc.)... 
+***You will need to hit "Create LaTeX" again to generate
+     those auxiliary files in order to create PDF again.
+Done.
+** Program for checking ENSDF format and data consistency (update 08/01/2025) **
+Loading files:
+    D:\X\ND\ENSDF\A35\S35\new\S35_160gd_34s_xg_37cl_xg.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_208pb_36s_35sg.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_24mg_14n_3pg.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_26mg_18o_2ang.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_2h_34s_pg.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_34s_d_p.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_34s_d_pg.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_34s_pol_d_p.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_35p_beta_decay_47.3_s.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_37cl_d_ag.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_37cl_p_3he.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_9be_36s_35sg.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_adopted.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_ng_E_thermal.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_ng_resonances.ens
+In dataset 35S: ADOPTED LEVELS, GAMMAS
+***Warning: no final level within 3*sigma=3.0042 keV for gamma=586      from level=2938.64
+                assigned final level=2347.789    E(level) diff=590.851 
+***Warning: no final level within 3*sigma=3.0075 keV for gamma=942      from level=2938.64
+                assigned final level=1991.28     E(level) diff=947.360 
+***Warning: no final level within 3*sigma=3.0043 keV for gamma=1363     from level=2938.64
+                assigned final level=1572.378    E(level) diff=1366.262
+***Warning: no final level within 3*sigma=3.1357 keV for gamma=486      from level=3421.1
+                assigned final level=2938.64     E(level) diff=482.460 
+***Warning: no final level within 3*sigma=3.2316 keV for gamma=1243     from level=3594.8
+                assigned final level=2347.789    E(level) diff=1247.011
+***Warning: no final level within 3*sigma=3.2346 keV for gamma=1599     from level=3594.8
+                assigned final level=1991.28     E(level) diff=1603.520
+***Warning: no final level within 3*sigma=1.5091 keV for gamma=1809.1   from level=3801.958
+                assigned final level=1991.28     E(level) diff=1810.678
+***Warning: no final level within 3*sigma=1.5075 keV for gamma=1824.7   from level=3818.1
+                assigned final level=1991.28     E(level) diff=1826.820
+***Warning: no final level within 3*sigma=3.2346 keV for gamma=950      from level=3885.3
+                assigned final level=2938.64     E(level) diff=946.660 
+***Warning: no final level within 3*sigma=9.2466 keV for gamma=3884.8   from level=3895
+                assigned final level=0.0         E(level) diff=3895.000
+***Warning: no final level within 3*sigma=1.9218 keV for gamma=2455.4   from level=4025.9
+                assigned final level=1572.378    E(level) diff=2453.522
+***Warning: no final level within 3*sigma=3.2346 keV for gamma=1172     from level=4106.4
+                assigned final level=2938.64     E(level) diff=1167.760
+***Warning: no final level within 3*sigma=3.2379 keV for gamma=888      from level=4477.64
+                assigned final level=3594.8      E(level) diff=882.840 
+***  Error: no final level found for gamma=1545     from level=4477.64  EL-EG=2932.6   closest FL=2938.64
+***  Error: no final level found for gamma=2489.9   from level=4477.64  EL-EG=1987.6   closest FL=1991.28
+***Warning: no final level within 3*sigma=2.1317 keV for gamma=4479.7   from level=4477.64
+                assigned final level=0.0         E(level) diff=4477.640
+***  Error: no final level found for gamma=2184.16  from level=4903.32  EL-EG=2719.1   closest FL=2717.00
+***Warning: no final level within 3*sigma=1.9209 keV for gamma=2061.6   from level=5877.6
+                assigned final level=3818.1      E(level) diff=2059.500
+
+In dataset 35S: 34S(N,G) E=THERMAL
+***Warning: FL=2717.05  for gamma=2184.16  from level=4903.374 not consistent with EL-EG=2719.14 19
+
+Done loading
+** Program for checking ENSDF format and data consistency (update 08/01/2025) **
+
+Start checking ENSDF format...
+Done checking ENSDF format.
+Done writing report: D:\X\ND\Files\35.fmt
+See report in <35.fmt>: error and warning messages for format check
+*** Total 8 errors 18 warnings ***
+
+Start checking ENSDF consistency...
+##### In EnsdfGroup 712: done grouping with Adopted dataset of 35S
+##### In EnsdfGroup 716: done grouping with reference record groups created from Adopted dataset
+*** checking NUCID= 35S  DSID=35P B- DECAY (47.3 S)
+*** checking NUCID= 35S  DSID=2H(34S,PG)
+*** checking NUCID= 35S  DSID=9BE(36S,35SG)
+*** checking NUCID= 35S  DSID=24MG(14N,3PG)
+*** checking NUCID= 35S  DSID=26MG(18O,2ANG)
+*** checking NUCID= 35S  DSID=34S(N,G) E=THERMAL
+*** checking NUCID= 35S  DSID=34S(POL D,P)
+*** checking NUCID= 35S  DSID=34S(D,P)
+*** checking NUCID= 35S  DSID=34S(D,PG)
+*** checking NUCID= 35S  DSID=37CL(P,3HE)
+*** checking NUCID= 35S  DSID=37CL(D,AG)
+*** checking NUCID= 35S  DSID=160GD(34S,XG),(37CL,XG)
+*** checking NUCID= 35S  DSID=208PB(36S,35SG)
+Done checking ENSDF consistency.
+Starting writing outputs...
+...Done writing D:\X\ND\Files\35.lev
+...Done writing D:\X\ND\Files\35.gam
+...Done writing D:\X\ND\Files\35.gle
+...Done writing D:\X\ND\Files\35.mrg
+...Done writing D:\X\ND\Files\35.avg
+...Done writing D:\X\ND\Files\35.fed
+...Done writing D:\X\ND\Files\35.err
+...Done writing D:\X\ND\Files\35.wrn
+...Done writing D:\X\ND\Files\35.xrf
+Following output files have been generated:
+   35.err:  error and warning messages for consistency check
+   35.lev:  tabulated level information
+   35.gam:  gammas grouped by gamma energy
+   35.gle:  gammas grouped by level energy
+   35.mrg:  grouped lines of all datasets
+   35.avg:  average results of records
+   35.fed:  feeding gammas of all levels
+
+Start checking keynumbers...
+Time elapsed for downloading NSR by keynumber: 0.210 seconds
+--- Keynumbers in the input ENSDF file will be searched for
+    in existing NSR files or in the online NSR database
+    (it could take a while for retrieval from NSR database)
+Time elapsed for NSR retrieval of A=35: 1.450 seconds
+Done checking keynumbers.
+
+Updating default NSR output files...
+D:\X\ND\EvaluationToolkit\NSR\NSR_A=35.dat
+Done updating
+
+See report in <35_keynumber.rpt>: error and warning messages for keynumber check
+
+Generated at: Mon 08/18/2025 at 07:39:19 PM EDT
+
+Creating an Adopted dataset (.adp) combining all data including comments...
+...Done writing D:\X\ND\Files\35.adp
+Done
+** Program for checking ENSDF format and data consistency (update 08/01/2025) **
+Loading files:
+    D:\X\ND\ENSDF\A35\S35\new\S35_160gd_34s_xg_37cl_xg.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_208pb_36s_35sg.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_24mg_14n_3pg.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_26mg_18o_2ang.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_2h_34s_pg.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_34s_d_p.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_34s_d_pg.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_34s_pol_d_p.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_35p_beta_decay_47.3_s.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_37cl_d_ag.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_37cl_p_3he.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_9be_36s_35sg.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_adopted.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_ng_E_thermal.ens
+    D:\X\ND\ENSDF\A35\S35\new\S35_ng_resonances.ens
+In dataset 35S: ADOPTED LEVELS, GAMMAS
+***Warning: no final level within 3*sigma=3.0042 keV for gamma=586      from level=2938.64
+                assigned final level=2347.789    E(level) diff=590.851 
+***Warning: no final level within 3*sigma=3.0075 keV for gamma=942      from level=2938.64
+                assigned final level=1991.28     E(level) diff=947.360 
+***Warning: no final level within 3*sigma=3.0043 keV for gamma=1363     from level=2938.64
+                assigned final level=1572.378    E(level) diff=1366.262
+***Warning: no final level within 3*sigma=3.1357 keV for gamma=486      from level=3421.1
+                assigned final level=2938.64     E(level) diff=482.460 
+***Warning: no final level within 3*sigma=3.2316 keV for gamma=1243     from level=3594.8
+                assigned final level=2347.789    E(level) diff=1247.011
+***Warning: no final level within 3*sigma=3.2346 keV for gamma=1599     from level=3594.8
+                assigned final level=1991.28     E(level) diff=1603.520
+***Warning: no final level within 3*sigma=1.5091 keV for gamma=1809.1   from level=3801.958
+                assigned final level=1991.28     E(level) diff=1810.678
+***Warning: no final level within 3*sigma=1.5075 keV for gamma=1824.7   from level=3818.1
+                assigned final level=1991.28     E(level) diff=1826.820
+***Warning: no final level within 3*sigma=3.2346 keV for gamma=950      from level=3885.3
+                assigned final level=2938.64     E(level) diff=946.660 
+***Warning: no final level within 3*sigma=9.2466 keV for gamma=3884.8   from level=3895
+                assigned final level=0.0         E(level) diff=3895.000
+***Warning: no final level within 3*sigma=1.9218 keV for gamma=2455.4   from level=4025.9
+                assigned final level=1572.378    E(level) diff=2453.522
+***Warning: no final level within 3*sigma=3.2346 keV for gamma=1172     from level=4106.4
+                assigned final level=2938.64     E(level) diff=1167.760
+***Warning: no final level within 3*sigma=3.2379 keV for gamma=888      from level=4477.64
+                assigned final level=3594.8      E(level) diff=882.840 
+***  Error: no final level found for gamma=1545     from level=4477.64  EL-EG=2932.6   closest FL=2938.64
+***  Error: no final level found for gamma=2489.9   from level=4477.64  EL-EG=1987.6   closest FL=1991.28
+***Warning: no final level within 3*sigma=2.1317 keV for gamma=4479.7   from level=4477.64
+                assigned final level=0.0         E(level) diff=4477.640
+***Warning: no final level within 3*sigma=1.6155 keV for gamma=1006.8   from level=4822.9
+                assigned final level=3818.1      E(level) diff=1004.800
+***  Error: no final level found for gamma=2184.16  from level=4903.32  EL-EG=2719.1   closest FL=2717.00
+***Warning: no final level within 3*sigma=1.9209 keV for gamma=2061.6   from level=5877.6
+                assigned final level=3818.1      E(level) diff=2059.500
+
+In dataset 35S: 34S(N,G) E=THERMAL
+***Warning: FL=2717.05  for gamma=2184.16  from level=4903.374 not consistent with EL-EG=2719.14 19
+
+Done loading
+** Program for checking ENSDF format and data consistency (update 08/01/2025) **
+
+Start checking ENSDF format...
+Done checking ENSDF format.
+Done writing report: D:\X\ND\Files\35.fmt
+See report in <35.fmt>: error and warning messages for format check
+*** Total 7 errors 19 warnings ***
+
+Start checking ENSDF consistency...
+##### In EnsdfGroup 712: done grouping with Adopted dataset of 35S
+##### In EnsdfGroup 716: done grouping with reference record groups created from Adopted dataset
+*** checking NUCID= 35S  DSID=35P B- DECAY (47.3 S)
+*** checking NUCID= 35S  DSID=2H(34S,PG)
+*** checking NUCID= 35S  DSID=9BE(36S,35SG)
+*** checking NUCID= 35S  DSID=24MG(14N,3PG)
+*** checking NUCID= 35S  DSID=26MG(18O,2ANG)
+*** checking NUCID= 35S  DSID=34S(N,G) E=THERMAL
+*** checking NUCID= 35S  DSID=34S(POL D,P)
+*** checking NUCID= 35S  DSID=34S(D,P)
+*** checking NUCID= 35S  DSID=34S(D,PG)
+*** checking NUCID= 35S  DSID=37CL(P,3HE)
+*** checking NUCID= 35S  DSID=37CL(D,AG)
+*** checking NUCID= 35S  DSID=160GD(34S,XG),(37CL,XG)
+*** checking NUCID= 35S  DSID=208PB(36S,35SG)
+Done checking ENSDF consistency.
+Starting writing outputs...
+...Done writing D:\X\ND\Files\35.lev
+...Done writing D:\X\ND\Files\35.gam
+...Done writing D:\X\ND\Files\35.gle
+...Done writing D:\X\ND\Files\35.mrg
+...Done writing D:\X\ND\Files\35.avg
+...Done writing D:\X\ND\Files\35.fed
+...Done writing D:\X\ND\Files\35.err
+...Done writing D:\X\ND\Files\35.wrn
+...Done writing D:\X\ND\Files\35.xrf
+Following output files have been generated:
+   35.err:  error and warning messages for consistency check
+   35.lev:  tabulated level information
+   35.gam:  gammas grouped by gamma energy
+   35.gle:  gammas grouped by level energy
+   35.mrg:  grouped lines of all datasets
+   35.avg:  average results of records
+   35.fed:  feeding gammas of all levels
+
+Start checking keynumbers...
+Time elapsed for downloading NSR by keynumber: 0.261 seconds
+--- Keynumbers in the input ENSDF file will be searched for
+    in existing NSR files or in the online NSR database
+    (it could take a while for retrieval from NSR database)
+Time elapsed for NSR retrieval of A=35: 1.440 seconds
+Done checking keynumbers.
+
+Updating default NSR output files...
+D:\X\ND\EvaluationToolkit\NSR\NSR_A=35.dat
+Done updating
+
+See report in <35_keynumber.rpt>: error and warning messages for keynumber check
+
+Generated at: Mon 08/18/2025 at 10:42:43 PM EDT
+
+Creating an Adopted dataset (.adp) combining all data including comments...
+...Done writing D:\X\ND\Files\35.adp
+Done
