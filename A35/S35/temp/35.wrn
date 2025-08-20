@@ -1,15 +1,15 @@
 Program for consistency check: output for XREF Warnings only (version 08/01/2025)
-Generated at: Tue 08/19/2025 at 04:48:42 PM EDT
+Generated at: Wed 08/20/2025 at 01:54:23 PM EDT
 
 
 ################################################################################
 In dataset of 35S: XG 34S(N,N),(N,G):RESONANCES     XREF Tag=G
 
- 35S   L 7731.0    7                   0.31 EV   13    [2]      767.3     7     
+ 35S   L 7731.0    7                   0.31 EV   13             767.3     7     
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 7712      10 (3/2:13/2)+         XREF=G(*)K(7712*)
+                                                                                       @ 7712      10                     XREF=G(*)K(7712*)
                                                                                        @ 7731.1     7                     XREF=G(*)K(7712*)
- 35S   L 8143.66   20                                  [2]      1192.2    2     
+ 35S   L 8143.66   20                                  2        1192.2    2     
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                        @ 8143.75   20                     XREF=G(*)K(8160*)
                                                                                        @ 8160      10 (1/2:7/2)(-)        XREF=G(*)K(8160*)
@@ -26,10 +26,6 @@ In dataset of 35S: XH 34S(POL D,P)     XREF Tag=H
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                          4822.9     3 (9/2-)              XREF=DE
                                                                                        @ 4839       8 (+)                 XREF=HIK
- 35S   L 4963         3/2-                             1        0.19,0.17   B   
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 4963.09    3 3/2-                XREF=FHIK
-                                                                                         4990      10 (1/2:9/2+)          XREF=K
 
 ################################################################################
 In dataset of 35S: XI 34S(D,P)     XREF Tag=I
@@ -51,30 +47,32 @@ In dataset of 35S: XI 34S(D,P)     XREF Tag=I
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                          4822.9     3 (9/2-)              XREF=DE
                                                                                        @ 4839       8 (+)                 XREF=HIK
- 35S   L 4963.12   16 3/2-                             1        0.32      3 P   
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 4963.09    3 3/2-                XREF=FHIK
-                                                                                         4990      10 (1/2:9/2+)          XREF=K
  35S   L 6292      8                                                        M   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 6293.93    6 (1/2:9/2-)          XREF=FI(6292*)
-                                                                                       @ 6299.4     4 11/2+               XREF=DI(6292*)
+                                                                                       @ 6293.93    6                     XREF=FI(6292)
+                                                                                      #  6299.4     4 (11/2+)             XREF=D
+                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=I
+ 35S   L 6344      8                                                        M   
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 6344       8                     XREF=IK(6347*)
+                                                                                         6354.89   23                     XREF=F
  35S   L 6635.2    13                                  (2,3)                P   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 6635.2    13                     XREF=I(*)K(6654*)
-                                                                                       @ 6654      10                     XREF=I(*)K(6654*)
+                                                                                       @ 6635.2    13                     XREF=I
+                                                                                         6654      10                     XREF=K
  35S   L 7150      35                                  (0,3)                K   
          *                                                                        <W> 3 possible matches found in Adopted! Check XREF
-                                                                                       @ 7097.72   30                     XREF=GI(7150*)K(7151*)
-                                                                                       @ 7099.85   20                     XREF=GI(7150*)K(7151*)
+                                                                                         7097.72   30                     XREF=G
+                                                                                         7099.85   20                     XREF=G
                                                                                        @ 7143.27   11                     XREF=GI(7150*)K(7151*)
  35S   L 7205      35                                  (1,2)                K   
          *                                                                        <W> 5 possible matches found in Adopted! Check XREF
                                                                                        @ 7210.42    5                     XREF=GI(7205*)
-                                                                                       @ 7218.0     4                     XREF=GI(7205*)
-                                                                                       @ 7234.0     5                     XREF=GI(7205*)
-                                                                                       @ 7239.8     6                     XREF=GI(7205*)
-                                                                                       @ 7253.2     6                     XREF=GI(7205*)
+                                                                                      #  7218.0     4                     XREF=G
+                                                                                      #  7234.0     5                     XREF=G
+                                                                                      #  7239.8     6                     XREF=G
+                                                                                         7253.2     6                     XREF=G
+                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=I
  35S   L 7570      40                                  (2,3)                K   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                        @ 7542.3     6                     XREF=GI(7570*)
@@ -105,34 +103,31 @@ In dataset of 35S: XK 37CL(P,3HE)     XREF Tag=K
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                        @ 4180       3 (1/2,3/2,5/2+)      XREF=K(4186*)L
                                                                                        @ 4189.280  21 1/2-                XREF=FHIJK(4186*)L(4187)
- 35S   L 5771      10                                  2                        
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 5752.5     8 (1/2:9/2-)          XREF=FI(5740)K(5771*)
-                                                                                       @ 5771      10 (1/2:9/2)+          XREF=K(5771*)
  35S   L 6347      10                                  (2)                      
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 6334       8                     XREF=DIK(6347*)
-                                                                                       @ 6354.89   23 (1/2:9/2-)          XREF=FIK(6347*)
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+                                                                                         6334       8                     XREF=I
+                                                                                       @ 6344       8                     XREF=IK(6347*)
+                                                                                      #  6354.89   23                     XREF=F
+                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=K
  35S   L 6654      10                                  (3)                      
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 6635.2    13                     XREF=I(*)K(6654*)
-                                                                                       @ 6654      10                     XREF=I(*)K(6654*)
+                                                                                         6635.2    13                     XREF=I
+                                                                                       @ 6654      10                     XREF=K
  35S   L 7151      10                                  (4)                     ?
          *                                                                        <W> 3 possible matches found in Adopted! Check XREF
-                                                                                      #@ 7097.72   30                     XREF=GI(7150*)K(7151*)
-                                                                                      #@ 7099.85   20                     XREF=GI(7150*)K(7151*)
+                                                                                         7097.72   30                     XREF=G
+                                                                                         7099.85   20                     XREF=G
                                                                                        @ 7143.27   11                     XREF=GI(7150*)K(7151*)
-                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=K
  35S   L 7375      10                                                          ?
          *                                                                        <W> 5 possible matches found in Adopted! Check XREF
                                                                                        @ 7353.9     5                     XREF=GK(7375*)
                                                                                        @ 7357.6     5                     XREF=GK(7375*)
-                                                                                       @ 7370.56    6 1/2-                XREF=GK(7375*)
+                                                                                       @ 7370.56    6                     XREF=GK(7375*)
                                                                                        @ 7375      10                     XREF=G(?)K(7375*)
                                                                                        @ 7396.0     6                     XREF=GK(7375*)
  35S   L 7712      10                                  4                       ?
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 7712      10 (3/2:13/2)+         XREF=G(*)K(7712*)
+                                                                                       @ 7712      10                     XREF=G(*)K(7712*)
                                                                                        @ 7731.1     7                     XREF=G(*)K(7712*)
  35S   L 7770      10                                                           
          *                                                                        <W> 3 possible matches found in Adopted! Check XREF
