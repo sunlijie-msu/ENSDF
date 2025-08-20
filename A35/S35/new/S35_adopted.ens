@@ -184,7 +184,7 @@
  35S  cG RI$from (d,p|g).                                                       
  35S   G 3423      2 100        [M1,E2]                                         
  35S  cG E$weighted average of 3425 {I2} from {+9}Be({+36}S,{+35}S|g) and 3421  
- 35S 2cG {I2} from {+208}Pb({+36}S,{+35}S|g).                                    
+ 35S 2cG {I2} from {+208}Pb({+36}S,{+35}S|g).                                   
  35S  cG RI$from (d,p|g).                                                       
  35S   L 3558.09   3  (3/2-,5/2+)                                               
  35S X L XREF=FHIJLN                                                            
@@ -193,12 +193,12 @@
  35S  cG E,RI$from (n,|g) E=thermal.                                            
  35S   G 1210.28   4 54      6                                                  
  35S  cG E$from (n,|g) E=thermal. Other: 1211 {I2} from                         
- 35S 2cG {+208}Pb({+36}S,{+35}S|g).                                              
+ 35S 2cG {+208}Pb({+36}S,{+35}S|g).                                             
  35S  cG RI$weighted average of 54 {I6} from (n,|g) E=thermal and 54 {I6} from  
- 35S 2cG (d,|a|g). Other: 18 {I7} from {+208}Pb({+36}S,{+35}S|g).                
+ 35S 2cG (d,|a|g). Other: 18 {I7} from {+208}Pb({+36}S,{+35}S|g).               
  35S   G 1566.7    3 100     6                                                  
  35S  cG E$from (n,|g) E=thermal. Other: 1567 {I2} from                         
- 35S 2cG {+208}Pb({+36}S,{+35}S|g).                                              
+ 35S 2cG {+208}Pb({+36}S,{+35}S|g).                                             
  35S  cG RI$from (d,|a|g). Others: 100 {I19} from (n,|g) E=thermal and 100 {I10}
  35S 2cG from {+208}Pb({+36}S,{+35}S|g).                                        
  35S   G 1986      2 39      6                                                 ?
@@ -834,7 +834,6 @@
  35S X L XREF=G                                                                 
  35S   L 8273.3    4  1/2                                                       
  35S X L XREF=G                                                                 
- 35S  cL J$ R-Matrix analysis of resonances in (n,n).                           
  35S   L 8298.27   30                                                           
  35S X L XREF=G                                                                 
  35S   L 8333.8    4  3/2-                                                      
@@ -856,10 +855,9 @@
  35S 2cL observed for the 732|g and 1576|g peaks.                               
  35S   G 731.6     15 57     22 D                                               
  35S   G 1576.3    14 100    22                                                 
- 35S   L 9155      10 (1/2:9/2)+                                                
+ 35S   L 9155      10                                                
  35S X L XREF=K                                                                 
- 35S 2 L ISPIN=5/2                                                              
- 35S  cL J$ L(p,{+3}He)=2.                                                      
+ 35S  cL J$L=2 from from 3/2+ in (p,{+3}He). L=2 gives (1/2+ to 9/2+).          
  35S   L 10048.4   10 (19/2)                                                    
  35S X L XREF=E                                                                 
  35S   G 2868.7    8 100        Q                                               
