@@ -1,5 +1,5 @@
 Program for consistency check: output for Error and Warnings (version 08/01/2025)
-Generated at: Wed 08/20/2025 at 01:54:23 PM EDT
+Generated at: Wed 08/20/2025 at 05:59:39 PM EDT
 
 ################################################################################
 In Adopted dataset of 35S
@@ -7,11 +7,11 @@ In Adopted dataset of 35S
  35S  cL BAND(B)$Sequence based on 3/2+.                                        
           *                                                                       <W> Not a band due to different deltaJ for in-band transitions.
                                                                                            Please use "SEQ" instead of "BAND" in band comments
- 35S   L 3594.8    4  (7/2)+                                                B   
- 35S   G 2020        17      LT                                                 
+ 35S   L 3594.62   24 (7/2+)                                                B   
+ 35S   G 2022.19     17      LT                                                 
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=(7/2)+ JF(1572.378)=1/2+
- 35S   L 5877.6    3  (11/2+)                                               B   
+                                                                                        JI=(7/2+) JF(1572.370)=1/2+
+ 35S   L 5877.70   22 (11/2+)                                               B   
  35S   G 465.4     2 33.8    26 D                                               
  35S   G 867.6     4 50.0    26 D                                               
  35S   G 977.9     3 43      4 D+Q                                              
@@ -23,7 +23,7 @@ In Adopted dataset of 35S
                      *                                                            <W> Gamma intensity not normalized with strongest=100!
  35S   G 977.9     3 43      4 D+Q                                              
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=977.9
-                                                                                        JI=(11/2+) JF(4899.7)=5/2,9/2
+                                                                                        JI=(11/2+) JF(4899.82)=5/2,9/2
 
 ################################################################################
 In dataset of 35S: XA 35P B- DECAY (47.3 S)     XREF Tag=A
@@ -57,9 +57,9 @@ In dataset of 35S: XC 9BE(36S,35SG)     XREF Tag=C
                                                                                           this energy=2943      Adopted=2938.57
  35S   L 3602      2                                   2        0.3       1     
                      *                                                            <W> JPI commented from Adopted but empty
-                                                                                        Adopted JPI=(7/2)+ this JPI=
+                                                                                        Adopted JPI=(7/2+) this JPI=
  35S   G 3602      2                                                            
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=3594.8
+         *                                                                        <W> This gamma is missing in Adopted Gammas at level=3594.62
          *                                                                        <W> No matching gamma within 5 keV found in Adopted
  35S   L 3821      3                                   3        0.3       1     
                      *                                                            <W> JPI commented from Adopted but empty
@@ -94,16 +94,29 @@ In dataset of 35S: XE 26MG(18O,2ANG)     XREF Tag=E
 ################################################################################
 In dataset of 35S: XG 34S(N,N),(N,G):RESONANCES     XREF Tag=G
 
- 35S   L 6985.54      1/2                              0        -0.305         ?
-         *                                                                        <W> Tag=G of this dataset missing in XREF of matched Adopted Level=6986.10
- 35S   L 8143.66   20                                  2        1192.2    2     
-                                                       *                          <W> L=2 inconsistent with JPI=(1/2:7/2)(-) from Adopted Levels for E=8160
-                                                                                         possible JPI from L=2 and target JPI=0+
-                                                                                             3/2+,5/2+
- 35S   L 8418.8    4                                   2        1475.5    4     
-                                                       *                          <W> L=2 inconsistent with JPI=(1/2:9/2)+ from Adopted Levels for E=8418.8
-                                                                                         possible JPI from L=2 and target JPI=0+
-                                                                                             3/2+,5/2+
+ 35S   L 6985.54                                       0        -0.305         ?
+         *                                                                        <W> Tag=G of this dataset missing in XREF of matched Adopted Level=6986.096
+ 35S   L 7279.13                       0.10 EV   3              302            ?
+         *                                                                        <W> questionable level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        7275.93    5 1/2+                XREF=G
+ 35S   L 7371.97                       0.12 EV                  397.6          ?
+         *                                                                        <W> questionable level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        7370.56    6 1/2-                XREF=GK(7375)
+
+################################################################################
+In dataset of 35S: XI 34S(D,P)     XREF Tag=I
+
+ 35S   L 5475      10                                                       M  ?
+         *                                                                        <W> Tag=I of this dataset missing in XREF of matched Adopted Level=5412.28
+ 35S   L 7640      40                                  (2,3)                K   
+         *                                                                        <W> 4 possible matches found in Adopted! Check XREF
+                                                                                       @ 7648.9     6                     XREF=GI(7640*)
+                                                                                       @ 7655.7     6                     XREF=GI(7640*)
+                                                                                      #  7663.91   11                     XREF=G
+                                                                                      #  7678.3     7                     XREF=G
+                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=I
 
 ################################################################################
 In dataset of 35S: XJ 34S(D,PG)     XREF Tag=J
@@ -115,9 +128,19 @@ In dataset of 35S: XJ 34S(D,PG)     XREF Tag=J
  35S   L 2935      3  3/2+                                                      
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=(3/2)+ this JPI=3/2+
+ 35S   L 3421.0    10 5/2+             69 FS     LT                             
+ 35S   G 703.0        6      LT                                                 
+         *                                                                        <W> Check discrepancy in gamma energies:
+                                                                                          this energy=703.0      Adopted=706.1
+ 35S   G 1072.2       7      LT                                                 
+         *                                                                        <W> Check discrepancy in gamma energies:
+                                                                                          this energy=1072.2      Adopted=1075.4
+ 35S   G 1428.1       30     LT                                                 
+         *                                                                        <W> Check discrepancy in gamma energies:
+                                                                                          this energy=1428.1      Adopted=1431.9
  35S   L 3592      5  (1/2TO7/2)+                                               
                      *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(7/2)+ this JPI=(1/2TO7/2)+
+                                                                                        Adopted JPI=(7/2+) this JPI=(1/2TO7/2)+
  35S   G 1599         17     LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=1599
                                                                                         JI=(1/2TO7/2)+ JF(1992.9)=7/2-
@@ -130,6 +153,9 @@ In dataset of 35S: XJ 34S(D,PG)     XREF Tag=J
  35S   L 3885.0    10 (3/2-,5/2)                                                
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=(5/2+) this JPI=(3/2-,5/2)
+ 35S   G 1167.0       15     LT                                                 
+         *                                                                        <W> Check discrepancy in gamma energies:
+                                                                                          this energy=1167.0      Adopted=1169.19
  35S   G 1536.2       18     LT                                                 
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=1536.2      Adopted=1538.4
@@ -141,7 +167,7 @@ In dataset of 35S: XJ 34S(D,PG)     XREF Tag=J
                                                                                         Adopted JPI=3/2+,5/2+ this JPI=(1/2,3/2,5/2)+
  35S   G 1676.2       33     12                                                 
          *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=1676.2      Adopted=1679.5
+                                                                                          this energy=1676.2      Adopted=1679.4
  35S   G 2032.0       10     LT                                                 
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=2032.0      Adopted=2037
@@ -153,19 +179,18 @@ In dataset of 35S: XJ 34S(D,PG)     XREF Tag=J
  35S   G 2114         7      LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2114
                                                                                         JI=(1/2,3/2,5/2)+ JF(1992.9)=7/2-
- 35S   L 4189      2  1/2-             35 FS     LT                             
- 35S   G 597          4      LT                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=597
-                                                                                        JI=1/2- JF(3592)=(1/2TO7/2)+
- 35S   G 2196         8      LT                                                 
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=1/2- JF(1992.9)=7/2-
  35S   L 4480      2  (1/2,3/2,5/2)+   62 FS     LT                             
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=(5/2+) this JPI=(1/2,3/2,5/2)+
  35S   G 2487         10     LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2487
                                                                                         JI=(1/2,3/2,5/2)+ JF(1992.9)=7/2-
+
+################################################################################
+In dataset of 35S: XK 37CL(P,3HE)     XREF Tag=K
+
+ 35S   L 7712      10                                  4                       ?
+         *                                                                        <W> Tag=K of this dataset missing in XREF of matched Adopted Level=7731.1
 
 ################################################################################
 In dataset of 35S: XL 37CL(D,AG)     XREF Tag=L
@@ -194,16 +219,22 @@ In dataset of 35S: XL 37CL(D,AG)     XREF Tag=L
                                                                                           this energy=1898.9      Adopted=1894.9
  35S   G 3888.8       15     3                                                  
          *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=3888.8      Adopted=3884.8
+                                                                                          this energy=3888.8      Adopted=3886.05
  35S   L 4022.2    22                                                           
-         *                                                                        <E> Tag=L of this dataset missing in XREF of matched Adopted Level=4022.3
+         *                                                                        <E> Tag=L of this dataset missing in XREF of matched Adopted Level=4023.24
  35S   L 4480.0    16                                                           
  35S   G 1763.3       36     4                                                  
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=1763.3      Adopted=1760.55
+ 35S   G 2489.9       15     4                                                  
+         *                                                                        <W> Check discrepancy in gamma energies:
+                                                                                          this energy=2489.9      Adopted=2486.27
  35S   G 2907.7       39     4                                                  
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=2907.7      Adopted=2905.1
+ 35S   G 4479.7       10     2                                                  
+         *                                                                        <W> Check discrepancy in gamma energies:
+                                                                                          this energy=4479.7      Adopted=4477.32
 
 ################################################################################
 In dataset of 35S: XM 160GD(34S,XG),(37CL,XG)     XREF Tag=M
