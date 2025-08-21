@@ -1,0 +1,2290 @@
+ 35CL    ADOPTED LEVELS, GAMMAS                                  11NDS    201111
+ 35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
+ 35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
+ 35CL  Q -5966.1   8 12644.775 6370.82 4 -6997.914     2012WA38                 
+ 35CL cQ $Note: Current evaluation has used the following Q record              
+ 35CL2cQ -5966.1   7 {I12644}.80 {I7} 6370.82 {I5}-6997.90 {I4}    2011AuZZ     
+ 35CL cQ $S(2n)=24152.9 {I4}, S(2p)=17254.1 {I11} (2011AuZZ,2003Au03)           
+ 35CL cQ $Values in 2003Au03: S(n)=12645.08 {i18}, s(p)=6370.72 {i10}           
+ 35CL2cQ Q(|a)=6997.57 {i19}                                                    
+ 35CL c  First isotope identification by F. W. Aston from a mass-spectrum.      
+ 35CL d  Isotope identificatin: F. W. Aston, Nature 104 (1919) 393.             
+ 35CL cG E$ Values with |DE are primarily from |e decay, (|a,p|g) and (HI,xn|g).
+ 35CL2cG Weighted average taken when available. Others are deduced              
+ 35CL3cG from level-energy differences.                                         
+ 35CL cG RI$ Primarily from (p,|g), (|a,p|g) and (HI,xn|g). Weighted average    
+ 35CL2cG taken when available, unless otherwise noted.                          
+ 35CL cG RI(X)$Transitions to 4177 and 4173 not resolved (1976Sp08)             
+ 35CL cG M,MR$ Primarily from |g(|q) and/or |g|g(|q) in (p,|g), also from       
+ 35CL2cG (|a,p|g), (p,p'|g), Coulomb excitation and (HI,xn|g). If T{-1/2} is    
+ 35CL3cG unknown and parity is determined not by polarization measurements,     
+ 35CL4cG evaluators use D and Q, instead of M1 and E2, or, E1 and M2.           
+ 35CL cL E$ From E|g data when measured |g-ray energies are available.          
+ 35CL2cL In other cases weighted averages are taken of values available         
+ 35CL3cL from different reactions                                               
+ 35CL cL J$ In particle-transfer reactions, target J|p=1/2+  for {+31}p in      
+ 35CL2cL ({+6}Li,d) reaction, J|p= 3/2+ for {+33}S in (|a,d) reaction, J|p=0+   
+ 35CL3cL for {+32}S in (|a,p) reaction, J|p=0+ for {+34}S in (d,n) and          
+ 35CL4cL ({+3}He,d) reactions, J|p=0+ for {+36}Ar in (n,d) and (d,{+3}He)       
+ 35CL5cL reactions and J|p=3/2+ for {+37}Cl in (p,t) reaction.                  
+ 35CL cL J$ From analyzing power measurement or/and the comparison of the DWBA  
+ 35CL2cL prediction of cross section with experimental data in particle-transfer
+ 35CL3cL reactions or/and from angular distribution measurements or |g|g(DCO) of
+ 35CL4cL |g-rays or/and R-Matrix analysis of resonances.                        
+ 35CL cL J$ When assigning J|p to a level based on |g transitions from this     
+ 35CL2cL level to a level of known J|p, evaluators use the following rules:     
+ 35CL3cL if E|g<4 MeV, transitions are only considered to be E1,M1 or E2; if    
+ 35CL4cL E|g>4 MeV, M2 and E3 are considered to be possible.                    
+ 35CL cL J(A)$ From angular distributions in (|a,p):resonance only.             
+ 35CL cL T$ T{-1/2} from measurements using DSAM (Doppler-Shift-Attenuation     
+ 35CL2cL -Method) and/or RDM (Recoil-Distance-Method) in (|a,p|g), (p,|g),      
+ 35CL3cL (HI,xn|g) and Coulomb excitation, delayed coincidence method in (p,|g) 
+ 35CL4cL and scattering of photons in (|g,|g).  Weighted averages taken when    
+ 35CL5cL available. |G are primarily from |G{-p} in (p,p) resonances since      
+ 35CL6cL when |G{-|g} is negligible.                                            
+ 35CL CL BAND(D)$ Band based on f{-7/2} orbital                                 
+ 35CL CL BAND(E)$ Band based on 13/2+                                           
+ 35CL  XA35S B- DECAY (87.37 D)                                                 
+ 35CL  XB35AR EC DECAY (1.7756 S)                                               
+ 35CL  XC36K ECP DECAY (342 MS)                                                 
+ 35CL  XD31P(6LI,D)                                                             
+ 35CL  XE31P(A,P),(A,N):RESONANCES                                              
+ 35CL  XF32S(A,P)                                                               
+ 35CL  XG32S(A,PG)                                                              
+ 35CL  XH33S(A,D)                                                               
+ 35CL  XI34S(P,G)                                                               
+ 35CL  XJ34S(P,P),(P,P'G):RESONANCES                                            
+ 35CL  XK2H(34S,NG)                                                             
+ 35CL  XL34S(D,N)                                                               
+ 35CL  XM34S(3HE,D)                                                             
+ 35CL  XN35CL(G,G')                                                             
+ 35CL  XO35CL(N,N'G)                                                            
+ 35CL  XP35CL(P,P),(P,P'G)                                                      
+ 35CL  XQ36AR(N,D)                                                              
+ 35CL  XR36AR(D,3HE)                                                            
+ 35CL  XS36AR(POL D,3HE)                                                        
+ 35CL  XT37CL(P,T)                                                              
+ 35CL  XU39K(G,A)                                                               
+ 35CL  XV40CA(MU-,NUANG)                                                        
+ 35CL  XWCOULOMB EXCITATION                                                     
+ 35CL  XX(HI,XNG)                                                               
+ 35CL PN                                                                     6  
+ 35CL  L 0           3/2+              STABLE                                   
+ 35CLX L XREF=ABCDFGIKLMNOPQRSTUVWX                                             
+ 35CL2 L MOMM1=+0.8218743 4 (1972Bl07,1989Ra17,2011StZZ)                        
+ 35CL2 L MOME2=-0.08249 2 (1972St38,1989Ra17,2011StZZ)                          
+ 35CL cL MOMM1$using NMR method (1972Bl07)                                      
+ 35CL cL MOME2$using the method atomic beam magnetic resonance (1972St38).      
+ 35CL2cL Others: -0.076 {I5} (1986El09), -0.817 {I8} (1993Su36), 0.0819 {I11}   
+ 35CL3cL (2000Ha64), 0.0850 {I11} (2004Al08); also from 2011StZZ.               
+ 35CL cL J$spin from microwave spectroscopy and atomic beam methods             
+ 35CL2cL (1948To10,1949Da14), parity from L(pol d,{+3}He)=2 and L-1/2 from      
+ 35CL2cL  analyzing power                                                       
+ 35CL cL $Evaluated rms charge radius=3.365 fm {I15} (2004An14 evaluation),     
+ 35CL2cL 3.365 fm {I19} from 2008 update of 2004An14.                           
+ 35CL  L 1219.29   11 1/2+             126 FS    14                             
+ 35CLX L XREF=BDFGIKLMNOPQRSTVWX                                                
+ 35CL cL J$L(pol d,{+3}He)=0                                                    
+ 35CL cL T$weighted average of 146 fs {I62} from (|a,p|g), 106 fs {I14} from    
+ 35CL2cL (p,|g), 201 fs {I28} from ({+34}S,n|g), 90 fs {I21} from (|g,|g),      
+ 35CL3cL 139 fs {I56} from (n,n'|g), 150 fs {I35} from (p,p'|g), 150 fs {I20}   
+ 35CL4cL from coulomb excitation.                                               
+ 35CL  G 1219.3    2 100       M1+E2     +0.106  7                              
+ 35CL cG M,MR$from coulomb excitation                                           
+ 35CLB G BM1W=0.095 11$BE2W=2.7 5                                               
+ 35CL  L 1763.04    75/2+              0.39 PS   4                              
+ 35CLX L XREF=BDFGIKLMOPQRSUVWX                                                 
+ 35CL2 L ISPIN=1/2                                                              
+ 35CL cL J$L(d,n)=2; |DJ=1, M1+E2 |g to 3/2+                                    
+ 35CL cL T$weighted average of 0.38 ps {I11} from (|a,p|g), 0.35 ps {I6} from   
+ 35CL2cL (p,|g), 0.374 ps {I49} from ({+34}S,n|g), 0.43 ps {I20} from (p,p'|g), 
+ 35CL3cL 0.41 ps {I4} from coulomb excitation.                                  
+ 35CL  G 543.8       0.2     LT                                                 
+ 35CL  G 1763.13   10 100      M1+E2     -2.93   10                             
+ 35CL cG MR$weighted average of -3.0 {I1} from (|a,p|g), -2.87 {I12} from       
+ 35CL2cG (p,p'|g), -2.88 {I45} from coulomb excitation, -2.6 {I4} from          
+ 35CL3cG (HI,xn|g)                                                              
+ 35CLB G BM1W=0.00107 13$BE2W=11.2 12                                           
+ 35CL  L 2645.74    8 7/2+             159 FS    21                             
+ 35CLX L XREF=BFGILMOPTVWX                                                      
+ 35CL cL J$L(p,t)=2; |g|g(DCO) in (HI,xn|g)                                     
+ 35CL cL T$weighted average of 208 fs {I62} from (|a,p|g), 146 fs {I21} from    
+ 35CL2cL (p,|g), 187 fs {I62} from (n,n'|g), 165 fs {I35} from (p,p'|g) and     
+ 35CL3cL 180 fs {I60} from coulomb excitation.                                  
+ 35CL  G 882.84    10 9.9    11 M1+E2    -0.23   5                              
+ 35CL cG MR$weighted average of -0.25 {I5} from (|a,p|g) and -0.21 {I5} from    
+ 35CL2cG (p,p'|g).                                                              
+ 35CLB G BM1W=0.017 3$BE2W=4.4 20                                               
+ 35CL  G 1426.3      1.1     LT                                                 
+ 35CL  G 2645.7    3 100.0   11 E2                                              
+ 35CLB G BE2W=3.7 5                                                             
+ 35CL cG E$from (HI,xn|g)                                                       
+ 35CL cG M$from (p,p'|g)                                                        
+ 35CL  L 2693.75    83/2+              33 FS     6                              
+ 35CLX L XREF=BFGILMNOPRSV                                                      
+ 35CL cL J$L({+3}He,d)=L(d,{+3}He)=2; p'|g(|q) and |g-polarization in (p,p'|g)  
+ 35CL cL T$weighted average of 49 fs {I21} from (|a,p|g), 14 fs {I2} from       
+ 35CL2cL (p,|g), 24 fs {I7} from (|g,|g), 43 fs {I6} from (n,n'|g) and          
+ 35CL3cL 44 fs {I11} from (p,p'|g)                                              
+ 35CL  G 930.9     2 16.3    13 M1+E2    -0.09   3                              
+ 35CL cG MR$from (p,p'|g)                                                       
+ 35CLB G BM1W=0.106 22$BE2W=4 3                                                 
+ 35CL  G 1474.8    3 9.5     10 M1+E2    +0.63   21                             
+ 35CL cG MR$from (p,p'|g)                                                       
+ 35CLB G BM1W=0.011 4$BE2W=8 4                                                  
+ 35CL  G 2693.6    1 100.0   16 M1+E2    -0.25   2                              
+ 35CL cG MR$weighted average of -0.17 {I8} from (|a,p|g) and -0.25 {I2} form    
+ 35CL2cG (p,p'|g)                                                               
+ 35CLB G BM1W=0.026 5$BE2W=0.83 20                                              
+ 35CL  L 3002.30   135/2+              21 FS     4                              
+ 35CLX L XREF=BFGILMNOPRSTX                                                     
+ 35CL cL J$L(pol d, {+3}He)=2 and L+1/2 from analyzing power                    
+ 35CL cL T$weighted average of 33 fs {I6} from (|a,p|g), 13 fs {I2} from        
+ 35CL2cL (p,|g), 17 fs {I7} from (|g,|g), 50 fs {I9} from (n,n'|g),             
+ 35CL3cL 18 fs {I9} from (p,p'|g)                                               
+ 35CL  G 308.6       5.4     LT                                                 
+ 35CL  G 356.6       1.1     LT                                                 
+ 35CL  G 1239.2      2.2     11 E2                                              
+ 35CL cG $If M1, B(M1)(W.u.)=0.011 {I6}; if E2, B(E2)(W.u.)=27 {I15}            
+ 35CL  G 1782.9      3.4     11 E2                                              
+ 35CLB G BE2W=7 3                                                               
+ 35CL cG M$from (p,p'|g)                                                        
+ 35CL  G 3002.4    4 100     2 M1+E2     -0.08   2                              
+ 35CL cG MR$weighted average of -0.09 {I3} from (|a,p|g) and -0.08 {I2} from    
+ 35CL2cG (p,p'|g)                                                               
+ 35CLB G BM1W=0.035 7$BE2W=0.09 5                                               
+ 35CL  L 3162.80    87/2-              30.8 PS   6                              
+ 35CL2 L ISPIN=1/2                                                              
+ 35CLX L XREF=DFGILMOPRSX                                                       
+ 35CL cL J$L(pol d, {+3}He)=3 and L+1/2 from analyzing power                    
+ 35CL cL T$weighted average of 34 ps {I3} from (|a,p|g), 25.6 ps {I28} from     
+ 35CL2cL (p,|g), 32 ps {I4} from (p,p'|g) and 30.9 ps {I6} from (HI,xn|g)       
+ 35CL  G 161       1 1.7     4 [E1]                                             
+ 35CLB G BE1W=7.5E-5 18                                                         
+ 35CL cG E$from (HI,xn|g)                                                       
+ 35CL  G 469.1       0.6     LT                                                 
+ 35CL  G 517.2     1 9.8     5 E1                                               
+ 35CLB G BE1W=1.30E-5 8                                                         
+ 35CL cG M$from (p,p'|g) and (HI,xn|g)                                          
+ 35CL  G 1399.9    7 0.33    5 E1+M2     +0.44   12                             
+ 35CL cG E$from (HI,xn|g)                                                       
+ 35CLB G BE1W=1.8E-8 4$BM2W=0.008 4                                             
+ 35CL  G 1943.4      0.2     LT                                                 
+ 35CL  G 3162.5    1 100.0   7 M2+E3     +0.16   2                              
+ 35CL cG MR$weighted average of +0.14 {I2} from (|a,p|g), +0.26 {I4} from       
+ 35CL2cG (p,|g), +0.17 {I3} from (p,p'|g) and +0.16 {I1} from (HI,xn|g)         
+ 35CLB G BM2W=0.258 6$BE3W=3.8 10                                               
+ 35CL  L 3918.49   173/2+              4.9 FS    14                             
+ 35CLX L XREF=BGIMNP                                                            
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL cL T$from (p,|g) and (|g,|g)                                              
+ 35CL  G 1272.7      3.7     LT                                                 
+ 35CL  G 2155.1    15 22.0   12 [M1,E2]                                         
+ 35CL cG $If M1, B(M1)(W.u.)=0.080 {I24}; if E2, B(E2)(W.u.)=65 {I19}           
+ 35CL cG E$from |b{++} decay                                                    
+ 35CL  G 2699.0      0.6     LT                                                 
+ 35CL  G 3918.4    6 100.0   12 M1+E2    -0.21   2                              
+ 35CL cG E$from (|g,|g)                                                         
+ 35CLB G BM1W=0.058 17$BE2W=0.63 22                                             
+ 35CL  L 3943.82   259/2+              205 FS    35                             
+ 35CLX L XREF=FGISX                                                             
+ 35CL cL J$|g(|q) in (|a,p|g) and |g|g(DCO) in (HI,xn|g)                        
+ 35CL cL T$weighted average of 229 fs {I35} in (|a,p|g) and 173 fs {I41} in     
+ 35CL2cL (p,|g)                                                                 
+ 35CL  G 1297.4    15 8.0    22 M1+E2    -3.0    1                              
+ 35CL cG E$from (|a,p|g)                                                        
+ 35CL cG MR$from (|a,p|g)                                                       
+ 35CLB G BM1W=0.00034 12$BE2W=6.9 23                                            
+ 35CL  G 2180      1 100.0   22 [E2]                                            
+ 35CLB G BE2W=7.1 13                                                            
+ 35CL cG E$from (HI,xn|g)                                                       
+ 35CL  G 2724.4      6       LT                                                 
+ 35CL  G 3943.7      10      LT                                                 
+ 35CL  L 3967.50   23 1/2+             10 FS     3                              
+ 35CLX L XREF=BGIM                                                              
+ 35CL cL J$L({+3}He,d)=0                                                        
+ 35CL cL T$from (p,|g)                                                          
+ 35CL  G 965.1                                                                  
+ 35CL  G 1273.7      7       4                                                  
+ 35CL  G 2204.3      1.4     LT                                                 
+ 35CL  G 2748.5    6 100     6 [M1]                                             
+ 35CLB G BM1W=0.079 25                                                          
+ 35CL cG E$from |b{++} decay                                                    
+ 35CL  G 3967.2      26      4 [M1,E2]                                          
+ 35CL cG $If M1, B(M1)(W.u.)=0.0069 {I24}; if E2, B(E2)(W.u.)=1.6 {I6}          
+ 35CL  L 3979.0     3 (3/2+,5/2+)      14 FS     3                              
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g transitions to 1/2+,7/2+                                          
+ 35CL cL E,T$from (p,|g)                                                        
+ 35CL  G 1285.3      2.4     6                                                  
+ 35CL  G 1333.2      2.4     LT                                                 
+ 35CL  G 2215.8      2.5     LT                                                 
+ 35CL  G 2759.5      100     6                                                  
+ 35CL  G 3978.8      18      6                                                  
+ 35CL  L 4059.12   15 3/2-             14 FS     2                              
+ 35CLX L XREF=FGILM                                                             
+ 35CL cL J$({+3}He,d)=1 and |g(|q) in (p,|g)                                    
+ 35CL cL T$weighted average of 21 fs {I9} from (|a,p|g) and 14 fs {I2} from     
+ 35CL2cL (p,|g)                                                                 
+ 35CL  G 896.3       6       LT                                                 
+ 35CL  G 1056.8      3       LT                                                 
+ 35CL  G 1365.4      1.3     4  [E1]                                            
+ 35CLB G BE1W=0.00021 7                                                         
+ 35CL  G 1413.4      1       LT                                                 
+ 35CL  G 2296      7 4.4     16 [E1]                                            
+ 35CLB G BE1W=0.00015 6                                                         
+ 35CL cG E$from (p,|g)                                                          
+ 35CL  G 2838      7 100     2  [E1]                                            
+ 35CLB G BE1W=0.0018 3                                                          
+ 35CL cG E$from (p,|g)                                                          
+ 35CL  G 4058      7 2       LT                                                 
+ 35CL cG E$from (p,|g)                                                          
+ 35CL  L 4111.98   24 7/2+             49 FS     11                             
+ 35CLX L XREF=FGIL                                                              
+ 35CL cL J$|g(|q) in (|a,p|g) and (p,|g); |g to 3/2+                            
+ 35CL  G 2348.8      90      6 M1+E2     -0.16   2                              
+ 35CLB G BM1W=0.015 4$BE2W=0.27 10                                              
+ 35CL  G 2892.5      19      LT                                                 
+ 35CL  G 4111.7      100     6 E2                                               
+ 35CL cG M,MR$from (p,|g). |d(O/Q)=0.0 {I1}                                     
+ 35CLB G BE2W=0.72 18                                                           
+ 35CL  L 4173.44   17 5/2-             34 FS     6                              
+ 35CLX L XREF=IL                                                                
+ 35CL2 L ISPIN=1/2                                                              
+ 35CL cL J$|g-feeding in (p,|g)                                                 
+ 35CL cL T$from (p,|g)                                                          
+ 35CL  G 1479.7      45      14 [E1]                                            
+ 35CLB G BE1W=0.0014 6                                                          
+ 35CL  G 1527.7      17      LT                                                 
+ 35CL  G 2410.2      28      9  [E1]                                            
+ 35CLB G BE1W=0.00020 8                                                         
+ 35CL  G 2954.0      5       LE                                                 
+ 35CL  G 4173.2      100     17 [E1]                                            
+ 35CLB G BE1W=0.00014 4                                                         
+ 35CL  L 4177.88   15 3/2-             25 FS     3                              
+ 35CLX L XREF=FGIM(4167)                                                        
+ 35CL cL J$L({+3}He,d)=1; |g(|q) and |g-polarization in (p,|g)                  
+ 35CL cL T$weighted average of 47 fs {I17} from (|a,p|g) and 24 fs {I3}         
+ 35CL2cL from (p,|g)                                                            
+ 35CL  G 1175.6      0.8     LT                                                 
+ 35CL  G 1484.2      13      3  [E1]                                            
+ 35CLB G BE1W=0.00061 17                                                        
+ 35CL  G 1532.1      0.8     LT                                                 
+ 35CL  G 2414.7      1.6     LT                                                 
+ 35CL  G 2958.4      51      8 E1+M2     +0.11   4                              
+ 35CLB G BE1W=0.00030 7$BM2W=1.9 15                                             
+ 35CL  G 4177.6      100     8 E1+M2     +0.06   3                              
+ 35CLB G BE1W=0.00021 4$BM2W=0.20 20                                            
+ 35CL  L 4347.82   15 9/2-             0.8 PS    3                              
+ 35CLX L XREF=FGIX                                                              
+ 35CL cL J$p|g(|q) and |g-polarization in (|a,p|g) and |g|g(DCO) in (HI,xn|g)   
+ 35CL cL T$weighted average of 2.0 ps {I7} in (|a,p|g), 0.229 ps {I42} in       
+ 35CL2cL (p,|g) and 0.91 ps {I19} in (HI,xn|g)                                  
+ 35CL  G 1185.0    2 100     3 M1+E2     -0.38   3                              
+ 35CL cG MR$weighted average of -0.38 {I3} in (|a,p|g) and -0.34 {I11} in       
+ 35CL2cG (HI,xn|g)                                                              
+ 35CLB G BM1W=0.009 4$BE2W=3.5 15                                               
+ 35CL  G 1345.5      6       LT                                                 
+ 35CL  G 1654.1      6       LT                                                 
+ 35CL  G 1702.0    3 47      2 E1+M2     -0.018  12                             
+ 35CLB G BE1W=4.7E-5 18$BM2W=0.024 +34-24                                       
+ 35CL  G 2584.6      4       LT                                                 
+ 35CL  G 3128.3      7       LT                                                 
+ 35CL  G 4347.8    8 4       LT                                                 
+ 35CL cG E$from (HI,xn|g)                                                       
+ 35CL  L 4624.35   23 (3/2,5/2+)       40 FS     17                             
+ 35CLX L XREF=B(?)FGI                                                           
+ 35CL cL J$|g(|q) in (|a,p|g) and (p,|g); |g-feeding in (p,|g)                  
+ 35CL cL T$from (|a,p|g)                                                        
+ 35CL  G 1930.6                                                                 
+ 35CL  G 2861.1                                                                 
+ 35CL  G 4624.0      100                                                        
+ 35CL cG MR$ -0.08 {I14} for J=3/2; +0.36 {I15} for J=5/2 in (|a,p|g)           
+ 35CL  L 4768.82   18 7/2              77 FS     20                             
+ 35CLX L XREF=FGI                                                               
+ 35CL cL J$|g(|q) and |g-feeding in (p,|g)                                      
+ 35CL cL T$from (p,|g)                                                          
+ 35CL  G 1606.0      100     13                                                 
+ 35CL  G 1766.5      54      15                                                 
+ 35CL  G 2075.1      15      LT                                                 
+ 35CL  G 3005.6                                                                 
+ 35CL  G 3549.3      15      LT                                                 
+ 35CL  G 4768.5      15      LT                                                 
+ 35CL  L 4839.08   20 (1/2+,3/2)       10 FS     3                              
+ 35CLX L XREF=IS                                                                
+ 35CL cL J$|g-feeding in (p,|g)                                                 
+ 35CL cL T$from (p,|g)                                                          
+ 35CL  G 1836.7      12      LT                                                 
+ 35CL  G 2145.3      7       LT                                                 
+ 35CL  G 2193.3      5       LT                                                 
+ 35CL  G 3075.8      100     7                                                  
+ 35CL  G 3619.5      12      LT                                                 
+ 35CL  G 4838.7      69      7                                                  
+ 35CL  L 4854.4     4 (1/2,3/2)        4.9 FS    14                             
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g to 1/2+ and |g-feeding in (p,|g)                                  
+ 35CL cL T$from (p,|g)                                                          
+ 35CL  G 3634.8      100     7                                                  
+ 35CL  G 4854.0      33      7                                                  
+ 35CL  L 4881.07   21 7/2              5.4 FS    14                             
+ 35CLX L XREF=FGI                                                               
+ 35CL cL J$|g(|q) in (|a,p|g)                                                   
+ 35CL cL T$from (p,|g). 194 fs {I42} from (|a,p|g)                              
+ 35CL  G 1878.7      15      5                                                  
+ 35CL  G 2187.3      16      LT                                                 
+ 35CL  G 2235.3      47      8                                                  
+ 35CL  G 3117.4    20 100    8 D(+Q)     0.0     4                              
+ 35CL cG E,MR$from (|a,p|g)                                                     
+ 35CL  G 3661.5      6       LT                                                 
+ 35CL  G 4880.7      6       LT                                                 
+ 35CL  L 5010.09   20 (1/2,3/2)        7.6 FS    21                             
+ 35CLX L XREF=GIM                                                               
+ 35CL cL J$|g-feeding in (p,|g)                                                 
+ 35CL cL T$from (p,|g)                                                          
+ 35CL  G 836.6       25      LT                                                 
+ 35CL  G 951.0       10      LT                                                 
+ 35CL  G 1847.3      50      LT                                                 
+ 35CL  G 2007.7      20      LT                                                 
+ 35CL  G 2316.3      25      LT                                                 
+ 35CL  G 2364.3      5       LT                                                 
+ 35CL  G 3246.8      10      LT                                                 
+ 35CL  G 3790.5      7       LT                                                 
+ 35CL  G 5009.7      100                                                        
+ 35CL  L 5157      11 3/2+,5/2+                                                 
+ 35CLX L XREF=MRS                                                               
+ 35CL cL J$L(d,{+3}He)=2                                                        
+ 35CL  L 5163.21   23 7/2-                                                      
+ 35CLX L XREF=FGI                                                               
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 2000.4      93      47 M1+E2    +0.44   20                             
+ 35CL  G 2160.9      23      9                                                  
+ 35CL  G 3399.9      100     12 D(+Q)    0.00    3                              
+ 35CL  G 3943.6      23      LT                                                 
+ 35CL  G 5162.8      23      LT                                                 
+ 35CL  L 5215.79   18(3/2+,5/2)        5 FS      LT                             
+ 35CLX L XREF=FI                                                                
+ 35CL cL J$|g to 3/2+ and |g-feeding in (p,|g)                                  
+ 35CL cL T$from (p,|g)                                                          
+ 35CL  G 205.7       23      LT                                                 
+ 35CL  G 1042.3      60      LT                                                 
+ 35CL  G 1156.6      10      LT                                                 
+ 35CL  G 2053.0      15      LT                                                 
+ 35CL  G 2213.4      25      LT                                                 
+ 35CL  G 2522.0      15      LT                                                 
+ 35CL  G 2570.0      15      LT                                                 
+ 35CL  G 3452.5      6       LT                                                 
+ 35CL  G 3996.2      4       LT                                                 
+ 35CL  G 5215.4      100                                                        
+ 35CL  L 5403.5    3  1/2-,3/2-        12 FS     3                              
+ 35CLX L XREF=FGIM                                                              
+ 35CL cL J$L({+3}He,d)=1; |g's to 1/2+ and 3/2+; |g-feeding in (p,|g)           
+ 35CL cL T$from (p,|g)                                                          
+ 35CL  G 2709.7      45      9                                                  
+ 35CL  G 3640.2      18      LT                                                 
+ 35CL  G 4183.9      100     18                                                 
+ 35CL  G 5403.1      13      LT                                                 
+ 35CL cG RI$additional 36% decay to other levels                                
+ 35CL  L 5407.2     4 11/2-            0.28 PS   7                          D   
+ 35CLX L XREF=GMX                                                               
+ 35CL cL J$p|g(|q) and |g-polarization in (|a,p|g) and |g|g(DCO) in (HI,xn|g)   
+ 35CL cL T$from (|a,p|g)                                                        
+ 35CL  G 1059.3    10 19.1   6 M1+E2     +0.14   3                              
+ 35CL cG MR$weighted average of +0.25 {I8} in (|a,p|g) and +0.13 {I3} in        
+ 35CL2cG (HI,xn|g)                                                              
+ 35CLB G BM1W=0.011 3$BE2W=0.7 4                                                
+ 35CL  G 2244      3 100.0   9 E2                                               
+ 35CL cG MR$from (HI,xn|g), |d(O/Q)=0.000 {I1}                                  
+ 35CLB G BE2W=4.4 11                                                            
+ 35CL  L 5520.0    11                                                           
+ 35CLX L XREF=GI                                                                
+ 35CL cL E$from 1976Sp08                                                        
+ 35CL  L 5586.0    3 5/2+                                                       
+ 35CLX L XREF=FIS                                                               
+ 35CL cL J$L(pol d,{+3}He)=2 and L+1/2 from analyzing power                     
+ 35CL  G 2940.1      67      33                                                 
+ 35CL  G 3822.7      100     17                                                 
+ 35CL  G 4366.3      17      LT                                                 
+ 35CL  G 5585.5      17      LT                                                 
+ 35CL  L 5599.69   23 3/2+,5/2+        2.1 FS    7                              
+ 35CLX L XREF=GIR                                                               
+ 35CL cL J$L(d,{+3}He)=2; |g's to 3/2+ and 5/2+; |g-feeding in (p,|g)           
+ 35CL  G 3836.4      37      14                                                 
+ 35CL  G 5599.2      100     14                                                 
+ 35CL  L 5633      3                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 5645.0     3(5/2,7/2,9/2+)    2.8 FS    7                              
+ 35CLX L XREF=GI                                                                
+ 35CL cL J$|g to 7/2- and |g-feeding in (p,|g)                                  
+ 35CL cL T$from (p,|g)                                                          
+ 35CL  G 2482.1      100                                                        
+ 35CL  G 2642.6                                                                 
+ 35CL  G 3881.6                                                                 
+ 35CL  G 5644.5      8       LT                                                 
+ 35CL  L 5654.48   22 3/2+             14 FS     3                              
+ 35CLX L XREF=GIMT                                                              
+ 35CL2 L ISPIN=3/2                                                              
+ 35CL cL J$L({+3}He,d)=2; L(p,t)=0+2; |g(|q) in (p,|g)                          
+ 35CL cL J$from (p,|g)                                                          
+ 35CL  G 2652.1      100     6  [M1,E2]                                         
+ 35CL cG $If M1, B(M1)(W.u.)=0.076 {I18}; if E2, B(E2)(W.u.)=41 {I10}           
+ 35CL  G 3891.1      7.5     25 [M1,E2]                                         
+ 35CL cG $If M1, B(M1)(W.u.)=0.0018 {I8}; if E2, B(E2)(W.u.)=0.45 {I18}         
+ 35CL  G 4434.8      7.5     LT                                                 
+ 35CL cG RI$additional 18% for decay to other levels                            
+ 35CL  L 5682.9    6 1/2-,3/2-                                                  
+ 35CLX L XREF=FIM                                                               
+ 35CL cL J$L({+3}He,d)=1                                                        
+ 35CL  G 1505.0      100     17                                                 
+ 35CL cG RI$additional 67% for decay to other levels                            
+ 35CL  L 5723.6     4 5/2+                                                      
+ 35CLX L XREF=IRS                                                               
+ 35CL cL J$L(pol d,{+3}He)=2 and L+1/2 from analyzing power                     
+ 35CL  G 3029.8      63      8                                                  
+ 35CL  G 3960.2      100     11                                                 
+ 35CL cG RI$additional 100% for decay to others levels (1976Sp08)               
+ 35CL  L 5758.0     4(1/2+,3/2)                                                 
+ 35CLX L XREF=IM                                                                
+ 35CL cL J$L({+3}He,d)=(0,1); |g's to 3/2+ and 3/2-; |g-feeding in (p,|g)       
+ 35CL  G 1580.1      67      22                                                 
+ 35CL  G 4538.3      13      LT                                                 
+ 35CL  G 5757.5      100     22                                                 
+ 35CL cG RI$additional 56% for decay to other levels                            
+ 35CL  L 5805.5    4 (1/2+,3/2,5/2)    3.5 FS    7                              
+ 35CLX L XREF=FI                                                                
+ 35CL cL J$|g's to 3/2+ and |g-feeding in (p,|g)                                
+ 35CL cL T$from (p,|g)                                                          
+ 35CL  G 5805.0      100                                                        
+ 35CL  L 5823.0    10 (5/2,9/2)                                                 
+ 35CLX L XREF=FG                                                                
+ 35CL cL J$|g(|q) in (|a,p|g)                                                   
+ 35CL  G 2660.1      100                                                        
+ 35CL cG MR$ -0.28 {I4} for J=9/2; +2.2 {I5} or +0.6 {I1} for J=5/2 in (|a,p|g) 
+ 35CL  L 5926.9    3  11/2-            0.28 PS   LT                             
+ 35CLX L XREF=FGX                                                               
+ 35CL cL J$|g(|q) in (|a,p|g) and |g|g(DCO) (HI,xn|g)                           
+ 35CL cL T$from (HI,xn|g)                                                       
+ 35CL  G 1579.1    3  100    11 D+Q      -0.24   10                             
+ 35CL cG MR$weighted average of -0.8 {I4} in (|a,p|g) and -0.2 {I1} in          
+ 35CL2cG (HI,xn|g)                                                              
+ 35CL  G 1982.9       11     3                                                  
+ 35CL  L 6087.4     4 13/2-            6.1 PS    6                              
+ 35CLX L XREF=FGX                                                               
+ 35CL cL J$p|g(|q) and |g-polarization in (|a,p|g) and |g|g(DCO) (HI,xn|g)      
+ 35CL cL T$weighted average of 6.4 ps {I6} in (|a,p|g) and 5.3 ps {I10} in      
+ 35CL2cL (HI,xn|g)                                                              
+ 35CL  G 680.3     1 100.0   11 M1+E2    +0.02   1                              
+ 35CL cG M$weighted average of +0.02 {I1} in (|a,p|g) and +0.1 {I1} in          
+ 35CL2cG (HI,xn|g)                                                              
+ 35CLB G BM1W=0.0107 11$BE2W=0.03 +4-3                                          
+ 35CL  G 1739.4    4 7.5     11 [E2]                                            
+ 35CLB G BE2W=0.060 11                                                          
+ 35CL  L 6106.2     4 (3/2,5/2+)       8.3 FS    21                             
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g's to 1/2+,3/2+ and 5/2+; |g-feeding in (p,|g)                     
+ 35CL cL T$from (p,|g)                                                          
+ 35CL  G 4342.8      10      4                                                  
+ 35CL  G 4886.5      62      17                                                 
+ 35CL  G 6105.6      100     17                                                 
+ 35CL  L 6139      4  5/2+                                                      
+ 35CLX L XREF=FRS                                                               
+ 35CL cL J$L(pol d,{+3}He)=2 and L+1/2 from analyzing power                     
+ 35CL  L 6181.0    6 (1/2:7/2,9/2-)                                             
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g to 3/2+                                                           
+ 35CL  G 6180.4      100     22                                                 
+ 35CL cG RI$additional 122% for decay to other levels                           
+ 35CL  L 6200      10 (7/2:17/2)+                                               
+ 35CLX L XREF=H                                                                 
+ 35CL cL J$L(|a,d)=6                                                            
+ 35CL  L 6225      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 6380.8     8                                                           
+ 35CLX L XREF=FX                                                                
+ 35CL  G 296       1                                                            
+ 35CL  G 971       1                                                            
+ 35CL  L 6402      4                                                            
+ 35CLX L XREF=FG                                                                
+ 35CL  L 6492.0    6 (1/2,3/2,5/2+)                                             
+ 35CLX L XREF=FI                                                                
+ 35CL cL J$|g to 3/2+ and |g-feeding in (p,|g)                                  
+ 35CL  G 6491.4      100                                                        
+ 35CL  L 6656      3                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 6681      3                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 6746      12 3/2+,5/2+                                                 
+ 35CLX L XREF=RS                                                                
+ 35CL cL J$L(d,{+3}He)=2                                                        
+ 35CL  L 6783      3                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 6802      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 6866.7    6                                                            
+ 35CLX L XREF=FI                                                                
+ 35CL  L 6894      3                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 6947      4  5/2+                                                      
+ 35CLX L XREF=FRS                                                               
+ 35CL cL J$L(pol d,{+3}He)=2 and L+1/2 from analyzing power                     
+ 35CL  L 6986      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 7066.2     3 5/2+                                                      
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g's to 1/2+,3/2+,5/2+,7/2+,7/2-                                     
+ 35CL  G 1902.9      1.9     LT                                                 
+ 35CL  G 2888.2      1.0     LT                                                 
+ 35CL  G 2954.1      1.3     LT                                                 
+ 35CL  G 3006.9      2.1     11                                                 
+ 35CL  G 3903.2      12.5    13                                                 
+ 35CL  G 4063.6      4.2     21                                                 
+ 35CL  G 4372.2      12.5    13                                                 
+ 35CL  G 4420.2      6       3                                                  
+ 35CL  G 5302.6      33      4                                                  
+ 35CL  G 5846.3      38      4                                                  
+ 35CL  G 7065.4      100     10                                                 
+ 35CL  L 7103.3     3 3/2                                                       
+ 35CLX L XREF=FI                                                                
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 1887.4      1.5     LT                                                 
+ 35CL  G 2093.1      1.5     LT                                                 
+ 35CL  G 2925.3      2.2     LT                                                 
+ 35CL  G 3184.6      3.0     15                                                 
+ 35CL  G 3940.3      0.3     LT                                                 
+ 35CL  G 4100.7      4.5     23                                                 
+ 35CL  G 4409.3      19.4    15 D(+Q)    0.00    3                              
+ 35CL  G 4457.3      7.5     LT                                                 
+ 35CL  G 5339.7      9       3                                                  
+ 35CL  G 5883.4      100     10 D(+Q)    0.00    3                              
+ 35CL  G 7102.5      16.4    15                                                 
+ 35CL  L 7121      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 7170      10 (7/2:17/2)+                                               
+ 35CLX L XREF=H                                                                 
+ 35CL cL J$L(|a,d)=6                                                            
+ 35CL  L 7178.6    3 1/2+                                                       
+ 35CLX L XREF=FI                                                                
+ 35CL2 L ISPIN=3/2                                                              
+ 35CL cL J$|g(|q) in (p,|g); parity from IAS in {+35}S                          
+ 35CL  G 1072.4      10      5                                                  
+ 35CL  G 1775.1      4.3     LT                                                 
+ 35CL  G 2339.4      3.8     LT                                                 
+ 35CL  G 3005.0      2.5     LT                                                 
+ 35CL  G 3119.3      60      8                                                  
+ 35CL  G 3199.4      23      LT                                                 
+ 35CL  G 3211.0      25      3                                                  
+ 35CL  G 3259.9      5       3                                                  
+ 35CL  G 4484.6      10      5                                                  
+ 35CL  G 5415.0                                                                 
+ 35CL  G 5958.7      40      5                                                  
+ 35CL  G 7177.8      100     10                                                 
+ 35CL  L 7185.0     3 5/2+                                                      
+ 35CLX L XREF=IS                                                                
+ 35CL cL J$L(pol d,{+3}He)=2 and L+1/2 from analyzing power                     
+ 35CL  G 1969.1      1.1     LT                                                 
+ 35CL  G 2174.8      1.1     LT                                                 
+ 35CL  G 3011.4      11      LT                                                 
+ 35CL  G 3125.7      57      13                                                 
+ 35CL  G 4022.0      6.5     LT                                                 
+ 35CL  G 4182.4      6.5     LT                                                 
+ 35CL  G 4491.0      4.3     21                                                 
+ 35CL  G 4538.9      13      4                                                  
+ 35CL  G 5421.4      9       7                                                  
+ 35CL  G 5965.1      35      15                                                 
+ 35CL  G 7184.2      100     22                                                 
+ 35CL  L 7194.5     3 1/2-             0.027 KEV 8                              
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g(|q) in (p,|g) and analysis of resonance in (p,p)                  
+ 35CL  G 1978.6      7       LT                                                 
+ 35CL  G 2184.3      1.4     7                                                  
+ 35CL  G 2340.0      2.8     14                                                 
+ 35CL  G 2355.3      2.5     LT                                                 
+ 35CL  G 3020.9      21      3                                                  
+ 35CL  G 3135.2      4       2                                                  
+ 35CL  G 3215.3      2.5     LT                                                 
+ 35CL  G 3226.9      2.8     14                                                 
+ 35CL  G 3275.8      7       4                                                  
+ 35CL  G 4031.5      0.8     LT                                                 
+ 35CL  G 4500.5      5.6     LT                                                 
+ 35CL  G 4548.4      8       LT                                                 
+ 35CL  G 5430.9      7       LT                                                 
+ 35CL  G 5974.6      100     10                                                 
+ 35CL  G 7193.7      7       LT                                                 
+ 35CL  L 7210      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 7225.5    3 5/2                                                        
+ 35CLX L XREF=FI                                                                
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 1119.3      5       3                                                  
+ 35CL  G 1420.0      1.7     9                                                  
+ 35CL  G 1542.6      3.4     17                                                 
+ 35CL  G 1625.8      1.4     LT                                                 
+ 35CL  G 1821.9      1.7     9                                                  
+ 35CL  G 2009.6      10      1                                                  
+ 35CL  G 2215.3      2.6     LT                                                 
+ 35CL  G 3047.5      3.4     LT                                                 
+ 35CL  G 3051.9      12      1                                                  
+ 35CL  G 3166.2      3.4     LT                                                 
+ 35CL  G 3306.8      1.7     9                                                  
+ 35CL  G 4062.5      3.4     LT                                                 
+ 35CL  G 4222.9      5       3                                                  
+ 35CL  G 4531.5      17      2 D+Q       +0.36   4                              
+ 35CL  G 5461.9      14      2 D+Q       -0.36   7                              
+ 35CL  G 6005.6      3.4     LT                                                 
+ 35CL  G 7224.7      100     11 D+Q      +0.36   4                              
+ 35CL  L 7234.0    3 5/2+                                                       
+ 35CLX L XREF=FIT                                                               
+ 35CL cL J$|g(|q) in (p,|g) and parity from transition strength in (p,|g)       
+ 35CL  G 1634.3      0.2     LT                                                 
+ 35CL  G 2018.1      1.5     LT                                                 
+ 35CL  G 2223.8      1.6     LT                                                 
+ 35CL  G 3056.0      1.1     6                                                  
+ 35CL  G 3174.7      0.6     LT                                                 
+ 35CL  G 4071.0      0.6     LT                                                 
+ 35CL  G 4231.4      0.6     LT                                                 
+ 35CL  G 4540.0      2.2     11                                                 
+ 35CL  G 4587.9      2.2     11                                                 
+ 35CL  G 5470.4      1.1     6                                                  
+ 35CL  G 6014.1      2.2     11                                                 
+ 35CL  G 7233.2      100     10 D+Q      -0.1                                   
+ 35CL  L 7269.2    1                                                            
+ 35CLX L XREF=IT                                                                
+ 35CL  L 7272.6     3 1/2-             0.014 KEV 4                              
+ 35CLX L XREF=IT                                                                
+ 35CL cL J$|g(|q) in (p,|g) and analysis of resonance in (p,p)                  
+ 35CL  G 1514.6      2.2     12                                                 
+ 35CL  G 1869.0      0.7     5                                                  
+ 35CL  G 2056.7      0.7     LT                                                 
+ 35CL  G 2262.4      2.2     12                                                 
+ 35CL  G 2433.4      1.4     7                                                  
+ 35CL  G 3094.6      0.7     5                                                  
+ 35CL  G 3213.3      1.4     7                                                  
+ 35CL  G 3305.0      1.4     7                                                  
+ 35CL  G 4109.6      0.3     LT                                                 
+ 35CL  G 4270.0      1.4     LT                                                 
+ 35CL  G 4578.6      1.4     7                                                  
+ 35CL  G 5509.0      1.4     LT                                                 
+ 35CL  G 6052.7      33      3                                                  
+ 35CL  G 7271.8      100     10                                                 
+ 35CL  L 7348      5                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 7362.0    3 3/2                                                        
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 1707.5      0.7     4                                                  
+ 35CL  G 1762.3      0.4     LT                                                 
+ 35CL  G 2146.1      3       LT                                                 
+ 35CL  G 2351.8      0.7     4                                                  
+ 35CL  G 2522.8      1.4     7                                                  
+ 35CL  G 3183.9      1.4     7                                                  
+ 35CL  G 3302.7      4.3     21                                                 
+ 35CL  G 3394.4      4.3     21                                                 
+ 35CL  G 3443.3      0.7     4                                                  
+ 35CL  G 4198.9      1.4     LT                                                 
+ 35CL  G 4359.4      0.7     4                                                  
+ 35CL  G 4668.0      3       LT                                                 
+ 35CL  G 4715.9      3       LT                                                 
+ 35CL  G 5598.4      14      2 (D+Q)     -0.01   10                             
+ 35CL cG MR$or |d>+2.5 in (p,|g)                                                
+ 35CL  G 6142.1      100     10 (D+Q)    -0.05   3                              
+ 35CL cG MR$+2.5 {I3} in (p,|g)                                                 
+ 35CL  G 7361.2      14      2                                                  
+ 35CL cG MR$-0.16<|d(Q/D)<-0.12 or +7.5<|d(Q/D)<+10 in (p,|g)                   
+ 35CL  L 7396.0    3 7/2(-)                                                     
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 2180.1      24      LT                                                 
+ 35CL  G 2385.8      16      LT                                                 
+ 35CL  G 3048.0      20      2                                                  
+ 35CL  G 3217.9      30      LT                                                 
+ 35CL  G 3283.8      18      2                                                  
+ 35CL  G 3336.7      16      LT                                                 
+ 35CL  G 3451.9      16      2                                                  
+ 35CL  G 4232.9      100     10 D+Q      +0.28   25                             
+ 35CL  G 4393.4      18      4 D(+Q)     +0.011  18                             
+ 35CL  G 4702.0      10      LT                                                 
+ 35CL  G 4749.9      20      2                                                  
+ 35CL  G 5632.4      14      LT                                                 
+ 35CL  G 6176.1      30      LT                                                 
+ 35CL  G 7395.2      20      LT                                                 
+ 35CL  L 7418      5                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 7451.0     5 3/2                                                       
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 3532.3      7       4                                                  
+ 35CL  G 4448.4      13.7    14                                                 
+ 35CL  G 4757.0      11      1                                                  
+ 35CL  G 5687.4      6       3                                                  
+ 35CL  G 6231.0      100     10                                                 
+ 35CL  L 7501.1     5                                                           
+ 35CLX L XREF=I                                                                 
+ 35CL  G 3557.0      45      6                                                  
+ 35CL  G 4498.5      24      3                                                  
+ 35CL  G 4855.0      100     11                                                 
+ 35CL  G 5737.5      13      2                                                  
+ 35CL  L 7502.9     3                                                           
+ 35CLX L XREF=FI                                                                
+ 35CL  G 1396.7      14      2                                                  
+ 35CL  G 1903.1      3       LT                                                 
+ 35CL  G 2492.7      3       LT                                                 
+ 35CL  G 3324.8      4       LT                                                 
+ 35CL  G 3443.6      100     10                                                 
+ 35CL  G 3558.8      3       LT                                                 
+ 35CL  G 4339.8      6       LT                                                 
+ 35CL  G 4500.3      6       LT                                                 
+ 35CL  G 4856.8      10      LT                                                 
+ 35CL  G 5739.3      1       LT                                                 
+ 35CL  G 6282.9      29      3                                                  
+ 35CL  G 7502.0      0.4     LT                                                 
+ 35CL  L 7518.7     47/2(-)                                                     
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 1918.9      2.9     15                                                 
+ 35CL  G 1932.6      4.4     22                                                 
+ 35CL  G 3170.7      2.9     15                                                 
+ 35CL  G 3574.6      2.9     15                                                 
+ 35CL  G 4355.6      100     10 D(+Q)    +0.1    2                              
+ 35CL cG $B(M1)(W.u.)=0.01 (p,|g)                                               
+ 35CL  G 4872.6      4.4     22                                                 
+ 35CL  G 5755.1      29      3 D+Q       +0.098  22                             
+ 35CL  L 7548.2     37/2-              0.7 FS    LT                             
+ 35CLX L XREF=IJ                                                                
+ 35CL2 L ISPIN=3/2                                                              
+ 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p)                      
+ 35CL cL T$from (p,|g)                                                          
+ 35CL  G 1893.6      1       LT                                                 
+ 35CL  G 1903.1      0.59    7                                                  
+ 35CL  G 1962.1      0.2     LT                                                 
+ 35CL  G 2332.3      2.1     LT                                                 
+ 35CL  G 2538.0      3.2     LT                                                 
+ 35CL  G 2779.3      1.5     1                                                  
+ 35CL  G 3370.1      1       LT                                                 
+ 35CL  G 3488.9      5.3     LT                                                 
+ 35CL  G 4385.1      100.0   11 D+Q      -0.07   2                              
+ 35CL  G 4545.6      2.1     1  D+Q      +0.6    4                              
+ 35CL  G 4854.1      1       LT                                                 
+ 35CL  G 4902.1      0.72    8                                                  
+ 35CL  G 5784.6      0.35    4                                                  
+ 35CL  G 6328.2      0.5     LT                                                 
+ 35CL  G 7547.3      0.29    3  Q(+O)    +0.1    2                              
+ 35CL  L 7561.1     4(1/2,3/2)                                                  
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 3383.0      2.8     14                                                 
+ 35CL  G 3501.8      14      8                                                  
+ 35CL  G 3581.9      1.4     LT                                                 
+ 35CL  G 3642.4      2.8     14                                                 
+ 35CL  G 4867.0      58      6                                                  
+ 35CL  G 6341.1      100     11                                                 
+ 35CL  G 7560.2      100     11                                                 
+ 35CL  L 7568      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 7587      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 7600.8     35/2+              14 FS     LT                             
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g(|q) in (p,|g); parity from transition strength in (p,|g)          
+ 35CL  G 2437.5      6       3                                                  
+ 35CL  G 2719.6      6       3                                                  
+ 35CL  G 2761.6      6       3                                                  
+ 35CL  G 2831.9      3.2     16                                                 
+ 35CL  G 2976.3      6       3                                                  
+ 35CL  G 3422.7      6       3                                                  
+ 35CL  G 3427.2      6       3                                                  
+ 35CL  G 3541.5      5       3                                                  
+ 35CL  G 3682.1      13      7                                                  
+ 35CL  G 4437.7      26      LT (D+Q)    -0.25   15                             
+ 35CL  G 4598.2      30      3 D+Q       +0.58   22                             
+ 35CL  G 4906.7      61      7 (D+Q)     -5.3    9                              
+ 35CL cG MR$or +0.01 {I5} (p,|g)                                                
+ 35CL  G 4954.7      5       3                                                  
+ 35CL  G 5837.2      65      7 D+Q       +0.31   7                              
+ 35CL  G 6380.8      3.2     16                                                 
+ 35CL  G 7599.9      100     10D+Q       +0.18   3                              
+ 35CL  L 7618.7    4 (3/2-,5/2)                                                 
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 1437.7      1       LT                                                 
+ 35CL  G 2402.8      4       2                                                  
+ 35CL  G 2455.4      1       LT                                                 
+ 35CL  G 2779.5      1       LT                                                 
+ 35CL  G 3440.6      4       2                                                  
+ 35CL  G 3559.4      1.3     7                                                  
+ 35CL  G 4455.6      4       2                                                  
+ 35CL  G 5855.1      13      2 (D+Q)     +0.48   11                             
+ 35CL  G 7617.8      100     10 (D+Q)    +2.2    3                              
+ 35CL  L 7650      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 7656.5     4 (1/2,3/2,5/2+)                                            
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g's to 3/2+,3/2-,1/2+                                               
+ 35CL  G 1550.3      5       3                                                  
+ 35CL  G 1973.5      2       1                                                  
+ 35CL  G 2001.9      2       1                                                  
+ 35CL  G 2817.3      5       3                                                  
+ 35CL  G 3478.4      2       1                                                  
+ 35CL  G 3597.2      56      5                                                  
+ 35CL  G 3688.8      4       2                                                  
+ 35CL  G 7655.6      100     11                                                 
+ 35CL  L 7670      10 (7/2:17/2)+                                               
+ 35CLX L XREF=H                                                                 
+ 35CL cL J$L(|a,d)=6                                                            
+ 35CL  L 7671.9     3(5/2-,7/2)                                                 
+ 35CLX L XREF=FI                                                                
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 2072.1      2       LT                                                 
+ 35CL  G 2508.6      7       4                                                  
+ 35CL  G 2790.7      2       1                                                  
+ 35CL  G 2903.0      2       LT                                                 
+ 35CL  G 3323.9      11      1                                                  
+ 35CL  G 3498.3      7       4                                                  
+ 35CL  G 4508.8      7       4                                                  
+ 35CL  G 4669.3      14      2 (D+Q)     -1.4    5                              
+ 35CL  G 5025.8      25      3 D(+Q)     +0.3    22                             
+ 35CL  G 5908.2      100     11 (D+Q)    +0.86   14                             
+ 35CL  G 7671.0      4       2                                                  
+ 35CL  L 7684.7    3 3/2-                                                       
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p)                      
+ 35CL cL $|G{-p}=446 eV {I15} in (p,p)                                          
+ 35CL  G 1926.6      0.7     4                                                  
+ 35CL  G 2084.9      2.8     14                                                 
+ 35CL  G 2281.1      2.8     14                                                 
+ 35CL  G 2468.8      0.7     4                                                  
+ 35CL  G 2674.5      0.8     LT                                                 
+ 35CL  G 3506.6      2.8     14                                                 
+ 35CL  G 3511.1      7       4                                                  
+ 35CL  G 3625.4      8       1                                                  
+ 35CL  G 4682.1      13      2 (D+Q)     -2.4    12                             
+ 35CL cG MR$or -0.01 {I5}, +0.01 {I7} from (p,|g)                               
+ 35CL  G 5921.0      1       LT                                                 
+ 35CL  G 6464.7      1.4     7                                                  
+ 35CL  G 7683.8      100     10 (D+Q)    +6.0    7                              
+ 35CL  L 7693.8     5 (1/2:7/2,9/2-)                                            
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g to 3/2+                                                           
+ 35CL  G 2094.0      1.0     5                                                  
+ 35CL  G 3634.5      1.0     5                                                  
+ 35CL  G 4691.2      2       1                                                  
+ 35CL  G 7692.9      100     11                                                 
+ 35CL  L 7706.4    3 5/2+                                                       
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p)                      
+ 35CL cL $|G{-p}=4 eV {I1} in (p,p)                                             
+ 35CL  G 2051.8      5       2 (D+Q)     -2      LT                             
+ 35CL cG MR$or |>13                                                             
+ 35CL  G 2825.2      0.5     LT                                                 
+ 35CL  G 2867.2      1.1     6                                                  
+ 35CL  G 3081.9      0.9     LT                                                 
+ 35CL  G 3528.3      2.3     LT                                                 
+ 35CL  G 3594.2      1.1     6                                                  
+ 35CL  G 3787.7      0.7     LT                                                 
+ 35CL  G 4703.8      1.1     6                                                  
+ 35CL  G 5060.3      5       2 (D+Q)     -1.01   10                             
+ 35CL cG MR$or |>13                                                             
+ 35CL  G 5942.7      0.5     LT                                                 
+ 35CL  G 6486.4      1.1     6                                                  
+ 35CL  G 7705.5      100     10 D(+Q)    +0.1    1                              
+ 35CL cG MR$ +0.1 {I1} (p,|g)                                                   
+ 35CL  L 7744.8    4 7/2-                                                       
+ 35CLX L XREF=FI                                                                
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 2863.6      44      5                                                  
+ 35CL  G 2975.8      2.3     12                                                 
+ 35CL  G 3632.6      12      6                                                  
+ 35CL  G 3800.7      18      3 D(+Q)     -0.16   17                             
+ 35CL cG $B(E1)(W.u.)=5|*10{+-4} (p,|g)                                         
+ 35CL  G 4581.7      42      4 D+Q       +0.18   8                              
+ 35CL cG M,MR$from (p,|g)                                                       
+ 35CL cG $B(M1)(W.u.)=0.014, B(M2)(W.u.)=0.081 (p,|g)                           
+ 35CL  G 5098.7      100     10 D(+Q)    +0.1    30                             
+ 35CL cG M,MR$from (p,|g)                                                       
+ 35CL cG $B(E1)(W.u.)=7|*10{+-4} (p,|g)                                         
+ 35CL  G 5981.1      5       3                                                  
+ 35CL  G 6524.8      1.4     LT                                                 
+ 35CL  L 7750      10 (7/2:17/2)+                                               
+ 35CLX L XREF=HI                                                                
+ 35CL cL J$L(|a,d)=6                                                            
+ 35CL  L 7777.0    3 5/2+                                                       
+ 35CLX L XREF=FI                                                                
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 2190.9      1.1     LT                                                 
+ 35CL  G 2613.7      2.4     LT                                                 
+ 35CL  G 2937.8      4       2                                                  
+ 35CL  G 3008.0      4       2                                                  
+ 35CL  G 3598.9      15      2                                                  
+ 35CL  G 3717.7      2.2     11                                                 
+ 35CL  G 4613.9      4       LT                                                 
+ 35CL  G 4774.4      8       4                                                  
+ 35CL  G 5082.9      15      2                                                  
+ 35CL  G 5130.9      4       2                                                  
+ 35CL  G 6013.3      100     10                                                 
+ 35CL  G 6557.0      28      3                                                  
+ 35CL  G 7776.1      35      4                                                  
+ 35CL  L 7781.6     3 5/2-                                                      
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 1675.4      3.5     LT                                                 
+ 35CL  G 2195.5      2.5     13                                                 
+ 35CL  G 2378.0      2.5     13                                                 
+ 35CL  G 2565.7      2.5     13                                                 
+ 35CL  G 3012.6      18      2                                                  
+ 35CL  G 3433.6      5       3                                                  
+ 35CL  G 3607.9      100     10                                                 
+ 35CL  G 3669.4      8       4                                                  
+ 35CL  G 3722.3      2.5     13                                                 
+ 35CL  G 3862.9      25      3                                                  
+ 35CL  G 4618.5      13      6                                                  
+ 35CL  G 5135.5      23      2                                                  
+ 35CL  G 6017.9      50      5                                                  
+ 35CL  G 6561.6      3       LT                                                 
+ 35CL  G 7780.7      4       LT                                                 
+ 35CL  L 7796.6    4 1/2-              0.031 KEV 10                             
+ 35CLX L XREF=FIJ                                                               
+ 35CL  G 2038.5      0.6     3                                                  
+ 35CL  G 2142.0      1.2     6                                                  
+ 35CL  G 2393.0      2.4     12                                                 
+ 35CL  G 2786.4      2.4     12                                                 
+ 35CL  G 2942.1      0.6     3                                                  
+ 35CL  G 2957.4      1.3     LT                                                 
+ 35CL  G 3737.3      0.4     LT                                                 
+ 35CL  G 6576.6      11      1                                                  
+ 35CL  G 7795.7      100     10                                                 
+ 35CL  L 7837.1    3 3/2-              3.5 FS    LT                             
+ 35CL2 L ISPIN=3/2                                                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p)                      
+ 35CL cL T$from (p,|g)                                                          
+ 35CL cL $|G=3.73 keV {I38} from (p,p)                                          
+ 35CL  G 1656.1      1.4     LT                                                 
+ 35CL  G 1730.9      3       15                                                 
+ 35CL  G 2237.3      1.4     LT                                                 
+ 35CL  G 2621.2      3.0     15                                                 
+ 35CL  G 2955.9      11      LT                                                 
+ 35CL  G 3659.0      100     10 D+Q      -0.05   3                              
+ 35CL  G 3663.4      9       4                                                  
+ 35CL  G 3777.8      6       3                                                  
+ 35CL  G 3893.0      1.4     LT                                                 
+ 35CL  G 3918.4      0.6     LT                                                 
+ 35CL  G 4834.4      11      6                                                  
+ 35CL  G 5190.9      6       LT                                                 
+ 35CL  G 6073.4      5       LT                                                 
+ 35CL  G 6617.1      77      9 D+Q       +0.06   3                              
+ 35CL  G 7836.2      77      9 D+Q       +0.02   3                              
+ 35CL  L 7839.7    5 (1/2:5/2,7/2-)                                             
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g's to 1/2+,3/2-                                                    
+ 35CL  G 3661.6      97                                                         
+ 35CL  G 3666.0      9                                                          
+ 35CL  G 3780.4      9                                                          
+ 35CL  G 4837.0      6                                                          
+ 35CL  G 6619.7      100                                                        
+ 35CL  G 7838.8      74                                                         
+ 35CL  L 7868.6    5 (3/2,5/2+)                                                 
+ 35CLX L XREF=FI                                                                
+ 35CL cL J$|g's to 3/2+,1/2+,5/2-                                               
+ 35CL  G 2652.7      2       LT                                                 
+ 35CL  G 2858.4      6       3                                                  
+ 35CL  G 3694.9      6       3                                                  
+ 35CL  G 6104.9      29      3                                                  
+ 35CL  G 6648.6      19      2                                                  
+ 35CL  G 7867.6      100     10                                                 
+ 35CL  L 7873.2     413/2+                                                  E   
+ 35CLX L XREF=IHX                                                               
+ 35CL cL J$|g|g(DCO) in (HI,xn|g)                                               
+ 35CL  G 1786      5 9.7     5  D(+Q)    -0.6    6                              
+ 35CL cG MR$all |d from (HI,xn|g)                                               
+ 35CL  G 1946.4    3 47      3  E1+M2    +0.2    1                              
+ 35CL  G 2465.9    3 100     2  E1+M2    -0.25   10                             
+ 35CL  L 7880.6    3 3/2+,5/2+         0.008 KEV 4                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p)                      
+ 35CL  G 2226.0      29      3                                                  
+ 35CL  G 3041.4      10      5                                                  
+ 35CL  G 3256.1      3       2                                                  
+ 35CL  G 3702.5      16      LT                                                 
+ 35CL  G 3706.9      10      LT                                                 
+ 35CL  G 3768.4      13      7                                                  
+ 35CL  G 3821.2      3       2                                                  
+ 35CL  G 3961.9      6       3                                                  
+ 35CL  G 4877.9      32      3                                                  
+ 35CL  G 5186.5      97      10                                                 
+ 35CL  G 6116.9      100     10                                                 
+ 35CL  G 7879.6      29      3                                                  
+ 35CL  L 7889.0    15                                                           
+ 35CLX L XREF=I                                                                 
+ 35CL  L 7899.1     3(3/2-,5/2)                                                 
+ 35CLX L XREF=FI                                                                
+ 35CL cL J$|g's to 3/2+,3/2-,7/2-                                               
+ 35CL  G 2254.0      2       LT                                                 
+ 35CL  G 2735.8      1.2     LT                                                 
+ 35CL  G 3017.9      1       LT                                                 
+ 35CL  G 3274.6      0.6     LT                                                 
+ 35CL  G 3721.0      10      1                                                  
+ 35CL  G 3725.4      8       1                                                  
+ 35CL  G 3839.7      3       2                                                  
+ 35CL  G 4736.0      5       3                                                  
+ 35CL  G 5205.0      1.7     LT                                                 
+ 35CL  G 6135.4      100     10                                                 
+ 35CL  G 7898.1      4       2                                                  
+ 35CL  L 7923.3     3(3/2+,5/2+)                                                
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g's to 7/2+,1/2+                                                    
+ 35CL  G 3084.1      3       LT                                                 
+ 35CL  G 3154.3      4       LT                                                 
+ 35CL  G 3298.8      4       LT                                                 
+ 35CL  G 3745.2      4       2                                                  
+ 35CL  G 3749.6      12      1                                                  
+ 35CL  G 3863.9      2       1                                                  
+ 35CL  G 3944.1      3       LT                                                 
+ 35CL  G 3955.6      2       1                                                  
+ 35CL  G 4004.6      2       1                                                  
+ 35CL  G 4920.6      2       LT                                                 
+ 35CL  G 5229.2      24      3                                                  
+ 35CL  G 5277.1      2       LT                                                 
+ 35CL  G 6159.6      2       1                                                  
+ 35CL  G 6703.3      56      6                                                  
+ 35CL  G 7922.3      100     10                                                 
+ 35CL  L 7949                                                                   
+ 35CLX L XREF=I                                                                 
+ 35CL  L 7970.2     3 (5/2-,7/2-)                                               
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g's to 7/2+,7/2- and transition strengths in (p,|g)                 
+ 35CL  G 2325.1      14      7                                                  
+ 35CL  G 2384.1      9       5                                                  
+ 35CL  G 2754.3      14      7                                                  
+ 35CL  G 3089.0      41      4                                                  
+ 35CL  G 3201.2      27      3                                                  
+ 35CL  G 3622.2      36      4                                                  
+ 35CL  G 3792.1      27      LT                                                 
+ 35CL  G 3796.5      27      3                                                  
+ 35CL  G 3858.0      9       5                                                  
+ 35CL  G 4807.1      59      6                                                  
+ 35CL  G 4967.5      23      2                                                  
+ 35CL  G 5324.0      100     10                                                 
+ 35CL  G 6206.5      95      10                                                 
+ 35CL  G 6750.1      5       LT                                                 
+ 35CL  L 7979      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 7987.8     4 3/2                                                       
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 1881.5      1.6     8                                                  
+ 35CL  G 2333.2      3       LT                                                 
+ 35CL  G 2342.7      1.6     8                                                  
+ 35CL  G 3809.7      1.3     LT                                                 
+ 35CL  G 3928.4      2       LT                                                 
+ 35CL  G 6767.7      100     10 (D+Q)    +0.21   4                              
+ 35CL cG MR$or -3.1 {I4}                                                        
+ 35CL  G 7986.8      58      6 (D+Q)     -0.36   2                              
+ 35CL cG MR$or -11 {I3}                                                         
+ 35CL  L 7995.6     3 5/2                                                       
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g's to 1/2+,7/2; transition strengths in (p,|g)                     
+ 35CL  G 2190.0      0.7     LT                                                 
+ 35CL  G 2395.8      1.3     LT                                                 
+ 35CL  G 2592.0      3.4     17                                                 
+ 35CL  G 2832.2      1.7     LT                                                 
+ 35CL  G 3817.5      3.4     17                                                 
+ 35CL  G 3936.2      1.3     LT                                                 
+ 35CL  G 4832.5      6.9     7                                                  
+ 35CL  G 4992.9      2.3     LT                                                 
+ 35CL  G 5301.5      0.2     LT                                                 
+ 35CL  G 5349.4      0.7     LT                                                 
+ 35CL  G 6231.9      1.3     6                                                  
+ 35CL  G 7994.6      100     10                                                 
+ 35CL  L 8000.4     37/2+                                                       
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g's to 9/2+,9/2-,5/2+,5/2-,3/2+                                     
+ 35CL  G 2355.3      4       2                                                  
+ 35CL  G 2784.5      1.3     LT                                                 
+ 35CL  G 3119.2      0.9     LT                                                 
+ 35CL  G 3231.4      11      1                                                  
+ 35CL  G 3652.4      2.5     LT                                                 
+ 35CL  G 3826.7      11      1                                                  
+ 35CL  G 4056.2      2.6     13                                                 
+ 35CL  G 4837.3      1.1     LT                                                 
+ 35CL  G 5354.2      2.6     13                                                 
+ 35CL  G 6236.7      100     10                                                 
+ 35CL  G 7999.4      1.3     7                                                  
+ 35CL  L 8004.5     3 5/2+             0.011 KEV 5                              
+ 35CLX L XREF=IJRS                                                              
+ 35CL cL J$L(d,{+3}He)=2; |g(|q) in (p,|g)                                      
+ 35CL  G 2349.9      3       LT                                                 
+ 35CL  G 3123.3      1       LT                                                 
+ 35CL  G 3165.2      5       LT                                                 
+ 35CL  G 3830.8      2       LT                                                 
+ 35CL cG RI$for decays to 4173 and/or 4178 levels                               
+ 35CL  G 4841.4      28      3                                                  
+ 35CL  G 5001.8      5       3                                                  
+ 35CL  G 5310.4      3       LT                                                 
+ 35CL  G 5358.3      7       LT                                                 
+ 35CL  G 6240.8      33      3                                                  
+ 35CL  G 6784.4      1       LT                                                 
+ 35CL  G 8003.5      100     10                                                 
+ 35CL  L 8010      10 (7/2:17/2)+                                               
+ 35CLX L XREF=H                                                                 
+ 35CL cL J$L(|a,d)=6                                                            
+ 35CL  L 8019      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 8035.0     4(1/2-,3/2-)       0.026 KEV 7                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  G 2229.4      11      1                                                  
+ 35CL  G 3856.9      27      3                                                  
+ 35CL  G 3975.6      20      2                                                  
+ 35CL  G 5340.9      9       5                                                  
+ 35CL  G 6271.3      9       5                                                  
+ 35CL  G 6814.9      100     10                                                 
+ 35CL  G 8034.0      4       2                                                  
+ 35CL  L 8038.5    3 1/2+              0.30 KEV  2                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  G 3183.9      1       LT                                                 
+ 35CL  G 3199.2      2.6     LT                                                 
+ 35CL  G 3414.0      5       LT                                                 
+ 35CL  G 3860.4      2.6     LT                                                 
+ 35CL  G 3979.1      7       3                                                  
+ 35CL  G 4059.2      1.3     LT                                                 
+ 35CL  G 4119.7      2.3     LT                                                 
+ 35CL  G 5035.8      5       3                                                  
+ 35CL  G 5344.4      100     10 (D+Q)    -0.20   2                              
+ 35CL cG MR$or +19 {I8}                                                         
+ 35CL  G 6274.8      28      3                                                  
+ 35CL  G 6818.4      10      1                                                  
+ 35CL  G 8037.5      15      2 (D+Q)     -0.13   4                              
+ 35CL cG MR$or +8.1 {I26}                                                       
+ 35CL  L 8075.9    3  (3/2,5/2)                                                 
+ 35CLX L XREF=FI                                                                
+ 35CL cL J$|g's to 3/2+,3/2-,7/2                                                
+ 35CL  G 2430.8      19      2                                                  
+ 35CL  G 2489.8      21      2                                                  
+ 35CL  G 2860.0      13      1                                                  
+ 35CL  G 2912.5      2       1                                                  
+ 35CL  G 3194.6      4       2                                                  
+ 35CL  G 3306.9      8       4                                                  
+ 35CL  G 3897.8      15      LT                                                 
+ 35CL  G 3902.2      13      1                                                  
+ 35CL  G 3963.7      4       2                                                  
+ 35CL  G 5073.2      4       2                                                  
+ 35CL  G 6312.2      100     10                                                 
+ 35CL  G 8074.9      2       1                                                  
+ 35CL  L 8096.5     3 5/2                                                       
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g's to 3/2+,3/2-,7/2+,7/2-                                          
+ 35CL  G 2290.9      2.5     13                                                 
+ 35CL  G 2451.4      13      8                                                  
+ 35CL  G 2496.7      15.0    15                                                 
+ 35CL  G 2880.6      2.5     13                                                 
+ 35CL  G 2933.1      5.0     25                                                 
+ 35CL  G 3257.2      8       4                                                  
+ 35CL  G 3327.5      2.5     13                                                 
+ 35CL  G 3918.4      5       LT                                                 
+ 35CL  G 4037.1      5.0     25                                                 
+ 35CL  G 4177.7      8       4                                                  
+ 35CL  G 4933.3      13      8                                                  
+ 35CL  G 5402.4      13      8                                                  
+ 35CL  G 5450.3      43      5                                                  
+ 35CL  G 6332.8      22.5    25                                                 
+ 35CL  G 8095.5      100     10                                                 
+ 35CL  L 8100      10 (7/2:17/2)+                                               
+ 35CLX L XREF=H                                                                 
+ 35CL cL J$L(|a,d)=6                                                            
+ 35CL  L 8106.4    3 3/2                                                        
+ 35CLX L XREF=FI                                                                
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 2506.6      1.3     8                                                  
+ 35CL  G 3251.8      1.3     8                                                  
+ 35CL  G 3267.1      1.3     8                                                  
+ 35CL  G 3928.3      2.5     13                                                 
+ 35CL  G 4047.0      1.3     8                                                  
+ 35CL  G 4127.1      8       LT                                                 
+ 35CL  G 4138.7      8       4                                                  
+ 35CL  G 5103.7      20      2                                                  
+ 35CL  G 5412.3      20      2 (D+Q)     +4.9    10                             
+ 35CL cG MR$or -0.05 {I4}                                                       
+ 35CL  G 6342.7      8       4                                                  
+ 35CL  G 6886.3      88      10                                                 
+ 35CL  G 8105.4      100     10 (D+Q)    +1.2    1                              
+ 35CL cG MR$or -0.46 {I4}                                                       
+ 35CL  L 8113.3    3  (3/2,5/2+)                                                
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g's to 1/2+,3/2+,3/2-,5/2+,5/2-                                     
+ 35CL  G 1621.3      18.8    19                                                 
+ 35CL  G 2007.0      19      LT                                                 
+ 35CL  G 2307.7      3.4     LT                                                 
+ 35CL  G 2458.7      2.8     LT                                                 
+ 35CL  G 2513.5      9       5                                                  
+ 35CL  G 2897.4      6       LT                                                 
+ 35CL  G 3939.6      16      9                                                  
+ 35CL  G 4053.9      4       LT                                                 
+ 35CL  G 4134.0      16      LT                                                 
+ 35CL  G 4145.6      16      9                                                  
+ 35CL  G 5110.6      6       LT                                                 
+ 35CL  G 5419.1      53      6                                                  
+ 35CL  G 6349.6      18.8    19                                                 
+ 35CL  G 6893.2      100     9                                                  
+ 35CL  G 8112.3      81      9                                                  
+ 35CL  L 8147.6     4 1/2-             2.66 KEV  27                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  G 2464.6      1.6     8                                                  
+ 35CL  G 3137.3      3.2     16                                                 
+ 35CL  G 3969.5      14.3    16                                                 
+ 35CL  G 4088.2      4.8     24                                                 
+ 35CL  G 4168.3      3.2     LT                                                 
+ 35CL  G 4179.9      1.6     8                                                  
+ 35CL  G 4228.8      4.8     24                                                 
+ 35CL  G 5453.4      4.8     24                                                 
+ 35CL  G 6927.5      23.8    24                                                 
+ 35CL  G 8146.6      100     10                                                 
+ 35CL  L 8149.5    5 3/2-              0.56 KEV  6                              
+ 35CLX L XREF=J                                                                 
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 8156.8     3 (5/2+,7/2-)                                               
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g's to 7/2+,7/2-,9/2+,3/2-                                          
+ 35CL  G 2511.7      6       3                                                  
+ 35CL  G 2570.7      14.0    14                                                 
+ 35CL  G 2940.9      16.0    16                                                 
+ 35CL  G 3387.8      2.0     LT                                                 
+ 35CL  G 3978.7      10      LT                                                 
+ 35CL  G 3983.1      16.0    16                                                 
+ 35CL  G 4044.5      14.0    14                                                 
+ 35CL  G 4097.4      2.0     LT                                                 
+ 35CL  G 4212.6      4       LT                                                 
+ 35CL  G 4993.6      18      2                                                  
+ 35CL  G 5154.1      8       4                                                  
+ 35CL  G 5510.6      100     10                                                 
+ 35CL  G 6393.1      2.0     LT                                                 
+ 35CL  G 8155.8      8       4                                                  
+ 35CL  L 8172      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 8179.4    5 (3/2-,5/2,7/2+)                                            
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g's to 7/2-,3/2+                                                    
+ 35CL  G 3554.9      13.2    15                                                 
+ 35CL  G 5016.2      11.8    12                                                 
+ 35CL  G 5176.7      5.9     30                                                 
+ 35CL  G 5485.2      4.4     22                                                 
+ 35CL  G 6415.6      100     10                                                 
+ 35CL  G 8178.4      11.8    12                                                 
+ 35CL  L 8209.1     45/2+              0.033 KEV 10                             
+ 35CLX L XREF=IJRS                                                              
+ 35CL2 L ISPIN=3/2                                                              
+ 35CL cL J$L(pol d,{+3}He)=2 and L+1/2 from analyzing power                     
+ 35CL  G 2554.5      0.92    LT                                                 
+ 35CL  G 3327.8      1.1     LT                                                 
+ 35CL  G 3369.8      0.53    LT                                                 
+ 35CL  G 4149.7      2.6     13                                                 
+ 35CL  G 4290.3      1.3     7                                                  
+ 35CL  G 5206.4      1.3     7                                                  
+ 35CL  G 5514.9      1.3     7                                                  
+ 35CL  G 6445.3      21.1    26D+Q       +0.33   4                              
+ 35CL  G 6989.0      3.9     20                                                 
+ 35CL  G 8208.1      100     11D+Q       -0.36   4                              
+ 35CL  L 8210.6    5 1/2+              0.094 KEV 15                             
+ 35CLX L XREF=FIJ                                                               
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 8216.3     4 5/2+             0.014 KEV 3                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p)                      
+ 35CL  G 2561.7      1.7     LT                                                 
+ 35CL  G 3447.3      1.7     LT                                                 
+ 35CL  G 4038.1      6       LT                                                 
+ 35CL  G 5053.1      94      11D+Q       +0.11   2                              
+ 35CL  G 5213.6      11      6                                                  
+ 35CL  G 5522.1      9       4                                                  
+ 35CL  G 6452.5      3.0     LT                                                 
+ 35CL  G 8215.3      100     11D+Q       +0.06   3                              
+ 35CL  L 8242.9     63/2-              0.140 KEV 15                             
+ 35CLX L XREF=FIJ                                                               
+ 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p)                      
+ 35CL  G 4069.2      8                                                          
+ 35CL  G 5240.2      2.2                                                        
+ 35CL  G 7022.8      100                                                        
+ 35CL  L 8251.0     5                                                           
+ 35CLX L XREF=I                                                                 
+ 35CL  G 4138.7      5                                                          
+ 35CL  G 5248.3      7                                                          
+ 35CL  G 7030.9      100                                                        
+ 35CL  G 8250.0      10                                                         
+ 35CL  L 8269.6    4 5/2+              0.005 KEV 3                              
+ 35CLX L XREF=FIJ                                                               
+ 35CL cL J$R-Matrix analysis in (p,p) and transition strength in (p,|g)         
+ 35CL  G 3500.6      4.9     24                                                 
+ 35CL cG RI$from 1976Sp08                                                       
+ 35CL  G 3645.0      4.4     22                                                 
+ 35CL  G 4091.4      39      10                                                 
+ 35CL  G 4350.8      7       4                                                  
+ 35CL  G 5106.4      13      7                                                  
+ 35CL  G 5266.9      34      9                                                  
+ 35CL  G 5575.4      14      7                                                  
+ 35CL  G 5623.4      8       4                                                  
+ 35CL  G 6505.8      19      10                                                 
+ 35CL  G 8268.5      100     24                                                 
+ 35CL  L 8277.2     3 5/2+             0.006 KEV 3                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p)                      
+ 35CL  G 2622.6      7       4                                                  
+ 35CL  G 2691.1      6       3                                                  
+ 35CL  G 3113.8      10      5                                                  
+ 35CL  G 3395.9      13      7                                                  
+ 35CL  G 3437.9      28      13                                                 
+ 35CL  G 3508.2      3.3     17                                                 
+ 35CL  G 3652.6      10      5                                                  
+ 35CL  G 3929.1      7       LT                                                 
+ 35CL  G 4099.0      3.3     17                                                 
+ 35CL  G 4103.5      5.0     27                                                 
+ 35CL  G 4217.8      4.7     23                                                 
+ 35CL  G 4358.4      12      6                                                  
+ 35CL  G 5274.5      31      16                                                 
+ 35CL  G 5583.0      9       5                                                  
+ 35CL  G 5631.0      15      8                                                  
+ 35CL  G 6513.4      77      20                                                 
+ 35CL  G 8276.1      100     27                                                 
+ 35CL  L 8282.0     3 (3/2-,5/2)                                                
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$transition strength in (p,|g)                                        
+ 35CL  G 2523.9      1.7     9                                                  
+ 35CL  G 2695.9      20      10                                                 
+ 35CL  G 3066.1      8       4                                                  
+ 35CL  G 3118.6      9       LT                                                 
+ 35CL  G 3400.7      57      14                                                 
+ 35CL  G 4103.8      4.9     26                                                 
+ 35CL  G 4108.3      7       4                                                  
+ 35CL  G 4222.6      7       4                                                  
+ 35CL  G 5118.8      31      9                                                  
+ 35CL  G 5587.8      1.7     9                                                  
+ 35CL  G 5635.8      1.4     9                                                  
+ 35CL  G 6518.2      100     26                                                 
+ 35CL  G 8280.9      46      12                                                 
+ 35CL  L 8284.3    13                                                           
+ 35CLX L XREF=I                                                                 
+ 35CL  L 8287.8     41/2-              0.04 KEV  1                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p)                      
+ 35CL  G 2633.2      4.4     23                                                 
+ 35CL  G 3277.5      5.2     27                                                 
+ 35CL  G 4109.6      16      8                                                  
+ 35CL  G 4228.4      5.8     29                                                 
+ 35CL  G 4308.5      6       LT                                                 
+ 35CL  G 4320.1      6       3                                                  
+ 35CL  G 4369.0      2.1     11                                                 
+ 35CL  G 5593.6      42      11                                                 
+ 35CL  G 7067.7      100     25 (D)                                             
+ 35CL cG MR$|d(Q/D)=+0.21 {I2} or -3.2 {I2} in (p,|g)                           
+ 35CL  G 8286.7      27      6 (D+Q)     -0.35   4                              
+ 35CL cG MR$or -11 {I3}                                                         
+ 35CL  L 8294      2                                                            
+ 35CLX L XREF=FI                                                                
+ 35CL  L 8297.3    5  3/2-             0.073 KEV 15                             
+ 35CLX L XREF=I                                                                 
+ 35CL cL J,T$for 8297 level or 8299 level                                       
+ 35CL  L 8299.9     3 3/2-             0.073 KEV 15                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p)                      
+ 35CL cL J,T$for 8297 level or 8299 level                                       
+ 35CL  G 3289.6      13                                                         
+ 35CL  G 3418.6      17                                                         
+ 35CL  G 3445.3      21                                                         
+ 35CL  G 4126.2      25                                                         
+ 35CL  G 4240.5      42                                                         
+ 35CL  G 5136.7      4                                                          
+ 35CL  G 5297.2      42                                                         
+ 35CL  G 5605.7      42                                                         
+ 35CL  G 5653.7      25                                                         
+ 35CL  G 6536.1      33                                                         
+ 35CL  G 7079.8      100       (D+Q)     -1.7    1                              
+ 35CL cG MR$or -0.02 {I2}                                                       
+ 35CL  G 8298.8      54        (D+Q)     -0.15   4                              
+ 35CL cG MR$or +9.5 {I36}                                                       
+ 35CL  L 8318.1    3                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  G 2512.5      0.90                                                       
+ 35CL  G 2673.0      0.90                                                       
+ 35CL  G 2718.3      1.9                                                        
+ 35CL  G 3549.1      0.38                                                       
+ 35CL  G 3693.5      2.3                                                        
+ 35CL  G 4139.9      3.8                                                        
+ 35CL  G 4144.4      2.6                                                        
+ 35CL  G 4258.7      1.5                                                        
+ 35CL  G 4338.8      3.8                                                        
+ 35CL  G 4350.4      5                                                          
+ 35CL  G 5154.9      0.64                                                       
+ 35CL  G 5315.4      3.8                                                        
+ 35CL  G 5623.9      2.1                                                        
+ 35CL  G 5671.9      1.2                                                        
+ 35CL  G 6554.3      2.3                                                        
+ 35CL  G 7098.0      2.6                                                        
+ 35CL  G 8317.0      100                                                        
+ 35CL  L 8319.8     5 15/2-             0.07 PS  LT                         D   
+ 35CLX L XREF=FX                                                                
+ 35CL cL J$ADO ratios in (HI,xn|g)                                              
+ 35CL cL T$from (HI,xn|g)                                                       
+ 35CL  G 2232.7    6 57.2    28                                                 
+ 35CL  G 2911.9    8 100     5                                                  
+ 35CL  L 8323.2     5                                                           
+ 35CLX L XREF=I                                                                 
+ 35CL  G 4210.9      1.2                                                        
+ 35CL  G 5320.5      3.7                                                        
+ 35CL  G 5677.0      5                                                          
+ 35CL  G 6559.4      2.4     LT                                                 
+ 35CL  G 7103.1      10                                                         
+ 35CL  G 8322.1      100                                                        
+ 35CL  L 8346      5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 8381.4    4 5/2+              0.023 KEV 7                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p)                      
+ 35CL  G 3612.4      2.9     LT                                                 
+ 35CL  G 3756.8      2.9     LT                                                 
+ 35CL  G 4269.1      23.5    24                                                 
+ 35CL  G 4437.2      23.5    24                                                 
+ 35CL  G 4462.6      71      9 D+Q       +0.15   3                              
+ 35CL  G 5378.7      74      9 D+Q       +0.02   3                              
+ 35CL  G 5687.2      2.9     15                                                 
+ 35CL  G 5735.2      15      9                                                  
+ 35CL  G 6617.6      100     12D+Q       +0.06   3                              
+ 35CL  G 8380.3      9       5  D+Q      1.65                                   
+ 35CL  L 8387.8    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 8390.8     5                                                           
+ 35CLX L XREF=I                                                                 
+ 35CL  L 8403.4    4 5/2-              0.002 KEV 1                              
+ 35CLX L XREF=FIJ                                                               
+ 35CL cL J$R-Matrix analysis in (p,p) and |g-decay schemes in (p,|g)            
+ 35CL  G 3634.4      15      8                                                  
+ 35CL  G 4225.2      29      16                                                 
+ 35CL  G 4344.0      74      19                                                 
+ 35CL  G 5709.2      32      16                                                 
+ 35CL  G 5757.2      24      12                                                 
+ 35CL  G 6639.6      48      13                                                 
+ 35CL  G 8402.3      100     26                                                 
+ 35CL  L 8405.0     5(3/2+,5/2,7/2+)   0.001 KEV 1                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$|g's to 7/2+,3/2+                                                    
+ 35CL  G 3523.7      35      9                                                  
+ 35CL  G 4231.3      3.7     19                                                 
+ 35CL  G 4292.7      3.3     16                                                 
+ 35CL  G 5402.3      35      9                                                  
+ 35CL  G 6641.2      100     26                                                 
+ 35CL  G 8403.9      56      14                                                 
+ 35CL  L 8408.4    7 1/2-              0.125 KEV 15                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 8411.2    14                                                           
+ 35CLX L XREF=I                                                                 
+ 35CL  L 8417.1     41/2+              0.026 KEV 7                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  G 3406.8      14                                                         
+ 35CL  G 4243.4      31                                                         
+ 35CL  G 4472.9      9                                                          
+ 35CL  G 5414.3      20                                                         
+ 35CL  G 5722.9                                                                 
+ 35CL  G 5770.8      23                                                         
+ 35CL  G 6653.3      63                                                         
+ 35CL  G 7196.9      26                                                         
+ 35CL  G 8416.0      100                                                        
+ 35CL  L 8430.3    5                                                            
+ 35CLX L XREF=IJ                                                                
+ 35CL  L 8434.7    5 (3/2)+            0.090 KEV 15                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 8464.3     3 (3/2,5/2+)                                                
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g's to 1/2+,5/2+,5/2-                                               
+ 35CL  G 2809.7      48      24                                                 
+ 35CL  G 3248.3      34      17                                                 
+ 35CL  G 3454.0      47      24                                                 
+ 35CL  G 3609.7      19      10                                                 
+ 35CL  G 3839.7      25      13                                                 
+ 35CL  G 4286.1      31      15                                                 
+ 35CL  G 4290.6      32      17                                                 
+ 35CL  G 4496.5      31      15                                                 
+ 35CL  G 4545.5      15      8                                                  
+ 35CL  G 5461.5      100     24                                                 
+ 35CL  G 5770.1      94      24                                                 
+ 35CL  G 7244.1      50      25                                                 
+ 35CL  G 8463.2      59      18                                                 
+ 35CL  L 8485.3     43/2+              0.012 KEV 5                              
+ 35CLX L XREF=FIJ                                                               
+ 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p)                      
+ 35CL  G 2830.7      12      6                                                  
+ 35CL  G 3604.0      15      8                                                  
+ 35CL  G 3860.7      2.2     11                                                 
+ 35CL  G 4517.5      2.6     13                                                 
+ 35CL  G 4566.5      11      6                                                  
+ 35CL  G 5482.5      16      8                                                  
+ 35CL  G 5791.1      43      11                                                 
+ 35CL  G 5839.0      6       3                                                  
+ 35CL  G 6721.5      100     26                                                 
+ 35CL  G 8484.2      9       4                                                  
+ 35CL  L 8486.9     43/2-              0.150 KEV 15                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  G 2728.8      2.4     13                                                 
+ 35CL  G 3862.3      3.9     20                                                 
+ 35CL  G 4308.7      10      5                                              X   
+ 35CL  G 4427.5      4.1     22                                                 
+ 35CL  G 4519.1      15      8                                                  
+ 35CL  G 5484.1      18      9                                                  
+ 35CL  G 5792.7      41      11                                                 
+ 35CL  G 6723.1      8       4                                                  
+ 35CL  G 7266.7      14      7                                                  
+ 35CL  G 8485.8      100     26                                                 
+ 35CL  L 8487.4     6 15/2-                                                     
+ 35CLX L XREF=X                                                                 
+ 35CL cL J$ADO ratios in (HI,xn|g)                                              
+ 35CL  G 2399.8    8 100     4                                                  
+ 35CL  G 3080.0    7 31.8    20                                                 
+ 35CL  L 8506.5    5                                                            
+ 35CLX L XREF=FI                                                                
+ 35CL  L 8514.8     41/2-              0.150 KEV 15                             
+ 35CLX L XREF=IJ                                                                
+ 35CL  G 3660.2      16      8                                                  
+ 35CL  G 4336.6      7       4                                                  
+ 35CL  G 4455.4      100     26                                                 
+ 35CL  G 4547.0      85      22                                                 
+ 35CL  G 4596.0      24      12                                                 
+ 35CL  G 7294.6      37      11                                                 
+ 35CL  G 8513.7      100     26                                                 
+ 35CL  L 8533.9    5                                                            
+ 35CLX L XREF=FI                                                                
+ 35CL  L 8572.6     3(5/2)+            0.08 KEV  1                              
+ 35CL2 L ISPIN=(3/2)                                                            
+ 35CLX L XREF=FIJ                                                               
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  G 2848.9      3.1     16                                                 
+ 35CL  G 2918.0      1.9     10                                                 
+ 35CL  G 2972.8      1.0     6                                                  
+ 35CL  G 3409.2      2.6     13                                                 
+ 35CL  G 3691.3      1.3     7                                                  
+ 35CL  G 4398.9      1.0     6                                                  
+ 35CL  G 4460.3      1.6     9                                                  
+ 35CL  G 4653.8      1.6     9                                                  
+ 35CL  G 5409.4      2.3     12                                                 
+ 35CL  G 5569.8      6       3                                                  
+ 35CL  G 5878.4      0.9     4                                                  
+ 35CL  G 5926.3      11      6                                                  
+ 35CL  G 7352.4      8       4                                                  
+ 35CL  G 8571.5      100     10                                                 
+ 35CL  L 8581.2     41/2+              0.75 KEV  8                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  G 2089.1      8       4                                                  
+ 35CL  G 3741.9      2.4     13                                                 
+ 35CL  G 4403.0      8       4                                                  
+ 35CL  G 4521.8      3.7     19                                                 
+ 35CL  G 4662.4      4.3     22                                                 
+ 35CL  G 5887.0      10      5                                                  
+ 35CL  G 7361.0      100     11                                                 
+ 35CL  G 8580.1      48      13                                                 
+ 35CL  L 8585.8    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 8591.8     45/2+              0.003 KEV 2                              
+ 35CLX L XREF=SIJ                                                               
+ 35CL cL J$L(pol d, {+3}He)=2 and L+1/2 from analyzing power                    
+ 35CL  G 2833.7      22      11                                                 
+ 35CL  G 2937.2      17      9                                                  
+ 35CL  G 3822.8      73      18                                                 
+ 35CL  G 4418.0      59      14                                                 
+ 35CL  G 4479.5      16      8                                                  
+ 35CL  G 5428.6      35      18                                                 
+ 35CL  G 5589.0      100     27                                                 
+ 35CL  G 5945.5      25      13                                                 
+ 35CL  G 6828.0      64      18                                                 
+ 35CL  G 8590.7      45      14                                                 
+ 35CL  L 8612.0     6 (3/2+,5/2+)                                               
+ 35CLX L XREF=IR                                                                
+ 35CL cL J$L(d,{+3}He)=2                                                        
+ 35CL  G 6848.2      100     10                                                 
+ 35CL  G 7391.8      34      8                                                  
+ 35CL  G 8610.9      66      16                                                 
+ 35CL  L 8614.7     45/2+              0.175 KEV 20                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  G 3733.4      2.9     14                                                 
+ 35CL  G 4555.3      10      5                                                  
+ 35CL  G 4670.5      7       LT                                                 
+ 35CL  G 4695.9      13      7                                                  
+ 35CL  G 5611.9      4.5     23                                                 
+ 35CL  G 5920.5      8       4                                                  
+ 35CL  G 5968.4      41      11                                                 
+ 35CL  G 6850.9      16      LT                                                 
+ 35CL  G 7394.5      3.6     LT                                                 
+ 35CL  G 8613.6      100     11                                                 
+ 35CL  L 8619.1     4(3/2+,5/2+)       0.002 KEV 1                              
+ 35CLX L XREF=FIJ                                                               
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  G 2895.4      6       3                                                  
+ 35CL  G 2964.5      5.2     27                                                 
+ 35CL  G 3764.5      4.2     21                                                 
+ 35CL  G 3994.5      4.5     24                                                 
+ 35CL  G 4651.3      9       5                                                  
+ 35CL  G 4700.3      7       4                                                  
+ 35CL  G 5616.3      48      12                                                 
+ 35CL  G 5924.9      42      12                                                 
+ 35CL  G 5972.8      5.2     27                                                 
+ 35CL  G 6855.3      70      18                                                 
+ 35CL  G 8618.0      100     24                                                 
+ 35CL  L 8631.3     37/2-              0.001 KEV 1                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 2907.6      0.6     4                                                  
+ 35CL  G 3467.9      18      9  D+Q      +0.6    1                              
+ 35CL  G 3862.3      3.0     15                                                 
+ 35CL  G 4283.2      26      6  D+Q      -0.184  14                             
+ 35CL  G 4457.5      8       4                                                  
+ 35CL  G 4519.0      21      11 D+Q      -0.06   2                              
+ 35CL  G 4687.1      20      10                                                 
+ 35CL  G 5468.1      7       4                                                  
+ 35CL  G 5628.5      3.0     15                                                 
+ 35CL  G 5937.1      32      LT                                                 
+ 35CL  G 5985.0      5.5     28                                                 
+ 35CL  G 6867.5      100     26 D+Q      -0.011  3                              
+ 35CL  G 7411.1      11      LT                                                 
+ 35CL  G 8630.2      1.1     6                                                  
+ 35CL  L 8635       55/2                                                        
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 4689      7 61                                                         
+ 35CL  G 5473      8 53                                                         
+ 35CL  G 5630      9 16                                                         
+ 35CL  G 5941      10 34                                                        
+ 35CL  G 6874      11 100                                                       
+ 35CL  L 8642.7     4(3/2+,5/2+)       0.003 KEV 2                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p) and |g(|q) in (p,|g)                      
+ 35CL  G 2988.1      10      5                                                  
+ 35CL  G 3056.6      9       5                                                  
+ 35CL  G 3239.0      17      9                                                  
+ 35CL  G 3803.4      9       5                                                  
+ 35CL  G 3873.6      86      22                                                 
+ 35CL  G 4018.1      7       4                                                  
+ 35CL  G 4464.5      50      14                                                 
+ 35CL cG RI$ transitions to 4177 and 4173 not resolved (1976Sp08)               
+ 35CL  G 4583.2      31      16                                                 
+ 35CL  G 4723.9      21      11                                                 
+ 35CL  G 5948.5      19      9                                                  
+ 35CL  G 8641.6      100     25                                                 
+ 35CL  L 8654      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 8686.7     45/2-              0.001 KEV 1                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p) and decay schemes in (p,|g)               
+ 35CL  G 3100.6      2.8     15                                                 
+ 35CL  G 3283.0      4.1     21                                                 
+ 35CL  G 4508.5      2.6     13                                                 
+ 35CL  G 4627.2      4.6     24                                                 
+ 35CL  G 5523.5      4.9     25                                                 
+ 35CL  G 5992.4      3.7     19                                                 
+ 35CL  G 6922.8      6       3                                                  
+ 35CL  G 7466.5      2.5     13                                                 
+ 35CL  G 8685.5      100     11                                                 
+ 35CL  L 8688.8    5 1/2+              0.20 KEV  2                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 8690.6    5 1/2-              6.44 KEV  65                             
+ 35CLX L XREF=J                                                                 
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 8697.4     63/2-              0.8 KEV   1                              
+ 35CLX L XREF=FIJ                                                               
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  G 2891.8      3.6     19                                                 
+ 35CL  G 3097.6      6       3                                                  
+ 35CL  G 7477.2      15      4                                                  
+ 35CL  G 8696.2      100     10                                                 
+ 35CL  L 8700      10 (7/2:17/2)+                                               
+ 35CLX L XREF=H                                                                 
+ 35CL cL J$L(|a,d)=6                                                            
+ 35CL  L 8706.3    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 8717.7    5                                                            
+ 35CLX L XREF=FI                                                                
+ 35CL  L 8750.3     43/2-              0.30 KEV  3                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  G 2944.7      4.2     21                                                 
+ 35CL  G 3346.6      9       5                                                  
+ 35CL  G 3534.3      4.5     23                                                 
+ 35CL  G 4572.1      4       2                                                  
+ 35CL  G 4576.5      4.3     23                                                 
+ 35CL  G 6056.0      5.7     28                                                 
+ 35CL  G 6986.4      57      15                                                 
+ 35CL  G 7530.1      3.8     LT                                                 
+ 35CL  G 8749.1      100     10                                                 
+ 35CL  L 8767.0    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 8773.8    6 1/2-              0.571 KEV 60                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 8780.3     43/2-              0.214 KEV 25                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  G 3180.4      16      8                                                  
+ 35CL  G 3564.3      24      12                                                 
+ 35CL  G 4602.1      56      15                                             X   
+ 35CL  G 4861.4      16      8                                                  
+ 35CL  G 5777.5      100     26                                                 
+ 35CL  G 6086.0      44      11                                                 
+ 35CL  G 6134.0      48      11                                                 
+ 35CL  G 7016.4      25      13                                                 
+ 35CL  G 8779.1      41      11                                                 
+ 35CL  L 8787.7    4 (3/2-,5/2,7/2-)   0.001 KEV 1                              
+ 35CLX L XREF=FIJ                                                               
+ 35CL cL J$|g's to 7/2-,3/2-                                                    
+ 35CL  G 3064.0      27      14                                                 
+ 35CL  G 3624.3      76      20                                                 
+ 35CL  G 4018.6      27      14                                                 
+ 35CL  G 4609.5      36      19                                                 
+ 35CL  G 5624.4      23      12                                                 
+ 35CL  G 5784.9      80      20                                                 
+ 35CL  G 7023.8      100     24                                                 
+ 35CL  G 8786.5      30      15                                                 
+ 35CL  L 8788.7     6  15/2+            0.28 PS  LT                         E   
+ 35CLX L XREF=X                                                                 
+ 35CL cL J$|g|g(DCO) in (HI,xn|g)                                               
+ 35CL cL T$from (HI,xn|g)                                                       
+ 35CL  G 915.4     4 100        D(+Q)    -0.2    2                              
+ 35CL  L 8798.7    5 (1/2+,3/2,5/2+)   0.001 KEV 1                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$|g decay schemes in (p,|g)                                           
+ 35CL  G 4739.2      13      7                                                  
+ 35CL  G 5795.9      26      7                                                  
+ 35CL  G 7034.8      11      6                                                  
+ 35CL  G 7578.5      11      6                                                  
+ 35CL  G 8797.5      100     10                                                 
+ 35CL  L 8820.9    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  G 5818.1      17      9                                                  
+ 35CL  G 6126.6      35      10                                                 
+ 35CL  G 7057.0      40      10                                                 
+ 35CL  G 8819.7      100     10                                                 
+ 35CL  L 8824.5    5 1/2+              1.70 KEV  17                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  G 5821.7      100     24                                                 
+ 35CL  G 6130.2      16.2    8                                                  
+ 35CL  G 7060.6      43      11                                                 
+ 35CL  G 7604.3      59      16                                                 
+ 35CL  G 8823.3      51      14                                                 
+ 35CL  L 8829.0     41/2-              12.2 KEV  12                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  G 3174.3      29      15                                                 
+ 35CL  G 3989.7      3.9     21                                                 
+ 35CL  G 4059.9      4.5     24                                                 
+ 35CL  G 4910.1      14      7                                                  
+ 35CL  G 5826.2      67      18                                                 
+ 35CL  G 6134.7      39      9                                                  
+ 35CL  G 6182.7      100     24                                                 
+ 35CL  G 7065.1      28      14                                                 
+ 35CL  G 7608.8      8       4                                                  
+ 35CL  G 8827.8      12      6                                                  
+ 35CL  L 8829.8    5 1/2+              0.080 KEV 15                             
+ 35CLX L XREF=J                                                                 
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 8833.0    3 5/2                                                        
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g's to 7/2+,7/2-,3/2+,3/2-                                          
+ 35CL  G 3617.0      30      15                                                 
+ 35CL  G 4063.9      11      6                                                  
+ 35CL  G 4659.2      61      17                                                 
+ 35CL  G 4720.7      20      11                                                 
+ 35CL  G 4773.5      48      13                                                 
+ 35CL  G 4914.1      48      13                                                 
+ 35CL  G 5669.7      16      8                                                  
+ 35CL  G 5830.2      29      15                                                 
+ 35CL  G 6138.7      20      10                                                 
+ 35CL  G 6186.7      100     26                                                 
+ 35CL  G 7069.1      39      20                                                 
+ 35CL  G 8831.8      13      7                                                  
+ 35CL  L 8838.8     47/2-              0.001 KEV 1                              
+ 35CLX L XREF=FIJ                                                               
+ 35CL cL J$R-Matrix analysis in (p,p) and |g-decay schemes in (p,|g)            
+ 35CL  G 3675.4                                                                 
+ 35CL  G 3957.5                                                                 
+ 35CL  G 4069.7      13      6                                                  
+ 35CL  G 4490.7                                                                 
+ 35CL  G 4779.3                                                                 
+ 35CL  G 5675.5      46      11                                                 
+ 35CL  G 7074.9      100     10                                                 
+ 35CL  L 8844.6     4 17/2+               5.9 PS 11                         E   
+ 35CLX L XREF=HX                                                                
+ 35CL cL J$|g|g(DCO) in (HI,xn|g)                                               
+ 35CL cL T$from (HI,xn|g)                                                       
+ 35CL  G 971.4     2 100       Q                                                
+ 35CL  L 8856.8     45/2+              0.010 KEV 5                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p) and |g-decay schemes in (p,|g)            
+ 35CL  G 3975.5      7       3                                                  
+ 35CL  G 4232.2      10      5                                                  
+ 35CL  G 4678.6      7       4                                                  
+ 35CL  G 4937.9      22      6                                                  
+ 35CL  G 5693.5      100     10                                                 
+ 35CL  G 6162.5      5.5     28                                                 
+ 35CL  G 6210.5                                                                 
+ 35CL  G 7092.9      14      7                                                  
+ 35CL  G 8855.6      31      8                                                  
+ 35CL  L 8869.2    5 3/2+,5/2+         0.027 KEV 10                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p) and |g-decay schemes in (p,|g)            
+ 35CL  G 4691.0      5.3     27                                                 
+ 35CL  G 5866.4      33      8                                                  
+ 35CL  G 6174.9      24      6                                                  
+ 35CL  G 7105.3      9       5                                                  
+ 35CL  G 7648.9      33      8                                                  
+ 35CL  G 8868.0      100     25                                                 
+ 35CL  L 8884.1    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 8886.1     3                                                           
+ 35CLX L XREF=FI                                                                
+ 35CL  G 3231.4      23      12                                                 
+ 35CL  G 3286.2      25      13                                                 
+ 35CL  G 3670.1      8       4                                                  
+ 35CL  G 3722.7      33      17                                                 
+ 35CL  G 4117.0      17      9                                                  
+ 35CL  G 4707.9      31      15                                                 
+ 35CL  G 4967.2      16      8                                                  
+ 35CL  G 5883.3      31      15                                                 
+ 35CL  G 6239.8      100     27                                                 
+ 35CL  G 7122.2      46      12                                                 
+ 35CL  G 8884.9      54      15                                                 
+ 35CL  L 8893.2     4(5/2,7/2)+                                                 
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 3293.3      2.7     LT                                                 
+ 35CL  G 3307.0      4.3     22                                                 
+ 35CL  G 4780.8      23      12                                                 
+ 35CL  G 4948.9      11      6                                                  
+ 35CL  G 5729.9      78      19                                                 
+ 35CL  G 6198.9      100     24                                                 
+ 35CL  G 7129.3      51      14                                                 
+ 35CL  G 8892.0      2.7     14                                                 
+ 35CL  L 8904.8     4 (1/2,3/2,5/2+)                                            
+ 35CLX L XREF=I                                                                 
+ 35CL cL J$|g's to 3/2+,3/2-,1/2+                                               
+ 35CL  G 2723.7      15      8                                                  
+ 35CL  G 3250.1      12      6                                                  
+ 35CL  G 3894.5      13      7                                                  
+ 35CL  G 4050.1      21      11                                                 
+ 35CL  G 4065.4      16      8                                                  
+ 35CL  G 4726.6      62      17                                                 
+ 35CL  G 4845.3      20      10                                                 
+ 35CL  G 6210.5      52      14                                                 
+ 35CL  G 7684.5      34      10                                                 
+ 35CL  G 8903.6      100     24                                                 
+ 35CL  L 8907.4     45/2+              0.002 KEV 1                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p)                      
+ 35CL  G 3252.7      6       LT                                                 
+ 35CL  G 3262.2      5.4     28                                                 
+ 35CL  G 3307.5      3.2     16                                                 
+ 35CL  G 3321.2      6                                                          
+ 35CL  G 3387.2      3.6     19                                                 
+ 35CL  G 3691.4      6       3                                                  
+ 35CL  G 4138.3      8       4                                                  
+ 35CL  G 4963.1      19      4                                                  
+ 35CL  G 7143.5      100     10                                                 
+ 35CL  L 8919.8    5  5/2+                                                      
+ 35CLX L XREF=IS                                                                
+ 35CL cL J$L(pol d,{+3}He)=2 and L+1/2 from analyzing power                     
+ 35CL  G 3274.6      10      5                                                  
+ 35CL  G 4571.6      14      7                                                  
+ 35CL  G 5756.5      100     11                                                 
+ 35CL  G 6273.5      46      12                                                 
+ 35CL  G 7155.9      7       4                                                  
+ 35CL  L 8933.3    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 8955.0     73/2+              0.075 KEV 15                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p)                      
+ 35CL  G 7734.7                (D+Q)     -0.34   2                              
+ 35CL cG MR$or +5.0 {I4}                                                        
+ 35CL  G 8953.8                (D+Q)     -0.39   5                              
+ 35CL cG MR$+8.2 {I7}                                                           
+ 35CL  L 8958.6    5 (1/2-,3/2-)       0.04 KEV  1                              
+ 35CLX L XREF=FIJ                                                               
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 8982.6    7 5/2-,7/2-         0.003 KEV 2                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 8984.5     33/2+,5/2+         0.025 KEV 10                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  G 3260.7      1.3     7                                                  
+ 35CL  G 4145.1      2       1                                                  
+ 35CL  G 4215.4      0.8     5                                                  
+ 35CL  G 4359.9      0.8     5                                                  
+ 35CL  G 4806.2      2.5     13                                                 
+ 35CL  G 4810.7      2.5     13                                                 
+ 35CL  G 5065.6      15      8                                                  
+ 35CL  G 5821.2      10      5                                                  
+ 35CL  G 6290.2      3.0     15                                                 
+ 35CL  G 6338.1      2       1                                                  
+ 35CL  G 7220.6      27      7                                                  
+ 35CL  G 8983.3      100     10                                                 
+ 35CL  L 8988.4    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 8992.4    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 8997.3    5 5/2-,7/2-         0.002 KEV 1                              
+ 35CLX L XREF=FIJ                                                               
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 9001.0    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 9019.3    5 3/2-              3.50 KEV  35                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 9024.4    5                                                            
+ 35CLX L XREF=FI                                                                
+ 35CL  L 9030.6    7 (5/2)+            0.04 KEV  1                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 9033.1    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 9039.0    5 1/2-              0.292 KEV 30                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 9048.2    5 5/2-,7/2-         0.001 KEV 1                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 9050.1    5 (5/2)+            0.095 KEV 15                             
+ 35CLX L XREF=J                                                                 
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 9081.4    3 5/2+              0.057 KEV 10                             
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p)                      
+ 35CL  G 3357.6      1.7                                                        
+ 35CL  G 4200.0      1.7                                                        
+ 35CL  G 4242.0                                                                 
+ 35CL  G 4312.3                                                                 
+ 35CL  G 4456.7                                                                 
+ 35CL  G 4903.1      3.3                                                        
+ 35CL  G 4907.6      3.3                                                        
+ 35CL  G 5162.5      15        D(+Q)     -0.002  9                              
+ 35CL  G 5918.1      10                                                         
+ 35CL  G 6387.1      3.3                                                        
+ 35CL  G 6435.0      1.7                                                        
+ 35CL  G 7317.5      27        (D+Q)     +0.11   2                              
+ 35CL  G 9080.1      100       (D+Q)     +0.089  9                              
+ 35CL  L 9088.4    5                                                            
+ 35CLX L XREF=FIJ                                                               
+ 35CL  L 9099.2    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 9100.6    5 3/2-              0.20 KEV  2                              
+ 35CLX L XREF=IJ                                                                
+ 35CL cL J$R-Matrix analysis in (p,p)                                           
+ 35CL  L 9107.4    5                                                            
+ 35CLX L XREF=FIJ                                                               
+ 35CL  L 9110.1    5                                                            
+ 35CLX L XREF=IJ                                                                
+ 35CL  L 9120      4                                                            
+ 35CLX L XREF=J                                                                 
+ 35CL  L 9124.1    5 5/2                                                    A   
+ 35CLX L XREF=EIJ                                                               
+ 35CL  L 9135.1    5                                                            
+ 35CLX L XREF=IJ                                                                
+ 35CL  L 9138.3    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 9147      4                                                            
+ 35CLX L XREF=J                                                                 
+ 35CL  L 9150      10 (7/2:17/2)+                                               
+ 35CLX L XREF=H                                                                 
+ 35CL cL J$L(|a,d)=6                                                            
+ 35CL  L 9155.7    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 9157.1    4 5/2+                                                       
+ 35CLX L XREF=FIJ                                                               
+ 35CL cL J$|g(|q) in (p,|g)                                                     
+ 35CL  G 3941.1      17                                                         
+ 35CL  G 4388.0      16                                                         
+ 35CL  G 4978.8      30                                                     X   
+ 35CL  G 5993.8      22                                                         
+ 35CL  G 6154.2      20                                                         
+ 35CL  G 6462.8      3.0                                                        
+ 35CL  G 6510.7      7                                                          
+ 35CL  G 7393.1      17                                                         
+ 35CL  G 9155.8      100       M1+E2     0.47    50                             
+ 35CL  L 9163.2    5                                                            
+ 35CLX L XREF=FIJ                                                               
+ 35CL  L 9184.2    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 9188.8    5                                                            
+ 35CLX L XREF=I                                                                 
+ 35CL  L 9194.1    5                                                            
+ 35CLX L XREF=FIJ                                                               
+ 35CL  L 9207      4 9/2+                                                       
+ 35CLX L XREF=J                                                                 
+ 35CL cL J$p|g(|q) in (p,p'|g)                                                  
+ 35CL  L 9222      4 5/2+                                                       
+ 35CLX L XREF=JS                                                                
+ 35CL cL J$L(pol d,{+3}He)=2 and L+1/2 from analyzing power                     
+ 35CL  L 9227      4 5/2-                                                       
+ 35CLX L XREF=J                                                                 
+ 35CL cL J$p|g(|q) in (p,p'|g)                                                  
+ 35CL  L 9241      4 7/2+                                                       
+ 35CLX L XREF=J                                                                 
+ 35CL cL J$p|g(|q) in (p,p'|g)                                                  
+ 35CL  L 9256      4 1/2                                                    A   
+ 35CLX L XREF=EFJ                                                               
+ 35CL  L 9271      4                                                            
+ 35CLX L XREF=J                                                                 
+ 35CL  L 9276      4                                                            
+ 35CLX L XREF=J                                                                 
+ 35CL  L 9284      4 5/2-                                                       
+ 35CLX L XREF=J                                                                 
+ 35CL cL J$p|g(|q) in (p,p'|g)                                                  
+ 35CL  L 9294      4                                                            
+ 35CLX L XREF=J                                                                 
+ 35CL  L 9299      4                                                            
+ 35CLX L XREF=J                                                                 
+ 35CL  L 9316      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 9325      4 5/2+                                                       
+ 35CLX L XREF=J                                                                 
+ 35CL cL J$p|g(|q) in (p,p'|g)                                                  
+ 35CL  L 9335      4 7/2+                                                       
+ 35CLX L XREF=FJ                                                                
+ 35CL cL J$p|g(|q) in (p,p'|g)                                                  
+ 35CL  L 9345      4                                                            
+ 35CLX L XREF=J                                                                 
+ 35CL  L 9349      4                                                            
+ 35CLX L XREF=J                                                                 
+ 35CL  L 9355      4                                                            
+ 35CLX L XREF=J                                                                 
+ 35CL  L 9376      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 9400      9 1/2                                                    A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 9450      10 (7/2:17/2)+                                               
+ 35CLX L XREF=H                                                                 
+ 35CL cL J$L(|a,d)=6                                                            
+ 35CL  L 9456      4 3/2                                                    A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 9480      2 3/2                                                    A   
+ 35CLX L XREF=EF                                                                
+ 35CL  L 9508      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 9514      20 (1/2-,5/2+)                                               
+ 35CLX L XREF=S                                                                 
+ 35CL cL J$angular distributions in (pol d,{+3}He)                              
+ 35CL  L 9551      6 5/2                                                    A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 9673      6 1/2                                                    A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 9713      3 1/2                                                    A   
+ 35CLX L XREF=EF                                                                
+ 35CL  L 9740      4                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 9751      3 7/2                                                    A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 9799      5                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 9814      3 5/2+                                                       
+ 35CLX L XREF=ES                                                                
+ 35CL cL J$angular distributions in (pol d,{+3}He) and (|a,p):resonance.        
+ 35CL  L 9836      5                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 9870      3 1/2                                                    A   
+ 35CLX L XREF=EF                                                                
+ 35CL  L 9901      3 (1/2,3/2)                                              A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 9923      4 3/2-                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 9951      5 3/2                                                    A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 9969      5 (1/2,3/2)                                              A   
+ 35CLX L XREF=EF                                                                
+ 35CL  L 10031     5 (1/2+,3/2-)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10058       3/2                                                    A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10075     5 (1/2)                                                  A   
+ 35CLX L XREF=EF                                                                
+ 35CL  L 10089     5 5/2+                                                   A   
+ 35CLX L XREF=EF                                                                
+ 35CL  L 10133     5 3/2-                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10166     5 (3/2-,5/2-)                                            A   
+ 35CLX L XREF=EF                                                                
+ 35CL  L 10181.1    5 19/2-            0.14 PS   LT                         D   
+ 35CLX L XREF=FX                                                                
+ 35CL cL J$|g|g(DCO) in (HI,xn|g)                                               
+ 35CL cL T$from (HI,xn|g)                                                       
+ 35CL  G 1336.3    5   100   4                                                  
+ 35CL  G 1693.5    5   34    9                                                  
+ 35CLF G FL=8487.4                                                              
+ 35CL  G 1861.3    5   83    6                                                  
+ 35CL  L 10218     5 3/2                                                    A   
+ 35CLX L XREF=EF                                                                
+ 35CL  L 10222.4   11  17/2-            0.28 PS  LT                             
+ 35CLX L XREF=X                                                                 
+ 35CL cL J$|g|g(DCO) in (HI,xn|g)                                               
+ 35CL cL T$from (HI,xn|g)                                                       
+ 35CL  G 1377.8    10  100                                                      
+ 35CL  L 10235     5 3/2-                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10278       1/2                                                    A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10295                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10319     5 5/2+                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10340       (3/2,5/2)                                              A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10359     5 3/2                                                    A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10385                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10397     5 3/2+                                                   A   
+ 35CLX L XREF=EF                                                                
+ 35CL  L 10431     5 5/2+                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10464     5 5/2+                                                   A   
+ 35CLX L XREF=EF                                                                
+ 35CL  L 10485     5 5/2+                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10517     6                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 10536     5 1/2+                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10548     6                                                            
+ 35CLX L XREF=F                                                                 
+ 35CL  L 10585     5 3/2+                                                   A   
+ 35CLX L XREF=EF                                                                
+ 35CL  L 10642     5 5/2+                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10677     5 3/2+                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10698     5 7/2-                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10734     5 3/2+                                                   A   
+ 35CLX L XREF=EF                                                                
+ 35CL  L 10761     5 (3/2+,7/2-)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10801     5 5/2+                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10817     5 3/2-                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10844     5 3/2-                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10859.0    8  19/2+            0.28 PS  LT                         E   
+ 35CLX L XREF=X                                                                 
+ 35CL cL J$ADO ratios in (HI,xn|g)                                              
+ 35CL cL T$from (HI,xn|g)                                                       
+ 35CL  G 2014.7    9  100    5                                                  
+ 35CL  G 2069.8    10 33     3                                                  
+ 35CLF G FL=8788.7                                                              
+ 35CL  L 10870       (5/2,7/2)                                              A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10886                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10910     5 (3/2+,5/2-)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10928       7/2                                                    A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10942                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10963     5 5/2+                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10973                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 10998     5 (3/2+,7/2-)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11034     5 3/2+                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11063     5 (1/2+,9/2+)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11083     5 (5/2+,9/2+)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11105                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11123     5 3/2                                                    A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11142     5 5/2+                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11154                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11169                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11178     5 (3/2-,5/2+)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11185                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11195     5 3/2                                                    A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11230                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11244     5 3/2                                                    A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11262     5 3/2-                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11287                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11307                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11313     5 (1/2-,5/2+)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11328     5 (1/2-,5/2+)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11357                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11374                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11390                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11410                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11421     5 3/2-                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11434                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11459.0    6 21/2+                                                 E   
+ 35CLX L XREF=EX                                                                
+ 35CL cL J$ADO ratios in (HI,xn|g)                                              
+ 35CL  G 2614.5    5  100                                                       
+ 35CL  L 11470     5 (1/2-,5/2-)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11492                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11504     5 (3/2-,5/2-)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11525                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11540                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11550     5 (3/2-,5/2+)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11565                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11589                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11607     5 (5/2+,7/2-)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11629     5 (1/2+,5/2+)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11637                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11651                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11684     5 (1/2+,5/2+)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11773     5 (3/2-,7/2-)                                            A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 11783     5 3/2-                                                   A   
+ 35CLX L XREF=E                                                                 
+ 35CL  L 12572.2    6 23/2-                                                 D   
+ 35CLX L XREF=X                                                                 
+ 35CL cL J$ADO ratios in (HI,xn|g)                                              
+ 35CL  G 1113.3    5  24     2                                                  
+ 35CL  G 2390.8    5  100    4                                                  
+ 35CL  L 12900                                                                  
+ 35CL2 L ISPIN=3/2                                                              
+ 35CLX L XREF=E                                                                 
+ 35CL  L 13900                                                                  
+ 35CLX L XREF=E                                                                 
+ 35CL2 L ISPIN=3/2                                                              
+                                                                                

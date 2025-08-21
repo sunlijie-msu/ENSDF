@@ -1,0 +1,142 @@
+ 35CL    12C(28SI,APG):XUNDL-4         2007KS01                           200701
+ 35CL c  Compiled (unevaluated) dataset from 2007Ks01:                          
+ 35CL2c  Nucl Phys A 781, 277 (2007)                                            
+ 35CL3c  includes additional information obtained as an e-mail reply            
+ 35CL4c  on Dec 1, 2006 from one of the authors (M. Saha Sarkar)                
+ 35CL c  Compiled by: B. Singh (McMaster) December 6, 2006                      
+ 35CL c  Two different experiments: one at E=70 MeV at BARC-TIFR facility       
+ 35CL2c  and the second at E=88 MeV at NSC facility, both using almost          
+ 35CL3c  identical (INGA) arrays eight Compton-suppressed 'Clover' HPGe         
+ 35CL4c  detectors for the measurement of E|g, I|g, |g|g, |g|g(|q)(DCO)         
+ 35CL5c  and |g|g(lin pol). Lifetime measurements were made using Doppler-      
+ 35CL6c  shift attenuation method. Comparisons with large-scale shell-model     
+ 35CL7c  calculations                                                           
+ 35CL cG $ DCO values are for angles: 90|' and 120|' for E=70 MeV experiment    
+ 35CL2cG at TIFR; and 80|' and 136|' for E=88 MeV experiment at NSC.            
+ 35CL cG $ |D{-IPDCO} corresponds to integrated polarization asymmetry          
+ 35CL2cG measurement at E=70 MeV at TIFR facility. The values are from          
+ 35CL3cG e-mail reply of Dec 1, 2006 from one of the authors (M. Saha Sarkar)   
+ 35CL4cG of 2007Ks01                                                            
+ 35CL cG E$ Common values from both experiments                                 
+ 35CL cG RI$ From E({+28}Si)=88 MeV data at NSC facility, values from           
+ 35CL2cG the second experiment are given under comments                         
+ 35CL cG MR$ From |g|g(|q)(DCO) data at E=88 MeV (NSC). In table 1 of 2007Ks01  
+ 35CL2cG "TIFR" stated for |d values is a misprint.                             
+ 35CL cL E$From least-squares fit to E|g's (by compiler)                        
+ 35CL cL T$ From Doppler-shift attenuation method (2007Ks01)                    
+ 35CL PN                                                                     5  
+ 35CL  L 0.0          3/2+                                                      
+ 35CL  L 1763.1     7 5/2+                                                      
+ 35CL  G 1763          9.7   GT   E2+M1                                         
+ 35CL cG $ I|g(70 MeV)>15.7                                                     
+ 35CL cG $|D{-IPDCO}=+0.13 {I5}                                                 
+ 35CL  L 2645.1     6  7/2+              0.90 PS LT                             
+ 35CL cL T$ from 882|g                                                          
+ 35CL  G 882          3.2    2                                                  
+ 35CL cG $ I|g(70 MeV)=4.6 {I2}                                                 
+ 35CL cG $|D{-IPDCO}=+0.01 {I5}                                                 
+ 35CL  G 2645         37     2  E2                                              
+ 35CL cG $ I|g(70 MeV)=47 {I2}                                                  
+ 35CL cG $|D{-IPDCO}=+0.08 {I5}                                                 
+ 35CL  L 3003.1     8 5/2+                                                      
+ 35CL  G  3003         1.1   GT                                                 
+ 35CL cG $ I|g(70 MeV)>0.6                                                      
+ 35CL  L 3163.2     6  7/2-                                                     
+ 35CL  G  160          1.1   3                                                  
+ 35CL cG $ I|g(70 MeV)=0.6 {I2}                                                 
+ 35CL  G 518           9.2   5  D                                               
+ 35CL cG MR$ 0                                                                  
+ 35CL cG $ I|g(70 MeV)=10.0 {I2}                                                
+ 35CL cG $DCO (70 MeV)=0.8 {I1} gated on 2645|g, E2                             
+ 35CL  G 1400          1     LT                                                 
+ 35CL  G 3163         100    5  M2+E3     +0.16  1                              
+ 35CL cG $ I|g(70 MeV)=100 {I2}                                                 
+ 35CL cG $DCO (70 MeV)=0.9 {I1}; DCO (88 MeV)=0.7 {I1} gated on 2244|g, E2      
+ 35CL cG $|D{-IPDCO}=-0.06 {I2}                                                 
+ 35CL  L 3942.2     8 9/2+              0.35 PS  LT                             
+ 35CL cL T$ from 2179|g                                                         
+ 35CL  G  779           1    LT                                                ?
+ 35CL  G  1297          0.4  2                                                  
+ 35CL cG $ I|g(70 MeV)=0.2 {I1}                                                 
+ 35CL  G  2179          6.5  7  M1+E2                                           
+ 35CL cG $ I|g(70 MeV)=11.1 {I6}                                                
+ 35CL cG $|D{-IPDCO}=+0.07 {I5}                                                 
+ 35CL  L 4347.2     7  9/2-             0.91 PS  +21-16                         
+ 35CL cL T$ from 1184|g                                                         
+ 35CL  G 1184          25    1  M1+E2     -0.3   1                              
+ 35CL cG $ I|g(70 MeV)=25 {I1}                                                  
+ 35CL cG $DCO (70 MeV)=2.0 {I2}; DCO (88 MeV)=2.8 {I3} gated on 3163|g, M2+E3   
+ 35CL cG $|D{-IPDCO}=-0.08 {I3}                                                 
+ 35CL  G  1702        11.4   6  E1+M2     +0.5   +5-3                           
+ 35CL cG $ I|g(70 MeV)=10.8 {I5}                                                
+ 35CL cG $DCO (70 MeV)=1.0 {I2} gated on 2645|g, E2                             
+ 35CL cG $|D{-IPDCO}=+0.04 {I4}                                                 
+ 35CL  G  4347         1     LT                                                 
+ 35CL cG $ I|g(70 MeV)<1                                                        
+ 35CL  L 5407.2     8 11/2-            0.76 PS   LT                             
+ 35CL cL T$ from 1060|g                                                         
+ 35CL  G 1060         7.3    7  M1+E2     +0.2   1                              
+ 35CL cG $ I|g(70 MeV)=6.9 {I3}                                                 
+ 35CL cG $DCO (70 MeV and 88 MeV)=0.9 {I1} gated on 680|g, M1+E2                
+ 35CL cG $|D{-IPDCO}=-0.10 {I4}                                                 
+ 35CL  G 2244         61     2  E2                                              
+ 35CL cG $ I|g(70 MeV)=50 {I3}                                                  
+ 35CL cG $DCO (70 MeV)=1.0 {I1}; DCO (88 MeV)=1.2 {I1} gated on 3163|g, M2+E3   
+ 35CL cG $|D{-IPDCO}=+0.04 {I2}                                                 
+ 35CL  L 5927.2     9  11/2-            0.28 PS  LT                             
+ 35CL cL T$ from 1580|g                                                         
+ 35CL  G  1580         18    2  (M1+E2)   -0.2   1                              
+ 35CL cG $ I|g(70 MeV)=12 {I1}                                                  
+ 35CL cG $DCO (70 MeV)=0.9 {I1}; DCO (88 MeV)=1.0 {I1} gated on 1184|g, M1+E2   
+ 35CL cG $|D{-IPDCO}=+0.02 {I3}                                                 
+ 35CL  G  1985          2.0  4                                                  
+ 35CL cG $ I|g(70 MeV)=1.6 {I6}                                                 
+ 35CL  L 6087.3     9 13/2-                                                     
+ 35CL  G 680           32    1  M1(+E2)  +0.1    1                              
+ 35CL cG $ I|g(70 MeV)=8.6 {I2}                                                 
+ 35CL cG $DCO (70 MeV and 88 MeV)=1.3 {I1} gated on 2244|g, E2                  
+ 35CL cG $|D{-IPDCO}=-0.09 {I2}                                                 
+ 35CL  G 1740          2.0   2  E2                                              
+ 35CL cG $ I|g(70 MeV)=2.3 {I2}                                                 
+ 35CL cG $|D{-IPDCO}=+0.12 {I7}                                                 
+ 35CL  L 6119.2    13  (11/2-)                                                 ?
+ 35CL  G  712          1     LT                                                ?
+ 35CL  L 7873.3    10 13/2+                                                     
+ 35CL  G 1786          1.8   4  D(+Q)     -0.6   6                              
+ 35CL cG $ I|g(70 MeV)=0.1 {I1}                                                 
+ 35CL cG $DCO (88 MeV)=1.2 {I3} gated on 971|g, E2                              
+ 35CL  G  1946         10    1  E1+M2     +0.2   1                              
+ 35CL cG $ I|g(70 MeV)=0.5 {I1}                                                 
+ 35CL cG $DCO (88 MeV)=1.3 {I2} gated on 971|g, E2                              
+ 35CL cG $|D{-IPDCO}=+0.11 {I6}                                                 
+ 35CL  G 2466          22    2  E1+M2    -0.25   10                             
+ 35CL cG $ I|g(70 MeV)=1.2 {I1}                                                 
+ 35CL cG $DCO (88 MeV)=2.4 {I3} gated on 3163|g, M2+E3                          
+ 35CL cG $|D{-IPDCO}=+0.21 {I6}                                                 
+ 35CL  L 8324.4    13 (13/2-)           0.07 PS  LT                            ?
+ 35CL  G  2917            1  LT  D(+Q)    -0.1   +3-2                          ?
+ 35CL cG $DCO (88 MeV)=1.9 {I6} gated on 3163|g, M2+E3                          
+ 35CL  L 8481.4    11(15/2-)            0.07 PS  LT                            ?
+ 35CL cL T$ from 2394|g and 3074|g                                              
+ 35CL  G 2394           1    LT  D(+Q)   +0.2    +3-2                          ?
+ 35CL cG $DCO (88 MeV)=1.4 {I4} gated on 3163|g, M2+E3                          
+ 35CL  G 3074           1    LT                                                ?
+ 35CL  L 8558.3    14 (13/2-)           0.14 PS  LT                            ?
+ 35CL  G 2631           1    LT  D(+Q)   -0.2    +2-3                          ?
+ 35CL cG $DCO (88 MeV)=2.4 {I7} gated on 3163|g, M2+E3                          
+ 35CL  L 8787.3    14 (15/2+)           0.28 PS  LT                            ?
+ 35CL  G  914           2.4  5  D(+Q)    -0.2    2                             ?
+ 35CL cG $DCO (88 MeV)=2.2 {I6} gated on 3163|g, M2+E3                          
+ 35CL  L 8844.3    14 17/2+                                                     
+ 35CL  G 971            33   1  E2                                              
+ 35CL cG $ I|g(70 MeV)=2.0 {I1}                                                 
+ 35CL cG $DCO (70 MeV)=1.0 {I2}; DCO (88 MeV)=0.9 {I1} gated on 2244|g, E2      
+ 35CL cG $|D{-IPDCO}=+0.08 {I4}                                                 
+ 35CL  L 10181.3   17(19/2+)            0.14 PS  LT                            ?
+ 35CL  G 1337         6      1  D(+Q)     -0.2   2                             ?
+ 35CL cG $DCO (88 MeV)=2.0 {I4} gated on 971|g, E2                              
+ 35CL  L 10222.4   17(17/2-)            0.28 PS  LT                            ?
+ 35CL  G 1378          2     1                                                 ?
+ 35CL  L 10861.4   17(19/2+)            0.28 PS  LT                            ?
+ 35CL  G 2017          7     1                                                 ?
+                                                                                
