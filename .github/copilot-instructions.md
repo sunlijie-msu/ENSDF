@@ -366,6 +366,17 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
 - **NEVER** edit `.old` files (reference files from previous evaluation rounds)
 - **NEVER** modify first/last line indentation or spacing in .ens files
 
+### Data Consistency with Adopted Levels
+**🚨 CRITICAL CONSISTENCY RULE 🚨**
+- **When comments state "From the Adopted Levels"** (e.g., `35S  cL J,T$From the Adopted Levels`):
+  - **J-π (spin-parity) values MUST exactly match adopted values** including parentheses formatting
+  - **T1/2 (half-life) values MUST exactly match adopted values** including units and uncertainties
+  - **Both J-π AND T1/2 must be consistent** - not just one or the other
+- **Always check error files (*.err) for "JPI commented from Adopted but inconsistent" warnings**
+- **Always check error files for "T1/2 commented from Adopted but empty" warnings**
+- **Example**: If adopted shows `(3/2)+` then individual dataset must show `(3/2)+`, not `3/2+`
+- **Example**: If adopted shows `2.29 PS 14` then individual dataset must show `2.29 PS 14`, not be empty
+
 ### ENSDF Record Ordering (CRITICAL FORMAT REQUIREMENTS)
 **🚨 MANDATORY ORDERING RULES 🚨**
 1. **ALL L-records MUST be in ASCENDING energy order** - Levels arranged lowest to highest
