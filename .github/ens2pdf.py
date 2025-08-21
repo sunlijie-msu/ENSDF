@@ -32,21 +32,55 @@ def generate_pdfs(element, open_after=False, use_vscode=True):
     # Find JAR file automatically
     jar_file = glob.glob("D:/X/ND/McMaster-MSU-Java-NDS/McMaster_MSU_JAVA_NDS_v*.jar")[0]
     
-    # Process all .ens files for the element
-    for ens_file_path in glob.glob(f"D:/X/ND/A35/finished/{element}35/new/*.ens"):
-        pdf_file = f"{Path(ens_file_path).stem}.pdf"
-        subprocess.run(["java", "-jar", jar_file, ens_file_path, pdf_file])
-        print(f"Converted: {Path(ens_file_path).name} -> {pdf_file}")
-        if open_after:
-            # PDF is always generated in D:/X/ND/Files
-            pdf_path = f"D:/X/ND/Files/{Path(ens_file_path).stem}.pdf"
-            open_pdf(pdf_path, use_vscode)
+    # Search in current ENSDF workspace for multiple mass chains
+    mass_chains = ["A34", "A35", "A60"]
+    total_files = 0
+    
+    for mass_chain in mass_chains:
+        mass_number = mass_chain[1:]  # Extract number (34, 35, 60)
+        ens_path = f"D:/X/ND/ENSDF/{mass_chain}/{element}{mass_number}/new/*.ens"
+        ens_files = glob.glob(ens_path)
+        
+        if ens_files:
+            print(f"Found {len(ens_files)} files in {mass_chain}/{element}{mass_number}/new/")
+            total_files += len(ens_files)
+            # Process all .ens files for the element
+            for ens_file_path in ens_files:
+                pdf_file = f"{Path(ens_file_path).stem}.pdf"
+                subprocess.run(["java", "-jar", jar_file, ens_file_path, pdf_file])
+                print(f"Converted: {Path(ens_file_path).name} -> {pdf_file}")
+                if open_after:
+                    # PDF is always generated in D:/X/ND/Files
+                    pdf_path = f"D:/X/ND/Files/{Path(ens_file_path).stem}.pdf"
+                    open_pdf(pdf_path, use_vscode)
+    
+    if total_files == 0:
+        print(f"No {element} .ens files found in ENSDF workspace (searched A34, A35, A60)")
 
 # Even simpler - single file
 def generate_pdf(element, dataset_name, open_after=False, use_vscode=True):
     os.chdir("D:/X/ND/Files")
     jar_file = glob.glob("D:/X/ND/McMaster-MSU-Java-NDS/McMaster_MSU_JAVA_NDS_v*.jar")[0]
-    ens_file = f"D:/X/ND/A35/finished/{element}35/new/{dataset_name}.ens"
+    
+    # Extract mass number from dataset name if present
+    mass_number = "35"  # default
+    for char in dataset_name:
+        if char.isdigit():
+            # Find consecutive digits
+            mass_start = dataset_name.index(char)
+            mass_end = mass_start
+            while mass_end < len(dataset_name) and dataset_name[mass_end].isdigit():
+                mass_end += 1
+            mass_number = dataset_name[mass_start:mass_end]
+            break
+    
+    # Search in current ENSDF workspace
+    ens_file = f"D:/X/ND/ENSDF/A{mass_number}/{element}{mass_number}/new/{dataset_name}.ens"
+    
+    if not os.path.exists(ens_file):
+        print(f"Error: {dataset_name}.ens not found in ENSDF workspace: A{mass_number}/{element}{mass_number}/new/")
+        return
+    
     pdf_file = f"{dataset_name}.pdf"
     subprocess.run(["java", "-jar", jar_file, ens_file, pdf_file])
     print(f"Converted: {dataset_name}.ens -> {dataset_name}.pdf")
@@ -88,25 +122,52 @@ def generate_pdfs_pattern(element, pattern, open_after=False, use_vscode=True):
     os.chdir("D:/X/ND/Files")
     jar_file = glob.glob("D:/X/ND/McMaster-MSU-Java-NDS/McMaster_MSU_JAVA_NDS_v*.jar")[0]
     
-    # Process files matching the pattern
-    for ens_file_path in glob.glob(f"D:/X/ND/A35/finished/{element}35/new/{pattern}.ens"):
-        pdf_file = f"{Path(ens_file_path).stem}.pdf"
-        subprocess.run(["java", "-jar", jar_file, ens_file_path, pdf_file])
-        print(f"Converted: {Path(ens_file_path).name} -> {pdf_file}")
-        if open_after:
-            # PDF is always generated in D:/X/ND/Files
-            pdf_path = f"D:/X/ND/Files/{Path(ens_file_path).stem}.pdf"
-            open_pdf(pdf_path, use_vscode)
+    # Extract mass number from pattern if present, otherwise try all mass chains
+    mass_number = None
+    for char in pattern:
+        if char.isdigit():
+            # Find consecutive digits
+            mass_start = pattern.index(char)
+            mass_end = mass_start
+            while mass_end < len(pattern) and pattern[mass_end].isdigit():
+                mass_end += 1
+            mass_number = pattern[mass_start:mass_end]
+            break
+    
+    mass_chains = [f"A{mass_number}"] if mass_number else ["A34", "A35", "A60"]
+    total_files = 0
+    
+    for mass_chain in mass_chains:
+        mass_num = mass_chain[1:]  # Extract number (34, 35, 60)
+        pattern_path = f"D:/X/ND/ENSDF/{mass_chain}/{element}{mass_num}/new/{pattern}.ens"
+        ens_files = glob.glob(pattern_path)
+        
+        if ens_files:
+            print(f"Found {len(ens_files)} files matching pattern '{pattern}' in {mass_chain}/{element}{mass_num}/new/")
+            total_files += len(ens_files)
+            # Process files matching the pattern
+            for ens_file_path in ens_files:
+                pdf_file = f"{Path(ens_file_path).stem}.pdf"
+                subprocess.run(["java", "-jar", jar_file, ens_file_path, pdf_file])
+                print(f"Converted: {Path(ens_file_path).name} -> {pdf_file}")
+                if open_after:
+                    # PDF is always generated in D:/X/ND/Files
+                    pdf_path = f"D:/X/ND/Files/{Path(ens_file_path).stem}.pdf"
+                    open_pdf(pdf_path, use_vscode)
+    
+    if total_files == 0:
+        print(f"No files matching pattern '{pattern}' found in ENSDF workspace")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage:")
-        print("  python ens2pdf.py Si                                    # Convert all Si35 files")
-        print("  python ens2pdf.py Si35_adopted                          # Convert single file")
-        print("  python ens2pdf.py Si35_*sig                             # Convert pattern")
-        print("  python ens2pdf.py finished/Si35/new/Si35_adopted.ens    # Convert with full path")
-        print("  python ens2pdf.py Si --open                             # Convert and open in VS Code")
-        print("  python ens2pdf.py Si --open --system                    # Convert and open in system viewer")
+        print("  python ens2pdf.py S                                     # Convert all S files (A34, A35, A60)")
+        print("  python ens2pdf.py S35_adopted                           # Convert single file")
+        print("  python ens2pdf.py S35_*sig                              # Convert pattern")
+        print("  python ens2pdf.py A35/S35/new/S35_adopted.ens           # Convert with full path")
+        print("  python ens2pdf.py S --open                              # Convert and open in VS Code")
+        print("  python ens2pdf.py S --open --system                     # Convert and open in system viewer")
+        print("  Note: Files are searched in ENSDF workspace (A34, A35, A60 mass chains)")
         sys.exit(1)
     
     # Check for flags
