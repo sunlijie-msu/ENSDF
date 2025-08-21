@@ -123,10 +123,12 @@ ENSDF Meets AI: The Future of Nuclear Data Evaluation
 
 AI-Assisted Nuclear Data Technical Innovation at FRIB
 
-AI‑assisted ENSDF formatting tools are being developed and refined through daily evaluation tasks at the FRIB Nuclear Data Center. These tools are built on the open-source platform Microsoft Visual Studio Code, aiming to integrate the rapidly evolving large language models into the routine workflows of ENSDF evaluators.
+Current AI/ML Implementation Status
+The first AI agent for ENSDF 80-column formatting is being developed and refined through daily evaluation tasks at the FRIB Nuclear Data Center. These tools are built on the open-source platform Microsoft Visual Studio Code, aiming to integrate the rapidly evolving large language models into the routine workflows of ENSDF evaluators.
 
-ENSDF-specific context management for AI includes: (a) FRIBND, a custom agent mode that defines core behavior, tool invocation, and structured agentic workflows: Understand → Investigate → Plan → Implement → Debug → Test → Iterate → Validate. (2) Repository custom instructions that define ENSDF 80-column formatting rules and quality assurance measures. (3) Ready-to-use prompt templates for specific tasks, such as automated data extraction from publications with built-in vision capabilities. All three components are assembled with GitHub Copilot agent base instructions to ensure that AI actions comply with the strict ENSDF 80-column standards. These tools are available and customizable to support the broader nuclear data community.
+ENSDF-specific context management for AI includes: (a) FRIBND, a custom agent mode that defines core behavior, tool invocation, and structured agentic workflows: Understand → Investigate → Plan → Implement → Debug → Test → Iterate → Validate. (b) Repository custom instructions that define ENSDF 80-column format and notation rules and quality assurance measures. (c) Ready-to-use prompt templates for specific tasks, such as automated  data extraction directly from publications with built-in vision capabilities and 80-column calibration data entry.
 
+All three components are assembled with GitHub Copilot agent base instructions to ensure that AI actions comply with the strict ENSDF 80-column standards. These tools have been introduced at the 2025 Low Energy Community Meeting are available and customizable to support the broader nuclear data community.
 
 
 

@@ -3,6 +3,7 @@
  35S 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35S   H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35S 2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
+ 35S  dG $Transition strength is calculated by Java-RULER (version 10-Jun-2025) 
  35S  dL E$Least-squares fitting is done by GLSC (version 19-Aug-2025)          
  35S   Q 167.322   26 6985.844 11586.5 8 -8322.096     2021WA16                 
  35S  cQ $S(2n)=18402.99 {I4}, S(2p)=22909.8 {I7} (2021Wa16)                    
@@ -431,7 +432,7 @@
  35S  cL E$weighted average of 4837 {I8} from (d,p) and 4843 {I10} from         
  35S 2cL (p,{+3}He). Other: 4837 from (pol d,p).                                
  35S  cL J$L=2 from 3/2+ in (p,{+3}He). L=2 gives 1/2+ to 9/2+.                 
- 35S   L 4899.82   27 (9/2+)                                                   
+ 35S   L 4899.82   27 (9/2+)                                                    
  35S X L XREF=DE                                                                
  35S  cL J$2908.3|g D, |DJ=1 to 1991, 7/2-. 1055.1|g D, |DJ=1 from 5877.7,      
  35S 2cL (11/2+).                                                               
@@ -467,12 +468,12 @@
  35S X L XREF=DE                                                                
  35S  cL J$986.8|g D, |DJ=0 to 4023, (11/2-) and 3018.5|g E2 to 1991, 7/2-.     
  35S  cL T$from ({+14}N,3p|g) in 2014Ay01 with DSAM.                            
- 35S   G 986.8     3 100     5  D                                                
+ 35S   G 986.8     3 100     5  D                                               
  35S  cG E$weighted average of 986.9 {I3} from ({+14}N,3p|g) and 986.6 {I3} from
  35S 2cG ({+18}O,2|an|g)                                                        
  35S  cG RI$from ({+14}N,3p|g).                                                 
  35S  cG M$from ({+18}O,2|an|g) and ({+14}N,3p|g).                              
- 35S   G 3018.5    7 43      5  E2                                               
+ 35S   G 3018.5    7 43      5  E2                                              
  35S  cG M$from |g|g(|q)(ADO) and RUL in ({+14}N,3p|g).                         
  35S   L 5058      8  7/2-                                                      
  35S X L XREF=HI                                                                
