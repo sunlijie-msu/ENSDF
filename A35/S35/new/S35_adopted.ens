@@ -3,6 +3,7 @@
  35S 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35S   H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35S 2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
+ 35S  DG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  35S  dG $Transition strength is calculated by Java-RULER (version 10-Jun-2025) 
  35S  dL E$Least-squares fitting is done by GLSC (version 19-Aug-2025)          
  35S   Q 167.322   26 6985.844 11586.5 8 -8322.096     2021WA16                 
@@ -30,8 +31,8 @@
  35S 3cG magnetic or electric nature is determined based on RUL and measured    
  35S 4cG T{-1/2} where available.                                               
  35S  cL E$From a least-squares fit to |g-ray energies with uncertainties for   
- 35S 2cL levels connected with |g transitions; from {+34}S(n,n),(n,|g):resonances
- 35S 3cL for resonances.                                                        
+ 35S 2cL levels connected with |g transitions; from                             
+ 35S 3cL {+34}S(n,n),(n,|g):resonances for resonances.                          
  35S   XA35P B- DECAY (47.3 S)                                                  
  35S   XB2H(34S,PG)                                                             
  35S   XC9BE(36S,35SG)                                                          
@@ -47,7 +48,7 @@
  35S   XM160GD(34S,XG),(37CL,XG)                                                
  35S   XN208PB(36S,35SG)                                                        
  35S  PN                                                                     6  
- 35S   L 0.0          3/2+             87.61 D   24                            
+ 35S   L 0.0          3/2+             87.61 D   24                             
  35S X L XREF=ABCDEFHIJKLMN                                                     
  35S 2 L %B-=100$                                                               
  35S 2 L MOMM1=(+)1.00 4 (1954Bu05,2019StZV)                                    
@@ -74,6 +75,8 @@
  35S 3cL with DSAM; lifetime>1.8 ps in (d,p|g) from 1970Bu18 with DSAM;         
  35S 4cL lifetime>1.6 ps in (d,p|g) from 1972Fr11 with DSAM.                    
  35S   G 1572.327  12 100       (M1)                                            
+ 35S S G  CC=0.0001007 14$KC=1.372E-5 19$LC=1.057E-6 15$MC=8.92E-8 12           
+ 35S S G  IPC=8.59E-5 12                                                        
  35S  cG E$weighted average of 1572.252 {I29} from {+35}P |b{+-} decay, 1576    
  35S 2cG {I2} from {+9}Be({+36}S,{+35}S|g), 1572.4 {I3} from ({+14}N,3p|g),     
  35S 3cG 1572.333 {I8} from (n,|g) E=thermal, 1572.24 {I17} from (d,p|g), and   
@@ -87,6 +90,8 @@
  35S 3cL (d,p|g) from 1971Pr11 with p|g-delayed coin. Other: >4.5 ps in (d,p|g) 
  35S 4cL (1970Bu18, DSAM).                                                      
  35S   G 1991.26   5  100       M2+E3    +0.17   6                              
+ 35S S G  CC=0.0001476 22$KC=1.508E-5 21$LC=1.164E-6 16$MC=9.82E-8 14           
+ 35S S G  IPC=0.0001312 20                                                      
  35S  cG E$weighted average of 1990 {I2} from {+9}Be({+36}S,{+35}S|g), 1991.3   
  35S 2cG {I2} from ({+14}N,3p|g), 1990.5 {I4} from ({+18}O,2|an|g), 1991.27 {I5}
  35S 3cG from (n,|g) E=thermal, and 1991 {I1} from {+208}Pb({+36}S,{+35}S|g)    
@@ -100,9 +105,11 @@
  35S 2cL ({+34}S,p|g) from 1973Wa10 with DSAM, 0.8 ps {I2} in (d,p|g) from      
  35S 3cL 1970Bu18 with DSAM, and 1.22 ps {I18} in (d,p|g) from 1972Fr11 with    
  35S 4cL DSAM.                                                                  
- 35S   G 356.66    9 0.084   LT [E2]                                        &   
+ 35S   G 356.66    9 0.084   LT [E2]                   1.15E-3 2            &   
+ 35S S G  KC=0.001064 15$LC=8.25E-5 12$MC=6.93E-6 10                            
  35S  cG E,RI$from (n,|g) E=thermal.                                            
  35S   G 775.398   6 35.3    27 (E1)                                            
+ 35S S G  CC=3.54E-5 5$KC=3.27E-5 5$LC=2.522E-6 35$MC=2.126E-7 30               
  35S  cG E$from (n,|g) E=thermal. Others: 778 {I2} from {+9}Be({+36}S,{+35}S|g) 
  35S 2cG and 775.4 {I4} from ({+14}N,3p|g)                                      
  35S  cG RI$weighted average of 37 {I5} from ({+14}N,3p|g), 35 {I4} from (n,|g) 
@@ -110,6 +117,8 @@
  35S  cG M$D(+Q) from |g(|q) in (d,p|g); |D|p=yes from level scheme; M2 ruled   
  35S 2cG out by RUL.                                                            
  35S   G 2347.700  19 100.0  27 (E1)                                            
+ 35S S G  CC=0.000880 12$KC=4.88E-6 7$LC=3.76E-7 5$MC=3.17E-8 4                 
+ 35S S G  IPC=0.000875 12                                                       
  35S  cG E$weighted average of 2352 {I2} from {+9}Be({+36}S,{+35}S|g), 2347.8   
  35S 2cG {I3} from ({+14}N,3p|g), 2347.700 {I15} from (n,|g) E=thermal, and 2347
  35S 3cG {I2} from {+208}Pb({+36}S,{+35}S|g)                                    
@@ -123,15 +132,21 @@
  35S 2cL transfer from analyzing power.                                         
  35S  cL T$from lifetime=100 fs {I35} in (d,p|g) from 1972Fr11 with DSAM.       
  35S   G 368.7     5 14      8  [E1]                                            
+ 35S S G  CC=0.0002294 33$KC=0.0002116 31$LC=1.635E-5 24$MC=1.376E-6 20         
  35S  cG E$weighted average of 368.5 {I4} from (n,|g) E=thermal and 370 {I1}    
  35S 2cG from {+208}Pb({+36}S,{+35}S|g)                                         
  35S  cG RI$unweighted average of 6.7 {I23} from (n,|g) E=thermal and 22 {I4}   
  35S 2cG from {+208}Pb({+36}S,{+35}S|g)                                         
  35S   G 725.79      5       LT [E1]                                            
+ 35S S G  CC=4.10E-5 6$KC=3.78E-5 5$LC=2.92E-6 4$MC=2.459E-7 34                 
  35S  cG RI$from (d,p|g).                                                       
  35S   G 1144.68     5       LT [E2]                                            
+ 35S S G  CC=3.79E-5 5$KC=3.20E-5 4$LC=2.472E-6 35$MC=2.084E-7 29               
+ 35S S G  IPC=3.24E-6 5                                                         
  35S  cG RI$from (d,p|g).                                                       
  35S   G 2717.01   16 100    10 M1+E2    -0.39   5                              
+ 35S S G  CC=0.000568 9$KC=5.70E-6 8$LC=4.39E-7 6$MC=3.70E-8 5                  
+ 35S S G  IPC=0.000562 9                                                        
  35S  cG E$weighted average of 2720 {I2} from {+9}Be({+36}S,{+35}S|g), 2717.0   
  35S 2cG {I4} from ({+14}N,3p|g), 2716.99 {I16} from (n,|g) E=thermal, and 2717 
  35S 3cG {I2} from {+208}Pb({+36}S,{+35}S|g)                                    
@@ -162,16 +177,25 @@
  35S 2cL transfer from analyzing power.                                         
  35S  cL T$from lifetime<100 fs in (d,p|g) from 1972Fr11 with DSAM.             
  35S   G 484.6       4       LT [M1,E2]                                         
+ 35S S G  CC=2.7E-4 13$KC=2.5E-4 12$LC=1.9E-5 9$MC=1.6E-6 8                     
  35S  cG RI$from (d,p|g).                                                       
  35S   G 706.1       6       LT [M1,E2]                                         
+ 35S S G  CC=9.5E-5 28$KC=8.7E-5 26$LC=6.7E-6 20$MC=5.7E-7 17                   
  35S  cG RI$from (d,p|g).                                                       
  35S   G 1075.4      7       LT [E1]                                            
+ 35S S G  CC=1.830E-5 26$KC=1.689E-5 24$LC=1.302E-6 18$MC=1.098E-7 15           
  35S  cG RI$from (d,p|g).                                                       
  35S   G 1431.9      30      LT [E1]                                            
+ 35S S G  CC=0.0002257 32$KC=1.022E-5 14$LC=7.88E-7 11$MC=6.64E-8 9             
+ 35S S G  IPC=0.0002147 30                                                      
  35S  cG RI$from (d,p|g).                                                       
  35S   G 1850.8      7       LT [E2]                                            
+ 35S S G  CC=0.000255 4$KC=1.173E-5 16$LC=9.04E-7 13$MC=7.63E-8 11              
+ 35S S G  IPC=0.0002420 34                                                      
  35S  cG RI$from (d,p|g).                                                       
  35S   G 3423      2 100        [M1,E2]                                         
+ 35S S G  CC=0.00090 7$KC=4.09E-6 10$LC=3.15E-7 8$MC=2.66E-8 7                  
+ 35S S G  IPC=0.00089 7                                                         
  35S  cG E$weighted average of 3425 {I2} from {+9}Be({+36}S,{+35}S|g) and 3421  
  35S 2cG {I2} from {+208}Pb({+36}S,{+35}S|g).                                   
  35S  cG RI$from (d,p|g).                                                       
@@ -213,7 +237,7 @@
  35S  cG E$weighted average of 3594.7 {I7} from ({+14}N,3p|g), 3594.4 {I11} from
  35S 2cG ({+18}O,2|an|g), and 3593 {I2} from {+208}Pb({+36}S,{+35}S|g).         
  35S  cG RI$from ({+14}N,3p|g). Other: 3602 {I2} from {+9}Be({+36}S,{+35}S|g).  
- 35S  cG M$from from |g|g(|q)(ADO) in ({+14}N,3p|g).                            
+ 35S  cG M$from |g|g(|q)(ADO) in ({+14}N,3p|g).                                 
  35S   L 3675      10 (1/2-,3/2-)                                              ?
  35S X L XREF=I                                                                 
  35S  cL J$L=(1) from 0+ in (d,p).                                              
@@ -223,24 +247,34 @@
  35S 2cL power.                                                                 
  35S  cL T$from lifetime=36 fs {I26} in (d,p|g) from 1972Fr11 with DSAM.        
  35S   G 863.28    28 1.3    4  [E1]                                            
+ 35S S G  CC=2.82E-5 4$KC=2.60E-5 4$LC=2.008E-6 28$MC=1.693E-7 24               
  35S  cG E$from (n,|g) E=thermal.                                               
  35S  cG RI$from (n,|g) E=thermal. Other: <8.9 from (d,p|g).                    
  35S   G 1084.79   15 2.2    7  [E1]                                            
+ 35S S G  CC=1.801E-5 25$KC=1.662E-5 23$LC=1.281E-6 18$MC=1.080E-7 15           
  35S  cG E$from (n,|g) E=thermal.                                               
  35S  cG RI$weighted average of 2.1 {I4} from (n,|g) E=thermal and 11 {I5} from 
  35S 2cG (d,p|g)                                                                
  35S   G 1454.09   4 18      4  [M1,E2]                                         
+ 35S S G  CC=8.0E-5 12$KC=1.73E-5 16$LC=1.33E-6 12$MC=1.13E-7 11                
+ 35S S G  IPC=6.2E-5 10                                                         
  35S  cG E$from (n,|g) E=thermal.                                               
  35S  cG RI$weighted average of 18 {I4} from (n,|g) E=thermal and 18 {I7} from  
  35S 2cG (d,p|g)                                                                
  35S   G 1810.63     8.9     LT [E2]                                            
+ 35S S G  CC=0.0002364 33$KC=1.223E-5 17$LC=9.43E-7 13$MC=7.95E-8 11            
+ 35S S G  IPC=0.0002231 31                                                      
  35S  cG RI$from (d,p|g).                                                       
  35S   G 2229.510  16 88     15 [E1]                                            
  35S B G BE1W=0.0010 8                                                          
+ 35S S G  CC=0.000804 11$KC=5.24E-6 7$LC=4.03E-7 6$MC=3.40E-8 5                 
+ 35S S G  IPC=0.000799 11                                                       
  35S  cG E$from (n,|g) E=thermal.                                               
  35S  cG RI$unweighted average of 110 {I11} from (n,|g) E=thermal, 93 {I9} from 
  35S 2cG (d,p|g), and 61 {I5} from (d,|a|g)                                     
- 35S   G 3801.73   4 100     5  [E1]                                            
+ 35S   G 3801.73   4 100     5  [E1]                   1.60E-3 2                
+ 35S S G  KC=2.62E-6 4$LC=2.018E-7 28$MC=1.703E-8 24                            
+ 35S S G  IPC=0.001601 22                                                       
  35S  cG E$from (n,|g) E=thermal.                                               
  35S  cG RI$from (d,|a|g). Other: 100 {I9} from (d,p|g), 100 {I9} from (n,|g)   
  35S 2cG E=thermal.                                                             
@@ -249,6 +283,8 @@
  35S  cL J$207.0|g from 4023, (11/2-). 2061.6|g D, |DJ=1 from 5877.7 (11/2+).   
  35S  cL T$from ({+14}N,3p|g) in 2014Ay01 with DSAM.                            
  35S   G 1824.7    3 100        M1+E2    +0.55   9                              
+ 35S S G  CC=0.000200 4$KC=1.098E-5 17$LC=8.46E-7 13$MC=7.14E-8 11              
+ 35S S G  IPC=0.000188 4                                                        
  35S  cG E$weighted average of 1824.6 {I2} from ({+14}N,3p|g), 1824.4 {I6} from 
  35S 2cG ({+18}O,2|an|g), and 1827 {I1} from {+208}Pb({+36}S,{+35}S|g). Other:  
  35S 3cG 1830 {I2} from {+9}Be({+36}S,{+35}S|g)                                 
@@ -275,12 +311,15 @@
  35S  cG RI$from (d,p|g).                                                       
  35S   G 3886.05     33      7                                                  
  35S  cG RI$from (d,|a|g). Other: <16 from (d,p|g).                             
- 35S   L 4023.24   21 (11/2-)          0.32 PS   3                            
+ 35S   L 4023.24   21 (11/2-)          0.32 PS   3                              
  35S X L XREF=DEMN                                                              
  35S  cL J$2032.0|g E2, |DJ=2 to 1991, 7/2-.                                    
  35S  cL T$from ({+14}N,3p|g) in 2014Ay01 with DSAM.                            
- 35S   G 207.0     5 0.59    30 [M1,E2]                                         
+ 35S   G 207.0     5 0.59    30 [M1,E2]                0.005  4                 
+ 35S S G  KC=0.005 4$LC=3.6E-4 29$MC=3.0E-5 24                                  
  35S   G 2032.0    3 100     6  E2                                              
+ 35S S G  CC=0.000341 5$KC=9.87E-6 14$LC=7.61E-7 11$MC=6.42E-8 9                
+ 35S S G  IPC=0.000330 5                                                        
  35S  cG E$weighted average of 2031.8 {I3} from ({+14}N,3p|g) and 2032.4 {I4}   
  35S 2cG from ({+18}O,2|an|g). Other: 2032 {I2} from {+208}Pb({+36}S,{+35}S|g)  
  35S  cG RI$from ({+14}N,3p|g)                                                  
@@ -338,16 +377,24 @@
  35S  cG E$from (n,|g) E=thermal.                                               
  35S  cG RI$from (n,|g) E=thermal. Other: <7.7 from (d,p|g).                    
  35S   G 1250.61   5 8.4     10 [E1]                                            
+ 35S S G  CC=0.0001047 15$KC=1.286E-5 18$LC=9.91E-7 14$MC=8.36E-8 12            
+ 35S S G  IPC=9.08E-5 13                                                        
  35S  cG E$from (n,|g) E=thermal.                                               
  35S  cG RI$from (n,|g) E=thermal. Other: <9.6 from (d,p|g).                    
  35S   G 1840.2    12 91     10 [M1,E2]                                         
+ 35S S G  CC=0.000221 29$KC=1.12E-5 7$LC=8.6E-7 5$MC=7.3E-8 5                   
+ 35S S G  IPC=0.000209 28                                                       
  35S  cG E$from (n,|g) E=thermal.                                               
  35S  cG RI$weighted average of 87 {I16} from (n,|g) E=thermal and 92 {I10} from
  35S 2cG (d,p|g)                                                                
- 35S   G 2616.8    13 9.5    28 [E1]                                            
+ 35S   G 2616.8    13 9.5    28 [E1]                   1.04E-3 2                
+ 35S S G  KC=4.21E-6 6$LC=3.24E-7 5$MC=2.74E-8 4                                
+ 35S S G  IPC=0.001033 14                                                       
  35S  cG E$from (n,|g) E=thermal.                                               
  35S  cG RI$from (n,|g) E=thermal. Other: <12 from (d,p|g).                     
- 35S   G 4188.95   5 100     10 [E1]                                            
+ 35S   G 4188.95   5 100     10 [E1]                   1.75E-3 3                
+ 35S S G  KC=2.333E-6 33$LC=1.795E-7 25$MC=1.515E-8 21                          
+ 35S S G  IPC=0.001749 24                                                       
  35S  cG E$from (n,|g) E=thermal.                                               
  35S  cG RI$from (d,p|g). Other: 100 {I11} from (n,|g) E=thermal                
  35S   L 4302.6    7                                                            
@@ -363,30 +410,44 @@
  35S 2cL (p,{+3}He). L=2 component of L=2,3 doublet from 0+ in (d,p).           
  35S  cL T$from lifetime<90 fs in (d,p|g) from 1972Fr11 with DSAM.              
  35S   G 591.35      8.2     LT [M1,E2]                                         
+ 35S S G  CC=1.5E-4 6$KC=1.4E-4 5$LC=1.1E-5 4$MC=9.2E-7 34                      
  35S  cG RI$from (d,p|g).                                                       
  35S   G 675.67      8.2     LT [E1]                                            
+ 35S S G  CC=4.82E-5 7$KC=4.45E-5 6$LC=3.43E-6 5$MC=2.89E-7 4                   
  35S  cG RI$from (d,p|g).                                                       
  35S   G 883.00      8.2     LT [M1,E2]                                         
+ 35S S G  CC=5.4E-5 12$KC=5.0E-5 11$LC=3.9E-6 8$MC=3.3E-7 7                     
  35S  cG RI$from (d,p|g).                                                       
  35S   G 919.54      8.2     LT                                                 
  35S  cG RI$from (d,p|g).                                                       
  35S   G 1054.4      16      LT [M1,E2]                                         
+ 35S S G  CC=3.6E-5 6$KC=3.4E-5 5$LC=2.6E-6 4$MC=2.18E-7 35                     
  35S  cG RI$from (d,p|g).                                                       
  35S   G 1538.97     12      LT                                                 
  35S  cG RI$from (d,p|g).                                                       
  35S   G 1760.55   11 100    12 [M1,E2]                                         
+ 35S S G  CC=0.000189 25$KC=1.21E-5 8$LC=9.3E-7 6$MC=7.9E-8 5                   
+ 35S S G  IPC=0.000176 24                                                       
  35S  cG E$from (n,|g) E=thermal.                                               
  35S  cG RI$from (d,p|g). Others: 100 {I15} from (n,|g) E=thermal and 100 {I11} 
  35S 2cG from (d,|a|g).                                                         
  35S   G 2129.78     13      LT [E1]                                            
+ 35S S G  CC=0.000738 10$KC=5.59E-6 8$LC=4.30E-7 6$MC=3.63E-8 5                 
+ 35S S G  IPC=0.000732 10                                                       
  35S  cG RI$from (d,p|g).                                                       
  35S   G 2486.27     16      LT [E1]                                            
+ 35S S G  CC=0.000962 13$KC=4.51E-6 6$LC=3.47E-7 5$MC=2.93E-8 4                 
+ 35S S G  IPC=0.000957 13                                                       
  35S  cG RI$from (d,p|g). Other: 42 {I11} from (d,|a|g).                        
  35S   G 2905.1    4 90      14 [E2]                                            
+ 35S S G  CC=0.000749 10$KC=5.39E-6 8$LC=4.15E-7 6$MC=3.50E-8 5                 
+ 35S S G  IPC=0.000743 10                                                       
  35S  cG E$from (n,|g) E=thermal.                                               
  35S  cG RI$unweighted average of 96 {I28} from (n,|g) E=thermal, 64 {I12} from 
  35S 2cG (d,p|g), and 109 {I11} from (d,|a|g)                                   
- 35S   G 4477.32     20      LT [M1,E2]                                         
+ 35S   G 4477.32     20      LT [M1,E2]                0.00126 8                
+ 35S S G  KC=2.78E-6 6$LC=2.14E-7 4$MC=1.81E-8 4                                
+ 35S S G  IPC=0.00126 8                                                         
  35S  cG RI$from (d,p|g). Other: 28 {I6} from (d,|a|g).                         
  35S   L 4482         7/2-                                                      
  35S X L XREF=HI(4481*)                                                         
@@ -428,7 +489,8 @@
  35S  cG E$from ({+18}O,2|an|g). Other: 1304.8 {I12} from ({+14}N,3p|g)         
  35S  cG RI$from ({+14}N,3p|g).                                                 
  35S   G 2908.3    5 100     18 D                                               
- 35S  cG E,RI,M$from ({+14}N,3p|g).                                             
+ 35S  cG E,RI$from ({+14}N,3p|g).                                               
+ 35S  cG M$from |g|g(|q)(ADO) in ({+14}N,3p|g).                                 
  35S   L 4903.371  17 1/2-                                                      
  35S X L XREF=FHI                                                               
  35S  cL J$L=1 from 0+ in (d,p) and (pol d,p) and L-1/2 transfer from analyzing 
@@ -462,6 +524,8 @@
  35S  cG RI$from ({+14}N,3p|g).                                                 
  35S  cG M$from ({+18}O,2|an|g) and ({+14}N,3p|g).                              
  35S   G 3018.5    7 43      5  E2                                              
+ 35S S G  CC=0.000798 11$KC=5.07E-6 7$LC=3.91E-7 5$MC=3.29E-8 5                 
+ 35S S G  IPC=0.000793 11                                                       
  35S  cG M$from |g|g(|q)(ADO) and RUL in ({+14}N,3p|g).                         
  35S   L 5058      8  7/2-                                                      
  35S X L XREF=HI                                                                
@@ -504,7 +568,7 @@
  35S X L XREF=F                                                                 
  35S   G 4268.65   14 100                                                       
  35S  cG E,RI$from (n,|g) E=thermal.                                            
- 35S   L 5877.70   22 (11/2+)                                                 
+ 35S   L 5877.70   22 (11/2+)                                                   
  35S X L XREF=DE                                                                
  35S  cL J$465.4|g D, |DJ=1 to 5412, (9/2+). 867.6|g D, |DJ=0 to 5010, (11/2-). 
  35S 2cL 3886|g to 1991, 7/2-. 2283|g to 3594.6, (7/2+).                        
@@ -582,14 +646,18 @@
  35S X L XREF=I                                                                 
  35S   L 6344      8                                                            
  35S X L XREF=IK(6347)                                                          
- 35S   L 6352.2    5  (13/2-)          50 FS     10                           
+ 35S   L 6352.2    5  (13/2-)          50 FS     10                             
  35S X L XREF=D                                                                 
  35S  cL J$2329.5|g D, |DJ=1 to 4023, (11/2-). 2535.8|g E2 to 3816.0, (9/2-).   
  35S  cL T$from ({+14}N,3p|g) in 2014Ay01 with DSAM.                            
  35S   G 2329.5    9 100     20 D                                               
- 35S  cG E,RI,M$from ({+14}N,3p|g).                                             
+ 35S  cG E,RI$from ({+14}N,3p|g).                                               
+ 35S  cG M$from |g|g(|q)(ADO) in ({+14}N,3p|g).                                 
  35S   G 2535.8    11 50     6  E2                                              
- 35S  cG E,RI,M$from ({+14}N,3p|g).                                             
+ 35S S G  CC=0.000581 8$KC=6.72E-6 9$LC=5.18E-7 7$MC=4.37E-8 6                  
+ 35S S G  IPC=0.000574 8                                                        
+ 35S  cG E,RI$from ({+14}N,3p|g).                                               
+ 35S  cG M$from |g|g(|q)(ADO) and RUL in ({+14}N,3p|g).                         
  35S   L 6354.89   23                                                           
  35S X L XREF=F                                                                 
  35S   G 6355.0    6 100                                                        
@@ -658,16 +726,21 @@
  35S X L XREF=G                                                                 
  35S   L 7143.27   11                                                           
  35S X L XREF=GI(7150)K(7151)                                                   
- 35S   L 7179.74   32 (15/2+)          3.1 PS    12                           
+ 35S   L 7179.74   32 (15/2+)          3.1 PS    12                             
  35S X L XREF=DE                                                                
  35S  cL J$1302.0|g E2 to 5877.7, (11/2+); |g to 6352.2, (13/2-).               
  35S  cL T$from ({+14}N,3p|g) in 2014Ay01 with DSAM.                            
  35S   G 827.8     6 2.2     8  [E1]                                            
+ 35S S G  CC=3.08E-5 4$KC=2.84E-5 4$LC=2.192E-6 31$MC=1.848E-7 26               
  35S   G 880.2     4 5.9     8  [E2]                                            
+ 35S S G  CC=6.66E-5 9$KC=6.14E-5 9$LC=4.75E-6 7$MC=4.00E-7 6                   
  35S   G 1302.0    3 100     6  E2                                              
+ 35S S G  CC=5.56E-5 8$KC=2.393E-5 34$LC=1.847E-6 26$MC=1.558E-7 22             
+ 35S S G  IPC=2.96E-5 4                                                         
  35S  cG E$weighted average of 1302.2 {I2} from ({+14}N,3p|g) and 1301.6 {I3}   
  35S 2cG from ({+18}O,2|an|g)                                                   
- 35S  cG RI,M$from ({+14}N,3p|g).                                               
+ 35S  cG RI$from ({+14}N,3p|g).                                                 
+ 35S  cG M$from |g|g(|q)(ADO) and RUL in ({+14}N,3p|g).                         
  35S   L 7210.42   5                                                            
  35S X L XREF=GI(7205)                                                          
  35S   L 7218.0    4                                                            
@@ -774,7 +847,7 @@
  35S X L XREF=G                                                                 
  35S   L 8019.5    2                                                            
  35S X L XREF=G                                                                 
- 35S   L 8024.0    7  (17/2+)          0.15 PS   4                            
+ 35S   L 8024.0    7  (17/2+)          0.15 PS   4                              
  35S X L XREF=DE                                                                
  35S  cL J$844.2|g D, |DJ=1 to 7179.7, (15/2+).                                 
  35S  cL T$from ({+14}N,3p|g) in 2014Ay01 with DSAM.                            
@@ -844,4 +917,4 @@
  35S X L XREF=E                                                                 
  35S  cL J$2420.6|g D, |DJ=1 to (19/2).                                         
  35S   G 2420.6    11 100       D                                               
-
+      
