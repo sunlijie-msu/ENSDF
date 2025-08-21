@@ -116,11 +116,20 @@ Since 2015, the MSU Nuclear Data Center has been consistently recognized as one 
 - **Period**: Since June 2025
 - **Output**: 4 rounds of reviews for 3 PRC papers.
 
-### Technical Innovation
-Explore the use of AI agent within VS Code to streamline and automate the workflow by prompt tuning the agent to assist in data evaluation tasks. This includes automating repetitive tasks, enhancing data consistency checks, and improving overall efficiency in data processing.
 
-AI-assisted Workflow Development
-Column calibration tool for ENSDF 80-column formatting
+### Technical Innovation
+
+ENSDF Meets AI: The Future of Nuclear Data Evaluation
+
+AI-Assisted Nuclear Data Technical Innovation at FRIB
+
+AI‑assisted ENSDF formatting tools are being developed and refined through daily evaluation tasks at the FRIB Nuclear Data Center. These tools are built on the open-source platform Microsoft Visual Studio Code, aiming to integrate the rapidly evolving large language models into the routine workflows of ENSDF evaluators.
+
+ENSDF-specific context management for AI includes: (a) FRIBND, a custom agent mode that defines core behavior, tool invocation, and structured agentic workflows: Understand → Investigate → Plan → Implement → Debug → Test → Iterate → Validate. (2) Repository custom instructions that define ENSDF 80-column formatting rules and quality assurance measures. (3) Ready-to-use prompt templates for specific tasks, such as automated data extraction from publications with built-in vision capabilities. All three components are assembled with GitHub Copilot agent base instructions to ensure that AI actions comply with the strict ENSDF 80-column standards. These tools are available and customizable to support the broader nuclear data community.
+
+
+
+
 
 ### Research
 - **Period**: Since Feb 2025
@@ -133,6 +142,3 @@ Column calibration tool for ENSDF 80-column formatting
 - **NSDD**: Engaged with the International Network of Nuclear Structure and Decay Data evaluators to ensure global standards and practices in nuclear data evaluation. Contributed to X4PDF.
 - **BEApR**: Communicated data issues and collaborated on data consistency checks with BEApR evaluators at Berkeley.
 
-
-
-Less typing; more thinking.
