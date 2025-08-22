@@ -26,13 +26,15 @@
  35S  cG RI$I|g values are primarily from {+34}S(n,|g) (E=thermal),             
  35S 2cG {+37}Cl(d,|a|g), {+34}S(d,p|g), {+24}Mg({+14}N,3p|g), and              
  35S 3cG {+26}Mg({+18}O,2|an|g).                                                
- 35S  cG M,MR$Mult and |d are primarily from |g(|q), |g|g(|q), and |g|g(|q)(ADO)
- 35S 2cG in {+34}S(d,p|g), {+24}Mg({+14}N,3p|g), and {+26}Mg({+18}O,2|an|g). The
+ 35S  cG M,MR$Mult and |d are primarily from |g(|q) and |g|g(ADO) in            
+ 35S 2cG {+34}S(d,p|g), {+24}Mg({+14}N,3p|g), and {+26}Mg({+18}O,2|an|g). The   
  35S 3cG magnetic or electric nature is determined based on RUL and measured    
- 35S 4cG T{-1/2} where available.                                               
+ 35S 4cG T{-1/2} where available, unless otherwise noted.                       
  35S  cL E$From a least-squares fit to |g-ray energies with uncertainties for   
- 35S 2cL levels connected with |g transitions; from                             
- 35S 3cL {+34}S(n,n),(n,|g):resonances for resonances.                          
+ 35S 2cL levels connected with |g transitions; from transfer reactions or       
+ 35S 3cL {+34}S(n,n),(n,|g):resonances for other levels, unless otherwise noted.
+ 35S  cL J$For high-spin states, it is assumed that spin increases as the       
+ 35S 2cL excitation energy increases.                                           
  35S   XA35P B- DECAY (47.3 S)                                                  
  35S   XB2H(34S,PG)                                                             
  35S   XC9BE(36S,35SG)                                                          
@@ -127,8 +129,8 @@
  35S 3cG {I2} from {+208}Pb({+36}S,{+35}S|g)                                    
  35S  cG RI$from (d,|a|g). Others: 100 {I8} from ({+14}N,3p|g), 100 {I8} from   
  35S 2cG (n,|g) E=thermal, and 100.0 {I28} from (d,p|g)                         
- 35S  cG M$D(+Q) from |g(|q) in (d,p|g); |D|p=yes from level scheme; M2 ruled   
- 35S 2cG out by RUL.                                                            
+ 35S  cG M$D(+Q) from |g(|q) in (d,p|g); |D|p=yes from level scheme; M2         
+ 35S 2cG component is less likely based on RUL.                                 
  35S B G BE1W=4.6E-5 +9-6                                                       
  35S   L 2717.07   9  5/2+             69 FS     24                             
  35S X L XREF=CDFHIJKLN                                                         
@@ -231,8 +233,7 @@
  35S   G 655.99      10      LT                                                 
  35S  cG RI$from (d,p|g).                                                       
  35S   G 877.6     5 9.3     23                                                 
- 35S  cG E$from ({+14}N,3p|g).                                                  
- 35S  cG RI$from ({+14}N,3p|g). Other: <11 from (d,p|g).                        
+ 35S  cG E,RI$from ({+14}N,3p|g). Other: I|g<11 from (d,p|g).                   
  35S   G 1246.82     15      LT                                                 
  35S  cG RI$from (d,p|g).                                                       
  35S   G 1603.31     17      LT                                                 
@@ -286,9 +287,9 @@
  35S  cG RI$from (d,|a|g). Other: 100 {I9} from (d,p|g), 100 {I9} from (n,|g)   
  35S 2cG E=thermal.                                                             
  35S B G BE1W=2.2E-4 +26-9                                                      
- 35S   L 3816.01   21 (9/2-)           0.28 PS   3                              
+ 35S   L 3816.01   21 (9/2)-           0.28 PS   3                              
  35S X L XREF=CDEHJK(3811*)LN                                                   
- 35S  cL J$207.0|g from 4023, (11/2-). 2061.6|g D, |DJ=1 from 5877.7 (11/2+).   
+ 35S  cL J$1824.7|g M1+E2 to 1991, 7/2-; 2061.6|g D, |DJ=1 from 5877.7 (11/2+). 
  35S  cL T$from ({+14}N,3p|g) in 2014Ay01 with DSAM.                            
  35S   G 1824.7    3 100        M1+E2    +0.55   9                              
  35S S G  CC=0.000200 4$KC=1.098E-5 17$LC=8.46E-7 13$MC=7.14E-8 11              
@@ -320,9 +321,9 @@
  35S  cG RI$from (d,p|g).                                                       
  35S   G 3886.05     33      7                                                  
  35S  cG RI$from (d,|a|g). Other: <16 from (d,p|g).                             
- 35S   L 4023.24   21 (11/2-)          0.32 PS   3                              
+ 35S   L 4023.24   21 (11/2)-          0.32 PS   3                              
  35S X L XREF=DELMN                                                             
- 35S  cL J$2032.0|g E2, |DJ=2 to 1991, 7/2-.                                    
+ 35S  cL J$2032.0|g E2, |DJ=2 to 1991, 7/2-; 207.0|g to 3816.0, (9/2)-.         
  35S  cL T$from ({+14}N,3p|g) in 2014Ay01 with DSAM.                            
  35S   G 207.0     5 0.59    30 [M1,E2]                0.005  4                 
  35S S G  KC=0.005 4$LC=3.6E-4 29$MC=3.0E-5 24                                  
@@ -475,13 +476,14 @@
  35S X L XREF=K                                                                 
  35S   L 4822.79   24 (9/2+)                                                    
  35S X L XREF=DE                                                                
- 35S  cL J$1228.1|g D, |DJ=1 to 3594.6, (7/2+). 1055.1|g D, |DJ=1 from 5877.7,  
- 35S 2cL (11/2+). 1006.8|g D, |DJ=0 to 3816.0, (9/2-).                          
+ 35S  cL J$1228.1|g D, |DJ=1 to 3594.6, (7/2+); 1055.1|g D, |DJ=1 from 5877.7,  
+ 35S 2cL (11/2+); Shell-model calculations from 2021Go09 assign 9/2+.           
  35S   G 1006.8    2 66      15 D                                               
  35S  cG E$from ({+14}N,3p|g). Other: 1007.2 {I11} from ({+18}O,2|an|g)         
  35S  cG RI$weighted average of 73 {I9} from ({+14}N,3p|g) and 36 {I18} from    
  35S 2cG ({+18}O,2|an|g)                                                        
- 35S  cG M$from ({+14}N,3p|g) and ({+18}O,2|an|g).                              
+ 35S  cG M$from |g|g(|q)(ADO) in ({+14}N,3p|g) and ({+18}O,2|an|g), consistent  
+ 35S 2cG with |DJ=0.                                                            
  35S   G 1228.1    3 100     9  D                                               
  35S  cG E$from ({+14}N,3p|g). Other: 1228.3 {I6} from ({+18}O,2|an|g)          
  35S  cG RI$from ({+14}N,3p|g). Other: 100 {I18} from ({+18}O,2|an|g)           
@@ -495,8 +497,8 @@
  35S  cL J$L=2 from 3/2+ in (p,{+3}He). L=2 gives 1/2+ to 9/2+.                 
  35S   L 4899.82   27 (9/2+)                                                    
  35S X L XREF=DE                                                                
- 35S  cL J$2908.3|g D, |DJ=1 to 1991, 7/2-. 1055.1|g D, |DJ=1 from 5877.7,      
- 35S 2cL (11/2+).                                                               
+ 35S  cL J$2908.3|g D, |DJ=1 to 1991, 7/2-; 1055.1|g D, |DJ=1 from 5877.7,      
+ 35S 2cL (11/2+); shell-model calculations from 2021Go09 assign 9/2+.           
  35S   G 1305.3    4 55      18                                                 
  35S  cG E$from ({+18}O,2|an|g). Other: 1304.8 {I12} from ({+14}N,3p|g)         
  35S  cG RI$from ({+14}N,3p|g).                                                 
@@ -919,7 +921,7 @@
  35S  cL J$L=2 from 3/2+ in (p,{+3}He). L=2 gives (1/2+ to 9/2+).               
  35S   L 8755.9    11 (19/2)           1 PS      LT                             
  35S X L XREF=E                                                                 
- 35S  cL J$731.6|g D, |DJ=1 to (17/2+).                                         
+ 35S  cL J$731.6|g D, |DJ=1 to 8024.0, (17/2+).                                 
  35S  cL T$from ({+18}O,2|an|g) in 2021Go09 with residual Doppler energy shifts 
  35S 2cL observed for the 732|g and 1576|g peaks.                               
  35S   G 731.6     15 57     22 D                                               
