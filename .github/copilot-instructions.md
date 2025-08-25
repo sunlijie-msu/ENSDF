@@ -41,9 +41,9 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 **AUTOMATIC VALIDATION SEQUENCE - NO EXCEPTIONS:**
 1. **FIRST**: `python .github/column_calibrate.py "filename"` - Verify 80-column compliance (L and G records only)
 2. **SECOND**: `python .github/check_gamma_ordering.py "filename"` - Verify energy ordering
-3. **DP RECORDS**: Manual verification required - column_calibrate.py does NOT check DP record formatting
+3. **MANUAL VERIFICATION REQUIRED**: column_calibrate.py does NOT check DP, B, or E record formatting
 4. **ONLY THEN**: Proceed with requested edits
-5. **AFTER EDITS**: Re-run validation tools and manually verify DP records
+5. **AFTER EDITS**: Re-run validation tools and manually verify DP, B, and E records
 
 **THIS IS NOT OPTIONAL - IT IS MANDATORY FOR EVERY ENSDF FILE INTERACTION**
 
@@ -116,7 +116,7 @@ Execute column validation on current ENSDF file:
 - **Python**: `python .github/column_calibrate.py "currentfile.ens"` (add `--detailed` for character mapping)
 - **Quick Header Check**: `python .github/column_calibrate.py "currentfile.ens" --header`
 
-**⚠️ IMPORTANT LIMITATION**: column_calibrate.py only validates L and G records - DP records require manual verification
+**⚠️ IMPORTANT LIMITATION**: column_calibrate.py only validates L and G records - DP, B, and E records require manual verification
 
 **Process**: Display 80-char ruler → Extract L/G records → Validate against ENSDF Manual → Report issues
 
@@ -384,6 +384,76 @@ Example: 35CL   DP 501      10 3.5    12 9022
 - **Readable spaces** at columns 10, 22, and 32 for human readability
 - All values and uncertainties must be left-justified in their respective fields
 
+### B-Record Format (Beta Minus Decay):
+```
+Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
+Format:  35XX  B EEEE.E   DE  IB     DIB          LOGFT   DFT              C   UN  Q
+Example: 35P   B 1572.0    1  100.0  4            5.23    12               C   1U   
+```
+
+| Field | Columns | Required | Description |
+|-------|---------|----------|-------------|
+| NUCID | 1-5 | ✓ | Nucleus (e.g., "35P  " or "35Cl ") |
+| CONT | 6 | | Continuation flag |
+| BLANK | 7 | ✓ | Must be blank |
+| TYPE | 8 | ✓ | "B" for beta minus |
+| BLANK | 9 | ✓ | Must be blank |
+| E | 10-19 | | Endpoint energy of β⁻ in keV (LEFT-JUSTIFIED, given only if measured) |
+| DE | 20-21 | | Energy uncertainty (LEFT-JUSTIFIED) |
+| IB | 22-29 | | Intensity of β⁻-decay branch (LEFT-JUSTIFIED) |
+| DIB | 30-31 | | Uncertainty in IB (LEFT-JUSTIFIED) |
+| BLANK | 32-41 | | Must be blank |
+| LOGFT | 42-49 | | The log ft for the β⁻ transition (LEFT-JUSTIFIED) |
+| DFT | 50-55 | | Uncertainty in LOGFT (LEFT-JUSTIFIED) |
+| BLANK | 56-76 | | Must be blank |
+| C | 77 | | Comment flag ('C' denotes coincidence, '?' denotes probable coincidence) |
+| UN | 78-79 | | Forbiddenness classification ('1U', '2U' for unique forbidden, blank = allowed) |
+| Q | 80 | | '?' denotes uncertain or questionable β⁻ decay |
+
+**Critical B-Record Rules**:
+- **Must follow LEVEL record** for the level which is fed by the β⁻ decay
+- **E field given only if measured** - endpoint energy of β⁻ transition
+- **IB intensity** in same units as other intensity fields in file
+- **LOGFT** for uniqueness classification (col 78-79)
+- **Blank signifies allowed transition** for forbiddenness field
+
+### E-Record Format (Electron Capture/Beta Plus Decay):
+```
+Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
+Format:  35XX  E EEEE.E   DE  IB     DIB IE     DIE LOGFT   DFT    TI       DTI C UN  Q
+Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   C 1U  S
+```
+
+| Field | Columns | Required | Description |
+|-------|---------|----------|-------------|
+| NUCID | 1-5 | ✓ | Nucleus (e.g., "35CL " or "35P  ") |
+| CONT | 6 | | Continuation flag |
+| BLANK | 7 | ✓ | Must be blank |
+| TYPE | 8 | ✓ | "E" for electron capture |
+| BLANK | 9 | ✓ | Must be blank |
+| E | 10-19 | | Energy for electron capture to level (LEFT-JUSTIFIED, if measured or deduced) |
+| DE | 20-21 | | Uncertainty in E (LEFT-JUSTIFIED) |
+| IB | 22-29 | | Intensity of β⁺-decay branch (LEFT-JUSTIFIED) |
+| DIB | 30-31 | | Uncertainty in IB (LEFT-JUSTIFIED) |
+| IE | 32-39 | | Intensity of electron capture branch (LEFT-JUSTIFIED) |
+| DIE | 40-41 | | Uncertainty in IE (LEFT-JUSTIFIED) |
+| LOGFT | 42-49 | | The log ft for (ε + β⁺) transition (LEFT-JUSTIFIED) |
+| DFT | 50-55 | | Uncertainty in LOGFT (LEFT-JUSTIFIED) |
+| BLANK | 56-64 | | Must be blank |
+| TI | 65-74 | | Total (ε + β⁺) decay intensity (LEFT-JUSTIFIED) |
+| DTI | 75-76 | | Uncertainty in TI (LEFT-JUSTIFIED) |
+| C | 77 | | Comment flag ('C' denotes coincidence, '?' denotes probable coincidence) |
+| UN | 78-79 | | Forbiddenness classification ('1U', '2U' for unique forbidden, blank = allowed) |
+| Q | 80 | | '?' = uncertain branch, 'S' = expected or predicted transition |
+
+**Critical E-Record Rules**:
+- **Must follow LEVEL record** for the level being populated in the decay
+- **IE, IB and TI must be in same units** (see NORMALIZATION record)
+- **Energy field** given only if measured or deduced from measured β⁺ end-point energy
+- **TI = IE + IB** for total decay intensity to the level
+- **Forbiddenness classification** in columns 78-79 ('1U', '2U' for first-, second-unique forbidden)
+- **Quality flags** in column 80 for uncertain ('?') or predicted ('S') transitions
+
 **UNCERTAINTY LEFT-JUSTIFICATION RULE**: ALL uncertainties (DE, DRI, DMR, DCC, DTI, DT, DS, etc.) MUST be left-justified in their respective fields, just like the values themselves. Special markers (GT, LT) within uncertainty fields are also left-justified.
 
 **LEFT-JUSTIFICATION RULE**: ALL values AND uncertainties MUST be left-justified within their respective fields. This includes:
@@ -454,12 +524,12 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
 **BEFORE ANY EDIT - MANDATORY CHECKS:**
 1. **MANDATORY VALIDATION FIRST**: Run `python .github/column_calibrate.py "filename"` - NEVER skip this!
 2. **MANDATORY ORDERING CHECK**: Run `python .github/check_gamma_ordering.py "filename"` - NEVER skip this!
-3. **DP RECORDS**: Manual verification required - column_calibrate.py does NOT check DP record formatting
+3. **MANUAL VERIFICATION REQUIRED**: column_calibrate.py does NOT check DP, B, or E record formatting
 4. **Read current file state** - Never assume file structure
 5. **Identify target line uniquely** - Must have 5+ lines of unique context
 5. **Single field modification only** - Never edit multiple fields at once
 6. **Validate column positions** - Check field boundaries before editing
-7. **POST-EDIT VALIDATION**: Re-run both validation tools and manually verify DP records after any changes
+7. **POST-EDIT VALIDATION**: Re-run both validation tools and manually verify DP, B, and E records after any changes
 
 **⚠️ CRITICAL**: If either validation tool shows issues, STOP and fix them before proceeding with edits!
 
