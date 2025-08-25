@@ -39,10 +39,11 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 
 **🚨 MANDATORY BEFORE ANY ENSDF EDITING 🚨**
 **AUTOMATIC VALIDATION SEQUENCE - NO EXCEPTIONS:**
-1. **FIRST**: `python .github/column_calibrate.py "filename"` - Verify 80-column compliance
+1. **FIRST**: `python .github/column_calibrate.py "filename"` - Verify 80-column compliance (L and G records only)
 2. **SECOND**: `python .github/check_gamma_ordering.py "filename"` - Verify energy ordering
-3. **ONLY THEN**: Proceed with requested edits
-4. **AFTER EDITS**: Re-run both validation tools to confirm integrity
+3. **DP RECORDS**: Manual verification required - column_calibrate.py does NOT check DP record formatting
+4. **ONLY THEN**: Proceed with requested edits
+5. **AFTER EDITS**: Re-run validation tools and manually verify DP records
 
 **THIS IS NOT OPTIONAL - IT IS MANDATORY FOR EVERY ENSDF FILE INTERACTION**
 
@@ -115,6 +116,10 @@ Execute column validation on current ENSDF file:
 - **Python**: `python .github/column_calibrate.py "currentfile.ens"` (add `--detailed` for character mapping)
 - **Quick Header Check**: `python .github/column_calibrate.py "currentfile.ens" --header`
 
+**⚠️ IMPORTANT LIMITATION**: column_calibrate.py only validates L and G records - DP records require manual verification
+
+**Process**: Display 80-char ruler → Extract L/G records → Validate against ENSDF Manual → Report issues
+
 **CRITICAL 80-Column Debugging Technique**:
 When dealing with ENSDF alignment issues, ALWAYS use the visual ruler method:
 ```python
@@ -149,18 +154,26 @@ print('Length:', len(header))
 ### "What changed?"
 **MANDATORY FIRST STEP**: Always run `git status` to identify ALL modified files.
 
+**🚨 CRITICAL AI HALLUCINATION PREVENTION 🚨**
+- **NEVER use generic commit messages** like "Refactor code structure" or "Update files"
+- **ALWAYS base commit messages on actual git diff analysis** - no assumptions
+- **REQUIRE evidence-based commit content** using the structured template below
+- **VERIFY every claim in commit message** against actual file changes
+
 Execute comprehensive change detection and documentation:
 1. **FIRST**: Run `git status` to list all modified files
 2. **Verify completeness**: Run `git diff --name-only HEAD` for cross-verification
 3. **Check untracked files**: Run `git ls-files --others --exclude-standard`
 4. **For each modified file**: Run `git diff HEAD~1 "filename"` to see what changed
 5. **For moved files**: Use `git show HEAD~1:old/path/file` to examine previous content
-6. **Update change.log** with evidence-based entries (never assume changes)
-7. **Document with**:
+6. **ANALYZE ACTUAL CHANGES**: Never guess what changed - examine actual diffs
+7. **Update change.log** with evidence-based entries (never assume changes)
+8. **Document with**:
    - Line numbers where changes occurred
    - Before/after content for significant changes
    - Scientific/technical context and rationale
    - File movement/reorganization details
+   - **ACTUAL IMPACT**: What the changes accomplish, not generic descriptions
 
 **PowerShell Considerations**: Use `Select-Object -First N` instead of `head` for output limiting.
 
@@ -339,6 +352,38 @@ Example: 35P   G 1572.0    1  100.0  4   [E2]     1.23   0.45  0.0368 8   1.23  
 
 **⚠️ CRITICAL**: G-records following each L-record MUST be in ascending energy order!
 
+### DP-Record Format (Delayed Proton Emission):
+```
+Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
+Format:  35XX   DP EP       DE IP     DIP EI
+Example: 35CL   DP 501      10 3.5    12 9022
+```
+
+| Field | Columns | Required | Description |
+|-------|---------|----------|-------------|
+| NUCID | 1-5 | ✓ | Nucleus (e.g., "35CL " or "35P  ") |
+| CONT | 6 | | Continuation flag (blank) |
+| BLANK | 7 | ✓ | Must be blank |
+| D | 8 | ✓ | "D" for delayed particle |
+| P | 9 | ✓ | "P" for proton |
+| BLANK | 10 | ✓ | Readability space |
+| EP | 11-19 | ✓ | Proton energy in keV (LEFT-JUSTIFIED) |
+| DE | 20-21 | | Energy uncertainty (LEFT-JUSTIFIED) |
+| BLANK | 22 | ✓ | Readability space |
+| IP | 23-29 | | Proton intensity in percent (LEFT-JUSTIFIED) |
+| DIP | 30-31 | | Uncertainty in IP (LEFT-JUSTIFIED) |
+| BLANK | 32 | ✓ | Readability space |
+| EI | 33-39 | | Energy of emitting level in keV (LEFT-JUSTIFIED) |
+
+**Critical DP Format Rules**:
+- **Ep (proton energy)** starts at column 11, left-justified
+- **DE (energy uncertainty)** in columns 20-21, left-justified
+- **Ip (proton intensity)** starts at column 23, left-justified  
+- **DIP (intensity uncertainty)** in columns 30-31, left-justified
+- **EI (emitting level energy)** starts at column 33, left-justified
+- **Readable spaces** at columns 10, 22, and 32 for human readability
+- All values and uncertainties must be left-justified in their respective fields
+
 **UNCERTAINTY LEFT-JUSTIFICATION RULE**: ALL uncertainties (DE, DRI, DMR, DCC, DTI, DT, DS, etc.) MUST be left-justified in their respective fields, just like the values themselves. Special markers (GT, LT) within uncertainty fields are also left-justified.
 
 **LEFT-JUSTIFICATION RULE**: ALL values AND uncertainties MUST be left-justified within their respective fields. This includes:
@@ -409,11 +454,12 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
 **BEFORE ANY EDIT - MANDATORY CHECKS:**
 1. **MANDATORY VALIDATION FIRST**: Run `python .github/column_calibrate.py "filename"` - NEVER skip this!
 2. **MANDATORY ORDERING CHECK**: Run `python .github/check_gamma_ordering.py "filename"` - NEVER skip this!
-3. **Read current file state** - Never assume file structure
-4. **Identify target line uniquely** - Must have 5+ lines of unique context
+3. **DP RECORDS**: Manual verification required - column_calibrate.py does NOT check DP record formatting
+4. **Read current file state** - Never assume file structure
+5. **Identify target line uniquely** - Must have 5+ lines of unique context
 5. **Single field modification only** - Never edit multiple fields at once
 6. **Validate column positions** - Check field boundaries before editing
-7. **POST-EDIT VALIDATION**: Re-run both validation tools after any changes
+7. **POST-EDIT VALIDATION**: Re-run both validation tools and manually verify DP records after any changes
 
 **⚠️ CRITICAL**: If either validation tool shows issues, STOP and fix them before proceeding with edits!
 
@@ -572,34 +618,44 @@ Every change log entry should be backed by:
 - [ ] `git diff HEAD~1 "filename"` on each modified file from git status
 - [ ] For moved files: `git show HEAD~1:old/path/file | Select-Object -First 20` (PowerShell)
 - [ ] For large outputs: Use `Select-Object -First N` to limit output in PowerShell
+- [ ] **EVIDENCE-BASED ANALYSIS**: Document ONLY what git diff actually shows
+- [ ] **VERIFY EVERY CLAIM**: Each commit message statement backed by specific diff evidence
+- [ ] **NO ASSUMPTION DOCUMENTATION**: Never document changes you didn't explicitly see in diffs
 - [ ] Update `change.log` with evidence-based entries
 - [ ] Document file movements/reorganizations with full context
-- [ ] Comprehensive commit message
+- [ ] **ANTI-HALLUCINATION CHECK**: Comprehensive commit message with NO generic AI templates
 - [ ] Cross-check: did any ENSDF changes result in expected PDF updates?
 
 **Remember**: Start every workflow with git status and use PowerShell-compatible commands!
 
 ### Git Commit Template
 ```
-Title: Brief description of main changes
+Title: Brief description of main changes (SPECIFIC - NO GENERIC PHRASES)
 
 Summary:
-- Enhanced/improved/fixed major components
-- Scientific content updates in specific files
+- Enhanced/improved/fixed major components (BE SPECIFIC ABOUT WHAT)
+- Scientific content updates in specific files (LIST ACTUAL FILES AND CHANGES)
 
 ENSDF Tools:
-- tool_name.py: Specific improvements and validation results
+- tool_name.py: Specific improvements and validation results (ACTUAL CHANGES MADE)
 
 Scientific Content:
-- file_name.ens: Changes with line numbers and rationale
+- file_name.ens: Changes with line numbers and rationale (SPECIFIC MODIFICATIONS)
 
 Processing Artifacts:
-- PDF files: Regenerated files listed
-- Temp files: Expected analysis output updates
+- PDF files: Regenerated files listed (ACTUAL FILE NAMES)
+- Temp files: Expected analysis output updates (SPECIFIC ARTIFACTS)
 
 Files changed: X modified, Y untracked
-Brief scope and impact summary
+Brief scope and impact summary (EVIDENCE-BASED CONCLUSION)
 ```
+
+**🚨 COMMIT MESSAGE ANTI-HALLUCINATION RULES 🚨**
+- **FORBIDDEN PHRASES**: "Refactor code structure", "Update files", "Improve functionality", "Enhance system"
+- **REQUIRED SPECIFICITY**: Every tool/file/change mentioned must be backed by actual git diff evidence
+- **MANDATORY VERIFICATION**: Each section must contain actual file names and specific changes
+- **NO GENERIC CLAIMS**: Every improvement claim must cite specific line numbers or functionality
+- **EVIDENCE REQUIREMENT**: If you can't point to a specific diff showing the change, don't claim it
 
 ### Example Commit Structure
 ```
