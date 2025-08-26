@@ -454,7 +454,64 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 - **Forbiddenness classification** in columns 78-79 ('1U', '2U' for first-, second-unique forbidden)
 - **Quality flags** in column 80 for uncertain ('?') or predicted ('S') transitions
 
+### LOG FT FORMAT RULES (CRITICAL FOR B AND E RECORDS)
+**🚨 MANDATORY LOG FT FORMATTING IN ENSDF 🚨**
+
+**Standard log ft Format in Records:**
+- **Decimal notation**: Always use decimal point (e.g., `4.85`, `6.2`, `>8.5`)
+- **LEFT-JUSTIFIED**: All log ft values start at column 42 and are left-justified
+- **Precision**: Typically 1-2 decimal places (e.g., `4.8`, `5.23`, `6.1`)
+- **Uncertainty format**: DFT field (columns 50-55) contains uncertainty in last digits
+
+**log ft Format in Comments:**
+- **Use italic I notation**: `log {Ift}` (NOT `log ft`)
+- **In general comments**: "Deduced levels, J, π, decay branching ratios, log {Ift}, and partial decay widths"
+- **In measurement descriptions**: "Measured log {Ift} values for β⁻ transitions"
+- **CRITICAL**: Comment text must use `{I}` for italic formatting, records use plain `LOGFT`
+
+**Special log ft Notations in Records:**
+- **Greater than**: `>8.5` (value in LOGFT field, blank DFT)
+- **Less than**: `<3.2` (value in LOGFT field, blank DFT)  
+- **Approximate**: `|?4.8` (uses ENSDF approximation symbol)
+- **Systematic uncertainty**: `4.85 SY` (SY in DFT field for systematic)
+- **Calculated values**: Often given to 2 decimal places for precision
+
+**Examples of Proper log ft Formatting:**
+```
+RECORDS (LOGFT field):
+LOGFT     DFT
+4.85      15     → log ft = 4.85(15)
+6.2       3      → log ft = 6.2(3)  
+>8.5             → log ft > 8.5
+<3.0             → log ft < 3.0
+|?5.1            → log ft ≈ 5.1
+
+COMMENTS (text):
+"Deduced levels, J, |p, decay branching ratios, log {Ift}, and partial decay widths"
+"Measured log {Ift} values for |b{+-} transitions"
+```
+
+**Critical log ft Rules:**
+- **Records**: Use plain `LOGFT` field, always left-justified in columns 42-49
+- **Comments**: Use `log {Ift}` with italic I notation for proper formatting
+- **No leading zeros** (write `4.8`, not `04.8`)
+- **Standard decimal notation** (never exponential)
+- **Uncertainty in DFT field** must align with decimal precision
+- **Blank DFT for limits** (>, <) and some calculated values
+
 **UNCERTAINTY LEFT-JUSTIFICATION RULE**: ALL uncertainties (DE, DRI, DMR, DCC, DTI, DT, DS, etc.) MUST be left-justified in their respective fields, just like the values themselves. Special markers (GT, LT) within uncertainty fields are also left-justified.
+
+**🚨 CRITICAL ENSDF SCIENTIFIC NOTATION FORMAT 🚨**
+**For intensities and other values in scientific notation:**
+- **Standard format**: `(5.6±1.0)×10^-4` becomes `5.6E-4 10` in ENSDF
+- **Value field**: `5.6E-4` (scientific notation with E)
+- **Uncertainty field**: `10` (represents ±1.0 in the last significant digit)
+- **Examples**:
+  - `(1.1±0.3)×10^-6` → Value: `1.1E-6`, Uncertainty: `3`
+  - `(76±20)×10^-6` → Value: `76E-6`, Uncertainty: `20`
+  - `(3.3±1.2)×10^-4` → Value: `3.3E-4`, Uncertainty: `12`
+- **NEVER use**: `×10^-n` notation directly in ENSDF records
+- **ALWAYS use**: `E-n` notation for the value, separate uncertainty field
 
 **LEFT-JUSTIFICATION RULE**: ALL values AND uncertainties MUST be left-justified within their respective fields. This includes:
 - Energy values (E field) and their uncertainties (DE field)
