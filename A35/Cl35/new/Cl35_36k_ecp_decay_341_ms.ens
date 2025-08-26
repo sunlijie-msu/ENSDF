@@ -1,8 +1,22 @@
- 35CL    36K ECP DECAY (341 MS)        1997Il03,1980ES01         ENSDF    202509
+ 35CL    36K ECP DECAY (341 MS)        1996Il02,1980ES01         ENSDF    202509
  35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
  35CL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
+ 35CL c  1996Il02,1997Il03: A 500-MeV proton beam was produced from the TRIUMF  
+ 35CL2c  cyclotron and bombarded a CaO powder target. The spallation reaction   
+ 35CL3c  products diffused out of the target and were selectively ionized at a  
+ 35CL4c  Re surface. A=36 singly charged ions were selected by a magnetic mass  
+ 35CL5c  analyzer and implanted into a carbon foil at 7.0|*10{+5} pps. Protons  
+ 35CL6c  and |a particles were detected using a 30-|mm silicon surface barrier  
+ 35CL7c  detector with FWHM=23 keV. {+32}S and {+35}Cl recoils were detected    
+ 35CL8c  using an MCP in a back-to-back geometry for timing stop signals.       
+ 35CL9c  Measured E{-p}(>0.5 MeV) and I{-p} for 15 proton peaks, E{-|a}(>1.5    
+ 35CLAc  MeV) and I{-|a} for 19 |a peaks, p(recoil)-coin, and |a(recoil)-coin.  
+ 35CLBc  Deduced levels, J, |p, decay branching ratios, log {Ift}, partial decay
+ 35CLCc  widths for {+36}Ar, and ratios of {+35}Cl(p,|a){+32}S to               
+ 35CLDc  {+35}Cl(p,|g){+36}Ar reaction rates.                                   
+ 35CL d
  35CL c  1980Es01: A 20-MeV proton beam was produced from the University of     
  35CL2c  Jyvaskyla MC-20 cyclotron and bombarded {+36}Ar-deposited Al foils. The
  35CL3c  {+36}Ar(p,n) reaction products were thermalized by helium, transported 
@@ -14,7 +28,7 @@
  35CL9c  for distinguishing p/|a. Measured E{-p}(>0.5 MeV) and I{-p} for 11     
  35CLAc  proton peaks, E{-|a}(>2.0 MeV) and I{-|a} for 12 |a peaks. Deduced     
  35CLBc  levels, J, |p, decay branching ratios, log {Ift}, and partial decay    
- 35CLCc  widths.                                                                
+ 35CLCc  widths for {+36}Ar.                                                    
  35CL d
  35CL c  1980Ew01: A 600-MeV proton beam was produced from the synchrocyclotron 
  35CL2c  at CERN-ISOLDE and bombarded a ScC{-2} target. The {+45}Sc(p,7n3p)     
@@ -26,78 +40,58 @@
  35CL8c  using 20-|mm and 100-|mm silicon surface barrier detectors with FWHM=35
  35CL9c  and 23 keV. Measured E{-p}(>0.5 MeV) and I{-p} for 3 proton peaks,     
  35CLAc  E{-|a} and I{-|a} for 4 |a peaks. Deduced levels, J, |p, and decay     
- 35CLBc  branching ratios.                                                      
+ 35CLBc  branching ratios for {+36}Ar.                                          
  35CL d  
- 35CL c  1996Il02,1997Il03: A 500-MeV proton beam was produced from the TRIUMF  
- 35CL2c  cyclotron and bombarded a CaO powder target. The spallation reaction   
- 35CL3c  products diffused out of the target and were selectively ionized at a  
- 35CL4c  Re surface. A=36 singly charged ions were selected by a magnetic mass  
- 35CL5c  analyzer and implanted into a carbon foil at 7.0|*10^{+5} pps. Protons 
- 35CL6c  and |a particles were detected using a 30-|mm silicon surface barrier  
- 35CL7c  detector with FWHM=23 keV. {+32}S and {+35}Cl recoils were detected    
- 35CL8c  using an MCP in a back-to-back geometry for timing stop signals.       
- 35CL9c  Measured E{-p}(>0.5 MeV) and I{-p} for 15 proton peaks, E{-|a}(>1.5    
- 35CLAc  MeV) and I{-|a} for 19 |a peaks, p(recoil)-coin, and |a(recoil)-coin.  
- 35CLBc  Deduced levels, J, |p, decay branching ratios, log {Ift}, partial decay
- 35CLCc  widths, and ratios of {+35}Cl(p,|a){+32}S to {+35}Cl(p,|g){+36}Ar      
- 35CLDc  reaction rates.                                                        
- 35CL d
- 35CL cL J,T$From the Adopted Levels.                                           
- 36K   P 0            2+               341 MS    3              4307.4    3     
- 36K  cP J,T$From the Adopted Levels of {+36}K (2012Ni01)                       
- 36K  cP QP$From 2021Wa16.                                                      
- 35CL cDPE$In lab frame.                                                        
+ 35CL cDPE,IP$In lab frame. From 1996Il02, unless otherwise noted.              
+ 35CL cDPE(E),IP(E)$From 1980Es01 and also adopted by 1996Il02.                
  35CL cDPEI$E(level)({+36}Ar)=E(p){-lab}|*[m(p)+m({+35}Cl)]/m({+35}Cl)+S(p)({+3\
  35CL2cDP 6}Ar)+E(level)({+35}Cl), where S(p)({+36}Ar)=8506.97 {I4} (2021Wa16). 
- 35CL3cDP Particle decay is assumed to populate only the ground state of the    
- 35CL4cDP daughter nucleus based on the following considerations: (1)           
- 35CL5cDP Transitions to excited states in the final nucleus would require log  
- 35CL6cDP {Ift} values above those of the superallowed T=2 state at 6.61 MeV in 
- 35CL7cDP {+36}Ar. (2) If the first excited state were populated in particle    
- 35CL8cDP decay, a (probably stronger) peak at higher energy corresponding to   
- 35CL9cDP ground-state decay should be observable, provided the ratio of        
- 35CLAcDP penetrabilities is sufficiently large. Proton and |a-particle         
- 35CLBcDP penetrabilities have been calculated for all observed transitions.    
- 35CLCcDP When the penetrability ratio exceeds a factor of 100, a stronger      
- 35CLDcDP ground-state transition should be observable. No such characteristic  
- 35CLEcDP pairs of particle groups have been found in the present spectra.      
- 35CL  N                       4.9E-4                  1
- 35CL cN BR$%|e+|b{++}p=4.9|*10{+-4} from 1996 1980Es01. The decay properties of
- 35CL2cN 32Cl were also used to determine the relative particle and |g-ray      
- 35CL3cN efficiency of the detector configuration used for absolute branching   
- 35CL4cN ratio measurements. The intensities of the particle groups were        
- 35CL5cN determined relative to the 1970 keV |g-line of 36K. This line has been 
- 35CL6cN reported by 1972Mi13 to be associated with 79 {I8}% of the decays of   
- 35CL7cN 36K.                                                                   
- 35CL  L        0    3/2+              STABLE                                   
- 35CL  DP 501.8    11 1.1E-6 3  9022
+ 35CL3cDP Proton decay is assumed to populate only the ground state of the      
+ 35CL4cDP daughter nucleus {+35}Cl based on the arguments proposed in 1996Il02: 
+ 35CL5cDP (1) unreasonably small log {Ift} values if populating excited states; 
+ 35CL6cDP (2) no pairs of particle groups characteristic of the g.s./first      
+ 35CL7cDP excited state energy difference; (3) compatible level matching with   
+ 35CL8cDP resonance reaction studies.                                           
+ 35CL cL J,T$From the Adopted Levels.                                           
+ 36K   P 0            2+               341 MS    3              4307.4    3     
+ 36K  cP J,T$From the Adopted Levels of {+36}K (2012Ni01).                      
+ 36K  cP QP$From 2021Wa16.                                                      
+ 35CL  N                       5.1E-4    1.0           1                        
+ 35CL cN BR$%|e+|b{++}p=5.1|*10{+-4} is scaled by evaluators from               
+ 35CL2cN %|e+|b{++}p=4.9|*10{+-4} reported in 1996Il02. %|e+|b{++}p=4.9|*10{+-4}
+ 35CL3cN in 1996Il02 was normalized based on the strongest 970-keV              
+ 35CL4cN |e+|b{++}-delayed proton I{-p}=3.3|*10{+-4} {I9} measured by 1980Es01. 
+ 35CL5cN 1980Es01 reported %|e+|b{++}p=4.8|*10{+-4} and their I{-p} was         
+ 35CL6cN normalized based on the strongest 1970-keV |e+|b{++}-delayed |g ray    
+ 35CL7cN %I|g=79 {I8} measured by 1972Mi13. Evaluators adopt a more precise     
+ 35CL8cN %I|g(1970)=81.8 {I16} from the {+36}K |e decay dataset                 
+ 35CL9cN (2012Ni01,1976Fr03) as the new normalization reference, and therefore, 
+ 35CLAcN all original I{-p} values from 1996Il02 and 1980Es01 are scaled by 1.04
+ 35CLBcN {I11}.                                                                 
+ 35CL  L  0           3/2+                                                      
+ 35CL  DP 501.8    11 1.14E-633 9023                                            
  35CL cDPE$other: 501 {I10} (1980Es01).                                         
- 35CL cDPIP$other: 3.5|*10{+-6} {I12} (1980Es01).                               
- 35CL  DP 622.7    14 1.5E-6 4  9146
- 35CL  DP 693.5    8  7.6E-5 20 9219
+ 35CL cDPIP$other: 3.6|*10{+-6} {I13} (1980Es01).                               
+ 35CL  DP 622.7    14 1.6E-6 5  9147                                            
+ 35CL  DP 693.5    8  7.9E-5 22 9220                                            
  35CL cDPE$other: 693 {I5} (1980Es01), 691 {I8} (1980Ew01).                     
- 35CL cDPIP$other: 7.5|*10{+-5} {I22} (1980Es01).                               
- 35CL  DP 851.7    10 2.2E-5 6  9380
+ 35CL cDPIP$other: 7.8|*10{+-5} {I24} (1980Es01).                               
+ 35CL  DP 851.7    10 2.3E-5 7  9383                                            
  35CL cDPE$other: 849 {I5} (1980Es01).                                          
- 35CL cDPIP$other: 1.9|*10{+-5} {I6} (1980Es01).                                
- 35CL  DP 969.6    12 3.3E-4 90  9504
+ 35CL cDPIP$other: 2.0|*10{+-5} {I7} (1980Es01).                                
+ 35CL  DP 969.6    12 3.4E-4 10 9504                                            
  35CL cDPE$other: 970 {I5} (1980Es01), 959 {I7} (1980Ew01).                     
  35CL cDPIP$from 1980Es01 and also adopted as the normalization reference by    
  35CL2cDP 1996Il02.                                                             
- 35CL  DP 1168.5   14 6.0E-7 2   9708
- 35CL  DP 1198.5   11 2.4E-6 6   9739
- 35CL  DP 1272.0   20 1.5E-6 4   9814
- 35CL  DP 1334.2   7  4.3E-5 11  9878
+ 35CL  DP 1168.5   14 6.2E-7 7  9709                                            
+ 35CL  DP 1198.5   11 2.5E-6 7  9740                                            
+ 35CL  DP 1272.0   20 1.6E-6 5  9815                                            
+ 35CL  DP 1334.2   7  4.5E-5 12 9879                                            
  35CL cDPE$other: 1333 {I5} (1980Es01), 1325 {I7} (1980Ew01).                   
- 35CL cDPIP$other: 3.5|*10{+-5} {I10} (1980Es01).                               
- 35CL  DP 1409.3   22 1.0E-6 3   9955
- 35CL  DP 1874     10 1.1E-6 5   10434
- 35CL cDPE,IP$from 1980Es01 and also adopted by 1996Il02.                       
- 35CL  DP 1992     10 4.8E-6 19  10556
- 35CL cDPE,IP$from 1980Es01 and also adopted by 1996Il02.                       
- 35CL  DP 2048     10 4.7E-6 18  10613
- 35CL cDPE,IP$from 1980Es01 and also adopted by 1996Il02.                       
- 35CL  DP 2458     10 2.9E-6 12  11035
- 35CL cDPE,IP$from 1980Es01 and also adopted by 1996Il02.                       
- 35CL  DP 2640     10 2.0E-6 9   11222
- 35CL cDPE,IP$from 1980Es01 and also adopted by 1996Il02.                       
+ 35CL cDPIP$other: 3.6|*10{+-5} {I11} (1980Es01).                               
+ 35CL  DP 1409.3   22 1.04E-633 9957                                            
+ 35CL  DP 1874     10 1.1E-6 5  10435                                       E
+ 35CL  DP 1992     10 5.0E-6 20 10556                                       E
+ 35CL  DP 2048     10 4.9E-6 19 10613                                       E
+ 35CL  DP 2458     10 3.0E-6 13 11035                                       E
+ 35CL  DP 2640     10 2.1E-6 10 11222                                       E
