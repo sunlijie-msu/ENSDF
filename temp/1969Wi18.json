@@ -1,0 +1,61 @@
+{
+  "reference": "1969Wi18",
+  "experiment": "35Ar EC decay gamma-ray measurements",
+  "description": "Gamma-ray transitions from 35Ar electron capture decay study by 1969Wi18 (2 gamma rays measured)",
+  "extraction_date": "2025-08-29",
+  "data_format": "ENSDF_standard",
+  "special_notations": {
+    "no_energy_uncertainties": "No uncertainties reported for gamma-ray energies",
+    "normalization": "1219 keV transition normalized to 100.0"
+  },
+  "gamma_rays": [
+    {
+      "energy_keV": 1219,
+      "initial_state_keV": 1219,
+      "final_state_keV": 0,
+      "intensity": 100.0,
+      "transition": "1219→0",
+      "ensdf_notation": {
+        "energy": "1219",
+        "intensity": "100"
+      }
+    },
+    {
+      "energy_keV": 1763,
+      "initial_state_keV": 1763,
+      "final_state_keV": 0,
+      "intensity": 23.4,
+      "intensity_uncertainty": 1.3,
+      "transition": "1763→0",
+      "ensdf_notation": {
+        "energy": "1763",
+        "intensity": "23.4(13)"
+      }
+    }
+  ],
+  "summary_statistics": {
+    "total_gamma_rays": 2,
+    "measurable_intensities": 2,
+    "upper_limits": 0,
+    "obscured_peaks": 0,
+    "energy_range_keV": {
+      "minimum": 1219,
+      "maximum": 1763
+    },
+    "intensity_range": {
+      "minimum": 23.4,
+      "maximum": 100.0,
+      "notes": "1219 keV transition normalized to 100.0"
+    },
+    "ground_state_transitions": 2,
+    "cascade_transitions": 0
+  },
+  "validation": {
+    "energy_ordering": "ascending",
+    "ensdf_compliant": true,
+    "transition_assignments_included": true,
+    "uncertainty_notation_standard": "ENSDF",
+    "no_energy_uncertainties_reported": true,
+    "normalization_applied": true
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "reference": "1984AD01",
+  "experiment": "35Ar EC decay gamma-ray measurements",
+  "description": "Genuine 35Cl gamma-ray transitions from 35Ar electron capture decay study by 1984AD01 (contaminants and escape peaks removed)",
+  "extraction_date": "2025-08-29",
+  "data_format": "ENSDF_standard",
+  "filtering_applied": {
+    "removed_contaminants": ["annihilation_radiation", "14O_transitions", "52Mn_transitions", "39Ca_transitions"],
+    "removed_escape_peaks": ["single_escape_peaks", "double_escape_peaks"],
+    "criteria": "Only genuine 35Cl gamma transitions retained"
+  },
+  "gamma_rays": [
+    {
+      "energy_keV": 930.7,
+      "energy_uncertainty": 0.2,
+      "intensity": 1.66,
+      "intensity_uncertainty": 0.12,
+      "identification": "35Cl(4-2)",
+      "ensdf_notation": {
+        "energy": "930.7(2)",
+        "intensity": "1.66(12)"
+      }
+    },
+    {
+      "energy_keV": 1219.3,
+      "energy_uncertainty": 0.2,
+      "intensity": 100.0,
+      "intensity_uncertainty": 3.0,
+      "identification": "35Cl(1-0)",
+      "ensdf_notation": {
+        "energy": "1219.3(2)",
+        "intensity": "100.0(30)"
+      }
+    },
+    {
+      "energy_keV": 1474.8,
+      "energy_uncertainty": 0.3,
+      "intensity": 1.08,
+      "intensity_uncertainty": 0.07,
+      "identification": "35Cl(4-1)",
+      "ensdf_notation": {
+        "energy": "1474.8(3)",
+        "intensity": "1.08(7)"
+      }
+    },
+    {
+      "energy_keV": 1763.0,
+      "energy_uncertainty": 0.2,
+      "intensity": 21.85,
+      "intensity_uncertainty": 0.67,
+      "identification": "35Cl(2-0)",
+      "ensdf_notation": {
+        "energy": "1763.0(2)",
+        "intensity": "21.85(67)"
+      }
+    },
+    {
+      "energy_keV": 2155.1,
+      "energy_uncertainty": 1.5,
+      "intensity": 0.15,
+      "intensity_uncertainty": 0.06,
+      "identification": "35Cl(7-2)",
+      "ensdf_notation": {
+        "energy": "2155.1(15)",
+        "intensity": "0.15(6)"
+      }
+    },
+    {
+      "energy_keV": 2693.7,
+      "energy_uncertainty": 0.2,
+      "intensity": 11.02,
+      "intensity_uncertainty": 0.34,
+      "identification": "35Cl(4-0)",
+      "ensdf_notation": {
+        "energy": "2693.7(2)",
+        "intensity": "11.02(34)"
+      }
+    },
+    {
+      "energy_keV": 2748.5,
+      "energy_uncertainty": 0.6,
+      "intensity": 0.476,
+      "intensity_uncertainty": 0.034,
+      "identification": "35Cl(9-1)",
+      "ensdf_notation": {
+        "energy": "2748.5(6)",
+        "intensity": "0.476(34)"
+      }
+    },
+    {
+      "energy_keV": 3002.1,
+      "energy_uncertainty": 0.4,
+      "intensity": 7.45,
+      "intensity_uncertainty": 0.23,
+      "identification": "35Cl(5-0)",
+      "ensdf_notation": {
+        "energy": "3002.1(4)",
+        "intensity": "7.45(23)"
+      }
+    }
+  ],
+  "summary_statistics": {
+    "total_gamma_rays": 8,
+    "genuine_35Cl_transitions": 8,
+    "removed_entries": 13,
+    "energy_range_keV": {
+      "minimum": 930.7,
+      "maximum": 3002.1
+    },
+    "intensity_range": {
+      "minimum": 0.15,
+      "maximum": 100.0,
+      "notes": "1219.3 keV transition normalized to 100.0"
+    }
+  },
+  "validation": {
+    "energy_ordering": "ascending",
+    "ensdf_compliant": true,
+    "decimal_precision_preserved": true,
+    "uncertainty_notation_standard": "ENSDF",
+    "contaminants_removed": true,
+    "escape_peaks_removed": true
+  }
+}

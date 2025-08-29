@@ -1,0 +1,326 @@
+{
+  "reference": "1980WI13",
+  "experiment": "35Ar EC decay gamma-ray measurements",
+  "description": "Gamma-ray transitions from 35Ar electron capture decay study by 1980WI13 with transition assignments",
+  "extraction_date": "2025-08-29",
+  "data_format": "ENSDF_standard",
+  "special_notations": {
+    "f": "peak intensity unable to be determined due to obscured by another peak",
+    "blank_final_state": "ground state at 0 keV",
+    "upper_limits": "less-than values marked with < symbol"
+  },
+  "gamma_rays": [
+    {
+      "energy_keV": 916,
+      "initial_state_keV": 3918,
+      "final_state_keV": 3003,
+      "intensity": "f",
+      "intensity_note": "obscured",
+      "transition": "3918→3003",
+      "ensdf_notation": {
+        "energy": "916",
+        "intensity": "f"
+      }
+    },
+    {
+      "energy_keV": 930,
+      "initial_state_keV": 2694,
+      "final_state_keV": 1763,
+      "intensity": 1.13,
+      "intensity_uncertainty": 0.26,
+      "transition": "2694→1763",
+      "ensdf_notation": {
+        "energy": "930",
+        "intensity": "1.13(26)"
+      }
+    },
+    {
+      "energy_keV": 965,
+      "initial_state_keV": 2968,
+      "final_state_keV": 3003,
+      "intensity": 0.87,
+      "intensity_limit": "LT",
+      "transition": "2968→3003",
+      "ensdf_notation": {
+        "energy": "965",
+        "intensity": "0.87",
+        "intensity_limit": "LT"
+      }
+    },
+    {
+      "energy_keV": 1219,
+      "initial_state_keV": 1219,
+      "final_state_keV": 0,
+      "intensity": 100.0,
+      "intensity_uncertainty": 1.5,
+      "transition": "1219→0",
+      "ensdf_notation": {
+        "energy": "1219",
+        "intensity": "100.0(15)"
+      }
+    },
+    {
+      "energy_keV": 1225,
+      "initial_state_keV": 3918,
+      "final_state_keV": 2694,
+      "intensity": "f",
+      "intensity_note": "obscured",
+      "transition": "3918→2694",
+      "ensdf_notation": {
+        "energy": "1225",
+        "intensity": "f"
+      }
+    },
+    {
+      "energy_keV": 1239,
+      "initial_state_keV": 3003,
+      "final_state_keV": 1763,
+      "intensity": 0.30,
+      "intensity_limit": "LT",
+      "transition": "3003→1763",
+      "ensdf_notation": {
+        "energy": "1239",
+        "intensity": "0.30",
+        "intensity_limit": "LT"
+      }
+    },
+    {
+      "energy_keV": 1274,
+      "initial_state_keV": 3968,
+      "final_state_keV": 2694,
+      "intensity": 0.42,
+      "intensity_limit": "LT",
+      "transition": "3968→2694",
+      "ensdf_notation": {
+        "energy": "1274",
+        "intensity": "0.42",
+        "intensity_limit": "LT"
+      }
+    },
+    {
+      "energy_keV": 1474,
+      "initial_state_keV": 2694,
+      "final_state_keV": 1219,
+      "intensity": 0.827,
+      "intensity_uncertainty": 0.127,
+      "transition": "2694→1219",
+      "ensdf_notation": {
+        "energy": "1474",
+        "intensity": "0.827(127)"
+      }
+    },
+    {
+      "energy_keV": 1763,
+      "initial_state_keV": 1763,
+      "final_state_keV": 0,
+      "intensity": 23.08,
+      "intensity_uncertainty": 0.37,
+      "transition": "1763→0",
+      "ensdf_notation": {
+        "energy": "1763",
+        "intensity": "23.08(37)"
+      }
+    },
+    {
+      "energy_keV": 1783,
+      "initial_state_keV": 3003,
+      "final_state_keV": 1219,
+      "intensity": 0.39,
+      "intensity_limit": "LT",
+      "transition": "3003→1219",
+      "ensdf_notation": {
+        "energy": "1783",
+        "intensity": "0.39",
+        "intensity_limit": "LT"
+      }
+    },
+    {
+      "energy_keV": 1931,
+      "initial_state_keV": 4624,
+      "final_state_keV": 2694,
+      "intensity": 0.21,
+      "intensity_limit": "LT",
+      "transition": "4624→2694",
+      "ensdf_notation": {
+        "energy": "1931",
+        "intensity": "0.21",
+        "intensity_limit": "LT"
+      }
+    },
+    {
+      "energy_keV": 2155,
+      "initial_state_keV": 3918,
+      "final_state_keV": 1763,
+      "intensity": 0.22,
+      "intensity_limit": "LT",
+      "transition": "3918→1763",
+      "ensdf_notation": {
+        "energy": "2155",
+        "intensity": "0.22",
+        "intensity_limit": "LT"
+      }
+    },
+    {
+      "energy_keV": 2204,
+      "initial_state_keV": 3968,
+      "final_state_keV": 1763,
+      "intensity": 0.27,
+      "intensity_limit": "LT",
+      "transition": "3968→1763",
+      "ensdf_notation": {
+        "energy": "2204",
+        "intensity": "0.27",
+        "intensity_limit": "LT"
+      }
+    },
+    {
+      "energy_keV": 2645,
+      "initial_state_keV": 2645,
+      "final_state_keV": 0,
+      "intensity": 0.12,
+      "intensity_limit": "LT",
+      "transition": "2645→0",
+      "ensdf_notation": {
+        "energy": "2645",
+        "intensity": "0.12",
+        "intensity_limit": "LT"
+      }
+    },
+    {
+      "energy_keV": 2694,
+      "initial_state_keV": 2694,
+      "final_state_keV": 0,
+      "intensity": 10.96,
+      "intensity_uncertainty": 0.18,
+      "transition": "2694→0",
+      "ensdf_notation": {
+        "energy": "2694",
+        "intensity": "10.96(18)"
+      }
+    },
+    {
+      "energy_keV": 2699,
+      "initial_state_keV": 3918,
+      "final_state_keV": 1219,
+      "intensity": 0.33,
+      "intensity_limit": "LT",
+      "transition": "3918→1219",
+      "ensdf_notation": {
+        "energy": "2699",
+        "intensity": "0.33",
+        "intensity_limit": "LT"
+      }
+    },
+    {
+      "energy_keV": 2748,
+      "initial_state_keV": 3968,
+      "final_state_keV": 1219,
+      "intensity": 0.480,
+      "intensity_uncertainty": 0.062,
+      "transition": "3968→1219",
+      "ensdf_notation": {
+        "energy": "2748",
+        "intensity": "0.480(62)"
+      }
+    },
+    {
+      "energy_keV": 2861,
+      "initial_state_keV": 4624,
+      "final_state_keV": 1763,
+      "intensity": 0.099,
+      "intensity_limit": "LT",
+      "transition": "4624→1763",
+      "ensdf_notation": {
+        "energy": "2861",
+        "intensity": "0.099",
+        "intensity_limit": "LT"
+      }
+    },
+    {
+      "energy_keV": 3003,
+      "initial_state_keV": 3003,
+      "final_state_keV": 0,
+      "intensity": 7.24,
+      "intensity_uncertainty": 0.14,
+      "transition": "3003→0",
+      "ensdf_notation": {
+        "energy": "3003",
+        "intensity": "7.24(14)"
+      }
+    },
+    {
+      "energy_keV": 3405,
+      "initial_state_keV": 4624,
+      "final_state_keV": 1219,
+      "intensity": "f",
+      "intensity_note": "obscured",
+      "transition": "4624→1219",
+      "ensdf_notation": {
+        "energy": "3405",
+        "intensity": "f"
+      }
+    },
+    {
+      "energy_keV": 3918,
+      "initial_state_keV": 3918,
+      "final_state_keV": 0,
+      "intensity": 0.521,
+      "intensity_uncertainty": 0.032,
+      "transition": "3918→0",
+      "ensdf_notation": {
+        "energy": "3918",
+        "intensity": "0.521(32)"
+      }
+    },
+    {
+      "energy_keV": 3968,
+      "initial_state_keV": 3968,
+      "final_state_keV": 0,
+      "intensity": 0.106,
+      "intensity_uncertainty": 0.025,
+      "transition": "3968→0",
+      "ensdf_notation": {
+        "energy": "3968",
+        "intensity": "0.106(25)"
+      }
+    },
+    {
+      "energy_keV": 4624,
+      "initial_state_keV": 4624,
+      "final_state_keV": 0,
+      "intensity": 0.035,
+      "intensity_limit": "LT",
+      "transition": "4624→0",
+      "ensdf_notation": {
+        "energy": "4624",
+        "intensity": "0.035",
+        "intensity_limit": "LT"
+      }
+    }
+  ],
+  "summary_statistics": {
+    "total_gamma_rays": 23,
+    "measurable_intensities": 11,
+    "upper_limits": 9,
+    "obscured_peaks": 3,
+    "energy_range_keV": {
+      "minimum": 916,
+      "maximum": 4624
+    },
+    "intensity_range": {
+      "minimum": 0.035,
+      "maximum": 100.0,
+      "notes": "1219 keV transition normalized to 100.0 (divided by 10 from original 1000)"
+    },
+    "ground_state_transitions": 8,
+    "cascade_transitions": 15
+  },
+  "validation": {
+    "energy_ordering": "ascending",
+    "ensdf_compliant": true,
+    "transition_assignments_included": true,
+    "uncertainty_notation_standard": "ENSDF",
+    "special_markers_preserved": true,
+    "upper_limits_marked": true
+  }
+}

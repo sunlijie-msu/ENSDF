@@ -1,0 +1,77 @@
+{
+  "reference": "1977Az01",
+  "experiment": "35Ar EC decay gamma-ray measurements",
+  "description": "Gamma-ray transitions from 35Ar electron capture decay study by 1977Az01 (3 gamma rays measured)",
+  "extraction_date": "2025-08-29",
+  "data_format": "ENSDF_standard",
+  "special_notations": {
+    "original_units": "Percentages converted to relative intensities normalized to 100.0",
+    "normalization": "1219 keV transition normalized to 100.0"
+  },
+  "gamma_rays": [
+    {
+      "energy_keV": 1219,
+      "initial_state_keV": 1219,
+      "final_state_keV": 0,
+      "intensity": 100.0,
+      "intensity_uncertainty": 9.7,
+      "transition": "1219→0",
+      "original_percentage": "1.55±0.15%",
+      "ensdf_notation": {
+        "energy": "1219",
+        "intensity": "100.0(97)"
+      }
+    },
+    {
+      "energy_keV": 1763,
+      "initial_state_keV": 1763,
+      "final_state_keV": 0,
+      "intensity": 21.9,
+      "intensity_uncertainty": 5.8,
+      "transition": "1763→0",
+      "original_percentage": "0.34±0.09%",
+      "ensdf_notation": {
+        "energy": "1763",
+        "intensity": "21.9(58)"
+      }
+    },
+    {
+      "energy_keV": 2690,
+      "initial_state_keV": 2690,
+      "final_state_keV": 0,
+      "intensity": 3.2,
+      "intensity_uncertainty": 1.9,
+      "transition": "2690→0",
+      "original_percentage": "0.05±0.03%",
+      "ensdf_notation": {
+        "energy": "2690",
+        "intensity": "3.2(19)"
+      }
+    }
+  ],
+  "summary_statistics": {
+    "total_gamma_rays": 3,
+    "measurable_intensities": 3,
+    "upper_limits": 0,
+    "obscured_peaks": 0,
+    "energy_range_keV": {
+      "minimum": 1219,
+      "maximum": 2690
+    },
+    "intensity_range": {
+      "minimum": 3.2,
+      "maximum": 100.0,
+      "notes": "1219 keV transition normalized to 100.0, converted from original percentages"
+    },
+    "ground_state_transitions": 3,
+    "cascade_transitions": 0
+  },
+  "validation": {
+    "energy_ordering": "ascending",
+    "ensdf_compliant": true,
+    "transition_assignments_included": true,
+    "uncertainty_notation_standard": "ENSDF",
+    "percentage_conversion_applied": true,
+    "normalization_applied": true
+  }
+}
