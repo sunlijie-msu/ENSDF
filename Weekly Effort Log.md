@@ -91,7 +91,8 @@ Received training from my line manager regarding the A=35 evaluation and data co
 Lijie Sun - 17 August 2025 - 23 August 2025
 Received training from my line manager regarding the A=35 evaluation. Completed all datasets for 35S. Added two decay datasets for 35Cl.
 
-
+Lijie Sun - 24 August 2025 - 30 August 2025
+Received training from my line manager regarding the A=35 evaluation. Revised the ECP dataset and added the EC dataset for 35Cl. Added 5 reaction datasets for 35Cl.
 
 
 # FRIB Laboratory Activities
