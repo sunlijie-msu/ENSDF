@@ -1,9 +1,17 @@
- 35CL    40CA(MU-,NUANG):XUNDL-2       2006ME08                           200605
- 35CL c  Compiled (unevaluated) dataset from 2006Me08:                          
- 35CL c  Phys Rev C 73, 045501 (2006)                                           
- 35CL c  Compiled by M. Mitchell and B. Singh (McMaster), May 24, 2006          
- 35CL c  The |m{+-} beam obtained from decay of |p{+-} beam at 90 MeV/c.        
- 35CL2c  Measured I|g, |g|g, |g-p using two HPGe detectors at TRIUMF facility.  
+ 35CL    40CA(MU-,NUANG)               2006ME08                  ENSDF    202509
+ 35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
+ 35CL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
+ 35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
+ 35CL c  2006Me08: Muons were generated from the decay of 90-MeV/c |p{+-} beam  
+ 35CL2c  in a 6-m, 1.2-T superconducting solenoid and were selected by a bending
+ 35CL3c  magnet at the M9B beamline at TRIUMF. The target was 15-g natural      
+ 35CL4c  calcium. |g rays and x rays were detected using a 186-cm{+3} HPGe      
+ 35CL5c  detector. Charged particles caused by electrons from muon decay were   
+ 35CL6c  tagged by a plastic scintillator in front of the HPGe detector.        
+ 35CL7c  Measured E|g, I|g, E(x ray), I(x ray). Deduced levels, muon capture    
+ 35CL8c  yields. MeV/c from M9B beamline at TRIUMF. Measured I|g, |g|g, |g-p    
+ 35CL9c  using two HPGe detectors.                                              
  35CL t  ----------------------------------------------------                   
  35CL t        Muonic Lyman series for natural Calcium                          
  35CL t                                                                         
@@ -29,19 +37,22 @@
  35CL t     7d-2p        259.45 {I10}       1.37 {I20}                          
  35CL t    (8-|@)d-2p    261-277            1.4 {I3}                            
  35CL t  ----------------------------------------------------                   
- 35CL cG E$ 2006Me08 list values from ENSDF for {+35}Cl                         
- 35CL CG RI$LABEL=Percent |g-ray yield                                          
- 35CL cL E,J$ 2006Me08 list values from ENSDF for {+35}Cl                       
+ 35CL cG E$Rounded-off values from Adopted Gammas.                              
+ 35CL cL E,J$From Adopted Levels. Level energies are rounded-off values.        
  35CL  N    1                                                                   
  35CL PN                                                                    C3  
  35CL2PN           PERCENT G-RAY YIELD PER MUON CAPTURE                         
  35CL  L 0            3/2+                                                      
- 35CL  L 1219.44      1/2+                                                      
- 35CL  G 1219.42      0.3    LT                                                 
- 35CL  L 1763.15      5/2+                                                      
- 35CL  G 1763.10      0.5    3                                                  
- 35CL  L 2645.6       7/2+                                                      
- 35CL  G 2645.5       0.2    LT                                                 
- 35CL  L 2693.6       3/2+                                                      
- 35CL  G 2693.5       0.2    LT                                                 
-                                                                                
+ 35CL  L 1219.3       1/2+                                                      
+ 35CL  G 1219.3                                                                 
+ 35CL cG $Percent=0.3 {ILT}                                                     
+ 35CL  L 1763.0       5/2+                                                      
+ 35CL  G 1763.1                                                                 
+ 35CL cG $Percent=0.5 {I3}                                                      
+ 35CL  L 2645.7       7/2+                                                      
+ 35CL  G 2645.7                                                                 
+ 35CL cG $Percent=0.2 {ILT}                                                     
+ 35CL  L 2693.8       3/2+                                                      
+ 35CL  G 2693.6                                                                 
+ 35CL cG $Percent=0.2 {ILT}                                                     
+
