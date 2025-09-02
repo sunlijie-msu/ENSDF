@@ -203,11 +203,12 @@ Auto-convert text to proper ENSDF notation:
 - `|i` → ι (iota), `|j` → ε (epsilon), `|k` → κ (kappa), `|l` → λ (lambda)
 - `|m` → μ (mu), `|n` → ν (nu), `|p` → π (pi), `|q` → θ (theta)
 - `|r` → ρ (rho), `|s` → σ (sigma), `|t` → τ (tau), `|u` → υ (upsilon)
-- `|w` → ω (omega), `|x` → ξ (xi), `|y` → ψ (psi), `|z` → ζ (zeta)
+- `|v` → ? (undefined), `|w` → ω (omega), `|x` → ξ (xi), `|y` → ψ (psi), `|z` → ζ (zeta)
 
 **Greek uppercase:**
-- `|D` → Δ (Delta), `|F` → Φ (Phi), `|G` → Γ (Gamma), `|L` → Λ (Lambda)
-- `|P` → Π (Pi), `|Q` → Θ (Theta), `|S` → Σ (Sigma), `|U` → Υ (Upsilon)
+- `|C` → H, `|D` → Δ (Delta), `|F` → Φ (Phi), `|G` → Γ (Gamma), `|H` → X
+- `|J` → ~ (sim), `|L` → Λ (Lambda), `|P` → Π (Pi), `|Q` → Θ (Theta), `|R` → P
+- `|S` → Σ (Sigma), `|U` → Υ (Upsilon), `|V` → ∇ (nabla)
 - `|W` → Ω (Omega), `|X` → Ξ (Xi), `|Y` → Ψ (Psi)
 
 **Mathematical symbols:**
@@ -216,6 +217,14 @@ Auto-convert text to proper ENSDF notation:
 - `|=` → ≠ (not equal), `|@` → ∞ (infinity), `|^` → ↑ (up arrow)
 - `|_` → ↓ (down arrow), `|&` → ≡ (equiv), `|(` → ← (left arrow)
 - `|)` → → (right arrow), `|.` → ∝ (proportional), `||` → | (vertical bar)
+
+**Bracket and parenthesis symbols:**
+- `|0` → ( (left parenthesis), `|1` → ) (right parenthesis)
+- `|2` → [ (left bracket), `|3` → ] (right bracket)
+- `|4` → ⟨ (left angle), `|5` → ⟩ (right angle)
+
+**Mathematical operators:**
+- `|7` → ∫ (integral), `|8` → ∏ (product), `|9` → ∑ (summation)
 
 **Important Rules:**
 - For approximate values, use `|?` (which gives both ≈ and ~ symbols)
