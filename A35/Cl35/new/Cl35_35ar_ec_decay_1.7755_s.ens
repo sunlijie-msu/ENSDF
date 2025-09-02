@@ -3,6 +3,7 @@
  35CL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
+ 35CL dE EAV,LOGFT$FROM BetaShape v2.4 (Jun-2024) 2023MO21.                     
  35CL dE EAV,LOGFT$FROM BetaShape v2.4 (Jun-2024) 2023Mo21.                     
  35CL dL E$Least-squares fitting is done by GLSC (version 19-Aug-2025)          
  35CL c  1980Wi13: {+35}Ar was produced via the {+35}Cl(p,n){+35}Ar reaction    
@@ -77,6 +78,7 @@
  35CL cE TI$Deduced from |g-ray intensity balance, relative to I|g(1219|g)=100, 
  35CL2cE normalized to absolute %I|g(1219|g)=1.26 {I5}.                         
  35CL cG E$From 1984Ad01, unless otherwise noted                                
+ 35CL cG RI$from 1980Wi13, unless otherwise noted.
  35CL dL $1971De05 reported |b feeding<0.025% to a 3163, 7/2- level, but this   
  35CL2dL level has not been observed in any other {+35}Ar decay studies.        
  35CL cL E$From a least-squares fit to |g-ray energies.                         
@@ -84,76 +86,72 @@
  35AR  P 0            3/2+             1.7755 S  14             5966.2    7     
  35AR cP J,T$From Adopted Levels of {+35}Ar                                     
  35AR cP QP$From 2021Wa16.                                                      
- 35CL  N  0.0126               1.0       1.0                                    
- 35CL cN NR$absolute %I|g(1219|g)=1.26 {I5} deduced from                        
+ 35CL  N  0.0126   5           1.0       1.0                                    
+ 35CL cN NR$absolute %I|g(1219|g)=1.26 {I5} deduced from weighted average of    
+ 35CL2cN 1.223 {I46} (1969Wi18,1969Fr09), 1.22 {I20} (1971Ge04), 1.55 {I15}     
+ 35CL3cN (1977Az01), 1.34 {I8} (1979Ha04), 1.23 {I7} (1984Ad01). 1.228 {I30}    
+ 35CL4cN (1980Wi13).                                                            
  35CL PN                                                                     4  
  35CL  L 0            3/2+             STABLE                                   
- 35CL  E             98.14   26 0.0731 9 3.760   2              98.21     26    
- 35CL cE TI$deduced from 100-%I(|e+|b{++})(excited states).                     
+ 35CL  E             98.14   10 0.0731 8 3.760   1              98.21     10    
+ 35CL cE TI$deduced from 100-|S%I(|e+|b{++})(excited states), where             
+ 35CL2cE |S%I(|e+|b{++})(excited states)=1.79 {I6}. Level scheme fed by |b{++}  
+ 35CL3cE decay may be complete considering the highest observed level is at 4.6 
+ 35CL4cE MeV. Observed |S%I(|e)|?0.08. Evaluators assume |S%I(|e)|<0.08 for all 
+ 35CL5cE unobserved |e feedings to high-lying levels and include this limit in  
+ 35CL6cE the uncertainty for |S%I(|e+|b{++})(excited states) and                
+ 35CL7cE I(|e+|b{++})(gs).                                                      
  35CLS E EAV=2273.33 34$CK=6.728E-4 76$CL=6.199E-5 75$CM=9.17E-6 15             
  35CL  L 1219.2    2 1/2+                                                       
- 35CL  E             1.26    5 0.00215 9 5.09    2              1.26      5     
+ 35CL  E             1.24    6 0.0021  1 5.10    2              1.24      6     
  35CLS E EAV=1684.30 35$CK=0.001543 18$CL=1.422E-4 17$CM=2.103E-5 35            
  35CL cE TI$weighted average of 1.223 {I46} (1969Wi18,1969Fr09), 1.22 {I20}     
  35CL2cE (1971Ge04), 1.55 {I15} (1977Az01), 1.34 {I8} (1979Ha04), 1.23 {I7}     
  35CL3cE (1984Ad01). 1.228 {I30} (1980Wi13)                                     
  35CL  G 1219.3    2 100.0   15                                                 
- 35CL2 G %IG=1.3                                                                
- 35CL cG RI$from 1980Wi13. Others: 100.0 {I30} from 1984Ad01, 100 {I10} from    
+ 35CL2 G %IG=1.26 6                                                             
+ 35CL cG RI$others: 100.0 {I30} from 1984Ad01, 100 {I10} from    
  35CL2cG 1977Az01, 100 from 1969Wi18, 1971Ge04, 1979Ha04, and 1985Da04.         
  35CL  L 1763.1    2 5/2+                                                       
- 35CL  E             0.259     7.068E-4  5.5                    0.26            
+ 35CL  E             0.259   16 7.1E-4 5 5.5                    0.260     16    
  35CLS E EAV=1424.00 35$CK=0.002459 29$CL=2.266E-4 28$CM=3.351E-5 56            
- 35CL cE IB$weighted average of 0.234 {I13} (1969Wi18 and 1969Fr09), 0.22 {I5}  
- 35CL2cE 1971Ge04, 0.220 {I25} (1971De05), 0.266 {I11} (1985Da04), 0.250 {I16}  
- 35CL3cE (1984Ad01)                                                             
  35CL  G 1763.0    2 22.7    4                                                  
- 35CL2 G %IG=0.29                                                               
+ 35CL2 G %IG=0.286 13                                                           
  35CL cG RI$weighted average of 23.4 {I13} (1969Wi18), 20.0 {I27} (1971Ge04), 22
  35CL2cG {I6} (1977Az01), 23.08 {I37} (1980Wi13), 21.85 {I67} (1984Ad01), and   
  35CL3cG 21.7 {I9} (1985Da04)                                                   
  35CL  L 2645.1    103/2+                                                       
  35CL  E             0.00149 LT 1.1E-5 LT 7.1    GT             0.0015    LT    
  35CLS E EAV=1007.19 56$CK=0.006451 80$CL=5.947E-4 78$CM=8.80E-5 15             
- 35CL cE IB$from 1971De05                                                       
  35CL  G 2645        0.12    LT                                                 
  35CL2 G %IG LT 0.00151                                                         
- 35CL cG RI$from 1980Wi13                                                       
  35CL  L 2693.8    2 3/2+                                                       
- 35CL  E             0.166     0.001     5.0                    0.167           
+ 35CL  E             0.166   10 0.00127 8 5.0                   0.167     10    
  35CLS E EAV=984.43 34$CK=0.006877 81$CL=6.34E-4 8$CM=9.38E-5 16                
- 35CL cE IB$weighted average of 0.16 {I4} (1971Ge04), 0.195 {I25} (1971De05),   
- 35CL2cE 0.161 {I7} (1980Wi13), 0.171 {I11} (1984Ad01), 0.161 {I9} (1985Da04)   
  35CL  G 930.7     2 1.57    20                                                 
- 35CL2 G %IG=0.020                                                              
+ 35CL2 G %IG=0.0198 +34-32                                                      
  35CL cG RI$weighted average of 1.13 {I26} (1980Wi13) and 1.66 {I12} (1984Ad01) 
  35CL  G 1474.8    3 1.02    11                                                 
- 35CL2 G %IG=0.013                                                              
+ 35CL2 G %IG=0.0129 19                                                          
  35CL cG RI$weighted average of 0.83 {I13} (1980Wi13) and 1.08 {I7} (1984Ad01)  
  35CL  G 2693.7    2 10.96   18                                                 
- 35CL2 G %IG=0.14                                                               
+ 35CL2 G %IG=0.138 6                                                            
  35CL cG RI$weighted average of 10.2 {I15} (1971Ge04), 10.96 {I18} (1980Wi13)   
  35CL2cG and 11.02 {I34} (1984Ad01)                                             
  35CL  L 3002.3    3 5/2+                                                       
- 35CL  E             0.090     0.001     5.0                    0.091           
+ 35CL  E             0.090   15 0.0011 2 5.0                    0.091     15    
  35CLS E EAV=841.11 35$CK=0.01069 13$CL=9.86E-4 13$CM=1.458E-4 25               
- 35CL cE IB$weighted average of 0.11 {I3} (1971Ge04), 0.071 {I18} (1971De05),   
- 35CL2cE 0.0901 {I33} (1980Wi13), 0.093 {I6} (1984Ad01), 0.085 {I6} (1985Da04)  
  35CL  G 1239        0.30    LT                                                 
  35CL2 G %IG LT 0.0038                                                          
- 35CL cG RI$from 1980Wi13                                                       
  35CL  G 1783        0.39    LT                                                 
  35CL2 G %IG LT 0.0049                                                          
- 35CL cG RI$from 1980Wi13                                                       
  35CL  G 3002.1    4 7.29    14                                                 
- 35CL2 G %IG=0.092                                                              
+ 35CL2 G %IG=0.092 4                                                            
  35CL cG RI$weighted average of 9.0 {I15} (1971Ge04), 7.24 {I14} (1980Wi13),    
  35CL2cG 7.45 {I23} (1984Ad01) and 6.9 {I5} (1985Da04)                          
  35CL  L 3918.4    5 3/2+                                                       
- 35CL  E             0.010     9E-4      4.7                    0.011           
+ 35CL  E             0.0097  34 8.4E-4 27 4.8                   0.0105    34    
  35CLS E EAV=427.49 38$CK=0.07203 90$CL=0.006646 88$CM=9.83E-4 17               
- 35CL cE IB$weighted average of 0.0079 {I5} (1980Wi13) and 0.0104 {I42}         
- 35CL2cE (1984Ad01)                                                             
  35CL  G 916                                                                   ?
  35CL cG $The intensity could not be determined due to being obscured by another
  35CL2cG peak (1980Wi13).                                                       
@@ -161,49 +159,38 @@
  35CL cG $The intensity could not be determined due to being obscured by another
  35CL2cG peak (1980Wi13).                                                       
  35CL  G 2155.1    15 0.15   6                                                  
- 35CL2 G %IG=0.0019                                                             
+ 35CL2 G %IG=0.0019 +9-8                                                        
  35CL cG RI$0.15 {I6} (1984Ad01). Other: <0.22 (1980Wi13)                       
  35CL  G 2699        0.33    LT                                                 
  35CL2 G %IG LT 0.0042                                                          
- 35CL cG RI$from 1980Wi13                                                       
  35CL  G 3918        0.52    3                                                  
- 35CL2 G %IG=0.0066                                                             
- 35CL cG RI$from 1980Wi13                                                       
+ 35CL2 G %IG=0.0066 5                                                           
  35CL  L 3967.7    4 1/2+                                                       
- 35CL  E             0.015     0.002     4.5                    0.017           
+ 35CL  E             0.015   11 0.0016 10 4.5                   0.017     11    
  35CLS E EAV=405.95 35$CK=0.0831 10$CL=0.00767 10$CM=0.001135 20                
- 35CL cE IB$weighted average of 0.00744 {I87} (1980Wi13) and 0.00763 {I74}      
- 35CL2cE (1984Ad01)                                                             
  35CL  G 965         0.87    LT                                                 
  35CL2 G %IG LT 0.0110                                                          
- 35CL cG RI$from 1980Wi13                                                       
  35CL dG $Initial level=2968 in table IX of 1980Wi13 is a misprint, should be   
  35CL2dG 3968                                                                   
  35CL  G 1274        0.42    LT                                                 
  35CL2 G %IG LT 0.0053                                                          
- 35CL cG RI$from 1980Wi13                                                       
  35CL  G 2204        0.27    LT                                                 
  35CL2 G %IG LT 0.0034                                                          
- 35CL cG RI$from 1980Wi13                                                       
  35CL  G 2748.5    6 0.477   34                                                 
- 35CL2 G %IG=0.006                                                              
+ 35CL2 G %IG=0.0060 5                                                           
  35CL cG RI$weighted average of 0.48 {I6} (1980Wi13) and 0.476 {I34} (1984Ad01) 
  35CL  G 3968        0.106   25                                                 
- 35CL2 G %IG=0.0013                                                             
- 35CL cG RI$from 1980Wi13                                                       
+ 35CL2 G %IG=0.0013 4                                                           
  35CL  L 4624.5    5   (3/2,5/2+)                                              ?
  35CL  E             8.0E-4  LT 0.0035 LT 3.8    GT             0.0043    LT   ?
  35CLS E EAV=130.01 35$CK=0.7365 28$CL=0.06804 39$CM=0.01006 13                 
- 35CL cE IB$from 1980Wi13                                                       
  35CL  G 1931        0.21    LT                                                 
  35CL2 G %IG LT 0.0027                                                          
- 35CL cG RI$from 1980Wi13                                                       
  35CL  G 2861        0.099   LT                                                 
  35CL2 G %IG LT 0.00125                                                         
- 35CL cG RI$from 1980Wi13                                                       
  35CL  G 3405                                                                  ?
- 35CL cG $The intensity could not be determined due to being obscured by another
- 35CL2cG peak (1980Wi13).                                                       
+ 35CL cG RI$could not be determined due to being obscured by another peak       
+ 35CL2cG (1980Wi13).                                                            
  35CL  G 4624        0.035   LT                                                 
  35CL2 G %IG LT 4.4E-4                                                          
 

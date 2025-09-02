@@ -3,6 +3,7 @@
  35CL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
+ 35CL dL E$Least-squares fitting is done by GLSC (version 19-Aug-2025)          
  35CL c  2006Me08: Muons were generated from the decay of 90-MeV/c |p{+-} beam  
  35CL2c  in a 6-m, 1.2-T superconducting solenoid and were selected by a bending
  35CL3c  magnet at the M9B beamline at TRIUMF. The target was 15-g natural      
@@ -23,7 +24,7 @@
  35CL t     5p-1s       1020.81 {I10}       2.0 {I1}                            
  35CL t     6p-1s       1034.62 {I10}       1.8 {I1}                            
  35CL t     7p-1s       1042.71 {I20}       1.4 {I1}                            
- 35CL t    (8-|@)p-1s   1046-1063           2.8 {I4}                            
+ 35CL t    (8-|@)p-1s   1046-1063          2.8 {I4}                             
  35CL t  ----------------------------------------------------                   
  35CL t  ----------------------------------------------------                   
  35CL t        Muonic Balmer series for natural Calcium                         
@@ -40,19 +41,15 @@
  35CL cG E$Rounded-off values from Adopted Gammas.                              
  35CL cL E,J$From Adopted Levels. Level energies are rounded-off values.        
  35CL  N    1                                                                   
- 35CL PN                                                                    C3  
+ 35CL PN                                                                    C   
  35CL2PN           PERCENT G-RAY YIELD PER MUON CAPTURE                         
  35CL  L 0            3/2+                                                      
- 35CL  L 1219.3       1/2+                                                      
- 35CL  G 1219.3                                                                 
- 35CL cG $Percent=0.3 {ILT}                                                     
- 35CL  L 1763.0       5/2+                                                      
- 35CL  G 1763.1                                                                 
- 35CL cG $Percent=0.5 {I3}                                                      
- 35CL  L 2645.7       7/2+                                                      
- 35CL  G 2645.7                                                                 
- 35CL cG $Percent=0.2 {ILT}                                                     
- 35CL  L 2693.8       3/2+                                                      
- 35CL  G 2693.6                                                                 
- 35CL cG $Percent=0.2 {ILT}                                                     
-
+ 35CL  L 1219.3    5  1/2+                                                      
+ 35CL  G 1219.3       0.3    LT                                                 
+ 35CL  L 1763.2    5  5/2+                                                      
+ 35CL  G 1763.1       0.5    3                                                  
+ 35CL  L 2645.8    5  7/2+                                                      
+ 35CL  G 2645.7       0.2    LT                                                 
+ 35CL  L 2693.7    5  3/2+                                                      
+ 35CL  G 2693.6       0.2    LT                                                 
+                                                                                
