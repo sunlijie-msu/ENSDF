@@ -14,7 +14,7 @@ ENSDF L-Record Format (Mandatory Field Positions):
 - Columns 10-19: Energy field (E) - left justified
 - Columns 20-21: Energy uncertainty (DE) - left justified
 - Column 22:     BLANK (readability space)
-- Columns 23-39: J-π field - left justified at column 23
+- Columns 23-39: J-蟺 field - left justified at column 23
 - Columns 40-49: Half-life (T) field - left justified
 - Columns 50-55: Half-life uncertainty (DT) - left justified
 - Columns 56-64: Angular momentum transfer (L) - left justified
@@ -107,21 +107,21 @@ def analyze_ensdf_file(filepath: str, detailed: bool = False) -> None:
     """Main validation function"""
     
     if not os.path.exists(filepath):
-        print(f"❌ ERROR: File '{filepath}' not found")
+        print(f"鉂?ERROR: File '{filepath}' not found")
         return
         
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
             lines = f.readlines()
     except Exception as e:
-        print(f"❌ ERROR: Could not read file '{filepath}': {e}")
+        print(f"鉂?ERROR: Could not read file '{filepath}': {e}")
         return
     
     print("=" * 60)
-    print("🔍 ENSDF Field Position Validator (Fixed Version)")
+    print("馃攳 ENSDF Field Position Validator (Fixed Version)")
     print("=" * 60)
-    print(f"📁 File: {filepath}")
-    print(f"📊 Total lines: {len(lines)}")
+    print(f"馃搧 File: {filepath}")
+    print(f"馃搳 Total lines: {len(lines)}")
     print()
     
     # Collect all validation errors
@@ -148,10 +148,10 @@ def analyze_ensdf_file(filepath: str, detailed: bool = False) -> None:
                 all_errors.extend(l_errors)
                 
                 if detailed and l_errors:
-                    print(f"🔍 Line {i} details:")
+                    print(f"馃攳 Line {i} details:")
                     print(f"   Content: |{line_clean}|")
                     for error in l_errors:
-                        print(f"   ❌ {error}")
+                        print(f"   鉂?{error}")
                     print()
                     
             elif re.match(r'^\s*\w+\s+G\s', line_clean):
@@ -159,11 +159,11 @@ def analyze_ensdf_file(filepath: str, detailed: bool = False) -> None:
                 # G-record validation can be added here later
     
     # Summary report
-    print(f"📈 Records found: {l_record_count} L-records, {g_record_count} G-records")
+    print(f"馃搱 Records found: {l_record_count} L-records, {g_record_count} G-records")
     print()
     
     if all_errors:
-        print(f"❌ VALIDATION FAILED: {len(all_errors)} errors found")
+        print(f"鉂?VALIDATION FAILED: {len(all_errors)} errors found")
         print()
         
         # Group errors by type
@@ -171,26 +171,26 @@ def analyze_ensdf_file(filepath: str, detailed: bool = False) -> None:
         field_errors = [e for e in all_errors if "Exceeds 80 characters" not in e]
         
         if length_errors:
-            print("📏 LINE LENGTH VIOLATIONS:")
+            print("馃搹 LINE LENGTH VIOLATIONS:")
             for error in length_errors:
                 print(f"   {error}")
             print()
             
         if field_errors:
-            print("🎯 FIELD POSITION VIOLATIONS:")
+            print("馃幆 FIELD POSITION VIOLATIONS:")
             for error in field_errors:
                 print(f"   {error}")
             print()
             
-        print("🚨 CRITICAL: These errors must be fixed before ENSDF submission!")
+        print("馃毃 CRITICAL: These errors must be fixed before ENSDF submission!")
         
     else:
-        print("✅ VALIDATION PASSED: All records conform to ENSDF format")
+        print("鉁?VALIDATION PASSED: All records conform to ENSDF format")
         print()
-        print("📋 Validation completed:")
-        print(f"   • All lines ≤ 80 characters")
-        print(f"   • All L-record fields in correct positions")
-        print(f"   • Mandatory spaces in required positions")
+        print("馃搵 Validation completed:")
+        print(f"   鈥?All lines 鈮?80 characters")
+        print(f"   鈥?All L-record fields in correct positions")
+        print(f"   鈥?Mandatory spaces in required positions")
     
     print("=" * 60)
 
@@ -330,12 +330,12 @@ def main():
     over_80_lines, total_data_records = check_line_lengths(content)
     
     if over_80_lines:
-        print(f"\n❌ CRITICAL: Found {len(over_80_lines)} lines exceeding 80 characters!")
+        print(f"\n鉂?CRITICAL: Found {len(over_80_lines)} lines exceeding 80 characters!")
         for line_num, length, line_content in over_80_lines:
             print(f"  Line {line_num}: {length} chars")
         return
     else:
-        print(f"\n✅ All {total_data_records} data records are within 80-character limit")
+        print(f"\n鉁?All {total_data_records} data records are within 80-character limit")
     
     # Extract L and G records
     l_records = []
@@ -348,12 +348,12 @@ def main():
         elif re.match(r'^\s*\w+\s+G\s', line):
             g_records.append((i, line_clean))
     
-    print(f"\n📊 Found: {len(l_records)} L-records, {len(g_records)} G-records")
+    print(f"\n馃搳 Found: {len(l_records)} L-records, {len(g_records)} G-records")
     
     # CRITICAL: Check field alignment across records
     alignment_issues = analyze_field_alignment(content)
     if alignment_issues:
-        print(f"\n❌ CRITICAL FIELD ALIGNMENT ISSUES DETECTED:")
+        print(f"\n鉂?CRITICAL FIELD ALIGNMENT ISSUES DETECTED:")
         for issue in alignment_issues:
             print(f"  {issue}")
         print()
@@ -369,42 +369,42 @@ def main():
     
     # Check L-records
     if l_records:
-        print(f"\n🔍 Checking {len(l_records)} L-records for alignment issues...")
+        print(f"\n馃攳 Checking {len(l_records)} L-records for alignment issues...")
         for line_num, record in l_records:
             issues = analyze_critical_alignment(record, "L", line_num)
             if issues:
                 total_issues += len(issues)
                 print(f"  Line {line_num}: {len(issues)} issue(s) found")
                 for issue in issues:
-                    print(f"    • {issue.split(': ', 1)[1] if ': ' in issue else issue}")
+                    print(f"    鈥?{issue.split(': ', 1)[1] if ': ' in issue else issue}")
             else:
-                print(f"  Line {line_num}: ✓ Alignment OK")
+                print(f"  Line {line_num}: 鉁?Alignment OK")
     
     # Check G-records
     if g_records:
-        print(f"\n🔍 Checking {len(g_records)} G-records for alignment issues...")
+        print(f"\n馃攳 Checking {len(g_records)} G-records for alignment issues...")
         for line_num, record in g_records:
             issues = analyze_critical_alignment(record, "G", line_num)
             if issues:
                 total_issues += len(issues)
                 print(f"  Line {line_num}: {len(issues)} issue(s) found")
                 for issue in issues:
-                    print(f"    • {issue.split(': ', 1)[1] if ': ' in issue else issue}")
+                    print(f"    鈥?{issue.split(': ', 1)[1] if ': ' in issue else issue}")
             else:
-                print(f"  Line {line_num}: ✓ Alignment OK")
+                print(f"  Line {line_num}: 鉁?Alignment OK")
     
     # Summary
     print("\n=== VALIDATION SUMMARY ===")
     total_records = len(l_records) + len(g_records)
     
     if total_issues == 0:
-        print(f"✅ All {total_records} records have correct ENSDF format!")
+        print(f"鉁?All {total_records} records have correct ENSDF format!")
         print("   Field alignment and format compliance verified.")
     else:
-        print(f"❌ Found {total_issues} format issues")
+        print(f"鉂?Found {total_issues} format issues")
     
-    print("\n📖 ENSDF Format Reference:")
-    print("L-records: NUCID(1-5) [space](6) [space](7) L(8) [space](9) Energy(10-19) [space](22) J-π(23-39)")
+    print("\n馃摉 ENSDF Format Reference:")
+    print("L-records: NUCID(1-5) [space](6) [space](7) L(8) [space](9) Energy(10-19) [space](22) J-蟺(23-39)")
     print("G-records: NUCID(1-5) [space](6) [space](7) G(8) [space](9) Energy(10-19) [space](22) RI(23-29)")
 
 

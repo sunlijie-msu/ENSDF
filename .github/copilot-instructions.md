@@ -64,6 +64,14 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 - Special markers (GT, LT) within uncertainty fields are also left-justified
 - NEVER right-justify or center ANY ENSDF field content!
 
+**🚨 CRITICAL L-FIELD POSITIONING RULE 🚨**
+**L always starts from column 56 - EXACT rule for L-transfer fields:**
+- `L=1` → `1` at column 56 ✓
+- `L=1+2` → `1` at column 56, `+2` at columns 57-58 ✓
+- `L=1,2` → `1` at column 56, `,2` at columns 57-58 ✓
+- `L=1,2,3` → `1` at column 56, `,2` at columns 57-58, `,3` at columns 59-60 ✓
+- **ONLY the first L-value must be at column 56, subsequent values follow sequentially**
+
 **🚨 MANDATORY ENSDF ORDERING RULES 🚨**
 1. **ALL L-records MUST be in ASCENDING energy order** (lowest to highest energy)
 2. **ALL G-records following each L-record MUST be in ASCENDING energy order**
