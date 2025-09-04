@@ -1,13 +1,16 @@
- 35CL    36AR(POL D,3HE)               1993MA50                  11NDS    201111
+ 35CL    36AR(POL D,3HE)               1993MA50                  ENSDF    202509
+ 35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
+ 35CL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35CL c  1993Ma50: E=52 MeV polarized deuteron beam of 15 nA produced from the  
+ 35CL c  1993Ma50: a 52-MeV polarized deuteron beam at 15 nA was produced from the  
  35CL2c  Karlsruhe isochronous cyclotron at the Max-Plank-Institut fur          
- 35CL3c  Kernphysik. A isotropically enriched (99.86%) {+36}Ar gas target. A    
+ 35CL3c  Kernphysik. The    
+ 35CL3c  target was 200-Torr 99.86% enriched {+36}Ar gas. A    
  35CL4c  detector telescope consisting of a 250 |mm |DE-strip detector and a 1.5
- 35CL5c  mm E-surface-barrier counter for detecting {+3}He particles,           
- 35CL6c  FWHM=130 keV. Measured |s(E{-{+3}He}, |q), analyzing power iT{-11}(|q).
- 35CL7c  Deduced levels, J|p, L, spectroscopic factors from DWBA analysis.      
+ 35CL5c  mm E-surface-barrier counter for detecting {+3}He particles, FWHM=130  
+ 35CL6c  keV. Measured |s(E({+3}He),|q), analyzing power iT{-11}(|q). Deduced   
+ 35CL7c  levels, J|p, L, spectroscopic factors from DWBA analysis.              
  35CL cL $Target {+36}Ar J|p=0+                                                 
  35CL cL L$ From the comparison of the DWBA prediction of the angular           
  35CL2cL distribution with the experimental data.                               
@@ -16,9 +19,9 @@
  35CL2cL transfer assumed in DWBA calculations                                  
  35CL cL J(B),S(B)$L+1/2 from analyzing power measurement; 1d{-5/2} neutron     
  35CL2cL transfer assumed in DWBA calculations                                  
- 35CL cL $Spectroscopic factor C{+2}s: n*c{+2}S=|s(|q){+exp}/|s(|q){+DWBA},     
- 35CL2cL where n is the normalization factor (1966Ba54), N=2.95 (1993Ma50).     
- 35CL CL S$LABEL=C{+2}S                                                         
+ 35CL cL $Spectroscopic factor C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N, where N=2.95
+ 35CL2cL is a normalization factor used by 1993Ma50 from 1966Ba54.              
+ 35CL cL S$LABEL=C{+2}S                                                         
  35CL  L 0            3/2+                             2        1.72        A   
  35CL  L 1213      4  1/2+                             0        0.78        B   
  35CL  L 1785      50 (5/2+)                                    0.04            
@@ -50,4 +53,4 @@
  35CL cL S$for J|p=1/2-; 0.30 for J|p=5/2+ (1993Ma50)                           
  35CL  L 9.82E3    12 (1/2-,5/2+)                               0.10            
  35CL cL S$for J|p=1/2-; 0.26 for J|p=5/2+ (1993Ma50)                           
-                                                                                
+

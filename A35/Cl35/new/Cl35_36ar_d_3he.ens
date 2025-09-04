@@ -3,32 +3,37 @@
  35CL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35CL c  1974Do12: E=52 MeV deuteron beam produced from the Karlsruhe           
- 35CL2c  isochronous cyclotron at the Max-Plank-Institut fur Kernphysik.        
- 35CL3c  A isotropically enriched (99.9%) {+36}Ar gas target. A detector        
- 35CL4c  telescope consisting of a 200 |mm |DE and a 2mm E-surface-barrier      
- 35CL5c  counter for detecting {+3}He particles. Measured |s(E{-{+3}He},|q).    
- 35CL6c  Deduced levels, J|p, L, spectroscopic factors from DWBA analysis.      
- 35CL c  Other: 1975Wa17                                                        
- 35CL cL $Target {+36}Ar J|p=0+                                                 
- 35CL cL J,L$ From the comparison of the DWBA prediction of the angular         
- 35CL2cL distribution with the experimental data.                               
- 35CL cL $Spectroscopic factor C{+2}s: n*c{+2}S=|s(|q){+exp}/|s(|q){+DWBA},     
- 35CL2cL where n is the normalization factor (1966Ba54), N=2.95 (1974Do12).     
- 35CL CL S$LABEL=C{+2}S                                                         
+ 35CL c  J|p=0+ for {+36}Ar ground state.                                       
+ 35CL c  1974Do12: a 52-MeV deuteron beam was produced from the Karlsruhe       
+ 35CL2c  isochronous cyclotron at the Max-Plank-Institut fur Kernphysik. The    
+ 35CL3c  target was 200-Torr 99.9% enriched {+36}Ar gas. {+3}He particles were  
+ 35CL4c  detected using detector telescopes consisting of a 200-|mm |DE and a   
+ 35CL5c  2-mm E-surface-barrier counter with FWHM=125 keV. Measured             
+ 35CL6c  |s(E({+3}He),|q). Deduced levels, J, |p, L-transfer, and spectroscopic 
+ 35CL7c  factors from DWUCK-DWBA analysis.                                      
+ 35CL c  Other: 1975Wa17 (theory discussions).                                  
+ 35CL cL L,S$From DWBA analysis of the measured |s(|q) in 1974Do12.             
+ 35CL cL $Spectroscopic factor C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N, where N=2.95
+ 35CL2cL is a normalization factor used by 1974Do12 from 1966Ba54.              
+ 35CL cL J$As given in 1974Do12 for levels below 5 MeV. For levels above 5 MeV, 
+ 35CL2cL 1974Do12 states that they tend to interpret them as 5/2+ states because
+ 35CL3cL the summed low-lying C{+2}S(1d{-3/2}) already exceeds the simple shell 
+ 35CL4cL model value for {+36}Ar and the measured |s(|q) resembles more closely 
+ 35CL5cL that of the 5/2+ state at 3.0 MeV than that of the 3/2+ ground state.  
+ 35CL6cL All C{+2}S values are given according to the J values.                 
+ 35CL cL S$LABEL=C{+2}S                                                         
  35CL  L 0            3/2+                             2        2.2             
  35CL  L 1220      20 1/2+                             0        1.34            
  35CL  L 1763                                                   0.02      LT    
  35CL  L 2700      20 3/2+                             2        0.39            
  35CL  L 3000      20 5/2+                             2        1.49            
  35CL  L 3170      20 7/2-                             3        0.22            
- 35CL  L 5150      20 3/2+,5/2+                        2        0.09            
- 35CL  L 5600      20 3/2+,5/2+                        2        0.47      19    
- 35CL  L 5720      20 3/2+,5/2+                        2        0.73      29    
- 35CL  L 6140      20 3/2+,5/2+                        2        0.72            
- 35CL  L 6750      20 3/2+,5/2+                        2        0.79            
- 35CL  L 6930      20 3/2+,5/2+                        2        0.46            
- 35CL  L 8010      20 3/2+,5/2+                        2        0.23            
- 35CL  L 8210      20 3/2+,5/2+                        2        0.28            
- 35CL  L 8610      20 3/2+,5/2+                        2        0.34            
-                                                                                
+ 35CL  L 5150      20 (5/2)+                           2        0.09            
+ 35CL  L 5600      20 (5/2)+                           2        0.47      19    
+ 35CL  L 5720      20 (5/2)+                           2        0.73      29    
+ 35CL  L 6140      20 (5/2)+                           2        0.72            
+ 35CL  L 6750      20 (5/2)+                           2        0.79            
+ 35CL  L 6930      20 (5/2)+                           2        0.46            
+ 35CL  L 8010      20 (5/2)+                           2        0.23            
+ 35CL  L 8210      20 (5/2)+                           2        0.28            
+ 35CL  L 8610      20 (5/2)+                           2        0.34            
