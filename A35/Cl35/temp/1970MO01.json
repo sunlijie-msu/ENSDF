@@ -1,0 +1,107 @@
+{
+  "study": "1970Mo01",
+  "reaction": "34S(3He,d)35Cl",
+  "target_nucleus": "34S",
+  "projectile": "3He",
+  "ejectile": "d",
+  "product_nucleus": "35Cl",
+  "target_ground_state_spin": 0,
+  "comment": "All excitation energies have 12 keV uncertainty as specified",
+  "levels": [
+    {
+      "level_number": 0,
+      "excitation_energy_MeV": 0,
+      "excitation_energy_uncertainty_keV": null,
+      "l_transfer": 2,
+      "spin_parity": "3/2+",
+      "cross_section": 5.2,
+      "spectroscopic_factor": 1.3,
+      "comments": "Ground state"
+    },
+    {
+      "level_number": 1,
+      "excitation_energy_MeV": 1.22,
+      "excitation_energy_uncertainty_keV": 12,
+      "l_transfer": 0,
+      "spin_parity": "1/2+",
+      "cross_section": 2.5,
+      "spectroscopic_factor": 0.28
+    },
+    {
+      "level_number": 2,
+      "excitation_energy_MeV": 3.01,
+      "excitation_energy_uncertainty_keV": 12,
+      "l_transfer": 2,
+      "spin_parity": "5/2+",
+      "cross_section": 0.7,
+      "spectroscopic_factor": 0.04,
+      "comments": "c) footnote marker in original"
+    },
+    {
+      "level_number": 3,
+      "excitation_energy_MeV": 3.16,
+      "excitation_energy_uncertainty_keV": 12,
+      "l_transfer": 3,
+      "spin_parity": "7/2-",
+      "cross_section": 5.5,
+      "spectroscopic_factor": 0.66
+    },
+    {
+      "level_number": 4,
+      "excitation_energy_MeV": 3.97,
+      "excitation_energy_uncertainty_keV": 12,
+      "l_transfer": 0,
+      "spin_parity": "1/2+",
+      "cross_section": 0.6,
+      "spectroscopic_factor": 0.06,
+      "comments": "d) footnote marker in original"
+    },
+    {
+      "level_number": 5,
+      "excitation_energy_MeV": 4.06,
+      "excitation_energy_uncertainty_keV": 12,
+      "l_transfer": 1,
+      "spin_parity": "(1/2,3/2)-",
+      "cross_section": 8.0,
+      "spectroscopic_factor": 0.15
+    },
+    {
+      "level_number": 6,
+      "excitation_energy_MeV": 4.17,
+      "excitation_energy_uncertainty_keV": 12,
+      "l_transfer": 1,
+      "spin_parity": "3/2-",
+      "cross_section": 15,
+      "spectroscopic_factor": "0.28, 0.62",
+      "comments": "Multiple spectroscopic factor values"
+    },
+    {
+      "level_number": 7,
+      "excitation_energy_MeV": 5.41,
+      "excitation_energy_uncertainty_keV": 12,
+      "l_transfer": "(1,2)",
+      "spin_parity": null,
+      "cross_section": 1.6,
+      "spectroscopic_factor": null
+    },
+    {
+      "level_number": 8,
+      "excitation_energy_MeV": 5.67,
+      "excitation_energy_uncertainty_keV": 12,
+      "l_transfer": "(2)",
+      "spin_parity": null,
+      "cross_section": 4,
+      "spectroscopic_factor": null,
+      "comments": "a) footnote marker in original"
+    },
+    {
+      "level_number": 9,
+      "excitation_energy_MeV": 5.76,
+      "excitation_energy_uncertainty_keV": 12,
+      "l_transfer": 0,
+      "spin_parity": "1/2+",
+      "cross_section": 1.2,
+      "spectroscopic_factor": 0.21
+    }
+  ]
+}
