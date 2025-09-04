@@ -38,55 +38,68 @@
  35CL8c  from local, zero-range DWUCK-DWBA analysis.                            
  35CL cL E$From 1969Gr23 for E(level)<6 MeV and from 2017Gi09 for E(level)>6    
  35CL2cL MeV, unless otherwise noted.                                           
- 35CL cL L,S$From DWBA analysis of the measured |s(|q) in 1969Gr23 and 1970Mo01.
+ 35CL cL L,S$From DWBA analysis of the measured |s(|q) in 1969Gr23 for          
+ 35CL2cL E(level)<6 MeV and from 2017Gi09 for E(level)>6 MeV, unless otherwise  
+ 35CL3cL noted.                                                                 
  35CL cL $Spectroscopic factor g*C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N, where     
  35CL2cL g=(2J{-f}+1)/(2J{-i}+1) and N is a normalization factor. J{-i}=0 for   
  35CL3cL for {+34}S g.s. N=4.42 used in 1969Gr23 and 1970Mo01 from 1966Ba54.    
  35CL4cL N=4.43 used in 1994Ve04.                                               
  35CL cL S$LABEL=C{+2}S                                                         
  35CL  L 0                                             2                        
- 35CL cL S$0.72 in 1969Gr23, 1.3 in 1970Mo01 and 1.07 in 1994Ve04; for J|p=3/2+ 
+ 35CL cL S$(2J+1)*C{+2}S=2.88 in 1969Gr23 for J|p=3/2+; C{+2}S=1.3 in           
+ 35CL2cL 1970Mo01 for J|p=3/2+; C{+2}S=1.07 in 1994Ve04 for J|p=3/2+.           
  35CL  L 1220      10                                  0                        
- 35CL cL E$weighted average of 1220 {I10} (1969Gr23) and 1220 {I12} (1970Mo01). 
- 35CL cL S$0.26 in 1969Gr23, 0.28 in 1970Mo01; for J|p=1/2+                     
+ 35CL cL E$weighted average of 1220 {I10} (1969Gr23) and 1220 {I12} (1970Mo01).
+ 35CL cL S$(2J+1)*C{+2}S=0.26 in 1969Gr23 for J|p=1/2+; C{+2}S=0.28 in          
+ 35CL2cL 1970Mo01 for J|p=1/2+.                                                 
  35CL  L 1758      10                                                           
  35CL  L 2645      10                                                           
- 35CL  L 2686      10                                  2                        
- 35CL cL S$0.015 for J|p=3/2+; 0.01 for J|p=5/2+ (1969Gr23)                     
- 35CL  L 3002      10                                  2                        
- 35CL cL E$weighted average of 2997 {I10} (1969Gr23) and 3010 {I12} (1970Mo01). 
- 35CL cL S$0.023 in 1969Gr23, 0.04 in 1970Mo01; for J|p=5/2+                    
- 35CL  L 3158      10                                  3                        
- 35CL cL E$weighted average of 3156 {I10} (1969Gr23) and 3160 {I12} (1970Mo01). 
- 35CL cL S$0.36 in 1969Gr23, 0.66 in 1970Mo01; for J|p=7/2-                     
+ 35CL  L 2686      10                                   2                        
+ 35CL cL S$(2J+1)*C{+2}S=0.06 in 1969Gr23 for J|p=(3/2,5/2)+.                   
+ 35CL  L 3002      10                                   2                        
+ 35CL cL E$weighted average of 2997 {I10} (1969Gr23) and 3010 {I12} (1970Mo01).
+ 35CL cL S$(2J+1)*C{+2}S=0.14 in 1969Gr23 for J|p=(5/2)+; C{+2}S=0.04 in       
+ 35CL2cL 1970Mo01 for J|p=5/2+.                                                 
+ 35CL  L 3158      10                                   3                        
+ 35CL cL E$weighted average of 3156 {I10} (1969Gr23) and 3160 {I12} (1970Mo01).
+ 35CL cL S$(2J+1)*C{+2}S=2.88 in 1969Gr23 for J|p=7/2-; C{+2}S=0.66 in         
+ 35CL2cL 1970Mo01 for J|p=7/2-.                                                 
  35CL  L 3908      10                                                           
- 35CL  L 3962      10                                  0                        
- 35CL cL E$weighted average of 3956 {I10} (1969Gr23) and 3970 {I12} (1970Mo01). 
- 35CL cL S$0.03 in 1969Gr23, 0.06 in 1970Mo01; for J|p=1/2+                     
- 35CL  L 4053      10                                  1                        
- 35CL cL E$weighted average of 4048 {I10} (1969Gr23) and 4060 {I12} (1970Mo01). 
- 35CL cL S$0.095 in 1969Gr23, 0.15 in 1970Mo01; for J|p=3/2-                    
- 35CL  L 4167      10                                  1                        
- 35CL cL E$weighted average of 4165 {I10} (1969Gr23) and 4170 {I12} (1970Mo01). 
- 35CL cL S$0.213 in 1969Gr23, (0.28,0.62) in 1970Mo01; for J|p=3/2-             
+ 35CL  L 3962      10                                   0                        
+ 35CL cL E$weighted average of 3956 {I10} (1969Gr23) and 3970 {I12} (1970Mo01).
+ 35CL cL S$(2J+1)*C{+2}S=0.03 in 1969Gr23 for J|p=1/2+; C{+2}S=0.06 in         
+ 35CL2cL 1970Mo01 for J|p=1/2+.                                                 
+ 35CL  L 4053      10                                   1                        
+ 35CL cL E$weighted average of 4048 {I10} (1969Gr23) and 4060 {I12} (1970Mo01).
+ 35CL cL S$(2J+1)*C{+2}S=0.38 in 1969Gr23 for J|p=(3/2)-; C{+2}S=0.15 in       
+ 35CL2cL 1970Mo01 for J|p=(3/2)-.                                               
+ 35CL  L 4167      10                                   1                        
+ 35CL cL E$weighted average of 4165 {I10} (1969Gr23) and 4170 {I12} (1970Mo01).
+ 35CL cL S$(2J+1)*C{+2}S=0.85 in 1969Gr23 for J|p=(3/2)-; C{+2}S=0.28, 0.62 in 
+ 35CL2cL 1970Mo01 for J|p=(3/2)-.                                               
  35CL  L 5010      15                                                           
  35CL  L 5163      15                                  (2)                      
- 35CL cL S$(2J+1)C{+2}S=(0.11) (1969Gr23)                                       
- 35CL cL L$from 1969Gr23                                                        
+ 35CL cL S$(2J+1)*C{+2}S=0.11 in 1969Gr23. 
  35CL  L 5409      12                                  1                        
- 35CL cL E$weighted average of 5407 {I15} (1969Gr23) and 5410 {I12} (1970Mo01). 
- 35CL cL S$0.018 in 1969Gr23; for J|p=3/2-                                      
+ 35CL cL E$weighted average of 5407 {I15} (1969Gr23) and 5410 {I12} (1970Mo01).
+ 35CL cL L$1 in 1969Gr23 and L=(1,2) in 1970Mo01                                
+ 35CL cL S$(2J+1)*C{+2}S=0.07 in 1969Gr23 for J|p=(3/2)-.                       
  35CL  L 5660      15                                  2        0.118           
- 35CL cL S$for J|p=3/2+ (1969Gr23)                                              
- 35CL cL L$from 1969Gr23                                                        
+ 35CL cL E$5670 multiplet reported in 1970Mo01.                                 
+ 35CL cL L$2 in 1969Gr23, possibly a component of the 5670 multiplet with L=(2) 
+ 35CL2cL in 1970Mo01                                                            
+ 35CL cL S$(2J+1)*C{+2}S=0.47 in 1969Gr23 for J|p=3/2+.                         
  35CL  L 5684      12                                  1                        
  35CL cL E$5670 multiplet reported in 1970Mo01.                                 
- 35CL cL L$from 1969Gr23; (2) in 1970Mo01                                       
- 35CL cL S$0.028 in 1969Gr23; for J|p=3/2-                                      
+ 35CL cL L$1 in 1969Gr23, possibly a component of the 5670 multiplet with L=(2) 
+ 35CL2cL in 1970Mo01                                                            
+ 35CL cL S$(2J+1)*C{+2}S=0.11 in 1969Gr23 for J|p=(3/2)-.                       
  35CL  L 5760      12                                  (0,1)                    
- 35CL cL E$weighted average of 5760 {I15} (1969Gr23) and 5760 {I12} (1970Mo01). 
- 35CL cL L$ 1 in 1969Gr23, 0 in 1970Mo01                                        
- 35CL cL S$0.03 in 1969Gr23 for J|p=3/2-, 0.21 in 1970Mo01 for J|p=1/2+         
+ 35CL cL E$weighted average of 5760 {I15} (1969Gr23) and 5760 {I12} (1970Mo01).
+ 35CL cL L$1 in 1969Gr23 and L=0 in 1970Mo01                                    
+ 35CL cL S$(2J+1)*C{+2}S=0.12 in 1969Gr23 for J|p=(3/2)-; C{+2}S=0.21 in       
+ 35CL2cL 1970Mo01 for J|p=1/2+.                                                 
 
  35CL  L 6284      4                                     2                  N   
  35CL cL $(2J+1)C{+2}S=0.086 {I2}                                               

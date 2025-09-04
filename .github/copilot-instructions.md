@@ -19,6 +19,9 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 - **Plan systematically, execute carefully, and validate outcomes**
 - **ALWAYS create Python scripts in the `.github` folder** - never in root, temp, or other directories
 - **NEVER create Python scripts in temp folders** - temp is for supplementary data files only
+- **🚨 CRITICAL SCRIPT LOCATION RULE 🚨**: If scripts need to be created, create them in `.github` folder ONLY
+- **NEVER create scripts in ENSDF root directory** - this is strictly forbidden and causes workspace clutter
+- **Move any misplaced scripts to `.github` immediately** when discovered
 
 ## Communication Guidelines
 - **Continue until requests are fully addressed with complete accuracy**

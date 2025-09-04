@@ -83,16 +83,16 @@ def validate_ensdf_file(filename):
             
             for char, pos in l_positions:
                 if pos == 56:
-                    print(f"OK L={char} correctly positioned at column {pos}")
+                    print(f"✓ L={char} correctly positioned at column {pos}")
                 else:
-                    print(f"ERROR L={char} incorrectly positioned at column {pos} (should be 56)")
+                    print(f"✗ L={char} incorrectly positioned at column {pos} (should be 56)")
                     errors_found = True
             print()
     
     if not errors_found:
-        print("OK All ENSDF field positions appear correct!")
+        print("✓ All ENSDF field positions appear correct!")
     else:
-        print("ERROR Field positioning errors found - see details above")
+        print("✗ Field positioning errors found - see details above")
         
     return not errors_found
 
