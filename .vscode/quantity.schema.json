@@ -1,0 +1,661 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "file://local.file/components/quantity.json",
+  "title": "NNDC-style Adopted Levels, Gammas dataset (restored schema)",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "observationStatus": {
+      "type": "string"
+    },
+    "hasStableGroundState": {
+      "type": "boolean"
+    },
+    "qValues": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "nsrKeys": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "isFromSystematics": {
+            "type": "boolean"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          },
+          "uncertainty": {
+            "$ref": "#/$defs/uncertainty"
+          }
+        },
+        "required": [
+          "unit",
+          "value"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "separationEnergies": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "nsrKeys": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "isFromSystematics": {
+            "type": "boolean"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          },
+          "uncertainty": {
+            "$ref": "#/$defs/uncertainty"
+          }
+        },
+        "required": [
+          "unit",
+          "value"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "crossReferences": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "dataset": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "dataset"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "levels": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/level"
+      }
+    },
+    "header": {
+      "type": "object",
+      "properties": {
+        "documentType": {
+          "type": "string"
+        },
+        "schemaVersion": {
+          "type": "string"
+        },
+        "datasetName": {
+          "type": "string"
+        },
+        "database": {
+          "type": "string"
+        },
+        "z": {
+          "type": "integer"
+        },
+        "n": {
+          "type": "integer"
+        },
+        "a": {
+          "type": "integer"
+        },
+        "elementName": {
+          "type": "string"
+        },
+        "elementSymbol": {
+          "type": "string"
+        },
+        "history": {
+          "type": "object",
+          "properties": {
+            "fullEvaluation": {
+              "type": "object",
+              "properties": {
+                "cutoffDate": {
+                  "type": "string"
+                },
+                "publication": {
+                  "type": "string"
+                },
+                "authors": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "name"
+                    ],
+                    "additionalProperties": true
+                  }
+                }
+              },
+              "required": [
+                "publication"
+              ],
+              "additionalProperties": true
+            },
+            "updates": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "date": {
+                    "type": "string"
+                  },
+                  "authors": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "name"
+                      ],
+                      "additionalProperties": true
+                    }
+                  },
+                  "comment": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": true
+              }
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "required": [
+        "documentType",
+        "datasetName",
+        "database",
+        "z",
+        "n",
+        "a",
+        "elementSymbol"
+      ],
+      "additionalProperties": true
+    },
+    "comments": {
+      "type": "object",
+      "properties": {
+        "generalComments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "appliesTo": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "body": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "type",
+              "body"
+            ],
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "references": {
+      "type": "object",
+      "properties": {
+        "cited": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "nsrKeys": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "levels",
+    "header"
+  ],
+  "$defs": {
+    "uncertainty": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "symmetric"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "type",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "unreported"
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "quantity": {
+      "type": "object",
+      "properties": {
+        "unit": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/uncertainty"
+        }
+      },
+      "required": [
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    "spinParityValue": {
+      "type": "object",
+      "properties": {
+        "twoTimesSpin": {
+          "type": "integer"
+        },
+        "isTentativeSpin": {
+          "type": "boolean"
+        },
+        "parity": {
+          "type": "string",
+          "enum": [
+            "+",
+            "-"
+          ]
+        },
+        "isTentativeParity": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "twoTimesSpin",
+        "parity"
+      ],
+      "additionalProperties": false
+    },
+    "spinParity": {
+      "type": "object",
+      "properties": {
+        "values": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/spinParityValue"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "values"
+      ],
+      "additionalProperties": false
+    },
+    "isospinValue": {
+      "type": "object",
+      "properties": {
+        "twoTimesIsospin": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "twoTimesIsospin"
+      ],
+      "additionalProperties": false
+    },
+    "isospin": {
+      "type": "object",
+      "properties": {
+        "values": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/isospinValue"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "values"
+      ],
+      "additionalProperties": false
+    },
+    "multipoleMoment": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "isAbsoluteValue": {
+          "type": "boolean"
+        },
+        "value": {
+          "type": "number"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/uncertainty"
+        }
+      },
+      "required": [
+        "type",
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    "decayWidth": {
+      "$ref": "#/$defs/quantity"
+    },
+    "decayWidths": {
+      "type": "object",
+      "properties": {
+        "totalWidth": {
+          "$ref": "#/$defs/quantity"
+        }
+      },
+      "required": [
+        "totalWidth"
+      ],
+      "additionalProperties": true
+    },
+    "decayMode": {
+      "type": "object",
+      "properties": {
+        "radiation": {
+          "type": "string"
+        },
+        "multiplicity": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "radiation",
+        "multiplicity"
+      ],
+      "additionalProperties": false
+    },
+    "decayBranchingRatios": {
+      "type": "object",
+      "properties": {
+        "predicted": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "decayString": {
+                "type": "string"
+              },
+              "decayMode": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/decayMode"
+                }
+              }
+            },
+            "required": [
+              "decayString",
+              "decayMode"
+            ],
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "multipolarity": {
+      "type": "object",
+      "properties": {
+        "stringRepresentation": {
+          "type": "string"
+        },
+        "spins": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "spin": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "spin"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "parity": {
+          "type": "string",
+          "enum": [
+            "+",
+            "-"
+          ]
+        }
+      },
+      "required": [
+        "stringRepresentation"
+      ],
+      "additionalProperties": true
+    },
+    "rtp": {
+      "type": "object",
+      "properties": {
+        "multipolarity": {
+          "type": "string"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/uncertainty"
+        }
+      },
+      "required": [
+        "multipolarity",
+        "unit",
+        "value"
+      ],
+      "additionalProperties": true
+    },
+    "gamma": {
+      "type": "object",
+      "properties": {
+        "energy": {
+          "$ref": "#/$defs/quantity"
+        },
+        "initialLevelIndex": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "finalLevelIndex": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "multipolarity": {
+          "$ref": "#/$defs/multipolarity"
+        },
+        "reducedTransitionProbabilities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/rtp"
+          }
+        },
+        "width": {
+          "$ref": "#/$defs/quantity"
+        }
+      },
+      "required": [
+        "energy",
+        "initialLevelIndex",
+        "finalLevelIndex"
+      ],
+      "additionalProperties": true
+    },
+    "levelComment": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "head": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "body": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "body"
+      ],
+      "additionalProperties": true
+    },
+    "level": {
+      "type": "object",
+      "properties": {
+        "energy": {
+          "$ref": "#/$defs/quantity"
+        },
+        "spinParity": {
+          "$ref": "#/$defs/spinParity"
+        },
+        "isStable": {
+          "type": "boolean"
+        },
+        "decayWidths": {
+          "$ref": "#/$defs/decayWidths"
+        },
+        "decayBranchingRatios": {
+          "$ref": "#/$defs/decayBranchingRatios"
+        },
+        "isospin": {
+          "$ref": "#/$defs/isospin"
+        },
+        "multipoleMoments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/multipoleMoment"
+          }
+        },
+        "crossReferences": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "dataset": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "dataset"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "comments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/levelComment"
+          }
+        },
+        "gammas": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/gamma"
+          }
+        }
+      },
+      "required": [
+        "energy",
+        "spinParity",
+        "isStable"
+      ],
+      "additionalProperties": true
+    }
+  }
+}

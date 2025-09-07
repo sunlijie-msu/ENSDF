@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "file://local.file/components/spin-parity.json",
+  "title": "Spin-parity component (NNDC-style, restored)",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "comments": {
+      "type": "array",
+      "description": "Free-text comments related to the spin-parity assignment.",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "isFromSystematics": {
+      "type": "boolean",
+      "description": "True if assignment is based on systematics rather than direct measurement."
+    },
+    "values": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "isTentativeSpin": {"const": true}
+              }
+            },
+            "then": {
+              "required": ["twoTimesSpin"]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "isTentativeParity": {"const": true}
+              }
+            },
+            "then": {
+              "required": ["parity"]
+            }
+          }
+        ],
+        "anyOf": [
+          {
+            "required": [
+              "twoTimesSpin"
+            ]
+          },
+          {
+            "required": [
+              "parity"
+            ]
+          }
+        ],
+        "properties": {
+          "twoTimesSpin": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Twice the spin J (i.e., 2J)."
+          },
+          "isTentativeSpin": {
+            "type": "boolean",
+            "description": "True if the quoted spin is tentative."
+          },
+          "parity": {
+            "type": "string",
+            "enum": [
+              "+",
+              "-"
+            ],
+            "description": "Intrinsic parity."
+          },
+          "isTentativeParity": {
+            "type": "boolean",
+            "description": "True if the quoted parity is tentative."
+          },
+          "relativeTo": {
+            "type": "object",
+            "description": "Spin expressed relative to another level label. Example: J+2 \u2192 twoTimesSpin=4 with relativeTo.label='J'.",
+            "required": [
+              "label"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "approximateValue": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "Approximate twice-spin offset when only approximate relative value is known."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "values"
+  ]
+}
