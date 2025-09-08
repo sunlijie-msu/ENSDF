@@ -838,6 +838,33 @@ Files changed: 15 modified, 2 untracked
 Completion of comprehensive ENSDF column calibration tooling and systematic improvement of Ar35 nuclear data content.
 ```
 
+## JSON Schema Compliance
+
+### Nuclear Data JSON Creation Rules
+When creating JSON data for nuclear structure information:
+
+- **Validate against schema**: Follow exact structure and constraints defined in quantity.schema.json
+- **Use proper data types**: Numbers for energies, strings for units, booleans for flags
+- **Include required fields**: Never omit mandatory properties (energy, spinParity, isStable for levels)
+- **Follow nuclear conventions**: Proper uncertainty notation, energy units (keV), gamma structure with initialLevelIndex/finalLevelIndex
+
+### NNDC Schema Structure
+For gamma energy data conforming to quantity.schema.json:
+```json
+{
+  "energy": {
+    "value": 57.4,
+    "unit": "keV", 
+    "uncertainty": {
+      "type": "symmetric",
+      "value": 0.1
+    }
+  },
+  "initialLevelIndex": 0,
+  "finalLevelIndex": 1
+}
+```
+
 ## Project Structure
 
 ### Core Files (Most Critical)
