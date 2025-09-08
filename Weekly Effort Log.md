@@ -94,7 +94,8 @@ Received training from my line manager regarding the A=35 evaluation. Completed 
 Lijie Sun - 24 August 2025 - 30 August 2025
 Received training from my line manager regarding the A=35 evaluation. Revised the ECP dataset and added the EC dataset for 35Cl. Added 5 reaction datasets for 35Cl.
 
-
+Lijie Sun - 31 August 2025 - 6 September 2025
+Received training from my line manager regarding the A=35 evaluation. Added 7 reaction datasets for 35Cl. Performed the data consistency check for CH11036 and XUNDL compilation for 127I data in 2025LaAA. Provided support to users of E23035 and E25058 through the FRIENDS project.
 
 # FRIB Laboratory Activities
 
