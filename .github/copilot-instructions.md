@@ -17,11 +17,82 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 - **Write in professional scientific language** with precise nuclear physics terminology
 - **Utilize available tools and resources** - never guess or assume
 - **Plan systematically, execute carefully, and validate outcomes**
-- **ALWAYS create Python scripts in the `.github` folder** - never in root, temp, or other directories
-- **NEVER create Python scripts in temp folders** - temp is for supplementary data files only
-- **🚨 CRITICAL SCRIPT LOCATION RULE 🚨**: If scripts need to be created, create them in `.github` folder ONLY
-- **NEVER create scripts in ENSDF root directory** - this is strictly forbidden and causes workspace clutter
-- **Move any misplaced scripts to `.github` immediately** when discovered
+
+## 🚨 CRITICAL ANTI-SPAGHETTI CODE RULES 🚨
+
+### Script Organization Standards
+- **USE EXISTING PROFESSIONAL MODULES**: Always use `ensdf_tools.py` and modules/ directory
+- **NEVER create duplicate scripts** - check existing functionality first
+- **NEVER create scripts with similar names** (e.g., verify_*, check_*, analyze_*, compare_*)
+- **CONSOLIDATE functionality** into existing modules rather than creating new scripts
+- **ONE TOOL PER FUNCTION**: Use `ensdf_tools.py validate`, `ensdf_tools.py format`, `ensdf_tools.py analyze`
+
+### Professional Module Structure
+```
+.github/
+├── ensdf_tools.py              # Main unified CLI tool
+├── modules/
+│   ├── __init__.py            # Module package
+│   ├── ensdf_validation.py    # All validation functions
+│   ├── ensdf_formatting.py    # All formatting/fixing functions  
+│   └── ensdf_analysis.py      # All analysis functions
+├── column_calibrate.py         # Legacy - use ensdf_tools.py validate
+├── check_gamma_ordering.py     # Legacy - use ensdf_tools.py validate
+├── ens2pdf.py                 # Legacy - use ensdf_tools.py convert
+└── copilot-instructions.md     # This file
+```
+
+### Mandatory Code Standards
+1. **BEFORE CREATING ANY SCRIPT**: Check if functionality exists in modules/
+2. **USE EXISTING TOOLS**: `python ensdf_tools.py [command] [file]` for all operations
+3. **NO DUPLICATE FUNCTIONS**: Do not recreate validation, formatting, or analysis code
+4. **PROFESSIONAL NAMING**: Clear, descriptive function and variable names
+5. **COMPREHENSIVE DOCUMENTATION**: Docstrings for all functions and classes
+6. **ERROR HANDLING**: Proper exception handling and user feedback
+7. **TYPE HINTS**: Use Python type hints for all function parameters and returns
+8. **SEPARATION OF CONCERNS**: Each module handles one specific area (validation, formatting, analysis)
+
+### Forbidden Patterns
+- ❌ Creating `verify_xyz.py`, `check_abc.py`, `analyze_def.py` scripts
+- ❌ Writing duplicate validation logic
+- ❌ Creating temporary "test" or "debug" scripts in .github/
+- ❌ Copy-pasting code between scripts
+- ❌ Writing scripts without error handling
+- ❌ Creating scripts with hardcoded file paths
+- ❌ Writing single-use throwaway scripts
+
+### Required Workflow
+1. **IDENTIFY NEED**: What functionality is required?
+2. **CHECK EXISTING**: Does `ensdf_tools.py` or modules/ already provide this?
+3. **EXTEND IF NEEDED**: Add to existing modules rather than create new scripts
+4. **USE PROFESSIONAL INTERFACE**: Call via `ensdf_tools.py` command line interface
+5. **DOCUMENT CHANGES**: Update module docstrings and this instructions file
+
+### Professional Usage Examples
+```bash
+# Validation (replaces all verify_*, check_* scripts)
+python ensdf_tools.py validate "file.ens"
+python ensdf_tools.py validate "file.ens" --no-bands --json
+
+# Formatting (replaces all fix_* scripts)  
+python ensdf_tools.py format "file.ens" --fix-all
+python ensdf_tools.py format "file.ens" --fix-columns --dry-run
+
+# Analysis (replaces all analyze_*, compare_* scripts)
+python ensdf_tools.py analyze "file.ens" --report
+python ensdf_tools.py analyze "file.ens" --no-lifetimes --json
+
+# Conversion (replaces ens2pdf.py)
+python ensdf_tools.py convert "file.ens" --to-pdf --open
+```
+
+### Legacy Script Migration
+- **column_calibrate.py** → `ensdf_tools.py validate`
+- **check_gamma_ordering.py** → `ensdf_tools.py validate --no-columns --no-bands`  
+- **ens2pdf.py** → `ensdf_tools.py convert --to-pdf`
+- **All fix_*.py** → `ensdf_tools.py format --fix-[specific]`
+- **All analyze_*.py** → `ensdf_tools.py analyze`
+- **All verify_*.py, compare_*.py** → `ensdf_tools.py validate` or `ensdf_tools.py analyze`
 
 ## Communication Guidelines
 - **Continue until requests are fully addressed with complete accuracy**
