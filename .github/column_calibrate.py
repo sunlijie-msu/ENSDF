@@ -133,12 +133,12 @@ def fix_line_lengths(filename, dry_run=False):
     if not dry_run and lines_modified > 0:
         with open(filename, 'w') as f:
             f.writelines(fixed_lines)
-        print(f"\n✅ File updated: {filename}")
-        print("✅ All data record lines now exactly 80 characters")
+        print(f"\n*** File updated: {filename}")
+        print("*** All data record lines now exactly 80 characters")
     elif dry_run and lines_modified > 0:
-        print(f"\n📋 DRY RUN: Would modify {lines_modified} data record lines")
+        print(f"\n*** DRY RUN: Would modify {lines_modified} data record lines")
     elif lines_modified == 0:
-        print("\n✅ All data record lines already exactly 80 characters - no changes needed")
+        print("\n*** All data record lines already exactly 80 characters - no changes needed")
     
     return lines_modified, 0
 
@@ -190,9 +190,59 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
                 print(f"  Line {line_num}: {record_type} record - {length} chars (short by {80 - length})")
             else:
                 print(f"  Line {line_num}: {record_type} record - {length} chars (long by {length - 80})")
-        print("\n💡 Use --fix flag to automatically correct data record line lengths")
+        print("*** Use --fix flag to automatically correct data record line lengths")
         print("   Example: python column_calibrate.py \"filename.ens\" --fix")
         print("   Note: Comment lines are handled by separate tools")
+        print()
+        errors_found = True
+    
+    # CRITICAL: Validate comment flags in column 77 for all records
+    flag_issues = []
+    for line_num, line in enumerate(lines, 1):
+        line_content = line.rstrip('\n\r')
+        
+        # Check all data record lines for comment flag positioning
+        if is_data_record_line(line_content):
+            # Column 77 (index 76) should contain comment flag if present
+            if len(line_content) >= 77:
+                char_at_77 = line_content[76]  # Column 77 (0-based index 76)
+                
+                # For comment lines (column 8 = 'c'), column 77 may contain continuation characters
+                record_type = line_content[7] if len(line_content) > 7 else ' '
+                
+                if record_type == 'c':
+                    # Comment lines can have continuation characters at column 77
+                    continue
+                elif record_type in ['L', 'G', 'B', 'E', 'N', 'P', 'A', 'D']:
+                    # Data records: column 77 should only contain valid comment flags
+                    valid_flags = [' ', 'C', 'X', '?']
+                    
+                    if char_at_77 not in valid_flags:
+                        # Check if this might be overflow from field 76 (DTI, DS, etc.)
+                        if len(line_content) >= 76:
+                            char_at_76 = line_content[75]  # Column 76 (0-based index 75)
+                            # If column 76 has content and 77 has a digit, this might be field overflow
+                            if char_at_76 != ' ' and char_at_77.isdigit():
+                                flag_issues.append((line_num, f"FIELD OVERFLOW: '{char_at_76}{char_at_77}' extends beyond column 76", record_type))
+                            else:
+                                flag_issues.append((line_num, f"INVALID FLAG: '{char_at_77}' at column 77", record_type))
+                        else:
+                            flag_issues.append((line_num, f"INVALID FLAG: '{char_at_77}' at column 77", record_type))
+                            
+                    # Check for misplaced flags in column 76 (DTI/DS field)
+                    if len(line_content) >= 76:
+                        char_at_76 = line_content[75]  # Column 76 (0-based index 75)
+                        if char_at_76 in ['C', 'X', '?'] and char_at_77 == ' ':
+                            flag_issues.append((line_num, f"FLAG MISPLACED: '{char_at_76}' at column 76 (must be at column 77)", record_type))
+    
+    if flag_issues:
+        print("COMMENT FLAG AND FIELD POSITIONING ERRORS DETECTED:")
+        for line_num, flag_issue, record_type in flag_issues:
+            print(f"  Line {line_num}: {record_type} record - {flag_issue}")
+        print("\n*** CRITICAL: Comment flags (C, X, ?) MUST be positioned at column 77 ONLY")
+        print("   Valid flags: 'C' (comment), 'X' (new data), '?' (uncertain)")
+        print("   Column 77 is the ONLY valid position for comment flags in ENSDF format")
+        print("   Field values (DTI, DS) must not extend beyond column 76")
         print()
         errors_found = True
     
@@ -254,9 +304,9 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
             print()
     
     if not errors_found:
-        print("✅ All ENSDF field positions appear correct!")
+        print("*** All ENSDF field positions appear correct!")
         if length_issues == []:  # No length issues either
-            print("✅ All data record lines are exactly 80 characters!")
+            print("*** All data record lines are exactly 80 characters!")
     else:
         print("❌ Field positioning errors found - see details above")
         

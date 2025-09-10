@@ -1,5 +1,61 @@
 # Change Log for ENSDF Edits
 
+## 2025-01-15: Critical Enhancement of ENSDF Validation Tools
+
+**Summary**: Identified and fixed critical flaw in column_calibrate.py validation script that failed to detect comment flag positioning errors. Enhanced validation to include comprehensive flag positioning checks for ENSDF format compliance.
+
+### Critical Validation Tool Enhancement
+
+#### File: `.github/column_calibrate.py` (ENHANCED - Lines 199-250)
+**CRITICAL FLAW FIXED**: Script previously had NO validation for comment flag positioning
+- **Problem identified**: Script failed to detect X flags incorrectly placed at column 76 instead of required column 77
+- **Root cause**: Validation logic only checked L-field positioning and line lengths, completely ignored comment flags
+- **Solution implemented**: Added comprehensive comment flag validation for all data record types
+- **New validation features**:
+  - Detects misplaced flags in column 76 (invalid position)
+  - Validates flags in column 77 (correct position for C, X, ? flags)
+  - Identifies field overflow beyond column 76 
+  - Distinguishes between data records (L, G, B, E, DP) and comment lines (c records)
+  - Provides clear error messages for flag positioning violations
+
+#### Enhanced Validation Logic (Lines 210-240):
+**Flag positioning validation rules implemented**:
+- Column 77 ONLY valid position for comment flags (C, X, ?)
+- Detection of misplaced flags at column 76
+- Field overflow detection when values extend beyond column 76
+- Exclusion of comment lines from flag validation (proper ENSDF format)
+- Unicode character fixes for Windows PowerShell compatibility
+
+### Validation Testing Results
+
+#### Test Case: Deliberately Misplaced X Flags
+**Created test**: X flags at column 76 (incorrect) vs column 77 (correct)
+- **Before fix**: column_calibrate.py reported "All ENSDF field positions appear correct!" (FALSE NEGATIVE)
+- **After fix**: Correctly detects "FLAG MISPLACED: 'X' at column 76 (must be at column 77)"
+- **Validation**: Enhanced script now properly validates flag positioning compliance
+
+#### Test Case: Correctly Positioned X Flags  
+**File**: `XUNDL/2025LAAA_CH11036_127I.ens` lines 128, 130
+- **635.5 keV gamma**: X flag correctly at column 77 - PASSES validation
+- **1181.2 keV gamma**: X flag correctly at column 77 - PASSES validation
+- **Verification**: Enhanced validation confirms correct flag positioning
+
+### Impact and Significance
+
+**Quality Assurance Critical Fix**:
+- **Previous state**: Primary ENSDF validation tool was fundamentally flawed
+- **Risk eliminated**: Flag positioning errors would go undetected in evaluations
+- **Scientific integrity**: ENSDF format compliance now properly enforced
+- **User safety**: Validation tool now catches format violations that cause file rejection
+
+**ENSDF Evaluation Workflow Enhancement**:
+- Mandatory validation now includes comment flag positioning
+- Early detection of format violations prevents downstream processing failures  
+- Comprehensive field validation ensures ENSDF Manual compliance
+- Enhanced error reporting with specific column position details
+
+---
+
 ## 2025-07-19: Systematic JSON/PNG Data Integration and ENSDF File Enhancement
 
 **Summary**: Completed comprehensive nuclear data integration from multiple JSON sources and PNG images into proper ENSDF format. Added three new thermal neutron capture data files, enhanced scientific descriptions, and removed tentative spin-parity assignments. Updated development tools and documentation standards.

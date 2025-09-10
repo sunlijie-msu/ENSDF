@@ -678,6 +678,15 @@ WRONG approach:
 - `{-n}` → subscript (e.g., `T{-1/2}` → T₁/₂)
 - `{+-n}` → negative superscript (e.g., `{+-4}` → ⁻⁴)
 
+### ENSDF Uncertainty Notation
+**🚨 CRITICAL UNCERTAINTY FORMAT RULES 🚨**
+- **Symmetric uncertainties**: `{In}` (e.g., `{I7}`, `{I11}`) - NO plus/minus signs
+- **Asymmetric uncertainties**: `{I+n-m}` (e.g., `{I+10-11}`, `{I+7-9}`) - WITH plus/minus signs
+- **Examples**:
+  - Symmetric: `1.42 ps {I7}` → 1.42(7) ps = 1.42 ± 0.07 ps
+  - Asymmetric: `1.42 ps {I+10-11}` → 1.42(+10-11) ps = 1.42 + 0.10 - 0.11 ps
+- **NEVER use** `{I+n}` for symmetric uncertainties - this is incorrect ENSDF format
+
 ### Greek Letters
 **Lowercase**: `|a` → α, `|b` → β, `|g` → γ, `|d` → δ, `|e` → ε, `|l` → λ, `|m` → μ, `|n` → ν, `|p` → π, `|r` → ρ, `|s` → σ, `|t` → τ, `|w` → ω
 **Uppercase**: `|D` → Δ, `|G` → Γ, `|L` → Λ, `|P` → Π, `|S` → Σ, `|W` → Ω
