@@ -199,6 +199,106 @@ Execute comprehensive change detection and documentation:
 
 **Remember**: Git status MUST be the first step - missing files means incomplete documentation! Always cross-verify with multiple git commands to ensure complete coverage.
 
+### "Restore files"
+**Critical workflow for discarding local changes and restoring files to their last committed state.**
+
+**⚠️ DESTRUCTIVE OPERATION WARNING ⚠️**
+`git restore` permanently discards uncommitted changes in working directory. **ALWAYS backup important changes before restoration.**
+
+**When to use git restore:**
+- Discard unwanted local modifications
+- Revert experimental changes back to last commit
+- Fix corrupted files by restoring clean versions
+- Undo accidental edits or formatting damage
+- Reset to known good state after failed operations
+
+**Basic Restore Operations:**
+```powershell
+# Restore single file to last committed state
+git restore "filename.ens"
+
+# Restore multiple files
+git restore "file1.ens" "file2.ens"
+
+# Restore all modified files in current directory
+git restore .
+
+# Restore all tracked files in repository (use with extreme caution)
+git restore --staged --worktree .
+```
+
+**Safety-First Restore Workflow:**
+1. **MANDATORY**: Run `git status` to see all modified files
+2. **BACKUP**: Create backup if unsure: `Copy-Item "file.ens" "file.ens.backup"`
+3. **VERIFY**: Check what will be restored: `git diff "filename.ens"`
+4. **RESTORE**: Execute restore command
+5. **VALIDATE**: Confirm restoration: `git status` should show clean state
+
+**Advanced Restore Options:**
+```powershell
+# Restore file from specific commit (not just HEAD)
+git restore --source=HEAD~1 "filename.ens"
+
+# Restore from specific branch
+git restore --source=main "filename.ens"
+
+# Restore only staged changes (keep working directory changes)
+git restore --staged "filename.ens"
+
+# Restore both staged and working directory changes
+git restore --staged --worktree "filename.ens"
+```
+
+**PowerShell Integration Tips:**
+```powershell
+# Check file status before restore
+$files = @("file1.ens", "file2.ens")
+foreach ($file in $files) {
+    Write-Host "Status of $file:"
+    git status --porcelain $file
+}
+
+# Conditional restore with confirmation
+$modifiedFiles = git diff --name-only
+if ($modifiedFiles) {
+    Write-Host "Modified files: $($modifiedFiles -join ', ')"
+    $confirm = Read-Host "Restore all modified files? (y/N)"
+    if ($confirm -eq 'y') { git restore $modifiedFiles }
+}
+```
+
+**ENSDF-Specific Restore Scenarios:**
+```powershell
+# Restore ENSDF file and validate format
+git restore "Si35_adopted.ens"
+python .github/column_calibrate.py "Si35_adopted.ens"
+
+# Restore multiple ENSDF files for element
+git restore "A35/Si35/new/*.ens"
+
+# Emergency restore entire ENSDF dataset
+git restore "A35/" --recurse-submodules
+```
+
+**Critical Safety Rules:**
+- **NEVER restore without `git status` first** - understand what you're discarding
+- **BACKUP uncertain changes** before restore operations
+- **VALIDATE post-restore** - run format checks on restored ENSDF files
+- **DOCUMENT restoration** in change.log with reason and scope
+- **USE SPECIFIC PATHS** - avoid blanket `git restore .` without careful consideration
+
+**Common Restore Patterns:**
+- **Experiment gone wrong**: `git restore "experimental_file.ens"`
+- **Format corruption**: `git restore "corrupted_file.ens" && python .github/column_calibrate.py "corrupted_file.ens"`
+- **Partial restore**: `git restore --source=HEAD~1 "specific_file.ens"` (restore from earlier commit)
+- **Clean slate**: `git status && git restore .` (restore all, with status verification)
+
+**Integration with ENSDF Workflows:**
+1. **Before major edits**: `git status` → backup important files → proceed with edits
+2. **After failed edits**: `git restore "filename.ens"` → restart with clean file
+3. **Post-restore validation**: Always run column calibration and energy ordering checks
+4. **Documentation**: Update change.log explaining what was restored and why
+
 ### "Fix format!"
 Auto-convert text to proper ENSDF notation:
 
@@ -751,6 +851,125 @@ foreach ($element in $elements) {
     }
 }
 ```
+
+### Git Workflows
+
+#### Status and Change Detection
+**ALWAYS START**: `git status` to identify all modified files before any operation.
+
+```powershell
+# Complete status overview
+git status
+
+# Show only modified file names
+git diff --name-only HEAD
+
+# Check untracked files
+git ls-files --others --exclude-standard
+
+# Show staged vs unstaged changes
+git status --porcelain
+```
+
+#### File Restoration Workflows
+**Critical for undoing local changes and restoring clean state:**
+
+```powershell
+# Basic restoration patterns
+git restore "filename.ens"                    # Restore single file
+git restore "A35/Si35/new/*.ens"             # Restore multiple files by pattern
+git restore .                                 # Restore all modified files (use carefully)
+
+# Advanced restoration options
+git restore --source=HEAD~1 "filename.ens"   # Restore from specific commit
+git restore --source=main "filename.ens"     # Restore from specific branch
+git restore --staged "filename.ens"          # Unstage file (keep working changes)
+git restore --staged --worktree "filename.ens" # Restore both staged and working
+```
+
+**Safety Protocol for Restoration:**
+1. **MANDATORY**: Run `git status` first to understand what will be lost
+2. **BACKUP**: `Copy-Item "file.ens" "file.ens.backup"` if uncertain
+3. **VERIFY**: `git diff "filename.ens"` to see what changes will be discarded
+4. **RESTORE**: Execute restore command
+5. **VALIDATE**: Run `git status` and ENSDF format validation tools
+6. **DOCUMENT**: Update change.log explaining restoration reason and scope
+
+#### Comprehensive Change Analysis
+**For detailed examination of modifications:**
+
+```powershell
+# Examine specific file changes
+git diff HEAD~1 "filename.ens"               # See what changed in file
+git show HEAD~1:"old/path/file" | Select-Object -First 20  # View previous content
+
+# Compare working directory vs staged vs committed
+git diff                                      # Working vs staged
+git diff --staged                            # Staged vs last commit
+git diff HEAD                                # Working vs last commit
+
+# Historical analysis
+git log --oneline -n 10                      # Recent commits
+git log --stat -n 5                          # Recent commits with file statistics
+```
+
+#### Branch and Repository Management
+**For broader repository operations:**
+
+```powershell
+# Branch operations (when needed)
+git branch -v                                # Show all branches with last commit
+git switch main                              # Switch to main branch (modern syntax)
+git switch -c new-branch                     # Create and switch to new branch
+
+# Repository state verification
+git remote -v                                # Show remote repositories
+git log --graph --oneline -n 10             # Visual commit history
+git clean -n                                 # Preview what would be cleaned (dry run)
+```
+
+#### Emergency Recovery Patterns
+**For critical situations:**
+
+```powershell
+# Complete workspace reset (DESTRUCTIVE - use with extreme caution)
+git status                                   # MANDATORY first step
+git restore --staged --worktree .           # Restore everything to last commit
+git clean -fd                               # Remove untracked files and directories
+
+# Selective restoration for ENSDF workflows
+git restore "A35/*/new/*.ens"               # Restore all ENSDF files
+python .github/column_calibrate.py "restored_file.ens"  # Validate after restore
+
+# Backup before major operations
+$timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
+git archive HEAD | tar -x -C "backup_$timestamp"   # Create full backup
+```
+
+#### Integration with ENSDF Workflows
+**Combining git operations with nuclear data validation:**
+
+```powershell
+# Restore and validate workflow
+git restore "Si35_adopted.ens"
+python .github/column_calibrate.py "Si35_adopted.ens"
+python .github/check_gamma_ordering.py "Si35_adopted.ens"
+
+# Pre-edit safety workflow
+git status                                   # Check current state
+Copy-Item "file.ens" "file.ens.backup"     # Create backup
+# ... make edits ...
+git diff "file.ens"                         # Verify changes
+git restore "file.ens.backup"               # Restore from backup if needed
+```
+
+**Critical Safety Rules:**
+- **NEVER use `git restore` without `git status` first** - understand what you're discarding
+- **ALWAYS backup uncertain changes** before restoration operations
+- **VALIDATE post-restore** - run ENSDF format checks on restored files
+- **DOCUMENT all restorations** in change.log with clear rationale
+- **USE SPECIFIC PATHS** - avoid blanket operations without careful consideration
+- **VERIFY COMPLETION** - confirm clean state with `git status` after operations
 
 ### Change Detection Process
 1. **Pre-work (MANDATORY)**: `git status`, `git diff --name-only HEAD`

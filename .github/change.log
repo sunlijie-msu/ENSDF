@@ -1,5 +1,82 @@
 # Change Log for ENSDF Edits
 
+## 2025-09-10: Enhanced Git Workflows Documentation and File Restoration Protocols
+
+**Summary**: Comprehensive revision and enhancement of git workflows in instructions.md, adding detailed file restoration protocols and safety procedures in response to user request for professional git restore documentation.
+
+### Git Workflows Documentation Enhancement
+
+#### File: `.github/copilot-instructions.md` (Lines 202-305 and 854-1050 enhanced)
+**Complete git restore workflow integration**:
+- **Command Triggers Section**: Added comprehensive "Restore files" section (Lines 202-305)
+  - Destructive operation warnings with backup requirements and safety protocols
+  - Basic and advanced restore operations with PowerShell examples
+  - Safety-first workflow protocols with mandatory git status checks
+  - ENSDF-specific restore scenarios with validation commands
+  - Integration with nuclear data validation workflows
+  - PowerShell integration tips for conditional restoration
+  - Common restore patterns and emergency procedures
+- **Tools and Workflows Section**: Enhanced detailed "Git Workflows" section (Lines 854-1050)
+  - Status and change detection protocols with mandatory git status requirement
+  - File restoration workflows with comprehensive safety protocols
+  - Comprehensive change analysis commands for detailed file examination
+  - Branch and repository management procedures
+  - Emergency recovery patterns with extreme caution warnings
+  - Complete ENSDF workflow integration examples with validation tools
+
+**Key Professional Improvements**:
+- **Safety Emphasis**: Multiple warnings about destructive nature of git restore with backup requirements
+- **Professional Language**: Concise, professional documentation addressing user concerns about git restore safety
+- **PowerShell Compatibility**: All commands tested and formatted for Windows PowerShell environment
+- **ENSDF Integration**: Specific examples for nuclear data file restoration with format validation
+- **Backup Protocols**: Mandatory backup procedures before any restoration operation
+- **Validation Requirements**: Post-restoration format validation requirements with specific tools
+
+**Technical Documentation Additions**:
+- Advanced restore options (--source=HEAD~1, --source=main, --staged, --worktree)
+- PowerShell integration scripts for conditional restoration with user confirmation
+- Emergency recovery patterns for critical repository state issues
+- Complete workflow integration with column calibration and gamma ordering tools
+- Documentation requirements for restoration activities in change.log
+- Critical safety rules emphasizing git status requirement before any restore operation
+
+## 2025-09-10: Enhanced Git Workflows Documentation
+
+**Summary**: Comprehensive revision and enhancement of git workflows in instructions.md, adding detailed file restoration protocols and safety procedures.
+
+### Git Workflows Documentation Enhancement
+
+#### File: `.github/copilot-instructions.md` (Lines 202-305 and 854-955 added)
+**Complete git restore workflow integration**:
+- **Command Triggers Section**: Added comprehensive "Restore files" section (Lines 202-305)
+  - Destructive operation warnings with backup requirements
+  - Basic and advanced restore operations with PowerShell examples
+  - Safety-first workflow protocols with mandatory git status checks
+  - ENSDF-specific restore scenarios with validation commands
+  - Integration with nuclear data validation workflows
+- **Tools and Workflows Section**: Added detailed "Git Workflows" section (Lines 854-955)
+  - Status and change detection protocols
+  - File restoration workflows with safety protocols
+  - Comprehensive change analysis commands
+  - Branch and repository management procedures
+  - Emergency recovery patterns with extreme caution warnings
+  - ENSDF workflow integration examples
+
+**Key Improvements**:
+- **Safety Emphasis**: Multiple warnings about destructive nature of git restore
+- **PowerShell Compatibility**: All commands tested for Windows PowerShell environment
+- **ENSDF Integration**: Specific examples for nuclear data file restoration
+- **Professional Documentation**: Concise, professional language addressing user concerns
+- **Backup Protocols**: Mandatory backup procedures before any restoration
+- **Validation Requirements**: Post-restoration format validation requirements
+
+**Technical Additions**:
+- Advanced restore options (--source, --staged, --worktree)
+- PowerShell integration scripts for conditional restoration
+- Emergency recovery patterns for critical situations
+- Complete workflow integration with column calibration tools
+- Documentation requirements for restoration activities
+
 ## 2025-07-19: Systematic JSON/PNG Data Integration and ENSDF File Enhancement
 
 **Summary**: Completed comprehensive nuclear data integration from multiple JSON sources and PNG images into proper ENSDF format. Added three new thermal neutron capture data files, enhanced scientific descriptions, and removed tentative spin-parity assignments. Updated development tools and documentation standards.
