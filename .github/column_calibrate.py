@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 ENSDF Column Calibration Script - Enhanced with Line Length Fixing
 =================================================================
@@ -10,7 +10,7 @@ ENSDF L-Record Field Positions (Mandatory):
 - Columns 1-5:   NUCID
 - Column 8:      Record type "L" 
 - Columns 10-19: Energy field (E)
-- Columns 23-39: J-π field (starts at col 23)
+- Columns 23-39: J-pi field (starts at col 23)
 - Columns 40-49: Half-life (T) field
 - Columns 56-64: Angular momentum transfer (L)
 - Columns 65-74: Spectroscopic factor (S)
@@ -133,12 +133,12 @@ def fix_line_lengths(filename, dry_run=False):
     if not dry_run and lines_modified > 0:
         with open(filename, 'w') as f:
             f.writelines(fixed_lines)
-        print(f"\n✅ File updated: {filename}")
-        print("✅ All data record lines now exactly 80 characters")
+        print(f"\nSUCCESS: File updated: {filename}")
+        print("SUCCESS: All data record lines now exactly 80 characters")
     elif dry_run and lines_modified > 0:
-        print(f"\n📋 DRY RUN: Would modify {lines_modified} data record lines")
+        print(f"\nDRY RUN: Would modify {lines_modified} data record lines")
     elif lines_modified == 0:
-        print("\n✅ All data record lines already exactly 80 characters - no changes needed")
+        print("\nSUCCESS: All data record lines already exactly 80 characters - no changes needed")
     
     return lines_modified, 0
 
@@ -156,12 +156,75 @@ def find_field_positions(line, field_chars):
             positions.append(i)
     return positions
 
-def validate_ensdf_file(filename, detailed=False, header_only=False):
+def validate_band_flags(filename):
+    """Validate band assignment flags are positioned in column 77"""
+    print(f"\nBAND FLAG VALIDATION: {filename}")
+    print("=" * 60)
+    print("Checking band assignment flags (A, B, b, C, c) in column 77...")
+    print()
+    print('ENSDF 80-Column Ruler:')
+    print('         1         2         3         4         5         6         7         8')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+    print(' ' * 76 + '^-- Column 77 (required position)')
+    print()
+    
+    band_flags = ['A', 'B', 'b', 'C', 'c']
+    errors_found = False
+    flags_analyzed = 0
+    
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    
+    for line_num, line in enumerate(lines, 1):
+        line_content = line.rstrip('\n\r')
+        
+        # Check if this is an L-record with potential band flags
+        if len(line_content) < 10 or ' L ' not in line_content[6:10]:
+            continue
+        
+        # Look for band flags anywhere in the line after column 70
+        flag_found = None
+        flag_position = None
+        
+        for i, char in enumerate(line_content[70:], 71):
+            if char in band_flags:
+                flag_found = char
+                flag_position = i
+                break
+        
+        if flag_found:
+            flags_analyzed += 1
+            if flag_position == 77:
+                print(f"OK Line {line_num}: Band flag '{flag_found}' correctly positioned in column 77")
+            else:
+                print(f"ERROR Line {line_num}: Band flag '{flag_found}' INCORRECTLY positioned in column {flag_position}")
+                print(f"   Expected: column 77, Actual: column {flag_position}")
+                print(f"   Line content: {line_content}")
+                print(f"   {' ' * (flag_position - 1)}^(actual: {flag_position})")
+                print(f"   {' ' * 76}^(required: 77)")
+                errors_found = True
+            print()
+    
+    print(f"BAND FLAG SUMMARY:")
+    print(f"  Total L-records with band flags analyzed: {flags_analyzed}")
+    
+    if errors_found:
+        print(f"  ERROR: Some band flags incorrectly positioned")
+        print(f"  All band flags must be in column 77 exactly")
+        return False
+    else:
+        print(f"  SUCCESS: All band flags correctly positioned in column 77")
+        return True
+
+def validate_ensdf_file(filename, detailed=False, header_only=False, band_only=False):
     """Validate ENSDF file field positions focusing on data record lines."""
     
     if not os.path.exists(filename):
         print(f"ERROR: File {filename} not found!")
         return False
+    
+    if band_only:
+        return validate_band_flags(filename)
         
     print(f"Validating ENSDF file: {filename}")
     print("=" * 60)
@@ -190,7 +253,7 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
                 print(f"  Line {line_num}: {record_type} record - {length} chars (short by {80 - length})")
             else:
                 print(f"  Line {line_num}: {record_type} record - {length} chars (long by {length - 80})")
-        print("\n💡 Use --fix flag to automatically correct data record line lengths")
+        print("\nUSE --fix flag to automatically correct data record line lengths")
         print("   Example: python column_calibrate.py \"filename.ens\" --fix")
         print("   Note: Comment lines are handled by separate tools")
         print()
@@ -225,10 +288,10 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
             
             # CORRECT L-field validation logic based on user specification:
             # Rule: L always starts from col 56
-            # Examples: L=1 → 1 at col 56
-            #          L=1+2 → 1 at col 56, +2 at col 57-58  
-            #          L=1,2 → 1 at col 56, ,2 at col 57-58
-            #          L=1,2,3 → 1 at col 56, ,2 at col 57-58, ,3 at col 59-60
+            # Examples: L=1 -> 1 at col 56
+            #          L=1+2 -> 1 at col 56, +2 at col 57-58  
+            #          L=1,2 -> 1 at col 56, ,2 at col 57-58
+            #          L=1,2,3 -> 1 at col 56, ,2 at col 57-58, ,3 at col 59-60
             
             # Check if the first character of L-field is at column 56
             first_char_at_56 = line[55] if len(line) > 55 else ' '  # Column 56 (0-based index 55)
@@ -254,11 +317,16 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
             print()
     
     if not errors_found:
-        print("✅ All ENSDF field positions appear correct!")
+        print("SUCCESS: All ENSDF field positions appear correct!")
         if length_issues == []:  # No length issues either
-            print("✅ All data record lines are exactly 80 characters!")
+            print("SUCCESS: All data record lines are exactly 80 characters!")
     else:
-        print("❌ Field positioning errors found - see details above")
+        print("ERROR: Field positioning errors found - see details above")
+    
+    # Always validate band flags unless header-only mode
+    if not header_only:
+        band_success = validate_band_flags(filename)
+        return (not errors_found) and band_success
         
     return not errors_found
 
@@ -272,6 +340,7 @@ Examples:
   python column_calibrate.py "file.ens" --fix        # Fix line lengths
   python column_calibrate.py "file.ens" --detailed   # Detailed analysis
   python column_calibrate.py "file.ens" --header     # Header check only
+  python column_calibrate.py "file.ens" --band-only  # Band flags only
   python column_calibrate.py "file.ens" --fix --dry-run  # Preview changes
         """
     )
@@ -285,6 +354,8 @@ Examples:
                        help='Show detailed character mapping with ruler')
     parser.add_argument('--header', action='store_true',
                        help='Check header format only')
+    parser.add_argument('--band-only', action='store_true',
+                       help='Check band flag positioning only')
     
     args = parser.parse_args()
     
@@ -293,6 +364,7 @@ Examples:
     dry_run = args.dry_run
     detailed = args.detailed
     header_only = args.header
+    band_only = args.band_only
     
     if not os.path.exists(filename):
         print(f"ERROR: File '{filename}' not found!")
@@ -309,7 +381,7 @@ Examples:
     
     # Always validate after fixing (or just validate if no fix)
     if not dry_run:  # Skip validation during dry run to avoid redundant output
-        validation_success = validate_ensdf_file(filename, detailed=detailed, header_only=header_only)
+        validation_success = validate_ensdf_file(filename, detailed=detailed, header_only=header_only, band_only=band_only)
         success = success and validation_success
     
     sys.exit(0 if success else 1)
