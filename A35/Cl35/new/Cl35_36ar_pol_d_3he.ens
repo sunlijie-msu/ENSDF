@@ -3,14 +3,14 @@
  35CL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35S  c  J|p=0+ for {+36}Ar ground state.                                       
+ 35CL c  J|p=0+ for {+36}Ar ground state.                                       
  35CL c  1993Ma50: a 52-MeV polarized deuteron beam at 15 nA was produced from  
  35CL2c  the Karlsruhe isochronous cyclotron at the Max-Plank-Institut fur      
  35CL3c  Kernphysik. The target was 350-mbar 99.86% enriched {+36}Ar gas.       
  35CL4c  Reaction products were detected using a Si detector telescope          
  35CL5c  consisting of a 250-|mm |DE-strip detector and a 1.5 -mm               
  35CL6c  surface-barrier E detector with FWHM=130 keV. Measured angular         
- 35CL7c  distributions of cross sections |sE({+3}He),|q) and angular            
+ 35CL7c  distributions of cross sections |s(E({+3}He),|q) and angular           
  35CL8c  distributions of analyzing powers iT{-11}(E({+3}He),|q). Deduced       
  35CL9c  levels, J, |p, L-transfers, and spectroscopic factors from DWBA        
  35CLAc  analysis of |s(E({+3}He),|q) and iT{-11}(E({+3}He),|q).                
@@ -27,44 +27,62 @@
  35CL2cL proton transfer assumed in DWBA calculations                           
  35CL cL J(B),S(B)$L+1/2 transfer from analyzing power measurements; 1d{-5/2}   
  35CL2cL proton transfer assumed in DWBA calculations                           
- 35S  cL L,S$From DWBA analysis of the measured |s(|q) in 1993Ma50.             
+ 35CL cL E(C)$No data on |s(E({+3}He),|q), iT{-11}(E({+3}He),|q), or L-transfer 
+ 35CL2cL is given.                                                              
+ 35CL cL J,L,S$From DWBA analysis of the measured |s(|q) in 1993Ma50.           
  35CL cL $Spectroscopic factor C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N, where N=2.95
  35CL2cL is a normalization factor used by 1993Ma50 from 1966Ba54.              
  35CL cL S$LABEL=C{+2}S                                                         
  35CL  L 0            3/2+                             2        1.72        A   
  35CL  L 1213      4  1/2+                             0        0.78            
- 35CL  L 1785      50 (5/2+)                                    0.04            
- 35CL  L 2676      7  (3/2+)                                    0.16            
+ 35CL cL J$2s{-1/2}.                                                            
+ 35CL  L 1785      50                                           0.04        C   
+ 35CL cL $J|p=(5/2+) is given in Table 2 of 1993Ma50.                           
+ 35CL  L 2676      7                                            0.16        C   
+ 35CL cL E$possible doublet of 2645.6 and 2693.6 (1990En08).                    
+ 35CL cL $J|p=(3/2+) is given in Table 2 of 1993Ma50.                           
  35CL  L 3002      6  5/2+                             2        1.32        B   
  35CL  L 3159      20 7/2-                             3        0.19            
- 35CL  L 3948      40 (1/2+,3/2+)                               0.08            
- 35CL cL E$unresolved doublet of 3918.48 and 3967.5 (1990En08)                  
- 35CL cL S$for J|p=1/2+; 0.03 for J|p=3/2+ (1993Ma50)                           
- 35CL  L 4839      12                                     0.08            
+ 35CL cL J$1f{-7/2}.                                                            
+ 35CL  L 3948      40 (3/2+)                           2        0.03        A   
+ 35CL cL E$possible doublet of 3918.48 and 3967.5 (1990En08)                    
+ 35CL cL S$for J|p=3/2+; 0.08 for J|p=1/2+ (1993Ma50)                           
+ 35CL  L 4839      12                                                       C   
  35CL cL E$possible doublet of 4839.09 (1/2+,3/2) (1990En08) and an unspecified 
  35CL2cL (1/2+) component.                                                      
- 35CL cL J$(5/2+) but no angular distribution was given in 1993Ma50.            
- 35CL cL S$for J|p=5/2+; 0.03 for J|p=1/2+ (1993Ma50)                           
- 35CL  L 5155      11 (5/2+)                                    0.12        B   
+ 35CL cL $J|p=(5/2+) and (1/2+) are given in Table 2 of 1993Ma50.               
+ 35CL cL S$0.08 for J|p=5/2+; 0.03 for J|p=1/2+ (1993Ma50)                      
+ 35CL  L 5155      11 (5/2+)                           2        0.12        B   
  35CL cL E$possible doublet of 5163.31 and 5215.8 (1990En08).                   
- 35CL cL J$1d{-5/2} in Fig. 3 of 1993Ma50. (7/2-) in Table 2 of 1993Ma50.       
- 35CL cL S$for J|p=5/2+ (1993Ma50)                                              
+ 35CL cL J$(7/2-) and 5/2+ are given in Table 2 of 1993Ma50.                    
  35CL  L 5583      13 5/2+                             2        0.38        B   
  35CL  L 5720      11 5/2+                             2        1.10        B   
  35CL  L 6136      8  5/2+                             2        0.63        B   
- 35CL  L 6745      12 (1/2,5/2)+                                0.09            
+ 35CL  L 6745      12 1/2+                             0        0.09            
+ 35CL cL J$2s{-1/2}. 5/2+ and 1/2+ are given in Table 2 of 1993Ma50.            
  35CL cL S$for J|p=1/2+; 0.28 for J|p=5/2+ (1993Ma50)                           
  35CL  L 6953      43 5/2+                             2        0.49        B   
  35CL  L 7181      60 5/2+                             2        0.20        B   
  35CL  L 7565      20 5/2+                             2        0.30        B   
- 35CL  L 8007      36 (1/2-,5/2+)                               0.16            
+ 35CL  L 8007      36 1/2-                             1        0.16            
+ 35CL cL J$1p{-1/2}. 5/2+ and 1/2+ are given in Table 2 of 1993Ma50.            
  35CL cL S$for J|p=1/2-; 0.20 for J|p=5/2+ (1993Ma50)                           
  35CL  L 8204      34 5/2+                             2        0.14        B   
- 35CL  L 8580      20 5/2+                             2        0.22        B   
- 35CL  L 8921      70 5/2+                             2        0.18        B   
- 35CL  L 9.22E3    12 5/2+                             2        0.12        B   
- 35CL  L 9514      20 (1/2-,5/2+)                               0.18            
+ 35CL  L 8580      20                                                       C   
+ 35CL cL $J|p=5/2+ is given in Table 2 of 1993Ma50.                             
+ 35CL cL S$0.22 for J|p=5/2+ (1993Ma50)                                         
+ 35CL  L 8921      70                                                       C   
+ 35CL cL $J|p=5/2+ is given in Table 2 of 1993Ma50.                             
+ 35CL cL S$0.18 for J|p=5/2+ (1993Ma50)                                         
+ 35CL  L 9.22E3    12                                                       C   
+ 35CL cL $J|p=5/2+ is given in Table 2 of 1993Ma50.                             
+ 35CL cL S$0.12 for J|p=5/2+ (1993Ma50)                                         
+ 35CL  L 9514      20 1/2-                                      0.18            
+ 35CL cL J$1p{-1/2}. 5/2+ and 1/2- are given in Table 2 of 1993Ma50.            
  35CL cL S$for J|p=1/2-; 0.30 for J|p=5/2+ (1993Ma50)                           
- 35CL  L 9.82E3    12 (1/2-,5/2+)                               0.10            
+ 35CL  L 9.82E3    12 1/2-                                      0.10            
+ 35CL cL J$1p{-1/2}. 5/2+ and 1/2- are given in Table 2 of 1993Ma50.            
  35CL cL S$for J|p=1/2-; 0.26 for J|p=5/2+ (1993Ma50)                           
+ 35CL  L 1.25E4
+ 35CL cL $1d{-5/2} is given for a range of 12.0-13.0 MeV in Fig. 4 of 1993Ma50. 
 
