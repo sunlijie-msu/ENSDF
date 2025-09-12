@@ -119,8 +119,9 @@ Since 2015, the MSU Nuclear Data Center has been consistently recognized as one 
 ## Summary Table
 This table summarizes all ENSDF datasets compiled from XUNDL submissions with comprehensive review tracking for professional work effort documentation.
 
-| Compilation Date | Manuscript | NSR Keynumber | Nucleus | Reaction                 | Review  | Dataset |
+| Compilation Date | Manuscript | NSR Keynumber | Nucleus | Reaction             | Review  | Dataset |
 |----------|---------|----------|-------|---------------------------|---|----------------------------|
+| 20250912 | CH11036 | 2025LAAA | 127I  | 124SN(7LI,4NG):XUNDL-7    | 1 | 2025LAAA_CH11036_127I.ens  |
 | 20250811 | CG11116 | 2025ABAA | 99NB  | 9BE(238U,FG):XUNDL-3      | 1 | 2025ABAA_CG11116_99Nb.ens  |
 | 20250811 | CG11116 | 2025ABAA | 105NB | 9BE(238U,FG):XUNDL-4      | 1 | 2025ABAA_CG11116_105Nb.ens |
 | 20250811 | CG11116 | 2025ABAA | 107NB | 9BE(238U,FG):XUNDL-5      | 1 | 2025ABAA_CG11116_107Nb.ens |
@@ -133,14 +134,15 @@ This table summarizes all ENSDF datasets compiled from XUNDL submissions with co
 ## Work Effort Summary
 
 ### Papers Processed
-- **Total papers**: 4 publications from 3 PRC papers (submitted/in preparation)
-- **NSR keynumbers**: CG11116, CF10919, CF10990, CC10963
-- **Total datasets compiled**: 7 nuclear datasets covering isotopes A=96 to A=125
-- **Total review rounds completed**: 6 review rounds across 4 papers
+- **Total papers**: 5 publications from 4 PRC papers (submitted/in preparation)
+- **NSR keynumbers**: CH11036, CG11116, CF10919, CF10990, CC10963
+- **Total datasets compiled**: 8 nuclear datasets covering isotopes A=96 to A=127
+- **Total review rounds completed**: 7 review rounds across 5 papers
 
 ### Review Round Breakdown
 | Paper Code | Datasets | Review Rounds | Status |
 |------------|----------|---------------|---------|
+| CH11036    | 1        | 1             | Completed |
 | CG11116    | 4        | 1             | Completed |
 | CF10919    | 1        | 2             | Completed |
 | CF10990    | 1        | 1             | Completed |
@@ -153,14 +155,14 @@ This table summarizes all ENSDF datasets compiled from XUNDL submissions with co
 All datasets follow strict 80-column ENSDF formatting requirements and have been validated using automated column calibration tools.
 
 ### Analysis Tools:
-- **Gamma-ray fitting:** GLSC (various versions: 17-Jul-2025, 30-Jun-2025, 21-Mar-2025)
+- **Gamma-ray fitting:** GLSC (various versions: 19-Aug-2025, 17-Jul-2025, 30-Jun-2025, 21-Mar-2025)
 - **Level energy determination:** Least-squares fitting
 - **ENSDF compilation:** Following standard ENSDF Manual protocols
 
 ### Compilation Period:
-**Active Period:** March 2025 - August 2025
-**Total Datasets:** 7 nuclear datasets covering isotopes from A=96 to A=125
-**Total Publications:** 3 PRC papers (submitted/in preparation)
+**Active Period:** March 2025 - September 2025
+**Total Datasets:** 8 nuclear datasets covering isotopes from A=96 to A=127
+**Total Publications:** 4 PRC papers (submitted/in preparation)
 
 
 
