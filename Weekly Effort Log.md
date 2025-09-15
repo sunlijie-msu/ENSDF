@@ -97,6 +97,9 @@ Received training from my line manager regarding the A=35 evaluation. Revised th
 Lijie Sun - 31 August 2025 - 6 September 2025
 Received training from my line manager regarding the A=35 evaluation. Added 7 reaction datasets for 35Cl. Performed the data consistency check for CH11036 and XUNDL compilation for 127I data in 2025LaAA. Provided support to users of E23035 and E25058 through the FRIENDS project.
 
+Lijie Sun - 7 September 2025 - 13 September 2025
+Received training from my line manager regarding the A=35 evaluation and data consistency check. Added 2 reaction datasets for 35Cl. Performed the data consistency check for CH11036 and XUNDL compilation for 127I data in 2025LaAA.
+
 # FRIB Laboratory Activities
 
 ## Nuclear Data Group
