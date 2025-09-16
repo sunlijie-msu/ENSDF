@@ -510,7 +510,7 @@ Example: 35P   L 1572.0    1  1/2+             2.29 PS  14        2        1.23 
 | E | 10-19 | ✓ | Level energy (LEFT-JUSTIFIED) |
 | DE | 20-21 | | Energy uncertainty (LEFT-JUSTIFIED) |
 | SPACE | 22 | ✓ | Readability space |
-| J | 23-39 | | Spin-parity (LEFT-JUSTIFIED at col 23) |
+| J | 23-39 | | Spin-parity (LEFT-JUSTIFIED at col 23) - See J-π Assignment Confidence Notation rules |
 | T | 40-49 | | Half-life with units (LEFT-JUSTIFIED) |
 | DT | 50-55 | | Half-life uncertainty (LEFT-JUSTIFIED) |
 | L | 56-64 | | Angular momentum transfer |
@@ -902,6 +902,58 @@ Duplicates: "the the" etc.
 - L=3 → J-π: `5/2-,7/2-`
 
 **Note**: Always confirm with experimental data; never enter L-values in J-π column.
+
+### J-π Assignment Confidence Notation (CRITICAL)
+**🚨 FUNDAMENTAL RULE**: J = spin; π = parity
+- **WITHOUT parentheses**: Firm, well-established assignments (e.g., `3/2+`, `7/2-`)
+- **WITH parentheses**: Less certain, tentative assignments (e.g., `(3/2+)`, `(7/2-)`)
+- **Parentheses indicate uncertainty in the assignment confidence, not the measurement precision**
+- **NEVER change parentheses notation without experimental justification**
+
+#### **Complete J-π Notation Patterns (COMPREHENSIVE)**
+
+**Basic Single Assignments:**
+- `1/2-` = firmly established spin-parity 
+- `(9/2+)` = tentative or less certain spin-parity assignment
+- `7/2(+)` = firm spin with tentative parity
+- `(11/2)` = tentative spin, parity unknown or undetermined
+- `+` = only positive parity determined, spin unknown
+- `-` = only negative parity determined, spin unknown
+- `(+)` = tentative positive parity, spin unknown
+- `(-)` = tentative negative parity, spin unknown
+
+**Multiple Possible Assignments:**
+- `1/2-,3/2-` = multiple firm possibilities (both certain, comma-separated)
+- `(5/2+,7/2+)` = multiple tentative possibilities (all uncertain)
+- `(1/2,3/2)+` = multiple tentative spins with firm positive parity
+- `(7/2,9/2)-` = multiple tentative spins with firm negative parity
+- `(1/2,3/2,5/2)-` = multiple tentative spins with firm negative parity
+- `(3/2,5/2,7/2+)` = mixed notation: first two spins tentative, last spin+parity certain
+
+**Range Assignments:**
+- `(1/2+:7/2+)` = range of tentative spin-parity assignments from 1/2+ to 7/2+
+- `(1/2:9/2)-` = range of tentative spins from 1/2 to 9/2 with firm negative parity
+- `1/2+:5/2+` = range of firm spin-parity assignments from 1/2+ to 5/2+
+- `(3/2:11/2)` = range of tentative spins from 3/2 to 11/2, parity undetermined
+
+**Mixed Confidence Patterns:**
+- `3/2-,(5/2-)` = first assignment firm, second tentative
+- `(7/2)+,9/2+` = first assignment tentative, second firm
+- `1/2(+),3/2-` = first has tentative parity, second fully firm
+- `(5/2)+,(7/2)-` = multiple assignments with different confidence levels
+
+**Special Cases:**
+- `1/2+,3/2-` = multiple firm assignments with different parities
+- `(5/2+,7/2-)` = multiple tentative assignments with different parities
+- `3/2,5/2,7/2` = multiple possible spins, parity undetermined
+- `(1/2,3/2,5/2)` = multiple tentative spins, parity undetermined
+
+**CRITICAL FORMATTING RULES:**
+- **Comma separation** for multiple possibilities within same confidence level
+- **Parentheses apply to entire group** when wrapping multiple values
+- **Mixed notation allowed** with different confidence per assignment
+- **No spaces** around commas in J-π field
+- **Exact reproduction required** - never modify parentheses placement without experimental justification
 
 ## Tools and Workflows
 
