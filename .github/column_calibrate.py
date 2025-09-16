@@ -16,10 +16,11 @@ ENSDF L-Record Field Positions (Mandatory):
 - Columns 65-74: Spectroscopic factor (S)
 
 Usage: 
-  python column_calibrate.py "filename.ens"              # Validate only
-  python column_calibrate.py "filename.ens" --fix        # Validate and fix line lengths
-  python column_calibrate.py "filename.ens" --detailed   # Detailed character mapping
-  python column_calibrate.py "filename.ens" --header     # Header format check only
+  python column_calibrate.py "filename.ens"                  # Validate only
+  python column_calibrate.py "filename.ens" --fix            # Validate and fix line lengths  
+  python column_calibrate.py "filename.ens" --detailed       # Detailed character mapping
+  python column_calibrate.py "filename.ens" --header         # Header format check only
+  python column_calibrate.py "filename.ens" --comment-flags   # Comment flags (P, D, T, C, etc.)
 """
 
 import sys
@@ -156,21 +157,33 @@ def find_field_positions(line, field_chars):
             positions.append(i)
     return positions
 
-def validate_band_flags(filename):
-    """Validate band assignment flags are positioned in column 77"""
-    print(f"\nBAND FLAG VALIDATION: {filename}")
+def validate_comment_flags(filename):
+    """
+    Validate ALL comment flags are positioned in column 77.
+    
+    ENSDF Format Rule: Comment flags (C field) must be in column 77 exactly.
+    Common comment flags include:
+    - P = Possible level (uncertain assignment)
+    - D = Doublet (two unresolved peaks) 
+    - T = Triplet (three unresolved peaks)
+    - C = Coincidence information
+    - Other alphabetic characters for various comments
+    """
+    print(f"\nCOMMENT FLAG VALIDATION: {filename}")
     print("=" * 60)
-    print("Checking band assignment flags (A, B, b, C, c) in column 77...")
+    print("Checking comment flags in column 77 (C field)...")
+    print("Common flags: P=possible, D=doublet, T=triplet, C=coincidence")
     print()
     print('ENSDF 80-Column Ruler:')
     print('         1         2         3         4         5         6         7         8')
     print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
-    print(' ' * 76 + '^-- Column 77 (required position)')
+    print(' ' * 76 + '^-- Column 77 (C field - comment flags)')
     print()
     
-    band_flags = ['A', 'B', 'b', 'C', 'c']
     errors_found = False
     flags_analyzed = 0
+    flag_summary = {}
+    misplaced_flags = []
     
     with open(filename, 'r') as f:
         lines = f.readlines()
@@ -178,53 +191,95 @@ def validate_band_flags(filename):
     for line_num, line in enumerate(lines, 1):
         line_content = line.rstrip('\n\r')
         
-        # Check if this is an L-record with potential band flags
-        if len(line_content) < 10 or ' L ' not in line_content[6:10]:
+        # Check if this is a data record line (L, G, E, B, DP records)
+        if not is_data_record_line(line_content):
             continue
         
-        # Look for band flags anywhere in the line after column 70
-        flag_found = None
-        flag_position = None
-        
-        for i, char in enumerate(line_content[70:], 71):
-            if char in band_flags:
-                flag_found = char
-                flag_position = i
-                break
-        
-        if flag_found:
-            flags_analyzed += 1
-            if flag_position == 77:
-                print(f"OK Line {line_num}: Band flag '{flag_found}' correctly positioned in column 77")
-            else:
-                print(f"ERROR Line {line_num}: Band flag '{flag_found}' INCORRECTLY positioned in column {flag_position}")
-                print(f"   Expected: column 77, Actual: column {flag_position}")
-                print(f"   Line content: {line_content}")
-                print(f"   {' ' * (flag_position - 1)}^(actual: {flag_position})")
-                print(f"   {' ' * 76}^(required: 77)")
-                errors_found = True
+        # Check columns 75-80 for ANY alphabetic characters (potential comment flags)
+        for col in range(75, min(len(line_content), 81)):  # Check columns 75-80
+            char = line_content[col - 1]  # Convert to 0-based index
+            
+            # ANY alphabetic character could be a comment flag
+            if char.isalpha():
+                flags_analyzed += 1
+                
+                # Track flag types for summary
+                if char not in flag_summary:
+                    flag_summary[char] = {'correct': 0, 'incorrect': []}
+                
+                if col == 77:
+                    # Interpret common flags
+                    flag_meaning = {
+                        'P': 'possible level', 'D': 'doublet', 'T': 'triplet', 
+                        'C': 'coincidence', 'S': 'predicted', '?': 'uncertain'
+                    }.get(char, 'comment')
+                    
+                    print(f"✓ Line {line_num}: Comment flag '{char}' ({flag_meaning}) correctly in column 77")
+                    flag_summary[char]['correct'] += 1
+                else:
+                    print(f"✗ Line {line_num}: Comment flag '{char}' INCORRECTLY positioned in column {col}")
+                    print(f"   Expected: column 77 (C field), Actual: column {col}")
+                    print(f"   Line content: {line_content}")
+                    print(f"   {' ' * (col - 1)}^(actual: {col})")
+                    print(f"   {' ' * 76}^(required: 77)")
+                    flag_summary[char]['incorrect'].append((line_num, col))
+                    misplaced_flags.append((line_num, char, col))
+                    errors_found = True
+                print()
+    
+    # Enhanced summary with flag type breakdown
+    print(f"COMMENT FLAG SUMMARY:")
+    print(f"  Total comment flags analyzed: {flags_analyzed}")
+    print(f"  Flag types found: {', '.join(sorted(flag_summary.keys())) if flag_summary else 'None'}")
+    print()
+    
+    if flag_summary:
+        for flag_type in sorted(flag_summary.keys()):
+            correct_count = flag_summary[flag_type]['correct']
+            incorrect_list = flag_summary[flag_type]['incorrect']
+            total_count = correct_count + len(incorrect_list)
+            
+            # Add meaning for common flags
+            flag_meaning = {
+                'P': '(possible level)', 'D': '(doublet)', 'T': '(triplet)', 
+                'C': '(coincidence)', 'S': '(predicted)', '?': '(uncertain)'
+            }.get(flag_type, '(comment)')
+            
+            print(f"  Flag '{flag_type}' {flag_meaning}: {total_count} total")
+            print(f"    ✓ Correct (column 77): {correct_count}")
+            if incorrect_list:
+                print(f"    ✗ Incorrect positions: {len(incorrect_list)}")
+                for line_num, pos in incorrect_list:
+                    print(f"      Line {line_num}: column {pos}")
             print()
     
-    print(f"BAND FLAG SUMMARY:")
-    print(f"  Total L-records with band flags analyzed: {flags_analyzed}")
-    
     if errors_found:
-        print(f"  ERROR: Some band flags incorrectly positioned")
-        print(f"  All band flags must be in column 77 exactly")
+        print(f"  🚨 ERROR: {len(misplaced_flags)} comment flags incorrectly positioned")
+        print(f"  📏 CRITICAL: ALL comment flags must be in column 77 (C field)")
         return False
     else:
-        print(f"  SUCCESS: All band flags correctly positioned in column 77")
+        print(f"  ✅ SUCCESS: All comment flags correctly positioned in column 77")
         return True
 
-def validate_ensdf_file(filename, detailed=False, header_only=False, band_only=False):
+def validate_band_flags(filename):
+    """
+    DEPRECATED: Use validate_comment_flags() instead.
+    This function only checked limited band flags and missed P, D, and other comment flags.
+    """
+    print(f"\n⚠️  WARNING: validate_band_flags() is deprecated")
+    print(f"   Use validate_comment_flags() for comprehensive comment flag validation")
+    print(f"   The old function only checked A,B,b,C,c and missed P,D,T comment flags!")
+    print()
+    
+    # Call the enhanced function instead
+    return validate_comment_flags(filename)
+
+def validate_ensdf_file(filename, detailed=False, header_only=False):
     """Validate ENSDF file field positions focusing on data record lines."""
     
     if not os.path.exists(filename):
         print(f"ERROR: File {filename} not found!")
         return False
-    
-    if band_only:
-        return validate_band_flags(filename)
         
     print(f"Validating ENSDF file: {filename}")
     print("=" * 60)
@@ -323,10 +378,10 @@ def validate_ensdf_file(filename, detailed=False, header_only=False, band_only=F
     else:
         print("ERROR: Field positioning errors found - see details above")
     
-    # Always validate band flags unless header-only mode
+    # Always validate comment flags unless header-only mode
     if not header_only:
-        band_success = validate_band_flags(filename)
-        return (not errors_found) and band_success
+        comment_flag_success = validate_comment_flags(filename)
+        return (not errors_found) and comment_flag_success
         
     return not errors_found
 
@@ -336,11 +391,12 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python column_calibrate.py "file.ens"              # Validate only
-  python column_calibrate.py "file.ens" --fix        # Fix line lengths
-  python column_calibrate.py "file.ens" --detailed   # Detailed analysis
-  python column_calibrate.py "file.ens" --header     # Header check only
-  python column_calibrate.py "file.ens" --band-only  # Band flags only
+  python column_calibrate.py "file.ens"                  # Validate only
+  python column_calibrate.py "file.ens" --fix            # Fix line lengths
+  python column_calibrate.py "file.ens" --detailed       # Detailed analysis
+  python column_calibrate.py "file.ens" --header         # Header check only
+  python column_calibrate.py "file.ens" --comment-flags      # Comment flags (P, D, T, C, etc.)
+  python column_calibrate.py "file.ens" --band-only        # Band flags only (DEPRECATED)
   python column_calibrate.py "file.ens" --fix --dry-run  # Preview changes
         """
     )
@@ -355,7 +411,9 @@ Examples:
     parser.add_argument('--header', action='store_true',
                        help='Check header format only')
     parser.add_argument('--band-only', action='store_true',
-                       help='Check band flag positioning only')
+                       help='Check band flag positioning only (DEPRECATED - use --comment-flags)')
+    parser.add_argument('--comment-flags', action='store_true',
+                       help='Check comment flag positioning (P=possible, D=doublet, T=triplet, etc.)')
     
     args = parser.parse_args()
     
@@ -365,12 +423,24 @@ Examples:
     detailed = args.detailed
     header_only = args.header
     band_only = args.band_only
+    terminal_only = args.comment_flags
     
     if not os.path.exists(filename):
         print(f"ERROR: File '{filename}' not found!")
         sys.exit(1)
     
     success = True
+    
+    # Handle comment-flags-only mode
+    if terminal_only:
+        comment_success = validate_comment_flags(filename)
+        sys.exit(0 if comment_success else 1)
+    
+    # Handle deprecated band-only mode with warning
+    if band_only:
+        print("⚠️  WARNING: --band-only is deprecated. Use --comment-flags for comprehensive comment flag validation")
+        band_success = validate_band_flags(filename)  # This now calls validate_comment_flags internally
+        sys.exit(0 if band_success else 1)
     
     # Fix line lengths if requested
     if fix_mode:
@@ -381,7 +451,7 @@ Examples:
     
     # Always validate after fixing (or just validate if no fix)
     if not dry_run:  # Skip validation during dry run to avoid redundant output
-        validation_success = validate_ensdf_file(filename, detailed=detailed, header_only=header_only, band_only=band_only)
+        validation_success = validate_ensdf_file(filename, detailed=detailed, header_only=header_only, band_only=False)
         success = success and validation_success
     
     sys.exit(0 if success else 1)
