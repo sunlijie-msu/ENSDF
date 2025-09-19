@@ -122,11 +122,21 @@ python ensdf_tools.py convert "file.ens" --to-pdf --open
 
 **🚨 MANDATORY BEFORE ANY ENSDF EDITING 🚨**
 **AUTOMATIC VALIDATION SEQUENCE - NO EXCEPTIONS:**
-1. **FIRST**: `python .github/column_calibrate.py "filename"` - Verify 80-column compliance (L and G records only)
+1. **FIRST**: `python .github/column_calibrate.py "filename" --detailed` - Detailed 80-column compliance check
+   - If line length issues reported, run: `python .github/column_calibrate.py "filename" --fix`
+   - Re-validate after fixing: `python .github/column_calibrate.py "filename" --detailed`
 2. **SECOND**: `python .github/check_gamma_ordering.py "filename"` - Verify energy ordering
 3. **MANUAL VERIFICATION REQUIRED**: column_calibrate.py does NOT check DP, B, or E record formatting
 4. **ONLY THEN**: Proceed with requested edits
 5. **AFTER EDITS**: Re-run validation tools and manually verify DP, B, and E records
+
+**CRITICAL VALIDATION INTERPRETATION:**
+- **Exit code 0**: Validation PASSED - safe to proceed
+- **Exit code 1**: Validation FAILED - MUST fix errors before proceeding
+- **"DATA RECORD LINE LENGTH ISSUES DETECTED"**: Use --fix option immediately
+- **"SUCCESS: All ENSDF field positions appear correct!"**: Validation passed
+- **NEVER ignore validation failures or assume they're minor!**
+- **NEVER run basic column_calibrate.py without --detailed - it's useless!**
 
 **THIS IS NOT OPTIONAL - IT IS MANDATORY FOR EVERY ENSDF FILE INTERACTION**
 
@@ -199,13 +209,101 @@ python ensdf_tools.py convert "file.ens" --to-pdf --open
 **⚠️ CRITICAL RULE**: Never work on ENSDF files without running column validation first!
 **Never claim alignment is correct without running the calibration tool first!**
 
+## 🚨 CRITICAL VALIDATION TOOL USAGE PROTOCOL 🚨
+
+### Column Calibration Tool (column_calibrate.py) - MANDATORY USAGE
+**NEVER just run the basic command without understanding the output!**
+
+**STEP-BY-STEP VALIDATION PROTOCOL:**
+1. **Always start with detailed**: `python .github/column_calibrate.py "filename.ens" --detailed`
+2. **Read output carefully**:
+   - Look for "SUCCESS: All ENSDF field positions appear correct!"
+   - Look for "DATA RECORD LINE LENGTH ISSUES DETECTED"
+   - Check exit code (0 = success, 1 = errors)
+3. **If errors found**: 
+   - Use `python .github/column_calibrate.py "filename.ens" --fix` for line length issues
+   - Re-validate with detailed after fixing
+4. **Only proceed when exit code is 0**
+
+**CRITICAL OUTPUT INTERPRETATION:**
+- **"SUCCESS: All ENSDF field positions appear correct!"** = VALIDATION PASSED ✅
+- **"DATA RECORD LINE LENGTH ISSUES DETECTED"** = USE --fix IMMEDIATELY ⚠️
+- **"ERROR: Field positioning errors found"** = MAJOR ISSUES - INVESTIGATE ❌
+- **Exit code 1** = VALIDATION FAILED - DO NOT PROCEED ❌
+- **Exit code 0** = VALIDATION PASSED - SAFE TO PROCEED ✅
+
+**FORBIDDEN BEHAVIORS:**
+- ❌ Running validation and ignoring errors
+- ❌ Proceeding with edits when exit code is 1
+- ❌ Not using --fix when line length issues are reported
+- ❌ Assuming "it's probably fine" without checking exit codes
+- ❌ Not re-validating after using --fix
+
 ## Command Triggers
+
+### 🚨 UNIVERSAL VALIDATION TOOL USAGE RULES 🚨
+**APPLY TO ALL ENSDF VALIDATION TOOLS - NO EXCEPTIONS:**
+
+1. **ALWAYS check exit codes** - 0 = success, 1 = errors
+2. **ALWAYS read tool output** - don't just run and ignore
+3. **ALWAYS use appropriate options** when errors are detected
+4. **ALWAYS re-validate after fixing** any issues
+5. **NEVER proceed with work when validation fails**
+
+**MANDATORY VALIDATION SEQUENCE FOR ANY ENSDF WORK:**
+```bash
+# Step 1: ALWAYS start with detailed validation - basic check is useless!
+python .github/column_calibrate.py "file.ens" --detailed
+
+# Step 2: If line length issues found, auto-fix
+python .github/column_calibrate.py "file.ens" --fix
+
+# Step 3: Re-validate with detailed after fixing
+python .github/column_calibrate.py "file.ens" --detailed
+
+# Step 4: Check energy ordering
+python .github/check_gamma_ordering.py "file.ens"
+
+# Step 5: Only proceed when both tools return exit code 0
+```
+
+**ABSOLUTELY FORBIDDEN:**
+- ❌ Skipping validation tools
+- ❌ Ignoring exit codes or error messages
+- ❌ Proceeding with work when validation fails
+- ❌ Running tools without understanding their output
+- ❌ Assuming validation passed without checking
 
 ### "Self-Calibrate Columns" 
 Execute column validation on current ENSDF file:
-- **PowerShell**: `.\column-calibrate.ps1 "currentfile.ens"` (add `-Detailed` for character mapping)
 - **Python**: `python .github/column_calibrate.py "currentfile.ens"` (add `--detailed` for character mapping)
+- **PowerShell**: `.\column-calibrate.ps1 "currentfile.ens"` (add `-Detailed` for character mapping)
 - **Quick Header Check**: `python .github/column_calibrate.py "currentfile.ens" --header`
+
+**🚨 CRITICAL COLUMN_CALIBRATE.PY USAGE RULES 🚨**
+
+**MANDATORY OPTIONS FOR PROPER VALIDATION:**
+1. **Basic validation**: `python .github/column_calibrate.py "file.ens"`
+2. **Detailed analysis**: `python .github/column_calibrate.py "file.ens" --detailed`
+3. **Header-only check**: `python .github/column_calibrate.py "file.ens" --header`
+4. **Automatic fixing**: `python .github/column_calibrate.py "file.ens" --fix`
+
+**CRITICAL WORKFLOW SEQUENCE:**
+1. **ALWAYS start with detailed validation**: `python .github/column_calibrate.py "file.ens" --detailed`
+2. **If line length issues, use --fix**: `python .github/column_calibrate.py "file.ens" --fix`
+3. **Re-validate with detailed after fixing**: `python .github/column_calibrate.py "file.ens" --detailed`
+
+**NEVER run column_calibrate.py without options - it doesn't detect issues properly!**
+- Exit code 0 = SUCCESS (all validation passed)
+- Exit code 1 = ERRORS FOUND (must be addressed)
+- Always read the full output, don't just run and ignore
+
+**COMMON MISTAKES TO AVOID:**
+- ❌ Running basic command without --detailed (useless and misleading)
+- ❌ Ignoring exit codes and error messages
+- ❌ Not using --fix when line length issues are reported
+- ❌ Not re-validating after using --fix
+- ❌ Assuming validation passed without checking exit code
 
 **⚠️ IMPORTANT LIMITATION**: column_calibrate.py only validates L and G records - DP, B, and E records require manual verification
 
@@ -239,6 +337,23 @@ print('Length:', len(header))
 - **Multiple files**: `python .github/check_gamma_ordering.py "A35/K35/new/*.ens" --summary`
 - **Verbose output**: Add `--verbose` flag for detailed checking process
 - **Summary only**: Add `--summary` flag for overview without file details
+
+**🚨 CRITICAL CHECK_GAMMA_ORDERING.PY USAGE RULES 🚨**
+
+**MANDATORY VALIDATION PROTOCOL:**
+1. **Basic ordering check**: `python .github/check_gamma_ordering.py "file.ens"`
+2. **Understanding output**:
+   - Silent output with exit code 0 = NO ORDERING ISSUES ✅
+   - Error messages with exit code 1 = ORDERING VIOLATIONS FOUND ❌
+   - Look for "Checking level energy ordering..." and "Checking gamma energy ordering..."
+3. **If ordering errors found**: 
+   - Read error messages carefully - they show which records are out of order
+   - Fix the ordering issues manually before proceeding
+   - Re-run validation after fixing
+
+**CRITICAL EXIT CODE INTERPRETATION:**
+- **Exit code 0**: Energy ordering is correct ✅
+- **Exit code 1**: Energy ordering violations found - MUST fix before proceeding ❌
 
 **ENSDF Requirements**: ALL L-records in ascending energy order, ALL G-records within each level in ascending energy order. One incorrectly ordered record causes file rejection by ENSDF parsing systems.
 
