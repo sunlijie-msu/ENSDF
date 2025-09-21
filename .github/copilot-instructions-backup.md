@@ -13,7 +13,7 @@
 ### "Self-Calibrate Columns" Command:
 When the user types "Self-Calibrate Columns", automatically execute:
 - **PowerShell**: `.\column-calibrate.ps1 "currentfile.ens"` (add `-Detailed` for character mapping)
-- **Python**: `python column_calibrate.py "currentfile.ens"` (add `--detailed` for character mapping)
+- **Python**: `python column_calibrate.py "currentfile.ens"` (comprehensive validation always)
 
 **Column Calibration Process:**
 1. Display 80-character column ruler for visual reference

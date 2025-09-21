@@ -1,10 +1,10 @@
 ﻿#!/usr/bin/env python3
 """
-ENSDF Column Calibration Script - Enhanced with Line Length Fixing
-=================================================================
+ENSDF Column Calibration Script - Comprehensive ENSDF Validation
+===============================================================
 
-Advanced ENSDF field validation and 80-character line length fixing.
-Validates ENSDF field positions and can automatically fix line length issues.
+Complete ENSDF field validation and 80-character line length fixing.
+ALWAYS runs comprehensive validation including ALL field checks.
 
 ENSDF L-Record Field Positions (Mandatory):
 - Columns 1-5:   NUCID
@@ -16,11 +16,16 @@ ENSDF L-Record Field Positions (Mandatory):
 - Columns 65-74: Spectroscopic factor (S)
 
 Usage: 
-  python column_calibrate.py "filename.ens"                  # Validate only
-  python column_calibrate.py "filename.ens" --fix            # Validate and fix line lengths  
-  python column_calibrate.py "filename.ens" --detailed       # Detailed character mapping
-  python column_calibrate.py "filename.ens" --header         # Header format check only
-  python column_calibrate.py "filename.ens" --comment-flags   # Comment flags (P, D, T, C, etc.)
+  python column_calibrate.py "filename.ens"           # Complete ENSDF validation
+  python column_calibrate.py "filename.ens" --fix     # Validate and fix line lengths  
+
+ALWAYS CHECKS:
+- Line length compliance (80 characters for data records)
+- L-field positioning (columns 56-64)
+- S-field positioning (columns 65-74) 
+- Comment flag positioning (column 77)
+- Field boundary validation
+- Left-justification requirements
 """
 
 import sys
@@ -156,6 +161,103 @@ def find_field_positions(line, field_chars):
         if char in field_chars and i > 50:  # Look for L-transfer fields after col 50
             positions.append(i)
     return positions
+
+def validate_s_field(filename):
+    """
+    Validate S field (Spectroscopic factor) positioning in columns 65-74.
+    
+    ENSDF Format Rule: S field values must be LEFT-JUSTIFIED starting at column 65.
+    - Columns 65-74: Spectroscopic factor (S) field (10 characters total)
+    - Values must start at column 65, not right-justified within the field
+    - Common violations: values starting at columns 70-73 instead of 65
+    
+    Returns:
+        bool: True if all S fields are correctly positioned, False otherwise
+    """
+    print(f"\nS FIELD VALIDATION: {filename}")
+    print("=" * 60)
+    print("Checking S field positioning in columns 65-74...")
+    print("ENSDF Rule: S field values must be LEFT-JUSTIFIED starting at column 65")
+    print()
+    print('ENSDF 80-Column Ruler:')
+    print('         1         2         3         4         5         6         7         8')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+    print(' ' * 64 + '^---------^ S field (columns 65-74)')
+    print()
+    
+    s_fields_analyzed = 0
+    s_field_errors = 0
+    
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    
+    for line_num, line in enumerate(lines, 1):
+        line_content = line.rstrip('\n\r')
+        
+        # Only check L-records for S field validation
+        if len(line_content) < 10 or ' L ' not in line_content[6:10]:
+            continue
+            
+        # Extract S field area (columns 65-74)
+        if len(line_content) >= 65:
+            s_field_area = line_content[64:74] if len(line_content) > 64 else line_content[64:]
+            
+            # Check if S field contains numerical content
+            s_field_stripped = s_field_area.strip()
+            if s_field_stripped and any(c.isdigit() for c in s_field_stripped):
+                s_fields_analyzed += 1
+                
+                # Find where the first digit actually appears in the S field
+                first_digit_pos = None
+                for i, char in enumerate(s_field_area):
+                    if char.isdigit():
+                        first_digit_pos = 65 + i  # Convert to 1-based column number
+                        break
+                
+                # Extract the actual numerical value
+                s_value = ""
+                for char in s_field_stripped:
+                    if char.isdigit():
+                        s_value += char
+                    elif s_value:  # Stop at first non-digit after digits start
+                        break
+                
+                print(f"LINE {line_num}: S field analysis")
+                print(f"Line:  {line_content}")
+                print(f"S field area (65-74): '{s_field_area}'")
+                print(f"S field value: '{s_value}'")
+                
+                if first_digit_pos == 65:
+                    print(f"✓ OK: S field value '{s_value}' correctly LEFT-JUSTIFIED at column 65")
+                else:
+                    print(f"❌ ERROR: S field value '{s_value}' starts at column {first_digit_pos} (should be 65)")
+                    print(f"   Fix: Move '{s_value}' to start at column 65 (LEFT-JUSTIFIED)")
+                    s_field_errors += 1
+                
+                # Check for field overflow (value extending beyond column 74)
+                if len(s_value) > 10:
+                    print(f"❌ ERROR: S field value '{s_value}' is {len(s_value)} digits (max 10 for columns 65-74)")
+                    s_field_errors += 1
+                elif first_digit_pos and (first_digit_pos + len(s_value) - 1) > 74:
+                    print(f"❌ ERROR: S field value '{s_value}' extends beyond column 74")
+                    s_field_errors += 1
+                
+                print()
+    
+    # Summary
+    print(f"S FIELD SUMMARY:")
+    print(f"  Total S fields analyzed: {s_fields_analyzed}")
+    print(f"  S field positioning errors: {s_field_errors}")
+    print()
+    
+    if s_field_errors == 0:
+        print(f"✅ SUCCESS: All S fields correctly positioned (LEFT-JUSTIFIED at column 65)")
+        return True
+    else:
+        print(f"❌ FAILED: {s_field_errors} S field positioning errors found")
+        print(f"   CRITICAL: S field values must be LEFT-JUSTIFIED starting at column 65")
+        print(f"   Current violations: Values starting at wrong columns instead of 65")
+        return False
 
 def validate_comment_flags(filename):
     """
@@ -380,10 +482,11 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
     else:
         print("ERROR: Field positioning errors found - see details above")
     
-    # Always validate comment flags unless header-only mode
+    # Always validate S fields and comment flags unless header-only mode
     if not header_only:
+        s_field_success = validate_s_field(filename)
         comment_flag_success = validate_comment_flags(filename)
-        return (not errors_found) and comment_flag_success
+        return (not errors_found) and s_field_success and comment_flag_success
         
     return not errors_found
 
@@ -392,57 +495,30 @@ def main():
         description='ENSDF Column Calibration and Line Length Fixing',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
-Examples:
-  python column_calibrate.py "file.ens"                  # Validate only
-  python column_calibrate.py "file.ens" --fix            # Fix line lengths
-  python column_calibrate.py "file.ens" --detailed       # Detailed analysis
-  python column_calibrate.py "file.ens" --header         # Header check only
-  python column_calibrate.py "file.ens" --comment-flags      # Comment flags (P, D, T, C, etc.)
-  python column_calibrate.py "file.ens" --band-only        # Band flags only (DEPRECATED)
-  python column_calibrate.py "file.ens" --fix --dry-run  # Preview changes
+Simple Usage Examples:
+  python column_calibrate.py "file.ens"             # Complete ENSDF validation
+  python column_calibrate.py "file.ens" --fix       # Fix problems automatically
+  python column_calibrate.py "file.ens" --fix --dry-run  # Preview fixes
         """
     )
     
-    parser.add_argument('filename', help='ENSDF file to process')
+    parser.add_argument('filename', help='ENSDF file to validate')
     parser.add_argument('--fix', action='store_true', 
-                       help='Fix line lengths to exactly 80 characters')
+                       help='Fix line length issues automatically')
     parser.add_argument('--dry-run', action='store_true',
-                       help='Show what would be changed without modifying file')
-    parser.add_argument('--detailed', action='store_true',
-                       help='Show detailed character mapping with ruler')
-    parser.add_argument('--header', action='store_true',
-                       help='Check header format only')
-    parser.add_argument('--band-only', action='store_true',
-                       help='Check band flag positioning only (DEPRECATED - use --comment-flags)')
-    parser.add_argument('--comment-flags', action='store_true',
-                       help='Check comment flag positioning (P=possible, D=doublet, T=triplet, etc.)')
+                       help='Preview changes without modifying file (use with --fix)')
     
     args = parser.parse_args()
     
     filename = args.filename
     fix_mode = args.fix
     dry_run = args.dry_run
-    detailed = args.detailed
-    header_only = args.header
-    band_only = args.band_only
-    terminal_only = args.comment_flags
     
     if not os.path.exists(filename):
         print(f"ERROR: File '{filename}' not found!")
         sys.exit(1)
     
     success = True
-    
-    # Handle comment-flags-only mode
-    if terminal_only:
-        comment_success = validate_comment_flags(filename)
-        sys.exit(0 if comment_success else 1)
-    
-    # Handle deprecated band-only mode with warning
-    if band_only:
-        print("⚠️  WARNING: --band-only is deprecated. Use --comment-flags for comprehensive comment flag validation")
-        band_success = validate_band_flags(filename)  # This now calls validate_comment_flags internally
-        sys.exit(0 if band_success else 1)
     
     # Fix line lengths if requested
     if fix_mode:
@@ -453,7 +529,7 @@ Examples:
     
     # Always validate after fixing (or just validate if no fix)
     if not dry_run:  # Skip validation during dry run to avoid redundant output
-        validation_success = validate_ensdf_file(filename, detailed=detailed, header_only=header_only)
+        validation_success = validate_ensdf_file(filename, detailed=True, header_only=False)
         success = success and validation_success
     
     sys.exit(0 if success else 1)

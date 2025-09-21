@@ -59,42 +59,7 @@
  35CL cL S$LABEL=E{-|a}(lab) (keV)                                              
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G: from 1964Ku12 before E{-x}=9951, others from  
  35CL2cL 1971Mc23                                                               
- 35CL  L 9127      9 5/2                                                    K   
- 35CL cL $E{-|a}=2404 {I10}                                                     
- 35CL cL $(2J+1)|G{-|a}|G{-p}/|G=0.16 ev                                        
- 35CL  L 9160      4 1/2                                                    K   
- 35CL cL $E{-|a}=2442 {I4}                                                      
- 35CL cL $(2J+1)|G{-|a}|G{-p}/|G=1.6 ev                                         
- 35CL  L 9256      4 1/2                                                    K   
- 35CL cL $E{-|a}=2550 {I4}                                                      
- 35CL cL $(2J+1)|G{-|a}|G{-p}/|G=2.6 ev                                         
- 35CL  L 9400      9 1/2                                                    K   
- 35CL cL $E{-|a}=2712 {I10}                                                     
- 35CL cL $(2J+1)|G{-|a}|G{-p}/|G=0.6 ev                                         
- 35CL  L 9456      4 3/2                                                    K   
- 35CL cL $E{-|a}=2776 {I4}                                                      
- 35CL cL $(2J+1)|G{-|a}|G{-p}/|G=2.8 ev                                         
- 35CL  L 9481      2 3/2                                                    K   
- 35CL cL $E{-|a}=2804 {I2}                                                      
- 35CL cL $(2J+1)|G{-|a}|G{-p}/|G=18 ev                                          
- 35CL  L 9551      6 5/2                                                    K   
- 35CL cL $E{-|a}=2883 {I7}                                                      
- 35CL cL $(2J+1)|G{-|a}|G{-p}/|G=1.9 ev                                         
- 35CL  L 9673      6 1/2                                                    K   
- 35CL cL $E{-|a}=3021 {I7}                                                      
- 35CL cL $(2J+1)|G{-|a}|G{-p}/|G=1.1 ev                                         
- 35CL  L 9713      3 1/2                                                    K   
- 35CL cL $E{-|a}=3066 {I3}                                                      
- 35CL cL $(2J+1)|G{-|a}|G{-p}/|G=41 ev                                          
- 35CL  L 9751      3 7/2                                                    K   
- 35CL cL $E{-|a}=3109 {I3}                                                      
- 35CL cL $(2J+1)|G{-|a}|G{-p}/|G=7.6 ev                                         
- 35CL  L 9814      3 5/2                                                    K   
- 35CL cL $E{-|a}=3180 {I3}                                                      
- 35CL cL $(2J+1)|G{-|a}|G{-p}/|G=20 ev                                          
- 35CL  L 9870      3 1/2                                                    K   
- 35CL cL $E{-|a}=3243 {I3}                                                      
- 35CL cL $(2J+1)|G{-|a}|G{-p}/|G=46 ev                                          
+ 35CL d
  35CL  L 3242      5  1/2                                       9869      5 S   
  35CL  L 3278      5  3/2                                       9905      5 S   
  35CL  L 3305      5  3/2-                                      9924      5 S   
@@ -102,7 +67,8 @@
  35CL cL E$weighted average of 3348 {I5} (1971Mc23) and 3335 {I5} (1975Sc40)    
  35CL cL J$from 1971Mc23 and 1975Sc40.                                          
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=34 eV.                                         
- 35CL  L 3354      5  (1/2,3/2)                                 9973        M   
+ 35CL  L 3354      5  (1/2,3/2)                                 9973       M    
+ 35CL cL J$from 1971Mc23                                                        
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=17 eV.                                         
  35CL  L 3425      5  1/2+,3/2-                                 10034           
  35CL cL E$weighted average of 3424 {I5} (1971Mc23) and 3425 {I5} (1975Sc40)    
@@ -112,14 +78,16 @@
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=40 eV.                                         
  35CL  L 3475      5  (1/2)                                     10081       M   
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=52 eV.                                         
- 35CL  L 3491      5  5/2+                                      10094       M   
- 35CL cL E$other: 3490 {I5} (1975Sc40)                                          
+ 35CL  L 3491      5  5/2                                       10094       M   
+ 35CL cL J$from 1971Mc23                                                        
+ 35CL cL E$weighted average of 3491 {I5} (1971Mc23) and 3490 {I5} (1975Sc40)    
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=63 eV.                                         
  35CL  L 3539      5  3/2                                       10136           
  35CL cL E$weighted average of 3538 {I5} (1971Mc23) and 3540 {I5} (1975Sc40)    
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=165 eV.                                        
- 35CL  L 3584      5  (5/2)                                     10179           
+ 35CL  L 3584      5  3/2-,5/2-                                 10179           
  35CL cL E$weighted average of 3587 {I5} (1971Mc23) and 3580 {I5} (1975Sc40)    
+ 35CL cL J$from 1975Sc40; other: (5/2) from 1971Mc23.                           
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=26 eV.                                         
  35CL  L 3633      5  3/2                                       10218           
  35CL cL E$weighted average of 3631 {I5} (1971Mc23) and 3635 {I5} (1975Sc40)    
@@ -135,14 +103,16 @@
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=63 eV.                                         
  35CL  L 3774      5  (3/2,5/2)                                 10345       M   
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=50 eV.                                         
- 35CL  L 3795      5  (3/2)                                     10363           
+ 35CL  L 3795      5  3/2                                       10363           
  35CL cL E$weighted average of 3795 {I5} (1971Mc23) and 3795 {I5} (1975Sc40)    
+ 35CL cL J$from 1975Sc40; other: (3/2) from 1971Mc23.                           
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=155 eV.                                        
  35CL  L 3825      5                                            10390       M   
- 35CL  L 3841      5  (1/2,3/2)                                 10404           
+ 35CL  L 3841      5  3/2+,7/2+                                 10404           
  35CL cL E$weighted average of 3842 {I5} (1971Mc23) and 3840 {I5} (1975Sc40)    
+ 35CL cL J$from 1975Sc40; other: (1/2,3/2) from 1971Mc23.                       
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=61 eV.                                         
- 35CL  L 3877      5  5/2                                       10435           
+ 35CL  L 3877      5  5/2+                                      10435           
  35CL cL E$weighted average of 3876 {I5} (1971Mc23) and 3877 {I5} (1975Sc40)    
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=66 eV.                                         
  35CL  L 3917      5  5/2                                       10473           
@@ -157,7 +127,7 @@
  35CL  L 4053      5  3/2                                       10589           
  35CL cL E$weighted average of 4050 {I5} (1971Mc23) and 4055 {I5} (1975Sc40)    
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=71 eV.                                         
- 35CL  L 4114      5  5/2                                       10645           
+ 35CL  L 4114      5  5/2+                                      10645           
  35CL cL E$weighted average of 4113 {I5} (1971Mc23) and 4114 {I5} (1975Sc40)    
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=272 eV.                                        
  35CL  L 4156      5  3/2                                       10683           
@@ -177,7 +147,7 @@
  35CL  L 4311      5  3/2                                       10818           
  35CL cL E$weighted average of 4308 {I5} (1971Mc23) and 4313 {I5} (1975Sc40)    
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=345 eV.                                        
- 35CL  L 4343      5  3/2                                       10848           
+ 35CL  L 4343      5  3/2-                                      10848           
  35CL cL E$weighted average of 4342 {I5} (1971Mc23) and 4343 {I5} (1975Sc40)    
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=923 eV.                                        
  35CL  L 4372      5  (5/2,7/2)                                 10874       M   
@@ -192,18 +162,19 @@
  35CL cL E$weighted average of 4478 {I5} (1971Mc23) and 4477 {I5} (1975Sc40)    
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=181 eV.                                        
  35CL  L 4489      5                                            10978       M   
- 35CL  L 4517      5  (5/2)                                     11003           
+ 35CL  L 4517      5  3/2+,7/2-                                 11003           
  35CL cL E$weighted average of 4517 {I5} (1971Mc23) and 4517 {I5} (1975Sc40)    
+ 35CL cL J$from 1975Sc40; other: (5/2) from 1971Mc23.                           
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=172 eV.                                        
  35CL  L 4557      5  3/2                                       11038           
  35CL cL E$weighted average of 4556 {I5} (1971Mc23) and 4558 {I5} (1975Sc40)    
  35CL cL $(2J+1)|G{-|a}|G{-p}/|G=218 eV.                                        
- 35CL  L 4590      5                                            11066           
+ 35CL  L 4590      5  1/2+,9/2+                                 11066           
  35CL cL E$weighted average of 4589 {I5} (1971Mc23) and 4590 {I5} (1975Sc40)    
- 35CL  L 4612      5                                            11086           
+ 35CL  L 4612      5  5/2+,9/2+                                 11086           
  35CL cL E$weighted average of 4611 {I5} (1971Mc23) and 4613 {I5} (1975Sc40)    
  35CL  L 4638      5                                            11110       M   
- 35CL  L 4658      5                                            11127           
+ 35CL  L 4658      5  3/2                                       11127           
  35CL cL E$weighted average of 4657 {I5} (1971Mc23) and 4658 {I5} (1975Sc40)    
  35CL  L 4679      5                                            11147           
  35CL cL E$weighted average of 4678 {I5} (1971Mc23) and 4680 {I5} (1975Sc40)    
@@ -229,7 +200,7 @@
  35CL  L 4942      5                                            11379       M   
  35CL  L 4960      5                                            11396       M   
  35CL  L 4982      5                                            11415       M   
- 35CL  L 4995      5                                            11426           
+ 35CL  L 4995      5  3/2-                                      11426           
  35CL cL E$weighted average of 4995 {I5} (1971Mc23) and 4995 {I5} (1975Sc40)    
  35CL  L 5009      5                                            11439       M   
  35CL  L 5038      5                                            11465       M   

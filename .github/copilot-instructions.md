@@ -122,13 +122,21 @@ python ensdf_tools.py convert "file.ens" --to-pdf --open
 
 **🚨 MANDATORY BEFORE ANY ENSDF EDITING 🚨**
 **AUTOMATIC VALIDATION SEQUENCE - NO EXCEPTIONS:**
-1. **FIRST**: `python .github/column_calibrate.py "filename" --detailed` - Detailed 80-column compliance check
+1. **FIRST**: `python .github/column_calibrate.py "filename"` - Complete 80-column compliance and field validation
    - If line length issues reported, run: `python .github/column_calibrate.py "filename" --fix`
-   - Re-validate after fixing: `python .github/column_calibrate.py "filename" --detailed`
+   - Re-validate after fixing: `python .github/column_calibrate.py "filename"`
 2. **SECOND**: `python .github/check_gamma_ordering.py "filename"` - Verify energy ordering
 3. **MANUAL VERIFICATION REQUIRED**: column_calibrate.py does NOT check DP, B, or E record formatting
 4. **ONLY THEN**: Proceed with requested edits
 5. **AFTER EDITS**: Re-run validation tools and manually verify DP, B, and E records
+
+**🚨 CRITICAL ENSDF COMMENT LINE RULE 🚨**
+**FUNDAMENTAL STRUCTURE RULE - NEVER VIOLATE:**
+- **cL comment lines ONLY apply to the IMMEDIATELY PRECEDING L-record**
+- **NEVER assume comment lines apply to multiple L-records**
+- **Standalone L-records without cL comments are independent assignments**
+- **Only modify J^π values when explicit comment lines reference source data**
+- **Example**: If L 3305 has no cL line, its J^π is standalone - do NOT change it based on nearby comments
 
 **CRITICAL VALIDATION INTERPRETATION:**
 - **Exit code 0**: Validation PASSED - safe to proceed
@@ -136,7 +144,7 @@ python ensdf_tools.py convert "file.ens" --to-pdf --open
 - **"DATA RECORD LINE LENGTH ISSUES DETECTED"**: Use --fix option immediately
 - **"SUCCESS: All ENSDF field positions appear correct!"**: Validation passed
 - **NEVER ignore validation failures or assume they're minor!**
-- **NEVER run basic column_calibrate.py without --detailed - it's useless!**
+- **ALL validation is now comprehensive by default - includes L-fields, S-fields, comment flags, and line lengths!**
 
 **THIS IS NOT OPTIONAL - IT IS MANDATORY FOR EVERY ENSDF FILE INTERACTION**
 
@@ -195,7 +203,7 @@ python ensdf_tools.py convert "file.ens" --to-pdf --open
 **ALSO TRIGGERED**: **ANY ENSDF FILE INTERACTION** - This is MANDATORY, not optional!
 
 **IMMEDIATE RESPONSE**:
-1. Run `python .github/column_calibrate.py "filename" --header` 
+1. Run `python .github/column_calibrate.py "filename"` - comprehensive validation including header analysis
 2. Use visual ruler technique for manual verification
 3. Compare with reference ENSDF files
 4. Apply ENSDF manual field specifications:
@@ -212,10 +220,10 @@ python ensdf_tools.py convert "file.ens" --to-pdf --open
 ## 🚨 CRITICAL VALIDATION TOOL USAGE PROTOCOL 🚨
 
 ### Column Calibration Tool (column_calibrate.py) - MANDATORY USAGE
-**NEVER just run the basic command without understanding the output!**
+**Comprehensive validation automatically runs with ALL checks!**
 
 **STEP-BY-STEP VALIDATION PROTOCOL:**
-1. **Always start with detailed**: `python .github/column_calibrate.py "filename.ens" --detailed`
+1. **Always start with comprehensive validation**: `python .github/column_calibrate.py "filename.ens"`
 2. **Read output carefully**:
    - Look for "SUCCESS: All ENSDF field positions appear correct!"
    - Look for "DATA RECORD LINE LENGTH ISSUES DETECTED"
@@ -252,14 +260,14 @@ python ensdf_tools.py convert "file.ens" --to-pdf --open
 
 **MANDATORY VALIDATION SEQUENCE FOR ANY ENSDF WORK:**
 ```bash
-# Step 1: ALWAYS start with detailed validation - basic check is useless!
-python .github/column_calibrate.py "file.ens" --detailed
+# Step 1: ALWAYS start with comprehensive validation
+python .github/column_calibrate.py "file.ens"
 
 # Step 2: If line length issues found, auto-fix
 python .github/column_calibrate.py "file.ens" --fix
 
-# Step 3: Re-validate with detailed after fixing
-python .github/column_calibrate.py "file.ens" --detailed
+# Step 3: Re-validate after fixing
+python .github/column_calibrate.py "file.ens"
 
 # Step 4: Check energy ordering
 python .github/check_gamma_ordering.py "file.ens"
@@ -276,36 +284,39 @@ python .github/check_gamma_ordering.py "file.ens"
 
 ### "Self-Calibrate Columns" 
 Execute column validation on current ENSDF file:
-- **Python**: `python .github/column_calibrate.py "currentfile.ens"` (add `--detailed` for character mapping)
+- **Python**: `python .github/column_calibrate.py "currentfile.ens"` (comprehensive validation always)
 - **PowerShell**: `.\column-calibrate.ps1 "currentfile.ens"` (add `-Detailed` for character mapping)
-- **Quick Header Check**: `python .github/column_calibrate.py "currentfile.ens" --header`
 
 **🚨 CRITICAL COLUMN_CALIBRATE.PY USAGE RULES 🚨**
 
-**MANDATORY OPTIONS FOR PROPER VALIDATION:**
-1. **Basic validation**: `python .github/column_calibrate.py "file.ens"`
-2. **Detailed analysis**: `python .github/column_calibrate.py "file.ens" --detailed`
-3. **Header-only check**: `python .github/column_calibrate.py "file.ens" --header`
-4. **Automatic fixing**: `python .github/column_calibrate.py "file.ens" --fix`
+**COMPREHENSIVE VALIDATION ALWAYS:**
+1. **Complete validation**: `python .github/column_calibrate.py "file.ens"` (ALL checks included)
+2. **Automatic fixing**: `python .github/column_calibrate.py "file.ens" --fix`
 
 **CRITICAL WORKFLOW SEQUENCE:**
-1. **ALWAYS start with detailed validation**: `python .github/column_calibrate.py "file.ens" --detailed`
+1. **ALWAYS start with comprehensive validation**: `python .github/column_calibrate.py "file.ens"`
 2. **If line length issues, use --fix**: `python .github/column_calibrate.py "file.ens" --fix`
-3. **Re-validate with detailed after fixing**: `python .github/column_calibrate.py "file.ens" --detailed`
+3. **Re-validate after fixing**: `python .github/column_calibrate.py "file.ens"`
 
-**NEVER run column_calibrate.py without options - it doesn't detect issues properly!**
+**COMPREHENSIVE VALIDATION ALWAYS INCLUDES:**
 - Exit code 0 = SUCCESS (all validation passed)
 - Exit code 1 = ERRORS FOUND (must be addressed)
 - Always read the full output, don't just run and ignore
 
 **COMMON MISTAKES TO AVOID:**
-- ❌ Running basic command without --detailed (useless and misleading)
 - ❌ Ignoring exit codes and error messages
 - ❌ Not using --fix when line length issues are reported
 - ❌ Not re-validating after using --fix
 - ❌ Assuming validation passed without checking exit code
 
 **⚠️ IMPORTANT LIMITATION**: column_calibrate.py only validates L and G records - DP, B, and E records require manual verification
+
+**COMPREHENSIVE VALIDATION ALWAYS INCLUDES:**
+- L-field positioning (columns 56-64)
+- S-field positioning (columns 65-74) 
+- Comment flag positioning (column 77)
+- Line length compliance (80 characters)
+- Field boundary validation
 
 **Process**: Display 80-char ruler → Extract L/G records → Validate against ENSDF Manual → Report issues
 
@@ -326,7 +337,7 @@ print('Length:', len(header))
 
 ### "Debug Header Alignment"
 **IMMEDIATE ACTION**: When header alignment issues are suspected:
-1. Run `python .github/column_calibrate.py "filename" --header`
+1. Run `python .github/column_calibrate.py "filename"` - comprehensive validation including header analysis
 2. Compare with working reference files
 3. Use the visual ruler technique to spot misalignments
 4. Check ENSDF manual field positions (1-5, 6-9, 10-39, 40-65, 66-74, 75-80)
@@ -634,6 +645,11 @@ Example: 35P   L 1572.0    1  1/2+             2.29 PS  14        2        1.23 
 | C | 77 | | Comment flag |
 
 **⚠️ CRITICAL**: L-records MUST be arranged in ascending energy order throughout the file.
+
+**🚨 CRITICAL cL COMMENT LINE ASSOCIATION RULE 🚨**
+- **cL comment lines apply ONLY to the immediately preceding L-record**
+- **NEVER modify L-record data based on comment lines for other L-records**
+- **Each L-record without a following cL line is an independent assignment**
 
 ### G-Record Format (Gamma Transitions):
 ```
