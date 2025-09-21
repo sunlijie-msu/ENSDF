@@ -1085,6 +1085,11 @@ Duplicates: "the the" etc.
 - **Mixed notation allowed** with different confidence per assignment
 - **No spaces** around commas in J-π field
 - **Exact reproduction required** - never modify parentheses placement without experimental justification
+- **🚨 CRITICAL PARENTHESES MATCHING RULE 🚨**: Spin-parity with/without () are considered to be different confidence levels. When creating J$ comments or adding values to J fields from reference data sources, ensure parentheses are preserved exactly as written in the source:
+  - **Source shows `3/2`** → Comment: `J$3/2 from [reference]` (NO parentheses)
+  - **Source shows `(3/2)`** → Comment: `J$(3/2) from [reference]` (single parentheses preserved)
+  - **NEVER use double parentheses**: `J$((3/2))` is FORBIDDEN
+  - **Examples**: `(1/2+)`, `1/2(+)`, `1/2+` represent different assignment confidence levels and the placement of parentheses must be matched accurately and precisely!
 
 ## Tools and Workflows
 
