@@ -100,6 +100,10 @@ Received training from my line manager regarding the A=35 evaluation. Added 7 re
 Lijie Sun - 7 September 2025 - 13 September 2025
 Received training from my line manager regarding the A=35 evaluation and data consistency check. Added 2 reaction datasets for 35Cl. Performed the data consistency check for CH11036 and XUNDL compilation for 127I data in 2025LaAA.
 
+Lijie Sun - 14 September 2025 - 20 September 2025
+Received training from my line manager regarding the A=35 evaluation and data consistency check. Added 3 reaction datasets for 35Cl. Performed the second round of review for CG11116 for 105Nb data in 2025AbAA. Addressed a FRIENDS general request on 220Rn and 216Po decay. Set up AI Toolkit in VS Code for local model testing and context engineering.
+
+
 # FRIB Laboratory Activities
 
 ## Nuclear Data Group
@@ -137,7 +141,7 @@ This table summarizes all ENSDF datasets compiled from XUNDL submissions with co
 ## Work Effort Summary
 
 ### Papers Processed
-- **Total papers**: 5 publications from 4 PRC papers (submitted/in preparation)
+- **Total papers**: 5 PRC papers (submitted)
 - **NSR keynumbers**: CH11036, CG11116, CF10919, CF10990, CC10963
 - **Total datasets compiled**: 8 nuclear datasets covering isotopes A=96 to A=127
 - **Total review rounds completed**: 7 review rounds across 5 papers
@@ -146,7 +150,7 @@ This table summarizes all ENSDF datasets compiled from XUNDL submissions with co
 | Paper Code | Datasets | Review Rounds | Status |
 |------------|----------|---------------|---------|
 | CH11036    | 1        | 1             | Completed |
-| CG11116    | 4        | 1             | Completed |
+| CG11116    | 4        | 2             | Completed |
 | CF10919    | 1        | 2             | Completed |
 | CF10990    | 1        | 1             | Completed |
 | CC10963    | 1        | 1             | Completed |
@@ -165,7 +169,7 @@ All datasets follow strict 80-column ENSDF formatting requirements and have been
 ### Compilation Period:
 **Active Period:** March 2025 - September 2025
 **Total Datasets:** 8 nuclear datasets covering isotopes from A=96 to A=127
-**Total Publications:** 4 PRC papers (submitted/in preparation)
+**Total Publications:** 5 PRC papers (submitted/in preparation)
 
 
 
