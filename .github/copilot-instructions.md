@@ -21,78 +21,19 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 ## 🚨 CRITICAL ANTI-SPAGHETTI CODE RULES 🚨
 
 ### Script Organization Standards
-- **USE EXISTING PROFESSIONAL MODULES**: Always use `ensdf_tools.py` and modules/ directory
-- **NEVER create duplicate scripts** - check existing functionality first
-- **NEVER create scripts with similar names** (e.g., verify_*, check_*, analyze_*, compare_*)
-- **CONSOLIDATE functionality** into existing modules rather than creating new scripts
-- **ONE TOOL PER FUNCTION**: Use `ensdf_tools.py validate`, `ensdf_tools.py format`, `ensdf_tools.py analyze`
+- **USE EXISTING ENSDF 80-column Validation Tools**: Always use `column_calibrate.py` and `ensdf_1line_ruler.py` and `check_gamma_ordering.py` for any ENSDF file format validation
+- **AVOID creating spaghetti or redundant scripts** - check existing functionality first (e.g., verify_*, check_*, analyze_*, compare_*) CONSOLIDATE functionality** into adapt existing scripts rather than creating duplicate scripts
 
-### Professional Module Structure
-```
-.github/
-├── ensdf_tools.py              # Main unified CLI tool
-├── modules/
-│   ├── __init__.py            # Module package
-│   ├── ensdf_validation.py    # All validation functions
-│   ├── ensdf_formatting.py    # All formatting/fixing functions  
-│   └── ensdf_analysis.py      # All analysis functions
-├── column_calibrate.py         # Legacy - use ensdf_tools.py validate
-├── check_gamma_ordering.py     # Legacy - use ensdf_tools.py validate
-├── ens2pdf.py                 # Legacy - use ensdf_tools.py convert
-└── copilot-instructions.md     # This file
-```
-
-### Mandatory Code Standards
-1. **BEFORE CREATING ANY SCRIPT**: Check if functionality exists in modules/
-2. **USE EXISTING TOOLS**: `python ensdf_tools.py [command] [file]` for all operations
-3. **NO DUPLICATE FUNCTIONS**: Do not recreate validation, formatting, or analysis code
-4. **PROFESSIONAL NAMING**: Clear, descriptive function and variable names
-5. **COMPREHENSIVE DOCUMENTATION**: Docstrings for all functions and classes
-6. **ERROR HANDLING**: Proper exception handling and user feedback
-7. **TYPE HINTS**: Use Python type hints for all function parameters and returns
-8. **SEPARATION OF CONCERNS**: Each module handles one specific area (validation, formatting, analysis)
 
 ### Forbidden Patterns
 - ❌ Creating `verify_xyz.py`, `check_abc.py`, `analyze_def.py` scripts
 - ❌ Writing duplicate validation logic
-- ❌ Creating temporary "test" or "debug" scripts in .github/
-- ❌ Copy-pasting code between scripts
+- ❌ Creating temporary "test" or "debug" scripts directly in the workspace.
 - ❌ Writing scripts without error handling
 - ❌ Creating scripts with hardcoded file paths
 - ❌ Writing single-use throwaway scripts
 
-### Required Workflow
-1. **IDENTIFY NEED**: What functionality is required?
-2. **CHECK EXISTING**: Does `ensdf_tools.py` or modules/ already provide this?
-3. **EXTEND IF NEEDED**: Add to existing modules rather than create new scripts
-4. **USE PROFESSIONAL INTERFACE**: Call via `ensdf_tools.py` command line interface
-5. **DOCUMENT CHANGES**: Update module docstrings and this instructions file
 
-### Professional Usage Examples
-```bash
-# Validation (replaces all verify_*, check_* scripts)
-python ensdf_tools.py validate "file.ens"
-python ensdf_tools.py validate "file.ens" --no-bands --json
-
-# Formatting (replaces all fix_* scripts)  
-python ensdf_tools.py format "file.ens" --fix-all
-python ensdf_tools.py format "file.ens" --fix-columns --dry-run
-
-# Analysis (replaces all analyze_*, compare_* scripts)
-python ensdf_tools.py analyze "file.ens" --report
-python ensdf_tools.py analyze "file.ens" --no-lifetimes --json
-
-# Conversion (replaces ens2pdf.py)
-python ensdf_tools.py convert "file.ens" --to-pdf --open
-```
-
-### Legacy Script Migration
-- **column_calibrate.py** → `ensdf_tools.py validate`
-- **check_gamma_ordering.py** → `ensdf_tools.py validate --no-columns --no-bands`  
-- **ens2pdf.py** → `ensdf_tools.py convert --to-pdf`
-- **All fix_*.py** → `ensdf_tools.py format --fix-[specific]`
-- **All analyze_*.py** → `ensdf_tools.py analyze`
-- **All verify_*.py, compare_*.py** → `ensdf_tools.py validate` or `ensdf_tools.py analyze`
 
 ## Communication Guidelines
 - **Continue until requests are fully addressed with complete accuracy**
@@ -121,20 +62,25 @@ python ensdf_tools.py convert "file.ens" --to-pdf --open
 - Missing this step = incomplete change tracking!
 
 **🚨 MANDATORY BEFORE ANY ENSDF EDITING 🚨**
-**AUTOMATIC VALIDATION SEQUENCE - NO EXCEPTIONS:**
-1. **FIRST**: `python .github/column_calibrate.py "filename"` - Complete 80-column compliance and field validation
-   - If line length issues reported, run: `python .github/column_calibrate.py "filename" --fix`
-   - Re-validate after fixing: `python .github/column_calibrate.py "filename"`
-2. **SECOND**: `python .github/check_gamma_ordering.py "filename"` - Verify energy ordering
-3. **MANUAL VERIFICATION REQUIRED**: column_calibrate.py does NOT check DP, B, or E record formatting
-4. **ONLY THEN**: Proceed with requested edits
-5. **AFTER EDITS**: Re-run validation tools and manually verify DP, B, and E records
+**VALIDATION WORKFLOW (run early, often, and after every change):**
+1. Visual check: `python .github/ensdf_1line_ruler.py --file "filename.ens" --show-only-wrong`  
+   - Use the ruler BEFORE edits to catch off-by-one column mistakes (especially S/DS and C=77 flags).
+2. Column calibration: `python .github/column_calibrate.py "filename.ens"`  
+   - If line length issues are reported for data records, carefully review and adjust the affected lines.
+   - Avoid truncating or manipulating data.
+   - Re-validate: `python .github/column_calibrate.py "filename.ens"` and confirm exit code 0.
+3. Energy ordering: `python .github/check_gamma_ordering.py "filename.ens"`
+4. Manual checks: DP, B, and E record formatting still require manual verification (column_calibrate checks their line lengths only).
+5. During edits: re-run the ruler frequently (use `--line` for single-line checks) and re-run column calibration after each save.
+6. After edits: repeat 1–4. Proceed only when all tools return exit code 0 and manual checks are clean.
 
-### Ruler technique (quick visual check)
-- Before making any column-sensitive edits, run the visual ruler tool to map exact column positions and verify the target fields. This catches misplaced flags or off-by-one column errors immediately.
-- Tool: `python .github/ensdf_1line_ruler.py --file path/to/file.ens` or `python .github/ensdf_1line_ruler.py --line "<80-char-line>"`
-- When scanning a file, the tool only checks L-records (column 8 == 'L') and reports any comment flags found at column 80 or other column errors. Use `--show-only-wrong` to limit output to problematic lines.
-- Always run the ruler BEFORE and AFTER edits; don't rely solely on automated validators for subtle column-placement mistakes.
+### ENSDF 1-Line Ruler (visual column verifier) — USE OFTEN
+- Purpose: fast, visual verification of exact column positions; catches subtle off-by-one errors.
+- File scan: `python .github/ensdf_1line_ruler.py --file path/to/file.ens [--show-only-wrong]`  
+   Checks only L-records (type 'L' at column 8); exit code 1 if any errors are found.
+- Single line: `python .github/ensdf_1line_ruler.py --line "<exact 80-char line>"`  
+   Prints ruler, critical field mapping (S:65–74, DS:75–76, C flag:77), and diagnostics.
+- Frequency: run BEFORE edits, DURING (after each targeted change), and AFTER all edits. Do not rely solely on automated validators for column-placement mistakes.
 
 **🚨 CRITICAL ENSDF COMMENT LINE RULE 🚨**
 **FUNDAMENTAL STRUCTURE RULE - NEVER VIOLATE:**
@@ -147,10 +93,10 @@ python ensdf_tools.py convert "file.ens" --to-pdf --open
 **CRITICAL VALIDATION INTERPRETATION:**
 - **Exit code 0**: Validation PASSED - safe to proceed
 - **Exit code 1**: Validation FAILED - MUST fix errors before proceeding
-- **"DATA RECORD LINE LENGTH ISSUES DETECTED"**: Use --fix option immediately
+- **Line length issues**: Address cautiously; see Column Calibration Tool note on optional auto-padding for data records only.
 - **"SUCCESS: All ENSDF field positions appear correct!"**: Validation passed
 - **NEVER ignore validation failures or assume they're minor!**
-- **ALL validation is now comprehensive by default - includes L-fields, S-fields, comment flags, and line lengths!**
+- **ALL validation is now comprehensive by default - includes L-fields, S-fields, comment flags, and data-record line lengths!**
 
 **THIS IS NOT OPTIONAL - IT IS MANDATORY FOR EVERY ENSDF FILE INTERACTION**
 
@@ -209,7 +155,7 @@ python ensdf_tools.py convert "file.ens" --to-pdf --open
 **ALSO TRIGGERED**: **ANY ENSDF FILE INTERACTION** - This is MANDATORY, not optional!
 
 **IMMEDIATE RESPONSE**:
-1. Run `python .github/column_calibrate.py "filename"` - comprehensive validation including header analysis
+1. Run `python .github/column_calibrate.py "filename"` - comprehensive data-record validation (prints ruler; checks field positions and data-record line lengths)
 2. Use visual ruler technique for manual verification
 3. Compare with reference ENSDF files
 4. Apply ENSDF manual field specifications:
@@ -225,23 +171,17 @@ python ensdf_tools.py convert "file.ens" --to-pdf --open
 
 ## 🚨 CRITICAL VALIDATION TOOL USAGE PROTOCOL 🚨
 
-### Column Calibration Tool (column_calibrate.py) - MANDATORY USAGE
-**Comprehensive validation automatically runs with ALL checks!**
-
-**STEP-BY-STEP VALIDATION PROTOCOL:**
-1. **Always start with comprehensive validation**: `python .github/column_calibrate.py "filename.ens"`
-2. **Read output carefully**:
-   - Look for "SUCCESS: All ENSDF field positions appear correct!"
-   - Look for "DATA RECORD LINE LENGTH ISSUES DETECTED"
-   - Check exit code (0 = success, 1 = errors)
-3. **If errors found**: 
-   - Use `python .github/column_calibrate.py "filename.ens" --fix` for line length issues
-   - Re-validate with detailed after fixing
-4. **Only proceed when exit code is 0**
+### Column Calibration Tool (column_calibrate.py) — REQUIRED
+Accurate per current script behavior:
+- Validate: `python .github/column_calibrate.py "file.ens"`  
+   Prints the 80-column ruler; checks L-field starts at col 56, S field left-justified at col 65 (65–74), and C flag at col 77; reports data-record (L/G/E/B/DP) line-length issues.
+- Optional auto-padding (mention once): `--fix` can pad or trim data-record lines to exactly 80 characters. Use with extreme caution; it does NOT fix field content/formatting and may surface new issues if misused. Prefer manual corrections for format problems. Always re-validate afterwards (no assumptions).
+- Exit codes: 0 = all checks pass; 1 = any error (including line-length issues or field positioning failures).
+- Notes: Comment lines are not modified by `--fix`. DP, B, and E records are validated for line length but still require manual format checks.
 
 **CRITICAL OUTPUT INTERPRETATION:**
 - **"SUCCESS: All ENSDF field positions appear correct!"** = VALIDATION PASSED ✅
-- **"DATA RECORD LINE LENGTH ISSUES DETECTED"** = USE --fix IMMEDIATELY ⚠️
+- **"DATA RECORD LINE LENGTH ISSUES DETECTED"** = Lines not exactly 80 chars (data records only). See single auto-padding note above.
 - **"ERROR: Field positioning errors found"** = MAJOR ISSUES - INVESTIGATE ❌
 - **Exit code 1** = VALIDATION FAILED - DO NOT PROCEED ❌
 - **Exit code 0** = VALIDATION PASSED - SAFE TO PROCEED ✅
@@ -249,9 +189,9 @@ python ensdf_tools.py convert "file.ens" --to-pdf --open
 **FORBIDDEN BEHAVIORS:**
 - ❌ Running validation and ignoring errors
 - ❌ Proceeding with edits when exit code is 1
-- ❌ Not using --fix when line length issues are reported
+- ❌ Ignoring data-record line-length issues when reported
 - ❌ Assuming "it's probably fine" without checking exit codes
-- ❌ Not re-validating after using --fix
+- ❌ Not re-validating after corrections
 
 ## Command Triggers
 
@@ -269,16 +209,13 @@ python ensdf_tools.py convert "file.ens" --to-pdf --open
 # Step 1: ALWAYS start with comprehensive validation
 python .github/column_calibrate.py "file.ens"
 
-# Step 2: If line length issues found, auto-fix
-python .github/column_calibrate.py "file.ens" --fix
-
-# Step 3: Re-validate after fixing
+# Step 2: Re-validate after any corrections
 python .github/column_calibrate.py "file.ens"
 
-# Step 4: Check energy ordering
+# Step 3: Check energy ordering
 python .github/check_gamma_ordering.py "file.ens"
 
-# Step 5: Only proceed when both tools return exit code 0
+# Step 4: Only proceed when both tools return exit code 0
 ```
 
 **ABSOLUTELY FORBIDDEN:**
@@ -291,18 +228,15 @@ python .github/check_gamma_ordering.py "file.ens"
 ### "Self-Calibrate Columns" 
 Execute column validation on current ENSDF file:
 - **Python**: `python .github/column_calibrate.py "currentfile.ens"` (comprehensive validation always)
-- **PowerShell**: `.\column-calibrate.ps1 "currentfile.ens"` (add `-Detailed` for character mapping)
 
 **🚨 CRITICAL COLUMN_CALIBRATE.PY USAGE RULES 🚨**
 
 **COMPREHENSIVE VALIDATION ALWAYS:**
 1. **Complete validation**: `python .github/column_calibrate.py "file.ens"` (ALL checks included)
-2. **Automatic fixing**: `python .github/column_calibrate.py "file.ens" --fix`
 
 **CRITICAL WORKFLOW SEQUENCE:**
 1. **ALWAYS start with comprehensive validation**: `python .github/column_calibrate.py "file.ens"`
-2. **If line length issues, use --fix**: `python .github/column_calibrate.py "file.ens" --fix`
-3. **Re-validate after fixing**: `python .github/column_calibrate.py "file.ens"`
+2. **Re-validate after corrections**: `python .github/column_calibrate.py "file.ens"`
 
 **COMPREHENSIVE VALIDATION ALWAYS INCLUDES:**
 - Exit code 0 = SUCCESS (all validation passed)
@@ -311,20 +245,17 @@ Execute column validation on current ENSDF file:
 
 **COMMON MISTAKES TO AVOID:**
 - ❌ Ignoring exit codes and error messages
-- ❌ Not using --fix when line length issues are reported
-- ❌ Not re-validating after using --fix
+- ❌ Not re-validating after corrections
 - ❌ Assuming validation passed without checking exit code
 
 **⚠️ IMPORTANT LIMITATION**: column_calibrate.py only validates L and G records - DP, B, and E records require manual verification
 
-**COMPREHENSIVE VALIDATION ALWAYS INCLUDES:**
-- L-field positioning (columns 56-64)
-- S-field positioning (columns 65-74) 
-- Comment flag positioning (column 77)
-- Line length compliance (80 characters)
-- Field boundary validation
-
-**Process**: Display 80-char ruler → Extract L/G records → Validate against ENSDF Manual → Report issues
+**COMPREHENSIVE VALIDATION IN THIS SCRIPT INCLUDES:**
+- L-field positioning (first L value must start at column 56)
+- S-field positioning (LEFT-JUSTIFIED; columns 65–74)
+- Comment flag positioning (column 77; flags like K/M/S/C must be here, not at 80)
+- Data record line-length compliance (exactly 80 chars for L/G/E/B/DP)
+- Field boundary diagnostics with an 80-column ruler printout
 
 **CRITICAL 80-Column Debugging Technique**:
 When dealing with ENSDF alignment issues, ALWAYS use the visual ruler method:
@@ -343,7 +274,7 @@ print('Length:', len(header))
 
 ### "Debug Header Alignment"
 **IMMEDIATE ACTION**: When header alignment issues are suspected:
-1. Run `python .github/column_calibrate.py "filename"` - comprehensive validation including header analysis
+1. Run `python .github/column_calibrate.py "filename"` - comprehensive data-record validation (prints ruler; checks field positions and data-record line lengths)
 2. Compare with working reference files
 3. Use the visual ruler technique to spot misalignments
 4. Check ENSDF manual field positions (1-5, 6-9, 10-39, 40-65, 66-74, 75-80)
@@ -1316,8 +1247,7 @@ Summary:
 - Completed comprehensive change tracking and documentation
 
 ENSDF Tools:
-- column_calibrate.py: Extended from 41-column to complete 80-column ENSDF support
-- check_averages.py: Completed and tested average calculation verification tool
+- column_calibrate.py: Extended to complete 80-column ENSDF validation and fixer
 
 Scientific Content:
 - Ar35_36ar_p_d.ens: Fixed grammar in L=3 vs L=2 comparison (line 77)
@@ -1358,40 +1288,27 @@ For gamma energy data conforming to quantity.schema.json:
 }
 ```
 
-## Project Structure
+## Project Structure (concise and current)
 
-### Core Files (Most Critical)
-- `A35/[Element]35/new/*.ens` - Primary ENSDF source files (active evaluation)
-- `A34/[Element]34/new/*.ens` - A=34 ENSDF source files
-- `A60/[Element]60/new/*.ens` - A=60 ENSDF source files
-- `.github/change.log` - Comprehensive change tracking
+### Top-level
+- `A31.ens`, `A32.ens`, `A33.ens`, `A34/`, `A35/`, `A60/`, `XUNDL/`
+- `README.md`, `Weekly Effort Log.md`, `DOE_Progress_Report.md`, `Statistics.txt`, `Statistics.xlsx`
 
-### Generated Files (Expected to Change)
-- `A35/[Element]35/pdf/*.pdf` - Generated PDFs from .ens files
-- `A35/[Element]35/temp/*.*` - Analysis tool artifacts
-- `D:/X/ND/Files/*.pdf` - PDF output directory for ens2pdf.py
+### ENSDF datasets
+- `A34/[Element]34/new/*.ens` — A=34 active datasets; `old/` contains reference rounds; some elements include `pdf/` and supporting files.
+- `A35/[Element]35/...` — A=35 datasets by element (e.g., `K35`, `P35`, etc.).
+- `A60/[Element]60/new/*.ens` — A=60 datasets.
 
-### Tools and Scripts
-- `.github/ens2pdf.py` - Enhanced Python script for automated ENSDF to PDF conversion
-- `.github/column-calibrate.ps1` - PowerShell column validator
-- `.github/column_calibrate.py` - Python column validator with 80-column support
-- `.github/check_gamma_ordering.py` - ENSDF energy ordering validator for levels and gamma transitions
-- `.github/check_averages.py` - Average calculation validator
-- `.github/image_data_extraction.prompt.md` - Image data extraction guidelines
+### Tools (.github)
+- `.github/column_calibrate.py` — Column validator and line-length fixer (data records only).
+- `.github/ensdf_1line_ruler.py` — Visual 80-column ruler and verifier (file scan and single-line modes).
+- `.github/check_gamma_ordering.py` — Verifies ascending L and G energy ordering.
+- `.github/ens2pdf.py` — Generate PDFs from ENSDF files.
+- `.github/image_data_extraction.prompt.md` — Image data extraction guidance.
+- `.github/copilot-instructions.md` — This instruction file.
 
-### Reference Files (NEVER EDIT)
-- `A35/[Element]35/old/*.ens` - Previous evaluation rounds, keep untouched
-- `*.old` files - Reference files from previous evaluations
-
-### Documentation
-- `.github/copilot-instructions.md` - Comprehensive ENSDF evaluation guidelines
-- `README.md` - Project overview and status
-- `Weekly Effort Log.md` - Progress tracking
-- `Statistics.txt/.xlsx` - Project statistics
-
-### External Data
-- `XUNDL/` - eXperimental Unevaluated Nuclear Data List submissions
-- `A35_XUNDL.txt` - XUNDL data compilation for A=35
+### External data
+- `XUNDL/` — eXperimental Unevaluated Nuclear Data List submissions and compilations.
 
 ---
 

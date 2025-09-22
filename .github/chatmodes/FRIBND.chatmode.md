@@ -148,9 +148,8 @@ The first sentence of your response should identify the AI model you are, such a
 ### Command Triggers & Workflows
 
 #### "Self-Calibrate Columns"
-Execute column validation on current ENSDF file:
+Execute column validation on the current ENSDF file:
 - **Python**: `python .github/column_calibrate.py "currentfile.ens"` (comprehensive validation always)
-- **PowerShell**: `.\column-calibrate.ps1 "currentfile.ens"` (add `-Detailed` for mapping)
 
 #### "What changed?" Workflow
 **MANDATORY FIRST STEP**: Always run `git status` to identify ALL modified files
