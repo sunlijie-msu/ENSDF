@@ -130,6 +130,12 @@ python ensdf_tools.py convert "file.ens" --to-pdf --open
 4. **ONLY THEN**: Proceed with requested edits
 5. **AFTER EDITS**: Re-run validation tools and manually verify DP, B, and E records
 
+### Ruler technique (quick visual check)
+- Before making any column-sensitive edits, run the visual ruler tool to map exact column positions and verify the target fields. This catches misplaced flags or off-by-one column errors immediately.
+- Tool: `python .github/ensdf_1line_ruler.py --file path/to/file.ens` or `python .github/ensdf_1line_ruler.py --line "<80-char-line>"`
+- When scanning a file, the tool only checks L-records (column 8 == 'L') and reports any comment flags found at column 80 or other column errors. Use `--show-only-wrong` to limit output to problematic lines.
+- Always run the ruler BEFORE and AFTER edits; don't rely solely on automated validators for subtle column-placement mistakes.
+
 **🚨 CRITICAL ENSDF COMMENT LINE RULE 🚨**
 **FUNDAMENTAL STRUCTURE RULE - NEVER VIOLATE:**
 - **cL comment lines ONLY apply to the IMMEDIATELY PRECEDING L-record**
