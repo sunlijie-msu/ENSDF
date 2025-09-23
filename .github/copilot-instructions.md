@@ -563,8 +563,8 @@ Format:  35XX  L EEEE.E   DE  JP               T        DT        L        S    
 Example: 35P   L 1572.0    1  1/2+             2.29 PS  14        2        1.23     45
 ```
 
-| Field | Columns | Required | Description |
-|-------|---------|----------|-------------|
+| Field | Columns | Can this be omitted? | Description |
+|-------|---------|----------------------|-------------|
 | NUCID | 1-5 | ✓ | Nucleus (e.g., "35P  " or "35Cl ") |
 | CONT | 6 | | Continuation flag |
 | BLANK | 7 | ✓ | Must be blank |
@@ -595,8 +595,8 @@ Format:  35XX  G EEEE.E   DE  II.I   DI  [M]      MR     DMR   CC     DCC TI    
 Example: 35P   G 1572.0    1  100.0  4   [E2]     1.23   0.45  0.0368 8   1.23     45
 ```
 
-| Field | Columns | Required | Description |
-|-------|---------|----------|-------------|
+| Field | Columns | Can this be omitted? | Description |
+|-------|---------|----------------------|-------------|
 | NUCID | 1-5 | ✓ | Nucleus (e.g., "35P  " or "35Cl ") |
 | CONT | 6 | | Continuation flag |
 | BLANK | 7 | ✓ | Must be blank |
@@ -607,7 +607,8 @@ Example: 35P   G 1572.0    1  100.0  4   [E2]     1.23   0.45  0.0368 8   1.23  
 | SPACE | 22 | ✓ | Readability space |
 | RI | 23-29 | | Relative photon intensity (LEFT-JUSTIFIED at col 23) |
 | DRI | 30-31 | | Uncertainty in RI (LEFT-JUSTIFIED, including GT, LT markers) |
-| M | 32-41 | | Multipolarity |
+| SPACE | 32 | ✓ | Readability space |
+| M | 33-41 | | Multipolarity |
 | MR | 42-49 | | Mixing ratio |
 | DMR | 50-55 | | Uncertainty in MR (LEFT-JUSTIFIED) |
 | CC | 56-62 | | Conversion coefficient |
@@ -627,8 +628,8 @@ Format:  35XX   DP EP       DE IP     DIP EI
 Example: 35CL   DP 501      10 3.5    12 9022
 ```
 
-| Field | Columns | Required | Description |
-|-------|---------|----------|-------------|
+| Field | Columns | Can this be omitted? | Description |
+|-------|---------|----------------------|-------------|
 | NUCID | 1-5 | ✓ | Nucleus (e.g., "35CL " or "35P  ") |
 | CONT | 6 | | Continuation flag (blank) |
 | BLANK | 7 | ✓ | Must be blank |
@@ -659,8 +660,8 @@ Format:  35XX  B EEEE.E   DE  IB     DIB          LOGFT   DFT              C   U
 Example: 35P   B 1572.0    1  100.0  4            5.23    12               C   1U   
 ```
 
-| Field | Columns | Required | Description |
-|-------|---------|----------|-------------|
+| Field | Columns | Can this be omitted? | Description |
+|-------|---------|----------------------|-------------|
 | NUCID | 1-5 | ✓ | Nucleus (e.g., "35P  " or "35Cl ") |
 | CONT | 6 | | Continuation flag |
 | BLANK | 7 | ✓ | Must be blank |
@@ -692,8 +693,8 @@ Format:  35XX  E EEEE.E   DE  IB     DIB IE     DIE LOGFT   DFT    TI       DTI 
 Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   C 1U  S
 ```
 
-| Field | Columns | Required | Description |
-|-------|---------|----------|-------------|
+| Field | Columns | Can this be omitted? | Description |
+|-------|---------|----------------------|-------------|
 | NUCID | 1-5 | ✓ | Nucleus (e.g., "35CL " or "35P  ") |
 | CONT | 6 | | Continuation flag |
 | BLANK | 7 | ✓ | Must be blank |
