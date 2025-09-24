@@ -274,7 +274,6 @@ def validate_comment_flags(filename):
     print(f"\nCOMMENT FLAG VALIDATION: {filename}")
     print("=" * 60)
     print("Checking comment flags in column 77 (C field)...")
-    print("Common flags: P=possible, D=doublet, T=triplet, C=coincidence")
     print()
     print('ENSDF 80-Column Ruler:')
     print('         1         2         3         4         5         6         7         8')

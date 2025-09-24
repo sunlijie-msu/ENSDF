@@ -1,0 +1,19 @@
+{
+  "header": {
+    "documentType": "experimental",
+    "datasetName": "1969IN04",
+    "database": "temp",
+    "z": 17,
+    "n": 18,
+    "a": 35,
+    "elementSymbol": "Cl"
+  },
+  "levels": [
+  { "energy": { "unit": "keV", "value": 1219 }, "spinParity": { "values": [ { "twoTimesSpin": 0, "parity": "+" } ] }, "lifetime": { "unit": "ps", "value": 0.21, "uncertainty": { "type": "asymmetric", "plus": 0.10, "minus": 0.08 } }, "isStable": false },
+    { "energy": { "unit": "keV", "value": 1763 }, "spinParity": { "values": [ { "twoTimesSpin": 0, "parity": "+" } ] }, "lifetime": { "unit": "ps", "value": 0.55, "uncertainty": { "type": "symmetric", "value": 0.15 } }, "isStable": false },
+    { "energy": { "unit": "keV", "value": 2646 }, "spinParity": { "values": [ { "twoTimesSpin": 0, "parity": "+" } ] }, "lifetime": { "unit": "ps", "value": 0.30, "uncertainty": { "type": "symmetric", "value": 0.09 } }, "isStable": false },
+    { "energy": { "unit": "keV", "value": 2695 }, "spinParity": { "values": [ { "twoTimesSpin": 0, "parity": "+" } ] }, "lifetime": { "unit": "ps", "value": 0.03, "limit": "<" }, "isStable": false },
+    { "energy": { "unit": "keV", "value": 3003 }, "spinParity": { "values": [ { "twoTimesSpin": 0, "parity": "+" } ] }, "lifetime": { "unit": "ps", "value": 0.05, "limit": "<" }, "isStable": false },
+    { "energy": { "unit": "keV", "value": 3163 }, "spinParity": { "values": [ { "twoTimesSpin": 0, "parity": "+" } ] }, "lifetime": { "unit": "ps", "value": 60, "uncertainty": { "type": "symmetric", "value": 7 } }, "isStable": false }
+  ]
+}

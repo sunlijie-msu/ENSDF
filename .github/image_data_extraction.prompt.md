@@ -85,7 +85,7 @@ The uncertainty digits align precisely with the rightmost decimal digit of the s
 
 **⚠️ COMPARATIVE DATA MARKERS**
 
-**GT/LT Markers in ENSDF Data:**
+**GT/LT indicates lower/upper limits in ENSDF Data:**
 When extracting data with less-than (<) or greater-than (>) symbols:
 - `<1.6` should be recorded as: RI=`1.6` with uncertainty field=`LT` 
 - `>5.2` should be recorded as: RI=`5.2` with uncertainty field=`GT`
