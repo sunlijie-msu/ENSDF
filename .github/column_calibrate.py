@@ -265,11 +265,11 @@ def validate_comment_flags(filename):
     
     ENSDF Format Rule: Comment flags (C field) must be in column 77 exactly.
     Common comment flags include:
-    - P = Possible level (uncertain assignment)
-    - D = Doublet (two unresolved peaks) 
-    - T = Triplet (three unresolved peaks)
-    - C = Coincidence information
-    - Other alphabetic characters for various comments
+    - A-Z, a-z: Any single letter used to refer to a specific comment record (typically an explanation of data source from NSR keynumber references)
+    - * (asterisk): Denotes a multiply-placed gamma ray
+    - & (ampersand): Denotes a multiply-placed transition with intensity not divided
+    - @ (at symbol): Denotes a multiply-placed transition with intensity suitably divided
+    - Space: No comment flag
     """
     print(f"\nCOMMENT FLAG VALIDATION: {filename}")
     print("=" * 60)
@@ -330,11 +330,12 @@ def validate_comment_flags(filename):
                     if char not in flag_summary:
                         flag_summary[char] = {'correct': 0, 'incorrect': []}
                     
-                    # Interpret common flags
+                    # Interpret common flags according to ENSDF standards
                     flag_meaning = {
-                        'P': 'possible level', 'D': 'doublet', 'T': 'triplet', 
-                        'C': 'coincidence', 'A': 'comment', '?': 'uncertain'
-                    }.get(char, 'comment')
+                        '*': 'multiply-placed gamma ray',
+                        '&': 'multiply-placed transition, intensity not divided', 
+                        '@': 'multiply-placed transition, intensity suitably divided'
+                    }.get(char, 'comment record reference')
                     
                     print(f"✓ Line {line_num}: Comment flag '{char}' ({flag_meaning}) correctly in column 77")
                     flag_summary[char]['correct'] += 1
@@ -351,11 +352,12 @@ def validate_comment_flags(filename):
         for flag_type in sorted(flag_summary.keys()):
             correct_count = flag_summary[flag_type]['correct']
             
-            # Add meaning for common flags
+            # Add meaning for common flags according to ENSDF standards
             flag_meaning = {
-                'P': '(possible level)', 'D': '(doublet)', 'T': '(triplet)', 
-                'C': '(coincidence)', 'A': '(comment)', '?': '(uncertain)'
-            }.get(flag_type, '(comment)')
+                '*': '(multiply-placed gamma ray)',
+                '&': '(multiply-placed transition, intensity not divided)', 
+                '@': '(multiply-placed transition, intensity suitably divided)'
+            }.get(flag_type, '(comment record reference)')
             
             print(f"  Flag '{flag_type}' {flag_meaning}: {correct_count} total")
             print(f"    ✓ Correct (column 77): {correct_count}")
@@ -363,6 +365,125 @@ def validate_comment_flags(filename):
     
     print(f"  ✅ SUCCESS: All comment flags correctly positioned in column 77")
     return True
+
+def validate_g_record_flags(filename):
+    """
+    Validate G-record flags in columns 77 and 80.
+    
+    ENSDF Format Rules for G-Records:
+    - Column 77 (C field - Comment flags): A-Z, a-z, *, &, @, space
+    - Column 80 (Q field - Additional indicator): space, ?, S
+    
+    🚨 CRITICAL RULES 🚨:
+    - ? is FORBIDDEN in column 77 (comment flag field)
+    - ? is ALLOWED only in column 80 (additional indicator)
+    """
+    print(f"\nG-RECORD FLAG VALIDATION: {filename}")
+    print("=" * 60)
+    print("Checking G-record flags in columns 77 and 80...")
+    print()
+    print('ENSDF 80-Column Ruler:')
+    print('         1         2         3         4         5         6         7         8')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+    print(' ' * 76 + '^-- Col 77 (C field)  ^-- Col 80 (Additional indicator)')
+    print()
+    
+    g_records_analyzed = 0
+    col77_flags = {'valid': 0, 'invalid': 0, 'details': {}}
+    col80_indicators = {'valid': 0, 'invalid': 0, 'details': {}}
+    errors_found = False
+    
+    # Valid flags for each column - NOTE: '?' is explicitly FORBIDDEN in column 77
+    import string
+    valid_col77_flags = set(string.ascii_letters + '*&@ ')  # A-Z, a-z, *, &, @, space - NO '?'
+    valid_col80_indicators = set(' ?S')  # space, ?, S only
+    
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    
+    for line_num, line in enumerate(lines, 1):
+        line_content = line.rstrip('\n\r')
+        
+        # Check if this is a G-record (gamma transition)
+        if not (is_data_record_line(line_content) and len(line_content) >= 8 and line_content[7] == 'G'):
+            continue
+        
+        g_records_analyzed += 1
+        
+        # Validate Column 77 (Comment flag)
+        if len(line_content) >= 77:
+            col77_char = line_content[76]  # Column 77 (0-based index 76)
+            
+            if col77_char in valid_col77_flags:
+                col77_flags['valid'] += 1
+                if col77_char != ' ':  # Only report non-space flags
+                    flag_type = {
+                        '*': 'multiply-placed gamma', '&': 'multiply-placed (intensity not divided)',
+                        '@': 'multiply-placed (intensity suitably divided)'
+                    }.get(col77_char, f'comment record reference ({col77_char})')
+                    print(f"✓ Line {line_num}: Column 77 flag '{col77_char}' ({flag_type})")
+                    col77_flags['details'][col77_char] = col77_flags['details'].get(col77_char, 0) + 1
+            else:
+                col77_flags['invalid'] += 1
+                errors_found = True
+                if col77_char == '?':
+                    print(f"❌ Line {line_num}: INVALID '?' in column 77 - ? is FORBIDDEN in comment field!")
+                    print(f"   → ? should only be used in column 80 (additional indicator)")
+                else:
+                    print(f"❌ Line {line_num}: INVALID '{col77_char}' in column 77")
+                    print(f"   → Valid column 77 flags: A-Z, a-z, *, &, @, space")
+        
+        # Validate Column 80 (Additional indicator)
+        if len(line_content) >= 80:
+            col80_char = line_content[79]  # Column 80 (0-based index 79)
+            
+            if col80_char in valid_col80_indicators:
+                col80_indicators['valid'] += 1
+                if col80_char != ' ':  # Only report non-space indicators
+                    indicator_type = {
+                        '?': 'uncertain placement in level scheme',
+                        'S': 'expected but unobserved transition'
+                    }.get(col80_char, f'additional indicator ({col80_char})')
+                    print(f"✓ Line {line_num}: Column 80 indicator '{col80_char}' ({indicator_type})")
+                    col80_indicators['details'][col80_char] = col80_indicators['details'].get(col80_char, 0) + 1
+            else:
+                col80_indicators['invalid'] += 1
+                errors_found = True
+                print(f"❌ Line {line_num}: INVALID '{col80_char}' in column 80")
+                print(f"   → Valid column 80 indicators: space, ?, S")
+    
+    print()
+    print(f"G-RECORD FLAG SUMMARY:")
+    print(f"  G-records analyzed: {g_records_analyzed}")
+    print(f"  Column 77 flags: {col77_flags['valid']} valid, {col77_flags['invalid']} invalid")
+    print(f"  Column 80 indicators: {col80_indicators['valid']} valid, {col80_indicators['invalid']} invalid")
+    print()
+    
+    if col77_flags['details']:
+        print("  Column 77 flag usage:")
+        for flag, count in sorted(col77_flags['details'].items()):
+            flag_meaning = {
+                '*': 'multiply-placed gamma', '&': 'multiply-placed (not divided)', 
+                '@': 'multiply-placed (divided)'
+            }.get(flag, 'comment record reference')
+            print(f"    '{flag}' ({flag_meaning}): {count}")
+        print()
+    
+    if col80_indicators['details']:
+        print("  Column 80 indicator usage:")
+        for indicator, count in sorted(col80_indicators['details'].items()):
+            indicator_meaning = {
+                '?': 'uncertain placement', 'S': 'expected/unobserved'
+            }.get(indicator, 'additional indicator')
+            print(f"    '{indicator}' ({indicator_meaning}): {count}")
+        print()
+    
+    if not errors_found:
+        print(f"  ✅ SUCCESS: All G-record flags correctly positioned and valid!")
+    else:
+        print(f"  ❌ ERRORS: {col77_flags['invalid'] + col80_indicators['invalid']} invalid G-record entries found!")
+    
+    return not errors_found
 
 def validate_band_flags(filename):
     """
@@ -485,7 +606,8 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
     if not header_only:
         s_field_success = validate_s_field(filename)
         comment_flag_success = validate_comment_flags(filename)
-        return (not errors_found) and s_field_success and comment_flag_success
+        g_record_validation_success = validate_g_record_flags(filename)
+        return (not errors_found) and s_field_success and comment_flag_success and g_record_validation_success
         
     return not errors_found
 

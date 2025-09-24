@@ -1,153 +1,124 @@
 #!/usr/bin/env python3
 """
-ENSDF Line Ruler - Visual Column Verification Tool
-🎯 CRITICAL STRATEGY: This ruler technique is ESSENTIAL for precise ENSDF column positioning
-Use this tool before and after any ENSDF column edits to avoid positioning errors!
+ENSDF 80-Column Ruler - Simple Visual Verification Tool
 
-This tool was developed after discovering systematic column positioning errors 
-when moving E{-α} values from comment lines to S/DS fields. The ruler immediately
-revealed that K flags were incorrectly positioned at column 80 instead of column 77.
+🎯 PURPOSE: Quick visual verification of ENSDF 80-column positioning
+🎯 USE FREQUENTLY: Before edit, during edit, after edit for AI self-diagnostics
+🎯 CRITICAL: Prevents column positioning errors that break ENSDF format
 
-LESSON LEARNED: Never trust column positioning without visual verification!
+USAGE:
+  python ensdf_1line_ruler.py --line "your 80-char line"
+  python ensdf_1line_ruler.py --file "filename.ens"
 """
 
 import sys
 
-def verify_line_positioning(line):
-    """Verify ENSDF line positioning using visual ruler - THE MOST EFFECTIVE DEBUG TOOL"""
+def print_ruler(line):
+    """Print simple 80-column ruler with line for quick visual verification"""
+    print('🎯 ENSDF 80-Column Ruler:')
+    print('Ones: 12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+    print('Tens: 1111111111222222222233333333334444444444555555555566666666667777777777888888888999')
+    print(f'Line: {line}')
+    print(f'Len:  {len(line)} chars')
     
-    print('🎯 ENSDF 80-Column Ruler - CRITICAL POSITIONING TOOL:')
-    print('Ones:  12345678901234567890123456789012345678901234567890123456789012345678901234567890')
-    print('Tens:  1111111111222222222233333333334444444444555555555566666666667777777777888888888999')
-    print(f'Line:  {line}')
-    print(f'Length: {len(line)} characters')
-    print()
-    
-    # Critical ENSDF field boundaries for L-records
-    critical_positions = {
-        65: 'S field start (spectroscopic strength)',
-        74: 'S field end',
-        75: 'DS field start (uncertainty)',
-        76: 'DS field end', 
-        77: 'C field (Comment flag) ← CRITICAL: K flags belong HERE!',
-        78: 'Should be blank',
-        79: 'Should be blank',
-        80: 'Should be blank (line end) ← NOT for flags!'
-    }
-    
-    print('🔍 Character-by-character mapping for critical fields:')
-    for i, char in enumerate(line, 1):
-        if i in critical_positions:
-            status = "🎯" if (i == 77 and char in ['K', 'M', 'S', 'C', ' ']) else "⚠️" if i == 77 else ""
-            print(f'Col {i:2d}: "{char}" <- {critical_positions[i]} {status}')
-        elif i >= 60:
-            print(f'Col {i:2d}: "{char}"')
-    
-    print()
-    
-    # Check ENSDF compliance
+    # Quick validation
     errors = []
-    warnings = []
-    
     if len(line) != 80:
-        errors.append(f'Line length {len(line)} != 80 characters')
+        errors.append(f'Length {len(line)} ≠ 80')
     
-    if len(line) >= 77:
-        char_77 = line[76] if len(line) > 76 else ' '
-        if char_77 not in ['C', ' ', 'K', 'M', 'S']:  # Valid comment flags
-            errors.append(f'Invalid character "{char_77}" at column 77 (Comment flag position)')
-        elif char_77 == 'K':
-            print('🎯 SUCCESS: K flag correctly positioned at column 77!')
-    
-    # Check for flags in wrong positions (common mistake)
-    if len(line) >= 80:
-        char_80 = line[79] if len(line) > 79 else ' '
-        if char_80 in ['K', 'M', 'S', 'C']:
-            errors.append(f'Flag "{char_80}" found at column 80 - should be at column 77!')
+    # Check ENSDF field positions for data records
+    if len(line) >= 8 and line[7] in ['L', 'G', 'E', 'B']:
+        record_type = line[7]
+        
+        # Column 77 validation (different rules for different record types)
+        if len(line) > 76:
+            col_77 = line[76]
+            if record_type == 'G':
+                # G-record: A-Z, a-z, *, &, @, space allowed - NO ? at col 77
+                if col_77 != ' ' and not (col_77.isalpha() or col_77 in ['*', '&', '@']):
+                    errors.append(f'Col 77: "{col_77}" invalid G-record flag (use A-Z,a-z,*,&,@)')
+                if col_77 == '?':
+                    errors.append(f'Col 77: "?" forbidden in G-record (use col 80 for ?)')
+            else:
+                # L, E, B records: C, K, M, S, space allowed
+                if col_77 not in [' ', 'C', 'K', 'M', 'S']:
+                    errors.append(f'Col 77: "{col_77}" invalid {record_type}-record flag')
+        
+        # Column 80 validation 
+        if len(line) > 79:
+            col_80 = line[79]
+            if record_type == 'G':
+                # G-record col 80: space, ?, S allowed
+                if col_80 not in [' ', '?', 'S']:
+                    errors.append(f'Col 80: "{col_80}" invalid G-record additional indicator (use space,?,S)')
+            else:
+                # Other records: should be blank
+                if col_80 in ['K', 'M', 'S', 'C']:
+                    errors.append(f'Col 80: "{col_80}" flag should be at col 77')
+                elif col_80 != ' ':
+                    errors.append(f'Col 80: "{col_80}" should be blank for {record_type}-record')
     
     if errors:
-        print('❌ ERRORS FOUND:')
-        for error in errors:
-            print(f'  - {error}')
-    elif warnings:
-        print('⚠️ WARNINGS:')
-        for warning in warnings:
-            print(f'  - {warning}')
+        print(f'❌ ERRORS: {" | ".join(errors)}')
+        return False
     else:
-        print('✅ Line appears correctly formatted')
+        print('✅ OK')
+        return True
+def scan_file(filename, show_only_wrong=False):
+    """Scan ENSDF file and check all data record lines"""
+    try:
+        with open(filename, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+    except Exception as e:
+        print(f'❌ ERROR: Cannot open {filename}: {e}')
+        return False
     
-    return len(errors) == 0
-
-def demonstrate_ruler_effectiveness():
-    """Demonstrate how the ruler technique catches positioning errors"""
+    total_checked = 0
+    error_count = 0
     
-    print("="*70)
-    print("🎯 RULER TECHNIQUE DEMONSTRATION")
-    print("="*70)
-    print("This tool was created after a critical positioning error was discovered.")
-    print("The K flags were incorrectly placed at column 80 instead of column 77.")
-    print("The ruler technique immediately revealed this systematic error!")
-    print()
+    for lineno, raw_line in enumerate(lines, 1):
+        line = raw_line.rstrip('\n')
+        # Check data records (L, G, E, B, DP records)
+        if len(line) >= 8 and line[7] in ['L', 'G', 'E', 'B', 'D']:
+            total_checked += 1
+            if show_only_wrong:
+                if not print_ruler(line):
+                    error_count += 1
+                    print(f'Line {lineno}: {line}')
+                    print('-' * 40)
+            else:
+                print(f'\nLine {lineno}:')
+                if not print_ruler(line):
+                    error_count += 1
     
-    # Example of incorrect positioning (before fix)
-    wrong_line = ' 35CL  L 9127      9 5/2                                        2404      9    K'
-    print("❌ BEFORE FIX (K flag at column 80 - WRONG!):")
-    verify_line_positioning(wrong_line)
-    
-    print("\n" + "="*50)
-    
-    # Example of correct positioning (after fix)
-    correct_line = ' 35CL  L 9127      9 5/2                                        2404      9 K   '
-    print("✅ AFTER FIX (K flag at column 77 - CORRECT!):")
-    verify_line_positioning(correct_line)
-    
-    print("\n" + "="*70)
-    print("🚨 KEY LESSON: Always use this ruler BEFORE and AFTER ENSDF edits!")
-    print("   - Prevents systematic column positioning errors")
-    print("   - Catches mistakes that validation tools might miss")
-    print("   - Essential for maintaining ENSDF format compliance")
-    print("="*70)
+    print(f'\n� Summary: {total_checked} data records checked, {error_count} errors found')
+    return error_count == 0
 
 if __name__ == '__main__':
-    # Simple command-line interface:
-    # - no args: run built-in demonstration
-    # - --line "<line>" : verify a single provided line
-    # - --file <path> : scan an ENSDF file and verify L-records and K-flag placements
     import argparse
-
-    parser = argparse.ArgumentParser(description='ENSDF 80-column ruler and verifier')
-    parser.add_argument('--line', help='Verify a single line (pass the full 80-char line in quotes)')
-    parser.add_argument('--file', help='Path to an ENSDF file to scan and verify L-records')
-    parser.add_argument('--show-only-wrong', action='store_true', help='When scanning a file, only print lines with errors')
-
+    
+    parser = argparse.ArgumentParser(description='ENSDF 80-column ruler - simple visual verification')
+    parser.add_argument('--line', help='Verify single line (in quotes)')
+    parser.add_argument('--file', help='Scan ENSDF file for data record errors')
+    parser.add_argument('--show-only-wrong', action='store_true', help='Show only error lines')
+    
     args = parser.parse_args()
-
+    
     if args.line:
-        verify_line_positioning(args.line)
+        success = print_ruler(args.line)
+        sys.exit(0 if success else 1)
     elif args.file:
-        try:
-            with open(args.file, 'r', encoding='utf-8') as fh:
-                lines = fh.readlines()
-        except Exception as e:
-            print(f'ERROR: Could not open file {args.file}: {e}')
-            sys.exit(2)
-
-        total = 0
-        errors_found = 0
-        for lineno, raw in enumerate(lines, 1):
-            line = raw.rstrip('\n')
-            # Only check L-records (type 'L' in column 8)
-            if len(line) >= 8 and line[7] == 'L':
-                total += 1
-                ok = verify_line_positioning(line)
-                if not ok:
-                    errors_found += 1
-                    if args.show_only_wrong:
-                        print(f'Line {lineno}:')
-                        print(line)
-                        print('-'*40)
-        print(f'Checked {total} L-record lines: {errors_found} lines with errors')
-        if errors_found:
-            sys.exit(1)
+        success = scan_file(args.file, args.show_only_wrong)
+        sys.exit(0 if success else 1)
     else:
-        demonstrate_ruler_effectiveness()
+        print('🎯 ENSDF 80-Column Ruler Tool')
+        print('Usage:')
+        print('  --line "your line"     Check single line')
+        print('  --file filename.ens    Check all data records in file')
+        print('  --show-only-wrong      Show only error lines when scanning')
+        print()
+        print('💡 Use this tool FREQUENTLY during ENSDF editing:')
+        print('   • BEFORE making edits (verify current state)')
+        print('   • DURING editing (check each changed line)')
+        print('   • AFTER editing (final validation)')
+        sys.exit(0)

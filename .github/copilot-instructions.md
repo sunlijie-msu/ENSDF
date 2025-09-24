@@ -63,7 +63,7 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 
 **🚨 MANDATORY BEFORE ANY ENSDF EDITING 🚨**
 **VALIDATION WORKFLOW (run early, often, and after every change):**
-1. Visual check: `python .github/ensdf_1line_ruler.py --file "filename.ens" --show-only-wrong`  
+1. **Visual ruler check**: `python .github/ensdf_1line_ruler.py --file "filename.ens" --show-only-wrong`  
    - Use the ruler BEFORE edits to catch off-by-one column mistakes (especially S/DS and C=77 flags).
 2. Column calibration: `python .github/column_calibrate.py "filename.ens"`  
    - If line length issues are reported for data records, carefully review and adjust the affected lines.
@@ -71,16 +71,19 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
    - Re-validate: `python .github/column_calibrate.py "filename.ens"` and confirm exit code 0.
 3. Energy ordering: `python .github/check_gamma_ordering.py "filename.ens"`
 4. Manual checks: DP, B, and E record formatting still require manual verification (column_calibrate checks their line lengths only).
-5. During edits: re-run the ruler frequently (use `--line` for single-line checks) and re-run column calibration after each save.
+5. **During edits**: **ALWAYS** re-run the ruler for each changed line: `python .github/ensdf_1line_ruler.py --line "your 80-char line"`
 6. After edits: repeat 1–4. Proceed only when all tools return exit code 0 and manual checks are clean.
 
-### ENSDF 1-Line Ruler (visual column verifier) — USE OFTEN
-- Purpose: fast, visual verification of exact column positions; catches subtle off-by-one errors.
-- File scan: `python .github/ensdf_1line_ruler.py --file path/to/file.ens [--show-only-wrong]`  
-   Checks only L-records (type 'L' at column 8); exit code 1 if any errors are found.
-- Single line: `python .github/ensdf_1line_ruler.py --line "<exact 80-char line>"`  
-   Prints ruler, critical field mapping (S:65–74, DS:75–76, C flag:77), and diagnostics.
-- Frequency: run BEFORE edits, DURING (after each targeted change), and AFTER all edits. Do not rely solely on automated validators for column-placement mistakes.
+### ENSDF 1-Line Ruler (simple visual verifier) — **USE CONSTANTLY**
+**🎯 PURPOSE**: Quick AI self-diagnostic tool for immediate 80-column validation
+**🎯 FREQUENCY**: Use BEFORE task, DURING task (each edit), AFTER task
+- **Single line check**: `python .github/ensdf_1line_ruler.py --line "your exact 80-char line"`  
+   - Quick ruler display, length check, immediate validation feedback
+   - **USE THIS for every line you edit** - essential AI workflow step
+- **File scan**: `python .github/ensdf_1line_ruler.py --file path/to/file.ens [--show-only-wrong]`  
+   - Checks all data records (L, G, E, B, DP records); exit code 1 if any errors found
+   - Use `--show-only-wrong` to quickly identify problem lines only
+- **AI WORKFLOW RULE**: Never claim edit completion without ruler validation of each changed line!
 
 **🚨 CRITICAL ENSDF COMMENT LINE RULE 🚨**
 **FUNDAMENTAL STRUCTURE RULE - NEVER VIOLATE:**
@@ -271,6 +274,17 @@ print('Length:', len(header))
 ```
 
 **Process**: Display 80-char ruler → Extract L/G records → Validate against ENSDF Manual → Report issues
+
+### "Use ruler" / "Check ruler" / "Visual ruler"
+**IMMEDIATE ACTION**: Execute ENSDF 1-line ruler for quick visual verification:
+- **Single line check**: `python .github/ensdf_1line_ruler.py --line "your exact 80-char line"`
+  - **MANDATORY** for every line you edit - essential AI self-diagnostic tool
+  - Immediate visual ruler + length + field validation in compact format
+- **File scan**: `python .github/ensdf_1line_ruler.py --file "filename.ens" --show-only-wrong`
+  - Quick scan to identify any formatting errors in data records
+  - Exit code 0 = all good, exit code 1 = errors found
+- **🎯 CRITICAL FREQUENCY**: Use BEFORE editing, DURING editing (each line), AFTER editing
+- **AI WORKFLOW RULE**: Never claim successful edit without ruler verification!
 
 ### "Debug Header Alignment"
 **IMMEDIATE ACTION**: When header alignment issues are suspected:
@@ -566,7 +580,7 @@ Example: 35P   L 1572.0    1  1/2+             2.29 PS  14        2        1.23 
 | Field | Columns | Can this be omitted? | Description |
 |-------|---------|----------------------|-------------|
 | NUCID | 1-5 | ✓ | Nucleus (e.g., "35P  " or "35Cl ") |
-| CONT | 6 | | Continuation flag |
+| CONT | 6 | | Continuation label |
 | BLANK | 7 | ✓ | Must be blank |
 | TYPE | 8 | ✓ | "L" |
 | BLANK | 9 | ✓ | Must be blank |
@@ -591,14 +605,16 @@ Example: 35P   L 1572.0    1  1/2+             2.29 PS  14        2        1.23 
 ### G-Record Format (Gamma Transitions):
 ```
 Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
-Format:  35XX  G EEEE.E   DE  II.I   DI  [M]      MR     DMR   CC     DCC TI       DTI C
-Example: 35P   G 1572.0    1  100.0  4   [E2]     1.23   0.45  0.0368 8   1.23     45
+Format: 
+ 35XX  G EEEE.E   DE  II.I   DI  [M]      MR     DMR   CC     DCC TI       DTI C   Q
+Example:
+ 35P   G 1572.0    1  100.0  4   [E2]     1.23   0.45  0.0368 8   1.23     45  A   S
 ```
 
 | Field | Columns | Can this be omitted? | Description |
 |-------|---------|----------------------|-------------|
 | NUCID | 1-5 | ✓ | Nucleus (e.g., "35P  " or "35Cl ") |
-| CONT | 6 | | Continuation flag |
+| CONT | 6 | | Continuation label |
 | BLANK | 7 | ✓ | Must be blank |
 | TYPE | 8 | ✓ | "G" |
 | BLANK | 9 | ✓ | Must be blank |
@@ -615,7 +631,25 @@ Example: 35P   G 1572.0    1  100.0  4   [E2]     1.23   0.45  0.0368 8   1.23  
 | DCC | 63-64 | | Uncertainty in CC (LEFT-JUSTIFIED) |
 | TI | 65-74 | | Total transition intensity |
 | DTI | 75-76 | | Uncertainty in TI (LEFT-JUSTIFIED) |
-| C | 77 | | Comment flag |
+| C | 77 | | **Comment flag** (A-Z, a-z, *, &, @) - See G-Record Flag Rules below |
+| BLANK | 78-79 | ✓ | Must be blank |
+| Q | 80 | | **Additional indicator** (space, ?, S) - See G-Record Indicator Rules below |
+
+**🚨 CRITICAL G-Record Flag Rules 🚨**
+
+**Column 77 (C Field - Comment Flag):**
+- **A-Z, a-z**: Any single letter used to refer to a specific comment record. Cannot be a number.
+- **\*** (asterisk): Denotes a multiply-placed gamma ray
+- **&** (ampersand): Denotes a multiply-placed transition with intensity not divided
+- **@** (at symbol): Denotes a multiply-placed transition with intensity suitably divided
+- **Space**: No comment flag
+- **🚨 FORBIDDEN**: Question mark (?) is NOT allowed in column 77
+
+**Column 80 (Q Field - Additional Indicator):**
+- **Space**: Normal, well-established gamma transition
+- **?**: Denotes uncertain placement of the transition in the level scheme
+- **S**: Denotes expected or assumed, but as yet unobserved, gamma transition
+- **🚨 CRITICAL**: Only space, ?, or S allowed in column 80
 
 **Critical**: ENSDF files are parsed by automated systems requiring exact positions. One column off = data rejection.
 
@@ -631,7 +665,7 @@ Example: 35CL   DP 501      10 3.5    12 9022
 | Field | Columns | Can this be omitted? | Description |
 |-------|---------|----------------------|-------------|
 | NUCID | 1-5 | ✓ | Nucleus (e.g., "35CL " or "35P  ") |
-| CONT | 6 | | Continuation flag (blank) |
+| CONT | 6 | | Continuation label (blank) |
 | BLANK | 7 | ✓ | Must be blank |
 | D | 8 | ✓ | "D" for delayed particle |
 | P | 9 | ✓ | "P" for proton |
@@ -663,7 +697,7 @@ Example: 35P   B 1572.0    1  100.0  4            5.23    12               C   1
 | Field | Columns | Can this be omitted? | Description |
 |-------|---------|----------------------|-------------|
 | NUCID | 1-5 | ✓ | Nucleus (e.g., "35P  " or "35Cl ") |
-| CONT | 6 | | Continuation flag |
+| CONT | 6 | | Continuation label |
 | BLANK | 7 | ✓ | Must be blank |
 | TYPE | 8 | ✓ | "B" for beta minus |
 | BLANK | 9 | ✓ | Must be blank |
@@ -696,7 +730,7 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 | Field | Columns | Can this be omitted? | Description |
 |-------|---------|----------------------|-------------|
 | NUCID | 1-5 | ✓ | Nucleus (e.g., "35CL " or "35P  ") |
-| CONT | 6 | | Continuation flag |
+| CONT | 6 | | Continuation label |
 | BLANK | 7 | ✓ | Must be blank |
 | TYPE | 8 | ✓ | "E" for electron capture |
 | BLANK | 9 | ✓ | Must be blank |
@@ -713,7 +747,7 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 | DTI | 75-76 | | Uncertainty in TI (LEFT-JUSTIFIED) |
 | C | 77 | | Comment flag ('C' denotes coincidence, '?' denotes probable coincidence) |
 | UN | 78-79 | | Forbiddenness classification ('1U', '2U' for unique forbidden, blank = allowed) |
-| Q | 80 | | '?' = uncertain branch, 'S' = expected or predicted transition |
+| Q | 80 | | '?' = uncertain branch, 'S' = expected or assumed transition |
 
 **Critical E-Record Rules**:
 - **Must follow LEVEL record** for the level being populated in the decay
@@ -721,7 +755,7 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 - **Energy field** given only if measured or deduced from measured β⁺ end-point energy
 - **TI = IE + IB** for total decay intensity to the level
 - **Forbiddenness classification** in columns 78-79 ('1U', '2U' for first-, second-unique forbidden)
-- **Quality flags** in column 80 for uncertain ('?') or predicted ('S') transitions
+- **Additional indicator** in column 80 for uncertain ('?') or assumed ('S') transitions
 
 ### LOG FT FORMAT RULES (CRITICAL FOR B AND E RECORDS)
 **🚨 MANDATORY LOG FT FORMATTING IN ENSDF 🚨**

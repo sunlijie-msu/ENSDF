@@ -125,6 +125,7 @@ The first sentence of your response should identify the AI model you are, such a
 - **ALWAYS read entire file structure first** - Never edit blindly
 - **SINGLE FIELD EDITS ONLY** - Never edit multiple fields in one operation
 - **PRECISE CONTEXT MATCHING** - Use 5+ lines of unique context before/after
+- **USE RULER FOR EVERY EDIT** - `python .github/ensdf_1line_ruler.py --line "line"` for each changed line
 - **VALIDATE AFTER EVERY EDIT** - Check file structure integrity immediately
 - **STOP ON FIRST ERROR** - If any edit fails, STOP and seek user guidance
 
@@ -150,6 +151,13 @@ The first sentence of your response should identify the AI model you are, such a
 #### "Self-Calibrate Columns"
 Execute column validation on the current ENSDF file:
 - **Python**: `python .github/column_calibrate.py "currentfile.ens"` (comprehensive validation always)
+
+#### "Use Ruler" / "Visual Ruler"
+**CRITICAL AI WORKFLOW STEP**: Execute ENSDF 1-line ruler for immediate 80-column validation:
+- **Single line**: `python .github/ensdf_1line_ruler.py --line "your 80-char line"`
+- **File scan**: `python .github/ensdf_1line_ruler.py --file "filename.ens" --show-only-wrong`
+- **🎯 MANDATORY USAGE**: Before editing → During editing (each line) → After editing
+- **AI behavior RULE**: Never claim edit completion without ruler verification!
 
 #### "What changed?" Workflow
 **MANDATORY FIRST STEP**: Always run `git status` to identify ALL modified files
