@@ -18,7 +18,7 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 - **Utilize available tools and resources** - never guess or assume
 - **Plan systematically, execute carefully, and validate outcomes**
 
-## 🚨 CRITICAL ANTI-SPAGHETTI CODE RULES 🚨
+##  CRITICAL ANTI-SPAGHETTI CODE RULES 
 
 ### Script Organization Standards
 - **USE EXISTING ENSDF 80-column Validation Tools**: Always use `column_calibrate.py` and `ensdf_1line_ruler.py` and `check_gamma_ordering.py` for any ENSDF file format validation
@@ -42,7 +42,7 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 - **Optimize for data accuracy, reproducibility, and scientific rigor**
 - **Reference specific ENSDF standards and nuclear data evaluation practices**
 
-### 🚨 CRITICAL COMPLETION INTEGRITY RULE 🚨
+###  CRITICAL COMPLETION INTEGRITY RULE 
 - **NEVER claim "Perfect!" or "✅ Task Completed Successfully" when work is incomplete**
 - **NEVER use premature completion statements while tasks are still in progress**  
 - **Only declare completion AFTER all validation passes and requirements are fully met**
@@ -54,38 +54,77 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 ---
 
 
-## ⚠️ CRITICAL WORKFLOW REMINDER ⚠️
+## CRITICAL WORKFLOW REQUIREMENTS
+
+### Git Status Requirement
 **ALWAYS START WITH: `git status`**
 - Before any "What changed?" workflow
 - Before any change detection or documentation
 - This ensures ALL modified files are identified and processed
 - Missing this step = incomplete change tracking!
 
-**🚨 MANDATORY BEFORE ANY ENSDF EDITING 🚨**
-**VALIDATION WORKFLOW (run early, often, and after every change):**
+###  MANDATORY ENSDF VALIDATION WORKFLOW 
+**THIS IS NOT OPTIONAL - IT IS MANDATORY FOR EVERY ENSDF FILE INTERACTION**
+
+**VALIDATION SEQUENCE (run early, often, and after every change):**
 1. **Visual ruler check**: `python .github/ensdf_1line_ruler.py --file "filename.ens" --show-only-wrong`  
-   - Use the ruler BEFORE edits to catch off-by-one column mistakes (especially S/DS and C=77 flags).
-2. Column calibration: `python .github/column_calibrate.py "filename.ens"`  
-   - If line length issues are reported for data records, carefully review and adjust the affected lines.
-   - Avoid truncating or manipulating data.
-   - Re-validate: `python .github/column_calibrate.py "filename.ens"` and confirm exit code 0.
-3. Energy ordering: `python .github/check_gamma_ordering.py "filename.ens"`
-4. Manual checks: DP, B, and E record formatting still require manual verification (column_calibrate checks their line lengths only).
-5. **During edits**: **ALWAYS** re-run the ruler for each changed line: `python .github/ensdf_1line_ruler.py --line "your 80-char line"`
-6. After edits: repeat 1–4. Proceed only when all tools return exit code 0 and manual checks are clean.
+   - Use BEFORE edits to catch off-by-one column mistakes (especially S/DS and C=77 flags)
+2. **Column calibration**: `python .github/column_calibrate.py "filename.ens"`  
+   - Comprehensive data-record validation with 80-column ruler display
+   - Reports field positioning errors and line-length issues
+   - Re-validate after corrections and confirm exit code 0
+3. **Energy ordering**: `python .github/check_gamma_ordering.py "filename.ens"`
+   - Verifies ascending energy order for L-records and G-records
+4. **Manual verification**: DP, B, and E records require additional manual checks
+5. **During edits**: Re-run ruler for each changed line: `python .github/ensdf_1line_ruler.py --line "your 80-char line"`
+6. **Post-edit validation**: Repeat steps 1-4 before proceeding
 
-### ENSDF 1-Line Ruler (simple visual verifier) — **USE CONSTANTLY**
-**🎯 PURPOSE**: Quick AI self-diagnostic tool for immediate 80-column validation
-**🎯 FREQUENCY**: Use BEFORE task, DURING task (each edit), AFTER task
+**CRITICAL VALIDATION INTERPRETATION:**
+- **Exit code 0**: Validation PASSED - safe to proceed ✅
+- **Exit code 1**: Validation FAILED - MUST fix errors before proceeding ❌
+- **"SUCCESS: All ENSDF field positions appear correct!"**: Full validation passed
+- **NEVER ignore validation failures or assume they're minor!**
+- **ALL validation is comprehensive by default** - includes L-fields, S-fields, comment flags, and data-record line lengths
+
+### ENSDF 1-Line Ruler Tool
+** PURPOSE**: Quick AI self-diagnostic tool for immediate 80-column validation
+** FREQUENCY**: Use BEFORE task, DURING task (each edit), AFTER task
+
+**Usage Modes:**
 - **Single line check**: `python .github/ensdf_1line_ruler.py --line "your exact 80-char line"`  
-   - Quick ruler display, length check, immediate validation feedback
-   - **USE THIS for every line you edit** - essential AI workflow step
+  - Quick ruler display, length check, immediate validation feedback
+  - **USE THIS for every line you edit** - essential AI workflow step
 - **File scan**: `python .github/ensdf_1line_ruler.py --file path/to/file.ens [--show-only-wrong]`  
-   - Checks all data records (L, G, E, B, DP records); exit code 1 if any errors found
-   - Use `--show-only-wrong` to quickly identify problem lines only
-- **AI WORKFLOW RULE**: Never claim edit completion without ruler validation of each changed line!
+  - Checks all data records (L, G, E, B, DP records); exit code 1 if any errors found
+  - Use `--show-only-wrong` to quickly identify problem lines only
 
-**🚨 CRITICAL ENSDF COMMENT LINE RULE 🚨**
+**AI WORKFLOW RULE**: Never claim edit completion without ruler validation of each changed line!
+
+###  CRITICAL ENSDF FORMATTING RULES 
+
+#### Left-Justification Requirement
+**ALL ENSDF values AND uncertainties MUST be LEFT-JUSTIFIED in their fields:**
+- Energy values, RI values, half-lives, J-π, AND their uncertainties (DE, DRI, DT, etc.)
+- Special markers (GT, LT) within uncertainty fields are also left-justified
+- **NEVER right-justify or center ANY ENSDF field content!**
+
+#### L-Transfer Field Positioning Rule
+**L always starts from column 56 - EXACT rule for L (transferred angular momentum) fields:**
+- `L=1` → `1` at column 56 ✓
+- `L=1+2` → `1` at column 56, `+2` at columns 57-58 ✓
+- `L=1,2` → `1` at column 56, `,2` at columns 57-58 ✓
+- `L=1,2,3` → `1` at column 56, `,2` at columns 57-58, `,3` at columns 59-60 ✓
+- **ONLY the first L-value must be at column 56, subsequent values follow sequentially**
+
+#### Energy Ordering Requirements
+**MANDATORY ASCENDING ORDER:**
+1. **ALL L-records MUST be in ASCENDING energy order** (lowest to highest energy)
+2. **ALL G-records following each L-record MUST be in ASCENDING energy order**
+- **Example**: Egamma 1211 keV comes before 1567 keV, which comes before 1986 keV
+- **Critical**: ENSDF parsing systems require this strict ascending order for both levels and gammas
+- **Failure consequence**: One incorrectly ordered level or gamma can cause file rejection!
+
+#### Comment Line Association Rules
 **FUNDAMENTAL STRUCTURE RULE - NEVER VIOLATE:**
 - **cL comment lines ONLY apply to the IMMEDIATELY PRECEDING L-record**
 - **NEVER assume comment lines apply to multiple L-records**
@@ -93,39 +132,9 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 - **Only modify J^π values when explicit comment lines reference source data**
 - **Example**: If L 3305 has no cL line, its J^π is standalone - do NOT change it based on nearby comments
 
-**CRITICAL VALIDATION INTERPRETATION:**
-- **Exit code 0**: Validation PASSED - safe to proceed
-- **Exit code 1**: Validation FAILED - MUST fix errors before proceeding
-- **Line length issues**: Address cautiously; see Column Calibration Tool note on optional auto-padding for data records only.
-- **"SUCCESS: All ENSDF field positions appear correct!"**: Validation passed
-- **NEVER ignore validation failures or assume they're minor!**
-- **ALL validation is now comprehensive by default - includes L-fields, S-fields, comment flags, and data-record line lengths!**
-
-**THIS IS NOT OPTIONAL - IT IS MANDATORY FOR EVERY ENSDF FILE INTERACTION**
-
-**CRITICAL FORMATTING RULE**: ALL ENSDF values AND uncertainties MUST be LEFT-JUSTIFIED in their fields!
-- Energy values, RI values, half-lives, J-π, AND their uncertainties (DE, DRI, DT, etc.)
-- Special markers (GT, LT) within uncertainty fields are also left-justified
-- NEVER right-justify or center ANY ENSDF field content!
-
-**🚨 CRITICAL L-FIELD POSITIONING RULE 🚨**
-**L always starts from column 56 - EXACT rule for L-transfer fields:**
-- `L=1` → `1` at column 56 ✓
-- `L=1+2` → `1` at column 56, `+2` at columns 57-58 ✓
-- `L=1,2` → `1` at column 56, `,2` at columns 57-58 ✓
-- `L=1,2,3` → `1` at column 56, `,2` at columns 57-58, `,3` at columns 59-60 ✓
-- **ONLY the first L-value must be at column 56, subsequent values follow sequentially**
-
-**🚨 MANDATORY ENSDF ORDERING RULES 🚨**
-1. **ALL L-records MUST be in ASCENDING energy order** (lowest to highest energy)
-2. **ALL G-records following each L-record MUST be in ASCENDING energy order**
-- Example: Egamma 1211 keV comes before 1567 keV, which comes before 1986 keV
-- ENSDF parsing systems require this strict ascending order for both levels and gammas
-- One incorrectly ordered level or gamma can cause file rejection!
-
-## 🚨 CRITICAL FILE CORRUPTION PREVENTION 🚨
+##  CRITICAL FILE CORRUPTION PREVENTION 
 **IMMEDIATE STOP CONDITIONS - NEVER PROCEED IF:**
-1. **File structure corruption detected** - Headers mangled into data lines
+1. **File structure corruption detected** - Headers mangled into data lines or vice versa
 2. **L-records jumbled together** - Multiple L-records on single line
 3. **Column alignment destroyed** - 80-column ENSDF format broken
 4. **Header/data line mixing** - Header elements appearing in L-records
@@ -146,14 +155,14 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 
 
 **REQUIRED VALIDATION SEQUENCE:**
-1. Read file → 2. Identify target → 3. Single precise edit → 4. Validate structure → 5. STOP if any issues
+1. Read file → 2. Identify target → 3. Single precise edit → 4. Validate structure → 5. Resolve any issues
 
 **File Corruption Recovery:**
 - If structure damaged: User must restore from backup/undo
-- Agent must NOT attempt automatic recovery
+- Agent must NOT attempt automatic git restore operations before user approval
 - Document corruption cause for future prevention
 
-## 🎯 80-Column Alignment Debugging Protocol
+##  80-Column Alignment Debugging Protocol
 **TRIGGER PHRASES**: "not aligned", "wrong columns", "header formatting", "80 characters"
 **ALSO TRIGGERED**: **ANY ENSDF FILE INTERACTION** - This is MANDATORY, not optional!
 
@@ -169,76 +178,51 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
    - Cols 66-74: PUB
    - Cols 75-80: DATE
 
-**⚠️ CRITICAL RULE**: Never work on ENSDF files without running column validation first!
+**CRITICAL RULE**: Never work on ENSDF files without running column validation first!
 **Never claim alignment is correct without running the calibration tool first!**
 
-## 🚨 CRITICAL VALIDATION TOOL USAGE PROTOCOL 🚨
+##  CRITICAL VALIDATION TOOL USAGE PROTOCOL 
 
-### Column Calibration Tool (column_calibrate.py) — REQUIRED
-Accurate per current script behavior:
-- Validate: `python .github/column_calibrate.py "file.ens"`  
-   Prints the 80-column ruler; checks L-field starts at col 56, S field left-justified at col 65 (65–74), and C flag at col 77; reports data-record (L/G/E/B/DP) line-length issues.
-- Optional auto-padding (mention once): `--fix` can pad or trim data-record lines to exactly 80 characters. Use with extreme caution; it does NOT fix field content/formatting and may surface new issues if misused. Prefer manual corrections for format problems. Always re-validate afterwards (no assumptions).
-- Exit codes: 0 = all checks pass; 1 = any error (including line-length issues or field positioning failures).
-- Notes: Comment lines are not modified by `--fix`. DP, B, and E records are validated for line length but still require manual format checks.
+### Validation Tools Reference
 
-**CRITICAL OUTPUT INTERPRETATION:**
-- **"SUCCESS: All ENSDF field positions appear correct!"** = VALIDATION PASSED ✅
-- **"DATA RECORD LINE LENGTH ISSUES DETECTED"** = Lines not exactly 80 chars (data records only). See single auto-padding note above.
-- **"ERROR: Field positioning errors found"** = MAJOR ISSUES - INVESTIGATE ❌
-- **Exit code 1** = VALIDATION FAILED - DO NOT PROCEED ❌
-- **Exit code 0** = VALIDATION PASSED - SAFE TO PROCEED ✅
+#### Column Calibration Tool (column_calibrate.py) — REQUIRED
+**Comprehensive ENSDF field validation and data-record line-length checking:**
+- **Basic validation**: `python .github/column_calibrate.py "file.ens"`
+  - Prints 80-column ruler with field boundaries
+  - Checks L-field positioning (column 56), S-field left-justification (columns 65-74)
+  - Verifies comment flags at column 77
+  - Reports data-record line-length issues (L/G/E/B/DP records)
+- **Optional auto-fix**: `--fix` flag can pad/trim spaces to exactly 80-character line lengths
+  - **Use with extreme caution** - does NOT fix field content or formatting errors
+  - May surface new issues if misused - prefer manual corrections
+  - Always re-validate after using --fix option
+- **Exit codes**: 0 = all checks pass; 1 = errors found
+- **Limitations**: DP, B, and E records require additional manual verification
+
+#### Energy Ordering Tool (check_gamma_ordering.py) — REQUIRED
+**Validates ascending energy order for L-records and G-records:**
+- **Basic check**: `python .github/check_gamma_ordering.py "file.ens"`
+- **Multiple files**: `python .github/check_gamma_ordering.py "A35/K35/new/*.ens" --summary`
+- **Verbose output**: Add `--verbose` flag for detailed checking process
+- **Exit codes**: 0 = correct ordering; 1 = ordering violations found
+
+#### Output Interpretation Guidelines
+**SUCCESS indicators**:
+- **Exit code 0**: Validation PASSED - safe to proceed ✅
+- **"SUCCESS: All ENSDF field positions appear correct!"**: Full validation passed
+
+**ERROR indicators**:
+- **Exit code 1**: Validation FAILED - MUST fix errors before proceeding ❌
+- **"DATA RECORD LINE LENGTH ISSUES DETECTED"**: Lines not exactly 80 characters
+- **"ERROR: Field positioning errors found"**: Field alignment problems
 
 **FORBIDDEN BEHAVIORS:**
-- ❌ Running validation and ignoring errors
-- ❌ Proceeding with edits when exit code is 1
-- ❌ Ignoring data-record line-length issues when reported
-- ❌ Assuming "it's probably fine" without checking exit codes
-- ❌ Not re-validating after corrections
+- ❌ Running validation and ignoring errors or exit codes
+- ❌ Proceeding with edits when validation fails (exit code 1)
+- ❌ Assuming "it's probably fine" without checking results
+- ❌ Not re-validating after making corrections
 
 ## Command Triggers
-
-### 🚨 UNIVERSAL VALIDATION TOOL USAGE RULES 🚨
-**APPLY TO ALL ENSDF VALIDATION TOOLS - NO EXCEPTIONS:**
-
-1. **ALWAYS check exit codes** - 0 = success, 1 = errors
-2. **ALWAYS read tool output** - don't just run and ignore
-3. **ALWAYS use appropriate options** when errors are detected
-4. **ALWAYS re-validate after fixing** any issues
-5. **NEVER proceed with work when validation fails**
-
-**MANDATORY VALIDATION SEQUENCE FOR ANY ENSDF WORK:**
-```bash
-# Step 1: ALWAYS start with comprehensive validation
-python .github/column_calibrate.py "file.ens"
-
-# Step 2: Re-validate after any corrections
-python .github/column_calibrate.py "file.ens"
-
-# Step 3: Check energy ordering
-python .github/check_gamma_ordering.py "file.ens"
-
-# Step 4: Only proceed when both tools return exit code 0
-```
-
-**ABSOLUTELY FORBIDDEN:**
-- ❌ Skipping validation tools
-- ❌ Ignoring exit codes or error messages
-- ❌ Proceeding with work when validation fails
-- ❌ Running tools without understanding their output
-- ❌ Assuming validation passed without checking
-
-### "Self-Calibrate Columns" 
-Execute column validation on current ENSDF file:
-- **Python**: `python .github/column_calibrate.py "currentfile.ens"` (comprehensive validation always)
-
-**🚨 CRITICAL COLUMN_CALIBRATE.PY USAGE RULES 🚨**
-
-**COMPREHENSIVE VALIDATION ALWAYS:**
-1. **Complete validation**: `python .github/column_calibrate.py "file.ens"` (ALL checks included)
-
-**CRITICAL WORKFLOW SEQUENCE:**
-1. **ALWAYS start with comprehensive validation**: `python .github/column_calibrate.py "file.ens"`
 2. **Re-validate after corrections**: `python .github/column_calibrate.py "file.ens"`
 
 **COMPREHENSIVE VALIDATION ALWAYS INCLUDES:**
@@ -251,7 +235,7 @@ Execute column validation on current ENSDF file:
 - ❌ Not re-validating after corrections
 - ❌ Assuming validation passed without checking exit code
 
-**⚠️ IMPORTANT LIMITATION**: column_calibrate.py only validates L and G records - DP, B, and E records require manual verification
+**IMPORTANT LIMITATION**: column_calibrate.py only validates L and G records - DP, B, and E records require manual verification
 
 **COMPREHENSIVE VALIDATION IN THIS SCRIPT INCLUDES:**
 - L-field positioning (first L value must start at column 56)
@@ -273,7 +257,7 @@ print('Length:', len(header))
 "
 ```
 
-**Process**: Display 80-char ruler → Extract L/G records → Validate against ENSDF Manual → Report issues
+**Process**: Display 80-char ruler → Extract L/G/E/B records → Validate against ENSDF Manual → Report issues
 
 ### "Use ruler" / "Check ruler" / "Visual ruler"
 **IMMEDIATE ACTION**: Execute ENSDF 1-line ruler for quick visual verification:
@@ -283,7 +267,7 @@ print('Length:', len(header))
 - **File scan**: `python .github/ensdf_1line_ruler.py --file "filename.ens" --show-only-wrong`
   - Quick scan to identify any formatting errors in data records
   - Exit code 0 = all good, exit code 1 = errors found
-- **🎯 CRITICAL FREQUENCY**: Use BEFORE editing, DURING editing (each line), AFTER editing
+- ** CRITICAL FREQUENCY**: Use BEFORE editing, DURING editing (each line), AFTER editing
 - **AI WORKFLOW RULE**: Never claim successful edit without ruler verification!
 
 ### "Debug Header Alignment"
@@ -300,7 +284,7 @@ print('Length:', len(header))
 - **Verbose output**: Add `--verbose` flag for detailed checking process
 - **Summary only**: Add `--summary` flag for overview without file details
 
-**🚨 CRITICAL CHECK_GAMMA_ORDERING.PY USAGE RULES 🚨**
+** CRITICAL CHECK_GAMMA_ORDERING.PY USAGE RULES **
 
 **MANDATORY VALIDATION PROTOCOL:**
 1. **Basic ordering check**: `python .github/check_gamma_ordering.py "file.ens"`
@@ -322,7 +306,7 @@ print('Length:', len(header))
 ### "What changed?"
 **MANDATORY FIRST STEP**: Always run `git status` to identify ALL modified files.
 
-**🚨 CRITICAL AI HALLUCINATION PREVENTION 🚨**
+** CRITICAL AI HALLUCINATION PREVENTION **
 - **NEVER use generic commit messages** like "Refactor code structure" or "Update files"
 - **ALWAYS base commit messages on actual git diff analysis** - no assumptions
 - **REQUIRE evidence-based commit content** using the structured template below
@@ -350,7 +334,7 @@ Execute comprehensive change detection and documentation:
 ### "Restore files"
 **Critical workflow for discarding local changes and restoring files to their last committed state.**
 
-**⚠️ DESTRUCTIVE OPERATION WARNING ⚠️**
+**DESTRUCTIVE OPERATION WARNING**
 `git restore` permanently discards uncommitted changes in working directory. **ALWAYS backup important changes before restoration.**
 
 **When to use git restore:**
@@ -570,16 +554,56 @@ python ens2pdf.py Si35_adopted --open --system
 
 ## ENSDF Column Format Standards (CRITICAL - NO MISTAKES ALLOWED)
 
+### ENSDF NUCID Field Format Rules (Columns 1-5) - FUNDAMENTAL SPECIFICATION
+** CRITICAL NUCID FORMATTING - EXACT COLUMN POSITIONING REQUIRED **
+
+**Two-digit mass number + One-letter element** (e.g., 35S, 51V, 12C):
+- **Format**: ` MME ` (space, mass, element, space)
+- **Column 1**: Space
+- **Columns 2-3**: Mass number (35, 51, 12)
+- **Column 4**: One-letter element symbol (S, V, C)
+- **Column 5**: Space
+- **Results**: ` 35S `, ` 51V `, ` 12C `
+
+**Two-digit mass number + Two-letter element** (e.g., 35Cl, 74Ge, 32Si):
+- **Format**: ` MMEl` (space, mass, element)
+- **Column 1**: Space
+- **Columns 2-3**: Mass number (35, 74, 32)
+- **Columns 4-5**: Two-letter element symbol (Cl, Ge, Si)
+- **Results**: ` 35Cl`, ` 74Ge`, ` 32Si`
+
+**Three-digit mass number + One-letter element** (e.g., 127I, 252C):
+- **Format**: `MMME ` (mass, element, space)
+- **Columns 1-3**: Mass number (127, 252)
+- **Column 4**: One-letter element symbol (I, W, U)
+- **Column 5**: Space
+- **Results**: `127I `, `184W `
+
+**Three-digit mass number + Two-letter element** (e.g., 120Sn, 208Pb, 252Cf):
+- **Format**: `MMMEl` (mass, two-letter element)
+- **Columns 1-3**: Mass number (120, 208, 252)
+- **Columns 4-5**: Two-letter element symbol (Sn, Pb, Cf)
+- **Results**: `120Sn`, `208Pb`, `252Cf`
+
+**CRITICAL NUCID Rules:**
+- **Column positioning is EXACT** - one column off breaks ENSDF parsing
+- **Element symbols follow periodic table** - case sensitive (Cl not CL)
+- **Spaces are mandatory** where specified to maintain field boundaries
+- **Mass numbers are numeric only** - no leading zeros unless 3-digit
+
 ### L-Record Format (Energy Levels):
 ```
 Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
-Format:  35XX  L EEEE.E   DE  JP               T        DT        L        S        DS C
-Example: 35P   L 1572.0    1  1/2+             2.29 PS  14        2        1.23     45
+Format:
+ 35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q
+Example:
+ 35P   L 1572.0    12 3/2+,5/2+        2.29 PS   14    2        1.23      45A  ?
+ 35CL  L 1572.0    5  3/2+             2.29 PS   8     2        1.23      5 A  S
 ```
 
 | Field | Columns | Can this be omitted? | Description |
 |-------|---------|----------------------|-------------|
-| NUCID | 1-5 | ✓ | Nucleus (e.g., "35P  " or "35Cl ") |
+| NUCID | 1-5 | ✓ | Nucleus (e.g., " 35P " or " 35Cl") |
 | CONT | 6 | | Continuation label |
 | BLANK | 7 | ✓ | Must be blank |
 | TYPE | 8 | ✓ | "L" |
@@ -595,25 +619,26 @@ Example: 35P   L 1572.0    1  1/2+             2.29 PS  14        2        1.23 
 | DS | 75-76 | | Uncertainty in S (LEFT-JUSTIFIED) |
 | C | 77 | | Comment flag |
 
-**⚠️ CRITICAL**: L-records MUST be arranged in ascending energy order throughout the file.
+**CRITICAL**: L-records MUST be arranged in ascending energy order throughout the file.
 
-**🚨 CRITICAL cL COMMENT LINE ASSOCIATION RULE 🚨**
+** CRITICAL cL COMMENT LINE ASSOCIATION RULE **
 - **cL comment lines apply ONLY to the immediately preceding L-record**
 - **NEVER modify L-record data based on comment lines for other L-records**
 - **Each L-record without a following cL line is an independent assignment**
 
 ### G-Record Format (Gamma Transitions):
 ```
-Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
+Columns:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
 Format: 
- 35XX  G EEEE.E   DE  II.I   DI  [M]      MR     DMR   CC     DCC TI       DTI C   Q
+ 35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q
 Example:
- 35P   G 1572.0    1  100.0  4   [E2]     1.23   0.45  0.0368 8   1.23     45  A   S
-```
+ 35P   G 1572.0    10 70.0   24 M1+E2    1.23    0.45  0.1    20 71.0     23A  S
+ 35Si  G 1572.0    5  5.0    2  E2       +2.1          0.05   5  5.0      2 B  ?
 
 | Field | Columns | Can this be omitted? | Description |
 |-------|---------|----------------------|-------------|
-| NUCID | 1-5 | ✓ | Nucleus (e.g., "35P  " or "35Cl ") |
+| NUCID | 1-5 | ✓ | Nucleus (e.g., " 35P " or " 35Cl") |
 | CONT | 6 | | Continuation label |
 | BLANK | 7 | ✓ | Must be blank |
 | TYPE | 8 | ✓ | "G" |
@@ -635,7 +660,53 @@ Example:
 | BLANK | 78-79 | ✓ | Must be blank |
 | Q | 80 | | **Additional indicator** (space, ?, S) - See G-Record Indicator Rules below |
 
-**🚨 CRITICAL G-Record Flag Rules 🚨**
+** CRITICAL MULTIPOLE MIXING RATIO DOCUMENTATION **
+
+### Multipole Mixing Ratios (MR Field - Columns 42-49)
+**Nuclear Physics Definition**: Multipole mixing ratios (δ) quantify the degree to which different angular momentum multipoles (like electric dipole E1 and magnetic quadrupole M2) are mixed in a gamma-ray transition. They represent the amplitude ratio between different electromagnetic transition modes.
+
+**Physical Significance**:
+- **δ = 0**: Pure transition (single multipolarity, e.g., pure E2)
+- **δ ≠ 0**: Mixed transition (multiple multipolarities contributing)
+- **δ(E2/M1)**: Ratio of electric quadrupole to magnetic dipole amplitudes
+- **δ(M1/E2)**: Ratio of magnetic dipole to electric quadrupole amplitudes
+- **Angular correlation**: Mixing ratios determine gamma-ray angular distributions and correlations
+
+**Examples of Mixing Ratio Formatting**:
+```
+MR Field Examples (Columns 42-49):
++1.23           → δ = +1.23
+-0.45           → δ = -0.45  
+>+2.1           → δ > +2.1
+<-0.8           → δ < -0.8
++0.123          → δ = +0.123
+-12.3           → δ = -12.3
+```
+
+**Mixing Ratio Uncertainties (DMR Field - Columns 50-55)**:
+The DMR field supports both symmetric and asymmetric uncertainties for mixing ratios:
+
+**Symmetric uncertainties (1-2 digits)**:
+- **Format**: Left-justified digits with trailing spaces
+
+**Asymmetric uncertainties (+X-Y format)**:
+- **Format**: `+X-Y` notation left-justified in 6-character field
+- **Examples**: `+0.5-0.3`, `+2.1-1.8`, `+15-8`, `+0.12-0.09`
+- **Physics context**: Common when systematic effects dominate or when theoretical calculations have asymmetric confidence intervals
+
+**Special DMR Field Cases**:
+- **Systematic uncertainties**: `SY` for systematic-dominated errors
+- **Calculated values**: Often left blank when mixing ratio is from theory
+- **Limit measurements**: Typically blank when MR field contains `>` or `<`
+
+**Critical Formatting Rules for Mixing Ratios**:
+- **Always include sign** in MR field (+ or -)
+- **LEFT-JUSTIFY all values** in both MR and DMR fields
+- **Asymmetric uncertainties** use full 6-character DMR field efficiently
+- **No exponential notation** - use decimal format only
+- **Space padding** for values shorter than field width
+
+**CRITICAL G-Record Flag Rules**
 
 **Column 77 (C Field - Comment Flag):**
 - **A-Z, a-z**: Any single letter used to refer to a specific comment record. Cannot be a number.
@@ -643,17 +714,17 @@ Example:
 - **&** (ampersand): Denotes a multiply-placed transition with intensity not divided
 - **@** (at symbol): Denotes a multiply-placed transition with intensity suitably divided
 - **Space**: No comment flag
-- **🚨 FORBIDDEN**: Question mark (?) is NOT allowed in column 77
+- **FORBIDDEN**: Question mark (?) is NOT allowed in column 77
 
 **Column 80 (Q Field - Additional Indicator):**
 - **Space**: Normal, well-established gamma transition
 - **?**: Denotes uncertain placement of the transition in the level scheme
 - **S**: Denotes expected or assumed, but as yet unobserved, gamma transition
-- **🚨 CRITICAL**: Only space, ?, or S allowed in column 80
+- **CRITICAL**: Only space, ?, or S allowed in column 80
 
 **Critical**: ENSDF files are parsed by automated systems requiring exact positions. One column off = data rejection.
 
-**⚠️ CRITICAL**: G-records following each L-record MUST be in ascending energy order!
+**CRITICAL**: G-records following each L-record MUST be in ascending energy order!
 
 ### DP-Record Format (Delayed Proton Emission):
 ```
@@ -664,7 +735,7 @@ Example: 35CL   DP 501      10 3.5    12 9022
 
 | Field | Columns | Can this be omitted? | Description |
 |-------|---------|----------------------|-------------|
-| NUCID | 1-5 | ✓ | Nucleus (e.g., "35CL " or "35P  ") |
+| NUCID | 1-5 | ✓ | Nucleus (e.g., " 35Cl" or " 35P ") |
 | CONT | 6 | | Continuation label (blank) |
 | BLANK | 7 | ✓ | Must be blank |
 | D | 8 | ✓ | "D" for delayed particle |
@@ -696,7 +767,7 @@ Example: 35P   B 1572.0    1  100.0  4            5.23    12               C   1
 
 | Field | Columns | Can this be omitted? | Description |
 |-------|---------|----------------------|-------------|
-| NUCID | 1-5 | ✓ | Nucleus (e.g., "35P  " or "35Cl ") |
+| NUCID | 1-5 | ✓ | Nucleus (e.g., " 35P " or " 35Cl") |
 | CONT | 6 | | Continuation label |
 | BLANK | 7 | ✓ | Must be blank |
 | TYPE | 8 | ✓ | "B" for beta minus |
@@ -729,7 +800,7 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 
 | Field | Columns | Can this be omitted? | Description |
 |-------|---------|----------------------|-------------|
-| NUCID | 1-5 | ✓ | Nucleus (e.g., "35CL " or "35P  ") |
+| NUCID | 1-5 | ✓ | Nucleus (e.g., " 35Cl" or " 35P ") |
 | CONT | 6 | | Continuation label |
 | BLANK | 7 | ✓ | Must be blank |
 | TYPE | 8 | ✓ | "E" for electron capture |
@@ -758,7 +829,7 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 - **Additional indicator** in column 80 for uncertain ('?') or assumed ('S') transitions
 
 ### LOG FT FORMAT RULES (CRITICAL FOR B AND E RECORDS)
-**🚨 MANDATORY LOG FT FORMATTING IN ENSDF 🚨**
+** MANDATORY LOG FT FORMATTING IN ENSDF **
 
 **Standard log ft Format in Records:**
 - **Decimal notation**: Always use decimal point (e.g., `4.85`, `6.2`, `>8.5`)
@@ -804,7 +875,34 @@ COMMENTS (text):
 
 **UNCERTAINTY LEFT-JUSTIFICATION RULE**: ALL uncertainties (DE, DRI, DMR, DCC, DTI, DT, DS, etc.) MUST be left-justified in their respective fields, just like the values themselves. Special markers (GT, LT) within uncertainty fields are also left-justified.
 
-**🚨 CRITICAL ENSDF SCIENTIFIC NOTATION FORMAT 🚨**
+** CRITICAL ENSDF UNCERTAINTY FIELD FORMATTING RULES **
+
+**Standard 2-Column Uncertainty Fields (LIMITED to 1-2 digits MAXIMUM):**
+- **DE field (cols 20-21)**: 1-2 digits LEFT-JUSTIFIED with space padding
+  - Single digit: `"5 "` (digit + space), Double digits: `"15"` (two digits)
+- **DRI field (cols 30-31)**: 1-2 digits OR special markers LEFT-JUSTIFIED
+  - Single digit: `"7 "` (digit + space), Double digits: `"24"`, Markers: `"GT"`, `"LT"`
+- **DCC field (cols 63-64)**: 1-2 digits LEFT-JUSTIFIED with space padding
+  - Single digit: `"3 "` (digit + space), Double digits: `"18"` (two digits)
+- **DTI field (cols 75-76)**: 1-2 digits LEFT-JUSTIFIED with space padding
+  - Single digit: `"9 "` (digit + space), Double digits: `"42"` (two digits)
+- **DS field (cols 75-76)**: 1-2 digits LEFT-JUSTIFIED with space padding
+  - Single digit: `"2 "` (digit + space), Double digits: `"35"` (two digits)
+
+**Extended Uncertainty Fields (Up to 6 characters for asymmetric uncertainties):**
+- **DT field (cols 50-55)**: Half-life uncertainties - supports asymmetric format
+  - Symmetric: `"14    "` (digits + spaces), Asymmetric: `"+3-4  "`, `"+19-3 "`, `"+13-28"`
+- **DMR field (cols 50-55)**: Mixing ratio uncertainties - supports asymmetric format  
+  - Symmetric: `"0.45  "` (value + spaces), Asymmetric: `"+0.5-0.3"`, `"+2.1-1.8"`
+
+**CRITICAL FORMATTING RULES:**
+- **Single digits in 2-column fields**: MUST be padded with trailing space for left-justification
+- **Double digits in 2-column fields**: Fill both columns completely
+- **Asymmetric uncertainties**: Use +X-Y format in 6-character fields (DT, DMR)
+- **FORBIDDEN**: "123" in 2-column fields - corrupts adjacent data
+- **NEVER**: Right-justify or center uncertainties in any field
+
+** CRITICAL ENSDF SCIENTIFIC NOTATION FORMAT **
 **For intensities and other values in scientific notation:**
 - **Standard format**: `(5.6±1.0)×10^-4` becomes `5.6E-4 10` in ENSDF
 - **Value field**: `5.6E-4` (scientific notation with E)
@@ -842,7 +940,7 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
 - **NEVER** modify first/last line indentation or spacing in .ens files
 
 ### Data Consistency with Adopted Levels
-**🚨 CRITICAL CONSISTENCY RULE 🚨**
+** CRITICAL CONSISTENCY RULE **
 - **When comments state "From the Adopted Levels"** (e.g., `35S  cL J,T$From the Adopted Levels`):
   - **J-π (spin-parity) values MUST exactly match adopted values** including parentheses formatting
   - **T1/2 (half-life) values MUST exactly match adopted values** including units and uncertainties
@@ -853,7 +951,7 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
 - **Example**: If adopted shows `2.29 PS 14` then individual dataset must show `2.29 PS 14`, not be empty
 
 ### ENSDF Record Ordering (CRITICAL FORMAT REQUIREMENTS)
-**🚨 MANDATORY ORDERING RULES 🚨**
+** MANDATORY ORDERING RULES **
 1. **ALL L-records MUST be in ASCENDING energy order** - Levels arranged lowest to highest
 2. **ALL G-records following each L-record MUST be in ASCENDING energy order**
 - This is fundamental ENSDF format enforced by automated parsing systems
@@ -891,7 +989,7 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
 6. **Validate column positions** - Check field boundaries before editing
 7. **POST-EDIT VALIDATION**: Re-run both validation tools and manually verify DP, B, and E records after any changes
 
-**⚠️ CRITICAL**: If either validation tool shows issues, STOP and fix them before proceeding with edits!
+**CRITICAL**: If either validation tool shows issues, STOP and fix them before proceeding with edits!
 
 **EDITING METHODOLOGY:**
 1. **ONE EDIT AT A TIME** - Never batch multiple field changes
@@ -929,7 +1027,7 @@ WRONG approach:
 
 **CRITICAL**: ALL values must be LEFT-JUSTIFIED within their respective fields - never right-justified or centered!
 
-**⚠️ CRITICAL COLUMN RULE**: When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns!
+**CRITICAL COLUMN RULE**: When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns!
 - L-transfer values: Must stay in columns 56-64
 - Spectroscopic factors: Must stay in columns 65-74
 - Comment flags: Must stay in column 77
@@ -953,7 +1051,7 @@ WRONG approach:
 - `{+-n}` → negative superscript (e.g., `{+-4}` → ⁻⁴)
 
 ### ENSDF Uncertainty Notation
-**🚨 CRITICAL UNCERTAINTY FORMAT RULES 🚨**
+** CRITICAL UNCERTAINTY FORMAT RULES **
 - **Symmetric uncertainties**: `{In}` (e.g., `{I7}`, `{I11}`) - NO plus/minus signs
 - **Asymmetric uncertainties**: `{I+n-m}` (e.g., `{I+10-11}`, `{I+7-9}`) - WITH plus/minus signs
 - **Examples**:
@@ -1007,7 +1105,7 @@ Duplicates: "the the" etc.
 **Note**: Always confirm with experimental data; never enter L-values in J-π column.
 
 ### J-π Assignment Confidence Notation (CRITICAL)
-**🚨 FUNDAMENTAL RULE**: J = spin; π = parity
+** FUNDAMENTAL RULE**: J = spin; π = parity
 - **WITHOUT parentheses**: Firm, well-established assignments (e.g., `3/2+`, `7/2-`)
 - **WITH parentheses**: Less certain, tentative assignments (e.g., `(3/2+)`, `(7/2-)`)
 - **Parentheses indicate uncertainty in the assignment confidence, not the measurement precision**
@@ -1057,7 +1155,7 @@ Duplicates: "the the" etc.
 - **Mixed notation allowed** with different confidence per assignment
 - **No spaces** around commas in J-π field
 - **Exact reproduction required** - never modify parentheses placement without experimental justification
-- **🚨 CRITICAL PARENTHESES MATCHING RULE 🚨**: Spin-parity with/without () are considered to be different confidence levels. When creating J$ comments or adding values to J fields from reference data sources, ensure parentheses are preserved exactly as written in the source:
+- ** CRITICAL PARENTHESES MATCHING RULE **: Spin-parity with/without () are considered to be different confidence levels. When creating J$ comments or adding values to J fields from reference data sources, ensure parentheses are preserved exactly as written in the source:
   - **Source shows `3/2`** → Comment: `J$3/2 from [reference]` (NO parentheses)
   - **Source shows `(3/2)`** → Comment: `J$(3/2) from [reference]` (single parentheses preserved)
   - **NEVER use double parentheses**: `J$((3/2))` is FORBIDDEN
@@ -1265,7 +1363,7 @@ Files changed: X modified, Y untracked
 Brief scope and impact summary (EVIDENCE-BASED CONCLUSION)
 ```
 
-**🚨 COMMIT MESSAGE ANTI-HALLUCINATION RULES 🚨**
+** COMMIT MESSAGE ANTI-HALLUCINATION RULES **
 - **FORBIDDEN PHRASES**: "Refactor code structure", "Update files", "Improve functionality", "Enhance system"
 - **REQUIRED SPECIFICITY**: Every tool/file/change mentioned must be backed by actual git diff evidence
 - **MANDATORY VERIFICATION**: Each section must contain actual file names and specific changes
