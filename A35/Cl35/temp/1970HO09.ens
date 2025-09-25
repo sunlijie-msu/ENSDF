@@ -1,0 +1,50 @@
+ 35CL    1970Ho09                      1970Ho09                                 
+ 35CL PN                                                                     7  
+ 35CL  L 0            3/2+                                                      
+ 35CL  L 1220         1/2+                                                      
+ 35CL  G 1220         100                                                       
+ 35CL  L 1763      2  5/2                                                       
+ 35CL  G 1763         100                +3.0    1
+ 35CL  L 2646      2  7/2                                                       
+ 35CL  L 2700      2  3/2+                                                      
+ 35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q
+Example:
+ 35P   G 1572.0    10 70.0   24 M1+E2    -1.23   25    0.090  20 71.0     23A  S
+ 35Si  G 1572.0    5  5.0    2  E2       +2.1          0.05   5  5.1      2 B  ?
+
+
+Nᵢ 1, Ei 1.220 MeV, J 1/2 → Nf 0, Ef 0.000 MeV, Eγ 1.220 MeV, BR 100
+
+Nᵢ 2, Ei 1.763 MeV, J 5/2 → Nf 0, Ef 0.000 MeV, Eγ 1.763 MeV, BR 100, δ 3.0 ± 0.1
+
+Nᵢ 3, Ei 2.646 MeV, J 7/2 → Nf 0, Ef 0.000 MeV, Eγ 2.646 MeV, BR 90 ± 2
+
+Nᵢ 3, Ei 2.646 MeV, J 7/2 → Nf 2, Ef 1.763 MeV, Eγ 0.883 MeV, BR 10 ± 2, δ 0.25 ± 0.05
+
+Nᵢ 4, Ei 2.695 MeV, J 3/2,5/2 → Nf 0, Ef 0.000 MeV, Eγ 2.695 MeV, BR 77 ± 3, δ 0.17 ± 0.08 for Ji=3/2; −0.26 ± 0.05 for Ji=5/2
+
+Nᵢ 4, Ei 2.695 MeV, J 3/2; 5/2 → Nf 1, Ef 1.220 MeV, Eγ 1.475 MeV, BR 9 ± 2
+
+Nᵢ 4, Ei 2.695 MeV, J 3/2; 5/2 → Nf 2, Ef 1.763 MeV, Eγ 0.932 MeV, BR 14 ± 2
+
+Nᵢ 5, Ei 3.003 MeV, J 5/2 → Nf 0, Ef 0.000 MeV, Eγ 3.003 MeV, BR 100, δ 0.09 ± 0.03
+
+Nᵢ 6, Ei 3.163 MeV, J 7/2 → Nf 0, Ef 0.000 MeV, Eγ 3.163 MeV, BR 90 ± 3, δ −0.14 ± 0.02
+
+Nᵢ 6, Ei 3.163 MeV, J 7/2 → Nf 3, Ef 2.646 MeV, Eγ 0.517 MeV, BR 10 ± 3
+
+Nᵢ 8, Ei 4.110 MeV, J 7/2; 3/2 → Nf 1, Ef 1.220 MeV, Eγ 2.890 MeV, BR 86 ± 4
+
+Nᵢ 9, Ei 4.345 MeV, J 9/2 → Nf 3, Ef 2.646 MeV, Eγ 1.699 MeV, BR 38 ± 4
+
+Nᵢ 9, Ei 4.345 MeV, J 9/2 → Nf 6, Ef 3.163 MeV, Eγ 1.182 MeV, BR 62 ± 4, δ 0.42 ± 0.04; −1.2 ± 0.4
+
+Nᵢ 10, Ei 4.620 MeV, J 5/2; 3/2 → Nf 0, Ef 0.000 MeV, Eγ 4.620 MeV, BR 100, δ 0.08 ± 0.14; −0.36 ± 0.15
+
+Nᵢ 11, Ei 4.885 MeV, J 7/2 → Nf 2, Ef 1.763 MeV, Eγ 3.122 MeV, BR 66 ± 6, δ 0.0 ± 0.41
+
+Nᵢ 11, Ei 4.885 MeV, J 7/2 → Nf 3, Ef 2.646 MeV, Eγ 2.239 MeV, BR 34 ± 6
+
+Nᵢ 12, Ei 5.230 MeV, J 1/2; 3/2; 5/2 → Nf 0, Ef 0.000 MeV, Eγ 5.230 MeV, BR 100
+
+Nᵢ 13, Ei 5.850 MeV, J 9/2; 5/2 → Nf 6, Ef 3.163 MeV, Eγ 2.687 MeV, BR 100, δ 0.28 ± 0.04; −2.2 ± 0.5 or −0.6 ± 0.1

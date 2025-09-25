@@ -633,8 +633,9 @@ Columns:
 Format: 
  35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q
 Example:
- 35P   G 1572.0    10 70.0   24 M1+E2    1.23    0.45  0.1    20 71.0     23A  S
- 35Si  G 1572.0    5  5.0    2  E2       +2.1          0.05   5  5.0      2 B  ?
+ 35P   G 1572.0    10 70.0   24 M1+E2    -1.23   25    0.090  20 71.0     23A  S
+ 35Si  G 1572.0    5  5.0    2  E2       +2.1          0.05   5  5.1      2 B  ?
+```
 
 | Field | Columns | Can this be omitted? | Description |
 |-------|---------|----------------------|-------------|
