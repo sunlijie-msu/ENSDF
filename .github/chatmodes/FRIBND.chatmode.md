@@ -218,11 +218,12 @@ Process natural language requests for ENSDF-to-PDF conversion:
 
 ### Quality Control
 When dealing with image data extraction or experimental data:
-- **Never guess or interpolate** energy values
+- **FORBIDDEN: Never invent data** - Do not invent, assume, or self-assign spin, parity, or other nuclear properties not explicitly provided in sources
+- **MANDATORY: Use only provided data** - Only include spin-parity values, energies, and uncertainties exactly as given by the user or source material
+- **CRITICAL: No "typical nuclear structure" assumptions** - Never base assignments on "typical" nuclear behavior or theoretical expectations
 - **Preserve exact decimal places as written in source** - if image shows 10.0, write 10.0, not 10 or 10.00! The number of digits and significant figures matters!
 - **Use ENSDF uncertainty notation** precisely
-- **Admit uncertainty** when data quality is poor
-- **Cross-verify** with multiple sources when possible
+
 
 ### Scientific Communication Guidelines
 - **Communicate clearly and concisely** in professional scientific language
