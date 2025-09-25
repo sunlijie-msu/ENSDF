@@ -14,10 +14,19 @@ USAGE:
 import sys
 
 def print_ruler(line):
-    """Print simple 80-column ruler with line for quick visual verification"""
+    """Print ENSDF 80-column ruler with format specifications for validation"""
     print('🎯 ENSDF 80-Column Ruler:')
     print('Ones: 12345678901234567890123456789012345678901234567890123456789012345678901234567890')
     print('Tens: 1111111111222222222233333333334444444444555555555566666666667777777777888888888999')
+    
+    # Show format template based on record type
+    if len(line) >= 8 and line[7] == 'L':
+        print('L-Fmt: 35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q')
+        print('L-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|L(8)|BLANK(9)|E(10-19)|DE(20-21)|SPACE(22)|J-π(23-39)|T(40-49)|DT(50-55)|L(56-64)|S(65-74)|DS(75-76)|C(77)|BLANK(78-79)|Q(80)')
+    elif len(line) >= 8 and line[7] == 'G':
+        print('G-Fmt: 35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q')
+        print('G-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|G(8)|BLANK(9)|E(10-19)|DE(20-21)|SPACE(22)|RI(23-29)|DRI(30-31)|SPACE(32)|M(33-41)|MR(42-49)|DMR(50-55)|CC(56-62)|DCC(63-64)|TI(65-74)|DTI(75-76)|C(77)|BLANK(78-79)|Q(80)')
+    
     print(f'Line: {line}')
     print(f'Len:  {len(line)} chars')
     
