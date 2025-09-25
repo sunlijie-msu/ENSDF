@@ -3,48 +3,52 @@
  35CL  L 0            3/2+                                                      
  35CL  L 1220         1/2+                                                      
  35CL  G 1220         100                                                       
- 35CL  L 1763      2  5/2                                                       
- 35CL  G 1763         100                +3.0    1
- 35CL  L 2646      2  7/2                                                       
- 35CL  L 2700      2  3/2+                                                      
- 35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q
-Example:
- 35P   G 1572.0    10 70.0   24 M1+E2    -1.23   25    0.090  20 71.0     23A  S
- 35Si  G 1572.0    5  5.0    2  E2       +2.1          0.05   5  5.1      2 B  ?
-
-
-Nᵢ 1, Ei 1.220 MeV, J 1/2 → Nf 0, Ef 0.000 MeV, Eγ 1.220 MeV, BR 100
-
-Nᵢ 2, Ei 1.763 MeV, J 5/2 → Nf 0, Ef 0.000 MeV, Eγ 1.763 MeV, BR 100, δ 3.0 ± 0.1
-
-Nᵢ 3, Ei 2.646 MeV, J 7/2 → Nf 0, Ef 0.000 MeV, Eγ 2.646 MeV, BR 90 ± 2
-
-Nᵢ 3, Ei 2.646 MeV, J 7/2 → Nf 2, Ef 1.763 MeV, Eγ 0.883 MeV, BR 10 ± 2, δ 0.25 ± 0.05
-
-Nᵢ 4, Ei 2.695 MeV, J 3/2,5/2 → Nf 0, Ef 0.000 MeV, Eγ 2.695 MeV, BR 77 ± 3, δ 0.17 ± 0.08 for Ji=3/2; −0.26 ± 0.05 for Ji=5/2
-
-Nᵢ 4, Ei 2.695 MeV, J 3/2; 5/2 → Nf 1, Ef 1.220 MeV, Eγ 1.475 MeV, BR 9 ± 2
-
-Nᵢ 4, Ei 2.695 MeV, J 3/2; 5/2 → Nf 2, Ef 1.763 MeV, Eγ 0.932 MeV, BR 14 ± 2
-
-Nᵢ 5, Ei 3.003 MeV, J 5/2 → Nf 0, Ef 0.000 MeV, Eγ 3.003 MeV, BR 100, δ 0.09 ± 0.03
-
-Nᵢ 6, Ei 3.163 MeV, J 7/2 → Nf 0, Ef 0.000 MeV, Eγ 3.163 MeV, BR 90 ± 3, δ −0.14 ± 0.02
-
-Nᵢ 6, Ei 3.163 MeV, J 7/2 → Nf 3, Ef 2.646 MeV, Eγ 0.517 MeV, BR 10 ± 3
-
-Nᵢ 8, Ei 4.110 MeV, J 7/2; 3/2 → Nf 1, Ef 1.220 MeV, Eγ 2.890 MeV, BR 86 ± 4
-
-Nᵢ 9, Ei 4.345 MeV, J 9/2 → Nf 3, Ef 2.646 MeV, Eγ 1.699 MeV, BR 38 ± 4
-
-Nᵢ 9, Ei 4.345 MeV, J 9/2 → Nf 6, Ef 3.163 MeV, Eγ 1.182 MeV, BR 62 ± 4, δ 0.42 ± 0.04; −1.2 ± 0.4
-
-Nᵢ 10, Ei 4.620 MeV, J 5/2; 3/2 → Nf 0, Ef 0.000 MeV, Eγ 4.620 MeV, BR 100, δ 0.08 ± 0.14; −0.36 ± 0.15
-
-Nᵢ 11, Ei 4.885 MeV, J 7/2 → Nf 2, Ef 1.763 MeV, Eγ 3.122 MeV, BR 66 ± 6, δ 0.0 ± 0.41
-
-Nᵢ 11, Ei 4.885 MeV, J 7/2 → Nf 3, Ef 2.646 MeV, Eγ 2.239 MeV, BR 34 ± 6
-
-Nᵢ 12, Ei 5.230 MeV, J 1/2; 3/2; 5/2 → Nf 0, Ef 0.000 MeV, Eγ 5.230 MeV, BR 100
-
-Nᵢ 13, Ei 5.850 MeV, J 9/2; 5/2 → Nf 6, Ef 3.163 MeV, Eγ 2.687 MeV, BR 100, δ 0.28 ± 0.04; −2.2 ± 0.5 or −0.6 ± 0.1
+ 35CL  L 1763         5/2                                                       
+ 35CL  G 1763         100                +3.0    1                              
+ 35CL  L 2646         7/2                                                       
+ 35CL  G 883          10     2           +0.25   5                              
+ 35CL  G 2646         90     2                                                  
+ 35CL  L 2695         3/2,5/2                                                   
+ 35CL  G 932          14     2                                                  
+ 35CL  G 1475         9      2                                                  
+ 35CL  G 2695         77     3           +0.17   8                              
+ 35CL cG MR$+0.17 {I8} for J=3/2; -0.26 {I5} for J=5/2                          
+ 35CL  L 3003         5/2                                                       
+ 35CL cL J$spin=3/2,5/2 from |g(|q) in 1970Ho09. 3/2 will cause M2>200 W.u. or  
+ 35CL2cL E2>10 W.u and is ruled out by 1970Ho09. Parity is from the Adopted     
+ 35CL3cL Levels.                                                                
+ 35CL  G 3003         100                +0.09   3                              
+ 35CL  L 3163         7/2                                                       
+ 35CL  G 517          10     3                                                  
+ 35CL  G 3163         90     3           -0.14   2                              
+ 35CL  L 3945      10 9/2                                                       
+ 35CL  G 1299         9      2                                                  
+ 35CL  G 2182         91     2                                                  
+ 35CL  L 4045      10                                                           
+ 35CL  L 4110      10 3/2,7/2                                                   
+ 35CL  G 2347         14     4                                                  
+ 35CL  G 4110         86     4                                                  
+ 35CL  L 4175      10                                                           
+ 35CL  L 4345      15 9/2                                                       
+ 35CL  G 1182         62     4           +0.42   4                              
+ 35CL  G 1699         38     4                                                  
+ 35CL  L 4620      15 3/2,5/2                                                   
+ 35CL  G 4620         100                +0.08   14                             
+ 35CL cG MR$+0.08 {I14} for J=3/2; -0.36 {I15} for J=5/2                        
+ 35CL  L 4770      15                                                           
+ 35CL  L 4885      20 7/2                                                       
+ 35CL  G 2239         34     6                                                  
+ 35CL  G 3122         66     6           0.0    41                              
+ 35CL  L 5015      20                                                           
+ 35CL  L 5175      20                                                           
+ 35CL  L 5230      20 1/2,3/2,5/2                                               
+ 35CL  G 5230         100                                                       
+ 35CL  L 5415      20                                                           
+ 35CL  L 5535      20                                                           
+ 35CL  L 5600      20                                                           
+ 35CL  L 5650      20                                                           
+ 35CL  L 5850      25 5/2,9/2                                                   
+ 35CL  G 2687         100                                                       
+ 35CL cG MR$-2.2 {I5} or -0.6 {I1} for J=5/2; +0.28 {I4} for J=9/2              
+ 35CL  L 5930      25                                                           
+ 35CL  L 6400      25                                                           
