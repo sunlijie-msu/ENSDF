@@ -1,5 +1,5 @@
 Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 08/24/2025)
-Generated at: Fri 09/26/2025 at 12:56:46 AM EDT                                 
+Generated at: Fri 09/26/2025 at 12:45:41 PM EDT                                 
                                                                                 
  35CL  L 0                                                                      
  35CL  L 1219.5    10                  0.21 PS   +10-8                          
@@ -87,14 +87,15 @@ Generated at: Fri 09/26/2025 at 12:56:46 AM EDT
  35CL cL T$from 1972Br33                                                        
  35CL  L 4347.5    15 5/2,9/2          2.9 PS    +14-7                          
  35CL cL T$from 1972Br33                                                        
- 35CL  G 1184.6    10 100    4                                                  
- 35CL cG RI$from 1972Br33. Other: 100 {I7} (1970Ho09)                           
+ 35CL  G 1184.6    10 100.0  31                                                 
+ 35CL cG RI$from 1974Lo17. Others: 100 {I7} (1970Ho09) and 100 {I4} (1972Br33)  
  35CL cG E$from 1973Al22                                                        
  35CL cG MR$+0.7 {I+12-2} for J=5/2; -0.40 {I+8-9} for J=9/2.                   
  35CL cG $A{-2}=-0.95 {I3}, A{-4}=0.08 {I3}.                                    
  35CL cG $POL=-0.005 {I40}.                                                     
- 35CL  G 1702.1    15 50     11                                                 
- 35CL cG RI$unweighted average of 61 {I7} (1970Ho09) and 39 {I4} (1972Br33)     
+ 35CL  G 1702.1    15 52     7                                                  
+ 35CL cG RI$unweighted average of 61 {I7} (1970Ho09), 39 {I4} (1972Br33), and   
+ 35CL2cG 56.3 {I31} (1974Lo17)                                                  
  35CL cG E$from 1973Al22                                                        
  35CL cG $A{-2}=-0.34 {I5}, A{-4}=0.04 {I5}.                                    
  35CL cG $POL=0.36 {I7}.                                                        
@@ -117,11 +118,12 @@ Generated at: Fri 09/26/2025 at 12:56:46 AM EDT
  35CL  L 5406.5    20 11/2             0.4 PS    1                              
  35CL cL T$from 1974Lo17                                                        
  35CL cL T$(1974Lo17, DSAM).                                                    
- 35CL  G 1059.3    10 100                                                       
- 35CL cG E,RI$from 1973Al22                                                     
+ 35CL  G 1059.3    10 9.9    22                                                 
+ 35CL cG E$from 1973Al22                                                        
+ 35CL cG RI$from 1974Lo17                                                       
  35CL cG $A{-2}=0.19 {I11}, A{-4}=-0.01 {I13}.                                  
  35CL cG $POL=-0.40 {I14}.                                                      
- 35CL  G 2244      30                                                           
+ 35CL  G 2244      3 100.0   22                                                 
  35CL cG E$from 1973Al22                                                        
  35CL cG RI$from 1974Lo17                                                       
  35CL cG $A{-2}=0.44 {I3}, A{-4}=-0.19 {I3}.                                    
@@ -137,13 +139,13 @@ Generated at: Fri 09/26/2025 at 12:56:46 AM EDT
  35CL  L 6086.4    25 9/2,13/2         9.3 PS    8                              
  35CL cL T$from 1974Lo17                                                        
  35CL cL T$(1974Lo17, RDM).                                                     
- 35CL  G 679.9     10                                                           
+ 35CL  G 679.9     10 100    6                                                  
  35CL cG E$from 1973Al22                                                        
  35CL cG RI$from 1974Lo17                                                       
  35CL cG MR$+0.10 {I7} for J=9/2; 0.00 {I7} for J=13/2.                         
  35CL cG $A{-2}=-0.22 {I1}, A{-4}=0.005 {I15}.                                  
  35CL cG $POL=-0.45 {I5}.                                                       
- 35CL  G 1740                                                                   
+ 35CL  G 1740        18      6                                                  
  35CL  L 6400      25                                                           
                                                                                 
                                                                                 

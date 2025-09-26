@@ -1,5 +1,5 @@
 Program for consistency check: output for averaging results for gamma energies and intensities (version 08/24/2025)
-Generated at: Fri 09/26/2025 at 12:56:40 AM EDT
+Generated at: Fri 09/26/2025 at 12:45:13 PM EDT
 
 **************** Level=1219 in 35CL     *******************ID#=1-2
 
@@ -424,17 +424,18 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 ------ average RI------
 Data points of RI record
-*                      1970Ho09   100(7)              weight=24.62%
-*                      1972Br33   100(4)              weight=75.38%
+*                      1970Ho09   100(7)              weight=10.92%
+*                      1972Br33   100(4)              weight=33.43%
+*                      1974Lo17   100.0(31)           weight=55.66%
 
 Averaging results:
-           weighted average:      100.0(35)            (internal)
+           weighted average:      100.0(23)            (internal)
                                   100.0(0)             (external)
-                                  chi**2/(n-1)=0.000     [critical=4.605]
+                                  chi**2/(n-1)=0.000     [critical=3.780]
          unweighted average:      100.0(0)            
-           (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
+           (of all values)        chi**2/(n-1)=0.000     [critical=3.780]
 
-   suggested adopted result:      100(4)              
+   suggested adopted result:      100.0(31)           
            (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
@@ -442,30 +443,33 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35CL cG RI$weighted average of 100 {I7} (1970Ho09) and 100 {I4} (1972Br33)     
+ 35CL cG RI$weighted average of 100 {I7} (1970Ho09), 100 {I4} (1972Br33), and   
+ 35CL2cG 100.0 {I31} (1974Lo17)                                                 
 
 ### unweighted average comment (all non-limit values with/without unc):
- 35CL cG RI$unweighted average of 100 {I7} (1970Ho09) and 100 {I4} (1972Br33)   
+ 35CL cG RI$unweighted average of 100 {I7} (1970Ho09), 100 {I4} (1972Br33), and 
+ 35CL2cG 100.0 {I31} (1974Lo17)                                                 
 
 ### Non-average comment:
- 35CL cG RI$from 1972Br33. Other: 100 {I7} (1970Ho09)                           
+ 35CL cG RI$from 1974Lo17. Others: 100 {I7} (1970Ho09) and 100 {I4} (1972Br33)  
 
 
 **************** Level=4345     Gamma=1699 in 35CL     *******************ID#=1-14-2
 
 ------ average RI------
 Data points of RI record
-*                      1970Ho09   61(7)               weight=24.62%
-*                      1972Br33   39(4)               weight=75.38%
+*                      1970Ho09   61(7)               weight=10.92%
+*                      1972Br33   39(4)               weight=33.43%
+*                      1974Lo17   56.3(31)            weight=55.66%
 
 Averaging results:
-           weighted average:      44.4(35)             (internal)
-                                  44(10)               (external)
-                                  chi**2/(n-1)=7.446     [critical=4.605]
-         unweighted average:      50(11)              
-           (of all values)        chi**2/(n-1)=242.000     [critical=4.605]
+           weighted average:      51.0(23)             (internal)
+                                  51(6)                (external)
+                                  chi**2/(n-1)=6.982     [critical=3.780]
+         unweighted average:      52(7)               
+           (of all values)        chi**2/(n-1)=134.230     [critical=3.780]
 
-   suggested adopted result:      50(11)              
+   suggested adopted result:      52(7)               
     (Unweighted-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
@@ -473,10 +477,12 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 35CL cG RI$weighted average of 61 {I7} (1970Ho09) and 39 {I4} (1972Br33)       
+ 35CL cG RI$weighted average of 61 {I7} (1970Ho09), 39 {I4} (1972Br33), and 56.3
+ 35CL2cG {I31} (1974Lo17)                                                       
 
 ### unweighted average comment (all non-limit values with/without unc):
- 35CL cG RI$unweighted average of 61 {I7} (1970Ho09) and 39 {I4} (1972Br33)     
+ 35CL cG RI$unweighted average of 61 {I7} (1970Ho09), 39 {I4} (1972Br33), and   
+ 35CL2cG 56.3 {I31} (1974Lo17)                                                  
 
 
 **************** Level=4620 in 35CL     *******************ID#=1-15
