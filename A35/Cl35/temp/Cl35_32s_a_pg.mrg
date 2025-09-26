@@ -1,5 +1,5 @@
 Program for consistency check: output for original lines grouped by level and gamma energies (version 08/24/2025)
-Generated at: Thu 09/25/2025 at 11:39:46 PM EDT
+Generated at: Fri 09/26/2025 at 12:01:02 AM EDT
 
 
 Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
@@ -26,7 +26,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       1970Ho09--->B     35CL  L 0            3/2+                                                      
                       1972Br33--->C     35CL  L 0            3/2+                                                      
                       1973Al22--->D     35CL  L 0                                                                      
-                      1974Lo17--->E     35CL  L 0            3/2+                                                      
+                      1974Lo17--->E     35CL  L 0                                                                      
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL********************************* 35CL  L 1219.5    10                                                           
                   *new XREF new tags    35CLX L XREF=ABCDE
@@ -34,7 +34,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       1970Ho09--->B     35CL  L 1220         1/2+                                                      
                       1972Br33--->C     35CL  L 1220      2  1/2+                                                      
                       1973Al22--->D     35CL  L 1219.5    10                                                           
-                      1974Lo17--->E     35CL  L 1220         1/2+                                                      
+                      1974Lo17--->E     35CL  L 1220                                                                   
  GAMMA--------------------------------- 35CL  G 1219.5    10                                                           
                       1970Ho09--->B     35CL  G 1220        100                                                         *** EG=1220       FL=0          JF=3/2+
                       1973Al22--->D     35CL  G 1219.5    10                                                            *** EG=1219.5     FL=0          JF=
@@ -45,7 +45,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       1970Ho09--->B     35CL  L 1763         5/2                                                       
                       1972Br33--->C     35CL  L 1763      2  5/2+                                                      
                       1973Al22--->D     35CL  L 1763.1    10                                                           
-                      1974Lo17--->E     35CL  L 1763         5/2+                                                      
+                      1974Lo17--->E     35CL  L 1763                                                                   
  GAMMA--------------------------------- 35CL  G 544         0.5     LT                                                 
                       1969IN04--->A     35CL  G 544         0.5     LT                                                  *** EG=544        FL=1219       JF=
  GAMMA--------------------------------- 35CL  G 1763.1    10 100                                                       
@@ -57,9 +57,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                   *new XREF new tags    35CLX L XREF=ABCDE
                       1969IN04--->A     35CL  L 2646                          0.30 PS   9                              
                       1970Ho09--->B     35CL  L 2646         7/2                                                       
-                      1972Br33--->C     35CL  L 2646      2  7/2+                                                      
+                      1972Br33--->C     35CL  L 2646      2                                                            
                       1973Al22--->D     35CL  L 2646.3    15                                                           
-                      1974Lo17--->E     35CL  L 2646         7/2+                                                      
+                      1974Lo17--->E     35CL  L 2646                                                                   
  GAMMA--------------------------------- 35CL  G 882.4     10 100                                                       
                       1969IN04--->A     35CL  G 883         18                                                          *** EG=883        FL=1763       JF=
                       1970Ho09--->B     35CL  G 883         11.1    22          +0.25   5                               *** EG=883        FL=1763       JF=5/2
@@ -121,7 +121,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       1970Ho09--->B     35CL  L 3163         7/2                                                       
                       1972Br33--->C     35CL  L 3160      2                                                            
                       1973Al22--->D     35CL  L 3162.6    15                                                           
-                      1974Lo17--->E     35CL  L 3163         7/2-                                                      
+                      1974Lo17--->E     35CL  L 3163                                                                   
  GAMMA--------------------------------- 35CL  G 160         0.54    LT                                                 
                       1969IN04--->A     35CL  G 160         0.54    LT                                                  *** EG=160        FL=3003       JF=
  GAMMA--------------------------------- 35CL  G 468         0.54    LT                                                 
@@ -152,7 +152,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       1973Al22--->D     35CL  L 3943.4    15                                                           
  GAMMA--------------------------------- 35CL  G 1297.4    15 11     AP                                                 
                       1970Ho09--->B     35CL  G 1299        9.9     22                                                  *** EG=1299       FL=2646       JF=7/2
-                      1972Br33--->C     35CL  G 1294        6.4     21                                                  *** EG=1294       FL=2646       JF=7/2+
+                      1972Br33--->C     35CL  G 1294        6.4     21                                                  *** EG=1294       FL=2646       JF=
                       1973Al22--->D     35CL  G 1297.4    15 11     AP                                                  *** EG=1297.4     FL=2646.3     JF=
  GAMMA--------------------------------- 35CL  G 2180.2    15 100                                                       
                       1970Ho09--->B     35CL  G 2182        100.0   22                                                  *** EG=2182       FL=1763       JF=5/2
@@ -202,15 +202,15 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       1970Ho09--->B     35CL  G 1182        100     7           +0.42   4                               *** EG=1182       FL=3163       JF=7/2
                       1972Br33--->C     35CL  G 1190        100     4                                                   *** EG=1190       FL=3160       JF=
                       1973Al22--->D     35CL  G 1184.6    10 100                                                        *** EG=1184.6     FL=3162.6     JF=
-                      1974Lo17--->E     35CL  G 1185                            -0.36   3                               *** EG=1185       FL=3163       JF=7/2-
+                      1974Lo17--->E     35CL  G 1185                            -0.36   3                               *** EG=1185       FL=3163       JF=
                       1973Al22--->D     35CL cG MR$+0.7 {I+12-2} for J=5/2; -0.40 {I+8-9} for J=9/2.
                       1974Lo17--->E     35CL cG $A{-2}=-0.95 {I3}, A{-4}=0.08 {I3}.
                       1974Lo17--->E     35CL cG $POL=-0.005 {I40}.
  GAMMA--------------------------------- 35CL  G 1702.1    15 29                                                        
                       1970Ho09--->B     35CL  G 1699        61      7                                                   *** EG=1699       FL=2646       JF=7/2
-                      1972Br33--->C     35CL  G 1704        39      4                                                   *** EG=1704       FL=2646       JF=7/2+
+                      1972Br33--->C     35CL  G 1704        39      4                                                   *** EG=1704       FL=2646       JF=
                       1973Al22--->D     35CL  G 1702.1    15 29                                                         *** EG=1702.1     FL=2646.3     JF=
-                      1974Lo17--->E     35CL  G 1702                            -0.00   3                               *** EG=1702       FL=2646       JF=7/2+
+                      1974Lo17--->E     35CL  G 1702                            -0.00   3                               *** EG=1702       FL=2646       JF=
                       1974Lo17--->E     35CL cG $A{-2}=-0.34 {I5}, A{-4}=0.04 {I5}.
                       1974Lo17--->E     35CL cG $POL=0.36 {I7}.
 ------------------------------------------------------------------------------------------------------------------------
@@ -265,7 +265,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       1974Lo17--->E     35CL cG $POL=-0.40 {I14}.
  GAMMA--------------------------------- 35CL  G 2244      30 283    AP          +0.02   9                              
                       1973Al22--->D     35CL  G 2244      30 283    AP          +0.02   9                               *** EG=2244       FL=3162.6     JF=
-                      1974Lo17--->E     35CL  G 2245                            -0.00   3                               *** EG=2245       FL=3163       JF=7/2-
+                      1974Lo17--->E     35CL  G 2245                            -0.00   3                               *** EG=2245       FL=3163       JF=
                       1974Lo17--->E     35CL cG $A{-2}=0.44 {I3}, A{-4}=-0.19 {I3}.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL********************************* 35CL  L 5535      20                                                           

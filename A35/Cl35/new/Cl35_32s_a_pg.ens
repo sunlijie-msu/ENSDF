@@ -77,18 +77,21 @@
  35CL cL T(G)$ From 1972Br33 using DSAM                                         
  35CL cL T(H)$ From 1974Lo17 using DSAM                                         
  35CL PN                                                                     7  
- 35CL  L 0                                                                      
- 35CL  L 1219.5    10                  0.21 PS   +10-8                          
- 35CL cL T$from 1969In04 using DSAM                                                        
+ 35CL  L 0            3/2+                                                      
+ 35CL  L 1219.5    10 1/2+             0.21 PS   +10-8                          
+ 35CL cL T$from 1969In04 using DSAM                                             
  35CL  G 1219.5    10 100                                                       
  35CL cG E$from 1973Al22                                                        
- 35CL  L 1763.1    10                  0.55 PS   15                             
- 35CL cL T$from 1969In04 using DSAM                                                        
- 35CL  G 544         0.5     LT                                                 
- 35CL  G 1763.1    10 100                                                       
- 35CL cG E$from 1973Al22                                                        
+ 35CL  L 1763.1    10 5/2+             0.55 PS   15                             
+ 35CL cL J$spin=5/2 from |g(|q) in 1970Ho09. Parity is from the Adopted Levels. 
+ 35CL cL T$from 1969In04 using DSAM                                             
+ 35CL  G 544         0.5     LT                                                S
  35CL cG RI$from 1969In04                                                       
- 35CL  L 2646.3    15                  0.30 PS   9                              
+ 35CL  G 1763.1    10 100                +3.0    1
+ 35CL cG E$from 1973Al22                                                        
+ 35CL cG RI$from 1969In04, 1970Ho09, 1973Al22                                   
+ 35CL cG MR$from 1970Ho09.                                                      
+ 35CL  L 2646.3    15 7/2+             0.30 PS   9                              
  35CL cL T$from 1969In04                                                        
  35CL  G 882.4     10 11.1   22                                                 
  35CL cG E$from 1973Al22                                                        
@@ -221,9 +224,9 @@
  35CL cG $POL=-0.45 {I5}.                                                       
  35CL  G 1740                                                                   
  35CL  L 6400      25                                                           
-                                                                                
 
- 35CL  d Old reference:
+
+ 35CL d  Old reference:                                                         
  35CL  L 0            3/2+                                                      
  35CL  L 1219.5     5 1/2+             146 FS    62                             
  35CL  G 1219.5    10 100                                                       
