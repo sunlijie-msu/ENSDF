@@ -1,5 +1,5 @@
 Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 08/24/2025)
-Generated at: Fri 09/26/2025 at 12:01:06 AM EDT                                 
+Generated at: Fri 09/26/2025 at 12:56:46 AM EDT                                 
                                                                                 
  35CL  L 0                                                                      
  35CL  L 1219.5    10                  0.21 PS   +10-8                          
@@ -59,7 +59,7 @@ Generated at: Fri 09/26/2025 at 12:01:06 AM EDT
  35CL  G 3162.6    15 100.0  33                                                 
  35CL cG E$from 1973Al22                                                        
  35CL cG RI$from 1970Ho09                                                       
- 35CL  L 3920      2                   22 FS     LT                             
+ 35CL  L 3915      2                   22 FS     LT                             
  35CL  G 2700        19      5                                                  
  35CL  G 3920        100     5                                                  
  35CL  L 3943.4    15                  330 FS    50                             
@@ -70,19 +70,19 @@ Generated at: Fri 09/26/2025 at 12:01:06 AM EDT
  35CL  G 2180.2    15 100.0  21                                                 
  35CL cG RI$from 1972Br33. Other: 100.0 {I22} (1970Ho09)                        
  35CL cG E$from 1973Al22                                                        
- 35CL  L 3970      2                   54 FS     LT                             
+ 35CL  L 3968      2                   54 FS     LT                             
  35CL  G 2750        100                                                        
  35CL  G 3970        2       LT                                                 
- 35CL  L 4060      2                   31 FS     13                             
+ 35CL  L 4058      2                   31 FS     13                             
  35CL cL T$from 1972Br33                                                        
  35CL  G 2297        8       4                                                  
  35CL  G 2840        100     4                                                  
  35CL  G 4060        2.2     LT                                                 
- 35CL  L 4110      2                   70 FS     16                             
+ 35CL  L 4108      2                   70 FS     16                             
  35CL cL T$from 1972Br33                                                        
  35CL  G 2347        16      5                                                  
  35CL  G 4110        100     5                                                  
- 35CL  L 4170      2                   68 FS     24                             
+ 35CL  L 4171      2                   68 FS     24                             
  35CL cL E$from 1972Br33. Other: 4175 {I10} (1970Ho09)                          
  35CL cL T$from 1972Br33                                                        
  35CL  L 4347.5    15 5/2,9/2          2.9 PS    +14-7                          
@@ -98,13 +98,13 @@ Generated at: Fri 09/26/2025 at 12:01:06 AM EDT
  35CL cG E$from 1973Al22                                                        
  35CL cG $A{-2}=-0.34 {I5}, A{-4}=0.04 {I5}.                                    
  35CL cG $POL=0.36 {I7}.                                                        
- 35CL  L 4620      2                   58 FS     24                             
+ 35CL  L 4618      2                   58 FS     24                             
  35CL cL T$from 1972Br33                                                        
  35CL  G 4620        100                                                        
  35CL cG E$from 1972Br33                                                        
  35CL cG MR$+0.08 {I14} for J=3/2; -0.36 {I15} for J=5/2.                       
  35CL  L 4770      15                                                           
- 35CL  L 4880      2                   280 FS    60                             
+ 35CL  L 4882      2                   280 FS    60                             
  35CL cL T$from 1972Br33                                                        
  35CL  G 2239        52      9                                                  
  35CL  G 3117.4    20 100    9                                                  
