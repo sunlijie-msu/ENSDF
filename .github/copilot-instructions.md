@@ -683,6 +683,10 @@ MR Field Examples (Columns 42-49):
 +0.123          → δ = +0.123
 -12.3           → δ = -12.3
 ```
+**Multiple Mixing Ratios**
+Mixing ratios is spin dependent. For transitions from levels with multiple possible spins, list all allowed mixing ratios in cG comment line:
+example:
+` 35CL cG MR$+0.7 {I+12-2} for J=5/2; -0.40 {I+8-9} for J=9/2`
 
 **Mixing Ratio Uncertainties (DMR Field - Columns 50-55)**:
 The DMR field supports both symmetric and asymmetric uncertainties for mixing ratios:
@@ -696,9 +700,7 @@ The DMR field supports both symmetric and asymmetric uncertainties for mixing ra
 - **Physics context**: Common when systematic effects dominate or when theoretical calculations have asymmetric confidence intervals
 
 **Special DMR Field Cases**:
-- **Systematic uncertainties**: `SY` for systematic-dominated errors
-- **Calculated values**: Often left blank when mixing ratio is from theory
-- **Limit measurements**: Typically blank when MR field contains `>` or `<`
+- **Limit measurements**: Typically GT/LT if MR field has an lower/upper limit
 
 **Critical Formatting Rules for Mixing Ratios**:
 - **Always include sign** in MR field (+ or -)
@@ -706,6 +708,7 @@ The DMR field supports both symmetric and asymmetric uncertainties for mixing ra
 - **Asymmetric uncertainties** use full 6-character DMR field efficiently
 - **No exponential notation** - use decimal format only
 - **Space padding** for values shorter than field width
+
 
 **CRITICAL G-Record Flag Rules**
 
@@ -1488,6 +1491,7 @@ For gamma energy data conforming to quantity.schema.json:
 - **POL > 0** → Electric transition (E1, E2, etc.)
 - **POL < 0** → Magnetic transition (M1, M2, etc.)
 - **POL ≈ 0** → Mixed transition or measurement uncertainty
+- **Polarizations are typically put in cG comments.** Example: 32P  cG $POL=-0.06 {I9}.
 
 #### **Quality Control Guidelines**
 - **Expected DCO ranges**: 0.4-1.4 for dipole, 0.8-1.8 for quadrupole
