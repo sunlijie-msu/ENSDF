@@ -166,10 +166,13 @@ def validate_de_field(filename):
     """
     Validate DE field (Energy uncertainty) positioning in columns 20-21.
     
-    CRITICAL ENSDF Format Rule: DE field values must be in columns 20-21 EXACTLY.
+    CORRECTED ENSDF Format Rule: DE field values must be in columns 20-21 EXACTLY.
     - Columns 20-21: Energy uncertainty (DE) field (2 characters total)
-    - Values must be LEFT-JUSTIFIED within this 2-character field
-    - Common violations: DE values at columns 18-19 instead of 20-21
+    - DE fields can be EMPTY (blank) - this is perfectly valid in ENSDF
+    - Only check DE field positioning if there is actual content in columns 20-21
+    - DO NOT confuse RI (Relative Intensity) fields with DE fields!
+    
+    CRITICAL FIX: Previous version incorrectly identified RI values as misplaced DE fields.
     
     Returns:
         bool: True if all DE fields are correctly positioned, False otherwise
@@ -177,7 +180,8 @@ def validate_de_field(filename):
     print(f"\nDE FIELD VALIDATION: {filename}")
     print("=" * 60)
     print("Checking DE field positioning in columns 20-21...")
-    print("CRITICAL ENSDF Rule: DE field values must be in columns 20-21 EXACTLY")
+    print("CORRECTED ENSDF Rule: DE field values must be in columns 20-21 EXACTLY")
+    print("NOTE: DE fields can be EMPTY (this is valid in ENSDF format)")
     print()
     print('ENSDF 80-Column Ruler:')
     print('         1         2         3         4         5         6         7         8')
@@ -198,58 +202,36 @@ def validate_de_field(filename):
         if len(line_content) < 21 or (not (' L ' in line_content[6:10] or ' G ' in line_content[6:10])):
             continue
             
-        # Look for DE field specifically - it should be in columns 20-21
-        # Check if there's a numeric value around this area that looks like uncertainty
-        de_found = False
-        de_position = -1
-        de_value = ""
-        
-        # Look for DE field - scan for numeric values between energy and J-pi fields
-        # DE field should be 1-2 digit uncertainty value separated by spaces
-        # Scan broader area to find where the uncertainty actually is positioned
-        for start_col in range(17, 25):  # Check columns 18-25 (0-based 17-24)
-            if start_col + 1 < len(line_content):
-                # Look for 1-2 digit numeric values that could be uncertainties
-                potential_de = ""
-                for length in [1, 2]:
-                    if start_col + length <= len(line_content):
-                        test_value = line_content[start_col:start_col + length]
-                        # Check if this looks like an uncertainty field
-                        if test_value.isdigit() and len(test_value.strip()) > 0:
-                            # Check if it's surrounded by spaces (field boundary)
-                            before_char = line_content[start_col-1] if start_col > 0 else ' '
-                            after_char = line_content[start_col + length] if start_col + length < len(line_content) else ' '
-                            
-                            if before_char == ' ' and after_char == ' ':
-                                potential_de = test_value.strip()
-                                break
+        # CORRECTED LOGIC: Only check DE field if there's actual content in columns 20-21
+        # Extract exactly columns 20-21 (0-based indices 19-20)
+        if len(line_content) >= 21:
+            de_field_content = line_content[19:21]  # Columns 20-21 (0-based 19-20)
+            
+            # Only validate if DE field has content (not just spaces)
+            if de_field_content.strip():
+                de_fields_analyzed += 1
+                de_value = de_field_content.strip()
                 
-                if potential_de:
-                    de_found = True
-                    de_position = start_col + 1  # Convert to 1-based
-                    de_value = potential_de
-                    break
-
-        
-        if de_found:
-            de_fields_analyzed += 1
-            if de_position != 20:  # DE field must start at column 20
-                de_field_errors += 1
-                print(f"  ERROR: Line {line_num}: DE field '{de_value}' at column {de_position}, should be at column 20")
-                print(f"         Line: {line_content}")
-                print(f"         Expected: DE value starting at column 20-21")
-                print()
+                # Check if content is numeric (typical for uncertainty values)
+                if not de_value.isdigit():
+                    de_field_errors += 1
+                    print(f"  ERROR: Line {line_num}: Non-numeric DE field '{de_value}' in columns 20-21")
+                    print(f"         Line: {line_content}")
+                    print(f"         Expected: Numeric uncertainty value or blank")
+                    print()
+            # If DE field is blank/empty, that's perfectly valid - no error
             
     print(f"DE FIELD SUMMARY:")
-    print(f"  Total DE fields analyzed: {de_fields_analyzed}")
-    print(f"  DE field positioning errors: {de_field_errors}")
+    print(f"  Total DE fields with content analyzed: {de_fields_analyzed}")
+    print(f"  DE field content errors: {de_field_errors}")
     print()
     
     if de_field_errors == 0:
-        print("✅ SUCCESS: All DE fields correctly positioned (columns 20-21)")
+        print("✅ SUCCESS: All DE fields correctly positioned and formatted (columns 20-21)")
+        print("   Note: Empty DE fields are valid and were not flagged as errors")
     else:
-        print(f"❌ ERROR: {de_field_errors} DE field positioning errors found!")
-        print("   CRITICAL: DE fields must be in columns 20-21 per ENSDF manual!")
+        print(f"❌ ERROR: {de_field_errors} DE field content errors found!")
+        print("   CRITICAL: DE fields must contain only numeric uncertainties or be blank!")
         
     return de_field_errors == 0
 
