@@ -116,7 +116,7 @@
  35CL cG RI$from 1970Ho09. Other: 100 (1969In04), 100 (1973Al22)                
  35CL cG MR$+0.17 {I8} for J=3/2; -0.26 {I5} for J=5/2.                         
  35CL  L 3002.0    15 5/2              48 FS     9                              
- 35CL cL T$from 1972Br33 using DSAM                                                        
+ 35CL cL T$from 1972Br33 using DSAM                                             
  35CL cL J$spin=3/2,5/2 from |g(|q) in 1970Ho09. 1970Ho09 states that 3/2 causes
  35CL2cL M2>200 W.u. or E2>10 W.u and is ruled out.                             
  35CL  G 308         5       LT                                                 
@@ -146,39 +146,53 @@
  35CL cG E$from 1973Al22                                                        
  35CL cG RI$from 1970Ho09. Other: 100 (1969In04), 100 (1973Al22).               
  35CL cG MR$from 1970Ho09.                                                      
- 35CL  L 3920      2                   22 FS     LT                             
- 35CL cL T$from 1972Br33 using DSAM
+ 35CL  L 3915      2                   22 FS     LT                             
+ 35CL cL E$from 1972Br33.                                                       
+ 35CL cL T$from 1972Br33 using DSAM                                             
  35CL  G 2700        19      5                                                  
- 35CL cG E,RI
+ 35CL cG RI$from 1972Br33                                                       
  35CL  G 3920        100     5                                                  
+ 35CL cG RI$from 1972Br33                                                       
  35CL  L 3943.4    15                  330 FS    50                             
- 35CL cL T$from 1972Br33 using DSAM                                                        
+ 35CL cL T$from 1972Br33 using DSAM                                             
  35CL  G 1297.4    15 8.1    21                                                 
- 35CL cG RI$weighted average of 9.9 {I22} (1970Ho09) and 6.4 {I21} (1972Br33)   
  35CL cG E$from 1973Al22                                                        
+ 35CL cG RI$weighted average of 9.9 {I22} (1970Ho09) and 6.4 {I21} (1972Br33).  
+ 35CL2cG Other: 11 (1973Al22).                                                  
  35CL  G 2180.2    15 100.0  21                                                 
- 35CL cG RI$from 1972Br33. Other: 100.0 {I22} (1970Ho09)                        
  35CL cG E$from 1973Al22                                                        
- 35CL  L 3970      2                   54 FS     LT                             
+ 35CL cG RI$from 1972Br33. Other: 100.0 {I22} (1970Ho09), 100 (1973Al22).       
+ 35CL  L 3968      2                   54 FS     LT                             
+ 35CL cL E$from 1972Br33.                                                       
+ 35CL cL T$from 1972Br33 using DSAM.                                            
  35CL  G 2750        100                                                        
+ 35CL cG RI$from 1972Br33                                                       
  35CL  G 3970        2       LT                                                 
- 35CL  L 4060      2                   31 FS     13                             
- 35CL cL T$from 1972Br33                                                        
+ 35CL cG RI$from 1972Br33                                                       
+ 35CL  L 4058      3                   31 FS     13                             
+ 35CL cL E$weighted average of 4045 {I10} (1970Ho09) and 4058 {I2} (1972Br33)   
+ 35CL cL T$from 1972Br33 using DSAM.                                            
  35CL  G 2297        8       4                                                  
+ 35CL cG RI$from 1972Br33                                                       
  35CL  G 2840        100     4                                                  
+ 35CL cG RI$from 1972Br33                                                       
  35CL  G 4060        2.2     LT                                                 
- 35CL  L 4110      2                   70 FS     16                             
- 35CL cL T$from 1972Br33                                                        
+ 35CL cG RI$from 1972Br33                                                       
+ 35CL  L 4108      2                   70 FS     16                             
+ 35CL cL E$weighted average of 4110 {I10} (1970Ho09) and 4108 {I2} (1972Br33)   
+ 35CL cL T$from 1972Br33 using DSAM.                                            
  35CL  G 2347        16      5                                                  
  35CL  G 4110        100     5                                                  
- 35CL  L 4170      2                   68 FS     24                             
- 35CL cL E$from 1972Br33. Other: 4175 {I10} (1970Ho09)                          
- 35CL cL T$from 1972Br33                                                        
- 35CL  L 4347.5    15 5/2,9/2          2.9 PS    +14-7                          
- 35CL cL T$from 1972Br33                                                        
+ 35CL  L 4171      2                   68 FS     24                             
+ 35CL cL E$weighted average of 4175 {I10} (1970Ho09) and 4171 {I2} (1972Br33)   
+ 35CL cL T$from 1972Br33 using DSAM.                                            
+ 35CL  L 4347.5    15 9/2-             2.9 PS    +14-7                          
+ 35CL cL J$from |g(|q) and POL in 1974Lo17. Other: J=5/2,9/2 from |g(|q) in     
+ 35CL2cL 1970Ho09 and 1973Al22.                                                 
+ 35CL cL T$from 1972Br33 using DSAM.                                            
  35CL  G 1184.6    10 100    4                                                  
- 35CL cG RI$from 1972Br33. Other: 100 {I7} (1970Ho09)                           
  35CL cG E$from 1973Al22                                                        
+ 35CL cG RI$from 1972Br33. Other: 100 {I7} (1970Ho09), 100 (1973Al22).
  35CL cG MR$+0.7 {I+12-2} for J=5/2; -0.40 {I+8-9} for J=9/2.                   
  35CL cG $A{-2}=-0.95 {I3}, A{-4}=0.08 {I3}.                                    
  35CL cG $POL=-0.005 {I40}.                                                     
@@ -187,13 +201,13 @@
  35CL cG E$from 1973Al22                                                        
  35CL cG $A{-2}=-0.34 {I5}, A{-4}=0.04 {I5}.                                    
  35CL cG $POL=0.36 {I7}.                                                        
- 35CL  L 4620      2                   58 FS     24                             
+ 35CL  L 4618      2                   58 FS     24                             
  35CL cL T$from 1972Br33                                                        
  35CL  G 4620        100                                                        
  35CL cG E$from 1972Br33                                                        
  35CL cG MR$+0.08 {I14} for J=3/2; -0.36 {I15} for J=5/2.                       
  35CL  L 4770      15                                                           
- 35CL  L 4880      2                   280 FS    60                             
+ 35CL  L 4882      2                   280 FS    60                             
  35CL cL T$from 1972Br33                                                        
  35CL  G 2239        52      9                                                  
  35CL  G 3117.4    20 100    9                                                  
