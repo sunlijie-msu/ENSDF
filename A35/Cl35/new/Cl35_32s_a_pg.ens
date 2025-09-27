@@ -62,14 +62,18 @@
  35CL4c  Ge(Li) detector at 0|'. Deduced the lifetime using the Recoil Distance 
  35CL5c  Method (RDM) for a level at 3163 keV.                                  
  35CL d                                                                         
- 35CL cG E$Values with uncertainties are from 1973Al22 and E|g values without   
- 35CL2cG uncertainties are from level-energy difference.                        
+ 35CL cG E$1973Al22 is the only literature in this dataset that reported        
+ 35CL2cG measured E|g with uncertainties. 1969In04 and 1972Br33 reported        
+ 35CL3cG E(level) uncertainties derived from measured E|g, but did not report   
+ 35CL4cG E|g uncertainties. Evaluators adopt the uncertainties of E(level) from 
+ 35CL5cG 1969In04 and 1972Br33 as the uncertainties of E|g if the |g transition 
+ 35CL6cG populates the ground state and is also the dominant decay branch of    
+ 35CL7cG that level. Other E|g values without uncertainties are from            
+ 35CL8cG level-energy differences.                                              
+
  35CL cL E$From a least-squares fit to E|g values with uncertainties, unless    
- 35CL2cL otherwise noted. 1969In04 and 1972Br33 reported E(level) with          
- 35CL3cL uncertainties from measured E|g but did not report E|g. 1970Ho09       
- 35CL4cL reported E(level) with uncertainties from measured E{-p}. 1973Al22 is  
- 35CL5cL the only literature in this dataset that reported measured E|g with    
- 35CL6cL uncertainties.                                                         
+ 35CL2cL otherwise noted. 1970Ho09 reported E(level) with uncertainties derived 
+ 35CL3cL from measured E{-p}.                                                   
  35CL PN                                                                     6  
  35CL  L 0            3/2+                                                      
  35CL  L 1219.5    10 1/2+             0.21 PS   +10-8                          
@@ -186,19 +190,21 @@
  35CL cL E$weighted average of 4175 {I10} (1970Ho09) and 4171 {I2} (1972Br33)   
  35CL cL T$from 1972Br33 using DSAM.                                            
  35CL  L 4347.7    13 9/2-             2.9 PS    +14-7                          
- 35CL cL J$from |g(|q) and POL in 1974Lo17. Other: J=5/2,9/2 from |g(|q) in     
- 35CL2cL 1970Ho09 and 1973Al22.                                                 
+ 35CL cL J$spin from |g(|q) and MUL to FL in 1974Lo17. Other: J=5/2,9/2 from    
+ 35CL2cL |g(|q) in 1970Ho09 and 1973Al22.                                       
  35CL cL T$from 1972Br33 using DSAM.                                            
- 35CL  G 1184.6    10 100.0  31          -0.36   3                              
+ 35CL  G 1184.6    10 100.0  31 M1+E2    -0.36   3                              
  35CL cG E$from 1973Al22                                                        
  35CL cG RI$from 1974Lo17. Others: 100 {I7} (1970Ho09) and 100 {I4} (1972Br33)  
- 35CL cG MR$from 1974Lo17. Other: -0.40 {I+8-9} for J=9/2 (1970Ho09).           
+ 35CL cG M$D+Q from |g(|q). E1+M2 ruled out by RUL.                             
+ 35CL cG MR$from 1974Lo17. Other: -0.40 {I+8-9} (1970Ho09).                     
  35CL cG $A{-2}=-0.95 {I3}, A{-4}=0.08 {I3} (1974Lo17).                         
  35CL cG $POL=-0.005 {I40} (1974Lo17).                                          
- 35CL  G 1702.1    15 52     7           -0.00   3                              
+ 35CL  G 1702.1    15 52     7  E1       -0.00   3                              
  35CL cG E$from 1973Al22                                                        
  35CL cG RI$unweighted average of 61 {I7} (1970Ho09), 39 {I4} (1972Br33), and   
  35CL2cG 56.3 {I31} (1974Lo17)                                                  
+ 35CL cG M$from |g(|q) and |g(lin pol) in 1974Lo17.                             
  35CL cG MR$from 1974Lo17                                                       
  35CL cG $A{-2}=-0.34 {I5}, A{-4}=0.04 {I5} (1974Lo17).                         
  35CL cG $POL=0.36 {I7} (1974Lo17).                                             
@@ -215,8 +221,10 @@
  35CL  L 4880.7    22                  280 FS    60                             
  35CL cL E$other: 4882 {I2} from 1972Br33, 4885 {I20} from 1970Ho09.            
  35CL cL T$from 1972Br33 using DSAM.                                            
- 35CL  G 2235.0      52      9                                                 ?
- 35CL cG $Final level is uncertain (1970Ho09).
+ 35CL  G 2185.0      52      9                                              &   
+ 35CL cG $Final level is uncertain, either 2646 or 2694 (1970Ho09).             
+ 35CL  G 2235.0      52      9                                              &   
+ 35CL cG $Final level is uncertain, either 2646 or 2694 (1970Ho09).             
  35CL cG RI$from 1970Ho09                                                       
  35CL  G 3117.4    20 100    9                                                  
  35CL cG E$from 1973Al22                                                        
