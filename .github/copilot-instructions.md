@@ -1198,11 +1198,14 @@ git status
 git diff --name-only HEAD
 
 # Check untracked files
+
+```powershell
 git ls-files --others --exclude-standard
 
 # Show staged vs unstaged changes
 git status --porcelain
 ```
+
 
 #### File Restoration Workflows
 **Critical for undoing local changes and restoring clean state:**
@@ -1228,6 +1231,7 @@ git restore --staged --worktree "filename.ens" # Restore both staged and working
 5. **VALIDATE**: Run `git status` and ENSDF format validation tools
 6. **DOCUMENT**: Update change.log explaining restoration reason and scope
 
+
 #### Comprehensive Change Analysis
 **For detailed examination of modifications:**
 
@@ -1246,6 +1250,7 @@ git log --oneline -n 10                      # Recent commits
 git log --stat -n 5                          # Recent commits with file statistics
 ```
 
+
 #### Branch and Repository Management
 **For broader repository operations:**
 
@@ -1260,6 +1265,7 @@ git remote -v                                # Show remote repositories
 git log --graph --oneline -n 10             # Visual commit history
 git clean -n                                 # Preview what would be cleaned (dry run)
 ```
+
 
 #### Emergency Recovery Patterns
 **For critical situations:**
@@ -1278,6 +1284,7 @@ python .github/column_calibrate.py "restored_file.ens"  # Validate after restore
 $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
 git archive HEAD | tar -x -C "backup_$timestamp"   # Create full backup
 ```
+
 
 #### Integration with ENSDF Workflows
 **Combining git operations with nuclear data validation:**
@@ -1304,6 +1311,7 @@ git restore "file.ens.backup"               # Restore from backup if needed
 - **USE SPECIFIC PATHS** - avoid blanket operations without careful consideration
 - **VERIFY COMPLETION** - confirm clean state with `git status` after operations
 
+
 ### Change Detection Process
 1. **Pre-work (MANDATORY)**: `git status`, `git diff --name-only HEAD`
 2. **During work**: Track file modifications systematically
@@ -1312,12 +1320,14 @@ git restore "file.ens.backup"               # Restore from backup if needed
 
 **CRITICAL REMINDER**: Always start with `git status` - this shows the complete picture!
 
+
 ### File Categories to Track
 - **ENSDF source files**: *.ens files (most important)
 - **Generated PDFs**: *.pdf files (expected to change when source changes)
 - **Processing artifacts**: temp/*.* files (expected, document but don't commit)
 - **Tools and scripts**: .github/*.* files (important for tooling changes)
 - **Documentation**: README.md, change.log, etc.
+
 
 ### Evidence-Based Documentation Rules
 Every change log entry should be backed by:
@@ -1327,6 +1337,7 @@ Every change log entry should be backed by:
 - Explanation of why the change was made
 
 **Key principle**: Use multiple detection methods and always cross-verify. If git shows a file changed, dig deeper with git diff. If you modified an ENSDF file, expect to see corresponding PDF changes.
+
 
 ### Verification Checklist
 - [ ] **FIRST**: `git status` - identify ALL modified files (MANDATORY)
@@ -1344,6 +1355,7 @@ Every change log entry should be backed by:
 - [ ] Cross-check: did any ENSDF changes result in expected PDF updates?
 
 **Remember**: Start every workflow with git status and use PowerShell-compatible commands!
+
 
 ### Git Commit Template
 ```
@@ -1367,12 +1379,14 @@ Files changed: X modified, Y untracked
 Brief scope and impact summary (EVIDENCE-BASED CONCLUSION)
 ```
 
-** COMMIT MESSAGE ANTI-HALLUCINATION RULES **
+
+**COMMIT MESSAGE ANTI-HALLUCINATION RULES**
 - **FORBIDDEN PHRASES**: "Refactor code structure", "Update files", "Improve functionality", "Enhance system"
 - **REQUIRED SPECIFICITY**: Every tool/file/change mentioned must be backed by actual git diff evidence
 - **MANDATORY VERIFICATION**: Each section must contain actual file names and specific changes
 - **NO GENERIC CLAIMS**: Every improvement claim must cite specific line numbers or functionality
 - **EVIDENCE REQUIREMENT**: If you can't point to a specific diff showing the change, don't claim it
+
 
 ### Example Commit Structure
 ```
@@ -1398,7 +1412,9 @@ Files changed: 15 modified, 2 untracked
 Completion of comprehensive ENSDF column calibration tooling and systematic improvement of Ar35 nuclear data content.
 ```
 
+
 ## JSON Schema Compliance
+
 
 ### Nuclear Data JSON Creation Rules
 When creating JSON data for nuclear structure information:
@@ -1407,6 +1423,7 @@ When creating JSON data for nuclear structure information:
 - **Use proper data types**: Numbers for energies, strings for units, booleans for flags
 - **Include required fields**: Never omit mandatory properties (energy, spinParity, isStable for levels)
 - **Follow nuclear conventions**: Proper uncertainty notation, energy units (keV), gamma structure with initialLevelIndex/finalLevelIndex
+
 
 ### NNDC Schema Structure
 For gamma energy data conforming to quantity.schema.json:
@@ -1425,16 +1442,20 @@ For gamma energy data conforming to quantity.schema.json:
 }
 ```
 
+
 ## Project Structure (concise and current)
+
 
 ### Top-level
 - `A31.ens`, `A32.ens`, `A33.ens`, `A34/`, `A35/`, `A60/`, `XUNDL/`
 - `README.md`, `Weekly Effort Log.md`, `DOE_Progress_Report.md`, `Statistics.txt`, `Statistics.xlsx`
 
+
 ### ENSDF datasets
 - `A34/[Element]34/new/*.ens` — A=34 active datasets; `old/` contains reference rounds; some elements include `pdf/` and supporting files.
 - `A35/[Element]35/...` — A=35 datasets by element (e.g., `K35`, `P35`, etc.).
 - `A60/[Element]60/new/*.ens` — A=60 datasets.
+
 
 ### Tools (.github)
 - `.github/column_calibrate.py` — Column validator and line-length fixer (data records only).
@@ -1444,10 +1465,12 @@ For gamma energy data conforming to quantity.schema.json:
 - `.github/image_data_extraction.prompt.md` — Image data extraction guidance.
 - `.github/copilot-instructions.md` — This instruction file.
 
+
 ### External data
 - `XUNDL/` — eXperimental Unevaluated Nuclear Data List submissions and compilations.
 
 ---
+
 
 ## Focus Areas
 **Current Priority**: K35 and P35 files (Ar35 completed)
@@ -1456,7 +1479,9 @@ For gamma energy data conforming to quantity.schema.json:
 
 **Remember**: Nuclear data accuracy is critical - when in doubt, verify with tools and cross-check against ENSDF Manual specifications.
 
+
 ## Image Data Extraction Protocol
+
 
 ### Level Scheme Analysis
 - **Systematic scanning**: Left-to-right, top-to-bottom approach
@@ -1465,11 +1490,13 @@ For gamma energy data conforming to quantity.schema.json:
 - **Special notations**: Asterisks (*), question marks (?), parentheses ()
 - **Cross-verification**: Compare extracted data with tabulated lists
 
+
 ### Spectral Analysis
 - **Peak identification**: Exact energy labels, not estimates
 - **Gate verification**: Check coincidence logic with nuclear structure
 - **Contamination markers**: Identify non-target nuclide peaks
 - **Quality indicators**: Intensity, resolution, background
+
 
 ### Quality Control
 - **Never guess or interpolate** energy values
@@ -1478,34 +1505,34 @@ For gamma energy data conforming to quantity.schema.json:
 - **Cross-check** with provided data tables
 
 
+
 ### DCO Ratio and Polarization Analysis
 **Essential for multipolarity assignments in gamma-ray spectroscopy**
 
-#### **DCO Ratio Rules**
+#### DCO Ratio Rules
 - **DCO(D) ≈ 1.0** → Dipole transition (M1, E1, or M1+E2 with dominant M1)
 - **DCO(D) ≈ 1.6** → Quadrupole transition (E2 or M2)
-- **DCO(Q) ≈ 1.0** → Quadrupole transition (E2 or M2)  
+- **DCO(Q) ≈ 1.0** → Quadrupole transition (E2 or M2)
 - **DCO(Q) ≈ 0.6** → Dipole transition (M1, E1, or M1+E2 with dominant M1)
 
-#### **Polarization Rules**
+#### Polarization Rules
 - **POL > 0** → Electric transition (E1, E2, etc.)
 - **POL < 0** → Magnetic transition (M1, M2, etc.)
 - **POL ≈ 0** → Mixed transition or measurement uncertainty
 - **Polarizations are typically put in cG comments.** Example: 32P  cG $POL=-0.06 {I9}.
 
-#### **Quality Control Guidelines**
+#### Quality Control Guidelines
 - **Expected DCO ranges**: 0.4-1.4 for dipole, 0.8-1.8 for quadrupole
 - **Red flags**: DCO > 2.0 or DCO < 0.3 (possible contamination or experimental issues)
 - **Borderline values**: 0.8-1.2 may require additional analysis
 - **Cross-verification**: Always check DCO consistency with nuclear structure logic
 
-#### **Systematic Analysis Protocol**
+#### Systematic Analysis Protocol
 1. **Extract all DCO and POL data** from experimental comments
 2. **Apply rules systematically** to each transition
 3. **Identify inconsistencies** between assigned multipolarity and DCO/POL
 4. **Flag unusual values** (DCO > 2.0) for further investigation
 5. **Document findings** with specific energy, DCO value, and recommended assignment
-
 
 
 ### Image Data Extraction Request
@@ -1520,30 +1547,26 @@ Your response must continue until the data extraction request is completely fulf
 Carefully maintain the ENSDF standard uncertainty notation throughout your extraction.
 
 The uncertainty digits align precisely with the rightmost decimal digit of the stated value per ENSDF standards:
-ENSDF Uncertainty Notation (Clear Examples)
-Decimal Digits
-ENSDF Notation
-Meaning (explicit ± form)
 
-No decimal:
-1234(5)	1234 ± 5
-1234(56)	1234 ± 56
-1234(567)	1234 ± 567
-1 decimal:
-12.3(4)	12.3 ± 0.4
-12.3(45)	12.3 ± 4.5
-12.3(456)	12.3 ± 45.6
-2 decimals:
-1.23(4)	1.23 ± 0.04
-1.23(45)	1.23 ± 0.45
-1.23(456)	1.23 ± 4.56
-3 decimals:
-0.123(4)	0.123 ± 0.004
-0.123(45)	0.123 ± 0.045
-0.123(456)	0.123 ± 0.456
-4 decimals:
-0.0123(4)	0.0123 ± 0.0004
-0.0123(45)	0.0123 ± 0.0045
-0.0123(456)	0.0123 ± 0.0456
+#### ENSDF Uncertainty Notation (Clear Examples)
+
+| Decimal Digits | ENSDF Notation | Meaning (explicit ± form) |
+|:--------------:|:--------------:|:-------------------------:|
+| No decimal     | 1234(5)        | 1234 ± 5                  |
+|                | 1234(56)       | 1234 ± 56                 |
+|                | 1234(567)      | 1234 ± 567                |
+| 1 decimal      | 12.3(4)        | 12.3 ± 0.4                |
+|                | 12.3(45)       | 12.3 ± 4.5                |
+|                | 12.3(456)      | 12.3 ± 45.6               |
+| 2 decimals     | 1.23(4)        | 1.23 ± 0.04               |
+|                | 1.23(45)       | 1.23 ± 0.45               |
+|                | 1.23(456)      | 1.23 ± 4.56               |
+| 3 decimals     | 0.123(4)       | 0.123 ± 0.004             |
+|                | 0.123(45)      | 0.123 ± 0.045             |
+|                | 0.123(456)     | 0.123 ± 0.456             |
+| 4 decimals     | 0.0123(4)      | 0.0123 ± 0.0004           |
+|                | 0.0123(45)     | 0.0123 ± 0.0045           |
+|                | 0.0123(456)    | 0.0123 ± 0.0456           |
+
 
 
