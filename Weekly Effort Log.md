@@ -103,6 +103,9 @@ Received training from my line manager regarding the A=35 evaluation and data co
 Lijie Sun - 14 September 2025 - 20 September 2025
 Received training from my line manager regarding the A=35 evaluation and data consistency check. Added 3 reaction datasets for 35Cl. Performed the second round of review for CG11116 for 105Nb data in 2025AbAA. Addressed a FRIENDS general request on 220Rn and 216Po decay. Set up AI Toolkit in VS Code for local model testing and context engineering.
 
+Lijie Sun - 21 September 2025 - 27 September 2025
+Received training from my line manager regarding the A=35 evaluation. Added 2 reaction datasets for 35Cl. Revised the context and tool invocation instructions for Copilot responses.
+
 
 # FRIB Laboratory Activities
 
