@@ -76,24 +76,25 @@
  35CL PN                                                                     6  
  35CL  L 0            3/2+                                                      
  35CL cL J$from Adopted Levels.                                                 
- 35CL  L 1219.5    10 1/2+             0.21 PS   +10-8                          
- 35CL cL T$from 1969In04 using DSAM. Parity from Adopted Levels.                
+ 35CL  L 1219.5    10 1/2+             0.15 PS   +7-6                           
+ 35CL cL T$Lifetime |t = 0.21 ps {I+10-8}(1969In04 DSAM). Parity from Adopted   
+ 35CL2cL Levels.                                                                
  35CL  G 1219.5    10 100                                                       
  35CL cG E$weighted average of 1219.3 {I6} (1969In04) and 1219.5 {I10}          
  35CL2cG (1973Al22)                                                             
- 35CL  L 1763.3    6  5/2+             0.55 PS   15                             
+ 35CL  L 1763.3    6  5/2+             0.38 PS   11                             
  35CL cL J$spin=5/2 from |g(|q) in 1970Ho09. Parity from Adopted Levels.        
- 35CL cL T$from 1969In04 using DSAM                                             
+ 35CL cL T$Lifetime |t = 0.55 ps {I15} from 1969In04 using DSAM.                
  35CL  G 543.8        0.5    LT                                                 
  35CL cG RI$from 1969In04                                                       
  35CL  G 1763.2    6  100       M1+E2    +3.0    1                              
  35CL cG E$from 1969In04. Other: 1763.1 {I10} (1973Al22)                        
  35CL cG RI$from 1969In04, 1970Ho09, 1973Al22                                   
  35CL cG M,MR$D+Q from |g(|q) in 1970Ho09. M2 ruled out by RUL.                 
- 35CL  L 2645.8    8  7/2+             0.30 PS   9                              
+ 35CL  L 2645.8    8  7/2+             0.21 PS   6                              
  35CL cL J$spin=7/2 from |g(|q) in 1970Ho09. Parity from 882|g, M1+E2 to 5/2+ in
  35CL2cL 1970Ho09.                                                              
- 35CL cL T$from 1969In04 using DSAM                                             
+ 35CL cL T$Lifetime |t = 0.30 ps {I9} from 1969In04 using DSAM.                 
  35CL  G 882.4     10 11.1   22 M1+E2    +0.25   5                              
  35CL cG E$from 1973Al22                                                        
  35CL cG RI$from 1970Ho09. Other: 18 (1969In04), 10 (1973Al22)                  
@@ -103,9 +104,10 @@
  35CL  G 2646.2    15 100.0  22                                                 
  35CL cG E$from 1969In04. Other: 2646.0 {I20} (1973Al22)                        
  35CL cG RI$from 1970Ho09. Other: 100 (1969In04), 100 (1973Al22)                
- 35CL  L 2693.6    13 3/2,5/2          70 FS     30                             
+ 35CL  L 2693.6    13 3/2,5/2          49 FS     21                             
  35CL cL J$spin=3/2,5/2 from |g(|q) in 1970Ho09.                                
- 35CL cL T$from 1972Br33 using DSAM. Other: |t < 30 fs (1969In04, DSAM)         
+ 35CL cL T$Lifetime |t = 70 fs {I30} from 1972Br33 using DSAM. Other: |t < 30 fs
+ 35CL2cL (1969In04, DSAM).                                                      
  35CL  G 930.5     15 18.2   26                                                 
  35CL cG E$from 1973Al22                                                        
  35CL cG RI$from 1970Ho09                                                       
@@ -115,10 +117,11 @@
  35CL cG E$from 1973Al22                                                        
  35CL cG RI$from 1970Ho09. Other: 100 (1969In04), 100 (1973Al22)                
  35CL cG MR$+0.17 {I8} for J=3/2; -0.26 {I5} for J=5/2 (1970Ho09).              
- 35CL  L 3002.6    15 5/2+             48 FS     9                              
+ 35CL  L 3002.6    15 5/2+             33 FS     6                              
  35CL cL J$spin=3/2,5/2 from |g(|q) in 1970Ho09. 1970Ho09 ruled out 3/2 by RUL. 
  35CL2cL Parity from 3002.5|g, M1+E2 to 3/2+ in 1970Ho09.                       
- 35CL cL T$from 1972Br33 using DSAM. Other: |t < 50 fs (1969In04, DSAM)         
+ 35CL cL T$Lifetime |t = 48 fs {I9} from 1972Br33 using DSAM. Other: |t < 50 fs 
+ 35CL2cL (1969In04, DSAM).                                                      
  35CL  G 309.0        5      LT                                                 
  35CL cG RI$from 1969In04                                                       
  35CL  G 356.8        1      LT                                                 
@@ -128,15 +131,15 @@
  35CL cG RI$from 1969In04. Other: <4 (1972Br33)                                 
  35CL  G 1783.1       2      LT                                                 
  35CL cG RI$from 1969In04, 1972Br33                                             
- 35CL  G 3002.5    15 100       M1+E2    +0.09   3
+ 35CL  G 3002.5    15 100       M1+E2    +0.09   3                              
  35CL cG E$weighted average of 3003 {I2} (1969In04), 3003 {I2} (1972Br33), and  
  35CL2cG 3002.0 {I15} (1973Al22)                                                
  35CL cG RI$from 1969In04, 1970Ho09, 1972Br33, 1973Al22                         
  35CL cG M,MR$D+Q from |g(|q) in 1970Ho09. M2 ruled out by RUL.                 
- 35CL  L 3163.1    11 7/2-             60 PS     7                              
+ 35CL  L 3163.1    11 7/2-             42 PS     5                              
  35CL cL J$spin=7/2 from |g(|q) in 1970Ho09. Parity from 3162.6|g, M2+E3 to 3/2+
  35CL2cL in 1970Ho09.                                                           
- 35CL cL T$from 1969In04                                                        
+ 35CL cL T$Lifetime |t = 60 ps {I7} from 1969In04.                              
  35CL  G 160.5        0.54   LT                                                 
  35CL cG RI$from 1969In04                                                       
  35CL  G 469.5        0.54   LT                                                 
@@ -150,16 +153,16 @@
  35CL cG E$from 1973Al22                                                        
  35CL cG RI$from 1970Ho09. Other: 100 (1969In04), 100 (1973Al22).               
  35CL cG M,MR$Q+O from |g(|q) in 1970Ho09. M3 ruled out by RUL.                 
- 35CL  L 3915      2                   22 FS     LT                             
+ 35CL  L 3915      2                   15.3 FS   LT                             
  35CL dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
  35CL cL E$from 1972Br33.                                                       
- 35CL cL T$from 1972Br33 using DSAM                                             
+ 35CL cL T$Lifetime<22 fs from 1972Br33 using DSAM.                             
  35CL  G 2695         19     5                                                  
  35CL cG RI$from 1972Br33                                                       
  35CL  G 3915         100    5                                                  
  35CL cG RI$from 1972Br33                                                       
- 35CL  L 3943.4    12                  0.33 PS   5                              
- 35CL cL T$from 1972Br33 using DSAM                                             
+ 35CL  L 3943.4    12                  0.229 PS  35                             
+ 35CL cL T$Lifetime |t = 0.33 ps {I5} from 1972Br33 using DSAM.                 
  35CL  G 1297.4    15 8.1    21                                                 
  35CL cG E$from 1973Al22                                                        
  35CL cG RI$weighted average of 9.9 {I22} (1970Ho09) and 6.4 {I21} (1972Br33).  
@@ -167,39 +170,39 @@
  35CL  G 2180.2    15 100.0  21                                                 
  35CL cG E$from 1973Al22                                                        
  35CL cG RI$from 1972Br33. Other: 100.0 {I22} (1970Ho09), 100 (1973Al22).       
- 35CL  L 3968      2                   54 FS     LT                             
+ 35CL  L 3968      2                   37 FS     LT                             
  35CL dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
  35CL cL E$from 1972Br33.                                                       
- 35CL cL T$from 1972Br33 using DSAM.                                            
+ 35CL cL T$Lifetime<54 fs from 1972Br33 using DSAM.                             
  35CL  G 2748         100                                                       
  35CL cG RI$from 1972Br33                                                       
  35CL  G 3968         2      LT                                                 
  35CL cG RI$from 1972Br33                                                       
- 35CL  L 4058      3                   31 FS     13                             
+ 35CL  L 4058      3                   22 FS     9                              
  35CL dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
  35CL cL E$weighted average of 4045 {I10} (1970Ho09) and 4058 {I2} (1972Br33)   
- 35CL cL T$from 1972Br33 using DSAM.                                            
+ 35CL cL T$Lifetime |t = 31 fs {I13} from 1972Br33 using DSAM.                  
  35CL  G 2295         8      4                                                  
  35CL cG RI$from 1972Br33                                                       
  35CL  G 2838         100    4                                                  
  35CL cG RI$from 1972Br33                                                       
  35CL  G 4058         2.2    LT                                                 
  35CL cG RI$from 1972Br33                                                       
- 35CL  L 4108      2  3/2,7/2          70 FS     16                             
+ 35CL  L 4108      2  3/2,7/2          49 FS     11                             
  35CL dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
  35CL cL E$weighted average of 4110 {I10} (1970Ho09) and 4108 {I2} (1972Br33)   
  35CL cL J$from |g(|q) in 1970Ho09.                                             
- 35CL cL T$from 1972Br33 using DSAM.                                            
+ 35CL cL T$Lifetime |t = 70 fs {I16} from 1972Br33 using DSAM.                  
  35CL  G 2345         16     5                                                  
  35CL  G 4108         100    5                                                  
- 35CL  L 4171      2                   68 FS     24                             
+ 35CL  L 4171      2                   47 FS     17                             
  35CL cL E$weighted average of 4175 {I10} (1970Ho09) and 4171 {I2} (1972Br33)   
- 35CL cL T$from 1972Br33 using DSAM.                                            
- 35CL  L 4347.8    12 9/2-             2.9 PS    +14-7                          
+ 35CL cL T$Lifetime |t = 68 fs {I24} from 1972Br33 using DSAM.                  
+ 35CL  L 4347.8    12 9/2-             2.0 PS    +10-5                          
  35CL cL J$spin from |g(|q) in 1974Lo17. Parity from 1702|g, E1 to 7/2+ and     
  35CL2cL 1184.6|g, M1+E2 to 7/2- in 1974Lo17. Other: J=5/2,9/2 from |g(|q) in   
  35CL3cL 1970Ho09 and 1973Al22.                                                 
- 35CL cL T$from 1972Br33 using DSAM.                                            
+ 35CL cL T$Lifetime |t = 2.9 ps {I+14-7} from 1972Br33 using DSAM.              
  35CL  G 1184.6    10 100.0  31 M1+E2    -0.36   3                              
  35CL cG E$from 1973Al22                                                        
  35CL cG RI$from 1974Lo17. Others: 100 {I7} (1970Ho09) and 100 {I4} (1972Br33)  
@@ -216,18 +219,18 @@
  35CL cG MR$from 1974Lo17                                                       
  35CL cG $A{-2}=-0.34 {I5}, A{-4}=0.04 {I5} (1974Lo17).                         
  35CL cG $POL=0.36 {I7} (1974Lo17).                                             
- 35CL  L 4618      2  3/2,5/2          58 FS     24                             
+ 35CL  L 4618      2  3/2,5/2          40 FS     17                             
  35CL cL E$from 1972Br33.                                                       
  35CL cL J$from |g(|q) in 1970Ho09.                                             
- 35CL cL T$from 1972Br33 using DSAM.                                            
+ 35CL cL T$Lifetime |t = 58 fs {I24} from 1972Br33 using DSAM.                  
  35CL  G 4618      2  100                                                       
  35CL cG E,RI$from 1972Br33                                                     
  35CL cG MR$+0.08 {I14} for J=3/2; -0.36 {I15} for J=5/2 (1970Ho09).            
  35CL  L 4770      15                                                           
  35CL cL E$from 1970Ho09.                                                       
- 35CL  L 4880.8    21                  0.28 PS   6                              
+ 35CL  L 4880.8    21                  0.19 PS   4                              
  35CL cL E$other: 4882 {I2} from 1972Br33, 4885 {I20} from 1970Ho09.            
- 35CL cL T$from 1972Br33 using DSAM.                                            
+ 35CL cL T$Lifetime |t = 0.28 ps {I6} from 1972Br33 using DSAM.                 
  35CL  G 2187.1       52     9                                              &   
  35CL cG $Final level is uncertain, either 2646 or 2694 (1970Ho09).             
  35CL  G 2234.9       52     9                                              &   
@@ -246,18 +249,18 @@
  35CL cL J$from |g(|q) in 1970Ho09.                                             
  35CL  G 5230         100                                                       
  35CL cG RI$from 1970Ho09                                                       
- 35CL  L 5407.1    15 11/2-            0.4 PS    1                              
+ 35CL  L 5407.1    15 11/2-            0.28 PS   7                              
  35CL cL E$other: 5415 {I20} from 1970Ho09.                                     
  35CL cL J$spin from |g(|q) in 1974Lo17 and from |g(|q) and yield function in   
  35CL2cL 1973Al22. Parity from 1059.3|g, M1+E2 to 9/2- in 1974Lo17.             
- 35CL cL T$from 1974Lo17 using DSAM                                             
- 35CL  G 1059.3    10 9.9    22 M1+E2    +0.25   8
+ 35CL cL T$Lifetime |t = 0.4 ps {I1} from 1974Lo17 using DSAM.                  
+ 35CL  G 1059.3    10 9.9    22 M1+E2    +0.25   8                              
  35CL cG E$from 1973Al22                                                        
  35CL cG RI,MR$from 1974Lo17                                                    
  35CL cG M$D+Q from |g(|q) in 1970Ho09 and 1973Al22. M2 ruled out by RUL.       
  35CL cG $A{-2}=0.19 {I11}, A{-4}=-0.01 {I13} (1974Lo17).                       
  35CL cG $POL=-0.40 {I14} (1974Lo17).                                           
- 35CL  G 2244      3  100.0  22 E2       0.00    3
+ 35CL  G 2244      3  100.0  22 E2       0.00    3                              
  35CL cG E$from 1973Al22                                                        
  35CL cG RI,MR$from 1974Lo17. Other |d: +0.02 {I9} (1973Al22).                  
  35CL cG M$Q from |g(|q) in 1973Al22 and 1974Lo17. M2 ruled out by RUL.         
@@ -280,10 +283,10 @@
  35CL  G 1579.3    15 100                                                       
  35CL cG E$from 1973Al22                                                        
  35CL cG MR$+1.1 {I5} for J=7/2; -0.8 {I4} for J=11/2 (1973Al22).               
- 35CL  L 6087.0    18 13/2-            9.3 PS    8                              
+ 35CL  L 6087.0    18 13/2-            6.5 PS    6                              
  35CL cL J$spin from |g(|q) in 1974Lo17. Other: J=9/2,13/2 from |g(|q) in       
  35CL2cL 1973Al22. Parity from 679.9|g, M1(+E2) to 11/2- in 1974Lo17.           
- 35CL cL T$from 1974Lo17 using RDM                                              
+ 35CL cL T$Lifetime |t = 9.3 ps {I8} from 1974Lo17 using RDM.                   
  35CL  G 679.9     10 100    6  M1(+E2)  +0.020  15                             
  35CL cG E$from 1973Al22                                                        
  35CL cG RI,MR$from 1974Lo17. Other |d: 0.00 {I7} for J{-i}=13/2 (1973Al22).    
@@ -294,4 +297,4 @@
  35CL cG RI$from 1974Lo17                                                       
  35CL  L 6400      25                                                           
  35CL cL E$from 1970Ho09                                                        
-
+                                                                                
