@@ -5,12 +5,16 @@
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
  35CL c  J|p=0+ for {+34}S ground state.                                        
  35CL d  
- 35CL c  1972Hu10: E=0.7-2.1 MeV protons produced from the 4-MV Van de Graaff at
+ 35CL c  1972Hu10: 0.7-2.1-MeV protons were produced from the 4-MV Van de Graaff
  35CL2c  the Centre d'Etudes Nucleaires de Bordeaux-Gradignan. Target of Ag{-2}S
  35CL3c  (90% {+34}S), 100 |mg/cm{+2}. A 12.7-cm by 12.7-cm NaI(Tl) and a |g    
  35CL4c  rays were detected using a 60-cm{+3} Ge(Li) detector. Measured         
  35CL5c  |s(E{-p}), E|g, I|g. Deduced resonances, levels, branchings.           
  35CL d  
+ 35CL c  1972Hu11: similar setup as 1972Hu10: 0.7-2.1-MeV protons were produced. 
+ 35CL2c  Ag{-2}S (90% {+34}S) and CdS (46% {+34}S). A Ge(Li) detector. Measured 
+ 35CL3c  E|g. Deduced life-times using Doppler Shift Attenuation Method (DSAM). 
+ 35CL d
  35CL c  1976Me12: 0.7-2.1-MeV proton beams were produced from the 1.1-MV       
  35CL2c  Cockroft-Walton and a 3-MV Van de Graaff accelerator. Targets were ZnS 
  35CL3c  (46% {+34}S) and CdS (37% {+34}S) on tantalum backings. |g rays were   
@@ -26,13 +30,10 @@
  35CL6c  84 resonance energies, resonance strengths, J, |p, and branching       
  35CL7c  ratios.                                                                
  35CL d  
- 35CL c  1976Sp09: similar setup as 1976Sp08. 2.33-2.79 MeV protons Measured    
- 35CL2c  |s(E{-p}), E|g, |g(|q). Deduced levels, J|p, branchings, mixing ratios.
+ 35CL c  1976Sp09: similar setup as 1976Sp08 with 2.33-2.79-MeV protons.        
+ 35CL2c  Measured |s(E{-p}), E|g, |g(|q). Deduced levels, J|p, branchings,      
+ 35CL3c  mixing ratios.                                                         
  35CL d
- 35CL c  1972Hu11: E=0.7-2.1 MeV protons. Targets of Ag{-2}S (90% {+34}S) and   
- 35CL2c  CdS (46% {+34}S). A Ge(Li) detector. Measured E|g. Deduced life-times  
- 35CL3c  using Doppler Shift Attenuation Method (DSAM).                         
- 35CL d  
  35CL c  1973Fa07: {+34}S(p,|g) E=1-2 MeV protons produced from the Helsinki    
  35CL2c  2-MV van de Graaff accelerator. Targets made by injecting {+34}S ions  
  35CL3c  onto tantalum backings. A 55-cm{+3} Ge(Li) detector. Measured E|g, I|g.
@@ -136,7 +137,7 @@
  35CL3c  strength.                                                              
  35CL d  
  35CL c  1975Ke11: E=1.214 MeV proton produced from the Helsinki University     
- 35CL2c  2.5-MV van de Graaff. Targets of CdS and ZnS on tantalum backings. A   
+ 35CL2c  2.5-MV van de Graaff. Targets of CdS and ZnS on tantalum backings. H   
  35CL3c  120 cm{+3} Ge(Li) detector, FWHM=2.9 keV at 2.6 MeV. Measured |s(E|g). 
  35CL4c  Deduced resonance strength.                                            
  35CL d  
@@ -193,23 +194,23 @@
 
  35CL c  Theoretical studies: 2020Ri06 (shell model).                           
 
- 35CL cG E$ From level-energy differences, unless otherwise noted.              
- 35CL cG E(W)$From 1960An06                                                     
- 35CL cG E(Y)$From 1970Ko33                                                     
- 35CL cG E(Z)$From 1981Bi05                                                     
- 35CL cG RI$ Primarily from 1972Hu10, 1976Me12, 1976Sp08. Weighted average are  
+ 35CL cG E$From level-energy differences, unless otherwise noted.               
+ 35CL cG E(K)$From 1970Ko33                                                     
+ 35CL cG E(B)$From 1981Bi05                                                     
+ 35CL cG RI$Primarily from 1972Hu10, 1976Me12, 1976Sp08. Weighted average are   
  35CL2cG taken when available.                                                  
- 35CL cG RI(A)$ From 1963Ha32                                                   
- 35CL cG RI(B)$ From 1967Da12                                                   
- 35CL cG RI(C)$ From 2001Vo24                                                   
- 35CL cG RI(D)$ From 1971Pr11                                                   
+ 35CL cG RI(H)$ From 1963Ha32                                                   
+ 35CL cG RI(D)$ From 1967Da12                                                   
+ 35CL cG RI(V)$ From 2001Vo24                                                   
+ 35CL cG RI(P)$ From 1971Pr11                                                   
  35CL cG RI(X)$Transitions to 4177 and 4173 not resolved (1976Sp08)             
- 35CL cG M,MR$ From |g(|q) and/or |g|g(|q).                                     
+ 35CL cG M,MR$From |g(|q) and/or |g|g(|q).                                      
+
  35CL cL E$From E{-c.m.}+S(p)({+35}Cl), where S(p)({+35}Cl)=6370.81 {I4}        
  35CL2cL (2021Wa16). E{-c.m.}=E{-p}(lab)|*m({+34}S)/[m{-p}+m({+34}S)]. Weighted 
- 35CL3cL average are taken when values with uncertainties are available from    
- 35CL4cL different papers. For levels below 8.2 MeV (E{-p}<1.9 MeV) mainly from 
- 35CL5cL 1972Hu10 and 1976Me12. For levels above 8.2 MeV (E{-p}>1.9 MeV) that   
+ 35CL3cL average are taken when multiple E{-p}(lab) values are available. For   
+ 35CL4cL levels below 8.2 MeV (E{-p}<1.9 MeV), E{-p}(lab) mainly from 1972Hu10  
+ 35CL5cL and 1976Me12; for levels above 8.2 MeV (E{-p}>1.9 MeV), E{-p}(lab)     
  35CL6cL mainly from 1976Sp08, unless otherwise noted. All level energies with  
  35CL7cL uncertainties in 1981Bi05 from a least-square fit to E|g's by author   
  35CL cL J$ From the comparison of experimental angular distributions of |g-rays
@@ -221,11 +222,12 @@
  35CL cL T$ Uncertainties in 1973Fa07 include 25% uncertainty from slowing-down 
  35CL2cL theory                                                                 
  35CL cL S$LABEL=E{-p}(lab) (keV)                                               
- 35CL cL $ Resonance strength |w|g=(2J+1)|G{-|g}|G{-p}/|G                       
+
+ 35CL cL $Resonance strength |w|g=(2J+1)|G{-|g}|G{-p}/|G.                       
  35CL cL $ All |w|g from 1976Me12 normalized to the value 21 eV {I3} at E{-p}=  
  35CL2cL 1212 keV from 1966En04                                                 
- 35CL cL $ All |w|g from 1976Sp08 normalized to the value 9.7 eV {I7} at E{-p}= 
- 35CL2cL 1211 keV                                                               
+ 35CL cL $Relative yields obtained by 1976Sp08 are normalized to |w|g=9.7 eV    
+ 35CL2cL {I7} for E{-p}= 1211 keV                                               
  35CL cL $ All |w|g from 1996Ka21 normalized to the value 9.7 eV {I7} at E{-p}= 
  35CL2cL 1212 keV from 1976Sp08                                                 
  35CL cL $ All |w|g from 2001Vo24 normalized to the value 9.7 eV {I7} at E{-p}= 
@@ -236,22 +238,22 @@
  35CL cL T$weighted average of 55 fs {I28} (1971Wi13), 121 fs {I14} (1972Hu11), 
  35CL2cL 104 fs {I29} (1973Fa07), 100 fs {I21} (1976Me12)                       
  35CL  G 1219.4      100                                                        
- 35CL CG $BM1W=0.12 {I2}, BE2W=295 {I40} (1973Fa07)                             
- 35CL CG $BM1W=0.101 {I11}, BE2W=2.3 {I3} (1972Hu11)                            
+ 35CL cG $BM1W=0.12 {I2}, BE2W=295 {I40} (1973Fa07)                             
+ 35CL cG $BM1W=0.101 {I11}, BE2W=2.3 {I3} (1972Hu11)                            
  35CL cG $A{-2}=-0.03 {I3}, A{-4}=-0.002 {I50} (1971Wi13)                       
  35CL cG $A{-2}=-0.01 {I2}, A{-4}=+0.005 {I24} (1967Ta08)                       
  35CL  L 1763.14   145/2+              0.35 PS   6                              
  35CL cL T$weighted average of 0.35 ps {I7} (1972Hu11), 0.28 ps {I12}           
  35CL2cL (1973Fa07), 0.37 ps {I6} (1976Me12)                                    
  35CL  G 543.7       0.2     LT                                                 
- 35CL CG $BE2W |<10 (1972Hu11)                                                  
+ 35CL cG $BE2W |<10 (1972Hu11)                                                  
  35CL  G 1763.1       100      M1+E2     0.42    17                             
  35CL cG M,MR$from 1967Ko20 and 1967Ko23                                        
  35CL cG $+2.8<|d<+4.0 (1971Wi13)                                               
  35CL cG $|G{-|g}(M1)=0.0012 eV, |G{-g}(E2)=0.00013 eV (1967Ko23)               
- 35CL CG $BM1W=1.5E-3 {I5}, BE2W=16 {I6} (1973Fa07)                             
- 35CL CG $BM1W=0.0012 {I3}, BE2W=13 {I2} (1972Hu11)                             
- 35CL CG $BM1W=0.0105, BE2W=1.5 (1967Ko20,1967Ko23)                             
+ 35CL cG $BM1W=1.5E-3 {I5}, BE2W=16 {I6} (1973Fa07)                             
+ 35CL cG $BM1W=0.0012 {I3}, BE2W=13 {I2} (1972Hu11)                             
+ 35CL cG $BM1W=0.0105, BE2W=1.5 (1967Ko20,1967Ko23)                             
  35CL cG $A{-2}=-0.24 {I6}, A{-4}=-0.08 {I7} (1971Wi13)                         
  35CL cG $A{-2}=+0.25 {I3}, A{-4}=-0.49 {I8} (1970Ko33)                         
  35CL cG $A{-2}=+0.25 {I3}, A{-4}=-0.49 {I8} (1967Ko20,1967Ko23)                
@@ -259,44 +261,44 @@
  35CL cL J$3/2+,from 1967Ko20 and 1967Ko23, (5/2,7/2) from 1971Wi13             
  35CL cL T$weighted average of 177 fs {I45} (D), 139 fs {I21} (O)               
  35CL  G 882.5       9       1                                                  
- 35CL CG $BM1W=0.014 {I4}, BE2W=2.9 {I15} (1972Hu11)                            
+ 35CL cG $BM1W=0.014 {I4}, BE2W=2.9 {I15} (1972Hu11)                            
  35CL  G 1426.2      2       LT                                                 
  35CL  G 2645.6      91      1                                                  
  35CL cG $|G{-|g}(M1)=0.012 eV, |G{-g}(E2)=0.0044 eV (1967Ko20)                 
- 35CL CG $BE2W=3.4 {I7} (1972Hu11)                                              
- 35CL CG $BM1W=0.031, BE2W=6.2 (1967Ko20,1967Ko23)                              
+ 35CL cG $BE2W=3.4 {I7} (1972Hu11)                                              
+ 35CL cG $BM1W=0.031, BE2W=6.2 (1967Ko20,1967Ko23)                              
  35CL cG $A{-2}=+0.124 {I17}, A{-4}=-0.230 {I24} (1967Ko20,1967Ko23)            
  35CL  L 2693.90   15 3/2+             14 FS     2                          X   
  35CL cL J$(3/2,5/2) from 1971Wi13                                              
- 35CL cL T$weighted average of 15 fs {I2} (1972Hu11), 13 fs {I4} (1973Fa07),    
- 35CL2cL 14 fs {I3} (1976Me12)                                                  
- 35CL  G 933       7 12.9    10                                             Y   
- 35CL CG $BM1W=0.23 {I9}, BE2W=8 {I6} (1973Fa07)                                
- 35CL CG $BM1W=0.24 {I4}, BE2W=9 {I6} (1972Hu11)                                
+ 35CL cL T$weighted average of 15 fs {I2} (1972Hu11), 13 fs {I4} (1973Fa07), 14 
+ 35CL2cL fs {I3} (1976Me12)                                                     
+ 35CL  G 933       7 12.9    10                                             K   
+ 35CL cG $BM1W=0.23 {I9}, BE2W=8 {I6} (1973Fa07)                                
+ 35CL cG $BM1W=0.24 {I4}, BE2W=9 {I6} (1972Hu11)                                
  35CL cG $A{-2}=-0.05 {I38} (1971Wi13)                                          
- 35CL  G 1475      7 7.6     10                                             Y   
+ 35CL  G 1475      7 7.6     10                                             K   
  35CL cG RI$66 {I14} from 1963Ha32                                              
- 35CL CG $BM1W=0.020 {I8}, BE2W=14 {I7} (1972Hu11)                              
- 35CL CG $BM1W=0.018 {I9}, BE2W=13 {I9} (1973Fa07)                              
+ 35CL cG $BM1W=0.020 {I8}, BE2W=14 {I7} (1972Hu11)                              
+ 35CL cG $BM1W=0.018 {I9}, BE2W=13 {I9} (1973Fa07)                              
  35CL  G 2693.8      79.8    20                                                 
  35CL cG RI$34 {I9} from 1963Ha32                                               
  35CL cG $+0.1<|d<+0.26 or -35<|d<-7 for J=3/2, |d<-5 for J=5/2 (1971Wi13)      
- 35CL CG $BM1W=0.070 {I15}, BE2W=1.1 {I8} (1973Fa07)                            
- 35CL CG $BM1W=0.061 {I6}, BE2W=2.1 {I5} (1972Hu11)                             
+ 35CL cG $BM1W=0.070 {I15}, BE2W=1.1 {I8} (1973Fa07)                            
+ 35CL cG $BM1W=0.061 {I6}, BE2W=2.1 {I5} (1972Hu11)                             
  35CL cG $A{-2}=+0.20 {I10}, A{-4}=-0.16 {I11} (1971Wi13)                       
  35CL  L 3002.76   155/2+              13 FS     2                              
- 35CL cL T$weighted average of 55 fs {I28} (1971Wi13), 15 fs {I2} (1972Hu11),   
- 35CL2cL 10 fs {I3} (1973Fa07), 11 fs {I3} (1976Me12)                           
+ 35CL cL T$weighted average of 55 fs {I28} (1971Wi13), 15 fs {I2} (1972Hu11), 10
+ 35CL2cL fs {I3} (1973Fa07), 11 fs {I3} (1976Me12)                              
  35CL  G 1239.6      1       LE                                                 
- 35CL CG $BM1W |<0.008, BE2W |<19 (1972Hu11)                                    
+ 35CL cG $BM1W |<0.008, BE2W |<19 (1972Hu11)                                    
  35CL  G 1783.3      3       LT                                                 
- 35CL CG $BE2W |<15 (1972Hu11)                                                  
- 35CL  G 3006      7 100       M1+E2     0.22    1                          Y   
+ 35CL cG $BE2W |<15 (1972Hu11)                                                  
+ 35CL  G 3006      7 100       M1+E2     0.22    1                          K   
  35CL cG M,MR$from 1967Ko20 and 1967Ko23                                        
  35CL cG $|G{-|g}(M1)=0.0138 eV, |G{-g}(E2)=0.0007 eV (1967Ko20)                
- 35CL CG $BM1W=0.083 {I11}, BE2W=0.3 {I2} (1973Fa07)                            
- 35CL CG $BM1W=0.054 {I8}, BE2W=0.11 {I6} (1972Hu11)                            
- 35CL CG $BM1W=0.024, BE2W=0.036 (1967Ko20,1967Ko23)                            
+ 35CL cG $BM1W=0.083 {I11}, BE2W=0.3 {I2} (1973Fa07)                            
+ 35CL cG $BM1W=0.054 {I8}, BE2W=0.11 {I6} (1972Hu11)                            
+ 35CL cG $BM1W=0.024, BE2W=0.036 (1967Ko20,1967Ko23)                            
  35CL cG $A{-2}=+0.45 {I18}, A{-4}=+0.05 {I19} (1971Wi13)                       
  35CL cG $A{-2}=-0.025 {I11}, A{-4}=-0.084 {I16} (1970Ko33)                     
  35CL cG $A{-2}=-0.025 {I11}, A{-4}=-0.084 {I16} (1967Ko20,1967Ko23)            
@@ -305,34 +307,34 @@
  35CL cL T$from 1971Ba23 (delayed coincidence), 97 ps {I28} from 1968Az02 (DSAM)
  35CL  G 160.3       1.7     2                                                  
  35CL cG RI$from 1971Pr11                                                       
- 35CL CG $BE1W=1.5E-4 {I3} (1971Pr11)                                           
- 35CL CG $BE1W |<6.3E-5, BM2W |<1.1E4 (1972Hu11)                                
+ 35CL cG $BE1W=1.5E-4 {I3} (1971Pr11)                                           
+ 35CL cG $BE1W |<6.3E-5, BM2W |<1.1E4 (1972Hu11)                                
  35CL  G 469.1       2       LT                                                 
  35CL cG RI$from 1963Ha32                                                       
  35CL  G 517.6     3 9       1                                                  
  35CL cG E$from 1971Wi13                                                        
- 35CL CG $BE1W=9E-6 {I2} (1971Pr11)                                             
- 35CL CG $BE1W=1.2E-5 {I3}, BM2W |<6.2 (1972Hu11)                               
+ 35CL cG $BE1W=9E-6 {I2} (1971Pr11)                                             
+ 35CL cG $BE1W=1.2E-5 {I3}, BM2W |<6.2 (1972Hu11)                               
  35CL cG $A{-2}=+0.31 {I8}, A{-4}=-0.06 {I8} (1971Wi13)                         
  35CL  G 1399.9      0.30    4 E1+M2     +0.44   12                             
  35CL cG M,MR$from 1971Pr11                                                     
- 35CL CG $BE1W |<1.1E-8, BM2W |<0.026 (1972Hu11)                                
- 35CL CG $BE1W=1.4E-3 {I3}, BM2W=6.3E-3 {I37} (1971Pr11)                        
+ 35CL cG $BE1W |<1.1E-8, BM2W |<0.026 (1972Hu11)                                
+ 35CL cG $BE1W=1.4E-3 {I3}, BM2W=6.3E-3 {I37} (1971Pr11)                        
  35CL  G 1943.6      0.2     LT                                                 
- 35CL  G 3163      7 89      1 M2+E3     +0.26   4                          Y   
+ 35CL  G 3163      7 89      1 M2+E3     +0.26   4                          K   
  35CL cG MR$weighted average from 1971Pr11,1967Ta08 and 1966Az01, +0.16 {I1}    
  35CL2cG from 1967Wa22 and 1966Wa09.                                            
  35CL cG $asymmetry ratio R=1.426 {I7}, N{-90}/N{-0}=1.25 {I11} (1971Wi13)      
  35CL cG $pol=-0.75 {I20} (1967Wa22)                                            
  35CL cG $pol=1.27 {I10} (1966Wa09)                                             
  35CL cG $ 0.00<pol<0.384 (1966Az01)                                            
- 35CL CG $BM2W=0.19 {I2}, BE3W=2.4 {I5} (1972Hu11)                              
- 35CL CG $BE1W<2E-8 (1971Wi13)                                                  
- 35CL CG $BM2W=0.16, BE3W=2.3 (1971Wi13)                                        
- 35CL CG $BM2W=0.19 {I3}, BE3W=2.9 {I5} (1971Pr11)                              
- 35CL CG $BM2W=0.085 {I30}, BE3W=1.3 {I6} (1968Az02)                            
- 35CL CG $BM2W=0.075, BE3W=2.7 (1967Ta08)                                       
- 35CL CG $BE2W=0.076, BM3W=2.8 (1966Az01)                                       
+ 35CL cG $BM2W=0.19 {I2}, BE3W=2.4 {I5} (1972Hu11)                              
+ 35CL cG $BE1W<2E-8 (1971Wi13)                                                  
+ 35CL cG $BM2W=0.16, BE3W=2.3 (1971Wi13)                                        
+ 35CL cG $BM2W=0.19 {I3}, BE3W=2.9 {I5} (1971Pr11)                              
+ 35CL cG $BM2W=0.085 {I30}, BE3W=1.3 {I6} (1968Az02)                            
+ 35CL cG $BM2W=0.075, BE3W=2.7 (1967Ta08)                                       
+ 35CL cG $BE2W=0.076, BM3W=2.8 (1966Az01)                                       
  35CL cG $A{-2}=+0.40 {I8}, A{-4}=-0.23 {I8} (1971Wi13)                         
  35CL cG $A{-2}=+0.25 {I3}, A{-4}=+0.02 {I5} (1967Ta08)                         
  35CL cG $A{-2}=+0.55 {I3}, A{-4}=-0.008 {I38} (1966Az01)                       
@@ -340,37 +342,37 @@
  35CL cL T$from 1976Me12                                                        
  35CL  G 1272.8      3       LT                                                 
  35CL  G 2155.3      18      1                                                  
- 35CL CG $BM1W<0.003, BE2W<550 (1976Sp09)                                       
- 35CL CG $BM1W |<0.08, BE2W |<63 (1972Hu11)                                     
+ 35CL cG $BM1W<0.003, BE2W<550 (1976Sp09)                                       
+ 35CL cG $BM1W |<0.08, BE2W |<63 (1972Hu11)                                     
  35CL  G 2699.0      0.5     LT                                                 
- 35CL CG $BM1W<1.5E-3, BE2W<0.8 (1976Sp09)                                      
+ 35CL cG $BM1W<1.5E-3, BE2W<0.8 (1976Sp09)                                      
  35CL  G 3918.3      82      1 M1+E2     -0.21   2                              
  35CL cG M,MR$from 1976Sp09                                                     
  35CL cG MR$ or +20 {I8} (1976Sp09)                                             
- 35CL CG $BM1W=0.06 {I2}, BE2W=0.66 {I22} (1976Sp09)                            
- 35CL CG $BM1W |<0.06, BE2W |<15 (1972Hu11)                                     
+ 35CL cG $BM1W=0.06 {I2}, BE2W=0.66 {I22} (1976Sp09)                            
+ 35CL cG $BM1W |<0.06, BE2W |<15 (1972Hu11)                                     
  35CL cG $A{-2}=+0.07 {I2}, A{-4}=-0.01 {I3} (1976Sp09)                         
  35CL  L 3942.90   25 9/2+             173 FS    41                         X   
  35CL cL T$weighted average of 270 fs {I76} (1972Hu11), 100 fs {I43} (1973Fa07),
  35CL2cL 201 fs {I35} (1976Me12)                                                
  35CL  G 1297.2      8       2                                                  
- 35CL CG $BM1W=3.3E-3 {I30}, BE2W=6 {I4} (1973Fa07)                             
- 35CL CG $BM1W=0.0014 {I10}, BE2W=2.6 {I19} (1972Hu11)                          
+ 35CL cG $BM1W=3.3E-3 {I30}, BE2W=6 {I4} (1973Fa07)                             
+ 35CL cG $BM1W=0.0014 {I10}, BE2W=2.6 {I19} (1972Hu11)                          
  35CL  G 2179.7      92      2                                                  
- 35CL CG $BE2W=16 {I5} (1973Fa07)                                               
- 35CL CG $BE2W=5.7 {I18} (1972Hu11)                                             
+ 35CL cG $BE2W=16 {I5} (1973Fa07)                                               
+ 35CL cG $BE2W=5.7 {I18} (1972Hu11)                                             
  35CL  G 2723.4      6       LT                                                 
  35CL  G 3942.7      10      LT                                                 
  35CL  L 3967.31   25                  10 FS     3                              
  35CL cL T$weighted average of 9 fs {I3} (1972Hu11), 14 fs {I5} (1973Fa07)      
  35CL  G 1273.4      5       3                                                  
  35CL  G 2204.1      1       LE                                                 
- 35CL CG $BE2W |<1.8 (1972Hu11)                                                 
+ 35CL cG $BE2W |<1.8 (1972Hu11)                                                 
  35CL  G 2747.8      74      5                                                  
- 35CL CG $BM1W=0.084 {I28} (1972Hu11)                                           
- 35CL CG $BM1W=0.06 {I2} (1973Fa07)                                             
+ 35CL cG $BM1W=0.084 {I28} (1972Hu11)                                           
+ 35CL cG $BM1W=0.06 {I2} (1973Fa07)                                             
  35CL  G 3967.1      21      3                                                  
- 35CL CG $BM1W |<0.0078, BE2W |<1.9 (1972Hu11)                                  
+ 35CL cG $BM1W |<0.0078, BE2W |<1.9 (1972Hu11)                                  
  35CL  L 3979.0     3                  14 FS     3                              
  35CL  G 1285.1      2.0     5                                                  
  35CL  G 1333.3      2       LT                                                 
@@ -378,77 +380,77 @@
  35CL  G 2759.5      83      5                                                  
  35CL  G 3978.8      15      5                                                  
  35CL  L 4059.20   173/2-              14 FS     2                              
- 35CL cL T$weighted average of 15 fs {I2} (1972Hu11), 14 fs {I4} (1973Fa07),    
- 35CL2cL 12 fs {I2} (1976Me12)                                                  
- 35CL  G 896.2       6       LT                                             A   
- 35CL  G 1056.4      3       LT                                             A   
+ 35CL cL T$weighted average of 15 fs {I2} (1972Hu11), 14 fs {I4} (1973Fa07), 12 
+ 35CL2cL fs {I2} (1976Me12)                                                     
+ 35CL  G 896.2       6       LT                                             H   
+ 35CL  G 1056.4      3       LT                                             H   
  35CL  G 1365.3      1.2     4                                                  
  35CL  G 1413.5      1       LT                                                 
- 35CL  G 2296      7 3.8     15                                             Y   
- 35CL CG $BE1W |<1E-4, BM2W |<90 (1972Hu11)                                     
- 35CL  G 2838      7 96      2                                              Y   
+ 35CL  G 2296      7 3.8     15                                             K   
+ 35CL cG $BE1W |<1E-4, BM2W |<90 (1972Hu11)                                     
+ 35CL  G 2838      7 96      2                                              K   
  35CL cG RI$45 {I5} from 1971Wi13                                               
- 35CL CG $BE1W |<1.8E-3, BM2W |<1000 (1972Hu11)                                 
- 35CL  G 4058      7 2       LT                                             Y   
+ 35CL cG $BE1W |<1.8E-3, BM2W |<1000 (1972Hu11)                                 
+ 35CL  G 4058      7 2       LT                                             K   
  35CL cG RI$20 {I2} from 1971Wi13                                               
  35CL  L 4113.70   24 7/2+                                                      
  35CL  G 2350.5      47      3 M1+E2     -0.16   2                              
  35CL cG M,MR$from 1976Sp09                                                     
- 35CL CG $BM1W=0.016 {I4}, BE2W=0.28 {I10} (1976Sp09)                           
+ 35CL cG $BM1W=0.016 {I4}, BE2W=0.28 {I10} (1976Sp09)                           
  35CL cG $A{-2}=+0.56 {I3}, A{-4}=+0.05 {I4} (1976Sp09)                         
  35CL  G 2894.2      10      LT                                                 
  35CL  G 4113.4      52      3 E2(+M3)   0.0     1                              
  35CL cG M,MR$from 1976Sp09                                                     
- 35CL CG $BE2W=0.8 {I2} (1976Sp09)                                              
+ 35CL cG $BE2W=0.8 {I2} (1976Sp09)                                              
  35CL cG $A{-2}=+0.46 {I25}, A{-4}=-0.23 {I25} (1976Sp09)                       
  35CL  L 4173.45   19 5/2-             34 FS     6                              
  35CL2 L ISPIN=1/2                                                              
  35CL cL J$from |g-feeding                                                      
- 35CL cL T$weighted average of 73 fs {I23} (1971Wi13), 38 fs {I4} (1972Hu11),   
- 35CL2cL 24 fs {I6} (1976Me12)                                                  
+ 35CL cL T$weighted average of 73 fs {I23} (1971Wi13), 38 fs {I4} (1972Hu11), 24
+ 35CL2cL fs {I6} (1976Me12)                                                     
  35CL cL $|G=6.5 keV {I22} (1971Wi13)                                           
  35CL  G 1479.5      26      8                                                  
  35CL  G 1527.8      10      LT                                                 
  35CL  G 2410.2      16      5                                                  
  35CL  G 2953.9      3       LE                                                 
  35CL cG RI$32 {I3} from 1971Wi13                                               
- 35CL CG $BE2W |<0.3 (1972Hu11)                                                 
+ 35CL cG $BE2W |<0.3 (1972Hu11)                                                 
  35CL  G 4173.2      58      10                                                 
- 35CL CG $BM1W |<0.0045, BE2W |<1 (1972Hu11)                                    
+ 35CL cG $BM1W |<0.0045, BE2W |<1 (1972Hu11)                                    
  35CL cG $A{-2}=-0.01 {I3}, A{-4}=-0.006 {I40} (1967Ta08)                       
  35CL  L 4177.90   16 3/2-             24 FS     3                              
- 35CL cL T$weighted average of 22 fs {I3} (1972Hu11), 29 fs {I8} (1973Fa07),    
- 35CL2cL 33 fs {I7} (1976Me12)                                                  
+ 35CL cL T$weighted average of 22 fs {I3} (1972Hu11), 29 fs {I8} (1973Fa07), 33 
+ 35CL2cL fs {I7} (1976Me12)                                                     
  35CL  G 1175.1      0.5     LT                                                 
  35CL  G 1484.0      8       2                                                  
- 35CL CG $BE1W |<6.1E-4, BM2W |<1300 (1972Hu11)                                 
+ 35CL cG $BE1W |<6.1E-4, BM2W |<1300 (1972Hu11)                                 
  35CL  G 1532.2      0.5     LT                                                 
  35CL  G 2414.7      1       LT                                                 
- 35CL CG $BE1W |<2E-5, BM2W |<15 (1972Hu11)                                     
+ 35CL cG $BE1W |<2E-5, BM2W |<15 (1972Hu11)                                     
  35CL  G 2958.4      31      5 E1+M2     +0.11   4                              
  35CL cG MR${I4} from 1967Wa22                                                  
- 35CL CG $BE1W=3.4E-4 {I8}, BM2W=2.1 {I16} (1972Hu11)                           
+ 35CL cG $BE1W=3.4E-4 {I8}, BM2W=2.1 {I16} (1972Hu11)                           
  35CL  G 4177.6      61      5 E1+M2     +0.06   3                              
  35CL cG M,MR$from 1967Wa22                                                     
  35CL cG $pol=+0.12 {I31} (1967Wa22)                                            
- 35CL CG $BE1W=2.4E-4 {I5}, BM2W |<0.5 (1972Hu11)                               
+ 35CL cG $BE1W=2.4E-4 {I5}, BM2W |<0.5 (1972Hu11)                               
  35CL  L 4347.8     3 9/2-             229 FS    42                             
  35CL cL J$from Adopted Levels                                                  
  35CL cL T$from 1976Me12                                                        
  35CL  G 1184.7      69      2                                                  
- 35CL CG $BM1W |<0.02, BE2W |<51 (1972Hu11)                                     
+ 35CL cG $BM1W |<0.02, BE2W |<51 (1972Hu11)                                     
  35CL  G 1345.0      4       LT                                                 
  35CL  G 1653.9      4       LT                                                 
  35CL  G 1702.1      31      2 E1+M2     -0.018  12                             
  35CL cG M,MR$from 1976Sp09                                                     
  35CL cG $A{-2}=-0.34 {I3}, A{-4}=-0.00 {I4} (1976Sp09)                         
- 35CL CG $BE1W=2.0E-5 {I8}, BM2W<0.02 (1976Sp09)                                
- 35CL CG $BE1W |<1E-4, BM2W |<150 (1972Hu11)                                    
+ 35CL cG $BE1W=2.0E-5 {I8}, BM2W<0.02 (1976Sp09)                                
+ 35CL cG $BE1W |<1E-4, BM2W |<150 (1972Hu11)                                    
  35CL  G 2584.6      3       LT                                                 
- 35CL CG $BM2W |<1.8, BE3W |<1500 (1972Hu11)                                    
+ 35CL cG $BM2W |<1.8, BE3W |<1500 (1972Hu11)                                    
  35CL  G 3128.2      5       LT                                                 
  35CL  G 4347.5      5       LE                                                 
- 35CL CG $BE3W |<70 (1972Hu11)                                                  
+ 35CL cG $BE3W |<70 (1972Hu11)                                                  
  35CL  L 4382.0     8                                                          ?
  35CL cL E$from 1971Pr11                                                        
  35CL  G 1218.9      100                                                       ?
@@ -488,11 +490,11 @@
  35CL  G 4880.8      4       LT                                                 
  35CL  L 5010.11   21 (1/2,3/2)        7.6 FS    21                             
  35CL cL T$from 1976Me12                                                        
- 35CL  G 836.6       25      LT                                             A   
- 35CL  G 950.9       10      LT                                             A   
- 35CL  G 1847.0      50      LT                                             A   
- 35CL  G 2007.3      20      LT                                             A   
- 35CL  G 2316.1      25      LT                                             A   
+ 35CL  G 836.6       25      LT                                             H   
+ 35CL  G 950.9       10      LT                                             H   
+ 35CL  G 1847.0      50      LT                                             H   
+ 35CL  G 2007.3      20      LT                                             H   
+ 35CL  G 2316.1      25      LT                                             H   
  35CL  G 2364.4      5       LT                                                 
  35CL  G 3246.8      10      LT                                                 
  35CL  G 3790.5      7       LT                                                 
@@ -510,13 +512,13 @@
  35CL  G 5162.9      10      LT                                                 
  35CL  L 5215.80   20                  5 FS      LT                             
  35CL cL T$from 1976Me12                                                        
- 35CL  G 205.7       23      LT                                             A   
- 35CL  G 1042.3      60      LT                                             A   
- 35CL  G 1156.6      10      LT                                             A   
- 35CL  G 2052.7      15      LT                                             A   
- 35CL  G 2213.0      25      LT                                             A   
- 35CL  G 2521.8      15      LT                                             A   
- 35CL  G 2570.0      15      LT                                             A   
+ 35CL  G 205.7       23      LT                                             H   
+ 35CL  G 1042.3      60      LT                                             H   
+ 35CL  G 1156.6      10      LT                                             H   
+ 35CL  G 2052.7      15      LT                                             H   
+ 35CL  G 2213.0      25      LT                                             H   
+ 35CL  G 2521.8      15      LT                                             H   
+ 35CL  G 2570.0      15      LT                                             H   
  35CL  G 3452.5      6       LT                                                 
  35CL  G 3996.2      4       LT                                                 
  35CL  G 5215.4      100                                                        
@@ -545,8 +547,8 @@
  35CL cG E,RI$from 1971Pr11                                                     
  35CL  G 2481.9      100                                                        
  35CL cG RI$from 1971Pr11                                                       
- 35CL  G 2642.1                                                             C   
- 35CL  G 3881.6                                                             C   
+ 35CL  G 2642.1                                                             V   
+ 35CL  G 3881.6                                                             V   
  35CL  G 5644.5      8       LT                                                 
  35CL  L 5654.50   23 3/2+             14 FS     3                              
  35CL cL J$from 2001Vo24                                                        
@@ -604,16 +606,16 @@
  35CL cL $|w|g=0.04 eV (1963Ha32)                                               
  35CL cL $|w|g=0.5 eV {I3} (1972Hu10)                                           
  35CL cL $|w|g=0.50 eV {I15} (1976Me12)                                         
- 35CL  G 1887.4      1       LT                                             A   
- 35CL  G 2093.1      1       LT                                             A   
+ 35CL  G 1887.4      1       LT                                             H   
+ 35CL  G 2093.1      1       LT                                             H   
  35CL  G 2925.3      1.5                                                        
  35CL  G 3184.6      2       1                                                  
- 35CL  G 3940.0      0.2     LT                                             A   
+ 35CL  G 3940.0      0.2     LT                                             H   
  35CL  G 4100.3      3.0     15                                                 
  35CL  G 4409.1      13      1 D(+Q)     0.00    3                              
  35CL cG MR$from 1976Me12                                                       
  35CL cG $A{-2}=+0.34 {I7}, A{-4}=+0.03 {I11} (1976Me12)                        
- 35CL  G 4457.3      5       LT                                             A   
+ 35CL  G 4457.3      5       LT                                             H   
  35CL  G 5339.7      4       2                                                  
  35CL  G 5883.4      67      7 D(+Q)     0.00    3                              
  35CL cG MR$from 1976Me12                                                       
@@ -628,7 +630,7 @@
  35CL  G 1072.4      4       2                                                  
  35CL  G 1775.1      1.7                                                        
  35CL  G 2339.4      1.5                                                        
- 35CL  G 3005.0      1                                                      C   
+ 35CL  G 3005.0      1                                                      V   
  35CL  G 3119.3      24      3                                                  
  35CL cG $A{-2}=-0.02 {I4}, A{-4}=+0.10 {I66} (1976Me12)                        
  35CL cG $A{-2}=-0.01 {I4}, A{-4}=+0.09 {I24} (2001Vo24)                        
@@ -645,35 +647,35 @@
  35CL cG $A{-2}=-0.02 {I4}, A{-4}=-0.01 {I5} (2001Vo24)                         
  35CL  L 7185.0     4                                           838             
  35CL cL $|w|g=0.056 eV (1963Ha32)                                              
- 35CL  G 1969.1      0.5     LT                                             A   
- 35CL  G 2174.8      0.5     LT                                             A   
- 35CL  G 3011.4      5       LT                                             A   
- 35CL  G 3127      50 26     6                                              A   
- 35CL  G 4021.7      3       LT                                             A   
- 35CL  G 4182.0      3       LT                                             A   
- 35CL  G 4490.8       2      1                                              A   
- 35CL  G 4539.0       6      2                                              A   
- 35CL  G 5421.4      4       3                                              A   
- 35CL  G 5965.1       16     7                                              A   
- 35CL  G 7184.2       46     10                                             A   
+ 35CL  G 1969.1      0.5     LT                                             H   
+ 35CL  G 2174.8      0.5     LT                                             H   
+ 35CL  G 3011.4      5       LT                                             H   
+ 35CL  G 3127      50 26     6                                              H   
+ 35CL  G 4021.7      3       LT                                             H   
+ 35CL  G 4182.0      3       LT                                             H   
+ 35CL  G 4490.8       2      1                                              H   
+ 35CL  G 4539.0       6      2                                              H   
+ 35CL  G 5421.4      4       3                                              H   
+ 35CL  G 5965.1       16     7                                              H   
+ 35CL  G 7184.2       46     10                                             H   
  35CL  L 7194.5     3(1/2,3/2)+                                 848.2     7     
  35CL cL J$from 1960An06                                                        
  35CL cL $|w|g=0.17 eV (1963Ha32)                                               
  35CL cL $|w|g=1.1 eV {I3} (1972Hu10)                                           
  35CL cL $|w|g=1.2 eV {I4} (1976Me12)                                           
- 35CL  G 1978.6      5       LT                                             A   
+ 35CL  G 1978.6      5       LT                                             H   
  35CL  G 2184.3      1.0     5                                                  
  35CL  G 2340.0      2       1                                                  
  35CL  G 2355.3      1.8     LT                                                 
  35CL  G 3020.9      15      2                                                  
  35CL  G 3135.1      3.0     15                                                 
- 35CL  G 3215.3      1.8     LT                                             A   
- 35CL  G 3227.0      2       1                                              A   
+ 35CL  G 3215.3      1.8     LT                                             H   
+ 35CL  G 3227.0      2       1                                              H   
  35CL  G 3275.8      5       3                                                  
- 35CL  G 4031.2      0.6     LT                                             A   
- 35CL  G 4500.3      4       LT                                             A   
- 35CL  G 4548.5      6       LT                                             A   
- 35CL  G 5430.9      5       LT                                             A   
+ 35CL  G 4031.2      0.6     LT                                             H   
+ 35CL  G 4500.3      4       LT                                             H   
+ 35CL  G 4548.5      6       LT                                             H   
+ 35CL  G 5430.9      5       LT                                             H   
  35CL  G 5974.6      72      7                                                  
  35CL  G 7193.7      5       LT                                                 
  35CL  L 7225.5     35/2                                        880.1     8     
@@ -686,14 +688,14 @@
  35CL  G 1625.8      0.8     LT                                                 
  35CL  G 1821.9      1.0     5                                                  
  35CL  G 2009.6      6.0     6                                                  
- 35CL  G 2215.3      1.5     LT                                             A   
- 35CL  G 3047.5      2       LT                                             A   
+ 35CL  G 2215.3      1.5     LT                                             H   
+ 35CL  G 3047.5      2       LT                                             H   
  35CL  G 3051.9      7.0     7                                                  
  35CL  G 3166.1      2.0     LT                                                 
  35CL  G 3306.8      1.0     5                                                  
- 35CL  G 4062.2      2       LT                                             A   
+ 35CL  G 4062.2      2       LT                                             H   
  35CL  G 4222.5      3.0     15                                                 
- 35CL  G 4531.3      10      1 D+Q       +0.36   4                          A   
+ 35CL  G 4531.3      10      1 D+Q       +0.36   4                          H   
  35CL cG MR$from 1976Me12                                                       
  35CL cG $A{-2}=+0.43 {I8}, A{-4}=-0.21 {I9} (1976Me12)                         
  35CL  G 5461.9      8.0     8 D+Q       -0.36   7                              
@@ -708,16 +710,16 @@
  35CL cL $|w|g=1.3 eV {I4} (1972Hu10)                                           
  35CL cL $|w|g=1.9 eV {I6} (1976Me12)                                           
  35CL  G 1634.3      0.2     LT                                                 
- 35CL  G 2018.1      1.5     LT                                             A   
- 35CL  G 2223.8      1.5     LT                                             A   
+ 35CL  G 2018.1      1.5     LT                                             H   
+ 35CL  G 2223.8      1.5     LT                                             H   
  35CL  G 3056.0      1.0     5                                                  
- 35CL  G 3174.6      0.5     LT                                             A   
- 35CL  G 4070.7      0.5     LT                                             A   
- 35CL  G 4231.0      0.5     LT                                             A   
+ 35CL  G 3174.6      0.5     LT                                             H   
+ 35CL  G 4070.7      0.5     LT                                             H   
+ 35CL  G 4231.0      0.5     LT                                             H   
  35CL  G 4539.8      2       1                                                  
  35CL  G 4588.0      2       1                                                  
- 35CL  G 5470.4      1.0     5                                              A   
- 35CL  G 6014.0      2       1                                              A   
+ 35CL  G 5470.4      1.0     5                                              H   
+ 35CL  G 6014.0      2       1                                              H   
  35CL  G 7233.2      93      9 D+Q       -0.1                                   
  35CL cG MR$from 1960An06                                                       
  35CL  L 7269.2    1                                            925.1     1     
@@ -729,16 +731,16 @@
  35CL cL $|w|g=2.2 eV {I7} (1976Me12)                                           
  35CL  G 1514.6      1.5     8                                                  
  35CL  G 1869.0      0.5     3                                                  
- 35CL  G 2056.7      0.5     LT                                             A   
+ 35CL  G 2056.7      0.5     LT                                             H   
  35CL  G 2262.4      1.5     8                                                  
  35CL  G 2433.4      1.0     5                                                  
  35CL  G 3094.6      0.5     3                                                  
  35CL  G 3213.2      1.0     5                                                  
  35CL  G 3305.1      1.0     5                                                  
- 35CL  G 4109.3      0.2     LT                                             A   
- 35CL  G 4269.6      1       LT                                             A   
+ 35CL  G 4109.3      0.2     LT                                             H   
+ 35CL  G 4269.6      1       LT                                             H   
  35CL  G 4578.4      1.0     5                                                  
- 35CL  G 5509.0      1.0     LT                                             A   
+ 35CL  G 5509.0      1.0     LT                                             H   
  35CL  G 6052.6      23      2                                                  
  35CL  G 7271.8      69      7                                                  
  35CL  L 7362.0     33/2                                        1020.6    8     
@@ -748,23 +750,22 @@
  35CL cL $|w|g=3.1 eV {I9} (1976Me12)                                           
  35CL  G 1707.5      0.5     3                                                  
  35CL  G 1762.3      0.3     LT                                                 
- 35CL  G 2146.1      2       LT                                             A   
+ 35CL  G 2146.1      2       LT                                             H   
  35CL  G 2351.8      0.5     3                                                  
  35CL  G 2522.8      1.0     5                                                  
  35CL  G 3183.9      1.0     5                                                  
  35CL  G 3302.6      3.0     15                                                 
  35CL  G 3394.5      3.0     15                                                 
  35CL  G 3443.3      0.5     3                                                  
- 35CL  G 4198.7      1       LT                                             A   
+ 35CL  G 4198.7      1       LT                                             H   
  35CL  G 4358.9      0.5     3                                                  
- 35CL  G 4667.8      2       LT                                             A   
- 35CL  G 4716.0      2       LT                                             A   
+ 35CL  G 4667.8      2       LT                                             H   
+ 35CL  G 4716.0      2       LT                                             H   
  35CL  G 5598.4      10      1 D(+Q)     -0.01   10                             
  35CL cG $A{-2}=-0.20 {I24}, A{-4}=+0.92 {I25} (1977Ko34)                       
  35CL cG MR$or |d>+2.5 (1977Ko34)                                               
  35CL  G 6142.0      70      7 (D+Q)     -0.05   3                              
- 35CL cG MR$or +2.5 {I3} (1977Ko34); -20 or +0.22<|d<+0.26                      
- 35CL2cG (1971Wi13)                                                             
+ 35CL cG MR$or +2.5 {I3} (1977Ko34); -20 or +0.22<|d<+0.26 (1971Wi13)           
  35CL cG $A{-2}=-0.05 {I3}, A{-4}=-0.04 {I5} (1971Wi13)                         
  35CL cG $A{-2}=-0.25 {I11}, A{-4}=+0.31 {I11} (1977Ko34)                       
  35CL  G 7361.2      10      1                                                  
@@ -775,24 +776,24 @@
  35CL cL $|w|g=0.4 eV {I2} (1972Hu10)                                           
  35CL cL $|w|g=0.4 eV (1973Fa07)                                                
  35CL cL $|w|g=0.50 eV {I15} (1976Me12)                                         
- 35CL  G 2180.1      12      LT                                             A   
- 35CL  G 2385.8      8       LT                                             A   
+ 35CL  G 2180.1      12      LT                                             H   
+ 35CL  G 2385.8      8       LT                                             H   
  35CL  G 3048.1      10      1                                                  
- 35CL  G 3217.9      15      LT                                             A   
+ 35CL  G 3217.9      15      LT                                             H   
  35CL  G 3282.1      9       1                                                  
- 35CL  G 3336.6      6       LT                                             A   
+ 35CL  G 3336.6      6       LT                                             H   
  35CL  G 3452.9      8.0     8                                                  
  35CL  G 4232.7      49      5 M1+E2     +0.28   25                             
  35CL cG MR$from 1977Ko35                                                       
- 35CL CG $BM1W=0.014, BE2W=0.23 (1977Ko35)                                      
+ 35CL cG $BM1W=0.014, BE2W=0.23 (1977Ko35)                                      
  35CL  G 4392.9      14      2 E1(+M2)   +0.011  18                             
  35CL cG M,MR$from 1977Ko35                                                     
- 35CL CG $BE1W=9E-5 (1977Ko35)                                                  
- 35CL  G 4701.8      5       LT                                             A   
+ 35CL cG $BE1W=9E-5 (1977Ko35)                                                  
+ 35CL  G 4701.8      5       LT                                             H   
  35CL  G 4750.0       10     1                                                  
- 35CL  G 5632.4      7       LT                                             A   
- 35CL  G 6176.0      15      LT                                             A   
- 35CL  G 7395.2      10      LT                                             A   
+ 35CL  G 5632.4      7       LT                                             H   
+ 35CL  G 6176.0      15      LT                                             H   
+ 35CL  G 7395.2      10      LT                                             H   
  35CL  L 7451.0     5 3/2                                       1112.3    6     
  35CL cL J$from 1972LeYW                                                        
  35CL cL $|w|g=0.3 eV {I2} (1972Hu10)                                           
@@ -838,11 +839,11 @@
  35CL  G 3575.6      2       1                                                  
  35CL  G 4355.4      68      7 D(+Q)     +0.1    2                              
  35CL cG MR$from 1977Ko35                                                       
- 35CL CG $BM1W=0.01 (1977Ko35)                                                  
+ 35CL cG $BM1W=0.01 (1977Ko35)                                                  
  35CL  G 4872.7      3.0     15                                                 
  35CL  G 5755.1      20      2 E1+M2     +0.098  22                             
  35CL cG M,MR$from 1977Ko35                                                     
- 35CL CG $BE1W=3.14E-5, BM2W=0.05 (1977Ko35)                                    
+ 35CL cG $BE1W=3.14E-5, BM2W=0.05 (1977Ko35)                                    
  35CL  L 7548.2     37/2-              0.7 FS    LT             1212.5    4     
  35CL2 L ISPIN=3/2                                                              
  35CL cL J$3/2 from 1976Me12                                                    
@@ -856,24 +857,24 @@
  35CL cL $|w|g=9.7 eV {I7} (1976Sp08)                                           
  35CL cL $|w|g=9.7 eV {I7} (1996Ka21)                                           
  35CL cL $|w|g=9.9 eV {I7} (2001Vo24)                                           
- 35CL cL $|w|g=9.5 eV {I12}  deduced from |w|g for E{-p}=1891 in 1981Bi05 and   
- 35CL2cL relative strength  in 1976Sp08 (1981Bi05)                              
+ 35CL cL $|w|g=9.5 eV {I12} deduced from |w|g for E{-p}=1891 in 1981Bi05 and    
+ 35CL2cL relative strength in 1976Sp08 (1981Bi05)                               
  35CL cL $|G=5.8 eV {I13}, |G{-p}=3.8 eV {I13}, |G{-|g}=2.0 eV {I13} (1975Ke11) 
- 35CL cL $|G{-|g}=1.8 eV {I7}  (2001Vo24)                                       
+ 35CL cL $|G{-|g}=1.8 eV {I7} (2001Vo24)                                        
  35CL  G 1893.6      1       LT                                                 
  35CL cG E,RI$from 2002Vo17                                                     
- 35CL  G 1903.1      0.55    6                                              D   
- 35CL CG $BM1W=0.15 {I4} (1971Pr11)                                             
+ 35CL  G 1903.1      0.55    6                                              P   
+ 35CL cG $BM1W=0.15 {I4} (1971Pr11)                                             
  35CL  G 1962.1      0.2     LT                                                 
- 35CL  G 2332.3      2.0     LT                                             A   
- 35CL  G 2538.0      3       LT                                             A   
- 35CL  G 2779.3      1.4     1                                              D   
- 35CL CG $BM1W=0.12 {I3} (1971Pr11)                                             
- 35CL  G 3166.0      0.37    13                                             D   
- 35CL CG $BM1W=0.021 {I9} (1971Pr11)                                            
- 35CL  G 3370.1      1       LT                                             A   
- 35CL  G 3488.8      5       LT                                             A   
- 35CL  G 4384.9      94      1  M1+E2    -0.07   2                          D   
+ 35CL  G 2332.3      2.0     LT                                             H   
+ 35CL  G 2538.0      3       LT                                             H   
+ 35CL  G 2779.3      1.4     1                                              P   
+ 35CL cG $BM1W=0.12 {I3} (1971Pr11)                                             
+ 35CL  G 3166.0      0.37    13                                             P   
+ 35CL cG $BM1W=0.021 {I9} (1971Pr11)                                            
+ 35CL  G 3370.1      1       LT                                             H   
+ 35CL  G 3488.8      5       LT                                             H   
+ 35CL  G 4384.9      94      1  M1+E2    -0.07   2                          P   
  35CL cG M$from 1967Wa22 and 1966Wa09                                           
  35CL cG MR$weighted average from 1977Ko35,1967Wa22 and 1966Wa09, -0.03 {I3}    
  35CL2cG from 2001Vo24 and 2002Vo17                                             
@@ -881,29 +882,29 @@
  35CL cG $pol=0.76 {I6} (1966Wa09)                                              
  35CL cG $pol=+0.93 {I10} (1967Wa22)                                            
  35CL cG $ 0.021<pol<0.813 (1966Az01)                                           
- 35CL CG $BM1W=1.6, BE2W=1.4 {I5} (1967Wa22)                                    
- 35CL CG $BM1W=2.2 {I6}, BE2W=2.0 {I12} (1971Pr11)                              
- 35CL CG $BM1W=0.88 {I11} (1974Al04)                                            
- 35CL CG $BM1W=1.1 {I7} (1975Ke11)                                              
- 35CL CG $BM1W=1.4 (1977Ko35)                                                   
+ 35CL cG $BM1W=1.6, BE2W=1.4 {I5} (1967Wa22)                                    
+ 35CL cG $BM1W=2.2 {I6}, BE2W=2.0 {I12} (1971Pr11)                              
+ 35CL cG $BM1W=0.88 {I11} (1974Al04)                                            
+ 35CL cG $BM1W=1.1 {I7} (1975Ke11)                                              
+ 35CL cG $BM1W=1.4 (1977Ko35)                                                   
  35CL cG $A{-2}=+0.42 {I3}, A{-4}=0.00 {I3} (2001Vo24)                          
  35CL cG $A{-2}=+0.42 {I3}, A{-4}=0.00 {I3} (2002Vo17)                          
  35CL cG $A{-2}=+0.42 {I3}, A{-4}=-0.001 {I27} (1966Az01)                       
  35CL cG $A{-2}=+0.42 {I3}, A{-4}=+0.00 {I3} (1967Ta08)                         
- 35CL  G 4545.1      2.0     1 E1(+M2)   +0.6    4                          D   
+ 35CL  G 4545.1      2.0     1 E1(+M2)   +0.6    4                          P   
  35CL cG M,MR$from 1977Ko35                                                     
- 35CL CG $BE1W=1.2E-3 {I3} (1971Pr11)                                           
- 35CL CG $BE1W=7E-4 (1977Ko35)                                                  
- 35CL  G 4853.9      1       LT                                             A   
- 35CL  G 4902.2      0.68    7                                              D   
- 35CL CG $BE1W=3.2E-4 {I8} (1971Pr11)                                           
- 35CL  G 5784.5      0.33    4                                              D   
- 35CL CG $BE1W=0.9E-4 {I2} (1971Pr11)                                           
- 35CL  G 6328.2      0.5     LT                                             A   
- 35CL  G 7547.3      0.27    3 M2(+E3)   +0.1    2                          D   
+ 35CL cG $BE1W=1.2E-3 {I3} (1971Pr11)                                           
+ 35CL cG $BE1W=7E-4 (1977Ko35)                                                  
+ 35CL  G 4853.9      1       LT                                             H   
+ 35CL  G 4902.2      0.68    7                                              P   
+ 35CL cG $BE1W=3.2E-4 {I8} (1971Pr11)                                           
+ 35CL  G 5784.5      0.33    4                                              P   
+ 35CL cG $BE1W=0.9E-4 {I2} (1971Pr11)                                           
+ 35CL  G 6328.2      0.5     LT                                             H   
+ 35CL  G 7547.3      0.27    3 M2(+E3)   +0.1    2                          P   
  35CL cG M,MR$from 1977Ko35                                                     
- 35CL CG $BM2W=1.4 (1977Ko35)                                                   
- 35CL CG $BM2W=3.0 {I8} (1971Pr11)                                              
+ 35CL cG $BM2W=1.4 (1977Ko35)                                                   
+ 35CL cG $BM2W=3.0 {I8} (1971Pr11)                                              
  35CL  L 7561.1     4(1/2,3/2)                                  1225.7    6     
  35CL cL $|w|g=1.5 eV {I5} (1972Hu10)                                           
  35CL cL $|w|g=1.1 eV (1973Fa07)                                                
@@ -922,7 +923,7 @@
  35CL cG $A{-2}=+0.01 {I2}, A{-4}=-0.03 {I3} (1976Me12)                         
  35CL  L 7600.8     35/2+              14 FS     LT             1266.5    8     
  35CL cL J$3/2 from 1977Ko34                                                    
- 35CL CL $|w|g=3.4 eV, |G{-|g} AP 0.57 eV (1971Wi13)                            
+ 35CL cL $|w|g=3.4 eV, |G{-|g} AP 0.57 eV (1971Wi13)                            
  35CL cL $|w|g=3.2 eV {I10} (1972Hu10)                                          
  35CL cL $|w|g=2.9 eV (1973Fa07)                                                
  35CL cL $|w|g=2.8 eV {I9} (1976Me12)                                           
@@ -941,9 +942,9 @@
  35CL cG $A{-2}=+0.19 {I2}, A{-4}=+0.08 {I2} (1977Ko34)                         
  35CL cG $A{-2}=+0.35 {I32}, A{-4}=-0.44 {I32} (1971Wi13)                       
  35CL  G 4597.7      9       1 D+Q       +0.58   22                             
- 35CL cG MR$weighted average of 0.50 {I22} from 1971Wi13 and +0.85 {I42}        
- 35CL2cG from 1977Ko34                                                          
- 35CL CG $BM1W=2.8 {I5}, BE1W=7.8 {I14}, BM2W=44 {I30}, BE2W=1.2 {I8} (1971Wi13)
+ 35CL cG MR$weighted average of 0.50 {I22} from 1971Wi13 and +0.85 {I42} from   
+ 35CL2cG 1977Ko34                                                               
+ 35CL cG $BM1W=2.8 {I5}, BE1W=7.8 {I14}, BM2W=44 {I30}, BE2W=1.2 {I8} (1971Wi13)
  35CL cG $A{-2}=+0.75 {I7}, A{-4}=-0.06 {I7} (1971Wi13)                         
  35CL cG $A{-2}=+0.53 {I21}, A{-4}=-0.04 {I25} (1976Me12)                       
  35CL cG $A{-2}=+0.42 {I3}, A{-4}=-0.10 {I3} (1977Ko34)                         
@@ -959,7 +960,7 @@
  35CL cG RI$from 1971Wi13, 2 {I1} from 1972Hu10                                 
  35CL cG M,MR$from 1971Wi13                                                     
  35CL cG $A{-2}=+0.10 {I7}, A{-4}=-0.10 {I8} (1971Wi13)                         
- 35CL CG $BM1W=3.0E-2 {I1}, BE1W=8.9 {I4}, BM2W=14 {I6}, BE2W=0.38 {I15}        
+ 35CL cG $BM1W=3.0E-2 {I1}, BE1W=8.9 {I4}, BM2W=14 {I6}, BE2W=0.38 {I15}        
  35CL2cG (1971Wi13)                                                             
  35CL cG MR$ +0.2 {I22} (1977Ko34)                                              
  35CL cG $-0.42<|d<-0.23 (1971Wi13)                                             
@@ -971,7 +972,7 @@
  35CL cG MR$weighted average from 1971Wi13 and 1976Me12. Others: +1.8 {I5}      
  35CL2cG (1977Ko34); -0.20<|d<-0.14 (1971Wi13)                                  
  35CL cG $A{-2}=-0.73 {I7}, A{-4}=+0.04 {I6} (1971Wi13)                         
- 35CL CG $BM1W=1.85E-2 {I3}, BE1W=5.5E-4 {I1}, BM2W=1.3 {I4}, BE2W=4E-2 {I1}    
+ 35CL cG $BM1W=1.85E-2 {I3}, BE1W=5.5E-4 {I1}, BM2W=1.3 {I4}, BE2W=4E-2 {I1}    
  35CL2cG (1971Wi13)                                                             
  35CL cG $A{-2}=-0.62 {I5}, A{-4}=-0.06 {I5} (1976Me12)                         
  35CL cG $A{-2}=-0.56 {I3}, A{-4}=-0.05 {I2} (1977Ko34)                         
@@ -1045,15 +1046,14 @@
  35CL cG $A{-2}=+0.01 {I14}, A{-4}=+0.23 {I16} (1977Ko34)                       
  35CL  G 3625.3      6.0     6                                                  
  35CL  G 4681.6      9       1 (D+Q)     -2.4    12                             
- 35CL cG MR$or -0.01 {I5} (1976Me12); +0.01 {I7} for J=3/2,                     
- 35CL2cG +0.48 {I32} for J=5/2 (1977Ko34)                                       
+ 35CL cG MR$or -0.01 {I5} (1976Me12); +0.01 {I7} for J=3/2, +0.48 {I32} for     
+ 35CL2cG J=5/2 (1977Ko34)                                                       
  35CL cG $A{-2}=-0.04 {I6}, A{-4}=-0.09 {I7} (1976Me12)                         
  35CL cG $A{-2}=-0.06 {I12}, A{-4}=+0.08 {I13} (1977Ko34)                       
  35CL  G 5921.0      0.7     LT                                                 
  35CL  G 6464.7      1.0     5                                                  
  35CL  G 7683.8      72      7 (D+Q)     +6.0    7                              
- 35CL cG MR$from 1976Me12; <-3.5 for J=3/2, -0.26 {I11} for J=5/2               
- 35CL2cG (1977Ko34)                                                             
+ 35CL cG MR$from 1976Me12; <-3.5 for J=3/2, -0.26 {I11} for J=5/2 (1977Ko34)    
  35CL cG $A{-2}=+0.25 {I1}, A{-4}=-0.03 {I1} (1976Me12)                         
  35CL cG $A{-2}=+0.18 {I11}, A{-4}=-0.04 {I11} (1977Ko34)                       
  35CL  L 7693.8     5                                           1362.3    8     
@@ -1096,13 +1096,13 @@
  35CL  G 2975.9      1.0     5                                                  
  35CL  G 3630.9      5       3                                                  
  35CL  G 3801.7      12.0    12 E1(+M2)  -0.16   17                             
- 35CL CG $BE1W=5E-4 (1977Ko35)                                                  
+ 35CL cG $BE1W=5E-4 (1977Ko35)                                                  
  35CL  G 4581.4      18      2 M1+E2     +0.18   8                              
  35CL cG M,MR$from 1977Ko35                                                     
- 35CL CG $BM1W=0.014, BM2W=0.081 (1977Ko35)                                     
+ 35CL cG $BM1W=0.014, BM2W=0.081 (1977Ko35)                                     
  35CL  G 5098.7      43      4 E1(+M2)   +0.1    30                             
  35CL cG M,MR$from 1977Ko35                                                     
- 35CL CG $BE1W=7E-4 (1977Ko35)                                                  
+ 35CL cG $BE1W=7E-4 (1977Ko35)                                                  
  35CL  G 5981.1      2       1                                                  
  35CL  G 6524.7      0.6     LT                                                 
  35CL  L 7748                                                   1418            
@@ -1187,7 +1187,7 @@
  35CL cG MR$-0.04 {I3} or +0.27 {I5} from 2001Vo24                              
  35CL cG $A{-2}=+0.17 {I1}, A{-4}=-0.01 {I2} (2001Vo24)                         
  35CL cG $pol=+0.66 {I18} (1967Wa22)                                            
- 35CL CG $BM1W=1.0, BE2W=0.7 {I6} (1967Wa22)                                    
+ 35CL cG $BM1W=1.0, BE2W=0.7 {I6} (1967Wa22)                                    
  35CL  G 3663.3      3.0     15                                                 
  35CL cG $A{-2}=+0.17 {I1}, A{-4}=-0.005 {I13} (1967Ta08)                       
  35CL  G 3777.6      2       1                                                  
@@ -1200,13 +1200,13 @@
  35CL  G 6616.9      27      3 E1+M2     +0.06   3                              
  35CL cG M,MR$from 1967Wa22                                                     
  35CL cG $pol=+0.17 {I45} (1967Wa22)                                            
- 35CL CG $BE1W=5.5E-3, BM2W=1.0 {I5} (1967Wa22)                                 
+ 35CL cG $BE1W=5.5E-3, BM2W=1.0 {I5} (1967Wa22)                                 
  35CL cG $A{-2}=-0.46 {I4}, A{-4}=+0.04 {I6} (1967Ta08)                         
  35CL  G 7836.1      27      3 E1+M2     +0.02   3                              
  35CL cG M$from 1967Wa22                                                        
  35CL cG MR$from 1967Wa22. Other: 0.00 {I3} from 2001Vo24                       
  35CL cG $pol=-1.1 {I8} (1967Wa22)                                              
- 35CL CG $BE1W=2.1E-3, BM2W=0.1 {I1} (1967Wa22)                                 
+ 35CL cG $BE1W=2.1E-3, BM2W=0.1 {I1} (1967Wa22)                                 
  35CL cG $A{-2}=+0.41 {I3}, A{-4}=+0.012 {I40} (1967Ta08)                       
  35CL cG $A{-2}=+0.40 {I2}, A{-4}=+0.01 {I4} (2001Vo24)                         
  35CL  L 7839.7     5                                           1511.8    9     
@@ -1592,10 +1592,10 @@
  35CL cG RI$ 20 for unplaced |g-rays (1973Fa07)                                 
  35CL  L 8251       5                                           1936      5     
  35CL cL E$from 1967Da12                                                        
- 35CL  G 4137.0      4                                                      B   
- 35CL  G 5247.8      6                                                      B   
- 35CL  G 7030.8      82                                                     B   
- 35CL  G 8250.0      8                                                      B   
+ 35CL  G 4137.0      4                                                      D   
+ 35CL  G 5247.8      6                                                      D   
+ 35CL  G 7030.8      82                                                     D   
+ 35CL  G 8250.0      8                                                      D   
  35CL  L 8269.0     4 5/2                                       1954.5    5     
  35CL cL $|w|g=1.8 eV {I5} (1972Hu10)                                           
  35CL cL $|w|g=(1.9) eV (1973Fa07)                                              
@@ -1727,47 +1727,47 @@
  35CL  L 8323.2     5                                           2010.3    13    
  35CL cL $|w|g=1.0 eV {I3} (1972Hu10)                                           
  35CL cL $|w|g=1.6 eV {I5} (1976Me12)                                           
- 35CL  G 4209.2      1                                                      B   
- 35CL  G 5320.0      3                                                      B   
- 35CL  G 5677.0      4                                                      B   
- 35CL  G 6559.4      2       LT                                             B   
- 35CL  G 7103.0      8                                                      B   
- 35CL  G 8322.1      82                                                     B   
+ 35CL  G 4209.2      1                                                      D   
+ 35CL  G 5320.0      3                                                      D   
+ 35CL  G 5677.0      4                                                      D   
+ 35CL  G 6559.4      2       LT                                             D   
+ 35CL  G 7103.0      8                                                      D   
+ 35CL  G 8322.1      82                                                     D   
  35CL  L 8346      5                                            2034      5     
  35CL  L 8381.8    6 5/2+                                       2070.7    6     
  35CL cL J$from 2001Vo24                                                        
  35CL cL $|w|g=6.1 eV {I12} (1976Sp08)                                          
  35CL cL $|w|g=6.1 eV {I6} (2001Vo24)                                           
  35CL cL $|G{-|g}=1.02eV {I10} (2001Vo24)                                       
- 35CL  G 3612.8      1       LT                                             C   
- 35CL  G 3757.2      1       LT                                             C   
- 35CL  G 4267.8      8.0     8                                              C   
- 35CL  G 4438.6      8.0     8                                              C   
+ 35CL  G 3612.8      1       LT                                             V   
+ 35CL  G 3757.2      1       LT                                             V   
+ 35CL  G 4267.8      8.0     8                                              V   
+ 35CL  G 4438.6      8.0     8                                              V   
  35CL  G 4463.0      24      3 D+Q       +0.15   3                              
  35CL cG MR$from 2001Vo24                                                       
  35CL cG $A{-2}=+0.25 {I3}, A{-4}=-0.04 {I2} (2001Vo24)                         
  35CL  G 5378.6      25      3 M1+E2     +0.02   3                              
  35CL cG MR$from 2001Vo24. 0.11 {I1} from 1967Ko20,1967Ko23.                    
  35CL cG $|w|g=4 eV, |G{-|g}(M1)=0.0459 eV, |G{-g}(E2)=0.0009 eV (1967Ko20)     
- 35CL CG $BM1W=0.014, BE2W=0.036 (1967Ko20,1967Ko23)                            
+ 35CL cG $BM1W=0.014, BE2W=0.036 (1967Ko20,1967Ko23)                            
  35CL cG $A{-2}=+0.60 {I7}, A{-4}=-0.02 {I7} (1967Ko20,1967Ko23)                
  35CL cG $A{-2}=+0.51 {I23}, A{-4}=-0.05 {I24} (2001Vo24)                       
  35CL  G 5687.4      1.0     5 M1+E2     -0.72   31                             
  35CL cG MR$from 1967Ko20,1967Ko23                                              
  35CL cG $|w|g=4 eV, |G{-|g}(M1)=0.039 eV, |G{-g}(E2)=0.0211 eV (1967Ko20)      
- 35CL CG $BM1W=0.011, BE2W=0.93 (1967Ko20,1967Ko23)                             
+ 35CL cG $BM1W=0.011, BE2W=0.93 (1967Ko20,1967Ko23)                             
  35CL cG $A{-2}=+0.22 {I9}, A{-4}=-0.02 {I11} (1967Ko20,1967Ko23)               
  35CL  G 5735.6      5       3                                                  
  35CL  G 6618.0      34      4 M1+E2     +0.06   3                              
  35CL cG MR$from 2001Vo24. 0.12 {I10} from 1967Ko20,1967Ko23                    
  35CL cG $|w|g=4 eV, |G{-|g}(M1)=0.216 eV, |G{-g}(E2)=0.0044 eV (1967Ko23)      
- 35CL CG $BM1W=0.034, BE2W=0.013 (1967Ko20,1967Ko23)                            
+ 35CL cG $BM1W=0.034, BE2W=0.013 (1967Ko20,1967Ko23)                            
  35CL cG $A{-2}=+0.79 {I15}, A{-4}=-0.08 {I15} (1967Ko20,1967Ko23)              
  35CL cG $A{-2}=+0.02 {I13}, A{-4}=-0.08 {I13} (2001Vo24)                       
  35CL  G 8380.7      3.0     15 M1+E2    1.65                                   
  35CL cG MR$from 1967Ko20,1967Ko23                                              
- 35CL cG $|w|g=4 eV, |G{-|g}(M1)=0.0146  eV, |G{-g}(E2)=0.054 eV (1967Ko23)     
- 35CL CG $BM1W=0.0012, BE2W=0.044 (1967Ko20,1967Ko23)                           
+ 35CL cG $|w|g=4 eV, |G{-|g}(M1)=0.0146 eV, |G{-g}(E2)=0.054 eV (1967Ko23)      
+ 35CL cG $BM1W=0.0012, BE2W=0.044 (1967Ko20,1967Ko23)                           
  35CL cG $A{-2}=-0.83 {I22}, A{-4}=+0.72 {I33} (1967Ko20,1967Ko23)              
  35CL  L 8387.8    5                                            2076.9    5     
  35CL cL $|w|g=0.4 eV {I2} (1976Sp08)                                           
@@ -1797,15 +1797,15 @@
  35CL cL $|w|g=3.6 eV {I11} (1972Hu10)                                          
  35CL  L 8416.7     4                                           2106.6    5     
  35CL cL $|w|g=0.5 eV {I3} (1976Sp08)                                           
- 35CL  G 3406.4      5                                                      B   
- 35CL  G 4243.0      11                                                     B   
- 35CL  G 4473.5      3                                                      B   
- 35CL  G 5413.5      7                                                      B   
- 35CL  G 5722.3                                                             B   
- 35CL  G 5770.5      8                                                      B   
- 35CL  G 6652.9      22                                                     B   
- 35CL  G 7196.5      9                                                      B   
- 35CL  G 8415.6      35                                                     B   
+ 35CL  G 3406.4      5                                                      D   
+ 35CL  G 4243.0      11                                                     D   
+ 35CL  G 4473.5      3                                                      D   
+ 35CL  G 5413.5      7                                                      D   
+ 35CL  G 5722.3                                                             D   
+ 35CL  G 5770.5      8                                                      D   
+ 35CL  G 6652.9      22                                                     D   
+ 35CL  G 7196.5      9                                                      D   
+ 35CL  G 8415.6      35                                                     D   
  35CL  L 8430.3    5                                            2120.6    5     
  35CL cL $|w|g=1.0 eV {I2} (1976Sp08)                                           
  35CL  L 8434.7    5                                            2125.2    5     
@@ -1916,13 +1916,13 @@
  35CL cL $|w|g=2.4 eV {I5} (1976Sp08)                                           
  35CL  G 3732.2      1.6     8                                                  
  35CL  G 4554.1      5.4     27                                                 
- 35CL  G 4670.4      4       LT                                             B   
+ 35CL  G 4670.4      4       LT                                             D   
  35CL  G 4694.8      7.2     36                                                 
  35CL  G 5610.4      2.5     13                                                 
  35CL  G 5919.2      4.3     22                                                 
  35CL  G 5967.4      23      6                                                  
- 35CL  G 6849.7      9       LT                                             B   
- 35CL  G 7393.4      2       LT                                             B   
+ 35CL  G 6849.7      9       LT                                             D   
+ 35CL  G 7393.4      2       LT                                             D   
  35CL  G 8612.5      56      6                                                  
  35CL  L 8618.1     4(3/2+,5/2+)                                2314.0    5     
  35CL cL J$from 1970Ko33                                                        
@@ -1959,22 +1959,22 @@
  35CL  G 4686.9      9.6     48                                                 
  35CL  G 5466.6      3.5     18                                                 
  35CL  G 5626.9      1.4     7                                                  
- 35CL  G 5935.7      15      LT                                             Y   
+ 35CL  G 5935.7      15      LT                                             K   
  35CL  G 5983.9      2.6     13                                                 
  35CL  G 6866.2      47      12                                                 
  35CL cG MR$-0.011 {I3} from 1976Sp09                                           
  35CL cG $A{-2}=+0.10 {I33}, A{-4}=-0.65 {I46} (1970Ko33)                       
  35CL cG $A{-2}=-0.387 {I7}, A{-4}=+0.012 {I8} (1976Sp09)                       
- 35CL  G 7409.9      5       LT                                             Y   
+ 35CL  G 7409.9      5       LT                                             K   
  35CL  G 8629.0      0.5     3                                                  
  35CL cG $A{-2}=+0.398 {I46}, A{-4}=+0.019 {I78} (1970Ko33)                     
  35CL  L 8639        5/2                                                        
  35CL cL E$from 1970Ko33                                                        
- 35CL  G 4689      7 23                                                     Y   
- 35CL  G 5473      8 20                                                     Y   
- 35CL  G 5630      9 6                                                      Y   
- 35CL  G 5941      10 13                                                    Y   
- 35CL  G 6874      11 38                                                    Y   
+ 35CL  G 4689      7 23                                                     K   
+ 35CL  G 5473      8 20                                                     K   
+ 35CL  G 5630      9 6                                                      K   
+ 35CL  G 5941      10 13                                                    K   
+ 35CL  G 6874      11 38                                                    K   
  35CL cG $A{-2}=-0.52 {I12}, A{-4}=-0.29 {I19} (1970Ko33)                       
  35CL  L 8641.4     3(3/2,5/2)                                  2338.0    5     
  35CL cL $|w|g=0.9 eV {I5} (1976Sp08)                                           
@@ -2100,11 +2100,11 @@
  35CL cL J$from 1981Bi05                                                        
  35CL cL $|w|g=1.5 eV {I3} (1976Sp08)                                           
  35CL cL $|G{-p}=4 eV {I1} (1981Bi05)                                           
- 35CL  G 3673.8                                                             Z   
- 35CL  G 3955.9                                                             Z   
+ 35CL  G 3673.8                                                             B   
+ 35CL  G 3955.9                                                             B   
  35CL  G 4068.2      8       4                                                  
- 35CL  G 4489.2                                                             Z   
- 35CL  G 4777.7                                                             Z   
+ 35CL  G 4489.2                                                             B   
+ 35CL  G 4777.7                                                             B   
  35CL  G 5673.8      29      7                                                  
  35CL  G 7073.4      63      6                                                  
  35CL  L 8856.0     4                                           2559.0    5     
@@ -2146,7 +2146,7 @@
  35CL cL $|w|g=1.2 eV {I2} (1976Sp08)                                           
  35CL cL $|w|g=1.2 eV {I4} (2001Vo24)                                           
  35CL cL $|G{-|g}=0.20 eV {I6} (2001Vo24)                                       
- 35CL  G 3293.3      1       LT                                             C   
+ 35CL  G 3293.3      1       LT                                             V   
  35CL  G 3307.0      1.6     8                                                  
  35CL  G 4779.1      8.5     43                                                 
  35CL  G 4949.9      3.9     20                                                 
@@ -2171,7 +2171,7 @@
  35CL cL $|w|g=1.5 eV {I3} (1976Sp08)                                           
  35CL cL $|w|g=1.5 eV {I3} (2001Vo24)                                           
  35CL cL $|G{-|g}=0.25 eV {I5} (2001Vo24)                                       
- 35CL  G 3252.1      4       LT                                             C   
+ 35CL  G 3252.1      4       LT                                             V   
  35CL  G 3261.6      3.7     19                                                 
  35CL  G 3306.9      2.2     11                                                 
  35CL  G 3320.6      4                                                          
@@ -2239,27 +2239,27 @@
  35CL cL $|w|g=16.0 eV {I32} (1976Sp08)                                         
  35CL cL $|w|g=16.3 eV {I4} (1996Ka21)                                          
  35CL cL $|w|g=16.0 eV {I3} (2001Vo24)                                          
- 35CL cL $|G=65 eV {I20}, |G{-p}=62 eV {I20},  |G{-|g}=2.3 eV {I4}, |w|g=13.4 eV
- 35CL2cL  {I22} (1976Sp09)                                                      
+ 35CL cL $|G=65 eV {I20}, |G{-p}=62 eV {I20}, |G{-|g}=2.3 eV {I4}, |w|g=13.4 eV 
+ 35CL2cL {I22} (1976Sp09)                                                       
  35CL cL $|G{-p}=59 eV {I7} (1981Bi05)                                          
  35CL cL $|G{-|g}=2.7 eV {I5} (2001Vo24)                                        
- 35CL  G 3357.3      1                                                      C   
- 35CL  G 4199.6      1                                                      C   
- 35CL  G 4241.7                                                             Z   
- 35CL  G 4312.0                                                             Z   
- 35CL  G 4456.4                                                             Z   
- 35CL  G 4902.8      2                                                      C   
- 35CL  G 4907.3      2                                                      C   
- 35CL  G 5162.2      9         D(+Q)     -0.002  9                          C   
+ 35CL  G 3357.3      1                                                      V   
+ 35CL  G 4199.6      1                                                      V   
+ 35CL  G 4241.7                                                             B   
+ 35CL  G 4312.0                                                             B   
+ 35CL  G 4456.4                                                             B   
+ 35CL  G 4902.8      2                                                      V   
+ 35CL  G 4907.3      2                                                      V   
+ 35CL  G 5162.2      9         D(+Q)     -0.002  9                          V   
  35CL cG MR$from 1976Sp09                                                       
  35CL cG $A{-2}=-0.43 {I3}, A{-4}=+0.05 {I3} (1976Sp09)                         
- 35CL  G 5917.5      6                                                      C   
- 35CL  G 6386.6      2                                                      C   
- 35CL  G 6434.8      1                                                      C   
- 35CL  G 7317.1      16        (D+Q)     +0.11   2                          C   
+ 35CL  G 5917.5      6                                                      V   
+ 35CL  G 6386.6      2                                                      V   
+ 35CL  G 6434.8      1                                                      V   
+ 35CL  G 7317.1      16        (D+Q)     +0.11   2                          V   
  35CL cG MR$from 1976Sp09                                                       
  35CL cG $A{-2}=+0.555 {I14}, A{-4}=+0.03 {I2} (1976Sp09)                       
- 35CL  G 9079.8      60        (D+Q)     +0.089  9                          C   
+ 35CL  G 9079.8      60        (D+Q)     +0.089  9                          V   
  35CL cG MR$from 1976Sp09                                                       
  35CL cG $A{-2}=-0.243 {I11}, A{-4}=+0.05 {I2} (1976Sp09)                       
  35CL  L 9088.4    5                                            2798.3    5     
@@ -2303,5 +2303,4 @@
  35CL  L 9188.8    5                                            2901.6    5     
  35CL cL $|w|g=0.9 eV {I5} (1976Sp08)                                           
  35CL  L 9194.1    5                                            2907.1    5     
- 35CL cL $|w|g=4.0 eV {I8}                                                      
- 
+ 35CL cL $|w|g=4.0 eV {I8} (1976Sp08)                                           

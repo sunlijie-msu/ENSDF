@@ -11,7 +11,7 @@ Maintain the precise uncertainty notation as per ENSDF standards, ensuring that 
 
 ---
 
-## 🚨 CRITICAL ENSDF ORDERING REQUIREMENTS 🚨
+## CRITICAL ENSDF ORDERING REQUIREMENTS
 
 When extracting data for ENSDF files, ensure:
 
