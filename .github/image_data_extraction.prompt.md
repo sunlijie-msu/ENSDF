@@ -84,29 +84,35 @@ When level energies are not explicitly provided:
 
 ## 🔬 ENSDF UNCERTAINTY NOTATION STANDARDS
 
+**⚠️ CRITICAL ENSDF FORMAT CONSTRAINT:**
+**ENSDF uses fixed 80-column format with 2-column uncertainty fields. Maximum 2-digit uncertainties ONLY!**
+**3-digit uncertainties would corrupt adjacent fields and break ENSDF structure!**
+
 Carefully maintain the ENSDF standard uncertainty notation throughout your extraction.
 
 The uncertainty digits align precisely with the rightmost decimal digit of the stated value per ENSDF standards:
 
-### ENSDF Uncertainty Notation (Clear Examples)
+### ENSDF Uncertainty Notation (CRITICAL ENSDF-COMPLIANT EXAMPLES)
 
-| Decimal Digits   | ENSDF Notation | Meaning (explicit ± form) |
-|------------------|----------------|---------------------------|
-| **No decimal:**  | 1234(5)        | 1234 ± 5                  |
-|                  | 1234(56)       | 1234 ± 56                 |
-|                  | 1234(567)      | 1234 ± 567                |
-| **1 decimal:**   | 12.3(4)        | 12.3 ± 0.4                |
-|                  | 12.3(45)       | 12.3 ± 4.5                |
-|                  | 12.3(456)      | 12.3 ± 45.6               |
-| **2 decimals:**  | 1.23(4)        | 1.23 ± 0.04               |
-|                  | 1.23(45)       | 1.23 ± 0.45               |
-|                  | 1.23(456)      | 1.23 ± 4.56               |
-| **3 decimals:**  | 0.123(4)       | 0.123 ± 0.004             |
-|                  | 0.123(45)      | 0.123 ± 0.045             |
-|                  | 0.123(456)     | 0.123 ± 0.456             |
-| **4 decimals:**  | 0.0123(4)      | 0.0123 ± 0.0004           |
-|                  | 0.0123(45)     | 0.0123 ± 0.0045           |
-|                  | 0.0123(456)    | 0.0123 ± 0.0456           |
+**IMPORTANT: ENSDF uses 2-column uncertainty fields (1-2 digits maximum) due to fixed 80-column format constraints!**
+
+| Decimal Digits   | ENSDF Notation | Meaning (explicit ± form) | ENSDF Field Usage |
+|------------------|----------------|---------------------------|-------------------|
+| **No decimal:**  | 1234(5)        | 1234 ± 5                  | Standard 2-column uncertainty |
+|                  | 1234(56)       | 1234 ± 56                 | Standard 2-column uncertainty |
+| **1 decimal:**   | 12.3(4)        | 12.3 ± 0.4                | Standard 2-column uncertainty |
+|                  | 12.3(45)       | 12.3 ± 4.5                | Standard 2-column uncertainty |
+| **2 decimals:**  | 1.23(4)        | 1.23 ± 0.04               | Standard 2-column uncertainty |
+|                  | 1.23(45)       | 1.23 ± 0.45               | Standard 2-column uncertainty |
+| **3 decimals:**  | 0.123(4)       | 0.123 ± 0.004             | Standard 2-column uncertainty |
+|                  | 0.123(45)      | 0.123 ± 0.045             | Standard 2-column uncertainty |
+| **4 decimals:**  | 0.0123(4)      | 0.0123 ± 0.0004           | Standard 2-column uncertainty |
+|                  | 0.0123(45)     | 0.0123 ± 0.0045           | Standard 2-column uncertainty |
+
+**CRITICAL CONSTRAINTS:**
+- **Maximum 2-digit uncertainties** for standard ENSDF uncertainty fields (DE, DRI, DCC, DTI, DS)
+- **3-digit uncertainties FORBIDDEN** - would corrupt adjacent ENSDF fields in 80-column format
+- **Only asymmetric uncertainties** in 6-character fields (DT, DMR) can exceed 2 digits using +X-Y format
 
 ---
 
