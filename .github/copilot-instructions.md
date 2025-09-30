@@ -240,7 +240,7 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 **COMPREHENSIVE VALIDATION IN THIS SCRIPT INCLUDES:**
 - L-field positioning (first L value must start at column 56)
 - S-field positioning (LEFT-JUSTIFIED; columns 65–74)
-- Comment flag positioning (column 77; flags like K/M/S/C must be here, not at 80)
+- Comment flag positioning (column 77; any single alphabetic character A-Z, a-z is valid, occasionally special symbols *, &, @ for G-records)
 - Data record line-length compliance (exactly 80 chars for L/G/E/B/DP)
 - Field boundary diagnostics with an 80-column ruler printout
 

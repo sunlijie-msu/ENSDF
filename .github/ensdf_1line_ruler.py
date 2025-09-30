@@ -49,9 +49,9 @@ def print_ruler(line):
                 if col_77 == '?':
                     errors.append(f'Col 77: "?" forbidden in G-record (use col 80 for ?)')
             else:
-                # L, E, B records: C, K, M, S, space allowed
-                if col_77 not in [' ', 'C', 'K', 'M', 'S']:
-                    errors.append(f'Col 77: "{col_77}" invalid {record_type}-record flag')
+                # L, E, B records: any alphabetic characters (A-Z, a-z), space allowed
+                if col_77 != ' ' and not col_77.isalpha():
+                    errors.append(f'Col 77: "{col_77}" invalid {record_type}-record flag (use A-Z,a-z)')
         
         # Column 80 validation 
         if len(line) > 79:
