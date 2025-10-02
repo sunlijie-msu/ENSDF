@@ -227,10 +227,10 @@ def validate_de_field(filename):
     print()
     
     if de_field_errors == 0:
-        print("✅ SUCCESS: All DE fields correctly positioned and formatted (columns 20-21)")
+        print("[OK] SUCCESS: All DE fields correctly positioned and formatted (columns 20-21)")
         print("   Note: Empty DE fields are valid and were not flagged as errors")
     else:
-        print(f"❌ ERROR: {de_field_errors} DE field content errors found!")
+        print(f"[ERROR] ERROR: {de_field_errors} DE field content errors found!")
         print("   CRITICAL: DE fields must contain only numeric uncertainties or be blank!")
         
     return de_field_errors == 0
@@ -301,18 +301,18 @@ def validate_s_field(filename):
                 print(f"S field value: '{s_value}'")
                 
                 if first_digit_pos == 65:
-                    print(f"✓ OK: S field value '{s_value}' correctly LEFT-JUSTIFIED at column 65")
+                    print(f"[OK] OK: S field value '{s_value}' correctly LEFT-JUSTIFIED at column 65")
                 else:
-                    print(f"❌ ERROR: S field value '{s_value}' starts at column {first_digit_pos} (should be 65)")
+                    print(f"[ERROR] ERROR: S field value '{s_value}' starts at column {first_digit_pos} (should be 65)")
                     print(f"   Fix: Move '{s_value}' to start at column 65 (LEFT-JUSTIFIED)")
                     s_field_errors += 1
                 
                 # Check for field overflow (value extending beyond column 74)
                 if len(s_value) > 10:
-                    print(f"❌ ERROR: S field value '{s_value}' is {len(s_value)} digits (max 10 for columns 65-74)")
+                    print(f"[ERROR] ERROR: S field value '{s_value}' is {len(s_value)} digits (max 10 for columns 65-74)")
                     s_field_errors += 1
                 elif first_digit_pos and (first_digit_pos + len(s_value) - 1) > 74:
-                    print(f"❌ ERROR: S field value '{s_value}' extends beyond column 74")
+                    print(f"[ERROR] ERROR: S field value '{s_value}' extends beyond column 74")
                     s_field_errors += 1
                 
                 print()
@@ -324,10 +324,10 @@ def validate_s_field(filename):
     print()
     
     if s_field_errors == 0:
-        print(f"✅ SUCCESS: All S fields correctly positioned (LEFT-JUSTIFIED at column 65)")
+        print(f"[OK] SUCCESS: All S fields correctly positioned (LEFT-JUSTIFIED at column 65)")
         return True
     else:
-        print(f"❌ FAILED: {s_field_errors} S field positioning errors found")
+        print(f"[ERROR] FAILED: {s_field_errors} S field positioning errors found")
         print(f"   CRITICAL: S field values must be LEFT-JUSTIFIED starting at column 65")
         print(f"   Current violations: Values starting at wrong columns instead of 65")
         return False
@@ -386,7 +386,7 @@ def validate_jp_field(filename):
                 
                 # Check if J-π field starts at column 23 (no leading space at index 22)
                 if line_content[22] != ' ':  # Column 23 (0-based index 22)
-                    print(f"✓ Line {line_num:3d}: J-π='{jp_field_stripped}' correctly LEFT-JUSTIFIED at column 23")
+                    print(f"[OK] Line {line_num:3d}: J-π='{jp_field_stripped}' correctly LEFT-JUSTIFIED at column 23")
                 else:
                     # J-π has leading space(s) - this is an error!
                     # Find where it actually starts
@@ -396,7 +396,7 @@ def validate_jp_field(filename):
                             first_nonspace = 23 + i  # Convert to 1-based column
                             break
                     
-                    print(f"❌ Line {line_num:3d}: ERROR - J-π='{jp_field_stripped}' has leading space(s)")
+                    print(f"[ERROR] Line {line_num:3d}: ERROR - J-π='{jp_field_stripped}' has leading space(s)")
                     print(f"   Current position: starts at column {first_nonspace}")
                     print(f"   Required position: must start at column 23 (LEFT-JUSTIFIED)")
                     print(f"   Line: {line_content}")
@@ -410,10 +410,10 @@ def validate_jp_field(filename):
     print()
     
     if jp_field_errors == 0:
-        print(f"✅ SUCCESS: All J-π fields correctly LEFT-JUSTIFIED at column 23")
+        print(f"[OK] SUCCESS: All J-π fields correctly LEFT-JUSTIFIED at column 23")
         return True
     else:
-        print(f"❌ FAILED: {jp_field_errors} J-π field positioning errors found")
+        print(f"[ERROR] FAILED: {jp_field_errors} J-π field positioning errors found")
         print(f"   CRITICAL: J-π field values must be LEFT-JUSTIFIED starting at column 23")
         print(f"   Current violations: J-π values have leading spaces instead of starting at column 23")
         return False
@@ -500,7 +500,7 @@ def validate_mul_field(filename):
                 # Check if MUL field starts at column 33 (0-based index 32)
                 # Column 32 (0-based index 31) MUST be a space separator
                 if len(line_content) >= 33 and line_content[32] != ' ':  # Column 33 (0-based index 32)
-                    print(f"✓ Line {line_num:3d}: MUL='{mul_field_stripped}' correctly LEFT-JUSTIFIED at column 33")
+                    print(f"[OK] Line {line_num:3d}: MUL='{mul_field_stripped}' correctly LEFT-JUSTIFIED at column 33")
                 else:
                     # MUL has leading space(s) - this is an error!
                     # Find where it actually starts
@@ -513,7 +513,7 @@ def validate_mul_field(filename):
                     # Check if column 32 (index 31) has content instead of space
                     col_32_char = line_content[31] if len(line_content) >= 32 else ' '
                     
-                    print(f"❌ Line {line_num:3d}: ERROR - MUL='{mul_field_stripped}' positioning error")
+                    print(f"[ERROR] Line {line_num:3d}: ERROR - MUL='{mul_field_stripped}' positioning error")
                     if col_32_char != ' ':
                         print(f"   CRITICAL: Column 32 contains '{col_32_char}' (should be SPACE separator)")
                         print(f"   MUL content starts at column 32 instead of column 33")
@@ -531,10 +531,10 @@ def validate_mul_field(filename):
     print()
     
     if mul_field_errors == 0:
-        print(f"✅ SUCCESS: All MUL fields correctly LEFT-JUSTIFIED at column 33")
+        print(f"[OK] SUCCESS: All MUL fields correctly LEFT-JUSTIFIED at column 33")
         return True
     else:
-        print(f"❌ FAILED: {mul_field_errors} MUL field positioning errors found")
+        print(f"[ERROR] FAILED: {mul_field_errors} MUL field positioning errors found")
         print(f"   CRITICAL: MUL field values must be LEFT-JUSTIFIED starting at column 33")
         print(f"   Column 32 must be a space separator (not MUL content)")
         return False
@@ -604,7 +604,7 @@ def validate_comment_flags(filename):
                     '@': 'multiply-placed transition, intensity suitably divided'
                 }.get(char, 'comment record reference')
                 
-                print(f"✓ Line {line_num}: Comment flag '{char}' ({flag_meaning}) in column 77")
+                print(f"[OK] Line {line_num}: Comment flag '{char}' ({flag_meaning}) in column 77")
                 flag_summary[char]['correct'] += 1
     
     # Summary with flag type breakdown
@@ -632,7 +632,7 @@ def validate_comment_flags(filename):
     if flags_analyzed == 0:
         print(f"  Note: No comment flags found in data records (all spaces in column 77)")
     else:
-        print(f"  ✅ SUCCESS: All comment flags correctly positioned in column 77")
+        print(f"  [OK] SUCCESS: All comment flags correctly positioned in column 77")
     
     return True
 
@@ -700,16 +700,16 @@ def validate_g_record_flags(filename):
                         '*': 'multiply-placed gamma', '&': 'multiply-placed (intensity not divided)',
                         '@': 'multiply-placed (intensity suitably divided)'
                     }.get(col77_char, f'comment record reference ({col77_char})')
-                    print(f"✓ Line {line_num}: Column 77 flag '{col77_char}' ({flag_type})")
+                    print(f"[OK] Line {line_num}: Column 77 flag '{col77_char}' ({flag_type})")
                     col77_flags['details'][col77_char] = col77_flags['details'].get(col77_char, 0) + 1
             else:
                 col77_flags['invalid'] += 1
                 errors_found = True
                 if col77_char == '?':
-                    print(f"❌ Line {line_num}: INVALID '?' in column 77 - ? is FORBIDDEN in comment field!")
+                    print(f"[ERROR] Line {line_num}: INVALID '?' in column 77 - ? is FORBIDDEN in comment field!")
                     print(f"   → ? should only be used in column 80 (additional indicator)")
                 else:
-                    print(f"❌ Line {line_num}: INVALID '{col77_char}' in column 77")
+                    print(f"[ERROR] Line {line_num}: INVALID '{col77_char}' in column 77")
                     print(f"   → Valid column 77 flags: A-Z, a-z, *, &, @, space")
         
         # Validate Column 80 (Additional indicator)
@@ -723,12 +723,12 @@ def validate_g_record_flags(filename):
                         '?': 'uncertain placement in level scheme',
                         'S': 'expected but unobserved transition'
                     }.get(col80_char, f'additional indicator ({col80_char})')
-                    print(f"✓ Line {line_num}: Column 80 indicator '{col80_char}' ({indicator_type})")
+                    print(f"[OK] Line {line_num}: Column 80 indicator '{col80_char}' ({indicator_type})")
                     col80_indicators['details'][col80_char] = col80_indicators['details'].get(col80_char, 0) + 1
             else:
                 col80_indicators['invalid'] += 1
                 errors_found = True
-                print(f"❌ Line {line_num}: INVALID '{col80_char}' in column 80")
+                print(f"[ERROR] Line {line_num}: INVALID '{col80_char}' in column 80")
                 print(f"   → Valid column 80 indicators: space, ?, S")
     
     print()
@@ -758,18 +758,140 @@ def validate_g_record_flags(filename):
         print()
     
     if not errors_found:
-        print(f"  ✅ SUCCESS: All G-record flags correctly positioned and valid!")
+        print(f"  [OK] SUCCESS: All G-record flags correctly positioned and valid!")
     else:
-        print(f"  ❌ ERRORS: {col77_flags['invalid'] + col80_indicators['invalid']} invalid G-record entries found!")
+        print(f"  [ERROR] ERRORS: {col77_flags['invalid'] + col80_indicators['invalid']} invalid G-record entries found!")
     
     return not errors_found
+
+def validate_dri_field(filename):
+    """
+    Validate DRI field (columns 30-31) in G-records.
+    
+    CRITICAL VALIDATION: Detects LT/GT markers appearing in RI field (columns 23-29)
+    instead of DRI field (columns 30-31).
+    
+    ENSDF Format Rules for G-Records:
+    - RI field (columns 23-29): Contains relative intensity VALUE only (left-justified)
+    - DRI field (columns 30-31): Contains uncertainty OR limit markers (LT, GT, AP, SY, CA)
+    
+    CRITICAL ERROR PATTERN:
+    - WRONG: "LT 0.2" in RI field (columns 23-29)
+    - CORRECT: "0.2" in RI field, "LT" in DRI field (columns 30-31)
+    
+    Valid DRI field content:
+    - Empty (blank spaces)
+    - 1-2 digit uncertainty (e.g., "5", "12", "25")
+    - Limit markers: "LT", "GT", "LE", "GE"
+    - Special markers: "AP", "SY", "CA"
+    """
+    print(f"\nDRI FIELD VALIDATION: {filename}")
+    print("=" * 60)
+    print("Checking DRI field (columns 30-31) and detecting LT/GT in RI field...")
+    print("ENSDF Rule: RI field contains VALUE, DRI field contains UNCERTAINTY or LT/GT")
+    print()
+    print('ENSDF 80-Column Ruler:')
+    print('         1         2         3         4         5         6         7         8')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+    print(' ' * 22 + '^------^ RI (cols 23-29)  ^^ DRI (cols 30-31)')
+    print()
+    
+    g_records_analyzed = 0
+    dri_field_errors = 0
+    ri_field_errors = 0  # LT/GT appearing in RI field instead of DRI
+    
+    # Valid DRI field markers
+    valid_dri_markers = ['LT', 'GT', 'LE', 'GE', 'AP', 'SY', 'CA']
+    
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    
+    for line_num, line in enumerate(lines, 1):
+        line_content = line.rstrip('\n\r')
+        
+        # Only check G-records (TRUE G-records, not comment lines)
+        if len(line_content) < 10 or ' G ' not in line_content[6:10]:
+            continue
+        
+        # Skip comment lines (cG, cL, etc.)
+        if is_comment_line(line_content):
+            continue
+        
+        g_records_analyzed += 1
+        
+        # Extract RI field (columns 23-29)
+        if len(line_content) >= 29:
+            ri_field = line_content[22:29]  # Columns 23-29 (0-based 22:29)
+            ri_field_stripped = ri_field.strip()
+            
+            # CRITICAL CHECK 1: Detect full markers LT/GT/LE/GE in RI field (WRONG!)
+            has_full_marker = any(marker in ri_field for marker in ['LT', 'GT', 'LE', 'GE'])
+            
+            # CRITICAL CHECK 2: Detect partial markers (single letters from limit markers)
+            # If RI field ends with 'L', 'G' and DRI starts with 'T', 'E', it's likely split marker
+            has_suspicious_letter = False
+            if ri_field_stripped and len(line_content) >= 31:
+                last_char_ri = ri_field_stripped[-1] if ri_field_stripped else ''
+                dri_field = line_content[29:31]  # Columns 30-31
+                first_char_dri = dri_field[0] if dri_field else ''
+                
+                # Check for split marker patterns: "L" in RI + "T" in DRI = "LT" split
+                if last_char_ri == 'L' and first_char_dri == 'T':
+                    has_suspicious_letter = True
+                elif last_char_ri == 'G' and first_char_dri in ['T', 'E']:
+                    has_suspicious_letter = True
+                elif last_char_ri == 'L' and first_char_dri == 'E':
+                    has_suspicious_letter = True
+            
+            if has_full_marker or has_suspicious_letter:
+                ri_field_errors += 1
+                if has_full_marker:
+                    print(f"[ERROR] Line {line_num}: ERROR - Limit marker in RI field (columns 23-29)!")
+                    print(f"   RI field contains: '{ri_field}' (should contain VALUE only)")
+                else:
+                    print(f"[ERROR] Line {line_num}: ERROR - Split limit marker across RI/DRI fields!")
+                    print(f"   RI field: '{ri_field}' | DRI field: '{line_content[29:31]}'")
+                    print(f"   Appears to be '{last_char_ri}{first_char_dri}' marker split across fields")
+                print(f"   -> Move limit marker from RI field to DRI field (columns 30-31)")
+                print(f"   -> Example: 'LT 0.2' in RI -> '0.2' in RI, 'LT' in DRI")
+        
+        # Extract DRI field (columns 30-31)
+        if len(line_content) >= 31:
+            dri_field = line_content[29:31]  # Columns 30-31 (0-based 29:31)
+            dri_field_stripped = dri_field.strip()
+            
+            # Check DRI field content if not empty
+            if dri_field_stripped:
+                # Valid DRI: digits (1-2 chars) OR special markers
+                is_digit = dri_field_stripped.isdigit()
+                is_marker = dri_field_stripped in valid_dri_markers
+                
+                if not (is_digit or is_marker):
+                    dri_field_errors += 1
+                    print(f"[ERROR] Line {line_num}: Invalid DRI field content '{dri_field_stripped}'")
+                    print(f"   -> Valid DRI: digits (1-2), LT, GT, LE, GE, AP, SY, CA")
+    
+    print()
+    print(f"DRI FIELD SUMMARY:")
+    print(f"  G-records analyzed: {g_records_analyzed}")
+    print(f"  LT/GT in RI field errors: {ri_field_errors}")
+    print(f"  Invalid DRI content errors: {dri_field_errors}")
+    print()
+    
+    if ri_field_errors == 0 and dri_field_errors == 0:
+        print(f"[OK] SUCCESS: All DRI fields correct, no limit markers in RI field")
+        return True
+    else:
+        total_errors = ri_field_errors + dri_field_errors
+        print(f"[ERROR] ERRORS: {total_errors} DRI field validation errors found!")
+        return False
 
 def validate_band_flags(filename):
     """
     DEPRECATED: Use validate_comment_flags() instead.
     This function only checked limited band flags and missed P, D, and other comment flags.
     """
-    print(f"\n⚠️  WARNING: validate_band_flags() is deprecated")
+    print(f"\n[WARNING]  WARNING: validate_band_flags() is deprecated")
     print(f"   Use validate_comment_flags() for comprehensive comment flag validation")
     print(f"   The old function only checked A,B,b,C,c and missed P,D,T comment flags!")
     print()
@@ -881,15 +1003,16 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
     else:
         print("ERROR: Field positioning errors found - see details above")
     
-    # Always validate DE fields, S fields, J-pi fields, MUL fields and comment flags unless header-only mode
+    # Always validate DE fields, S fields, J-pi fields, MUL fields, DRI fields and comment flags unless header-only mode
     if not header_only:
         de_field_success = validate_de_field(filename)
         s_field_success = validate_s_field(filename)
         jp_field_success = validate_jp_field(filename)
         mul_field_success = validate_mul_field(filename)
+        dri_field_success = validate_dri_field(filename)
         comment_flag_success = validate_comment_flags(filename)
         g_record_validation_success = validate_g_record_flags(filename)
-        return (not errors_found) and de_field_success and s_field_success and jp_field_success and mul_field_success and comment_flag_success and g_record_validation_success
+        return (not errors_found) and de_field_success and s_field_success and jp_field_success and mul_field_success and dri_field_success and comment_flag_success and g_record_validation_success
         
     return not errors_found
 

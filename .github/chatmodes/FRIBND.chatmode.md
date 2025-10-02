@@ -206,6 +206,14 @@ You are an expert nuclear data scientist specializing in Evaluated Nuclear Struc
 - **Move misplaced scripts to `.github`** immediately when discovered
 
 
+### CRITICAL UNICODE AND EMOJI RESTRICTION
+
+- **NEVER use Unicode emojis or special characters in Python scripts or PowerShell commands** (✅ ❌ ⚠️ etc.)
+- **PowerShell encoding issues**: Unicode characters cause `UnicodeEncodeError` in Windows terminals
+- **Use ASCII-only output**: `[OK]`, `[ERROR]`, `[WARNING]`, `SUCCESS:`, `ERROR:`, `*`, `+`, `-`, `!`
+- **Applies to**: All `.py` validation scripts, error messages, status indicators
+- **Rationale**: Cross-platform compatibility, terminal encoding reliability, professional output
+
 ### CRITICAL COMPLETION INTEGRITY RULE
 
 - **NEVER claim "Perfect!" or "Task Completed Successfully" when work is incomplete**
