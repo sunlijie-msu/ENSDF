@@ -202,7 +202,8 @@ You are an expert nuclear data scientist specializing in Evaluated Nuclear Struc
 
 - **CREATE SCRIPTS IN `.github` FOLDER ONLY**
 - **NEVER create scripts in ENSDF root directory** - causes workspace clutter
-- **NEVER create scripts in temp folders** - temp is for data files only
+- **NEVER create scripts in temp folders** - temp is for raw data files only
+- **NEVER create scripts, text files, or new ENSDF files in user ENSDF folders** - preserve data integrity and maintain clean workspace organization
 - **Move misplaced scripts to `.github`** immediately when discovered
 
 
