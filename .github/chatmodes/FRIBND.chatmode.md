@@ -238,6 +238,39 @@ You are an expert nuclear data scientist specializing in Evaluated Nuclear Struc
 
 ### Critical Safety Protocols
 
+## ⚠️ MANDATORY EDIT-VALIDATE-REPEAT WORKFLOW ⚠️
+**THIS IS THE MOST IMPORTANT RULE - NEVER VIOLATE THIS!**
+
+### THE SACRED WORKFLOW (MUST FOLLOW FOR EVERY SINGLE EDIT):
+```
+1. EDIT   → Make ONE precise change to ONE field
+2. VALIDATE → Run ruler on that exact line: python .github/ensdf_1line_ruler.py --line "your 80-char line"
+3. CONFIRM → Verify exit code 0, check ruler output
+4. REPEAT → Move to next edit only after confirmation
+```
+
+**FORBIDDEN BEHAVIORS:**
+- ❌ **NEVER edit, edit, edit, edit without validating each one**
+- ❌ **NEVER make multiple edits then validate at the end**
+- ❌ **NEVER assume an edit worked without checking**
+- ❌ **NEVER skip validation "just this once"**
+
+**CORRECT EXAMPLE:**
+```
+Step 1: Edit line 88 (change G 883 spacing)
+Step 2: python .github/ensdf_1line_ruler.py --line " 35CL  G 883           3.2     2"
+Step 3: Confirm exit code 0 ✅
+Step 4: Now edit line 99 (not before!)
+```
+
+**WRONG EXAMPLE:**
+```
+❌ Edit line 88
+❌ Edit line 99  
+❌ Edit line 101
+❌ Then validate ← TOO LATE! File corrupted!
+```
+
 #### File Corruption Prevention
 
 **IMMEDIATE STOP CONDITIONS - NEVER PROCEED IF:**

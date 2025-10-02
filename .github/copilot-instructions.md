@@ -661,6 +661,47 @@ Example:
 | BLANK | 78-79 | ✓ | Must be blank |
 | Q | 80 | | **Additional indicator** (space, ?, S) - See G-Record Indicator Rules below |
 
+** CRITICAL MULTIPOLARITY FIELD NOTATION **
+
+### Multipolarity Field (M Field - Columns 33-41)
+**ENSDF Shorthand Notation**: The multipolarity field uses standard abbreviations for electromagnetic transition types:
+
+**Single Multipolarities:**
+- **D**: Dipole transition (electric E1 or magnetic M1)
+- **Q**: Quadrupole transition (electric E2 or magnetic M2)
+- **O**: Octupole transition (electric E3 or magnetic M3)
+- **E1, E2, E3, ...**: Electric multipole transitions (full notation)
+- **M1, M2, M3, ...**: Magnetic multipole transitions (full notation)
+
+**Mixed Multipolarities (combinations):**
+- **D+Q**: Mixed dipole and quadrupole (e.g., M1+E2)
+- **D(+Q)**: Predominantly dipole with small quadrupole admixture
+- **(D+Q)**: Tentative or uncertain mixed transition assignment
+- **Q+O**: Mixed quadrupole and octupole
+- **M1+E2**: Explicit mixed magnetic dipole and electric quadrupole
+- **M2+E3**: Explicit mixed magnetic quadrupole and electric octupole
+
+**Critical Formatting Rules:**
+- **LEFT-JUSTIFIED** in columns 33-41
+- **Shorthand (D, Q, O) is valid ENSDF notation** - do NOT auto replace with full notation unless specified
+- **Parentheses indicate uncertainty** in multipolarity assignment
+- **Plus sign (+)** indicates mixed transitions with comparable amplitudes
+- **Full notation (E1, M1, E2, etc.) provides explicit multipole type specification**
+
+**Examples:**
+```
+Column:  33333333334
+         3456789012
+Format:  
+Q                   → Pure quadrupole (shorthand)
+D                   → Pure dipole (shorthand)
+E2                  → Electric quadrupole (full notation)
+M1+E2               → Mixed magnetic dipole + electric quadrupole
+D+Q                 → Mixed dipole + quadrupole (shorthand)
+(D+Q)               → Tentative mixed dipole + quadrupole
+D(+Q)               → Predominantly dipole with small quadrupole component
+```
+
 ** CRITICAL MULTIPOLE MIXING RATIO DOCUMENTATION **
 
 ### Multipole Mixing Ratios (MR Field - Columns 42-49)
@@ -983,15 +1024,58 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
 
 
 ### ENSDF File Editing Safety Protocol
-**BEFORE ANY EDIT - MANDATORY CHECKS:**
+
+## ⚠️ MANDATORY EDIT-VALIDATE-REPEAT WORKFLOW ⚠️
+**THIS IS THE MOST IMPORTANT RULE - NEVER VIOLATE THIS!**
+
+### THE SACRED WORKFLOW (MUST FOLLOW FOR EVERY SINGLE EDIT):
+```
+1. EDIT   → Make ONE precise change to ONE field
+2. VALIDATE → Run ruler on that exact line: python .github/ensdf_1line_ruler.py --line "your 80-char line"
+3. CONFIRM → Verify exit code 0, check ruler output
+4. REPEAT → Move to next edit only after confirmation
+```
+
+**FORBIDDEN BEHAVIORS:**
+- ❌ **NEVER edit, edit, edit, edit without validating each one**
+- ❌ **NEVER make multiple edits then validate at the end**
+- ❌ **NEVER assume an edit worked without checking**
+- ❌ **NEVER skip validation "just this once"**
+
+**CORRECT EXAMPLE:**
+```
+Step 1: Edit line 88 (change G 883 spacing)
+Step 2: python .github/ensdf_1line_ruler.py --line " 35CL  G 883           3.2     2"
+Step 3: Confirm exit code 0 ✅
+Step 4: Now edit line 99 (not before!)
+```
+
+**WRONG EXAMPLE (WHAT YOU JUST DID):**
+```
+❌ Edit line 88
+❌ Edit line 99  
+❌ Edit line 101
+❌ Edit line 111
+❌ Edit line 149
+❌ Edit line 157
+❌ Then validate ← TOO LATE! File corrupted!
+```
+
+**BEFORE ANY EDIT - MANDATORY PRE-CHECKS:**
 1. **MANDATORY VALIDATION FIRST**: Run `python .github/column_calibrate.py "filename"` - NEVER skip this!
 2. **MANDATORY ORDERING CHECK**: Run `python .github/check_gamma_ordering.py "filename"` - NEVER skip this!
 3. **MANUAL VERIFICATION REQUIRED**: column_calibrate.py does NOT check DP, B, or E record formatting
 4. **Read current file state** - Never assume file structure
 5. **Identify target line uniquely** - Must have 5+ lines of unique context
-5. **Single field modification only** - Never edit multiple fields at once
-6. **Validate column positions** - Check field boundaries before editing
-7. **POST-EDIT VALIDATION**: Re-run both validation tools and manually verify DP, B, and E records after any changes
+6. **Single field modification only** - Never edit multiple fields at once
+7. **Validate column positions** - Check field boundaries before editing
+
+**AFTER EVERY SINGLE EDIT - MANDATORY VALIDATION:**
+- **Run ruler IMMEDIATELY**: `python .github/ensdf_1line_ruler.py --line "your edited line"`
+- **Check exit code**: Must be 0, not 1
+- **Read ruler output**: Verify field positions are correct
+- **If validation fails**: STOP, restore file, analyze what went wrong
+- **Only after validation passes**: Move to next edit
 
 **CRITICAL**: If either validation tool shows issues, STOP and fix them before proceeding with edits!
 

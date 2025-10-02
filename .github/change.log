@@ -1,5 +1,111 @@
 # Change Log for ENSDF Edits
 
+## 2025-10-01: CRITICAL ENHANCEMENT - Mandatory Edit-Validate-Repeat Workflow Documentation
+
+**Summary**: Added prominent, unmissable documentation of the MANDATORY EDIT-VALIDATE-REPEAT workflow rule to prevent file corruption from blind batch editing. This is the most important safety protocol for ENSDF file editing and must NEVER be violated.
+
+### Critical Safety Protocol Documentation
+**Files Modified**:
+1. **`.github/copilot-instructions.md`** (line ~1026):
+   - **Added prominent section**: "⚠️ MANDATORY EDIT-VALIDATE-REPEAT WORKFLOW ⚠️"
+   - **Clear workflow steps**: EDIT → VALIDATE → CONFIRM → REPEAT
+   - **Forbidden behaviors**: Listed with ❌ markers (edit without validation, batch edits, assumptions)
+   - **Correct example**: Step-by-step proper workflow with line-by-line validation
+   - **Wrong example**: Explicit anti-pattern showing what NOT to do (batch edits then validate)
+   - **Position**: Immediately before "ENSDF File Editing Safety Protocol" section for maximum visibility
+
+2. **`.github/chatmodes/FRIBND.chatmode.md`** (line ~235):
+   - **Added prominent section**: "⚠️ MANDATORY EDIT-VALIDATE-REPEAT WORKFLOW ⚠️"
+   - **Identical content**: Ensures consistency across all documentation files
+   - **Position**: At top of "Critical Safety Protocols" section for immediate visibility
+
+### The Sacred Workflow (Non-Negotiable)
+```
+1. EDIT   → Make ONE precise change to ONE field
+2. VALIDATE → Run ruler: python .github/ensdf_1line_ruler.py --line "your 80-char line"
+3. CONFIRM → Verify exit code 0, check ruler output
+4. REPEAT → Move to next edit only after confirmation
+```
+
+### Forbidden Behaviors (Explicitly Documented)
+- ❌ **NEVER edit, edit, edit, edit without validating each one**
+- ❌ **NEVER make multiple edits then validate at the end**
+- ❌ **NEVER assume an edit worked without checking**
+- ❌ **NEVER skip validation "just this once"**
+
+### Why This Was Critical
+**Problem**: AI agent violated workflow by making 6 consecutive edits without validation, resulting in:
+- Line 149: 82 chars (added too many spaces) ❌
+- Line 157: 82 chars (added too many spaces) ❌
+- Line 199: 82 chars (added too many spaces) ❌
+- File corruption requiring git restore
+
+**Root Cause**: Workflow rule existed but was not prominent enough to prevent violation
+
+**Solution**: Made rule unmissable with:
+- Large warning emoji (⚠️) in section header
+- "MOST IMPORTANT RULE" designation
+- "NEVER VIOLATE THIS" explicit prohibition
+- Concrete examples of correct vs wrong workflow
+- Positioned at top of safety protocols section
+
+### Expected Impact
+**Prevents future file corruption**:
+- Forces validation after EVERY single edit
+- Catches errors immediately before propagation
+- Ensures exit code 0 before proceeding
+- Maintains file integrity throughout editing process
+- Eliminates batch editing anti-pattern
+
+**Improves AI agent reliability**:
+- Clear, unambiguous workflow steps
+- Explicit anti-patterns to avoid
+- Concrete examples for pattern matching
+- Prominent positioning ensures visibility
+- Consistent messaging across all documentation
+
+**Files changed**: 2 modified (copilot-instructions.md, FRIBND.chatmode.md)
+**Context**: Response to user correction after AI agent violated workflow and corrupted file with batch edits. This enhancement ensures rule will never be forgotten.
+
+## 2025-10-01: Enhanced copilot-instructions.md with Comprehensive Multipolarity Field Documentation
+
+**Summary**: Added critical ENSDF multipolarity field notation documentation to clarify that D, Q, O and their combinations (D+Q, D(+Q), (D+Q), etc.) are valid shorthand notations in the M field (columns 33-41) and should NOT be modified or replaced with full notation unless explicitly specified.
+
+### Documentation Enhancement
+**File: `.github/copilot-instructions.md`**:
+- **Added new section**: "CRITICAL MULTIPOLARITY FIELD NOTATION" immediately after G-Record format table (after line 663)
+- **Documented shorthand notation**: D (dipole), Q (quadrupole), O (octupole) as valid ENSDF abbreviations
+- **Documented full notation**: E1, E2, E3, M1, M2, M3 for explicit multipole type specification
+- **Documented mixed multipolarities**: D+Q, D(+Q), (D+Q), Q+O, M1+E2 with detailed explanations
+- **Added formatting rules**: LEFT-JUSTIFIED in columns 33-41, shorthand is valid and should not be replaced
+- **Added visual examples**: Column ruler showing proper positioning and formatting for Q, D, E2, M1+E2, D+Q, (D+Q), D(+Q)
+
+### Critical Clarifications Added
+**Shorthand Notation Rules**:
+- **D = Dipole transition** (electric E1 or magnetic M1) - valid ENSDF notation
+- **Q = Quadrupole transition** (electric E2 or magnetic M2) - valid ENSDF notation
+- **O = Octupole transition** (electric E3 or magnetic M3) - valid ENSDF notation
+- **DO NOT replace** shorthand with full notation unless explicitly specified by user
+- **Parentheses indicate uncertainty** in multipolarity assignment, not a formatting error
+- **Plus sign (+)** indicates mixed transitions with comparable amplitudes
+
+### Practical Impact
+**Prevents common AI agent errors**:
+- **Incorrect conversion**: No longer converting Q → E2 or D → M1 inappropriately
+- **Field confusion**: Clear distinction between M field (columns 33-41) and Q field (column 80)
+- **Format preservation**: Maintains original ENSDF shorthand notation as intended by evaluators
+- **Scientific accuracy**: Preserves distinction between shorthand assignments and fully characterized transitions
+
+### Integration with Existing Documentation
+**Positioned strategically**:
+- **After G-Record format table**: Natural flow from field definitions to detailed notation rules
+- **Before Mixing Ratio section**: Logical progression from multipolarity to mixing ratios
+- **Consistent formatting**: Matches existing critical sections with "** CRITICAL ... **" header style
+- **Cross-referenced**: Complements DCO ratio rules and polarization analysis sections later in document
+
+**Files changed**: 1 modified (copilot-instructions.md), 40 new lines added
+**Context**: Response to user correction about Q and D being valid multipolarity indicators, not column 80 flags or placeholders requiring conversion to E2/M1
+
 ## 2025-01-XX: Added comprehensive nuclear spectroscopy data to 1974LO17.ens
 
 **Summary**: Extended 35Cl nuclear structure evaluation with three new energy levels and six gamma transitions including complete spectroscopic information from angular distribution and polarization measurements.

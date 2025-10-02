@@ -332,21 +332,234 @@ def validate_s_field(filename):
         print(f"   Current violations: Values starting at wrong columns instead of 65")
         return False
 
+def validate_jp_field(filename):
+    """
+    Validate J-π (spin-parity) field positioning in L-records.
+    
+    ENSDF Format Rule: J-π field MUST be LEFT-JUSTIFIED starting at column 23.
+    
+    The J-π field occupies columns 23-39 and contains spin-parity assignments like:
+    - 3/2+ (firm assignment)
+    - (3/2+) (tentative assignment)
+    - 3/2+,5/2+ (multiple possibilities)
+    - 7/2(+) (firm spin, tentative parity)
+    - (5/2,7/2)+ (multiple tentative spins, firm parity)
+    
+    CRITICAL: J-π values must START at column 23 with NO leading spaces!
+    """
+    print(f"\nJ-π FIELD VALIDATION: {filename}")
+    print("=" * 60)
+    print("Checking J-π field positioning in columns 23-39...")
+    print("ENSDF Rule: J-π field values must be LEFT-JUSTIFIED starting at column 23")
+    print()
+    print('ENSDF 80-Column Ruler:')
+    print('         1         2         3         4         5         6         7         8')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+    print(' ' * 22 + '^----------------^ J-π field (columns 23-39)')
+    print()
+    
+    jp_fields_analyzed = 0
+    jp_field_errors = 0
+    
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    
+    for line_num, line in enumerate(lines, 1):
+        line_content = line.rstrip('\n\r')
+        
+        # Only check L-records for J-π field validation
+        if len(line_content) < 10 or ' L ' not in line_content[6:10]:
+            continue
+        
+        # Skip comment lines
+        if is_comment_line(line_content):
+            continue
+            
+        # Extract J-π field area (columns 23-39)
+        if len(line_content) >= 23:
+            jp_field_area = line_content[22:39] if len(line_content) > 22 else line_content[22:]
+            
+            # Check if J-π field contains content (not just spaces)
+            jp_field_stripped = jp_field_area.strip()
+            if jp_field_stripped:
+                jp_fields_analyzed += 1
+                
+                # Check if J-π field starts at column 23 (no leading space at index 22)
+                if line_content[22] != ' ':  # Column 23 (0-based index 22)
+                    print(f"✓ Line {line_num:3d}: J-π='{jp_field_stripped}' correctly LEFT-JUSTIFIED at column 23")
+                else:
+                    # J-π has leading space(s) - this is an error!
+                    # Find where it actually starts
+                    first_nonspace = None
+                    for i, char in enumerate(jp_field_area):
+                        if char != ' ':
+                            first_nonspace = 23 + i  # Convert to 1-based column
+                            break
+                    
+                    print(f"❌ Line {line_num:3d}: ERROR - J-π='{jp_field_stripped}' has leading space(s)")
+                    print(f"   Current position: starts at column {first_nonspace}")
+                    print(f"   Required position: must start at column 23 (LEFT-JUSTIFIED)")
+                    print(f"   Line: {line_content}")
+                    jp_field_errors += 1
+                    print()
+    
+    # Summary
+    print(f"J-π FIELD SUMMARY:")
+    print(f"  Total J-π fields analyzed: {jp_fields_analyzed}")
+    print(f"  J-π field positioning errors: {jp_field_errors}")
+    print()
+    
+    if jp_field_errors == 0:
+        print(f"✅ SUCCESS: All J-π fields correctly LEFT-JUSTIFIED at column 23")
+        return True
+    else:
+        print(f"❌ FAILED: {jp_field_errors} J-π field positioning errors found")
+        print(f"   CRITICAL: J-π field values must be LEFT-JUSTIFIED starting at column 23")
+        print(f"   Current violations: J-π values have leading spaces instead of starting at column 23")
+        return False
+
+def is_comment_line(line):
+    """
+    Check if a line is a comment line (cL, cG, cE, etc.).
+    Comment lines have lowercase 'c' followed by record type letter.
+    
+    Examples of comment lines:
+    - ' 35CL  cL ...' (spaces, then 'c' at column 7, 'L' at column 8)
+    - ' 35CL  cG ...' (spaces, then 'c' at column 7, 'G' at column 8)
+    - ' 35CL2 cG ...' (digit at column 6, 'c' at column 7, 'G' at column 8)
+    - ' 35CL5cG ...' (digit at column 6, 'c' at column 7, 'G' at column 8)
+    
+    The pattern is: lowercase 'c' at column 7 (0-based index 6) followed by
+    a record type letter (L, G, E, B, etc.) at column 8 (0-based index 7).
+    
+    These lines should NEVER be checked for column 77 flags!
+    """
+    if len(line) < 8:
+        return False
+    
+    # Check for 'c' at column 7 (0-based index 6) followed by letter at column 8
+    if line[6] == 'c' and line[7].isalpha() and line[7].isupper():
+        return True
+        
+    return False
+
+def validate_mul_field(filename):
+    """
+    Validate MUL (Multipolarity) field positioning in G-records.
+    
+    ENSDF Format Rule: MUL field MUST be LEFT-JUSTIFIED starting at column 33.
+    
+    The MUL field occupies columns 33-41 and contains multipolarity assignments like:
+    - E2 (pure electric quadrupole)
+    - M1+E2 (mixed magnetic dipole + electric quadrupole)
+    - D (dipole shorthand)
+    - D(+Q) (predominantly dipole with small quadrupole)
+    - M1(+E2) (predominantly M1 with small E2)
+    
+    CRITICAL: MUL values must START at column 33 with NO leading spaces!
+    Column 32 MUST be a space (separator between DRI and MUL fields)!
+    """
+    print(f"\nMUL FIELD VALIDATION: {filename}")
+    print("=" * 60)
+    print("Checking MUL (Multipolarity) field positioning in columns 33-41...")
+    print("ENSDF Rule: MUL field values must be LEFT-JUSTIFIED starting at column 33")
+    print("           Column 32 MUST be a space separator")
+    print()
+    print('ENSDF 80-Column Ruler:')
+    print('         1         2         3         4         5         6         7         8')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+    print(' ' * 31 + '^--------^ MUL field (columns 33-41)')
+    print()
+    
+    mul_fields_analyzed = 0
+    mul_field_errors = 0
+    
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    
+    for line_num, line in enumerate(lines, 1):
+        line_content = line.rstrip('\n\r')
+        
+        # Only check G-records for MUL field validation
+        if len(line_content) < 10 or ' G ' not in line_content[6:10]:
+            continue
+        
+        # Skip comment lines
+        if is_comment_line(line_content):
+            continue
+            
+        # Extract MUL field area (columns 33-41, 0-based indices 32-40)
+        if len(line_content) >= 33:
+            mul_field_area = line_content[32:41] if len(line_content) > 32 else line_content[32:]
+            
+            # Check if MUL field contains content (not just spaces)
+            mul_field_stripped = mul_field_area.strip()
+            if mul_field_stripped:
+                mul_fields_analyzed += 1
+                
+                # Check if MUL field starts at column 33 (0-based index 32)
+                # Column 32 (0-based index 31) MUST be a space separator
+                if len(line_content) >= 33 and line_content[32] != ' ':  # Column 33 (0-based index 32)
+                    print(f"✓ Line {line_num:3d}: MUL='{mul_field_stripped}' correctly LEFT-JUSTIFIED at column 33")
+                else:
+                    # MUL has leading space(s) - this is an error!
+                    # Find where it actually starts
+                    first_nonspace = None
+                    for i, char in enumerate(mul_field_area):
+                        if char != ' ':
+                            first_nonspace = 33 + i  # Convert to 1-based column
+                            break
+                    
+                    # Check if column 32 (index 31) has content instead of space
+                    col_32_char = line_content[31] if len(line_content) >= 32 else ' '
+                    
+                    print(f"❌ Line {line_num:3d}: ERROR - MUL='{mul_field_stripped}' positioning error")
+                    if col_32_char != ' ':
+                        print(f"   CRITICAL: Column 32 contains '{col_32_char}' (should be SPACE separator)")
+                        print(f"   MUL content starts at column 32 instead of column 33")
+                    if first_nonspace and first_nonspace > 33:
+                        print(f"   Current position: MUL starts at column {first_nonspace} (has leading spaces)")
+                    print(f"   Required position: MUL must start at column 33 (LEFT-JUSTIFIED)")
+                    print(f"   Line: {line_content}")
+                    mul_field_errors += 1
+                    print()
+    
+    # Summary
+    print(f"MUL FIELD SUMMARY:")
+    print(f"  Total MUL fields analyzed: {mul_fields_analyzed}")
+    print(f"  MUL field positioning errors: {mul_field_errors}")
+    print()
+    
+    if mul_field_errors == 0:
+        print(f"✅ SUCCESS: All MUL fields correctly LEFT-JUSTIFIED at column 33")
+        return True
+    else:
+        print(f"❌ FAILED: {mul_field_errors} MUL field positioning errors found")
+        print(f"   CRITICAL: MUL field values must be LEFT-JUSTIFIED starting at column 33")
+        print(f"   Column 32 must be a space separator (not MUL content)")
+        return False
+
 def validate_comment_flags(filename):
     """
-    Validate ALL comment flags are positioned in column 77.
+    Validate comment flags in column 77 (C field) for DATA RECORDS ONLY.
+    
+    CRITICAL FIX: This function now properly excludes comment lines (cL, cG, cE, etc.)
+    from validation. Only true data records (L, G, E, B, DP) are checked.
     
     ENSDF Format Rule: Comment flags (C field) must be in column 77 exactly.
-    Common comment flags include:
-    - A-Z, a-z: Any single letter used to refer to a specific comment record (typically an explanation of data source from NSR keynumber references)
+    Common comment flags in DATA RECORDS include:
+    - A-Z, a-z: Any single letter used to refer to a specific comment record
     - * (asterisk): Denotes a multiply-placed gamma ray
     - & (ampersand): Denotes a multiply-placed transition with intensity not divided
     - @ (at symbol): Denotes a multiply-placed transition with intensity suitably divided
     - Space: No comment flag
+    
+    IMPORTANT: Comment lines themselves (35CL cG, 35CL2cG, etc.) are NOT checked!
     """
     print(f"\nCOMMENT FLAG VALIDATION: {filename}")
     print("=" * 60)
-    print("Checking comment flags in column 77 (C field)...")
+    print("Checking comment flags in column 77 (C field) for DATA RECORDS ONLY...")
+    print("Note: Comment lines (cL, cG, cE, etc.) are excluded from this check")
     print()
     print('ENSDF 80-Column Ruler:')
     print('         1         2         3         4         5         6         7         8')
@@ -363,65 +576,46 @@ def validate_comment_flags(filename):
     for line_num, line in enumerate(lines, 1):
         line_content = line.rstrip('\n\r')
         
+        # CRITICAL: Skip comment lines completely - they are NOT data records!
+        if is_comment_line(line_content):
+            continue
+        
         # Check if this is a data record line (L, G, E, B, DP records)
         if not is_data_record_line(line_content):
             continue
         
-        # Comment flags should ONLY be checked in column 77 (the C field)
-        # Skip lines that are clearly continuation comment lines (not data records)
+        # Now we know this is a true data record (not a comment line)
+        # Check column 77 for valid comment flags
         if len(line_content) >= 77:
             char = line_content[76]  # Column 77 (0-based index 76)
             
-            # Check if this is actually a comment flag vs. part of text
-            if char.isalpha() and not char.isspace():
-                # Additional validation: make sure this isn't part of a citation
-                # Look at surrounding context to distinguish real flags from citation text
-                context_around_77 = line_content[70:80] if len(line_content) >= 80 else line_content[70:]
+            # Only report non-space flags
+            if char != ' ':
+                flags_analyzed += 1
                 
-                # Skip if this appears to be part of a citation like "(2019Se09)"
-                is_citation = any(pattern in context_around_77 for pattern in [
-                    '2019Se09', '1973Go16', '2011Ch48', '1971Au07',  # Known citations
-                    '(20', '19', '(19',  # General citation patterns
-                ])
+                # Track flag types for summary
+                if char not in flag_summary:
+                    flag_summary[char] = {'correct': 0, 'incorrect': []}
                 
-                # Skip if surrounded by other letters (part of a word)
-                if len(line_content) > 77:
-                    char_after = line_content[77] if len(line_content) > 77 else ' '
-                    if char_after.isalpha():
-                        is_citation = True
+                # Interpret common flags according to ENSDF standards
+                flag_meaning = {
+                    '*': 'multiply-placed gamma ray',
+                    '&': 'multiply-placed transition, intensity not divided', 
+                    '@': 'multiply-placed transition, intensity suitably divided'
+                }.get(char, 'comment record reference')
                 
-                if len(line_content) > 75:
-                    char_before = line_content[75] if len(line_content) > 75 else ' '
-                    if char_before.isalpha():
-                        is_citation = True
-                
-                # Only process as comment flag if it's not part of a citation
-                if not is_citation:
-                    flags_analyzed += 1
-                    
-                    # Track flag types for summary
-                    if char not in flag_summary:
-                        flag_summary[char] = {'correct': 0, 'incorrect': []}
-                    
-                    # Interpret common flags according to ENSDF standards
-                    flag_meaning = {
-                        '*': 'multiply-placed gamma ray',
-                        '&': 'multiply-placed transition, intensity not divided', 
-                        '@': 'multiply-placed transition, intensity suitably divided'
-                    }.get(char, 'comment record reference')
-                    
-                    print(f"✓ Line {line_num}: Comment flag '{char}' ({flag_meaning}) correctly in column 77")
-                    flag_summary[char]['correct'] += 1
-                print()
+                print(f"✓ Line {line_num}: Comment flag '{char}' ({flag_meaning}) in column 77")
+                flag_summary[char]['correct'] += 1
     
-    
-    # Enhanced summary with flag type breakdown
+    # Summary with flag type breakdown
+    print()
     print(f"COMMENT FLAG SUMMARY:")
-    print(f"  Total comment flags analyzed: {flags_analyzed}")
+    print(f"  Total comment flags found in DATA RECORDS: {flags_analyzed}")
     print(f"  Flag types found: {', '.join(sorted(flag_summary.keys())) if flag_summary else 'None'}")
     print()
     
     if flag_summary:
+        print("  Column 77 flag usage in DATA RECORDS:")
         for flag_type in sorted(flag_summary.keys()):
             correct_count = flag_summary[flag_type]['correct']
             
@@ -432,16 +626,22 @@ def validate_comment_flags(filename):
                 '@': '(multiply-placed transition, intensity suitably divided)'
             }.get(flag_type, '(comment record reference)')
             
-            print(f"  Flag '{flag_type}' {flag_meaning}: {correct_count} total")
-            print(f"    ✓ Correct (column 77): {correct_count}")
-            print()
+            print(f"    '{flag_type}' {flag_meaning}: {correct_count}")
+        print()
     
-    print(f"  ✅ SUCCESS: All comment flags correctly positioned in column 77")
+    if flags_analyzed == 0:
+        print(f"  Note: No comment flags found in data records (all spaces in column 77)")
+    else:
+        print(f"  ✅ SUCCESS: All comment flags correctly positioned in column 77")
+    
     return True
 
 def validate_g_record_flags(filename):
     """
-    Validate G-record flags in columns 77 and 80.
+    Validate G-record flags in columns 77 and 80 for TRUE G-RECORDS ONLY.
+    
+    CRITICAL FIX: This function now properly excludes comment lines (cG, cL, etc.)
+    from validation. Only true G-record data lines are checked.
     
     ENSDF Format Rules for G-Records:
     - Column 77 (C field - Comment flags): A-Z, a-z, *, &, @, space
@@ -450,10 +650,12 @@ def validate_g_record_flags(filename):
     🚨 CRITICAL RULES 🚨:
     - ? is FORBIDDEN in column 77 (comment flag field)
     - ? is ALLOWED only in column 80 (additional indicator)
+    - Comment lines (cG, cL, etc.) are NOT G-records and should NOT be checked!
     """
     print(f"\nG-RECORD FLAG VALIDATION: {filename}")
     print("=" * 60)
-    print("Checking G-record flags in columns 77 and 80...")
+    print("Checking G-record flags in columns 77 and 80 for TRUE G-RECORDS ONLY...")
+    print("Note: Comment lines (cG, cL, etc.) are excluded from this check")
     print()
     print('ENSDF 80-Column Ruler:')
     print('         1         2         3         4         5         6         7         8')
@@ -477,7 +679,11 @@ def validate_g_record_flags(filename):
     for line_num, line in enumerate(lines, 1):
         line_content = line.rstrip('\n\r')
         
-        # Check if this is a G-record (gamma transition)
+        # CRITICAL: Skip comment lines completely - they are NOT data records!
+        if is_comment_line(line_content):
+            continue
+        
+        # Check if this is a G-record (gamma transition data record)
         if not (is_data_record_line(line_content) and len(line_content) >= 8 and line_content[7] == 'G'):
             continue
         
@@ -675,13 +881,15 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
     else:
         print("ERROR: Field positioning errors found - see details above")
     
-    # Always validate DE fields, S fields and comment flags unless header-only mode
+    # Always validate DE fields, S fields, J-pi fields, MUL fields and comment flags unless header-only mode
     if not header_only:
         de_field_success = validate_de_field(filename)
         s_field_success = validate_s_field(filename)
+        jp_field_success = validate_jp_field(filename)
+        mul_field_success = validate_mul_field(filename)
         comment_flag_success = validate_comment_flags(filename)
         g_record_validation_success = validate_g_record_flags(filename)
-        return (not errors_found) and de_field_success and s_field_success and comment_flag_success and g_record_validation_success
+        return (not errors_found) and de_field_success and s_field_success and jp_field_success and mul_field_success and comment_flag_success and g_record_validation_success
         
     return not errors_found
 
