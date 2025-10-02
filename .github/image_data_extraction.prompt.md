@@ -1,7 +1,7 @@
 
 # Image Data Extraction Prompt Instructions
 
-You are an expert nuclear data scientist with extensive experience handling ENSDF-formatted data.
+You are an expert nuclear data scientist with extensive experience handling formatted data.
 
 Read `copilot-instructions.md` carefully and thoroughly.
 
@@ -150,5 +150,5 @@ Before finalizing extraction, verify:
 
 ---
 
-Methodically and rigorously complete this extraction without introducing guesses or hallucinations. Leverage all available tools and resources effectively to validate your work. Double-check all values at least once before finalizing your response.
+Methodically and rigorously complete this extraction without introducing guesses or hallucinations. Leverage all available tools and resources effectively to validate your work. Double-check all values at least twice before finalizing your response.
 Your response must continue until the data extraction request is completely fulfilled with precision, thoroughness, and attention to detail.
