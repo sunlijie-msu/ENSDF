@@ -1,18 +1,57 @@
 ENSDF Spaghetti Code Cleanup Report
 ==================================================
+**Last Updated: October 2, 2025**
 
 ## PROBLEM IDENTIFIED:
-Found 95 redundant scripts
-causing massive code duplication and maintenance nightmares.
+Found 95+ redundant scripts causing massive code duplication and maintenance nightmares.
 
-## ESSENTIAL TOOLS PRESERVED:
-  ✓ check_gamma_ordering.py - Legacy ordering (use: ensdf_tools.py validate)
-  ✓ cleanup_spaghetti_scripts.py
-  ✓ column_calibrate.py - Legacy validation (use: ensdf_tools.py validate)
-  ✓ ens2pdf.py - PDF conversion (use: ensdf_tools.py convert)
-  ✓ ensdf_tools.py - NEW unified interface (replaces most legacy scripts)
+## ACTIVE TOOLS IN .github/ (4 CORE SCRIPTS ONLY):
+  ✓ column_calibrate.py - Comprehensive ENSDF field validation
+  ✓ ensdf_1line_ruler.py - 80-column format validator
+  ✓ check_gamma_ordering.py - Energy ordering validator
+  ✓ ens2pdf.py - PDF conversion tool
 
-## REDUNDANT SCRIPTS MOVED TO legacy/:
+## ARCHIVED TOOLS (ALL MOVED TO legacy/):
+Previously in .github/ but moved to legacy archive:
+
+### Cl-35 1976Me12 Dataset Scripts (cl35_1976me12_scripts/):
+  ❌ fix_1976ME12_formatting.py
+  ❌ generate_complete_resonances.py
+  ❌ insert_1976ME12_gammas.py
+  ❌ insert_resonances_1976ME12.py
+  ❌ replace_resonances_1976ME12_CORRECTED.py
+  ❌ update_main_file.py
+  ❌ integrate_resonances.py (Oct 2, 2025)
+  ❌ update_resonances_precise.py (Oct 2, 2025)
+  ❌ verify_complete_file.py (Oct 2, 2025)
+
+### Data Validation Scripts (validation_scripts/):
+  ❌ final_mr_validation.py
+  ❌ validate_1976sp09_data.py
+  ❌ validate_wgamma_data.py
+  ❌ verify_de_corrections.py
+  ❌ verify_sp09_energy_mapping.py
+
+### Format Check Scripts (check_scripts/):
+  ❌ analyze_limits.py
+  ❌ check_de_format.py
+  ❌ check_level_energies.py
+  ❌ check_missing_levels.py
+  ❌ check_mr_field_data.py
+  ❌ check_mul_positioning.py
+
+### Debug/Test Scripts (debug_test_scripts/):
+  ❌ debug_gamma_extraction.py
+  ❌ test_line.py
+  ❌ test_padding.py
+  ❌ test_trailing_spaces.py
+
+### Other Utilities:
+  ❌ extract_wgamma_levels.py (extract_scripts/)
+  ❌ fix_unicode.py (fix_scripts/)
+  ❌ cleanup_spaghetti_scripts.py (cleanup_scripts/)
+
+## REDUNDANT SCRIPTS (ORIGINAL SPAGHETTI - ALREADY IN legacy/):
 
 ### Verify Scripts:
   ❌ verify_49_gammas.py
@@ -130,16 +169,29 @@ causing massive code duplication and maintenance nightmares.
   ❌ step2_match_energies.py
 
 ## SUMMARY:
-  - Preserved: 5 essential scripts
-  - Moved to legacy: 95 redundant scripts
-  - Reorganization: Professional module structure in modules/
-  - New interface: ensdf_tools.py replaces 95 scattered scripts
+  - **ACTIVE in .github/: 4 core validation tools**
+  - **Archived in legacy/: 27 task-specific scripts** (organized by category)
+  - **Original spaghetti: 95 redundant scripts** (from previous cleanup)
+  - **Total archived: 122 scripts** properly categorized
 
-## FUTURE WORKFLOW:
-  All operations should use: python ensdf_tools.py [validate|format|analyze|convert]
-  Legacy scripts preserved for reference but discouraged for daily use.
+## WORKSPACE ORGANIZATION STATUS:
+  ✅ .github/ - CLEAN (4 core tools only)
+  ✅ temp/ - CLEAN (data files only, trash removed)
+  ✅ legacy/ - ORGANIZED (7 categories, 122 scripts)
 
-## ANTI-SPAGHETTI RULES NOW ENFORCED:
-  - NO new verify_*, check_*, analyze_*, compare_* scripts
-  - ALL functionality goes into modules/ with unified interface
-  - Professional code organization with separation of concerns
+## ANTI-SPAGHETTI RULES ENFORCED:
+  ❌ NO creating verify_*, check_*, analyze_*, compare_* scripts in .github/
+  ❌ NO creating test_*, debug_*, fix_* scripts in .github/
+  ❌ NO creating scripts in temp/ folders (temp is for DATA only)
+  ❌ NO creating scripts in ENSDF dataset folders
+  ✅ ONLY core validation tools in .github/
+  ✅ Task-specific scripts go to legacy/ immediately after use
+  ✅ Professional workspace organization maintained
+
+## APPROVED CORE TOOLS (.github/):
+  1. column_calibrate.py - Field position and line length validation
+  2. ensdf_1line_ruler.py - Single-line 80-column format checker
+  3. check_gamma_ordering.py - L-record and G-record energy ordering
+  4. ens2pdf.py - ENSDF to PDF conversion utility
+
+**All other scripts belong in legacy/ archive!**
