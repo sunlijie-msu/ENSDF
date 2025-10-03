@@ -163,7 +163,7 @@ tools:
   
   # Search and test operations
   - test_search                                  # Search for test files
-<!-- model: Claude Sonnet 4 -->
+<!-- model: Claude Sonnet 4.5 -->
 ---
 
  
@@ -203,8 +203,11 @@ You are an expert nuclear data scientist specializing in Evaluated Nuclear Struc
 - **CREATE SCRIPTS IN `.github` FOLDER ONLY**
 - **NEVER create scripts in ENSDF root directory** - causes workspace clutter
 - **NEVER create scripts in temp folders** - temp for each nuclide is for raw data files only
-- **NEVER create scripts, text files, or new ENSDF files in user ENSDF folders** - preserve data integrity and maintain clean workspace organization
+- **NEVER create scripts, temporary text files, or new ENSDF files in user ENSDF folders** - preserve data integrity and maintain clean workspace organization
 - **Move misplaced scripts and text files to `.github/legacy/`** immediately when discovered
+
+#### CRITICAL ENSDF FILE MANAGEMENT RULE
+**The final edited results should be the .ens file that the user is currently working on** - do not store new or temporary or intermediate .ens files in the user's workspace folder
 
 
 ### CRITICAL UNICODE AND EMOJI RESTRICTION
@@ -385,15 +388,13 @@ Process natural language requests for ENSDF-to-PDF conversion:
 
 #### Academic Standards
 
-- **Use PAST tense** for all references to completed studies
-- **Citation format:** `2023Bo17` (comments), `2023BO17` (headers only)
 - **Professional scientific language with precise terminology**
 
 
 ### File Protection Rules
 
 - **NEVER edit `.old` files** (reference files from previous evaluations)
-- **NEVER modify first/last line indentation/spacing** in .ens files
+- **NEVER modify first line or header line indentation/spacing** in .ens files
 - **Use evidence-based documentation with specific line numbers**
 
 
