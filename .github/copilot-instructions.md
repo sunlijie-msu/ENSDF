@@ -319,8 +319,8 @@ Execute comprehensive change detection and documentation:
 4. **For each modified file**: Run `git diff HEAD~1 "filename"` to see what changed
 5. **For moved files**: Use `git show HEAD~1:old/path/file` to examine previous content
 6. **ANALYZE ACTUAL CHANGES**: Never guess what changed - examine actual diffs
-7. **Update change.log** with evidence-based entries (never assume changes)
-8. **Document with**:
+
+7. **Document with**:
    - Line numbers where changes occurred
    - Before/after content for significant changes
    - Scientific/technical context and rationale
@@ -416,7 +416,6 @@ git restore "A35/" --recurse-submodules
 - **NEVER restore without `git status` first** - understand what you're discarding
 - **BACKUP uncertain changes** before restore operations
 - **VALIDATE post-restore** - run format checks on restored ENSDF files
-- **DOCUMENT restoration** in change.log with reason and scope
 - **USE SPECIFIC PATHS** - avoid blanket `git restore .` without careful consideration
 
 **Common Restore Patterns:**
@@ -429,7 +428,6 @@ git restore "A35/" --recurse-submodules
 1. **Before major edits**: `git status` → backup important files → proceed with edits
 2. **After failed edits**: `git restore "filename.ens"` → restart with clean file
 3. **Post-restore validation**: Always run column calibration and energy ordering checks
-4. **Documentation**: Update change.log explaining what was restored and why
 
 ### "Fix format!"
 Auto-convert text to proper ENSDF notation:
@@ -1126,8 +1124,7 @@ WRONG approach:
 - **In headers/Q-records**: All uppercase (`2023BO17`, `2021WA16`)
 
 ### Change Tracking
-- **Always** update `.github/change.log` after significant changes
-- **Never** create duplicate change.log files
+- Use git commit messages for comprehensive documentation of changes
 - Use evidence-based documentation with specific line numbers
 - **Never** document assumed changes - always verify with tools
 
@@ -1313,7 +1310,6 @@ git restore --staged --worktree "filename.ens" # Restore both staged and working
 3. **VERIFY**: `git diff "filename.ens"` to see what changes will be discarded
 4. **RESTORE**: Execute restore command
 5. **VALIDATE**: Run `git status` and ENSDF format validation tools
-6. **DOCUMENT**: Update change.log explaining restoration reason and scope
 
 
 #### Comprehensive Change Analysis
@@ -1391,7 +1387,6 @@ git restore "file.ens.backup"               # Restore from backup if needed
 - **NEVER use `git restore` without `git status` first** - understand what you're discarding
 - **ALWAYS backup uncertain changes** before restoration operations
 - **VALIDATE post-restore** - run ENSDF format checks on restored files
-- **DOCUMENT all restorations** in change.log with clear rationale
 - **USE SPECIFIC PATHS** - avoid blanket operations without careful consideration
 - **VERIFY COMPLETION** - confirm clean state with `git status` after operations
 
@@ -1400,7 +1395,7 @@ git restore "file.ens.backup"               # Restore from backup if needed
 1. **Pre-work (MANDATORY)**: `git status`, `git diff --name-only HEAD`
 2. **During work**: Track file modifications systematically
 3. **Post-work**: Use all detection tools on ALL files from git status
-4. **Documentation**: Evidence-based change.log entries with line numbers
+4. **Documentation**: Evidence-based git commit messages with line numbers
 
 **CRITICAL REMINDER**: Always start with `git status` - this shows the complete picture!
 
@@ -1410,11 +1405,11 @@ git restore "file.ens.backup"               # Restore from backup if needed
 - **Generated PDFs**: *.pdf files (expected to change when source changes)
 - **Processing artifacts**: temp/*.* files (expected, document but don't commit)
 - **Tools and scripts**: .github/*.* files (important for tooling changes)
-- **Documentation**: README.md, change.log, etc.
+- **Documentation**: README.md, markdown files, etc.
 
 
 ### Evidence-Based Documentation Rules
-Every change log entry should be backed by:
+Every git commit message should be backed by:
 - Specific file diffs from `git diff HEAD~1 "filename"`
 - Line numbers where changes occurred
 - Actual before/after content when significant
@@ -1433,7 +1428,6 @@ Every change log entry should be backed by:
 - [ ] **EVIDENCE-BASED ANALYSIS**: Document ONLY what git diff actually shows
 - [ ] **VERIFY EVERY CLAIM**: Each commit message statement backed by specific diff evidence
 - [ ] **NO ASSUMPTION DOCUMENTATION**: Never document changes you didn't explicitly see in diffs
-- [ ] Update `change.log` with evidence-based entries
 - [ ] Document file movements/reorganizations with full context
 - [ ] **ANTI-HALLUCINATION CHECK**: Comprehensive commit message with NO generic AI templates
 - [ ] Cross-check: did any ENSDF changes result in expected PDF updates?

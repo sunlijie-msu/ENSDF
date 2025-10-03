@@ -886,6 +886,157 @@ def validate_dri_field(filename):
         print(f"[ERROR] ERRORS: {total_errors} DRI field validation errors found!")
         return False
 
+def validate_gt_lt_placement(filename):
+    """
+    Validate GT/LT marker placement in ENSDF records (SEMANTIC VALIDATION).
+    
+    CRITICAL SEMANTIC CHECK: Ensures GT/LT limit markers are in UNCERTAINTY fields,
+    not embedded in VALUE fields.
+    
+    ENSDF Standard (instructions.md lines 969-976):
+    - Format: Value in main field, GT/LT marker LEFT-JUSTIFIED in uncertainty field
+    - Examples:
+      - <1.6 -> RI=1.6 (cols 23-29), DRI=LT (cols 30-31)
+      - >5.2 -> RI=5.2 (cols 23-29), DRI=GT (cols 30-31)
+    
+    For L-records (Half-life T field):
+    - T field (cols 40-49): Half-life value + units ONLY (e.g., "1000 FS")
+    - DT field (cols 50-55): Uncertainty OR GT/LT marker (e.g., "GT")
+    - WRONG: "GT 1000FS" in T field
+    - CORRECT: "1000 FS" in T, "GT" in DT
+    
+    For G-records (Relative intensity RI field):
+    - RI field (cols 23-29): Intensity value ONLY
+    - DRI field (cols 30-31): Uncertainty OR GT/LT marker
+    - WRONG: "GT 5.2" in RI field
+    - CORRECT: "5.2" in RI, "GT" in DRI
+    
+    Returns:
+        bool: True if all GT/LT markers correctly placed, False otherwise
+    """
+    import re
+    
+    print(f"\nGT/LT SEMANTIC VALIDATION: {filename}")
+    print("=" * 60)
+    print("Checking GT/LT marker placement in value vs. uncertainty fields...")
+    print("ENSDF Rule: Value in main field, GT/LT marker in uncertainty field")
+    print()
+    print('ENSDF 80-Column Ruler:')
+    print('         1         2         3         4         5         6         7         8')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+    print('                      ^------^ RI  ^^ DRI | T---------^ DT----^')
+    print('                      (23-29) (30-31)      (40-49)     (50-55)')
+    print()
+    
+    # Regex pattern to detect GT/LT markers (whole words)
+    GT_LT_PATTERN = r'\b(GT|LT|GE|LE)\b'
+    
+    l_records_checked = 0
+    g_records_checked = 0
+    l_field_errors = []
+    g_field_errors = []
+    
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    
+    for line_num, line in enumerate(lines, 1):
+        line_content = line.rstrip('\n\r')
+        
+        if len(line_content) < 10:
+            continue
+        
+        record_type = line_content[7] if len(line_content) > 7 else ''
+        
+        # Skip comment lines
+        if len(line_content) > 6 and line_content[6] in ['c', 'C', 'd', 'D', 't', 'T', 'p', 'P']:
+            continue
+        
+        # L-RECORD CHECK: T field (cols 40-49) should NOT contain GT/LT markers
+        if record_type == 'L':
+            l_records_checked += 1
+            
+            if len(line_content) >= 49:
+                T_field = line_content[39:49]  # Columns 40-49 (0-based 39:49)
+                T_field_stripped = T_field.strip()
+                
+                # Check if GT/LT marker is embedded in T field
+                if re.search(GT_LT_PATTERN, T_field_stripped):
+                    DT_field = line_content[49:55] if len(line_content) >= 55 else ''
+                    l_field_errors.append({
+                        'line': line_num,
+                        'T_field': T_field,
+                        'DT_field': DT_field,
+                        'full_line': line_content
+                    })
+        
+        # G-RECORD CHECK: RI field (cols 23-29) should NOT contain GT/LT markers
+        elif record_type == 'G':
+            g_records_checked += 1
+            
+            if len(line_content) >= 29:
+                RI_field = line_content[22:29]  # Columns 23-29 (0-based 22:29)
+                RI_field_stripped = RI_field.strip()
+                
+                # Check if GT/LT marker is embedded in RI field
+                if re.search(GT_LT_PATTERN, RI_field_stripped):
+                    DRI_field = line_content[29:31] if len(line_content) >= 31 else ''
+                    g_field_errors.append({
+                        'line': line_num,
+                        'RI_field': RI_field,
+                        'DRI_field': DRI_field,
+                        'full_line': line_content
+                    })
+    
+    # Report L-record errors
+    if l_field_errors:
+        print("[ERROR] L-RECORD GT/LT PLACEMENT ERRORS FOUND:")
+        print("=" * 60)
+        for error in l_field_errors:
+            print(f"Line {error['line']}: GT/LT marker in T field (cols 40-49) - MUST be in DT field (cols 50-55)")
+            print(f"  Current T field (40-49): '{error['T_field']}'")
+            print(f"  Current DT field (50-55): '{error['DT_field']}'")
+            print(f"  -> FIX: Separate value and marker")
+            print(f"     Example: 'GT 1000FS' -> T='1000 FS', DT='GT'")
+            print(f"  Full line: {error['full_line']}")
+            print()
+    
+    # Report G-record errors
+    if g_field_errors:
+        print("[ERROR] G-RECORD GT/LT PLACEMENT ERRORS FOUND:")
+        print("=" * 60)
+        for error in g_field_errors:
+            print(f"Line {error['line']}: GT/LT marker in RI field (cols 23-29) - MUST be in DRI field (cols 30-31)")
+            print(f"  Current RI field (23-29): '{error['RI_field']}'")
+            print(f"  Current DRI field (30-31): '{error['DRI_field']}'")
+            print(f"  -> FIX: Separate value and marker")
+            print(f"     Example: 'LT 0.2' -> RI='0.2', DRI='LT'")
+            print(f"  Full line: {error['full_line']}")
+            print()
+    
+    # Summary
+    print(f"GT/LT SEMANTIC VALIDATION SUMMARY:")
+    print(f"  L-records checked: {l_records_checked}")
+    print(f"  G-records checked: {g_records_checked}")
+    print(f"  L-record T field errors: {len(l_field_errors)}")
+    print(f"  G-record RI field errors: {len(g_field_errors)}")
+    print()
+    
+    total_errors = len(l_field_errors) + len(g_field_errors)
+    
+    if total_errors == 0:
+        print(f"[OK] SUCCESS: All GT/LT markers correctly placed in uncertainty fields!")
+        return True
+    else:
+        print(f"[ERROR] ERRORS: {total_errors} GT/LT placement errors found!")
+        print()
+        print("EXPLANATION: Why column_calibrate.py didn't catch these before:")
+        print("  - Tool validates POSITION (what columns) not SEMANTICS (what belongs where)")
+        print("  - 'GT 1000FS' in T field passes position check (text in cols 40-49)")
+        print("  - Tool didn't know GT should be EXTRACTED and placed in DT field")
+        print("  - This enhancement adds semantic understanding of GT/LT as special markers")
+        print()
+        return False
+
 def validate_band_flags(filename):
     """
     DEPRECATED: Use validate_comment_flags() instead.
@@ -1003,16 +1154,17 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
     else:
         print("ERROR: Field positioning errors found - see details above")
     
-    # Always validate DE fields, S fields, J-pi fields, MUL fields, DRI fields and comment flags unless header-only mode
+    # Always validate DE fields, S fields, J-pi fields, MUL fields, DRI fields, GT/LT placement, and comment flags unless header-only mode
     if not header_only:
         de_field_success = validate_de_field(filename)
         s_field_success = validate_s_field(filename)
         jp_field_success = validate_jp_field(filename)
         mul_field_success = validate_mul_field(filename)
         dri_field_success = validate_dri_field(filename)
+        gt_lt_placement_success = validate_gt_lt_placement(filename)  # NEW SEMANTIC VALIDATION
         comment_flag_success = validate_comment_flags(filename)
         g_record_validation_success = validate_g_record_flags(filename)
-        return (not errors_found) and de_field_success and s_field_success and jp_field_success and mul_field_success and dri_field_success and comment_flag_success and g_record_validation_success
+        return (not errors_found) and de_field_success and s_field_success and jp_field_success and mul_field_success and dri_field_success and gt_lt_placement_success and comment_flag_success and g_record_validation_success
         
     return not errors_found
 

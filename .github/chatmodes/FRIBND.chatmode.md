@@ -335,7 +335,6 @@ Execute column validation on the current ENSDF file:
 2. Cross-verify with `git diff --name-only HEAD`
 3. Check untracked files with `git ls-files --others --exclude-standard`
 4. For each file: `git diff HEAD~1 "filename"` to see changes
-5. Update `.github/change.log` with evidence-based entries
 
 #### "Fix format!"
 
@@ -395,7 +394,6 @@ Process natural language requests for ENSDF-to-PDF conversion:
 
 - **NEVER edit `.old` files** (reference files from previous evaluations)
 - **NEVER modify first/last line indentation/spacing** in .ens files
-- **Always update `.github/change.log` after significant changes**
 - **Use evidence-based documentation with specific line numbers**
 
 
