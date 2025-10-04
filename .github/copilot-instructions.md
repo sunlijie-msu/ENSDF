@@ -872,49 +872,34 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 - **Additional indicator** in column 80 for uncertain ('?') or assumed ('S') transitions
 
 ### LOG FT FORMAT RULES (CRITICAL FOR B AND E RECORDS)
-** MANDATORY LOG FT FORMATTING IN ENSDF **
+**MANDATORY LOG FT FORMATTING IN ENSDF**
 
-**Standard log ft Format in Records:**
-- **Decimal notation**: Always use decimal point (e.g., `4.85`, `6.2`, `>8.5`)
-- **LEFT-JUSTIFIED**: All log ft values start at column 42 and are left-justified
-- **Precision**: Typically 1-2 decimal places (e.g., `4.8`, `5.23`, `6.1`)
-- **Uncertainty format**: DFT field (columns 50-55) contains uncertainty in last digits
+**Records (LOGFT field, columns 42-49):**
+- **Format**: Decimal notation (e.g., `4.85`, `6.2`), left-justified
+- **Precision**: 1-2 decimal places typically
+- **Uncertainty**: DFT field (columns 50-55) contains uncertainty in last digits
+- **Special notations**:
+  - Greater than: `>8.5` (blank DFT)
+  - Less than: `<3.2` (blank DFT)
+  - Approximate: `|?4.8`
+  - Systematic: `4.85 SY` (SY in DFT)
 
-**log ft Format in Comments:**
-- **Use italic I notation**: `log {Ift}` (NOT `log ft`)
-- **In general comments**: "Deduced levels, J, π, decay branching ratios, log {Ift}, and partial decay widths"
-- **In measurement descriptions**: "Measured log {Ift} values for β⁻ transitions"
-- **CRITICAL**: Comment text must use `{I}` for italic formatting, records use plain `LOGFT`
+**Comments:**
+- **Use italic notation**: `log {Ift}` (NOT `log ft`)
+- **Examples**: "Deduced levels, J, π, decay branching ratios, log {Ift}, and partial decay widths"
 
-**Special log ft Notations in Records:**
-- **Greater than**: `>8.5` (value in LOGFT field, blank DFT)
-- **Less than**: `<3.2` (value in LOGFT field, blank DFT)  
-- **Approximate**: `|?4.8` (uses ENSDF approximation symbol)
-- **Systematic uncertainty**: `4.85 SY` (SY in DFT field for systematic)
-- **Calculated values**: Often given to 2 decimal places for precision
-
-**Examples of Proper log ft Formatting:**
+**Examples:**
 ```
-RECORDS (LOGFT field):
 LOGFT     DFT
 4.85      15     → log ft = 4.85(15)
-6.2       3      → log ft = 6.2(3)  
 >8.5             → log ft > 8.5
-<3.0             → log ft < 3.0
 |?5.1            → log ft ≈ 5.1
-
-COMMENTS (text):
-"Deduced levels, J, |p, decay branching ratios, log {Ift}, and partial decay widths"
-"Measured log {Ift} values for |b{+-} transitions"
 ```
 
-**Critical log ft Rules:**
-- **Records**: Use plain `LOGFT` field, always left-justified in columns 42-49
-- **Comments**: Use `log {Ift}` with italic I notation for proper formatting
-- **No leading zeros** (write `4.8`, not `04.8`)
-- **Standard decimal notation** (never exponential)
-- **Uncertainty in DFT field** must align with decimal precision
-- **Blank DFT for limits** (>, <) and some calculated values
+**Critical Rules:**
+- No leading zeros, never exponential notation
+- Blank DFT for limits (>, <) and some calculated values
+- Records use plain LOGFT, comments use {I} for italic formatting
 
 **UNCERTAINTY LEFT-JUSTIFICATION RULE**: ALL uncertainties (DE, DRI, DMR, DCC, DTI, DT, DS, etc.) MUST be left-justified in their respective fields, just like the values themselves. Special markers (GT, LT) within uncertainty fields are also left-justified.
 
@@ -1279,14 +1264,15 @@ git status
 git diff --name-only HEAD
 
 # Check untracked files
-
-```powershell
 git ls-files --others --exclude-standard
 
 # Show staged vs unstaged changes
 git status --porcelain
-```
 
+# Examine specific file changes
+git diff HEAD~1 "filename.ens"
+git show HEAD~1:"old/path/file" | Select-Object -First 20
+```
 
 #### File Restoration Workflows
 **Critical for undoing local changes and restoring clean state:**
@@ -1299,9 +1285,7 @@ git restore .                                 # Restore all modified files (use 
 
 # Advanced restoration options
 git restore --source=HEAD~1 "filename.ens"   # Restore from specific commit
-git restore --source=main "filename.ens"     # Restore from specific branch
 git restore --staged "filename.ens"          # Unstage file (keep working changes)
-git restore --staged --worktree "filename.ens" # Restore both staged and working
 ```
 
 **Safety Protocol for Restoration:**
@@ -1311,60 +1295,11 @@ git restore --staged --worktree "filename.ens" # Restore both staged and working
 4. **RESTORE**: Execute restore command
 5. **VALIDATE**: Run `git status` and ENSDF format validation tools
 
-
-#### Comprehensive Change Analysis
-**For detailed examination of modifications:**
-
-```powershell
-# Examine specific file changes
-git diff HEAD~1 "filename.ens"               # See what changed in file
-git show HEAD~1:"old/path/file" | Select-Object -First 20  # View previous content
-
-# Compare working directory vs staged vs committed
-git diff                                      # Working vs staged
-git diff --staged                            # Staged vs last commit
-git diff HEAD                                # Working vs last commit
-
-# Historical analysis
-git log --oneline -n 10                      # Recent commits
-git log --stat -n 5                          # Recent commits with file statistics
-```
-
-
-#### Branch and Repository Management
-**For broader repository operations:**
-
-```powershell
-# Branch operations (when needed)
-git branch -v                                # Show all branches with last commit
-git switch main                              # Switch to main branch (modern syntax)
-git switch -c new-branch                     # Create and switch to new branch
-
-# Repository state verification
-git remote -v                                # Show remote repositories
-git log --graph --oneline -n 10             # Visual commit history
-git clean -n                                 # Preview what would be cleaned (dry run)
-```
-
-
-#### Emergency Recovery Patterns
-**For critical situations:**
-
-```powershell
-# Complete workspace reset (DESTRUCTIVE - use with extreme caution)
-git status                                   # MANDATORY first step
-git restore --staged --worktree .           # Restore everything to last commit
-git clean -fd                               # Remove untracked files and directories
-
-# Selective restoration for ENSDF workflows
-git restore "A35/*/new/*.ens"               # Restore all ENSDF files
-python .github/column_calibrate.py "restored_file.ens"  # Validate after restore
-
-# Backup before major operations
-$timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
-git archive HEAD | tar -x -C "backup_$timestamp"   # Create full backup
-```
-
+**Critical Safety Rules:**
+- **NEVER use `git restore` without `git status` first** - understand what you're discarding
+- **ALWAYS backup uncertain changes** before restoration operations
+- **VALIDATE post-restore** - run ENSDF format checks on restored files
+- **USE SPECIFIC PATHS** - avoid blanket operations without careful consideration
 
 #### Integration with ENSDF Workflows
 **Combining git operations with nuclear data validation:**
@@ -1383,268 +1318,18 @@ git diff "file.ens"                         # Verify changes
 git restore "file.ens.backup"               # Restore from backup if needed
 ```
 
-**Critical Safety Rules:**
-- **NEVER use `git restore` without `git status` first** - understand what you're discarding
-- **ALWAYS backup uncertain changes** before restoration operations
-- **VALIDATE post-restore** - run ENSDF format checks on restored files
-- **USE SPECIFIC PATHS** - avoid blanket operations without careful consideration
-- **VERIFY COMPLETION** - confirm clean state with `git status` after operations
+#### Change Documentation
+**Evidence-based commit messages with specific file diffs and line numbers:**
 
+- **MANDATORY**: `git status` and `git diff --name-only HEAD` before any operation
+- **Documentation**: Use actual git diff output, line numbers, before/after content
+- **Verification**: Cross-check ENSDF changes with expected PDF updates
+- **No assumptions**: Document ONLY what git diff actually shows
 
-### Change Detection Process
-1. **Pre-work (MANDATORY)**: `git status`, `git diff --name-only HEAD`
-2. **During work**: Track file modifications systematically
-3. **Post-work**: Use all detection tools on ALL files from git status
-4. **Documentation**: Evidence-based git commit messages with line numbers
-
-**CRITICAL REMINDER**: Always start with `git status` - this shows the complete picture!
-
-
-### File Categories to Track
+**File Categories to Track:**
 - **ENSDF source files**: *.ens files (most important)
 - **Generated PDFs**: *.pdf files (expected to change when source changes)
-- **Processing artifacts**: temp/*.* files (expected, document but don't commit)
 - **Tools and scripts**: .github/*.* files (important for tooling changes)
 - **Documentation**: README.md, markdown files, etc.
-
-
-### Evidence-Based Documentation Rules
-Every git commit message should be backed by:
-- Specific file diffs from `git diff HEAD~1 "filename"`
-- Line numbers where changes occurred
-- Actual before/after content when significant
-- Explanation of why the change was made
-
-**Key principle**: Use multiple detection methods and always cross-verify. If git shows a file changed, dig deeper with git diff. If you modified an ENSDF file, expect to see corresponding PDF changes.
-
-
-### Verification Checklist
-- [ ] **FIRST**: `git status` - identify ALL modified files (MANDATORY)
-- [ ] `git diff --name-only HEAD` - complete list verification
-- [ ] `git ls-files --others --exclude-standard` - untracked files
-- [ ] `git diff HEAD~1 "filename"` on each modified file from git status
-- [ ] For moved files: `git show HEAD~1:old/path/file | Select-Object -First 20` (PowerShell)
-- [ ] For large outputs: Use `Select-Object -First N` to limit output in PowerShell
-- [ ] **EVIDENCE-BASED ANALYSIS**: Document ONLY what git diff actually shows
-- [ ] **VERIFY EVERY CLAIM**: Each commit message statement backed by specific diff evidence
-- [ ] **NO ASSUMPTION DOCUMENTATION**: Never document changes you didn't explicitly see in diffs
-- [ ] Document file movements/reorganizations with full context
-- [ ] **ANTI-HALLUCINATION CHECK**: Comprehensive commit message with NO generic AI templates
-- [ ] Cross-check: did any ENSDF changes result in expected PDF updates?
-
-**Remember**: Start every workflow with git status and use PowerShell-compatible commands!
-
-
-### Git Commit Template
-```
-Title: Brief description of main changes (SPECIFIC - NO GENERIC PHRASES)
-
-Summary:
-- Enhanced/improved/fixed major components (BE SPECIFIC ABOUT WHAT)
-- Scientific content updates in specific files (LIST ACTUAL FILES AND CHANGES)
-
-ENSDF Tools:
-- tool_name.py: Specific improvements and validation results (ACTUAL CHANGES MADE)
-
-Scientific Content:
-- file_name.ens: Changes with line numbers and rationale (SPECIFIC MODIFICATIONS)
-
-Processing Artifacts:
-- PDF files: Regenerated files listed (ACTUAL FILE NAMES)
-- Temp files: Expected analysis output updates (SPECIFIC ARTIFACTS)
-
-Files changed: X modified, Y untracked
-Brief scope and impact summary (EVIDENCE-BASED CONCLUSION)
-```
-
-
-**COMMIT MESSAGE ANTI-HALLUCINATION RULES**
-- **FORBIDDEN PHRASES**: "Refactor code structure", "Update files", "Improve functionality", "Enhance system"
-- **REQUIRED SPECIFICITY**: Every tool/file/change mentioned must be backed by actual git diff evidence
-- **MANDATORY VERIFICATION**: Each section must contain actual file names and specific changes
-- **NO GENERIC CLAIMS**: Every improvement claim must cite specific line numbers or functionality
-- **EVIDENCE REQUIREMENT**: If you can't point to a specific diff showing the change, don't claim it
-
-
-### Example Commit Structure
-```
-Title: Enhance ENSDF column calibration tools and improve Ar35 scientific content
-
-Summary:
-- Enhanced Python column calibration script with complete 80-column ENSDF format support
-- Improved scientific content and formatting in Ar35 ENSDF files
-- Completed comprehensive change tracking and documentation
-
-ENSDF Tools:
-- column_calibrate.py: Extended to complete 80-column ENSDF validation and fixer
-
-Scientific Content:
-- Ar35_36ar_p_d.ens: Fixed grammar in L=3 vs L=2 comparison (line 77)
-- Ar35_adopted.ens: Multiple scientific and formatting enhancements
-
-Processing Artifacts:
-- PDF files: Regenerated Ar35_36ar_3he_a.pdf, Ar35_36ar_p_d.pdf, Ar35_adopted.pdf
-- Temp files: Updated all analysis outputs (35.err, 35.fed, 35.fmt, etc.)
-
-Files changed: 15 modified, 2 untracked
-Completion of comprehensive ENSDF column calibration tooling and systematic improvement of Ar35 nuclear data content.
-```
-
-
-## JSON Schema Compliance
-
-
-### Nuclear Data JSON Creation Rules
-When creating JSON data for nuclear structure information:
-
-- **Validate against schema**: Follow exact structure and constraints defined in quantity.schema.json
-- **Use proper data types**: Numbers for energies, strings for units, booleans for flags
-- **Include required fields**: Never omit mandatory properties (energy, spinParity, isStable for levels)
-- **Follow nuclear conventions**: Proper uncertainty notation, energy units (keV), gamma structure with initialLevelIndex/finalLevelIndex
-
-
-### NNDC Schema Structure
-For gamma energy data conforming to quantity.schema.json:
-```json
-{
-  "energy": {
-    "value": 57.4,
-    "unit": "keV", 
-    "uncertainty": {
-      "type": "symmetric",
-      "value": 0.1
-    }
-  },
-  "initialLevelIndex": 0,
-  "finalLevelIndex": 1
-}
-```
-
-
-## Project Structure (concise and current)
-
-
-### Top-level
-- `A31.ens`, `A32.ens`, `A33.ens`, `A34/`, `A35/`, `A60/`, `XUNDL/`
-- `README.md`, `Weekly Effort Log.md`, `DOE_Progress_Report.md`, `Statistics.txt`, `Statistics.xlsx`
-
-
-### ENSDF datasets
-- `A34/[Element]34/new/*.ens` — A=34 active datasets; `old/` contains reference rounds; some elements include `pdf/` and supporting files.
-- `A35/[Element]35/...` — A=35 datasets by element (e.g., `K35`, `P35`, etc.).
-- `A60/[Element]60/new/*.ens` — A=60 datasets.
-
-
-### Tools (.github)
-- `.github/column_calibrate.py` — Column validator and line-length fixer (data records only).
-- `.github/ensdf_1line_ruler.py` — Visual 80-column ruler and verifier (file scan and single-line modes).
-- `.github/check_gamma_ordering.py` — Verifies ascending L and G energy ordering.
-- `.github/ens2pdf.py` — Generate PDFs from ENSDF files.
-- `.github/image_data_extraction.prompt.md` — Image data extraction guidance.
-- `.github/copilot-instructions.md` — This instruction file.
-
-
-### External data
-- `XUNDL/` — eXperimental Unevaluated Nuclear Data List submissions and compilations.
-
----
-
-
-## Focus Areas
-**Current Priority**: K35 and P35 files (Ar35 completed)
-
-**Quality Assurance**: Use Self-Calibrate Columns before any ENSDF edits, use What changed? after any modifications
-
-**Remember**: Nuclear data accuracy is critical - when in doubt, verify with tools and cross-check against ENSDF Manual specifications.
-
-
-## Image Data Extraction Protocol
-
-
-### Level Scheme Analysis
-- **Systematic scanning**: Left-to-right, top-to-bottom approach
-- **Energy identification**: Clear notation for parentheses, uncertainties, tentative assignments
-- **Color coding**: Black (known) vs Red (new) vs other markings
-- **Special notations**: Asterisks (*), question marks (?), parentheses ()
-- **Cross-verification**: Compare extracted data with tabulated lists
-
-
-### Spectral Analysis
-- **Peak identification**: Exact energy labels, not estimates
-- **Gate verification**: Check coincidence logic with nuclear structure
-- **Contamination markers**: Identify non-target nuclide peaks
-- **Quality indicators**: Intensity, resolution, background
-
-
-### Quality Control
-- **Never guess or interpolate** energy values
-- **Admit uncertainty** when image quality is poor
-- **Section-by-section verification** before final compilation
-- **Cross-check** with provided data tables
-
-
-
-### DCO Ratio and Polarization Analysis
-**Essential for multipolarity assignments in gamma-ray spectroscopy**
-
-#### DCO Ratio Rules
-- **DCO(D) ≈ 1.0** → Dipole transition (M1, E1, or M1+E2 with dominant M1)
-- **DCO(D) ≈ 1.6** → Quadrupole transition (E2 or M2)
-- **DCO(Q) ≈ 1.0** → Quadrupole transition (E2 or M2)
-- **DCO(Q) ≈ 0.6** → Dipole transition (M1, E1, or M1+E2 with dominant M1)
-
-#### Polarization Rules
-- **POL > 0** → Electric transition (E1, E2, etc.)
-- **POL < 0** → Magnetic transition (M1, M2, etc.)
-- **POL ≈ 0** → Mixed transition or measurement uncertainty
-- **Polarizations are typically put in cG comments.** Example: 32P  cG $POL=-0.06 {I9}.
-
-#### Quality Control Guidelines
-- **Expected DCO ranges**: 0.4-1.4 for dipole, 0.8-1.8 for quadrupole
-- **Red flags**: DCO > 2.0 or DCO < 0.3 (possible contamination or experimental issues)
-- **Borderline values**: 0.8-1.2 may require additional analysis
-- **Cross-verification**: Always check DCO consistency with nuclear structure logic
-
-#### Systematic Analysis Protocol
-1. **Extract all DCO and POL data** from experimental comments
-2. **Apply rules systematically** to each transition
-3. **Identify inconsistencies** between assigned multipolarity and DCO/POL
-4. **Flag unusual values** (DCO > 2.0) for further investigation
-5. **Document findings** with specific energy, DCO value, and recommended assignment
-
-
-### Image Data Extraction Request
-You are an expert nuclear data scientist with extensive experience handling ENSDF-formatted data.
-Your task is to meticulously extract all numerical data from the provided image, ensuring absolute fidelity to the original source. Preserve every decimal place exactly. Do not round, omit, alter, or add any digits. For example, 10.0 is 10.0, not 10 or 10.00!
-
-To ensure proper column alignment, please utilize a null value for any empty fields. It is important to avoid misinterpreting other fields or fabricating placeholder values to fill these unfilled spaces.
-
-Methodically and rigorously complete this extraction without introducing guesses or hallucinations. Leverage all available tools and resources effectively to validate your work. Double-check all values at least once before finalizing your response.
-Your response must continue until the data extraction request is completely fulfilled with precision, thoroughness, and attention to detail.
-
-Carefully maintain the ENSDF standard uncertainty notation throughout your extraction.
-
-The uncertainty digits align precisely with the rightmost decimal digit of the stated value per ENSDF standards:
-
-#### ENSDF Uncertainty Notation (Clear Examples)
-
-| Decimal Digits | ENSDF Notation | Meaning (explicit ± form) |
-|:--------------:|:--------------:|:-------------------------:|
-| No decimal     | 1234(5)        | 1234 ± 5                  |
-|                | 1234(56)       | 1234 ± 56                 |
-|                | 1234(567)      | 1234 ± 567                |
-| 1 decimal      | 12.3(4)        | 12.3 ± 0.4                |
-|                | 12.3(45)       | 12.3 ± 4.5                |
-|                | 12.3(456)      | 12.3 ± 45.6               |
-| 2 decimals     | 1.23(4)        | 1.23 ± 0.04               |
-|                | 1.23(45)       | 1.23 ± 0.45               |
-|                | 1.23(456)      | 1.23 ± 4.56               |
-| 3 decimals     | 0.123(4)       | 0.123 ± 0.004             |
-|                | 0.123(45)      | 0.123 ± 0.045             |
-|                | 0.123(456)     | 0.123 ± 0.456             |
-| 4 decimals     | 0.0123(4)      | 0.0123 ± 0.0004           |
-|                | 0.0123(45)     | 0.0123 ± 0.0045           |
-|                | 0.0123(456)    | 0.0123 ± 0.0456           |
-
 
 
