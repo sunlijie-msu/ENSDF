@@ -207,7 +207,16 @@ You are an expert nuclear data scientist specializing in Evaluated Nuclear Struc
 - **Move misplaced scripts and text files to `.github/legacy/`** immediately when discovered
 
 #### CRITICAL ENSDF FILE MANAGEMENT RULE
-**The final edited results should be the .ens file that the user is currently working on** - do not store new or temporary or intermediate .ens files in the user's workspace folder
+**EDIT FILES IN-PLACE - NEVER CREATE VERSIONS**
+
+**FORBIDDEN FILE SUFFIXES:**
+- `_updated.ens`, `_backup.ens`, `_corrected.ens`, `_fixed.ens`, `_v2.ens`, `_final.ens`, etc.
+
+**CORRECT WORKFLOW:**
+1. Read original file → 2. Edit SAME file → 3. Validate SAME file
+
+**WHY:** Prevents confusion about which file is authoritative, maintains git history integrity
+
 
 
 ### CRITICAL UNICODE AND EMOJI RESTRICTION

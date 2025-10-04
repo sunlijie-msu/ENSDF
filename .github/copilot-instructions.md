@@ -120,7 +120,7 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 **MANDATORY ASCENDING ORDER:**
 1. **ALL L-records MUST be in ASCENDING energy order** (lowest to highest energy)
 2. **ALL G-records following each L-record MUST be in ASCENDING energy order**
-- **Example**: Egamma 1211 keV comes before 1567 keV, which comes before 1986 keV
+- **Example**: Egamma 967 keV comes before 1569 keV, which comes before 2171 keV
 - **Critical**: ENSDF parsing systems require this strict ascending order for both levels and gammas
 - **Failure consequence**: One incorrectly ordered level or gamma can cause file rejection!
 
@@ -1121,13 +1121,42 @@ WRONG approach:
 - `{+-n}` → negative superscript (e.g., `{+-4}` → ⁻⁴)
 
 ### ENSDF Uncertainty Notation
-** CRITICAL UNCERTAINTY FORMAT RULES **
-- **Symmetric uncertainties**: `{In}` (e.g., `{I7}`, `{I11}`) - NO plus/minus signs
-- **Asymmetric uncertainties**: `{I+n-m}` (e.g., `{I+10-11}`, `{I+7-9}`) - WITH plus/minus signs
-- **Examples**:
-  - Symmetric: `1.42 ps {I7}` → 1.42(7) ps = 1.42 ± 0.07 ps
-  - Asymmetric: `1.42 ps {I+10-11}` → 1.42(+10-11) ps = 1.42 + 0.10 - 0.11 ps
-- **NEVER use** `{I+n}` for symmetric uncertainties - this is incorrect ENSDF format
+** CRITICAL: TWO DIFFERENT FORMATS - DO NOT CONFUSE! **
+
+**1. IN DATA RECORD FIELDS (L, G, E, B, DP records):**
+- **Format**: Plain numbers only - NO {I} notation, NO braces
+- **Examples**: 
+  - Energy: `1572.0` with uncertainty `12` in DE field → means 1572.0(12)
+  - RI: `70.0` with uncertainty `24` in DRI field → means 70.0(24)
+  - T1/2: `2.29 PS` with uncertainty `14` in DT field → means 2.29(14) PS
+
+**2. IN COMMENT LINES (cL, cG, General comments):**
+- **Format**: Use {In} or {I+n-m} notation with braces
+- **CRITICAL**: n must be INTEGER ONLY - NEVER decimals like {I0.1} or {I1.1}
+- **Symmetric**: `{In}` (e.g., `{I7}`, `{I11}`) - NO plus/minus signs
+- **Asymmetric**: `{I+n-m}` (e.g., `{I+10-11}`, `{I+7-9}`) - WITH plus/minus signs
+- **FORBIDDEN**: `{I+n}` for symmetric uncertainties - incorrect format
+
+**Comment Line {In} Examples by Decimal Places:**
+
+| Value Decimals | Comment Notation | Meaning (± format) |
+|----------------|------------------|-------------------|
+| 0 decimals | `1234 {I5}` | 1234 ± 5 |
+| 0 decimals | `1234 {I26}` | 1234 ± 26 |
+| 1 decimal | `12.3 {I6}` | 12.3 ± 0.6 |
+| 1 decimal | `3.6 {I11}` | 3.6 ± 1.1 |
+| 2 decimals | `1.23 {I7}` | 1.23 ± 0.07 |
+| 2 decimals | `1.23 {I21}` | 1.23 ± 0.21 |
+
+**Critical Rules for {In} in Comments:**
+- `{In}` applies to the **last significant digit** of the value
+- For 1 decimal: `{I11}` means ±11 in last digit = ±1.1
+- For 2 decimals: `{I21}` means ±21 in last two digits = ±0.21
+- **FORBIDDEN**: `{I0.1}`, `{I1.1}`, `{I2.7}` (decimals violate ENSDF rules)
+
+**Examples in Context:**
+- **Data record**: ` 35P   L 1572.0    12 3/2+             2.29 PS   14` ← uncertainties are plain numbers
+- **Comment line**: ` 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)` ← uncertainty uses {I11} notation
 
 ### Greek Letters
 **Lowercase**: `|a` → α, `|b` → β, `|g` → γ, `|d` → δ, `|e` → ε, `|l` → λ, `|m` → μ, `|n` → ν, `|p` → π, `|r` → ρ, `|s` → σ, `|t` → τ, `|w` → ω
