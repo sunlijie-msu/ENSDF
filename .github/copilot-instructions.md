@@ -301,7 +301,16 @@ print('Length:', len(header))
 - **Exit code 0**: Energy ordering is correct ✅
 - **Exit code 1**: Energy ordering violations found - MUST fix before proceeding ❌
 
-**ENSDF Requirements**: ALL L-records in ascending energy order, ALL G-records within each level in ascending energy order. One incorrectly ordered record causes file rejection by ENSDF parsing systems. All G-records following an L-record indicate γ transitions from that level; the G-records before an L-record have nothing to do with that L-record.
+
+**CRITICAL STRUCTURAL RELATIONSHIP FOR ENSDF FILES:**
+1. Each L-record (level) defines a new physical level unit.
+2. All G-records (gamma transitions) immediately following an L-record belong to that level unit.
+3. G-records appearing before an L-record are associated with the previous level, not the following level.
+4. If a level has no gamma transitions, it is represented by a single L-record with no following G-records.
+5. Always maintain this strict L/G record association for correct ENSDF parsing and data integrity.
+6. cL comment lines are part of the L-record they follow.
+7. cG comment lines are part of the G-record they follow.
+
 
 ### "What changed?"
 **MANDATORY FIRST STEP**: Always run `git status` to identify ALL modified files.
