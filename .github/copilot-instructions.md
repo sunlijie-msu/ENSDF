@@ -1129,7 +1129,7 @@ WRONG approach:
 - `{-n}` → subscript (e.g., `T{-1/2}` → T₁/₂)
 - `{+-n}` → negative superscript (e.g., `{+-4}` → ⁻⁴)
 
-### ENSDF Uncertainty Notation
+### ENSDF Uncertainty Notation Rules
 ** CRITICAL: TWO DIFFERENT FORMATS - DO NOT CONFUSE! **
 
 **1. IN DATA RECORD FIELDS (L, G, E, B, DP records):**
@@ -1166,6 +1166,7 @@ WRONG approach:
 **Examples in Context:**
 - **Data record**: ` 35P   L 1572.0    12 3/2+             2.29 PS   14` ← uncertainties are plain numbers
 - **Comment line**: ` 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)` ← uncertainty uses {I11} notation
+
 
 ### Greek Letters
 **Lowercase**: `|a` → α, `|b` → β, `|g` → γ, `|d` → δ, `|e` → ε, `|l` → λ, `|m` → μ, `|n` → ν, `|p` → π, `|r` → ρ, `|s` → σ, `|t` → τ, `|w` → ω
