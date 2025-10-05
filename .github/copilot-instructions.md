@@ -301,7 +301,7 @@ print('Length:', len(header))
 - **Exit code 0**: Energy ordering is correct ✅
 - **Exit code 1**: Energy ordering violations found - MUST fix before proceeding ❌
 
-**ENSDF Requirements**: ALL L-records in ascending energy order, ALL G-records within each level in ascending energy order. One incorrectly ordered record causes file rejection by ENSDF parsing systems.
+**ENSDF Requirements**: ALL L-records in ascending energy order, ALL G-records within each level in ascending energy order. One incorrectly ordered record causes file rejection by ENSDF parsing systems. All G-records following an L-record indicate γ transitions from that level; the G-records before an L-record have nothing to do with that L-record.
 
 ### "What changed?"
 **MANDATORY FIRST STEP**: Always run `git status` to identify ALL modified files.
