@@ -426,6 +426,9 @@ When dealing with image data extraction or experimental data:
 - **Preserve exact decimal places as written in source** - if image shows 10.0, write 10.0, not 10 or 10.00! The number of digits and significant figures matters!
 - **Use ENSDF uncertainty notation** precisely
 
+**Random Spot-Check Validation:**
+After systematic data entry or bulk corrections, perform random spot-check validation by manually verifying a few samples (2-5% of total) against source data. This independent verification often catches errors missed by automated tools, especially arithmetic mistakes and column mapping errors. If errors found, investigate root cause immediately, analyze pattern (systematic vs isolated), correct all instances, re-validate comprehensively, perform new spot-check. Do not claim task completion until all spot-checks pass without error.
+
 
 
 ### Scientific Communication Guidelines

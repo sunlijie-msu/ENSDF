@@ -311,6 +311,21 @@ print('Length:', len(header))
 6. cL comment lines are part of the L-record they follow.
 7. cG comment lines are part of the G-record they follow.
 
+## Random Spot-Check Validation
+
+**QUALITY ASSURANCE BEST PRACTICE**: After systematic data entry or bulk corrections, perform random spot-check validation by manually verifying a few samples (2-5% of total) against source data. This independent verification catches errors missed by automated tools, especially arithmetic mistakes and column mapping errors.
+
+**When to use**: After large-scale data entry, bulk corrections, arithmetic-intensive work, or before claiming task completion when extra confidence is needed.
+
+**Verification checklist** (for each sample):
+- Arithmetic accuracy
+- Values/uncertainties match source data exactly
+- Mapping accuracy (correct fields)
+- Row and column alignment
+
+**If errors found**: Identify root cause immediately, analyze pattern (systematic vs isolated), correct all instances, re-validate comprehensively, perform new spot-check.
+
+**Integration**: Use after automated validation passes (column calibration + energy ordering), document findings for reproducibility.
 
 ### "What changed?"
 **MANDATORY FIRST STEP**: Always run `git status` to identify ALL modified files.
