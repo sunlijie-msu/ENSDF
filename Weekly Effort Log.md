@@ -106,6 +106,9 @@ Received training from my line manager regarding the A=35 evaluation and data co
 Lijie Sun - 21 September 2025 - 27 September 2025
 Received training from my line manager regarding the A=35 evaluation. Added 2 reaction datasets for 35Cl. Revised the context and tool invocation instructions for Copilot responses.
 
+Lijie Sun – 28 September 2025 - 4 October 2025
+Received training from my line manager regarding the A=35 evaluation. Added 34(p,g) reaction dataset for 35Cl. Refined AI-agent instructions and pre/post-action checklists for improved formatting accuracy.
+
 
 # FRIB Laboratory Activities
 
