@@ -27,6 +27,7 @@ This repository contains the datasets being evaluated by the FRIB Nuclear Data G
 ```
 ├── A35/[Element]35/new/    # Primary ENSDF evaluation files (*.ens)
 ├── A35/[Element]35/old/    # Reference files from previous rounds (*.old)
+├── A35/[Element]35/raw/    # Raw/original paper-derived files and intermediate outputs (was 'temp/')
 ├── A34/[Element]34/        # A=34 mass chain evaluation files
 ├── A60/[Element]60/        # A=60 mass chain evaluation files
 ├── XUNDL/                  # Unevaluated data (Git submodule → private repository)
@@ -37,6 +38,19 @@ This repository contains the datasets being evaluated by the FRIB Nuclear Data G
 │   └── copilot-instructions.md
 └── .gitmodules             # Git submodule configuration
 ```
+
+## Raw / provenance data
+
+- In order to make provenance clear, temporary and intermediate folders previously named `temp/` have been renamed to `raw/`.
+- The `raw/` directories contain original data extracted from references (PDFs, extracted tables, per-paper ENSDF fragments) and intermediate processing outputs (ruler reports, .avg, .mrg, etc.) retained for traceability.
+- A move log was created at `.github/raw_move_log.txt` listing all file moves performed during the workspace cleanup.
+
+When producing finalized ENSDF evaluation files, copy or move verified outputs into the `new/` or `old/` trees as appropriate. Keep `raw/` as the immutable provenance store.
+
+## Recent workspace cleanup
+
+- 2025-10-06: Renamed per-isotope `temp/` directories to `raw/` across the workspace to make file provenance explicit. See `.github/raw_move_log.txt` for details.
+
 
 
 
