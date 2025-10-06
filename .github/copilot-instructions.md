@@ -1070,21 +1070,10 @@ Data Row: John,25,,NYC,95
 
 **NEVER PROCEED WITHOUT COMPLETE COLUMN MAPPING VERIFICATION**
 
-### Column Positioning
-- **J-π placement**: Always start at column 23, LEFT-JUSTIFIED (never add spaces that shift uncertainties)
-- **Energy values**: LEFT-JUSTIFIED in their designated columns (10-19)
-- **RI values**: Start at column 23, **LEFT-JUSTIFIED** in 7-char field (23-29)
-- **DRI values**: Position at columns 30-31 (including special markers like GT, LT)
-- **Half-life values**: LEFT-JUSTIFIED in T field (columns 40-49)
-- **BR values**: Position at column 32 (N-records), LEFT-JUSTIFIED
-- **NR values**: Columns 11-15 (N-records), LEFT-JUSTIFIED
 
 **CRITICAL**: ALL values must be LEFT-JUSTIFIED within their respective fields - never right-justified or centered!
 
 **CRITICAL COLUMN RULE**: When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns!
-- L-transfer values: Must stay in columns 56-64
-- Spectroscopic factors: Must stay in columns 65-74
-- Comment flags: Must stay in column 77
 - Only adjust spacing between fields - never move field data to incorrect columns!
 
 ### NSR Keynumber Formatting
