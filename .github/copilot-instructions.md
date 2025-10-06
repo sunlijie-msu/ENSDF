@@ -313,7 +313,7 @@ print('Length:', len(header))
 
 ## Random Spot-Check Validation
 
-**QUALITY ASSURANCE BEST PRACTICE**: After systematic data entry or bulk corrections, perform random spot-check validation by manually verifying a few samples (2-5% of total) against source data. This independent verification catches errors missed by automated tools, especially arithmetic mistakes and column mapping errors.
+**QUALITY ASSURANCE BEST PRACTICE**: After systematic data entry or bulk corrections, perform random spot-check validation by manually verifying a few samples (5% of total) against source data. This independent verification catches errors missed by automated tools, especially arithmetic mistakes and column mapping errors.
 
 **When to use**: After large-scale data entry, bulk corrections, arithmetic-intensive work, or before claiming task completion when extra confidence is needed.
 
@@ -327,33 +327,7 @@ print('Length:', len(header))
 
 **Integration**: Use after automated validation passes (column calibration + energy ordering), document findings for reproducibility.
 
-### "What changed?"
-**MANDATORY FIRST STEP**: Always run `git status` to identify ALL modified files.
 
-** CRITICAL AI HALLUCINATION PREVENTION **
-- **NEVER use generic commit messages** like "Refactor code structure" or "Update files"
-- **ALWAYS base commit messages on actual git diff analysis** - no assumptions
-- **REQUIRE evidence-based commit content** using the structured template below
-- **VERIFY every claim in commit message** against actual file changes
-
-Execute comprehensive change detection and documentation:
-1. **FIRST**: Run `git status` to list all modified files
-2. **Verify completeness**: Run `git diff --name-only HEAD` for cross-verification
-3. **Check untracked files**: Run `git ls-files --others --exclude-standard`
-4. **For each modified file**: Run `git diff HEAD~1 "filename"` to see what changed
-5. **For moved files**: Use `git show HEAD~1:old/path/file` to examine previous content
-6. **ANALYZE ACTUAL CHANGES**: Never guess what changed - examine actual diffs
-
-7. **Document with**:
-   - Line numbers where changes occurred
-   - Before/after content for significant changes
-   - Scientific/technical context and rationale
-   - File movement/reorganization details
-   - **ACTUAL IMPACT**: What the changes accomplish, not generic descriptions
-
-**PowerShell Considerations**: Use `Select-Object -First N` instead of `head` for output limiting.
-
-**Remember**: Git status MUST be the first step - missing files means incomplete documentation! Always cross-verify with multiple git commands to ensure complete coverage.
 
 ### "Restore files"
 **Critical workflow for discarding local changes and restoring files to their last committed state.**
@@ -404,54 +378,6 @@ git restore --staged "filename.ens"
 # Restore both staged and working directory changes
 git restore --staged --worktree "filename.ens"
 ```
-
-**PowerShell Integration Tips:**
-```powershell
-# Check file status before restore
-$files = @("file1.ens", "file2.ens")
-foreach ($file in $files) {
-    Write-Host "Status of $file:"
-    git status --porcelain $file
-}
-
-# Conditional restore with confirmation
-$modifiedFiles = git diff --name-only
-if ($modifiedFiles) {
-    Write-Host "Modified files: $($modifiedFiles -join ', ')"
-    $confirm = Read-Host "Restore all modified files? (y/N)"
-    if ($confirm -eq 'y') { git restore $modifiedFiles }
-}
-```
-
-**ENSDF-Specific Restore Scenarios:**
-```powershell
-# Restore ENSDF file and validate format
-git restore "Si35_adopted.ens"
-python .github/column_calibrate.py "Si35_adopted.ens"
-
-# Restore multiple ENSDF files for element
-git restore "A35/Si35/new/*.ens"
-
-# Emergency restore entire ENSDF dataset
-git restore "A35/" --recurse-submodules
-```
-
-**Critical Safety Rules:**
-- **NEVER restore without `git status` first** - understand what you're discarding
-- **BACKUP uncertain changes** before restore operations
-- **VALIDATE post-restore** - run format checks on restored ENSDF files
-- **USE SPECIFIC PATHS** - avoid blanket `git restore .` without careful consideration
-
-**Common Restore Patterns:**
-- **Experiment gone wrong**: `git restore "experimental_file.ens"`
-- **Format corruption**: `git restore "corrupted_file.ens" && python .github/column_calibrate.py "corrupted_file.ens"`
-- **Partial restore**: `git restore --source=HEAD~1 "specific_file.ens"` (restore from earlier commit)
-- **Clean slate**: `git status && git restore .` (restore all, with status verification)
-
-**Integration with ENSDF Workflows:**
-1. **Before major edits**: `git status` → backup important files → proceed with edits
-2. **After failed edits**: `git restore "filename.ens"` → restart with clean file
-3. **Post-restore validation**: Always run column calibration and energy ordering checks
 
 ### "Fix format!"
 Auto-convert text to proper ENSDF notation:
@@ -991,6 +917,7 @@ Never right-justify or center ANY values OR uncertainties in ENSDF records!
 - **NEVER** edit `.old` files (reference files from previous evaluation rounds)
 - **NEVER** modify first/last line indentation or spacing in .ens files
 
+
 ### Data Consistency with Adopted Levels
 ** CRITICAL CONSISTENCY RULE **
 - **When comments state "From the Adopted Levels"** (e.g., `35S  cL J,T$From the Adopted Levels`):
@@ -1110,6 +1037,39 @@ WRONG approach:
 ```
 
 **CRITICAL: If any edit causes file corruption, STOP immediately and inform user**
+
+### CSV/Tabular Data Processing
+**CRITICAL AI WEAKNESS MITIGATION - COLUMN ALIGNMENT AND BLANK CELL HANDLING**
+
+**AI FREQUENT FAILURE PATTERNS TO AVOID:**
+- ❌ Assuming column positions without explicit mapping
+- ❌ Ignoring blank cells that shift subsequent data columns
+- ❌ Single-direction counting (forward only) leading to off-by-one errors
+- ❌ Mismatched header-to-data column associations
+- ❌ Treating blank cells as non-existent rather than positional placeholders
+
+**MANDATORY VERIFICATION PROTOCOL:**
+1. **Column alignment**: Explicitly map ALL columns including blank ones - never assume positions based on visible data alone
+2. **Blank cells**: Count blank cells meticulously - each blank cell shifts all subsequent column positions and can cause catastrophic data misalignment
+3. **Bidirectional verification**: Always cross-check both forward counting (header→data) and backward counting (data→header) to ensure accurate column-to-data mapping
+
+**CRITICAL VALIDATION STEPS FOR TABULAR DATA:**
+- **Step 1**: List all header columns explicitly, including blank column positions
+- **Step 2**: Count blank cells between data columns - they are positional placeholders
+- **Step 3**: Forward verification: Match each header column to corresponding data column
+- **Step 4**: Backward verification: Confirm each data column maps back to correct header
+- **Step 5**: Arithmetic validation: Verify row/column calculations account for blank cell shifts
+
+**EXAMPLE FAILURE PREVENTION:**
+```
+CSV Header Row: Name,Age,,City,Score
+Data Row: John,25,,NYC,95
+
+❌ WRONG: Assume columns are [Name,Age,City,Score] - ignores blank column
+✅ CORRECT: Map as [Name,Age,BLANK,City,Score] - blank shifts City to position 4
+```
+
+**NEVER PROCEED WITHOUT COMPLETE COLUMN MAPPING VERIFICATION**
 
 ### Column Positioning
 - **J-π placement**: Always start at column 23, LEFT-JUSTIFIED (never add spaces that shift uncertainties)

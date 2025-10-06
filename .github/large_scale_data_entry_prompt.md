@@ -34,6 +34,13 @@ When adding G-records, ensure:
 ### Uncertainty Notation
 Uncertainties are not required in this task! (Maintain precise ENSDF uncertainty notation where applicable. The uncertainty digits align with the rightmost decimal digit of the stated value per ENSDF standards.)
 
+### CSV/Tabular Data Processing
+**CRITICAL AI WEAKNESS MITIGATION - PAY ATTENTION TO COLUMN ALIGNMENT AND BLANK CELLS**
+
+1. **Column alignment**: Map ALL columns explicitly (including blank columns) - never assume column positions
+2. **Blank cells**: Count blank cells meticulously - they shift all subsequent column positions and can cause catastrophic misalignment
+3. **Bidirectional verification**: Always cross-check both forward counting and backward counting to ensure header-to-data mapping accuracy
+
 ## Quality Control Workflow
 
 1. **Plan systematically** before executing and reflect on outcomes afterwards
