@@ -35,11 +35,37 @@ When adding G-records, ensure:
 Uncertainties are not required in this task! (Maintain precise ENSDF uncertainty notation where applicable. The uncertainty digits align with the rightmost decimal digit of the stated value per ENSDF standards.)
 
 ### CSV/Tabular Data Processing
-**CRITICAL AI WEAKNESS MITIGATION - PAY ATTENTION TO COLUMN ALIGNMENT AND BLANK CELLS**
+**CRITICAL AI WEAKNESS MITIGATION - COLUMN ALIGNMENT AND BLANK CELL HANDLING**
 
-1. **Column alignment**: Map ALL columns explicitly (including blank columns) - never assume column positions
-2. **Blank cells**: Count blank cells meticulously - they shift all subsequent column positions and can cause catastrophic misalignment
-3. **Bidirectional verification**: Always cross-check both forward counting and backward counting to ensure header-to-data mapping accuracy
+**AI FREQUENT FAILURE PATTERNS TO AVOID:**
+- ❌ Assuming column positions without explicit mapping
+- ❌ Ignoring blank cells that shift subsequent data columns
+- ❌ Single-direction counting (forward only) leading to off-by-one errors
+- ❌ Mismatched header-to-data column associations
+- ❌ Treating blank cells as non-existent rather than positional placeholders
+
+**MANDATORY VERIFICATION PROTOCOL:**
+1. **Column alignment**: Explicitly map ALL columns including blank ones - never assume positions based on visible data alone
+2. **Blank cells**: Count blank cells meticulously - each blank cell shifts all subsequent column positions and can cause catastrophic data misalignment
+3. **Bidirectional verification**: Always cross-check both forward counting (header→data) and backward counting (data→header) to ensure accurate column-to-data mapping
+
+**CRITICAL VALIDATION STEPS FOR TABULAR DATA:**
+- **Step 1**: List all header columns explicitly, including blank column positions
+- **Step 2**: Count blank cells between data columns - they are positional placeholders
+- **Step 3**: Forward verification: Match each header column to corresponding data column
+- **Step 4**: Backward verification: Confirm each data column maps back to correct header
+- **Step 5**: Arithmetic validation: Verify row/column calculations account for blank cell shifts
+
+**EXAMPLE FAILURE PREVENTION:**
+```
+CSV Header Row: Name,Age,,City,Score
+Data Row: John,25,,NYC,95
+
+❌ WRONG: Assume columns are [Name,Age,City,Score] - ignores blank column
+✅ CORRECT: Map as [Name,Age,BLANK,City,Score] - blank shifts City to position 4
+```
+
+**NEVER PROCEED WITHOUT COMPLETE COLUMN MAPPING VERIFICATION**
 
 ## Quality Control Workflow
 

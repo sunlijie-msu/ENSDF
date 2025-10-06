@@ -1036,7 +1036,6 @@ WRONG approach:
 - Continue editing after any error
 ```
 
-**CRITICAL: If any edit causes file corruption, STOP immediately and inform user**
 
 ### CSV/Tabular Data Processing
 **CRITICAL AI WEAKNESS MITIGATION - COLUMN ALIGNMENT AND BLANK CELL HANDLING**
