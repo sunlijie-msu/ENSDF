@@ -866,7 +866,14 @@ def validate_dri_field(filename):
                 is_digit = dri_field_stripped.isdigit()
                 is_marker = dri_field_stripped in valid_dri_markers
                 
-                if not (is_digit or is_marker):
+                # Check if this might be a partial marker (e.g., 'L' from 'LT' extending to col 32)
+                is_partial_marker = False
+                if len(dri_field_stripped) == 1 and len(line_content) >= 32:
+                    # Check if combining with next character makes a valid marker
+                    extended = dri_field_stripped + line_content[31]
+                    is_partial_marker = extended in valid_dri_markers
+                
+                if not (is_digit or is_marker or is_partial_marker):
                     dri_field_errors += 1
                     print(f"[ERROR] Line {line_num}: Invalid DRI field content '{dri_field_stripped}'")
                     print(f"   -> Valid DRI: digits (1-2), LT, GT, LE, GE, AP, SY, CA")
@@ -884,6 +891,581 @@ def validate_dri_field(filename):
     else:
         total_errors = ri_field_errors + dri_field_errors
         print(f"[ERROR] ERRORS: {total_errors} DRI field validation errors found!")
+        return False
+
+def validate_e_field(filename):
+    """
+    Validate E field (columns 10-19) positioning in L and G records.
+    
+    CRITICAL VALIDATION: Ensures energy values are LEFT-JUSTIFIED at column 10.
+    
+    ENSDF Format (applies to both L and G records):
+    - Columns 1-5: NUCID
+    - Columns 6-9: Must be blank
+    - Columns 10-19: Energy (E field) - LEFT-JUSTIFIED at column 10
+    - Columns 20-21: Energy uncertainty (DE field)
+    
+    Common Error: Energy values shifted right (not starting at column 10)
+    """
+    print(f"\nE FIELD POSITIONING VALIDATION: {filename}")
+    print("=" * 60)
+    print("Checking E field (energy) LEFT-JUSTIFICATION at column 10...")
+    print("ENSDF Rule: Energy values must start at column 10 (L and G records)")
+    print()
+    print('ENSDF 80-Column Ruler:')
+    print('         1         2         3         4         5         6         7         8')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+    print(' ' * 9 + '^---------^ ^^')
+    print(' ' * 9 + '10-19 (E)   20-21 (DE)')
+    print(' ' * 9 + '^- Energy must start at column 10')
+    print()
+    
+    records_analyzed = 0
+    e_errors = 0
+    error_details = []
+    
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    
+    for line_num, line in enumerate(lines, 1):
+        line_content = line.rstrip('\n\r')
+        
+        # Check for L or G records (column 8='L' or 'G', columns 6-7 are blank)
+        if len(line_content) < 20:
+            continue
+        
+        record_type = line_content[7] if len(line_content) > 7 else ''
+        if record_type not in ['L', 'G']:
+            continue
+        
+        # Skip comment lines (cL, cG)
+        if line_content[5] != ' ' or line_content[6] != ' ':
+            continue
+        
+        records_analyzed += 1
+        
+        # Extract E field area (columns 10-19, 0-based index 9:19)
+        e_field = line_content[9:19]
+        
+        # Skip if E field is completely empty
+        if not e_field.strip():
+            continue
+        
+        # Check if energy value is LEFT-JUSTIFIED (starts at column 10)
+        # Column 10 should have a digit or decimal point, not a space
+        col10_char = line_content[9]  # Column 10 (0-based index 9)
+        
+        if col10_char == ' ' and e_field.strip():
+            # Energy value is shifted right (doesn't start at column 10)
+            e_errors += 1
+            
+            # Find where it actually starts
+            actual_start = 10
+            for i, char in enumerate(e_field):
+                if char not in [' ', '']:
+                    actual_start = 10 + i
+                    break
+            
+            error_details.append({
+                'line_num': line_num,
+                'line': line_content,
+                'record_type': record_type,
+                'e_field': e_field,
+                'actual_start': actual_start
+            })
+            
+            if e_errors <= 10:  # Show first 10 errors
+                print(f"[ERROR] Line {line_num}: {record_type}-record energy shifted right")
+                print(f"   E field (cols 10-19): [{e_field}]")
+                print(f"   Energy starts at column {actual_start} (should be 10)")
+                print(f"   Full line: {line_content}")
+                print(f"   FIX: Remove leading spaces to LEFT-JUSTIFY at column 10")
+                print()
+    
+    if e_errors > 10:
+        print(f"... and {e_errors - 10} more errors (showing first 10 only)")
+        print()
+    
+    print(f"E FIELD SUMMARY:")
+    print(f"  L/G records analyzed: {records_analyzed}")
+    print(f"  Energy positioning errors: {e_errors}")
+    print()
+    
+    if e_errors == 0:
+        print(f"[OK] SUCCESS: All energy values correctly LEFT-JUSTIFIED at column 10")
+        return True
+    else:
+        print(f"[ERROR] ERRORS: {e_errors} energy field positioning errors found!")
+        return False
+
+def validate_ri_field(filename):
+    """
+    Validate RI field (columns 23-29) positioning in G-records.
+    
+    CRITICAL VALIDATION: Ensures RI values start at column 23 (LEFT-JUSTIFIED)
+    and that column 22 is a SPACE (readability space between DE and RI fields).
+    
+    ENSDF G-Record Format:
+    - Columns 10-19: Energy (E field)
+    - Columns 20-21: Energy uncertainty (DE field)
+    - Column 22: MUST BE SPACE (readability space)
+    - Columns 23-29: Relative intensity (RI field) - LEFT-JUSTIFIED at column 23
+    - Columns 30-31: RI uncertainty (DRI field)
+    
+    Common Error: RI values shifted left by 1 column (starting at column 22)
+    This causes column 22 to contain a digit instead of a space.
+    """
+    print(f"\nRI FIELD POSITIONING VALIDATION: {filename}")
+    print("=" * 60)
+    print("Checking RI field LEFT-JUSTIFICATION at column 23...")
+    print("ENSDF Rule: Column 22 = SPACE, RI value starts at column 23")
+    print()
+    print('ENSDF 80-Column Ruler:')
+    print('         1         2         3         4         5         6         7         8')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+    print(' ' * 19 + '^^^ ^^^^^^^^^^')
+    print(' ' * 19 + '20  23-29 (RI field)')
+    print(' ' * 19 + 'DE  Must start at col 23')
+    print(' ' * 21 + '^- Column 22 MUST be SPACE')
+    print()
+    
+    g_records_analyzed = 0
+    ri_errors = 0
+    error_details = []
+    
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    
+    for line_num, line in enumerate(lines, 1):
+        line_content = line.rstrip('\n\r')
+        
+        # Only check G-records (column 8='G', columns 6-7 are blank spaces)
+        if len(line_content) < 32:
+            continue
+        if not (line_content[7] == 'G' and line_content[5] == ' ' and line_content[6] == ' '):
+            continue
+        
+        g_records_analyzed += 1
+        
+        # Extract RI field area (columns 23-29, 0-based index 22:29)
+        ri_field = line_content[22:29]
+        
+        # Skip if RI field is completely empty
+        if not ri_field.strip():
+            continue
+        
+        # CRITICAL CHECK: Column 22 must be a SPACE
+        col22_char = line_content[21] if len(line_content) > 21 else ' '  # Column 22 (0-based index 21)
+        
+        if col22_char != ' ':
+            # RI is shifted left - column 22 has content (should be space)
+            ri_errors += 1
+            error_details.append({
+                'line_num': line_num,
+                'line': line_content,
+                'col22_char': col22_char,
+                'ri_field': ri_field
+            })
+            
+            if ri_errors <= 10:  # Show first 10 errors
+                print(f"[ERROR] Line {line_num}: RI shifted left - column 22 contains '{col22_char}' (should be SPACE)")
+                print(f"   RI field (cols 23-29): [{ri_field}]")
+                print(f"   Full line: {line_content}")
+                print(f"   FIX: Insert space at column 22 to shift RI right to column 23")
+                print()
+        
+        # SECONDARY CHECK: RI should be LEFT-JUSTIFIED (start at column 23, not 24+)
+        elif line_content[22] == ' ' and ri_field[1:].strip():
+            # First character (col 23) is space but there's content later - shifted right
+            ri_errors += 1
+            error_details.append({
+                'line_num': line_num,
+                'line': line_content,
+                'error_type': 'RI shifted right',
+                'ri_field': ri_field
+            })
+            
+            if ri_errors <= 10:
+                print(f"[ERROR] Line {line_num}: RI shifted right - starts after column 23")
+                print(f"   RI field (cols 23-29): [{ri_field}]")
+                print(f"   Full line: {line_content}")
+                print(f"   FIX: Remove leading space(s) to LEFT-JUSTIFY at column 23")
+                print()
+    
+    if ri_errors > 10:
+        print(f"... and {ri_errors - 10} more errors (showing first 10 only)")
+        print()
+    
+    print(f"RI FIELD SUMMARY:")
+    print(f"  G-records analyzed: {g_records_analyzed}")
+    print(f"  RI positioning errors: {ri_errors}")
+    print()
+    
+    if ri_errors == 0:
+        print(f"[OK] SUCCESS: All RI fields correctly positioned at column 23")
+        return True
+    else:
+        print(f"[ERROR] ERRORS: {ri_errors} RI field positioning errors found!")
+        print()
+        print("CRITICAL FIX NEEDED:")
+        print("  Run: python .github/fix_ri_positioning.py \"filename.ens\"")
+        print("  Or manually insert space at column 22 for each error")
+        print()
+        return False
+
+def validate_m_field(filename):
+    """
+    Validate M field (columns 33-41) positioning in G-records.
+    
+    CRITICAL VALIDATION: Ensures multipolarity values are LEFT-JUSTIFIED at column 33.
+    
+    ENSDF G-Record Format:
+    - Columns 23-29: Relative intensity (RI field)
+    - Columns 30-31: RI uncertainty (DRI field)
+    - Column 32: MUST BE SPACE (readability space)
+    - Columns 33-41: Multipolarity (M field) - LEFT-JUSTIFIED at column 33
+    - Columns 42-49: Mixing ratio (MR field)
+    
+    Common multipolarity values: E1, E2, E3, M1, M2, M3, D, Q, O, M1+E2, D+Q, etc.
+    """
+    print(f"\nM FIELD POSITIONING VALIDATION: {filename}")
+    print("=" * 60)
+    print("Checking M field (multipolarity) LEFT-JUSTIFICATION at column 33...")
+    print("ENSDF Rule: Multipolarity values must start at column 33")
+    print()
+    print('ENSDF 80-Column Ruler:')
+    print('         1         2         3         4         5         6         7         8')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+    print(' ' * 32 + '^--------^')
+    print(' ' * 32 + '33-41 (M field)')
+    print(' ' * 32 + '^- Multipolarity must start at column 33')
+    print()
+    
+    g_records_analyzed = 0
+    m_errors = 0
+    error_details = []
+    
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    
+    for line_num, line in enumerate(lines, 1):
+        line_content = line.rstrip('\n\r')
+        
+        # Only check G-records (column 8='G', columns 6-7 are blank)
+        if len(line_content) < 42:
+            continue
+        if not (line_content[7] == 'G' and line_content[5] == ' ' and line_content[6] == ' '):
+            continue
+        
+        g_records_analyzed += 1
+        
+        # Extract M field area (columns 33-41, 0-based index 32:41)
+        m_field = line_content[32:41]
+        
+        # Skip if M field is completely empty
+        if not m_field.strip():
+            continue
+        
+        # Check if M value is LEFT-JUSTIFIED (starts at column 33)
+        col33_char = line_content[32]  # Column 33 (0-based index 32)
+        
+        if col33_char == ' ' and m_field.strip():
+            # M value is shifted right (doesn't start at column 33)
+            m_errors += 1
+            
+            # Find where it actually starts
+            actual_start = 33
+            for i, char in enumerate(m_field):
+                if char not in [' ', '']:
+                    actual_start = 33 + i
+                    break
+            
+            error_details.append({
+                'line_num': line_num,
+                'line': line_content,
+                'm_field': m_field,
+                'actual_start': actual_start
+            })
+            
+            if m_errors <= 10:
+                print(f"[ERROR] Line {line_num}: Multipolarity shifted right")
+                print(f"   M field (cols 33-41): [{m_field}]")
+                print(f"   M starts at column {actual_start} (should be 33)")
+                print(f"   Full line: {line_content}")
+                print(f"   FIX: Remove leading spaces to LEFT-JUSTIFY at column 33")
+                print()
+    
+    if m_errors > 10:
+        print(f"... and {m_errors - 10} more errors (showing first 10 only)")
+        print()
+    
+    print(f"M FIELD SUMMARY:")
+    print(f"  G-records with M field analyzed: {sum(1 for _, line in enumerate(open(filename)) if len(line) >= 42 and line[7] == 'G' and line[5] == ' ' and line[6] == ' ' and line[32:41].strip())}")
+    print(f"  Multipolarity positioning errors: {m_errors}")
+    print()
+    
+    if m_errors == 0:
+        print(f"[OK] SUCCESS: All multipolarity values correctly LEFT-JUSTIFIED at column 33")
+        return True
+    else:
+        print(f"[ERROR] ERRORS: {m_errors} multipolarity field positioning errors found!")
+        return False
+
+def validate_mr_field(filename):
+    """
+    Validate MR field (columns 42-49) positioning in G-records.
+    
+    CRITICAL VALIDATION: Ensures mixing ratio values are LEFT-JUSTIFIED at column 42.
+    
+    ENSDF G-Record Format:
+    - Columns 33-41: Multipolarity (M field)
+    - Columns 42-49: Mixing ratio (MR field) - LEFT-JUSTIFIED at column 42
+    - Columns 50-55: MR uncertainty (DMR field)
+    
+    Mixing ratio format: +1.23, -0.45, >+2.1, <-0.8, etc.
+    Always include sign (+ or -)
+    """
+    print(f"\nMR FIELD POSITIONING VALIDATION: {filename}")
+    print("=" * 60)
+    print("Checking MR field (mixing ratio) LEFT-JUSTIFICATION at column 42...")
+    print("ENSDF Rule: Mixing ratio values must start at column 42")
+    print()
+    print('ENSDF 80-Column Ruler:')
+    print('         1         2         3         4         5         6         7         8')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+    print(' ' * 41 + '^-------^')
+    print(' ' * 41 + '42-49 (MR field)')
+    print(' ' * 41 + '^- Mixing ratio must start at column 42')
+    print()
+    
+    g_records_analyzed = 0
+    mr_errors = 0
+    error_details = []
+    
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    
+    for line_num, line in enumerate(lines, 1):
+        line_content = line.rstrip('\n\r')
+        
+        # Only check G-records (column 8='G', columns 6-7 are blank)
+        if len(line_content) < 50:
+            continue
+        if not (line_content[7] == 'G' and line_content[5] == ' ' and line_content[6] == ' '):
+            continue
+        
+        g_records_analyzed += 1
+        
+        # Extract MR field area (columns 42-49, 0-based index 41:49)
+        mr_field = line_content[41:49]
+        
+        # Skip if MR field is completely empty
+        if not mr_field.strip():
+            continue
+        
+        # Check if MR value is LEFT-JUSTIFIED (starts at column 42)
+        col42_char = line_content[41]  # Column 42 (0-based index 41)
+        
+        if col42_char == ' ' and mr_field.strip():
+            # MR value is shifted right (doesn't start at column 42)
+            mr_errors += 1
+            
+            # Find where it actually starts
+            actual_start = 42
+            for i, char in enumerate(mr_field):
+                if char not in [' ', '']:
+                    actual_start = 42 + i
+                    break
+            
+            error_details.append({
+                'line_num': line_num,
+                'line': line_content,
+                'mr_field': mr_field,
+                'actual_start': actual_start
+            })
+            
+            if mr_errors <= 10:
+                print(f"[ERROR] Line {line_num}: Mixing ratio shifted right")
+                print(f"   MR field (cols 42-49): [{mr_field}]")
+                print(f"   MR starts at column {actual_start} (should be 42)")
+                print(f"   Full line: {line_content}")
+                print(f"   FIX: Remove leading spaces to LEFT-JUSTIFY at column 42")
+                print()
+    
+    if mr_errors > 10:
+        print(f"... and {mr_errors - 10} more errors (showing first 10 only)")
+        print()
+    
+    print(f"MR FIELD SUMMARY:")
+    print(f"  G-records with MR field analyzed: {sum(1 for _, line in enumerate(open(filename)) if len(line) >= 50 and line[7] == 'G' and line[5] == ' ' and line[6] == ' ' and line[41:49].strip())}")
+    print(f"  Mixing ratio positioning errors: {mr_errors}")
+    print()
+    
+    if mr_errors == 0:
+        print(f"[OK] SUCCESS: All mixing ratio values correctly LEFT-JUSTIFIED at column 42")
+        return True
+    else:
+        print(f"[ERROR] ERRORS: {mr_errors} mixing ratio field positioning errors found!")
+        return False
+
+def validate_cc_field(filename):
+    """
+    Validate CC field (columns 56-62) positioning in G-records.
+    
+    CRITICAL VALIDATION: Ensures conversion coefficient values are LEFT-JUSTIFIED at column 56.
+    
+    ENSDF G-Record Format:
+    - Columns 50-55: MR uncertainty (DMR field)
+    - Columns 56-62: Conversion coefficient (CC field) - LEFT-JUSTIFIED at column 56
+    - Columns 63-64: CC uncertainty (DCC field)
+    
+    Conversion coefficient examples: 0.090, 0.05, 1.23, etc.
+    """
+    print(f"\nCC FIELD POSITIONING VALIDATION: {filename}")
+    print("=" * 60)
+    print("Checking CC field (conversion coefficient) LEFT-JUSTIFICATION at column 56...")
+    print("ENSDF Rule: Conversion coefficient values must start at column 56")
+    print()
+    print('ENSDF 80-Column Ruler:')
+    print('         1         2         3         4         5         6         7         8')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+    print(' ' * 55 + '^------^')
+    print(' ' * 55 + '56-62 (CC field)')
+    print(' ' * 55 + '^- CC must start at column 56')
+    print()
+    
+    g_records_analyzed = 0
+    cc_errors = 0
+    
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    
+    for line_num, line in enumerate(lines, 1):
+        line_content = line.rstrip('\n\r')
+        
+        # Only check G-records
+        if len(line_content) < 63:
+            continue
+        if not (line_content[7] == 'G' and line_content[5] == ' ' and line_content[6] == ' '):
+            continue
+        
+        g_records_analyzed += 1
+        
+        # Extract CC field area (columns 56-62, 0-based index 55:62)
+        cc_field = line_content[55:62]
+        
+        # Skip if CC field is completely empty
+        if not cc_field.strip():
+            continue
+        
+        # Check if CC value is LEFT-JUSTIFIED (starts at column 56)
+        col56_char = line_content[55]  # Column 56 (0-based index 55)
+        
+        if col56_char == ' ' and cc_field.strip():
+            # CC value is shifted right
+            cc_errors += 1
+            
+            if cc_errors <= 10:
+                print(f"[ERROR] Line {line_num}: Conversion coefficient shifted right")
+                print(f"   CC field (cols 56-62): [{cc_field}]")
+                print(f"   Full line: {line_content}")
+                print(f"   FIX: Remove leading spaces to LEFT-JUSTIFY at column 56")
+                print()
+    
+    if cc_errors > 10:
+        print(f"... and {cc_errors - 10} more errors (showing first 10 only)")
+        print()
+    
+    print(f"CC FIELD SUMMARY:")
+    print(f"  G-records with CC field: {sum(1 for _, line in enumerate(open(filename)) if len(line) >= 63 and line[7] == 'G' and line[5] == ' ' and line[6] == ' ' and line[55:62].strip())}")
+    print(f"  CC positioning errors: {cc_errors}")
+    print()
+    
+    if cc_errors == 0:
+        print(f"[OK] SUCCESS: All conversion coefficient values correctly LEFT-JUSTIFIED at column 56")
+        return True
+    else:
+        print(f"[ERROR] ERRORS: {cc_errors} CC field positioning errors found!")
+        return False
+
+def validate_ti_field(filename):
+    """
+    Validate TI field (columns 65-74) positioning in G-records.
+    
+    CRITICAL VALIDATION: Ensures total intensity values are LEFT-JUSTIFIED at column 65.
+    
+    ENSDF G-Record Format:
+    - Columns 63-64: CC uncertainty (DCC field)
+    - Columns 65-74: Total transition intensity (TI field) - LEFT-JUSTIFIED at column 65
+    - Columns 75-76: TI uncertainty (DTI field)
+    
+    Total intensity examples: 71.0, 5.1, 100.0, etc.
+    """
+    print(f"\nTI FIELD POSITIONING VALIDATION: {filename}")
+    print("=" * 60)
+    print("Checking TI field (total intensity) LEFT-JUSTIFICATION at column 65...")
+    print("ENSDF Rule: Total intensity values must start at column 65")
+    print()
+    print('ENSDF 80-Column Ruler:')
+    print('         1         2         3         4         5         6         7         8')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+    print(' ' * 64 + '^---------^')
+    print(' ' * 64 + '65-74 (TI field)')
+    print(' ' * 64 + '^- TI must start at column 65')
+    print()
+    
+    g_records_analyzed = 0
+    ti_errors = 0
+    
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    
+    for line_num, line in enumerate(lines, 1):
+        line_content = line.rstrip('\n\r')
+        
+        # Only check G-records
+        if len(line_content) < 75:
+            continue
+        if not (line_content[7] == 'G' and line_content[5] == ' ' and line_content[6] == ' '):
+            continue
+        
+        g_records_analyzed += 1
+        
+        # Extract TI field area (columns 65-74, 0-based index 64:74)
+        ti_field = line_content[64:74]
+        
+        # Skip if TI field is completely empty
+        if not ti_field.strip():
+            continue
+        
+        # Check if TI value is LEFT-JUSTIFIED (starts at column 65)
+        col65_char = line_content[64]  # Column 65 (0-based index 64)
+        
+        if col65_char == ' ' and ti_field.strip():
+            # TI value is shifted right
+            ti_errors += 1
+            
+            if ti_errors <= 10:
+                print(f"[ERROR] Line {line_num}: Total intensity shifted right")
+                print(f"   TI field (cols 65-74): [{ti_field}]")
+                print(f"   Full line: {line_content}")
+                print(f"   FIX: Remove leading spaces to LEFT-JUSTIFY at column 65")
+                print()
+    
+    if ti_errors > 10:
+        print(f"... and {ti_errors - 10} more errors (showing first 10 only)")
+        print()
+    
+    print(f"TI FIELD SUMMARY:")
+    print(f"  G-records with TI field: {sum(1 for _, line in enumerate(open(filename)) if len(line) >= 75 and line[7] == 'G' and line[5] == ' ' and line[6] == ' ' and line[64:74].strip())}")
+    print(f"  TI positioning errors: {ti_errors}")
+    print()
+    
+    if ti_errors == 0:
+        print(f"[OK] SUCCESS: All total intensity values correctly LEFT-JUSTIFIED at column 65")
+        return True
+    else:
+        print(f"[ERROR] ERRORS: {ti_errors} TI field positioning errors found!")
         return False
 
 def validate_gt_lt_placement(filename):
@@ -1154,17 +1736,29 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
     else:
         print("ERROR: Field positioning errors found - see details above")
     
-    # Always validate DE fields, S fields, J-pi fields, MUL fields, DRI fields, GT/LT placement, and comment flags unless header-only mode
+    # Always validate all field positions unless header-only mode
     if not header_only:
+        # Field positioning validations
+        e_field_success = validate_e_field(filename)  # Energy field validation (L and G records)
         de_field_success = validate_de_field(filename)
         s_field_success = validate_s_field(filename)
         jp_field_success = validate_jp_field(filename)
-        mul_field_success = validate_mul_field(filename)
-        dri_field_success = validate_dri_field(filename)
-        gt_lt_placement_success = validate_gt_lt_placement(filename)  # NEW SEMANTIC VALIDATION
+        
+        # G-record specific validations (in field order)
+        ri_field_success = validate_ri_field(filename)  # RI field positioning (cols 23-29)
+        dri_field_success = validate_dri_field(filename)  # DRI field content (cols 30-31)
+        m_field_success = validate_m_field(filename)  # Multipolarity field (cols 33-41)
+        mr_field_success = validate_mr_field(filename)  # Mixing ratio field (cols 42-49)
+        mul_field_success = validate_mul_field(filename)  # MUL field validation
+        cc_field_success = validate_cc_field(filename)  # Conversion coefficient (cols 56-62)
+        ti_field_success = validate_ti_field(filename)  # Total intensity (cols 65-74)
+        
+        # Semantic and flag validations
+        gt_lt_placement_success = validate_gt_lt_placement(filename)  # Semantic GT/LT validation
         comment_flag_success = validate_comment_flags(filename)
         g_record_validation_success = validate_g_record_flags(filename)
-        return (not errors_found) and de_field_success and s_field_success and jp_field_success and mul_field_success and dri_field_success and gt_lt_placement_success and comment_flag_success and g_record_validation_success
+        
+        return (not errors_found) and e_field_success and de_field_success and s_field_success and jp_field_success and ri_field_success and dri_field_success and m_field_success and mr_field_success and mul_field_success and cc_field_success and ti_field_success and gt_lt_placement_success and comment_flag_success and g_record_validation_success
         
     return not errors_found
 
