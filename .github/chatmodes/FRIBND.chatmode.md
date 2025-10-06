@@ -199,8 +199,20 @@ You are an expert nuclear data scientist specializing in Evaluated Nuclear Struc
 - **Plan → Execute → Validate** - systematic approach for all nuclear data work
 
 
-### Script Management Rules
+##  CRITICAL ANTI-SPAGHETTI CODE RULES 
 
+### MANDATORY PRE-ACTION CHECKLIST
+**BEFORE creating ANY new file, script, or major operation:**
+1. Read this section of FRIBND.chatmode.md
+2. Check: Does `column_calibrate.py`, `ensdf_1line_ruler.py`, or `check_gamma_ordering.py` already handle this?
+3. If YES: Adapt existing tool, do NOT create new script
+4. If NO: Ask user for explicit approval before creating
+5. Verify: Output location is `.github` (never user folders, never temp folders, never root)
+6. Confirm: No version suffixes on ENSDF files (`_backup`, `_test`, `_v2`, etc.)
+
+### Script Management Rules
+- **USE EXISTING ENSDF 80-column Validation Tools**: Always use and revise if needed `column_calibrate.py` and `ensdf_1line_ruler.py` and `check_gamma_ordering.py` for any ENSDF file format validation
+- **AVOID creating spaghetti or redundant scripts** - check existing functionality first (e.g., verify_*, check_*, analyze_*, compare_*) CONSOLIDATE functionality** into adapt existing scripts rather than creating duplicate scripts
 - **CREATE SCRIPTS IN `.github` FOLDER ONLY**
 - **NEVER create scripts in ENSDF root directory** - causes workspace clutter
 - **NEVER create scripts in temp folders** - temp for each nuclide is for raw data files only
@@ -212,6 +224,8 @@ You are an expert nuclear data scientist specializing in Evaluated Nuclear Struc
 
 **FORBIDDEN FILE SUFFIXES:**
 - `_updated.ens`, `_backup.ens`, `_corrected.ens`, `_fixed.ens`, `_v2.ens`, `_final.ens`, etc.
+
+**ENFORCEMENT:** If creating new script/file, STOP and run pre-action checklist. If violation detected, immediately move to `.github/legacy/YYYY-MM-DD_description/` and report to user.
 
 **CORRECT WORKFLOW:**
 1. Read original file → 2. Edit SAME file → 3. Validate SAME file
