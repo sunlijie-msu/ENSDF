@@ -76,8 +76,9 @@ def fix_ri_alignment(input_file, output_file=None, dry_run=False):
         fixed_line = fixed_line + '\n'
         
         # Verify fix
-        if len(fixed_line.rstrip()) != 80:
-            errors.append(f"Line {line_num}: Fixed line length = {len(fixed_line.rstrip())} (expected 80)")
+        line_check = fixed_line.rstrip('\n')  # Remove ONLY newline, keep trailing spaces
+        if len(line_check) != 80:
+            errors.append(f"Line {line_num}: Fixed line length = {len(line_check)} (expected 80)")
             continue
         
         if fixed_line[21] != ' ':
@@ -91,8 +92,8 @@ def fix_ri_alignment(input_file, output_file=None, dry_run=False):
         # Show first 10 fixes
         if fixed_count <= 10:
             print(f"Line {line_num:4d}:")
-            print(f"  OLD: {original_line.rstrip()}")
-            print(f"  NEW: {fixed_line.rstrip()}")
+            print(f"  OLD: {original_line.rstrip(chr(10))}")  # Remove only newline
+            print(f"  NEW: {fixed_line.rstrip(chr(10))}")     # Remove only newline
             print()
     
     print("=" * 80)
