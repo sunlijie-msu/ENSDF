@@ -54,9 +54,9 @@
  35CL2c  de Graaff accelerator. Targets were 4 and 1 |mg/cm{+2} Sb{-2}S{-3} (90%
  35CL3c  in {+34}S) evaporated onto 10 |mg/cm{+2} carbon backings. Scattered    
  35CL4c  protons were detected using three silicon surface barrier detectors. |g
- 35CL5c  rays were detected using a 10-cm by 10-cm NaI(Tl) detector. Measured   
- 35CL6c  |s(E{-p}), E|g, |g(|q). Deduced levels, J, |p, widths, and resonance   
- 35CL7c  strengths.                                                             
+ 35CL5c  rays were detected using a 10-cm by 10-cm NaI(Tl) detector and a Ge(Li)
+ 35CL6c  detector. Measured |s(E{-p}), E|g, |g(|q). Deduced levels, J, |p,      
+ 35CL7c  widths, and resonance strengths.                                       
  35CL d                                                             
  35CL c  1960An06: 0.7-1.9-MeV protons were produced from the electrostatic     
  35CL2c  generator of the Physical-Technical Institute of the Ukrainian SSR     
@@ -213,12 +213,13 @@
  35CL cG RI(P)$ From 1971Pr11                                                   
  35CL cG RI(X)$Transitions to 4177 and 4173 not resolved (1976Sp08)             
  35CL cG M,MR$From |g(|q) and/or |g|g(|q).                                      
- 35CL cL E$From E{-c.m.}+S(p)({+35}Cl), where S(p)({+35}Cl)=6370.81 {I4}        
- 35CL2cL (2021Wa16). E{-c.m.}=E{-p}(lab)|*m({+34}S)/[m{-p}+m({+34}S)]. Weighted 
- 35CL3cL average is taken when multiple E{-p}(lab) values are available. For    
- 35CL4cL levels below 8.2 MeV (E{-p}<1.9 MeV), E{-p}(lab) mainly from 1972Hu10  
- 35CL5cL and 1976Me12; for levels above 8.2 MeV (E{-p}>1.9 MeV), E{-p}(lab)     
- 35CL6cL mainly from 1976Sp08, unless otherwise noted.                          
+ 35CL cL E$For resonances above 7.0 MeV, E(level)=E{-c.m.}+S(p)({+35}Cl), where 
+ 35CL2cL S(p)({+35}Cl)=6370.81 {I4} (2021Wa16).                                 
+ 35CL3cL E{-c.m.}=E{-p}(lab)|*m({+34}S)/[m{-p}+m({+34}S)]. Weighted average is  
+ 35CL4cL taken when multiple E{-p}(lab) measurements are available. For levels  
+ 35CL5cL below 8.2 MeV (E{-p}<1.9 MeV), E{-p}(lab) is mainly from 1972Hu10,     
+ 35CL6cL 1973Fa07, and 1976Me12; for levels above 8.2 MeV (E{-p}>1.9 MeV),      
+ 35CL7cL E{-p}(lab) is mainly from 1976Sp08, unless otherwise noted.            
  35CL cL J$ From the comparison of experimental angular distributions of |g-rays
  35CL2cL with theoretical predictions or deduced from |g-feedings, unless       
  35CL3cL otherwise noted.                                                       
@@ -229,10 +230,10 @@
  35CL2cL theory                                                                 
  35CL cL S$LABEL=E{-p}(lab) (keV)                                               
  35CL cL $Resonance strength |w|g=(2J+1)|G{-|g}|G{-p}/|G.                       
- 35CL cL $Resonance strengths are obtained from resonance |g-ray yields         
- 35CL2cL (1976Sp08). |w|g in 1976Sp08,1996Ka21,2001Vo24 are all normalized to   
- 35CL3cL |w|g=9.7 eV {I7} at E{-p}=1212 keV. |w|g in 1976Me12 are normalized to 
- 35CL4cL |w|g=21 eV {I3} at E{-p}= 1212 keV from 1966En04.                      
+ 35CL cL $Resonance strengths are mainly obtained from resonance |g-ray yields. 
+ 35CL2cL |w|g in 1976Sp08, 1996Ka21, 2001Vo24 are all normalized to |w|g=9.7 eV 
+ 35CL3cL {I7} at E{-p}=1212 keV. |w|g in 1976Me12 are normalized to |w|g=21 eV  
+ 35CL4cL {I3} at E{-p}= 1212 keV from 1966En04.                                 
  35CL PN                                                                     7  
  35CL d 
  35CL  L 0            3/2+                                                      
@@ -539,7 +540,8 @@
  35CL  G 1505.1       60     10                                                 
  35CL cG RI$from 1976Me12, 40% for decay to unknown levels (1976Me12)           
  35CL d 
- 35CL  L 5723.6     4                                                           
+ 35CL  L 5723.52   18                                                           
+ 35CL cL E$from 1981Bi05.                                                       
  35CL  G 3029.6       24     3                                                  
  35CL  G 3960.2       38     4                                                  
  35CL cG RI$ 38% for decay to others levels (1976Sp08)                          
@@ -1221,10 +1223,10 @@
  35CL  G 7867.6       62     6                                                  
  35CL d 
  35CL  L 7873                                                   1547            
- 35CL cL E$from 1960An06
+ 35CL cL E$from 1960An06                                                        
  35CL d 
  35CL  L 7880.8     3 3/2,5/2                                   1554.8    9     
- 35CL cL J$from |g(|q) in 1976Me12
+ 35CL cL J$from |g(|q) in 1976Me12                                              
  35CL cL $|w|g=1.6 eV {I5} (1972Hu10)                                           
  35CL cL $|w|g=1.3 eV (1973Fa07)                                                
  35CL cL $|w|g=2.2 eV {I7} (1976Me12)                                           
