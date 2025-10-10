@@ -373,42 +373,63 @@
  35CL2cL |d(O/Q)=0.12 {I1} would require a large E3 or M3 component, which is   
  35CL3cL ruled by RUL.                                                          
  35CL cL $10% of I|g transitions to unknown levels (1976Me12).                  
- 35CL  G 2002.7       36     5                                                  
- 35CL cG RI$weighted average of 40 {I20} (1972Hu10) and 36 {I5} (1976Me12)      
+ 35CL  G 2002.7       40     5  D+Q      +0.44   20                             
+ 35CL cG RI$weighted average of 40 {I20} (1972Hu10), 36 {I5} (1976Me12), and 54 
+ 35CL2cG {I10} (1976Sp09)                                                       
  35CL cG M,MR$D+Q from |g(|q) in 1976Sp09.                                      
  35CL cG $A{-2}=+0.52 {I5}, A{-4}=-0.02 {I6} (1976Sp09).                        
  35CL  G 2162.9       10     4                                                  
- 35CL cG RI$weighted average of 10 {I5} (1972Hu10) and 10 {I4} (1976Me12)       
- 35CL  G 3403.1       44     5                                                  
- 35CL cG RI$weighted average of 50 {I20} (1972Hu10) and 44 {I5} (1976Me12)      
- 35CL cG M,MR$D+Q from |g(|q) in 1976Sp09.                                      
+ 35CL cG RI$weighted average of 10 {I5} (1972Hu10), 10 {I4} (1976Me12), and 10  
+ 35CL2cG {I5} (1976Sp09)                                                        
+ 35CL  G 3403.1       43     5  D(+Q)    0.00    3
+ 35CL cG RI$weighted average of 50 {I20} (1972Hu10), 44 {I5} (1976Me12), and 36 
+ 35CL2cG {I10} (1976Sp09)                                                       
+ 35CL cG M,MR$D(+Q) from |g(|q) in 1976Sp09.                                    
  35CL cG $A{-2}=-0.23 {I6}, A{-4}=-0.08 {I7} (1976Sp09).                        
  35CL  G 3947.2       10     LT                                                 
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5166.3       10     LT                                                 
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 5215.8    15                  7 FS      LT                             
  35CL cL E$weighted average of 5214 {I3} (1972Hu10) and 5216.2 {I15} (1976Me12) 
  35CL cL T$from lifetime |t < 7 fs (1976Me12, DSAM)                             
+ 35CL  G 205.7        23     LT                                             H
+ 35CL  G 1042.3       60     LT                                             H
+ 35CL  G 1156.6       10     LT                                             H
+ 35CL  G 2052.7       15     LT                                             H
+ 35CL  G 2213.0       25     LT                                             H
+ 35CL  G 2521.8       15     LT                                             H
+ 35CL  G 2570.0       15     LT                                             H
  35CL  G 3452.6       6      LT                                                 
  35CL  G 3996.7       4      LT                                                 
  35CL cG RI$from 1976Me12.                                                      
  35CL  G 5215.8       100                                                       
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 5400      5                                                            
  35CL  G 2397         25     10                                                 
+ 35CL cG RI$from 1972Hu10.                                                      
  35CL  G 3637         25     10                                                 
+ 35CL cG RI$from 1972Hu10.                                                      
  35CL cG RI$50% for |g transitions to unknown levels (1972Hu10).                
  35CL d  merge with next level                                                  
  35CL  L 5403.5    10 (1/2-,3/2-)      17 FS     4                              
  35CL cL T$from lifetime |t = 17 fs {I4} (1976Me12, DSAM)                       
  35CL cL E$weighted average of 5400 {I5} (1972Hu10) and 5403.6 {I10} (1976Me12) 
- 35CL cL $20% of I|g transitions to unknown levels (1976Me12).                  
- 35CL  G 2399.8       25     5  [M2]                                            
- 35CL  G 3640.0       10     LT [M2]                                            
- 35CL cG RI$25 {I10} from 1972Hu10.                                             
- 35CL  G 4184.0       55     10 [E1]                                            
- 35CL  G 5403.2       7      LT [E1]                                            
+ 35CL cL $20% of I|g transitions to unknown levels (1976Me12). 50% for |g       
+ 35CL2cL transitions to unknown levels (1972Hu10).                              
+ 35CL  G 2399.8       25     5                                              
+ 35CL cG RI$from 1976Me12. Other: 25 {I10} (1972Hu10).                          
+ 35CL  G 3640.0       10     LT                                            
+ 35CL cG RI$from 1976Me12. Other: 25 {I10} from 1972Hu10.                       
+ 35CL  G 4184.0       55     10                                            
+ 35CL cG RI$from 1976Me12.                                                      
+ 35CL  G 5403.2       7      LT                                        
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
+ 35CL  L 5520                                                                   
+ 35CL cL E$from 1976Sp08                                                        
  35CL  L 5586      2                                                            
  35CL cL E$weighted average of 5587 {I3} (1972Hu10) and 5586 {I2} (1976Me12)    
  35CL  G 2941         40     10                                                 
@@ -416,9 +437,11 @@
  35CL  G 3822         60     10                                                 
  35CL cG RI$weighted average of 60 {I20} (1972Hu10) and 60 {I10} (1976Me12)     
  35CL  G 4366         10     LT                                                 
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5586         10     LT                                                 
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
- 35CL  L 5599.7    15 (1/2+,3/2,5/2)   3 FS      1                              
+ 35CL  L 5599.7    15                  3 FS      1                              
  35CL cL E$weighted average of 5598 {I3} (1972Hu10) and 5600.1 {I15} (1976Me12) 
  35CL cL T$from lifetime |t = 3 fs {I1} (1976Me12, DSAM)                        
  35CL  G 3836.5       27     10                                                 
@@ -426,26 +449,28 @@
  35CL  G 5599.6       74     10                                                 
  35CL cG RI$weighted average of 80 {I10} (1972Hu10) and 67 {I10} (1976Me12)     
  35CL d 
- 35CL  L 5646      2  (5/2,7/2,9/2)    4 FS      1                              
+ 35CL  L 5646      2                   4 FS      1                              
  35CL cL E$weighted average of 5645 {I3} (1972Hu10) and 5646 {I2} (1976Me12)    
  35CL cL T$from lifetime |t = 4 fs {I1} (1976Me12, DSAM)                        
  35CL  G 2482         100                                                       
+ 35CL cG RI$from 1972Hu10, 1976Me12, 1971Pr11.                                  
+ 35CL  G 2642.1                                                             V   
+ 35CL  G 3881.6                                                             V   
+ 35CL  G 5644.5      8       LT                                                 
  35CL cG RI$from 1976Me12.                                                      
- 35CL cG RI$from 1971Pr11.                                                      
- 35CL  G 5646         8      LT                                                 
  35CL d 
  35CL  L 5655      2  3/2+             20 FS     5                              
  35CL cL E$weighted average of 5651 {I3} (1972Hu10) and 5656 {I2} (1976Me12)    
  35CL cL T$from lifetime |t = 20 fs {I5} (1976Me12, DSAM)                       
- 35CL cL J$from 2001Vo24.                                                       
+ 35CL cL J$from 2001Vo24???                                                     
  35CL cL $|G{-|g}=0.033 eV {I10} (2001Vo24).                                    
  35CL cL $14% of I|g transitions to unknown levels (1976Me12).                  
- 35CL  G 2652         80     5  [M1,E2]                                         
+ 35CL  G 2652         80     5                                                  
  35CL cG RI$from 1976Me12.                                                      
- 35CL cG RI$ 14% for decay to unknown levels (1976Me12).                        
- 35CL  G 3892         6      2  [M1,E2]                                         
- 35CL  G 4436         6      LT [M1,E2]                                         
- 35CL  G 5656                                                                   
+ 35CL  G 3892         6      2                                                  
+ 35CL cG RI$from 1976Me12.                                                      
+ 35CL  G 4436         6      LT                                                 
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 5683      2                                                            
  35CL cL E$weighted average of 5682 {I5} (1972Hu10) and 5683 {I2} (1976Me12)    
@@ -454,48 +479,61 @@
  35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 5723.52   18                                                           
- 35CL cL E$from 1981Bi05.                                                       
+ 35CL cL E$from 1981Bi05. 38% of I|g transitions to unknown levels (1976Sp09).  
+ 35CL  G 3029.6       24     3                                                  
+ 35CL cG RI$from 1976Sp09.                                                      
+ 35CL  G 3960.2       38     4                                                  
+ 35CL cG RI$from 1976Sp09.                                                      
  35CL d 
- 35CL  L 5758      3  (1/2,3/2)                                                 
+ 35CL  L 5758      3                                                   
  35CL cL E$weighted average of 5754 {I5} (1972Hu10) and 5759 {I3} (1976Me12)    
- 35CL cL $100% for |g transitions to unknown levels (1972Hu10).                 
+ 35CL cL $100% of |g transitions to unknown levels (1972Hu10).                  
  35CL cL $25% of I|g transitions to unknown levels (1976Me12).                  
  35CL  G 1579         30     10                                                 
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4539         6      LT                                                 
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5759         45     10                                                 
- 35CL cG RI$25% for decay to unknown levels (1976Me12).                         
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 5806      2                   5 FS      1                              
  35CL cL T$from lifetime |t = 5 fs {I1} (1976Me12, DSAM)                        
  35CL cL E$weighted average of 5802 {I5} (1972Hu10) and 5806 {I2} (1976Me12).   
  35CL  G 5806         100                                                       
+ 35CL cG RI$from 1972Hu10 and 1976Me12.                                         
  35CL d 
- 35CL  L 6106.2    21 (1/2+,3/2,5/2+)  12 FS     3                              
+ 35CL  L 6106.2    21                  12 FS     3                              
  35CL cL E$weighted average of 6102 {I3} (1972Hu10) and 6107.2 {I15} (1976Me12) 
  35CL cL T$from lifetime |t = 12 fs {I3} (1976Me12, DSAM)                       
  35CL  G 4343.5       6      2                                                  
- 35CL  G 4887.5       38     10                                                 
- 35CL cG RI$weighted average of 40 {I10} (1972Hu10) and 36 {I10} (1976Me12)     
- 35CL  G 6106.6       59     10                                                 
- 35CL cG RI$weighted average of 60 {I10} (1972Hu10) and 58 {I10} (1976Me12)     
+ 35CL cG RI$from 1976Me12.                                                      
+ 35CL  G 4887.5       36     10                                                 
+ 35CL cG RI$from 1976Me12. Other: 40 {I10} (1972Hu10).                          
+ 35CL  G 6106.6       58     10                                                 
+ 35CL cG RI$from 1976Me12. Other: 60 {I10} (1972Hu10).                          
  35CL d 
  35CL  L 6181      3                                                            
  35CL cL E$from 1976Me12.                                                       
  35CL cL $55% of I|g transitions to unknown levels (1976Me12).                  
  35CL  G 6180         45     10                                                 
- 35CL cG RI$55% for decay to unknown levels (1976Me12).                         
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 6492      3                                                            
  35CL cL E$weighted average of 6489 {I5} (1972Hu10) and 6493 {I3} (1976Me12).   
  35CL  G 6492         100                                                       
  35CL d 
+ 35CL  L 6866.7    6                                            510.6     6     
+ 35CL cL S$from 1988Va06                                                        
  35CL  L 7066.4    7  5/2+                                      716.0     7     
  35CL cL S$weighted average of 716.0 {I7} (1972Hu10) and 716.0 {I10} (1976Me12) 
  35CL cL $|w|g=0.2 eV {I1} (1972Hu10).                                          
  35CL cL $|w|g=0.3 eV {I1} (1976Me12).                                          
  35CL  G 1899.6       0.9                                                       
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2891.6       0.5                                                       
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2952.3       0.6                                                       
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3006.9       1.4                                                       
  35CL cG RI$from 1976Me12.                                                      
  35CL  G 3902.3       6                                                         
