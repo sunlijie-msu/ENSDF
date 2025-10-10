@@ -19,9 +19,9 @@
  35CL cL E$weighted average of 1762.8 {I5} (1972Hu10), 1763.4 {I7} (1976Me12),  
  35CL2cL and 1763.14 {I4} (1981Bi05)                                            
  35CL  G 544.1        0.2    LT [E2]                                            
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 1763.4       100       M1+E2    +0.42   17                             
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG M,MR$from 1967Ko20 and 1967Ko23. +2.8<|d<+4.0 (1971Wi13).              
  35CL cG $|G{-|g}(M1)=0.0012 eV, |G{-g}(E2)=0.00013 eV (1967Ko23).              
  35CL cG $A{-2}=-0.24 {I6}, A{-4}=-0.08 {I7} (1971Wi13).                        
@@ -71,7 +71,7 @@
  35CL  G 1240.3       1      LE [M1,E2]                                         
  35CL cG RI$from 1972Hu10. Other: I|g<2 (1976Me12).                             
  35CL  G 1784.4       3      LT [E2]                                            
- 35CL cG E,RI$from 1976Me12. Other: I|g|<5 (1972Hu10).                          
+ 35CL cG RI$from 1976Me12. Other: I|g|<5 (1972Hu10).                            
  35CL  G 3003.6       100       M1+E2    0.22    1
  35CL cG RI$from 1972Hu10 and 1976Me12                                          
  35CL cG M,MR$from 1967Ko20??? and 1967Ko23???                                  
@@ -178,26 +178,34 @@
  35CL3cL (1976Me12, DSAM)                                                       
  35CL cL E$weighted average of 4058.4 {I8} (1972Hu10), 4059.4 {I4} (1976Me12),  
  35CL2cL and 4059.2 {I3} (1981Bi05)                                             
- 35CL  G 1364.7       1.2    4  [E1]                                            
- 35CL  G 1414.7       1      LT [M2]                                            
- 35CL  G 2295.9       4.8    15 [E1]                                        K   
- 35CL cG E,RI$from 1976Me12                                                     
- 35CL  G 2840.0       94     2  [E1]                                        K   
- 35CL cG E,RI$from 1976Me12                                                     
- 35CL cG RI$45 {I5} from 1971Wi13.                                              
- 35CL  G 4059.2       2      LT [E1]                                        K   
- 35CL cG RI$20 {I2} from 1971Wi13.                                              
+ 35CL  G 896.2       6       LT                                                 
+ 35CL cG RI$from 1963Ha32.                                                      
+ 35CL  G 1056.4      3       LT                                                 
+ 35CL cG RI$from 1963Ha32.                                                      
+ 35CL  G 1364.7       1.2    4                                             
+ 35CL cG RI$from 1976Me12.                                                      
+ 35CL  G 1414.7       1      LT                                            
+ 35CL cG RI$from 1976Me12.                                                      
+ 35CL  G 2295.9       4.8    15                                            
+ 35CL cG E$other: 2296 {I7} (1970Ko33)                                          
+ 35CL cG RI$from 1976Me12. Other: 3 {I2} (1972Hu10).                            
+ 35CL  G 2840.0       94     2                                           
+ 35CL cG E$other: 2838 {I7} (1970Ko33)                                          
+ 35CL cG RI$from 1976Me12. Other: 97 {I2} (1972Hu10). 45 {I5} (1971Wi13).       
+ 35CL  G 4059.2       2      LT                                          
+ 35CL cG E$other: 4058 {I7} (1970Ko33)                                          
+ 35CL cG RI$from 1976Me12. Other: 20 {I2} (1971Wi13).                           
  35CL d 
  35CL  L 4113.7    10 7/2                                                       
  35CL cL E$weighted average of 4111 {I3} (1972Hu10) and 4114.0 {I10} (1976Me12) 
  35CL cL J$spin=7/2 from feeding |g(|q) in 1976Sp09.                            
- 35CL  G 2350.5       44     7                                                  
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL  G 2350.5       45     7           -0.16   2               
+ 35CL cG RI$weighted average of 50 {I20} (1972Hu10) and 44 {I7} (1976Me12)      
  35CL cG M,MR$D+Q from |g(|q) 1976Sp09.                                         
  35CL cG $A{-2}=+0.56 {I3}, A{-4}=+0.05 {I4} (1976Sp09).                        
  35CL  G 2894.6       10     LT                                                 
- 35CL  G 4113.7       56     7                                                  
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL  G 4113.7       55     7                                                  
+ 35CL cG RI$weighted average of 50 {I20} (1972Hu10) and 56 {I7} (1976Me12)      
  35CL cG M,MR$Q+O from |g(|q) in 1976Sp09.                                      
  35CL cG $A{-2}=+0.46 {I25}, A{-4}=-0.23 {I25} (1976Sp09).                      
  35CL d 
@@ -211,16 +219,15 @@
  35CL cL J$from |g-feeding.                                                     
  35CL cL $|G=6.5 keV {I22} (1971Wi13).                                          
  35CL  G 1480.0       25     8  [E1]                                            
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 1530.0       10     LT [E1]                                            
  35CL  G 2411.2       15     5  [E1]                                            
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2955.3       3      LE [M2]                                            
- 35CL cG E$from 1976Me12                                                        
  35CL cG RI$from 1972Hu10                                                       
  35CL cG RI$32 {I3} from 1971Wi13.                                              
  35CL  G 4174.4       60     10 [E1]                                            
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=-0.01 {I3}, A{-4}=-0.006 {I40} (1967Ta08).                      
  35CL d 
  35CL  L 4177.9    2  3/2-             39 FS     4                              
@@ -231,15 +238,15 @@
  35CL2cL and 4177.9 {I2} (1981Bi05)                                             
  35CL  G 1176.4       0.5    LT [E1]                                            
  35CL  G 1485.4       10     3  [E1]                                            
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 1535.4       0.5    LT [M2]                                            
  35CL  G 2416.6       1      LT [E1]                                            
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2960.7       30     5  [E1]                                            
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR${I4} from 1967Wa22.                                                 
  35CL  G 4179.8       60     5  [E1]                                            
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG M,MR$from 1967Wa22.                                                    
  35CL cG $pol=+0.12 {I31} (1967Wa22).                                           
  35CL d 
@@ -250,19 +257,17 @@
  35CL2cL (1972Hu11, DSAM)                                                       
  35CL cL J$spin=5/2,9/2 from feeding |g(|q) in 1976Sp09.                        
  35CL  G 1183.3       72     5  [M1,E2]                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 1343.5       4      LT [M2]                                            
  35CL  G 1652.5       4      LT [E3]                                            
  35CL  G 1702.5       28     5  [E1]                                            
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG M,MR$D+Q from |g(|q) in 1976Sp09.                                      
  35CL cG $A{-2}=-0.34 {I3}, A{-4}=-0.00 {I4} (1976Sp09).                        
  35CL  G 2583.7       3      LE [M2]                                            
- 35CL cG E$from 1976Me12                                                        
  35CL cG RI$from 1972Hu10                                                       
  35CL  G 3127.8       4      LT [M4]                                            
  35CL  G 4346.9       5      LE [E3]                                            
- 35CL cG E$from 1976Me12                                                        
  35CL cG RI$from 1972Hu10                                                       
  35CL d 
  35CL  L 4624.4    3                                                            
@@ -270,7 +275,7 @@
  35CL2cL (1981Bi05). Other: 4625 {I5} (1972Hu10)                                
  35CL cL $15% of I|g transitions to unknown levels (1976Me12).                  
  35CL  G 4623.9       85     10                                                 
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 4769.86   23 (7/2,9/2+)       110 FS    29                             
  35CL cL T$from lifetime |t = 110 fs {I29}: weighted average of |t = 270 fs     
@@ -279,7 +284,6 @@
  35CL2cL and 4769.90 {I15} (1981Bi05)                                           
  35CL  G 1603.0       59     10                                                 
  35CL cG RI$weighted average of 53 {I10} (1972Hu10) and 65 {I10} (1976Me12)     
- 35CL cG E$from 1976Me12                                                        
  35CL cG RI$47% for |g transitions to unknown levels (1972Hu10).                
  35CL  G 1763.2       35     10                                                 
  35CL  G 2072.1       10     LT                                                 
@@ -295,12 +299,10 @@
  35CL  G 2196.9       3      LT                                                 
  35CL  G 3078.2       59     5                                                  
  35CL cG RI$weighted average of 50 {I20} (1972Hu10) and 60 {I5} (1976Me12)      
- 35CL cG E$from 1976Me12                                                        
  35CL cG RI$48 {I4} from 1976Sp09.                                              
  35CL  G 3622.2       7      LT                                                 
  35CL  G 4841.3       41     5                                                  
  35CL cG RI$weighted average of 50 {I20} (1972Hu10) and 40 {I5} (1976Me12)      
- 35CL cG E$from 1976Me12                                                        
  35CL cG RI$18 {I3} from 1976Sp09, 34% for decay to other levels (1976Sp09).    
  35CL d 
  35CL  L 4854.4    19 (1/2,3/2,5/2+)   7 FS      2                              
@@ -309,7 +311,7 @@
  35CL2cL (1972Hu11, DSAM)                                                       
  35CL  G 3636.2       75     5                                                  
  35CL  G 4855.3       25     5                                                  
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 4880.96   15                  8 FS      2                              
  35CL cL T$from lifetime |t = 8 fs {I2}: weighted average of |t = 7 fs {I2}     
@@ -334,7 +336,7 @@
  35CL  G 2365.6       5      LT                                                 
  35CL  G 3246.8       10     LT                                                 
  35CL  G 3790.9       7      LT                                                 
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5010.0       100                                                       
  35CL d 
  35CL  L 5163.34   22 7/2                                                       
@@ -350,11 +352,9 @@
  35CL cG $A{-2}=+0.52 {I5}, A{-4}=-0.02 {I6} (1976Sp09).                        
  35CL  G 2162.9       10     4                                                  
  35CL cG RI$weighted average of 10 {I5} (1972Hu10) and 10 {I4} (1976Me12)       
- 35CL cG E$from 1976Me12                                                        
  35CL  G 2517         50     20                                                 
  35CL  G 3403.1       44     5                                                  
  35CL cG RI$weighted average of 40 {I20} (1972Hu10) and 44 {I5} (1976Me12)      
- 35CL cG E$from 1976Me12                                                        
  35CL cG M,MR$D+Q from |g(|q) in 1976Sp09.                                      
  35CL cG $A{-2}=-0.23 {I6}, A{-4}=-0.08 {I7} (1976Sp09).                        
  35CL  G 3947.2       10     LT                                                 
@@ -365,7 +365,7 @@
  35CL cL T$from lifetime |t < 7 fs (1976Me12, DSAM)                             
  35CL  G 3452.6       6      LT                                                 
  35CL  G 3996.7       4      LT                                                 
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5215.8       100                                                       
  35CL d 
  35CL  L 5400      5                                                            
@@ -387,10 +387,8 @@
  35CL cL E$weighted average of 5587 {I3} (1972Hu10) and 5586 {I2} (1976Me12)    
  35CL  G 2941         40     10                                                 
  35CL cG RI$weighted average of 40 {I20} (1972Hu10) and 40 {I10} (1976Me12)     
- 35CL cG E$from 1976Me12                                                        
  35CL  G 3822         60     10                                                 
  35CL cG RI$weighted average of 60 {I20} (1972Hu10) and 60 {I10} (1976Me12)     
- 35CL cG E$from 1976Me12                                                        
  35CL  G 4366         10     LT                                                 
  35CL  G 5586         10     LT                                                 
  35CL d 
@@ -399,16 +397,14 @@
  35CL cL T$from lifetime |t = 3 fs {I1} (1976Me12, DSAM)                        
  35CL  G 3836.5       27     10                                                 
  35CL cG RI$weighted average of 20 {I10} (1972Hu10) and 33 {I10} (1976Me12)     
- 35CL cG E$from 1976Me12                                                        
  35CL  G 5599.6       74     10                                                 
  35CL cG RI$weighted average of 80 {I10} (1972Hu10) and 67 {I10} (1976Me12)     
- 35CL cG E$from 1976Me12                                                        
  35CL d 
  35CL  L 5646      2  (5/2,7/2,9/2)    4 FS      1                              
  35CL cL E$weighted average of 5645 {I3} (1972Hu10) and 5646 {I2} (1976Me12)    
  35CL cL T$from lifetime |t = 4 fs {I1} (1976Me12, DSAM)                        
  35CL  G 2482         100                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG RI$from 1971Pr11.                                                      
  35CL  G 5646         8      LT                                                 
  35CL d 
@@ -419,7 +415,7 @@
  35CL cL $|G{-|g}=0.033 eV {I10} (2001Vo24).                                    
  35CL cL $14% of I|g transitions to unknown levels (1976Me12).                  
  35CL  G 2652         80     5  [M1,E2]                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG RI$ 14% for decay to unknown levels (1976Me12).                        
  35CL  G 3892         6      2  [M1,E2]                                         
  35CL  G 4436         6      LT [M1,E2]                                         
@@ -429,7 +425,7 @@
  35CL cL E$weighted average of 5682 {I5} (1972Hu10) and 5683 {I2} (1976Me12)    
  35CL cL $40% of I|g transitions to unknown levels (1976Me12).                  
  35CL  G 1503         60     10                                                 
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 5723.52   18                                                           
  35CL cL E$from 1981Bi05.                                                       
@@ -454,10 +450,8 @@
  35CL  G 4343.5       6      2                                                  
  35CL  G 4887.5       38     10                                                 
  35CL cG RI$weighted average of 40 {I10} (1972Hu10) and 36 {I10} (1976Me12)     
- 35CL cG E$from 1976Me12                                                        
  35CL  G 6106.6       59     10                                                 
  35CL cG RI$weighted average of 60 {I10} (1972Hu10) and 58 {I10} (1976Me12)     
- 35CL cG E$from 1976Me12                                                        
  35CL d 
  35CL  L 6181      3                                                            
  35CL cL E$from 1976Me12.                                                       
@@ -477,21 +471,21 @@
  35CL  G 2891.6       0.5                                                       
  35CL  G 2952.3       0.6                                                       
  35CL  G 3006.9       1.4                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3902.3       6                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4062.5       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4371.4       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4421.4       1.6                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5302.6       14                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5846.6       18                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 7065.6       49                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 7103.6    7  3/2                                       754.3     7     
  35CL cL S$weighted average of 754.1 {I7} (1972Hu10) and 754.6 {I10} (1976Me12) 
@@ -501,21 +495,21 @@
  35CL cL $|w|g=0.5 eV {I2} (1976Me12).                                          
  35CL  G 2923.7       1.5                                                       
  35CL  G 3183.0       1.5                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4099.9       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4408.9       11                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 1976Me12.                                                      
  35CL cG $A{-2}=+0.34 {I7}, A{-4}=+0.03 {I11} (1976Me12).                       
  35CL  G 5340.1       4                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5884.1       64                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 1976Me12.                                                      
  35CL cG $A{-2}=-0.53 {I8}, A{-4}=+0.01 {I11} (1976Me12).                       
  35CL  G 7103.1       15                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=+0.54 {I5}, A{-4}=-0.01 {I8} (1976Me12).                        
  35CL d 
  35CL  L 7178.8    8  1/2+                                      831.7     8     
@@ -527,26 +521,26 @@
  35CL cL $|w|g=0.4 eV {I2} (1972Hu10).                                          
  35CL cL $|w|g=0.3 eV {I1} (1976Me12).                                          
  35CL  G 1072.0       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 1775.6       1.7                                                       
  35CL  G 2337.4       1.5                                                       
  35CL  G 3004.4       0.8                                                   V   
  35CL  G 3119.7       22                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=-0.02 {I4}, A{-4}=+0.10 {I66} (1976Me12).                       
  35CL cG $A{-2}=-0.01 {I4}, A{-4}=+0.09 {I24} (2001Vo24).                       
  35CL  G 3200.0       9                                                         
  35CL  G 3211.1       10                                                        
  35CL  G 3258.3       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4484.2       4                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5959.4       17                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=-0.01 {I3}, A{-4}=+0.06 {I7} (2001Vo24).                        
  35CL cG $A{-2}=-0.01 {I5}, A{-4}=+0.07 {I8} (1976Me12).                        
  35CL  G 7178.4       38                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=-0.01 {I6}, A{-4}=-0.02 {I7} (1976Me12).                        
  35CL cG $A{-2}=-0.02 {I4}, A{-4}=-0.01 {I5} (2001Vo24).                        
  35CL d 
@@ -559,23 +553,23 @@
  35CL cL $|w|g=1.1 eV {I3} (1972Hu10).                                          
  35CL cL $|w|g=1.2 eV {I4} (1976Me12).                                          
  35CL  G 2184.2       0.8                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2338.9       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2352.9       1.8                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3014.5       16                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3135.2       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3215.5       1.8                                                   H   
  35CL  G 3227.3       2                                                     H   
  35CL  G 3273.8       4                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4499.7       1.1                                                   H   
  35CL  G 5430.9       0.5                                                   H   
  35CL  G 5974.9       67                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 7193.9       2                                                         
  35CL d 
  35CL  L 7225.7    8  5/2                                       880.0     8     
@@ -586,34 +580,34 @@
  35CL cL $|w|g=0.4 eV {I2} (1972Hu10).                                          
  35CL cL $|w|g=0.3 eV {I1} (1976Me12).                                          
  35CL  G 1117.8       1.8                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 1373.0       1                                                         
  35CL  G 1542         2.0                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 1569         0.8                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 1821.4       0.9                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2008.7       7                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3044.8       8                                                     H   
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3044.8       8                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3165.5       2                                                         
  35CL  G 3304.1       1.5                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4223.2       3                                                         
  35CL  G 4530.0       10                                                    H   
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 1976Me12.                                                      
  35CL cG $A{-2}=+0.43 {I8}, A{-4}=-0.21 {I9} (1976Me12).                        
  35CL  G 5461.1       7                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 1976Me12.                                                      
  35CL cG $A{-2}=+0.02 {I10}, A{-4}=-0.09 {I17} (1976Me12).                      
  35CL  G 7224.2       59                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 1976Me12.                                                      
  35CL cG $A{-2}=+0.40 {I7}, A{-4}=+0.04 {I12} (1976Me12).                       
  35CL d 
@@ -629,14 +623,14 @@
  35CL  G 1578         0.2                                                       
  35CL  G 3057.1       1                                                         
  35CL  G 4538.9       1.8                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4588.9       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5470.0       0.2                                                   H   
  35CL  G 6014.1       1.8                                                   H   
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 7233.1       93                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 1960An06.                                                      
  35CL d 
  35CL  L 7272.9    9  (1/2,3/2)                                 928.6     9     
@@ -648,25 +642,25 @@
  35CL cL $|w|g=1.4 eV {I4} (1972Hu10).                                          
  35CL cL $|w|g=2.2 eV {I7} (1976Me12).                                          
  35CL  G 1514         1.2                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 1869.7       0.2                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2262.8       1.4                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2431.5       1.0                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3098.5       0.4                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3213.7       0.9                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3294.1       0.8                                                       
  35CL  G 3305.0       1                                                         
  35CL  G 4578.3       1.1                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6053.4       24                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 7272.5       69                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 7362.3    8  3/2                                       1020.6    8     
  35CL cL S$weighted average of 1020.4 {I8} (1972Hu10), 1020.5 {I11} (1973Fa07), 
@@ -676,33 +670,33 @@
  35CL cL $|w|g=2.5 eV (1973Fa07).                                               
  35CL cL $|w|g=3.1 eV {I9} (1976Me12).                                          
  35CL  G 1707         0.3                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2352.1       0.6                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2520.8       1.0                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3182.3       0.5                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3303.0       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3383.4       3                                                         
  35CL  G 3394.6       3                                                         
  35CL  G 3441.7       0.8                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4358.6       0.3                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4667.6       0.5                                                   H   
  35CL  G 5598.7       8                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=-0.20 {I24}, A{-4}=+0.92 {I25} (1977Ko34).                      
  35CL cG MR$or |d>+2.5 (1977Ko34).                                              
  35CL  G 6142.7       73                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$or +2.5 {I3} (1977Ko34); -20 or +0.22<|d<+0.26 (1971Wi13).          
  35CL cG $A{-2}=-0.05 {I3}, A{-4}=-0.04 {I5} (1971Wi13).                        
  35CL cG $A{-2}=-0.25 {I11}, A{-4}=+0.31 {I11} (1977Ko34).                      
  35CL  G 7361.8       10                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=+0.19 {I3}, A{-4}=-0.08 {I5} (1971Wi13).                        
  35CL cG $-0.16<|d(Q/D)<-0.12 or +7.5<|d(Q/D)<+10 (1971Wi13).                   
  35CL d 
@@ -714,19 +708,19 @@
  35CL cL $|w|g=0.4 eV (1973Fa07).                                               
  35CL cL $|w|g=0.5 eV {I2} (1976Me12).                                          
  35CL  G 3050.2       11                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3283.3       8                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3453.2       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4233.3       47                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 1977Ko35.                                                      
  35CL  G 4393.5       14                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG M,MR$from 1977Ko35.                                                    
  35CL  G 4752.5       13                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5633.6       2                                                     H   
  35CL d 
  35CL  L 7451.3    6  3/2                                       1112.3    6     
@@ -817,16 +811,16 @@
  35CL cL $|G=5.8 eV {I13}, |G{-p}=3.8 eV {I13}, |G{-|g}=2.0 eV {I13} (1975Ke11).
  35CL cL $|G{-|g}=1.8 eV {I7} (2001Vo24).                                       
  35CL  G 1903         0.6       [M2]                                            
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG E,RI$from 2002Vo17.                                                    
  35CL  G 1903         0.6                                                   P   
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 1963         0.1                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2781.6       1.3                                                   P   
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4384.4       95        [M1,E2]                                     P   
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG M$from 1967Wa22 and 1966Wa09.                                          
  35CL cG MR$weighted average from 1977Ko35, 1967Wa22, and 1966Wa09, -0.03 {I3}  
  35CL2cG from 2001Vo24 and 2002Vo17.                                            
@@ -839,15 +833,14 @@
  35CL cG $A{-2}=+0.42 {I3}, A{-4}=-0.001 {I27} (1966Az01).                      
  35CL cG $A{-2}=+0.42 {I3}, A{-4}=+0.00 {I3} (1967Ta08).                        
  35CL  G 4544.6       1.8       [E1]                                        P   
- 35CL cG E$from 1976Me12                                                        
  35CL cG RI$from 1972Hu10                                                       
  35CL cG M,MR$from 1977Ko35.                                                    
  35CL  G 4903.5       0.5       [E1]                                        P   
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5784.7       0.3       [E1]                                        P   
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 7547.7       0.2       [M2]                                        P   
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG M,MR$from 1977Ko35.                                                    
  35CL d 
  35CL  L 7561.6    6  (1/2,3/2)                                 1225.8    6     
@@ -862,20 +855,20 @@
  35CL cL $|w|g=1.1 eV (1973Fa07).                                               
  35CL cL $|w|g=1.5 eV {I5} (1976Me12).                                          
  35CL  G 3380.8       0.9                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3501.5       6                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3581.9       0.5                                                       
  35CL  G 3640.2       1.6                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4866.0       22                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=+0.04 {I3}, A{-4}=-0.05 {I3} (1976Me12).                        
  35CL  G 6341.2       35                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=-0.02 {I2}, A{-4}=-0.05 {I3} (1976Me12).                        
  35CL  G 7560.2       34                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=+0.01 {I2}, A{-4}=-0.03 {I3} (1976Me12).                        
  35CL d 
  35CL  L 7601.1    8  5/2+             14 FS     LT             1266.5    8     
@@ -896,23 +889,22 @@
  35CL  G 3428         2         [E1]                                            
  35CL cG E,RI$from 1972Hu10                                                     
  35CL  G 3540.8       1.5       [E1]                                            
- 35CL cG E$from 1976Me12                                                        
  35CL cG RI$from 1972Hu10                                                       
  35CL  G 4436.2       5         [E1]                                            
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG RI$from 1971Wi13.                                                      
  35CL cG MR$from 1977Ko34.                                                      
  35CL cG $A{-2}=+0.19 {I2}, A{-4}=+0.08 {I2} (1977Ko34).                        
  35CL cG $A{-2}=+0.35 {I32}, A{-4}=-0.44 {I32} (1971Wi13).                      
  35CL  G 4596.4       8         [M1,E2]                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$weighted average of 0.50 {I22} from 1971Wi13 and +0.85 {I42} from   
  35CL2cG 1977Ko34.                                                              
  35CL cG $A{-2}=+0.75 {I7}, A{-4}=-0.06 {I7} (1971Wi13).                        
  35CL cG $A{-2}=+0.53 {I21}, A{-4}=-0.04 {I25} (1976Me12).                      
  35CL cG $A{-2}=+0.42 {I3}, A{-4}=-0.10 {I3} (1977Ko34).                        
  35CL  G 4905.3       18        [M1,E2]                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$or +0.01 {I5} (1977Ko34).                                           
  35CL cG $+0.25<|d<+0.38 for J(2695)=3/2, -0.25<|d<-0.08 for J(2695)=5/2, -0.42<
  35CL2cG |d<-0.23 for J(2695)=7/2 (1971Wi13).                                   
@@ -920,9 +912,9 @@
  35CL cG $A{-2}=+0.18 {I4}, A{-4}=-0.02 {I5} (1976Me12).                        
  35CL cG $A{-2}=+0.26 {I10}, A{-4}=-0.05 {I10} (1971Wi13).                      
  35CL  G 4955.3       1.9       [M1,E2]                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5836.5       19        [M1,E2]                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG RI$from 1971Wi13, 2 {I1} from 1972Hu10.                                
  35CL cG M,MR$from 1971Wi13.                                                    
  35CL cG $A{-2}=+0.10 {I7}, A{-4}=-0.10 {I8} (1971Wi13) (1971Wi13).             
@@ -931,9 +923,9 @@
  35CL cG $A{-2}=+0.12 {I2}, A{-4}=-0.10 {I3} (1976Me12).                        
  35CL cG $A{-2}=+0.30 {I9}, A{-4}=-0.17 {I9} (1977Ko34).                        
  35CL  G 6380.5       1.1       [E2]                                            
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 7599.5       33        [M1,E2]                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG M$from 1971Wi13.                                                       
  35CL cG MR$weighted average from 1971Wi13 and 1976Me12. Others: +1.8 {I5}      
  35CL2cG (1977Ko34); -0.20<|d<-0.14 (1971Wi13).                                 
@@ -949,22 +941,22 @@
  35CL cL $|w|g=1.7 eV {I5} (1976Me12).                                          
  35CL  G 1438         0.6                                                       
  35CL  G 2402.3       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2451.8       0.7                                                       
  35CL  G 2776.8       0.7                                                       
  35CL  G 3438.3       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3559.0       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4454.4       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5854.7       10                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 1977Ko34.                                                      
  35CL cG $A{-2}=+0.38 {I5}, A{-4}=-0.01 {I6} (1976Me12).                        
  35CL cG $A{-2}=-0.11 {I3}, A{-4}=-0.06 {I3} (1977Ko34).                        
  35CL  G 7617.7       78                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 1977Ko34.                                                      
  35CL cG $A{-2}=-0.46 {I4}, A{-4}=+0.03 {I4} (1976Me12).                        
  35CL cG $A{-2}=-0.57 {I3}, A{-4}=+0.27 {I3} (1977Ko34).                        
@@ -992,34 +984,34 @@
  35CL cL $|w|g=1.3 eV {I4} (1976Me12).                                          
  35CL  G 2072.0       1.2                                                       
  35CL  G 2505.4       4                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2791.3       1.2                                                       
  35CL cG E$from 1972Hu10                                                        
  35CL cG RI$from 1976Me12                                                       
  35CL  G 2905.2       1.0                                                       
  35CL  G 3324.8       6                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3497.3       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4508.0       1.8                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4668.2       9                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 1977Ko34.                                                      
  35CL cG $A{-2}=-0.35 {I4}, A{-4}=+0.01 {I5} (1976Me12).                        
  35CL cG $A{-2}=+0.52 {I1}, A{-4}=-0.18 {I1} (1977Ko34).                        
  35CL  G 5027.1       13                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 1977Ko34.                                                      
  35CL cG $A{-2}=+0.41 {I3}, A{-4}=-0.03 {I4} (1976Me12).                        
  35CL cG $A{-2}=+0.33 {I8}, A{-4}=-0.12 {I8} (1977Ko34).                        
  35CL  G 5908.3       57                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 1977Ko34.                                                      
  35CL cG $A{-2}=-0.38 {I4}, A{-4}=-0.06 {I5} (1976Me12).                        
  35CL cG $A{-2}=-0.40 {I9}, A{-4}=+0.07 {I8} (1977Ko34).                        
  35CL  G 7671.3       0.8                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 7685.8    8  3/2                                       1353.7    8     
  35CL cL S$weighted average of 1353.7 {I11} (1972Hu10), 1353.4 {I11} (1973Fa07),
@@ -1031,30 +1023,30 @@
  35CL cL $|w|g=2.8 eV {I8} (1976Me12).                                          
  35CL  G 1932         0.5                                                       
  35CL  G 2085.7       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2282.2       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2469.6       0.7                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2675.4       0.6                                                       
  35CL  G 3505.6       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3511.0       4                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=+0.01 {I14}, A{-4}=+0.23 {I16} (1977Ko34).                      
  35CL  G 3626.3       6                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4681.9       10                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$or -0.01 {I5} (1976Me12); +0.01 {I7} for J=3/2, +0.48 {I32} for     
  35CL2cG J=5/2 (1977Ko34).                                                      
  35CL cG $A{-2}=-0.04 {I6}, A{-4}=-0.09 {I7} (1976Me12).                        
  35CL cG $A{-2}=-0.06 {I12}, A{-4}=+0.08 {I13} (1977Ko34).                      
  35CL  G 5922.0       0.7                                                       
  35CL  G 6466.0       1                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 7685.0       70                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 1976Me12; <-3.5 for J=3/2, -0.26 {I11} for J=5/2 (1977Ko34).   
  35CL cG $A{-2}=+0.25 {I1}, A{-4}=-0.03 {I1} (1976Me12).                        
  35CL cG $A{-2}=+0.18 {I11}, A{-4}=-0.04 {I11} (1977Ko34).                      
@@ -1078,29 +1070,29 @@
  35CL cL $|w|g=4.4 eV {I13} (1976Me12).                                         
  35CL cL $|G{-p}=4 eV {I1} (1981Bi05).                                          
  35CL  G 2051         4                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$ |d(Q/D)|<-2 or |>13 (1977Ko34).                                    
  35CL cG $A{-2}=+0.14 {I15}, A{-4}=-0.39 {I17} (1977Ko34).                      
  35CL  G 2822         0.4                                                       
  35CL  G 2864.8       1.3                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3082.3       0.8                                                       
  35CL  G 3526.3       2                                                         
  35CL  G 3592.4       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3785.7       0.6                                                       
  35CL  G 4702.6       1                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5061.5       4                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$or |>13 (1977Ko34).                                                 
  35CL cG $A{-2}=-0.03 {I6}, A{-4}=+0.08 {I8} (1976Me12).                        
  35CL cG $A{-2}=-0.18 {I17}, A{-4}=+0.41 {I18} (1977Ko34).                      
  35CL  G 5942.7       0.4                                                       
  35CL  G 6486.7       0.5                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 7705.7       83                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 1977Ko34.                                                      
  35CL cG $A{-2}=-0.54 {I3}, A{-4}=-0.07 {I3} (1976Me12).                        
  35CL cG $A{-2}=-0.63 {I4}, A{-4}=+0.15 {I3} (1977Ko34).                        
@@ -1115,19 +1107,19 @@
  35CL cG E$from 1972Hu10                                                        
  35CL cG RI$from 1976Me12                                                       
  35CL  G 2978.1       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3630.9       6                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3800.8       10                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4580.9       16                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG M,MR$from 1977Ko35.                                                    
  35CL  G 5100.0       43                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG M,MR$from 1977Ko35.                                                    
  35CL  G 5981.2       2.4                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6525.2       0.6                                                       
  35CL d 
  35CL  L 7748                                                   1418            
@@ -1142,26 +1134,26 @@
  35CL  G 2121         0.5                                                       
  35CL  G 2610.2       1.1                                                       
  35CL  G 2935.2       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3010.0       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3596.7       7                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3717.4       1.1                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4612.8       2                                                         
  35CL  G 4773.0       4                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5081.9       9                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5131.9       1.3                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6013.1       40                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6557.0       11                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 7776.1       18                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 7782.1    11 5/2-                                      1452.8    11    
  35CL cL S$weighted average of 1453.6 {I11} (1972Hu10), 1451.8 {I15} (1973Fa07),
@@ -1173,25 +1165,25 @@
  35CL  G 2185         1                                                         
  35CL  G 2383         1                                                         
  35CL  G 2565.3       1.5                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3014.6       7                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3434.2       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3606.7       36                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3667.4       6                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3722.0       1.2                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3860.7       11                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4617.4       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5136.5       8                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6017.6       18                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6561.6       1.2                                                       
  35CL  G 7780.7       1.7                                                       
  35CL d 
@@ -1207,26 +1199,26 @@
  35CL2cL transitions of 7.80 to 0 and 7.80 to 1.22 in 1976Me12 (1988Va06).      
  35CL  G 2044         0.5                                                       
  35CL  G 2141         1.3                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=+0.03 {I8} (1988Va06).                                          
  35CL  G 2393.4       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=+0.04 {I5} (1988Va06).                                          
  35CL  G 2786.6       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=-0.07 {I5} (1988Va06).                                          
  35CL  G 2941.3       1.3                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2955.3       1.1                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3737.5       0.3                                                       
  35CL  G 6577.1       9                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$|d(Q/D)=+0.21 {I4} or -1.9 {I2} for J=3/2 (1976Me12).               
  35CL cG $A{-2}=-0.02 {I6}, A{-4}=-0.14 {I7} (1976Me12).                        
  35CL cG $A{-2}=-0.03 {I3} (1988Va06).                                          
  35CL  G 7796.2       83                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$|d(Q/D)=-0.33 {I2} or -19 {I8} for J=3/2 (1976Me12).                
  35CL cG $A{-2}=-0.06 {I2}, A{-4}=-0.03 {I2} (1976Me12).                        
  35CL cG $A{-2}=+0.006 {I14} (1988Va06).                                        
@@ -1259,19 +1251,19 @@
  35CL cG $A{-2}=+0.17 {I1}, A{-4}=-0.005 {I13} (1967Ta08).                      
  35CL  G 3666.3       3                                                     &   
  35CL  G 3778.3       2         [M1,E2]                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3893.6       0.5       [E3]                                            
  35CL  G 3917.0       0.2       [E1]                                            
  35CL  G 4833.8       4         [E1]                                            
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6073.9       1.9       [E1]                                            
  35CL  G 6617.9       37        [E1]                                            
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG M,MR$from 1967Wa22.                                                    
  35CL cG $pol=+0.17 {I45} (1967Wa22).                                           
  35CL cG $A{-2}=-0.46 {I4}, A{-4}=+0.04 {I6} (1967Ta08).                        
  35CL  G 7837.0       21        [E1]                                            
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG M$from 1967Wa22.                                                       
  35CL cG MR$from 1967Wa22. Other: 0.00 {I3} from 2001Vo24.                      
  35CL cG $pol=-1.1 {I8} (1967Wa22).                                             
@@ -1305,15 +1297,15 @@
  35CL cL $|w|g=1.0 eV {I3} (1976Me12).                                          
  35CL  G 2652.7       1.0                                                       
  35CL  G 2858.5       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3694.1       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6105.0       17                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6649.0       13                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 7868.1       61                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 7873                                                   1547            
  35CL cL E$from 1960An06???                                                     
@@ -1326,29 +1318,29 @@
  35CL cL $|w|g=1.3 eV (1973Fa07).                                               
  35CL cL $|w|g=2.2 eV {I7} (1976Me12).                                          
  35CL  G 2225         12                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3039.3       1.7                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3256.7       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3700.8       3                                                         
  35CL  G 3700.8       3                                                         
  35CL  G 3766.9       1.3                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3821.5       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3960.2       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4877.0       11                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5186.0       25                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=+0.50 {I3}, A{-4}=+0.09 {I4} (1976Me12).                        
  35CL  G 6117.1       30                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=+0.08 {I3}, A{-4}=-0.03 {I4} (1976Me12).                        
  35CL  G 7880.2       10                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=-0.06 {I4}, A{-4}=+0.04 {I5} (1976Me12).                        
  35CL d 
  35CL  L 7885                                                   1559            
@@ -1369,18 +1361,18 @@
  35CL  G 3015         0.8                                                       
  35CL  G 3275.2       0.5                                                       
  35CL  G 3719.3       8                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3724.7       8                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3840.0       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4735.4       4                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5204.5       1.3                                                       
  35CL  G 6135.6       68                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 7898.6       4                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 7903                                                   1578            
  35CL cL E$from 1960An06???                                                     
@@ -1395,25 +1387,25 @@
  35CL  G 3156.5       2                                                         
  35CL  G 3299.1       1.9                                                       
  35CL  G 3743.2       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3748.6       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3863.9       1.7                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3944.3       1.5                                                       
  35CL  G 3956.5       1                                                         
  35CL  G 4002.6       1.2                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4919.4       0.9                                                       
  35CL  G 5228.4       11                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5278.4       0.9                                                       
  35CL  G 6159.5       1.5                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6703.5       27                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 7922.5       41                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 7930                                                   1605            
  35CL cL E$from 1960An06???                                                     
@@ -1428,32 +1420,32 @@
  35CL cL $|w|g=(1.0) eV (1973Fa07).                                             
  35CL cL $|w|g=1.9 eV {I6} (1976Me12).                                          
  35CL  G 2325         3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2385         3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2754.6       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3090.0       10                                                        
  35CL cG E$from 1972Hu10                                                        
  35CL cG RI$from 1976Me12                                                       
  35CL  G 3203.8       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3623.5       8                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3790.6       6                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3790.6       6                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3856.7       6                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4806.7       10                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4966.8       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5325.8       20                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6206.9       20                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6750.9       1                                                         
  35CL d 
  35CL  L 7988.3    10 3/2                                       1665.0    10    
@@ -1463,20 +1455,20 @@
  35CL cL $|w|g=(1.3) eV (1973Fa07).                                             
  35CL cL $|w|g=1.2 eV {I4} (1976Me12).                                          
  35CL  G 1882.1       0.5                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2333         1.7                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2333         1.7                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3809.0       0.8    LT                                                 
  35CL  G 3814.4       0.8    LT                                                 
  35CL  G 3929.7       1                                                         
  35CL  G 6769.3       60                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$or -3.1 {I4} (1976Me12).                                            
  35CL cG $A{-2}=-0.07 {I2}, A{-4}=-0.05 {I3} (1976Me12).                        
  35CL  G 7988.3       36                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$-11 {I3} (1976Me12).                                                
  35CL cG $A{-2}=-0.10 {I2}, A{-4}=-0.06 {I2} (1976Me12).                        
  35CL d 
@@ -1489,20 +1481,20 @@
  35CL  G 2190         0.6                                                       
  35CL  G 2395.5       1.1                                                       
  35CL  G 2592.0       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2828.9       1.5                                                       
  35CL  G 3815.4       4                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3936.1       1.1                                                       
  35CL  G 4831.4       7                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4991.6       2                                                         
  35CL  G 5300.6       0.2                                                       
  35CL  G 5350.6       0.6                                                       
  35CL  G 6231.7       0.9                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 7994.7       78                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 8001.5    9  (7/2,9/2+)                                1678.6    9     
  35CL cL S$weighted average of 1679.7 {I11} (1972Hu10), 1678.2 {I13} (1973Fa07),
@@ -1511,23 +1503,23 @@
  35CL cL $|w|g=(2.6) eV (1973Fa07).                                             
  35CL cL $|w|g=2.9 eV {I9} (1976Me12).                                          
  35CL  G 2355         1.8                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2784.7       0.8                                                       
  35CL  G 3116         0.7                                                       
  35CL  G 3233.9       8                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3653.6       1.9                                                       
  35CL  G 3826.1       10                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4056.7       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4836.7       0.8                                                       
  35CL  G 5355.9       1.6                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6237.0       70                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 8000.0       1.4                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 8005.2    10 5/2+                                      1682.7    10    
  35CL cL S$weighted average of 1684.3 {I13} (1972Hu10), 1681.9 {I11} (1973Fa07),
@@ -1585,22 +1577,22 @@
  35CL  G 3414.6       3                                                         
  35CL  G 3858.7       1.6                                                       
  35CL  G 3979.4       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4059.8       0.8                                                       
  35CL  G 4118.0       1.4                                                       
  35CL  G 5034.9       4                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5343.9       57                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$or +19 {I8} (1976Me12).                                             
  35CL cG $A{-2}=+0.08 {I2}, A{-4}=-0.03 {I2} (1976Me12).                        
  35CL  G 6275.0       15                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=+0.24 {I2}, A{-4}=+0.01 {I3} (1976Me12).                        
  35CL  G 6819.0       4                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 8038.0       8                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$or +8.1 {I26} (1976Me12).                                           
  35CL cG $A{-2}=+0.20 {I3}, A{-4}=-0.08 {I3} (1976Me12).                        
  35CL d 
@@ -1611,24 +1603,24 @@
  35CL cL $|w|g(1.3) eV (1973Fa07).                                              
  35CL cL $|w|g=1.6 eV {I5} (1976Me12).                                          
  35CL  G 2430         11                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2490         11                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2860.1       8                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2914         1                                                         
  35CL  G 3195.5       2                                                         
  35CL  G 3309.3       4                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3896.1       8                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3896.1       8                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3965         2                                                         
  35CL  G 5072.3       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6312.4       56                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 8075.6       1                                                         
  35CL d 
  35CL  L 8080                                                   1760            
@@ -1641,34 +1633,34 @@
  35CL cL $|w|g=2.5 eV (1973Fa07).                                               
  35CL cL $|w|g=2.4 eV {I7} (1976Me12).                                          
  35CL  G 2290         2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2450         5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2495.9       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2879.8       1.3                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2929.3       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3254.2       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3329.0       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3915.8       1.9                                                       
  35CL  G 4036.5       2                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4175.1       1.8                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4931.8       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5401.0       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5450.9       17                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6332.1       8                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 8095.1       39                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 8106.8    11 3/2                                       1787.1    11    
  35CL cL S$weighted average of 1787.7 {I11} (1972Hu10), 1786.6 {I11} (1973Fa07),
@@ -1678,28 +1670,28 @@
  35CL cL $|w|g=3.7 eV {I11} (1976Me12).                                         
  35CL  G 2509         0.5                                                       
  35CL  G 3250.8       0.6                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3264.8       0.5                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3926.4       1.6                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4047.1       1.3                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4127.4       3                                                         
  35CL  G 4139.8       3                                                         
  35CL  G 5102.6       9                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5411.6       9                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$-0.05 {I4} (1976Me12).                                              
  35CL cG $A{-2}=+0.32 {I4}, A{-4}=-0.08 {I5} (1976Me12).                        
  35CL  G 6342.7       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6886.7       35                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG $A{-2}=-0.46 {I2}, A{-4}=-0.05 {I3} (1976Me12).                        
  35CL  G 8105.7       37                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$or -0.46 {I4} (1976Me12).                                           
  35CL cG $A{-2}=+0.83 {I3}, A{-4}=+0.01 {I2} (1976Me12).                        
  35CL d 
@@ -1716,19 +1708,19 @@
  35CL  G 2516         3                                                         
  35CL  G 2897.5       1.8                                                       
  35CL  G 3938.9       7                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4054.2       1.3                                                       
  35CL  G 4134.5       5                                                         
  35CL  G 4146.7       5                                                         
  35CL  G 5109.7       1.9                                                       
  35CL  G 5418.7       13                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6349.8       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6893.8       32                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 8112.8       25                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 8147.7    11 3/2-                                      1829.1    11    
  35CL cL S$weighted average of 1829.1 {I13} (1972Hu10), 1828.6 {I12} (1973Fa07),
@@ -1737,23 +1729,23 @@
  35CL cL $|w|g=1.5 eV (1973Fa07).                                               
  35CL cL $|w|g=1.7 eV {I5} (1976Me12).                                          
  35CL  G 2465         1.0                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3137.5       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3967.7       8                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4088.3       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4168.7       2                                                         
  35CL  G 4180.1       1                                                         
  35CL  G 4227.0       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5452.8       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6928.0       15                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 8147.0       62                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 8157.3    11 (5/2+,7/2-)                               1839.0    11    
  35CL cL S$weighted average of 1839.0 {I12} (1972Hu10), 1838.8 {I12} (1973Fa07),
@@ -1762,29 +1754,29 @@
  35CL cL $|w|g=2.1 eV (1973Fa07).                                               
  35CL cL $|w|g=1.9 eV {I6} (1976Me12).                                          
  35CL  G 2511         4                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2571         8                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2941.1       6                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3390.3       1.0                                                       
  35CL  G 3977.1       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3977.1       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4043.2       7                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4097.7       1                                                         
  35CL  G 4213.0       2                                                         
  35CL  G 4993.1       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5153.3       6                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5512.2       51                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6393.4       1                                                         
  35CL  G 8156.4       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL d 
  35CL  L 8179.9    12                                           1862.3    12    
  35CL cL S$weighted average of 1862.7 {I13} (1972Hu10), 1862.1 {I13} (1973Fa07),
@@ -1814,21 +1806,21 @@
  35CL  G 3323         0.8                                                       
  35CL  G 3366.2       0.4                                                       
  35CL  G 4148.4       1.5                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4291.7       1                                                         
  35CL  G 5204.0       1.1                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5512.9       0.5                                                       
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6444.1       14                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 2001Vo24.                                                      
  35CL cG $A{-2}=+0.51 {I13}, A{-4}=-0.21 {I11}, A{-6}=+0.0004 (1996Ka21).       
  35CL cG $A{-2}=+0.51 {I13}, A{-4}=-0.21 {I11} (2001Vo24).                      
  35CL  G 6988.1       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 8207.1       78                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG M$from 1996Ka21.                                                       
  35CL cG MR$from 2001Vo24. Other: 0.52 {I42} from 1996Ka21.                     
  35CL cG $A{-2}=-0.55 {I8}, A{-4}=+0.004 {I78}, A{-6}=+0.006 {I72} (1996Ka21).  
@@ -1852,17 +1844,17 @@
  35CL  G 4035.8       3      LT                                                 
  35CL  G 4041.2       3      LT                                                 
  35CL  G 5051.8       41                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG MR$from 2001Vo24.                                                      
  35CL cG $A{-2}=-0.32 {I7}, A{-4}=-0.11 {I7}, A{-6}=+0.05 {I6} (1996Ka21).      
  35CL cG $A{-2}=-0.32 {I7}, A{-4}=-0.11 {I7} (2001Vo24).                        
  35CL  G 5212.0       5                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 5520.9       3                                                         
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 6452.1       1.4                                                       
  35CL  G 8215.1       45                                                        
- 35CL cG E,RI$from 1976Me12                                                     
+ 35CL cG RI$from 1976Me12.                                                      
  35CL cG M$from 1996Ka21.                                                       
  35CL cG MR$from 2001Vo24. Other: 0.59 {I56} from 1996Ka21.                     
  35CL cG $A{-2}=-0.560 {I8}, A{-4}=+0.017 {I71}, A{-6}=+0.066 {I75} (1996Ka21). 
