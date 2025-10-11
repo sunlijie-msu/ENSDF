@@ -1,6 +1,3 @@
-Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 10/07/2025)
-Generated at: Fri 10/10/2025 at 06:06:40 PM EDT                                 
-                                                                                
  35CL  L 0                                                                      
  35CL  L 1219.3    1                   145 FS    30                             
  35CL cL T$from 1976Me12                                                        
@@ -400,7 +397,7 @@ Generated at: Fri 10/10/2025 at 06:06:40 PM EDT
  35CL  G 1117.8      3.0     15                                                 
  35CL cG E$from 1976Me12                                                        
  35CL cG RI$from 1972Hu10                                                       
- 35CL  G 1373.0      1.0     5                                                  
+ 35CL  G 1420        1.0     5                                                  
  35CL  G 1542        2.0     10                                                 
  35CL cG E$from 1976Me12                                                        
  35CL cG RI$from 1972Hu10                                                       
@@ -934,9 +931,11 @@ Generated at: Fri 10/10/2025 at 06:06:40 PM EDT
  35CL cG E$from 1976Me12                                                        
  35CL cG RI$from 1972Hu10                                                       
  35CL  G 3663.0      35.0    35                                             &   
+ 35CLF G FL=4180.1                                                              
  35CL cG E$from 1976Me12                                                        
  35CL cG RI$from 1972Hu10                                                       
  35CL  G 3666.3      3.0     15                                             &   
+ 35CLF G FL=4174.7                                                              
  35CL cG E$from 1976Me12                                                        
  35CL cG RI$from 1972Hu10                                                       
  35CL  G 3778.3      2.0     10                                             &   

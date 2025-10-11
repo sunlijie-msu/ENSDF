@@ -1,5 +1,5 @@
 Program for consistency check: output for original lines grouped by level and gamma energies (version 10/07/2025)
-Generated at: Fri 10/10/2025 at 06:06:19 PM EDT
+Generated at: Fri 10/10/2025 at 10:11:03 PM EDT
 
 
 Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
@@ -637,8 +637,8 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA--------------------------------- 35CL  G 1124         3.0    15                                                 
                       1972Hu10--->A     35CL  G 1124         3.0    15                                                  *** EG=1124       FL=6102       JF=
                       1976Me12--->B     35CL  G 1117.8       1.8                                                        *** EG=1117.8     FL=6107.2     JF=
- GAMMA--------------------------------- 35CL  G 1373.0       1.0    5                                                  
-                      1972Hu10--->A     35CL  G 1373.0       1.0    5                                                   *** 
+ GAMMA--------------------------------- 35CL  G 1420         1.0    5                                                  
+                      1972Hu10--->A     35CL  G 1420         1.0    5                                                   *** EG=1420       FL=5802       JF=
  GAMMA--------------------------------- 35CL  G 1542         2.0                                                       
                       1972Hu10--->A(*)  35CL  G 1544         2.0    10                                                  *** EG=1544       FL=5682       JF=
                       1976Me12--->B     35CL  G 1542         2.0                                                        *** EG=1542       FL=5683       JF=
@@ -1346,10 +1346,12 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       1976Me12--->B     35CL  G 2621.6       1.4                                                   &    *** EG=2621.6     FL=5216.2     JF=
  GAMMA--------------------------------- 35CL  G 3663.0       28                                                    &   
                       1972Hu10--->A(*)  35CL  G 3660.3       35.0   35                                                  *** EG=3660.3     FL=4177.2     JF=
-                      1976Me12--->B     35CL  G 3663.0       28                                                    &    *** EG=3663.0     FL=4174.7     JF=
+                      1976Me12--->B     35CL  G 3663.0       28                                                    &    *** EG=3663.0     FL=4180.1     JF=
+                      1976Me12--->B     35CLF G FL=4180.1                                                              
  GAMMA--------------------------------- 35CL  G 3666.3       3                                                     &   
                       1972Hu10--->A(*)  35CL  G 3665         3.0    15                                                  *** EG=3665       FL=4173.0     JF=
-                      1976Me12--->B     35CL  G 3666.3       3                                                     &    *** 
+                      1976Me12--->B     35CL  G 3666.3       3                                                     &    *** EG=3666.3     FL=4174.7     JF=
+                      1976Me12--->B     35CLF G FL=4174.7                                                              
  GAMMA--------------------------------- 35CL  G 3778.3       2                                                     &   
                       1972Hu10--->A(*)  35CL  G 3779.1       2.0    10                                                  *** EG=3779.1     FL=4058.4     JF=
                       1976Me12--->B     35CL  G 3778.3       2                                                     &    *** EG=3778.3     FL=4059.4     JF=
@@ -2751,12 +2753,12 @@ Statistics of levels and gammas from all datasets of 35CL:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                   35CL        0            0            265          1037           1518             3
+                   35CL        0            0            265          1037           1520             3
 
-               IN TOTAL        0            0            265          1037           1518             3
+               IN TOTAL        0            0            265          1037           1520             3
 
 Number of nuclides     : 1
 Number of blocks       : 3
 Number of references   : 3
-Number of lines in files: 1521
+Number of lines in files: 1523
 (from all blocks including abstract, comment, reference)
