@@ -22,15 +22,15 @@
  35CL cG RI$from 1976Me12.                                                      
  35CL  G 1763.4       100       M1+E2    -0.42   17                             
  35CL cG RI$from 1976Me12.                                                      
- 35CL cG M,MR$from 1967Ko20 and 1967Ko23. +2.8<|d<+4.0 (1971Wi13).              
+ 35CL cG M,MR$from |g|g(|q) in 1967Ko20 and 1967Ko23. +2.8<|d<+4.0 (1971Wi13).  
  35CL cG $|G{-|g}(M1)=0.0012 eV, |G{-g}(E2)=0.00013 eV (1967Ko23).              
  35CL cG $A{-2}=-0.24 {I6}, A{-4}=-0.08 {I7} (1971Wi13).                        
  35CL cG $A{-2}=+0.25 {I3}, A{-4}=-0.49 {I8} (1967Ko20,1967Ko23,1970Ko33).      
  35CL d 
- 35CL  L 2645.70   8  7/2+             0.210 ps  30                         X   
+ 35CL  L 2645.70   8  (5/2,7/2)        0.210 ps  30                             
  35CL cL E$weighted average of 2645.6 {I5} (1972Hu10), 2644.7 {I13} (1976Me12), 
  35CL2cL and 2645.71 {I8} (1981Bi05)                                            
- 35CL cL J$3/2+,from 1967Ko20 and 1967Ko23, (5/2,7/2) from 1971Wi13.            
+ 35CL cL J$from |g(|q) in 1971Wi13. Other: 3/2+ in 1967Ko20.                    
  35CL cL T$from lifetime |t = 0.210 ps {I30}: weighted average of |t = 0.255 ps 
  35CL2cL {I65} (1972Hu11, DSAM) and |t = 0.200 ps {I30} (1976Me12, DSAM)        
  35CL  G 881.3        8.7    10 
@@ -41,10 +41,10 @@
  35CL cG $|G{-|g}(M1)=0.012 eV, |G{-g}(E2)=0.0044 eV (1967Ko20).                
  35CL cG $A{-2}=+0.124 {I17}, A{-4}=-0.230 {I24} (1967Ko20,1967Ko23).           
  35CL d 
- 35CL  L 2693.9    3  3/2+             20 FS     3                              
+ 35CL  L 2693.9    3  (3/2,5/2)        20 FS     3                              
  35CL cL E$weighted average of 2694.0 {I3} (1972Hu10), 2694.7 {I12} (1976Me12), 
  35CL2cL and 2693.8 {I3} (1981Bi05)                                             
- 35CL cL J$(3/2,5/2) from 1971Wi13.                                             
+ 35CL cL J$from |g(|q) in 1971Wi13.                                             
  35CL cL T$from lifetime |t = 20 fs {I3}: weighted average of |t = 21 fs {I3}   
  35CL2cL (1972Hu11, DSAM), |t = 19 fs {I4} (1973Fa07, DSAM), and |t = 20 fs {I4}
  35CL3cL (1976Me12, DSAM)                                                       
@@ -62,9 +62,10 @@
  35CL cG $+0.1<|d<+0.26 or -35<|d<-7 for J=3/2, |d<-5 for J=5/2 (1971Wi13).     
  35CL cG $A{-2}=+0.20 {I10}, A{-4}=-0.16 {I11} (1971Wi13).                      
  35CL d 
- 35CL  L 3002.75   8  5/2+             16 FS     3                              
+ 35CL  L 3002.75   8  5/2              16 FS     3                              
  35CL cL E$weighted average of 3002.7 {I7} (1972Hu10), 3003.7 {I8} (1976Me12),  
  35CL2cL and 3002.74 {I8} (1981Bi05)                                            
+ 35CL cL J$5/2 from |g(|q) in 1967Ko20.                                         
  35CL cL T$from lifetime |t = 16 fs {I3}: weighted average of |t = 22 fs {I3}   
  35CL2cL (1972Hu11, DSAM), |t = 14 fs {I2} (1973Fa07, DSAM), and |t = 16 fs {I4}
  35CL3cL (1976Me12, DSAM)                                                       
@@ -72,12 +73,12 @@
  35CL cG RI$from 1972Hu10. Other: I|g<2 (1976Me12).                             
  35CL  G 1784.4       3      LT [E2]                                            
  35CL cG RI$from 1976Me12. Other: I|g|<5 (1972Hu10).                            
- 35CL  G 3003.6       100       M1+E2    0.22    1
+ 35CL  G 3003.6       100       D+Q      -0.22   1
  35CL cG RI$from 1972Hu10 and 1976Me12                                          
- 35CL cG M,MR$from 1967Ko20??? and 1967Ko23???                                  
+ 35CL cG M,MR$from |g|g(|q) in 1967Ko20.                                        
  35CL cG $|G{-|g}(M1)=0.0138 eV, |G{-g}(E2)=0.0007 eV (1967Ko20).               
  35CL cG $A{-2}=+0.45 {I18}, A{-4}=+0.05 {I19} (1971Wi13).                      
- 35CL cG $A{-2}=-0.025 {I11}, A{-4}=-0.084 {I16} (1967Ko20,1967Ko23).           
+ 35CL cG $A{-2}=-0.025 {I11}, A{-4}=-0.084 {I16} (1967Ko20).                    
  35CL d 
  35CL  L 3162.99   7  7/2-             37 PS     4                              
  35CL2 L ISPIN=1/2                                                              
@@ -123,7 +124,8 @@
  35CL2cL to 3/2+ ground state.                                                  
  35CL cL T$from lifetime |t = 7 fs {I2} (1972Hu11, DSAM). Other: <6 fs          
  35CL2cL (1976Me12, DSAM).                                                      
- 35CL  G 1276.0       3      LT                                              
+ 35CL  G 1276.0       3      LT                                                 
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2157.2       19.5   23                                            
  35CL cG RI$weighted average of 17 {I3} (1972Hu10), 25 {I3} (1976Me12), and 18.0
  35CL2cG {I21} (1976Sp09)                                                       
@@ -174,7 +176,7 @@
  35CL  G 3978.8       15     5                                                  
  35CL cG RI$from 1976Me12                                                       
  35CL d 
- 35CL  L 4059.2    4  3/2-             20 FS     3                              
+ 35CL  L 4059.2    4                   20 FS     3                              
  35CL cL E$weighted average of 4058.4 {I8} (1972Hu10), 4059.4 {I4} (1976Me12),  
  35CL2cL and 4059.2 {I3} (1981Bi05)                                             
  35CL cL T$from lifetime |t = 20 fs {I3}: weighted average of |t = 22 fs {I3}   
@@ -214,11 +216,10 @@
  35CL cG M,MR$Q(+O) from |g(|q) in 1976Sp09.                                    
  35CL cG $A{-2}=+0.46 {I25}, A{-4}=-0.23 {I25} (1976Sp09).                      
  35CL d 
- 35CL  L 4173.45   19 5/2-             50 FS     9                              
+ 35CL  L 4173.45   19                  50 FS     9                              
  35CL2 L ISPIN=1/2                                                              
  35CL cL E$weighted average of 4173.0 {I6} (1972Hu10), 4174.7 {I10} (1976Me12), 
  35CL2cL and 4173.45 {I19} (1981Bi05)                                           
- 35CL cL J$from |g-feeding???                                                   
  35CL cL T$from lifetime |t = 50 fs {I9}: weighted average of |t = 105 fs       
  35CL2cL {I+35-30} (1971Wi13, DSAM), |t = 55 fs {I6} (1972Hu11, DSAM) and |t =  
  35CL3cL 34 fs {I9} (1976Me12, DSAM)                                            
@@ -235,9 +236,10 @@
  35CL cG RI$weighted average of 55 {I10} (1972Hu10) and 60 {I10} (1976Me12)     
  35CL cG $A{-2}=-0.01 {I3}, A{-4}=-0.006 {I40} (1967Ta08).                      
  35CL d 
- 35CL  L 4177.9    2  3/2-             39 FS     4                              
+ 35CL  L 4177.9    2  3/2              39 FS     4                              
  35CL cL E$weighted average of 4177.2 {I9} (1972Hu10), 4180.1 {I15} (1976Me12), 
  35CL2cL and 4177.9 {I2} (1981Bi05)                                             
+ 35CL cL J$from |g(|q) in 1967Wa22.                                             
  35CL cL T$from lifetime |t = 39 fs {I4}: weighted average of |t = 32 fs {I5}   
  35CL2cL (1972Hu11, DSAM), |t = 42 fs {I4} (1973Fa07, DSAM), and |t = 47 fs     
  35CL3cL {I10} (1976Me12, DSAM)                                                 
@@ -255,7 +257,7 @@
  35CL cG M,MR$from |g(|q) in 1967Wa22.                                          
  35CL cG $POL=+0.12 {I31} (1967Wa22).                                           
  35CL d 
- 35CL  L 4347.76   6  9/2-             0.33 PS   6                              
+ 35CL  L 4347.76   6  5/2,9/2          0.33 PS   6                              
  35CL cL E$weighted average of 4347.5 {I8} (1972Hu10), 4347.2 {I12} (1976Me12), 
  35CL2cL and 4347.76 {I6} (1981Bi05)                                            
  35CL cL T$from lifetime |t = 0.33 ps {I6} (1976Me12, DSAM). Other: |t |>0.6 ps 
@@ -310,12 +312,16 @@
  35CL2cL and 4839.09 {I11} (1981Bi05)                                           
  35CL cL T$from lifetime |t = 14 fs {I5} (1976Me12, DSAM)                       
  35CL  G 1838.0       7      LT                                                 
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2146.9       4      LT                                                 
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 2196.9       3      LT                                                 
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3078.2       59     5                                                  
  35CL cG RI$weighted average of 50 {I20} (1972Hu10) and 60 {I5} (1976Me12).     
  35CL2cG Other: 48 {I4} (1976Sp09).                                             
  35CL  G 3622.2       7      LT                                                 
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 4841.3       41     5                                                  
  35CL cG RI$weighted average of 50 {I20} (1972Hu10) and 40 {I5} (1976Me12).     
  35CL2cG Other: 18 {I3} (1976Sp09) and 34% of |g transitions to unknown levels  
@@ -349,7 +355,7 @@
  35CL  G 4885         5      LT                                                 
  35CL cG RI$from 1976Me12.                                                      
  35CL d 
- 35CL  L 5010.1    18 (1/2,3/2)        11 FS     3                              
+ 35CL  L 5010.1    18                  11 FS     3                              
  35CL cL E$weighted average of 5008 {I5} (1972Hu10) and 5010.4 {I18} (1976Me12) 
  35CL cL T$from lifetime |t = 11 fs {I3} (1976Me12, DSAM)                       
  35CL  G 836.6       25      LT                                             H   
@@ -414,7 +420,7 @@
  35CL cG RI$from 1972Hu10.                                                      
  35CL cG RI$50% for |g transitions to unknown levels (1972Hu10).                
  35CL d  merge with next level                                                  
- 35CL  L 5403.5    10 (1/2-,3/2-)      17 FS     4                              
+ 35CL  L 5403.5    10                  17 FS     4                              
  35CL cL E$weighted average of 5400 {I5} (1972Hu10) and 5403.6 {I10} (1976Me12) 
  35CL cL T$from lifetime |t = 17 fs {I4} (1976Me12, DSAM)                       
  35CL cL $20% of I|g transitions to unknown levels (1976Me12). 50% for |g       
@@ -459,10 +465,9 @@
  35CL  G 5644.5      8       LT                                                 
  35CL cG RI$from 1976Me12.                                                      
  35CL d 
- 35CL  L 5655      2  3/2+             20 FS     5                              
+ 35CL  L 5655      2                   20 FS     5                              
  35CL cL E$weighted average of 5651 {I3} (1972Hu10) and 5656 {I2} (1976Me12)    
  35CL cL T$from lifetime |t = 20 fs {I5} (1976Me12, DSAM)                       
- 35CL cL J$from 2001Vo24???                                                     
  35CL cL $|G{-|g}=0.033 eV {I10} (2001Vo24).                                    
  35CL cL $14% of I|g transitions to unknown levels (1976Me12).                  
  35CL  G 2652         80     5                                                  
@@ -525,7 +530,7 @@
  35CL  L 6866.7    6                                            510.6     6     
  35CL cL S$from 1988Va06                                                        
  35CL d 
- 35CL  L 7066.4    7  5/2+                                      716.0     7     
+ 35CL  L 7066.4    7                                            716.0     7     
  35CL cL S$weighted average of 716.0 {I7} (1972Hu10) and 716.0 {I10} (1976Me12) 
  35CL cL $|w|g=0.2 eV {I1} (1972Hu10).                                          
  35CL cL $|w|g=0.3 eV {I1} (1976Me12).                                          
@@ -554,7 +559,7 @@
  35CL d 
  35CL  L 7103.6    7  3/2                                       754.3     7     
  35CL cL S$weighted average of 754.1 {I7} (1972Hu10) and 754.6 {I10} (1976Me12) 
- 35CL cL J$from 1976Me12.                                                       
+ 35CL cL J$from |g(|q) in 1976Me12.                                             
  35CL cL $|w|g=0.04 eV (1963Ha32).                                              
  35CL cL $|w|g=0.5 eV {I3} (1972Hu10).                                          
  35CL cL $|w|g=0.5 eV {I2} (1976Me12).                                          
@@ -696,7 +701,7 @@
  35CL cG RI$from 1976Me12.                                                      
  35CL  G 7233.1       93        D+Q      -0.10
  35CL cG RI$from 1976Me12.                                                      
- 35CL cG M,MR$from |g|q) in 1960An06.                                                      
+ 35CL cG M,MR$from |g|q) in 1960An06.                                           
  35CL d 
  35CL  L 7272.9    9  (1/2,3/2)                                 928.6     9     
  35CL cL E$weighted average of 7272.5 {I9} (1972Hu10) and 7273.3 {I10}          
