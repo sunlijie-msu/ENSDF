@@ -132,6 +132,7 @@ You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File
 - **Only modify J^π values when explicit comment lines reference source data**
 - **Example**: If L 3305 has no cL line, its J^π is standalone - do NOT change it based on nearby comments
 
+
 ##  CRITICAL FILE CORRUPTION PREVENTION 
 **IMMEDIATE STOP CONDITIONS - NEVER PROCEED IF:**
 1. **File structure corruption detected** - Headers mangled into data lines or vice versa
@@ -308,7 +309,7 @@ print('Length:', len(header))
 3. G-records appearing before an L-record are associated with the previous level, not the following level.
 4. If a level has no gamma transitions, it is represented by a single L-record with no following G-records.
 5. Always maintain this strict L/G record association for correct ENSDF parsing and data integrity.
-6. cL comment lines are part of the L-record they follow.
+6. cL comment lines are part of the L-record they follow. When multiple cL comment lines follow an L-record, they should be ordered as: cL E$ → J$ → T$ → S$ → general (no identifier).
 7. cG comment lines are part of the G-record they follow.
 
 ## Random Spot-Check Validation
