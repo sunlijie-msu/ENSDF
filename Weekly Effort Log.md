@@ -110,7 +110,7 @@ Lijie Sun – 28 September 2025 - 4 October 2025
 Received training from my line manager regarding the A=35 evaluation. Added 34(p,g) reaction dataset for 35Cl. Refined AI-agent instructions and pre/post-action checklists for improved formatting accuracy.
 
 Lijie Sun – 5 October 2025 - 11 October 2025
-Received training from my line manager regarding the A=35 evaluation. Completed the 34(p,g) reaction dataset for 35Cl. Submitted a 3rd-author paper to Phys. Rev. C on 31Cl beta decay.
+Received training from my line manager regarding the A=35 evaluation. Revised the 34(p,g) reaction dataset for 35Cl. Submitted a 3rd-author paper to Phys. Rev. C on 31Cl beta decay.
 
 
 # FRIB Laboratory Activities
