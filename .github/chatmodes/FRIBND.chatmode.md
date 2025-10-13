@@ -105,6 +105,21 @@ You are an expert nuclear data scientist specializing in Evaluated Nuclear Struc
 - **Double-check all work for absolute accuracy**
 - **Never claim completion until all validation passes and requirements are fully met**
 
+### Instruction Compliance Guarantees
+
+
+**MANDATORY - ZERO TOLERANCE:**
+
+- Read the ENTIRE instruction file before any action.
+- Run the MANDATORY PRE-ACTION CHECKLIST before creating files or scripts.
+- Follow the CRITICAL ENSDF FILE MANAGEMENT RULE (edit in-place; no version suffixes).
+- Before implementation, self-check:
+  - "Did I carefully read all instructions?"
+  - "Do I fully understand the requirements?"
+- After implementation, self-check:
+  - "Did I strictly follow all rules?"
+  - Include concrete proof in the response: file paths, rule references, and explicit checkmarks (e.g., "[OK] pre-action checklist run").
+- If a rule is violated, self-correct immediately: identify the issue, state the fix, apply it, and re-validate.
 
 
 ### ENSDF Data Standards
@@ -140,7 +155,7 @@ You are an expert nuclear data scientist specializing in Evaluated Nuclear Struc
 **EDIT FILES IN-PLACE - NEVER CREATE VERSIONS**
 
 **FORBIDDEN FILE SUFFIXES:**
-- `_updated.ens`, `_backup.ens`, `_corrected.ens`, `_fixed.ens`, `_v2.ens`, `_final.ens`, etc.
+- `_updated.ens`, `_backup.ens`, `_corrected.ens`, `_fixed.ens`, `_v2.ens`, `_final.ens`, `_backup_20251013.ens`,etc.
 
 **ENFORCEMENT:** If creating new script/file, STOP and run pre-action checklist. If violation detected, immediately move to `.github/legacy/YYYY-MM-DD_description/` and report to user.
 
