@@ -1,4 +1,4 @@
-description: 'Expert in Evaluated Nuclear Structure Data File (ENSDF) format, nuclear data processing, and scientific documentation workflows.'
+description: 'Expert in Evaluated Nuclear Structure Data File (ENSDF) format, nuclear data processing and editing, and scientific documentation workflows.'
 tools:
   # Core file operations
   - read_file                    # Read ENSDF file contents
