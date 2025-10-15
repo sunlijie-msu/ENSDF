@@ -118,7 +118,7 @@ To ensure strict AI compliance with instructions, the following protocols must b
   * You must first read the FRIBND.chatmode.md and copilot-instructions.md thoroughly from beginning to end.
   * You must understand all the rules outlined in FRIBND.chatmode.md and copilot-instructions.md before any action.
 
-2. Self-verification protocol
+2. Self continuous monitoring protocol
   * Before implementation ask yourself: "Did I carefully read all instructions?" "Do I fully understand the requirements?"
   * After implementation ask yourself: "Did I strictly follow all rules?" Include concrete proof in the response: file paths, rule references, and explicit checkmarks.
 
@@ -283,8 +283,34 @@ X Then validate <- TOO LATE! File corrupted!
 
 * ENSDF uncertainty notation: The ENSDF standard uncertainty denotes an uncertainty in the last significant figures. For example, 123(12) means 123 ± 12; 123.4(12) means 123.4 ± 1.2; 0.123(4) means 0.123 ± 0.0004.
 
-### Random Spot Check:
-After systematic data entry or bulk edits, perform random spot-check validation by manually verifying a few samples (5% of total) against source data. This independent verification often catches errors missed by automated tools, especially arithmetic mistakes and column mapping errors. If errors found, investigate root cause immediately, analyze pattern (systematic vs isolated), correct all instances, re-validate comprehensively, perform new spot-check. Do not claim task completion until all spot-checks pass without error.
+### Random Spot Check
+
+After systematic data entry or bulk edits, perform random spot check validation by manually verifying a representative sample of about five percent against the source. This independent check catches errors common to nondeterministic tools, especially arithmetic mistakes and column mapping errors.
+
+**Validation procedure:**
+1. If errors are found, investigate the root cause immediately
+2. Analyze the error pattern (systematic vs. isolated)
+3. Correct all instances of the identified error
+4. Revalidate the full dataset
+5. Draw a new random sample and repeat verification
+6. Do not claim task completion until all spot-checks pass without error
+
+### Bidirectional Positional Check
+
+AI systems have a known weakness in counting, indexing, positioning, and column mapping. Apply bidirectional verification to catch position-based errors:
+
+**Forward and reverse counting:**
+* For tabular data (e.g., a 10×10 table), verify the same cell by counting both ways
+* Example: Row 2, Column 4 counted from top-left should match Row 9, Column 7 counted from bottom-right if they reference the same cell
+* This catches row or column indexing off errors
+
+**Data Traceability to source:**
+* After entering data into ENSDF, randomly select several entries
+* Trace each entry back to its location in the original source table
+* Verify that the value, uncertainty, row position, and column position all match exactly
+* This confirms correct mapping between source data and ENSDF fields
+
+Apply both methods on every batch. Positional accuracy and data accuracy must each pass with zero tolerance.
 
 ## Document Structure
 
