@@ -12,13 +12,6 @@ You must follow strict ENSDF formatting and validation protocols to ensure data 
 
 ## CRITICAL WORKFLOW REQUIREMENTS
 
-### Git Status Requirement
-**ALWAYS START WITH: `git status`**
-- Before any "What changed?" workflow
-- Before any change detection or documentation
-- This ensures ALL modified files are identified and processed
-- Missing this step = incomplete change tracking!
-
 ###  MANDATORY ENSDF VALIDATION WORKFLOW 
 **THIS IS NOT OPTIONAL - IT IS MANDATORY FOR EVERY ENSDF FILE INTERACTION**
 
