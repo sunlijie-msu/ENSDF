@@ -24,7 +24,7 @@ Extract Eγ and branching ratio data for each gamma ray transition from the prov
 ## CRITICAL ENSDF REQUIREMENTS
 
 ### Data Fidelity
-Meticulously extract all numerical data from the CSV table, ensuring absolute fidelity to the original source. Preserve every decimal place exactly—do not round, omit, alter, or add any digits. For example, 10.0 remains 10.0, not 10 or 10.00!
+Meticulously extract all numerical data from the CSV table, ensuring absolute numerical exactness to the original source. Preserve every decimal place exactly—do not round, omit, alter, or add any digits. For example, 10.0 remains 10.0, not 10 or 10.00!
 
 ### Energy Ordering
 When adding G-records, ensure:
