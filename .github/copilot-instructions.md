@@ -4,9 +4,8 @@ applyTo: "**"
 # Evaluated Nuclear Structure Data File (ENSDF) Instructions for GitHub Copilot
 
 ## Your Role
-You are a nuclear data scientist expert in Evaluated Nuclear Structure Data File (ENSDF) format.
-You must follow strict ENSDF formatting and validation protocols to ensure data integrity.
-
+You are an agent specializing in Evaluated Nuclear Structure Data File (ENSDF) 80-column fixed format.
+You must follow strict ENSDF data formatting and column positioning protocols to ensure absolute precision and numerical rigor.
 ---
 
 
@@ -32,12 +31,9 @@ You must follow strict ENSDF formatting and validation protocols to ensure data 
 - **Exit code 0**: Validation PASSED - safe to proceed ✅
 - **Exit code 1**: Validation FAILED - MUST fix errors before proceeding ❌
 - **"SUCCESS: All ENSDF field positions appear correct!"**: Full validation passed
-- **NEVER ignore validation failures or assume they're minor!**
-- **ALL validation is comprehensive by default** - includes L-fields, S-fields, comment flags, and data-record line lengths
+
 
 ### ENSDF 1-Line Ruler Tool
-** PURPOSE**: Quick AI self-diagnostic tool for immediate 80-column validation
-** FREQUENCY**: Use BEFORE task, DURING task (each edit), AFTER task
 
 **Usage Modes:**
 - **Single line check**: `python .github/ensdf_1line_ruler.py --line "your exact 80-char line"`  
@@ -55,14 +51,13 @@ You must follow strict ENSDF formatting and validation protocols to ensure data 
 **ALL ENSDF values AND uncertainties MUST be LEFT-JUSTIFIED in their fields:**
 - Energy values, RI values, half-lives, J-π, AND their uncertainties (DE, DRI, DT, etc.)
 - Special markers (GT, LT) within uncertainty fields are also left-justified
-- **NEVER right-justify or center ANY ENSDF field content!**
+- NEVER right-justify or center ANY ENSDF field content!
 
 #### L-Transfer Field Positioning Rule
 **L always starts from column 56 - EXACT rule for L (transferred angular momentum) fields:**
 - `L=1` → `1` at column 56 ✓
 - `L=1+2` → `1` at column 56, `+2` at columns 57-58 ✓
 - `L=1,2` → `1` at column 56, `,2` at columns 57-58 ✓
-- `L=1,2,3` → `1` at column 56, `,2` at columns 57-58, `,3` at columns 59-60 ✓
 - **ONLY the first L-value must be at column 56, subsequent values follow sequentially**
 
 #### Energy Ordering Requirements
@@ -82,54 +77,9 @@ You must follow strict ENSDF formatting and validation protocols to ensure data 
 - **Example**: If L 3305 has no cL line, its J^π is standalone - do NOT change it based on nearby comments
 
 
-##  CRITICAL FILE CORRUPTION PREVENTION 
-**IMMEDIATE STOP CONDITIONS - NEVER PROCEED IF:**
-1. **File structure corruption detected** - Headers mangled into data lines or vice versa
-2. **L-records jumbled together** - Multiple L-records on single line
-3. **Column alignment destroyed** - 80-column ENSDF format broken
-4. **Header/data line mixing** - Header elements appearing in L-records
-
-**MANDATORY SAFEGUARDS FOR ENSDF EDITING:**
-1. **ALWAYS read entire file structure first** - Never edit blindly
-2. **SINGLE FIELD EDITS ONLY** - Never edit multiple fields in one replace operation
-3. **PRECISE CONTEXT MATCHING** - Use 5+ lines of unique context before/after
-4. **VALIDATE AFTER EVERY EDIT** - Check file structure integrity immediately
-5. **STOP ON FIRST ERROR** - If any edit fails, STOP and seek user guidance
-
-**FORBIDDEN EDITING PATTERNS:**
-- ❌ Editing based on outdated file state
-- ❌ Bulk multi-line replacements spanning multiple L-records
-- ❌ Editing without sufficient unique context (minimum 5 lines)
-- ❌ Assuming file structure without reading current state
-- ❌ Continuing after any formatting error
-
-
 **REQUIRED VALIDATION SEQUENCE:**
-1. Read file → 2. Identify target → 3. Single precise edit → 4. Validate structure → 5. Resolve any issues
+1. Read file → 2. Identify target → 3. Single precise edit → 4. Validate structure → 5. Resolve any issues → 6. Proceed only after full validation
 
-**File Corruption Recovery:**
-- If structure damaged: User must restore from backup/undo
-- Agent must NOT attempt automatic git restore operations before user approval
-- Document corruption cause for future prevention
-
-##  80-Column Alignment Debugging Protocol
-**TRIGGER PHRASES**: "not aligned", "wrong columns", "header formatting", "80 characters"
-**ALSO TRIGGERED**: **ANY ENSDF FILE INTERACTION** - This is MANDATORY, not optional!
-
-**IMMEDIATE RESPONSE**:
-1. Run `python .github/column_calibrate.py "filename"` - comprehensive data-record validation (prints ruler; checks field positions and data-record line lengths)
-2. Use visual ruler technique for manual verification
-3. Compare with reference ENSDF files
-4. Apply ENSDF manual field specifications:
-   - Cols 1-5: NUCID
-   - Cols 6-9: Must be blank
-   - Cols 10-39: DSID 
-   - Cols 40-65: DSREF
-   - Cols 66-74: PUB
-   - Cols 75-80: DATE
-
-**CRITICAL RULE**: Never work on ENSDF files without running column validation first!
-**Never claim alignment is correct without running the calibration tool first!**
 
 ##  CRITICAL VALIDATION TOOL USAGE PROTOCOL 
 
@@ -166,33 +116,9 @@ You must follow strict ENSDF formatting and validation protocols to ensure data 
 - **"DATA RECORD LINE LENGTH ISSUES DETECTED"**: Lines not exactly 80 characters
 - **"ERROR: Field positioning errors found"**: Field alignment problems
 
-**FORBIDDEN BEHAVIORS:**
-- ❌ Running validation and ignoring errors or exit codes
-- ❌ Proceeding with edits when validation fails (exit code 1)
-- ❌ Assuming "it's probably fine" without checking results
-- ❌ Not re-validating after making corrections
-
-## Command Triggers
-2. **Re-validate after corrections**: `python .github/column_calibrate.py "file.ens"`
-
-**COMPREHENSIVE VALIDATION ALWAYS INCLUDES:**
-- Exit code 0 = SUCCESS (all validation passed)
-- Exit code 1 = ERRORS FOUND (must be addressed)
-- Always read the full output, don't just run and ignore
-
-**COMMON MISTAKES TO AVOID:**
-- ❌ Ignoring exit codes and error messages
-- ❌ Not re-validating after corrections
-- ❌ Assuming validation passed without checking exit code
 
 **IMPORTANT LIMITATION**: column_calibrate.py only validates L and G records - DP, B, and E records require manual verification
 
-**COMPREHENSIVE VALIDATION IN THIS SCRIPT INCLUDES:**
-- L-field positioning (first L value must start at column 56)
-- S-field positioning (LEFT-JUSTIFIED; columns 65–74)
-- Comment flag positioning (column 77; flags like K/M/S/C must be here, not at 80)
-- Data record line-length compliance (exactly 80 chars for L/G/E/B/DP)
-- Field boundary diagnostics with an 80-column ruler printout
 
 **CRITICAL 80-Column Debugging Technique**:
 When dealing with ENSDF alignment issues, ALWAYS use the visual ruler method:
@@ -220,36 +146,6 @@ print('Length:', len(header))
 - ** CRITICAL FREQUENCY**: Use BEFORE editing, DURING editing (each line), AFTER editing
 - **AI WORKFLOW RULE**: Never claim successful edit without ruler verification!
 
-### "Debug Header Alignment"
-**IMMEDIATE ACTION**: When header alignment issues are suspected:
-1. Run `python .github/column_calibrate.py "filename"` - comprehensive data-record validation (prints ruler; checks field positions and data-record line lengths)
-2. Compare with working reference files
-3. Use the visual ruler technique to spot misalignments
-4. Check ENSDF manual field positions (1-5, 6-9, 10-39, 40-65, 66-74, 75-80)
-
-### "Check energy ordering"
-**CRITICAL VALIDATION**: Verify ENSDF energy ordering compliance:
-- **Single file**: `python .github/check_gamma_ordering.py "filename.ens"`
-- **Multiple files**: `python .github/check_gamma_ordering.py "A35/K35/new/*.ens" --summary`
-- **Verbose output**: Add `--verbose` flag for detailed checking process
-- **Summary only**: Add `--summary` flag for overview without file details
-
-** CRITICAL CHECK_GAMMA_ORDERING.PY USAGE RULES **
-
-**MANDATORY VALIDATION PROTOCOL:**
-1. **Basic ordering check**: `python .github/check_gamma_ordering.py "file.ens"`
-2. **Understanding output**:
-   - Silent output with exit code 0 = NO ORDERING ISSUES ✅
-   - Error messages with exit code 1 = ORDERING VIOLATIONS FOUND ❌
-   - Look for "Checking level energy ordering..." and "Checking gamma energy ordering..."
-3. **If ordering errors found**: 
-   - Read error messages carefully - they show which records are out of order
-   - Fix the ordering issues manually before proceeding
-   - Re-run validation after fixing
-
-**CRITICAL EXIT CODE INTERPRETATION:**
-- **Exit code 0**: Energy ordering is correct ✅
-- **Exit code 1**: Energy ordering violations found - MUST fix before proceeding ❌
 
 
 **CRITICAL STRUCTURAL RELATIONSHIP FOR ENSDF FILES:**
