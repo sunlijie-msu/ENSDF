@@ -180,7 +180,8 @@
  35CL2c  accelerator of the Institute of Physica and Technology (Kharkov).      
  35CL3c  Targets of a 20 |mg/cm{+2} Ag{-2}S. |g rays were detected using a 60   
  35CL4c  cm{+3} Ge(Li) detector and a 150|*100-mm{+2} NaI(Tl) as a monitor.     
- 35CL5c  Measured E|g, I|g, |g(|q). Deduced levels, resonance strengths.        
+ 35CL5c  Measured E|g, I|g, |g(|q). Deduced J|p for 3 resonances, resonance     
+ 35CL6c  strengths.                                                             
  35CL d                                                                         
  35CL c  2000Vo21: 1.794 and 2.275 MeV protons. Measured E|g, I|g. Deduced gamma
  35CL2c  widths, transition strengths.                                          
@@ -192,8 +193,8 @@
  35CL c  2001Vo24: 1.183-2.820 MeV protons produced from the 4-MeV electrostatic
  35CL2c  Van de Graaff accelerator (NSC KhPEI). Enriched {+34}S target (100%). A
  35CL3c  63 cm{+3} Ge(Li) detector and a 15-cm-diam by 10-cm-long NaI(Tl)       
- 35CL4c  detector. Measured |s(E{-p}), E|g, I|g. Deduced levels, resonance      
- 35CL5c  strengths.                                                             
+ 35CL4c  detector. Measured |s(E{-p}), E|g, I|g. Deduced 12 resonances and      
+ 35CL5c  resonance strengths.                                                   
  35CL d                                                                         
  35CL c  2002Vo17: 2.187 MeV proton produced from the the ESU-4 accelerator (NSC
  35CL2c  KhPEI). Enriched {+34}S target. A 63 cm{+3} Ge(Li) detector. Measured  
@@ -1978,10 +1979,10 @@
  35CL  G 5485.0       3                                                         
  35CL  G 6415.8       68                                                        
  35CL  G 8178.4       8                                                         
- 35CL  L 8208.2    10 5/2+                                      1891.9    10    
+ 35CL  L 8208.2    10 5/2                                       1891.9    10    
  35CL cL S$weighted average of 1893.2 {I11} (1972Hu10), 1891.3 {I12} (1976Me12),
  35CL2cL 1892.0 {I11} (1973Fa07), and 1891 {I1} (2001Vo24)                      
- 35CL cL J$spin=5/2 from 1981Bi05, 1996Ka21, and 2001Vo24.                      
+ 35CL cL J$spin=5/2 from |g(|q) in 1981Bi05, 1996Ka21, and 2001Vo24.            
  35CL cL $|w|g=8.0 eV {I24} (1972Hu10).                                         
  35CL cL $|w|g=6.0 eV (1973Fa07).                                               
  35CL cL $|w|g=9.0 eV {I27} (1976Me12).                                         
@@ -2008,14 +2009,14 @@
  35CL cG RI$from 1976Me12.                                                      
  35CL  G 8207.2       78        D+Q      -0.36   4
  35CL cG RI$from 1976Me12.                                                      
- 35CL cG M,MR$from 2001Vo24. |d=0.52 {I42} from 1996Ka21.                       
+ 35CL cG M,MR$from 2001Vo24. Other: |d(Q/D)=0.52 {I42} from 1996Ka21.           
  35CL cG $A{-2}=-0.55 {I8}, A{-4}=+0.004 {I78}, A{-6}=+0.006 {I72} (1996Ka21).  
  35CL cG $A{-2}=-0.55 {I8}, A{-4}=0.00 {I8} (2001Vo24).                         
  35CL  L 8209         1/2+                                      1893            
  35CL cL $|G{-p}=120 eV {I11} (1981Bi05).                                       
  35CL cL $|w|g=6.0 eV (1973Fa07).                                               
- 35CL  L 8216.3    10 5/2+                                      1900.3    10    
- 35CL cL J$spin=5/2 from 2001Vo24.                                              
+ 35CL  L 8216.3    10 5/2                                       1900.3    10    
+ 35CL cL J$spin=5/2 from |g(|q) in 2001Vo24 and 1996Ka21.                       
  35CL cL S$weighted average of 1901.8 {I11} (1972Hu10), 1899.7 {I12} (1973Fa07),
  35CL2cL 1899.6 {I11} (1976Me12), and 1900 {I1} (2001Vo24)                      
  35CL cL $|w|g=6.2 eV {I19} (1972Hu10).                                         
@@ -2040,7 +2041,7 @@
  35CL  G 6452.7       1.4                                                       
  35CL  G 8215.3       45        D+Q      +0.06   3                              
  35CL cG RI$from 1976Me12.                                                      
- 35CL cG M,MR$from 2001Vo24. |d=0.59 {I56} from 1996Ka21.                       
+ 35CL cG M,MR$from 2001Vo24. Other: |d(Q/D)=0.59 {I56} from 1996Ka21.           
  35CL cG $A{-2}=-0.560 {I8}, A{-4}=+0.017 {I71}, A{-6}=+0.066 {I75} (1996Ka21). 
  35CL cG $A{-2}=-0.56 {I1}, A{-4}=+0.02 {I7} (2001Vo24).                        
  35CL  L 8242.4    12 3/2-                                      1927.1    12    
@@ -2773,7 +2774,7 @@
  35CL cL $|w|g=1.9 eV {I4} (1976Sp08)                                           
  35CL  L 9155.7    5                                            2867.5    5     
  35CL cL $|w|g=2.0 eV {I4} (1976Sp08)                                           
- 35CL  L 9157.1    5 5/2+                                       2869.0    5     
+ 35CL  L 9157.1    5 5/2                                        2869.0    5     
  35CL cL J$spin=5/2 from |g(|q) in 2001Vo24 and 1996Ka21                        
  35CL cL $|w|g=6.7 eV {I13} (1976Sp08)                                          
  35CL cL $|w|g=6.4 eV {I1} (1996Ka21)                                           
@@ -2791,7 +2792,7 @@
  35CL  G 6510.8       2.9                                                       
  35CL  G 7393.3       7.5                                                       
  35CL  G 9155.8       43        D+Q      +0.09   1                              
- 35CL cG M,MR$from 2001Vo24. |d=0.47 {I50} (1996Ka21)                           
+ 35CL cG M,MR$from 2001Vo24. Other: |d(Q/D)=0.47 {I50} (1996Ka21)               
  35CL cG $A{-2}=-0.29 {I6}, A{-4}=-0.38 {I8}, A{-6}=-0.10 {I6} (1996Ka21)       
  35CL  L 9163.3    5                                            2875.3    5     
  35CL cL $|w|g=0.4 eV {I2} (1976Sp08)                                           
