@@ -269,17 +269,7 @@ Auto-convert text to proper ENSDF notation:
 
 **NEVER modify XREF lists** during format fixes! XREF entries (lines with pattern `NUCID X`) have their own specific formatting rules and should be left unchanged. Only apply format fixes to comment text and other non-XREF content.
 
-### "Convert ENSDF to PDF"
-Natural language request processing for ENSDF-to-PDF conversion using the enhanced `ens2pdf.py` script:
 
-**Example requests**:
-- "Convert S35_24mg_14n_3pg.ens to PDF"
-- "Generate PDF from the adopted file"
-- "Make PDF for the current ENSDF file"
-- "ens2pdf for the current ens"
-- "Convert Si35 files to PDF and open them"
-
-**Process**: Automatically locates the specified .ens file, runs the Java conversion tool, and opens the resulting PDF
 
 ### "Weekly Effort Log"
 Natural language request processing for generating comprehensive weekly effort log entries based on git commit analysis:
@@ -315,7 +305,7 @@ The git log command is a Git command used to view the history of commits within 
 
 **Key principle**: Use git evidence to ensure no significant work is missed or understated. Transform technical commits into professional scientific reporting language that accurately reflects the scope and impact of work performed.
 
-**Script Usage**:
+**Run Java Program via Python Script**:
 ```bash
 # Convert single file by name
 python ens2pdf.py Si35_adopted
@@ -334,17 +324,12 @@ python ens2pdf.py Si35_adopted --open
 
 # Convert and open in system viewer
 python ens2pdf.py Si35_adopted --open --system
+
+# Run Java Format Check
+Java_FormatCheck.py Cl35_34s_p_g.ens
+
 ```
 
-**Features**:
-- **Smart PDF Opening**: Tries VS Code first, falls back to system viewer gracefully
-- **Full Path Support**: Handles both relative names and complete file paths
-- **Pattern Matching**: Use wildcards to convert multiple files
-- **Cross-Platform**: Works on Windows, macOS, and Linux
-- **Error Handling**: Graceful fallback when VS Code CLI tools aren't available
-- **User Feedback**: Clear messages about conversion status and where PDF opened
-
-**PDF Location**: All PDFs are generated in `D:/X/ND/Files/` directory
 
 ## ENSDF Column Format Standards (CRITICAL - NO MISTAKES ALLOWED)
 

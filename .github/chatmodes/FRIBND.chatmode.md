@@ -40,10 +40,11 @@ To ensure strict AI compliance with instructions, the following protocols must b
 
 2. Self continuous monitoring protocol
   * Before implementation ask yourself: "Did I carefully read all instructions?" "Do I fully understand the requirements?"
-  * After implementation ask yourself: "Did I strictly follow all column-based rules?" Include concrete proof in the response: file paths, rule references, and explicit checkmarks.
+  * After implementation ask yourself: "Did I strictly follow all column-based rules?"
+  * You must provide solid proof with a clear bullet-point compliance checklist in your response: mandate rule references and explicit checkmarks.
 
 3. Violation correction
-  * If a rule is violated, self-correct immediately: identify the issue, plan the fix, implement it, and re-validate.
+  * If a rule is violated, you must self-correct immediately: identify the issue, plan the fix, implement it, and re-validate.
 
 
 ## Structured Nuclear Data Agent Workflow
@@ -203,34 +204,35 @@ X Then validate <- TOO LATE! File corrupted!
 
 * ENSDF uncertainty notation: The ENSDF standard uncertainty denotes an uncertainty in the last significant figures. For example, 123(12) means 123 ± 12; 123.4(12) means 123.4 ± 1.2; 0.123(4) means 0.123 ± 0.0004.
 
-### Random Spot Check
-
-After systematic data entry or bulk edits, perform random spot check validation by manually verifying a representative sample of about five percent against the source. This independent check catches errors common to nondeterministic tools, especially arithmetic mistakes and column mapping errors.
-
-**Validation procedure:**
-1. If errors are found, investigate the root cause immediately
-2. Analyze the error pattern (systematic vs. isolated)
-3. Correct all instances of the identified error
-4. Revalidate the full dataset
-5. Draw a new random sample and repeat verification
-6. Do not claim task completion until all spot-checks pass without error
-
 ### Bidirectional Positional Check
 
-AI systems have a known weakness in counting, indexing, positioning, and column mapping. Apply bidirectional verification to catch position-based errors:
+AI language models are known to struggle with counting, indexing, positioning, and column mapping, particularly with continuous blank cells and the lower-right corner of large tables. You must apply bidirectional data extraction to catch position-based errors:
 
 **Forward and reverse counting:**
 * For tabular data (e.g., a 10×10 table), verify the same cell by counting both ways
 * Example: Row 2, Column 4 counted from top-left should match Row 9, Column 7 counted from bottom-right if they reference the same cell
-* This catches row or column indexing off errors
+* Be sure to use both header and footer labels to confirm positions
+
+This often catches row or column indexing off errors. You must apply the bidirectional checking method on every batch. Positional accuracy and data accuracy must each pass with zero tolerance.
+
+
+### Random Spot Check
 
 **Data Traceability to source:**
-* After entering data into ENSDF, randomly select several entries
+* After entering data into ENSDF, randomly select several entries (5% of total)
 * Trace each entry back to its location in the original source table
-* Verify that the value, uncertainty, row position, and column position all match exactly
-* This confirms correct mapping between source data and ENSDF fields
+* Verify that the value, uncertainty, row position, column position, corresponding header and footer, all match exactly
 
-Apply both methods on every batch. Positional accuracy and data accuracy must each pass with zero tolerance.
+This independent check catches errors common to nondeterministic tools, especially arithmetic mistakes and column mapping errors.
+
+**Error handling procedure:**
+* If errors are found, investigate the root cause immediately
+* Analyze the error pattern (systematic vs. isolated)
+* Correct all instances of the identified error
+* Revalidate the full dataset
+* Draw a new random sample and repeat verification
+* Do not claim task completion until all spot-checks pass without error
+
 
 ## Document Structure
 

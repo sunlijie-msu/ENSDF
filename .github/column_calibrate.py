@@ -325,12 +325,91 @@ def validate_s_field(filename):
     
     if s_field_errors == 0:
         print(f"[OK] SUCCESS: All S fields correctly positioned (LEFT-JUSTIFIED at column 65)")
-        return True
+        s_validation_passed = True
     else:
         print(f"[ERROR] FAILED: {s_field_errors} S field positioning errors found")
         print(f"   CRITICAL: S field values must be LEFT-JUSTIFIED starting at column 65")
         print(f"   Current violations: Values starting at wrong columns instead of 65")
-        return False
+        s_validation_passed = False
+
+    # DS FIELD VALIDATION FOR L-RECORDS
+    print(f"\nDS FIELD VALIDATION: {filename}")
+    print("=" * 60)
+    print("Checking DS field positioning in columns 75-76 for L-records...")
+    print("ENSDF Rule: DS field MUST contain uncertainty, SEPARATE from S field")
+    print()
+    print('ENSDF 80-Column Ruler:')
+    print('         1         2         3         4         5         6         7         8')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+    print(' ' * 64 + '^---------^--^ S field (65-74) DS field (75-76)')
+    print()
+    
+    ds_fields_analyzed = 0
+    ds_field_errors = 0
+    
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    
+    for line_num, line in enumerate(lines, 1):
+        line_content = line.rstrip('\n\r')
+        
+        # Only check L-records for DS field validation
+        if len(line_content) < 10 or ' L ' not in line_content[6:10]:
+            continue
+        
+        # Check if S field has content (indicating L-record with spectroscopic data)
+        if len(line_content) >= 74:
+            s_field = line_content[64:74]
+            s_stripped = s_field.strip()
+            
+            # Only validate DS if S-field contains numerical data
+            if s_stripped and any(c.isdigit() for c in s_stripped):
+                ds_fields_analyzed += 1
+                
+                # Extract DS field (columns 75-76)
+                if len(line_content) >= 76:
+                    ds_field = line_content[74:76]
+                else:
+                    ds_field = line_content[74:] if len(line_content) > 74 else "  "
+                
+                ds_stripped = ds_field.strip()
+                
+                print(f"LINE {line_num}: DS field analysis")
+                print(f"Line:  {line_content}")
+                print(f"S field (65-74):  '{s_field}'")
+                print(f"DS field (75-76): '{ds_field}'")
+                
+                # Check if DS field contains uncertainty
+                if not ds_stripped:
+                    print(f"[ERROR] ERROR: DS field is EMPTY - uncertainty missing!")
+                    print(f"   Expected: 1-2 digit uncertainty value (e.g., '1 ', '12')")
+                    print(f"   Problem: Uncertainty may be embedded in S-field instead")
+                    ds_field_errors += 1
+                elif not ds_field[0].isdigit():
+                    print(f"[ERROR] ERROR: DS field does not start with digit - got '{ds_field[0]}'")
+                    print(f"   Expected: LEFT-JUSTIFIED digit (e.g., '1 ', '12')")
+                    ds_field_errors += 1
+                else:
+                    print(f"[OK] OK: DS field '{ds_field}' correctly contains uncertainty")
+                
+                print()
+    
+    # DS Summary
+    print(f"DS FIELD SUMMARY:")
+    print(f"  Total L-records with S-field analyzed: {ds_fields_analyzed}")
+    print(f"  DS field positioning errors: {ds_field_errors}")
+    print()
+    
+    if ds_field_errors == 0:
+        print(f"[OK] SUCCESS: All DS fields correctly positioned (uncertainty in columns 75-76)")
+        ds_validation_passed = True
+    else:
+        print(f"[ERROR] FAILED: {ds_field_errors} DS field errors found")
+        print(f"   CRITICAL: Uncertainty must be in DS field (75-76), NOT embedded in S field")
+        print(f"   Typical error: S='832      1', DS='  ' should be S='832       ', DS='1 '")
+        ds_validation_passed = False
+    
+    return s_validation_passed and ds_validation_passed
 
 def validate_jp_field(filename):
     """
