@@ -210,7 +210,6 @@
  35CL2cG otherwise noted.                                                       
  35CL cG RI(H)$ From 1963Ha32                                                   
  35CL cG RI(D)$ From 1967Da12                                                   
- 35CL cG RI(V)$ From 2001Vo24                                                   
  35CL cG M,MR$From |g(|q) and/or |g|g(|q).                                      
  35CL cL E$For resonances above 7.0 MeV, E(level)=E{-c.m.}+S(p)({+35}Cl), where 
  35CL2cL S(p)({+35}Cl)=6370.81 {I4} (2021Wa16).                                 
@@ -644,6 +643,10 @@
  35CL cL T$from lifetime |t = 4 fs {I1} (1976Me12, DSAM)                        
  35CL  G 2483         100                                                       
  35CL cG RI$from 1972Hu10, 1976Me12, 1971Pr11.                                  
+ 35CL  G 2642.1                                                                 
+ 35CL cG RI$80 from 2001Vo24 only; not observed by others.                      
+ 35CL  G 3881.6                                                                 
+ 35CL cG RI$6 from 2001Vo24 only; not observed by others.                       
  35CL  G 5646         8      LT                                                 
  35CL cG RI$from 1976Me12.                                                      
  35CL  L 5655      2                   20 FS     5                              
@@ -768,25 +771,25 @@
  35CL  G 1775.1       1.7                                                       
  35CL cG RI$from 1976Me12.                                                      
  35CL  G 2339.4       1.5                                                       
- 35CL cG RI$from 1976Me12. Other: 2 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 2 (2001Vo24).                                 
  35CL  G 3005.0       0.8                                                       
- 35CL cG RI$from 1976Me12. Other: 1 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 1 (2001Vo24).                                 
  35CL  G 3119.3       22                                                        
- 35CL cG RI$from 1976Me12. Other: 22 from 2001Vo24.                             
+ 35CL cG RI$from 1976Me12. Other: 22 (2001Vo24).                                
  35CL cG $A{-2}=-0.02 {I4}, A{-4}=+0.10 {I66} (1976Me12).                       
  35CL cG $A{-2}=-0.01 {I4}, A{-4}=+0.09 {I24} (2001Vo24).                       
  35CL  G 3211.1       9                                                         
- 35CL cG RI$from 1976Me12. Other: 9 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 9 (2001Vo24).                                 
  35CL  G 3260.0       3                                                         
- 35CL cG RI$from 1976Me12. Other: 3 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 3 (2001Vo24).                                 
  35CL  G 4484.4       4                                                         
- 35CL cG RI$from 1976Me12. Other: 4 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 4 (2001Vo24).                                 
  35CL  G 5958.7       17                                                        
- 35CL cG RI$from 1976Me12. Other: 17 from 2001Vo24.                             
+ 35CL cG RI$from 1976Me12. Other: 17 (2001Vo24).                                
  35CL cG $A{-2}=-0.01 {I3}, A{-4}=+0.06 {I7} (2001Vo24).                        
  35CL cG $A{-2}=-0.01 {I5}, A{-4}=+0.07 {I8} (1976Me12).                        
  35CL  G 7177.8       38                                                        
- 35CL cG RI$from 1976Me12. Other: 38 from 2001Vo24.                             
+ 35CL cG RI$from 1976Me12. Other: 38 (2001Vo24).                                
  35CL cG $A{-2}=-0.01 {I6}, A{-4}=-0.02 {I7} (1976Me12).                        
  35CL cG $A{-2}=-0.02 {I4}, A{-4}=-0.01 {I5} (2001Vo24).                        
  35CL  L 7185.0     4                                           838             
@@ -1106,6 +1109,7 @@
  35CL  G 3501.9       6                                                         
  35CL cG RI$from 1976Me12.                                                      
  35CL  G 3593.8       0.5                                                       
+ 35CL cG RI$from 1976Me12.                                                      
  35CL  G 3642.6       1.6                                                       
  35CL cG RI$from 1976Me12.                                                      
  35CL  G 4867.0       22                                                        
@@ -1469,36 +1473,47 @@
  35CL cL $|w|g=2.2 eV {I3} (2001Vo24).                                          
  35CL cL $|G{-|g}=0.55 eV {I6} (2001Vo24).                                      
  35CL  G 1656         0.5                                                   &   
- 35CL cG RI$from 1976Me12. Other: 1 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 1 from 2001Vo24. Initial level is 7837 and    
+ 35CL2cG 7839 doublet (1976Me12).                                               
  35CL  G 2237.4       0.5                                                   &   
- 35CL cG RI$from 1976Me12. Other: 1 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 1 (2001Vo24). Initial level is 7837 and 7839  
+ 35CL2cG doublet (1976Me12).                                                    
  35CL  G 2621.3       1.4                                                   &   
- 35CL cG RI$from 1976Me12. Other: 1 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 1 (2001Vo24). Initial level is 7837 and 7839  
+ 35CL2cG doublet (1976Me12).                                                    
  35CL  G 3659.1       28        M1+E2    -0.05   3                          &   
- 35CL cG RI$from 1976Me12. Other: 28 from 2001Vo24.                             
+ 35CL cG RI$from 1976Me12. Other: 28 (2001Vo24). Initial level is 7837 and 7839 
+ 35CL2cG doublet (1976Me12).                                                    
  35CL cG M,MR$D+Q from |g(|q) in 1967Wa22; magnetic character from |g(pol) in   
  35CL2cG 1967Wa22. Other: |d=-0.04 {I3} or +0.27 {I5} from 2001Vo24.            
  35CL cG $A{-2}=+0.17 {I1}, A{-4}=-0.01 {I2} (2001Vo24).                        
  35CL cG $POL=+0.66 {I18}, |D|p=no (1967Wa22).                                  
  35CL  G 3663.5       3                                                     &   
- 35CL cG RI$from 1976Me12. Other: 3 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 3 (2001Vo24). Initial level is 7837 and 7839  
+ 35CL2cG doublet (1976Me12).                                                    
  35CL cG $A{-2}=+0.17 {I1}, A{-4}=-0.005 {I13} (1967Ta08).                      
  35CL  G 3777.8       2                                                     &   
- 35CL cG RI$from 1976Me12. Other: 2 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 2 (2001Vo24). Initial level is 7837 and 7839  
+ 35CL2cG doublet (1976Me12).                                                    
  35CL  G 3894.1       0.5                                                   &   
- 35CL cG RI$from 1976Me12. Other: 1 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 1 (2001Vo24). Initial level is 7837 and 7839  
+ 35CL2cG doublet (1976Me12).                                                    
  35CL  G 3918.5       0.2                                                   &   
  35CL  G 4834.1       4                                                     &   
- 35CL cG RI$from 1976Me12. Other: 4 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 4 (2001Vo24). Initial level is 7837 and 7839  
+ 35CL2cG doublet (1976Me12).                                                    
  35CL  G 6073.6       1.9                                                   &   
- 35CL cG RI$from 1976Me12. Other: 2 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 2 (2001Vo24). Initial level is 7837 and 7839  
+ 35CL2cG doublet (1976Me12).                                                    
  35CL  G 6617.1       37        D+Q      +0.06   3                          &   
- 35CL cG RI$from 1976Me12. Other: 37 from 2001Vo24.                             
+ 35CL cG RI$from 1976Me12. Other: 37 (2001Vo24). Initial level is 7837 and 7839 
+ 35CL2cG doublet (1976Me12).                                                    
  35CL cG M,MR$from |g(|q) in 1967Wa22.                                          
  35CL cG $POL=+0.17 {I45} (1967Wa22).                                           
  35CL cG $A{-2}=-0.46 {I4}, A{-4}=+0.04 {I6} (1967Ta08).                        
  35CL  G 7836.3       21        D(+Q)    +0.02   3                          &   
- 35CL cG RI$from 1976Me12. Other: 21 from 2001Vo24.                             
+ 35CL cG RI$from 1976Me12. Other: 21 (2001Vo24). Initial level is 7837 and 7839 
+ 35CL2cG doublet (1976Me12).                                                    
  35CL cG M,MR$from |g(|q) in 1967Wa22. Other: 0.00 {I3} from 2001Vo24.          
  35CL cG $POL=-1.1 {I8} (1967Wa22).                                             
  35CL cG $A{-2}=+0.41 {I3}, A{-4}=+0.012 {I40} (1967Ta08).                      
@@ -1999,27 +2014,27 @@
  35CL cL $|w|g=4.2 eV {I8} (2001Vo24), sum of |w|g for the resonances at        
  35CL2cL E{-p}=1891 and 1893, |G{-|g}=0.70 eV {I14} (2001Vo24).                 
  35CL  G 2553         0.7                                                       
- 35CL cG RI$from 1976Me12. Other: 1 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 1 (2001Vo24).                                 
  35CL  G 3327.1       0.8                                                       
- 35CL cG RI$from 1976Me12. Other: 1 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 1 (2001Vo24).                                 
  35CL  G 3368.9       0.4                                                       
- 35CL cG RI$from 1976Me12. Other: 1 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 1 (2001Vo24).                                 
  35CL  G 4148.7       1.5                                                       
- 35CL cG RI$from 1976Me12. Other: 2 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 2 (2001Vo24).                                 
  35CL  G 4289.4       1                                                         
  35CL  G 5205.0       1.1                                                       
- 35CL cG RI$from 1976Me12. Other: 1 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 1 (2001Vo24).                                 
  35CL  G 5513.8       0.5                                                       
- 35CL cG RI$from 1976Me12. Other: 1 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 1 (2001Vo24).                                 
  35CL  G 6444.6       14        D+Q      +0.33   4                              
- 35CL cG RI$from 1976Me12. Other: 14 from 2001Vo24.                             
+ 35CL cG RI$from 1976Me12. Other: 14 (2001Vo24).                                
  35CL cG M,MR$from 2001Vo24.                                                    
  35CL cG $A{-2}=+0.51 {I13}, A{-4}=-0.21 {I11}, A{-6}=+0.0004 (1996Ka21).       
  35CL cG $A{-2}=+0.51 {I13}, A{-4}=-0.21 {I11} (2001Vo24).                      
  35CL  G 6988.1       3                                                         
- 35CL cG RI$from 1976Me12. Other: 3 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 3 (2001Vo24).                                 
  35CL  G 8207.2       78        D+Q      -0.36   4                              
- 35CL cG RI$from 1976Me12. Other: 78 from 2001Vo24.                             
+ 35CL cG RI$from 1976Me12. Other: 78 (2001Vo24).                                
  35CL cG M,MR$from 2001Vo24. Other: |d(Q/D)=0.52 {I42} from 1996Ka21.           
  35CL cG $A{-2}=-0.55 {I8}, A{-4}=+0.004 {I78}, A{-6}=+0.006 {I72} (1996Ka21).  
  35CL cG $A{-2}=-0.55 {I8}, A{-4}=0.00 {I8} (2001Vo24).                         
@@ -2038,25 +2053,25 @@
  35CL cL $|w|g=3.3 eV {I5} (2001Vo24).                                          
  35CL cL $|G{-|g}=0.55 eV {I8} (2001Vo24).                                      
  35CL  G 2561         0.8                                                       
- 35CL cG RI$from 1976Me12. Other: 1 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 1 (2001Vo24).                                 
  35CL  G 3446.3       0.8                                                       
- 35CL cG RI$from 1976Me12. Other: 1 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 1 (2001Vo24).                                 
  35CL  G 4038.2       3      LT                                                 
- 35CL cG RI$from 1976Me12. Other: 3 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 3 (2001Vo24).                                 
  35CL  G 4042.6       3      LT                                                 
  35CL  G 5052.9       41        D+Q      +0.11   2                              
- 35CL cG RI$from 1976Me12. Other: 41 from 2001Vo24.                             
+ 35CL cG RI$from 1976Me12. Other: 41 (2001Vo24).                                
  35CL cG M,MR$from 2001Vo24.                                                    
  35CL cG $A{-2}=-0.32 {I7}, A{-4}=-0.11 {I7}, A{-6}=+0.05 {I6} (1996Ka21).      
  35CL cG $A{-2}=-0.32 {I7}, A{-4}=-0.11 {I7} (2001Vo24).                        
  35CL  G 5213.1       5                                                         
- 35CL cG RI$from 1976Me12. Other: 5 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 5 (2001Vo24).                                 
  35CL  G 5521.9       3                                                         
- 35CL cG RI$from 1976Me12. Other: 3 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 3 (2001Vo24).                                 
  35CL  G 6452.7       1.4                                                       
- 35CL cG RI$from 1976Me12. Other: 1 from 2001Vo24.                              
+ 35CL cG RI$from 1976Me12. Other: 1 (2001Vo24).                                 
  35CL  G 8215.3       45        D+Q      +0.06   3                              
- 35CL cG RI$from 1976Me12. Other: 45 from 2001Vo24.                             
+ 35CL cG RI$from 1976Me12. Other: 45 (2001Vo24).                                
  35CL cG M,MR$from 2001Vo24. Other: |d(Q/D)=0.59 {I56} from 1996Ka21.           
  35CL cG $A{-2}=-0.560 {I8}, A{-4}=+0.017 {I71}, A{-6}=+0.066 {I75} (1996Ka21). 
  35CL cG $A{-2}=-0.56 {I1}, A{-4}=+0.02 {I7} (2001Vo24).                        
@@ -2227,38 +2242,37 @@
  35CL cL $|w|g=6.1 eV {I12} (1976Sp08).                                         
  35CL cL $|w|g=6.1 eV {I6} (2001Vo24).                                          
  35CL cL $|G{-|g}=1.02eV {I10} (2001Vo24).                                      
- 35CL  G 3611.7       1                                                         
- 35CL cG RI$from 2001Vo24.                              
- 35CL  G 3757.2       1      LT                                             V   
- 35CL cG RI$from 1976Me12. Other: 1 from 2001Vo24.                              
+ 35CL  G 3611.7                                                                 
+ 35CL cG RI$1 (2001Vo24).                                                       
+ 35CL  G 3757.2                                                                 
+ 35CL cG RI$1 (2001Vo24).                                                       
  35CL  G 4267.8       8.0    8                                                  
- 35CL cG RI$from 1972Hu10. Other: 7 from 2001Vo24.                              
- 35CL  G 4438.6       8.0    8                                              V   
- 35CL  G 4463.0       24     3  D+Q      +0.15   3                              
- 35CL cG RI$from 1972Hu10. Other: 24 from 2001Vo24.                             
+ 35CL cG RI$from 1972Hu10. Other: 7 (2001Vo24).                                 
+ 35CL  G 4463.0       24.0   24 D+Q      +0.15   3                              
+ 35CL cG RI$from 1972Hu10. Other: 24 (2001Vo24).                                
  35CL cG M,MR$from 2001Vo24                                                     
  35CL cG $A{-2}=+0.25 {I3}, A{-4}=-0.04 {I2} (2001Vo24)                         
- 35CL  G 5378.6       25     3  D+Q      +0.02   3                              
- 35CL cG RI$from 1972Hu10. Other: 25 from 2001Vo24.                             
+ 35CL  G 5378.6       25.0   25 D+Q      +0.02   3                              
+ 35CL cG RI$from 1972Hu10. Other: 25 (2001Vo24).                                
  35CL cG M,MR$from 2001Vo24. |d=0.11 {I1} from 1967Ko20,1967Ko23.               
  35CL cG $|w|g=4 eV, |G{-|g}(M1)=0.0459 eV, |G{-g}(E2)=0.0009 eV (1967Ko20)     
  35CL cG $A{-2}=+0.60 {I7}, A{-4}=-0.02 {I7} (1967Ko20,1967Ko23)                
  35CL cG $A{-2}=+0.51 {I23}, A{-4}=-0.05 {I24} (2001Vo24)                       
  35CL  G 5687.4       1.0    5  D+Q      -0.72   31                             
- 35CL cG RI$from 1972Hu10. Other: 1 from 2001Vo24.                              
+ 35CL cG RI$from 1972Hu10. Other: 1 (2001Vo24).                                 
  35CL cG M,MR$from 1967Ko20,1967Ko23                                            
  35CL cG $|w|g=4 eV, |G{-|g}(M1)=0.039 eV, |G{-g}(E2)=0.0211 eV (1967Ko20)      
  35CL cG $A{-2}=+0.22 {I9}, A{-4}=-0.02 {I11} (1967Ko20,1967Ko23)               
- 35CL  G 5735.6       5      3                                                  
+ 35CL  G 5735.6       5.0    25                                                  
  35CL cG RI$from 1972Hu10. Others: 5 (2001Vo24).                                
- 35CL  G 6618.1       34     4  D+Q      +0.06   3                              
- 35CL cG RI$from 1972Hu10. Other: 34 from 2001Vo24.                             
+ 35CL  G 6618.1       34.0   34  D+Q      +0.06   3                              
+ 35CL cG RI$from 1972Hu10. Other: 34 (2001Vo24).                                
  35CL cG M,MR$from 2001Vo24. |d=0.12 {I10} from 1967Ko20,1967Ko23               
  35CL cG $|w|g=4 eV, |G{-|g}(M1)=0.216 eV, |G{-g}(E2)=0.0044 eV (1967Ko23)      
  35CL cG $A{-2}=+0.79 {I15}, A{-4}=-0.08 {I15} (1967Ko20,1967Ko23)              
  35CL cG $A{-2}=+0.02 {I13}, A{-4}=-0.08 {I13} (2001Vo24)                       
  35CL  G 8380.7       3.0    15 D+Q      1.65                                   
- 35CL cG RI$from 1972Hu10. Other: 2 from 2001Vo24.                              
+ 35CL cG RI$from 1972Hu10. Other: 2 (2001Vo24).                                 
  35CL cG MR$from 1967Ko20,1967Ko23                                              
  35CL cG $|w|g=4 eV, |G{-|g}(M1)=0.0146 eV, |G{-g}(E2)=0.054 eV (1967Ko23)      
  35CL cG $A{-2}=-0.83 {I22}, A{-4}=+0.72 {I33} (1967Ko20,1967Ko23)              
@@ -2329,25 +2343,25 @@
  35CL cL $|w|g=2.1 eV {I4} (2001Vo24).                                          
  35CL cL $|G{-|g}=0.36 eV {I6} (2001Vo24).                                      
  35CL  G 2829         5.6    28                                                 
- 35CL cG RI$6 {2001Vo24}                                                        
+ 35CL cG RI$other: 6 {2001Vo24}                                                 
  35CL  G 3603.2       7.0    35                                                 
- 35CL cG RI$7 {2001Vo24}                                                        
+ 35CL cG RI$other: 7 {2001Vo24}                                                 
  35CL  G 3859.8       1.0    5                                                  
- 35CL cG RI$1 {2001Vo24}                                                        
+ 35CL cG RI$other: 1 {2001Vo24}                                                 
  35CL  G 4516.8       1.2    6                                                  
- 35CL cG RI$1 {2001Vo24}                                                        
+ 35CL cG RI$other: 1 {2001Vo24}                                                 
  35CL  G 4565.6       5.2    26                                                 
- 35CL cG RI$5 {2001Vo24}                                                        
+ 35CL cG RI$other: 5 {2001Vo24}                                                 
  35CL  G 5481.2       7.3    37                                                 
- 35CL cG RI$7 {2001Vo24}                                                        
+ 35CL cG RI$other: 7 {2001Vo24}                                                 
  35CL  G 5790.0       20     5                                                  
- 35CL cG RI$20 {2001Vo24}                                                       
+ 35CL cG RI$other: 20 {2001Vo24}                                                
  35CL  G 5838.2       2.8    14                                                 
- 35CL cG RI$3 {2001Vo24}                                                        
+ 35CL cG RI$other: 3 {2001Vo24}                                                 
  35CL  G 6720.7       46     12                                                 
- 35CL cG RI$46 {2001Vo24}                                                       
+ 35CL cG RI$other: 46 {2001Vo24}                                                
  35CL  G 8483.3       4      2                                                  
- 35CL cG RI$4 {2001Vo24}                                                        
+ 35CL cG RI$other: 4 {2001Vo24}                                                 
  35CL  L 8486.1    5                                            2178.0    5     
  35CL cL $|w|g=1.9 eV {I4} (1976Sp08)                                           
  35CL  G 2728         1.1    6                                                  
@@ -2425,10 +2439,16 @@
  35CL cL $|w|g=2.4 eV {I5} (1976Sp08)                                           
  35CL  G 3732.5       1.6    8                                                  
  35CL  G 4554.2       5.4    27                                                 
+ 35CL  G 4670.4       4                                                     D  ?
+ 35CL cG RI$from 1967Da12 only; not observed by others.                         
  35CL  G 4694.9       7.2    36                                                 
  35CL  G 5610.5       2.5    13                                                 
  35CL  G 5919.3       4.3    22                                                 
  35CL  G 5967.5       23     6                                                  
+ 35CL  G 6849.7       9                                                     D  ?
+ 35CL cG RI$from 1967Da12 only; not observed by others.                         
+ 35CL  G 7393.4       2                                                     D  ?
+ 35CL cG RI$from 1967Da12 only; not observed by others.                         
  35CL  G 8612.6       56     6                                                  
  35CL  L 8618.1    5  (3/2+,5/2+)                               2314.0    5     
  35CL cL J$most probable spin=5/2 from |g(|q) in 1970Ko33                       
@@ -2533,7 +2553,8 @@
  35CL  G 4577.1       2.3    12                                                 
  35CL  G 6056.4       3.0    15                                                 
  35CL  G 6987.2       30     8                                                  
- 35CL  G 7530.6       2      LT                                             D   
+ 35CL  G 7530.6       2                                                        ?
+ 35CL cG RI$from 1967Da12 only; not observed by others.                         
  35CL  G 8749.7       53     5                                                  
  35CL  L 8767.0    5                                            2467.3    5     
  35CL cL $|w|g=0.3 eV {I2} (1976Sp08)                                           
@@ -2662,21 +2683,21 @@
  35CL cL $|w|g=1.2 eV {I2} (1976Sp08)                                           
  35CL cL $|w|g=1.2 eV {I4} (2001Vo24)                                           
  35CL cL $|G{-|g}=0.20 eV {I6} (2001Vo24)                                       
- 35CL  G 3293.4       1                                                         
- 35CL cG RI$from 2001Vo24                                                       
+ 35CL  G 3293.4                                                                 
+ 35CL cG RI$1 from 2001Vo24 only; not observed by others.                       
  35CL  G 3307         1.6    8                                                  
  35CL  G 4779.3       8.5    43                                                 
- 35CL cG RI$9 {2001Vo24}                                                        
+ 35CL cG RI$other: 9 {2001Vo24}                                                 
  35CL  G 4950.0       3.9    20                                                 
- 35CL cG RI$4 {2001Vo24}                                                        
+ 35CL cG RI$other: 4 {2001Vo24}                                                 
  35CL  G 5729.8       29     7                                                  
- 35CL cG RI$29 {2001Vo24}                                                       
+ 35CL cG RI$other: 29 {2001Vo24}                                                
  35CL  G 6198.8       37     9                                                  
- 35CL cG RI$37 {2001Vo24}                                                       
+ 35CL cG RI$other: 37 {2001Vo24}                                                
  35CL  G 7129.5       19     5                                                  
- 35CL cG RI$19 {2001Vo24}                                                       
+ 35CL cG RI$other: 19 {2001Vo24}                                                
  35CL  G 8892.1       1.0    5                                                  
- 35CL cG RI$1 {2001Vo24}                                                        
+ 35CL cG RI$other: 1 {2001Vo24}                                                 
  35CL  L 8904.8    5                                            2609.2    5     
  35CL cL $|w|g=1.0 eV {I2} (1976Sp08)                                           
  35CL  G 2724         4.3    22                                                 
@@ -2695,21 +2716,21 @@
  35CL cL $|w|g=1.5 eV {I3} (1976Sp08)                                           
  35CL cL $|w|g=1.5 eV {I3} (2001Vo24)                                           
  35CL cL $|G{-|g}=0.25 eV {I5} (2001Vo24)                                       
- 35CL  G 3252         4      LT                                             V   
- 35CL cG RI$4 {2001Vo24}                                                        
+ 35CL  G 3252                                                                   
+ 35CL cG RI$4 from 2001Vo24 only; not observed by others.                       
  35CL  G 3261         3.7    19                                                 
- 35CL cG RI$2 {2001Vo24}                                                        
+ 35CL cG RI$other: 2 {2001Vo24}                                                 
  35CL  G 3306.9       2.2    11                                                 
  35CL  G 3321         4                                                         
- 35CL cG RI$4 {2001Vo24}                                                        
+ 35CL cG RI$other: 4 {2001Vo24}                                                 
  35CL  G 3387         2.5    13                                                 
  35CL  G 3690.8       4.4    22                                                 
  35CL  G 4136.7       5.6    28                                                 
- 35CL cG RI$6 {2001Vo24}                                                        
+ 35CL cG RI$other: 6 {2001Vo24}                                                 
  35CL  G 4963.5       13     3                                                  
- 35CL cG RI$15 {2001Vo24}                                                       
+ 35CL cG RI$other: 15 {2001Vo24}                                                
  35CL  G 7143.0       69     7                                                  
- 35CL cG RI$69 {2001Vo24}                                                       
+ 35CL cG RI$other: 69 {2001Vo24}                                                
  35CL  L 8919.8    5                                            2624.6    5     
  35CL cL $|w|g=1.1 eV {I2} (1976Sp08)                                           
  35CL  G 3274         5.6    28                                                 
@@ -2858,3 +2879,4 @@
  35CL cL $|w|g=4.0 eV {I8} (1976Sp08)                                           
  35CL d  $Done 1977Ko34, 1977Ko35                                               
  35CL d  $Done 1966AZ01, 1966Wa09, 1967WA22, 1981Bi05, 1996Ka21.                
+ 35CL d  $Done 1967Da12, 2001Vo24.                                              
