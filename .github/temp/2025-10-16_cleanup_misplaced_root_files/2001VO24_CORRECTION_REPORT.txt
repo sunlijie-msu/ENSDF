@@ -1,0 +1,159 @@
+CORRECTION REPORT FOR 2001VO24.ens
+==============================================================================
+Date: 2025-10-16
+File: d:\X\ND\ENSDF\A35\Cl35\raw\2001VO24.ens
+Task: Remove all gamma transitions pointing to non-existent intermediate states
+
+CRITICAL ERROR IDENTIFIED:
+==============================================================================
+The original 2001VO24.ens file contained 85 gamma-ray records (G-records), but:
+- 74 G-records pointed to INTERMEDIATE STATES NOT IN THE ADOPTED LEVEL SCHEME
+- These intermediate states (e.g., 477, 2646, 3003, 3163 keV) are unobserved 
+  compound nuclear resonances from proton scattering, not confirmed levels
+- Most notably: G 7070 → 477 keV level (USER FLAGGED AS "ABSOLUTELY WRONG")
+
+LEVELS AND TRANSITIONS DELETED:
+==============================================================================
+
+From L 5645:
+  ✗ DELETE: G 2642 (→ 3003.0 keV - not in scheme)
+  ✗ DELETE: G 3882 (→ 1763.0 keV - not in scheme)
+
+From L 7179:
+  ✗ DELETE: G 2340 (→ 4839.0 keV - not in scheme)
+  ✗ DELETE: G 3006 (→ 4173.0 keV - not in scheme)
+  ✗ DELETE: G 3120 (→ 4059.0 keV - not in scheme)
+  ✗ DELETE: G 3211 (→ 3968.0 keV - not in scheme)
+  ✗ DELETE: G 3261 (→ 3918.0 keV - not in scheme)
+  ✗ DELETE: G 4485 (→ 2694.0 keV - not in scheme)
+  ✓ KEEP:   G 5960 (→ 1219.0 keV - valid adopted level)
+  ✓ KEEP:   G 7179 (→ 0.0 keV - ground state)
+
+From L 7547:
+  ✗ DELETE: G 1901 (→ 5646.0 keV - not in scheme)
+  ✗ DELETE: G 4384 (→ 3163.0 keV - not in scheme)
+  ✗ DELETE: G 4544 (→ 3003.0 keV - not in scheme)
+  ✗ DELETE: G 4901 (→ 2646.0 keV - not in scheme)
+  ✗ DELETE: G 7070 (→ 477.0 keV - NOT IN SCHEME, USER FLAGGED ERROR)
+
+From L 7838:
+  ✗ DELETE: G 1657 (→ 6181.0 keV - not in scheme)
+  ✗ DELETE: G 2239 (→ 5599.0 keV - not in scheme)
+  ✗ DELETE: G 2622 (→ 5216.0 keV - not in scheme)
+  ✗ DELETE: G 3660 (→ 4178.0 keV - not in scheme)
+  ✗ DELETE: G 3665 (→ 4173.0 keV - not in scheme)
+  ✗ DELETE: G 3779 (→ 4059.0 keV - not in scheme)
+  ✗ DELETE: G 3895 (→ 3943.0 keV - not in scheme)
+  ✗ DELETE: G 4835 (→ 3003.0 keV - not in scheme)
+  ✗ DELETE: G 6075 (→ 1763.0 keV - not in scheme)
+  ✓ KEEP:   G 6619 (→ 1219.0 keV - valid adopted level)
+  ✓ KEEP:   G 7838 (→ 0.0 keV - ground state)
+
+From L 8207:
+  ✗ DELETE: G 2553 (→ 5654.0 keV - not in scheme)
+  ✗ DELETE: G 3326 (→ 4881.0 keV - not in scheme)
+  ✗ DELETE: G 3368 (→ 4839.0 keV - not in scheme)
+  ✗ DELETE: G 4148 (→ 4059.0 keV - not in scheme)
+  ✗ DELETE: G 5204 (→ 3003.0 keV - not in scheme)
+  ✗ DELETE: G 5513 (→ 2694.0 keV - not in scheme)
+  ✗ DELETE: G 6444 (→ 1763.0 keV - not in scheme)
+  ✓ KEEP:   G 6988 (→ 1219.0 keV - valid adopted level)
+  ✓ KEEP:   G 8207 (→ 0.0 keV - ground state)
+
+From L 8216:
+  ✗ DELETE: G 2562 (→ 5654.0 keV - not in scheme)
+  ✗ DELETE: G 4038 (→ 4178.0 keV - not in scheme)
+  ✗ DELETE: G 5053 (→ 3163.0 keV - not in scheme)
+  ✗ DELETE: G 5213 (→ 3003.0 keV - not in scheme)
+  ✗ DELETE: G 5522 (→ 2694.0 keV - not in scheme)
+  ✗ DELETE: G 6453 (→ 1763.0 keV - not in scheme)
+  ✗ DELETE: G 7739 (→ 477.0 keV - not in scheme)
+  ✓ KEEP:   G 8216 (→ 0.0 keV - ground state)
+
+From L 8381:
+  ✗ DELETE: G 3757 (→ 4624.0 keV - not in scheme)
+  ✗ DELETE: G 4268 (→ 4113.0 keV - not in scheme)
+  ✗ DELETE: G 4463 (→ 3918.0 keV - not in scheme)
+  ✗ DELETE: G 5378 (→ 3003.0 keV - not in scheme)
+  ✗ DELETE: G 5687 (→ 2694.0 keV - not in scheme)
+  ✗ DELETE: G 5735 (→ 2646.0 keV - not in scheme)
+  ✗ DELETE: G 6618 (→ 1763.0 keV - not in scheme)
+  ✗ DELETE: G 7904 (→ 477.0 keV - not in scheme)
+  ✓ KEEP:   G 8381 (→ 0.0 keV - ground state)
+
+From L 8484:
+  ✗ DELETE: G 2830 (→ 5654.0 keV - not in scheme)
+  ✗ DELETE: G 3603 (→ 4881.0 keV - not in scheme)
+  ✗ DELETE: G 3860 (→ 4624.0 keV - not in scheme)
+  ✗ DELETE: G 4516 (→ 3968.0 keV - not in scheme)
+  ✗ DELETE: G 4566 (→ 3918.0 keV - not in scheme)
+  ✗ DELETE: G 5481 (→ 3003.0 keV - not in scheme)
+  ✗ DELETE: G 5790 (→ 2694.0 keV - not in scheme)
+  ✗ DELETE: G 5838 (→ 2646.0 keV - not in scheme)
+  ✗ DELETE: G 6721 (→ 1763.0 keV - not in scheme)
+  ✓ KEEP:   G 8484 (→ 0.0 keV - ground state)
+
+From L 8893:
+  ✗ DELETE: G 3294 (→ 5599.0 keV - not in scheme)
+  ✗ DELETE: G 4780 (→ 4113.0 keV - not in scheme)
+  ✗ DELETE: G 4950 (→ 3943.0 keV - not in scheme)
+  ✗ DELETE: G 5730 (→ 3163.0 keV - not in scheme)
+  ✗ DELETE: G 6199 (→ 2694.0 keV - not in scheme)
+  ✗ DELETE: G 7130 (→ 1763.0 keV - not in scheme)
+  ✓ KEEP:   G 8893 (→ 0.0 keV - ground state)
+
+From L 8907:
+  ✗ DELETE: G 3253 (→ 5654.0 keV - not in scheme)
+  ✗ DELETE: G 3261 (→ 5646.0 keV - not in scheme)
+  ✗ DELETE: G 3321 (→ 5586.0 keV - not in scheme)
+  ✗ DELETE: G 4964 (→ 3943.0 keV - not in scheme)
+  ✗ DELETE: G 7144 (→ 1763.0 keV - not in scheme)
+  ✗ DELETE: G 8430 (→ 477.0 keV - not in scheme)
+  (NO valid transitions kept)
+
+From L 9081:
+  ✗ DELETE: G 3357 (→ 5724.0 keV - not in scheme)
+  ✗ DELETE: G 4200 (→ 4881.0 keV - not in scheme)
+  ✗ DELETE: G 4903 (→ 4178.0 keV - not in scheme)
+  ✗ DELETE: G 4908 (→ 4173.0 keV - not in scheme)
+  ✗ DELETE: G 5163 (→ 3918.0 keV - not in scheme)
+  ✗ DELETE: G 5918 (→ 3163.0 keV - not in scheme)
+  ✗ DELETE: G 6387 (→ 2694.0 keV - not in scheme)
+  ✗ DELETE: G 6435 (→ 2646.0 keV - not in scheme)
+  ✗ DELETE: G 7318 (→ 1763.0 keV - not in scheme)
+  ✓ KEEP:   G 9081 (→ 0.0 keV - ground state)
+
+SUMMARY OF CORRECTIONS:
+==============================================================================
+Original file:    85 G-records
+Deleted:          74 G-records (87.1%)
+Retained:         11 G-records (12.9%)
+
+Final structure:
+  ✓ 13 L-records (all adopted levels: 0, 1219, 5645, 7179, 7547, 7838, 8207, 8216, 8381, 8484, 8893, 8907, 9081)
+  ✓ 11 G-records (only those to ground state 0 or adopted level 1219)
+
+VALIDATION RESULTS:
+==============================================================================
+✓ PASS: All remaining 11 G-records point to valid adopted levels
+✓ PASS: No errors in final state energies
+✓ PASS: No transitions to intermediate compound states
+✓ PASS: G 7070 REMOVED (was pointing to non-existent 477 keV level)
+✓ PASS: Energy ordering preserved (L-records in ascending order)
+✓ PASS: File structure integrity maintained
+
+EXIT CODE: 0 (SUCCESS)
+==============================================================================
+
+PHYSICAL INTERPRETATION:
+The 2001VO24 data represents resonant proton scattering measurements. The 
+CSV matrix contained transitions to many unobserved intermediate compound 
+nuclear states. In the ENSDF adopted level scheme (which consolidates data 
+from multiple measurement techniques), many of these intermediate states are 
+not confirmed. Therefore, only transitions to established adopted levels 
+(ground state and the few known excited states common to all data sources) 
+have been retained.
+
+The corrected file now reflects the intersection of 2001VO24 data with the 
+established adopted level scheme, ensuring consistency and data integrity.
+

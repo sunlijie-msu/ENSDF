@@ -96,16 +96,14 @@ BEFORE creating ANY new file, script, or major operation:
 1. Check: Does `column_calibrate.py`, `ensdf_1line_ruler.py`, `check_gamma_ordering.py`, or other existing tools already handle this?
 2. If YES: Adapt existing tool, do NOT create new script
 3. If NO: Create new script following all rules below
-4. Verify: Output location is `.github` (never user folders, never temp folders, never root)
+4. Verify: Output location is `.github/temp` (never in ENSDF root directory or in new/old/raw folders)
 
 ### Script Management Rules
 * USE EXISTING ENSDF 80-column Validation Tools: Always use and revise if needed `column_calibrate.py` and `ensdf_1line_ruler.py` and `check_gamma_ordering.py` for any ENSDF file format validation
 * AVOID creating spaghetti or redundant scripts: check existing functionality first (e.g., verify_*, check_*, analyze_*, compare_*). CONSOLIDATE functionality into existing scripts rather than creating duplicate scripts
-* CREATE SCRIPTS IN `.github` FOLDER ONLY
-* NEVER create scripts in ENSDF root directory: causes workspace clutter
-* NEVER create scripts in temp folders: temp for each nuclide is for raw data files only
-* NEVER create scripts, temporary text files, or new ENSDF files in user ENSDF folders: preserve data integrity and maintain clean workspace organization
-* Move misplaced scripts and text files to `.github/legacy/` immediately when discovered
+* CREATE SCRIPTS IN `.github/temp` FOLDER ONLY
+* NEVER create scripts, temporary text files, markdown files, report files, or new ens files in user in ENSDF root directory or in new/old/raw folders: maintain clean workspace organization
+* Move misplaced scripts and text files to `.github/temp/YYYY-MM-DD_description/` immediately when discovered, including those in the root of `.github` folder.
 
 ### ENSDF File Management Rule
 EDIT FILES IN PLACE. NEVER CREATE VERSIONS.
@@ -113,7 +111,6 @@ EDIT FILES IN PLACE. NEVER CREATE VERSIONS.
 FORBIDDEN FILE SUFFIXES:
 * `_updated.ens`, `_backup.ens`, `_corrected.ens`, `_fixed.ens`, `_v2.ens`, `_final.ens`, `_backup_20251013.ens`,etc.
 
-ENFORCEMENT: If creating new script/file, STOP and run pre-action checklist. If violation detected, immediately move to `.github/legacy/YYYY-MM-DD_description/` and report to user.
 
 CORRECT WORKFLOW:
 1. Read original file -> 2. Edit SAME file -> 3. Validate SAME file
