@@ -138,13 +138,12 @@ See `copilot-instructions.md` for complete field definitions, exact column posit
 CRITICAL AI WORKFLOW STEP: Execute ENSDF 1-line ruler for immediate 80-column validation:
 * Single line: `python .github/ensdf_1line_ruler.py --line "your 80-char line"`
 * File scan: `python .github/ensdf_1line_ruler.py --file "filename.ens" --show-only-wrong`
-* MANDATORY USAGE: Before editing, during editing for each line, and after editing
+* MANDATORY USAGE: Before editing, during editing for each line, and after editing. Skipping validation if the task is purely editing comments.
 * Execute column validation on the current ENSDF file:
   * Python: `python .github/column_calibrate.py "currentfile.ens"` (comprehensive validation always)
 
 AI Behavior Rule: Never claim edit completion without ruler and column validation.
-
-THIS IS THE MOST IMPORTANT RULE. NEVER VIOLATE THIS.
+Skipping validation if the task is purely editing comments.
 
 ##### The Sacred Workflow (must follow for every single edit):
 ```
