@@ -1,5 +1,5 @@
 Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 10/07/2025)
-Generated at: Fri 10/17/2025 at 11:41:42 PM EDT                                 
+Generated at: Sat 10/18/2025 at 06:43:44 PM EDT                                 
                                                                                 
  35CL    ADOPTED LEVELS, GAMMAS                                  ENSDF    202509
  35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
@@ -1260,7 +1260,7 @@ Generated at: Fri 10/17/2025 at 11:41:42 PM EDT
  35CL  G 3737.7      0.36                                                       
  35CL  G 6577.1      11                                                         
  35CL  G 7796.2      100                                                        
- 35CL  L 7837.2    10 3/2-             3.73 KEV  38                             
+ 35CL  L 7837.2    10 3/2-             3.7 KEV   4                              
  35CLX L XREF=OP                                                                
  35CL2 L ISPIN=3/2                                                              
  35CL cL E$weighted average of 7837.2 {I10} from {+34}S(p,|g) and 7837 {I3} from
@@ -2078,7 +2078,7 @@ Generated at: Fri 10/17/2025 at 11:41:42 PM EDT
  35CL  L 8689      3  1/2+             0.20 KEV  2                              
  35CLX L XREF=L(8698*)O(*)P                                                     
  35CL cL J$R-Matrix analysis in (p,p).                                          
- 35CL  L 8691      3  1/2-             6.44 KEV  65                             
+ 35CL  L 8691      3  1/2-             6.4 KEV   7                              
  35CLX L XREF=L(8698*)O(*)P                                                     
  35CL cL J$R-Matrix analysis in (p,p).                                          
  35CL  L 8696.9    5  3/2-             0.8 KEV   1                              
