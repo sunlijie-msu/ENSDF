@@ -1,17 +1,15 @@
- 35CL    ADOPTED LEVELS, GAMMAS                                  11NDS    201111
+ 35CL    ADOPTED LEVELS, GAMMAS                                  ENSDF    202509
+ 35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
+ 35CL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35CL  Q -5966.1   8 12644.775 6370.82 4 -6997.914     2012WA38                 
- 35CL cQ $Note: Current evaluation has used the following Q record              
- 35CL2cQ -5966.1   7 {I12644}.80 {I7} 6370.82 {I5}-6997.90 {I4}    2011AuZZ     
- 35CL cQ $S(2n)=24152.9 {I4}, S(2p)=17254.1 {I11} (2011AuZZ,2003Au03)           
- 35CL cQ $Values in 2003Au03: S(n)=12645.08 {i18}, s(p)=6370.72 {i10}           
- 35CL2cQ Q(|a)=6997.57 {i19}                                                    
- 35CL c  First isotope identification by F. W. Aston from a mass-spectrum.      
- 35CL d  Isotope identificatin: F. W. Aston, Nature 104 (1919) 393.             
+ 35CL  Q -5966.2   7 12644.765 6370.81 4 -6997.904     2021WA16                 
+ 35CL cQ $S(2n)=24152.8 {I4}, S(2p)=17254.1 {I11} (2021Wa16)                    
+ 35CL c  Isotope discovery (2012Th10): positive-ray mass spectrograph at        
+ 35CL2c  Cambridge, UK (1919As01).                                              
  35CL cG E$ Values with |DE are primarily from |e decay, (|a,p|g) and (HI,xn|g).
- 35CL2cG Weighted average taken when available. Others are deduced              
- 35CL3cG from level-energy differences.                                         
+ 35CL2cG Weighted average taken when available. Others are deduced from         
+ 35CL3cG level-energy differences.                                              
  35CL cG RI$ Primarily from (p,|g), (|a,p|g) and (HI,xn|g). Weighted average    
  35CL2cG taken when available, unless otherwise noted.                          
  35CL cG RI(X)$Transitions to 4177 and 4173 not resolved (1976Sp08)             
@@ -19,10 +17,10 @@
  35CL2cG (|a,p|g), (p,p'|g), Coulomb excitation and (HI,xn|g). If T{-1/2} is    
  35CL3cG unknown and parity is determined not by polarization measurements,     
  35CL4cG evaluators use D and Q, instead of M1 and E2, or, E1 and M2.           
- 35CL cL E$ From E|g data when measured |g-ray energies are available.          
- 35CL2cL In other cases weighted averages are taken of values available         
- 35CL3cL from different reactions                                               
- 35CL cL J$ In particle-transfer reactions, target J|p=1/2+  for {+31}p in      
+ 35CL cL E$ From E|g data when measured |g-ray energies are available. In other 
+ 35CL2cL cases weighted averages are taken of values available from different   
+ 35CL3cL reactions                                                              
+ 35CL cL J$ In particle-transfer reactions, target J|p=1/2+ for {+31}p in       
  35CL2cL ({+6}Li,d) reaction, J|p= 3/2+ for {+33}S in (|a,d) reaction, J|p=0+   
  35CL3cL for {+32}S in (|a,p) reaction, J|p=0+ for {+34}S in (d,n) and          
  35CL4cL ({+3}He,d) reactions, J|p=0+ for {+36}Ar in (n,d) and (d,{+3}He)       
@@ -32,19 +30,18 @@
  35CL3cL reactions or/and from angular distribution measurements or |g|g(DCO) of
  35CL4cL |g-rays or/and R-Matrix analysis of resonances.                        
  35CL cL J$ When assigning J|p to a level based on |g transitions from this     
- 35CL2cL level to a level of known J|p, evaluators use the following rules:     
- 35CL3cL if E|g<4 MeV, transitions are only considered to be E1,M1 or E2; if    
- 35CL4cL E|g>4 MeV, M2 and E3 are considered to be possible.                    
+ 35CL2cL level to a level of known J|p, evaluators use the following rules: if  
+ 35CL3cL E|g<4 MeV, transitions are only considered to be E1,M1 or E2; if E|g>4 
+ 35CL4cL MeV, M2 and E3 are considered to be possible.                          
  35CL cL J(A)$ From angular distributions in (|a,p):resonance only.             
  35CL cL T$ T{-1/2} from measurements using DSAM (Doppler-Shift-Attenuation     
  35CL2cL -Method) and/or RDM (Recoil-Distance-Method) in (|a,p|g), (p,|g),      
  35CL3cL (HI,xn|g) and Coulomb excitation, delayed coincidence method in (p,|g) 
- 35CL4cL and scattering of photons in (|g,|g).  Weighted averages taken when    
- 35CL5cL available. |G are primarily from |G{-p} in (p,p) resonances since      
- 35CL6cL when |G{-|g} is negligible.                                            
- 2020RI06
- 35CL CL BAND(D)$ Band based on f{-7/2} orbital                                 
- 35CL CL BAND(E)$ Band based on 13/2+                                           
+ 35CL4cL and scattering of photons in (|g,|g). Weighted averages taken when     
+ 35CL5cL available. |G are primarily from |G{-p} in (p,p) resonances since when 
+ 35CL6cL |G{-|g} is negligible. 2020Ri06                                        
+ 35CL cL BAND(D)$ Band based on f{-7/2} orbital                                 
+ 35CL cL BAND(E)$ Band based on 13/2+                                           
  35CL  XA35S B- DECAY (87.37 D)                                                 
  35CL  XB35AR EC DECAY (1.7756 S)                                               
  35CL  XC36K ECP DECAY (342 MS)                                                 
@@ -80,16 +77,16 @@
  35CL3cL (2000Ha64), 0.0850 {I11} (2004Al08); also from 2011StZZ.               
  35CL cL J$spin from microwave spectroscopy and atomic beam methods             
  35CL2cL (1948To10,1949Da14), parity from L(pol d,{+3}He)=2 and L-1/2 from      
- 35CL2cL  analyzing power                                                       
+ 35CL3cL analyzing power                                                        
  35CL cL $Evaluated rms charge radius=3.365 fm {I15} (2004An14 evaluation),     
  35CL2cL 3.365 fm {I19} from 2008 update of 2004An14.                           
  35CL  L 1219.29   11 1/2+             126 FS    14                             
  35CLX L XREF=BDFGIKLMNOPQRSTVWX                                                
  35CL cL J$L(pol d,{+3}He)=0                                                    
  35CL cL T$weighted average of 146 fs {I62} from (|a,p|g), 106 fs {I14} from    
- 35CL2cL (p,|g), 201 fs {I28} from ({+34}S,n|g), 90 fs {I21} from (|g,|g),      
- 35CL3cL 139 fs {I56} from (n,n'|g), 150 fs {I35} from (p,p'|g), 150 fs {I20}   
- 35CL4cL from coulomb excitation.                                               
+ 35CL2cL (p,|g), 201 fs {I28} from ({+34}S,n|g), 90 fs {I21} from (|g,|g), 139  
+ 35CL3cL fs {I56} from (n,n'|g), 150 fs {I35} from (p,p'|g), 150 fs {I20} from  
+ 35CL4cL coulomb excitation.                                                    
  35CL  G 1219.3    2 100       M1+E2     +0.106  7                              
  35CL cG M,MR$from coulomb excitation                                           
  35CLB G BM1W=0.095 11$BE2W=2.7 5                                               
@@ -103,15 +100,14 @@
  35CL  G 543.8       0.2     LT                                                 
  35CL  G 1763.13   10 100      M1+E2     -2.93   10                             
  35CL cG MR$weighted average of -3.0 {I1} from (|a,p|g), -2.87 {I12} from       
- 35CL2cG (p,p'|g), -2.88 {I45} from coulomb excitation, -2.6 {I4} from          
- 35CL3cG (HI,xn|g)                                                              
+ 35CL2cG (p,p'|g), -2.88 {I45} from coulomb excitation, -2.6 {I4} from (HI,xn|g)
  35CLB G BM1W=0.00107 13$BE2W=11.2 12                                           
  35CL  L 2645.74    8 7/2+             159 FS    21                             
  35CLX L XREF=BFGILMOPTVWX                                                      
  35CL cL J$L(p,t)=2; |g|g(DCO) in (HI,xn|g)                                     
  35CL cL T$weighted average of 208 fs {I62} from (|a,p|g), 146 fs {I21} from    
- 35CL2cL (p,|g), 187 fs {I62} from (n,n'|g), 165 fs {I35} from (p,p'|g) and     
- 35CL3cL 180 fs {I60} from coulomb excitation.                                  
+ 35CL2cL (p,|g), 187 fs {I62} from (n,n'|g), 165 fs {I35} from (p,p'|g) and 180 
+ 35CL3cL fs {I60} from coulomb excitation.                                      
  35CL  G 882.84    10 9.9    11 M1+E2    -0.23   5                              
  35CL cG MR$weighted average of -0.25 {I5} from (|a,p|g) and -0.21 {I5} from    
  35CL2cG (p,p'|g).                                                              
@@ -125,8 +121,8 @@
  35CLX L XREF=BFGILMNOPRSV                                                      
  35CL cL J$L({+3}He,d)=L(d,{+3}He)=2; p'|g(|q) and |g-polarization in (p,p'|g)  
  35CL cL T$weighted average of 49 fs {I21} from (|a,p|g), 14 fs {I2} from       
- 35CL2cL (p,|g), 24 fs {I7} from (|g,|g), 43 fs {I6} from (n,n'|g) and          
- 35CL3cL 44 fs {I11} from (p,p'|g)                                              
+ 35CL2cL (p,|g), 24 fs {I7} from (|g,|g), 43 fs {I6} from (n,n'|g) and 44 fs    
+ 35CL3cL {I11} from (p,p'|g)                                                    
  35CL  G 930.9     2 16.3    13 M1+E2    -0.09   3                              
  35CL cG MR$from (p,p'|g)                                                       
  35CLB G BM1W=0.106 22$BE2W=4 3                                                 
@@ -140,9 +136,9 @@
  35CL  L 3002.30   135/2+              21 FS     4                              
  35CLX L XREF=BFGILMNOPRSTX                                                     
  35CL cL J$L(pol d, {+3}He)=2 and L+1/2 from analyzing power                    
- 35CL cL T$weighted average of 33 fs {I6} from (|a,p|g), 13 fs {I2} from        
- 35CL2cL (p,|g), 17 fs {I7} from (|g,|g), 50 fs {I9} from (n,n'|g),             
- 35CL3cL 18 fs {I9} from (p,p'|g)                                               
+ 35CL cL T$weighted average of 33 fs {I6} from (|a,p|g), 13 fs {I2} from (p,|g),
+ 35CL2cL 17 fs {I7} from (|g,|g), 50 fs {I9} from (n,n'|g), 18 fs {I9} from     
+ 35CL3cL (p,p'|g)                                                               
  35CL  G 308.6       5.4     LT                                                 
  35CL  G 356.6       1.1     LT                                                 
  35CL  G 1239.2      2.2     11 E2                                              
@@ -265,8 +261,8 @@
  35CL  L 4177.88   15 3/2-             25 FS     3                              
  35CLX L XREF=FGIM(4167)                                                        
  35CL cL J$L({+3}He,d)=1; |g(|q) and |g-polarization in (p,|g)                  
- 35CL cL T$weighted average of 47 fs {I17} from (|a,p|g) and 24 fs {I3}         
- 35CL2cL from (p,|g)                                                            
+ 35CL cL T$weighted average of 47 fs {I17} from (|a,p|g) and 24 fs {I3} from    
+ 35CL2cL (p,|g)                                                                 
  35CL  G 1175.6      0.8     LT                                                 
  35CL  G 1484.2      13      3  [E1]                                            
  35CLB G BE1W=0.00061 17                                                        
@@ -279,8 +275,8 @@
  35CL  L 4347.82   15 9/2-             0.8 PS    3                              
  35CLX L XREF=FGIX                                                              
  35CL cL J$p|g(|q) and |g-polarization in (|a,p|g) and |g|g(DCO) in (HI,xn|g)   
- 35CL cL T$weighted average of 2.0 ps {I7} in (|a,p|g), 0.229 ps {I42} in       
- 35CL2cL (p,|g) and 0.91 ps {I19} in (HI,xn|g)                                  
+ 35CL cL T$weighted average of 2.0 ps {I7} in (|a,p|g), 0.229 ps {I42} in (p,|g)
+ 35CL2cL and 0.91 ps {I19} in (HI,xn|g)                                         
  35CL  G 1185.0    2 100     3 M1+E2     -0.38   3                              
  35CL cG MR$weighted average of -0.38 {I3} in (|a,p|g) and -0.34 {I11} in       
  35CL2cG (HI,xn|g)                                                              
@@ -465,8 +461,7 @@
  35CL cL J$|g(|q) in (|a,p|g) and |g|g(DCO) (HI,xn|g)                           
  35CL cL T$from (HI,xn|g)                                                       
  35CL  G 1579.1    3  100    11 D+Q      -0.24   10                             
- 35CL cG MR$weighted average of -0.8 {I4} in (|a,p|g) and -0.2 {I1} in          
- 35CL2cG (HI,xn|g)                                                              
+ 35CL cG MR$weighted average of -0.8 {I4} in (|a,p|g) and -0.2 {I1} in (HI,xn|g)
  35CL  G 1982.9       11     3                                                  
  35CL  L 6087.4     4 13/2-            6.1 PS    6                              
  35CLX L XREF=FGX                                                               
@@ -474,8 +469,7 @@
  35CL cL T$weighted average of 6.4 ps {I6} in (|a,p|g) and 5.3 ps {I10} in      
  35CL2cL (HI,xn|g)                                                              
  35CL  G 680.3     1 100.0   11 M1+E2    +0.02   1                              
- 35CL cG M$weighted average of +0.02 {I1} in (|a,p|g) and +0.1 {I1} in          
- 35CL2cG (HI,xn|g)                                                              
+ 35CL cG M$weighted average of +0.02 {I1} in (|a,p|g) and +0.1 {I1} in (HI,xn|g)
  35CLB G BM1W=0.0107 11$BE2W=0.03 +4-3                                          
  35CL  G 1739.4    4 7.5     11 [E2]                                            
  35CLB G BE2W=0.060 11                                                          
@@ -2288,4 +2282,4 @@
  35CL  L 13900                                                                  
  35CLX L XREF=E                                                                 
  35CL2 L ISPIN=3/2                                                              
-                                                                                
+
