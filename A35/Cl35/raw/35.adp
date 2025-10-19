@@ -1,6 +1,3 @@
-Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 10/07/2025)
-Generated at: Sat 10/18/2025 at 06:43:44 PM EDT                                 
-                                                                                
  35CL    ADOPTED LEVELS, GAMMAS                                  ENSDF    202509
  35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
  35CL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
