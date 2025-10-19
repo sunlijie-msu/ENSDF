@@ -1,707 +1,191 @@
 Program for consistency check: output for Error and Warnings (version 10/07/2025)
-Generated at: Sat 10/18/2025 at 06:43:07 PM EDT
+Generated at: Sat 10/18/2025 at 08:50:14 PM EDT
 
 ################################################################################
 In Adopted dataset of 35CL
 
- 35CL  XA35S B- DECAY (87.37 D)
-         *                                                                        <E> DSID in XREF list does not match DSID in the dataset:
-                                                                                          35S B- DECAY (87.61 D)
- 35CL  XB35AR EC DECAY (1.7756 S)
-         *                                                                        <E> DSID in XREF list does not match DSID in the dataset:
-                                                                                          35S B- DECAY (87.61 D)
-                                                                                      DSID in XREF list does not match DSID in the dataset:
-                                                                                          35AR EC DECAY (1.7755 S)
- 35CL  XC36K ECP DECAY (342 MS)
-         *                                                                        <E> DSID in XREF list does not match DSID in the dataset:
-                                                                                          35S B- DECAY (87.61 D)
-                                                                                      DSID in XREF list does not match DSID in the dataset:
-                                                                                          35AR EC DECAY (1.7755 S)
-                                                                                      DSID in XREF list does not match DSID in the dataset:
-                                                                                          36K ECP DECAY (341 MS)
- 35CL cL BAND(E)$ Band based on 13/2+.
-          *                                                                       <W> No in-band transition from member level=11459.0 to 10859.0
-                                                                                      No in-band transition from member level=8844.6 to 8788.7
- 35CL  L 0           3/2+              STABLE                                   
- 35CLX L XREF=ABCDFGIKLMNOPQRSTUVWX
-         *                                                                        <W> No input dataset with XREF tag=P for DSID=35CL(P,P),(P,P'G)
-                                                                                      No input dataset with XREF tag=X for DSID=(HI,XNG)
+ 35CL cL BAND(E)$Band based on 13/2+.                                           
+          *                                                                       <W> No in-band transition from member level=11458.7 to 10858.5
+                                                                                      No in-band transition from member level=8844.3 to 8788.3
+ 35CL  L 0.0          3/2+             STABLE                                   
  35CL2 L MOMM1=+0.8218743 4 (1972Bl07,1989Ra17,2011StZZ)                        
  35CL2 L MOME2=-0.08249 2 (1972St38,1989Ra17,2011StZZ)                          
          *                                                                        <W> Check if MOMM1 and reference are updated with 2019STZV or 2020STZV
                                                                                       Check if MOME2 and reference are updated with 2021STZZ
- 35CL  L 1219.29   11 1/2+             126 FS    14                             
- 35CLX L XREF=BDFGIKLMNOPQRSTVWX
-         *                                                                        <W> No input dataset with XREF tag=P for DSID=35CL(P,P),(P,P'G)
-                                                                                      No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 1763.04    75/2+              0.39 PS   4                              
- 35CLX L XREF=BDFGIKLMOPQRSUVWX
-         *                                                                        <W> No input dataset with XREF tag=P for DSID=35CL(P,P),(P,P'G)
-                                                                                      No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 2645.74    8 7/2+             159 FS    21                             
- 35CLX L XREF=BFGILMOPTVWX
-         *                                                                        <W> No input dataset with XREF tag=P for DSID=35CL(P,P),(P,P'G)
-                                                                                      No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  G 1426.3      1.1     LT                                                 
+ 35CL  L 3942.9    2  9/2+             0.229 PS  35                             
+ 35CL  G 2180.1    10 100.0  21 M1+E2                                           
+                               *                                                  <E> Mult=M1 is inconsistent with spin-parity change
+                                                                                        JI=9/2+ JF(1763.18)=5/2+
+ 35CL  L 3967.6    4  1/2+             17 FS     4                              
+ 35CL  G 2748.5    6  100    6  [M1,E2]                                         
+                               *                                                  <E> Mult=E2 is inconsistent with spin-parity change
+                                                                                        JI=1/2+ JF(1219.39)=1/2+
+ 35CL  L 4769.86   23 7/2              110 FS    29                             
+ 35CL  G 3550.28      15     LT                                                 
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=7/2+ JF(1219.29)=1/2+
- 35CL  L 2693.75    83/2+              33 FS     6                              
- 35CLX L XREF=BFGILMNOPRSV
-         *                                                                        <W> No input dataset with XREF tag=P for DSID=35CL(P,P),(P,P'G)
- 35CL  L 3002.30   135/2+              21 FS     4                              
- 35CLX L XREF=BFGILMNOPRSTX
-         *                                                                        <W> No input dataset with XREF tag=P for DSID=35CL(P,P),(P,P'G)
-                                                                                      No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 3162.80    87/2-              30.8 PS   6                              
- 35CLX L XREF=DFGILMOPRSX
-         *                                                                        <W> No input dataset with XREF tag=P for DSID=35CL(P,P),(P,P'G)
-                                                                                      No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  G 1943.4      0.2     LT                                                 
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=7/2- JF(1219.29)=1/2+
- 35CL  L 3918.49   173/2+              4.9 FS    14                             
- 35CLX L XREF=BGIMNP
-         *                                                                        <W> No input dataset with XREF tag=P for DSID=35CL(P,P),(P,P'G)
- 35CL  L 3943.82   259/2+              205 FS    35                             
- 35CLX L XREF=FGISX
-         *                                                                        <W> XREF tag=S: level possibly not or inconsistent (E/JPI) in S=36AR(POL D,3HE)
-                                                                                        closest level in S=36AR(POL D,3HE)
-                                                                                        3948       40 (3/2+)              
-                                                                                      No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  G 2724.4      6       LT                                                 
-                               *                                                  <W> large deltaJ=4 ([E4]), but no Mult is given
-                                                                                        JI=9/2+ JF(1219.29)=1/2+
- 35CL  G 3943.7      10      LT                                                 
+                                                                                        JI=7/2 JF(1219.39)=1/2+
+ 35CL  L 4839.10   11 (1/2+,3/2)       14 FS     5                              
+ 35CL  G 2193.33      5.1    LT                                                 
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2193.33
+                                                                                        JI=(1/2+,3/2) JF(2645.66)=7/2+
+ 35CL  L 4880.96   15 7/2              0.10 PS   9                              
+ 35CL  G 3661.36      6.5    LT                                                 
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=9/2+ JF(0)=3/2+
- 35CL  L 3979.0     3 (3/2+,5/2+)      14 FS     3                              
- 35CLX L XREF=I
-         *                                                                        <W> XREF tag=I: level possibly not or energy discrepant in I=34S(P,G)
-                                                                                        closest level in I=34S(P,G)
-                                                                                        3967.3      6
- 35CL  L 4111.98   24 7/2+             49 FS     11                             
- 35CL  G 2892.5      19      LT                                                 
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=7/2+ JF(1219.29)=1/2+
- 35CL  L 4177.88   15 3/2-             25 FS     3                              
- 35CLX L XREF=FGIM(4167)
-         *                                                                        <W> XREF tag=G: level possibly not or energy discrepant in G=32S(A,PG)
-                                                                                        closest level in G=32S(A,PG)
-                                                                                        4171        2
- 35CL  L 4347.82   15 9/2-             0.8 PS    3                              
- 35CLX L XREF=FGIX
-         *                                                                        <W> No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  G 1654.1      6       LT                                                 
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=9/2- JF(2693.75)=3/2+
- 35CL  G 3128.3      7       LT                                                 
-                               *                                                  <W> large deltaJ=4 ([M4]), but no Mult is given
-                                                                                        JI=9/2- JF(1219.29)=1/2+
- 35CL  G 4347.8    8 4       LT                                                 
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=9/2- JF(0)=3/2+
- 35CL  L 4768.82   18 7/2              77 FS     20                             
- 35CL  G 3549.3      15      LT                                                 
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=7/2 JF(1219.29)=1/2+
- 35CL  L 4839.08   20 (1/2+,3/2)       10 FS     3                              
- 35CL  G 2193.3      5       LT                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2193.3
-                                                                                        JI=(1/2+,3/2) JF(2645.74)=7/2+
- 35CL  L 4881.07   21 7/2              5.4 FS    14                             
- 35CL  G 3661.5      6       LT                                                 
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=7/2 JF(1219.29)=1/2+
- 35CL  L 5010.09   20 (1/2,3/2)        7.6 FS    21                             
- 35CL  G 1847.3      50      LT                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=1847.3
-                                                                                        JI=(1/2,3/2) JF(3162.80)=7/2-
- 35CL  G 2364.3      5       LT                                                 
+                                                                                        JI=7/2 JF(1219.39)=1/2+
+ 35CL  L 5009.1    18 (1/2,3/2)        11 FS     3                              
+ 35CL  G 1847.1       50     LT                                                 
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=1847.1
+                                                                                        JI=(1/2,3/2) JF(3162.87)=7/2-
+ 35CL  G 2364.3       5      LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2364.3
-                                                                                        JI=(1/2,3/2) JF(2645.74)=7/2+
- 35CL  L 5163.21   23 7/2-                                                      
- 35CLX L XREF=FGI
-         *                                                                        <W> XREF tag=F: level possibly not or inconsistent (E/JPI) in F=32S(A,P)
-                                                                                        closest level in F=32S(A,P)
-                                                                                        5158.9     29 5/2+                
- 35CL  G 3943.6      23      LT                                                 
+                                                                                        JI=(1/2,3/2) JF(2645.66)=7/2+
+ 35CL  L 5163.34   22 7/2-                                                      
+ 35CL  G 3943.71      23     LT                                                 
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=7/2- JF(1219.29)=1/2+
- 35CL  L 5403.5    3  1/2-,3/2-        12 FS     3                              
- 35CLX L XREF=FGIM
-         *                                                                        <W> XREF tag=G: level possibly not or inconsistent (E/JPI) in G=32S(A,PG)
-                                                                                        closest level in G=32S(A,PG)
-                                                                                        5407.1     15 11/2-               
- 35CL  L 5407.2     4 11/2-            0.28 PS   7                          D   
- 35CLX L XREF=GMX
-         *                                                                        <W> XREF tag=M: level possibly not or inconsistent (E/JPI) in M=34S(3HE,D)
-                                                                                        closest level in M=34S(3HE,D)
-                                                                                        5409       12   possible JPI=1/2-,3/2-   from L=1 and target JPI=0+
-                                                                                      No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 5645.0     3(5/2,7/2,9/2+)    2.8 FS    7                              
- 35CL  G 5644.5      8       LT                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5644.5
-                                                                                        JI=(5/2,7/2,9/2+) JF(0)=3/2+
- 35CL  L 5926.9    3  11/2-            0.28 PS   LT                             
- 35CLX L XREF=FGX
-         *                                                                        <W> No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 6087.4     4 13/2-            6.1 PS    6                              
- 35CLX L XREF=FGX
-         *                                                                        <W> No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 6380.8     8                                                           
- 35CLX L XREF=FX
-         *                                                                        <W> No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 7178.6    3 1/2+                                                       
- 35CLX L XREF=FI
-         *                                                                        <W> XREF tag=F: level possibly not or inconsistent (E/JPI) in F=32S(A,P)
-                                                                                        closest level in F=32S(A,P)
-                                                                                        7180        4 (7/2+)              
- 35CL  L 7194.5     3 1/2-             0.027 KEV 8                              
- 35CL  G 4031.5      0.8     LT                                                 
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=1/2- JF(3162.80)=7/2-
- 35CL  G 4548.4      8       LT                                                 
+                                                                                        JI=7/2- JF(1219.39)=1/2+
+ 35CL  L 5646      2  (5/2,7/2,9/2+)   4 FS      1                              
+ 35CL  G 5646         8      LT                                                 
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5646
+                                                                                        JI=(5/2,7/2,9/2+) JF(0.0)=3/2+
+ 35CL  L 7744.8    9  7/2-                                                      
+ 35CL  G 6524.8       1.4                                                       
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=1/2- JF(2645.74)=7/2+
- 35CL  L 7225.5    3 5/2                                                        
- 35CLX L XREF=FI
-         *                                                                        <W> XREF tag=F: level possibly not or inconsistent (E/JPI) in F=32S(A,P)
-                                                                                        closest level in F=32S(A,P)
-                                                                                        7230.9     30 (3/2+)              
- 35CL  L 7234.0    3 5/2+                                                       
- 35CLX L XREF=FIT
-         *                                                                        <W> XREF tag=F: level possibly not or inconsistent (E/JPI) in F=32S(A,P)
-                                                                                        closest level in F=32S(A,P)
-                                                                                        7230.9     30 (3/2+)              
- 35CL  L 7269.2    1                                                            
- 35CLX L XREF=IT
-         *                                                                        <W> XREF tag=I: level possibly not or energy discrepant in I=34S(P,G)
-                                                                                        closest level in I=34S(P,G)
-                                                                                        7272.7      9 (1/2,3/2)           
- 35CL  L 7272.6     3 1/2-             0.014 KEV 4                              
- 35CL  G 4109.6      0.3     LT                                                 
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=1/2- JF(3162.80)=7/2-
- 35CL  L 7396.0    3 7/2(-)                                                     
- 35CL  G 2385.8      16      LT                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2385.8
-                                                                                        JI=7/2(-) JF(5010.09)=(1/2,3/2)
- 35CL  G 6176.1      30      LT                                                 
+                                                                                        JI=7/2- JF(1219.39)=1/2+
+ 35CL  L 7837.2    10 3/2-             3.7 KEV   4                              
+ 35CL  G 3894.1       1.4                                                       
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=7/2(-) JF(1219.29)=1/2+
- 35CL  L 7548.2     37/2-              0.7 FS    LT                             
- 35CL  G 2538.0      3.2     LT                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2538.0
-                                                                                        JI=7/2- JF(5010.09)=(1/2,3/2)
- 35CL  G 6328.2      0.5     LT                                                 
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=7/2- JF(1219.29)=1/2+
- 35CL  L 7744.8    4 7/2-                                                       
- 35CL  G 6524.8      1.4     LT                                                 
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=7/2- JF(1219.29)=1/2+
- 35CL  L 7837.1    3 3/2-              3.5 FS    LT                             
- 35CL  G 3893.0      1.4     LT                                                 
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=3/2- JF(3943.82)=9/2+
- 35CL  L 7873.2     413/2+                                                  E   
- 35CLX L XREF=IHX
-         *                                                                        <W> No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 7970.2     3 (5/2-,7/2-)                                               
- 35CL  G 6750.1      5       LT                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6750.1
-                                                                                        JI=(5/2-,7/2-) JF(1219.29)=1/2+
- 35CL  L 7987.8     4 3/2                                                       
- 35CL  G 2342.7      1.6     8                                                  
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2342.7
-                                                                                        JI=3/2 JF(5645.0)=(5/2,7/2,9/2+)
- 35CL  L 8319.8     5 15/2-             0.07 PS  LT                         D   
- 35CLX L XREF=FX
-         *                                                                        <W> XREF tag=F: level possibly not or inconsistent (E/JPI) in F=32S(A,P)
-                                                                                        closest level in F=32S(A,P)
-                                                                                        8321.0     38   possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
-                                                                                      No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 8417.1     41/2+              0.026 KEV 7                              
- 35CL  G 4472.9      9                                                          
+                                                                                        JI=3/2- JF(3942.9)=9/2+
+ 35CL  L 7970.3    10 (5/2-,7/2-)                                               
+ 35CL  G 6750.2       5                                                         
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6750.2
+                                                                                        JI=(5/2-,7/2-) JF(1219.39)=1/2+
+ 35CL  L 7987.8    10 3/2                                                       
+ 35CL  G 2333         2.8                                                       
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2333
+                                                                                        JI=3/2 JF(5646)=(5/2,7/2,9/2+)
+ 35CL  L 8416.7    5  1/2+             0.026 KEV 7                              
+ 35CL  G 4473.5       8.6                                                       
                                *                                                  <W> large deltaJ=4 ([E4]), but no Mult is given
-                                                                                        JI=1/2+ JF(3943.82)=9/2+
- 35CL  G 5770.8      23                                                         
+                                                                                        JI=1/2+ JF(3942.9)=9/2+
+ 35CL  G 5770.5       23                                                        
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=1/2+ JF(2645.74)=7/2+
- 35CL  L 8487.4     6 15/2-                                                     
- 35CLX L XREF=X
-         *                                                                        <W> No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 8631.3     37/2-              0.001 KEV 1                              
- 35CLX L XREF=IJ
-         *                                                                        <W> XREF tag=J: level possibly not or inconsistent (E/JPI) in J=34S(P,P),(P,P'G):RESONANCES
-                                                                                        closest level in J=34S(P,P),(P,P'G):RESONANCES
-                                                                                        8633        3 (3/2,5/2+)          
- 35CL  G 7411.1      11      LT                                                 
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=7/2- JF(1219.29)=1/2+
- 35CL  L 8788.7     6  15/2+            0.28 PS  LT                         E   
- 35CLX L XREF=X
-         *                                                                        <W> No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 8829.0     41/2-              12.2 KEV  12                             
- 35CL  G 4059.9      4.5     24                                                 
+                                                                                        JI=1/2+ JF(2645.66)=7/2+
+ 35CL  L 8641.4    5  (3/2+,5/2+)      0.003 KEV 2                              
+ 35CLX L XREF=L(*)OP(8643*)W(8610*)
+         *                                                                        <W> XREF tag=L: level possibly not or inconsistent (E/JPI) in L=32S(A,P)
+                                                                                        closest level in L=32S(A,P)
+                                                                                        8654.1     41   possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
+ 35CL  L 8829.3    5  1/2-             12.2 KEV  12                             
+ 35CL  G 4059.2       4.6    24                                                 
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=1/2- JF(4768.82)=7/2
- 35CL  G 6182.7      100     24                                                 
+                                                                                        JI=1/2- JF(4769.86)=7/2
+ 35CL  G 6183.0       100    24                                                 
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=1/2- JF(2645.74)=7/2+
- 35CL  L 8844.6     4 17/2+               5.9 PS 11                         E   
- 35CLX L XREF=HX
-         *                                                                        <W> No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 10181.1    5 19/2-            0.14 PS   LT                         D   
- 35CLX L XREF=FX
-         *                                                                        <W> No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 10222.4   11  17/2-            0.28 PS  LT                             
- 35CLX L XREF=X
-         *                                                                        <W> No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 10859.0    8  19/2+            0.28 PS  LT                         E   
- 35CLX L XREF=X
-         *                                                                        <W> No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 11459.0    6 21/2+                                                 E   
- 35CLX L XREF=EX
-         *                                                                        <W> No input dataset with XREF tag=X for DSID=(HI,XNG)
- 35CL  L 12572.2    6 23/2-                                                 D   
- 35CLX L XREF=X
-         *                                                                        <W> No input dataset with XREF tag=X for DSID=(HI,XNG)
+                                                                                        JI=1/2- JF(2645.66)=7/2+
+ 35CL  L 9135.1    5                   2.0 KEV   4                              
+ 35CLX L XREF=J(9127*)L(*)N(9150*)OP(9136*)X(*)
+         *                                                                        <W> XREF tag=L: level possibly not or inconsistent (E/JPI) in L=32S(A,P)
+                                                                                        closest level in L=32S(A,P)
+                                                                                        9160.0     42   possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
 
 ################################################################################
 In dataset of 35CL: XB 35AR EC DECAY (1.7755 S)     XREF Tag=B
 
  35CL  L 1219.2    2 1/2+                                                       
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=126 FS 14 this T1/2=
+                                                                                        Adopted T1/2=123 FS 15 this T1/2=
  35CL  L 1763.1    2 5/2+                                                       
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=0.39 PS 4 this T1/2=
+                                                                                        Adopted T1/2=0.410 ps 40 this T1/2=
  35CL  L 2645.1    103/2+                                                       
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=7/2+ this JPI=3/2+
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=159 FS 21 this T1/2=
+                                                                                        Adopted T1/2=0.187 PS 30 this T1/2=
  35CL  L 2693.8    2 3/2+                                                       
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=33 FS 6 this T1/2=
+                                                                                        Adopted T1/2=39 FS 7 this T1/2=
  35CL  L 3002.3    3 5/2+                                                       
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=21 FS 4 this T1/2=
+                                                                                        Adopted T1/2=30 FS 8 this T1/2=
  35CL  L 3918.4    5 3/2+                                                       
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=4.9 FS 14 this T1/2=
- 35CL  G 916                                                                   ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        915.4(4)       from level=8788.7      JPI=15/2+               
- 35CL  G 1225                                                                  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1219.3(2)      from level=1219.29     JPI=1/2+                
+                                                                                        Adopted T1/2=7 FS 2 this T1/2=
  35CL  L 3967.7    4 1/2+                                                       
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=10 FS 3 this T1/2=
+                                                                                        Adopted T1/2=17 FS 4 this T1/2=
  35CL  L 4624.5    5   (3/2,5/2+)                                              ?
                                        *                                          <W> T1/2 commented from Adopted but empty
                                                                                         Adopted T1/2=40 FS 17 this T1/2=
- 35CL  G 3405                                                                  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        3399.9         from level=5163.21     JPI=7/2-                
-                                                                                        3414.0         from level=8038.5      JPI=1/2+                
-                                                                                        3395.9         from level=8277.2      JPI=5/2+                
-                                                                                        3400.7         from level=8282.0      JPI=(3/2-,5/2)          
-                                                                                        3406.8         from level=8417.1      JPI=1/2+                
-                                                                                        3409.2         from level=8572.6      JPI=(5/2)+              
 
 ################################################################################
-In dataset of 35CL: X?0 1H(34S,35CLG)     XREF Tag=?0
+In dataset of 35CL: XF 12C(28SI,APG)     XREF Tag=F
 
- 35CL  L 6643      2                                                            
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6656       3                     XREF=F
- 35CL  L 6674      2                                                            
-         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=6681
- 35CL  L 6761      2                                                            
-         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=6746
- 35CL  L 6778      2                                                            
-         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=6783
- 35CL  L 6802      4                                                            
-         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=6802
- 35CL  L 6823      2                                                            
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6802       4                     XREF=F
- 35CL  L 6842      2                                                            
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6866.7     6                     XREF=FI
- 35CL  L 6866.3    6                                                            
-         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=6866.7
-
-################################################################################
-In dataset of 35CL: X?1 12C(28SI,APG)     XREF Tag=?1
-
- 35CL  L 0.0          3/2+                                                      
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=0
- 35CL  L 1763.0    6  5/2+                                                      
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=1763.04
- 35CL  L 2645.8    6  7/2+             0.90 PS   LT                             
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=2645.74
- 35CL  L 3003.1    8  5/2+                                                      
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=3002.30
- 35CL  L 3163.1    6  7/2-                                                      
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=3162.80
  35CL  L 3942.0    7  9/2+             0.35 PS   LT                             
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=3943.82
  35CL  G 2179         6.5    7  M1+E2                                           
                                *                                                  <E> Mult=M1 is inconsistent with spin-parity change
                                                                                         JI=9/2+ JF(1763.0)=5/2+
  35CL  L 4347.8    6  9/2-             0.91 PS   +21-16                         
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=4347.82
  35CL  G 4347         1      LT                                             X   
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
                                                                                         JI=9/2- JF(0.0)=3/2+
- 35CL  L 5407.4    8  11/2-            0.76 PS   LT                             
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=5407.2
- 35CL  L 5927.1    7  11/2-            0.28 PS   LT                             
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=5926.9
- 35CL  G 2764                                                                   
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=5926.9
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        2759.5         from level=3979.0      JPI=(3/2+,5/2+)         
-                                                                                        2761.6         from level=7600.8      JPI=5/2+                
-                                                                                        2754.3         from level=7970.2      JPI=(5/2-,7/2-)         
- 35CL  L 6087.6    8  13/2-                                                     
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=6087.4
- 35CL  L 6119.5    13 (11/2-)                                                  ?
-         *                                                                        <W> questionable level not placed in Adopted or discrepant.
-                                                                                        closest level in Adopted:
-                                                                                        6106.2     4 (3/2,5/2+)          XREF=I
-                     *                                                            <E> JPI commented from Adopted but no such Adopted level
  35CL  L 6660.2    8  11/2-                                                     
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=6656
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI= this JPI=11/2-
- 35CL  G 2312                                                                   
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=6656
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        2316.3         from level=5010.09     JPI=(1/2,3/2)           
-                                                                                        2307.7         from level=8113.3      JPI=(3/2,5/2+)          
- 35CL  G 3497                                                                   
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=6656
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        3488.9         from level=7548.2      JPI=7/2-                
-                                                                                        3501.8         from level=7561.1      JPI=(1/2,3/2)           
-                                                                                        3498.3         from level=7671.9      JPI=(5/2-,7/2)          
-                                                                                        3506.6         from level=7684.7      JPI=3/2-                
-                                                                                        3500.6         from level=8269.6      JPI=5/2+                
- 35CL  L 7873.3    8  13/2+                                                     
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=7873.2
- 35CL  G 1213                                                                   
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=7873.2
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1219.3(2)      from level=1219.29     JPI=1/2+                
  35CL  L 8319.4    9  (15/2-)          12.5 FS   7                          A   
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=8319.8
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=15/2- this JPI=(15/2-)
  35CL  G 2912         1      LT D(+Q)    -0.1    +3-2                           
                                *                                                  <E> Mult=D is inconsistent with spin-parity change
                                                                                         JI=(15/2-) JF(5407.4)=11/2-
  35CL  L 8487.8    10(15/2-)           0.07 PS   LT                             
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=8487.4
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=15/2- this JPI=(15/2-)
- 35CL  L 8558.2    13 (13/2-)          0.14 PS   LT                            ?
-         *                                                                        <W> questionable level not placed in Adopted or discrepant.
-                                                                                        closest level in Adopted:
-                                                                                        8572.6     3 (5/2)+              XREF=FIJ
-                     *                                                            <E> JPI commented from Adopted but no such Adopted level
- 35CL  G 2631         1      LT D(+Q)    -0.2    +2-3                       X  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        2621.2         from level=7837.1      JPI=3/2-                
-                                                                                        2622.6         from level=8277.2      JPI=5/2+                
-                                                                                        2633.2         from level=8287.8      JPI=1/2-                
  35CL  L 8787.3    13 (15/2+)          0.28 PS   LT                            ?
-         *                                                                        <W> Tag=?1 of this dataset missing in XREF of matched Adopted Level=8788.7
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=15/2+ this JPI=(15/2+)
  35CL  L 8845.1    9  (17/2+)                                               B   
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=8844.6
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=17/2+ this JPI=(17/2+)
- 35CL  G 526                                                                    
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=8844.6
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        517.2(1)       from level=3162.80     JPI=7/2-                
- 35CL  G 2757                                                                   
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=8844.6
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        2748.5(6)      from level=3967.50     JPI=1/2+                
-                                                                                        2759.5         from level=3979.0      JPI=(3/2+,5/2+)         
-                                                                                        2761.6         from level=7600.8      JPI=5/2+                
-                                                                                        2754.3         from level=7970.2      JPI=(5/2-,7/2-)         
  35CL  L 10181.1   10 (19/2-)          42.3 FS   28                         A   
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=10181.1
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=19/2- this JPI=(19/2-)
  35CL  L 10223.2   14(17/2-)           0.28 PS   LT                            ?
-         *                                                                        <W> Tag=?1 of this dataset missing in XREF of matched Adopted Level=10222.4
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=17/2- this JPI=(17/2-)
  35CL  L 10862.2   14(19/2+)           0.28 PS   LT                            ?
-         *                                                                        <W> Tag=?1 of this dataset missing in XREF of matched Adopted Level=10859.0
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=19/2+ this JPI=(19/2+)
  35CL  L 11459.2   12 (21/2+)          43.0 FS   21                         B   
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=11459.0
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=21/2+ this JPI=(21/2+)
  35CL  L 12572.2   12 (23/2-)          33 FS     4                          A   
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=12572.2
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=23/2- this JPI=(23/2-)
- 35CL  L 16306.4   16 (27/2-)          9.0 FS    LT                         A   
-         *                                                                        <W> level not placed in Adopted or discrepant.
-                                                                                        closest level in Adopted:
-                                                                                        13900                            XREF=E
-                     *                                                            <E> JPI commented from Adopted but no such Adopted level
- 35CL  G 3734                                                                   
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        3737.3         from level=7796.6      JPI=1/2-                
-                                                                                        3725.4         from level=7899.1      JPI=(3/2-,5/2)          
-                                                                                        3741.9         from level=8581.2      JPI=1/2+                
-                                                                                        3733.4         from level=8614.7      JPI=5/2+                
 
 ################################################################################
-In dataset of 35CL: X?2 16O(24MG,APG)     XREF Tag=?2
-
- 35CL  L 0.0          3/2+                                                      
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=0
- 35CL  L 1762.95   17 5/2+                                                      
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=1763.04
- 35CL  L 2645.81   18 7/2+                                                      
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=2645.74
- 35CL  L 3163.43   19 7/2-                                                      
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=3162.80
- 35CL  L 4348.29   24 9/2-                                                      
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=4347.82
- 35CL  L 5407.64   27 11/2-                                                     
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=5407.2
- 35CL  L 6088.05   29 13/2-                                                     
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=6087.4
-
-################################################################################
-In dataset of 35CL: X?3 24MG(16O,APG)     XREF Tag=?3
+In dataset of 35CL: XH 24MG(16O,APG)     XREF Tag=H
 
  35CL cL BAND(B)$Band based on 7873, 13/2+ level.                               
           *                                                                       <W> No in-band transition from member level=11458.5 to 10858.5
                                                                                       No in-band transition from member level=8844.1 to 8788.3
- 35CL  L 0            3/2+                                                      
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=0
- 35CL  L 1219.0    10                                                           
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=1219.29
- 35CL  L 1763.3    2  5/2+                                                      
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=1763.04
- 35CL  L 2645.8    3  7/2+                                                      
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=2645.74
- 35CL  L 3002.0    10 5/2+                                                      
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=3002.30
- 35CL  L 3163.0    3  7/2-             31.0 PS   6                          A   
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=3162.80
- 35CL  L 3943.4    10 9/2+                                                      
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=3943.82
  35CL  L 4347.4    3  9/2-                                                      
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=4347.82
  35CL  G 4347.8    8  5.5    5                                                  
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
                                                                                         JI=9/2- JF(0)=3/2+
- 35CL  L 5406.7    3  11/2-                                                 A   
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=5407.2
- 35CL  L 5926.5    5  11/2-                                                     
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=5926.9
- 35CL  L 6086.7    4  13/2-                                                     
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=6087.4
- 35CL  L 6380.2    8                                                            
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=6380.8
- 35CL  L 7872.8    4  13/2+                                                 B   
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=7873.2
- 35CL  L 8319.2    5  15/2-                                                 A   
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=8319.8
- 35CL  L 8486.8    5  15/2-                                                     
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=8487.4
- 35CL  L 8788.3    6  15/2+                                                 B   
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=8788.7
- 35CL  L 8844.1    5  17/2+            6.1 PS    11                         B   
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=8844.6
- 35CL  L 10180.5   5  19/2-                                                 A   
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=10181.1
- 35CL  L 10221.9   11 17/2-                                                     
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=10222.4
- 35CL  L 10858.5   8  19/2+                                                 B   
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=10859.0
- 35CL  L 11458.5   7  21/2+                                                 B   
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=11459.0
- 35CL  L 12571.6   6  23/2-                                                 A   
-         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=12572.2
 
 ################################################################################
-In dataset of 35CL: X?4 27AL(14N,APNG)     XREF Tag=?4
+In dataset of 35CL: XL 32S(A,P)     XREF Tag=L
 
- 35CL  L 0            3/2+                                                      
-         *                                                                        <E> Tag=?4 of this dataset missing in XREF of matched Adopted Level=0
- 35CL  L 1763.19   10 5/2+                                                      
-         *                                                                        <E> Tag=?4 of this dataset missing in XREF of matched Adopted Level=1763.04
- 35CL  L 2645.45   12 7/2+                                                      
-         *                                                                        <E> Tag=?4 of this dataset missing in XREF of matched Adopted Level=2645.74
- 35CL  L 3001.98   22 5/2+                                                      
-         *                                                                        <E> Tag=?4 of this dataset missing in XREF of matched Adopted Level=3002.30
- 35CL  L 3162.64   9  7/2-             29.0 PS   13                             
-         *                                                                        <E> Tag=?4 of this dataset missing in XREF of matched Adopted Level=3162.80
- 35CL  L 3942.3    10 9/2+                                                      
-         *                                                                        <E> Tag=?4 of this dataset missing in XREF of matched Adopted Level=3943.82
- 35CL  L 4347.43   17 9/2-                                                      
-         *                                                                        <E> Tag=?4 of this dataset missing in XREF of matched Adopted Level=4347.82
- 35CL  L 5406.68   19 11/2-                                                     
-         *                                                                        <E> Tag=?4 of this dataset missing in XREF of matched Adopted Level=5407.2
- 35CL  L 5926.47   29 11/2-                                                     
-         *                                                                        <E> Tag=?4 of this dataset missing in XREF of matched Adopted Level=5926.9
- 35CL  L 6086.89   23 13/2-            5.3 PS    10                             
-         *                                                                        <E> Tag=?4 of this dataset missing in XREF of matched Adopted Level=6087.4
- 35CL  L 7872.78   30 13/2+                                                     
-         *                                                                        <E> Tag=?4 of this dataset missing in XREF of matched Adopted Level=7873.2
- 35CL  L 8844.2    4  17/2+            5.5 PS    14                             
-         *                                                                        <E> Tag=?4 of this dataset missing in XREF of matched Adopted Level=8844.6
+ 35CL  L 8786.3    38                                                           
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+                                                                                       @ 8779.8     5 3/2-                XREF=L(*)OP
+                                                                                       @ 8787.2     5 (3/2-,5/2,7/2-)     XREF=L(*)OP
+                                                                                      #  8788.3     6 15/2+               XREF=F(?)H
+                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=L
 
 ################################################################################
-In dataset of 35CL: XE 31P(A,P),(A,N):RESONANCES     XREF Tag=E
-
- 35CL  L 9161      4  1/2                                       2442      4 K   
-         *                                                                        <E> 3 possible matches found in Adopted! Check XREF
-                                                                                         9147       4                     XREF=J
-                                                                                         9155.7     5                     XREF=I
-                                                                                      #  9163.2     5                     XREF=FIJ
-                                                                                      But tag=E of this dataset is not in XREF of any of them!
-
-################################################################################
-In dataset of 35CL: XF 32S(A,P)     XREF Tag=F
-
- 35CL  L 4859.2    28                                                       K   
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=4854.4
- 35CL  L 5006.9    27                                                       K   
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=5010.09
- 35CL  L 5158.9    29 5/2+                                                      
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=5157
- 35CL  L 5407.2       11/2-                                                     
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=5407.2
- 35CL  L 5531      5                                                        K   
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=5520.0
- 35CL  L 5594.6    26                                                           
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=5599.69
- 35CL  L 5645      4                                                        K   
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=5645.0
- 35CL  L 5653      4                                                        K   
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=5654.48
- 35CL  L 5731.2    25                                                       K   
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=5723.6
- 35CL  L 5757      4                                                        K   
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=5758.0
- 35CL  L 6104      4                                                        K   
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=6106.2
- 35CL  L 6180      3                                                        K   
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=6200
- 35CL  L 6283      3  (5/2+)                                                K   
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6225       4                     XREF=F
- 35CL  L 6429      3  (1/2+)                                                K   
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6402       4                     XREF=FG
- 35CL  L 6475      4                                                        K   
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6492.0     6 (1/2,3/2,5/2+)      XREF=FI
- 35CL  L 6549      3  (1/2+)                                                K   
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6492.0     6 (1/2,3/2,5/2+)      XREF=FI
- 35CL  L 6842      4  (3/2+)                                                K   
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6866.7     6                     XREF=FI
- 35CL  L 7066.2       5/2+                                                      
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=7066.2
- 35CL  L 7180      4  (7/2+)                                                K   
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  7170      10 (7/2:17/2)+         XREF=H
-                                                                                         7185.0     3 5/2+                XREF=IS
-                                                                                      But tag=F of this dataset is not in XREF of any of them!
-                                                                                      However it is in XREF of the following level with inconsistent JPI:
-                                                                                      @ 7178.6     3 1/2+                XREF=FI
- 35CL  L 7230.9    30 (3/2+)                                                    
-         *                                                                        <W> level not placed in Adopted or discrepant.
-                                                                                        closest level in Adopted:
-                                                                                        7234.0     3 5/2+                XREF=FIT
- 35CL  L 7301                                                                  ?
-         *                                                                        <W> questionable level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        7272.6     3 1/2-                XREF=IT
- 35CL  L 7362      3                                                        K   
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=7362.0
- 35CL  L 7447      3                                                        K   
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=7451.0
- 35CL  L 7709.9    25                                                       K   
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=7706.4
- 35CL  L 8000.7    41                                                           
-         *                                                                        <E> 3 possible matches found in Adopted! Check XREF
-                                                                                         7995.6     3 5/2                 XREF=I
-                                                                                      #  8000.4     3 7/2+                XREF=I
-                                                                                      #  8004.5     3 5/2+                XREF=IJRS
-                                                                                      But tag=F of this dataset is not in XREF of any of them!
- 35CL  L 8121                                                                  ?
-         *                                                                        <W> Tag=F of this dataset missing in XREF of matched Adopted Level=8113.3
- 35CL  L 8321.0    38                                                           
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  8318.1     3                     XREF=I
-                                                                                      #  8323.2     5                     XREF=I
-                                                                                      But tag=F of this dataset is not in XREF of any of them!
-                                                                                      However it is in XREF of the following level with inconsistent JPI:
-                                                                                      @ 8319.8     5 15/2-               XREF=FX
- 35CL  L 8429.2    40                                                           
-         *                                                                        <E> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  8430.3     5                     XREF=IJ
-                                                                                         8434.7     5 (3/2)+              XREF=IJ
-                                                                                      But tag=F of this dataset is not in XREF of any of them!
- 35CL  L 9160.0    42                                                           
-         *                                                                        <W> 5 possible matches found in Adopted! Check XREF
-                                                                                         9147       4                     XREF=J
-                                                                                      #  9150      10 (7/2:17/2)+         XREF=H
-                                                                                         9155.7     5                     XREF=I
-                                                                                       @ 9157.1     4 5/2+                XREF=FIJ
-                                                                                       @ 9163.2     5                     XREF=FIJ
-                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=F
- 35CL  L 9525                                                                  ?
-         *                                                                        <W> Tag=F of this dataset missing in XREF of matched Adopted Level=9551
- 35CL  L 9992                                                                  ?
-         *                                                                        <W> questionable level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        9969       5 (1/2,3/2)           XREF=EF
- 35CL  L 10009                                                                 ?
-         *                                                                        <W> Tag=F of this dataset missing in XREF of matched Adopted Level=10031
- 35CL  L 10117                                                                 ?
-         *                                                                        <W> Tag=F of this dataset missing in XREF of matched Adopted Level=10133
- 35CL  L 10443                                                                 ?
-         *                                                                        <W> Tag=F of this dataset missing in XREF of matched Adopted Level=10431
- 35CL  L 10643.0   50                                                           
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=10642
- 35CL  L 10717                                                                 ?
-         *                                                                        <W> Tag=F of this dataset missing in XREF of matched Adopted Level=10698
- 35CL  L 10759.1   55                                                           
-         *                                                                        <E> Tag=F of this dataset missing in XREF of matched Adopted Level=10761
-
-################################################################################
-In dataset of 35CL: XG 32S(A,PG)     XREF Tag=G
+In dataset of 35CL: XM 32S(A,PG)     XREF Tag=M
 
  35CL  L 2645.8    8  7/2+             0.21 PS   6                              
  35CL  G 1426.3       1.2    LT                                                 
@@ -711,31 +195,12 @@ In dataset of 35CL: XG 32S(A,PG)     XREF Tag=G
  35CL  G 2693.2    20 100    4  M1+E2                                           
                                *                                                  <W> Mult=M1+E2 but parity-change unknown from deltaJPI
                                                                                         JI=3/2,5/2 JF(0)=3/2+
- 35CL  L 4171      2                   47 FS     17                             
-         *                                                                        <E> Tag=G of this dataset missing in XREF of matched Adopted Level=4173.44
- 35CL  L 4618      2  3/2,5/2          40 FS     17                             
- 35CL  G 4618      2  100                                                       
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=4618      Adopted=4624.0
- 35CL  L 5230      20 1/2,3/2,5/2                                               
-         *                                                                        <E> Tag=G of this dataset missing in XREF of matched Adopted Level=5215.79
- 35CL  L 5650      20                                                           
-         *                                                                        <W> 4 possible matches found in Adopted! Check XREF
-                                                                                      #  5633       3                     XREF=F
-                                                                                       @ 5645.0     3 (5/2,7/2,9/2+)      XREF=GI
-                                                                                       @ 5654.48   22 3/2+                XREF=GIMT
-                                                                                         5682.9     6 1/2-,3/2-           XREF=FIM
-                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=G
- 35CL  L 5850      25 5/2,9/2                                                   
- 35CL  G 2687         100                                                       
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=2687      Adopted=2660.1
 
 ################################################################################
-In dataset of 35CL: XH 33S(A,D)     XREF Tag=H
+In dataset of 35CL: XN 33S(A,D)     XREF Tag=N
 
  35CL  L 6200      10 (11/2:17/2)+                     6                        
-                                                       *                          <W> L=6 inconsistent with JPI=(7/2:17/2)+ from Adopted Levels for E=6200
+                                                       *                          <W> L=6 inconsistent with JPI=(7/2:17/2)+ from Adopted Levels for E=6180
                                                                                          possible JPI from L=6 and target JPI=3/2+
                                                                                              7/2+,9/2+,11/2+,13/2+,15/2+,17/2+
  35CL  L 7170      10 (11/2:17/2)+                     6                        
@@ -747,9 +212,17 @@ In dataset of 35CL: XH 33S(A,D)     XREF Tag=H
                                                                                          possible JPI from L=6 and target JPI=3/2+
                                                                                              7/2+,9/2+,11/2+,13/2+,15/2+,17/2+
  35CL  L 7750      10 (11/2:17/2)+                     6                        
-                                                       *                          <W> L=6 inconsistent with JPI=(7/2:17/2)+ from Adopted Levels for E=7750
+                                                       *                          <W> L=6 inconsistent with JPI=(7/2:17/2)+ from Adopted Levels for E=7748
                                                                                          possible JPI from L=6 and target JPI=3/2+
                                                                                              7/2+,9/2+,11/2+,13/2+,15/2+,17/2+
+ 35CL  L 7870      10 (11/2:13/2)+                     4+6                      
+         *                                                                        <W> 5 possible matches found in Adopted! Check XREF
+                                                                                       @ 7872.83   30 13/2+               XREF=FHIL(*)N(7870*)O
+                                                                                       @ 7885                             XREF=L(7901*)N(7870*)OP(7880*)
+                                                                                       @ 7889.1    15                     XREF=L(7901*)N(7870*)OP(7880*)
+                                                                                       @ 7903                             XREF=L(7901*)N(7870*)OP(7880*)
+                                                                                      #@ 7930                             XREF=L(7901*)N(7870*)OP(7880*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=N
  35CL  L 8010      10 (11/2:17/2)+                     6                        
                                                        *                          <W> L=6 inconsistent with JPI=(7/2:17/2)+ from Adopted Levels for E=8010
                                                                                          possible JPI from L=6 and target JPI=3/2+
@@ -763,10 +236,19 @@ In dataset of 35CL: XH 33S(A,D)     XREF Tag=H
                                                                                          possible JPI from L=6 and target JPI=3/2+
                                                                                              7/2+,9/2+,11/2+,13/2+,15/2+,17/2+
  35CL  L 8840      10 (17/2)+                          6                        
-                                                       *                          <W> L=6 inconsistent with JPI=17/2+ from Adopted Levels for E=8844.6
+                                                       *                          <W> L=6 inconsistent with JPI=17/2+ from Adopted Levels for E=8844.3
                                                                                          possible JPI from L=6 and target JPI=3/2+
                                                                                              7/2+,9/2+,11/2+,13/2+,15/2+,17/2+
  35CL  L 9150      10 (11/2:17/2)+                     6                        
+         *                                                                        <W> 7 possible matches found in Adopted! Check XREF
+                                                                                      #@ 9110.1     5                     XREF=J(9127*)L(*)N(9150*)OPX(*)
+                                                                                         9138.3     5                     XREF=J(9127*)OP(9136*)X(*)
+                                                                                       @ 9147       4                     XREF=J(9161*)L(*)N(9150*)O(*)P(9147*)X(*)
+                                                                                       @ 9150      10 (7/2:17/2)+         XREF=L(*)N(9150*)O(*)P(9147*)X(*)
+                                                                                       @ 9155.7     5                     XREF=J(9161*)L(*)N(9150*)O(*)P(9159*)X(*)
+                                                                                       @ 9163.4     6                     XREF=J(9161*)L(*)N(9150*)OPX(*)
+                                                                                       @ 9135.1     5                     XREF=J(9127*)L(*)N(9150*)OP(9136*)X(*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=N
                                                        *                          <W> L=6 inconsistent with JPI=(7/2:17/2)+ from Adopted Levels for E=9150
                                                                                          possible JPI from L=6 and target JPI=3/2+
                                                                                              7/2+,9/2+,11/2+,13/2+,15/2+,17/2+
@@ -776,32 +258,32 @@ In dataset of 35CL: XH 33S(A,D)     XREF Tag=H
                                                                                              7/2+,9/2+,11/2+,13/2+,15/2+,17/2+
 
 ################################################################################
-In dataset of 35CL: XI 34S(P,G)     XREF Tag=I
+In dataset of 35CL: XO 34S(P,G)     XREF Tag=O
 
- 35CL  L 2645.70   8  (5/2,7/2)        0.210 PS  30                             
+ 35CL  L 2645.70   8  (5/2,7/2)        0.146 PS  21                             
  35CL  G 1426.28      2      LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=1426.28
                                                                                         JI=(5/2,7/2) JF(1219.39)=1/2+
- 35CL  L 3162.99   7  7/2-             37 PS     4                              
+ 35CL  L 3162.99   7  7/2-             25.7 PS   28                             
  35CL  G 1943.54      0.2    LT                                                 
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
                                                                                         JI=7/2- JF(1219.39)=1/2+
- 35CL  L 3967.3    6                   17 FS     4                              
- 35CL  G 1321.6       2      LT                                                 
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=3967.50
-         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  35CL  L 4113.7    10 7/2                                                       
  35CL  G 2894.2       10     LT                                                 
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
                                                                                         JI=7/2 JF(1219.39)=1/2+
- 35CL  L 4347.76   6  5/2,9/2          0.33 PS   6                              
+ 35CL  L 4347.76   6  5/2,9/2          0.229 PS  42                             
  35CL  G 3128.22      4      LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=3128.22
                                                                                         JI=5/2,9/2 JF(1219.39)=1/2+
  35CL  G 4347.47      5      LE                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=4347.47
                                                                                         JI=5/2,9/2 JF(0)=3/2+
- 35CL  L 4769.86   23 (7/2,9/2+)       110 FS    29                             
+ 35CL  L 4624.4    3                                                            
+ 35CL  G 4624.1       85     10                                                 
+         *                                                                        <W> Check discrepancy in gamma energies:
+                                                                                          this energy=4624.1      Adopted=4618
+ 35CL  L 4769.86   23 (7/2,9/2+)       76 FS     20                             
  35CL  G 3550.28      10     LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=3550.28
                                                                                         JI=(7/2,9/2+) JF(1219.39)=1/2+
@@ -812,41 +294,6 @@ In dataset of 35CL: XI 34S(P,G)     XREF Tag=I
  35CL  G 3943.71      10     LT                                                 
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
                                                                                         JI=7/2 JF(1219.39)=1/2+
- 35CL  L 5403.5    10                  17 FS     4                              
- 35CL  G 2400.7       25     5                                                  
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=5403.5
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        2402.8         from level=7618.7      JPI=(3/2-,5/2)          
-                                                                                        2399.8(8)      from level=8487.4      JPI=15/2-               
- 35CL  L 7066.2    7                                            716.0     7     
- 35CL  G 2892.6       0.5                                                       
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=2892.6      Adopted=2888.2
- 35CL  L 7194.6    7  1/2,3/2                                   848.2     7     
- 35CL  G 3016.6       16                                                        
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=3016.6      Adopted=3020.9
- 35CL  L 7225.5    8  5/2                                       880.0     8     
- 35CL  G 1571         0.8                                                       
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=7225.5
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1580.1         from level=5758.0      JPI=(1/2+,3/2)          
-                                                                                        1579.1(3)      from level=5926.9      JPI=11/2-               
- 35CL  L 7234.0    8  5/2+                                      888.8     8     
- 35CL  G 1579         0.2                                                       
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=7234.0
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1580.1         from level=5758.0      JPI=(1/2+,3/2)          
-                                                                                        1579.1(3)      from level=5926.9      JPI=11/2-               
- 35CL  L 7272.7    9  (1/2,3/2)                                 928.6     9     
- 35CL  G 3099.1       0.4                                                       
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=3099.1      Adopted=3094.6
- 35CL  L 7561.3    6  1/2,3/2                                   1225.8    6     
- 35CL  G 3593.8       0.5                                                       
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=7561.1
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        3594.2         from level=7706.4      JPI=5/2+                
  35CL  L 7706.4    8  5/2+                                      1375.2    8     
  35CL  G 2051         4         D+Q                                             
                                *                                                  <W> Mult is inconsistent with JPI (one of JPIs is empty)
@@ -858,331 +305,159 @@ In dataset of 35CL: XI 34S(P,G)     XREF Tag=I
  35CL  G 5098.7       43        D(+Q)    +0.1    30                             
                                *                                                  <W> Mult is inconsistent with JPI (one of JPIs is empty)
                                                                                         JI= JF(2645.70)=(5/2,7/2)
- 35CL  L 7777.1    9  5/2+                                      1448.0    9     
- 35CL  G 2122         0.5                                                       
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=7777.0
-         *                                                                        <W> No matching gamma within 5 keV found in Adopted
- 35CL  L 7781.7    11 5/2-                                      1452.8    11    
- 35CL  G 2181.9                                                                 
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=7781.6
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        2180(1)        from level=3943.82     JPI=9/2+                
-                                                                                        2184.3         from level=7194.5      JPI=1/2-                
-                                                                                        2180.1         from level=7396.0      JPI=7/2(-)              
- 35CL  L 7837.2    10 3/2-             3.5 FS    LT             1509.9    10    
+ 35CL  L 7837.2    10 3/2-             3.47 FS   LT             1509.9    10    
  35CL  G 3659.1       28        M1+E2    -0.05   3                          &   
                                *                                                  <W> Mult=M1+E2 but parity-change unknown from deltaJPI
                                                                                         JI=3/2- JF(4177.9)=3/2
- 35CL  L 7839.0    9                                            1511.8    9     
- 35CL  G 1658         0.5                                                   &   
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=7839.7
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1654.1         from level=4347.82     JPI=9/2-                
-                                                                                        1656.1         from level=7837.1      JPI=3/2-                
- 35CL  G 2239.2       0.5                                                   &   
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=7839.7
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        2237.3         from level=7837.1      JPI=3/2-                
- 35CL  G 2623.1       1.4                                                   &   
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=7839.7
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        2621.2         from level=7837.1      JPI=3/2-                
-                                                                                        2622.6         from level=8277.2      JPI=5/2+                
- 35CL  G 3895.9       0.5                                                   &   
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=7839.7
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        3897.8         from level=8075.9      JPI=(3/2,5/2)           
-                                                                                        3894.5         from level=8904.8      JPI=(1/2,3/2,5/2+)      
- 35CL  G 3920.3       0.2                                                   &   
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=7839.7
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        3918.4(6)      from level=3918.49     JPI=3/2+                
-                                                                                        3918.4         from level=7837.1      JPI=3/2-                
-                                                                                        3918.4         from level=8096.5      JPI=5/2                 
- 35CL  G 6075.4       1.9                                                   &   
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=7839.7
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        6073.4         from level=7837.1      JPI=3/2-                
- 35CL  L 7987.8    10 3/2                                       1665.0    10    
- 35CL  G 3814.1       0.8    LT                                                 
-         *                                                                        <W> This gamma is probably missing in Adopted Gammas at level=7987.8
-                                                                                          this gamma=3814.1      closest gamma in Adopted=3809.7
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        3821.2         from level=7880.6      JPI=3/2+,5/2+           
-                                                                                        3809.7         from level=7987.8      JPI=3/2                 
-                                                                                        3817.5         from level=7995.6      JPI=5/2                 
  35CL  L 8001.0    9  (7/2,9/2+)                                1678.6    9     
  35CL  G 8000.0       1.4                                                       
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=8000.0
                                                                                         JI=(7/2,9/2+) JF(0)=3/2+
- 35CL  L 8005.0    10 5/2+                                      1682.7    10    
- 35CL  G 3826.9       1.3    LT                                                 
-         *                                                                        <W> This gamma is probably missing in Adopted Gammas at level=8004.5
-                                                                                          this gamma=3826.9      closest gamma in Adopted=3830.8
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        3826.7         from level=8000.4      JPI=7/2+                
  35CL  L 8038.5    11 3/2                                       1717.2    11    
                      *                                                            <W> JPI here contradicts to adopted. Please check
                                                                                         Adopted JPI=1/2+ this JPI=3/2
- 35CL  G 4071.0       0.8                                                       
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=8038.5
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        4071.0         from level=7234.0      JPI=5/2+                
-                                                                                        4069.2         from level=8242.9      JPI=3/2-                
-                                                                                        4069.7         from level=8838.8      JPI=7/2-                
- 35CL  L 8080                                                   1760            
-         *                                                                        <E> Tag=I of this dataset missing in XREF of matched Adopted Level=8100
  35CL  L 8147.2    11 3/2-                                      1829.1    11    
                      *                                                            <W> JPI here contradicts to adopted. Please check
                                                                                         Adopted JPI=1/2- this JPI=3/2-
- 35CL  L 8216.3    10 5/2                                       1900.3    10    
- 35CL  G 4042.6       3      LT                                                 
-         *                                                                        <W> This gamma is probably missing in Adopted Gammas at level=8216.3
-                                                                                          this gamma=4042.6      closest gamma in Adopted=4038.1
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        4044.5         from level=8156.8      JPI=(5/2+,7/2-)         
  35CL  L 8297.2    9                                            1983.5    9     
          *                                                                        <W> 3 possible matches found in Adopted! Check XREF
-                                                                                      #@ 8284.3    13                     XREF=I
-                                                                                       @ 8294       2                     XREF=FI
-                                                                                       @ 8297.3     5 3/2-                XREF=I
-                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=I
- 35CL  L 8486.1    5                                            2178.0    5     
- 35CL  G 4312.4       4.8    24                                             &   
-         *                                                                        <W> This gamma is probably missing in Adopted Gammas at level=8486.9
-                                                                                          this gamma=4312.4      closest gamma in Adopted=4308.7
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        4312.3         from level=9081.4      JPI=5/2+                
- 35CL  L 8590.0    5                                            2285.0    5     
- 35CL  G 3819.9       16     4                                                  
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=3819.9      Adopted=3822.8
- 35CL  G 4476.0       3.6    18                                                 
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=4476.0      Adopted=4479.5
- 35CL  L 8630.1     3 7/2                                       2326.3    3     
- 35CL  G 4516.1       9.7    49 D+Q      -0.06   2                              
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=4516.1      Adopted=4519.0
- 35CL  L 8641.4    5  3/2,5/2                                   2338.0    5     
- 35CL  G 4467.6       14     4                                                  
-         *                                                                        <W> This gamma is probably missing in Adopted Gammas at level=8642.7
-                                                                                          this gamma=4467.6      closest gamma in Adopted=4464.5
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        4462.6         from level=8381.4      JPI=5/2+                
-                                                                                        4472.9         from level=8417.1      JPI=1/2+                
-                                                                                        4460.3         from level=8572.6      JPI=(5/2)+              
-                                                                                        4464.5         from level=8642.7      JPI=(3/2+,5/2+)         
- 35CL  L 8779.8    5                                            2480.5    5     
- 35CL  G 4606.0       15     4                                              &   
-         *                                                                        <W> This gamma is probably missing in Adopted Gammas at level=8780.3
-                                                                                          this gamma=4606.0      closest gamma in Adopted=4602.1
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        4602.1         from level=8780.3      JPI=3/2-                
-                                                                                        4609.5         from level=8787.7      JPI=(3/2-,5/2,7/2-)     
- 35CL  L 9157.1    5 5/2                                        2869.0    5     
- 35CL  G 4983.3       13     3                                              &   
-         *                                                                        <W> This gamma is probably missing in Adopted Gammas at level=9157.1
-                                                                                          this gamma=4983.3      closest gamma in Adopted=4978.8
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        4978.8         from level=9157.1      JPI=5/2+                
+                                                                                      #@ 8284.3    13                     XREF=L(8292*)O(*)P(8279*)
+                                                                                       @ 8294       2                     XREF=L(8292*)O(*)P(8290*)
+                                                                                       @ 8297.3     5 3/2-                XREF=L(8292*)O(*)P(8300*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=O
+ 35CL  L 9188.8    5                                            2901.6    5     
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 9188.8     5                     XREF=L(*)O(*)P(9185*)X(*)
+                                                                                      #@ 9207       4 9/2+                XREF=L(*)O(*)PX(*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=O
 
 ################################################################################
-In dataset of 35CL: XJ 34S(P,P),(P,P'G):RESONANCES     XREF Tag=J
+In dataset of 35CL: XP 34S(P,P),(P,P'G):RESONANCES     XREF Tag=P
 
- 35CL  L 7195         1/2-                                      848         C   
-         *                                                                        <E> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  7194.5     3 1/2-                XREF=I
-                                                                                         7210       4                     XREF=F
-                                                                                      But tag=J of this dataset is not in XREF of any of them!
- 35CL  L 7274         1/2-                                      929         C   
-         *                                                                        <E> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  7269.2     1                     XREF=IT
-                                                                                      #  7272.6     3 1/2-                XREF=IT
-                                                                                      But tag=J of this dataset is not in XREF of any of them!
- 35CL  L 8633      3  (3/2,5/2+)       0.001 KEV 1              2328.8    5     
-         *                                                                        <E> Tag=J of this dataset missing in XREF of matched Adopted Level=8635
- 35CL  L 9185      4                                            2898      4     
-         *                                                                        <E> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  9184.2     5                     XREF=I
-                                                                                      #  9188.8     5                     XREF=I
-                                                                                      But tag=J of this dataset is not in XREF of any of them!
-
-################################################################################
-In dataset of 35CL: XL 34S(D,N)     XREF Tag=L
-
- 35CL  L 2645                                          (1)                      
-                                                       *                          <W> L=(1) inconsistent with JPI=7/2+ from Adopted Levels for E=2645.74
-                                                                                         possible JPI from L=(1) and target JPI=0+
-                                                                                             (1/2-,3/2-)
- 35CL  L 3006         5/2-                             3                        
-                     *                                                            <W> JPI here contradicts to adopted. Please check
-                                                                                        Adopted JPI=5/2+ this JPI=5/2-
-                                                       *                          <W> L=3 inconsistent with JPI=5/2+ from Adopted Levels for E=3002.30
-                                                                                         parity=- from L=3 and target JPI=0+
+ 35CL  L 7880      3  3/2+,5/2+        0.008 KEV 4              1554.0    5     
+         *                                                                        <W> 5 possible matches found in Adopted! Check XREF
+                                                                                       @ 7880.8     9 3/2+,5/2+           XREF=OP(7880*)
+                                                                                       @ 7885                             XREF=L(7901*)N(7870*)OP(7880*)
+                                                                                       @ 7889.1    15                     XREF=L(7901*)N(7870*)OP(7880*)
+                                                                                       @ 7903                             XREF=L(7901*)N(7870*)OP(7880*)
+                                                                                      #@ 7930                             XREF=L(7901*)N(7870*)OP(7880*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=P
+ 35CL  L 8004      3  3/2+,5/2+        0.011 KEV 5              1682.1    5     
+         *                                                                        <W> 4 possible matches found in Adopted! Check XREF
+                                                                                       @ 7995.6    10 5/2                 XREF=L(*)OP(8004*)W(8010*)X(8007*)
+                                                                                       @ 8001.0     9 7/2+                XREF=L(*)OP(8004*)
+                                                                                       @ 8005.0    10 5/2+                XREF=L(*)OP(8004*)W(8010*)X(8007*)
+                                                                                      #@ 8019       4                     XREF=L(*)N(8010*)P(8004*)W(8010*)X(8007*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=P
+ 35CL  L 8698      3  3/2-             0.8 KEV   1              2396.0    5     
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+                                                                                       @ 8696.9     5 3/2-                XREF=L(8698*)OP(8698*)
+                                                                                       @ 8706.3     5                     XREF=L(8698*)N(8700*)O(*)P(8698*)
+                                                                                      #@ 8717.8     5                     XREF=LN(8700*)OP(8698*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=P
 
 ################################################################################
-In dataset of 35CL: XM 34S(3HE,D)     XREF Tag=M
+In dataset of 35CL: XR 34S(3HE,D)     XREF Tag=R
 
- 35CL  L 6284      4                                   2                        
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6225       4                     XREF=F
- 35CL  L 6329      4                                   0,1                      
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6380.8     8                     XREF=FX
- 35CL  L 6377      2                                   2,3                      
-         *                                                                        <E> Tag=M of this dataset missing in XREF of matched Adopted Level=6380.8
- 35CL  L 6427      2                                   3                        
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6402       4                     XREF=FG
- 35CL  L 6468      2                                   1                        
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6492.0     6 (1/2,3/2,5/2+)      XREF=FI
+ 35CL  L 5660      15                                  2                        
+                                                       *                          <W> L=2 inconsistent with JPI=(5/2,7/2,9/2+) from Adopted Levels for E=5646
+                                                                                         possible JPI from L=2 and target JPI=0+
+                                                                                             3/2+,5/2+
  35CL  L 6491      2                                   2                        
-         *                                                                        <E> Tag=M of this dataset missing in XREF of matched Adopted Level=6492.0
- 35CL  L 6545      2                                   0,1                      
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6492.0     6 (1/2,3/2,5/2+)      XREF=FI
- 35CL  L 6643      2                                   1                        
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6656       3                     XREF=F
- 35CL  L 6674      2                                   1,2,3                    
-         *                                                                        <E> Tag=M of this dataset missing in XREF of matched Adopted Level=6681
- 35CL  L 6761      2                                   0,1                      
-         *                                                                        <E> Tag=M of this dataset missing in XREF of matched Adopted Level=6746
- 35CL  L 6778      2                                   1                        
-         *                                                                        <E> Tag=M of this dataset missing in XREF of matched Adopted Level=6783
- 35CL  L 6823      2                                   1                        
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6802       4                     XREF=F
- 35CL  L 6842      2                                   2,3                      
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        6866.7     6                     XREF=FI
- 35CL  L 6866      2                                   0,2                      
-         *                                                                        <E> Tag=M of this dataset missing in XREF of matched Adopted Level=6866.7
- 35CL  L 7066      2                                   1,2                      
-         *                                                                        <E> Tag=M of this dataset missing in XREF of matched Adopted Level=7066.2
- 35CL  L 7103      2                                   1,3                      
-         *                                                                        <E> Tag=M of this dataset missing in XREF of matched Adopted Level=7103.3
+                                                       *                          <W> L=2 inconsistent with JPI=(1/2,3/2,5/2+) from Adopted Levels for E=6492
+                                                                                         possible JPI from L=2 and target JPI=0+
+                                                                                             3/2+,5/2+
  35CL  L 7178      2                                   2                        
-         *                                                                        <E> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  7178.6     3 1/2+                XREF=FI
-                                                                                         7210       4                     XREF=F
-                                                                                      But tag=M of this dataset is not in XREF of any of them!
- 35CL  L 7194      2                                                            
-         *                                                                        <E> 2 possible matches found in Adopted! Check XREF
-                                                                                         7170      10 (7/2:17/2)+         XREF=H
-                                                                                      #  7194.5     3 1/2-                XREF=I
-                                                                                      But tag=M of this dataset is not in XREF of any of them!
- 35CL  L 7227      2                                   0,1                      
-         *                                                                        <E> Tag=M of this dataset missing in XREF of matched Adopted Level=7225.5
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 7178.6     8 1/2+                XREF=OR(7178*)
+                                                                                      #@ 7213.7    25                     XREF=LP(7195*)R(7178*)X(7181*)Y(7250*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=R
+                                                       *                          <W> L=2 inconsistent with JPI=1/2+ from Adopted Levels for E=7178.6
+                                                                                         possible JPI from L=2 and target JPI=0+
+                                                                                             3/2+,5/2+
  35CL  L 7273      2                                   0,1                      
-         *                                                                        <E> 2 possible matches found in Adopted! Check XREF
-                                                                                         7269.2     1                     XREF=IT
-                                                                                      #  7272.6     3 1/2-                XREF=IT
-                                                                                      But tag=M of this dataset is not in XREF of any of them!
- 35CL  L 7361      2                                   1                        
-         *                                                                        <E> Tag=M of this dataset missing in XREF of matched Adopted Level=7362.0
- 35CL  L 7398      2                                   2,3                      
-         *                                                                        <E> Tag=M of this dataset missing in XREF of matched Adopted Level=7396.0
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+                                                                                       @ 7269.2     1                     XREF=P(7274*)R(7273*)Y(7250*)
+                                                                                       @ 7272.7     9 1/2-                XREF=OP(7274*)R(7273*)Y(7250*)
+                                                                                      #@ 7301                             XREF=L(7301?)P(7274*)R(7273*)Y(7250*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=R
 
 ################################################################################
-In dataset of 35CL: XN 35CL(G,G')     XREF Tag=N
+In dataset of 35CL: XU 35CL(P,P'G)     XREF Tag=U
 
- 35CL  L 1760                          0.42 PS   15                             
-         *                                                                        <E> Tag=N of this dataset missing in XREF of matched Adopted Level=1763.04
-
-################################################################################
-In dataset of 35CL: X?5 35CL(P,P'G)     XREF Tag=?5
-
- 35CL  L 0            3/2+                                                      
-         *                                                                        <E> Tag=?5 of this dataset missing in XREF of matched Adopted Level=0
- 35CL  L 1219.42   10 1/2+             0.150 PS  +42-28                         
-         *                                                                        <E> Tag=?5 of this dataset missing in XREF of matched Adopted Level=1219.29
- 35CL  L 1763.26   10 5/2+             0.43 PS   20                             
-         *                                                                        <E> Tag=?5 of this dataset missing in XREF of matched Adopted Level=1763.04
  35CL  L 2645.74   17 7/2+             0.150 PS  35                             
-         *                                                                        <E> Tag=?5 of this dataset missing in XREF of matched Adopted Level=2645.74
  35CL  G 1426         1      LT                                             C  ?
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
                                                                                         JI=7/2+ JF(1219.42)=1/2+
- 35CL  L 2694.50   28 3/2+             43 FS     11                             
-         *                                                                        <E> Tag=?5 of this dataset missing in XREF of matched Adopted Level=2693.75
- 35CL  L 3002.6    5  5/2+             19 FS     9                              
-         *                                                                        <E> Tag=?5 of this dataset missing in XREF of matched Adopted Level=3002.30
  35CL  L 3162.75   10 7/2-             32 PS     4                              
-         *                                                                        <E> Tag=?5 of this dataset missing in XREF of matched Adopted Level=3162.80
  35CL  G 1943         1      LT                                             C  ?
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
                                                                                         JI=7/2- JF(1219.42)=1/2+
  35CL  L 3930      30 3/2                                                       
-         *                                                                        <E> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  3918.49   17 3/2+                XREF=BGIMNP
-                                                                                         3979.0     3 (3/2+,5/2+)         XREF=I
-                                                                                      But tag=?5 of this dataset is not in XREF of any of them!
+                     *                                                            <W> JPI commented from Adopted but multiple matches found in Adopted:
 
 ################################################################################
-In dataset of 35CL: XS 36AR(POL D,3HE)     XREF Tag=S
+In dataset of 35CL: XW 36AR(D,3HE)     XREF Tag=W
 
- 35CL  L 3948      40 (3/2+)                           2        0.03        A   
+ 35CL  L 5600      20 (5/2)+                           2        0.47      19    
+         *                                                                        <W> 4 possible matches found in Adopted! Check XREF
+                                                                                       @ 5586.0    20 5/2+                XREF=LM(5600*)OW(5600*)X(5583*)
+                                                                                       @ 5598.4    22 3/2+,5/2+           XREF=LM(5600*)OW(5600*)X(5583*)
+                                                                                       @ 5633.6    30                     XREF=LM(5650*)R(5660*)W(5600*)Y(5650*)
+                                                                                      #@ 5655       2 3/2+                XREF=LM(5650*)OR(5660*)W(5600*)Y(5650*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=W
+ 35CL  L 8010      20 (5/2)+                           2        0.23            
+                                                       *                          <W> L=2 inconsistent with JPI=(7/2:17/2)+ from Adopted Levels for E=8010
+                                                                                         possible JPI from L=2 and target JPI=0+
+                                                                                             3/2+,5/2+
+ 35CL  L 8210      20 (5/2)+                           2        0.28            
+                                                       *                          <W> L=2 inconsistent with JPI=(3/2-,5/2,7/2+) from Adopted Levels for E=8179.4
+                                                                                         possible JPI from L=2 and target JPI=0+
+                                                                                             3/2+,5/2+
+
+################################################################################
+In dataset of 35CL: XX 36AR(POL D,3HE)     XREF Tag=X
+
+ 35CL  L 6136      8  5/2+                             2        0.63        B   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  3918.49   17 3/2+                XREF=BGIMNP
-                                                                                      #  3979.0     3 (3/2+,5/2+)         XREF=I
-                                                                                      But tag=S of this dataset is not in XREF of any of them!
-                                                                                      However it is in XREF of the following level with inconsistent JPI:
-                                                                                      @ 3943.82   25 9/2+                XREF=FGISX
- 35CL  L 7565      20 5/2+                             2        0.30        B   
-         *                                                                        <E> 4 possible matches found in Adopted! Check XREF
-                                                                                      #  7561.1     4 (1/2,3/2)           XREF=I
-                                                                                      #  7568       4                     XREF=F
-                                                                                         7587       4                     XREF=F
-                                                                                         7600.8     3 5/2+                XREF=I
-                                                                                      But tag=S of this dataset is not in XREF of any of them!
- 35CL  L 1.25E4    5                                                            
-         *                                                                        <E> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  12572.2    6 23/2-               XREF=X
-                                                                                      #  12900                            XREF=E
-                                                                                      But tag=S of this dataset is not in XREF of any of them!
+                                                                                      #@ 6105.7    21 (3/2,5/2+)          XREF=LOW(6140*)X(6136*)
+                                                                                       @ 6141       4 5/2+                XREF=LW(6140*)X(6136*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=X
 
 ################################################################################
-In dataset of 35CL: XT 37CL(P,T)     XREF Tag=T
+In dataset of 35CL: XY 37CL(P,T)     XREF Tag=Y
 
- 35CL  L 1750      40                                  2                        
-         *                                                                        <E> Tag=T of this dataset missing in XREF of matched Adopted Level=1763.04
- 35CL  L 6677      15                                  (2)                      
-         *                                                                        <E> Tag=T of this dataset missing in XREF of matched Adopted Level=6681
- 35CL  L 7250      50                                                           
-         *                                                                        <W> 5 possible matches found in Adopted! Check XREF
-                                                                                      #  7210       4                     XREF=F
-                                                                                      #  7225.5     3 5/2                 XREF=FI
-                                                                                       @ 7234.0     3 5/2+                XREF=FIT
-                                                                                       @ 7269.2     1                     XREF=IT
-                                                                                       @ 7272.6     3 1/2-                XREF=IT
-                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=T
+ 35CL  L 2650      40                                  2                        
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+                                                                                      #  2645                             XREF=L(*)QR(2645*)
+                                                                                       @ 2645.66    8 7/2+                XREF=BFGHIL(*)MOR(2645*)TUY(2650*)ab
+                                                                                       @ 2693.99   20 3/2+                XREF=BL(2693?)MOQRSTUWX(2676)Y(2650*)a
+                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=Y
 
 ################################################################################
-In dataset of 35CL: XV 40CA(MU-,NUANG)     XREF Tag=V
+In dataset of 35CL: Xa 40CA(MU-,NUANG)     XREF Tag=a
 
  35CL  L 1219.3    5  1/2+                                                      
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=1219.29 11 this E=1219.3 5
+                                                                                        Adopted E=1219.39 7 this E=1219.3 5
+ 35CL  G 1219.3       0.3    LT                                                 
+         *                                                                        <E> E(gamma) commented from Adopted but inconsistent
+                                                                                        Adopted E=1219.4 1 this E=1219.3
  35CL  L 1763.2    5  5/2+                                                      
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=1763.04 7 this E=1763.2 5
+                                                                                        Adopted E=1763.18 10 this E=1763.2 5
+ 35CL  G 1763.1       0.5    3                                                  
+         *                                                                        <E> E(gamma) commented from Adopted but inconsistent
+                                                                                        Adopted E=1763.16 10 this E=1763.1
  35CL  L 2645.8    5  7/2+                                                      
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=2645.74 8 this E=2645.8 5
+                                                                                        Adopted E=2645.66 8 this E=2645.8 5
  35CL  L 2693.7    5  3/2+                                                      
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=2693.75 8 this E=2693.7 5
+                                                                                        Adopted E=2693.99 20 this E=2693.7 5
+ 35CL  G 2693.6       0.2    LT                                                 
+         *                                                                        <E> E(gamma) commented from Adopted but inconsistent
+                                                                                        Adopted E=2693.7 2 this E=2693.6
 
 
 End of report

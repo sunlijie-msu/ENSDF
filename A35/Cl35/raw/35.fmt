@@ -1,9 +1,25 @@
 Program for ENSDF check: output for Format Error and Warnings (version 09/24/2025)
-Generated at: Sat 10/18/2025 at 06:42:59 PM EDT
+Generated at: Sat 10/18/2025 at 08:50:06 PM EDT
 
 ****************************************
-     Total 3 errors 1 warning
+     Total 16 errors 70 warnings
 ****************************************
+
+-----------------------------------------------------------------------------------------
+    In file: D:\X\ND\ENSDF\A35\Cl35\new\Cl35_34s_p_g.ens
+-----------------------------------------------------------------------------------------
+
+#########################################################################################
+### In dataset <35CL: 34S(P,G)>
+
+    797.  35CL  G 3011.4       5      LT                                             H   
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7185
+                                                                                               Calculated FL: 4174 
+                                                                                               Possible final levels:
+                                                                                                              4173.45 19 (assigned by default)
+                                                                                                              4177.9 2, JPI=3/2
+
 
 -----------------------------------------------------------------------------------------
     In file: D:\X\ND\ENSDF\A35\Cl35\new\Cl35_40ca_mu-_nuang.ens
@@ -23,12 +39,507 @@ Generated at: Sat 10/18/2025 at 06:42:59 PM EDT
 #########################################################################################
 ### In dataset <35CL: ADOPTED LEVELS, GAMMAS>
 
-    486.  35CL  L 6181.0    6 (1/2:7/2,9/2-)                                             
+    219.  35CL  G 356.8        1      LT [M1,E2]                                         
+                  ******                                                                   <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  3002.64 9, JPI=5/2+
+                                                                                               Calculated FL: 2645.8 5
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+    294.  35CL  G 916                                                                   ?
+                  ****                                                                     <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  3918.47 12, JPI=3/2+
+                                                                                               Calculated FL: 3002.5 10
+                                                                                               Possible final levels:
+                                                                                                              3002.64 9, JPI=5/2+ (assigned by default)
+                                                                                                              3006, JPI=5/2-
+    296.  35CL  G 1272.76      3.7    LT [E2]                                            
+                  ********                                                                 <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  3918.47 12, JPI=3/2+
+                                                                                               Calculated FL: 2645.69 13
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+    303.  35CL  G 2695         19     5  [M1,E2]                                         
+                  *****                                                                    <W> No final level within 3*sigma=3.03
+                                                                                               Parent level:  3918.47 12, JPI=3/2+
+                                                                                               Calculated FL: 1223.4 10
+                                                                                               Possible matches within 5 keV:
+                                                                                                              1219.39 7, JPI=1/2+ (assigned by default)
+                                                                                               Level-difference=2698.97 14 (with recoil correction)
+    320.  35CL  G 1297.4    15 8.0    21 [M1,E2]                                         
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  3942.9 2, JPI=9/2+
+                                                                                               Calculated FL: 2645.5 15
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+    346.  35CL  G 1321.6       2.5    LT [M3]                                            
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  3967.6 4, JPI=1/2+
+                                                                                               Calculated FL: 2646.0 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+    375.  35CL  G 1413.5       1.1    LT [M2]                                            
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  4059.1 4, JPI=3/2-
+                                                                                               Calculated FL: 2645.6 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+    416.  35CL  G 1527.71      17     LT [E1]                                            
+                  ********                                                                 <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  4173.43 23, JPI=5/2-
+                                                                                               Calculated FL: 2645.68 24
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+    431.  35CL  G 1532.2       0.82   LT [M2]                                            
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  4177.9 2, JPI=3/2-
+                                                                                               Calculated FL: 2645.7 6
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+    459.  35CL  G 1701.88   25 46.8   24 E1(+M2)  -0.018  12                             
+                  ********                                                                 <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  4347.74 7, JPI=9/2-
+                                                                                               Calculated FL: 2645.82 26
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+    503.  35CL  G 2193.33      5.1    LT                                                 
+                  ********                                                                 <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  4839.10 11, JPI=(1/2+,3/2)
+                                                                                               Calculated FL: 2645.70 12
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+    526.  35CL  G 2235.18      49     8                                                  
+                  ********                                                                 <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  4880.96 15, JPI=7/2
+                                                                                               Calculated FL: 2645.70 16
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+    548.  35CL  G 2364.3       5      LT                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  5009.1 18, JPI=(1/2,3/2)
+                                                                                               Calculated FL: 2644.7 19
+                                                                                               Possible final levels:
+                                                                                                              2645 (assigned by default)
+                                                                                                              2645.66 8, JPI=7/2+
+    578.  35CL  G 2570.0       15     LT                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  5214.5 20, JPI=(3/2+,5/2)
+                                                                                               Calculated FL: 2644.4 21
+                                                                                               Possible final levels:
+                                                                                                              2645 (assigned by default)
+                                                                                                              2645.66 8, JPI=7/2+
+    631.  35CL  G 2940         67     17                                                 
+                  *****                                                                    <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  5586.0 20, JPI=5/2+
+                                                                                               Calculated FL: 2645.9 23
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+    652.  35CL  G 2643                                                                   
+                  *****                                                                    <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  5646 2, JPI=(5/2,7/2,9/2+)
+                                                                                               Calculated FL: 3003 2
+                                                                                               Possible final levels:
+                                                                                                              3002.64 9, JPI=5/2+ (assigned by default)
+                                                                                                              3006, JPI=5/2-
+    663.  35CL  G 2652         100    6  [M1,E2]                                         
+                  *****                                                                    <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  5655 2, JPI=3/2+
+                                                                                               Calculated FL: 3003 2
+                                                                                               Possible final levels:
+                                                                                                              3002.64 9, JPI=5/2+ (assigned by default)
+                                                                                                              3006, JPI=5/2-
+    706.  35CL  G 2687         100                                                       
+                  *****                                                                    <W> No final level within 3*sigma=12.37
+                                                                                               Parent level:  5830 4, JPI=(5/2,9/2)
+                                                                                               Calculated FL: 3143 4
+                                                                                               Closest level within 19 keV:
+                                                                                                              3162.87 7, JPI=7/2- (assigned by default)
+                                                                                               Level-difference=2667 4 (with recoil correction)
+    762.  35CL  L 6181      3  (1/2:7/2,9/2-)                                            
                               ******************                                           <E> Invalid JPI text: mixed use of , and :
-    858.  35CL  L 7693.8     5 (1/2:7/2,9/2-)                                            
+    767.  35CL  L 6180      3  (7/2:17/2)+                                               
+                  **********                                                               <E> Level < preceding level=6181
+    812.  35CL  L 6659.1    30 (7/2+)                                                    
+                  **********                                                               <E> Level < preceding level=6660.2
+    842.  35CL  L 6863      3                                                            
+                  **********                                                               <E> Level < preceding level=6866
+    865.  35CL  G 4420.2       3.3                                                       
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7066.2 7, JPI=5/2+
+                                                                                               Calculated FL: 2645.7 9
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+    910.  35CL  G 4539.0       13     5                                                  
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7185.0 4, JPI=5/2+
+                                                                                               Calculated FL: 2645.7 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+    940.  35CL  G 3047.5       14                                                        
+         *************************                                                         <W> Possible duplicate line
+                  *******                                                                  <E> No final level found for this gamma=3047.5  
+                                                                                               Parent level:  7225.5 8, JPI=5/2
+                                                                                               Calculated FL: 4177.9 10
+                                                                                                 the closest final level is 4177.9
+                                                                                                 but has been assigned to previous gamma=3047.5
+    955.  35CL  G 4588.0       3.2                                                       
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7234.0 8, JPI=5/2+
+                                                                                               Calculated FL: 2645.7 10
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1008.  35CL  G 4750.0       28                                                        
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7396.4 10, JPI=7/2(-)
+                                                                                               Calculated FL: 2646.1 11
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1028.  35CL  G 4855.0       100    11                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7501.1 8
+                                                                                               Calculated FL: 2645.7 10
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1040.  35CL  G 4856.8       14                                                        
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7502.9 7
+                                                                                               Calculated FL: 2645.7 9
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1053.  35CL  G 4872.7       4.4    22                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7518.8 7, JPI=7/2(-)
+                                                                                               Calculated FL: 2645.7 9
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1066.  35CL  G 4902.8       0.72   8  [E1]                                            
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7548.9 6, JPI=7/2-
+                                                                                               Calculated FL: 2645.7 8
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1098.  35CL  G 4954.7       5.8       [M1,E2]                                         
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7600.8 8, JPI=5/2+
+                                                                                               Calculated FL: 2645.7 10
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1141.  35CL  G 5025.8       23        D(+Q)    +0.3    22                             
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7671.9 8, JPI=(5/2-,7/2)
+                                                                                               Calculated FL: 2645.7 10
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1161.  35CL  L 7693.9    8  (1/2:7/2,9/2-)                                            
                               ******************                                           <E> Invalid JPI text: mixed use of , and :
-    969.  35CL  L 7839.7    5 (1/2:5/2,7/2-)                                             
+   1183.  35CL  G 5060.3       4.8       D+Q      -1.01   10                             
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7706.7 10, JPI=5/2+
+                                                                                               Calculated FL: 2646.0 11
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1202.  35CL  G 5098.7       100       D(+Q)    +0.1    30                             
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7744.8 9, JPI=7/2-
+                                                                                               Calculated FL: 2645.7 10
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1280.  35CL  L 7839.0    9  (1/2:5/2,7/2-)                                            
                               ******************                                           <E> Invalid JPI text: mixed use of , and :
+   1310.  35CL  G 1213                                                                   
+                  *****                                                                    <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7872.83 30, JPI=13/2+
+                                                                                               Calculated FL: 6659.8 11
+                                                                                               Possible final levels:
+                                                                                                              6660.2 8 (assigned by default)
+                                                                                                              6659.1 30, JPI=(7/2+)
+   1335.  35CL  G 3702.7       10                                                        
+         *************************                                                         <W> Possible duplicate line
+                  *******                                                                  <E> No final level found for this gamma=3702.7  
+                                                                                               Parent level:  7880.8 9, JPI=3/2+,5/2+
+                                                                                               Calculated FL: 4177.9 10
+                                                                                                 the closest final level is 4177.9
+                                                                                                 but has been assigned to previous gamma=3702.7
+   1394.  35CL  G 3792.2       30                                                        
+         *************************                                                         <W> Possible duplicate line
+                  *******                                                                  <E> No final level found for this gamma=3792.2  
+                                                                                               Parent level:  7970.3 10, JPI=(5/2-,7/2-)
+                                                                                               Calculated FL: 4177.9 11
+                                                                                                 the closest final level is 4177.9
+                                                                                                 but has been assigned to previous gamma=3792.2
+   1398.  35CL  G 5324.2       100                                                       
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7970.3 10, JPI=(5/2-,7/2-)
+                                                                                               Calculated FL: 2645.7 11
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1408.  35CL  G 2333         2.8                                                       
+         **************************                                                        <W> Possible duplicate line
+   1428.  35CL  G 5349.5       0.77                                                      
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7995.6 10, JPI=5/2
+                                                                                               Calculated FL: 2645.7 11
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1442.  35CL  G 5354.9       2.3                                                       
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8001.0 9, JPI=7/2+
+                                                                                               Calculated FL: 2645.7 10
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1458.  35CL  G 5358.9       7.3                                                       
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8005.0 10, JPI=5/2+
+                                                                                               Calculated FL: 2645.7 11
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1512.  35CL  G 3897.8       14                                                        
+         *************************                                                         <W> Possible duplicate line
+                  *******                                                                  <E> No final level found for this gamma=3897.8  
+                                                                                               Parent level:  8075.9 10, JPI=(3/2,5/2)
+                                                                                               Calculated FL: 4177.9 11
+                                                                                                 the closest final level is 4177.9
+                                                                                                 but has been assigned to previous gamma=3897.8
+   1532.  35CL  G 5449.9       44                                                        
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8096.1 11, JPI=5/2
+                                                                                               Calculated FL: 2645.7 12
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1598.  35CL  G 3978.7       9.8                                                       
+         **************************                                                        <W> Possible duplicate line
+                  *******                                                                  <E> No final level found for this gamma=3978.7  
+                                                                                               Parent level:  8156.8 11, JPI=(5/2+,7/2-)
+                                                                                               Calculated FL: 4177.9 12
+                                                                                                 the closest final level is 4177.9
+                                                                                                 but has been assigned to previous gamma=3978.7
+   1604.  35CL  G 5510.6       100                                                       
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8156.8 11, JPI=(5/2+,7/2-)
+                                                                                               Calculated FL: 2645.7 12
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1662.  35CL  G 5248         7.3                                                       
+                  *****                                                                    <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8251 5
+                                                                                               Calculated FL: 3003 5
+                                                                                               Possible final levels:
+                                                                                                              3002.64 9, JPI=5/2+ (assigned by default)
+                                                                                                              3006, JPI=5/2-
+   1678.  35CL  G 5622.7       8.9                                                       
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8269.0 5, JPI=5/2+
+                                                                                               Calculated FL: 2645.8 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1691.  35CL  G 4103.5       6.9                                                       
+         **************************                                                        <W> Possible duplicate line
+                  *******                                                                  <E> No final level found for this gamma=4103.5  
+                                                                                               Parent level:  8277.2 5, JPI=5/2+
+                                                                                               Calculated FL: 4173.4 7
+                                                                                                 the closest final level is 4173.43
+                                                                                                 but has been assigned to previous gamma=4103.5
+   1696.  35CL  G 5631.0       10                                                        
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8277.2 5, JPI=5/2+
+                                                                                               Calculated FL: 2645.7 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1706.  35CL  G 4104.2       50                                                        
+         *************************                                                         <W> Possible duplicate line
+                  *******                                                                  <E> No final level found for this gamma=4104.2  
+                                                                                               Parent level:  8282.4 5, JPI=(3/2-,5/2)
+                                                                                               Calculated FL: 4177.9 7
+                                                                                                 the closest final level is 4177.9
+                                                                                                 but has been assigned to previous gamma=4104.2
+   1744.  35CL  G 5652.0       25                                                        
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8298.2 5, JPI=3/2-
+                                                                                               Calculated FL: 2645.7 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1764.  35CL  G 5671.9       1.2                                                       
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8318.1 3
+                                                                                               Calculated FL: 2645.7 6
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1783.  35CL  G 5676.9       4.9                                                       
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8323.1 13
+                                                                                               Calculated FL: 2645.7 14
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1798.  35CL  G 5735.6       15     8                                                  
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8381.8 8, JPI=5/2+
+                                                                                               Calculated FL: 2645.7 10
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1815.  35CL  G 5756.7       24     12                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8402.9 5, JPI=5/2-
+                                                                                               Calculated FL: 2645.7 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1883.  35CL  G 5838.2       6.1    31                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8484.4 5, JPI=3/2+
+                                                                                               Calculated FL: 2645.7 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1949.  35CL  G 5925.7       11     6                                                  
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8571.9 5, JPI=(5/2)+
+                                                                                               Calculated FL: 2645.7 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1978.  35CL  G 5943.8       25     13                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8590.1 5, JPI=5/2+
+                                                                                               Calculated FL: 2645.8 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   1996.  35CL  G 5967.5       41     11                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8613.7 5, JPI=5/2+
+                                                                                               Calculated FL: 2645.7 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   2014.  35CL  G 5971.9       5.2    27                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8618.2 5, JPI=(3/2+,5/2+)
+                                                                                               Calculated FL: 2645.8 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   2130.  35CL  G 6133.5       48     11                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8779.8 5, JPI=3/2-
+                                                                                               Calculated FL: 2645.7 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   2212.  35CL  G 6186.8       100    26                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8833.1 5, JPI=5/2
+                                                                                               Calculated FL: 2645.7 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   2234.  35CL  G 526                                                                    
+                  ****                                                                     <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8844.3 4, JPI=17/2+
+                                                                                               Calculated FL: 8318.3 11
+                                                                                               Possible final levels:
+                                                                                                              8318.1 3 (assigned by default)
+                                                                                                              8319.3 5, JPI=15/2-
+   2252.  35CL  G 6209.8                                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8856.2 5, JPI=5/2+
+                                                                                               Calculated FL: 2645.8 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   2279.  35CL  G 6239.8       100    27                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8886.1 5
+                                                                                               Calculated FL: 2645.7 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   2296.  35CL  G 2724         15     8                                                  
+                  *****                                                                    <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8904.8 5, JPI=(1/2,3/2,5/2+)
+                                                                                               Calculated FL: 6180.7 11
+                                                                                               Possible final levels:
+                                                                                                              6181 3, JPI=(1/2:7/2,9/2-) (assigned by default)
+                                                                                                              6180 3, JPI=(7/2:17/2)+
+   2324.  35CL  G 6273.5       46     12                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8919.8 5, JPI=5/2+
+                                                                                               Calculated FL: 2645.7 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   2362.  35CL  G 6337.9       2.0    10                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8984.2 5, JPI=3/2+,5/2+
+                                                                                               Calculated FL: 2645.7 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   2413.  35CL  G 6435.1       1.7                                                       
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  9081.5 4, JPI=5/2+
+                                                                                               Calculated FL: 2645.8 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   2458.  35CL  G 6510.8       6.7                                                       
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  9157.1 5, JPI=5/2+
+                                                                                               Calculated FL: 2645.7 7
+                                                                                               Possible final levels:
+                                                                                                              2645
+                                                                                                              2645.66 8, JPI=7/2+ (assigned by default)
+   2585.  35CLF G FL=8487.4                                                              
+                     ******                                                                <E> Exact-match final level not found for EG=1693.5 5
+                                                                                               Parent level:  10180.6 5, JPI=19/2-
+                                                                                                         EG:  1693.5 5  MUL=Q
+                                                                                               Calculated FL: 8487.1 7
+                                                                                               Possible matches within 2 keV:
+                                                                                                              8486.2 5, JPI=3/2- (excluded by XREF)
+                                                                                                              8487.0 5, JPI=15/2-
+   2660.  35CLF G FL=8788.7                                                              
+                     ******                                                                <E> Exact-match final level not found for EG=2069.8 10
+                                                                                               Parent level:  10858.5 8, JPI=19/2+
+                                                                                                         EG:  2069.8 10  MUL=Q
+                                                                                               Calculated FL: 8788.6 13
+                                                                                               Possible matches within 2 keV:
+                                                                                                              8787.2 5, JPI=(3/2-,5/2,7/2-)
+                                                                                                              8788.3 6, JPI=15/2+
+   2774.  35CL  L 1.25E4    5                                                            
+                  **********                                                               <E> Level < preceding level=12571.7
 
 
 
