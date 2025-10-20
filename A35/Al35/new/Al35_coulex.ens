@@ -1,6 +1,5 @@
  35AL    COULOMB EXCITATION            1999IB01,2000PrZX         ENSDF    202509
- 35AL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
- 35AL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35AL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$                                             
  35AL  H TYP=FUL$AUT=BALRAJ SINGH AND JUN CHEN$CIT=ENSDF$CUT=15-DEC-2017$       
  35AL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35AL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
@@ -26,9 +25,10 @@
  35AL cL J$From the Adopted Levels                                              
  35AL  L 1020      9                                                            
  35AL cL E$From measured E|g.                                                   
- 35AL cL $B(E2)|^=0.0142 {I52} (1999Ib01). B(E1)|^|<0.00020 {I9},               
- 35AL2cL B(E2)|^|<0.0125 {I56}, B(M1)|^|<0.0024 {I11}, and 5/2+ ->3/2{++/-}     
- 35AL3cL |s=30 mb {I14} (2000PrZX). The multipolarities are assumed.            
+ 35AL cL $B(E2)|^=0.0142 {I52} from 1999Ib01, assuming E2 excitation mode.      
+ 35AL2cL Others: B(E1)|^|<0.00020 {I9}, B(E2)|^|<0.0125 {I56}, B(M1)|^|<0.0024  
+ 35AL3cL {I11} (2000PrZX)                                                       
+ 35AL cL $Measured |s=30 mb {I14} (2000PrZX).                                   
  35AL  G 1020      9  100                                                       
  35AL cG E$Weighted average of 1006 {I19} (1999Ib01) and 1023 {I9} (2000PrZX).  
  35AL2cG 2000PrZX reports E|g=1023 {I8} in Table 4.9 and E|g=1023 {I9} in Table 

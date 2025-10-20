@@ -5,7 +5,7 @@
  35AL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35AL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
  35AL dL E$Least-squares fitting is done by GLSC (version 15-May-2025)          
- 35AL  Q 14170     40 5297   8 15830.7 89-14894.078    2021WA16                 
+ 35AL  Q 14170     40 5297   8 15831   9 -14894  8     2021WA16                          
  35AL cQ SP,QA$Deduced by the evaluator using mass excesses of 8318 {I5} for    
  35AL2cQ {+34}Mg: a weighted average of 8323 {I7} (2019As04) and 8315 {I5}      
  35AL3cQ (2025Ly01), and 12245.3 {I26} for {+31}Na measured by 2025Ly01; -224   
@@ -88,17 +88,6 @@
  35AL  L 0            (5/2)+           38.1 MS   4                              
  35ALX L XREF=ABDE                                                              
  35AL2 L %B-=100$ %B-N=37 4 $ %B-2N=?                                           
- 35AL cL $%|b{+-}n: Unweighted average of 41 {I2} (2005Ti11,2006AnZW), 41 {I13} 
- 35AL2cL (2001Nu01,2002Nu02), 26 {I4} (1995ReZZ,2008ReZZ), and 40 {I10}         
- 35AL3cL (1989Le16,1989MuZU). Other: 43 {I9} (1999YoZW, preliminary), 87        
- 35AL4cL {I+37-25} (1988Mu08,1988BaYZ) with an unphysical upper bound.          
- 35AL5cL Evaluators add the I|g deexiting the 4379 and 4255 levels in {+34}Si to
- 35AL6cL the original %|b{+-}n=38 {I2} in 2005Ti11,2006AnZW as they state that  
- 35AL7cL these levels are fed by either neutrons with energy below our detection
- 35AL8cL threshold or by weak transitions that cannot be identified in the      
- 35AL9cL neutron spectrum.                                                      
- 35AL cL $%|b{+-}2n: No evidence was found for any A=33 activity and 2n emission
- 35AL2cL was thus found negligible (2001Nu01).                                  
  35AL cL J$From shell-model calculations and L({+36}Si,{+35}Al)=2 from 0+.      
  35AL cL T$weighted average of 38.4 ms {I3} (2017Ha23, implant-|b correlation), 
  35AL2cL 36.8 ms {I5} (2005Ti11,2006AnZW, implant-|b correlation), 38.6 ms {I4} 
@@ -107,6 +96,19 @@
  35AL5cL {I+90-50} (1989Le16,1989MuZU, |b-decay curve), 30 ms {I10} (1988DuZT,  
  35AL6cL beam pulsations), and 130 ms {I+100-50} (1988Mu08,1988BaYZ, |b counting
  35AL7cL rate).                                                                 
+ 35AL cL $%|b{+-}n: Unweighted average of 41 {I2} (2005Ti11,2006AnZW), 41 {I13} 
+ 35AL2cL (2001Nu01,2002Nu02), 26 {I4} (1995ReZZ,2008ReZZ), and 40 {I10}         
+ 35AL3cL (1989Le16,1989MuZU). Others: 43 {I9} (1999YoZW, preliminary), 87       
+ 35AL4cL {I+37-25} (1988Mu08,1988BaYZ) with a non-physical upper bound. Note    
+ 35AL5cL that the original value reported in 2005Ti11 is 38 {I2} (2006AnZW      
+ 35AL6cL report 38 {I3}) and the evaluators have added intensities of |g rays   
+ 35AL7cL deexiting the 4379 (0.9% {I2}) and 4255 (2.0% {I8}) levels in {+34}Si  
+ 35AL8cL not included in their reported %|b{+-}n value, as the authors state    
+ 35AL9cL that these levels are fed by either neutrons with energy below our     
+ 35ALAcL detection threshold or by weak transitions that cannot be identified in
+ 35ALBcL the neutron spectrum.                                                  
+ 35AL cL $%|b{+-}2n: No evidence was found for any A=33 activity and 2n emission
+ 35AL2cL was thus found negligible (2001Nu01).                                  
  35AL cL $Reduced strong absorption radius r{+2}{-0}=1.188 fm{+2} {I14} from the
  35AL2cL energy-integrated |s of Si({+35}Al,X) (2006Kh08).                      
  35AL cL $Major configurations for J|p=5/2+ of {+35}Al g.s. from                
@@ -120,9 +122,9 @@
  35AL  G 802       4 100                                                        
  35AL  L 1007      4                                                            
  35ALX L XREF=BE(1020)                                                          
- 35AL cL $B(E2)|^=0.0142 {I52} (1999Ib01). B(E1)|^|<0.00020 {I9},               
- 35AL2cL B(E2)|^|<0.0125 {I56}, B(M1)|^|<0.0024 {I11}, and 5/2+ -> 3/2{++/-}    
- 35AL3cL |s=30 mb {I14} (2000PrZX). The multipolarities are assumed.            
+ 35AL cL $B(E2)|^=0.0142 {I52} from Coulomb excitation assuming E2 excitation   
+ 35AL2cL mode (1999Ib01). Others: B(E1)|^|<0.00020 {I9}, B(E2)|^|<0.0125 {I56}, 
+ 35AL3cL B(M1)|^|<0.0024 {I11}                                                  
  35AL  G 1006      6 100                                                        
  35AL cG E$weighted average of 1003 {I4} from ({+36}Si,{+35}Al|g) and 1020 {I9} 
  35AL2cG from Coulomb excitation                                                
