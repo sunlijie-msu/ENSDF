@@ -2,8 +2,8 @@
  35MG  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
  35MG2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35MG  H TYP=FUL$AUT=BALRAJ SINGH AND JUN CHEN$CIT=ENSDF$CUT=15-DEC-2017$       
- 35MG c  {+36}Mg->1n+{+35}Mg from J|p=0+ {+36}Mg ground state.                  
- 35MG c  {+37}Al->1p1n+{+35}Mg from J|p=(5/2+) {+37}Al ground state.            
+ 35MG c  {+36}Mg|)1n+{+35}Mg from J|p=0+ {+36}Mg ground state.                  
+ 35MG c  {+37}Al|)1p1n+{+35}Mg from J|p=(5/2+) {+37}Al ground state.            
  35MG c  2017Mo26: A secondary beam composed of {+36}Mg and {+37}Al was produced
  35MG2c  via the projectile fragmentation of a 345-MeV/nucleon {+48}Ca primary  
  35MG3c  beam impinging on a {+9}Be target and selected by the BigRIPS separator
@@ -24,7 +24,12 @@
  35MGIc  molecular dynamics (AMD) model calculations using the Gogny D1S force. 
  35MG cG $2017Mo26 states that no clear |g|g coincidence was observed.          
  35MG cG $It is possible that the final levels of 206|g, 443|g, 616|g, and 670|g
- 35MG2cG are not the same level.                                                
+ 35MG2cG are not the same level from authors' comparisons with shell-model      
+ 35MG3cG calculations with different interactions. But the suggested            
+ 35MG4cG experimental level scheme in FIG.4 of 2017Mo26 (with no |g rays shown) 
+ 35MG5cG indicates all four |g rays feeding the ground state, which is not      
+ 35MG6cG adopted by the evaluators since it cannot be confirmed with existing   
+ 35MG7cG data                                                                   
  35MG cG RI$|g-ray emission |s (mb)                                             
  35MG cL E$From E|g data. 2017Mo26 suggested that all the four observed |g rays 
  35MG2cL were emitted independently and fed either the ground state or a        
@@ -41,7 +46,8 @@
  35MG3cL (2017Mo26).                                                            
  35MG  L 0+X                                                                    
  35MG cL E$<200 keV; the detection threshold in 2017Mo26. The original placement
- 35MG2cL in 2017Mo26 of all |g rays is to the ground state.                     
+ 35MG2cL in 2017Mo26 of all |g rays is to the ground state, which cannot be     
+ 35MG3cL confirmed with existing data.                                          
  35MG  L 0+Y          (5/2-,7/2-)                                              ?
  35MG cL E$<200 keV; the detection threshold. 2017Mo26 suggested a low-lying L=3
  35MG2cL level from the observed 42(1)% L=3 component in the inclusive parallel 
@@ -56,13 +62,13 @@
  35MG  G 443       7  8      1                                                 ?
  35MGF G FL=0+X                                                                 
  35MG cG $2017Mo26 assigned this |g to the 3/2+ at 788 keV -> 3/2- g.s.         
- 35MG2cG transition based on shell-model calculations with the SDPF-M+2p{-1/2}  
+ 35MG2cG transition in shell-model calculations with the SDPF-M+2p{-1/2}        
  35MG3cG interaction (2017Mo26).                                                
  35MG  L 616+X     8  (1/2-,3/2-)                      (1)                      
  35MG  G 616       8  7      1                                                 ?
  35MGF G FL=0+X                                                                 
  35MG cG $2017Mo26 assigned this |g to the 3/2- at 664 keV -> 1/2- at 141 keV   
- 35MG2cG transition based on shell-model calculations with the SDPF-M+2p{-1/2}  
+ 35MG2cG transition in shell-model calculations with the SDPF-M+2p{-1/2}        
  35MG3cG interaction (2017Mo26).                                                
  35MG  L 670+X     8                                                            
  35MG  G 670       8  3      1                                                 ?
