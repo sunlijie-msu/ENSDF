@@ -1,5 +1,5 @@
 Program for consistency check: output for Error and Warnings (version 10/07/2025)
-Generated at: Sat 10/18/2025 at 08:50:14 PM EDT
+Generated at: Tue 10/21/2025 at 03:13:51 PM EDT
 
 ################################################################################
 In Adopted dataset of 35CL
@@ -8,31 +8,34 @@ In Adopted dataset of 35CL
           *                                                                       <W> No in-band transition from member level=11458.7 to 10858.5
                                                                                       No in-band transition from member level=8844.3 to 8788.3
  35CL  L 0.0          3/2+             STABLE                                   
- 35CL2 L MOMM1=+0.8218743 4 (1972Bl07,1989Ra17,2011StZZ)                        
- 35CL2 L MOME2=-0.08249 2 (1972St38,1989Ra17,2011StZZ)                          
+ 35CL2 L MOMM1=+0.821870 2 (2013Ja17,2019StZZ)                                  
+ 35CL2 L MOME2=-0.0817 8 (2008Py02,2021StZZ)                                    
          *                                                                        <W> Check if MOMM1 and reference are updated with 2019STZV or 2020STZV
-                                                                                      Check if MOME2 and reference are updated with 2021STZZ
- 35CL  L 3942.9    2  9/2+             0.229 PS  35                             
+ 35CL  L 3918.47   12 3/2+             4.9 FS    14                             
+ 35CL  G 1272.76      3.7    LT [M1,E2]                                         
+                               *                                                  <E> Mult=M1 is inconsistent with spin-parity change
+                                                                                        JI=3/2+ JF(2645.66)=7/2+
+ 35CL  L 3942.9    2  9/2+             0.18 PS   3                              
  35CL  G 2180.1    10 100.0  21 M1+E2                                           
                                *                                                  <E> Mult=M1 is inconsistent with spin-parity change
                                                                                         JI=9/2+ JF(1763.18)=5/2+
- 35CL  L 3967.6    4  1/2+             17 FS     4                              
+ 35CL  L 3967.6    4  1/2+             11.8 FS   28                             
  35CL  G 2748.5    6  100    6  [M1,E2]                                         
                                *                                                  <E> Mult=E2 is inconsistent with spin-parity change
                                                                                         JI=1/2+ JF(1219.39)=1/2+
- 35CL  L 4769.86   23 7/2              110 FS    29                             
+ 35CL  L 4769.86   23 7/2              76 FS     20                             
  35CL  G 3550.28      15     LT                                                 
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
                                                                                         JI=7/2 JF(1219.39)=1/2+
- 35CL  L 4839.10   11 (1/2+,3/2)       14 FS     5                              
+ 35CL  L 4839.10   11 (1/2+,3/2)       9.7 FS    35                             
  35CL  G 2193.33      5.1    LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2193.33
                                                                                         JI=(1/2+,3/2) JF(2645.66)=7/2+
- 35CL  L 4880.96   15 7/2              0.10 PS   9                              
+ 35CL  L 4880.96   15 7/2              5.6 FS    14                             
  35CL  G 3661.36      6.5    LT                                                 
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
                                                                                         JI=7/2 JF(1219.39)=1/2+
- 35CL  L 5009.1    18 (1/2,3/2)        11 FS     3                              
+ 35CL  L 5009.1    18 (1/2,3/2)        7.6 FS    21                             
  35CL  G 1847.1       50     LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=1847.1
                                                                                         JI=(1/2,3/2) JF(3162.87)=7/2-
@@ -43,10 +46,14 @@ In Adopted dataset of 35CL
  35CL  G 3943.71      23     LT                                                 
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
                                                                                         JI=7/2- JF(1219.39)=1/2+
- 35CL  L 5646      2  (5/2,7/2,9/2+)   4 FS      1                              
+ 35CL  L 5646      2  (5/2,7/2,9/2+)   2.8 FS    7                              
  35CL  G 5646         8      LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5646
                                                                                         JI=(5/2,7/2,9/2+) JF(0.0)=3/2+
+ 35CL  L 7548.9    6  7/2-             0.69 FS   LT                             
+ 35CL  G 1903         0.59   7  [M2]                                            
+                               *                                                  <W> Mult=[M2] but parity-change unknown from deltaJPI
+                                                                                        JI=7/2- JF(5646)=(5/2,7/2,9/2+)
  35CL  L 7744.8    9  7/2-                                                      
  35CL  G 6524.8       1.4                                                       
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
@@ -70,11 +77,6 @@ In Adopted dataset of 35CL
  35CL  G 5770.5       23                                                        
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
                                                                                         JI=1/2+ JF(2645.66)=7/2+
- 35CL  L 8641.4    5  (3/2+,5/2+)      0.003 KEV 2                              
- 35CLX L XREF=L(*)OP(8643*)W(8610*)
-         *                                                                        <W> XREF tag=L: level possibly not or inconsistent (E/JPI) in L=32S(A,P)
-                                                                                        closest level in L=32S(A,P)
-                                                                                        8654.1     41   possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
  35CL  L 8829.3    5  1/2-             12.2 KEV  12                             
  35CL  G 4059.2       4.6    24                                                 
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
@@ -82,38 +84,37 @@ In Adopted dataset of 35CL
  35CL  G 6183.0       100    24                                                 
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
                                                                                         JI=1/2- JF(2645.66)=7/2+
- 35CL  L 9135.1    5                   2.0 KEV   4                              
- 35CLX L XREF=J(9127*)L(*)N(9150*)OP(9136*)X(*)
-         *                                                                        <W> XREF tag=L: level possibly not or inconsistent (E/JPI) in L=32S(A,P)
-                                                                                        closest level in L=32S(A,P)
-                                                                                        9160.0     42   possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
 
 ################################################################################
 In dataset of 35CL: XB 35AR EC DECAY (1.7755 S)     XREF Tag=B
 
  35CL  L 1219.2    2 1/2+                                                       
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=123 FS 15 this T1/2=
+                                                                                        Adopted T1/2=0.119 PS 14 this T1/2=
  35CL  L 1763.1    2 5/2+                                                       
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=0.410 ps 40 this T1/2=
+                                                                                        Adopted T1/2=0.36 ps 3 this T1/2=
  35CL  L 2645.1    103/2+                                                       
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=7/2+ this JPI=3/2+
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=0.187 PS 30 this T1/2=
+                                                                                        Adopted T1/2=0.159 PS 21 this T1/2=
  35CL  L 2693.8    2 3/2+                                                       
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=39 FS 7 this T1/2=
+                                                                                        Adopted T1/2=32 FS 6 this T1/2=
  35CL  L 3002.3    3 5/2+                                                       
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=30 FS 8 this T1/2=
+                                                                                        Adopted T1/2=22 FS 6 this T1/2=
  35CL  L 3918.4    5 3/2+                                                       
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=7 FS 2 this T1/2=
+                                                                                        Adopted T1/2=4.9 FS 14 this T1/2=
+ 35CL  G 1225                                                                  ?
+         *                                                                        <W> Similar gammas placed differently in Adopted:
+                                                                                        1219.4(1)      from level=1219.39     JPI=1/2+                
+                                                                                        1213           from level=7872.83     JPI=13/2+               
  35CL  L 3967.7    4 1/2+                                                       
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=17 FS 4 this T1/2=
+                                                                                        Adopted T1/2=11.8 FS 28 this T1/2=
  35CL  L 4624.5    5   (3/2,5/2+)                                              ?
                                        *                                          <W> T1/2 commented from Adopted but empty
                                                                                         Adopted T1/2=40 FS 17 this T1/2=
@@ -177,12 +178,33 @@ In dataset of 35CL: XH 24MG(16O,APG)     XREF Tag=H
 ################################################################################
 In dataset of 35CL: XL 32S(A,P)     XREF Tag=L
 
- 35CL  L 8786.3    38                                                           
+ 35CL  L 6104      4                                                        K   
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 6106.2    21 (3/2,5/2+)          XREF=L(6104*)OW(6140*)X(6136*)
+                                                                                      #@ 6119.5    13 (11/2-)             XREF=F(?)L(6104*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=L
+ 35CL  L 6429      3  (1/2+)                                                K   
          *                                                                        <W> 3 possible matches found in Adopted! Check XREF
-                                                                                       @ 8779.8     5 3/2-                XREF=L(*)OP
-                                                                                       @ 8787.2     5 (3/2-,5/2,7/2-)     XREF=L(*)OP
-                                                                                      #  8788.3     6 15/2+               XREF=F(?)H
+                                                                                      #  6427       2                     XREF=M(6400*)R
+                                                                                       @ 6427       2                     XREF=L(6429*)M(6400*)
+                                                                                       @ 6429       3 (1/2+)              XREF=L(6429*)M(6400*)R(6377*)
                                                                                       *** Check for possible missing XREF assignment (# marked) of this tag=L
+ 35CL  L 6863      3  (9/2+)                                                K   
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+                                                                                       @ 6863       3                     XREF=D(*)L(6863*)O(*)
+                                                                                       @ 6866       2                     XREF=D(*)L(6863*)O(*)
+                                                                                      #  6866       2                     XREF=D(*)O(*)R
+                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=L
+ 35CL  L 9109.3    49                                                           
+         *                                                                        <W> 7 possible matches found in Adopted! Check XREF
+                                                                                       @ 9099.3     5                     XREF=L(*)OP(9101*)
+                                                                                       @ 9100.4     5 3/2-                XREF=L(*)OP(9101*)X(*)
+                                                                                       @ 9107.4     5                     XREF=J(9127*)L(*)OPX(*)
+                                                                                       @ 9110.1     5                     XREF=J(9127*)L(*)N(9150*)OPX(*)
+                                                                                       @ 9120       4                     XREF=J(9127*)L(*)O(*)PX(*)
+                                                                                       @ 9127       4 5/2                 XREF=J(9127*)L(*)O(*)PX(*)
+                                                                                      #@ 9138.3     5                     XREF=J(9127*)L(*)N(9150*)OP(9136*)X(*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=L
 
 ################################################################################
 In dataset of 35CL: XM 32S(A,PG)     XREF Tag=M
@@ -240,14 +262,13 @@ In dataset of 35CL: XN 33S(A,D)     XREF Tag=N
                                                                                          possible JPI from L=6 and target JPI=3/2+
                                                                                              7/2+,9/2+,11/2+,13/2+,15/2+,17/2+
  35CL  L 9150      10 (11/2:17/2)+                     6                        
-         *                                                                        <W> 7 possible matches found in Adopted! Check XREF
+         *                                                                        <W> 6 possible matches found in Adopted! Check XREF
                                                                                       #@ 9110.1     5                     XREF=J(9127*)L(*)N(9150*)OPX(*)
-                                                                                         9138.3     5                     XREF=J(9127*)OP(9136*)X(*)
+                                                                                       @ 9138.3     5                     XREF=J(9127*)L(*)N(9150*)OP(9136*)X(*)
                                                                                        @ 9147       4                     XREF=J(9161*)L(*)N(9150*)O(*)P(9147*)X(*)
                                                                                        @ 9150      10 (7/2:17/2)+         XREF=L(*)N(9150*)O(*)P(9147*)X(*)
                                                                                        @ 9155.7     5                     XREF=J(9161*)L(*)N(9150*)O(*)P(9159*)X(*)
                                                                                        @ 9163.4     6                     XREF=J(9161*)L(*)N(9150*)OPX(*)
-                                                                                       @ 9135.1     5                     XREF=J(9127*)L(*)N(9150*)OP(9136*)X(*)
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=N
                                                        *                          <W> L=6 inconsistent with JPI=(7/2:17/2)+ from Adopted Levels for E=9150
                                                                                          possible JPI from L=6 and target JPI=3/2+
@@ -357,21 +378,36 @@ In dataset of 35CL: XP 34S(P,P),(P,P'G):RESONANCES     XREF Tag=P
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=P
 
 ################################################################################
+In dataset of 35CL: XQ 34S(D,N)     XREF Tag=Q
+
+ 35CL  L 2645                                          (1)                      
+                                                       *                          <W> L=(1) inconsistent with JPI=7/2+ from Adopted Levels for E=2645.66
+                                                                                         possible JPI from L=(1) and target JPI=0+
+                                                                                             (1/2-,3/2-)
+
+################################################################################
 In dataset of 35CL: XR 34S(3HE,D)     XREF Tag=R
 
  35CL  L 5660      15                                  2                        
                                                        *                          <W> L=2 inconsistent with JPI=(5/2,7/2,9/2+) from Adopted Levels for E=5646
                                                                                          possible JPI from L=2 and target JPI=0+
                                                                                              3/2+,5/2+
+ 35CL  L 6377      2                                   2,3                      
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+                                                                                       @ 6380.1     8                     XREF=HLM(6400*)R(6377*)
+                                                                                         6427       2                     XREF=L(6429*)M(6400*)
+                                                                                      #@ 6429       3 (1/2+)              XREF=L(6429*)M(6400*)R(6377*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=R
  35CL  L 6491      2                                   2                        
                                                        *                          <W> L=2 inconsistent with JPI=(1/2,3/2,5/2+) from Adopted Levels for E=6492
                                                                                          possible JPI from L=2 and target JPI=0+
                                                                                              3/2+,5/2+
  35CL  L 7178      2                                   2                        
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
                                                                                        @ 7178.6     8 1/2+                XREF=OR(7178*)
+                                                                                      #  7185         5/2+                XREF=L(7180*)OX(7181*)
                                                                                       #@ 7213.7    25                     XREF=LP(7195*)R(7178*)X(7181*)Y(7250*)
-                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=R
+                                                                                      *** Check for possible missing and incorrect XREF assignment (# marked) of this tag=R
                                                        *                          <W> L=2 inconsistent with JPI=1/2+ from Adopted Levels for E=7178.6
                                                                                          possible JPI from L=2 and target JPI=0+
                                                                                              3/2+,5/2+
@@ -394,7 +430,8 @@ In dataset of 35CL: XU 35CL(P,P'G)     XREF Tag=U
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
                                                                                         JI=7/2- JF(1219.42)=1/2+
  35CL  L 3930      30 3/2                                                       
-                     *                                                            <W> JPI commented from Adopted but multiple matches found in Adopted:
+                     *                                                            <W> JPI here inconsistent with adopted
+                                                                                        Adopted JPI=3/2+ this JPI=3/2
 
 ################################################################################
 In dataset of 35CL: XW 36AR(D,3HE)     XREF Tag=W
@@ -420,19 +457,9 @@ In dataset of 35CL: XX 36AR(POL D,3HE)     XREF Tag=X
 
  35CL  L 6136      8  5/2+                             2        0.63        B   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #@ 6105.7    21 (3/2,5/2+)          XREF=LOW(6140*)X(6136*)
+                                                                                      #@ 6106.2    21 (3/2,5/2+)          XREF=L(6104*)OW(6140*)X(6136*)
                                                                                        @ 6141       4 5/2+                XREF=LW(6140*)X(6136*)
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=X
-
-################################################################################
-In dataset of 35CL: XY 37CL(P,T)     XREF Tag=Y
-
- 35CL  L 2650      40                                  2                        
-         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
-                                                                                      #  2645                             XREF=L(*)QR(2645*)
-                                                                                       @ 2645.66    8 7/2+                XREF=BFGHIL(*)MOR(2645*)TUY(2650*)ab
-                                                                                       @ 2693.99   20 3/2+                XREF=BL(2693?)MOQRSTUWX(2676)Y(2650*)a
-                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=Y
 
 ################################################################################
 In dataset of 35CL: Xa 40CA(MU-,NUANG)     XREF Tag=a
@@ -458,6 +485,18 @@ In dataset of 35CL: Xa 40CA(MU-,NUANG)     XREF Tag=a
  35CL  G 2693.6       0.2    LT                                                 
          *                                                                        <E> E(gamma) commented from Adopted but inconsistent
                                                                                         Adopted E=2693.7 2 this E=2693.6
+
+################################################################################
+In dataset of 35CL: Xb COULOMB EXCITATION     XREF Tag=b
+
+ 35CL  L 1220         1/2+             0.150 PS  20                             
+ 35CL  G 1220                   M1+E2    0.105  12                              
+                                         *                                        <E> MR commented from Adopted but inconsistent
+                                                                                        Adopted MR=0.093 10 this MR=0.105  1 2
+ 35CL  L 1762         5/2+             0.42 PS   4                              
+ 35CL  G 1762         100       M1+E2    -2.8    +28-8                          
+                                         *                                        <E> MR commented from Adopted but inconsistent
+                                                                                        Adopted MR=-2.85 10 this MR=-2.8 +28-8
 
 
 End of report
