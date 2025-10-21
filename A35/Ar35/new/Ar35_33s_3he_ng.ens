@@ -1,9 +1,8 @@
  35AR    33S(3HE,NG)                   1975DA14                  ENSDF    202509
- 35AR  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
- 35AR2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35AR  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$                                             
  35AR  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35AR2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35AR c  {+33}S+2p->{+35}Ar from J|p=3/2+ {+33}S ground state.                  
+ 35AR c  {+33}S+2p|){+35}Ar from J|p=3/2+ {+33}S ground state.                  
  35AR c  1975Da14: A {+3}He{++} beam was produced from the University of Alberta
  35AR2c  Van de Graaff accelerator. Targets were 150 |mg/cm{+2} layers of       
  35AR3c  Ag{-2}S (59% {+33}S) on silver backings. At E({+3}He)=6.375 MeV,       
@@ -15,7 +14,8 @@
  35AR9c  were detected using a 10% efficient Ge(Li) detector placed at 90|'.    
  35ARAc  Measured time-of-flight (TOF) spectra of neutrons, |s(E{-n},|q), E|g,  
  35ARBc  n|g-coin. Deduced Q values, levels, L{-2p}, J, |p, and isospin.        
- 35AR cL E$From 1975Da14 based on measured E|g, unless otherwise noted.         
+ 35AR cL E$From 1975Da14 based on measured E|g which however are not listed by  
+ 35AR2cL the authors, unless otherwise noted.                                   
  35AR cL L$the observed maximum at |q=0|' in |s(E{-n},|q) implies L=0.          
  35AR cG E$E|g values without uncertainties are deduced by evaluators from the  
  35AR2cG level-energy differences from 1975Da14.                                
@@ -27,8 +27,8 @@
  35AR  G 1749.8                                                                 
  35AR  L 2600.8    15                                                           
  35AR cL J$1975Da14 observed L({+3}He,n)=(0) for a 2.60-MeV level in {+35}Ar,   
- 35AR2cL implying the existence of a 3/2+ level; possibly the 3/2+ 2638-keV     
- 35AR3cL level in {+35}Ar.                                                      
+ 35AR2cL implying the existence of a 3/2+ level, which possibly corresponds to  
+ 35AR3cL the 3/2+ 2638-keV level in {+35}Ar.                                    
  35AR  G 2600.7                                                                 
  35AR  L 3195.8    11                                                           
  35AR cL E$deduced by evaluators from the unplaced 1446.0|g.                    
@@ -38,7 +38,8 @@
  35AR3cG {+24}Mg({+16}O,|an|g){+35}Ar (2007De14).                               
  35AR  L 5537      25 (3/2+)                           (0)                      
  35AR2 L ISPIN=3/2                                                              
+ 35AR cL E$from measured neutron energy corresponding to this level
  35AR cL J$(|p1d{-3/2}){+2}(|n1d{-3/2}){+1} configuration formed by the J|p=0+, 
- 35AR2cL T=1 (|p1d{-3/2}){+2} diproton transfer from {+3}He to {+33}S of        
+ 35AR2cL T=1 (|p1d{-3/2}){+2} di-proton transfer from {+3}He to {+33}S of        
  35AR3cL {+32}S~#(|n1d{-3/2}){+1} configuration. Tentative first T=3/2 state in 
  35AR4cL {+35}Ar.                                                               

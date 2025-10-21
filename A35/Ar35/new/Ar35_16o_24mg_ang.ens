@@ -1,6 +1,5 @@
  35AR    16O(24MG,ANG)                 2004EK01,2005EK01         ENSDF    202509
- 35AR  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
- 35AR2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35AR  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$                                             
  35AR  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35AR2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
  35AR dL E$Least-squares fitting is done by GLSC (version 21-Mar-2025)          
@@ -22,6 +21,7 @@
  35AR2cG respect to the beam axis. Expected values are R(|g(|q))|?1.2 for       
  35AR3cG stretched quadrupole (|DJ=2) and R(|g(|q))|?0.7 for stretched dipole   
  35AR4cG (|DJ=1) transitions.                                                   
+ 35AR cG E,RI$From 2004Ek01                                                     
  35AR cG E(A)$Tentative placements; later confirmed by                          
  35AR2cG {+24}Mg({+16}O,|an|g){+35}Ar (2007De14) and adopted by evaluators.     
  35AR cL E$From a least-squares fit to |g-ray energies.                         
@@ -34,7 +34,8 @@
  35AR  L 0.0          3/2+                                                      
  35AR  L 1750.8    3  5/2+                                                      
  35AR  G 1750.7    4  100    7                                                  
- 35AR cG $R(|g(|q))=1.41 {I14}                                                  
+ 35AR cG $R(|g(|q))=1.41 {I14} indicates |DJ=2, but |DJ=1 from level scheme is  
+ 35AR2cG inconsistent                                                           
  35AR  L 2603.2    4  (7/2+)                                                    
  35AR  G 852       1  4      2                                              A   
  35AR  G 2603.0    5  41     9                                                  
