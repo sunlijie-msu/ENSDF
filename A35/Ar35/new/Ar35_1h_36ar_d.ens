@@ -1,6 +1,5 @@
  35AR    1H(36AR,D)                    2010LE03,2011LE01         ENSDF    202509
- 35AR  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
- 35AR2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35AR  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$                                             
  35AR  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35AR2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
  35AR c  J|p=0+ for {+36}Ar ground state.                                       
@@ -18,10 +17,11 @@
  35ARcc  calculated spectroscopic factors.                                      
  35AR c  Theoretical studies involving {+1}H({+36}Ar,d){+35}Ar: 2011Nu01,       
  35AR2c  2023He15                                                               
- 35AR cL E(U)$Doublet in measured spectra                                       
- 35AR cL L,S$From 2011Le01 ADWA (CH89).                                         
+ 35AR cL E$From 2010Le03
+ 35AR cL L,S$From ADWA analysis of measured |s(|q) in 2011Le01                                         
  35AR cL S$LABEL=C{+2}S                                                         
  35AR dL S$already contain C{+2} based on comparisons with other data sets.     
+ 35AR cL E(U)$Doublet in measured spectra                                       
  35AR  L 0            3/2+                             2        2.3       2     
  35AR cL S$other: 1.6 {I1} from 2011Le01 ADWA (JLM+HF).                         
  35AR cL S$2.29 {I23} (CH89) and 1.60 {I16} (JLM+HF) from 2010Le03 ADWA.        
