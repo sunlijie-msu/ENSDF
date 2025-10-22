@@ -1,9 +1,20 @@
 Program for ENSDF check: output for Format Error and Warnings (version 09/24/2025)
-Generated at: Wed 10/22/2025 at 01:47:49 PM EDT
+Generated at: Wed 10/22/2025 at 05:14:58 PM EDT
 
 ****************************************
-     Total 4 errors 2 warnings
+     Total 48 errors 4 warnings
 ****************************************
+
+-----------------------------------------------------------------------------------------
+    In file: D:\X\ND\ENSDF\A35\Cl35\new\Cl35_27al_14n_apng.ens
+-----------------------------------------------------------------------------------------
+
+#########################################################################################
+### In dataset <35CL: 27AL(14N,APNG)>
+
+     16.  35CL cG M$Deduced from |g(|q) asymmetry in 2004Ek01 by the evaluators.???      
+                                                                                **         <E> Duplicate punctuation marks
+
 
 -----------------------------------------------------------------------------------------
     In file: D:\X\ND\ENSDF\A35\Cl35\new\Cl35_34s_p_g.ens
@@ -39,14 +50,93 @@ Generated at: Wed 10/22/2025 at 01:47:49 PM EDT
 #########################################################################################
 ### In dataset <35CL: ADOPTED LEVELS, GAMMAS>
 
-     16. 
+     20.  35CL5cG (1976ME12,1976Sp09,1981Bi05,2001Vo24); |g(|q) and |g(lin pol) in       
+                   ********                                                                <W> Recommended format=1976Me12
+     85.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    115.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    151.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    196.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    240.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    274.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    295.  35CL9cL {+34}S(p,|g) in 1968Az02 with delayed coincidence (obtained using      
+                                                                    *                      <E> Unbalanced bracket
+    337.  35CL4cG {+35}Cl(p,p'|g)???                                                     
+                                 **                                                        <E> Duplicate punctuation marks
+    338.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    352.  35CL  G 1272.76      3.7    LT [E2]                                            
+                  ********                                                                 <E> No final level found for this gamma=1272.76 
+                                                                                               Parent level:  3918.47 12, JPI=3/2+
+                                                                                               Calculated FL: 2645.69 13
+                                                                                                 the closest final level is 2645.66
+                                                                                                 but has been assigned to previous gamma=1272.76
+    357.  35CL  G 2695         19     5  [M1,E2]                                         
+                  *****                                                                    <W> No final level within 3*sigma=3.03
+                                                                                               Parent level:  3918.47 12, JPI=3/2+
+                                                                                               Calculated FL: 1223.4 10
+                                                                                               Possible matches within 5 keV:
+                                                                                                              1219.39 7, JPI=1/2+ (assigned by default)
+                                                                                               Level-difference=2698.97 14 (with recoil correction)
+    363.  35CL cG MR$-0.21 {I2} or +20 {I+10-5} from {+34}S(p,|g) (1976Sp09)???          
+                                                                            **             <E> Duplicate punctuation marks
+    365.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    390.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    413.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    435.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    451.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    462.  35CL cL J$|g-feeding in (p,|g)???                                              
+                                        **                                                 <E> Duplicate punctuation marks
+    468.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    486.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    527.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    536.  35CL cG MR$-0.08 {I14} for J=3/2; +0.36 {I15} for J=5/2 in (|a,p|g)???         
+                                                                             **            <E> Duplicate punctuation marks
+    537.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    551.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    562.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    572.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    583. 
          *                                                                                 <E> Illegal blank line in dataset
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                         **    *****  Composite Data Set Checks *****
-                                                                                         **<E> GAMMAS in DSID but no gamma
 
 #########################################################################################
-### In dataset <35CL: M,MR$Primarily from |g|g(|q)(A>
+### In dataset <35CL: RI$from (|a,p|g).>
 
 
 -----------------------------------------------------------------------------------------

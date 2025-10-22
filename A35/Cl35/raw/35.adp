@@ -1,5 +1,5 @@
 Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 10/07/2025)
-Generated at: Wed 10/22/2025 at 01:48:27 PM EDT                                 
+Generated at: Wed 10/22/2025 at 05:15:19 PM EDT                                 
                                                                                 
  35CL    ADOPTED LEVELS, GAMMAS                                  ENSDF    202509
  35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
@@ -16,6 +16,34 @@ Generated at: Wed 10/22/2025 at 01:48:27 PM EDT
  35CL cG RI$ Primarily from (p,|g), (|a,p|g) and (HI,xn|g). Weighted average    
  35CL2cG taken when available, unless otherwise noted.                          
  35CL cG RI(X)$Transitions to 4177 and 4173 not resolved (1976Sp08)             
+ 35CL cG M,MR$From |g|g(|q)(DCO) and |g|g(lin pol) in {+12}C({+28}Si,|ap|g)     
+ 35CL2cG (2007Ks01); |g|g(|q)(ADO) (2007De14), |g(|q) and |g(lin pol) (1976Va24)
+ 35CL3cG in {+24}Mg({+16}O,|ap|g); p|g(|q) (1970Ho09,1973Al22) and |g(lin pol)  
+ 35CL4cG (1974Lo17) in {+32}S(|a,p|g); |g(|q) and |g(lin pol) in {+34}S(p,|g)   
+ 35CL5cG (1976ME12,1976Sp09,1981Bi05,2001Vo24); |g(|q) and |g(lin pol) in       
+ 35CL6cG {+35}Cl(p,p'|g) (1970Ta02), and/or RUL where level T{-1/2} is measured,
+ 35CL7cG unless otherwise noted.                                                
+ 35CL cL E$ From E|g data when measured |g-ray energies are available. In other 
+ 35CL2cL cases weighted averages are taken of values available from different   
+ 35CL3cL reactions                                                              
+ 35CL cL J$ From analyzing power measurement or/and the comparison of the DWBA  
+ 35CL2cL prediction of cross section with experimental data in particle-transfer
+ 35CL3cL reactions or/and from angular distribution measurements or |g|g(DCO) of
+ 35CL4cL |g-rays or/and R-Matrix analysis of resonances.                        
+ 35CL cL J$ When assigning J|p to a level based on |g transitions from this     
+ 35CL2cL level to a level of known J|p, evaluators use the following rules: if  
+ 35CL3cL E|g<4 MeV, transitions are only considered to be E1,M1 or E2; if E|g>4 
+ 35CL4cL MeV, M2 and E3 are considered to be possible.                          
+ 35CL cL J(A)$ From angular distributions in (|a,p):resonance only.             
+ 35CL cL T$ T{-1/2} from measurements using DSAM (Doppler-Shift-Attenuation     
+ 35CL2cL -Method) and/or RDM (Recoil-Distance-Method) in (|a,p|g), (p,|g),      
+ 35CL3cL (HI,xn|g) and Coulomb excitation, delayed coincidence method in (p,|g) 
+ 35CL4cL and scattering of photons in (|g,|g). Weighted averages taken when     
+ 35CL5cL available. |G are primarily from |G{-p} in (p,p) resonances since when 
+ 35CL6cL |G{-|g} is negligible. 2020Ri06                                        
+ 35CL cL BAND(A)$Band based on 3163, 7/2- level. Configuration=f{-7/2}.         
+ 35CL cL BAND(B)$Band based on 7873, 13/2+ level.                               
+ 35CL d                                                                         
  35CL  XA35S B- DECAY (87.61 D)                                                 
  35CL  XB35AR EC DECAY (1.7755 S)                                               
  35CL  XC36K ECP DECAY (341 MS)                                                 
@@ -45,540 +73,571 @@ Generated at: Wed 10/22/2025 at 01:48:27 PM EDT
  35CL  Xa40CA(MU-,NUANG)                                                        
  35CL  XbRI$from (|a,p|g).                                                      
  35CL  Xc3117.4    20 100    8                                                  
- 35CL  XdM,MR$Primarily from |g|g(|q)(A                                         
- 35CL  XeE$ From E|g data when measured                                         
- 35CL  XfCOULOMB EXCITATION                                                     
- 35CL  L 0.0          3/2+                                                      
- 35CLX L XREF=ABCEFGHIKLMOQRSTUVWXYZaef                                         
- 35CL  L 1219.39   7  1/2+             134 FS    14                             
- 35CLX L XREF=BEHKLMOQRSTUVWXYaef                                               
+ 35CL  XdCOULOMB EXCITATION                                                     
+ 35CL PN                                                                     6  
+ 35CL  L 0.0          3/2+             STABLE                                   
+ 35CLX L XREF=ABCEFGHIKLMOQRSTUVWXYZad                                          
+ 35CL2 L MOMM1=+0.821870 2 (2013Ja17,2019StZZ)                                  
+ 35CL2 L MOME2=-0.0817 8 (2008Py02,2021StZZ)                                    
+ 35CL cL J$L=2 from 0+ in (d,n), (n,d), ({+3}He,d), (d,{+3}He), and (pol        
+ 35CL2cL d,{+3}He) and L-1/2 transfer from analyzing power. Spin=3/2 from       
+ 35CL3cL microwave spectroscopy and atomic beam methods (1948To10,1949Da14).    
+ 35CL cL MOMM1$Nuclear Magnetic Resonance (2013Ja17).                           
+ 35CL cL MOME2$Atomic beam magnetic resonance (2008Py02). Others: -0.08249 {I2} 
+ 35CL2cL (1972St38), -0.076 {I5} (1986El09), -0.817 {I8} (1993Su36), 0.0819     
+ 35CL3cL {I11} (2000Ha64), 0.0850 {I11} (2004Al08).                             
+ 35CL cL $Evaluated rms nuclear charge radius R=3.365 fm {I19} (2013An02).      
+ 35CL  L 1219.39   7  1/2+             136 FS    16                             
+ 35CLX L XREF=BEHKLMOQRSTUVWXYad                                                
  35CL cL T$unweighted average of 201 fs {I28} from {+2}H({+34}S,n|g), 1.5E2 fs  
  35CL2cL {I+7-6} from {+32}S(|a,p|g), 72.8 fs {I97} from {+34}S(p,|g), 90 fs    
  35CL3cL {I+21-14} from {+35}Cl(|g,|g'), 139 fs {I56} from {+35}Cl(n,n'|g), 150 
- 35CL4cL fs {I+42-28} from {+35}Cl(p,p'|g), 119 fs {I14} from E$ From E|g data  
- 35CL5cL when measured, and 150 fs {I20} from Coulomb excitation                
- 35CL cL E$weighted average of 1219.2 {I2} from {+35}Ar |e decay, 1219.0 {I10}  
- 35CL2cL from {+24}Mg({+16}O,|ap|g), 1217.4 {I26} from {+32}S(|a,p), 1219.5     
- 35CL3cL {I10} from {+32}S(|a,p|g), 1219.39 {I7} from {+34}S(p,|g), 1220 {I10}  
- 35CL4cL from {+34}S({+3}He,d), 1219.42 {I10} from {+35}Cl(p,p'|g), 1220 {I20}  
- 35CL5cL from {+36}Ar(d,{+3}He), 1213 {I4} from {+36}Ar(pol d,{+3}He), 1220     
- 35CL6cL {I40} from {+37}Cl(p,t), and 1219.39 {I7} from E$ From E|g data when   
- 35CL7cL measured                                                               
- 35CL  G 1219.4    1 100       M1+E2     0.093   10                             
- 35CL cG E$weighted average of 1219.3 {I2} from {+35}Ar |e decay, 1219.4 {I1}   
- 35CL2cG from {+35}Cl(p,p'|g), and 1219.4 {I1} from E$ From E|g data when       
- 35CL3cG measured. Other: 1219.5 {I10} from {+32}S(|a,p|g)                      
- 35CL cG MR$from E$ From E|g data when measured                                 
- 35CL  L 1763.18   10 5/2+             377 FS    30                             
- 35CLX L XREF=BEFGHIKLMOQRSTUVWX(1785)Y(1750)Zaef                               
+ 35CL4cL fs {I+42-28} from {+35}Cl(p,p'|g), and 150 fs {I20} from Coulomb       
+ 35CL5cL excitation                                                             
+ 35CL cL E$weighted average of 1219.2 {I2} from {+35}Ar |e decay, 1219.39 {I7}  
+ 35CL2cL from {+34}S(p,|g), and 1219.42 {I10} from {+35}Cl(p,p'|g). Others:     
+ 35CL3cL 1219.0 {I10} from {+24}Mg({+16}O,|ap|g), 1217.4 {I26} from             
+ 35CL4cL {+32}S(|a,p), 1219.5 {I10} from {+32}S(|a,p|g), 1220 {I10} from        
+ 35CL5cL {+34}S({+3}He,d), 1220 {I20} from {+36}Ar(d,{+3}He), 1213 {I4} from    
+ 35CL6cL {+36}Ar(pol d,{+3}He), and 1220 {I40} from {+37}Cl(p,t)                
+ 35CL cL J$L=0 from 0+ in (d,n), (n,d), ({+3}He,d), (d,{+3}He), and (pol        
+ 35CL2cL d,{+3}He).                                                             
+ 35CL cL T$lifetime |t = 0.172 ps {I20}: weighted average of |t = 0.29 ps {I4}  
+ 35CL2cL from {+2}H({+34}S,n|g) in 1973Wa10 with DSAM, |t = 0.21 ps {I+10-8}    
+ 35CL3cL from {+32}S(|a,p|g) in 1969In04 with DSAM, |t = 80 fs {I40} from       
+ 35CL4cL {+34}S(p,|g) in 1971Wi13 with DSAM, |t = 175 fs {I20} from {+34}S(p,|g)
+ 35CL5cL in 1972Hu11 with DSAM, |t = 150 fs {I20} from {+34}S(p,|g) in 1973Fa07 
+ 35CL6cL with DSAM, |t = 145 fs {I30} from {+34}S(p,|g) in 1976Me12 with DSAM,  
+ 35CL7cL |t = 0.13 ps {I+3-2} from {+35}Cl(|g,|g') in 1966Ho02 with resonance   
+ 35CL8cL fluorescence, |t = 200 fs {I80} from {+35}Cl(n,n'|g) in 1989Ge09 with  
+ 35CL9cL DSAM, |t = 0.215 ps {I75} from {+35}Cl(p,p'|g) in 1972Va06 with DSAM,  
+ 35CLAcL |t = 0.21 ps {I+6-4} from {+35}Cl(p,p'|g) in 1972Br45 with DSAM, |t =  
+ 35CLBcL 0.27 ps {I+19-10} from {+35}Cl(p,p'|g) in 1969Du08 with DSAM, |t=0.16  
+ 35CLCcL ps {I5} from Coulomb excitation in 1969Ha17 with DSAM, and |t=0.230 ps 
+ 35CLDcL {I25} from Coulomb excitation in 1977Sc36 with DSAM.                   
+ 35CL  G 1219.4    1 100       M1+E2     0.105  1 2                             
+ 35CL cG E$weighted average of 1219.3 {I2} from {+35}Ar |e decay and 1219.4 {I1}
+ 35CL2cG from {+35}Cl(p,p'|g). Other: 1219.5 {I10} from {+32}S(|a,p|g)          
+ 35CL cG MR$from Coulomb excitation                                             
+ 35CL cG M,MR$|DJ=1 from {+35}Cl(p,p'|g), E1+M2 ruled out by RUL. |d from       
+ 35CL2cG B(E2)|_=0.00152 {I14} measured in Coulomb excitation and adopted       
+ 35CL3cG lifetime |t = 0.172 ps {I20}.                                          
+ 35CL  L 1763.18   10 5/2+             3.9E2 FS  4                              
+ 35CLX L XREF=BEFGHIKLMOQRSTUVWX(1785)Y(1750)Zad                                
+ 35CL2 L ISPIN=1/2                                                              
  35CL cL T$weighted average of 374 fs {I49} from {+2}H({+34}S,n|g), 3.8E2 fs    
- 35CL2cL {I11} from {+32}S(|a,p|g), 347 fs {I63} from {+34}S(p,|g), 3.6E2 fs    
- 35CL3cL {I3} from E$ From E|g data when measured, and 4.2E2 fs {I4} from       
- 35CL4cL Coulomb excitation. Others: 4.2E2 fs {I15} from {+35}Cl(|g,|g') and    
- 35CL5cL 4.3E2 fs {I20} from {+35}Cl(p,p'|g)                                    
+ 35CL2cL {I11} from {+32}S(|a,p|g), 347 fs {I63} from {+34}S(p,|g), 4.2E2 fs    
+ 35CL3cL {I15} from {+35}Cl(|g,|g'), and 4.2E2 fs {I4} from Coulomb excitation. 
+ 35CL4cL Other: 4.3E2 fs {I20} from {+35}Cl(p,p'|g)                             
  35CL cL E$weighted average of 1763.1 {I2} from {+35}Ar |e decay, 1763.0 {I6}   
  35CL2cL from {+12}C({+28}Si,|ap|g), 1762.95 {I17} from {+16}O({+24}Mg,|ap|g),  
  35CL3cL 1763.3 {I2} from {+24}Mg({+16}O,|ap|g), 1763.19 {I10} from             
  35CL4cL {+27}Al({+14}N,|apn|g), 1760.1 {I24} from {+32}S(|a,p), 1763.3 {I6}    
  35CL5cL from {+32}S(|a,p|g), 1763.0 {I5} from {+34}S(p,|g), 1758 {I10} from    
  35CL6cL {+34}S({+3}He,d), 1763.26 {I10} from {+35}Cl(p,p'|g), 1785 {I50} from  
- 35CL7cL {+36}Ar(pol d,{+3}He), 1750 {I40} from {+37}Cl(p,t), and 1763.18 {I10} 
- 35CL8cL from E$ From E|g data when measured                                    
+ 35CL7cL {+36}Ar(pol d,{+3}He), and 1750 {I40} from {+37}Cl(p,t)                
+ 35CL cL J$L=2 from 0+ in (d,n); spin=5/2 from |g(|q) in {+32}S(|a,p|g),        
+ 35CL2cL {+34}S(p,|g), and {+35}Cl(p,p'|g).                                     
+ 35CL cL T$lifetime |t = 0.52 ps {I5}: weighted average of |t = 0.54 ps {I7}    
+ 35CL2cL from {+2}H({+34}S,n|g) in 1973Wa10 with DSAM, |t = 0.55 ps {I15} from  
+ 35CL3cL {+32}S(|a,p|g) in 1969In04 with DSAM, |t = 0.50 ps {I10} from          
+ 35CL4cL {+34}S(p,|g) in 1972Hu11 with DSAM, |t = 0.40 ps {I14} from            
+ 35CL5cL {+34}S(p,|g) in 1973Fa07 with DSAM, |t = 0.53 ps {I9} from {+34}S(p,|g)
+ 35CL6cL in 1976Me12 with DSAM, |t = 0.60 ps {I21} from {+35}Cl(|g,|g') in      
+ 35CL7cL 1962Bo17 with resonance fluorescence; |t = 0.205 ps {I75} from         
+ 35CL8cL {+35}Cl(p,p'|g) in 1972Va06 with DSAM, |t = 0.49 ps {I+9-6} from       
+ 35CL9cL {+35}Cl(p,p'|g) in 1972Br45 with DSAM, |t = 1.15 ps {I+45-63} from     
+ 35CLAcL {+35}Cl(p,p'|g) in 1969Du08 with DSAM, |t = 0.57 ps {I7} from Coulomb  
+ 35CLBcL excitation in 1969Ha17 with DSAM, and |t = 0.63 ps {I5} from Coulomb   
+ 35CLCcL excitation in 1977Sc36 with DSAM.                                      
  35CL  G 543.6       0.2     LT [E2]                                            
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
+ 35CL cG E,RI$from (p,|g)                                                       
+ 35CL cG RI$from {+34}S(p,|g). Other: <0.5 from {+32}S(|a,p|g).                 
  35CL  G 1763.16   10 100      M1+E2     3.0     1                              
  35CL cG E$weighted average of 1763.0 {I2} from {+35}Ar |e decay, 1763.1 {I2}   
  35CL2cG from {+16}O({+24}Mg,|ap|g), 1763.3 {I2} from {+24}Mg({+16}O,|ap|g),    
- 35CL3cG 1763.15 {I10} from {+27}Al({+14}N,|apn|g), 1763.2 {I1} from            
- 35CL4cG {+35}Cl(p,p'|g), and 1763.16 {I10} from E$ From E|g data when measured.
- 35CL5cG Other: 1763.2 {I6} from {+32}S(|a,p|g)                                 
- 35CL cG MR$from (|a,p|g)                                                       
+ 35CL3cG 1763.15 {I10} from {+27}Al({+14}N,|apn|g), and 1763.2 {I1} from        
+ 35CL4cG {+35}Cl(p,p'|g). Other: 1763.2 {I6} from {+32}S(|a,p|g)                
+ 35CL cG M$from {+35}Cl(p,p'|g) and {+12}C({+28}Si,|ap|g).                      
+ 35CL cG MR$weighted average of -3.0 {I1} from (|a,p|g), -2.66 {I12} from       
+ 35CL2cG (p,p'|g), -2.8 {I+28-8} from Coulomb excitation, -2.6 {I4} from        
+ 35CL3cG {+24}Mg({+16}O,|ap|g).                                                 
  35CL  L 2645                                                                   
  35CLX L XREF=L(*)QR(2645*)                                                     
- 35CL  L 2645.66   8  (5/2,7/2)        0.158 PS  21                             
- 35CLX L XREF=BFGHIL(*)MOR(2645*)TUY(2650*)aef                                  
+ 35CL  L 2645.66   8  7/2+             0.157 PS  21                             
+ 35CLX L XREF=BFGHIL(*)MOR(2645*)TUY(2650*)ad                                   
  35CL cL T$weighted average of 0.21 ps {I6} from {+32}S(|a,p|g), 0.146 ps {I21} 
  35CL2cL from {+34}S(p,|g), 0.187 ps {I62} from {+35}Cl(n,n'|g), 0.150 ps {I35} 
- 35CL3cL from {+35}Cl(p,p'|g), 0.159 ps {I21} from E$ From E|g data when        
- 35CL4cL measured, and 0.18 ps {I6} from Coulomb excitation                     
+ 35CL3cL from {+35}Cl(p,p'|g), and 0.18 ps {I6} from Coulomb excitation         
  35CL cL E$weighted average of 2645.81 {I18} from {+16}O({+24}Mg,|ap|g), 2645.8 
  35CL2cL {I3} from {+24}Mg({+16}O,|ap|g), 2645.45 {I12} from                    
- 35CL3cL {+27}Al({+14}N,|apn|g), 2645.70 {I8} from {+34}S(p,|g), 2645.74 {I17}  
- 35CL4cL from {+35}Cl(p,p'|g), and 2645.66 {I8} from E$ From E|g data when      
- 35CL5cL measured. Others: 2645.1 {I10} from {+35}Ar |e decay, 2645.8 {I6} from 
- 35CL6cL {+12}C({+28}Si,|ap|g), and 2645.8 {I8} from {+32}S(|a,p|g)             
- 35CL  G 882.80    10 11.4   8 M1+E2     +0.25   5                              
- 35CL cG E$weighted average of 882.9 {I1} from {+16}O({+24}Mg,|ap|g), 882.32    
- 35CL2cG {I35} from {+27}Al({+14}N,|apn|g), 882.3 {I3} from {+35}Cl(p,p'|g), and
- 35CL3cG 882.80 {I11} from E$ From E|g data when measured. Others: 882.7 {I5}   
- 35CL4cG from {+24}Mg({+16}O,|ap|g) and 882.4 {I10} from {+32}S(|a,p|g)         
+ 35CL3cL {+27}Al({+14}N,|apn|g), 2645.70 {I8} from {+34}S(p,|g), and 2645.74    
+ 35CL4cL {I17} from {+35}Cl(p,p'|g). Others: 2645.1 {I10} from {+35}Ar |e decay,
+ 35CL5cL 2645.8 {I6} from {+12}C({+28}Si,|ap|g), and 2645.8 {I8} from           
+ 35CL6cL {+32}S(|a,p|g)                                                         
+ 35CL cL J$spin=7/2 from |g(|q) in {+32}S(|a,p|g); parity from 882|g, M1+E2 to  
+ 35CL2cL 5/2+, 1763 level in {+32}S(|a,p|g).                                    
+ 35CL cL T$lifetime |t = 0.229 ps {I30}: weighted average of |t = 0.30 ps {I9}  
+ 35CL2cL from {+32}S(|a,p|g) in 1969In04 with DSAM, |t = 0.255 ps {I65} in      
+ 35CL3cL {+34}S(p,|g) from 1972Hu11 with DSAM, |t = 0.200 ps {I30} in           
+ 35CL4cL {+34}S(p,|g) from 1976Me12 with DSAM, |t = 0.27 ps {I9} in             
+ 35CL5cL {+35}Cl(n,n'|g) from 1989Ge09 with DSAM, |t = 0.185 ps {I50} in        
+ 35CL6cL {+35}Cl(p,p'|g) from 1972Va06 with DSAM, |t = 0.26 ps {I6} in          
+ 35CL7cL {+35}Cl(p,p'|g) from 1972Br45 with DSAM, |t = 0.35 ps {I+10-7} in      
+ 35CL8cL {+35}Cl(p,p'|g) from 1969Du08 with DSAM, and |t = 0.26 ps {I9} in      
+ 35CL9cL Coulomb excitation from 1977Sc36 with DSAM. Other: |t < 1.3 ps in      
+ 35CLAcL {+12}C({+28}Si,|ap|g) from 2007Ks01 with DSAM.                         
+ 35CL  G 882.80    11 11.4   10 M1+E2    +0.25   5                              
+ 35CL cG E$weighted average of 882.9 {I1} from {+16}O({+24}Mg,|ap|g), 882.7 {I5}
+ 35CL2cG from {+24}Mg({+16}O,|ap|g), 882.32 {I35} from {+27}Al({+14}N,|apn|g),  
+ 35CL3cG 882.4 {I10} from {+32}S(|a,p|g), and 882.3 {I3} from {+35}Cl(p,p'|g)   
  35CL cG RI$unweighted average of 8.7 {I6} from {+12}C({+28}Si,|ap|g), 15.2     
  35CL2cG {I13} from {+16}O({+24}Mg,|ap|g), 11.08 {I28} from                     
  35CL3cG {+24}Mg({+16}O,|ap|g), 11.1 {I22} from {+32}S(|a,p|g), 9.5 {I11} from  
- 35CL4cG {+34}S(p,|g), 13 {I5} from {+35}Cl(p,p'|g), and 11.4 {I10} from E$ From
- 35CL5cG E|g data when measured                                                 
- 35CL cG MR$from (|a,p|g)                                                       
- 35CL  G 1426.28     1       LT [M3]                                            
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,p'|g)                                                       
+ 35CL4cG {+34}S(p,|g), and 13 {I5} from {+35}Cl(p,p'|g)                         
+ 35CL cG M$D+Q from |g(|q) in (|a,p|g); E1+M2 ruled out by RUL.                 
+ 35CL cG MR$weighted average of +0.25 {I5} from (|a,p|g) and +0.17 {I5} from    
+ 35CL2cG (p,p'|g).                                                              
+ 35CL  G 1426.28     1.2     LT [M3]                                            
+ 35CL cG E$from (p,|g)                                                          
+ 35CL cG RI$from (|a,p|g).                                                      
  35CL  G 2645.70   20 100.0  11 E2                                              
  35CL cG E$weighted average of 2645.5 {I4} from {+16}O({+24}Mg,|ap|g), 2645.8   
  35CL2cG {I5} from {+24}Mg({+16}O,|ap|g), 2645.79 {I30} from                    
- 35CL3cG {+27}Al({+14}N,|apn|g), 2645.7 {I2} from {+35}Cl(p,p'|g), and 2645.70  
- 35CL4cG {I20} from E$ From E|g data when measured. Other: 2646.2 {I15} from    
- 35CL5cG {+32}S(|a,p|g)                                                         
+ 35CL3cG {+27}Al({+14}N,|apn|g), and 2645.7 {I2} from {+35}Cl(p,p'|g). Other:   
+ 35CL4cG 2646.2 {I15} from {+32}S(|a,p|g)                                       
  35CL cG RI$weighted average of 100.0 {I31} from {+16}O({+24}Mg,|ap|g), 100.0   
  35CL2cG {I22} from {+24}Mg({+16}O,|ap|g), 100.0 {I22} from {+32}S(|a,p|g),     
- 35CL3cG 100.0 {I11} from {+34}S(p,|g), 100.0 {I20} from {+35}Cl(p,p'|g), and   
- 35CL4cG 100.0 {I11} from E$ From E|g data when measured. Other: 100 {I6} from  
- 35CL5cG {+12}C({+28}Si,|ap|g)                                                  
- 35CL cG M$from E$ From E|g data when measured                                  
- 35CL  L 2694.00   20 3/2+             36 FS     6                              
- 35CLX L XREF=BL(2693?)MOQRSTUWX(2676)Y(2650*)ae                                
+ 35CL3cG 100.0 {I11} from {+34}S(p,|g), and 100.0 {I20} from {+35}Cl(p,p'|g).   
+ 35CL4cG Other: 100 {I6} from {+12}C({+28}Si,|ap|g)                             
+ 35CL cG M$from |g|g(|q)(DCO) and |g|g(lin pol) in {+12}C({+28}Si,|ap|g); |g(|q)
+ 35CL2cG and |g(lin pol) in {+35}Cl(p,p'|g).                                    
+ 35CL  L 2693.99   20 3/2+             37 FS     8                              
+ 35CLX L XREF=BL(2693?)MOQRSTUWX(2676)Y(2650*)a                                 
  35CL cL T$unweighted average of 49 fs {I21} from {+32}S(|a,p|g), 13.9 fs {I21} 
- 35CL2cL from {+34}S(p,|g), 43 fs {I6} from {+35}Cl(n,n'|g), 43 fs {I11} from   
- 35CL3cL {+35}Cl(p,p'|g), and 32 fs {I6} from E$ From E|g data when measured    
- 35CL cL E$weighted average of 2693.8 {I2} from {+35}Ar |e decay, 2693.9 {I3}   
- 35CL2cL from {+34}S(p,|g), 2694.50 {I28} from {+35}Cl(p,p'|g), and 2693.99     
- 35CL3cL {I20} from E$ From E|g data when measured. Others: 2693.6 {I13} from   
- 35CL4cL {+32}S(|a,p|g), 2686 {I10} from {+34}S({+3}He,d), 2700 {I20} from      
- 35CL5cL {+36}Ar(d,{+3}He), and 2676 {I7} from {+36}Ar(pol d,{+3}He)            
+ 35CL2cL from {+34}S(p,|g), 43 fs {I6} from {+35}Cl(n,n'|g), and 43 fs {I11}    
+ 35CL3cL from {+35}Cl(p,p'|g)                                                   
+ 35CL cL E$weighted average of 2693.8 {I2} from {+35}Ar |e decay, 2693.6 {I13}  
+ 35CL2cL from {+32}S(|a,p|g), 2693.9 {I3} from {+34}S(p,|g), 2686 {I10} from    
+ 35CL3cL {+34}S({+3}He,d), 2694.50 {I28} from {+35}Cl(p,p'|g), 2700 {I20} from  
+ 35CL4cL {+36}Ar(d,{+3}He), and 2676 {I7} from {+36}Ar(pol d,{+3}He)            
+ 35CL cL J$L=2 from 0+ in ({+3}He,d) and (d,{+3}He). Spin=3/2 from |g(|q) in    
+ 35CL2cL (p,p'|g).                                                              
+ 35CL cL T$lifetime |t = 46 fs {I9}: unweighted average of |t = 70 fs {I30} from
+ 35CL2cL {+32}S(|a,p|g) in 1972Br33 with DSAM, |t = 21 fs {I3} from {+34}S(p,|g)
+ 35CL3cL in 1972Hu11 with DSAM, |t = 19 fs {I4} from {+34}S(p,|g) in 1973Fa07   
+ 35CL4cL with DSAM, |t = 20 fs {I4} from {+34}S(p,|g) in 1976Me12 with DSAM, |t 
+ 35CL5cL = 65 fs {I20} from {+35}Cl(p,p'|g) in 1972Va06 with DSAM, |t = 62 fs   
+ 35CL6cL {I16} from {+35}Cl(p,p'|g) in 1969Du08 with DSAM, and |t = 62 fs {I8}  
+ 35CL7cL from {+35}Cl(n,n'|g) in 1989Ge09 with DSAM. Others: |t < 30 fs in      
+ 35CL8cL {+32}S(|a,p|g) from 1969In04 with DSAM, |t = 115 fs {I+95-59} using    
+ 35CL9cL 931|g from {+35}Cl(p,p'|g) in 1969Du08, but is considered less reliable
+ 35CLAcL by authors, |t < 120 fs from {+35}Cl(p,p'|g) in 1972Br45 with DSAM, |t 
+ 35CLBcL = 11 fs {I7} from {+35}Cl(p,p'|g) in 1971Ca40 with DSAM is considered  
+ 35CLCcL an outlier.                                                            
  35CL  G 930.9     2 16.3    13 M1+E2    +0.09   3                              
- 35CL cG E$weighted average of 930.7 {I2} from {+35}Ar |e decay, 931.3 {I3} from
- 35CL2cG {+35}Cl(p,p'|g), and 930.9 {I2} from E$ From E|g data when measured.   
- 35CL3cG Other: 930.5 {I15} from {+32}S(|a,p|g)                                 
+ 35CL cG E$weighted average of 930.7 {I2} from {+35}Ar |e decay, 930.5 {I15}    
+ 35CL2cG from {+32}S(|a,p|g), and 931.3 {I3} from {+35}Cl(p,p'|g)               
  35CL cG RI$weighted average of 14.3 {I18} from {+35}Ar |e decay, 18.2 {I26}    
- 35CL2cG from {+32}S(|a,p|g), 16.3 {I13} from {+34}S(p,|g), 18.6 {I25} from     
- 35CL3cG {+35}Cl(p,p'|g), and 16.3 {I13} from E$ From E|g data when measured    
- 35CL cG MR$from E$ From E|g data when measured                                 
- 35CL  G 1474.8    3 9.5     10 M1+E2    -0.63   21                             
- 35CL cG E$weighted average of 1474.8 {I3} from {+35}Ar |e decay and 1474.8 {I3}
- 35CL2cG from E$ From E|g data when measured. Other: 1475 {I2} from             
+ 35CL2cG from {+32}S(|a,p|g), 16.3 {I13} from {+34}S(p,|g), and 18.6 {I25} from 
  35CL3cG {+35}Cl(p,p'|g)                                                        
+ 35CL cG M,MR$from |g(|q) and |g(lin pol) in (p,p'|g).                          
+ 35CL  G 1474.8    3 9.5     10 M1+E2    -0.63   21                             
+ 35CL cG E$weighted average of 1474.8 {I3} from {+35}Ar |e decay and 1475 {I2}  
+ 35CL2cG from {+35}Cl(p,p'|g)                                                   
  35CL cG RI$weighted average of 9.3 {I10} from {+35}Ar |e decay, 11.7 {I26} from
- 35CL2cG {+32}S(|a,p|g), 9.5 {I13} from {+34}S(p,|g), 8.3 {I25} from            
- 35CL3cG {+35}Cl(p,p'|g), and 9.5 {I10} from E$ From E|g data when measured     
- 35CL cG MR$from E$ From E|g data when measured                                 
+ 35CL2cG {+32}S(|a,p|g), 9.5 {I13} from {+34}S(p,|g), and 8.3 {I25} from        
+ 35CL3cG {+35}Cl(p,p'|g)                                                        
+ 35CL cG M,MR$from |g(|q) and |g(lin pol) in (p,p'|g).                          
  35CL  G 2693.7    2 100.0   17 M1+E2    +0.26   2                              
- 35CL cG E$weighted average of 2693.7 {I2} from {+35}Ar |e decay, 2694.1 {I6}   
- 35CL2cG from {+35}Cl(p,p'|g), and 2693.7 {I2} from E$ From E|g data when       
- 35CL3cG measured. Other: 2693.2 {I20} from {+32}S(|a,p|g)                      
+ 35CL cG E$weighted average of 2693.7 {I2} from {+35}Ar |e decay and 2694.1 {I6}
+ 35CL2cG from {+35}Cl(p,p'|g). Other: 2693.2 {I20} from {+32}S(|a,p|g)          
  35CL cG RI$weighted average of 100.0 {I17} from {+35}Ar |e decay, 100 {I4} from
- 35CL2cG {+32}S(|a,p|g), 100.0 {I25} from {+34}S(p,|g), 100.0 {I30} from        
- 35CL3cG {+35}Cl(p,p'|g), and 100.0 {I17} from E$ From E|g data when measured   
- 35CL cG MR$from (p,p'|g)                                                       
- 35CL  L 3002.64   8  5/2              27 FS     7                              
- 35CLX L XREF=BFHILMOQRSTUWXYe                                                  
+ 35CL2cG {+32}S(|a,p|g), 100.0 {I25} from {+34}S(p,|g), and 100.0 {I30} from    
+ 35CL3cG {+35}Cl(p,p'|g)                                                        
+ 35CL cG M$from |g(|q) and |g(lin pol) in (p,p'|g).                             
+ 35CL cG MR$weighted average of +0.17 {I8} from (|a,p|g) and +0.25 {I2} from    
+ 35CL2cG (p,p'|g).                                                              
+ 35CL  L 3002.64   9  5/2+             28 FS     9                              
+ 35CLX L XREF=BFHIL(*)MORSTUWXY(3000*)                                          
  35CL cL T$unweighted average of 33 fs {I6} from {+32}S(|a,p|g), 11.1 fs {I21}  
- 35CL2cL from {+34}S(p,|g), 50 fs {I9} from {+35}Cl(n,n'|g), 19 fs {I9} from    
- 35CL3cL {+35}Cl(p,p'|g), and 22 fs {I6} from E$ From E|g data when measured    
+ 35CL2cL from {+34}S(p,|g), 50 fs {I9} from {+35}Cl(n,n'|g), and 19 fs {I9} from
+ 35CL3cL {+35}Cl(p,p'|g)                                                        
  35CL cL E$weighted average of 3002.3 {I3} from {+35}Ar |e decay, 3003.1 {I8}   
  35CL2cL from {+12}C({+28}Si,|ap|g), 3002.0 {I10} from {+24}Mg({+16}O,|ap|g),   
- 35CL3cL 3001.98 {I22} from {+27}Al({+14}N,|apn|g), 3001.5 {I31} from           
- 35CL4cL {+32}S(|a,p), 3002.6 {I15} from {+32}S(|a,p|g), 3002.75 {I8} from      
- 35CL5cL {+34}S(p,|g), 3002 {I10} from {+34}S({+3}He,d), 3002.6 {I5} from       
- 35CL6cL {+35}Cl(p,p'|g), 3000 {I20} from {+36}Ar(d,{+3}He), 3002 {I6} from     
- 35CL7cL {+36}Ar(pol d,{+3}He), 3000 {I40} from {+37}Cl(p,t), and 3002.64 {I9}  
- 35CL8cL from E$ From E|g data when measured                                    
- 35CL  G 309.0       5       LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (|a,p|g)                                                       
+ 35CL3cL 3001.98 {I22} from {+27}Al({+14}N,|apn|g), 3002.6 {I15} from           
+ 35CL4cL {+32}S(|a,p|g), 3002.75 {I8} from {+34}S(p,|g), 3002 {I10} from        
+ 35CL5cL {+34}S({+3}He,d), 3002.6 {I5} from {+35}Cl(p,p'|g), 3000 {I20} from    
+ 35CL6cL {+36}Ar(d,{+3}He), and 3002 {I6} from {+36}Ar(pol d,{+3}He)            
+ 35CL cL J$L=2 from 0+ in (pol d, {+3}He) and L+1/2 transfer from analyzing     
+ 35CL2cL power. Discrepancy: L=3 from 0+ in (d,n).                              
+ 35CL cL T$lifetime |t = 32 fs {I8}: weighted average of |t = 48 fs {I9} from   
+ 35CL2cL {+32}S(|a,p|g) in 1972Br33 with DSAM, |t = 22 fs {I3} from {+34}S(p,|g)
+ 35CL3cL in 1972Hu11 with DSAM, |t = 14 fs {I2} from {+34}S(p,|g) in 1973Fa07   
+ 35CL4cL with DSAM, |t = 16 fs {I4} from {+34}S(p,|g) in 1976Me12 with DSAM, |t 
+ 35CL5cL = 72 fs {I12} from {+35}Cl(n,n'|g) in 1989Ge09 with DSAM, |t = 18 fs   
+ 35CL6cL {I+26-15} from {+35}Cl(p,p'|g) in 1972Va06 with DSAM, and |t = 31 fs   
+ 35CL7cL {I13} from {+35}Cl(p,p'|g) in 1969Du08 with DSAM. Others: |t < 50 fs in
+ 35CL8cL {+32}S(|a,p|g) from 1969In04 with DSAM, and |t < 80 fs in              
+ 35CL9cL {+35}Cl(p,p'|g) from 1972Br45 with DSAM.                               
+ 35CL  G 309.0       5       LT [M1,E2]                                         
  35CL  G 356.8       1       LT [M1,E2]                                         
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (|a,p|g)                                                       
  35CL  G 1239.7      2.2     11 [M1,E2]                                         
- 35CL cG RI$weighted average of 2.2 {I11} from {+35}Cl(p,p'|g) and 2.2 {I11}    
- 35CL2cG from E$ From E|g data when measured                                    
- 35CL cG E$from E$ From E|g data when measured                                  
+ 35CL cG E$from (p,|g)                                                          
+ 35CL cG RI$from (p,p'|g).                                                      
  35CL  G 1783.31     3.3     11 [E2]                                            
- 35CL cG RI$weighted average of 3.3 {I11} from {+35}Cl(p,p'|g) and 3.3 {I11}    
- 35CL2cG from E$ From E|g data when measured                                    
- 35CL cG E$from E$ From E|g data when measured                                  
+ 35CL cG E$from (p,|g)                                                          
+ 35CL cG RI$from (p,p'|g).                                                      
  35CL  G 3002.3    4 100.0   10 M1+E2    -0.22   1                              
  35CL cG E$weighted average of 3002.1 {I4} from {+35}Ar |e decay, 3002.5 {I15}  
- 35CL2cG from {+32}S(|a,p|g), 3002.5 {I5} from {+35}Cl(p,p'|g), and 3002.3 {I4} 
- 35CL3cG from E$ From E|g data when measured                                    
- 35CL cG RI$weighted average of 100.0 {I19} from {+35}Ar |e decay, 100.0 {I10}  
- 35CL2cG from {+35}Cl(p,p'|g), and 100.0 {I10} from E$ From E|g data when       
- 35CL3cG measured                                                               
+ 35CL2cG from {+32}S(|a,p|g), and 3002.5 {I5} from {+35}Cl(p,p'|g)              
+ 35CL cG RI$weighted average of 100.0 {I19} from {+35}Ar |e decay and 100.0     
+ 35CL2cG {I10} from {+35}Cl(p,p'|g)                                             
  35CL cG MR$from (p,|g)                                                         
- 35CL  L 3162.87   7  7/2-             30.6 PS   7                          A   
- 35CLX L XREF=FGHIKLMOQRTUWXe                                                   
+ 35CL cG M$from |g(|q) and |g(lin pol) in {+35}Cl(p,p'|g).                      
+ 35CL cG MR$eighted average of +0.09 {I3} from {+32}S(|a,p|g) and +0.07 {I2}    
+ 35CL2cG from {+35}Cl(p,p'|g). Other: -0.22 {I1} from {+34}S(p,|g).             
+ 35CL  L 3006         5/2-                                                      
+ 35CLX L XREF=L(*)QY(3000*)                                                     
+ 35CL  L 3162.87   7  7/2-             30.6 PS   9                          A   
+ 35CLX L XREF=FGHIKLMOQRTUWX                                                    
+ 35CL2 L ISPIN=1/2                                                              
  35CL cL T$weighted average of 31.0 ps {I6} from {+24}Mg({+16}O,|ap|g), 29.0 ps 
  35CL2cL {I13} from {+27}Al({+14}N,|apn|g), 42 ps {I5} from {+32}S(|a,p|g), 25.7
- 35CL3cL ps {I28} from {+34}S(p,|g), 32 ps {I4} from {+35}Cl(p,p'|g), and 30.6  
- 35CL4cL ps {I9} from E$ From E|g data when measured                            
+ 35CL3cL ps {I28} from {+34}S(p,|g), and 32 ps {I4} from {+35}Cl(p,p'|g)        
  35CL cL E$weighted average of 3163.1 {I6} from {+12}C({+28}Si,|ap|g), 3163.43  
  35CL2cL {I19} from {+16}O({+24}Mg,|ap|g), 3163.0 {I3} from                     
  35CL3cL {+24}Mg({+16}O,|ap|g), 3162.64 {I9} from {+27}Al({+14}N,|apn|g), 3158.2
  35CL4cL {I25} from {+32}S(|a,p), 3163.1 {I11} from {+32}S(|a,p|g), 3162.99 {I7}
  35CL5cL from {+34}S(p,|g), 3158 {I10} from {+34}S({+3}He,d), 3162.75 {I10} from
- 35CL6cL {+35}Cl(p,p'|g), 3170 {I20} from {+36}Ar(d,{+3}He), 3159 {I20} from    
- 35CL7cL {+36}Ar(pol d,{+3}He), and 3162.87 {I7} from E$ From E|g data when     
- 35CL8cL measured                                                               
- 35CL  G 160.67    20 1.10   30                                                ?
- 35CL cG E$weighted average of 160.66 {I20} from {+27}Al({+14}N,|apn|g) and     
- 35CL2cG 160.67 {I20} from E$ From E|g data when measured. Other: 161 {I1} from 
- 35CL3cG {+24}Mg({+16}O,|ap|g)                                                  
- 35CL cG RI$weighted average of 1.10 {I30} from {+12}C({+28}Si,|ap|g) and 1.10  
- 35CL2cG {I30} from E$ From E|g data when measured                              
- 35CL  G 469.5       0.54    LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (|a,p|g)                                                       
- 35CL  G 517.47    10 12.6   12 D                                               
+ 35CL6cL {+35}Cl(p,p'|g), 3170 {I20} from {+36}Ar(d,{+3}He), and 3159 {I20} from
+ 35CL7cL {+36}Ar(pol d,{+3}He)                                                  
+ 35CL cL J$L=3 from 0+ in (d,n), ({+3}He,d), (d,{+3}He), and (pol d,{+3}He).    
+ 35CL2cL Spin=7/2 from |g(|q) in (|a,p|g), (p,|g) , and (p,p'|g).               
+ 35CL cL T$lifetime |t = 30.6 ps {I9}: weighted average of |t = 42 ps {I2} in   
+ 35CL2cL {+24}Mg({+16}O, |ap|g) from 1974Va13 with RDM, |t = 41.7 ps {I17} in   
+ 35CL3cL {+24}Mg({+16}O, |ap|g) from 1976Ke02 with RDM, |t = 45 ps {I6} in      
+ 35CL4cL {+24}Mg({+16}O, |ap|g) from 1991Ja11 with RDM, |t = 41.8 ps {I18} from 
+ 35CL5cL {+27}Al({+14}N, |apn|g) in 1976Wa11 with RDM, |t = 60 ps {I7} from     
+ 35CL6cL {+32}S(|a,p|g) in 1969In04 with DSAM, |t = 37 ps {I4} from {+34}S(p,|g)
+ 35CL7cL in 1971Ba23 with delayed coincidence, and |t = 46 ps {I6} from         
+ 35CL8cL {+35}Cl(p,p'|g) in 1974Hu09 with RDM. Others: |t = 140 ps {I40} from   
+ 35CL9cL {+34}S(p,|g) in 1968Az02 with delayed coincidence (obtained using      
+ 35CLAcL NaI(Tl) detectors with broad time resolution, |t > 0.6 ps from         
+ 35CLBcL {+34}S(p,|g) in 1968Az02 with DSAM, |t > 0.2 ps from {+34}S(p,|g) in   
+ 35CLCcL 1971Wi13 with DSAM, |t > 2 ps from {+34}S(p,|g) in 1972Hu11 with DSAM, 
+ 35CLDcL |t > 0.9 ps from {+34}S(p,|g) in 1973Fa07 with DSAM, |t > 1 ps from    
+ 35CLEcL {+34}S(p,|g) in 1976Me12 with DSAM, |t > 17 ps from {+35}Cl(p,p'|g) in 
+ 35CLFcL 1972Va06 with RDM, and |t > 10 ps from {+35}Cl(p,p'|g) in 1972Br45 with
+ 35CLGcL RDM.                                                                   
+ 35CL  G 160.67    20 1.10   30 [E1]                                            
+ 35CL cG E$weighted average of 161 {I1} from {+24}Mg({+16}O,|ap|g) and 160.66   
+ 35CL2cG {I20} from {+27}Al({+14}N,|apn|g)                                      
+ 35CL cG RI$from ({+28}Si,|ap|g).                                               
+ 35CL  G 469.5       0.54    LT [M2]                                            
+ 35CL  G 517.47    11 12.6   15 D                                               
  35CL cG E$weighted average of 517.7 {I1} from {+16}O({+24}Mg,|ap|g), 517.3 {I5}
  35CL2cG from {+24}Mg({+16}O,|ap|g), 517.26 {I10} from {+27}Al({+14}N,|apn|g),  
- 35CL3cG 517.4 {I15} from {+32}S(|a,p|g), 517.0 {I8} from {+35}Cl(p,p'|g), and  
- 35CL4cG 517.47 {I11} from E$ From E|g data when measured                       
+ 35CL3cG 517.4 {I15} from {+32}S(|a,p|g), and 517.0 {I8} from {+35}Cl(p,p'|g)   
  35CL cG RI$unweighted average of 9.2 {I5} from {+12}C({+28}Si,|ap|g), 14.3 {I8}
  35CL2cG from {+16}O({+24}Mg,|ap|g), 11.1 {I13} from {+24}Mg({+16}O,|ap|g), 11.1
- 35CL3cG {I33} from {+32}S(|a,p|g), 11.1 {I22} from {+34}S(p,|g), 19 {I8} from  
- 35CL4cG {+35}Cl(p,p'|g), and 12.6 {I15} from E$ From E|g data when measured    
- 35CL cG M$from E$ From E|g data when measured                                  
+ 35CL3cG {I33} from {+32}S(|a,p|g), 11.1 {I22} from {+34}S(p,|g), and 19 {I8}   
+ 35CL4cG from {+35}Cl(p,p'|g)                                                   
+ 35CL cG M$from |g|g(|q)(DCO) in ({+28}Si,|ap|g).                               
  35CL  G 1399.9    7 0.50    20 E1+M2    +0.44   12                             
- 35CL cG E$weighted average of 1399.9 {I7} from {+24}Mg({+16}O,|ap|g) and 1399.9
- 35CL2cG {I7} from E$ From E|g data when measured                               
- 35CL cG RI$weighted average of 0.50 {I20} from {+24}Mg({+16}O,|ap|g) and 0.50  
- 35CL2cG {I20} from E$ From E|g data when measured                              
- 35CL cG MR$from E$ From E|g data when measured                                 
+ 35CL cG MR$from |g(|q) in (p,|g).                                              
+ 35CL cG E,RI$from {+24}Mg({+16}O,|ap|g).                                       
  35CL  G 1943.54     0.22    LT [E3]                                            
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 3162.53   10 100.0  20 M2+E3    +0.16   1                              
  35CL cG E$weighted average of 3162.7 {I4} from {+16}O({+24}Mg,|ap|g), 3162.6   
  35CL2cG {I3} from {+24}Mg({+16}O,|ap|g), 3162.43 {I10} from                    
- 35CL3cG {+27}Al({+14}N,|apn|g), 3162.6 {I15} from {+32}S(|a,p|g), 3162.6 {I1}  
- 35CL4cG from {+35}Cl(p,p'|g), and 3162.53 {I10} from E$ From E|g data when     
- 35CL5cG measured                                                               
+ 35CL3cG {+27}Al({+14}N,|apn|g), and 3162.6 {I1} from {+35}Cl(p,p'|g). Other:   
+ 35CL4cG 3162.6 {I15} from {+32}S(|a,p|g)                                       
  35CL cG RI$weighted average of 100 {I5} from {+12}C({+28}Si,|ap|g), 100.0 {I30}
  35CL2cG from {+16}O({+24}Mg,|ap|g), 100.0 {I20} from {+24}Mg({+16}O,|ap|g),    
- 35CL3cG 100.0 {I33} from {+32}S(|a,p|g), 100.0 {I22} from {+34}S(p,|g), 100.0  
- 35CL4cG {I20} from {+35}Cl(p,p'|g), and 100.0 {I20} from E$ From E|g data when 
- 35CL5cG measured                                                               
- 35CL cG MR$from ({+28}Si,|ap|g)                                                
+ 35CL3cG 100.0 {I33} from {+32}S(|a,p|g), 100.0 {I22} from {+34}S(p,|g), and    
+ 35CL4cG 100.0 {I20} from {+35}Cl(p,p'|g)                                       
+ 35CL cG M$from |g|g(|q)(ADO) and |g(lin pol) in {+24}Mg({+16}O,|ap|g),         
+ 35CL2cG |g|g(|q)(DCO) and |g|g(lin pol) in {+12}C({+28}Si,|ap|g), |g(|q) and   
+ 35CL3cG |g(lin pol) in {+34}S(p,|g), |g(|q) and |g(lin pol) in {+35}Cl(p,p'|g).
+ 35CL cG MR$weighted average of +0.16 {I1} from {+12}C({+28}Si,|ap|g), +0.18    
+ 35CL2cG {I7} from {+24}Mg({+16}O,|ap|g), and +0.25 {I4} from {+34}S(p,|g).     
+ 35CL3cG Others: -0.14 {I2} from {+32}S(|a,p|g) and -0.22 {I5} from             
+ 35CL4cG {+35}Cl(p,p'|g)???                                                     
  35CL  L 3918.47   10 3/2+             4.9 FS    14                             
- 35CLX L XREF=BMOR(3908)SU(3930*)X(3948*)e                                      
- 35CL cL T$weighted average of 4.9 fs {I14} from {+34}S(p,|g) and 4.9 fs {I14}  
- 35CL2cL from E$ From E|g data when measured                                    
- 35CL cL E$weighted average of 3918.4 {I5} from {+35}Ar |e decay, 3918.48 {I10} 
- 35CL2cL from {+34}S(p,|g), and 3918.47 {I12} from E$ From E|g data when        
- 35CL3cL measured. Others: 3915 {I2} from {+32}S(|a,p|g) and 3908 {I10} from    
- 35CL4cL {+34}S({+3}He,d)                                                       
+ 35CLX L XREF=BMOR(3908)SU(3930)X(3948)                                         
+ 35CL cL E$weighted average of 3918.4 {I5} from {+35}Ar |e decay, 3915 {I2} from
+ 35CL2cL {+32}S(|a,p|g), 3918.48 {I10} from {+34}S(p,|g), 3908 {I10} from       
+ 35CL3cL {+34}S({+3}He,d), 3930 {I30} from {+35}Cl(p,p'|g), and 3948 {I40} from 
+ 35CL4cL {+36}Ar(pol d,{+3}He)                                                  
+ 35CL cL T$from (p,|g)                                                          
+ 35CL cL J$spin=3/2 from feeding |g(|q) from {+34}S(p,|g) (1976Sp09); parity    
+ 35CL2cL from 3918|g, M1+E2 to 3/2+ ground state. L=2 from 0+ in (pol d,{+3}He).
+ 35CL cL T$lifetime |t = 7 fs {I2} from {+34}S(p,|g) in 1972Hu11 with DSAM.     
+ 35CL2cL Others: |t < 6 fs from {+34}S(p,|g) in 1976Me12 with DSAM, and |t < 22 
+ 35CL3cL fs from {+32}S(|a,p|g) in 1972Br33 with DSAM.                          
  35CL  G 916                                                                   ?
- 35CL cG E$from {+35}Ar |e decay (1.7755 s)                                     
  35CL  G 1225                                                                  ?
  35CL  G 1272.76     3.7     LT [E2]                                            
- 35CL cG E$from E$ From E|g data when measured                                  
+ 35CL cG E,RI$from (p,|g).                                                      
  35CL  G 1272.76     3.7     LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
  35CL  G 2155.1    15 24.2   28 [M1,E2]                                         
- 35CL cG E$weighted average of 2155.1 {I15} from {+35}Ar |e decay and 2155.1    
- 35CL2cG {I15} from E$ From E|g data when measured                              
- 35CL cG RI$weighted average of 29 {I12} from {+35}Ar |e decay, 23.9 {I28} from 
- 35CL2cG {+34}S(p,|g), and 24.2 {I28} from E$ From E|g data when measured       
- 35CL  G 2695        19      5                                                  
- 35CL cG RI$weighted average of 19 {I5} from {+32}S(|a,p|g) and 19 {I5} from E$ 
- 35CL2cG From E|g data when measured                                            
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL  G 3918        100.0   19 M1+E2                                           
+ 35CL cG RI$weighted average of 29 {I12} from {+35}Ar |e decay and 23.9 {I28}   
+ 35CL2cG from {+34}S(p,|g)                                                      
+ 35CL cG E$from {+35}Ar |e decay (1.7755 s).                                    
+ 35CL  G 2695        19      5 [M1,E2]                                          
+ 35CL cG RI$from {+32}S(|a,p|g).                                                
+ 35CL  G 3918.25     100.0   19 M1+E2                                           
  35CL cG RI$weighted average of 100 {I6} from {+35}Ar |e decay, 100 {I5} from   
- 35CL2cG {+32}S(|a,p|g), 100.0 {I19} from {+34}S(p,|g), and 100.0 {I19} from E$ 
- 35CL3cG From E|g data when measured                                            
- 35CL cG M$from E$ From E|g data when measured                                  
- 35CL  L 3942.9    2                   0.191 PS  30                             
- 35CLX L XREF=FHILMOR(3962*)U(3930*)X(3948*)e                                   
- 35CL cL T$weighted average of 0.229 ps {I35} from {+32}S(|a,p|g), 0.159 ps     
- 35CL2cL {I42} from {+34}S(p,|g), and 0.18 ps {I3} from E$ From E|g data when   
- 35CL3cL measured                                                               
+ 35CL2cG {+32}S(|a,p|g), and 100.0 {I19} from {+34}S(p,|g)                      
+ 35CL cG E,M$from (p,|g)                                                        
+ 35CL cG M$D+Q from |g(|q) in {+34}S(p,|g) (1976Sp09). E1+M2 ruled by RUL.      
+ 35CL cG MR$-0.21 {I2} or +20 {I+10-5} from {+34}S(p,|g) (1976Sp09)???          
+ 35CL cG E$from (|g,|g).                                                        
+ 35CL  L 3942.9    2  9/2+             0.200 PS  35                             
+ 35CLX L XREF=FHILMO                                                            
+ 35CL cL T$weighted average of 0.229 ps {I35} from {+32}S(|a,p|g) and 0.159 ps  
+ 35CL2cL {I42} from {+34}S(p,|g)                                                
  35CL cL E$weighted average of 3942.0 {I7} from {+12}C({+28}Si,|ap|g), 3943.4   
  35CL2cL {I10} from {+24}Mg({+16}O,|ap|g), 3942.3 {I10} from                    
- 35CL3cL {+27}Al({+14}N,|apn|g), 3945.2 {I23} from {+32}S(|a,p), 3943.4 {I12}   
- 35CL4cL from {+32}S(|a,p|g), 3942.9 {I2} from {+34}S(p,|g), and 3942.9 {I2}    
- 35CL5cL from E$ From E|g data when measured                                    
+ 35CL3cL {+27}Al({+14}N,|apn|g), 3943.4 {I12} from {+32}S(|a,p|g), and 3942.9   
+ 35CL4cL {I2} from {+34}S(p,|g). Other: 3945.2 {I23} from {+32}S(|a,p)          
+ 35CL cL J$|g(|q) in (|a,p|g) and |g|g(DCO) in (HI,xn|g).                       
+ 35CL cL T$lifetime |t = 0.26 ps {I5}: weighted average of |t = 0.33 ps {I5} in 
+ 35CL2cL {+32}S(|a,p|g) from 1972Br33 with DSAM, |t = 0.39 ps {I11} in          
+ 35CL3cL {+34}S(p,|g) from 1972Hu11 with DSAM, |t = 0.145 ps {I50} in           
+ 35CL4cL {+34}S(p,|g) from 1973Fa07 with DSAM, and |t = 0.29 ps {I5} in         
+ 35CL5cL {+34}S(p,|g) from 1976Me12 with DSAM. Other: |t < 0.5 ps in            
+ 35CL6cL {+12}C({+28}Si,|ap|g) from 2007Ks01 with DSAM.                         
  35CL  G 779         15      LT [E1]                                           ?
- 35CL cG E,RI$from ({+28}Si,|ap|g)                                              
- 35CL  G 1297.4    15 8.0    21                                                 
- 35CL cG E$weighted average of 1297.4 {I15} from {+32}S(|a,p|g) and 1297.4 {I15}
- 35CL2cG from E$ From E|g data when measured                                    
+ 35CL  G 1297.4    15 8.0    21 [M1,E2]                                         
  35CL cG RI$weighted average of 6.2 {I31} from {+12}C({+28}Si,|ap|g), 8.1 {I21} 
- 35CL2cG from {+32}S(|a,p|g), 8.7 {I22} from {+34}S(p,|g), and 8.0 {I21} from E$
- 35CL3cG From E|g data when measured                                            
+ 35CL2cG from {+32}S(|a,p|g), and 8.7 {I22} from {+34}S(p,|g)                   
+ 35CL cG E$from (|a,p|g).                                                       
  35CL  G 2180.1    10 100.0  21 M1+E2                                           
- 35CL cG E$weighted average of 2180 {I1} from {+24}Mg({+16}O,|ap|g), 2180.2     
- 35CL2cG {I15} from {+32}S(|a,p|g), and 2180.1 {I10} from E$ From E|g data when 
- 35CL3cG measured                                                               
- 35CL cG RI$weighted average of 100.0 {I21} from {+32}S(|a,p|g), 100.0 {I22}    
- 35CL2cG from {+34}S(p,|g), and 100.0 {I21} from E$ From E|g data when measured.
- 35CL3cG Other: 100 {I11} from {+12}C({+28}Si,|ap|g)                            
- 35CL cG M$from E$ From E|g data when measured                                  
- 35CL  G 2723.4      6.5     LT                                                ?
- 35CL  G 3942.7      11      LT                                                ?
+ 35CL cG E$weighted average of 2180 {I1} from {+24}Mg({+16}O,|ap|g) and 2180.2  
+ 35CL2cG {I15} from {+32}S(|a,p|g)                                              
+ 35CL cG RI$weighted average of 100.0 {I21} from {+32}S(|a,p|g) and 100.0 {I22} 
+ 35CL2cG from {+34}S(p,|g). Other: 100 {I11} from {+12}C({+28}Si,|ap|g)         
+ 35CL cG M$from ({+28}Si,|ap|g).                                                
+ 35CL  G 2723.4      6.5     LT [E4]                                           ?
+ 35CL  G 3942.7      11      LT [M3]                                           ?
  35CL  L 3967.6    4  1/2+             11.8 FS   28                             
- 35CLX L XREF=BMOR(3962*)e                                                      
- 35CL cL T$weighted average of 11.8 fs {I28} from {+34}S(p,|g) and 11.8 fs {I28}
- 35CL2cL from E$ From E|g data when measured                                    
- 35CL cL E$weighted average of 3967.7 {I4} from {+35}Ar |e decay, 3967.3 {I6}   
- 35CL2cL from {+34}S(p,|g), and 3967.6 {I4} from E$ From E|g data when measured.
- 35CL3cL Other: 3968 {I2} from {+32}S(|a,p|g)                                   
+ 35CLX L XREF=BMOR                                                              
+ 35CL cL E$weighted average of 3967.7 {I4} from {+35}Ar |e decay, 3968 {I2} from
+ 35CL2cL {+32}S(|a,p|g), and 3967.3 {I6} from {+34}S(p,|g). Other: 3962 {I10}   
+ 35CL3cL from {+34}S({+3}He,d)                                                  
+ 35CL cL T$from (p,|g)                                                          
+ 35CL cL J$L=0 from 0+ in ({+3}He,d).                                           
+ 35CL cL T$lifetime |t = 17 fs {I4}: weighted average of |t = 13 fs {I4} from   
+ 35CL2cL {+34}S(p,|g) in 1972Hu11 with DSAM, |t = 20 fs {I5} from {+34}S(p,|g)  
+ 35CL3cL in 1973Fa07 with DSAM, and |t = 20 fs {I4} from {+34}S(p,|g) in        
+ 35CL4cL 1976Me12 with DSAM. Other: |t < 54 fs from {+32}S(|a,p|g) in 1972Br33  
+ 35CL5cL with DSAM.                                                             
  35CL  G 965         182     LT [E2]                                           ?
- 35CL  G 1273.4      2.7     6                                                  
- 35CL cG RI$weighted average of 2.7 {I6} from {+34}S(p,|g) and 2.7 {I6} from E$ 
- 35CL2cG From E|g data when measured                                            
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL  G 1321.6      2.5     LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
- 35CL  G 2204        57      LT [E2]                                           ?
- 35CL cG E,RI$from {+35}Ar |e decay (1.7755 s)                                  
+ 35CL  G 1273.4      2.7     6 [M1,E2]                                          
+ 35CL cG E,RI$from (p,|g)                                                       
+ 35CL  G 1321.6      2.5     LT [M3]                                            
+ 35CL  G 2204.2      57      LT [E2]                                            
+ 35CL cG E$from (p,|g)                                                          
+ 35CL cG RI$from {+35}Ar |e decay (1.7755 s)                                    
+ 35CL cG RI$from (p,|g).                                                        
  35CL  G 2748.5    6 100     6 [M1,E2]                                          
- 35CL cG E$weighted average of 2748.5 {I6} from {+35}Ar |e decay and 2748.5 {I6}
- 35CL2cG from E$ From E|g data when measured                                    
- 35CL cG RI$weighted average of 100 {I7} from {+35}Ar |e decay, 100 {I6} from   
- 35CL2cG {+34}S(p,|g), and 100 {I6} from E$ From E|g data when measured         
- 35CL  G 3968        23      4                                                  
- 35CL cG RI$weighted average of 22 {I5} from {+35}Ar |e decay, 24 {I4} from     
- 35CL2cG {+34}S(p,|g), and 23 {I4} from E$ From E|g data when measured          
- 35CL cG E$from {+35}Ar |e decay (1.7755 s)                                     
- 35CL  L 4059.1    4                   14.3 FS   21                             
- 35CLX L XREF=LMOQRe                                                            
- 35CL cL T$weighted average of 22 fs {I9} from {+32}S(|a,p|g), 13.9 fs {I21}    
- 35CL2cL from {+34}S(p,|g), and 14.3 fs {I21} from E$ From E|g data when        
- 35CL3cL measured                                                               
+ 35CL cG RI$weighted average of 100 {I7} from {+35}Ar |e decay and 100 {I6} from
+ 35CL2cG {+34}S(p,|g)                                                           
+ 35CL cG E$from {+35}Ar |e decay (1.7755 s).                                    
+ 35CL  G 3967.1      23      4 [M1,E2]                                          
+ 35CL cG RI$weighted average of 22 {I5} from {+35}Ar |e decay and 24 {I4} from  
+ 35CL2cG {+34}S(p,|g)                                                           
+ 35CL cG E$from (p,|g)                                                          
+ 35CL  L 4059.1    4  3/2-             14.3 FS   21                             
+ 35CLX L XREF=LMOQR                                                             
+ 35CL cL T$weighted average of 22 fs {I9} from {+32}S(|a,p|g) and 13.9 fs {I21} 
+ 35CL2cL from {+34}S(p,|g)                                                      
  35CL cL E$weighted average of 4056.9 {I27} from {+32}S(|a,p), 4058 {I3} from   
- 35CL2cL {+32}S(|a,p|g), 4059.2 {I4} from {+34}S(p,|g), 4053 {I10} from         
- 35CL3cL {+34}S({+3}He,d), and 4059.1 {I4} from E$ From E|g data when measured  
- 35CL  G 1365.3      1.3     4                                                  
- 35CL cG RI$weighted average of 1.3 {I4} from {+34}S(p,|g) and 1.3 {I4} from E$ 
- 35CL2cG From E|g data when measured                                            
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL  G 1413.5      1.1     LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
- 35CL  G 2296.1      5.5     16                                                 
- 35CL cG RI$weighted average of 8 {I4} from {+32}S(|a,p|g), 5.1 {I16} from      
- 35CL2cG {+34}S(p,|g), and 5.5 {I16} from E$ From E|g data when measured        
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL  G 2839.7      100.0   21                                                 
- 35CL cG RI$weighted average of 100 {I4} from {+32}S(|a,p|g), 100.0 {I21} from  
- 35CL2cG {+34}S(p,|g), and 100.0 {I21} from E$ From E|g data when measured      
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL  G 4059.0      2.1     LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
- 35CL  L 4112.4    11 7/2              49 FS     11                             
- 35CLX L XREF=LMOQe                                                             
- 35CL cL T$weighted average of 49 fs {I11} from {+32}S(|a,p|g) and 49 fs {I11}  
- 35CL2cL from E$ From E|g data when measured                                    
+ 35CL2cL {+32}S(|a,p|g), 4059.2 {I4} from {+34}S(p,|g), and 4053 {I10} from     
+ 35CL3cL {+34}S({+3}He,d)                                                       
+ 35CL cL T$lifetime |t = 20 fs {I3}: weighted average of |t = 31 fs {I13} from  
+ 35CL2cL {+32}S(|a,p|g) in 1972Br33 with DSAM, |t = 22 fs {I3} from {+34}S(p,|g)
+ 35CL3cL in 1972Hu11 with DSAM, |t = 20 fs {I4} from {+34}S(p,|g) in 1973Fa07   
+ 35CL4cL with DSAM, and |t = 18 fs {I3} from {+34}S(p,|g) in 1976Me12 with DSAM.
+ 35CL cL J$L=1 from 0+ in ({+3}He,d); 3/2- from FRESCO-DWBA analysis of measured
+ 35CL2cL |s(|q) of {+32}S(|a,p) (2019Se09).                                     
+ 35CL  G 1365.3      1.3     4 [E1]                                             
+ 35CL  G 1413.5      1.1     LT [M2]                                            
+ 35CL  G 2296.1      5.5     16 [E1]                                            
+ 35CL cG RI$weighted average of 8 {I4} from {+32}S(|a,p|g) and 5.1 {I16} from   
+ 35CL2cG {+34}S(p,|g)                                                           
+ 35CL cG E$from (p,|g)                                                          
+ 35CL  G 2839.7      100.0   21 [E1]                                            
+ 35CL cG RI$weighted average of 100 {I4} from {+32}S(|a,p|g) and 100.0 {I21}    
+ 35CL2cG from {+34}S(p,|g)                                                      
+ 35CL cG E$from (p,|g)                                                          
+ 35CL  G 4059.0      2.1     LT [E1]                                            
+ 35CL cG E,RI$from (p,|g)                                                       
+ 35CL  L 4112.4    16 7/2+             49 FS     11                             
+ 35CLX L XREF=LMOQ                                                              
  35CL cL E$weighted average of 4111.1 {I29} from {+32}S(|a,p), 4108 {I2} from   
- 35CL2cL {+32}S(|a,p|g), 4113.7 {I10} from {+34}S(p,|g), and 4112.4 {I16} from  
- 35CL3cL E$ From E|g data when measured                                         
- 35CL  G 2350.6      65      24 D+Q      -0.16   2                              
- 35CL cG RI$unweighted average of 16 {I5} from {+32}S(|a,p|g), 89 {I6} from     
- 35CL2cG {+34}S(p,|g), and 89 {I6} from E$ From E|g data when measured          
- 35CL cG E,MR$from E$ From E|g data when measured                               
- 35CL  G 2894.2      19      LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
+ 35CL2cL {+32}S(|a,p|g), and 4113.7 {I10} from {+34}S(p,|g)                     
+ 35CL cL T$from (|a,p|g)                                                        
+ 35CL cL J$from FRESCO-DWBA analysis of measured |s(|q) of {+32}S(|a,p)         
+ 35CL2cL (2019Se09).                                                            
+ 35CL  G 2350.6      5E1     4 D+Q       -0.16   2                              
+ 35CL cG RI$unweighted average of 16 {I5} from {+32}S(|a,p|g) and 89 {I6} from  
+ 35CL2cG {+34}S(p,|g)                                                           
+ 35CL cG E,MR$from (p,|g)                                                       
+ 35CL cG M,MR$from (p,|g).                                                      
+ 35CL  G 2894.2      19      LT [M3]                                            
+ 35CL cG RI$from {+34}S(p,|g).                                                  
  35CL  G 4113.4      100     5 Q(+O)     0.00    10                             
- 35CL cG RI$weighted average of 100 {I5} from {+32}S(|a,p|g), 100 {I6} from     
- 35CL2cG {+34}S(p,|g), and 100 {I6} from E$ From E|g data when measured         
- 35CL cG E,MR$from E$ From E|g data when measured                               
- 35CL  L 4173.44   19                  36 FS     6                              
- 35CLX L XREF=L(*)MOQ(4170*)R(4167*)e                                           
- 35CL cL T$weighted average of 47 fs {I17} from {+32}S(|a,p|g), 34.7 fs {I63}   
- 35CL2cL from {+34}S(p,|g), and 35 fs {I6} from E$ From E|g data when measured  
- 35CL cL E$weighted average of 4173.45 {I19} from {+34}S(p,|g) and 4173.43 {I23}
- 35CL2cL from E$ From E|g data when measured. Other: 4171 {I2} from             
- 35CL3cL {+32}S(|a,p|g)                                                         
- 35CL  G 1479.5      45      14                                                 
- 35CL cG RI$weighted average of 45 {I14} from {+34}S(p,|g) and 45 {I14} from E$ 
- 35CL2cG From E|g data when measured                                            
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL  G 1527.71     17      LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
- 35CL  G 2410.4      28      9                                                  
- 35CL cG RI$weighted average of 28 {I9} from {+34}S(p,|g) and 28 {I9} from E$   
- 35CL2cG From E|g data when measured                                            
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL  G 2953.93     5.2     LE                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
- 35CL  G 4173.18     100     17                                                 
- 35CL cG RI$weighted average of 100 {I17} from {+34}S(p,|g) and 100 {I17} from  
- 35CL2cG E$ From E|g data when measured                                         
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL  L 4177.9    2  3/2              27.0 FS   28                             
- 35CLX L XREF=L(*)OQ(4170*)R(4167*)e                                            
- 35CL cL T$weighted average of 27.0 fs {I28} from {+34}S(p,|g) and 27.0 fs {I28}
- 35CL2cL from E$ From E|g data when measured                                    
- 35CL cL E$weighted average of 4177.9 {I2} from {+34}S(p,|g) and 4177.9 {I2}    
- 35CL2cL from E$ From E|g data when measured                                    
- 35CL  G 1175.1      0.82    LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
- 35CL  G 1484.0      13.1    33                                                 
- 35CL cG RI$weighted average of 13.1 {I33} from {+34}S(p,|g) and 13.1 {I33} from
- 35CL2cG E$ From E|g data when measured                                         
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL  G 1532.2      0.82    LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
- 35CL  G 2414.8      1.6     LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
+ 35CL cG RI$weighted average of 100 {I5} from {+32}S(|a,p|g) and 100 {I6} from  
+ 35CL2cG {+34}S(p,|g)                                                           
+ 35CL cG E,MR$from (p,|g)                                                       
+ 35CL cG M,MR$from (p,|g).                                                      
+ 35CL  L 4173.43   23 5/2-             36 FS     6                              
+ 35CLX L XREF=MOQ(4170*)                                                        
+ 35CL2 L ISPIN=1/2                                                              
+ 35CL cL T$weighted average of 47 fs {I17} from {+32}S(|a,p|g) and 34.7 fs {I63}
+ 35CL2cL from {+34}S(p,|g)                                                      
+ 35CL cL E$weighted average of 4171 {I2} from {+32}S(|a,p|g) and 4173.45 {I19}  
+ 35CL2cL from {+34}S(p,|g)                                                      
+ 35CL cL T$lifetime |t = 51 fs {I8}: weighted average of |t = 68 fs {I24} in    
+ 35CL2cL {+32}S(|a,p|g) from 1972Br33 with DSAM, |t = 105 fs {I+35-30} in |t =  
+ 35CL3cL 22 fs {I3} from {+34}S(p,|g) in 1971Wi13, |t = 55 fs {I6} in           
+ 35CL4cL {+34}S(p,|g) from 1972Hu11 with DSAM, and |t = 34 fs {I9} in           
+ 35CL5cL {+34}S(p,|g) from 1976Me12 with DSAM.                                  
+ 35CL cL J$|g-feeding in (p,|g)???                                              
+ 35CL  G 1479.5      45      14 [E1]                                            
+ 35CL  G 1527.71     17      LT [E1]                                            
+ 35CL  G 2410.4      28      9 [E1]                                             
+ 35CL  G 2953.93     5.2     LE [M2]                                            
+ 35CL  G 4173.18     100     17 [E1]                                            
+ 35CL  L 4177.9    2  3/2-             27.0 FS   28                             
+ 35CLX L XREF=LOQ(4170*)R(4167)                                                 
+ 35CL cL E$weighted average of 4177.9 {I24} from {+32}S(|a,p), 4177.9 {I2} from 
+ 35CL2cL {+34}S(p,|g), and 4167 {I10} from {+34}S({+3}He,d)                     
+ 35CL cL T$from (p,|g)                                                          
+ 35CL cL T$lifetime |t = 39 fs {I4}: weighted average of |t = 32 fs {I5} from   
+ 35CL2cL {+34}S(p,|g) in 1972Hu11 with DSAM, |t = 42 fs {I4} from {+34}S(p,|g)  
+ 35CL3cL in 1973Fa07 with DSAM, and |t = 47 fs {I10} from {+34}S(p,|g) in       
+ 35CL4cL 1976Me12 with DSAM.                                                    
+ 35CL cL J$L=1 from 0+ in ({+3}He,d); spin=3/2 from |g(|q) in (p,|g).           
+ 35CL  G 1175.1      0.82    LT [E1]                                            
+ 35CL  G 1484.0      13.1    33 [E1]                                            
+ 35CL  G 1532.2      0.82    LT [M2]                                            
+ 35CL  G 2414.8      1.6     LT [E1]                                            
  35CL  G 2958.4      51      8 D+Q       +0.11   4                              
- 35CL cG RI$weighted average of 51 {I8} from {+34}S(p,|g) and 51 {I8} from E$   
- 35CL2cG From E|g data when measured                                            
- 35CL cG E,MR$from E$ From E|g data when measured                               
+ 35CL cG M,MR$from |g(|q) in (p,|g).                                            
  35CL  G 4177.6      100     8 D+Q       +0.06   3                              
- 35CL cG RI$weighted average of 100 {I8} from {+34}S(p,|g) and 100 {I8} from E$ 
- 35CL2cG From E|g data when measured                                            
- 35CL cG E,MR$from E$ From E|g data when measured                               
- 35CL  L 4347.74   6  5/2,9/2          1.0 PS    4                              
- 35CLX L XREF=FGHILMOe                                                          
+ 35CL cG M,MR$from |g(|q) in (p,|g).                                            
+ 35CL  L 4347.74   7  9/2-             1.1 PS    5                              
+ 35CLX L XREF=FGHILMO                                                           
  35CL cL T$unweighted average of 0.91 ps {I+21-16} from {+12}C({+28}Si,|ap|g),  
- 35CL2cL 2.0 ps {I+10-5} from {+32}S(|a,p|g), 0.229 ps {I42} from {+34}S(p,|g), 
- 35CL3cL and 1.0 ps {I6} from E$ From E|g data when measured                    
+ 35CL2cL 2.0 ps {I+10-5} from {+32}S(|a,p|g), and 0.229 ps {I42} from           
+ 35CL3cL {+34}S(p,|g)                                                           
  35CL cL E$weighted average of 4347.8 {I6} from {+12}C({+28}Si,|ap|g), 4348.29  
  35CL2cL {I24} from {+16}O({+24}Mg,|ap|g), 4347.4 {I3} from                     
  35CL3cL {+24}Mg({+16}O,|ap|g), 4347.43 {I17} from {+27}Al({+14}N,|apn|g),      
- 35CL4cL 4346.6 {I24} from {+32}S(|a,p), 4347.8 {I12} from {+32}S(|a,p|g),      
- 35CL5cL 4347.76 {I6} from {+34}S(p,|g), and 4347.74 {I7} from E$ From E|g data 
- 35CL6cL when measured                                                          
+ 35CL4cL 4346.6 {I24} from {+32}S(|a,p), 4347.8 {I12} from {+32}S(|a,p|g), and  
+ 35CL5cL 4347.76 {I6} from {+34}S(p,|g)                                         
+ 35CL cL T$lifetime |t = 1.5 ps {I8}: unweighted average of |t = 1.31 ps        
+ 35CL2cL {I+30-23} from {+12}C({+28}Si,|ap|g) in 2007Ks01 with DSAM, |t = 2.9 ps
+ 35CL3cL {I+14-7} from {+32}S(|a,p|g) in 1972Br33 with DSAM, and |t = 0.33 ps   
+ 35CL4cL {I6} from {+34}S(p,|g) in 1976Me12 with DSAM. Other: |t > 0.6 ps in    
+ 35CL5cL {+34}S(p,|g) from 1972Hu11 with DSAM.                                  
+ 35CL cL J$spin from |g(|q) in 1974Lo17; parity from 1184.6|g, M1+E2 to 7/2- in 
+ 35CL2cL 1974Lo17.                                                              
  35CL  G 1184.90   20 100.0  29 M1+E2    -0.36   3                              
  35CL cG E$weighted average of 1185.0 {I2} from {+16}O({+24}Mg,|ap|g), 1184.9   
- 35CL2cG {I3} from {+24}Mg({+16}O,|ap|g), 1184.80 {I20} from                    
- 35CL3cG {+27}Al({+14}N,|apn|g), and 1184.90 {I20} from E$ From E|g data when   
- 35CL4cG measured. Other: 1184.6 {I10} from {+32}S(|a,p|g)                      
+ 35CL2cG {I3} from {+24}Mg({+16}O,|ap|g), and 1184.80 {I20} from                
+ 35CL3cG {+27}Al({+14}N,|apn|g). Other: 1184.6 {I10} from {+32}S(|a,p|g)        
  35CL cG RI$weighted average of 100 {I4} from {+12}C({+28}Si,|ap|g), 100.0 {I31}
  35CL2cG from {+16}O({+24}Mg,|ap|g), 100 {I4} from {+24}Mg({+16}O,|ap|g), 100.0 
- 35CL3cG {I31} from {+32}S(|a,p|g), 100.0 {I29} from {+34}S(p,|g), and 100.0    
- 35CL4cG {I29} from E$ From E|g data when measured                              
- 35CL cG MR$from E$ From E|g data when measured                                 
- 35CL  G 1344.98     5.8     LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
- 35CL  G 1653.8      5.8     LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
- 35CL  G 1701.88   25 46.8   20 E1(+M2)  -0.018  12                             
+ 35CL3cG {I31} from {+32}S(|a,p|g), and 100.0 {I29} from {+34}S(p,|g)           
+ 35CL cG M$from ({+28}Si,|ap|g), ({+16}O,|ap|g), and (p,|g).                    
+ 35CL cG MR$weighted average of -0.36 {I3} from (|a,p|g), -0.3 {I1} from        
+ 35CL2cG ({+28}Si,|ap|g), and -0.65 {I30} from ({+16}O,|ap|g).                  
+ 35CL  G 1344.98     5.8     LT [M2]                                            
+ 35CL  G 1653.8      5.8     LT [E3]                                            
+ 35CL  G 1701.88   25 46.8   24 E1(+M2)  -0.018  12                             
  35CL cG E$weighted average of 1702.0 {I3} from {+16}O({+24}Mg,|ap|g), 1701.7   
- 35CL2cG {I5} from {+24}Mg({+16}O,|ap|g), 1701.85 {I25} from                    
- 35CL3cG {+27}Al({+14}N,|apn|g), and 1701.88 {I25} from E$ From E|g data when   
- 35CL4cG measured. Other: 1702.1 {I15} from {+32}S(|a,p|g)                      
+ 35CL2cG {I5} from {+24}Mg({+16}O,|ap|g), and 1701.85 {I25} from                
+ 35CL3cG {+27}Al({+14}N,|apn|g). Other: 1702.1 {I15} from {+32}S(|a,p|g)        
  35CL cG RI$unweighted average of 45.6 {I24} from {+12}C({+28}Si,|ap|g), 39.5   
  35CL2cG {I24} from {+16}O({+24}Mg,|ap|g), 52.0 {I14} from                      
- 35CL3cG {+24}Mg({+16}O,|ap|g), 52 {I7} from {+32}S(|a,p|g), 44.9 {I29} from    
- 35CL4cG {+34}S(p,|g), and 46.8 {I24} from E$ From E|g data when measured       
- 35CL cG MR$from E$ From E|g data when measured                                 
- 35CL  G 2584.7      4.4     LE                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
- 35CL  G 3128.22     5.8     LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
+ 35CL3cG {+24}Mg({+16}O,|ap|g), 52 {I7} from {+32}S(|a,p|g), and 44.9 {I29} from
+ 35CL4cG {+34}S(p,|g)                                                           
+ 35CL cG MR$from (p,|g). Others: +0.5 {I+5-3} from {+12}C({+28}Si,|ap|g), +0.5  
+ 35CL2cG {I4} from {+24}Mg({+16}O,|ap|g).                                       
+ 35CL  G 2584.7      4.4     LE [M2]                                            
+ 35CL  G 3128.22     5.8     LT [M4]                                            
  35CL  G 4347.8    8 12.4    11 [E3]                                            
- 35CL cG E$weighted average of 4347.8 {I8} from {+24}Mg({+16}O,|ap|g) and 4347.8
- 35CL2cG {I8} from E$ From E|g data when measured                               
- 35CL cG RI$weighted average of 12.4 {I11} from {+24}Mg({+16}O,|ap|g) and 12.4  
- 35CL2cG {I11} from E$ From E|g data when measured                              
- 35CL  L 4622.6    16                  40 FS     17                             
- 35CLX L XREF=B(?)LMOe                                                          
- 35CL cL T$weighted average of 40 fs {I17} from {+32}S(|a,p|g) and 40 fs {I17}  
- 35CL2cL from E$ From E|g data when measured                                    
+ 35CL cG E,RI$from ({+16}O,|ap|g).                                              
+ 35CL  L 4622.6    23 3/2,5/2          40 FS     17                             
+ 35CLX L XREF=B(?)LMO                                                           
  35CL cL E$unweighted average of 4625.3 {I28} from {+32}S(|a,p), 4618 {I2} from 
- 35CL2cL {+32}S(|a,p|g), 4624.4 {I3} from {+34}S(p,|g), and 4622.6 {I23} from E$
- 35CL3cL From E|g data when measured                                            
+ 35CL2cL {+32}S(|a,p|g), and 4624.4 {I3} from {+34}S(p,|g)                      
+ 35CL cL T$from (|a,p|g)                                                        
+ 35CL cL T$lifetime |t = 58 fs {I24} from {+32}S(|a,p|g) in 1972Br33 with DSAM. 
+ 35CL cL J$|g(|q) in (|a,p|g).                                                  
  35CL  G 1931        100     LT                                                ?
  35CL  G 2861        47      LT                                                ?
  35CL  G 3405                                                                  ?
  35CL  G 4618      2 17      LT                                                 
- 35CL cG E$weighted average of 4618 {I2} from {+32}S(|a,p|g) and 4618 {I2} from 
- 35CL2cG E$ From E|g data when measured                                         
  35CL cG RI$from {+35}Ar |e decay (1.7755 s)                                    
- 35CL  L 4769.86   23 (7/2,9/2+)       76 FS     20                             
- 35CLX L XREF=LMOe                                                              
- 35CL cL T$weighted average of 76 fs {I20} from {+34}S(p,|g) and 76 fs {I20}    
- 35CL2cL from E$ From E|g data when measured                                    
- 35CL cL E$weighted average of 4769.86 {I23} from {+34}S(p,|g) and 4769.86 {I23}
- 35CL2cL from E$ From E|g data when measured. Others: 4770.4 {I26} from         
- 35CL3cL {+32}S(|a,p) and 4770 {I15} from {+32}S(|a,p|g)                        
+ 35CL cG RI$from (|a,p|g) and (p,|g).                                           
+ 35CL cG MR$-0.08 {I14} for J=3/2; +0.36 {I15} for J=5/2 in (|a,p|g)???         
+ 35CL  L 4769.86   23 7/2              76 FS     20                             
+ 35CLX L XREF=LMO                                                               
+ 35CL cL E$weighted average of 4770.4 {I26} from {+32}S(|a,p), 4770 {I15} from  
+ 35CL2cL {+32}S(|a,p|g), and 4769.86 {I23} from {+34}S(p,|g)                    
+ 35CL cL T$from (p,|g)                                                          
+ 35CL cL T$lifetime |t = 110 fs {I29}: weighted average of |t = 270 fs {I95} in 
+ 35CL2cL {+34}S(p,|g) from 1972Hu11 with DSAM and |t = 105 fs {I17} in          
+ 35CL3cL {+34}S(p,|g) from 1976Me12 with DSAM.                                  
+ 35CL cL J$|g(|q) and |g-feeding in (p,|g).                                     
  35CL  G 1606.83     100     16                                                 
- 35CL cG RI$weighted average of 100 {I16} from {+34}S(p,|g) and 100 {I16} from  
- 35CL2cG E$ From E|g data when measured                                         
- 35CL cG E$from E$ From E|g data when measured                                  
  35CL  G 1767.06     54      16                                                 
- 35CL cG RI$weighted average of 54 {I16} from {+34}S(p,|g) and 54 {I16} from E$ 
- 35CL2cG From E|g data when measured                                            
- 35CL cG E$from E$ From E|g data when measured                                  
  35CL  G 2075.9      15      LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
  35CL  G 3550.28     15      LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
  35CL  G 4769.51     15      LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
- 35CL  L 4839.10   11                  9.7 FS    35                             
- 35CLX L XREF=OX(4839*)e                                                        
- 35CL cL T$weighted average of 9.7 fs {I35} from {+34}S(p,|g) and 9.7 fs {I35}  
- 35CL2cL from E$ From E|g data when measured                                    
- 35CL cL E$weighted average of 4839.10 {I11} from {+34}S(p,|g) and 4839.10 {I11}
- 35CL2cL from E$ From E|g data when measured                                    
+ 35CL  L 4839.10   11 (1/2+,3/2)       9.7 FS    35                             
+ 35CLX L XREF=OX(4839*)                                                         
+ 35CL cL J$|g-feeding in (p,|g).                                                
+ 35CL cL T$lifetime |t = 14 fs {I5} from {+34}S(p,|g) in 1976Me12 with DSAM.    
  35CL  G 1836.30     12      LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
  35CL  G 2145.1      6.8     LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
  35CL  G 2193.33     5.1     LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
  35CL  G 3076.0      100     9                                                  
- 35CL cG RI$weighted average of 100 {I9} from {+34}S(p,|g) and 100 {I9} from E$ 
- 35CL2cG From E|g data when measured                                            
- 35CL cG E$from E$ From E|g data when measured                                  
  35CL  G 3619.51     12      LT                                                 
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL cG RI$from (p,|g)                                                         
  35CL  G 4838.74     70      9                                                  
- 35CL cG RI$weighted average of 70 {I9} from {+34}S(p,|g) and 70 {I9} from E$   
- 35CL2cG From E|g data when measured                                            
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL  L 4855.9    19                  4.9 FS    14                             
- 35CLX L XREF=LOX(4839*)e                                                       
- 35CL cL T$weighted average of 4.9 fs {I14} from {+34}S(p,|g) and 4.9 fs {I14}  
- 35CL2cL from E$ From E|g data when measured                                    
- 35CL cL E$weighted average of 4859.2 {I28} from {+32}S(|a,p), 4854.4 {I19} from
- 35CL2cL {+34}S(p,|g), and 4855.9 {I22} from E$ From E|g data when measured     
+ 35CL  L 4855.9    22 (1/2,3/2)        4.9 FS    14                             
+ 35CLX L XREF=LOX(4839*)                                                        
+ 35CL cL E$weighted average of 4859.2 {I28} from {+32}S(|a,p) and 4854.4 {I19}  
+ 35CL2cL from {+34}S(p,|g)                                                      
+ 35CL cL T$from (p,|g)                                                          
+ 35CL cL T$lifetime |t = 7 fs {I2} from {+34}S(p,|g) in 1976Me12 with DSAM.     
+ 35CL2cL Other: |t < 6 fs from {+34}S(p,|g) in 1972Hu11 with DSAM.              
+ 35CL cL J$|g to 1/2+ and |g-feeding in (p,|g).                                 
  35CL  G 3634.8      100     7                                                  
- 35CL cG RI$weighted average of 100 {I7} from {+34}S(p,|g) and 100 {I7} from E$ 
- 35CL2cG From E|g data when measured                                            
- 35CL cG E$from E$ From E|g data when measured                                  
  35CL  G 4854.0      33      7                                                  
- 35CL cG RI$weighted average of 33 {I7} from {+34}S(p,|g) and 33 {I7} from E$   
- 35CL2cG From E|g data when measured                                            
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL  L 4880.96   15                  0.0056 PS 14                             
- 35CLX L XREF=LMOe                                                              
- 35CL cL T$weighted average of 0.0056 ps {I14} from {+34}S(p,|g) and 0.0056 ps  
- 35CL2cL {I14} from E$ From E|g data when measured. Other: 0.19 ps {I4} from    
- 35CL3cL {+32}S(|a,p|g)                                                         
- 35CL cL E$weighted average of 4880.96 {I15} from {+34}S(p,|g) and 4880.96 {I15}
- 35CL2cL from E$ From E|g data when measured. Others: 4881.8 {I29} from         
- 35CL3cL {+32}S(|a,p) and 4880.8 {I21} from {+32}S(|a,p|g)                      
- 35CL  G 1878.16     18      6                                                  
- 35CL cG RI$weighted average of 15 {I5} from {+34}S(p,|g) and 29 {I10} from E$  
- 35CL2cG From E|g data when measured                                            
- 35CL cG E$from E$ From E|g data when measured                                  
- 35CL  G 2187.0      76      24                                                 
- 35CL cG RI$unweighted average of 52 {I9} from {+32}S(|a,p|g) and 100 {I17} from
- 35CL2cG E$ From E|g data when measured                                         
- 35CL cG E$from E$ From E|g data when measured                                  
+ 35CL  L 4880.96   15 7/2              0.10 PS   9                              
+ 35CLX L XREF=LMO                                                               
+ 35CL cL T$unweighted average of 0.19 ps {I4} from {+32}S(|a,p|g) and 0.0056 ps 
+ 35CL2cL {I14} from {+34}S(p,|g)                                                
+ 35CL cL E$weighted average of 4881.8 {I29} from {+32}S(|a,p), 4880.8 {I21} from
+ 35CL2cL {+32}S(|a,p|g), and 4880.96 {I15} from {+34}S(p,|g)                    
+ 35CL cL T$lifetime |t = 8 fs {I2}: weighted average of |t = 7 fs {I2} from     
+ 35CL2cL {+34}S(p,|g) in 1972Hu11 with DSAM, |t = 7 fs {I3} from {+34}S(p,|g) in
+ 35CL3cL 1973Fa07 with DSAM, and |t = 10 fs {I3} from {+34}S(p,|g) in 1976Me12  
+ 35CL4cL with DSAM. Other: |t = 0.28 ps {I6} from {+32}S(|a,p|g) in 1972Br33    
+ 35CL5cL with DSAM.                                                             
+ 35CL cL J$|g(|q) in (|a,p|g).                                                  
+ 35CL  G 1878.16     15      5                                                  
+ 35CL  G 2187.0      52      9                                                  
+ 35CL cG E$from (p,|g)                                                          
+ 35CL cG RI$from (|a,p|g)                                                       
  35CL  G 2235.18     49      8                                                  
  35CL cG RI$weighted average of 52 {I9} from {+32}S(|a,p|g) and 47 {I8} from    
  35CL2cG {+34}S(p,|g)                                                           
@@ -871,9 +930,9 @@ Generated at: Wed 10/22/2025 at 01:48:27 PM EDT
  35CL  G 1985        11.1    22                                                 
  35CL cG RI$weighted average of 11.1 {I22} from {+12}C({+28}Si,|ap|g) and 11.1  
  35CL2cG {I22} from 3117.4 {I20} 100 {I8}                                       
- 35CL cG E$from ({+28}Si,|ap|g)                                                 
+ 35CL cG E$from 3117.4 {I20} 100 {I8}                                           
  35CL  G 2764                                                                   
- 35CL cG E$from ({+28}Si,|ap|g)                                                 
+ 35CL cG E$from 3117.4 {I20} 100 {I8}                                           
  35CL  L 6087.24   24 13/2-            6.2 PS    6                              
  35CLX L XREF=FGHILMc                                                           
  35CL cL T$weighted average of 5.3 ps {I10} from {+27}Al({+14}N,|apn|g), 6.5 ps 
@@ -994,9 +1053,9 @@ Generated at: Wed 10/22/2025 at 01:48:27 PM EDT
  35CL cL E$weighted average of 6660.2 {I8} from {+12}C({+28}Si,|ap|g) and 6660.2
  35CL2cL {I8} from 3117.4 {I20} 100 {I8}                                        
  35CL  G 2312                                                                   
- 35CL cG E$from ({+28}Si,|ap|g)                                                 
+ 35CL cG E$from 3117.4 {I20} 100 {I8}                                           
  35CL  G 3497                                                                   
- 35CL cG E$from ({+28}Si,|ap|g)                                                 
+ 35CL cG E$from 3117.4 {I20} 100 {I8}                                           
  35CL  L 6674.9    20                                                           
  35CLX L XREF=DLRY(6677*)c                                                      
  35CL cL E$weighted average of 6674 {I2} from {+1}H({+34}S,{+35}Cl|g), 6679.4   
@@ -1454,7 +1513,7 @@ Generated at: Wed 10/22/2025 at 01:48:27 PM EDT
  35CL cG RI$weighted average of 0.59 {I7} from {+34}S(p,|g) and 0.59 {I7} from  
  35CL2cG 3117.4 {I20} 100 {I8}                                                  
  35CL cG E$from 3117.4 {I20} 100 {I8}                                           
- 35CL  G 1963        0.11                                                       
+ 35CL  G 1963        0.11      [E1]                                             
  35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
  35CL  G 2778.9      1.49    11                                                 
  35CL cG RI$weighted average of 1.49 {I11} from {+34}S(p,|g) and 1.49 {I11} from
@@ -1472,7 +1531,7 @@ Generated at: Wed 10/22/2025 at 01:48:27 PM EDT
  35CL cG RI$weighted average of 0.72 {I8} from {+34}S(p,|g) and 0.72 {I8} from  
  35CL2cG 3117.4 {I20} 100 {I8}                                                  
  35CL cG E$from 3117.4 {I20} 100 {I8}                                           
- 35CL  G 5785.4      0.35    4 [E1]                                             
+ 35CL  G 5785.4      0.35    4                                                  
  35CL cG RI$weighted average of 0.35 {I4} from {+34}S(p,|g) and 0.35 {I4} from  
  35CL2cG 3117.4 {I20} 100 {I8}                                                  
  35CL cG E$from 3117.4 {I20} 100 {I8}                                           
@@ -1507,7 +1566,7 @@ Generated at: Wed 10/22/2025 at 01:48:27 PM EDT
  35CL cL E$weighted average of 7600.8 {I8} from {+34}S(p,|g) and 7600.8 {I8}    
  35CL2cL from 3117.4 {I20} 100 {I8}                                             
  35CL cL T$from (p,|g)                                                          
- 35CL  G 2437.4      5.8                                                        
+ 35CL  G 2437.4      5.8       [E1]                                             
  35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
  35CL  G 2719.7      6.1                                                        
  35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
@@ -1629,7 +1688,6 @@ Generated at: Wed 10/22/2025 at 01:48:27 PM EDT
  35CL  G 3626.1      8.6                                                        
  35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
  35CL  G 4682.4      14        D(+Q)     -0.01   5                              
- 35CL cG MR$from (p,|g)                                                         
  35CL  G 5922.0      1                                                          
  35CL cG E$from 3117.4 {I20} 100 {I8}                                           
  35CL cG RI$from (p,|g)                                                         
@@ -1879,7 +1937,7 @@ Generated at: Wed 10/22/2025 at 01:48:27 PM EDT
  35CL2cL {I4} from {+24}Mg({+16}O,|ap|g), 7872.78 {I30} from                    
  35CL3cL {+27}Al({+14}N,|apn|g), and 7872.83 {I30} from 3117.4 {I20} 100 {I8}   
  35CL  G 1213                                                                   
- 35CL cG E$from ({+28}Si,|ap|g)                                                 
+ 35CL cG E$from 3117.4 {I20} 100 {I8}                                           
  35CL  G 1786.2    5 9.6     4 D(+Q)     -0.6    6                              
  35CL cG E$weighted average of 1786.2 {I5} from {+24}Mg({+16}O,|ap|g) and 1786.2
  35CL2cG {I5} from 3117.4 {I20} 100 {I8}                                        
@@ -2279,51 +2337,51 @@ Generated at: Wed 10/22/2025 at 01:48:27 PM EDT
  35CL  L 8106.4    11 3/2                                                       
  35CLX L XREF=Oc(*)                                                             
  35CL  G 2506.6      1.4                                                        
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 3251.8      1.6                                                        
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 3267.1      1.4                                                        
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 3928.3      4.3                                                        
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 4047.0      3.5                                                        
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 4138.8      8.1                                                        
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 5103.3      24                                                         
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 5412.1      24        D+Q       +4.9    10                             
- 35CL cG E,RI,MR$from 3117.4 {I20} 100 {I8}                                     
+ 35CL cG MR$from 3117.4 {I20} 100 {I8}                                          
  35CL  G 6342.8      8.1                                                        
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 6886.3      95                                                         
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 8105.4      100       D+Q       +1.2    1                              
- 35CL cG E,RI,MR$from 3117.4 {I20} 100 {I8}                                     
+ 35CL cG MR$from 3117.4 {I20} 100 {I8}                                          
  35CL  L 8106.4    11 3/2                                                       
  35CLX L XREF=L(*)N(8100*)Oc(*)                                                 
  35CL  G 2506.6      1.4                                                        
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 3251.8      1.6                                                        
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 3267.1      1.4                                                        
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 3928.3      4.3                                                        
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 4047.0      3.5                                                        
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 4138.8      8.1                                                        
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 5103.3      24                                                         
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 5412.1      24        D+Q       +4.9    10                             
- 35CL cG E,RI,MR$from 3117.4 {I20} 100 {I8}                                     
+ 35CL cG MR$from 3117.4 {I20} 100 {I8}                                          
  35CL  G 6342.8      8.1                                                        
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 6886.3      95                                                         
- 35CL cG E,RI$from 3117.4 {I20} 100 {I8}                                        
+ 35CL cG E,RI$from (p,|g)                                                       
  35CL  G 8105.4      100       D+Q       +1.2    1                              
- 35CL cG E,RI,MR$from 3117.4 {I20} 100 {I8}                                     
+ 35CL cG MR$from 3117.4 {I20} 100 {I8}                                          
  35CL  L 8113.3    11 (1/2+,3/2,5/2+)                                           
  35CLX L XREF=Oc                                                                
  35CL cL E$weighted average of 8113.3 {I11} from {+34}S(p,|g) and 8113.3 {I11}  
@@ -3937,7 +3995,7 @@ Generated at: Wed 10/22/2025 at 01:48:27 PM EDT
  35CL2cL {I5} from {+24}Mg({+16}O,|ap|g), 8844.2 {I4} from                      
  35CL3cL {+27}Al({+14}N,|apn|g), and 8844.3 {I4} from 3117.4 {I20} 100 {I8}     
  35CL  G 526                                                                    
- 35CL cG E$from ({+28}Si,|ap|g)                                                 
+ 35CL cG E$from 3117.4 {I20} 100 {I8}                                           
  35CL  G 971.38    20 100.0  30 E2                                              
  35CL cG E$weighted average of 971.4 {I5} from {+24}Mg({+16}O,|ap|g), 971.38    
  35CL2cG {I20} from {+27}Al({+14}N,|apn|g), and 971.38 {I20} from 3117.4 {I20}  
@@ -3946,7 +4004,7 @@ Generated at: Wed 10/22/2025 at 01:48:27 PM EDT
  35CL2cG {I30} from 3117.4 {I20} 100 {I8}                                       
  35CL cG M$from 3117.4 {I20} 100 {I8}                                           
  35CL  G 2757                                                                   
- 35CL cG E$from ({+28}Si,|ap|g)                                                 
+ 35CL cG E$from 3117.4 {I20} 100 {I8}                                           
  35CL  L 8856.2    5                   0.010 KEV 5                              
  35CLX L XREF=N(8840*)Oc                                                        
  35CL cL E$weighted average of 8856.1 {I5} from {+34}S(p,|g) and 8856.2 {I5}    
@@ -5008,12 +5066,12 @@ Generated at: Wed 10/22/2025 at 01:48:27 PM EDT
  35CL2cL {I5} from 3117.4 {I20} 100 {I8}                                        
  35CL  L 13900                                                                  
  35CLX L XREF=Jc                                                                
- 35CL cL E$from {+31}P(|a,p),(|a,n):resonances                                  
+ 35CL cL E$from 3117.4 {I20} 100 {I8}                                           
  35CL  L 16306.4   16 (27/2-)          9.0 FS    LT                             
  35CLX L XREF=Fc                                                                
  35CL cL E$weighted average of 16306.4 {I16} from {+12}C({+28}Si,|ap|g) and     
  35CL2cL 16306.4 {I16} from 3117.4 {I20} 100 {I8}                               
  35CL cL T$from ({+28}Si,|ap|g)                                                 
  35CL  G 3734                                                                   
- 35CL cG E$from ({+28}Si,|ap|g)                                                 
+ 35CL cG E$from 3117.4 {I20} 100 {I8}                                           
                                                                                 
