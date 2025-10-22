@@ -135,9 +135,8 @@ Since 2015, the MSU Nuclear Data Center has been consistently recognized as one 
 # XUNDL Compilation and Data Consistency Review
 
 ## Summary Table
-This table summarizes all ENSDF datasets compiled from XUNDL submissions with comprehensive review tracking for professional work effort documentation.
 
-| Compilation Date | Manuscript | NSR Keynumber | Nucleus | Reaction             | Review  | Dataset |
+| Compilation Date | Manuscript | NSR Keynumber | Nucleus | Reaction             | Rounds  | Dataset |
 |----------|---------|----------|-------|---------------------------|---|----------------------------|
 | 20250912 | CH11036 | 2025LAAA | 127I  | 124SN(7LI,4NG):XUNDL-7    | 1 | 2025LAAA_CH11036_127I.ens  |
 | 20250811 | CG11116 | 2025ABAA | 99NB  | 9BE(238U,FG):XUNDL-3      | 1 | 2025ABAA_CG11116_99Nb.ens  |
@@ -153,7 +152,7 @@ This table summarizes all ENSDF datasets compiled from XUNDL submissions with co
 
 ### Papers Processed
 - **Total papers**: 5 PRC papers (submitted)
-- **NSR keynumbers**: CH11036, CG11116, CF10919, CF10990, CC10963
+- **Article numbers**: CH11036, CG11116, CF10919, CF10990, CC10963
 - **Total datasets compiled**: 8 nuclear datasets covering isotopes A=96 to A=127
 - **Total review rounds completed**: 7 review rounds across 5 papers
 

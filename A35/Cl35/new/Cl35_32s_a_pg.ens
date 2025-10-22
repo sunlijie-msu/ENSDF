@@ -226,10 +226,12 @@
  35CL  G 4618      2  100                                                       
  35CL cG E,RI$from 1972Br33                                                     
  35CL cG MR$+0.08 {I14} for J=3/2; -0.36 {I15} for J=5/2 (1970Ho09).            
- 35CL  L 4770      15                                                           
+ 35CL  L 4770      15 7/2,9/2                                                   
  35CL cL E$from 1970Ho09.                                                       
- 35CL  L 4880.8    21                  0.19 PS   4                              
+ 35CL cL J$from |g(|q) in 1970Ho09.                                             
+ 35CL  L 4880.8    21 7/2              0.19 PS   4                              
  35CL cL E$other: 4882 {I2} from 1972Br33, 4885 {I20} from 1970Ho09.            
+ 35CL cL J$from |g(|q) in 1970Ho09.                                             
  35CL cL T$Lifetime |t = 0.28 ps {I6} from 1972Br33 using DSAM.                 
  35CL  G 2187.1       52     9                                              &   
  35CL cG $Final level is uncertain, either 2646 or 2694 (1970Ho09).             
@@ -246,7 +248,7 @@
  35CL  L 5230      20 1/2,3/2,5/2                                               
  35CL dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
  35CL cL E$from 1970Ho09                                                        
- 35CL cL J$from |g(|q) in 1970Ho09.                                             
+ 35CL cL J$from |g(|q) in 1970Ho09. Spin=3/2,5/2 in Fig. 8 of 1970Ho09.         
  35CL  G 5230         100                                                       
  35CL cG RI$from 1970Ho09                                                       
  35CL  L 5407.1    15 11/2-            0.28 PS   7                              
@@ -270,7 +272,8 @@
  35CL cL E$from 1970Ho09                                                        
  35CL  L 5600      20                                                           
  35CL cL E$from 1970Ho09                                                        
- 35CL  L 5650      20                                                           
+ 35CL  L 5650      20 5/2,9/2                                                   
+ 35CL cL J$from |g(|q) in 1970Ho09.                                             
  35CL cL E$from 1970Ho09                                                        
  35CL  L 5850      25 5/2,9/2                                                   
  35CL dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
