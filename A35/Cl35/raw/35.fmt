@@ -1,8 +1,8 @@
 Program for ENSDF check: output for Format Error and Warnings (version 09/24/2025)
-Generated at: Tue 10/21/2025 at 03:13:43 PM EDT
+Generated at: Wed 10/22/2025 at 01:47:49 PM EDT
 
 ****************************************
-     Total 20 errors 23 warnings
+     Total 4 errors 2 warnings
 ****************************************
 
 -----------------------------------------------------------------------------------------
@@ -39,181 +39,19 @@ Generated at: Tue 10/21/2025 at 03:13:43 PM EDT
 #########################################################################################
 ### In dataset <35CL: ADOPTED LEVELS, GAMMAS>
 
-    293.  35CL9cL delayed coincidence (obtained using NaI(Tl) detectors with broad time  
-                                      *                                                    <E> Unbalanced bracket
-    352.  35CL  G 916                                                                   ?
-                  ****                                                                     <W> Ambiguous final levels found. Use "FL=" to specify
-                                                                                               Parent level:  3918.47 12, JPI=3/2+
-                                                                                               Calculated FL: 3002.5 10
-                                                                                               Possible final levels:
-                                                                                                              3002.64 9, JPI=5/2+ (assigned by default)
-                                                                                                              3006, JPI=5/2-
-    355.  35CL  G 1272.76      3.7    LT [E2]                                            
-                  ********                                                                 <E> No final level found for this gamma=1272.76 
-                                                                                               Parent level:  3918.47 12, JPI=3/2+
-                                                                                               Calculated FL: 2645.69 13
-                                                                                                 the closest final level is 2645.66
-                                                                                                 but has been assigned to previous gamma=1272.76
-    362.  35CL  G 2695         19     5  [M1,E2]                                         
-                  *****                                                                    <W> No final level within 3*sigma=3.03
-                                                                                               Parent level:  3918.47 12, JPI=3/2+
-                                                                                               Calculated FL: 1223.4 10
-                                                                                               Possible matches within 5 keV:
-                                                                                                              1219.39 7, JPI=1/2+ (assigned by default)
-                                                                                               Level-difference=2698.97 14 (with recoil correction)
-    730.  35CL  G 2643                                                                   
-                  *****                                                                    <W> Ambiguous final levels found. Use "FL=" to specify
-                                                                                               Parent level:  5646 2, JPI=(5/2,7/2,9/2+)
-                                                                                               Calculated FL: 3003 2
-                                                                                               Possible final levels:
-                                                                                                              3002.64 9, JPI=5/2+ (assigned by default)
-                                                                                                              3006, JPI=5/2-
-    741.  35CL  G 2652         100    6  [M1,E2]                                         
-                  *****                                                                    <W> Ambiguous final levels found. Use "FL=" to specify
-                                                                                               Parent level:  5655 2, JPI=3/2+
-                                                                                               Calculated FL: 3003 2
-                                                                                               Possible final levels:
-                                                                                                              3002.64 9, JPI=5/2+ (assigned by default)
-                                                                                                              3006, JPI=5/2-
-    784.  35CL  G 2687         100                                                       
-                  *****                                                                    <W> No final level within 3*sigma=12.37
-                                                                                               Parent level:  5830 4, JPI=(5/2,9/2)
-                                                                                               Calculated FL: 3143 4
-                                                                                               Closest level within 19 keV:
-                                                                                                              3162.87 7, JPI=7/2- (assigned by default)
-                                                                                               Level-difference=2667 4 (with recoil correction)
-    841.  35CL  L 6181      3  (1/2:7/2,9/2-)                                            
-                              ******************                                           <E> Invalid JPI text: mixed use of , and :
-    846.  35CL  L 6180      3  (7/2:17/2)+                                               
-                  **********                                                               <E> Level < preceding level=6181
-    867.  35CL  L 6427      2                                                            
-         *********************                                                             <W> Possible duplicate line
-    893.  35CL  L 6659.1    30 (7/2+)                                                    
-                  **********                                                               <E> Level < preceding level=6660.2
-    923.  35CL  L 6863      3                                                            
-                  **********                                                               <E> Level < preceding level=6866
-    925.  35CL  L 6866      2                                                            
-         *********************                                                             <W> Possible duplicate line
-    988.  35CL  G 3011.4       11     LT                                                 
-                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
-                                                                                               Parent level:  7185, JPI=5/2+
-                                                                                               Calculated FL: 4174 
-                                                                                               Possible final levels:
-                                                                                                              4173.43 23, JPI=5/2- (assigned by default)
-                                                                                                              4177.9 2, JPI=3/2-
-    991.  35CL  G 4182.0       6.5    LT                                                 
-                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
-                                                                                               Parent level:  7185, JPI=5/2+
-                                                                                               Calculated FL: 3003 
-                                                                                               Possible final levels:
-                                                                                                              3002.64 9, JPI=5/2+ (assigned by default)
-                                                                                                              3006, JPI=5/2-
-   1023.  35CL  G 3047.5       14                                                        
-         *************************                                                         <W> Possible duplicate line
-                  *******                                                                  <E> No final level found for this gamma=3047.5  
-                                                                                               Parent level:  7225.5 8, JPI=5/2
-                                                                                               Calculated FL: 4177.9 10
-                                                                                                 the closest final level is 4177.9
-                                                                                                 but has been assigned to previous gamma=3047.5
-   1248.  35CL  L 7693.9    8  (1/2:7/2,9/2-)                                            
-                              ******************                                           <E> Invalid JPI text: mixed use of , and :
-   1368.  35CL  L 7839.0    9  (1/2:5/2,7/2-)                                            
-                              ******************                                           <E> Invalid JPI text: mixed use of , and :
-   1398.  35CL  G 1213                                                                   
-                  *****                                                                    <W> Ambiguous final levels found. Use "FL=" to specify
-                                                                                               Parent level:  7872.83 30, JPI=13/2+
-                                                                                               Calculated FL: 6659.8 11
-                                                                                               Possible final levels:
-                                                                                                              6660.2 8 (assigned by default)
-                                                                                                              6659.1 30, JPI=(7/2+)
-   1424.  35CL  G 3702.7       10                                                        
-         *************************                                                         <W> Possible duplicate line
-                  *******                                                                  <E> No final level found for this gamma=3702.7  
-                                                                                               Parent level:  7880.8 9, JPI=3/2+,5/2+
-                                                                                               Calculated FL: 4177.9 10
-                                                                                                 the closest final level is 4177.9
-                                                                                                 but has been assigned to previous gamma=3702.7
-   1483.  35CL  G 3792.2       30                                                        
-         *************************                                                         <W> Possible duplicate line
-                  *******                                                                  <E> No final level found for this gamma=3792.2  
-                                                                                               Parent level:  7970.3 10, JPI=(5/2-,7/2-)
-                                                                                               Calculated FL: 4177.9 11
-                                                                                                 the closest final level is 4177.9
-                                                                                                 but has been assigned to previous gamma=3792.2
-   1497.  35CL  G 2333         2.8                                                       
-         **************************                                                        <W> Possible duplicate line
-   1602.  35CL  G 3897.8       14                                                        
-         *************************                                                         <W> Possible duplicate line
-                  *******                                                                  <E> No final level found for this gamma=3897.8  
-                                                                                               Parent level:  8075.9 10, JPI=(3/2,5/2)
-                                                                                               Calculated FL: 4177.9 11
-                                                                                                 the closest final level is 4177.9
-                                                                                                 but has been assigned to previous gamma=3897.8
-   1689.  35CL  G 3978.7       9.8                                                       
-         **************************                                                        <W> Possible duplicate line
-                  *******                                                                  <E> No final level found for this gamma=3978.7  
-                                                                                               Parent level:  8156.8 11, JPI=(5/2+,7/2-)
-                                                                                               Calculated FL: 4177.9 12
-                                                                                                 the closest final level is 4177.9
-                                                                                                 but has been assigned to previous gamma=3978.7
-   1754.  35CL  G 5248         7.3                                                       
-                  *****                                                                    <W> Ambiguous final levels found. Use "FL=" to specify
-                                                                                               Parent level:  8251 5
-                                                                                               Calculated FL: 3003 5
-                                                                                               Possible final levels:
-                                                                                                              3002.64 9, JPI=5/2+ (assigned by default)
-                                                                                                              3006, JPI=5/2-
-   1784.  35CL  G 4103.5       6.9                                                       
-         **************************                                                        <W> Possible duplicate line
-                  *******                                                                  <E> No final level found for this gamma=4103.5  
-                                                                                               Parent level:  8277.2 5, JPI=5/2+
-                                                                                               Calculated FL: 4173.4 7
-                                                                                                 the closest final level is 4173.43
-                                                                                                 but has been assigned to previous gamma=4103.5
-   1799.  35CL  G 4104.2       50                                                        
-         *************************                                                         <W> Possible duplicate line
-                  *******                                                                  <E> No final level found for this gamma=4104.2  
-                                                                                               Parent level:  8282.4 5, JPI=(3/2-,5/2)
-                                                                                               Calculated FL: 4177.9 7
-                                                                                                 the closest final level is 4177.9
-                                                                                                 but has been assigned to previous gamma=4104.2
-   2335.  35CL  G 526                                                                    
-                  ****                                                                     <W> Ambiguous final levels found. Use "FL=" to specify
-                                                                                               Parent level:  8844.3 4, JPI=17/2+
-                                                                                               Calculated FL: 8318.3 11
-                                                                                               Possible final levels:
-                                                                                                              8318.1 3 (assigned by default)
-                                                                                                              8319.3 5, JPI=15/2-
-   2397.  35CL  G 2724         15     8                                                  
-                  *****                                                                    <W> Ambiguous final levels found. Use "FL=" to specify
-                                                                                               Parent level:  8904.8 5, JPI=(1/2,3/2,5/2+)
-                                                                                               Calculated FL: 6180.7 11
-                                                                                               Possible final levels:
-                                                                                                              6181 3, JPI=(1/2:7/2,9/2-) (assigned by default)
-                                                                                                              6180 3, JPI=(7/2:17/2)+
-   2689.  35CLF G FL=8487.4                                                              
-                     ******                                                                <E> Exact-match final level not found for EG=1693.5 5
-                                                                                               Parent level:  10180.6 5, JPI=19/2-
-                                                                                                         EG:  1693.5 5  MUL=Q
-                                                                                               Calculated FL: 8487.1 7
-                                                                                               Possible matches within 2 keV:
-                                                                                                              8486.2 5, JPI=3/2- (excluded by XREF)
-                                                                                                              8487.0 5, JPI=15/2-
-   2764.  35CLF G FL=8788.7                                                              
-                     ******                                                                <E> Exact-match final level not found for EG=2069.8 10
-                                                                                               Parent level:  10858.5 8, JPI=19/2+
-                                                                                                         EG:  2069.8 10  MUL=Q
-                                                                                               Calculated FL: 8788.6 13
-                                                                                               Possible matches within 2 keV:
-                                                                                                              8787.2 5, JPI=(3/2-,5/2,7/2-)
-                                                                                                              8788.3 6, JPI=15/2+
-   2878.  35CL  L 1.25E4    5                                                            
-                  **********                                                               <E> Level < preceding level=12571.7
+     16. 
+         *                                                                                 <E> Illegal blank line in dataset
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                         **    *****  Composite Data Set Checks *****
+                                                                                         **<E> GAMMAS in DSID but no gamma
+
+#########################################################################################
+### In dataset <35CL: M,MR$Primarily from |g|g(|q)(A>
+
 
 -----------------------------------------------------------------------------------------
     In file: D:\X\ND\ENSDF\A35\Cl35\new\Cl35_coulex.ens
 -----------------------------------------------------------------------------------------
-
 
 #########################################################################################
 ### In dataset <35CL: COULOMB EXCITATION>
