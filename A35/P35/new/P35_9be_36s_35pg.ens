@@ -1,6 +1,5 @@
  35P     9BE(36S,35PG)                 2016MU03                  ENSDF    202509
- 35P   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
- 35P 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35P   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$                                             
  35P  dL E$Least-squares fitting is done by GLSC (version 17-Jan-2025)          
  35P  c  J|p=0+ for {+36}S ground state.                                        
  35P  c  2016Mu03: A secondary beam {+36}S was produced via the projectile      
@@ -25,7 +24,12 @@
  35P Kc  Calculated single-particle cross sections (|s{-sp}) for proton removal 
  35P Lc  and parallel momentum distributions using the eikonal model. This work 
  35P Mc  is also part of the thesis 2015MuZY.                                   
- 35P Nc
+ 35P  d
+ 35P  cL $b{-f} values under comments are population fraction in the knock-out  
+ 35P 2cL reaction, |s{-f}{+sp} values are for calculated single-particle cross  
+ 35P 3cL sections, and R{-s} values are quenching factors from a systematics    
+ 35P 4cL study in 2024To14. The partial cross sections to each level can be     
+ 35P 5cL deduced from b{-f}|*|s{-inc}{+exp}.                                    
  35P  cL $The inclusive cross section |s{-inc}{+exp} for producing {+35}P from  
  35P 2cL {+36}S is measured to be 51 mb {I1}. 95.3% is attributed to a direct   
  35P 3cL knockout process from the p-sd shell, i.e.,                            
