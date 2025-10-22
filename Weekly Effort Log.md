@@ -145,16 +145,14 @@ Since 2015, the MSU Nuclear Data Center has been consistently recognized as one 
 | 20250811 | CG11116 | 2025ABAA | 109NB | 9BE(238U,FG):XUNDL-6      | 1 | 2025ABAA_CG11116_109Nb.ens |
 | 20250808 | CF10919 | 2025LIAA | 115SB | 109AG(12C,A2NG):XUNDL-6   | 2 | 2025LIAA_CF10919_115Sb.ens |
 | 20250710 | CF10990 | 2025DEAA | 125TE | 124SN(A,3NG):XUNDL-11     | 1 | 2025DEAA_CF10990_125Te.ens |
-| 20250331 | CC10963 | 2025SHAA | 96NB  | 82SE(18O,P3NG):XUNDL-7    | 1 | 2025SHAA_CC10963_96Nb.ens  |
-
 
 ## Work Effort Summary
 
 ### Papers Processed
-- **Total papers**: 5 PRC papers (submitted)
-- **Article numbers**: CH11036, CG11116, CF10919, CF10990, CC10963
-- **Total datasets compiled**: 8 nuclear datasets covering isotopes A=96 to A=127
-- **Total review rounds completed**: 7 review rounds across 5 papers
+- **Total papers**: 4 PRC papers (submitted)
+- **Article numbers**: CH11036, CG11116, CF10919, CF10990
+- **Total datasets compiled**: 7 nuclear datasets covering isotopes A=99 to A=127
+- **Total review rounds completed**: 6 review rounds across 4 papers
 
 ### Review Round Breakdown
 | Paper Code | Datasets | Review Rounds | Status |
@@ -163,7 +161,7 @@ Since 2015, the MSU Nuclear Data Center has been consistently recognized as one 
 | CG11116    | 4        | 2             | Completed |
 | CF10919    | 1        | 2             | Completed |
 | CF10990    | 1        | 1             | Completed |
-| CC10963    | 1        | 1             | Completed |
+
 
 
 ## Technical Notes
