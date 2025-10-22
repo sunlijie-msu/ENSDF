@@ -1,6 +1,5 @@
  35S     26MG(18O,2ANG)                2021GO09                  ENSDF    202509
- 35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
- 35S 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$                                             
  35S  dL E$Least-squares fitting is done by GLSC (version 03-Jun-2025)          
  35S  c  2021Go09: {+26}Mg({+18}O,2|an){+35}S fusion-evaporation reaction. Exp 1
  35S 2c  determined the beam energy for producing high-spin states of {+35}S: an
@@ -20,7 +19,8 @@
  35S  cG $R{+|g1}{-ADO}=I|g1(47|' gated by |g{-2} at all)/I|g1(86|' gated by    
  35S 2cG |g{-2} at all). Expected values are |?0.8 for dipole (|DJ=1) and |?1.0 
  35S 3cG for stretched quadrupole (|DJ=2) transitions.                          
- 35S  cG M$From |g(|q) and |g|g(|q)(ADO) data in 2021Go09.                      
+ 35S  cG E,RI$From 2021Go09                                                     
+ 35S  cG M$From |g|g(|q)(ADO) data in 2021Go09.                                 
  35S  cL E$From a least-squares fit to |g-ray energies.                         
  35S  cL J$As given in 2021Go09, which quotes the J|p assignments for levels    
  35S 2cL below 8.5 MeV from 2014Ay01 but adds parentheses. 2021Go09 assigns J|p 
@@ -39,14 +39,14 @@
  35S   L 4023.1    5  (11/2-)                                                   
  35S   G 2032.4    4  70     16                                                 
  35S   L 4822.4    6  (9/2+)                                                    
- 35S   G 1007.2    11   4    2   D                                              
+ 35S   G 1007.2    11   4    2   (D)                                            
  35S  cG $R{-ADO}=0.87 {I15}                                                    
  35S   G 1228.3    6   11    2                                                  
  35S   L 4899.6    7  (9/2+)                                                    
  35S   G 1305.3    4   5     3                                                  
  35S   L 5009.8    6  (11/2-)                                                   
- 35S   G 986.6     3   26    1   D                                              
- 35S  cG $R{-ADO}=0.91 {I13}                                                    
+ 35S   G 986.6     3   26    1                                                  
+ 35S  cG $R{-ADO}=0.91 {I13} consistent with |DJ=(0)                            
  35S   L 5412.4    6  (9/2+)                                                    
  35S   G 1389.0    8  9      2                                                  
  35S   L 5878.0    6  (11/2+)                                               A   
@@ -74,13 +74,13 @@
  35S   G 731.6     15  8     3                                                  
  35S   G 1576.3    14  14    3   D                                              
  35S  cG $R{-ADO}=0.43 {I9}. 2021Go09 Table I lists this |DJ=1 ADO ratio for the
- 35S 2cG 731.6|g, corresponding to a (17/2)->(17/2+) transition. 2021Go09       
- 35S 3cG repeatedly states the 8756 level J=(17/2). Evaluators reassign this    
- 35S 4cG |DJ=1 ADO ratio to the 1576.3|g, corresponding to a (17/2)->(15/2+)    
- 35S 5cG transition.                                                            
+ 35S 2cG 731.6|g, which however is a (17/2) to (17/2+) transition with |DJ=0.   
+ 35S 3cG 2021Go09 repeatedly states the 8756 level has J=(17/2) and therefore   
+ 35S 4cG Evaluators reassign this |DJ=1 ADO ratio to the 1576.3|g, corresponding
+ 35S 5cG to a (17/2) to (15/2+) transition.                                       
  35S   L 10048.4   10 (19/2)                                                A   
  35S   G 2868.7    8    26   2   Q                                              
  35S  cG $R{-ADO}=0.98 {I13}                                                    
  35S   L 12469.1   15 (21/2)                                                A   
- 35S   G 2420.6    11  21    6   D                                              
+ 35S   G 2420.6    11  21    6   (D)                                            
  35S  cG $R{-ADO}=0.50 {I42}                                                    

@@ -1,6 +1,5 @@
  35S     9BE(36S,35SG)                 2015MUZY                  ENSDF    202509
- 35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
- 35S 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$                                             
  35S  dL E$Least-squares fitting is done by GLSC (version 17-Jul-2025)          
  35S  c  J|p=0+ for {+36}S ground state.                                        
  35S  c  2015MuZY: A secondary beam {+36}S was produced via the projectile      
@@ -24,17 +23,22 @@
  35S Jc  L-transfers, partial knockout cross sections and spectroscopic factors.
  35S Kc  Calculated single-particle cross sections (|s{-sp}) for neutron removal
  35S Lc  and parallel momentum distributions using the eikonal model.           
- 35S Mc                                                                         
- 35S  cG E$Evaluators assume |g-ray energy uncertainties based on the statement 
- 35S 2cG in 2016Mu03 that |g-ray energy centroids were determined with an       
- 35S 3cG uncertainty of 2 keV.                                                  
+ 35S  d                                                                         
+ 35S  cG E$From 2015MuZY. Evaluators assume |g-ray energy uncertainties based on
+ 35S 2cG the statement in 2016Mu03 that |g-ray energy centroids were determined 
+ 35S 3cG with an uncertainty of 2 keV.                                          
+ 35S  cL $b{-f} values under comments are population fraction in the knock-out  
+ 35S 2cL reaction, |s{-f}{+sp} values are for calculated single-particle cross  
+ 35S 3cL sections, and R{-s} values are quenching factors from a systematics    
+ 35S 4cL study in 2024To14. The partial cross sections to each level can be     
+ 35S 5cL deduced from b{-f}|*|s{-inc}{+exp}.                                    
  35S  cL $The inclusive cross section |s{-inc}{+exp} for producing {+35}S from  
  35S 2cL {+36}S is measured to be 63.7 mb {I6}.                                 
  35S  cL E$From a least-squares fit to |g-ray energies.                         
  35S  cL L$2015MuZY deduced L by comparing the measured and eikonal-calculated  
  35S 2cL parallel momentum distributions of residuals.                          
  35S  cL J$As given in 2015MuZY. Inconsistencies exist between the 2015MuZY     
- 35S 2cL reported L values and J|p from other datasets.                     
+ 35S 2cL reported L values and J|p from other datasets.                         
  35S  cL S$The spectroscopic factor C{+2}S=b{-f}|s{-inc}{+exp}/R{-s}|s{-f}{+sp},
  35S 2cL where b{-f} is the population fraction, |s{-inc}{+exp} is the measured 
  35S 3cL total inclusive cross section, R{-s} is the quenching factor from a    
@@ -65,15 +69,15 @@
  35S   G 3425      2                                                            
  35S   L 3602      2                                   2        0.3       1     
  35S  cL $b{-f}=3.0% {I7}, |s{-f}{+sp}=11.0 mb, R{-s}=0.60 {I12}.               
- 35S  cL L$inconsistent with J|p=(7/2+) in the Adopted Levels.
+ 35S  cL L$inconsistent with J|p=(7/2+) in the Adopted Levels.                  
  35S   G 3602      2                                                            
  35S   L 3821      3                                   3        0.3       1     
  35S  cL $b{-f}=4.0% {I9}, |s{-f}{+sp}=11.8 mb, R{-s}=0.72 {I14}.               
- 35S  cL L$inconsistent with J|p=(9/2)- in the Adopted Levels.
+ 35S  cL L$inconsistent with J|p=(9/2)- in the Adopted Levels.                  
  35S   G 1830      2                                                            
  35S   L 3895      3                                   0        0.15      4     
  35S  cL $b{-f}=2.3% {I5}, |s{-f}{+sp}=13.5 mb, R{-s}=0.72 {I14}.               
- 35S  cL L$inconsistent with J|p=(5/2+) in the Adopted Levels.
+ 35S  cL L$inconsistent with J|p=(5/2+) in the Adopted Levels.                  
  35S   G 1542      2                                                            
  35S   L 4028      2                                   2        0.6       1     
  35S  cL $b{-f}=6.4% {I10}, |s{-f}{+sp}=12.1 mb, R{-s}=0.60 {I12}.              

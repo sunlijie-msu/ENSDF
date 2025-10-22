@@ -1,6 +1,5 @@
  35S     24MG(14N,3PG)                 2014AY01                  ENSDF    202509
- 35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
- 35S 2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$                                             
  35S  dG $Transition strength is calculated by Java-RULER (version 10-Jun-2025) 
  35S  dL E$Least-squares fitting is done by GLSC (version 03-Jun-2025)          
  35S  c  2014Ay01: {+24}Mg({+14}N,3p){+35}S fusion-evaporation reaction. A      
@@ -16,7 +15,7 @@
  35S Bc  calculations.                                                          
  35S  cG $R{-ADO}=[I|g(34|')+I|g(146|')]/2I|g(90|'). Expected values are 0.8 for
  35S 2cG stretched dipole (|DJ=1) and 1.4 for stretched quadrupole (|DJ=2) or   
- 35S 3cG unstretched dipole (|DJ=0) transitions.                                
+ 35S 3cG non-stretched dipole (|DJ=0) transitions.                              
  35S  cG M,MR$From |g(|q), |g|g(|q)(ADO) data, and RUL when T{-1/2} is available
  35S 2cG in 2014Ay01.                                                           
  35S  cL E$From a least-squares fit to |g-ray energies.                         
@@ -49,9 +48,10 @@
  35S  cG $R{-ADO}=1.36 {I16}.                                                   
  35S   L 3816.0    3  9/2-             0.28 PS   3                          A   
  35S   G 1824.6    2  24.9   15 M1+E2    +0.55   9                              
- 35S  cG $R{-ADO}=1.58 {I5}, A{-2}=+0.48 {I4}, A{-4}=+0.08 {I6}. R{-ADO} seems  
- 35S 2cG questionable considering |DJ=1 and M1+E2 assigned by the authors of    
- 35S 3cG 2014Ay01.                                                              
+ 35S  cG M,MR$D+Q and |d from |g(|q) in 2014Ay01; E1+M2 ruled out by RUL
+ 35S  cG $R{-ADO}=1.58 {I5} indicating |DJ=2 or 0 seems questionable considering
+ 35S 2cG |DJ=1 from level scheme                                                
+ 35S  cG $A{-2}=+0.48 {I4}, A{-4}=+0.08 {I6}                                    
  35S B G BM1W=0.0099 +14-12 $BE2W=3.4 +10-9                                     
  35S   L 3886.4    4  5/2+                                                      
  35S   G 1538.4    8  0.5    2                                                  
