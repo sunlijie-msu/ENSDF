@@ -1,5 +1,5 @@
 Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 10/07/2025)
-Generated at: Wed 10/22/2025 at 05:15:19 PM EDT                                 
+Generated at: Wed 10/22/2025 at 06:49:28 PM EDT                                 
                                                                                 
  35CL    ADOPTED LEVELS, GAMMAS                                  ENSDF    202509
  35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
@@ -119,8 +119,8 @@ Generated at: Wed 10/22/2025 at 05:15:19 PM EDT
  35CL cG E$weighted average of 1219.3 {I2} from {+35}Ar |e decay and 1219.4 {I1}
  35CL2cG from {+35}Cl(p,p'|g). Other: 1219.5 {I10} from {+32}S(|a,p|g)          
  35CL cG MR$from Coulomb excitation                                             
- 35CL cG M,MR$|DJ=1 from {+35}Cl(p,p'|g), E1+M2 ruled out by RUL. |d from       
- 35CL2cG B(E2)|_=0.00152 {I14} measured in Coulomb excitation and adopted       
+ 35CL cG M,MR$|DJ=1 from |g(|q) in {+35}Cl(p,p'|g), E1+M2 ruled out by RUL. |d  
+ 35CL2cG from B(E2)|_=0.00152 {I14} measured in Coulomb excitation and adopted  
  35CL3cG lifetime |t = 0.172 ps {I20}.                                          
  35CL  L 1763.18   10 5/2+             3.9E2 FS  4                              
  35CLX L XREF=BEFGHIKLMOQRSTUVWX(1785)Y(1750)Zad                                
@@ -136,7 +136,7 @@ Generated at: Wed 10/22/2025 at 05:15:19 PM EDT
  35CL5cL from {+32}S(|a,p|g), 1763.0 {I5} from {+34}S(p,|g), 1758 {I10} from    
  35CL6cL {+34}S({+3}He,d), 1763.26 {I10} from {+35}Cl(p,p'|g), 1785 {I50} from  
  35CL7cL {+36}Ar(pol d,{+3}He), and 1750 {I40} from {+37}Cl(p,t)                
- 35CL cL J$L=2 from 0+ in (d,n); spin=5/2 from |g(|q) in {+32}S(|a,p|g),        
+ 35CL cL J$L=2 from 0+ in (d,n); spin=5/2 from p|g(|q) in {+32}S(|a,p|g),       
  35CL2cL {+34}S(p,|g), and {+35}Cl(p,p'|g).                                     
  35CL cL T$lifetime |t = 0.52 ps {I5}: weighted average of |t = 0.54 ps {I7}    
  35CL2cL from {+2}H({+34}S,n|g) in 1973Wa10 with DSAM, |t = 0.55 ps {I15} from  
@@ -175,8 +175,8 @@ Generated at: Wed 10/22/2025 at 05:15:19 PM EDT
  35CL4cL {I17} from {+35}Cl(p,p'|g). Others: 2645.1 {I10} from {+35}Ar |e decay,
  35CL5cL 2645.8 {I6} from {+12}C({+28}Si,|ap|g), and 2645.8 {I8} from           
  35CL6cL {+32}S(|a,p|g)                                                         
- 35CL cL J$spin=7/2 from |g(|q) in {+32}S(|a,p|g); parity from 882|g, M1+E2 to  
- 35CL2cL 5/2+, 1763 level in {+32}S(|a,p|g).                                    
+ 35CL cL J$spin=7/2 from p|g(|q) in {+32}S(|a,p|g) and |g(|q) in {+34}S(p,|g);  
+ 35CL2cL parity from 882|g, M1+E2 to 5/2+, 1763 level in {+32}S(|a,p|g).        
  35CL cL T$lifetime |t = 0.229 ps {I30}: weighted average of |t = 0.30 ps {I9}  
  35CL2cL from {+32}S(|a,p|g) in 1969In04 with DSAM, |t = 0.255 ps {I65} in      
  35CL3cL {+34}S(p,|g) from 1972Hu11 with DSAM, |t = 0.200 ps {I30} in           
@@ -195,7 +195,7 @@ Generated at: Wed 10/22/2025 at 05:15:19 PM EDT
  35CL2cG {I13} from {+16}O({+24}Mg,|ap|g), 11.08 {I28} from                     
  35CL3cG {+24}Mg({+16}O,|ap|g), 11.1 {I22} from {+32}S(|a,p|g), 9.5 {I11} from  
  35CL4cG {+34}S(p,|g), and 13 {I5} from {+35}Cl(p,p'|g)                         
- 35CL cG M$D+Q from |g(|q) in (|a,p|g); E1+M2 ruled out by RUL.                 
+ 35CL cG M$D+Q from p|g(|q) in (|a,p|g); E1+M2 ruled out by RUL.                
  35CL cG MR$weighted average of +0.25 {I5} from (|a,p|g) and +0.17 {I5} from    
  35CL2cG (p,p'|g).                                                              
  35CL  G 1426.28     1.2     LT [M3]                                            
@@ -281,7 +281,9 @@ Generated at: Wed 10/22/2025 at 05:15:19 PM EDT
  35CL8cL {+32}S(|a,p|g) from 1969In04 with DSAM, and |t < 80 fs in              
  35CL9cL {+35}Cl(p,p'|g) from 1972Br45 with DSAM.                               
  35CL  G 309.0       5       LT [M1,E2]                                         
+ 35CL cG RI$from (|a,p|g).                                                      
  35CL  G 356.8       1       LT [M1,E2]                                         
+ 35CL cG RI$from (|a,p|g).                                                      
  35CL  G 1239.7      2.2     11 [M1,E2]                                         
  35CL cG E$from (p,|g)                                                          
  35CL cG RI$from (p,p'|g).                                                      
@@ -312,8 +314,8 @@ Generated at: Wed 10/22/2025 at 05:15:19 PM EDT
  35CL5cL from {+34}S(p,|g), 3158 {I10} from {+34}S({+3}He,d), 3162.75 {I10} from
  35CL6cL {+35}Cl(p,p'|g), 3170 {I20} from {+36}Ar(d,{+3}He), and 3159 {I20} from
  35CL7cL {+36}Ar(pol d,{+3}He)                                                  
- 35CL cL J$L=3 from 0+ in (d,n), ({+3}He,d), (d,{+3}He), and (pol d,{+3}He).    
- 35CL2cL Spin=7/2 from |g(|q) in (|a,p|g), (p,|g) , and (p,p'|g).               
+ 35CL cL J$L=3 from 0+ in (d,n), ({+3}He,d), (d,{+3}He), and (pol d,{+3}He);    
+ 35CL2cL Spin=7/2 from p|g(|q) in (|a,p|g) and |g(|q) in (p,|g) and (p,p'|g).   
  35CL cL T$lifetime |t = 30.6 ps {I9}: weighted average of |t = 42 ps {I2} in   
  35CL2cL {+24}Mg({+16}O, |ap|g) from 1974Va13 with RDM, |t = 41.7 ps {I17} in   
  35CL3cL {+24}Mg({+16}O, |ap|g) from 1976Ke02 with RDM, |t = 45 ps {I6} in      
@@ -330,33 +332,36 @@ Generated at: Wed 10/22/2025 at 05:15:19 PM EDT
  35CLEcL {+34}S(p,|g) in 1976Me12 with DSAM, |t > 17 ps from {+35}Cl(p,p'|g) in 
  35CLFcL 1972Va06 with RDM, and |t > 10 ps from {+35}Cl(p,p'|g) in 1972Br45 with
  35CLGcL RDM.                                                                   
- 35CL  G 160.67    20 1.10   30 [E1]                                            
+ 35CL  G 160.67    20 1.5    4 [E1]                                             
  35CL cG E$weighted average of 161 {I1} from {+24}Mg({+16}O,|ap|g) and 160.66   
  35CL2cG {I20} from {+27}Al({+14}N,|apn|g)                                      
- 35CL cG RI$from ({+28}Si,|ap|g).                                               
+ 35CL cG RI$unweighted average of 1.10 {I30} from {+12}C({+28}Si,|ap|g) and 1.89
+ 35CL2cG {I22} from {+34}S(p,|g)                                                
  35CL  G 469.5       0.54    LT [M2]                                            
- 35CL  G 517.47    11 12.6   15 D                                               
+ 35CL cG RI$from (|a,p|g).                                                      
+ 35CL  G 517.47    11 12.3   16 D                                               
  35CL cG E$weighted average of 517.7 {I1} from {+16}O({+24}Mg,|ap|g), 517.3 {I5}
  35CL2cG from {+24}Mg({+16}O,|ap|g), 517.26 {I10} from {+27}Al({+14}N,|apn|g),  
  35CL3cG 517.4 {I15} from {+32}S(|a,p|g), and 517.0 {I8} from {+35}Cl(p,p'|g)   
  35CL cG RI$unweighted average of 9.2 {I5} from {+12}C({+28}Si,|ap|g), 14.3 {I8}
  35CL2cG from {+16}O({+24}Mg,|ap|g), 11.1 {I13} from {+24}Mg({+16}O,|ap|g), 11.1
- 35CL3cG {I33} from {+32}S(|a,p|g), 11.1 {I22} from {+34}S(p,|g), and 19 {I8}   
+ 35CL3cG {I33} from {+32}S(|a,p|g), 8.9 {I11} from {+34}S(p,|g), and 19 {I8}    
  35CL4cG from {+35}Cl(p,p'|g)                                                   
- 35CL cG M$from |g|g(|q)(DCO) in ({+28}Si,|ap|g).                               
- 35CL  G 1399.9    7 0.50    20 E1+M2    +0.44   12                             
- 35CL cG MR$from |g(|q) in (p,|g).                                              
- 35CL cG E,RI$from {+24}Mg({+16}O,|ap|g).                                       
+ 35CL cG M$D from |g|g(|q)(DCO) in ({+28}Si,|ap|g); |D|p=yes from level scheme. 
+ 35CL  G 1399.9    7 0.34    5 E1+M2     +0.44   12                             
+ 35CL cG RI$weighted average of 0.50 {I20} from {+24}Mg({+16}O,|ap|g) and 0.33  
+ 35CL2cG {I5} from {+34}S(p,|g)                                                 
+ 35CL cG M,MR$from |g(|q) in (p,|g) (1971Pr11).                                 
  35CL  G 1943.54     0.22    LT [E3]                                            
  35CL cG E,RI$from (p,|g)                                                       
- 35CL  G 3162.53   10 100.0  20 M2+E3    +0.16   1                              
+ 35CL  G 3162.53   10 100.0  11 M2+E3    +0.16   1                              
  35CL cG E$weighted average of 3162.7 {I4} from {+16}O({+24}Mg,|ap|g), 3162.6   
  35CL2cG {I3} from {+24}Mg({+16}O,|ap|g), 3162.43 {I10} from                    
  35CL3cG {+27}Al({+14}N,|apn|g), and 3162.6 {I1} from {+35}Cl(p,p'|g). Other:   
  35CL4cG 3162.6 {I15} from {+32}S(|a,p|g)                                       
  35CL cG RI$weighted average of 100 {I5} from {+12}C({+28}Si,|ap|g), 100.0 {I30}
  35CL2cG from {+16}O({+24}Mg,|ap|g), 100.0 {I20} from {+24}Mg({+16}O,|ap|g),    
- 35CL3cG 100.0 {I33} from {+32}S(|a,p|g), 100.0 {I22} from {+34}S(p,|g), and    
+ 35CL3cG 100.0 {I33} from {+32}S(|a,p|g), 100.0 {I11} from {+34}S(p,|g), and    
  35CL4cG 100.0 {I20} from {+35}Cl(p,p'|g)                                       
  35CL cG M$from |g|g(|q)(ADO) and |g(lin pol) in {+24}Mg({+16}O,|ap|g),         
  35CL2cG |g|g(|q)(DCO) and |g|g(lin pol) in {+12}C({+28}Si,|ap|g), |g(|q) and   
