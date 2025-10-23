@@ -1,6 +1,5 @@
  35CL    36AR(N,D)                     1977PA29                  ENSDF    202509
- 35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
- 35CL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$                                             
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
  35CL c  J|p=0+ for {+36}Ar ground state.                                       
@@ -13,12 +12,18 @@
  35CL7c  crystal. Measured |s(E{-d},|q). Deduced levels, L, spectroscopic       
  35CL8c  factors from local zero-range DWUCK-DWBA analysis of the measured      
  35CL9c  |s(|q).                                                                
+ 35CL cL E$From 1977Pa29                                                        
  35CL cL L,S$From DWBA analysis of the measured |s(|q) in 1977Pa29.             
+ 35CL cL E(A),L(A)$1977Pa29 state that the first and second excited states are  
+ 35CL2cL recorded together and not resolved, but their angular distributions    
+ 35CL3cL could be separated due to different L-transfers, however statistical   
+ 35CL4cL errors prevent an accurate determination of the smaller L=2 component  
+ 35CL5cL from the second excited state.                                         
  35CL  L 0                                             2                        
  35CL cL S$3.83 {I48} and 3.90 {I47} using two sets of optical parameters.      
- 35CL  L 1219                                          0                        
+ 35CL  L 1219                                          0                    A   
  35CL cL S$1.94 {I23} and 3.30 {I40} using two sets of optical parameters. Other
  35CL2cL spectroscopic factors calculated using two sets of optical parameters  
  35CL3cL did not show large differences.                                        
- 35CL  L 1763                                                                   
+ 35CL  L 1763                                          (2)                  A   
 
