@@ -1,6 +1,5 @@
  35CL    32S(A,P)                      2019SE09,1973GO16         ENSDF    202509
- 35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
- 35CL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$                                             
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
  35CL c  J|p=0+ for {+32}S ground state.                                        
@@ -31,14 +30,17 @@
  35CL6c  Deduced levels, J, |p, L-transfers, and J-dependence for the g.s. and  
  35CL7c  1763-keV level from local zero-range DWUCK-DWBA analysis of the        
  35CL8c  measured |s(|q).                                                       
- 35CL c  Other: 1996So21 (cross sections)
+ 35CL c  Other: 1996So21 (cross sections)                                       
  35CL cL E$From 1973Go16, unless otherwise noted.                               
  35CL cL E(K)$From 2019Se09.                                                    
  35CL cL E(D)$Doublet in 1973Go16.                                              
  35CL cL E(T)$Triplet in 1973Go16.                                              
- 35CL cL J$From 2019Se09 FRESCO-DWBA analysis of measured |s(|q), unless        
- 35CL2cL otherwise noted.                                                       
+ 35CL cL J$From 2019Se09, based on FRESCO-DWBA analysis of measured |s(|q),     
+ 35CL2cL unless otherwise noted.                                                
  35CL cL L$From 1971Au07                                                        
+ 35CL cL J(X)$Original firm assignments in 2019Se09 are placed in paretheses by 
+ 35CL2cL the evaluators considering poor fit to measured |s(|q) and/or few data 
+ 35CL3cL points used in the fitting                                                                 
  35CL  L 0                                             2                        
  35CL cL J$3/2+ assumed in 1971Au07 for investigation of J-dependence of L=     
  35CL2cL transfer.                                                              
@@ -55,13 +57,13 @@
  35CL  L 3945.2    23                                                           
  35CL cL E$weighted average of 3943.7 {I23} (1973Go16) and 3947.9 {I31}         
  35CL2cL (2019Se09)                                                             
- 35CL  L 4056.9    27 3/2-                                                      
+ 35CL  L 4056.9    27 (3/2-)                                                X   
  35CL cL E$4059.12 quoted from 2011Ch48 and used for internal calibrations by   
  35CL2cL 2019Se09.                                                              
- 35CL  L 4111.1    29 7/2+                                                      
+ 35CL  L 4111.1    29 (7/2+)                                                X   
  35CL cL E$weighted average of 4110.2 {I29} (1973Go16) and 4112.0 {I30}         
  35CL2cL (2019Se09)                                                             
- 35CL  L 4177.9    24 3/2-                                                      
+ 35CL  L 4177.9    24 (3/2-)                                                X   
  35CL cL E$weighted average of 4177.5 {I24} (1973Go16) and 4179 {I4} (2019Se09) 
  35CL  L 4346.6    24                                                           
  35CL cL E$4347.82 quoted from 2011Ch48 and used for internal calibrations by   
@@ -76,14 +78,14 @@
  35CL  L 4881.8    29                                                           
  35CL cL E$weighted average of 4883.1 {I29} (1973Go16) and 4878 {I5} (2019Se09) 
  35CL  L 5006.9    27                                                       K   
- 35CL  L 5158.9    29 5/2+                                                      
+ 35CL  L 5158.9    29 (5/2+)                                                X   
  35CL cL E$weighted average of 5161.7 {I33} (1973Go16) and 5156.8 {I29}         
  35CL2cL (2019Se09)                                                             
  35CL  L 5209.5    28 (5/2+)                                                    
  35CL cL E$weighted average of 5206.6 {I37} (1973Go16) and 5211.1 {I28}         
  35CL2cL (2019Se09)                                                             
  35CL  L 5402.0    29                                                           
- 35CL  L 5407.2       11/2-                                                     
+ 35CL  L 5407.2       (11/2-)                                               X   
  35CL cL E$quoted from 2011Ch48 and used for internal calibrations by 2019Se09. 
  35CL  L 5531      5                                                        K   
  35CL  L 5586.0    26                                                           
@@ -102,11 +104,12 @@
  35CL  L 5808.1    31                                                           
  35CL cL E$weighted average of 5809.2 {I34} (1973Go16) and 5807.1 {I31}         
  35CL2cL (2019Se09)                                                             
- 35CL  L 5829      4  5/2(-)                                                K   
+ 35CL  L 5829      4  (5/2-)                                                K   
+ 35CLF L FLAG=X
  35CL cL E$5823 tentative level from 1973Go16.                                  
  35CL  L 5928      3                                                        K   
  35CL cL E$other: 5927.4 {I35} (1973Go16)                                       
- 35CL  L 6084.2    29 13/2-                                                     
+ 35CL  L 6084.2    29 (13/2-)                                               X   
  35CL cL E$6087.4 quoted from 2011Ch48 and used for internal calibrations by    
  35CL2cL 2019Se09.                                                              
  35CL  L 6104      4                                                        K   
@@ -129,7 +132,7 @@
  35CL  L 6549      3  (1/2+)                                                K   
  35CL  L 6659.1    30 (7/2+)                                                    
  35CL cL E$weighted average of 6656.0 {I31} (1973Go16) and 6662 {I3} (2019Se09) 
- 35CL  L 6679.4    31 1/2+                                                      
+ 35CL  L 6679.4    31 (1/2+)                                                    
  35CL cL E$weighted average of 6680.8 {I31} (1973Go16) and 6677 {I4} (2019Se09) 
  35CL  L 6781.3    30 (3/2-)                                                    
  35CL cL E$weighted average of 6782.8 {I32} (1973Go16) and 6780 {I3} (2019Se09) 
@@ -140,11 +143,11 @@
  35CL cL E$6867 tentative level from 1973Go16.                                  
  35CL  L 6891.6    30 (9/2+)                                                    
  35CL cL E$weighted average of 6893.5 {I32} (1973Go16) and 6890 {I3} (2019Se09) 
- 35CL  L 6948.6    34 5/2+                                                      
+ 35CL  L 6948.6    34 (5/2+)                                                    
  35CL cL E$weighted average of 6947.5 {I34} (1973Go16) and 6950 {I4} (2019Se09) 
  35CL  L 6986.3    34 (9/2+)                                                    
  35CL cL E$weighted average of 6985.7 {I34} (1973Go16) and 6987 {I4} (2019Se09) 
- 35CL  L 7066.2       5/2+                                                      
+ 35CL  L 7066.2       (5/2+)                                                    
  35CL cL E$7066.2 quoted from 2011Ch48 and used for internal calibrations by    
  35CL2cL 2019Se09.                                                              
  35CL  L 7105                                                                  ?
