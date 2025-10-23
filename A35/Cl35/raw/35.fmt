@@ -1,8 +1,8 @@
 Program for ENSDF check: output for Format Error and Warnings (version 09/24/2025)
-Generated at: Wed 10/22/2025 at 06:48:44 PM EDT
+Generated at: Thu 10/23/2025 at 01:02:40 AM EDT
 
 ****************************************
-     Total 48 errors 4 warnings
+     Total 777 errors 19 warnings
 ****************************************
 
 -----------------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ Generated at: Wed 10/22/2025 at 06:48:44 PM EDT
 #########################################################################################
 ### In dataset <35CL: 40CA(MU-,NUANG)>
 
-     32.  35CL t     |m x ray       Energy       Intensity in percent                    
+     31.  35CL t     |m x ray       Energy       Intensity in percent                    
          *************************************************************                     <W> Possible duplicate line
 
 -----------------------------------------------------------------------------------------
@@ -50,98 +50,1285 @@ Generated at: Wed 10/22/2025 at 06:48:44 PM EDT
 #########################################################################################
 ### In dataset <35CL: ADOPTED LEVELS, GAMMAS>
 
-     20.  35CL5cG (1976ME12,1976Sp09,1981Bi05,2001Vo24); |g(|q) and |g(lin pol) in       
+     19.  35CL5cG (1976ME12,1976Sp09,1981Bi05,2001Vo24); |g(|q) and |g(lin pol) in       
                    ********                                                                <W> Recommended format=1976Me12
-     85.  35CL d                                                                         
+     84.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    115.  35CL d                                                                         
+    114.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    151.  35CL d                                                                         
+    150.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    196.  35CL d                                                                         
+    195.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    240.  35CL d                                                                         
+    239.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    276.  35CL d                                                                         
+    275.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    297.  35CL9cL {+34}S(p,|g) in 1968Az02 with delayed coincidence (obtained using      
+    296.  35CL9cL {+34}S(p,|g) in 1968Az02 with delayed coincidence (obtained using      
                                                                     *                      <E> Unbalanced bracket
-    340.  35CL4cG {+35}Cl(p,p'|g)???                                                     
-                                 **                                                        <E> Duplicate punctuation marks
     341.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    355.  35CL  G 1272.76      3.7    LT [E2]                                            
+    356.  35CL  G 1272.76      3.7    LT [E2]                                            
                   ********                                                                 <E> No final level found for this gamma=1272.76 
                                                                                                Parent level:  3918.47 12, JPI=3/2+
                                                                                                Calculated FL: 2645.69 13
                                                                                                  the closest final level is 2645.66
                                                                                                  but has been assigned to previous gamma=1272.76
-    360.  35CL  G 2695         19     5  [M1,E2]                                         
+    361.  35CL  G 2695         19     5  [M1,E2]                                         
                   *****                                                                    <W> No final level within 3*sigma=3.03
                                                                                                Parent level:  3918.47 12, JPI=3/2+
                                                                                                Calculated FL: 1223.4 10
                                                                                                Possible matches within 5 keV:
                                                                                                               1219.39 7, JPI=1/2+ (assigned by default)
                                                                                                Level-difference=2698.97 14 (with recoil correction)
-    366.  35CL cG MR$-0.21 {I2} or +20 {I+10-5} from {+34}S(p,|g) (1976Sp09)???          
-                                                                            **             <E> Duplicate punctuation marks
     368.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    393.  35CL d                                                                         
+    375.  35CL cL J$spin=9/2 from p|g(|q) in (|a,p|g). Parity???                         
+                                                             **                            <E> Duplicate punctuation marks
+    391.  35CL cG M$from ({+28}Si,|ap|g), why M1+E2???                                   
+                                                   **                                      <E> Duplicate punctuation marks
+    392.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
     416.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    438.  35CL d                                                                         
+    440.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    454.  35CL d                                                                         
+    458.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    465.  35CL cL J$|g-feeding in (p,|g)???                                              
-                                        **                                                 <E> Duplicate punctuation marks
-    471.  35CL d                                                                         
+    464.  35CL cL J$|g-feeding in (p,|g). where???                                       
+                                               **                                          <E> Duplicate punctuation marks
+    480.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    489.  35CL d                                                                         
+    506.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    530.  35CL d                                                                         
+    551.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    539.  35CL cG MR$-0.08 {I14} for J=3/2; +0.36 {I15} for J=5/2 in (|a,p|g)???         
-                                                                             **            <E> Duplicate punctuation marks
-    540.  35CL d                                                                         
+    561.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    554.  35CL d                                                                         
-                **                                                                         <E> Comment record type missing
-                  *                                                                        <E> $ missing at beginning
-    565.  35CL d                                                                         
-                **                                                                         <E> Comment record type missing
-                  *                                                                        <E> $ missing at beginning
+    569.  35CL cL J$from p|g(|q) in (|a,p|g) and |g-feeding in (p,|g)???                 
+                                                                     **                    <E> Duplicate punctuation marks
     575.  35CL d                                                                         
                 **                                                                         <E> Comment record type missing
                   *                                                                        <E> $ missing at beginning
-    586. 
-         *                                                                                 <E> Illegal blank line in dataset
-
-#########################################################################################
-### In dataset <35CL: RI$from (|a,p|g).>
-
+    578.  35CL cL J$|g-feeding in (p,|g)??? some confusing discussion in 1976Me12.       
+                                        **                                                 <E> Duplicate punctuation marks
+    586.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    593.  35CL cL J$3634|g to 1/2+, 1219 level and |g-feeding in (p,|g)???               
+                                                                       **                  <E> Duplicate punctuation marks
+    596.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    617.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    634.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    641.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    650.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    668.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    680.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    707.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    713.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    723.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    732.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    735.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    746.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    761.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    769.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    779.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    789.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    797.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    803.  35CL  G 2687         100                                                       
+                  *****                                                                    <W> No final level within 3*sigma=12.37
+                                                                                               Parent level:  5830 4, JPI=(5/2,9/2)
+                                                                                               Calculated FL: 3143 4
+                                                                                               Closest level within 19 keV:
+                                                                                                              3162.87 7, JPI=7/2- (assigned by default)
+                                                                                               Level-difference=2667 4 (with recoil correction)
+    805.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    821.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    845.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    855.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    859.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    863.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    864.  35CL  L 6181      3  (1/2:7/2,9/2-)                                            
+                              ******************                                           <E> Invalid JPI text: mixed use of , and :
+    869.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    870.  35CL  L 6180      3  (7/2:17/2)+                                               
+                  **********                                                               <E> Level < preceding level=6181
+    873.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    876.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    881.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    884.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    891.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    894.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    897.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    898.  35CL  L 6427      2                                                            
+         *********************                                                             <W> Possible duplicate line
+    900.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    903.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    908.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    915.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    920.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    925.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    930.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    931.  35CL  L 6659.1    30 (7/2+)                                                    
+                  **********                                                               <E> Level < preceding level=6660.2
+    933.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    938.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    945.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    950.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    955.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    960.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    965.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    968.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    969.  35CL  L 6863      3                                                            
+                  **********                                                               <E> Level < preceding level=6866
+    971.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    972.  35CL  L 6866      2                                                            
+         *********************                                                             <W> Possible duplicate line
+    974.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    977.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    983.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+    986.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1003.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1016.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1019.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1023.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1038.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1044.  35CL  G 3011.4       11     LT                                                 
+                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7185, JPI=5/2+
+                                                                                               Calculated FL: 4174 
+                                                                                               Possible final levels:
+                                                                                                              4173.43 23, JPI=5/2- (assigned by default)
+                                                                                                              4177.9 2, JPI=3/2-
+   1053.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1068.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1071.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1082.  35CL  G 3047.5       14                                                        
+         *************************                                                         <W> Possible duplicate line
+                  *******                                                                  <E> No final level found for this gamma=3047.5  
+                                                                                               Parent level:  7225.5 8, JPI=5/2
+                                                                                               Calculated FL: 4177.9 10
+                                                                                                 the closest final level is 4177.9
+                                                                                                 but has been assigned to previous gamma=3047.5
+   1089.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1092.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1103.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1106.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1120.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1123.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1126.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1147.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1160.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1163.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1174.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1177.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1184.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1199.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1211.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1229.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1240.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1243.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1246.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1267.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1280.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1283.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1295.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1299.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1314.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1332.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1333.  35CL  L 7693.9    8  (1/2:7/2,9/2-)                                            
+                              ******************                                           <E> Invalid JPI text: mixed use of , and :
+   1340.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1362.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1365.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1382.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1386.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1405.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1424.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1439.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1461.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1462.  35CL  L 7839.0    9  (1/2:5/2,7/2-)                                            
+                              ******************                                           <E> Invalid JPI text: mixed use of , and :
+   1477.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1487.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1494.  35CL  G 1213                                                                   
+                  *****                                                                    <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  7872.83 30, JPI=13/2+
+                                                                                               Calculated FL: 6659.8 11
+                                                                                               Possible final levels:
+                                                                                                              6660.2 8 (assigned by default)
+                                                                                                              6659.1 30, JPI=(7/2+)
+   1512.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1521.  35CL  G 3702.7       10                                                        
+         *************************                                                         <W> Possible duplicate line
+                  *******                                                                  <E> No final level found for this gamma=3702.7  
+                                                                                               Parent level:  7880.8 9, JPI=3/2+,5/2+
+                                                                                               Calculated FL: 4177.9 10
+                                                                                                 the closest final level is 4177.9
+                                                                                                 but has been assigned to previous gamma=3702.7
+   1529.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1532.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1535.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1550.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1553.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1571.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1574.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1577.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1588.  35CL  G 3792.2       30                                                        
+         *************************                                                         <W> Possible duplicate line
+                  *******                                                                  <E> No final level found for this gamma=3792.2  
+                                                                                               Parent level:  7970.3 10, JPI=(5/2-,7/2-)
+                                                                                               Calculated FL: 4177.9 11
+                                                                                                 the closest final level is 4177.9
+                                                                                                 but has been assigned to previous gamma=3792.2
+   1595.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1598.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1604.  35CL  G 2333         2.8                                                       
+         **************************                                                        <W> Possible duplicate line
+   1612.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1628.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1643.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1662.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1666.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1669.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1683.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1704.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1717.  35CL  G 3897.8       14                                                        
+         *************************                                                         <W> Possible duplicate line
+                  *******                                                                  <E> No final level found for this gamma=3897.8  
+                                                                                               Parent level:  8075.9 10, JPI=(3/2,5/2)
+                                                                                               Calculated FL: 4177.9 11
+                                                                                                 the closest final level is 4177.9
+                                                                                                 but has been assigned to previous gamma=3897.8
+   1722.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1741.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1746.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1763.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1781.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1797.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1802.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1811.  35CL  G 3978.7       9.8                                                       
+         **************************                                                        <W> Possible duplicate line
+                  *******                                                                  <E> No final level found for this gamma=3978.7  
+                                                                                               Parent level:  8156.8 11, JPI=(5/2+,7/2-)
+                                                                                               Calculated FL: 4177.9 12
+                                                                                                 the closest final level is 4177.9
+                                                                                                 but has been assigned to previous gamma=3978.7
+   1820.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1823.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1833.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1851.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1856.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1871.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1879.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1886.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1903.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1915.  35CL  G 4103.5       6.9                                                       
+         **************************                                                        <W> Possible duplicate line
+                  *******                                                                  <E> No final level found for this gamma=4103.5  
+                                                                                               Parent level:  8277.2 5, JPI=5/2+
+                                                                                               Calculated FL: 4173.4 7
+                                                                                                 the closest final level is 4173.43
+                                                                                                 but has been assigned to previous gamma=4103.5
+   1923.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1931.  35CL  G 4104.2       50                                                        
+         *************************                                                         <W> Possible duplicate line
+                  *******                                                                  <E> No final level found for this gamma=4104.2  
+                                                                                               Parent level:  8282.4 5, JPI=(3/2-,5/2)
+                                                                                               Calculated FL: 4177.9 7
+                                                                                                 the closest final level is 4177.9
+                                                                                                 but has been assigned to previous gamma=4104.2
+   1936.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1939.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1955.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1958.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1962.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   1981.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2000.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2014.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2023.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2026.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2040.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2043.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2046.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2060.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2073.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2078.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2081.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2096.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2099.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2104.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2121.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2138.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2156.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2168.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2171.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2182.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2187.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2193.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2215.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2227.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2230.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2247.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2254.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2268.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2286.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2302.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2312.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2330.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2333.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2349.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2353.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2357.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2365.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2369.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2372.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2377.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2393.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2396.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2401.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2419.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2434.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2442.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2454.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2461.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2473.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2490.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2495.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2511.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2523.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2533.  35CL  G 526                                                                    
+                  ****                                                                     <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8844.3 4, JPI=17/2+
+                                                                                               Calculated FL: 8318.3 11
+                                                                                               Possible final levels:
+                                                                                                              8318.1 3 (assigned by default)
+                                                                                                              8319.3 5, JPI=15/2-
+   2539.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2555.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2568.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2571.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2585.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2597.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2601.  35CL  G 2724         15     8                                                  
+                  *****                                                                    <W> Ambiguous final levels found. Use "FL=" to specify
+                                                                                               Parent level:  8904.8 5, JPI=(1/2,3/2,5/2+)
+                                                                                               Calculated FL: 6180.7 11
+                                                                                               Possible final levels:
+                                                                                                              6181 3, JPI=(1/2:7/2,9/2-) (assigned by default)
+                                                                                                              6180 3, JPI=(7/2:17/2)+
+   2611.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2625.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2634.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2637.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2648.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2655.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2662.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2679.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2682.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2685.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2690.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2693.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2700.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2703.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2708.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2711.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2718.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2723.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2728.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2750.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2755.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2758.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2763.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2768.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2773.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2776.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2779.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2784.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2787.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2790.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2794.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2797.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2811.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2816.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2819.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2822.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2827.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2831.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2835.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2839.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2843.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2846.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2849.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2852.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2856.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2859.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2862.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2865.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2869.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2873.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2876.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2879.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2882.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2885.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2888.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2892.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2895.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2898.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2901.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2905.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2908.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2911.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2916.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2919.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2922.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2925.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2929.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2932.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2935.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2938.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2941.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2944.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2947.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2950.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2953.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2956.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2959.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2962.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2965.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2968.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2971.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2985.  35CLF G FL=8487.4                                                              
+                     ******                                                                <E> Exact-match final level not found for EG=1693.5 5
+                                                                                               Parent level:  10180.6 5, JPI=19/2-
+                                                                                                         EG:  1693.5 5  MUL=Q
+                                                                                               Calculated FL: 8487.1 7
+                                                                                               Possible matches within 2 keV:
+                                                                                                              8486.2 5, JPI=3/2- (excluded by XREF)
+                                                                                                              8487.0 5, JPI=15/2-
+   2989.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   2992.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3000.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3003.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3006.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3009.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3012.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3015.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3018.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3021.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3024.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3027.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3032.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3035.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3038.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3041.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3044.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3049.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3054.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3057.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3060.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3065.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3070.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3073.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3076.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3079.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3088.  35CLF G FL=8788.7                                                              
+                     ******                                                                <E> Exact-match final level not found for EG=2069.8 10
+                                                                                               Parent level:  10858.5 8, JPI=19/2+
+                                                                                                         EG:  2069.8 10  MUL=Q
+                                                                                               Calculated FL: 8788.6 13
+                                                                                               Possible matches within 2 keV:
+                                                                                                              8787.2 5, JPI=(3/2-,5/2,7/2-)
+                                                                                                              8788.3 6, JPI=15/2+
+   3089.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3092.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3095.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3098.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3101.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3104.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3107.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3110.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3113.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3116.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3119.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3122.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3125.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3128.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3131.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3134.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3137.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3140.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3143.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3146.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3149.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3152.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3155.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3158.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3161.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3164.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3167.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3170.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3173.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3176.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3179.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3182.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3185.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3196.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3199.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3202.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3205.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3208.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3211.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3214.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3217.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3220.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3223.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3226.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3229.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3232.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3235.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3238.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3241.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3253.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3254.  35CL  L 1.25E4    5                                                            
+                  **********                                                               <E> Level < preceding level=12571.7
+   3258.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
+   3262.  35CL d                                                                         
+                **                                                                         <E> Comment record type missing
+                  *                                                                        <E> $ missing at beginning
 
 -----------------------------------------------------------------------------------------
     In file: D:\X\ND\ENSDF\A35\Cl35\new\Cl35_coulex.ens
 -----------------------------------------------------------------------------------------
+
 
 #########################################################################################
 ### In dataset <35CL: COULOMB EXCITATION>
