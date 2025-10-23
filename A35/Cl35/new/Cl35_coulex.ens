@@ -1,49 +1,51 @@
  35CL    COULOMB EXCITATION            1969HA17,1977SC36         ENSDF    202509
- 35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
- 35CL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$                                             
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
  35CL c  1969Ha17: 51-61-MeV {+35}Cl{+5,6+} beams of 80 nA were produced from   
  35CL2c  the Chalk River MP tandem accelerator and bombarded 9.6-mg/cm{+2}      
  35CL3c  carbon and 5-mg/cm{+2} {+24}Mg. De-excitation |g rays were detected    
  35CL4c  using two 40-cm{+3} Ge(Li) detectors at 125|' and at 0|' or 90|'.      
- 35CL5c  Measured E|g, I|g(|q). Deduced levels, mixing ratio, transition        
- 35CL6c  strengths, T{-1/2} for 2 levels using the Doppler Shift Attenuation    
- 35CL7c  Method (DSAM).                                                         
+ 35CL5c  Measured E|g, I|g, |g(|q) anisotropy, |g-ray yields. Deduced levels,   
+ 35CL6c  mixing ratio, transition strengths, T{-1/2} for 2 levels using the     
+ 35CL7c  Doppler Shift Attenuation Method (DSAM).                               
  35CL c  1977Sc36: 53-56-MeV {+35}Cl{+6+} beams of 60 nA were produced from a   
  35CL2c  single MP Tandem Van de Graaff tandem accelerator at the three-stage   
  35CL3c  facility of Brookhaven National Laboratory. Targets were 23Na and 27Al.
  35CL4c  De-excitation |g rays were detected using a 55- cm{+3} coaxial Ge(Li)  
- 35CL5c  detector at 0|'. Measured E|g, I|g(|q). Deduced levels, mixing ratios, 
- 35CL6c  transition strengths, T{-1/2} for the levels of 1220, 1762 and 2650 keV
- 35CL7c  using the Doppler Shift Attenuation Method (DSAM).                     
- 35CL cL J$From the Adopted Levels                                              
- 35CL cL T$From DSAM lineshape analysis.                                        
+ 35CL5c  detector at 0|'. Measured E|g, I|g(|q), |g-ray yields. Deduced levels, 
+ 35CL6c  mixing ratios, transition strengths, T{-1/2} for the levels of 1220,   
+ 35CL7c  1762 and 2650 keV using the Doppler Shift Attenuation Method (DSAM).   
+ 35CL cG E,M$From Adopted Gammas. Energies are rounded values                   
+ 35CL cL $Values of B(E2)|^ from 1969Ha17 and 1977Sc36 are from absolute        
+ 35CL2cL cross-section measurements                                             
+ 35CL cL E,J$From the Adopted Levels. Energies are rounded values               
  35CL  L 0            3/2+                                                      
- 35CL  L 1220         1/2+             0.150 PS  20                             
+ 35CL  L 1219         1/2+             0.150 PS  20                             
+ 35CL2 L BE2=0.00076 7  
  35CL cL T$Lifetime |t=0.216 ps {I28} from weighted average of |t=0.16 ps {I5}  
- 35CL2cL (1969Ha17 DSAM) and |t=0.230 ps {I25} (1977Sc36 DSAM).                 
- 35CL  G 1220                   M1+E2    0.105  12                              
- 35CL cG M$from the Adopted Gammas.                                             
- 35CL cG MR$from adopted B(E2) and adopted lifetime in this dataset.            
- 35CL cG $B(E2)|_=0.00152 {I14}: weighted average of 0.00162 {I18} (1969Ha17)   
- 35CL2cG and 0.00146 {I14} (1977Sc36)                                           
- 35CL cG $B(M1)|_=0.196 {I62} (1969Ha17); B(M1)|_=0.135 {I14} (1977Sc36).       
- 35CL  L 1762         5/2+             0.42 PS   4                              
+ 35CL2cL (1969Ha17, DSAM) and |t=0.230 ps {I25} (1977Sc36, DSAM).               
+ 35CL cL BE2$weighted average of 0.00081 {I9} (1969Ha17) and 0.00073 {I7}       
+ 35CL2cL (1977Sc36)                                                             
+ 35CL  G 1219                   M1+E2    0.093   10                             
+ 35CL cG MR$deduced by the evaluators from adopted B(E2)|^=0.00076 {I7} in this 
+ 35CL2cG dataset and T{-1/2}=0.119 ps {I14} from Adopted Levels. Other: 0.106   
+ 35CL3cG {I7} deduced by 1977Sc36 based on their measured B(E2)|^ and lifetime. 
+ 35CL  L 1763         5/2+             0.42 PS   4                              
+ 35CL2 L BE2=0.0106 7
  35CL cL T$Lifetime |t=0.61 ps {I5} from weighted average of |t=0.57 ps {I7}    
- 35CL2cL (1969Ha17 DSAM) and |t=0.63 ps {I5} (1977Sc36 DSAM).                   
- 35CL  G 1762         100       M1+E2    -2.8    +28-8                          
- 35CL cG M$from the Adopted Gammas.                                             
+ 35CL2cL (1969Ha17, DSAM) and |t=0.63 ps {I5} (1977Sc36, DSAM).                 
+ 35CL cL BE2$weighted average of 0.0117 {I9} (1969Ha17) and 0.0102 {I5}         
+ 35CL2cL (1977Sc36)                                                             
+ 35CL  G 1763                   M1+E2    -2.95   45                             
+ 35CL cG MR$from |g(|q) anisotropy in 1969Ha17. Other: 1.8 {I+10-4}; deduced by 
+ 35CL2cG the evaluators from adopted B(E2)|^=0.0106 {I7} in this dataset and    
+ 35CL3cG T{-1/2}=0.36 ps {I3} from Adopted Levels; -2.7 {I7} from 1977Sc36      
+ 35CL4cG deduced from their measured B(E2)|^ and lifetime                       
  35CL cG MR$from adopted B(M1) and adopted lifetime in this dataset.            
- 35CL cG $B(E2)|_=0.0070 {I4}: weighted average of 0.0078 {I6} (1969Ha17) and   
- 35CL2cG 0.0068 {I3} (1977Sc36)                                                 
- 35CL cG $B(M1)|_=0.0020 {I6}: weighted average of 0.00195 {I57} (1969Ha17) and 
- 35CL2cG B(M1)|_=0.0020 {I12} (1977Sc36).                                       
- 35CL  L 2645         7/2+             0.18 PS   6                              
- 35CL cL T$Lifetime |t=0.26 ps {I9} (1977Sc36 DSAM).                            
- 35CL  G 885                                                                    
- 35CL cG E$from 1977Sc36                                                        
- 35CL cG $B(M1)(W.u.)=1.29 {I34}; B(E2)(W.u.)=3.7 {I18} (1977Sc36)              
- 35CL  G 2645                                                                   
- 35CL cG $B(E2)(W.u.)=2.5 {I6} (1977Sc36)                                       
+ 35CL  L 2646         7/2+             0.18 PS   6                              
+ 35CL2 L BE2=0.0029 7 (1977Sc36)
+ 35CL cL T$Lifetime |t=0.26 ps {I9} (1977Sc36, DSAM).                           
+ 35CL  G 2646                   E2                                              
+
 
