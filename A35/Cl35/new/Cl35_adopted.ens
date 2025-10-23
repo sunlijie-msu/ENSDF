@@ -1257,9 +1257,9 @@
  35CL  G 7548.0       0.287  32 Q(+O)    +0.1    2                              
  35CL cG M,MR$from |g(|q) in {+34}S(p,|g).                                      
  35CL d 
- 35CL  L 7561.3    6  (1/2,3/2)                                                 
- 35CLX L XREF=L(*)OX(7565*)                                                     
- 35CL cL J$|g(|q) in (p,|g).                                                    
+ 35CL  L 7561.3    6  1/2,3/2                                                   
+ 35CLX L XREF=L(7566)O                                                     
+ 35CL cL J$from |g(|q) in (p,|g).                                               
  35CL  G 3383.2       2.6                                                       
  35CL  G 3501.9       17                                                        
  35CL  G 3593.8       1.4                                                       
@@ -1268,15 +1268,17 @@
  35CL  G 6341.3       100                                                       
  35CL  G 7560.4       97                                                        
  35CL d 
- 35CL  L 7568      4                                                            
- 35CLX L XREF=L(*)P(7550*)X(7565*)                                              
+ 35CL  L 7565      20 5/2+
+ 35CLX L XREF=X                                              
+ 35CL cL J$L=2 from 0+ in (pol d,{+3}He) and L+1/2 transfer from analyzing      
+ 35CL2cL power.                                                                 
  35CL d 
- 35CL  L 7587      4                                                            
- 35CLX L XREF=L(7590*)P(7550*)X(7565*)                                          
+ 35CL  L 7590      4 
+ 35CLX L XREF=L
  35CL d 
  35CL  L 7600.8    8  5/2+             13.9 FS   LT                             
- 35CLX L XREF=L(7590*)OX(7565*)                                                 
- 35CL cL J$|g(|q) in (p,|g); parity from transition strength in (p,|g).         
+ 35CLX L XREF=L(7590*)OX                                                 
+ 35CL cL J$from |g(|q) in (p,|g); parity from transition strength in (p,|g).    
  35CL cL T$lifetime |t < 20 fs from {+34}S(p,|g) in 1971Wi13 with DSAM.         
  35CL  G 2437.4       5.8       [E1]                                            
  35CL  G 2719.7       6.1                                                       
@@ -1288,12 +1290,16 @@
  35CL  G 3541.4       6.1       [E1]                                            
  35CL  G 4437.5       15        [E1]                                            
  35CL  G 4597.7       24        D+Q      +0.50   22                             
+ 35CL cG M,MR$from |g(|q) (1971Wi13) in {+34}S(p,|g).                           
  35CL  G 4906.5       55        D+Q      +0.32   7                              
- 35CL cG MR$or +0.01 {I5} (p,|g).                                               
+ 35CL cG M,MR$from |g(|q) (1971Wi13) in {+34}S(p,|g).                           
  35CL  G 4954.7       5.8       [M1,E2]                                         
  35CL  G 5837.3       58        D+Q      +0.31   7                              
+ 35CL cG M,MR$from |g(|q) (1971Wi13) in {+34}S(p,|g).                           
  35CL  G 6380.8       3.3       [E2]                                            
  35CL  G 7599.9       100       D+Q      -0.19   4                              
+ 35CL cG M,MR$from |g(|q) (1976Me12) in {+34}S(p,|g). Other: |d=+0.17 {I3}      
+ 35CL2cG (1971Wi13).                                                            
  35CL d 
  35CL  L 7618.7    5  (3/2-,5/2)                                                
  35CLX L XREF=O                                                                 
