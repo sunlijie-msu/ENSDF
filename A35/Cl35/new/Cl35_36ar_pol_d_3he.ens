@@ -1,6 +1,5 @@
  35CL    36AR(POL D,3HE)               1993MA50                  ENSDF    202509
- 35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
- 35CL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$                                             
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
  35CL c  J|p=0+ for {+36}Ar ground state.                                       
@@ -23,77 +22,69 @@
  35CL7c  relatively small angle interval. This is sufficient for the spin       
  35CL8c  determination but not favorable for the measurement of spectroscopic   
  35CL9c  factors.                                                               
- 35CL cL J(A),S(A)$L-1/2 transfer from analyzing power measurements; 1d{-3/2}   
- 35CL2cL proton transfer assumed in DWBA calculations                           
- 35CL cL J(B),S(B)$L+1/2 transfer from analyzing power measurements; 1d{-5/2}   
- 35CL2cL proton transfer assumed in DWBA calculations                           
- 35CL cL E(C)$No data on |s(E({+3}He),|q), iT{-11}(E({+3}He),|q), or L-transfer 
- 35CL2cL is given.                                                              
- 35CL cL J,L,S$From DWBA analysis of the measured |s(|q) and iT{-11}(|q) in     
- 35CL2cL 1993Ma50.                                                              
  35CL cL $Spectroscopic factor C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N, where N=2.95
  35CL2cL is a normalization factor used by 1993Ma50 from 1966Ba54.              
+ 35CL cL E$From 1993Ma50.                                                       
+ 35CL cL J$L+1/2 transfer from analyzing power measurements with 1d{-5/2} proton
+ 35CL2cL transfer assumed in DWBA calculations, unless otherwise noted          
+ 35CL cL L,S$From DWBA analysis of the measured |s(|q) and iT{-11}(|q) in       
+ 35CL2cL 1993Ma50. C{+2}S value is extracted for corresponding J|p assignment.  
+ 35CL3cL Where two C{+2}S values are given, they correspond to respective J|p   
+ 35CL4cL values                                                                 
  35CL cL S$LABEL=C{+2}S                                                         
+ 35CL cL J(A),S(A)$L-1/2 transfer from analyzing power measurements with        
+ 35CL2cL 1d{-3/2} proton transfer assumed in DWBA calculations                  
+ 35CL cL J(D)$Assumed by 1993Ma50 for extracting spectroscopic factors.         
+ 35CL cL S(C)$No data on |s(E({+3}He),|q), iT{-11}(E({+3}He),|q), or L-transfer 
+ 35CL2cL is given.                                                              
  35CL  L 0            3/2+                             2        1.72        A   
  35CL  L 1213      4  1/2+                             0        0.78            
- 35CL cL J$2s{-1/2}.                                                            
- 35CL  L 1785      50                                                       C   
- 35CL cL J$(5/2+) is given in Table 2 of 1993Ma50.                              
- 35CL cL S$0.04 for J|p=5/2+ (1993Ma50).                                        
- 35CL  L 2676      7                                                        C   
- 35CL cL J$(3/2+) is given in Table 2 of 1993Ma50.                              
- 35CL cL S$0.16 for J|p=3/2+ (1993Ma50).                                        
- 35CL  L 3002      6  5/2+                             2        1.32        B   
+ 35CL  L 1785      50 (5/2+)                                    0.04        C   
+ 35CLF L FLAG=D                                                                 
+ 35CL dL J$(5/2+) is given in Table 2 of 1993Ma50.  
+ 35CL  L 2676      7  (3/2+)                                    0.16        C   
+ 35CLF L FLAG=D                                                                 
+ 35CL dL J$(3/2+) is given in Table 2 of 1993Ma50. 
+ 35CL  L 3002      6  5/2+                             2        1.32            
  35CL  L 3159      20 7/2-                             3        0.19            
- 35CL cL J$1f{-7/2}.                                                            
- 35CL  L 3948      40 (3/2+)                           2        0.03        A   
- 35CL cL E$possible doublet of 3918.48 and 3967.5 (1990En08) suggested by Table 
- 35CL2cL 2 of 1993Ma50.                                                         
- 35CL cL J$(3/2+) and (1/2+) are given in Table 2 of 1993Ma50. Evaluators adopt 
- 35CL2cL (3/2+) based on DWBA fit of the measured |s(|q) and iT{-11}(|q) in Fig.
- 35CL3cL 3 of 1993Ma50.                                                         
- 35CL cL S$for J|p=3/2+; 0.08 for J|p=1/2+ (1993Ma50)                           
- 35CL  L 4839      12                                                       C   
- 35CL cL E$possible doublet of 4839.09 (1/2+,3/2) (1990En08) and an unspecified 
- 35CL2cL (1/2+) component, suggested by Table 2 of 1993Ma50.                    
- 35CL cL J$(5/2+) and (1/2+) are given in Table 2 of 1993Ma50.                  
- 35CL cL S$0.08 for J|p=5/2+; 0.03 for J|p=1/2+ (1993Ma50)                      
- 35CL  L 5155      11 (5/2+)                           2        0.12        B   
+ 35CL  L 3948      40 (3/2+,1/2+)                      2        0.03,0.08   D   
+ 35CL cL E$possible doublet of 3918 and 3968 (1990En08) suggested by Table 2 of 
+ 35CL2cL 1993Ma50.                                                              
+ 35CL  L 4839      12  (5/2+,1/2+)                              0.08,0.03   C   
+ 35CLF L FLAG=D
+ 35CL dL J$(5/2+) and (1/2+) are given in Table 2 of 1993Ma50.   
+ 35CL  L 5155      11 (5/2+)                           2        0.12            
  35CL cL J$(7/2-) and 5/2+ are given in Table 2 of 1993Ma50. Evaluators adopt   
  35CL2cL (5/2+), based on DWBA fit of the measured |s(|q) and iT{-11}(|q) in    
  35CL3cL Fig. 3 of 1993Ma50.                                                    
- 35CL  L 5583      13 5/2+                             2        0.38        B   
- 35CL  L 5720      11 5/2+                             2        1.10        B   
- 35CL  L 6136      8  5/2+                             2        0.63        B   
- 35CL  L 6745      12 (1/2+,5/2+)                      (0,2)                
- 35CL cL J$2s{-1/2} is given in Fig. 4; 5/2+ and 1/2+ are given in Table 2 of   
- 35CL2cL 1993Ma50.                                                              
- 35CL cL S$0.28 for J|p=5/2+; 0.09 for J|p=1/2+ (1993Ma50)                      
- 35CL  L 6953      43 5/2+                             2        0.49        B   
- 35CL  L 7181      60 5/2+                             2        0.20        B   
- 35CL  L 7565      20 5/2+                             2        0.30        B   
- 35CL  L 8007      36 (1/2-,5/2+)                      (1,2)                    
- 35CL cL J$1p{-1/2} is given in Fig. 4; 5/2+ and 1/2- are given in Table 2 of   
- 35CL2cL 1993Ma50.                                                              
- 35CL cL S$0.20 for J|p=5/2+; 0.16 for J|p=1/2- (1993Ma50)                      
- 35CL  L 8204      34 5/2+                             2        0.14        B   
- 35CL  L 8580      20                                                       C   
- 35CL cL J$5/2+ is given in Table 2 of 1993Ma50.                                
- 35CL cL S$0.22 for J|p=5/2+ (1993Ma50)                                         
- 35CL  L 8921      70                                                       C   
- 35CL cL J$5/2+ is given in Table 2 of 1993Ma50.                                
- 35CL cL S$0.18 for J|p=5/2+ (1993Ma50)                                         
- 35CL  L 9.22E3    12                                                       C   
- 35CL cL J$5/2+ is given in Table 2 of 1993Ma50.                                
- 35CL cL S$0.12 for J|p=5/2+ (1993Ma50)                                         
- 35CL  L 9514      20 (1/2-,5/2+)                      (1,2)            
- 35CL cL J$1p{-1/2} is given in Fig. 4; 5/2+ and 1/2- are given in Table 2 of   
- 35CL2cL 1993Ma50.                                                              
- 35CL cL S$0.30 for J|p=5/2+; 0.18 for J|p=1/2- (1993Ma50)                      
- 35CL  L 9.82E3    12 (1/2-,5/2+)                      (1,2)              
- 35CL cL J$1p{-1/2} is given in Fig. 4; 5/2+ and 1/2- are given in Table 2 of   
- 35CL2cL 1993Ma50.                                                              
- 35CL cL S$0.26 for J|p=5/2+; 0.10 for J|p=1/2- (1993Ma50)                      
+ 35CL  L 5583      13 5/2+                             2        0.38            
+ 35CL  L 5720      11 5/2+                             2        1.10            
+ 35CL  L 6136      8  5/2+                             2        0.63            
+ 35CL  L 6745      12 (1/2+,5/2+)                      (0,2)    0.09,0.28   D
+ 35CL dL J$2s{-1/2} is given in Fig. 4; 5/2+ and 1/2+ are given in Table 2 of   
+ 35CL2dL 1993Ma50. 
+ 35CL  L 6953      43 5/2+                             2        0.49            
+ 35CL  L 7181      60 5/2+                             2        0.20            
+ 35CL  L 7565      20 5/2+                             2        0.30            
+ 35CL  L 8007      36 (1/2-,5/2+)                      (1,2)    0.16,0.20   D   
+ 35CL dL J$1p{-1/2} is given in Fig. 4; 5/2+ and 1/2- are given in Table 2 of   
+ 35CL2dL 1993Ma50. 
+ 35CL  L 8204      34 5/2+                             2        0.14          
+ 35CL  L 8580      20 5/2+                                      0.22        C   
+ 35CL2 L FLAG=D                                                                 
+ 35CL dL J$5/2+ is given in Table 2 of 1993Ma50. 
+ 35CL  L 8921      70 5/2+                                      0.18        C   
+ 35CL2 L FLAG=D                                                                 
+ 35CL dL J$5/2+ is given in Table 2 of 1993Ma50.  
+ 35CL  L 9.22E3    12 5/2+                                      0.12        C   
+ 35CL2 L FLAG=D                                                                 
+ 35CL dL J$5/2+ is given in Table 2 of 1993Ma50.    
+ 35CL  L 9514      20 (1/2-,5/2+)                      (1,2)    0.18,0.30   D
+ 35CL dL J$1p{-1/2} is given in Fig. 4; 5/2+ and 1/2- are given in Table 2 of   
+ 35CL2dL 1993Ma50.
+ 35CL  L 9.82E3    12 (1/2-,5/2+)                      (1,2)    0.10,0.26   D          
+ 35CL dL J$1p{-1/2} is given in Fig. 4; 5/2+ and 1/2- are given in Table 2 of   
+ 35CL2dL 1993Ma50.                                                              
  35CL  L 1.25E4    5
  35CL cL $1d{-5/2} is given for a range of 12.0-13.0 MeV in Fig. 4 of 1993Ma50. 
 
