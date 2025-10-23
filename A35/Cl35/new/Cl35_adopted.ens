@@ -372,7 +372,7 @@
  35CL cL J$spin=9/2 from p|g(|q) in (|a,p|g). Parity???                         
  35CL cL T$lifetime |t = 0.26 ps {I5}: weighted average of |t = 0.33 ps {I5} in 
  35CL2cL {+32}S(|a,p|g) from 1972Br33 with DSAM, |t = 0.39 ps {I11} in          
- 35CL3cL {+34}S(p,|g) from 1972Hu11 with DSAM, |t = 0.145 ps {I50} in           
+ 35CL3cL {+34}S(p,|g) from 1972Hu11 with DSAM, |t=0.145 ps {I50} in           
  35CL4cL {+34}S(p,|g) from 1973Fa07 with DSAM, and |t = 0.29 ps {I5} in         
  35CL5cL {+34}S(p,|g) from 1976Me12 with DSAM. Other: |t < 0.5 ps in            
  35CL6cL {+12}C({+28}Si,|ap|g) from 2007Ks01 with DSAM.                         
@@ -904,7 +904,7 @@
  35CL2cL (2019Se09). L=(2) from 0+ in ({+3}He,d).                               
  35CL  G 6491         100                                                       
  35CL d 
- 35CL  L 6546      2  (1/2+)                                                      
+ 35CL  L 6546      2  (1/2+)                                                    
  35CLX L XREF=LR                                                                
  35CL cL E$weighted average of 6549 {I3} from {+32}S(|a,p) and 6545 {I2} from   
  35CL2cL {+34}S({+3}He,d)                                                       
@@ -917,30 +917,39 @@
  35CL2cL {I2} from {+34}S({+3}He,d)                                             
  35CL cL J$from L=(1) from 0+ in ({+3}He,d)                                     
  35CL d 
- 35CL  L 6660.2    8                                                            
+ 35CL  L 6660.2    8  (11/2-)                                                   
  35CLX L XREF=F                                                                 
+ 35CL cL J$from {+12}C({+28}Si,|ap|g)                                           
  35CL  G 2312                                                                   
+ 35CL cL E$from {+12}C({+28}Si,|ap|g)                                           
  35CL  G 3497                                                                   
+ 35CL cL E$from {+12}C({+28}Si,|ap|g)                                           
  35CL d 
  35CL  L 6659.1    30 (7/2+)                                                    
  35CLX L XREF=LY(6677*)                                                         
+ 35CL cL E,J$from {+32}S(|a,p).                                                 
  35CL d 
- 35CL  L 6674.9    20                                                           
+ 35CL  L 6674.9    20 (1/2)+                                                   
  35CLX L XREF=DLRY(6677*)                                                       
  35CL cL E$weighted average of 6674 {I2} from {+1}H({+34}S,{+35}Cl|g), 6679.4   
- 35CL2cL {I31} from {+32}S(|a,p), and 6674 {I2} from {+34}S({+3}He,d)           
+ 35CL2cL {I31} from {+32}S(|a,p), and 6674 {I2} from {+34}S({+3}He,d).          
+ 35CL cL J$(1/2+) from FRESCO-DWBA analysis of measured |s(|q) of {+32}S(|a,p)  
+ 35CL2cL (2019Se09). Parity=+ from {+37}Cl(p,t), in which L=2 and L=0 are better
+ 35CL3cL fits than L=1 and L=3.                                                 
  35CL d 
  35CL  L 6761      2  3/2+,5/2+                                                 
  35CLX L XREF=DRWX(6745)                                                        
  35CL cL E$weighted average of 6761 {I2} from {+1}H({+34}S,{+35}Cl|g), 6761 {I2}
  35CL2cL from {+34}S({+3}He,d), 6750 {I20} from {+36}Ar(d,{+3}He), and 6745     
  35CL3cL {I12} from {+36}Ar(pol d,{+3}He)                                       
- 35CL cL J$L(d,{+3}He)=2.                                                       
+ 35CL cL J$L=2 from 0+ in (d,{+3}He).                                           
  35CL d 
- 35CL  L 6778.6    20                                                           
+ 35CL  L 6778.6    20 (3/2-)                                                    
  35CLX L XREF=DLR                                                               
  35CL cL E$weighted average of 6778 {I2} from {+1}H({+34}S,{+35}Cl|g), 6781.3   
  35CL2cL {I30} from {+32}S(|a,p), and 6778 {I2} from {+34}S({+3}He,d)           
+ 35CL cL J$from FRESCO-DWBA analysis of measured |s(|q) of {+32}S(|a,p). L=(1)  
+ 35CL2cL from 0+ in ({+3}He,d).                                                 
  35CL d 
  35CL  L 6801      4                                                            
  35CLX L XREF=DL                                                                
@@ -949,34 +958,38 @@
  35CL d 
  35CL  L 6823      2                                                            
  35CLX L XREF=DR                                                                
- 35CL cL E$weighted average of 6823 {I2} from {+1}H({+34}S,{+35}Cl|g) and 6823  
- 35CL2cL {I2} from {+34}S({+3}He,d)                                             
+ 35CL cL E$from {+34}S({+3}He,d)                                                
  35CL d 
- 35CL  L 6842      2                                                            
+ 35CL  L 6842      2  (3/2+)                                                    
  35CLX L XREF=DLR                                                               
- 35CL cL E$weighted average of 6842 {I2} from {+1}H({+34}S,{+35}Cl|g), 6842 {I4}
- 35CL2cL from {+32}S(|a,p), and 6842 {I2} from {+34}S({+3}He,d)                 
+ 35CL cL E$weighted average of 6842 {I4} from {+32}S(|a,p) and 6842 {I2} from   
+ 35CL2cL {+34}S({+3}He,d)                                                       
+ 35CL cL J$from {+32}S(|a,p) (2019Se09).                                        
  35CL d 
- 35CL  L 6866      2                                                            
- 35CLX L XREF=D(*)L(6863*)O(*)                                                  
+ 35CL  L 6865      2  (9/2+)                                                    
+ 35CLX L XREF=DLR                                                 
+ 35CL cL E$weighted average of 6863 {I3} from {+32}S(|a,p) and 6866 {I2} from   
+ 35CL2cL {+34}S({+3}He,d)                                                       
+ 35CL cL J$from {+32}S(|a,p) (2019Se09).                                        
  35CL d 
- 35CL  L 6863      3                                                            
- 35CLX L XREF=D(*)L(6863*)O(*)                                                  
+ 35CL  L 6866.7    6                                                            
+ 35CLX L XREF=O                                                  
+ 35CL cL E$from {+34}S(p,|g).                                                   
  35CL d 
- 35CL  L 6866      2                                                            
- 35CLX L XREF=D(*)O(*)R                                                         
- 35CL d 
- 35CL  L 6891.6    30                                                           
+ 35CL  L 6891.6    30 (9/2+)                                                    
  35CLX L XREF=L                                                                 
+ 35CL cL J$(9/2+) from {+32}S(|a,p) (2019Se09).                                 
  35CL d 
  35CL  L 6948.1    34 5/2+                                                      
  35CLX L XREF=LW(6930)X                                                         
  35CL cL E$weighted average of 6948.6 {I34} from {+32}S(|a,p) and 6930 {I20}    
  35CL2cL from {+36}Ar(d,{+3}He). Other: 6953 {I43} from {+36}Ar(pol d,{+3}He)   
- 35CL cL J$L(pol d,{+3}He)=2 and L+1/2 from analyzing power.                    
+ 35CL cL J$L=2 from 0+ in (d,{+3}He) and (pol d,{+3}He), and L+1/2 transfer from
+ 35CL2cL analyzing power. (5/2+) from {+32}S(|a,p) (2019Se09).                  
  35CL d 
- 35CL  L 6986.3    34                                                           
+ 35CL  L 6986.3    34 (9/2+)                                                    
  35CLX L XREF=L                                                                 
+ 35CL cL J$(9/2+) from {+32}S(|a,p) (2019Se09).                                 
  35CL d 
  35CL  L 7066.2    7  (5/2+)                                                    
  35CLX L XREF=LOR                                                               
@@ -1009,17 +1022,15 @@
  35CL  G 5883.5       100       D(+Q)    0.00    3                              
  35CL  G 7102.6       23                                                        
  35CL d 
- 35CL  L 7121.7    24                                                           
+ 35CL  L 7121.7    24 (5/2-)                                                    
  35CLX L XREF=L                                                                 
+ 35CL cL E$from {+32}S(|a,p), possibly doublet (1973Go16).                      
+ 35CL cL J$(5/2-) from {+32}S(|a,p) (2019Se09).                                 
  35CL d 
- 35CL  L 7170      10 (7/2+)
- 35CLX L XREF=L(7180*)NR(7194*)X(7181*)                                         
- 35CL cL J$L(|a,d)=6.                                                           
- 35CL d 
- 35CL  L 7178.6    8  1/2+                                                      
+ 35CL  L 7178.6    8  1/2(+)                                    
  35CLX L XREF=OR(7178*)                                                         
  35CL2 L ISPIN=3/2                                                              
- 35CL cL J$|g(|q) in (p,|g); parity from IAS in {+35}S.                         
+ 35CL cL J$spin=1/2 from |g(|q) in (p,|g); parity from IAS in {+35}S.           
  35CL  G 1072.4       7.9                                                       
  35CL  G 1775.1       4.5                                                       
  35CL  G 2339.4       4                                                         
@@ -1031,8 +1042,14 @@
  35CL  G 5958.7       45                                                        
  35CL  G 7177.8       100                                                       
  35CL d 
+ 35CL  L 7179      4  (7/2+)
+ 35CLX L XREF=L(7180*)N                                         
+ 35CL cL E$weighted average of 7180 {I4} from {+32}S(|a,p) and 7170 {I10} from  
+ 35CL2cL {+33}S(|a,d)                                                           
+ 35CL cL J$from {+32}S(|a,p) (2019Se09). L=6 from 3/2+ in {+33}S(|a,d).         
+ 35CL d 
  35CL  L 7185         5/2+                                                      
- 35CLX L XREF=L(7180*)OX(7181*)                                                 
+ 35CLX L XREF=OX(7181)                                                 
  35CL cL J$L(pol d,{+3}He)=2 and L+1/2 from analyzing power.                    
  35CL  G 1969.1       1.1    LT                                                 
  35CL  G 2174.8       1.1    LT                                                 
