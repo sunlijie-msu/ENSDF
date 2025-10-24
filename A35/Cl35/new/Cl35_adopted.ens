@@ -845,15 +845,25 @@
  35CL2cL analyzing power.                                                       
  35CL d 
  35CL  L 6181      3  (1/2:7/2,9/2-)                                            
- 35CLX L XREF=O                                                                 
+ 35CLX L XREF=LO                                                                 
  35CL cL J$|g to 3/2+ g.s.                                                      
  35CL cL $Additional 122% of I|g transitions to unknown levels in (p,|g).       
  35CL  G 6180         100                                                       
  35CL d 
- 35CL  L 6180      3  (7/2:17/2)+                                               
- 35CLX L XREF=LN(6200*)                                                         
- 35CL cL J$L=6 from 3/2+ in {+33}S(|a,d)X L XREF=R                              
- 35CL cL J$L=(0,1) from 0+ in ({+3}He,d).                                       
+ 35CL  L 6200      10                                              
+ 35CLX L XREF=N                                                         
+ 35CL cL J$L=6 from 3/2+ in {+33}S(|a,d), indicating (7/2:17/2)+.               
+ 35CL  L 6224.4    30                                                           
+ 35CLX L XREF=L                                                         
+ 35CL  L 6283      3  (5/2+)                                                    
+ 35CLX L XREF=LR                                                                
+ 35CL cL E$weighted average of 6283 {I3} from {+32}S(|a,p) and 6284 {I4} from   
+ 35CL2cL {+34}S({+3}He,d)                                                       
+ 35CL cL J$from FRESCO-DWBA analysis of measured |s(|q) of {+32}S(|a,p)         
+ 35CL2cL (2019Se09). L=(2) from 0+ in ({+3}He,d).                               
+ 35CL  L 6329      4  (1/2,3/2-)                                                 
+ 35CLX L XREF=R                                                                 
+ 35CL c  J$L=(0,1) from 0+ in ({+3}He,d).                                       
  35CL d 
  35CL  L 6380.1    8  (9/2-)
  35CLX L XREF=HLR(6377*)                                                
@@ -1737,7 +1747,7 @@
  35CLX L XREF=LO                                                                
  35CL cL E$weighted average of 8075.1 {I46} from {+32}S(|a,p) and 8075.9 {I10}  
  35CL2cL from {+34}S(p,|g)                                                      
- 35CL cL J$|g's to 3/2+,3/2-,7/2.                                               
+ 35CL cL J$|g to 3/2+ g.s., 3/2- 4178 level, 7/2+ 4112 level.                   
  35CL  G 2430         20                                                        
  35CL  G 2490         20                                                        
  35CL  G 2860.0       14                                                        
@@ -1753,7 +1763,7 @@
  35CL d 
  35CL  L 8096.1    11 5/2                                                       
  35CLX L XREF=L(*)O                                                             
- 35CL cL J$|g's to 3/2+,3/2-,7/2+,7/2-.                                         
+ 35CL cL J$|g to 3/2+ g.s., 3/2- 4178 level, 7/2+ 2646 level, 7/2- 3163 level.  
  35CL  G 2290         5.1                                                       
  35CL  G 2450         13                                                        
  35CL  G 2496.3       13                                                        
@@ -1770,7 +1780,7 @@
  35CL  G 6332.5       21                                                        
  35CL  G 8095.1       100                                                       
  35CL d 
- 35CL  L 8100      10 (7/2:17/2)+                                               
+ 35CL  L 8100      10                                                
  35CLX L XREF=L(*)NO(8080)                                                      
  35CL cL E$from (|a,d)                                                          
  35CL cL J$L(|a,d)=6.                                                           
