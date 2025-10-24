@@ -1876,10 +1876,10 @@
  35CL2 L ISPIN=3/2                                                              
  35CL cL E$weighted average of 8208.2 {I10} from {+34}S(p,|g) and 8209 {I3} from
  35CL2cL {+34}S(p,p),(p,p'|g):resonances and 8210.2 {I46} from {+32}S(|a,p).    
- 35CL cL T$from 1977Ou01 in {+34}S(p,p),(p,p'|g):resonances                     
  35CL cL J$L=2 from 0+ in (d,{+3}He) and (pol d,{+3}He) and L+1/2 transfer from 
  35CL2cL analyzing power; from resonance analysis of measured |s(|q) (1981Bi05) 
  35CL3cL in {+34}S(p,p),(p,p'|g):resonances.                                    
+ 35CL cL T$from 1977Ou01 in {+34}S(p,p),(p,p'|g):resonances                     
  35CL  G 2553         0.9                                                       
  35CL  G 3327.1       1.0                                                       
  35CL  G 3368.9       0.51                                                      
@@ -1896,23 +1896,29 @@
  35CL d 
  35CL  L 8211      3  1/2+             0.094 KEV 15                             
  35CLX L XREF=L(*)OP                                                            
- 35CL cL E,T$from (p,p)                                                         
- 35CL cL J$R-Matrix analysis in (p,p).                                          
+ 35CL cL E,J,T$from resonance analysis of measured |s(|q) (1981Bi05) in         
+ 35CL2cL {+34}S(p,p),(p,p'|g):resonances.                                       
  35CL d 
  35CL  L 8216.3    10 5/2+             0.014 KEV 3                              
  35CLX L XREF=L(*)OPW(8210*)X(8204*)                                            
- 35CL cL E$from (p,|g)                                                          
+ 35CL cL E$from {+34}S(p,|g)                                                    
+ 35CL cL J$L=2 from 0+ in (d,{+3}He) and (pol d,{+3}He) and L+1/2 transfer from 
+ 35CL2cL analyzing power; from resonance analysis of measured |s(|q) (1974Bi16) 
+ 35CL3cL in {+34}S(p,p),(p,p'|g):resonances; spin=5/2 from |g(|q) (2001Vo24,    
+ 35CL4cL 1996Ka21) in {+34}S(p,|g).                                             
  35CL cL T$from 1977Ou01 in {+34}S(p,p),(p,p'|g):resonances                     
- 35CL cL J$|g(|q) in (p,|g) and R-Matrix analysis in (p,p).                     
  35CL  G 2561         1.8                                                       
  35CL  G 3446.3       1.8                                                       
  35CL  G 4038.2       6.7    LT                                                 
  35CL  G 4042.6       6.7    LT                                                 
  35CL  G 5052.9       91        D+Q      +0.11   2                              
+ 35CL cG M,MR$from |g(|q) (2001Vo24) in {+34}S(p,|g).                           
  35CL  G 5213.1       11                                                        
  35CL  G 5521.9       6.7                                                       
  35CL  G 6452.7       3.1                                                       
  35CL  G 8215.3       100       D+Q      +0.06   3                              
+ 35CL cG M,MR$from |g(|q) (2001Vo24) in {+34}S(p,|g). Other: |d(Q/D)=0.59 {I56} 
+ 35CL2cG from 1996Ka21 in {+34}S(p,|g).                                         
  35CL d 
  35CL  L 8242.4    12 3/2-             0.140 KEV 15                             
  35CLX L XREF=L(*)OP(8243*)                                                     
