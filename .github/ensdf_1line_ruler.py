@@ -15,12 +15,15 @@ import sys
 
 def print_ruler(line):
     """Print ENSDF 80-column ruler with format specifications for validation"""
-    print('🎯 ENSDF 80-Column Ruler:')
+    print('ENSDF 80-Column Ruler:')
     print('Ones: 12345678901234567890123456789012345678901234567890123456789012345678901234567890')
     print('Tens: 1111111111222222222233333333334444444444555555555566666666667777777777888888888999')
     
     # Show format template based on record type
-    if len(line) >= 8 and line[7] == 'L':
+    if len(line) >= 8 and line[7] == 'H':
+        print('H-Fmt: 35XX  H metadata...                                                        ')
+        print('H-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|H(8)|BLANK(9)|...metadata fields...             ')
+    elif len(line) >= 8 and line[7] == 'L':
         print('L-Fmt: 35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q')
         print('L-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|L(8)|BLANK(9)|E(10-19)|DE(20-21)|SPACE(22)|J-π(23-39)|T(40-49)|DT(50-55)|L(56-64)|S(65-74)|DS(75-76)|C(77)|BLANK(78-79)|Q(80)')
     elif len(line) >= 8 and line[7] == 'G':
@@ -35,8 +38,8 @@ def print_ruler(line):
     if len(line) != 80:
         errors.append(f'Length {len(line)} ≠ 80')
     
-    # Check ENSDF field positions for data records
-    if len(line) >= 8 and line[7] in ['L', 'G', 'E', 'B']:
+    # Check ENSDF field positions for data records (including H records)
+    if len(line) >= 8 and line[7] in ['H', 'L', 'G', 'E', 'B']:
         record_type = line[7]
         
         # Column 77 validation (different rules for different record types)
@@ -87,8 +90,9 @@ def scan_file(filename, show_only_wrong=False):
     
     for lineno, raw_line in enumerate(lines, 1):
         line = raw_line.rstrip('\n')
-        # Check data records (L, G, E, B, DP records)
-        if len(line) >= 8 and line[7] in ['L', 'G', 'E', 'B', 'D']:
+        # Check ALL record types (H, L, G, E, B, DP records)
+        # ENSDF standard: ALL record types must be exactly 80 characters
+        if len(line) >= 8 and line[7] in ['H', 'L', 'G', 'E', 'B', 'D']:
             total_checked += 1
             if show_only_wrong:
                 if not print_ruler(line):
