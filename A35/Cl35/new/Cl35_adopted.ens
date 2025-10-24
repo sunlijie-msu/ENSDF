@@ -1319,11 +1319,11 @@
  35CL  G 7655.7       100    11                                                 
  35CL d 
  35CL  L 7670      10                                                
- 35CLX L XREF=L(*)N                                                     
+ 35CLX L XREF=N                                                     
  35CL cL $L=6 from 3/2+ in {+33}S(|a,d), indicating (7/2:17/2)+.                
  35CL d 
  35CL  L 7671.9    8  5/2                                                 
- 35CLX L XREF=L(*)O                                                    
+ 35CLX L XREF=O                                                    
  35CL cL J$from |g(|q) in {+34}S(p,|g).                                         
  35CL  G 2072.1       2.1                                                       
  35CL  G 2508.5       7                                                         
@@ -1355,12 +1355,13 @@
  35CL  G 3511.9       5.7                                                       
  35CL  G 3626.1       8.6                                                       
  35CL  G 4682.4       14        D(+Q)    -0.01   5 
- 35CL cG M,MR$or -2.4 {I+20-4} (1976Me12) in (p,|g); |d=+0.01 {I7} (1977Ko34) in
- 35CL2cG (p,|g).                                                                
+ 35CL cG M,MR$or -2.4 {I+20-4} (1976Me12) in {+34}S(p,|g); |d=+0.01 {I7}        
+ 35CL2cG (1977Ko34) in {+34}S(p,|g).                                            
  35CL  G 5922.0       1                                                         
  35CL  G 6465.5       1.4                                                       
  35CL  G 7684.6       100       D+Q      +6.0    7                              
- 35CL cG M,MR$from 1976Me12 in (p,|g); |d<-3.5 from 1977Ko34 in (p,|g).         
+ 35CL cG M,MR$from 1976Me12 in {+34}S(p,|g); |d<-3.5 from 1977Ko34 in           
+ 35CL2cG {+34}S(p,|g).                                                          
  35CL d 
  35CL  L 7693.9    8                                             
  35CLX L XREF=O                                                                 
@@ -1456,8 +1457,9 @@
  35CLX L XREF=LOP                                                               
  35CL cL E$weighted average of 7799.8 {I30} from {+32}S(|a,p), 7797.1 {I9} from 
  35CL2cL {+34}S(p,|g), and 7796 {I3} from {+34}S(p,p),(p,p'|g):resonances       
- 35CL cL J$Spin=1/2 from |g(|q) in {+34}S(p,|g); (1/2)- from R-Matrix analysis  
- 35CL2cL of measured |s(|q) (1977Ou01) in {+34}S(p,p),(p,p'|g):resonances.      
+ 35CL cL J$Spin=1/2 from |g(|q) (1988Va06) in {+34}S(p,|g); (1/2)- from R-Matrix
+ 35CL2cL analysis of measured |s(|q) (1977Ou01) in                              
+ 35CL3cL {+34}S(p,p),(p,p'|g):resonances.                                       
  35CL cL T$from 1977Ou01 in {+34}S(p,p),(p,p'|g):resonances.                    
  35CL  G 2039                                                                   
  35CL  G 2142         1.6                                                       
@@ -1474,15 +1476,17 @@
  35CL2 L ISPIN=3/2                                                              
  35CL cL E$weighted average of 7837.2 {I10} from {+34}S(p,|g) and 7837 {I3} from
  35CL2cL {+34}S(p,p),(p,p'|g):resonances                                        
- 35CL cL T$from 1977Ou01 in {+34}S(p,p),(p,p'|g):resonances. Lifetime |t < 5 fs 
- 35CL2cL from {+34}S(p,|g) in 1971Wi13 with DSAM.                               
  35CL cL J$from R-Matrix analysis of measured |s(|q) (1977Ou01) in              
  35CL2cL {+34}S(p,p),(p,p'|g):resonances. Spin=3/2 from |g(|q) in {+34}S(p,|g); 
- 35CL3cL parity from 3659|g, M1+E2 to 3/2-, 4178 level                          
+ 35CL3cL parity from 3659|g, M1+E2 to 3/2-, 4178 level.                         
+ 35CL cL T$from 1977Ou01 in {+34}S(p,p),(p,p'|g):resonances. Lifetime |t < 5 fs 
+ 35CL2cL from {+34}S(p,|g) in 1971Wi13 with DSAM.                               
  35CL  G 1656         1.4                                                       
  35CL  G 2237.4       1.4                                                       
  35CL  G 2621.3       3.8                                                       
  35CL  G 3659.1       76        M1+E2    -0.05   3                              
+ 35CL cG M,MR$from |g(|q) and |g(lin pol) (1967Wa22) in {+34}S(p,|g). Other:    
+ 35CL2cG |d=-0.04 {I3} or +0.27 {I5} (2001Vo24) in {+34}S(p,|g).                
  35CL  G 3663.5       8.1                                                       
  35CL  G 3777.8       5.4                                                       
  35CL  G 3894.1       1.4                                                       
@@ -1490,7 +1494,10 @@
  35CL  G 4834.1       11                                                        
  35CL  G 6073.6       5.1                                                       
  35CL  G 6617.1       100       D+Q      +0.06   3                              
+ 35CL cG M,MR$from |g(|q) and |g(lin pol) (1967Wa22) in {+34}S(p,|g).           
  35CL  G 7836.3       57        D(+Q)    +0.02   3                              
+ 35CL cG M,MR$from |g(|q) and |g(lin pol) (1967Wa22) in {+34}S(p,|g). Other:    
+ 35CL2cG |d=0.00 {I3} (2001Vo24) in {+34}S(p,|g).                               
  35CL d 
  35CL  L 7839.0    9  (1/2:5/2,7/2-)                                            
  35CLX L XREF=O                                                                 
