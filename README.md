@@ -71,13 +71,13 @@ When producing finalized ENSDF evaluation files, copy or move verified outputs i
 - **87 reaction/decay datasets** for non-adopted data
 
 **XUNDL Compilation & Review (2025)**:
-- **4 papers processed**: CH11036, CG11116, CF10919, CF10990
+- **4 papers processed**: 
 - **7 nuclear datasets**: isotopes A=99 to A=127
 - **6 review rounds completed** across all papers
 
 **AI-Assisted Workflow Development**:
 - First AI agent for ENSDF 80-column formatting developed at FRIB Nuclear Data Center
 - Custom GitHub Copilot integration with ENSDF-specific validation tools
-- Presented at LECM2025 and USNDP2025 meetings
+- Presented at LECM2025 meeting
 
 
