@@ -1,5 +1,5 @@
  35P     ADOPTED LEVELS, GAMMAS                                  ENSDF    202509
- 35P   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$                                             
+ 35P   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$          
  35P   H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35P 2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
  35P  dG $Transition strength is calculated by Java-RULER (version 18-Feb-2025) 
@@ -204,8 +204,11 @@
  35P F G FLAG=D                                                                 
  35P   L 5010      20                                                           
  35P X L XREF=J                                                                 
+ 35P  cL $1988Or01 observed a 5010 {I20} level in ({+11}B,{+13}N) and a 5070    
+ 35P 2cL {I40} level in ({+18}O,{+17}F) but did not assign them as the same     
+ 35P 3cL level.                                                                 
  35P   L 5090.2    13 (11/2-)                                                   
- 35P X L XREF=FG(5070)L                                                        
+ 35P X L XREF=FG(5070)L                                                         
  35P F L FLAG=C                                                                 
  35P   G 128       1 50      25                                             A   
  35P  cG E$weighted average of 127 {I2} from {+9}Be({+36}S,{+35}P|g) and 128    
@@ -262,9 +265,9 @@
  35P   L 7050      60                                                           
  35P X L XREF=G                                                                 
  35P   L 7440      60                                                           
- 35P X L XREF=G                                                                 
+ 35P X L XREF=GH(7520*)                                                         
  35P   L 7526.9    23 (1/2-)                                                    
- 35P X L XREF=FH(7520)                                                         
+ 35P X L XREF=FH(7520*)                                                         
  35P  cL J$L=(1) in {+9}Be({+36}S,{+35}P) from 0+; interpreted as the deeply    
  35P 2cL bound 1p{-1/2} proton removal from 0+ in {+9}Be({+36}S,{+35}P); 7526|g 
  35P 3cL to 1/2+.                                                               
@@ -303,4 +306,3 @@
  35P   L 17355     15 1/2-,3/2-        32 KEV    22                             
  35P X L XREF=C                                                                 
  35P  cL J$L=1 in {+1}H({+34}Si,p).                                             
-

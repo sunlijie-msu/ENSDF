@@ -20,12 +20,13 @@ Usage:
   python column_calibrate.py "filename.ens" --fix     # Validate and fix line lengths  
 
 ALWAYS CHECKS:
-- Line length compliance (80 characters for data records)
+- Line length compliance (80 characters for ALL record types: H, L, G, E, B, DP)
 - L-field positioning (columns 56-64)
 - S-field positioning (columns 65-74) 
 - Comment flag positioning (column 77)
 - Field boundary validation
 - Left-justification requirements
+- Includes H (History/Header) records in line length validation
 """
 
 import sys
@@ -34,28 +35,41 @@ import argparse
 
 def is_data_record_line(line):
     """
-    Check if a line is a data record line (L, G, E, B, DP records).
-    These are the lines that must be exactly 80 characters.
-    Comment lines are handled by separate tools.
+    Check if a line is a record line that must be exactly 80 characters.
+    ENSDF standard: ALL record types (H, L, G, E, B, DP, etc.) must be 80 columns.
+    
+    H records: History records (metadata, author, citation info)
+    L records: Level records (nuclear energy levels)
+    G records: Gamma transition records
+    E records: Electron capture/beta-plus decay records
+    B records: Beta-minus decay records
+    DP records: Delayed particle records
     """
     if len(line) < 8:
         return False
     
-    # Check for data record types in column 8 (0-based index 7)
+    # Check for record types in column 8 (0-based index 7)
+    # H-records have H at column 8 (index 7)
+    # L/G/E/B records have those letters at column 8
+    # DP records have D at column 8 and P at column 9
+    
     record_type = line[7] if len(line) > 7 else ' '
-    data_record_types = ['L', 'G', 'E', 'B']  # Main data record types
+    
+    # Include H records (History/Header records) - they must also be 80 columns
+    all_record_types = ['H', 'L', 'G', 'E', 'B']  # All standard record types
     
     # Also check for DP records (delayed proton)
     if len(line) > 8 and line[7:9] == 'DP':
         return True
         
-    return record_type in data_record_types
+    return record_type in all_record_types
 
 def fix_line_lengths(filename, dry_run=False):
     """
     Fix ENSDF file line lengths to be exactly 80 characters.
-    Only processes data record lines (L, G, E, B, DP records).
-    Comment lines are handled by separate tools.
+    Processes ALL record lines (H, L, G, E, B, DP records).
+    ENSDF standard requires ALL record types to be exactly 80 columns.
+    Comment lines (starting with c) are NOT padded - only actual records.
     
     Args:
         filename: Path to ENSDF file
@@ -69,10 +83,11 @@ def fix_line_lengths(filename, dry_run=False):
         print(f"ERROR: File {filename} not found!")
         return 0, 1
         
-    print(f"{'DRY RUN - ' if dry_run else ''}Fixing data record line lengths in: {filename}")
+    print(f"{'DRY RUN - ' if dry_run else ''}Fixing record line lengths in: {filename}")
     print("=" * 70)
-    print("Note: Only checking L, G, E, B, and DP record lines (data records)")
-    print("      Comment lines are handled by separate tools")
+    print("Note: Checking and fixing ALL record lines (H, L, G, E, B, DP)")
+    print("      ENSDF standard: ALL records must be exactly 80 characters")
+    print("      Comment lines (c at column 6) are NOT modified")
     print()
     
     with open(filename, 'r') as f:
