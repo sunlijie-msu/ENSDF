@@ -135,7 +135,7 @@
  35CL cG RI$other: 50 {I3} at E=70 MeV.                                         
  35CL cG $DCO(Q)=1.0 {I1} at E=70 MeV, 1.2 {I1} at E=88 MeV                     
  35CL cG $|D{-IPDCO}=+0.04 {I2}.                                                
- 35CL  L 5927.1    7  11/2-            0.28 PS   LT                             
+ 35CL  L 5927.1    7  (11/2)-          0.28 PS   LT                             
  35CL  G 1579         18     2  (M1+E2)  -0.2    1                              
  35CL cG RI$other: 12 {I1} at E=70 MeV.                                         
  35CL cG $DCO(D)=0.9 {I1} at E=70 MeV, 1.0 {I1} at E=88 MeV                     
@@ -172,7 +172,7 @@
  35CL cG $DCO(Q)=2.4 {I3}                                                       
  35CL cG $|D{-IPDCO}=+0.21 {I6}.                                                
  35CL cG $DCO(Q)=0.51 {I8}, R{-ADO}=0.65 {I9} (2020Ra14)                        
- 35CL  L 8319.4    9  (15/2-)          12.5 FS   7                          A   
+ 35CL  L 8319.4    9   15/2-           12.5 FS   7                          A   
  35CLF L FLAG=D                                                                 
  35CL cL $Tentative 8324, (13/2-) level in 2007Ks01 is considered the same level
  35CL2cL here by the evaluators                                                 
@@ -180,8 +180,9 @@
  35CL cL $Q(transition)=0.65 {I2}, |b{-2}=0.30 (2013Bi10).                      
  35CL  G 2232                                                                   
  35CL cG E$from 2013Bi10 only                                                   
- 35CL  G 2912         1      LT D(+Q)    -0.1    +3-2                           
+ 35CL  G 2912         1      LT                                                 
  35CL cG E$other: 2917 (2007Ks01, tentative)                                    
+ 35CL cG M,MR$D(+Q) with |d=-0.1 {I+3-2} if J(8319)=13/2 in 2007Ks01
  35CL cG $DCO(Q)=1.9 {I6} at E=88 MeV                                           
  35CL  L 8487.8    10(15/2-)           0.07 PS   LT                             
  35CL cL $Tentative 8481, (15/2-) level in 2007Ks01 is considered the same level
