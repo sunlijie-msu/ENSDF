@@ -71,7 +71,7 @@ When producing finalized ENSDF evaluation files, copy or move verified outputs i
 - **87 reaction/decay datasets** for non-adopted data
 
 **XUNDL Compilation & Review (2025)**:
-- **4 papers processed**: 
+- **4 papers processed**
 - **7 nuclear datasets**: isotopes A=99 to A=127
 - **6 review rounds completed** across all papers
 
