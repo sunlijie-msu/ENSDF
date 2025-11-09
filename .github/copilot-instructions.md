@@ -440,6 +440,9 @@ Format: Use {In} or {I+n-m} notation with braces
 - Comment line: ` 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)` (uncertainty uses {I11} notation)
 
 ---
+### Nuclear Science References (NSR)
+
+Each article in NSR has a unique 8-character key number ("key number") used to reference articles in ENSDF and other nuclear databases.
 
 ## 4. ENSDF File Editing Workflow
 
@@ -705,3 +708,4 @@ This document is organized as follows:
 4. ENSDF File Editing Workflow: File protection rules, mandatory edit-validate-repeat workflow, validation tools (before, during, and after editing), output interpretation guidelines, editing methodology, and tools and workflows
 5. CSV and Tabular Data Processing: AI frequent failure patterns to avoid, mandatory verification protocol, critical validation steps, example failure prevention, and random spot-check validation
 6. Academic Standards: Professional English grammar and general comment ordering for adopted.ens files
+
