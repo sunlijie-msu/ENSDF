@@ -1,0 +1,373 @@
+ 36CL    24MG(14N,2PG):XUNDL-2         2012AY04                           201209
+ 36CL c  Compiled (unevaluated) dataset from 2012Ay04:                          
+ 36CL2c  Phys Rev C 86, 024320 (2012)                                           
+ 36CL c  Compiled by E. Thiagalingam and B. Singh (McMaster); Sept 2, 2012      
+ 36CL c  {+14}N beam at E=31 MeV provided by the XTU-TANDEM accelerator of      
+ 36CL2c  Laboratori Nazionali di Legnaro. Target=1 mg/cm{+2} {+24}Mg (99.7%     
+ 36CL3c  enriched). Measured  E|g, I|g, |g|g, |g|g|g-coin, |g(|q), |g|g(|q),    
+ 36CL4c  Doppler-broadened line shapes using the 4|p-GASP array composed of     
+ 36CL5c  40 Compton-suppressed large-volume, HPGe detectors. Deduced levels, J, 
+ 36CL6c  |p, multipolarity, mixing ratio, B(M1), B(E2), half-lives. Comparison  
+ 36CL7c  with shell model calculations.                                         
+ 36CL cG $ Expected R{-ADO} values are 0.8 and 1.4 for |DJ=1, dipole, and       
+ 36CL2cG |DJ=2, quadrupole transitions, respectively.                           
+ 36CL cG $ Reduced transition probabilities in W.u. deduced by the compilers    
+ 36CL cL E$ From least-squares fit (by compilers) of E|g data                   
+ 36CL cL T$ From Doppler-shift attenuation method (2012Ay04), unless otherwise  
+ 36CL2cL indicated                                                              
+ 36CL cL T(A)$ From Adopted Levels of {+36}Cl in ENSDF database                 
+ 36CL PN                                                                     5  
+ 36CL  L 0.0          2+                                                        
+ 36CL  L 788.62    20 3+                14.7 PS  10                         A   
+ 36CL  G 788.4     6  100    4  M1+E2    +0.50   3                              
+ 36CL cG $R(ADO)=1.42 {I6}                                                      
+ 36CL2 G A2=+0.38 11 $ A4=+0.04 2                                               
+ 36CL2 G BM1=0.004 1 $ BE2=0.0025 3                                             
+ 36CLB G BM1W=0.00245 18$BE2W=3.6 5                                             
+ 36CL  L 1164.6     4 1+                6.9 PS   4                          A   
+ 36CL  G 1164.7    6  7.5    4  M1+E2    -0.32   6                              
+ 36CL cG MR$ from Adopted dataset for {+36}Cl in ENSDF database                 
+ 36CL cG $R(ADO)=0.87 {I21}                                                     
+ 36CL2 G BM1=0.003 1 $ BE2=0.0004 1                                             
+ 36CLB G BM1W=0.00183 13$BE2W=0.50 18                                           
+ 36CL  L 1601.0     4 1+                0.65 PS  4                          A   
+ 36CL  G 436.5     5  0.29   6  [M1]                                            
+ 36CL2 G BM1=0.22 5                                                             
+ 36CLB G BM1W=0.12 3                                                            
+ 36CL  G 1601.1    6  0.67   7  [M1]                                            
+ 36CL2 G BM1=0.010 2                                                            
+ 36CLB G BM1W=0.0058 9                                                          
+ 36CL  L 1950.94   17 2-                                                        
+ 36CL  G 786.4     5  2.42   9                                                  
+ 36CL  G 1162.4    5  0.53   3                                                  
+ 36CL  G 1951.0    3  4.4    3                                                  
+ 36CL  L 1959.35   22 2+                0.044 PS 2                          A   
+ 36CL  G 358.5     5  0.02   1  [M1]                                            
+ 36CL2 G BM1=0.31 4                                                             
+ 36CLB G BM1W=0.17 9                                                            
+ 36CL  G 1171.0    4  0.04   1  [M1]                                            
+ 36CL2 G BM1=0.017 2                                                            
+ 36CLB G BM1W=0.010 3                                                           
+ 36CL  G 1959.2    4  1.19   3  [M1]                                            
+ 36CL2 G BM1=0.115 6                                                            
+ 36CLB G BM1W=0.063 4                                                           
+ 36CL  L 2467.91   18 3-                0.97 PS  10                         A   
+ 36CL  G 517.3     3  8.6    4  M1+E2    +0.05   3                              
+ 36CL cG $R(ADO)=0.80 {I6}                                                      
+ 36CL2 G A2=-0.21 6 $ A4=+0.001 1                                               
+ 36CL2 G BM1=0.29 4 $ BE2=0.0038 +59-32                                         
+ 36CLB G BM1W=0.159 20$BE2W=5 +7-5                                              
+ 36CL  G 1679.4    2  0.12   2                                                  
+ 36CL  G 2467.9    3  0.12   1                                                  
+ 36CL  L 2492.0     5 2+                0.040 PS 9                          A   
+ 36CL  G 533          0.086  20 [M1]                                            
+ 36CL cG E$ from Table 3 of 2012Ay04, not in authors' Table 1                   
+ 36CL cG RI$from branching ratio=9 {I2} in 2012Ay04 quoted from ENSDF database, 
+ 36CL2cG but in Adopted dataset for {+36}Cl in ENSDF, value is 7.1 {I6}         
+ 36CL2 G BM1=0.59 19                                                            
+ 36CLB G BM1W=0.33 11                                                           
+ 36CL  G 1327.3    4  0.78   4  [M1]                                            
+ 36CL cG RI$ branching ratio=82 {I4} in 2012Ay04 quoted from ENSDF database,    
+ 36CL2cG but in Adopted dataset in ENSDF, value is 70.0 {I4}                    
+ 36CL2 G BM1=0.35 8                                                             
+ 36CLB G BM1W=0.19 5                                                            
+ 36CL  G 2492         0.086  30 [M1]                                            
+ 36CL cG RI$from branching ratio=9 {I3} in 2012Ay04 quoted from ENSDF database, 
+ 36CL2cG but in Adopted dataset for {+36}Cl in ENSDF, value is 19 {I7}          
+ 36CL cG E$ from Table 3 of 2012Ay04, not in authors' Table 1                   
+ 36CL2 G BM1=0.006 2                                                            
+ 36CLB G BM1W=0.0032 14                                                         
+ 36CL  L 2518.74   19 5-                                                        
+ 36CL  G 1729.9    2  90.3   22 M2+E3    -0.07   2                              
+ 36CL cG $R(ADO)=1.41 {I6}                                                      
+ 36CL2 G A2=+0.27 7 $ A4=-0.13 3                                                
+ 36CL  G 2518.6    5  6.70   4  E3                                              
+ 36CL cG $R(ADO)=1.58 {I11}                                                     
+ 36CL2 G A2=+0.54 12 $ A4=+0.06 3                                               
+ 36CL  L 2810.63   18 4-                2.36 PS  21                             
+ 36CL  G 292.5     5  4.4    2  M1(+E2)  -0.01   1                              
+ 36CL cG $R(ADO)=0.86 {I6}                                                      
+ 36CL2 G A2=-0.12 3 $ A4=+0.0001 1                                              
+ 36CL2 G BM1=0.163 15 $ BE2=0.0003 +8-3                                         
+ 36CLB G BM1W=(0.091 10)$BE2W=(0.4 +8-4)                                        
+ 36CL  G 342.8     3  0.33   4  [M1]                                            
+ 36CL2 G BM1=0.007 2                                                            
+ 36CLB G BM1W=0.0042 7                                                          
+ 36CL  G 859.7     1  1.97   5  E2                                              
+ 36CL cG $R(ADO)=1.40 {I4}                                                      
+ 36CL2 G A2=+0.32 11 $ A4=-0.09 4                                               
+ 36CL2 G BE2=0.0055 5                                                           
+ 36CLB G BE2W=7.9 8                                                             
+ 36CL  G 2021.9    3  11.3   3  E1+M2    -0.07   4                              
+ 36CL cG $R(ADO)=0.69 {I3}                                                      
+ 36CL2 G A2=-0.37 8 $ A4=-0.001 1                                               
+ 36CLB G BE1W=1.99E-5 19$BM2W=0.11 +13-11                                       
+ 36CL  L 2896.29   18 3-                0.60 PS  6                          A   
+ 36CL  G 428.5     2  0.03   2  [M1]                                            
+ 36CL2 G BM1=0.011 9                                                            
+ 36CLB G BM1W=0.006 5                                                           
+ 36CL  G 937.2     3  1.09   6                                                  
+ 36CL  G 945.3     1  0.31   4  [M1]                                            
+ 36CL2 G BM1=0.011 2                                                            
+ 36CLB G BM1W=0.0062 11                                                         
+ 36CL  G 2895.6    6  0.73   7                                                  
+ 36CL  L 3100.84   20 4-                0.15 PS  4                          A   
+ 36CL  G 204.5     4  0.11   2  [M1]                                            
+ 36CL2 G BM1=0.40 13                                                            
+ 36CLB G BM1W=0.23 8                                                            
+ 36CL  G 582.4     5  0.09   2  [M1]                                            
+ 36CL2 G BM1=0.015 5                                                            
+ 36CLB G BM1W=0.008 3                                                           
+ 36CL  G 633.1     2  5.2    2  M1+E2    -0.02   1                              
+ 36CL cG $R(ADO)=0.73 {I4}                                                      
+ 36CL2 G A2=-0.29 11 $ A4=+0.0002 2                                             
+ 36CL2 G BM1=0.66 18 $ BE2=0.0009 +12-7                                         
+ 36CLB G BM1W=0.37 10$BE2W=1.3 13                                               
+ 36CL  G 2311.9    4  2.76   9                                                  
+ 36CL  L 3332.4     3 2-                                                        
+ 36CL  G 436.4     4  0.07   2                                                  
+ 36CL  G 864.5     6  0.05   2                                                  
+ 36CL  G 1372.9    3  0.16   4                                                  
+ 36CL  L 3724.0     3 4-                0.05 PS  1                          A   
+ 36CL  G 623.1     2  0.26   3  [M1]                                            
+ 36CL2 G BM1=0.63 21                                                            
+ 36CLB G BM1W=0.28 7                                                            
+ 36CL  G 913.8     4  1.42   9  [M1]                                            
+ 36CL2 G BM1=0.86 20                                                            
+ 36CLB G BM1W=0.49 11                                                           
+ 36CL  L 4158.01   24 5-               0.13 PS   4                              
+ 36CL  G 1347.5    3  2.8    2  M1+E2    -0.11   5                              
+ 36CL cG $R(ADO)=0.70 {I4}                                                      
+ 36CL2 G A2=-0.39 13 $ A4=+0.003 2                                              
+ 36CL2 G BM1=0.091 25 $ BE2=0.0009 4                                            
+ 36CLB G BM1W=0.050 17$BE2W=1.2 12                                              
+ 36CL  G 1639.3    3  1.0    1  [M1]                                            
+ 36CL2 G BM1=0.018 6                                                            
+ 36CLB G BM1W=0.010 4                                                           
+ 36CL  L 4262.03   19 5-               0.22 PS   8                              
+ 36CL  G 1161.3    2  1.05   8  [M1]                                            
+ 36CL2 G BM1=0.008 3                                                            
+ 36CLB G BM1W=0.0044 17                                                         
+ 36CL  G 1451.4    1  6.4    8  [M1]                                            
+ 36CL2 G BM1=0.025 10                                                           
+ 36CLB G BM1W=0.014 6                                                           
+ 36CL  G 1743.5    3  7.9    4  [M1]                                            
+ 36CL2 G BM1=0.017 6                                                            
+ 36CLB G BM1W=0.010 4                                                           
+ 36CL  L 4294.78   20 6-               0.23 PS   5                              
+ 36CL  G 1484.1    1  3.2    3  E2                                              
+ 36CL cG $R(ADO)=1.41 {I5}                                                      
+ 36CL2 G A2=+0.31 8 $ A4=-0.08 3                                                
+ 36CL2 G BE2=0.0034 8                                                           
+ 36CLB G BE2W=4.9 12                                                            
+ 36CL  G 1776.1    2  28.7   6  M1+E2    +0.86   20                             
+ 36CL cG $R(ADO)=1.79 {I18}                                                     
+ 36CL2 G A2=+0.65 17 $ A4=+0.12 4                                               
+ 36CL2 G BM1=0.016 5 $ BE2=0.0053 20                                            
+ 36CLB G BM1W=0.009 3$BE2W=8 3                                                  
+ 36CL  L 4727.56   22 5-                                                        
+ 36CL  G 1626.8    2  0.43   3                                                  
+ 36CL  G 1917.0    4  0.87   7  M1+E2    -0.13   5                              
+ 36CL cG $R(ADO)=0.73 {I4}                                                      
+ 36CL2 G A2=-0.41 14 $ A4=+0.003 1                                              
+ 36CL  G 2208.6    2  1.6    2                                                  
+ 36CL  L 4847.03   21 6-               0.17 PS   4                              
+ 36CL  G 585.4     2  0.21   1  M1+E2    -0.21   5                              
+ 36CL cG $R(ADO)=0.63 {I21}                                                     
+ 36CL2 G A2=-0.51 8 $ A4=+0.01 1                                                
+ 36CL2 G BM1=0.024 6 $ BE2=0.0045 25                                            
+ 36CLB G BM1W=0.013 4$BE2W=6 4                                                  
+ 36CL  G 689.5     3  0.13   2  M1                                              
+ 36CL cG $R(ADO)=0.82 {I18}                                                     
+ 36CL2 G BM1=0.010 3                                                            
+ 36CLB G BM1W=0.0053 15                                                         
+ 36CL  G 2036.2    3  3.7    3  E2                                              
+ 36CL cG $R(ADO)=1.43 {I4}                                                      
+ 36CL2 G A2=+0.31 6 $ A4=-0.08 2                                                
+ 36CL2 G BE2=0.0036 9                                                           
+ 36CLB G BE2W=5.1 13                                                            
+ 36CL  G 2328.2    3  5.7    2  M1+E2    -0.46   13                             
+ 36CL cG $R(ADO)=0.46 {I12}                                                     
+ 36CL2 G A2=-0.73 17 $ A4=+0.03 2                                               
+ 36CL2 G BM1=0.009 3 $ BE2=0.005 3                                              
+ 36CLB G BM1W=0.0050 13$BE2W=0.7 4                                              
+ 36CL  L 5007.96   25 5+               0.42 PS   8                              
+ 36CL  G 1907.1    6  4.7    2  E1+M2    -0.07   3                              
+ 36CL cG $R(ADO)=0.75 {I7}                                                      
+ 36CL2 G A2=-0.34 13 $ A4=+0.001 1                                              
+ 36CLB G BE1W=0.000119 24$BM2W=0.7 7                                            
+ 36CL  G 2197.1    6  3.2    1                                                  
+ 36CL  G 2489.2    6  0.49   3                                                  
+ 36CL  L 5300.54   24 7-               0.16 PS   5                              
+ 36CL  G 454.0     2  0.48   9  M1                                              
+ 36CL cG $R(ADO)=0.87 {I5}                                                      
+ 36CL2 G BM1=0.21 8                                                             
+ 36CLB G BM1W=0.12 5                                                            
+ 36CL  G 2781.1    3  5.5    4  E2                                              
+ 36CL cG $R(ADO)=1.41 {I3}                                                      
+ 36CL2 G A2=+0.31 4 $ A4=-0.07 3                                                
+ 36CL2 G BE2=0.0020 6                                                           
+ 36CLB G BE2W=2.8 9                                                             
+ 36CL  L 5314.02   21 7+                19.7 PS  15                         A   
+ 36CL  G 306.0     2  0.16   4  E2                                              
+ 36CL cG $R(ADO)=1.42 {I3}                                                      
+ 36CL2 G A2=+0.34 9 $ A4=-0.09 3                                                
+ 36CL2 G BE2=0.0053 13                                                          
+ 36CLB G BE2W=7.0 19                                                            
+ 36CL  G 467.3     3  1.2    1  E1+M2    -0.06   3                              
+ 36CL cG $R(ADO)=0.76 {I4}                                                      
+ 36CL2 G A2=-0.29 8 $ A4=+0.0006 5                                              
+ 36CLB G BE1W=1.07E-5 13$BM2W=0.8 8                                             
+ 36CL  G 1019.2    1  20.5   4  E1+M2    -0.04   3                              
+ 36CL cG $R(ADO)=0.78 {I4}                                                      
+ 36CL2 G A2=-0.27 6 $ A4=+0.0003 2                                              
+ 36CLB G BE1W=1.76E-5 15$BM2W=0.12 +19-12                                       
+ 36CL  G 2794.7    4  12.7   6  M2+E3    +0.26   12                             
+ 36CL cG $R(ADO)=1.62 {I5}                                                      
+ 36CL2 G A2=+0.51 7 $ A4=+0.05 3                                                
+ 36CLB G BM2W=0.29 4$BE3W=14 13                                                 
+ 36CL  L 5604.06   25 6+               0.62 PS   14                             
+ 36CL  G 289.9     3  2.2    1  M1                                              
+ 36CL cG $R(ADO)=0.82 {I5}                                                      
+ 36CL2 G BM1=0.86 25                                                            
+ 36CLB G BM1W=0.48 12                                                           
+ 36CL  G 596.3     4  2.8    2  M1                                              
+ 36CL cG $R(ADO)=0.73 {I4}                                                      
+ 36CL2 G A2=-0.31 4                                                             
+ 36CL2 G BM1=0.13 3                                                             
+ 36CLB G BM1W=0.070 17                                                          
+ 36CL  G 876.5     4  0.70   4  E1                                              
+ 36CL cG $R(ADO)=0.75 {I10}                                                     
+ 36CLB G BE1W=0.00016 4                                                         
+ 36CL  G 1446.0    4  0.25   4                                                  
+ 36CL  G 3084.6    8  0.71   5  E1+M2    -0.32   12                             
+ 36CL cG $R(ADO)=0.55 {I7}                                                      
+ 36CL2 G A2=-0.62 17 $ A4=+0.02 3                                               
+ 36CLB G BE1W=3.3E-6 9$BM2W=0.16 12                                             
+ 36CL  L 6372.1     3 7-               0.13 PS   3                              
+ 36CL  G 2077.4    5  2.6    1  [M1]                                            
+ 36CL2 G BM1=0.014 3                                                            
+ 36CLB G BM1W=0.0079 19                                                         
+ 36CL  G 3852.9    9  3.6    3  E2                                              
+ 36CL cG $R(ADO)=1.43 {I4}                                                      
+ 36CL2 G BE2=0.0003 1                                                           
+ 36CLB G BE2W=0.42 11                                                           
+ 36CL  L 6384.0     3 7+               0.24 PS   5                              
+ 36CL  G 779.5     9  1.3    1  M1+E2    -0.19   7                              
+ 36CL cG $R(ADO)=0.62 {I6}                                                      
+ 36CL2 G A2=-0.47 11 $ A4=+0.007 3                                              
+ 36CL2 G BM1=0.070 18 $ BE2=0.0060 40                                           
+ 36CLB G BM1W=0.038 9$BE2W=8 6                                                  
+ 36CL  G 1070.1    5  3.3    3  M1                                              
+ 36CL cG $R(ADO)=1.42 {I3}                                                      
+ 36CL2 G A2=+0.34 13                                                            
+ 36CL2 G BM1=0.068 17                                                           
+ 36CLB G BM1W=0.038 9                                                           
+ 36CL  G 1084.0    3  0.45   9                                                  
+ 36CL  G 1536.6    6  0.83   7  E1                                              
+ 36CL cG $R(ADO)=0.83 {I10}                                                     
+ 36CLB G BE1W=9.2E-5 22                                                         
+ 36CL  G 2088.8    6  0.56   4                                                  
+ 36CL  L 7021.7     3 7-                                                        
+ 36CL  G 2174.8    4  2.6    1  M1                                              
+ 36CL cG $R(ADO)=0.75 {I4}                                                      
+ 36CL  G 2726.8    9  1.23   7                                                  
+ 36CL  G 2759.4    3  0.73   7  E2                                              
+ 36CL cG $R(ADO)=1.42 {I4}                                                      
+ 36CL  G 2863.4    4  0.33   6                                                  
+ 36CL  L 7047.2     3 8+               0.34 PS   6                              
+ 36CL  G 663.5     3  1.83   8  M1                                              
+ 36CL cG $R(ADO)=0.76 {I5}                                                      
+ 36CL2 G A2=-0.31 9                                                             
+ 36CL2 G BM1=0.102 22                                                           
+ 36CLB G BM1W=0.057 11                                                          
+ 36CL  G 1442.9    5  0.37   4  [E2]                                            
+ 36CL2 G BE2=0.0014 4                                                           
+ 36CLB G BE2W=2.0 4                                                             
+ 36CL  G 1733.2    6  2.81   7  [M1]                                            
+ 36CL2 G BM1=0.009 3                                                            
+ 36CLB G BM1W=0.0049 9                                                          
+ 36CL  G 1746.4    3  2.10   6                                                  
+ 36CL  L 7380.85   24 7-                                                        
+ 36CL  G 359.5     4  0.16   2                                                  
+ 36CL  G 1008.6    3  1.35   3                                                  
+ 36CL  G 2533.6    2  3.2    2                                                  
+ 36CL  G 3086.4    4  1.1    1                                                  
+ 36CL  G 3222.2    5  0.77   6                                                  
+ 36CL  L 7476.3     4 9+               0.18 PS   3                              
+ 36CL  G 2162.4    6  11.4   5  E2                                              
+ 36CL cG $R(ADO)=1.42 {I3}                                                      
+ 36CL2 G A2=+0.31 6 $ A4=-0.08 4                                                
+ 36CL2 G BE2=0.0067 11                                                          
+ 36CLB G BE2W=9.4 16                                                            
+ 36CL  L 7668.3     4 8+               0.07 PS   2                              
+ 36CL  G 1284.5    6  0.68   4  M1                                              
+ 36CL cG $R(ADO)=0.69 {I9}                                                      
+ 36CL2 G BM1=0.069 20                                                           
+ 36CLB G BM1W=0.039 12                                                          
+ 36CL  G 2064.2    4  0.54   2  E2                                              
+ 36CL cG $R(ADO)=1.38 {I5}                                                      
+ 36CL2 G BE2=0.0045 14                                                          
+ 36CLB G BE2W=6.3 19                                                            
+ 36CL  G 2354.0    8  1.39   8  M1+E2    +0.03   2                              
+ 36CL cG $R(ADO)=0.87 {I4}                                                      
+ 36CL2 G A2=-0.16 8 $ A4=+0.002 1                                               
+ 36CL2 G BM1=0.023 9 $ BE2=0.000005 3                                           
+ 36CLB G BM1W=0.013 4$BE2W=0.008 +11-8                                          
+ 36CL  L 8221.8     4 9+               0.09 PS   2                              
+ 36CL  G 745.6     3  1.15   4  [M1]                                            
+ 36CL2 G BM1=0.24 7                                                             
+ 36CLB G BM1W=0.13 3                                                            
+ 36CL  G 1174.7    4  1.19   5  M1+E2    -0.31   12                             
+ 36CL cG $R(ADO)=0.51 {I10}                                                     
+ 36CL2 G A2=-0.68 11 $ A4=+0.03 2                                               
+ 36CL2 G BM1=0.057 16 $ BE2=0.0057 42                                           
+ 36CLB G BM1W=0.032 8$BE2W=8 6                                                  
+ 36CL  G 2906.8    7  2.74   3  E2                                              
+ 36CL cG $R(ADO)=1.44 {I4}                                                      
+ 36CL2 G A2=+0.32 7 $ A4=-0.08 3                                                
+ 36CL2 G BE2=0.0016 5                                                           
+ 36CLB G BE2W=2.3 6                                                             
+ 36CL  L 8606.7     3 9-               0.55 PS   9                              
+ 36CL  G 938.4     6  1.85   9  E1                                              
+ 36CL cG $R(ADO)=0.75 {I10}                                                     
+ 36CLB G BE1W=0.00021 4                                                         
+ 36CL  G 1130.4    7  0.73   8                                                  
+ 36CL  G 1225.7    3  3.7    2  E2                                              
+ 36CL cG $R(ADO)=1.40 {I3}                                                      
+ 36CL2 G A2=+0.32 4 $ A4=-0.08 3                                                
+ 36CL2 G BE2=0.0119 22                                                          
+ 36CLB G BE2W=16 3                                                              
+ 36CL  G 1584.7    4  2.5    1  E2                                              
+ 36CL cG $R(ADO)=1.40 {I9}                                                      
+ 36CL2 G A2=+0.28 11 $ A4=-0.06 4                                               
+ 36CL2 G BE2=0.0022 4                                                           
+ 36CLB G BE2W=3.1 6                                                             
+ 36CL  G 2234.7    2  2.7    3  E2                                              
+ 36CL cG $R(ADO)=1.43 {I4}                                                      
+ 36CL2 G BE2=0.0004 1                                                           
+ 36CLB G BE2W=0.59 12                                                           
+ 36CL  G 3306.3    4  0.40   7  [E2]                                            
+ 36CL2 G BE2=0.000008 3                                                         
+ 36CLB G BE2W=0.012 3                                                           
+ 36CL  L 8985.2     5 (9+)                                                      
+ 36CL  G 1508.8    3  1.23   3                                                  
+ 36CL cG $R(ADO)=1.40 {I8}                                                      
+ 36CL  L 9769.7     5 10+                                                       
+ 36CL  G 2293.0    5  1.99   8  M1+E2    -0.73   21                             
+ 36CL cG $R(ADO)=0.33 {I11}                                                     
+ 36CL2 G A2=-0.89 21 $ A4=+0.08 4                                               
+ 36CL  G 2722.6    4  1.50   1  E2                                              
+ 36CL cG $R(ADO)=1.41 {I3}                                                      
+ 36CL2 G A2=+0.30 7 $ A4=-0.06 4                                                
+ 36CL  L 10297.1    4 11-              0.24 PS   4                              
+ 36CL  G 1690.3    3  2.6    2  E2                                              
+ 36CL cG $R(ADO)=1.43 {I4}                                                      
+ 36CL2 G A2=+0.31 8 $ A4=-0.07 4                                                
+ 36CL2 G BE2=0.0171 29                                                          
+ 36CLB G BE2W=24 4                                                              
+ 36CL  L 10707.9    7 10+                                                       
+ 36CL  G 3231.4    6  0.96   5  M1+E2    -0.30   15                             
+ 36CL cG $R(ADO)=0.50 {I12}                                                     
+ 36CL2 G A2=-0.72 15 $ A4=+0.029 8                                              
+                                                                                
