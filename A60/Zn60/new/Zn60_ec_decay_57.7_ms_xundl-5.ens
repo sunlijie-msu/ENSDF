@@ -1,0 +1,113 @@
+ 60ZN    60GA EC+B+ DECAY:XUNDL-5      2025OW01                           202511
+ 60ZN c  Compiled by L. J. Sun and J. Chen (FRIB, MSU), November 11, 2025.      
+ 60ZN c  Phys Rev C 111, 065801 (2025).                                         
+ 60ZN dE EAV,LOGFT$FROM BetaShape v2.4 (Jun-2024) 2023MO21.                     
+ 60ZN dG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
+ 60ZN dL E$Least-squares fitting is done by GLSC (version 18-Feb-2025)          
+ 60ZN c  2025Ow01: {+60}Ga was produced via the projectile fragmentation of a   
+ 60ZN2c  150-MeV/nucleon {+78}Kr primary beam impinging on a 517-mg/cm{+2} thick
+ 60ZN3c  {+9}Be target, filtered by the NSCL A1900 separator and the radio      
+ 60ZN4c  frequency fragment separator, identified by B|r-|DE-ToF, and implanted 
+ 60ZN5c  into a 1-mm-thick 16|*16 DSSD surrounded by the Summing NaI (SuN)      
+ 60ZN6c  detector. Ions and positrons were detected using the DSSD and |g rays  
+ 60ZN7c  were detected using the SuN detector. Measured implant-decay time and  
+ 60ZN8c  space correlations, |g-ray total absorption spectra (TAS), single sum  
+ 60ZN9c  of segments spectra (SoS), and multiplicity spectra. Deduced |b-feeding
+ 60ZNAc  intensity at various excitation energies by fitting simulated TAS, SoS,
+ 60ZNBc  and multiplicity spectra to data. Deduced T{-1/2} of parent {+60}Ga.   
+ 60ZNCc  Compared with shell-model calculations using GXPF1A and KB3G           
+ 60ZNDc  Hamiltonians.                                                          
+ 60GA  P 0            2+               69.4 MS   2              14160     15    
+ 60GA cP J$from the Adopted Levels of {+60}Ga                                   
+ 60GA cP T$unweighted average of 70 ms {I15} (2001Ma96), 70 ms {I13} (2002Lo13),
+ 60GA2cP 76 ms {I3} (2017Ku12), 70.8 ms {I20} (2017GoZT,2020Gi02), 69.4 ms {I2} 
+ 60GA3cP (2021Or01), and 57.7 ms {I98} (2025Ow01).                              
+ 60GA cP QP$deduced by evaluators using {+60}Zn mass excess (2021Wa16) and      
+ 60GA2cP {+60}Ga mass excess of -40015 {I15}; weighted average of -40016 {I15}  
+ 60GA3cP (2021Or01), -40005 {I30} (2021Pa44), and -40034 {I46} (2023Wa10).      
+ 60GA  N                       1.0                                              
+ 60ZN  L 0                                                                      
+ 60ZN  E                                                        3.8       6     
+ 60ZN  L 1004                                                                   
+ 60ZN  E                                                        0.2             
+ 60ZN cE TI$0.2 {I+13-2}                                                        
+ 60ZN  L 2193                                                                   
+ 60ZN  E                                                        0.0             
+ 60ZN  L 2559                                                                   
+ 60ZN  E                                                        7.8             
+ 60ZN cE TI$7.8 {I+10-12}                                                       
+ 60ZN  L 3035                                                                   
+ 60ZN  E                                                        0.4             
+ 60ZN cE TI$0.4 {I+3-4}                                                         
+ 60ZN  L 3200                                                                   
+ 60ZN  E                                                        0.0             
+ 60ZN  L 3510                                                                   
+ 60ZN  E                                                        2.1             
+ 60ZN cE TI$2.1 {I+6-7}                                                         
+ 60ZN  L 3627                                                                   
+ 60ZN  E                                                        5.8             
+ 60ZN cE TI$5.8 {I+11-12}                                                       
+ 60ZN  L 3710                                                                   
+ 60ZN  E                                                        0.0             
+ 60ZN  L 3808                                                                   
+ 60ZN  E                                                        0.0             
+ 60ZN  L 3812                                                                   
+ 60ZN  E                                                        5.3             
+ 60ZN cE TI$5.3 {I+14-52}                                                       
+ 60ZN  L 3972                                                                   
+ 60ZN  E                                                        8.6             
+ 60ZN cE TI$8.6 {I+28-16}                                                       
+ 60ZN  L 4180                                                                   
+ 60ZN  E                                                        0.0             
+ 60ZN  L 4200                                                                   
+ 60ZN  E                                                        0.0             
+ 60ZN  L 4351                                                                   
+ 60ZN  E                                                        0.0             
+ 60ZN  L 4400                                                                   
+ 60ZN  E                                                        0.0             
+ 60ZN  L 4776                                                                   
+ 60ZN  E                                                        0.0             
+ 60ZN  L 4852                                                                   
+ 60ZN  E                                                        37.7            
+ 60ZN cE TI$37.7 {I+75-47}                                                      
+ 60ZN  L 4913                                                                   
+ 60ZN  E                                                        11.0            
+ 60ZN cE TI$11.0 {I+22-41}                                                      
+ 60ZN  L 5200                                                                   
+ 60ZN  E                                                        4.7             
+ 60ZN cE TI$4.7 {I+15-47}                                                       
+ 60ZN  L 5460      AP                                                           
+ 60ZN  E                                                        3.1             
+ 60ZN cE TI$3.1 {I+21-8}                                                        
+ 60ZN  L 5733      AP                                                           
+ 60ZN  E                                                        4.9             
+ 60ZN cE TI$4.9 {I+13-49}                                                       
+ 60ZN  L 6020      AP                                                           
+ 60ZN  E                                                        1.0             
+ 60ZN cE TI$1.0 {I+74-10}                                                       
+ 60ZN  L 6321      AP                                                           
+ 60ZN  E                                                        0.0             
+ 60ZN  L 6637      AP                                                           
+ 60ZN  E                                                        0.1             
+ 60ZN cE TI$0.1 {I+9-1}                                                         
+ 60ZN  L 6969      AP                                                           
+ 60ZN  E                                                        0.0             
+ 60ZN  L 7317      AP                                                           
+ 60ZN  E                                                        0.0             
+ 60ZN  L 7683      AP                                                           
+ 60ZN  E                                                        0.0             
+ 60ZN cE TI$0.0 {I+3-0}                                                         
+ 60ZN  L 8067      AP                                                           
+ 60ZN  E                                                        0.0             
+ 60ZN  L 8470      AP                                                           
+ 60ZN  E                                                        1.7             
+ 60ZN cE TI$1.7 {I+13-11}                                                       
+ 60ZN  L 8894      AP                                                           
+ 60ZN  E                                                        0.1             
+ 60ZN cE TI$0.1 {I+4-1}                                                         
+ 60ZN  L 9338      AP                                                           
+ 60ZN  E                                                        1.2             
+ 60ZN cE TI$1.2 {I+9-12}                                                        
+ 60ZN  L 9805      AP                                                           
+ 60ZN  E                                                        0.5             
+ 60ZN cE TI$0.5 {I+13-4}                                                        
