@@ -1,22 +1,28 @@
  60ZN    60GA EC+B+ DECAY:XUNDL-5      2025OW01                           202511
- 60ZN c  Compiled by L. J. Sun and J. Chen (FRIB, MSU), November 11, 2025.      
- 60ZN c  Phys Rev C 111, 065801 (2025).                                         
- 60ZN dE EAV,LOGFT$FROM BetaShape v2.4 (Jun-2024) 2023MO21.                     
- 60ZN dG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
- 60ZN dL E$Least-squares fitting is done by GLSC (version 18-Feb-2025)          
+ 60ZN c  Compiled (unevaluated) dataset from 2025Ow01: Phys Rev C 111, 065801   
+ 60ZN2c  (2025).                                                                
+ 60ZN c  Compiled by L. J. Sun and J. Chen (FRIB, MSU), November 12, 2025.      
  60ZN c  2025Ow01: {+60}Ga was produced via the projectile fragmentation of a   
- 60ZN2c  150-MeV/nucleon {+78}Kr primary beam impinging on a 517-mg/cm{+2} thick
- 60ZN3c  {+9}Be target, filtered by the NSCL A1900 separator and the radio      
+ 60ZN2c  150-MeV/nucleon {+78}Kr{+36+} primary beam impinging on a 517-mg/cm{+2}
+ 60ZN3c  thick {+9}Be target, filtered by the NSCL A1900 separator and the radio
  60ZN4c  frequency fragment separator, identified by B|r-|DE-ToF, and implanted 
  60ZN5c  into a 1-mm-thick 16|*16 DSSD surrounded by the Summing NaI (SuN)      
  60ZN6c  detector. Ions and positrons were detected using the DSSD and |g rays  
  60ZN7c  were detected using the SuN detector. Measured implant-decay time and  
  60ZN8c  space correlations, |g-ray total absorption spectra (TAS), single sum  
  60ZN9c  of segments spectra (SoS), and multiplicity spectra. Deduced |b-feeding
- 60ZNAc  intensity at various excitation energies by fitting simulated TAS, SoS,
- 60ZNBc  and multiplicity spectra to data. Deduced T{-1/2} of parent {+60}Ga.   
- 60ZNCc  Compared with shell-model calculations using GXPF1A and KB3G           
+ 60ZNAc  intensities at various excitation energies by fitting simulated TAS,   
+ 60ZNBc  SoS, and multiplicity spectra to data. Deduced T{-1/2} of parent       
+ 60ZNCc  {+60}Ga. Compared with shell-model calculations using GXPF1A and KB3G  
  60ZNDc  Hamiltonians.                                                          
+ 60ZN cE TI$2025Ow01 extracts I(|e+|b{++}) from the simultaneous |h{+2} fit of  
+ 60ZN2cE the TAS, SoS, and multiplicity spectra and normalizes the sum to       
+ 60ZN3cE |S%I(|e+|b{++})=100.                                                   
+ 60ZN cL E$For states below 5.3 MeV, 2025Ow01 adopts E(level) from the RIPL-3   
+ 60ZN2cL library, originally from the Adopted Levels of {+60}Zn (2013Br15)      
+ 60ZN3cL rounded to the nearest keV. For states above 5.3 MeV, E(level) is a    
+ 60ZN4cL sample of calculated continuum-state energies with energy spacing (273 
+ 60ZN5cL keV) that followed the energy resolution of the SuN detector.          
  60GA  P 0            2+               69.4 MS   2              14160     15    
  60GA cP J$from the Adopted Levels of {+60}Ga                                   
  60GA cP T$unweighted average of 70 ms {I15} (2001Ma96), 70 ms {I13} (2002Lo13),
@@ -25,38 +31,46 @@
  60GA cP QP$deduced by evaluators using {+60}Zn mass excess (2021Wa16) and      
  60GA2cP {+60}Ga mass excess of -40015 {I15}; weighted average of -40016 {I15}  
  60GA3cP (2021Or01), -40005 {I30} (2021Pa44), and -40034 {I46} (2023Wa10).      
- 60GA  N                       1.0                                              
+ 60ZN  N                       1.0                                              
  60ZN  L 0                                                                      
- 60ZN  E                                                        3.8       6     
+ 60ZN  E             3.8     6 0.0014  2 5.7     1              3.8       6     
+ 60ZNS E EAV=6285.3 74$CK=3.23E-4 10$CL=3.59E-5 11$CM+=6.40E-6 19               
  60ZN  L 1004                                                                   
- 60ZN  E                                                        0.2             
+ 60ZN  E             0.2                 6.8                    0.2             
  60ZN cE TI$0.2 {I+13-2}                                                        
+ 60ZNS E EAV=5790.3   $CK=4.01E-4 13$CL=4.46E-5 14$CM+=7.97E-6 23               
  60ZN  L 2193                                                                   
  60ZN  E                                                        0.0             
  60ZN  L 2559                                                                   
- 60ZN  E                                                        7.8             
+ 60ZN  E             7.79      0.005     4.9                    7.8             
  60ZN cE TI$7.8 {I+10-12}                                                       
+ 60ZNS E EAV=5024.9   $CK=5.86E-4 19$CL=6.52E-5 21$CM+=1.165E-5 35              
  60ZN  L 3035                                                                   
- 60ZN  E                                                        0.4             
+ 60ZN  E             0.40      3.017E-4  6.1                    0.4             
  60ZN cE TI$0.4 {I+3-4}                                                         
+ 60ZNS E EAV=4791   $CK=6.67E-4 21$CL=7.42E-5 24$CM+=1.325E-5 40                
  60ZN  L 3200                                                                   
  60ZN  E                                                        0.0             
  60ZN  L 3510                                                                   
- 60ZN  E                                                        2.1             
+ 60ZN  E             2.10      0.002     5.3                    2.1             
  60ZN cE TI$2.1 {I+6-7}                                                         
+ 60ZNS E EAV=4557.8   $CK=7.63E-4 25$CL=8.49E-5 27$CM+=1.516E-5 46              
  60ZN  L 3627                                                                   
- 60ZN  E                                                        5.8             
+ 60ZN  E             5.79      0.005     4.8                    5.8             
  60ZN cE TI$5.8 {I+11-12}                                                       
+ 60ZNS E EAV=4500.4   $CK=7.90E-4 26$CL=8.79E-5 28$CM+=1.570E-5 47              
  60ZN  L 3710                                                                   
  60ZN  E                                                        0.0             
  60ZN  L 3808                                                                   
  60ZN  E                                                        0.0             
  60ZN  L 3812                                                                   
- 60ZN  E                                                        5.3             
+ 60ZN  E             5.30      0.005     4.8                    5.3             
  60ZN cE TI$5.3 {I+14-52}                                                       
+ 60ZNS E EAV=4409.7   $CK=8.35E-4 27$CL=9.29E-5 30$CM+=1.658E-5 50              
  60ZN  L 3972                                                                   
- 60ZN  E                                                        8.6             
+ 60ZN  E             8.59      0.01      4.6                    8.6             
  60ZN cE TI$8.6 {I+28-16}                                                       
+ 60ZNS E EAV=4331.2   $CK=8.77E-4 28$CL=9.76E-5 32$CM+=1.741E-5 53              
  60ZN  L 4180                                                                   
  60ZN  E                                                        0.0             
  60ZN  L 4200                                                                   
@@ -68,28 +82,35 @@
  60ZN  L 4776                                                                   
  60ZN  E                                                        0.0             
  60ZN  L 4852                                                                   
- 60ZN  E                                                        37.7            
+ 60ZN  E             37.7      0.05      3.7                    37.7            
  60ZN cE TI$37.7 {I+75-47}                                                      
+ 60ZNS E EAV=3900.2   $CK=0.001167 38$CL=1.299E-4 43$CM+=2.318E-5 71            
  60ZN  L 4913                                                                   
- 60ZN  E                                                        11.0            
+ 60ZN  E             11.0      0.01      4.2                    11.0            
  60ZN cE TI$11.0 {I+22-41}                                                      
+ 60ZNS E EAV=3870.3   $CK=0.001192 39$CL=1.326E-4 44$CM+=2.367E-5 73            
  60ZN  L 5200                                                                   
- 60ZN  E                                                        4.7             
+ 60ZN  E             4.69      0.01      4.5                    4.7             
  60ZN cE TI$4.7 {I+15-47}                                                       
+ 60ZNS E EAV=3730   $CK=0.001318 44$CL=1.467E-4 49$CM+=2.619E-5 81              
  60ZN  L 5460      AP                                                           
- 60ZN  E                                                        3.1             
+ 60ZN  E             3.09      0.005     4.7                    3.1             
  60ZN cE TI$3.1 {I+21-8}                                                        
+ 60ZNS E EAV=3602.9 AP$CK=0.001450 48$CL=1.613E-4 54$CM+=2.879E-5 90            
  60ZN  L 5733      AP                                                           
- 60ZN  E                                                        4.9             
+ 60ZN  E             4.89      0.01      4.4                    4.9             
  60ZN cE TI$4.9 {I+13-49}                                                       
+ 60ZNS E EAV=3469.6 AP$CK=0.001607 54$CL=1.789E-4 60$CM+=3.2E-5 1               
  60ZN  L 6020      AP                                                           
- 60ZN  E                                                        1.0             
+ 60ZN  E             1.00      0.002     5.0                    1.0             
  60ZN cE TI$1.0 {I+74-10}                                                       
+ 60ZNS E EAV=3329.6 AP$CK=0.001800 61$CL=2.004E-4 68$CM+=3.57E-5 11             
  60ZN  L 6321      AP                                                           
  60ZN  E                                                        0.0             
  60ZN  L 6637      AP                                                           
- 60ZN  E                                                        0.1             
+ 60ZN  E             0.10      2.641E-4  5.8                    0.1             
  60ZN cE TI$0.1 {I+9-1}                                                         
+ 60ZNS E EAV=3029.2 AP$CK=0.002335 80$CL=2.599E-4 90$CM+=4.64E-5 15             
  60ZN  L 6969      AP                                                           
  60ZN  E                                                        0.0             
  60ZN  L 7317      AP                                                           
@@ -100,14 +121,18 @@
  60ZN  L 8067      AP                                                           
  60ZN  E                                                        0.0             
  60ZN  L 8470      AP                                                           
- 60ZN  E                                                        1.7             
+ 60ZN  E             1.69      0.01      3.9                    1.7             
  60ZN cE TI$1.7 {I+13-11}                                                       
+ 60ZNS E EAV=2141.8 AP$CK=0.00608 23$CL=6.78E-4 25$CM+=1.209E-4 42              
  60ZN  L 8894      AP                                                           
- 60ZN  E                                                        0.1             
+ 60ZN  E             0.10      9.077E-4  5.0                    0.1             
  60ZN cE TI$0.1 {I+4-1}                                                         
+ 60ZNS E EAV=1938.1 AP$CK=0.00802 30$CL=8.94E-4 34$CM+=1.596E-4 56              
  60ZN  L 9338      AP                                                           
- 60ZN  E                                                        1.2             
+ 60ZN  E             1.18      0.02      3.7                    1.2             
  60ZN cE TI$1.2 {I+9-12}                                                        
+ 60ZNS E EAV=1725.7 AP$CK=0.01107 43$CL=0.001234 48$CM+=2.202E-4 80             
  60ZN  L 9805      AP                                                           
- 60ZN  E                                                        0.5             
+ 60ZN  E             0.49      0.01      3.8                    0.5             
  60ZN cE TI$0.5 {I+13-4}                                                        
+ 60ZNS E EAV=1503.5 AP$CK=0.01622 66$CL=0.001808 73$CM+=3.23E-4 12              
