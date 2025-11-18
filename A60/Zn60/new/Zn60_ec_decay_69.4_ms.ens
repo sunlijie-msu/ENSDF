@@ -1,11 +1,11 @@
  60ZN    60GA EC+B+ DECAY (69.4 MS)    2001MA96,2021OR01,2025OW01ENSDF    202509
  60ZN  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
- 60ZN2 H CIT=ENSDF$CUT=30-Sep-2025$                                              
+ 60ZN2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  60ZN  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$                                     
  60ZN2 H CIT=NDS 114, 1849 (2013)$CUT=31-Dec-2012$                              
- 60ZN dE EAV,LOGFT$FROM BetaShape v2.4 (Jun-2024) 2023MO21.                     
+ 60ZN dE EAV,LOGFT$FROM BetaShape v2.4 (Jun-2024) 2023Mo21.                     
  60ZN dG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
- 60ZN dL E$Least-squares fitting is done by GLSC (version 18-Feb-2025)          
+ 60ZN dL E$Least-squares fitting is done by GLSC (version 11-Nov-2025)          
  60ZN c  2001Ma96: {+60}Ga was produced via the {+28}Si({+36}Ar,p3n) fusion     
  60ZN2c  evaporation reaction using a 4.71 MeV/u {+36}Ar primary beam at the GSI
  60ZN3c  On-Line Mass Separator. A 55-keV {+60}Ga{+1+} beam was extracted and   
@@ -32,21 +32,48 @@
  60ZNAc  T{-1/2}, and {+60}Ga mass using the known {+59}Zn mass, the E{-p} and  
  60ZNBc  E|g from the T=2 IAS in {+60}Ga populated by {+60}Ge decay in the same 
  60ZNCc  experiment.                                                            
- 60ZN c  The decay scheme is considered incomplete due to a large gap of 9 MeV  
- 60ZN2c  between the highest observed level at E=4852 and Q(|e)=14160 {I15}.    
- 60ZN3c  There may be missing transitions from unobserved levels in the gap.    
- 60ZN cE TI,LOGFT$|e+|b{++}-feeding from |g+ce intensity balance at each level. 
- 60ZN2cE Quoted I(|e+|b{++}) values are considered upper limits due to the      
- 60ZN3cE incomplete decay scheme, and the associated log {Ift} values are       
- 60ZN4cE considered lower limits.                                               
- 60GA  P 0           2+                69.4 MS   2              14160     15    
- 60GA cP J$from the Adopted Levels of {+60}Ga (2013Br15).                       
+ 60ZN c  2025Ow01: {+60}Ga was produced via the projectile fragmentation of a   
+ 60ZN2c  150-MeV/nucleon {+78}Kr{+36+} primary beam impinging on a 517-mg/cm{+2}
+ 60ZN3c  thick {+9}Be target, filtered by the NSCL A1900 separator and the radio
+ 60ZN4c  frequency fragment separator, identified using the |DE-ToF method, and 
+ 60ZN5c  implanted into a 1-mm-thick DSSD with 16|*16 1.2-mm wide strips at the 
+ 60ZN6c  center of the Summing NaI (SuN) detector. Beam ions and decay positrons
+ 60ZN7c  were detected using the DSSD and |g rays were detected using the SuN   
+ 60ZN8c  detector. Measured implant-decay correlations, |g-ray total absorption 
+ 60ZN9c  spectra (TAS), sum of segments spectra (SoS), and multiplicity spectra.
+ 60ZNAc  Deduced |b-feeding intensities, Gamow-Teller strength distributions,   
+ 60ZNBc  and T{-1/2} of parent {+60}Ga. Compared with shell-model calculations  
+ 60ZNCc  using GXPF1A and KB3G Hamiltonians.                                    
+ 60ZN cE IB,IE,LOGFT$Calculated by evaluators using the BetaShape code          
+ 60ZN2cE (2023Mo21).                                                            
+ 60ZN cE TI$From 2025Ow01. I(|e+|b{++}) at each E(level) is extracted by        
+ 60ZN2cE simultaneously fitting the simulated TAS, SoS, and multiplicity spectra
+ 60ZN3cE to data via the |h{+2} minimization. The sum is normalized to          
+ 60ZN4cE |S%I(|e+|b{++})=100. The decay scheme built via |b-delayed |g-ray      
+ 60ZN5cE spectroscopy (2001Ma96,2021Or01) is considered incomplete due to a     
+ 60ZN6cE large gap of 9 MeV between the highest observed level at E=4852 and    
+ 60ZN7cE Q(|e)=14160 {I15}. There should be missing transitions from unobserved 
+ 60ZN8cE levels in the gap. Therefore, the |e+|b{++}-feeding values from |g+ce  
+ 60ZN9cE intensity balance at each level are considered upper limits due to the 
+ 60ZNAcE incomplete decay scheme.                                               
+ 60ZN cE TI(A)$I(|e+|b{++}) values below 0.1 were set to 0.0 in 2025Ow01 due to 
+ 60ZN2cE sensitivity limitations.                                               
+ 60ZN cL E$From a least-squares fit to |g-ray energies for levels connected with
+ 60ZN2cL |g transitions. For other levels below 5.3 MeV, from 2025Ow01 adopted  
+ 60ZN3cL from the RIPL-3 library, originally from the Adopted Levels of {+60}Zn 
+ 60ZN4cL (2013Br15) rounded to the nearest keV. For levels above 5.3 MeV,       
+ 60ZN5cL E(level) is a sample of calculated continuum-state energies with energy
+ 60ZN6cL spacing (273 keV) that follows the energy resolution of the SuN        
+ 60ZN7cL detector.                                                              
+ 60GA  P 0            2+               69.4 MS   2              14160     15    
+ 60GA cP J$from the Adopted Levels of {+60}Ga                                   
  60GA cP T$unweighted average of 70 ms {I15} (2001Ma96), 70 ms {I13} (2002Lo13),
  60GA2cP 76 ms {I3} (2017Ku12), 70.8 ms {I20} (2017GoZT,2020Gi02), 69.4 ms {I2} 
  60GA3cP (2021Or01), and 57.7 ms {I98} (2025Ow01).                              
- 60GA cP QP$deduced by evaluators using {+60}Zn mass excess (2021Wa16) and      
- 60GA2cP {+60}Ga mass excess of -40015 {I15}; weighted average of -40016 {I15}  
- 60GA3cP (2021Or01), -40005 {I30} (2021Pa44), and -40034 {I46} (2023Wa10).      
+ 60GA cP QP$deduced by evaluators using {+60}Zn mass excess of -54174.5 {I5}    
+ 60GA2cP (2021Wa16) and {+60}Ga mass excess of -40015 {I15}; weighted average of
+ 60GA3cP -40016 {I15} (2021Or01), -40005 {I30} (2021Pa44), and -40034 {I46}     
+ 60GA4cP (2023Wa10).                                                            
  60ZN  N 0.62                  1.0                                              
  60ZN cN NR$absolute |g-ray intensities per 100 decays of {+60}Ga were measured 
  60ZN2cN by 2021Or01 based on the total number of implanted {+60}Ga             
@@ -103,15 +130,21 @@
  60ZN  G 4891.9    3 0.65    16                                                 
  60ZN2 G %IG=0.40 10                                                            
  60ZN  L 0            0+                                                        
+ 60ZN  E             3.8     6 0.0027  4 8.3     1              3.8       6     
+ 60ZNS E EAV=6241.8 73$CK=6.25E-4 19$CL=6.96E-5 22$CM+=1.243E-5 36              
  60ZN  L 1003.53   10 2+                                                        
- 60ZN  E             17      5 0.008   2 4.9     +2-1           17        5     
+ 60ZN  E             0.2                 6.8                    0.2             
+ 60ZN cE TI$0.2 {I+13-2} (2025Ow01); I(|e+|b{++})=17 {I5} (2021Or01).           
  60ZNS E EAV=5790.3 74$CK=4.01E-4 13$CL=4.46E-5 14$CM+=7.97E-6 23               
  60ZN  G 1003.5    1 100     5                                                  
  60ZN2 G %IG=62.0 31                                                            
  60ZN cG E$from 2021Or01. Other: 1003.7 {I2} (2001Ma96)                         
  60ZN cG RI$from 2021Or01. Other: 100 {I17} (2001Ma96)                          
+ 60ZN  L 2193                                                                   
+ 60ZN  E                                                        0.1       LTA   
  60ZN  L 2558.54   23 (2+)                                                      
- 60ZN  E             9.2     10 0.0061 7 4.85    5              9.2       10    
+ 60ZN  E             7.79      0.005     4.9                    7.8             
+ 60ZN cE TI$7.8 {I+10-12} (2025Ow01); I(|e+|b{++})=9.2 {I10} (2021Or01).        
  60ZNS E EAV=5024.9 74$CK=5.86E-4 19$CL=6.52E-5 21$CM+=1.165E-5 35              
  60ZN  G 1554.7    3 11.3    8                                                  
  60ZN2 G %IG=7.0 5                                                              
@@ -121,9 +154,46 @@
  60ZN2 G %IG=8.5 6                                                              
  60ZN cG E$weighted average of 2559.0 {I8} (2001Ma96) and 2558.7 {I4} (2021Or01)
  60ZN cG RI$from 2021Or01. Other: 13 {I5} (2001Ma96)                            
+ 60ZN  L 3035                                                                   
+ 60ZN  E             0.40      3.017E-4  6.1                    0.4             
+ 60ZN cE TI$0.4 {I+3-4}                                                         
+ 60ZNS E EAV=4791   $CK=6.67E-4 21$CL=7.42E-5 24$CM+=1.325E-5 40                
+ 60ZN  L 3200                                                                   
+ 60ZN  E                                                        0.1       LTA   
+ 60ZN  L 3510                                                                   
+ 60ZN  E             2.10      0.002     5.3                    2.1             
+ 60ZN cE TI$2.1 {I+6-7}                                                         
+ 60ZNS E EAV=4557.8   $CK=7.63E-4 25$CL=8.49E-5 27$CM+=1.516E-5 46              
+ 60ZN  L 3627                                                                   
+ 60ZN  E             5.79      0.005     4.8                    5.8             
+ 60ZN cE TI$5.8 {I+11-12}                                                       
+ 60ZNS E EAV=4500.4   $CK=7.90E-4 26$CL=8.79E-5 28$CM+=1.570E-5 47              
+ 60ZN  L 3710                                                                   
+ 60ZN  E                                                        0.1       LTA   
+ 60ZN  L 3808                                                                   
+ 60ZN  E                                                        0.1       LTA   
+ 60ZN  L 3812                                                                   
+ 60ZN  E             5.30      0.005     4.8                    5.3             
+ 60ZN cE TI$5.3 {I+14-52}                                                       
+ 60ZNS E EAV=4409.7   $CK=8.35E-4 27$CL=9.29E-5 30$CM+=1.658E-5 50              
+ 60ZN  L 3972                                                                   
+ 60ZN  E             8.59      0.01      4.6                    8.6             
+ 60ZN cE TI$8.6 {I+28-16}                                                       
+ 60ZNS E EAV=4331.2   $CK=8.77E-4 28$CL=9.76E-5 32$CM+=1.741E-5 53              
+ 60ZN  L 4180                                                                   
+ 60ZN  E                                                        0.1       LTA   
+ 60ZN  L 4200                                                                   
+ 60ZN  E                                                        0.1       LTA   
+ 60ZN  L 4351                                                                   
+ 60ZN  E                                                        0.1       LTA   
+ 60ZN  L 4400                                                                   
+ 60ZN  E                                                        0.1       LTA   
+ 60ZN  L 4776                                                                   
+ 60ZN  E                                                        0.1       LTA   
  60ZN  L 4851.97   32 2+                                                        
  60ZN cL $T=1, isobaric analog state of {+60}Ga g.s.                            
- 60ZN  E             44.0    32 0.058  5 3.66    4              44.1      32    
+ 60ZN  E             37.7      0.05      3.7                    37.7            
+ 60ZN cE TI$37.7 {I+75-47} (2025Ow01); I(|e+|b{++})=44.1 {I32} (2021Or01).      
  60ZNS E EAV=3900.2 73$CK=0.001167 38$CL=1.299E-4 43$CM+=2.318E-5 71            
  60ZN  G 2293.2    4 10.2    8                                                  
  60ZN2 G %IG=6.3 5                                                              
@@ -133,4 +203,54 @@
  60ZN2 G %IG=37.8 31                                                            
  60ZN cG E$from 2021Or01. Other: 3848.3 {I7} (2001Ma96)                         
  60ZN cG RI$from 2021Or01. Other: 57 {I13} (2001Ma96)                           
-
+ 60ZN  L 4913                                                                   
+ 60ZN  E             11.0      0.01      4.2                    11.0            
+ 60ZN cE TI$11.0 {I+22-41}                                                      
+ 60ZNS E EAV=3870.3   $CK=0.001192 39$CL=1.326E-4 44$CM+=2.367E-5 73            
+ 60ZN  L 5200                                                                   
+ 60ZN  E             4.69      0.01      4.5                    4.7             
+ 60ZN cE TI$4.7 {I+15-47}                                                       
+ 60ZNS E EAV=3730   $CK=0.001318 44$CL=1.467E-4 49$CM+=2.619E-5 81              
+ 60ZN  L 5460      AP                                                           
+ 60ZN  E             3.09      0.005     4.7                    3.1             
+ 60ZN cE TI$3.1 {I+21-8}                                                        
+ 60ZNS E EAV=3602.9 AP$CK=0.001450 48$CL=1.613E-4 54$CM+=2.879E-5 90            
+ 60ZN  L 5733      AP                                                           
+ 60ZN  E             4.89      0.01      4.4                    4.9             
+ 60ZN cE TI$4.9 {I+13-49}                                                       
+ 60ZNS E EAV=3469.6 AP$CK=0.001607 54$CL=1.789E-4 60$CM+=3.2E-5 1               
+ 60ZN  L 6020      AP                                                           
+ 60ZN  E             1.00      0.002     5.0                    1.0             
+ 60ZN cE TI$1.0 {I+74-10}                                                       
+ 60ZNS E EAV=3329.6 AP$CK=0.001800 61$CL=2.004E-4 68$CM+=3.57E-5 11             
+ 60ZN  L 6321      AP                                                           
+ 60ZN  E                                                        0.1       LTA   
+ 60ZN  L 6637      AP                                                           
+ 60ZN  E             0.10      2.641E-4  5.8                    0.1             
+ 60ZN cE TI$0.1 {I+9-1}                                                         
+ 60ZNS E EAV=3029.2 AP$CK=0.002335 80$CL=2.599E-4 90$CM+=4.64E-5 15             
+ 60ZN  L 6969      AP                                                           
+ 60ZN  E                                                        0.1       LTA   
+ 60ZN  L 7317      AP                                                           
+ 60ZN  E                                                        0.1       LTA   
+ 60ZN  L 7683      AP                                                           
+ 60ZN  E                                                        0.1       LTA   
+ 60ZN cE TI$0.0 {I+3-0}                                                         
+ 60ZN  L 8067      AP                                                           
+ 60ZN  E                                                        0.1       LTA   
+ 60ZN  L 8470      AP                                                           
+ 60ZN  E             1.69      0.01      3.9                    1.7             
+ 60ZN cE TI$1.7 {I+13-11}                                                       
+ 60ZNS E EAV=2141.8 AP$CK=0.00608 23$CL=6.78E-4 25$CM+=1.209E-4 42              
+ 60ZN  L 8894      AP                                                           
+ 60ZN  E             0.10      9.077E-4  5.0                    0.1             
+ 60ZN cE TI$0.1 {I+4-1}                                                         
+ 60ZNS E EAV=1938.1 AP$CK=0.00802 30$CL=8.94E-4 34$CM+=1.596E-4 56              
+ 60ZN  L 9338      AP                                                           
+ 60ZN  E             1.18      0.02      3.7                    1.2             
+ 60ZN cE TI$1.2 {I+9-12}                                                        
+ 60ZNS E EAV=1725.7 AP$CK=0.01107 43$CL=0.001234 48$CM+=2.202E-4 80             
+ 60ZN  L 9805      AP                                                           
+ 60ZN  E             0.49      0.01      3.8                    0.5             
+ 60ZN cE TI$0.5 {I+13-4}                                                        
+ 60ZNS E EAV=1503.5 AP$CK=0.01622 66$CL=0.001808 73$CM+=3.23E-4 12              
