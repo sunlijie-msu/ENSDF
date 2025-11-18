@@ -2,6 +2,7 @@
  60ZN c  Compiled (unevaluated) dataset from 2025Ow01: Phys Rev C 111, 065801   
  60ZN2c  (2025).                                                                
  60ZN c  Compiled by L. J. Sun and J. Chen (FRIB, MSU), November 17, 2025.      
+ 60ZN dE EAV,LOGFT$FROM BetaShape v2.4 (Jun-2024) 2023MO21.                     
  60ZN c  2025Ow01: {+60}Ga was produced via the projectile fragmentation of a   
  60ZN2c  150-MeV/nucleon {+78}Kr{+36+} primary beam impinging on a 517-mg/cm{+2}
  60ZN3c  thick {+9}Be target, filtered by the NSCL A1900 separator and the radio
@@ -14,11 +15,13 @@
  60ZNAc  Deduced |b-feeding intensities, Gamow-Teller strength distributions,   
  60ZNBc  and T{-1/2} of parent {+60}Ga. Compared with shell-model calculations  
  60ZNCc  using GXPF1A and KB3G Hamiltonians.                                    
+ 60ZN cE IB,IE,LOGFT$Calculated by evaluators using the BetaShape code          
+ 60ZN2cE (2023Mo21).                                                            
  60ZN cE TI$2025Ow01 extracts I(|e+|b{++}) at each E(level) by simultaneously   
  60ZN2cE fitting the simulated TAS, SoS, and multiplicity spectra to data via   
  60ZN3cE the |h{+2} minimization. The sum is normalized to |S%I(|e+|b{++})=100. 
- 60ZN4cE I(|e+|b{++}) values below 0.1 are set to 0.0 due to sensitivity        
- 60ZN5cE limitations.                                                           
+ 60ZN cE TI(A)$I(|e+|b{++}) values below 0.1 were set to 0.0 in 2025Ow01 due to 
+ 60ZN2cE sensitivity limitations.                                               
  60ZN cL E$For levels below 5.3 MeV, 2025Ow01 adopts E(level) from the RIPL-3   
  60ZN2cL library, originally from the Adopted Levels of {+60}Zn (2013Br15)      
  60ZN3cL rounded to the nearest keV. For levels above 5.3 MeV, E(level) is a    
