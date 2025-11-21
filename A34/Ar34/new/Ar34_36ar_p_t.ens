@@ -3,9 +3,9 @@
  34AR  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34AR2 H CUT=28-May-2012$                                                       
  34AR c  {+36}Ar|)2n+{+34}Ar from J|p=0+ {+36}Ar ground state.                  
- 34AR c  2018Lo11: a 100-MeV proton beam was produced from the RCNP WS beam     
- 34AR2c  line at Osaka University. The target was 0.76-mg/cm{+2} enriched {+36}Ar gas (|>99%).      
- 34AR3c  Reaction products were momentum-analyzed by the Grand Raiden           
+ 34AR c  2018Lo11: a 100-MeV proton beam was produced from the RCNP WS beam line
+ 34AR2c  at Osaka University. The target was 0.76-mg/cm{+2} enriched {+36}Ar gas
+ 34AR3c  (|>99%). Reaction products were momentum-analyzed by the Grand Raiden  
  34AR4c  spectrograph and detected using the focal-plane detector system.       
  34AR5c  Measured |s(E{-t},|q). Deduced levels. Calculated astrophysical        
  34AR6c  {+30}S(|a,p){+33}Cl reaction rate. Also see 2009ObZY.                  
@@ -24,91 +24,82 @@
  34AR7c  counters to eliminate long-range particles. Measured |s(E{-t},|q).     
  34AR8c  Deduced levels, L-transfers, J, and |p from DWUCK-DWBA analysis. Also  
  34AR9c  measured {+36}Ar(p,{+3}He){+34}Cl and {+36}Ar(d,|a){+34}Cl.            
- 34AR c  Other:                                                                 
  34AR c  1974Ha02: a 40.2-MeV proton beam was produced from the MSU cyclotron.  
  34AR2c  Measured Q value. Tritons for the g.s. to g.s. transition measured     
  34AR3c  using split-pole magnetic spectrograph, FWHM=10-25 keV. Measures Q     
  34AR4c  value=-19513 {I3}. Deduced mass excess of {+34}Ar.                     
- 34AR cL E$From 1972Pa02, unless otherwise stated                               
- 34AR cL L$From 1969Br21, unless otherwise stated. For g.s., 2094 and 3288      
- 34AR2cL levels, L values are confirmed in 1972Pa02                             
- 34AR cL E(D)$3879+4050 and 5909+6074 were not fully resolved (1972Pa02)        
- 34AR  L 0                                             0                        
- 34AR cL E$ 0  (2018Lo11)                                                       
- 34AR  L 2094      11                                  2                        
- 34AR cL E$ 2091.5 24 (2018Lo11)                                                
- 34AR cL E$ 2097 20 (1969Br21)                                                  
- 34AR  L 3288      14                                  2                        
- 34AR cL E$ 3290.9 18 (2018Lo11)                                                
- 34AR cL E$ 3303 25 (1969Br21)                                                  
- 34AR  L 3879      15                                  0                        
- 34AR cL E$ 3878.8 33 (2018Lo11)                                                
- 34ARF L FLAG=D                                                                 
- 34AR cL E$ 3899 25 (1969Br21)                                                  
- 34AR cL L$|s(|q) consistent with L=0 for 3879+4050 unresolved group in 1972Pa02
- 34AR  L 4050      14                                                           
- 34AR cL E$ 4019.1 43 (2018Lo11)                                                
- 34ARF L FLAG=D                                                                 
- 34AR  L 4522      14                                  (3)                      
- 34AR cL E$ 4514.9 23 (2018Lo11)                                                
- 34AR cL L$neither L=2 nor L=3 fits |s(|q) data in 1969Br21, (3-) is preferred  
- 34AR2cL since first 3- is expected near this energy.                           
- 34AR cL E$ 4560 40 (1969Br21)                                                  
- 34AR  L 4651      14                                                           
- 34AR cL E$ 4641.3 21 (2018Lo11)                                                
- 34AR  L 4867      14                                                           
- 34AR cL E$ 4875.9 38 (2018Lo11)                                                
- 34AR  L 4985      14                                  0                        
- 34AR cL E$ 4967.2 27 (2018Lo11)                                                
- 34AR cL E$ 4970 40 (1969Br21)                                                  
- 34AR  L 5307      13                                                           
- 34AR cL E$ 5330 17 (2018Lo11)                                                  
- 34AR cL E$ 5340 40 (1969Br21)                                                  
+ 34AR cL E$From 2018Lo11, unless otherwise noted.                               
+ 34AR cL L$From 1969Br21, unless otherwise stated.                              
+ 34AR  L 0            0+                               0                        
+ 34AR  L 2091.6    24 2+                               2                        
+ 34AR cL E$weighted average of 2094 {I11} (1972Pa02) and 2091.5 {I24}           
+ 34AR2cL (2018Lo11). Other: 2097 {I20} (1969Br21)                               
+ 34AR cL L$2 in 1972Pa02.                                                       
+ 34AR  L 3290.9    18 2+                               2                        
+ 34AR cL E$weighted average of 3303 {I25} (1969Br21), 3288 {I14} (1972Pa02), and
+ 34AR2cL 3290.9 {I18} (2018Lo11)                                                
+ 34AR cL L$2 in 1972Pa02.                                                       
+ 34AR  L 3879.1    33 0+                               0                        
+ 34AR cL E$weighted average of 3899 {I25} (1969Br21), 3879 {I15} (1972Pa02), and
+ 34AR2cL 3878.8 {I33} (2018Lo11)                                                
+ 34AR cL L$0 for unresolved 3879+4050 in 1972Pa02; 3879 is more strongly        
+ 34AR2cL excited.                                                               
+ 34AR  L 4035      16                                                           
+ 34AR cL E$unweighted average of 4050 {I14} (1972Pa02) and 4019.1 {I43}         
+ 34AR2cL (2018Lo11)                                                             
+ 34AR  L 4515.1    23 (3-)                             (3)                      
+ 34AR cL E$weighted average of 4522 {I14} (1972Pa02) and 4514.9 {I23}           
+ 34AR2cL (2018Lo11). Other: 4560 {I40} (1969Br21).                              
+ 34AR cL L$not fitted particularly well by either L=2 or L=3 calculated         
+ 34AR2cL distributions. However, it is distinctly different from the other      
+ 34AR3cL experimental L=2 distributions. There is also a 3- state at            
+ 34AR4cL approximately the same excitation energy in the mirror nucleus {+34}S  
+ 34AR5cL (1969Br21).                                                            
+ 34AR  L 4641.5    21                                                           
+ 34AR cL E$weighted average of 4651 {I14} (1972Pa02) and 4641.3 {I21} (2018Lo11)
+ 34AR  L 4875.3    38                                                           
+ 34AR cL E$weighted average of 4867 {I14} (1972Pa02) and 4875.9 {I38} (2018Lo11)
+ 34AR  L 4967.9    27 0+                               0                        
+ 34AR cL E$weighted average of 4970 {I40} (1969Br21), 4985 {I14} (1972Pa02), and
+ 34AR2cL 4967.2 {I27} (2018Lo11)                                                
+ 34AR  L 5262      15                                                           
+ 34AR  L 5317      13                                                           
+ 34AR cL E$weighted average of 5340 {I40} (1969Br21), 5307 {I13} (1972Pa02), and
+ 34AR2cL 5330 {I17} (2018Lo11)                                                  
  34AR  L 5535      18                                                           
- 34AR cL E$ 5535 18 (2018Lo11)                                                  
  34AR  L 5629.6    45                                                           
- 34AR cL E$ 5629.6 45 (2018Lo11)                                                
- 34AR  L 5909      12                                                           
- 34AR cL E$ 5948.2 66 (2018Lo11)                                                
- 34AR  L 6074      11                                  2                        
- 34AR cL E$ 6049.2 20 (2018Lo11)                                                
- 34AR cL E$ 6100 40 (1969Br21)                                                  
- 34AR cL L$ 2 for 5909+6074 doublet in 1972Pa02                                 
- 34AR  L 6525      9                                   2                        
+ 34AR  L 5929      20                                                           
+ 34AR cL E$unweighted average of 5909 {I12} (1972Pa02) and 5948.2 {I66}         
+ 34AR2cL (2018Lo11)                                                             
+ 34AR  L 6050.1    36 (2+)                             (2)                      
+ 34AR cL E$weighted average of 6074 {I11} (1972Pa02), and 6049.2 {I20}          
+ 34AR2cL (2018Lo11). Other: 6100 {I40} (1969Br21).                              
+ 34AR cL L$the total angular distribution of unresolved 5909+6074 does exhibit  
+ 34AR2cL some L=2 character (1972Pa02). L=2 is assigned for 6100 in 1969Br21.   
+ 34AR  L 6525      9  2+                               2                        
  34AR  L 6641      14                                                           
- 34AR cL E$ 6641 14 (2018Lo11)                                                  
  34AR  L 6723      22                                                           
- 34AR cL E$ 6723 22 (2018Lo11)                                                  
- 34AR  L 6794      11                                                           
- 34AR cL E$ 6808 3 (2018Lo11)                                                   
- 34AR cL E$ 6860 40 (1969Br21)                                                  
+ 34AR  L 6807      4                                                            
+ 34AR cL E$weighted average of 6794 {I11} (1972Pa02) and 6808 {I3} (2018Lo11).  
+ 34AR2cL Other: 6860 {I40} (1969Br21)                                           
  34AR  L 6917      5                                                            
- 34AR cL E$ 6917 5 (2018Lo11)                                                   
  34AR  L 7072      8                                                            
- 34AR cL E$ 7072 8 (2018Lo11)                                                   
- 34AR  L 7322      6                                   2                        
- 34AR cL E$ 7358 4 (2018Lo11)                                                   
- 34AR cL E$ 7340 50 (1969Br21)                                                  
- 34AR  L 7499      4                                   (2)                      
- 34AR cL E$ 7476 2 (2018Lo11)                                                   
- 34AR cL E$ 7530 50 (1969Br21)                                                  
- 34AR  L 7925      5                                                            
- 34AR cL E$ 7889 2 (2018Lo11)                                                   
- 34AR cL E$ 7950 50 (1969Br21)                                                  
-                                                                                
+ 34AR  L 7276      2                                                            
+ 34AR  L 7340      11 2+                               2                        
+ 34AR cL E$unweighted average of 7340 {I50} (1969Br21), 7322 {I6} (1972Pa02),   
+ 34AR2cL and 7358 {I4} (2018Lo11)                                               
+ 34AR  L 7502      16 (2+)                             (2)                      
+ 34AR cL E$unweighted average of 7530 {I50} (1969Br21), 7499 {I4} (1972Pa02),   
+ 34AR2cL and 7476 {I2} (2018Lo11)                                               
+ 34AR  L 7921      18                                                           
+ 34AR cL E$unweighted average of 7950 {I50} (1969Br21), 7925 {I5} (1972Pa02),   
+ 34AR2cL and 7889 {I2} (2018Lo11)                                               
  34AR  L 8166      3                                                            
- 34AR cL E$ 8166 3 (2018Lo11)                                                   
  34AR  L 8660      9                                                            
- 34AR cL E$ 8660 9 (2018Lo11)                                                   
  34AR  L 8746      8                                                            
- 34AR cL E$ 8746 8 (2018Lo11)                                                   
  34AR  L 8899      8                                                            
- 34AR cL E$ 8899 8 (2018Lo11)                                                   
  34AR  L 9004      4                                                            
- 34AR cL E$ 9004 4 (2018Lo11)                                                   
  34AR  L 9148      22                                                           
- 34AR cL E$ 9148 22 (2018Lo11)                                                  
  34AR  L 9226      18                                                           
- 34AR cL E$ 9226 18 (2018Lo11)                                                  
  34AR  L 9549      16                                                           
- 34AR cL E$ 9549 16 (2018Lo11)                                                  
+
