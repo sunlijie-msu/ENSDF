@@ -39,7 +39,8 @@ def print_ruler(line):
         errors.append(f'Length {len(line)} ≠ 80')
     
     # Check ENSDF field positions for data records (including H records)
-    if len(line) >= 8 and line[7] in ['H', 'L', 'G', 'E', 'B']:
+    # Only check if column 7 (index 6) is blank (primary records)
+    if len(line) >= 8 and line[7] in ['H', 'L', 'G', 'E', 'B'] and line[6] == ' ':
         record_type = line[7]
         
         # Column 77 validation (different rules for different record types)
