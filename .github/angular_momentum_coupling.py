@@ -20,9 +20,9 @@ def calc(target, particle):
     explanation = f"from |{Jt} - {sp}| to {Jt} + {sp}"
     print(f"Channel Spins S: {', '.join(map(str, S_values))}: {explanation}")
     
-    print("-" * 80)
+    print("-" * 60)
     print(f"{'L':<3} {'Wave':<5} {'Parity':<8} {'s':<5} {'Final Jπ'}")
-    print("-" * 80)
+    print("-" * 60)
     
     waves = {0:'s', 1:'p', 2:'d', 3:'f', 4:'g', 5:'h', 6:'i'}
     
@@ -43,7 +43,7 @@ def calc(target, particle):
             Jpi_str = ", ".join(f"{j}{parity_str}" for j in sorted(current_Js))
             
             print(f"{l:<3} {waves.get(l,'?'):<5} {parity_str:<8} {str(S):<5} {Jpi_str}")
-        print("-" * 80)
+        print("-" * 60)
 
 if __name__ == "__main__":
     if len(sys.argv) == 3:
