@@ -1,4 +1,4 @@
- # Evaluated Nuclear Structure Data File (ENSDF)
+# Evaluated Nuclear Structure Data File (ENSDF)
 
 ## Primary Purpose
 This repository contains the datasets being evaluated by the FRIB Nuclear Data Group. 
@@ -18,6 +18,8 @@ This repository contains the datasets being evaluated by the FRIB Nuclear Data G
 
 ### Processing Tools
 - **`ens2pdf.py`**: Converts ENSDF files to PDF format using Java conversion tool
+- **`angular_momentum_coupling.py`**: Calculates allowed final nuclear states based on angular momentum and parity conservation rules
+- **`angular_momentum_coupling.md`**: Documentation and theoretical guide for the coupling tool
 - **`.github/column_calibrate.py`**: Validates ENSDF 80-column format (L/G/E/B/DP records)
 - **`.github/check_gamma_ordering.py`**: Verifies ascending energy order for L-records and G-records
 - **`.github/check_averages.py`**: Verifies weighted vs unweighted average calculations
