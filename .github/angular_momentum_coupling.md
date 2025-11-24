@@ -88,7 +88,7 @@ For the transfer of two identical nucleons (2n or 2p) in the same shell model or
 *   **Particle Input**: `0+`
 
 #### 2. Neutron-Proton Transfer (1n1p)
-*Reactions:* $(\alpha, d)$, $(d, \alpha)$
+*Reactions:* $(\alpha, d)$, $(d, \alpha)$, $(^3\text{He}, p)$, $(p, ^3\text{He})$
 
 For the transfer of a neutron-proton pair (a deuteron), the Pauli principle does not restrict the spin to $S=0$. The deuteron itself has spin $S=1$.
 
