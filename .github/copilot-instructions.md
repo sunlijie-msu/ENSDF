@@ -127,6 +127,8 @@ Example:
 | S | 65-74 | Spectroscopic strength |
 | DS | 75-76 | Uncertainty in S |
 | C | 77 | Comment flag |
+| MS | 78-79 | Metastable state, i.e., isomer, denoted by 'M ' |
+| Q | 80 | Blank or '?' denotes an uncertain or questionable level or 'S' denotes a level assumed but not observed, usually near neutron, proton, or alpha separation energy. |
 
 
 **CRITICAL cL Comment Line Association Rule:**
@@ -439,10 +441,11 @@ Format: Use {In} or {I+n-m} notation with braces
 - Data record: ` 35P   L 1572.0    12 3/2+             2.29 PS   14` (uncertainties are plain numbers)
 - Comment line: ` 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)` (uncertainty uses {I11} notation)
 
----
 ### Nuclear Science References (NSR)
 
 Each article in NSR has a unique 8-character key number ("key number") used to reference articles in ENSDF and other nuclear databases.
+
+---
 
 ## 4. ENSDF File Editing Workflow
 
@@ -464,6 +467,7 @@ print('Tens:  111111111122222222223333333333444444444455555555556666666666777777
 print('Header:', header)
 print('Length:', len(header))
 "
+```
 
 **Process**: Display 80-char ruler → Extract L/G/E/B records → Validate against ENSDF Manual → Report issues
 
