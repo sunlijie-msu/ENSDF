@@ -238,6 +238,19 @@ This independent check catches errors common to nondeterministic tools, especial
 * Do not claim task completion until all spot-checks pass without error
 
 
+## Java Averaging Code Rules (CRITICAL - ZERO TOLERANCE)
+
+When user provides ENSDF utility Java code calculated averaging output:
+
+1. **Use EXACT Java "Suggested Adopted Result"** - NEVER recalculate or substitute
+2. **Use EXACT uncertainty** - Java applies "uncertainty ≥ any input uncertainty" rule
+3. **Check weighted vs unweighted** - Use whichever Java suggests in comments
+4. **Transcribe character-for-character** - No rounding or "improving"
+
+**FORBIDDEN:** Recalculating, using different uncertainty, substituting weighted/unweighted
+
+
+
 ## Document Structure
 
 This document is organized as follows:

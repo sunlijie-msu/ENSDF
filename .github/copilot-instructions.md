@@ -701,6 +701,20 @@ Common corrections:
 
 ---
 
+## 7. Java Averaging Code Rules (CRITICAL - ZERO TOLERANCE)
+
+When user provides ENSDF utility Java code averaging output:
+
+1. **Use EXACT Java "Suggested Adopted Result"** - NEVER recalculate or substitute
+2. **Use EXACT uncertainty** - Java applies "uncertainty ≥ any input uncertainty" rule
+3. **Check weighted vs unweighted** - Use whichever Java suggests in comments
+4. **Transcribe character-for-character** - No rounding or "improving"
+
+**FORBIDDEN:** Recalculating, using different uncertainty, substituting weighted/unweighted
+
+
+---
+
 ## Document Structure
 
 This document is organized as follows:
@@ -712,4 +726,5 @@ This document is organized as follows:
 4. ENSDF File Editing Workflow: File protection rules, mandatory edit-validate-repeat workflow, validation tools (before, during, and after editing), output interpretation guidelines, editing methodology, and tools and workflows
 5. CSV and Tabular Data Processing: AI frequent failure patterns to avoid, mandatory verification protocol, critical validation steps, example failure prevention, and random spot-check validation
 6. Academic Standards: Professional English grammar and general comment ordering for adopted.ens files
+7. Java Averaging Code Rules: Mandatory rules for using Java averaging results, forbidden behaviors, and rationale
 

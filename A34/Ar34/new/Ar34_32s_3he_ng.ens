@@ -2,6 +2,7 @@
  34AR  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34AR  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34AR2 H CUT=28-May-2012$                                                       
+ 34AR dL E$Least-squares fitting is done by GLSC (version 11-Nov-2025)          
  34AR c  1974Be18: an 8-MeV {+3}He beam was provided from the ANU EN tandem     
  34AR2c  accelerator and impinged on cooled sulphur targets. Neutrons were      
  34AR3c  detected using an NE213 liquid scintillator and |g rays were detected  
@@ -20,72 +21,76 @@
  34AR3c  targets. Neutrons were detected using a NE102 liquid scintillator. The 
  34AR4c  |g rays were detected using a Ge(Li) detector. Measured E|g, I|g,      
  34AR5c  E{-n}, I{-n}, and n|g(|q). Deduced lifetimes for 3 levels using DSAM.  
- 34AR cG E,RI$From 1974Be18                                                     
- 34AR cG E(A),RI(A,D)$From 1974Gr19                                             
+ 34AR cG E$E|g values without uncertainties are from level-energy differences.  
+ 34AR cG RI$From 1974Gr19, unless otherwise noted.                              
+ 34AR cL E$For E(level) below 4.6 MeV, from a least-squares fit to |g-ray       
+ 34AR2cL energies.                                                              
+ 34AR cL E(G)$From 1974Gr19 based on |g data.                                   
  34AR PN                                                                     7  
  34AR  L 0.0          0+                                                        
- 34AR  L 2091.1    3  2+               319 FS    42                             
- 34AR cL T$330 fs {I80} (1974Be18), 200 fs {I60} (1974Gr19), 150 fs {I50}       
- 34AR2cL (1972Ca22)                                                             
- 34AR  G 2091.1    3  100                                                       
- 34AR cG E$2091.1 {I3} (1974Be18), 2090.0 {I7} (1972Ca22)                       
+ 34AR  L 2091.0    4  2+               139 FS    35                             
+ 34AR cL J$from the Adopted Levels. Spin=2 confirmed by n|g(|q) in 1974Gr19.    
+ 34AR cL T$from lifetime |t=200 fs {I50}: weighted average of 330 fs {I80}      
+ 34AR2cL (1974Be18, DSAM), 200 fs {I60} (1974Gr19, DSAM), and 150 fs {I50}      
+ 34AR3cL (1972Ca22, DSAM)                                                       
+ 34AR  G 2090.9    4  100                                                       
+ 34AR cG E$weighted average of 2091.1 {I3} (1974Be18) and 2090.0 {I7} (1972Ca22)
  34AR cG $A{-2}=+0.48 {I9} (1974Be18)                                           
- 34AR  L 3287.7    5  2+               194 FS    35                             
- 34AR cL T$215 fs {I70} (1974Be18), 130 fs {I60} (1974Gr19), 120 fs {I65}       
- 34AR2cL (1972Ca22)                                                             
- 34AR  G 1196.6    4   92    5  M1+E2     +0.12  5                              
- 34AR cG E$1196.6 {I4} (1974Be18), 1195.8 {I14} (1972Ca22)                      
- 34AR cG RI$92 {I5} (1974Be18), 90 {I7} (1972Ca22), 85 {I5} (1974Gr19)          
- 34AR cG MR$from n|g(|q) (1974Gr19)                                             
+ 34AR  L 3287.5    6  2+               104 FS    42                             
+ 34AR cL J$from the Adopted Levels. Spin=2 confirmed by n|g(|q) in 1974Gr19.    
+ 34AR cL T$from lifetime |t=150 fs {I60}: weighted average of 215 fs {I70}      
+ 34AR2cL (1974Be18, DSAM), 130 fs {I60} (1974Gr19, DSAM), and 120 fs {I65}      
+ 34AR3cL (1972Ca22, DSAM)                                                       
+ 34AR  G 1196.5    4  89     5  M1+E2    +0.12   5                              
+ 34AR cG E$weighted average of 1196.6 {I4} (1974Be18) and 1195.8 {I14}          
+ 34AR2cG (1972Ca22)                                                             
+ 34AR cG RI$weighted average of 92 {I5} (1974Be18), 90 {I7} (1972Ca22), and 85  
+ 34AR2cG {I5} (1974Gr19)                                                        
+ 34AR cG M,MR$D+Q from n|g(|q) (1974Gr19); M2 ruled out by RUL.                 
  34AR cG $A{-2}=+0.56 {I10} (1974Be18)                                          
- 34AR  G 3286      4   8     5                                                  
- 34AR cG E$3286 {I4} (1974Be18)                                                 
- 34AR cG RI$8 {I5} (1974Be18), 10 {I7} (1972Ca22), 15 {I5} (1974Gr19)           
- 34AR  L 3873      3  0+               187 FS    GT                             
- 34AR cL T$>600 fs (1974Gr19)                                                   
+ 34AR  G 3286      4  11     5                                                  
+ 34AR cG E$from 1974Be18                                                        
+ 34AR cG RI$weighted average of 8 {I5} (1974Be18), 10 {I7} (1972Ca22), and 15   
+ 34AR2cG {I5} (1974Gr19)                                                        
+ 34AR  L 3873      3  0+               416 FS    GT                             
+ 34AR cL J$from the Adopted Levels. Spin=0 confirmed by n|g(|q) in 1974Gr19.    
+ 34AR cL T$from lifetime |t>600 fs (1974Gr19, DSAM)                             
  34AR  G 585          30     LT                                                 
  34AR cG RI$<30 (1974Be18)                                                      
  34AR  G 1782      3  70     GT                                                 
- 34AR cG E$1782 {I3} (1974Be18)                                                 
- 34AR cG RI$>70 (1974Be18), 100 (1974Gr19)                                      
- 34AR  L 4127.8    10 (2+)             208 FS    LT                             
+ 34AR cG E,RI$from 1974Be18; other: I|g=100 (1974Gr19)                          
+ 34AR  L 4127.4    11 (2+)             243 FS    LT                             
  34AR cL J$spin=2 from n|g(|q), but did not exclude spin=3 or 4; |p=+ from      
  34AR2cL mirror level (1974Gr19).                                               
- 34AR cL T$<350 fs (1974Be18), >400 fs (1974Gr19)                               
- 34AR  G 840.1     9  90     5                                                  
- 34AR cG E$840.1 {I9} (1974Be18), 839.1 {I18} (1972Ca22)                        
- 34AR cG RI$>50 (1974Be18), 100 (1972Ca22), 90 {I5} (1974Gr19)                  
- 34AR cG MR$+0.52 {I15} from n|g(|q) if J(4128 level)=2                         
+ 34AR cL T$from lifetime |t<350 fs (1974Be18, DSAM). Other: |t>400 fs (1974Gr19,
+ 34AR2cL DSAM)                                                                  
+ 34AR  G 839.9     9  90     5                                                  
+ 34AR cG E$weighted average of 840.1 {I9} (1974Be18) and 839.1 {I18} (1972Ca22) 
+ 34AR cG RI$others: >50 (1974Be18), 100 (1972Ca22)                              
+ 34AR cG MR$+0.52 {I15} from n|g(|q) if J{-i}=2                                 
  34AR  G 2037         10     5                                                  
- 34AR cG RI$<50 (1974Be18), 10 {I5} (1974Gr19)                                  
- 34AR  G 4128          10    LT                                                 
- 34AR cG RI$<10 (1974Gr19)                                                      
- 34AR  L 4513.2    8  3                201 FS    38                             
+ 34AR cG RI$other: <50 (1974Be18)                                               
+ 34AR  G 4128         10     LT                                                 
+ 34AR  L 4513.5    8  3                201 FS    55                             
  34AR cL J$spin=3 from n|g(|q) (1974Gr19).                                      
- 34AR cL T$weighted average of 390 fs {I180} (1974Be18), 260 fs {I80}           
- 34AR2cL (1974Gr19), 300 fs {I80} (1972Ca22)                                    
- 34AR  G 1225.5    6  90     10                                                 
- 34AR cG E$1225.5 {I6} (1974Be18), 1226.7 {I7} (1972Ca22)                       
- 34AR cG RI$>90 (1974Be18), 100 (1972Ca22), 90 {I10} (1974Gr19)                 
+ 34AR cL T$from lifetime |t=290 fs {I80}: weighted average of 390 fs {I180}     
+ 34AR2cL (1974Be18, DSAM), 260 fs {I80} (1974Gr19, DSAM), and 300 fs {I80}      
+ 34AR3cL (1972Ca22, DSAM)                                                       
+ 34AR  G 1226.0    6  90     10                                                 
+ 34AR cG E$weighted average of 1225.5 {I6} (1974Be18) and 1226.7 {I7} (1972Ca22)
+ 34AR cG RI$others: >90 (1974Be18), 100 (1972Ca22)                              
  34AR cG $A{-2}=-0.38 {I24} (1974Be18)                                          
- 34AR  G 2422         10     3                                              A   
- 34AR cG RI$<10 (1974Be18), <20 (1972Ca22), 10 {I3} (1974Gr19)                  
- 34AR  L 4631      4                                                            
- 34AR  G 2540         50     GT                                             A   
- 34AR cG RI$>50 (1974Gr19)                                                      
- 34AR  L 4865      4                                                            
- 34AR  G 2774         50     GT                                             A   
- 34AR cG RI$>50 (1974Gr19)                                                      
- 34AR  L 4967      4                                                            
- 34AR  G  841         20     LT                                             A   
- 34AR cG RI$<20 (1974Gr19)                                                      
- 34AR  G 2876         50     GT                                             A   
- 34AR cG RI$>50 (1974Gr19)                                                      
- 34AR  L 5255      4                                                            
- 34AR  G 3164         50     GT                                             A   
- 34AR cG RI$>50 (1974Gr19)                                                      
- 34AR  L 5542      4                                                            
- 34AR  G  911         35     10                                             A   
- 34AR cG RI$(35 {I10}) (1974Gr19)                                               
- 34AR  G 1029         65     10                                             A   
- 34AR cG RI$(65 {I10}) (1974Gr19)                                               
+ 34AR  G 2422         10     3                                                  
+ 34AR cG RI$others: <10 (1974Be18), <20 (1972Ca22)                              
+ 34AR  L 4631      4                                                        G   
+ 34AR  G 2540         50     GT                                                 
+ 34AR  L 4865      4                                                        G   
+ 34AR  G 2774         50     GT                                                 
+ 34AR  L 4967      4                                                        G   
+ 34AR  G 841          20     LT                                                 
+ 34AR  G 2876         50     GT                                                 
+ 34AR  L 5255      4                                                        G   
+ 34AR  G 3164         50     GT                                                 
+ 34AR  L 5542      4                                                        G   
+ 34AR  G 911          35     10                                                 
+ 34AR  G 1029         65     10                                                 
