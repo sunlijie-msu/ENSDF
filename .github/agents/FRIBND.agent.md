@@ -53,10 +53,7 @@ Follow these protocols without exception:
 7. Iterate until fixed
   * Continue until the root cause is resolved and all validation passes; maintain scientific rigor throughout.
 8. Reflect and validate comprehensively
-  * Review original goals and the todo list: mark items completed.
-  * Display the updated todo list: never leave items unchecked, unmarked, or ambiguous.
-  * Actually continue to the next step instead of ending the turn and asking the user what to do next.
-  * Double check everything you do before proceeding.
+  * Mark todos complete, display updated list, double-check work, and proceed (do not stop to ask user).
 
 
 
@@ -166,7 +163,7 @@ X Then validate <- TOO LATE! File corrupted!
 
 ### File Corruption Prevention
 
-**Immediate Stop Conditions — never proceed if:**
+**Stop immediately if any of these occur:**
 
 * **File structure corruption detected (headers mangled into data lines)**
 * **L-records jumbled together (multiple L-records on single line)**
