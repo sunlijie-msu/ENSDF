@@ -11,26 +11,145 @@ USAGE:
   python ensdf_1line_ruler.py --file "filename.ens"
 """
 
-import sys
+from __future__ import annotations
 
-def print_ruler(line):
-    """Print ENSDF 80-column ruler with format specifications for validation"""
+import argparse
+import sys
+from dataclasses import dataclass
+from typing import Callable, Dict, Optional
+
+
+@dataclass(frozen=True)
+class RecordDefinition:
+    """Metadata plus validation hooks for a specific ENSDF record type."""
+
+    label: str
+    fmt: str
+    fields: str
+    col77_hint: str
+    col80_hint: str
+    col77_validator: Callable[[str], bool]
+    col80_validator: Callable[[str], bool]
+
+
+def _alpha_or_space(ch: str) -> bool:
+    return ch == ' ' or ch.isalpha()
+
+
+def _g_flag(ch: str) -> bool:
+    return ch == ' ' or ch.isalpha() or ch in {'*', '&', '@'}
+
+
+def _blank_only(ch: str) -> bool:
+    return ch == ' '
+
+
+RECORD_DEFINITIONS: Dict[str, RecordDefinition] = {
+    'H': RecordDefinition(
+        label='Header record (H)',
+        fmt='H-Fmt: 35XX  H metadata...                                                        ',
+        fields='H-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|H(8)|BLANK(9)|...metadata fields...             ',
+        col77_hint='Column 77 must be blank for H records',
+        col80_hint='Column 80 must be blank for H records',
+        col77_validator=_blank_only,
+        col80_validator=_blank_only,
+    ),
+    'L': RecordDefinition(
+        label='Level record (L)',
+        fmt='L-Fmt: 35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q',
+        fields='L-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|L(8)|BLANK(9)|E(10-19)|DE(20-21)|SPACE(22)|J-pi(23-39)|T(40-49)|DT(50-55)|L(56-64)|S(65-74)|DS(75-76)|C(77)|BLANK(78-79)|Q(80)',
+        col77_hint='Column 77 may hold alphabetic comment flags only',
+        col80_hint='Column 80 must be blank for L records',
+        col77_validator=_alpha_or_space,
+        col80_validator=_blank_only,
+    ),
+    'G': RecordDefinition(
+        label='Gamma record (G)',
+        fmt='G-Fmt: 35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q',
+        fields='G-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|G(8)|BLANK(9)|E(10-19)|DE(20-21)|SPACE(22)|RI(23-29)|DRI(30-31)|SPACE(32)|M(33-41)|MR(42-49)|DMR(50-55)|CC(56-62)|DCC(63-64)|TI(65-74)|DTI(75-76)|C(77)|BLANK(78-79)|Q(80)',
+        col77_hint='Column 77: space, alphabetic, *, &, @ only',
+        col80_hint='Column 80: space, ?, S only',
+        col77_validator=_g_flag,
+        col80_validator=lambda ch: ch in {' ', '?', 'S'},
+    ),
+    'E': RecordDefinition(
+        label='Electron capture record (E)',
+        fmt='E-Fmt: 35XX  E EEEE.E   DE  IB     DIB IE     DIE LOGFT   DFT    TI       DTI C UN  Q',
+        fields='E-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|E(8)|BLANK(9)|E(10-19)|DE(20-21)|IB(22-29)|DIB(30-31)|IE(32-39)|DIE(40-41)|LOGFT(42-49)|DFT(50-55)|BLANK(56-64)|TI(65-74)|DTI(75-76)|C(77)|UN(78-79)|Q(80)',
+        col77_hint='Column 77 alphabetic comment flag (C = coincidence, etc.)',
+        col80_hint='Column 80 blank for E records',
+        col77_validator=_alpha_or_space,
+        col80_validator=_blank_only,
+    ),
+    'B': RecordDefinition(
+        label='Beta-minus record (B)',
+        fmt='B-Fmt: 35XX  B EEEE.E   DE  IB     DIB          LOGFT   DFT              C   UN  Q',
+        fields='B-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|B(8)|BLANK(9)|E(10-19)|DE(20-21)|IB(22-29)|DIB(30-31)|BLANK(32-41)|LOGFT(42-49)|DFT(50-55)|BLANK(56-76)|C(77)|UN(78-79)|Q(80)',
+        col77_hint='Column 77 alphabetic comment flag',
+        col80_hint='Column 80 blank for B records',
+        col77_validator=_alpha_or_space,
+        col80_validator=_blank_only,
+    ),
+    'DP': RecordDefinition(
+        label='Delayed particle record (DP)',
+        fmt='DP-Fmt:35XX  DP EP       DE IP     DIP EI',
+        fields='DP-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|D(8)|P(9)|BLANK(10)|EP(11-19)|DE(20-21)|BLANK(22)|IP(23-29)|DIP(30-31)|BLANK(32)|EI(33-39)',
+        col77_hint='Column 77 blank for DP records',
+        col80_hint='Column 80 blank for DP records',
+        col77_validator=_blank_only,
+        col80_validator=_blank_only,
+    ),
+}
+
+
+def _record_key(line: str) -> Optional[str]:
+    if len(line) < 8:
+        return None
+    base = line[7]
+    if base == 'D' and len(line) >= 9 and line[8] == 'P':
+        return 'DP'
+    return base
+
+
+def _is_primary_data_record(line: str) -> bool:
+    return len(line) > 6 and line[6] == ' '
+
+
+def _is_comment_record(line: str) -> bool:
+    return len(line) > 6 and line[6] in {'c', 'C'}
+
+
+def _describe_comment(line: str) -> Optional[str]:
+    if _is_comment_record(line):
+        target = line[7] if len(line) > 7 else '?'
+        return f'Comment record referencing "{target}" data block'
+    return None
+
+def print_ruler(line: str, label: Optional[str] = None) -> bool:
+    """Print ENSDF 80-column ruler with format specifications for validation."""
+
     print('ENSDF 80-Column Ruler:')
     print('Ones: 12345678901234567890123456789012345678901234567890123456789012345678901234567890')
     print('Tens: 1111111111222222222233333333334444444444555555555566666666667777777777888888888999')
     
-    # Show format template based on record type
-    if len(line) >= 8 and line[7] == 'H':
-        print('H-Fmt: 35XX  H metadata...                                                        ')
-        print('H-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|H(8)|BLANK(9)|...metadata fields...             ')
-    elif len(line) >= 8 and line[7] == 'L':
-        print('L-Fmt: 35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q')
-        print('L-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|L(8)|BLANK(9)|E(10-19)|DE(20-21)|SPACE(22)|J-π(23-39)|T(40-49)|DT(50-55)|L(56-64)|S(65-74)|DS(75-76)|C(77)|BLANK(78-79)|Q(80)')
-    elif len(line) >= 8 and line[7] == 'G':
-        print('G-Fmt: 35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q')
-        print('G-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|G(8)|BLANK(9)|E(10-19)|DE(20-21)|SPACE(22)|RI(23-29)|DRI(30-31)|SPACE(32)|M(33-41)|MR(42-49)|DMR(50-55)|CC(56-62)|DCC(63-64)|TI(65-74)|DTI(75-76)|C(77)|BLANK(78-79)|Q(80)')
-    
-    print(f'Line: {line}')
+    record_key = _record_key(line)
+    record_def = RECORD_DEFINITIONS.get(record_key)
+    comment_hint = _describe_comment(line)
+    is_comment = comment_hint is not None
+
+    if record_def:
+        print(record_def.fmt)
+        print(record_def.fields)
+    if comment_hint:
+        print(comment_hint)
+        print('Comment lines must still obey the 80-column rule and inherit the associated record scope.')
+    elif record_key and not record_def:
+        print(f'Unknown record type "{record_key}"; length check only.')
+
+    if label:
+        print(f'Line ({label}): {line}')
+    else:
+        print(f'Line: {line}')
     print(f'Len:  {len(line)} chars')
     
     # Quick validation
@@ -38,38 +157,16 @@ def print_ruler(line):
     if len(line) != 80:
         errors.append(f'Length {len(line)} ≠ 80')
     
-    # Check ENSDF field positions for data records (including H records)
-    # Only check if column 7 (index 6) is blank (primary records)
-    if len(line) >= 8 and line[7] in ['H', 'L', 'G', 'E', 'B'] and line[6] == ' ':
-        record_type = line[7]
-        
-        # Column 77 validation (different rules for different record types)
-        if len(line) > 76:
-            col_77 = line[76]
-            if record_type == 'G':
-                # G-record: A-Z, a-z, *, &, @, space allowed - NO ? at col 77
-                if col_77 != ' ' and not (col_77.isalpha() or col_77 in ['*', '&', '@']):
-                    errors.append(f'Col 77: "{col_77}" invalid G-record flag (use A-Z,a-z,*,&,@)')
-                if col_77 == '?':
-                    errors.append(f'Col 77: "?" forbidden in G-record (use col 80 for ?)')
-            else:
-                # L, E, B records: any alphabetic characters (A-Z, a-z), space allowed
-                if col_77 != ' ' and not col_77.isalpha():
-                    errors.append(f'Col 77: "{col_77}" invalid {record_type}-record flag (use A-Z,a-z)')
-        
-        # Column 80 validation 
-        if len(line) > 79:
-            col_80 = line[79]
-            if record_type == 'G':
-                # G-record col 80: space, ?, S allowed
-                if col_80 not in [' ', '?', 'S']:
-                    errors.append(f'Col 80: "{col_80}" invalid G-record additional indicator (use space,?,S)')
-            else:
-                # Other records: should be blank
-                if col_80 in ['K', 'M', 'S', 'C']:
-                    errors.append(f'Col 80: "{col_80}" flag should be at col 77')
-                elif col_80 != ' ':
-                    errors.append(f'Col 80: "{col_80}" should be blank for {record_type}-record')
+    if record_def and _is_primary_data_record(line):
+        col_77 = line[76] if len(line) > 76 else ' '
+        col_80 = line[79] if len(line) > 79 else ' '
+
+        if not record_def.col77_validator(col_77):
+            errors.append(f'Col 77: "{col_77}" invalid — {record_def.col77_hint}')
+        if not record_def.col80_validator(col_80):
+            errors.append(f'Col 80: "{col_80}" invalid — {record_def.col80_hint}')
+    elif record_def and len(line) >= 8 and not _is_primary_data_record(line) and not is_comment:
+        errors.append('Column 7 must be blank for data records (found continuation/comment marker).')
     
     if errors:
         print(f'❌ ERRORS: {" | ".join(errors)}')
@@ -77,8 +174,10 @@ def print_ruler(line):
     else:
         print('✅ OK')
         return True
-def scan_file(filename, show_only_wrong=False):
-    """Scan ENSDF file and check all data record lines"""
+
+
+def scan_file(filename: str, show_only_wrong: bool = False, line_number: Optional[int] = None) -> bool:
+    """Scan ENSDF file and check all data record lines."""
     try:
         with open(filename, 'r', encoding='utf-8') as f:
             lines = f.readlines()
@@ -86,43 +185,58 @@ def scan_file(filename, show_only_wrong=False):
         print(f'❌ ERROR: Cannot open {filename}: {e}')
         return False
     
+    if line_number is not None:
+        if line_number < 1 or line_number > len(lines):
+            print(f'❌ ERROR: Line number {line_number} is outside the file range (1-{len(lines)}).')
+            return False
+        target_indexes = {line_number}
+    else:
+        target_indexes = None
+
     total_checked = 0
     error_count = 0
     
     for lineno, raw_line in enumerate(lines, 1):
+        if target_indexes and lineno not in target_indexes:
+            continue
         line = raw_line.rstrip('\n')
         # Check ALL record types (H, L, G, E, B, DP records)
         # ENSDF standard: ALL record types must be exactly 80 characters
         if len(line) >= 8 and line[7] in ['H', 'L', 'G', 'E', 'B', 'D']:
             total_checked += 1
             if show_only_wrong:
-                if not print_ruler(line):
+                if not print_ruler(line, label=f'{filename}:{lineno}'):
                     error_count += 1
                     print(f'Line {lineno}: {line}')
                     print('-' * 40)
             else:
                 print(f'\nLine {lineno}:')
-                if not print_ruler(line):
+                if not print_ruler(line, label=f'{filename}:{lineno}'):
                     error_count += 1
     
-    print(f'\n� Summary: {total_checked} data records checked, {error_count} errors found')
+    print(f'\nSummary: {total_checked} data records checked, {error_count} errors found')
     return error_count == 0
 
 if __name__ == '__main__':
-    import argparse
-    
     parser = argparse.ArgumentParser(description='ENSDF 80-column ruler - simple visual verification')
     parser.add_argument('--line', help='Verify single line (in quotes)')
     parser.add_argument('--file', help='Scan ENSDF file for data record errors')
+    parser.add_argument('--line-number', type=int, help='Only inspect the specified 1-based line number in --file')
     parser.add_argument('--show-only-wrong', action='store_true', help='Show only error lines')
-    
+
     args = parser.parse_args()
-    
+
+    if args.line and args.file:
+        parser.error('Use either --line or --file, not both.')
+
+    if args.line_number and not args.file:
+        parser.error('--line-number requires --file to be specified.')
+
     if args.line:
         success = print_ruler(args.line)
         sys.exit(0 if success else 1)
     elif args.file:
-        success = scan_file(args.file, args.show_only_wrong)
+        success = scan_file(args.file, args.show_only_wrong, args.line_number)
         sys.exit(0 if success else 1)
     else:
         print('🎯 ENSDF 80-Column Ruler Tool')

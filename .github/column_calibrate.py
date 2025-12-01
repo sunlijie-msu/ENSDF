@@ -32,6 +32,30 @@ ALWAYS CHECKS:
 import sys
 import os
 import argparse
+from functools import lru_cache
+from typing import List
+
+
+@lru_cache(maxsize=16)
+def _read_file_cached(filename: str) -> tuple:
+    """Return raw file lines with simple LRU caching to avoid repeated disk reads."""
+    with open(filename, 'r', encoding='utf-8') as handle:
+        return tuple(handle.readlines())
+
+
+def get_file_lines(filename: str) -> List[str]:
+    """Return a mutable list of raw lines (including newline characters)."""
+    return list(_read_file_cached(filename))
+
+
+def get_stripped_lines(filename: str) -> List[str]:
+    """Return file lines stripped of trailing newlines/carriage returns."""
+    return [line.rstrip('\n\r') for line in _read_file_cached(filename)]
+
+
+def invalidate_file_cache(filename: str) -> None:
+    """Clear the cached copy after modifying a file on disk."""
+    _read_file_cached.cache_clear()
 
 def is_data_record_line(line):
     """
@@ -90,8 +114,7 @@ def fix_line_lengths(filename, dry_run=False):
     print("      Comment lines (c at column 6) are NOT modified")
     print()
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_file_lines(filename)
     
     fixed_lines = []
     lines_modified = 0
@@ -152,8 +175,9 @@ def fix_line_lengths(filename, dry_run=False):
     
     # Write fixed file if not dry run
     if not dry_run and lines_modified > 0:
-        with open(filename, 'w') as f:
+        with open(filename, 'w', encoding='utf-8') as f:
             f.writelines(fixed_lines)
+        invalidate_file_cache(filename)
         print(f"\nSUCCESS: File updated: {filename}")
         print("SUCCESS: All data record lines now exactly 80 characters")
     elif dry_run and lines_modified > 0:
@@ -207,11 +231,9 @@ def validate_de_field(filename):
     de_fields_analyzed = 0
     de_field_errors = 0
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_stripped_lines(filename)
     
-    for line_num, line in enumerate(lines, 1):
-        line_content = line.rstrip('\n\r')
+    for line_num, line_content in enumerate(lines, 1):
         
         # Check both L-records and G-records for DE field validation
         if len(line_content) < 21 or (not (' L ' in line_content[6:10] or ' G ' in line_content[6:10])):
@@ -276,11 +298,9 @@ def validate_s_field(filename):
     s_fields_analyzed = 0
     s_field_errors = 0
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_stripped_lines(filename)
     
-    for line_num, line in enumerate(lines, 1):
-        line_content = line.rstrip('\n\r')
+    for line_num, line_content in enumerate(lines, 1):
         
         # Only check L-records for S field validation
         if len(line_content) < 10 or ' L ' not in line_content[6:10]:
@@ -362,11 +382,9 @@ def validate_s_field(filename):
     ds_fields_analyzed = 0
     ds_field_errors = 0
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_stripped_lines(filename)
     
-    for line_num, line in enumerate(lines, 1):
-        line_content = line.rstrip('\n\r')
+    for line_num, line_content in enumerate(lines, 1):
         
         # Only check L-records for DS field validation
         if len(line_content) < 10 or ' L ' not in line_content[6:10]:
@@ -455,11 +473,9 @@ def validate_jp_field(filename):
     jp_fields_analyzed = 0
     jp_field_errors = 0
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_stripped_lines(filename)
     
-    for line_num, line in enumerate(lines, 1):
-        line_content = line.rstrip('\n\r')
+    for line_num, line_content in enumerate(lines, 1):
         
         # Only check L-records for J-π field validation
         if len(line_content) < 10 or ' L ' not in line_content[6:10]:
@@ -568,11 +584,9 @@ def validate_mul_field(filename):
     mul_fields_analyzed = 0
     mul_field_errors = 0
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_stripped_lines(filename)
     
-    for line_num, line in enumerate(lines, 1):
-        line_content = line.rstrip('\n\r')
+    for line_num, line_content in enumerate(lines, 1):
         
         # Only check G-records for MUL field validation
         if len(line_content) < 10 or ' G ' not in line_content[6:10]:
@@ -664,11 +678,9 @@ def validate_comment_flags(filename):
     flags_analyzed = 0
     flag_summary = {}
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_stripped_lines(filename)
     
-    for line_num, line in enumerate(lines, 1):
-        line_content = line.rstrip('\n\r')
+    for line_num, line_content in enumerate(lines, 1):
         
         # CRITICAL: Skip comment lines completely - they are NOT data records!
         if is_comment_line(line_content):
@@ -767,11 +779,9 @@ def validate_g_record_flags(filename):
     valid_col77_flags = set(string.ascii_letters + '*&@ ')  # A-Z, a-z, *, &, @, space - NO '?'
     valid_col80_indicators = set(' ?S')  # space, ?, S only
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_stripped_lines(filename)
     
-    for line_num, line in enumerate(lines, 1):
-        line_content = line.rstrip('\n\r')
+    for line_num, line_content in enumerate(lines, 1):
         
         # CRITICAL: Skip comment lines completely - they are NOT data records!
         if is_comment_line(line_content):
@@ -897,11 +907,9 @@ def validate_dri_field(filename):
     # Valid DRI field markers
     valid_dri_markers = ['LT', 'GT', 'LE', 'GE', 'AP', 'SY', 'CA']
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_stripped_lines(filename)
     
-    for line_num, line in enumerate(lines, 1):
-        line_content = line.rstrip('\n\r')
+    for line_num, line_content in enumerate(lines, 1):
         
         # Only check G-records (TRUE G-records, not comment lines)
         if len(line_content) < 10 or ' G ' not in line_content[6:10]:
@@ -1018,11 +1026,9 @@ def validate_e_field(filename):
     e_errors = 0
     error_details = []
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_stripped_lines(filename)
     
-    for line_num, line in enumerate(lines, 1):
-        line_content = line.rstrip('\n\r')
+    for line_num, line_content in enumerate(lines, 1):
         
         # Check for L or G records (column 8='L' or 'G', columns 6-7 are blank)
         if len(line_content) < 20:
@@ -1127,11 +1133,9 @@ def validate_ri_field(filename):
     ri_errors = 0
     error_details = []
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_stripped_lines(filename)
     
-    for line_num, line in enumerate(lines, 1):
-        line_content = line.rstrip('\n\r')
+    for line_num, line_content in enumerate(lines, 1):
         
         # Only check G-records (column 8='G', columns 6-7 are blank spaces)
         if len(line_content) < 32:
@@ -1239,11 +1243,9 @@ def validate_m_field(filename):
     m_errors = 0
     error_details = []
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_stripped_lines(filename)
     
-    for line_num, line in enumerate(lines, 1):
-        line_content = line.rstrip('\n\r')
+    for line_num, line_content in enumerate(lines, 1):
         
         # Only check G-records (column 8='G', columns 6-7 are blank)
         if len(line_content) < 42:
@@ -1336,11 +1338,9 @@ def validate_mr_field(filename):
     mr_errors = 0
     error_details = []
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_stripped_lines(filename)
     
-    for line_num, line in enumerate(lines, 1):
-        line_content = line.rstrip('\n\r')
+    for line_num, line_content in enumerate(lines, 1):
         
         # Only check G-records (column 8='G', columns 6-7 are blank)
         if len(line_content) < 50:
@@ -1431,11 +1431,9 @@ def validate_cc_field(filename):
     g_records_analyzed = 0
     cc_errors = 0
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_stripped_lines(filename)
     
-    for line_num, line in enumerate(lines, 1):
-        line_content = line.rstrip('\n\r')
+    for line_num, line_content in enumerate(lines, 1):
         
         # Only check G-records
         if len(line_content) < 63:
@@ -1511,11 +1509,9 @@ def validate_ti_field(filename):
     g_records_analyzed = 0
     ti_errors = 0
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_stripped_lines(filename)
     
-    for line_num, line in enumerate(lines, 1):
-        line_content = line.rstrip('\n\r')
+    for line_num, line_content in enumerate(lines, 1):
         
         # Only check G-records
         if len(line_content) < 75:
@@ -1612,11 +1608,9 @@ def validate_gt_lt_placement(filename):
     l_field_errors = []
     g_field_errors = []
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_stripped_lines(filename)
     
-    for line_num, line in enumerate(lines, 1):
-        line_content = line.rstrip('\n\r')
+    for line_num, line_content in enumerate(lines, 1):
         
         if len(line_content) < 10:
             continue
@@ -1740,8 +1734,7 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
     
     errors_found = False
     
-    with open(filename, 'r') as f:
-        lines = f.readlines()
+    lines = get_file_lines(filename)
     
     # Check for line length issues in data record lines only
     length_issues = []
@@ -1832,27 +1825,31 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
     
     # Always validate all field positions unless header-only mode
     if not header_only:
-        # Field positioning validations
-        e_field_success = validate_e_field(filename)  # Energy field validation (L and G records)
-        de_field_success = validate_de_field(filename)
-        s_field_success = validate_s_field(filename)
-        jp_field_success = validate_jp_field(filename)
-        
-        # G-record specific validations (in field order)
-        ri_field_success = validate_ri_field(filename)  # RI field positioning (cols 23-29)
-        dri_field_success = validate_dri_field(filename)  # DRI field content (cols 30-31)
-        m_field_success = validate_m_field(filename)  # Multipolarity field (cols 33-41)
-        mr_field_success = validate_mr_field(filename)  # Mixing ratio field (cols 42-49)
-        mul_field_success = validate_mul_field(filename)  # MUL field validation
-        cc_field_success = validate_cc_field(filename)  # Conversion coefficient (cols 56-62)
-        ti_field_success = validate_ti_field(filename)  # Total intensity (cols 65-74)
-        
-        # Semantic and flag validations
-        gt_lt_placement_success = validate_gt_lt_placement(filename)  # Semantic GT/LT validation
-        comment_flag_success = validate_comment_flags(filename)
-        g_record_validation_success = validate_g_record_flags(filename)
-        
-        return (not errors_found) and e_field_success and de_field_success and s_field_success and jp_field_success and ri_field_success and dri_field_success and m_field_success and mr_field_success and mul_field_success and cc_field_success and ti_field_success and gt_lt_placement_success and comment_flag_success and g_record_validation_success
+        validation_checks = [
+            ("Energy field (E)", validate_e_field(filename)),
+            ("Energy uncertainty (DE)", validate_de_field(filename)),
+            ("Spectroscopic factor (S)", validate_s_field(filename)),
+            ("Spin/Parity (J|p)", validate_jp_field(filename)),
+            ("Gamma RI field", validate_ri_field(filename)),
+            ("Gamma DRI field", validate_dri_field(filename)),
+            ("Multipolarity (M)", validate_m_field(filename)),
+            ("Mixing ratio (MR)", validate_mr_field(filename)),
+            ("MUL tag", validate_mul_field(filename)),
+            ("Conversion coefficient (CC)", validate_cc_field(filename)),
+            ("Transition intensity (TI)", validate_ti_field(filename)),
+            ("GT/LT placement", validate_gt_lt_placement(filename)),
+            ("Comment flags", validate_comment_flags(filename)),
+            ("G-record flags", validate_g_record_flags(filename)),
+        ]
+
+        print("\nField Validation Summary:")
+        max_name = max(len(name) for name, _ in validation_checks)
+        for name, result in validation_checks:
+            status = "PASS" if result else "FAIL"
+            print(f"  [{status:<4}] {name.ljust(max_name)}")
+
+        all_validation_success = all(result for _, result in validation_checks)
+        return (not errors_found) and all_validation_success
         
     return not errors_found
 
