@@ -4,6 +4,7 @@ from pathlib import Path
 import glob
 import sys
 import platform
+import re
 
 
 def open_pdf(pdf_path, use_vscode=True):
@@ -161,12 +162,13 @@ def generate_pdfs_pattern(element, pattern, open_after=False, use_vscode=True):
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage:")
-        print("  python ens2pdf.py S                                     # Convert all S files (A34, A35, A60)")
+        print("  python ens2pdf.py Ar34                                  # Convert all Ar34 files")
+        print("  python ens2pdf.py 34Ar                                  # Same as above (alternate format)")
         print("  python ens2pdf.py S35_adopted                           # Convert single file")
         print("  python ens2pdf.py S35_*sig                              # Convert pattern")
         print("  python ens2pdf.py A35/S35/new/S35_adopted.ens           # Convert with full path")
-        print("  python ens2pdf.py S --open                              # Convert and open in VS Code")
-        print("  python ens2pdf.py S --open --system                     # Convert and open in system viewer")
+        print("  python ens2pdf.py Ar34 --open                           # Convert and open in VS Code")
+        print("  python ens2pdf.py Ar34 --open --system                  # Convert and open in system viewer")
         print("  Note: Files are searched in ENSDF workspace (A34, A35, A60 mass chains)")
         sys.exit(1)
     
@@ -188,10 +190,25 @@ if __name__ == "__main__":
         print(f"Converting single file: {arg}")
         generate_pdf_from_path(arg, open_after, use_vscode)
     
-    # Check if it's just an element (like "Si")
-    elif len(arg) <= 2 and arg.isalpha():
-        print(f"Converting all {arg}35 files...")
-        generate_pdfs(arg, open_after, use_vscode)
+    # Check if it's an element+mass pattern like "Ar34" or "Si35" (convert ALL files for that isotope)
+    elif re.match(r'^[A-Z][a-z]?\d+$', arg):
+        # Extract element and mass
+        match = re.match(r'^([A-Z][a-z]?)(\d+)$', arg)
+        element = match.group(1)
+        mass = match.group(2)
+        pattern = f"{element}{mass}_*"
+        print(f"Converting all {element}{mass} files (pattern: {pattern})...")
+        generate_pdfs_pattern(element, pattern, open_after, use_vscode)
+    
+    # Check if it's mass+element pattern like "34Ar" or "35Si" (alternate user input style)
+    elif re.match(r'^\d+[A-Z][a-z]?$', arg):
+        # Extract mass and element
+        match = re.match(r'^(\d+)([A-Z][a-z]?)$', arg)
+        mass = match.group(1)
+        element = match.group(2)
+        pattern = f"{element}{mass}_*"
+        print(f"Converting all {element}{mass} files (pattern: {pattern})...")
+        generate_pdfs_pattern(element, pattern, open_after, use_vscode)
     
     # Check if it contains wildcards
     elif '*' in arg or '?' in arg:
@@ -202,7 +219,7 @@ if __name__ == "__main__":
                 break
             if c.isalpha():
                 element += c
-        print(f"Converting {element}35 files matching pattern: {arg}")
+        print(f"Converting files matching pattern: {arg}")
         generate_pdfs_pattern(element, arg, open_after, use_vscode)
     
     # Single file
