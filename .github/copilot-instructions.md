@@ -455,6 +455,22 @@ Each article in NSR has a unique 8-character key number ("key number") used to r
 - NEVER modify first/last line indentation or spacing in .ens files
 - NEVER modify XREF lists (XREF entries with pattern `NUCID X` have their own specific formatting rules)
 
+### XREF Notation Rules
+
+XREF (cross-reference) entries in L-records indicate which datasets observe a level. The notation format:
+
+| Notation | Meaning | Example |
+|----------|---------|---------|
+| Plain letter | Dataset energy matches adopted level within uncertainties | `XREF=FH` means datasets F and H report energies consistent with adopted |
+| Letter(energy) | Dataset reports different energy outside uncertainty range, but same physical level | `XREF=H(4865)` means dataset H reports 4865 keV (outside adopted ±uncertainty) |
+| Letter(*) | Uncertain/ambiguous matching; level could correspond to multiple dataset levels | `XREF=I(*)` means dataset I has ambiguous correspondence |
+
+**Critical Rules:**
+- Use plain letter when dataset energy falls within adopted energy ± uncertainty
+- Use letter(energy) when dataset energy is outside uncertainty range but evaluator confirms same level
+- Use letter(*) ONLY for genuinely uncertain cases where multiple matches are possible
+- NEVER use (*) when matching is definite (e.g., if 4875.3 falls within 4881.4±12, use plain letter)
+
 
 **CRITICAL 80-Column Debugging Technique**:
 When dealing with ENSDF alignment issues, ALWAYS use the visual ruler method:
