@@ -221,7 +221,6 @@ When user provides ENSDF utility Java code calculated averaging output:
 **FORBIDDEN:** Recalculating, using different uncertainty, substituting weighted/unweighted
 
 
-
 ## Document Structure
 
 This document is organized as follows:
@@ -235,5 +234,4 @@ This document is organized as follows:
 6. Critical Anti-Spaghetti Code Rules: Prevents workspace clutter and script proliferation
 7. ENSDF 80-Column Format and Validation Workflow: Core formatting rules and validation requirements
 8. Essential Image/Tabular Data Extraction Rules: Guidelines for data entry accuracy
-
 

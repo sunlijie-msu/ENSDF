@@ -701,7 +701,24 @@ Common corrections:
 
 ---
 
-## 7. Java Averaging Code Rules (CRITICAL - ZERO TOLERANCE)
+
+## 7. Averaging Tool Workflow
+
+**CLI Tool:** `python .github/Java_Average.py VALUE1 UNC1 [VALUE2 UNC2 ...]`
+
+This Python script replicates the exact algorithm from AverageTool_22January2025.jar:
+- Variance formula: V = (dxp+dxm)²/4 + 0.3633802276324186*(dxp-dxm)²
+- χ² test at 95% confidence → weighted or unweighted
+- Ensures uncertainty ≥ minimum input uncertainty
+
+**Workflow:**
+1. Collect all measurements with uncertainties
+2. Run: `python .github/Java_Average.py 280 50 215 70 130 60 120 65`
+3. Use EXACT "Suggested Adopted Result" from output
+4. Apply to ENSDF record with proper formatting
+
+
+### Java Averaging Result Rules
 
 When user provides ENSDF utility Java code averaging output:
 
@@ -711,7 +728,6 @@ When user provides ENSDF utility Java code averaging output:
 4. **Transcribe character-for-character** - No rounding or "improving"
 
 **FORBIDDEN:** Recalculating, using different uncertainty, substituting weighted/unweighted
-
 
 ---
 

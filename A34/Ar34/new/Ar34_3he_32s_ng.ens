@@ -9,12 +9,12 @@
  34AR5c  Doppler-Shift Attenuation Method (DSAM).                               
  34AR  L 0                                                                      
  34AR  L 2091                          319 FS    42                             
- 34AR cL T$lifetime |t=460 fs {I60}; 490 fs {I65} (lineshape) and 410 fs {I80}  
- 34AR2cL (centroid-shift).                                                      
+ 34AR cL T$lifetime |t=460 fs {I60} based on 490 fs {I65} (lineshape) and 410 fs
+ 34AR2cL {I80} (centroid-shift).                                                
  34AR  G 2091                                                                   
  34AR  L 3288                          194 FS    35                             
- 34AR cL T$lifetime |t=280 fs {I50}; 255 fs {I50} (lineshape) and 385 fs {I95}  
- 34AR2cL (centroid-shift).                                                      
+ 34AR cL T$lifetime |t=280 fs {I50} based on 255 fs {I50} (lineshape) and 385 fs
+ 34AR2cL {I95} (centroid-shift).                                                
  34AR  G 1197                                                                   
  34AR  L 3871                          187 FS    GT                             
  34AR cL T$lifetime |t>270 fs (lineshape). >200 fs (centroid-shift).            
