@@ -702,7 +702,7 @@ Common corrections:
 ---
 
 
-## 7. Averaging Tool Workflow
+### Averaging Tool Workflow
 
 **CLI Tool:** `python .github/Java_Average.py VALUE1 UNC1 [VALUE2 UNC2 ...]`
 
@@ -716,6 +716,16 @@ This Python script replicates the exact algorithm from AverageTool_22January2025
 2. Run: `python .github/Java_Average.py 280 50 215 70 130 60 120 65`
 3. Use EXACT "Suggested Adopted Result" from output
 4. Apply to ENSDF record with proper formatting
+
+### Critical Averaging Rule: One Value Per Paper
+
+**MANDATORY:** When averaging, use **ONE value per original paper**, NOT one value per method.
+
+- If a paper reports multiple values using different methods, select the **best value** recommended from that paper
+- For lower limits: adopt the **largest limit** (best constraint)
+- For upper limits: adopt the **smallest limit** (best constraint)
+- NEVER list multiple values from the same paper in an average
+- Dataset adopted values may differ from original paper values — always trace back to original papers
 
 
 ### Java Averaging Result Rules

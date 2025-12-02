@@ -44,7 +44,7 @@
  34AR  L 0.0          0+               0.84646 S 35                             
  34ARX L XREF=ABCDFGHIJ                                                         
  34AR2 L %EC+%B+=100                                                            
- 34AR cL $$Evaluated rms nuclear charge radius R=3.3654 fm {I40} (2013An02).
+ 34AR cL $$Evaluated rms nuclear charge radius R=3.3654 fm {I40} (2013An02).    
  34AR cL T$from |b(t) using two component fit to the decay of {+34}Ar and       
  34AR2cL {+34}Cl (2020Ia01). Others: 843.8 ms {I4} (2006Ia05), 844.5 ms {I34}   
  34AR3cL (1974Ha26,1972Ha58), 0.74 s {I11} (1971Mo27), 0.85 s {I10} (1967Ba36), 
@@ -65,8 +65,8 @@
  34AR3cG excitation                                                             
  34AR  L 3287.7    5  2+               2.0E2 FS  5                              
  34ARX L XREF=ADFGHI                                                            
- 34AR cL T$from lifetime |t=2.0E2 fs {I5}: weighted average of 280 fs {I50}     
- 34AR2cL from {+3}He({+32}S,n|g) (1985Al18, DSAM), 215 fs {I70} from            
+ 34AR cL T$from lifetime |t=2.0E2 fs {I5}: weighted average of 280 fs {I50} from
+ 34AR2cL {+3}He({+32}S,n|g) (1985Al18, DSAM), 215 fs {I70} from                 
  34AR3cL {+32}S({+3}He,n|g) (1974Be18, DSAM), 130 fs {I60} from                 
  34AR4cL {+32}S({+3}He,n|g) (1974Gr19, DSAM), and 120 fs {I65} from             
  34AR5cL {+32}S({+3}He,n|g) (1972Ca22, DSAM).                                   
@@ -84,48 +84,53 @@
  34AR2cG 3286 {I4} from {+32}S({+3}He,n|g)                                      
  34AR cG RI$weighted average of 14.0 {I16} from {+12}C({+24}Mg,{+34}Ar|g) and 12
  34AR2cG {I6} from {+32}S({+3}He,n|g)                                           
- 34AR  L 3873      3  0+               187 FS    GT                             
+ 34AR  L 3873      3  0+               600 FS    GT                             
  34ARX L XREF=ADFG(3900)HI                                                      
- 34AR cL T$from ({+32}S,n|g)                                                    
- 34AR cL J$L=0 from 0+ in (p,t).                                                
+ 34AR cL T$from lifetime |t>600 fs from {+32}S({+3}He,n|g) (1974Gr19, DSAM).    
+ 34AR2cL Other: >270 fs from {+3}He({+32}S,n|g) (1985Al18, DSAM).               
+ 34AR cL J$L=0 from 0+ in (p,t). Spin=0 from n|g(|q) in {+32}S({+3}He,n|g).     
  34AR  G 585         43      LT [E2]                                            
- 34AR  G 1784.6    8 100     GT [E2]                                            
+ 34AR  G 1784.6    8 100        [E2]                                            
  34ARB G BE2W<21                                                                
  34AR cG E$weighted average of 1784.8 {I8} from {+12}C({+24}Mg,{+34}Ar|g) and   
  34AR2cG 1782 {I3} from {+32}S({+3}He,n|g)                                      
  34AR cG RI$from ({+3}He,n|g)                                                   
  34AR  L 4020.6    13 2+                                                        
- 34ARX L XREF=FG(4050*)I(4035*)                                                 
+ 34ARX L XREF=FG(4050)I(4035)                                                 
  34AR  G 1930.4    23 65     12                                                 
  34AR  G 4019.8    15 100    12                                                 
- 34AR  L 4050      14                                                           
- 34ARX L XREF=G(4050*)I(4035*)                                                  
- 34AR  L 4127.8    10                  9E1 FS    +12-9                          
+ 34AR  L 4127.8    10 (2)+             9E1 FS    +12-9                          
  34ARX L XREF=DFG(4150)H                                                        
- 34AR cL T$from ({+32}S,n|g)                                                    
+ 34AR cL T$from lifetime |t=130 fs {I+170-130} from {+3}He({+32}S,n|g)          
+ 34AR2cL (1985Al18, DSAM). Others: <350 fs from {+32}S({+3}He,n|g) (1974Be18,   
+ 34AR3cL DSAM); >400 fs from {+32}S({+3}He,n|g) (1974Gr19, DSAM).               
  34AR  G 841.2     13 100    6 M1+E2     +0.52   15                             
  34AR cG E$unweighted average of 842.5 {I7} from {+12}C({+24}Mg,{+34}Ar|g) and  
  34AR2cG 839.9 {I9} from {+32}S({+3}He,n|g)                                     
- 34AR cG RI,MR$from ({+3}He,n|g)                                                
+ 34AR cG M,MR$from n|g(|q) in ({+3}He,n|g); E1+M2, E2+M3, M2+E3 ruled out by    
+ 34AR2cG RUL.                                                                   
  34AR  G 2037        11      6                                                  
  34AR  G 4128        11      LT                                                 
  34AR  L 4513.2    8  3-               201 FS    55                             
  34ARX L XREF=B(*)FGHI                                                          
- 34AR cL T$from ({+3}He,n|g)                                                    
- 34AR cL $|b{-3}(p,p')=0.39 {I3} (2001Kh17).                                    
- 34AR cL J$L(p,p')=L({+3}He,n)=3.                                               
- 34AR  G 1227.2    12 100    5 D                                                
+ 34AR cL T$from lifetime |t=290 fs {I80}: weighted average of 390 fs {I180} from
+ 34AR2cL {+32}S({+3}He,n|g) (1974Be18, DSAM), 260 fs {I80} from                 
+ 34AR3cL {+32}S({+3}He,n|g) (1974Gr19, DSAM), and 300 fs {I80} from             
+ 34AR4cL {+32}S({+3}He,n|g) (1972Ca22, DSAM).                                   
+ 34AR cL J$L=3 from 0+ in ({+3}He,n); spin=3 from n|g(|q) in {+32}S({+3}He,n|g).
+ 34AR  G 1227.2    12 100    5 [E1]                                             
  34ARB G BE1W=0.0016 4                                                          
  34AR cG E$unweighted average of 1228.4 {I5} from {+12}C({+24}Mg,{+34}Ar|g) and 
  34AR2cG 1226.0 {I6} from {+32}S({+3}He,n|g)                                    
  34AR cG RI$weighted average of 100 {I5} from {+12}C({+24}Mg,{+34}Ar|g) and 100 
  34AR2cG {I11} from {+32}S({+3}He,n|g)                                          
- 34AR cG M$from ({+24}Mg,{+34}Ar|g)                                             
+ 34AR cG M$|DJ=1, dipole from |g(|q) in ({+24}Mg,{+34}Ar|g); |D|p=yes from level
+ 34AR2cG scheme.                                                                
  34AR  G 2424.7    22 12.9   32 [E1]                                            
  34ARB G BE1W=2.2E-5 8                                                          
  34AR cG RI$weighted average of 14.6 {I32} from {+12}C({+24}Mg,{+34}Ar|g) and   
  34AR2cG 11.1 {I33} from {+32}S({+3}He,n|g)                                     
- 34AR cG E$from ({+24}Mg,{+34}Ar|g)                                             
+ 34AR cG E$from ({+24}Mg,{+34}Ar|g).                                            
  34AR  L 4631      4                                                            
  34ARX L XREF=B(*)HI(*)                                                         
  34AR  G 2540                                                                   
