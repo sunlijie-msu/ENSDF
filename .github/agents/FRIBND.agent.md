@@ -161,14 +161,7 @@ X Edit line 101
 X Then validate <- TOO LATE! File corrupted!
 ```
 
-### File Corruption Prevention
 
-**Stop immediately if any of these occur:**
-
-* **File structure corruption detected (headers mangled into data lines)**
-* **L-records jumbled together (multiple L-records on single line)**
-* **Column alignment destroyed (80-column ENSDF format broken)**
-* **Header/data line mixing (header elements appearing in L-records)**
 
 ### ENSDF Editing Safeguards
 
