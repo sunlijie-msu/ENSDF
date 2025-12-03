@@ -1,4 +1,9 @@
 # Evaluated Nuclear Structure Data File (ENSDF)
+Core nuclear structure and decay database containing evaluated (recommended) data for 3,171 nuclides, organized in over 17,269 individual datasets.
+
+It serves as principal source of data for nuclear structure research, nuclear spectroscopy applications, Medical Internal Radiation Dose (MIRD), Nuclear structure and decay data (NuDat), and publications such as Nuclear Data Sheets and Table of Isotopes.
+
+Nuclear data scientists from around the world contribute to this collaborative effort.
 
 ## Primary Purpose
 This repository contains the datasets being evaluated by the FRIB Nuclear Data Group. 
@@ -86,6 +91,6 @@ This repository contains the datasets being evaluated by the FRIB Nuclear Data G
 **AI-Assisted Workflow Development**:
 - First AI agent for ENSDF 80-column formatting developed at FRIB Nuclear Data Center
 - Custom GitHub Copilot integration with ENSDF-specific validation tools
-- Presented at the LECM2025 and USNDP2025 meetings
+- Introduced at the LECM2025 and USNDP2025 meetings
 
 
