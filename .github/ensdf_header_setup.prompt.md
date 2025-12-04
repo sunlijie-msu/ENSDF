@@ -1,4 +1,4 @@
-# ENSDF Evaluation File Setup Workflow
+# ENSDF File Identification and History Records Setup Workflow
 
 ## Purpose
 Prepare `.old` and `.xundl` files for a new mass chain evaluation.
