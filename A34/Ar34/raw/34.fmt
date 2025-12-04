@@ -1,8 +1,8 @@
 Program for ENSDF check: output for Format Error and Warnings (version 11/22/2025)
-Generated at: Mon 12/01/2025 at 10:11:34 PM EST
+Generated at: Wed 12/03/2025 at 11:10:40 PM EST
 
 ****************************************
-     Total 6 errors 0 warning
+     Total 7 errors 2 warnings
 ****************************************
 
 -----------------------------------------------------------------------------------------
@@ -14,16 +14,26 @@ Generated at: Mon 12/01/2025 at 10:11:34 PM EST
 
      24.  34AR2c  at relativistic energies) {+9}Be({+37}Ca,X|g) E=197.5 A MeV reaction)  
                                                                                       *    <E> Unbalanced bracket
-     53.  34AR dL T$ Check 1971Mo27 for half-life ??                                     
-                                                  **                                       <E> Duplicate punctuation marks
-     94.  34AR cG %I|g>50                                                                
-                  **                                                                       <E> $ missing at line beginning or after record name
-     98.  34AR cG %I|g>50                                                                
-                  **                                                                       <E> $ missing at line beginning or after record name
-    104.  34AR cG %I|g>50                                                                
-                  **                                                                       <E> $ missing at line beginning or after record name
-    108.  34AR cG %I|g>50                                                                
-                  **                                                                       <E> $ missing at line beginning or after record name
+    104.  34AR  L 4127.8    10 (1,2)+             9E1 FS    +12-9                      M 
+                                                                                      **   <E> Invalid meta-stable marker
+                                                                                      **   <W> Marked as meta-stable but T1/2<0.1 ms
+    120.  34AR  L 4513.2    8  3-               0.29 ps   8                          M   
+                                                                                     *     <E> Undefined flag character for L record
+    146.  34AR  L 4851.9    8  (3+)                                                  M   
+                                                                                     *     <E> Undefined flag character for L record
+    161.  34AR  L 4963.7    13 0+                                                    M   
+                                                                                     *     <E> Undefined flag character for L record
+    165.  34AR  L 4967      4  2(-)                                                  M   
+                                                                                     *     <E> Undefined flag character for L record
+    171.  34AR  L 5061.8    8  (1+)                                                  M   
+                                                                                     *     <E> Undefined flag character for L record
+    187.  34AR  G 911          54     16                                                 
+                  ****                                                                     <W> No final level within 3*sigma=12.66
+                                                                                               Parent level:  5542 4
+                                                                                               Calculated FL: 4631 4
+                                                                                               Closest level within 13 keV:
+                                                                                                              4644.1 9, JPI=(4+) (assigned by default)
+                                                                                               Level-difference=898 4 (with recoil correction)
 
 
 

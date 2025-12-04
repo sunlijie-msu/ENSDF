@@ -1,5 +1,5 @@
 Program for consistency check: output for original lines grouped by level and gamma energies (version 11/22/2025)
-Generated at: Mon 12/01/2025 at 10:11:35 PM EST
+Generated at: Wed 12/03/2025 at 11:10:40 PM EST
 
 
 Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
@@ -15,526 +15,526 @@ Note: 1. possible JPI presented at the end of each record line of each individua
 
 ########################################################################################################################
         new XREFs                        old XREFs
- 34AR    A  35CA ECP DECAY (25.7 MS)      A-C 35CA ECP DECAY (25.7 MS)
- 34AR    B  1H(34AR,P')                   B-D 1H(34AR,P')
- 34AR    C  1H(35CL,2N)                   C-?
- 34AR    D  3HE(32S,NG)                   D-?
- 34AR    E  4HE(30S,A):RESONANCES         E-?
- 34AR    F  12C(24MG,34ARG)               F-?
- 34AR    G  32S(3HE,N)                    G-A 32S(3HE,N)
- 34AR    H  32S(3HE,NG)                   H-?
- 34AR    I  36AR(P,T)                     I-B 36AR(P,T)
- 34AR    J  COULOMB EXCITATION            J-?
+ 34AR  XA35CA ECP DECAY (25.7 MS)      A-A 35CA ECP DECAY (25.7 MS)
+ 34AR  XB1H(34AR,P')                   B-B 1H(34AR,P')
+ 34AR  XC1H(35CL,2N)                   C-C 1H(35CL,2N)
+ 34AR  XD3HE(32S,NG)                   D-D 3HE(32S,NG)
+ 34AR  XE4HE(30S,A):RESONANCES         E-E 4HE(30S,A):RESONANCES
+ 34AR  XF12C(24MG,34ARG)               F-F 12C(24MG,34ARG)
+ 34AR  XG32S(3HE,N)                    G-G 32S(3HE,N)
+ 34AR  XH32S(3HE,NG)                   H-H 32S(3HE,NG)
+ 34AR  XI36AR(P,T)                     I-I 36AR(P,T)
+ 34AR  XJCOULOMB EXCITATION            J-J COULOMB EXCITATION
 ################################## new tag show first below ############################################################
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 0           0+                843.8 MS  4                               --- possible JPI=0+
+ LEVEL************************************ 34AR  L 0.0          0+               0.84646 s 35                              --- possible JPI=0+
                      *new XREF new tags    34ARX L XREF=ABCDFGHIJ
-                     *new XREF old tags    34ARX L XREF=ABCD?0?1?3?4?5
-                     #old XREF in Adopted  34ARX L XREF=ABCDE
-      35CA ECP DECAY (25.7 MS)--->A  C     34AR  L  0           0+                                                        
-                   1H(34AR,P')--->B  D     34AR  L 0            0+                                                        
-                   1H(35CL,2N)--->C  ?0    34AR  L 0.0          0+               0.84646 S 35                             
-                   3HE(32S,NG)--->D  ?1    34AR  L 0                                                                      
-               12C(24MG,34ARG)--->F  ?3    34AR  L 0.0          0+                                                        
-                    32S(3HE,N)--->G  A     34AR  L 0                                             0                         *** possible JPI=0+
-                   32S(3HE,NG)--->H  ?4    34AR  L 0.0          0+                                                        
-                     36AR(P,T)--->I  B     34AR  L 0                                             0                         *** possible JPI=0+
-            COULOMB EXCITATION--->J  ?5    34AR  L 0.0          0+                                                        
-                   1H(34AR,P')--->B  D     34AR cL $Ratio of quadrupole matrix elements M{-n}/M{-p}/(N/Z)=1.35 {I28} from 
-                   1H(34AR,P')--->B  D     34AR2cL phenomenological analysis (2001Kh17) and 0.99 {I17} from the QRPA      
-                   1H(34AR,P')--->B  D     34AR3cL transition densities normalized to the data in 2001Kh17.               
-                   1H(35CL,2N)--->C  ?0    34AR cL T$from |b(t) using two component fit to the decay of {+34}Ar and       
-                   1H(35CL,2N)--->C  ?0    34AR2cL {+34}Cl (2020Ia01). The T{-1/2} of {+34}Cl was fixed to the world      
-                   1H(35CL,2N)--->C  ?0    34AR3cL average of 1526.55 ms {I44}. The T{-1/2} of {+34}Ar with only          
-                   1H(35CL,2N)--->C  ?0    34AR4cL statistical uncertainty is 0.84646 s {I19}.                            
-                    32S(3HE,N)--->G  A     34AR cL $|e=1.4.
-                    32S(3HE,N)--->G  A     34AR cL $|s(exp)/|s(theory)=1.84 or 1.68 (1972Bb01).
+                     *new XREF old tags    34ARX L XREF=ABCDFGHIJ
+                     #old XREF in Adopted  34ARX L XREF=ABCDFGHIJ
+      35CA ECP DECAY (25.7 MS)--->A  A     34AR  L  0           0+                                                        
+                   1H(34AR,P')--->B  B     34AR  L 0            0+                                                        
+                   1H(35CL,2N)--->C  C     34AR  L 0.0          0+               0.84646 S 35                             
+                   3HE(32S,NG)--->D  D     34AR  L 0                                                                      
+               12C(24MG,34ARG)--->F  F     34AR  L 0.0          0+                                                        
+                    32S(3HE,N)--->G  G     34AR  L 0                                             0                         *** possible JPI=0+
+                   32S(3HE,NG)--->H  H     34AR  L 0.0          0+                                                        
+                     36AR(P,T)--->I  I     34AR  L 0                                             0                         *** possible JPI=0+
+            COULOMB EXCITATION--->J  J     34AR  L 0.0          0+                                                        
+                   1H(34AR,P')--->B  B     34AR cL $Ratio of quadrupole matrix elements M{-n}/M{-p}/(N/Z)=1.35 {I28} from 
+                   1H(34AR,P')--->B  B     34AR2cL phenomenological analysis (2001Kh17) and 0.99 {I17} from the QRPA      
+                   1H(34AR,P')--->B  B     34AR3cL transition densities normalized to the data in 2001Kh17.               
+                   1H(35CL,2N)--->C  C     34AR cL T$from |b(t) using two component fit to the decay of {+34}Ar and       
+                   1H(35CL,2N)--->C  C     34AR2cL {+34}Cl (2020Ia01). The T{-1/2} of {+34}Cl was fixed to the world      
+                   1H(35CL,2N)--->C  C     34AR3cL average of 1526.55 ms {I44}. The T{-1/2} of {+34}Ar with only          
+                   1H(35CL,2N)--->C  C     34AR4cL statistical uncertainty is 0.84646 s {I19}.                            
+                    32S(3HE,N)--->G  G     34AR cL $|e=1.4.
+                    32S(3HE,N)--->G  G     34AR cL $|s(exp)/|s(theory)=1.84 or 1.68 (1972Bb01).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 2091.1    3 2+                319 FS    42                              --- possible JPI=2+
+ LEVEL************************************ 34AR  L 2091.1    3  2+               0.29 ps   7                               --- possible JPI=2+
                      *new XREF new tags    34ARX L XREF=ABDFG(2103)HIJ
-                     *new XREF old tags    34ARX L XREF=A(2103)BCD?1?3?4?5
-                     #old XREF in Adopted  34ARX L XREF=ABCDE
-      35CA ECP DECAY (25.7 MS)--->A  C     34AR  L  2091.1   3  2+                                                        
-                   1H(34AR,P')--->B  D     34AR  L 1.9E3     2  2+                                                        
-                   3HE(32S,NG)--->D  ?1    34AR  L 2091                          319 FS    42                             
-               12C(24MG,34ARG)--->F  ?3    34AR  L 2091.5    4  2+                                                        
-                    32S(3HE,N)--->G  A     34AR  L 2103      30                                  2                         *** possible JPI=2+
-                   32S(3HE,NG)--->H  ?4    34AR  L 2091.0    4  2+               139 FS    35                             
-                     36AR(P,T)--->I  B     34AR  L 2091.6    24                                  2                         *** possible JPI=2+
-            COULOMB EXCITATION--->J  ?5    34AR  L 2091      2  2+                                                        
-                   1H(34AR,P')--->B  D     34AR2 L B2=0.27 2 (2001Kh17)                                                   
-                   3HE(32S,NG)--->D  ?1    34AR cL T$lifetime |t=460 fs {I60}; 490 fs {I65} (lineshape) and 410 fs {I80}  
-                   3HE(32S,NG)--->D  ?1    34AR2cL (centroid-shift).                                                      
-                    32S(3HE,N)--->G  A     34AR cL E$weighted average of 2090 {I30} (1986Al15), 2100 {I30} (1968Ha09),    
-                    32S(3HE,N)--->G  A     34AR2cL 2190 {I40} (1967Mc03), and 2058 {I35} (1967Mi02).
-                    32S(3HE,N)--->G  A     34AR cL $|e=3.9.
-                   32S(3HE,NG)--->H  ?4    34AR cL J$from the Adopted Levels. Spin=2 confirmed by n|g(|q) in 1974Gr19.    
-                   32S(3HE,NG)--->H  ?4    34AR cL T$from lifetime |t=200 fs {I50}: weighted average of 330 fs {I80}      
-                   32S(3HE,NG)--->H  ?4    34AR2cL (1974Be18, DSAM), 200 fs {I60} (1974Gr19, DSAM), and 150 fs {I50}      
-                   32S(3HE,NG)--->H  ?4    34AR3cL (1972Ca22, DSAM).
-                     36AR(P,T)--->I  B     34AR cL E$weighted average of 2094 {I11} (1972Pa02) and 2091.5 {I24}           
-                     36AR(P,T)--->I  B     34AR2cL (2018Lo11). Other: 2097 {I20} (1969Br21).
-                     36AR(P,T)--->I  B     34AR cL L$2 in 1972Pa02.                                                       
-            COULOMB EXCITATION--->J  ?5    34AR2 L BE2=0.0293 16                                                          
-            COULOMB EXCITATION--->J  ?5    34AR cL $|s=52.1 mb {I29} measured from laboratory scattering angles |q=0|' to 
-            COULOMB EXCITATION--->J  ?5    34AR2cL |q{-max}=55|' mrad at 64.3 MeV/nucleon mid-target energy.
- GAMMA------------------------------------ 34AR  G  2091.1   3    100     E2                                               --- EG=2091.1     FL=0          JF=0+
-                   3HE(32S,NG)--->D  ?1    34AR  G 2091                                                                    *** EG=2091       FL=0          JF=
-               12C(24MG,34ARG)--->F  ?3    34AR  G 2091.3    5 100                                                         *** EG=2091.3     FL=0.0        JF=0+
-                   32S(3HE,NG)--->H  ?4    34AR  G 2090.9    4 100                                                         *** EG=2090.9     FL=0.0        JF=0+
-            COULOMB EXCITATION--->J  ?5    34AR  G 2091      2                                                             *** EG=2091       FL=0.0        JF=0+
-                   32S(3HE,NG)--->H  ?4    34AR cG E$weighted average of 2091.1 {I3} (1974Be18) and 2090.0 {I7} (1972Ca22)
-                   32S(3HE,NG)--->H  ?4    34AR cG $A{-2}=+0.48 {I9} (1974Be18).
+                     *new XREF old tags    34ARX L XREF=ABDFG(2103)HIJ
+                     #old XREF in Adopted  34ARX L XREF=ABDFG(2103)HIJ
+      35CA ECP DECAY (25.7 MS)--->A  A     34AR  L  2091.1   3  2+                                                        
+                   1H(34AR,P')--->B  B     34AR  L 1.9E3     2  2+                                                        
+                   3HE(32S,NG)--->D  D     34AR  L 2091                          319 FS    42                             
+               12C(24MG,34ARG)--->F  F     34AR  L 2091.5    4  2+                                                        
+                    32S(3HE,N)--->G  G     34AR  L 2103      30                                  2                         *** possible JPI=2+
+                   32S(3HE,NG)--->H  H     34AR  L 2091.0    4  2+               139 FS    35                             
+                     36AR(P,T)--->I  I     34AR  L 2091.6    24                                  2                         *** possible JPI=2+
+            COULOMB EXCITATION--->J  J     34AR  L 2091      2  2+                                                        
+                   1H(34AR,P')--->B  B     34AR2 L B2=0.27 2 (2001Kh17)                                                   
+                   3HE(32S,NG)--->D  D     34AR cL T$lifetime |t=460 fs {I60} based on 490 fs {I65} (lineshape) and 410 fs
+                   3HE(32S,NG)--->D  D     34AR2cL {I80} (centroid-shift).                                                
+                    32S(3HE,N)--->G  G     34AR cL E$weighted average of 2090 {I30} (1986Al15), 2100 {I30} (1968Ha09),    
+                    32S(3HE,N)--->G  G     34AR2cL 2190 {I40} (1967Mc03), and 2058 {I35} (1967Mi02).
+                    32S(3HE,N)--->G  G     34AR cL $|e=3.9.
+                   32S(3HE,NG)--->H  H     34AR cL J$from the Adopted Levels. Spin=2 confirmed by n|g(|q) in 1974Gr19.    
+                   32S(3HE,NG)--->H  H     34AR cL T$from lifetime |t=200 fs {I50}: weighted average of 330 fs {I80}      
+                   32S(3HE,NG)--->H  H     34AR2cL (1974Be18, DSAM), 200 fs {I60} (1974Gr19, DSAM), and 150 fs {I50}      
+                   32S(3HE,NG)--->H  H     34AR3cL (1972Ca22, DSAM).
+                     36AR(P,T)--->I  I     34AR cL E$weighted average of 2094 {I11} (1972Pa02) and 2091.5 {I24}           
+                     36AR(P,T)--->I  I     34AR2cL (2018Lo11). Other: 2097 {I20} (1969Br21).
+                     36AR(P,T)--->I  I     34AR cL L$2 in 1972Pa02.                                                       
+            COULOMB EXCITATION--->J  J     34AR2 L BE2=0.0293 16                                                          
+            COULOMB EXCITATION--->J  J     34AR cL $|s=52.1 mb {I29} measured from laboratory scattering angles |q=0|' to 
+            COULOMB EXCITATION--->J  J     34AR2cL |q{-max}=55|' mrad at 64.3 MeV/nucleon mid-target energy.
+ GAMMA------------------------------------ 34AR  G 2091.1    4  100       [E2]                                             --- EG=2091.1     FL=0.0        JF=0+
+                   3HE(32S,NG)--->D  D     34AR  G 2091                                                                    *** EG=2091       FL=0          JF=
+               12C(24MG,34ARG)--->F  F     34AR  G 2091.3    5 100                                                         *** EG=2091.3     FL=0.0        JF=0+
+                   32S(3HE,NG)--->H  H     34AR  G 2090.9    4 100                                                         *** EG=2090.9     FL=0.0        JF=0+
+            COULOMB EXCITATION--->J  J     34AR  G 2091      2                                                             *** EG=2091       FL=0.0        JF=0+
+                   32S(3HE,NG)--->H  H     34AR cG E$weighted average of 2091.1 {I3} (1974Be18) and 2090.0 {I7} (1972Ca22)
+                   32S(3HE,NG)--->H  H     34AR cG $A{-2}=+0.48 {I9} (1974Be18).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 3287.7    5 2+                194 FS    35                              --- possible JPI=2+
+ LEVEL************************************ 34AR  L 3287.7    5  2+               0.20 ps   5                               --- possible JPI=2+
                      *new XREF new tags    34ARX L XREF=ADFGHI
-                     *new XREF old tags    34ARX L XREF=ABC?1?3?4
-                     #old XREF in Adopted  34ARX L XREF=ABCE
-      35CA ECP DECAY (25.7 MS)--->A  C     34AR  L  3287.7   5  2+                                                        
-                   3HE(32S,NG)--->D  ?1    34AR  L 3288                          194 FS    35                             
-               12C(24MG,34ARG)--->F  ?3    34AR  L 3289.1    5  2+                                                        
-                    32S(3HE,N)--->G  A     34AR  L 3295      30                                  (2)                       *** possible JPI=(2+)
-                   32S(3HE,NG)--->H  ?4    34AR  L 3287.5    6  2+               104 FS    42                             
-                     36AR(P,T)--->I  B     34AR  L 3290.9    18                                  2                         *** possible JPI=2+
-                   3HE(32S,NG)--->D  ?1    34AR cL T$lifetime |t=280 fs {I50}; 255 fs {I50} (lineshape) and 385 fs {I95}  
-                   3HE(32S,NG)--->D  ?1    34AR2cL (centroid-shift).                                                      
-                    32S(3HE,N)--->G  A     34AR cL E$weighted average of 3290 {I30} (1986Al15) and 3300 {I30} (1968Ha09).
-                    32S(3HE,N)--->G  A     34AR cL $|e=0.32.
-                   32S(3HE,NG)--->H  ?4    34AR cL J$from the Adopted Levels. Spin=2 confirmed by n|g(|q) in 1974Gr19.    
-                   32S(3HE,NG)--->H  ?4    34AR cL T$from lifetime |t=150 fs {I60}: weighted average of 215 fs {I70}      
-                   32S(3HE,NG)--->H  ?4    34AR2cL (1974Be18, DSAM), 130 fs {I60} (1974Gr19, DSAM), and 120 fs {I65}      
-                   32S(3HE,NG)--->H  ?4    34AR3cL (1972Ca22, DSAM).
-                     36AR(P,T)--->I  B     34AR cL E$weighted average of 3303 {I25} (1969Br21), 3288 {I14} (1972Pa02), and
-                     36AR(P,T)--->I  B     34AR2cL 3290.9 {I18} (2018Lo11).
-                     36AR(P,T)--->I  B     34AR cL L$2 in 1972Pa02.                                                       
- GAMMA------------------------------------ 34AR  G   1196.6  4      100 5  M1+E2   +0.12   5                               --- EG=1196.6     FL=2091.1     JF=2+
-                   3HE(32S,NG)--->D  ?1    34AR  G 1197                                                                    *** EG=1197       FL=2091       JF=
-               12C(24MG,34ARG)--->F  ?3    34AR  G 1197.5    4 100     4                                                   *** EG=1197.5     FL=2091.5     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR  G 1196.5    4 100     6  M1+E2    +0.12   5                               *** EG=1196.5     FL=2091.0     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR cG E$weighted average of 1196.6 {I4} (1974Be18) and 1195.8 {I14}          
-                   32S(3HE,NG)--->H  ?4    34AR2cG (1972Ca22).
-                   32S(3HE,NG)--->H  ?4    34AR cG RI$weighted average of 92 {I5} (1974Be18), 90 {I7} (1972Ca22), and 85  
-                   32S(3HE,NG)--->H  ?4    34AR2cG {I5} (1974Gr19).
-                   32S(3HE,NG)--->H  ?4    34AR cG M,MR$D+Q from n|g(|q) (1974Gr19); M2 ruled out by RUL.                 
-                   32S(3HE,NG)--->H  ?4    34AR cG $A{-2}=+0.56 {I10} (1974Be18).
- GAMMA------------------------------------ 34AR  G   3286    4       9  6 [E2]                                             --- EG=3286       FL=0          JF=0+
-               12C(24MG,34ARG)--->F  ?3    34AR  G 3289.1    10 14.0   16                                                  *** EG=3289.1     FL=0.0        JF=0+
-                   32S(3HE,NG)--->H  ?4    34AR  G 3286      4 12      6                                                   *** EG=3286       FL=0.0        JF=0+
-                   32S(3HE,NG)--->H  ?4    34AR cG E$from 1974Be18.
-                   32S(3HE,NG)--->H  ?4    34AR cG RI$weighted average of 8 {I5} (1974Be18), 10 {I7} (1972Ca22), and 15   
-                   32S(3HE,NG)--->H  ?4    34AR2cG {I5} (1974Gr19).
+                     *new XREF old tags    34ARX L XREF=ADFGHI
+                     #old XREF in Adopted  34ARX L XREF=ADFGHI
+      35CA ECP DECAY (25.7 MS)--->A  A     34AR  L  3287.7   5  2+                                                        
+                   3HE(32S,NG)--->D  D     34AR  L 3288                          194 FS    35                             
+               12C(24MG,34ARG)--->F  F     34AR  L 3289.1    5  2+                                                        
+                    32S(3HE,N)--->G  G     34AR  L 3295      30                                  (2)                       *** possible JPI=(2+)
+                   32S(3HE,NG)--->H  H     34AR  L 3287.5    6  2+               104 FS    42                             
+                     36AR(P,T)--->I  I     34AR  L 3290.9    18                                  2                         *** possible JPI=2+
+                   3HE(32S,NG)--->D  D     34AR cL T$lifetime |t=280 fs {I50} based on 255 fs {I50} (lineshape) and 385 fs
+                   3HE(32S,NG)--->D  D     34AR2cL {I95} (centroid-shift).                                                
+                    32S(3HE,N)--->G  G     34AR cL E$weighted average of 3290 {I30} (1986Al15) and 3300 {I30} (1968Ha09).
+                    32S(3HE,N)--->G  G     34AR cL $|e=0.32.
+                   32S(3HE,NG)--->H  H     34AR cL J$from the Adopted Levels. Spin=2 confirmed by n|g(|q) in 1974Gr19.    
+                   32S(3HE,NG)--->H  H     34AR cL T$from lifetime |t=150 fs {I60}: weighted average of 215 fs {I70}      
+                   32S(3HE,NG)--->H  H     34AR2cL (1974Be18, DSAM), 130 fs {I60} (1974Gr19, DSAM), and 120 fs {I65}      
+                   32S(3HE,NG)--->H  H     34AR3cL (1972Ca22, DSAM).
+                     36AR(P,T)--->I  I     34AR cL E$weighted average of 3303 {I25} (1969Br21), 3288 {I14} (1972Pa02), and
+                     36AR(P,T)--->I  I     34AR2cL 3290.9 {I18} (2018Lo11).
+                     36AR(P,T)--->I  I     34AR cL L$2 in 1972Pa02.                                                       
+ GAMMA------------------------------------ 34AR  G 1197.0    5  100    4  M1+E2    +0.12   5                               --- EG=1197.0     FL=2091.1     JF=2+
+                   3HE(32S,NG)--->D  D     34AR  G 1197                                                                    *** EG=1197       FL=2091       JF=
+               12C(24MG,34ARG)--->F  F     34AR  G 1197.5    4 100     4                                                   *** EG=1197.5     FL=2091.5     JF=2+
+                   32S(3HE,NG)--->H  H     34AR  G 1196.5    4 100     6  M1+E2    +0.12   5                               *** EG=1196.5     FL=2091.0     JF=2+
+                   32S(3HE,NG)--->H  H     34AR cG E$weighted average of 1196.6 {I4} (1974Be18) and 1195.8 {I14}          
+                   32S(3HE,NG)--->H  H     34AR2cG (1972Ca22).
+                   32S(3HE,NG)--->H  H     34AR cG RI$weighted average of 92 {I5} (1974Be18), 90 {I7} (1972Ca22), and 85  
+                   32S(3HE,NG)--->H  H     34AR2cG {I5} (1974Gr19).
+                   32S(3HE,NG)--->H  H     34AR cG M,MR$D+Q from n|g(|q) (1974Gr19); M2 ruled out by RUL.                 
+                   32S(3HE,NG)--->H  H     34AR cG $A{-2}=+0.56 {I10} (1974Be18).
+ GAMMA------------------------------------ 34AR  G 3288.9    10 13.9   16 [E2]                                             --- EG=3288.9     FL=0.0        JF=0+
+               12C(24MG,34ARG)--->F  F     34AR  G 3289.1    10 14.0   16                                                  *** EG=3289.1     FL=0.0        JF=0+
+                   32S(3HE,NG)--->H  H     34AR  G 3286      4 12      6                                                   *** EG=3286       FL=0.0        JF=0+
+                   32S(3HE,NG)--->H  H     34AR cG E$from 1974Be18.
+                   32S(3HE,NG)--->H  H     34AR cG RI$weighted average of 8 {I5} (1974Be18), 10 {I7} (1972Ca22), and 15   
+                   32S(3HE,NG)--->H  H     34AR2cG {I5} (1974Gr19).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 3873      3 0+                187 FS    GT                              --- possible JPI=0+
+ LEVEL************************************ 34AR  L 3873      3  0+               0.60 ps   GT                              --- possible JPI=0+
                      *new XREF new tags    34ARX L XREF=ADFG(3900)HI
-                     *new XREF old tags    34ARX L XREF=A(3900)BC?1?3?4
-                     #old XREF in Adopted  34ARX L XREF=ABCE
-      35CA ECP DECAY (25.7 MS)--->A  C     34AR  L  3873     3  0+                                                        
-                   3HE(32S,NG)--->D  ?1    34AR  L 3871                          187 FS    GT                             
-               12C(24MG,34ARG)--->F  ?3    34AR  L 3876.4    9  0+                                                        
-                    32S(3HE,N)--->G  A     34AR  L 3900      30                                  (0)                       *** possible JPI=(0+)
-                   32S(3HE,NG)--->H  ?4    34AR  L 3873      3  0+               416 FS    GT                             
-                     36AR(P,T)--->I  B     34AR  L 3879.1    33                                  0                         *** possible JPI=0+
-                   3HE(32S,NG)--->D  ?1    34AR cL T$lifetime |t>270 fs (lineshape). >200 fs (centroid-shift).            
-                    32S(3HE,N)--->G  A     34AR cL E$weighted average of 3900 {I70} (1986Al15) and 3900 {I30} (1968Ha09). 
-                    32S(3HE,N)--->G  A     34AR2cL Other: 3590 {I60} (1967Mc03), a broad peak, possibly unresolved        
-                    32S(3HE,N)--->G  A     34AR3cL 3295+3900.                                                             
-                    32S(3HE,N)--->G  A     34AR cL $|e=6.1.
-                   32S(3HE,NG)--->H  ?4    34AR cL J$from the Adopted Levels. Spin=0 confirmed by n|g(|q) in 1974Gr19.    
-                   32S(3HE,NG)--->H  ?4    34AR cL T$from lifetime |t>600 fs (1974Gr19, DSAM).
-                     36AR(P,T)--->I  B     34AR cL E$weighted average of 3899 {I25} (1969Br21), 3879 {I15} (1972Pa02), and
-                     36AR(P,T)--->I  B     34AR2cL 3878.8 {I33} (2018Lo11).
-                     36AR(P,T)--->I  B     34AR cL L$0 in 1972Pa02 for unresolved 3879+4050 and 3879 is more strongly     
-                     36AR(P,T)--->I  B     34AR2cL excited.                                                               
- GAMMA------------------------------------ 34AR  G  585            43  LT                                                ? --- EG=585        FL=3287.7     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR  G 585         43      LT                                                  *** EG=585        FL=3287.5     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR cG RI$from 1974Be18.
- GAMMA------------------------------------ 34AR  G    1782   3    100     [E2]                                             --- EG=1782       FL=2091.1     JF=2+
-                   3HE(32S,NG)--->D  ?1    34AR  G 1780                                                                    *** EG=1780       FL=2091       JF=
-               12C(24MG,34ARG)--->F  ?3    34AR  G 1784.8    8 100                                                         *** EG=1784.8     FL=2091.5     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR  G 1782      3 100     GT                                                  *** EG=1782       FL=2091.0     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR cG E,RI$from 1974Be18; other: I|g=100 (1974Gr19).
+                     *new XREF old tags    34ARX L XREF=ADFG(3900)HI
+                     #old XREF in Adopted  34ARX L XREF=ADFG(3900)HI
+      35CA ECP DECAY (25.7 MS)--->A  A     34AR  L  3873     3  0+                                                        
+                   3HE(32S,NG)--->D  D     34AR  L 3871                          187 FS    GT                             
+               12C(24MG,34ARG)--->F  F     34AR  L 3876.4    9  0+                                                        
+                    32S(3HE,N)--->G  G     34AR  L 3900      30                                  (0)                       *** possible JPI=(0+)
+                   32S(3HE,NG)--->H  H     34AR  L 3873      3  0+               416 FS    GT                             
+                     36AR(P,T)--->I  I     34AR  L 3879.1    33                                  0                         *** possible JPI=0+
+                   3HE(32S,NG)--->D  D     34AR cL T$lifetime |t>270 fs (lineshape). >200 fs (centroid-shift).            
+                    32S(3HE,N)--->G  G     34AR cL E$weighted average of 3900 {I70} (1986Al15) and 3900 {I30} (1968Ha09). 
+                    32S(3HE,N)--->G  G     34AR2cL Other: 3590 {I60} (1967Mc03), a broad peak, possibly unresolved        
+                    32S(3HE,N)--->G  G     34AR3cL 3295+3900.                                                             
+                    32S(3HE,N)--->G  G     34AR cL $|e=6.1.
+                   32S(3HE,NG)--->H  H     34AR cL J$from the Adopted Levels. Spin=0 confirmed by n|g(|q) in 1974Gr19.    
+                   32S(3HE,NG)--->H  H     34AR cL T$from lifetime |t>600 fs (1974Gr19, DSAM).
+                     36AR(P,T)--->I  I     34AR cL E$weighted average of 3899 {I25} (1969Br21), 3879 {I15} (1972Pa02), and
+                     36AR(P,T)--->I  I     34AR2cL 3878.8 {I33} (2018Lo11).
+                     36AR(P,T)--->I  I     34AR cL L$0 in 1972Pa02 for unresolved 3879+4050 and 3879 is more strongly     
+                     36AR(P,T)--->I  I     34AR2cL excited.                                                               
+ GAMMA------------------------------------ 34AR  G 585          43     LT [E2]                                             --- EG=585        FL=3287.7     JF=2+
+                   32S(3HE,NG)--->H  H     34AR  G 585         43      LT                                                  *** EG=585        FL=3287.5     JF=2+
+                   32S(3HE,NG)--->H  H     34AR cG RI$from 1974Be18.
+ GAMMA------------------------------------ 34AR  G 1784.6    8  100       [E2]                                             --- EG=1784.6     FL=2091.1     JF=2+
+                   3HE(32S,NG)--->D  D     34AR  G 1780                                                                    *** EG=1780       FL=2091       JF=
+               12C(24MG,34ARG)--->F  F     34AR  G 1784.8    8 100                                                         *** EG=1784.8     FL=2091.5     JF=2+
+                   32S(3HE,NG)--->H  H     34AR  G 1782      3 100     GT                                                  *** EG=1782       FL=2091.0     JF=2+
+                   32S(3HE,NG)--->H  H     34AR cG E,RI$from 1974Be18; other: I|g=100 (1974Gr19).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 4020.6    13 2+                                                        
-                     *new XREF new tags    34ARX L XREF=FG(4050*)I(4035*)
-                     *new XREF old tags    34ARX L XREF=A(4050*)B(4035*)?3
-               12C(24MG,34ARG)--->F  ?3    34AR  L 4020.6    13 2+                                                         *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                    32S(3HE,N)--->G  A(*)  34AR  L 4050      30                                                       H    *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B(*)  34AR  L 4035      16                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B(*)  34AR cL E$unweighted average of 4050 {I14} (1972Pa02) and 4019.1 {I43}         
-                     36AR(P,T)--->I  B(*)  34AR2cL (2018Lo11).
- GAMMA------------------------------------ 34AR  G 1930.4    23 65     12                                                 
-               12C(24MG,34ARG)--->F  ?3    34AR  G 1930.4    23 65     12                                                  *** EG=1930.4     FL=2091.5     JF=2+
- GAMMA------------------------------------ 34AR  G 4019.8    15 100    12                                                 
-               12C(24MG,34ARG)--->F  ?3    34AR  G 4019.8    15 100    12                                                  *** EG=4019.8     FL=0.0        JF=0+
+ LEVEL************************************ 34AR  L 4020.6    13 2+                                                         --- possible JPI=(0+,1-,2+)
+                     *new XREF new tags    34ARX L XREF=FG(4050)I(4035)
+                     *new XREF old tags    34ARX L XREF=FG(4050)I(4035)
+                     #old XREF in Adopted  34ARX L XREF=FG(4050)I(4035)
+               12C(24MG,34ARG)--->F  F     34AR  L 4020.6    13 2+                                                        
+                    32S(3HE,N)--->G  G     34AR  L 4050      30                                                       H    *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     36AR(P,T)--->I  I     34AR  L 4035      16                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     36AR(P,T)--->I  I     34AR cL E$unweighted average of 4050 {I14} (1972Pa02) and 4019.1 {I43}         
+                     36AR(P,T)--->I  I     34AR2cL (2018Lo11).
+ GAMMA------------------------------------ 34AR  G 1930.4    23 65     12                                                  --- EG=1930.4     FL=2091.1     JF=2+
+               12C(24MG,34ARG)--->F  F     34AR  G 1930.4    23 65     12                                                  *** EG=1930.4     FL=2091.5     JF=2+
+ GAMMA------------------------------------ 34AR  G 4019.8    15 100    12                                                  --- EG=4019.8     FL=0.0        JF=0+
+               12C(24MG,34ARG)--->F  F     34AR  G 4019.8    15 100    12                                                  *** EG=4019.8     FL=0.0        JF=0+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 4050      14                                                            --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     *new XREF new tags    34ARX L XREF=G(4050*)I(4035*)
-                     *new XREF old tags    34ARX L XREF=A(4050*)B(4035*)
-                     #old XREF in Adopted  34ARX L XREF=AB
-                    32S(3HE,N)--->G  A(*)  34AR  L 4050      30                                                       H    *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B(*)  34AR  L 4035      16                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B(*)  34AR cL E$unweighted average of 4050 {I14} (1972Pa02) and 4019.1 {I43}         
-                     36AR(P,T)--->I  B(*)  34AR2cL (2018Lo11).
-------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 4127.8    10                  208 FS    LT                              --- possible JPI=(1-,2+,3-)
+ LEVEL************************************ 34AR  L 4127.8    10 (1,2)+             9E1 FS    +12-9                      M  --- possible JPI=(2+)
                      *new XREF new tags    34ARX L XREF=DFG(4150)H
-                     *new XREF old tags    34ARX L XREF=A(4150)?3?1?4
-                     #old XREF in Adopted  34ARX L XREF=AE
-                   3HE(32S,NG)--->D  ?1    34AR  L 4128                          9E1 FS    +12-9                          
-               12C(24MG,34ARG)--->F  ?3    34AR  L 4131.6    9  1+                                                        
-                    32S(3HE,N)--->G  A     34AR  L 4150      30                                                       H    *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                   32S(3HE,NG)--->H  ?4    34AR  L 4127.4    11 (2)+             243 FS    LT                             
-                   3HE(32S,NG)--->D  ?1    34AR cL T$lifetime |t=130 fs {I+170-130} (centroid-shift). <310 fs (lineshape).
-                   32S(3HE,NG)--->H  ?4    34AR cL J$spin=2 from n|g(|q), but did not exclude spin=3 or 4 (1974Gr19);     
-                   32S(3HE,NG)--->H  ?4    34AR2cL spin=4 ruled out by 840|g, M1+E2, to 2+.                               
-                   32S(3HE,NG)--->H  ?4    34AR cL T$from lifetime |t<350 fs (1974Be18, DSAM). Other: |t>400 fs (1974Gr19,
-                   32S(3HE,NG)--->H  ?4    34AR2cL DSAM).
- GAMMA------------------------------------ 34AR  G     840.1 9  100     6                                                  --- EG=840.1      FL=3287.7     JF=2+
-                   3HE(32S,NG)--->D  ?1    34AR  G 840                                                                     *** EG=840        FL=3288       JF=
-               12C(24MG,34ARG)--->F  ?3    34AR  G 842.5     7 100                                                         *** EG=842.5      FL=3289.1     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR  G 839.9     9 100     6  M1+E2    +0.52   15                              *** EG=839.9      FL=3287.5     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR cG E$weighted average of 840.1 {I9} (1974Be18) and 839.1 {I18} (1972Ca22).
-                   32S(3HE,NG)--->H  ?4    34AR cG RI$others: >50 (1974Be18), 100 (1972Ca22).
-                   32S(3HE,NG)--->H  ?4    34AR cG M,MR$from n|g(|q) in 1974Gr19; E1+M2, E2+M3, M2+E3 ruled out by RUL.   
- GAMMA------------------------------------ 34AR  G    2037      11      6                                                  --- EG=2037       FL=2091.1     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR  G 2037        11      6                                                   *** EG=2037       FL=2091.0     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR cG RI$other: <50 (1974Be18).
- GAMMA------------------------------------ 34AR  G    4128      11     LT                                                ? --- EG=4128       FL=0          JF=0+
-                   32S(3HE,NG)--->H  ?4    34AR  G 4128        11      LT                                                  *** EG=4128       FL=0.0        JF=0+
+                     *new XREF old tags    34ARX L XREF=DFG(4150)H
+                     #old XREF in Adopted  34ARX L XREF=DFG(4150)H
+                   3HE(32S,NG)--->D  D     34AR  L 4128                          9E1 FS    +12-9                          
+               12C(24MG,34ARG)--->F  F     34AR  L 4131.6    9  1+                                                        
+                    32S(3HE,N)--->G  G     34AR  L 4150      30                                                       H    *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                   32S(3HE,NG)--->H  H     34AR  L 4127.4    11 (2)+             243 FS    LT                             
+                   3HE(32S,NG)--->D  D     34AR cL T$lifetime |t=130 fs {I+170-130} (centroid-shift). <310 fs (lineshape).
+                   32S(3HE,NG)--->H  H     34AR cL J$spin=2 is favored from n|g(|q), which did not exclude spin=1, 3, or 4
+                   32S(3HE,NG)--->H  H     34AR2cL (1974Gr19); spin=4 ruled out by 840|g, M1+E2, to 2+.                   
+                   32S(3HE,NG)--->H  H     34AR cL T$from lifetime |t<350 fs (1974Be18, DSAM). Other: |t>400 fs (1974Gr19,
+                   32S(3HE,NG)--->H  H     34AR2cL DSAM).
+ GAMMA------------------------------------ 34AR  G 841.2     13 100    6  M1+E2    +0.52   15                              --- EG=841.2      FL=3287.7     JF=2+
+                   3HE(32S,NG)--->D  D     34AR  G 840                                                                     *** EG=840        FL=3288       JF=
+               12C(24MG,34ARG)--->F  F     34AR  G 842.5     7 100                                                         *** EG=842.5      FL=3289.1     JF=2+
+                   32S(3HE,NG)--->H  H     34AR  G 839.9     9 100     6  M1+E2    +0.52   15                              *** EG=839.9      FL=3287.5     JF=2+
+                   32S(3HE,NG)--->H  H     34AR cG E$weighted average of 840.1 {I9} (1974Be18) and 839.1 {I18} (1972Ca22).
+                   32S(3HE,NG)--->H  H     34AR cG RI$others: >50 (1974Be18), 100 (1972Ca22).
+                   32S(3HE,NG)--->H  H     34AR cG M,MR$from n|g(|q) in 1974Gr19; E1+M2, E2+M3, M2+E3 ruled out by RUL.   
+ GAMMA------------------------------------ 34AR  G 2037         11     6                                                   --- EG=2037       FL=2091.1     JF=2+
+                   32S(3HE,NG)--->H  H     34AR  G 2037        11      6                                                   *** EG=2037       FL=2091.0     JF=2+
+                   32S(3HE,NG)--->H  H     34AR cG RI$other: <50 (1974Be18).
+ GAMMA------------------------------------ 34AR  G 4128         11     LT                                                  --- EG=4128       FL=0.0        JF=0+
+                   32S(3HE,NG)--->H  H     34AR  G 4128        11      LT                                                  *** EG=4128       FL=0.0        JF=0+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 4513.2    8 3-                201 FS    38                              --- possible JPI=3-
-                     *new XREF new tags    34ARX L XREF=B(*)FGHI
-                     *new XREF old tags    34ARX L XREF=ABD(*)?3?4
-                     #old XREF in Adopted  34ARX L XREF=ABDE
-                   1H(34AR,P')--->B  D(*)  34AR  L 4.5E3     2  3-                                                        
-               12C(24MG,34ARG)--->F  ?3    34AR  L 4517.5    7  3-                                                        
-                    32S(3HE,N)--->G  A     34AR  L 4510      30                                  3                         *** possible JPI=3-
-                   32S(3HE,NG)--->H  ?4    34AR  L 4513.5    8  3                201 FS    55                             
-                     36AR(P,T)--->I  B     34AR  L 4515.1    23                                  (3)                       *** possible JPI=(3-)
-                   1H(34AR,P')--->B  D(*)  34AR2 L B3=0.39 3 (2001Kh17)                                                   
-                    32S(3HE,N)--->G  A     34AR cL $|e=2.9.
-                   32S(3HE,NG)--->H  ?4    34AR cL J$spin=3 from n|g(|q) (1974Gr19).                                      
-                   32S(3HE,NG)--->H  ?4    34AR cL T$from lifetime |t=290 fs {I80}: weighted average of 390 fs {I180}     
-                   32S(3HE,NG)--->H  ?4    34AR2cL (1974Be18, DSAM), 260 fs {I80} (1974Gr19, DSAM), and 300 fs {I80}      
-                   32S(3HE,NG)--->H  ?4    34AR3cL (1972Ca22, DSAM).
-                     36AR(P,T)--->I  B     34AR cL E$weighted average of 4522 {I14} (1972Pa02) and 4514.9 {I23}           
-                     36AR(P,T)--->I  B     34AR2cL (2018Lo11). Other: 4560 {I40} (1969Br21).                              
-                     36AR(P,T)--->I  B     34AR cL L$not fitted particularly well by either L=2 or L=3 calculated         
-                     36AR(P,T)--->I  B     34AR2cL distributions. However, it is distinctly different from the other      
-                     36AR(P,T)--->I  B     34AR3cL experimental L=2 distributions. There is also a 3- state at            
-                     36AR(P,T)--->I  B     34AR4cL approximately the same excitation energy in the mirror nucleus {+34}S  
-                     36AR(P,T)--->I  B     34AR5cL (1969Br21).                                                            
- GAMMA------------------------------------ 34AR  G   1225.5  6     100 11 [E1]                                             --- EG=1225.5     FL=3287.7     JF=2+
-               12C(24MG,34ARG)--->F  ?3    34AR  G 1228.4    5 100     5  D                                                *** EG=1228.4     FL=3289.1     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR  G 1226.0    6 100     11                                                  *** EG=1226.0     FL=3287.5     JF=2+
-               12C(24MG,34ARG)--->F  ?3    34AR cG M$|DJ=1, dipole.                                                       
-               12C(24MG,34ARG)--->F  ?3    34AR cG $A{-2}=-0.35 {I10}, A{-4}=+0.03 {I12}.
-                   32S(3HE,NG)--->H  ?4    34AR cG E$weighted average of 1225.5 {I6} (1974Be18) and 1226.7 {I7} (1972Ca22)
-                   32S(3HE,NG)--->H  ?4    34AR cG RI$others: >90 (1974Be18), 100 (1972Ca22).
-                   32S(3HE,NG)--->H  ?4    34AR cG $A{-2}=-0.38 {I24} (1974Be18).
- GAMMA------------------------------------ 34AR  G   2422            11 3 [E1]                                             --- EG=2422       FL=2091.1     JF=2+
-               12C(24MG,34ARG)--->F  ?3    34AR  G 2424.7    22 14.6   32                                                  *** EG=2424.7     FL=2091.5     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR  G 2422        11.1    33                                                  *** EG=2422       FL=2091.0     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR cG RI$others: <10 (1974Be18), <20 (1972Ca22).
+ LEVEL************************************ 34AR  L 4513.2    8  3-               0.29 ps   8                          M    --- possible JPI=3-
+                     *new XREF new tags    34ARX L XREF=BFGHI
+                     *new XREF old tags    34ARX L XREF=BFGHI
+                     #old XREF in Adopted  34ARX L XREF=BFGHI
+                   1H(34AR,P')--->B  B     34AR  L 4.5E3     2  3-                                                        
+               12C(24MG,34ARG)--->F  F     34AR  L 4517.5    7  3-                                                        
+                    32S(3HE,N)--->G  G     34AR  L 4510      30                                  3                         *** possible JPI=3-
+                   32S(3HE,NG)--->H  H     34AR  L 4513.5    8  3                201 FS    55                             
+                     36AR(P,T)--->I  I     34AR  L 4515.1    23                                  (3)                       *** possible JPI=(3-)
+                   1H(34AR,P')--->B  B     34AR2 L B3=0.39 3 (2001Kh17)                                                   
+                    32S(3HE,N)--->G  G     34AR cL $|e=2.9.
+                   32S(3HE,NG)--->H  H     34AR cL J$spin=3 from n|g(|q) (1974Gr19).                                      
+                   32S(3HE,NG)--->H  H     34AR cL T$from lifetime |t=290 fs {I80}: weighted average of 390 fs {I180}     
+                   32S(3HE,NG)--->H  H     34AR2cL (1974Be18, DSAM), 260 fs {I80} (1974Gr19, DSAM), and 300 fs {I80}      
+                   32S(3HE,NG)--->H  H     34AR3cL (1972Ca22, DSAM).
+                     36AR(P,T)--->I  I     34AR cL E$weighted average of 4522 {I14} (1972Pa02) and 4514.9 {I23}           
+                     36AR(P,T)--->I  I     34AR2cL (2018Lo11). Other: 4560 {I40} (1969Br21).                              
+                     36AR(P,T)--->I  I     34AR cL L$not fitted particularly well by either L=2 or L=3 calculated         
+                     36AR(P,T)--->I  I     34AR2cL distributions. However, it is distinctly different from the other      
+                     36AR(P,T)--->I  I     34AR3cL experimental L=2 distributions. There is also a 3- state at            
+                     36AR(P,T)--->I  I     34AR4cL approximately the same excitation energy in the mirror nucleus {+34}S  
+                     36AR(P,T)--->I  I     34AR5cL (1969Br21).                                                            
+ GAMMA------------------------------------ 34AR  G 1227.2    12 100    5  [E1]                                             --- EG=1227.2     FL=3287.7     JF=2+
+               12C(24MG,34ARG)--->F  F     34AR  G 1228.4    5 100     5  D                                                *** EG=1228.4     FL=3289.1     JF=2+
+                   32S(3HE,NG)--->H  H     34AR  G 1226.0    6 100     11                                                  *** EG=1226.0     FL=3287.5     JF=2+
+               12C(24MG,34ARG)--->F  F     34AR cG M$|DJ=1, dipole.                                                       
+               12C(24MG,34ARG)--->F  F     34AR cG $A{-2}=-0.35 {I10}, A{-4}=+0.03 {I12}.
+                   32S(3HE,NG)--->H  H     34AR cG E$weighted average of 1225.5 {I6} (1974Be18) and 1226.7 {I7} (1972Ca22)
+                   32S(3HE,NG)--->H  H     34AR cG RI$others: >90 (1974Be18), 100 (1972Ca22).
+                   32S(3HE,NG)--->H  H     34AR cG $A{-2}=-0.38 {I24} (1974Be18).
+ GAMMA------------------------------------ 34AR  G 2424.7    22 12.9   32 [E1]                                             --- EG=2424.7     FL=2091.1     JF=2+
+               12C(24MG,34ARG)--->F  F     34AR  G 2424.7    22 14.6   32                                                  *** EG=2424.7     FL=2091.5     JF=2+
+                   32S(3HE,NG)--->H  H     34AR  G 2422        11.1    33                                                  *** EG=2422       FL=2091.0     JF=2+
+                   32S(3HE,NG)--->H  H     34AR cG RI$others: <10 (1974Be18), <20 (1972Ca22).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 4631      4                                                             --- possible JPI=(0+,1-,2+,3-,4+)
-                     *new XREF new tags    34ARX L XREF=B(*)HI(*)
-                     *new XREF old tags    34ARX L XREF=B(*)D(*)?4
-                     #old XREF in Adopted  34ARX L XREF=BE
-                   1H(34AR,P')--->B  D(*)  34AR  L 4.5E3     2  3-                                                        
-                   32S(3HE,NG)--->H  ?4    34AR  L 4631      4                                                        G   
-                     36AR(P,T)--->I  B(*)  34AR  L 4641.5    21                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                   1H(34AR,P')--->B  D(*)  34AR2 L B3=0.39 3 (2001Kh17)                                                   
-                     36AR(P,T)--->I  B(*)  34AR cL E$weighted average of 4651 {I14} (1972Pa02) and 4641.3 {I21} (2018Lo11)
- GAMMA------------------------------------ 34AR  G 2540         100                                                        --- EG=2540       FL=2091.1     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR  G 2540                                                                    *** EG=2540       FL=2091.0     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR cG RI$>50 (1974Gr19).
+ LEVEL************************************ 34AR  L 4644.1    9  (4+)                                                       --- possible JPI=(0+,4+)
+                     *new XREF new tags    34ARX L XREF=FH(4631)I
+                     *new XREF old tags    34ARX L XREF=FH(4631)I
+                     #old XREF in Adopted  34ARX L XREF=FH(4631)I
+               12C(24MG,34ARG)--->F  F     34AR  L 4644.1    9  4+                                                        
+                   32S(3HE,NG)--->H  H     34AR  L 4631      4                                                        G   
+                     36AR(P,T)--->I  I     34AR  L 4641.5    21                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     36AR(P,T)--->I  I     34AR cL E$weighted average of 4651 {I14} (1972Pa02) and 4641.3 {I21} (2018Lo11)
+ GAMMA------------------------------------ 34AR  G 2552.4    8  100       Q                                                --- EG=2552.4     FL=2091.1     JF=2+
+               12C(24MG,34ARG)--->F  F     34AR  G 2552.4    8 100        Q                                                *** EG=2552.4     FL=2091.5     JF=2+
+                   32S(3HE,NG)--->H  H     34AR  G 2540                                                                    *** EG=2540       FL=2091.0     JF=2+
+               12C(24MG,34ARG)--->F  F     34AR cG M$|DJ=2, quadrupole.                                                   
+               12C(24MG,34ARG)--->F  F     34AR cG $A{-2}=+0.20 {I8}, A{-4}=-0.01 {I11}.
+                   32S(3HE,NG)--->H  H     34AR cG RI$>50 (1974Gr19).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 4644.1    9  4+                                                        
-                     *new XREF new tags    34ARX L XREF=FI(*)
-                     *new XREF old tags    34ARX L XREF=B(*)?3
-               12C(24MG,34ARG)--->F  ?3    34AR  L 4644.1    9  4+                                                         *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B(*)  34AR  L 4641.5    21                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B(*)  34AR cL E$weighted average of 4651 {I14} (1972Pa02) and 4641.3 {I21} (2018Lo11)
- GAMMA------------------------------------ 34AR  G 2552.4    8 100        Q                                               
-               12C(24MG,34ARG)--->F  ?3    34AR  G 2552.4    8 100        Q                                                *** EG=2552.4     FL=2091.5     JF=2+
-               12C(24MG,34ARG)--->F  ?3    34AR cG M$|DJ=2, quadrupole.                                                   
-               12C(24MG,34ARG)--->F  ?3    34AR cG $A{-2}=+0.20 {I8}, A{-4}=-0.01 {I11}.
-------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 4851.9    8  3+                                                        
+ LEVEL************************************ 34AR  L 4851.9    8  (3+)                                                  M    --- possible JPI=(0+,1,2,3,4+)
                      *new XREF new tags    34ARX L XREF=F
-                     *new XREF old tags    34ARX L XREF=?3
-               12C(24MG,34ARG)--->F  ?3    34AR  L 4851.9    8  3+                                                        
- GAMMA------------------------------------ 34AR  G 1562.8    7 49.2    34                                                 
-               12C(24MG,34ARG)--->F  ?3    34AR  G 1562.8    7 49.2    34                                                  *** EG=1562.8     FL=3289.1     JF=2+
- GAMMA------------------------------------ 34AR  G 2759.9    12 100    8                                                  
-               12C(24MG,34ARG)--->F  ?3    34AR  G 2759.9    12 100    8                                                   *** EG=2759.9     FL=2091.5     JF=2+
+                     *new XREF old tags    34ARX L XREF=F
+                     #old XREF in Adopted  34ARX L XREF=F
+               12C(24MG,34ARG)--->F  F     34AR  L 4851.9    8  3+                                                        
+ GAMMA------------------------------------ 34AR  G 1562.8    7  49.2   34                                                  --- EG=1562.8     FL=3287.7     JF=2+
+               12C(24MG,34ARG)--->F  F     34AR  G 1562.8    7 49.2    34                                                  *** EG=1562.8     FL=3289.1     JF=2+
+ GAMMA------------------------------------ 34AR  G 2759.9    12 100    8                                                   --- EG=2759.9     FL=2091.1     JF=2+
+               12C(24MG,34ARG)--->F  F     34AR  G 2759.9    12 100    8                                                   *** EG=2759.9     FL=2091.5     JF=2+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 4865      4                                                             --- possible JPI=(0+,1-,2+,3-,4+)
+ LEVEL************************************ 34AR  L 4870      5                                                             --- possible JPI=(0+,1-,2+,3-,4+)
                      *new XREF new tags    34ARX L XREF=HI(*)
-                     *new XREF old tags    34ARX L XREF=B(*)?4
-                     #old XREF in Adopted  34ARX L XREF=BE
-                   32S(3HE,NG)--->H  ?4    34AR  L 4865      4                                                        G   
-                     36AR(P,T)--->I  B(*)  34AR  L 4875.3    38                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B(*)  34AR cL E$weighted average of 4867 {I14} (1972Pa02) and 4875.9 {I38} (2018Lo11)
+                     *new XREF old tags    34ARX L XREF=HI(*)
+                     #old XREF in Adopted  34ARX L XREF=HI
+                   32S(3HE,NG)--->H  H     34AR  L 4865      4                                                        G   
+                     36AR(P,T)--->I  I(*)  34AR  L 4875.3    38                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     36AR(P,T)--->I  I(*)  34AR cL E$weighted average of 4867 {I14} (1972Pa02) and 4875.9 {I38} (2018Lo11)
  GAMMA------------------------------------ 34AR  G 2774         100                                                        --- EG=2774       FL=2091.1     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR  G 2774                                                                    *** EG=2774       FL=2091.0     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR cG RI$>50 (1974Gr19).
+                   32S(3HE,NG)--->H  H     34AR  G 2774                                                                    *** EG=2774       FL=2091.0     JF=2+
+                   32S(3HE,NG)--->H  H     34AR cG RI$>50 (1974Gr19).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 4881.4    12 2+                                                        
+ LEVEL************************************ 34AR  L 4881.4    12 2+                                                         --- possible JPI=(0+,1-,2+)
                      *new XREF new tags    34ARX L XREF=FI(*)
-                     *new XREF old tags    34ARX L XREF=B(*)?3
-               12C(24MG,34ARG)--->F  ?3    34AR  L 4881.4    12 2+                                                         *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B(*)  34AR  L 4875.3    38                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B(*)  34AR cL E$weighted average of 4867 {I14} (1972Pa02) and 4875.9 {I38} (2018Lo11)
- GAMMA------------------------------------ 34AR  G 1592.5    17 32     5                                                  
-               12C(24MG,34ARG)--->F  ?3    34AR  G 1592.5    17 32     5                                                   *** EG=1592.5     FL=3289.1     JF=2+
- GAMMA------------------------------------ 34AR  G 2788.9    19 100    12                                                 
-               12C(24MG,34ARG)--->F  ?3    34AR  G 2788.9    19 100    12                                                  *** EG=2788.9     FL=2091.5     JF=2+
- GAMMA------------------------------------ 34AR  G 4881.9    24 82     14                                                 
-               12C(24MG,34ARG)--->F  ?3    34AR  G 4881.9    24 82     14                                                  *** EG=4881.9     FL=0.0        JF=0+
+                     *new XREF old tags    34ARX L XREF=FI(*)
+                     #old XREF in Adopted  34ARX L XREF=FI
+               12C(24MG,34ARG)--->F  F     34AR  L 4881.4    12 2+                                                        
+                     36AR(P,T)--->I  I(*)  34AR  L 4875.3    38                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     36AR(P,T)--->I  I(*)  34AR cL E$weighted average of 4867 {I14} (1972Pa02) and 4875.9 {I38} (2018Lo11)
+ GAMMA------------------------------------ 34AR  G 1592.5    17 32     5                                                   --- EG=1592.5     FL=3287.7     JF=2+
+               12C(24MG,34ARG)--->F  F     34AR  G 1592.5    17 32     5                                                   *** EG=1592.5     FL=3289.1     JF=2+
+ GAMMA------------------------------------ 34AR  G 2788.9    19 100    12                                                  --- EG=2788.9     FL=2091.1     JF=2+
+               12C(24MG,34ARG)--->F  F     34AR  G 2788.9    19 100    12                                                  *** EG=2788.9     FL=2091.5     JF=2+
+ GAMMA------------------------------------ 34AR  G 4881.9    24 82     14                                                  --- EG=4881.9     FL=0.0        JF=0+
+               12C(24MG,34ARG)--->F  F     34AR  G 4881.9    24 82     14                                                  *** EG=4881.9     FL=0.0        JF=0+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 4963.7    13 0+                                                        
-                     *new XREF new tags    34ARX L XREF=FG(4950*)I(*)
-                     *new XREF old tags    34ARX L XREF=A(4950*)B(*)?3
-               12C(24MG,34ARG)--->F  ?3    34AR  L 4963.7    13 0+                                                         *** possible JPI=0+
-                    32S(3HE,N)--->G  A(*)  34AR  L 4950      50                                  0                         *** possible JPI=0+
-                     36AR(P,T)--->I  B(*)  34AR  L 4967.9    27                                  0                         *** possible JPI=0+
-                    32S(3HE,N)--->G  A(*)  34AR cL $|e=25.
-                     36AR(P,T)--->I  B(*)  34AR cL E$weighted average of 4970 {I40} (1969Br21), 4985 {I14} (1972Pa02), and
-                     36AR(P,T)--->I  B(*)  34AR2cL 4967.2 {I27} (2018Lo11).
- GAMMA------------------------------------ 34AR  G 832.1     9 100                                                        
-               12C(24MG,34ARG)--->F  ?3    34AR  G 832.1     9 100                                                         *** EG=832.1      FL=4131.6     JF=1+
+ LEVEL************************************ 34AR  L 4963.7    13 0+                                                    M    --- possible JPI=0+
+                     *new XREF new tags    34ARX L XREF=FG(4950)I
+                     *new XREF old tags    34ARX L XREF=FG(4950)I
+                     #old XREF in Adopted  34ARX L XREF=FG(4950)H(4967)I
+               12C(24MG,34ARG)--->F  F     34AR  L 4963.7    13 0+                                                        
+                    32S(3HE,N)--->G  G     34AR  L 4950      50                                  0                         *** possible JPI=0+
+                     36AR(P,T)--->I  I     34AR  L 4967.9    27                                  0                         *** possible JPI=0+
+                    32S(3HE,N)--->G  G     34AR cL $|e=25.
+                     36AR(P,T)--->I  I     34AR cL E$weighted average of 4970 {I40} (1969Br21), 4985 {I14} (1972Pa02), and
+                     36AR(P,T)--->I  I     34AR2cL 4967.2 {I27} (2018Lo11).
+ GAMMA------------------------------------ 34AR  G 832.1     9  100                                                        --- EG=832.1      FL=4127.8     JF=(1,2)+
+               12C(24MG,34ARG)--->F  F     34AR  G 832.1     9 100                                                         *** EG=832.1      FL=4131.6     JF=1+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 4967      4 0+                                                          --- possible JPI=0+
-                     *new XREF new tags    34ARX L XREF=FG(4950*)HI(*)
-                     *new XREF old tags    34ARX L XREF=A(4950*)B(*)?3?4
-                     #old XREF in Adopted  34ARX L XREF=ABE
-               12C(24MG,34ARG)--->F  ?3    34AR  L 4966.9    11 2-                                                        
-                    32S(3HE,N)--->G  A(*)  34AR  L 4950      50                                  0                         *** possible JPI=0+
-                   32S(3HE,NG)--->H  ?4    34AR  L 4967      4                                                        G   
-                     36AR(P,T)--->I  B(*)  34AR  L 4967.9    27                                  0                         *** possible JPI=0+
-                    32S(3HE,N)--->G  A(*)  34AR cL $|e=25.
-                     36AR(P,T)--->I  B(*)  34AR cL E$weighted average of 4970 {I40} (1969Br21), 4985 {I14} (1972Pa02), and
-                     36AR(P,T)--->I  B(*)  34AR2cL 4967.2 {I27} (2018Lo11).
- GAMMA------------------------------------ 34AR  G    841       20     LT                                                ? --- EG=841        FL=4127.8     JF=
-                   32S(3HE,NG)--->H  ?4    34AR  G 841                                                                     *** EG=841        FL=4127.4     JF=(2)+
-                   32S(3HE,NG)--->H  ?4    34AR cG RI$<20 (1974Gr19).
- GAMMA------------------------------------ 34AR  G    2876      100                                                        --- EG=2876       FL=2091.1     JF=2+
-               12C(24MG,34ARG)--->F  ?3    34AR  G 2875.2    10 100       D                                                *** EG=2875.2     FL=2091.5     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR  G 2876                                                                    *** EG=2876       FL=2091.0     JF=2+
-               12C(24MG,34ARG)--->F  ?3    34AR cG M$|DJ=0, dipole.                                                       
-               12C(24MG,34ARG)--->F  ?3    34AR cG $A{-2}=+0.9 {I3}, A{-4}=+0.4 {I5}.
-                   32S(3HE,NG)--->H  ?4    34AR cG RI$>50 (1974Gr19).
+ LEVEL************************************ 34AR  L 4967      4  2(-)                                                  M    --- possible JPI=1,2,3
+                     *new XREF new tags    34ARX L XREF=FH
+                     *new XREF old tags    34ARX L XREF=FH
+                     #old XREF in Adopted  34ARX L XREF=F
+               12C(24MG,34ARG)--->F  F     34AR  L 4966.9    11 2-                                                        
+                   32S(3HE,NG)--->H  H     34AR  L 4967      4                                                        G   
+ GAMMA------------------------------------ 34AR  G 841                                                                    
+                   32S(3HE,NG)--->H  H     34AR  G 841                                                                     *** EG=841        FL=4127.4     JF=(2)+
+                   32S(3HE,NG)--->H  H     34AR cG RI$<20 (1974Gr19).
+ GAMMA------------------------------------ 34AR  G 2875.2    10 100       D                                                --- EG=2875.2     FL=2091.1     JF=2+
+               12C(24MG,34ARG)--->F  F     34AR  G 2875.2    10 100       D                                                *** EG=2875.2     FL=2091.5     JF=2+
+                   32S(3HE,NG)--->H  H     34AR  G 2876                                                                    *** EG=2876       FL=2091.0     JF=2+
+               12C(24MG,34ARG)--->F  F     34AR cG M$|DJ=0, dipole.                                                       
+               12C(24MG,34ARG)--->F  F     34AR cG $A{-2}=+0.9 {I3}, A{-4}=+0.4 {I5}.
+                   32S(3HE,NG)--->H  H     34AR cG RI$>50 (1974Gr19).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 5061.8    8  1+                                                        
+ LEVEL************************************ 34AR  L 5061.8    8  (1+)                                                  M    --- possible JPI=(0,1,2,3,4,5-)
                      *new XREF new tags    34ARX L XREF=F
-                     *new XREF old tags    34ARX L XREF=?3
-               12C(24MG,34ARG)--->F  ?3    34AR  L 5061.8    8  1+                                                        
- GAMMA------------------------------------ 34AR  G 1771.8    11 100    8                                                  
-               12C(24MG,34ARG)--->F  ?3    34AR  G 1771.8    11 100    8                                                   *** EG=1771.8     FL=3289.1     JF=2+
- GAMMA------------------------------------ 34AR  G 5062        28      LT                                                ?
-               12C(24MG,34ARG)--->F  ?3    34AR  G 5062        28      LT                                                ? *** EG=5062       FL=0.0        JF=0+
+                     *new XREF old tags    34ARX L XREF=F
+                     #old XREF in Adopted  34ARX L XREF=F
+               12C(24MG,34ARG)--->F  F     34AR  L 5061.8    8  1+                                                        
+ GAMMA------------------------------------ 34AR  G 1771.8    11 100    8                                                   --- EG=1771.8     FL=3287.7     JF=2+
+               12C(24MG,34ARG)--->F  F     34AR  G 1771.8    11 100    8                                                   *** EG=1771.8     FL=3289.1     JF=2+
+ GAMMA------------------------------------ 34AR  G 5062         28     LT                                                ? --- EG=5062       FL=0.0        JF=0+
+               12C(24MG,34ARG)--->F  F(?)  34AR  G 5062        28      LT                                                ? *** EG=5062       FL=0.0        JF=0+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 5255      4                                                           ? --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     *new XREF new tags    34ARX L XREF=HI
-                     *new XREF old tags    34ARX L XREF=B?4
-                     #old XREF in Adopted  34ARX L XREF=E
-                   32S(3HE,NG)--->H  ?4    34AR  L 5255      4                                                        G   
-                     36AR(P,T)--->I  B     34AR  L 5262      15                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
- GAMMA------------------------------------ 34AR  G  3164        100                                                      ? --- EG=3164       FL=2091.1     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR  G 3164                                                                    *** EG=3164       FL=2091.0     JF=2+
-                   32S(3HE,NG)--->H  ?4    34AR cG RI$>50 (1974Gr19).
+ LEVEL************************************ 34AR  L 5255      4                                                             --- possible JPI=(0+,1-,2+,3-,4+)
+                     *new XREF new tags    34ARX L XREF=H(?)I
+                     *new XREF old tags    34ARX L XREF=H(?)I
+                     #old XREF in Adopted  34ARX L XREF=HI
+                   32S(3HE,NG)--->H  H(?)  34AR  L 5255      4                                                        G  ?
+                     36AR(P,T)--->I  I     34AR  L 5262      15                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+ GAMMA------------------------------------ 34AR  G 3164                                                                    --- EG=3164       FL=2091.1     JF=2+
+                   32S(3HE,NG)--->H  H(?)  34AR  G 3164                                                                    *** EG=3164       FL=2091.0     JF=2+
+                   32S(3HE,NG)--->H  H(?)  34AR cG RI$>50 (1974Gr19).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 5307      13 (5-)                                                       --- possible JPI=(5-)
+ LEVEL************************************ 34AR  L 5316      13 (5-)                                                       --- possible JPI=(5-)
                      *new XREF new tags    34ARX L XREF=GI
-                     *new XREF old tags    34ARX L XREF=AB
-                     #old XREF in Adopted  34ARX L XREF=AB
-                    32S(3HE,N)--->G  A     34AR  L 5310      30                                  (5)                       *** possible JPI=(5-)
-                     36AR(P,T)--->I  B     34AR  L 5317      13                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                    32S(3HE,N)--->G  A     34AR cL $|e=0.38.
-                     36AR(P,T)--->I  B     34AR cL E$weighted average of 5340 {I40} (1969Br21), 5307 {I13} (1972Pa02), and
-                     36AR(P,T)--->I  B     34AR2cL 5330 {I17} (2018Lo11).
+                     *new XREF old tags    34ARX L XREF=GI
+                     #old XREF in Adopted  34ARX L XREF=GI
+                    32S(3HE,N)--->G  G     34AR  L 5310      30                                  (5)                       *** possible JPI=(5-)
+                     36AR(P,T)--->I  I     34AR  L 5317      13                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                    32S(3HE,N)--->G  G     34AR cL $|e=0.38.
+                     36AR(P,T)--->I  I     34AR cL E$weighted average of 5340 {I40} (1969Br21), 5307 {I13} (1972Pa02), and
+                     36AR(P,T)--->I  I     34AR2cL 5330 {I17} (2018Lo11).
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34AR  L 5542      4                                                             --- possible JPI=(1-,2+,3-,4+,5-)
                      *new XREF new tags    34ARX L XREF=HI
-                     *new XREF old tags    34ARX L XREF=B?4
-                     #old XREF in Adopted  34ARX L XREF=E
-                   32S(3HE,NG)--->H  ?4    34AR  L 5542      4                                                        G   
-                     36AR(P,T)--->I  B     34AR  L 5535      18                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
- GAMMA------------------------------------ 34AR  G        911      54  16                                             A    --- EG=911        FL=4631       JF=
-                   32S(3HE,NG)--->H  ?4    34AR  G 911         54      16                                                  *** EG=911        FL=4631       JF=
- GAMMA------------------------------------ 34AR  G       1029     100  16                                             A    --- EG=1029       FL=4513.2     JF=3-
-                   32S(3HE,NG)--->H  ?4    34AR  G 1029        100     16                                                  *** EG=1029       FL=4513.5     JF=3
+                     *new XREF old tags    34ARX L XREF=HI
+                     #old XREF in Adopted  34ARX L XREF=HI
+                   32S(3HE,NG)--->H  H     34AR  L 5542      4                                                        G   
+                     36AR(P,T)--->I  I     34AR  L 5535      18                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+ GAMMA------------------------------------ 34AR  G 911          54     16                                                  --- EG=911        FL=4644.1     JF=(4+)
+                   32S(3HE,NG)--->H  H     34AR  G 911         54      16                                                  *** EG=911        FL=4631       JF=
+                   32S(3HE,NG)--->H  H     34AR cG RI$tentative (1974Gr19).
+ GAMMA------------------------------------ 34AR  G 1029         100    16                                                  --- EG=1029       FL=4513.2     JF=3-
+                   32S(3HE,NG)--->H  H     34AR  G 1029        100     16                                                  *** EG=1029       FL=4513.5     JF=3
+                   32S(3HE,NG)--->H  H     34AR cG RI$tentative (1974Gr19).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 5620      30 2+                                                         --- possible JPI=2+
+ LEVEL************************************ 34AR  L 5629      5  2+                                                         --- possible JPI=2+
                      *new XREF new tags    34ARX L XREF=GI
-                     *new XREF old tags    34ARX L XREF=AB
-                     #old XREF in Adopted  34ARX L XREF=A
-                    32S(3HE,N)--->G  A     34AR  L 5620      30                                  2                         *** possible JPI=2+
-                     36AR(P,T)--->I  B     34AR  L 5629.6    45                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                    32S(3HE,N)--->G  A     34AR cL $|e=18.
+                     *new XREF old tags    34ARX L XREF=GI
+                     #old XREF in Adopted  34ARX L XREF=GI
+                    32S(3HE,N)--->G  G     34AR  L 5620      30                                  2                         *** possible JPI=2+
+                     36AR(P,T)--->I  I     34AR  L 5629.6    45                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                    32S(3HE,N)--->G  G     34AR cL $|e=18.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 5909      12 0+                                                         --- possible JPI=0+
-                     *new XREF new tags    34ARX L XREF=G(5930)I(5929)
-                     *new XREF old tags    34ARX L XREF=A(5930)B(5929)
-                     #old XREF in Adopted  34ARX L XREF=AB
-                    32S(3HE,N)--->G  A     34AR  L 5930      50                                  0                         *** possible JPI=0+
-                     36AR(P,T)--->I  B     34AR  L 5929      20                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B     34AR cL E$unweighted average of 5909 {I12} (1972Pa02) and 5948.2 {I66}         
-                     36AR(P,T)--->I  B     34AR2cL (2018Lo11).
+ LEVEL************************************ 34AR  L 5929      20 0+                                                         --- possible JPI=0+
+                     *new XREF new tags    34ARX L XREF=GI
+                     *new XREF old tags    34ARX L XREF=GI
+                     #old XREF in Adopted  34ARX L XREF=G(5930)I
+                    32S(3HE,N)--->G  G     34AR  L 5930      50                                  0                         *** possible JPI=0+
+                     36AR(P,T)--->I  I     34AR  L 5929      20                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     36AR(P,T)--->I  I     34AR cL E$unweighted average of 5909 {I12} (1972Pa02) and 5948.2 {I66}         
+                     36AR(P,T)--->I  I     34AR2cL (2018Lo11).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 6074      11  2+                                                        --- possible JPI=2+
+ LEVEL************************************ 34AR  L 6050      4  2+                                                         --- possible JPI=2+
                      *new XREF new tags    34ARX L XREF=I
-                     *new XREF old tags    34ARX L XREF=B
-                     #old XREF in Adopted  34ARX L XREF=B
-                     36AR(P,T)--->I  B     34AR  L 6050.1    36                                  2                         *** possible JPI=2+
-                     36AR(P,T)--->I  B     34AR cL E$weighted average of 6074 {I11} (1972Pa02), and 6049.2 {I20}          
-                     36AR(P,T)--->I  B     34AR2cL (2018Lo11). Other: 6100 {I40} (1969Br21).                              
-                     36AR(P,T)--->I  B     34AR cL L$other: the total angular distribution of unresolved 5909+6074        
-                     36AR(P,T)--->I  B     34AR2cL exhibits some L=2 character, and therefore possibly one or both states 
-                     36AR(P,T)--->I  B     34AR3cL are 2+, but no definite assignment can be made (1972Pa02). Based on the
-                     36AR(P,T)--->I  B     34AR4cL measured |s(E{-t},|q) in 1972Pa02, the 6074 contribution dominates.    
+                     *new XREF old tags    34ARX L XREF=I
+                     #old XREF in Adopted  34ARX L XREF=I
+                     36AR(P,T)--->I  I     34AR  L 6050.1    36                                  2                         *** possible JPI=2+
+                     36AR(P,T)--->I  I     34AR cL E$weighted average of 6074 {I11} (1972Pa02), and 6049.2 {I20}          
+                     36AR(P,T)--->I  I     34AR2cL (2018Lo11). Other: 6100 {I40} (1969Br21).                              
+                     36AR(P,T)--->I  I     34AR cL L$other: the total angular distribution of unresolved 5909+6074        
+                     36AR(P,T)--->I  I     34AR2cL exhibits some L=2 character, and therefore possibly one or both states 
+                     36AR(P,T)--->I  I     34AR3cL are 2+, but no definite assignment can be made (1972Pa02). Based on the
+                     36AR(P,T)--->I  I     34AR4cL measured |s(E{-t},|q) in 1972Pa02, the 6074 contribution dominates.    
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 6525      9  2+                                                         --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+ LEVEL************************************ 34AR  L 6521      15                                                            --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=G(6470)I
-                     *new XREF old tags    34ARX L XREF=A(6470)B
-                     #old XREF in Adopted  34ARX L XREF=AB
-                    32S(3HE,N)--->G  A     34AR  L 6470      30                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B     34AR  L 6525      9                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF old tags    34ARX L XREF=G(6470)I
+                     #old XREF in Adopted  34ARX L XREF=G(6470)I
+                    32S(3HE,N)--->G  G     34AR  L 6470      30                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     36AR(P,T)--->I  I     34AR  L 6525      9                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 6641      14                                                           
+ LEVEL************************************ 34AR  L 6641      14                                                            --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=I
-                     *new XREF old tags    34ARX L XREF=B
-                     36AR(P,T)--->I  B     34AR  L 6641      14                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF old tags    34ARX L XREF=I
+                     #old XREF in Adopted  34ARX L XREF=I
+                     36AR(P,T)--->I  I     34AR  L 6641      14                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 6723      22                                                           
+ LEVEL************************************ 34AR  L 6723      22                                                            --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=I
-                     *new XREF old tags    34ARX L XREF=B
-                     36AR(P,T)--->I  B     34AR  L 6723      22                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF old tags    34ARX L XREF=I
+                     #old XREF in Adopted  34ARX L XREF=I
+                     36AR(P,T)--->I  I     34AR  L 6723      22                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 6794      11                                                            --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     *new XREF new tags    34ARX L XREF=G(6820)I
-                     *new XREF old tags    34ARX L XREF=A(6820)B
-                     #old XREF in Adopted  34ARX L XREF=AB
-                    32S(3HE,N)--->G  A     34AR  L 6820      40                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B     34AR  L 6807      4                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B     34AR cL E$weighted average of 6794 {I11} (1972Pa02) and 6808 {I3} (2018Lo11).  
-                     36AR(P,T)--->I  B     34AR2cL Other: 6860 {I40} (1969Br21).
+ LEVEL************************************ 34AR  L 6807      4                                                             --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF new tags    34ARX L XREF=GI
+                     *new XREF old tags    34ARX L XREF=GI
+                     #old XREF in Adopted  34ARX L XREF=G(6820)I
+                    32S(3HE,N)--->G  G     34AR  L 6820      40                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     36AR(P,T)--->I  I     34AR  L 6807      4                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     36AR(P,T)--->I  I     34AR cL E$weighted average of 6794 {I11} (1972Pa02) and 6808 {I3} (2018Lo11).  
+                     36AR(P,T)--->I  I     34AR2cL Other: 6860 {I40} (1969Br21).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 6917      5                                                            
+ LEVEL************************************ 34AR  L 6917      5                                                             --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=I
-                     *new XREF old tags    34ARX L XREF=B
-                     36AR(P,T)--->I  B     34AR  L 6917      5                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF old tags    34ARX L XREF=I
+                     #old XREF in Adopted  34ARX L XREF=I
+                     36AR(P,T)--->I  I     34AR  L 6917      5                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 6990      50                                                            --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+ LEVEL************************************ 34AR  L 6.99E3    5                                                             --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=G
-                     *new XREF old tags    34ARX L XREF=A
-                     #old XREF in Adopted  34ARX L XREF=A
-                    32S(3HE,N)--->G  A     34AR  L 6990      50                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF old tags    34ARX L XREF=G
+                     #old XREF in Adopted  34ARX L XREF=G
+                    32S(3HE,N)--->G  G     34AR  L 6990      50                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 7072      8                                                            
+ LEVEL************************************ 34AR  L 7072      8                                                             --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=I
-                     *new XREF old tags    34ARX L XREF=B
-                     36AR(P,T)--->I  B     34AR  L 7072      8                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF old tags    34ARX L XREF=I
+                     #old XREF in Adopted  34ARX L XREF=I
+                     36AR(P,T)--->I  I     34AR  L 7072      8                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 7276      2                                                            
+ LEVEL************************************ 34AR  L 7276      2                                                             --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=G(7300*)I
-                     *new XREF old tags    34ARX L XREF=A(7300*)B
-                    32S(3HE,N)--->G  A(*)  34AR  L 7300      30                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B     34AR  L 7276      2                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF old tags    34ARX L XREF=G(7300*)I
+                     #old XREF in Adopted  34ARX L XREF=G(7300*)I
+                    32S(3HE,N)--->G  G(*)  34AR  L 7300      30                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     36AR(P,T)--->I  I     34AR  L 7276      2                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 7322      6 2+                                                          --- possible JPI=2+
-                     *new XREF new tags    34ARX L XREF=G(7300*)I(7340)
-                     *new XREF old tags    34ARX L XREF=A(7300*)B(7340)
-                     #old XREF in Adopted  34ARX L XREF=AB
-                    32S(3HE,N)--->G  A(*)  34AR  L 7300      30                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B     34AR  L 7340      11                                  2                         *** possible JPI=2+
-                     36AR(P,T)--->I  B     34AR cL E$unweighted average of 7340 {I50} (1969Br21), 7322 {I6} (1972Pa02),   
-                     36AR(P,T)--->I  B     34AR2cL and 7358 {I4} (2018Lo11).
+ LEVEL************************************ 34AR  L 7340      11 2+                                                         --- possible JPI=2+
+                     *new XREF new tags    34ARX L XREF=G(7300*)I
+                     *new XREF old tags    34ARX L XREF=G(7300*)I
+                     #old XREF in Adopted  34ARX L XREF=G(7300*)I(7340)
+                    32S(3HE,N)--->G  G(*)  34AR  L 7300      30                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     36AR(P,T)--->I  I     34AR  L 7340      11                                  2                         *** possible JPI=2+
+                     36AR(P,T)--->I  I     34AR cL E$unweighted average of 7340 {I50} (1969Br21), 7322 {I6} (1972Pa02),   
+                     36AR(P,T)--->I  I     34AR2cL and 7358 {I4} (2018Lo11).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 7499      4 (2+)                                                        --- possible JPI=(2+)
+ LEVEL************************************ 34AR  L 7502      16 (2+)                                                       --- possible JPI=(2+)
                      *new XREF new tags    34ARX L XREF=I
-                     *new XREF old tags    34ARX L XREF=B
-                     #old XREF in Adopted  34ARX L XREF=B
-                     36AR(P,T)--->I  B     34AR  L 7502      16                                  (2)                       *** possible JPI=(2+)
-                     36AR(P,T)--->I  B     34AR cL E$unweighted average of 7530 {I50} (1969Br21), 7499 {I4} (1972Pa02),   
-                     36AR(P,T)--->I  B     34AR2cL and 7476 {I2} (2018Lo11).
+                     *new XREF old tags    34ARX L XREF=I
+                     #old XREF in Adopted  34ARX L XREF=I
+                     36AR(P,T)--->I  I     34AR  L 7502      16                                  (2)                       *** possible JPI=(2+)
+                     36AR(P,T)--->I  I     34AR cL E$unweighted average of 7530 {I50} (1969Br21), 7499 {I4} (1972Pa02),   
+                     36AR(P,T)--->I  I     34AR2cL and 7476 {I2} (2018Lo11).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 7925       5                                                            --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+ LEVEL************************************ 34AR  L 7921      18                                                            --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=I
-                     *new XREF old tags    34ARX L XREF=B
-                     #old XREF in Adopted  34ARX L XREF=B
-                     36AR(P,T)--->I  B     34AR  L 7921      18                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
-                     36AR(P,T)--->I  B     34AR cL E$unweighted average of 7950 {I50} (1969Br21), 7925 {I5} (1972Pa02),   
-                     36AR(P,T)--->I  B     34AR2cL and 7889 {I2} (2018Lo11).
+                     *new XREF old tags    34ARX L XREF=I
+                     #old XREF in Adopted  34ARX L XREF=I
+                     36AR(P,T)--->I  I     34AR  L 7921      18                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     36AR(P,T)--->I  I     34AR cL E$unweighted average of 7950 {I50} (1969Br21), 7925 {I5} (1972Pa02),   
+                     36AR(P,T)--->I  I     34AR2cL and 7889 {I2} (2018Lo11).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 8166      3                                                            
+ LEVEL************************************ 34AR  L 8166      3                                                             --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=I
-                     *new XREF old tags    34ARX L XREF=B
-                     36AR(P,T)--->I  B     34AR  L 8166      3                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF old tags    34ARX L XREF=I
+                     #old XREF in Adopted  34ARX L XREF=I
+                     36AR(P,T)--->I  I     34AR  L 8166      3                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 8660      9                                                            
+ LEVEL************************************ 34AR  L 8660      9                                                             --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=I
-                     *new XREF old tags    34ARX L XREF=B
-                     36AR(P,T)--->I  B     34AR  L 8660      9                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF old tags    34ARX L XREF=I
+                     #old XREF in Adopted  34ARX L XREF=I
+                     36AR(P,T)--->I  I     34AR  L 8660      9                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 8746      8                                                            
+ LEVEL************************************ 34AR  L 8746      8                                                             --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=I
-                     *new XREF old tags    34ARX L XREF=B
-                     36AR(P,T)--->I  B     34AR  L 8746      8                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF old tags    34ARX L XREF=I
+                     #old XREF in Adopted  34ARX L XREF=I
+                     36AR(P,T)--->I  I     34AR  L 8746      8                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 8899      8                                                            
+ LEVEL************************************ 34AR  L 8899      8                                                             --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=I
-                     *new XREF old tags    34ARX L XREF=B
-                     36AR(P,T)--->I  B     34AR  L 8899      8                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF old tags    34ARX L XREF=I
+                     #old XREF in Adopted  34ARX L XREF=I
+                     36AR(P,T)--->I  I     34AR  L 8899      8                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 9004      4                                                            
+ LEVEL************************************ 34AR  L 9004      4                                                             --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=I
-                     *new XREF old tags    34ARX L XREF=B
-                     36AR(P,T)--->I  B     34AR  L 9004      4                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF old tags    34ARX L XREF=I
+                     #old XREF in Adopted  34ARX L XREF=I
+                     36AR(P,T)--->I  I     34AR  L 9004      4                                                             *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 9148      22                                                           
+ LEVEL************************************ 34AR  L 9148      22                                                            --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=I
-                     *new XREF old tags    34ARX L XREF=B
-                     36AR(P,T)--->I  B     34AR  L 9148      22                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF old tags    34ARX L XREF=I
+                     #old XREF in Adopted  34ARX L XREF=I
+                     36AR(P,T)--->I  I     34AR  L 9148      22                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 9226      18                                                           
+ LEVEL************************************ 34AR  L 9226      18                                                            --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=I
-                     *new XREF old tags    34ARX L XREF=B
-                     36AR(P,T)--->I  B     34AR  L 9226      18                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF old tags    34ARX L XREF=I
+                     #old XREF in Adopted  34ARX L XREF=I
+                     36AR(P,T)--->I  I     34AR  L 9226      18                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 9549      16                                                           
+ LEVEL************************************ 34AR  L 9549      16                                                            --- possible JPI=(0+,1-,2+,3-,4+,5-,6+)
                      *new XREF new tags    34ARX L XREF=I
-                     *new XREF old tags    34ARX L XREF=B
-                     36AR(P,T)--->I  B     34AR  L 9549      16                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
+                     *new XREF old tags    34ARX L XREF=I
+                     #old XREF in Adopted  34ARX L XREF=I
+                     36AR(P,T)--->I  I     34AR  L 9549      16                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 11092     85 (2+,4+)                          (2,4)                    
+ LEVEL************************************ 34AR  L 1.109E4   9  (2+,4+)                                                    ---
                      *new XREF new tags    34ARX L XREF=E
-                     *new XREF old tags    34ARX L XREF=?2
-         4HE(30S,A):RESONANCES--->E  ?2    34AR  L 11092     85 (2+,4+)                          (2,4)                    
-         4HE(30S,A):RESONANCES--->E  ?2    34AR cL $E{-c.m.}=4353 keV. For J|p=2+, |G{-|a}=20 keV {I+80-17}, |G{-p}=25 keV
-         4HE(30S,A):RESONANCES--->E  ?2    34AR2cL {I+500-20}. |w|g(|a,p)=100 keV. For J|p=4+, |G{-|a}=0.5 keV {I+14-4},  
-         4HE(30S,A):RESONANCES--->E  ?2    34AR3cL |G{-p}=0.3 keV {I+35-3}.                                               
+                     *new XREF old tags    34ARX L XREF=E
+                     #old XREF in Adopted  34ARX L XREF=E
+         4HE(30S,A):RESONANCES--->E  E     34AR  L 11092     85 (2+,4+)                          (2,4)                    
+         4HE(30S,A):RESONANCES--->E  E     34AR cL $E{-c.m.}=4353 keV. For J|p=2+, |G{-|a}=20 keV {I+80-17}, |G{-p}=25 keV
+         4HE(30S,A):RESONANCES--->E  E     34AR2cL {I+500-20}. |w|g(|a,p)=100 keV. For J|p=4+, |G{-|a}=0.5 keV {I+14-4},  
+         4HE(30S,A):RESONANCES--->E  E     34AR3cL |G{-p}=0.3 keV {I+35-3}.                                               
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 11518     89 (2+)                             (2)                      
+ LEVEL************************************ 34AR  L 1.152E4   9  (2+)                                                       ---
                      *new XREF new tags    34ARX L XREF=E
-                     *new XREF old tags    34ARX L XREF=?2
-         4HE(30S,A):RESONANCES--->E  ?2    34AR  L 11518     89 (2+)                             (2)                      
-         4HE(30S,A):RESONANCES--->E  ?2    34AR cL $E{-c.m.}=4779 keV. |G{-|a}=100 keV {I+120-60}, |G{-p}=210 keV         
-         4HE(30S,A):RESONANCES--->E  ?2    34AR2cL {I+600-170}. |w|g(|a,p)=500 keV.                                       
+                     *new XREF old tags    34ARX L XREF=E
+                     #old XREF in Adopted  34ARX L XREF=E
+         4HE(30S,A):RESONANCES--->E  E     34AR  L 11518     89 (2+)                             (2)                      
+         4HE(30S,A):RESONANCES--->E  E     34AR cL $E{-c.m.}=4779 keV. |G{-|a}=100 keV {I+120-60}, |G{-p}=210 keV         
+         4HE(30S,A):RESONANCES--->E  E     34AR2cL {I+600-170}. |w|g(|a,p)=500 keV.                                       
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AR  L 12079     95 (2+)                             (2)                      
+ LEVEL************************************ 34AR  L 1.208E4   10 (2+)                                                       ---
                      *new XREF new tags    34ARX L XREF=E
-                     *new XREF old tags    34ARX L XREF=?2
-         4HE(30S,A):RESONANCES--->E  ?2    34AR  L 12079     95 (2+)                             (2)                      
-         4HE(30S,A):RESONANCES--->E  ?2    34AR cL $E{-c.m.}=5340 keV. |G{-|a}=260 keV {I+400-120}, |G{-p}=340 keV        
-         4HE(30S,A):RESONANCES--->E  ?2    34AR2cL {I+550-200}. |w|g(|a,p)=1300 keV.                                      
+                     *new XREF old tags    34ARX L XREF=E
+                     #old XREF in Adopted  34ARX L XREF=E
+         4HE(30S,A):RESONANCES--->E  E     34AR  L 12079     95 (2+)                             (2)                      
+         4HE(30S,A):RESONANCES--->E  E     34AR cL $E{-c.m.}=5340 keV. |G{-|a}=260 keV {I+400-120}, |G{-p}=340 keV        
+         4HE(30S,A):RESONANCES--->E  E     34AR2cL {I+550-200}. |w|g(|a,p)=1300 keV.                                      
 
 
 Statistics of levels and gammas from all datasets of 34AR:
                              DSID     #of levels       #of gammas       level range
-           ADOPTED LEVELS, GAMMAS        22               17            0          to       7925
+           ADOPTED LEVELS, GAMMAS        42               26            0.0        to    1.208E4
          35CA ECP DECAY (25.7 MS)        4                0             0          to       3873
                       1H(34AR,P')        3                0             0          to      4.5E3
                       1H(35CL,2N)        1                0             0.0
@@ -546,7 +546,7 @@ Statistics of levels and gammas from all datasets of 34AR:
                         36AR(P,T)        33               0             0          to       9549
                COULOMB EXCITATION        2                1             0.0        to       2091
 
-                         IN TOTAL        112              58            0          to      12079
+                         IN TOTAL        132              67            0.0        to    1.208E4
 
 
 
@@ -554,12 +554,12 @@ Statistics of levels and gammas from all datasets of 34AR:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                   34AR        22           17           112          58             715              10
+                   34AR        42           26           132          67             834              10
 
-               IN TOTAL        22           17           112          58             715              10
+               IN TOTAL        42           26           132          67             834              10
 
 Number of nuclides     : 1
 Number of blocks       : 11
-Number of references   : 57
-Number of lines in files: 726
+Number of references   : 55
+Number of lines in files: 845
 (from all blocks including abstract, comment, reference)

@@ -1,12 +1,28 @@
 Program for consistency check: output for XREF Warnings only (version 11/22/2025)
-Generated at: Mon 12/01/2025 at 10:11:35 PM EST
+Generated at: Wed 12/03/2025 at 11:10:40 PM EST
 
 
 ################################################################################
-In dataset of 34AR: XD 1H(34AR,P')     XREF Tag=D
+In dataset of 34AR: XG 32S(3HE,N)     XREF Tag=G
 
- 34AR  L 4.5E3     2  3-                                                        
+ 34AR  L 7300      30                                                           
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 4513.2     8 3-                  XREF=ABDE
-                                                                                      #  4631       4                     XREF=BE
-                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=D
+                                                                                       @ 7276       2                     XREF=G(7300*)I
+                                                                                       @ 7340      11 2+                  XREF=G(7300*)I(7340)
+
+################################################################################
+In dataset of 34AR: XH 32S(3HE,NG)     XREF Tag=H
+
+ 34AR  L 4967      4                                                        G   
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                      #  4967       4 2(-)                XREF=F
+                                                                                       @ 4963.7    13 0+                  XREF=FG(4950)H(4967)I
+                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=H
+
+################################################################################
+In dataset of 34AR: XI 36AR(P,T)     XREF Tag=I
+
+ 34AR  L 4875.3    38                                                           
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 4870       5                     XREF=HI
+                                                                                       @ 4881.4    12 2+                  XREF=FI
