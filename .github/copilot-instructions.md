@@ -717,46 +717,6 @@ Common corrections:
 
 ---
 
-
-### Averaging Tool Workflow
-
-**CLI Tool:** `python .github/Java_Average.py VALUE1 UNC1 [VALUE2 UNC2 ...]`
-
-This Python script replicates the exact algorithm from AverageTool_22January2025.jar:
-- Variance formula: V = (dxp+dxm)²/4 + 0.3633802276324186*(dxp-dxm)²
-- χ² test at 95% confidence → weighted or unweighted
-- Ensures uncertainty ≥ minimum input uncertainty
-
-**Workflow:**
-1. Collect all measurements with uncertainties
-2. Run: `python .github/Java_Average.py 280 50 215 70 130 60 120 65`
-3. Use EXACT "Suggested Adopted Result" from output
-4. Apply to ENSDF record with proper formatting
-
-### Critical Averaging Rule: One Value Per Paper
-
-**MANDATORY:** When averaging, use **ONE value per original paper**, NOT one value per method.
-
-- If a paper reports multiple values using different methods, select the **best value** recommended from that paper
-- For lower limits: adopt the **largest limit** (best constraint)
-- For upper limits: adopt the **smallest limit** (best constraint)
-- NEVER list multiple values from the same paper in an average
-- Dataset adopted values may differ from original paper values — always trace back to original papers
-
-
-### Java Averaging Result Rules
-
-When user provides ENSDF utility Java code averaging output:
-
-1. **Use EXACT Java "Suggested Adopted Result"** - NEVER recalculate or substitute
-2. **Use EXACT uncertainty** - Java applies "uncertainty ≥ any input uncertainty" rule
-3. **Check weighted vs unweighted** - Use whichever Java suggests in comments
-4. **Transcribe character-for-character** - No rounding or "improving"
-
-**FORBIDDEN:** Recalculating, using different uncertainty, substituting weighted/unweighted
-
----
-
 ## Document Structure
 
 This document is organized as follows:
@@ -768,5 +728,4 @@ This document is organized as follows:
 4. ENSDF File Editing Workflow: File protection rules, mandatory edit-validate-repeat workflow, validation tools (before, during, and after editing), output interpretation guidelines, editing methodology, and tools and workflows
 5. CSV and Tabular Data Processing: AI frequent failure patterns to avoid, mandatory verification protocol, critical validation steps, example failure prevention, and random spot-check validation
 6. Academic Standards: Professional English grammar and general comment ordering for adopted.ens files
-7. Java Averaging Code Rules: Mandatory rules for using Java averaging results, forbidden behaviors, and rationale
 
