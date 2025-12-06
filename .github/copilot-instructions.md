@@ -494,7 +494,7 @@ print('Length:', len(header))
 The Sacred Workflow (MUST Follow for Every Single Edit):
 ```
 1. EDIT   → Make ONE precise change to ONE field
-2. VALIDATE → Run ruler on that exact line: python .github/ensdf_1line_ruler.py --line "your 80-char line"
+2. VALIDATE → Run ruler on that exact line: python .github/scripts/ensdf_1line_ruler.py --line "your 80-char line"
 3. CONFIRM → Verify exit code 0, check ruler output
 4. REPEAT → Move to next edit only after confirmation
 ```
@@ -509,12 +509,12 @@ Forbidden Behaviors:
 
 #### Before Any Edit
 
-1. Run `python .github/column_calibrate.py "filename.ens"` (MANDATORY)
+1. Run `python .github/scripts/column_calibrate.py "filename.ens"` (MANDATORY)
    - Validates L-field positioning (column 56), S-field left-justification (columns 65-74)
    - Verifies comment flags at column 77
    - Reports data-record line-length issues (L/G/E/B/DP records)
    
-2. Run `python .github/check_gamma_ordering.py "filename.ens"` (MANDATORY)
+2. Run `python .github/scripts/check_gamma_ordering.py "filename.ens"` (MANDATORY)
    - Verifies ascending energy order for L-records and G-records
    
 3. Manual verification: column_calibrate.py does NOT check DP, B, or E record formatting
@@ -524,7 +524,7 @@ Forbidden Behaviors:
 
 #### During Each Edit
 
-Run ruler for each changed line: `python .github/ensdf_1line_ruler.py --line "your 80-char line"`
+Run ruler for each changed line: `python .github/scripts/ensdf_1line_ruler.py --line "your 80-char line"`
 - MANDATORY for every line you edit
 - Immediate visual ruler, length, and field validation
 - Must verify exit code 0 before proceeding to next edit
@@ -536,18 +536,18 @@ Repeat validation sequence (steps 1-2 from Before Any Edit section)
 ### ENSDF 1-Line Ruler Tool
 
 Usage Modes:
-- Single line check: `python .github/ensdf_1line_ruler.py --line "your exact 80-char line"`  
+- Single line check: `python .github/scripts/ensdf_1line_ruler.py --line "your exact 80-char line"`  
   - Quick ruler display, length check, immediate validation feedback
   - USE THIS for every line you edit (essential AI workflow step)
   
-- File scan: `python .github/ensdf_1line_ruler.py --file path/to/file.ens [--show-only-wrong]`  
+- File scan: `python .github/scripts/ensdf_1line_ruler.py --file path/to/file.ens [--show-only-wrong]`  
   - Checks all data records (L, G, E, B, DP records); exit code 1 if any errors found
   - Use `--show-only-wrong` to quickly identify problem lines only
 
 ### Column Calibration Tool (column_calibrate.py)
 
 Comprehensive ENSDF field validation and data-record line-length checking:
-- Basic validation: `python .github/column_calibrate.py "file.ens"`
+- Basic validation: `python .github/scripts/column_calibrate.py "file.ens"`
   - Prints 80-column ruler with field boundaries
   - Checks field positioning and reports line-length issues
   
@@ -562,8 +562,8 @@ Comprehensive ENSDF field validation and data-record line-length checking:
 ### Energy Ordering Tool (check_gamma_ordering.py)
 
 Validates ascending energy order for L-records and G-records:
-- Basic check: `python .github/check_gamma_ordering.py "file.ens"`
-- Multiple files: `python .github/check_gamma_ordering.py "A35/K35/new/*.ens" --summary`
+- Basic check: `python .github/scripts/check_gamma_ordering.py "file.ens"`
+- Multiple files: `python .github/scripts/check_gamma_ordering.py "A35/K35/new/*.ens" --summary`
 - Verbose output: Add `--verbose` flag for detailed checking process
 - Exit codes: 0 = correct ordering; 1 = ordering violations found
 
@@ -594,29 +594,29 @@ ERROR indicators:
 #### Java Format Check
 
 ```bash
-python Java_FormatCheck.py Cl35_34s_p_g.ens
+python .github/scripts/Java_FormatCheck.py Cl35_34s_p_g.ens
 ```
 
 #### Run Java Program via Python Script
 
 ```bash
 # Convert single file by name
-python ens2pdf.py Si35_adopted
+python .github/scripts/ens2pdf.py Si35_adopted
 
 # Convert with full file path
-python ens2pdf.py "finished/Si35/new/Si35_adopted.ens"
+python .github/scripts/ens2pdf.py "finished/Si35/new/Si35_adopted.ens"
 
 # Convert all files for an element
-python ens2pdf.py Si
+python .github/scripts/ens2pdf.py Si
 
 # Convert files matching pattern
-python ens2pdf.py "Si35_*sig"
+python .github/scripts/ens2pdf.py "Si35_*sig"
 
 # Convert and open in VS Code (default)
-python ens2pdf.py Si35_adopted --open
+python .github/scripts/ens2pdf.py Si35_adopted --open
 
 # Convert and open in system viewer
-python ens2pdf.py Si35_adopted --open --system
+python .github/scripts/ens2pdf.py Si35_adopted --open --system
 ```
 
 #### PDF Generation
