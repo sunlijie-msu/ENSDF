@@ -131,7 +131,7 @@ In inelastic scattering, the target nucleus is excited to a higher energy state.
 
 When you run the code:
 ```bash
-python angular_momentum_coupling.py 3/2- 1/2+
+python .github/scripts/angular_momentum_coupling.py 3/2- 1/2+
 ```
 
 You receive output like:

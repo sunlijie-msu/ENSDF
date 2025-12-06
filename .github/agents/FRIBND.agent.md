@@ -72,13 +72,13 @@ Follow these protocols without exception:
 ### Mandatory Pre-Action Checklist
 
 BEFORE creating ANY new file, script, or major operation:
-1. Check: Does `column_calibrate.py`, `ensdf_1line_ruler.py`, `check_gamma_ordering.py`, or other existing tools already handle this?
+1. Check: Does `.github/scripts/column_calibrate.py`, `.github/scripts/ensdf_1line_ruler.py`, `.github/scripts/check_gamma_ordering.py`, or other existing tools already handle this?
 2. If YES: Adapt existing tool, do NOT create new script
 3. If NO: Create new script following all rules below
 4. Verify: Output location is `.github/temp` (never in ENSDF root directory or in new/old/raw folders)
 
 ### Script Management Rules
-* USE EXISTING ENSDF 80-column Validation Tools: Always use and revise if needed `column_calibrate.py` and `ensdf_1line_ruler.py` and `check_gamma_ordering.py` for any ENSDF file format validation
+* USE EXISTING ENSDF 80-column Validation Tools: Always use and revise if needed `.github/scripts/column_calibrate.py` and `.github/scripts/ensdf_1line_ruler.py` and `.github/scripts/check_gamma_ordering.py` for any ENSDF file format validation
 * AVOID creating spaghetti or redundant scripts: check existing functionality first (e.g., verify_*, check_*, analyze_*, compare_*). CONSOLIDATE functionality into existing scripts rather than creating duplicate scripts
 * CREATE SCRIPTS IN `.github/temp` FOLDER ONLY
 * NEVER create scripts, temporary text files, markdown files, report files, or new ens files in user in ENSDF root directory or in new/old/raw folders: maintain clean workspace organization
@@ -122,11 +122,11 @@ Each field begins at prescribed columns and has fixed widths, and the content in
 ### Mandatory Edit-Validate-Repeat Workflow
 
 CRITICAL AI WORKFLOW STEP: Execute ENSDF 1-line ruler for immediate 80-column validation:
-* Single line: `python .github/ensdf_1line_ruler.py --line "your 80-char line"`
-* File scan: `python .github/ensdf_1line_ruler.py --file "filename.ens" --show-only-wrong`
+* Single line: `python .github/scripts/ensdf_1line_ruler.py --line "your 80-char line"`
+* File scan: `python .github/scripts/ensdf_1line_ruler.py --file "filename.ens" --show-only-wrong`
 * MANDATORY USAGE: Before editing, during editing for each line, and after editing. Skip ruler and column validation if the task is purely editing comments.
 * Execute column validation on the current ENSDF file:
-  * Python: `python .github/column_calibrate.py "currentfile.ens"` (comprehensive validation always)
+  * Python: `python .github/scripts/column_calibrate.py "currentfile.ens"` (comprehensive validation always)
 
 AI Behavior Rule: Never claim edit completion without ruler and column validation.
 Skip ruler and column validation if the task is purely editing comments.
@@ -134,7 +134,7 @@ Skip ruler and column validation if the task is purely editing comments.
 ##### The Sacred Workflow (must follow for every single edit):
 ```
 1. EDIT   -> Make ONE precise change to ONE field
-2. VALIDATE -> Run ruler on that exact line: python .github/ensdf_1line_ruler.py --line "your 80-char line"
+2. VALIDATE -> Run ruler on that exact line: python .github/scripts/ensdf_1line_ruler.py --line "your 80-char line"
 3. CONFIRM -> Verify exit code 0, check ruler output
 4. REPEAT -> Move to next edit only after confirmation
 ```
@@ -148,7 +148,7 @@ Skip ruler and column validation if the task is purely editing comments.
 #### Correct Example
 ```
 Step 1: Edit line 88 (change G 883 spacing)
-Step 2: python .github/ensdf_1line_ruler.py --line " 35CL  G 883           3.2     2"
+Step 2: python .github/scripts/ensdf_1line_ruler.py --line " 35CL  G 883           3.2     2"
 Step 3: Confirm exit code 0 [OK]
 Step 4: Now edit line 99 (not before!)
 ```
@@ -167,7 +167,7 @@ X Then validate <- TOO LATE! File corrupted!
 
 * ALWAYS read entire file structure first: Never edit blindly
 * SINGLE FIELD EDITS ONLY: Never edit multiple fields in one operation
-* USE RULER FOR EVERY EDIT: `python .github/ensdf_1line_ruler.py --line "line"` for each changed line
+* USE RULER FOR EVERY EDIT: `python .github/scripts/ensdf_1line_ruler.py --line "line"` for each changed line
 * VALIDATE AFTER EVERY EDIT: Check file structure integrity immediately
 
 
