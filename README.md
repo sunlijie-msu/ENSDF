@@ -21,34 +21,34 @@ This repository contains the datasets being evaluated by the FRIB Nuclear Data G
 ### XUNDL Data Files
 - **XUNDL submodule**: eXperimental Unevaluated Nuclear Data List (private repository)
 
-## AI & Validation Infrastructure (.github/)
+## AI-Native Development Infrastructure (`.github/`)
 
-This repository hosts the FRIB Nuclear Data Center's advanced AI-assisted evaluation workflow. The `.github` directory contains the core infrastructure for this system.
+This repository implements the **Agentic Primitives** framework to ensure reliable, reproducible AI-assisted evaluation. It structures the AI workflow into three distinct layers:
 
-### 1. Validation Scripts (`.github/scripts/`)
-Python-based tools for ensuring strict adherence to ENSDF formatting rules.
-- **`column_calibrate.py`**: The primary validator for ENSDF 80-column format (L/G/E/B/DP records).
-- **`check_gamma_ordering.py`**: Enforces ascending energy ordering for levels and gammas.
-- **`ensdf_1line_ruler.py`**: A visual debugging tool for checking single-line alignment.
-- **`angular_momentum_coupling.py`**: Calculates allowed final spins/parities based on conservation laws.
-- **`ens2pdf.py`**: Wrapper for the Java-based ENSDF-to-PDF converter.
-- **`Java_FormatCheck.py`**: Wrapper for the Java-based format checker.
-- **`update_headers.py`**: Utility for batch updating ENSDF headers.
+### 1. Agent Primitives
+- **Custom Agents (`.github/agents/`)**:
+  - **`FRIBND.agent.md`**: The specialized "FRIB Nuclear Data" agent. This defines the expert role, enforces tool boundaries, and encodes the "Sacred Workflow" for ENSDF evaluation.
+- **Instructions (`.github/copilot-instructions.md`)**:
+  - Global repository rules and ENSDF formatting standards that apply to all interactions.
+- **Agentic Workflows (`.github/prompts/`)**:
+  - Reusable `.prompt.md` files for specific tasks:
+    - **`average.prompt.md`**: Weighted/unweighted average calculations.
+    - **`spin_parity.prompt.md`**: J-pi assignment logic.
+    - **`reaction_equations.prompt.md`**: Formatting nuclear reactions.
+    - **`large_scale_data_entry.prompt.md`**: Bulk data extraction workflows.
 
-### 2. AI Custom Agents (`.github/agents/`)
-Definitions for specialized AI agents designed to assist evaluators.
-- **`FRIBND.agent.md`**: The master definition for the FRIB Nuclear Data agent, encoding the "Sacred Workflow" and expert knowledge.
+### 2. Context Engineering (`.github/docs/`)
+Strategic context loading to ground the AI in physics theory and project rules.
+- **`angular_momentum_coupling.md`**: Theoretical basis for the coupling tool.
+- **`copilot-instructions.pdf`**: Reference manual.
 
-### 3. Task Prompts (`.github/prompts/`)
-Specialized prompt templates for specific, repeatable end-to-end tasks.
-- **`average.prompt.md`**: For calculating weighted/unweighted averages.
-- **`spin_parity.prompt.md`**: For J-pi assignment arguments.
-- **`reaction_equations.prompt.md`**: For formatting nuclear reaction strings.
-- **`large_scale_data_entry.prompt.md`**: For bulk data extraction and formatting.
-
-### 4. Documentation (`.github/docs/`)
-- **`copilot-instructions.md`**: The core rulebook for AI interactions (located in root of .github).
-- **`angular_momentum_coupling.md`**: Theoretical background for the coupling tool.
+### 3. Tooling Infrastructure (`.github/scripts/`)
+Python-based validation tools that serve as the "hands" of the agents.
+- **`column_calibrate.py`**: The primary validator for ENSDF 80-column format.
+- **`check_gamma_ordering.py`**: Enforces ascending energy ordering.
+- **`angular_momentum_coupling.py`**: Physics calculation engine.
+- **`ensdf_1line_ruler.py`**: Visual debugging tool.
+- **`ens2pdf.py`**: Java-based PDF conversion wrapper.
 
 ## Repository Architecture
 ```
@@ -60,12 +60,12 @@ Specialized prompt templates for specific, repeatable end-to-end tasks.
 ├── A36/[Element]36/        # A=36 mass chain evaluation files
 ├── A60/[Element]60/        # A=60 mass chain evaluation files
 ├── XUNDL/                  # Unevaluated data (Git submodule → private repository)
-├── .github/                # AI & Validation Infrastructure
-│   ├── agents/             # AI Agent definitions (FRIBND.agent.md)
-│   ├── docs/               # Documentation (PDFs, Guides)
-│   ├── prompts/            # Task-specific prompt templates
-│   ├── scripts/            # Python validation tools
-│   └── copilot-instructions.md   # Core AI instructions
+├── .github/                # AI-Native Development Infrastructure
+│   ├── agents/             # Custom Agents (FRIBND.agent.md)
+│   ├── docs/               # Context Engineering (Theory & Manuals)
+│   ├── prompts/            # Agentic Workflows (.prompt.md)
+│   ├── scripts/            # Tooling Infrastructure (Python validators)
+│   └── copilot-instructions.md   # Global Instructions
 └── .gitmodules             # Git submodule configuration
 ```
 
