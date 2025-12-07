@@ -21,18 +21,34 @@ This repository contains the datasets being evaluated by the FRIB Nuclear Data G
 ### XUNDL Data Files
 - **XUNDL submodule**: eXperimental Unevaluated Nuclear Data List (private repository)
 
-### Processing Tools
-- **`.github/scripts/ens2pdf.py`**: Converts ENSDF files to PDF format using Java conversion tool
-- **`.github/scripts/angular_momentum_coupling.py`**: Calculates allowed final nuclear states based on angular momentum and parity conservation rules
-- **`.github/docs/angular_momentum_coupling.md`**: Documentation and theoretical guide for the coupling tool
-- **`.github/scripts/column_calibrate.py`**: Validates ENSDF 80-column format (L/G/E/B/DP records)
-- **`.github/scripts/check_gamma_ordering.py`**: Verifies ascending energy order for L-records and G-records
-- **`.github/scripts/check_averages.py`**: Verifies weighted vs unweighted average calculations
-- **`.github/scripts/ensdf_1line_ruler.py`**: Quick single-line or file validation with visual ruler display
-- **`.github/copilot-instructions.md`**: AI agent instructions for ENSDF formatting compliance
+## AI & Validation Infrastructure (.github/)
 
+This repository hosts the FRIB Nuclear Data Center's advanced AI-assisted evaluation workflow. The `.github` directory contains the core infrastructure for this system.
 
+### 1. Validation Scripts (`.github/scripts/`)
+Python-based tools for ensuring strict adherence to ENSDF formatting rules.
+- **`column_calibrate.py`**: The primary validator for ENSDF 80-column format (L/G/E/B/DP records).
+- **`check_gamma_ordering.py`**: Enforces ascending energy ordering for levels and gammas.
+- **`ensdf_1line_ruler.py`**: A visual debugging tool for checking single-line alignment.
+- **`angular_momentum_coupling.py`**: Calculates allowed final spins/parities based on conservation laws.
+- **`ens2pdf.py`**: Wrapper for the Java-based ENSDF-to-PDF converter.
+- **`Java_FormatCheck.py`**: Wrapper for the Java-based format checker.
+- **`update_headers.py`**: Utility for batch updating ENSDF headers.
 
+### 2. AI Custom Agents (`.github/agents/`)
+Definitions for specialized AI agents designed to assist evaluators.
+- **`FRIBND.agent.md`**: The master definition for the FRIB Nuclear Data agent, encoding the "Sacred Workflow" and expert knowledge.
+
+### 3. Task Prompts (`.github/prompts/`)
+Specialized prompt templates for specific, repeatable end-to-end tasks.
+- **`average.prompt.md`**: For calculating weighted/unweighted averages.
+- **`spin_parity.prompt.md`**: For J-pi assignment arguments.
+- **`reaction_equations.prompt.md`**: For formatting nuclear reaction strings.
+- **`large_scale_data_entry.prompt.md`**: For bulk data extraction and formatting.
+
+### 4. Documentation (`.github/docs/`)
+- **`copilot-instructions.md`**: The core rulebook for AI interactions (located in root of .github).
+- **`angular_momentum_coupling.md`**: Theoretical background for the coupling tool.
 
 ## Repository Architecture
 ```
@@ -44,15 +60,12 @@ This repository contains the datasets being evaluated by the FRIB Nuclear Data G
 ├── A36/[Element]36/        # A=36 mass chain evaluation files
 ├── A60/[Element]60/        # A=60 mass chain evaluation files
 ├── XUNDL/                  # Unevaluated data (Git submodule → private repository)
-├── .github/                # Validation scripts and AI agent instructions
-│   ├── scripts/            # Python automation and validation scripts
-│   │   ├── column_calibrate.py
-│   │   ├── check_gamma_ordering.py
-│   │   ├── ensdf_1line_ruler.py
-│   │   ├── check_averages.py
-│   │   └── ens2pdf.py
-│   ├── docs/               # Documentation and guides
-│   └── copilot-instructions.md   # ENSDF AI agent rules and workflows
+├── .github/                # AI & Validation Infrastructure
+│   ├── agents/             # AI Agent definitions (FRIBND.agent.md)
+│   ├── docs/               # Documentation (PDFs, Guides)
+│   ├── prompts/            # Task-specific prompt templates
+│   ├── scripts/            # Python validation tools
+│   └── copilot-instructions.md   # Core AI instructions
 └── .gitmodules             # Git submodule configuration
 ```
 
