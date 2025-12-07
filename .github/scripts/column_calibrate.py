@@ -426,6 +426,18 @@ def validate_s_field(filename):
                     print(f"[OK] OK: DS field '{ds_field}' correctly contains uncertainty")
                 
                 print()
+            else:
+                # S field is empty or non-numeric. DS field should be empty.
+                # Check if DS field contains a letter (misplaced flag)
+                if len(line_content) >= 76:
+                    ds_field = line_content[74:76]
+                    ds_stripped = ds_field.strip()
+                    if ds_stripped and ds_stripped[0].isalpha():
+                         print(f"[ERROR] Line {line_num}: Misplaced flag in DS field (columns 75-76)")
+                         print(f"   Found '{ds_stripped}' in DS field. Should be in Flag field (column 77)")
+                         print(f"   Line: {line_content}")
+                         ds_field_errors += 1
+                         print()
     
     # DS Summary
     print(f"DS FIELD SUMMARY:")
@@ -495,7 +507,17 @@ def validate_jp_field(filename):
                 jp_fields_analyzed += 1
                 
                 # Check if J-π field starts at column 23 (no leading space at index 22)
-                if line_content[22] != ' ':  # Column 23 (0-based index 22)
+                # AND check that column 22 (index 21) is a SPACE (no left shift)
+                col22_char = line_content[21] if len(line_content) > 21 else ' '
+                
+                if col22_char != ' ':
+                    print(f"[ERROR] Line {line_num:3d}: ERROR - J-π shifted left - column 22 contains '{col22_char}' (should be SPACE)")
+                    print(f"   Current position: starts at column 22 (or earlier)")
+                    print(f"   Required position: must start at column 23 (LEFT-JUSTIFIED)")
+                    print(f"   Line: {line_content}")
+                    jp_field_errors += 1
+                    print()
+                elif line_content[22] != ' ':  # Column 23 (0-based index 22)
                     print(f"[OK] Line {line_num:3d}: J-π='{jp_field_stripped}' correctly LEFT-JUSTIFIED at column 23")
                 else:
                     # J-π has leading space(s) - this is an error!
