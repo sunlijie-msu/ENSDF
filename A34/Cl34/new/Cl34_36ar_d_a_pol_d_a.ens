@@ -1,4 +1,4 @@
- 34CL    36AR(D,A),(POL D,A)           1969BR21,1972HO02,1982TA04ENSDF    202609
+ 34CL    36AR(D,A),(POL D,A)           1972HO02,1982TA04,1969BR21ENSDF    202609
  34CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34CL  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34CL2 H CUT=28-May-2012$                                                       
@@ -25,12 +25,15 @@
  34CL7c  counters to eliminate long-range particles. Measured |s(E{-|a},|q).    
  34CL8c  Deduced levels, L-transfers, J, |p, and isospin. Also measured         
  34CL9c  {+36}Ar(p,t){+34}Ar and {+36}Ar(p,{+3}He){+34}Cl.                      
- 35CL c  Others: Measured cross section of {+36}Ar(d,|a){+34m}Cl, E|<8.4 MeV    
- 35CL2c  (2011En01,2012En01)                                                    
+ 34CL c  Others: 2011En01 and 2012En01 measured cross section of                
+ 34CL2c  {+36}Ar(d,|a){+34m}Cl, E|<8.4 MeV.                                     
  34CL cL E$From 1972Ho02, unless otherwise noted.                               
  34CL cL J$Deduced from measured L values, unless otherwise noted.              
  34CL cL L$From DWUCK-DWBA analysis of the measured |s(|q) and |h{+2} versus    
  34CL2cL L+L' analysis in 1972Ho02, unless otherwise noted.                     
+ 34CL  L 0                                                                     ?
+ 34CL cL $Very weakly at all angles due to parity selection rule and isospin    
+ 34CL2cL selection rule of {+36}Ar(d,|a){+34}Cl.                                
  34CL  L 147       20 3+                               4                        
  34CL cL J$L-1 transfer from measured analyzing powers in 1982Ta04.             
  34CL cL L$4 from 1972Ho02 and 1982Ta04.                                        
@@ -47,27 +50,29 @@
  34CL2cL doublet in 1972Ho02.                                                   
  34CL  L 2191      20 3+                               (2)                      
  34CL cL J$L+1 transfer from measured analyzing powers in 1982Ta04.             
- 34CL cL L$from 1982Ta04; other: L=2+4 in 1972Ho02.                             
- 34CL  L 2382      20                                  0+2                      
- 34CL  L 2589      20 1+                               0+2                    
+ 34CL cL L$from 1982Ta04; other: L=2+4 or pure L=4 in 1972Ho02.                 
+ 34CL  L 2382      20 1+                               0+2                      
+ 34CL  L 2589      20 1+                               0+2                      
  34CL  L 2620      20                                                           
  34CL  L 2725      20 2-                               1+3                      
  34CL  L 3146      20 1+                               0+2                      
- 34CL  L 3334      20                                  3                        
+ 34CL  L 3334      20 2-,3-,4-                         3                        
  34CL cL E$other: 3330 {I40} (1969Br21)                                         
  34CL  L 3377      20                                                           
- 34CL  L 4970      40 (0)+                             0                        
- 34CL cL E$doublet of T=0 and 1. E(level) is likely determined from             
- 34CL2cL {+36}Ar(p,{+3}He){+34}Cl data (1969Br21). T=1 component corresponds to 
- 34CL3cL 0+.                                                                    
+ 34CL  L 4970      40                                                           
+ 34CL cL E$likely determined from {+36}Ar(p,{+3}He){+34}Cl (1969Br21).          
+ 34CL cL J$T=1 component should be populated in {+36}Ar(p,{+3}He){+34}Cl and    
+ 34CL2cL corresponds to L=0, J|p=0+ (1969Br21).                                 
+ 34CL cL $Observed in {+36}Ar(p,{+3}He){+34}Cl and in {+36}Ar(d,|a){+34}Cl and  
+ 34CL2cL should be a doublet of T=1 and T=0 (1969Br21).                         
  34CL  L 5600      40                                                           
- 34CL cL E$E(level) is likely determined from both {+36}Ar(d,|a){+34}Cl and     
+ 34CL cL E$likely determined from both {+36}Ar(d,|a){+34}Cl and                 
  34CL2cL {+36}Ar(p,{+3}He){+34}Cl data (1969Br21).                              
- 34CL  L 6160      40 (2)+                             2                        
- 34CL cL E$doublet of T=0 and 1. E(level) is likely determined from             
- 34CL2cL {+36}Ar(p,{+3}He){+34}Cl data (1969Br21). T=1 component corresponds to 
- 34CL3cL 2+.                                                                    
+ 34CL  L 6160      40                                                           
+ 34CL cL E$likely determined from {+36}Ar(p,{+3}He){+34}Cl (1969Br21).          
+ 34CL cL J$T=1 component should be populated in {+36}Ar(p,{+3}He){+34}Cl and    
+ 34CL2cL corresponds to L=2, J|p=2+ (1969Br21).                                 
+ 34CL cL $Observed in {+36}Ar(p,{+3}He){+34}Cl and in {+36}Ar(d,|a){+34}Cl and  
+ 34CL2cL should be a doublet of T=1 and T=0 (1969Br21).                         
  34CL  L 7070      40                                                           
- 34CL cL E$E(level) is likely determined from {+36}Ar(p,{+3}He){+34}Cl data     
- 34CL2cL (1969Br21).                                                            
-
+ 34CL cL E$likely determined from {+36}Ar(p,{+3}He){+34}Cl data (1969Br21).     
