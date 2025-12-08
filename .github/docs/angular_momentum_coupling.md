@@ -43,26 +43,24 @@ The code performs the vector addition in two steps (Channel Spin representation)
 
 To use the code correctly, you must identify the correct "Particle" input based on the reaction mechanism.
 
-### A. Resonance and Capture Reactions
-*Examples: (p, γ), (n, γ), (p, p')*
+### A. Resonant Capture Reactions
+
+Examples: $(p, \gamma)$, $(n, \gamma)$
 
 In these reactions, a projectile fuses with the target to form a compound nucleus (resonance).
-
-*   **Target Input**: Spin/Parity of the target nucleus.
-*   **Particle Input**: Spin/Parity of the **projectile**.
+*   **Particle Input**: `1/2+`
 
 ### B. Single-Nucleon Transfer Reactions
-*Examples:* $(d, p)$, $(p, d)$, $(^3\text{He}, d)$, $(\alpha, t)$
 
-In these reactions, a single nucleon is transferred between the projectile and the target. You must input the properties of the **transferred nucleon**, not the beam.
+Examples: $(d, p)$, $(p, d)$, $(^3\text{He}, d)$, $(d, ^3\text{He})$, $(n, d)$, $(d, n)$, $(d, t)$, $(t, d)$, $(\alpha, t)$, $(t, \alpha)$, $(^3\text{He}, \alpha)$, $(\alpha, ^3\text{He})$
 
-*   **Target Input**: Spin/Parity of the target nucleus.
-*   **Particle Input**: Spin/Parity of the **transferred nucleon** ($n$ or $p$).
+In these reactions, a single nucleon is transferred between the projectile and the target. You need to input the properties of the **transferred nucleon**.
+
+*   **Particle Input**: `1/2+`
 
 > **Note on j-transfer**: In transfer physics, we often discuss the transferred total angular momentum *j* (where $\vec{j} = \vec{\ell} + \vec{s}$). The code lists results by Channel Spin *S*. The set of allowed final $J^\pi$ values is identical regardless of the coupling order.
 
 ### C. Two-Nucleon Transfer Reactions
-*Examples:* $(p, t)$, $(t, p)$, $(^3\text{He}, n)$, $(\alpha, d)$
 
 In these reactions, a pair of nucleons is transferred. The total spin of this pair depends on the coupling of the two nucleons.
 
@@ -73,7 +71,7 @@ For the transfer of two identical nucleons (2n or 2p) in the same shell model or
 *   If they are in a relative s-state (spatially symmetric, $L=0$), their **spin wavefunction must be antisymmetric**.
 *   An antisymmetric spin state for two fermions corresponds to a **Singlet State** ($S=0$).
 
-*   **ENSDF Policy**: For $(p, t)$, $(t, p)$, and $(^3\text{He}, n)$ reactions, it is standard to assume the transferred pair is in an **anti-parallel spin state** ($S=0$).
+*   **NDS Policy**: For $(p, t)$, $(t, p)$, and $(^3\text{He}, n)$ reactions, it is standard to assume the transferred pair is in a relative $s$ state ($S=0$).
 *   **Particle Input**: `0+`
 
 #### 2. Neutron-Proton Transfer (1n1p)
@@ -92,25 +90,22 @@ For the transfer of a neutron-proton pair, the selection rules depend on the pro
     *   **Particle Input**:
         *   For $S=0$ component: `0+`
         *   For $S=1$ component: `1+`
-    *   *Note: Both components often contribute.*
+    *   *Note: Both components can contribute.*
 
 ### D. Cluster Transfer Reactions
 *Examples:* $(^6\text{Li}, d)$, $(^7\text{Li}, t)$
 
-An alpha particle (or other cluster) is transferred.
+An alpha particle is transferred.
 
-*   **Target Input**: Spin/Parity of the target nucleus.
-*   **Particle Input**: Spin/Parity of the **transferred cluster**.
+*   **Particle Input**: `0+`
 
 ### E. Alpha Inelastic Scattering
 *Examples:* $(\alpha, \alpha')$
 
-In inelastic scattering, the target nucleus is excited to a higher energy state.
-
 *   **$(\alpha, \alpha')$**: The alpha particle has spin 0. Since the projectile spin cannot flip, the angular momentum transfer is purely orbital ($\vec{\ell}$). This selectively excites **Natural Parity** states ($\pi = (-1)^\ell$).
 
 *   **Particle Input**: `0+`
-    *   *Note: This treats the angular momentum transfer as a spin-0 boson transfer.*
+
 
 ---
 
@@ -183,7 +178,8 @@ $$\vec{T}_f = \vec{T}_{target} + \vec{T}_{transfer}$$
 | **Radiative Capture** | $(p,\gamma), (n,\gamma)$ | Projectile capture | $1/2$ | $1/2$ |
 | | $(\alpha,\gamma)$ | Projectile capture | $0$ | $0$ |
 | **Inelastic Scattering** | $(\alpha,\alpha')$ | Excitation (Natural Parity) | $0$ | $0$ |
-| **One-Nucleon Transfer** | $(d,p), (p,d), (^3\text{He},d)$ | Transfer of $n$ or $p$ | $1/2$ | $1/2$ |
+| **One Neutron Transfer** | $(d,p), (p,d), (t,d), (d,t), (\alpha,^3\text{He}), (^3\text{He},\alpha)$ | Transfer of $n$ | $1/2$ | $1/2$ |
+| **One Proton Transfer** | $(d,n), (n,d), (^3\text{He},d), (d,^3\text{He}), (\alpha,t), (t,\alpha)$ | Transfer of $p$ | $1/2$ | $1/2$ |
 | **Two-Nucleon Transfer** | $(p,t), (t,p), (^3\text{He},n)$ | Transfer of $2n$ or $2p$ ($L_{rel}=0$) | $0$ | $1$ |
 | | $(\alpha,d), (d,\alpha)$ | Transfer of $np$ (Deuteron-like) | $1$ | $0$ |
 | | $(^3\text{He},p), (p,^3\text{He})$ | Transfer of $np$ (Mixed) | $0$ and $1$ | $1$ ($S=0$) / $0$ ($S=1$) |
