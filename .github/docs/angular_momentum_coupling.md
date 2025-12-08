@@ -51,12 +51,6 @@ In these reactions, a projectile fuses with the target to form a compound nucleu
 *   **Target Input**: Spin/Parity of the target nucleus.
 *   **Particle Input**: Spin/Parity of the **projectile**.
 
-| Reaction | Projectile | Particle Input |
-| :--- | :--- | :--- |
-| $^{59}\text{Cu}(p, \gamma)^{60}\text{Zn}$ | Proton | `1/2+` |
-| $^{12}\text{C}(n, \gamma)^{13}\text{C}$ | Neutron | `1/2+` |
-| $^{16}\text{O}(\alpha, \gamma)^{20}\text{Ne}$ | Alpha | `0+` |
-
 ### B. Single-Nucleon Transfer Reactions
 *Examples:* $(d, p)$, $(p, d)$, $(^3\text{He}, d)$, $(\alpha, t)$
 
@@ -64,11 +58,6 @@ In these reactions, a single nucleon is transferred between the projectile and t
 
 *   **Target Input**: Spin/Parity of the target nucleus.
 *   **Particle Input**: Spin/Parity of the **transferred nucleon** ($n$ or $p$).
-
-| Reaction Type | Example | Transferred Object | Particle Input |
-| :--- | :--- | :--- | :--- |
-| Pickup | $^{13}\text{C}(p, d)^{12}\text{C}$ | Neutron | `1/2+` |
-| Stripping | $^{40}\text{Ca}(^3\text{He}, d)^{41}\text{Sc}$ | Proton | `1/2+` |
 
 > **Note on j-transfer**: In transfer physics, we often discuss the transferred total angular momentum *j* (where $\vec{j} = \vec{\ell} + \vec{s}$). The code lists results by Channel Spin *S*. The set of allowed final $J^\pi$ values is identical regardless of the coupling order.
 
@@ -90,18 +79,20 @@ For the transfer of two identical nucleons (2n or 2p) in the same shell model or
 #### 2. Neutron-Proton Transfer (1n1p)
 *Reactions:* $(\alpha, d)$, $(d, \alpha)$, $(^3\text{He}, p)$, $(p, ^3\text{He})$
 
-For the transfer of a neutron-proton pair (a deuteron), the Pauli principle does not restrict the spin to $S=0$. The deuteron itself has spin $S=1$.
+For the transfer of a neutron-proton pair, the selection rules depend on the projectile/ejectile properties.
 
-*   **Spin Configurations**: Both singlet ($S=0$) and triplet ($S=1$) transfers are possible.
-*   **Particle Input**:
-    *   If assuming singlet transfer: `0+`
-    *   If assuming triplet transfer (e.g., deuteron-like): `1+`
-    *   *Note: Selection rules often require analyzing both possibilities.*
+*   **$(\alpha, d)$ and $(d, \alpha)$**:
+    *   Both $d$ and $\alpha$ have $T=0$. Thus, only **$T=0$** transfer is allowed.
+    *   Antisymmetry requires $S+T$ to be odd (for relative $L=0$). Since $T=0$, the transfer is restricted to **$S=1$** (spin triplet).
+    *   **Particle Input**: `1+`
 
-| Transfer Type | Transferred Pair | Spin Assumption | Particle Input |
-| :--- | :--- | :--- | :--- |
-| **2n / 2p** | Identical | Anti-parallel ($S=0$) | `0+` |
-| **1n1p** | Non-identical | Parallel ($S=1$) or Anti-parallel ($S=0$) | `1+` or `0+` |
+*   **$(^3\text{He}, p)$ and $(p, ^3\text{He})$**:
+    *   Both particles have $S=1/2, T=1/2$.
+    *   Allowed transfers are **$(S=0, T=1)$** and **$(S=1, T=0)$**.
+    *   **Particle Input**:
+        *   For $S=0$ component: `0+`
+        *   For $S=1$ component: `1+`
+    *   *Note: Both components often contribute.*
 
 ### D. Cluster Transfer Reactions
 *Examples:* $(^6\text{Li}, d)$, $(^7\text{Li}, t)$
@@ -110,10 +101,6 @@ An alpha particle (or other cluster) is transferred.
 
 *   **Target Input**: Spin/Parity of the target nucleus.
 *   **Particle Input**: Spin/Parity of the **transferred cluster**.
-
-| Reaction | Transferred Cluster | Particle Input |
-| :--- | :--- | :--- |
-| $(^6\text{Li}, d)$ | Alpha ($^4\text{He}$) | `0+` |
 
 ### E. Alpha Inelastic Scattering
 *Examples:* $(\alpha, \alpha')$
@@ -136,25 +123,68 @@ python .github/scripts/angular_momentum_coupling.py 3/2- 1/2+
 
 You receive output like:
 ```text
+Target: J=3/2 π=- | Particle: s=1/2 π=+
+Channel Spins S: 1, 2: from |3/2 - 1/2| to 3/2 + 1/2
+------------------------------------------------------------
 L   Wave  Parity   s     Final Jπ
+------------------------------------------------------------
 0   s     -        1     1-
 0   s     -        2     2-
+------------------------------------------------------------
+1   p     +        1     0+, 1+, 2+
+1   p     +        2     1+, 2+, 3+
+------------------------------------------------------------
 ```
 
-*   **L (Wave)**: The orbital angular momentum of the incoming/transferred particle.
-    *   $L=0$ (s-wave), $L=1$ (p-wave), etc.
-*   **Parity**: The parity of the final state, determined by $\pi_{final} = \pi_{target} \times \pi_{particle} \times (-1)^\ell$.
-*   **s (Channel Spin)**: The intermediate coupling of Target + Particle.
-    *   For a $3/2^-$ target and $1/2^+$ particle, spins can align ($3/2+1/2=2$) or anti-align ($3/2-1/2=1$).
-*   **Final Jπ**: The allowed total angular momentum and parity of the final state.
+*   **L (Wave)**: The orbital angular momentum ($\ell$) between target and particle, ranging from 0 to 4 in the output (s, p, d, f, g waves).
+*   **Parity**: The parity of the final state, determined by $\pi_{final} = \pi_{target} \times \pi_{particle} \times (-1)^{\ell}$.
+*   **s (Channel Spin)**: The intermediate coupling $S = \vec{J}_{target} + \vec{s}_{particle}$ before adding orbital angular momentum.
+    *   For $3/2^-$ target and $1/2^+$ particle: $S$ ranges from $|3/2 - 1/2| = 1$ to $3/2 + 1/2 = 2$.
+*   **Final Jπ**: All allowed total angular momentum and parity combinations for each $(L, S)$ pair, calculated from $|S - \ell| \le J_{final} \le S + \ell$.
 
 ### Example Analysis: $^{59}\text{Cu}(p, \gamma)^{60}\text{Zn}$
 *   **Target**: $^{59}\text{Cu}$ ($3/2^-$)
 *   **Particle**: Proton ($1/2^+$)
-*   **Result**:
-    *   If capture occurs via **s-wave** ($L=0$):
-        *   Channel spins $S=1, 2$.
-        *   Final states $J^\pi = 1^-, 2^-$.
-    *   If capture occurs via **p-wave** ($L=1$):
-        *   Parity flips ($-$ to $+$).
-        *   Final states include $0^+, 1^+, 2^+, 3^+$.
+*   **Channel Spins**: $S = 1, 2$ (from $|3/2 - 1/2|$ to $3/2 + 1/2$)
+*   **Results**:
+    *   **s-wave capture** ($L=0$): Parity = $(-) \times (+) \times (-1)^0 = -$
+        *   $S=1$: $J^\pi = 1^-$
+        *   $S=2$: $J^\pi = 2^-$
+    *   **p-wave capture** ($L=1$): Parity = $(-) \times (+) \times (-1)^1 = +$
+        *   $S=1$: $J^\pi = 0^+, 1^+, 2^+$ (from $|1-1|$ to $1+1$)
+        *   $S=2$: $J^\pi = 1^+, 2^+, 3^+$ (from $|2-1|$ to $2+1$)
+    *   **d-wave capture** ($L=2$): Parity = $-$
+        *   $S=1$: $J^\pi = 1^-, 2^-, 3^-$
+        *   $S=2$: $J^\pi = 0^-, 1^-, 2^-, 3^-, 4^-$
+
+---
+
+## 4. Isospin Coupling
+
+For transfer reactions, isospin ($T$) provides additional selection rules.
+
+*   **Single Nucleon Transfer**: Transferring one nucleon ($n$ or $p$) changes isospin by $T_{transfer} = 1/2$.
+*   **Identical Nucleon Pair (2n/2p)**: In a relative $L=0$ state, the Pauli Principle requires $S=0$ (spin singlet) and $T=1$ (isospin triplet). Thus $T_{transfer} = 1$.
+*   **Neutron-Proton Pair (np)**: 
+    *   Deuteron-like ($S=1, T=0$): $T_{transfer} = 0$
+    *   Singlet ($S=0, T=1$): $T_{transfer} = 1$
+
+**Selection Rule**: The final isospin is determined by vector addition:
+$$\vec{T}_f = \vec{T}_{target} + \vec{T}_{transfer}$$
+
+*Note: This tool calculates angular momentum ($J^\pi$) only. Isospin selection rules must be applied separately.*
+
+---
+
+## 5. Summary of Particle Inputs
+
+| Reaction Mechanism | Common Examples | Physical Process | Code Input ($s$) | $T_{transfer}$ |
+| :--- | :--- | :--- | :--- | :--- |
+| **Radiative Capture** | $(p,\gamma), (n,\gamma)$ | Projectile capture | $1/2$ | $1/2$ |
+| | $(\alpha,\gamma)$ | Projectile capture | $0$ | $0$ |
+| **Inelastic Scattering** | $(\alpha,\alpha')$ | Excitation (Natural Parity) | $0$ | $0$ |
+| **One-Nucleon Transfer** | $(d,p), (p,d), (^3\text{He},d)$ | Transfer of $n$ or $p$ | $1/2$ | $1/2$ |
+| **Two-Nucleon Transfer** | $(p,t), (t,p), (^3\text{He},n)$ | Transfer of $2n$ or $2p$ ($L_{rel}=0$) | $0$ | $1$ |
+| | $(\alpha,d), (d,\alpha)$ | Transfer of $np$ (Deuteron-like) | $1$ | $0$ |
+| | $(^3\text{He},p), (p,^3\text{He})$ | Transfer of $np$ (Mixed) | $0$ and $1$ | $1$ ($S=0$) / $0$ ($S=1$) |
+| **Cluster Transfer** | $(^6\text{Li},d)$ | Transfer of $\alpha$-cluster | $0$ | $0$ |
