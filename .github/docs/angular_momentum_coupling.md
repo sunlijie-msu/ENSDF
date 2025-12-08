@@ -178,7 +178,7 @@ $$\vec{T}_f = \vec{T}_{target} + \vec{T}_{transfer}$$
 
 ## 5. Summary of Transfer Inputs
 
-| Reaction Mechanism | Common Examples | Physical Process | Particle Input ($s$) | $T_{transfer}$ |
+| Reaction Mechanism | Common Examples | Physical Process | $S_{transfer}$ | $T_{transfer}$ |
 | :--- | :--- | :--- | :--- | :--- |
 | **Radiative Capture** | $(p,\gamma), (n,\gamma)$ | Projectile capture | $1/2$ | $1/2$ |
 | | $(\alpha,\gamma)$ | Projectile capture | $0$ | $0$ |
