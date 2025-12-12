@@ -6,7 +6,7 @@ applyTo: "**"
 ## CLI Tool
 
 ```bash
-python .github/Java_Average.py VALUE1 UNC1 [VALUE2 UNC2 ...]
+python .github/scripts/Java_Average.py VALUE1 UNC1 [VALUE2 UNC2 ...]
 ```
 
 Algorithm: Replicates AverageTool_22January2025.jar exactly.
@@ -14,7 +14,7 @@ Algorithm: Replicates AverageTool_22January2025.jar exactly.
 ## Workflow
 
 1. Collect measurements with uncertainties
-2. Run: `python .github/Java_Average.py 280 50 215 70 130 60 120 65`
+2. Run: `python .github/scripts/Java_Average.py 280 50 215 70 130 60 120 65`
 3. Use **EXACT** "Suggested Adopted Result" from output
 4. Apply to ENSDF record
 
