@@ -69,7 +69,7 @@ In these reactions, a pair of nucleons is transferred. The total spin of this pa
 
 For the transfer of two identical nucleons (2n or 2p) in the same shell model orbit, the **Pauli Exclusion Principle** dictates that their total wavefunction must be antisymmetric.
 *   If they are in a relative s-state (spatially symmetric, $L=0$), their **spin wavefunction must be antisymmetric**.
-*   An antisymmetric spin state for two fermions corresponds to a **Singlet State** ($S=0$).
+*   An antisymmetric spin state for two fermions corresponds to a **$S=0$** (spin singlet).
 
 *   **NDS Policy**: For $(p, t)$, $(t, p)$, and $(^3\text{He}, n)$ reactions, it is standard to assume the transferred pair is in a relative $s$ state ($S=0$).
 *   **Particle Input**: `0+`
@@ -84,7 +84,7 @@ For the transfer of a neutron-proton pair, the selection rules depend on the pro
     *   Antisymmetry requires $S+T$ to be odd (for relative $L=0$). Since $T=0$, the transfer is restricted to **$S=1$** (spin triplet).
     *   **Particle Input**: `1+`
 
-*   **$(^3\text{He}, p)$ and $(p, ^3\text{He})$**:
+*   **$(^3\text{He}, p)$, $(p, ^3\text{He})$, and $(p,p')$**:
     *   Both particles have $S=1/2, T=1/2$.
     *   Allowed transfers are **$(S=0, T=1)$** and **$(S=1, T=0)$**.
     *   **Particle Input**:
@@ -99,12 +99,16 @@ An alpha particle is transferred.
 
 *   **Particle Input**: `0+`
 
-### E. Alpha Inelastic Scattering
-*Examples:* $(\alpha, \alpha')$
+### E. Inelastic Scattering
+*Examples:* $(\alpha, \alpha')$, $(p, p')$
 
-*   **$(\alpha, \alpha')$**: The alpha particle has spin 0. Since the projectile spin cannot flip, the angular momentum transfer is purely orbital ($\vec{\ell}$). This selectively excites **Natural Parity** states ($\pi = (-1)^\ell$).
+*   **$(\alpha, \alpha')$**: The alpha particle has spin 0. Since the projectile spin cannot flip, the angular momentum transfer is purely orbital ($\vec{\ell}$). This selectively excites **Natural Parity** resonances ($\pi = (-1)^\ell$) in the compound nucleus.
 
 *   **Particle Input**: `0+`
+
+*   **$(p, p')$**: The proton has spin 1/2. Since the projectile spin can flip, the angular momentum transfer can include both orbital ($\vec{\ell}$) and spin contributions. Like $(^3\text{He}, p)$ and $(p, ^3\text{He})$, $(p,p')$ can have both spin-isospin components $(S=0, T=1)$ and $(S=1, T=0)$; both components may contribute. This permits excitation of both **Natural Parity** ($\pi = (-1)^\ell$) and **Unnatural Parity** resonances.
+
+*   **Particle Input**: For the $S=0$ component use `0+`; for the $S=1$ component use `1+`.
 
 
 ---
@@ -178,9 +182,10 @@ $$\vec{T}_f = \vec{T}_{target} + \vec{T}_{transfer}$$
 | **Radiative Capture** | $(p,\gamma), (n,\gamma)$ | Projectile capture | $1/2$ | $1/2$ |
 | | $(\alpha,\gamma)$ | Projectile capture | $0$ | $0$ |
 | **Inelastic Scattering** | $(\alpha,\alpha')$ | Excitation (Natural Parity) | $0$ | $0$ |
+| | $(p,p')$ | Excitation ($S=0$ and $S=1$) | $0$ and $1$ | $1$ ($S=0$) / $0$ ($S=1$) |
 | **One Neutron Transfer** | $(d,p), (p,d), (t,d), (d,t), (\alpha,^3\text{He}), (^3\text{He},\alpha)$ | Transfer of $n$ | $1/2$ | $1/2$ |
 | **One Proton Transfer** | $(d,n), (n,d), (^3\text{He},d), (d,^3\text{He}), (\alpha,t), (t,\alpha)$ | Transfer of $p$ | $1/2$ | $1/2$ |
 | **Two-Nucleon Transfer** | $(p,t), (t,p), (^3\text{He},n)$ | Transfer of $2n$ or $2p$ ($L_{rel}=0$) | $0$ | $1$ |
 | | $(\alpha,d), (d,\alpha)$ | Transfer of $np$ (Deuteron-like) | $1$ | $0$ |
-| | $(^3\text{He},p), (p,^3\text{He})$ | Transfer of $np$ (Mixed) | $0$ and $1$ | $1$ ($S=0$) / $0$ ($S=1$) |
+| | $(^3\text{He},p), (p,^3\text{He})$ | Transfer of np (Mixed) | $0$ and $1$ | $1$ ($S=0$) / $0$ ($S=1$) |
 | **Cluster Transfer** | $(^6\text{Li},d)$ | Transfer of $\alpha$-cluster | $0$ | $0$ |
