@@ -189,6 +189,18 @@ Example:
 - cG lines: Apply only to the immediately preceding G-record (they are part of that G-record)
   - Order when multiple: E$ → RI$ → M$ → MR$ → other identifiers
 
+**FLAG Marker Lines (F-records):**
+- **CRITICAL RULE**: F-record markers (e.g., `34CLF L FLAG=A`) apply to the **L-record immediately ABOVE** them (one line up only)
+- Format: `NUCID` (cols 1-5) + `F` (col 6) + ` L FLAG=A` (cols 7-16) + spaces to column 80
+- Purpose: Marks specific levels with special significance (typically from original experimental data)
+- Example sequence:
+  ```
+   34CL  L 2718      10                                  2        0.07            
+   34CLF L FLAG=A                                                                 
+   34CL  L 2721.7    3                                                            
+  ```
+  In this example, FLAG=A applies to the 2718 keV level (the line above), NOT to 2721.7
+
 #### Left-Justification Requirement
 
 **MANDATORY:** All values and uncertainties in all fields MUST be left-justified (NEVER right-justified or centered).
