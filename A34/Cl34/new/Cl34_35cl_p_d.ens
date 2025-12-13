@@ -3,19 +3,22 @@
  34CL  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34CL2 H CUT=28-May-2012$                                                       
  34CL c  {+35}Cl|)1n+{+34}Cl from J|p=3/2+ {+35}Cl ground state.                
-
  34CL c  1972Vi04: a 40-MeV proton beam was produced from the Grenoble          
  34CL2c  variable-energy cyclotron. The target was chlorine gas of natural      
- 34CL3c  isotopic abundance. Deuterons were detected using a |DE-E silicon      
- 34CL4c  telescope consisted of a 500-|mm surface barrier |DE detector, a 3-mm  
+ 34CL3c  isotopic abundance. Deuterons were detected using a silicon telescope  
+ 34CL4c  consisted of a 500-|mm surface barrier |DE detector, a 3-mm            
  34CL5c  lithium-drifted silicon E detector, and another 3-mm lithium-drifted   
  34CL6c  silicon E detector in anti-coincidence (FWHM=85 keV). Measured         
  34CL7c  |s(E{-d},|q). Deduced levels, J, |p, L-transfers, and spectroscopic    
  34CL8c  factors from DWUCK-DWBA analysis of the measured |s(|q).               
- 34CL cL E,L,S$From DWBA analysis of the measured |s(|q) in 1981Bh04.           
- 34CL cL $Spectroscopic factor                                                  
- 34CL2cL C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N/(2J{-f}+1)|*(2J{-i}+1), where the  
- 34CL3cL normalization factor N=1.53.                                           
+ 34CL cL $Spectroscopic factor of is obtained by:                               
+ 34CL2cL |s(|q){-exp}=1.53[(2s{-d}+1)/(2s{-p}+1)][(2s{-n}+1)/(2(2L+1))]         
+ 34CL3cL C{+2}S|s(|q){-DWBA}, where s{-d}, s{-p}, and s{-n} are the spins of the
+ 34CL4cL deuteron, proton, and neutron, respectively. 1.53 is a normalization   
+ 34CL5cL factor related to the use of Hulthen wavefunction for the deuteron     
+ 34CL6cL (1966Ba54). The overall uncertainty in C{+2}S is estimated to be about 
+ 34CL7cL 30% (1972Vi04).                                                        
+ 34CL cL E,L,S$From 1972Vi04.                                                   
  34CL cL S$LABEL=C{+2}S                                                         
  34CL  L 0.0                                           2        0.45            
  34CL  L 140       15                                  2        1.20            
