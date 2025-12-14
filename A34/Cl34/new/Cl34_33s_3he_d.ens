@@ -1,26 +1,38 @@
- 34CL    33S(3HE,D)                    1971ER03                  ENSDF    202609
+ 34CL    33S(3HE,D)                    2014PA44,1971ER03         ENSDF    202609
  34CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34CL  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34CL2 H CUT=28-May-2012$                                                       
  34CL c  {+33}S+1p|){+34}Cl from J|p=3/2+ {+33}S ground state.                  
- 34CL c  {+33}S target J|p: 3/2+                                                
- 34CL c  1971Er03: {+33}S({+3}He,d) E=14 MeV, 83%-enriched S target (CdS on C   
- 34CL2c  backing).                                                              
- 34CL2c  Used Enge split-pole magnetic spectrograph to record deuterons at 10   
- 34CL2c  ' - 65|' in steps of 5|' with energy resolution of 15 keV.             
- 34CL2c  Used DWBA analysis (code AUTOFIT). Extracted spectroscopic factors     
- 34CL CL S$LABEL=[(2J{-f}+1)/(2J{-i}+1)]C{+2}S                                  
+ 34CL c  2014Pa44: a 25-MeV {+3}He beam was provided from the 14-MV MP tandem   
+ 34CL2c  accelerator at the Maier-Leibnitz Laboratory, Garching, Germany.       
+ 34CL3c  Targets were Ag{+2}{+33}S (20 |mg/cm{+2}, enriched to 99.9% {+33}S)    
+ 34CL4c  deposited upon a foil of {+12}C; Ag{+2}S (20 |mg/cm{+2}, natural       
+ 34CL5c  sulphur) deposited upon a foil of {+12}C; a 50 |mg/cm{+2} Ag foil; a 7 
+ 34CL6c  |mg/cm{+2} {+12}C foil; and {+24}Mg (20 |mg/cm{+2}, enriched to 99.92% 
+ 34CL7c  {+24}Mg) deposited upon a foil of {+12}C. All {+12}C foils were        
+ 34CL8c  enriched to 99.99% and of thickness 7 |mg/cm{+2}. Light reaction       
+ 34CL9c  products were momentum-analyzed by the Q3D magnetic spectrograph and   
+ 34CLAc  detected in the focal plane using a a multiwire gas-filled proportional
+ 34CLBc  counter backed by a plastic scintillator at FWHM=12 keV. Measured      
+ 34CLCc  |s(E{-d},|q). Deduced levels, L-transfers, J, |p, and spectroscopic    
+ 34CLDc  factors from FRESCO-DWBA analysis of the measured |s(|q). Also deduced 
+ 34CLEc  resonance strengths and {+33}S(p,|g){+34}Cl thermonuclear reaction     
+ 34CLFc  rates and calculated {+32}S/{+33}S ratios via hydrodynamic nova        
+ 34CLGc  simulations.                                                           
+ 34CL c  1971Er03: a 14-MeV {+3}He beam was provided from the Argonne tandem Van
+ 34CL2c  de Graaff accelerator. Targets were CdS on C backing, enriched to 83%  
+ 34CL3c  in {+33}S. Deuterons were detected using nuclear track emulsions in the
+ 34CL4c  focal plane of the Enge split-pole magnetic spectrograph with an energy
+ 34CL5c  resolution of 17 keV. Measured |s(E{-d},|q). Deduced levels,           
+ 34CL6c  L-transfers, J, |p, and spectroscopic factors from JULIE-DWBA analysis 
+ 34CL7c  of the measured |s(|q).                                                
+ 34CL cL S$LABEL=[(2J{-f}+1)/(2J{-i}+1)]C{+2}S                                  
  34CL cL E,L$From 1971Er03                                                      
- 34CL cL S$From 1971Er03. Same data are reported by 1978En02 as                 
- 34CL2cL (2J{-f}+1)S{-p}{++}, which multiplied by                               
- 34CL2cL C{+2}|*\ 1/(2J{-i}+1)=1/2|*\ 1/4=1/8 give those listed here            
- 34CL cL L(A)$While 1971Er03 report L=(1+3) they comment that 4146 might be the 
- 34CL2cL analog of (2+), 4119-keV state in {+34}S from {+33}S(d,p) reaction,    
- 34CL2cL fitted with a mixed L=0+2 distribution, with which the fit in this     
- 34CL2cL ({+3}He,d) reaction might also be consistent. Based on 1990En08        
- 34CL2cL this level is a doublet consistent with 4148 level (|p=+) and 4140     
- 34CL2cL level (|p=-), which might explain why both parity values seem to be    
- 34CL2cL valid for this level                                                   
+ 35AR cL J$As given in 1970Wh04, used for extracting C{+2}S.                    
+ 35AR cL L,S$From DWBA analysis of the measured |s(|q) in 1970Wh04.             
+ 35AR cL $Spectroscopic factor C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N, where N=3.33
+ 35AR2cL is a normalization factor adopted by 1970Wh04 from 1966Ba54.           
+ 34CL cL S$LABEL=C{+2}S                                                         
  34CL  L 0                                             2        0.25            
  34CL  L 145.5                                         2        1.42            
  34CL  L 461.0     12                                  0+2      0.04+0.08       
@@ -40,11 +52,96 @@
  34CL  L 3773.0    24                                  1        0.05            
  34CL  L 3983.4    25                                  3        0.44            
  34CL  L 4076      3                                   3        0.52            
- 34CL  L 4146      3                                   (1+3)    0.08+0.24   A   
+ 34CL  L 4146      3                                   (1+3)    0.08+0.24       
  34CL  L 4353      3                                   1        0.14            
  34CL  L 4418      3                                   1        0.11            
  34CL  L 4461      3                                   1        0.09            
  34CL  L 4516.3    22                                  1        0.13            
  34CL  L 4607.9    21                                  1        0.11            
  34CL  L 4638.7    21                                  1        0.06            
+
+ 34CL  L 4638.9    4                                    1+3     0.010+.017  A   
+ 34CL cL S$0.010 {I2} for L=1, 0.017 {I3} for L=3                               
+ 34CL  L 4695      2                                                        B   
+ 34CL  L 4718      2                                                            
+ 34CL  L 4857      2                                    2,1+3   0.230     8     
+ 34CL cL S$for L=2. Values for L=1+3 are 0.0059 {I5} for L=1, 0.034 {I3} for L=3
+ 34CL  L 4941.9    4                                    1       0.0060    7 A   
+ 34CL  L 4957.3    11                                   2       0.079     5 A   
+ 34CL  L 4979      2                                    1,0     0.0058    4     
+ 34CL cL S$for L=1. Value for L=0 is 0.0095 {I7}                                
+ 34CL  L 4994      2                                    2       0.056     5     
+ 34CL  L 5009      2                                    2,3     0.070     3     
+ 34CL cL S$for L=2. Value for L=3 is 0.020 {I1}                                 
+ 34CL  L 5028      2                                    1       0.0010    1     
+ 34CL  L 5154      4                                                        E   
+ 34CL cL $E(p)(res)=11 {I4}                                                     
+ 34CL  L 5171.6    3   4                                3,2     0.0159    7 A   
+ 34CL cL S$for L=3. Value for L=2 is 0.057 {I3}                                 
+ 34CL cL $E(p)(res)=28.4 {I3}                                                   
+ 34CL  L 5233      4                                                        E   
+ 34CL cL $E(p)(res)=90 {I4}                                                     
+ 34CL  L 5246      2  (2:5)-                            3       0.112     3     
+ 34CL cL $E(p)(res)=103 {I2}                                                    
+ 34CL  L 5263      4                                                        E   
+ 34CL cL $E(p)(res)=120 {I4}                                                    
+ 34CL  L 5278      7  (5:7)+                                                E   
+ 34CL cL $E(p)(res)=135 {I7}                                                    
+ 34CL  L 5292                                                               E  ?
+ 34CL cL $E(p)(res)=149                                                         
+ 34CL  L 5314.93   17  7+                                                   E   
+ 34CL cL $E(p)(res)=171.73 {I18}                                                
+ 34CL  L 5326      4                                                        E   
+ 34CL cL $E(p)(res)=183 {I4}. Resonance strength |w|g<0.0014 meV                
+ 34CL  L 5338      2   (0:5)                            1+3,2   .0060+.022      
+ 34CL cL S$for L=1+3: 0.0060 {I5} for L=1, 0.022 {I2} for L=3.                  
+ 34CL2cL For L=2, value is 0.200 {I8}                                           
+ 34CL cL $E(p)(res)=195 {I2}                                                    
+ 34CL  L 5357      4                                                        E   
+ 34CL cL $E(p)(res)=214 {I4}. Resonance strength |w|g<0.010 meV                 
+ 34CL  L 5386.8    15 (3:5)-                            3       0.0128    7 A   
+ 34CL cL $E(p)(res)=243.6 {I15}. Resonance strength |w|g<0.022 meV              
+ 34CL  L 5424      4                                                        E   
+ 34CL cL $E(p)(res)=281 {I4}. Resonance strength |w|g<0.010 meV                 
+ 34CL  L 5435      2  (1,2)+                            0       0.0110    6     
+ 34CL cL $E(p)(res)=292.2 {I14} from adopted value of E{-x}=5435.4 {I14}        
+ 34CL2cL in Table 2 of 2014Pa44. Resonance strength |w|g=0.082 meV {I+18-21}    
+ 34CL  L 5444      4                                                        E   
+ 34CL cL $E(p)(res)=301 {I4}                                                    
+ 34CL  L 5453      2  (1,2)+                            0       0.0034    5     
+ 34CL cL $E(p)(res)=310.2 {I14} from adopted value of E{-x}=5453.4 {I14}        
+ 34CL2cL in Table 2 of 2014Pa44. Resonance strength |w|g=0.028 meV {+10-8}      
+ 34CL  L 5485      4                                                        E   
+ 34CL cL $E(p)(res)=342 {I4}. Resonance strength |w|g<0.014 meV                 
+ 34CL  L 5540.8    11  3-                                                   E   
+ 34CL cL $E(p)(res)=397.6 {I11}. Resonance strength |w|g<0.0040 meV             
+ 34CL  L 5577      2  (1,2)+                            0       0.081     1     
+ 34CL cL $E(p)(res)=434.3 {I7} from adopted value of E{-x}=5577.5 {I7}          
+ 34CL2cL in Table 2 of 2014Pa44. Resonance strength |w|g=50 meV {I8}            
+ 34CL  L 5608      2  (2:5)-                            3       0.334     3     
+ 34CL cL $E(p)(res)=464.2 {I18} from adopted value of E{-x}=5607.4 {I18}        
+ 34CL2cL in Table 2 of 2014Pa44                                                 
+ 34CL  L 5635.7    2  (1,2+)                            1+3,2   .0081+.054  A   
+ 34CL cL S$for L=1+3: 0.0081 {I7} for L=1, 0.054 {I2} for L=3.                  
+ 34CL2cL Value for L=2 is 0.247 {I4}                                            
+ 34CL cL $E(p)(res)=492.5 {I2}. Resonance strength |w|g=65 meV {I10}            
+ 34CL  L 5672.9    10 (1,2)+                            0       0.0118    8 A   
+ 34CL cL $E(p)(res)=529.7 {I10}. Resonance strength |w|g=88 meV {I38}           
+ 34CL  L 5705      5                                                        E   
+ 34CL cL $E(p)(res)=562 {I5}                                                    
+ 34CL  L 5763.2    10 (1,2)+                                                E   
+ 34CL cL $E(p)(res)=620.0 {I10}. Resonance strength |w|g=8 meV {I4}             
+ 34CL  L 5784      2  (2,3)-                            1       0.0010    1     
+ 34CL cL $E(p)(res)=642.1 {I9} from adopted value of E{-x}=5785.3 {I9}          
+ 34CL2cL in Table 2 of 2014Pa44. Resonance strength |w|g=50 meV {I25}           
+ 34CL  L 5805.9    10 (0:5)-                            1+3     .0028+.016  A   
+ 34CL cL S$0.0028 {I6} for L=1, 0.016 {I1} for L=3                              
+ 34CL cL $E(p)(res)=662.7 {I10}. Resonance strength |w|g=50 meV {I25}           
+ 34CL  L 5852.8    3  (3-)                              1+3     0.012+.039  A   
+ 34CL cL S$0.012 {I1} for L=1, 0.039 {I3} for L=3                               
+ 34CL cL $E(p)(res)=709.6 {I3}. Resonance strength |w|g=63 meV {I25}            
+ 34CL  L 5868      1                                                        E   
+ 34CL cL $E(p)(res)=725 {I1}                                                    
+ 34CL  L 5897.1    10  (2-)                             1       0.0088    7 A   
+ 34CL cL $E(p)(res)=753.9 {I10}. Resonance strength |w|g=63 meV {I25}           
                                                                                 
