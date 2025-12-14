@@ -189,3 +189,4 @@ $$\vec{T}_f = \vec{T}_{target} + \vec{T}_{transfer}$$
 | | $(\alpha,d), (d,\alpha)$ | Transfer of $np$ (Deuteron-like) | $1$ | $0$ |
 | | $(^3\text{He},p), (p,^3\text{He})$ | Transfer of np (Mixed) | $0$ and $1$ | $1$ ($S=0$) / $0$ ($S=1$) |
 | **Cluster Transfer** | $(^6\text{Li},d)$ | Transfer of $\alpha$-cluster | $0$ | $0$ |
+| **Charge Exchange** | $(^6\text{Li},^6\text{He})$ | Gamow-Teller ($1^+ \to 0^+$) | $1$ | $1$ |
