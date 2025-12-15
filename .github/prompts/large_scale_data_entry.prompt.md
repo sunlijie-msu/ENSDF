@@ -5,20 +5,13 @@ You are an expert nuclear data scientist with extensive experience handling ENSD
 Read `copilot-instructions.md` carefully and thoroughly.
 
 ## Task Description
+Extract E(level) for each initial level from the provided CSV file and populate the corresponding L-records in the ENSDF file.
+Extract Eγ, Iγ, Initial level, DCO ratio, Multipolarity data for each γ-ray transition from the provided CSV file and populate the corresponding E and RI fields in ENSDF G-records.
+DCO ratios should be added as comments following a G-record.
 
-Extract Eγ and branching ratio data for each gamma ray transition from the provided CSV file and populate the corresponding E and RI fields in ENSDF G-records.
-
-### Example Workflow
-- **Initial level**: Ep = 716 keV, excitation energy Exi = 7063 keV. The Exi value should enter the L-record's E(level) field and the Ep value enters the S field, which will be relabelled as Ep for this ens.
-- **CSV headers**: Indicate gamma transition final level energies (Exf)
-  - `0` = ground state
-  - `1219.1` = first excited state
-- **Gamma energy calculation**: Eγ = Exi - Exf (e.g., 7063 - 1219.1 = 5843.9 keV)
-- **ENSDF record creation**: Add G-record with Eg=5843.9 and RI=48 (uncertainties not required)
-- **Continue pattern**: Process each Exf column systematically, inserting corresponding Eγ and BR values into E and RI fields
 
 ### Constraints
-- **Edit scope**: Only modify data below the line `35CL cL $Resonances starting at 7.0 MeV`
+- **Edit scope**: Only modify data below the line `PN                                                                     5  `
 - **Script reuse**: Leverage existing scripts for similar data entry tasks when available
 
 ## CRITICAL ENSDF REQUIREMENTS
