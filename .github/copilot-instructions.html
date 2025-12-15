@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Evaluated Nuclear Structure Data File &lpar;ENSDF&rpar; Instructions for GitHub Copilot</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+/* From extension goessner.mdmath */
+@font-face{font-family:KaTeX_AMS;font-style:normal;font-weight:400;src:url(fonts/KaTeX_AMS-Regular.woff2) format("woff2"),url(fonts/KaTeX_AMS-Regular.woff) format("woff"),url(fonts/KaTeX_AMS-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Caligraphic;font-style:normal;font-weight:700;src:url(fonts/KaTeX_Caligraphic-Bold.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Bold.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Bold.ttf) format("truetype")}@font-face{font-family:KaTeX_Caligraphic;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Caligraphic-Regular.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Regular.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Fraktur;font-style:normal;font-weight:700;src:url(fonts/KaTeX_Fraktur-Bold.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Bold.woff) format("woff"),url(fonts/KaTeX_Fraktur-Bold.ttf) format("truetype")}@font-face{font-family:KaTeX_Fraktur;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Fraktur-Regular.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Regular.woff) format("woff"),url(fonts/KaTeX_Fraktur-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Main;font-style:normal;font-weight:700;src:url(fonts/KaTeX_Main-Bold.woff2) format("woff2"),url(fonts/KaTeX_Main-Bold.woff) format("woff"),url(fonts/KaTeX_Main-Bold.ttf) format("truetype")}@font-face{font-family:KaTeX_Main;font-style:italic;font-weight:700;src:url(fonts/KaTeX_Main-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Main-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Main-BoldItalic.ttf) format("truetype")}@font-face{font-family:KaTeX_Main;font-style:italic;font-weight:400;src:url(fonts/KaTeX_Main-Italic.woff2) format("woff2"),url(fonts/KaTeX_Main-Italic.woff) format("woff"),url(fonts/KaTeX_Main-Italic.ttf) format("truetype")}@font-face{font-family:KaTeX_Main;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Main-Regular.woff2) format("woff2"),url(fonts/KaTeX_Main-Regular.woff) format("woff"),url(fonts/KaTeX_Main-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Math;font-style:italic;font-weight:700;src:url(fonts/KaTeX_Math-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Math-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Math-BoldItalic.ttf) format("truetype")}@font-face{font-family:KaTeX_Math;font-style:italic;font-weight:400;src:url(fonts/KaTeX_Math-Italic.woff2) format("woff2"),url(fonts/KaTeX_Math-Italic.woff) format("woff"),url(fonts/KaTeX_Math-Italic.ttf) format("truetype")}@font-face{font-family:"KaTeX_SansSerif";font-style:normal;font-weight:700;src:url(fonts/KaTeX_SansSerif-Bold.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Bold.woff) format("woff"),url(fonts/KaTeX_SansSerif-Bold.ttf) format("truetype")}@font-face{font-family:"KaTeX_SansSerif";font-style:italic;font-weight:400;src:url(fonts/KaTeX_SansSerif-Italic.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Italic.woff) format("woff"),url(fonts/KaTeX_SansSerif-Italic.ttf) format("truetype")}@font-face{font-family:"KaTeX_SansSerif";font-style:normal;font-weight:400;src:url(fonts/KaTeX_SansSerif-Regular.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Regular.woff) format("woff"),url(fonts/KaTeX_SansSerif-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Script;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Script-Regular.woff2) format("woff2"),url(fonts/KaTeX_Script-Regular.woff) format("woff"),url(fonts/KaTeX_Script-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Size1;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Size1-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size1-Regular.woff) format("woff"),url(fonts/KaTeX_Size1-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Size2;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Size2-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size2-Regular.woff) format("woff"),url(fonts/KaTeX_Size2-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Size3;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Size3-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size3-Regular.woff) format("woff"),url(fonts/KaTeX_Size3-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Size4;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Size4-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size4-Regular.woff) format("woff"),url(fonts/KaTeX_Size4-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Typewriter;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Typewriter-Regular.woff2) format("woff2"),url(fonts/KaTeX_Typewriter-Regular.woff) format("woff"),url(fonts/KaTeX_Typewriter-Regular.ttf) format("truetype")}.katex{font:normal 1.21em KaTeX_Main,Times New Roman,serif;line-height:1.2;text-indent:0;text-rendering:auto}.katex *{-ms-high-contrast-adjust:none!important;border-color:currentColor}.katex .katex-version:after{content:"0.13.11"}.katex .katex-mathml{clip:rect(1px,1px,1px,1px);border:0;height:1px;overflow:hidden;padding:0;position:absolute;width:1px}.katex .katex-html>.newline{display:block}.katex .base{position:relative;white-space:nowrap;width:-webkit-min-content;width:-moz-min-content;width:min-content}.katex .base,.katex .strut{display:inline-block}.katex .textbf{font-weight:700}.katex .textit{font-style:italic}.katex .textrm{font-family:KaTeX_Main}.katex .textsf{font-family:KaTeX_SansSerif}.katex .texttt{font-family:KaTeX_Typewriter}.katex .mathnormal{font-family:KaTeX_Math;font-style:italic}.katex .mathit{font-family:KaTeX_Main;font-style:italic}.katex .mathrm{font-style:normal}.katex .mathbf{font-family:KaTeX_Main;font-weight:700}.katex .boldsymbol{font-family:KaTeX_Math;font-style:italic;font-weight:700}.katex .amsrm,.katex .mathbb,.katex .textbb{font-family:KaTeX_AMS}.katex .mathcal{font-family:KaTeX_Caligraphic}.katex .mathfrak,.katex .textfrak{font-family:KaTeX_Fraktur}.katex .mathtt{font-family:KaTeX_Typewriter}.katex .mathscr,.katex .textscr{font-family:KaTeX_Script}.katex .mathsf,.katex .textsf{font-family:KaTeX_SansSerif}.katex .mathboldsf,.katex .textboldsf{font-family:KaTeX_SansSerif;font-weight:700}.katex .mathitsf,.katex .textitsf{font-family:KaTeX_SansSerif;font-style:italic}.katex .mainrm{font-family:KaTeX_Main;font-style:normal}.katex .vlist-t{border-collapse:collapse;display:inline-table;table-layout:fixed}.katex .vlist-r{display:table-row}.katex .vlist{display:table-cell;position:relative;vertical-align:bottom}.katex .vlist>span{display:block;height:0;position:relative}.katex .vlist>span>span{display:inline-block}.katex .vlist>span>.pstrut{overflow:hidden;width:0}.katex .vlist-t2{margin-right:-2px}.katex .vlist-s{display:table-cell;font-size:1px;min-width:2px;vertical-align:bottom;width:2px}.katex .vbox{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-box-align:baseline;align-items:baseline;display:-webkit-inline-box;display:inline-flex;flex-direction:column}.katex .hbox{width:100%}.katex .hbox,.katex .thinbox{-webkit-box-orient:horizontal;-webkit-box-direction:normal;display:-webkit-inline-box;display:inline-flex;flex-direction:row}.katex .thinbox{max-width:0;width:0}.katex .msupsub{text-align:left}.katex .mfrac>span>span{text-align:center}.katex .mfrac .frac-line{border-bottom-style:solid;display:inline-block;width:100%}.katex .hdashline,.katex .hline,.katex .mfrac .frac-line,.katex .overline .overline-line,.katex .rule,.katex .underline .underline-line{min-height:1px}.katex .mspace{display:inline-block}.katex .clap,.katex .llap,.katex .rlap{position:relative;width:0}.katex .clap>.inner,.katex .llap>.inner,.katex .rlap>.inner{position:absolute}.katex .clap>.fix,.katex .llap>.fix,.katex .rlap>.fix{display:inline-block}.katex .llap>.inner{right:0}.katex .clap>.inner,.katex .rlap>.inner{left:0}.katex .clap>.inner>span{margin-left:-50%;margin-right:50%}.katex .rule{border:0 solid;display:inline-block;position:relative}.katex .hline,.katex .overline .overline-line,.katex .underline .underline-line{border-bottom-style:solid;display:inline-block;width:100%}.katex .hdashline{border-bottom-style:dashed;display:inline-block;width:100%}.katex .sqrt>.root{margin-left:.27777778em;margin-right:-.55555556em}.katex .fontsize-ensurer.reset-size1.size1,.katex .sizing.reset-size1.size1{font-size:1em}.katex .fontsize-ensurer.reset-size1.size2,.katex .sizing.reset-size1.size2{font-size:1.2em}.katex .fontsize-ensurer.reset-size1.size3,.katex .sizing.reset-size1.size3{font-size:1.4em}.katex .fontsize-ensurer.reset-size1.size4,.katex .sizing.reset-size1.size4{font-size:1.6em}.katex .fontsize-ensurer.reset-size1.size5,.katex .sizing.reset-size1.size5{font-size:1.8em}.katex .fontsize-ensurer.reset-size1.size6,.katex .sizing.reset-size1.size6{font-size:2em}.katex .fontsize-ensurer.reset-size1.size7,.katex .sizing.reset-size1.size7{font-size:2.4em}.katex .fontsize-ensurer.reset-size1.size8,.katex .sizing.reset-size1.size8{font-size:2.88em}.katex .fontsize-ensurer.reset-size1.size9,.katex .sizing.reset-size1.size9{font-size:3.456em}.katex .fontsize-ensurer.reset-size1.size10,.katex .sizing.reset-size1.size10{font-size:4.148em}.katex .fontsize-ensurer.reset-size1.size11,.katex .sizing.reset-size1.size11{font-size:4.976em}.katex .fontsize-ensurer.reset-size2.size1,.katex .sizing.reset-size2.size1{font-size:.83333333em}.katex .fontsize-ensurer.reset-size2.size2,.katex .sizing.reset-size2.size2{font-size:1em}.katex .fontsize-ensurer.reset-size2.size3,.katex .sizing.reset-size2.size3{font-size:1.16666667em}.katex .fontsize-ensurer.reset-size2.size4,.katex .sizing.reset-size2.size4{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size2.size5,.katex .sizing.reset-size2.size5{font-size:1.5em}.katex .fontsize-ensurer.reset-size2.size6,.katex .sizing.reset-size2.size6{font-size:1.66666667em}.katex .fontsize-ensurer.reset-size2.size7,.katex .sizing.reset-size2.size7{font-size:2em}.katex .fontsize-ensurer.reset-size2.size8,.katex .sizing.reset-size2.size8{font-size:2.4em}.katex .fontsize-ensurer.reset-size2.size9,.katex .sizing.reset-size2.size9{font-size:2.88em}.katex .fontsize-ensurer.reset-size2.size10,.katex .sizing.reset-size2.size10{font-size:3.45666667em}.katex .fontsize-ensurer.reset-size2.size11,.katex .sizing.reset-size2.size11{font-size:4.14666667em}.katex .fontsize-ensurer.reset-size3.size1,.katex .sizing.reset-size3.size1{font-size:.71428571em}.katex .fontsize-ensurer.reset-size3.size2,.katex .sizing.reset-size3.size2{font-size:.85714286em}.katex .fontsize-ensurer.reset-size3.size3,.katex .sizing.reset-size3.size3{font-size:1em}.katex .fontsize-ensurer.reset-size3.size4,.katex .sizing.reset-size3.size4{font-size:1.14285714em}.katex .fontsize-ensurer.reset-size3.size5,.katex .sizing.reset-size3.size5{font-size:1.28571429em}.katex .fontsize-ensurer.reset-size3.size6,.katex .sizing.reset-size3.size6{font-size:1.42857143em}.katex .fontsize-ensurer.reset-size3.size7,.katex .sizing.reset-size3.size7{font-size:1.71428571em}.katex .fontsize-ensurer.reset-size3.size8,.katex .sizing.reset-size3.size8{font-size:2.05714286em}.katex .fontsize-ensurer.reset-size3.size9,.katex .sizing.reset-size3.size9{font-size:2.46857143em}.katex .fontsize-ensurer.reset-size3.size10,.katex .sizing.reset-size3.size10{font-size:2.96285714em}.katex .fontsize-ensurer.reset-size3.size11,.katex .sizing.reset-size3.size11{font-size:3.55428571em}.katex .fontsize-ensurer.reset-size4.size1,.katex .sizing.reset-size4.size1{font-size:.625em}.katex .fontsize-ensurer.reset-size4.size2,.katex .sizing.reset-size4.size2{font-size:.75em}.katex .fontsize-ensurer.reset-size4.size3,.katex .sizing.reset-size4.size3{font-size:.875em}.katex .fontsize-ensurer.reset-size4.size4,.katex .sizing.reset-size4.size4{font-size:1em}.katex .fontsize-ensurer.reset-size4.size5,.katex .sizing.reset-size4.size5{font-size:1.125em}.katex .fontsize-ensurer.reset-size4.size6,.katex .sizing.reset-size4.size6{font-size:1.25em}.katex .fontsize-ensurer.reset-size4.size7,.katex .sizing.reset-size4.size7{font-size:1.5em}.katex .fontsize-ensurer.reset-size4.size8,.katex .sizing.reset-size4.size8{font-size:1.8em}.katex .fontsize-ensurer.reset-size4.size9,.katex .sizing.reset-size4.size9{font-size:2.16em}.katex .fontsize-ensurer.reset-size4.size10,.katex .sizing.reset-size4.size10{font-size:2.5925em}.katex .fontsize-ensurer.reset-size4.size11,.katex .sizing.reset-size4.size11{font-size:3.11em}.katex .fontsize-ensurer.reset-size5.size1,.katex .sizing.reset-size5.size1{font-size:.55555556em}.katex .fontsize-ensurer.reset-size5.size2,.katex .sizing.reset-size5.size2{font-size:.66666667em}.katex .fontsize-ensurer.reset-size5.size3,.katex .sizing.reset-size5.size3{font-size:.77777778em}.katex .fontsize-ensurer.reset-size5.size4,.katex .sizing.reset-size5.size4{font-size:.88888889em}.katex .fontsize-ensurer.reset-size5.size5,.katex .sizing.reset-size5.size5{font-size:1em}.katex .fontsize-ensurer.reset-size5.size6,.katex .sizing.reset-size5.size6{font-size:1.11111111em}.katex .fontsize-ensurer.reset-size5.size7,.katex .sizing.reset-size5.size7{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size5.size8,.katex .sizing.reset-size5.size8{font-size:1.6em}.katex .fontsize-ensurer.reset-size5.size9,.katex .sizing.reset-size5.size9{font-size:1.92em}.katex .fontsize-ensurer.reset-size5.size10,.katex .sizing.reset-size5.size10{font-size:2.30444444em}.katex .fontsize-ensurer.reset-size5.size11,.katex .sizing.reset-size5.size11{font-size:2.76444444em}.katex .fontsize-ensurer.reset-size6.size1,.katex .sizing.reset-size6.size1{font-size:.5em}.katex .fontsize-ensurer.reset-size6.size2,.katex .sizing.reset-size6.size2{font-size:.6em}.katex .fontsize-ensurer.reset-size6.size3,.katex .sizing.reset-size6.size3{font-size:.7em}.katex .fontsize-ensurer.reset-size6.size4,.katex .sizing.reset-size6.size4{font-size:.8em}.katex .fontsize-ensurer.reset-size6.size5,.katex .sizing.reset-size6.size5{font-size:.9em}.katex .fontsize-ensurer.reset-size6.size6,.katex .sizing.reset-size6.size6{font-size:1em}.katex .fontsize-ensurer.reset-size6.size7,.katex .sizing.reset-size6.size7{font-size:1.2em}.katex .fontsize-ensurer.reset-size6.size8,.katex .sizing.reset-size6.size8{font-size:1.44em}.katex .fontsize-ensurer.reset-size6.size9,.katex .sizing.reset-size6.size9{font-size:1.728em}.katex .fontsize-ensurer.reset-size6.size10,.katex .sizing.reset-size6.size10{font-size:2.074em}.katex .fontsize-ensurer.reset-size6.size11,.katex .sizing.reset-size6.size11{font-size:2.488em}.katex .fontsize-ensurer.reset-size7.size1,.katex .sizing.reset-size7.size1{font-size:.41666667em}.katex .fontsize-ensurer.reset-size7.size2,.katex .sizing.reset-size7.size2{font-size:.5em}.katex .fontsize-ensurer.reset-size7.size3,.katex .sizing.reset-size7.size3{font-size:.58333333em}.katex .fontsize-ensurer.reset-size7.size4,.katex .sizing.reset-size7.size4{font-size:.66666667em}.katex .fontsize-ensurer.reset-size7.size5,.katex .sizing.reset-size7.size5{font-size:.75em}.katex .fontsize-ensurer.reset-size7.size6,.katex .sizing.reset-size7.size6{font-size:.83333333em}.katex .fontsize-ensurer.reset-size7.size7,.katex .sizing.reset-size7.size7{font-size:1em}.katex .fontsize-ensurer.reset-size7.size8,.katex .sizing.reset-size7.size8{font-size:1.2em}.katex .fontsize-ensurer.reset-size7.size9,.katex .sizing.reset-size7.size9{font-size:1.44em}.katex .fontsize-ensurer.reset-size7.size10,.katex .sizing.reset-size7.size10{font-size:1.72833333em}.katex .fontsize-ensurer.reset-size7.size11,.katex .sizing.reset-size7.size11{font-size:2.07333333em}.katex .fontsize-ensurer.reset-size8.size1,.katex .sizing.reset-size8.size1{font-size:.34722222em}.katex .fontsize-ensurer.reset-size8.size2,.katex .sizing.reset-size8.size2{font-size:.41666667em}.katex .fontsize-ensurer.reset-size8.size3,.katex .sizing.reset-size8.size3{font-size:.48611111em}.katex .fontsize-ensurer.reset-size8.size4,.katex .sizing.reset-size8.size4{font-size:.55555556em}.katex .fontsize-ensurer.reset-size8.size5,.katex .sizing.reset-size8.size5{font-size:.625em}.katex .fontsize-ensurer.reset-size8.size6,.katex .sizing.reset-size8.size6{font-size:.69444444em}.katex .fontsize-ensurer.reset-size8.size7,.katex .sizing.reset-size8.size7{font-size:.83333333em}.katex .fontsize-ensurer.reset-size8.size8,.katex .sizing.reset-size8.size8{font-size:1em}.katex .fontsize-ensurer.reset-size8.size9,.katex .sizing.reset-size8.size9{font-size:1.2em}.katex .fontsize-ensurer.reset-size8.size10,.katex .sizing.reset-size8.size10{font-size:1.44027778em}.katex .fontsize-ensurer.reset-size8.size11,.katex .sizing.reset-size8.size11{font-size:1.72777778em}.katex .fontsize-ensurer.reset-size9.size1,.katex .sizing.reset-size9.size1{font-size:.28935185em}.katex .fontsize-ensurer.reset-size9.size2,.katex .sizing.reset-size9.size2{font-size:.34722222em}.katex .fontsize-ensurer.reset-size9.size3,.katex .sizing.reset-size9.size3{font-size:.40509259em}.katex .fontsize-ensurer.reset-size9.size4,.katex .sizing.reset-size9.size4{font-size:.46296296em}.katex .fontsize-ensurer.reset-size9.size5,.katex .sizing.reset-size9.size5{font-size:.52083333em}.katex .fontsize-ensurer.reset-size9.size6,.katex .sizing.reset-size9.size6{font-size:.5787037em}.katex .fontsize-ensurer.reset-size9.size7,.katex .sizing.reset-size9.size7{font-size:.69444444em}.katex .fontsize-ensurer.reset-size9.size8,.katex .sizing.reset-size9.size8{font-size:.83333333em}.katex .fontsize-ensurer.reset-size9.size9,.katex .sizing.reset-size9.size9{font-size:1em}.katex .fontsize-ensurer.reset-size9.size10,.katex .sizing.reset-size9.size10{font-size:1.20023148em}.katex .fontsize-ensurer.reset-size9.size11,.katex .sizing.reset-size9.size11{font-size:1.43981481em}.katex .fontsize-ensurer.reset-size10.size1,.katex .sizing.reset-size10.size1{font-size:.24108004em}.katex .fontsize-ensurer.reset-size10.size2,.katex .sizing.reset-size10.size2{font-size:.28929605em}.katex .fontsize-ensurer.reset-size10.size3,.katex .sizing.reset-size10.size3{font-size:.33751205em}.katex .fontsize-ensurer.reset-size10.size4,.katex .sizing.reset-size10.size4{font-size:.38572806em}.katex .fontsize-ensurer.reset-size10.size5,.katex .sizing.reset-size10.size5{font-size:.43394407em}.katex .fontsize-ensurer.reset-size10.size6,.katex .sizing.reset-size10.size6{font-size:.48216008em}.katex .fontsize-ensurer.reset-size10.size7,.katex .sizing.reset-size10.size7{font-size:.57859209em}.katex .fontsize-ensurer.reset-size10.size8,.katex .sizing.reset-size10.size8{font-size:.69431051em}.katex .fontsize-ensurer.reset-size10.size9,.katex .sizing.reset-size10.size9{font-size:.83317261em}.katex .fontsize-ensurer.reset-size10.size10,.katex .sizing.reset-size10.size10{font-size:1em}.katex .fontsize-ensurer.reset-size10.size11,.katex .sizing.reset-size10.size11{font-size:1.19961427em}.katex .fontsize-ensurer.reset-size11.size1,.katex .sizing.reset-size11.size1{font-size:.20096463em}.katex .fontsize-ensurer.reset-size11.size2,.katex .sizing.reset-size11.size2{font-size:.24115756em}.katex .fontsize-ensurer.reset-size11.size3,.katex .sizing.reset-size11.size3{font-size:.28135048em}.katex .fontsize-ensurer.reset-size11.size4,.katex .sizing.reset-size11.size4{font-size:.32154341em}.katex .fontsize-ensurer.reset-size11.size5,.katex .sizing.reset-size11.size5{font-size:.36173633em}.katex .fontsize-ensurer.reset-size11.size6,.katex .sizing.reset-size11.size6{font-size:.40192926em}.katex .fontsize-ensurer.reset-size11.size7,.katex .sizing.reset-size11.size7{font-size:.48231511em}.katex .fontsize-ensurer.reset-size11.size8,.katex .sizing.reset-size11.size8{font-size:.57877814em}.katex .fontsize-ensurer.reset-size11.size9,.katex .sizing.reset-size11.size9{font-size:.69453376em}.katex .fontsize-ensurer.reset-size11.size10,.katex .sizing.reset-size11.size10{font-size:.83360129em}.katex .fontsize-ensurer.reset-size11.size11,.katex .sizing.reset-size11.size11{font-size:1em}.katex .delimsizing.size1{font-family:KaTeX_Size1}.katex .delimsizing.size2{font-family:KaTeX_Size2}.katex .delimsizing.size3{font-family:KaTeX_Size3}.katex .delimsizing.size4{font-family:KaTeX_Size4}.katex .delimsizing.mult .delim-size1>span{font-family:KaTeX_Size1}.katex .delimsizing.mult .delim-size4>span{font-family:KaTeX_Size4}.katex .nulldelimiter{display:inline-block;width:.12em}.katex .delimcenter,.katex .op-symbol{position:relative}.katex .op-symbol.small-op{font-family:KaTeX_Size1}.katex .op-symbol.large-op{font-family:KaTeX_Size2}.katex .accent>.vlist-t,.katex .op-limits>.vlist-t{text-align:center}.katex .accent .accent-body{position:relative}.katex .accent .accent-body:not(.accent-full){width:0}.katex .overlay{display:block}.katex .mtable .vertical-separator{display:inline-block;min-width:1px}.katex .mtable .arraycolsep{display:inline-block}.katex .mtable .col-align-c>.vlist-t{text-align:center}.katex .mtable .col-align-l>.vlist-t{text-align:left}.katex .mtable .col-align-r>.vlist-t{text-align:right}.katex .svg-align{text-align:left}.katex svg{fill:currentColor;stroke:currentColor;fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;display:block;height:inherit;position:absolute;width:100%}.katex svg path{stroke:none}.katex img{border-style:none;max-height:none;max-width:none;min-height:0;min-width:0}.katex .stretchy{display:block;overflow:hidden;position:relative;width:100%}.katex .stretchy:after,.katex .stretchy:before{content:""}.katex .hide-tail{overflow:hidden;position:relative;width:100%}.katex .halfarrow-left{left:0;overflow:hidden;position:absolute;width:50.2%}.katex .halfarrow-right{overflow:hidden;position:absolute;right:0;width:50.2%}.katex .brace-left{left:0;overflow:hidden;position:absolute;width:25.1%}.katex .brace-center{left:25%;overflow:hidden;position:absolute;width:50%}.katex .brace-right{overflow:hidden;position:absolute;right:0;width:25.1%}.katex .x-arrow-pad{padding:0 .5em}.katex .cd-arrow-pad{padding:0 .55556em 0 .27778em}.katex .mover,.katex .munder,.katex .x-arrow{text-align:center}.katex .boxpad{padding:0 .3em}.katex .fbox,.katex .fcolorbox{border:.04em solid;box-sizing:border-box}.katex .cancel-pad{padding:0 .2em}.katex .cancel-lap{margin-left:-.2em;margin-right:-.2em}.katex .sout{border-bottom-style:solid;border-bottom-width:.08em}.katex .angl{border-right:.049em solid;border-top:.049em solid;box-sizing:border-content;margin-right:.03889em}.katex .anglpad{padding:0 .03889em}.katex .eqn-num:before{content:"(" counter(katexEqnNo) ")";counter-increment:katexEqnNo}.katex .mml-eqn-num:before{content:"(" counter(mmlEqnNo) ")";counter-increment:mmlEqnNo}.katex .mtr-glue{width:50%}.katex .cd-vert-arrow{display:inline-block;position:relative}.katex .cd-label-left{display:inline-block;position:absolute;right:-webkit-calc(50% + .3em);right:calc(50% + .3em);text-align:left}.katex .cd-label-right{display:inline-block;left:-webkit-calc(50% + .3em);left:calc(50% + .3em);position:absolute;text-align:right}.katex-display{display:block;margin:1em 0;text-align:center}.katex-display>.katex{display:block;text-align:center;white-space:nowrap}.katex-display>.katex>.katex-html{display:block;position:relative}.katex-display>.katex>.katex-html>.tag{position:absolute;right:0}.katex-display.leqno>.katex>.katex-html>.tag{left:0;right:auto}.katex-display.fleqn>.katex{padding-left:2em;text-align:left}body{counter-reset:katexEqnNo mmlEqnNo}
+
+/* style for html inside of browsers */
+.katex { font-size: 1em !important; } /* align KaTeX font-size to surrounding text */
+
+eq { display: inline-block; }
+eqn { display: block}
+section.eqno {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+}
+section.eqno > eqn {
+    width: 100%;
+    margin-left: 3em;
+}
+section.eqno > span {
+    width:3em;
+    text-align:right;
+}
+
+p { 
+    text-align: justify; 
+    hyphens: auto;
+}
+
+table {
+    display: table;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+figure {
+    margin: 0.5em auto;
+}
+figure > img {
+    display: block;
+    margin: 0 auto;
+    page-break-inside: avoid;
+    text-align: center;
+}
+figcaption { 
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+aside {
+  font-size: 0.9em;
+  max-width: 300px;
+  padding: 0 0 0 1em;
+  margin: 0 0 0 1em;
+  float: right;
+}
+
+aside > *:first-child {
+  margin-top: 0;
+}
+aside > *:last-child {
+  margin-bottom: 0;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 17px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <hr>
+<h2 id="applyto-">applyTo: &quot;**&quot;</h2>
+<h1 id="evaluated-nuclear-structure-data-file-ensdf-instructions-for-github-copilot">Evaluated Nuclear Structure Data File (ENSDF) Instructions for GitHub Copilot</h1>
+<h2 id="your-role">Your Role</h2>
+<p>You are an agent specializing in Evaluated Nuclear Structure Data File (ENSDF) 80-column fixed format.
+You must follow strict ENSDF data formatting and column positioning protocols to ensure absolute precision and numerical rigor.</p>
+<hr>
+<h2 id="1-ensdf-text-format-standards">1. ENSDF Text Format Standards</h2>
+<h3 id="superscripts-and-subscripts">Superscripts and Subscripts</h3>
+<ul>
+<li><code>{+n}</code> → superscript (e.g., <code>{+3}He</code> displays as ³He)</li>
+<li><code>{-n}</code> → subscript (e.g., <code>T{-1/2}</code> → T₁/₂)</li>
+<li><code>{+-n}</code> → negative superscript (e.g., <code>10{+-4}</code> displays as 10⁻⁴)</li>
+</ul>
+<h3 id="greek-letters-and-mathematical-symbols">Greek Letters and Mathematical Symbols</h3>
+<p><strong>Greek lowercase:</strong></p>
+<ul>
+<li><code>|a</code> → α (alpha), <code>|b</code> → β (beta), <code>|c</code> → η (eta), <code>|d</code> → δ (delta)</li>
+<li><code>|e</code> → ε (varepsilon), <code>|f</code> → φ (phi), <code>|g</code> → γ (gamma), <code>|h</code> → χ (chi)</li>
+<li><code>|i</code> → ι (iota), <code>|j</code> → ε (epsilon), <code>|k</code> → κ (kappa), <code>|l</code> → λ (lambda)</li>
+<li><code>|m</code> → μ (mu), <code>|n</code> → ν (nu), <code>|p</code> → π (pi), <code>|q</code> → θ (theta)</li>
+<li><code>|r</code> → ρ (rho), <code>|s</code> → σ (sigma), <code>|t</code> → τ (tau), <code>|u</code> → υ (upsilon)</li>
+<li><code>|v</code> → ? (undefined), <code>|w</code> → ω (omega), <code>|x</code> → ξ (xi), <code>|y</code> → ψ (psi), <code>|z</code> → ζ (zeta)</li>
+</ul>
+<p><strong>Greek uppercase:</strong></p>
+<ul>
+<li><code>|C</code> → H, <code>|D</code> → Δ (Delta), <code>|F</code> → Φ (Phi), <code>|G</code> → Γ (Gamma), <code>|H</code> → X</li>
+<li><code>|J</code> → ~ (sim), <code>|L</code> → Λ (Lambda), <code>|P</code> → Π (Pi), <code>|Q</code> → Θ (Theta), <code>|R</code> → P</li>
+<li><code>|S</code> → Σ (Sigma), <code>|U</code> → Υ (Upsilon), <code>|V</code> → ∇ (nabla)</li>
+<li><code>|W</code> → Ω (Omega), <code>|X</code> → Ξ (Xi), <code>|Y</code> → Ψ (Psi)</li>
+</ul>
+<p><strong>Mathematical symbols:</strong></p>
+<ul>
+<li><code>|*</code> → × (times), <code>|?</code> → ≈ (approx), <code>|&lt;</code> → ≤ (leq), <code>|&gt;</code> → ≥ (geq)</li>
+<li><code>|'</code> → ° (degree), <code>|+</code> → ± (plus-minus), <code>|-</code> → ∓ (minus-plus)</li>
+<li><code>|=</code> → ≠ (not equal), <code>|@</code> → ∞ (infinity), <code>|^</code> → ↑ (up arrow)</li>
+<li><code>|_</code> → ↓ (down arrow), <code>|&amp;</code> → ≡ (equiv), <code>|(</code> → ← (left arrow)</li>
+<li><code>|)</code> → → (right arrow), <code>|.</code> → ∝ (proportional), <code>||</code> → | (vertical bar)</li>
+</ul>
+<p><strong>Bracket and parenthesis symbols:</strong></p>
+<ul>
+<li><code>|0</code> → ( (left parenthesis), <code>|1</code> → ) (right parenthesis)</li>
+<li><code>|2</code> → [ (left bracket), <code>|3</code> → ] (right bracket)</li>
+<li><code>|4</code> → ⟨ (left angle), <code>|5</code> → ⟩ (right angle)</li>
+</ul>
+<p><strong>Mathematical operators:</strong></p>
+<ul>
+<li><code>|7</code> → ∫ (integral), <code>|8</code> → ∏ (product), <code>|9</code> → ∑ (summation)</li>
+</ul>
+<p><strong>Important Rules:</strong></p>
+<ul>
+<li>For approximate values, use <code>|?</code> (which gives both ≈ and ~ symbols)</li>
+<li>Standalone <code>~</code> is NOT allowed for approximate values in ENSDF</li>
+</ul>
+<h4 id="common-examples">Common Examples</h4>
+<ul>
+<li><code>%(|e+|b{++})p</code> → %(ε+β⁺)p</li>
+<li><code>{+208}Pb({+36}S,{+35}S)</code> → ²⁰⁸Pb(³⁶S,³⁵S)</li>
+<li><code>|s(E({+3}He),|q)</code> → σ(E(³He),θ)</li>
+</ul>
+<hr>
+<h2 id="2-ensdf-80-column-format-standards">2. ENSDF 80-Column Format Standards</h2>
+<h3 id="ensdf-nucid-field-format-rules-columns-1-5">ENSDF NUCID Field Format Rules (Columns 1-5)</h3>
+<p><strong>CRITICAL: EXACT COLUMN POSITIONING REQUIRED</strong></p>
+<p><strong>Two-digit mass number + One-letter element</strong> (e.g., 35S, 51V, 12C):</p>
+<ul>
+<li><strong>Format</strong>: <code>MME</code> (space, mass, element, space)</li>
+<li><strong>Column 1</strong>: Space</li>
+<li><strong>Columns 2-3</strong>: Mass number (35, 51, 12)</li>
+<li><strong>Column 4</strong>: One-letter element symbol (S, V, C)</li>
+<li><strong>Column 5</strong>: Space</li>
+<li><strong>Results</strong>: <code>35S</code>, <code>51V</code>, <code>12C</code></li>
+</ul>
+<p><strong>Two-digit mass number + Two-letter element</strong> (e.g., 35Cl, 74Ge, 32Si):</p>
+<ul>
+<li><strong>Format</strong>: <code> MMEl</code> (space, mass, element)</li>
+<li><strong>Column 1</strong>: Space</li>
+<li><strong>Columns 2-3</strong>: Mass number (35, 74, 32)</li>
+<li><strong>Columns 4-5</strong>: Two-letter element symbol (Cl, Ge, Si)</li>
+<li><strong>Results</strong>: <code> 35Cl</code>, <code> 74Ge</code>, <code> 32Si</code></li>
+</ul>
+<p><strong>Three-digit mass number + One-letter element</strong> (e.g., 127I, 252C):</p>
+<ul>
+<li><strong>Format</strong>: <code>MMME </code> (mass, element, space)</li>
+<li><strong>Columns 1-3</strong>: Mass number (127, 252)</li>
+<li><strong>Column 4</strong>: One-letter element symbol (I, W, U)</li>
+<li><strong>Column 5</strong>: Space</li>
+<li><strong>Results</strong>: <code>127I </code>, <code>184W </code></li>
+</ul>
+<p><strong>Three-digit mass number + Two-letter element</strong> (e.g., 120Sn, 208Pb, 252Cf):</p>
+<ul>
+<li><strong>Format</strong>: <code>MMMEl</code> (mass, two-letter element)</li>
+<li><strong>Columns 1-3</strong>: Mass number (120, 208, 252)</li>
+<li><strong>Columns 4-5</strong>: Two-letter element symbol (Sn, Pb, Cf)</li>
+<li><strong>Results</strong>: <code>120Sn</code>, <code>208Pb</code>, <code>252Cf</code></li>
+</ul>
+<p><strong>CRITICAL NUCID Rules:</strong></p>
+<ul>
+<li>Column positioning is EXACT (one column off breaks ENSDF parsing)</li>
+<li>Element symbols follow periodic table (case sensitive: Cl not CL)</li>
+<li>Spaces are mandatory where specified to maintain field boundaries</li>
+<li>Mass numbers are numeric only (no leading zeros unless 3-digit)</li>
+</ul>
+<h3 id="record-format-specifications">Record Format Specifications</h3>
+<h4 id="l-record-format-energy-levels">L-Record Format (Energy Levels)</h4>
+<pre><code>Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
+Format:
+ 35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q
+Example:
+ 35P   L 3572.0    12 3/2+,5/2+        29 FS     14    2        0.8       4 A  ?
+ 35CL  L 1219      5  3/2+             0.39 PS   8     2        0.43      15A  S
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Columns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUCID</td>
+<td>1-5</td>
+<td>Nucleus (e.g., &quot; 35P &quot; or &quot; 35Cl&quot;)</td>
+</tr>
+<tr>
+<td>CONT</td>
+<td>6</td>
+<td>Continuation label</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>7</td>
+<td>Must be blank</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>8</td>
+<td>&quot;L&quot;</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>9</td>
+<td>Must be blank</td>
+</tr>
+<tr>
+<td>E</td>
+<td>10-19</td>
+<td>Level energy</td>
+</tr>
+<tr>
+<td>DE</td>
+<td>20-21</td>
+<td>Energy uncertainty</td>
+</tr>
+<tr>
+<td>SPACE</td>
+<td>22</td>
+<td>Readability space</td>
+</tr>
+<tr>
+<td>J</td>
+<td>23-39</td>
+<td>Spin-parity (starts at col 23) - See J-π Assignment Confidence Notation rules</td>
+</tr>
+<tr>
+<td>T</td>
+<td>40-49</td>
+<td>Half-life with units</td>
+</tr>
+<tr>
+<td>DT</td>
+<td>50-55</td>
+<td>Half-life uncertainty</td>
+</tr>
+<tr>
+<td>L</td>
+<td>56-64</td>
+<td>Angular momentum transfer</td>
+</tr>
+<tr>
+<td>S</td>
+<td>65-74</td>
+<td>Spectroscopic strength</td>
+</tr>
+<tr>
+<td>DS</td>
+<td>75-76</td>
+<td>Uncertainty in S</td>
+</tr>
+<tr>
+<td>C</td>
+<td>77</td>
+<td>Comment flag</td>
+</tr>
+<tr>
+<td>MS</td>
+<td>78-79</td>
+<td>Metastable state, i.e., isomer, denoted by 'M '</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>80</td>
+<td>Blank or '?' denotes an uncertain or questionable level or 'S' denotes a level assumed but not observed, usually near neutron, proton, or alpha separation energy.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>CRITICAL cL Comment Line Association Rule:</strong></p>
+<ul>
+<li>cL comment lines apply ONLY to the immediately preceding L-record</li>
+<li>NEVER modify L-record data based on comment lines for other L-records</li>
+<li>Each L-record without a following cL line is an independent assignment</li>
+</ul>
+<h4 id="g-record-format-gamma-transitions">G-Record Format (Gamma Transitions)</h4>
+<pre><code>Columns:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+Format: 
+ 35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q
+Example:
+ 35P   G 1572.0    10 70.0   24 M1+E2    -1.23   25    0.090  20 71.0     23A  S
+ 35Si  G 2572.0    5  5.0    2  E2       +2.1          0.05   5  5.1      2 B  ?
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Columns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUCID</td>
+<td>1-5</td>
+<td>Nucleus (e.g., &quot; 35P &quot; or &quot; 35Cl&quot;)</td>
+</tr>
+<tr>
+<td>CONT</td>
+<td>6</td>
+<td>Continuation label</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>7</td>
+<td>Must be blank</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>8</td>
+<td>&quot;G&quot;</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>9</td>
+<td>Must be blank</td>
+</tr>
+<tr>
+<td>E</td>
+<td>10-19</td>
+<td>Gamma energy</td>
+</tr>
+<tr>
+<td>DE</td>
+<td>20-21</td>
+<td>Energy uncertainty</td>
+</tr>
+<tr>
+<td>SPACE</td>
+<td>22</td>
+<td>Readability space</td>
+</tr>
+<tr>
+<td>RI</td>
+<td>23-29</td>
+<td>Relative photon intensity (starts at col 23)</td>
+</tr>
+<tr>
+<td>DRI</td>
+<td>30-31</td>
+<td>Uncertainty in RI (including GT, LT markers)</td>
+</tr>
+<tr>
+<td>SPACE</td>
+<td>32</td>
+<td>Readability space</td>
+</tr>
+<tr>
+<td>M</td>
+<td>33-41</td>
+<td>Multipolarity</td>
+</tr>
+<tr>
+<td>MR</td>
+<td>42-49</td>
+<td>Mixing ratio</td>
+</tr>
+<tr>
+<td>DMR</td>
+<td>50-55</td>
+<td>Uncertainty in MR</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>56-62</td>
+<td>Conversion coefficient</td>
+</tr>
+<tr>
+<td>DCC</td>
+<td>63-64</td>
+<td>Uncertainty in CC</td>
+</tr>
+<tr>
+<td>TI</td>
+<td>65-74</td>
+<td>Total transition intensity</td>
+</tr>
+<tr>
+<td>DTI</td>
+<td>75-76</td>
+<td>Uncertainty in TI</td>
+</tr>
+<tr>
+<td>C</td>
+<td>77</td>
+<td><strong>Comment flag</strong> (A-Z, a-z, *, &amp;, @) - See G-Record Flag Rules below</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>78-79</td>
+<td>Must be blank</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>80</td>
+<td><strong>Additional indicator</strong> (space, ?, S) - See G-Record Indicator Rules below</td>
+</tr>
+</tbody>
+</table>
+<h3 id="critical-ensdf-formatting-rules">Critical ENSDF Formatting Rules</h3>
+<h4 id="ensdf-structural-relationships">ENSDF Structural Relationships</h4>
+<p><strong>Level Blocks:</strong></p>
+<ol>
+<li>Each L-record starts a new level block (physical level)</li>
+<li>All G-records immediately after an L-record belong to that level block</li>
+<li>Any G-records before the next L-record attach to the previous level (never to the next)</li>
+<li>A level with no gammas is a single L-record with no following G-records</li>
+<li>Preserve strict L→G grouping; parsers depend on it</li>
+</ol>
+<p><strong>Comment Line Scope and Order:</strong></p>
+<ul>
+<li>cL lines: Apply only to the immediately preceding L-record (they are part of that L-record)
+<ul>
+<li>Order when multiple: E$ → J$ → T$ → S$ → general (no identifier)</li>
+</ul>
+</li>
+<li>cG lines: Apply only to the immediately preceding G-record (they are part of that G-record)
+<ul>
+<li>Order when multiple: E$ → RI$ → M$ → MR$ → other identifiers</li>
+</ul>
+</li>
+</ul>
+<p><strong>Continuation Records (Column 6):</strong></p>
+<ul>
+<li>Column 6 contains continuation marker (blank for first record, alphanumeric for continuation)</li>
+<li>Common continuation types: <code>2 L</code>, <code>F L</code> (for L-records); <code>2 G</code>, <code>B G</code> (for G-records)</li>
+<li>Continuation records follow and apply to the record immediately above them</li>
+<li>FLAG markers (e.g., FLAG=A) are placed in continuation records following the record they describe</li>
+</ul>
+<h4 id="left-justification-requirement">Left-Justification Requirement</h4>
+<p><strong>MANDATORY:</strong> All values and uncertainties in all fields MUST be left-justified (NEVER right-justified or centered).</p>
+<ul>
+<li>Applies to: energies, intensities, half-lives, spin-parity, uncertainties (DE, DRI, DT, DMR, DCC, DTI, DS), special markers (GT, LT), and all other field content</li>
+<li>Formatting: Values start at leftmost column of field, padded with trailing spaces to fill field width</li>
+</ul>
+<h4 id="energy-ordering-requirement">Energy Ordering Requirement</h4>
+<ul>
+<li>L-records and G-records MUST be in ascending energy order</li>
+<li>Consequence: Violations break automated ENSDF parsers and database ingestion</li>
+<li>Common error: Inserting new levels or gammas without reordering by energy</li>
+</ul>
+<h4 id="g-record-flag-rules">G-Record Flag Rules</h4>
+<p><strong>Column 77 (C Field, Comment Flag):</strong></p>
+<ul>
+<li>A-Z, a-z: Any single letter used to refer to a specific comment record (cannot be a number)</li>
+<li>
+<ul>
+<li>(asterisk): Denotes a multiply-placed gamma ray</li>
+</ul>
+</li>
+<li>&amp; (ampersand): Denotes a multiply-placed transition with intensity not divided</li>
+<li>@ (at symbol): Denotes a multiply-placed transition with intensity suitably divided</li>
+<li>Space: No comment flag</li>
+<li>FORBIDDEN: Question mark (?) is NOT allowed in column 77</li>
+</ul>
+<p><strong>Column 80 (Q Field, Additional Indicator):</strong></p>
+<ul>
+<li>Space: Normal, well-established gamma transition</li>
+<li>?: Denotes uncertain placement of the transition in the level scheme</li>
+<li>S: Denotes expected or assumed, but as yet unobserved, gamma transition</li>
+<li>CRITICAL: Only space, ?, or S allowed in column 80</li>
+</ul>
+<p><strong>Critical Note:</strong> ENSDF files are parsed by automated systems requiring exact positions. One column off equals data rejection.</p>
+<h4 id="dp-record-format-delayed-proton-emission">DP-Record Format (Delayed Proton Emission)</h4>
+<pre><code>Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
+Format:  35XX   DP EP       DE IP     DIP EI
+Example: 35CL   DP 501      10 3.5    12 9022
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Columns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUCID</td>
+<td>1-5</td>
+<td>Nucleus (e.g., &quot; 35Cl&quot; or &quot; 35P &quot;)</td>
+</tr>
+<tr>
+<td>CONT</td>
+<td>6</td>
+<td>Continuation label (blank)</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>7</td>
+<td>Must be blank</td>
+</tr>
+<tr>
+<td>D</td>
+<td>8</td>
+<td>&quot;D&quot; for delayed particle</td>
+</tr>
+<tr>
+<td>P</td>
+<td>9</td>
+<td>&quot;P&quot; for proton</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>10</td>
+<td>Readability space</td>
+</tr>
+<tr>
+<td>EP</td>
+<td>11-19</td>
+<td>Proton energy in keV</td>
+</tr>
+<tr>
+<td>DE</td>
+<td>20-21</td>
+<td>Energy uncertainty</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>22</td>
+<td>Readability space</td>
+</tr>
+<tr>
+<td>IP</td>
+<td>23-29</td>
+<td>Proton intensity in percent</td>
+</tr>
+<tr>
+<td>DIP</td>
+<td>30-31</td>
+<td>Uncertainty in IP</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>32</td>
+<td>Readability space</td>
+</tr>
+<tr>
+<td>EI</td>
+<td>33-39</td>
+<td>Energy of emitting level in keV</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Critical DP Format Rules:</strong></p>
+<ul>
+<li>Readable spaces at columns 10, 22, and 32 for human readability</li>
+<li>All field positioning follows standard ENSDF left-justification rules</li>
+</ul>
+<h4 id="b-record-format-beta-minus-decay">B-Record Format (Beta Minus Decay)</h4>
+<pre><code>Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
+Format:  35XX  B EEEE.E   DE  IB     DIB          LOGFT   DFT              C   UN  Q
+Example: 35P   B 1572.0    1  100.0  4            5.23    12               C   1U   
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Columns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUCID</td>
+<td>1-5</td>
+<td>Nucleus (e.g., &quot; 35P &quot; or &quot; 35Cl&quot;)</td>
+</tr>
+<tr>
+<td>CONT</td>
+<td>6</td>
+<td>Continuation label</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>7</td>
+<td>Must be blank</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>8</td>
+<td>&quot;B&quot; for beta minus</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>9</td>
+<td>Must be blank</td>
+</tr>
+<tr>
+<td>E</td>
+<td>10-19</td>
+<td>Endpoint energy of β⁻ in keV (given only if measured)</td>
+</tr>
+<tr>
+<td>DE</td>
+<td>20-21</td>
+<td>Energy uncertainty</td>
+</tr>
+<tr>
+<td>IB</td>
+<td>22-29</td>
+<td>Intensity of β⁻-decay branch</td>
+</tr>
+<tr>
+<td>DIB</td>
+<td>30-31</td>
+<td>Uncertainty in IB</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>32-41</td>
+<td>Must be blank</td>
+</tr>
+<tr>
+<td>LOGFT</td>
+<td>42-49</td>
+<td>The log ft for the β⁻ transition</td>
+</tr>
+<tr>
+<td>DFT</td>
+<td>50-55</td>
+<td>Uncertainty in LOGFT</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>56-76</td>
+<td>Must be blank</td>
+</tr>
+<tr>
+<td>C</td>
+<td>77</td>
+<td>Comment flag ('C' denotes coincidence, '?' denotes probable coincidence)</td>
+</tr>
+<tr>
+<td>UN</td>
+<td>78-79</td>
+<td>Forbiddenness classification ('1U', '2U' for unique forbidden, blank = allowed)</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>80</td>
+<td>'?' denotes uncertain or questionable beta minus decay</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Critical B-Record Rules:</strong></p>
+<ul>
+<li>Must follow LEVEL record for the level which is fed by the beta minus decay</li>
+<li>E field given only if measured (endpoint energy of beta minus transition)</li>
+<li>IB intensity in same units as other intensity fields in file</li>
+<li>LOGFT for uniqueness classification (col 78-79)</li>
+<li>Blank signifies allowed transition for forbiddenness field</li>
+</ul>
+<h4 id="e-record-format-electron-capture-and-beta-plus-decay">E-Record Format (Electron Capture and Beta Plus Decay)</h4>
+<pre><code>Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
+Format:  35XX  E EEEE.E   DE  IB     DIB IE     DIE LOGFT   DFT    TI       DTI C UN  Q
+Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   C 1U  S
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Columns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUCID</td>
+<td>1-5</td>
+<td>Nucleus (e.g., &quot; 35Cl&quot; or &quot; 35P &quot;)</td>
+</tr>
+<tr>
+<td>CONT</td>
+<td>6</td>
+<td>Continuation label</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>7</td>
+<td>Must be blank</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>8</td>
+<td>&quot;E&quot; for electron capture</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>9</td>
+<td>Must be blank</td>
+</tr>
+<tr>
+<td>E</td>
+<td>10-19</td>
+<td>Energy for electron capture to level (if measured or deduced)</td>
+</tr>
+<tr>
+<td>DE</td>
+<td>20-21</td>
+<td>Uncertainty in E</td>
+</tr>
+<tr>
+<td>IB</td>
+<td>22-29</td>
+<td>Intensity of β⁺-decay branch</td>
+</tr>
+<tr>
+<td>DIB</td>
+<td>30-31</td>
+<td>Uncertainty in IB</td>
+</tr>
+<tr>
+<td>IE</td>
+<td>32-39</td>
+<td>Intensity of electron capture branch</td>
+</tr>
+<tr>
+<td>DIE</td>
+<td>40-41</td>
+<td>Uncertainty in IE</td>
+</tr>
+<tr>
+<td>LOGFT</td>
+<td>42-49</td>
+<td>The log ft for (ε + β⁺) transition</td>
+</tr>
+<tr>
+<td>DFT</td>
+<td>50-55</td>
+<td>Uncertainty in LOGFT</td>
+</tr>
+<tr>
+<td>BLANK</td>
+<td>56-64</td>
+<td>Must be blank</td>
+</tr>
+<tr>
+<td>TI</td>
+<td>65-74</td>
+<td>Total (ε + β⁺) decay intensity</td>
+</tr>
+<tr>
+<td>DTI</td>
+<td>75-76</td>
+<td>Uncertainty in TI</td>
+</tr>
+<tr>
+<td>C</td>
+<td>77</td>
+<td>Comment flag ('C' denotes coincidence, '?' denotes probable coincidence)</td>
+</tr>
+<tr>
+<td>UN</td>
+<td>78-79</td>
+<td>Forbiddenness classification ('1U', '2U' for unique forbidden, blank = allowed)</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>80</td>
+<td>'?' = uncertain branch, 'S' = expected or assumed transition</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Critical E-Record Rules:</strong></p>
+<ul>
+<li>Must follow LEVEL record for the level being populated in the decay</li>
+<li>IE, IB and TI must be in same units (see NORMALIZATION record)</li>
+<li>Energy field given only if measured or deduced from measured beta plus end-point energy</li>
+<li>TI = IE + IB for total decay intensity to the level</li>
+<li>Forbiddenness classification in columns 78-79 ('1U', '2U' for first-, second-unique forbidden)</li>
+<li>Additional indicator in column 80 for uncertain ('?') or assumed ('S') transitions</li>
+</ul>
+<h4 id="log-ft-format-rules-critical-for-b-and-e-records">LOG FT Format Rules (Critical for B and E Records)</h4>
+<p><strong>MANDATORY LOG FT FORMATTING IN ENSDF</strong></p>
+<p>Records (LOGFT field, columns 42-49):</p>
+<ul>
+<li><strong>Format</strong>: Decimal notation (e.g., <code>4.85</code>, <code>6.2</code>)</li>
+<li><strong>Precision</strong>: 1-2 decimal places typically</li>
+<li><strong>Uncertainty</strong>: DFT field (columns 50-55) contains uncertainty in last digits</li>
+<li><strong>Special notations</strong>:
+<ul>
+<li>Greater than: <code>&gt;8.5</code> (blank DFT)</li>
+<li>Less than: <code>&lt;3.2</code> (blank DFT)</li>
+<li>Approximate: <code>|?4.8</code></li>
+<li>Systematic: <code>4.85 SY</code> (SY in DFT)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Comments:</strong></p>
+<ul>
+<li><strong>Use italic notation</strong>: <code>log {Ift}</code> (NOT <code>log ft</code>)</li>
+<li><strong>Examples</strong>: &quot;Deduced levels, J, π, decay branching ratios, log {Ift}, and partial decay widths&quot;</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<pre><code>LOGFT     DFT
+4.85      15     → log ft = 4.85(15)
+&gt;8.5             → log ft &gt; 8.5
+|?5.1            → log ft ≈ 5.1
+</code></pre>
+<hr>
+<h2 id="3-ensdf-uncertainty-standards">3. ENSDF Uncertainty Standards</h2>
+<h3 id="uncertainty-format-in-data-record-fields">Uncertainty Format in Data Record Fields</h3>
+<h4 id="standard-2-column-uncertainty-fields-limited-to-1-2-digits-maximum">Standard 2-Column Uncertainty Fields (Limited to 1-2 Digits Maximum)</h4>
+<ul>
+<li>DE field (cols 20-21): 1-2 digits with space padding
+<ul>
+<li>Single digit: <code>&quot;5 &quot;</code> (digit + space), Double digits: <code>&quot;15&quot;</code> (two digits)</li>
+</ul>
+</li>
+<li>DRI field (cols 30-31): 1-2 digits OR special markers
+<ul>
+<li>Single digit: <code>&quot;7 &quot;</code> (digit + space), Double digits: <code>&quot;24&quot;</code>, Markers: <code>&quot;GT&quot;</code>, <code>&quot;LT&quot;</code></li>
+</ul>
+</li>
+<li>DCC field (cols 63-64): 1-2 digits with space padding
+<ul>
+<li>Single digit: <code>&quot;3 &quot;</code> (digit + space), Double digits: <code>&quot;18&quot;</code> (two digits)</li>
+</ul>
+</li>
+<li>DTI field (cols 75-76): 1-2 digits with space padding
+<ul>
+<li>Single digit: <code>&quot;9 &quot;</code> (digit + space), Double digits: <code>&quot;42&quot;</code> (two digits)</li>
+</ul>
+</li>
+<li>DS field (cols 75-76): 1-2 digits with space padding
+<ul>
+<li>Single digit: <code>&quot;2 &quot;</code> (digit + space), Double digits: <code>&quot;35&quot;</code> (two digits)</li>
+</ul>
+</li>
+</ul>
+<h4 id="extended-uncertainty-fields-up-to-6-characters-for-asymmetric-uncertainties">Extended Uncertainty Fields (Up to 6 Characters for Asymmetric Uncertainties)</h4>
+<ul>
+<li>DT field (cols 50-55): Half-life uncertainties, supports asymmetric format
+<ul>
+<li>Symmetric: <code>&quot;14    &quot;</code> (digits + spaces), Asymmetric: <code>&quot;+3-4  &quot;</code>, <code>&quot;+19-3 &quot;</code>, <code>&quot;+13-28&quot;</code></li>
+</ul>
+</li>
+<li>DMR field (cols 50-55): Mixing ratio uncertainties, supports asymmetric format
+<ul>
+<li>Symmetric: <code>&quot;25    &quot;</code> (value + spaces), Asymmetric: <code>&quot;+5-3 &quot;</code>, <code>&quot;+21-18&quot;</code></li>
+</ul>
+</li>
+</ul>
+<p><strong>Critical Formatting Rules:</strong></p>
+<ul>
+<li>Single digits in 2-column fields: MUST be padded with trailing space</li>
+<li>Double digits in 2-column fields: Fill both columns completely</li>
+<li>Asymmetric uncertainties: Use +X-Y format in 6-character fields (DT, DMR)</li>
+<li>FORBIDDEN: &quot;123&quot; in 2-column fields (corrupts adjacent data)</li>
+</ul>
+<h4 id="scientific-notation-format">Scientific Notation Format</h4>
+<p>For intensities and other values in scientific notation:</p>
+<ul>
+<li>Standard format: <code>(5.6±1.0)×10^-4</code> becomes <code>5.6E-4 10</code> in ENSDF</li>
+<li>Value field: <code>5.6E-4</code> (scientific notation with E)</li>
+<li>Uncertainty field: <code>10</code> (represents ±1.0 in the last significant digit)</li>
+<li>Examples:
+<ul>
+<li><code>(1.1±0.3)×10^-6</code> → Value: <code>1.1E-6</code>, Uncertainty: <code>3</code></li>
+<li><code>(76±20)×10^-6</code> → Value: <code>76E-6</code>, Uncertainty: <code>20</code></li>
+<li><code>(3.3±1.2)×10^-4</code> → Value: <code>3.3E-4</code>, Uncertainty: <code>12</code></li>
+</ul>
+</li>
+<li>NEVER use: <code>×10^-n</code> notation directly in ENSDF records</li>
+<li>ALWAYS use: <code>E-n</code> notation for the value, separate uncertainty field</li>
+</ul>
+<h4 id="gt-and-lt-markers-in-uncertainty-fields">GT and LT Markers in Uncertainty Fields</h4>
+<ul>
+<li>LT = &quot;Less Than&quot; (e.g., <code>&lt;1.6</code> becomes <code>1.6    LT</code> in DRI field)</li>
+<li>GT = &quot;Greater Than&quot; (e.g., <code>&gt;5.2</code> becomes <code>5.2    GT</code> in DRI field)</li>
+<li>Format: Value in main field, GT/LT marker in uncertainty field</li>
+<li>Examples:
+<ul>
+<li><code>&lt;1.6</code> → RI=<code>1.6    </code> (cols 23-29), DRI=<code>LT</code> (cols 30-31)</li>
+<li><code>&gt;5.2</code> → RI=<code>5.2    </code> (cols 23-29), DRI=<code>GT</code> (cols 30-31)</li>
+</ul>
+</li>
+</ul>
+<h3 id="uncertainty-format-in-comment-lines">Uncertainty Format in Comment Lines</h3>
+<p><strong>CRITICAL: Uncertainties in Data Record Fields and in Comment Lines - Two Different Formats - Do Not Confuse</strong></p>
+<h4 id="in-data-record-fields-l-g-e-b-dp-records">In Data Record Fields (L, G, E, B, DP Records)</h4>
+<p>Format: Plain numbers only (NO {I} notation, NO braces)</p>
+<p>Examples:</p>
+<ul>
+<li>Energy: <code>1572.0</code> with uncertainty <code>12</code> in DE field means 1572.0(12)</li>
+<li>RI: <code>70.0</code> with uncertainty <code>24</code> in DRI field means 70.0(24)</li>
+<li>T1/2: <code>2.29 PS</code> with uncertainty <code>14</code> in DT field means 2.29(14) PS</li>
+</ul>
+<h4 id="in-comment-lines-cl-cg-general-comments">In Comment Lines (cL, cG, General Comments)</h4>
+<p>Format: Use {In} or {I+n-m} notation with braces</p>
+<p><strong>CRITICAL:</strong> n must be INTEGER ONLY (NEVER decimals like {I0.1} or {I1.1})</p>
+<ul>
+<li>Symmetric: <code>{In}</code> (e.g., <code>{I7}</code>, <code>{I11}</code>) without plus/minus signs</li>
+<li>Asymmetric: <code>{I+n-m}</code> (e.g., <code>{I+10-11}</code>, <code>{I+7-9}</code>) with plus/minus signs</li>
+<li>FORBIDDEN: <code>{I+n}</code> for symmetric uncertainties (incorrect format)</li>
+</ul>
+<p><strong>Comment Line {In} Examples by Decimal Places:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Value Decimals</th>
+<th>Comment Notation</th>
+<th>Meaning (± format)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 decimals</td>
+<td><code>1234 {I5}</code></td>
+<td>1234 ± 5</td>
+</tr>
+<tr>
+<td>0 decimals</td>
+<td><code>1234 {I26}</code></td>
+<td>1234 ± 26</td>
+</tr>
+<tr>
+<td>1 decimal</td>
+<td><code>12.3 {I6}</code></td>
+<td>12.3 ± 0.6</td>
+</tr>
+<tr>
+<td>1 decimal</td>
+<td><code>3.6 {I11}</code></td>
+<td>3.6 ± 1.1</td>
+</tr>
+<tr>
+<td>2 decimals</td>
+<td><code>1.23 {I7}</code></td>
+<td>1.23 ± 0.07</td>
+</tr>
+<tr>
+<td>2 decimals</td>
+<td><code>1.23 {I21}</code></td>
+<td>1.23 ± 0.21</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Critical Rules for {In} in Comments:</strong></p>
+<ul>
+<li><code>{In}</code> applies to the last significant digit of the value</li>
+<li>For 1 decimal: <code>{I11}</code> means ±11 in last digit = ±1.1</li>
+<li>For 2 decimals: <code>{I21}</code> means ±21 in last two digits = ±0.21</li>
+<li>FORBIDDEN: <code>{I0.1}</code>, <code>{I1.1}</code>, <code>{I2.7}</code> (decimals violate ENSDF rules)</li>
+</ul>
+<p><strong>Examples in Context:</strong></p>
+<ul>
+<li>Data record: <code> 35P   L 1572.0    12 3/2+             2.29 PS   14</code> (uncertainties are plain numbers)</li>
+<li>Comment line: <code> 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)</code> (uncertainty uses {I11} notation)</li>
+</ul>
+<h3 id="nuclear-science-references-nsr">Nuclear Science References (NSR)</h3>
+<p>Each article in NSR has a unique 8-character key number (&quot;key number&quot;) used to reference articles in ENSDF and other nuclear databases.</p>
+<hr>
+<h2 id="4-ensdf-file-editing-workflow">4. ENSDF File Editing Workflow</h2>
+<h3 id="file-protection-rules">File Protection Rules</h3>
+<ul>
+<li>NEVER edit <code>.old</code> files (reference files from previous evaluation rounds)</li>
+<li>NEVER modify first/last line indentation or spacing in .ens files</li>
+<li>NEVER modify XREF lists (XREF entries with pattern <code>NUCID X</code> have their own specific formatting rules)</li>
+</ul>
+<h3 id="xref-notation-rules">XREF Notation Rules</h3>
+<p>XREF (cross-reference) entries in L-records indicate which datasets observe a level. The notation format:</p>
+<table>
+<thead>
+<tr>
+<th>Notation</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plain letter</td>
+<td>Dataset energy matches adopted level within uncertainties</td>
+<td><code>XREF=FH</code> means datasets F and H report energies consistent with adopted</td>
+</tr>
+<tr>
+<td>Letter(energy)</td>
+<td>Dataset reports different energy outside uncertainty range, but same physical level</td>
+<td><code>XREF=H(4865)</code> means dataset H reports 4865 keV (outside adopted ±uncertainty)</td>
+</tr>
+<tr>
+<td>Letter(*)</td>
+<td>Uncertain/ambiguous matching; level could correspond to multiple dataset levels</td>
+<td><code>XREF=I(*)</code> means dataset I has ambiguous correspondence</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Critical Rules:</strong></p>
+<ul>
+<li>Use plain letter when dataset energy falls within adopted energy ± uncertainty</li>
+<li>Use letter(energy) when dataset energy is outside uncertainty range but evaluator confirms same level</li>
+<li>Use letter(*) ONLY for genuinely uncertain cases where multiple matches are possible</li>
+<li>NEVER use (*) when matching is definite (e.g., if 4875.3 falls within 4881.4±12, use plain letter)</li>
+</ul>
+<p><strong>CRITICAL 80-Column Debugging Technique</strong>:
+When dealing with ENSDF alignment issues, ALWAYS use the visual ruler method:</p>
+<pre><code class="language-python">python -c <span class="hljs-string">&quot;
+header=&#x27;[paste actual header line here]&#x27;
+print(&#x27;ENSDF 80-Column Ruler:&#x27;)
+print(&#x27;Ones:  12345678901234567890123456789012345678901234567890123456789012345678901234567890&#x27;)
+print(&#x27;Tens:  1111111111222222222233333333334444444444555555555566666666667777777777888888888999&#x27;)  
+print(&#x27;Header:&#x27;, header)
+print(&#x27;Length:&#x27;, len(header))
+&quot;</span>
+</code></pre>
+<p><strong>Process</strong>: Display 80-char ruler → Extract L/G/E/B records → Validate against ENSDF Manual → Report issues</p>
+<h3 id="mandatory-edit-validate-repeat-workflow">Mandatory Edit-Validate-Repeat Workflow</h3>
+<p><strong>CRITICAL: THE MOST IMPORTANT RULE</strong></p>
+<p>The Sacred Workflow (MUST Follow for Every Single Edit):</p>
+<pre><code>1. EDIT   → Make ONE precise change to ONE field
+2. VALIDATE → Run ruler on that exact line: python .github/scripts/ensdf_1line_ruler.py --line &quot;your 80-char line&quot;
+3. CONFIRM → Verify exit code 0, check ruler output
+4. REPEAT → Move to next edit only after confirmation
+</code></pre>
+<p>Forbidden Behaviors:</p>
+<ul>
+<li>NEVER edit multiple lines without validating each one</li>
+<li>NEVER make multiple edits then validate at the end</li>
+<li>NEVER assume an edit worked without checking</li>
+<li>NEVER skip validation &quot;just this once&quot;</li>
+</ul>
+<h3 id="validation-tools-and-when-to-use-them">Validation Tools and When to Use Them</h3>
+<h4 id="before-any-edit">Before Any Edit</h4>
+<ol>
+<li>
+<p>Run <code>python .github/scripts/column_calibrate.py &quot;filename.ens&quot;</code> (MANDATORY)</p>
+<ul>
+<li>Validates L-field positioning (column 56), S-field left-justification (columns 65-74)</li>
+<li>Verifies comment flags at column 77</li>
+<li>Reports data-record line-length issues (L/G/E/B/DP records)</li>
+</ul>
+</li>
+<li>
+<p>Run <code>python .github/scripts/check_gamma_ordering.py &quot;filename.ens&quot;</code> (MANDATORY)</p>
+<ul>
+<li>Verifies ascending energy order for L-records and G-records</li>
+</ul>
+</li>
+<li>
+<p>Manual verification: column_calibrate.py does NOT check DP, B, or E record formatting</p>
+</li>
+<li>
+<p>Read current file state (never assume file structure)</p>
+</li>
+<li>
+<p>Identify target line uniquely (must have 5+ lines of unique context)</p>
+</li>
+<li>
+<p>Single field modification only (never edit multiple fields at once)</p>
+</li>
+</ol>
+<h4 id="during-each-edit">During Each Edit</h4>
+<p>Run ruler for each changed line: <code>python .github/scripts/ensdf_1line_ruler.py --line &quot;your 80-char line&quot;</code></p>
+<ul>
+<li>MANDATORY for every line you edit</li>
+<li>Immediate visual ruler, length, and field validation</li>
+<li>Must verify exit code 0 before proceeding to next edit</li>
+</ul>
+<h4 id="after-all-edits">After All Edits</h4>
+<p>Repeat validation sequence (steps 1-2 from Before Any Edit section)</p>
+<h3 id="ensdf-1-line-ruler-tool">ENSDF 1-Line Ruler Tool</h3>
+<p>Usage Modes:</p>
+<ul>
+<li>
+<p>Single line check: <code>python .github/scripts/ensdf_1line_ruler.py --line &quot;your exact 80-char line&quot;</code></p>
+<ul>
+<li>Quick ruler display, length check, immediate validation feedback</li>
+<li>USE THIS for every line you edit (essential AI workflow step)</li>
+</ul>
+</li>
+<li>
+<p>File scan: <code>python .github/scripts/ensdf_1line_ruler.py --file path/to/file.ens [--show-only-wrong]</code></p>
+<ul>
+<li>Checks all data records (L, G, E, B, DP records); exit code 1 if any errors found</li>
+<li>Use <code>--show-only-wrong</code> to quickly identify problem lines only</li>
+</ul>
+</li>
+</ul>
+<h3 id="column-calibration-tool-column_calibratepy">Column Calibration Tool (column_calibrate.py)</h3>
+<p>Comprehensive ENSDF field validation and data-record line-length checking:</p>
+<ul>
+<li>
+<p>Basic validation: <code>python .github/scripts/column_calibrate.py &quot;file.ens&quot;</code></p>
+<ul>
+<li>Prints 80-column ruler with field boundaries</li>
+<li>Checks field positioning and reports line-length issues</li>
+</ul>
+</li>
+<li>
+<p>Optional auto-fix: <code>--fix</code> flag can pad/trim spaces to exactly 80-character line lengths</p>
+<ul>
+<li>Use with extreme caution (does NOT fix field content or formatting errors)</li>
+<li>May surface new issues if misused (prefer manual corrections)</li>
+<li>Always re-validate after using --fix option</li>
+</ul>
+</li>
+<li>
+<p>Exit codes: 0 = all checks pass; 1 = errors found</p>
+</li>
+<li>
+<p>Limitations: DP, B, and E records require additional manual verification</p>
+</li>
+</ul>
+<h3 id="energy-ordering-tool-check_gamma_orderingpy">Energy Ordering Tool (check_gamma_ordering.py)</h3>
+<p>Validates ascending energy order for L-records and G-records:</p>
+<ul>
+<li>Basic check: <code>python .github/scripts/check_gamma_ordering.py &quot;file.ens&quot;</code></li>
+<li>Multiple files: <code>python .github/scripts/check_gamma_ordering.py &quot;A35/K35/new/*.ens&quot; --summary</code></li>
+<li>Verbose output: Add <code>--verbose</code> flag for detailed checking process</li>
+<li>Exit codes: 0 = correct ordering; 1 = ordering violations found</li>
+</ul>
+<h3 id="output-interpretation-guidelines">Output Interpretation Guidelines</h3>
+<p>SUCCESS indicators:</p>
+<ul>
+<li>Exit code 0: Validation PASSED (safe to proceed)</li>
+<li>&quot;SUCCESS: All ENSDF field positions appear correct!&quot;</li>
+</ul>
+<p>ERROR indicators:</p>
+<ul>
+<li>Exit code 1: Validation FAILED (MUST fix errors before proceeding)</li>
+<li>&quot;DATA RECORD LINE LENGTH ISSUES DETECTED&quot;: Lines not exactly 80 characters</li>
+<li>&quot;ERROR: Field positioning errors found&quot;: Field alignment problems</li>
+</ul>
+<h3 id="editing-methodology">Editing Methodology</h3>
+<ol>
+<li>ONE EDIT AT A TIME (never batch multiple field changes)</li>
+<li>PRECISE CONTEXT MATCHING (use complete L-record + surrounding context)</li>
+<li>FIELD-SPECIFIC REPLACEMENTS (target only the specific field being changed)</li>
+<li>IMMEDIATE VALIDATION (check file structure after each edit)</li>
+</ol>
+<p><strong>NEVER PROCEED WITHOUT COMPLETE COLUMN MAPPING VERIFICATION</strong></p>
+<p><strong>CRITICAL COLUMN RULE:</strong> When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns. Only adjust spacing between fields (never move field data to incorrect columns).</p>
+<h3 id="tools-and-workflows">Tools and Workflows</h3>
+<h4 id="java-format-check">Java Format Check</h4>
+<pre><code class="language-bash">python .github/scripts/Java_FormatCheck.py Cl35_34s_p_g.ens
+</code></pre>
+<h4 id="run-java-program-via-python-script">Run Java Program via Python Script</h4>
+<pre><code class="language-bash"><span class="hljs-comment"># Convert single file by name</span>
+python .github/scripts/ens2pdf.py Si35_adopted
+
+<span class="hljs-comment"># Convert with full file path</span>
+python .github/scripts/ens2pdf.py <span class="hljs-string">&quot;finished/Si35/new/Si35_adopted.ens&quot;</span>
+
+<span class="hljs-comment"># Convert all files for an element</span>
+python .github/scripts/ens2pdf.py Si
+
+<span class="hljs-comment"># Convert files matching pattern</span>
+python .github/scripts/ens2pdf.py <span class="hljs-string">&quot;Si35_*sig&quot;</span>
+
+<span class="hljs-comment"># Convert and open in VS Code (default)</span>
+python .github/scripts/ens2pdf.py Si35_adopted --open
+
+<span class="hljs-comment"># Convert and open in system viewer</span>
+python .github/scripts/ens2pdf.py Si35_adopted --open --system
+</code></pre>
+<h4 id="pdf-generation">PDF Generation</h4>
+<pre><code class="language-powershell"><span class="hljs-comment"># Single element</span>
+<span class="hljs-built_in">Set-Location</span> <span class="hljs-string">&quot;D:\X\ND\Files&quot;</span>
+<span class="hljs-variable">$element</span> = <span class="hljs-string">&quot;Al&quot;</span>
+<span class="hljs-built_in">Get-ChildItem</span> <span class="hljs-string">&quot;D:\X\ND\A35\finished\<span class="hljs-variable">$</span>{element}35\new\*.ens&quot;</span> | <span class="hljs-built_in">ForEach-Object</span> {
+    java <span class="hljs-literal">-jar</span> <span class="hljs-string">&quot;D:\X\ND\McMaster-MSU-Java-NDS\McMaster_MSU_JAVA_NDS_v3.0_01May2025.jar&quot;</span> <span class="hljs-variable">$_</span>.FullName <span class="hljs-string">&quot;<span class="hljs-variable">$</span>(<span class="hljs-variable">$_</span>.BaseName).pdf&quot;</span>
+}
+
+<span class="hljs-comment"># All elements</span>
+<span class="hljs-variable">$elements</span> = <span class="hljs-selector-tag">@</span>(<span class="hljs-string">&quot;Al&quot;</span>, <span class="hljs-string">&quot;Ar&quot;</span>, <span class="hljs-string">&quot;Ca&quot;</span>, <span class="hljs-string">&quot;K&quot;</span>, <span class="hljs-string">&quot;Mg&quot;</span>, <span class="hljs-string">&quot;Na&quot;</span>, <span class="hljs-string">&quot;Ne&quot;</span>, <span class="hljs-string">&quot;P&quot;</span>, <span class="hljs-string">&quot;Si&quot;</span>)
+<span class="hljs-keyword">foreach</span> (<span class="hljs-variable">$element</span> <span class="hljs-keyword">in</span> <span class="hljs-variable">$elements</span>) {
+    <span class="hljs-built_in">Get-ChildItem</span> <span class="hljs-string">&quot;D:\X\ND\A35\finished\<span class="hljs-variable">$</span>{element}35\new\*adopted.ens&quot;</span> | <span class="hljs-built_in">ForEach-Object</span> {
+        java <span class="hljs-literal">-jar</span> <span class="hljs-string">&quot;D:\X\ND\McMaster-MSU-Java-NDS\McMaster_MSU_JAVA_NDS_v3.0_01May2025.jar&quot;</span> <span class="hljs-variable">$_</span>.FullName <span class="hljs-string">&quot;<span class="hljs-variable">$</span>(<span class="hljs-variable">$_</span>.BaseName).pdf&quot;</span>
+    }
+}
+</code></pre>
+<hr>
+<h2 id="5-csv-and-tabular-data-processing">5. CSV and Tabular Data Processing</h2>
+<p><strong>CRITICAL AI WEAKNESS MITIGATION: COLUMN ALIGNMENT AND BLANK CELL HANDLING</strong></p>
+<h3 id="ai-frequent-failure-patterns-to-avoid">AI Frequent Failure Patterns to Avoid</h3>
+<ul>
+<li>Assuming column positions without explicit mapping</li>
+<li>Ignoring blank cells that shift subsequent data columns</li>
+<li>Single-direction counting (forward only) leading to off-by-one errors</li>
+<li>Mismatched header-to-data column associations</li>
+<li>Treating blank cells as non-existent rather than positional placeholders</li>
+</ul>
+<h3 id="mandatory-verification-protocol">Mandatory Verification Protocol</h3>
+<ol>
+<li>Column alignment: Explicitly map ALL columns including blank ones (never assume positions based on visible data alone)</li>
+<li>Blank cells: Count blank cells meticulously (each blank cell shifts all subsequent column positions and can cause catastrophic data misalignment)</li>
+<li>Bidirectional verification: Always cross-check both forward counting (header to data) and backward counting (data to header) to ensure accurate column-to-data mapping</li>
+</ol>
+<h3 id="critical-validation-steps-for-tabular-data">Critical Validation Steps for Tabular Data</h3>
+<ul>
+<li>Step 1: List all header columns explicitly, including blank column positions</li>
+<li>Step 2: Count blank cells between data columns (they are positional placeholders)</li>
+<li>Step 3: Forward verification (match each header column to corresponding data column)</li>
+<li>Step 4: Backward verification (confirm each data column maps back to correct header)</li>
+<li>Step 5: Arithmetic validation (verify row/column calculations account for blank cell shifts)</li>
+</ul>
+<h3 id="example-failure-prevention">Example Failure Prevention</h3>
+<pre><code>CSV Header Row: Name,Age,,City,Score
+Data Row: John,25,,NYC,95
+
+WRONG: Assume columns are [Name,Age,City,Score] (ignores blank column)
+CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
+</code></pre>
+<p><strong>NEVER PROCEED WITHOUT COMPLETE COLUMN MAPPING VERIFICATION</strong></p>
+<p><strong>CRITICAL COLUMN RULE:</strong> When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns. Only adjust spacing between fields (never move field data to incorrect columns).</p>
+<h3 id="random-spot-check-validation">Random Spot-Check Validation</h3>
+<p><strong>QUALITY ASSURANCE BEST PRACTICE:</strong> After systematic data entry or bulk corrections, perform random spot-check validation by manually verifying a few samples (5% of total) against source data. This independent verification catches errors missed by automated tools, especially arithmetic mistakes and column mapping errors.</p>
+<p><strong>When to use:</strong> After large-scale data entry, bulk corrections, arithmetic-intensive work, or before claiming task completion when extra confidence is needed.</p>
+<p><strong>Verification Checklist (for each sample):</strong></p>
+<ul>
+<li>Arithmetic accuracy</li>
+<li>Values/uncertainties match source data exactly</li>
+<li>Mapping accuracy (correct fields)</li>
+<li>Row and column alignment</li>
+</ul>
+<p><strong>If errors found:</strong> Identify root cause immediately, analyze pattern (systematic vs isolated), correct all instances, re-validate comprehensively, perform new spot-check.</p>
+<p><strong>Integration:</strong> Use after automated validation passes (column calibration + energy ordering), document findings for reproducibility.</p>
+<hr>
+<h2 id="6-academic-standards">6. Academic Standards</h2>
+<h3 id="professional-english-grammar">Professional English Grammar</h3>
+<p>Common corrections:</p>
+<ul>
+<li>Spelling: &quot;stoped&quot; to &quot;stopped&quot;, &quot;usign&quot; to &quot;using&quot;, &quot;coeffcients&quot; to &quot;coefficients&quot;</li>
+<li>Duplicates: &quot;the the&quot;, &quot;from from&quot;, etc.</li>
+</ul>
+<h3 id="general-comment-ordering-adoptedens-files">General Comment Ordering (Adopted.ens Files)</h3>
+<ol>
+<li>Isotope discovery (reference): experimental details</li>
+<li>Production: production methods and studies</li>
+<li>Decay measurements: half-life, decay modes</li>
+<li>Radius measurement: nuclear radius determinations</li>
+<li>Mass measurements: mass spectrometry, Q-values</li>
+<li>Theoretical calculations: models, predictions (always last)</li>
+</ol>
+<hr>
+<h2 id="document-structure">Document Structure</h2>
+<p>This document is organized as follows:</p>
+<p><strong>Main sections:</strong></p>
+<ol>
+<li>ENSDF Text Format Standards: Superscripts, subscripts, Greek letters, mathematical symbols, and formatting examples</li>
+<li>ENSDF 80-Column Format Standards: NUCID field rules, record format specifications (L, G, DP, B, E records), critical formatting rules (structural relationships, left-justification, energy ordering, flag rules), and LOG FT format rules</li>
+<li>ENSDF Uncertainty Standards: Uncertainty format in data record fields (standard 2-column fields, extended fields, scientific notation, GT and LT markers) and uncertainty format in comment lines</li>
+<li>ENSDF File Editing Workflow: File protection rules, mandatory edit-validate-repeat workflow, validation tools (before, during, and after editing), output interpretation guidelines, editing methodology, and tools and workflows</li>
+<li>CSV and Tabular Data Processing: AI frequent failure patterns to avoid, mandatory verification protocol, critical validation steps, example failure prevention, and random spot-check validation</li>
+<li>Academic Standards: Professional English grammar and general comment ordering for adopted.ens files</li>
+</ol>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>
