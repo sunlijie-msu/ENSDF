@@ -166,10 +166,10 @@ X Then validate <- TOO LATE! File corrupted!
 ### ENSDF Editing Safeguards
 
 * ALWAYS read entire file structure first: Never edit blindly
+* STRICTLY FORBIDDEN: Do NOT use git restore or git checkout to revert changes. Nuclear data file editing is a high-precision task, not a typical software development workflow. The common LLM tendency to rely on git for error recovery is strictly prohibited; you must identify and fix formatting or data errors manually to maintain scientific rigor.
 * SINGLE FIELD EDITS ONLY: Never edit multiple fields in one operation
 * USE RULER FOR EVERY EDIT: `python .github/scripts/ensdf_1line_ruler.py --line "line"` for each changed line
 * VALIDATE AFTER EVERY EDIT: Check file structure integrity immediately
-
 
 
 

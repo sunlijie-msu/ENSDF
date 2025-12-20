@@ -28,6 +28,8 @@
  34CL7c  of the measured |s(|q).                                                
  34CL cL S$LABEL=[(2J{-f}+1)/(2J{-i}+1)]C{+2}S                                  
  34CL cL E,L$From 1971Er03                                                      
+ 34CL cL E(A)$Energy from {+34}Cl Adopted Levels in ENSDF database, used        
+ 34CL2cL as calibration line by 2014Pa44                                        
  35AR cL J$As given in 1970Wh04, used for extracting C{+2}S.                    
  35AR cL L,S$From DWBA analysis of the measured |s(|q) in 1970Wh04.             
  35AR cL $Spectroscopic factor C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N, where N=3.33
@@ -59,7 +61,6 @@
  34CL  L 4516.3    22                                  1        0.13            
  34CL  L 4607.9    21                                  1        0.11            
  34CL  L 4638.7    21                                  1        0.06            
-
  34CL  L 4638.9    4                                    1+3     0.010+.017  A   
  34CL cL S$0.010 {I2} for L=1, 0.017 {I3} for L=3                               
  34CL  L 4695      2                                                        B   
@@ -75,73 +76,48 @@
  34CL cL S$for L=2. Value for L=3 is 0.020 {I1}                                 
  34CL  L 5028      2                                    1       0.0010    1     
  34CL  L 5154      4                                                        E   
- 34CL cL $E(p)(res)=11 {I4}                                                     
  34CL  L 5171.6    3   4                                3,2     0.0159    7 A   
  34CL cL S$for L=3. Value for L=2 is 0.057 {I3}                                 
- 34CL cL $E(p)(res)=28.4 {I3}                                                   
  34CL  L 5233      4                                                        E   
- 34CL cL $E(p)(res)=90 {I4}                                                     
  34CL  L 5246      2  (2:5)-                            3       0.112     3     
- 34CL cL $E(p)(res)=103 {I2}                                                    
  34CL  L 5263      4                                                        E   
- 34CL cL $E(p)(res)=120 {I4}                                                    
  34CL  L 5278      7  (5:7)+                                                E   
- 34CL cL $E(p)(res)=135 {I7}                                                    
  34CL  L 5292                                                               E  ?
- 34CL cL $E(p)(res)=149                                                         
  34CL  L 5314.93   17  7+                                                   E   
- 34CL cL $E(p)(res)=171.73 {I18}                                                
  34CL  L 5326      4                                                        E   
- 34CL cL $E(p)(res)=183 {I4}. Resonance strength |w|g<0.0014 meV                
  34CL  L 5338      2   (0:5)                            1+3,2   .0060+.022      
  34CL cL S$for L=1+3: 0.0060 {I5} for L=1, 0.022 {I2} for L=3. For L=2, value is
  34CL2cL 0.200 {I8}                                                             
- 34CL cL $E(p)(res)=195 {I2}                                                    
  34CL  L 5357      4                                                        E   
- 34CL cL $E(p)(res)=214 {I4}. Resonance strength |w|g<0.010 meV                 
  34CL  L 5386.8    15 (3:5)-                            3       0.0128    7 A   
- 34CL cL $E(p)(res)=243.6 {I15}. Resonance strength |w|g<0.022 meV              
  34CL  L 5424      4                                                        E   
- 34CL cL $E(p)(res)=281 {I4}. Resonance strength |w|g<0.010 meV                 
  34CL  L 5435      2  (1,2)+                            0       0.0110    6     
- 34CL cL $E(p)(res)=292.2 {I14} from adopted value of E{-x}=5435.4 {I14} in     
- 34CL2cL Table 2 of 2014Pa44. Resonance strength |w|g=0.082 meV {I+18-21}       
+ 34CL cL from adopted value of E{-x}=5435.4 {I14} in
+ 34CL2cL Table 2 of 2014Pa44.
  34CL  L 5444      4                                                        E   
- 34CL cL $E(p)(res)=301 {I4}                                                    
  34CL  L 5453      2  (1,2)+                            0       0.0034    5     
- 34CL cL $E(p)(res)=310.2 {I14} from adopted value of E{-x}=5453.4 {I14} in     
- 34CL2cL Table 2 of 2014Pa44. Resonance strength |w|g=0.028 meV {+10-8}         
+ 34CL cL from adopted value of E{-x}=5453.4 {I14} in
+ 34CL2cL Table 2 of 2014Pa44.
  34CL  L 5485      4                                                        E   
- 34CL cL $E(p)(res)=342 {I4}. Resonance strength |w|g<0.014 meV                 
  34CL  L 5540.8    11  3-                                                   E   
- 34CL cL $E(p)(res)=397.6 {I11}. Resonance strength |w|g<0.0040 meV             
  34CL  L 5577      2  (1,2)+                            0       0.081     1     
- 34CL cL $E(p)(res)=434.3 {I7} from adopted value of E{-x}=5577.5 {I7} in Table 
- 34CL2cL 2 of 2014Pa44. Resonance strength |w|g=50 meV {I8}                     
+ 34CL cL from adopted value of E{-x}=5577.5 {I7} in Table
+ 34CL2cL Table 2 of 2014Pa44.
  34CL  L 5608      2  (2:5)-                            3       0.334     3     
- 34CL cL $E(p)(res)=464.2 {I18} from adopted value of E{-x}=5607.4 {I18} in     
+ 34CL cL from adopted value of E{-x}=5607.4 {I18} in
  34CL2cL Table 2 of 2014Pa44                                                    
  34CL  L 5635.7    2  (1,2+)                            1+3,2   .0081+.054  A   
  34CL cL S$for L=1+3: 0.0081 {I7} for L=1, 0.054 {I2} for L=3. Value for L=2 is 
  34CL2cL 0.247 {I4}                                                             
- 34CL cL $E(p)(res)=492.5 {I2}. Resonance strength |w|g=65 meV {I10}            
  34CL  L 5672.9    10 (1,2)+                            0       0.0118    8 A   
- 34CL cL $E(p)(res)=529.7 {I10}. Resonance strength |w|g=88 meV {I38}           
  34CL  L 5705      5                                                        E   
- 34CL cL $E(p)(res)=562 {I5}                                                    
  34CL  L 5763.2    10 (1,2)+                                                E   
- 34CL cL $E(p)(res)=620.0 {I10}. Resonance strength |w|g=8 meV {I4}             
  34CL  L 5784      2  (2,3)-                            1       0.0010    1     
- 34CL cL $E(p)(res)=642.1 {I9} from adopted value of E{-x}=5785.3 {I9} in Table 
- 34CL2cL 2 of 2014Pa44. Resonance strength |w|g=50 meV {I25}                    
+ 34CL cL from adopted value of E{-x}=5785.3 {I9} in Table
+ 34CL2cL Table 2 of 2014Pa44.
  34CL  L 5805.9    10 (0:5)-                            1+3     .0028+.016  A   
  34CL cL S$0.0028 {I6} for L=1, 0.016 {I1} for L=3                              
- 34CL cL $E(p)(res)=662.7 {I10}. Resonance strength |w|g=50 meV {I25}           
  34CL  L 5852.8    3  (3-)                              1+3     0.012+.039  A   
  34CL cL S$0.012 {I1} for L=1, 0.039 {I3} for L=3                               
- 34CL cL $E(p)(res)=709.6 {I3}. Resonance strength |w|g=63 meV {I25}            
  34CL  L 5868      1                                                        E   
- 34CL cL $E(p)(res)=725 {I1}                                                    
  34CL  L 5897.1    10  (2-)                             1       0.0088    7 A   
- 34CL cL $E(p)(res)=753.9 {I10}. Resonance strength |w|g=63 meV {I25}           
-
