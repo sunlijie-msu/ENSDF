@@ -27,13 +27,16 @@
  34CL6c  L-transfers, J, |p, and spectroscopic factors from JULIE-DWBA analysis 
  34CL7c  of the measured |s(|q).                                                
  34CL cL S$LABEL=[(2J{-f}+1)/(2J{-i}+1)]C{+2}S                                  
- 34CL cL E,L$From 1971Er03                                                      
- 34CL cL E(A)$Energy from {+34}Cl Adopted Levels in ENSDF database, used        
- 34CL2cL as calibration line by 2014Pa44                                        
- 35AR cL J$As given in 1970Wh04, used for extracting C{+2}S.                    
- 35AR cL L,S$From DWBA analysis of the measured |s(|q) in 1970Wh04.             
- 35AR cL $Spectroscopic factor C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N, where N=3.33
- 35AR2cL is a normalization factor adopted by 1970Wh04 from 1966Ba54.           
+ 34CL cL E$For levels below 4.63 MeV, from 1971Er03; for levels above 4.63 MeV, 
+ 34CL2cL from 2014Pa44, unless otherwise noted.                                 
+ 34CL cL E(A)$Rounded from the Adopted Levels without uncertainties. 2014Pa44   
+ 34CL2cL observed these levels and used the E(level) values from the Adopted    
+ 34CL3cL Levels of 2012Ni10 for calibration.                                    
+ 34CL cL L,S$From DWBA analysis of the measured |s(|q) in 1971Er03 (below 4.63  
+ 34CL2cL MeV) and 2014Pa44 (above 4.63 MeV). The spectroscopic factors C{+2}S   
+ 34CL3cL given by 1971Er03 are defined as [(2J{-f}+1)/(2J{-i}+1)]C{+2}S, where  
+ 34CL4cL C{+2}=1/2 is the isospin coefficient, J{-f} and J{-i}, are the final   
+ 34CL5cL and initial spins, respectively. J{-i}=3/2 for {+33}S ground state.    
  34CL cL S$LABEL=C{+2}S                                                         
  34CL  L 0                                             2        0.25            
  34CL  L 145.5                                         2        1.42            
@@ -60,17 +63,16 @@
  34CL  L 4461      3                                   1        0.09            
  34CL  L 4516.3    22                                  1        0.13            
  34CL  L 4607.9    21                                  1        0.11            
- 34CL  L 4638.7    21                                  1        0.06            
- 34CL  L 4638.9    4                                    1+3     0.010+.017  A   
- 34CL cL S$0.010 {I2} for L=1, 0.017 {I3} for L=3                               
- 34CL  L 4695      2                                                        B   
+ 34CL  L 4638.7    21                                  1+3      0.010+.017  A   
+ 34CL cL S$0.010 {I2} for L=1, 0.017 {I3} for L=3 (2014Pa44).                   
+ 34CL  L 4695      2                                                            
  34CL  L 4718      2                                                            
  34CL  L 4857      2                                    2,1+3   0.230     8     
- 34CL cL S$for L=2. Values for L=1+3 are 0.0059 {I5} for L=1, 0.034 {I3} for L=3
+ 34CL cL S$for L=2. C{+2}S=0.0059 {I5} for L=1. C{+2}S=0.034 {I3} for L=3.      
  34CL  L 4941.9    4                                    1       0.0060    7 A   
  34CL  L 4957.3    11                                   2       0.079     5 A   
  34CL  L 4979      2                                    1,0     0.0058    4     
- 34CL cL S$for L=1. Value for L=0 is 0.0095 {I7}                                
+ 34CL cL S$for L=1. C{+2}S=0.0095 {I7} for L=0.                                 
  34CL  L 4994      2                                    2       0.056     5     
  34CL  L 5009      2                                    2,3     0.070     3     
  34CL cL S$for L=2. Value for L=3 is 0.020 {I1}                                 
@@ -92,20 +94,16 @@
  34CL  L 5386.8    15 (3:5)-                            3       0.0128    7 A   
  34CL  L 5424      4                                                        E   
  34CL  L 5435      2  (1,2)+                            0       0.0110    6     
- 34CL cL from adopted value of E{-x}=5435.4 {I14} in
- 34CL2cL Table 2 of 2014Pa44.
+ 34CL cL from adopted value of E{-x}=5435.4 {I14} in Table 2 of 2014Pa44.       
  34CL  L 5444      4                                                        E   
  34CL  L 5453      2  (1,2)+                            0       0.0034    5     
- 34CL cL from adopted value of E{-x}=5453.4 {I14} in
- 34CL2cL Table 2 of 2014Pa44.
+ 34CL cL from adopted value of E{-x}=5453.4 {I14} in Table 2 of 2014Pa44.       
  34CL  L 5485      4                                                        E   
  34CL  L 5540.8    11  3-                                                   E   
  34CL  L 5577      2  (1,2)+                            0       0.081     1     
- 34CL cL from adopted value of E{-x}=5577.5 {I7} in Table
- 34CL2cL Table 2 of 2014Pa44.
+ 34CL cL from adopted value of E{-x}=5577.5 {I7} in Table Table 2 of 2014Pa44.  
  34CL  L 5608      2  (2:5)-                            3       0.334     3     
- 34CL cL from adopted value of E{-x}=5607.4 {I18} in
- 34CL2cL Table 2 of 2014Pa44                                                    
+ 34CL cL from adopted value of E{-x}=5607.4 {I18} in Table 2 of 2014Pa44        
  34CL  L 5635.7    2  (1,2+)                            1+3,2   .0081+.054  A   
  34CL cL S$for L=1+3: 0.0081 {I7} for L=1, 0.054 {I2} for L=3. Value for L=2 is 
  34CL2cL 0.247 {I4}                                                             
@@ -113,8 +111,7 @@
  34CL  L 5705      5                                                        E   
  34CL  L 5763.2    10 (1,2)+                                                E   
  34CL  L 5784      2  (2,3)-                            1       0.0010    1     
- 34CL cL from adopted value of E{-x}=5785.3 {I9} in Table
- 34CL2cL Table 2 of 2014Pa44.
+ 34CL cL from adopted value of E{-x}=5785.3 {I9} in Table Table 2 of 2014Pa44.  
  34CL  L 5805.9    10 (0:5)-                            1+3     .0028+.016  A   
  34CL cL S$0.0028 {I6} for L=1, 0.016 {I1} for L=3                              
  34CL  L 5852.8    3  (3-)                              1+3     0.012+.039  A   

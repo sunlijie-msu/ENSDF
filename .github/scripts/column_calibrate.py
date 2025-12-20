@@ -325,7 +325,7 @@ def validate_s_field(filename):
                 # Extract the actual numerical value
                 s_value = ""
                 for char in s_field_stripped:
-                    if char.isdigit():
+                    if char.isdigit() or char in ".-+":
                         s_value += char
                     elif s_value:  # Stop at first non-digit after digits start
                         break
@@ -407,25 +407,33 @@ def validate_s_field(filename):
                 
                 ds_stripped = ds_field.strip()
                 
-                print(f"LINE {line_num}: DS field analysis")
-                print(f"Line:  {line_content}")
-                print(f"S field (65-74):  '{s_field}'")
-                print(f"DS field (75-76): '{ds_field}'")
-                
                 # Check if DS field contains uncertainty
                 if not ds_stripped:
-                    print(f"[ERROR] ERROR: DS field is EMPTY - uncertainty missing!")
-                    print(f"   Expected: 1-2 digit uncertainty value (e.g., '1 ', '12')")
-                    print(f"   Problem: Uncertainty may be embedded in S-field instead")
-                    ds_field_errors += 1
-                elif not ds_field[0].isdigit():
-                    print(f"[ERROR] ERROR: DS field does not start with digit - got '{ds_field[0]}'")
+                    # Empty DS is valid if no uncertainty is provided
+                    pass
+                elif not ds_field[0].isdigit() and ds_field[0] != ' ':
+                    print(f"LINE {line_num}: DS field analysis")
+                    print(f"Line:  {line_content}")
+                    print(f"S field (65-74):  '{s_field}'")
+                    print(f"DS field (75-76): '{ds_field}'")
+                    print(f"[ERROR] ERROR: DS field does not start with digit or space - got '{ds_field[0]}'")
                     print(f"   Expected: LEFT-JUSTIFIED digit (e.g., '1 ', '12')")
                     ds_field_errors += 1
+                    print()
+                elif ds_stripped:
+                    # Check if it's left-justified
+                    if ds_field[0] == ' ' and ds_field[1].isdigit():
+                         print(f"LINE {line_num}: DS field analysis")
+                         print(f"Line:  {line_content}")
+                         print(f"S field (65-74):  '{s_field}'")
+                         print(f"DS field (75-76): '{ds_field}'")
+                         print(f"[ERROR] ERROR: DS field is not LEFT-JUSTIFIED - got '{ds_field}'")
+                         print(f"   Expected: '{ds_field[1]} '")
+                         ds_field_errors += 1
+                         print()
                 else:
-                    print(f"[OK] OK: DS field '{ds_field}' correctly contains uncertainty")
-                
-                print()
+                    # Valid DS field
+                    pass
             else:
                 # S field is empty or non-numeric. DS field should be empty.
                 # Check if DS field contains a letter (misplaced flag)
