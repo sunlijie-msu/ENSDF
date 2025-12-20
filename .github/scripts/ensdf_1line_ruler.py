@@ -59,9 +59,9 @@ RECORD_DEFINITIONS: Dict[str, RecordDefinition] = {
         fmt='L-Fmt: 35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q',
         fields='L-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|L(8)|BLANK(9)|E(10-19)|DE(20-21)|SPACE(22)|J-pi(23-39)|T(40-49)|DT(50-55)|L(56-64)|S(65-74)|DS(75-76)|C(77)|BLANK(78-79)|Q(80)',
         col77_hint='Column 77 may hold alphabetic comment flags only',
-        col80_hint='Column 80 must be blank for L records',
+        col80_hint='Column 80: space, ?, S only',
         col77_validator=_alpha_or_space,
-        col80_validator=_blank_only,
+        col80_validator=lambda ch: ch in {' ', '?', 'S'},
     ),
     'G': RecordDefinition(
         label='Gamma record (G)',
