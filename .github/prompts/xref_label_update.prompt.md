@@ -14,7 +14,7 @@ Update cross-reference labels in ENSDF adopted file when a new experimental data
 ### 1. Update X-Records
 Insert new dataset, shift subsequent labels, pad spaces to 80 characters.
 
-### 2. Shift Existing XREF Labels
+### 2. Alphabetically Shift Existing XREF Labels
 Apply mapping - notations (energy), (asterisk), (question mark), (energy asterisk), (energy question) shift naturally with labels:
 - `XREF=F` → `XREF=G`
 - `XREF=BFGH` → `XREF=BGHI`
@@ -22,12 +22,12 @@ Apply mapping - notations (energy), (asterisk), (question mark), (energy asteris
 - `XREF=F(*)J` → `XREF=G(*)K`
 - `XREF=H(7300*)J` → `XREF=I(7300*)K`
 
-### 3. Insert New Label
+### 3. Insert New XREF Label
 For levels in new dataset, insert label alphabetically (no (notations) needed):
 - `XREF=ABCDGHIJK` → `XREF=ABCDFGHIJK`
 - `XREF=BGH(2103)IJK` → `XREF=BFGH(2103)IJK`
 
-Pad XREF line to 80 characters.
+Omit column calibrate and line ruler checks. Only pad XREF line to 80 characters with spaces.
 
 ### 4. Spot-Check
 Verify randomly-selected 5%+ of XREF entries (at least 3):
