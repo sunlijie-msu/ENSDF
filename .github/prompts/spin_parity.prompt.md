@@ -39,6 +39,17 @@ L-Transfer values and corresponding J-π assignments:
 - **Parentheses indicate uncertainty in the assignment confidence, not the measurement precision**
 - **NEVER change parentheses notation without experimental justification**
 
+### Quick Reference: Firm vs. Tentative
+
+| Notation | Meaning | Example |
+|----------|---------|---------|
+| `2` | Spin J=2 (firm, definite) | Single firm value |
+| `(2)` | Spin J=2 (tentative) | Single uncertain value |
+| `2,3` | J=2 OR J=3 (firm, but ambiguous which) | Multiple firm possibilities |
+| `(2,3)` | J=2 OR J=3 (both tentative) | All options uncertain |
+
+**Key distinction**: Parentheses around a value indicate **confidence level uncertainty** (whether the assignment is tentative). Commas without parentheses mean multiple firm options exist; commas within parentheses mean multiple tentative options exist.
+
 ### Complete J-π Notation Patterns
 
 #### Basic Single Assignments
@@ -100,5 +111,10 @@ Spin-parity with/without parentheses are considered to be different confidence l
 - **Source shows `(3/2)`** → Comment: `J$(3/2) from [reference]` (single parentheses preserved)
 - **NEVER use double parentheses**: `J$((3/2))` is FORBIDDEN
 - **Examples**: `(1/2+)`, `1/2(+)`, `1/2+` represent different assignment confidence levels and the placement of parentheses must be matched accurately and precisely!
+  
+Ranges: 1/2:7/2 expands to 1/2, 3/2, 5/2, 7/2.
+Lists: 3/2, 5/2 expands to set of both.
+Parity Inheritance: (1/2, 3/2)+ applies + parity to both inner items, i.e., (1/2)+, (3/2)+.
+Loose Matching: Parentheses () indicate tentative values.
 
 
