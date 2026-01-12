@@ -130,20 +130,17 @@ An alpha particle is transferred.
 
 *Examples:* $(p, n)$, $(^3\text{He}, t)$, $(^6\text{Li}, ^6\text{He})$
 
-These reactions exchange a nucleon type (isospin flip), strictly requiring an isospin transfer of $\Delta T = 1$.
+These reactions exchange a nucleon type (n ↔ p), changing the isospin projection by $\Delta T_z = \pm 1$. The total isospin change $\Delta T$ depends on the transition type:
 
-* **Fermi Transitions** ($\Delta S=0, \Delta T=1$): Excites the Isobaric Analog State (IAS).
-  * **Particle Input**: `0+` (for non spin-flip)
-
-* **Gamow-Teller Transitions** ($\Delta S=1, \Delta T=1$): Involve a spin-flip. Excites $1^+$ states from $0^+$ targets.
-  * **Particle Input**: `1+` (for spin-flip)
+* **Fermi Transitions** ($\Delta S=0, \Delta L=0, \Delta T=0, \Delta T_z=\pm 1$): Pure isospin operator without spin change. Excites the Isobaric Analog State (IAS) with $\Delta J^\pi = 0^+ \to 0^+$.
+* **Gamow-Teller Transitions** ($\Delta S=1, \Delta L=0, \Delta T=0$ or $1, \Delta T_z=\pm 1$): Spin-isospin coupled operator. Excites states with $\Delta J = 0, 1$ (but not $0^+ \to 0^+$). Strong transitions from $0^+$ targets populate $1^+$ states.
 
 * **$(^6\text{Li}, ^6\text{He})$**: Pure Gamow-Teller probe due to the $1^+ \to 0^+$ projectile transition. Fermi transitions are forbidden.
-  * **Particle Input**: `1+` (for spin-flip)
+  * **Particle Input**: `1+`
 
 * **$(p, n)$ and $(^3\text{He}, t)$**: Mixed probes.
-  * **Particle Input**: `0+` (for non spin-flip)
-  * **Particle Input**: `1+` (for spin-flip)
+  * **Particle Input**: `0+`
+  * **Particle Input**: `1+`
 
 
 ## 3. Interpreting the Output
