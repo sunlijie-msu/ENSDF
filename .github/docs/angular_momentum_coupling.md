@@ -10,15 +10,17 @@ The code implements the **Channel Spin Coupling Scheme**, which is a standard me
 
 | Symbol | Meaning |
 |--------|---------|
-| $J_{target}$ | Spin of target nucleus |
-| $\pi_{target}$ | Parity of target nucleus |
-| $s_{particle}$ | Spin of transferred particle (Python input) |
-| $\pi_{particle}$ | Parity of transferred particle (Python input) |
+| $J_{target}$ | Spin of target nucleus (Python target input) |
+| $\pi_{target}$ | Parity of target nucleus (Python target input) |
+| $s_{particle}$ | Spin of transferred particle (Python particle input) |
+| $\pi_{particle}$ | Parity of transferred particle (Python particle input) |
 | $T_{particle}$ | Isospin of transferred particle |
 | $\ell$ | Relative orbital angular momentum between the target and the particle |
 | $S$ | Channel Spin = $J_{target} + s_{particle}$ |
 | $J_{final}$ | Spin of the populated final nuclear state |
 | $\pi_{final}$ | Parity of the populated final nuclear state |
+
+**Notation discipline:** Use lowercase $s_{particle}$ for the intrinsic spin of the transferred object (single nucleon, nucleon pair, or cluster). Uppercase $S$ is reserved for the channel spin formed by coupling $J_{target}$ with $s_{particle}$. Do not use $S$ to describe the transferred object itself.
 
 ### Conservation Laws
 
@@ -82,8 +84,8 @@ In these reactions, a pair of nucleons is transferred. The total spin of this pa
 For the transfer of two identical nucleons (2n or 2p) in the same shell model orbit, the **Pauli Exclusion Principle** dictates that their total wavefunction must be antisymmetric.
 
 * If they are in a relative s-state (spatially symmetric, $L=0$), their **spin wavefunction must be antisymmetric**.
-* An antiparallel spin state for two fermions corresponds to a **$S=0$** (spin singlet).
-* **NDS Policy**: For $(p, t)$, $(t, p)$, and $(^3\text{He}, n)$ reactions, it is standard to assume the transferred pair is in a relative $s$ state ($S=0$).
+* An antiparallel spin state for two fermions corresponds to **$s_{particle}=0$** (spin singlet for the transferred pair).
+* **NDS Policy**: For $(p, t)$, $(t, p)$, and $(^3\text{He}, n)$ reactions, it is standard to assume the transferred pair is in a relative $s$ state (**$s_{particle}=0$**).
 * **Particle Input**: `0+`
 
 #### 2. Neutron-Proton Transfer (1n1p)
@@ -94,15 +96,15 @@ For the transfer of a neutron-proton pair, the selection rules depend on the pro
 
 * **$(\alpha, d)$ and $(d, \alpha)$**:
   * Both $d$ and $\alpha$ have $T=0$. Thus, only **$T=0$** transfer is allowed.
-  * Antisymmetry requires $S+T$ to be odd (for relative $L=0$). Since $T=0$, the transfer is restricted to **$S=1$** (spin triplet).
-  * **Particle Input**: `1+`
+  * Antisymmetry requires $s_{particle}+T$ to be odd (for $L=0$). Since $T=0$, the transferred pair must be spin triplet, i.e., **$s_{particle}=1$**.
+  * **Particle Input**: `1+` (for transferring $s_{particle}=1, T_{particle}=0$ pair)
 
 * **$(^3\text{He}, p)$ and $(p, ^3\text{He})$**:
-  * Both particles have $S=1/2, T=1/2$.
-  * Allowed transfers are **$(S=0, T=1)$** and **$(S=1, T=0)$**.
+  * Both particles have $s_{particle}=1/2, T_{particle}=1/2$.
+  * Allowed transferred-pair components: **$(s_{particle}=0, T_{particle}=1)$** and **$(s_{particle}=1, T_{particle}=0)$**.
   * **Particle Input**:
-    * For $S=0$ component: `0+`
-    * For $S=1$ component: `1+`
+    * `0+` (for transferring $s_{particle}=0, T_{particle}=1$ pair)
+    * `1+` (for transferring $s_{particle}=1, T_{particle}=0$ pair)
   * *Note: Both components can contribute.*
 
 ### D. Cluster Transfer Reactions
@@ -120,8 +122,9 @@ An alpha particle is transferred.
 * **$(\alpha, \alpha')$**: The alpha particle has spin 0. Since the projectile spin cannot flip, the angular momentum transfer is purely orbital ($\vec{\ell}$). This selectively excites **Natural Parity** resonances ($\pi = (-1)^\ell$) in the compound nucleus.
 * **Particle Input**: `0+`
 
-* **$(p, p')$**: The proton ($s=1/2$) can undergo spin-flip. It allows both Isoscalar ($T=0$) and Isovector ($T=1$) transitions. It populates both Natural and Unnatural parity resonances.
-* **Particle Input**: For the $S=0$ component use `0+`; for the $S=1$ component use `1+`.
+* **$(p, p')$**: The proton ($s=1/2$) can undergo spin-flip. It allows both Isoscalar ($T=0$) and Isovector ($T=1$) transitions.
+  * **Particle Input**: `0+` (for non spin-flip)
+  * **Particle Input**: `1+` (for spin-flip)
 
 ### F. Charge Exchange Reactions
 
@@ -130,16 +133,18 @@ An alpha particle is transferred.
 These reactions exchange a nucleon type (isospin flip), strictly requiring an isospin transfer of $\Delta T = 1$.
 
 * **Fermi Transitions** ($\Delta S=0, \Delta T=1$): Excites the Isobaric Analog State (IAS).
-  * **Particle Input**: `0+`
+  * **Particle Input**: `0+` (for non spin-flip)
 
 * **Gamow-Teller Transitions** ($\Delta S=1, \Delta T=1$): Involve a spin-flip. Excites $1^+$ states from $0^+$ targets.
-  * **Particle Input**: `1+`
+  * **Particle Input**: `1+` (for spin-flip)
 
 **Specific Selectivity:**
 
-* **$(p, n)$ and $(^3\text{He}, t)$**: Mixed probes. Run with both `0+` and `1+`.
+* **$(p, n)$ and $(^3\text{He}, t)$**: Mixed probes.
+  * **Particle Input**: `0+` (for non spin-flip)
+  * **Particle Input**: `1+` (for spin-flip)
 * **$(^6\text{Li}, ^6\text{He})$**: Pure Gamow-Teller probe due to the $1^+ \to 0^+$ projectile transition. Fermi transitions are forbidden.
-  * **Particle Input**: `1+`
+  * **Particle Input**: `1+` (for spin-flip)
 
 ## 3. Interpreting the Output
 
@@ -192,10 +197,10 @@ L   Wave  Parity   S     Final Jπ
 For transfer reactions, isospin ($T$) provides additional selection rules.
 
 * **Single Nucleon Transfer**: Transferring one nucleon ($n$ or $p$) has $T_{particle} = 1/2$.
-* **Identical Nucleon Pair (2n/2p)**: In a relative $L=0$ state, the Pauli Principle requires $S=0$ (spin singlet) and $T=1$ (isospin triplet). Thus $T_{particle} = 1$.
+* **Identical Nucleon Pair (2n/2p)**: In a relative $L=0$ state, the Pauli Principle requires $s_{particle}=0$ (spin singlet for the transferred pair) and $T_{particle}=1$ (isospin triplet).
 * **Neutron-Proton Pair (np)**:
-  * Deuteron-like ($S=1, T=0$): $T_{particle} = 0$
-  * Singlet ($S=0, T=1$): $T_{particle} = 1$
+  * Deuteron-like ($s_{particle}=1, T_{particle}=0$)
+  * Singlet ($s_{particle}=0, T_{particle}=1$)
 
 **Selection Rule**: The final isospin is determined by vector addition:
 
@@ -210,12 +215,12 @@ $$\vec{T}_{final} = \vec{T}_{target} + \vec{T}_{particle}$$
 | **Radiative Capture** | $(p,\gamma), (n,\gamma)$ | Projectile capture | $1/2$ | $1/2$ |
 | | $(\alpha,\gamma)$ | Projectile capture | $0$ | $0$ |
 | **Inelastic Scattering** | $(\alpha,\alpha')$ | Excitation (Natural Parity) | $0$ | $0$ |
-| | $(p,p')$ | Excitation ($S=0$ and $S=1$) | $0$ and $1$ | $0$ and $1$ |
+| | $(p,p')$ | Excitation (non-flip / spin-flip) | $0$ and $1$ | $0$ and $1$ |
 | **One Neutron Transfer** | $(d,p), (p,d), (t,d), (d,t), (\alpha,^3\text{He}), (^3\text{He},\alpha)$ | Transfer of $n$ | $1/2$ | $1/2$ |
 | **One Proton Transfer** | $(d,n), (n,d), (^3\text{He},d), (d,^3\text{He}), (\alpha,t), (t,\alpha)$ | Transfer of $p$ | $1/2$ | $1/2$ |
 | **Two-Nucleon Transfer** | $(p,t), (t,p), (^3\text{He},n)$ | Transfer of $2n$ or $2p$ ($L_{rel}=0$) | $0$ | $1$ |
 | | $(\alpha,d), (d,\alpha)$ | Transfer of $np$ (Deuteron-like) | $1$ | $0$ |
-| | $(^3\text{He},p), (p,^3\text{He})$ | Transfer of np (Mixed) | $0$ and $1$ | $1$ ($S=0$) / $0$ ($S=1$) |
+| | $(^3\text{He},p), (p,^3\text{He})$ | Transfer of np (Mixed) | $0$ and $1$ | $1$ (for $s_{particle}=0$) / $0$ (for $s_{particle}=1$) |
 | **Cluster Transfer** | $(^6\text{Li},d)$ | Transfer of $\alpha$-cluster | $0$ | $0$ |
 | **Charge Exchange** | $(p,n), (n,p)$ | Fermi / Gamow-Teller | $0$ and $1$ | $1$ |
 | | $(^3\text{He},t), (t,^3\text{He})$ | Fermi / Gamow-Teller | $0$ and $1$ | $1$ |

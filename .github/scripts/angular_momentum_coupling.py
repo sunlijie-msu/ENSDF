@@ -6,8 +6,15 @@ def calc(target, particle):
     Calculates allowed final angular momenta (J) and parity (π) 
     by coupling a target nucleus with a particle and orbital angular momentum L.
     
-    The 'particle' parameter represents the intrinsic properties of the 
-    transferred particle: s_particle (spin) and π_particle (parity).
+    Parameters:
+    -----------
+    target : str
+        Target nucleus in J^π format (e.g., "3/2-", "0+", "5/2+")
+        where J is spin (integer or half-integer) and π is parity (+/-)
+    
+    particle : str
+        Transferred particle in s^π format (e.g., "1/2+", "0+", "1-")
+        where s is intrinsic particle spin and π is intrinsic particle parity
     
     Selection Rules:
     1. Channel Spin S: |J_target - s_particle| <= S <= J_target + s_particle
@@ -29,7 +36,9 @@ def calc(target, particle):
         pi_particle = 1 if particle.endswith('+') else -1
     except ValueError as e:
         print(f"Error parsing input: {e}")
-        print("Usage example: python angular_momentum_coupling.py 3/2- 1/2+")
+        print("Usage: python angular_momentum_coupling.py <Target_J^π> <Particle_s^π>")
+        print("Example: python angular_momentum_coupling.py 3/2- 1/2+")
+        print("         (Target: J=3/2 π=-, Particle: s=1/2 π=+)")
         return
 
     print(f"\nTarget: J={J_target} π={'+' if pi_target>0 else '-'} | Particle: s={s_particle} π={'+' if pi_particle>0 else '-'}")
@@ -88,7 +97,15 @@ if __name__ == "__main__":
     if len(sys.argv) == 3:
         calc(sys.argv[1], sys.argv[2])
     else:
-        print("Usage: python angular_momentum_coupling.py <Target> <Particle>")
+        print("Usage: python angular_momentum_coupling.py <Target_J^π> <Particle_s^π>")
+        print("")
+        print("Arguments:")
+        print("  Target_J^π   : Target nucleus spin-parity, e.g., 3/2-")
+        print("  Particle_s^π : Transferred particle spin-parity, e.g., 1/2+")
+        print("")
         print("Example: python angular_momentum_coupling.py 3/2- 1/2+")
+        print("         (Couples J=3/2- target with s=1/2+ particle)")
+        print("")
+        print("Running default example...")
         # Default example run for demonstration
         calc("3/2-", "1/2+")
