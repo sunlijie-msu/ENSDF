@@ -86,7 +86,7 @@ For the transfer of two identical nucleons (2n or 2p) in the same shell model or
 * If they are in a relative s-state (spatially symmetric, $L=0$), their **spin wavefunction must be antisymmetric**.
 * An antiparallel spin state for two fermions corresponds to **$s_{particle}=0$** (spin singlet for the transferred pair).
 * **NDS Policy**: For $(p, t)$, $(t, p)$, and $(^3\text{He}, n)$ reactions, it is standard to assume the transferred pair is in a relative $s$ state (**$s_{particle}=0$**).
-* **Particle Input**: `0+`
+* **Particle Input**: `0+` for transferring $s_{particle}=0, T_{particle}=1$ particle pair
 
 #### 2. Neutron-Proton Transfer (1n1p)
 
@@ -97,14 +97,14 @@ For the transfer of a neutron-proton pair, the selection rules depend on the pro
 * **$(\alpha, d)$ and $(d, \alpha)$**:
   * Both $d$ and $\alpha$ have $T=0$. Thus, only **$T=0$** transfer is allowed.
   * Antisymmetry requires $s_{particle}+T$ to be odd (for $L=0$). Since $T=0$, the transferred pair must be spin triplet, i.e., **$s_{particle}=1$**.
-  * **Particle Input**: `1+` (for transferring $s_{particle}=1, T_{particle}=0$ pair)
+  * **Particle Input**: `1+` for transferring $s_{particle}=1, T_{particle}=0$ particle pair
 
 * **$(^3\text{He}, p)$ and $(p, ^3\text{He})$**:
   * Both particles have $s_{particle}=1/2, T_{particle}=1/2$.
   * Allowed transferred-pair components: **$(s_{particle}=0, T_{particle}=1)$** and **$(s_{particle}=1, T_{particle}=0)$**.
   * **Particle Input**:
-    * `0+` (for transferring $s_{particle}=0, T_{particle}=1$ pair)
-    * `1+` (for transferring $s_{particle}=1, T_{particle}=0$ pair)
+    * `0+` for transferring $s_{particle}=0, T_{particle}=1$ particle pair
+    * `1+` for transferring $s_{particle}=1, T_{particle}=0$ particle pair
   * *Note: Both components can contribute.*
 
 ### D. Cluster Transfer Reactions
@@ -123,8 +123,8 @@ An alpha particle is transferred.
 * **Particle Input**: `0+`
 
 * **$(p, p')$**: The proton ($s=1/2$) can undergo spin-flip. It allows both Isoscalar ($T=0$) and Isovector ($T=1$) transitions.
-  * **Particle Input**: `0+` (for non spin-flip)
-  * **Particle Input**: `1+` (for spin-flip)
+  * **Particle Input**: `0+` for non spin-flip
+  * **Particle Input**: `1+` for spin-flip
 
 ### F. Charge Exchange Reactions
 
@@ -138,13 +138,13 @@ These reactions exchange a nucleon type (isospin flip), strictly requiring an is
 * **Gamow-Teller Transitions** ($\Delta S=1, \Delta T=1$): Involve a spin-flip. Excites $1^+$ states from $0^+$ targets.
   * **Particle Input**: `1+` (for spin-flip)
 
-**Specific Selectivity:**
+* **$(^6\text{Li}, ^6\text{He})$**: Pure Gamow-Teller probe due to the $1^+ \to 0^+$ projectile transition. Fermi transitions are forbidden.
+  * **Particle Input**: `1+` (for spin-flip)
 
 * **$(p, n)$ and $(^3\text{He}, t)$**: Mixed probes.
   * **Particle Input**: `0+` (for non spin-flip)
   * **Particle Input**: `1+` (for spin-flip)
-* **$(^6\text{Li}, ^6\text{He})$**: Pure Gamow-Teller probe due to the $1^+ \to 0^+$ projectile transition. Fermi transitions are forbidden.
-  * **Particle Input**: `1+` (for spin-flip)
+
 
 ## 3. Interpreting the Output
 
@@ -159,22 +159,24 @@ You receive output like:
 ```text
 Target: J=3/2 π=- | Particle: s=1/2 π=+
 Channel Spins S: 1, 2: from |3/2 - 1/2| to 3/2 + 1/2
-------------------------------------------------------------
-L   Wave  Parity   S     Final Jπ
-------------------------------------------------------------
-0   s     -        1     1-
-0   s     -        2     2-
-------------------------------------------------------------
-1   p     +        1     0+, 1+, 2+
-1   p     +        2     1+, 2+, 3+
-------------------------------------------------------------
+----------------------------------------------------------------------
+Wave   L    S      Final Jπ
+----------------------------------------------------------------------
+s      0    1      1-
+s      0    2      2-
+----------------------------------------------------------------------
+p      1    1      0+, 1+, 2+
+p      1    2      1+, 2+, 3+
+----------------------------------------------------------------------
+d      2    1      1-, 2-, 3-
+d      2    2      0-, 1-, 2-, 3-, 4-
+----------------------------------------------------------------------
 ```
 
-* **L (Wave)**: The orbital angular momentum ($\ell$) between target and particle, ranging from 0 to 4 in the output (s, p, d, f, g waves).
-* **Parity**: The parity of the final state, determined by $\pi_{final} = \pi_{target} \times \pi_{particle} \times (-1)^{\ell}$.
-* **S (Channel Spin)**: The intermediate coupling $S = \vec{J}_{target} + \vec{s}_{particle}$ before adding orbital angular momentum.
-  * For $3/2^-$ target and $1/2^+$ particle: $S$ ranges from $|3/2 - 1/2| = 1$ to $3/2 + 1/2 = 2$.
-* **Final Jπ**: All allowed total angular momentum and parity combinations for each $(L, S)$ pair, calculated from $|\ell - S| \le J_{final} \le \ell + S$.
+* **Wave**: The orbital angular momentum ($\ell$) between target and particle, expressed as spectroscopic notation (s, p, d, f, g, h, i for $\ell = 0, 1, 2, 3, 4, 5, 6$).
+* **L**: Numeric value of orbital angular momentum ($\ell$).
+* **S**: Channel Spin value ($S = \vec{J}_{target} + \vec{s}_{particle}$). For $3/2^-$ target and $1/2^+$ particle: $S$ ranges from $|3/2 - 1/2| = 1$ to $3/2 + 1/2 = 2$.
+* **Final Jπ**: All allowed final spin-parity combinations for each $(L, S)$ pair. Values are calculated from $|\ell - S| \le J_{final} \le \ell + S$. Parity is determined by $\pi_{final} = \pi_{target} \times \pi_{particle} \times (-1)^{\ell}$.
 
 ### Example Analysis: $^{59}\text{Cu}(p, \gamma)^{60}\text{Zn}$
 
@@ -220,7 +222,7 @@ $$\vec{T}_{final} = \vec{T}_{target} + \vec{T}_{particle}$$
 | **One Proton Transfer** | $(d,n), (n,d), (^3\text{He},d), (d,^3\text{He}), (\alpha,t), (t,\alpha)$ | Transfer of $p$ | $1/2$ | $1/2$ |
 | **Two-Nucleon Transfer** | $(p,t), (t,p), (^3\text{He},n)$ | Transfer of $2n$ or $2p$ ($L_{rel}=0$) | $0$ | $1$ |
 | | $(\alpha,d), (d,\alpha)$ | Transfer of $np$ (Deuteron-like) | $1$ | $0$ |
-| | $(^3\text{He},p), (p,^3\text{He})$ | Transfer of np (Mixed) | $0$ and $1$ | $1$ (for $s_{particle}=0$) / $0$ (for $s_{particle}=1$) |
+| | $(^3\text{He},p), (p,^3\text{He})$ | Transfer of np (Mixed) | $0$ and $1$ | $1$ ($s_{particle}=0$) / $0$ ($s_{particle}=1$) |
 | **Cluster Transfer** | $(^6\text{Li},d)$ | Transfer of $\alpha$-cluster | $0$ | $0$ |
 | **Charge Exchange** | $(p,n), (n,p)$ | Fermi / Gamow-Teller | $0$ and $1$ | $1$ |
 | | $(^3\text{He},t), (t,^3\text{He})$ | Fermi / Gamow-Teller | $0$ and $1$ | $1$ |
