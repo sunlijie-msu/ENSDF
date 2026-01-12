@@ -132,7 +132,7 @@ These reactions exchange a nucleon type (isospin flip), strictly requiring an is
 * **Fermi Transitions** ($\Delta S=0, \Delta T=1$): Excites the Isobaric Analog State (IAS).
   * **Particle Input**: `0+`
 
-* **Gamow-Teller Transitions** ($\Delta S=1, \Delta T=1$): Excites $1^+$ states from $0^+$ targets.
+* **Gamow-Teller Transitions** ($\Delta S=1, \Delta T=1$): Involve a spin-flip. Excites $1^+$ states from $0^+$ targets.
   * **Particle Input**: `1+`
 
 **Specific Selectivity:**

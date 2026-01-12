@@ -2,12 +2,13 @@
  34CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34CL  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34CL2 H CUT=28-May-2012$                                                       
- 34CL c  {+34}S+1p|)1n+{+34}Cl from J|p=0+ {+34}S ground state.                 
+ 34CL c  {+34}S+1p|)1n+{+34}Cl from J|p=0+ {+34}S ground state. Selection rules:
+ 34CL2c  |DS=0,1; |DT=1.
  34CL c  1987Fu11,1987Or02: a 35-MeV proton beam was provided from the          
  34CL2c  AVF-cyclotron and a beam swinger system at Tohoku University. The      
  34CL3c  target was 2.64-mg/cm{+2}, 94.4%-enriched {+34}S evaporated on         
  34CL4c  99.9%-enriched {+12}C foils covered by thin gold. Measured |s(E{-n},|q)
- 34CL5c  and analyzed with microscopic and macroscopic DWBA.                    
+ 34CL5c  and analyzed with microscopic DWBA. Deduced level, L, J, and |p.       
  34CL c  2002Or05,1999OrZZ,1997Jo08: a 35-MeV proton beam was provided from the 
  34CL2c  AVF-cyclotron and a beam swinger system at Tohoku University. Targets  
  34CL3c  were prepared by evaporating {+34}S onto enriched {+12}C foils.        
@@ -17,18 +18,18 @@
  34CL c  Reaction-threshold and excitation-function measurements: 1977Ba16,     
  34CL2c  1970Um01, 1969UmZZ, 1966Ma75, 1965Fr03, 1952Hi66                       
  34CL cL E$From 1987Fu11                                                        
- 34CL cL J$From 1987Fu11 (based on DWBA calculations which depend on different  
- 34CL2cL |DJ(|DL,|DS) combinations)                                             
- 34CL  L 0.0          0+                                                        
- 34CL cL $IAS of {+34}S g.s. observed by 1987Fu11, 1997Jo08                     
- 34CL  L 461          1+                                                        
+ 34CL cL J,L$From DWBA analysis of measured |s(|q) using different |DJ(|DL,|DS) 
+ 34CL2cL combinations (1987Fu11).                                               
+ 34CL  L 0            0+                               0                        
+ 34CL cL $IAS of {+34}S g.s., observed in 1987Fu11 and 1997Jo08                 
+ 34CL  L 461          1+                               2                        
  34CL  L 666          1+                                                        
- 34CL  L 1230         2+                                                        
- 34CL  L 1890         2+                                                        
+ 34CL  L 1230         2+                               2                        
+ 34CL  L 1890         2+                               2                        
  34CL  L 2581         1+                                                        
- 34CL  L 3128         1+                                                        
+ 34CL  L 3128         1+                               0                        
  34CL cL $B(>)=1.30 {I7} (2002Or05)                                             
- 34CL  L 3380         2+                                                        
+ 34CL  L 3380         2+                               2                        
  34CL  L 4985         1+,2+                                                     
  34CL cL E$unresolved 4971+4996 doublet                                         
 
