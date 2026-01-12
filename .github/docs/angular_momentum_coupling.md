@@ -6,6 +6,20 @@ This document provides the theoretical background and practical usage guide for 
 
 The code implements the **Channel Spin Coupling Scheme**, which is a standard method for determining angular momentum conservation in nuclear reactions.
 
+### Notation
+
+| Symbol | Meaning |
+|--------|---------|
+| $J_{target}$ | Spin of target nucleus |
+| $\pi_{target}$ | Parity of target nucleus |
+| $s_{particle}$ | Spin of transferred particle (Python input) |
+| $\pi_{particle}$ | Parity of transferred particle (Python input) |
+| $T_{particle}$ | Isospin of transferred particle |
+| $\ell$ | Relative orbital angular momentum between the target and the particle |
+| $S$ | Channel Spin = $J_{target} + s_{particle}$ |
+| $J_{final}$ | Spin of the populated final nuclear state |
+| $\pi_{final}$ | Parity of the populated final nuclear state |
+
 ### Conservation Laws
 
 In any nuclear reaction $Target + Particle \to Final\_State$, the following quantities are conserved:
@@ -17,11 +31,6 @@ In any nuclear reaction $Target + Particle \to Final\_State$, the following quan
 2. **Parity** ($\pi$):
 
    $$\pi_{final} = \pi_{target} \times \pi_{particle} \times (-1)^{\ell}$$
-
-Where:
-* $\vec{J}_{target}$: Spin of the target nucleus.
-* $\vec{s}_{particle}$: Intrinsic spin of the interacting particle (projectile or transferred cluster).
-* $\vec{\ell}$: Relative orbital angular momentum between the target and the particle.
 
 ### Coupling Scheme Used in Code
 
@@ -38,6 +47,8 @@ The code performs the vector addition in two steps (Channel Spin representation)
    $$\vec{J}_{final} = \vec{\ell} + \vec{S}$$
 
    Possible values: $|\ell - S| \le J_{final} \le \ell + S$
+
+**Important**: The "Particle" input to this tool represents the **intrinsic properties of the transferred particle**: spin $s_{particle}$, parity $\pi_{particle}$, and isospin $T_{particle}$.
 
 ## 2. Application to Different Reaction Types
 
@@ -86,7 +97,7 @@ For the transfer of a neutron-proton pair, the selection rules depend on the pro
   * Antisymmetry requires $S+T$ to be odd (for relative $L=0$). Since $T=0$, the transfer is restricted to **$S=1$** (spin triplet).
   * **Particle Input**: `1+`
 
-* **$(^3\text{He}, p)$, $(p, ^3\text{He})$, and $(p,p')$**:
+* **$(^3\text{He}, p)$ and $(p, ^3\text{He})$**:
   * Both particles have $S=1/2, T=1/2$.
   * Allowed transfers are **$(S=0, T=1)$** and **$(S=1, T=0)$**.
   * **Particle Input**:
@@ -144,7 +155,7 @@ You receive output like:
 Target: J=3/2 π=- | Particle: s=1/2 π=+
 Channel Spins S: 1, 2: from |3/2 - 1/2| to 3/2 + 1/2
 ------------------------------------------------------------
-L   Wave  Parity   s     Final Jπ
+L   Wave  Parity   S     Final Jπ
 ------------------------------------------------------------
 0   s     -        1     1-
 0   s     -        2     2-
@@ -156,7 +167,7 @@ L   Wave  Parity   s     Final Jπ
 
 * **L (Wave)**: The orbital angular momentum ($\ell$) between target and particle, ranging from 0 to 4 in the output (s, p, d, f, g waves).
 * **Parity**: The parity of the final state, determined by $\pi_{final} = \pi_{target} \times \pi_{particle} \times (-1)^{\ell}$.
-* **s (Channel Spin)**: The intermediate coupling $S = \vec{J}_{target} + \vec{s}_{particle}$ before adding orbital angular momentum.
+* **S (Channel Spin)**: The intermediate coupling $S = \vec{J}_{target} + \vec{s}_{particle}$ before adding orbital angular momentum.
   * For $3/2^-$ target and $1/2^+$ particle: $S$ ranges from $|3/2 - 1/2| = 1$ to $3/2 + 1/2 = 2$.
 * **Final Jπ**: All allowed total angular momentum and parity combinations for each $(L, S)$ pair, calculated from $|\ell - S| \le J_{final} \le \ell + S$.
 
@@ -180,26 +191,26 @@ L   Wave  Parity   s     Final Jπ
 
 For transfer reactions, isospin ($T$) provides additional selection rules.
 
-* **Single Nucleon Transfer**: Transferring one nucleon ($n$ or $p$) changes isospin by $T_{transfer} = 1/2$.
-* **Identical Nucleon Pair (2n/2p)**: In a relative $L=0$ state, the Pauli Principle requires $S=0$ (spin singlet) and $T=1$ (isospin triplet). Thus $T_{transfer} = 1$.
+* **Single Nucleon Transfer**: Transferring one nucleon ($n$ or $p$) has $T_{particle} = 1/2$.
+* **Identical Nucleon Pair (2n/2p)**: In a relative $L=0$ state, the Pauli Principle requires $S=0$ (spin singlet) and $T=1$ (isospin triplet). Thus $T_{particle} = 1$.
 * **Neutron-Proton Pair (np)**:
-  * Deuteron-like ($S=1, T=0$): $T_{transfer} = 0$
-  * Singlet ($S=0, T=1$): $T_{transfer} = 1$
+  * Deuteron-like ($S=1, T=0$): $T_{particle} = 0$
+  * Singlet ($S=0, T=1$): $T_{particle} = 1$
 
 **Selection Rule**: The final isospin is determined by vector addition:
 
-$$\vec{T}_f = \vec{T}_{target} + \vec{T}_{transfer}$$
+$$\vec{T}_{final} = \vec{T}_{target} + \vec{T}_{particle}$$
 
 *Note: This tool calculates angular momentum ($J^\pi$) only. Isospin selection rules must be applied separately.*
 
 ## 5. Summary of Transferred Particle Properties
 
-| Reaction Mechanism | Common Examples | Physical Process | $S_{particle}$ | $T_{particle}$ |
+| Reaction Mechanism | Common Examples | Physical Process | $s_{particle}$ | $T_{particle}$ |
 | :--- | :--- | :--- | :--- | :--- |
 | **Radiative Capture** | $(p,\gamma), (n,\gamma)$ | Projectile capture | $1/2$ | $1/2$ |
 | | $(\alpha,\gamma)$ | Projectile capture | $0$ | $0$ |
 | **Inelastic Scattering** | $(\alpha,\alpha')$ | Excitation (Natural Parity) | $0$ | $0$ |
-| | $(p,p')$ | Excitation ($S=0$ and $S=1$) | $0$ and $1$ | $1$ ($S=0$) / $0$ ($S=1$) |
+| | $(p,p')$ | Excitation ($S=0$ and $S=1$) | $0$ and $1$ | $0$ and $1$ |
 | **One Neutron Transfer** | $(d,p), (p,d), (t,d), (d,t), (\alpha,^3\text{He}), (^3\text{He},\alpha)$ | Transfer of $n$ | $1/2$ | $1/2$ |
 | **One Proton Transfer** | $(d,n), (n,d), (^3\text{He},d), (d,^3\text{He}), (\alpha,t), (t,\alpha)$ | Transfer of $p$ | $1/2$ | $1/2$ |
 | **Two-Nucleon Transfer** | $(p,t), (t,p), (^3\text{He},n)$ | Transfer of $2n$ or $2p$ ($L_{rel}=0$) | $0$ | $1$ |
