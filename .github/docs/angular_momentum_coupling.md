@@ -221,6 +221,6 @@ $$\vec{T}_{final} = \vec{T}_{target} + \vec{T}_{particle}$$
 | | $(\alpha,d), (d,\alpha)$ | Transfer of $np$ (Deuteron-like) | $1$ | $0$ |
 | | $(^3\text{He},p), (p,^3\text{He})$ | Transfer of np (Mixed) | $0$ and $1$ | $1$ ($s_{particle}=0$) / $0$ ($s_{particle}=1$) |
 | **Cluster Transfer** | $(^6\text{Li},d)$ | Transfer of $\alpha$-cluster | $0$ | $0$ |
-| **Charge Exchange** | $(p,n), (n,p)$ | Fermi / Gamow-Teller | $0$ and $1$ | $1$ |
-| | $(^3\text{He},t), (t,^3\text{He})$ | Fermi / Gamow-Teller | $0$ and $1$ | $1$ |
+| **Charge Exchange** | $(p,n), (n,p)$ | Fermi / Gamow-Teller | $0$ and $1$ | $0$ and $1$ |
+| | $(^3\text{He},t), (t,^3\text{He})$ | Fermi / Gamow-Teller | $0$ and $1$ | $0$ and $1$ |
 | | $(^6\text{Li},^6\text{He})$ | Pure Gamow-Teller ($1^+ \to 0^+$) | $1$ | $1$ |
