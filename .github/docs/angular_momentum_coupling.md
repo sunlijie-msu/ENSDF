@@ -134,8 +134,10 @@ These reactions exchange nucleon type (n ↔ p), governed by the transferred ang
 
 #### Transition Types
 
-* **Fermi** ($\Delta L = 0, \Delta S = 0, \Delta J = 0, \Delta T = 0?$): No spin-flip, no parity change. Excites the Isobaric Analog State with $J_f = J_i$ and $\pi_f = \pi_i$.
-* **Gamow-Teller** ($\Delta L = 0, \Delta S = 1, \Delta J = 1, \Delta T = 0,1$): Spin-flip transition. Selection rule: $J_f = J_i, J_i \pm 1$ (without $0 \to 0$). From $0^+$ targets, selectively populates $1^+$ states.
+* **Fermi** ($\Delta L = 0, \Delta S = 0, \Delta J = 0, \Delta T = 0$): The emitted electron and antineutrino (or positron and neutrino) have antiparallel spins, and hence, no spin-flip, no parity change. Excites the Isobaric Analog State with $J_f = J_i$ and $\pi_f = \pi_i$.
+
+* **Gamow-Teller** ($\Delta L = 0, \Delta S = 1, \Delta J = 1, \Delta T = 0, \pm1$): The emitted leptons have parallel spins, and hence, spin-flip. Selection rule: $J_f = J_i, J_i \pm 1$ but except $J_i = 0 \to J_f = 0$. Therefore, from $0^+$ targets, GT transitions selectively populate $1^+$ states. Except $T_i = 0 \to T_f = 0$.
+
 * **Spin-Dipole** ($\Delta L = 1, \Delta S = 1$): Parity change ($\pi_f = -\pi_i$), with $\Delta J = 0, 1, 2$.
 
 #### Particle Input
@@ -226,6 +228,6 @@ $$\vec{T}_{final} = \vec{T}_{target} + \vec{T}_{particle}$$
 | | $(\alpha,d), (d,\alpha)$ | Transfer of $np$ (Deuteron-like) | $1$ | $0$ |
 | | $(^3\text{He},p), (p,^3\text{He})$ | Transfer of np (Mixed) | $0$ and $1$ | $1$ ($s_{particle}=0$) / $0$ ($s_{particle}=1$) |
 | **Cluster Transfer** | $(^6\text{Li},d)$ | Transfer of $\alpha$-cluster | $0$ | $0$ |
-| **Charge Exchange** | $(p,n), (n,p)$ | Fermi / Gamow-Teller | $0$ and $1$ | $0$ and $1$ |
-| | $(^3\text{He},t), (t,^3\text{He})$ | Fermi / Gamow-Teller | $0$ and $1$ | $0$ and $1$ |
-| | $(^6\text{Li},^6\text{He})$ | Pure Gamow-Teller ($1^+ \to 0^+$) | $1$ | $1$ |
+| **Charge Exchange** | $(p,n), (n,p)$ | Fermi / GT | $0$ / $1$ | $0$ / $0,1$ |
+| | $(^3\text{He},t), (t,^3\text{He})$ | Fermi / GT | $0$ / $1$ | $0$ / $0,1$ |
+| | $(^6\text{Li},^6\text{He})$ | Pure GT ($1^+ \to 0^+$) | $1$ | $0,1$ |
