@@ -130,17 +130,22 @@ An alpha particle is transferred.
 
 *Examples:* $(p, n)$, $(^3\text{He}, t)$, $(^6\text{Li}, ^6\text{He})$
 
-These reactions exchange a nucleon type (n ↔ p), changing the isospin projection by $\Delta T_z = \pm 1$. The total isospin change $\Delta T$ depends on the transition type:
+These reactions exchange nucleon type (n ↔ p), governed by the transferred angular momentum ($\Delta L$), spin ($\Delta S$), and total angular momentum ($\Delta J = \Delta L + \Delta S$). Parity change follows $\pi_f = \pi_i (-1)^{\Delta L}$.
 
-* **Fermi Transitions** ($\Delta S=0, \Delta L=0, \Delta T=0, \Delta T_z=\pm 1$): Pure isospin operator without spin change. Excites the Isobaric Analog State (IAS) with $\Delta J^\pi = 0^+ \to 0^+$.
-* **Gamow-Teller Transitions** ($\Delta S=1, \Delta L=0, \Delta T=0$ or $1, \Delta T_z=\pm 1$): Spin-isospin coupled operator. Excites states with $\Delta J = 0, 1$ (but not $0^+ \to 0^+$). Strong transitions from $0^+$ targets populate $1^+$ states.
+#### Transition Types
 
-* **$(^6\text{Li}, ^6\text{He})$**: Pure Gamow-Teller probe due to the $1^+ \to 0^+$ projectile transition. Fermi transitions are forbidden.
+* **Fermi** ($\Delta L = 0, \Delta S = 0, \Delta J = 0, \Delta T = 0?$): No spin-flip, no parity change. Excites the Isobaric Analog State with $J_f = J_i$ and $\pi_f = \pi_i$.
+* **Gamow-Teller** ($\Delta L = 0, \Delta S = 1, \Delta J = 1, \Delta T = 0,1$): Spin-flip transition. Selection rule: $J_f = J_i, J_i \pm 1$ (without $0 \to 0$). From $0^+$ targets, selectively populates $1^+$ states.
+* **Spin-Dipole** ($\Delta L = 1, \Delta S = 1$): Parity change ($\pi_f = -\pi_i$), with $\Delta J = 0, 1, 2$.
+
+#### Particle Input
+
+* **$(^6\text{Li}, ^6\text{He})$**: Pure Gamow-Teller ($1^+$ $^6\text{Li}$ to $0^+$ $^6\text{He}$ projectile).
   * **Particle Input**: `1+`
 
-* **$(p, n)$ and $(^3\text{He}, t)$**: Mixed probes.
-  * **Particle Input**: `0+`
-  * **Particle Input**: `1+`
+* **$(p, n)$ and $(^3\text{He}, t)$**: Mixed (Fermi + Gamow-Teller).
+  * **Particle Input**: `0+` (Fermi)
+  * **Particle Input**: `1+` (Gamow-Teller)
 
 
 ## 3. Interpreting the Output
