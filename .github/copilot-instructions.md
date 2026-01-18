@@ -448,8 +448,15 @@ Format: Use {In} or {I+n-m} notation with braces
 - Comment line: ` 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)` (uncertainty uses {I11} notation)
 
 ### Nuclear Science References (NSR)
-
 Each article in NSR has a unique 8-character key number ("key number") used to reference articles in ENSDF and other nuclear databases.
+
+**Format:** YYYYAA## (e.g., `1970Br10`, `1974ClZK`)
+
+**Capitalization:**
+- Author initials: First uppercase, rest lowercase (`Ba` not `BA`, `Br` not `BR`)
+- Letter suffixes: ALL UPPERCASE (`ClZK` not `Clzk`, `UmZZ` not `Umzz`)
+
+**List Formatting:** Comma-separated with spaces: `2021Vl03, 2015Vl01, 1974ClZK` (NOT space-only separation)
 
 ---
 
