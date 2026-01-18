@@ -13,7 +13,7 @@ You must follow strict ENSDF data formatting and column positioning protocols to
 
 ### Superscripts and Subscripts
 - `{+n}` → superscript (e.g., `{+3}He` displays as ³He)
-- `{-n}` → subscript (e.g., `T{-1/2}` → T₁/₂)
+- `{-n}` → subscript (e.g., `T{-1/2}` → T₁/₂, `CO{-2}` → CO₂)
 - `{+-n}` → negative superscript (e.g., `10{+-4}` displays as 10⁻⁴)
 
 ### Greek Letters and Mathematical Symbols
@@ -53,7 +53,9 @@ You must follow strict ENSDF data formatting and column positioning protocols to
 #### Common Examples
 - `%(|e+|b{++})p` → %(ε+β⁺)p
 - `{+208}Pb({+36}S,{+35}S)` → ²⁰⁸Pb(³⁶S,³⁵S)
+- `{+32}S({+3}He,p|g){+34}Cl` → ³²S(³He,pγ)³⁴Cl
 - `|s(E({+3}He),|q)` → σ(E(³He),θ)
+- `Zn{-3}P{-2}` → Zn₃P₂
 
 
 ---
