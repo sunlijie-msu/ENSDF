@@ -9,44 +9,45 @@ applyTo: "**"
 python .github/scripts/Java_Average.py VALUE1 UNC1 [VALUE2 UNC2 ...]
 ```
 
-Algorithm: Replicates AverageTool_22January2025.jar exactly.
+**Algorithm:** Replicates `AverageTool_22January2025.jar`.
 
 ## Workflow
 
-1. Collect measurements with uncertainties
-2. Run: `python .github/scripts/Java_Average.py 280 50 215 70 130 60 120 65`
-3. Use **EXACT** "Suggested Adopted Result" from output
-4. Apply to ENSDF record
+1. **Collect Data**: Gather values and uncertainties from original papers.
+2. **Execute**: `python .github/scripts/Java_Average.py 280 50 215 70 130 60 120 65`
+3. **Adopt Result**: Use exact "Suggested Adopted Result" and uncertainty.
+4. **Update File**: Apply to L-record and standardize cL comment.
 
-## Critical Rules
+## Data Selection Rules
 
 ### One Value Per Paper
+Use one primary value per original publication. If multiple methods exist in one paper, select the most reliable result.
 
-Use **ONE value per original paper**, NOT one value per method.
+### Mixed Measurements and Limits
+*   **Consistency**: If a measurement (e.g., 22 ps) is consistent with a limit (e.g., >14 ps), adopt the measurement. Move the limit to "Other:" in the comment list.
+*   **Discrepancy**: If inconsistent (e.g., 10 ps vs. >14 ps), flag the discrepancy. Prioritize the most modern or high-precision study.
+*   **Multiple Limits**: Adopt the most restrictive boundary (largest for `>`, smallest for `<`).
 
-- Multiple methods in same paper → select best value
-- Lower limits → adopt largest limit
-- Upper limits → adopt smallest limit
-- Trace back to original papers (dataset values may differ)
+### Unit Normalization
+*   **Threshold**: Java Average converts values >99 to the next unit (e.g., 101 fs → 0.101 ps).
+*   **Matching**: Ensure all listed components in the comment match the unit of the adopted result for consistency.
 
-### Java Output Rules (Zero Tolerance)
+## Java Output Rules (Zero Tolerance)
 
-| Rule | Action |
-|------|--------|
-| Suggested Adopted Result | Use EXACTLY as shown |
-| Uncertainty | Use EXACTLY (includes "≥ any input" rule) |
-| Weighted vs Unweighted | Use whichever Java suggests |
-| Transcription | Character-for-character, no rounding |
+| Component | Action |
+| :--- | :--- |
+| **Adopted Result** | Use character-for-character; no rounding or adjustment. |
+| **Uncertainty** | Use exactly as provided (follows "≥ any input uncertainty" rule). |
+| **Method** | Use the suggested average (Weighted vs. Unweighted) explicitly. |
 
-**FORBIDDEN:** Recalculating, modifying uncertainty, substituting weighted/unweighted.
+**FORBIDDEN**: Recalculating or modifying averages or substituting suggested uncertainties.
 
 ## Lifetime Uncertainty Format
-
 Lifetimes use uncertainty limit **99** (not default 35).
 
-| Input | Default (limit 35) | Lifetime (limit 99) |
-|-------|-------------------|---------------------|
-| 197±50 | `2.0E2 {I5}` ❌ | `197 fs {I50}` ✓ |
+| Input | Standard (Limit 35) | Lifetime (Limit 99) |
+| :--- | :--- | :--- |
+| 197 ± 50 | `2.0E2 {I5}` (Scientific) | `197 fs {I50}` (Full precision) |
 
 
 **Rationale:** Full precision preserves information; scientific notation loses it.
