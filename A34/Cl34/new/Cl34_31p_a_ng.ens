@@ -34,14 +34,19 @@
  34CL2cL DSAM).                                                                 
  34CL  L 3600.00   10 (2,3)            23 PS     5                              
  34CL cL T$lifetime |t=23 ps {I5} (1978Ba61, RDM).                              
- 34CL cL $MR=-0.02 {I3} (1978Ba61) for 879.1 keV |g.                            
+ 34CL cL $MR=-0.02 {I3} (1978Ba61) for 879 keV |g with Q(+O) with A2=0.40(2)    
+ 34CL2cL A4=-0.14(3). MR=+0.07 {I17} (1978Ba61) for 3454 |g with A2=-0.16(3) with  
+ 34CL3cL D(+Q).                                                                 
  34CL  L 3631.39    8 (1,2)            280 PS    60                             
  34CL cL T$lifetime |t=280 ps {I60} (1978Ba61, RDM).                            
- 34CL cL $MR: -0.08 {I20} (1978Ba61) for 1255.7 keV |g; -0.14 {I18} or -6.0     
- 34CL2cL {I29} (1978Ba61) for 3484.7 keV |g.                                    
- 34CL  L 4743.15   11 (4,5)            7 PS      3                              
+ 34CL  G 1256                                                                   
+ 34CL  L 4743.15   11 4,6              7 PS      3                              
  34CL cL T$lifetime |t=7 ps {I3} (1978Ba61, RDM).                               
- 34CL cL $MR: -0.03 {I9} (1978Ba61) for 1143.0 keV |g; +0.07 {I9} (1978Ba61) for
- 34CL2cL 4596.5 keV |g.                                                         
- 34CL  L 5314.93   17 (4,5,6)                                                   
- 34CL cL $MR=-0.02 {I7} (1978Ba61) for 571.8 keV |g.                            
+ 34CL cL $MR: -0.03 {I9} (1978Ba61) for 1143 keV |g; +0.07 {I9} (1978Ba61) for  
+ 34CL2cL 4597 keV |g. G 1143 D(+Q)                                              
+ 34CL cG $A{-2}=0.31 {I5}, A{-4}=-0.17 {I4} (1978Ba61). G 4597 O(+H)
+ 34CL cG $A{-2}=0.52 {I6}, A{-4}=0.20 {I7}, A6=0.13(8) (1978Ba61).              
+ 34CL  L 5314.93   17 7                                                         
+ 34CL  G 572                    D(+Q)    -0.02   7                              
+ 34CL cG M,MR$ from |g(|q) in 1978Ba61                                          
+ 34CL cG $A{-2}=-0.33 {I5} (1978Ba61).                                          
