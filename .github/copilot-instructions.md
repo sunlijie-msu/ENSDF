@@ -12,12 +12,12 @@ You must follow strict ENSDF data formatting and column positioning protocols to
 ## 1. ENSDF Text Format Standards
 
 ### Superscripts and Subscripts
-- `{+n}` → superscript (e.g., `{+3}He` displays as ³He)
-- `{-n}` → subscript (e.g., `T{-1/2}` → T₁/₂, `CO{-2}` → CO₂)
-- `{+-n}` → negative superscript (e.g., `10{+-4}` displays as 10⁻⁴)
+- `{+n}`: Superscript (e.g., `{+3}He` displays as ³He)
+- `{-n}`: Subscript (e.g., `T{-1/2}` → T₁/₂, `CO{-2}` → CO₂)
+- `{+-n}`: Negative superscript (e.g., `10{+-4}` displays as 10⁻⁴)
 
 ### Greek Letters and Mathematical Symbols
-**Greek lowercase:**
+**Greek Lowercase:**
 - `|a` → α (alpha), `|b` → β (beta), `|c` → η (eta), `|d` → δ (delta)
 - `|e` → ε (varepsilon), `|f` → φ (phi), `|g` → γ (gamma), `|h` → χ (chi)
 - `|i` → ι (iota), `|j` → ε (epsilon), `|k` → κ (kappa), `|l` → λ (lambda)
@@ -25,30 +25,30 @@ You must follow strict ENSDF data formatting and column positioning protocols to
 - `|r` → ρ (rho), `|s` → σ (sigma), `|t` → τ (tau), `|u` → υ (upsilon)
 - `|v` → ? (undefined), `|w` → ω (omega), `|x` → ξ (xi), `|y` → ψ (psi), `|z` → ζ (zeta)
 
-**Greek uppercase:**
+**Greek Uppercase:**
 - `|C` → H, `|D` → Δ (Delta), `|F` → Φ (Phi), `|G` → Γ (Gamma), `|H` → X
 - `|J` → ~ (sim), `|L` → Λ (Lambda), `|P` → Π (Pi), `|Q` → Θ (Theta), `|R` → P
 - `|S` → Σ (Sigma), `|U` → Υ (Upsilon), `|V` → ∇ (nabla)
 - `|W` → Ω (Omega), `|X` → Ξ (Xi), `|Y` → Ψ (Psi)
 
-**Mathematical symbols:**
-- `|*` → × (times), `|?` → ≈ (approx), `|<` → ≤ (leq), `|>` → ≥ (geq)
+**Mathematical Symbols:**
+- `|*` → × (times), `|?` → ≈ (approximate/tilde), `|<` → ≤ (leq), `|>` → ≥ (geq)
 - `|'` → ° (degree), `|+` → ± (plus-minus), `|-` → ∓ (minus-plus)
 - `|=` → ≠ (not equal), `|@` → ∞ (infinity), `|^` → ↑ (up arrow)
-- `|_` → ↓ (down arrow), `|&` → ≡ (equiv), `|(` → ← (left arrow)
+- `|_` → ↓ (down arrow), `|&` → ≡ (equivalent), `|(` → ← (left arrow)
 - `|)` → → (right arrow), `|.` → ∝ (proportional), `||` → | (vertical bar)
 
-**Bracket and parenthesis symbols:**
+**Brackets and Parentheses:**
 - `|0` → ( (left parenthesis), `|1` → ) (right parenthesis)
 - `|2` → [ (left bracket), `|3` → ] (right bracket)
-- `|4` → ⟨ (left angle), `|5` → ⟩ (right angle)
+- `|4` → ⟨ (left angle bracket), `|5` → ⟩ (right angle bracket)
 
-**Mathematical operators:**
+**Mathematical Operators:**
 - `|7` → ∫ (integral), `|8` → ∏ (product), `|9` → ∑ (summation)
 
 **Important Rules:**
-- For approximate values, use `|?` (which gives both ≈ and ~ symbols)
-- Standalone `~` is NOT allowed for approximate values in ENSDF
+- Use `|?` for approximate values (renders as ≈ or ~)
+- Standalone `~` is prohibited for approximate values in ENSDF.
 
 #### Common Examples
 - `%(|e+|b{++})p` → %(ε+β⁺)p
@@ -96,7 +96,7 @@ You must follow strict ENSDF data formatting and column positioning protocols to
 
 **CRITICAL NUCID Rules:**
 - Column positioning is EXACT (one column off breaks ENSDF parsing)
-- Element symbols follow periodic table (case sensitive: Cl not CL)
+- Element symbols follow case sensitive style, e.g., antimony uses SB, not Sb
 - Spaces are mandatory where specified to maintain field boundaries
 - Mass numbers are numeric only (no leading zeros unless 3-digit)
 
@@ -133,10 +133,10 @@ Example:
 | Q | 80 | Blank or '?' denotes an uncertain or questionable level or 'S' denotes a level assumed but not observed, usually near neutron, proton, or alpha separation energy. |
 
 
-**CRITICAL cL Comment Line Association Rule:**
-- cL comment lines apply ONLY to the immediately preceding L-record
-- NEVER modify L-record data based on comment lines for other L-records
-- Each L-record without a following cL line is an independent assignment
+**CRITICAL: cL Comment Line Association**
+- cL comment lines apply **only** to the immediately preceding L-record.
+- Do not modify L-record data based on comments for other levels.
+- Each L-record without a following cL line is an independent assignment.
 
 #### G-Record Format (Gamma Transitions)
 ```
@@ -226,7 +226,7 @@ Example:
 - S: Denotes expected or assumed, but as yet unobserved, gamma transition
 - CRITICAL: Only space, ?, or S allowed in column 80
 
-**Critical Note:** ENSDF files are parsed by automated systems requiring exact positions. One column off equals data rejection.
+**Critical Note:** ENSDF files require exact positioning. One column off equals data rejection.
 
 #### DP-Record Format (Delayed Proton Emission)
 ```
@@ -355,9 +355,11 @@ LOGFT     DFT
 
 ## 3. ENSDF Uncertainty Standards
 
+**CRITICAL:** Uncertainties in data record fields and comment lines use DIFFERENT formats, but both follow an "uncertainty-in-last-digits" notation.
+
 ### Uncertainty Format in Data Record Fields
 
-#### Standard 2-Column Uncertainty Fields (Limited to 1-2 Digits Maximum)
+#### Standard 2-Column Uncertainty Fields (2 Digits Maximum)
 
 - DE field (cols 20-21): 1-2 digits with space padding
   - Single digit: `"5 "` (digit + space), Double digits: `"15"` (two digits)
@@ -398,16 +400,14 @@ For intensities and other values in scientific notation:
 
 #### GT and LT Markers in Uncertainty Fields
 
-- LT = "Less Than" (e.g., `<1.6` becomes `1.6    LT` in DRI field)
-- GT = "Greater Than" (e.g., `>5.2` becomes `5.2    GT` in DRI field)
+- LT = "Less Than" (e.g., `<1.6 ps` becomes `1.6 PS    LT` in T and DT fields)
+- GT = "Greater Than" (e.g., `>5.2 fs` becomes `5.2 FS   GT` in T and DT fields)
 - Format: Value in main field, GT/LT marker in uncertainty field
-- Examples: 
+- Examples for RI and DRI:
   - `<1.6` → RI=`1.6    ` (cols 23-29), DRI=`LT` (cols 30-31)
   - `>5.2` → RI=`5.2    ` (cols 23-29), DRI=`GT` (cols 30-31)
 
 ### Uncertainty Format in Comment Lines
-
-**CRITICAL: Uncertainties in Data Record Fields and in Comment Lines - Two Different Formats - Do Not Confuse**
 
 #### In Data Record Fields (L, G, E, B, DP Records)
 
@@ -449,7 +449,7 @@ Format: Use {In} or {I+n-m} notation with braces
 - Data record: ` 35P   L 1572.0    12 3/2+             2.29 PS   14` (uncertainties are plain numbers)
 - Comment line: ` 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)` (uncertainty uses {I11} notation)
 
-### Nuclear Science References (NSR)
+## Nuclear Science References (NSR)
 Each article in NSR has a unique 8-character key number ("key number") used to reference articles in ENSDF and other nuclear databases.
 
 **Format:** YYYYAA## (e.g., `1970Br10`, `1974ClZK`)
