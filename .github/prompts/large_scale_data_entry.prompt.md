@@ -17,7 +17,14 @@ DCO ratios should be added as comments following a G-record.
 ## CRITICAL ENSDF REQUIREMENTS
 
 ### Data Fidelity
-Meticulously extract all numerical data from the CSV table, ensuring absolute numerical exactness to the original source. Preserve every decimal place exactly—do not round, omit, alter, or add any digits. For example, 10.0 remains 10.0, not 10 or 10.00!
+Meticulously extract all numerical data from the CSV table, ensuring absolute numerical exactness to the original source. Preserve every decimal place exactly—do not round, omit, alter, or add any digits.
+- **No Redundancy**: Use strictly `VALUE {IUNC} (KEY)` format. NEVER add prefixes like "From 1971De27".
+- **NSR Accuracy**: Verify NSR key numbers character-by-character (e.g., `1971De27` not `11971de27`).
+- **No Duplicates**: Check existing `cG` records; never add the same value/NSR pair twice.
+
+### Level Mapping
+- **Physical Identity**: Match levels by physics, not just numbers. A paper's "2722" may map to ENSDF "2721.8".
+- **Verification**: Cross-reference level properties (J|p, T1/2) to ensure correct mapping before data entry.
 
 ### Energy Ordering
 When adding G-records, ensure:
@@ -43,11 +50,12 @@ Maintain precise ENSDF uncertainty notation where applicable. The uncertainty di
 3. **Bidirectional verification**: Always cross-check both forward counting (header→data) and backward counting (data→header) to ensure accurate column-to-data mapping
 
 **CRITICAL VALIDATION STEPS FOR TABULAR DATA:**
-- **Step 1**: List all header columns explicitly, including blank column positions
-- **Step 2**: Count blank cells between data columns - they are positional placeholders
-- **Step 3**: Forward verification: Match each header column to corresponding data column
-- **Step 4**: Backward verification: Confirm each data column maps back to correct header
-- **Step 5**: Arithmetic validation: Verify row/column calculations account for blank cell shifts
+- **Step 1**: List all header columns explicitly, including blank column positions.
+- **Step 2**: Count blank cells between data columns - they are positional placeholders.
+- **Step 3**: Forward verification: Match each header column to corresponding data column.
+- **Step 4**: Backward verification: Confirm each data column maps back to correct header.
+- **Step 5**: Mapping Verification: Explicitly confirm "Paper Level E" → "ENSDF Level E" correspondence.
+- **Step 6**: Arithmetic validation: Verify row/column calculations account for blank cell shifts.
 
 **EXAMPLE FAILURE PREVENTION:**
 ```
@@ -62,13 +70,13 @@ Data Row: John,25,,NYC,95
 
 ## Quality Control Workflow
 
-1. **Plan systematically** before executing and reflect on outcomes afterwards
-2. **Utilize tools and resources proactively** (validation scripts, existing workflows)
-3. **Avoid assumptions**—verify all calculations and data mappings
-4. **Validate meticulously**—double-check all entries for accuracy
-5. **Continue until complete**—address all transitions before concluding
-6. **Random spot checks**—verify randomly-selected samples against original data
-7. **Final verification**—cross-validate energy ordering and data integrity
+1. **Systematic Planning**: Map every CSV level to an ENSDF level BEFORE editing.
+2. **De-duplication**: Scan `cG` lines for existing NSR keys to avoid redundancy.
+3. **Strict Formatting**: Enforce `X.X {IY} (KEY)` only; excise all descriptive text.
+4. **NSR Validation**: Proofread key numbers (YYYYAA##) for typos.
+5. **Validation Tools**: Run `ensdf_1line_ruler` after EVERY single record edit.
+6. **Random Spot Checks**: Verify 5% of entries back to original source PDF/CSV.
+7. **Final verification**: Cross-validate energy ordering and data integrity.
 
 **CRITICAL**: Keep going until user's requests are fully addressed before ending your turn. Do not self-claim "Perfect" or "Task completed successfully" unless you have double-checked everything you do and are 100% sure that you have succeeded and fulfilled the task.
 
