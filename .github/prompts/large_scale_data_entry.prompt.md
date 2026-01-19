@@ -25,7 +25,7 @@ When adding G-records, ensure:
 2. **ALL gamma energies within each level are in ASCENDING order** (lowest to highest)
 
 ### Uncertainty Notation
-Uncertainties are not required in this task! (Maintain precise ENSDF uncertainty notation where applicable. The uncertainty digits align with the rightmost decimal digit of the stated value per ENSDF standards.)
+Maintain precise ENSDF uncertainty notation where applicable. The uncertainty digits align with the rightmost decimal digit of the stated value per ENSDF standards.
 
 ### CSV/Tabular Data Processing
 **CRITICAL AI WEAKNESS MITIGATION - COLUMN ALIGNMENT AND BLANK CELL HANDLING**
@@ -77,8 +77,7 @@ Data Row: John,25,,NYC,95
 
 
 ## Additional Data Entry Task
-
-Process the "Other final levels" column in the CSV file, which contains γ transitions to final levels not listed in the header.
+When needed, also process the "Other final levels" column in the CSV file, which contains γ transitions to final levels not listed in the header.
 
 ### Column Format
 - **Header**: `Exf in unit of MeV and BR placed in ()`
