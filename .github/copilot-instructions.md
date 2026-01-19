@@ -66,6 +66,18 @@ You are an AI agent specializing in the Evaluated Nuclear Structure Data File (E
 - `|s(E({+3}He),|q)` → σ(E(³He),θ)
 - `Zn{-3}P{-2}` → Zn₃P₂
 
+### Nuclear Science References (NSR)
+
+Each article in NSR has a unique 8-character key number ("key number") used to reference articles in ENSDF and other nuclear databases.
+
+**Format:** `YYYYAA##` (e.g., `1970Br10`, `1974ClZK`)
+
+**Capitalization:**
+-   Author initials: First uppercase, rest lowercase (`Ba` not `BA`, `Br` not `BR`).
+-   Letter suffixes: ALL UPPERCASE (`ClZK` not `Clzk`, `UmZZ` not `Umzz`).
+
+**List Formatting:** Comma-separated with spaces: `2021Vl03, 2015Vl01, 1974ClZK` (NOT space-only separation).
+
 ---
 
 ## 2. ENSDF 80-Column Format Standards
@@ -461,18 +473,6 @@ Format: Use `{In}` or `{I+n-m}` notation with braces.
 -   Data record: ` 35P   L 1572.0    12 3/2+             2.29 PS   14` (uncertainties are plain numbers).
 -   Comment line: ` 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)` (uncertainty uses `{I11}` notation).
 
-### Nuclear Science References (NSR)
-
-Each article in NSR has a unique 8-character key number ("key number") used to reference articles in ENSDF and other nuclear databases.
-
-**Format:** `YYYYAA##` (e.g., `1970Br10`, `1974ClZK`)
-
-**Capitalization:**
--   Author initials: First uppercase, rest lowercase (`Ba` not `BA`, `Br` not `BR`).
--   Letter suffixes: ALL UPPERCASE (`ClZK` not `Clzk`, `UmZZ` not `Umzz`).
-
-**List Formatting:** Comma-separated with spaces: `2021Vl03, 2015Vl01, 1974ClZK` (NOT space-only separation).
-
 ---
 
 ## 4. ENSDF File Editing Workflow
@@ -731,7 +731,7 @@ CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
 -   **Spelling:** "stoped" to "stopped", "usign" to "using", "coeffcients" to "coefficients".
 -   **Duplicates:** "the the", "from from", etc.
 
-### General Comment Ordering (Adopted.ens Files)
+### General Comment Ordering at the beginning of Adopted.ens Files
 
 1.  Isotope discovery (reference): experimental details.
 2.  Production: production methods and studies.
@@ -747,9 +747,10 @@ CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
 This document is organized as follows:
 
 **Main sections:**
-1.  **ENSDF Text Format Standards:** Superscripts, subscripts, Greek letters, mathematical symbols, and formatting examples.
-2.  **ENSDF 80-Column Format Standards:** NUCID field rules, record format specifications (L, G, DP, B, E records), critical formatting rules (structural relationships, left-justification, energy ordering, flag rules), and LOG FT format rules.
-3.  **ENSDF Uncertainty Standards:** Uncertainty format in data record fields (standard 2-column fields, extended fields, scientific notation, GT and LT markers) and uncertainty format in comment lines.
-4.  **ENSDF File Editing Workflow:** File protection rules, mandatory edit-validate-repeat workflow, validation tools (before, during, and after editing), output interpretation guidelines, editing methodology, and tools and workflows.
-5.  **CSV and Tabular Data Processing:** AI frequent failure patterns to avoid, mandatory verification protocol, critical validation steps, example failure prevention, and random spot-check validation.
-6.  **Academic Standards:** Professional English grammar and general comment ordering for adopted.ens files.
+
+1.  **ENSDF Text Format Standards:** Superscripts, subscripts, Greek letters, mathematical symbols, formatting examples, and Nuclear Science References (NSR) citation format.
+2.  **ENSDF 80-Column Format Standards:** NUCID field format rules (columns 1-5), record format specifications (L, G, DP, B, E records with detailed field descriptions and tables), critical ENSDF formatting rules (structural relationships, left-justification requirement, energy ordering requirement, G-record flag rules), and LOG FT format rules for B and E records.
+3.  **ENSDF Uncertainty Standards:** Uncertainty format in data record fields (standard 2-column uncertainty fields, extended uncertainty fields for asymmetric uncertainties, scientific notation format, GT and LT markers) and uncertainty format in comment lines (with {In} notation and critical rules).
+4.  **ENSDF File Editing Workflow:** File protection rules, XREF notation rules, debugging technique (80-column visual ruler method), mandatory edit-validate-repeat workflow, validation tools and when to use them (before/during/after editing), ENSDF 1-line ruler tool, column calibration tool, energy ordering tool, output interpretation guidelines, editing methodology, and tools and workflows (Java format check, PDF generation).
+5.  **CSV and Tabular Data Processing:** AI frequent failure patterns to avoid, mandatory verification protocol, critical validation steps for tabular data, example failure prevention, and random spot-check validation.
+6.  **Academic Standards:** Professional English grammar (common corrections) and general comment ordering at the beginning of Adopted.ens files.

@@ -274,6 +274,15 @@ aside > *:last-child {
 <li><code>|s(E({+3}He),|q)</code> → σ(E(³He),θ)</li>
 <li><code>Zn{-3}P{-2}</code> → Zn₃P₂</li>
 </ul>
+<h3 id="nuclear-science-references-nsr">Nuclear Science References (NSR)</h3>
+<p>Each article in NSR has a unique 8-character key number (&quot;key number&quot;) used to reference articles in ENSDF and other nuclear databases.</p>
+<p><strong>Format:</strong> <code>YYYYAA##</code> (e.g., <code>1970Br10</code>, <code>1974ClZK</code>)</p>
+<p><strong>Capitalization:</strong></p>
+<ul>
+<li>Author initials: First uppercase, rest lowercase (<code>Ba</code> not <code>BA</code>, <code>Br</code> not <code>BR</code>).</li>
+<li>Letter suffixes: ALL UPPERCASE (<code>ClZK</code> not <code>Clzk</code>, <code>UmZZ</code> not <code>Umzz</code>).</li>
+</ul>
+<p><strong>List Formatting:</strong> Comma-separated with spaces: <code>2021Vl03, 2015Vl01, 1974ClZK</code> (NOT space-only separation).</p>
 <hr>
 <h2 id="2-ensdf-80-column-format-standards">2. ENSDF 80-Column Format Standards</h2>
 <h3 id="ensdf-nucid-field-format-rules-columns-1-5">ENSDF NUCID Field Format Rules (Columns 1-5)</h3>
@@ -1101,15 +1110,6 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 <li>Data record: <code> 35P   L 1572.0    12 3/2+             2.29 PS   14</code> (uncertainties are plain numbers).</li>
 <li>Comment line: <code> 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)</code> (uncertainty uses <code>{I11}</code> notation).</li>
 </ul>
-<h3 id="nuclear-science-references-nsr">Nuclear Science References (NSR)</h3>
-<p>Each article in NSR has a unique 8-character key number (&quot;key number&quot;) used to reference articles in ENSDF and other nuclear databases.</p>
-<p><strong>Format:</strong> <code>YYYYAA##</code> (e.g., <code>1970Br10</code>, <code>1974ClZK</code>)</p>
-<p><strong>Capitalization:</strong></p>
-<ul>
-<li>Author initials: First uppercase, rest lowercase (<code>Ba</code> not <code>BA</code>, <code>Br</code> not <code>BR</code>).</li>
-<li>Letter suffixes: ALL UPPERCASE (<code>ClZK</code> not <code>Clzk</code>, <code>UmZZ</code> not <code>Umzz</code>).</li>
-</ul>
-<p><strong>List Formatting:</strong> Comma-separated with spaces: <code>2021Vl03, 2015Vl01, 1974ClZK</code> (NOT space-only separation).</p>
 <hr>
 <h2 id="4-ensdf-file-editing-workflow">4. ENSDF File Editing Workflow</h2>
 <h3 id="file-protection-rules">File Protection Rules</h3>
@@ -1367,7 +1367,7 @@ CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
 <li><strong>Spelling:</strong> &quot;stoped&quot; to &quot;stopped&quot;, &quot;usign&quot; to &quot;using&quot;, &quot;coeffcients&quot; to &quot;coefficients&quot;.</li>
 <li><strong>Duplicates:</strong> &quot;the the&quot;, &quot;from from&quot;, etc.</li>
 </ul>
-<h3 id="general-comment-ordering-adoptedens-files">General Comment Ordering (Adopted.ens Files)</h3>
+<h3 id="general-comment-ordering-at-the-beginning-of-adoptedens-files">General Comment Ordering at the beginning of Adopted.ens Files</h3>
 <ol>
 <li>Isotope discovery (reference): experimental details.</li>
 <li>Production: production methods and studies.</li>
@@ -1381,12 +1381,12 @@ CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
 <p>This document is organized as follows:</p>
 <p><strong>Main sections:</strong></p>
 <ol>
-<li><strong>ENSDF Text Format Standards:</strong> Superscripts, subscripts, Greek letters, mathematical symbols, and formatting examples.</li>
-<li><strong>ENSDF 80-Column Format Standards:</strong> NUCID field rules, record format specifications (L, G, DP, B, E records), critical formatting rules (structural relationships, left-justification, energy ordering, flag rules), and LOG FT format rules.</li>
-<li><strong>ENSDF Uncertainty Standards:</strong> Uncertainty format in data record fields (standard 2-column fields, extended fields, scientific notation, GT and LT markers) and uncertainty format in comment lines.</li>
-<li><strong>ENSDF File Editing Workflow:</strong> File protection rules, mandatory edit-validate-repeat workflow, validation tools (before, during, and after editing), output interpretation guidelines, editing methodology, and tools and workflows.</li>
-<li><strong>CSV and Tabular Data Processing:</strong> AI frequent failure patterns to avoid, mandatory verification protocol, critical validation steps, example failure prevention, and random spot-check validation.</li>
-<li><strong>Academic Standards:</strong> Professional English grammar and general comment ordering for adopted.ens files.</li>
+<li><strong>ENSDF Text Format Standards:</strong> Superscripts, subscripts, Greek letters, mathematical symbols, formatting examples, and Nuclear Science References (NSR) citation format.</li>
+<li><strong>ENSDF 80-Column Format Standards:</strong> NUCID field format rules (columns 1-5), record format specifications (L, G, DP, B, E records with detailed field descriptions and tables), critical ENSDF formatting rules (structural relationships, left-justification requirement, energy ordering requirement, G-record flag rules), and LOG FT format rules for B and E records.</li>
+<li><strong>ENSDF Uncertainty Standards:</strong> Uncertainty format in data record fields (standard 2-column uncertainty fields, extended uncertainty fields for asymmetric uncertainties, scientific notation format, GT and LT markers) and uncertainty format in comment lines (with {In} notation and critical rules).</li>
+<li><strong>ENSDF File Editing Workflow:</strong> File protection rules, XREF notation rules, debugging technique (80-column visual ruler method), mandatory edit-validate-repeat workflow, validation tools and when to use them (before/during/after editing), ENSDF 1-line ruler tool, column calibration tool, energy ordering tool, output interpretation guidelines, editing methodology, and tools and workflows (Java format check, PDF generation).</li>
+<li><strong>CSV and Tabular Data Processing:</strong> AI frequent failure patterns to avoid, mandatory verification protocol, critical validation steps for tabular data, example failure prevention, and random spot-check validation.</li>
+<li><strong>Academic Standards:</strong> Professional English grammar (common corrections) and general comment ordering at the beginning of Adopted.ens files.</li>
 </ol>
 
             <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
