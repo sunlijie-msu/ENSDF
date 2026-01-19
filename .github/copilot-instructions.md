@@ -68,7 +68,8 @@ You are an AI agent specializing in the Evaluated Nuclear Structure Data File (E
 
 ### Nuclear Science References (NSR)
 
-Each article in NSR has a unique 8-character key number ("key number") used to reference articles in ENSDF and other nuclear databases.
+-   Each article in NSR has a unique 8-character key number ("key number").
+-   ENSDF uses this key number to reference published articles.
 
 **Format:** `YYYYAA##` (e.g., `1970Br10`, `1974ClZK`)
 
@@ -225,7 +226,7 @@ Example:
 -   **Formatting:** Values start at the leftmost column of the field, padded with trailing spaces to fill field width.
 
 #### Energy Ordering Requirement
-
+**Requirement:** 
 -   L-records and G-records MUST be in ascending energy order.
 -   **Consequence:** Violations break automated ENSDF parsers and database ingestion.
 -   **Common error:** Inserting new levels or gammas without reordering by energy.
@@ -413,14 +414,14 @@ LOGFT     DFT
 
 For intensities and other values in scientific notation:
 -   **Standard format:** `(5.6±1.0)×10^-4` becomes `5.6E-4 10` in ENSDF.
--   **Value field:** `5.6E-4` (scientific notation with E).
--   **Uncertainty field:** `10` (represents ±1.0 in the last significant digit).
+-   **Value field:** Use `E-n` notation (e.g., `5.6E-4`).
+-   **Uncertainty field:** Use digits representing the last significant digit (e.g., `10` for ±1.0 if value is one decimal place).
 -   **Examples:**
     -   `(1.1±0.3)×10^-6` → Value: `1.1E-6`, Uncertainty: `3`.
     -   `(76±20)×10^-6` → Value: `76E-6`, Uncertainty: `20`.
     -   `(3.3±1.2)×10^-4` → Value: `3.3E-4`, Uncertainty: `12`.
 -   **NEVER use:** `×10^-n` notation directly in ENSDF records.
--   **ALWAYS use:** `E-n` notation for the value, separate uncertainty field.
+-   **ALWAYS use:** `E-n` notation for the value with a separate uncertainty field.
 
 #### GT and LT Markers in Uncertainty Fields
 
@@ -515,19 +516,21 @@ print('Length:', len(header))
 "
 ```
 
-**Process**: Display 80-char ruler → Extract L/G/E/B records → Validate against ENSDF Manual → Report issues.
+**Process**:
+1.  Display 80-char ruler.
+2.  Extract L/G/E/B records.
+3.  Validate against ENSDF Manual.
+4.  Report issues.
 
 ### Mandatory Edit-Validate-Repeat Workflow
 
 **CRITICAL: THE MOST IMPORTANT RULE**
 
-The Sacred Workflow (MUST Follow for Every Single Edit):
-```text
-1. EDIT   → Make ONE precise change to ONE field
-2. VALIDATE → Run ruler on that exact line: python .github/scripts/ensdf_1line_ruler.py --line "your 80-char line"
-3. CONFIRM → Verify exit code 0, check ruler output
-4. REPEAT → Move to next edit only after confirmation
-```
+**The Sacred Workflow** (MUST Follow for Every Single Edit):
+1.  **EDIT** → Make ONE precise change to ONE field.
+2.  **VALIDATE** → Run ruler on that exact line: `python .github/scripts/ensdf_1line_ruler.py --line "your 80-char line"`.
+3.  **CONFIRM** → Verify exit code 0 and check ruler output.
+4.  **REPEAT** → Move to next edit only after confirmation.
 
 **Forbidden Behaviors:**
 -   **NEVER** edit multiple lines without validating each one.
@@ -709,7 +712,10 @@ CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
 
 **QUALITY ASSURANCE BEST PRACTICE:** After systematic data entry or bulk corrections, perform random spot-check validation by manually verifying a few samples (5% of total) against source data. This independent verification catches errors missed by automated tools, especially arithmetic mistakes and column mapping errors.
 
-**When to use:** After large-scale data entry, bulk corrections, arithmetic-intensive work, or before claiming task completion when extra confidence is needed.
+**When to use:**
+-   After large-scale data entry or bulk corrections.
+-   After arithmetic-intensive work.
+-   Before claiming task completion when extra confidence is needed.
 
 **Verification Checklist (for each sample):**
 -   Arithmetic accuracy.
@@ -717,9 +723,16 @@ CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
 -   Mapping accuracy (correct fields).
 -   Row and column alignment.
 
-**If errors found:** Identify root cause immediately, analyze pattern (systematic vs isolated), correct all instances, re-validate comprehensively, perform new spot-check.
+**If errors found:**
+1.  Identify root cause immediately.
+2.  Analyze pattern (systematic vs isolated).
+3.  Correct all instances.
+4.  Re-validate comprehensively.
+5.  Perform new spot-check.
 
-**Integration:** Use after automated validation passes (column calibration + energy ordering), document findings for reproducibility.
+**Integration:**
+-   Use after automated validation passes (column calibration + energy ordering).
+-   Document findings for reproducibility.
 
 ---
 
