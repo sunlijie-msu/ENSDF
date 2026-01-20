@@ -721,6 +721,24 @@ def validate_comment_flags(filename):
             continue
         
         # Now we know this is a true data record (not a comment line)
+        
+        # CRITICAL VALIDATION: Check for misplaced flags in columns 77-80
+        # Comment flags must be EXACTLY at column 77, not at columns 78 or 79
+        if len(line_content) >= 80:
+            col77_char = line_content[76]  # Column 77 (0-based index 76)
+            col78_char = line_content[77]  # Column 78 (0-based index 77)
+            col79_char = line_content[78]  # Column 79 (0-based index 78)
+            
+            # Check for misplaced comment flags in columns 78-79
+            for pos, idx, char in [(78, 77, col78_char), (79, 78, col79_char)]:
+                if char != ' ' and char in 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz*&@':
+                    print(f"[ERROR] Line {line_num}: Comment flag '{char}' at column {pos} - MUST be at column 77!")
+                    print(f"   → Line content: {line_content}")
+                    print(f"   → Position: {' ' * (pos-1)}^")
+                    if char not in flag_summary:
+                        flag_summary[char] = {'correct': 0, 'incorrect': []}
+                    flag_summary[char]['incorrect'].append(line_num)
+        
         # Check column 77 for valid comment flags
         if len(line_content) >= 77:
             char = line_content[76]  # Column 77 (0-based index 76)
@@ -822,6 +840,22 @@ def validate_g_record_flags(filename):
             continue
         
         g_records_analyzed += 1
+        
+        # CRITICAL VALIDATION: Check for misplaced flags in columns 77-80
+        # Flags must be EXACTLY at column 77, not at 78 or 79
+        if len(line_content) >= 80:
+            col77_char = line_content[76]  # Column 77 (0-based index 76)
+            col78_char = line_content[77]  # Column 78 (0-based index 77)
+            col79_char = line_content[78]  # Column 79 (0-based index 78)
+            
+            # Check for misplaced comment flags in columns 78-79
+            for pos, idx, char in [(78, 77, col78_char), (79, 78, col79_char)]:
+                if char != ' ' and char in 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz*&@':
+                    col77_flags['invalid'] += 1
+                    errors_found = True
+                    print(f"[ERROR] Line {line_num}: Comment flag '{char}' at column {pos} - MUST be at column 77!")
+                    print(f"   → Line content: {line_content}")
+                    print(f"   → Position: {' ' * (pos-1)}^")
         
         # Validate Column 77 (Comment flag)
         if len(line_content) >= 77:
