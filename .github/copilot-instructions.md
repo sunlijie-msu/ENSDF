@@ -741,7 +741,7 @@ CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
 ### Professional English Grammar
 
 **Common corrections:**
--   **Spelling:** "stoped" to "stopped", "usign" to "using", "coeffcients" to "coefficients".
+-   **Spelling:** "ohter" to  "other", "stoped" to "stopped", "usign" to "using", "coeffcients" to "coefficients".
 -   **Duplicates:** "the the", "from from", etc.
 
 ### General Comment Ordering at the beginning of Adopted.ens Files
