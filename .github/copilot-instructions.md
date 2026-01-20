@@ -668,7 +668,7 @@ foreach ($element in $elements) {
 
 ---
 
-## 5. CSV and Tabular Data Processing
+## 5. Tabular Data Processing
 
 **CRITICAL AI WEAKNESS MITIGATION: COLUMN ALIGNMENT AND BLANK CELL HANDLING**
 
@@ -765,5 +765,5 @@ This document is organized as follows:
 2.  **ENSDF 80-Column Format Standards:** NUCID field format rules (columns 1-5), record format specifications (L, G, DP, B, E records with detailed field descriptions and tables), critical ENSDF formatting rules (structural relationships, left-justification requirement, energy ordering requirement, G-record flag rules), and LOG FT format rules for B and E records.
 3.  **ENSDF Uncertainty Standards:** Uncertainty format in data record fields (standard 2-column uncertainty fields, extended uncertainty fields for asymmetric uncertainties, scientific notation format, GT and LT markers) and uncertainty format in comment lines (with {In} notation and critical rules).
 4.  **ENSDF File Editing Workflow:** File protection rules, XREF notation rules, debugging technique (80-column visual ruler method), mandatory edit-validate-repeat workflow, validation tools and when to use them (before/during/after editing), ENSDF 1-line ruler tool, column calibration tool, energy ordering tool, output interpretation guidelines, editing methodology, and tools and workflows (Java format check, PDF generation).
-5.  **CSV and Tabular Data Processing:** AI frequent failure patterns to avoid, mandatory verification protocol, critical validation steps for tabular data, example failure prevention, and random spot-check validation.
+5.  **Tabular Data Processing:** AI frequent failure patterns to avoid, mandatory verification protocol, critical validation steps for tabular data, example failure prevention, and random spot-check validation.
 6.  **Academic Standards:** Professional English grammar (common corrections) and general comment ordering at the beginning of Adopted.ens files.
