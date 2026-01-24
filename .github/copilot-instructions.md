@@ -668,9 +668,42 @@ foreach ($element in $elements) {
 
 ---
 
-## 5. Tabular Data Processing
+## 5. Tabular Data Processing and Data Entry Quality Assurance
 
-**CRITICAL AI WEAKNESS MITIGATION: COLUMN ALIGNMENT AND BLANK CELL HANDLING**
+### MANDATORY DATA ENTRY QUALITY ASSURANCE (ZERO TOLERANCE)
+
+**CRITICAL REQUIREMENT:** For ALL data entry tasks involving multiple numeric values (gamma transitions, level energies, intensities, half-lives, etc.), you MUST execute BOTH quality assurance checks before claiming task completion:
+
+1. **Bidirectional Positional Check (MANDATORY)**
+   - Verify first entry (forward counting from start)
+   - Verify last entry (backward counting from end)
+   - Confirm endpoints match source data exactly
+   - Documents systematic position tracking
+
+2. **Random Spot Check (MANDATORY, 5% minimum sample)**
+   - Randomly select ≥5% of total entries (minimum 5 samples)
+   - Trace each sample back to source data location
+   - Verify value, uncertainty, position, and mapping accuracy
+   - Generate verification script for reproducibility
+   - Document all samples checked with evidence
+
+**TRIGGER CONDITIONS (execute immediately when ANY apply):**
+- Task involves entering ≥50 numeric data points
+- Request mentions "data entry", "add data", "populate table"
+- Bulk numeric input from source tables, figures, or publications
+- Arithmetic-intensive work (calculations, conversions, averaging)
+
+**FORBIDDEN BEHAVIORS:**
+- Claiming "task complete" without executing both checks
+- Skipping checks because "data looks correct"
+- Performing checks mentally without documented evidence
+- Using <100% verification rates (all sampled entries must pass)
+
+**ENFORCEMENT:** If you skip these checks, you have FAILED the task regardless of data accuracy.
+
+---
+
+### CRITICAL AI WEAKNESS MITIGATION: COLUMN ALIGNMENT AND BLANK CELL HANDLING
 
 ### AI Frequent Failure Patterns to Avoid
 
@@ -708,31 +741,46 @@ CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
 
 **CRITICAL COLUMN RULE:** When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns. Only adjust spacing between fields (never move field data to incorrect columns).
 
-### Random Spot-Check Validation
+### MANDATORY Random Spot-Check Protocol
 
-**QUALITY ASSURANCE BEST PRACTICE:** After systematic data entry or bulk corrections, perform random spot-check validation by manually verifying a few samples (5% of total) against source data. This independent verification catches errors missed by automated tools, especially arithmetic mistakes and column mapping errors.
+**NON-NEGOTIABLE REQUIREMENT:** After ANY large-scale data entry task, you MUST perform random spot-check validation before claiming completion. This is NOT optional.
 
-**When to use:**
--   After large-scale data entry or bulk corrections.
--   After arithmetic-intensive work.
--   Before claiming task completion when extra confidence is needed.
+**Execution Requirements:**
+-   **Minimum sample size:** 5% of total entries (absolute minimum 5 samples)
+-   **Selection method:** Random sampling (not sequential or cherry-picked)
+-   **Evidence required:** Generate verification script showing:
+    -   Total entry count
+    -   Sample size calculation (e.g., "200 entries → 5% = 10 samples")
+    -   Randomly selected row/line numbers
+    -   Source data values for each sample
+    -   Verification results (PASS/FAIL per sample)
 
-**Verification Checklist (for each sample):**
--   Arithmetic accuracy.
--   Values/uncertainties match source data exactly.
--   Mapping accuracy (correct fields).
--   Row and column alignment.
+**Verification Checklist (100% pass rate required):**
+-   ✅ Arithmetic accuracy (no calculation errors)
+-   ✅ Values match source data exactly (character-for-character)
+-   ✅ Uncertainties match source data exactly
+-   ✅ Mapping accuracy (correct ENSDF fields)
+-   ✅ Row and column alignment (no off-by-one errors)
 
-**If errors found:**
-1.  Identify root cause immediately.
-2.  Analyze pattern (systematic vs isolated).
-3.  Correct all instances.
-4.  Re-validate comprehensively.
-5.  Perform new spot-check.
+**If ANY errors found:**
+1.  **STOP immediately** - do NOT claim partial completion
+2.  Identify root cause (systematic vs. isolated error)
+3.  Analyze error pattern across ALL entries
+4.  Correct all instances of identified error type
+5.  Re-run automated validation (column calibration + energy ordering)
+6.  Perform NEW random spot-check with different samples
+7.  Repeat until 100% pass rate achieved
 
-**Integration:**
--   Use after automated validation passes (column calibration + energy ordering).
--   Document findings for reproducibility.
+**Integration with Workflow:**
+-   Execute AFTER automated validation passes (column calibration + energy ordering)
+-   Execute AFTER Bidirectional Positional Check confirms endpoints
+-   Execute BEFORE claiming "task completed successfully"
+-   Document findings in compliance checklist for user verification
+
+**Zero Tolerance Enforcement:**
+-   Task is INCOMPLETE until spot-check passes with 0 errors
+-   No exceptions for "simple" or "small" data entry tasks
+-   Failure to execute = failure to complete assigned task
 
 ---
 
@@ -743,6 +791,7 @@ CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
 **Common corrections:**
 -   **Spelling:** "ohter" to  "other", "stoped" to "stopped", "usign" to "using", "coeffcients" to "coefficients".
 -   **Duplicates:** "the the", "from from", etc.
+-   **Hyphenation:** "Hyphens may have been inserted in word pairs that function as adjectives when they occur before a noun, as in “x-ray diffraction,” “4-mm-long gas cell,” and “R-matrix theory.” However, hyphens are deleted from word pairs when they are not used as adjectives before nouns, as in “emission by x rays,” “was 4 mm in length,” and “the R matrix is tested.”
 
 ### General Comment Ordering at the beginning of Adopted.ens Files
 
