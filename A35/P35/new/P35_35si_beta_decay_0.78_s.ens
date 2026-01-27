@@ -2,10 +2,11 @@
  35P   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$          
  35P   H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35P 2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
+ 35P  DG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  35P  dB EAV,LOGFT$FROM BetaShape v2.4 (Jun-2024) 2023Mo21.                     
  35P  dL E$Least-squares fitting is done by GLSC (version 17-Jan-2025)          
  35P  c  1988DuZS,1986Du07,1988DuZT,1987DuZU: {+35}Si was produced by the       
- 35P 2c  fragmentation of {+40}Ar beam of 2x10{+11} particles/s at 60           
+ 35P 2c  fragmentation of an {+40}Ar beam of 2x10{+11} particles/s at 60        
  35P 3c  MeV/nucleon on a 190 mg/cm{+2} Be target at GANIL. Decay observed with 
  35P 4c  a 1 mm thick plastic scintillator and a 174 cm{+3} intrinsic Ge        
  35P 5c  detector with 1.2% absolute efficiency at 1.33 MeV. Measured |b|g(t),  
@@ -26,7 +27,7 @@
  35P  cG M$From the Adopted Levels.                                             
  35P  cG E,RI$From 1988DuZS, unless otherwise noted.                            
  35P  cG E(A),RI(A)$From 1986Du07. 1988Or01 tentatively suggested that these |g 
- 35P 2cG rays de-excite a level at 7450, but this suggestion has not been       
+ 35P 2cG rays deexcite a level at 7450, but this suggestion has not been        
  35P 3cG experimentally confirmed.                                              
  35P  cL E$From a least-squares fit to |g-ray energies.                         
  35P  cL J,T$From the Adopted Levels.                                           
@@ -48,21 +49,32 @@
  35P S B EAV=3785                                                               
  35P   G 2386.4    6  117     7 [M1,E2]                                         
  35P 2 G %IG=32                                                                 
+ 35P S G  CC=0.00046 5$KC=5.94E-6 25$LC=4.42E-7 18$MC=3.36E-8 14                
+ 35P S G  IPC=0.00046 5                                                         
  35P   L 3859.7    5  5/2+             0.69 PS   LT                             
  35P   G 1473.4    5  17      4 [M1,E2]                                         
  35P 2 G %IG=4.6                                                                
- 35P   G 3859.5    10 121     8 [E2]                                            
+ 35P S G  CC=8.3E-5 13$KC=1.39E-5 13$LC=1.04E-6 10$MC=7.9E-8 7                  
+ 35P S G  IPC=6.7E-5 11                                                         
+ 35P   G 3859.5    10 121     8 [E2]                   1.12E-3 2                
  35P 2 G %IG=33                                                                 
+ 35P S G  KC=2.90E-6 4$LC=2.155E-7 30$MC=1.638E-8 23                            
+ 35P S G  IPC=0.001120 16                                                       
  35P   L 4101.2    5  (7/2-)           69 PS     GT                             
  35P   B             46.1                4.6                                    
  35P S B EAV=2939                                                               
  35P  cB $I|b=45.9 {I31} and log {Ift}=4.5 from 1988DuZS                        
  35P   G 241.4     3  100     4 [E1]                                            
+ 35P S G  CC=0.000664 10$KC=0.000615 9$LC=4.58E-5 7$MC=3.47E-6 5                
  35P 2 G %IG=27                                                                 
  35P   G 1714.7    6  22      5 [M2]                                            
  35P 2 G %IG=5.9                                                                
+ 35P S G  CC=7.93E-5 11$KC=1.668E-5 23$LC=1.242E-6 17$MC=9.44E-8 13             
+ 35P S G  IPC=6.13E-5 9                                                         
  35P   G 4100.8    10 135     8 [E3]                                            
  35P 2 G %IG=36                                                                 
+ 35P S G  CC=0.000924 13$KC=3.47E-6 5$LC=2.58E-7 4$MC=1.962E-8 27               
+ 35P S G  IPC=0.000920 13                                                       
  35P   L 4381.3    8  (5/2-)                                                   ?
  35P   B             9.7                 5.1                                    
  35P S B EAV=2802                                                               
@@ -82,8 +94,10 @@
  35P  cB $I|b=21.4 {I11} and log {Ift}=4.8 from 1988DuZS. 468.9I|g feeding this 
  35P 2cB level is deducted from its I|b.                                        
  35P   G 392.3     3  58.2   28 [M1+E2]                                         
+ 35P S G  CC=4.4E-4 25$KC=4.0E-4 23$LC=3.0E-5 17$MC=2.3E-6 13                   
  35P 2 G %IG=16                                                                 
  35P   G 633.7     5  21.9   28 [E1]                                            
+ 35P S G  CC=4.64E-5 7$KC=4.30E-5 6$LC=3.20E-6 5$MC=2.431E-7 34                 
  35P 2 G %IG=5.9                                                                
  35P   L 4869.4    6  (5/2-,7/2-)                                               
  35P   B             10.8                4.9                                    
@@ -115,3 +129,4 @@
  35P  cG $1988Or01 suggested that this |g ray cannot be placed into the decay   
  35P 2cG scheme of {+35}Si, and it could be a transition to the 4101 or 4493    
  35P 3cG levels based on intensity balances.                                    
+      
