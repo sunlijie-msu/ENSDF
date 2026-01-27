@@ -115,7 +115,7 @@
  35S  cG E$from (n,|g) E=thermal. Others: 778 {I2} from {+9}Be({+36}S,{+35}S|g) 
  35S 2cG and 775.4 {I4} from ({+14}N,3p|g)                                      
  35S  cG RI$weighted average of 37 {I5} from ({+14}N,3p|g), 35 {I4} from (n,|g) 
- 35S 2cG E=thermal, 37.0 {I28} from (d,p|g), and 33.3 {I27} from (d,|a|g)       
+ 35S 2cG E=thermal, 37.0 {I28} from (d,p|g), and 33.3 {I27} from (d,|a|g).      
  35S  cG M$D(+Q) from |g(|q) in (d,p|g); |D|p=yes from level scheme; M2 ruled   
  35S 2cG out by RUL.                                                            
  35S B G BE1W=4.5E-4 +9-7                                                       
@@ -243,7 +243,7 @@
  35S  cG RI$weighted average of 2.1 {I4} from (n,|g) E=thermal and 11 {I5} from 
  35S 2cG (d,p|g)                                                                
  35S B G BE1W=2.0E-4 +25-11                                                     
- 35S   G 1454.09   4 18      4  [M1,E2]                                         
+ 35S   G 1454.09   4 18      5  [M1,E2]                                         
  35S S G  CC=8.0E-5 12$KC=1.73E-5 16$LC=1.33E-6 12$MC=1.13E-7 11                
  35S S G  IPC=6.2E-5 10                                                         
  35S  cG E$from (n,|g) E=thermal.                                               
@@ -270,7 +270,7 @@
  35S   L 3816.01   21 (9/2)-           0.28 PS   3                              
  35S X L XREF=CDEHJK(3811*)LN                                                   
  35S  cL J$1824.7|g M1+E2 to 1991, 7/2-; 2061.6|g D, |DJ=1 from 5877.7 (11/2+). 
- 35S  cL T$from ({+14}N,3p|g) from 2014Ay01 with DSAM.                            
+ 35S  cL T$from ({+14}N,3p|g) from 2014Ay01 with DSAM.                          
  35S   G 1824.7    3 100        M1+E2    +0.55   9                              
  35S S G  CC=0.000200 4$KC=1.098E-5 17$LC=8.46E-7 13$MC=7.14E-8 11              
  35S S G  IPC=0.000188 4                                                        
@@ -302,7 +302,7 @@
  35S   L 4023.24   21 (11/2)-          0.32 PS   3                              
  35S X L XREF=DELMN                                                             
  35S  cL J$2032.0|g E2, |DJ=2 to 1991, 7/2-; 207.0|g to 3816.0, (9/2)-.         
- 35S  cL T$from ({+14}N,3p|g) from 2014Ay01 with DSAM.                            
+ 35S  cL T$from ({+14}N,3p|g) from 2014Ay01 with DSAM.                          
  35S   G 207.0     5 0.59    30 [M1,E2]                0.005  4                 
  35S S G  KC=0.005 4$LC=3.6E-4 29$MC=3.0E-5 24                                  
  35S  cG $B(M1)(W.u.)=0.046 {I+25-22} if M1                                     
@@ -487,7 +487,7 @@
  35S   L 5010.05   29 (11/2)-          0.45 PS   8                              
  35S X L XREF=DE                                                                
  35S  cL J$3018.5|g E2, |DJ=2 to 1991, 7/2-; 986.8|g to 4023, (11/2)-           
- 35S  cL T$from ({+14}N,3p|g) from 2014Ay01 with DSAM.                            
+ 35S  cL T$from ({+14}N,3p|g) from 2014Ay01 with DSAM.                          
  35S   G 986.8     3 100     5  (M1)                                            
  35S  cG E$weighted average of 986.9 {I3} from ({+14}N,3p|g) and 986.6 {I3} from
  35S 2cG ({+18}O,2|an|g)                                                        
@@ -525,7 +525,7 @@
  35S  cL J$L=(3) from 3/2+ in (p,{+3}He). L=3 gives (1/2- to 11/2-).            
  35S   L 5752.5    8  5/2-,7/2-                                                 
  35S X L XREF=FI(5740)                                                          
- 35S  cL J$L=3 from 0+ in (d,p); 5752|g to 3/2+.                                
+ 35S  cL J$L=3 from 0+ in (d,p).                                                
  35S   G 5752.0    8 100                                                        
  35S   L 5771      10 (+)                                                       
  35S X L XREF=K                                                                 
@@ -612,7 +612,7 @@
  35S X L XREF=D                                                                 
  35S  cL J$2535.8|g E2, |DJ=2 to 3816.0, (9/2)-; 2329.5|g D, |DJ=1 to 4023,     
  35S 2cL (11/2)-                                                                
- 35S  cL T$from ({+14}N,3p|g) from 2014Ay01 with DSAM.                            
+ 35S  cL T$from ({+14}N,3p|g) from 2014Ay01 with DSAM.                          
  35S   G 2329.5    9 100     20 (M1)                                            
  35S  cG M$D from |g|g(|q)(ADO) in ({+14}N,3p|g); |D|p=no from level scheme.    
  35S B G BM1W=0.023 +6-5                                                        
@@ -693,7 +693,7 @@
  35S   L 7179.74   32 (15/2+)          3.1 PS    12                             
  35S X L XREF=DE                                                                
  35S  cL J$1302.0|g E2, |DJ=2 to 5877.7, (11/2+); 827.8|g to 6352.2, (13/2)-.   
- 35S  cL T$from ({+14}N,3p|g) from 2014Ay01 with DSAM.                            
+ 35S  cL T$from ({+14}N,3p|g) from 2014Ay01 with DSAM.                          
  35S   G 827.8     6 2.2     8  [E1]                                            
  35S S G  CC=3.08E-5 4$KC=2.84E-5 4$LC=2.192E-6 31$MC=1.848E-7 26               
  35S B G BE1W=7E-6 +5-3                                                         
@@ -815,7 +815,7 @@
  35S X L XREF=DE                                                                
  35S  cL J$844.2|g D, |DJ=1 to 7179.7, (15/2+). 17/2+ from shell-model          
  35S 2cL calculations (2021Go09)                                                
- 35S  cL T$from ({+14}N,3p|g) from 2014Ay01 with DSAM.                            
+ 35S  cL T$from ({+14}N,3p|g) from 2014Ay01 with DSAM.                          
  35S   G 844.2     6 100        (M1)                                            
  35S B G BM1W=0.24 +9-5                                                         
  35S  cG E$weighted average of 843.9 {I8} from ({+14}N,3p|g) and 844.3 {I6} from
@@ -873,7 +873,7 @@
  35S   G 1576.3    14 100    22 D                                               
  35S   L 9155      10                                                           
  35S X L XREF=K                                                                 
- 35S  cL J$L=2 from from 3/2+ in (p,{+3}He). L=2 gives (1/2+ to 9/2+).          
+ 35S  cL J$L=2 from 3/2+ in (p,{+3}He). L=2 gives (1/2+ to 9/2+).               
  35S   L 10048.6   9  (19/2+)                                                   
  35S X L XREF=E                                                                 
  35S  cL J$2868.7|g Q, |DJ=2 to (15/2+).                                        

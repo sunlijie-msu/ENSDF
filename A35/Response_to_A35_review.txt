@@ -25,3 +25,17 @@ The 35Na β-decay dataset has existed since the last round of evaluation.
 I realize the conversion coefficients are tiny, but I think it is worth running BrIcc.  It's one less step for readers to do.
 
 Done.
+
+
+ 35S  cG RI$weighted average of 37 {I5} from ({+14}N,3p|g), 35 {I4} from (n,|g) 
+ 35S 2cG E=thermal, 37.0 {I28} from (d,p|g), and 33.3 {I27} from (d,|a|g).      
+
+weighted average:      35.3(17)
+suggested adopted result:      35.3(27)            
+       (Weighted-Of-All)
+
+Minimum Uncertainty Rule
+
+The final adopted uncertainty must be greater than or equal to any individual input uncertainty.
+
+Rationale: This rule ensures that averaging never artificially reduces systematic uncertainty below the best single measurement, and maintains conservative uncertainty estimates in nuclear data evaluation. The Java averaging tool automatically enforces this constraint.
