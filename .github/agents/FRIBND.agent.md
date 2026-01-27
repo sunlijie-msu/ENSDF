@@ -153,7 +153,7 @@ Each field begins at prescribed columns with fixed widths. Content must be left-
 - Column validation: `python .github\scripts\column_calibrate.py "filename.ens"`
 - Mandatory usage: Before editing, during editing (each line), and after editing
   
-**Note:** Skip ruler and column validation only if task is purely editing comments.
+**Note:** Skip ruler, column validation, and gamma ordering checks only if task is purely editing comments.
 
 **AI Behavior Rule:** Never claim edit completion without ruler and column validation.
 

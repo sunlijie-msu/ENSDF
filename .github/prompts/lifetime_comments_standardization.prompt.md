@@ -96,3 +96,20 @@ Standardize T$ (lifetime) comment lines for clarity and numerical rigor. Maintai
 ### Bibliographic Standards
 *   **Chronology**: List measurements in chronological order by NSR year.
 *   **Method Tags**: Use standard abbreviations (e.g., DSAM, RDM).
+
+### CRITICAL: Scope of Standardization Task
+
+**DO NOT MODIFY DATA DECISIONS - ONLY STANDARDIZE FORMAT**
+
+*   **Averaging decisions are FINAL**: The evaluator has already decided which values to average and which to place in "Others:". DO NOT change these decisions during comment standardization.
+
+*   **Your task**: Standardize the comment FORMAT only (e.g., fix "from lifetime=" to "lifetime |t=", add "in REACTION from NSR with METHOD" for Adopted datasets). Do NOT alter which measurements are averaged vs listed in "Others:", which is a data decision by the human evaluators.
+
+### Half-Life vs Lifetime Terminology
+
+**CRITICAL DISTINCTION for T$ comments:**
+
+*   **Lifetime (τ)**: Mean lifetime of nuclear state (symbol: |t). Relation: τ = T₁/₂ / ln(2) ≈ 1.443 × T₁/₂
+*   **Half-life (T₁/₂)**: Time for half of nuclei to decay (symbol: T{-1/2}). What goes in ENSDF T field.
+*   **Rule for T$ comments**: Use "lifetime |t=" when referring to the lifetime value and omit this for half-life references.
+
