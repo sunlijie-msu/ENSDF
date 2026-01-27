@@ -107,7 +107,7 @@
  35S 2cL ({+34}S,p|g) from 1973Wa10 with DSAM, 0.8 ps {I2} in (d,p|g) from      
  35S 3cL 1970Bu18 with DSAM, and 1.22 ps {I18} in (d,p|g) from 1972Fr11 with    
  35S 4cL DSAM.                                                                  
- 35S   G 356.66    9 0.084   LT [E2]                   1.15E-3 2            &   
+ 35S   G 356.66    9 0.084   LT [E2]                   1.15E-3 2            *   
  35S S G  KC=0.001064 15$LC=8.25E-5 12$MC=6.93E-6 10                            
  35S  cG E,RI$from (n,|g) E=thermal.                                            
  35S   G 775.398   6 35.3    27 (E1)                                            
@@ -303,10 +303,11 @@
  35S X L XREF=DELMN                                                             
  35S  cL J$2032.0|g E2, |DJ=2 to 1991, 7/2-; 207.0|g to 3816.0, (9/2)-.         
  35S  cL T$from ({+14}N,3p|g) from 2014Ay01 with DSAM.                          
- 35S   G 207.0     5 0.59    30 [M1,E2]                0.005  4                 
+ 35S   G 207.0     5 0.59    30 [M1+E2]  0.25    LT    0.005  4                 
  35S S G  KC=0.005 4$LC=3.6E-4 29$MC=3.0E-5 24                                  
  35S  cG $B(M1)(W.u.)=0.046 {I+25-22} if M1                                     
- 35S  cG $B(E2)(W.u.)=4.0|*10{+3} {I+22-19} exceeds RUL=100 if E2               
+ 35S  cG MR$calculated by evaluators from the measured half-life of the level   
+ 35S 2cG and RUL=100 for B(E2)(W.u.).                                           
  35S   G 2032.0    3 100     6  E2                                              
  35S S G  CC=0.000341 5$KC=9.87E-6 14$LC=7.61E-7 11$MC=6.42E-8 9                
  35S S G  IPC=0.000330 5                                                        
@@ -357,7 +358,7 @@
  35S  cL J$L=1 from 0+ in (d,p) and (pol d,p) and L-1/2 transfer from analyzing 
  35S 2cL power.                                                                 
  35S  cL T$lifetime |t<50 fs in (d,p|g) from 1972Fr11 with DSAM.                
- 35S   G 631.32    24 2.8    LT                                             &   
+ 35S   G 631.32    24 2.8    LT                                             *   
  35S  cG E,RI$from (n,|g) E=thermal. Other: I|g<7.7 from (d,p|g).               
  35S   G 1250.61   5 8.4     10 [E1]                                            
  35S S G  CC=0.0001047 15$KC=1.286E-5 18$LC=9.91E-7 14$MC=8.36E-8 12            
@@ -663,8 +664,8 @@
  35S   L 6986.096  25 1/2+                                                     S
  35S X L XREF=F                                                                 
  35S  cL J$s-wave resonance capture state.                                      
- 35S   G 356.66    9 0.073   LT                                             &   
- 35S   G 631.32    24 0.123  LT                                             &   
+ 35S   G 356.66    9 0.073   LT                                             *   
+ 35S   G 631.32    24 0.123  LT                                             *   
  35S   G 692.16    5 0.238   31                                                 
  35S   G 907.608   23 1.00   18                                                 
  35S   G 1144.591  20 0.98   11                                                 
