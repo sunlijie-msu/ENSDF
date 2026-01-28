@@ -19,7 +19,7 @@
  35S 6c  transitions. Deduced 11 levels.                                        
  35S  c  1985Ke08: 5|*10{+12} n/cm{+2}/s thermal neutrons were produced from the
  35S 2c  McMaster University Reactor. |g rays following thermal neutron capture 
- 35S 3c  by a natural sulfur target were detected using a 10% efficient Ge   
+ 35S 3c  by a natural sulfur target were detected using a 10% efficient Ge      
  35S 4c  centered within a NaI(Tl) annulus with FWHM=3.2-4.4 keV at 4-7 MeV.    
  35S 5c  Measured E|g and I|g for 13 |g-ray transitions. Deduced 9 levels.      
  35S  c  1997Be42: Thermal neutrons were provided from the reactor BR1 of the   
@@ -34,12 +34,12 @@
  35S  cG $Photons per 100 thermal neutron captures are reported in 1972Dz13 and 
  35S 2cG 1985Ke08. |g-ray cross sections in mb are reported in 1985Ra15,        
  35S 3cG multiplying these by 0.340 yields the number of photons per 100 thermal
- 35S 4cG neutron captures. |s(4638)=163 mb {I15}. I|g(4638)=|s(4638)*0.340=55   
+ 35S 4cG neutron captures. |s(4638)=163 mb {I15}. I|g(4638)=|s(4638)|*0.340=55  
  35S 5cG {I5}.                                                                  
  35S  cG $|g-ray intensities per incident neutron for all transitions and |g-ray
  35S 2cG cross sections in mb for primary transitions are reported in 1997Be42. 
  35S 3cG The strongest 4638|g is used for normalization. |s(4638)=148.6 mb {I55}
- 35S 4cG and I|g(4638)=|s(1997Be42)/|s(1985Ra15)*I|g(1985Ra15)=50 {I7}.         
+ 35S 4cG and I|g(4638)=|s(1997Be42)/|s(1985Ra15)|*I|g(1985Ra15)=50 {I7}.        
  35S  cG E,RI$From 1985Ra15, unless otherwise noted.                            
  35S  cG E(P)$Not observed in 2007ChZX (PGAA).                                  
  35S  cL E$From a least-squares fit to |g-ray energies.                         
@@ -48,11 +48,19 @@
  35S   G 646.9     5  0.7    1                                              P   
  35S  cG E,RI$from 1972Dz13. 1972Dz13 assigned this |g ray as the 6986 to 6339  
  35S 2cG transition. This |g ray and its final level 6339 have not been observed
- 35S 3cG in any other {+34}S(n,|g) measurements. The evaluators consider this |g
- 35S 4cG ray questionable.                                                      
+ 35S 3cG in any other {+34}S(n,|g) measurements. Evaluators consider this |g ray
+ 35S 4cG questionable.                                                          
  35S   G 663.41    7  0.09   1                                              P   
  35S   G 803.81    9  0.092  14                                             P   
  35S   G 1381.67   24 0.024  8                                              P   
+ 35S   G 2184.16   19 4.7    5                                              P   
+ 35S  cG E,RI$from 1985Ke08. 1985Ke08 assigned this |g ray as a 4903 to 2719    
+ 35S 2cG transition. The final level is closest to the known 2717 level. This |g
+ 35S 3cG ray has not been observed in any other {+34}S(n,|g) measurements.      
+ 35S 4cG Including this |g ray in the level scheme would result in a significant
+ 35S 5cG intensity imbalance at its initial level 4903 and its final level 2717 
+ 35S 6cG and also lead to poor fitting in the level scheme. Evaluators consider 
+ 35S 7cG this |g ray questionable.                                              
  35S   L 0                                                                      
  35S   L 1572.373  7                                                            
  35S   G 1572.333  8 35.0    34                                                 
@@ -118,14 +126,6 @@
  35S  cL $C{+2}S=0.49 for 1/2- from 1997Be42.                                   
  35S   G 1101.92   31 0.033  8                                                  
  35S   G 1964.8    2 0.37    10                                                 
- 35S   G 2184.16   19 4.7    5                                              P  ?
- 35S F G FL=2717.05                                                             
- 35S  cG E,RI$from 1985Ke08. 1985Ke08 assigned its final level at 2719, with the
- 35S 2cG closest known level being 2717.0. This |g ray has not been observed in 
- 35S 3cG any other {+34}S(n,|g) measurements. Including this |g ray in the level
- 35S 4cG scheme would result in a significant intensity imbalance at its initial
- 35S 5cG level 4903 and its final level 2717 and also lead to poor fitting in   
- 35S 6cG the level scheme. Evaluators consider this |g ray questionable.        
  35S   G 2555.492  14 3.14   31                                                 
  35S  cG E$other: 2555.9 {I4} (1972Dz13)                                        
  35S  cG RI$weighted average of 3.4 {I7} (1972Dz13) and 3.09 {I31} (1985Ra15)   
