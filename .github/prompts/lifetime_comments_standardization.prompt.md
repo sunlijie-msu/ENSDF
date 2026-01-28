@@ -111,5 +111,5 @@ Standardize T$ (lifetime) comment lines for clarity and numerical rigor. Maintai
 
 *   **Lifetime (τ)**: Mean lifetime of nuclear state (symbol: |t). Relation: τ = T₁/₂ / ln(2) ≈ 1.443 × T₁/₂
 *   **Half-life (T₁/₂)**: Time for half of nuclei to decay (symbol: T{-1/2}). What goes in ENSDF T field.
-*   **Rule for T$ comments**: Use "lifetime |t=" when referring to the lifetime value and omit this for half-life references.
+*   **Rule for T$ comments**: Use "lifetime |t=" when referring to the lifetime value and omit "lifetime |t=" for half-life references.
 

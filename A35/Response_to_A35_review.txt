@@ -34,8 +34,15 @@ weighted average:      35.3(17)
 suggested adopted result:      35.3(27)            
        (Weighted-Of-All)
 
+
 Minimum Uncertainty Rule
 
 The final adopted uncertainty must be greater than or equal to any individual input uncertainty.
 
 Rationale: This rule ensures that averaging never artificially reduces systematic uncertainty below the best single measurement, and maintains conservative uncertainty estimates in nuclear data evaluation. The Java averaging tool automatically enforces this constraint.
+
+
+4023.24 (11/2)− 207.0 5 0.59 30 3816.01 (9/2)− [M1,E2] 0.005 4
+Would it be better to assign [M1+E2], with a limit on the mixing ratio based on the RUL?  Saying pure E2 is possible but in violation of the RUL seems odd to me.
+
+Done.
