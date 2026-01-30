@@ -144,7 +144,7 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
         print(comment_hint)
         print('Comment lines must still obey the 80-column rule and inherit the associated record scope.')
     elif record_key and not record_def:
-        print(f'Unknown record type "{record_key}"; length check only.')
+        print(f'Unknown record type "{record_key}" (Column 8).')
 
     if label:
         print(f'Line ({label}): {line}')
@@ -157,6 +157,12 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
     if len(line) != 80:
         errors.append(f'Length {len(line)} ≠ 80')
     
+    if record_key and not record_def and not is_comment:
+        errors.append(f'Unknown/Invalid record type "{record_key}" at Column 8.')
+        # Specific heuristic for shifted comments
+        if len(line) > 7 and line[7] in {'c', 'C'} and line[6] == ' ':
+            errors.append('HINT: Found "c" in Column 8. Comment flags must be in Column 7.')
+
     if record_def and _is_primary_data_record(line):
         col_77 = line[76] if len(line) > 76 else ' '
         col_80 = line[79] if len(line) > 79 else ' '

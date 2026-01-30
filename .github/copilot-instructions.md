@@ -42,6 +42,7 @@ You are an AI agent specializing in the Evaluated Nuclear Structure Data File (E
 - `|=` → ≠ (not equal), `|@` → ∞ (infinity), `|^` → ↑ (up arrow)
 - `|_` → ↓ (down arrow), `|&` → ≡ (equivalent), `|(` → ← (left arrow)
 - `|)` → → (right arrow), `|.` → ∝ (proportional), `||` → | (vertical bar)
+- `~#` → ⊗ (tensor product)
 
 **Brackets and Parentheses:**
 
@@ -199,7 +200,7 @@ Example:
 
 #### ENSDF Structural Relationships
 
-**Level Blocks:**
+**Level Blocks or Level Units:**
 1.  Each L-record starts a new level block (physical level).
 2.  All G-records immediately after an L-record belong to that level block.
 3.  Any G-records before the next L-record attach to the previous level (never to the next).

@@ -206,7 +206,7 @@ X Then validate ← TOO LATE! File corrupted!
 After you edit a file, the VS Code editor shows an inline diff of the applied changes. With the VS Code editor overlay controls, user can navigate between the suggested edits by using the Up and Down controls. User can use the Keep or Undo button to accept or reject the proposed edits for a given file. Therefore:
 
 - Never use bulk edit scripts that bypass VS Code diff viewer, as it will leave users unable to review changes on .ens files via VS Code diff viewer
-- Always make edits that preserve VS Code's diff functionality
+- Always prioritize editing in place that preserve VS Code's diff functionality
 
 **Strictly Forbidden:** Do not self-use `git restore` or `git checkout` to revert changes. Nuclear data coding requires high-precision work, not typical software development. The common LLM tendency to resort to git for error recovery is strictly prohibited. You must identify and fix errors carefully to maintain absolute rigor.
 
