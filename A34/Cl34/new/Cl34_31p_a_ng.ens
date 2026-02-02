@@ -1,34 +1,44 @@
  34CL    31P(A,NG)                     1978Ba61,1971Ba98,1970Br10ENSDF    202609
  34CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 34CL c  1982Va02: 11.7 and 16.3-MeV |a beams from from the Utrecht 6-MV Van de 
+ 34CL2c  Graaff accelerator impinged on a target of 100-|mg/cm{+2} P on thick Au
+ 34CL3c  backing. |g ray were detected using a large solid angle                
+ 34CL4c  Compton-suppression spectrometer (LACSS) and a HPGe central detector in
+ 34CL5c  combination with four gating Ge(Li) detectors. Measured E|g, I|g.      
+ 34CL6c  Deduced lifetimes from Doppler pattern (DSAM). Also measured the       
+ 34CL7c  24MG(12C,PNG)34CL reaction.                                            
+ 34CL d                                                                         
  34CL c  1978Ba61,1978Ba77: 13 and 14.6-MeV |a beams from the 7.5-MV Van de     
  34CL2c  Graaff accelerator at the Strasbourg Nuclear Research Center, France,  
  34CL3c  impinged on a 200-|mg/cm{+2} red phosphorus target. |g rays were       
  34CL4c  detected using two Ge(Li) detectors. Measured |g(|q). Deduced mixing   
  34CL5c  ratios, lifetimes using RDM.                                           
- 34CL d
+ 34CL d                                                                         
  34CL c  1978Ba39: 14.4-MeV |a beams from the 7.5-MV Van de Graaff accelerator  
  34CL2c  at the Strasbourg Nuclear Research Center, France, impinged on a       
  34CL3c  200-|mg/cm{+2} red phosphorus target. Neutrons were detected using a   
  34CL4c  NE213 liquid scintillator. |g rays were detected using a Ge(Li)        
  34CL5c  detector. Measured n|g-coin. 1978Ba39 is primarily a                   
- 34CL6c  {+27}Al({+12}C,|an|g)34CL reaction measurement.                        
- 34CL d
+ 34CL6c  {+27}Al({+12}C,|an|g)34Cl reaction measurement.                        
+ 34CL d                                                                         
  34CL c  1971Ba98: 0.3-0.7 MeV>threshold |a beams was from the Padova 5.5 MV Van
  34CL2c  de Graaff generator. Targets were 100-|mg/cm{+3} evaporated            
  34CL3c  Zn{-3}P{-2}. |g rays were detected using a 55-cm{+3} Ge(li) detector.  
  34CL4c  Deduced lifetimes using RDM.                                           
- 34CL d
+ 34CL d                                                                         
  34CL c  1970Br10: 7.50-8.75-MeV |a beam impinged on a 600-|mg/cm{+2} red       
  34CL2c  phosphorus target. |g rays were detected using a Ge(Li) detector.      
  34CL3c  Deduced lifetimes using DSAM. Also measured |g-ray angular             
  34CL4c  distributions in {+32}S({+3}He,p|g){+34}Cl reaction.                   
- 34CL d
+ 34CL d                                                                         
  34CL c  Others: {+31}P(|a,n){+34}Cl Q-value, yield, excitation function        
  34CL2c  measurements: 2021Vl03, 2015Vl01, 1974ClZK, 1973Ry01, 1970Um01,        
  34CL3c  1969UmZZ, 1956Qu04                                                     
  34CL cL $No literature in this dataset reports any E|g or E(level) values with 
- 34CL2cL uncertainties. All E(level) values given here are from Fig. 3 of       
- 34CL3cL 1978Ba39 and all E|g values are deduced from level-energy differences. 
+ 34CL2cL uncertainties. All E(level) values presented here are taken from Fig. 3
+ 34CL3cL of 1978Ba39, except for the two levels above 7 MeV, which are taken    
+ 34CL4cL from Fig. 10 of 1982Va02. All E|g values are deduced from level-energy 
+ 34CL5cL differences.                                                           
  34CL cG M,MR$From |g(|q) in 1978Ba61.                                          
  34CL cL J$Spin from |g(|q) in 1978Ba61, except for the ground state, 146, 2722,
  34CL2cL 3600 are known and used by 1978Ba61.                                   
@@ -47,41 +57,48 @@
  34CL2cL DSAM).                                                                 
  34CL  G 565                                                                    
  34CL  G 769                                                                    
- 34CL  G 1084                                                                   
+ 34CL  G 1.08E3                                                                 
  34CL  L 1887                                                                   
- 34CL  G 1741                                                                   
+ 34CL  G 1.74E3                                                                 
  34CL  L 2158                                                                   
- 34CL  G 1697                                                                   
+ 34CL  G 1.70E3                                                                 
  34CL  L 2376                                                                   
- 34CL  G 2230                                                                   
+ 34CL  G 2.23E3                                                                 
  34CL  L 2611                                                                   
- 34CL  G 2465                                                                   
+ 34CL  G 2.47E3                                                                 
  34CL  L 2722         2                                                         
- 34CL  G 2261                                                                   
- 34CL  G 2576                                                                   
+ 34CL  G 2.26E3                                                                 
+ 34CL  G 2.58E3                                                                 
  34CL  L 3600         4                23 PS     5                              
  34CL cL T$lifetime |t=23 ps {I5} (1978Ba61, RDM).                              
  34CL  G 878                    Q(+O)    -0.02   3                              
  34CL cG $A{-2}=0.40 {I2}, A{-4}=-0.14 {I3} (1978Ba61).                         
- 34CL  G 3454                   D(+Q)    +0.07   17                             
+ 34CL  G 3.45E3                 D(+Q)    +0.07   17                             
  34CL cG $A{-2}=-0.16 {I3} (1978Ba61).                                          
  34CL  L 3632                          280 PS    60                             
  34CL cL T$lifetime |t=280 ps {I60} (1978Ba61, RDM).                            
  34CL  G 1.26E3                                                                 
- 34CL  G 3486                                                                   
+ 34CL  G 3.49E3                                                                 
  34CL  L 4743         6                7 PS      3                              
  34CL cL T$lifetime |t=7 ps {I3} (1978Ba61, RDM).                               
  34CL  G 1.11E3                                                                 
  34CL  G 1.14E3                 Q(+O)    -0.03   9                              
  34CL cG $A{-2}=0.31 {I5}, A{-4}=-0.17 {I4} (1978Ba61).                         
- 34CL  G 4597                   O                                               
+ 34CL  G 4.60E3                 O                                               
  34CL cG M,MR$O(+H) with |d=+0.07 {I9} (1978Ba61).                              
  34CL cG $A{-2}=0.52 {I6}, A{-4}=0.20 {I7}, A{-6}=0.13 {I8} (1978Ba61).         
- 34CL  L 4824                                                                   
+ 34CL  L 4824                          310 FS    140                            
+ 34CL cL T$lifetime |t=450 fs {I200} (1982Va02, DSAM).                          
  34CL  G 1.19E3                                                                 
- 34CL  G 4678                                                                   
+ 34CL  G 4.68E3                                                                 
  34CL  L 5315         7                                                         
  34CL  G 491                                                                    
  34CL  G 572                    D(+Q)    -0.02   7                              
  34CL cG $A{-2}=-0.33 {I5} (1978Ba61).                                          
-
+ 34CL  L 7250                          140 FS    50                             
+ 34CL cL T$lifetime |t=200 fs {I70} (1982Va02, DSAM).                           
+ 34CL  G 1.94E3                                                                 
+ 34CL  L 7800                          70 FS     50                             
+ 34CL cL T$lifetime |t=100 fs {I70} (1982Va02, DSAM).                           
+ 34CL  G 2.49E3                                                                 
+                                                                                
