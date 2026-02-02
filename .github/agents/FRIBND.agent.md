@@ -220,7 +220,7 @@ Record and report numbers exactly as provided, without approximation, rounding, 
 
 ### ENSDF Uncertainty Notation
 
-Publications use an uncertainty-in-last-digits notation: digits in parentheses give the uncertainty in the last digits of the stated value.
+Publications use an "uncertainty-in-last-digits" notation: digits in parentheses give the uncertainty in the last digits of the stated value.
 
 #### Examples
 

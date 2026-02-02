@@ -250,6 +250,7 @@ aside > *:last-child {
 <li><code>|=</code> → ≠ (not equal), <code>|@</code> → ∞ (infinity), <code>|^</code> → ↑ (up arrow)</li>
 <li><code>|_</code> → ↓ (down arrow), <code>|&amp;</code> → ≡ (equivalent), <code>|(</code> → ← (left arrow)</li>
 <li><code>|)</code> → → (right arrow), <code>|.</code> → ∝ (proportional), <code>||</code> → | (vertical bar)</li>
+<li><code>~#</code> → ⊗ (tensor product)</li>
 </ul>
 <p><strong>Brackets and Parentheses:</strong></p>
 <ul>
@@ -285,7 +286,7 @@ aside > *:last-child {
 <li>Author initials: First uppercase, rest lowercase (<code>Ba</code> not <code>BA</code>, <code>Br</code> not <code>BR</code>).</li>
 <li>Letter suffixes: ALL UPPERCASE (<code>ClZK</code> not <code>Clzk</code>, <code>UmZZ</code> not <code>Umzz</code>).</li>
 </ul>
-<p><strong>List Formatting:</strong> Comma-separated with spaces: <code>2021Vl03, 2015Vl01, 1974ClZK</code> (NOT space-only separation).</p>
+<p><strong>List Formatting:</strong> Comma-separated with spaces: <code>2021Vl03, 2015Vl01, 1974ClZK</code>.</p>
 <hr>
 <h2 id="2-ensdf-80-column-format-standards">2. ENSDF 80-Column Format Standards</h2>
 <h3 id="ensdf-nucid-field-format-rules-columns-1-5">ENSDF NUCID Field Format Rules (Columns 1-5)</h3>
@@ -307,10 +308,10 @@ aside > *:last-child {
 <li><strong>Columns 4-5:</strong> Two-letter element symbol (Cl, Ge, Si)</li>
 <li><strong>Results:</strong> <code> 35Cl</code>, <code> 74Ge</code>, <code> 32Si</code></li>
 </ul>
-<p><strong>Three-digit mass number + One-letter element</strong> (e.g., 127I, 252C):</p>
+<p><strong>Three-digit mass number + One-letter element</strong> (e.g., 127I, 232U):</p>
 <ul>
 <li><strong>Format:</strong> <code>MMME </code> (mass, element, space)</li>
-<li><strong>Columns 1-3:</strong> Mass number (127, 252)</li>
+<li><strong>Columns 1-3:</strong> Mass number (127, 232)</li>
 <li><strong>Column 4:</strong> One-letter element symbol (I, W, U)</li>
 <li><strong>Column 5:</strong> Space</li>
 <li><strong>Results:</strong> <code>127I </code>, <code>184W </code></li>
@@ -319,7 +320,7 @@ aside > *:last-child {
 <ul>
 <li><strong>Format:</strong> <code>MMMEl</code> (mass, two-letter element)</li>
 <li><strong>Columns 1-3:</strong> Mass number (120, 208, 252)</li>
-<li><strong>Columns 4-5</strong>: Two-letter element symbol (Sn, Pb, Cf)</li>
+<li><strong>Columns 4-5:</strong> Two-letter element symbol (Sn, Pb, Cf)</li>
 <li><strong>Results:</strong> <code>120Sn</code>, <code>208Pb</code>, <code>252Cf</code></li>
 </ul>
 <p><strong>CRITICAL NUCID Rules:</strong></p>
@@ -327,10 +328,10 @@ aside > *:last-child {
 <li>Column positioning is <strong>EXACT</strong> (one column off breaks ENSDF parsing).</li>
 <li>Element symbols follow case-sensitive style (e.g., antimony uses <code>SB</code>, not <code>Sb</code>).</li>
 <li>Spaces are mandatory where specified to maintain field boundaries.</li>
-<li>Mass numbers are numeric only (no leading zeros unless 3-digit).</li>
+<li>Mass numbers are numeric only.</li>
 </ul>
 <h3 id="record-format-specifications">Record Format Specifications</h3>
-<h4 id="l-record-format-energy-levels">L-Record Format (Energy Levels)</h4>
+<h4 id="energy-level-record-l-record">Energy Level Record (L-Record)</h4>
 <pre><code class="language-text">Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 Format:
  35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q
@@ -440,7 +441,7 @@ Example:
 <li>Do not modify L-record data based on comments for other levels.</li>
 <li>Each L-record without a following <code>cL</code> line is an independent assignment.</li>
 </ul>
-<h4 id="g-record-format-gamma-transitions">G-Record Format (Gamma Transitions)</h4>
+<h4 id="gamma-transition-record-g-record">Gamma Transition Record (G-Record)</h4>
 <pre><code class="language-text">Columns:
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 Format: 
@@ -567,11 +568,11 @@ Example:
 </table>
 <h3 id="critical-ensdf-formatting-rules">Critical ENSDF Formatting Rules</h3>
 <h4 id="ensdf-structural-relationships">ENSDF Structural Relationships</h4>
-<p><strong>Level Blocks:</strong></p>
+<p><strong>Level Blocks or Level Units:</strong></p>
 <ol>
 <li>Each L-record starts a new level block (physical level).</li>
 <li>All G-records immediately after an L-record belong to that level block.</li>
-<li>Any G-records before the next L-record attach to the previous level (never to the next).</li>
+<li>Any G-records before the next L-record attach to the previous level (never to the next level).</li>
 <li>A level with no gammas is a single L-record with no following G-records.</li>
 <li>Preserve strict L→G grouping; parsers depend on it.</li>
 </ol>
@@ -592,8 +593,8 @@ Example:
 <ul>
 <li>Column 6 contains continuation marker (blank for first record, alphanumeric for continuation).</li>
 <li>Common continuation types: <code>2 L</code>, <code>F L</code> (for L-records); <code>2 G</code>, <code>B G</code> (for G-records).</li>
-<li>Continuation records follow and apply to the record immediately above them.</li>
-<li>FLAG markers (e.g., FLAG=A) are placed in continuation records following the record they describe.</li>
+<li>Continuation records apply only to the immediately preceding record type (L or G).</li>
+<li>FLAG markers (e.g., FLAG=A) are placed in continuation records following the record (L or G) they describe.</li>
 </ul>
 <h4 id="left-justification-requirement">Left-Justification Requirement</h4>
 <p><strong>MANDATORY:</strong> All values and uncertainties in all fields MUST be left-justified (NEVER right-justified or centered).</p>
@@ -626,7 +627,7 @@ Example:
 <li><strong>CRITICAL:</strong> Only space, <code>?</code>, or <code>S</code> allowed in column 80.</li>
 </ul>
 <p><strong>Critical Note:</strong> ENSDF files require exact positioning. One column off equals data rejection.</p>
-<h4 id="dp-record-format-delayed-proton-emission">DP-Record Format (Delayed Proton Emission)</h4>
+<h4 id="delayed-proton-emission-record-dp-record">Delayed Proton Emission Record (DP-Record)</h4>
 <pre><code class="language-text">Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 Format:  35XX   DP EP       DE IP     DIP EI
 Example: 35CL   DP 501      10 3.5    12 9022
@@ -712,7 +713,7 @@ Example: 35CL   DP 501      10 3.5    12 9022
 <li>Readable spaces at columns 10, 22, and 32 for human readability.</li>
 <li>All field positioning follows standard ENSDF left-justification rules.</li>
 </ul>
-<h4 id="b-record-format-beta-minus-decay">B-Record Format (Beta Minus Decay)</h4>
+<h4 id="beta-minus-decay-record-b-record">Beta Minus Decay Record (B-Record)</h4>
 <pre><code class="language-text">Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 Format:  35XX  B EEEE.E   DE  IB     DIB          LOGFT   DFT              C   UN  Q
 Example: 35P   B 1572.0    1  100.0  4            5.23    12               C   1U   
@@ -816,7 +817,7 @@ Example: 35P   B 1572.0    1  100.0  4            5.23    12               C   1
 <li>LOGFT for uniqueness classification (col 78-79).</li>
 <li>Blank signifies allowed transition for forbiddenness field.</li>
 </ul>
-<h4 id="e-record-format-electron-capture-and-beta-plus-decay">E-Record Format (Electron Capture and Beta Plus Decay)</h4>
+<h4 id="electron-capture-and-beta-plus-decay-record-e-record">Electron Capture and Beta Plus Decay Record (E-Record)</h4>
 <pre><code class="language-text">Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 Format:  35XX  E EEEE.E   DE  IB     DIB IE     DIE LOGFT   DFT    TI       DTI C UN  Q
 Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   C 1U  S
@@ -963,10 +964,51 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 &gt;8.5             → log ft &gt; 8.5
 |?5.1            → log ft ≈ 5.1
 </code></pre>
+<h3 id="xref-notation-rules">XREF Notation Rules</h3>
+<p>XREF (cross-reference) entries in L-records indicate which datasets observe a level. Notation follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Notation</th>
+<th style="text-align:left">Meaning</th>
+<th style="text-align:left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Plain letter</td>
+<td style="text-align:left">Dataset level energies match the Adopted level within uncertainties.</td>
+<td style="text-align:left"><code>XREF=FH</code> — Datasets F and H report this level with energies consistent with the Adopted value.</td>
+</tr>
+<tr>
+<td style="text-align:left">Letter(energy)</td>
+<td style="text-align:left">Dataset reports an energy outside the uncertainty range but still matches the same physical level.</td>
+<td style="text-align:left"><code>XREF=H(4865)</code> — Dataset H reports a level at 4866±3 keV (outside Adopted 4860±2).</td>
+</tr>
+<tr>
+<td style="text-align:left">Letter(*)</td>
+<td style="text-align:left">Ambiguous matching; dataset level may correspond to two or more Adopted levels.</td>
+<td style="text-align:left"><code>XREF=I(*)</code> — The level from dataset I has ambiguous doublet/multiplet matching.</td>
+</tr>
+<tr>
+<td style="text-align:left">Letter(?)</td>
+<td style="text-align:left">Questionable or uncertain match.</td>
+<td style="text-align:left"><code>XREF=J(?)</code> — Dataset J reports a questionable level that possibly matches the Adopted level.</td>
+</tr>
+</tbody>
+</table>
 <hr>
-<h2 id="3-ensdf-uncertainty-standards">3. ENSDF Uncertainty Standards</h2>
+<h2 id="3-ensdf-uncertainty-notation">3. ENSDF Uncertainty Notation</h2>
 <p><strong>CRITICAL:</strong> Uncertainties in data record fields and comment lines use DIFFERENT formats, but both follow an &quot;uncertainty-in-last-digits&quot; notation.</p>
 <h3 id="uncertainty-format-in-data-record-fields">Uncertainty Format in Data Record Fields</h3>
+<h4 id="in-data-record-fields-l-g-e-b-dp-records">In Data Record Fields (L, G, E, B, DP Records)</h4>
+<p>Format: Plain numbers only (NO <code>{I}</code> notation, NO braces).</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Energy: <code>1572.0</code> with uncertainty <code>12</code> in DE field means 1572.0(12).</li>
+<li>RI: <code>70.0</code> with uncertainty <code>24</code> in DRI field means 70.0(24).</li>
+<li>T1/2: <code>2.29 PS</code> with uncertainty <code>14</code> in DT field means 2.29(14) PS.</li>
+</ul>
 <h4 id="standard-2-column-uncertainty-fields-2-digits-maximum">Standard 2-Column Uncertainty Fields (2 Digits Maximum)</h4>
 <ul>
 <li><strong>DE field</strong> (cols 20-21): 1-2 digits with space padding.
@@ -1044,14 +1086,6 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 </li>
 </ul>
 <h3 id="uncertainty-format-in-comment-lines">Uncertainty Format in Comment Lines</h3>
-<h4 id="in-data-record-fields-l-g-e-b-dp-records">In Data Record Fields (L, G, E, B, DP Records)</h4>
-<p>Format: Plain numbers only (NO <code>{I}</code> notation, NO braces).</p>
-<p><strong>Examples:</strong></p>
-<ul>
-<li>Energy: <code>1572.0</code> with uncertainty <code>12</code> in DE field means 1572.0(12).</li>
-<li>RI: <code>70.0</code> with uncertainty <code>24</code> in DRI field means 70.0(24).</li>
-<li>T1/2: <code>2.29 PS</code> with uncertainty <code>14</code> in DT field means 2.29(14) PS.</li>
-</ul>
 <h4 id="in-comment-lines-cl-cg-general-comments">In Comment Lines (cL, cG, General Comments)</h4>
 <p>Format: Use <code>{In}</code> or <code>{I+n-m}</code> notation with braces.</p>
 <p><strong>CRITICAL:</strong> n must be INTEGER ONLY (NEVER decimals like <code>{I0.1}</code> or <code>{I1.1}</code>).</p>
@@ -1109,6 +1143,16 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 <li>For 2 decimals: <code>{I21}</code> means ±21 in last two digits = ±0.21.</li>
 <li><strong>FORBIDDEN:</strong> <code>{I0.1}</code>, <code>{I1.1}</code>, <code>{I2.7}</code> (decimals violate ENSDF rules).</li>
 </ul>
+<h4 id="scientific-notation-format-1">Scientific Notation Format</h4>
+<p>In comment lines, scientific notation uses <code>{In}</code> for uncertainties:</p>
+<ul>
+<li><strong>Examples:</strong> <code>(5.6±1.0)×10^-4</code> becomes <code>5.6|*10{+-4} {I10}</code> in comments.</li>
+<li><strong>Value:</strong> <code>5.6E-4</code></li>
+<li><strong>Uncertainty:</strong> <code>{I10}</code> (±1.0 in last digit).</li>
+<li><strong>Examples:</strong> <code>(1.1±0.3)×10^6</code> becomes <code>1.1|*10{+6} {I3}</code> in comments.</li>
+<li><strong>Value:</strong> <code>1.1E6</code></li>
+<li><strong>Uncertainty:</strong> <code>{I3}</code> (±0.3 in last digit).</li>
+</ul>
 <p><strong>Examples in Context:</strong></p>
 <ul>
 <li>Data record: <code> 35P   L 1572.0    12 3/2+             2.29 PS   14</code> (uncertainties are plain numbers).</li>
@@ -1121,41 +1165,6 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 <li><strong>NEVER</strong> edit <code>.old</code> files (reference files from previous evaluation rounds).</li>
 <li><strong>NEVER</strong> modify first/last line indentation or spacing in <code>.ens</code> files.</li>
 <li><strong>NEVER</strong> modify XREF lists (XREF entries with pattern <code>NUCID X</code> have their own specific formatting rules).</li>
-</ul>
-<h3 id="xref-notation-rules">XREF Notation Rules</h3>
-<p>XREF (cross-reference) entries in L-records indicate which datasets observe a level. The notation format:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Notation</th>
-<th style="text-align:left">Meaning</th>
-<th style="text-align:left">Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Plain letter</td>
-<td style="text-align:left">Dataset energy matches adopted level within uncertainties</td>
-<td style="text-align:left"><code>XREF=FH</code> means datasets F and H report energies consistent with adopted</td>
-</tr>
-<tr>
-<td style="text-align:left">Letter(energy)</td>
-<td style="text-align:left">Dataset reports different energy outside uncertainty range, but same physical level</td>
-<td style="text-align:left"><code>XREF=H(4865)</code> means dataset H reports 4865 keV (outside adopted ±uncertainty)</td>
-</tr>
-<tr>
-<td style="text-align:left">Letter(*)</td>
-<td style="text-align:left">Uncertain/ambiguous matching; level could correspond to multiple dataset levels</td>
-<td style="text-align:left"><code>XREF=I(*)</code> means dataset I has ambiguous correspondence</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Critical Rules:</strong></p>
-<ul>
-<li>Use plain letter when dataset energy falls within adopted energy ± uncertainty.</li>
-<li>Use letter(energy) when dataset energy is outside uncertainty range but evaluator confirms same level.</li>
-<li>Use letter(*) ONLY for genuinely uncertain cases where multiple matches are possible.</li>
-<li><strong>NEVER</strong> use (*) when matching is definite (e.g., if 4875.3 falls within 4881.4±12, use plain letter).</li>
 </ul>
 <h3 id="debugging-technique">Debugging Technique</h3>
 <p><strong>CRITICAL 80-Column Debugging Technique</strong>:
@@ -1325,9 +1334,48 @@ python .github/scripts/ens2pdf.py Si35_adopted --open --system
 }
 </code></pre>
 <hr>
-<h2 id="5-csv-and-tabular-data-processing">5. CSV and Tabular Data Processing</h2>
-<p><strong>CRITICAL AI WEAKNESS MITIGATION: COLUMN ALIGNMENT AND BLANK CELL HANDLING</strong></p>
-<h3 id="ai-frequent-failure-patterns-to-avoid">AI Frequent Failure Patterns to Avoid</h3>
+<h2 id="5-tabular-data-processing-and-data-entry-quality-assurance">5. Tabular Data Processing and Data Entry Quality Assurance</h2>
+<h3 id="mandatory-data-entry-quality-assurance-zero-tolerance">MANDATORY DATA ENTRY QUALITY ASSURANCE (ZERO TOLERANCE)</h3>
+<p><strong>CRITICAL REQUIREMENT:</strong> For ALL data entry tasks involving multiple numeric values (gamma transitions, level energies, intensities, half-lives, etc.), you MUST execute BOTH quality assurance checks before claiming task completion:</p>
+<ol>
+<li>
+<p><strong>Bidirectional Positional Check (MANDATORY)</strong></p>
+<ul>
+<li>Verify first entry (forward counting from start)</li>
+<li>Verify last entry (backward counting from end)</li>
+<li>Confirm endpoints match source data exactly</li>
+<li>Documents systematic position tracking</li>
+</ul>
+</li>
+<li>
+<p><strong>Random Spot Check (MANDATORY, 5% minimum sample)</strong></p>
+<ul>
+<li>Randomly select ≥5% of total entries (minimum 5 samples)</li>
+<li>Trace each sample back to source data location</li>
+<li>Verify value, uncertainty, position, and mapping accuracy</li>
+<li>Generate verification script for reproducibility</li>
+<li>Document all samples checked with evidence</li>
+</ul>
+</li>
+</ol>
+<p><strong>TRIGGER CONDITIONS (execute immediately when ANY apply):</strong></p>
+<ul>
+<li>Task involves entering ≥50 numeric data points</li>
+<li>Request mentions &quot;data entry&quot;, &quot;add data&quot;, &quot;populate table&quot;</li>
+<li>Bulk numeric input from source tables, figures, or publications</li>
+<li>Arithmetic-intensive work (calculations, conversions, averaging)</li>
+</ul>
+<p><strong>FORBIDDEN BEHAVIORS:</strong></p>
+<ul>
+<li>Claiming &quot;task complete&quot; without executing both checks</li>
+<li>Skipping checks because &quot;data looks correct&quot;</li>
+<li>Performing checks mentally without documented evidence</li>
+<li>Using &lt;100% verification rates (all sampled entries must pass)</li>
+</ul>
+<p><strong>ENFORCEMENT:</strong> If you skip these checks, you have FAILED the task regardless of data accuracy.</p>
+<hr>
+<h3 id="critical-ai-weakness-mitigation-column-alignment-and-blank-cell-handling">CRITICAL AI WEAKNESS MITIGATION: COLUMN ALIGNMENT AND BLANK CELL HANDLING</h3>
+<h4 id="ai-frequent-failure-patterns-to-avoid">AI Frequent Failure Patterns to Avoid</h4>
 <ul>
 <li>Assuming column positions without explicit mapping.</li>
 <li>Ignoring blank cells that shift subsequent data columns.</li>
@@ -1335,13 +1383,13 @@ python .github/scripts/ens2pdf.py Si35_adopted --open --system
 <li>Mismatched header-to-data column associations.</li>
 <li>Treating blank cells as non-existent rather than positional placeholders.</li>
 </ul>
-<h3 id="mandatory-verification-protocol">Mandatory Verification Protocol</h3>
+<h4 id="mandatory-verification-protocol">Mandatory Verification Protocol</h4>
 <ol>
 <li><strong>Column alignment:</strong> Explicitly map ALL columns including blank ones (never assume positions based on visible data alone).</li>
 <li><strong>Blank cells:</strong> Count blank cells meticulously (each blank cell shifts all subsequent column positions and can cause catastrophic data misalignment).</li>
 <li><strong>Bidirectional verification:</strong> Always cross-check both forward counting (header to data) and backward counting (data to header) to ensure accurate column-to-data mapping.</li>
 </ol>
-<h3 id="critical-validation-steps-for-tabular-data">Critical Validation Steps for Tabular Data</h3>
+<h4 id="critical-validation-steps-for-tabular-data">Critical Validation Steps for Tabular Data</h4>
 <ul>
 <li><strong>Step 1:</strong> List all header columns explicitly, including blank column positions.</li>
 <li><strong>Step 2:</strong> Count blank cells between data columns (they are positional placeholders).</li>
@@ -1349,7 +1397,7 @@ python .github/scripts/ens2pdf.py Si35_adopted --open --system
 <li><strong>Step 4:</strong> Backward verification (confirm each data column maps back to correct header).</li>
 <li><strong>Step 5:</strong> Arithmetic validation (verify row/column calculations account for blank cell shifts).</li>
 </ul>
-<h3 id="example-failure-prevention">Example Failure Prevention</h3>
+<h4 id="example-failure-prevention">Example Failure Prevention</h4>
 <pre><code class="language-text">CSV Header Row: Name,Age,,City,Score
 Data Row: John,25,,NYC,95
 
@@ -1358,41 +1406,61 @@ CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
 </code></pre>
 <p><strong>NEVER PROCEED WITHOUT COMPLETE COLUMN MAPPING VERIFICATION</strong></p>
 <p><strong>CRITICAL COLUMN RULE:</strong> When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns. Only adjust spacing between fields (never move field data to incorrect columns).</p>
-<h3 id="random-spot-check-validation">Random Spot-Check Validation</h3>
-<p><strong>QUALITY ASSURANCE BEST PRACTICE:</strong> After systematic data entry or bulk corrections, perform random spot-check validation by manually verifying a few samples (5% of total) against source data. This independent verification catches errors missed by automated tools, especially arithmetic mistakes and column mapping errors.</p>
-<p><strong>When to use:</strong></p>
+<h3 id="mandatory-random-spot-check-protocol">MANDATORY Random Spot-Check Protocol</h3>
+<p><strong>NON-NEGOTIABLE REQUIREMENT:</strong> After ANY large-scale data entry task, you MUST perform random spot-check validation before claiming completion. This is NOT optional.</p>
+<p><strong>Execution Requirements:</strong></p>
 <ul>
-<li>After large-scale data entry or bulk corrections.</li>
-<li>After arithmetic-intensive work.</li>
-<li>Before claiming task completion when extra confidence is needed.</li>
-</ul>
-<p><strong>Verification Checklist (for each sample):</strong></p>
+<li><strong>Minimum sample size:</strong> 5% of total entries (absolute minimum 5 samples)</li>
+<li><strong>Selection method:</strong> Random sampling (not sequential or cherry-picked)</li>
+<li><strong>Evidence required:</strong> Generate verification script showing:
 <ul>
-<li>Arithmetic accuracy.</li>
-<li>Values/uncertainties match source data exactly.</li>
-<li>Mapping accuracy (correct fields).</li>
-<li>Row and column alignment.</li>
+<li>Total entry count</li>
+<li>Sample size calculation (e.g., &quot;200 entries → 5% = 10 samples&quot;)</li>
+<li>Randomly selected row/line numbers</li>
+<li>Source data values for each sample</li>
+<li>Verification results (PASS/FAIL per sample)</li>
 </ul>
-<p><strong>If errors found:</strong></p>
+</li>
+</ul>
+<p><strong>Verification Checklist (100% pass rate required):</strong></p>
+<ul>
+<li>✅ Arithmetic accuracy (no calculation errors)</li>
+<li>✅ Values match source data exactly (character-for-character)</li>
+<li>✅ Uncertainties match source data exactly</li>
+<li>✅ Mapping accuracy (correct ENSDF fields)</li>
+<li>✅ Row and column alignment (no off-by-one errors)</li>
+</ul>
+<p><strong>If ANY errors found:</strong></p>
 <ol>
-<li>Identify root cause immediately.</li>
-<li>Analyze pattern (systematic vs isolated).</li>
-<li>Correct all instances.</li>
-<li>Re-validate comprehensively.</li>
-<li>Perform new spot-check.</li>
+<li><strong>STOP immediately</strong> - do NOT claim partial completion</li>
+<li>Identify root cause (systematic vs. isolated error)</li>
+<li>Analyze error pattern across ALL entries</li>
+<li>Correct all instances of identified error type</li>
+<li>Re-run automated validation (column calibration + energy ordering)</li>
+<li>Perform NEW random spot-check with different samples</li>
+<li>Repeat until 100% pass rate achieved</li>
 </ol>
-<p><strong>Integration:</strong></p>
+<p><strong>Integration with Workflow:</strong></p>
 <ul>
-<li>Use after automated validation passes (column calibration + energy ordering).</li>
-<li>Document findings for reproducibility.</li>
+<li>Execute AFTER automated validation passes (column calibration + energy ordering)</li>
+<li>Execute AFTER Bidirectional Positional Check confirms endpoints</li>
+<li>Execute BEFORE claiming &quot;task completed successfully&quot;</li>
+<li>Document findings in compliance checklist for user verification</li>
+</ul>
+<p><strong>Zero Tolerance Enforcement:</strong></p>
+<ul>
+<li>Task is INCOMPLETE until spot-check passes with 0 errors</li>
+<li>No exceptions for &quot;simple&quot; or &quot;small&quot; data entry tasks</li>
+<li>Failure to execute = failure to complete assigned task</li>
 </ul>
 <hr>
 <h2 id="6-academic-standards">6. Academic Standards</h2>
 <h3 id="professional-english-grammar">Professional English Grammar</h3>
 <p><strong>Common corrections:</strong></p>
 <ul>
-<li><strong>Spelling:</strong> &quot;stoped&quot; to &quot;stopped&quot;, &quot;usign&quot; to &quot;using&quot;, &quot;coeffcients&quot; to &quot;coefficients&quot;.</li>
-<li><strong>Duplicates:</strong> &quot;the the&quot;, &quot;from from&quot;, etc.</li>
+<li><strong>Spelling:</strong> &quot;ohter&quot; to &quot;other&quot;, &quot;stoped&quot; to &quot;stopped&quot;, &quot;usign&quot; to &quot;using&quot;, &quot;coeffcients&quot; to &quot;coefficients&quot;, &quot;deexiting&quot; to &quot;deexciting&quot;.</li>
+<li><strong>Dittography:</strong> &quot;the the&quot;, &quot;from from&quot;, etc.</li>
+<li><strong>Hyphenation:</strong> Rule: [Number]-[Unit]-[Descriptor] [Noun]. Hyphens may have been inserted in word pairs that function as compound adjectives when they occur before a noun, as in &quot;x-ray diffraction,&quot; &quot;4-mm-long gas cell,&quot; and &quot;R-matrix theory.&quot; However, hyphens are deleted from word pairs when they are not used as adjectives before nouns, as in &quot;emission by x rays,&quot; &quot;was 4 mm in length,&quot; and &quot;the R matrix is tested.&quot; &quot;L-transfers&quot; and &quot;half-life&quot; are always hyphenated.</li>
 </ul>
 <h3 id="general-comment-ordering-at-the-beginning-of-adoptedens-files">General Comment Ordering at the beginning of Adopted.ens Files</h3>
 <ol>
@@ -1405,15 +1473,26 @@ CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
 </ol>
 <hr>
 <h2 id="document-structure">Document Structure</h2>
-<p>This document is organized as follows:</p>
 <p><strong>Main sections:</strong></p>
 <ol>
-<li><strong>ENSDF Text Format Standards:</strong> Superscripts, subscripts, Greek letters, mathematical symbols, formatting examples, and Nuclear Science References (NSR) citation format.</li>
-<li><strong>ENSDF 80-Column Format Standards:</strong> NUCID field format rules (columns 1-5), record format specifications (L, G, DP, B, E records with detailed field descriptions and tables), critical ENSDF formatting rules (structural relationships, left-justification requirement, energy ordering requirement, G-record flag rules), and LOG FT format rules for B and E records.</li>
-<li><strong>ENSDF Uncertainty Standards:</strong> Uncertainty format in data record fields (standard 2-column uncertainty fields, extended uncertainty fields for asymmetric uncertainties, scientific notation format, GT and LT markers) and uncertainty format in comment lines (with {In} notation and critical rules).</li>
-<li><strong>ENSDF File Editing Workflow:</strong> File protection rules, XREF notation rules, debugging technique (80-column visual ruler method), mandatory edit-validate-repeat workflow, validation tools and when to use them (before/during/after editing), ENSDF 1-line ruler tool, column calibration tool, energy ordering tool, output interpretation guidelines, editing methodology, and tools and workflows (Java format check, PDF generation).</li>
-<li><strong>CSV and Tabular Data Processing:</strong> AI frequent failure patterns to avoid, mandatory verification protocol, critical validation steps for tabular data, example failure prevention, and random spot-check validation.</li>
-<li><strong>Academic Standards:</strong> Professional English grammar (common corrections) and general comment ordering at the beginning of Adopted.ens files.</li>
+<li>
+<p><strong>ENSDF Text Format Standards</strong> — Superscripts, subscripts, Greek letters, mathematical symbols, and Nuclear Science References (NSR) citation conventions.</p>
+</li>
+<li>
+<p><strong>ENSDF 80-Column Format Standards</strong> — NUCID field positioning, detailed record specifications (L, G, DP, B, E), structural relationships, left-justification, energy ordering, G-record flag rules, and XREF notation rules.</p>
+</li>
+<li>
+<p><strong>ENSDF Uncertainty Notation</strong> — Notation formats for data record fields (standard 2-column, extended asymmetric, scientific notation, GT/LT markers) and distinct {In} notation for comment lines.</p>
+</li>
+<li>
+<p><strong>ENSDF File Editing Workflow</strong> — File protection rules, visual ruler debugging, the &quot;Sacred Workflow,&quot; validation tool specifications and usage (before/during/after editing), interpretation guidelines, editing methodology, and tooling workflows (Java format check, PDF generation).</p>
+</li>
+<li>
+<p><strong>Tabular Data Processing and Data Entry Quality Assurance</strong> — Zero-tolerance protocols, bidirectional positional verification, random spot-check requirements, AI weakness mitigation strategies (column alignment, blank cell handling), and comprehensive validation procedures.</p>
+</li>
+<li>
+<p><strong>Academic Standards</strong> — Professional English grammar conventions and standardized comment ordering for Adopted files.</p>
+</li>
 </ol>
 
             <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>

@@ -78,7 +78,7 @@ You are an AI agent specializing in the Evaluated Nuclear Structure Data File (E
 -   Author initials: First uppercase, rest lowercase (`Ba` not `BA`, `Br` not `BR`).
 -   Letter suffixes: ALL UPPERCASE (`ClZK` not `Clzk`, `UmZZ` not `Umzz`).
 
-**List Formatting:** Comma-separated with spaces: `2021Vl03, 2015Vl01, 1974ClZK` (NOT space-only separation).
+**List Formatting:** Comma-separated with spaces: `2021Vl03, 2015Vl01, 1974ClZK`.
 
 ---
 
@@ -103,9 +103,9 @@ You are an AI agent specializing in the Evaluated Nuclear Structure Data File (E
 - **Columns 4-5:** Two-letter element symbol (Cl, Ge, Si)
 - **Results:** ` 35Cl`, ` 74Ge`, ` 32Si`
 
-**Three-digit mass number + One-letter element** (e.g., 127I, 252C):
+**Three-digit mass number + One-letter element** (e.g., 127I, 232U):
 - **Format:** `MMME ` (mass, element, space)
-- **Columns 1-3:** Mass number (127, 252)
+- **Columns 1-3:** Mass number (127, 232)
 - **Column 4:** One-letter element symbol (I, W, U)
 - **Column 5:** Space
 - **Results:** `127I `, `184W `
@@ -113,18 +113,18 @@ You are an AI agent specializing in the Evaluated Nuclear Structure Data File (E
 **Three-digit mass number + Two-letter element** (e.g., 120Sn, 208Pb, 252Cf):
 - **Format:** `MMMEl` (mass, two-letter element)
 - **Columns 1-3:** Mass number (120, 208, 252)
-- **Columns 4-5**: Two-letter element symbol (Sn, Pb, Cf)
+- **Columns 4-5:** Two-letter element symbol (Sn, Pb, Cf)
 - **Results:** `120Sn`, `208Pb`, `252Cf`
 
 **CRITICAL NUCID Rules:**
 - Column positioning is **EXACT** (one column off breaks ENSDF parsing).
 - Element symbols follow case-sensitive style (e.g., antimony uses `SB`, not `Sb`).
 - Spaces are mandatory where specified to maintain field boundaries.
-- Mass numbers are numeric only (no leading zeros unless 3-digit).
+- Mass numbers are numeric only.
 
 ### Record Format Specifications
 
-#### L-Record Format (Energy Levels)
+#### Energy Level Record (L-Record)
 
 ```text
 Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
@@ -160,7 +160,7 @@ Example:
 - Do not modify L-record data based on comments for other levels.
 - Each L-record without a following `cL` line is an independent assignment.
 
-#### G-Record Format (Gamma Transitions)
+#### Gamma Transition Record (G-Record)
 
 ```text
 Columns:
@@ -203,7 +203,7 @@ Example:
 **Level Blocks or Level Units:**
 1.  Each L-record starts a new level block (physical level).
 2.  All G-records immediately after an L-record belong to that level block.
-3.  Any G-records before the next L-record attach to the previous level (never to the next).
+3.  Any G-records before the next L-record attach to the previous level (never to the next level).
 4.  A level with no gammas is a single L-record with no following G-records.
 5.  Preserve strict L→G grouping; parsers depend on it.
 
@@ -216,8 +216,8 @@ Example:
 **Continuation Records (Column 6):**
 -   Column 6 contains continuation marker (blank for first record, alphanumeric for continuation).
 -   Common continuation types: `2 L`, `F L` (for L-records); `2 G`, `B G` (for G-records).
--   Continuation records follow and apply to the record immediately above them.
--   FLAG markers (e.g., FLAG=A) are placed in continuation records following the record they describe.
+-   Continuation records apply only to the immediately preceding record type (L or G).
+-   FLAG markers (e.g., FLAG=A) are placed in continuation records following the record (L or G) they describe.
 
 #### Left-Justification Requirement
 
@@ -250,7 +250,7 @@ Example:
 
 **Critical Note:** ENSDF files require exact positioning. One column off equals data rejection.
 
-#### DP-Record Format (Delayed Proton Emission)
+#### Delayed Proton Emission Record (DP-Record)
 
 ```text
 Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
@@ -278,7 +278,7 @@ Example: 35CL   DP 501      10 3.5    12 9022
 -   Readable spaces at columns 10, 22, and 32 for human readability.
 -   All field positioning follows standard ENSDF left-justification rules.
 
-#### B-Record Format (Beta Minus Decay)
+#### Beta Minus Decay Record (B-Record)
 
 ```text
 Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
@@ -312,7 +312,7 @@ Example: 35P   B 1572.0    1  100.0  4            5.23    12               C   1
 -   LOGFT for uniqueness classification (col 78-79).
 -   Blank signifies allowed transition for forbiddenness field.
 
-#### E-Record Format (Electron Capture and Beta Plus Decay)
+#### Electron Capture and Beta Plus Decay Record (E-Record)
 
 ```text
 Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
@@ -377,13 +377,33 @@ LOGFT     DFT
 |?5.1            → log ft ≈ 5.1
 ```
 
+### XREF Notation Rules
+
+XREF (cross-reference) entries in L-records indicate which datasets observe a level. Notation follows:
+
+| Notation | Meaning | Example |
+| :--- | :--- | :--- |
+| Plain letter | Dataset level energies match the Adopted level within uncertainties. | `XREF=FH` — Datasets F and H report this level with energies consistent with the Adopted value. |
+| Letter(energy) | Dataset reports an energy outside the uncertainty range but still matches the same physical level. | `XREF=H(4865)` — Dataset H reports a level at 4866±3 keV (outside Adopted 4860±2). |
+| Letter(*) | Ambiguous matching; dataset level may correspond to two or more Adopted levels. | `XREF=I(*)` — The level from dataset I has ambiguous doublet/multiplet matching. |
+| Letter(?) | Questionable or uncertain match. | `XREF=J(?)` — Dataset J reports a questionable level that possibly matches the Adopted level. |
+
 ---
 
-## 3. ENSDF Uncertainty Standards
+## 3. ENSDF Uncertainty Notation
 
 **CRITICAL:** Uncertainties in data record fields and comment lines use DIFFERENT formats, but both follow an "uncertainty-in-last-digits" notation.
 
 ### Uncertainty Format in Data Record Fields
+
+#### In Data Record Fields (L, G, E, B, DP Records)
+
+Format: Plain numbers only (NO `{I}` notation, NO braces).
+
+**Examples:**
+-   Energy: `1572.0` with uncertainty `12` in DE field means 1572.0(12).
+-   RI: `70.0` with uncertainty `24` in DRI field means 70.0(24).
+-   T1/2: `2.29 PS` with uncertainty `14` in DT field means 2.29(14) PS.
 
 #### Standard 2-Column Uncertainty Fields (2 Digits Maximum)
 
@@ -435,15 +455,6 @@ For intensities and other values in scientific notation:
 
 ### Uncertainty Format in Comment Lines
 
-#### In Data Record Fields (L, G, E, B, DP Records)
-
-Format: Plain numbers only (NO `{I}` notation, NO braces).
-
-**Examples:**
--   Energy: `1572.0` with uncertainty `12` in DE field means 1572.0(12).
--   RI: `70.0` with uncertainty `24` in DRI field means 70.0(24).
--   T1/2: `2.29 PS` with uncertainty `14` in DT field means 2.29(14) PS.
-
 #### In Comment Lines (cL, cG, General Comments)
 
 Format: Use `{In}` or `{I+n-m}` notation with braces.
@@ -471,6 +482,15 @@ Format: Use `{In}` or `{I+n-m}` notation with braces.
 -   For 2 decimals: `{I21}` means ±21 in last two digits = ±0.21.
 -   **FORBIDDEN:** `{I0.1}`, `{I1.1}`, `{I2.7}` (decimals violate ENSDF rules).
 
+#### Scientific Notation Format
+In comment lines, scientific notation uses `{In}` for uncertainties:
+-   **Examples:** `(5.6±1.0)×10^-4` becomes `5.6|*10{+-4} {I10}` in comments.
+-   **Value:** `5.6E-4`
+-   **Uncertainty:** `{I10}` (±1.0 in last digit).
+-   **Examples:** `(1.1±0.3)×10^6` becomes `1.1|*10{+6} {I3}` in comments.
+-   **Value:** `1.1E6`
+-   **Uncertainty:** `{I3}` (±0.3 in last digit).
+
 **Examples in Context:**
 -   Data record: ` 35P   L 1572.0    12 3/2+             2.29 PS   14` (uncertainties are plain numbers).
 -   Comment line: ` 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)` (uncertainty uses `{I11}` notation).
@@ -484,22 +504,6 @@ Format: Use `{In}` or `{I+n-m}` notation with braces.
 -   **NEVER** edit `.old` files (reference files from previous evaluation rounds).
 -   **NEVER** modify first/last line indentation or spacing in `.ens` files.
 -   **NEVER** modify XREF lists (XREF entries with pattern `NUCID X` have their own specific formatting rules).
-
-### XREF Notation Rules
-
-XREF (cross-reference) entries in L-records indicate which datasets observe a level. The notation format:
-
-| Notation | Meaning | Example |
-| :--- | :--- | :--- |
-| Plain letter | Dataset energy matches adopted level within uncertainties | `XREF=FH` means datasets F and H report energies consistent with adopted |
-| Letter(energy) | Dataset reports different energy outside uncertainty range, but same physical level | `XREF=H(4865)` means dataset H reports 4865 keV (outside adopted ±uncertainty) |
-| Letter(*) | Uncertain/ambiguous matching; level could correspond to multiple dataset levels | `XREF=I(*)` means dataset I has ambiguous correspondence |
-
-**Critical Rules:**
--   Use plain letter when dataset energy falls within adopted energy ± uncertainty.
--   Use letter(energy) when dataset energy is outside uncertainty range but evaluator confirms same level.
--   Use letter(*) ONLY for genuinely uncertain cases where multiple matches are possible.
--   **NEVER** use (*) when matching is definite (e.g., if 4875.3 falls within 4881.4±12, use plain letter).
 
 ### Debugging Technique
 
@@ -706,7 +710,7 @@ foreach ($element in $elements) {
 
 ### CRITICAL AI WEAKNESS MITIGATION: COLUMN ALIGNMENT AND BLANK CELL HANDLING
 
-### AI Frequent Failure Patterns to Avoid
+#### AI Frequent Failure Patterns to Avoid
 
 -   Assuming column positions without explicit mapping.
 -   Ignoring blank cells that shift subsequent data columns.
@@ -714,13 +718,13 @@ foreach ($element in $elements) {
 -   Mismatched header-to-data column associations.
 -   Treating blank cells as non-existent rather than positional placeholders.
 
-### Mandatory Verification Protocol
+#### Mandatory Verification Protocol
 
 1.  **Column alignment:** Explicitly map ALL columns including blank ones (never assume positions based on visible data alone).
 2.  **Blank cells:** Count blank cells meticulously (each blank cell shifts all subsequent column positions and can cause catastrophic data misalignment).
 3.  **Bidirectional verification:** Always cross-check both forward counting (header to data) and backward counting (data to header) to ensure accurate column-to-data mapping.
 
-### Critical Validation Steps for Tabular Data
+#### Critical Validation Steps for Tabular Data
 
 -   **Step 1:** List all header columns explicitly, including blank column positions.
 -   **Step 2:** Count blank cells between data columns (they are positional placeholders).
@@ -728,7 +732,7 @@ foreach ($element in $elements) {
 -   **Step 4:** Backward verification (confirm each data column maps back to correct header).
 -   **Step 5:** Arithmetic validation (verify row/column calculations account for blank cell shifts).
 
-### Example Failure Prevention
+#### Example Failure Prevention
 
 ```text
 CSV Header Row: Name,Age,,City,Score
@@ -790,10 +794,9 @@ CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
 ### Professional English Grammar
 
 **Common corrections:**
--   **Spelling:** "ohter" to  "other", "stoped" to "stopped", "usign" to "using", "coeffcients" to "coefficients", "deexiting" to "deexciting".
+-   **Spelling:** "ohter" to "other", "stoped" to "stopped", "usign" to "using", "coeffcients" to "coefficients", "deexiting" to "deexciting".
 -   **Dittography:** "the the", "from from", etc.
--   **Hyphenation:** Rule: [Number]-[Unit]-[Descriptor] [Noun]. "Hyphens may have been inserted in word pairs that function as compound adjectives when they occur before a noun, as in "x-ray diffraction," "4-mm-long gas cell," and "R-matrix theory." However, hyphens are deleted from word pairs when they are not used as adjectives before nouns, as in "emission by x rays," "was 4 mm in length," and "the R matrix is tested."
--   "L-transfers", "half-life" are always hyphenated.
+-   **Hyphenation:** Rule: [Number]-[Unit]-[Descriptor] [Noun]. Hyphens may have been inserted in word pairs that function as compound adjectives when they occur before a noun, as in "x-ray diffraction," "4-mm-long gas cell," and "R-matrix theory." However, hyphens are deleted from word pairs when they are not used as adjectives before nouns, as in "emission by x rays," "was 4 mm in length," and "the R matrix is tested." "L-transfers" and "half-life" are always hyphenated.
 
 ### General Comment Ordering at the beginning of Adopted.ens Files
 
@@ -808,13 +811,16 @@ CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
 
 ## Document Structure
 
-This document is organized as follows:
-
 **Main sections:**
 
-1.  **ENSDF Text Format Standards:** Superscripts, subscripts, Greek letters, mathematical symbols, formatting examples, and Nuclear Science References (NSR) citation format.
-2.  **ENSDF 80-Column Format Standards:** NUCID field format rules (columns 1-5), record format specifications (L, G, DP, B, E records with detailed field descriptions and tables), critical ENSDF formatting rules (structural relationships, left-justification requirement, energy ordering requirement, G-record flag rules), and LOG FT format rules for B and E records.
-3.  **ENSDF Uncertainty Standards:** Uncertainty format in data record fields (standard 2-column uncertainty fields, extended uncertainty fields for asymmetric uncertainties, scientific notation format, GT and LT markers) and uncertainty format in comment lines (with {In} notation and critical rules).
-4.  **ENSDF File Editing Workflow:** File protection rules, XREF notation rules, debugging technique (80-column visual ruler method), mandatory edit-validate-repeat workflow, validation tools and when to use them (before/during/after editing), ENSDF 1-line ruler tool, column calibration tool, energy ordering tool, output interpretation guidelines, editing methodology, and tools and workflows (Java format check, PDF generation).
-5.  **Tabular Data Processing:** AI frequent failure patterns to avoid, mandatory verification protocol, critical validation steps for tabular data, example failure prevention, and random spot-check validation.
-6.  **Academic Standards:** Professional English grammar (common corrections) and general comment ordering at the beginning of Adopted.ens files.
+1.  **ENSDF Text Format Standards** — Superscripts, subscripts, Greek letters, mathematical symbols, and Nuclear Science References (NSR) citation conventions.
+
+2.  **ENSDF 80-Column Format Standards** — NUCID field positioning, detailed record specifications (L, G, DP, B, E), structural relationships, left-justification, energy ordering, G-record flag rules, and XREF notation rules.
+
+3.  **ENSDF Uncertainty Notation** — Notation formats for data record fields (standard 2-column, extended asymmetric, scientific notation, GT/LT markers) and distinct {In} notation for comment lines.
+
+4.  **ENSDF File Editing Workflow** — File protection rules, visual ruler debugging, the "Sacred Workflow," validation tool specifications and usage (before/during/after editing), interpretation guidelines, editing methodology, and tooling workflows (Java format check, PDF generation).
+
+5.  **Tabular Data Processing and Data Entry Quality Assurance** — Zero-tolerance protocols, bidirectional positional verification, random spot-check requirements, AI weakness mitigation strategies (column alignment, blank cell handling), and comprehensive validation procedures.
+
+6.  **Academic Standards** — Professional English grammar conventions and standardized comment ordering for Adopted files.
