@@ -22,12 +22,12 @@
  34CL c  Others: {+31}P(|a,n){+34}Cl Q-value, yield, excitation function        
  34CL2c  measurements: 2021Vl03, 2015Vl01, 1974ClZK, 1973Ry01, 1970Um01,        
  34CL3c  1969UmZZ, 1956Qu04                                                     
+ 34CL cL $No literature in this dataset reports any E|g or E(level) values with 
+ 34CL2cL uncertainties. All E(level) values given here are from Fig. 3 of       
+ 34CL3cL 1978Ba39 and all E|g values are deduced from level-energy differences. 
+ 34CL cG M,MR$From |g(|q) in 1978Ba61.                                          
  34CL cL J$Spin from |g(|q) in 1978Ba61, except for the ground state, 146, 2722,
  34CL2cL 3600 are known and used by 1978Ba61.                                   
- 34CL cG M,MR$From |g(|q) in 1978Ba61.                                          
- 34CL cL $Uncertainties of E|g or uncertainties of E(level) are not given in any
- 34CL2cL of the literature. E(level) values given here are from Fig. 3 of       
- 34CL3cL 1978Ba39 and E|g values are deduced from level-energy differences.     
  34CL  L 0            0                                                         
  34CL  L 146          3                                                         
  34CL  L 461                           8.9 PS    4                              
@@ -70,7 +70,8 @@
  34CL  G 1.11E3                                                                 
  34CL  G 1.14E3                 Q(+O)    -0.03   9                              
  34CL cG $A{-2}=0.31 {I5}, A{-4}=-0.17 {I4} (1978Ba61).                         
- 34CL  G 4597                   O(+H)    +0.07   9                              
+ 34CL  G 4597                   O                                               
+ 34CL cG M,MR$O(+H) with |d=+0.07 {I9} (1978Ba61).                              
  34CL cG $A{-2}=0.52 {I6}, A{-4}=0.20 {I7}, A{-6}=0.13 {I8} (1978Ba61).         
  34CL  L 4824                                                                   
  34CL  G 1.19E3                                                                 
