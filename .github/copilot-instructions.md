@@ -146,7 +146,7 @@ Example:
 | DE | 20-21 | Energy uncertainty |
 | SPACE | 22 | Readability space |
 | J | 23-39 | Spin-parity (starts at col 23) - See J-π Assignment Confidence Notation rules |
-| T | 40-49 | Half-life with units |
+| T | 40-49 | Half-life with units of MEV, KEV, EV, FS, PS, NS, US, MS, S, M, H, D, etc |
 | DT | 50-55 | Half-life uncertainty |
 | L | 56-64 | Angular momentum transfer |
 | S | 65-74 | Spectroscopic strength |
@@ -158,7 +158,7 @@ Example:
 **CRITICAL: cL Comment Line Association**
 - `cL` comment lines apply **only** to the immediately preceding L-record.
 - Do not modify L-record data based on comments for other levels.
-- Each L-record without a following `cL` line is an independent assignment.
+- Each L-record with or without a following `cL` line is an independent record.
 
 #### Gamma Transition Record (G-Record)
 
