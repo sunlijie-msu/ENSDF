@@ -2,15 +2,17 @@
  34CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34CL  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34CL2 H CUT=28-May-2012$                                                       
- 34CL c  1982Va02: {+24}Mg({+12}C,pn|g) E=32-35 MeV and {+31}P(|a,n|g)          
- 34CL2c  E=11.7,16.3 MeV. 99.92%-enriched {+24}Mg on Au backing. Used           
- 34CL2c  Compton-suppression spectrometer and HPGe detector in combination with 
- 34CL2c  four gating Ge(Li) detectors. Measured E|g, |g|g, |g|g(|q) (first      
- 34CL2c  reaction) and T{-1/2} (Doppler patterns, second reaction)              
+ 34CL c  1982Va02: 32-35-MeV {+12}C beams from the Utrecht Van de Graaff        
+ 34CL2c  accelerator impinged on a target of 99.92%-enriched 380-|mg/cm{+2}     
+ 34CL3c  {+24}Mg on Au backing. |g ray were detected using a large solid angle  
+ 34CL4c  Compton-suppression spectrometer (LACSS) and a HPGe central detector in
+ 34CL5c  combination with four gating Ge(Li) detectors. Measured E|g, I|g,      
+ 34CL6c  |g|g-coin, |g|g(|q). Deduced levels, J, |g-ray branching ratios, and   
+ 34CL7c  mixing ratios.                                                         
 
  34CL c  1978Ba39: {+27}Al({+12}C,|an|g) E=27-45 MeV (|s(E)), E=40 (|g|g and    
- 34CL2c  |s(E|g,|q)), {+31}P(|a,n|g) E=14.4 MeV (n|g), E=31 MeV (RDM).          
- 34CL2c  Used natural targets, Ge(Li) and liquid scintillator detectors         
+ 34CL2c  |s(E|g,|q)), {+31}P(|a,n|g) E=14.4 MeV (n|g), E=31 MeV (RDM). Used     
+ 34CL3c  natural targets, Ge(Li) and liquid scintillator detectors              
  34CL c  1978Ba61: {+31}P(|a,n|g) E=13.0-14.6 MeV, natural targets, Ge(Li)      
  34CL2c  detectors. Measured |s(E|g,|q) and RDM                                 
  34CL c  1978Ba77: {+31}P(|a,n|g) E=13.0,14.6 MeV. Measured RDM                 
@@ -24,7 +26,7 @@
  34CL  L 0.0          0+                                                        
  34CL cL J$adopted value                                                        
  34CL  L 146.36    3                                                            
- 34CL DL E         LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT          
+ 34CL dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  34CL cL E$from {+32}S({+3}He,p|g) dataset                                      
  34CL  L 461.00    4  1                5.6 PS    6                              
  34CL cL J$D |DJ=1 |g to 0+ g.s.                                                
@@ -32,7 +34,7 @@
  34CL cG E,RI$from 1978En02; others: 460.9 {I3} (1978Ba39)                      
  34CL cG M$D |DJ=1 |g (1982Va02)                                                
  34CL cG $A{-2}=-0.231 {I7}, A{-4} set to zero (1982Va02); A{-2}=-0.25 {I4}     
- 34CLxcG (1978Ba39)                                                             
+ 34CL2cG (1978Ba39)                                                             
  34CL  L 665.56     5 1                9.3 PS    5                              
  34CL cL J$D |DJ=1 |g to 0+ g.s.                                                
  34CL  G 665.55    5 100       D                                                
@@ -43,13 +45,13 @@
  34CL  G 1230                                                                   
  34CL cG E$from 1971Ba98                                                        
  34CL  L 2181.10   8                                                            
- 34CL DL E         LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT          
+ 34CL dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  34CL cL E$from {+33}S(p,|g):resonances dataset                                 
  34CL  L 2375.7    2                                                            
- 34CL DL E         LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT          
+ 34CL dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  34CL cL E$from {+33}S(p,|g):resonances dataset                                 
  34CL  L 2721.1    2                                                            
- 34CL DL E         LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT          
+ 34CL dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  34CL cL E$from {+33}S(p,|g):resonances dataset                                 
  34CL  L 3600.00   10                  16 PS     4                              
  34CL  G 879.1     2 51      2 Q                                                
@@ -57,7 +59,7 @@
  34CL cG M$Q |DJ=2 |g (1982Va02)                                                
  34CL cG MR$-0.05 {I6} (1982Va02)                                               
  34CL cG $A{-2}=+0.305 {I18}, A{-4}=-0.129 {I19} (1982Va02); A{-2}=+0.19 {I8}   
- 34CLxcG (1978Ba30)                                                             
+ 34CL2cG (1978Ba30)                                                             
  34CL  G 1224.1    2 7       2                                              @   
  34CL cG E$others: 1223.8 {I8} (1978Ba39)                                       
  34CL  G 3453.3    2 42      2 D                                                
@@ -73,14 +75,14 @@
  34CL cG M$D |DJ=1 |g (1982Va02)                                                
  34CL cG MR$0.00 {I2} (1982Va02)                                                
  34CL cG $A{-2}=-0.50 {I5}, A{-4} set to zero (1982Va02); A{-2}=-0.29 {I7}      
- 34CLxcG (1978Ba39)                                                             
+ 34CL2cG (1978Ba39)                                                             
  34CL  G 3484.7    2 40      2 (Q+O)     -0.23   10                             
  34CL cG E$others: 3485.2 {I8} (1978Ba39)                                       
  34CL cG RI$others: 33 {I2} (1978Ba39)                                          
  34CL cG M$(Q+O) |DJ=(2) |g (1982Va02)                                          
  34CL cG MR$-0.23 {I10} (1982Va02)                                              
  34CL cG $A{-2}=+0.13 {I3}, A{-4}=-0.07 {I4} (1982Va02); A{-2}=+0.04 {I14}      
- 34CLxcG (1978Ba39)                                                             
+ 34CL2cG (1978Ba39)                                                             
  34CL  L 4743.15   11                  4.9 PS    21                             
  34CL cL T$mean lifetime |t in ps: >3 (1978Ba39)                                
  34CL  G 1111.77   10 31     2 D+Q       +4.7    6                              
@@ -89,7 +91,7 @@
  34CL cG M$D+Q |DJ=1 |g (1982Va02)                                              
  34CL cG MR$+4.7 {I6} (1982Va02)                                                
  34CL cG $A{-2}=+0.30 {I4}, A{-4}=+0.25 {I4} (1982Va02); A{-2}=-0.08 {I20}      
- 34CLxcG (1978Ba39)                                                             
+ 34CL2cG (1978Ba39)                                                             
  34CL  G 1143.0    2 37      2 Q                                                
  34CL cG E$others: 1143.0 {I8} (1978Ba39)                                       
  34CL cG RI$others: 43 {I2} (1978Ba39)                                          
@@ -121,7 +123,7 @@
  34CL cG M$Q |DJ=2 |g (1982Va02)                                                
  34CL cG MR$0.00 {I6} (1982Va02)                                                
  34CL cG $A{-2}=+0.324 {I5}, A{-4}=-0.168 {I5} (1982Va02); A{-2}=+0.19 {I4},    
- 34CLxcG A{-4}=-0.09 {I4} (1978Ba39)                                            
+ 34CL2cG A{-4}=-0.09 {I4} (1978Ba39)                                            
  34CL  L 5314.93   17                  65 PS     8                              
  34CL cL T$mean lifetime |t in ps: 94 {I12} (1978Ba39)                          
  34CL  G 490.8     2  74     1 Q                                                
@@ -130,7 +132,7 @@
  34CL cG M$Q |DJ=2 |g (1982Va02)                                                
  34CL cG MR$+0.02 {I2} (1982Va02); 0.00 {I5} (1978Ba39)                         
  34CL cG $A{-2}=+0.327 {I2}, A{-4}=-0.140 {I2} (1982Va02); A{-2}=+0.14 {I2},    
- 34CLxcG A{-4}=-0.08 {I2} (1978Ba39)                                            
+ 34CL2cG A{-4}=-0.08 {I2} (1978Ba39)                                            
  34CL  G 571.8     2 26      1 D                                                
  34CL cG E$others: 571.8 {I3} (1978Ba39)                                        
  34CL cG RI$others: 34 {I2} (1978Ba39)                                          
