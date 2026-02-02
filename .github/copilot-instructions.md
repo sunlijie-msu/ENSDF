@@ -64,6 +64,7 @@ You are an AI agent specializing in the Evaluated Nuclear Structure Data File (E
 - `%(|e+|b{++})p` → %(ε+β⁺)p
 - `{+208}Pb({+36}S,{+35}S)` → ²⁰⁸Pb(³⁶S,³⁵S)
 - `{+32}S({+3}He,p|g){+34}Cl` → ³²S(³He,pγ)³⁴Cl
+- `{+nat}Ni` → natural Nickel
 - `|s(E({+3}He),|q)` → σ(E(³He),θ)
 - `Zn{-3}P{-2}` → Zn₃P₂
 

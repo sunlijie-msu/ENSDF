@@ -3,25 +3,38 @@
  34CL  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34CL2 H CUT=28-May-2012$                                                       
  34CL  Q -6061.79  7 11508.1 4 5143.20 5 -6664.4 4     2012WA38                 
- 34CL cQ $Note: Current evaluation has used the following Q record              
- 34CL2cQ -6061.83  {I8} 11508.1 {I4} 5143.14 {I7} -6664.3 {I3}     2011AuZZ     
+ 34CL cQ $Note: Current evaluation has used the following Q record -6061.83 {I8}
+ 34CL2cQ 11508.1 {I4} 5143.14 {I7} -6664.3 {I3} 2011AuZZ                        
  34CL cQ Q-$from mass measurement in 2011Er02, 2009Er07. Other: -6062.64 {I34}  
  34CL2cQ (2011AuZZ)                                                             
  34CL cQ $ S(n), S(p), Q(|a): from 2011AuZZ                                     
  34CL cQ $S(2n)=27247.6 {I9}, S(2p)=14713.10 {I8} (2011AuZZ)                    
  34CL cQ $Values in 2003Au03: Q(|b{+-})=-6062.6 {I4}, S(n)=11507.7 {I5},        
  34CL2cQ S(p)=5142.75 {I12}, Q(|a)=-6664.1 {I4}, S(2n)=27253 {I7},              
- 34CLxcQ S(2p)=14712.50 {I25}                                                   
- 34CL c  {+34}Cl identified and produced in bombarding phosphorus with          
- 34CL2c  |a particles (1934Fr01); measured half-life which belongs to isomer    
- 34CL3c  at 146 keV.                                                            
+ 34CL3cQ S(2p)=14712.50 {I25}                                                   
+ 34CL c  {+34}Cl identified and produced in bombarding phosphorus with |a       
+ 34CL2c  particles (1934Fr01); measured half-life which belongs to isomer at 146
+ 34CL3c  keV.                                                                   
  34CL c  {+34}Cl production:                                                    
- 34CL c  2016Ka36: {+181}Ta({+11}B,X) and {+209}Bi({+11}B,X) with E({+11}B)=24  
+ 34CL c  2016Ka36: {+181}Ta({+11}B,X) and {+209}Bi({+11}B,X) at E({+11}B)=24    
  34CL2c  MeV/nucleon. Measured production cross sections using |g-activation    
  34CL3c  method and offline |g-spectroscopy at the U-400M accelerator and       
  34CL4c  ACCULINA setup of JINR, Dubna.                                         
- 34CL D  2012Zh06: measured momentum distributions and production cross section 
- 34CL2D  in 9BE,181TA(40AR,X) at 57 MEV/nucleon                                 
+ 34CL c  2013SeZV: {+9}Be({+40}Ar,X) at E({+40}Ar)=35 MeV/nucleon at the COMBAS 
+ 34CL2c  fragment separator at the Flerov Laboratory of Nuclear Reactions, JINR.
+ 34CL3c  Measured production cross sections.                                    
+ 34CL c  2013De37: {+237}Np,{+238}U(p,F) at E(p)=660 MeV at the LNR Phasotron   
+ 34CL2c  U-400M Cyclotron at JINR, Dubna. Measured E|g, I|g, and production     
+ 34CL3c  cross sections of fragments.                                           
+ 34CL d  2012Zh06: {+9}Be,{+181}Ta({+40}Ar,X) at E({+40}Ar)=57 MeV/nucleon at   
+ 34CL2d  HIRFL. Measured momentum distributions and production cross sections of
+ 34CL3d  fragments. Observed competition between projectile fragmentation and   
+ 34CL4d  other mechanisms. Compared with EPAX, abrasion-ablation, and HIPSE     
+ 34CL5d  models. Studied target dependence of fragment cross sections.          
+ 34CL c  2011Ti04: {+nat}Ni(p,X) at E(p)=46-2605 MeV at ITEP U-10 synchrotron.  
+ 34CL2c  Measured production cross sections.                                    
+ 34CL c  2011Ti03: {+nat}Cr(p,X) and {+56}Fe(p,X) at E(p)=42-2605 MeV at ITEP   
+ 34CL2c  U-10 synchrotron. Measured production cross sections.                  
  34CL cG E$Deduced by evaluators from level-energy differences from             
  34CL2cG {+33}S(p,|g), unless noted otherwise                                   
  34CL cG RI$From {+33}S(p,|g), unless noted otherwise                           
@@ -32,8 +45,8 @@
  34CL cL E(a)$From {+32}S({+3}He,p|g)                                           
  34CL cL J(b)$From {+33}S(p,p):resonances based R-matrix analysis (1989Va15)    
  34CL cL T$|G values <0.05 keV are from {+33}S(p,|g) (1977Da03) and |G values > 
- 34CL2cL 0.05 keV are from {+33}S(p,p) (1989Va15), unless noted otherwise.      
- 34CL2cL For T{-1/2} values see comments                                        
+ 34CL2cL 0.05 keV are from {+33}S(p,p) (1989Va15), unless noted otherwise. For  
+ 34CL3cL T{-1/2} values see comments                                            
  34CL  XA34CL IT DECAY (31.99 M)                                                
  34CL  XB34AR EC DECAY (843.8 MS)                                               
  34CL  XC35K ECP DECAY (178 MS)                                                 
@@ -59,14 +72,14 @@
  34CL2 L %EC+%B+=100                                                            
  34CLX L XREF=ABCDEFHJKLMNOQRST                                                 
  34CL cL $IAS of {+34}S g.s.                                                    
- 34CL cL J$log| {Ift}=3.5 from 0+ g.s. of {+34}Ar parent (superallowed          
- 34CLxcL transition)                                                            
- 34CL cL $T{-1/2}: weighted average of: 1.5268 s {I5} (2006Ia05), 1.5277 s      
- 34CL2cL {I22} (1983Ko22), 1.5252 s {I11} (1976Wi08), 1.526 s {I2} (1973Ry01);  
- 34CL3cL others: 1.530 s 4 (1975Ha24, earlier result: 1.534 s {I3} in 1972Ha28, 
- 34CL2cL superseded by 1983Ko22), 1.565 s {I7} (1965Eb01), 1.565 s {I7}         
- 34CL2cL (1965Fr06), 1.560 s {I14} (1961Ja22), 1.58 s {I1} (1960Ja12), 1.61 s   
- 34CL2cL {I1} (1958Mi85), 1.53 s {I2} (1954Kl36)                                
+ 34CL cL J$log {Ift}=3.5 from 0+ g.s. of {+34}Ar parent (superallowed           
+ 34CL2cL transition)                                                            
+ 34CL cL $T{-1/2}: weighted average of: 1.5268 s {I5} (2006Ia05), 1.5277 s {I22}
+ 34CL2cL (1983Ko22), 1.5252 s {I11} (1976Wi08), 1.526 s {I2} (1973Ry01); others:
+ 34CL3cL 1.530 s {I4} (1975Ha24, earlier result: 1.534 s {I3} in 1972Ha28,      
+ 34CL4cL superseded by 1983Ko22), 1.565 s {I7} (1965Eb01), 1.565 s {I7}         
+ 34CL5cL (1965Fr06), 1.560 s {I14} (1961Ja22), 1.58 s {I1} (1960Ja12), 1.61 s   
+ 34CL6cL {I1} (1958Mi85), 1.53 s {I2} (1954Kl36)                                
  34CL  L     146.36 33+                  31.99 M 3                           M  
  34CL2 L %IT=44.6 6 $ %EC+%B+=55.4 6                                            
  34CLX L XREF=ACDEFGHJMNPQRT                                                    
@@ -83,34 +96,33 @@
  34CLX L XREF=BCDEFGHJKLMNOPQRST                                                
  34CLF L FLAG=a                                                                 
  34CL cL J$L=0+2 ({+36}Ar(d,|a),(pol d,|a)); |DJ=1 |g to 0+                     
- 34CL cL $T{-1/2}: mean lifetime |t in ps, from {+24}Mg({+12}C,pn|g)...:        
- 34CL2cL 8.1 {I9} (1971Ba98); from {+32}S({+3}He,p|g): 7.1 {I7}. Adopted        
- 34CL2cL weighted average: 7.5 {I6}. Other, from {+32}S({+3}He,p|g): 9 {I4}     
- 34CL2cL (1970Br10); also other measured T{-1/2} values:                        
- 34CL2cL 4.0 {I+16-12} (2010Do03, |DT{-1/2} calculated by evaluators from given 
- 34CL2cL statistical and systematic uncertainties; another more unprecise       
- 34CL2cL T{-1/2} from another measurements is also given);                      
- 34CL2cL 5.0 {I+20-15} and 6 {I2} (2007DoZV by two Doppler shift methods; they  
- 34CL2cL also list the effective T{-1/2}=7.3 {I6} that includes observed        
- 34CLxcL feeding)                                                               
+ 34CL cL $T{-1/2}: mean lifetime |t in ps, from {+24}Mg({+12}C,pn|g)...: 8.1    
+ 34CL2cL {I9} (1971Ba98); from {+32}S({+3}He,p|g): 7.1 {I7}. Adopted weighted   
+ 34CL3cL average: 7.5 {I6}. Other, from {+32}S({+3}He,p|g): 9 {I4} (1970Br10);  
+ 34CL4cL also other measured T{-1/2} values: 4.0 {I+16-12} (2010Do03, |DT{-1/2} 
+ 34CL5cL calculated by evaluators from given statistical and systematic         
+ 34CL6cL uncertainties; another more unprecise T{-1/2} from another measurements
+ 34CL7cL is also given); 5.0 {I+20-15} and 6 {I2} (2007DoZV by two Doppler shift
+ 34CL8cL methods; they also list the effective T{-1/2}=7.3 {I6} that includes   
+ 34CL9cL observed feeding)                                                      
  34CL  G 314.64    10 0.5    LT                                                ?
  34CLF G FLAG=A                                                                 
  34CL  G 461.00    4  100        M1                                             
  34CLF G FLAG=A                                                                 
  34CL cG M$D |DJ=1 |g ({+32}S({+3}He,p|g)), M1 from |D|p=no                     
  34CLB G BM1W=0.043 4                                                           
- 34CL DG BM1W$exceeds RUL(^IS)=0.03 by more than 3|s                            
+ 34CL dG BM1W$exceeds RUL(^IS)=0.03 by more than 3|s                            
  34CL  L 665.56     4 1+               9.2 PS    4                              
  34CLX L XREF=BDFHJKLMNPQRST                                                    
  34CLF L FLAG=a                                                                 
  34CL cL J$L=0+2 ({+36}Ar(d,|a),(pol d,|a)); |DJ=1 |g to 0+                     
  34CL cL $T{-1/2}: mean lifetime |t in ps, from {+24}Mg({+12}C,pn|g)...: 13.2   
  34CL2cL {I8} (1978En02); 14.2 {I15} (1971Ba98); from {+32}S({+3}He,p|g): 12.8  
- 34CL2cL {I10} (1971Sn01); adopted weighted average: 13.2 {I6}. Other, from     
- 34CL2cL {+32}S({+3}He,p|g): 14 {I+11-6} (1970Br10) also other measured T{-1/2} 
- 34CL2cL values: 13 {I5} and 32 {I+10-14} (2007DoZV by two Doppler shift        
- 34CL2cL methods; they also list the effective T{-1/2}=13.8 {I15} that includes 
- 34CLxcL observed feeding)                                                      
+ 34CL3cL {I10} (1971Sn01); adopted weighted average: 13.2 {I6}. Other, from     
+ 34CL4cL {+32}S({+3}He,p|g): 14 {I+11-6} (1970Br10) also other measured T{-1/2} 
+ 34CL5cL values: 13 {I5} and 32 {I+10-14} (2007DoZV by two Doppler shift        
+ 34CL6cL methods; they also list the effective T{-1/2}=13.8 {I15} that includes 
+ 34CL7cL observed feeding)                                                      
  34CL  G 204.55    10 11     5                                                  
  34CLF G FLAG=AB                                                                
  34CL  G 519.19    15 8      5                                                  
@@ -122,12 +134,12 @@
  34CL  L 1230.26    4  2+              13.6 PS   9                              
  34CLX L XREF=DEFGHJKMNOPQRT                                                    
  34CLF L FLAG=a                                                                 
- 34CL cL J$D+Q |DJ=1 gammas to 1+, 461 and 3+, 146 levels; |p=+                 
- 34CL2cL from L=0 in {+33}S({+3}He,d)                                           
+ 34CL cL J$D+Q |DJ=1 gammas to 1+, 461 and 3+, 146 levels; |p=+ from L=0 in     
+ 34CL2cL {+33}S({+3}He,d)                                                       
  34CL cL $T{-1/2}: mean lifetime |t in ps, from {+32}S({+3}He,p|g): 19.4 {I14}  
  34CL2cL (1971Sn01); from {+24}Mg({+12}C,pn|g)...: 22 {I4} (1971Ba98); adopted  
- 34CL2cL weighted average: 19.7 {I13}. Other, from {+32}S({+3}He,p|g): >14      
- 34CLxcL (1970Br10)                                                             
+ 34CL3cL weighted average: 19.7 {I13}. Other, from {+32}S({+3}He,p|g): >14      
+ 34CL4cL (1970Br10)                                                             
  34CL  G 564.68    6  74     5 M1+E2     +0.32   13                             
  34CLF G FLAG=AB                                                                
  34CL cG M$D+Q |DJ=1 |g ({+32}S({+3}He,p|g)); M1+E2 from |D|p=no                
@@ -148,11 +160,10 @@
  34CL  L 1887.14    5  2+              1.2 PS    5                              
  34CLX L XREF=EFGHJKMNOPRT                                                      
  34CLF L FLAG=a                                                                 
- 34CL cL J$D+Q |DJ=1 gammas to 1+, 461 and 3+, 146 levels; |p=+                 
- 34CL2cL from L=0 in {+33}S({+3}He,d)                                           
- 34CL cL $T{-1/2}: mean lifetime |t in fs, from {+32}S({+3}He,p|g): 2400        
- 34CL2cL {I1300} (1973Ca15); 940 {I400} (1970Br11); adopted unweighted 1670     
- 34CLxcL {I730}                                                                 
+ 34CL cL J$D+Q |DJ=1 gammas to 1+, 461 and 3+, 146 levels; |p=+ from L=0 in     
+ 34CL2cL {+33}S({+3}He,d)                                                       
+ 34CL cL $T{-1/2}: mean lifetime |t in fs, from {+32}S({+3}He,p|g): 2400 {I1300}
+ 34CL2cL (1973Ca15); 940 {I400} (1970Br11); adopted unweighted 1670 {I730}      
  34CL  G 656.86    10 3      3                                                  
  34CLF G FLAG=AB                                                                
  34CL  G 1221.55   10 3      3                                                  
@@ -180,8 +191,8 @@
  34CL2cL |p=+ from L=2 in {+33}S({+3}He,d)                                      
  34CL cL $T{-1/2}: mean lifetime |t in fs, from {+24}Mg({+12}C,pn|g),.: 49 {I5} 
  34CL2cL (1985La16); 47 {I5} (1984Ke01); 46 {I10} (1983Wa27); 36 {I15}          
- 34CL2cL (1977Da02); from {+32}S({+3}He,p|g): 100 {I30} (1973Ca15); 46 {I15}    
- 34CLxcL (1970Br11); adopted weighted average: 48 {I3}                          
+ 34CL3cL (1977Da02); from {+32}S({+3}He,p|g): 100 {I30} (1973Ca15); 46 {I15}    
+ 34CL4cL (1970Br11); adopted weighted average: 48 {I3}                          
  34CL  G 270.90    10 1.5    LT                                                ?
  34CLF G FLAG=A                                                                 
  34CLF G FLAG=B                                                                 
@@ -211,8 +222,8 @@
  34CL cL J$L=2+4 ({+36}Ar(d,|a),(pol d,|a))                                     
  34CL cL T$mean lifetime |t in fs, from {+32}S({+3}He,p|g): 600 {I150}          
  34CL2cL (1973Ca15); 400 {I100} (1970Br11); from {+33}S(p,|g): 800 {I400}       
- 34CL2cL (1985La16); 630 {I190} (1983Wa27); 600 {I350} (1977Da02); adopted      
- 34CLxcL weighted average: 504 {I73}                                            
+ 34CL3cL (1985La16); 630 {I190} (1983Wa27); 600 {I350} (1977Da02); adopted      
+ 34CL4cL weighted average: 504 {I73}                                            
  34CL  G 950.8       2       LT                                                ?
  34CL  G 1515.6      24.9    12                                                 
  34CL  G 1720.1      74      4                                                  
@@ -222,12 +233,12 @@
  34CLX L XREF=DEFHMNP                                                           
  34CL cL E$weighted average of 2375.7 {I2} ({+33}S(p,|g)) and 2376.5 {I4}       
  34CL2cL ({+32}S({+3}He,p|g))                                                   
- 34CL cL J$D+Q |DJ=0 |g from 4-, 4076 ({+33}S(p,|g)); |p=+ from E2 |g to        
- 34CL2cL 2+, 1230                                                               
+ 34CL cL J$D+Q |DJ=0 |g from 4-, 4076 ({+33}S(p,|g)); |p=+ from E2 |g to 2+,    
+ 34CL2cL 1230                                                                   
  34CL cL T$mean lifetime |t in fs, from {+32}S({+3}He,p|g): 275 {I70}           
  34CL2cL (1973Ca15); 260 {I75} (1970Br11); from {+33}S(p,|g): 250 {I50}         
- 34CL2cL (1985La16); 200 {I50} (1983Wa27) 210 {I80} (1977Da02); 150 {I50}       
- 34CL2cL (1973An13); adopted weighted average: 216 {I24}                        
+ 34CL3cL (1985La16); 200 {I50} (1983Wa27) 210 {I80} (1977Da02); 150 {I50}       
+ 34CL4cL (1973An13); adopted weighted average: 216 {I24}                        
  34CL  G 1146.3       11     8  E2                                              
  34CLF G FLAG=A                                                                 
  34CLF G FLAG=B                                                                 
@@ -253,7 +264,7 @@
  34CL cL J$L=0+2 in {+36}Ar(d,|a),(pol d,|a)                                    
  34CL cL T$mean lifetime |t in fs, adopted from {+32}S({+3}He,p|g): 47 {I12}    
  34CL2cL (1973Ca15). Others: from {+33}S(p,|g): <7 (1985La16); <5 (1983Wa27);   
- 34CLxcL 3.0 {I25} (1977Da02)                                                   
+ 34CL3cL 3.0 {I25} (1977Da02)                                                   
  34CL  G 1350.0      1       LT                                                ?
  34CL  G 1914.8      2       LT                                                ?
  34CL  G 2119.3      2       LT                                                ?
@@ -264,12 +275,12 @@
  34CLB G BM1W=0.038 10                                                          
  34CL  L 2611.05   11 3+               160 FS    38                             
  34CLX L XREF=EFHJMNOPT(*2600)                                                  
- 34CL cL J$1,2,3 from D |g to 2+, 2158; 1,2 excluded from D, |DJ=1 |g from      
- 34CL2cL J=4, 6641; |p=+ from L=2 in {+35}Cl({+3}He,|a)                         
- 34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): 340 {I140} (1985La16);     
- 34CL2cL 210 {I60} (1983Wa27); adopted weighted average: 230 {I55}. Others, from
- 34CL2cL {+33}S(p,|g): >450 (1977Da02), from {+32}S({+3}He,p|g): 820 {I350}     
- 34CL2cL (1973Ca15)                                                             
+ 34CL cL J$1,2,3 from D |g to 2+, 2158; 1,2 excluded from D, |DJ=1 |g from J=4, 
+ 34CL2cL 6641; |p=+ from L=2 in {+35}Cl({+3}He,|a)                              
+ 34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): 340 {I140} (1985La16); 210 
+ 34CL2cL {I60} (1983Wa27); adopted weighted average: 230 {I55}. Others, from    
+ 34CL3cL {+33}S(p,|g): >450 (1977Da02), from {+32}S({+3}He,p|g): 820 {I350}     
+ 34CL4cL (1973Ca15)                                                             
  34CL  G 453.1       61.6    22 D                                               
  34CL cG M$D |g from RUL                                                        
  34CL  G 723.7       3       LT                                                ?
@@ -285,7 +296,7 @@
  34CL cL J$L=1+3 in {+32}S({+3}He,p)                                            
  34CL cL T$adopted mean lifetime |t in ps from {+32}S({+3}He,p|g): >2           
  34CL2cL (1973Ca15); others, from {+33}S(p,|g): >1.5 (1985La16); >0.4           
- 34CL2cL (1977Da02); >1 (1973An13)                                              
+ 34CL3cL (1977Da02); >1 (1973An13)                                              
  34CL  G 563.2       15      9                                                  
  34CL  G 833.8        4      4                                                  
  34CL  G 1490.7      4.5     4                                                  
@@ -300,8 +311,8 @@
  34CL  L 3129.13   12 1+               2.8 FS    LT                             
  34CLX L XREF=BEFHJKLMNOPS                                                      
  34CL cL J$L=0+2 in {+36}Ar(d,|a),(pol d,|a)                                    
- 34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): <4 (1985La16);             
- 34CL2cL <10 (1983Wa27). Other: from {+32}S({+3}He,p|g): 40 {I12} (1973Ca15)    
+ 34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): <4 (1985La16); <10         
+ 34CL2cL (1983Wa27). Other: from {+32}S({+3}He,p|g): 40 {I12} (1973Ca15)        
  34CL  G 1898.7      2       LT                                                ?
  34CL  G 2668.0      2       LT                                                ?
  34CL  G 2982.6      2       LT                                                ?
@@ -309,9 +320,9 @@
  34CL  L 3334.0    2  1+,2+,3+         47 FS     19                             
  34CLX L XREF=EFHJLMNOPT(3360)                                                  
  34CL cL J$L=2 in {+32}S({+3}He,p)                                              
- 34CL cL T$mean lifetime |t in fs, from {+33}S(p,|g): 53 {I20} (1985La16);      
- 34CL2cL from {+32}S({+3}He,p|g): 115 {I35} (1973Ca15); adopted weighted        
- 34CLxcL average: 68 {I27}                                                      
+ 34CL cL T$mean lifetime |t in fs, from {+33}S(p,|g): 53 {I20} (1985La16); from 
+ 34CL2cL {+32}S({+3}He,p|g): 115 {I35} (1973Ca15); adopted weighted average: 68 
+ 34CL3cL {I27}                                                                  
  34CL  G 1176.1      100     22                                                 
  34CL  G 1446.7      4       LT                                                ?
  34CL  G 2103.6      4       LT                                                ?
@@ -322,10 +333,10 @@
  34CL  L 3383.3    2  1+,2+            5.4 FS    11                             
  34CLX L XREF=EFHJKMNP                                                          
  34CL cL J$L=0+2 in {+35}Cl({+3}He,|a)                                          
- 34CL cL T$mean lifetime |t in fs, from {+33}S(p,|g): 9 {I4} (1985La16):        
- 34CL2cL 7.5 {I17} (1984Ke01); adopted weighted average: 7.7 {I16}. Others, from
- 34CL2cL {+33}S(p,|g): <10 (1983Wa27); <3 (1977Da02); from                      
- 34CL2cL {+32}S({+3}He,p|g): <50 (1973Ca15)                                     
+ 34CL cL T$mean lifetime |t in fs, from {+33}S(p,|g): 9 {I4} (1985La16): 7.5    
+ 34CL2cL {I17} (1984Ke01); adopted weighted average: 7.7 {I16}. Others, from    
+ 34CL3cL {+33}S(p,|g): <10 (1983Wa27); <3 (1977Da02); from {+32}S({+3}He,p|g):  
+ 34CL4cL <50 (1973Ca15)                                                         
  34CL  G 2152.9      54.4    20                                                 
  34CL  G 2717.7      83      3                                                  
  34CL  G 2922.2      76      3                                                  
@@ -333,12 +344,12 @@
  34CL  G 3383.1      3       LT                                                ?
  34CL  L 3545.07   15 3-               101 FS    15                             
  34CLX L XREF=EFHJMN                                                            
- 34CL cL J$2-,3-,4- from L=3 in {+32}S({+3}He,p); 3- from D(+Q), |DJ=0 |g to    
- 34CL2cL 3+, 146 ({+33}S(p,|g))                                                 
- 34CL cL T$mean lifetime |t in fs, from {+33}S(p,|g): 150 {I30} (1985La16);     
- 34CL2cL 140 {I45} (1983Wa27); from {+32}S({+3}He,p|g): 140 {I40} (1973Ca15);   
- 34CL2cL adopted weighted average: 145 {I21}. Other, from {+33}S(p,|g): >500    
- 34CL2cL (1973An13)                                                             
+ 34CL cL J$2-,3-,4- from L=3 in {+32}S({+3}He,p); 3- from D(+Q), |DJ=0 |g to 3+,
+ 34CL2cL 146 ({+33}S(p,|g))                                                     
+ 34CL cL T$mean lifetime |t in fs, from {+33}S(p,|g): 150 {I30} (1985La16); 140 
+ 34CL2cL {I45} (1983Wa27); from {+32}S({+3}He,p|g): 140 {I40} (1973Ca15);       
+ 34CL3cL adopted weighted average: 145 {I21}. Other, from {+33}S(p,|g): >500    
+ 34CL4cL (1973An13)                                                             
  34CL  G 2314.7      3.5      6                                                 
  34CL  G 3083.9      3       LT                                                ?
  34CL  G 3398.5      100.0    6 D(+Q)    -0.09   3                              
@@ -349,7 +360,7 @@
  34CLX L XREF=DEFGHN                                                            
  34CL cL T$adopted mean lifetime |t in ps from {+24}Mg({+12}C,pn|g)...: 23 {I5} 
  34CL2cL (1978Ba61). Others, from {+33}S(p,|g): >0.7 (1973An13); from           
- 34CL2cL {+32}S({+3}He,p|g): >2 (1973Ca15)                                      
+ 34CL3cL {+32}S({+3}He,p|g): >2 (1973Ca15)                                      
  34CL cL J$0-,4- from E2 |DJ=2 |g to 2-,2721; 2,4 from D(+Q) |DJ=1 |g to 3+, 146
  34CL  G 879.2       94.1    11 E2                                              
  34CL cG M$Q |DJ=2 |g ({+33}S(p,|g), {+24}Mg({+12}C,pn|g)...); E2 based on RUL  
@@ -364,11 +375,11 @@
  34CL  G 3600.1      4       LT                                                ?
  34CL  L 3631.8    3 5-                194 PS    42                             
  34CLX L XREF=DEFGHJMN                                                          
- 34CL cL J$4-,5-,6- from L=5 in {+32}S(|a,d), {+32}S({+3}He,p); 3,5 from D      
- 34CL2cL |DJ=1 |g to 4+, 2376                                                   
+ 34CL cL J$4-,5-,6- from L=5 in {+32}S(|a,d), {+32}S({+3}He,p); 3,5 from D |DJ=1
+ 34CL2cL |g to 4+, 2376                                                         
  34CL cL T$adopted mean lifetime |t in ps from {+24}Mg({+12}C,pn|g)...: 280     
  34CL2cL {I60} (1978Ba61). Others, from {+33}S(p,|g): >1.1 (1985La16), >0.7     
- 34CL2cL (1977Da02), from {+32}S({+3}He,p|g): >3 (1973Ca15)                     
+ 34CL3cL (1977Da02), from {+32}S({+3}He,p|g): >3 (1973Ca15)                     
  34CL  G 1256.1      100.0   13 D(+Q)     0.00   +1-2                           
  34CL cG M$D(+Q) |DJ=1 |g ({+33}S(p,|g), {+24}Mg({+12}C,pn|g)...)               
  34CL cG MR$from {+33}S(p,|g): 0.00 {I+1-2}, from {+24}Mg({+12}C,pn|g)...: 0.00 
@@ -384,12 +395,12 @@
  34CL  G 3631.6      6       LT                                                ?
  34CL  L 3646.3    2 (3,4,5+)          152 FS    62                             
  34CLX L XREF=H                                                                 
- 34CL cL J$1+,2,3,4,5+ from D,E2 |g to 3+, 146; 1,2 less likely                 
- 34CL2cL from no |g (or weak) to 0+, g.s.                                       
+ 34CL cL J$1+,2,3,4,5+ from D,E2 |g to 3+, 146; 1,2 less likely from no |g (or  
+ 34CL2cL weak) to 0+, g.s.                                                      
  34CL cL T$mean lifetime |t in fs: 220 {I90} ({+33}S(p,|g))                     
  34CL  G X           33                                                         
  34CLF G FLAG=X                                                                 
- 34CL DG $unobservedGammaIntensity=33:From {+33}S(p,|g)                         
+ 34CL dG $unobservedGammaIntensity=33:From {+33}S(p,|g)                         
  34CL  G 2415.9      3       LT                                                ?
  34CL  G 3185.1      4       LT                                                ?
  34CL  G 3499.7      100     7  D,E2                                            
@@ -409,12 +420,12 @@
  34CL  L 3773.84   15 (1)-             65 FS     13                             
  34CLX L XREF=FHJN                                                              
  34CL cL J$|p=- from L=1 in {+33}S({+3}He,d); |DJ=(1) E1 |g to 0+, g.s.         
- 34CL cL T$mean lifetime |t in fs from {+33}S(p,|g):                            
- 34CL2cL 110 {I20} (1985La16); 55 {I15} (1983Wa27), and from                    
- 34CL2cL {+32}S({+3}He,p|g): 115 {I30} (1973Ca15); mean value: 93 {I19}         
+ 34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): 110 {I20} (1985La16); 55   
+ 34CL2cL {I15} (1983Wa27), and from {+32}S({+3}He,p|g): 115 {I30} (1973Ca15);   
+ 34CL3cL mean value: 93 {I19}                                                   
  34CL  G X           30                                                         
  34CLF G FLAG=X                                                                 
- 34CL DG $unobservedGammaIntensity=30:From {+33}S(p,|g)                         
+ 34CL dG $unobservedGammaIntensity=30:From {+33}S(p,|g)                         
  34CL  G 3773.6      100      6  (E1)                                           
  34CL cG M$D,E2 based on RUL; M1 and E2 excluded from |D|p=yes, thus E1         
  34CLB G BE1W=0.00014 3                                                         
@@ -423,7 +434,7 @@
  34CL cL J$|g to 1+; L({+3}He,p)=0 for an uncertain 3804 level                  
  34CL  G X           18                                                         
  34CLF G FLAG=X                                                                 
- 34CL DG $unobservedGammaIntensity=18:From {+33}S(p,|g)                         
+ 34CL dG $unobservedGammaIntensity=18:From {+33}S(p,|g)                         
  34CL  G 2561.3      4       LT                                                ?
  34CL  G 3330.5      100      6                                                 
  34CL  G 3645.1      8       LT                                                ?
@@ -441,8 +452,8 @@
  34CL  G 3939.9      6       LT                                                ?
  34CL  L 3964.1    3 (2,3,4)+          90 FS     32                             
  34CLX L XREF=HMN                                                               
- 34CL cL J$(2,3,4) from gammas to 2+, 2157; 3+, 146; and 4+, 2376;              
- 34CL2cL |p=+ from L=2 in {+35}Cl({+3}He,|a)                                    
+ 34CL cL J$(2,3,4) from gammas to 2+, 2157; 3+, 146; and 4+, 2376; |p=+ from L=2
+ 34CL2cL in {+35}Cl({+3}He,|a)                                                  
  34CL cL T$mean lifetime |t in fs: 90 {I70} (1985La16); 160 {I60} (1977Da02).   
  34CL2cL Adopted weighted average: 130 {I46}                                    
  34CL  G 1588.4      12       6                                                 
@@ -453,10 +464,10 @@
  34CL cL E$weighted average of 3982.1 {I3} ({+35}Cl({+3}He,|a)), 3983.0 {I5}    
  34CL2cL ({+32}S({+3}He,p)), and 3983.5 {I2} ({+33}S(p,|g))                     
  34CL cL J$D(+Q), |DJ=0 |g to 3+, 146 ({+33}S(p,|g)); |p=- from L=3 in          
- 34CLxcL {+35}Cl({+3}He,|a)                                                     
+ 34CL2cL {+35}Cl({+3}He,|a)                                                     
  34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): 200 {I40} (1985La16); 165  
  34CL2cL {I60} (1983Wa27); adopted weighted average: 189 {I33}. Other >100      
- 34CLxcL (1973An13)                                                             
+ 34CL3cL (1973An13)                                                             
  34CL  G 1262.4      13.4     9 D+Q      -0.8    3                              
  34CL cG M$D+Q |DJ=1 |g ({+33}S(p,|g))                                          
  34CL cG MR$from {+33}S(p,|g)                                                   
@@ -476,8 +487,8 @@
  34CL cL J$4-,5-,6- from L=5 in {+32}S(|a,d); 2,4 from D(+Q) |DJ=1 |g to 3+,    
  34CL2cL 2181 (1977Da03)                                                        
  34CL cL T$adopted mean lifetime |t in ps, from {+32}S({+3}He,p|g): 1.3 {I+17-6}
- 34CL2cL (1973Ca15). Others, from {+33}S(p,|g) in fs: >500 (1977Da02);          
- 34CL2cL >250 (1973An13)                                                        
+ 34CL2cL (1973Ca15). Others, from {+33}S(p,|g) in fs: >500 (1977Da02); >250     
+ 34CL3cL (1973An13)                                                             
  34CL  G 1355.2      9.2     10                                                 
  34CL  G 1700.6      35.7    12  D+Q     -0.27   +3-4                           
  34CL cG M$D+Q |DJ=0 |g ({+33}S(p,|g))                                          
@@ -518,7 +529,7 @@
  34CL  L 4211       4 1+,2+                                                     
  34CLX L XREF=LN                                                                
  34CL cL E$weighted average of 4206 {I10} ({+35}Cl({+3}He,|a)) and 4212 {I4}    
- 34CLxcL ({+34}S({+3}He,t))                                                     
+ 34CL2cL ({+34}S({+3}He,t))                                                     
  34CL  L 4325.91   15 1+,2+            5.1 FS    20                             
  34CLX L XREF=HN                                                                
  34CL cL J$L=0+2 ({+35}Cl({+3}He,|a))                                           
@@ -526,7 +537,7 @@
  34CL2cL (1977Da02). Adopted weighted average: 7.4 {I28}                        
  34CL  G X           25                                                         
  34CLF G FLAG=X                                                                 
- 34CL DG $unobservedGammaIntensity=25:From {+33}S(p,|g)                         
+ 34CL dG $unobservedGammaIntensity=25:From {+33}S(p,|g)                         
  34CL  G 2167.9      100      6  D                                              
  34CL cG M$D |g based on RUL                                                    
  34CL  G 2438.5      1       LT                                                ?
@@ -540,7 +551,7 @@
  34CL2cL |g to 2+, 2157, and D,E2 |g to 0+, g.s.                                
  34CL cL T$mean lifetime |t in fs, from {+33}S(p,|g): 43 {I8} (1985La16); from  
  34CL2cL {+32}S({+3}He,p|g): 65 {I20} (1973Ca15); adopted weighted average: 46  
- 34CL2cL {I8}. Other, from {+33}S(p,|g): <10 (1983Wa27)                         
+ 34CL3cL {I8}. Other, from {+33}S(p,|g): <10 (1983Wa27)                         
  34CL  G 2196.3      33.3    15 (E1)                                            
  34CL cG M$D,E2 based on RUL, |DJ|p requires E1                                 
  34CLB G BE1W=0.00043 6                                                         
@@ -570,7 +581,7 @@
  34CL2cL 3+, 146 ({+33}S(p,|g)); 2- excluded from D |DJ=1 |g from 5(-), 6870    
  34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): 165 {I35} (1985La16); 180  
  34CL2cL {I60} (1983Wa27); 160 {I60} (1977Da02). Adopted weighted average: 167  
- 34CLxcL {I27}                                                                  
+ 34CL3cL {I27}                                                                  
  34CL  G 4299.9      100        D(+Q)    -0.02   +2-1                           
  34CL cG M$D(+Q) |DJ=1 |g ({+33}S(p,|g))                                        
  34CL cG MR$from {+33}S(p,|g)                                                   
@@ -579,8 +590,8 @@
  34CLX L XREF=FHJMN                                                             
  34CL cL J$|p=- from L=1 in {+33}S({+3}He,d)                                    
  34CL cL T$mean lifetime |t in fs, from {+33}S(p,|g): 370 {I250} (1985La16);    
- 34CL2cL from {+32}S({+3}He,p|g): 200 {I60} (1973Ca15) adopted weighted         
- 34CLxcL average: 209 {I58}                                                     
+ 34CL2cL from {+32}S({+3}He,p|g): 200 {I60} (1973Ca15) adopted weighted average:
+ 34CL3cL 209 {I58}                                                              
  34CL  G 4314.8      100         D                                              
  34CL cG M$D |g: D,E2 based on RUL; E2 excluded from |D|p=yes                   
  34CL  L 4515.8    2 2-                10 FS     3                              
@@ -595,9 +606,9 @@
  34CL  G 4515.5      5       LT                                                ?
  34CL  L 4605.8    10 (1-,2-,3-)       0.24 PS   17                             
  34CLX L XREF=HJ(*4607.9)M(*4608)                                               
- 34CL cL J$1,2,3: 1,2,3,4- from D,E2 |g to 2-, 2721; 0+,1,2,3,4+ from D,E2 |g   
- 34CL2cL to 2+, 2158. |p=(-) from L=1 in {+33}S({+3}He,d) and                   
- 34CL2cL {+35}Cl({+3}He,|a) if these can be confirmed to pertain to this level  
+ 34CL cL J$1,2,3: 1,2,3,4- from D,E2 |g to 2-, 2721; 0+,1,2,3,4+ from D,E2 |g to
+ 34CL2cL 2+, 2158. |p=(-) from L=1 in {+33}S({+3}He,d) and {+35}Cl({+3}He,|a) if
+ 34CL3cL these can be confirmed to pertain to this level                        
  34CL cL T$mean lifetime |t in fs: 350 {I240} ({+33}S(p,|g))                    
  34CL  G 1884.6      100         (M1,E2)                                        
  34CL cG M$D,E2 |g based on RUL, |DJ|p requires M1,E2                           
@@ -624,8 +635,8 @@
  34CL  G 4492.2      59       6                                                 
  34CL  L 4670      40 (3-)                                                      
  34CLX L XREF=G(*4650)O                                                         
- 34CL cL J$L=(3) in {+36}Ar(p,{+3}He) and isobaric analog state of {+34}Ar      
- 34CL2cL state from {+36}Ar(p,t) (1969Br21)                                     
+ 34CL cL J$L=(3) in {+36}Ar(p,{+3}He) and isobaric analog state of {+34}Ar state
+ 34CL2cL from {+36}Ar(p,t) (1969Br21)                                           
  34CL  L 4680      10                                                           
  34CLX L XREF=GE(*4693.0)                                                       
  34CL  L 4695.7    2 0+,1,2,3,4+       6 FS      3                              
@@ -642,8 +653,8 @@
  34CL  G 4695.4      2       LT                                                ?
  34CL  L 4717.4    6  1+,2             9 FS      LT                             
  34CLX L XREF=HMN                                                               
- 34CL cL J$1+,2,3+ from D,E2 |g to 3+, 146 and 1+, 461; 3+ excluded             
- 34CL2cL by RUL for I(4717)|g<1% to 0+, g.s.                                    
+ 34CL cL J$1+,2,3+ from D,E2 |g to 3+, 146 and 1+, 461; 3+ excluded by RUL for  
+ 34CL2cL I(4717)|g<1% to 0+, g.s.                                               
  34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): <13 (1985La16)             
  34CL  G 2106.3      13       3  D,E2                                           
  34CL cG M$D,E2 |g based on RUL                                                 
@@ -657,15 +668,15 @@
  34CL cG M$D,E2 |g based on RUL                                                 
  34CL  L 4743.15   11 6-               4.9 PS    21                             
  34CLX L XREF=D                                                                 
- 34CL cL J$6 from: 4,6 from D+Q |DJ=1 |g 5-, 3631; 2,6 from                     
- 34CL2cL Q |DJ=2 |g to 4-, 3600; |p=- from |DJ=3 E3 |g to 3+                    
+ 34CL cL J$6 from: 4,6 from D+Q |DJ=1 |g 5-, 3631; 2,6 from Q |DJ=2 |g to 4-,   
+ 34CL2cL 3600; |p=- from |DJ=3 E3 |g to 3+                                      
  34CL cL T$mean lifetime |t in ps from {+24}Mg({+12}C,pn|g)...: 7 {I3}          
  34CL2cL (1978Ba61, adopted); other: >3 (1978Ba39)                              
  34CL  G 1111.77   10 84     5 (M1+E2)   +4.7    6                              
  34CL cG M$D+Q |DJ=1 |g ({+24}Mg({+12}C,pn|g)...)                               
  34CL cG MR$from {+24}Mg({+12}C,pn|g)...                                        
  34CL cG $A{-2}=+0.30 {I4} A{-4}=+0.25 {I4} (1982Va02); A{-2}=-0.08 {I20}       
- 34CLxcG (1978Ba39)                                                             
+ 34CL2cG (1978Ba39)                                                             
  34CLB G BM1W=(4.4E-5 22)$BE2W=(3.1 14)                                         
  34CL  G 1143.0    2  100    5  E2                                              
  34CL cG M$Q |DJ=2 |g ({+24}Mg({+12}C,pn|g)...)                                 
@@ -687,7 +698,7 @@
  34CL2cL ({+24}Mg({+12}C,pn|g)...)                                              
  34CL cL T$mean lifetime |t in fs, from {+24}Mg({+12}C,pn|g)...: 450 {I200}     
  34CL2cL (1982Va02), and from {+33}S(p,|g): 480 {I220} (1983Wa27); adopted      
- 34CL2cL weighted average: 464 {I148}. Other, from {+33}S(p,|g): >500 (1985La16)
+ 34CL3cL weighted average: 464 {I148}. Other, from {+33}S(p,|g): >500 (1985La16)
  34CL  G 1192.67   5  5.6    14D                                                
  34CLF G FLAG=C                                                                 
  34CL cG M$D |DJ=0 |g ({+24}Mg({+12}C,pn|g)...)                                 
@@ -719,7 +730,7 @@
  34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): <8 (1985La16)              
  34CL  G X           45                                                         
  34CLF G FLAG=X                                                                 
- 34CL DG $unobservedGammaIntensity=45:From {+33}S(p,|g)                         
+ 34CL dG $unobservedGammaIntensity=45:From {+33}S(p,|g)                         
  34CL  G 2330.8      34      15                                                 
  34CL  G 2361.4      36      15                                                 
  34CL  G 4941.5      100     13                                                 
@@ -739,11 +750,11 @@
  34CLX L XREF=OP                                                                
  34CL cL E$reported in {+36}Ar(p,{+3}He) and {+36}Ar(d,|a),(pol d,|a) (both     
  34CL2cL measurements from 1969Br21); because of the high uncertainty it is not 
- 34CL2cL clear if this is a stand-alone peak or might be associated with        
- 34CL2cL another known peak                                                     
+ 34CL3cL clear if this is a stand-alone peak or might be associated with another
+ 34CL4cL known peak                                                             
  34CL cL J$L=0 in {+36}Ar(p,{+3}He) (and {+36}Ar(d,|a),(pol d,|a)) and isobaric 
  34CL2cL analog state of {+34}Ar state from {+36}Ar(p,t) reaction (also studied 
- 34CLxcL by 1969Br21)                                                           
+ 34CL3cL by 1969Br21)                                                           
  34CL  L 4971      11 1+,2+                                                     
  34CLX L XREF=EK(*4985)LN                                                       
  34CL cL J$L=0+2 in {+35}Cl({+3}He,|a)                                          
@@ -754,7 +765,7 @@
  34CL2cL Other: <5 (1983Wa27)                                                   
  34CL  G X           43                                                         
  34CLF G FLAG=X                                                                 
- 34CL DG $unobservedGammaIntensity=43:From {+33}S(p,|g)                         
+ 34CL dG $unobservedGammaIntensity=43:From {+33}S(p,|g)                         
  34CL  G 2814.4      100     14                                                 
  34CL  L 5010      13 (0:4)+                                                    
  34CLX L XREF=LMNT(*5000)                                                       
@@ -788,7 +799,7 @@
  34CLX L XREF=D                                                                 
  34CL cL J$3+,7+ from E2 |DJ=2 |g to 5+, 4824; 5,7 from D, |DJ=1 |g to 6-, 4743 
  34CL cL T$mean lifetime |t in ps from {+24}Mg({+12}C,pn|g)...: 94 {I12}        
- 34CLxcL (1978Ba39)                                                             
+ 34CL2cL (1978Ba39)                                                             
  34CL  G 490.8     2  100    1 E2                                               
  34CL cG M$Q |DJ=2 |g ({+24}Mg({+12}C,pn|g)...), E2 based on RUL                
  34CL cG MR$+0.02 {I2}; 0.00 {I5} (both from {+24}Mg({+12}C,pn|g)...)           
@@ -796,7 +807,7 @@
  34CL  G 571.8     2 35      1 D                                                
  34CL cG M$D |DJ=1 |g ({+24}Mg({+12}C,pn|g)...)                                 
  34CL cG MR$-0.05 {I2}; -0.02 {I7}; +0.03 {I12} (all from                       
- 34CLxcG {+24}Mg({+12}C,pn|g)...)                                               
+ 34CL2cG {+24}Mg({+12}C,pn|g)...)                                               
  34CL  L 5326      4                                                            
  34CLX L XREF=L                                                                 
  34CL  L 5357      4                                                            
@@ -944,8 +955,8 @@
  34CL  G 5805.4      6                                                          
  34CL  L 5852.8    3 (3-)                                                       
  34CLX L XREF=LH                                                                
- 34CL cL J$(2,3,4+) from |g to 3+, 146, |g to 3-, 3545, and |g to 2+, 1230;     
- 34CL2cL (2) less likely from no |g (or weak) to 0+, g.s.; |g to (1)-           
+ 34CL cL J$(2,3,4+) from |g to 3+, 146, |g to 3-, 3545, and |g to 2+, 1230; (2) 
+ 34CL2cL less likely from no |g (or weak) to 0+, g.s.; |g to (1)-               
  34CL  G 1705.0      18                                                         
  34CL  G 1869.2      2.8                                                        
  34CL  G 2078.9      0.4                                                        
@@ -984,8 +995,7 @@
  34CLX L XREF=L                                                                 
  34CL  L 5940.8    10 (2-)                                                      
  34CLX L XREF=LH                                                                
- 34CL cL J$(0+,1,2,3+) from gammas to 1+,461 and 2+, 2158;                      
- 34CL2cL weak |g to 0+, g.s.                                                    
+ 34CL cL J$(0+,1,2,3+) from gammas to 1+,461 and 2+, 2158; weak |g to 0+, g.s.  
  34CL  G 1245.1      0.9                                                        
  34CL  G 2557.4      6.6     3                                                  
  34CL  G 2811.5      0.3     2                                                  
@@ -1015,8 +1025,8 @@
  34CL  G 6029.4      100                                                        
  34CL  L 6088.91    8 (1,2+)                                                    
  34CLX L XREF=H                                                                 
- 34CL cL J$(1,2+) from |g to 0+, g.s.; (1,2,3) from gammas to 2+ and            
- 34CL2cL 1887 and 2-, 2721                                                      
+ 34CL cL J$(1,2+) from |g to 0+, g.s.; (1,2,3) from gammas to 2+ and 1887 and   
+ 34CL2cL 2-, 2721                                                               
  34CL  G 2297.1      0.3                                                        
  34CL  G 2315.0      0.6                                                        
  34CL  G 3367.6      4.7                                                        
@@ -1062,7 +1072,7 @@
  34CL  G 5680.2      0.1     LT                                                ?
  34CL  G 5994.7      0.4     LT                                                ?
  34CL  G 6141.1      100     11                                                 
- 34CL DG $A2=-0.14 3,  A4=+0.08 3 (1983Wa27)                                    
+ 34CL dG $A2=-0.14 3, A4=+0.08 3 (1983Wa27)                                     
  34CL  L 6169.1    11 3(-)              25 EV    4                              
  34CLX L XREF=H                                                                 
  34CL cL J$D |DJ=0 |g to 3-, 3984 (and to 3-, 3545 and 3+, 146); |p=(-) from no 
@@ -1137,7 +1147,7 @@
  34CL cG $A{-2}=-0.22 {I2} (1971Hy02)                                           
  34CL  G 3831.2      4.4     10                                                 
  34CL  G 4025.7      6.0     15                                                 
- 34CL DG $A2=-0.24 7 (1971Hy02)                                                 
+ 34CL dG $A2=-0.24 7 (1971Hy02)                                                 
  34CL  G 4319.5      0.4                                                        
  34CL  G 5541.1      0.2     LT                                                ?
  34CL  G 5745.6      1.1     LT                                                ?
@@ -1145,8 +1155,8 @@
  34CL  G 6206.5      0.2     LT                                                ?
  34CL  L 6219.2    12  (2-,3+)                                                  
  34CLX L XREF=H                                                                 
- 34CL cL J$(1+,2,3+) from gammas to 3+, 2181 and 1+, 2580; (1,2+)               
- 34CL2cL less likely from no |g to 0+, g.s.                                     
+ 34CL cL J$(1+,2,3+) from gammas to 3+, 2181 and 1+, 2580; (1,2+) less likely   
+ 34CL2cL from no |g to 0+, g.s.                                                 
  34CL  G 1501.8      100     10                                                 
  34CL  G 1893.2      3.9     20                                                 
  34CL  G 2572.8      18      2                                                  
@@ -1213,7 +1223,7 @@
  34CLX L XREF=EHI                                                               
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 6320.8 {I15} ({+33}S(p,p)) and 6321.9 {I13}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  G 1716.5      3.0     9                                                  
  34CL  G 1967.9      2.1     6                                                  
  34CL  G 2245.9      6.4     21                                                 
@@ -1287,8 +1297,8 @@
  34CL  G 6235.4      100     10                                                 
  34CL  L 6399.7    14 (3)                                                       
  34CLX L XREF=H                                                                 
- 34CL cL J$(1,2,3) from gammas to 2+, 1230 and 2-, 2721;                        
- 34CL2cL (3,4,5) from gammas to 4+, 2376 and 4-, 3600                           
+ 34CL cL J$(1,2,3) from gammas to 2+, 1230 and 2-, 2721; (3,4,5) from gammas to 
+ 34CL2cL 4+, 2376 and 4-, 3600                                                  
  34CL  G 2799.3      6       4                                                  
  34CL  G 3016.3      58      5                                                  
  34CL  G 3678.4      3.6     18                                                 
@@ -1307,8 +1317,8 @@
  34CL  G 6294.5      11      11                                                 
  34CL  L 6450.4    2  (4-)                                                      
  34CLX L XREF=H                                                                 
- 34CL cL J$(2,3,4) from gammas to 3+, 146 and 3-, 3545; (2,3,4+)                
- 34CL2cL less likely from no |g (or weak) to 2+, 2158                           
+ 34CL cL J$(2,3,4) from gammas to 3+, 146 and 3-, 3545; (2,3,4+) less likely    
+ 34CL2cL from no |g (or weak) to 2+, 2158                                       
  34CL  G 1840.7      4       LT                                                ?
  34CL  G 1844.6      8.3     21                                                 
  34CL  G 1989.0      6.9                                                        
@@ -1340,15 +1350,15 @@
  34CL  G 2548.1      17      2                                                  
  34CL  G 3359.0      1.5                                                        
  34CL  G 4330.3      100     10                                                 
- 34CL DG $A2=+0.15 7, A4=+0.07 8 (1983Wa27)                                     
+ 34CL dG $A2=+0.15 7, A4=+0.07 8 (1983Wa27)                                     
  34CL  G 5822.3      2.7     7                                                  
  34CL  G 6026.7      13      2                                                  
  34CL  G 6341.3      0.8     LT                                                ?
  34CL  G 6487.6      35      3                                                  
  34CL  L 6527.5    15 (2-,3+)                                                   
  34CLX L XREF=H                                                                 
- 34CL cL J$(1+,2,3+) from gammas to 1+, 461 and 3+, 146; (2-,3+) from |g        
- 34CL2cL to 4-, 3600                                                            
+ 34CL cL J$(1+,2,3+) from gammas to 1+, 461 and 3+, 146; (2-,3+) from |g to 4-, 
+ 34CL2cL 3600                                                                   
  34CL  G 2927.1      5       LT                                                ?
  34CL  G 3144.0      100     2                                                  
  34CL  G 3193.3      2.2     7                                                  
@@ -1361,7 +1371,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 6545.1 {I15} ({+33}S(p,p)) and 6547.8 {I15}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  G 1376.2      1.6                                                        
  34CL  G 3164.3      1.0                                                        
  34CL  G 3967.2      6.5     6                                                  
@@ -1462,7 +1472,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 6720.1 {I16} ({+33}S(p,p)) and 6719.5 {I16}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  G 2110.0      31      4                                                  
  34CLF G FL=4609.7                                                              
  34CL  G 2113.9      23      2                                                  
@@ -1492,7 +1502,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 6738.4 {I16} ({+33}S(p,|g)) and 6737.4 {I16}     
- 34CLxcL ({+33}S(p,p))                                                          
+ 34CL2cL ({+33}S(p,p))                                                          
  34CL  G 3608.7      5.8     16                                                 
  34CL  G 4579.8      100     11                                                 
  34CL  G 4850.3      3.4                                                        
@@ -1531,7 +1541,7 @@
  34CL  L 6807.5    11 1-               1.0 KEV   1                              
  34CLX L XREF=HI                                                                
  34CL cL E$weighted average of 6807.0 {I15} ({+33}S(p,p)) and 6807.9 {I16}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CLF L FLAG=b                                                                 
  34CL  G 3424.0      13      13                                                 
  34CL  G 4226.8      17      14                                                 
@@ -1539,8 +1549,8 @@
  34CL  G 6141.4      100     10                                                 
  34CL  L 6829.8    14 (2,3+)                                                    
  34CLX L XREF=H                                                                 
- 34CL cL J$(2,3,4) from gammas to 3+, 146 and |g to 3-, 3545;                   
- 34CL2cL (2,3+) from |g to 1+, 461                                              
+ 34CL cL J$(2,3,4) from gammas to 3+, 146 and |g to 3-, 3545; (2,3+) from |g to 
+ 34CL2cL 1+, 461                                                                
  34CL  G 3284.6      6.9                                                        
  34CL  G 3446.3      15      2                                                  
  34CL  G 4671.6      100     11                                                 
@@ -1553,7 +1563,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 6842.7 {I15} ({+33}S(p,p)) and 6842.7 {I14}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  G 2232.9      6.1                                                        
  34CLF G FL=4609.7                                                              
  34CL  G 2236.8      11      3                                                  
@@ -1580,7 +1590,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 6851.7 {I15} ({+33}S(p,p)) and 6853.0 {I14}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  G 1856.7      2.5     5                                                  
  34CLF G FL=4995.6                                                              
  34CL  G 2156.6      2.5     5                                                  
@@ -1669,7 +1679,7 @@
  34CL  L 6931.5    17 (2-)                                                      
  34CLX L XREF=H                                                                 
  34CL cL J$(0,1,2) from |g to 1+, 665 and |g to 1-, 4354; (2-) from |g to 4-,   
- 34CLxcL 3600                                                                   
+ 34CL2cL 3600                                                                   
  34CL  G 2214.0      19      5                                                  
  34CL  G 2321.7      100     9                                                  
  34CLF G FL=4609.7                                                              
@@ -1694,8 +1704,8 @@
  34CLF L FLAG=b                                                                 
  34CL  L 6977.4    17 (2-,3,4+)                                                 
  34CLX L XREF=H                                                                 
- 34CL cL J$(1+,2,3,4+) from gammas to 2+, 2158 and 3+, 146; (1,2+)              
- 34CL2cL less likely from no |g to 0+, g.s.                                     
+ 34CL cL J$(1+,2,3,4+) from gammas to 2+, 2158 and 3+, 146; (1,2+) less likely  
+ 34CL2cL from no |g to 0+, g.s.                                                 
  34CL  G 3593.9      11      1                                                  
  34CL  G 4819.1      100     10                                                 
  34CL  G 5746.5      8.2     9                                                  
@@ -1710,8 +1720,8 @@
  34CL2cL 6984.5 and 6990.3                                                      
  34CL cL J$1- from {+33}S(p,p), which differs from (2-,3) from {+33}S(p,|g).    
  34CL2cL However the components of the triplet resonance are insufficiently     
- 34CL2cL separated in order to allow the proper assignment of the |g branching  
- 34CLxcL (1977Da02)                                                             
+ 34CL3cL separated in order to allow the proper assignment of the |g branching  
+ 34CL4cL (1977Da02)                                                             
  34CL cL J$assignment based on |g branching ({+33}S(p,|g), 1977Da02): (1,2,3)   
  34CL2cL from |g to 2+, 2158 and |g to 2-, 2721; (2-,3) from |g to 4-, 3600     
  34CL  G 2380.9      4.9     LT                                                ?
@@ -1743,8 +1753,8 @@
  34CL  G 6589.8      100     11                                                 
  34CL  L 7059.0    3  (2-,3+)                                                   
  34CLX L XREF=HI                                                                
- 34CL cL J$(0,1,2,3+) from |g to 1+, 461; (0,1,2+) less likely from no |g       
- 34CL2cL (or weak) to 0+, g.s.                                                  
+ 34CL cL J$(0,1,2,3+) from |g to 1+, 461; (0,1,2+) less likely from no |g (or   
+ 34CL2cL weak) to 0+, g.s.                                                      
  34CL  G 2063.3      2.4     7                                                  
  34CL  G 2117.0      1.9     5                                                  
  34CL  G 2363.2      0.3                                                        
@@ -1807,7 +1817,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 7122.7 {I10} ({+33}S(p,|g)) and 7124.2 {I15}     
- 34CLxcL ({+33}S(p,p))                                                          
+ 34CL2cL ({+33}S(p,p))                                                          
  34CL  L 7126.5    10                                                           
  34CLX L XREF=H                                                                 
  34CL  L 7130.4    15 2-               15.0 KEV  3                              
@@ -1854,7 +1864,7 @@
  34CL  L 7321.7    9                                                            
  34CLX L XREF=HI                                                                
  34CL cL E$weighted average of 7322 {I2} ({+33}S(p,p)) and 7321.6 {I10}         
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7336      2                                                            
  34CLX L XREF=I                                                                 
  34CL  L 7346.8    10                                                           
@@ -1875,7 +1885,7 @@
  34CL  L 7406.4    9                                                            
  34CLX L XREF=HI                                                                
  34CL cL E$weighted average of 7408 {I2} ({+33}S(p,p)) and 7406.0 {I10}         
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7411.9    15 (1,2)-                                                    
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -1886,7 +1896,7 @@
  34CL  L 7450.2    9                                                            
  34CLX L XREF=HI                                                                
  34CL cL E$weighted average of 7452 {I2} ({+33}S(p,p)) and 7449.7 {I10}         
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7457.5    15 1-               4.0 KEV                                  
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -1895,7 +1905,7 @@
  34CL  L 7470.2    9                                                            
  34CLX L XREF=HI                                                                
  34CL cL E$weighted average of 7471 {I2} ({+33}S(p,p)) and 7470.0 {I10}         
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7475.3    15 2+               0.17 KEV  2                              
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -1908,14 +1918,14 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 7493.8 {I15} ({+33}S(p,p)) and 7496.2 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7505.9    10                                                           
  34CLX L XREF=H                                                                 
  34CL  L 7511.3    8  1+               0.30 KEV  3                              
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 7510.1 {I15} ({+33}S(p,p)) and 7511.8 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7517.6    10                                                           
  34CLX L XREF=H                                                                 
  34CL  L 7525.6    15 (1,2)+                                                    
@@ -1925,7 +1935,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 7527.1 {I15} ({+33}S(p,p)) and 7527.3 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7531.1    15 3-               40.0 KEV  8                              
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -1941,7 +1951,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 7546.0 {I15} ({+33}S(p,p)) and 7543.8 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7553.3       2+               2.5 KEV   3                              
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -1977,7 +1987,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 7648.6 {I15} ({+33}S(p,p)) and 7649.6 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7652.1    15 2-               0.70 KEV  7                              
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -1993,7 +2003,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 7673.5 {I15} ({+33}S(p,p)) and 7675.8 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL cL J$(D+Q) |DJ=(0) |g to 2+, 2158; |p=+ from L=2 in {+33}S(p,p)           
  34CL  G 5516.7                (D+Q)     0.12    8                              
  34CL cG $(D+Q) |DJ=(0) |g ({+33}S(p,|g))                                       
@@ -2011,7 +2021,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 7690.5 {I15} ({+33}S(p,p)) and 7690.3 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7696.8    15 1-               1.3 KEV   1                              
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -2024,7 +2034,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 7719.2 {I15} ({+33}S(p,p)) and 7720.4 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7730.1    10                                                           
  34CLX L XREF=H                                                                 
  34CL  L 7753.4    10                                                           
@@ -2045,8 +2055,8 @@
  34CLF L FLAG=b                                                                 
  34CL  L 7803.2    7                   0.07 PS   5                              
  34CLX L XREF=DH                                                                
- 34CL cL E$weighted average of 7802.4 {I11} ({+24}Mg({+12}C,pn|g)...) and       
- 34CL2cL 7803.8 {I10} ({+33}S(p,|g))                                            
+ 34CL cL E$weighted average of 7802.4 {I11} ({+24}Mg({+12}C,pn|g)...) and 7803.8
+ 34CL2cL {I10} ({+33}S(p,|g))                                                   
  34CL cL T$mean lifetime |t in ps from {+33}S(p,|g): 0.10 {I7} (1978Ba39)       
  34CL  G 2487.4    10 100                                                       
  34CL  L 7809.7    10                                                           
@@ -2063,7 +2073,7 @@
  34CLX L XREF=G(*7840)HI                                                        
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 7849.5 {I15} ({+33}S(p,p)) and 7848.5 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7853.3    10                                                           
  34CLX L XREF=G(*7840)H                                                         
  34CL  L 7859      3                                                            
@@ -2073,11 +2083,11 @@
  34CL  L 7886.0    9                                                            
  34CLX L XREF=HI                                                                
  34CL cL E$weighted average of 7883 {I3} ({+33}S(p,p)) and 7886.3 {I10}         
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7898.7    9                                                            
  34CLX L XREF=HI                                                                
  34CL cL E$weighted average of 7897 {I3} ({+33}S(p,p)) and 7898.9 {I10}         
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7904.8    10                                                           
  34CLX L XREF=H                                                                 
  34CL  L 7909.4    15                                                           
@@ -2086,7 +2096,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 7909.4 {I15} ({+33}S(p,p)) and 7909.6 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7929.1    15 2+               1.4 KEV   2                              
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -2094,19 +2104,19 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 7934.1 {I15} ({+33}S(p,p)) and 7934.8 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7943.1    8  (1:4)+                                                    
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 7943.1 {I15} ({+33}S(p,p)) and 7942.6 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7953      3                                                            
  34CLX L XREF=I                                                                 
  34CL  L 7967.2    8  1+               0.20 KEV  2                              
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 7967.7 {I15} ({+33}S(p,p)) and 7966.9 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7975.1    15 2+               3.0 KEV   3                              
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -2117,7 +2127,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 7980.2 {I15} ({+33}S(p,p)) and 7979.5 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 7985.3    15 2-               19.0 KEV  20                             
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -2148,7 +2158,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 8048.0 {I15} ({+33}S(p,p)) and 8048.4 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 8052.4    15 1-               0.30 KEV  3                              
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -2160,7 +2170,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 8069.9 {I15} ({+33}S(p,p)) and 8070.7 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 8084.5    15 2+               0.70 KEV  7                              
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -2187,7 +2197,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 8155.6 {I15} ({+33}S(p,p)) and 8154.1 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 8159.0    15 1+               0.90 KEV  9                              
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -2201,7 +2211,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 8192.5 {I15} ({+33}S(p,p)) and 8191.0 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 8195.9    10                                                           
  34CLX L XREF=H                                                                 
  34CL  L 8203.7    15 1-               15.0 KEV  15                             
@@ -2214,7 +2224,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 8214.8 {I15} ({+33}S(p,p)) and 8214.4 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 8231.9    15 2-               10 KEV    2                              
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -2222,7 +2232,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 8236.3 {I15} ({+33}S(p,p)) and 8235.6 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 8248.3    10                                                           
  34CLX L XREF=H                                                                 
  34CL  L 8251.3    15 (2+)             0.10 KEV  1                              
@@ -2235,7 +2245,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 8260.2 {I15} ({+33}S(p,p)) and 8258.9 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 8265.5    15 (2,3)+                                                    
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -2251,7 +2261,7 @@
  34CLX L XREF=H                                                                 
  34CL cL J$(D+Q) |g to 3+, 146                                                  
  34CL  G X           33                                                         
- 34CL DG $unobservedGammaIntensity=33:From {+33}S(p,|g)                         
+ 34CL dG $unobservedGammaIntensity=33:From {+33}S(p,|g)                         
  34CL  G 8158.0      100       (D+Q)     0.27    18                             
  34CL cG M$(D+Q) |g ({+33}S(p,|g))                                              
  34CL  L 8316.5    15 4+               2.0 KEV   2                              
@@ -2261,7 +2271,7 @@
  34CLX L XREF=HI                                                                
  34CLF L FLAG=b                                                                 
  34CL cL E$weighted average of 8317.5 {I15} ({+33}S(p,p)) and 8319.1 {I10}      
- 34CLxcL ({+33}S(p,|g))                                                         
+ 34CL2cL ({+33}S(p,|g))                                                         
  34CL  L 8322.8    15 (1:5)-                                                    
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
@@ -2396,4 +2406,4 @@
  34CL  L 8793.9    15 1-               0.20 KEV  2                              
  34CLX L XREF=I                                                                 
  34CLF L FLAG=b                                                                 
-                                                                                
+
