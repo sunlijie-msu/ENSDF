@@ -272,6 +272,7 @@ aside > *:last-child {
 <li><code>%(|e+|b{++})p</code> → %(ε+β⁺)p</li>
 <li><code>{+208}Pb({+36}S,{+35}S)</code> → ²⁰⁸Pb(³⁶S,³⁵S)</li>
 <li><code>{+32}S({+3}He,p|g){+34}Cl</code> → ³²S(³He,pγ)³⁴Cl</li>
+<li><code>{+nat}Ni</code> → natural Nickel</li>
 <li><code>|s(E({+3}He),|q)</code> → σ(E(³He),θ)</li>
 <li><code>Zn{-3}P{-2}</code> → Zn₃P₂</li>
 </ul>
@@ -396,7 +397,7 @@ Example:
 <tr>
 <td style="text-align:left">T</td>
 <td style="text-align:left">40-49</td>
-<td style="text-align:left">Half-life with units</td>
+<td style="text-align:left">Half-life with units of MEV, KEV, EV, FS, PS, NS, US, MS, S, M, H, D, etc</td>
 </tr>
 <tr>
 <td style="text-align:left">DT</td>
@@ -439,7 +440,7 @@ Example:
 <ul>
 <li><code>cL</code> comment lines apply <strong>only</strong> to the immediately preceding L-record.</li>
 <li>Do not modify L-record data based on comments for other levels.</li>
-<li>Each L-record without a following <code>cL</code> line is an independent assignment.</li>
+<li>Each L-record with or without a following <code>cL</code> line is an independent record.</li>
 </ul>
 <h4 id="gamma-transition-record-g-record">Gamma Transition Record (G-Record)</h4>
 <pre><code class="language-text">Columns:
@@ -578,23 +579,25 @@ Example:
 </ol>
 <p><strong>Comment Line Scope and Order:</strong></p>
 <ul>
-<li><strong>cL lines:</strong> Apply only to the immediately preceding L-record (they are part of that L-record).
+<li><strong>cL lines:</strong> Apply only to the immediately preceding L-record; they are part of that L-record.</li>
+<li><strong>cL, 2cL, 3cL lines:</strong> Form a unified comment block for that L-record.
 <ul>
-<li>Order when multiple: E$ → J$ → T$ → S$ → general (no identifier).</li>
+<li>When multiple comment identifiers are present, order them as: E$ → J$ → T$ → S$ → general (no identifier).</li>
 </ul>
 </li>
-<li><strong>cG lines:</strong> Apply only to the immediately preceding G-record (they are part of that G-record).
+<li><strong>cG lines:</strong> Apply only to the immediately preceding G-record; they are part of that G-record.</li>
+<li><strong>cG, 2cG, 3cG lines:</strong> Form a unified comment block for that G-record.
 <ul>
-<li>Order when multiple: E$ → RI$ → M$ → MR$ → other identifiers.</li>
+<li>When multiple comment identifiers are present, order them as: E$ → RI$ → M$ → MR$ → other identifiers.</li>
 </ul>
 </li>
 </ul>
 <p><strong>Continuation Records (Column 6):</strong></p>
 <ul>
-<li>Column 6 contains continuation marker (blank for first record, alphanumeric for continuation).</li>
-<li>Common continuation types: <code>2 L</code>, <code>F L</code> (for L-records); <code>2 G</code>, <code>B G</code> (for G-records).</li>
+<li>Column 6 contains the continuation marker (blank for the first record; alphanumeric for continuations).</li>
+<li>Common continuation types: <code>2 L</code>, <code>F L</code> (for L-records); <code>2 G</code>, <code>B G</code> (for G-records); <code>2cL</code>, <code>3cL</code> (for L-comment lines); <code>2cG</code>, <code>3cG</code> (for G-comment lines).</li>
 <li>Continuation records apply only to the immediately preceding record type (L or G).</li>
-<li>FLAG markers (e.g., FLAG=A) are placed in continuation records following the record (L or G) they describe.</li>
+<li>FLAG markers (e.g., FLAG=A) are placed in continuation records following the record (L or G) that they describe.</li>
 </ul>
 <h4 id="left-justification-requirement">Left-Justification Requirement</h4>
 <p><strong>MANDATORY:</strong> All values and uncertainties in all fields MUST be left-justified (NEVER right-justified or centered).</p>

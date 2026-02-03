@@ -209,16 +209,18 @@ Example:
 5.  Preserve strict L→G grouping; parsers depend on it.
 
 **Comment Line Scope and Order:**
--   **cL lines:** Apply only to the immediately preceding L-record (they are part of that L-record).
-    -   Order when multiple: E$ → J$ → T$ → S$ → general (no identifier).
--   **cG lines:** Apply only to the immediately preceding G-record (they are part of that G-record).
-    -   Order when multiple: E$ → RI$ → M$ → MR$ → other identifiers.
+- **cL lines:** Apply only to the immediately preceding L-record; they are part of that L-record.
+- **cL, 2cL, 3cL lines:** Form a unified comment block for that L-record.
+  - When multiple comment identifiers are present, order them as: E$ → J$ → T$ → S$ → general (no identifier).
+- **cG lines:** Apply only to the immediately preceding G-record; they are part of that G-record.
+- **cG, 2cG, 3cG lines:** Form a unified comment block for that G-record.
+  - When multiple comment identifiers are present, order them as: E$ → RI$ → M$ → MR$ → other identifiers.
 
 **Continuation Records (Column 6):**
--   Column 6 contains continuation marker (blank for first record, alphanumeric for continuation).
--   Common continuation types: `2 L`, `F L` (for L-records); `2 G`, `B G` (for G-records).
--   Continuation records apply only to the immediately preceding record type (L or G).
--   FLAG markers (e.g., FLAG=A) are placed in continuation records following the record (L or G) they describe.
+- Column 6 contains the continuation marker (blank for the first record; alphanumeric for continuations).
+- Common continuation types: `2 L`, `F L` (for L-records); `2 G`, `B G` (for G-records); `2cL`, `3cL` (for L-comment lines); `2cG`, `3cG` (for G-comment lines).
+- Continuation records apply only to the immediately preceding record type (L or G).
+- FLAG markers (e.g., FLAG=A) are placed in continuation records following the record (L or G) that they describe.
 
 #### Left-Justification Requirement
 
