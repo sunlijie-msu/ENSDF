@@ -73,7 +73,7 @@
  34CL  G 461.00    4  100       D                                               
  34CL cG E$weighted average of 461.00 {I4} (1971Sn01), 461.0 {I1} (1971De27)    
  34CL cG RI$100 (1971Sn01), 100 (1971De27), 100 (1970Sy01), 100 (1970Br10)      
- 34CL cG M,MR$D and |d=0 from p|g(|q) in 1970Sy01.                              
+ 34CL cG M,MR$D with |d=0 from p|g(|q) in 1970Sy01.                             
  34CL cG $A{-2}=-0.51 {I2}, A{-4} set to 0 (1970Br10); A{-2}=+0.34 {I6} in      
  34CL2cG coincidence with proton feeding the 1887 level (1970Br10).             
  34CL cG $A{-2}=-0.47 {I4}, A{-4}=+0.03 {I7} (1970Sy01); A{-2}=-0.30 {I7},      
@@ -92,7 +92,7 @@
  34CL cG E$weighted average of 665.56 {I5} (1971Sn01), 665.6 {I1} (1971De27)    
  34CL cG RI$from 1971De27. Others: 100 (1971Sn01), 93 {I5} (1970Sy01), 100      
  34CL2cG (1970Br10)                                                             
- 34CL cG M,MR$D and |d=0 from p|g(|q) in 1970Sy01.                              
+ 34CL cG M,MR$D with |d=0 from p|g(|q) in 1970Sy01.                             
  34CL cG $A{-2}=-0.30 {I3}, A{-4}=0 (1970Br10).                                 
  34CL cG $A{-2}=-0.42 {I7}, A{-4}=+0.10 {I14} (1970Sy01).                       
  34CL cG $A{-2}=-0.12 {I8}, A{-4}=-0.02 {I15} at proton feeding the 1230 level  
@@ -105,24 +105,23 @@
  34CL cG E$weighted average of 564.68 {I6} (1971Sn01), 564.6 {I2} (1971De27)    
  34CL cG RI$from 1971De27. Others: 40.7 {I20} (1971Sn01), 37 {I3} (1970Sy01), 31
  34CL2cG {I4} (1970Br10)                                                        
- 34CL cG M$from 1971De27 and 1970Br10.                                          
- 34CL cG MR$from 1971De27. Other: |d=+0.37 {I9} (1970Br10).                     
+ 34CL cG M,MR$from p|g(|q) in 1971De27 and 1970Br10. Other: |d=+0.37 {I9}       
+ 34CL2cG (1970Br10).                                                            
  34CL cG $A{-2}=+0.37 {I10}, A{-4}=+0.10 {I10} (1970Br10)                       
  34CL cG $A{-2}=+0.36 {I8}, A{-4}=-0.05 {I14} (1970Sy01)                        
  34CL  G 769.25    7  38     3  D+Q      +3.3    +18-12                         
  34CL cG E$weighted average of 769.25 {I7} (1971Sn01), 769.3 {I3} (1971De27)    
  34CL cG RI$from 1971De27. Others: 31.8 {I20} (1971Sn01), 35 {I3} (1970Sy01), 37
  34CL2cG {I5} (1970Br10)                                                        
- 34CL cG M$from 1971De27 and 1970Br10.                                          
- 34CL cG MR$from 1971De27. Other: +0.7<|d<+1.7 (1970Br10)                       
+ 34CL cG M,MR$from p|g(|q) in 1971De27 and 1970Br10. Other: +0.7<|d<+1.7        
+ 34CL2cG (1970Br10)                                                             
  34CL cG $A{-2}=+0.94 {I9}, A{-4}=+0.41 {I10} (1970Br10)                        
  34CL cG $A{-2}=+0.63 {I9}, A{-4}=-0.08 {I16} (1970Sy01)                        
  34CL  G 1083.9    3  32     2  D+Q      +1.2    +23-7                          
  34CL cG E$from 1971De27. Other: 1083.88 (1971Sn01).                            
  34CL cG RI$from 1971De27. Others: 27.5 {I20} (1971Sn01), 28 {I3} (1970Sy01), 32
  34CL2cG {I6} (1970Br10)                                                        
- 34CL cG M$D+Q |DJ=1 |g                                                         
- 34CL cG MR$from 1971De27. Other: +0.4<|d<+4.0 (1970Br10).                      
+ 34CL cG M,MR$from p|g(|q) in 1971De27. Other: +0.4<|d<+4.0 (1970Br10).         
  34CL cG $A{-2}=-0.80 {I8}, A{-4}=+0.11 {I9} (1970Br10)                         
  34CL cG $A{-2}=-0.57 {I9}, A{-4}=-0.15 {I18} (1970Sy01)                        
  34CL  G 1230.24      2      1                                                  
@@ -216,8 +215,8 @@
  34CL  L 2581         1                33 FS     8                              
  34CL dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  34CL cL J$spin=1 from p|g(|q) in 1971De27.                                     
- 34CL cL E$quoted in 1971De27 without reporting uncertainty, 2587 from 1970Sy01,
- 34CL2cL also observed in 1973Ca15.                                             
+ 34CL cL E$from 1971De27 without reporting uncertainty, 2587 from 1970Sy01, also
+ 34CL2cL observed in 1973Ca15.                                                  
  34CL cL T$lifetime |t=47 fs {I12}: average of 47 fs {I12} (1973Ca15, DSAM) and 
  34CL2cL 15 fs {I6} (1972AlZT, DSAM).                                           
  34CL  G 2581         100       D                                               
@@ -259,9 +258,8 @@
  34CL  G 2260.7    5  41     3  D(+Q)    -0.1    3                              
  34CL cG E$from 1971De27                                                        
  34CL cG RI$from 1971De27. Other: 54 {I9} (1970Sy01)                            
- 34CL cG M$from p|g(|q) in 1970Sy01.                                            
- 34CL cG MR$from 1970Sy01. Others: |d=-3.7 {I+13-28} (1970Sy01); |d=-2.9 {I+10} 
- 34CL2cG (1971De27).                                                            
+ 34CL cG M,MR$from p|g(|q) in 1970Sy01. Others: |d=-3.7 {I+13-28} (1970Sy01);   
+ 34CL2cG |d=-2.9 {I+10} (1971De27).                                             
  34CL cG $A{-2}=-0.21 {I14}, A{-4}=+0.52 {I25} (1970Sy01)                       
  34CL  G 2575.3       17     2  D(+Q)    0.0     3                              
  34CL cG RI$from 1971De27. Other: 11 {I6} (1970Sy01)                            
