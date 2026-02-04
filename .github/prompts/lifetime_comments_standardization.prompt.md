@@ -77,7 +77,7 @@ Standardize T$ (lifetime) comment lines for clarity and numerical rigor. Maintai
 ### Formatting and Grammar
 *   **Logical Single Line**: Comment content newly added by AI agent must be a complete single line ending with a period. The human evaluator will manually wrap long comments across ENSDF continuation records using VS Code's editor extension.
 *   **No Manual Line Breaks**: Do NOT insert deliberate line breaks into the comment content itself.
-*   **External Wrapping OK**: Comment lines wrapped across continuation records (e.g., `cL`, `2cL`, `3cL`) may already exist in the .ens file being edited, which are expected and correct.
+*   **External Wrapping OK**: Comment lines wrapped across continuation records (e.g., `cL`, `2cL`, `3cL`) may already exist in the .ens file being edited, which are expected and normal.
 *   **Oxford Comma**: Always include the final comma in lists of three or more items.
 *   **Pluralization**: Use "Other:" for one item and "Others:" for multiple supporting items (limits or low-weight values).
 *   **End Punctuation**: Every comment must end with a period.
