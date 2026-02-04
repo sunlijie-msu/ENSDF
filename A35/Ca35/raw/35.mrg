@@ -1,0 +1,81 @@
+Program for consistency check: output for original lines grouped by level and gamma energies (version 01/14/2026)
+Generated at: Wed 02/04/2026 at 02:52:47 PM EST
+
+
+Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
+         available data in the corresponding dataset, including decay data (logft or HF), L-transfer, and decaying
+         and feeding gammas of each level, and so on.
+      2. possible JPI presented at the end of each adopted record line is deduced by combining data from all
+         individual datasets (data from the record lines only and might be incomplete since arguments only presented
+         in comments haven't been considered, like shell-model calculations, analyzing power, atomic method for g.s.
+         spin, and other qualitative arguments).
+
+*** All possible JPI values are for reference purpose only and should not be taken as the final adopted assignments ***
+
+
+########################################################################################################################
+        new XREFs                        old XREFs
+ 35CA  XA1H(37CA,T)                    A-A 1H(37CA,T)
+ 35CA  XB9BE(36CA,35CA)                B-B 9BE(36CA,35CA)
+ 35CA  XC9BE(37CA,X)                   C-C 9BE(37CA,X)
+################################## new tag show first below ############################################################
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35CA  L 0.0          1/2+             25.7 MS   2                               --- possible JPI=1/2+
+                     *new XREF new tags    35CAX L XREF=AB
+                     *new XREF old tags    35CAX L XREF=AB
+                     #old XREF in Adopted  35CAX L XREF=AB
+                    1H(37CA,T)--->A  A     35CA  L 0.0          (1/2)+                           2                        
+                9BE(36CA,35CA)--->B  B     35CA  L 0.0          1/2+                             0        0.45      8      *** possible JPI=1/2+
+                    1H(37CA,T)--->A  A     35CA cL J$mirror level: 1/2+ {+35}P g.s. and shell model calculations.         
+                    1H(37CA,T)--->A  A     35CA cL L$removal of one neutron from the 2s{-1/2} orbital and the other from  
+                    1H(37CA,T)--->A  A     35CA2cL the 1d{-3/2} orbital, leaving a single neutron in the 2s{-1/2} orbital.
+                9BE(36CA,35CA)--->B  B     35CA cL J$from L(n)=0 from 0+, interpreted as knockout from neutron 2s{-1/2}   
+                9BE(36CA,35CA)--->B  B     35CA2cL orbital.                                                               
+                9BE(36CA,35CA)--->B  B     35CA cL L$2012Sh21 deduced L by comparing the measured and eikonal-calculated  
+                9BE(36CA,35CA)--->B  B     35CA2cL longitudinal momentum distributions of residuals.                      
+                9BE(36CA,35CA)--->B  B     35CA cL S$from eikonal/Hartree-Fock model with R{-s}=0.24 {I2}, uncertainty    
+                9BE(36CA,35CA)--->B  B     35CA2cL only include experimental contributions. Others: 0.49 {I8} from        
+                9BE(36CA,35CA)--->B  B     35CA3cL eikonal/Strong Absorption model with R{-s}=0.26 {I2} and also from     
+                9BE(36CA,35CA)--->B  B     35CA4cL transfer-to-continuum model; R{-s}=0.26 {I2}; 1.80 from shell model.   
+                9BE(36CA,35CA)--->B  B     35CA cL $|s{-exp}=5.03 mb {I46}. Calculated values: |s{-sp}=11.1 mb from       
+                9BE(36CA,35CA)--->B  B     35CA2cL eikonal/Hartree-Fock model; |s{-sp}=10.2 mb from eikonal/Strong        
+                9BE(36CA,35CA)--->B  B     35CA3cL Absorption model; |s{-sp}=10.3 mb from transfer-to-continuum model.    
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 35CA  L 2.09E3    10 3/2+                                                       ---
+                     *new XREF new tags    35CAX L XREF=AC
+                     *new XREF old tags    35CAX L XREF=AC
+                     #old XREF in Adopted  35CAX L XREF=AC
+                    1H(37CA,T)--->A  A     35CA  L 2.24E3    33 3/2+                             0                        
+                   9BE(37CA,X)--->C  C     35CA  L 2.08E3    10 (3/2+)                                                    
+                    1H(37CA,T)--->A  A     35CA cL J$mirror level: 3/2+ {+35}P first excited state at 2386.9 {I11} and    
+                    1H(37CA,T)--->A  A     35CA2cL shell model calculations.                                              
+                    1H(37CA,T)--->A  A     35CA cL L$removal of two neutrons from the 2s{-1/2} orbital, leaving a single  
+                    1H(37CA,T)--->A  A     35CA2cL neutron in the 1d{-3/2} orbital.                                       
+                   9BE(37CA,X)--->C  C     35CA cL E$From total decay energy of 2p+{+33}Ar E{-T}=1667 keV {I20}.
+                   9BE(37CA,X)--->C  C     35CA cL J$shell-model calculations.                                            
+
+
+Statistics of levels and gammas from all datasets of 35CA:
+                             DSID     #of levels       #of gammas       level range
+                   ADOPTED LEVELS        2                0             0.0        to     2.09E3
+                       1H(37CA,T)        2                0             0.0        to     2.24E3
+                   9BE(36CA,35CA)        1                0             0.0
+                      9BE(37CA,X)        1                0             2.08E3
+
+                         IN TOTAL        6                0             0.0        to     2.24E3
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Statistics of all datasets from input ENSDF files:
+                Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
+                               Levels       Gammas     L Records    G Records                      (non-Adopted)
+                   35CA        2            0            6            0              125              3
+
+               IN TOTAL        2            0            6            0              125              3
+
+Number of nuclides     : 1
+Number of blocks       : 4
+Number of references   : 16
+Number of lines in files: 129
+(from all blocks including abstract, comment, reference)

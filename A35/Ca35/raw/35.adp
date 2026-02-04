@@ -1,3 +1,6 @@
+Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 01/14/2026)
+Generated at: Wed 02/04/2026 at 02:53:24 PM EST                                 
+                                                                                
  35CA    ADOPTED LEVELS                                          ENSDF    202509
  35CA  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$          
  35CA  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
@@ -39,6 +42,7 @@
  35CA4cL {I3}.                                                                  
  35CA  L 2.09E3    10 3/2+                                                      
  35CAX L XREF=AC                                                                
- 35CA cL E$weighted average of 2.24|*10{+3} {I33} from {+1}H({+37}Ca,t) and     
- 35CA2cL 2.08|*10{+3} {I10} from ({+37}Ca,X)                                    
+ 35CA cL E$weighted average of 2.24E3 {I33} from ({+37}Ca,t) and 2.08E3 {I10}   
+ 35CA2cL from ({+37}Ca,X)                                                       
  35CA cL J$L=0 from 3/2+ in {+1}H({+37}Ca,t).                                   
+                                                                                

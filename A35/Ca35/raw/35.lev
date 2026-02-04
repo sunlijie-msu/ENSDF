@@ -1,0 +1,42 @@
+Program for consistency check: output for levels (version 01/14/2026)
+Generated at: Wed 02/04/2026 at 02:52:47 PM EST
+
+
+
+35CA
+ E(Level)        JPI                  T1/2               L-value     DSID                                       XREF
+ -------------   ------------------   ----------------   ---------   ----------------------------------------   ---
+ 0.0             1/2+                 25.7 MS 2                      ADOPTED LEVELS                             
+ 0.0             (1/2)+                                  2           1H(37CA,T)                                 A
+ 0.0             1/2+                                    0           9BE(36CA,35CA)                             B
+
+ 2.09E3     10   3/2+                                                ADOPTED LEVELS                             
+ 2.24E3     33   3/2+                                    0           1H(37CA,T)                                 A
+ 2.08E3     10   (3/2+)                                              9BE(37CA,X)                                C
+
+
+
+Statistics of levels and gammas from all datasets of 35CA:
+                             DSID     #of levels       #of gammas       level range
+                   ADOPTED LEVELS        2                0             0.0        to     2.09E3
+                       1H(37CA,T)        2                0             0.0        to     2.24E3
+                   9BE(36CA,35CA)        1                0             0.0
+                      9BE(37CA,X)        1                0             2.08E3
+
+                         IN TOTAL        6                0             0.0        to     2.24E3
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Statistics of all datasets from input ENSDF files:
+                Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
+                               Levels       Gammas     L Records    G Records                      (non-Adopted)
+                   35CA        2            0            6            0              125              3
+
+               IN TOTAL        2            0            6            0              125              3
+
+Number of nuclides     : 1
+Number of blocks       : 4
+Number of references   : 16
+Number of lines in files: 129
+(from all blocks including abstract, comment, reference)

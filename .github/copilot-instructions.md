@@ -9,7 +9,7 @@ You are an AI agent specializing in the Evaluated Nuclear Structure Data File (E
 
 ---
 
-## 1. ENSDF Text Format Standards
+## 1. ENSDF Comment Text Format Standards
 
 ### Superscripts and Subscripts
 
@@ -220,6 +220,7 @@ Example:
 - Column 6 contains the continuation marker (blank for the first record; alphanumeric for continuations).
 - Common continuation types: `2 L`, `F L` (for L-records); `2 G`, `B G` (for G-records); `2cL`, `3cL` (for L-comment lines); `2cG`, `3cG` (for G-comment lines).
 - Continuation records apply only to the immediately preceding record type (L or G).
+- Continuation records have their own text format standards. Do not use comment text format in continuation records. e.g.: 35CA2 L %EC+%B+=100$%ECP=95.8 3$%EC2P=4.2 3                                    
 - FLAG markers (e.g., FLAG=A) are placed in continuation records following the record (L or G) that they describe.
 
 #### Left-Justification Requirement
