@@ -1,13 +1,29 @@
  34CL    27AL(12C,ANG)                 2014BI03                  ENSDF    202609
  34CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
- 34CL c  2014Bi03: 
- 
- {+27}Al+{+12}C|){+34}Cl+|a+n via fusion-evaporation reaction.          
- 34CL c  E({+12}C)=40 MeV. Target=0.50 mg/cm{+2} {+27}Al. Measured E|g, I|g,    
- 34CL2c  |g|g-coin, |g|g(|q)(DCO), |g|g(lin pol), level lifetimes by DSAM,      
- 34CL3c  branching ratios using the 14-UD Pelletron accelerator at TIFR in      
- 34CL4c  in Mumbai and the INGA array. Deduced levels, J, |p. Comparison with   
- 34CL5c  large-basis shell-model calculations.                                  
+ 34CL c  2014Bi03: a 40-MeV 12C beam was provided from the 14-UD Pelletron      
+ 34CL2c  accelerator at the Tata Institute of Fundamental Research, Mumbai. The 
+ 34CL3c  target was 0.50-mg/cm{+2} {+27}Al on 10-mg/cm{+2} Au backing. States of
+ 34CL4c  34CL were populated via the {+27}Al({+12}C,|an){+34}Cl heavy-ion       
+ 34CL5c  reaction and the deexciting |g rays were detected using the Indian     
+ 34CL6c  National Gamma Array consisted of 15 Compton-suppressed clover         
+ 34CL7c  detectors. Measured E|g, I|g, |g|g-coin, |g|g(|q)(DCO) integrated      
+ 34CL8c  polarization direction correlation (POL). Deduced levels, J, |p, |g-ray
+ 34CL9c  multipolarities, lifetimes from DSAM lineshape analysis, and transition
+ 34CLAc  strengths. Comparisons with large-basis shell-model calculations.      
+
+209PO cG E,RI$From 2025DoAA, unless otherwise noted.                            
+209PO cG M$As given in 2025DoAA. Multipolarities for newly observed |g          
+209PO2cG transitions are assigned based on measured DCO ratios. Expected R{-DCO}
+209PO3cG values are |?1.0 for stretched quadrupole (|DJ=2) or unstretched dipole
+209PO4cG (|DJ=0) in a stretched quadrupole gate; |?0.8 for stretched dipole     
+209PO5cG (|DJ=1) transitions in a stretched quadrupole gate. Multipolarities for
+209PO6cG known |g transitions are adopted from 2015Ch30.                        
+209PO cG E(X)$Newly observed |g transitions in 2025DoAA.                        
+209PO cL E$From a least-squares fit to |g-ray energies (by compiler).           
+209PO cL E(X)$Newly identified levels in 2025DoAA.                              
+209PO cL J$For known levels, J|p is adopted from 2015Ch30; for new levels, J|p  
+209PO2cL is assigned in 2025DoAA based on their |g-ray multipolarities.         
+
 
  34CL cG $DCO(1) is for gate on |DJ=1, dipole transition; DCO(2) for gate on    
  34CL2cG |DJ=2, quadrupole transition. The geometry for DCO values is 90|' and  
@@ -26,7 +42,7 @@
  34CL6cG branching ratios differ significantly from those deduced from I|g data 
  34CL7cG in authors' table I; the former should be considered more reliable as  
  34CL8cG suggested in email reply of Feb 17 from authors                        
- 34CL CG TI$LABEL=|g branching ratio                                            
+ 34CL cG TI$LABEL=|g branching ratio                                            
  34CL cL E$From least-squares fit (by compilers) to E|g data, assuming 1 keV    
  34CL2cL uncertainty for each |g ray, except that for 146.36|g                  
  34CL cL T$From DSAM measurements for levels above 200 keV (2014Bi03)           
@@ -68,8 +84,8 @@
  34CL cG $POL=+0.15 {I6}                                                        
  34CL  G 2035         2.9    1 M1+E2     -0.4    1                44.1    46    
  34CL cG $Note that branching ratio of 44.1 {I46} in table II of 2014Bi03       
- 34CL2cG differs from 4.9 {I2} deduced from relative-intensity data in          
- 34CL3cG authors' table I.                                                      
+ 34CL2cG differs from 4.9 {I2} deduced from relative-intensity data in authors' 
+ 34CL3cG table I.                                                               
  34CL2 G DCO(2)=0.51 8                                                          
  34CL cG $POL=+0.04 {I1}                                                        
  34CL  L 2375.5     6 4+                                                        
@@ -133,8 +149,7 @@
  34CL  G 2562                   [E3]                              1.0     1     
  34CL  G 4597         36.2   3  (E3)                              35.8    36    
  34CL2 G DCO(1)=3.45 26                                                         
- 34CL cG $POL=+0.010 {I2}                                                       
- 34CL2cG M$ from Adopted dataset of {+34}Cl in ENSDF database                   
+ 34CL cG $POL=+0.010 {I2} M$ from Adopted dataset of {+34}Cl in ENSDF database  
  34CL  L 4824.5     5 5+                                                        
  34CL  G 1193         8.9    2 E1(+M2)   -0.1    3                5.1     1     
  34CL2 G DCO(1)=1.94 36                                                         
@@ -174,8 +189,7 @@
  34CL  L 7699.6    12 (7+)             0.34 PS   LT                             
  34CL  G 2384         18.2   2                                                  
  34CL2 G DCO(2)=0.89 25                                                         
- 34CL cG $POL=-0.17 {I11}                                                       
- 34CL2cG $ DCO from 65|'-90|' matrix                                            
+ 34CL cG $POL=-0.17 {I11} $ DCO from 65|'-90|' matrix                           
  34CL  L 7800.6    12 8-               0.083 PS  LT                             
  34CL  G 2485         89     1  E1+M2    +0.22   7                              
  34CL2 G DCO(2)=0.74 8                                                          
@@ -195,4 +209,4 @@
  34CL  G 3381         74     1  E2                                              
  34CL2 G DCO(2)=1.00 10                                                         
  34CL cG $POL=+0.03 {I2}                                                        
-                                                                                
+
