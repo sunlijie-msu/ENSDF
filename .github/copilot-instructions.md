@@ -798,7 +798,7 @@ CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
 ### Professional English Grammar
 
 **Common corrections:**
--   **Spelling:** "ohter" to "other", "stoped" to "stopped", "usign" to "using", "coeffcients" to "coefficients", "deexiting" to "deexciting".
+-   **Spelling:** "ohter" to "other", "stoped" to "stopped", "usign" to "using", "coeffcients" to "coefficients", "deexiting" to "deexciting", "multiporities/multipolarties" to "multipolarities", "paretheses" to "parentheses", etc.
 -   **Dittography:** "the the", "from from", etc.
 -   **Hyphenation:** Rule: [Number]-[Unit]-[Descriptor] [Noun]. Hyphens may have been inserted in word pairs that function as compound adjectives when they occur before a noun, as in "x-ray diffraction," "4-mm-long gas cell," and "R-matrix theory." However, hyphens are deleted from word pairs when they are not used as adjectives before nouns, as in "emission by x rays," "was 4 mm in length," and "the R matrix is tested." "L-transfers" and "half-life" are always hyphenated.
 
