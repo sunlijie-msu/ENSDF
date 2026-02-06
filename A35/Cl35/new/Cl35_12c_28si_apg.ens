@@ -5,19 +5,19 @@
  35CL dL E$Least-squares fitting is done by GLSC (version 19-Aug-2025)          
  35CL c  2007Ks01: two different experiments: one with E=70 MeV {+28}Si beam at 
  35CL2c  BARC-TIFR facility and the second with E=88 MeV {+28}Si beam at NSC    
- 35CL3c  facility, both using a target of about 50 |mg/cm{+2} {+12}C on a about 
- 35CL4c  10.5 mg/cm{+2} gold backing. |g rays were detected with almost         
- 35CL5c  identical (INGA) arrays eight Compton-suppressed Clover HPGe detectors.
- 35CL6c  Measured E|g, I|g, |g|g-coin, |g|g(|q)(DCO), |g|g(lin pol),            
+ 35CL3c  facility, both using a target of about 50 |mg/cm{+2} {+12}C on a       
+ 35CL4c  |?10.5-mg/cm{+2} gold backing. |g rays were detected with almost       
+ 35CL5c  identical (INGA) arrays of eight Compton-suppressed Clover HPGe        
+ 35CL6c  detectors. Measured E|g, I|g, |g|g-coin, |g|g(|q)(DCO), |g|g(lin pol), 
  35CL7c  Doppler-shift attenuations. Deduced levels, J, |p, T{-1/2}, |g-ray     
- 35CL8c  multipolarties and mixing ratios . Comparisons with available data and 
+ 35CL8c  multipolarities and mixing ratios. Comparisons with available data and 
  35CL9c  large-scale shell-model calculations                                   
  35CL c  2013Bi10: E=110 MeV {+28}Si beam was produced from the IUAC-New Delhi  
  35CL2c  accelerator facility. Target was 50 |mg/cm{+2} thick {+12}C on 18      
  35CL3c  mg/cm{+2} Au backing. |g rays were detected with the INGA array of     
  35CL4c  thirteen Compton-suppressed Clover detectors. Measured E|g, I|g,       
  35CL5c  |g|g-coin, |g|g(|q)(DCO), Doppler-shift attenuations. Deduced levels,  
- 35CL6c  J, |p, T{-1/2}, evidence for an SD band, |g-ray multiporities.         
+ 35CL6c  J, |p, T{-1/2}, evidence for an SD band, |g-ray multipolarities.       
  35CL7c  Comparison with large-scale shell-model calculations, two-level mixing 
  35CL8c  calculation, and with structure of SD states in {+36}Ar                
  35CL c  2020Ra14: E=110 MeV {+28}Si beam was produced from the 15UD Pelletron  
@@ -28,12 +28,12 @@
  35CL6c  Measured E|g, I|g, |g|g-coin, |g|g(DCO), |g|g(ADO), |g|g(IPDCO).       
  35CL7c  Deduced levels, J, |p, |g-ray multipolarities. Comparisons with        
  35CL8c  theoretical calculations.                                              
- 35CL c  Other reaction:                                                        
+ 35CL c  Other reactions:                                                       
  35CL c  1982Le04: {+28}Si({+12}C,X|g) {+12}C (E{-cm}=23-35 MeV) beam produced  
  35CL2c  from the University of Washington FN Tandem Van de Graaff. A target of 
  35CL3c  100 |mg/cm{+2} {+28}Si on a thick tantalum backing. A Ge(Li) detector. 
  35CL4c  Measured |s(E), E|g.                                                   
- 35CL c  1985Kr21: {+27}Al({+12}C,X) E=85 meV/nucleon. Measured                 
+ 35CL c  1985Kr21: {+27}Al({+12}C,X) E=85 MeV/nucleon. Measured                 
  35CL2c  particle-particle angular correlations.                                
  35CL cG $|D{-IPDCO} corresponds to integrated polarization asymmetry           
  35CL2cG measurement at E=70 MeV at TIFR facility (2007Ks01). The values are    
@@ -48,7 +48,7 @@
  35CL7cG dipole (DCO(D)) (2007Ks01). Values deviating from above values indicate
  35CL8cG a mixed transition. DCO values are also available in 2020Ra14, but     
  35CL9cG expected values are opposite to those in 2007Ks01 for stretched dipole 
- 35CLAcG and quadrupole transitions when gated by a transion of different       
+ 35CLAcG and quadrupole transitions when gated by a transition of different     
  35CLBcG multipolarity, that is DCO(Q)|?0.5 for stretched dipole and DCO(D)|?2.0
  35CLCcG for stretched quadrupole (2020Ra14).                                   
  35CL cG $For ADO ratios under comments from 2020Ra14, expected values are 0.6  
@@ -205,8 +205,8 @@
  35CL  G 2757                                                                   
  35CL  L 10181.1   10  19/2-           42.3 FS   28                         A   
  35CLF L FLAG=D                                                                 
- 35CL cL $Tentative 10181, (19/2+) level in 2007Ks01 is considred the same level
- 35CL2cL here by the evaluators                                                 
+ 35CL cL $Tentative 10181, (19/2+) level in 2007Ks01 is considered the same     
+ 35CL2cL level here by the evaluators                                           
  35CL cL T$other: <0.14 ps (2007Ks01)                                           
  35CL cL $Q(transition)=0.82 {I6}, |b{-2}=0.37 (2013Bi10).                      
  35CL  G 1336         6      1  D(+Q)    -0.2    2                              
