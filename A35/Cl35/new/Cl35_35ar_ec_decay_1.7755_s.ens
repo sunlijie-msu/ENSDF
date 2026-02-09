@@ -2,6 +2,7 @@
  35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$          
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
+ 35CL DG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  35CL dE EAV,LOGFT$FROM BetaShape v2.4 (Jun-2024) 2023Mo21.                     
  35CL dL E$Least-squares fitting is done by GLSC (version 19-Aug-2025)          
  35CL c  1980Wi13: {+35}Ar was produced via the {+35}Cl(p,n){+35}Ar reaction    
@@ -112,6 +113,8 @@
  35CL3cE (1984Ad01), 1.228 {I30} (1980Wi13)                                     
  35CL  G 1219.3    2  100.0  15 M1+E2    0.093   10                             
  35CL2 G %IG=1.26 6                                                             
+ 35CLS G  CC=3.66E-5 5$KC=2.59E-5 4$LC=2.063E-6 29$MC=1.887E-7 26               
+ 35CLS G  IPC=8.42E-6 12                                                        
  35CL cG RI$others: 100.0 {I30} from 1984Ad01, 100 {I10} from 1977Az01, 100 from
  35CL2cG 1969Wi18, 1971Ge04, 1979Ha04, and 1985Da04.                            
  35CL  L 1763.1    2  5/2+             0.36 PS   3                              
@@ -119,6 +122,8 @@
  35CLS E EAV=1424.00 35$CK=0.002459 29$CL=2.266E-4 28$CM=3.351E-5 56            
  35CL  G 1763.0    2  22.7   4 M1+E2     -2.85   10                             
  35CL2 G %IG=0.286 13                                                           
+ 35CLS G  CC=0.0002124 30$KC=1.513E-5 21$LC=1.204E-6 17$MC=1.101E-7 15          
+ 35CLS G  IPC=0.0001959 28                                                      
  35CL cG RI$weighted average of 23.4 {I13} (1969Wi18), 20.0 {I27} (1971Ge04), 22
  35CL2cG {I6} (1977Az01), 23.08 {I37} (1980Wi13), 21.85 {I67} (1984Ad01), and   
  35CL3cG 21.7 {I9} (1985Da04)                                                   
@@ -127,17 +132,24 @@
  35CLS E EAV=1007.19 56$CK=0.006451 80$CL=5.947E-4 78$CM=8.80E-5 15             
  35CL  G 2645         0.12   LT E2                                          X  ?
  35CL2 G %IG LT 0.00151                                                         
+ 35CLS G  CC=0.000633 9$KC=7.47E-6 10$LC=5.93E-7 8$MC=5.43E-8 8                 
+ 35CLS G  IPC=0.000625 9                                                        
  35CL  L 2693.8    2  3/2+             32 FS     6                              
  35CL  E             0.166   10 0.00127 8 5.0                   0.167     10    
  35CLS E EAV=984.43 34$CK=0.006877 81$CL=6.34E-4 8$CM=9.38E-5 16                
  35CL  G 930.7     2  1.57   20 M1+E2    +0.09   3                              
+ 35CLS G  CC=4.69E-5 7$KC=4.31E-5 6$LC=3.43E-6 5$MC=3.14E-7 4                   
  35CL2 G %IG=0.0198 +34-32                                                      
  35CL cG RI$weighted average of 1.13 {I26} (1980Wi13) and 1.66 {I12} (1984Ad01) 
  35CL  G 1474.8    3  1.02   11 M1+E2    -0.63   21                             
  35CL2 G %IG=0.0129 19                                                          
+ 35CLS G  CC=8.4E-5 4$KC=1.94E-5 5$LC=1.54E-6 4$MC=1.41E-7 4                    
+ 35CLS G  IPC=6.33E-5 31                                                        
  35CL cG RI$weighted average of 0.83 {I13} (1980Wi13) and 1.08 {I7} (1984Ad01)  
  35CL  G 2693.7    2  10.96  18 M1+E2    +0.26   2                              
  35CL2 G %IG=0.138 6                                                            
+ 35CLS G  CC=0.000553 8$KC=6.86E-6 10$LC=5.45E-7 8$MC=4.98E-8 7                 
+ 35CLS G  IPC=0.000546 8                                                        
  35CL cG RI$weighted average of 10.2 {I15} (1971Ge04), 10.96 {I18} (1980Wi13)   
  35CL2cG and 11.02 {I34} (1984Ad01)                                             
  35CL  L 3002.3    3  5/2+             22 FS     6                              
@@ -145,10 +157,16 @@
  35CLS E EAV=841.11 35$CK=0.01069 13$CL=9.86E-4 13$CM=1.458E-4 25               
  35CL  G 1239         0.30   LT [M1,E2]                                     X  ?
  35CL2 G %IG LT 0.0038                                                          
+ 35CLS G  CC=4.4E-5 6$KC=2.85E-5 34$LC=2.27E-6 27$MC=2.07E-7 25                 
+ 35CLS G  IPC=1.35E-5 26                                                        
  35CL  G 1783         0.39   LT [E2]                                        X  ?
  35CL2 G %IG LT 0.0049                                                          
+ 35CLS G  CC=0.0002267 32$KC=1.501E-5 21$LC=1.193E-6 17$MC=1.091E-7 15          
+ 35CLS G  IPC=0.0002104 29                                                      
  35CL  G 3002.1    4  7.29   14 M1+E2    +0.08   2                              
  35CL2 G %IG=0.092 4                                                            
+ 35CLS G  CC=0.000671 9$KC=5.80E-6 8$LC=4.60E-7 6$MC=4.21E-8 6                  
+ 35CLS G  IPC=0.000665 9                                                        
  35CL cG RI$weighted average of 9.0 {I15} (1971Ge04), 7.24 {I14} (1980Wi13),    
  35CL2cG 7.45 {I23} (1984Ad01) and 6.9 {I5} (1985Da04)                          
  35CL  L 3918.4    5  3/2+             4.9 FS    14                             
@@ -162,11 +180,17 @@
  35CL2cG peak (1980Wi13).                                                       
  35CL  G 2155.1    15 0.15   6 [M1,E2]                                          
  35CL2 G %IG=0.0019 +9-8                                                        
+ 35CLS G  CC=0.00036 4$KC=1.02E-5 5$LC=8.1E-7 4$MC=7.38E-8 34                   
+ 35CLS G  IPC=0.00035 4                                                         
  35CL cG RI$from 1984Ad01. Other: <0.22 (1980Wi13)                              
  35CL  G 2699         0.33   LT [M1,E2]                                     X  ?
  35CL2 G %IG LT 0.0042                                                          
- 35CL  G 3918         0.52   3  M1+E2                                           
+ 35CLS G  CC=0.00060 6$KC=7.02E-6 23$LC=5.58E-7 18$MC=5.10E-8 17                
+ 35CLS G  IPC=0.00060 5                                                         
+ 35CL  G 3918         0.52   3  M1+E2                  0.00108 7                
  35CL2 G %IG=0.0066 5                                                           
+ 35CLS G  KC=4.00E-6 9$LC=3.17E-7 7$MC=2.90E-8 6                                
+ 35CLS G  IPC=0.00107 7                                                         
  35CL  L 3967.7    4  1/2+             11.8 FS   28                             
  35CL  E             0.015   11 0.0016 10 4.5                   0.017     11    
  35CLS E EAV=405.95 35$CK=0.0831 10$CL=0.00767 10$CM=0.001135 20                
@@ -176,13 +200,21 @@
  35CL2dG 3968                                                                   
  35CL  G 1274         0.42   LT [M1,E2]                                     X  ?
  35CL2 G %IG LT 0.0053                                                          
+ 35CLS G  CC=4.9E-5 7$KC=2.69E-5 30$LC=2.14E-6 24$MC=1.96E-7 22                 
+ 35CLS G  IPC=2.0E-5 4                                                          
  35CL  G 2204         0.27   LT [E2]                                        X  ?
  35CL2 G %IG LT 0.0034                                                          
+ 35CLS G  CC=0.000425 6$KC=1.018E-5 14$LC=8.09E-7 11$MC=7.40E-8 10              
+ 35CLS G  IPC=0.000414 6                                                        
  35CL  G 2748.5    6  0.477  34 [M1]                                            
  35CL2 G %IG=0.0060 5                                                           
+ 35CLS G  CC=0.000569 8$KC=6.63E-6 9$LC=5.26E-7 7$MC=4.81E-8 7                  
+ 35CLS G  IPC=0.000562 8                                                        
  35CL cG RI$weighted average of 0.48 {I6} (1980Wi13) and 0.476 {I34} (1984Ad01) 
- 35CL  G 3968         0.106  25 [M1,E2]                                         
+ 35CL  G 3968         0.106  25 [M1,E2]                0.00109 7                
  35CL2 G %IG=0.0013 4                                                           
+ 35CLS G  KC=3.93E-6 8$LC=3.12E-7 7$MC=2.85E-8 6                                
+ 35CLS G  IPC=0.00109 7                                                         
  35CL  L 4624.5    5  3/2,5/2          40 FS     17                            ?
  35CL  E             8.0E-4  LT 0.0035 LT 3.8    GT             0.0043    LT   ?
  35CLS E EAV=130.01 35$CK=0.7365 28$CL=0.06804 39$CM=0.01006 13                 
@@ -195,3 +227,4 @@
  35CL2cG (1980Wi13).                                                            
  35CL  G 4624         0.035  LT D+Q                                         X  ?
  35CL2 G %IG LT 4.4E-4                                                          
+      

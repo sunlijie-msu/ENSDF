@@ -178,14 +178,14 @@ def unweighted_average(data: List[Tuple[float, float, float]]) -> Dict[str, Any]
     }
 
 
-def critical_chi_sq(df: int, confidence: float = 0.95, reduced: bool = True) -> float:
+def critical_chi_sq(df: int, confidence: float = 0.9845, reduced: bool = True) -> float:
     """
     Calculate critical chi-squared value at given confidence level.
     Matches Java criticalChiSq method.
     
     Args:
         df: degrees of freedom (n-1)
-        confidence: confidence level (default 0.95)
+        confidence: confidence level (default 0.9845, matching Java tool)
         reduced: if True, return chi^2/df (default True)
     
     Returns:
@@ -241,9 +241,9 @@ def main():
     wt_result = weighted_average(data)
     uwt_result = unweighted_average(data)
     
-    # Critical chi-squared at 95% confidence
-    crit_reduced = critical_chi_sq(n - 1, 0.95, reduced=True)
-    crit_full = critical_chi_sq(n - 1, 0.95, reduced=False)
+    # Critical chi-squared at 98.45% confidence (matching Java tool)
+    crit_reduced = critical_chi_sq(n - 1, 0.9845, reduced=True)
+    crit_full = critical_chi_sq(n - 1, 0.9845, reduced=False)
     
     # Print results
     print("=" * 70)
@@ -254,9 +254,9 @@ def main():
     print("Input Data Points:")
     for i, (v, lower, upper) in enumerate(data):
         if lower == upper:
-            print(f"  {i+1}. {v:.1f} ± {lower:.1f}")
+            print(f"  {i+1}. {v} ± {lower}")
         else:
-            print(f"  {i+1}. {v:.1f} +{upper:.1f}/-{lower:.1f}")
+            print(f"  {i+1}. {v} +{upper}/-{lower}")
     print()
     
     print("WEIGHTED AVERAGE:")
@@ -274,7 +274,7 @@ def main():
     print(f"  Used: {uwt_result['unc_type']} -> {uwt_result['final_unc']:.4f}")
     print()
     
-    print("CHI-SQUARED TEST (95% confidence):")
+    print("CHI-SQUARED TEST (98.45% confidence):")
     print(f"  Chi^2 = {wt_result['chi_sq']:.4f}")
     print(f"  Chi^2/(N-1) = {wt_result['reduced_chi_sq']:.4f}")
     print(f"  Critical Chi^2 (df={n-1}) = {crit_full:.4f}")
@@ -282,16 +282,18 @@ def main():
     print()
     
     # Determine recommendation based on chi-squared test
+    # CRITICAL FIX: Always use weighted average as central value!
+    # Only uncertainty selection changes based on chi-squared test
+    suggested_value = wt_result['value']  # Always weighted!
+    
     if wt_result['reduced_chi_sq'] < crit_reduced:
-        recommendation = "WEIGHTED"
+        recommendation = "WEIGHTED (Internal)"
         reason = "data are CONSISTENT (chi^2/(N-1) < critical)"
-        suggested_value = wt_result['value']
-        suggested_unc = wt_result['final_unc']
+        suggested_unc = wt_result['internal_unc']
     else:
-        recommendation = "UNWEIGHTED"
+        recommendation = "WEIGHTED (External)"
         reason = "data are INCONSISTENT (chi^2/(N-1) >= critical)"
-        suggested_value = uwt_result['value']
-        suggested_unc = uwt_result['final_unc']
+        suggested_unc = wt_result['external_unc']
     
     print(f"RECOMMENDATION: Use {recommendation}")
     print(f"  Reason: {reason}")
@@ -310,26 +312,31 @@ def main():
         print(f"  No adjustment needed: {final_unc:.4f}")
     print()
     
+    # Determine decimal places from input data (use maximum precision)
+    max_decimals = 0
+    for v, lower, upper in data:
+        # Count decimal places in the value
+        v_str = f"{v:.10f}".rstrip('0').rstrip('.')
+        if '.' in v_str:
+            decimals_count = len(v_str.split('.')[1])
+            max_decimals = max(max_decimals, decimals_count)
+    
+    # Format result with same precision as input data
+    if max_decimals == 0:
+        value_str = f"{suggested_value:.0f}"
+        unc_int = int(round(final_unc))
+    elif max_decimals == 1:
+        value_str = f"{suggested_value:.1f}"
+        unc_int = int(round(final_unc * 10))
+    else:  # 2 or more decimals
+        value_str = f"{suggested_value:.2f}"
+        unc_int = int(round(final_unc * 100))
+    
     print("=" * 70)
-    print(f"*** Suggested Adopted Result: {suggested_value:.1f} ± {final_unc:.0f} ***")
+    print(f"*** Suggested Adopted Result: {value_str}({unc_int}) ***")
+    print(f"    Alternative notation: {value_str} ± {final_unc:.2f}")
     print("=" * 70)
     print()
-    
-    # Also print in ENSDF format for convenience
-    if abs(suggested_value) >= 100:
-        # Use scientific notation: value in X.YEn format, uncertainty in same units
-        exp = int(math.log10(abs(suggested_value)))
-        mantissa = suggested_value / (10 ** exp)
-        unc_mantissa = final_unc / (10 ** exp)
-        # ENSDF uncertainty is in units of the last digit of the mantissa
-        # So for 2.0E2 with unc 50, we have 50/100 = 0.5, but ENSDF writes as integer {I5}
-        unc_ensdf = int(round(final_unc / (10 ** (exp - 1))))
-        print(f"ENSDF Format: {mantissa:.1f}E{exp} FS  {unc_ensdf}")
-        print(f"Comment: |t={mantissa:.1f}E{exp} fs {{I{unc_ensdf}}}")
-    else:
-        unc_ensdf = int(round(final_unc))
-        print(f"ENSDF Format: {suggested_value:.0f} FS  {unc_ensdf}")
-        print(f"Comment: |t={suggested_value:.0f} fs {{I{unc_ensdf}}}")
 
 
 if __name__ == "__main__":

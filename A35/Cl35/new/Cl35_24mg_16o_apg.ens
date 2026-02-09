@@ -2,7 +2,7 @@
  35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$          
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35CL dL E$Least-squares fitting is done by GLSC (version 19-Aug-2025)          
+ 35CL dL E$Least-squares fitting is done by GLSC (version 04-Feb-2026)          
  35CL c  Also includes data from {+25}Mg({+16}O,|apn|g) in 1976Ke02 and         
  35CL2c  {+27}Al({+16}O,2|a|g) in 1991Ja11                                      
  35CL c  2007De14: E=70 MeV {+16}O beam was produced from the XTU-Tandem        
@@ -83,15 +83,15 @@
  35CL cG RI$other: 18.5 {I3} (1976Va24, E=38 MeV).                              
  35CL cG $A{-2}=-0.368 {I18}, A{-4}=+0.13 {I2}, POL=+0.06 {I20} (1976Va24).     
  35CL cG $R{-ADO}=0.77 {I3}, giving |DJ=1.                                      
- 35CL  L 2645.8    3  7/2+                                                      
+ 35CL  L 2645.9    3  7/2+                                                      
  35CL  G 882.7     5  4.0    1  D                                               
  35CL cG E$weighted average of 882.9 {I5} (2007De14) and 882 {I1} (1976Va24)    
  35CL cG $R{-ADO}=0.75 {I3}                                                     
  35CL  G 2645.8    5  36.1   8  Q                                               
  35CL cG E$weighted average of 2645.7 {I5} (2007De14) and 2646 {I1} (1976Va24)  
  35CL cG $R{-ADO}=1.35 {I4}                                                     
- 35CL  L 3002.0    10 5/2+                                                      
- 35CL  L 3163.0    3  7/2-             31.0 PS   6                          A   
+ 35CL  L 3001.9    10 5/2+                                                      
+ 35CL  L 3162.9    3  7/2-             31.0 PS   6                          A   
  35CL dL $|t=42 ps {I2} (1974Va13), 41.7 ps {I17} (1976Ke02).                   
  35CL cL T$weighted average of 29.1 ps {I14} (1974Va13), 28.9 ps {I12}          
  35CL2cL (1976Ke02), and 31.4 ps {I4} (1991Ja11), all by RDM                    
@@ -107,7 +107,7 @@
  35CL cG $A{-2}=+0.416 {I6}, A{-4}=-0.001 {I6}, POL=-0.57 {I12} (1976Va24).     
  35CL  L 3943.4    10 9/2+                                                      
  35CL  G 2180      1                                                        C   
- 35CL  L 4347.4    3  9/2-                                                      
+ 35CL  L 4347.8    3  9/2-                                                      
  35CL  G 1184.9    3  44.4   16 M1+E2    -0.65   30                             
  35CL cG E$weighted average of 1184.9 {I5} (2007De14) and 1184.9 {I3}           
  35CL2cG (1976Va24).                                                            
@@ -118,7 +118,7 @@
  35CL cG E$weighted average of 1701.6 {I5} (2007De14) and 1702 {I1} (1976Va24)  
  35CL cG $R{-ADO}=0.76 {I6}, giving |DJ=1                                       
  35CL  G 4347.8    8  5.5    5                                                  
- 35CL  L 5406.7    3  11/2-                                                 A   
+ 35CL  L 5407.3    3  11/2-                                                 A   
  35CL  G 1059.5    2  17.1   4  M1+E2    +0.12   3                              
  35CL cG E$weighted average of 1059.6 {I5} (2007De14) and 1059.5 {I2}           
  35CL2cG (1976Va24).                                                            
@@ -131,20 +131,20 @@
  35CL cG RI$other: 30.3 {I20} (1976Va24, E=38 MeV).                             
  35CL cG $R{-ADO}=1.26 {I3}, giving |DJ=2                                       
  35CL cG $A{-2}=+0.303 {I20}, A{-4}=-0.119 {I22}, POL=+0.26 {I28} (1976Va24).   
- 35CL  L 5926.5    5  11/2-                                                     
+ 35CL  L 5926.9    5  11/2-                                                     
  35CL  G 1578.9    5  31.8   13 D                                               
  35CL cG E$other: 1579 {I1} (1976Va24)                                          
  35CL cG $R{-ADO}=0.48 {I1}                                                     
- 35CL  L 6086.7    4  13/2-                                                     
+ 35CL  L 6087.2    4  13/2-                                                     
  35CL  G 680.5     5  33.0   7  D                                               
  35CL cG $R{-ADO}=0.84 {I2}                                                     
  35CL  G 1739.6    5  2.6    3  Q                                               
  35CL cG E$weighted average of 1739.5 {I5} (2007De14) and 1740 {I1} (1976Va24). 
  35CL cG $R{-ADO}=1.38 {I10}                                                    
- 35CL  L 6380.2    8                                                            
+ 35CL  L 6380.8    8                                                            
  35CL  G 296       1                                                        C   
  35CL  G 971       1                                                        C   
- 35CL  L 7872.8    4  13/2+                                                 B   
+ 35CL  L 7873.4    4  13/2+                                                 B   
  35CL  G 1786.2    5  4.5    2                                                  
  35CL cG $R{-ADO}=1.37 {I7}, consistent with |DJ=0 from level scheme            
  35CL  G 1946.2    5  22.4   12 D                                               
@@ -152,41 +152,42 @@
  35CL  G 2466.2    5  46.2   9  D                                               
  35CL cG E$other: 2466 {I1} (1976Va24, unplaced)                                
  35CL cG $R{-ADO}=0.77 {I2}                                                     
- 35CL  L 8319.2    5  15/2-                                                 A   
+ 35CL  L 8319.7    5  15/2-                                                 A   
  35CL  G 2232.7    6  10.3   5                                                  
  35CL  G 2911.9    8  18.0   8  Q                                               
  35CL cG $R{-ADO}=1.35 {I5}                                                     
- 35CL  L 8486.8    5  15/2-                                                     
+ 35CL  L 8487.4    5  15/2-                                                     
  35CL  G 2399.8    8  14.8   5                                                  
  35CL  G 3080.0    7  4.7    3  Q                                               
  35CL cG $R{-ADO}=1.20 {I12}                                                    
- 35CL  L 8788.3    6  15/2+                                                 B   
+ 35CL  L 8788.9    6  15/2+                                                 B   
  35CL  G 915.4     4  7.2    5  D                                               
  35CL cG $R{-ADO}=0.69 {I3}                                                     
- 35CL  L 8844.1    5  17/2+            6.1 PS    11                         B   
+ 35CL  L 8844.6    5  17/2+            6.1 PS    11                         B   
  35CL cL T$from RDM in 1991Ja11                                                 
  35CL  G 971.4     5  75.3   19 Q                                               
  35CL cG $R{-ADO}=1.38 {I3}                                                     
- 35CL  L 10180.5   5  19/2-                                                 A   
+ 35CL  L 10181.1   5  19/2-                                                 A   
  35CL  G 1336.3    5  23.5   8  D                                               
  35CL cG $R{-ADO}=0.75 {I2}                                                     
  35CL  G 1693.5    5  19.8   21 Q                                               
  35CL cG $R{-ADO}=1.44 {I7}                                                     
  35CL  G 1861.3    5  19.6   13 Q                                               
  35CL cG $R{-ADO}=1.39 {I7}                                                     
- 35CL  L 10221.9   11 17/2-                                                     
+ 35CL  L 10222.5   11 17/2-                                                     
  35CL  G 1377.8    10 5.4    4                                                  
  35CL cG $R{-ADO}=1.32 {I12} also consistent with |DJ=0                         
- 35CL  L 10858.5   8  19/2+                                                 B   
+ 35CL  L 10859.1   8  19/2+                                                 B   
  35CL  G 2014.7    9  23.1   12 D                                               
  35CL cG $R{-ADO}=0.50 {I3}.                                                    
  35CL  G 2069.8    10 7.5    5  Q                                               
  35CL cG $R{-ADO}=1.57 {I11}.                                                   
- 35CL  L 11458.5   7  21/2+                                                 B   
+ 35CL  L 11459.0   7  21/2+                                                 B   
  35CL  G 2614.5    5  19.0   8  Q                                               
  35CL cG $R{-ADO}=1.33 {I4}.                                                    
- 35CL  L 12571.6   6  23/2-                                                 A   
+ 35CL  L 12572.2   6  23/2-                                                 A   
  35CL  G 1113.3    5  4.1    3  D                                               
  35CL cG $R{-ADO}=0.86 {I9}.                                                    
  35CL  G 2390.8    5  16.8   7  Q                                               
  35CL cG $R{-ADO}=1.34 {I12}.                                                   
+                                                                                
