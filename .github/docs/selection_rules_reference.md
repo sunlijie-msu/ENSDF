@@ -29,10 +29,20 @@ Relation between transition type, multipolarity order, and selection rules.
 | E4 | 4 | H | 0 – 4 | No |
 | M4 | 4 | H | 0 – 4 | Yes |
 
-*Note: For $\Delta J = 0$, $0 \to 0$ transitions are forbidden for single photon emission.*
-For primary $\gamma$ transitions, the allowed multipolarities are E1, M1, and E2, and the corresponding selection rules are:
+### Common Multipole Mixtures ($L + L+1$)
+
+*   **M1+E2:** $\Delta J = 0, 1$; $\Delta \pi = \text{No}$
+*   **E1+M2:** $\Delta J = 0, 1$; $\Delta \pi = \text{Yes}$
+*   **D+Q:** $\Delta J = 0, 1$
+*   **M2+E3:** $\Delta J = 0, 1, 2$; $\Delta \pi = \text{Yes}$
+*   **E2+M3:** $\Delta J = 0, 1, 2$; $\Delta \pi = \text{No}$
+
+### Capture Transitions
+In neutron/proton capture, primary $\gamma$ transitions from resonances are typically limited to $E1, M1$, and $E2$ multipolarities:
 *   **D:** $\Delta J = 0, 1$, $\Delta \pi = \text{Yes or No}$
 *   **E2:** $\Delta J = 0, 1, 2$, $\Delta \pi = \text{No}$
+
+*Note: For $\Delta J = 0$, $0 \to 0$ transitions are forbidden for single photon emission.*
 
 ---
 
