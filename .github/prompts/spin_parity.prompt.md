@@ -75,10 +75,12 @@ L-Transfer values and corresponding J-π assignments:
 
 #### Range Assignments
 
-- `(1/2+:7/2+)` = range of tentative spin-parity assignments from 1/2+ to 7/2+
-- `(1/2:9/2)-` = range of tentative spins from 1/2 to 9/2 with firm negative parity
-- `1/2+:5/2+` = range of firm spin-parity assignments from 1/2+ to 5/2+
-- `(3/2:11/2)` = range of tentative spins from 3/2 to 11/2, parity undetermined
+- `(1/2+:7/2+)` = range of tentative spin-parity assignments 1/2+, 3/2±, 5/2±, 7/2+; other spins possible; other parities possible.
+- `(1/2:7/2)+` = range of tentative spins 1/2+, 3/2+, 5/2+, 7/2+ with firm positive parity; other spins possible; other parities impossible.
+- `(1/2:7/2)(+)` = range of tentative spins 1/2+, 3/2+, 5/2+, 7/2+ with tentative positive parity; other spins possible; other parities possible.
+- `1/2:7/2(-)` = range of firm spins 1/2-, 3/2-, 5/2-, 7/2- with tentative negative parity; other spins impossible; other parities possible.
+- `1/2+:5/2+` = range of firm spin-parity assignments 1/2+, 3/2±, 5/2+; other spins impossible; other parities impossible.
+- `(1/2:7/2)` = range of tentative spins 1/2, 3/2, 5/2, 7/2 with unknown parity; other spins possible; any parities possible.
 
 #### Mixed Confidence Patterns
 
