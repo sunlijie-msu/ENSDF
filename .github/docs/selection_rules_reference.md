@@ -97,7 +97,7 @@ Common mixing patterns constrained by the dominance rule:
 
 1. D+Q transition from/to $5/2^+$:
    * $\Delta J = 0, 1$
-   * Result: $3/2, 5/2, 7/2$
+   * Result: $3/2±, 5/2±, 7/2±$
   
 2. M1+E2 transition from/to $5/2^+$:
    * $\Delta J = 0, 1$; $\Delta \pi = \text{No}$
@@ -119,6 +119,62 @@ Primary $\gamma$ transitions from neutron/proton capture resonances are physical
 ### Examples: Deducing $J^\pi$ Final from Multipolarity and $J^\pi$ Initial
 
 Primary transition from $5/2^+$ initial via D or E2:
-* D (E1, M1): Final $3/2, 5/2, 7/2$
+* D (E1, M1): Final $3/2±, 5/2±, 7/2±$
 * E2: Final $1/2^+, 9/2^+$
-* Combination: $1/2^+, 3/2, 5/2, 7/2, 9/2^+$
+* Combination: $1/2^+, 3/2±, 5/2±, 7/2±, 9/2^+$
+
+Primary transition from $7/2^-$ initial via D or E2:
+* D (E1, M1): Final $5/2±, 7/2±, 9/2±$
+* E2: Final $3/2^-, 11/2^-$
+* Combination: $3/2^-, 5/2±, 7/2±, 9/2±, 11/2^-$
+
+If two primary transitions from $5/2^+$ and $7/2^-$, the AND of the above two sets:
+* Final $3/2^-, 5/2±, 7/2±, 9/2^+$ (common to both sets)
+
+---
+
+## 7. Practical Workflow: Intersection Logic
+
+### Deducing $J^\pi$ from Multiple Constraints
+
+1. List allowed $J^\pi$ from each constraint (primary feeding, secondary decays)
+2. Apply AND (intersection) across all constraints
+3. Result: Common $J^\pi$ values only
+
+*Note: Parentheses in ENSDF denote tentative assignments, e.g., (5/2+,7/2,9/2+)*
+
+### Example 1: Fed by primary γ from 5/2-. Decay γ to 1/2+ and 5/2+
+
+Fed by primary γ (D or E2):
+1/2-, 3/2±, 5/2±, 7/2±, 9/2-
+
+Decay γ to 1/2+ (D or E2):
+1/2±, 3/2±, 5/2+
+
+Decay γ to 5/2+ (D or E2):
+1/2+, 3/2±, 5/2±, 7/2±, 9/2+
+
+**AND:** 3/2±, 5/2+
+
+### Example 2: Fed by primary γ from 7/2-, 7/2+, and 5/2+
+
+Fed by primary γ from 7/2- (D or E2):
+3/2-, 5/2±, 7/2±, 9/2±, 11/2-
+
+Fed by primary γ from 7/2+ (D or E2):
+3/2+, 5/2±, 7/2±, 9/2±, 11/2+
+
+Fed by primary γ from 5/2+ (D or E2):
+1/2+, 3/2±, 5/2±, 7/2±, 9/2+
+
+**AND:** 5/2±, 7/2±, 9/2+
+
+### Example 3: Fed by primary γ from 7/2+. Decay γ to 5/2+ (Lifetime unknown, RUL does not apply, M2 allowed)
+
+Fed by primary γ (D or E2):
+3/2+, 5/2±, 7/2±, 9/2±, 11/2+
+
+Decay γ to 5/2+ (D or Q):
+1/2±, 3/2±, 5/2±, 7/2±, 9/2±
+
+**AND:** 3/2+, 5/2±, 7/2±, 9/2±
