@@ -1,7 +1,7 @@
 ---
 applyTo: "**"
 ---
-# Evaluated Nuclear Structure Data File (ENSDF) Spin-Parity Instructions for GitHub Copilot
+# Evaluated Nuclear Structure Data File (ENSDF) Spin-Parity Interpretation Reference
 
 ## L-Transfer Field Positioning
 
@@ -37,24 +37,11 @@ L-Transfer values and corresponding J-π assignments:
 - **WITHOUT parentheses**: Firm, well-established assignments (e.g., `3/2+`, `7/2-`)
 - **WITH parentheses**: Less certain, tentative assignments (e.g., `(3/2+)`, `(7/2-)`)
 - **Parentheses indicate uncertainty in the assignment confidence, not the measurement precision**
-- **NEVER change parentheses notation without experimental justification**
+- **With/without parentheses and the placement of parentheses are critical for conveying the confidence level of the assignment** 
 
-### Quick Reference: Firm vs. Tentative
 
-| Notation | Meaning | Example |
-|----------|---------|---------|
-| `2` | Spin J=2 (firm, definite) | Single firm value |
-| `(2)` | Spin J=2 (tentative) | Single uncertain value |
-| `2,3` | J=2 OR J=3 (firm, but ambiguous which) | Multiple firm possibilities |
-| `(2,3)` | J=2 OR J=3 (both tentative) | All options uncertain |
 
-**Key distinction**: Parentheses around a value indicate **confidence level uncertainty** (whether the assignment is tentative). Commas without parentheses mean multiple firm options exist; commas within parentheses mean multiple tentative options exist.
-
-### Complete J-π Notation Patterns
-
-#### Basic Single Assignments
-
-- `1/2-` = firm spin-parity, no other possibilities
+- `1/2-` = firm spin, firm parity, no other possibilities
 - `(9/2+)` = tentative spin-parity, other spin-parity possibilities exist
 - `7/2(+)` = firm spin with tentative parity, other spin impossible; other parity possible
 - `(5/2)-` = tentative spin with firm negative parity, other spin possible; positive parity impossible

@@ -4,6 +4,7 @@
 
 The conservation of angular momentum governs the allowed transitions between an initial nuclear state ($J_i$) and a final state ($J_f$) via radiation of multipolarity $L$:
 
+$$ |J_i - J_f| \leq L \leq J_i + J_f $$
 $$|J_i - L| \leq J_f \leq J_i + L$$
 
 *   **Multipolarity ($L$):** Dipole transitions correspond to $L=1$, while quadrupole transitions correspond to $L=2$.
@@ -62,8 +63,6 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 
 ## 5. Application Examples
 
-**Scenario 1: Quadrupole Transition ($L=2$)**
-
 Initial state spin: $J_i = 9/2$
 
 | Classification | Spin Change ($\Delta J$) | Final Spin ($J_f$) |
@@ -71,12 +70,5 @@ Initial state spin: $J_i = 9/2$
 | **Stretched Quadrupole** | $2$ | $5/2$ or $13/2$ |
 | **Unstretched Quadrupole** | $1$ | $7/2$ or $11/2$ |
 | **Unstretched Quadrupole** | $0$ | $9/2$ |
-
-**Scenario 2: Dipole Transition ($L=1$)**
-
-Initial state spin: $J_i = 9/2$. Selection rule: $|J_i - J_f| \le 1$.
-
-| Classification | Spin Change ($\Delta J$) | Final Spin ($J_f$) |
-| :--- | :---: | :--- |
 | **Stretched Dipole** | $1$ | $7/2$ or $11/2$ |
 | **Unstretched Dipole** | $0$ | $9/2$ |

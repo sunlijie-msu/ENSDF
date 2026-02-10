@@ -1,24 +1,64 @@
 # Gamma Transition Selection Rules
 
-This document provides a concise reference for nuclear electromagnetic transitions.
-
-## Definitions and Notation
-
-*   **$J, \pi$**: Nuclear spin and parity
-*   **$L$**: Multipolarity order of the transition
-*   **$\Delta J$**: Spin change $|J_i - J_f|$
-*   **$\Delta \pi$**: Parity change (Yes/No)
-*   **Labels**: D (Dipole, $L=1$), Q (Quadrupole, $L=2$), O (Octupole, $L=3$), H (Hexadecapole, $L=4$)
-*   **Notation**:
-    *   **Comma (,):** Indicates alternative possibilities (OR).
-    *   **Plus (+):** Indicates multipole mixing (AND).
+Concise reference for nuclear electromagnetic transitions.
 
 ---
 
-## 1. Multipolarity Properties
-Relation between transition type, multipolarity order, and selection rules.
+## 1. Definitions
 
-| Type | Order ($L$) | Multipolarity  | Allowed $\Delta J$ | Parity Change ($\Delta \pi$) |
+*   $J, \pi$: Nuclear spin and parity
+*   $L$: Multipolarity order (photon angular momentum)
+*   $\Delta J$: Spin change, $|J_i - J_f|$
+*   $\Delta \pi$: Parity change (Yes/No)
+*   Multipolarity Designations:
+    *   D (Dipole, $L=1$): E1, M1
+    *   Q (Quadrupole, $L=2$): E2, M2
+    *   O (Octupole, $L=3$): E3, M3
+    *   H (Hexadecapole, $L=4$): E4, M4
+*   Notation:
+    *   Comma (,) = OR (alternative multipolarities)
+    *   Plus (+) = AND (mixed multipolarity)
+
+---
+
+## 2. Fundamental Principles
+
+### Angular Momentum Conservation
+
+Triangle inequality for multipolarity $L$:
+
+$$ |J_i - J_f| \leq L \leq J_i + J_f $$
+
+*Example: For $J_i = J_f = 1/2$, quadrupole ($L \geq 2$) transitions are forbidden.*
+
+### Parity Selection
+
+*   Electric (E$L$): $\Delta \pi = (-1)^L$ (changes for odd $L$)
+*   Magnetic (M$L$): $\Delta \pi = (-1)^{L+1}$ (changes for even $L$)
+
+*Note: $0 \to 0$ single photon emission is strictly forbidden.*
+
+---
+
+## 3. Quick Reference: $\Delta J$ and $\Delta \pi$ to Multipolarity
+
+Allowed multipolarities based on spin-parity change:
+
+| $\Delta J$ | No Parity Change | Parity Change |
+| :---: | :--- | :--- |
+| 0 | M1(+E2) | E1(+M2) |
+| 1 | M1(+E2) | E1(+M2) |
+| 2 | E2(+M3) | M2(+E3) |
+| 3 | M3(+E4) | E3(+M4) |
+| 4 | E4(+M5) | M4(+E5) |
+
+---
+
+## 4. Quick Reference: Multipolarity to $\Delta J$ and $\Delta \pi$
+
+Selection rules for each transition type:
+
+| Type | $L$ | Designation | $\Delta J$ Allowed | $\Delta \pi$ |
 | :---: | :---: | :---: | :---: | :---: |
 | E1 | 1 | D | 0, 1 | Yes |
 | M1 | 1 | D | 0, 1 | No |
@@ -26,45 +66,47 @@ Relation between transition type, multipolarity order, and selection rules.
 | M2 | 2 | Q | 0, 1, 2 | Yes |
 | E3 | 3 | O | 0, 1, 2, 3 | Yes |
 | M3 | 3 | O | 0, 1, 2, 3 | No |
-| E4 | 4 | H | 0 – 4 | No |
-| M4 | 4 | H | 0 – 4 | Yes |
-
-### Multipolarities for $J,\pi$ Assignments
-
-*   **M1+E2:** $\Delta J = 0, 1$; $\Delta \pi = \text{No}$
-*   **E1+M2:** $\Delta J = 0, 1$; $\Delta \pi = \text{Yes}$
-*   **D+Q:** $\Delta J = 0, 1$
-*   **M2+E3:** $\Delta J = 0, 1, 2$; $\Delta \pi = \text{Yes}$
-*   **E2+M3:** $\Delta J = 0, 1, 2$; $\Delta \pi = \text{No}$
-
-In neutron/proton capture, primary $\gamma$ transitions from resonances are typically limited to $E1, M1$, and $E2$ multipolarities:
-*   **D:** $\Delta J = 0, 1$, $\Delta \pi = \text{Yes or No}$
-*   **E2:** $\Delta J = 0, 1, 2$, $\Delta \pi = \text{No}$
-
-*Note: For $\Delta J = 0$, $0 \to 0$ transitions are forbidden for single photon emission.*
+| E4 | 4 | H | 0, 1, 2, 3, 4 | No |
+| M4 | 4 | H | 0, 1, 2, 3, 4 | Yes |
 
 ---
 
-## 2. Selection Rules
-Lowest allowed multipolarities based on initial and final state properties.
-*Note: Higher allowed orders (e.g., $L+1$) often mix with the lowest allowed order ($L$).*
+## 5. Mixed Multipolarities
 
-| $\Delta J$ | No Parity Change ($\Delta \pi = \text{No}$) | Parity Change ($\Delta \pi = \text{Yes}$) |
-| :---: | :--- | :--- |
-| **0** | M1 (+E2) | E1 (+M2) |
-| **1** | M1 (+E2) | E1 (+M2) |
-| **2** | E2 (+M3) | M2 (+E3) |
-| **3** | M3 (+E4) | E3 (+M4) |
-| **4** | E4 (+M5) | M4 (+E5) |
+Common mixing patterns for $J^\pi$ assignments:
+
+*   M1+E2: $\Delta J = 0, 1$; $\Delta \pi = \text{No}$
+*   E1+M2: $\Delta J = 0, 1$; $\Delta \pi = \text{Yes}$
+*   D+Q: $\Delta J = 0, 1$
+*   E2+M3: $\Delta J = 0, 1, 2$; $\Delta \pi = \text{No}$
+*   M2+E3: $\Delta J = 0, 1, 2$; $\Delta \pi = \text{Yes}$
+
+### Examples: Deducing $J^\pi$ Initial from Multipolarity and $J^\pi$ Final
+
+1. M1+E2 transition from/to $3/2^+$:
+   - $\Delta J = 0, 1$; $\Delta \pi = \text{No}$
+   - Final/Initial: $1/2^+, 3/2^+$, $5/2^+$
+
+2. E1+M2 transition from/to $1/2^-$:
+   - $\Delta J = 0, 1$; $\Delta \pi = \text{Yes}$
+   - Final/Initial: $1/2^+$, $3/2^+$
+
+3. E2+M3 transition from/to $7/2^+$:
+   - $\Delta J = 0, 1, 2$; $\Delta \pi = \text{No}$
+   - Final/Initial: $3/2^+, 5/2^+, 7/2^+, 9/2^+$, $11/2^+$
 
 ---
 
-## 3. Physics Principles
+## 6. Capture Transitions
 
-### Angular Momentum Conservation
-The photon carries angular momentum $L$. The triangle inequality must be satisfied:
-$$ |J_i - J_f| \leq L \leq J_i + J_f $$
+Primary $\gamma$ transitions from neutron/proton capture resonances are typically E1, M1, and E2:
 
-### Parity Selection Rules
-*   **Electric ($EL$):** $\Delta \pi = (-1)^L$ (Parity changes for odd $L$)
-*   **Magnetic ($ML$):** $\Delta \pi = (-1)^{L+1}$ (Parity changes for even $L$)
+*   D (E1, M1): $\Delta J = 0, 1$; $\Delta \pi = \text{Yes or No}$
+*   E2: $\Delta J = 0, 1, 2$; $\Delta \pi = \text{No}$
+
+### Examples: Deducing $J^\pi$ Final from Multipolarity and $J^\pi$ Initial
+
+Primary transition from $3/2^+$ initial:
+D, E2:
+- D (E1, M1): Final $1/2^-, 3/2^-, 5/2^-$, $1/2^+, 3/2^+$, $5/2^+$
+- E2: Final $3/2^+, 5/2^+, 7/2^+$
