@@ -25,18 +25,29 @@ Concise reference for nuclear electromagnetic transitions.
 
 ### Angular Momentum Conservation
 
-Triangle inequality for multipolarity $L$:
+The triangle inequality restricts the possible multipolarity $L$:
 
 $$ |J_i - J_f| \leq L \leq J_i + J_f $$
 
-*Example: For $J_i = J_f = 1/2$, quadrupole ($L \geq 2$) transitions are forbidden.*
+*Example: For $J_i = J_f = 1/2$, quadrupole ($L \geq 2$) transitions are strictly forbidden geometrically.*
 
 ### Parity Selection
 
-*   Electric (E$L$): $\Delta \pi = (-1)^L$ (changes for odd $L$)
-*   Magnetic (M$L$): $\Delta \pi = (-1)^{L+1}$ (changes for even $L$)
+*   Electric (E$L$): $\Delta \pi = (-1)^L$ (Parity changes for odd $L$)
+*   Magnetic (M$L$): $\Delta \pi = (-1)^{L+1}$ (Parity changes for even $L$)
 
 *Note: $0 \to 0$ single photon emission is strictly forbidden.*
+
+### Dominance of Lowest Multipolarity (Practical Rules)
+
+While geometry permits a range of $L$, nuclear transition probabilities dictate which are actually observed.
+
+1. *Weisskopf Estimates*: Probability decreases by factor of $\approx 10^5$ for each unit increase in $L$.
+2. *Dominance Rule*: Transitions proceed via the lowest permitted multipolarity ($L_{min}$).
+3. *Mixing*:
+    * $L_{min} + 1$ mixing is common (e.g., M1+E2).
+    * $L_{min} + 2$ or higher is generally negligible ($< 10^{-5}$ branching).
+    * *Practical implication*: Multipolarity assignments like M2+E3 are only practical when Dipole ($L=1$) is forbidden by selection rules (i.e., $\Delta J \geq 2$).
 
 ---
 
@@ -73,40 +84,41 @@ Selection rules for each transition type:
 
 ## 5. Mixed Multipolarities
 
-Common mixing patterns for $J^\pi$ assignments:
+Common mixing patterns constrained by the dominance rule:
 
-*   M1+E2: $\Delta J = 0, 1$; $\Delta \pi = \text{No}$
-*   E1+M2: $\Delta J = 0, 1$; $\Delta \pi = \text{Yes}$
-*   D+Q: $\Delta J = 0, 1$
-*   E2+M3: $\Delta J = 0, 1, 2$; $\Delta \pi = \text{No}$
-*   M2+E3: $\Delta J = 0, 1, 2$; $\Delta \pi = \text{Yes}$
+* D+Q (E1+M2 or M1+E2): $\Delta J = 0, 1$
+* Q+O (E2+M3 or M2+E3): $\Delta J = 2$
+* M1+E2: $\Delta J = 0, 1$; $\Delta \pi = \text{No}$
+* E1+M2: $\Delta J = 0, 1$; $\Delta \pi = \text{Yes}$
+* E2+M3: $\Delta J = 2$; $\Delta \pi = \text{No}$
+* M2+E3: $\Delta J = 2$; $\Delta \pi = \text{Yes}$
 
 ### Examples: Deducing $J^\pi$ Initial from Multipolarity and $J^\pi$ Final
 
-1. M1+E2 transition from/to $3/2^+$:
-   - $\Delta J = 0, 1$; $\Delta \pi = \text{No}$
-   - Final/Initial: $1/2^+, 3/2^+$, $5/2^+$
+1. D+Q transition from/to $5/2^+$:
+   * $\Delta J = 0, 1$
+   * Result: $3/2, 5/2, 7/2$
+  
+2. M1+E2 transition from/to $5/2^+$:
+   * $\Delta J = 0, 1$; $\Delta \pi = \text{No}$
+   * Result: $3/2^+, 5/2^+, 7/2^+$
 
-2. E1+M2 transition from/to $1/2^-$:
-   - $\Delta J = 0, 1$; $\Delta \pi = \text{Yes}$
-   - Final/Initial: $1/2^+$, $3/2^+$
-
-3. E2+M3 transition from/to $7/2^+$:
-   - $\Delta J = 0, 1, 2$; $\Delta \pi = \text{No}$
-   - Final/Initial: $3/2^+, 5/2^+, 7/2^+, 9/2^+$, $11/2^+$
+3. M2+E3 transition from/to $5/2^+$:
+   * $\Delta J = 2$; $\Delta \pi = \text{Yes}$
+   * Result: $1/2^-, 9/2^-$
 
 ---
 
 ## 6. Capture Transitions
 
-Primary $\gamma$ transitions from neutron/proton capture resonances are typically E1, M1, and E2:
+Primary $\gamma$ transitions from neutron/proton capture resonances are physically dominated by the lowest multipoles (E1, M1, E2). Higher orders are kinetically and statistically suppressed.
 
-*   D (E1, M1): $\Delta J = 0, 1$; $\Delta \pi = \text{Yes or No}$
-*   E2: $\Delta J = 0, 1, 2$; $\Delta \pi = \text{No}$
+* D (E1, M1): $\Delta J = 0, 1$; $\Delta \pi = \text{Yes or No}$
+* E2: $\Delta J = 2$; $\Delta \pi = \text{No}$
 
 ### Examples: Deducing $J^\pi$ Final from Multipolarity and $J^\pi$ Initial
 
-Primary transition from $3/2^+$ initial:
-D, E2:
-- D (E1, M1): Final $1/2^-, 3/2^-, 5/2^-$, $1/2^+, 3/2^+$, $5/2^+$
-- E2: Final $3/2^+, 5/2^+, 7/2^+$
+Primary transition from $5/2^+$ initial via D or E2:
+* D (E1, M1): Final $3/2, 5/2, 7/2$
+* E2: Final $1/2^+, 9/2^+$
+* Combination: $1/2^+, 3/2, 5/2, 7/2, 9/2^+$
