@@ -149,20 +149,7 @@ If two primary transitions from $5/2^+$ and $7/2^-$, the AND of the above two se
 
 *Note: Parentheses in ENSDF denote tentative assignments, e.g., (5/2+,7/2,9/2+)*
 
-### Example 1: Fed by primary γ from 5/2-. Decay γ to 1/2+ and 5/2+
-
-Fed by primary γ (D or E2):
-1/2-, 3/2±, 5/2±, 7/2±, 9/2-
-
-Decay γ to 1/2+ (D or E2):
-1/2±, 3/2±, 5/2+
-
-Decay γ to 5/2+ (D or E2):
-1/2+, 3/2±, 5/2±, 7/2±, 9/2+
-
-**AND:** 3/2±, 5/2+
-
-### Example 2: Fed by primary γ from 7/2-, 7/2+, and 5/2+
+### Example 1: Fed by primary γ from 7/2-, 7/2+, and 5/2+
 
 Fed by primary γ from 7/2- (D or E2):
 3/2-, 5/2±, 7/2±, 9/2±, 11/2-
@@ -174,6 +161,19 @@ Fed by primary γ from 5/2+ (D or E2):
 1/2+, 3/2±, 5/2±, 7/2±, 9/2+
 
 **AND:** 5/2±, 7/2±, 9/2+
+
+### Example 2: Fed by primary γ from 5/2-. Decay γ to 1/2+ and 5/2+ (Lifetime short, RUL applies, M2 ruled out)
+
+Fed by primary γ (D or E2):
+1/2-, 3/2±, 5/2±, 7/2±, 9/2-
+
+Decay γ to 1/2+ (D or E2):
+1/2±, 3/2±, 5/2+
+
+Decay γ to 5/2+ (D or E2):
+1/2+, 3/2±, 5/2±, 7/2±, 9/2+
+
+**AND:** 3/2±, 5/2+
 
 ### Example 3: Fed by primary γ from 7/2+. Decay γ to 5/2+ (Lifetime unknown, RUL does not apply, M2 allowed)
 

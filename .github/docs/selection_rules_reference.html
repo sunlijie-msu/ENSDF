@@ -436,20 +436,24 @@ aside > *:last-child {
 <h2 id="7-practical-workflow-intersection-logic">7. Practical Workflow: Intersection Logic</h2>
 <h3 id="deducing-jpi-from-multiple-constraints">Deducing <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>J</mi><mi>π</mi></msup></mrow><annotation encoding="application/x-tex">J^\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">π</span></span></span></span></span></span></span></span></span></span></span></eq> from Multiple Constraints</h3>
 <ol>
-<li>List allowed <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>J</mi><mi>π</mi></msup></mrow><annotation encoding="application/x-tex">J^\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">π</span></span></span></span></span></span></span></span></span></span></span></eq> from each constraint (primary feeding, secondary decays)</li>
+<li>List allowed <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>J</mi><mi>π</mi></msup></mrow><annotation encoding="application/x-tex">J^\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">π</span></span></span></span></span></span></span></span></span></span></span></eq> from each constraint (primary feeding γ, decay γ)</li>
+<li>For primary feeding γ, D or E2 are considered:
+<ul>
+<li>Apply multipolarity selection rules to get possible <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>J</mi><mi>π</mi></msup></mrow><annotation encoding="application/x-tex">J^\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">π</span></span></span></span></span></span></span></span></span></span></span></eq></li>
+</ul>
+</li>
+<li>For decay γ, D or Q are considered:
+<ul>
+<li>Apply multipolarity selection rules to get possible <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>J</mi><mi>π</mi></msup></mrow><annotation encoding="application/x-tex">J^\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">π</span></span></span></span></span></span></span></span></span></span></span></eq></li>
+<li>If lifetime is short and RUL applies, exclude M2, i.e., consider D or E2, the same as primary γ</li>
+<li>If decay γ is also primary γ, apply D or E2 selection rules for that as well</li>
+</ul>
+</li>
 <li>Apply AND (intersection) across all constraints</li>
 <li>Result: Common <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>J</mi><mi>π</mi></msup></mrow><annotation encoding="application/x-tex">J^\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">π</span></span></span></span></span></span></span></span></span></span></span></eq> values only</li>
 </ol>
 <p><em>Note: Parentheses in ENSDF denote tentative assignments, e.g., (5/2+,7/2,9/2+)</em></p>
-<h3 id="example-1-fed-by-primary-γ-from-52--decay-γ-to-12-and-52">Example 1: Fed by primary γ from 5/2-. Decay γ to 1/2+ and 5/2+</h3>
-<p>Fed by primary γ (D or E2):
-1/2-, 3/2±, 5/2±, 7/2±, 9/2-</p>
-<p>Decay γ to 1/2+ (D or E2):
-1/2±, 3/2±, 5/2+</p>
-<p>Decay γ to 5/2+ (D or E2):
-1/2+, 3/2±, 5/2±, 7/2±, 9/2+</p>
-<p><strong>AND:</strong> 3/2±, 5/2+</p>
-<h3 id="example-2-fed-by-primary-γ-from-72--72-and-52">Example 2: Fed by primary γ from 7/2-, 7/2+, and 5/2+</h3>
+<h3 id="example-1-fed-by-primary-γ-from-72--72-and-52">Example 1: Fed by primary γ from 7/2-, 7/2+, and 5/2+</h3>
 <p>Fed by primary γ from 7/2- (D or E2):
 3/2-, 5/2±, 7/2±, 9/2±, 11/2-</p>
 <p>Fed by primary γ from 7/2+ (D or E2):
@@ -457,6 +461,14 @@ aside > *:last-child {
 <p>Fed by primary γ from 5/2+ (D or E2):
 1/2+, 3/2±, 5/2±, 7/2±, 9/2+</p>
 <p><strong>AND:</strong> 5/2±, 7/2±, 9/2+</p>
+<h3 id="example-2-fed-by-primary-γ-from-52--decay-γ-to-12-and-52-lifetime-short-rul-applies-m2-ruled-out">Example 2: Fed by primary γ from 5/2-. Decay γ to 1/2+ and 5/2+ (Lifetime short, RUL applies, M2 ruled out)</h3>
+<p>Fed by primary γ (D or E2):
+1/2-, 3/2±, 5/2±, 7/2±, 9/2-</p>
+<p>Decay γ to 1/2+ (D or E2):
+1/2±, 3/2±, 5/2+</p>
+<p>Decay γ to 5/2+ (D or E2):
+1/2+, 3/2±, 5/2±, 7/2±, 9/2+</p>
+<p><strong>AND:</strong> 3/2±, 5/2+</p>
 <h3 id="example-3-fed-by-primary-γ-from-72-decay-γ-to-52-lifetime-unknown-rul-does-not-apply-m2-allowed">Example 3: Fed by primary γ from 7/2+. Decay γ to 5/2+ (Lifetime unknown, RUL does not apply, M2 allowed)</h3>
 <p>Fed by primary γ (D or E2):
 3/2+, 5/2±, 7/2±, 9/2±, 11/2+</p>
