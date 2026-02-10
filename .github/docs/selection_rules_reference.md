@@ -137,9 +137,15 @@ If two primary transitions from $5/2^+$ and $7/2^-$, the AND of the above two se
 
 ### Deducing $J^\pi$ from Multiple Constraints
 
-1. List allowed $J^\pi$ from each constraint (primary feeding, secondary decays)
-2. Apply AND (intersection) across all constraints
-3. Result: Common $J^\pi$ values only
+1. List allowed $J^\pi$ from each constraint (primary feeding γ, decay γ)
+2. For primary feeding γ, D or E2 are considered:
+   * Apply multipolarity selection rules to get possible $J^\pi$
+3. For decay γ, D or Q are considered:
+   * Apply multipolarity selection rules to get possible $J^\pi$
+   * If lifetime is short and RUL applies, exclude M2, i.e., consider D or E2, the same as primary γ
+   * If decay γ is also primary γ, apply D or E2 selection rules for that as well
+3. Apply AND (intersection) across all constraints
+4. Result: Common $J^\pi$ values only
 
 *Note: Parentheses in ENSDF denote tentative assignments, e.g., (5/2+,7/2,9/2+)*
 

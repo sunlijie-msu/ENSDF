@@ -719,7 +719,7 @@
  35CLX L XREF=LO                                                                
  35CL cL E$weighted average of 5808.1 {I31} from (|a,p) and 5806 {I2} from      
  35CL2cL (p,|g)                                                                 
- 35CL cL J$primary 2891|g from 8696.9, 3/2- level; 5806|g to 3/2+               
+ 35CL cL J$primary 2891|g from 8696.9, 3/2- level; 5806|g to 3/2+ g.s.          
  35CL cL T$lifetime |t=5 fs {I1} from (p,|g) (1976Me12, DSAM).                  
  35CL  G 5806.1       100                                                       
  35CL  L 5830      4  (5/2-)                                                Z   
@@ -1343,8 +1343,9 @@
  35CL  G 3663.6       8.1                                                   Y   
  35CL  G 3777.9       5.4                                                   Y   
  35CL  G 3894.1       1.4                                                   Y  ?
- 35CL cG $This |g goes to 9/2+, which is unlikely from a 3/2- resonance. It is  
- 35CL2cG likely from 7839.0 level                                               
+ 35CL cG $This |g is a primary |g from the unresolved 7837+7839 doublet goes to 
+ 35CL2cG 9/2+, which is unlikely from a 3/2-, 7837 level. It is likely from the 
+ 35CL3cG (5/2+), 7839.0 level.                                                  
  35CL  G 3918.5       0.54                                                  Y   
  35CL  G 4834.2       11                                                    Y   
  35CL  G 6073.5       5.1                                                   Y   
@@ -2160,8 +2161,8 @@
  35CL cL E$weighted average of 8686.2 {I5} from (p,|g), and 8687 {I3} from      
  35CL2cL {+34}S(p,p),(p,p'|g):resonances                                        
  35CL cL J$5/2-,7/2- from R-Matrix analysis in (p,p):resonances; primary        
- 35CL2cL 7446.0|g to 1/2+ disfavors both 5/2- and 7/2-, but 7/2- is much less   
- 35CL3cL likely.                                                                
+ 35CL2cL 7446.0|g to 1219, 1/2+ disfavors both 5/2- and 7/2-, but 7/2- is much  
+ 35CL3cL less likely.                                                           
  35CL  G 3100.1       2.8    15                                                 
  35CL  G 3282.7       4.1    21                                                 
  35CL  G 4508.0       2.6    13                                                 
@@ -2223,12 +2224,12 @@
  35CL  G 6133.6       48     11                                                 
  35CL  G 7015.9       25     13                                                 
  35CL  G 8778.6       41     11                                                 
- 35CL  L 8787.2    5  (3/2+)           0.001 KEV 1                              
+ 35CL  L 8787.2    5  (5/2+)           0.001 KEV 1                              
  35CLX L XREF=LOP                                                               
  35CL cL E$others: 8786.3 {I38} from (|a,p), and 8788 {I3} from                 
  35CL2cL {+34}S(p,p),(p,p'|g):resonances                                        
  35CL cL J$(3/2+,5/2+) from R-Matrix analysis in (p,p):resonances; primary      
- 35CL2cL 3623.7|g to 7/2-                                                       
+ 35CL2cL 3623.7|g and 5623.8|g to 7/2-                                          
  35CL  G 3063.5       27     14                                                 
  35CL  G 3623.7       76     20                                                 
  35CL  G 4017.1       27     14                                                 
@@ -2255,7 +2256,8 @@
  35CL  G 8797.2       100    10                                                 
  35CL  L 8820.9    5  (1/2+:7/2+)                                               
  35CLX L XREF=O                                                                 
- 35CL cL J$primary 5817.6|g and 7057.0|g to 5/2+, 6126.3|g and 8819.7|g to 3/2+ 
+ 35CL cL J$primary 5817.6|g and 7057.0|g to 5/2+; 6126.3|g and 8819.7|g to 3/2+,
+ 35CL2cL which yields (1/2+,3/2|+,5/2|+,7/2+).                                  
  35CL  G 5817.7       17     10                                                 
  35CL  G 6126.3       35     10                                                 
  35CL  G 7057.0       40     10                                                 
@@ -2406,7 +2408,7 @@
  35CL  G 4963.5       19     5                                                  
  35CL  G 7142.8       100    10                                                 
  35CL  L 8919.8    5  (5/2-,7/2,9/2+)                                           
- 35CLX L XREF=OX(8921*)                                                          
+ 35CLX L XREF=OX(8921*)                                                         
  35CL cL J$primary 4571.7|g to 9/2-, 7156.0|g to 5/2+                           
  35CL  G 3274         10     5                                                  
  35CL  G 4571.7       14     7                                                  
