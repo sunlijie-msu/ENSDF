@@ -1,54 +1,71 @@
-General issues:
+We have revised all datasets based on the issues raised by the reviewer as well as comments for improved readability and clarity.
 
-XREF(?)
-C(1000?)
-C(?)
-C
-All acceptable.
-If this level is questionable in both Dataset C and the Adopted Levels, then XREF=C(?)
-If this level is questionable in Dataset C, and is confirmed in the Adopted Levels, then XREF contains C(?)
-
-Rounding:
-100/61*4(1)=6.56(164)=6.6(17)
+Detailed point-by-point responses to the reviewer's comments are provided in the PDF file. Below are responses to general issues raised by the reviewer.
 
 
+1) Question marks in XREF.
+Reviewer: "I understand that this is a link between questionable levels, but the link itself is not in question, and should not be marked with a "?""
 
 
-This is a huge amount of text for a reader to digest, only to discover that the conclusion is that a single gamma was seen that is likely not even from 35Mg.  
-
-If you prefer to keep this dataset, I won't object.  However, most of this information (including the references) has already been captured in the 35Na dataset.  Therefore, I suggest simply leaving a comment about the 661 on the Adopted Gammas table and eliminating this dataset.
+As we understand it, either A(1000?) or A(?) is acceptable for indicating a questionable level in Dataset A.
 
 
-The 35Na β-decay dataset has existed since the last round of evaluation.
+2) Rounding and Uncertainty Convention:
 
-35Si β- decay (0.78 s)
-I realize the conversion coefficients are tiny, but I think it is worth running BrIcc.  It's one less step for readers to do.
+Successive (Sequential) Rounding.
+We employ a Successive Rounding methodology where values are processed digit-by-digit from the rightmost decimal place moving leftward.
 
-Done.
+Rounding Threshold: Round Half-Up (5-Up)
+For general calculated values, we apply the Standard Round Half-Up convention.
+Down: Digits 0, 1, 2, 3, 4 are truncated (the preceding digit remains unchanged).
+Up: Digits 5, 6, 7, 8, 9 cause the preceding digit to be incremented by 1.
+
+Application example:
+0.344 → 0.34 → 0.3, the last 4 rounds down; then the 4 rounds down.
+0.345 → 0.35 → 0.4, the 5 rounds the 4 up; then the new 5 rounds the 3 up.
+
+Uncertainty and Significant Digits
+The final reported value is rounded to match the decimal place of the least significant digit in the uncertainty. The uncertainty digits are rounded according to the threshold (4-Up)
+
+Application example:
+100.00(333) → 100.0(33), last '3' rounds down; uncertainty stays '33'
+100.00(334) → 100.0(34), last '4' rounds the '3' up; uncertainty becomes '34'
 
 
- 35S  cG RI$weighted average of 37 {I5} from ({+14}N,3p|g), 35 {I4} from (n,|g) 
- 35S 2cG E=thermal, 37.0 {I28} from (d,p|g), and 33.3 {I27} from (d,|a|g).      
 
-weighted average:      35.3(17)
-suggested adopted result:      35.3(27)            
+3) Averaging Convention:
+We use the default option in the Java Averaging tool across all datasets.
+
+Choice on weighted vs unweighted average:
+For example, in the 35S Adopted Dataset, there is an Iγ from the weighted average of 73 9 from (14N,3pγ) and 36 18 from (18O,2αnγ)
+
+------ average X------
+Data points of X record
+*                      (14N,3p)   73(9)               weight=80.00%
+*                     (18O,2n)   36(18)              weight=20.00%
+
+Averaging results:
+           weighted average:      66(8)                (internal)
+                                  66(15)               (external)
+                                  chi**2/(n-1)=3.380     [critical=4.605]
+         unweighted average:      55(19)              
+           (of all values)        chi**2/(n-1)=684.500     [critical=4.605]
+
+   suggested adopted result:      66(15)              
        (Weighted-Of-All)
 
+So, we choose the weighted average as the adopted value.
 
-Minimum Uncertainty Rule
-
-The final adopted uncertainty must be greater than or equal to any individual input uncertainty.
-
-Rationale: This rule ensures that averaging never artificially reduces systematic uncertainty below the best single measurement, and maintains conservative uncertainty estimates in nuclear data evaluation. The Java averaging tool automatically enforces this constraint.
+Minimum Uncertainty Rule:
+The tool implements the Minimum Uncertainty Rule: the final adopted uncertainty must be greater than or equal to any individual input uncertainty. This rule ensures that averaging never artificially reduces systematic uncertainty below the best single measurement, and maintains conservative uncertainty estimates in nuclear data evaluation.
 
 
-4023.24 (11/2)− 207.0 5 0.59 30 3816.01 (9/2)− [M1,E2] 0.005 4
-Would it be better to assign [M1+E2], with a limit on the mixing ratio based on the RUL?  Saying pure E2 is possible but in violation of the RUL seems odd to me.
 
-Done.
 
-I think these last three gammas need a note saying that the data are from (18O, 2ang)
+5) Incomplete Decay Scheme:
+For an incomplete decay scheme, we usually have comments like:
+I|b{+-} is from the |g+ce intensity balance at each state. Quoted I|b{+-} values without uncertainties are considered upper limits due to the incomplete decay scheme.
+Reviewer: "Then why not put "LE" in the uncertainty column?"
 
-Done.
+Quoted Iβ- values without uncertainties are considered upper limits due to the incomplete decay scheme, and Iβ- values with LE in the uncertainty column indicate experimentally determined upper limits.
 
-Based on some frequently raised issues, we have revised comments throughout for improved readability and clarity.
