@@ -710,7 +710,7 @@
  35CL  G 1580         67     22                                                 
  35CL  G 4538         13     LT                                                 
  35CL  G 5758         100    22                                                 
- 35CL  L 5806.6    20 (1/2,3/2,5/2+)   3.5 FS    7                              
+ 35CL  L 5806.6    20 (1/2,3/2,5/2)   3.5 FS    7                              
  35CLX L XREF=LO                                                                
  35CL cL E$weighted average of 5808.1 {I31} from (|a,p) and 5806 {I2} from      
  35CL2cL (p,|g)                                                                 
@@ -730,8 +730,9 @@
  35CL cL E$weighted average of 5927.1 {I7} from ({+28}Si,|ap|g), 5926.9 {I5}    
  35CL2cL from ({+16}O,|ap|g), 5926.47 {I29} from ({+14}N,|apn|g), 5928 {I3} from
  35CL3cL (|a,p), and 5927.1 {I19} from (|a,p|g)                                 
- 35CL cL J$1579|g M1+E2, |DJ=1 to 4348, 9/2- in {+12}C({+28}Si,|ap|g);          
- 35CL2cL spin=7/2,11/2 also from p|g(|q) in (|a,p|g)                            
+ 35CL cL J$1579|g M1+E2, |DJ=1 to 4348, 9/2- in {+12}C({+28}Si,|ap|g), also     
+ 35CL2cL assuming spins increase with excitation energies in fusion-evaporation 
+ 35CL3cL reactions. Spin=7/2,11/2 from p|g(|q) in (|a,p|g)                      
  35CL cL T$lifetime |t<0.4 ps from ({+28}Si,|ap|g) (2007Ks01, DSAM).            
  35CL  G 1579.09   30 100    11  M1+E2   -0.2    1                              
  35CL cG E$weighted average of 1578.9 {I5} from ({+16}O,|ap|g), 1579.15 {I30}   
@@ -786,7 +787,8 @@
  35CLX L XREF=LN(6200*)O                                                        
  35CL cL E$other: 6180 {I3} from (|a,p)                                         
  35CL cL J$6180|g to 3/2+ g.s.; primary 1438|g from 7618.7, 5/2+ level in (p,|g)
- 35CL cL $additional 122% of I|g transitions to unknown levels in (p,|g).       
+ 35CL cL $Apart from the only |g branch I|g(6180)=100 observed in (p,|g), the   
+ 35CL2cL contribution of I|g to unknown levels adds up to 122% of I|g(6180).    
  35CL  G 6180         100                                                       
  35CL  L 6224.4    30                                                           
  35CLX L XREF=LN(6200*)                                                         
@@ -803,8 +805,9 @@
  35CLX L XREF=HLR(6377)                                                         
  35CL cL E$weighted average of 6380.8 {I8} from ({+16}O,|ap|g) and 6379.3 {I25} 
  35CL2cL from (|a,p)                                                            
- 35CL cL J$other: L=(2,3) from 0+ in ({+3}He,d) for a group at E=6377 {I2} is   
- 35CL2cL inconsistent, probably indicating a different level                    
+ 35CL cL J$other: L=(2,3) from 0+ in ({+3}He,d) for a group at E=6377 {I2} based
+ 35CL2cL on very few data points in a very narrow range of angles in the DWBA   
+ 35CL3cL fit.                                                                   
  35CL  G 296       1                                                            
  35CL cG RI$from ({+16}O,|ap|g)                                                 
  35CL  G 971       1                                                            
@@ -836,9 +839,8 @@
  35CLX L XREF=DR                                                                
  35CL cL E$from ({+3}He,d)                                                      
  35CL cL J$from L=(1) from 0+ in ({+3}He,d)                                     
- 35CL  L 6659.1    30 (7/2+)                                                    
+ 35CL  L 6659.1    30 (7/2+)                                                Z   
  35CLX L XREF=LY(6677*)                                                         
- 35CL cL J$from (|a,p)                                                          
  35CL  L 6660.2    8   (11/2-)                                                  
  35CLX L XREF=F                                                                 
  35CL cL J$2312|g to 9/2-, 3497|g to 7/2- in ({+28}Si,|ap|g), assuming spin     
@@ -869,8 +871,8 @@
  35CL cL E$weighted average of 6842 {I4} from (|a,p) and 6842 {I2} from         
  35CL2cL ({+3}He,d)                                                             
  35CL  L 6863      3  (9/2+)                                                Z   
- 35CLX L XREF=L                                                                                                                 
- 35CL  L 6866.7    6  (1/2+,3/2)                                                
+ 35CLX L XREF=L                                                                 
+ 35CL  L 6866.7    6  (1/2,3/2-)                                                
  35CLX L XREF=DOR
  35CL cL E$other: 6866 {I2} from ({+3}He,d)                                     
  35CL cL J$L({+3}He,d)=(0,1) from 0+                                            
@@ -1093,14 +1095,15 @@
  35CL  G 4355.6       100    10 D(+Q)    +0.1    2                              
  35CL  G 4872.8       4.4    22                                                 
  35CL  G 5755.1       29.4   30 D+Q      +0.098  22                             
- 35CL  L 7548.9    6  7/2-             0.69 FS   LT                             
+ 35CL  L 7548.9    6  7/2-             8.4 EV    26                             
  35CLX L XREF=OP(7550)                                                          
  35CL2 L ISPIN=3/2                                                              
  35CL cL J$from resonance analysis of measured |s(|q) in                        
  35CL2cL {+34}S(p,p),(p,p'|g):resonances. Spin=7/2 also from |g(|q) in (p,|g).  
- 35CL cL T$lifetime |t<1 fs from (p,|g) (1973Fa07, DSAM)                        
- 35CL cL $|G=5.8 eV {I13} from (p,|g), 11.0 eV {I15} from                       
- 35CL2cL {+34}S(p,p),(p,p'|g):resonances                                        
+ 35CL cL T$|G=5.8 eV {I13} from (p,|g), 11.0 eV {I15} from                      
+ 35CL2cL {+34}S(p,p),(p,p'|g):resonances lifetime |t<1 fs from (p,|g) (1973Fa07,
+ 35CL3cL DSAM)                                                                  
+ 35CL cL $                                                                      
  35CL  G 1903         0.59   7                                                  
  35CL  G 1962.8       0.11      [E1]                                            
  35CL  G 2778.9       1.49   11 [M1,E2]                                         
@@ -1182,8 +1185,8 @@
  35CL cL J$L(|a,d)=6 from 3/2+.                                                 
  35CL  L 7671.9    8  5/2+                                                      
  35CLX L XREF=L(*)OP(7686*)                                                     
- 35CL cL J$spin=5/2 from |g(|q) in (p,|g); 4668.8|g M1+E2 to 5/2+. But 3324.0|g 
- 35CL2cL to 9/2- seems favors 5/2-                                              
+ 35CL cL J$spin=5/2 from |g(|q) in (p,|g); 4668.8|g, M1+E2 to 5/2+; 5908.2|g,   
+ 35CL2cL M1+E2 to 5/2+; other: 3324.0|g to 9/2- seems to favor 5/2-             
  35CL  G 2073.4       2.1                                                       
  35CL  G 2508.5       7                                                         
  35CL  G 2790.8       2.1                                                       
@@ -1268,8 +1271,7 @@
  35CL cL J$L(|a,d)=6 from 3/2+                                                  
  35CL  L 7777.1    9  (5/2+)                                                    
  35CLX L XREF=LO                                                                
- 35CL cL E$other: 7770.3 {I33} from (|a,p) is discrepant, probably indicating a 
- 35CL2cL different level                                                        
+ 35CL cL E$from (p,|g). Other: 7770.3 {I33} from (|a,p).                        
  35CL cL J$based on primary transitions: 4613.8|g to 7/2-, 5131.0|g to 7/2+,    
  35CL2cL 6557.1|g to 1/2+                                                       
  35CL  G 2122         1.3                                                       
@@ -1323,9 +1325,9 @@
  35CL2 L ISPIN=3/2                                                              
  35CL cL E$weighted average of 7837.2 {I10} from (p,|g), and 7837 {I3} from     
  35CL2cL {+34}S(p,p),(p,p'|g):resonances                                        
- 35CL cL T$other: lifetime |t<5 fs from (p,|g) (1971Wi13, DSAM).                
  35CL cL J$spin=3/2 from |g(|q) in (p,|g) and 3/2- from R-Matrix analysis in    
  35CL2cL (p,p):resonances.                                                      
+ 35CL cL T$other: lifetime |t<5 fs from (p,|g) (1971Wi13, DSAM).                
  35CL  G 1656         1.4                                                   Y   
  35CL  G 2238.7       1.4                                                   Y   
  35CL  G 2622.6       3.8                                                   Y   
@@ -1378,7 +1380,8 @@
  35CLX L XREF=FHIN(7870)O                                                       
  35CL cL E$weighted average of 7873.3 {I8} from ({+28}Si,|ap|g), 7873.4 {I4}    
  35CL2cL from ({+16}O,|ap|g), and 7872.78 {I30} from ({+14}N,|apn|g)            
- 35CL cL J$1946.35|g E1+M2, |DJ=1 to 11/2-, 1786.2|g D(+Q) to 13/2-; band head  
+ 35CL cL J$1946.35|g E1+M2, |DJ=1 to 5927, (11/2)-; 1786.2|g D(+Q) to 13/2-;    
+ 35CL2cL band head                                                              
  35CL  G 1212.6                                                                 
  35CL cG E$from ({+28}Si,|ap|g) only                                            
  35CL  G 1786.2    5  9.6    4  D(+Q)    -0.6    6                              

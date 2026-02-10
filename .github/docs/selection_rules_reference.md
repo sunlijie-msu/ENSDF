@@ -29,7 +29,7 @@ Relation between transition type, multipolarity order, and selection rules.
 | E4 | 4 | H | 0 – 4 | No |
 | M4 | 4 | H | 0 – 4 | Yes |
 
-### Common Multipole Mixtures ($L + L+1$)
+### Multipolarities for $J,\pi$ Assignments
 
 *   **M1+E2:** $\Delta J = 0, 1$; $\Delta \pi = \text{No}$
 *   **E1+M2:** $\Delta J = 0, 1$; $\Delta \pi = \text{Yes}$
@@ -37,7 +37,6 @@ Relation between transition type, multipolarity order, and selection rules.
 *   **M2+E3:** $\Delta J = 0, 1, 2$; $\Delta \pi = \text{Yes}$
 *   **E2+M3:** $\Delta J = 0, 1, 2$; $\Delta \pi = \text{No}$
 
-### Capture Transitions
 In neutron/proton capture, primary $\gamma$ transitions from resonances are typically limited to $E1, M1$, and $E2$ multipolarities:
 *   **D:** $\Delta J = 0, 1$, $\Delta \pi = \text{Yes or No}$
 *   **E2:** $\Delta J = 0, 1, 2$, $\Delta \pi = \text{No}$
