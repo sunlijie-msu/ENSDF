@@ -235,6 +235,10 @@ def validate_de_field(filename):
     
     for line_num, line_content in enumerate(lines, 1):
         
+        # Skip continuation records (XREF, FLAG, etc.) - they are NOT primary data records
+        if is_continuation_record(line_content):
+            continue
+        
         # Check both L-records and G-records for DE field validation
         if len(line_content) < 21 or (not (' L ' in line_content[6:10] or ' G ' in line_content[6:10])):
             continue
@@ -497,6 +501,10 @@ def validate_jp_field(filename):
     
     for line_num, line_content in enumerate(lines, 1):
         
+        # Skip continuation records (XREF, FLAG, etc.) - they are NOT primary data records
+        if is_continuation_record(line_content):
+            continue
+        
         # Only check L-records for J-π field validation
         if len(line_content) < 10 or ' L ' not in line_content[6:10]:
             continue
@@ -582,6 +590,32 @@ def is_comment_line(line):
         return True
         
     return False
+
+def is_continuation_record(line):
+    """
+    Check if a line is a continuation record (column 6 not blank).
+    
+    Continuation records have a non-blank character in column 6 (0-based index 5):
+    - ' 35P X L XREF=...' (X at column 6 = XREF continuation for L-record)
+    - ' 35P S G CC=...' (S at column 6 = continuation for G-record, conversion coefficients)
+    - ' 35P F L FLAG=...' (F at column 6 = FLAG continuation for L-record)
+    - ' 35P 2 L ...' (2 at column 6 = second continuation of L-record)
+    - ' 35P H TYP=...' (H-record, not a continuation but column 6 is blank)
+    - ' 35P 2 H CIT=...' (2 at column 6 = H-record continuation)
+    
+    These continuation records should NOT be validated for primary field positioning
+    because they extend or modify the previous record, not standalone data records.
+    """
+    if len(line) < 6:
+        return False
+    
+    # Column 6 (0-based index 5) should be blank for primary records
+    # Non-blank = continuation record
+    col6_char = line[5]
+    
+    # Primary records have column 6 = space
+    # Continuation records have column 6 = alphanumeric or special character
+    return col6_char != ' '
 
 def validate_mul_field(filename):
     """
@@ -835,8 +869,19 @@ def validate_g_record_flags(filename):
         if is_comment_line(line_content):
             continue
         
+        # CRITICAL: Skip continuation records (H continuation '2', S continuation, etc.)
+        if is_continuation_record(line_content):
+            continue
+        
         # Check if this is a G-record (gamma transition data record)
-        if not (is_data_record_line(line_content) and len(line_content) >= 8 and line_content[7] == 'G'):
+        # CRITICAL: Column 7 must be blank, column 8 must be 'G', column 9 must be blank
+        # This excludes drawing commands like 'dG', 'dL', etc.
+        is_g_record = (len(line_content) >= 9 and 
+                       line_content[6] == ' ' and  # Column 7 must be blank
+                       line_content[7] == 'G' and  # Column 8 must be 'G'
+                       line_content[8] == ' ')     # Column 9 must be blank
+        
+        if not is_g_record:
             continue
         
         g_records_analyzed += 1
@@ -974,6 +1019,10 @@ def validate_dri_field(filename):
     lines = get_stripped_lines(filename)
     
     for line_num, line_content in enumerate(lines, 1):
+        
+        # Skip continuation records (S continuation for conversion coefficients, etc.)
+        if is_continuation_record(line_content):
+            continue
         
         # Only check G-records (TRUE G-records, not comment lines)
         if len(line_content) < 10 or ' G ' not in line_content[6:10]:
