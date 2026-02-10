@@ -3,6 +3,7 @@
  35CL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
+ 35CL DG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  35CL dG $Transition strength is calculated by Java-RULER (version 21-Sep-2025) 
  35CL  Q -5966.2   7 12644.765 6370.81 4 -6997.904     2021WA16                 
  35CL cQ $S(2n)=24152.8 {I4}, S(2p)=17254.1 {I11} (2021Wa16)                    
@@ -112,6 +113,8 @@
  35CL2cG adopted B(E2)|^=0.00076 {I7} measured in Coulomb excitation and adopted
  35CL3cG lifetime |t=0.172 ps {I20}.                                            
  35CLB G BM1W=0.101 +14-11 $BE2W=2.2 +6-5                                       
+ 35CLS G  CC=3.66E-5 5$KC=2.59E-5 4$LC=2.062E-6 29$MC=1.886E-7 26               
+ 35CLS G  IPC=8.43E-6 12                                                        
  35CL  L 1763.15   4  5/2+             0.36 PS   3                              
  35CLX L XREF=BEFGHIKLMOQRSTUVWX(1785)Y(1750)Zab                                
  35CL2 L ISPIN=1/2                                                              
@@ -132,6 +135,7 @@
  35CL7cL from (p,p'|g), 0.57 ps {I7} (1969Ha17, DSAM), and 0.63 ps {I5}         
  35CL8cL (1977Sc36, DSAM) from Coulomb excitation                               
  35CL  G 543.77       0.2    LT [E2]                                            
+ 35CLS G  CC=0.000323 5$KC=0.000297 4$LC=2.377E-5 33$MC=2.170E-6 30             
  35CL cG RI$from (p,|g). Other: <0.5 from (|a,p|g).                             
  35CL  G 1763.16   10 100       M1+E2    -2.85   10                             
  35CL cG E$weighted average of 1763.0 {I2} from {+35}Ar |e decay, 1763.1 {I2}   
@@ -146,6 +150,8 @@
  35CL4cG |g|g(|q) in (p,|g); 1.8 {I+10-4}; deduced by the evaluators from       
  35CL5cG adopted B(E2)|^=0.0106 {I7} and T{-1/2}=0.36 ps {I3}                   
  35CLB G BM1W=0.00122 +14-12 $BE2W=12.1 +11-9                                   
+ 35CLS G  CC=0.0002124 30$KC=1.513E-5 21$LC=1.203E-6 17$MC=1.101E-7 15          
+ 35CLS G  IPC=0.0001960 28                                                      
  35CL  L 2645.67   8  7/2+             0.159 PS  21                             
  35CLX L XREF=BFGHIL(*)MOQR(2645*)TUY(2650*)ab                                  
  35CL cL E$weighted average of 2645.81 {I18} from ({+24}Mg,|ap|g), 2645.9 {I3}  
@@ -163,6 +169,7 @@
  35CL6cL Coulomb excitation (1977Sc36, DSAM). Other: |t<1.3 ps in               
  35CL7cL ({+28}Si,|ap|g) (2007Ks01, DSAM)                                       
  35CL  G 882.80    11 11.4   10 M1+E2    +0.21   5                              
+ 35CLS G  CC=5.29E-5 9$KC=4.86E-5 9$LC=3.87E-6 7$MC=3.54E-7 6                   
  35CL cG E$weighted average of 882.9 {I1} from ({+24}Mg,|ap|g), 882.7 {I5} from 
  35CL2cG ({+16}O,|ap|g), 882.32 {I35} from ({+14}N,|apn|g), 882.4 {I10} from    
  35CL3cG (|a,p|g), and 882.3 {I3} from (p,p'|g)                                 
@@ -174,6 +181,8 @@
  35CL2cG (p,p'|g).                                                              
  35CLB G BM1W=0.0196 +35-27 $BE2W=4.2 +23-18                                    
  35CL  G 1426.26      1.2    LT [M3]                                            
+ 35CLS G  CC=7.52E-5 11$KC=6.43E-5 9$LC=5.14E-6 7$MC=4.70E-7 7                  
+ 35CLS G  IPC=5.34E-6 7                                                         
  35CL cG RI$from (|a,p|g). Other: <2.2 from (p,|g)                              
  35CL  G 2645.70   20 100.0  11 E2                                              
  35CL cG E$weighted average of 2645.5 {I4} from ({+24}Mg,|ap|g), 2645.8 {I5}    
@@ -185,6 +194,8 @@
  35CL cG M$from |g|g(|q)(DCO) and |g|g(lin pol) in ({+28}Si,|ap|g); |g(|q) and  
  35CL2cG |g(lin pol) in (p,p'|g).                                               
  35CLB G BE2W=3.6 +6-4                                                          
+ 35CLS G  CC=0.000633 9$KC=7.47E-6 10$LC=5.93E-7 8$MC=5.43E-8 8                 
+ 35CLS G  IPC=0.000625 9                                                        
  35CL  L 2694.00   20 3/2+             32 FS     6                              
  35CLX L XREF=BL(2693?)MOQRSTUWX(2676)Y(2650*)a                                 
  35CL cL E$weighted average of 2693.8 {I2} from {+35}Ar |e decay, 2693.6 {I13}  
@@ -201,6 +212,7 @@
  35CL8cL authors, and 11 fs {I7} in (p,p'|g) from 1971Ca40 with DSAM is         
  35CL9cL considered an outlier.                                                 
  35CL  G 930.9     2  16.3   13 M1+E2    +0.09   3                              
+ 35CLS G  CC=4.68E-5 7$KC=4.31E-5 6$LC=3.43E-6 5$MC=3.14E-7 4                   
  35CL cG E$weighted average of 930.7 {I2} from {+35}Ar |e decay, 930.5 {I15}    
  35CL2cG from (|a,p|g), and 931.3 {I3} from (p,p'|g)                            
  35CL cG RI$weighted average of 14.3 {I18} from {+35}Ar |e decay, 18.2 {I26}    
@@ -214,6 +226,8 @@
  35CL2cG (|a,p|g), 9.5 {I13} from (p,|g), and 8.3 {I25} from (p,p'|g)           
  35CL cG M,MR$from |g(|q) and |g(lin pol) in (p,p'|g).                          
  35CLB G BM1W=0.0116 +37-29 $BE2W=8.0 +45-39                                    
+ 35CLS G  CC=8.4E-5 4$KC=1.94E-5 5$LC=1.54E-6 4$MC=1.41E-7 4                    
+ 35CLS G  IPC=6.33E-5 31                                                        
  35CL  G 2693.7    2  100.0  17 M1+E2    +0.26   2                              
  35CL cG E$weighted average of 2693.7 {I2} from {+35}Ar |e decay and 2694.1 {I6}
  35CL2cG from (p,p'|g). Other: 2693.2 {I20} from (|a,p|g)                       
@@ -223,6 +237,8 @@
  35CL cG MR$weighted average of +0.17 {I8} from (|a,p|g) and +0.26 {I2} from    
  35CL2cG (p,p'|g).                                                              
  35CLB G BM1W=0.026 +6-4 $BE2W=0.92 +26-19                                      
+ 35CLS G  CC=0.000553 8$KC=6.86E-6 10$LC=5.45E-7 8$MC=4.98E-8 7                 
+ 35CLS G  IPC=0.000546 8                                                        
  35CL  L 3002.64   11 5/2+             22 FS     6                              
  35CLX L XREF=BFHILMOQRSTUWXY                                                   
  35CL cL E$weighted average of 3002.3 {I3} from {+35}Ar |e decay, 3003.1 {I8}   
@@ -238,16 +254,22 @@
  35CL4cL (p,|g) from 1976Me12 with DSAM, 72 fs {I12} in (n,n'|g) from 1989Ge09  
  35CL5cL with DSAM, 18 fs {I+26-15} in (p,p'|g) from 1972Va06 with DSAM, and 31 
  35CL6cL fs {I13} in (p,p'|g) from 1969Du08 with DSAM.                          
- 35CL  G 308.64       5      LT [M1,E2]                                         
+ 35CL  G 308.64       5      LT [M1,E2]                0.0014 9                 
+ 35CLS G  KC=0.0013 8$LC=1.0E-4 7$MC=9.4E-6 61
  35CL cG RI$from (|a,p|g).                                                      
  35CL  G 356.97       1      LT [M1,E2]                                         
+ 35CLS G  CC=9.E-4 5$KC=8.E-4 5$LC=6.3E-5 37$MC=5.7E-6 34                         
  35CL cG RI$from (|a,p|g).                                                      
  35CL  G 1239.47      2.2    11 [M1,E2]                                         
+ 35CLS G  CC=4.4E-5 6$KC=2.85E-5 34$LC=2.26E-6 27$MC=2.07E-7 25                 
+ 35CLS G  IPC=1.35E-5 26                                                        
  35CL cG RI$from (p,p'|g).                                                      
  35CL cG $B(M1)(W.u.)=0.011 {I+8-5} if M1, B(E2)(W.u.)=26 {I+19-12} if E2       
  35CL  G 1783.21      3.3    11 [E2]                                            
  35CL cG RI$from (p,p'|g).                                                      
  35CLB G BE2W=6.4 +35-22                                                        
+ 35CLS G  CC=0.0002268 32$KC=1.500E-5 21$LC=1.193E-6 17$MC=1.091E-7 15          
+ 35CLS G  IPC=0.0002105 29                                                      
  35CL  G 3002.3    4  100.0  10 M1+E2    +0.08   2                              
  35CL cG E$weighted average of 3002.1 {I4} from {+35}Ar |e decay, 3002.5 {I15}  
  35CL2cG from (|a,p|g), and 3002.5 {I5} from (p,p'|g)                           
@@ -257,6 +279,8 @@
  35CL cG MR$weighted average of +0.09 {I3} from (|a,p|g) and +0.07 {I2} from    
  35CL2cG (p,p'|g). Other: -0.22 {I1} from (p,|g).                               
  35CLB G BM1W=0.034 +14-7 $BE2W=0.09 +7-4                                       
+ 35CLS G  CC=0.000671 9$KC=5.80E-6 8$LC=4.60E-7 6$MC=4.21E-8 6                  
+ 35CLS G  IPC=0.000665 9                                                        
  35CL  L 3162.87   9  7/2-             29.2 PS   12                             
  35CLX L XREF=FGHIKLMOQRTUWX                                                    
  35CL2 L ISPIN=1/2                                                              
@@ -274,13 +298,15 @@
  35CL6cL (p,p'|g) (1974Hu09, RDM). Others: |t=140 ps {I40} (1968Az02, delayed   
  35CL7cL coincidence; obtained using NaI(Tl) detectors with broad time          
  35CL8cL resolution) from (p,|g)                                                
- 35CL  G 160.67    20 1.5    4 [E1]                                             
+ 35CL  G 160.67    20 1.5    4 [E1]                    0.00330 5                
  35CL cG E$weighted average of 161 {I1} from ({+16}O,|ap|g) and 160.66 {I20}    
  35CL2cG from ({+14}N,|apn|g)                                                   
  35CL cG RI$unweighted average of 1.10 {I30} from ({+28}Si,|ap|g) and 1.89 {I22}
  35CL2cG from (p,|g)                                                            
  35CLB G BE1W=6.6E-5 17                                                         
+ 35CLS G  KC=0.00304 4$LC=0.0002417 35$MC=2.202E-5 32                           
  35CL  G 517.47    11 12.3   16 (E1)                                            
+ 35CLS G  CC=0.0001097 15$KC=0.0001009 14$LC=8.03E-6 11$MC=7.34E-7 10           
  35CL cG E$weighted average of 517.7 {I1} from ({+24}Mg,|ap|g), 517.3 {I5} from 
  35CL2cG ({+16}O,|ap|g), 517.26 {I10} from ({+14}N,|apn|g), 517.4 {I15} from    
  35CL3cG (|a,p|g), and 517.0 {I8} from (p,p'|g)                                 
@@ -294,7 +320,11 @@
  35CL2cG from (p,|g)                                                            
  35CL cG M,MR$D+Q from |g(|q) in (p,|g) (1971Pr11); |D|p=yes from level scheme  
  35CLB G BE1W=1.88E-8 +31-34 $BM2W=0.0085 +43-38                                
+ 35CLS G  CC=0.000181 12$KC=1.67E-5 19$LC=1.33E-6 15$MC=1.21E-7 14              
+ 35CLS G  IPC=0.000162 14                                                       
  35CL  G 1943.43      0.22   LT [E3]                                            
+ 35CLS G  CC=0.0001742 24$KC=2.050E-5 29$LC=1.632E-6 23$MC=1.492E-7 21          
+ 35CLS G  IPC=0.0001519 21                                                      
  35CL  G 3162.53   10 100.0  11 M2+E3    +0.17   2                              
  35CL cG E$weighted average of 3162.7 {I4} from ({+24}Mg,|ap|g), 3162.6 {I3}    
  35CL2cG from ({+16}O,|ap|g), 3162.43 {I10} from ({+14}N,|apn|g), and 3162.6    
@@ -307,6 +337,8 @@
  35CL2cG ({+16}O,|ap|g), and +0.25 {I4} from (p,|g). Others: -0.14 {I2} from    
  35CL3cG (|a,p|g) and -0.22 {I5} from (p,p'|g).                                 
  35CLB G BM2W=0.255 9 $BE3W=4.2 +11-9                                           
+ 35CLS G  CC=0.000523 7$KC=7.66E-6 11$LC=6.09E-7 9$MC=5.57E-8 8                 
+ 35CLS G  IPC=0.000514 7                                                        
  35CL  L 3918.47   12 3/2+             4.9 FS    14                             
  35CLX L XREF=BMOR(3908)SU(3930*)X(3948*)                                       
  35CL cL E$weighted average of 3918.4 {I5} from {+35}Ar |e decay, 3915 {I2} from
@@ -317,15 +349,23 @@
  35CL cL T$lifetime |t=7 fs {I2} from (p,|g), (1972Hu11, DSAM). Others: <22 fs  
  35CL2cL from (|a,p|g) (1972Br33, DSAM).                                        
  35CL  G 1272.78      3.7    LT [E2]                                            
+ 35CLS G  CC=5.56E-5 8$KC=3.00E-5 4$LC=2.387E-6 33$MC=2.182E-7 31               
+ 35CLS G  IPC=2.301E-5 32                                                       
  35CL  G 2155.1    15 24.2   28 [M1,E2]                                         
+ 35CLS G  CC=0.00036 4$KC=1.02E-5 5$LC=8.1E-7 4$MC=7.38E-8 34                   
+ 35CLS G  IPC=0.00035 4                                                         
  35CL cG E$from {+35}Ar |e decay (1.7755 s).                                    
  35CL cG RI$weighted average of 29 {I12} from {+35}Ar |e decay and 23.9 {I28}   
  35CL2cG from (p,|g)                                                            
  35CL cG $B(M1)(W.u.)=0.075 {I+32-18} if M1, B(E2)(W.u.)=61 {I+26-14} if E2     
  35CL  G 2698.98      19     5  [M1,E2]                                         
+ 35CLS G  CC=0.00060 6$KC=7.02E-6 23$LC=5.58E-7 18$MC=5.10E-8 17                
+ 35CLS G  IPC=0.00060 5                                                         
  35CL cG RI$from (|a,p|g)                                                       
  35CL cG $B(M1)(W.u.)=0.030 {I+15-9} if M1, B(E2)(W.u.)=16 {I+8-5} if E2        
- 35CL  G 3918.24      100.0  19 M1+E2                                           
+ 35CL  G 3918.24      100.0  19 M1+E2                  0.00108 7                
+ 35CLS G  KC=4.00E-6 9$LC=3.17E-7 7$MC=2.90E-8 6                                
+ 35CLS G  IPC=0.00107 7                                                         
  35CL cG RI$weighted average of 100 {I6} from {+35}Ar |e decay, 100 {I5} from   
  35CL2cG (|a,p|g), and 100.0 {I19} from (p,|g)                                  
  35CL cG MR$-0.21 {I2} or +20 {I+10-5} from |g(|q) in (p,|g)                    
@@ -341,6 +381,8 @@
  35CL3cL {I50} (1973Fa07, DSAM), and 0.29 ps {I5} (1976Me12, DSAM) from (p,|g). 
  35CL4cL Other: |t<0.5 ps in ({+28}Si,|ap|g) (2007Ks01, DSAM).                  
  35CL  G 1297.4    15 8.0    21 [M1,E2]                                         
+ 35CLS G  CC=5.2E-5 8$KC=2.59E-5 28$LC=2.06E-6 23$MC=1.89E-7 21                 
+ 35CLS G  IPC=2.4E-5 4                                                          
  35CL cG E$from (|a,p|g).                                                       
  35CL cG RI$weighted average of 6.2 {I31} from ({+28}Si,|ap|g), 8.1 {I21} from  
  35CL2cG (|a,p|g), and 8.7 {I22} from (p,|g).                                   
@@ -351,6 +393,8 @@
  35CL cG RI$weighted average of 100.0 {I21} from (|a,p|g) and 100.0 {I22} from  
  35CL2cG (p,|g). Other: 100 {I11} from ({+28}Si,|ap|g)                          
  35CLB G BE2W=8.7 +17-13                                                        
+ 35CLS G  CC=0.000414 6$KC=1.038E-5 15$LC=8.25E-7 12$MC=7.55E-8 11              
+ 35CLS G  IPC=0.000403 6                                                        
  35CL  L 3967.6    4  1/2+             11.8 FS   28                             
  35CLX L XREF=BMOR                                                              
  35CL cL E$weighted average of 3967.7 {I4} from {+35}Ar |e decay, 3968 {I2} from
@@ -360,13 +404,21 @@
  35CL2cL DSAM), 20 fs {I5} (1973Fa07, DSAM), and 20 fs {I4} (1976Me12, DSAM) in 
  35CL3cL (p,|g). Other: |t<54 fs from (|a,p|g) (1972Br33, DSAM)                 
  35CL  G 1273.6       2.7    6  [M1,E2]                                         
+ 35CLS G  CC=4.9E-5 7$KC=2.69E-5 30$LC=2.14E-6 24$MC=1.96E-7 22                 
+ 35CLS G  IPC=2.0E-5 4                                                          
  35CL cG $B(M1)(W.u.)=0.019 {I+8-6} if M1, B(E2)(W.u.)=45 {I+18-13} if E2       
  35CL  G 2204.4       1.3    LE [E2]                                            
+ 35CLS G  CC=0.000426 6$KC=1.018E-5 14$LC=8.09E-7 11$MC=7.40E-8 10              
+ 35CLS G  IPC=0.000414 6                                                        
  35CL  G 2748.5    6  100    6  [M1]                                            
  35CLB G BM1W=0.071 +23-14                                                      
+ 35CLS G  CC=0.000569 8$KC=6.63E-6 9$LC=5.26E-7 7$MC=4.81E-8 7                  
+ 35CLS G  IPC=0.000562 8                                                        
  35CL cG E$from {+35}Ar |e decay (1.7755 s).                                    
  35CL cG RI$other: 100 {I7} from {+35}Ar |e decay                               
- 35CL  G 3967.4       23     4  [M1,E2]                                         
+ 35CL  G 3967.4       23     4  [M1,E2]                0.00109 7                
+ 35CLS G  KC=3.93E-6 8$LC=3.12E-7 7$MC=2.85E-8 6                                
+ 35CLS G  IPC=0.00109 7                                                         
  35CL cG RI$weighted average of 22 {I5} from {+35}Ar |e decay and 24 {I4} from  
  35CL2cG (p,|g)                                                                 
  35CL cG $B(M1)(W.u.)=0.0054 {I+19-13} if M1, B(E2)(W.u.)=1.31 {I+46-30} if E2  
@@ -381,14 +433,22 @@
  35CL3cL DSAM), and 18 fs {I3} (1976Me12, DSAM) from (p,|g).                    
  35CL  G 1365.1       1.3    4  [E1]                                            
  35CLB G BE1W=2.1E-4 +8-7                                                       
+ 35CLS G  CC=0.0001824 26$KC=1.316E-5 18$LC=1.046E-6 15$MC=9.56E-8 13           
+ 35CLS G  IPC=0.0001681 24                                                      
  35CL  G 2295.9       5.5    16 [E1]                                            
  35CL cG RI$weighted average of 8 {I4} from (|a,p|g) and 5.1 {I16} from (p,|g)  
  35CLB G BE1W=1.9E-4 +7-6                                                       
- 35CL  G 2839.6       100.0  21 [E1]                                            
+ 35CLS G  CC=0.000848 12$KC=5.97E-6 8$LC=4.74E-7 7$MC=4.34E-8 6                 
+ 35CLS G  IPC=0.000842 12                                                       
+ 35CL  G 2839.6       100.0  21 [E1]                   1.17E-3 2                
  35CL cG RI$weighted average of 100 {I4} from (|a,p|g) and 100.0 {I21} from     
  35CL2cG (p,|g)                                                                 
  35CLB G BE1W=0.00179 +34-22                                                    
- 35CL  G 4058.9       2.1    LT [E1]                                            
+ 35CLS G  KC=4.49E-6 6$LC=3.56E-7 5$MC=3.26E-8 5                                
+ 35CLS G  IPC=0.001162 16                                                       
+ 35CL  G 4058.9       2.1    LT [E1]                   1.70E-3 2                
+ 35CLS G  KC=2.87E-6 4$LC=2.278E-7 32$MC=2.084E-8 29                            
+ 35CLS G  IPC=0.001701 24                                                       
  35CL  L 4112.4    16 7/2+             49 FS     11                             
  35CLX L XREF=LMOQ                                                              
  35CL cL E$weighted average of 4111.1 {I29} from (|a,p), 4108 {I2} from         
@@ -398,9 +458,13 @@
  35CL  G 2349.2       89     6  M1+E2    -0.16   2                              
  35CL cG RI$other: 16 {I5} from (|a,p|g).                                       
  35CLB G BM1W=0.0159 +48-31 $BE2W=0.28 +12-8                                    
- 35CL  G 4112.1       100    6  E2(+M3)  0.00    10                             
+ 35CLS G  CC=0.000405 6$KC=8.48E-6 12$LC=6.73E-7 9$MC=6.16E-8 9                 
+ 35CLS G  IPC=0.000395 6                                                        
+ 35CL  G 4112.1       100    6  E2(+M3)  0.00    10    1.21E-3 2                
  35CL cG RI$other: 100 {I5} from (|a,p|g).                                      
  35CLB G BE2W=0.76 +22-15                                                       
+ 35CLS G  KC=3.79E-6 6$LC=3.01E-7 5$MC=2.75E-8 4                                
+ 35CLS G  IPC=0.001208 18                                                       
  35CL  L 4173.43   23 (5/2+)           35 FS     6                              
  35CLX L XREF=MOQ(4170*)                                                        
  35CL2 L ISPIN=1/2                                                              
@@ -415,13 +479,23 @@
  35CL2cL (1972Br33, DSAM), 105 fs {I+35-30} (1971Wi13, DSAM), 55 fs {I6}        
  35CL3cL (1972Hu11, DSAM), and 34 fs {I9} (1976Me12, DSAM) in (p,|g)            
  35CL  G 1479.40      45     14 [M1,E2]                                         
+ 35CLS G  CC=9.1E-5 13$KC=2.00E-5 17$LC=1.59E-6 14$MC=1.46E-7 13                
+ 35CLS G  IPC=6.9E-5 11                                                         
  35CL cG $B(M1)(W.u.)=0.048 {I+20-12} if M1, B(E2)(W.u.)=82 {I+34-21} if E2     
  35CL cG $B(E2)(W.u.)=82 {I+34-21} upper bound exceeds RUL=100 if E2            
  35CL  G 1527.72      17     LT [M1,E2]                                         
+ 35CLS G  CC=0.000106 15$KC=1.88E-5 15$LC=1.50E-6 12$MC=1.37E-7 11              
+ 35CLS G  IPC=8.6E-5 14                                                         
  35CL  G 2410.19      28     9  [M1,E2]                                         
+ 35CLS G  CC=0.00048 5$KC=8.42E-6 32$LC=6.69E-7 26$MC=6.12E-8 24                
+ 35CLS G  IPC=0.00047 5                                                         
  35CL cG $B(M1)(W.u.)=0.0068 {I+33-19} if M1, B(E2)(W.u.)=4.5 {I+21-13} if E2   
  35CL  G 2953.92      5.2    LE [E2]                                            
- 35CL  G 4173.16      100    17 [M1,E2]                                         
+ 35CLS G  CC=0.000771 11$KC=6.25E-6 9$LC=4.96E-7 7$MC=4.54E-8 6                 
+ 35CLS G  IPC=0.000764 11                                                       
+ 35CL  G 4173.16      100    17 [M1,E2]                0.00116 7                
+ 35CLS G  KC=3.65E-6 8$LC=2.90E-7 6$MC=2.65E-8 6                                
+ 35CLS G  IPC=0.00116 7                                                         
  35CL cG $B(M1)(W.u.)=0.0047 {I+15-7} if M1, B(E2)(W.u.)=1.02 {I+33-14} if E2   
  35CL  L 4177.9    2  3/2-             27.0 FS   28                             
  35CLX L XREF=LOQ(4170*)R(4167)                                                 
@@ -430,17 +504,29 @@
  35CL2cL DSAM), 42 fs {I4} (1973Fa07, DSAM), and 47 fs {I10} (1976Me12, DSAM)   
  35CL3cL from (p,|g)                                                            
  35CL  G 1175.2       0.82   LT [E1]                                            
+ 35CLS G  CC=6.06E-5 8$KC=1.707E-5 24$LC=1.357E-6 19$MC=1.241E-7 17             
+ 35CLS G  IPC=4.20E-5 6                                                         
  35CL  G 1483.9       13.1   33 [E1]                                            
  35CLB G BE1W=5.7E-4 +16-14                                                     
+ 35CLS G  CC=0.000265 4$KC=1.146E-5 16$LC=9.11E-7 13$MC=8.33E-8 12              
+ 35CLS G  IPC=0.0002529 35                                                      
  35CL  G 1532.2       0.82   LT [M2]                                            
+ 35CLS G  CC=6.18E-5 9$KC=3.10E-5 4$LC=2.470E-6 35$MC=2.260E-7 32               
+ 35CLS G  IPC=2.81E-5 4                                                         
  35CL  G 2414.7       1.6    LT [E1]                                            
- 35CL  G 2958.4       51     8  (E1+M2)  +0.11   4                              
+ 35CLS G  CC=0.000921 13$KC=5.57E-6 8$LC=4.42E-7 6$MC=4.05E-8 6                 
+ 35CLS G  IPC=0.000915 13                                                       
+ 35CL  G 2958.4       51     8  (E1+M2)  +0.11   4     1.22E-3 2                
  35CL cG M,MR$D+Q from |g(|q) in (p,|g); |D|p=yes from level scheme.            
  35CLB G BE1W=2.8E-4 +5-4 $BM2W=1.7 +16-11                                      
+ 35CLS G  KC=4.31E-6 7$LC=3.42E-7 6$MC=3.13E-8 5                                
+ 35CLS G  IPC=0.001211 19                                                       
  35CL cG $B(M2)(W.u.)=1.7 {I+16-11} upper bound exceeds RUL=3                   
- 35CL  G 4177.6       100    8  (E1+M2)  +0.06   3                              
+ 35CL  G 4177.6       100    8  (E1+M2)  +0.06   3     1.74E-3 3                
  35CL cG M,MR$D+Q from |g(|q) in (p,|g); |D|p=yes from level scheme.            
  35CLB G BE1W=1.93E-4 +28-20 $BM2W=0.18 +24-14                                  
+ 35CLS G  KC=2.78E-6 4$LC=2.206E-7 32$MC=2.018E-8 29                            
+ 35CLS G  IPC=0.001740 25                                                       
  35CL  L 4347.76   7  9/2-             1.0 PS    6                              
  35CLX L XREF=FGHILMO                                                           
  35CL cL E$weighted average of 4347.8 {I6} from ({+28}Si,|ap|g), 4348.29 {I24}  
@@ -463,6 +549,8 @@
  35CL cG MR$weighted average of -0.36 {I3} from (|a,p|g), -0.3 {I1} from        
  35CL2cG ({+28}Si,|ap|g), and -0.65 {I30} from ({+16}O,|ap|g).                  
  35CLB G BM1W=0.007 +7-3 $BE2W=2.5 +27-10                                       
+ 35CLS G  CC=3.57E-5 5$KC=2.82E-5 4$LC=2.242E-6 33$MC=2.050E-7 30               
+ 35CLS G  IPC=5.11E-6 9                                                         
  35CL  G 1701.88   25 46.8   24 E1+M2    -0.018  12                             
  35CL cG E$weighted average of 1702.0 {I3} from ({+24}Mg,|ap|g), 1701.7 {I5}    
  35CL2cG from ({+16}O,|ap|g), and 1701.85 {I25} from ({+14}N,|apn|g). Other:    
@@ -475,10 +563,16 @@
  35CL cG MR$from (p,|g). Others: +0.5 {I+5-3} from ({+28}Si,|ap|g), +0.5 {I4}   
  35CL2cG from ({+16}O,|ap|g).                                                   
  35CLB G BE1W=3.7E-5 +39-14 $BM2W=0.019 +47-17                                  
+ 35CLS G  CC=0.000434 6$KC=9.24E-6 13$LC=7.34E-7 10$MC=6.71E-8 9                
+ 35CLS G  IPC=0.000424 6                                                        
  35CL  G 2584.51      4.4    LE [M2]                                            
+ 35CLS G  CC=0.000329 5$KC=1.100E-5 15$LC=8.74E-7 12$MC=8.00E-8 11              
+ 35CLS G  IPC=0.000317 4                                                        
  35CL  G 4347.8    8  12.4   11 [E3]                                            
  35CL cG E,RI$from ({+16}O,|ap|g).                                              
  35CLB G BE3W=44 +46-17                                                         
+ 35CLS G  CC=0.001000 14$KC=4.54E-6 6$LC=3.61E-7 5$MC=3.30E-8 5                 
+ 35CLS G  IPC=0.000995 14                                                       
  35CL  L 4624.3    3  3/2,5/2          40 FS     17                             
  35CLX L XREF=B(?)LMO                                                           
  35CL cL E$other: 4625.3 {I28} from (|a,p); 4618 {I2} from (|a,p|g) is          
@@ -499,12 +593,22 @@
  35CL cL T$lifetime |t=110 fs {I29}: weighted average of 270 fs {I95} (1972Hu11,
  35CL2cL DSAM) and 105 fs {I17} (1976Me12, DSAM) in (p,|g)                      
  35CL  G 1606.95      100    16 [M1,E2]                                         
+ 35CLS G  CC=0.000133 19$KC=1.71E-5 13$LC=1.36E-6 10$MC=1.24E-7 9               
+ 35CLS G  IPC=0.000115 17                                                       
  35CL cG $B(M1)(W.u.)=0.040 {I+23-5} if M1, B(E2)(W.u.)=58 {I+34-7} if E2       
  35CL  G 1767.17      54     16 [E1]                                            
  35CLB G BE1W=4.6E-4 +30-9                                                      
+ 35CLS G  CC=0.000483 7$KC=8.72E-6 12$LC=6.93E-7 10$MC=6.33E-8 9                
+ 35CLS G  IPC=0.000473 7                                                        
  35CL  G 2075.79      15     LT [E1]                                            
+ 35CLS G  CC=0.000702 10$KC=6.88E-6 10$LC=5.46E-7 8$MC=5.00E-8 7                
+ 35CLS G  IPC=0.000695 10                                                       
  35CL  G 3550.29      15     LT [M2]                                            
- 35CL  G 4769.51      15     LT [E1]                                            
+ 35CLS G  CC=0.000645 9$KC=6.27E-6 9$LC=4.98E-7 7$MC=4.56E-8 6                  
+ 35CLS G  IPC=0.000639 9                                                        
+ 35CL  G 4769.51      15     LT [E1]                   1.95E-3 3                
+ 35CLS G  KC=2.370E-6 33$LC=1.880E-7 26$MC=1.720E-8 24                          
+ 35CLS G  IPC=0.001950 27                                                       
  35CL  L 4839.10   11 (1/2+,3/2)       9.7 FS    35                             
  35CLX L XREF=OX(4839*)                                                         
  35CL cL J$from primary |g transitions in (p,|g): 2339.4|g from 7178.6, 1/2+    
@@ -534,17 +638,27 @@
  35CL2cL DSAM), 7 fs {I3} (1973Fa07, DSAM), and 10 fs {I3} (1976Me12, DSAM) from
  35CL3cL (p,|g). Other: |t=0.28 ps {I6} from (|a,p|g) in 1972Br33 with DSAM     
  35CL  G 1878.27      15     5  [M1,E2]                                         
+ 35CLS G  CC=0.000240 30$KC=1.29E-5 7$LC=1.02E-6 6$MC=9.4E-8 5                  
+ 35CLS G  IPC=0.000226 29                                                       
  35CL cG $B(M1)(W.u.)=0.051 {I+30-16} if M1, B(E2)(W.u.)=55 {I+32-17} if E2     
  35CL  G 2186.89      16     LT [E2]                                            
+ 35CLS G  CC=0.000417 6$KC=1.032E-5 14$LC=8.20E-7 11$MC=7.50E-8 11              
+ 35CLS G  IPC=0.000406 6                                                        
  35CL  G 2235.21      47     8  [M1,E2]                                         
+ 35CLS G  CC=0.00040 4$KC=9.5E-6 4$LC=7.59E-7 33$MC=6.94E-8 30                  
+ 35CLS G  IPC=0.00039 4                                                         
  35CL cG RI$other: 52 {I9} from (|a,p|g) for a doublet                          
  35CL cG $B(M1)(W.u.)=0.095 {I+43-18} if M1, B(E2)(W.u.)=72 {I+33-14} if E2     
  35CL cG $B(E2)(W.u.)=72 {I+33-14} upper bound exceeds RUL=100 if E2            
  35CL  G 3117.4    20 100    8  [M1,E2]                                         
+ 35CLS G  CC=0.00078 6$KC=5.61E-6 15$LC=4.45E-7 12$MC=4.07E-8 11                
+ 35CLS G  IPC=0.00077 6                                                         
  35CL cG E$from (|a,p|g).                                                       
  35CL cG RI$weighted average of 100 {I9} from (|a,p|g) and 100 {I8} from (p,|g) 
  35CL cG $B(M1)(W.u.)=0.075 {I+33-12} if M1, B(E2)(W.u.)=29 {I+13-5} if E2      
- 35CL  G 4880.60      8.1    LT [E2]                                            
+ 35CL  G 4880.60      8.1    LT [E2]                   1.46E-3 2                
+ 35CLS G  KC=2.97E-6 4$LC=2.361E-7 33$MC=2.160E-8 30                            
+ 35CLS G  IPC=0.001454 20                                                       
  35CL  L 5009.1    18 (1/2,3/2)        7.6 FS    21                             
  35CLX L XREF=LMOR                                                              
  35CL cL E$weighted average of 5006.9 {I27} from (|a,p) and 5010.1 {I18} from   
@@ -591,7 +705,9 @@
  35CL  G 2568.7       15     LT                                                 
  35CL  G 3451.2       6      LT                                                 
  35CL  G 3994.9       4      LT                                                 
- 35CL  G 5214.1       100        [M1,E2]                                        
+ 35CL  G 5214.1       100        [M1,E2]               0.00147 8                
+ 35CLS G  KC=2.69E-6 5$LC=2.13E-7 4$MC=1.95E-8 4                                
+ 35CLS G  IPC=0.00147 8                                                         
  35CL  L 5403.3    10 3/2-             11.8 FS   28                             
  35CLX L XREF=LOR                                                               
  35CL cL E$weighted average of 5402.0 {I29} from (|a,p) and 5403.5 {I10} from   
@@ -603,10 +719,18 @@
  35CL2cL I|g(4183)=100 {I18} from (p,|g).                                       
  35CL  G 2400.6       46     9  [E1]                                            
  35CLB G BE1W=0.0011 +6-2                                                       
- 35CL  G 3640.0       18     LT [E1]                                            
- 35CL  G 4183.7       100    18 [E1]                                            
+ 35CLS G  CC=0.000913 13$KC=5.62E-6 8$LC=4.46E-7 6$MC=4.08E-8 6                 
+ 35CLS G  IPC=0.000907 13                                                       
+ 35CL  G 3640.0       18     LT [E1]                   1.54E-3 2                
+ 35CLS G  KC=3.28E-6 5$LC=2.60E-7 4$MC=2.379E-8 33                              
+ 35CLS G  IPC=0.001538 22                                                       
+ 35CL  G 4183.7       100    18 [E1]                   1.75E-3 2                
  35CLB G BE1W=4.5E-4 +20-6                                                      
- 35CL  G 5402.9       13     LT [E1]                                            
+ 35CLS G  KC=2.77E-6 4$LC=2.196E-7 31$MC=2.009E-8 28                            
+ 35CLS G  IPC=0.001746 24                                                       
+ 35CL  G 5402.9       13     LT [E1]                   2.14E-3 3                
+ 35CLS G  KC=2.050E-6 29$LC=1.626E-7 23$MC=1.488E-8 21                          
+ 35CLS G  IPC=0.002142 30                                                       
  35CL  L 5407.07   21 11/2-            0.28 PS   7                          D   
  35CLX L XREF=FGHILM                                                            
  35CL cL E$weighted average of 5407.4 {I8} from ({+28}Si,|ap|g), 5407.64 {I27}  
@@ -617,6 +741,7 @@
  35CL cL T$lifetime |t=0.4 ps {I1} from (|a,p|g) (1974Lo17, DSAM). Other: |t<1.1
  35CL2cL ps from ({+28}Si,|ap|g) (2007Ks01, DSAM).                              
  35CL  G 1059.32   20 14.5   22 M1+E2    +0.14   3                              
+ 35CLS G  CC=3.67E-5 5$KC=3.38E-5 5$LC=2.69E-6 4$MC=2.461E-7 35                 
  35CL cG E$weighted average of 1059.3 {I2} from ({+24}Mg,|ap|g), 1059.5 {I2}    
  35CL2cG from ({+16}O,|ap|g), and 1059.17 {I20} from ({+14}N,|apn|g). Other:    
  35CL3cG 1059.3 {I10} from (|a,p|g)                                             
@@ -636,6 +761,8 @@
  35CL3cG from (|a,p|g)                                                          
  35CL cG M$from |g|g(DCO) and |g|g(lin pol) in ({+28}Si,|ap|g), |DJ=2           
  35CLB G BE2W=4.6 +15-9                                                         
+ 35CLS G  CC=0.000444 6$KC=9.87E-6 14$LC=7.84E-7 11$MC=7.17E-8 10               
+ 35CLS G  IPC=0.000434 6                                                        
  35CL  L 5531      5                                                            
  35CLX L XREF=LMO                                                               
  35CL cL E$weighted average of 5531 {I5} from (|a,p) and 5535 {I20} from        
@@ -656,9 +783,13 @@
  35CL2cL (p,|g)                                                                 
  35CL cL J$L(d,{+3}He)=2 from 0+.                                               
  35CL cL T$lifetime |t=3 fs {I1} from (p,|g) (1976Me12, DSAM).                  
- 35CL  G 3835.0       37     14 [M1,E2]                                         
+ 35CL  G 3835.0       37     14 [M1,E2]                0.00105 7                
+ 35CLS G  KC=4.12E-6 9$LC=3.27E-7 7$MC=2.99E-8 7                                
+ 35CLS G  IPC=0.00104 7                                                         
  35CL cG $B(M1)(W.u.)=0.050 {I+29-19} if M1, B(E2)(W.u.)=13 {I+8-5} if E2       
- 35CL  G 5597.9       100    14 [M1,E2]                                         
+ 35CL  G 5597.9       100    14 [M1,E2]                0.00157 8                
+ 35CLS G  KC=2.44E-6 4$LC=1.938E-7 34$MC=1.773E-8 31                            
+ 35CLS G  IPC=0.00157 8                                                         
  35CL cG $B(M1)(W.u.)=0.044 {I+23-12} if M1, B(E2)(W.u.)=5.3 {I+28-14} if E2    
  35CL  L 5633.6    30                                                           
  35CLX L XREF=LM(5650*)R(5660*)W(5600*)Y(5650*)                                 
@@ -684,10 +815,16 @@
  35CL cL $The contribution of I|g to unknown levels adds up to 18% of           
  35CL2cL I|g(2652)=100 {I6} from (p,|g).                                        
  35CL  G 2652         100    6  [M1,E2]                                         
+ 35CLS G  CC=0.00058 5$KC=7.22E-6 24$LC=5.73E-7 19$MC=5.24E-8 18                
+ 35CLS G  IPC=0.00058 5                                                         
  35CL cG $B(M1)(W.u.)=0.076 {I+30-14} if M1, B(E2)(W.u.)=41 {I+16-7} if E2      
- 35CL  G 3892         7.5    25 [M1,E2]                                         
+ 35CL  G 3892         7.5    25 [M1,E2]                0.00107 7                
+ 35CLS G  KC=4.04E-6 9$LC=3.20E-7 7$MC=2.93E-8 6                                
+ 35CLS G  IPC=0.00106 7                                                         
  35CL cG $B(M1)(W.u.)=0.0018 {I+10-6} if M1, B(E2)(W.u.)=0.45 {I+25-15} if E2   
- 35CL  G 4435         7.5    LT [M1,E2]                                         
+ 35CL  G 4435         7.5    LT [M1,E2]                0.00125 8                
+ 35CLS G  KC=3.35E-6 7$LC=2.66E-7 5$MC=2.44E-8 5                                
+ 35CLS G  IPC=0.00125 8                                                         
  35CL  L 5682.2    20 1/2-,3/2-                                                 
  35CLX L XREF=LM(5650*)OR                                                       
  35CL cL E$weighted average of 5679.7 {I34} from (|a,p), 5683 {I2} from (p,|g), 
@@ -741,11 +878,15 @@
  35CL3cL reactions. Spin=7/2,11/2 from p|g(|q) in (|a,p|g)                      
  35CL cL T$lifetime |t<0.4 ps from ({+28}Si,|ap|g) (2007Ks01, DSAM).            
  35CL  G 1579.09   30 100    11  M1+E2   -0.2    1                              
+ 35CLS G  CC=0.0001074 22$KC=1.644E-5 26$LC=1.307E-6 21$MC=1.195E-7 19          
+ 35CLS G  IPC=8.95E-5 19                                                        
  35CL cG E$weighted average of 1578.9 {I5} from ({+16}O,|ap|g), 1579.15 {I30}   
  35CL2cG from ({+14}N,|apn|g), and 1579.3 {I15} from (|a,p|g)                   
  35CL cG M,MR$D+Q and |d from |g|g(|q)(DCO) in ({+28}Si,|ap|g) with |DJ=1; E1+M2
  35CL2cG ruled out by RUL. Other: -0.8 {I4} from |g(|q) in (|a,p|g)             
  35CL  G 1983.7       11.1   22 [E1]                                            
+ 35CLS G  CC=0.000639 9$KC=7.34E-6 10$LC=5.83E-7 8$MC=5.34E-8 7                 
+ 35CLS G  IPC=0.000631 9                                                        
  35CL cG RI$from ({+28}Si,|ap|g)                                                
  35CL  G 2763.66                                                                
  35CL  L 6087.31   24 13/2-            6.2 PS    6                              
@@ -760,6 +901,7 @@
  35CL2cL (|a,p|g) in 1974Lo17 with RDM and 7.7 ps {I14} from ({+14}N,|apn|g) in 
  35CL3cL 1976Wa11.                                                              
  35CL  G 680.35    10 100.0  21 M1+E2    +0.020  15                             
+ 35CLS G  CC=8.70E-5 12$KC=8.00E-5 11$LC=6.38E-6 9$MC=5.83E-7 8                 
  35CL cG E$weighted average of 680.4 {I1} from ({+24}Mg,|ap|g), 680.5 {I5} from 
  35CL2cG ({+16}O,|ap|g), and 680.22 {I15} from ({+14}N,|apn|g). Other: 679.9    
  35CL3cG {I10} from (|a,p|g)                                                    
@@ -775,6 +917,8 @@
  35CL2cG ({+16}O,|ap|g), and 18 {I6} from (|a,p|g)                              
  35CL cG M$from |g|g(|q)(DCO) and |g|g(lin pol) in ({+28}Si,|ap|g), |DJ=2.      
  35CLB G BE2W=0.054 +9-8                                                        
+ 35CLS G  CC=0.0002076 29$KC=1.573E-5 22$LC=1.251E-6 18$MC=1.144E-7 16          
+ 35CLS G  IPC=0.0001905 27                                                      
  35CL  L 6106.2    21 (3/2,5/2+)       8.3 FS    21                             
  35CLX L XREF=L(6104*)OW(6140*)X(6136*)                                         
  35CL cL E$weighted average of 6104 {I4} from (|a,p) and 6106.2 {I21} from      
@@ -1039,6 +1183,7 @@
  35CL  G 5598.3       11        D+Q                                             
  35CL cG MR$>+2.5 or -0.01 {I10} from |g(|q) in (p,|g).                         
  35CL  G 6141.9       100       (M1+E2)                                         
+ 35CLS G  IPC=0.00170 8                                                         
  35CL cG M$D+Q from |g(|q) in (p,|g); E1+M2 is less likely for this strong      
  35CL2cG primary transition                                                     
  35CL cG MR$-0.05 {I3} or +2.5 {I3} in (p,|g).                                  
@@ -1052,7 +1197,9 @@
  35CL  G 3048.5       23                                                        
  35CL  G 3283.8       17                                                        
  35CL  G 3453.3       11                                                        
- 35CL  G 4233.3       100      (M1+E2)   +0.28   25                             
+ 35CL  G 4233.3       100      (M1+E2)   +0.28   25    1.12E-3 3                
+ 35CLS G  KC=3.53E-6 5$LC=2.81E-7 4$MC=2.57E-8 4                                
+ 35CLS G  IPC=0.001115 27                                                       
  35CL cG M$D+Q from |g(|q) in (p,|g); E1+M2 is less likely for this strong      
  35CL2cG primary transition                                                     
  35CL  G 4393.5       30        D(+Q)    +0.011  18                             
@@ -1113,13 +1260,26 @@
  35CL cL $                                                                      
  35CL  G 1903         0.59   7                                                  
  35CL  G 1962.8       0.11      [E1]                                            
+ 35CLS G  CC=0.000624 9$KC=7.46E-6 10$LC=5.92E-7 8$MC=5.42E-8 8                 
+ 35CLS G  IPC=0.000616 9                                                        
  35CL  G 2778.9       1.49   11 [M1,E2]                                         
- 35CL  G 4385.7       100.0  11 M1+E2    -0.07   2                              
- 35CL  G 4545.9       2.13   11 (E1+M2)  +0.6    4                              
+ 35CLS G  CC=0.00064 6$KC=6.70E-6 21$LC=5.32E-7 17$MC=4.87E-8 15                
+ 35CLS G  IPC=0.00063 6                                                         
+ 35CL  G 4385.7       100.0  11 M1+E2    -0.07   2     1.16E-3 2                
+ 35CLS G  KC=3.36E-6 5$LC=2.67E-7 4$MC=2.438E-8 34                              
+ 35CLS G  IPC=0.001159 16                                                       
+ 35CL  G 4545.9       2.13   11 (E1+M2)  +0.6    4     0.0016322                
+ 35CLS G  KC=3.0E-6 4$LC=2.34E-7 32$MC=2.14E-8 29                               
+ 35CLS G  IPC=0.00163 22                                                        
  35CL cG M,MR$D+Q and |d from |g(|q) in (p,|g); |D|p=yes from level scheme      
- 35CL  G 4902.9       0.72   8  [E1]                                            
- 35CL  G 5785.2       0.35   4  [E1]                                            
+ 35CL  G 4902.9       0.72   8  [E1]                   1.99E-3 3                
+ 35CLS G  KC=2.295E-6 32$LC=1.820E-7 25$MC=1.665E-8 23                          
+ 35CLS G  IPC=0.001992 28                                                       
+ 35CL  G 5785.2       0.35   4  [E1]                   2.24E-3 3                
+ 35CLS G  KC=1.896E-6 27$LC=1.504E-7 21$MC=1.376E-8 19                          
+ 35CLS G  IPC=0.002235 31                                                       
  35CL  G 7548.0       0.287  32 (M2)                                            
+ 35CLS G  IPC=0.001581 22                                                       
  35CL cG M$Q(+O) with |d(O/Q)=0.1 {I2} from |g(|q) in (p,|g); |D|p=yes from     
  35CL2cG level scheme; E3 component is less likely based on RUL                 
  35CL  L 7561.3    6   1/2,3/2                                                  
@@ -1145,23 +1305,41 @@
  35CL cL T$lifetime |t<20 fs from (p,|g) (1971Wi13, DSAM), which is equivalent  
  35CL2cL to |G>0.033 eV.                                                        
  35CL  G 2437.4       5.8       [E1]                                            
+ 35CLS G  CC=0.000934 13$KC=5.50E-6 8$LC=4.37E-7 6$MC=3.99E-8 6                 
+ 35CLS G  IPC=0.000928 13                                                       
  35CL  G 2719.7       6.1                                                       
  35CL  G 2761.6       6.1                                                       
  35CL  G 2830.8       3.9                                                       
  35CL  G 2976.4       5.5                                                       
- 35CL  G 3422.7       9.1       [E1]                                            
+ 35CL  G 3422.7       9.1       [E1]                   1.44E-3 2                
+ 35CLS G  KC=3.54E-6 5$LC=2.81E-7 4$MC=2.57E-8 4                                
+ 35CLS G  IPC=0.001440 20                                                       
  35CL  G 3427.2                                                                 
- 35CL  G 3541.5       6.1       [E1]                                            
- 35CL  G 4437.6       15        [E1]                                            
- 35CL  G 4597.8       24         M1+E2   +0.50   22                             
+ 35CL  G 3541.5       6.1       [E1]                   1.50E-3 2                
+ 35CLS G  KC=3.39E-6 5$LC=2.69E-7 4$MC=2.461E-8 34                              
+ 35CLS G  IPC=0.001495 21                                                       
+ 35CL  G 4437.6       15        [E1]                   1.85E-3 3                
+ 35CLS G  KC=2.58E-6 4$LC=2.047E-7 29$MC=1.873E-8 26                            
+ 35CLS G  IPC=0.001843 26                                                       
+ 35CL  G 4597.8       24         M1+E2   +0.50   22    1.25E-3 3                
+ 35CLS G  KC=3.16E-6 5$LC=2.51E-7 4$MC=2.297E-8 33                              
+ 35CLS G  IPC=0.001252 27                                                       
  35CL cG M$D+Q from |g(|q) in (p,|g); E1+M2 is less likely for this strong      
  35CL2cG primary transition                                                     
- 35CL  G 4906.4       55        (M1+E2)                                         
+ 35CL  G 4906.4       55        (M1+E2)                0.00139 8                
+ 35CLS G  KC=2.92E-6 5$LC=2.31E-7 4$MC=2.12E-8 4                                
+ 35CLS G  IPC=0.00139 8                                                         
  35CL cG M$D+Q from |g(|q) in (p,|g); |D|p=no from level scheme                 
- 35CL  G 4954.8       5.8       [M1,E2]                                         
- 35CL  G 5837.1       58         M1+E2   +0.31   7                              
+ 35CL  G 4954.8       5.8       [M1,E2]                0.00140 8                
+ 35CLS G  KC=2.88E-6 5$LC=2.28E-7 4$MC=2.09E-8 4                                
+ 35CLS G  IPC=0.00140 8                                                         
+ 35CL  G 5837.1       58         M1+E2   +0.31   7     1.57E-3 2                
+ 35CLS G  KC=2.290E-6 32$LC=1.817E-7 25$MC=1.663E-8 23                          
+ 35CLS G  IPC=0.001565 23                                                       
  35CL  G 6380.8       3.3       [E2]                                            
+ 35CLS G  IPC=0.001825 26                                                       
  35CL  G 7599.9       100        M1+E2   -0.19   4                              
+ 35CLS G  IPC=0.001916 27                                                       
  35CL  L 7618.7    5  5/2+                                                      
  35CLX L XREF=O                                                                 
  35CL cL J$spin=5/2 from |g(|q) in (p,|g); 7617.8|g M1+E2 to 3/2+.              
@@ -1172,8 +1350,11 @@
  35CL  G 3440.6       3.9                                                       
  35CL  G 3559.4       2.6                                                       
  35CL  G 4455.5       3.9                                                       
- 35CL  G 5855.0       13        M1+E2    +0.48   11                             
+ 35CL  G 5855.0       13        M1+E2    +0.48   11    1.59E-3 3                
+ 35CLS G  KC=2.286E-6 32$LC=1.814E-7 26$MC=1.660E-8 23                          
+ 35CLS G  IPC=0.001585 25                                                       
  35CL  G 7617.8       100       M1+E2    +2.2    3                              
+ 35CLS G  IPC=0.002036 29                                                       
  35CL  L 7648.1    30                                                           
  35CLX L XREF=L                                                                 
  35CL  L 7656.6    8  (1/2,3/2,5/2+)                                            
@@ -1201,9 +1382,13 @@
  35CL  G 3324.0       11                                                        
  35CL  G 3498.3       8.8                                                       
  35CL  G 4508.7       3.2                                                       
- 35CL  G 4668.9       16        M1+E2    -1.4    5                              
+ 35CL  G 4668.9       16        M1+E2    -1.4    5     0.00134 4                
+ 35CLS G  KC=3.14E-6 5$LC=2.49E-7 4$MC=2.277E-8 34                              
+ 35CLS G  IPC=0.00134 4                                                         
  35CL  G 5025.8       23        D(+Q)    +0.3    22                             
- 35CL  G 5908.2       100       M1+E2    +0.86   14                             
+ 35CL  G 5908.2       100       M1+E2    +0.86   14    1.64E-3 3                
+ 35CLS G  KC=2.270E-6 32$LC=1.801E-7 25$MC=1.648E-8 23                          
+ 35CLS G  IPC=0.001634 26                                                       
  35CL  G 7671.0       1.4                                                       
  35CL  L 7685.5    8  3/2-                                                      
  35CLX L XREF=OP                                                                
@@ -1240,6 +1425,8 @@
  35CL2cL in (p,p):resonances.                                                   
  35CL cL $|G{-p}=4 eV {I1} in (p,p).                                            
  35CL  G 2051         4.8       M1+E2                                           
+ 35CLS G  CC=0.00032 4$KC=1.10E-5 5$LC=8.8E-7 4$MC=8.0E-8 4                     
+ 35CLS G  IPC=0.00030 4                                                         
  35CL cG MR$<-2 or |>13 from |g(|q) in (p,|g).                                  
  35CL  G 2825.3       0.48                                                      
  35CL  G 2867.2       1.6                                                       
@@ -1248,7 +1435,9 @@
  35CL  G 3593.8       2.4                                                       
  35CL  G 3787.7       0.72                                                      
  35CL  G 4703.4       1.2                                                       
- 35CL  G 5060.3       4.8       M1+E2                                           
+ 35CL  G 5060.3       4.8       M1+E2                  0.00143 8                
+ 35CLS G  KC=2.80E-6 5$LC=2.22E-7 4$MC=2.03E-8 4                                
+ 35CLS G  IPC=0.00143 8                                                         
  35CL cG MR$-1.01 {I10} or |>13 from (p,|g)                                     
  35CL  G 5942.7       0.48                                                      
  35CL  G 6486.4       0.6                                                       
@@ -1260,15 +1449,22 @@
  35CL  G 2863.7       47                                                        
  35CL  G 2974.8       4.7                                                       
  35CL  G 3632.2       14                                                        
- 35CL  G 3801.7       23        (E1)                                            
+ 35CL  G 3801.7       23        (E1)                   1.60E-3 2                
+ 35CLS G  KC=3.11E-6 4$LC=2.466E-7 35$MC=2.256E-8 32                            
+ 35CLS G  IPC=0.001601 22                                                       
  35CL cG M$D(+Q) with |d=-0.16 {I17} from |g(|q) in (p,|g); |D|p=yes from level 
  35CL2cG scheme; M2 component is less likely for the primary transition         
- 35CL  G 4581.6       37        M1+E2    +0.18   8                              
- 35CL  G 5098.7       100       (E1)                                            
+ 35CL  G 4581.6       37        M1+E2    +0.18   8     1.23E-3 2                
+ 35CLS G  KC=3.16E-6 4$LC=2.511E-7 35$MC=2.298E-8 32                            
+ 35CLS G  IPC=0.001222 18                                                       
+ 35CL  G 5098.7       100       (E1)                   2.05E-3 3                
+ 35CLS G  KC=2.192E-6 31$LC=1.739E-7 24$MC=1.591E-8 22                          
+ 35CLS G  IPC=0.002048 29                                                       
  35CL cG M$D(+Q) with |d=+0.1 {I30} from |g(|q) in (p,|g); |D|p=yes from level  
  35CL2cG scheme; M2 component is less likely for the primary transition         
  35CL  G 5981.1       5.6                                                       
  35CL  G 6524.8       1.4       [E3]                                           ?
+ 35CLS G  IPC=0.001562 22                                                       
  35CL cG $This transition is considered questionable by the evaluators since it 
  35CL2cG would require Mult=E3 which is unlikely for this primary transition    
  35CL3cG based on RUL                                                           
@@ -1339,6 +1535,8 @@
  35CL  G 2238.7       1.4                                                   Y   
  35CL  G 2622.6       3.8                                                   Y   
  35CL  G 3659.1       76        (M1+E2)  -0.05   3                          Y   
+ 35CLS G  CC=0.000917 13$KC=4.33E-6 6$LC=3.44E-7 5$MC=3.15E-8 4                 
+ 35CLS G  IPC=0.000913 13                                                       
  35CL cG M$D+Q from (p,|g); |D|p=no from level scheme                           
  35CL cG $B(M1)(W.u.)=1.03|*10{+3} {I19} exceeds RUL=10                         
  35CL cG $B(E2)(W.u.)=7|*10{+2} {I+11-6} exceeds RUL=100                        
@@ -1352,10 +1550,12 @@
  35CL  G 4834.2       11                                                    Y   
  35CL  G 6073.5       5.1                                                   Y   
  35CL  G 6617.2       100       (E1)                                        Y   
+ 35CLS G  IPC=0.002433 34                                                       
  35CL cG M$D(+Q) with |d=+0.06 {I3} from (p,|g); |D|p=yes from level scheme; M2 
  35CL2cG component is less likely for this strong primary transition            
  35CL cG $B(E1)(W.u.)=6.5 {I+10-8} exceeds RUL=0.1                              
  35CL  G 7836.3       57        (E1)                                        Y   
+ 35CLS G  IPC=0.00268 4                                                         
  35CL cG M$D(+Q) with |d=+0.02 {I3} from (p,|g); |D|p=yes from level scheme; M2 
  35CL2cG component is less likely for this strong primary transition            
  35CL cG $B(E1)(W.u.)=2.24 {I+47-44} exceeds RUL=0.1                            
@@ -1398,12 +1598,16 @@
  35CL2cG ({+16}O,|ap|g)                                                         
  35CL cG M,MR$from |g|g(DCO) in ({+28}Si,|ap|g)                                 
  35CL  G 1946.35   30 48.0   26 E1+M2    +0.2    1                              
+ 35CLS G  CC=0.000594 22$KC=8.0E-6 5$LC=6.3E-7 4$MC=5.8E-8 4                    
+ 35CLS G  IPC=0.000585 23                                                       
  35CL cG E$weighted average of 1946.2 {I5} from ({+16}O,|ap|g) and 1946.40 {I30}
  35CL2cG from ({+14}N,|apn|g)                                                   
  35CL cG RI$weighted average of 46 {I5} from ({+28}Si,|ap|g) and 48.5 {I26} from
  35CL2cG ({+16}O,|ap|g)                                                         
  35CL cG M,MR$from |g|g(DCO) and |g|g(lin pol) in ({+28}Si,|ap|g), |DJ=1        
  35CL  G 2465.94   30 100.0  20 E1+M2    -0.25   10                             
+ 35CLS G  CC=0.00091 4$KC=5.80E-6 34$LC=4.61E-7 27$MC=4.21E-8 25                
+ 35CLS G  IPC=0.00091 4                                                         
  35CL cG E$weighted average of 2466.2 {I5} from ({+16}O,|ap|g) and 2465.85 {I30}
  35CL2cG from ({+14}N,|apn|g)                                                   
  35CL cG RI$weighted average of 100 {I9} from ({+28}Si,|ap|g) and 100.0 {I20}   
@@ -1492,8 +1696,10 @@
  35CL  G 3814.2       1.3    LT                                                 
  35CL  G 3928.5       1.7                                                       
  35CL  G 6767.7       100       M1+E2                                           
+ 35CLS G  IPC=0.00183 8                                                         
  35CL cG MR$+0.21 {I4} or -3.1 {I4} from (p,|g)                                 
  35CL  G 7986.8       60        M1+E2                                           
+ 35CLS G  IPC=0.00205 8                                                         
  35CL cG MR$-0.36 {I2} or -11 {I3} from (p,|g).                                 
  35CL  L 7995.6    10 (5/2)                                                     
  35CLX L XREF=O                                                                 
@@ -1573,7 +1779,9 @@
  35CL  G 4070.6       1.4                                                       
  35CL  G 4119.7       2.5                                                       
  35CL  G 5035.4       7                                                         
- 35CL  G 5344.0       100       M1+E2    -0.20   2                              
+ 35CL  G 5344.0       100       M1+E2    -0.20   2     1.44E-3 2                
+ 35CLS G  KC=2.57E-6 4$LC=2.040E-7 29$MC=1.866E-8 26                            
+ 35CLS G  IPC=0.001435 20                                                       
  35CL cG M,MR$D+Q with |d=-0.20 {I2} or +19 {I8} from (p,|g); E1+M2 and the     
  35CL2cG larger |d(E2/M1) is ruled out by RUL.                                  
  35CL cG $B(M1)(W.u.)=52.1 {I+43-37} exceeds RUL=10                             
@@ -1636,7 +1844,9 @@
  35CL  G 4047.1       3.5                                                       
  35CL  G 4138.5       8.1                                                       
  35CL  G 5103.4       24                                                        
- 35CL  G 5412.0       24        M1+E2                                           
+ 35CL  G 5412.0       24        M1+E2                  0.00153 8                
+ 35CLS G  KC=2.55E-6 5$LC=2.03E-7 4$MC=1.854E-8 33                              
+ 35CLS G  IPC=0.00152 8                                                         
  35CL cG MR$+4.9 {I10} or -0.05 {I4}.                                           
  35CL  G 6342.6       8.1                                                       
  35CL  G 6886.3       95                                                        
@@ -1717,6 +1927,7 @@
  35CL  G 5205.1       1.4                                                       
  35CL  G 5513.7       0.64                                                      
  35CL  G 6444.4       18        M1+E2    +0.33   4                              
+ 35CLS G  IPC=0.001704 24                                                       
  35CLB G BM1W=0.75 +35-22 $BE2W=7.5 +41-25                                      
  35CL  G 6988.1       3.9                                                       
  35CL  G 8207.2       100       M1+E2    -0.36   4                              
@@ -1731,10 +1942,12 @@
  35CL  G 3446.3       1.8                                                       
  35CL  G 4038.2       6.7    LT                                                 
  35CL  G 4042.6       6.7    LT                                                 
- 35CL  G 5053.0       91        (E1)                                            
+ 35CL  G 5053.0       91        (E1)                   2.04E-3 3                
  35CL cG M$D+Q with |d=+0.11 {I2} from |g(|q) in (p,|g); |D|p=yes from level    
  35CL2cG scheme; but M2 component is unlikely for this strong primary transition
  35CLB G BE1W=0.062 +21-12                                                      
+ 35CLS G  KC=2.215E-6 31$LC=1.757E-7 25$MC=1.608E-8 23                          
+ 35CLS G  IPC=0.002034 28                                                       
  35CL  G 5213.2       11                                                        
  35CL  G 5521.8       6.7                                                       
  35CL  G 6452.5       3.1                                                       
@@ -1809,6 +2022,7 @@
  35CL  G 4369.06      2.3                                                       
  35CL  G 5593.3       52                                                        
  35CL  G 7067.67      100        (E1)                                           
+ 35CLS G  IPC=0.002532 35                                                       
  35CL cG M$D+Q with|d(Q/D)=+0.21 {I2} or -3.2 {I2} in (p,|g); but M2 component  
  35CL2cG is unlikely for this primary transition based on resonance |G=0.04 keV.
  35CLB G BE1W=0.069 +24-14                                                      
@@ -1832,6 +2046,7 @@
  35CL  G 5652.0       25                                                        
  35CL  G 6534.4       33                                                        
  35CL  G 7078.1       100       M1+E2                                           
+ 35CLS G  IPC=0.00189 8                                                         
  35CL cG MR$-1.7 {I1} or -0.02 {I2} from |g(|q) in (p,|g)                       
  35CL  G 8297.1       54        M1+E2                                           
  35CL cG MR$-0.15 {I4} or +9.5 {I36} from |g(|q) in (p,|g)                      
@@ -1862,12 +2077,16 @@
  35CL cL T$lifetime |t=18 fs {I1} from ({+28}Si,|ap|g) (2013Bi10, DSAM)         
  35CL cL T$from (HI,xn|g).                                                      
  35CL  G 2232.7    6  57.2   28 [M1,E2]                                         
+ 35CLS G  CC=0.00040 4$KC=9.6E-6 4$LC=7.60E-7 33$MC=6.95E-8 30                  
+ 35CLS G  IPC=0.00039 4                                                         
  35CL cG E,RI$from ({+16}O,|ap|g).                                              
  35CL cG $B(M1)(W.u.)=0.0577 {I41} if M1, B(E2)(W.u.)=43.8 {I31} if E2          
  35CL  G 2911.9    8  100    5  E2                                              
  35CL cG E,RI,M$from ({+16}O,|ap|g). Mult=Q, |DJ=2 from |g|g(DCO); M2 ruled out 
  35CL2cG by RUL                                                                 
  35CLB G BE2W=20.3 12                                                           
+ 35CLS G  CC=0.000753 11$KC=6.39E-6 9$LC=5.08E-7 7$MC=4.64E-8 7                 
+ 35CLS G  IPC=0.000746 10                                                       
  35CL  L 8323.1    13  (3/2+,5/2+)                                              
  35CLX L XREF=L(8321.0)O                                                        
  35CL cL J$primary 4209.1|g to 7/2+, 7102.9|g to 1/2+                           
@@ -1885,14 +2104,21 @@
  35CL  G 3611.7                                                                 
  35CL  G 3757.3                                                                 
  35CL  G 4269.1       23.5   24                                                 
- 35CL  G 4463.0       71     7  M1+E2    +0.15   3                              
+ 35CL  G 4463.0       71     7  M1+E2    +0.15   3     1.19E-3 2                
  35CLB G BM1W=2.9 +13-7 $BE2W=13 +8-5                                           
- 35CL  G 5378.7       74     8  M1+E2    +0.02   3                              
+ 35CLS G  KC=3.28E-6 5$LC=2.60E-7 4$MC=2.381E-8 33                              
+ 35CLS G  IPC=0.001186 17                                                       
+ 35CL  G 5378.7       74     8  M1+E2    +0.02   3     1.44E-3 2                
  35CLB G BM1W=1.8 +14-7                                                         
- 35CL  G 5687.3       2.9    15 M1+E2    -0.72   31                             
+ 35CLS G  KC=2.55E-6 4$LC=2.021E-7 28$MC=1.849E-8 26                            
+ 35CLS G  IPC=0.001437 20                                                       
+ 35CL  G 5687.3       2.9    15 M1+E2    -0.72   31    0.00157 4                
  35CLB G BM1W=0.039 +32-21 $BE2W=2.4 +23-18                                     
+ 35CLS G  KC=2.383E-6 35$LC=1.891E-7 28$MC=1.730E-8 25                          
+ 35CLS G  IPC=0.00157 4                                                         
  35CL  G 5735.6       15     8                                                  
  35CL  G 6618.0       100    10 M1+E2    +0.06   3                              
+ 35CLS G  IPC=0.001725 24                                                       
  35CLB G BM1W=1.3 +6-3 $BE2W=0.4 +6-3                                           
  35CL  G 8380.7       9      5  D+Q      1.65                                   
  35CL  L 8389.4    16                                                           
@@ -2004,9 +2230,13 @@
  35CL cL J$3080.0|g E2, |DJ=2 to 11/2-, 2399.8|g D(+Q) to 13/2-                 
  35CL cL T$lifetime |t<0.1 ps from ({+28}Si,|ap|g) (2007Ks01, DSAM)             
  35CL  G 2399.8    8  100.0  34 (M1(+E2))+0.2    +3-2                           
+ 35CLS G  CC=0.000427 17$KC=8.20E-6 15$LC=6.52E-7 12$MC=5.96E-8 11              
+ 35CLS G  IPC=0.000418 16                                                       
  35CL cG M,MR$D+Q and |d from |g|g(DCO) in ({+28}Si,|ap|g); |D|p=no from level  
  35CL2cG scheme                                                                 
  35CL  G 3080.0    7  31.8   20 E2                                              
+ 35CLS G  CC=0.000825 12$KC=5.85E-6 8$LC=4.65E-7 7$MC=4.25E-8 6                 
+ 35CLS G  IPC=0.000819 11                                                       
  35CL cG E,RI,M$from ({+16}O,|ap|g), with Mult=Q, |DJ=2 from |g|g(ADO) and M2   
  35CL2cG ruled out by RUL                                                       
  35CL  L 8506.5    5                                                            
@@ -2117,18 +2347,25 @@
  35CL2cL |g(|q) in (p,|g).                                                      
  35CL  G 2906.5       0.6    4                                                  
  35CL  G 3466.6       17     9  M1+E2    +0.60   10                             
+ 35CLS G  CC=0.000884 15$KC=4.74E-6 7$LC=3.76E-7 5$MC=3.44E-8 5                 
+ 35CLS G  IPC=0.000879 15                                                       
  35CL cG M,MR$D+Q and |d from |g(|q) in (p,|g); E1+M2 ruled out by RUL          
  35CL  G 3860.0       3.0    15                                                 
- 35CL  G 4282.1       26     7  M1+E2    -0.184  14                             
+ 35CL  G 4282.1       26     7  M1+E2    -0.184  14    1.13E-3 2                
+ 35CLS G  KC=3.47E-6 5$LC=2.76E-7 4$MC=2.523E-8 35                              
+ 35CLS G  IPC=0.001126 16                                                       
  35CL cG M,MR$D+Q and |d from |g(|q) in (p,|g); E1+M2 ruled out by RUL          
  35CL  G 4456.4       8      4                                                  
- 35CL  G 4517.4       21     11 (E1+M2)  -0.06   2                              
+ 35CL  G 4517.4       21     11 (E1+M2)  -0.06   2     1.86E-3 3                
+ 35CLS G  KC=2.53E-6 4$LC=2.009E-7 28$MC=1.838E-8 26                            
+ 35CLS G  IPC=0.001862 26                                                       
  35CL cG M,MR$D+Q and |d from |g(|q) in (p,|g); |D|p=yes from level scheme      
  35CL  G 4686.9       21     11                                                 
  35CL  G 5466.8       7      4                                                  
  35CL  G 5627.0       3.0    15                                                 
  35CL  G 5983.9       5.5    28                                                 
  35CL  G 6866.2       100    26 (E1+M2)  -0.011  3                              
+ 35CLS G  IPC=0.002493 35                                                       
  35CL cG M,MR$D+Q and |d from |g(|q) in (p,|g); |D|p=yes from level scheme      
  35CL  G 8629.0       1.1    7                                                  
  35CL  L 8633      3  (3/2,5/2+)       0.001 KEV 1                              
@@ -2246,6 +2483,7 @@
  35CL cL J$915.4|g D, |DJ=1 to 13/2+; band assignment                           
  35CL cL T$lifetime |t<0.4 ps from ({+28}Si,|ap|g) (2007Ks01, DSAM)             
  35CL  G 915.4     4  100       (M1)                                            
+ 35CLS G  CC=4.82E-5 7$KC=4.43E-5 6$LC=3.53E-6 5$MC=3.23E-7 5                   
  35CL cG E,M$from ({+16}O,|ap|g), with Mult=D, |DJ=1 from |g|g(ADO); |D|p=(no)  
  35CL2cG from level scheme                                                      
  35CL  L 8798.4    5  (3/2+,5/2+)      0.001 KEV 1                              
@@ -2327,6 +2565,7 @@
  35CL  G 524.8                                                                  
  35CLF G FL=8319.6                                                              
  35CL  G 971.38    20 100.0  30 E2                                              
+ 35CLS G  CC=6.16E-5 9$KC=5.67E-5 8$LC=4.52E-6 6$MC=4.13E-7 6                   
  35CL cG E$weighted average of 971.4 {I5} from ({+16}O,|ap|g) and 971.38 {I20}  
  35CL2cG from ({+14}N,|apn|g)                                                   
  35CLB G BE2W=16.3 +37-26                                                       
@@ -2427,6 +2666,7 @@
  35CL cL J$spin=3/2 from |g(|q) in (p,|g) and (3/2)+ from R-Matrix analysis in  
  35CL2cL (p,p):resonances.                                                      
  35CL  G 7732.8                 M1+E2    -0.34   2                              
+ 35CLS G  IPC=0.001946 27                                                       
  35CL cG M,MR$or |d=-5.0 {I4} from |g(|q) in (p,|g). E1+M2 ruled out by RUL.    
  35CL  G 8951.9                 M1+E2    -0.39   5                              
  35CL cG M,MR$or |d=-8.2 {I7} from |g(|q) in (p,|g). E1+M2 ruled out by RUL.    
@@ -2499,6 +2739,7 @@
  35CL  G 6386.9       3.3                                                       
  35CL  G 6435.2       1.7                                                       
  35CL  G 7317.5       27        M1+E2    +0.11   2                              
+ 35CLS G  IPC=0.001858 26                                                       
  35CLB G BM1W=1.16 +31-25 $BE2W=0.99 +50-38                                     
  35CL  G 9080.2       100       M1+E2    +0.089  9                              
  35CLB G BM1W=2.26 +49-33 $BE2W=0.82 +27-19                                     
@@ -2542,7 +2783,9 @@
  35CL cG RI$final level is uncertain, either 4173 or 4178 (1976Sp08).           
  35CL  G 4983.3       30                                                        
  35CL cG RI$final level is uncertain, either 4173 or 4178 (1976Sp08).           
- 35CL  G 5993.7       22        M1+E2    +0.10   2                              
+ 35CL  G 5993.7       22        M1+E2    +0.10   2     1.59E-3 2                
+ 35CLS G  KC=2.209E-6 31$LC=1.753E-7 25$MC=1.604E-8 22                          
+ 35CLS G  IPC=0.001589 22                                                       
  35CL  G 6153.9       20                                                        
  35CL  G 6462.5       3.0                                                       
  35CL  G 6510.8       6.7                                                       
@@ -2678,15 +2921,21 @@
  35CL cG E,M$from ({+16}O,|ap|g), with Mult=D from |g|g(ADO) with |DJ=1;        
  35CL2cG |D|p=(yes) from level scheme                                           
  35CLB G BE1W=0.00235 +21-18                                                    
+ 35CLS G  CC=0.0001637 23$KC=1.364E-5 19$LC=1.084E-6 15$MC=9.91E-8 14           
+ 35CLS G  IPC=0.0001489 21                                                      
  35CL  G 1693.5    5  84     9  E2                                              
  35CLF G FL=8487.5                                                              
  35CL cG E,RI,M$from ({+16}O,|ap|g), with Mult=Q, |DJ=2 from |g|g(ADO) and M2   
  35CL2cG ruled out by RUL.                                                      
  35CLB G BE2W=44.4 46                                                           
+ 35CLS G  CC=0.0001880 26$KC=1.657E-5 23$LC=1.318E-6 18$MC=1.205E-7 17          
+ 35CLS G  IPC=0.0001700 24                                                      
  35CL  G 1861.3    5  83     6  E2                                              
  35CL cG E,RI,M$from ({+16}O,|ap|g), with Mult=Q, |DJ=2 from |g|g(ADO) and M2   
  35CL2cG ruled out by RUL.                                                      
  35CLB G BE2W=27.4 +26-24                                                       
+ 35CLS G  CC=0.000262 4$KC=1.383E-5 19$LC=1.100E-6 15$MC=1.006E-7 14            
+ 35CLS G  IPC=0.0002470 35                                                      
  35CL  L 10215     5  3/2                                                   A   
  35CLX L XREF=JL(10218.0)                                                       
  35CL  L 10221.9   11 (17/2-)          0.28 PS   LT                             
@@ -2759,10 +3008,14 @@
  35CL2cL assignment                                                             
  35CL cL T$lifetime |t<0.4 ps from ({+28}Si,|ap|g) (2007Ks01, DSAM)             
  35CL  G 2014.7    9  100    5  (M1)                                            
+ 35CLS G  CC=0.000265 4$KC=1.084E-5 15$LC=8.61E-7 12$MC=7.88E-8 11              
+ 35CLS G  IPC=0.000253 4                                                        
  35CL cG E,RI,M$from ({+16}O,|ap|g), with Mult=D from |g|g(ADO) with |DJ=1;     
  35CL2cG |D|p=no from level scheme                                              
  35CL  G 2069.8    10 32.5   22 E2                                              
  35CLF G FL=8788.3                                                              
+ 35CLS G  CC=0.000361 5$KC=1.138E-5 16$LC=9.05E-7 13$MC=8.28E-8 12              
+ 35CLS G  IPC=0.000349 5                                                        
  35CL cG E,RI,M$from ({+16}O,|ap|g) with Mult=Q, |DJ=2 from |g|g(ADO); M2 ruled 
  35CL2cG out by RUL.                                                            
  35CL  L 10870     5  (5/2,7/2)                                             A   
@@ -2840,6 +3093,8 @@
  35CL cG E,M$from ({+16}O,|ap|g), with Mult=Q, |DJ=2 from |g|g(ADO); M2 ruled   
  35CL2cG out by RUL.                                                            
  35CLB G BE2W=15.9 8                                                            
+ 35CLS G  CC=0.000619 9$KC=7.61E-6 11$LC=6.05E-7 8$MC=5.53E-8 8                 
+ 35CLS G  IPC=0.000611 9                                                        
  35CL  L 11473     5   1/2-,5/2-                                            A   
  35CLX L XREF=J                                                                 
  35CL  L 11492     5                                                            
@@ -2885,10 +3140,14 @@
  35CL cG E,RI,M$from ({+16}O,|ap|g), with Mult=D from |g|g(ADO) with |DJ=1;     
  35CL2cG |D|p=yes from level scheme                                             
  35CLB G BE1W=0.00272 +41-35                                                    
+ 35CLS G  CC=3.60E-5 5$KC=1.883E-5 26$LC=1.498E-6 21$MC=1.369E-7 19             
+ 35CLS G  IPC=1.553E-5 26                                                       
  35CL  G 2390.8    5  100    4  E2                                              
  35CL cG E,RI,M$from ({+16}O,|ap|g), with Mult=Q, |DJ=2 from |g|g(ADO); M2 ruled
  35CL2cG out by RUL.                                                            
  35CLB G BE2W=26.0 +36-29                                                       
+ 35CLS G  CC=0.000515 7$KC=8.85E-6 12$LC=7.03E-7 10$MC=6.43E-8 9                
+ 35CLS G  IPC=0.000505 7                                                        
  35CL  L 13900                                                                  
  35CLX L XREF=J                                                                 
  35CL2 L ISPIN=3/2                                                              
@@ -2897,4 +3156,4 @@
  35CL cL J$3734|g to 23/2-; band assignment                                     
  35CL cL T$lifetime |t<13 fs from ({+28}Si,|ap|g) (2013Bi10, DSAM)              
  35CL  G 3734.0                                                                 
-
+      
