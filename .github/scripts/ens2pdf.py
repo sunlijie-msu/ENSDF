@@ -27,9 +27,38 @@ def open_pdf(pdf_path, use_vscode=True):
         print(f"Opened {os.path.basename(pdf_path)} in system viewer")
 
 
-def generate_pdfs(element, open_after=False, use_vscode=True):
-    os.chdir("D:/X/ND/Files")
+def cleanup_files(directory):
+    """Remove non-PDF files from the directory"""
+    for file_path in glob.glob(os.path.join(directory, "*")):
+        if not file_path.lower().endswith(".pdf"):
+            try:
+                if os.path.isfile(file_path):
+                    os.remove(file_path)
+                elif os.path.isdir(file_path):
+                     # Optional: remove directories if necessary, but risky. 
+                     # The Java tool generates files, not dirs usually.
+                     pass 
+            except Exception as e:
+                print(f"Error cleaning up {file_path}: {e}")
+
+def get_pdf_dir(ens_file_path):
+    """Get the local pdf directory for an ens file path"""
+    # Assuming structure .../{element_dir}/new/{file}.ens
+    # We want .../{element_dir}/pdf/
     
+    # Check if 'new' is in path
+    ens_path = Path(ens_file_path)
+    if ens_path.parent.name == "new":
+        pdf_dir = ens_path.parent.parent / "pdf"
+        pdf_dir.mkdir(exist_ok=True)
+        return pdf_dir
+    else:
+        # If structure is different, default to a 'pdf' folder in the same dir
+        pdf_dir = ens_path.parent / "pdf"
+        pdf_dir.mkdir(exist_ok=True)
+        return pdf_dir
+
+def generate_pdfs(element, open_after=False, use_vscode=True):
     # Find JAR file automatically
     jar_file = glob.glob("D:/X/ND/McMaster-MSU-Java-NDS/McMaster_MSU_JAVA_NDS_v*.jar")[0]
     
@@ -45,22 +74,39 @@ def generate_pdfs(element, open_after=False, use_vscode=True):
         if ens_files:
             print(f"Found {len(ens_files)} files in {mass_chain}/{element}{mass_number}/new/")
             total_files += len(ens_files)
+            
+            # Group by directory to minimize CWD changes (though glob is specific here)
             # Process all .ens files for the element
             for ens_file_path in ens_files:
-                pdf_file = f"{Path(ens_file_path).stem}.pdf"
-                subprocess.run(["java", "-jar", jar_file, ens_file_path, pdf_file])
-                print(f"Converted: {Path(ens_file_path).name} -> {pdf_file}")
-                if open_after:
-                    # PDF is always generated in D:/X/ND/Files
-                    pdf_path = f"D:/X/ND/Files/{Path(ens_file_path).stem}.pdf"
-                    open_pdf(pdf_path, use_vscode)
+                pdf_dir = get_pdf_dir(ens_file_path)
+                pdf_filename = f"{Path(ens_file_path).stem}.pdf"
+                
+                # Change CWD to target PDF dir
+                original_cwd = os.getcwd()
+                os.chdir(pdf_dir)
+                
+                try:
+                    subprocess.run(["java", "-jar", jar_file, ens_file_path, pdf_filename], check=True, timeout=180)
+                    print(f"Converted: {Path(ens_file_path).name} -> {pdf_dir / pdf_filename}")
+                    
+                    # Cleanup
+                    cleanup_files(pdf_dir)
+                    
+                    if open_after:
+                        open_pdf(str(pdf_dir / pdf_filename), use_vscode)
+                except subprocess.TimeoutExpired:
+                     print(f"TIMEOUT processing {Path(ens_file_path).name}")
+                except Exception as e:
+                     print(f"Error processing {Path(ens_file_path).name}: {e}")
+                finally:
+                    os.chdir(original_cwd)
     
     if total_files == 0:
         print(f"No {element} .ens files found in ENSDF workspace (searched A34, A35, A60)")
 
 # Even simpler - single file
 def generate_pdf(element, dataset_name, open_after=False, use_vscode=True):
-    os.chdir("D:/X/ND/Files")
+    # Find JAR file automatically
     jar_file = glob.glob("D:/X/ND/McMaster-MSU-Java-NDS/McMaster_MSU_JAVA_NDS_v*.jar")[0]
     
     # Extract mass number from dataset name if present
@@ -82,13 +128,23 @@ def generate_pdf(element, dataset_name, open_after=False, use_vscode=True):
         print(f"Error: {dataset_name}.ens not found in ENSDF workspace: A{mass_number}/{element}{mass_number}/new/")
         return
     
-    pdf_file = f"{dataset_name}.pdf"
-    subprocess.run(["java", "-jar", jar_file, ens_file, pdf_file])
-    print(f"Converted: {dataset_name}.ens -> {dataset_name}.pdf")
-    if open_after:
-        # PDF is always generated in D:/X/ND/Files
-        pdf_path = f"D:/X/ND/Files/{dataset_name}.pdf"
-        open_pdf(pdf_path, use_vscode)
+    pdf_dir = get_pdf_dir(ens_file)
+    pdf_filename = f"{dataset_name}.pdf"
+    
+    original_cwd = os.getcwd()
+    os.chdir(pdf_dir)
+    
+    try:
+        subprocess.run(["java", "-jar", jar_file, ens_file, pdf_filename], check=True, timeout=180)
+        print(f"Converted: {dataset_name}.ens -> {pdf_dir / pdf_filename}")
+        cleanup_files(pdf_dir)
+        
+        if open_after:
+            open_pdf(str(pdf_dir / pdf_filename), use_vscode)
+    except Exception as e:
+        print(f"Error converting {dataset_name}: {e}")
+    finally:
+        os.chdir(original_cwd)
 
 # Handle full file paths
 def generate_pdf_from_path(file_path, open_after=False, use_vscode=True):
@@ -98,29 +154,30 @@ def generate_pdf_from_path(file_path, open_after=False, use_vscode=True):
     ens_file = os.path.abspath(file_path)
     base_name = os.path.splitext(os.path.basename(file_path))[0]
     
-    os.chdir("D:/X/ND/Files")
+    # Find JAR file automatically
     jar_file = glob.glob("D:/X/ND/McMaster-MSU-Java-NDS/McMaster_MSU_JAVA_NDS_v*.jar")[0]
-    pdf_file = f"{base_name}.pdf"
     
-    # Extract element from filename
-    element = ""
-    for c in base_name:
-        if c.isdigit():
-            break
-        if c.isalpha():
-            element += c
+    pdf_dir = get_pdf_dir(ens_file)
+    pdf_filename = f"{base_name}.pdf"
     
-    subprocess.run(["java", "-jar", jar_file, ens_file, pdf_file])
-    print(f"Converted: {file_path} -> {base_name}.pdf")
+    original_cwd = os.getcwd()
+    os.chdir(pdf_dir)
     
-    if open_after:
-        # PDF is always generated in D:/X/ND/Files
-        pdf_path = f"D:/X/ND/Files/{base_name}.pdf"
-        open_pdf(pdf_path, use_vscode)
+    try:
+        subprocess.run(["java", "-jar", jar_file, ens_file, pdf_filename], check=True, timeout=180)
+        print(f"Converted: {file_path} -> {pdf_dir / pdf_filename}")
+        cleanup_files(pdf_dir)
+        
+        if open_after:
+            open_pdf(str(pdf_dir / pdf_filename), use_vscode)
+    except Exception as e:
+        print(f"Error converting {file_path}: {e}")
+    finally:
+        os.chdir(original_cwd)
 
 def generate_pdfs_pattern(element, pattern, open_after=False, use_vscode=True):
     """Convert files matching a pattern (e.g., '*sig' for files ending with 'sig')"""
-    os.chdir("D:/X/ND/Files")
+    # Find JAR file automatically
     jar_file = glob.glob("D:/X/ND/McMaster-MSU-Java-NDS/McMaster_MSU_JAVA_NDS_v*.jar")[0]
     
     # Extract mass number from pattern if present, otherwise try all mass chains
@@ -148,13 +205,23 @@ def generate_pdfs_pattern(element, pattern, open_after=False, use_vscode=True):
             total_files += len(ens_files)
             # Process files matching the pattern
             for ens_file_path in ens_files:
-                pdf_file = f"{Path(ens_file_path).stem}.pdf"
-                subprocess.run(["java", "-jar", jar_file, ens_file_path, pdf_file])
-                print(f"Converted: {Path(ens_file_path).name} -> {pdf_file}")
-                if open_after:
-                    # PDF is always generated in D:/X/ND/Files
-                    pdf_path = f"D:/X/ND/Files/{Path(ens_file_path).stem}.pdf"
-                    open_pdf(pdf_path, use_vscode)
+                pdf_dir = get_pdf_dir(ens_file_path)
+                pdf_filename = f"{Path(ens_file_path).stem}.pdf"
+                
+                original_cwd = os.getcwd()
+                os.chdir(pdf_dir)
+                
+                try:
+                    subprocess.run(["java", "-jar", jar_file, ens_file_path, pdf_filename], check=True, timeout=180)
+                    print(f"Converted: {Path(ens_file_path).name} -> {pdf_dir / pdf_filename}")
+                    cleanup_files(pdf_dir)
+                    
+                    if open_after:
+                        open_pdf(str(pdf_dir / pdf_filename), use_vscode)
+                except Exception as e:
+                    print(f"Error processing {Path(ens_file_path).name}: {e}")
+                finally:
+                    os.chdir(original_cwd)
     
     if total_files == 0:
         print(f"No files matching pattern '{pattern}' found in ENSDF workspace")
