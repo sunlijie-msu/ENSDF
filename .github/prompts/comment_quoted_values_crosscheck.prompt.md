@@ -1,360 +1,196 @@
-# Comment Quoted Values Cross-Check Workflow
+# Comment Quoted Values Cross-Check
 
 ## Purpose
 
-Verify all quoted values in ENSDF cL J$ comments match exact data in G-records and L-records. Ensure no approximations, rounding, or misinterpretations occur.
+Cross-check all quoted values in `cL J$` comments against corresponding L-record and G-record data fields. Detect discrepancies between comment text and data records.
 
-**Four Value Types Verified:**
-1. **Gamma Energy:** Quoted γ energy matches G-record energy
-2. **Multipolarity:** Quoted multipolarity matches G-record multipolarity field (columns 33-41)
-3. **Level Energy:** Quoted level energy matches L-record energy  
-4. **J-π Notation:** Quoted J-π matches L-record J-π (including parentheses)
-
-**Patterns Checked:**
-- `energy|g multipolarity from level_energy, J-π` (feeding gammas with multipolarity)
-- `energy|g to level_energy, J-π` (outgoing gammas)  
-- `energy|g multipolarity to/from J-π` (gamma with multipolarity)
-- `level_energy, J-π level` (level references)
-
-**Requirements:** Exact character-for-character matching for all values.
+**Scope:**
+- **Checks:** Quoted energies, multipolarities, and J-π values within `cL J$` comment lines
+- **Fixes:** Comment text only — do NOT edit data record fields (L, G)
+- **Data-record issues** (e.g., multipolarity at wrong column): Flag for separate handling
+- **Validation:** Skip ruler, column calibration, and gamma ordering checks (this workflow edits comments only)
 
 ---
 
 ## Prerequisites
 
-- Python 3.11+
-- Detection script: `.github/temp/check_quoted_values.py`
-- UTF-8 encoding support
+- Python 3.8+
+- Detection script: `.github/scripts/check_quoted_values.py`
 
 ---
 
-## Critical Rules
+## ENSDF Record Reference
 
-### Gamma Energy Precision
+### L-Record Fields Used
 
-**Exact matching required:** Every quoted gamma energy must match a G-record energy exactly (within 0.5 keV tolerance for identification).
+| Field | Columns | Purpose |
+|:------|:--------|:--------|
+| E     | 10–19   | Level energy |
+| J     | 23–39   | Spin-parity (J-π) |
 
-**Examples:**
-- Comment `1572.327|g` must match G-record with energy `1572.327` keV
-- Comment `2061.6|g` must match G-record with energy `2061.6` keV
-- NO rounding: `1572` requires G-record `1572.0±0.5`, not `1572.327`
+### G-Record Fields Used
 
-### Multipolarity Notation Precision
+| Field | Columns | Purpose |
+|:------|:--------|:--------|
+| E     | 10–19   | Gamma-ray energy |
+| M     | 33–41   | Multipolarity |
 
-**G-Record Format Rules:**
-- Multipolarity field is at **columns 33-41** (1-based indexing)
-- Column 32 must be blank (readability space)
-- Multipolarity can be: `M1`, `E2`, `M1+E2`, `D`, `(M1)`, `[E2]`, etc.
+Column 32 is a readability space and must be blank.
 
-**Common Errors:**
-- ❌ Multipolarity at column 32 instead of 33+ (formatting error)
-- ❌ Comment quotes "D" but G-record has "(M1)" or empty field
+### cL J$ Comment Format
 
-**Exact matching required:** Comment must quote G-record multipolarity exactly.
+- Column 7: `c` (comment indicator)
+- Column 8: `L` (level comment type)
+- Columns 10–80: Comment text
+- `J$` identifier marks spin-parity discussion
+- Continuation lines: `2cL`, `3cL`, etc.
 
-**Examples:**
-- Comment `1824.7|g M1+E2` requires G-record multipolarity `M1+E2` (NOT `M1`, NOT `D`)
-- Comment `2061.6|g D` requires G-record multipolarity `D` (NOT empty, NOT `(M1)`)
-- Brackets/parentheses matter: `(M1)` ≠ `M1` ≠ `[M1]`
-
-### J-π Notation Precision
-
-**Parentheses indicate uncertainty:**
-- `1/2+` = Definite assignment
-- `1/2(+)` = Tentative positive parity  
-- `(1/2+)` = Tentative spin AND parity
-- `(1/2)+` = Tentative spin, definite parity
-- `(1/2)-` = J uncertain, parity negative and certain (minus OUTSIDE)
-- `(1/2-)` = Both J and parity uncertain (minus INSIDE)
-
-**WRONG:** Treating `1/2(+)` and `1/2+` or `(1/2)-` and `(1/2-)` as equivalent  
-**CORRECT:** Match character-for-character including all parentheses
-
-### Level Energy Precision
-
-**NO approximations:** Every energy must match exact L-record value (within acceptable rounding <0.5 keV).
-
-**Examples:**
-- Comment `1991` may match L-record `1991.27` (acceptable rounding)
-- Comment `7178.6` must match L-record `7178.6` (not `7178` or `7179`)
-- Warnings issued for rounding >0.01 keV, errors for >0.5 keV
+Data-record identification requires col 6 = blank AND col 7 = blank. Comment records have col 7 = `c`. Continuation records have col 6 ≠ blank.
 
 ---
 
-## Workflow Steps
+## Value Types Checked
 
-### 1. Create/Use Detection Script
+### 1. Gamma Energy
 
-Use comprehensive detection script: `.github/temp/check_quoted_values.py`
+Quoted gamma energy must correspond to a G-record energy.
 
-**Core Functions:**
-- `parse_ensdf_levels()`: Build level dictionary from L-records (energies, J-π, line numbers)
-- `parse_ensdf_gammas()`: Build gamma list from G-records (energies, multipolarities, parent levels)
-  - **Critical:** Must check column 6 and 7 are blank (not continuation or comment records)
-  - Multipolarity from columns 33-41, NOT column 32
-- `find_quoted_values()`: Extract all four value types from cL J$ comments
-- `verify_quoted_values()`: Cross-check all quoted values against L/G-records
+- **Pattern:** `energy|g` (e.g., `1824.7|g`)
+- **Match against:** G-record E field (columns 10–19)
+- All energy differences are reported with exact values
 
-**Four Value Types Verified:**
-1. **gamma_energy:** Match against G-record energies (tolerance 0.5 keV)
-2. **multipolarity:** Match against G-record multipolarity field exactly
-3. **level_energy:** Match against L-record energies (acceptable rounding <0.5 keV)
-4. **level_jpi:** Match against L-record J-π exactly (character-for-character)
+### 2. Multipolarity
 
-**Tolerances:**
-- Gamma/level energy identification: 0.5 keV
-- Level energy rounding warning: >0.01 keV
-- Multipolarity & J-π: Zero tolerance (exact match required)
+Quoted multipolarity must match the G-record M field character-for-character.
 
-**Output:** Line number, pattern type, quoted value, L/G-record value, match status
+- **Pattern:** `energy|g MULT` (e.g., `1824.7|g M1+E2`)
+- **Match against:** G-record M field (columns 33–41)
+- Brackets and parentheses carry physical meaning: `D` ≠ `(M1)` ≠ `M1` ≠ `[E2]`
+- Zero tolerance — exact string match required
+
+### 3. Level Energy
+
+Quoted level energy must correspond to an L-record energy.
+
+- **Pattern:** `to ENERGY, J-π` or `from ENERGY, J-π` (e.g., `to 1991, 7/2-`)
+- **Match against:** L-record E field (columns 10–19)
+- Comments may use rounded integers (e.g., `1991` for L-record `1991.27`)
+- All energy differences are reported; the evaluator determines appropriateness
+
+### 4. J-π Notation
+
+Quoted J-π must match the L-record J field character-for-character.
+
+- **Pattern:** `level_energy, J-π` (e.g., `1991, 7/2-`)
+- **Match against:** L-record J field (columns 23–39)
+- Parentheses encode distinct physical meaning:
+  - `1/2+` — definite J and π
+  - `1/2(+)` — definite J, tentative π
+  - `(1/2+)` — tentative J and π
+  - `(1/2)+` — tentative J, definite π
+  - `(11/2)-` — tentative J, definite negative π (minus OUTSIDE parentheses)
+  - `(11/2-)` — tentative J and π (minus INSIDE parentheses)
+- Zero tolerance — every character must match exactly
 
 ---
 
-### 2. Run Detection
+## Comment Patterns Detected
+
+| Pattern Example | Components Extracted |
+|:----------------|:---------------------|
+| `1824.7\|g M1+E2 to 1991, 7/2-` | γ energy, multipolarity, direction, level energy, J-π |
+| `2061.6\|g D, \|DJ=1 from 5877.7 (11/2+)` | γ energy, multipolarity, direction, level energy, J-π |
+| `1986\|g to 1572, 1/2+` | γ energy, direction, level energy, J-π |
+| `3594.5\|g Q, \|DJ=2 to g.s., 3/2+` | γ energy, multipolarity, direction, g.s., J-π |
+
+---
+
+## Error Classification
+
+| Code | Severity | Description |
+|:-----|:---------|:------------|
+| `GAMMA_NOT_FOUND` | ERROR | No G-record matches quoted gamma energy within search window |
+| `GAMMA_ENERGY_DIFF` | INFO | Gamma energy differs from G-record value (exact difference reported) |
+| `MULTIPOLARITY_MISMATCH` | ERROR | Comment multipolarity ≠ G-record M field |
+| `LEVEL_NOT_FOUND` | ERROR | No L-record matches quoted level energy within search window |
+| `LEVEL_ENERGY_DIFF` | INFO | Level energy differs from L-record value (exact difference reported) |
+| `JPI_MISMATCH` | ERROR | Comment J-π ≠ L-record J field |
+
+**Exit codes:**
+- `0` — No errors (INFO items may exist)
+- `1` — One or more errors found
+
+---
+
+## Workflow
+
+### Step 1: Run Detection
 
 ```bash
-python .github\temp\check_quoted_values.py "A35\S35\new\S35_adopted.ens"
+python .github/scripts/check_quoted_values.py "path/to/adopted.ens"
 ```
 
-**Analyze Error Types:**
-- `GAMMA_NOT_FOUND`: Quoted gamma energy has no matching G-record
-- `GAMMA_ENERGY_APPROX`: Gamma energy rounding >0.01 keV (warning only)
-- `MULTIPOLARITY_MISMATCH`: Quoted multipolarity ≠ G-record multipolarity
-- `LEVEL_NOT_FOUND`: Quoted level energy has no matching L-record
-- `LEVEL_ENERGY_MISMATCH`: Level energy difference >0.5 keV (critical)
-- `LEVEL_ENERGY_ROUNDED`: Level energy rounding 0.01-0.5 keV (warning)
-- `JPI_MISMATCH`: Quoted J-π ≠ L-record J-π (any character difference)
+Optional flags:
 
----
+| Flag | Default | Description |
+|:-----|:--------|:------------|
+| `--tolerance N` | `1.0` | Search window in keV for finding matching records |
+| `--debug` | off | Verbose parser diagnostics |
 
-### 3. Investigate Issues
+### Step 2: Review Findings
 
-For each reported issue:
+- **ERROR:** Must be resolved — string mismatches or missing records
+- **INFO:** Energy differences — evaluator reviews whether rounding is appropriate
 
-**Read Context:**
-```bash
-# Comment line and surrounding context
-python -c "lines=open('file.ens',encoding='utf-8').readlines(); print(''.join(lines[line-5:line+5]))"
+### Step 3: Investigate Each Finding
 
-# Find L-record for level
-Select-String -Path "file.ens" -Pattern "^ 35S   L quoted_energy"
+For each reported discrepancy:
 
-# Find G-record for gamma
-Select-String -Path "file.ens" -Pattern "^ 35S   G gamma_energy"
-```
+1. Read the comment line and its surrounding L/G-record context
+2. Determine whether the comment or the data record is the source of truth
+3. If the comment is wrong → proceed to Step 4
+4. If the data record is wrong → flag for separate handling (do NOT fix in this workflow)
 
-**Verify L-Record:**
-- Check exact energy value
-- Check exact J-π notation (including parentheses)
-- Confirm level exists
+### Step 4: Correct Comments
 
-**Verify G-Record:**
-- Check exact gamma energy value
-- Check multipolarity field at columns 33-41 (NOT column 32)
-- Confirm column 32 is blank (readability space)
-- Verify multipolarity characters match exactly
+Fix ONLY comment text (`cL`, `2cL`, `3cL` lines). Use `replace_string_in_file` with 3–5 lines of context.
 
----
+**J-π correction** — match L-record J field exactly:
+- `(7/2+)` → `7/2(+)` if L-record shows `7/2(+)`
+- `(11/2-)` → `(11/2)-` if L-record shows `(11/2)-`
 
-### 4. Fix Critical Errors
+**Multipolarity correction** — match G-record M field exactly:
+- `D` → `(M1)` if G-record shows `(M1)`
 
-**Gamma Energy Mismatch:**
-- Find actual G-record energy
-- Update comment to match exact value
+**Energy correction** — match L/G-record E field value:
+- `1991` → `1991.3` if L-record shows `1991.3`
 
-**Multipolarity Mismatch:**
-- **If G-record has multipolarity at column 32:** Fix G-record formatting (shift right to column 33)
-- **If G-record multipolarity differs from comment:** Update comment to match G-record exactly
-- Preserve brackets/parentheses: `(M1)` ≠ `M1` ≠ `D`
-
-**Level Energy Mismatch:**
-- Find actual L-record energy
-- Update comment to match exact value (acceptable rounding <0.5 keV)
-
-**J-π Mismatch:**
-- Verify L-record J-π notation  
-- Correct parentheses exactly:
-  - `(7/2+)` → `7/2(+)` if L-record shows `7/2(+)`
-  - `(11/2-)` → `(11/2)-` if L-record shows `(11/2)-` (minus position critical!)
-- Never remove or add parentheses without checking L-record
-
-**Level/Gamma Not Found:**
-- Search nearby energies (`±5 keV`)
-- Update comment to match actual energy
-- Or remove reference if level/gamma doesn't exist
-
----
-
-### 5. Apply Corrections
-
-Use `multi_replace_string_in_file` with EXACT context (3-5 lines before/after):
-
-```python
-replacements = [{
-    "filePath": "d:\\X\\ND\\ENSDF\\A35\\S35\\new\\S35_adopted.ens",
-    "oldString": " 35S X L XREF=DE                                                                \n 35S  cL J$1228.1|g D, |DJ=1 to 3594.6, (7/2+); 1055.1|g D, |DJ=1 from 5877.7,  \n 35S 2cL (11/2+); 9/2+ from shell-model calculations (2021Go09).",
-    "newString": " 35S X L XREF=DE                                                                \n 35S  cL J$1228.1|g D, |DJ=1 to 3594.6, 7/2(+); 1055.1|g D, |DJ=1 from 5877.7,  \n 35S 2cL (11/2+); 9/2+ from shell-model calculations (2021Go09)."
-}]
-```
-
-**G-Record Formatting Fixes (column 32 → 33):**
-```python
-replacements = [{
-    "filePath": "...",
-    "oldString": " 35S   G 2061.6    4 100     5 D                                                ",
-    "newString": " 35S   G 2061.6    4 100     5  D                                               "
-    # Note: Added space before "D" to shift from column 32 to column 33
-}]
-```
-
-**Edit-Validate-Repeat:** After each fix:
-```bash
-python .github\scripts\ensdf_1line_ruler.py --line "exact 80-char line"
-```
-
----
-
-### 6. Re-run Detection
+### Step 5: Re-verify
 
 ```bash
-python .github\temp\check_quoted_values.py "file.ens"
+python .github/scripts/check_quoted_values.py "path/to/adopted.ens"
 ```
 
-Expected: Zero critical errors (warnings acceptable for level energy rounding <0.5 keV).
-
----
-
-### 7. Final Validation
-
-```bash
-# Column formatting
-python .github\scripts\column_calibrate.py "file.ens"
-
-# Energy ordering
-python .github\scripts\check_gamma_ordering.py "file.ens"
-```
-
-Both must exit with code 0.
-
----
-
-## Critical Rules
-
-## Exact Matching Requirements
-
-**NO approximations:** Every value must match character-for-character (with acceptable tolerances noted).
-
-**Gamma Energy:**
-- Within 0.5 keV for identification
-- Warnings for >0.01 keV rounding
-
-**Multipolarity:**
-- MUST be at columns 33-41 in G-record (column 32 = readability space)
-- Exact character match: `D` ≠ `(M1)` ≠ `M1` ≠ `[E2]`
-- Brackets/parentheses have physical meaning
-
-**Level Energy:**
-- Exact L-record value OR acceptable rounding (<0.5 keV)
-- Warnings for 0.01-0.5 keV rounding
-- Match uncertainty precision when specified
-
-**J-π Notation:**
-- Preserve parentheses exactly: `1/2(+)` ≠ `1/2+` ≠ `(1/2+)` ≠ `(1/2)+`
-- Minus position critical: `(11/2)-` ≠ `(11/2-)`
-- Match all characters including spaces
+Confirm zero errors.
 
 ---
 
 ## Common Pitfalls
 
-1. **Ignoring parentheses in J-π:** `1/2(+)` means tentative parity, not same as `1/2+`; `(11/2)-` ≠ `(11/2-)`
-2. **Multipolarity at wrong column:** G-record must have multipolarity at columns 33-41, NOT column 32
-3. **Multipolarity approximation:** Comment says "D" but G-record has "(M1)" - these are NOT equivalent
-4. **Rounding energies:** Use exact L/G-record values, not rounded (warnings OK for <0.5 keV)
-5. **Using calculated levels:** Always verify actual L-record exists
-6. **Multiple edits without validation:** Validate EACH edit immediately
-7. **Forgetting directionality:** "from level X" vs "to level Y" determines which level to check
-
----
-
-## Issue Triage
-
-### Critical (Must Fix)
-- Gamma energy mismatch >0.5 keV
-- Gamma not found in G-records
-- Multipolarity mismatch (any character difference)
-- Multipolarity at column 32 instead of 33-41 (G-record formatting error)
-- Level energy mismatch >0.5 keV
-- Level not found in L-records
-- J-π notation mismatch (any character difference, including parentheses position)
-
-### Acceptable (Warnings Only)
-- Gamma energy rounding 0.01-0.5 keV (warnings issued)
-- Level energy rounding 0.01-0.5 keV (warnings issued)
-- Display artifacts from 80-column truncation
+1. **J-π parentheses ignored:** `(11/2)-` (tentative J, definite π⁻) ≠ `(11/2-)` (both tentative)
+2. **Multipolarity at column 32:** G-record multipolarity belongs at columns 33–41; column 32 is a readability space
+3. **Multipolarity substitution:** `D` (dipole, unspecified) ≠ `(M1)` (tentative M1) ≠ `M1` (definite M1)
+4. **Editing data records:** This workflow fixes comments only; data-record issues require separate validation with ruler and column tools
+5. **Incorrect direction:** `from` (feeding gamma) vs. `to` (de-exciting gamma) reference different levels
+6. **Arbitrary acceptance thresholds:** Do not declare energy differences as "acceptable" — report all differences and let the evaluator decide
 
 ---
 
 ## Success Criteria
 
-✅ Detection script reports 0 critical errors  
-✅ All quoted gamma energies match G-records (within 0.5 keV)  
-✅ All quoted multipolarities match G-record multipolarity fields exactly  
-✅ All multipolarity fields in G-records are at columns 33-41 (NOT column 32)  
-✅ All quoted level energies match L-records (acceptable rounding <0.5 keV)  
-✅ All J-π notations match exactly (including parentheses position)  
-✅ All referenced levels and gammas exist in file  
-✅ Column formatting validation passes  
-✅ Energy ordering validation passes
-
----
-
-## Example Session
-
-```bash
-# 1. Run detection
-python .github\temp\check_quoted_values.py "S35_adopted.ens"
-# Found: 8 critical errors (4 J-π mismatches, 4 multipolarity mismatches)
-
-# 2. Investigate  
-# Issue #1: Comment says "(7/2+)" but L-record shows "7/2(+)"
-# Issue #5: G-record has multipolarity "D" at column 32 instead of 33-41
-
-# 3. Fix J-π error
-multi_replace_string_in_file([{
-    "filePath": "...",
-    "oldString": "1228.1|g D, |DJ=1 to 3594.6, (7/2+)",
-    "newString": "1228.1|g D, |DJ=1 to 3594.6, 7/2(+)"
-}])
-
-# 4. Fix multipolarity formatting error (shift "D" one column right)
-multi_replace_string_in_file([{
-    "filePath": "...",
-    "oldString": " 35S   G 1055.1    6 80      7 D                                                ",
-    "newString": " 35S   G 1055.1    6 80      7  D                                               "
-}])
-
-# 5. Validate each edit
-python .github\scripts\ensdf_1line_ruler.py --line "..."
-
-# 6. Re-run detection after ALL fixes
-python .github\temp\check_quoted_values.py "S35_adopted.ens"
-# Found: 0 critical errors, 29 warnings ✅
-
-# 7. Review warnings (acceptable level energy rounding)
-# All warnings show level energy differences <0.5 keV - ACCEPTABLE
-
-# 8. Final validation
-python .github\scripts\column_calibrate.py "S35_adopted.ens"
-# SUCCESS: All ENSDF field positions correct ✅
-```
-
----
-
-## Notes
-
-- Always use subagent for verification when requested
-- Never skip validation after edits
-- Document all changes in compliance checklist
-- Preserve VS Code diff viewer for human review
--   Parentheses in J-π have specific physical meaning - never change without verification
+- Detection script reports zero errors
+- All quoted gamma energies correspond to existing G-records
+- All quoted multipolarities match G-record M fields exactly
+- All quoted level energies correspond to existing L-records
+- All quoted J-π values match L-record J fields exactly
+- All energy differences have been reviewed by the evaluator
