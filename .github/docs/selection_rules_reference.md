@@ -193,3 +193,22 @@ Decay γ to 5/2+ (D or Q):
 **AND:** 3/2+, 5/2±, 7/2±, 9/2±
 
 Adopted: (3/2+, 5/2±, 7/2±, 9/2±)
+
+### Example 4: Fed by primary γ from 1/2+,3/2+ (multi-valued initial). Decay γ to 1/2+ and 3/2+ (Lifetime short, RUL applies, M2 ruled out)
+
+Fed by primary γ from **1/2+,3/2+** (D or E2):
+*   From 1/2+ via D or E2: 1/2±, 3/2±, 5/2+
+*   From 3/2+ via D or E2: 1/2±, 3/2±, 5/2±, 7/2+
+*   **OR (union):** 1/2±, 3/2±, 5/2±, 7/2+
+
+Decay γ to 1/2+ (D or E2):
+1/2±, 3/2±, 5/2+
+
+Decay γ to 3/2+ (D or E2):
+1/2±, 3/2±, 5/2±, 7/2+
+
+**AND:** 1/2±, 3/2±
+
+Adopted: (1/2,3/2)
+
+*Note: When initial level has multiple J-π values (e.g., 1/2+,3/2+), calculate allowed final states for EACH initial value separately, then take OR (union) before applying AND with other constraints.*
