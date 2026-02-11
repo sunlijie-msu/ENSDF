@@ -1,4 +1,4 @@
-# Gamma Transition Selection Rules
+# γ Transition Selection Rules
 
 Concise reference for nuclear electromagnetic transitions.
 
@@ -6,18 +6,19 @@ Concise reference for nuclear electromagnetic transitions.
 
 ## 1. Definitions
 
-*   $J, \pi$: Nuclear spin and parity
-*   $L$: Multipolarity order (photon angular momentum)
-*   $\Delta J$: Spin change, $|J_i - J_f|$
-*   $\Delta \pi$: Parity change (Yes/No)
+*   J, π: Nuclear spin and parity
+*   L: Multipolarity order (photon angular momentum)
+*   ΔJ: Spin change between initial and final levels (ΔJ = |Ji - Jf|)
+*   Δπ: Parity change between initial and final levels (Δπ = πi * πf)
 *   Multipolarity Designations:
-    *   D (Dipole, $L=1$): E1, M1
-    *   Q (Quadrupole, $L=2$): E2, M2
-    *   O (Octupole, $L=3$): E3, M3
-    *   H (Hexadecapole, $L=4$): E4, M4
+    *   D (Dipole, L=1): E1, M1
+    *   Q (Quadrupole, L=2): E2, M2
+    *   O (Octupole, L=3): E3, M3
+    *   H (Hexadecapole, L=4): E4, M4
 *   Notation:
-    *   Comma (,) = OR (alternative multipolarities)
-    *   Plus (+) = AND (mixed multipolarity)
+    -   Comma (,) = OR (alternative multipolarities)
+    -   Plus (+) = AND (mixed multipolarity)
+    -   Tentative assignments in parentheses, e.g., (5/2+)
 
 ---
 
@@ -25,37 +26,36 @@ Concise reference for nuclear electromagnetic transitions.
 
 ### Angular Momentum Conservation
 
-The triangle inequality restricts the possible multipolarity $L$:
+The triangle inequality restricts the possible multipolarity L:
 
 $$ |J_i - J_f| \leq L \leq J_i + J_f $$
 
-*Example: For $J_i = J_f = 1/2$, quadrupole ($L \geq 2$) transitions are strictly forbidden geometrically.*
+*Note: For $J_i = J_f = 1/2$, quadrupole ($L \geq 2$) transitions are strictly forbidden geometrically.*
 
 ### Parity Selection
 
-*   Electric (E$L$): $\Delta \pi = (-1)^L$ (Parity changes for odd $L$)
-*   Magnetic (M$L$): $\Delta \pi = (-1)^{L+1}$ (Parity changes for even $L$)
+*   Electric (EL): Δπ = $(-1)^L$ (Parity changes for odd L)
+*   Magnetic (ML): Δπ = $(-1)^{L+1}$ (Parity changes for even L)
 
-*Note: $0 \to 0$ single photon emission is strictly forbidden.*
+*Note: 0 → 0 single photon emission is strictly forbidden.*
 
 ### Dominance of Lowest Multipolarity (Practical Rules)
 
-While geometry permits a range of $L$, nuclear transition probabilities dictate which are actually observed.
+While geometry permits a range of L, nuclear transition probabilities dictate which are actually observed.
 
-1. *Weisskopf Estimates*: Probability decreases by factor of $\approx 10^5$ for each unit increase in $L$.
-2. *Dominance Rule*: Transitions proceed via the lowest permitted multipolarity ($L_{min}$).
-3. *Mixing*:
-    * $L_{min} + 1$ mixing is common (e.g., M1+E2).
-    * $L_{min} + 2$ or higher is generally negligible ($< 10^{-5}$ branching).
-    * *Practical implication*: Multipolarity assignments like M2+E3 are only practical when Dipole ($L=1$) is forbidden by selection rules (i.e., $\Delta J \geq 2$).
+1. *Dominance Rule*: Transitions proceed via the lowest permitted multipolarity ($L_{min}$).
+    *   *Practical implication*: Multipolarity assignments like M2+E3 are only practical when Dipole (L=1) is forbidden by selection rules (i.e., ΔJ ≥ 2).
+2. *Weisskopf Estimates*: Probability decreases by a factor of approximately $\approx 10^5$ for each unit increase in L.
+3. *Mixing*: Electric multipoles are more probable than the same magnetic multipole by a factor of 100.
+    *   $L_{min}$ + 1 mixing is common (e.g., M1+E2).
 
 ---
 
-## 3. Quick Reference: $\Delta J$ and $\Delta \pi$ to Multipolarity
+## 3. Quick Reference: ΔJ and Δπ to Multipolarity
 
 Allowed multipolarities based on spin-parity change:
 
-| $\Delta J$ | No Parity Change | Parity Change |
+| ΔJ | No Parity Change | Parity Change |
 | :---: | :--- | :--- |
 | 0 | M1(+E2) | E1(+M2) |
 | 1 | M1(+E2) | E1(+M2) |
@@ -65,11 +65,11 @@ Allowed multipolarities based on spin-parity change:
 
 ---
 
-## 4. Quick Reference: Multipolarity to $\Delta J$ and $\Delta \pi$
+## 4. Quick Reference: Multipolarity to ΔJ and Δπ
 
 Selection rules for each transition type:
 
-| Type | $L$ | Designation | $\Delta J$ Allowed | $\Delta \pi$ |
+| Type | L | Designation | ΔJ Allowed | Δπ |
 | :---: | :---: | :---: | :---: | :---: |
 | E1 | 1 | D | 0, 1 | Yes |
 | M1 | 1 | D | 0, 1 | No |
@@ -86,66 +86,69 @@ Selection rules for each transition type:
 
 Common mixing patterns constrained by the dominance rule:
 
-* D+Q (E1+M2 or M1+E2): $\Delta J = 0, 1$
-* Q+O (E2+M3 or M2+E3): $\Delta J = 2$
-* M1+E2: $\Delta J = 0, 1$; $\Delta \pi = \text{No}$
-* E1+M2: $\Delta J = 0, 1$; $\Delta \pi = \text{Yes}$
-* E2+M3: $\Delta J = 2$; $\Delta \pi = \text{No}$
-* M2+E3: $\Delta J = 2$; $\Delta \pi = \text{Yes}$
+*   D+Q (E1+M2 or M1+E2): ΔJ = 0, 1
+*   Q+O (E2+M3 or M2+E3): ΔJ = 2
+*   M1+E2: ΔJ = 0, 1; Δπ = No
+*   E1+M2: ΔJ = 0, 1; Δπ = Yes
+*   E2+M3: ΔJ = 2; Δπ = No
+*   M2+E3: ΔJ = 2; Δπ = Yes
 
-### Examples: Deducing $J^\pi$ Initial from Multipolarity and $J^\pi$ Final
+### Examples: Deducing Jπ Initial from Multipolarity and Jπ Final
 
-1. D+Q transition from/to $5/2^+$:
-   * $\Delta J = 0, 1$
-   * Result: $3/2±, 5/2±, 7/2±$
-  
-2. M1+E2 transition from/to $5/2^+$:
-   * $\Delta J = 0, 1$; $\Delta \pi = \text{No}$
-   * Result: $3/2^+, 5/2^+, 7/2^+$
+1. D+Q transition from/to 5/2+:
+   *   ΔJ = 0, 1
+   *   Result: 3/2±, 5/2±, 7/2±
 
-3. M2+E3 transition from/to $5/2^+$:
-   * $\Delta J = 2$; $\Delta \pi = \text{Yes}$
-   * Result: $1/2^-, 9/2^-$
+2. M1+E2 transition from/to 5/2+:
+   *   ΔJ = 0, 1; Δπ = No
+   *   Result: 3/2+, 5/2+, 7/2+
+
+3. M2+E3 transition from/to 5/2+:
+   *   ΔJ = 2; Δπ = Yes
+   *   Result: 1/2−, 9/2−
 
 ---
 
 ## 6. Capture Transitions
 
-Primary $\gamma$ transitions from neutron/proton capture resonances are physically dominated by the lowest multipoles (E1, M1, E2). Higher orders are kinetically and statistically suppressed.
+Primary γ transitions from neutron/proton capture resonances are possibly dominated by the lowest multipoles (E1, M1, E2). Higher orders are suppressed.
 
-* D (E1, M1): $\Delta J = 0, 1$; $\Delta \pi = \text{Yes or No}$
-* E2: $\Delta J = 2$; $\Delta \pi = \text{No}$
+*   D, including E1, M1: ΔJ = 0, 1; Δπ = Yes or No
+*   E2: ΔJ = 2; Δπ = No
 
-### Examples: Deducing $J^\pi$ Final from Multipolarity and $J^\pi$ Initial
+### Examples: Deducing Jπ of a final level from multipolarity and Jπ of the initial level
 
-Primary transition from $5/2^+$ initial via D or E2:
-* D (E1, M1): Final $3/2±, 5/2±, 7/2±$
-* E2: Final $1/2^+, 9/2^+$
-* Combination: $1/2^+, 3/2±, 5/2±, 7/2±, 9/2^+$
+Primary transition from 5/2+ Initial via D or E2:
+*   D {E1, M1}: Final 3/2±, 5/2±, 7/2±
+*   E2: Final 1/2+, 9/2+
+*   Combination: 1/2+, 3/2±, 5/2±, 7/2±, 9/2+
 
-Primary transition from $7/2^-$ initial via D or E2:
-* D (E1, M1): Final $5/2±, 7/2±, 9/2±$
-* E2: Final $3/2^-, 11/2^-$
-* Combination: $3/2^-, 5/2±, 7/2±, 9/2±, 11/2^-$
+Primary transition from 7/2- Initial via D or E2:
+*   D {E1, M1}: Final 5/2±, 7/2±, 9/2±
+*   E2: Final 3/2-, 11/2-
+*   Combination: 3/2-, 5/2±, 7/2±, 9/2±, 11/2-
 
-If two primary transitions from $5/2^+$ and $7/2^-$, the AND of the above two sets:
-* Final $3/2^-, 5/2±, 7/2±, 9/2^+$ (common to both sets)
+If two primary γ transitions from 5/2+ and 7/2-, the "AND" intersection of the above two sets:
+*   Jπ of the final level: 3/2-, 5/2±, 7/2±, 9/2+
+
+Considering the multipolarity is not directly determined by experimental evidence, the final Jπ is put in parentheses to indicate the assumptions made:
+*   Adopted: (3/2-, 5/2±, 7/2±, 9/2+)
 
 ---
 
 ## 7. Practical Workflow: Intersection Logic
 
-### Deducing $J^\pi$ from Multiple Constraints
+### Deducing Jπ from Multiple Constraints
 
-1. List allowed $J^\pi$ from each constraint (primary feeding γ, decay γ)
-2. For primary feeding γ, D or E2 are considered:
-   * Apply multipolarity selection rules to get possible $J^\pi$
+1. List allowed Jπ from each constraint (primary feeding γ, decay γ)
+2. For primary feeding γ, D or E2 are considered possible:
+   *   Apply multipolarity selection rules to deduce possible Jπ
 3. For decay γ, D or Q are considered:
-   * Apply multipolarity selection rules to get possible $J^\pi$
-   * If lifetime is short and RUL applies, exclude M2, i.e., consider D or E2, the same as primary γ
-   * If decay γ is also primary γ, apply D or E2 selection rules for that as well
-3. Apply AND (intersection) across all constraints
-4. Result: Common $J^\pi$ values only
+   *   Apply multipolarity selection rules to deduce possible Jπ
+   *   If lifetime is short and RUL applies, rule out M2, i.e., only consider D or E2, the same as primary γ
+   *   If decay γ is also primary γ, apply D or E2 selection rules for that as well
+4. Apply AND (intersection) across all constraints
+5. Result: Common Jπ options only
 
 *Note: Parentheses in ENSDF denote tentative assignments, e.g., (5/2+,7/2,9/2+)*
 
@@ -162,6 +165,8 @@ Fed by primary γ from 5/2+ (D or E2):
 
 **AND:** 5/2±, 7/2±, 9/2+
 
+Adopted: (5/2±, 7/2±, 9/2+)
+
 ### Example 2: Fed by primary γ from 5/2-. Decay γ to 1/2+ and 5/2+ (Lifetime short, RUL applies, M2 ruled out)
 
 Fed by primary γ (D or E2):
@@ -175,6 +180,8 @@ Decay γ to 5/2+ (D or E2):
 
 **AND:** 3/2±, 5/2+
 
+Adopted: (3/2±, 5/2+)
+
 ### Example 3: Fed by primary γ from 7/2+. Decay γ to 5/2+ (Lifetime unknown, RUL does not apply, M2 allowed)
 
 Fed by primary γ (D or E2):
@@ -184,3 +191,5 @@ Decay γ to 5/2+ (D or Q):
 1/2±, 3/2±, 5/2±, 7/2±, 9/2±
 
 **AND:** 3/2+, 5/2±, 7/2±, 9/2±
+
+Adopted: (3/2+, 5/2±, 7/2±, 9/2±)
