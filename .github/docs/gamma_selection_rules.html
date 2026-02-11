@@ -419,13 +419,13 @@ aside > *:last-child {
 <li>E2: ΔJ = 2; Δπ = No</li>
 </ul>
 <h3 id="examples-deducing-jπ-of-a-final-level-from-multipolarity-and-jπ-of-the-initial-level">Examples: Deducing Jπ of a final level from multipolarity and Jπ of the initial level</h3>
-<p>Primary transition from 5/2+ Initial via D or E2:</p>
+<p>Primary γ transition from 5/2+ Initial via D or E2:</p>
 <ul>
 <li>D {E1, M1}: Final 3/2±, 5/2±, 7/2±</li>
 <li>E2: Final 1/2+, 9/2+</li>
 <li>Combination: 1/2+, 3/2±, 5/2±, 7/2±, 9/2+</li>
 </ul>
-<p>Primary transition from 7/2- Initial via D or E2:</p>
+<p>Primary γ transition from 7/2- Initial via D or E2:</p>
 <ul>
 <li>D {E1, M1}: Final 5/2±, 7/2±, 9/2±</li>
 <li>E2: Final 3/2-, 11/2-</li>
@@ -440,26 +440,65 @@ aside > *:last-child {
 <li>Adopted: (3/2-, 5/2±, 7/2±, 9/2+)</li>
 </ul>
 <hr>
-<h2 id="7-practical-workflow-intersection-logic">7. Practical Workflow: Intersection Logic</h2>
-<h3 id="deducing-jπ-from-multiple-constraints">Deducing Jπ from Multiple Constraints</h3>
-<ol>
-<li>List allowed Jπ from each constraint (primary feeding γ, decay γ)</li>
-<li>For primary feeding γ, D or E2 are considered possible:
+<h2 id="7-practical-workflow-combining-jπ-constraints-logic">7. Practical Workflow: Combining Jπ Constraints Logic</h2>
+<h3 id="goal">Goal</h3>
+<p>Deduce the Jπ of a level by combining constraints from:</p>
 <ul>
-<li>Apply multipolarity selection rules to deduce possible Jπ</li>
+<li><strong>Feeding transitions</strong> — γ rays populating the level (from capture resonances above)</li>
+<li><strong>Deexciting transitions</strong> — γ rays depopulating the level (to lower levels below)</li>
 </ul>
-</li>
-<li>For decay γ, D or Q are considered:
-<ul>
-<li>Apply multipolarity selection rules to deduce possible Jπ</li>
-<li>If lifetime is short and RUL applies, rule out M2, i.e., only consider D or E2, the same as primary γ</li>
-<li>If decay γ is also primary γ, apply D or E2 selection rules for that as well</li>
-</ul>
-</li>
-<li>Apply AND (intersection) across all constraints</li>
-<li>Result: Common Jπ options only</li>
-</ol>
-<p><em>Note: Parentheses in ENSDF denote tentative assignments, e.g., (5/2+,7/2,9/2+)</em></p>
+<hr>
+<h3 id="multipolarity-selection-rules">Multipolarity Selection Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Transition Type</th>
+<th style="text-align:left">Apply</th>
+<th style="text-align:left">Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Primary feeding γ</strong> (from resonances)</td>
+<td style="text-align:left"><strong>D or E2</strong></td>
+<td style="text-align:left">Always</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Deexciting γ</strong> (decay to lower levels)</td>
+<td style="text-align:left"><strong>D or Q</strong></td>
+<td style="text-align:left">Long or unknown lifetime</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Deexciting γ</strong> (decay to lower levels)</td>
+<td style="text-align:left"><strong>D or E2</strong></td>
+<td style="text-align:left">Short lifetime (RUL applies: M2 ruled out)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: Primary γ = capture transition from neutron/proton resonance</em></p>
+<hr>
+<h3 id="workflow-algorithm">Workflow Algorithm</h3>
+<pre><code>FOR each feeding γ:
+    Apply D or E2 selection rules
+    IF feeding level has multi-valued Jπ (e.g., 1/2+,3/2+):
+        Calculate allowed Jπ for EACH value separately
+        Take OR (union) of results
+    ENDIF
+ENDFOR
+
+FOR each deexciting γ:
+    IF lifetime is short (RUL applies):
+        Apply D or E2 selection rules
+    ELSE:
+        Apply D or Q selection rules
+    ENDIF
+ENDFOR
+
+Take AND (intersection) of ALL constraints above
+
+RESULT: Common Jπ values → Put in parentheses to indicate tentative assignment
+</code></pre>
+<p><em>Parentheses in ENSDF denote tentative assignments based on assumed multipolarities</em></p>
 <h3 id="example-1-fed-by-primary-γ-from-72--72-and-52">Example 1: Fed by primary γ from 7/2-, 7/2+, and 5/2+</h3>
 <p>Fed by primary γ from 7/2- (D or E2):
 3/2-, 5/2±, 7/2±, 9/2±, 11/2-</p>

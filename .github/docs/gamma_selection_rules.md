@@ -136,21 +136,53 @@ Considering the multipolarity is not directly determined by experimental evidenc
 
 ---
 
-## 7. Practical Workflow: Intersection Logic
+## 7. Practical Workflow: Combining Jπ Constraints Logic
 
-### Deducing Jπ of a level from Multiple Constraints
+### Goal
 
-1. List allowed Jπ based on each constraint (primary feeding γ, deexciting γ)
-2. For primary feeding γ, D or E2 are considered possible:
-   *   Apply multipolarity selection rules to deduce possible Jπ for the level fed by that primary γ
-3. For deexciting γ, D or Q are considered:
-   *   Apply multipolarity selection rules to deduce possible Jπ for the level deexcited by that γ
-   *   If lifetime of the level is short and RUL applies, rule out M2, i.e., only consider D or E2, i.e., the same as primary feeding γ
-   *   If the level is a proton/neutron resonance, the deexciting γ is also a primary γ, apply D or E2 selection rules for that as well
-4. Apply AND (intersection) across all constraints
-5. Result: Common Jπ options put in parentheses to indicate assumptions made
+Deduce the Jπ of a level by combining constraints from:
+- **Feeding transitions** — γ rays populating the level (from capture resonances above)
+- **Deexciting transitions** — γ rays depopulating the level (to lower levels below)
 
-*Note: Parentheses in ENSDF denote tentative assignments, e.g., (5/2+,7/2,9/2+)*
+---
+
+### Multipolarity Selection Rules
+
+| Transition Type | Apply | Condition |
+|:----------------|:------|:----------|
+| **Primary feeding γ** (from resonances) | **D or E2** | Always |
+| **Deexciting γ** (decay to lower levels) | **D or Q** | Long or unknown lifetime |
+| **Deexciting γ** (decay to lower levels) | **D or E2** | Short lifetime (RUL applies: M2 ruled out) |
+
+*Note: Primary γ = capture transition from neutron/proton resonance*
+
+---
+
+### Workflow Algorithm
+
+```
+FOR each feeding γ:
+    Apply D or E2 selection rules
+    IF feeding level has multi-valued Jπ (e.g., 1/2+,3/2+):
+        Calculate allowed Jπ for EACH value separately
+        Take OR (union) of results
+    ENDIF
+ENDFOR
+
+FOR each deexciting γ:
+    IF lifetime is short (RUL applies):
+        Apply D or E2 selection rules
+    ELSE:
+        Apply D or Q selection rules
+    ENDIF
+ENDFOR
+
+Take AND (intersection) of ALL constraints above
+
+RESULT: Common Jπ values → Put in parentheses to indicate tentative assignment
+```
+
+*Parentheses in ENSDF denote tentative assignments based on assumed multipolarities*
 
 ### Example 1: Fed by primary γ from 7/2-, 7/2+, and 5/2+
 
