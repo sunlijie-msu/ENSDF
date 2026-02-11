@@ -3,7 +3,7 @@
  35CL2 H CIT=ENSDF$CUT=30-Sep-2025$                                             
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35CL DG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
+ 35CL dG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  35CL dG $Transition strength is calculated by Java-RULER (version 21-Sep-2025) 
  35CL  Q -5966.2   7 12644.765 6370.81 4 -6997.904     2021WA16                 
  35CL cQ $S(2n)=24152.8 {I4}, S(2p)=17254.1 {I11} (2021Wa16)                    
@@ -375,7 +375,7 @@
  35CL cL E$weighted average of 3942.0 {I7} from ({+28}Si,|ap|g), 3943.4 {I10}   
  35CL2cL from ({+16}O,|ap|g), 3942.3 {I10} from ({+14}N,|apn|g), 3943.4 {I12}   
  35CL3cL from (|a,p|g), and 3942.9 {I2} from (p,|g).                            
- 35CL cL J$spin=9/2 from p|g(|q) in (|a,p|g); 2180|g E2 to 5/2+                 
+ 35CL cL J$spin=9/2 from p|g(|q) in (|a,p|g); 2180.1|g E2 to 5/2+               
  35CL cL T$lifetime |t=0.26 ps {I5}: weighted average of 0.33 ps {I5} in        
  35CL2cL (|a,p|g) (1972Br33, DSAM), 0.39 ps {I11} (1972Hu11, DSAM), 0.145 ps    
  35CL3cL {I50} (1973Fa07, DSAM), and 0.29 ps {I5} (1976Me12, DSAM) from (p,|g). 
@@ -712,7 +712,7 @@
  35CLX L XREF=LOR                                                               
  35CL cL E$weighted average of 5402.0 {I29} from (|a,p) and 5403.5 {I10} from   
  35CL2cL (p,|g). Other: 5409 {I12} from ({+3}He,d)                              
- 35CL cL J$L=1 from 0+ in ({+3}He,d); 2400.7|g to 5/2+ rules out 1/2- based on  
+ 35CL cL J$L=1 from 0+ in ({+3}He,d); 2400.6|g to 5/2+ rules out 1/2- based on  
  35CL2cL RUL, since it would require a large B(M2)(W.u.) exceeding RUL          
  35CL cL T$lifetime |t=17 fs {I4} from (p,|g) (1976Me12, DSAM)                  
  35CL cL $The contribution of I|g to unknown levels adds up to 36% of           
@@ -857,7 +857,7 @@
  35CLX L XREF=LO                                                                
  35CL cL E$weighted average of 5808.1 {I31} from (|a,p) and 5806 {I2} from      
  35CL2cL (p,|g)                                                                 
- 35CL cL J$primary 2891|g from 8696.9, 3/2- level; 5806|g to 3/2+ g.s.          
+ 35CL cL J$primary 2891|g from 8696.9, 3/2- level; 5806.1|g to 3/2+ g.s.        
  35CL cL T$lifetime |t=5 fs {I1} from (p,|g) (1976Me12, DSAM).                  
  35CL  G 5806.1       100                                                       
  35CL  L 5830      4  (5/2-)                                                Z   
@@ -923,7 +923,7 @@
  35CLX L XREF=L(6104*)OW(6140*)X(6136*)                                         
  35CL cL E$weighted average of 6104 {I4} from (|a,p) and 6106.2 {I21} from      
  35CL2cL (p,|g).                                                                
- 35CL cL J$4886.4|g to 1/2+, 4342.9|g to 5/2+; primary 6106.2|g from 7781.7,    
+ 35CL cL J$4886.5|g to 1/2+, 4342.8|g to 5/2+; primary 6106.2|g from 7781.7,    
  35CL2cL (5/2-) level                                                           
  35CL cL T$lifetime |t=12 fs {I3} from (p,|g) in 1976Me12 with DSAM.            
  35CL  G 4342.8       10.3   35                                                 
@@ -993,7 +993,7 @@
  35CLX L XREF=LY(6677*)                                                         
  35CL  L 6660.2    8   (11/2-)                                                  
  35CLX L XREF=F                                                                 
- 35CL cL J$2312|g to 9/2-, 3497|g to 7/2- in ({+28}Si,|ap|g), assuming spin     
+ 35CL cL J$2312.4|g to 9/2-, 3497.1|g to 7/2- in ({+28}Si,|ap|g), assuming spin 
  35CL2cL increasing as excitation energy increases.                             
  35CL  G 2312.4                                                                 
  35CL  G 3497.1                                                                 
@@ -1170,7 +1170,7 @@
  35CLX L XREF=LOR                                                               
  35CL cL E$weighted average of 7362 {I3} from (|a,p), 7362.0 {I8} from (p,|g),  
  35CL2cL and 7361 {I2} from ({+3}He,d)                                          
- 35CL cL J$spin=3/2 from |g(|q) in (p,|g); 6142.0|g (M1+E2) to 1/2+             
+ 35CL cL J$spin=3/2 from |g(|q) in (p,|g); 6141.9|g (M1+E2) to 1/2+             
  35CL  G 1707         0.41                                                      
  35CL  G 2352.7       0.82                                                      
  35CL  G 2522.7       1.4                                                       
@@ -1193,7 +1193,7 @@
  35CLX L XREF=OR                                                                
  35CL cL E$weighted average of 7396.0 {I10} from (p,|g), and 7398 {I2} from     
  35CL2cL ({+3}He,d)                                                             
- 35CL cL J$spin=7/2 from |g(|q) in (p,|g); 4232.7|g (M1+E2) to 7/2-             
+ 35CL cL J$spin=7/2 from |g(|q) in (p,|g); 4233.3|g (M1+E2) to 7/2-             
  35CL  G 3048.5       23                                                        
  35CL  G 3283.8       17                                                        
  35CL  G 3453.3       11                                                        
@@ -1220,7 +1220,7 @@
  35CLX L XREF=O                                                                 
  35CL  L 7501.1    8  (5/2+,7/2,9/2+)                                           
  35CLX L XREF=L(7503*)O                                                         
- 35CL cL J$primary 3558.0|g to 9/2+, 4498.0|g to 5/2+                           
+ 35CL cL J$primary 3558.0|g to 9/2+, 4498.2|g to 5/2+                           
  35CL  G 3558.0       46     6                                                  
  35CL  G 4498.2       23.6   24                                                 
  35CL  G 4855.1       100    11                                                 
@@ -1359,7 +1359,7 @@
  35CLX L XREF=L                                                                 
  35CL  L 7656.6    8  (1/2,3/2,5/2+)                                            
  35CLX L XREF=O                                                                 
- 35CL cL J$primary 3689.1|g to 1/2+                                             
+ 35CL cL J$primary 3688.8|g to 1/2+                                             
  35CL  G 1550.4       5.3    26                                                 
  35CL  G 1974.3       1.8    9                                                  
  35CL  G 2002         1.8    9                                                  
@@ -1413,7 +1413,7 @@
  35CL4cG level in (p,|g)                                                        
  35CL  L 7693.9    8  (1/2+,3/2,5/2)                                            
  35CLX L XREF=O                                                                 
- 35CL cL J$primary 7693.0|g to 3/2+, 3634.5|g to (3/2)-, 4690.8|g to 5/2+       
+ 35CL cL J$primary 7693.0|g to 3/2+, 3634.6|g to (3/2)-, 4690.9|g to 5/2+       
  35CL  G 2095.4       1.0    5                                                  
  35CL  G 3634.6       1.0    5                                                  
  35CL  G 4690.9       2.1    11                                                 
@@ -1445,7 +1445,7 @@
  35CL  L 7744.8    9  7/2-                                                      
  35CLX L XREF=LO                                                                
  35CL cL E$other: 7744.1 {I30} from (|a,p)                                      
- 35CL cL J$spin=7/2 from |g(|q) in (p,|g); 4581.5|g M1+E2 to 7/2-               
+ 35CL cL J$spin=7/2 from |g(|q) in (p,|g); 4581.6|g M1+E2 to 7/2-               
  35CL  G 2863.7       47                                                        
  35CL  G 2974.8       4.7                                                       
  35CL  G 3632.2       14                                                        
@@ -1475,7 +1475,7 @@
  35CL  L 7777.1    9  (5/2+)                                                    
  35CLX L XREF=LO                                                                
  35CL cL E$from (p,|g). Other: 7770.3 {I33} from (|a,p).                        
- 35CL cL J$based on primary transitions: 4613.8|g to 7/2-, 5131.0|g to 7/2+,    
+ 35CL cL J$based on primary transitions: 4613.9|g to 7/2-, 5131.0|g to 7/2+,    
  35CL2cL 6557.1|g to 1/2+                                                       
  35CL  G 2122         1.3                                                       
  35CL  G 2613.7       2.8                                                       
@@ -1561,7 +1561,7 @@
  35CL cG $B(E1)(W.u.)=2.24 {I+47-44} exceeds RUL=0.1                            
  35CL  L 7839.0    9  (5/2+)                                                    
  35CLX L XREF=O                                                                 
- 35CL cL J$primary 6618.9|g to 1/2+, 3895.9|g to 9/2+                           
+ 35CL cL J$primary 6619.0|g to 1/2+, 3895.9|g to 9/2+                           
  35CL  G 1658         1.4                                                   Y   
  35CL  G 2240.5       1.4                                                   Y   
  35CL  G 2624.4       3.8                                                   Y   
@@ -1577,7 +1577,7 @@
  35CL  L 7868.7    10 (1/2+,3/2,5/2+)                                           
  35CLX L XREF=LO                                                                
  35CL cL E$other: 7868.5 {I35} from (|a,p)                                      
- 35CL cL J$primary 6648.6|g to 1/2+, 2652.8|g to (5/2+)                         
+ 35CL cL J$primary 6648.6|g to 1/2+, 2654.1|g to (5/2+)                         
  35CL  G 2654.1       1.6                                                       
  35CL  G 2859.5       4.9                                                       
  35CL  G 3695.1       8.2                                                       
@@ -1703,7 +1703,7 @@
  35CL cG MR$-0.36 {I2} or -11 {I3} from (p,|g).                                 
  35CL  L 7995.6    10 (5/2)                                                     
  35CLX L XREF=O                                                                 
- 35CL cL J$primary 2592.0|g to 3/2-, 7994.6|g to 3/2+, 2832.1|g to 7/2-,        
+ 35CL cL J$primary 2592.2|g to 3/2-, 7994.6|g to 3/2+, 2832.1|g to 7/2-,        
  35CL2cL 5349.5|g to 7/2+                                                       
  35CL  G 2188.9       0.77                                                      
  35CL  G 2397.1       1.4                                                       
@@ -1813,7 +1813,7 @@
  35CLX L XREF=O                                                                 
  35CL  L 8096.1    11 (5/2)                                                     
  35CLX L XREF=O                                                                 
- 35CL cL J$primary 2932.6|g to 7/2-, 5449.9|g to 7/2+; 3918.0|g to 3/2-,        
+ 35CL cL J$primary 2932.6|g to 7/2-, 5450.0|g to 7/2+; 3918.0|g to 3/2-,        
  35CL2cL 4177.4|g to 3/2+                                                       
  35CL  G 2289.4       5.1                                                       
  35CL  G 2450         13                                                        
@@ -1854,7 +1854,7 @@
  35CL cG MR$+1.2 {I1} or -0.46 {I4}.                                            
  35CL  L 8113.3    11 (1/2+,3/2,5/2+)                                           
  35CLX L XREF=L(8121?)O                                                         
- 35CL cL J$primary 2897.4|g (5/2+), 4145.7|g to 1/2+                            
+ 35CL cL J$primary 2897.4|g (5/2+), 4145.4|g to 1/2+                            
  35CL  G 1621         19                                                        
  35CL  G 2007.0       19                                                        
  35CL  G 2306.6       3.4                                                       
@@ -1907,7 +1907,7 @@
  35CLX L XREF=L                                                                 
  35CL  L 8179.4    12 (3/2-,5/2,7/2+)                                           
  35CLX L XREF=O                                                                 
- 35CL cL J$primary 5016.0|g to 7/2-, 5485.0|g to 3/2+                           
+ 35CL cL J$primary 5016.1|g to 7/2-, 5484.9|g to 3/2+                           
  35CL  G 3554.9       13.2   13                                                 
  35CL  G 5016.1       11.8   12                                                 
  35CL  G 5176.4       5.9    30                                                 
@@ -1961,7 +1961,7 @@
  35CL  G 7022.3       100                                                       
  35CL  L 8251      5   (3/2+,5/2+)                                              
  35CLX L XREF=L(8246.0*)O                                                       
- 35CL cL J$primary 4137|g to 7/2+, 7031|g to 1/2+                               
+ 35CL cL J$primary 4138|g to 7/2+, 7031|g to 1/2+                               
  35CL  G 4138         4.9                                                       
  35CL  G 5248         7.3                                                       
  35CL  G 7031         100                                                       
@@ -2052,7 +2052,7 @@
  35CL cG MR$-0.15 {I4} or +9.5 {I36} from |g(|q) in (p,|g)                      
  35CL  L 8318.1    3  (5/2+)                                                    
  35CLX L XREF=L(8321.0)O                                                        
- 35CL cL J$primary 4350.5|g to 1/2+, 5154.7|g to 7/2-, 5671.9|g to 7/2+         
+ 35CL cL J$primary 4350.2|g to 1/2+, 5154.8|g to 7/2-, 5671.9|g to 7/2+         
  35CL  G 2511.4       0.9                                                       
  35CL  G 2672         0.9                                                       
  35CL  G 2719.6       1.9                                                       
@@ -2089,7 +2089,7 @@
  35CLS G  IPC=0.000746 10                                                       
  35CL  L 8323.1    13  (3/2+,5/2+)                                              
  35CLX L XREF=L(8321.0)O                                                        
- 35CL cL J$primary 4209.1|g to 7/2+, 7102.9|g to 1/2+                           
+ 35CL cL J$primary 4210.4|g to 7/2+, 7103.0|g to 1/2+                           
  35CL  G 4210.4       1.2                                                       
  35CL  G 5320.0       3.7                                                       
  35CL  G 5676.9       4.9                                                       
@@ -2175,7 +2175,7 @@
  35CLX L XREF=OP(8435)                                                          
  35CL  L 8464.3    5  (1/2+,3/2,5/2+)                                           
  35CLX L XREF=O                                                                 
- 35CL cL J$primary 4496.7|g to 1/2+, 3248.3|g to (5/2+)                         
+ 35CL cL J$primary 4496.4|g to 1/2+, 3249.6|g to (5/2+)                         
  35CL  G 2809         47     24                                                 
  35CL  G 3249.6       34     17                                                 
  35CL  G 3455.0       47     24                                                 
@@ -2343,7 +2343,7 @@
  35CL  G 8617.1       100    24                                                 
  35CL  L 8630.1    3  7/2-             0.001 KEV 1                              
  35CLX L XREF=O                                                                 
- 35CL cL J$4282.1|g M1+E2 to 9/2-, 6866.4|g D+Q to 5/2+, spin=3/2,7/2 from      
+ 35CL cL J$4282.1|g M1+E2 to 9/2-, 6866.2|g D+Q to 5/2+, spin=3/2,7/2 from      
  35CL2cL |g(|q) in (p,|g).                                                      
  35CL  G 2906.5       0.6    4                                                  
  35CL  G 3466.6       17     9  M1+E2    +0.60   10                             
@@ -2532,7 +2532,7 @@
  35CLX L XREF=P                                                                 
  35CL  L 8833.1    5  (5/2,7/2)                                                 
  35CLX L XREF=O                                                                 
- 35CL cL J$primary 3617.1|g to (5/2+), 4063.0|g to (5/2-); 4719.1|g to 7/2+,    
+ 35CL cL J$primary 3618.4|g to (5/2+), 4063.0|g to (5/2-); 4720.4|g to 7/2+,    
  35CL2cL 5669.6|g to 7/2-                                                       
  35CL  G 3618.4       30     15                                                 
  35CL  G 4063.0       11     6                                                  
@@ -2559,7 +2559,7 @@
  35CLX L XREF=FHIN(8840)                                                        
  35CL cL E$weighted average of 8845.1 {I9} from ({+28}Si,|ap|g), 8844.6 {I5}    
  35CL2cL from ({+16}O,|ap|g), and 8844.2 {I4} from ({+14}N,|apn|g)              
- 35CL cL J$971.38|g E2, |DJ=2 to 13/2+, 526|g to 15/2-; band assignment         
+ 35CL cL J$971.38|g E2, |DJ=2 to 13/2+, 524.8|g to 15/2-; band assignment       
  35CL cL T$weighted average of 6.1 ps {I11} from ({+16}O,|ap|g) (1991Ja11, DSAM)
  35CL2cL and 5.5 ps {I14} from ({+14}N,|apn|g) (1976Wa11, DSAM)                 
  35CL  G 524.8                                                                  
@@ -2615,7 +2615,7 @@
  35CL  G 8884.9       54     16                                                 
  35CL  L 8893.3    5  (5/2+,7/2+)                                               
  35CLX L XREF=O                                                                 
- 35CL cL J$primary 4950.0|g to 9/2+, 6198.8|g to 3/2+                           
+ 35CL cL J$primary 4950.0|g to 9/2+, 6198.7|g to 3/2+                           
  35CL  G 3307.1       4.3    22                                                 
  35CL  G 4780.6       24     11                                                 
  35CL  G 4950.0       11     6                                                  
@@ -2625,7 +2625,7 @@
  35CL  G 8892.1       2.7    14                                                 
  35CL  L 8904.8    5  (1/2,3/2,5/2+)                                            
  35CLX L XREF=O                                                                 
- 35CL cL J$primary 4726.6|g to 3/2-, 6210.3|g to 3/2+, 7684.5|g to 1/2+         
+ 35CL cL J$primary 4726.6|g to 3/2-, 6210.2|g to 3/2+, 7684.5|g to 1/2+         
  35CL  G 2724         15     8                                                  
  35CL  G 3250         12     6                                                  
  35CL  G 3895.5       13     7                                                  
@@ -2651,7 +2651,7 @@
  35CL  G 7142.9       100    10                                                 
  35CL  L 8919.8    5  (5/2-,7/2,9/2+)                                           
  35CLX L XREF=OX(8921*)                                                         
- 35CL cL J$primary 4571.7|g to 9/2-, 7156.0|g to 5/2+                           
+ 35CL cL J$primary 4571.7|g to 9/2-, 7155.9|g to 5/2+                           
  35CL  G 3274         10     5                                                  
  35CL  G 4571.7       14     7                                                  
  35CL  G 5756.4       100    11                                                 
@@ -2776,7 +2776,7 @@
  35CLX L XREF=O                                                                 
  35CL  L 9157.1    5  5/2-                                                      
  35CLX L XREF=OP(9159)                                                          
- 35CL cL J$spin=5/2 from |g(|q) in (p,|g); 5993.6|g M1+E2 to 7/2-               
+ 35CL cL J$spin=5/2 from |g(|q) in (p,|g); 5993.7|g M1+E2 to 7/2-               
  35CL  G 3942.4       17                                                        
  35CL  G 4386.9       16                                                        
  35CL  G 4978.8       30                                                        
@@ -3156,4 +3156,4 @@
  35CL cL J$3734|g to 23/2-; band assignment                                     
  35CL cL T$lifetime |t<13 fs from ({+28}Si,|ap|g) (2013Bi10, DSAM)              
  35CL  G 3734.0                                                                 
-      
+
