@@ -72,7 +72,7 @@ def parse_ensdf_file(filepath: Path) -> Dict[float, ENSDFLevel]:
         nucid = line[0:5]
         rectype = line[7:8] if len(line) > 7 else ''
         
-        if rectype == 'L' and 'CL' in nucid:
+        if rectype == 'L' and nucid.strip():
             # Extract energy (columns 10-19, 1-based → indices 9-19)
             energy_str = line[9:19].strip()
             if not energy_str:
@@ -114,15 +114,16 @@ def find_quoted_references(filepath: Path) -> List[QuotedReference]:
     j_comment_start_line = 0
     
     for i, line in enumerate(lines, start=1):
-        if len(line) < 9:
+        if len(line) < 10:
             continue
         
         nucid = line[0:5]
         cont = line[5:6]
-        rectype_char = line[7:8]  # Column 8 (index 7)
+        col7 = line[6:7]  # Column 7 (index 6)
+        col8 = line[7:8]  # Column 8 (index 7)
         
-        # Check if this is a cL comment (rectype = 'L' at column 8)
-        if rectype_char == 'L' and 'CL' in nucid:
+        # Check if this is a cL comment (col 7='c', col 8='L')
+        if col7 == 'c' and col8 == 'L' and nucid.strip():
             # Check if J$ identifier present
             if 'J$' in line[9:]:
                 in_j_comment = True
@@ -130,7 +131,7 @@ def find_quoted_references(filepath: Path) -> List[QuotedReference]:
                 j_comment_start_line = i
             elif in_j_comment:
                 # Continuation line (e.g., 2cL, 3cL)
-                # Column 8 must still be 'L' for continuation
+                # Column 7 must still be 'c' and column 8 must be 'L'
                 j_comment_lines.append(line)
         else:
             # Process accumulated J$ comment
@@ -193,10 +194,31 @@ def extract_patterns_from_comment(comment_lines: List[str], start_line: int) -> 
             context=f"{gamma_energy}|g from {level_energy}, {jpi}"
         ))
     
-    # Pattern 2: Outgoing gamma "gamma_energy|g to J-π"
-    # Example: "2339.4|g to 1/2-"
-    pattern2 = r'(\d+\.?\d*)\|g\s+to\s+([^\s,;]+(?:\s*\([^)]*\))?)'
-    for match in re.finditer(pattern2, full_text):
+    # Pattern 2a: Outgoing gamma with level energy "gamma_energy|g [stuff] to level_energy, J-π"
+    # Example: "1986|g to 1572, 1/2+" or "1824.7|g M1+E2 to 1991, 7/2-"
+    # Allow optional multipolarity/angular info between |g and "to"
+    pattern2a = r'(\d+\.?\d*)\|g\s+(?:[^,]+?\s+)?to\s+(\d+\.?\d*),\s*([^\s.,;]+(?:\s*\([^)]*\))?[^\s.,;]*?)(?:\s+level|,\s*\d+\.?\d*\|g|and|;|\s*$)'
+    for match in re.finditer(pattern2a, full_text):
+        gamma_energy = float(match.group(1))
+        level_energy = float(match.group(2))
+        jpi = match.group(3).strip()
+        
+        # Clean up J-π
+        if jpi.endswith(' level'):
+            jpi = jpi[:-6].strip()
+        
+        references.append(QuotedReference(
+            pattern_type='outgoing',
+            energy=level_energy,
+            jpi=jpi,
+            line_num=start_line,
+            context=f"{gamma_energy}|g to {level_energy}, {jpi}"
+        ))
+    
+    # Pattern 2b: Outgoing gamma to J-π only (no level energy) "gamma_energy|g to J-π"
+    # Example: "2339.4|g to 1/2-" (rare in practice when level energy is not known)
+    pattern2b = r'(\d+\.?\d*)\|g\s+to\s+([^\s,;]+(?:\s*\([^)]*\))?)'
+    for match in re.finditer(pattern2b, full_text):
         gamma_energy = float(match.group(1))
         jpi = match.group(2).strip()
         
