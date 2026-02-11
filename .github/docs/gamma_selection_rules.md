@@ -118,12 +118,12 @@ Primary γ transitions from neutron/proton capture resonances are possibly domin
 
 ### Examples: Deducing Jπ of a final level from multipolarity and Jπ of the initial level
 
-Primary transition from 5/2+ Initial via D or E2:
+Primary γ transition from 5/2+ Initial via D or E2:
 *   D {E1, M1}: Final 3/2±, 5/2±, 7/2±
 *   E2: Final 1/2+, 9/2+
 *   Combination: 1/2+, 3/2±, 5/2±, 7/2±, 9/2+
 
-Primary transition from 7/2- Initial via D or E2:
+Primary γ transition from 7/2- Initial via D or E2:
 *   D {E1, M1}: Final 5/2±, 7/2±, 9/2±
 *   E2: Final 3/2-, 11/2-
 *   Combination: 3/2-, 5/2±, 7/2±, 9/2±, 11/2-
@@ -138,17 +138,17 @@ Considering the multipolarity is not directly determined by experimental evidenc
 
 ## 7. Practical Workflow: Intersection Logic
 
-### Deducing Jπ from Multiple Constraints
+### Deducing Jπ of a level from Multiple Constraints
 
-1. List allowed Jπ from each constraint (primary feeding γ, decay γ)
+1. List allowed Jπ based on each constraint (primary feeding γ, deexciting γ)
 2. For primary feeding γ, D or E2 are considered possible:
-   *   Apply multipolarity selection rules to deduce possible Jπ
-3. For decay γ, D or Q are considered:
-   *   Apply multipolarity selection rules to deduce possible Jπ
-   *   If lifetime is short and RUL applies, rule out M2, i.e., only consider D or E2, the same as primary γ
-   *   If decay γ is also primary γ, apply D or E2 selection rules for that as well
+   *   Apply multipolarity selection rules to deduce possible Jπ for the level fed by that primary γ
+3. For deexciting γ, D or Q are considered:
+   *   Apply multipolarity selection rules to deduce possible Jπ for the level deexcited by that γ
+   *   If lifetime of the level is short and RUL applies, rule out M2, i.e., only consider D or E2, i.e., the same as primary feeding γ
+   *   If the level is a proton/neutron resonance, the deexciting γ is also a primary γ, apply D or E2 selection rules for that as well
 4. Apply AND (intersection) across all constraints
-5. Result: Common Jπ options only
+5. Result: Common Jπ options put in parentheses to indicate assumptions made
 
 *Note: Parentheses in ENSDF denote tentative assignments, e.g., (5/2+,7/2,9/2+)*
 
