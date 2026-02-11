@@ -10,6 +10,13 @@ L-record and G-record data fields. Detects discrepancies in:
   3. Level energies  — quoted level energy vs. L-record E field
   4. J-pi notation   — quoted J-pi vs. L-record J field (cols 23-39)
 
+ENSDF CONVENTIONS RECOGNIZED:
+
+  Ground state notation (g.s.):
+    - Comments use g.s. to denote ground state transitions
+    - Data fields record ground state energy as 0.0 keV
+    - These are semantically equivalent: no error flagged for g.s. vs 0.0
+
 This script is read-only: it never modifies any files.
 
 Usage:
@@ -314,17 +321,16 @@ def verify(refs: List[QuotedRef], levels: Dict[float, Level],
                 quoted=ref.gamma_energy_str,
             ))
         else:
-            diff = abs(g.energy - ref.gamma_energy)
-            if diff > _EPS:
+            # Gamma energy must match EXACTLY character-for-character
+            if g.energy_str != ref.gamma_energy_str:
                 findings.append(Finding(
-                    code='GAMMA_ENERGY_DIFF', severity='INFO',
+                    code='GAMMA_ENERGY_MISMATCH', severity='ERROR',
                     line=ref.line_num, context=ref.context,
-                    message=(f'Quoted {ref.gamma_energy_str} keV, '
-                             f'G-record has {g.energy_str} keV '
-                             f'(diff {diff:.4f} keV)'),
+                    message=(f'Quoted "{ref.gamma_energy_str}" keV, '
+                             f'G-record has "{g.energy_str}" keV'),
                     quoted=ref.gamma_energy_str,
                     actual=g.energy_str,
-                    diff_kev=diff,
+                    diff_kev=abs(g.energy - ref.gamma_energy),
                 ))
             # else: exact match — no finding needed
 
@@ -352,17 +358,21 @@ def verify(refs: List[QuotedRef], levels: Dict[float, Level],
                     quoted=ref.level_energy_str,
                 ))
             else:
-                diff = abs(lvl.energy - ref.level_energy)
-                if diff > _EPS:
+                # Level energy must match EXACTLY character-for-character
+                # EXCEPTION: g.s. notation in comments is equivalent to 0.0 in data
+                # (ENSDF convention: ground state written as g.s. in comments)
+                is_ground_state_match = (
+                    ref.level_energy_str == 'g.s.' and lvl.energy_str == '0.0'
+                )
+                if not is_ground_state_match and lvl.energy_str != ref.level_energy_str:
                     findings.append(Finding(
-                        code='LEVEL_ENERGY_DIFF', severity='INFO',
+                        code='LEVEL_ENERGY_MISMATCH', severity='ERROR',
                         line=ref.line_num, context=ref.context,
-                        message=(f'Quoted {ref.level_energy_str} keV, '
-                                 f'L-record has {lvl.energy_str} keV '
-                                 f'(diff {diff:.4f} keV)'),
+                        message=(f'Quoted "{ref.level_energy_str}" keV, '
+                                 f'L-record has "{lvl.energy_str}" keV'),
                         quoted=ref.level_energy_str,
                         actual=lvl.energy_str,
-                        diff_kev=diff,
+                        diff_kev=abs(lvl.energy - ref.level_energy),
                     ))
                 # Check J-pi against this level
                 if lvl.jpi != ref.jpi:
@@ -398,7 +408,6 @@ def print_report(filepath: Path, findings: List[Finding],
     """Print human-readable verification report."""
     errors = [f for f in findings if f.severity == 'ERROR']
     infos  = [f for f in findings if f.severity == 'INFO']
-    n_pass = n_refs * 4 - len(findings)   # approximate pass count
 
     print()
     print('=' * 80)
@@ -409,7 +418,6 @@ def print_report(filepath: Path, findings: List[Finding],
     print('=' * 80)
     print()
     print(f'  ERRORS: {len(errors)}')
-    print(f'  INFO:   {len(infos)}')
     print()
 
     if errors:
@@ -422,21 +430,9 @@ def print_report(filepath: Path, findings: List[Finding],
             print(f'      Context: {f.context}')
             print()
 
-    if infos:
-        print('-' * 80)
-        print(f'{YELLOW}{BOLD}INFO (energy differences){RESET}')
-        print('-' * 80)
-        for i, f in enumerate(infos, 1):
-            print(f'  {YELLOW}#{i} [{f.code}]{RESET}  line {f.line}')
-            print(f'      {f.message}')
-            print()
-
     print('=' * 80)
     if errors:
-        print(f'{RED}RESULT: {len(errors)} error(s) found — review required{RESET}')
-    elif infos:
-        print(f'{YELLOW}RESULT: No errors. '
-              f'{len(infos)} energy difference(s) reported for review.{RESET}')
+        print(f'{RED}RESULT: {len(errors)} error(s) found — all must be fixed{RESET}')
     else:
         print(f'{GREEN}RESULT: All quoted values match records exactly.{RESET}')
     print('=' * 80)
