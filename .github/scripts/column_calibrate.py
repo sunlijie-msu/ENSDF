@@ -426,13 +426,15 @@ def validate_s_field(filename):
                     print()
                 elif ds_stripped:
                     # Check if it's left-justified
-                    if ds_field[0] == ' ' and ds_field[1].isdigit():
+                    # ANY content in DS field must start at Column 75 (ds_field[0])
+                    # If ds_field[0] is space, but field has content, it is an error (either alignment or garbage)
+                    if ds_field[0] == ' ':
                          print(f"LINE {line_num}: DS field analysis")
                          print(f"Line:  {line_content}")
                          print(f"S field (65-74):  '{s_field}'")
                          print(f"DS field (75-76): '{ds_field}'")
-                         print(f"[ERROR] ERROR: DS field is not LEFT-JUSTIFIED - got '{ds_field}'")
-                         print(f"   Expected: '{ds_field[1]} '")
+                         print(f"[ERROR] ERROR: DS field content '{ds_stripped}' is not LEFT-JUSTIFIED or contains INVALID leading space")
+                         print(f"   Expected: Content should start at column 75. Found '{ds_field}'")
                          ds_field_errors += 1
                          print()
                 else:
@@ -1671,6 +1673,65 @@ def validate_ti_field(filename):
         print(f"[ERROR] ERRORS: {ti_errors} TI field positioning errors found!")
         return False
 
+def validate_dti_field(filename):
+    """
+    Validate DTI field (TI uncertainty) positioning in columns 75-76 for G-records.
+    
+    ENSDF Rule: DTI field is 2 columns (75-76).
+    Content must be numeric or standard markers (LT/GT).
+    Any Alphabetic character (A-Z) in this field is likely a shifted flag.
+    """
+    print(f"\nDTI FIELD VALIDATION: {filename}")
+    print("=" * 60)
+    print("Checking DTI field content in columns 75-76...")
+    print("ENSDF Rule: DTI field must contain uncertainty (digits) or markers.")
+    print("           It must NOT contain comment flags (A-Z).")
+    print()
+    
+    dti_errors = 0
+    dti_analyzed = 0
+    
+    lines = get_stripped_lines(filename)
+    
+    for line_num, line_content in enumerate(lines, 1):
+        if len(line_content) < 76 or line_content[7] != 'G':
+            continue
+            
+        # Extract DTI (cols 75-76, index 74-76)
+        dti_field = line_content[74:76]
+        dti_stripped = dti_field.strip()
+        
+        if dti_stripped:
+            dti_analyzed += 1
+            # Check for invalid characters (Shifted Flags)
+            # Allowed: Digits, space, 'L', 'T', 'G' (LT/GT), '<', '>' (if used?)
+            # ENSDF usually uses LT/GT codes in uncertainty fields, or just digits.
+            # If we see any other alpha char, it's an error.
+            if any(c.isalpha() and c not in {'L', 'T', 'G'} for c in dti_stripped):
+                 print(f"[ERROR] Line {line_num}: Invalid character in DTI field (columns 75-76)")
+                 print(f"   Found '{dti_stripped}' in DTI field.")
+                 print(f"   If this is a Flag (e.g. 'A', 'X'), it must be in Column 77.")
+                 print(f"   Line: {line_content}")
+                 dti_errors += 1
+            
+            # Check Left-Justification (if it starts with space but has content)
+            if dti_field[0] == ' ' and len(dti_stripped) > 0:
+                 # Strictly enforce left justification?
+                 # If " 3", technically readable but standard prefers "3 ".
+                 # We will warn or error.
+                 # Given user strictness: ERROR.
+                 print(f"[ERROR] Line {line_num}: DTI field not LEFT-JUSTIFIED")
+                 print(f"   Found '{dti_field}'. Content '{dti_stripped}' should start at Column 75.")
+                 print(f"   Line: {line_content}")
+                 dti_errors += 1
+
+    print(f"DTI FIELD SUMMARY:")
+    print(f"  G-records with DTI: {dti_analyzed}")
+    print(f"  DTI errors: {dti_errors}")
+    print()
+    
+    return dti_errors == 0
+
 def validate_gt_lt_placement(filename):
     """
     Validate GT/LT marker placement in ENSDF records (SEMANTIC VALIDATION).
@@ -1950,6 +2011,7 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
             ("MUL tag", validate_mul_field(filename)),
             ("Conversion coefficient (CC)", validate_cc_field(filename)),
             ("Transition intensity (TI)", validate_ti_field(filename)),
+            ("Transition intensity uncertainty (DTI)", validate_dti_field(filename)),
             ("GT/LT placement", validate_gt_lt_placement(filename)),
             ("Comment flags", validate_comment_flags(filename)),
             ("G-record flags", validate_g_record_flags(filename)),

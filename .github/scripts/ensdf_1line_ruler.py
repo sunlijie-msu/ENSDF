@@ -167,6 +167,20 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
         col_77 = line[76] if len(line) > 76 else ' '
         col_80 = line[79] if len(line) > 79 else ' '
 
+        # CRITICAL AI FIX: Check for shifted flags in Column 76 (Index 75)
+        # Column 76 (part of 2-col uncertainty fields like DS, DTI) should only contain:
+        # - Digits (0-9)
+        # - Spaces
+        # - 'T' (part of LT/GT markers)
+        # - 'L' or 'G' (start of LT/GT markers - but usually L/G is at Col 75, T at 76? No, LT is 2 chars. 
+        #   If at 75-76: 75=L, 76=T. If at 76-77? No field is 76-77. 
+        #   Fields are 75-76. So 75 can be L/G/digit/space. 76 can be T/digit/space.
+        #   If 76 has 'X', it is INVALID.
+        col_76 = line[75] if len(line) > 75 else ' '
+        valid_col76 = {' ', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'T'} # T for LT/GT
+        if col_76 not in valid_col76:
+            errors.append(f'Col 76: "{col_76}" invalid. Expected digit, space, or "T" (for LT/GT). Possible shifted flag?')
+
         if not record_def.col77_validator(col_77):
             errors.append(f'Col 77: "{col_77}" invalid — {record_def.col77_hint}')
         if not record_def.col80_validator(col_80):
