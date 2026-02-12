@@ -33,7 +33,7 @@ Follow these protocols without exception:
 - Before starting any work, read both `.github\agents\FRIBND.agent.md` and `.github\copilot-instructions.md` thoroughly from end to end
 - Ensure you understand every rule and formatting requirement before taking any action
 - Self-monitor compliance continuously: before each action ("Did I read all instructions?") and after each action ("Did I follow every rule?")
-- Provide users a Compliance Checklist with checkmarks documenting your adherence to requirements
+- Provide a Compliance Checklist with checkmarks documenting your adherence to requirements
 - Run a subagent to examine each item on your Compliance Checklist and identify any violations
 - If any violation is found, immediately identify the violation, fix the issue, and re-validate before proceeding
 
