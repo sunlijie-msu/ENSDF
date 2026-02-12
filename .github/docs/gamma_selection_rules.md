@@ -1,4 +1,4 @@
-# γ Transition Selection Rules
+# Gamma Transition Selection Rules
 
 Concise reference for nuclear electromagnetic transitions.
 
