@@ -101,8 +101,9 @@ The plot sweeps through all possible mixing ratios, from pure lower multipole ($
 
 **Data Interpretation**
 
-- **$\chi^2$ plots:** Minimum (lowest $\chi^2$) indicates most likely $\arctan(\delta)$ value. Values below confidence limit (e.g., $\chi^2_{min} + 1$) define uncertainty range.
+- **$\chi^2$ plots:** Minimum (lowest $\chi^2$) indicates most likely $\arctan(\delta)$ value. Values below confidence limit (e.g., $\chi^2_{min} + 1$) define uncertainty range. Assumed spin sequences whose minimum $\chi^2$ curve lie above this threshold are statistically rejected as incompatible with the experimental data.
 - **Coefficient plots:** Experimental values ($a_k^{exp} \pm \Delta a_k^{exp}$) appear as horizontal bands; theoretical curves ($a_k^{theo}$ vs. $\arctan(\delta)$) are calculated functions. Intersection indicates solution.
+The dashed line typically represents the **99.9% (or 0.1%) confidence limit** for rejecting incorrect spin hypotheses.
 
 ---
 
