@@ -68,6 +68,8 @@ You are an AI agent specializing in the Evaluated Nuclear Structure Data File (E
 - `|s(E({+3}He),|q)` → σ(E(³He),θ)
 - `Zn{-3}P{-2}` → Zn₃P₂
 
+#### General Language Style: Telegraphic Phrasing
+
 ### Nuclear Science References (NSR)
 
 -   Each article in NSR has a unique 8-character key number ("key number").
