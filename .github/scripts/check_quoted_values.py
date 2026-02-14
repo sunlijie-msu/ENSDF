@@ -230,29 +230,32 @@ def _parse_j_block(texts: List[str], start_line: int) -> List[QuotedRef]:
     full = ''.join(texts)
     results: List[QuotedRef] = []
 
-    # Pattern: ENERGY|g [MULTIPOLARITY[, extras]] (from|to) (LEVEL_ENERGY|g.s.)[,\s] JPI
+    # Pattern: [MULTIPOLARITY] ENERGY|g (from|to) JPI (LEVEL_ENERGY|g.s.)
     pattern = (
-        r'(\d+(?:\.\d+)?)\|g'          # group 1: gamma energy
+        r'(?:([A-Z0-9+\(\)\[\]]+)\s+)?'  # group 1: optional multipolarity at start
+        r'(\d+(?:\.\d+)?)\s*\|g'          # group 2: gamma energy (allow space before |g)
         r'\s+'
-        r'(?:([A-Z0-9+\(\)\[\]]+)'     # group 2: multipolarity (optional start)
-        r'(?:,[^ft][^ro].*?)?'          #   optional comma + extras (not from/to)
-        r'\s+)?'                        #   (end optional multipolarity)
-        r'(from|to)'                    # group 3: direction
+        r'(from|to)'                       # group 3: direction
         r'\s+'
-        r'(g\.s\.|(\d+(?:\.\d+)?))'    # group 4: level text, group 5: numeric energy
-        r'[,\s]+'
-        r'([^\s,;]+(?:\s*\([^\)]*\))?[^\s,;.]*)'  # group 6: J-pi
+        r'([^\s,;]+(?:\s*\([^\)]*\))?[^\s,;-]*)'  # group 4: J-pi
+        r'\s+'
+        r'(g\.s\.|(\d+(?:\.\d+)?))(?:-keV)?(?:\s+level)?'  # group 5: level (g.s. or number), group 6: numeric part
     )
 
     for m in re.finditer(pattern, full):
-        ge_str = m.group(1)
-        mul = m.group(2).split(',')[0].strip() if m.group(2) else None
+        mul = m.group(1).strip() if m.group(1) else None
+        ge_str = m.group(2)
         direction = m.group(3)
-        lev_str = m.group(4)
-        lev_e = 0.0 if lev_str == 'g.s.' else (float(m.group(5)) if m.group(5) else None)
-        jpi = m.group(6).strip()
+        jpi = m.group(4).strip()
+        lev_capture = m.group(5)  # either "g.s." or the numeric string
+        if lev_capture == 'g.s.':
+            lev_str = 'g.s.'
+            lev_e = 0.0
+        else:
+            lev_str = lev_capture
+            lev_e = float(lev_capture)
+        
         # Clean trailing artefacts
-        jpi = re.sub(r'\s+level$', '', jpi)
         jpi = re.sub(r'[;,.]$', '', jpi)
 
         results.append(QuotedRef(
