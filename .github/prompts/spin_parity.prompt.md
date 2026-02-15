@@ -34,54 +34,60 @@ L-Transfer values and corresponding J-π assignments:
 
 **CRITICAL**: J = spin; π = parity
 
-- **WITHOUT parentheses**: Firm, well-established assignments (e.g., `3/2+`, `7/2-`)
-- **WITH parentheses**: Less certain, tentative assignments (e.g., `(3/2+)`, `(7/2-)`)
+- **WITHOUT parentheses**: Firm, well-established assignments (e.g., `3/2+`, `7/2-`, `0+`, `5-`)
+- **WITH parentheses**: Less certain, tentative assignments (e.g., `(3/2+)`, `(7/2)-`, `0(+)`, `(5-)`)
 - **Parentheses indicate uncertainty in the assignment confidence, not the measurement precision**
 - **With/without parentheses and the placement of parentheses are critical for conveying the confidence level of the assignment** 
 
 
 
-- `1/2-` = firm spin, firm parity, no other possibilities
-- `(9/2+)` = tentative spin-parity, other spin-parity possibilities exist
-- `7/2(+)` = firm spin with tentative parity, other spin impossible; other parity possible
-- `(5/2)-` = tentative spin with firm negative parity, other spin possible; positive parity impossible
-- `(11/2)` = tentative spin, parity unknown or undetermined
-- `+` = only positive parity determined, spin unknown
-- `-` = only negative parity determined, spin unknown
-- `(+)` = tentative positive parity, spin unknown
-- `(-)` = tentative negative parity, spin unknown
+#### Basic Single Assignments
 
-#### Multiple Possible Assignments
+| Notation | Spin | Parity | Other Spin? | Other Parity? | Expands To |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `1/2-` | Firm | Firm | Impossible | Impossible | — |
+| `(9/2+)` | Tentative | Tentative | Possible | Possible | — |
+| `7/2(+)` | Firm | Tentative | Impossible | Possible | — |
+| `(5/2)-` | Tentative | Firm | Possible | Impossible | — |
+| `(11/2)` | Tentative | Unknown | Possible | Possible | — |
+| `+` | Unknown | Firm | Possible | Impossible | — |
+| `(+)` | Unknown | Tentative | Possible | Possible | — |
 
-- `1/2-,3/2-` = multiple spins with firm parity (both certain, comma-separated), no other spin-parity possibilities
-- `(5/2+,7/2+)` = multiple tentative possibilities, other spin-parity possibilities exist
-- `(1/2,3/2)+` = multiple tentative spins with firm positive parity, other spins possible; negative parity impossible
-- `(7/2,9/2)-` = multiple tentative spins with firm negative parity, other spins possible; positive parity impossible
-- `(1/2,3/2,5/2)-` = multiple tentative spins with firm negative parity, other spins possible; positive parity impossible
-- `(3/2,5/2,7/2+)` = mixed notation: first two spins with both parities possible, last spin with firm positive parity
+#### Multiple Spin Assignments
+
+| Notation | Spin | Parity | Other Spin? | Other Parity? | Expands To |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `1/2-,3/2-` | Firm | Firm | Impossible | Impossible | 1/2- or 3/2- |
+| `(5/2+,7/2+)` | Tentative | Tentative | Possible | Possible | 5/2+ or 7/2+ |
+| `(7/2,9/2)-` | Tentative | Firm | Possible | Impossible | 7/2- or 9/2- |
+| `1/2,3/2(+)` | Firm | Tentative | Impossible | Possible | 1/2+ or 3/2+ |
+| `(1/2,3/2,5/2)-` | Tentative | Firm | Possible | Impossible | 1/2- or 3/2- or 5/2- |
+| `(3/2,5/2,7/2+)` | Tentative | Mixed | Possible | Possible | 3/2± or 5/2± or 7/2+ |
 
 #### Range Assignments
 
-- `1/2+:7/2+` = range of firm spin-parity assignments 1/2+, 3/2±, 5/2+, 7/2+; other spins impossible; other parities impossible.
-- `(1/2+:7/2+)` = range of tentative spin-parity assignments 1/2+, 3/2±, 5/2±, 7/2+; other spins possible; other parities possible.
-- `(1/2:7/2)+` = range of tentative spins 1/2+, 3/2+, 5/2+, 7/2+ with firm + parity; other spins possible; other parities impossible.
-- `(1/2:7/2)(+)` = range of tentative spins 1/2+, 3/2+, 5/2+, 7/2+ with tentative + parity; other spins possible; other parities possible.
-- `1/2:7/2(-)` = range of firm spins 1/2-, 3/2-, 5/2-, 7/2- with tentative - parity; other spins impossible; other parities possible.
-- `(1/2:7/2)` = range of tentative spins 1/2, 3/2, 5/2, 7/2 with unknown parity; other spins possible; any parities possible.
+| Notation | Spin | Parity | Other Spin? | Other Parity? | Expands To |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `1/2+:7/2+` | Firm | Mixed | Impossible | Impossible | 1/2+ or 3/2± or 5/2± or 7/2+ |
+| `1/2:7/2+` | Firm | Mixed | Impossible | Impossible | 1/2± or 3/2± or 5/2± or 7/2+ |
+| `(1/2+:7/2+)` | Tentative | Mixed | Possible | Possible | 1/2+ or 3/2± or 5/2± or 7/2+ |
+| `(1/2:7/2)+` | Tentative | Firm | Possible | Impossible | 1/2+ or 3/2+ or 5/2+ or 7/2+ |
+| `(1/2:7/2)(+)` | Tentative | Tentative | Possible | Possible | 1/2+ or 3/2+ or 5/2+ or 7/2+ |
+| `1/2:7/2(-)` | Firm | Tentative | Impossible | Possible | 1/2± or 3/2± or 5/2± or 7/2- |
+| `(1/2:7/2)` | Tentative | Unknown | Possible | Possible | 1/2± or 3/2± or 5/2± or 7/2± or else |
+
 
 #### Mixed Confidence Patterns
 
-- `3/2-,(5/2-)` = first assignment firm, second tentative
-- `(7/2)+,9/2+` = first assignment tentative, second firm
-- `1/2(+),3/2-` = first has tentative parity, second fully firm
-- `(5/2)+,(7/2)-` = multiple assignments with different confidence levels
-
-#### Special Cases
-
-- `1/2+,3/2-` = multiple firm assignments with different parities
-- `(5/2+,7/2-)` = multiple tentative assignments with different parities
-- `3/2,5/2,7/2` = multiple possible spins, parity undetermined
-- `(1/2,3/2,5/2)` = multiple tentative spins, parity undetermined
+| Notation | Spin | Parity | Other Spin? | Other Parity? | Expands To |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `1/2+,3/2-` | Firm | Firm | Impossible | Impossible | 1/2+ or 3/2- |
+| `3/2-,(5/2-)` | Mixed | Firm | Mixed | Impossible | 3/2- or (5/2-) |
+| `(7/2)+,9/2+` | Mixed | Mixed | Mixed | Mixed | (7/2)+ or 9/2+ |
+| `1/2(+),3/2-` | Firm | Mixed | Mixed | Mixed | 1/2(+), 3/2- |
+| `(5/2+,7/2-)` | Tentative | Tentative | Possible | Possible | 5/2+ or 7/2- or else |
+| `3/2,5/2,7/2` | Firm | Unknown | Impossible | Possible | 3/2± or 5/2± or 7/2± |
+| `(1/2,3/2,5/2)` | Tentative | Unknown | Possible | Possible | 1/2± or 3/2± or 5/2± or else |
 
 ### Critical Formatting Rules
 
