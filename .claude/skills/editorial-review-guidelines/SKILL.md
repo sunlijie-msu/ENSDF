@@ -5,74 +5,182 @@ description: Performs professional editorial review of ENSDF comment lines for g
 
 # ENSDF Editorial Review Skill
 
+## Pre-Review Requirements
+
+**MANDATORY: Read ENSDF notation rules before every review**
+- Consult `.github\copilot-instructions.md` ENSDF Comment Text Format Standards section
+- Verify understanding of `|?` (approximate ≈), `{+n}` (superscript), `{-n}` (subscript), Greek letters
+- Never flag valid ENSDF notation as errors
+
+## CRITICAL ACTION POLICY: CHECK-ONLY
+
+⚠️ **DEFAULT BEHAVIOR: EDITORIAL REVIEW = CHECK-ONLY (NO EDITS)**
+- **NEVER make any edits** unless user explicitly requests modification
+- Review is **REPORT FINDINGS ONLY** — flag issues in tabular format
+- Provide line numbers, current text, recommended correction, and rationale
+- User reviews findings in VS Code diff view before accepting changes
+- Only edit if user explicitly states "fix these" or "apply corrections"
+
+**Why this rule exists**: LLMs can introduce formatting errors. Human review of diffs catches mistakes before they corrupt nuclear data files.
+
+## Critical Notation Format Errors
+
+**Superscript/Subscript positioning: ELEMENT SYMBOL MUST BE OUTSIDE BRACES**
+- WRONG: `{+13C}`, `{+48Ca}`, `{-1/2}He` (element inside braces)
+- CORRECT: `{+13}C`, `{+48}Ca`, `{-1/2}` (only number/value inside)
+
+**Systematic scanning**:
+- Search for: `{+[0-9]+}[A-Z][a-z]?` (correct pattern)
+- Flag: `{+[0-9A-Z][a-z]*}` or `{-[0-9A-Za-z]*}[A-Z]` (incorrect patterns)
+- Examples of errors:
+  - `{+13C}` → `{+13}C`
+  - `{+48Ca}` → `{+48}Ca`
+  - `{+208Pb}` → `{+208}Pb`
+  - `{+1/2}He` → `{+1/2}` (if standalone) OR review context
+
+**Critical importance**: This error appears frequently in lab notebook comments and must be caught on every review
+
 ## Core Review Patterns
 
-### 1. Subject-Verb Agreement
+### 1. Dittography (Repeated Words)
 
-**NSR References as Singular Subjects**
-- NSR key numbers (YYYYAA##) act as singular subjects: `2005Ga01 predict` → `2005Ga01 predicts`
-- `1972Hu10 measure` → `1972Hu10 measures`
+**Check for duplicated words**
+- Scan for: "the the", "from from", "were were", "in in", "and and", "of of"
+- Flag ALL instances of unintentional word repetition
+- Examples:
+  - `the the decay` → `the decay`
+  - `were were shifted` → `were shifted`
+  - `from from measurements` → `from measurements`
 
-**Evaluator Count**
-- Check H record `AUT=` field for actual author count
-- `AUT=B. Singh and C.D. Nesaraja` → use plural "evaluators"
-- Match usage throughout file to H record count
+**Systematic scanning required**: Use regex `\b(\w+)\s+\1\b` to catch all repetitions
 
-### 2. Hyphenation Rules
+### 2. Subject-Verb Agreement
 
-**Compound Adjectives Before Nouns** (hyphenate):
-- "4-mm-long gas cell", "x-ray diffraction", "R-matrix theory", "multi-reflection"
+**NSR references as singular subjects**
+- NSR key numbers (YYYYAA##) function as singular subjects
+- Examples: `2005Ga01 predict` → `2005Ga01 predicts`
+- Apply consistently: `1972Hu10 measure` → `1972Hu10 measures`
 
-**After Nouns** (no hyphen):
-- "was 4 mm in length", "emission by x rays"
+**Evaluator count verification**
+- Check H record `AUT=` field for author count
+- Two+ authors: use plural "evaluators"
+- Single author: use singular "evaluator"
+- Match throughout entire file
 
-**Always Hyphenated**: "L-transfers", "half-life"
+### 3. Hyphenation
 
-**Gamma Terminology**:
-- Noun: "gamma rays were detected" (no hyphen)
-- Adjective: "gamma-ray spectrum" (hyphenated)
+**Compound adjectives before nouns: HYPHENATE**
+- "4-mm-long gas cell", "x-ray diffraction", "R-matrix theory"
+- "multi-reflection", "high-energy gamma"
 
-### 3. Punctuation
+**Not used as adjectives: NO HYPHEN**
+- "was 4 mm in length", "emission by x rays", "energy is high"
 
-**Comma Splices** → Use semicolons:
-- Wrong: `recorded, the latter allowed`
-- Correct: `recorded; the latter allowed`
+**Always hyphenated: "L-transfers", "half-life"**
 
-**Oxford Comma**: Preferred in technical lists (e.g., `curve, efficiency, and number`)
+**Gamma-ray terminology**
+- Noun form: "gamma rays were detected" (no hyphen)
+- Adjective form: "gamma-ray spectrum" (hyphenated)
 
-### 4. Spelling and Common Typos
+### 4. Punctuation
 
-- Correct obvious misspellings in comment text (e.g., `striped` → `stripped`, `evaluatord` → `evaluator`).
-- Check discipline-specific terms and names for exact spelling (e.g., `GXPF1A`, facility names, detector names).
-- Preserve intentional abbreviations, NSR key numbers, and ENSDF notation.
+**Comma splices → semicolons**
+- Wrong: `spectra were recorded, the latter allowed precise`
+- Correct: `spectra were recorded; the latter allowed precise`
 
-### 5. Technical Terminology
+**Oxford comma in technical lists**
+- Preferred: `measured curve, efficiency, and number`
+- Avoid: `measured curve, efficiency and number`
 
-- "granddaughter" (single word, not "grand-daughter")
-- Shell-model interactions: "GXPF1A" (exact capitalization)
-- Adverb modifiers: "novelly designed" (not "novel designed")
+### 5. Spelling
 
-### 6. Passive Voice
+**Common misspellings**
+- `striped` → `stripped`, `ohter` → `other`, `stoped` → `stopped`
+- `usign` → `using`, `coeffcients` → `coefficients`
+- `deexiting` → `deexciting`, `paretheses` → `parentheses`
 
-- Ensure auxiliary verbs: "spectra were recorded" (not "spectra recorded")
+**Discipline-specific terms**
+- Verify exact spelling: "GXPF1A", facility names, detector names
+- Preserve NSR key numbers, ENSDF notation, intentional abbreviations
 
-## Exclusions
+### 6. Technical Terminology
 
-- **Do NOT flag missing terminating periods**: Java NDS tool adds during PDF conversion
-- **Do NOT modify XREF, data record fields, or column-positioning**
+**Single-word compounds**
+- "granddaughter" (NOT "grand-daughter")
+
+**Exact capitalization**
+- Shell-model interactions: "GXPF1A" (not "gxpf1a" or "GXPF1a")
+
+**Adverb modifiers**
+- "novelly designed" (NOT "novel designed")
+
+### 7. Passive Voice
+
+**Require auxiliary verbs**
+- Correct: "spectra were recorded"
+- Wrong: "spectra recorded"
+
+## ENSDF Notation Rules (Do NOT Flag As Errors)
+
+**Mathematical and approximation symbols**
+- `|?` means ≈ (approximate/tilde) - VALID notation, not an error
+- Example: `log| {Ift} |?4.9` is correct (approximate log ft value)
+
+**Superscripts and subscripts**
+- `{+n}` = superscript (e.g., `{+3}He` → ³He)
+- `{-n}` = subscript (e.g., `T{-1/2}` → T₁/₂)
+
+**Greek letters**
+- `|a` → α, `|b` → β, `|g` → γ, `|d` → δ, etc.
+- Consult `.github\copilot-instructions.md` for complete mappings
+
+**Mathematical operators**
+- `|*` → × (times), `|<` → ≤, `|>` → ≥, `|+` → ±, `|-` → ∓
+
+**Verify before flagging**: Always check copilot-instructions.md before marking notation as erroneous
+
+## Exclusions (Never Flag)
+
+**DO NOT flag these**
+- Missing terminating periods (Java NDS tool adds during PDF conversion)
+- XREF notation or positioning
+- Data record fields (L, G, E, B records - columns outside comment fields)
+- Column positioning or spacing in fixed 80-column format
+- Valid ENSDF text encoding (`|?`, `{+n}`, `{-n}`, Greek letters)
 
 ## Workflow
 
-1. Read all `.ens` files in dataset
-2. Review comment lines (columns 8-9: `c`, `cL`, `cG`, `cB`)
-3. Apply pattern checks systematically
-4. Report findings in tabular format
-5. **Make NO edits** unless explicitly requested
+**Step 1: Preparation**
+- Read `.github\copilot-instructions.md` ENSDF Comment Text Format Standards section
+- Verify understanding of all notation symbols before starting review
+
+**Step 2: File reading**
+- Load all `.ens` files in target dataset
+- Identify H record to determine author count
+
+**Step 3: Systematic scanning**
+- Review comment lines only (columns 8-9: `c`, `cL`, `cG`, `cB`, `cN`)
+- Apply all 7 core review patterns in sequence
+- Use regex scanning for dittography: `\b(\w+)\s+\1\b`
+
+**Step 4: Documentation**
+- Report findings in tabular format (see Output Format below)
+- Provide line numbers, categories, and rationale for each finding
+
+**Step 5: Default action policy** ⚠️
+- **CHECK-ONLY by default** (see CRITICAL ACTION POLICY section above)
+- **DO NOT EDIT** unless explicitly requested
+- Report all findings; user decides on corrections
 
 ## Output Format
 
+**Use this exact table structure**
+
 ```markdown
-| Line(s) | Category | Current Text | Recommended | Rationale |
-| :--- | :--- | :--- | :--- | :--- |
-| 47 | Subject-Verb | `predict` | `predicts` | NSR key = singular |
+| File | Line(s) | Category | Current Text | Recommended | Rationale |
+|------|---------|----------|--------------|-------------|-----------|
+| filename.ens | 47 | Subject-Verb | `predict` | `predicts` | NSR key = singular subject |
+| filename.ens | 89-90 | Dittography | `the the decay` | `the decay` | Duplicated word |
 ```
+
+**Category labels**: Dittography, Subject-Verb, Hyphenation, Punctuation, Spelling, Technical Term, Passive Voice

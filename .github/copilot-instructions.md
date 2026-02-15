@@ -817,16 +817,11 @@ CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
 
 ## Document Structure
 
-**Main sections:**
+This document contains 6 main sections:
 
-1.  **ENSDF Text Format Standards** — Superscripts, subscripts, Greek letters, mathematical symbols, and Nuclear Science References (NSR) citation conventions.
-
-2.  **ENSDF 80-Column Format Standards** — NUCID field positioning, detailed record specifications (L, G, DP, B, E), structural relationships, left-justification, energy ordering, G-record flag rules, and XREF notation rules.
-
-3.  **ENSDF Uncertainty Notation** — Notation formats for data record fields (standard 2-column, extended asymmetric, scientific notation, GT/LT markers) and distinct {In} notation for comment lines.
-
-4.  **ENSDF File Editing Workflow** — File protection rules, visual ruler debugging, the "Sacred Workflow," validation tool specifications and usage (before/during/after editing), interpretation guidelines, editing methodology, and tooling workflows (Java format check, PDF generation).
-
-5.  **Tabular Data Processing and Data Entry Quality Assurance** — Zero-tolerance protocols, bidirectional positional verification, random spot-check requirements, AI weakness mitigation strategies (column alignment, blank cell handling), and comprehensive validation procedures.
-
-6.  **Academic Standards** — Professional English grammar conventions and standardized comment ordering for Adopted files.
+1. **ENSDF Comment Text Format Standards** — Superscripts, subscripts, Greek letters, mathematical symbols, NSR citation format
+2. **ENSDF 80-Column Format Standards** — NUCID field rules, L/G/DP/B/E record specifications, critical formatting rules
+3. **ENSDF Uncertainty Notation** — Data record fields (plain numbers), comment lines (`{In}` notation)
+4. **ENSDF File Editing Workflow** — File protection, validation tools (ensdf_1line_ruler.py, column_calibrate.py, check_gamma_ordering.py), Sacred Workflow
+5. **Tabular Data Processing and Data Entry Quality Assurance** — Bidirectional checks, random spot checks, AI weakness mitigation
+6. **Academic Standards** — Professional grammar, comment ordering for Adopted.ens files
