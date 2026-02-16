@@ -347,7 +347,7 @@ aside > *:last-child {
 <td style="text-align:left">Tentative</td>
 <td style="text-align:left">Possible</td>
 <td style="text-align:left">Possible</td>
-<td style="text-align:left">5/2+ or 7/2+ or low probability other Jπ</td>
+<td style="text-align:left">5/2+ or 7/2+ or low-probability other Jπ</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>(7/2,9/2)-</code></td>
@@ -355,7 +355,7 @@ aside > *:last-child {
 <td style="text-align:left">Firm</td>
 <td style="text-align:left">Possible</td>
 <td style="text-align:left">Impossible</td>
-<td style="text-align:left">7/2- or 9/2- or low probability other J-</td>
+<td style="text-align:left">7/2- or 9/2- or low-probability other J-</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>1/2,3/2(+)</code></td>
@@ -363,7 +363,7 @@ aside > *:last-child {
 <td style="text-align:left">Tentative</td>
 <td style="text-align:left">Impossible</td>
 <td style="text-align:left">Possible</td>
-<td style="text-align:left">1/2± or 3/2+ or low probability 3/2-</td>
+<td style="text-align:left">1/2± or 3/2+ or low-probability 3/2-</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>(1/2,3/2,5/2)-</code></td>
@@ -371,7 +371,7 @@ aside > *:last-child {
 <td style="text-align:left">Firm</td>
 <td style="text-align:left">Possible</td>
 <td style="text-align:left">Impossible</td>
-<td style="text-align:left">1/2- or 3/2- or 5/2- or low probability other J-</td>
+<td style="text-align:left">1/2- or 3/2- or 5/2- or low-probability other J-</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>(3/2,5/2,7/2+)</code></td>
@@ -379,11 +379,22 @@ aside > *:last-child {
 <td style="text-align:left">Mixed</td>
 <td style="text-align:left">Possible</td>
 <td style="text-align:left">Possible</td>
-<td style="text-align:left">3/2± or 5/2± or 7/2+ or low probability other Jπ</td>
+<td style="text-align:left">3/2± or 5/2± or 7/2+ or low-probability other Jπ</td>
 </tr>
 </tbody>
 </table>
 <h4 id="range-assignments">Range Assignments</h4>
+<p><strong>Range Parity Rules</strong>:</p>
+<ul>
+<li><code>A:B+</code> or <code>A:B-</code> — parity applies ONLY to endpoint B; intermediate values have ±</li>
+<li><code>(A:B)+</code> or <code>(A:B)-</code> — parity applies to ALL values A through B</li>
+<li><code>A:B(+)</code> or <code>A:B(-)</code> — tentative parity applies ONLY to endpoint B</li>
+</ul>
+<p><strong>Column Definitions</strong>:</p>
+<ul>
+<li><strong>Other Spin?</strong>: Whether spin values beyond those explicitly shown in the expansion are possible</li>
+<li><strong>Other Parity?</strong>: Whether parity values beyond those explicitly shown in the expansion are possible (note: ± notation counts as showing both parities)</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -405,6 +416,14 @@ aside > *:last-child {
 <td style="text-align:left">1/2+ or 3/2± or 5/2± or 7/2+</td>
 </tr>
 <tr>
+<td style="text-align:left"><code>1/2-:7/2+</code></td>
+<td style="text-align:left">Firm</td>
+<td style="text-align:left">Mixed</td>
+<td style="text-align:left">Impossible</td>
+<td style="text-align:left">Impossible</td>
+<td style="text-align:left">1/2- or 3/2± or 5/2± or 7/2+</td>
+</tr>
+<tr>
 <td style="text-align:left"><code>1/2:7/2+</code></td>
 <td style="text-align:left">Firm</td>
 <td style="text-align:left">Mixed</td>
@@ -413,12 +432,28 @@ aside > *:last-child {
 <td style="text-align:left">1/2± or 3/2± or 5/2± or 7/2+</td>
 </tr>
 <tr>
+<td style="text-align:left"><code>1/2+:7/2</code></td>
+<td style="text-align:left">Firm</td>
+<td style="text-align:left">Mixed</td>
+<td style="text-align:left">Impossible</td>
+<td style="text-align:left">Impossible</td>
+<td style="text-align:left">1/2+ or 3/2± or 5/2± or 7/2±</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>(1/2:7/2+)</code></td>
+<td style="text-align:left">Tentative</td>
+<td style="text-align:left">Mixed</td>
+<td style="text-align:left">Possible</td>
+<td style="text-align:left">Possible</td>
+<td style="text-align:left">1/2± or 3/2± or 5/2± or 7/2+ or low-probability other Jπ</td>
+</tr>
+<tr>
 <td style="text-align:left"><code>(1/2+:7/2+)</code></td>
 <td style="text-align:left">Tentative</td>
 <td style="text-align:left">Mixed</td>
 <td style="text-align:left">Possible</td>
 <td style="text-align:left">Possible</td>
-<td style="text-align:left">1/2+ or 3/2± or 5/2± or 7/2+ or low probability other Jπ</td>
+<td style="text-align:left">1/2+ or 3/2± or 5/2± or 7/2+ or low-probability other Jπ</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>(1/2:7/2)+</code></td>
@@ -426,15 +461,7 @@ aside > *:last-child {
 <td style="text-align:left">Firm</td>
 <td style="text-align:left">Possible</td>
 <td style="text-align:left">Impossible</td>
-<td style="text-align:left">1/2+ or 3/2+ or 5/2+ or 7/2+ or low probability other J+</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>(1/2:7/2+)</code></td>
-<td style="text-align:left">Tentative</td>
-<td style="text-align:left">Firm</td>
-<td style="text-align:left">Possible</td>
-<td style="text-align:left">Possible</td>
-<td style="text-align:left">1/2± or 3/2± or 5/2± or 7/2+ or low probability other Jπ</td>
+<td style="text-align:left">1/2+ or 3/2+ or 5/2+ or 7/2+ or low-probability other J+</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>(1/2:7/2)(+)</code></td>
@@ -442,15 +469,15 @@ aside > *:last-child {
 <td style="text-align:left">Tentative</td>
 <td style="text-align:left">Possible</td>
 <td style="text-align:left">Possible</td>
-<td style="text-align:left">1/2+ or 3/2+ or 5/2+ or 7/2+ or low probability other Jπ</td>
+<td style="text-align:left">1/2+ or 3/2+ or 5/2+ or 7/2+ or low-probability other Jπ</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>1/2:7/2(-)</code></td>
+<td style="text-align:left"><code>1/2:7/2(+)</code></td>
 <td style="text-align:left">Firm</td>
 <td style="text-align:left">Tentative</td>
 <td style="text-align:left">Impossible</td>
 <td style="text-align:left">Possible</td>
-<td style="text-align:left">1/2± or 3/2± or 5/2± or 7/2- or low probability 7/2+</td>
+<td style="text-align:left">1/2± or 3/2± or 5/2± or 7/2+ or low-probability 7/2-</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>(1/2:7/2)</code></td>
@@ -458,7 +485,7 @@ aside > *:last-child {
 <td style="text-align:left">Unknown</td>
 <td style="text-align:left">Possible</td>
 <td style="text-align:left">Possible</td>
-<td style="text-align:left">1/2± or 3/2± or 5/2± or 7/2± or low probability other Jπ</td>
+<td style="text-align:left">1/2± or 3/2± or 5/2± or 7/2± or low-probability other Jπ</td>
 </tr>
 </tbody>
 </table>
@@ -505,7 +532,7 @@ aside > *:last-child {
 <td style="text-align:left">Mixed</td>
 <td style="text-align:left">Mixed</td>
 <td style="text-align:left">Mixed</td>
-<td style="text-align:left">1/2(+) or 3/2- or low probability 1/2-</td>
+<td style="text-align:left">1/2(+) or 3/2- or low-probability 1/2-</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>(5/2+,7/2-)</code></td>
@@ -513,7 +540,7 @@ aside > *:last-child {
 <td style="text-align:left">Tentative</td>
 <td style="text-align:left">Possible</td>
 <td style="text-align:left">Possible</td>
-<td style="text-align:left">5/2+ or 7/2- or low probability other Jπ</td>
+<td style="text-align:left">5/2+ or 7/2- or low-probability other Jπ</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>3/2,5/2,7/2</code></td>
@@ -529,7 +556,7 @@ aside > *:last-child {
 <td style="text-align:left">Unknown</td>
 <td style="text-align:left">Possible</td>
 <td style="text-align:left">Possible</td>
-<td style="text-align:left">1/2± or 3/2± or 5/2± or low probability other Jπ</td>
+<td style="text-align:left">1/2± or 3/2± or 5/2± or low-probability other Jπ</td>
 </tr>
 </tbody>
 </table>

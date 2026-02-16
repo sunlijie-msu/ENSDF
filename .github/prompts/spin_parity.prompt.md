@@ -58,24 +58,35 @@ L-Transfer values and corresponding J-π assignments:
 | Notation | Spin | Parity | Other Spin? | Other Parity? | Expands To |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `1/2-,3/2-` | Firm | Firm | Impossible | Impossible | 1/2- or 3/2- |
-| `(5/2+,7/2+)` | Tentative | Tentative | Possible | Possible | 5/2+ or 7/2+ or low probability other Jπ |
-| `(7/2,9/2)-` | Tentative | Firm | Possible | Impossible | 7/2- or 9/2- or low probability other J- |
-| `1/2,3/2(+)` | Firm | Tentative | Impossible | Possible | 1/2± or 3/2+ or low probability 3/2- | 
-| `(1/2,3/2,5/2)-` | Tentative | Firm | Possible | Impossible | 1/2- or 3/2- or 5/2- or low probability other J- |
-| `(3/2,5/2,7/2+)` | Tentative | Mixed | Possible | Possible | 3/2± or 5/2± or 7/2+ or low probability other Jπ |
+| `(5/2+,7/2+)` | Tentative | Tentative | Possible | Possible | 5/2+ or 7/2+ or low-probability other Jπ |
+| `(7/2,9/2)-` | Tentative | Firm | Possible | Impossible | 7/2- or 9/2- or low-probability other J- |
+| `1/2,3/2(+)` | Firm | Tentative | Impossible | Possible | 1/2± or 3/2+ or low-probability 3/2- | 
+| `(1/2,3/2,5/2)-` | Tentative | Firm | Possible | Impossible | 1/2- or 3/2- or 5/2- or low-probability other J- |
+| `(3/2,5/2,7/2+)` | Tentative | Mixed | Possible | Possible | 3/2± or 5/2± or 7/2+ or low-probability other Jπ |
 
 #### Range Assignments
+
+**Range Parity Rules**:
+- `A:B+` or `A:B-` — parity applies ONLY to endpoint B; intermediate values have ±
+- `(A:B)+` or `(A:B)-` — parity applies to ALL values A through B
+- `A:B(+)` or `A:B(-)` — tentative parity applies ONLY to endpoint B
+
+**Column Definitions**:
+- **Other Spin?**: Whether spin values beyond those explicitly shown in the expansion are possible
+- **Other Parity?**: Whether parity values beyond those explicitly shown in the expansion are possible (note: ± notation counts as showing both parities)
 
 | Notation | Spin | Parity | Other Spin? | Other Parity? | Expands To |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `1/2+:7/2+` | Firm | Mixed | Impossible | Impossible | 1/2+ or 3/2± or 5/2± or 7/2+ |
+| `1/2-:7/2+` | Firm | Mixed | Impossible | Impossible | 1/2- or 3/2± or 5/2± or 7/2+ |
 | `1/2:7/2+` | Firm | Mixed | Impossible | Impossible | 1/2± or 3/2± or 5/2± or 7/2+ |
-| `(1/2+:7/2+)` | Tentative | Mixed | Possible | Possible | 1/2+ or 3/2± or 5/2± or 7/2+ or low probability other Jπ |
-| `(1/2:7/2)+` | Tentative | Firm | Possible | Impossible | 1/2+ or 3/2+ or 5/2+ or 7/2+ or low probability other J+ |
-| `(1/2:7/2+)` | Tentative | Firm | Possible | Possible | 1/2± or 3/2± or 5/2± or 7/2+ or low probability other Jπ |
-| `(1/2:7/2)(+)` | Tentative | Tentative | Possible | Possible | 1/2+ or 3/2+ or 5/2+ or 7/2+ or low probability other Jπ |
-| `1/2:7/2(-)` | Firm | Tentative | Impossible | Possible | 1/2± or 3/2± or 5/2± or 7/2- or low probability 7/2+ |
-| `(1/2:7/2)` | Tentative | Unknown | Possible | Possible | 1/2± or 3/2± or 5/2± or 7/2± or low probability other Jπ |
+| `1/2+:7/2` | Firm | Mixed | Impossible | Impossible | 1/2+ or 3/2± or 5/2± or 7/2± |
+| `(1/2:7/2+)` | Tentative | Mixed | Possible | Possible | 1/2± or 3/2± or 5/2± or 7/2+ or low-probability other Jπ |
+| `(1/2+:7/2+)` | Tentative | Mixed | Possible | Possible | 1/2+ or 3/2± or 5/2± or 7/2+ or low-probability other Jπ |
+| `(1/2:7/2)+` | Tentative | Firm | Possible | Impossible | 1/2+ or 3/2+ or 5/2+ or 7/2+ or low-probability other J+ |
+| `(1/2:7/2)(+)` | Tentative | Tentative | Possible | Possible | 1/2+ or 3/2+ or 5/2+ or 7/2+ or low-probability other Jπ |
+| `1/2:7/2(+)` | Firm | Tentative | Impossible | Possible | 1/2± or 3/2± or 5/2± or 7/2+ or low-probability 7/2- |
+| `(1/2:7/2)` | Tentative | Unknown | Possible | Possible | 1/2± or 3/2± or 5/2± or 7/2± or low-probability other Jπ |
 
 
 #### Mixed Confidence Patterns
@@ -85,10 +96,10 @@ L-Transfer values and corresponding J-π assignments:
 | `1/2+,3/2-` | Firm | Firm | Impossible | Impossible | 1/2+ or 3/2- |
 | `3/2-,(5/2-)` | Mixed | Firm | Mixed | Impossible | 3/2- or (5/2-) |
 | `(7/2)+,9/2+` | Mixed | Mixed | Mixed | Mixed | (7/2)+ or 9/2+ |
-| `1/2(+),3/2-` | Firm | Mixed | Mixed | Mixed | 1/2(+) or 3/2- or low probability 1/2- |
-| `(5/2+,7/2-)` | Tentative | Tentative | Possible | Possible | 5/2+ or 7/2- or low probability other Jπ |
+| `1/2(+),3/2-` | Firm | Mixed | Mixed | Mixed | 1/2(+) or 3/2- or low-probability 1/2- |
+| `(5/2+,7/2-)` | Tentative | Tentative | Possible | Possible | 5/2+ or 7/2- or low-probability other Jπ |
 | `3/2,5/2,7/2` | Firm | Unknown | Impossible | Possible | 3/2± or 5/2± or 7/2± |
-| `(1/2,3/2,5/2)` | Tentative | Unknown | Possible | Possible | 1/2± or 3/2± or 5/2± or low probability other Jπ |
+| `(1/2,3/2,5/2)` | Tentative | Unknown | Possible | Possible | 1/2± or 3/2± or 5/2± or low-probability other Jπ |
 
 ### Critical Formatting Rules
 
