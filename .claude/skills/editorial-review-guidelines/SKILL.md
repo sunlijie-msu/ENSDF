@@ -40,6 +40,15 @@ description: Performs professional editorial review of ENSDF comment lines for g
 
 **Critical importance**: This error appears frequently in lab notebook comments and must be caught on every review
 
+**Record identifiers leaked into comment text**
+- WRONG: `58ZNccL cL all the data is justifiable` (spurious "cL" text within comment line)
+- CORRECT: `58ZNccL all the data are justifiable` (record identifier only in columns 6-9)
+- **Systematic scanning**: Search comment text (columns 10-80) for leaked patterns: ` cL `, ` cG `, ` L `, ` G `, ` E `, ` B `
+- **Common cause**: Copy-paste errors or text editor formatting issues
+- **Flag all instances**: This corrupts comment readability and may confuse parsers
+
+**Critical importance**: This error appears when evaluators copy/edit continuation records and accidentally insert record type codes into comment text
+
 ## Core Review Patterns
 
 ### 1. Dittography (Repeated Words)
@@ -114,6 +123,13 @@ description: Performs professional editorial review of ENSDF comment lines for g
 **Adverb modifiers**
 - "novelly designed" (NOT "novel designed")
 
+**Chemical formulas and target materials**
+- `Cd{-2}` → `CD{-2}` when referring to deuterated carbon target (CD₂, not cadmium)
+- Context check: CD₂ targets common in nuclear physics experiments (C with D₂ deuterium)
+- Always verify against original publication to confirm target material composition
+- Common nuclear physics targets: CD₂ (deuterated polyethylene), CH₂ (polyethylene), C, Ni, Pb, etc.
+- Material notation is case-sensitive: CD ≠ Cd, CH ≠ Ch
+
 ### 7. Passive Voice
 
 **Require auxiliary verbs**
@@ -183,4 +199,4 @@ description: Performs professional editorial review of ENSDF comment lines for g
 | filename.ens | 89-90 | Dittography | `the the decay` | `the decay` | Duplicated word |
 ```
 
-**Category labels**: Dittography, Subject-Verb, Hyphenation, Punctuation, Spelling, Technical Term, Passive Voice
+**Category labels**: Dittography, Subject-Verb, Hyphenation, Punctuation, Spelling, Technical Term, Chemical Formula, Passive Voice, Notation Error, Leaked Record ID
