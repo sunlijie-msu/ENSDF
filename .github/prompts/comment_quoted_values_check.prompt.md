@@ -28,6 +28,8 @@ Cross-check all quoted values in `cL J$` comments against corresponding L-record
 | E     | 10–19   | Level energy |
 | J     | 23–39   | Spin-parity (J-π) |
 
+Column 22 may be a readability space (some evaluators use column 22 as start of J field, which is acceptable).
+
 ### G-Record Fields Used
 
 | Field | Columns | Purpose |
@@ -35,7 +37,7 @@ Cross-check all quoted values in `cL J$` comments against corresponding L-record
 | E     | 10–19   | Gamma-ray energy |
 | M     | 33–41   | Multipolarity |
 
-Column 32 is a readability space and must be blank.
+Column 32 may be part of M field (some evaluators do not use readability space at column 32, which is acceptable).
 
 ### cL J$ Comment Format
 
@@ -99,16 +101,56 @@ Quoted J-π must match the L-record J field character-for-character.
   - `(11/2-)` — tentative J and π (minus INSIDE parentheses)
 - Zero tolerance — every character must match exactly
 
+### 5. Energy Conservation (E_initial - E_final ≈ E_gamma)
+
+**CRITICAL PHYSICS CONSISTENCY CHECK**
+
+For transitions quoted as `E_gamma|g to/from E_level`, verify energy conservation:
+- **Initial level energy** (from L-record where comment appears)
+- **Final level energy** (from quoted level in comment)
+- **Gamma energy** (from quoted gamma in comment)
+
+**Requirement:** E_initial - E_final ≈ E_gamma (within reasonable tolerance)
+
+**Example:**
+- Comment at 2459.7 level: `579.1|g to (7) 1880-keV level`
+- Check: 2459.7 - 1880.44 = 579.26 ≈ 579.1 ✓
+- If 2459.7 - 1880.44 = 579.26 but comment says `600|g`: **ENERGY_CONSERVATION_VIOLATION**
+
+**Direction matters:**
+- `to` direction: E_gamma = E_initial - E_final (de-excitation, most common)
+- `from` direction: E_gamma = E_final - E_initial (feeding transition)
+
+**Tolerance:**
+- Typical: ±2 keV for well-measured gammas
+- Warning if |E_initial - E_final - E_gamma| > 2 keV
+- Error if |E_initial - E_final - E_gamma| > 5 keV (likely wrong assignment)
+
+**Common sense check:** This catches misassigned transitions where gamma energy or level references are incorrect.
+
 ---
 
 ## Comment Patterns Detected
 
-| Pattern Example | Components Extracted |
-|:----------------|:---------------------|
-| `1824.7\|g M1+E2 to 1991, 7/2-` | γ energy, multipolarity, direction, level energy, J-π |
-| `2061.6\|g D, \|DJ=1 from 5877.7 (11/2+)` | γ energy, multipolarity, direction, level energy, J-π |
-| `1986\|g to 1572, 1/2+` | γ energy, direction, level energy, J-π |
-| `3594.5\|g Q, \|DJ=2 to g.s., 3/2+` | γ energy, multipolarity, direction, g.s., J-π |
+| Pattern Example | Components Extracted | Checks Performed |
+|:----------------|:---------------------|:-----------------|
+| `1824.7\|g M1+E2 to 1991, 7/2-` | γ energy, multipolarity, direction, level energy, J-π | Verify γ vs G-record, mult vs G-record, level E vs L-record, J-π vs L-record, E_conservation |
+| `2061.6\|g D, \|DJ=1 from 5877.7 (11/2+)` | γ energy, multipolarity, direction, level energy, J-π | Same as above (note: `from` reverses energy conservation) |
+| `1986\|g to 1572, 1/2+` | γ energy, direction, level energy, J-π | Verify γ vs G-record, level E vs L-record, J-π vs L-record, E_conservation |
+| `3594.5\|g Q, \|DJ=2 to g.s., 3/2+` | γ energy, multipolarity, direction, g.s., J-π | Same as above (g.s. treated as 0.0 keV) |
+
+**Complete Example:**
+```
+At level 2459.7 keV:
+  cL J$579.1|g to (7) 1880-keV level
+
+Checks:
+  1. Does G-record exist with E=579.1? ✓
+  2. Does L-record exist at 1880 keV? ✓ (found 1880.44)
+  3. Does "1880" match L-record E field "1880.44"? ✗ LEVEL_ENERGY_MISMATCH
+  4. Does "(7)" match L-record J field? ✓
+  5. Energy conservation: 2459.7 - 1880.44 = 579.26 ≈ 579.1? ✓ (within 0.2 keV)
+```
 
 ---
 
@@ -122,6 +164,8 @@ Quoted J-π must match the L-record J field character-for-character.
 | `LEVEL_NOT_FOUND` | ERROR | No L-record matches quoted level energy within search window |
 | `LEVEL_ENERGY_MISMATCH` | ERROR | Quoted level energy string ≠ L-record E field string |
 | `JPI_MISMATCH` | ERROR | Comment J-π ≠ L-record J field |
+| `ENERGY_CONSERVATION_WARNING` | WARNING | \|E_initial - E_final - E_gamma\| > 2 keV |
+| `ENERGY_CONSERVATION_ERROR` | ERROR | \|E_initial - E_final - E_gamma\| > 5 keV |
 
 **Exit codes:**
 - `0` — No errors (all quoted values match exactly)
@@ -187,12 +231,13 @@ Confirm zero errors.
 ## Common Pitfalls
 
 1. **J-π parentheses ignored:** `(11/2)-` (tentative J, definite π⁻) ≠ `(11/2-)` (both tentative)
-2. **Multipolarity at column 32:** G-record multipolarity belongs at columns 33–41; column 32 is a readability space
+2. **Multipolarity field location:** G-record multipolarity at columns 33–41; column 32 may or may not be readability space depending on evaluator
 3. **Multipolarity substitution:** `D` (dipole, unspecified) ≠ `(M1)` (tentative M1) ≠ `M1` (definite M1)
 4. **Energy string mismatches:** `1991` ≠ `1991.27` even if numerically close; must match character-for-character
 5. **Incorrect direction:** `from` (feeding gamma) vs. `to` (de-exciting gamma) reference different levels
 6. **Ground state notation:** Comments use `g.s.`, data records show `0.0` — these are equivalent per ENSDF convention (no error)
-7. **Arbitrary acceptance thresholds:** Do not declare energy differences as "acceptable" — report all differences and let the evaluator decide
+7. **Energy conservation not checked:** Always verify E_initial - E_final ≈ E_gamma; large deviations indicate wrong level assignment or incorrect gamma placement
+8. **Arbitrary acceptance thresholds:** Do not declare energy differences as "acceptable" — report all differences and let the evaluator decide
 
 ---
 
@@ -202,5 +247,6 @@ Confirm zero errors.
 - All quoted multipolarities match G-record M fields character-for-character
 - All quoted level energies match L-record E fields character-for-character (or `g.s.` ↔ `0.0`)
 - All quoted J-π values match L-record J fields exactly
+- All transitions satisfy energy conservation: |E_initial - E_final - E_gamma| ≤ 2 keV
 - Zero errors returned by check_quoted_values.py
 
