@@ -1,25 +1,25 @@
 Semantic Structuring (Tag Wrapping, Role Assignment (system, user, assistant, or tool))
 System Message:
-Base identity
-Microsoft safety policies
-Agent base instructions
-Copilot memories: facts learned from interactions
-Repository custom instructions
-Custom agents
+Base Identity
+Microsoft Safety Policies
+Agent Base Instructions
+Copilot Memories: facts learned from interactions
+Repository Custom Instructions
+Custom Agents
 
 User Message:
-Environment info
-Workspace structure
-Conversation history
+Environment Info
+Workspace Structure
+Conversation History
 Reminders
-Editor context: edited files, selections, cursor position, terminal.
-Chat variables: attachments
-Reusable prompts/skills
-User query
+Editor Context: edited files, selections, cursor position, terminal.
+Chat Variables: attachments
+Reusable Prompts/Skills
+User Query
 
-Assistant message:
-Text response (Talking)
-Tool call (Acting)
+Assistant Message:
+Text Response (Talking)
+Tool Call (Acting)
 
 Tool Message:
-Result of tool calls
+Result of Tool Calls
