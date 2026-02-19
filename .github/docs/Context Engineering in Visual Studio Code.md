@@ -1,6 +1,6 @@
 Context Engineering in Visual Studio Code
 
-Custom Instructions: Rules, Standards, Conventions, Guidelines, Guardrails
+Copilot Instructions: Rules, Standards, Conventions, Guidelines, Guardrails
 
 Custom Agents: Persona, Role, Behavior, Tools
 
