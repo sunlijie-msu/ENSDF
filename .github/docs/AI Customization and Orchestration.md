@@ -1,8 +1,7 @@
-Agent Customization and Orchestration in Visual Studio Code
-copilot-instructions: global context, rules, standards, guidelines, guardrails
-agent: persona, role, behavior, tools
+Context Engineering in Visual Studio Code
+Custom instructions: rules, standards, conventions, guidelines, guardrails
+Custom agents: persona, role, behavior, tools
+Agent Management and Orchestration: local, background, cloud agents.
 agent (if used as subagent): guided sequential workflows (handoffs), specialized behavior
-prompt: specific tasks, commands, standardized workflows, reusable
-skills: portable and interoperable capabilities across agents, scripts, templates, examples, reference docs, resources
-
-File Discovery, File Parsing, Index Processing, markdown content rendering, Tool Reference Resolution
+prompt: commands, specific tasks, standardized workflows, reusable 
+agent skills: portable and interoperable capabilities across agents, scripts, templates, examples, reference docs, resources
