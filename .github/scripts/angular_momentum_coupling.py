@@ -1,5 +1,26 @@
-import sys
 from fractions import Fraction
+
+
+def parse_spin_parity(value: str, label: str) -> tuple[Fraction, int]:
+    if not value:
+        raise ValueError(f"{label} is empty")
+    if not (value.endswith('+') or value.endswith('-')):
+        raise ValueError(f"{label} parity missing (use + or - at end)")
+
+    spin = Fraction(value[:-1])
+    parity = 1 if value.endswith('+') else -1
+    return spin, parity
+
+
+def prompt_spin_parity(prompt_text: str, label: str) -> tuple[Fraction, int, str]:
+    while True:
+        value = input(f"{prompt_text}: ").strip()
+        try:
+            spin, parity = parse_spin_parity(value, label)
+            return spin, parity, value
+        except ValueError as error:
+            print(f"Error: {error}")
+            print("Format example: 3/2- or 1/2+ or 0+")
 
 def calc(target, particle):
     """
@@ -24,21 +45,12 @@ def calc(target, particle):
     
     # Parse inputs (e.g., "0+" -> spin="0", parity=1)
     try:
-        if not (target.endswith('+') or target.endswith('-')):
-             raise ValueError("Target parity missing (use + or - at end)")
-        if not (particle.endswith('+') or particle.endswith('-')):
-             raise ValueError("Particle parity missing (use + or - at end)")
-
-        J_target = Fraction(target[:-1])
-        pi_target = 1 if target.endswith('+') else -1
-        
-        s_particle = Fraction(particle[:-1])
-        pi_particle = 1 if particle.endswith('+') else -1
+        J_target, pi_target = parse_spin_parity(target, "Target")
+        s_particle, pi_particle = parse_spin_parity(particle, "Particle")
     except ValueError as e:
         print(f"Error parsing input: {e}")
-        print("Usage: python angular_momentum_coupling.py <Target_J^π> <Particle_s^π>")
-        print("Example: python angular_momentum_coupling.py 3/2- 1/2+")
-        print("         (Target: J=3/2 π=-, Particle: s=1/2 π=+)")
+        print("Input format example: target=3/2- and particle=1/2+")
+        print("                     (Target: J=3/2 π=-, Particle: s=1/2 π=+)")
         return
 
     print(f"\nTarget: J={J_target} π={'+' if pi_target>0 else '-'} | Particle: s={s_particle} π={'+' if pi_particle>0 else '-'}")
@@ -94,18 +106,12 @@ def calc(target, particle):
         print("-" * 70)
 
 if __name__ == "__main__":
-    if len(sys.argv) == 3:
-        calc(sys.argv[1], sys.argv[2])
-    else:
-        print("Usage: python angular_momentum_coupling.py <Target_J^π> <Particle_s^π>")
-        print("")
-        print("Arguments:")
-        print("  Target_J^π   : Target nucleus spin-parity, e.g., 3/2-")
-        print("  Particle_s^π : Transferred particle spin-parity, e.g., 1/2+")
-        print("")
-        print("Example: python angular_momentum_coupling.py 3/2- 1/2+")
-        print("         (Couples J=3/2- target with s=1/2+ particle)")
-        print("")
-        print("Running default example...")
-        # Default example run for demonstration
-        calc("3/2-", "1/2+")
+    print("Interactive mode: enter target and particle spin-parity.")
+    print("Format: Jπ, such as 3/2-, 1/2+, 0+, 1-")
+    print("")
+
+    _, _, target_text = prompt_spin_parity("Target Jπ", "Target")
+    _, _, particle_text = prompt_spin_parity("Particle Jπ", "Particle")
+    print("")
+
+    calc(target_text, particle_text)

@@ -155,7 +155,14 @@ These reactions exchange nucleon type (n ↔ p), governed by the transferred ang
 When you run the code:
 
 ```bash
-python .github/scripts/angular_momentum_coupling.py 3/2- 1/2+
+python .github/scripts/angular_momentum_coupling.py
+```
+
+then enter prompted values, for example:
+
+```text
+Target J^π [3/2-]: 3/2-
+Particle s^π [1/2+]: 1/2+
 ```
 
 You receive output like:
