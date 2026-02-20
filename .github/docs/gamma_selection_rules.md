@@ -113,7 +113,7 @@ Common mixing patterns constrained by the dominance rule:
 
 Primary γ transitions from neutron/proton capture resonances are possibly dominated by the lowest multipoles (E1, M1, E2). Higher orders are suppressed.
 
-*   D, including E1, M1: ΔJ = 0, 1; Δπ = Yes or No
+*   D including E1 or M1: ΔJ = 0, 1; Δπ = Yes or No
 *   E2: ΔJ = 2; Δπ = No
 
 ### Examples: Deducing Jπ of a final level from multipolarity and Jπ of the initial level
