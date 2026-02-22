@@ -1697,6 +1697,10 @@ def validate_dti_field(filename):
         if len(line_content) < 76 or line_content[7] != 'G':
             continue
             
+        # Skip comment lines (cG)
+        if line_content[5] != ' ' or line_content[6] != ' ':
+            continue
+
         # Extract DTI (cols 75-76, index 74-76)
         dti_field = line_content[74:76]
         dti_stripped = dti_field.strip()
