@@ -1,9 +1,10 @@
  34CL    27AL(12C,ANG)                 2014BI03                  ENSDF    202609
  34CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
- 34CL c  2014Bi03: a 40-MeV 12C beam was provided from the 14-UD Pelletron      
+ 34CL dL E$Least-squares fitting is done by GLSC (version 09-Feb-2026)          
+ 34CL c  2014Bi03: a 40-MeV {+12}C beam was provided from the 14-UD Pelletron   
  34CL2c  accelerator at the Tata Institute of Fundamental Research, Mumbai. The 
  34CL3c  target was 0.50-mg/cm{+2} {+27}Al on 10-mg/cm{+2} Au backing. States of
- 34CL4c  34CL were populated via the {+27}Al({+12}C,|an){+34}Cl heavy-ion       
+ 34CL4c  {+34}Cl were populated via the {+27}Al({+12}C,|an){+34}Cl heavy-ion    
  34CL5c  reaction and the deexciting |g rays were detected using the Indian     
  34CL6c  National Gamma Array, consisting of 15 Compton-suppressed clover       
  34CL7c  detectors. Measured E|g, I|g, |g|g-coin, |g|g(|q)(DCO), and integrated 
@@ -17,12 +18,12 @@
  34CL5c  and lifetimes using the Recoil Distance Method (RDM). Also measured the
  34CL6c  {+31}P(|a,n|g){+34}Cl reaction.                                        
  34CL d                                                                         
- 34CL cG E,RI$From 2014Bi03, unless otherwise noted. 2014Bi03 provides only     
- 34CL2cG statistical uncertainties for I|g in Table I. The systematic           
- 34CL3cG uncertainties are |?5%, which arise from the efficiency curve and      
- 34CL4cG fittings, as communicated by M. Saha Sarkar in an email reply to B.    
- 34CL5cG Singh on February 17, 2014. The evaluators have combined the           
- 34CL6cG statistical and systematic uncertainties in quadrature.                
+ 34CL cG E,RI$From 2014Bi03, unless otherwise noted. 2014Bi03 Table I provides  
+ 34CL2cG only statistical uncertainties for I|g. The systematic uncertainties   
+ 34CL3cG are |?5%, arising from the efficiency curve and fits, as communicated  
+ 34CL4cG by M. Saha Sarkar in an email reply to B. Singh on February 17, 2014.  
+ 34CL5cG The evaluators have combined the statistical and systematic            
+ 34CL6cG uncertainties in quadrature.                                           
  34CL cG M$From 2014Bi03 based on measured |g|g(|q)(DCO) and |g|g(|q)(POL).     
  34CL2cG R{-DCO}(D) is from gating on a known stretched dipole (|DJ=1)          
  34CL3cG transition and R{-DCO}(Q) is from gating on a known stretched          
@@ -33,17 +34,19 @@
  34CL8cG transitions, the R{-DCO} value depends on the angle between the        
  34CL9cG detectors and the amount of mixing present in the mixed multipolarity  
  34CLAcG transition. A positive POL indicates an electric character, and a      
- 34CLBcG negative POL indicates a magnetic character.                           
- 34CL cG TI$2014Bi03 provides only statistical uncertainties for the |g         
- 34CL2cG branching ratios in Table II. According to the email reply to B. Singh 
- 34CL3cG from the corresponding author M. Saha Sarkar on February 17, 2014, the 
- 34CL4cG |g branching ratios listed in Table II of 2014Bi03 were measured       
+ 34CLBcG negative POL indicates a magnetic character. Twelve multipolarities are
+ 34CLCcG assigned in 1978Ba39, which are consistent with the 2014Bi03           
+ 34CLDcG assignments.                                                           
+ 34CL cG TI$2014Bi03 Table II provides only statistical uncertainties for the |g
+ 34CL2cG branching ratios. According to the email reply to B. Singh from the    
+ 34CL3cG corresponding author M. Saha Sarkar on February 17, 2014, the |g       
+ 34CL4cG branching ratios listed in Table II of 2014Bi03 were measured          
  34CL5cG separately by gating on transitions above the level. The systematic    
  34CL6cG uncertainties for these measurements are |?5%, which arise from the    
- 34CL7cG efficiency curve and fittings. The evaluators have combined the        
- 34CL8cG statistical and systematic uncertainties in quadrature. In some cases, 
- 34CL9cG the branching ratios differ significantly from those derived from the  
- 34CLAcG I|g data in Table I of 2014Bi03. The I|g data in Table I should be     
+ 34CL7cG efficiency curve and fits. The evaluators have combined the statistical
+ 34CL8cG and systematic uncertainties in quadrature. In some cases, the         
+ 34CL9cG branching ratios differ significantly from those derived from the I|g  
+ 34CLAcG data in Table I of 2014Bi03. The I|g data in Table I should be         
  34CLBcG considered more reliable, as the authors suggested in their email      
  34CLCcG reply.                                                                 
  34CL cG TI$LABEL=|g branching ratio                                            
@@ -59,25 +62,25 @@
  34CL  L 146.36    3  3+                                                        
  34CL  G 146.36    3            [M3]                                            
  34CL cG E$from Adopted dataset of {+34}Cl in ENSDF database                    
- 34CL  L 461.3     5  1+                                                        
+ 34CL  L 460.98    26 1+                                                        
  34CL  G 460.9     3  100    7  M1                                              
  34CL cG E$weighted average of 460.9 {I3} (1978Ba39) and 461 {I1} (2014Bi03).   
  34CL cG TI$other: 100 (1978Ba39).                                              
  34CL cG $A{-2}=-0.25 {I4} (1978Ba39).                                          
  34CL cG $R{-DCO}(Q)=0.49 {I2}, POL=-0.08 {I1}                                  
- 34CL  L 665.9     5  1+                                                        
+ 34CL  L 666.2     5  1+                                                        
  34CL  G 666          45.0   23 M1                                              
  34CL cG $R{-DCO}(Q)=0.48 {I4}, POL=-0.10 {I3}                                  
- 34CL  L 1230.24   14 2+                                                        
+ 34CL  L 1230.2    5  2+                                                        
  34CL  G 564                                                    36        5     
  34CL  G 769          19.4   10 M1+E2    +0.04   3              32        5     
  34CL cG $R{-DCO}(D)=1.13 {I9}                                                  
  34CL  G 1084                                                   31        4     
- 34CL  L 1888.08   11 2+                                                        
+ 34CL  L 1887.2    6  2+                                                        
  34CL  G 1426         8.5    5  M1+E2    -0.11   5              48        4     
  34CL cG $R{-DCO}(D)=0.71 {I11}                                                 
  34CL  G 1741                                                   52        5     
- 34CL  L 2158.05   11 2+                                                        
+ 34CL  L 2158.2    5  2+                                                        
  34CL  G 928                                                    8.6       11    
  34CL  G 1697         22.3   11 M1+E2    -0.10   2              62        4     
  34CL cG $R{-DCO}(D)=0.74 {I6}                                                  
@@ -93,16 +96,16 @@
  34CL2cG differs from 4.9 {I2} deduced from the relative intensity in Table I of
  34CL3cG 2014Bi03.                                                              
  34CL cG $R{-DCO}(Q)=0.51 {I8}, POL=+0.04 {I1}                                  
- 34CL  L 2375.5    6  4+                                                        
+ 34CL  L 2375.8    5  4+                                                        
  34CL  G 2229         40.9   21 M1+E2    +0.4    1                              
  34CL cG $R{-DCO}(Q)=0.90 {I9}, POL=-0.09 {I3}                                  
- 34CL  L 2611.4    6  3+                                                        
+ 34CL  L 2611.3    5  3+                                                        
  34CL  G 453          7.9    4  M1+E2    +0.11   6              19        13    
  34CL cG $R{-DCO}(D)=1.30 {I17}                                                 
  34CL  G 1381                                                   28.0      25    
  34CL  G 1945                                                   17.0      16    
  34CL  G 2465                                                   36.0      31    
- 34CL  L 2721.6    3  2-                                                        
+ 34CL  L 2721.13   34 2-                                                        
  34CL  G 563          12.4   7  E1+M2    -0.38   6              9.8       11    
  34CL cG $R{-DCO}(D)=1.13 {I10}                                                 
  34CL  G 834                                                    2.0       2     
@@ -115,7 +118,7 @@
  34CL cG $R{-DCO}(Q)=0.51 {I12}, POL=+0.03 {I1}                                 
  34CL  G 2721         23.2   12 M2                              12.9      15    
  34CL cG $R{-DCO}(Q)=0.98 {I29}, POL=-0.06 {I3}                                 
- 34CL  L 3600.5    5  4-                                                        
+ 34CL  L 3600.46   32 4-                                                        
  34CL  G 879.4     4  98     5  E2                              49.2      31    
  34CL cG E$weighted average of 879.5 {I5} (1978Ba39) and 879 {I1} (2014Bi03).   
  34CL cG $A{-2}=0.19 {I8} (1978Ba39).                                           
@@ -129,7 +132,7 @@
  34CL cG $R{-DCO}(Q)=0.68 {I5}                                                  
  34CL cG $Negative POL indicates a magnetic character, contradicting the level  
  34CL2cG scheme.                                                                
- 34CL  L 3631.5    6  5-                                                        
+ 34CL  L 3631.7    4  5-                                                        
  34CL  G 1256.0    8  23.0   12 E1(+M2)  -0.01   4              52.5      29    
  34CL cG E$weighted average of 1256.0 {I15} (1978Ba39) and 1256 {I1} (2014Bi03).
  34CL cG TI$other: 67 {I2} (1978Ba39).                                          
@@ -140,14 +143,14 @@
  34CL cG TI$other: 33 {I2} (1978Ba39).                                          
  34CL cG $A{-2}=0.04 {I14} (1978Ba39).                                          
  34CL cG $R{-DCO}(Q)=1.74 {I47}, POL=-0.10 {I4}                                 
- 34CL  L 3646.5    8  5+                                                        
+ 34CL  L 3646.5    7  5+                                                        
  34CL  G 3500         37.2   19 E2                                              
  34CL cG $R{-DCO}(Q)=0.88 {I11}, POL=+0.003 {I3}                                
  34CL  L 4371.5    13 4+               2.08 PS   GT                             
  34CL cL T$|t>3 ps (1978Ba39, RDM)                                              
  34CL  G 725          5.0    3  M1+E2                                           
  34CL cG $R{-DCO}(Q)=0.38 {I7}, POL=-0.17 {I12}                                 
- 34CL  L 4743.6    6  6-                                                        
+ 34CL  L 4743.59   34 6-                                                        
  34CL  G 1111.8    6  29.5   15 M1+E2    +0.36   6              29.2      32    
  34CL cG E$weighted average of 1111.6 {I8} (1978Ba39) and 1112 {I1} (2014Bi03). 
  34CL cG TI$other: 30 {I2} (1978Ba39).                                          
@@ -164,7 +167,7 @@
  34CL cG E$weighted average of 4597.1 {I10} (1978Ba39) and 4597 {I1} (2014Bi03).
  34CL cG TI$other: 27 {I3} (1978Ba39).                                          
  34CL cG $R{-DCO}(D)=3.45 {I26}, POL=+0.010 {I2}                                
- 34CL  L 4824.5    5  5+                                                        
+ 34CL  L 4824.52   34 5+                                                        
  34CL  G 1193         8.9    5  E1(+M2)  -0.1    3              5.1       3     
  34CL cG $R{-DCO}(D)=1.94 {I36}, POL=+0.08 {I2}                                 
  34CL  G 1223.9    6  34.7   18 E1(+M2)  -0.02   2              14.8      8     
@@ -183,10 +186,10 @@
  34CL cG TI$other: 67 {I5} (1978Ba39).                                          
  34CL cG $A{-2}=0.19 {I4}, A{-4}=-0.09 {I4} (1978Ba39).                         
  34CL cG $R{-DCO}(Q)=1.00 {I2}, POL=+0.010 {I1}                                 
- 34CL  L 4862.5    9  5-                                                        
+ 34CL  L 4862.4    8  5-                                                        
  34CL  G 2681         3.3    2  [M2]                                            
  34CL cG $R{-DCO}(D)=1.88 {I26}, POL=-0.1 {I1}                                  
- 34CL  L 5315.5    7  7+               65 PS     8                              
+ 34CL  L 5315.4    4  7+               65 PS     8                              
  34CL cL T$|t=94 ps {I12} (1978Ba39, RDM)                                       
  34CL  G 453                                                    2.8       2     
  34CL  G 490.9     3  253    13 E2                              72        4     
@@ -206,39 +209,30 @@
  34CL3cG of 2014Bi03.                                                           
  34CL  G 1669         13.8   8  E2                              3.5       3     
  34CL cG $R{-DCO}(Q)=1.03 {I38} from 65|'-90|' matrix                           
- 34CL  L 7250.6    12 9+               0.159 PS  28                             
+ 34CL  L 7250.5    11 9+               0.159 PS  28                             
  34CL cL T$|t=0.23 {I4} ps (2014Bi03, DSAM)                                     
  34CL  G 1935         232    12 E2                                              
  34CL cG $R{-DCO}(Q)=1.10 {I3}, POL=+0.08 {I1}                                  
- 34CL  L 7699.6    12 (7+)             0.34 PS   LT                             
+ 34CL  L 7699.5    11 (7+)             0.34 PS   LT                             
  34CL cL T$|t<0.49 ps (2014Bi03, DSAM)                                          
  34CL  G 2384         18.2   9                                                  
  34CL cG $R{-DCO}(Q)=0.89 {I25} from 65|'-90|' matrix, POL=-0.17 {I11}          
- 34CL  G 1669         13.8   8  E2                              3.5       3     
- 34CL cG $R{-DCO}(Q)=1.03 {I38} from 65|'-90|' matrix                           
- 34CL  L 7250.6    12 9+               0.159 PS  28                             
- 34CL cL T$|t=0.23 {I4} ps (2014Bi03, DSAM)                                     
- 34CL  G 1935         232    12 E2                                              
- 34CL cG $R{-DCO}(Q)=1.10 {I3}, POL=+0.08 {I1}                                  
- 34CL  L 7699.6    12 (7+)             0.34 PS   LT                             
- 34CL cL T$|t<0.49 ps (2014Bi03, DSAM)                                          
- 34CL  G 2384         18.2   9                                                  
- 34CL cG $R{-DCO}(Q)=0.89 {I25} from 65|'-90|' matrix, POL=-0.17 {I11}.         
- 34CL  L 7800.6    12 8-               83.0 FS   LT                             
+ 34CL  L 7800.5    11 8-               83.0 FS   LT                             
  34CL cL T$|t<0.12 ps (2014Bi03, DSAM)                                          
  34CL  G 2485         89     5  E1+M2    +0.22   7                              
  34CL cG $R{-DCO}(Q)=0.74 {I8}, POL=+0.016 {I2}                                 
  34CL cG $Deduced B(M2)(W.u.) value is >6.8, larger than RUL(M2)=3.             
- 34CL  L 8155.7    12 6+               56 FS     LT                             
+ 34CL  L 8155.5    11 6+               56 FS     LT                             
  34CL cL T$|t<0.08 ps (2014Bi03, DSAM)                                          
  34CL  G 2840         47.3   24 M1+E2    -0.3    1                              
  34CL cG $R{-DCO}(Q)=0.83 {I12}, POL=-0.02 {I1}                                 
- 34CL  L 9392.8    12 9-               6.9 FS    LT                             
+ 34CL  L 9392.7    11 9-               6.9 FS    LT                             
  34CL cL T$|t<0.01 ps (2014Bi03, DSAM)                                          
  34CL  G 4077         17.9   10 M2(+E3)  +0.2    5                              
  34CL cG $Deduced B(M2)(W.u.) value of 290 is unrealistic in view of RUL(M2)=3. 
  34CL cG $R{-DCO}(Q)=1.20 {I43}, POL=-0.02 {I1}                                 
- 34CL  L 10631.8   16 11+              28 FS     LT                             
+ 34CL  L 10631.7   15 11+              28 FS     LT                             
  34CL cL T$|t<0.04 ps (2014Bi03, DSAM)                                          
  34CL  G 3381         74     4  E2                                              
  34CL cG $R{-DCO}(Q)=1.00 {I10}, POL=+0.03 {I2}                                 
+
