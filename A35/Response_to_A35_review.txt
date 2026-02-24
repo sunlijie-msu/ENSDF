@@ -25,7 +25,7 @@ Application example:
 0.345 → 0.35 → 0.4, the 5 rounds the 4 up; then the new 5 rounds the 3 up.
 
 Uncertainty and Significant Digits
-The final reported value is rounded to match the decimal place of the least significant digit in the uncertainty. The uncertainty digits are rounded according to the threshold (4-Up)
+The final reported value is rounded to match the decimal place of the least significant digit in the uncertainty. The uncertainty digits are rounded according to the "4-up" threshold (rather than the general 5-up rule). This conservative apporach ensures that measurement precision is not greatly overstated, which could occur if the uncertainty were rounded down. This is a compromised approach only for rounding uncertainty (4 up, 3 down): more conservative than "4-down, 5-up" rounding rule, but still slightly overstates precison when rounding down digits 0-3.
 
 Application example:
 100.00(333) → 100.0(33), last '3' rounds down; uncertainty stays '33'
