@@ -1,7 +1,10 @@
 ---
-applyTo: "**"
+name: spin-parity
+description: Reference guide for ENSDF spin-parity (Jπ) notation rules. Covers L-transfer field positioning at column 56, J-π assignment confidence levels using parentheses, single/multiple/range spin assignments, and critical parentheses placement rules. Use when writing J-π values in L-records or J$ comment lines.
+argument-hint: [spin-parity expression or L-record line]
 ---
-# Evaluated Nuclear Structure Data File (ENSDF) Spin-Parity Interpretation Reference
+
+# ENSDF Spin-Parity Interpretation Reference
 
 ## L-Transfer Field Positioning
 
@@ -37,7 +40,7 @@ L-Transfer values and corresponding J-π assignments:
 - **WITHOUT parentheses**: Firm, well-established assignments (e.g., `3/2+`, `7/2-`, `0+`, `5-`)
 - **WITH parentheses**: Less certain, tentative assignments (e.g., `(3/2+)`, `(7/2)-`, `0(+)`, `(5-)`)
 - **Parentheses indicate uncertainty in the assignment confidence, not the measurement precision**
-- **With/without parentheses and the placement of parentheses are critical for conveying the confidence level of the assignment** 
+- **With/without parentheses and the placement of parentheses are critical for conveying the confidence level of the assignment**
 
 
 
@@ -60,7 +63,7 @@ L-Transfer values and corresponding J-π assignments:
 | `1/2-,3/2-` | Firm | Firm | Impossible | Impossible | 1/2- or 3/2- |
 | `(5/2+,7/2+)` | Tentative | Tentative | Possible | Possible | 5/2+ or 7/2+ or low-probability other Jπ |
 | `(7/2,9/2)-` | Tentative | Firm | Possible | Impossible | 7/2- or 9/2- or low-probability other J- |
-| `1/2,3/2(+)` | Firm | Tentative | Impossible | Possible | 1/2± or 3/2+ or low-probability 3/2- | 
+| `1/2,3/2(+)` | Firm | Tentative | Impossible | Possible | 1/2± or 3/2+ or low-probability 3/2- |
 | `(1/2,3/2,5/2)-` | Tentative | Firm | Possible | Impossible | 1/2- or 3/2- or 5/2- or low-probability other J- |
 | `(3/2,5/2,7/2+)` | Tentative | Mixed | Possible | Possible | 3/2± or 5/2± or 7/2+ or low-probability other Jπ |
 
@@ -108,20 +111,20 @@ L-Transfer values and corresponding J-π assignments:
 - **Do not include explicit parity on an item inside a grouped tentative list**; if a subset has a different parity or confidence, split it out of the group
 - **Mixed notation is allowed** by splitting: e.g., `1/2,3/2,5/2+` (first two tentative, parity unspecified; last firm positive)
 - **No spaces** around commas in J-π field
-- **Exact reproduction required** - never modify parentheses placement without experimental justification
+- **Exact reproduction required** — never modify parentheses placement without experimental justification
 
 ### Critical Parentheses Matching Rule
 
-Spin-parity with/without parentheses are considered to be different confidence levels. When creating J$ comments or adding values to J fields from reference data sources, ensure parentheses are preserved exactly as written in the source:
+Spin-parity with/without parentheses convey different confidence levels. When creating J$ comments or adding values to J fields from reference data sources, ensure parentheses are preserved exactly as written in the source:
 
 - **Source shows `3/2`** → Comment: `J$3/2 from [reference]` (NO parentheses)
 - **Source shows `(3/2)`** → Comment: `J$(3/2) from [reference]` (single parentheses preserved)
 - **NEVER use double parentheses**: `J$((3/2))` is FORBIDDEN
 - **Examples**: `(1/2+)`, `1/2(+)`, `1/2+` represent different assignment confidence levels and the placement of parentheses must be matched accurately and precisely!
-  
-Ranges: 1/2:7/2 expands to 1/2, 3/2, 5/2, 7/2.
-Lists: 3/2, 5/2 expands to set of both.
-Parity Inheritance: (1/2, 3/2)+ applies + parity to both inner items, i.e., (1/2)+, (3/2)+.
+
+### Additional Notation
+
+Ranges: `1/2:7/2` expands to 1/2, 3/2, 5/2, 7/2.
+Lists: `3/2, 5/2` expands to set of both.
+Parity Inheritance: `(1/2, 3/2)+` applies + parity to both inner items, i.e., `(1/2)+`, `(3/2)+`.
 Loose Matching: Parentheses () indicate tentative values.
-
-

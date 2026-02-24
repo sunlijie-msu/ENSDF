@@ -1,13 +1,13 @@
 ---
-applyTo: "**/*.ens"
+name: gamma-properties-standardization
+description: Standardize multipolarity (M), mixing ratio (MR), angular correlation coefficients (A2, A4, A6), and polarization (POL) in ENSDF gamma transition G-records. Extracts data from messy raw comment text, creates properly formatted G-records, adds standardized cG M,MR$ and cG $A{-2}= comment lines. Validates 80-column compliance with column_calibrate.py after every edit. Use when setting up or cleaning up G-record multipolarity data.
+argument-hint: [ENSDF file path]
 ---
+
 # ENSDF Gamma Properties Standardization
 
 ## Task
 Standardize multipolarity (M), mixing ratio (MR), angular correlation coefficients (A2, A4, A6), and polarization (POL) in ENSDF gamma transition records. Extract data from messy raw data and create properly formatted G-records with standardized cG comments.
-
-## Target
-`{{FILE_PATH}}`
 
 ## Prerequisites
 1. Read `.github/agents/FRIBND.agent.md` from start to end
@@ -74,8 +74,8 @@ Identify M, MR, A2/A4, and POL data embedded in messy raw data.
 
 ### 5. Validation
 ```bash
-python .github/scripts/column_calibrate.py "{{FILE_PATH}}"
-python .github/scripts/check_gamma_ordering.py "{{FILE_PATH}}" --verbose
+python .github/scripts/column_calibrate.py "FILE_PATH"
+python .github/scripts/check_gamma_ordering.py "FILE_PATH" --verbose
 ```
 Both commands must return exit code 0.
 
@@ -129,38 +129,15 @@ Both commands must return exit code 0.
 - Mixing `(unc)` with `{Iunc}` notation
 - Right-justifying or centering values
 
-
 ## More Examples
-35CL L 4347.8 12 9/2- 2.0 PS +10-5
-35CL cL J$spin from p|g(|q) in 1974Lo17; parity from 1184.6|g, M1+E2 to 7/2- in
-35CL2cL 1974Lo17. Other: J=5/2,9/2 from p|g(|q) in 1970Ho09 and p|g(|q) in
-35CL3cL 1973Al22.
+```
+35CL  L 4347.8    12 9/2-             2.0 PS   +10-5
 35CL cL T$Lifetime |t=2.9 ps {I+14-7} (1972Br33, DSAM).
-35CL G 1184.6 10 100.0 31 M1+E2 -0.36 3
-35CL cG RI$from 1974Lo17. Others: 100 {I7} (1970Ho09) and 100 {I4} (1972Br33)
-35CL dG M$D+Q from p|g(|q) in 1970Ho09 and 1973Al22; M2 ruled out by RUL.
-35CL cG MR$from 1974Lo17. Other: -0.40 {I+8-9} (1973Al22); +0.42 {I4}
-35CL2cG (1970Ho09).
-35CL cG $A{-2}=-0.95 {I3}, A{-4}=+0.08 {I3} (1974Lo17).
-35CL cG $POL=-0.005 {I40} (1974Lo17).
-35CL G 1702.1 15 52 7 E1(+M2) 0.00 3
-35CL cG RI$unweighted average of 61 {I7} (1970Ho09), 39 {I4} (1972Br33), and
-35CL2cG 56.3 {I31} (1974Lo17)
-35CL cG M,MR$D(+Q) and |d from p|g(|q) and electric character from |g(pol) in
-35CL2cG 1974Lo17.
-35CL cG $A{-2}=-0.34 {I5}, A{-4}=+0.04 {I5} (1974Lo17).
-35CL cG $POL=+0.36 {I7} (1974Lo17).
-35CL L 5407.1 15 11/2- 0.28 PS 7
-35CL cL E$other: 5415 {I20} from 1970Ho09.
-35CL cL J$spin from p|g(|q) in 1974Lo17 and from |g(|q) and yield function in
-35CL2cL 1973Al22; parity from 1059.3|g, M1+E2 to 9/2- in 1974Lo17.
-35CL cL T$Lifetime |t=0.4 ps {I1} (1974Lo17, DSAM).
-35CL G 1059.3 10 9.9 22 M1+E2 +0.25 8
-35CL cG M,MR$D+Q and |d from |g(|q) and magnetic character from |g(pol)
-35CL2cG (1974Lo17).
+35CL  G 1184.6    10 100.0  31 M1+E2    -0.36   3
+35CL cG M,MR$ from |g(|q) in 1974Lo17.
 35CL cG $A{-2}=+0.19 {I11}, A{-4}=-0.01 {I13} (1974Lo17).
 35CL cG $POL=-0.40 {I14} (1974Lo17).
-35CL G 2244 3 100.0 22 E2
-35CL cG M$Q(+O) with |d(O/Q)=0.00 {I3} from p|g(|q) in 1974Lo17; M2 ruled out
-35CL2cG by RUL. Other: Q(+O) with |d(O/Q)=+0.02 {I9} (1973Al22).
+35CL  G 2244       3 100.0  22 E2
+35CL cG M$Q(+O) with |d(O/Q)=0.00 {I3} from p|g(|q) in 1974Lo17.
 35CL cG $A{-2}=+0.44 {I3}, A{-4}=-0.19 {I3} (1974Lo17).
+```

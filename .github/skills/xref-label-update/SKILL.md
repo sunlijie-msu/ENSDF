@@ -1,3 +1,9 @@
+---
+name: xref-label-update
+description: Update cross-reference (XREF) labels in ENSDF adopted files when experimental datasets are added or removed. Handles systematic label shifting, new label insertion, deleted label removal, and preserves parenthetical notations such as (energy), (*), and (?). Covers both add-dataset and remove-dataset scenarios with 5%+ spot-check validation. Skip column_calibrate and line ruler; pad XREF lines to 80 characters only.
+argument-hint: [adopted.ens] [add|remove] [dataset-label]
+---
+
 # Update ENSDF Cross-Reference (XREF) Labels
 
 ## Task Overview
@@ -17,7 +23,7 @@ Update cross-reference labels in ENSDF adopted file when experimental datasets a
 Insert new dataset at appropriate position, shift subsequent labels, pad spaces to 80 characters.
 
 #### 2. Alphabetically Shift Existing XREF Labels
-Apply mapping - notations (energy), (asterisk), (question mark), (energy asterisk), (energy question) shift naturally with labels:
+Apply mapping — notations (energy), (asterisk), (question mark), (energy asterisk), (energy question) shift naturally with labels:
 - `XREF=F` → `XREF=G`
 - `XREF=BFGH` → `XREF=BGHI`
 - `XREF=BFG(2103)HIJ` → `XREF=BGH(2103)IJK`
@@ -66,10 +72,10 @@ Remove dataset line, shift subsequent labels up, pad spaces to 80 characters.
 Apply shift mapping to each label present. Delete removed label (B) if present.
 
 Examples:
-- `XREF=ABC` → `XREF=AB` (had B, removed B, C→B: 3 labels → 2 labels)
-- `XREF=ACD` → `XREF=ABC` (no B, just shift C→B, D→C: 3 labels → 3 labels)
-- `XREF=C` → `XREF=B` (shift C→B: 1 label → 1 label)
-- `XREF=ACDEFGH` → `XREF=ABCDEFG` (no B, shift all: 7 labels → 7 labels)
+- `XREF=ABC` → `XREF=AB` (had B, removed B, C→B)
+- `XREF=ACD` → `XREF=ABC` (no B, just shift C→B, D→C)
+- `XREF=C` → `XREF=B` (shift C→B)
+- `XREF=ACDEFGH` → `XREF=ABCDEFG` (no B, shift all)
 - `XREF=ACDEF(2420)GIK` → `XREF=ABCDE(2420)FHJ` (notations shift with labels)
 - `XREF=FG(7520*)` → `XREF=EF(7520*)` (notations preserved)
 
@@ -81,7 +87,7 @@ Omit column calibrate and line ruler checks. Only pad XREF line to 80 characters
 #### 4. Spot-Check
 Verify randomly-selected 5%+ of XREF entries (at least 5):
 - Check shift mapping applied correctly
-- Verify removed label (B) deleted where present
+- Verify removed label deleted where present
 - Confirm alphabetical order
 - Ensure all lines exactly 80 characters
 
@@ -90,25 +96,9 @@ Verify randomly-selected 5%+ of XREF entries (at least 5):
 Removed: XB = 36SI B-N DECAY (503 MS)
 Mapping: C→B, D→C, E→D, F→E, G→F, H→G, I→H, J→I, K→J, L→K (A unchanged)
 
-Original X-records:
- 35P   XA35SI B- DECAY (0.78 S)
- 35P   XB36SI B-N DECAY (503 MS)
- 35P   XC1H(34SI,P):RESONANCES
-...
-
-Updated X-records:
- 35P   XA35SI B- DECAY (0.78 S)
- 35P   XB1H(34SI,P):RESONANCES
- 35P   XC2H(34SI,35PG)
-...
-
-Shift examples (B removed, C→B, D→C, E→D, F→E, G→F, H→G, I→H, J→I, K→J, L→K):
-- `ABC` → `AB` (B removed: 3→2 labels, C→B)
-- `ACD` → `ABC` (no B, shift only: 3→3 labels)
-- `C` → `B` (shift: 1→1 label)
-- `ADEFGHIJKL` → `ACDEFGHIJK` (no B, shift: 10→10 labels)
-- `ADEFG(2420)HJL` → `ACDEF(2420)GIK` (no B, shift + notation: 8→8 labels)
-- `FG(5070)L` → `EF(5070)K` (no B, shift + notation: 3→3 labels)
+Original XREF:
+XREF=ABCDE → XREF=ABDE (B removed, D→C, E→D)
+XREF=ADEFG(2420)HIJ → XREF=ACDEF(2420)GHI (no B, shift down)
 ```
 
 ## Success Criteria (Both Scenarios)
@@ -116,4 +106,4 @@ Shift examples (B removed, C→B, D→C, E→D, F→E, G→F, H→G, I→H, J→
 - ✅ XREF labels shifted per mapping
 - ✅ New label inserted OR removed label deleted
 - ✅ All lines 80 characters
-- ✅ Spot-check passes (5%+ samples, min 5)
+- ✅ Spot-check passes (5%+ samples, minimum 5)

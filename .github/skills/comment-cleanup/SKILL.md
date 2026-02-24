@@ -1,3 +1,9 @@
+---
+name: comment-cleanup
+description: Clean up and standardize cG E$ and cG RI$ comment lines in ENSDF files. Establishes a single default-source general comment and adds individual exceptions only where needed. Covers weighted averages, non-default dataset sources, and enforces ENSDF comment ordering (E$ → RI$ → M$ → MR$). Use when reviewing or writing gamma-ray source comments for a dataset.
+argument-hint: [ENSDF file or dataset name]
+---
+
 # ENSDF Comment Cleanup Instructions
 
 ## General cG E,RI Comment Strategy
@@ -48,12 +54,3 @@ cG E$ → cG RI$ → cG M$ → cG MR$ → other identifiers
 - ❌ Redundant comments restating the default source
 - ❌ Individual cG E,RI$ for gammas that match the general comment default
 - ❌ Comments for deduced energies (no uncertainty = level difference)
-
-### Checklist
-
-1. Identify dominant dataset for E,RI → use in general comment
-2. For each gamma with uncertainty:
-   - From default only → no comment
-   - From multiple datasets → add average comment
-   - From non-default → add source comment with "Other:" if applicable
-3. Remove any redundant comments matching the default

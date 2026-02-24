@@ -1,3 +1,9 @@
+---
+name: adopted-vs-individual-dataset-comparison
+description: Compare quantities (J-π, energies, half-lives, branching ratios) between Adopted ENSDF files and their source individual reaction datasets. Uses XREF notation to identify which datasets observe each level. Performs systematic character-by-character verification and generates mismatch reports with error categorization. CHECK-ONLY mode — reports findings without editing files.
+argument-hint: [adopted.ens] [individual.ens] [xref-identifier]
+---
+
 # Adopted vs Individual Dataset Comparison
 
 ## Purpose
@@ -147,38 +153,15 @@ grep "^.....X[A-Z]" Mn58_adopted.ens
 
 ### Step 2: Extract Levels with Target XREF
 
-Scan Adopted file for levels with XREF containing target identifier:
-
-**Pattern:**
-```
- 58MN  L [energy] [J-π]
- 58MNX L XREF=[contains D]
-```
-
-**Record:** Energy and J-π from Adopted
+Scan Adopted file for levels with XREF containing target identifier.
 
 ### Step 3: Extract Corresponding Levels from Individual Dataset
 
-Open individual reaction dataset (e.g., `Mn58_58fe_t_3he.ens`):
-
-**Pattern:**
-```
- 58MN  L [energy] [J-π]
-```
-
-**Match by energy:** Find closest match within 20 keV tolerance
+Open individual reaction dataset and match by energy within 20 keV tolerance.
 
 ### Step 4: Character-by-Character Comparison
 
-Compare extracted quantities:
-
-```python
-# Pseudocode
-if adopted_value == individual_value:
-    status = "EXACT_MATCH"
-else:
-    status = classify_error_type(adopted_value, individual_value)
-```
+Compare extracted quantities using exact string matching.
 
 ### Step 5: Generate Report
 
@@ -191,15 +174,9 @@ else:
 - Error type
 - Notes
 
-**Format:** Markdown table or CSV for post-processing
-
 ### Step 6: Categorize and Summarize
 
-Calculate statistics:
-- Total levels compared
-- Exact matches (count and percentage)
-- Mismatches (count and percentage)
-- Error type distribution
+Calculate statistics: total levels compared, exact matches, mismatches, error type distribution.
 
 ---
 
@@ -248,111 +225,3 @@ Error type distribution:
 - Summary statistics calculated
 - Findings documented in scannable table format
 - Zero assumptions or guesses — all data verified from source files
-
----
-
-## Example: J-π Comparison for 58Mn
-
-**Target:** Verify Adopted J-π against 58FE(T,3HE) dataset (XREF=D)
-
-**Command:**
-```bash
-# Manual comparison or automated script
-python compare_jpi.py Mn58_adopted.ens Mn58_58fe_t_3he.ens --xref=D
-```
-
-**Output:**
-- 27 levels with XREF=D identified
-- 20 exact matches (74%)
-- 7 mismatches (26%):
-  - 2 parentheses encoding differences
-  - 5 notational format differences
-
-**Action:** Report findings to evaluator for review
-
----
-
-## Extensions
-
-### Other Quantities
-
-This workflow applies to any quantity comparison:
-
-**Energy:**
-- Adopted E vs Individual E
-- Tolerance: Exact string match preferred
-- Flag if difference >1 keV
-
-**Half-life:**
-- Adopted T₁/₂ vs Individual T₁/₂
-- Include units (PS, NS, S, etc.)
-- Compare uncertainty notation
-
-**Branching ratios:**
-- Adopted %β⁻ vs Individual %β⁻
-- Compare normalization conventions
-- Check consistency with other branches
-
-**Multipolarity:**
-- Adopted M vs Individual M
-- Parentheses encode tentative assignments
-- Brackets encode unresolved multiplets
-
-### Automated Scripting
-
-**Template:**
-```python
-#!/usr/bin/env python3
-"""Compare quantities between Adopted and individual datasets."""
-
-import sys
-
-def extract_levels(filename, xref_filter=None):
-    """Extract levels with optional XREF filtering."""
-    levels = []
-    # Parser implementation
-    return levels
-
-def match_by_energy(adopted_levels, individual_levels, tolerance=20):
-    """Match levels by energy proximity."""
-    matches = []
-    # Matching logic
-    return matches
-
-def compare_quantities(adopted_value, individual_value):
-    """Character-by-character comparison."""
-    if adopted_value == individual_value:
-        return "EXACT_MATCH", None
-    else:
-        return classify_error(adopted_value, individual_value)
-
-def classify_error(val1, val2):
-    """Categorize mismatch type."""
-    # Error classification logic
-    pass
-
-if __name__ == "__main__":
-    adopted_file = sys.argv[1]
-    individual_file = sys.argv[2]
-    xref_id = sys.argv[3]
-    
-    # Extract, match, compare, report
-```
-
----
-
-## Document Structure
-
-This document contains 11 main sections:
-
-1. **Purpose** — Verify Adopted quantities against source individual datasets
-2. **Prerequisites** — XREF knowledge, file access, Python tools
-3. **ENSDF Cross-Reference System** — XREF notation and dataset identifier mapping
-4. **Comparison Methodology** — 3-step process (identify, match, compare)
-5. **J-π Assignment Conventions** — Parentheses encoding, comparison rules
-6. **Error Classification** — 7 error types with severity levels
-7. **Workflow** — 6-step process from identification to report generation
-8. **Output Format** — Comparison table and summary statistics
-9. **Common Pitfalls** — 7 frequent errors to avoid
-10. **Success Criteria** — Requirements for complete verification
-11. **Extensions** — Other quantities, automated scripting templates

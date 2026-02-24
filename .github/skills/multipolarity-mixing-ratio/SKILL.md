@@ -1,7 +1,10 @@
 ---
-applyTo: "**"
+name: multipolarity-mixing-ratio
+description: Reference guide for ENSDF multipolarity (M) and mixing ratio (MR) field notation. Covers E1/M1/E2/M2 designations, shorthand D/Q/O, mixed M1+E2 formatting, symmetric and asymmetric DMR uncertainties, and exact column positions 33-41 (M) and 42-49 (MR). Use when writing or reviewing G-record multipolarity fields.
+argument-hint: [multipolarity expression or G-record line]
 ---
-# Evaluated Nuclear Structure Data File (ENSDF) Multipolarity Instructions for GitHub Copilot
+
+# ENSDF Multipolarity and Mixing Ratio Reference
 
 ## Multipolarity Field Notation
 
@@ -29,7 +32,7 @@ applyTo: "**"
 ### Critical Formatting Rules
 
 - **LEFT-JUSTIFIED** in columns 33-41
-- **Shorthand (D, Q, O) is valid ENSDF notation** - do NOT auto replace with full notation unless specified
+- **Shorthand (D, Q, O) is valid ENSDF notation** — do NOT auto-replace with full notation unless specified
 - **Parentheses indicate uncertainty** in multipolarity assignment
 - **Plus sign (+)** indicates mixed transitions with comparable amplitudes
 - **Full notation (E1, M1, E2, etc.) provides explicit multipole type specification**
@@ -53,9 +56,9 @@ D(+Q)               → Predominantly dipole with small quadrupole component
 
 ## Multipole Mixing Ratios
 
-### Multipole Mixing Ratios (MR Field, Columns 42-49)
+### Mixing Ratio Field (MR Field, Columns 42-49)
 
-**Nuclear Physics Definition**: Multipole mixing ratios (δ) quantify the degree to which different angular momentum multipoles (like electric dipole E1 and magnetic quadrupole M2) are mixed in a gamma-ray transition. They represent the amplitude ratio between different electromagnetic transition modes.
+**Nuclear Physics Definition**: Multipole mixing ratios (δ) quantify the degree to which different angular momentum multipoles (like E1 and M2) are mixed in a gamma-ray transition. They represent the amplitude ratio between different electromagnetic transition modes.
 
 #### Physical Significance
 
@@ -65,10 +68,9 @@ D(+Q)               → Predominantly dipole with small quadrupole component
 - **δ(M1/E2)**: Ratio of magnetic dipole to electric quadrupole amplitudes
 - **Angular correlation**: Mixing ratios determine gamma-ray angular distributions and correlations
 
-#### Examples of Mixing Ratio Formatting
+#### MR Field Examples (Columns 42-49)
 
 ```
-MR Field Examples (Columns 42-49):
 +1.23           → δ = +1.23
 -0.45           → δ = -0.45  
 >+2.1           → δ > +2.1
@@ -79,7 +81,7 @@ MR Field Examples (Columns 42-49):
 
 #### Multiple Mixing Ratios
 
-Mixing ratios is spin dependent. For transitions from levels with multiple possible spins, list all allowed mixing ratios in cG comment line.
+Mixing ratios are spin dependent. For transitions from levels with multiple possible spins, list all allowed mixing ratios in a cG comment line.
 
 Example:
 ```
@@ -88,26 +90,23 @@ Example:
 
 ### Mixing Ratio Uncertainties (DMR Field, Columns 50-55)
 
-The DMR field supports both symmetric and asymmetric uncertainties for mixing ratios.
+The DMR field supports both symmetric and asymmetric uncertainties.
 
 #### Symmetric Uncertainties (1-2 Digits)
-
 - **Format**: Left-justified digits with trailing spaces
 
 #### Asymmetric Uncertainties (+X-Y Format)
-
 - **Format**: `+X-Y` notation left-justified in 6-character field
 - **Examples**: `+0.5-0.3`, `+2.1-1.8`, `+15-8`, `+0.12-0.09`
 - **Physics context**: Common when systematic effects dominate or when theoretical calculations have asymmetric confidence intervals
 
 #### Special DMR Field Cases
-
-- **Limit measurements**: Typically GT/LT if MR field has an lower/upper limit
+- **Limit measurements**: Use GT/LT when MR field has a lower/upper limit
 
 ### Critical Formatting Rules for Mixing Ratios
 
 - **Always include sign** in MR field (+ or -)
 - **LEFT-JUSTIFY all values** in both MR and DMR fields
-- **Asymmetric uncertainties** use full 6-character DMR field efficiently
-- **No exponential notation** - use decimal format only
+- **Asymmetric uncertainties** use full 6-character DMR field
+- **No exponential notation** — use decimal format only
 - **Space padding** for values shorter than field width

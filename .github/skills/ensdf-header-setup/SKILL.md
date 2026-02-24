@@ -1,3 +1,9 @@
+---
+name: ensdf-header-setup
+description: Prepare ENSDF files for a new mass chain evaluation cycle. Copies .old/.xundl files to new/, renames to .ens, creates the four standard folders (new/, old/, raw/, pdf/), updates the IDENTIFICATION record columns 66-80 to "ENSDF    YYYYMM", and inserts a new History (H) record. Use when starting a new evaluation or setting up a new nuclide's file structure.
+argument-hint: [mass number] or [element symbol] or [file path]
+---
+
 # ENSDF File Identification and History Records Setup Workflow
 
 ## Purpose
@@ -77,4 +83,4 @@ python ".github\temp\update_headers.py" "D:\X\ND\ENSDF\A${mass}"
 1. **NEVER edit `.old` files** - reference copies only
 2. **Preserve existing H records** - only INSERT new H record
 3. **80-character lines** - all ENSDF records must be exactly 80 chars
-4. **Validate**: `python .github/column_calibrate.py <file>`
+4. **Validate**: `python .github/scripts/column_calibrate.py <file>`

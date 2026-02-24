@@ -1,3 +1,9 @@
+---
+name: lifetime-comments-standardization
+description: Standardize T$ (lifetime) comment lines in ENSDF files. Use when writing or editing cL T$ lifetime comments for nuclear level lifetime data. Covers individual datasets using (NSR, METHOD) format and adopted datasets using "in REACTION from NSR with METHOD" format. Handles single values, weighted averages, lower/upper limits, and mixed value+limit patterns. Applies Oxford comma, chronological NSR ordering, {IUNC} uncertainty notation with limit 99 for full precision, and ensures every comment ends with a period.
+argument-hint: [ENSDF file or level energy] standardize T$ lifetime cL comments
+---
+
 # ENSDF Lifetime Comments Standardization
 
 ## Purpose
@@ -112,4 +118,3 @@ Standardize T$ (lifetime) comment lines for clarity and numerical rigor. Maintai
 *   **Lifetime (τ)**: Mean lifetime of nuclear state (symbol: |t). Relation: τ = T₁/₂ / ln(2) ≈ 1.443 × T₁/₂
 *   **Half-life (T₁/₂)**: Time for half of nuclei to decay (symbol: T{-1/2}). What goes in ENSDF T field.
 *   **Rule for T$ comments**: Use "lifetime |t=" when referring to the lifetime value and omit "lifetime |t=" for half-life references.
-
