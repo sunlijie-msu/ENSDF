@@ -245,6 +245,7 @@ Example:
 -   `*` (asterisk): Denotes a multiply-placed gamma ray.
 -   `&` (ampersand): Denotes a multiply-placed transition with intensity not divided.
 -   `@` (at symbol): Denotes a multiply-placed transition with intensity suitably divided.
+Note: Multiple identical gamma energies appear in multiple level blocks should be flagged with either `*`, `&`, or `@`.
 -   `Space`: No comment flag.
 -   **FORBIDDEN:** Question mark (`?`) is NOT allowed in column 77.
 
