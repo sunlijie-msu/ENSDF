@@ -34,8 +34,6 @@ Application example:
 
 
 3) Averaging Convention:
-We use the default option in the Java Averaging tool across all datasets.
-
 Choice on weighted vs unweighted average:
 For example, in the 35S Adopted Dataset, there is an Iγ from the weighted average of 73 9 from (14N,3pγ) and 36 18 from (18O,2αnγ)
 
@@ -56,13 +54,13 @@ Averaging results:
 
 So, we choose the weighted average as the adopted value.
 
-Minimum Uncertainty Rule:
-The tool implements the Minimum Uncertainty Rule: the final adopted uncertainty must be greater than or equal to any individual input uncertainty. This rule ensures that averaging never artificially reduces systematic uncertainty below the best single measurement, and maintains conservative uncertainty estimates in nuclear data evaluation.
+Minimum Uncertainty Rule is adopted and applied:
+The final adopted uncertainty must be greater than or equal to any individual input uncertainty. This rule ensures that averaging never artificially reduces systematic uncertainty below the best single measurement, and maintains conservative uncertainty estimates in nuclear data evaluation.
 
 
 
 
-5) Incomplete Decay Scheme:
+4) Incomplete Decay Scheme:
 For an incomplete decay scheme, we usually have comments like:
 I|b{+-} is from the |g+ce intensity balance at each state. Quoted I|b{+-} values without uncertainties are considered upper limits due to the incomplete decay scheme.
 Reviewer: "Then why not put "LE" in the uncertainty column?"
