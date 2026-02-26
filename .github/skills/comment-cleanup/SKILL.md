@@ -54,3 +54,22 @@ cG E$ → cG RI$ → cG M$ → cG MR$ → other identifiers
 - ❌ Redundant comments restating the default source
 - ❌ Individual cG E,RI$ for gammas that match the general comment default
 - ❌ Comments for deduced energies (no uncertainty = level difference)
+
+## Execution Checklist
+
+1. Identify dominant dataset for E,RI and set it in the general `cG E,RI$` comment.
+2. For each gamma with quoted uncertainty:
+	- From default only → no individual `cG E$`/`cG RI$` comment
+	- From multiple datasets → add weighted/unweighted average comment
+	- From non-default dataset → add source comment, with `Other:` values when applicable
+3. Remove redundant individual comments that merely restate the default source.
+4. Preserve ENSDF ordering for each gamma comment block:
+	- `cG E$` → `cG RI$` → `cG M$` → `cG MR$` → other identifiers
+5. Keep deduced E|g values (no uncertainty) undocumented at per-gamma level unless an explicit exception is required.
+
+## Completion Criteria
+
+- One clear default-source general comment exists for E,RI.
+- Exception comments exist only where source differs from default or averaging is required.
+- No redundant per-gamma default-source comments remain.
+- Comment ordering follows ENSDF sequence rules.
