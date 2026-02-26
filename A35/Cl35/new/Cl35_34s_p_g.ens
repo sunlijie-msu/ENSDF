@@ -223,11 +223,39 @@
  35CL2cL with theoretical predictions or deduced from |g-feedings, unless       
  35CL3cL otherwise noted.                                                       
  35CL cL S$LABEL=E{-p}(lab) (keV)                                               
- 35CL cL $Resonance strength |w|g=(2J+1)|G{-|g}|G{-p}/|G.                       
- 35CL cL $Resonance strengths are mainly obtained from resonance |g-ray yields. 
- 35CL2cL |w|g in 1976Sp08, 1996Ka21, and 2001Vo24 is all normalized to |w|g=9.7 
- 35CL3cL eV {I7} at E{-p}=1212 keV. |w|g in 1972Hu10, 1973Fa07, and 1976Me12 is 
- 35CL4cL normalized to |w|g=21 eV {I3} at E{-p}=1212 keV from 1966En04.         
+ 35CL cL $Standard resonance strength                                           
+ 35CL2cL |w|g=(2J{-r}+1)/[(2J{-p}+1)(2J{-T}+1)]|*|G{-|g}|G{-p}/|G, where J{-r}  
+ 35CL3cL is the spin of the resonance, J{-p}=1/2 is the spin of the proton, and 
+ 35CL4cL J{-T}=0 is the spin of the target {+34}S ground state.                 
+ 35CL cL $In this dataset, the resonance strengths S are mainly obtained from   
+ 35CL2cL resonance |g-ray yields and are defined without the (2J{-p}+1) factor  
+ 35CL3cL and hence S/2=|w|g. S=21 eV {I3} at E{-p}=1213 measured by 1966En04 has
+ 35CL4cL been used as a normalization standard by 1971BrXT, 1972Hu10, 1973Fa07, 
+ 35CL5cL 1974Bi16, and 1976Me12. 1971BrXT measured {+34}S(p,p) elastic          
+ 35CL6cL scattering to determine |G{-p}=4.6 eV {I10} and |G=5 eV {+4-2} from a  
+ 35CL7cL Q{+2} minimization analysis of the excitation function. 1971BrXT added 
+ 35CL8cL |G{-p}|G{-|g}/|G=2.6 eV {I4} converted from the S measured by 1966En04 
+ 35CL9cL to the fit constraints and reported a final |G{-p}=5.8 eV {I7}. Then   
+ 35CLAcL 1971BrXT quoted S=21 eV {I3} to deduce |G{-|g}=4.7 eV {I17} and |G=10.5
+ 35CLBcL eV {I15}. 1974Bi16 measured {+34}S(p,p) to determine |G{-p}=7.2 eV     
+ 35CLCcL {I15} and quoted S=21 eV {I3} to deduce |G{-|g}=3.8 eV {I15} and       
+ 35CLDcL |G=11.0 eV {I15}. 1974Al04 determined S=9.7 eV {I9}. 1975Ke11          
+ 35CLEcL determined S=9.8 eV {I10} and quoted 1974Bi16's |G{-p}/|G{-|g}=1.9     
+ 35CLFcL relative ratio to deduce |G{-p}=3.8 eV {I13}, |G{-|g}=2.0 eV {I13}, and
+ 35CLGcL |G=5.8 eV {I13}. 1981Bi05 determined S=4.1 eV {I5} for the E{-p}=1892  
+ 35CLHcL resonance and quoted the knowledge of the relative strength of         
+ 35CLIcL S{-1213}/S{-1892}=2.3 from 1978En02 to deduce S=9.5 eV {I12} for the   
+ 35CLJcL E{-p}=1213 resonance. 1978En02 quoted S=4.2 eV for a 1892+1893         
+ 35CLKcL resonance doublet, which is scaled down by a factor of 21/9.7 from     
+ 35CLLcL 1976Me12's original S=9.0 eV for the 1892 resonance. 1978En02 quoted   
+ 35CLMcL S=9.7 eV {I7} for the 1213 resonance from 1976Sp08, 1974Al04, and      
+ 35CLNcL 1975Ke11. 1976Sp08 did not measure absolute S but took a weighted      
+ 35CLOcL average of S from 1974Al04 and 1975Ke11. 1996Ka21 determined S=9.7 eV  
+ 35CLPcL {I7}. 1979Pa16 determined S=9.0 eV {I10} using the {+27}Al(p,|g){+28}Si
+ 35CLQcL resonances as normalization standards. In 1976Sp08, 1996Ka21, and      
+ 35CLRcL 2001Vo24 is all normalized to |w|g=9.7 eV {I7} at E{-p}=1212 keV. |w|g 
+ 35CLScL in 1972Hu10, 1973Fa07, and 1976Me12 is normalized to |w|g=21 eV {I3} at
+ 35CLTcL E{-p}=1212 keV from 1966En04.                                          
  35CL PN                                                                     7  
  35CL  L 0            3/2+                                                      
  35CL  L 1219.39   7  1/2+             105 FS    14                             
@@ -2073,9 +2101,9 @@
  35CL cG $A{-2}=-0.55 {I8}, A{-4}=+0.004 {I78}, A{-6}=+0.006 {I72} (1996Ka21).  
  35CL cG $A{-2}=-0.55 {I8}, A{-4}=0.00 {I8} (2001Vo24).                         
  35CL  L 8209         1/2+                                      1893            
+ 35CL cL E$from 1974Bi03. A weak resonance in the tail of the 1892 resonance.   
  35CL cL J$from |s(E{-p},|q) in 1981Bi05.                                       
  35CL cL $|G{-p}=120 eV {I11} (1981Bi05).                                       
- 35CL cL $|w|g=6.0 eV (1973Fa07).                                               
  35CL  L 8216.3    10 5/2                                       1900.3    10    
  35CL cL J$spin=5/2 from |g(|q) in 2001Vo24 and 1996Ka21.                       
  35CL cL S$weighted average of 1901.8 {I11} (1972Hu10), 1899.7 {I12} (1973Fa07),
