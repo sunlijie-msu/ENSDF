@@ -620,7 +620,8 @@ Example:
 <li><code>A-Z</code>, <code>a-z</code>: Any single letter used to refer to a specific comment record (cannot be a number).</li>
 <li><code>*</code> (asterisk): Denotes a multiply-placed gamma ray.</li>
 <li><code>&amp;</code> (ampersand): Denotes a multiply-placed transition with intensity not divided.</li>
-<li><code>@</code> (at symbol): Denotes a multiply-placed transition with intensity suitably divided.</li>
+<li><code>@</code> (at symbol): Denotes a multiply-placed transition with intensity suitably divided.
+Note: Multiple identical gamma energies appear in multiple level blocks should be flagged with either <code>*</code>, <code>&amp;</code>, or <code>@</code>.</li>
 <li><code>Space</code>: No comment flag.</li>
 <li><strong>FORBIDDEN:</strong> Question mark (<code>?</code>) is NOT allowed in column 77.</li>
 </ul>
@@ -1004,7 +1005,10 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 </table>
 <hr>
 <h2 id="3-ensdf-uncertainty-notation">3. ENSDF Uncertainty Notation</h2>
-<p><strong>CRITICAL:</strong> Uncertainties in data record fields and comment lines use DIFFERENT formats, but both follow an &quot;uncertainty-in-last-digits&quot; notation.</p>
+<p><strong>CRITICAL:</strong> Uncertainties in data record fields and comment lines use DIFFERENT formats, but both follow an &quot;uncertainty-in-last-digits&quot; notation. Ensure the number of decimal places in the main value precisely matches the decimal place represented by the final digit of the uncertainty.</p>
+<p>Scientific data typically allows 1 or 2 digits for uncertainties.
+Two Significant Figures (Leading Digits 1, 2, or less than 35) → 2-digit uncertainties, e.g., 1.2333±0.3220 → 1.23(32)
+One Significant Figure (Leading Digits 35 or higher, 4 to 9) → 1-digit uncertainties, e.g., 1.2333±0.3680 → 1.2(4)</p>
 <h3 id="uncertainty-format-in-data-record-fields">Uncertainty Format in Data Record Fields</h3>
 <h4 id="in-data-record-fields-l-g-e-b-dp-records">In Data Record Fields (L, G, E, B, DP Records)</h4>
 <p>Format: Plain numbers only (NO <code>{I}</code> notation, NO braces).</p>

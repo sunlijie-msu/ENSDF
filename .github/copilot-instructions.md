@@ -399,7 +399,11 @@ XREF (cross-reference) entries in L-records indicate which datasets observe a le
 
 ## 3. ENSDF Uncertainty Notation
 
-**CRITICAL:** Uncertainties in data record fields and comment lines use DIFFERENT formats, but both follow an "uncertainty-in-last-digits" notation.
+**CRITICAL:** Uncertainties in data record fields and comment lines use DIFFERENT formats, but both follow an "uncertainty-in-last-digits" notation. Ensure the number of decimal places in the main value precisely matches the decimal place represented by the final digit of the uncertainty.
+
+Scientific data typically allows 1 or 2 digits for uncertainties.
+Two Significant Figures (Leading Digits 1, 2, or less than 35) → 2-digit uncertainties, e.g., 1.2333±0.3220 → 1.23(32)
+One Significant Figure (Leading Digits 35 or higher, 4 to 9) → 1-digit uncertainties, e.g., 1.2333±0.3680 → 1.2(4)
 
 ### Uncertainty Format in Data Record Fields
 
