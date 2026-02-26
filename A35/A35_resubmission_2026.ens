@@ -6207,10 +6207,11 @@
  35CL cL J$from resonance analysis of measured |s(|q) in                        
  35CL2cL {+34}S(p,p),(p,p'|g):resonances. Spin=7/2 also from |g(|q) in (p,|g).  
  35CL cL T$lifetime |t<1 fs from (p,|g) (1973Fa07, DSAM). Other: |G{-p}=4.6 eV  
- 35CL2cL {I10} and |G=5 eV {+4-2} from {+34}S(p,p) elastic scattering excitation
- 35CL3cL function analysis (1971BrXT). Other |G{-p}, |G{-|g}, |G values/ratios  
- 35CL4cL are mostly deduced from (p,|g) resonance strengths, which have large   
- 35CL5cL discrepancies. See comments in the (p,|g) dataset for details.         
+ 35CL2cL {I10} and |G=5 eV {I+4-2} from {+34}S(p,p) elastic scattering          
+ 35CL3cL excitation function analysis (1971BrXT). Other |G{-p}, |G{-|g}, |G     
+ 35CL4cL values/ratios are mostly deduced from (p,|g) resonance strengths, which
+ 35CL5cL have large discrepancies. See comments in the (p,|g) dataset for       
+ 35CL6cL details.                                                               
  35CL  G 1903         0.59   7                                                  
  35CL  G 1962.8       0.11      [E1]                                            
  35CLS G  CC=0.000624 9$KC=7.46E-6 10$LC=5.92E-7 8$MC=5.42E-8 8                 
@@ -10161,7 +10162,7 @@
  35CL c  S=21 eV {I3} at E{-p}=1213 measured by 1966En04 has been used as a     
  35CL2c  normalization standard by 1971BrXT, 1972Hu10, 1973Fa07, 1974Bi16, and  
  35CL3c  1976Me12. 1971BrXT measured {+34}S(p,p) elastic scattering and         
- 35CL4c  determined |G{-p}=4.6 eV {I10} and |G=5 eV {+4-2} from a Q{+2}         
+ 35CL4c  determined |G{-p}=4.6 eV {I10} and |G=5 eV {I+4-2} from a Q{+2}        
  35CL5c  minimization analysis of the excitation function. 1971BrXT added       
  35CL6c  |G{-p}|G{-|g}/|G=2.6 eV {I4} converted from the S measured by 1966En04 
  35CL7c  to constrain their Q{+2} analysis and reported a final |G{-p}=5.8 eV   
@@ -10173,30 +10174,32 @@
  35CLDc  determined an absolute S{-1213}=9.8 eV {I10} and quoted 1974Bi16's     
  35CLEc  relative ratio of |G{-p}/|G{-|g}=7.2/3.9=1.9 to deduce |G{-p}=3.8 eV   
  35CLFc  {I13}, |G{-|g}=2.0 eV {I13}, and |G=5.8 eV {I13}. 1976Sp09 measured the
- 35CLGc  resonant absorption of the 2791 resonance, which indicates that        
- 35CLHc  normalization using S{-1213}=9.7 eV gives better agreement. 1981Bi05   
- 35CLIc  determined an absolute S=4.1 eV {I5} for the E{-p}=1892 resonance and  
- 35CLJc  quoted the relative ratio of S{-1213}/S{-1892} from 1978En02 to deduce 
- 35CLKc  S=9.5 eV {I12} for E{-p}=1213 resonance. The S{-1213}/S{-1892}=2.3     
- 35CLLc  quoted by 1981Bi05 was based on two S values: first, 1978En02 quoted   
- 35CLMc  S=4.2 eV for a 1892+1893 resonance doublet, which was scaled down by a 
- 35CLNc  factor of 21/9.7 from 1976Me12's original S{-1892}=9.0 eV; second,     
- 35CLOc  1978En02 quoted S{-1213}=9.7 eV {I7} from 1976Sp08, 1974Al04, and      
- 35CLPc  1975Ke11. However, 1976Sp08 did not measure absolute S but took a      
- 35CLQc  weighted average of S from 1974Al04 and 1975Ke11. 1979Pa16 determined  
- 35CLRc  S=9.0 eV {I10} using the {+27}Al(p,|g){+28}Si resonances as            
- 35CLSc  normalization standards. 1996Ka21 normalized all their S to            
- 35CLTc  S{-1213}=9.7 eV {I7} and cited 1976Sp08 but listed this value in the   
- 35CLUc  "this study" column. 2001Vo24 normalized all S to S{-1213}=9.7 eV {I7} 
- 35CLVc  and cited 1976Sp08 and 1975Ke11. However, 2001Vo24 also reported a     
- 35CLWc  different S{-1213}=9.9 eV {I7} without giving details.                 
+ 35CLGc  resonant absorption of the E{-p}=2791 resonance, which indicates that  
+ 35CLHc  normalization using S{-1213}=9.7 eV gives a better agreement than that 
+ 35CLIc  using S{-1213}=21 eV. 1981Bi05 determined an absolute S=4.1 eV {I5} for
+ 35CLJc  the E{-p}=1892 resonance and quoted the relative ratio of              
+ 35CLKc  S{-1213}/S{-1892} from 1978En02 to deduce S=9.5 eV {I12} for E{-p}=1213
+ 35CLLc  resonance. The S{-1213}/S{-1892}=2.3 quoted by 1981Bi05 was based on   
+ 35CLMc  two S values: first, 1978En02 quoted S=4.2 eV for a 1892+1893 resonance
+ 35CLNc  doublet, which was scaled down by a factor of 21/9.7 from 1976Me12's   
+ 35CLOc  original S{-1892}=9.0 eV; second, 1978En02 quoted S{-1213}=9.7 eV {I7} 
+ 35CLPc  from 1976Sp08, 1974Al04, and 1975Ke11. 1979Pa16 determined S=9.0 eV    
+ 35CLQc  {I10} using the {+27}Al(p,|g){+28}Si resonances as normalization       
+ 35CLRc  standards. 1996Ka21 normalized all their S to S{-1213}=9.7 eV {I7} and 
+ 35CLSc  cited 1976Sp08 but listed this value in the "this study" column.       
+ 35CLTc  2001Vo24 normalized all S to S{-1213}=9.7 eV {I7} and cited 1976Sp08   
+ 35CLUc  and 1975Ke11. However, 2001Vo24 also reported a different S{-1213}=9.9 
+ 35CLVc  eV {I7} without giving details. Although 1976Sp08 is frequently cited  
+ 35CLWc  as the source of S{-1213}=9.7 eV {I7}, they did not measure the        
+ 35CLXc  absolute S value; instead, they calculated a weighted average of       
+ 35CLYc  1974Al04 and 1975Ke11.                                                 
  35CL c  In summary, the evaluators adopt S{-1213}=9.5 eV {I9}: weighted average
  35CL2c  of all independently measured S{-1213}: 9.7 eV {I9} (1974Al04), 9.8 eV 
  35CL3c  {I10} (1975Ke11), and 9.0 eV {I10} (1979Pa16). All resonance strengths 
- 35CL4c  given in the comments have been normalized to this value by the        
- 35CL5c  evaluators. |G{-p}=4.6 eV {I10} and |G=5 eV {+4-2} from (p,p)          
- 35CL6c  excitation function analysis in 1971BrXT are the only width data that  
- 35CL7c  were not influenced by the questionable S{-1213}=21 eV {I3}.           
+ 35CL4c  given in the comments below have been normalized to this value by the  
+ 35CL5c  evaluators. |G{-p}=4.6 eV {I10} and |G=5 eV {I+4-2} from (p,p)         
+ 35CL6c  excitation function analysis in 1971BrXT are likely the only width data
+ 35CL7c  that are not influenced by the questionable S{-1213}=21 eV {I3}.       
  35CL d                                                                         
  35CL cG E$From level-energy differences, unless otherwise noted.               
  35CL cG E(B)$|g branches observed in 1981Bi05. Branching ratios are not given. 
@@ -12967,7 +12970,7 @@
  35CL  L 7274         1/2-                                      929         C   
  35CL cL $|G=14 eV {I4} (1971BrXT)                                              
  35CL  L 7550         7/2-                                      1214            
- 35CL cL $|G{-p}=4.6 eV {I10} and |G=5 eV {+4-2} from a Q{+2} minimization      
+ 35CL cL $|G{-p}=4.6 eV {I10} and |G=5 eV {I+4-2} from a Q{+2} minimization     
  35CL2cL analysis of the (p,p) excitation function (1971BrXT). |G=10.5 eV {I15},
  35CL3cL |G{-p}=5.8 eV {I7}, |G{-|g}=4.7 eV {I17} (1971BrXT); |G=11.0 eV {I15}, 
  35CL4cL |G{-p}=7.2 eV {I15}, |G{-|g}=3.8 eV {I15} (1974Bi16), which are deduced
