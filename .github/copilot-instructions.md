@@ -130,10 +130,10 @@ You are an AI agent specializing in the Evaluated Nuclear Structure Data File (E
 #### Energy Level Record (L-Record)
 
 ```text
-Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
-Format:
- 35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q
+Columns:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
 Example:
+ 35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q
  35P   L 3572.0    12 3/2+,5/2+        29 FS     14    2        0.8       4 A  ?
  35CL  L 1219      5  3/2+             0.39 PS   8     2        0.43      15A  S
 ```
@@ -142,9 +142,9 @@ Example:
 | :--- | :--- | :--- |
 | NUCID | 1-5 | Nucleus (e.g., " 35P " or " 35Cl") |
 | CONT | 6 | Continuation label |
-| BLANK | 7 | Must be blank |
+| SPACE | 7 | Must be blank |
 | TYPE | 8 | "L" |
-| BLANK | 9 | Must be blank |
+| SPACE | 9 | Must be blank |
 | E | 10-19 | Level energy |
 | DE | 20-21 | Energy uncertainty |
 | SPACE | 22 | Readability space |
@@ -168,9 +168,8 @@ Example:
 ```text
 Columns:
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
-Format: 
- 35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q
 Example:
+ 35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q
  35P   G 1572.0    10 70.0   24 M1+E2    -1.23   25    0.090  20 71.0     23A  S
  35Si  G 2572.0    5  5.0    2  E2       +2.1          0.05   5  5.1      2 B  ?
 ```
@@ -179,9 +178,9 @@ Example:
 | :--- | :--- | :--- |
 | NUCID | 1-5 | Nucleus (e.g., " 35P " or " 35Cl") |
 | CONT | 6 | Continuation label |
-| BLANK | 7 | Must be blank |
+| SPACE | 7 | Must be blank |
 | TYPE | 8 | "G" |
-| BLANK | 9 | Must be blank |
+| SPACE | 9 | Must be blank |
 | E | 10-19 | Gamma energy |
 | DE | 20-21 | Energy uncertainty |
 | SPACE | 22 | Readability space |
@@ -196,7 +195,7 @@ Example:
 | TI | 65-74 | Total transition intensity |
 | DTI | 75-76 | Uncertainty in TI |
 | C | 77 | **Comment flag** (A-Z, a-z, *, &, @) - See G-Record Flag Rules below |
-| BLANK | 78-79 | Must be blank |
+| SPACE | 78-79 | Must be blank |
 | Q | 80 | **Additional indicator** (space, ?, S) - See G-Record Indicator Rules below |
 
 ### Critical ENSDF Formatting Rules
@@ -260,9 +259,11 @@ Note: Multiple identical gamma energies appear in multiple level blocks should b
 #### Delayed Proton Emission Record (DP-Record)
 
 ```text
-Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
-Format:  35XX   DP EP       DE IP     DIP EI
-Example: 35CL   DP 501      10 3.5    12 9022
+Columns:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+Example:
+ 35XX   DP EP       DE IP     DIP EI
+ 35CL   DP 501      10 3.5    12 9022
 ```
 
 | Field | Columns | Description |
@@ -371,9 +372,9 @@ Example: 204AT  A 6632      6  100    5  1.5    3                               
 | :--- | :--- | :--- |
 | NUCID | 1-5 | Nucleus (e.g., " 35P " or "204AT") |
 | CONT | 6 | Continuation label |
-| BLANK | 7 | Must be blank |
+| SPACE | 7 | Must be blank |
 | TYPE | 8 | "A" for alpha decay |
-| BLANK | 9 | Must be blank |
+| SPACE | 9 | Must be blank |
 | E | 10-19 | Alpha energy in keV |
 | DE | 20-21 | Standard uncertainty in E |
 | SPACE | 22 | Readability space |
@@ -784,7 +785,7 @@ CSV Header Row: Name,Age,,City,Score
 Data Row: John,25,,NYC,95
 
 WRONG: Assume columns are [Name,Age,City,Score] (ignores blank column)
-CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
+CORRECT: Map as [Name,Age,blank,City,Score] (blank shifts City to position 4)
 ```
 
 **NEVER PROCEED WITHOUT COMPLETE COLUMN MAPPING VERIFICATION**
