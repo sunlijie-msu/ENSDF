@@ -130,9 +130,8 @@ You are an AI agent specializing in the Evaluated Nuclear Structure Data File (E
 #### Energy Level Record (L-Record)
 
 ```text
-Columns:
-12345678901234567890123456789012345678901234567890123456789012345678901234567890
 Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
  35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q
  35P   L 3572.0    12 3/2+,5/2+        29 FS     14    2        0.8       4 A  ?
  35CL  L 1219      5  3/2+             0.39 PS   8     2        0.43      15A  S
@@ -166,9 +165,8 @@ Example:
 #### Gamma Transition Record (G-Record)
 
 ```text
-Columns:
-12345678901234567890123456789012345678901234567890123456789012345678901234567890
 Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
  35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q
  35P   G 1572.0    10 70.0   24 M1+E2    -1.23   25    0.090  20 71.0     23A  S
  35Si  G 2572.0    5  5.0    2  E2       +2.1          0.05   5  5.1      2 B  ?
@@ -259,11 +257,10 @@ Note: Multiple identical gamma energies appear in multiple level blocks should b
 #### Delayed Proton Emission Record (DP-Record)
 
 ```text
-Columns:
-12345678901234567890123456789012345678901234567890123456789012345678901234567890
 Example:
- 35XX   DP EP       DE IP     DIP EI
- 35CL   DP 501      10 3.5    12 9022
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ 35XX  DP EP       DE IP     DI EI                                              
+ 35CL  DP 501      10 3.5    12 9022                                            
 ```
 
 | Field | Columns | Description |
@@ -289,9 +286,10 @@ Example:
 #### Beta Minus Decay Record (B-Record)
 
 ```text
-Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
-Format:  35XX  B EEEE.E   DE  IB     DIB          LOGFT   DFT              C   UN  Q
-Example: 35P   B 1572.0    1  100.0  4            5.23    12               C   1U   
+Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ 35XX  B EEEE.E    DE IB     DI           LOGFT  DFT                        CUNQ
+ 35P   B 1572.0    1  100.0  4            5.23   12                         C1U 
 ```
 
 | Field | Columns | Description |
@@ -307,7 +305,8 @@ Example: 35P   B 1572.0    1  100.0  4            5.23    12               C   1
 | IB | 23-29 | Intensity of β⁻-decay branch |
 | DIB | 30-31 | Uncertainty in IB |
 | SPACE | 32-41 | Must be blank |
-| LOGFT | 42-49 | The log ft for the β⁻ transition |
+| SPACE | 42 | Readability space |
+| LOGFT | 43-49 | The log ft for the β⁻ transition |
 | DFT | 50-55 | Uncertainty in LOGFT |
 | SPACE | 56-76 | Must be blank |
 | C | 77 | Comment flag ('C' denotes coincidence, '?' denotes probable coincidence) |
@@ -324,9 +323,10 @@ Example: 35P   B 1572.0    1  100.0  4            5.23    12               C   1
 #### Electron Capture and Beta Plus Decay Record (E-Record)
 
 ```text
-Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
-Format:  35XX  E EEEE.E   DE  IB     DIB IE     DIE LOGFT   DFT    TI       DTI C UN  Q
-Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   C 1U  S
+Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ 35XX  E EEEE.E    DE IB     DI IE     DI LOGFT  DFT            TI        DICUNQ
+ 35CL  E 1750.0    5  65.0   8  35.0   5  4.85   15             100.0     8 C1US
 ```
 
 | Field | Columns | Description |
@@ -343,7 +343,8 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 | DIB | 30-31 | Uncertainty in IB |
 | IE | 32-39 | Intensity of electron capture branch |
 | DIE | 40-41 | Uncertainty in IE |
-| LOGFT | 42-49 | The log ft for (ε + β⁺) transition |
+| SPACE | 42 | Readability space |
+| LOGFT | 43-49 | The log ft for (ε + β⁺) transition |
 | DFT | 50-55 | Uncertainty in LOGFT |
 | SPACE | 56-64 | Must be blank |
 | TI | 65-74 | Total (ε + β⁺) decay intensity |
@@ -363,9 +364,10 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 #### Alpha Decay Record (A-Record)
 
 ```text
-Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
-Format:  235XX  A EEEE.E    DE IA     DI HF     DHF                                  C  Q
-Example: 204AT  A 6632      6  100    5  1.5    3                                    C  ?
+Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+235XX  A EEEE.E    DE IA     DI HF     DHF                                  C  Q
+204AT  A 6632      6  100    5  1.5    3                                    C  ?
 ```
 
 | Field | Columns | Description |

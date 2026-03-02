@@ -334,10 +334,9 @@ aside > *:last-child {
 </ul>
 <h3 id="record-format-specifications">Record Format Specifications</h3>
 <h4 id="energy-level-record-l-record">Energy Level Record (L-Record)</h4>
-<pre><code class="language-text">Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
-Format:
+<pre><code class="language-text">Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
  35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q
-Example:
  35P   L 3572.0    12 3/2+,5/2+        29 FS     14    2        0.8       4 A  ?
  35CL  L 1219      5  3/2+             0.39 PS   8     2        0.43      15A  S
 </code></pre>
@@ -361,7 +360,7 @@ Example:
 <td style="text-align:left">Continuation label</td>
 </tr>
 <tr>
-<td style="text-align:left">BLANK</td>
+<td style="text-align:left">SPACE</td>
 <td style="text-align:left">7</td>
 <td style="text-align:left">Must be blank</td>
 </tr>
@@ -371,7 +370,7 @@ Example:
 <td style="text-align:left">&quot;L&quot;</td>
 </tr>
 <tr>
-<td style="text-align:left">BLANK</td>
+<td style="text-align:left">SPACE</td>
 <td style="text-align:left">9</td>
 <td style="text-align:left">Must be blank</td>
 </tr>
@@ -444,11 +443,9 @@ Example:
 <li>Each L-record with or without a following <code>cL</code> line is an independent record.</li>
 </ul>
 <h4 id="gamma-transition-record-g-record">Gamma Transition Record (G-Record)</h4>
-<pre><code class="language-text">Columns:
+<pre><code class="language-text">Example:
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
-Format: 
  35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q
-Example:
  35P   G 1572.0    10 70.0   24 M1+E2    -1.23   25    0.090  20 71.0     23A  S
  35Si  G 2572.0    5  5.0    2  E2       +2.1          0.05   5  5.1      2 B  ?
 </code></pre>
@@ -472,7 +469,7 @@ Example:
 <td style="text-align:left">Continuation label</td>
 </tr>
 <tr>
-<td style="text-align:left">BLANK</td>
+<td style="text-align:left">SPACE</td>
 <td style="text-align:left">7</td>
 <td style="text-align:left">Must be blank</td>
 </tr>
@@ -482,7 +479,7 @@ Example:
 <td style="text-align:left">&quot;G&quot;</td>
 </tr>
 <tr>
-<td style="text-align:left">BLANK</td>
+<td style="text-align:left">SPACE</td>
 <td style="text-align:left">9</td>
 <td style="text-align:left">Must be blank</td>
 </tr>
@@ -557,7 +554,7 @@ Example:
 <td style="text-align:left"><strong>Comment flag</strong> (A-Z, a-z, *, &amp;, @) - See G-Record Flag Rules below</td>
 </tr>
 <tr>
-<td style="text-align:left">BLANK</td>
+<td style="text-align:left">SPACE</td>
 <td style="text-align:left">78-79</td>
 <td style="text-align:left">Must be blank</td>
 </tr>
@@ -634,9 +631,10 @@ Note: Multiple identical gamma energies appear in multiple level blocks should b
 </ul>
 <p><strong>Critical Note:</strong> ENSDF files require exact positioning. One column off equals data rejection.</p>
 <h4 id="delayed-proton-emission-record-dp-record">Delayed Proton Emission Record (DP-Record)</h4>
-<pre><code class="language-text">Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
-Format:  35XX   DP EP       DE IP     DIP EI
-Example: 35CL   DP 501      10 3.5    12 9022
+<pre><code class="language-text">Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ 35XX  DP EP       DE IP     DI EI                                              
+ 35CL  DP 501      10 3.5    12 9022                                            
 </code></pre>
 <table>
 <thead>
@@ -720,9 +718,10 @@ Example: 35CL   DP 501      10 3.5    12 9022
 <li>All field positioning follows standard ENSDF left-justification rules.</li>
 </ul>
 <h4 id="beta-minus-decay-record-b-record">Beta Minus Decay Record (B-Record)</h4>
-<pre><code class="language-text">Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
-Format:  35XX  B EEEE.E   DE  IB     DIB          LOGFT   DFT              C   UN  Q
-Example: 35P   B 1572.0    1  100.0  4            5.23    12               C   1U   
+<pre><code class="language-text">Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ 35XX  B EEEE.E    DE IB     DI           LOGFT  DFT                        CUNQ
+ 35P   B 1572.0    1  100.0  4            5.23   12                         C1U 
 </code></pre>
 <table>
 <thead>
@@ -789,8 +788,13 @@ Example: 35P   B 1572.0    1  100.0  4            5.23    12               C   1
 <td style="text-align:left">Must be blank</td>
 </tr>
 <tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">42</td>
+<td style="text-align:left">Readability space</td>
+</tr>
+<tr>
 <td style="text-align:left">LOGFT</td>
-<td style="text-align:left">42-49</td>
+<td style="text-align:left">43-49</td>
 <td style="text-align:left">The log ft for the β⁻ transition</td>
 </tr>
 <tr>
@@ -829,9 +833,10 @@ Example: 35P   B 1572.0    1  100.0  4            5.23    12               C   1
 <li>Blank signifies allowed transition for forbiddenness field.</li>
 </ul>
 <h4 id="electron-capture-and-beta-plus-decay-record-e-record">Electron Capture and Beta Plus Decay Record (E-Record)</h4>
-<pre><code class="language-text">Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
-Format:  35XX  E EEEE.E   DE  IB     DIB IE     DIE LOGFT   DFT    TI       DTI C UN  Q
-Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   C 1U  S
+<pre><code class="language-text">Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ 35XX  E EEEE.E    DE IB     DI IE     DI LOGFT  DFT            TI        DICUNQ
+ 35CL  E 1750.0    5  65.0   8  35.0   5  4.85   15             100.0     8 C1US
 </code></pre>
 <table>
 <thead>
@@ -903,8 +908,13 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 <td style="text-align:left">Uncertainty in IE</td>
 </tr>
 <tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">42</td>
+<td style="text-align:left">Readability space</td>
+</tr>
+<tr>
 <td style="text-align:left">LOGFT</td>
-<td style="text-align:left">42-49</td>
+<td style="text-align:left">43-49</td>
 <td style="text-align:left">The log ft for (ε + β⁺) transition</td>
 </tr>
 <tr>
@@ -954,9 +964,10 @@ Example: 35CL  E 1750.0    5  65.0   8   35.0   5   4.85    15     100.0    8   
 <li>Additional indicator in column 80 for uncertain ('?') or assumed ('S') transitions.</li>
 </ul>
 <h4 id="alpha-decay-record-a-record">Alpha Decay Record (A-Record)</h4>
-<pre><code class="language-text">Columns: 12345678901234567890123456789012345678901234567890123456789012345678901234567890
-Format:  235XX  A EEEE.E    DE IA     DI HF     DHF                                  C  Q
-Example: 204AT  A 6632      6  100    5  1.5    3                                    C  ?
+<pre><code class="language-text">Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+235XX  A EEEE.E    DE IA     DI HF     DHF                                  C  Q
+204AT  A 6632      6  100    5  1.5    3                                    C  ?
 </code></pre>
 <table>
 <thead>
@@ -978,7 +989,7 @@ Example: 204AT  A 6632      6  100    5  1.5    3                               
 <td style="text-align:left">Continuation label</td>
 </tr>
 <tr>
-<td style="text-align:left">BLANK</td>
+<td style="text-align:left">SPACE</td>
 <td style="text-align:left">7</td>
 <td style="text-align:left">Must be blank</td>
 </tr>
@@ -988,7 +999,7 @@ Example: 204AT  A 6632      6  100    5  1.5    3                               
 <td style="text-align:left">&quot;A&quot; for alpha decay</td>
 </tr>
 <tr>
-<td style="text-align:left">BLANK</td>
+<td style="text-align:left">SPACE</td>
 <td style="text-align:left">9</td>
 <td style="text-align:left">Must be blank</td>
 </tr>
@@ -1526,7 +1537,7 @@ python .github/scripts/ens2pdf.py Si35_adopted --open --system
 Data Row: John,25,,NYC,95
 
 WRONG: Assume columns are [Name,Age,City,Score] (ignores blank column)
-CORRECT: Map as [Name,Age,BLANK,City,Score] (blank shifts City to position 4)
+CORRECT: Map as [Name,Age,blank,City,Score] (blank shifts City to position 4)
 </code></pre>
 <p><strong>NEVER PROCEED WITHOUT COMPLETE COLUMN MAPPING VERIFICATION</strong></p>
 <p><strong>CRITICAL COLUMN RULE:</strong> When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns. Only adjust spacing between fields (never move field data to incorrect columns).</p>
