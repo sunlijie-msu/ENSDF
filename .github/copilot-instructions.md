@@ -539,6 +539,12 @@ In comment lines, scientific notation uses `{In}` for uncertainties:
 -   **Value:** `1.1E6`
 -   **Uncertainty:** `{I3}` (±0.3 in last digit).
 
+#### Uncertainty Notation with units
+Units are placed after the value before the uncertainty:
+ 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)
+ 34S   cL $|t=54 fs {I+18-11} (1980Be15)
+
+
 **Examples in Context:**
 -   Data record: ` 35P   L 1572.0    12 3/2+             2.29 PS   14` (uncertainties are plain numbers).
 -   Comment line: ` 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)` (uncertainty uses `{I11}` notation).
