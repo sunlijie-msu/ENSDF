@@ -125,7 +125,7 @@
 | 121 | Nucl. Data Sheets 111, 1619 (2010) | https://doi.org/10.1016/j.nds.2010.05.002 | Susumu Ohya |
 | 122 | Nucl. Data Sheets 108, 455 (2007) | https://doi.org/10.1016/j.nds.2007.02.001 | Tetsuro Tamura |
 | 123 | Nucl. Data Sheets 174, 1 (2021) | https://doi.org/10.1016/j.nds.2021.05.001 | Jun Chen |
-| 124 | Nucl. Data Sheets 109, 1655 (2008) | https://doi.org/10.1016/j.nds.2008.06.001 | Jun-ichi Katakura, Z.D. Wu |
+| 124 | Nucl. Data Sheets 109, 1655 (2008) | https://doi.org/10.1016/j.nds.2008.06.001 | Jun-ichi Katakura, Zhendong Wu |
 | 125 | Nucl. Data Sheets 112, 495 (2011) | https://doi.org/10.1016/j.nds.2011.02.001 | Jun-ichi Katakura |
 | 126 | Nucl. Data Sheets 180, 1 (2022) | https://doi.org/10.1016/j.nds.2022.02.001 | Hisashi Iimura, Jun-ichi Katakura, Susumu Ohya |
 | 127 | Nucl. Data Sheets 112, 1647 (2011) | https://doi.org/10.1016/j.nds.2011.06.001 | Atsushi Hashizume |
