@@ -9,6 +9,7 @@ Agent Skills: Portable and Interoperable Capabilities across Agents, Scripts, Te
 
 **Semantic Structuring** (Role Assignment & Tag Wrapping) organizes the Context across four primary types: system messages, user messages, assistant messages, and tool messages.
 This framework ensures clear communication between the user, the AI, and the tools.
+
 System Message:
 Base identity
 Microsoft safety policies
@@ -17,6 +18,7 @@ Copilot memories: facts learned from interactions
 Custom instructions
 Agent skills
 Custom agents
+
 User Message:
 Environment info
 Workspace info
@@ -25,17 +27,20 @@ Reminder: User request
 Editor context: edited file paths, selections, cursor position, terminal.
 Chat variables: attachments
 Reusable prompts
+
 Assistant Message:
 Text response (Talking)
 Tool call (Acting)
+
 Tool Message:
 Result of tool calls: data in 80-col ens files
+
 
 **Structured Message Assembly Pipeline**:
 File Discovery,
 Parsing, Loading,
 Tool Reference Resolution,
-Semantic Structuring (Tag Wrapping, Role Assignment (system, user, assistant, or tool)),
+Semantic Structuring (Role Assignment & Tag Wrapping: system, user, assistant, or tool),
 Content Rendering,
 Integration into a Raw Chat Message Array.
 
