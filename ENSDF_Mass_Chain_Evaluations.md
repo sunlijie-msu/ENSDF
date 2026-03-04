@@ -5,23 +5,23 @@
 | 1 | Nucl. Data Sheets 106, 601 (2005) | https://doi.org/10.1016/j.nds.2005.11.004 | Balraj Singh |
 | 2 | Continuous internal ENSDF |  | Internal NNDC/ENSDF Evaluation |
 | 3 | Nucl. Data Sheets 130, 1 (2015) | https://doi.org/10.1016/j.nds.2015.11.001 | J.E. Purcell, C.G. Sheu |
-| 4 | Nucl. Phys. A 541, 1 (1992) | https://doi.org/10.1016/0375-9474(9290635-w) | D.R. Tilley, H.R. Weller, G.M. Hale |
-| 5 | Nucl. Phys. A 708, 3 (2002) | https://doi.org/10.1016/s0375-9474(0200597-3) | D.R. Tilley et al. |
-| 6 | Nucl. Phys. A 708, 3 (2002) | https://doi.org/10.1016/s0375-9474(0200597-3) | D.R. Tilley et al. |
-| 7 | Nucl. Phys. A 708, 3 (2002) | https://doi.org/10.1016/s0375-9474(0200597-3) | D.R. Tilley et al. |
+| 4 | Nucl. Phys. A 541, 1 (1992) | https://doi.org/10.1016/0375-9474(92)90635-w | D.R. Tilley, H.R. Weller, G.M. Hale |
+| 5 | Nucl. Phys. A 708, 3 (2002) | https://doi.org/10.1016/s0375-9474(02)00597-3 | D.R. Tilley et al. |
+| 6 | Nucl. Phys. A 708, 3 (2002) | https://doi.org/10.1016/s0375-9474(02)00597-3 | D.R. Tilley et al. |
+| 7 | Nucl. Phys. A 708, 3 (2002) | https://doi.org/10.1016/s0375-9474(02)00597-3 | D.R. Tilley et al. |
 | 8 | Nucl. Phys. A 745, 155 (2004) | https://doi.org/10.1016/j.nuclphysa.2004.09.059 | D.R. Tilley et al. |
 | 9 | Nucl. Phys. A 745, 155 (2004) | https://doi.org/10.1016/j.nuclphysa.2004.09.059 | D.R. Tilley et al. |
 | 10 | Nucl. Phys. A 745, 155 (2004) | https://doi.org/10.1016/j.nuclphysa.2004.09.059 | D.R. Tilley et al. |
 | 11 | Nucl. Phys. A 880, 88 (2012) | https://doi.org/10.1016/j.nuclphysa.2012.01.010 | J.H. Kelley et al. |
 | 12 | Nucl. Phys. A 968, 71 (2017) | https://doi.org/10.1016/j.nuclphysa.2017.07.015 | J.H. Kelley, J.E. Purcell, C.G. Sheu |
 | 13 | Nucl. Data Sheets 198, 1 (2024) | https://doi.org/10.1016/j.nds.2024.11.001 | J.H. Kelley, C.G. Sheu, J.E. Purcell |
-| 14 | Nucl. Phys. A 523, 1 (1991) | https://doi.org/10.1016/0375-9474(9190446-d) | F. Ajzenberg-Selove |
-| 15 | Nucl. Phys. A 523, 1 (1991) | https://doi.org/10.1016/0375-9474(9190446-d) | F. Ajzenberg-Selove |
-| 16 | Nucl. Phys. A 564, 1 (1993) | https://doi.org/10.1016/0375-9474(9390073-7) | D.R. Tilley, H.R. Weller, C.M. Cheves |
-| 17 | Nucl. Phys. A 564, 1 (1993) | https://doi.org/10.1016/0375-9474(9390073-7) | D.R. Tilley, H.R. Weller, C.M. Cheves |
-| 18 | Nucl. Phys. A 595, 1 (1995) | https://doi.org/10.1016/0375-9474(9500338-1) | D.R. Tilley et al. |
-| 19 | Nucl. Phys. A 595, 1 (1995) | https://doi.org/10.1016/0375-9474(9500338-1) | D.R. Tilley et al. |
-| 20 | Nucl. Phys. A 636, 249 (1998) | https://doi.org/10.1016/s0375-9474(9800129-8) | D.R. Tilley et al. |
+| 14 | Nucl. Phys. A 523, 1 (1991) | https://doi.org/10.1016/0375-9474(91)90446-d | F. Ajzenberg-Selove |
+| 15 | Nucl. Phys. A 523, 1 (1991) | https://doi.org/10.1016/0375-9474(91)90446-d | F. Ajzenberg-Selove |
+| 16 | Nucl. Phys. A 564, 1 (1993) | https://doi.org/10.1016/0375-9474(93)90073-7 | D.R. Tilley, H.R. Weller, C.M. Cheves |
+| 17 | Nucl. Phys. A 564, 1 (1993) | https://doi.org/10.1016/0375-9474(93)90073-7 | D.R. Tilley, H.R. Weller, C.M. Cheves |
+| 18 | Nucl. Phys. A 595, 1 (1995) | https://doi.org/10.1016/0375-9474(95)00338-1 | D.R. Tilley et al. |
+| 19 | Nucl. Phys. A 595, 1 (1995) | https://doi.org/10.1016/0375-9474(95)00338-1 | D.R. Tilley et al. |
+| 20 | Nucl. Phys. A 636, 249 (1998) | https://doi.org/10.1016/s0375-9474(98)00129-8 | D.R. Tilley et al. |
 | 21 | Nucl. Data Sheets 127, 1 (2015) | https://doi.org/10.1016/j.nds.2015.07.001 | R.B. Firestone |
 | 22 | Nucl. Data Sheets 127, 69 (2015) | https://doi.org/10.1016/j.nds.2015.07.002 | M. Shamsuzzoha Basunia |
 | 23 | Nucl. Data Sheets 171, 1 (2021) | https://doi.org/10.1016/j.nds.2020.12.001 | M. Shamsuzzoha Basunia, Anagha Chakraborty |
@@ -301,3 +301,4 @@
 | 297 | Not evaluated |  |  |
 | 298 | Nucl. Data Sheets 156, 70 (2019) | https://doi.org/10.1016/j.nds.2019.02.004 | Balraj Singh |
 | 299 | Not evaluated |  |  |
+
