@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>ENSDF Mass Chain Evaluations</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+/* From extension goessner.mdmath */
+@font-face{font-family:KaTeX_AMS;font-style:normal;font-weight:400;src:url(fonts/KaTeX_AMS-Regular.woff2) format("woff2"),url(fonts/KaTeX_AMS-Regular.woff) format("woff"),url(fonts/KaTeX_AMS-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Caligraphic;font-style:normal;font-weight:700;src:url(fonts/KaTeX_Caligraphic-Bold.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Bold.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Bold.ttf) format("truetype")}@font-face{font-family:KaTeX_Caligraphic;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Caligraphic-Regular.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Regular.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Fraktur;font-style:normal;font-weight:700;src:url(fonts/KaTeX_Fraktur-Bold.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Bold.woff) format("woff"),url(fonts/KaTeX_Fraktur-Bold.ttf) format("truetype")}@font-face{font-family:KaTeX_Fraktur;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Fraktur-Regular.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Regular.woff) format("woff"),url(fonts/KaTeX_Fraktur-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Main;font-style:normal;font-weight:700;src:url(fonts/KaTeX_Main-Bold.woff2) format("woff2"),url(fonts/KaTeX_Main-Bold.woff) format("woff"),url(fonts/KaTeX_Main-Bold.ttf) format("truetype")}@font-face{font-family:KaTeX_Main;font-style:italic;font-weight:700;src:url(fonts/KaTeX_Main-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Main-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Main-BoldItalic.ttf) format("truetype")}@font-face{font-family:KaTeX_Main;font-style:italic;font-weight:400;src:url(fonts/KaTeX_Main-Italic.woff2) format("woff2"),url(fonts/KaTeX_Main-Italic.woff) format("woff"),url(fonts/KaTeX_Main-Italic.ttf) format("truetype")}@font-face{font-family:KaTeX_Main;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Main-Regular.woff2) format("woff2"),url(fonts/KaTeX_Main-Regular.woff) format("woff"),url(fonts/KaTeX_Main-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Math;font-style:italic;font-weight:700;src:url(fonts/KaTeX_Math-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Math-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Math-BoldItalic.ttf) format("truetype")}@font-face{font-family:KaTeX_Math;font-style:italic;font-weight:400;src:url(fonts/KaTeX_Math-Italic.woff2) format("woff2"),url(fonts/KaTeX_Math-Italic.woff) format("woff"),url(fonts/KaTeX_Math-Italic.ttf) format("truetype")}@font-face{font-family:"KaTeX_SansSerif";font-style:normal;font-weight:700;src:url(fonts/KaTeX_SansSerif-Bold.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Bold.woff) format("woff"),url(fonts/KaTeX_SansSerif-Bold.ttf) format("truetype")}@font-face{font-family:"KaTeX_SansSerif";font-style:italic;font-weight:400;src:url(fonts/KaTeX_SansSerif-Italic.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Italic.woff) format("woff"),url(fonts/KaTeX_SansSerif-Italic.ttf) format("truetype")}@font-face{font-family:"KaTeX_SansSerif";font-style:normal;font-weight:400;src:url(fonts/KaTeX_SansSerif-Regular.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Regular.woff) format("woff"),url(fonts/KaTeX_SansSerif-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Script;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Script-Regular.woff2) format("woff2"),url(fonts/KaTeX_Script-Regular.woff) format("woff"),url(fonts/KaTeX_Script-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Size1;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Size1-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size1-Regular.woff) format("woff"),url(fonts/KaTeX_Size1-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Size2;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Size2-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size2-Regular.woff) format("woff"),url(fonts/KaTeX_Size2-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Size3;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Size3-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size3-Regular.woff) format("woff"),url(fonts/KaTeX_Size3-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Size4;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Size4-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size4-Regular.woff) format("woff"),url(fonts/KaTeX_Size4-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Typewriter;font-style:normal;font-weight:400;src:url(fonts/KaTeX_Typewriter-Regular.woff2) format("woff2"),url(fonts/KaTeX_Typewriter-Regular.woff) format("woff"),url(fonts/KaTeX_Typewriter-Regular.ttf) format("truetype")}.katex{font:normal 1.21em KaTeX_Main,Times New Roman,serif;line-height:1.2;text-indent:0;text-rendering:auto}.katex *{-ms-high-contrast-adjust:none!important;border-color:currentColor}.katex .katex-version:after{content:"0.13.11"}.katex .katex-mathml{clip:rect(1px,1px,1px,1px);border:0;height:1px;overflow:hidden;padding:0;position:absolute;width:1px}.katex .katex-html>.newline{display:block}.katex .base{position:relative;white-space:nowrap;width:-webkit-min-content;width:-moz-min-content;width:min-content}.katex .base,.katex .strut{display:inline-block}.katex .textbf{font-weight:700}.katex .textit{font-style:italic}.katex .textrm{font-family:KaTeX_Main}.katex .textsf{font-family:KaTeX_SansSerif}.katex .texttt{font-family:KaTeX_Typewriter}.katex .mathnormal{font-family:KaTeX_Math;font-style:italic}.katex .mathit{font-family:KaTeX_Main;font-style:italic}.katex .mathrm{font-style:normal}.katex .mathbf{font-family:KaTeX_Main;font-weight:700}.katex .boldsymbol{font-family:KaTeX_Math;font-style:italic;font-weight:700}.katex .amsrm,.katex .mathbb,.katex .textbb{font-family:KaTeX_AMS}.katex .mathcal{font-family:KaTeX_Caligraphic}.katex .mathfrak,.katex .textfrak{font-family:KaTeX_Fraktur}.katex .mathtt{font-family:KaTeX_Typewriter}.katex .mathscr,.katex .textscr{font-family:KaTeX_Script}.katex .mathsf,.katex .textsf{font-family:KaTeX_SansSerif}.katex .mathboldsf,.katex .textboldsf{font-family:KaTeX_SansSerif;font-weight:700}.katex .mathitsf,.katex .textitsf{font-family:KaTeX_SansSerif;font-style:italic}.katex .mainrm{font-family:KaTeX_Main;font-style:normal}.katex .vlist-t{border-collapse:collapse;display:inline-table;table-layout:fixed}.katex .vlist-r{display:table-row}.katex .vlist{display:table-cell;position:relative;vertical-align:bottom}.katex .vlist>span{display:block;height:0;position:relative}.katex .vlist>span>span{display:inline-block}.katex .vlist>span>.pstrut{overflow:hidden;width:0}.katex .vlist-t2{margin-right:-2px}.katex .vlist-s{display:table-cell;font-size:1px;min-width:2px;vertical-align:bottom;width:2px}.katex .vbox{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-box-align:baseline;align-items:baseline;display:-webkit-inline-box;display:inline-flex;flex-direction:column}.katex .hbox{width:100%}.katex .hbox,.katex .thinbox{-webkit-box-orient:horizontal;-webkit-box-direction:normal;display:-webkit-inline-box;display:inline-flex;flex-direction:row}.katex .thinbox{max-width:0;width:0}.katex .msupsub{text-align:left}.katex .mfrac>span>span{text-align:center}.katex .mfrac .frac-line{border-bottom-style:solid;display:inline-block;width:100%}.katex .hdashline,.katex .hline,.katex .mfrac .frac-line,.katex .overline .overline-line,.katex .rule,.katex .underline .underline-line{min-height:1px}.katex .mspace{display:inline-block}.katex .clap,.katex .llap,.katex .rlap{position:relative;width:0}.katex .clap>.inner,.katex .llap>.inner,.katex .rlap>.inner{position:absolute}.katex .clap>.fix,.katex .llap>.fix,.katex .rlap>.fix{display:inline-block}.katex .llap>.inner{right:0}.katex .clap>.inner,.katex .rlap>.inner{left:0}.katex .clap>.inner>span{margin-left:-50%;margin-right:50%}.katex .rule{border:0 solid;display:inline-block;position:relative}.katex .hline,.katex .overline .overline-line,.katex .underline .underline-line{border-bottom-style:solid;display:inline-block;width:100%}.katex .hdashline{border-bottom-style:dashed;display:inline-block;width:100%}.katex .sqrt>.root{margin-left:.27777778em;margin-right:-.55555556em}.katex .fontsize-ensurer.reset-size1.size1,.katex .sizing.reset-size1.size1{font-size:1em}.katex .fontsize-ensurer.reset-size1.size2,.katex .sizing.reset-size1.size2{font-size:1.2em}.katex .fontsize-ensurer.reset-size1.size3,.katex .sizing.reset-size1.size3{font-size:1.4em}.katex .fontsize-ensurer.reset-size1.size4,.katex .sizing.reset-size1.size4{font-size:1.6em}.katex .fontsize-ensurer.reset-size1.size5,.katex .sizing.reset-size1.size5{font-size:1.8em}.katex .fontsize-ensurer.reset-size1.size6,.katex .sizing.reset-size1.size6{font-size:2em}.katex .fontsize-ensurer.reset-size1.size7,.katex .sizing.reset-size1.size7{font-size:2.4em}.katex .fontsize-ensurer.reset-size1.size8,.katex .sizing.reset-size1.size8{font-size:2.88em}.katex .fontsize-ensurer.reset-size1.size9,.katex .sizing.reset-size1.size9{font-size:3.456em}.katex .fontsize-ensurer.reset-size1.size10,.katex .sizing.reset-size1.size10{font-size:4.148em}.katex .fontsize-ensurer.reset-size1.size11,.katex .sizing.reset-size1.size11{font-size:4.976em}.katex .fontsize-ensurer.reset-size2.size1,.katex .sizing.reset-size2.size1{font-size:.83333333em}.katex .fontsize-ensurer.reset-size2.size2,.katex .sizing.reset-size2.size2{font-size:1em}.katex .fontsize-ensurer.reset-size2.size3,.katex .sizing.reset-size2.size3{font-size:1.16666667em}.katex .fontsize-ensurer.reset-size2.size4,.katex .sizing.reset-size2.size4{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size2.size5,.katex .sizing.reset-size2.size5{font-size:1.5em}.katex .fontsize-ensurer.reset-size2.size6,.katex .sizing.reset-size2.size6{font-size:1.66666667em}.katex .fontsize-ensurer.reset-size2.size7,.katex .sizing.reset-size2.size7{font-size:2em}.katex .fontsize-ensurer.reset-size2.size8,.katex .sizing.reset-size2.size8{font-size:2.4em}.katex .fontsize-ensurer.reset-size2.size9,.katex .sizing.reset-size2.size9{font-size:2.88em}.katex .fontsize-ensurer.reset-size2.size10,.katex .sizing.reset-size2.size10{font-size:3.45666667em}.katex .fontsize-ensurer.reset-size2.size11,.katex .sizing.reset-size2.size11{font-size:4.14666667em}.katex .fontsize-ensurer.reset-size3.size1,.katex .sizing.reset-size3.size1{font-size:.71428571em}.katex .fontsize-ensurer.reset-size3.size2,.katex .sizing.reset-size3.size2{font-size:.85714286em}.katex .fontsize-ensurer.reset-size3.size3,.katex .sizing.reset-size3.size3{font-size:1em}.katex .fontsize-ensurer.reset-size3.size4,.katex .sizing.reset-size3.size4{font-size:1.14285714em}.katex .fontsize-ensurer.reset-size3.size5,.katex .sizing.reset-size3.size5{font-size:1.28571429em}.katex .fontsize-ensurer.reset-size3.size6,.katex .sizing.reset-size3.size6{font-size:1.42857143em}.katex .fontsize-ensurer.reset-size3.size7,.katex .sizing.reset-size3.size7{font-size:1.71428571em}.katex .fontsize-ensurer.reset-size3.size8,.katex .sizing.reset-size3.size8{font-size:2.05714286em}.katex .fontsize-ensurer.reset-size3.size9,.katex .sizing.reset-size3.size9{font-size:2.46857143em}.katex .fontsize-ensurer.reset-size3.size10,.katex .sizing.reset-size3.size10{font-size:2.96285714em}.katex .fontsize-ensurer.reset-size3.size11,.katex .sizing.reset-size3.size11{font-size:3.55428571em}.katex .fontsize-ensurer.reset-size4.size1,.katex .sizing.reset-size4.size1{font-size:.625em}.katex .fontsize-ensurer.reset-size4.size2,.katex .sizing.reset-size4.size2{font-size:.75em}.katex .fontsize-ensurer.reset-size4.size3,.katex .sizing.reset-size4.size3{font-size:.875em}.katex .fontsize-ensurer.reset-size4.size4,.katex .sizing.reset-size4.size4{font-size:1em}.katex .fontsize-ensurer.reset-size4.size5,.katex .sizing.reset-size4.size5{font-size:1.125em}.katex .fontsize-ensurer.reset-size4.size6,.katex .sizing.reset-size4.size6{font-size:1.25em}.katex .fontsize-ensurer.reset-size4.size7,.katex .sizing.reset-size4.size7{font-size:1.5em}.katex .fontsize-ensurer.reset-size4.size8,.katex .sizing.reset-size4.size8{font-size:1.8em}.katex .fontsize-ensurer.reset-size4.size9,.katex .sizing.reset-size4.size9{font-size:2.16em}.katex .fontsize-ensurer.reset-size4.size10,.katex .sizing.reset-size4.size10{font-size:2.5925em}.katex .fontsize-ensurer.reset-size4.size11,.katex .sizing.reset-size4.size11{font-size:3.11em}.katex .fontsize-ensurer.reset-size5.size1,.katex .sizing.reset-size5.size1{font-size:.55555556em}.katex .fontsize-ensurer.reset-size5.size2,.katex .sizing.reset-size5.size2{font-size:.66666667em}.katex .fontsize-ensurer.reset-size5.size3,.katex .sizing.reset-size5.size3{font-size:.77777778em}.katex .fontsize-ensurer.reset-size5.size4,.katex .sizing.reset-size5.size4{font-size:.88888889em}.katex .fontsize-ensurer.reset-size5.size5,.katex .sizing.reset-size5.size5{font-size:1em}.katex .fontsize-ensurer.reset-size5.size6,.katex .sizing.reset-size5.size6{font-size:1.11111111em}.katex .fontsize-ensurer.reset-size5.size7,.katex .sizing.reset-size5.size7{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size5.size8,.katex .sizing.reset-size5.size8{font-size:1.6em}.katex .fontsize-ensurer.reset-size5.size9,.katex .sizing.reset-size5.size9{font-size:1.92em}.katex .fontsize-ensurer.reset-size5.size10,.katex .sizing.reset-size5.size10{font-size:2.30444444em}.katex .fontsize-ensurer.reset-size5.size11,.katex .sizing.reset-size5.size11{font-size:2.76444444em}.katex .fontsize-ensurer.reset-size6.size1,.katex .sizing.reset-size6.size1{font-size:.5em}.katex .fontsize-ensurer.reset-size6.size2,.katex .sizing.reset-size6.size2{font-size:.6em}.katex .fontsize-ensurer.reset-size6.size3,.katex .sizing.reset-size6.size3{font-size:.7em}.katex .fontsize-ensurer.reset-size6.size4,.katex .sizing.reset-size6.size4{font-size:.8em}.katex .fontsize-ensurer.reset-size6.size5,.katex .sizing.reset-size6.size5{font-size:.9em}.katex .fontsize-ensurer.reset-size6.size6,.katex .sizing.reset-size6.size6{font-size:1em}.katex .fontsize-ensurer.reset-size6.size7,.katex .sizing.reset-size6.size7{font-size:1.2em}.katex .fontsize-ensurer.reset-size6.size8,.katex .sizing.reset-size6.size8{font-size:1.44em}.katex .fontsize-ensurer.reset-size6.size9,.katex .sizing.reset-size6.size9{font-size:1.728em}.katex .fontsize-ensurer.reset-size6.size10,.katex .sizing.reset-size6.size10{font-size:2.074em}.katex .fontsize-ensurer.reset-size6.size11,.katex .sizing.reset-size6.size11{font-size:2.488em}.katex .fontsize-ensurer.reset-size7.size1,.katex .sizing.reset-size7.size1{font-size:.41666667em}.katex .fontsize-ensurer.reset-size7.size2,.katex .sizing.reset-size7.size2{font-size:.5em}.katex .fontsize-ensurer.reset-size7.size3,.katex .sizing.reset-size7.size3{font-size:.58333333em}.katex .fontsize-ensurer.reset-size7.size4,.katex .sizing.reset-size7.size4{font-size:.66666667em}.katex .fontsize-ensurer.reset-size7.size5,.katex .sizing.reset-size7.size5{font-size:.75em}.katex .fontsize-ensurer.reset-size7.size6,.katex .sizing.reset-size7.size6{font-size:.83333333em}.katex .fontsize-ensurer.reset-size7.size7,.katex .sizing.reset-size7.size7{font-size:1em}.katex .fontsize-ensurer.reset-size7.size8,.katex .sizing.reset-size7.size8{font-size:1.2em}.katex .fontsize-ensurer.reset-size7.size9,.katex .sizing.reset-size7.size9{font-size:1.44em}.katex .fontsize-ensurer.reset-size7.size10,.katex .sizing.reset-size7.size10{font-size:1.72833333em}.katex .fontsize-ensurer.reset-size7.size11,.katex .sizing.reset-size7.size11{font-size:2.07333333em}.katex .fontsize-ensurer.reset-size8.size1,.katex .sizing.reset-size8.size1{font-size:.34722222em}.katex .fontsize-ensurer.reset-size8.size2,.katex .sizing.reset-size8.size2{font-size:.41666667em}.katex .fontsize-ensurer.reset-size8.size3,.katex .sizing.reset-size8.size3{font-size:.48611111em}.katex .fontsize-ensurer.reset-size8.size4,.katex .sizing.reset-size8.size4{font-size:.55555556em}.katex .fontsize-ensurer.reset-size8.size5,.katex .sizing.reset-size8.size5{font-size:.625em}.katex .fontsize-ensurer.reset-size8.size6,.katex .sizing.reset-size8.size6{font-size:.69444444em}.katex .fontsize-ensurer.reset-size8.size7,.katex .sizing.reset-size8.size7{font-size:.83333333em}.katex .fontsize-ensurer.reset-size8.size8,.katex .sizing.reset-size8.size8{font-size:1em}.katex .fontsize-ensurer.reset-size8.size9,.katex .sizing.reset-size8.size9{font-size:1.2em}.katex .fontsize-ensurer.reset-size8.size10,.katex .sizing.reset-size8.size10{font-size:1.44027778em}.katex .fontsize-ensurer.reset-size8.size11,.katex .sizing.reset-size8.size11{font-size:1.72777778em}.katex .fontsize-ensurer.reset-size9.size1,.katex .sizing.reset-size9.size1{font-size:.28935185em}.katex .fontsize-ensurer.reset-size9.size2,.katex .sizing.reset-size9.size2{font-size:.34722222em}.katex .fontsize-ensurer.reset-size9.size3,.katex .sizing.reset-size9.size3{font-size:.40509259em}.katex .fontsize-ensurer.reset-size9.size4,.katex .sizing.reset-size9.size4{font-size:.46296296em}.katex .fontsize-ensurer.reset-size9.size5,.katex .sizing.reset-size9.size5{font-size:.52083333em}.katex .fontsize-ensurer.reset-size9.size6,.katex .sizing.reset-size9.size6{font-size:.5787037em}.katex .fontsize-ensurer.reset-size9.size7,.katex .sizing.reset-size9.size7{font-size:.69444444em}.katex .fontsize-ensurer.reset-size9.size8,.katex .sizing.reset-size9.size8{font-size:.83333333em}.katex .fontsize-ensurer.reset-size9.size9,.katex .sizing.reset-size9.size9{font-size:1em}.katex .fontsize-ensurer.reset-size9.size10,.katex .sizing.reset-size9.size10{font-size:1.20023148em}.katex .fontsize-ensurer.reset-size9.size11,.katex .sizing.reset-size9.size11{font-size:1.43981481em}.katex .fontsize-ensurer.reset-size10.size1,.katex .sizing.reset-size10.size1{font-size:.24108004em}.katex .fontsize-ensurer.reset-size10.size2,.katex .sizing.reset-size10.size2{font-size:.28929605em}.katex .fontsize-ensurer.reset-size10.size3,.katex .sizing.reset-size10.size3{font-size:.33751205em}.katex .fontsize-ensurer.reset-size10.size4,.katex .sizing.reset-size10.size4{font-size:.38572806em}.katex .fontsize-ensurer.reset-size10.size5,.katex .sizing.reset-size10.size5{font-size:.43394407em}.katex .fontsize-ensurer.reset-size10.size6,.katex .sizing.reset-size10.size6{font-size:.48216008em}.katex .fontsize-ensurer.reset-size10.size7,.katex .sizing.reset-size10.size7{font-size:.57859209em}.katex .fontsize-ensurer.reset-size10.size8,.katex .sizing.reset-size10.size8{font-size:.69431051em}.katex .fontsize-ensurer.reset-size10.size9,.katex .sizing.reset-size10.size9{font-size:.83317261em}.katex .fontsize-ensurer.reset-size10.size10,.katex .sizing.reset-size10.size10{font-size:1em}.katex .fontsize-ensurer.reset-size10.size11,.katex .sizing.reset-size10.size11{font-size:1.19961427em}.katex .fontsize-ensurer.reset-size11.size1,.katex .sizing.reset-size11.size1{font-size:.20096463em}.katex .fontsize-ensurer.reset-size11.size2,.katex .sizing.reset-size11.size2{font-size:.24115756em}.katex .fontsize-ensurer.reset-size11.size3,.katex .sizing.reset-size11.size3{font-size:.28135048em}.katex .fontsize-ensurer.reset-size11.size4,.katex .sizing.reset-size11.size4{font-size:.32154341em}.katex .fontsize-ensurer.reset-size11.size5,.katex .sizing.reset-size11.size5{font-size:.36173633em}.katex .fontsize-ensurer.reset-size11.size6,.katex .sizing.reset-size11.size6{font-size:.40192926em}.katex .fontsize-ensurer.reset-size11.size7,.katex .sizing.reset-size11.size7{font-size:.48231511em}.katex .fontsize-ensurer.reset-size11.size8,.katex .sizing.reset-size11.size8{font-size:.57877814em}.katex .fontsize-ensurer.reset-size11.size9,.katex .sizing.reset-size11.size9{font-size:.69453376em}.katex .fontsize-ensurer.reset-size11.size10,.katex .sizing.reset-size11.size10{font-size:.83360129em}.katex .fontsize-ensurer.reset-size11.size11,.katex .sizing.reset-size11.size11{font-size:1em}.katex .delimsizing.size1{font-family:KaTeX_Size1}.katex .delimsizing.size2{font-family:KaTeX_Size2}.katex .delimsizing.size3{font-family:KaTeX_Size3}.katex .delimsizing.size4{font-family:KaTeX_Size4}.katex .delimsizing.mult .delim-size1>span{font-family:KaTeX_Size1}.katex .delimsizing.mult .delim-size4>span{font-family:KaTeX_Size4}.katex .nulldelimiter{display:inline-block;width:.12em}.katex .delimcenter,.katex .op-symbol{position:relative}.katex .op-symbol.small-op{font-family:KaTeX_Size1}.katex .op-symbol.large-op{font-family:KaTeX_Size2}.katex .accent>.vlist-t,.katex .op-limits>.vlist-t{text-align:center}.katex .accent .accent-body{position:relative}.katex .accent .accent-body:not(.accent-full){width:0}.katex .overlay{display:block}.katex .mtable .vertical-separator{display:inline-block;min-width:1px}.katex .mtable .arraycolsep{display:inline-block}.katex .mtable .col-align-c>.vlist-t{text-align:center}.katex .mtable .col-align-l>.vlist-t{text-align:left}.katex .mtable .col-align-r>.vlist-t{text-align:right}.katex .svg-align{text-align:left}.katex svg{fill:currentColor;stroke:currentColor;fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;display:block;height:inherit;position:absolute;width:100%}.katex svg path{stroke:none}.katex img{border-style:none;max-height:none;max-width:none;min-height:0;min-width:0}.katex .stretchy{display:block;overflow:hidden;position:relative;width:100%}.katex .stretchy:after,.katex .stretchy:before{content:""}.katex .hide-tail{overflow:hidden;position:relative;width:100%}.katex .halfarrow-left{left:0;overflow:hidden;position:absolute;width:50.2%}.katex .halfarrow-right{overflow:hidden;position:absolute;right:0;width:50.2%}.katex .brace-left{left:0;overflow:hidden;position:absolute;width:25.1%}.katex .brace-center{left:25%;overflow:hidden;position:absolute;width:50%}.katex .brace-right{overflow:hidden;position:absolute;right:0;width:25.1%}.katex .x-arrow-pad{padding:0 .5em}.katex .cd-arrow-pad{padding:0 .55556em 0 .27778em}.katex .mover,.katex .munder,.katex .x-arrow{text-align:center}.katex .boxpad{padding:0 .3em}.katex .fbox,.katex .fcolorbox{border:.04em solid;box-sizing:border-box}.katex .cancel-pad{padding:0 .2em}.katex .cancel-lap{margin-left:-.2em;margin-right:-.2em}.katex .sout{border-bottom-style:solid;border-bottom-width:.08em}.katex .angl{border-right:.049em solid;border-top:.049em solid;box-sizing:border-content;margin-right:.03889em}.katex .anglpad{padding:0 .03889em}.katex .eqn-num:before{content:"(" counter(katexEqnNo) ")";counter-increment:katexEqnNo}.katex .mml-eqn-num:before{content:"(" counter(mmlEqnNo) ")";counter-increment:mmlEqnNo}.katex .mtr-glue{width:50%}.katex .cd-vert-arrow{display:inline-block;position:relative}.katex .cd-label-left{display:inline-block;position:absolute;right:-webkit-calc(50% + .3em);right:calc(50% + .3em);text-align:left}.katex .cd-label-right{display:inline-block;left:-webkit-calc(50% + .3em);left:calc(50% + .3em);position:absolute;text-align:right}.katex-display{display:block;margin:1em 0;text-align:center}.katex-display>.katex{display:block;text-align:center;white-space:nowrap}.katex-display>.katex>.katex-html{display:block;position:relative}.katex-display>.katex>.katex-html>.tag{position:absolute;right:0}.katex-display.leqno>.katex>.katex-html>.tag{left:0;right:auto}.katex-display.fleqn>.katex{padding-left:2em;text-align:left}body{counter-reset:katexEqnNo mmlEqnNo}
+
+/* style for html inside of browsers */
+.katex { font-size: 1em !important; } /* align KaTeX font-size to surrounding text */
+
+eq { display: inline-block; }
+eqn { display: block}
+section.eqno {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+}
+section.eqno > eqn {
+    width: 100%;
+    margin-left: 3em;
+}
+section.eqno > span {
+    width:3em;
+    text-align:right;
+}
+
+p { 
+    text-align: justify; 
+    hyphens: auto;
+}
+
+table {
+    display: table;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+figure {
+    margin: 0.5em auto;
+}
+figure > img {
+    display: block;
+    margin: 0 auto;
+    page-break-inside: avoid;
+    text-align: center;
+}
+figcaption { 
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+aside {
+  font-size: 0.9em;
+  max-width: 300px;
+  padding: 0 0 0 1em;
+  margin: 0 0 0 1em;
+  float: right;
+}
+
+aside > *:first-child {
+  margin-top: 0;
+}
+aside > *:last-child {
+  margin-bottom: 0;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 17px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="ensdf-mass-chain-evaluations">ENSDF Mass Chain Evaluations</h1>
+<table>
+<thead>
+<tr>
+<th>Mass Number</th>
+<th>Citation (Volume, Page, Year)</th>
+<th>DOI</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Nucl. Data Sheets 106, 601 (2005)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2005.11.004">https://doi.org/10.1016/j.nds.2005.11.004</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ENSDF Unpublished</td>
+<td></td>
+<td>John H. Kelley, J.L. Godwin</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Nucl. Data Sheets 130, 1 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2015.11.001">https://doi.org/10.1016/j.nds.2015.11.001</a></td>
+<td>John E. Purcell, Che Guey Sheu</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Nucl. Phys. A 541, 1 (1992)</td>
+<td><a href="https://doi.org/10.1016/0375-9474(92)90635-w">https://doi.org/10.1016/0375-9474(92)90635-w</a></td>
+<td>Donald R. Tilley, Henry R. Weller, Gerald M. Hale</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Nucl. Phys. A 708, 3 (2002)</td>
+<td><a href="https://doi.org/10.1016/s0375-9474(02)00597-3">https://doi.org/10.1016/s0375-9474(02)00597-3</a></td>
+<td>Donald R. Tilley, Che Guey Sheu, Henry R. Weller</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Nucl. Phys. A 708, 3 (2002)</td>
+<td><a href="https://doi.org/10.1016/s0375-9474(02)00597-3">https://doi.org/10.1016/s0375-9474(02)00597-3</a></td>
+<td>Donald R. Tilley, Che Guey Sheu, Henry R. Weller</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Nucl. Phys. A 708, 3 (2002)</td>
+<td><a href="https://doi.org/10.1016/s0375-9474(02)00597-3">https://doi.org/10.1016/s0375-9474(02)00597-3</a></td>
+<td>Donald R. Tilley, Che Guey Sheu, Henry R. Weller</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Nucl. Phys. A 745, 155 (2004)</td>
+<td><a href="https://doi.org/10.1016/j.nuclphysa.2004.09.059">https://doi.org/10.1016/j.nuclphysa.2004.09.059</a></td>
+<td>Donald R. Tilley, John H. Kelley, J.L. Godwin et al.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Nucl. Phys. A 745, 155 (2004)</td>
+<td><a href="https://doi.org/10.1016/j.nuclphysa.2004.09.059">https://doi.org/10.1016/j.nuclphysa.2004.09.059</a></td>
+<td>Donald R. Tilley, John H. Kelley, J.L. Godwin et al.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Nucl. Phys. A 745, 155 (2004)</td>
+<td><a href="https://doi.org/10.1016/j.nuclphysa.2004.09.059">https://doi.org/10.1016/j.nuclphysa.2004.09.059</a></td>
+<td>Donald R. Tilley, John H. Kelley, J.L. Godwin et al.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Nucl. Phys. A 880, 88 (2012)</td>
+<td><a href="https://doi.org/10.1016/j.nuclphysa.2012.01.010">https://doi.org/10.1016/j.nuclphysa.2012.01.010</a></td>
+<td>John H. Kelley, E. Kwan, John E. Purcell et al.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Nucl. Phys. A 968, 71 (2017)</td>
+<td><a href="https://doi.org/10.1016/j.nuclphysa.2017.07.015">https://doi.org/10.1016/j.nuclphysa.2017.07.015</a></td>
+<td>John H. Kelley, John E. Purcell, Che Guey Sheu</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Nucl. Data Sheets 198, 1 (2024)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2024.11.001">https://doi.org/10.1016/j.nds.2024.11.001</a></td>
+<td>John H. Kelley, Che Guey Sheu, John E. Purcell</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Nucl. Phys. A 523, 1 (1991)</td>
+<td><a href="https://doi.org/10.1016/0375-9474(91)90446-d">https://doi.org/10.1016/0375-9474(91)90446-d</a></td>
+<td>F. Ajzenberg-Selove</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Nucl. Phys. A 523, 1 (1991)</td>
+<td><a href="https://doi.org/10.1016/0375-9474(91)90446-d">https://doi.org/10.1016/0375-9474(91)90446-d</a></td>
+<td>F. Ajzenberg-Selove</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Nucl. Phys. A 564, 1 (1993)</td>
+<td><a href="https://doi.org/10.1016/0375-9474(93)90073-7">https://doi.org/10.1016/0375-9474(93)90073-7</a></td>
+<td>Donald R. Tilley, Henry R. Weller, C.M. Cheves</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Nucl. Phys. A 564, 1 (1993)</td>
+<td><a href="https://doi.org/10.1016/0375-9474(93)90073-7">https://doi.org/10.1016/0375-9474(93)90073-7</a></td>
+<td>Donald R. Tilley, Henry R. Weller, C.M. Cheves</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Nucl. Phys. A 595, 1 (1995)</td>
+<td><a href="https://doi.org/10.1016/0375-9474(95)00338-1">https://doi.org/10.1016/0375-9474(95)00338-1</a></td>
+<td>Donald R. Tilley, Henry R. Weller, C.M. Cheves et al.</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Nucl. Phys. A 595, 1 (1995)</td>
+<td><a href="https://doi.org/10.1016/0375-9474(95)00338-1">https://doi.org/10.1016/0375-9474(95)00338-1</a></td>
+<td>Donald R. Tilley, Henry R. Weller, C.M. Cheves et al.</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Nucl. Phys. A 636, 249 (1998)</td>
+<td><a href="https://doi.org/10.1016/s0375-9474(98)00129-8">https://doi.org/10.1016/s0375-9474(98)00129-8</a></td>
+<td>Donald R. Tilley, C.M. Cheves, John H. Kelley et al.</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Nucl. Data Sheets 127, 1 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2015.07.001">https://doi.org/10.1016/j.nds.2015.07.001</a></td>
+<td>R.B. Firestone</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Nucl. Data Sheets 127, 69 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2015.07.002">https://doi.org/10.1016/j.nds.2015.07.002</a></td>
+<td>M. Shamsuzzoha Basunia</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Nucl. Data Sheets 171, 1 (2021)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2020.12.001">https://doi.org/10.1016/j.nds.2020.12.001</a></td>
+<td>M. Shamsuzzoha Basunia, Anagha Chakraborty</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Nucl. Data Sheets 186, 2 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.11.002">https://doi.org/10.1016/j.nds.2022.11.002</a></td>
+<td>M. Shamsuzzoha Basunia, Anagha Chakraborty</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Nucl. Data Sheets 205, 1 (2025)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2025.08.001">https://doi.org/10.1016/j.nds.2025.08.001</a></td>
+<td>M. Shamsuzzoha Basunia, Anagha Chakraborty</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Nucl. Data Sheets 134, 1 (2016)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2016.04.001">https://doi.org/10.1016/j.nds.2016.04.001</a></td>
+<td>M. Shamsuzzoha Basunia, Aaron M. Hurst</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Nucl. Data Sheets 112, 1875 (2011)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2011.08.001">https://doi.org/10.1016/j.nds.2011.08.001</a></td>
+<td>M. Shamsuzzoha Basunia</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Nucl. Data Sheets 114, 1189 (2013)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2013.10.001">https://doi.org/10.1016/j.nds.2013.10.001</a></td>
+<td>M. Shamsuzzoha Basunia</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Nucl. Data Sheets 113, 909 (2012)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2012.04.001">https://doi.org/10.1016/j.nds.2012.04.001</a></td>
+<td>M. Shamsuzzoha Basunia</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Nucl. Data Sheets 197, 1 (2024)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2024.08.001">https://doi.org/10.1016/j.nds.2024.08.001</a></td>
+<td>M. Shamsuzzoha Basunia, Anagha Chakraborty</td>
+</tr>
+<tr>
+<td>31</td>
+<td>Nucl. Data Sheets 184, 29 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.08.002">https://doi.org/10.1016/j.nds.2022.08.002</a></td>
+<td>Jun Chen, Balraj Singh</td>
+</tr>
+<tr>
+<td>32</td>
+<td>Nucl. Data Sheets 201, 1 (2025)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2025.03.001">https://doi.org/10.1016/j.nds.2025.03.001</a></td>
+<td>Jun Chen</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Nucl. Data Sheets 199, 1 (2025)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2025.01.001">https://doi.org/10.1016/j.nds.2025.01.001</a></td>
+<td>Jun Chen, Balraj Singh</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Nucl. Data Sheets 113, 1563 (2012)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2012.06.001">https://doi.org/10.1016/j.nds.2012.06.001</a></td>
+<td>Ninel Nica, Balraj Singh</td>
+</tr>
+<tr>
+<td>35</td>
+<td>Nucl. Data Sheets 112, 2715 (2011)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2011.10.001">https://doi.org/10.1016/j.nds.2011.10.001</a></td>
+<td>Jun Chen, John Cameron, Balraj Singh</td>
+</tr>
+<tr>
+<td>36</td>
+<td>Nucl. Data Sheets 113, 1 (2012)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2012.01.001">https://doi.org/10.1016/j.nds.2012.01.001</a></td>
+<td>Ninel Nica, John Cameron, Balraj Singh</td>
+</tr>
+<tr>
+<td>37</td>
+<td>Nucl. Data Sheets 113, 365 (2012)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2012.02.001">https://doi.org/10.1016/j.nds.2012.02.001</a></td>
+<td>John Cameron, Jun Chen, Balraj Singh et al.</td>
+</tr>
+<tr>
+<td>38</td>
+<td>Nucl. Data Sheets 152, 1 (2018)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2018.10.001">https://doi.org/10.1016/j.nds.2018.10.001</a></td>
+<td>Jun Chen</td>
+</tr>
+<tr>
+<td>39</td>
+<td>Nucl. Data Sheets 149, 1 (2018)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2018.03.001">https://doi.org/10.1016/j.nds.2018.03.001</a></td>
+<td>Jun Chen</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Nucl. Data Sheets 140, 1 (2017)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2017.02.001">https://doi.org/10.1016/j.nds.2017.02.001</a></td>
+<td>Jun Chen</td>
+</tr>
+<tr>
+<td>41</td>
+<td>Nucl. Data Sheets 133, 1 (2016)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2016.02.001">https://doi.org/10.1016/j.nds.2016.02.001</a></td>
+<td>Caroline D. Nesaraja, Elizabeth A. McCutchan</td>
+</tr>
+<tr>
+<td>42</td>
+<td>Nucl. Data Sheets 135, 1 (2016)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2016.06.001">https://doi.org/10.1016/j.nds.2016.06.001</a></td>
+<td>Jun Chen, Balraj Singh</td>
+</tr>
+<tr>
+<td>43</td>
+<td>Nucl. Data Sheets 126, 1 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2015.05.001">https://doi.org/10.1016/j.nds.2015.05.001</a></td>
+<td>Balraj Singh, Jun Chen</td>
+</tr>
+<tr>
+<td>44</td>
+<td>Nucl. Data Sheets 190, 1 (2023)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2023.06.001">https://doi.org/10.1016/j.nds.2023.06.001</a></td>
+<td>Jun Chen, Balraj Singh</td>
+</tr>
+<tr>
+<td>45</td>
+<td>Nucl. Data Sheets 109, 171 (2008)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2007.12.002">https://doi.org/10.1016/j.nds.2007.12.002</a></td>
+<td>Thomas W. Burrows</td>
+</tr>
+<tr>
+<td>46</td>
+<td>Nucl. Data Sheets 91, 1 (2000)</td>
+<td><a href="https://doi.org/10.1006/ndsh.2000.0014">https://doi.org/10.1006/ndsh.2000.0014</a></td>
+<td>Sheng-Chun Wu</td>
+</tr>
+<tr>
+<td>47</td>
+<td>Nucl. Data Sheets 203, 1 (2025)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2025.06.001">https://doi.org/10.1016/j.nds.2025.06.001</a></td>
+<td>S. Ota, Elizabeth A. McCutchan</td>
+</tr>
+<tr>
+<td>48</td>
+<td>Nucl. Data Sheets 179, 1 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2021.12.001">https://doi.org/10.1016/j.nds.2021.12.001</a></td>
+<td>Jun Chen</td>
+</tr>
+<tr>
+<td>49</td>
+<td>Nucl. Data Sheets 109, 1879 (2008)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2008.07.001">https://doi.org/10.1016/j.nds.2008.07.001</a></td>
+<td>Thomas W. Burrows</td>
+</tr>
+<tr>
+<td>50</td>
+<td>Nucl. Data Sheets 157, 1 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.04.001">https://doi.org/10.1016/j.nds.2019.04.001</a></td>
+<td>Jun Chen, Balraj Singh</td>
+</tr>
+<tr>
+<td>51</td>
+<td>Nucl. Data Sheets 144, 1 (2017)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2017.08.002">https://doi.org/10.1016/j.nds.2017.08.002</a></td>
+<td>Jimin Wang, Xiaolong Huang</td>
+</tr>
+<tr>
+<td>52</td>
+<td>Nucl. Data Sheets 128, 185 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2015.08.003">https://doi.org/10.1016/j.nds.2015.08.003</a></td>
+<td>Yang Dong, Huo Junde</td>
+</tr>
+<tr>
+<td>53</td>
+<td>Nucl. Data Sheets 110, 2689 (2009)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2009.10.001">https://doi.org/10.1016/j.nds.2009.10.001</a></td>
+<td>Huo Junde</td>
+</tr>
+<tr>
+<td>54</td>
+<td>Nucl. Data Sheets 121, 1 (2014)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2014.09.001">https://doi.org/10.1016/j.nds.2014.09.001</a></td>
+<td>Yang Dong, Huo Junde</td>
+</tr>
+<tr>
+<td>55</td>
+<td>Nucl. Data Sheets 109, 787 (2008)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2008.03.001">https://doi.org/10.1016/j.nds.2008.03.001</a></td>
+<td>Huo Junde</td>
+</tr>
+<tr>
+<td>56</td>
+<td>Nucl. Data Sheets 112, 1513 (2011)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2011.04.004">https://doi.org/10.1016/j.nds.2011.04.004</a></td>
+<td>Huo Junde, Huo Su, Yang Dong</td>
+</tr>
+<tr>
+<td>57</td>
+<td>Nucl. Data Sheets 85, 415 (1998)</td>
+<td><a href="https://doi.org/10.1006/ndsh.1998.0021">https://doi.org/10.1006/ndsh.1998.0021</a></td>
+<td>Megh Raj Bhat</td>
+</tr>
+<tr>
+<td>58</td>
+<td>Nucl. Data Sheets 111, 897 (2010)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2010.03.003">https://doi.org/10.1016/j.nds.2010.03.003</a></td>
+<td>Caroline D. Nesaraja, Scott D. Geraedts, Balraj Singh</td>
+</tr>
+<tr>
+<td>59</td>
+<td>Nucl. Data Sheets 151, 1 (2018)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2018.08.001">https://doi.org/10.1016/j.nds.2018.08.001</a></td>
+<td>M. Shamsuzzoha Basunia</td>
+</tr>
+<tr>
+<td>60</td>
+<td>Nucl. Data Sheets 114, 1849 (2013)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2013.11.002">https://doi.org/10.1016/j.nds.2013.11.002</a></td>
+<td>Edgardo Browne, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>61</td>
+<td>Nucl. Data Sheets 125, 1 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2015.02.001">https://doi.org/10.1016/j.nds.2015.02.001</a></td>
+<td>Kazimierz Zuber, Balraj Singh</td>
+</tr>
+<tr>
+<td>62</td>
+<td>Nucl. Data Sheets 204, 1 (2025)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2025.07.001">https://doi.org/10.1016/j.nds.2025.07.001</a></td>
+<td>Balraj Singh, Huang Xiaolong, Wang Xianghan</td>
+</tr>
+<tr>
+<td>63</td>
+<td>Nucl. Data Sheets 196, 17 (2024)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2024.06.003">https://doi.org/10.1016/j.nds.2024.06.003</a></td>
+<td>Jun Chen</td>
+</tr>
+<tr>
+<td>64</td>
+<td>Nucl. Data Sheets 178, 41 (2021)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2021.11.002">https://doi.org/10.1016/j.nds.2021.11.002</a></td>
+<td>Balraj Singh, Jun Chen</td>
+</tr>
+<tr>
+<td>65</td>
+<td>Nucl. Data Sheets 202, 59 (2025)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2025.04.004">https://doi.org/10.1016/j.nds.2025.04.004</a></td>
+<td>Jun Chen</td>
+</tr>
+<tr>
+<td>66</td>
+<td>Nucl. Data Sheets 111, 1093 (2010)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2010.03.004">https://doi.org/10.1016/j.nds.2010.03.004</a></td>
+<td>Edgardo Browne, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>67</td>
+<td>Nucl. Data Sheets 106, 159 (2005)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2005.10.006">https://doi.org/10.1016/j.nds.2005.10.006</a></td>
+<td>Huo Junde, Huang Xiaolong, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>68</td>
+<td>Nucl. Data Sheets 113, 1735 (2012)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2012.06.002">https://doi.org/10.1016/j.nds.2012.06.002</a></td>
+<td>Elizabeth A. McCutchan</td>
+</tr>
+<tr>
+<td>69</td>
+<td>Nucl. Data Sheets 207, 1 (2026)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2025.12.001">https://doi.org/10.1016/j.nds.2025.12.001</a></td>
+<td>Caroline D. Nesaraja</td>
+</tr>
+<tr>
+<td>70</td>
+<td>Nucl. Data Sheets 136, 1 (2016)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2016.08.001">https://doi.org/10.1016/j.nds.2016.08.001</a></td>
+<td>Gürsel Gürdal, Elizabeth A. McCutchan</td>
+</tr>
+<tr>
+<td>71</td>
+<td>Nucl. Data Sheets 188, 1 (2023)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2023.02.001">https://doi.org/10.1016/j.nds.2023.02.001</a></td>
+<td>Balraj Singh, Jun Chen</td>
+</tr>
+<tr>
+<td>72</td>
+<td>Nucl. Data Sheets 111, 1 (2010)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2009.12.001">https://doi.org/10.1016/j.nds.2009.12.001</a></td>
+<td>Daniel Abriola, Alejandro A. Sonzogni</td>
+</tr>
+<tr>
+<td>73</td>
+<td>Nucl. Data Sheets 158, 1 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.006">https://doi.org/10.1016/j.nds.2019.02.006</a></td>
+<td>Balraj Singh, Jun Chen</td>
+</tr>
+<tr>
+<td>74</td>
+<td>Nucl. Data Sheets 107, 1923 (2006)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2006.05.006">https://doi.org/10.1016/j.nds.2006.05.006</a></td>
+<td>Balraj Singh, Ameenah R. Farhan</td>
+</tr>
+<tr>
+<td>75</td>
+<td>Nucl. Data Sheets 114, 841 (2013)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2013.08.001">https://doi.org/10.1016/j.nds.2013.08.001</a></td>
+<td>Alexandru Negret, Balraj Singh</td>
+</tr>
+<tr>
+<td>76</td>
+<td>Nucl. Data Sheets 194, 3 (2024)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2024.02.002">https://doi.org/10.1016/j.nds.2024.02.002</a></td>
+<td>Balraj Singh, Jun Chen, Ameenah R. Farhan</td>
+</tr>
+<tr>
+<td>77</td>
+<td>Unpublished ENSDF</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>78</td>
+<td>Nucl. Data Sheets 110, 1917 (2009)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2009.08.001">https://doi.org/10.1016/j.nds.2009.08.001</a></td>
+<td>Ameenah R. Farhan, Balraj Singh</td>
+</tr>
+<tr>
+<td>79</td>
+<td>Nucl. Data Sheets 135, 193 (2016)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2016.06.002">https://doi.org/10.1016/j.nds.2016.06.002</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>80</td>
+<td>Nucl. Data Sheets 105, 223 (2005)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2005.06.002">https://doi.org/10.1016/j.nds.2005.06.002</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>81</td>
+<td>Nucl. Data Sheets 199, 271 (2025)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2025.01.002">https://doi.org/10.1016/j.nds.2025.01.002</a></td>
+<td>M. Shamsuzzoha Basunia</td>
+</tr>
+<tr>
+<td>82</td>
+<td>Nucl. Data Sheets 157, 260 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.04.002">https://doi.org/10.1016/j.nds.2019.04.002</a></td>
+<td>Jagdish K. Tuli, Edgardo Browne</td>
+</tr>
+<tr>
+<td>83</td>
+<td>Nucl. Data Sheets 125, 201 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2015.02.002">https://doi.org/10.1016/j.nds.2015.02.002</a></td>
+<td>Elizabeth A. McCutchan</td>
+</tr>
+<tr>
+<td>84</td>
+<td>Nucl. Data Sheets 110, 2815 (2009)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2009.10.002">https://doi.org/10.1016/j.nds.2009.10.002</a></td>
+<td>Daniel Abriola, Melih Bostan, Sefa Erturk et al.</td>
+</tr>
+<tr>
+<td>85</td>
+<td>Nucl. Data Sheets 116, 1 (2014)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2014.01.001">https://doi.org/10.1016/j.nds.2014.01.001</a></td>
+<td>Balraj Singh, Jun Chen</td>
+</tr>
+<tr>
+<td>86</td>
+<td>Nucl. Data Sheets 203, 283 (2025)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2025.06.002">https://doi.org/10.1016/j.nds.2025.06.002</a></td>
+<td>Alexandru Negret, Balraj Singh</td>
+</tr>
+<tr>
+<td>87</td>
+<td>Nucl. Data Sheets 129, 1 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2015.09.001">https://doi.org/10.1016/j.nds.2015.09.001</a></td>
+<td>Timothy D. Johnson, W.D. Kulp</td>
+</tr>
+<tr>
+<td>88</td>
+<td>Nucl. Data Sheets 115, 135 (2014)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2013.12.002">https://doi.org/10.1016/j.nds.2013.12.002</a></td>
+<td>Elizabeth A. McCutchan, Alejandro A. Sonzogni</td>
+</tr>
+<tr>
+<td>89</td>
+<td>Nucl. Data Sheets 114, 1 (2013)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2013.01.001">https://doi.org/10.1016/j.nds.2013.01.001</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>90</td>
+<td>Nucl. Data Sheets 165, 1 (2020)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2020.04.001">https://doi.org/10.1016/j.nds.2020.04.001</a></td>
+<td>Swapan Kumar Basu, Elizabeth A. McCutchan</td>
+</tr>
+<tr>
+<td>91</td>
+<td>Nucl. Data Sheets 114, 1293 (2013)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2013.10.002">https://doi.org/10.1016/j.nds.2013.10.002</a></td>
+<td>Coral M. Baglin</td>
+</tr>
+<tr>
+<td>92</td>
+<td>Nucl. Data Sheets 113, 2187 (2012)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2012.10.001">https://doi.org/10.1016/j.nds.2012.10.001</a></td>
+<td>Coral M. Baglin</td>
+</tr>
+<tr>
+<td>93</td>
+<td>Nucl. Data Sheets 112, 1163 (2011)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2011.04.001">https://doi.org/10.1016/j.nds.2011.04.001</a></td>
+<td>Coral M. Baglin</td>
+</tr>
+<tr>
+<td>94</td>
+<td>Nucl. Data Sheets 107, 2423 (2006)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2006.08.001">https://doi.org/10.1016/j.nds.2006.08.001</a></td>
+<td>Daniel Abriola, Alejandro A. Sonzogni</td>
+</tr>
+<tr>
+<td>95</td>
+<td>Nucl. Data Sheets 111, 2555 (2010)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2010.10.001">https://doi.org/10.1016/j.nds.2010.10.001</a></td>
+<td>Swapan Kumar Basu, Gopal Mukherjee, Alejandro A. Sonzogni</td>
+</tr>
+<tr>
+<td>96</td>
+<td>Nucl. Data Sheets 109, 2501 (2008)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2008.10.002">https://doi.org/10.1016/j.nds.2008.10.002</a></td>
+<td>Daniel Abriola, Alejandro A. Sonzogni</td>
+</tr>
+<tr>
+<td>97</td>
+<td>Nucl. Data Sheets 111, 525 (2010)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2010.03.001">https://doi.org/10.1016/j.nds.2010.03.001</a></td>
+<td>Ninel Nica</td>
+</tr>
+<tr>
+<td>98</td>
+<td>Nucl. Data Sheets 164, 1 (2020)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2020.01.001">https://doi.org/10.1016/j.nds.2020.01.001</a></td>
+<td>Jun Chen, Balraj Singh</td>
+</tr>
+<tr>
+<td>99</td>
+<td>Nucl. Data Sheets 145, 25 (2017)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2017.09.002">https://doi.org/10.1016/j.nds.2017.09.002</a></td>
+<td>Edgardo Browne, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>100</td>
+<td>Nucl. Data Sheets 172, 1 (2021)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2021.02.001">https://doi.org/10.1016/j.nds.2021.02.001</a></td>
+<td>Balraj Singh, Jun Chen</td>
+</tr>
+<tr>
+<td>101</td>
+<td>Unpublished ENSDF</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>102</td>
+<td>Nucl. Data Sheets 110, 1745 (2009)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2009.06.002">https://doi.org/10.1016/j.nds.2009.06.002</a></td>
+<td>Dirk De Frenne</td>
+</tr>
+<tr>
+<td>103</td>
+<td>Nucl. Data Sheets 110, 2081 (2009)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2009.08.002">https://doi.org/10.1016/j.nds.2009.08.002</a></td>
+<td>Dirk De Frenne</td>
+</tr>
+<tr>
+<td>104</td>
+<td>Nucl. Data Sheets 108, 2035 (2007)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2007.09.001">https://doi.org/10.1016/j.nds.2007.09.001</a></td>
+<td>Jean Blachot</td>
+</tr>
+<tr>
+<td>105</td>
+<td>Nucl. Data Sheets 161, 1 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.11.001">https://doi.org/10.1016/j.nds.2019.11.001</a></td>
+<td>Stoycho Lalkovski, Janos Timar, Zoltan Elekes</td>
+</tr>
+<tr>
+<td>106</td>
+<td>Nucl. Data Sheets 109, 943 (2008)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2008.03.002">https://doi.org/10.1016/j.nds.2008.03.002</a></td>
+<td>Dirk De Frenne, Alexandru Negret</td>
+</tr>
+<tr>
+<td>107</td>
+<td>Nucl. Data Sheets 109, 1383 (2008)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2008.05.001">https://doi.org/10.1016/j.nds.2008.05.001</a></td>
+<td>Jean Blachot</td>
+</tr>
+<tr>
+<td>108</td>
+<td>Unpublished ENSDF</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>109</td>
+<td>Nucl. Data Sheets 137, 1 (2016)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2016.09.001">https://doi.org/10.1016/j.nds.2016.09.001</a></td>
+<td>S. Kumar, Jun Chen, Filip G. Kondev</td>
+</tr>
+<tr>
+<td>110</td>
+<td>Nucl. Data Sheets 113, 1315 (2012)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2012.05.002">https://doi.org/10.1016/j.nds.2012.05.002</a></td>
+<td>Gürsel Gürdal, Filip G. Kondev</td>
+</tr>
+<tr>
+<td>111</td>
+<td>Nucl. Data Sheets 110, 1239 (2009)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2009.04.002">https://doi.org/10.1016/j.nds.2009.04.002</a></td>
+<td>Jean Blachot</td>
+</tr>
+<tr>
+<td>112</td>
+<td>Nucl. Data Sheets 124, 157 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2014.12.046">https://doi.org/10.1016/j.nds.2014.12.046</a></td>
+<td>Stoycho Lalkovski, Filip G. Kondev</td>
+</tr>
+<tr>
+<td>113</td>
+<td>Nucl. Data Sheets 111, 1471 (2010)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2010.05.001">https://doi.org/10.1016/j.nds.2010.05.001</a></td>
+<td>Jean Blachot</td>
+</tr>
+<tr>
+<td>114</td>
+<td>Nucl. Data Sheets 113, 515 (2012)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2012.02.002">https://doi.org/10.1016/j.nds.2012.02.002</a></td>
+<td>Jean Blachot</td>
+</tr>
+<tr>
+<td>115</td>
+<td>Nucl. Data Sheets 113, 2391 (2012)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2012.10.002">https://doi.org/10.1016/j.nds.2012.10.002</a></td>
+<td>Jean Blachot</td>
+</tr>
+<tr>
+<td>116</td>
+<td>Nucl. Data Sheets 111, 717 (2010)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2010.03.002">https://doi.org/10.1016/j.nds.2010.03.002</a></td>
+<td>Jean Blachot</td>
+</tr>
+<tr>
+<td>117</td>
+<td>Unpublished ENSDF</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>118</td>
+<td>Nucl. Data Sheets 75, 99 (1995)</td>
+<td><a href="https://doi.org/10.1006/ndsh.1995.1022">https://doi.org/10.1006/ndsh.1995.1022</a></td>
+<td>Kazuaki Kitao</td>
+</tr>
+<tr>
+<td>119</td>
+<td>Nucl. Data Sheets 110, 2945 (2009)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2009.10.003">https://doi.org/10.1016/j.nds.2009.10.003</a></td>
+<td>D.M. Symochko, Edgardo Browne, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>120</td>
+<td>Nucl. Data Sheets 96, 241 (2002)</td>
+<td><a href="https://doi.org/10.1006/ndsh.2002.0012">https://doi.org/10.1006/ndsh.2002.0012</a></td>
+<td>Kazuaki Kitao, Yasuhisa Tendow, Atsushi Hashizume</td>
+</tr>
+<tr>
+<td>121</td>
+<td>Nucl. Data Sheets 111, 1619 (2010)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2010.05.002">https://doi.org/10.1016/j.nds.2010.05.002</a></td>
+<td>Susumu Ohya</td>
+</tr>
+<tr>
+<td>122</td>
+<td>Nucl. Data Sheets 108, 455 (2007)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2007.02.001">https://doi.org/10.1016/j.nds.2007.02.001</a></td>
+<td>Tetsuro Tamura</td>
+</tr>
+<tr>
+<td>123</td>
+<td>Nucl. Data Sheets 174, 1 (2021)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2021.05.001">https://doi.org/10.1016/j.nds.2021.05.001</a></td>
+<td>Jun Chen</td>
+</tr>
+<tr>
+<td>124</td>
+<td>Nucl. Data Sheets 109, 1655 (2008)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2008.06.001">https://doi.org/10.1016/j.nds.2008.06.001</a></td>
+<td>Jun-ichi Katakura, Zhendong Wu</td>
+</tr>
+<tr>
+<td>125</td>
+<td>Nucl. Data Sheets 112, 495 (2011)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2011.02.001">https://doi.org/10.1016/j.nds.2011.02.001</a></td>
+<td>Jun-ichi Katakura</td>
+</tr>
+<tr>
+<td>126</td>
+<td>Nucl. Data Sheets 180, 1 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.02.001">https://doi.org/10.1016/j.nds.2022.02.001</a></td>
+<td>Hisashi Iimura, Jun-ichi Katakura, Susumu Ohya</td>
+</tr>
+<tr>
+<td>127</td>
+<td>Nucl. Data Sheets 112, 1647 (2011)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2011.06.001">https://doi.org/10.1016/j.nds.2011.06.001</a></td>
+<td>Atsushi Hashizume</td>
+</tr>
+<tr>
+<td>128</td>
+<td>Nucl. Data Sheets 129, 191 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2015.09.002">https://doi.org/10.1016/j.nds.2015.09.002</a></td>
+<td>Zoltan Elekes, Janos Timar</td>
+</tr>
+<tr>
+<td>129</td>
+<td>Nucl. Data Sheets 121, 143 (2014)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2014.09.002">https://doi.org/10.1016/j.nds.2014.09.002</a></td>
+<td>Janos Timar, Zoltan Elekes, Balraj Singh</td>
+</tr>
+<tr>
+<td>130</td>
+<td>Nucl. Data Sheets 93, 33 (2001)</td>
+<td><a href="https://doi.org/10.1006/ndsh.2001.0012">https://doi.org/10.1006/ndsh.2001.0012</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>131</td>
+<td>Nucl. Data Sheets 107, 2715 (2006)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2006.10.001">https://doi.org/10.1016/j.nds.2006.10.001</a></td>
+<td>Yuri L. Khazov, Igor Mitropolsky, Alexander A. Rodionov</td>
+</tr>
+<tr>
+<td>132</td>
+<td>Nucl. Data Sheets 104, 497 (2005)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2005.03.001">https://doi.org/10.1016/j.nds.2005.03.001</a></td>
+<td>Yuri L. Khazov, Alexander A. Rodionov, S. Sakharov et al.</td>
+</tr>
+<tr>
+<td>133</td>
+<td>Nucl. Data Sheets 112, 855 (2011)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2011.03.001">https://doi.org/10.1016/j.nds.2011.03.001</a></td>
+<td>Yuri L. Khazov, Alexander A. Rodionov, Filip G. Kondev</td>
+</tr>
+<tr>
+<td>134</td>
+<td>Nucl. Data Sheets 103, 1 (2004)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2004.11.001">https://doi.org/10.1016/j.nds.2004.11.001</a></td>
+<td>Alejandro A. Sonzogni</td>
+</tr>
+<tr>
+<td>135</td>
+<td>Nucl. Data Sheets 109, 517 (2008)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2008.02.001">https://doi.org/10.1016/j.nds.2008.02.001</a></td>
+<td>Balraj Singh, Alexander A. Rodionov, Yuri L. Khazov</td>
+</tr>
+<tr>
+<td>136</td>
+<td>Nucl. Data Sheets 152, 331 (2018)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2018.10.002">https://doi.org/10.1016/j.nds.2018.10.002</a></td>
+<td>Elizabeth A. McCutchan</td>
+</tr>
+<tr>
+<td>137</td>
+<td>Nucl. Data Sheets 108, 2173 (2007)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2007.09.002">https://doi.org/10.1016/j.nds.2007.09.002</a></td>
+<td>Edgardo Browne, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>138</td>
+<td>Nucl. Data Sheets 146, 1 (2017)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2017.11.001">https://doi.org/10.1016/j.nds.2017.11.001</a></td>
+<td>Jun Chen</td>
+</tr>
+<tr>
+<td>139</td>
+<td>Nucl. Data Sheets 138, 1 (2016)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2016.11.001">https://doi.org/10.1016/j.nds.2016.11.001</a></td>
+<td>Paresh K. Joshi, Balraj Singh, Sukhjeet Singh, Ashok K. Jain</td>
+</tr>
+<tr>
+<td>140</td>
+<td>Nucl. Data Sheets 154, 1 (2018)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2018.11.002">https://doi.org/10.1016/j.nds.2018.11.002</a></td>
+<td>Ninel Nica</td>
+</tr>
+<tr>
+<td>141</td>
+<td>Nucl. Data Sheets 122, 1 (2014)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2014.11.001">https://doi.org/10.1016/j.nds.2014.11.001</a></td>
+<td>Ninel Nica</td>
+</tr>
+<tr>
+<td>142</td>
+<td>Nucl. Data Sheets 112, 1949 (2011)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2011.08.002">https://doi.org/10.1016/j.nds.2011.08.002</a></td>
+<td>Timothy D. Johnson, D.M. Symochko, Manssour Fadil et al.</td>
+</tr>
+<tr>
+<td>143</td>
+<td>Nucl. Data Sheets 113, 715 (2012)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2012.02.003">https://doi.org/10.1016/j.nds.2012.02.003</a></td>
+<td>Edgardo Browne, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>144</td>
+<td>Nucl. Data Sheets 93, 599 (2001)</td>
+<td><a href="https://doi.org/10.1006/ndsh.2001.0015">https://doi.org/10.1006/ndsh.2001.0015</a></td>
+<td>Alejandro A. Sonzogni</td>
+</tr>
+<tr>
+<td>145</td>
+<td>Nucl. Data Sheets 110, 507 (2009)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2009.02.001">https://doi.org/10.1016/j.nds.2009.02.001</a></td>
+<td>Edgardo Browne, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>146</td>
+<td>Nucl. Data Sheets 136, 163 (2016)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2016.08.002">https://doi.org/10.1016/j.nds.2016.08.002</a></td>
+<td>Yuri L. Khazov, Alexander A. Rodionov, Gennady Shulyak</td>
+</tr>
+<tr>
+<td>147</td>
+<td>Nucl. Data Sheets 181, 1 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.03.001">https://doi.org/10.1016/j.nds.2022.03.001</a></td>
+<td>Ninel Nica, Balraj Singh</td>
+</tr>
+<tr>
+<td>148</td>
+<td>Nucl. Data Sheets 208, 1 (2026)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2026.01.001">https://doi.org/10.1016/j.nds.2026.01.001</a></td>
+<td>Ninel Nica</td>
+</tr>
+<tr>
+<td>149</td>
+<td>Nucl. Data Sheets 185, 2 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.10.001">https://doi.org/10.1016/j.nds.2022.10.001</a></td>
+<td>Balraj Singh, Jun Chen</td>
+</tr>
+<tr>
+<td>150</td>
+<td>Nucl. Data Sheets 114, 435 (2013)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2013.04.001">https://doi.org/10.1016/j.nds.2013.04.001</a></td>
+<td>Swapan Kumar Basu, Alejandro A. Sonzogni</td>
+</tr>
+<tr>
+<td>151</td>
+<td>Nucl. Data Sheets 110, 1 (2009)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2008.11.035">https://doi.org/10.1016/j.nds.2008.11.035</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>152</td>
+<td>Nucl. Data Sheets 114, 1497 (2013)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2013.11.001">https://doi.org/10.1016/j.nds.2013.11.001</a></td>
+<td>Marthena J. Martin</td>
+</tr>
+<tr>
+<td>153</td>
+<td>Nucl. Data Sheets 170, 1 (2020)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2020.11.001">https://doi.org/10.1016/j.nds.2020.11.001</a></td>
+<td>Ninel Nica</td>
+</tr>
+<tr>
+<td>154</td>
+<td>Nucl. Data Sheets 200, 2 (2025)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2025.02.002">https://doi.org/10.1016/j.nds.2025.02.002</a></td>
+<td>Ninel Nica</td>
+</tr>
+<tr>
+<td>155</td>
+<td>Nucl. Data Sheets 160, 1 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.100523">https://doi.org/10.1016/j.nds.2019.100523</a></td>
+<td>Ninel Nica</td>
+</tr>
+<tr>
+<td>156</td>
+<td>Nucl. Data Sheets 113, 2537 (2012)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2012.10.003">https://doi.org/10.1016/j.nds.2012.10.003</a></td>
+<td>Carl W. Reich</td>
+</tr>
+<tr>
+<td>157</td>
+<td>Nucl. Data Sheets 132, 1 (2016)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2016.01.001">https://doi.org/10.1016/j.nds.2016.01.001</a></td>
+<td>Ninel Nica</td>
+</tr>
+<tr>
+<td>158</td>
+<td>Nucl. Data Sheets 141, 1 (2017)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2017.03.001">https://doi.org/10.1016/j.nds.2017.03.001</a></td>
+<td>Ninel Nica</td>
+</tr>
+<tr>
+<td>159</td>
+<td>Nucl. Data Sheets 113, 157 (2012)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2012.01.002">https://doi.org/10.1016/j.nds.2012.01.002</a></td>
+<td>Carl W. Reich</td>
+</tr>
+<tr>
+<td>160</td>
+<td>Nucl. Data Sheets 176, 1 (2021)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2021.08.001">https://doi.org/10.1016/j.nds.2021.08.001</a></td>
+<td>Ninel Nica</td>
+</tr>
+<tr>
+<td>161</td>
+<td>Nucl. Data Sheets 112, 2497 (2011)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2011.09.001">https://doi.org/10.1016/j.nds.2011.09.001</a></td>
+<td>Carl W. Reich</td>
+</tr>
+<tr>
+<td>162</td>
+<td>Nucl. Data Sheets 195, 1 (2024)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2024.04.001">https://doi.org/10.1016/j.nds.2024.04.001</a></td>
+<td>Ninel Nica</td>
+</tr>
+<tr>
+<td>163</td>
+<td>Nucl. Data Sheets 111, 1211 (2010)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2010.04.001">https://doi.org/10.1016/j.nds.2010.04.001</a></td>
+<td>Carl W. Reich, Balraj Singh</td>
+</tr>
+<tr>
+<td>164</td>
+<td>Nucl. Data Sheets 147, 1 (2018)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2018.01.001">https://doi.org/10.1016/j.nds.2018.01.001</a></td>
+<td>Balraj Singh, Jun Chen</td>
+</tr>
+<tr>
+<td>165</td>
+<td>Unpublished ENSDF</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>166</td>
+<td>Nucl. Data Sheets 109, 1103 (2008)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2008.04.001">https://doi.org/10.1016/j.nds.2008.04.001</a></td>
+<td>Coral M. Baglin</td>
+</tr>
+<tr>
+<td>167</td>
+<td>Nucl. Data Sheets 191, 1 (2023)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2023.08.001">https://doi.org/10.1016/j.nds.2023.08.001</a></td>
+<td>Balraj Singh, Jun Chen</td>
+</tr>
+<tr>
+<td>168</td>
+<td>Nucl. Data Sheets 111, 1807 (2010)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2010.07.001">https://doi.org/10.1016/j.nds.2010.07.001</a></td>
+<td>Coral M. Baglin</td>
+</tr>
+<tr>
+<td>169</td>
+<td>Nucl. Data Sheets 109, 2033 (2008)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2008.08.001">https://doi.org/10.1016/j.nds.2008.08.001</a></td>
+<td>Coral M. Baglin</td>
+</tr>
+<tr>
+<td>170</td>
+<td>Nucl. Data Sheets 153, 1 (2018)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2018.11.001">https://doi.org/10.1016/j.nds.2018.11.001</a></td>
+<td>Coral M. Baglin, Elizabeth A. McCutchan, M. Shamsuzzoha Basunia et al.</td>
+</tr>
+<tr>
+<td>171</td>
+<td>Nucl. Data Sheets 151, 334 (2018)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2018.08.002">https://doi.org/10.1016/j.nds.2018.08.002</a></td>
+<td>Coral M. Baglin, Elizabeth A. McCutchan</td>
+</tr>
+<tr>
+<td>172</td>
+<td>Nucl. Data Sheets 75, 199 (1995)</td>
+<td><a href="https://doi.org/10.1006/ndsh.1995.1025">https://doi.org/10.1006/ndsh.1995.1025</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>173</td>
+<td>Nucl. Data Sheets 75, 377 (1995)</td>
+<td><a href="https://doi.org/10.1006/ndsh.1995.1026">https://doi.org/10.1006/ndsh.1995.1026</a></td>
+<td>Virginia S. Shirley</td>
+</tr>
+<tr>
+<td>174</td>
+<td>Nucl. Data Sheets 87, 15 (1999)</td>
+<td><a href="https://doi.org/10.1006/ndsh.1999.0015">https://doi.org/10.1006/ndsh.1999.0015</a></td>
+<td>Edgardo Browne, Huo Junde</td>
+</tr>
+<tr>
+<td>175</td>
+<td>Nucl. Data Sheets 206, 1 (2025)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2025.11.001">https://doi.org/10.1016/j.nds.2025.11.001</a></td>
+<td>Jin Wu</td>
+</tr>
+<tr>
+<td>176</td>
+<td>Nucl. Data Sheets 107, 791 (2006)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2006.03.001">https://doi.org/10.1016/j.nds.2006.03.001</a></td>
+<td>M. Shamsuzzoha Basunia</td>
+</tr>
+<tr>
+<td>177</td>
+<td>Nucl. Data Sheets 159, 1 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.100514">https://doi.org/10.1016/j.nds.2019.100514</a></td>
+<td>Filip G. Kondev</td>
+</tr>
+<tr>
+<td>178</td>
+<td>Nucl. Data Sheets 110, 1473 (2009)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2009.05.002">https://doi.org/10.1016/j.nds.2009.05.002</a></td>
+<td>Eduardo Achterberg, Omar A. Capurro, Guillermo V. Martí</td>
+</tr>
+<tr>
+<td>179</td>
+<td>Nucl. Data Sheets 110, 265 (2009)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2009.01.001">https://doi.org/10.1016/j.nds.2009.01.001</a></td>
+<td>Coral M. Baglin</td>
+</tr>
+<tr>
+<td>180</td>
+<td>Nucl. Data Sheets 126, 151 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2015.05.002">https://doi.org/10.1016/j.nds.2015.05.002</a></td>
+<td>Elizabeth A. McCutchan</td>
+</tr>
+<tr>
+<td>181</td>
+<td>Nucl. Data Sheets 106, 367 (2005)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2005.11.001">https://doi.org/10.1016/j.nds.2005.11.001</a></td>
+<td>Sheng-Chun Wu</td>
+</tr>
+<tr>
+<td>182</td>
+<td>Nucl. Data Sheets 130, 21 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2015.11.002">https://doi.org/10.1016/j.nds.2015.11.002</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>183</td>
+<td>Nucl. Data Sheets 134, 149 (2016)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2016.04.002">https://doi.org/10.1016/j.nds.2016.04.002</a></td>
+<td>Coral M. Baglin</td>
+</tr>
+<tr>
+<td>184</td>
+<td>Nucl. Data Sheets 111, 275 (2010)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2010.01.001">https://doi.org/10.1016/j.nds.2010.01.001</a></td>
+<td>Coral M. Baglin</td>
+</tr>
+<tr>
+<td>185</td>
+<td>Nucl. Data Sheets 106, 619 (2005)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2005.11.002">https://doi.org/10.1016/j.nds.2005.11.002</a></td>
+<td>Sheng-Chun Wu</td>
+</tr>
+<tr>
+<td>186</td>
+<td>Nucl. Data Sheets 183, 1 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.06.001">https://doi.org/10.1016/j.nds.2022.06.001</a></td>
+<td>John C. Batchelder, Aaron M. Hurst, M. Shamsuzzoha Basunia</td>
+</tr>
+<tr>
+<td>187</td>
+<td>Nucl. Data Sheets 110, 999 (2009)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2009.04.001">https://doi.org/10.1016/j.nds.2009.04.001</a></td>
+<td>M. Shamsuzzoha Basunia</td>
+</tr>
+<tr>
+<td>188</td>
+<td>Nucl. Data Sheets 150, 1 (2018)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2018.05.001">https://doi.org/10.1016/j.nds.2018.05.001</a></td>
+<td>Filip G. Kondev, Sakari Juutinen, D.J. Hartley</td>
+</tr>
+<tr>
+<td>189</td>
+<td>Nucl. Data Sheets 142, 1 (2017)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2017.04.001">https://doi.org/10.1016/j.nds.2017.04.001</a></td>
+<td>Timothy D. Johnson, Balraj Singh</td>
+</tr>
+<tr>
+<td>190</td>
+<td>Nucl. Data Sheets 169, 1 (2020)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2020.10.001">https://doi.org/10.1016/j.nds.2020.10.001</a></td>
+<td>Balraj Singh, Jun Chen</td>
+</tr>
+<tr>
+<td>191</td>
+<td>Nucl. Data Sheets 195, 368 (2024)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2024.04.002">https://doi.org/10.1016/j.nds.2024.04.002</a></td>
+<td>M. Shamsuzzoha Basunia</td>
+</tr>
+<tr>
+<td>192</td>
+<td>Nucl. Data Sheets 113, 1871 (2012)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2012.08.001">https://doi.org/10.1016/j.nds.2012.08.001</a></td>
+<td>Coral M. Baglin</td>
+</tr>
+<tr>
+<td>193</td>
+<td>Nucl. Data Sheets 143, 1 (2017)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2017.08.001">https://doi.org/10.1016/j.nds.2017.08.001</a></td>
+<td>M. Shamsuzzoha Basunia</td>
+</tr>
+<tr>
+<td>194</td>
+<td>Nucl. Data Sheets 177, 1 (2021)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2021.09.001">https://doi.org/10.1016/j.nds.2021.09.001</a></td>
+<td>Jun Chen, Balraj Singh</td>
+</tr>
+<tr>
+<td>195</td>
+<td>Nucl. Data Sheets 121, 395 (2014)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2014.09.003">https://doi.org/10.1016/j.nds.2014.09.003</a></td>
+<td>Xiaolong Huang, Mengxiao Kang</td>
+</tr>
+<tr>
+<td>196</td>
+<td>Nucl. Data Sheets 108, 1093 (2007)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2007.05.001">https://doi.org/10.1016/j.nds.2007.05.001</a></td>
+<td>Huang Xiaolong</td>
+</tr>
+<tr>
+<td>197</td>
+<td>Nucl. Data Sheets 104, 283 (2005)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2005.01.001">https://doi.org/10.1016/j.nds.2005.01.001</a></td>
+<td>Xiaolong Huang, Chunmei Zhou</td>
+</tr>
+<tr>
+<td>198</td>
+<td>Nucl. Data Sheets 133, 221 (2016)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2016.02.002">https://doi.org/10.1016/j.nds.2016.02.002</a></td>
+<td>Xiaolong Huang, Mengxiao Kang</td>
+</tr>
+<tr>
+<td>199</td>
+<td>Nucl. Data Sheets 108, 79 (2007)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2007.01.001">https://doi.org/10.1016/j.nds.2007.01.001</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>200</td>
+<td>Nucl. Data Sheets 192, 1 (2023)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2023.10.001">https://doi.org/10.1016/j.nds.2023.10.001</a></td>
+<td>Filip G. Kondev</td>
+</tr>
+<tr>
+<td>201</td>
+<td>Nucl. Data Sheets 187, 355 (2023)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2023.01.003">https://doi.org/10.1016/j.nds.2023.01.003</a></td>
+<td>Filip G. Kondev</td>
+</tr>
+<tr>
+<td>202</td>
+<td>Nucl. Data Sheets 196, 342 (2024)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2024.06.004">https://doi.org/10.1016/j.nds.2024.06.004</a></td>
+<td>Filip G. Kondev</td>
+</tr>
+<tr>
+<td>203</td>
+<td>Nucl. Data Sheets 177, 509 (2021)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2021.09.002">https://doi.org/10.1016/j.nds.2021.09.002</a></td>
+<td>Filip G. Kondev</td>
+</tr>
+<tr>
+<td>204</td>
+<td>Nucl. Data Sheets 111, 141 (2010)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2009.12.002">https://doi.org/10.1016/j.nds.2009.12.002</a></td>
+<td>Catherine J. Chiara, Filip G. Kondev</td>
+</tr>
+<tr>
+<td>205</td>
+<td>Nucl. Data Sheets 166, 1 (2020)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2020.05.001">https://doi.org/10.1016/j.nds.2020.05.001</a></td>
+<td>Filip G. Kondev</td>
+</tr>
+<tr>
+<td>206</td>
+<td>Nucl. Data Sheets 201, 346 (2025)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2025.03.002">https://doi.org/10.1016/j.nds.2025.03.002</a></td>
+<td>Filip G. Kondev</td>
+</tr>
+<tr>
+<td>207</td>
+<td>Nucl. Data Sheets 112, 707 (2011)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2011.02.002">https://doi.org/10.1016/j.nds.2011.02.002</a></td>
+<td>Filip G. Kondev, Stoycho Lalkovski</td>
+</tr>
+<tr>
+<td>208</td>
+<td>Nucl. Data Sheets 108, 1583 (2007)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2007.07.001">https://doi.org/10.1016/j.nds.2007.07.001</a></td>
+<td>Marthena J. Martin</td>
+</tr>
+<tr>
+<td>209</td>
+<td>Nucl. Data Sheets 126, 373 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2015.05.003">https://doi.org/10.1016/j.nds.2015.05.003</a></td>
+<td>Jun Chen, Filip G. Kondev</td>
+</tr>
+<tr>
+<td>210</td>
+<td>Nucl. Data Sheets 121, 561 (2014)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2014.09.004">https://doi.org/10.1016/j.nds.2014.09.004</a></td>
+<td>M. Shamsuzzoha Basunia</td>
+</tr>
+<tr>
+<td>211</td>
+<td>Nucl. Data Sheets 114, 661 (2013)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2013.05.001">https://doi.org/10.1016/j.nds.2013.05.001</a></td>
+<td>Balraj Singh, Daniel Abriola, Coral M. Baglin et al.</td>
+</tr>
+<tr>
+<td>212</td>
+<td>Nucl. Data Sheets 168, 117 (2020)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2020.09.002">https://doi.org/10.1016/j.nds.2020.09.002</a></td>
+<td>K. Auranen, Elizabeth A. McCutchan</td>
+</tr>
+<tr>
+<td>213</td>
+<td>Nucl. Data Sheets 181, 475 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.03.002">https://doi.org/10.1016/j.nds.2022.03.002</a></td>
+<td>M. Shamsuzzoha Basunia</td>
+</tr>
+<tr>
+<td>214</td>
+<td>Nucl. Data Sheets 175, 1 (2021)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2021.06.001">https://doi.org/10.1016/j.nds.2021.06.001</a></td>
+<td>Shaofei Zhu, Elizabeth A. McCutchan</td>
+</tr>
+<tr>
+<td>215</td>
+<td>Nucl. Data Sheets 114, 2023 (2013)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2013.11.003">https://doi.org/10.1016/j.nds.2013.11.003</a></td>
+<td>Balraj Singh, Gopal Mukherjee, Daniel Abriola et al.</td>
+</tr>
+<tr>
+<td>216</td>
+<td>Nucl. Data Sheets 209, 409 (2026)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2026.02.002">https://doi.org/10.1016/j.nds.2026.02.002</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>217</td>
+<td>Nucl. Data Sheets 147, 382 (2018)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2018.01.002">https://doi.org/10.1016/j.nds.2018.01.002</a></td>
+<td>Filip G. Kondev, Elizabeth A. McCutchan, Balraj Singh et al.</td>
+</tr>
+<tr>
+<td>218</td>
+<td>Nucl. Data Sheets 160, 405 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.100524">https://doi.org/10.1016/j.nds.2019.100524</a></td>
+<td>Balraj Singh, M. Shamsuzzoha Basunia, Murray Martin et al.</td>
+</tr>
+<tr>
+<td>219</td>
+<td>Nucl. Data Sheets 175, 1 (2021)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2021.06.001">https://doi.org/10.1016/j.nds.2021.06.001</a></td>
+<td>Shaofei Zhu, Elizabeth A. McCutchan</td>
+</tr>
+<tr>
+<td>220</td>
+<td>Nucl. Data Sheets 112, 1115 (2011)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2011.03.002">https://doi.org/10.1016/j.nds.2011.03.002</a></td>
+<td>Edgardo Browne, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>221</td>
+<td>Nucl. Data Sheets 108, 883 (2007)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2007.03.002">https://doi.org/10.1016/j.nds.2007.03.002</a></td>
+<td>Ashok Kumar Jain, Sukhjeet Singh, Suresh Kumar et al.</td>
+</tr>
+<tr>
+<td>222</td>
+<td>Nucl. Data Sheets 192, 315 (2023)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2023.10.002">https://doi.org/10.1016/j.nds.2023.10.002</a></td>
+<td>Balraj Singh, M. Shamsuzzoha Basunia, Jun Chen et al.</td>
+</tr>
+<tr>
+<td>223</td>
+<td>Nucl. Data Sheets 93, 846 (2001)</td>
+<td><a href="https://doi.org/10.1006/ndsh.2001.0016">https://doi.org/10.1006/ndsh.2001.0016</a></td>
+<td>Edgardo Browne</td>
+</tr>
+<tr>
+<td>224</td>
+<td>Unpublished ENSDF</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>225</td>
+<td>Nucl. Data Sheets 110, 1409 (2009)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2009.04.003">https://doi.org/10.1016/j.nds.2009.04.003</a></td>
+<td>Ashok Kumar Jain, Rashi Raut, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>226</td>
+<td>Nucl. Data Sheets 77, 433 (1996)</td>
+<td><a href="https://doi.org/10.1006/ndsh.1996.0005">https://doi.org/10.1006/ndsh.1996.0005</a></td>
+<td>Yurdanur A. Akovalı</td>
+</tr>
+<tr>
+<td>227</td>
+<td>Nucl. Data Sheets 132, 257 (2016)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2016.01.002">https://doi.org/10.1016/j.nds.2016.01.002</a></td>
+<td>Filip G. Kondev, Elizabeth A. McCutchan, Balraj Singh et al.</td>
+</tr>
+<tr>
+<td>228</td>
+<td>Nucl. Data Sheets 116, 163 (2014)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2014.01.002">https://doi.org/10.1016/j.nds.2014.01.002</a></td>
+<td>Khalifeh Abusaleem</td>
+</tr>
+<tr>
+<td>229</td>
+<td>Nucl. Data Sheets 208, 397 (2026)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2026.01.002">https://doi.org/10.1016/j.nds.2026.01.002</a></td>
+<td>Filip G. Kondev, Jagdish K. Tuli, Edgardo Browne</td>
+</tr>
+<tr>
+<td>230</td>
+<td>Nucl. Data Sheets 197, 259 (2024)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2024.08.002">https://doi.org/10.1016/j.nds.2024.08.002</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>231</td>
+<td>Nucl. Data Sheets 185, 560 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.10.002">https://doi.org/10.1016/j.nds.2022.10.002</a></td>
+<td>Balraj Singh, Jagdish K. Tuli, Edgardo Browne</td>
+</tr>
+<tr>
+<td>232</td>
+<td>Nucl. Data Sheets 107, 2579 (2006)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2006.09.001">https://doi.org/10.1016/j.nds.2006.09.001</a></td>
+<td>Edgardo Browne</td>
+</tr>
+<tr>
+<td>233</td>
+<td>Nucl. Data Sheets 170, 499 (2020)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2020.11.002">https://doi.org/10.1016/j.nds.2020.11.002</a></td>
+<td>Balraj Singh, Jagdish K. Tuli, Edgardo Browne</td>
+</tr>
+<tr>
+<td>234</td>
+<td>Nucl. Data Sheets 207, 351 (2026)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2025.12.002">https://doi.org/10.1016/j.nds.2025.12.002</a></td>
+<td>Shuya Ota</td>
+</tr>
+<tr>
+<td>235</td>
+<td>Nucl. Data Sheets 122, 205 (2014)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2014.11.002">https://doi.org/10.1016/j.nds.2014.11.002</a></td>
+<td>Edgardo Browne, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>236</td>
+<td>Nucl. Data Sheets 182, 2 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.05.002">https://doi.org/10.1016/j.nds.2022.05.002</a></td>
+<td>Shaofei Zhu</td>
+</tr>
+<tr>
+<td>237</td>
+<td>Nucl. Data Sheets 107, 3323 (2006)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2006.07.001">https://doi.org/10.1016/j.nds.2006.07.001</a></td>
+<td>M. Shamsuzzoha Basunia</td>
+</tr>
+<tr>
+<td>238</td>
+<td>Nucl. Data Sheets 127, 191 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2015.07.003">https://doi.org/10.1016/j.nds.2015.07.003</a></td>
+<td>Edgardo Browne, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>239</td>
+<td>Nucl. Data Sheets 122, 293 (2014)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2014.11.003">https://doi.org/10.1016/j.nds.2014.11.003</a></td>
+<td>Edgardo Browne, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>240</td>
+<td>Nucl. Data Sheets 206, 359 (2025)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2025.11.002">https://doi.org/10.1016/j.nds.2025.11.002</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>241</td>
+<td>Nucl. Data Sheets 130, 183 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2015.11.004">https://doi.org/10.1016/j.nds.2015.11.004</a></td>
+<td>Caroline D. Nesaraja</td>
+</tr>
+<tr>
+<td>242</td>
+<td>Nucl. Data Sheets 186, 261 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.11.003">https://doi.org/10.1016/j.nds.2022.11.003</a></td>
+<td>Marthena J. Martin, Caroline D. Nesaraja</td>
+</tr>
+<tr>
+<td>243</td>
+<td>Nucl. Data Sheets 121, 695 (2014)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2014.09.005">https://doi.org/10.1016/j.nds.2014.09.005</a></td>
+<td>Caroline D. Nesaraja, Elizabeth A. McCutchan</td>
+</tr>
+<tr>
+<td>244</td>
+<td>Nucl. Data Sheets 146, 387 (2017)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2017.11.002">https://doi.org/10.1016/j.nds.2017.11.002</a></td>
+<td>Caroline D. Nesaraja</td>
+</tr>
+<tr>
+<td>245</td>
+<td>Nucl. Data Sheets 189, 1 (2023)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2023.04.001">https://doi.org/10.1016/j.nds.2023.04.001</a></td>
+<td>Caroline D. Nesaraja</td>
+</tr>
+<tr>
+<td>246</td>
+<td>Nucl. Data Sheets 198, 449 (2024)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2024.11.002">https://doi.org/10.1016/j.nds.2024.11.002</a></td>
+<td>Caroline D. Nesaraja</td>
+</tr>
+<tr>
+<td>247</td>
+<td>Nucl. Data Sheets 125, 395 (2015)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2015.02.003">https://doi.org/10.1016/j.nds.2015.02.003</a></td>
+<td>Caroline D. Nesaraja</td>
+</tr>
+<tr>
+<td>248</td>
+<td>Nucl. Data Sheets 204, 374 (2025)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2025.07.002">https://doi.org/10.1016/j.nds.2025.07.002</a></td>
+<td>Caroline D. Nesaraja</td>
+</tr>
+<tr>
+<td>249</td>
+<td>Nucl. Data Sheets 195, 718 (2024)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2024.04.003">https://doi.org/10.1016/j.nds.2024.04.003</a></td>
+<td>Caroline D. Nesaraja</td>
+</tr>
+<tr>
+<td>250</td>
+<td>Nucl. Data Sheets 94, 131 (2001)</td>
+<td><a href="https://doi.org/10.1006/ndsh.2001.0018">https://doi.org/10.1006/ndsh.2001.0018</a></td>
+<td>Yurdanur A. Akovalı</td>
+</tr>
+<tr>
+<td>251</td>
+<td>Nucl. Data Sheets 189, 111 (2023)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2023.04.002">https://doi.org/10.1016/j.nds.2023.04.002</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>252</td>
+<td>Nucl. Data Sheets 172, 543 (2021)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2021.02.002">https://doi.org/10.1016/j.nds.2021.02.002</a></td>
+<td>A.M. Mattera, Shaofei Zhu, A.B. Hayes et al.</td>
+</tr>
+<tr>
+<td>253</td>
+<td>Nucl. Data Sheets 114, 1041 (2013)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2013.08.002">https://doi.org/10.1016/j.nds.2013.08.002</a></td>
+<td>Edgardo Browne, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>254</td>
+<td>Nucl. Data Sheets 156, 1 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.003">https://doi.org/10.1016/j.nds.2019.02.003</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>255</td>
+<td>Nucl. Data Sheets 114, 1041 (2013)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2013.08.002">https://doi.org/10.1016/j.nds.2013.08.002</a></td>
+<td>Edgardo Browne, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>256</td>
+<td>Nucl. Data Sheets 141, 327 (2017)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2017.03.002">https://doi.org/10.1016/j.nds.2017.03.002</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>257</td>
+<td>Nucl. Data Sheets 114, 1041 (2013)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2013.08.002">https://doi.org/10.1016/j.nds.2013.08.002</a></td>
+<td>Edgardo Browne, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>258</td>
+<td>Nucl. Data Sheets 144, 297 (2017)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2017.08.003">https://doi.org/10.1016/j.nds.2017.08.003</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>259</td>
+<td>Nucl. Data Sheets 114, 1041 (2013)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2013.08.002">https://doi.org/10.1016/j.nds.2013.08.002</a></td>
+<td>Edgardo Browne, Jagdish K. Tuli</td>
+</tr>
+<tr>
+<td>260</td>
+<td>Nucl. Data Sheets 87, 301 (1999)</td>
+<td><a href="https://doi.org/10.1006/ndsh.1999.0021">https://doi.org/10.1006/ndsh.1999.0021</a></td>
+<td>Carl W. Reich</td>
+</tr>
+<tr>
+<td>261</td>
+<td>Nucl. Data Sheets 209, 499 (2026)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2026.02.003">https://doi.org/10.1016/j.nds.2026.02.003</a></td>
+<td>Mritunjay Gupta</td>
+</tr>
+<tr>
+<td>262</td>
+<td>Nucl. Data Sheets 94, 131 (2001)</td>
+<td><a href="https://doi.org/10.1006/ndsh.2001.0018">https://doi.org/10.1006/ndsh.2001.0018</a></td>
+<td>Yurdanur A. Akovalı</td>
+</tr>
+<tr>
+<td>263</td>
+<td>Nucl. Data Sheets 88, 155 (1999)</td>
+<td><a href="https://doi.org/10.1006/ndsh.1999.0027">https://doi.org/10.1006/ndsh.1999.0027</a></td>
+<td>Agda Artna-Cohen</td>
+</tr>
+<tr>
+<td>264</td>
+<td>Nucl. Data Sheets 87, 309 (1999)</td>
+<td><a href="https://doi.org/10.1006/ndsh.1999.0021">https://doi.org/10.1006/ndsh.1999.0021</a></td>
+<td>Carl W. Reich</td>
+</tr>
+<tr>
+<td>265</td>
+<td>Nucl. Data Sheets 209, 499 (2026)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2026.02.003">https://doi.org/10.1016/j.nds.2026.02.003</a></td>
+<td>Mritunjay Gupta</td>
+</tr>
+<tr>
+<td>266</td>
+<td>Nucl. Data Sheets 156, 70 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.004">https://doi.org/10.1016/j.nds.2019.02.004</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>267</td>
+<td>Nucl. Data Sheets 182, 130 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.05.003">https://doi.org/10.1016/j.nds.2022.05.003</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>268</td>
+<td>Nucl. Data Sheets 156, 148 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.005">https://doi.org/10.1016/j.nds.2019.02.005</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>269</td>
+<td>Nucl. Data Sheets 182, 167 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.05.004">https://doi.org/10.1016/j.nds.2022.05.004</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>270</td>
+<td>Nucl. Data Sheets 156, 70 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.004">https://doi.org/10.1016/j.nds.2019.02.004</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>271</td>
+<td>Nucl. Data Sheets 182, 130 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.05.003">https://doi.org/10.1016/j.nds.2022.05.003</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>272</td>
+<td>Nucl. Data Sheets 156, 148 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.005">https://doi.org/10.1016/j.nds.2019.02.005</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>273</td>
+<td>Nucl. Data Sheets 182, 167 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.05.004">https://doi.org/10.1016/j.nds.2022.05.004</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>274</td>
+<td>Nucl. Data Sheets 156, 70 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.004">https://doi.org/10.1016/j.nds.2019.02.004</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>275</td>
+<td>Nucl. Data Sheets 182, 130 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.05.003">https://doi.org/10.1016/j.nds.2022.05.003</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>276</td>
+<td>Nucl. Data Sheets 156, 148 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.005">https://doi.org/10.1016/j.nds.2019.02.005</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>277</td>
+<td>Nucl. Data Sheets 182, 167 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.05.004">https://doi.org/10.1016/j.nds.2022.05.004</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>278</td>
+<td>Nucl. Data Sheets 156, 70 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.004">https://doi.org/10.1016/j.nds.2019.02.004</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>279</td>
+<td>Nucl. Data Sheets 182, 130 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.05.003">https://doi.org/10.1016/j.nds.2022.05.003</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>280</td>
+<td>Nucl. Data Sheets 156, 148 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.005">https://doi.org/10.1016/j.nds.2019.02.005</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>281</td>
+<td>Nucl. Data Sheets 182, 167 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.05.004">https://doi.org/10.1016/j.nds.2022.05.004</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>282</td>
+<td>Nucl. Data Sheets 156, 70 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.004">https://doi.org/10.1016/j.nds.2019.02.004</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>283</td>
+<td>Nucl. Data Sheets 182, 130 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.05.003">https://doi.org/10.1016/j.nds.2022.05.003</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>284</td>
+<td>Nucl. Data Sheets 156, 148 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.005">https://doi.org/10.1016/j.nds.2019.02.005</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>285</td>
+<td>Nucl. Data Sheets 182, 167 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.05.004">https://doi.org/10.1016/j.nds.2022.05.004</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>286</td>
+<td>Nucl. Data Sheets 156, 70 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.004">https://doi.org/10.1016/j.nds.2019.02.004</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>287</td>
+<td>Nucl. Data Sheets 182, 130 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.05.003">https://doi.org/10.1016/j.nds.2022.05.003</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>288</td>
+<td>Nucl. Data Sheets 156, 148 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.005">https://doi.org/10.1016/j.nds.2019.02.005</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>289</td>
+<td>Nucl. Data Sheets 182, 167 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.05.004">https://doi.org/10.1016/j.nds.2022.05.004</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>290</td>
+<td>Nucl. Data Sheets 156, 70 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.004">https://doi.org/10.1016/j.nds.2019.02.004</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>291</td>
+<td>Nucl. Data Sheets 182, 130 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.05.003">https://doi.org/10.1016/j.nds.2022.05.003</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>292</td>
+<td>Nucl. Data Sheets 156, 148 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.005">https://doi.org/10.1016/j.nds.2019.02.005</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>293</td>
+<td>Nucl. Data Sheets 182, 167 (2022)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2022.05.004">https://doi.org/10.1016/j.nds.2022.05.004</a></td>
+<td>Chris Morse</td>
+</tr>
+<tr>
+<td>294</td>
+<td>Nucl. Data Sheets 156, 70 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.004">https://doi.org/10.1016/j.nds.2019.02.004</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>295</td>
+<td>Not evaluated</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>296</td>
+<td>Not evaluated</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>297</td>
+<td>Not evaluated</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>298</td>
+<td>Nucl. Data Sheets 156, 70 (2019)</td>
+<td><a href="https://doi.org/10.1016/j.nds.2019.02.004">https://doi.org/10.1016/j.nds.2019.02.004</a></td>
+<td>Balraj Singh</td>
+</tr>
+<tr>
+<td>299</td>
+<td>Not evaluated</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+            
+            
+        </body>
+        </html>
