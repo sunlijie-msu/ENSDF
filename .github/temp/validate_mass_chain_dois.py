@@ -34,6 +34,16 @@ def parse_official_citation(raw):
             "year": m.group(3),
         }
 
+    m = re.search(r"NDS\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d{4})", raw, re.IGNORECASE)
+    if m:
+        return {
+            "kind": "NDS",
+            "journal": "Nuclear Data Sheets",
+            "volume": m.group(1),
+            "page": m.group(2),
+            "year": m.group(3),
+        }
+
     m = re.search(r"NP\s*A?\s*(\d+)\s*,?\s*(\d+)\s*\(?\s*(\d{4})\s*\)?\.?", raw, re.IGNORECASE)
     if m:
         return {
