@@ -3,7 +3,7 @@
 | Mass Number | Citation (Volume, Page, Year) | DOI | Authors |
 |---|---|---|---|
 | 1 | Nucl. Data Sheets 106, 601 (2005) | https://doi.org/10.1016/j.nds.2005.11.004 | Balraj Singh |
-| 2 | Unpublished |  | J.H. Kelley, J.L. Godwin |
+| 2 | ENSDF Unpublished |  | J.H. Kelley, J.L. Godwin |
 | 3 | Nucl. Data Sheets 130, 1 (2015) | https://doi.org/10.1016/j.nds.2015.11.001 | J.E. Purcell, C.G. Sheu |
 | 4 | Nucl. Phys. A 541, 1 (1992) | https://doi.org/10.1016/0375-9474(92)90635-w | D.R. Tilley, H.R. Weller, G.M. Hale |
 | 5 | Nucl. Phys. A 708, 3 (2002) | https://doi.org/10.1016/s0375-9474(02)00597-3 | D.R. Tilley et al. |
