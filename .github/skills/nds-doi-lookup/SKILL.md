@@ -8,27 +8,27 @@ argument-hint: [space-separated list of mass numbers, e.g. 204 207 208 211 212]
 
 ## Workflow
 
-### 1. Discover via Crossref
+### 1. Retrieve Ground Truth from NNDC
 
-Query all mass numbers in a **single parallel** `fetch_webpage` call:
-
-```
-https://api.crossref.org/works?query.title=Nuclear+Data+Sheets+for+A%3D{A}&rows=5&select=DOI,title,author,volume,published-print,page
-```
-
-Select the result whose title matches `"Nuclear Data Sheets for A = {A}"` (case-insensitive) with the **most recent** publication year. Reject non-matching titles (e.g., "Symbols and Abbreviations", update articles, or articles whose volume number coincidentally equals A).
-
-### 2. Verify via Elsevier Linking Hub
-
-For each candidate DOI, follow the redirect chain and confirm `articleName` matches:
+Never rely on raw Crossref title searches (e.g., "Nuclear Data Sheets for A={A}"), as this hallucinates or misses grouped evaluations (especially A < 45). Instead, query the official NNDC Evaluation Index as the golden source:
 
 ```
-fetch https://doi.org/{DOI}
-  → redirect to https://linkinghub.elsevier.com/retrieve/pii/{PII}
-  → confirm:  articleName : 'Nuclear Data Sheets for A = {A}'
+fetch https://www.nndc.bnl.gov/ensdf/EvaluationIndexServlet
 ```
 
-Issue all verification fetches in a single parallel call. A DOI is accepted only after this confirmation.
+Parse the resulting JSON to extract the exact `journal`, `volume`, `page`, and `year` for the desired mass chain.
+
+### 2. Discover DOI via Crossref
+
+Using the exact citation details obtained from NNDC, build a precise bibliographic query for Crossref. Use **sequential, rate-limited** requests to avoid silent API drops.
+
+```
+https://api.crossref.org/works?query.bibliographic={journal}+{volume}+{page}+{year}&select=DOI,title,author,volume,published-print,page&rows=5
+```
+
+*Note: Ensure proper URL encoding for spaces and special characters. Avoid concurrent API flooding which causes missed records.*
+
+Extract the DOI and Author list matching the exact volume and page.
 
 ### 3. Insert into Report
 
@@ -46,7 +46,7 @@ Match the formatting of any pre-existing entries in the file. After editing, rea
 
 | Pitfall | Mitigation |
 |---------|------------|
-| Crossref volume number equals A | Match on title text, not volume |
-| Older edition returned first | Sort by year; take latest |
-| `query.bibliographic` causes token overflow | Always use `query.title` + `select=` |
-| DOI resolves to wrong article | Verify `articleName` at linking hub before accepting |
+| Hallucinated or Missing A<45 Masses | Never search by title alone; always use NNDC `EvaluationIndexServlet` as ground truth. |
+| Crossref Rate Limiting/Silent Drops | Use sequential fallback limits and handle exceptions (`HTTP Error 400`); avoid aggressive multithreading. |
+| URL Encoding Errors | Carefully encode citation strings in `query.bibliographic` requests to avoid HTTP 400 Bad Request errors. |
+| Non-NDS Journals | Light mass chains often resolve to "Nuclear Physics A" (`NP A`) rather than "Nuclear Data Sheets" (`NDS`). |
