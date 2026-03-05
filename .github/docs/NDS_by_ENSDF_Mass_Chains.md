@@ -1,27 +1,26 @@
-# Nuclear Data Sheets Journal Publication by ENSDF Mass Chains
+# Publication of Nuclear Data Sheets by ENSDF Mass Chains
 
 | Mass Number | Citation (Volume, Page, Year) | DOI | Authors |
-|---|---|---|---|
 | 1 | Nucl. Data Sheets 106, 601 (2005) | https://doi.org/10.1016/j.nds.2005.11.004 | Balraj Singh |
 | 2 | ENSDF Unpublished |  | John H. Kelley, J.L. Godwin |
 | 3 | Nucl. Data Sheets 130, 1 (2015) | https://doi.org/10.1016/j.nds.2015.11.001 | John E. Purcell, Che Guey Sheu |
-| 4 | Nucl. Phys. A 541, 1 (1992) | https://doi.org/10.1016/0375-9474(92)90635-w | Donald R. Tilley, Henry R. Weller, Gerald M. Hale |
-| 5 | Nucl. Phys. A 708, 3 (2002) | https://doi.org/10.1016/s0375-9474(02)00597-3 | Donald R. Tilley, Che Guey Sheu, Henry R. Weller |
-| 6 | Nucl. Phys. A 708, 3 (2002) | https://doi.org/10.1016/s0375-9474(02)00597-3 | Donald R. Tilley, Che Guey Sheu, Henry R. Weller |
-| 7 | Nucl. Phys. A 708, 3 (2002) | https://doi.org/10.1016/s0375-9474(02)00597-3 | Donald R. Tilley, Che Guey Sheu, Henry R. Weller |
+| 4 | Nucl. Phys. A 541, 1 (1992) | [[https://doi.org/10.1016/0375-9474(92)90635-w|https://doi.org/10.1016/0375-9474(92)90635-w]] | Donald R. Tilley, Henry R. Weller, Gerald M. Hale |
+| 5 | Nucl. Phys. A 708, 3 (2002) | [[https://doi.org/10.1016/s0375-9474(02)00597-3|https://doi.org/10.1016/s0375-9474(02)00597-3]] | Donald R. Tilley, Che Guey Sheu, Henry R. Weller |
+| 6 | Nucl. Phys. A 708, 3 (2002) | [[https://doi.org/10.1016/s0375-9474(02)00597-3|https://doi.org/10.1016/s0375-9474(02)00597-3]] | Donald R. Tilley, Che Guey Sheu, Henry R. Weller |
+| 7 | Nucl. Phys. A 708, 3 (2002) | [[https://doi.org/10.1016/s0375-9474(02)00597-3|https://doi.org/10.1016/s0375-9474(02)00597-3]] | Donald R. Tilley, Che Guey Sheu, Henry R. Weller |
 | 8 | Nucl. Phys. A 745, 155 (2004) | https://doi.org/10.1016/j.nuclphysa.2004.09.059 | Donald R. Tilley, John H. Kelley, J.L. Godwin et al. |
 | 9 | Nucl. Phys. A 745, 155 (2004) | https://doi.org/10.1016/j.nuclphysa.2004.09.059 | Donald R. Tilley, John H. Kelley, J.L. Godwin et al. |
 | 10 | Nucl. Phys. A 745, 155 (2004) | https://doi.org/10.1016/j.nuclphysa.2004.09.059 | Donald R. Tilley, John H. Kelley, J.L. Godwin et al. |
 | 11 | Nucl. Phys. A 880, 88 (2012) | https://doi.org/10.1016/j.nuclphysa.2012.01.010 | John H. Kelley, E. Kwan, John E. Purcell et al. |
 | 12 | Nucl. Phys. A 968, 71 (2017) | https://doi.org/10.1016/j.nuclphysa.2017.07.015 | John H. Kelley, John E. Purcell, Che Guey Sheu |
 | 13 | Nucl. Data Sheets 198, 1 (2024) | https://doi.org/10.1016/j.nds.2024.11.001 | John H. Kelley, Che Guey Sheu, John E. Purcell |
-| 14 | Nucl. Phys. A 523, 1 (1991) | https://doi.org/10.1016/0375-9474(91)90446-d | Fay Ajzenberg-Selove |
-| 15 | Nucl. Phys. A 523, 1 (1991) | https://doi.org/10.1016/0375-9474(91)90446-d | Fay Ajzenberg-Selove |
-| 16 | Nucl. Phys. A 564, 1 (1993) | https://doi.org/10.1016/0375-9474(93)90073-7 | Donald R. Tilley, Henry R. Weller, C.M. Cheves |
-| 17 | Nucl. Phys. A 564, 1 (1993) | https://doi.org/10.1016/0375-9474(93)90073-7 | Donald R. Tilley, Henry R. Weller, C.M. Cheves |
-| 18 | Nucl. Phys. A 595, 1 (1995) | https://doi.org/10.1016/0375-9474(95)00338-1 | Donald R. Tilley, Henry R. Weller, C.M. Cheves et al. |
-| 19 | Nucl. Phys. A 595, 1 (1995) | https://doi.org/10.1016/0375-9474(95)00338-1 | Donald R. Tilley, Henry R. Weller, C.M. Cheves et al. |
-| 20 | Nucl. Phys. A 636, 249 (1998) | https://doi.org/10.1016/s0375-9474(98)00129-8 | Donald R. Tilley, C.M. Cheves, John H. Kelley et al. |
+| 14 | Nucl. Phys. A 523, 1 (1991) | [[https://doi.org/10.1016/0375-9474(91)90446-d|https://doi.org/10.1016/0375-9474(91)90446-d]] | Fay Ajzenberg-Selove |
+| 15 | Nucl. Phys. A 523, 1 (1991) | [[https://doi.org/10.1016/0375-9474(91)90446-d|https://doi.org/10.1016/0375-9474(91)90446-d]] | Fay Ajzenberg-Selove |
+| 16 | Nucl. Phys. A 564, 1 (1993) | [[https://doi.org/10.1016/0375-9474(93)90073-7|https://doi.org/10.1016/0375-9474(93)90073-7]] | Donald R. Tilley, Henry R. Weller, C.M. Cheves |
+| 17 | Nucl. Phys. A 564, 1 (1993) | [[https://doi.org/10.1016/0375-9474(93)90073-7|https://doi.org/10.1016/0375-9474(93)90073-7]] | Donald R. Tilley, Henry R. Weller, C.M. Cheves |
+| 18 | Nucl. Phys. A 595, 1 (1995) | [[https://doi.org/10.1016/0375-9474(95)00338-1|https://doi.org/10.1016/0375-9474(95)00338-1]] | Donald R. Tilley, Henry R. Weller, C.M. Cheves et al. |
+| 19 | Nucl. Phys. A 595, 1 (1995) | [[https://doi.org/10.1016/0375-9474(95)00338-1|https://doi.org/10.1016/0375-9474(95)00338-1]] | Donald R. Tilley, Henry R. Weller, C.M. Cheves et al. |
+| 20 | Nucl. Phys. A 636, 249 (1998) | [[https://doi.org/10.1016/s0375-9474(98)00129-8|https://doi.org/10.1016/s0375-9474(98)00129-8]] | Donald R. Tilley, C.M. Cheves, John H. Kelley et al. |
 | 21 | Nucl. Data Sheets 127, 1 (2015) | https://doi.org/10.1016/j.nds.2015.07.001 | Richard B. Firestone |
 | 22 | Nucl. Data Sheets 127, 69 (2015) | https://doi.org/10.1016/j.nds.2015.07.002 | M. Shamsuzzoha Basunia |
 | 23 | Nucl. Data Sheets 171, 1 (2021) | https://doi.org/10.1016/j.nds.2020.12.001 | M. Shamsuzzoha Basunia, Anagha Chakraborty |
