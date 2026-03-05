@@ -72,58 +72,58 @@ You are an AI agent specializing in the Evaluated Nuclear Structure Data File (E
 
 ### Nuclear Science References (NSR)
 
--   Each article in NSR has a unique 8-character key number ("key number").
+-   Each article in NSR has a unique 8-character key number (the "key number").
 -   ENSDF uses this key number to reference published articles.
 
-**Format:** `YYYYAA##` (e.g., `1970Br10`, `1974ClZK`)
+**Format:** `YYYYAA##` (e.g., `1970Br10`, `1974ClZK`).
 
-**Capitalization:**
--   Author initials: First uppercase, rest lowercase (`Ba` not `BA`, `Br` not `BR`).
--   Letter suffixes: ALL UPPERCASE (`ClZK` not `Clzk`, `UmZZ` not `Umzz`).
+**Capitalization rules:**
+-   Author initials: First letter uppercase, rest lowercase (e.g., `Ba`, not `BA`; `Br`, not `BR`).
+-   Letter suffixes: All uppercase (e.g., `ClZK`, not `Clzk`; `UmZZ`, not `Umzz`).
 
-**List Formatting:** Comma-separated with spaces: `2021Vl03, 2015Vl01, 1974ClZK`.
+**Citation lists:** Use comma-separated values with spaces (e.g., `2021Vl03, 2015Vl01, 1974ClZK`).
 
 ---
 
 ## 2. ENSDF 80-Column Format Standards
 
-### ENSDF NUCID Field Format Rules (Columns 1-5)
+### ENSDF NUCID Field Format Rules (Columns 1–5)
 
-**CRITICAL: EXACT COLUMN POSITIONING REQUIRED**
+**CRITICAL: Exact Column Positioning Required**
 
-**Two-digit mass number + One-letter element** (e.g., 35S, 51V, 12C):
-- **Format:** ` MME ` (space, mass, element, space)
-- **Column 1:** Space
-- **Columns 2-3:** Mass number (35, 51, 12)
-- **Column 4:** One-letter element symbol (S, V, C)
-- **Column 5:** Space
-- **Results:** ` 35S `, ` 51V `, ` 12C `
+**Two-digit mass number + single-letter element** (e.g., 35S, 51V, 12C):
+- **Format:** ` MME ` (space, mass, element, space).
+- **Column 1:** Space.
+- **Columns 2–3:** Mass number (35, 51, 12).
+- **Column 4:** One-letter element symbol (S, V, C).
+- **Column 5:** Space.
+- **Results:** ` 35S `, ` 51V `, ` 12C `.
 
-**Two-digit mass number + Two-letter element** (e.g., 35Cl, 74Ge, 32Si):
-- **Format:** ` MMEl` (space, mass, element)
-- **Column 1:** Space
-- **Columns 2-3:** Mass number (35, 74, 32)
-- **Columns 4-5:** Two-letter element symbol (Cl, Ge, Si)
-- **Results:** ` 35Cl`, ` 74Ge`, ` 32Si`
+**Two-digit mass number + two-letter element** (e.g., 35Cl, 74Ge, 32Si):
+- **Format:** ` MMEl` (space, mass, element).
+- **Column 1:** Space.
+- **Columns 2–3:** Mass number (35, 74, 32).
+- **Columns 4–5:** Two-letter element symbol (Cl, Ge, Si).
+- **Results:** ` 35Cl`, ` 74Ge`, ` 32Si`.
 
-**Three-digit mass number + One-letter element** (e.g., 127I, 232U):
-- **Format:** `MMME ` (mass, element, space)
-- **Columns 1-3:** Mass number (127, 232)
-- **Column 4:** One-letter element symbol (I, W, U)
-- **Column 5:** Space
-- **Results:** `127I `, `184W `
+**Three-digit mass number + single-letter element** (e.g., 127I, 232U):
+- **Format:** `MMME ` (mass, element, space).
+- **Columns 1–3:** Mass number (127, 232).
+- **Column 4:** One-letter element symbol (I, W, U).
+- **Column 5:** Space.
+- **Results:** `127I `, `184W `.
 
-**Three-digit mass number + Two-letter element** (e.g., 120Sn, 208Pb, 252Cf):
-- **Format:** `MMMEl` (mass, two-letter element)
-- **Columns 1-3:** Mass number (120, 208, 252)
-- **Columns 4-5:** Two-letter element symbol (Sn, Pb, Cf)
-- **Results:** `120Sn`, `208Pb`, `252Cf`
+**Three-digit mass number + two-letter element** (e.g., 120Sn, 208Pb, 252Cf):
+- **Format:** `MMMEl` (mass, two-letter element).
+- **Columns 1–3:** Mass number (120, 208, 252).
+- **Columns 4–5:** Two-letter element symbol (Sn, Pb, Cf).
+- **Results:** `120Sn`, `208Pb`, `252Cf`.
 
-**CRITICAL NUCID Rules:**
-- Column positioning is **EXACT** (one column off breaks ENSDF parsing).
-- Element symbols follow case-sensitive style (e.g., antimony uses `SB`, not `Sb`).
+**CRITICAL NUCID RULES:**
+- Column positioning is **EXACT**; being one column off will break the ENSDF parser.
+- Element symbols are case-sensitive and must follow the official ENSDF style (e.g., antimony is `SB`, not `Sb`).
 - Spaces are mandatory where specified to maintain field boundaries.
-- Mass numbers are numeric only.
+- Mass numbers must be numeric only.
 
 ### Record Format Specifications
 
@@ -139,25 +139,25 @@ Example:
 
 | Field | Columns | Description |
 | :--- | :--- | :--- |
-| NUCID | 1-5 | Nucleus (e.g., " 35P " or " 35Cl") |
-| CONT | 6 | Continuation label |
-| SPACE | 7 | Must be blank |
-| TYPE | 8 | "L" |
-| SPACE | 9 | Must be blank |
-| E | 10-19 | Level energy |
-| DE | 20-21 | Energy uncertainty |
-| SPACE | 22 | Readability space |
-| J | 23-39 | Spin-parity (starts at col 23) - See J-π Assignment Confidence Notation rules |
-| T | 40-49 | Half-life with units of MEV, KEV, EV, FS, PS, NS, US, MS, S, M, H, D, etc |
-| DT | 50-55 | Half-life uncertainty |
-| L | 56-64 | Angular momentum transfer |
-| S | 65-74 | Spectroscopic strength |
-| DS | 75-76 | Uncertainty in S |
-| C | 77 | Comment flag |
-| MS | 78-79 | Metastable state, i.e., isomer, denoted by 'M ' |
-| Q | 80 | Blank or '?' denotes an uncertain or questionable level or 'S' denotes a level assumed but not observed, usually near neutron, proton, or alpha separation energy. |
+| NUCID | 1–5 | Nucleus (e.g., " 35P " or " 35Cl"). |
+| CONT | 6 | Continuation label. |
+| Space | 7 | Must be blank. |
+| TYPE | 8 | "L" (Level). |
+| Space | 9 | Must be blank. |
+| E | 10–19 | Level energy. |
+| DE | 20–21 | Energy uncertainty. |
+| Space | 22 | Readability space. |
+| J | 23–39 | Spin-parity (starts at col 23). |
+| T | 40–49 | Half-life with units (e.g., MEV, FS, PS, S, H, D). |
+| DT | 50–55 | Half-life uncertainty. |
+| L | 56–64 | Angular momentum transfer. |
+| S | 65–74 | Spectroscopic strength. |
+| DS | 75–76 | Uncertainty in S. |
+| C | 77 | Comment flag. |
+| MS | 78–79 | Metastable state (isomer), denoted by 'M '. |
+| Q | 80 | '?' for uncertain/questionable; 'S' for assumed but not observed. |
 
-**CRITICAL: cL Comment Line Association**
+**CRITICAL: Comment Line Association**
 - `cL` comment lines apply **only** to the immediately preceding L-record.
 - Do not modify L-record data based on comments for other levels.
 - Each L-record with or without a following `cL` line is an independent record.
@@ -731,23 +731,24 @@ foreach ($element in $elements) {
 
 **CRITICAL REQUIREMENT:** For ALL data entry tasks involving multiple numeric values (gamma transitions, level energies, intensities, half-lives, etc.), you MUST execute BOTH quality assurance checks before claiming task completion: Bidirectional Positional Check and Random Spot Check.
 
-**TRIGGER CONDITIONS (execute immediately when ANY apply):**
-- Task involves entering ≥50 numeric data points
-- Request mentions "data entry", "extract data", "format tabular data"
-- Bulk numeric input from source tables, figures, or publications
-- Arithmetic-intensive work (calculations, conversions, averaging)
+### Trigger Conditions
 
-**FORBIDDEN BEHAVIORS:**
-- Claiming "task complete" without executing both checks
-- Skipping checks because "data looks correct"
-- Performing checks mentally without documented evidence
-- Using <100% verification rates (all sampled entries must pass)
+Execute these checks immediately when any of the following apply:
+-   The task involves entering ≥50 numeric data points.
+-   The request mentions "data entry," "extract data," or "format tabular data."
+-   Bulk numeric input from source tables, figures, or publications is required.
+-   Arithmetic-intensive work (calculations, conversions, averaging) is performed.
 
+### Forbidden Behaviors
 
+-   Claiming "task complete" without executing both checks.
+-   Skipping checks because data "looks correct."
+-   Performing checks mentally without documented evidence.
+-   Using <100% verification rates (all sampled entries must pass).
 
 ---
 
-### CRITICAL AI WEAKNESS MITIGATION: COLUMN ALIGNMENT AND BLANK CELL HANDLING
+### Critical AI Weakness Mitigation: Column Alignment and Blank Cell Handling
 
 #### AI Frequent Failure Patterns to Avoid
 
@@ -759,69 +760,73 @@ foreach ($element in $elements) {
 
 #### Mandatory Verification Protocol
 
-1.  **Column alignment:** Explicitly map ALL columns including blank ones (never assume positions based on visible data alone).
-2.  **Blank cells:** Count blank cells meticulously (each blank cell shifts all subsequent column positions and can cause catastrophic data misalignment).
-3.  **Bidirectional verification:** Always cross-check both forward counting (header to data) and backward counting (data to header) to ensure accurate column-to-data mapping.
+1.  **Column alignment:** Explicitly map ALL columns, including blank ones. Never assume positions based on visible data alone.
+2.  **Blank cells:** Count blank cells meticulously. Each blank cell shifts all subsequent column positions and can cause catastrophic data misalignment.
+3.  **Bidirectional verification:** Always cross-check both forward counting (header to data) and backward mapping (data to header) to ensure accurate alignment.
 
 #### Critical Validation Steps for Tabular Data
 
 -   **Step 1:** List all header columns explicitly, including blank column positions.
--   **Step 2:** Count blank cells between data columns (they are positional placeholders).
--   **Step 3:** Forward verification (match each header column to corresponding data column).
--   **Step 4:** Backward verification (confirm each data column maps back to correct header).
--   **Step 5:** Arithmetic validation (verify row/column calculations account for blank cell shifts).
+-   **Step 2:** Count blank cells between data columns as positional placeholders.
+-   **Step 3:** Perform forward verification (match each header column to the corresponding data column).
+-   **Step 4:** Perform backward verification (confirm each data column maps back to the correct header).
+-   **Step 5:** Perform arithmetic validation (verify row/column calculations account for blank cell shifts).
 
 #### Example Failure Prevention
 
 ```text
 CSV Header Row: Name,Age,,City,Score
 Data Row: John,25,,NYC,95
-
-WRONG: Assume columns are [Name,Age,City,Score] (ignores blank column)
-CORRECT: Map as [Name,Age,blank,City,Score] (blank shifts City to position 4)
 ```
+
 **CRITICAL COLUMN RULE:** When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns. Only adjust spacing between fields (never move field data to incorrect columns).
 
-### MANDATORY Random Spot Check Protocol
+### MANDATORY Random Spot-Check Protocol
 
 **NON-NEGOTIABLE REQUIREMENT:** After ANY large-scale data entry task, you MUST perform random spot-check validation before claiming completion. This is NOT optional.
 
-**Execution Requirements:**
--   **Minimum sample size:** 5% of total entries (absolute minimum 5 samples)
--   **Selection method:** Random sampling (not sequential or cherry-picked)
--   **Evidence required:** Generate verification script showing:
-    -   Total entry count
-    -   Sample size calculation (e.g., "200 entries → 5% = 10 samples")
-    -   Randomly selected row/line numbers
-    -   Source data values for each sample
-    -   Verification results (PASS/FAIL per sample)
+#### Execution Requirements
 
-**Verification Checklist (100% pass rate required):**
--   ✅ Arithmetic accuracy (no calculation errors)
--   ✅ Values match source data exactly (character-for-character)
--   ✅ Uncertainties match source data exactly
--   ✅ Mapping accuracy (correct ENSDF fields)
--   ✅ Row and column alignment (no off-by-one errors)
+-   **Minimum sample size:** 5% of total entries (absolute minimum: 5 samples).
+-   **Selection method:** Random sampling (neither sequential nor cherry-picked).
+-   **Evidence required:** Generate a verification script showing:
+    -   Total entry count.
+    -   Sample size calculation (e.g., "200 entries → 5% = 10 samples").
+    -   Randomly selected row or line numbers.
+    -   Source data values for each sample.
+    -   Verification results (PASS/FAIL per sample).
 
-**If ANY errors found:**
-1.  **STOP immediately** - do NOT claim partial completion
-2.  Identify root cause (systematic vs. isolated error)
-3.  Analyze error pattern across ALL entries
-4.  Correct all instances of identified error type
-5.  Re-run automated validation (column calibration + energy ordering)
-6.  Perform NEW random spot-check with different samples
-7.  Repeat until 100% pass rate achieved
+#### Verification Checklist (100% Pass Rate Required)
 
-**Integration with Workflow:**
--   Execute AFTER automated validation passes (column calibration + energy ordering)
--   Execute AFTER Bidirectional Positional Check confirms endpoints
--   Execute BEFORE claiming "task completed successfully"
--   Document findings in compliance checklist for user verification
+-   ✅ Arithmetic accuracy (no calculation errors).
+-   ✅ Values match source data exactly (character-for-character).
+-   ✅ Uncertainties match source data exactly.
+-   ✅ Mapping accuracy (correct ENSDF fields used).
+-   ✅ Positional alignment (no off-by-one errors).
 
-**Zero Tolerance Enforcement:**
--   Task is INCOMPLETE until spot-check passes with 0 errors
--   No exceptions for "simple" or "small" data entry tasks
--   Failure to execute = failure to complete assigned task
+#### Procedures for Error Discovery
+
+If any errors are found:
+1.  **Stop immediately** and do not claim completion.
+2.  Identify the root cause (systematic vs. isolated error).
+3.  Analyze the error pattern across all entries.
+4.  Correct all instances of the identified error type.
+5.  Re-run automated validation (`column_calibrate.py` and `check_gamma_ordering.py`).
+6.  Perform a new random spot-check with different samples.
+7.  Repeat until a 100% pass rate is achieved.
+
+#### Workflow Integration
+
+-   Execute after automated validation passes (`column_calibrate.py` and `check_gamma_ordering.py`).
+-   Execute after the Bidirectional Positional Check confirms endpoints.
+-   Execute before claiming "task completed successfully."
+-   Document findings in the compliance checklist for user verification.
+
+#### Zero-Tolerance Enforcement
+
+-   Tasks are incomplete until the spot-check passes with zero errors.
+-   No exceptions for "simple" or "small" data entry tasks.
+-   Failure to execute constitutes failure to complete the assigned task.
 
 ---
 
@@ -830,28 +835,30 @@ CORRECT: Map as [Name,Age,blank,City,Score] (blank shifts City to position 4)
 ### Professional English Grammar
 
 **Common corrections:**
--   **Spelling:** "ohter" to "other", "stoped" to "stopped", "usign" to "using", "coeffcients" to "coefficients", "deexiting" to "deexciting", "multiporities/multipolarties" to "multipolarities", "paretheses" to "parentheses", etc.
--   **Dittography:** "the the", "from from", etc.
--   **Hyphenation:** Rule: [Number]-[Unit]-[Descriptor] [Noun]. Hyphens may have been inserted in word pairs that function as compound adjectives when they occur before a noun, as in "x-ray diffraction," "4-mm-long gas cell," and "R-matrix theory." However, hyphens are deleted from word pairs when they are not used as adjectives before nouns, as in "emission by x rays," "was 4 mm in length," and "the R matrix is tested." "L-transfers" and "half-life" are always hyphenated.
+-   **Spelling:** "other" (not "ohter"), "stopped" (not "stoped"), "using" (not "usign"), "coefficients" (not "coeffcients"), "deexciting" (not "deexiting"), "multipolarities" (not "multiporities"), "parentheses" (not "paretheses").
+-   **Dittography:** Remove duplicated words (e.g., "the the").
+-   **Hyphenation Rule:** [Number]-[Unit]-[Descriptor] [Noun]. Hyphenate compound adjectives occurring before a noun (e.g., "x-ray diffraction," "4-mm-long gas cell," "R-matrix theory"). Do not hyphenate when they are not adjectives before nouns (e.g., "emitted by x rays," "was 4 mm long").
+-   **Consistency:** Always hyphenate "L-transfers" and "half-life."
 
 ### General Comment Ordering at the beginning of Adopted.ens Files
 
-1.  Isotope discovery (reference): experimental details.
-2.  Production: production methods and studies.
-3.  Decay measurements: half-life, decay modes.
-4.  Radius measurement: nuclear radius determinations.
-5.  Mass measurements: mass spectrometry, Q-values.
-6.  Theoretical calculations: models, predictions (always last).
+Order comments as follows:
+1.  **Isotope Discovery:** Experimental details and references.
+2.  **Production:** Methods and studies.
+3.  **Decay Measurements:** Half-life and decay modes.
+4.  **Radius Measurement:** Nuclear radius determinations.
+5.  **Mass Measurements:** Mass spectrometry and Q-values.
+6.  **Theoretical Calculations:** Models and predictions (always last).
 
 ---
 
 ## Document Structure
 
-This document contains 6 main sections:
+This document consists of six main sections:
 
-1. **ENSDF Comment Text Format Standards** — Superscripts, subscripts, Greek letters, mathematical symbols, NSR citation format
-2. **ENSDF 80-Column Format Standards** — NUCID field rules, L/G/DP/B/E record specifications, critical formatting rules
-3. **ENSDF Uncertainty Notation** — Data record fields (plain numbers), comment lines (`{In}` notation)
-4. **ENSDF File Editing Workflow** — File protection, validation tools (ensdf_1line_ruler.py, column_calibrate.py, check_gamma_ordering.py), Sacred Workflow
-5. **Tabular Data Processing and Data Entry Quality Assurance** — Bidirectional checks, random spot checks, AI weakness mitigation
-6. **Academic Standards** — Professional grammar, comment ordering for Adopted.ens files
+1.  **ENSDF Comment Text Format Standards:** Superscripts, subscripts, Greek letters, mathematical symbols, and NSR citation format.
+2.  **ENSDF 80-Column Format Standards:** NUCID field rules, L/G/DP/B/E record specifications, and critical formatting rules.
+3.  **ENSDF Uncertainty Notation:** Data record fields (plain numbers) and comment lines ({In} notation).
+4.  **ENSDF File Editing Workflow:** File protection, validation tools, and the Sacred Workflow method.
+5.  **Tabular Data Processing and QA:** Bidirectional checks, random spot checks, and AI weakness mitigation.
+6.  **Academic Standards:** Professional grammar and comment ordering for Adopted files.

@@ -73,3 +73,15 @@ cG E$ → cG RI$ → cG M$ → cG MR$ → other identifiers
 - Exception comments exist only where source differs from default or averaging is required.
 - No redundant per-gamma default-source comments remain.
 - Comment ordering follows ENSDF sequence rules.
+
+
+
+### General Comment Ordering at the beginning of Adopted.ens Files
+
+Order comments at the beginning of `Adopted.ens` files as follows:
+1.  **Isotope Discovery:** Experimental details and references.
+2.  **Production:** Methods and studies.
+3.  **Decay Measurements:** Half-life and decay modes.
+4.  **Radius Measurement:** Nuclear radius determinations.
+5.  **Mass Measurements:** Mass spectrometry and Q-values.
+6.  **Theoretical Calculations:** Models and predictions (always last).
