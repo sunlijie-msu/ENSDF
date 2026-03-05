@@ -152,7 +152,7 @@
 | 149 | Nucl. Data Sheets 185, 2 (2022) | https://doi.org/10.1016/j.nds.2022.10.001 | Balraj Singh, Jun Chen |
 | 150 | Nucl. Data Sheets 114, 435 (2013) | https://doi.org/10.1016/j.nds.2013.04.001 | Swapan Kumar Basu, Alejandro A. Sonzogni |
 | 151 | Nucl. Data Sheets 110, 1 (2009) | https://doi.org/10.1016/j.nds.2008.11.035 | Balraj Singh |
-| 152 | Nucl. Data Sheets 114, 1497 (2013) | https://doi.org/10.1016/j.nds.2013.11.001 | Marthena J. Martin |
+| 152 | Nucl. Data Sheets 114, 1497 (2013) | https://doi.org/10.1016/j.nds.2013.11.001 | Murray J. Martin |
 | 153 | Nucl. Data Sheets 170, 1 (2020) | https://doi.org/10.1016/j.nds.2020.11.001 | Ninel Nica |
 | 154 | Nucl. Data Sheets 200, 2 (2025) | https://doi.org/10.1016/j.nds.2025.02.002 | Ninel Nica |
 | 155 | Nucl. Data Sheets 160, 1 (2019) | https://doi.org/10.1016/j.nds.2019.100523 | Ninel Nica |
@@ -208,7 +208,7 @@
 | 205 | Nucl. Data Sheets 166, 1 (2020) | https://doi.org/10.1016/j.nds.2020.05.001 | Filip G. Kondev |
 | 206 | Nucl. Data Sheets 201, 346 (2025) | https://doi.org/10.1016/j.nds.2025.03.002 | Filip G. Kondev |
 | 207 | Nucl. Data Sheets 112, 707 (2011) | https://doi.org/10.1016/j.nds.2011.02.002 | Filip G. Kondev, Stoycho Lalkovski |
-| 208 | Nucl. Data Sheets 108, 1583 (2007) | https://doi.org/10.1016/j.nds.2007.07.001 | Marthena J. Martin |
+| 208 | Nucl. Data Sheets 108, 1583 (2007) | https://doi.org/10.1016/j.nds.2007.07.001 | Murray J. Martin |
 | 209 | Nucl. Data Sheets 126, 373 (2015) | https://doi.org/10.1016/j.nds.2015.05.003 | Jun Chen, Filip G. Kondev |
 | 210 | Nucl. Data Sheets 121, 561 (2014) | https://doi.org/10.1016/j.nds.2014.09.004 | M. Shamsuzzoha Basunia |
 | 211 | Nucl. Data Sheets 114, 661 (2013) | https://doi.org/10.1016/j.nds.2013.05.001 | Balraj Singh, Daniel Abriola, Coral M. Baglin et al. |
@@ -242,7 +242,7 @@
 | 239 | Nucl. Data Sheets 122, 293 (2014) | https://doi.org/10.1016/j.nds.2014.11.003 | Edgardo Browne, Jagdish K. Tuli |
 | 240 | Nucl. Data Sheets 206, 359 (2025) | https://doi.org/10.1016/j.nds.2025.11.002 | Chris Morse |
 | 241 | Nucl. Data Sheets 130, 183 (2015) | https://doi.org/10.1016/j.nds.2015.11.004 | Caroline D. Nesaraja |
-| 242 | Nucl. Data Sheets 186, 261 (2022) | https://doi.org/10.1016/j.nds.2022.11.003 | Marthena J. Martin, Caroline D. Nesaraja |
+| 242 | Nucl. Data Sheets 186, 261 (2022) | https://doi.org/10.1016/j.nds.2022.11.003 | Murray J. Martin, Caroline D. Nesaraja |
 | 243 | Nucl. Data Sheets 121, 695 (2014) | https://doi.org/10.1016/j.nds.2014.09.005 | Caroline D. Nesaraja, Elizabeth A. McCutchan |
 | 244 | Nucl. Data Sheets 146, 387 (2017) | https://doi.org/10.1016/j.nds.2017.11.002 | Caroline D. Nesaraja |
 | 245 | Nucl. Data Sheets 189, 1 (2023) | https://doi.org/10.1016/j.nds.2023.04.001 | Caroline D. Nesaraja |

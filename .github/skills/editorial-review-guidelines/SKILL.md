@@ -198,5 +198,3 @@ description: Performs professional editorial review of ENSDF comment lines for g
 | filename.ens | 47 | Subject-Verb | `predict` | `predicts` | NSR key = singular subject |
 | filename.ens | 89-90 | Dittography | `the the decay` | `the decay` | Duplicated word |
 ```
-
-**Category labels**: Dittography, Subject-Verb, Hyphenation, Punctuation, Spelling, Technical Term, Chemical Formula, Passive Voice, Notation Error, Leaked Record ID
