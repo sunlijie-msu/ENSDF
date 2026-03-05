@@ -1,4 +1,4 @@
-# ENSDF Mass Chain Evaluations
+# Nuclear Data Sheets Journal Publication by ENSDF Mass Chains
 
 | Mass Number | Citation (Volume, Page, Year) | DOI | Authors |
 |---|---|---|---|
@@ -15,14 +15,14 @@
 | 11 | Nucl. Phys. A 880, 88 (2012) | https://doi.org/10.1016/j.nuclphysa.2012.01.010 | John H. Kelley, E. Kwan, John E. Purcell et al. |
 | 12 | Nucl. Phys. A 968, 71 (2017) | https://doi.org/10.1016/j.nuclphysa.2017.07.015 | John H. Kelley, John E. Purcell, Che Guey Sheu |
 | 13 | Nucl. Data Sheets 198, 1 (2024) | https://doi.org/10.1016/j.nds.2024.11.001 | John H. Kelley, Che Guey Sheu, John E. Purcell |
-| 14 | Nucl. Phys. A 523, 1 (1991) | https://doi.org/10.1016/0375-9474(91)90446-d | F. Ajzenberg-Selove |
-| 15 | Nucl. Phys. A 523, 1 (1991) | https://doi.org/10.1016/0375-9474(91)90446-d | F. Ajzenberg-Selove |
+| 14 | Nucl. Phys. A 523, 1 (1991) | https://doi.org/10.1016/0375-9474(91)90446-d | Fay Ajzenberg-Selove |
+| 15 | Nucl. Phys. A 523, 1 (1991) | https://doi.org/10.1016/0375-9474(91)90446-d | Fay Ajzenberg-Selove |
 | 16 | Nucl. Phys. A 564, 1 (1993) | https://doi.org/10.1016/0375-9474(93)90073-7 | Donald R. Tilley, Henry R. Weller, C.M. Cheves |
 | 17 | Nucl. Phys. A 564, 1 (1993) | https://doi.org/10.1016/0375-9474(93)90073-7 | Donald R. Tilley, Henry R. Weller, C.M. Cheves |
 | 18 | Nucl. Phys. A 595, 1 (1995) | https://doi.org/10.1016/0375-9474(95)00338-1 | Donald R. Tilley, Henry R. Weller, C.M. Cheves et al. |
 | 19 | Nucl. Phys. A 595, 1 (1995) | https://doi.org/10.1016/0375-9474(95)00338-1 | Donald R. Tilley, Henry R. Weller, C.M. Cheves et al. |
 | 20 | Nucl. Phys. A 636, 249 (1998) | https://doi.org/10.1016/s0375-9474(98)00129-8 | Donald R. Tilley, C.M. Cheves, John H. Kelley et al. |
-| 21 | Nucl. Data Sheets 127, 1 (2015) | https://doi.org/10.1016/j.nds.2015.07.001 | R.B. Firestone |
+| 21 | Nucl. Data Sheets 127, 1 (2015) | https://doi.org/10.1016/j.nds.2015.07.001 | Richard B. Firestone |
 | 22 | Nucl. Data Sheets 127, 69 (2015) | https://doi.org/10.1016/j.nds.2015.07.002 | M. Shamsuzzoha Basunia |
 | 23 | Nucl. Data Sheets 171, 1 (2021) | https://doi.org/10.1016/j.nds.2020.12.001 | M. Shamsuzzoha Basunia, Anagha Chakraborty |
 | 24 | Nucl. Data Sheets 186, 2 (2022) | https://doi.org/10.1016/j.nds.2022.11.002 | M. Shamsuzzoha Basunia, Anagha Chakraborty |
@@ -47,8 +47,8 @@
 | 43 | Nucl. Data Sheets 126, 1 (2015) | https://doi.org/10.1016/j.nds.2015.05.001 | Balraj Singh, Jun Chen |
 | 44 | Nucl. Data Sheets 190, 1 (2023) | https://doi.org/10.1016/j.nds.2023.06.001 | Jun Chen, Balraj Singh |
 | 45 | Nucl. Data Sheets 109, 171 (2008) | https://doi.org/10.1016/j.nds.2007.12.002 | Thomas W. Burrows |
-| 46 | Nucl. Data Sheets 91, 1 (2000) | https://doi.org/10.1006/ndsh.2000.0014 | Sheng-Chun Wu |
-| 47 | Nucl. Data Sheets 203, 1 (2025) | https://doi.org/10.1016/j.nds.2025.06.001 | S. Ota, Elizabeth A. McCutchan |
+| 46 | Nucl. Data Sheets 91, 1 (2000) | https://doi.org/10.1006/ndsh.2000.0014 | Shiu-Chin Wu |
+| 47 | Nucl. Data Sheets 203, 1 (2025) | https://doi.org/10.1016/j.nds.2025.06.001 | Shuya Ota, Elizabeth A. McCutchan |
 | 48 | Nucl. Data Sheets 179, 1 (2022) | https://doi.org/10.1016/j.nds.2021.12.001 | Jun Chen |
 | 49 | Nucl. Data Sheets 109, 1879 (2008) | https://doi.org/10.1016/j.nds.2008.07.001 | Thomas W. Burrows |
 | 50 | Nucl. Data Sheets 157, 1 (2019) | https://doi.org/10.1016/j.nds.2019.04.001 | Jun Chen, Balraj Singh |
@@ -78,7 +78,7 @@
 | 74 | Nucl. Data Sheets 107, 1923 (2006) | https://doi.org/10.1016/j.nds.2006.05.006 | Balraj Singh, Ameenah R. Farhan |
 | 75 | Nucl. Data Sheets 114, 841 (2013) | https://doi.org/10.1016/j.nds.2013.08.001 | Alexandru Negret, Balraj Singh |
 | 76 | Nucl. Data Sheets 194, 3 (2024) | https://doi.org/10.1016/j.nds.2024.02.002 | Balraj Singh, Jun Chen, Ameenah R. Farhan |
-| 77 | Unpublished ENSDF |  |  |
+| 77 | Nucl. Data Sheets 113, 1115 (2012) | https://doi.org/10.1016/j.nds.2012.05.001 | Balraj Singh, Ninel Nica |
 | 78 | Nucl. Data Sheets 110, 1917 (2009) | https://doi.org/10.1016/j.nds.2009.08.001 | Ameenah R. Farhan, Balraj Singh |
 | 79 | Nucl. Data Sheets 135, 193 (2016) | https://doi.org/10.1016/j.nds.2016.06.002 | Balraj Singh |
 | 80 | Nucl. Data Sheets 105, 223 (2005) | https://doi.org/10.1016/j.nds.2005.06.002 | Balraj Singh |
@@ -102,14 +102,14 @@
 | 98 | Nucl. Data Sheets 164, 1 (2020) | https://doi.org/10.1016/j.nds.2020.01.001 | Jun Chen, Balraj Singh |
 | 99 | Nucl. Data Sheets 145, 25 (2017) | https://doi.org/10.1016/j.nds.2017.09.002 | Edgardo Browne, Jagdish K. Tuli |
 | 100 | Nucl. Data Sheets 172, 1 (2021) | https://doi.org/10.1016/j.nds.2021.02.001 | Balraj Singh, Jun Chen |
-| 101 | Unpublished ENSDF |  |  |
+| 101 | Nucl. Data Sheets 83, 1 (1998) | https://doi.org/10.1006/ndsh.1998.0001 | Jean Blachot |
 | 102 | Nucl. Data Sheets 110, 1745 (2009) | https://doi.org/10.1016/j.nds.2009.06.002 | Dirk De Frenne |
 | 103 | Nucl. Data Sheets 110, 2081 (2009) | https://doi.org/10.1016/j.nds.2009.08.002 | Dirk De Frenne |
 | 104 | Nucl. Data Sheets 108, 2035 (2007) | https://doi.org/10.1016/j.nds.2007.09.001 | Jean Blachot |
 | 105 | Nucl. Data Sheets 161, 1 (2019) | https://doi.org/10.1016/j.nds.2019.11.001 | Stoycho Lalkovski, Janos Timar, Zoltan Elekes |
 | 106 | Nucl. Data Sheets 109, 943 (2008) | https://doi.org/10.1016/j.nds.2008.03.002 | Dirk De Frenne, Alexandru Negret |
 | 107 | Nucl. Data Sheets 109, 1383 (2008) | https://doi.org/10.1016/j.nds.2008.05.001 | Jean Blachot |
-| 108 | Unpublished ENSDF |  |  |
+| 108 | Nucl. Data Sheets 91, 135 (2000) | https://doi.org/10.1006/ndsh.2000.0017 | Jean Blachot |
 | 109 | Nucl. Data Sheets 137, 1 (2016) | https://doi.org/10.1016/j.nds.2016.09.001 | S. Kumar, Jun Chen, Filip G. Kondev |
 | 110 | Nucl. Data Sheets 113, 1315 (2012) | https://doi.org/10.1016/j.nds.2012.05.002 | Gürsel Gürdal, Filip G. Kondev |
 | 111 | Nucl. Data Sheets 110, 1239 (2009) | https://doi.org/10.1016/j.nds.2009.04.002 | Jean Blachot |
@@ -118,7 +118,7 @@
 | 114 | Nucl. Data Sheets 113, 515 (2012) | https://doi.org/10.1016/j.nds.2012.02.002 | Jean Blachot |
 | 115 | Nucl. Data Sheets 113, 2391 (2012) | https://doi.org/10.1016/j.nds.2012.10.002 | Jean Blachot |
 | 116 | Nucl. Data Sheets 111, 717 (2010) | https://doi.org/10.1016/j.nds.2010.03.002 | Jean Blachot |
-| 117 | Unpublished ENSDF |  |  |
+| 117 | Nucl. Data Sheets 95, 679 (2002) | https://doi.org/10.1006/ndsh.2002.0007 | Jean Blachot |
 | 118 | Nucl. Data Sheets 75, 99 (1995) | https://doi.org/10.1006/ndsh.1995.1022 | Kazuaki Kitao |
 | 119 | Nucl. Data Sheets 110, 2945 (2009) | https://doi.org/10.1016/j.nds.2009.10.003 | D.M. Symochko, Edgardo Browne, Jagdish K. Tuli |
 | 120 | Nucl. Data Sheets 96, 241 (2002) | https://doi.org/10.1006/ndsh.2002.0012 | Kazuaki Kitao, Yasuhisa Tendow, Atsushi Hashizume |
@@ -166,7 +166,7 @@
 | 162 | Nucl. Data Sheets 195, 1 (2024) | https://doi.org/10.1016/j.nds.2024.04.001 | Ninel Nica |
 | 163 | Nucl. Data Sheets 111, 1211 (2010) | https://doi.org/10.1016/j.nds.2010.04.001 | Carl W. Reich, Balraj Singh |
 | 164 | Nucl. Data Sheets 147, 1 (2018) | https://doi.org/10.1016/j.nds.2018.01.001 | Balraj Singh, Jun Chen |
-| 165 | Unpublished ENSDF |  |  |
+| 165 | Nucl. Data Sheets 194, 460 (2024) | https://doi.org/10.1016/j.nds.2024.02.003 | Balraj Singh, Jun Chen |
 | 166 | Nucl. Data Sheets 109, 1103 (2008) | https://doi.org/10.1016/j.nds.2008.04.001 | Coral M. Baglin |
 | 167 | Nucl. Data Sheets 191, 1 (2023) | https://doi.org/10.1016/j.nds.2023.08.001 | Balraj Singh, Jun Chen |
 | 168 | Nucl. Data Sheets 111, 1807 (2010) | https://doi.org/10.1016/j.nds.2010.07.001 | Coral M. Baglin |
@@ -182,12 +182,12 @@
 | 178 | Nucl. Data Sheets 110, 1473 (2009) | https://doi.org/10.1016/j.nds.2009.05.002 | Eduardo Achterberg, Omar A. Capurro, Guillermo V. Martí |
 | 179 | Nucl. Data Sheets 110, 265 (2009) | https://doi.org/10.1016/j.nds.2009.01.001 | Coral M. Baglin |
 | 180 | Nucl. Data Sheets 126, 151 (2015) | https://doi.org/10.1016/j.nds.2015.05.002 | Elizabeth A. McCutchan |
-| 181 | Nucl. Data Sheets 106, 367 (2005) | https://doi.org/10.1016/j.nds.2005.11.001 | Sheng-Chun Wu |
+| 181 | Nucl. Data Sheets 106, 367 (2005) | https://doi.org/10.1016/j.nds.2005.11.001 | Shiu-Chin Wu |
 | 182 | Nucl. Data Sheets 130, 21 (2015) | https://doi.org/10.1016/j.nds.2015.11.002 | Balraj Singh |
 | 183 | Nucl. Data Sheets 134, 149 (2016) | https://doi.org/10.1016/j.nds.2016.04.002 | Coral M. Baglin |
 | 184 | Nucl. Data Sheets 111, 275 (2010) | https://doi.org/10.1016/j.nds.2010.01.001 | Coral M. Baglin |
-| 185 | Nucl. Data Sheets 106, 619 (2005) | https://doi.org/10.1016/j.nds.2005.11.002 | Sheng-Chun Wu |
-| 186 | Nucl. Data Sheets 183, 1 (2022) | https://doi.org/10.1016/j.nds.2022.06.001 | John C. Batchelder, Aaron M. Hurst, M. Shamsuzzoha Basunia |
+| 185 | Nucl. Data Sheets 106, 619 (2005) | https://doi.org/10.1016/j.nds.2005.11.002 | Shiu-Chin Wu |
+| 186 | Nucl. Data Sheets 183, 1 (2022) | https://doi.org/10.1016/j.nds.2022.06.001 | Jon C. Batchelder, Aaron M. Hurst, M. Shamsuzzoha Basunia |
 | 187 | Nucl. Data Sheets 110, 999 (2009) | https://doi.org/10.1016/j.nds.2009.04.001 | M. Shamsuzzoha Basunia |
 | 188 | Nucl. Data Sheets 150, 1 (2018) | https://doi.org/10.1016/j.nds.2018.05.001 | Filip G. Kondev, Sakari Juutinen, D.J. Hartley |
 | 189 | Nucl. Data Sheets 142, 1 (2017) | https://doi.org/10.1016/j.nds.2017.04.001 | Timothy D. Johnson, Balraj Singh |
@@ -225,7 +225,7 @@
 | 221 | Nucl. Data Sheets 108, 883 (2007) | https://doi.org/10.1016/j.nds.2007.03.002 | Ashok Kumar Jain, Sukhjeet Singh, Suresh Kumar et al. |
 | 222 | Nucl. Data Sheets 192, 315 (2023) | https://doi.org/10.1016/j.nds.2023.10.002 | Balraj Singh, M. Shamsuzzoha Basunia, Jun Chen et al. |
 | 223 | Nucl. Data Sheets 93, 846 (2001) | https://doi.org/10.1006/ndsh.2001.0016 | Edgardo Browne |
-| 224 | Unpublished ENSDF |  |  |
+| 224 | Nucl. Data Sheets 130, 127 (2015) | https://doi.org/10.1016/j.nds.2015.11.003 | Sukhjeet Singh, Balraj Singh |
 | 225 | Nucl. Data Sheets 110, 1409 (2009) | https://doi.org/10.1016/j.nds.2009.04.003 | Ashok Kumar Jain, Rashi Raut, Jagdish K. Tuli |
 | 226 | Nucl. Data Sheets 77, 433 (1996) | https://doi.org/10.1006/ndsh.1996.0005 | Yurdanur A. Akovalı |
 | 227 | Nucl. Data Sheets 132, 257 (2016) | https://doi.org/10.1016/j.nds.2016.01.002 | Filip G. Kondev, Elizabeth A. McCutchan, Balraj Singh et al. |
@@ -253,7 +253,7 @@
 | 249 | Nucl. Data Sheets 195, 718 (2024) | https://doi.org/10.1016/j.nds.2024.04.003 | Caroline D. Nesaraja |
 | 250 | Nucl. Data Sheets 94, 131 (2001) | https://doi.org/10.1006/ndsh.2001.0018 | Yurdanur A. Akovalı |
 | 251 | Nucl. Data Sheets 189, 111 (2023) | https://doi.org/10.1016/j.nds.2023.04.002 | Chris Morse |
-| 252 | Nucl. Data Sheets 172, 543 (2021) | https://doi.org/10.1016/j.nds.2021.02.002 | A.M. Mattera, Shaofei Zhu, A.B. Hayes et al. |
+| 252 | Nucl. Data Sheets 172, 543 (2021) | https://doi.org/10.1016/j.nds.2021.02.002 | Andrea Mattera, Shaofei Zhu, Adam Hayes et al. |
 | 253 | Nucl. Data Sheets 114, 1041 (2013) | https://doi.org/10.1016/j.nds.2013.08.002 | Edgardo Browne, Jagdish K. Tuli |
 | 254 | Nucl. Data Sheets 156, 1 (2019) | https://doi.org/10.1016/j.nds.2019.02.003 | Balraj Singh |
 | 255 | Nucl. Data Sheets 114, 1041 (2013) | https://doi.org/10.1016/j.nds.2013.08.002 | Edgardo Browne, Jagdish K. Tuli |
