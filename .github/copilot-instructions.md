@@ -727,28 +727,13 @@ foreach ($element in $elements) {
 
 ---
 
-## 5. Tabular Data Processing and Data Entry Quality Assurance
+## 5. Tabular Data Extraction and Data Entry Quality Assurance
 
-### MANDATORY DATA ENTRY QUALITY ASSURANCE (ZERO TOLERANCE)
-
-**CRITICAL REQUIREMENT:** For ALL data entry tasks involving multiple numeric values (gamma transitions, level energies, intensities, half-lives, etc.), you MUST execute BOTH quality assurance checks before claiming task completion:
-
-1. **Bidirectional Positional Check (MANDATORY)**
-   - Verify first entry (forward counting from start)
-   - Verify last entry (backward counting from end)
-   - Confirm endpoints match source data exactly
-   - Documents systematic position tracking
-
-2. **Random Spot Check (MANDATORY, 5% minimum sample)**
-   - Randomly select ≥5% of total entries (minimum 5 samples)
-   - Trace each sample back to source data location
-   - Verify value, uncertainty, position, and mapping accuracy
-   - Generate verification script for reproducibility
-   - Document all samples checked with evidence
+**CRITICAL REQUIREMENT:** For ALL data entry tasks involving multiple numeric values (gamma transitions, level energies, intensities, half-lives, etc.), you MUST execute BOTH quality assurance checks before claiming task completion: Bidirectional Positional Check and Random Spot Check.
 
 **TRIGGER CONDITIONS (execute immediately when ANY apply):**
 - Task involves entering ≥50 numeric data points
-- Request mentions "data entry", "add data", "populate table"
+- Request mentions "data entry", "extract data", "format tabular data"
 - Bulk numeric input from source tables, figures, or publications
 - Arithmetic-intensive work (calculations, conversions, averaging)
 
@@ -758,7 +743,7 @@ foreach ($element in $elements) {
 - Performing checks mentally without documented evidence
 - Using <100% verification rates (all sampled entries must pass)
 
-**ENFORCEMENT:** If you skip these checks, you have FAILED the task regardless of data accuracy.
+
 
 ---
 
@@ -795,12 +780,9 @@ Data Row: John,25,,NYC,95
 WRONG: Assume columns are [Name,Age,City,Score] (ignores blank column)
 CORRECT: Map as [Name,Age,blank,City,Score] (blank shifts City to position 4)
 ```
-
-**NEVER PROCEED WITHOUT COMPLETE COLUMN MAPPING VERIFICATION**
-
 **CRITICAL COLUMN RULE:** When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns. Only adjust spacing between fields (never move field data to incorrect columns).
 
-### MANDATORY Random Spot-Check Protocol
+### MANDATORY Random Spot Check Protocol
 
 **NON-NEGOTIABLE REQUIREMENT:** After ANY large-scale data entry task, you MUST perform random spot-check validation before claiming completion. This is NOT optional.
 
