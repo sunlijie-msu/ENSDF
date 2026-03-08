@@ -8,8 +8,8 @@ argument-hint: [CSV file] [ENSDF file]
 
 ## Task Description
 Extract Ei (Excitation energy of the initial level) from the provided CSV file and populate the corresponding L-records in the ENSDF file.
+
 Extract Eg (Gamma energy), Iγ (Gamma intensity), Initial level for each γ-ray transition from the provided CSV file and populate the corresponding E and RI fields in ENSDF G-records.
-DCO ratios should be added as comments following a G-record.
 
 
 ## Additional: "Other Final Levels" Column
