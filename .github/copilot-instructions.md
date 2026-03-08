@@ -729,7 +729,7 @@ foreach ($element in $elements) {
 
 ## 5. Tabular Data Extraction and Data Entry Quality Assurance
 
-**CRITICAL REQUIREMENT:** For ALL data entry tasks involving multiple numeric values (gamma transitions, level energies, intensities, half-lives, etc.), you MUST execute BOTH quality assurance checks before claiming task completion: Bidirectional Positional Check and Random Spot Check.
+**CRITICAL REQUIREMENT:** For ALL data entry tasks involving multiple numeric values (level energies, gamma energies, gamma intensities, half-lives, etc.), you MUST execute BOTH quality assurance checks before claiming task completion: Bidirectional Positional Check and Random Spot Check.
 
 ### Trigger Conditions
 
@@ -750,15 +750,7 @@ Execute these checks immediately when any of the following apply:
 
 ### Critical AI Weakness Mitigation: Column Alignment and Blank Cell Handling
 
-#### AI Frequent Failure Patterns to Avoid
-
--   Assuming column positions without explicit mapping.
--   Ignoring blank cells that shift subsequent data columns.
--   Single-direction counting (forward only) leading to off-by-one errors.
--   Mismatched header-to-data column associations.
--   Treating blank cells as non-existent rather than positional placeholders.
-
-#### Mandatory Verification Protocol
+### Mandatory Bidirectional Positional Check
 
 1.  **Column alignment:** Explicitly map ALL columns, including blank ones. Never assume positions based on visible data alone.
 2.  **Blank cells:** Count blank cells meticulously. Each blank cell shifts all subsequent column positions and can cause catastrophic data misalignment.
@@ -781,7 +773,7 @@ Data Row: John,25,,NYC,95
 
 **CRITICAL COLUMN RULE:** When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns. Only adjust spacing between fields (never move field data to incorrect columns).
 
-### MANDATORY Random Spot-Check Protocol
+### Mandatory Random Spot-Check Protocol
 
 **NON-NEGOTIABLE REQUIREMENT:** After ANY large-scale data entry task, you MUST perform random spot-check validation before claiming completion. This is NOT optional.
 

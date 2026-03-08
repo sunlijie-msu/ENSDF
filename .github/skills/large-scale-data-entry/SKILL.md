@@ -9,17 +9,19 @@ argument-hint: [CSV file] [ENSDF file]
 ## Task Description
 Extract Ei (Excitation energy of the initial level) from the provided CSV file and populate the corresponding L-records in the ENSDF file.
 
-Extract Eg (Gamma energy), Iγ (Gamma intensity), Initial level for each γ-ray transition from the provided CSV file and populate the corresponding E and RI fields in ENSDF G-records.
+A nuclear level may deexcite by multiple gamma transitions, so ensure that all gamma transitions are converted to G-records under the correct L-record with the same Ei value.
+
+Extract Eg (Gamma energy ≈ Ei - Ef) and Iγ (Gamma intensity) for each γ-ray transition from the provided CSV file and populate the corresponding E and RI fields in ENSDF G-records.
 
 
 ## Additional: "Other Final Levels" Column
 
-When present, also process the "Other final levels" column containing γ transitions to final levels not listed in the table header.
+When present, also process the "Other Ef" column containing γ transitions to final levels not listed in the table header.
 
 ### Column Format
-- **Data Format**: `Exf_value(BR_value)` (e.g., `6.10(0.4)` indicates Exf = 6.10 MeV and BR = 0.4)
+- **Data Format**: `Exf_value(Iγ_value)` (e.g., `6120(0.4)` indicates Ef = 6120 keV and Iγ = 0.4)
 
 ### Processing Steps
-1. **Identify Final Level Energy**: Convert MeV to keV (e.g., 6.10 MeV → 6102 keV) and locate the exact energy in the ENSDF file.
-2. **Calculate Gamma Energy**: Eγ = Exi - Exf.
-3. **Create G-Record**: Add G-record with calculated Eγ and BR value, maintaining ascending energy order within the level.
+1. **Unit Conversion**: Convert MeV to keV (e.g., 6.10 MeV → 6102 keV) if necessary.
+2. **Calculate Gamma Energy**: Eγ ≈ Ei - Ef.
+3. **Create G-Record**: Add G-record with calculated Eγ and Iγ value, maintaining ascending energy order within the level.
