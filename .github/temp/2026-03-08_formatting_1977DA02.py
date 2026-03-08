@@ -1,4 +1,4 @@
-import re
+import os
 
 source = """
 146.5 ± 0.5
@@ -49,42 +49,30 @@ source = """
 def format_ensdf(text):
     lines = text.strip().split('\n')
     output = []
-    # Identification and History (simplified for scaffold)
-    output.append(' 34CL    1977DA02      1977DA02                                 202603              ')
-    output.append(' 34CL PN                                                                     7      ')
-    # Ground state
-    output.append(' 34CL  L 0.0                                                                        ')
+    output.append(' 34CL    1977DA02      1977DA02                                 202603          ')
+    output.append(' 34CL PN                                                                     7  ')
+    output.append(' 34CL  L 0.0                                                                    ')
     for line in lines:
         line = line.strip()
         if not line: continue
-        
         tentative = line.startswith('(') and line.endswith(')')
-        if tentative:
-            line = line[1:-1].strip()
-            
+        if tentative: line = line[1:-1].strip()
         parts = line.split('±')
         energy = parts[0].strip()
         unc = parts[1].strip()
-        
-        # Uncertainty formatting
         if '.' in energy:
             dec = len(energy.split('.')[1])
-            u_val = float(unc)
-            u_int = int(round(u_val * (10**dec)))
-            u_str = str(u_int)
+            u_str = str(int(round(float(unc) * (10**dec))))
         else:
             u_str = str(int(float(unc)))
-            
         q = '?' if tentative else ' '
-        # 1-5: NUCID (space, 34, CL)
-        # 8: L
-        # 10-19: Energy left-justified
-        # 20-21: Uncertainty left-justified
-        # 80: Q
         formatted = f' 34CL  L {energy:10}{u_str:2}'
         formatted = formatted.ljust(79) + q
         output.append(formatted)
     return output
 
-for line in format_ensdf(source):
-    print(line)
+path = 'd:/X/ND/ENSDF/A34/Cl34/raw/1977DA02.ens'
+content = '\n'.join(format_ensdf(source)) + '\n'
+with open(path, 'w') as f:
+    f.write(content)
+print(f"Successfully wrote {len(content)} characters to {path}")
