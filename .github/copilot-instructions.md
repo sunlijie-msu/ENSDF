@@ -734,7 +734,7 @@ foreach ($element in $elements) {
 ### Trigger Conditions
 
 Execute these checks immediately when any of the following apply:
--   The task involves entering ≥50 numeric data points.
+-   The task involves entering ≥30 numeric data points.
 -   The request mentions "data entry," "extract data," or "format tabular data."
 -   Bulk numeric input from source tables, figures, or publications is required.
 -   Arithmetic-intensive work (calculations, conversions, averaging) is performed.
