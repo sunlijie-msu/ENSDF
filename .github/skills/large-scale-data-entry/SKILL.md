@@ -6,22 +6,36 @@ argument-hint: [CSV file] [ENSDF file]
 
 # Large-Scale Data Entry for ENSDF
 
-## Task Description
-Extract Ei (Excitation energy of the initial level) from the provided CSV file and populate the corresponding L-records in the ENSDF file.
+## Overview
+Use this skill for large-scale transfer of tabulated nuclear structure data from CSV files into ENSDF L-records and G-records.
 
-A nuclear level may deexcite by multiple gamma transitions, so ensure that all gamma transitions are converted to G-records under the correct L-record with the same Ei value.
+## Core Task
+Extract $E_i$ (excitation energy of the initial level) from the provided CSV file and populate the corresponding L-records in the ENSDF file.
 
-Extract Eg (Gamma energy ≈ Ei - Ef) and Iγ (Gamma intensity) for each γ-ray transition from the provided CSV file and populate the corresponding E and RI fields in ENSDF G-records.
+A nuclear level may deexcite through multiple $\gamma$ transitions. Ensure that all transitions are converted to G-records under the correct L-record for the same $E_i$ value.
 
+Extract $E_\gamma$ ($\approx E_i - E_f$) and $I_\gamma$ (gamma-ray intensity) for each $\gamma$-ray transition from the CSV file, and populate the `E` and `RI` fields in ENSDF G-records.
 
-## Additional: "Other Final Levels" Column
+## Additional Column: Other Final Levels
 
-When present, also process the "Other Ef" column containing γ transitions to final levels not listed in the table header.
+When present, also process the `Other Ef` column, which contains $\gamma$ transitions to final levels not listed in the table header.
 
-### Column Format
-- **Data Format**: `Exf_value(Iγ_value)` (e.g., `6120(0.4)` indicates Ef = 6120 keV and Iγ = 0.4)
+### Data Format
+- Format: `Exf_value(Iγ_value)`
+- Example: `6120(0.4)` indicates $E_f = 6120$ keV and $I_\gamma = 0.4$
 
 ### Processing Steps
-1. **Unit Conversion**: Convert MeV to keV (e.g., 6.10 MeV → 6102 keV) if necessary.
-2. **Calculate Gamma Energy**: Eγ ≈ Ei - Ef.
-3. **Create G-Record**: Add G-record with calculated Eγ and Iγ value, maintaining ascending energy order within the level.
+1. **Unit conversion:** Convert MeV to keV when necessary. Example: `6.10 MeV -> 6102 keV`.
+2. **Gamma-energy calculation:** Calculate $E_\gamma \approx E_i - E_f$.
+3. **G-record creation:** Add a G-record with the calculated $E_\gamma$ and $I_\gamma$ value, maintaining ascending gamma-energy order within the level.
+
+## Execution Notes
+- Apply bidirectional column mapping before entering any data.
+- Count blank cells explicitly; they affect column alignment.
+- Preserve ascending order for both L-record energies and the G-record energies within each level block.
+- Perform a reproducible random 5% spot-check before closing the task.
+
+## Prompt Design Notes
+- Keep prompt files concise and task-focused.
+- Reuse repository instruction files and custom agents instead of duplicating detailed ENSDF rules in each prompt.
+- Reference the relevant instruction or agent files when the skill depends on broader repository standards.
