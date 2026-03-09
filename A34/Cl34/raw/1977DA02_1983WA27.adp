@@ -43,7 +43,7 @@
  34CL  G 927.57       8.56   31                                                 
  34CL cG RI$weighted average of 9.1 {I15} (1977Da02) and 8.54 {I31} (1983Wa27)  
  34CL  G 1492.3       0.76   LT                                                 
- 34CL cG RI$from 1977Da02                                                       
+ 34CL cG RI$from 1977Da02. Other <3.1 (1983Wa27).                               
  34CL  G 1696.9       100.0  6                                                  
  34CL cG RI$other: 100.0 {I30} (1977Da02)                                       
  34CL  G 2011.5       20.2   5                                                  
