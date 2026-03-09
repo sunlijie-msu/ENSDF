@@ -1,6 +1,3 @@
-Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 02/09/2026)
-Generated at: Mon 03/09/2026 at 12:47:08 PM EDT                                 
-                                                                                
  34CL  XA1977DA02                                                               
  34CL  XB1983Wa27                                                               
  34CL  L 0.0                                                                    
@@ -15,14 +12,14 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL  G 204.6        1      LT                                                 
  34CL  G 519.2        1      LT                                                 
  34CL  G 665.6        100                                                       
- 34CL cG E,RI$from 1983Wa27                                                     
+ 34CL cG RI$from 1983Wa27                                                       
  34CL  L 1230.34   8                                                            
  34CL cL E$weighted average of 1230.5 {I3} (1977Da02) and 1230.33 {I8}          
  34CL2cL (1983Wa27)                                                             
  34CL  G 564.7        99.4   17                                                 
  34CL cG RI$weighted average of 102.8 {I28} (1977Da02) and 98.6 {I14} (1983Wa27)
  34CL  G 769.3        100.0  14                                                 
- 34CL cG RI$other: 100.0 {I28} (1977Da02)
+ 34CL cG RI$other: 100.0 {I28} (1977Da02)                                       
  34CL  G 1083.9       81     6                                                  
  34CL cG RI$unweighted average of 75.0 {I28} (1977Da02) and 87.1 {I14}          
  34CL2cG (1983Wa27)                                                             
@@ -85,7 +82,7 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL  G 2119.4       2      LT                                                 
  34CL  G 2434.0       2      LT                                                 
  34CL  G 2580.4       100                                                       
- 34CL cG E,RI$from 1983Wa27                                                     
+ 34CL cG RI$from 1983Wa27                                                       
  34CL  L 2611.03   11                                                           
  34CL cL E$weighted average of 2610.6 {I5} (1977Da02) and 2611.05 {I11}         
  34CL2cL (1983Wa27)                                                             
@@ -126,7 +123,7 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL  G 2668.1       2      LT                                                 
  34CL  G 2982.7       2      LT                                                 
  34CL  G 3129.13      100                                                       
- 34CL cG E,RI$from 1983Wa27                                                     
+ 34CL cG RI$from 1983Wa27                                                       
  34CL  L 3334.0    2                                                            
  34CL cL E$weighted average of 3333.9 {I10} (1977Da02) and 3334.0 {I2}          
  34CL2cL (1983Wa27)                                                             
@@ -188,13 +185,13 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL  G 2416.0       2.7    LT                                                 
  34CL  G 3185.3       4      LT                                                 
  34CL  G 3499.9       100    7                                                  
- 34CL cG E,RI$from 1983Wa27                                                     
+ 34CL cG RI$from 1983Wa27                                                       
  34CL  G 3646.3       4      LT                                                 
  34CL  L 3660.0    3                                                            
  34CL cL E$weighted average of 3659.4 {I15} (1977Da02) and 3660.0 {I3}          
  34CL2cL (1983Wa27)                                                             
  34CL  G 1502.1       100                                                       
- 34CL cG E,RI$from 1983Wa27                                                     
+ 34CL cG RI$from 1983Wa27                                                       
  34CL  G 1772.7       2      LT                                                 
  34CL  G 2429.7       2      LT                                                 
  34CL  G 2994.4       2      LT                                                 
@@ -278,7 +275,7 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL cL E$weighted average of 4325.6 {I5} (1977Da02) and 4325.91 {I15}         
  34CL2cL (1983Wa27)                                                             
  34CL  G 2168.01      100    6                                                  
- 34CL cG E,RI$from 1983Wa27                                                     
+ 34CL cG RI$from 1983Wa27                                                       
  34CL  G 2438.60      1.3    LT                                                 
  34CL  G 3660.3       2.5    LT                                                 
  34CL  G 3864.9       3.8    LT                                                 
@@ -309,7 +306,7 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL cL E$weighted average of 4444.7 {I15} (1977Da02) and 4446.6 {I2}          
  34CL2cL (1983Wa27)                                                             
  34CL  G 4300.2       100                                                       
- 34CL cG E,RI$from 1983Wa27                                                     
+ 34CL cG RI$from 1983Wa27                                                       
  34CL  G 4446.6       3      LT                                                 
  34CL  L 4461.4    3                                                            
  34CL cL E$weighted average of 4462.2 {I15} (1977Da02) and 4461.4 {I3}          
@@ -327,22 +324,22 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL  L 4605.8    10                                                           
  34CL cL E$from 1977Da02                                                        
  34CL  G 1884.4       100                                                       
- 34CL cG E,RI$from 1977Da02                                                     
+ 34CL cG RI$from 1977Da02                                                       
  34CL  G 2447.7       44                                                        
- 34CL cG E,RI$from 1977Da02                                                     
+ 34CL cG RI$from 1977Da02                                                       
  34CL  G 2718.6       35                                                        
- 34CL cG E,RI$from 1977Da02                                                     
+ 34CL cG RI$from 1977Da02                                                       
  34CL  G 3375.3       54                                                        
- 34CL cG E,RI$from 1977Da02                                                     
+ 34CL cG RI$from 1977Da02                                                       
  34CL  G 4459.3       12     LT                                                 
  34CL  L 4609.7    15                                                           
  34CL cL E$from 1977Da02                                                        
  34CL  G 1888.3       71                                                        
- 34CL cG E,RI$from 1977Da02                                                     
+ 34CL cG RI$from 1977Da02                                                       
  34CL  G 3379.2       100                                                       
- 34CL cG E,RI$from 1977Da02                                                     
+ 34CL cG RI$from 1977Da02                                                       
  34CL  G 4463.2       73                                                        
- 34CL cG E,RI$from 1977Da02                                                     
+ 34CL cG RI$from 1977Da02                                                       
  34CL  L 4638.9    4                                                            
  34CL cL E$weighted average of 4638.3 {I15} (1977Da02) and 4638.9 {I4}          
  34CL2cL (1983Wa27)                                                             
@@ -353,7 +350,7 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL  L 4695.7    2                                                            
  34CL cL E$weighted average of 4695 {I2} (1977Da02) and 4695.7 {I2} (1983Wa27)  
  34CL  G 2537.8       100                                                       
- 34CL cG E,RI$from 1983Wa27                                                     
+ 34CL cG RI$from 1983Wa27                                                       
  34CL  G 2808.4       4      LT                                                 
  34CL  G 3465.4       4      LT                                                 
  34CL  G 4030.1       5      LT                                                 
@@ -425,7 +422,7 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL  L 5540.6    11                                                           
  34CL cL E$weighted average of 5540 {I2} (1977Da02) and 5540.8 {I11} (1983Wa27) 
  34CL  G 1940.5       100    8                                                  
- 34CL cG E,RI$from 1983Wa27                                                     
+ 34CL cG RI$from 1983Wa27                                                       
  34CL  G 1995.7       56     8                                                  
  34CL  G 4875.2       9.4    LT                                                 
  34CL  G 5079.8       4.7    LT                                                 
@@ -758,7 +755,7 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL cG RI$from 1977Da02                                                       
  34CL  G 5805.0       2.3    LT                                                 
  34CL  G 6119.6       72                                                        
- 34CL cG E,RI$from 1983Wa27                                                     
+ 34CL cG RI$from 1983Wa27                                                       
  34CL  G 6266         2.6    LT                                                 
  34CL  L 6272                                                                   
  34CL cL E$from 1983Wa27                                                        
@@ -894,7 +891,7 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL  G 1840.3       8.1                                                       
  34CL cG RI$from 1983Wa27                                                       
  34CL  G 1844.2       8.3    42                                                 
- 34CL cG E,RI$from 1977Da02                                                     
+ 34CL cG RI$from 1977Da02                                                       
  34CL  G 1988.6       6.9                                                       
  34CL  G 2003.4       7.3    38                                                 
  34CL cG RI$from 1977Da02                                                       
@@ -1217,9 +1214,9 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL  G 2169.6       2.3    12                                                 
  34CL cG RI$from 1977Da02                                                       
  34CL  G 2277.3       1.16   58                                                 
- 34CL cG E,RI$from 1977Da02                                                     
+ 34CL cG RI$from 1977Da02                                                       
  34CL  G 2281.2       1.16   58                                                 
- 34CL cG E,RI$from 1977Da02                                                     
+ 34CL cG RI$from 1977Da02                                                       
  34CL  G 3503.7       2.3    12                                                 
  34CL cG RI$from 1977Da02                                                       
  34CL  G 4705.90      1.16   58                                                 
@@ -1272,14 +1269,14 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL  G 2213.6       13.0   65                                                 
  34CL cG RI$from 1977Da02                                                       
  34CL  G 2319.3       91     9                                                  
- 34CL cG E,RI$from 1977Da02                                                     
+ 34CL cG RI$from 1977Da02                                                       
  34CL  G 2323.2       100    10                                                 
- 34CL cG E,RI$from 1977Da02                                                     
+ 34CL cG RI$from 1977Da02                                                       
  34CL  G 2325.2       64                                                        
  34CL  G 2415.2       4.4    22                                                 
  34CL cG RI$from 1977Da02                                                       
  34CL  G 2469.6       9.1                                                       
- 34CL cG E,RI$from 1983Wa27                                                     
+ 34CL cG RI$from 1983Wa27                                                       
  34CL  G 2576.7       8.7    44                                                 
  34CL cG RI$from 1977Da02                                                       
  34CL  G 2947.5       17.4   87                                                 
@@ -1335,7 +1332,7 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL  G 2732.09      0.88   44                                                 
  34CL cG RI$from 1977Da02                                                       
  34CL  G 3284.16      0.17                                                      
- 34CL cG E,RI$from 1983Wa27                                                     
+ 34CL cG RI$from 1983Wa27                                                       
  34CL  G 3398.0       1.75   88                                                 
  34CL cG RI$from 1977Da02                                                       
  34CL  G 3928.87      4.4    23                                                 
@@ -1358,7 +1355,7 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL  G 6597.0       100    10                                                 
  34CL cG RI$from 1977Da02                                                       
  34CL  G 6911.6       0.86                                                      
- 34CL cG E,RI$from 1983Wa27                                                     
+ 34CL cG RI$from 1983Wa27                                                       
  34CL  G 7058         0.35   LT                                                 
  34CL  L 7080                                                                   
  34CL cL E$from 1983Wa27                                                        
@@ -1385,4 +1382,4 @@ Generated at: Mon 03/09/2026 at 12:47:08 PM EDT
  34CL  G 6933.6       28.6   29                                                 
  34CL cG RI$from 1977Da02                                                       
  34CL  G 7080         3.0    LT                                                 
-                                                                                
+
