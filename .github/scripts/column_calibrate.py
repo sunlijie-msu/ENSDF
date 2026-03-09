@@ -252,7 +252,13 @@ def validate_de_field(filename):
             if de_field_content.strip():
                 de_fields_analyzed += 1
                 de_value = de_field_content.strip()
-                
+
+                # LEFT-JUSTIFICATION CHECK
+                if de_field_content[0] == ' ':
+                    de_field_errors += 1
+                    print(f"  ERROR: Line {line_num}: DE field '{de_field_content}' is NOT left-justified. Must start at column 20.")
+                    print(f"         Line: {line_content}")
+
                 # Check if content is numeric (typical for uncertainty values)
                 if not de_value.isdigit():
                     de_field_errors += 1
@@ -1079,6 +1085,11 @@ def validate_dri_field(filename):
             
             # Check DRI field content if not empty
             if dri_field_stripped:
+                # LEFT-JUSTIFICATION CHECK
+                if dri_field[0] == ' ':
+                    dri_field_errors += 1
+                    print(f"[ERROR] Line {line_num}: DRI field '{dri_field}' is NOT left-justified. Must start at column 30.")
+                
                 # Valid DRI: digits (1-2 chars) OR special markers
                 is_digit = dri_field_stripped.isdigit()
                 is_marker = dri_field_stripped in valid_dri_markers
