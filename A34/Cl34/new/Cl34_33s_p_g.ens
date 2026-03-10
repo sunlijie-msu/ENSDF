@@ -108,7 +108,7 @@
  34CL2d  2013Fa10, 1994Li20                                                     
  34CL d  ???Added |w|g values from 1964Gl04, 1983Wa27, 1973An13, 1977Da02,      
  34CL2d  2013Fa10                                                               
- 34CL d  ???Added I|g values from 1977Da02, 1983Wa27                            
+ 34CL d  ???Added I|g values from 1977Da02, 1983Wa27, 2011Fr04, 2020Pa40.       
  34CL c  (p,|g) bound states and resonances: 1983Wa27, 1977Da02, 1977Da03       
  34CL cG E$Deduced by evaluators from differences of initial and final levels   
  34CL cG RI$Branching ratios are from 1983Wa27 and 1977Da02, unless noted       
@@ -131,7 +131,6 @@
  34CL7c  (2J{-p}+1)(2J{-T}+1) factor. Therefore, to obtain the standard         
  34CL8c  resonance strength, all the resonance strengths provided in the        
  34CL9c  comments below should be divided by 8.                                 
- 34CL cG RI(Z)$From 2011Fr04                                                    
  34CL cG E(X)$Gamma branching not observed (1983Wa27)                           
  34CL cL E$From 1983Wa27, unless noted otherwise                                
  34CL cL E$For resonances above S(p)({+34}Cl)=5143.20 {I5} (2021Wa16),          
@@ -142,7 +141,8 @@
  34CL6cL 1973Fa07, and 1976Me12; for levels above 8.27 MeV (E{-p}>1.95 MeV),    
  34CL7cL E{-p}(lab) is mainly from 1976Sp08, unless otherwise noted.            
  34CL cL S$LABEL=E{-p}(lab) (keV)                                               
- 34CL cG RI$from 1983Wa27, unless otherwise noted.                              
+ 34CL cG RI$From 1983Wa27, unless otherwise noted.                              
+ 34CL cG RI(F)$From 2011Fr04                                                    
  34CL PN                                                                     6  
  34CL  L 0                                                                      
  34CL  L 146.5     5                                                            
@@ -754,66 +754,74 @@
  34CL  G 5079.8       4.7    LT                                                 
  34CL  G 5394.4       7.8    LT                                                 
  34CL  G 5540.8       6.3    LT                                                 
- 34CL  L 5576.9    10                                           447       1     
- 34CL cL E$from E{-r}=434.4 {I10}: weighted average of E{-r}=433.7 {I10}        
- 34CL2cL (1964Gl04) and E{-r}=435 {I1} (2013Fa10).                              
- 34CL cL S$from 1964Gl04, corresponding to E{-r}=433.7 {I10}.                   
+ 34CL  L 5577.6    10                                           447       1     
+ 34CL cL E$from E{-c.m.}=434.4 {I10}: weighted average of E{-c.m.}=433.7 {I10}  
+ 34CL2cL (1964Gl04) and E{-c.m.}=435 {I1} (2013Fa10).                           
+ 34CL cL S$from 1964Gl04, corresponding to E{-c.m.}=433.7 {I10}.                
  34CL cL $|w|g=50 meV {I+10-7} (2013Fa10)                                       
  34CL cL $|w|g=0.4 {I1} (1983Wa27)                                              
- 34CL  G 1437.1       0.2                                                   Z   
- 34CL  G 2031.8       42.2                                                  Z   
- 34CL cG RI$other: 42                                                           
- 34CL  G 2965.7       0.3                                                       
- 34CL  G 2996.4       0.3    3                                              Z   
- 34CL  G 3201.0       1.3    5                                              Z   
- 34CL cG RI$other: 0.4                                                          
- 34CL  G 3689.4       2.3    4                                              Z   
- 34CL cG RI$other: 2.0                                                          
- 34CL  G 4346.3       4.3    6                                              Z   
- 34CL cG RI$other: 4.2                                                          
- 34CL  G 4911.0       0.3    LT                                                 
- 34CL  G 5115.5       0.6    LT                                                 
- 34CL  G 5430.0       26.1   23                                             Z   
- 34CL cG RI$other: 26                                                           
- 34CL  G 5576.4       0.1    LT                                                 
+ 34CL  G 1977.6       28.7   66                                             F   
+ 34CL cG RI$other: 38.1 (1983Wa27)                                              
+ 34CL  G 2032.6       100                                                   F   
+ 34CL cG RI$other: 100 (1983Wa27)                                               
+ 34CL  G 2448.6       3.9    LT                                             F   
+ 34CL  G 2856.6       22.6   23                                             F   
+ 34CL cG RI$other: 21.2 (1983Wa27)                                              
+ 34CL  G 2966.6       0.7                                                       
+ 34CL cG $Only observed in 1983Wa27 but not in 2011Fr04.                        
+ 34CL  G 2997.6       1.2    LT                                             F   
+ 34CL  G 3201.6       3.0    12                                             F   
+ 34CL cG RI$other: 1.0 (1983Wa27)                                               
+ 34CL  G 3690.6       5.5    10                                             F   
+ 34CL cG RI$other: 4.8 (1983Wa27)                                               
+ 34CL  G 4347.6       10.3   14                                             F   
+ 34CL cG RI$other: 10 (1983Wa27)                                                
+ 34CL  G 4911.6       0.7    LT                                                 
+ 34CL cG $Only observed in 1983Wa27 but not in 2011Fr04.                        
+ 34CL  G 5116.6       1.4    LT                                                 
+ 34CL cG $Only observed in 1983Wa27 but not in 2011Fr04.                        
+ 34CL  G 5430.6       61.9   55                                             F   
+ 34CL cG RI$other: 61.9 (1983Wa27)                                              
+ 34CL  G 5577.6       0.2    LT                                                 
+ 34CL cG $Only observed in 1983Wa27 but not in 2011Fr04.                        
  34CL  L 5635.75   20                                           507.6     2     
- 34CL cL $E{-r}=491 keV {I5} (2013Fa10)                                         
- 34CL cL $|w|g=61 meV {I+11-8} (2013Fa10)                                       
+ 34CL cL E$from E{-c.m.}=492.51 {I20}: weighted average of 492.1 {I10} (1959Ku79), 492.0 {I10} (1964Gl04), 492.55 {I20} (1983Wa27), and 491 keV {I5} (2013Fa10).
  34CL cL $E{-p}(lab)=507.6 {I2}: weighted average of 507.1 {I10} (1959Ku79), 507
  34CL2cL {I1} (1964Gl04), and 507.6 {I2} (1983Wa27).                            
  34CL cL $|w|g=0.16 {I8} (1964Gl04)                                             
  34CL cL $|w|g=0.7 {I2} (1983Wa27)                                              
+ 34CL cL $|w|g=61 meV {I+11-8} (2013Fa10)                                       
  34CL  G 996.8        0.3                                                       
  34CL  G 1218.3       0.3                                                       
- 34CL  G 1843.9       2.6    5                                              Z   
+ 34CL  G 1843.9       2.6    5                                              F   
  34CL cG RI$other: 1.7                                                          
  34CL  G 1861.8       0.7                                                       
- 34CL  G 1975.2       0.1    1                                              Z   
- 34CL  G 1989.3       0.1    1                                              Z   
- 34CL  G 2003.9       0.1    1                                              Z   
- 34CL  G 2506.5       2.7    3                                              Z   
+ 34CL  G 1975.2       0.1    1                                              F   
+ 34CL  G 1989.3       0.1    1                                              F   
+ 34CL  G 2003.9       0.1    1                                              F   
+ 34CL  G 2506.5       2.7    3                                              F   
  34CL cG RI$other: 2.8                                                          
- 34CL  G 2914.5       0.7    2                                              Z   
+ 34CL  G 2914.5       0.7    2                                              F   
  34CL cG RI$other: 0.5                                                          
- 34CL  G 3024.5       0.1    1                                              Z   
- 34CL  G 3055.2       8.4    5                                              Z   
+ 34CL  G 3024.5       0.1    1                                              F   
+ 34CL  G 3055.2       8.4    5                                              F   
  34CL cG RI$other: 10                                                           
  34CL cG M$D |DJ=1 |g (1983Wa27)                                                
  34CL cG $A{-2}=-0.13 {I6}, A{-4}=+0.05 {I7} (1983Wa27)                         
- 34CL  G 3259.8       0.1    1                                              Z   
- 34CL  G 3454.4       0.2    2                                              Z   
- 34CL  G 3477.6       0.4    2                                              Z   
- 34CL  G 3748.2       1.2    2                                              Z   
+ 34CL  G 3259.8       0.1    1                                              F   
+ 34CL  G 3454.4       0.2    2                                              F   
+ 34CL  G 3477.6       0.4    2                                              F   
+ 34CL  G 3748.2       1.2    2                                              F   
  34CL cG RI$other: 1.3                                                          
- 34CL  G 4405.1       0.4    3                                              Z   
+ 34CL  G 4405.1       0.4    3                                              F   
  34CL cG RI$other: 0.4                                                          
- 34CL  G 4969.7       10.6   7                                              Z   
+ 34CL  G 4969.7       10.6   7                                              F   
  34CL cG RI$other: 11                                                           
- 34CL  G 5174.3       1.5    5                                              Z   
+ 34CL  G 5174.3       1.5    5                                              F   
  34CL cG RI$other: 2.0                                                          
- 34CL  G 5488.8       0.2    2                                              Z   
+ 34CL  G 5488.8       0.2    2                                              F   
  34CL cG RI$other: <0.3                                                         
- 34CL  G 5635.2       69.1                                                  Z   
+ 34CL  G 5635.2       69.1                                                  F   
  34CL cG RI$other: 69                                                           
  34CL cG M$(D) |DJ=(0) |g (1983Wa27)                                            
  34CL cG $A{-2}=+0.27 {I3}, A{-4}=+0.05 {I4} (1983Wa27)                         
@@ -824,33 +832,33 @@
  34CL  G 1255.5       0.3                                                       
  34CL  G 1318.6       0.5                                                       
  34CL  G 1732.8       1.3                                                       
- 34CL  G 1881.1       2.1    21                                             Z   
+ 34CL  G 1881.1       2.1    21                                             F   
  34CL cG RI$other: 1.4                                                          
- 34CL  G 1899.0       1.5    15                                             Z   
+ 34CL  G 1899.0       1.5    15                                             F   
  34CL cG RI$other: 0.4                                                          
- 34CL  G 2013.1       1.1    11                                             Z   
- 34CL  G 2026.8       1.0    10                                             Z   
- 34CL  G 2041.0       1.3    13                                             Z   
- 34CL  G 2072.6       1.7    17                                             Z   
- 34CL  G 2289.5       0.4    4                                              Z   
+ 34CL  G 2013.1       1.1    11                                             F   
+ 34CL  G 2026.8       1.0    10                                             F   
+ 34CL  G 2041.0       1.3    13                                             F   
+ 34CL  G 2072.6       1.7    17                                             F   
+ 34CL  G 2289.5       0.4    4                                              F   
  34CL  G 2543.7       1.8                                                       
- 34CL  G 2951.7       1.2    12                                             Z   
- 34CL  G 3061.7       0.5    5                                              Z   
- 34CL  G 3092.3       7.3    16                                             Z   
+ 34CL  G 2951.7       1.2    12                                             F   
+ 34CL  G 3061.7       0.5    5                                              F   
+ 34CL  G 3092.3       7.3    16                                             F   
  34CL cG RI$other: 4.9                                                          
- 34CL  G 3297.0       1.0    10                                             Z   
- 34CL  G 3491.3       1.0    10                                             Z   
- 34CL  G 3514.8       5.6    15                                             Z   
+ 34CL  G 3297.0       1.0    10                                             F   
+ 34CL  G 3491.3       1.0    10                                             F   
+ 34CL  G 3514.8       5.6    15                                             F   
  34CL cG RI$other: 7.4                                                          
- 34CL  G 3785.4       1.4    14                                             Z   
+ 34CL  G 3785.4       1.4    14                                             F   
  34CL cG RI$other: 1.3                                                          
- 34CL  G 5007.0       4.1    22                                             Z   
+ 34CL  G 5007.0       4.1    22                                             F   
  34CL cG RI$other: 6.1                                                          
- 34CL  G 5211.5       1.2    12                                             Z   
+ 34CL  G 5211.5       1.2    12                                             F   
  34CL cG RI$other: <0.4                                                         
- 34CL  G 5526.0       0.4    4                                              Z   
+ 34CL  G 5526.0       0.4    4                                              F   
  34CL cG RI$other: <0.3                                                         
- 34CL  G 5672.3       63.4                                                  Z   
+ 34CL  G 5672.3       63.4                                                  F   
  34CL cG RI$other: 74                                                           
  34CL  L 5763.3    10                                           639       1 d   
  34CL cL $|w|g=0.011 {I6} (1964Gl04)                                            
