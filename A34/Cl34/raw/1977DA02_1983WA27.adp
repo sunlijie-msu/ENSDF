@@ -565,3 +565,815 @@
  34CL  G 5629.0       2.7                                                       
  34CL  G 5943.6       0.33   LT                                                 
  34CL  G 6090         100                                                       
+ 34CL  L 6136                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1717.6       1.8    LT                                                 
+ 34CL  G 2151.8       1.8    LT                                                 
+ 34CL  G 2752.7       1.82   91                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.4 (1983Wa27).                               
+ 34CL  G 3414.9       1.82   91                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 3524.95      3.6    18                                                 
+ 34CL cG RI$from 1977Da02. Other: 3.8 (1983Wa27).                               
+ 34CL  G 3555.6       1.82   91                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.2 (1983Wa27).                               
+ 34CL  G 3954.90      1.82   91                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.7 (1983Wa27).                               
+ 34CL  G 3978.10      10.9   11                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 4905.67      40     4                                                  
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 5470.4       100    10                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 5675.0       0.52   LT                                                 
+ 34CL  G 5989.6       20.0   20                                                 
+ 34CL cG RI$from 1977Da02. Other: 17 (1983Wa27).                                
+ 34CL  L 6141                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1625.2       1.16   58                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.3 (1983Wa27).                               
+ 34CL  G 1723.6       0.58   29                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.5 (1983Wa27).                               
+ 34CL  G 1786.7       1.74   93                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.7 (1983Wa27).                               
+ 34CL  G 2349.3       0.58                                                      
+ 34CL  G 2367.16      2.3    12                                                 
+ 34CL cG RI$from 1977Da02. Other: 2.6 (1983Wa27).                               
+ 34CL  G 2593.8       0.58   29                                                 
+ 34CL  G 2755.4       0.58   LT                                                 
+ 34CL  G 3419.9       6.4    7                                                  
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 3560.6       1.16   58                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.4 (1983Wa27).                               
+ 34CL  G 3983.10      0.58                                                      
+ 34CL  G 4908.5       2.3    12                                                 
+ 34CL  G 5475.4       0.23   LT                                                 
+ 34CL  G 5680.0       0.12   LT                                                 
+ 34CL  G 5994.6       0.35   LT                                                 
+ 34CL  G 6141         100    10                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  L 6168                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1651.7       4.4    24                                                 
+ 34CL  G 2027.1       2.9    LT                                                 
+ 34CL  G 2091.7       14.7   74                                                 
+ 34CL cG RI$from 1977Da02. Other: 15 (1983Wa27).                                
+ 34CL  G 2184.5       100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 2567.73      23.5   24                                                 
+ 34CL cG RI$from 1977Da02. Other: 23 (1983Wa27).                                
+ 34CL  G 2622.93      14.7   74                                                 
+ 34CL cG RI$from 1977Da02. Other: 15 (1983Wa27).                                
+ 34CL  G 3446.9       20.6   21                                                 
+ 34CL cG RI$from 1977Da02. Other: 25 (1983Wa27).                                
+ 34CL  G 3556.95      5.9    30                                                 
+ 34CL cG RI$from 1977Da02. Other: 8.8 (1983Wa27).                               
+ 34CL  G 3986.90      14.7   74                                                 
+ 34CL cG RI$from 1977Da02. Other: 15 (1983Wa27).                                
+ 34CL  G 4010.10      1.47   74                                                 
+ 34CL cG RI$from 1977Da02. Other: 2.1 (1983Wa27).                               
+ 34CL  G 4280.69      8.8    44                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 4937.67      11.8   59                                                 
+ 34CL cG RI$from 1977Da02. Other: 9.4 (1983Wa27).                               
+ 34CL  G 5502.4       0.61   LT                                                 
+ 34CL  G 5707.0       0.91   LT                                                 
+ 34CL  G 6021.6       74     8                                                  
+ 34CL cG RI$from 1977Da02. Other: 85 (1983Wa27).                                
+ 34CL  G 6168         0.91   LT                                                 
+ 34CL  L 6180                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1854.09      11.4   57                                                 
+ 34CL cG RI$from 1977Da02. Other: 12 (1983Wa27).                                
+ 34CL  G 2215.9       2.3    12                                                 
+ 34CL cG RI$from 1977Da02. Other: 3.1 (1983Wa27).                               
+ 34CL  G 2796.7       4.6    23                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 2846.0       6.8    34                                                 
+ 34CL cG RI$from 1977Da02. Other: 5.5 (1983Wa27).                               
+ 34CL  G 3050.87      1.14   57                                                 
+ 34CL cG RI$from 1977Da02. Other: 0.71 (1983Wa27).                              
+ 34CL  G 3458.9       1.14   57                                                 
+ 34CL cG RI$from 1977Da02. Other: 0.95 (1983Wa27).                              
+ 34CL  G 3568.95      9.1    46                                                 
+ 34CL cG RI$from 1977Da02. Other: 8.6 (1983Wa27).                               
+ 34CL  G 3599.6       18.2   18                                                 
+ 34CL cG RI$from 1977Da02. Other: 19 (1983Wa27).                                
+ 34CL  G 3998.90      1.4                                                       
+ 34CL  G 4022.10      8.0    41                                                 
+ 34CL cG RI$from 1977Da02. Other: 10 (1983Wa27).                                
+ 34CL  G 4292.69      9.1    46                                                 
+ 34CL cG RI$from 1977Da02. Other: 9.8 (1983Wa27).                               
+ 34CL  G 4949.67      25.0   25                                                 
+ 34CL cG RI$from 1977Da02. Other: 23 (1983Wa27).                                
+ 34CL  G 5514.4       100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 5719.0       10.2   52                                                 
+ 34CL cG RI$from 1977Da02. Other: 11 (1983Wa27).                                
+ 34CL  G 6033.6       20.5   21                                                 
+ 34CL cG RI$from 1977Da02. Other: 24 (1983Wa27).                                
+ 34CL  G 6180         1.9                                                       
+ 34CL  L 6206                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1381.5       1.04   52                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.9 (1983Wa27).                               
+ 34CL  G 2129.7       18.8   19                                                 
+ 34CL cG RI$from 1977Da02. Other: 18 (1983Wa27).                                
+ 34CL  G 2222.5       7.3    38                                                 
+ 34CL cG RI$from 1977Da02. Other: 13 (1983Wa27).                                
+ 34CL  G 2559.4       1.04   52                                                 
+ 34CL  G 2574.2       20.8   21                                                 
+ 34CL cG RI$from 1977Da02. Other: 19 (1983Wa27).                                
+ 34CL  G 2605.73      100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 2660.93      48     5                                                  
+ 34CL cG RI$from 1977Da02. Other: 49 (1983Wa27).                                
+ 34CL  G 3830.3       4.2    21                                                 
+ 34CL cG RI$from 1977Da02. Other: 4.5 (1983Wa27).                               
+ 34CL  G 4024.90      6.3    31                                                 
+ 34CL cG RI$from 1977Da02. Other: 5.7 (1983Wa27).                               
+ 34CL  G 4318.69      0.43                                                      
+ 34CL  G 5540.4       0.21   LT                                                 
+ 34CL  G 5745.0       0.21   LT                                                 
+ 34CL  G 6059.6       1.04   52                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.7 (1983Wa27).                               
+ 34CL  G 6206         0.21   LT                                                 
+ 34CL  L 6217                                                                   
+ 34CL  G 1499.5       100    10                                                 
+ 34CL  G 1891.4       3.9    21                                                 
+ 34CL  G 2571.4       18.0   18                                                 
+ 34CL  G 2585.9       2.6    13                                                 
+ 34CL  G 2883.1       7.7    39                                                 
+ 34CL  G 3606.4       5.1    26                                                 
+ 34CL  G 3841.4       11.5   59                                                 
+ 34CL  G 4035.8       46     5                                                  
+ 34CL  G 4986.5       28.2   28                                                 
+ 34CL  G 6070.5       33.3   33                                                 
+ 34CL  L 6228                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1589.1       3.3    18                                                 
+ 34CL cG RI$from 1977Da02. Other: 3.9 (1983Wa27).                               
+ 34CL  G 1712.2       24.4   25                                                 
+ 34CL cG RI$from 1977Da02. Other: 29 (1983Wa27).                                
+ 34CL  G 1810.6       6.7    33                                                 
+ 34CL cG RI$from 1977Da02. Other: 6.3 (1983Wa27).                               
+ 34CL  G 1873.7       20.0   20                                                 
+ 34CL cG RI$from 1977Da02. Other: 23 (1983Wa27).                                
+ 34CL  G 1902.09      2.2    11                                                 
+ 34CL cG RI$from 1977Da02. Other: 2.2 (1983Wa27).                               
+ 34CL  G 2088.2       13.3   13                                                 
+ 34CL cG RI$from 1977Da02. Other: 12 (1983Wa27).                                
+ 34CL  G 2454.16      33.3   33                                                 
+ 34CL cG RI$from 1977Da02. Other: 44 (1983Wa27).                                
+ 34CL  G 3098.87      2.4                                                       
+ 34CL  G 3506.9       100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 4070.10      11.1   56                                                 
+ 34CL cG RI$from 1977Da02. Other: 9.5 (1983Wa27).                               
+ 34CL  G 5562.4       0.49   LT                                                 
+ 34CL  G 5767.0       4.4    22                                                 
+ 34CL cG RI$from 1977Da02. Other: 5.1 (1983Wa27).                               
+ 34CL  G 6081.6       0.49   LT                                                 
+ 34CL  G 6228         3.3    18                                                 
+ 34CL cG RI$from 1977Da02. Other: 5.6 (1983Wa27).                               
+ 34CL  L 6266                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 3544.9       5.8    29                                                 
+ 34CL cG RI$from 1977Da02. Other: 4.9 (1983Wa27).                               
+ 34CL  G 4084.90      5.8                                                       
+ 34CL  G 4108.10      100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 4378.69      11.6   12                                                 
+ 34CL cG RI$from 1977Da02. Other: 11 (1983Wa27).                                
+ 34CL  G 5035.67      8.6                                                       
+ 34CL  G 5600.4       27.5   28                                                 
+ 34CL cG RI$from 1977Da02. Other: 30 (1983Wa27).                                
+ 34CL  G 5805.0       2.3    LT                                                 
+ 34CL  G 6119.6       72                                                        
+ 34CL cG RI$from 1983Wa27. Other: <33 (1977Da02).                               
+ 34CL  G 6266         2.6    LT                                                 
+ 34CL  L 6272                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1825.4       0.31                                                      
+ 34CL  G 2195.7       1.11   64                                                 
+ 34CL cG RI$from 1977Da02. Other: 0.62 (1983Wa27).                              
+ 34CL  G 2307.9       1.27   64                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.4 (1983Wa27).                               
+ 34CL  G 2938.0       0.77                                                      
+ 34CL  G 3660.95      12.7   13                                                 
+ 34CL cG RI$from 1977Da02. Other: 10 (1983Wa27).                                
+ 34CL  G 3896.3       100    10                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 4090.90      25.4   26                                                 
+ 34CL cG RI$from 1977Da02. Other: 22 (1983Wa27).                                
+ 34CL  G 4114.10      1.59   80                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.4 (1983Wa27).                               
+ 34CL  G 4384.69      11.1   11                                                 
+ 34CL cG RI$from 1977Da02. Other: 9.9 (1983Wa27).                               
+ 34CL  G 5040.5       0.79   40                                                 
+ 34CL  G 5606.4       0.15   LT                                                 
+ 34CL  G 5811.0       0.15   LT                                                 
+ 34CL  G 6125.6       4.8    24                                                 
+ 34CL cG RI$from 1977Da02. Other: 7.7 (1983Wa27).                               
+ 34CL  G 6272         0.15   LT                                                 
+ 34CL  L 6322                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1716.2       4.6    23                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 1967.7       2.3    12                                                 
+ 34CL cG RI$from 1977Da02. Other: 2.0 (1983Wa27).                               
+ 34CL  G 2244.1       6.8    34                                                 
+ 34CL  G 2688.9       2.3    12                                                 
+ 34CL  G 2776.93      9.1    46                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 2936.4       1.14   57                                                 
+ 34CL  G 3600.9       12.5   14                                                 
+ 34CL cG RI$from 1977Da02. Other: 10 (1983Wa27).                                
+ 34CL  G 3710.95      4.6    23                                                 
+ 34CL cG RI$from 1977Da02. Other: 0.61 (1983Wa27).                              
+ 34CL  G 3741.6       20.5   21                                                 
+ 34CL cG RI$from 1977Da02. Other: 17 (1983Wa27).                                
+ 34CL  G 4140.90      2.3    12                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.6 (1983Wa27).                               
+ 34CL  G 4434.69      2.3    12                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.4 (1983Wa27).                               
+ 34CL  G 5091.67      4.6    23                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 5656.4       36     4                                                  
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 5861.0       18.2   18                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6175.6       100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 6322         0.61   LT                                                 
+ 34CL  L 6359                                                                   
+ 34CL  G 2975.4       71     7                                                  
+ 34CL  G 4200.9       100    10                                                 
+ 34CL  G 5128.5       25.0   25                                                 
+ 34CL  G 5897.8       14.8   16                                                 
+ 34CL  G 6212.5       17.1   18                                                 
+ 34CL  L 6369                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1410         3.5    17                                                 
+ 34CL  G 1730.1       1.72   86                                                 
+ 34CL cG RI$from 1977Da02. Other: 3.3 (1983Wa27).                               
+ 34CL  G 1853.2       3.5    17                                                 
+ 34CL cG RI$from 1977Da02. Other: 3.9 (1983Wa27).                               
+ 34CL  G 2014.7       8.6    45                                                 
+ 34CL cG RI$from 1977Da02. Other: 6.1 (1983Wa27).                               
+ 34CL  G 2385.5       1.72   86                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.5 (1983Wa27).                               
+ 34CL  G 2404.9       1.72   86                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.5 (1983Wa27).                               
+ 34CL  G 2823.93      6.9    35                                                 
+ 34CL cG RI$from 1977Da02. Other: 6.7 (1983Wa27).                               
+ 34CL  G 2985.7       1.72   86                                                 
+ 34CL cG RI$from 1977Da02. Other: 2.1 (1983Wa27).                               
+ 34CL  G 3035.0       2.1                                                       
+ 34CL  G 3239.87      3.5    17                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.5 (1983Wa27).                               
+ 34CL  G 3647.9       20.7   21                                                 
+ 34CL cG RI$from 1977Da02. Other: 18 (1983Wa27).                                
+ 34CL  G 3757.95      3.5    17                                                 
+ 34CL cG RI$from 1977Da02. Other: 2.1 (1983Wa27).                               
+ 34CL  G 3788.6       24.1   24                                                 
+ 34CL cG RI$from 1977Da02. Other: 21 (1983Wa27).                                
+ 34CL  G 4187.90      10.3   52                                                 
+ 34CL cG RI$from 1977Da02. Other: 7.3 (1983Wa27).                               
+ 34CL  G 4211.10      8.6    45                                                 
+ 34CL cG RI$from 1977Da02. Other: 6.7 (1983Wa27).                               
+ 34CL  G 4481.69      3.5    17                                                 
+ 34CL cG RI$from 1977Da02. Other: 3.0 (1983Wa27).                               
+ 34CL  G 5138.67      10.3   52                                                 
+ 34CL cG RI$from 1977Da02. Other: 9.1 (1983Wa27).                               
+ 34CL  G 5703.4       100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 5908.0       31.0   31                                                 
+ 34CL cG RI$from 1977Da02. Other: 22 (1983Wa27).                                
+ 34CL  G 6222.6       48     5                                                  
+ 34CL cG RI$from 1977Da02. Other: 42 (1983Wa27).                                
+ 34CL  G 6369         52     5                                                  
+ 34CL cG RI$from 1977Da02. Other: 42 (1983Wa27).                                
+ 34CL  L 6380                                                                   
+ 34CL  G 1770.3       49     5                                                  
+ 34CL  G 1774.2       36     4                                                  
+ 34CL  G 2304.1       6.4    33                                                 
+ 34CL  G 2397.8       5.1    26                                                 
+ 34CL  G 2779.7       20.5   21                                                 
+ 34CL  G 2834.8       9.0    46                                                 
+ 34CL  G 3046.1       6.4    33                                                 
+ 34CL  G 3658.6       2.6    13                                                 
+ 34CL  G 3769.4       10.3   51                                                 
+ 34CL  G 4004.4       6.4    33                                                 
+ 34CL  G 5714.3       5.1    26                                                 
+ 34CL  G 6233.5       100    10                                                 
+ 34CL  L 6397                                                                   
+ 34CL  G 2796.7       5.5    27                                                 
+ 34CL  G 3013.4       58     6                                                  
+ 34CL  G 3675.6       3.6    18                                                 
+ 34CL  G 4021.4       5.5    27                                                 
+ 34CL  G 5166.5       9.1    46                                                 
+ 34CL  G 6250.5       100    10                                                 
+ 34CL  L 6439                                                                   
+ 34CL  G 2363.1       2.7    14                                                 
+ 34CL  G 3055.4       9.6    10                                                 
+ 34CL  G 4280.9       100    10                                                 
+ 34CL  G 5773.3       5.5    28                                                 
+ 34CL  G 5977.8       8.2    8                                                  
+ 34CL  G 6292.5       11.0   11                                                 
+ 34CL  L 6450                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1840.3       8.1                                                       
+ 34CL cG RI$from 1983Wa27. Other: <4.2 (1977Da02).                              
+ 34CL  G 1844.2       8.3    42                                                 
+ 34CL cG RI$from 1977Da02. Other: 8.1 (1983Wa27).                               
+ 34CL  G 1988.6       6.9                                                       
+ 34CL  G 2003.4       7.3    38                                                 
+ 34CL cG RI$from 1977Da02. Other: 7.1 (1983Wa27).                               
+ 34CL  G 2373.7       4.2    21                                                 
+ 34CL cG RI$from 1977Da02. Other: 2.7 (1983Wa27).                               
+ 34CL  G 2818.2       10.4   52                                                 
+ 34CL cG RI$from 1977Da02. Other: 8.8 (1983Wa27).                               
+ 34CL  G 2849.73      38     4                                                  
+ 34CL cG RI$from 1977Da02. Other: 38 (1983Wa27).                                
+ 34CL  G 2904.93      7.3    38                                                 
+ 34CL cG RI$from 1977Da02. Other: 8.8 (1983Wa27).                               
+ 34CL  G 3116.0       1.0                                                       
+ 34CL  G 3838.95      29.2   29                                                 
+ 34CL cG RI$from 1977Da02. Other: 25 (1983Wa27).                                
+ 34CL  G 4268.90      4.2    21                                                 
+ 34CL cG RI$from 1977Da02. Other: 2.5 (1983Wa27).                               
+ 34CL  G 4292.10      0.42   LT                                                 
+ 34CL  G 5784.4       1.0    LT                                                 
+ 34CL  G 5989.0       0.83   LT                                                 
+ 34CL  G 6303.6       100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 6450         1.7    LT                                                 
+ 34CL  L 6477                                                                   
+ 34CL  G 2124.1       26.2   26                                                 
+ 34CL  G 2703.1       3.1    LT                                                 
+ 34CL  G 3897.1       9.2    9                                                  
+ 34CL  G 5811.3       18.5   19                                                 
+ 34CL  G 6015.8       100    10                                                 
+ 34CL  L 6488                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 2547.9       16.7   17                                                 
+ 34CL cG RI$from 1977Da02. Other: 17 (1983Wa27).                                
+ 34CL  G 3358.87      1.5                                                       
+ 34CL  G 4330.10      100    10                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 5822.4       3.3    17                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6027.0       13.3   13                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6341.6       0.85   LT                                                 
+ 34CL  G 6488         33.3   33                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  L 6525                                                                   
+ 34CL  G 2924.7       21.0   21                                                 
+ 34CL  G 3141.4       100    10                                                 
+ 34CL  G 4366.9       9.7    10                                                 
+ 34CL  G 4637.8       6.5    32                                                 
+ 34CL  G 5859.3       11.3   11                                                 
+ 34CL  G 6378.5       12.9   13                                                 
+ 34CL  L 6547                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1375.4       1.6                                                       
+ 34CL  G 3163.7       0.95                                                      
+ 34CL  G 3966.6       7.7    8                                                  
+ 34CL cG RI$from 1977Da02. Other: 5.5 (1983Wa27).                               
+ 34CL  G 5316.67      20.5   21                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 5881.4       0.36   LT                                                 
+ 34CL  G 6086.0       0.48   LT                                                 
+ 34CL  G 6400.6       100    10                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6547         0.48   LT                                                 
+ 34CL  L 6576                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 4200.3       1.9                                                       
+ 34CL  G 4418.10      100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 5910.4       0.65   LT                                                 
+ 34CL  G 6429.6       5.3    26                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6576         0.65   LT                                                 
+ 34CL  L 6581                                                                   
+ 34CL  G 3035.8       53     5                                                  
+ 34CL  G 4422.9       21.3   21                                                 
+ 34CL  G 5915.3       21.3   21                                                 
+ 34CL  G 6119.8       100    10                                                 
+ 34CL  G 6581         17.0   17                                                 
+ 34CL  L 6626                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1239.2       30                                                        
+ 34CL  G 1908.6       32                                                        
+ 34CL  G 2486.2       19                                                        
+ 34CL  G 2549.7       34.3   34                                                 
+ 34CL cG RI$from 1977Da02. Other: 75 (1983Wa27).                                
+ 34CL  G 2994.2       28                                                        
+ 34CL  G 3025.73      100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 3080.93      34.3   34                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 3292.0       52                                                        
+ 34CL  G 4014.95      23                                                        
+ 34CL  G 4444.90      69                                                        
+ 34CL  G 4468.10      77                                                        
+ 34CL  G 5395.67      21                                                        
+ 34CL  G 5960.4       3.9    LT                                                 
+ 34CL  G 6165.0       74     8                                                  
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6479.6       43     4                                                  
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  L 6640                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 2314.4       1.32   66                                                 
+ 34CL  G 2563.7       100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 2656.5       7.9    40                                                 
+ 34CL cG RI$from 1977Da02. Other: 4.1 (1983Wa27).                               
+ 34CL  G 2994.4       1.32   66                                                 
+ 34CL  G 3008.9       1.32   66                                                 
+ 34CL  G 3039.73      13.2   66                                                 
+ 34CL cG RI$from 1977Da02. Other: 6.4 (1983Wa27).                               
+ 34CL  G 3094.93      47     5                                                  
+ 34CL cG RI$from 1977Da02. Other: 36 (1983Wa27).                                
+ 34CL  G 4028.95      15.8   16                                                 
+ 34CL cG RI$from 1977Da02. Other: 8.6 (1983Wa27).                               
+ 34CL  G 4264.3       15.8   16                                                 
+ 34CL cG RI$from 1977Da02. Other: 11 (1983Wa27).                                
+ 34CL  G 4458.90      1.32   66                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.4 (1983Wa27).                               
+ 34CL  G 5974.4       0.68   LT                                                 
+ 34CL  G 6179.0       0.46   LT                                                 
+ 34CL  G 6493.6       58     6                                                  
+ 34CL cG RI$from 1977Da02. Other: 59 (1983Wa27).                                
+ 34CL  G 6640         0.91   LT                                                 
+ 34CL  L 6693                                                                   
+ 34CL  G 1869.6       50     5                                                  
+ 34CL  G 1998         13     6                                                  
+ 34CL  G 3047.4       31.3   31                                                 
+ 34CL  G 3092.7       47     5                                                  
+ 34CL  G 4082.4       72     7                                                  
+ 34CL  G 4317.4       100    10                                                 
+ 34CL  L 6700                                                                   
+ 34CL  G 2624.1       2.4    12                                                 
+ 34CL  G 3099.7       4.8    24                                                 
+ 34CL  G 3154.8       3.6    18                                                 
+ 34CL  G 3366.1       2.4    12                                                 
+ 34CL  G 4324.4       6.0    30                                                 
+ 34CL  G 6553.5       100    10                                                 
+ 34CL  L 6718                                                                   
+ 34CL  G 2108.3       31.3   31                                                 
+ 34CL  G 2112.2       22.9   23                                                 
+ 34CL  G 2735.8       8.3    42                                                 
+ 34CL  G 3334.4       9.4    48                                                 
+ 34CL  G 4830.8       11.5   13                                                 
+ 34CL  G 5487.5       25.0   25                                                 
+ 34CL  G 6571.5       100    10                                                 
+ 34CL  L 6724                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1899.5       85     9                                                  
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 2028.3       15.4   77                                                 
+ 34CL cG RI$from 1977Da02. Other: 20 (1983Wa27).                                
+ 34CL  G 2759.9       4.8                                                       
+ 34CL  G 3077.7       26.9   27                                                 
+ 34CL cG RI$from 1977Da02. Other: 33 (1983Wa27).                                
+ 34CL  G 3340.7       1.6                                                       
+ 34CL  G 4112.95      77     8                                                  
+ 34CL cG RI$from 1977Da02. Other: 72 (1983Wa27).                                
+ 34CL  G 4348.3       100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 92 (1983Wa27).                                
+ 34CL  G 4542.90      7.7    39                                                 
+ 34CL cG RI$from 1977Da02. Other: 5.6 (1983Wa27).                               
+ 34CL  G 4566.10      11.5   58                                                 
+ 34CL cG RI$from 1977Da02. Other: 7.6 (1983Wa27).                               
+ 34CL  G 6058.4       1.2    LT                                                 
+ 34CL  G 6263.0       2      LT                                                 
+ 34CL  G 6577.6       62     6                                                  
+ 34CL cG RI$from 1977Da02. Other: 64 (1983Wa27).                                
+ 34CL  G 6724         0.8    LT                                                 
+ 34CL  L 6738                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 3608.87      5.1    26                                                 
+ 34CL cG RI$from 1977Da02. Other: 6.7 (1983Wa27).                               
+ 34CL  G 4580.10      100    10                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 4850.69      3.6                                                       
+ 34CL  G 5507.67      12.8   64                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6072.4       36     4                                                  
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6277.0       28.2   28                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6591.6       74     8                                                  
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6738         1.7    LT                                                 
+ 34CL  L 6790                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 4902.69      5.3    26                                                 
+ 34CL cG RI$from 1977Da02. Other: <3 (1983Wa27).                                
+ 34CL  G 6124.4       3      LT                                                 
+ 34CL  G 6329.0       4      LT                                                 
+ 34CL  G 6643.6       6      LT                                                 
+ 34CL  G 6790         100    10                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  L 6798                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 2833.9       1.10   55                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 3412.4       0.55   28                                                 
+ 34CL  G 4186.95      2.2    11                                                 
+ 34CL cG RI$from 1977Da02. Other: 2.2 (1983Wa27).                               
+ 34CL  G 4422.3       1.10   55                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 4640.10      0.55   28                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 4910.69      4.4    22                                                 
+ 34CL cG RI$from 1977Da02. Other: 3.9 (1983Wa27).                               
+ 34CL  G 6132.4       0.22   LT                                                 
+ 34CL  G 6337.0       0.33   LT                                                 
+ 34CL  G 6651.6       100    10                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6798         0.44   LT                                                 
+ 34CL  L 6805                                                                   
+ 34CL  G 3421.4       12.7   13                                                 
+ 34CL  G 4225.1       16.9   17                                                 
+ 34CL  G 4646.9       11.3   11                                                 
+ 34CL  G 6139.3       100    10                                                 
+ 34CL  L 6829                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 3283.93      7.3                                                       
+ 34CL  G 3445.7       15.5   16                                                 
+ 34CL cG RI$from 1977Da02. Other: 14 (1983Wa27).                                
+ 34CL  G 4671.10      100    10                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 5598.67      1.2    LT                                                 
+ 34CL  G 6163.4       5.2    26                                                 
+ 34CL cG RI$from 1977Da02. Other: 12 (1983Wa27).                                
+ 34CL  G 6368.0       19.0   19                                                 
+ 34CL cG RI$from 1977Da02. Other: 33 (1983Wa27).                                
+ 34CL  G 6682.6       32.8   33                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6829         1.4    LT                                                 
+ 34CL  L 6842                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 2230.3       6.9                                                       
+ 34CL cG RI$from 1983Wa27. Other: <10 (1977Da02).                               
+ 34CL  G 2236.2       5.0    25                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 2326.2       25     13                                                 
+ 34CL cG RI$from 1977Da02. Other: 35 (1983Wa27).                                
+ 34CL  G 2487.7       45     5                                                  
+ 34CL cG RI$from 1977Da02. Other: 49 (1983Wa27).                                
+ 34CL  G 2694.2       10.0   50                                                 
+ 34CL cG RI$from 1977Da02. Other: 34 (1983Wa27).                                
+ 34CL  G 2702.2       10.0   50                                                 
+ 34CL cG RI$from 1977Da02. Other: 16 (1983Wa27).                                
+ 34CL  G 2858.5       48     5                                                  
+ 34CL cG RI$from 1977Da02. Other: 54 (1983Wa27).                                
+ 34CL  G 3068.16      6.3                                                       
+ 34CL  G 3458.7       23     12                                                 
+ 34CL cG RI$from 1977Da02. Other: 18 (1983Wa27).                                
+ 34CL  G 3508.0       10.0   50                                                 
+ 34CL cG RI$from 1977Da02. Other: 11 (1983Wa27).                                
+ 34CL  G 3712.87      9.4                                                       
+ 34CL  G 4230.95      12.5   65                                                 
+ 34CL cG RI$from 1977Da02. Other: 16 (1983Wa27).                                
+ 34CL  G 4261.6       45     5                                                  
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 4660.90      6.9                                                       
+ 34CL  G 4684.10      30.0   30                                                 
+ 34CL cG RI$from 1977Da02. Other: 29 (1983Wa27).                                
+ 34CL  G 4954.69      35.0   35                                                 
+ 34CL cG RI$from 1977Da02. Other: 38 (1983Wa27).                                
+ 34CL  G 5611.67      65     7                                                  
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6176.4       35.0   35                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6381.0       100    10                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6695.6       12.5   65                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6842         1.9    LT                                                 
+ 34CL  L 6852                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1856.4       2.5    13                                                 
+ 34CL cG RI$from 1977Da02. Other: 2.3 (1983Wa27).                               
+ 34CL  G 2156.3       2.5    13                                                 
+ 34CL cG RI$from 1977Da02. Other: 2.3 (1983Wa27).                               
+ 34CL  G 2498.1       2.5    13                                                 
+ 34CL  G 3306.93      5.1                                                       
+ 34CL  G 3722.87      7.5    38                                                 
+ 34CL cG RI$from 1977Da02. Other: 8.2 (1983Wa27).                               
+ 34CL  G 4271.6       7.5    38                                                 
+ 34CL cG RI$from 1977Da02. Other: 9 (1983Wa27).                                 
+ 34CL  G 4964.69      58     6                                                  
+ 34CL cG RI$from 1977Da02. Other: 56 (1983Wa27).                                
+ 34CL  G 5621.67      32.5   33                                                 
+ 34CL cG RI$from 1977Da02. Other: 33 (1983Wa27).                                
+ 34CL  G 6186.4       15.0   15                                                 
+ 34CL cG RI$from 1977Da02. Other: 18 (1983Wa27).                                
+ 34CL  G 6391.0       100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 6705.6       10.0   50                                                 
+ 34CL cG RI$from 1977Da02. Other: 10 (1983Wa27).                                
+ 34CL  G 6852         13     6                                                  
+ 34CL cG RI$from 1977Da02. Other: 12 (1983Wa27).                                
+ 34CL  L 6871                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1330.2       13.6   14                                                 
+ 34CL cG RI$from 1977Da02. Other: 10 (1983Wa27).                                
+ 34CL  G 1484.2       6.8    34                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 1699.4       25.0   25                                                 
+ 34CL cG RI$from 1977Da02. Other: 24 (1983Wa27).                                
+ 34CL  G 2424.4       64     7                                                  
+ 34CL cG RI$from 1977Da02. Other: 61 (1983Wa27).                                
+ 34CL  G 2794.7       5.7                                                       
+ 34CL  G 3239.2       100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 4495.3       18.2   18                                                 
+ 34CL cG RI$from 1977Da02. Other: 14 (1983Wa27).                                
+ 34CL  G 4713.10      0.87   LT                                                 
+ 34CL  G 6205.4       1.3    LT                                                 
+ 34CL  G 6410.0       1.5    LT                                                 
+ 34CL  G 6724.6       1.3    LT                                                 
+ 34CL  G 6871         1.3    LT                                                 
+ 34CL  L 6887                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1929.7       1.16   58                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.2 (1983Wa27).                               
+ 34CL  G 2169.6       2.3    12                                                 
+ 34CL cG RI$from 1977Da02. Other: 4.3 (1983Wa27).                               
+ 34CL  G 2277.3       1.16   58                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.3 (1983Wa27).                               
+ 34CL  G 2281.2       1.16   58                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.3 (1983Wa27).                               
+ 34CL  G 3503.7       2.3    12                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 4705.90      1.16   58                                                 
+ 34CL cG RI$from 1977Da02. Other: 3.5 (1983Wa27).                               
+ 34CL  G 4729.10      100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 4999.69      1.16   58                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.7 (1983Wa27).                               
+ 34CL  G 6221.4       0.37   LT                                                 
+ 34CL  G 6426.0       0.37   LT                                                 
+ 34CL  G 6740.6       5.8    29                                                 
+ 34CL cG RI$from 1977Da02. Other: 8.2 (1983Wa27).                               
+ 34CL  G 6887         0.49   LT                                                 
+ 34CL  L 6901                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 3517.7       21.1   21                                                 
+ 34CL cG RI$from 1977Da02. Other: 20 (1983Wa27).                                
+ 34CL  G 4743.10      100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 5670.67      0.81                                                      
+ 34CL  G 6235.4       0.27   LT                                                 
+ 34CL  G 6440.0       1.2                                                       
+ 34CL  G 6754.6       2.6    13                                                 
+ 34CL cG RI$from 1977Da02. Other: 2.8 (1983Wa27).                               
+ 34CL  G 6901         7.9    8                                                  
+ 34CL cG RI$from 1977Da02. Other: 10 (1983Wa27).                                
+ 34CL  L 6917                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 1376.2       0.48                                                      
+ 34CL  G 3270.7       2.4    13                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.9 (1983Wa27).                               
+ 34CL  G 3285.2       3.2    16                                                 
+ 34CL cG RI$from 1977Da02. Other: 3.6 (1983Wa27).                               
+ 34CL  G 3371.93      0.81                                                      
+ 34CL  G 3583.0       2.4    13                                                 
+ 34CL cG RI$from 1977Da02. Other: 2.3 (1983Wa27).                               
+ 34CL  G 4305.95      4.0    21                                                 
+ 34CL cG RI$from 1977Da02. Other: 3.9 (1983Wa27).                               
+ 34CL  G 4541.3       40     4                                                  
+ 34CL cG RI$from 1977Da02. Other: 40 (1983Wa27).                                
+ 34CL  G 4735.90      8.9    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 8.1 (1983Wa27).                               
+ 34CL  G 6251.4       0.16   LT                                                 
+ 34CL  G 6456.0       0.32   LT                                                 
+ 34CL  G 6770.6       100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 6917         0.65   LT                                                 
+ 34CL  L 6931                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 2213.6       13.0   65                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 2319.3       91     9                                                  
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 2323.2       100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 2325.2       64                                                        
+ 34CL  G 2415.2       4.4    22                                                 
+ 34CL cG RI$from 1977Da02. Other: 8.2 (1983Wa27).                               
+ 34CL  G 2469.6       9.1                                                       
+ 34CL cG RI$from 1983Wa27                                                       
+ 34CL  G 2576.7       8.7    44                                                 
+ 34CL cG RI$from 1977Da02. Other: 9.1 (1983Wa27).                               
+ 34CL  G 2947.5       17.4   87                                                 
+ 34CL cG RI$from 1977Da02. Other: 15 (1983Wa27).                                
+ 34CL  G 3330.73      8.7    44                                                 
+ 34CL cG RI$from 1977Da02. Other: 4.6 (1983Wa27).                               
+ 34CL  G 3385.93      13.0   65                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 3547.7       61     6                                                  
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 4209.9       13.0   65                                                 
+ 34CL cG RI$from 1977Da02. Other: 13 (1983Wa27).                                
+ 34CL  G 4350.6       8.7    44                                                 
+ 34CL cG RI$from 1977Da02. Other: 19 (1983Wa27).                                
+ 34CL  G 4773.10      8.7    44                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 5041.8       8.7    44                                                 
+ 34CL  G 6265.4       17.4   87                                                 
+ 34CL cG RI$from 1977Da02. Other: 46 (1983Wa27).                                
+ 34CL  G 6470.0       9.1    LT                                                 
+ 34CL  G 6784.6       61     6                                                  
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 6931         6.8    LT                                                 
+ 34CL  L 6975                                                                   
+ 34CL  G 3591.4       11.2   12                                                 
+ 34CL  G 4816.9       100    10                                                 
+ 34CL  G 5744.5       8.2    9                                                  
+ 34CL  G 6828.5       29.9   30                                                 
+ 34CL  L 6984                                                                   
+ 34CL  G 2378.2       4.9    LT                                                 
+ 34CL  G 3001.8       18.3   20                                                 
+ 34CL  G 3383.7       18.3   20                                                 
+ 34CL  G 3438.8       19.5   20                                                 
+ 34CL  G 4262.6       11.0   56                                                 
+ 34CL  G 4825.9       100    10                                                 
+ 34CL  G 5753.5       59     6                                                  
+ 34CL  G 6837.5       18.3   20                                                 
+ 34CL  L 7049                                                                   
+ 34CL  G 2090         39     4                                                  
+ 34CL  G 3503.8       17.9   89                                                 
+ 34CL  G 3665.4       36     4                                                  
+ 34CL  G 4890.9       93     9                                                  
+ 34CL  G 6383.3       71     7                                                  
+ 34CL  G 6587.8       100    10                                                 
+ 34CL  L 7058                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 2062.4       2.6    14                                                 
+ 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 2116.1       1.75   88                                                 
+ 34CL cG RI$from 1977Da02. Other: 2.1 (1983Wa27).                               
+ 34CL  G 2362.3       0.35                                                      
+ 34CL  G 2448         0.86                                                      
+ 34CL  G 2732.09      0.88   44                                                 
+ 34CL cG RI$from 1977Da02. Other: 0.69 (1983Wa27).                              
+ 34CL  G 3284.16      0.17                                                      
+ 34CL cG RI$from 1983Wa27. Other: <0.88 (1977Da02).                             
+ 34CL  G 3398.0       1.75   88                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.4 (1983Wa27).                               
+ 34CL  G 3928.87      4.4    23                                                 
+ 34CL cG RI$from 1977Da02. Other: 5.3 (1983Wa27).                               
+ 34CL  G 4336.9       1.75   88                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.2 (1983Wa27).                               
+ 34CL  G 4446.95      1.2                                                       
+ 34CL  G 4477.6       0.88   44                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.4 (1983Wa27).                               
+ 34CL  G 4876.90      2.6    14                                                 
+ 34CL cG RI$from 1977Da02. Other: 1.4 (1983Wa27).                               
+ 34CL  G 4900.10      0.88   44                                                 
+ 34CL cG RI$from 1977Da02. Other: 0.86 (1983Wa27).                              
+ 34CL  G 5170.69      8.8    44                                                 
+ 34CL cG RI$from 1977Da02. Other: 7.1 (1983Wa27).                               
+ 34CL  G 5827.67      5.3    26                                                 
+ 34CL cG RI$from 1977Da02. Other: 5.7 (1983Wa27).                               
+ 34CL  G 6392.4       44     5                                                  
+ 34CL cG RI$from 1977Da02. Other: 40 (1983Wa27).                                
+ 34CL  G 6597.0       100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 6911.6       0.86                                                      
+ 34CL cG RI$from 1983Wa27. Other: <1.8 (1977Da02).                              
+ 34CL  G 7058         0.35   LT                                                 
+ 34CL  L 7080                                                                   
+ 34CL cL E$from 1983Wa27                                                        
+ 34CL  G 2470         6.3                                                       
+ 34CL  G 2754.09      2.2                                                       
+ 34CL  G 3003.1       3.6    18                                                 
+ 34CL  G 3096.5       57     6                                                  
+ 34CL cG RI$from 1977Da02. Other: 59 (1983Wa27).                                
+ 34CL  G 3479.73      61     6                                                  
+ 34CL cG RI$from 1977Da02. Other: 56 (1983Wa27).                                
+ 34CL  G 3534.93      54     6                                                  
+ 34CL cG RI$from 1977Da02. Other: 56 (1983Wa27).                                
+ 34CL  G 3745.1       3.6    LT                                                 
+ 34CL  G 4358.9       39     4                                                  
+ 34CL cG RI$from 1977Da02. Other: 41 (1983Wa27).                                
+ 34CL  G 4898.90      3.6    18                                                 
+ 34CL cG RI$from 1977Da02. Other: 8.5 (1983Wa27).                               
+ 34CL  G 5192.69      10.7   54                                                 
+ 34CL cG RI$from 1977Da02. Other: 8.9 (1983Wa27).                               
+ 34CL  G 5849.67      100    10                                                 
+ 34CL cG RI$from 1977Da02. Other: 100 (1983Wa27).                               
+ 34CL  G 6414.4       2.2    LT                                                 
+ 34CL  G 6619.0       2.2    LT                                                 
+ 34CL  G 6933.6       28.6   29                                                 
+ 34CL cG RI$from 1977Da02. Other: 33 (1983Wa27).                                
+ 34CL  G 7080         3.0    LT                                                 

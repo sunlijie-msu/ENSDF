@@ -4,8 +4,8 @@ Top-Center Title: FRIBND AI Agent Architecture
 Custom Instructions: Rules, Standards, Conventions, Guidelines, Guardrails
 Custom Agents: Persona, Role, Behavior, Tools
 Subagents: Handoffs, Guided Sequential Workflows
-Reusable Prompts: Commands, Specific tasks, Standardized workflows
-Agent Skills: Portable and Interoperable Capabilities across Agents, Scripts, Templates, Examples, Reference Docs, Resources
+Reusable Prompts: Commands, Specific Tasks, Standardized Workflows
+Agent Skills: Portable and Interoperable Capabilities across Agents, Scripts, Templates, Examples, Reference Docs, Dynamic Loading Resources
 
 **Semantic Structuring** (Role Assignment & Tag Wrapping) organizes the Context across four primary types: system messages, user messages, assistant messages, and tool messages.
 This framework ensures clear communication between the user, the AI, and the tools.
@@ -23,7 +23,8 @@ User Message:
 Environment info
 Workspace info
 Conversation summary: Conversation Overview, Technical Foundation, Codebase Status, Problem Resolution, Progress Tracking, Active Work State, Recent Operations, Continuation Plan
-Reminder: User request
+Reminder Instructions
+User requests
 Editor context: edited file paths, selections, cursor position, terminal.
 Chat variables: attachments
 Reusable prompts
