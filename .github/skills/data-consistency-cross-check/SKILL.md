@@ -1,17 +1,17 @@
 ---
 name: data-consistency-cross-check
-description: Perform meticulous data consistency validation between ENSDF files and CSV source data. Systematically verifies L-record completeness, energy ordering, G-record accuracy, and structural compliance using bidirectional positional checks and random spot-check sampling.
+description: Perform meticulous data consistency validation between ENSDF files and source tables or merged comparison files. Systematically verifies L-record completeness, energy ordering, G-record accuracy, RI provenance, and structural compliance using bidirectional checks and reproducible spot-check sampling.
 mode: check-only
 applies-to: ENSDF datasets with corresponding source CSV files
 ---
 
-# Data Consistency Cross-Check (ENSDF vs CSV)
+# Data Consistency Cross-Check (ENSDF vs CSV or MRG)
 
 ## Overview
 
-This skill provides a systematic workflow for conducting rigorous data consistency validation between Evaluated Nuclear Structure Data File (ENSDF) records and their corresponding Comma-Separated Value (CSV) source tables. The workflow prioritizes **data accuracy and integrity** over formatting concerns, employing a multi-tier validation approach to detect discrepancies at both structural and numerical levels.
+This skill provides a systematic workflow for conducting rigorous data consistency validation between Evaluated Nuclear Structure Data File (ENSDF) records and their corresponding source tables or merged comparison files. The workflow prioritizes **data accuracy and integrity** over formatting concerns, employing a multi-tier validation approach to detect discrepancies at both structural and numerical levels.
 
-**Scope:** Applicable to any ENSDF file undergoing data entry from tabular sources (CSV, Excel converted to CSV, or PDF-extracted tables).
+**Scope:** Applicable to any ENSDF file undergoing data entry from tabular sources (CSV, Excel converted to CSV, or PDF-extracted tables), or to review tasks that compare adopted ENSDF data against an `.mrg` comparison file built from original ENSDF datasets.
 
 **Mode:** **CHECK-ONLY** — This skill validates existing data without modifying files.
 
@@ -26,6 +26,30 @@ This skill provides a systematic workflow for conducting rigorous data consisten
 3. **Ensure Consistency:** Verify that source column mappings and energy derivations are correctly implemented
 4. **Detect Anomalies:** Identify missing or spurious entries using systematic bidirectional checks
 5. **Quantify Results:** Report with exact metrics and reproducible sampling
+
+### MRG-Specific RI Audit Mode
+
+Use this mode when the source of truth is an ENSDF merge/comparison file such as `*.mrg` rather than CSV tables.
+
+- Treat lines beginning with `1977DA02--->A` as the quoted `1977Da02` source values.
+- Treat lines beginning with `1983Wa27--->B` as the default `1983Wa27` source values for adopted RI fields, unless the adopted ENSDF explicitly documents a different rule.
+- For each adopted G-record in scope, first verify that the RI/DRI fields match the `1983Wa27--->B` G-record in the `.mrg` file whenever a B record exists.
+- Then verify that each `cG RI$` comment quotes the `1977DA02--->A` value exactly when the comment cites `1977Da02`.
+- If both sources are quoted in a `cG RI$` comment, verify both quoted values separately against the `.mrg` A and B records.
+- If the adopted G-record RI is itself taken from `1977Da02`, verify the RI/DRI field directly against the A record and ensure the comment wording remains consistent with that choice.
+- For `LT` and `GT` cases, compare both the numeric limit value and the marker.
+- Check only the user-specified ENSDF line/energy range; do not report findings outside that explicit scope.
+
+### MRG-Specific Output Expectations
+
+For each reviewed level, report:
+
+- Level energy in adopted ENSDF
+- Each adopted gamma energy in scope
+- Whether the adopted RI/DRI matches `1983Wa27--->B` or `1977DA02--->A`
+- Whether each `cG RI$` comment quotes the cited source value exactly
+- Any missing default comment that is acceptable because the adopted RI already matches `1983Wa27--->B`
+- Any discrepancy, with exact adopted value, `.mrg` source value, and citation/source label
 
 ### Quality Assurance Mindset
 
