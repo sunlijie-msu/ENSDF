@@ -1,5 +1,5 @@
 ---
-name: reconciling-ensdf-data
+name: reconciling-data
 description: Merge level and gamma-transition data from a source ENSDF file into a target ENSDF file while preserving existing spectroscopic metadata (multipolarities, mixing ratios, angular correlations). Use when updating ENSDF Adopted or Source datasets with experimental values from processed (.adp) files.
 ---
 
