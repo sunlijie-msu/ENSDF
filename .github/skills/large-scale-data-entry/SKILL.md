@@ -35,7 +35,27 @@ When present, also process the `Other Ef` column, which contains $\gamma$ transi
 - Preserve ascending order for both L-record energies and the G-record energies within each level block.
 - Perform a reproducible random 5% spot-check before closing the task.
 
+## Optional RI-Sum Validation Check
+
+### Rule
+If user opts in, sum only finite RI values per level (should equal 100, within ±0.1):
+- **Include:** Numeric values (e.g., `35+/-1` → `35`) and parenthetical intensities in `Other` column (e.g., `(0.4)` → `0.4`).
+- **Exclude:** Limit markers(`<`, `>`) and undefined markers (`X`).
+
+### Steps
+
+1. Extract RI values from all columns (including secondary `Other Ef` columns).
+2. Filter: keep only finite numeric values matching `[0-9]+(\.[0-9]+)?`.
+3. Sum per level.
+4. Compare to 100.0.
+5. Document failures with level energy and observed total.
+
+### When to Perform
+
+Before using CSV source data for ENSDF patching. Failures indicate missing entries, transcription errors, or insufficient finite values for normalization.
+
 ## Prompt Design Notes
 - Keep prompt files concise and task-focused.
 - Reuse repository instruction files and custom agents instead of duplicating detailed ENSDF rules in each prompt.
 - Reference the relevant instruction or agent files when the skill depends on broader repository standards.
+
