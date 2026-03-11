@@ -106,7 +106,6 @@
  34CL  L 2580.3    2                                                            
  34CLX L XREF=AB                                                                
  34CL cL E$weighted average of 2579.9 {I5} (1977Da02) and 2580.4 {I2} (1983Wa27)
- 34CL  G 421.8       23.0    10                                                 
  34CL  G 1350.1      1       LT                                                 
  34CL  G 1914.8      2       LT                                                 
  34CL  G 2119.4      2       LT                                                 
@@ -117,13 +116,11 @@
  34CLX L XREF=AB                                                                
  34CL cL E$weighted average of 2610.6 {I5} (1977Da02) and 2611.05 {I11}         
  34CL2cL (1983Wa27)                                                             
- 34CL  G 453.15      39      16                                                 
- 34CL cG RI$unweighted average of 22.9 {I29} (1977Da02) and 55.3 {I33}          
+ 34CL  G 453.15      61      5                                                  
+ 34CL cG RI$unweighted average of 65.7 {I29} (1977Da02) and 55.3 {I33}          
  34CL2cG (1983Wa27)                                                             
  34CL cG E$from 1983Wa27                                                        
- 34CL  G 723.74      8.6     29                                                 
- 34CL cG E$from 1983Wa27                                                        
- 34CL cG RI$from 1977Da02                                                       
+ 34CL  G 723.74      2.5     LT                                                 
  34CL  G 1380.72     68.1    33                                                 
  34CL cG RI$weighted average of 69 {I6} (1977Da02) and 67.8 {I33} (1983Wa27)    
  34CL cG E$from 1983Wa27                                                        
@@ -139,8 +136,12 @@
  34CL  L 2721.1    2                                                            
  34CLX L XREF=AB                                                                
  34CL cL E$weighted average of 2721.4 {I7} (1977Da02) and 2721.1 {I2} (1983Wa27)
- 34CL  G 563.2       14.5    11                                                 
- 34CL  G 833.8       4.3     4                                                  
+ 34CL  G 563.2       14.9    11                                                 
+ 34CL cG RI$weighted average of 16.3 {I21} (1977Da02) and 14.5 {I11} (1983Wa27) 
+ 34CL cG E$from 1983Wa27                                                        
+ 34CL  G 833.8       4.4     4                                                  
+ 34CL cG RI$weighted average of 6.1 {I21} (1977Da02) and 4.3 {I4} (1983Wa27)    
+ 34CL cG E$from 1983Wa27                                                        
  34CL  G 1490.8      4.5     4                                                  
  34CL cG RI$weighted average of 4.1 {I21} (1977Da02) and 4.5 {I4} (1983Wa27)    
  34CL cG E$from 1983Wa27                                                        
@@ -161,7 +162,6 @@
  34CLX L XREF=AB                                                                
  34CL cL E$weighted average of 3128.9 {I5} (1977Da02) and 3129.13 {I12}         
  34CL2cL (1983Wa27)                                                             
- 34CL  G 970.8       67      12                                                 
  34CL  G 1898.80     2       LT                                                 
  34CL  G 2668.1      2       LT                                                 
  34CL  G 2982.7      2       LT                                                 
@@ -172,13 +172,15 @@
  34CL cL E$weighted average of 3333.9 {I10} (1977Da02) and 3334.0 {I2}          
  34CL2cL (1983Wa27)                                                             
  34CL  G 1176.1      100     15                                                 
+ 34CL cG RI$weighted average of 100 {I18} (1977Da02) and 100 {I15} (1983Wa27)   
+ 34CL cG E$from 1983Wa27                                                        
  34CL  G 1446.7      4.9     LT                                                 
  34CL  G 2103.7      4.9     LT                                                 
- 34CL  G 2668.4      92      12                                                 
- 34CL cG RI$weighted average of 100 {I27} (1977Da02) and 90 {I12} (1983Wa27)    
+ 34CL  G 2668.4      62      29                                                 
+ 34CL cG RI$unweighted average of 33 {I9} (1977Da02) and 90 {I12} (1983Wa27)    
  34CL cG E$from 1983Wa27                                                        
- 34CL  G 2873.0      53      12                                                 
- 34CL cG RI$weighted average of 50 {I27} (1977Da02) and 54 {I12} (1983Wa27)     
+ 34CL  G 2873.0      35      19                                                 
+ 34CL cG RI$unweighted average of 16.4 {I90} (1977Da02) and 54 {I12} (1983Wa27) 
  34CL cG E$from 1983Wa27                                                        
  34CL  G 3187.6      4.9     LT                                                 
  34CL  G 3334.0      7.3     LT                                                 
