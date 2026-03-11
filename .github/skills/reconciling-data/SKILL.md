@@ -31,12 +31,20 @@ From the `.ens` target file for each matching Gamma, capture:
 - Multipolarity (`M`) in columns 33-41
 - Mixing Ratio (`MR`) in columns 42-49
 - Associated `cG M,MR$` or `cG $A{-2}=` comments
+- For this Cl34 reconciliation workflow, gamma energies that differ by about 1 to 2 keV between source and target are normally considered acceptable matches when the level context and transition pattern agree.
 
 ### Step 3: Build 80-Column Records
 
 Merge source values with preserved metadata:
 - Use `.adp` Level Energy, Gamma Energy, RI, DRI
 - Keep `.ens` Multipolarity, Mixing Ratio, angular correlation comments
+- Respect dataset-specific RI conventions already established in the target file:
+	- If only a 1983Wa27 RI value exists for a gamma, place that RI directly in the G-record RI and DRI fields and add no per-gamma RI provenance comment, because 1983Wa27 is already the file-level default RI source.
+	- If only a 1977Da02 RI value exists for a gamma, place that RI directly in the G-record RI and DRI fields and put `D` in column 77.
+	- If one source gives a finite RI value and the other gives only an upper limit, place the finite RI value in the G-record RI and DRI fields. Put the upper-limit value in a `cG RI$other:` comment.
+	- If both 1977Da02 and 1983Wa27 give upper limits, place the smaller upper limit in the G-record RI and DRI fields and put the larger upper limit in a `cG RI$other:` comment.
+	- If both 1977Da02 and 1983Wa27 give finite RI values, place the 1977Da02 RI and DRI in the G-record fields, put `D` in column 77, and record the 1983Wa27 RI in a `cG RI$other:` comment.
+	- If an ENSDF gamma energy does not have a credible source match within about 1 to 2 keV for that level, treat it as a possible wrong gamma-energy assignment: revise the G-record E field only when the correct source match is clear, and report that case explicitly.
 - Pad every line to exactly 80 characters
 
 ### Step 4: Replace and Validate
@@ -78,7 +86,12 @@ Use atomic string replacement (not sequential edits):
 
 | Mistake | Impact | Fix |
 |---|---|---|
-| Copy E/RI without `cG RI` comments | Lost traceability | Always extract and insert associated comments |
+| Copy E/RI without preserving the target file's RI provenance convention | Lost traceability or redundant source labeling | Preserve the established RI convention: use file-level default-source comments, column-77 RI flags when defined, and per-gamma RI comments only where needed |
+| Match gammas only by exact energy equality | Wrong source-to-target mapping or missed transitions | For this workflow, allow about 1 to 2 keV EG differences when the level context and transition pattern support the match |
+| Prefer 1983 finite RI over 1977 finite RI when both exist | Less-preferred RI source ends up in the adopted field | When both sources are finite, use 1977Da02 RI and DRI in the G-record with flag D, and put the 1983Wa27 RI in `cG RI$other:` |
+| Keep a looser upper limit in the RI field when both sources only give limits | Adopted RI field becomes less informative | Put the smaller upper limit in the RI field and move the larger upper limit to `cG RI$other:` |
+| Add per-gamma RI comments for a file-wide default source | Redundant clutter and inconsistent source labeling | Use the file-level RI general comment for default-source-only gammas |
+| Omit a defined RI source flag for non-default single-source RI | Source provenance lost in the G record | Put the defined flag, such as `D` or `F`, in column 77 |
 | Overwrite M/MR fields | Lost spectroscopy | Preserve target M/MR exactly |
 | Misaligned decimal places | Parser failure | Use exact transcription; verify with ruler tool |
 | Edit multiple records sequentially | Risk of file corruption | Use atomic replacement with surrounding context |
