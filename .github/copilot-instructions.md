@@ -200,27 +200,34 @@ Example:
 
 #### ENSDF Structural Relationships
 
-**Level Blocks or Level Units:**
-1.  Each L-record starts a new level block (physical level).
-2.  All G-records immediately after an L-record belong to that level block.
-3.  Any G-records before the next L-record attach to the previous level (never to the next level).
-4.  A level with no gammas is a single L-record with no following G-records.
-5.  Preserve strict L→G grouping; parsers depend on it.
+**Level Blocks or Level Units**
 
-**Comment Line Scope and Order:**
-- **cL lines:** Apply only to the immediately preceding L-record; they are part of that L-record.
+1. Each L-record starts a new level block (physical level).
+2. All G-records immediately following an L-record belong to that level block.
+3. Any G-records that appear before the next L-record attach to the previous level, never to the next level.
+4. A level with no gamma rays consists of a single L-record with no following G-records.
+5. Preserve strict L→G grouping; ENSDF parsers depend on it.
+
+**Comment Line Scope and Order**
+
+- **cL lines:** Apply only to the immediately preceding L-record and are an optional part of that L-record.
 - **cL, 2cL, 3cL lines:** Form a unified comment block for that L-record.
-  - When multiple comment identifiers are present, order them as: E$ → J$ → T$ → S$ → general (no identifier).
-- **cG lines:** Apply only to the immediately preceding G-record; they are part of that G-record.
+- When multiple L-comment identifiers are present, order them as follows: `E$ → J$ → T$ → S$ → general` (no identifier).
+- **cG lines:** Apply only to the immediately preceding G-record and are an optional part of that G-record.
 - **cG, 2cG, 3cG lines:** Form a unified comment block for that G-record.
-  - When multiple comment identifiers are present, order them as: E$ → RI$ → M$ → MR$ → other identifiers.
+- When multiple G-comment identifiers are present, order them as follows: `E$ → RI$ → M$ → MR$ → other identifiers`.
 
-**Continuation Records (Column 6):**
-- Column 6 contains the continuation marker (blank for the first record; alphanumeric for continuations).
-- Common continuation types: `2 L`, `F L` (for L-records); `2 G`, `B G` (for G-records); `2cL`, `3cL` (for L-comment lines); `2cG`, `3cG` (for G-comment lines).
-- Continuation records apply only to the immediately preceding record type (L or G).
-- Continuation records have their own text format standards. Do not use comment text format in continuation records. e.g.: 35CA2 L %EC+%B+=100$%ECP=95.8 3$%EC2P=4.2 3                                    
-- FLAG markers (e.g., FLAG=A) are placed in continuation records following the record (L or G) that they describe.
+**Continuation Records and Comments (Column 6)**
+
+- Column 6 contains the continuation marker: blank for the first record and alphanumeric for continuation records.
+- Common continuation records include `2 L` and `F L` for L-records, and `2 G` and `B G` for G-records.
+- Common continuation comments include `2cL` and `3cL` for L-comment lines, and `2cG` and `3cG` for G-comment lines.
+- Continuation records must remain attached to, and apply only to, the immediately preceding record type (L or G).
+- Continuation comments must remain attached to the immediately preceding comment line.
+- `2cL` must follow `cL`, and `3cL` must follow `2cL`, etc.
+- `2cG` must follow `cG`, and `3cG` must follow `2cG`, etc.
+- Continuation records have their own text-format standards. Do not use comment text format in continuation records. Example: `35CA2 L %EC+%B+=100$%ECP=95.8 3$%EC2P=4.2 3`.
+- Less common: FLAG markers (for example, `FLAG=A`) are placed in continuation records following the record (L or G) that they describe.
 
 #### Left-Justification Requirement
 
