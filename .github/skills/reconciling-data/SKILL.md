@@ -39,9 +39,10 @@ Merge source values with preserved metadata:
 - Use `.adp` Level Energy, Gamma Energy, RI, DRI
 - Keep `.ens` Multipolarity, Mixing Ratio, angular correlation comments
 - Respect dataset-specific RI conventions already established in the target file:
-	- If only a 1983Wa27 RI value exists for a gamma, place that RI directly in the G-record RI and DRI fields and add no per-gamma RI provenance comment, because 1983Wa27 is already the file-level default RI source.
-	- If only a 1977Da02 RI value exists for a gamma, place that RI directly in the G-record RI and DRI fields and put `D` in column 77.
-	- If one source gives a finite RI value and the other gives only an upper limit, place the finite RI value in the G-record RI and DRI fields. Put the upper-limit value in a `cG RI$other:` comment.
+- In this case, the 1983Wa27 RI data does not have uncertainty while the 1977Da02 RI data does.
+	- If only a 1983Wa27 RI value/limit exists for a gamma, place that RI directly in the G-record RI and DRI fields and add no per-gamma RI provenance comment, because 1983Wa27 is already the file-level default RI source.
+	- If only a 1977Da02 RI value/limit exists for a gamma, place that RI directly in the G-record RI and DRI fields and put `D` in column 77 of that G-record to indicate the 1977Da02 source.
+	- If one source gives a finite RI value and the other gives only an upper limit, place the finite RI value in the G-record RI and DRI fields. Put the upper-limit value in a `cG RI$other: RI (19XXXxNN)` comment.
 	- If both 1977Da02 and 1983Wa27 give upper limits, place the smaller upper limit in the G-record RI and DRI fields and put the larger upper limit in a `cG RI$other:` comment.
 	- If both 1977Da02 and 1983Wa27 give finite RI values, place the 1977Da02 RI and DRI in the G-record fields, put `D` in column 77, and record the 1983Wa27 RI in a `cG RI$other:` comment.
 	- If an ENSDF gamma energy does not have a credible source match within about 1 to 2 keV for that level, treat it as a possible wrong gamma-energy assignment: revise the G-record E field only when the correct source match is clear, and report that case explicitly.
