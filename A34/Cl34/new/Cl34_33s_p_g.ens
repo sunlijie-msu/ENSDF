@@ -246,24 +246,22 @@
  34CL cL E$weighted average of 2579.9 {I5} (1977Da02) and 2580.4 {I2} (1983Wa27)
  34CL cL T$lifetime |t=3.0 fs {I25} (1977Da02, DSAM). Others: <5 fs (1983Wa27,  
  34CL2cL DSAM) and <7 fs (1985La16, DSAM).                                      
- 34CL  G 421.8        23.0   10                                                 
  34CL  G 1350.1       1      LT                                                 
  34CL  G 1914.8       2      LT                                                 
  34CL  G 2119.4       2      LT                                                 
  34CL  G 2434.0       2      LT                                                 
  34CL  G 2580.4       100                                                       
- 34CL cG RI$from 1983Wa27. Other: 100 (1977Da02).                               
+ 34CL cG RI$other: 100 (1977Da02).                                              
  34CL  L 2611.03   11                  1.6E2 FS  4                              
  34CL cL E$weighted average of 2610.6 {I5} (1977Da02) and 2611.05 {I11}         
  34CL2cL (1983Wa27)                                                             
  34CL cL T$lifetime |t=230 fs {I55}: weighted average of 210 fs {I60} (1983Wa27,
  34CL2cL DSAM) and 340 fs {I140} (1985La16, DSAM). Other: >450 fs (1977Da02,    
  34CL3cL DSAM).                                                                 
- 34CL  G 453.15       39     16                                                 
- 34CL cG RI$unweighted average of 22.9 {I29} (1977Da02) and 55.3 {I33}          
+ 34CL  G 453.15      61      5                                                  
+ 34CL cG RI$unweighted average of 65.7 {I29} (1977Da02) and 55.3 {I33}          
  34CL2cG (1983Wa27)                                                             
- 34CL  G 723.74       8.6    29                                                 
- 34CL cG RI$from 1977Da02. Other: <2.5 (1983Wa27).                              
+ 34CL  G 723.74       2.5     LT                                                 
  34CL  G 1380.72      68.1   33                                                 
  34CL cG RI$weighted average of 69 {I6} (1977Da02) and 67.8 {I33} (1983Wa27)    
  34CL  G 1945.5       45     7                                                  
@@ -276,8 +274,10 @@
  34CL cL E$weighted average of 2721.4 {I7} (1977Da02) and 2721.1 {I2} (1983Wa27)
  34CL cL T$lifetime |t>400 fs (1977Da02, DSAM). Others: >1.0 ps (1973An13, DSAM)
  34CL2cL and >1500 fs (1985La16, DSAM).                                         
- 34CL  G 563.2        14.5   11                                                 
- 34CL  G 833.8        4.3    4                                                  
+ 34CL  G 563.2       14.9    11                                                 
+ 34CL cG RI$weighted average of 16.3 {I21} (1977Da02) and 14.5 {I11} (1983Wa27) 
+ 34CL  G 833.8       4.4     4                                                  
+ 34CL cG RI$weighted average of 6.1 {I21} (1977Da02) and 4.3 {I4} (1983Wa27)    
  34CL cG $A{-2}=+0.1 {I3} (1971Hy02)                                            
  34CL  G 1490.8       4.5    4                                                  
  34CL cG RI$weighted average of 4.1 {I21} (1977Da02) and 4.5 {I4} (1983Wa27)    
@@ -305,23 +305,27 @@
  34CL2cL (1983Wa27)                                                             
  34CL cL T$lifetime |t=2.4 fs {I19}: weighted average of <10 fs (1983Wa27, DSAM)
  34CL2cL and <4 fs (1985La16, DSAM).                                            
- 34CL  G 970.8        67     12                                                 
  34CL  G 1898.80      2      LT                                                 
  34CL  G 2668.1       2      LT                                                 
  34CL  G 2982.7       2      LT                                                 
  34CL  G 3129.13      100                                                       
- 34CL cG RI$from 1983Wa27. Other: 100 (1977Da02).                               
+ 34CL cG RI$other: 100 (1977Da02).                                              
  34CL  L 3334.0    2                   37 FS     14                             
  34CL cL E$weighted average of 3333.9 {I10} (1977Da02) and 3334.0 {I2}          
  34CL2cL (1983Wa27)                                                             
  34CL cL T$lifetime |t=53 fs {I20} (1985La16, DSAM).                            
  34CL  G 1176.1       100    15                                                 
+ 34CL cG RI$other: 100 {I18} (1977Da02)                                         
  34CL  G 1446.7       4.9    LT                                                 
  34CL  G 2103.7       4.9    LT                                                 
  34CL  G 2668.4       90     12                                                 
- 34CL cG RI$other: 100 {I27} (1977Da02)
+ 34CL cG RI$other: 33 {I9} (1977Da02). 1983Wa27 pointed out that it seems likely
+ 34CL2cG that 1977Da02 were unaware of a {+34m}Cl contamination and therefore   
+ 34CL3cG obtained too large I|g(1176).                                          
  34CL  G 2873.0       54     12                                                 
- 34CL cG RI$other: 50 {I27} (1977Da02)
+ 34CL cG RI$other: 16.4 {I90} (1977Da02). Due to a contamination issue pointed  
+ 34CL2cG out by 1983Wa27, I|g(1176) from 1977Da02 is too large, which makes     
+ 34CL3cG other I|g too small.                                                   
  34CL  G 3187.6       4.9    LT                                                 
  34CL  G 3334.0       7.3    LT                                                 
  34CL  L 3383.3    2                   5.4 FS    11                             
@@ -446,21 +450,23 @@
  34CL2cL (1983Wa27)                                                             
  34CL cL T$lifetime |t<6 fs (1985La16, DSAM).                                   
  34CL  G 2709.8       3.5    LT                                                 
- 34CL  G 3274.5       90     12                                                 
- 34CL cG RI$weighted average of 75 {I11} (1977Da02) and 100 {I9} (1983Wa27)     
- 34CL  G 3479.1       86     14                                                 
- 34CL cG RI$unweighted average of 100 {I11} (1977Da02) and 72 {I9} (1983Wa27)   
+ 34CL  G 3274.5       100    9                                                  
+ 34CL cG RI$other: 100 {I15} (1977Da02).                                        
+ 34CL  G 3479.1       72     9                                                  
+ 34CL cG RI$other: 133 {I15} (1977Da02).                                        
  34CL  G 3940.1       5.2    LT                                                 
  34CL  L 3964.1    3                   90 FS     32                             
  34CL cL E$weighted average of 3964.2 {I15} (1977Da02) and 3964.1 {I3}          
  34CL2cL (1983Wa27)                                                             
  34CL cL T$lifetime |t=130 fs {I46}: weighted average of 160 fs {I60} (1977Da02,
  34CL2cL DSAM) and 90 fs {I70} (1985La16, DSAM).                                
- 34CL  G 1588.6       11     5                                                  
+ 34CL  G 1588.6       11     5                                                 ?
+ 34CL cG RI$from 1977Da02. 1983Wa27 states that the existence of this transition
+ 34CL2cG is considered to be doubtful.                                          
  34CL  G 1806.2       100    16                                                 
  34CL cG RI$from 1977Da02. Other: 100 {I25} (1983Wa27).                         
- 34CL  G 3817.7       30     16                                                 
- 34CL cG RI$weighted average of 23 {I11} (1977Da02) and 67 {I25} (1983Wa27)     
+ 34CL  G 3817.7       67     58                                                 
+ 34CL cG RI$other: 23 {I11} (1977Da02).                                         
  34CL  L 3982.9    7                   131 FS    23                             
  34CL cL E$unweighted average of 3982.2 {I5} (1977Da02) and 3983.5 {I2}         
  34CL2cL (1983Wa27)                                                             
