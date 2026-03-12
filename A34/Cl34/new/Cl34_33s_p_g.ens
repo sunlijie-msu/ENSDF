@@ -102,16 +102,19 @@
  34CL3c  detectors at +85|' and -85|' relative to the beam direction. Measured  
  34CL4c  E|g, I|g, |g|g-coin for nine resonances (E{-p}(lab)=447, 507, 546, 639,
  34CL5c  662, 683, 731, 777, 822 keV). Deduced resonance strengths.             
- 34CL c  Other: 1959Ku79                                                        
+ 34CL c  1959Ku79: protons were accelerated with the Utrecht 850-kV             
+ 34CL2c  Cockroft-Walton generator and impinged on a CdS target enriched in     
+ 34CL3c  {+33}S. Measured |g-ray yield curves. Deduced two resonances.          
+ 34CL d  
  34CL d  ???Added lifetimes from 1985La16, 1984Ke01, 1983Wa27, 1977Da02,        
  34CL2d  1973An13.                                                              
- 34CL d  ???Added E(p)(lab) values from 1964Gl04, 1983Wa27, 1973An13, 1977Da02, 
- 34CL2d  2013Fa10, 1994Li20                                                     
+ 34CL d  ???Added E(p)(lab) values from 1959Ku79, 1964Gl04, 1983Wa27, 1973An13, 
+ 34CL2d  1977Da02, 2013Fa10, 1994Li20                                           
  34CL d  ???Added |w|g values from 1964Gl04, 1983Wa27, 1973An13, 1977Da02,      
  34CL2d  2013Fa10                                                               
  34CL d  ???Added I|g values from 1977Da02, 1983Wa27, 2011Fr04, 2020Pa40.       
  34CL d  ???Added |g(|q) data from 1992Ka39                                     
-
+ 34CL d  
  34CL c  Standard definition of resonance strength                              
  34CL2c  |w|g=(2J{-r}+1)/[(2J{-p}+1)(2J{-T}+1)]|*|G{-|g}|G{-p}/|G, where J{-r}  
  34CL3c  is the spin of the resonance, J{-p}=1/2 is the spin of the proton, and 
@@ -129,9 +132,15 @@
  34CL5cL mainly from 1964Gl04, 1977Da02, and 1983Wa27. The average is taken when
  34CL6cL multiple E{-p}(lab) values are available. For levels above 7.08 MeV    
  34CL7cL (E{-p}(lab)>2 MeV), E{-p}(lab) is mainly from 1992Ka39.                
- 34CL cL E$For bound levels, the original papers in this dataset report precise 
- 34CL2cL E(level) values based on E|g data without reporing their measured E|g. 
- 34CL3cL The average is taken when multiple E(level) values are available.      
+ 34CL cL E$Most papers in this dataset report precise E(level) values based on  
+ 34CL2cL E|g data without reporting their measured E|g values. The only         
+ 34CL3cL exception is 1964Gl04, which reports E|g measured by a NaI detector    
+ 34CL4cL with uncertainties ranging from 10 to 50 keV. A least-squares fit to   
+ 34CL5cL available E|g values with uncertainties would not yield E(level) values
+ 34CL6cL that are more precise or complete than those already reported in the   
+ 34CL7cL original papers. Therefore, the evaluators have adopted the E(level)   
+ 34CL8cL values reported in papers and taken an average when multiple E(level)  
+ 34CL9cL values are available.                                                  
  34CL cL S$LABEL=E{-p}(lab) (keV)                                               
  34CL cG E$From level-energy differences, unless otherwise noted.               
  34CL cG RI$From 1983Wa27, unless otherwise noted.                              
@@ -747,10 +756,11 @@
  34CL  G 5079.8       4.7    LT                                                 
  34CL  G 5394.4       7.8    LT                                                 
  34CL  G 5540.8       6.3    LT                                                 
- 34CL  L 5577.6    10                                           447       1     
+ 34CL  L 5577.6    10                                           447.0     10    
  34CL cL E$from E{-c.m.}=434.4 {I10}: weighted average of E{-c.m.}=433.7 {I10}  
- 34CL2cL (1964Gl04) and E{-c.m.}=435 {I1} (2013Fa10).                           
- 34CL cL S$from 1964Gl04, corresponding to E{-c.m.}=433.7 {I10}.                
+ 34CL2cL (1959Ku79,1964Gl04) and E{-c.m.}=435 {I1} (2013Fa10).                  
+ 34CL cL S$weighted average of 446.5 {I35} (1959Ku79) and 447 {I1} (1964Gl04),  
+ 34CL2cL corresponding to E{-c.m.}=433.7 {I10}.                                 
  34CL cL $|w|g=50 meV {I+10-7} (2013Fa10)                                       
  34CL cL $|w|g=0.4 eV {I1} (1983Wa27)                                           
  34CL  G 1977.6       28.7   66                                             F   
@@ -2289,8 +2299,4 @@
  34CL cL $|w|g=9 eV {I4} (1992Ka39)                                             
  34CL  L 8390.0    10                                           3346      1 K   
  34CL cL $|w|g=4 eV {I2} (1992Ka39)                                             
-
-
-
-
 
