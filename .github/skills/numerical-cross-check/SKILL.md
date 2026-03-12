@@ -1,5 +1,5 @@
 ---
-name: data-consistency-cross-check
+name: numerical-cross-check
 description: Perform meticulous data consistency validation between ENSDF files and source tables or merged comparison files. Systematically verifies L-record completeness, energy ordering, G-record accuracy, RI provenance, and structural compliance using bidirectional checks and reproducible spot-check sampling.
 mode: check-only
 applies-to: ENSDF datasets with corresponding source CSV files
