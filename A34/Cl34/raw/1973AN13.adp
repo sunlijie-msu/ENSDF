@@ -1,4 +1,5 @@
  34CL  XA1973AN13                                                               
+ 34CL PN                                                                     6  
  34CL  L 0                                                                      
  34CLX L XREF=A                                                                 
  34CL  L 146                                                                    
@@ -47,7 +48,7 @@
  34CLX L XREF=A                                                                 
  34CL  L 4820                                                                   
  34CLX L XREF=A                                                                 
- 34CL  L 6167                                                                   
+ 34CL  L 6167                                                   1058            
  34CLX L XREF=A                                                                 
  34CL  G 2030        16                                                         
  34CL  G 2092        16                                                         
@@ -60,7 +61,7 @@
  34CL  G 4279        6.3                                                        
  34CL  G 4937        9.4                                                        
  34CL  G 6021        91                                                         
- 34CL  L 6206                                                                   
+ 34CL  L 6206                                                   1098            
  34CLX L XREF=A                                                                 
  34CL  G 2131        14                                                         
  34CL  G 2224        10                                                         
@@ -69,7 +70,7 @@
  34CL  G 2661        49                                                         
  34CL  G 3829        4.1                                                        
  34CL  G 4025        8.2                                                        
- 34CL  L 6226                                                                   
+ 34CL  L 6226                                                   1121            
  34CLX L XREF=A                                                                 
  34CL  G 1587        6                                                          
  34CL  G 1712        22                                                         
@@ -80,7 +81,7 @@
  34CL  G 3504        100                                                        
  34CL  G 4068        10                                                         
  34CL  G 6226        1.6                                                        
- 34CL  L 6640                                                                   
+ 34CL  L 6640                                                   1542            
  34CLX L XREF=A                                                                 
  34CL  G 2565        100                                                        
  34CL  G 2658        5.3                                                        
@@ -91,14 +92,14 @@
  34CL  G 4263        13                                                         
  34CL  G 4459        5.3                                                        
  34CL  G 6494        66                                                         
- 34CL  L 6720                                                                   
+ 34CL  L 6720                                                   1627            
  34CLX L XREF=A                                                                 
  34CL  G 1900        60                                                         
  34CL  G 3088        37                                                         
  34CL  G 4109        77                                                         
  34CL  G 4343        100                                                        
  34CL  G 6574        57                                                         
- 34CL  L 6972                                                                   
+ 34CL  L 6972                                                   1703            
  34CLX L XREF=A                                                                 
  34CL  G 6306        5.3                                                        
  34CL  G 6972        100                                                        
