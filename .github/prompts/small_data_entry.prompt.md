@@ -28,7 +28,7 @@ If a matching `G` record exists:
 
 - Do not overwrite the existing `G` record energy or intensity fields.
 - Add the 1964Gl04 intensity to `cG RI$other:`.
-- If 1964Gl04 gives an energy uncertainty, add `cG E$other:`.
+- Add `cG E$other:` only if 1964Gl04 gives an explicit `E_gamma` uncertainty.
 - Keep comment order: `E$`, then `RI$`, then general comments.
 
 If no matching `G` record exists:
@@ -36,8 +36,9 @@ If no matching `G` record exists:
 - Insert a new `G` record in ascending energy order.
 - Enter `E`, `DE`, `RI`, and `DRI` from 1964Gl04.
 - Put `?` in column 80.
-- Add `cG E,RI$from 1964Gl04...`.
-- Do not add `cG RI$other:` for the same 1964Gl04 intensity, because it is already the primary `RI` in the new `G` record.
+- Add `cG RI$other:` for the 1964Gl04 intensity.
+- Add `cG E$other:` only if 1964Gl04 gives an explicit `E_gamma` uncertainty.
+- Use `cG E,RI$from 1964Gl04...` only if the user explicitly requests that provenance style.
 
 ## Comment Templates
 
@@ -74,7 +75,7 @@ python .github/scripts/check_gamma_ordering.py "<target-file>"
 ## Done When
 
 - Only `(r) -> final level` transitions were entered.
-- Every 1964Gl04 intensity for an existing `G` record appears in `cG RI$other:`.
-- Every 1964Gl04 energy with an explicit uncertainty appears in `cG E$other:` for existing records.
-- Every missing transition was added as a new `G` record with `?` in column 80 and `cG E,RI$from 1964Gl04...`.
+- Every 1964Gl04 intensity appears in `cG RI$other:`.
+- Every 1964Gl04 energy with an explicit uncertainty appears in `cG E$other:`.
+- Every missing transition was added as a new `G` record with `?` in column 80.
 - Validation passes.
