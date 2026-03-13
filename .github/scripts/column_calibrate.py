@@ -1927,13 +1927,17 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
     
     # Check for line length issues in data record lines only
     length_issues = []
+    tab_issues = []
     for line_num, line in enumerate(lines, 1):
         line_content = line.rstrip('\n\r')
         length = len(line_content)
         
         # Only check data record lines for 80-character compliance
-        if is_data_record_line(line_content) and length != 80:
-            length_issues.append((line_num, length, line_content[7] if len(line_content) > 7 else '?'))
+        if is_data_record_line(line_content):
+            if length != 80:
+                length_issues.append((line_num, length, line_content[7] if len(line_content) > 7 else '?'))
+            if '\t' in line_content:
+                tab_issues.append((line_num, line_content[7] if len(line_content) > 7 else '?'))
     
     if length_issues:
         print("DATA RECORD LINE LENGTH ISSUES DETECTED:")
@@ -1945,6 +1949,13 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
         print("\nUSE --fix flag to automatically correct data record line lengths")
         print("   Example: python column_calibrate.py \"filename.ens\" --fix")
         print("   Note: Comment lines are handled by separate tools")
+        print()
+        errors_found = True
+
+    if tab_issues:
+        print("DATA RECORD TAB CHARACTER ISSUES DETECTED:")
+        for line_num, record_type in tab_issues:
+            print(f"  Line {line_num}: {record_type} record contains tab characters; ENSDF requires spaces only")
         print()
         errors_found = True
     
@@ -2007,8 +2018,8 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
     
     if not errors_found:
         print("SUCCESS: All ENSDF field positions appear correct!")
-        if length_issues == []:  # No length issues either
-            print("SUCCESS: All data record lines are exactly 80 characters!")
+        if length_issues == [] and tab_issues == []:
+            print("SUCCESS: All data record lines are exactly 80 characters and contain no tabs!")
     else:
         print("ERROR: Field positioning errors found - see details above")
     

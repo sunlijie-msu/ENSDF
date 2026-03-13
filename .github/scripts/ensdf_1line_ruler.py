@@ -156,6 +156,8 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
     errors = []
     if len(line) != 80:
         errors.append(f'Length {len(line)} ≠ 80')
+    if '\t' in line:
+        errors.append('Tab character present. ENSDF records must use spaces only.')
     
     if record_key and not record_def and not is_comment:
         errors.append(f'Unknown/Invalid record type "{record_key}" at Column 8.')
@@ -189,10 +191,10 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
         errors.append('Column 7 must be blank for data records (found continuation/comment marker).')
     
     if errors:
-        print(f'❌ ERRORS: {" | ".join(errors)}')
+        print(f'[ERROR] {" | ".join(errors)}')
         return False
     else:
-        print('✅ OK')
+        print('[OK]')
         return True
 
 
@@ -202,12 +204,12 @@ def scan_file(filename: str, show_only_wrong: bool = False, line_number: Optiona
         with open(filename, 'r', encoding='utf-8') as f:
             lines = f.readlines()
     except Exception as e:
-        print(f'❌ ERROR: Cannot open {filename}: {e}')
+        print(f'[ERROR] Cannot open {filename}: {e}')
         return False
     
     if line_number is not None:
         if line_number < 1 or line_number > len(lines):
-            print(f'❌ ERROR: Line number {line_number} is outside the file range (1-{len(lines)}).')
+            print(f'[ERROR] Line number {line_number} is outside the file range (1-{len(lines)}).')
             return False
         target_indexes = {line_number}
     else:

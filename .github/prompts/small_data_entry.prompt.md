@@ -1,4 +1,4 @@
-# 1964Gl04 Resonance Entry
+# small_data_entry
 
 ## Goal
 
