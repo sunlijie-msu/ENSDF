@@ -23,33 +23,6 @@ This repository contains the datasets being evaluated by the FRIB Nuclear Data G
 
 ## AI-Native Development Infrastructure (`.github/`)
 
-This repository implements the **Agentic Primitives** framework to ensure reliable, reproducible AI-assisted evaluation. It structures the AI workflow into three distinct layers:
-
-### 1. Agent Primitives
-- **Custom Agents (`.github/agents/`)**:
-  - **`FRIBND.agent.md`**: The specialized "FRIB Nuclear Data" agent. This defines the expert role, enforces tool boundaries, and encodes the "Sacred Workflow" for ENSDF evaluation.
-- **Instructions (`.github/copilot-instructions.md`)**:
-  - Global repository rules and ENSDF formatting standards that apply to all interactions.
-- **Agentic Workflows (`.github/prompts/`)**:
-  - Reusable `.prompt.md` files for specific tasks:
-    - **`average.prompt.md`**: Weighted/unweighted average calculations.
-    - **`spin_parity.prompt.md`**: J-pi assignment logic.
-    - **`reaction_equations.prompt.md`**: Formatting nuclear reactions.
-    - **`large_scale_data_entry.prompt.md`**: Bulk data extraction workflows.
-
-### 2. Context Engineering (`.github/docs/`)
-Strategic context loading to ground the AI in physics theory and project rules.
-- **`angular_momentum_coupling.md`**: Theoretical basis for the coupling tool.
-- **`copilot-instructions.pdf`**: Reference manual.
-
-### 3. Tooling Infrastructure (`.github/scripts/`)
-Python-based validation tools that serve as the "hands" of the agents.
-- **`column_calibrate.py`**: The primary validator for ENSDF 80-column format.
-- **`check_gamma_ordering.py`**: Enforces ascending energy ordering.
-- **`angular_momentum_coupling.py`**: Physics calculation engine.
-- **`ensdf_1line_ruler.py`**: Visual debugging tool.
-- **`ens2pdf.py`**: Java-based PDF conversion wrapper.
-
 ## Repository Architecture
 ```
 ├── A34/[Element]34/        # A=34 mass chain evaluation files (New work in progress)
@@ -107,7 +80,7 @@ Python-based validation tools that serve as the "hands" of the agents.
 - **14 review rounds completed** across 10 papers (data consistency reviews)
 
 **AI-Enhanced Workflow Development**:
-- First AI agent for ENSDF 80-column formatting developed by the FRIB Nuclear Data Group
+- FRIB ND AI Agent: The first AI Agent designed for ENSDF 80-column formatting has been developed and refined through daily evaluation tasks at the FRIB Nuclear Data Group.
 - Introduced at the LECM2025 and USNDP2025 meetings
 
 

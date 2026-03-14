@@ -1,50 +1,49 @@
-Top-Center Title: FRIBND AI Agent Architecture
+FRIBND AI Agent Architecture
 
-**Context Engineering**:
-Custom Instructions: Rules, Standards, Conventions, Guidelines, Guardrails
-Custom Agents: Persona, Role, Behavior, Tools
-Subagents: Handoffs, Guided Sequential Workflows
-Reusable Prompts: Commands, Specific Tasks, Standardized Workflows
-Agent Skills: Portable and Interoperable Capabilities across Agents, Scripts, Templates, Examples, Reference Docs, Dynamic Loading Resources
+**Context Engineering**
+*   **Custom Instructions:** Rules, Standards, Conventions, Guidelines, Guardrails.
+*   **Custom Agents:** Persona, Role, Behavior, Tools.
+*   **Subagents:** Handoffs, Guided Sequential Workflows.
+*   **Reusable Prompts:** Commands, Specific Tasks, Standardized Workflows.
+*   **Agent Skills:** Portable and Interoperable Capabilities across Agents, Scripts, Templates, Examples, Reference Docs, Dynamic Loading Resources.
 
-**Semantic Structuring** (Role Assignment & Tag Wrapping) organizes the Context across four primary types: system messages, user messages, assistant messages, and tool messages.
+**Semantic Structuring**
+(Role Assignment & Tag Wrapping) organizes the context across four primary types: System Messages, User Messages, Assistant Messages, and Tool Messages.
 This framework ensures clear communication between the user, the AI, and the tools.
 
-System Message:
-Base identity
-Microsoft safety policies
-Agent base instructions
-Copilot memories: facts learned from interactions
-Custom instructions
-Agent skills
-Custom agents
+*   **System Message:**
+    *   Base Identity
+    *   Microsoft Safety Policies
+    *   Agent Base Instructions
+    *   Copilot Memories (Facts learned from interactions)
+    *   Custom Instructions
+    *   Agent Skills
+    *   Custom Agents
 
-User Message:
-Environment info
-Workspace info
-Conversation summary: Conversation Overview, Technical Foundation, Codebase Status, Problem Resolution, Progress Tracking, Active Work State, Recent Operations, Continuation Plan
-Reminder Instructions
-User requests
-Editor context: edited file paths, selections, cursor position, terminal.
-Chat variables: attachments
-Reusable prompts
+*   **User Message:**
+    *   Environment Info and Workspace Info
+    *   Conversation Summary (Overview, Technical Foundation, Codebase Status, Problem Resolution, Progress Tracking, Active Work State, Recent Operations, Continuation Plan)
+    *   Reminder Instructions
+    *   User Requests
+    *   Editor Context (File paths, Selections, Cursor position, Terminal)
+    *   Chat Variables (Attachments)
+    *   Reusable Prompts
 
-Assistant Message:
-Text response (Talking)
-Tool call (Acting)
+*   **Assistant Message:**
+    *   Text Response (Talking)
+    *   Tool Calls (Acting)
 
-Tool Message:
-Result of tool calls: data in 80-col ens files
+*   **Tool Message:**
+    *   Results of Tool Calls (e.g., Data in 80-col ENS diles)
 
+**Structured Message Assembly Pipeline**
+1.  File Discovery
+2.  Parsing and Loading
+3.  Tool Reference Resolution
+4.  Semantic Structuring (Role Assignment & Tag Wrapping: System, User, Assistant, or Tool)
+5.  Content Rendering
+6.  Integration into a Raw Chat Message Array
 
-**Structured Message Assembly Pipeline**:
-File Discovery,
-Parsing, Loading,
-Tool Reference Resolution,
-Semantic Structuring (Role Assignment & Tag Wrapping: system, user, assistant, or tool),
-Content Rendering,
-Integration into a Raw Chat Message Array.
-
-**Endpoint Conversion**:
-Payload Construction: JSON payload built based on the message array.
-Model Configuration: Model selection, Tool definitions (JSON schema), Token limits, Sampling parameters (temperature, top_p), Streaming options, and Thinking budget.
+**Endpoint Conversion**
+*   **Payload Construction:** JSON Payload Built Based on the Message Array
+*   **Model Configuration:** Model Selection, Tool Definitions (JSON Schema), Token Limits, Sampling Parameters (Temperature, Top_p), Streaming Options, and Thinking Budget
