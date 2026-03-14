@@ -114,7 +114,8 @@
  34CL2d  1977Da02, 2013Fa10, 1994Li20                                           
  34CL d  ???Added |w|g values from 1964Gl04, 1983Wa27, 1973An13, 1977Da02,      
  34CL2d  2013Fa10                                                               
- 34CL d  ???Added I|g values from 1977Da02, 1983Wa27, 2011Fr04, 2020Pa40.       
+ 34CL d  ???Added I|g values from 1977Da02, 1983Wa27, 2011Fr04, 2020Pa40,       
+ 34CL2d  1964Gl04                                                               
  34CL d  ???Added |g(|q) data from 1992Ka39                                     
  34CL d                                                                         
  34CL c  Standard definition of resonance strength                              
@@ -137,12 +138,14 @@
  34CL cL E$Most papers in this dataset report precise E(level) values based on  
  34CL2cL E|g data without reporting their measured E|g values. The only         
  34CL3cL exception is 1964Gl04, which reports E|g measured by a NaI detector    
- 34CL4cL with uncertainties ranging from 10 to 50 keV. A least-squares fit to   
- 34CL5cL available E|g values with uncertainties would not yield E(level) values
- 34CL6cL that are more precise or complete than those already reported in the   
- 34CL7cL original papers. Therefore, the evaluators have adopted the E(level)   
- 34CL8cL values reported in papers and taken an average when multiple E(level)  
- 34CL9cL values are available.                                                  
+ 34CL4cL with uncertainties ranging from 10 to 50 keV. In addition to the large 
+ 34CL5cL uncertainties, 1964Gl04 also used a much lower S(p)({+34}Cl)=5.12 MeV  
+ 34CL6cL in their analysis, which contributes to generally lower E(level)       
+ 34CL7cL values. A least-squares fit to available E|g values with uncertainties 
+ 34CL8cL would not yield E(level) values that are more precise or complete than 
+ 34CL9cL those already reported in the original papers. Therefore, the          
+ 34CLAcL evaluators have adopted the E(level) values reported in papers and     
+ 34CLBcL taken an average when multiple E(level) values are available.          
  34CL cL S$From 1992Ka39, unless otherwise noted.                               
  34CL cL S$LABEL=E{-p}(lab) (keV)                                               
  34CL cG E$From level-energy differences, unless otherwise noted.               
@@ -1074,6 +1077,7 @@
  34CL  G 5568.4       0.89   LT                                                 
  34CL  G 5883.2       6.4                                                       
  34CL  G 6029.5       100                                                       
+ 34CL cG RI$other: 100 (1964Gl04)                                               
  34CL  L 6088.94   6                                            974.62    4     
  34CL cL E$weighted average of E(level)=6090.3 {I20} deduced from E{-p}(lab)=976
  34CL2cL {I2}(1964Gl04), E(level)=6089.12 {I16} deduced from E{-p}(lab)=974.83  
@@ -1090,11 +1094,14 @@
  34CL  G 3508.5       0.33                                                      
  34CL  G 3930.8       0.33   LT                                                 
  34CL  G 4201.37      2.6                                                       
+ 34CL cG RI$other: 13 (1964Gl04)                                                
  34CL  G 4858.24      0.67   LT                                                 
  34CL  G 5423.2       1.1    LT                                                 
+ 34CL cG RI$other: 4.7 (1964Gl04)                                               
  34CL  G 5627.2       2.7                                                       
  34CL  G 5942.0       0.33   LT                                                 
  34CL  G 6088.36      100                                                       
+ 34CL cG RI$other: 100 (1964Gl04)                                               
  34CL cG $A{-2}=+0.53 {I7}, A{-4}=0.00 {I8} (1983Wa27)                          
  34CL  L 6136.2    11                                           1023.3    11    
  34CL cL S$weighted average of 1023 {I2} (1964Gl04) and 1023.4 {I11} (1977Da02).
@@ -1116,16 +1123,17 @@
  34CL  G 3978.1       10.9   11                                                 
  34CL cG RI$other: 11 (1983Wa27)                                                
  34CL  G 4905.5       40     4  D                                               
- 34CL cG RI$other: 35 (1983Wa27)                                                
+ 34CL cG RI$other: 35 (1983Wa27), 48 (1964Gl04)                                 
  34CL cG M$D, |DJ=1 |g (1983Wa27)                                               
  34CL cG $A{-2}=-0.32 {I4}, A{-4}=+0.02 {I5} (1983Wa27)                         
  34CL  G 5470.4       100    10 D                                               
- 34CL cG RI$other: 100 (1983Wa27)                                               
+ 34CL cG RI$other: 100 (1983Wa27), 100 (1964Gl04)                               
  34CL cG M$D, |DJ=0 |g (1983Wa27)                                               
  34CL cG $A{-2}=+0.28 {I5}, A{-4}=-0.01 {I6} (1983Wa27)                         
  34CL  G 5674.5       0.52   LT                                                 
+ 34CL cG RI$other: 21 (1964Gl04)                                                
  34CL  G 5989.2       20     2                                                  
- 34CL cG RI$other: 17 (1983Wa27)                                                
+ 34CL cG RI$other: 17 (1983Wa27), 23 (1964Gl04)                                 
  34CL  L 6141.8    11                                           1029.1    11    
  34CL cL S$weighted average of 1029 {I2} (1964Gl04) and 1029.1 {I11} (1977Da02).
  34CL cL $|w|g=0.15 eV {I8} (1964Gl04)                                          
@@ -1151,7 +1159,7 @@
  34CL  G 5680.1       0.12   LT                                                 
  34CL  G 5994.8       0.35   LT                                                 
  34CL  G 6141.2       100    10                                             D   
- 34CL cG RI$other: 100 (1983Wa27)                                               
+ 34CL cG RI$other: 100 (1983Wa27), 100 (1964Gl04)                               
  34CL cG $A{-2}=-0.14 {I3}, A{-4}=+0.08 {I3} (1983Wa27)                         
  34CL  L 6169.0    11                                           1057.2    11    
  34CL cL S$weighted average of 1057 {I2} (1964Gl04) and 1057.3 {I11} (1977Da02).
@@ -1160,14 +1168,16 @@
  34CL cL $|w|g=1.8 eV {I5} (1983Wa27)                                           
  34CL cL $|w|g=1.5 eV {I7} (1977Da02)                                           
  34CL  G 1653.3       4.4    24                                             D   
+ 34CL cG RI$other: 20 (1983Wa27)                                                
  34CL  G 2029.2       2.9    LT                                             D   
+ 34CL cG RI$other: 10 (1983Wa27)                                                
  34CL  G 2092.7       14.7   74 D(+Q)    +0.03   5                          D   
  34CL cG RI$other: 15 (1983Wa27)                                                
  34CL cG M$D(+Q) |DJ=1 |g (1971Hy02)                                            
  34CL cG MR$from 1971Hy02 (or>7)                                                
  34CL cG $A{-2}=-0.12 {I5} (1971Hy02)                                           
  34CL  G 2185.9       100    10 D(+Q)    -0.03   3                          D   
- 34CL cG RI$other: 100 (1983Wa27)                                               
+ 34CL cG RI$other: 100 (1983Wa27), 100 (1964Gl04)                               
  34CL cG M$D(+Q), |DJ=0 |g (1977Da03)                                           
  34CL cG MR$weighted average of -0.02 {I+5-4} (1977Da03) and -0.05 {I6}         
  34CL2cG (1971Hy02, or +1.3 {I2})                                               
@@ -1178,7 +1188,7 @@
  34CL  G 2568.6       23.5   24                                             D   
  34CL cG RI$other: 23 (1983Wa27)                                                
  34CL  G 2623.8       14.7   74 D(+Q)    -0.05   +19-14                     D   
- 34CL cG RI$other: 15 (1983Wa27)                                                
+ 34CL cG RI$other: 15 (1983Wa27), 28 (1964Gl04)                                 
  34CL cG M$D(+Q), |DJ=0 |g (1977Da03)                                           
  34CL cG MR$from 1977Da03                                                       
  34CL cG $A{-2}=+0.25 {I5}, A{-4}=+0.01 {I5} (1977Da03)                         
@@ -1204,8 +1214,9 @@
  34CL cG $A{-2}=-0.24 {I10} (1971Hy02)                                          
  34CL  G 5503.2       0.61   LT                                                 
  34CL  G 5707.3       0.91   LT                                                 
+ 34CL cG RI$other: 35 (1964Gl04)                                                
  34CL  G 6022.0       74     8  D(+Q)    -0.02   3                          D   
- 34CL cG RI$other: 85 (1983Wa27)                                                
+ 34CL cG RI$other: 85 (1983Wa27), 70 (1964Gl04)                                 
  34CL cG M$D(+Q), |DJ=0 |g (1977Da03)                                           
  34CL cG MR$weighted average of -0.03 {I5} (1977Da03) and -0.02 {I3} (1971Hy02) 
  34CL cG $A{-2}=+0.264 {I24}, A{-4}=-0.01 {I3} (weighted average of values from 
@@ -1234,24 +1245,24 @@
  34CL  G 3570.04      9.1    46                                             D   
  34CL cG RI$other: 8.6 (1983Wa27)                                               
  34CL  G 3600.8       18.2   18                                             D   
- 34CL cG RI$other: 19 (1983Wa27)                                                
+ 34CL cG RI$other: 19 (1983Wa27), 22 (1964Gl04)                                 
  34CL  G 3999.92      1.4                                                       
  34CL  G 4023.1       8.0    41                                             D   
- 34CL cG RI$other: 10 (1983Wa27)                                                
+ 34CL cG RI$other: 10 (1983Wa27), 22 (1964Gl04)                                 
  34CL  G 4293.69      9.1    46                                             D   
- 34CL cG RI$other: 9.8 (1983Wa27)                                               
+ 34CL cG RI$other: 9.8 (1983Wa27), 14 (1964Gl04)                                
  34CL  G 4950.55      25.0   25                                             D   
- 34CL cG RI$other: 23 (1983Wa27)                                                
+ 34CL cG RI$other: 23 (1983Wa27), 18 (1964Gl04)                                 
  34CL cG $A{-2}=-0.07 {I4}, A{-4}=-0.05 {I5} (1983Wa27); A{-2}=-0.06 {I13} with 
  34CL2cG A{-4}=0; A{-2}=+0.09 {I19}, A{-4}=-0.23 {I24} (1969Gr29)               
  34CL  G 5515.5       100    10                                             D   
- 34CL cG RI$other: 100 (1983Wa27)                                               
+ 34CL cG RI$other: 100 (1983Wa27), 100 (1964Gl04)                               
  34CL cG $A{-2}=+0.00 {I3} A{-4}=+0.07 {I4} (1983Wa27); A{-2}=-0.06 {I5} with   
  34CL2cG A{-4}=0; A{-2}=-0.04 {I7}, A{-4}=-0.03 {I9} (1969Gr29)                 
  34CL  G 5719.6       10.2   52                                             D   
  34CL cG RI$other: 11 (1983Wa27)                                                
  34CL  G 6034.3       20.5   21 (D)                                         D   
- 34CL cG RI$other: 24 (1983Wa27)                                                
+ 34CL cG RI$other: 24 (1983Wa27), 28 (1964Gl04)                                 
  34CL cG M$(D) |DJ=(1) |g (1969Gr29)                                            
  34CL cG $A{-2}=-0.26 {I13} with A{-4}=0; A{-2}=-0.24 {I23}, A{-4}=-0.02 {I25}  
  34CL2cG (1969Gr29)                                                             
@@ -1268,7 +1279,7 @@
  34CL  G 2130.8       18.8   19                                             D   
  34CL cG RI$other: 18 (1983Wa27)                                                
  34CL  G 2224.0       7.3    38                                             D   
- 34CL cG RI$other: 13 (1983Wa27)                                                
+ 34CL cG RI$other: 13 (1983Wa27), 19 (1964Gl04)                                 
  34CL  G 2560.7       1.04   52                                             D   
  34CL  G 2575.3       20.8   21                                             D   
  34CL cG RI$other: 19 (1983Wa27)                                                
@@ -1278,7 +1289,7 @@
  34CL cG MR$-0.03 {I5} (1971Hy02)                                               
  34CL cG $A{-2}=+0.31 {I1} (1971Hy02)                                           
  34CL  G 2661.9       48     5  D(+Q)    0.00    2                          D   
- 34CL cG RI$other: 49 (1983Wa27)                                                
+ 34CL cG RI$other: 49 (1983Wa27), 100 (1964Gl04)                                
  34CL cG M$D(+Q) |DJ=1 |g (1971Hy02)                                            
  34CL cG MR$from 1971Hy02                                                       
  34CL cG $A{-2}=-0.22 {I2} (1971Hy02)                                           
@@ -1288,6 +1299,7 @@
  34CL cG RI$other: 5.7 (1983Wa27)                                               
  34CL cG $A{-2}=-0.24 {I7} (1971Hy02)                                           
  34CL  G 4319.5       0.43                                                      
+ 34CL cG RI$other: 6 (1964Gl04)                                                 
  34CL  G 5541.3       0.21   LT                                                 
  34CL  G 5745.4       0.21   LT                                                 
  34CL  G 6060.1       1.04   52                                             D   
@@ -1331,18 +1343,22 @@
  34CL cG RI$other: 12 (1983Wa27)                                                
  34CL cG $A{-2}=+0.01 {I9} (1971Hy02)                                           
  34CL  G 2454.8       33.3   33 D(+Q)    +0.03   5                          D   
- 34CL cG RI$other: 44 (1983Wa27)                                                
+ 34CL cG RI$other: 44 (1983Wa27), 71 (1964Gl04)                                 
  34CL cG M$D(+Q) |DJ=1 |g (1971Hy02)                                            
  34CL cG MR$from 1971Hy02                                                       
  34CL cG $A{-2}=-0.23 {I3} (1971Hy02)                                           
  34CL  G 3099.35      2.4                                                       
  34CL  G 3507.1       100    10                                             D   
- 34CL cG RI$other: 100 (1983Wa27)                                               
+ 34CL cG RI$other: 100 (1983Wa27), 100 (1964Gl04)                               
  34CL cG $A{-2}=+0.01 {I5} (1971Hy02)                                           
  34CL  G 4070.5       11.1   56                                             D   
- 34CL cG RI$other: 9.5 (1983Wa27)                                               
+ 34CL cG RI$other: 9.5 (1983Wa27), 29 (1964Gl04)                                
  34CL cG $A{-2}=-0.13 {I10} (1971Hy02)                                          
+ 34CL  G 4341.3       39                                                        
+ 34CL cG RI$from 1964Gl04, but not observed in the more complete data from      
+ 34CL2cG 1983Wa27 or 1977Da02.                                                  
  34CL  G 5562.8       0.49   LT                                                 
+ 34CL cG RI$other: 24 (1964Gl04)                                                
  34CL  G 5766.9       4.4    22                                             D   
  34CL cG RI$other: 5.1 (1983Wa27)                                               
  34CL  G 6081.6       0.49   LT                                                 
@@ -1380,20 +1396,22 @@
  34CL  G 3662.1       12.7   13                                             D   
  34CL cG RI$other: 10 (1983Wa27)                                                
  34CL  G 3897.4       100    10                                             D   
- 34CL cG RI$other: 100 (1983Wa27)                                               
+ 34CL cG RI$other: 100 (1983Wa27), 100 (1964Gl04)                               
  34CL cG $A{-2}=0.00 {I2} A{-4}=-0.04 {I2} (1983Wa27); A{-2}=-0.01 {I3} with    
  34CL2cG A{-4}=0; A{-2}=+0.02 {I3}, A{-4}=-0.06 {I4} (1969Gr29)                 
  34CL  G 4091.9       25.4   26                                             D   
  34CL cG RI$other: 22 (1983Wa27)                                                
  34CL cG $A{-2}=+0.18 {I4}, A{-4}=-0.05 {I5} (1983Wa27)                         
  34CL  G 4115.1       1.59   80                                             D   
- 34CL cG RI$other: 1.4 (1983Wa27)                                               
+ 34CL cG RI$other: 1.4 (1983Wa27), 23 (1964Gl04)                                
  34CL  G 4385.7       11.1   11                                             D   
- 34CL cG RI$other: 9.9 (1983Wa27)                                               
+ 34CL cG RI$other: 9.9 (1983Wa27), 19 (1964Gl04)                                
  34CL cG $A{-2}=0.00 {I7}, A{-4}=+0.05 {I9} (1983Wa27)                          
  34CL  G 5042.6       0.79   40                                             D   
  34CL  G 5607.5       0.15   LT                                                 
+ 34CL cG RI$other: 8 (1964Gl04)                                                 
  34CL  G 5811.6       0.15   LT                                                 
+ 34CL cG RI$other: 6 (1964Gl04)                                                 
  34CL  G 6126.3       4.8    24                                             D   
  34CL cG RI$other: 7.7 (1983Wa27)                                               
  34CL  G 6272.7       0.15   LT                                                 
@@ -1426,11 +1444,11 @@
  34CL  G 5091.3       4.6    23                                             D   
  34CL cG RI$other: 3.5 (1983Wa27)                                               
  34CL  G 5656.2       36     4                                              D   
- 34CL cG RI$other: 41 (1983Wa27)                                                
+ 34CL cG RI$other: 41 (1983Wa27), 28 (1964Gl04)                                 
  34CL  G 5860.3       18.2   18                                             D   
  34CL cG RI$other: 16 (1983Wa27)                                                
  34CL  G 6175.0       100    10                                             D   
- 34CL cG RI$other: 100 (1983Wa27)                                               
+ 34CL cG RI$other: 100 (1983Wa27), 100 (1964Gl04)                               
  34CL cG $A{-2}=-0.04 {I3}, A{-4}=+0.01 {I3} (1983Wa27)                         
  34CL  G 6321.4       0.61   LT                                                 
  34CL  L 6361.3    13                                           1255.3    13    
@@ -1439,6 +1457,7 @@
  34CL cL $|w|g=0.4 eV {I2} (1977Da02)                                           
  34CL  G 2977.9       71     7                                              D   
  34CL  G 4203.1       100    10                                             D   
+ 34CL cG RI$other: 100 (1964Gl04)                                               
  34CL  G 5130.6       25.0   25                                             D   
  34CL  G 5899.6       14.8   16                                             D   
  34CL  G 6214.3       17.1   18                                             D   
@@ -1471,7 +1490,7 @@
  34CL  G 3759.0       3.5    17                                             D   
  34CL cG RI$other: 2.1 (1983Wa27)                                               
  34CL  G 3789.7       24.1   24                                             D   
- 34CL cG RI$other: 21 (1983Wa27)                                                
+ 34CL cG RI$other: 21 (1983Wa27), 40 (1964Gl04)                                 
  34CL  G 4188.8       10.3   52                                             D   
  34CL cG RI$other: 7.3 (1983Wa27)                                               
  34CL  G 4212.0       8.6    45                                             D   
@@ -1481,7 +1500,7 @@
  34CL  G 5139.5       10.3   52                                             D   
  34CL cG RI$other: 9.1 (1983Wa27)                                               
  34CL  G 5704.4       100    10                                             D   
- 34CL cG RI$other: 100 (1983Wa27)                                               
+ 34CL cG RI$other: 100 (1983Wa27), 100 (1964Gl04)                               
  34CL cG $A{-2}=-0.04 {I5} with A{-4}=0; A{-2}=-0.04 {I6}, A{-4}=0.00 {I8}      
  34CL2cG (1969Gr29)                                                             
  34CL  G 5908.5       31.0   31                                             D   
@@ -1489,7 +1508,7 @@
  34CL cG $A{-2}=-0.07 {I14} with A{-4}=0; A{-2}=-0.11 {I16}, A{-4}=+0.09 {I21}  
  34CL2cG (1969Gr29)                                                             
  34CL  G 6223.2       48     5                                              D   
- 34CL cG RI$other: 42 (1983Wa27)                                                
+ 34CL cG RI$other: 42 (1983Wa27), 60 (1964Gl04)                                 
  34CL cG $A{-2}=+0.11 {I12} with A{-4}=0; A{-2}=+0.11 {I13}, A{-4}=0.00 {I17}   
  34CL2cG (1969Gr29)                                                             
  34CL  G 6369.6       52     5                                              D   
@@ -2387,4 +2406,3 @@
  34CL cL $|w|g=9 eV {I4} (1992Ka39)                                             
  34CL  L 8390.0    10                                           3346      1     
  34CL cL $|w|g=4 eV {I2} (1992Ka39)                                             
-
