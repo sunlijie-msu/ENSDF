@@ -78,15 +78,18 @@
  34CL2c  Van de Graaff accelerator at the University of Helsinki and impinged on
  34CL3c  {+33}S targets on Ta backings. |g rays were detected using a PGT Ge(Li)
  34CL4c  detector. Deduced lifetimes for two bound levels using DSAM.           
+ 34CL d                                                                         
  34CL c  1983Ra04: 0.9-1.4-MeV proton beams impinged on an 88.2%-enriched {+33}S
  34CL2c  target (CdS on carbon backing). |g rays were detected using a NaI      
  34CL3c  detector at 90|' relative to the beam direction and protons were       
  34CL4c  detected using a Si surface barrier detector at 135|' relative to the  
  34CL5c  beam direction. Measured E|g, I|g, reaction Q, and S(p).               
+ 34CL d                                                                         
  34CL c  1973An13: 1.3-1.8-MeV proton beams were provided from the 2.5-MV van de
  34CL2c  Graaff accelerator at the University of Helsinki and impinged on {+33}S
  34CL3c  targets on Ta backings. |g rays were detected using a 40-cm{+3} Ge(Li) 
  34CL4c  detector. Measured E|g, I|g. Deduced levels and lifetimes using DSAM.  
+ 34CL d                                                                         
  34CL c  1971Hy02: 1058, 1098, 1121-keV proton beams were provided from the     
  34CL2c  Aerospace Research Laboratories 2-MeV Van de Graaff accelerator and    
  34CL3c  impinged on an 84%-enriched {+33}S target (Ag backing soldered on brass
@@ -94,11 +97,13 @@
  34CL5c  detector. Measured E|g, I|g, and |g(|q). Deduced levels, J, |p,        
  34CL6c  |resonance strengths for three resonances, |g multipolarities, and     
  34CL7c  multipole mixing ratios.                                               
+ 34CL d                                                                         
  34CL c  1969Gr29: 1.0-1.3-MeV proton beams impinged on a 25%-enriched {+33}S   
  34CL2c  target (|a|g backing soldered on brass disk). |g rays were detected    
  34CL3c  using a Ge(Li) detector at 0|' and 115|' or 120|' relative to the beam 
  34CL4c  direction. Measured E|g, I|g, and |g(|q). Deduced levels, J, |p, |g    
  34CL5c  multipolarities, multipole mixing ratios, and lifetimes using DSAM.    
+ 34CL d                                                                         
  34CL c  1964Gl04: 0.3-1.3-MeV proton beams impinged on a 22%-enriched {+33}S   
  34CL2c  target (CdS on Cu or Ta backings). |g rays were detected using NaI     
  34CL3c  detectors at +85|' and -85|' relative to the beam direction. Measured  
@@ -163,14 +168,19 @@
  34CL2cL 461.5 {I3} (1969Gr29)                                                  
  34CL  G 314.8        1      LT                                                 
  34CL  G 461.2        100                                                       
+ 34CL cG E$other: 460 {I20}, |g cascade from E{-p}(lab)=507, 546, 731, 822      
+ 34CL2cG (1964Gl04).                                                            
  34CL  L 665.3     2                                                            
  34CL cL E$weighted average of 665.7 {I5} (1977Da02), 665.6 {I2} (1973An13), and
  34CL2cL 664.6 {I3} (1969Gr29)                                                  
  34CL  G 204.1        0.3    LT                                                 
  34CL cG RI$from 2020Pa40.                                                      
  34CL  G 518.9        1.46   19                                                 
+ 34CL cG E$other: 530 {I10}, |g cascade from E{-p}(lab)=507 (1964Gl04).         
  34CL cG RI$from 2020Pa40. Other: <1 (1983Wa27).                                
  34CL  G 665.3        100                                                       
+ 34CL cG E$other: 670 {I20}, |g cascade from E{-p}(lab)=447, 507, 546, 662, 683,
+ 34CL2cG 731, 777, 822 (1964Gl04).                                              
  34CL cG RI$from 2020Pa40. Other: 100 (1977Da02), 100 (1983Wa27).               
  34CL cG $A{-2}=+0.28 {I4}, A{-4} set to zero; A{-2}=+0.31 {I5}, A{-4}=-0.07    
  34CL2cG {I7} (1969Gr29)                                                        
@@ -178,10 +188,16 @@
  34CL cL E$weighted average of 1230.5 {I3} (1977Da02), 1230.33 {I8} (1983Wa27), 
  34CL2cL 1230.5 {I5} (1973An13), and 1228.8 {I7} (1969Gr29)                     
  34CL  G 565.0        98.6   14                                                 
+ 34CL cG E$other: 560 {I20}, |g cascade from E{-p}(lab)=731 (1964Gl04).         
  34CL cG RI$other: 102.8 {I28} (1977Da02)                                       
  34CL  G 769.1        100.0  14                                                 
+ 34CL cG E$other: 770 {I30}, |g cascade from E{-p}(lab)=662, 822; 770 {I20}, |g 
+ 34CL2cG cascade from E{-p}(lab)=731 (1964Gl04).                                
  34CL cG RI$other: 100.0 {I28} (1977Da02)                                       
  34CL  G 1083.9       87.1   14                                                 
+ 34CL cG E$other: 1080 {I50}, |g cascade from E{-p}(lab)=662; 1090 {I20}, |g    
+ 34CL2cG cascade from E{-p}(lab)=731; 1100 {I40}, |g cascade from E{-p}(lab)=546
+ 34CL3cG (1964Gl04).                                                            
  34CL cG RI$other: 75.0 {I28} (1977Da02)                                        
  34CL  G 1230.31      1.4    LT                                             D   
  34CL cG RI$other: <5.7 (1983Wa27).                                             
@@ -191,8 +207,12 @@
  34CL  G 656.95       3.5    LT                                                 
  34CL  G 1222.0       0.83   LT                                                 
  34CL  G 1426.1       100.0  12                                                 
+ 34CL cG E$other: 1420 {I40}, |g cascade from E{-p}(lab)=731; 1350 {I60}, |g    
+ 34CL2cG cascade from E{-p}(lab)=546 (1964Gl04).                                
  34CL cG RI$other: 100.0 {I33} (1977Da02)                                       
  34CL  G 1740.8       71     4                                                  
+ 34CL cG E$other: 1750 {I30}, |g cascade from E{-p}(lab)=546, 683, 731          
+ 34CL2cG (1964Gl04).                                                            
  34CL cG RI$unweighted average of 66.7 {I33} (1977Da02) and 74.2 {I12}          
  34CL2cG (1983Wa27)                                                             
  34CL  G 1887.23      0.83   LT                                             D   
@@ -204,22 +224,33 @@
  34CL2cL DSAM), 46 fs {I10} (1983Wa27, DSAM), 47 fs {I5} (1984Ke01, DSAM), and  
  34CL3cL 49 fs {I5} (1985La16, DSAM).                                           
  34CL  G 927.6        8.56   31 D(+Q)    +0.1    +6-3                           
+ 34CL cG E$other: 930 {I30}, |g cascade from E{-p}(lab)=822; 950 {I40}, |g      
+ 34CL2cG cascade from E{-p}(lab)=662 (1964Gl04).                                
  34CL cG RI$weighted average of 9.1 {I15} (1977Da02) and 8.54 {I31} (1983Wa27)  
  34CL cG M,MR$from |g(|q) in 1977Da03                                           
  34CL cG $A{-2}=+0.14 {I10}, A{-4}=0.00 {I10} (1977Da03)                        
  34CL  G 1492.6       0.76   LT                                             D   
  34CL cG RI$other: <3.1 (1983Wa27).                                             
  34CL  G 1696.7       100.0  6  D+Q      -0.05   3                              
+ 34CL cG E$other: 1700 {I30}, |g cascade from E{-p}(lab)=546, 731; 1700 {I40},  
+ 34CL2cG |g cascade from E{-p}(lab)=662; 1710 {I30}, |g cascade from E{-p}(lab)=
+ 34CL3cG 639 (1964Gl04).                                                        
  34CL cG RI$other: 100.0 {I30} (1977Da02)                                       
  34CL cG M,MR$from |g(|q) in 1977Da03                                           
  34CL cG $A{-2}=-0.12 {I1}, A{-4}=-0.01 {I1} (1977Da03)                         
  34CL cG $A{-2}=-0.20 {I3} (1971Hy02, |g cascade from E{-p}(lab)=1058);         
  34CL2cG A{-2}=+0.03 {I4} (1971Hy02, |g cascade from E{-p}(lab)=1119)           
  34CL  G 2011.4       20.2   5  D+Q      +0.22   10                             
+ 34CL cG E$other: 2010 {I40}, |g cascade from E{-p}(lab)=822; 2020 {I50}, |g    
+ 34CL2cG cascade from E{-p}(lab)=639, 662; 2030 {I30}, |g cascade from E{-p}(la 
+ 34CL3cG b)=546 (1964Gl04).                                                     
  34CL cG RI$weighted average of 21.2 {I15} (1977Da02) and 20.1 {I5} (1983Wa27)  
  34CL cG M,MR$from |g(|q) in 1977Da03                                           
  34CL cG $A{-2}=-0.11 {I7}, A{-4}=+0.02 {I7} (1977Da03)                         
  34CL  G 2157.8       23.5   8                                                  
+ 34CL cG E$other: 2160 {I30}, |g cascade from E{-p}(lab)=639, 822; 2160 {I50},  
+ 34CL2cG |g cascade from E{-p}(lab)=662; 2170 {I40}, |g cascade from E{-p}(lab)=
+ 34CL3cG 546 (1964Gl04).                                                        
  34CL cG RI$weighted average of 21.2 {I15} (1977Da02) and 23.8 {I5} (1983Wa27)  
  34CL cG $A{-2}=+0.16 {I6}, A{-4}=+0.21 {I6} (1977Da03)                         
  34CL  L 2181.10   8                   0.45 PS   11                             
@@ -265,6 +296,9 @@
  34CL  G 2119.0       2      LT                                                 
  34CL  G 2433.8       2      LT                                                 
  34CL  G 2580.2       100                                                       
+ 34CL cG E$other: 2570 {I30}, |g cascade from E{-p}(lab)=683; 2580 {I30}, |g    
+ 34CL2cG cascade from E{-p}(lab)=507; 2590 {I30}, |g cascade from E{-p}(lab)=54 
+ 34CL3cG 6 (1964Gl04).                                                          
  34CL cG RI$other: 100 (1977Da02).                                              
  34CL  L 2611.03   11                  1.6E2 FS  4                              
  34CL cL E$weighted average of 2610.6 {I5} (1977Da02), 2611.05 {I11} (1983Wa27),
@@ -325,6 +359,7 @@
  34CL  G 2667.8       2      LT                                                 
  34CL  G 2982.6       2      LT                                                 
  34CL  G 3128.97      100                                                       
+ 34CL cG E$other: 3150 {I40}, |g cascade from E{-p}(lab)=546 (1964Gl04).        
  34CL cG RI$other: 100 (1977Da02).                                              
  34CL  L 3334.0    2                   37 FS     14                             
  34CL cL E$weighted average of 3333.9 {I10} (1977Da02) and 3334.0 {I2}          
@@ -352,10 +387,13 @@
  34CL  G 2152.9       52.0   25                                                 
  34CL cG RI$weighted average of 52 {I10} (1977Da02) and 52.0 {I25} (1983Wa27)   
  34CL  G 2717.9       86     4                                                  
+ 34CL cG E$other: 2710 {I50}, |g cascade from E{-p}(lab)=662 (1964Gl04).        
  34CL cG RI$weighted average of 87 {I7} (1977Da02) and 85 {I4} (1983Wa27)       
  34CL  G 2922.0       75     5                                                  
+ 34CL cG E$other: 2920 {I30}, |g cascade from E{-p}(lab)=662 (1964Gl04).        
  34CL cG RI$weighted average of 84 {I7} (1977Da02) and 72 {I4} (1983Wa27)       
  34CL  G 3236.7       100.0  34                                                 
+ 34CL cG E$other: 3240 {I30}, |g cascade from E{-p}(lab)=662 (1964Gl04).        
  34CL cG RI$other: 100 {I7} (1977Da02)                                          
  34CL  G 3383.1       3.1    LT                                                 
  34CL  L 3545.08   15                  102 FS    17                             
@@ -369,6 +407,7 @@
  34CL cG RI$weighted average of 4.2 {I21} (1977Da02) and 3.5 {I6} (1983Wa27)    
  34CL  G 3083.7       3.1    LT                                                 
  34CL  G 3398.5       100.0  6  D+Q      -0.09   3                              
+ 34CL cG E$other: 3400 {I50}, |g cascade from E{-p}(lab)=731 (1964Gl04).        
  34CL cG RI$other: 100.0 {I21} (1977Da02)                                       
  34CL cG M$from |g(|q) in 1977Da03.                                             
  34CL cG MR$weighted average of +0.11 {I4} (1977Da03) and +0.06 {I5} (1971Hy02) 
@@ -564,6 +603,7 @@
  34CL  G 3482.3       66.2   19                                                 
  34CL  G 4001.2       3.8    LT                                                 
  34CL  G 4147.5       9.8    15                                                 
+ 34CL cG E$other: 4130 {I50}, |g cascade from E{-p}(lab)=777 (1964Gl04).        
  34CL  L 4325.89   15                  5.1 FS    20                             
  34CL cL E$weighted average of 4325.6 {I5} (1977Da02) and 4325.91 {I15}         
  34CL2cL (1983Wa27)                                                             
@@ -630,6 +670,7 @@
  34CL cG $A{-2}=0.00 {I8} (1971Hy02)                                            
  34CL  G 4054.2       2.5    LT                                                 
  34CL  G 4369.0       25.6   25                                                 
+ 34CL cG E$other: 4370 {I50}, |g cascade from E{-p}(lab)=447 (1964Gl04).        
  34CL cG RI$weighted average of 27 {I4} (1977Da02) and 25.0 {I25} (1983Wa27)    
  34CL cG $A{-2}=-0.10 {I20} (1971Hy02)                                          
  34CL  G 4515.4       5      LT                                                 
@@ -807,7 +848,6 @@
  34CL  G 5116.0       1.4    LT                                                 
  34CL cG $Observed in 1983Wa27 but not in 2011Fr04.                             
  34CL  G 5430.7       61.9   55                                             F   
- 34CL cG E$other: 5410 (1964Gl04)                                               
  34CL cG RI$other: 62 (1983Wa27), 51 {I7} (1964Gl04)                            
  34CL  G 5577.1       0.24   LT                                                 
  34CL cG RI$other: <8 (1964Gl04); not observed in 2011Fr04.                     
