@@ -11,7 +11,7 @@ applies-to: ENSDF datasets with corresponding source CSV files
 
 This skill provides a systematic workflow for conducting rigorous data consistency validation between Evaluated Nuclear Structure Data File (ENSDF) records and their corresponding source tables or merged comparison files. The workflow prioritizes **data accuracy and integrity** over formatting concerns, employing a multi-tier validation approach to detect discrepancies at both structural and numerical levels.
 
-**Scope:** Applicable to any ENSDF file undergoing data entry from tabular sources (CSV, Excel converted to CSV, or PDF-extracted tables), or to review tasks that compare adopted ENSDF data against an `.mrg` comparison file built from original ENSDF datasets.
+**Scope:** Applicable to any ENSDF file undergoing data entry from tabular sources (CSV, Excel converted to CSV, or PDF-extracted tables), or to review tasks that compare adopted ENSDF data against an `.mrg` or `.md` file built from original ENSDF datasets.
 
 **Mode:** **CHECK-ONLY** — This skill validates existing data without modifying files.
 
