@@ -1,6 +1,7 @@
 Task: Tabular Data Extraction and Data Entry Quality Assurance.
 Meticulous data extraction from the image and output table as a markdown file.
-Omit the "Method of observation" column. Focus on Eγ, Relative intensity, and Interpretation columns.
+Omit the "Method of observation" column. Focus on Eγ, Relative intensity columns. Eγ≈Ei-Ef. Ei indicates the energy of the initial level, and Ef indicates the energy of the final level.
+
 Omit footnotes.
 Keep the final extracted table at the end of the markdown. Do not add any extra content after the table!
 
