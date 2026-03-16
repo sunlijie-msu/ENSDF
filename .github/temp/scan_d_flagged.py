@@ -54,7 +54,7 @@ while i < len(lines):
     # G record
     if re.match(r' 34CL {2}G ', s):
         padded = s.ljust(80)
-        flag = padded[79]  # col 80, index 79
+        flag = padded[76]  # col 77 (1-based), index 76 (0-based)
 
         ri_str = s[22:29].strip() if len(s) > 22 else ''
         dri_str = s[29:31].strip() if len(s) > 31 else ''
@@ -66,12 +66,12 @@ while i < len(lines):
 
         gamma_e = s[9:19].strip()
 
-        # Read associated comment block
+        # Read associated comment block (col 6 can be blank or continuation char)
         block_lines = []
         j = i + 1
         while j < len(lines):
             nxt = lines[j].rstrip()
-            if re.match(r' 34CL[2-9A-Za-z]?c[GL]', nxt):
+            if re.match(r' 34CL[ 2-9A-Za-z]c[GL]', nxt):
                 block_lines.append((j+1, nxt))
                 j += 1
             else:
