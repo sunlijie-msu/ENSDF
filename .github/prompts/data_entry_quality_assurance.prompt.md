@@ -3,6 +3,7 @@ Meticulous data extraction from the image and output table as a markdown file.
 Omit the "Method of observation" column. Focus on Eγ, Relative intensity columns. Eγ≈Ei-Ef. Ei indicates the energy of the initial level, and Ef indicates the energy of the final level.
 
 Omit footnotes.
+Ensure that every +/- sign absolutely matches the original image.
 Keep the final extracted table at the end of the markdown. Do not add any extra content after the table!
 
 Extract all numerical data and uncertainties with absolute fidelity to the source image. Preserve every decimal place exactly—do not round, omit, alter, or add digits. Example: 10.0 is 10.0, not 10 or 10.00!
