@@ -147,10 +147,10 @@
  34CL9cL those already reported in the original papers. Therefore, the          
  34CLAcL evaluators have adopted the precise E(level) values reported in papers 
  34CLBcL and the average is taken when multiple E(level) values are available.  
- 34CL cL J$For the five lowest-lying, J|p is from the Adopted Levels. For other 
- 34CL2cL levels, J is from the comparison of experimental angular distributions 
- 34CL3cL of |g-rays with theoretical predictions or deduced from |g-feedings,   
- 34CL4cL unless otherwise noted.                                                
+ 34CL cL J$For low-lying levels with J and |p that are both given, J|p is from  
+ 34CL2cL the Adopted Levels. For other levels, J is from the comparison of      
+ 34CL3cL experimental angular distributions of |g-rays with theoretical         
+ 34CL4cL predictions or deduced from |g-feedings, unless otherwise noted.       
  34CL cL S$From 1992Ka39, unless otherwise noted.                               
  34CL cL S$LABEL=E{-p}(lab) (keV)                                               
  34CL PN                                                                     6  
@@ -168,9 +168,9 @@
  34CL  G 314.8        1      LT                                                 
  34CL cG RI$other: <5 (1969Gr29).                                               
  34CL  G 461.2        100                                                       
- 34CL cG RI$other: 100 (1969Gr29).                                              
  34CL cG E$other: 460 {I20}, |g cascade at E{-p}(lab)=507, 546, 731, 822        
  34CL2cG (1964Gl04).                                                            
+ 34CL cG RI$other: 100 (1969Gr29).                                              
 
  34CL  L 665.3     2  1                                                         
  34CL cL E$weighted average of 665.7 {I5} (1977Da02), 665.6 {I2} (1973An13), and
@@ -184,13 +184,12 @@
  34CL  G 665.3        100       D+Q      -0.21   11                             
  34CL cG E$others: 670 {I20}, |g cascade at E{-p}(lab)=447, 507, 546, 662, 683, 
  34CL2cG 731, 777, 822 (1964Gl04).                                              
- 34CL cG RI$from 2020Pa40. Others: 100 (1977Da02), 100 (1983Wa27), 100          
- 34CL2cG (1969Gr29).                                                            
+ 34CL cG RI$from 2020Pa40, 1983Wa27, 1977Da02, and 1969Gr29.                    
  34CL cG M,MR$from |g|g(|q) |g cascade at E{-p}(lab)=1266 in 1969Gr29.          
  34CL cG $A{-2}=+0.28 {I4}, A{-4} set to zero; A{-2}=+0.31 {I5}, A{-4}=-0.07    
  34CL2cG {I7} (1969Gr29)                                                        
 
- 34CL  L 1230.33   8  2                                                         
+ 34CL  L 1230.33   8  2+                                                        
  34CL cL E$weighted average of 1230.5 {I3} (1977Da02), 1230.33 {I8} (1983Wa27), 
  34CL2cL 1230.5 {I5} (1973An13), and 1228.8 {I7} (1969Gr29)                     
  34CL  G 565.0        98.6   14                                                 
@@ -208,7 +207,7 @@
  34CL  G 1230.31      1.4    LT                                             D   
  34CL cG RI$others: <5.7 (1983Wa27), <7.0 (1969Gr29).                           
 
- 34CL  L 1887.29   8  2                                                         
+ 34CL  L 1887.29   8  2+                                                        
  34CL cL E$weighted average of 1887.2 {I3} (1977Da02), 1887.31 {I8} (1983Wa27), 
  34CL2cL 1887.0 {I5} (1973An13), and 1885.9 {I16} (1969Gr29)                    
  34CL  G 656.95       3.5    LT                                                 
@@ -226,10 +225,9 @@
  34CL  G 1887.23      0.83   LT                                             D   
  34CL cG RI$others: <1.7 (1983Wa27), <16 (1969Gr29).                            
 
- 34CL  L 2157.9    1  2                32.7 FS   23                             
+ 34CL  L 2157.9    1  2+               32.7 FS   23                             
  34CL cL E$weighted average of 2158.1 {I3} (1977Da02), 2157.90 {I8} (1983Wa27), 
  34CL2cL 2157.9 {I1} (1973An13), and 2158.4 {I12} (1969Gr29)                    
- 34CL cL J$spin=2 from |g(|q) in 1977Da03.                                      
  34CL cL T$lifetime |t=47 fs {I3}: weighted average of 36 fs {I15} (1977Da02,   
  34CL2cL DSAM), 46 fs {I10} (1983Wa27, DSAM), 47 fs {I5} (1984Ke01, DSAM), and  
  34CL3cL 49 fs {I5} (1985La16, DSAM).                                           
@@ -2859,4 +2857,4 @@
 
  34CL  L 8390.0    10                                           3346      1     
  34CL cL $|w|g=4 eV {I2} (1992Ka39)                                             
-                                                                                
+
