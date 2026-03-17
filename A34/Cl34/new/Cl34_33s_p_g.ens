@@ -124,6 +124,11 @@
  34CL8c  resonance strength, all the resonance strengths provided in the        
  34CL9c  comments below should be divided by 8, except for |w|g values from     
  34CLAc  2013Fa10, which are already in the standard definition.                
+ 34CL cG E$From level-energy differences, unless otherwise noted.               
+ 34CL cG RI$From 1983Wa27, unless otherwise noted.                              
+ 34CL cG RI(D)$From 1977Da02.                                                   
+ 34CL cG RI(F)$From 2011Fr04                                                    
+ 34CL cG M,MR$From |g(|q) and/or |g|g(|q) data given under comments.            
  34CL cL E$For resonances above S(p)({+34}Cl)=5143.20 {I5} (2021Wa16),          
  34CL2cL E(level)=E{-c.m.}+S(p)({+34}Cl), where                                 
  34CL3cL E{-c.m.}=E{-p}(lab)|*m({+33}S)/[m{-p}+m({+33}S)], unless otherwise     
@@ -142,25 +147,21 @@
  34CL9cL those already reported in the original papers. Therefore, the          
  34CLAcL evaluators have adopted the precise E(level) values reported in papers 
  34CLBcL and the average is taken when multiple E(level) values are available.  
+ 34CL cL J$For the five lowest-lying, J|p is from the Adopted Levels. For other 
+ 34CL2cL levels, J is from the comparison of experimental angular distributions 
+ 34CL3cL of |g-rays with theoretical predictions or deduced from |g-feedings,   
+ 34CL4cL unless otherwise noted.                                                
  34CL cL S$From 1992Ka39, unless otherwise noted.                               
  34CL cL S$LABEL=E{-p}(lab) (keV)                                               
- 34CL cG E$From level-energy differences, unless otherwise noted.               
- 34CL cG RI$From 1983Wa27, unless otherwise noted.                              
- 34CL cG RI(D)$From 1977Da02.                                                   
- 34CL cG RI(F)$From 2011Fr04                                                    
- 34CL cG M,MR$From |g(|q) and/or |g|g(|q) data given under comments.            
  34CL PN                                                                     6  
  34CL  L 0            0+                                                        
- 34CL cL J$from the Adopted Levels.                                             
  34CL  L 146.4     1  3+                                                        
  34CL cL E$weighted average of 146.5 {I5} (1977Da02), 146.4 {I1} (1973An13), and
  34CL2cL 146.8 {I10} (1969Gr29)                                                 
- 34CL cL J$from the Adopted Levels.                                             
- 34CL  G 146                                                                    
+ 34CL  G 146.4                                                                  
  34CL  L 461.2     2  1+                                                        
  34CL cL E$weighted average of 461.2 {I5} (1977Da02), 461.0 {I2} (1973An13), and
  34CL2cL 461.5 {I3} (1969Gr29)                                                  
- 34CL cL J$from the Adopted Levels.                                             
  34CL  G 314.8        1      LT                                                 
  34CL cG RI$other: <5 (1969Gr29).                                               
  34CL  G 461.2        100                                                       
@@ -311,7 +312,7 @@
  34CL2cL 2580.4 {I5} (1973An13), and 2580.6 {I13} (1969Gr29)                    
  34CL cL T$lifetime |t=3.0 fs {I25} (1977Da02, DSAM). Others: <5 fs (1983Wa27,  
  34CL2cL DSAM) and <7 fs (1985La16, DSAM).                                      
- 34CL  G 695          8      LT                                                 
+ 34CL  G 693.0        8      LT                                                 
  34CL cG RI$from 1969Gr29.                                                      
  34CL  G 1349.9       1      LT                                                 
  34CL cG RI$other: <6 (1969Gr29).                                               
@@ -925,11 +926,11 @@
  34CL2cL corresponding to E{-c.m.}=433.7 {I10}.                                 
  34CL cL $|w|g=50 meV {I+10-7} (2013Fa10)                                       
  34CL cL $|w|g=0.4 eV {I1} (1983Wa27)                                           
- 34CL  G 1050      30 9      3                                                  
- 34CL cG E,RI$from 1964Gl04                                                     
- 34CL  G 1700      40 7      3                                                 ?
- 34CL cG E,RI$from 1964Gl04. The authors assigned a 3.87 MeV level as the final 
- 34CL2cG level, which has not been observed by any other work.                  
+ 34CL  G 1050         9      3                                                  
+ 34CL cG E,RI$1050 {I30} from 1964Gl04                                          
+ 34CL  G 1700         7      3                                                 ?
+ 34CL cG E,RI$1700 {I40} from 1964Gl04. The authors assigned a 3.87 MeV level as
+ 34CL2cG the final level, which has not been observed by any other work.        
  34CL  G 1977.3       28.7   66                                             F   
  34CL cG RI$other: 38 (1983Wa27)                                                
  34CL  G 2032.5       100                                                   F   
@@ -967,14 +968,14 @@
  34CL cL $|w|g=61 meV {I+11-8} (2013Fa10)                                       
  34CL  G 996.8        0.44                                                      
  34CL cG $Observed in 1983Wa27 but not in 2011Fr04.                             
- 34CL  G 1040      30 4      1                                                 ?
- 34CL cG E,RI$from 1964Gl04, but not observed in the more complete data from    
- 34CL2cG 1983Wa27 or 2011Fr04.                                                  
+ 34CL  G 1040         4      1                                                 ?
+ 34CL cG E,RI$1040 {I30} from 1964Gl04, but not observed in the more complete   
+ 34CL2cG data from 1983Wa27 or 2011Fr04.                                        
  34CL  G 1218.4       0.44                                                      
  34CL cG $Observed in 1983Wa27 but not in 2011Fr04.                             
- 34CL  G 1650      30 3      1                                                 ?
- 34CL cG E,RI$from 1964Gl04, but not observed in the more complete data from    
- 34CL2cG 1983Wa27 or 2011Fr04.                                                  
+ 34CL  G 1650         3      1                                                 ?
+ 34CL cG E,RI$1650 {I30} from 1964Gl04, but not observed in the more complete   
+ 34CL2cG data from 1983Wa27 or 2011Fr04.                                        
  34CL  G 1844.0       3.7    7                                              F   
  34CL cG RI$other: 2.5 (1983Wa27)                                               
  34CL  G 1862.0       1.0                                                       
@@ -1045,9 +1046,9 @@
  34CL  G 3785.5       4.4    LT                                             F   
  34CL cG E$others: 3760 {I40} (1964Gl04)                                        
  34CL cG RI$others: 1.8 (1983Wa27), 3 {I2} (1964Gl04)                           
- 34CL  G 4440      60 3      2                                                 ?
- 34CL cG E,RI$from 1964Gl04, but not observed in the more complete data from    
- 34CL2cG 1983Wa27 or 2011Fr04.                                                  
+ 34CL  G 4440         3      2                                                 ?
+ 34CL cG E,RI$4440 {I60} from 1964Gl04, but not observed in the more complete   
+ 34CL2cG data from 1983Wa27 or 2011Fr04.                                        
  34CL  G 5007.3       6.4    34                                             F   
  34CL cG E$others: 4980 {I60} (1964Gl04)                                        
  34CL cG RI$others: 8.2 (1983Wa27), 8 {I3} (1964Gl04)                           
@@ -1164,9 +1165,9 @@
  34CL cL $|w|g=0.05 eV {I3} (1964Gl04)                                          
  34CL cL $|w|g=0.5 eV {I2} (1983Wa27)                                           
  34CL  G 1291.4       5                                                         
- 34CL  G 1720      30 24     8                                                 ?
- 34CL cG E,RI$from 1964Gl04, but not observed in the more complete data from    
- 34CL2cG 1983Wa27.                                                              
+ 34CL  G 1720         24     8                                                 ?
+ 34CL cG E,RI$1720 {I30} from 1964Gl04, but not observed in the more complete   
+ 34CL2cG data from 1983Wa27.                                                    
  34CL  G 2352.0       5                                                         
  34CL  G 2513.8       1.2                                                       
  34CL  G 2563.1       0.88                                                      
@@ -1191,9 +1192,9 @@
  34CL cL S$from 1964Gl04.                                                       
  34CL cL $|w|g=0.12 eV {I6} (1964Gl04)                                          
  34CL cL $|w|g=0.8 eV {I2} (1983Wa27)                                           
- 34CL  G 980       30 9      3                                                 ?
- 34CL cG E,RI$from 1964Gl04, but not observed in the more complete data from    
- 34CL2cG 1983Wa27.                                                              
+ 34CL  G 980          9      3                                                 ?
+ 34CL cG E,RI$980 {I30} from 1964Gl04, but not observed in the more complete    
+ 34CL2cG data from 1983Wa27.                                                    
  34CL  G 1245.1       0.85                                                      
  34CL  G 2557.4       6.3                                                       
  34CL  G 3329.6       0.56                                                      
