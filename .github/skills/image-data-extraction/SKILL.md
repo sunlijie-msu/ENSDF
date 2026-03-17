@@ -31,6 +31,7 @@ Extract all numerical data and uncertainties with absolute fidelity to the sourc
 - **<** (less than) vs **≤** (less than or equal) — verify exact symbol
 - **Decimal points** (.) must be preserved with exact digit counts
 - **1** vs **l** vs **|** — verify character identity
+- Ensure that every +/- sign absolutely matches the original image.
 
 **When uncertain about any character, flag for manual verification rather than guessing.**
 

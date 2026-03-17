@@ -479,6 +479,8 @@ Format: Plain numbers only (NO `{I}` notation, NO braces).
     -   Symmetric: `"14    "` (digits + spaces), Asymmetric: `"+3-4  "`, `"+19-3 "`, `"+13-28"`.
 -   **DMR field** (cols 50-55): Mixing ratio uncertainties, supports asymmetric format.
     -   Symmetric: `"25    "` (value + spaces), Asymmetric: `"+5-3 "`, `"+21-18"`.
+    -   For source data using the Rose and Brink (1967) sign convention, reverse the sign of the quoted mixing ratio before entering it into ENSDF. Reverse the asymmetric uncertainty order at the same time so the ENSDF value keeps the correct upper and lower bounds. Example: -0.27$_{-0.04}^{+0.03}$ becomes +0.27$_{+0.04}^{-0.03}$ in ENSDF.
+
 
 **Critical Formatting Rules:**
 -   Single digits in 2-column fields: MUST be padded with trailing space.

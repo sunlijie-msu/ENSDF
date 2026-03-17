@@ -1,4 +1,5 @@
 **TABLE: Comparaison des probabilités de transition réduites**
+Sign convention: Rose and Brink (1967). See .github\copilot-instructions.md for details on how to enter these values into ENSDF.
 
 | $E_i$ (MeV) | $E_f$ (MeV) | $E_\gamma$ (MeV) | $J_i \to J_f$ | $R(\%)$ | $\delta$ |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -37,10 +38,10 @@
 
 | $E_i$ (MeV) | $E_f$ (MeV) | $E_\gamma$ (MeV) | $J_i$ | $J_f$ | $\delta$ |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2.72 | 0 | 2.72 | 2 | 0 | 0 |
-| 2.72 | 0.15 | 2.57 | 2 | 3 | 0.0 $\pm$ 0.3 |
-| 2.72 | 0.46 | 2.26 | 2 | 1 | 2.4 $\pm$ 0.4 |
-| 2.72 | 0.66 | 2.06 | 2 | 1 | $\infty$ |
+| 2.72 | 0 | 2.72 | 2 | 0 | |
+| 2.72 | 0.15 | 2.57 | 2 | 3 | |
+| 2.72 | 0.46 | 2.26 | 2 | 1 | |
+| 2.72 | 0.66 | 2.06 | 2 | 1 | |
 | 2.72 | 1.23 | 1.49 | 2 | 2 | |
 | 2.72 | 1.89 | 0.83 | 2 | 2 | |
 | 2.72 | 2.16 | 0.56 | 2 | 2 | |

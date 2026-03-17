@@ -1,4 +1,5 @@
 ### **Extracted Mixing Ratio Data**
+Sign convention: Rose and Brink (1967). See .github\copilot-instructions.md for details on how to enter these values into ENSDF.
 
 | $E_p$ (keV) | Transition ($E_i \to E_f$ in MeV) | $E_\gamma$ (MeV) | $J_i \to J_f$ | $\delta$ (Mélange $\alpha$) | $\delta$ (Mélange $\beta$) |
 | :--- | :--- | :--- | :--- | :--- | :--- |

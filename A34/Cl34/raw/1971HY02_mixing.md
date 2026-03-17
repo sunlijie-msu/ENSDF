@@ -1,4 +1,5 @@
 **TABLE V. Multipolarity mixing ratios.**
+Sign convention: Rose and Brink (1967). See .github\copilot-instructions.md for details on how to enter these values into ENSDF.
 
 | $E_i$ (MeV) | $E_f$ (MeV) | $E_\gamma$ (MeV) | $\delta$ |
 | :--- | :--- | :--- | :--- |
