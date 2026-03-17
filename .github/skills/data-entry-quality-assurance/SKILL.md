@@ -1,8 +1,18 @@
+---
+name: data-entry-quality-assurance
+description: Comprehensive validation protocol for tabular data extraction and ENSDF data entry. Enforces bidirectional column mapping, blank-cell counting, numerical exactness, and mandatory random 5% spot-check validation. Use when extracting ≥30 numeric data points from images, CSV files, or tables.
+argument-hint: [source image/table] [extracted ENSDF data]
+---
+
+# Data Entry Quality Assurance Protocol
 Task: Tabular Data Extraction and Data Entry Quality Assurance.
 Meticulous data extraction from the image and output table as a markdown file.
-Omit the "Method of observation" column. Focus on Eγ, Relative intensity columns. Eγ≈Ei-Ef. Ei indicates the energy of the initial level, and Ef indicates the energy of the final level.
-
+Omit the "Method of observation" column.
 Omit footnotes.
+Focus on Eγ, Relative intensity columns.
+Carefully identify Eγ should match which L record's which G record.
+Eγ≈Ei-Ef. Ei indicates the energy of the initial level, and Ef indicates the energy of the final level.
+
 Ensure that every +/- sign absolutely matches the original image.
 Keep the final extracted table at the end of the markdown. Do not add any extra content after the table!
 
