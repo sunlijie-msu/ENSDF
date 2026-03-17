@@ -7,7 +7,6 @@ argument-hint: [source image/table] [extracted ENSDF data]
 # Data Entry Quality Assurance Protocol
 Task: Tabular Data Extraction and Data Entry Quality Assurance.
 Meticulous data extraction from the image and output table as a markdown file.
-Omit the "Method of observation" column.
 Omit footnotes.
 Focus on Eγ, Relative intensity columns.
 Carefully identify Eγ should match which L record's which G record.
