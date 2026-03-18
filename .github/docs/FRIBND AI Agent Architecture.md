@@ -26,7 +26,7 @@ This framework ensures clear communication between the user, the AI, and the too
     *   Reminder Instructions
     *   User Requests
     *   Editor Context (File paths, Selections, Cursor position, Terminal)
-    *   Chat Variables (Attachments)
+    *   Explicit References (Attachments)
     *   Reusable Prompts
 
 *   **Assistant Message:**

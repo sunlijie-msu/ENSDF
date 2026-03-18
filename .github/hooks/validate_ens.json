@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "python .github/scripts/ensdf_1line_ruler.py --file \"$TOOL_INPUT_FILE_PATH\" --show-only-wrong",
+        "timeout": 30
+      }
+    ]
+  }
+}
