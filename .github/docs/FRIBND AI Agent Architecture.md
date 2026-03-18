@@ -6,6 +6,7 @@ FRIBND AI Agent Architecture
 *   **Subagents:** Handoffs, Guided Sequential Workflows.
 *   **Reusable Prompts:** Commands, Specific Tasks, Standardized Workflows.
 *   **Agent Skills:** Portable and Interoperable Capabilities across Agents, Scripts, Templates, Examples, Reference Docs, Dynamic Loading Resources.
+*   **Agent Hooks:** Pre/Post-Action Commands.
 
 **Semantic Structuring**
 (Role Assignment & Tag Wrapping) organizes the context across four primary types: System Messages, User Messages, Assistant Messages, and Tool Messages.
