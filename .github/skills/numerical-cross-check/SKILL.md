@@ -33,7 +33,7 @@ Cross-Check Progress
 - [ ] Parse the correct source type
 - [ ] Compare values, uncertainties, and provenance
 - [ ] Do bidirectional mapping for table-like sources
-- [ ] Do reproducible 5% spot-check
+- [ ] Do reproducible 15% spot-check
 - [ ] Report exact findings
 ```
 
@@ -102,12 +102,12 @@ Verify both directions:
 
 Confirm blank-column counting, row alignment, and derived-quantity mapping.
 
-### 6. Reproducible 5% Spot-Check
+### 6. Reproducible 15% Spot-Check
 
 Minimum sample size:
 
 $$
-\max\left(5, \lceil 0.05 \times N \rceil\right)
+\max\left(5, \lceil 0.15 \times N \rceil\right)
 $$
 
 Use a fixed seed, report the seed and sample size, and require a 100% pass rate in the sample.
