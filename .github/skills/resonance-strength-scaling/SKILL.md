@@ -1,6 +1,11 @@
 ---
 name: resonance-strength-scaling
-description: Scale resonance strengths (ωγ) in ENSDF cL comment lines by a given factor and apply specified relative uncertainties. Handles dual-threshold uncertainty (e.g., 30% above cutoff, 50% below cutoff). Uses PDG sig-fig convention for ENSDF {In} formatting. Comment-only workflow — skip ruler and column validation.
+description: >
+  Use this skill when scaling resonance strengths (ωγ) in ENSDF cL comment
+  lines by a given factor and applying specified relative uncertainties.
+  Handles dual-threshold uncertainty (e.g., 30% above cutoff, 50% below).
+  Uses PDG sig-fig convention for ENSDF {In} formatting. Comment-only
+  workflow — skip ruler and column validation.
 argument-hint: [REFERENCE FACTOR UNCERTAINTY_PERCENT THRESHOLD_EV UNCERTAINTY_BELOW_PERCENT]
 ---
 

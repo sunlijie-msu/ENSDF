@@ -1,7 +1,11 @@
-````markdown
 ---
 name: nds-doi-lookup
-description: Look up and verify DOIs for the most recent Nuclear Data Sheets (NDS) evaluation articles by mass number A. Uses the Crossref REST API for discovery and the Elsevier linking hub for per-DOI identity confirmation. Inserts verified DOI lines (ascending A order) into Data Check Report .txt files. Use when a Data Check Report needs to cite NDS evaluations as traceability references.
+description: >
+  Use this skill when looking up and verifying DOIs for the most recent
+  Nuclear Data Sheets (NDS) evaluation articles by mass number A. Uses the
+  NNDC EvaluationIndexServlet as ground truth, Crossref REST API for DOI
+  discovery, and the Elsevier linking hub for confirmation. Inserts verified
+  DOI lines in ascending A order into Data Check Report .txt files.
 argument-hint: [space-separated list of mass numbers, e.g. 204 207 208 211 212]
 ---
 
@@ -77,5 +81,3 @@ Match the formatting of any pre-existing entries in the file. After editing, rea
 | URL encoding errors | Carefully encode citation strings in `query.bibliographic` requests. |
 | Non-NDS journals | Light mass chains often resolve to "Nuclear Physics A" (`NP A`) rather than "Nuclear Data Sheets" (`NDS`). |
 | Grouped evaluations (one paper covers multiple A) | One DOI may serve multiple A values (e.g., NDS 209, 499 covers A=261 and A=265). Both rows get the same DOI. |
-
-````

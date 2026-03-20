@@ -1,6 +1,12 @@
 ---
 name: reaction-equations
-description: Add nuclear reaction equation comments to transfer reaction dataset headers in ENSDF files. Covers stripping, pickup, charge exchange, and fragmentation reactions. Determines net nucleon transfer, formats with added nucleons LEFT of arrow and removed nucleons RIGHT of arrow. Includes complete reference table for 40+ common reactions and target ground state spin-parity table. Validates 80-column line length.
+description: >
+  Use this skill when adding nuclear reaction equation comments to transfer
+  reaction dataset headers in ENSDF files. Covers stripping, pickup, charge
+  exchange, and fragmentation reactions. Determines net nucleon transfer and
+  formats with added nucleons LEFT of arrow and removed nucleons RIGHT of
+  arrow. Includes reference table for 40+ common reactions and target ground
+  state spin-parity table.
 argument-hint: [ENSDF file or reaction type]
 ---
 

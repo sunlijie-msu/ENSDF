@@ -1,6 +1,12 @@
 ---
 name: large-scale-data-entry
-description: Bulk data entry from CSV tables into ENSDF L-records and G-records. Extracts level energies, gamma energies, intensities, DCO ratios (if available), and multipolarities (if available). Enforces bidirectional column mapping, blank-cell counting, ascending energy ordering, and random 5% spot-check validation. Use for large datasets of 50+ numeric data points from papers, tables, or CSV files.
+description: >
+  Use this skill when performing bulk data entry from CSV tables into ENSDF
+  L-records and G-records. Extracts level energies, gamma energies,
+  intensities, DCO ratios (if available), and multipolarities (if available).
+  Enforces bidirectional column mapping, blank-cell counting, ascending
+  energy ordering, and random 5% spot-check validation. Suitable for large
+  datasets of 50+ numeric data points from papers, tables, or CSV files.
 argument-hint: [CSV file] [ENSDF file]
 ---
 
@@ -53,9 +59,4 @@ If user opts in, sum only finite RI values per level (should equal 100, within Â
 ### When to Perform
 
 Before using CSV source data for ENSDF patching. Failures indicate missing entries, transcription errors, or insufficient finite values for normalization.
-
-## Prompt Design Notes
-- Keep prompt files concise and task-focused.
-- Reuse repository instruction files and custom agents instead of duplicating detailed ENSDF rules in each prompt.
-- Reference the relevant instruction or agent files when the skill depends on broader repository standards.
 

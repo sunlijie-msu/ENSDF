@@ -1,6 +1,12 @@
 ---
 name: l-transfer-comments-standardization
-description: Standardize L-transfer angular momentum comments in cL J$ lines in ENSDF files. Converts legacy formats like L(reaction)=value to standard format L=value from initial-Jπ in reaction. Handles single/multiple L values, discrepancies between reactions, Oxford comma, reaction lists, and 80-column line wrapping. Comment-only workflow — skip ruler and column validation.
+description: >
+  Use this skill when standardizing L-transfer angular momentum comments
+  in cL J$ lines in ENSDF files. Converts legacy formats like L(reaction)=
+  value to standard format L=value from initial-Jπ in reaction. Handles
+  single/multiple L values, discrepancies between reactions, Oxford comma,
+  reaction lists, and 80-column line wrapping. Comment-only workflow —
+  skip ruler and column validation.
 argument-hint: [ENSDF file or level energy]
 ---
 

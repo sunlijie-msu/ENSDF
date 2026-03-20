@@ -1,6 +1,11 @@
 ---
 name: spin-parity
-description: Reference guide for ENSDF spin-parity (Jπ) notation rules. Covers L-transfer field positioning at column 56, J-π assignment confidence levels using parentheses, single/multiple/range spin assignments, and critical parentheses placement rules. Use when writing J-π values in L-records or J$ comment lines.
+description: >
+  Use this skill as a reference guide for ENSDF spin-parity (Jπ) notation
+  rules. Covers L-transfer field positioning at column 56, J-π assignment
+  confidence levels using parentheses, single/multiple/range spin
+  assignments, and critical parentheses placement rules. Suitable for
+  writing J-π values in L-records or J$ comment lines.
 argument-hint: [spin-parity expression or L-record line]
 ---
 
@@ -82,23 +87,20 @@ L-Transfer values and corresponding J-π assignments:
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `1/2:7/2` | Firm | Unknown | Impossible | Possible | 1/2± or 3/2± or 5/2± or 7/2± |
 | `(1/2:7/2)` | Tentative | Unknown | Possible | Possible | 1/2± or 3/2± or 5/2± or 7/2± or low-probability other Jπ |
-
 | `1/2+:7/2+` | Firm | Mixed | Impossible | Impossible | 1/2+ or 3/2± or 5/2± or 7/2+ |
 | `1/2-:7/2+` | Firm | Mixed | Impossible | Impossible | 1/2- or 3/2± or 5/2± or 7/2+ |
 | `1/2:7/2+` | Firm | Mixed | Impossible | Impossible | 1/2± or 3/2± or 5/2± or 7/2+ |
 | `1/2+:7/2` | Firm | Mixed | Impossible | Impossible | 1/2+ or 3/2± or 5/2± or 7/2± |
-
 | `(1/2+:7/2+)` | Tentative | Mixed | Possible | Possible | 1/2+ or 3/2± or 5/2± or 7/2+ or low-probability other Jπ |
-| `1/2(+):7/2(+)` | Firm | Tentative | Impossible | Possible | 1/2+ or 3/2± or 5/2± or 7/2+ or low-probability 1/2-, 7/2- | 
+| `1/2(+):7/2(+)` | Firm | Tentative | Impossible | Possible | 1/2+ or 3/2± or 5/2± or 7/2+ or low-probability 1/2-, 7/2- |
 | `(1/2:7/2+)` | Tentative | Mixed | Possible | Possible | 1/2± or 3/2± or 5/2± or 7/2+ or low-probability other Jπ |
 | `(1/2+:7/2)` | Tentative | Mixed | Possible | Possible | 1/2+ or 3/2± or 5/2± or 7/2± or low-probability other Jπ |
 | `1/2:7/2(+)` | Firm | Tentative | Impossible | Possible | 1/2± or 3/2± or 5/2± or 7/2+ or low-probability 7/2- |
-
 | `(1/2:7/2)+` | Tentative | Firm | Possible | Impossible | 1/2+ or 3/2+ or 5/2+ or 7/2+ or low-probability other J+ |
 | `(1/2:7/2)(+)` | Tentative | Tentative | Possible | Possible | 1/2+ or 3/2+ or 5/2+ or 7/2+ or low-probability other Jπ |
-
-Special case should be put in the 2 L continuation record.
 | `1/2(+),3/2(+),5/2(+),7/2(+)` | Firm | Tentative | Impossible | Possible | 1/2+ or 3/2+ or 5/2+ or 7/2+ or low-probability other 1/2-, 3/2-, 5/2-, 7/2- |
+
+*Note: The last entry is too long for the J field (cols 23-39) and should be placed in the 2 L continuation record.*
 
 
 

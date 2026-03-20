@@ -1,6 +1,11 @@
 ---
 name: editorial-review-guidelines
-description: Performs professional editorial review of ENSDF comment lines for grammatical precision, subject-verb agreement, hyphenation, and technical terminology in Nuclear Data Sheets manuscripts. Use for editorial checks, grammar reviews, manuscript audits, or ENSDF comment validation.
+description: >
+  Use this skill when performing editorial review of ENSDF comment lines.
+  Checks grammatical precision, subject-verb agreement, hyphenation,
+  technical terminology, and ENSDF text-notation correctness. Suitable for
+  editorial checks, grammar reviews, manuscript audits, or ENSDF comment
+  validation in Nuclear Data Sheets manuscripts.
 ---
 
 # ENSDF Editorial Review Skill
@@ -31,14 +36,6 @@ Review comment records only:
 
 Do not review data-record fields for editorial issues:
 - `L`, `G`, `E`, `B`, `DP` numeric/layout fields.
-
-## Pre-Review Checklist (Mandatory)
-
-Before each review:
-- Read `.github\agents\FRIBND.agent.md`.
-- Read `.github\copilot-instructions.md` (ENSDF comment notation section).
-- Confirm valid ENSDF symbols are understood (`|?`, `|a`, `|g`, `{+n}`, `{-n}`, `{I...}`).
-- Identify evaluator count from `AUT=` in H records.
 
 ## High-Priority Error Classes
 
@@ -138,6 +135,8 @@ Before each review:
 
 ### 6) Logical Clarity in Scientific Statements
 
+- Flag contradictory or ambiguous claims (e.g., "confirmed" vs "tentative" in same sentence).
+- Flag unsupported conclusions missing a citation or method reference.
 
 ### 7) Text and Number Integrity
 

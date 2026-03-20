@@ -1,6 +1,11 @@
 ---
 name: multipolarity-mixing-ratio
-description: Reference guide for ENSDF multipolarity (M) and mixing ratio (MR) field notation. Covers E1/M1/E2/M2 designations, shorthand D/Q/O, mixed M1+E2 formatting, symmetric and asymmetric DMR uncertainties, and exact column positions 33-41 (M) and 42-49 (MR). Use when writing or reviewing G-record multipolarity fields.
+description: >
+  Use this skill as a reference guide for ENSDF multipolarity (M) and mixing
+  ratio (MR) field notation. Covers E1/M1/E2/M2 designations, shorthand
+  D/Q/O, mixed M1+E2 formatting, symmetric and asymmetric DMR
+  uncertainties, and exact column positions 33-41 (M) and 42-49 (MR).
+  Suitable for writing or reviewing G-record multipolarity fields.
 argument-hint: [multipolarity expression or G-record line]
 ---
 

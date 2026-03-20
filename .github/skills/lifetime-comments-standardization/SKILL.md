@@ -1,7 +1,13 @@
 ---
 name: lifetime-comments-standardization
-description: Standardize T$ (lifetime) comment lines in ENSDF files. Use when writing or editing cL T$ lifetime comments for nuclear level lifetime data. Covers individual datasets using (NSR, METHOD) format and adopted datasets using "in REACTION from NSR with METHOD" format. Handles single values, weighted averages, lower/upper limits, and mixed value+limit patterns. Applies Oxford comma, chronological NSR ordering, {IUNC} uncertainty notation with limit 99 for full precision, and ensures every comment ends with a period.
-argument-hint: [ENSDF file or level energy] standardize T$ lifetime cL comments
+description: >
+  Use this skill when writing or editing cL T$ lifetime comments in ENSDF
+  files. Covers individual datasets using (NSR, METHOD) format and adopted
+  datasets using "in REACTION from NSR with METHOD" format. Handles single
+  values, weighted averages, lower/upper limits, and mixed value+limit
+  patterns. Applies Oxford comma, chronological NSR ordering, {IUNC}
+  uncertainty notation with limit 99 for full precision.
+argument-hint: [ENSDF file or level energy]
 ---
 
 # ENSDF Lifetime Comments Standardization
@@ -75,7 +81,6 @@ Standardize T$ (lifetime) comment lines for clarity and numerical rigor. Maintai
 **Format:** `T$lifetime |t=ADOPTED UNIT {IUNC}: weighted average of VALUE1 UNIT {IUNC1} in REACTION1 from NSR1 with METHOD1 and VALUE2 UNIT {IUNC2} in REACTION2 from NSR2 with METHOD2. Others: >VALUE3 UNIT in REACTION3 from NSR3 with METHOD3 and >VALUE4 UNIT in REACTION4 from NSR4 with METHOD4.`  
 **Example:** `T$lifetime |t=3.4 ps {I3}: weighted average of 3.3 ps {I5} in ({+34}S,p|g) from 1973Wa10 with DSAM and 3.5 ps {I2} in {+208}Pb({+36}S,{+35}S|g) from 2022Gr07 with DRDM. Others: >1.8 ps in (d,p|g) from 1970Bu18 with DSAM and >1.6 ps in (d,p|g) from 1972Fr11 with DSAM.`
 
----
 ---
 
 ## Standard Rules

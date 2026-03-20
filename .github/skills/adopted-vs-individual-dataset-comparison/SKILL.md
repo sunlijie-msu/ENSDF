@@ -1,6 +1,12 @@
 ---
 name: adopted-vs-individual-dataset-comparison
-description: Compare quantities (J-π, energies, half-lives, branching ratios) between Adopted ENSDF files and their source individual reaction datasets. Uses XREF notation to identify which datasets observe each level. Performs systematic character-by-character verification and generates mismatch reports with error categorization. CHECK-ONLY mode — reports findings without editing files.
+description: >
+  Use this skill when comparing quantities (J-π, energies, half-lives,
+  branching ratios) between Adopted ENSDF files and their source individual
+  reaction datasets. Uses XREF notation to identify which datasets observe
+  each level. Performs character-by-character verification and generates
+  mismatch reports with error categorization. CHECK-ONLY — reports
+  findings without editing files.
 argument-hint: [adopted.ens] [individual.ens] [xref-identifier]
 ---
 
@@ -15,14 +21,6 @@ Systematically verify that quantities in Adopted datasets match their source ind
 - **Method:** Character-by-character string matching (not numerical tolerance)
 - **Output:** Tabular mismatch report with error categorization
 - **Validation:** CHECK-ONLY mode — report findings without editing files
-
----
-
-## Prerequisites
-
-- Understanding of ENSDF cross-reference (XREF) notation
-- Access to both Adopted and individual reaction dataset files
-- Python 3.8+ for automated comparison scripts (optional)
 
 ---
 

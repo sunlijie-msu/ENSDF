@@ -1,6 +1,11 @@
 ---
 name: comment-cleanup
-description: Clean up and standardize cG E$ and cG RI$ comment lines in ENSDF files. Establishes a single default-source general comment and adds individual exceptions only where needed. Covers weighted averages, non-default dataset sources, and enforces ENSDF comment ordering (E$ → RI$ → M$ → MR$). Use when reviewing or writing gamma-ray source comments for a dataset.
+description: >
+  Use this skill when reviewing or writing gamma-ray source comments for an
+  ENSDF dataset. Establishes a single default-source general cG E,RI$ comment
+  and adds individual exception comments only where needed. Covers weighted
+  averages, non-default dataset sources, and enforces ENSDF comment ordering
+  (E$ → RI$ → M$ → MR$).
 argument-hint: [ENSDF file or dataset name]
 ---
 
@@ -74,14 +79,4 @@ cG E$ → cG RI$ → cG M$ → cG MR$ → other identifiers
 - No redundant per-gamma default-source comments remain.
 - Comment ordering follows ENSDF sequence rules.
 
-
-
-### General Comment Ordering at the beginning of Adopted.ens Files
-
-Order comments at the beginning of `Adopted.ens` files as follows:
-1.  **Isotope Discovery:** Experimental details and references.
-2.  **Production:** Methods and studies.
-3.  **Decay Measurements:** Half-life and decay modes.
-4.  **Radius Measurement:** Nuclear radius determinations.
-5.  **Mass Measurements:** Mass spectrometry and Q-values.
-6.  **Theoretical Calculations:** Models and predictions (always last).
+For general comment ordering at the beginning of Adopted files, see `copilot-instructions.md` Section 6.

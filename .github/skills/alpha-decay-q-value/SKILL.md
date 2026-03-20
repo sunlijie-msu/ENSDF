@@ -1,6 +1,10 @@
 ---
 name: alpha-decay-q-value
-description: Calculate Q-alpha values from measured alpha energies and update the Q field (cols 65-74) and DQ field (cols 75-76) in ENSDF P records. Uses exact kinematic formula. Applies to single files or chains of alpha-decay datasets.
+description: >
+  Use this skill when calculating Q-alpha values from measured alpha energies
+  and updating the Q field (cols 65-74) and DQ field (cols 75-76) in ENSDF
+  P records. Uses exact kinematic formula Q = E_alpha * A/(A-4). Applies to
+  single files or chains of alpha-decay datasets.
 ---
 
 # Alpha Decay Q-Value Calculation and P Record Update

@@ -1,6 +1,11 @@
 ---
 name: ensdf-header-setup
-description: Prepare ENSDF files for a new mass chain evaluation cycle. Copies .old/.xundl files to new/, renames to .ens, creates the four standard folders (new/, old/, raw/, pdf/), updates the IDENTIFICATION record columns 66-80 to "ENSDF    YYYYMM", and inserts a new History (H) record. Use when starting a new evaluation or setting up a new nuclide's file structure.
+description: >
+  Use this skill when preparing ENSDF files for a new mass chain evaluation
+  cycle. Copies .old/.xundl files to new/, renames to .ens, creates the four
+  standard folders (new/, old/, raw/, pdf/), updates the IDENTIFICATION
+  record columns 66-80 to "ENSDF    YYYYMM", and inserts a new History (H)
+  record.
 argument-hint: [mass number] or [element symbol] or [file path]
 ---
 

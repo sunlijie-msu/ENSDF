@@ -1,68 +1,70 @@
 ---
 name: value-occurrence-check
-description: Check consistency of nuclear level energies that appear multiple times in a gamma-ray transition CSV table. Verifies energy, uncertainty, and J-π are identical across all occurrences as both initial (Ei) and final (Ef) levels. Mandates explicit column mapping including blank cells, bidirectional forward/backward verification, and reporting all inconsistencies.
+description: >
+  Use this skill when checking consistency of nuclear level energies across
+  multiple occurrences in a gamma-ray transition CSV table. Verifies that
+  energy, uncertainty, and J-π are identical wherever a level appears as
+  both an initial (Ei) and final (Ef) state. Mandates explicit column
+  mapping including blank cells and bidirectional forward/backward
+  verification.
 argument-hint: [CSV or table file]
 ---
 
-# Value Occurrence Check for ENSDF
+# Value Occurrence Check
 
-## Task Description
+## Purpose
 
-This table lists gamma-ray transitions between nuclear levels.
+Verify that every nuclear level energy appearing multiple times in a gamma-ray transition table has consistent energy, uncertainty, and J-π across all occurrences.
 
-For every nuclear level energy that appears multiple times in the table, the quoted energy, uncertainty, and spin-parity (Jπ) assignment must be identical across all occurrences.
+## When to Use
 
-**Example of consistent entries:**
+- Before entering CSV table data into ENSDF records
+- When a gamma-ray transition table lists levels as both initial (Ei) and final (Ef) states
+- To catch transcription errors or inconsistent J-π assignments across table entries
+
+## Method
+
+### Step 1: Column Mapping
+
+Follow the bidirectional column mapping protocol from `copilot-instructions.md` Section 5:
+
+1. List all header columns explicitly, including blank positions
+2. Count blank cells as positional placeholders
+3. Forward verification: header → data
+4. Backward verification: data → header
+
+### Step 2: Occurrence Scan
+
+For every unique level energy in the table:
+
+1. Collect all rows where it appears as Ei or Ef
+2. Compare energy value character-for-character across occurrences
+3. Compare uncertainty character-for-character
+4. Compare J-π character-for-character
+
+### Step 3: Report Inconsistencies
+
+For each mismatch:
+
 ```
-1175.3 keV
-Occurrences:
-Row 7:  Ef=1175.3(1), Jπf=5/2-
-Row 26: Ei=1175.3(1), Jπi=5/2-
-Row 49: Ei=1175.3(1), Jπi=5/2-
-Row 51: Ef=1175.3(1), Jπf=5/2-
-All have Jπ=5/2- and uncertainty 0.1. Consistent. ✅
+LEVEL: 1175.3 keV
+  Row 7:  Ef=1175.3(1), Jπf=5/2-     ✓
+  Row 26: Ei=1175.3(1), Jπi=5/2-     ✓
+  Row 49: Ei=1175.3(2), Jπi=5/2-     ✗ uncertainty mismatch (1 vs 2)
 ```
 
-Systematically scan the entire table. Compare all occurrences of each level-energy string across Ei and Ef. Identify and report any inconsistencies in energy, uncertainty, or Jπ.
+### Step 4: Validate Completeness
 
-Some cells are blank; be careful about row and column alignment.
-0 appears only as Ef because it indicates the ground state.
+- Ground state (0 keV) appears only as Ef
+- Every level energy has been checked
+- 100% of occurrences verified before claiming completion
 
-## CRITICAL AI WEAKNESS MITIGATION — COLUMN ALIGNMENT AND BLANK CELL HANDLING
+## Data Fidelity
 
-**AI FREQUENT FAILURE PATTERNS TO AVOID:**
-- ❌ Assuming column positions without explicit mapping
-- ❌ Ignoring blank cells that shift subsequent data columns
-- ❌ Single-direction counting (forward only) leading to off-by-one errors
-- ❌ Mismatched header-to-data column associations
-- ❌ Treating blank cells as non-existent rather than positional placeholders
+Preserve every decimal place exactly — do not round, omit, alter, or add digits. 10.0 remains 10.0, not 10 or 10.00. See `copilot-instructions.md` Section 4 for numerical exactness rules.
 
-**MANDATORY VERIFICATION PROTOCOL:**
-1. **Column alignment**: Explicitly map ALL columns including blank ones — never assume positions based on visible data alone
-2. **Blank cells**: Count blank cells meticulously — each blank cell shifts all subsequent column positions
-3. **Bidirectional verification**: Cross-check both forward counting (header→data) and backward counting (data→header)
+## Gotchas
 
-**CRITICAL VALIDATION STEPS:**
-- **Step 1**: List all header columns explicitly, including blank column positions
-- **Step 2**: Count blank cells between data columns — they are positional placeholders
-- **Step 3**: Forward verification: Match each header column to corresponding data column
-- **Step 4**: Backward verification: Confirm each data column maps back to correct header
-- **Step 5**: Arithmetic validation: Verify row/column calculations account for blank cell shifts
-
-**NEVER PROCEED WITHOUT COMPLETE COLUMN MAPPING VERIFICATION**
-
-## Data Fidelity Rules
-
-- Preserve every decimal place exactly — do not round, omit, alter, or add any digits
-- 10.0 remains 10.0, not 10 or 10.00
-- Uncertainty notation in last digits (ENSDF standard)
-
-## Quality Control Workflow
-
-1. Plan systematically before executing, reflect on outcomes afterwards
-2. Utilize tools and resources proactively
-3. Avoid assumptions — verify all data mappings
-4. Random spot checks — verify randomly-selected samples against original data
-5. Final verification — cross-validate all inconsistencies reported
-
-**CRITICAL**: Do not claim task completion unless 100% of occurrences have been checked.
+- Blank cells are the primary cause of misaligned column mapping — count them meticulously
+- AI models frequently fail at lower-right table corners — apply extra scrutiny there
+- Forward-only counting leads to off-by-one errors — always verify bidirectionally

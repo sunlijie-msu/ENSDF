@@ -1,6 +1,12 @@
 ---
 name: comment-quoted-values-check
-description: Cross-check all quoted values in cL J$ comment lines against L-record and G-record data fields in ENSDF adopted files. Detects mismatches in gamma energies, multipolarities, level energies, J-π values, and energy conservation violations. Uses check_quoted_values.py script. Fixes comment text only — never edits data records. Skip ruler and column validation (comment-only workflow).
+description: >
+  Use this skill when cross-checking all quoted values in cL J$ comment
+  lines against L-record and G-record data fields in ENSDF adopted files.
+  Detects mismatches in gamma energies, multipolarities, level energies,
+  J-π values, and energy conservation violations. Fixes comment text
+  only — never edits data records. Skip ruler and column validation
+  (comment-only workflow).
 argument-hint: [adopted.ens]
 ---
 
@@ -15,13 +21,6 @@ Cross-check all quoted values in `cL J$` comments against corresponding L-record
 - **Fixes:** Comment text only — do NOT edit data record fields (L, G)
 - **Data-record issues** (e.g., multipolarity at wrong column): Flag for separate handling
 - **Validation:** Skip ruler, column calibration, and gamma ordering checks (this workflow edits comments only)
-
----
-
-## Prerequisites
-
-- Python 3.8+
-- Detection script: `.github/scripts/check_quoted_values.py`
 
 ---
 

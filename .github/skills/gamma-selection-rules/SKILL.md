@@ -1,6 +1,12 @@
 ---
 name: gamma-selection-rules
-description: Deduce nuclear level Jπ by combining constraints from feeding and deexciting gamma transitions using electromagnetic selection rules. Applies D/E2 rules to primary capture transitions, D/Q or D/E2 to deexciting gammas (lifetime-dependent), and takes AND intersection of all constraints. Handles multi-valued initial Jπ via union before intersection.
+description: >
+  Use this skill when deducing nuclear level Jπ by combining constraints
+  from feeding and deexciting gamma transitions using electromagnetic
+  selection rules. Applies D/E2 rules to primary capture transitions,
+  D/Q or D/E2 to deexciting gammas (lifetime-dependent), and takes AND
+  intersection of all constraints. Handles multi-valued initial Jπ via
+  union before intersection.
 argument-hint: [feeding Jπ list] [deexciting transitions] [lifetime known?]
 ---
 

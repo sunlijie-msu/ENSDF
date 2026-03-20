@@ -1,6 +1,12 @@
 ---
 name: flag-expansion
-description: Expand FLAG= shorthand continuation records in ENSDF files into individual cG or cL comment lines. Maps each flag character (uppercase for energy source, lowercase for intensity source) to its defined description in the dataset header. Clears column 77 flag characters from data records and deletes original FLAG= continuation lines after expansion. Applies to L, G, B, E records.
+description: >
+  Use this skill when expanding FLAG= shorthand continuation records in
+  ENSDF files into individual cG or cL comment lines. Maps each flag
+  character (uppercase for energy source, lowercase for intensity source)
+  to its defined description in the dataset header. Clears column 77 flag
+  characters from data records and deletes original FLAG= continuation
+  lines after expansion.
 argument-hint: [ENSDF file]
 ---
 

@@ -1,6 +1,12 @@
 ---
 name: xref-label-update
-description: Update cross-reference (XREF) labels in ENSDF adopted files when experimental datasets are added or removed. Handles systematic label shifting, new label insertion, deleted label removal, and preserves parenthetical notations such as (energy), (*), and (?). Covers both add-dataset and remove-dataset scenarios with 5%+ spot-check validation. Skip column_calibrate and line ruler; pad XREF lines to 80 characters only.
+description: >
+  Use this skill when updating cross-reference (XREF) labels in ENSDF
+  adopted files after experimental datasets are added or removed. Handles
+  systematic label shifting, new label insertion, deleted label removal,
+  and preserves parenthetical notations such as (energy), (*), and (?).
+  Covers both add-dataset and remove-dataset scenarios with 5%+ spot-check
+  validation.
 argument-hint: [adopted.ens] [add|remove] [dataset-label]
 ---
 

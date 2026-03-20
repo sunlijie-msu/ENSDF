@@ -1,6 +1,11 @@
 ---
 name: numerical-cross-check
-description: Validates data consistency between ENSDF records and tabular or comparison sources such as CSV files, Markdown tables, MRG merge files, and raw ENSDF datasets. Checks completeness, numerical exactness, provenance comments, energy ordering, and field positioning using bidirectional mapping and reproducible 5% spot-checks. CHECK-ONLY. Use when verifying ENSDF data entry from any table-like source or when comparing adopted ENSDF values against cited source datasets.
+description: >
+  Use this skill when validating data consistency between ENSDF records and
+  tabular or comparison sources such as CSV files, Markdown tables, MRG
+  merge files, and raw ENSDF datasets. Checks completeness, numerical
+  exactness, provenance comments, energy ordering, and field positioning.
+  CHECK-ONLY — reports findings without editing files.
 mode: check-only
 applies-to: "**"
 ---

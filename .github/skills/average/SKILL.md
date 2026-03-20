@@ -1,6 +1,11 @@
 ---
 name: average
-description: Calculate weighted or unweighted averages for ENSDF nuclear data using Java_Average.py. Enforces exact transcription of the Suggested Adopted Result, minimum-uncertainty rule, and lifetime uncertainty limit 99. Use when adopting measured values from multiple publications.
+description: >
+  Use this skill when calculating weighted or unweighted averages for ENSDF
+  nuclear data using Java_Average.py. Enforces exact transcription of the
+  Suggested Adopted Result, minimum-uncertainty rule, and lifetime
+  uncertainty limit 99. Suitable for adopting measured values from multiple
+  publications.
 argument-hint: [VALUE1 UNC1 VALUE2 UNC2 ...]
 ---
 
