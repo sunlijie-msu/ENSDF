@@ -685,60 +685,11 @@ Validates ascending energy order for L-records and G-records:
 
 **CRITICAL COLUMN RULE:** When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns. Only adjust spacing between fields (never move field data to incorrect columns).
 
-### Tools and Workflows
 
-#### Java Format Check
-
-```bash
-python .github/scripts/Java_FormatCheck.py Cl35_34s_p_g.ens
-```
-
-#### Run Java Program via Python Script
-
-```bash
-# Convert single file by name
-python .github/scripts/ens2pdf.py Si35_adopted
-
-# Convert with full file path
-python .github/scripts/ens2pdf.py "finished/Si35/new/Si35_adopted.ens"
-
-# Convert all files for an element
-python .github/scripts/ens2pdf.py Si
-
-# Convert files matching pattern
-python .github/scripts/ens2pdf.py "Si35_*sig"
-
-# Convert and open in VS Code (default)
-python .github/scripts/ens2pdf.py Si35_adopted --open
-
-# Convert and open in system viewer
-python .github/scripts/ens2pdf.py Si35_adopted --open --system
-```
-
-#### PDF Generation
-
-```powershell
-# Single element
-Set-Location "D:\X\ND\Files"
-$element = "Al"
-Get-ChildItem "D:\X\ND\A35\finished\${element}35\new\*.ens" | ForEach-Object {
-    java -jar "D:\X\ND\McMaster-MSU-Java-NDS\McMaster_MSU_JAVA_NDS_v3.0_01May2025.jar" $_.FullName "$($_.BaseName).pdf"
-}
-
-# All elements
-$elements = @("Al", "Ar", "Ca", "K", "Mg", "Na", "Ne", "P", "Si")
-foreach ($element in $elements) {
-    Get-ChildItem "D:\X\ND\A35\finished\${element}35\new\*adopted.ens" | ForEach-Object {
-        java -jar "D:\X\ND\McMaster-MSU-Java-NDS\McMaster_MSU_JAVA_NDS_v3.0_01May2025.jar" $_.FullName "$($_.BaseName).pdf"
-    }
-}
-```
-
----
 
 ## 5. Tabular Data Extraction and Data Entry Quality Assurance
 
-**CRITICAL REQUIREMENT:** For ALL data entry tasks involving multiple numeric values (level energies, gamma energies, gamma intensities, half-lives, etc.), you MUST execute BOTH quality assurance checks before claiming task completion: Bidirectional Positional Check and Random Spot Check.
+**CRITICAL REQUIREMENT:** For ALL numerical data extraction/entry tasks, you MUST execute BOTH quality assurance checks before claiming task completion: Bidirectional Positional Check and Random Spot Check.
 
 ### Trigger Conditions
 
@@ -760,18 +711,16 @@ Execute these checks immediately when any of the following apply:
 ### Critical AI Weakness Mitigation: Column Alignment and Blank Cell Handling
 
 ### Mandatory Bidirectional Positional Check
+1. List all header columns explicitly, including blank positions
+2. Count blank cells as positional placeholders
+3. Forward verification: Column header → data column; Row header → data row
+4. Backward verification: data column → column header; data row → row header
+5. Arithmetic validation: verify calculations account for blank-cell shifts
 
 1.  **Column alignment:** Explicitly map ALL columns, including blank ones. Never assume positions based on visible data alone.
 2.  **Blank cells:** Count blank cells meticulously. Each blank cell shifts all subsequent column positions and can cause catastrophic data misalignment.
 3.  **Bidirectional verification:** Always cross-check both forward counting (header to data) and backward mapping (data to header) to ensure accurate alignment.
-
-#### Critical Validation Steps for Tabular Data
-
--   **Step 1:** List all header columns explicitly, including blank column positions.
--   **Step 2:** Count blank cells between data columns as positional placeholders.
--   **Step 3:** Perform forward verification (match each header column to the corresponding data column).
--   **Step 4:** Perform backward verification (confirm each data column maps back to the correct header).
--   **Step 5:** Perform arithmetic validation (verify row/column calculations account for blank cell shifts).
+4.  **Critical column mapping:** When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns. Only adjust spacing between fields (never move field data to incorrect columns).
 
 #### Example Failure Prevention
 
@@ -780,30 +729,28 @@ CSV Header Row: Name,Age,,City,Score
 Data Row: John,25,,NYC,95
 ```
 
-**CRITICAL COLUMN RULE:** When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns. Only adjust spacing between fields (never move field data to incorrect columns).
-
 ### Mandatory Random Spot-Check Protocol
 
 **NON-NEGOTIABLE REQUIREMENT:** After ANY large-scale data entry task, you MUST perform random spot-check validation before claiming completion. This is NOT optional.
 
 #### Execution Requirements
 
--   **Minimum sample size:** 5% of total entries (absolute minimum: 5 samples).
+-   **Minimum sample size:** 15% of total entries (absolute minimum: 10 samples).
 -   **Selection method:** Random sampling (neither sequential nor cherry-picked).
 -   **Evidence required:** Generate a verification script showing:
     -   Total entry count.
-    -   Sample size calculation (e.g., "200 entries → 5% = 10 samples").
+    -   Sample size calculation (e.g., "200 entries → 15% = 30 samples").
     -   Randomly selected row or line numbers.
     -   Source data values for each sample.
     -   Verification results (PASS/FAIL per sample).
 
 #### Verification Checklist (100% Pass Rate Required)
 
--   ✅ Arithmetic accuracy (no calculation errors).
--   ✅ Values match source data exactly (character-for-character).
--   ✅ Uncertainties match source data exactly.
--   ✅ Mapping accuracy (correct ENSDF fields used).
--   ✅ Positional alignment (no off-by-one errors).
+-    Arithmetic accuracy (no calculation errors).
+-    Values match source data exactly (character-for-character).
+-    Uncertainties match source data exactly.
+-    Mapping accuracy (correct ENSDF fields used).
+-    Positional alignment (no off-by-one errors).
 
 #### Procedures for Error Discovery
 

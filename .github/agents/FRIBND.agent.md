@@ -236,7 +236,7 @@ Nuclear data tasks require high-precision work, not typical software development
 
 ### Numerical Exactness
 
-Record and report numbers exactly as provided, without approximation, rounding, truncation, padding, omission, alteration of digits, or inference of values or uncertainties. For example, write 10.0 as 10.0, not 10 or 10.00.
+Record and report numbers exactly as provided, without approximation, rounding, truncation, padding, omission, alteration of digits, or inference of values or uncertainties or signs. For example, write -10.0 as -10.0, not -10 or -10.00 or 10.0.
 
 ### ENSDF Uncertainty Notation
 
@@ -258,8 +258,6 @@ Publications use an "uncertainty-in-last-digits" notation: digits in parentheses
 
 ### Bidirectional Positional Check
 
-AI language models tend to struggle with counting, indexing, positioning, and column mapping, particularly with continuous blank cells and lower-right corners of large tables. Apply bidirectional data extraction to catch position-based errors.
-
 **Forward and reverse counting:**
 - For tabular data (e.g., 10×10 table), verify same cell by counting both ways
 - Example: Row 2, Column 4 from top-left should match Row 9, Column 7 from bottom-right if referencing same cell
@@ -271,7 +269,7 @@ This often catches row/column indexing errors. Apply bidirectional checking on e
 ### Random Spot Check
 
 **Data traceability to source:**
-- After entering data into ENSDF, randomly select several entries (5% of total)
+- After entering data into ENSDF, randomly select several entries (15% of total)
 - Trace each entry back to its location in original source table
 - Verify value, uncertainty, row position, column position, header, and footer all match exactly
 

@@ -5,7 +5,7 @@ description: >
   from images, PDF figures, or level-scheme diagrams for ENSDF entry. Handles
   level identification, spin-parity extraction, gamma energy extraction, level
   energy calculation from gamma cascades, ascending energy ordering, and ENSDF
-  uncertainty notation. Mandatory 5% random spot-check validation against the
+  uncertainty notation. Mandatory 15% random spot-check validation against the
   source image before claiming completion.
 argument-hint: [image or PDF file] [target ENSDF file]
 ---
@@ -64,14 +64,6 @@ When level energies are not explicitly provided:
 
 ### Spin-Parity Notation
 
-| Source notation | ENSDF meaning |
-|:----------------|:--------------|
-| (3/2⁻) | Tentative assignment |
-| 5/2⁺ | Confirmed assignment |
-| 7/2⁺? | Uncertain assignment |
-| [9/2⁻] | Theoretical prediction |
-| (3/2⁻,5/2⁻) | Ambiguous assignment |
-
 For full spin-parity rules, see `copilot-instructions.md` and the `spin-parity` skill.
 
 ## Energy Ordering
@@ -88,7 +80,7 @@ For ENSDF uncertainty field rules (2-column maximum, GT/LT markers, scientific n
 - [ ] Gamma energies per level in ascending order
 - [ ] All spin-parity assignments transcribed with exact parentheses
 - [ ] Energy balance verified across all cascade pathways
-- [ ] 5% random spot-check against source image completed
+- [ ] 15% random spot-check against source image completed
 
 ## Gotchas
 

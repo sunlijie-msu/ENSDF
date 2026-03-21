@@ -4,7 +4,7 @@ description: >
   Use this skill when extracting 30 or more numeric data points from images,
   CSV files, or publication tables into ENSDF records. Enforces bidirectional
   column mapping, blank-cell counting, numerical exactness, and mandatory
-  random 5% spot-check validation. Applies to any bulk data extraction or
+  random 15% spot-check validation. Applies to any bulk data extraction or
   transcription task involving level energies, gamma energies, intensities,
   or uncertainties.
 argument-hint: [source image/table] [extracted ENSDF data]
@@ -18,9 +18,7 @@ Validate accuracy and completeness of tabular data extraction for ENSDF data ent
 
 ## When to Use
 
-- Extracting ≥30 numeric data points from images, CSV files, or tables
-- Transcribing gamma-ray energies, intensities, or level data from publications
-- Any bulk data entry requiring positional accuracy validation
+ALL numerical data extraction/entry tasks
 
 ## Extraction Rules
 
@@ -34,27 +32,15 @@ Validate accuracy and completeness of tabular data extraction for ENSDF data ent
 
 ### Step 1: Bidirectional Column Mapping
 
-Follow the five-step bidirectional positional check defined in `copilot-instructions.md` Section 5:
+Follow the five-step bidirectional positional check defined in `copilot-instructions.md` Section 5
 
-1. List all header columns explicitly, including blank positions
-2. Count blank cells as positional placeholders
-3. Forward verification: header → data column
-4. Backward verification: data column → header
-5. Arithmetic validation: verify calculations account for blank-cell shifts
+### Step 2: Numerical Exactness
 
-### Step 2: Data Extraction
-
-- Record numbers character-for-character from the source
-- Verify every ± sign matches the original
-- Never round, truncate, pad, or infer values or uncertainties
+Follow the Data Extraction Rules defined in `FIRBND.agent.md` Section 8.
 
 ### Step 3: Random Spot-Check
 
-Follow the mandatory spot-check protocol in `copilot-instructions.md` Section 5:
-
-- Minimum sample: max(5, ⌈0.05 × N⌉) entries
-- Random selection (not sequential or cherry-picked)
-- 100% pass rate required before claiming completion
+Follow the mandatory spot-check protocol in `copilot-instructions.md` Section 5
 
 ## Gotchas
 
