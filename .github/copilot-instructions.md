@@ -804,9 +804,9 @@ Order comments as follows:
 
 This document consists of six main sections:
 
-1.  **ENSDF Comment Text Format Standards:** Superscripts, subscripts, Greek letters, mathematical symbols, and NSR citation format.
-2.  **ENSDF 80-Column Format Standards:** NUCID field rules, L/G/DP/B/E record specifications, and critical formatting rules.
-3.  **ENSDF Uncertainty Notation:** Data record fields (plain numbers) and comment lines ({In} notation).
-4.  **ENSDF File Editing Workflow:** File protection, validation tools, and the Sacred Workflow method.
-5.  **Tabular Data Processing and QA:** Bidirectional checks, random spot checks, and AI weakness mitigation.
-6.  **Academic Standards:** Professional grammar and comment ordering for Adopted files.
+1. **ENSDF Comment Text Format Standards:** Superscripts, subscripts, Greek letters, mathematical symbols, and NSR citation format.
+2. **ENSDF 80-Column Format Standards:** NUCID field rules, L/G/B/E/A/DP record specifications, and critical formatting rules.
+3. **ENSDF Uncertainty Notation:** Data record fields (plain numbers) and comment lines ({In} notation).
+4. **ENSDF File Editing Workflow:** File protection, Mandatory Edit-Validate-Repeat Workflow, validation tools, Tools and Workflows section, and editing methodology.
+5. **Tabular Data Extraction and Data Entry Quality Assurance:** Trigger conditions, bidirectional positional checks, random spot-check validation, and error discovery procedures.
+6. **Academic Standards:** Professional English grammar, text formatting conventions, and comment ordering for Adopted ENSDF files.
