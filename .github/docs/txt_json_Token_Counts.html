@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Tokenization Analysis</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 17px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="tokenization-analysis">Tokenization Analysis</h1>
+<p>In AI and natural language processing, a token can represent different fundamental units, depending on the model architecture. The three standard definitions are listed below.</p>
+<ul>
+<li><strong>Characters:</strong> Fundamental string units (letters, numbers, symbols, and spaces).</li>
+<li><strong>Words:</strong> Whitespace-separated alphanumeric blocks.</li>
+<li><strong>Sub-words (BPE):</strong> Byte-Pair Encoding units used by modern LLMs (for example, GPT-4 <code>cl100k_base</code> tokenizer). For JSON and specialized data formats (such as ENSDF), tokenizers split strings heavily due to brackets, indentation, and non-standard spacing.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">File</th>
+<th style="text-align:left">Format</th>
+<th style="text-align:left">Est. Characters</th>
+<th style="text-align:left">Est. Words</th>
+<th style="text-align:left">Est. Sub-word Tokens (BPE)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">31S Adopted</td>
+<td style="text-align:left">JSON</td>
+<td style="text-align:left">~320,000</td>
+<td style="text-align:left">~45,000</td>
+<td style="text-align:left">~85,000-95,000</td>
+</tr>
+<tr>
+<td style="text-align:left">31S Adopted</td>
+<td style="text-align:left">FORTRAN</td>
+<td style="text-align:left">~28,000</td>
+<td style="text-align:left">~4,000</td>
+<td style="text-align:left">~8,000-10,000</td>
+</tr>
+</tbody>
+</table>
+<h2 id="conclusion">Conclusion</h2>
+<p>The JSON file is approximately 10-12 times larger than the FORTRAN file due to the highly verbose schema, repetitive keys (for example, <code>&quot;uncertainty&quot;</code>, <code>&quot;evaluatorInput&quot;</code>), and deep nesting architectures.</p>
+<ul>
+<li><strong>Cost vs. performance trade-off:</strong> Processing 100,000 tokens per query is computationally expensive and slower.</li>
+<li><strong>Context window overflow:</strong> The JSON format is approximately 10x larger than the FORTRAN format. While the 31S dataset (~95,000 tokens) fits within the context windows of advanced models (for example, GPT-4-Turbo and Claude 3.5), heavier isotopes with dense decay schemes will exceed standard 128k token limits.</li>
+</ul>
+<h2 id="comparative-analysis-for-ai-processing">Comparative Analysis for AI Processing</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Feature</th>
+<th style="text-align:left">JSON Format</th>
+<th style="text-align:left">FORTRAN Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Parsing reliability</strong></td>
+<td style="text-align:left"><strong>High.</strong> Explicit key-value pairs (for example, <code>&quot;spinParity&quot;: &quot;3/2+&quot;</code>) eliminate ambiguity.</td>
+<td style="text-align:left"><strong>Low.</strong> LLM tokenizers routinely mangle fixed-width spaces, leading to misaligned column data.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Hierarchical logic</strong></td>
+<td style="text-align:left"><strong>Explicit.</strong> Parent-child relationships (for example, levels containing gammas) are strictly nested.</td>
+<td style="text-align:left"><strong>Implicit.</strong> Relies on continuation characters (for example, <code>2cG</code>, <code>3cG</code>), which AI models frequently misinterpret.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Function calling</strong></td>
+<td style="text-align:left"><strong>Native.</strong> Directly compatible with AI tools, structured JSON outputs, and automated validation schemas.</td>
+<td style="text-align:left"><strong>Poor.</strong> Requires custom Python parsing scripts before the AI can reliably query the data.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Token efficiency</strong></td>
+<td style="text-align:left"><strong>Low.</strong> Highly verbose; requires significantly larger context windows.</td>
+<td style="text-align:left"><strong>High.</strong> Compact representation saves token costs and processing time.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="quality-assurance-and-technical-limitations">Quality Assurance and Technical Limitations</h2>
+<ul>
+<li><strong>Tokenizer variance:</strong> Sub-word token counts vary significantly across model tokenizers (for example, LLaMA's <code>SentencePiece</code> versus OpenAI's <code>tiktoken</code>). Data formats with heavy spacing, symbols, and numerics (such as JSON and FORTRAN) typically yield a lower character-to-token ratio (roughly 3.5 chars/token) than standard English prose (roughly 4 chars/token).</li>
+</ul>
+<p>While the old ENSDF FORTRAN format is highly compact, its reliance on strict columnar spacing and implicit relational logic makes it prone to AI parsing errors. JSON provides an explicit, self-describing architecture that aligns with how modern large language models (LLMs) process and extract structured data.</p>
+
+            
+            
+        </body>
+        </html>

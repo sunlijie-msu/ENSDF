@@ -446,8 +446,8 @@ XREF (cross-reference) entries in L-records indicate which datasets observe a le
 **CRITICAL:** Uncertainties in data record fields and comment lines use DIFFERENT formats, but both follow an "uncertainty-in-last-digits" notation. Ensure the number of decimal places in the main value precisely matches the decimal place represented by the final digit of the uncertainty.
 
 Scientific data typically allows 1 or 2 digits for uncertainties.
-Two Significant Figures (Leading Digits 1, 2, or less than 35) → 2-digit uncertainties, e.g., 1.2333±0.3220 → 1.23(32)
-One Significant Figure (Leading Digits 35 or higher, 4 to 9) → 1-digit uncertainties, e.g., 1.2333±0.3680 → 1.2(4)
+Two Significant Figures (leading 2 digits of uncertainty 10–34) → 2-digit uncertainties, e.g., 1.2333±0.3220 → 1.23(32)
+One Significant Figure (leading 2 digits of uncertainty 35–99) → 1-digit uncertainties, e.g., 1.2333±0.3680 → 1.2(4)
 
 ### Uncertainty Format in Data Record Fields
 
@@ -464,8 +464,10 @@ Format: Plain numbers only (NO `{I}` notation, NO braces).
 
 -   **DE field** (cols 20-21): 1-2 digits with space padding.
     -   Single digit: `"5 "` (digit + space), Double digits: `"15"` (two digits).
--   **DRI field** (cols 30-31): 1-2 digits OR special markers.
+-   **DRI field** (cols 30-31): 1-2 digits OR special markers (G records).
     -   Single digit: `"7 "` (digit + space), Double digits: `"24"`, Markers: `"GT"`, `"LT"`.
+-   **DIP field** (cols 30-31): 1-2 digits with space padding (DP records).
+    -   Single digit: `"7 "` (digit + space), Double digits: `"17"` (two digits).
 -   **DCC field** (cols 63-64): 1-2 digits with space padding.
     -   Single digit: `"3 "` (digit + space), Double digits: `"18"` (two digits).
 -   **DTI field** (cols 75-76): 1-2 digits with space padding.
@@ -487,6 +489,7 @@ Format: Plain numbers only (NO `{I}` notation, NO braces).
 -   Double digits in 2-column fields: Fill both columns completely.
 -   Asymmetric uncertainties: Use +X-Y format in 6-character fields (DT, DMR).
 -   **FORBIDDEN:** "123" in 2-column fields (corrupts adjacent data).
+-   **Rounding carry-over:** When 1 sig fig rounding carries to the next decimal place (e.g., ±0.0098 → ±0.010), the field value is `10` and the main value rounds to 3 decimal places. This `10` represents ±0.010 at 3dp precision, not 2 significant figures.
 
 #### Scientific Notation Format
 
@@ -532,6 +535,7 @@ Format: Use `{In}` or `{I+n-m}` notation with braces.
 | 1 decimal | `3.6 {I11}` | 3.6 ± 1.1 |
 | 2 decimals | `1.23 {I7}` | 1.23 ± 0.07 |
 | 2 decimals | `1.23 {I21}` | 1.23 ± 0.21 |
+| 4 decimals | `0.0060 {I24}` | 0.0060 ± 0.0024 |
 
 **Critical Rules for {In} in Comments:**
 -   `{In}` applies to the last significant digit of the value.
