@@ -1,4 +1,4 @@
- 34CL    35K ECP DECAY (178 MS)        1980EW02                  ENSDF    202609
+ 34CL    35K ECP DECAY (178 MS)        1980EW02,2019CHZU         ENSDF    202609
  34CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34CL  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34CL2 H CUT=28-May-2012$                                                       
@@ -38,35 +38,48 @@
  34CL2c  2003Sm02).                                                             
  35AR d  Shell model: Surender et al. https://doi.org/10.1016/j.aop.2024.169772 
  34CL cL E,J,T$Adopted values                                                   
- 34CL cDPE,IP$From 1980Ew02. E(p) is in the lab frame.                          
+ 34CL cDPE$From 1980Ew02. E(p) is in the lab frame.                             
+ 34CL cDPIP$1980Ew02 reports 10 relative I{-p} in Table 2 and reports           
+ 34CL2cDP |S%(|e+|b{++})p=0.37 {I15}, which contains 10 proton branches and     
+ 34CL3cDP unidentified proton branches in the continuum of the proton spectrum. 
+ 34CL4cDP 1980Ew02 reports %I(|e+|b{++})=0.15 {I6} and 0.062 {I26} for two      
+ 34CL5cDP proton-emitting states in {+35}Ar corresponding to 5 placed proton    
+ 34CL6cDP branches in Table 3, which provides the only quantitative information 
+ 34CL7cDP to normalize the relative I{-p} in Table 2. Based on the ratio of     
+ 34CL8cDP I{-p}(abs)/I{-p}(rel)=0.00106, evaluators deduce I{-p}(abs) for each  
+ 34CL9cDP proton branche and |S%(|e+|b{++})p=0.32 {I13} for the 10 identified   
+ 34CLAcDP proton branches in 1980Ew02.                                          
  34CL cDPEI$Evaluators deduced                                                  
  34CL2cDP E(level)({+35}Ar)=E(p){-lab}|*[m(p)+m({+34}Cl)]/m(\                   
  34CL3cDP {+34}Cl)+S(p)({+35}Ar)+E(level)({+34}Cl), with S(p)({+35}Ar)=5896.2   
- 34CL4cDP {I7} (2021Wa16), E(level)({+34}Cl) from the Adopted Levels of {+34}Cl,
- 34CL5cDP and E(p){-lab} from 1980Ew02. For a {+35}Ar proton-emitting level with
- 34CL6cDP multiple proton branches, evaluators take the weighted average for    
- 34CL7cDP E(level)({+35}Ar) values deduced from each proton branch. 1980Ew02    
- 34CL8cDP used S(p)({+35}Ar)=78 {I20} from 1993Au07, which causes a small       
- 34CL9cDP difference between the original E(level)({+35}Ar) in 1980Ew02 and the 
- 34CLAcDP deduced E(level)({+35}Ar) here.                                       
+ 34CL4cDP {I7} from 2021Wa16, E(level)({+34}Cl) from the Adopted Levels of      
+ 34CL5cDP {+34}Cl, and E(p){-lab} from 1980Ew02. For a {+35}Ar proton-emitting  
+ 34CL6cDP level with multiple proton branches, evaluators take the weighted     
+ 34CL7cDP average for E(level)({+35}Ar) values deduced from each proton branch. 
  35K   P 0            3/2+             175 MS    2              11874.4   9     
  35K  cP J,T$From the Adopted Levels of {+35}K. Adopted T{-1/2} from weighted   
  35K 2cP average of 175 ms {I2} (2018Sa54), 178 ms {I8} (1998Sc19), and 190 ms  
  35K 3cP {I30} (1980Ew02) in this dataset.                                      
  35K  cP QP$From 2021Wa16.                                                      
  34CL  N                       0.0037  15              1.0                      
- 34CL cN BR,NP$From 1980Ew02                                                    
+ 34CL cN BR$From 1980Ew02                                                       
  34CL  DP 1282     20 0.017  7                                                  
  34CL  DP 1705     20 0.045  18                                                 
  34CL  DP 1875     20 0.025  10                                                 
  34CL  DP 2575     20 0.011  4                                                  
  34CL  DP 2807     20 0.0060 24                                                 
  34CL  L 0            0+               1.5266 S  4                              
+ 34CL  DP 439      11 2.5E-3 5  6348                                        R   
+ 34CL  DP 1124     11           7053                                        R   
+ 34CL  DP 1347     11           7283                                        R   
  34CL  DP 1555     20 0.044  17 7518                                           ?
- 34CL  DP 2425     20 0.020  8  8395                                           ?
+ 34CL  DP 2425     20 0.020  8  8393                                           ?
  34CL  L 146.36    3  3+               31.99 M   3                           M ?
- 34CL  DP 1425     20 0.11   4  7504                                           ?
- 34CL  DP 2282     20 0.024  10 8395                                           ?
+ 34CL  DP 1425     20 0.11   4  7518                                           ?
+ 34CL  DP 2282     20 0.024  10 8393                                           ?
  34CL  L 461.00    4  1+                                                       ?
- 34CL  DP 1980     20 0.018  7  8395                                           ?
-
+ 34CL  DP 1980     20 0.018  7  8393                                           ?
+ 34CL  L 665.56    4  1+                                                        
+ 34CL  DP 673      11           7255                                        R   
+ 34CL  DP 844      11           7431                                        R   
+ 34CL  DP 937      11           7518                                        R
