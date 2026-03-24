@@ -1,3 +1,0 @@
-# For A35 P35:
-$files = Get-ChildItem -Path "d:\X\ND\ENSDF\A35\K35\new\*.ens" -File
-foreach($f in $files) { python d:\X\ND\ENSDF\.github\column_calibrate.py $f.FullName --fix }
