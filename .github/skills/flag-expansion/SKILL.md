@@ -1,11 +1,9 @@
 ---
 name: flag-expansion
 description: >
-  Use this skill when expanding FLAG= shorthand continuation records in
+  Use this skill when expanding flags in column 77 or flags in FLAG= continuation records in
   ENSDF files into individual cG or cL comment lines. Maps each flag
-  character (uppercase for energy source, lowercase for intensity source)
-  to its defined description in the dataset header. Clears column 77 flag
-  characters from data records and deletes original FLAG= continuation
+  character to its defined description in the dataset header. Clears column 77 flag characters from data records or deletes original FLAG= continuation
   lines after expansion.
 argument-hint: [ENSDF file]
 ---
@@ -13,18 +11,10 @@ argument-hint: [ENSDF file]
 # ENSDF Flag Expansion (Generalized)
 
 ## 1. Objective
-Systematically expand shorthand `FLAG=` continuation records into individual `cG` or `cL` comments to improve human readability and convenience in data evaluation.
+Systematically expand flags in column 77 or flags in `FLAG=` continuation records into individual `cG` or `cL` comments to improve human readability and level of detail in datasets.
 
 ## 2. Character Mapping Pattern
 Map characters within a `FLAG=` string to their respective comment lines defined in the dataset header.
-
-### Energy Flags (Uppercase)
-- **Mapping**: `[NUCID] cG E$E|g [Source description]`
-- **Format**: Left-justify energy source starting at column 10.
-
-### Intensity Flags (Lowercase)
-- **Mapping**: `[NUCID] cG RI$[Source description]`
-- **Format**: Left-justify intensity source starting at column 10.
 
 ## 3. Execution Procedure
 
@@ -41,7 +31,3 @@ Map characters within a `FLAG=` string to their respective comment lines defined
 - **Cleanup**: 
   - Clear the flag character from column 77 of the data record.
   - Delete the original `FLAG=` continuation line.
-
-### Step 3: 80-Column Integrity
-- Pad every generated comment line with trailing spaces to reach exactly 80 characters.
-- Maintain field boundaries as defined in the 80-column manual.
