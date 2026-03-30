@@ -110,6 +110,8 @@ Standardize T$ (lifetime) comment formatting for clarity and numerical rigor.
 
 **Example:** `T$lifetime |t=3.4 ps {I3}: weighted average of 3.3 ps {I5} in ({+34}S,p|g) from 1973Wa10 with DSAM and 3.5 ps {I2} in {+208}Pb({+36}S,{+35}S|g) from 2022Gr07 with DRDM. Others: >1.8 ps in (d,p|g) from 1970Bu18 with DSAM and >1.6 ps in (d,p|g) from 1972Fr11 with DSAM.`
 
+> **Note:** "Others:" items may be measured values (with {IUNC}) rather than limits. Use `VALUE UNIT {IUNC}` instead of `>VALUE UNIT` when the excluded item is a measured result. Example: `Others: 13 ps {I5} in {+9}Be({+37}Ca,{+34}Cl|g) from 2007DoZV with peak-shift (MINIBALL) and 32 ps {I+10-14} in {+9}Be({+37}Ca,{+34}Cl|g) from 2007DoZV with peak-shift (Cluster).`
+
 
 
 ---
@@ -151,6 +153,7 @@ Standardize T$ (lifetime) comment formatting for clarity and numerical rigor.
 
 -   **Averaging decisions are final:** The evaluator has already decided which values to average and which to place in "Others:". Preserve these decisions.
 -   **Your task:** Standardize FORMAT only (e.g., fix "from lifetime=" to "lifetime |t=", add "in REACTION from NSR with METHOD" for adopted datasets).
+-   **Do not 
 
 ### Half-Life vs Lifetime Terminology
 
