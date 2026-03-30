@@ -11,23 +11,46 @@ argument-hint: [ENSDF file]
 # ENSDF Flag Expansion (Generalized)
 
 ## 1. Objective
-Systematically expand flags in column 77 or flags in `FLAG=` continuation records into individual `cG` or `cL` comments to improve human readability and level of detail in datasets.
+Systematically expand flags in column 77 or flags in `FLAG=` continuation records into individual `cG` or `cL` comments. The purpose is human review; **redundant comments are acceptable** — always add the new comment, even if a similar comment already exists.
 
-## 2. Character Mapping Pattern
-Map characters within a `FLAG=` string to their respective comment lines defined in the dataset header.
+## 2. Execution Procedure
 
-## 3. Execution Procedure
+### Step 1: Identify flags and their comment mappings
+- Read the dataset header to find all flag definitions (e.g., `FLAG=A means E from ...`).
+- Confirm which flags actually have occurrences: `grep 'FLAG=' file.ens`. Skip flags with zero occurrences.
+- Locate all records with `FLAG=` continuation lines or flag characters in column 77.
 
-### Step 1: Identification
-- Locate all data records (L, G, B, E) and check **column 77** for a flag character.
-- Locate continuation lines matching the pattern: `[NUCID]F G FLAG=[String]` or `[NUCID]F L FLAG=[String]`.
-- Identify the parent record associated with these flags.
+### Step 2: Expand — unconditionally
+For **every** occurrence of a FLAG= line, **always**:
+1. Add the new `cG`/`cL` comment immediately after the parent data record (before its existing comments).
+2. Delete the `FLAG=` continuation line.
 
-### Step 2: Expansion & Replacement
-- Iterate through each flag character (either from column 77 or the `FLAG=` string).
-- Generate a new `cL` or `cG` record for **each** character.
-- **Requirement**: Use the `$` separator (standard ENSDF comment delimiter, e.g., `RI$`, `E$`, `J$`).
-- **Placement**: Insert new lines immediately after the parent data record (and its existing comments).
-- **Cleanup**: 
-  - Clear the flag character from column 77 of the data record.
-  - Delete the original `FLAG=` continuation line.
+**Never suppress comment insertion** because a similar or related comment already exists. The expanded comments are for human review; the evaluator decides which to keep.
+
+**Comment ordering** (G-records): `E$ → RI$ → M$ → MR$`  
+Insert new comments in the correct position relative to existing comment blocks — not blindly at the position of the deleted FLAG= line.
+
+### Step 3: Handle multiple flags on the same record atomically
+When a record has multiple `FLAG=` lines (e.g., `FLAG=A` and `FLAG=B`), generate a **single combined replacement** spanning all FLAG= lines. Generating independent ops per flag causes context exhaustion: after the first op removes its FLAG= line, the second op cannot find its original context.
+
+If independent ops have already been generated and some fail, update the failed op's context to use post-expansion anchors (e.g., the comment line just added by the first op).
+
+### Step 4: Verify
+- Confirm 0 `FLAG=` lines remain in the file.
+- For each expanded record, check the expected comment lines are present within that record's comment block (not the adjacent record's block — stop the search at the next data record).
+- Count totals per comment type against expected numbers.
+- Comment line spot-checks: compare with `line.rstrip() == expected_bare_string` (no `.ljust(80)` — comment lines do not need to be exactly 80 chars).
+
+---
+
+## 3. Common Pitfalls
+
+| Pitfall | Correct approach |
+|---|---|
+| Skipping comment insertion when a "similar" comment already exists | Always insert — redundancy is intentional |
+| Checking RI$From by scanning too many lines (bleeds into next G-record) | Stop scan at the next data record boundary |
+| Independent ops for FLAG=A and FLAG=B on same record | Use a single combined replacement |
+| Context matching `G_data + FLAG=B` after FLAG=A was already removed | Use post-expansion context (newly added E$ + FLAG=B) |
+| Using `splitlines()` for line-index edits in Python | Use `readlines()` |
+| Context string matches multiple locations in file | Add more surrounding context lines to make it unique |
+| Verifying comment lines with `.ljust(80)` | Use `.rstrip()` comparison only |
