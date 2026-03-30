@@ -1,10 +1,7 @@
 ---
 name: flag-expansion
 description: >
-  Use this skill when expanding flags in column 77 or flags in FLAG= continuation records in
-  ENSDF files into individual cG or cL comment lines. Maps each flag
-  character to its defined description in the dataset header. Clears column 77 flag characters from data records or deletes original FLAG= continuation
-  lines after expansion.
+  Use this skill when expanding flags in column 77 or flags in FLAG= continuation records in ENSDF files into individual cG or cL comment lines. Maps each flag character to its defined description in the dataset header. Clears column 77 flag characters from data records or deletes original FLAG= continuation lines after expansion.
 argument-hint: [ENSDF file]
 ---
 
@@ -16,16 +13,16 @@ Systematically expand flags in column 77 or flags in `FLAG=` continuation record
 ## 2. Execution Procedure
 
 ### Step 1: Identify flags and their comment mappings
-- Read the dataset header to find all flag definitions (e.g., `FLAG=A means E from ...`).
+- Read the dataset header to find all flag definitions (e.g., colunn 77 or  `FLAG=A means E from ...`).
 - Confirm which flags actually have occurrences: `grep 'FLAG=' file.ens`. Skip flags with zero occurrences.
-- Locate all records with `FLAG=` continuation lines or flag characters in column 77.
+- Locate all records with flag characters in column 77 or`FLAG=` continuation lines.
 
 ### Step 2: Expand — unconditionally
 For **every** occurrence of a FLAG= line, **always**:
 1. Add the new `cG`/`cL` comment immediately after the parent data record (before its existing comments).
 2. Delete the `FLAG=` continuation line.
 
-**Never suppress comment insertion** because a similar or related comment already exists. The expanded comments are for human review; the evaluator decides which to keep.
+**Never suppress comment insertion** because a similar or related comment already exists. The expanded comments are for human review; the evaluator decides which to keep eventually.
 
 **Comment ordering** (G-records): `E$ → RI$ → M$ → MR$`  
 Insert new comments in the correct position relative to existing comment blocks — not blindly at the position of the deleted FLAG= line.
@@ -42,15 +39,3 @@ If independent ops have already been generated and some fail, update the failed 
 - Comment line spot-checks: compare with `line.rstrip() == expected_bare_string` (no `.ljust(80)` — comment lines do not need to be exactly 80 chars).
 
 ---
-
-## 3. Common Pitfalls
-
-| Pitfall | Correct approach |
-|---|---|
-| Skipping comment insertion when a "similar" comment already exists | Always insert — redundancy is intentional |
-| Checking RI$From by scanning too many lines (bleeds into next G-record) | Stop scan at the next data record boundary |
-| Independent ops for FLAG=A and FLAG=B on same record | Use a single combined replacement |
-| Context matching `G_data + FLAG=B` after FLAG=A was already removed | Use post-expansion context (newly added E$ + FLAG=B) |
-| Using `splitlines()` for line-index edits in Python | Use `readlines()` |
-| Context string matches multiple locations in file | Add more surrounding context lines to make it unique |
-| Verifying comment lines with `.ljust(80)` | Use `.rstrip()` comparison only |
