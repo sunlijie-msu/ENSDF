@@ -28,8 +28,8 @@ python .github/scripts/Java_Average.py VALUE1 UNC1 [VALUE2 UNC2 ...]
 
 ## Data Selection Rules
 
-### One Value Per Paper
-Use one primary value per original publication. If multiple methods exist in one paper, select the most reliable result.
+### One Value Per Paper (usually)
+Use one primary value per original publication. If multiple measurements exist in one paper, the authors usually indicate the most reliable result.
 
 ### Mixed Measurements and Limits
 *   **Consistency**: If a measurement (e.g., 22 ps) is consistent with a limit (e.g., >14 ps), adopt the measurement. Move the limit to "Other:" in the comment list.
