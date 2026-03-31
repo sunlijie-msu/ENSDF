@@ -12,7 +12,7 @@ argument-hint: "[ENSDF file or level energy]"
 
 ## Purpose
 
-Standardize T$ (lifetime) comment formatting for clarity and numerical rigor.
+Standardize T$ (lifetime) comment structure in cL lines for clarity and consistency.
 
 **Key Distinction:**
 - **Individual datasets:** `(NSR, METHOD)` format
@@ -110,7 +110,7 @@ Standardize T$ (lifetime) comment formatting for clarity and numerical rigor.
 
 **Example:** `T$lifetime |t=3.4 ps {I3}: weighted average of 3.3 ps {I5} in ({+34}S,p|g) from 1973Wa10 with DSAM and 3.5 ps {I2} in {+208}Pb({+36}S,{+35}S|g) from 2022Gr07 with DRDM. Others: >1.8 ps in (d,p|g) from 1970Bu18 with DSAM and >1.6 ps in (d,p|g) from 1972Fr11 with DSAM.`
 
-> **Note:** "Others:" items may be measured values (with {IUNC}) rather than limits. Use `VALUE UNIT {IUNC}` instead of `>VALUE UNIT` when the excluded item is a measured result. Example: `Others: 13 ps {I5} in {+9}Be({+37}Ca,{+34}Cl|g) from 2007DoZV with peak-shift (MINIBALL) and 32 ps {I+10-14} in {+9}Be({+37}Ca,{+34}Cl|g) from 2007DoZV with peak-shift (Cluster).`
+> **Note:** "Others:" items may be measured values (with {IUNC}) or limits, specified by the human evaluators.
 
 
 
@@ -129,7 +129,7 @@ Standardize T$ (lifetime) comment formatting for clarity and numerical rigor.
 ### Numerical Rigor
 
 -   **Preserve values:** Do not round or alter values, uncertainties, or NSR keys.
--   **Notation:** Use {IUNC} for symmetric; {I+n-m} for asymmetric uncertainties.
+-   **ENSDF Comment Notation:** Use {IUNC} for symmetric; {I+n-m} for asymmetric uncertainties.
 -   **Unit consistency:** Convert component units to match the adopted result (e.g., fs to ps if adopting ps).
 -   **Limits:** Use `>` or `<` without parentheses or uncertainties.
 -   **Lifetime uncertainty limit:** Use **99** (not default 35) for full precision.
@@ -147,13 +147,11 @@ Standardize T$ (lifetime) comment formatting for clarity and numerical rigor.
 
 ## Critical Rules
 
-### Scope: Format Standardization Only
-
-**Do NOT modify data decisions—only standardize FORMAT.**
+### Scope: Comment Format Standardization Only.
+**Do NOT modify data.**
 
 -   **Averaging decisions are final:** The evaluator has already decided which values to average and which to place in "Others:". Preserve these decisions.
 -   **Your task:** Standardize FORMAT only (e.g., fix "from lifetime=" to "lifetime |t=", add "in REACTION from NSR with METHOD" for adopted datasets).
--   **Do not 
 
 ### Half-Life vs Lifetime Terminology
 
@@ -162,4 +160,4 @@ Standardize T$ (lifetime) comment formatting for clarity and numerical rigor.
 -   **Lifetime (τ):** Mean lifetime (symbol: |t). Relation: τ = T₁/₂ / ln(2) ≈ 1.443 × T₁/₂
 -   **Half-life (T₁/₂):** Time for half decay. What goes in ENSDF T field.
 -   **T$ comment rule:** Use "lifetime |t=" when referring to lifetime value. Omit for T₁/₂ references (T comment inherently indicates half-life).
--   **Mixed τ and T₁/₂:** Convert τ to T₁/₂ using T₁/₂ = τ × ln(2) ≈ 0.693 × τ.
+-   **Mixed τ and T₁/₂:** Do not convert τ ↔ T₁/₂ unless human evaluators explicitly instructed.
