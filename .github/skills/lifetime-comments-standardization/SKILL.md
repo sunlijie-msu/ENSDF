@@ -133,6 +133,7 @@ Standardize T$ (lifetime) comment structure in cL lines for clarity and consiste
 -   **Unit consistency:** Convert component units to match the adopted result (e.g., fs to ps if adopting ps).
 -   **Limits:** Use `>` or `<` without parentheses or uncertainties.
 -   **Lifetime uncertainty limit:** Use **99** (not default 35) for full precision.
+-   **Adopted average is a placeholder:** Do not derive adopted τ from the L-record T field (T₁/₂). Compute weighted average for the adopted τ is in a separate Skill.
 
 | Input | Standard (Limit 35) | Lifetime (Limit 99) |
 |:---:|:---:|:---:|
@@ -160,4 +161,4 @@ Standardize T$ (lifetime) comment structure in cL lines for clarity and consiste
 -   **Lifetime (τ):** Mean lifetime (symbol: |t). Relation: τ = T₁/₂ / ln(2) ≈ 1.443 × T₁/₂
 -   **Half-life (T₁/₂):** Time for half decay. What goes in ENSDF T field.
 -   **T$ comment rule:** Use "lifetime |t=" when referring to lifetime value. Omit for T₁/₂ references (T comment inherently indicates half-life).
--   **Mixed τ and T₁/₂:** Do not convert τ ↔ T₁/₂ unless human evaluators explicitly instructed.
+-   **No τ ↔ T₁/₂ conversion:** Do not convert τ ↔ T₁/₂ unless explicitly instructed. If τ(weighted average) ≠ τ derived from the T field (T₁/₂), do not reconcile—preserve both values as-is.
