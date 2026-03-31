@@ -92,6 +92,16 @@ Standardize T$ (lifetime) comment structure in cL lines for clarity and consiste
 
 **Example:** `T$lifetime |t>4.5 ps in (d,p|g) from 1970Bu18 with DSAM.`
 
+### Single Limit with Others
+
+**Rule:** When all limits, adopt the **strictest** limit (largest for `>`, smallest for `<`) as the adopted value, and move the other limits to "Other:".
+
+**Format:** `T$lifetime |t>VALUE UNIT in REACTION from NSR with METHOD. Others: >VALUE1 UNIT in REACTION1 from NSR1 with METHOD1, >VALUE2 UNIT in REACTION2 from NSR2 with METHOD2, and >VALUE3 UNIT in REACTION3 from NSR3 with METHOD3.`
+
+**Example:** >2 ps (1973Ca15), >1.5 ps (1985La16), >0.4 ps (1977Da02), >1 ps (1973An13) — adopt >2 ps (strictest).
+
+`T$lifetime |t>2 ps in {+32}S({+3}He,p|g) from 1973Ca15 with DSAM. Others: >1.0 ps in {+33}S(p,|g) from 1973An13 with DSAM, >400 fs in {+33}S(p,|g) from 1977Da02 with DSAM, and >1500 fs in {+33}S(p,|g) from 1985La16 with DSAM.`
+
 ### Two Limits
 
 **Format:** `T$lifetime |t>VALUE UNIT: >VALUE1 UNIT in REACTION1 from NSR1 with METHOD1 and >VALUE2 UNIT in REACTION2 from NSR2 with METHOD2.`
