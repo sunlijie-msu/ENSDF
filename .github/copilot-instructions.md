@@ -448,6 +448,7 @@ XREF (cross-reference) entries in L-records indicate which datasets observe a le
 Scientific data typically allows 1 or 2 digits for uncertainties.
 Two Significant Figures (leading 2 digits of uncertainty 10–34) → 2-digit uncertainties, e.g., 1.2333±0.3220 → 1.23(32)
 One Significant Figure (leading 2 digits of uncertainty 35–99) → 1-digit uncertainties, e.g., 1.2333±0.3680 → 1.2(4)
+Special case: for half-lives or lifetimes, two significant figures with leading 2 digits of uncertainty 35-99 are allowed.
 
 ### Uncertainty Format in Data Record Fields
 
@@ -478,7 +479,7 @@ Format: Plain numbers only (NO `{I}` notation, NO braces).
 #### Extended Uncertainty Fields (Up to 6 Characters for Asymmetric Uncertainties)
 
 -   **DT field** (cols 50-55): Half-life uncertainties, supports asymmetric format.
-    -   Symmetric: `"14    "` (digits + spaces), Asymmetric: `"+3-4  "`, `"+19-3 "`, `"+13-28"`.
+    -   Symmetric: `"14    "` (digits + spaces), Asymmetric: `"+3-4  "`, `"+19-8 "`, `"+13-28"`.
 -   **DMR field** (cols 50-55): Mixing ratio uncertainties, supports asymmetric format.
     -   Symmetric: `"25    "` (value + spaces), Asymmetric: `"+5-3 "`, `"+21-18"`.
     -   For source data using the Rose and Brink (1967) sign convention, reverse the sign of the quoted mixing ratio before entering it into ENSDF. Reverse the asymmetric uncertainty order at the same time so the ENSDF value keeps the correct upper and lower bounds. Example: -0.27$_{-0.04}^{+0.03}$ becomes +0.27$_{+0.04}^{-0.03}$ in ENSDF.
@@ -488,7 +489,7 @@ Format: Plain numbers only (NO `{I}` notation, NO braces).
 -   Single digits in 2-column fields: MUST be padded with trailing space.
 -   Double digits in 2-column fields: Fill both columns completely.
 -   Asymmetric uncertainties: Use +X-Y format in 6-character fields (DT, DMR).
--   **FORBIDDEN:** "123" in 2-column fields (corrupts adjacent data).
+-   **FORBIDDEN:** "123" not allowed in either 2-column fields (corrupts adjacent data) or in 6-column fields.
 -   **Rounding carry-over:** When 1 sig fig rounding carries to the next decimal place (e.g., ±0.0098 → ±0.010), the field value is `10` and the main value rounds to 3 decimal places. This `10` represents ±0.010 at 3dp precision, not 2 significant figures.
 
 #### Scientific Notation Format

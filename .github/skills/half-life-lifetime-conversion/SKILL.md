@@ -51,7 +51,8 @@ python .github/scripts/column_calibrate.py "file.ens"
 ## Gotchas
 
 - **Skip** L records with no following cL T$ comment — leave T/DT untouched.
-- **Unit must match T$ exactly** — if T$ uses FS, write FS; if PS, write PS. Never convert.
+- **Unit conversion rule** — If the half-life value in the T field exceeds 200, convert to the bigger unit (value divide by 1000); otherwise use the smaller unit. cL T$ comment lifetime units match the source literature as it is and may not be converted; T field units are uppercase `FS`/`PS`/`NS`/`US` and must be converted if the value exceeds 200.
+  - Example: `|t=286 fs {I45}` → T field `0.286 PS  `, DT `45    ` (digits unchanged).
+  - The DT uncertainty digits are invariant under FS↔PS conversion.
 - **Limits have no numeric DT** — `|t<V U` → T=`V U`, DT=`LT    `. Nothing else in DT.
 - **E-notation** in the existing T field (e.g., `1.6E2 FS`) must be replaced when T$ gives plain digits.
-- **DT can be 1–3 digits** — pad with trailing spaces to fill 6 chars; never truncate.

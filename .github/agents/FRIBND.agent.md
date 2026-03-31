@@ -298,7 +298,7 @@ This catches errors common to nondeterministic AI LLM tools, especially arithmet
 ## Averaging Code Rules
 
 
-When user requests ENSDF utility Java wrapper code `Java_Average.py` for calculating averages, follow these rules with absolute precision and zero tolerance for deviation:
+When user requests code `Java_Average.py` for calculating averages, follow these rules with absolute precision and zero tolerance for deviation:
 
 - Always use exact Java code "Suggested Adopted Result" value without recalculation or substitution
 - Use exact uncertainty value provided by Java code (automatically applies rule: adopted uncertainty ≥ any individual input uncertainty)
