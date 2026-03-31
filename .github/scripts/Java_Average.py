@@ -358,8 +358,8 @@ def parse_comment_data(comment_text: str) -> List[Tuple[float, float, float]]:
     text = ' '.join(cleaned_lines)
     text = re.sub(r'\s+', ' ', text).strip()
 
-    # Truncate at "Other:" — values after this are NOT part of the averaging set
-    other_match = re.search(r'\bOther\b', text, re.IGNORECASE)
+    # Truncate at "Other:" / "Others:" — values after this are NOT part of the averaging set
+    other_match = re.search(r'\bOthers?\b', text, re.IGNORECASE)
     if other_match:
         text = text[:other_match.start()]
 
@@ -454,21 +454,23 @@ def main():
         max_dec = src_max_dec
 
     # --- Numeric mode ---
-    elif len(args) >= 4 and len(args) % 2 == 0:
-        data = []
-        for i in range(0, len(args), 2):
-            value = float(args[i])
-            unc = float(args[i + 1])
-            data.append((value, unc, unc))
-        base_unit = None
-        max_dec = count_max_decimals(data)
-
+    # Strip commas used as pair separators: "19.7 1.3, 22 4, 21.5 1.5"
     else:
-        print(__doc__)
-        print("\nError: provide either:")
-        print("  Numeric mode : VALUE1 UNC1 VALUE2 UNC2 ...")
-        print("  Comment mode : --comment \"ENSDF comment text\"")
-        sys.exit(1)
+        flat = [a.rstrip(',') for a in args if a != ',']
+        if len(flat) >= 4 and len(flat) % 2 == 0 and all(a.replace('.','').replace('-','').replace('+','').isdigit() for a in flat):
+            data = []
+            for i in range(0, len(flat), 2):
+                value = float(flat[i])
+                unc = float(flat[i + 1])
+                data.append((value, unc, unc))
+            base_unit = None
+            max_dec = count_max_decimals(data)
+        else:
+            print(__doc__)
+            print("\nError: provide either:")
+            print("  Numeric mode : VALUE1 UNC1[,] VALUE2 UNC2[,] ...")
+            print("  Comment mode : --comment \"ENSDF comment text\"")
+            sys.exit(1)
 
     n = len(data)
 

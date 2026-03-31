@@ -120,7 +120,7 @@ Standardize T$ (lifetime) comment structure in cL lines for clarity and consiste
 
 **Example:** `T$lifetime |t=3.4 ps {I3}: weighted average of 3.3 ps {I5} in ({+34}S,p|g) from 1973Wa10 with DSAM and 3.5 ps {I2} in {+208}Pb({+36}S,{+35}S|g) from 2022Gr07 with DRDM. Others: >1.8 ps in (d,p|g) from 1970Bu18 with DSAM and >1.6 ps in (d,p|g) from 1972Fr11 with DSAM.`
 
-> **Note:** "Others:" items may be measured values (with {IUNC}) or limits, specified by the human evaluators.
+> **Note:** "Others:" items may be limits or finite values (with {IUNC}), specified by the human evaluators.
 
 
 
@@ -151,15 +151,15 @@ Standardize T$ (lifetime) comment structure in cL lines for clarity and consiste
 
 ### Bibliographic Standards
 
--   **Chronology:** List measurements in chronological order by NSR year.
+-   **Chronology:** In the Adopted datasets: list measurements by dataset XREF alphabetically. In individual datasets: list by the Year in NSR keynumber chronologically.
 -   **Method tags:** Use standard abbreviations (e.g., DSAM, RDM, DRDM).
 
 ---
 
 ## Critical Rules
 
-### Scope: Comment Format Standardization Only.
-**Do NOT modify data.**
+### Scope: cL T$ Comment Format Standardization Only.
+**Do NOT modify other lines or records in the data file.**
 
 -   **Averaging decisions are final:** The evaluator has already decided which values to average and which to place in "Others:". Preserve these decisions.
 -   **Your task:** Standardize FORMAT only (e.g., fix "from lifetime=" to "lifetime |t=", add "in REACTION from NSR with METHOD" for adopted datasets).
