@@ -5,20 +5,27 @@ Exact implementation matching AverageTool_22January2025.jar
 
 This tool implements the EXACT same weighted/unweighted averaging algorithm as the Java tool.
 
-ALGORITHM DETAILS (from Java source code):
+ALGORITHM DETAILS (from V.AveLib dataPt.java / averagingMethods.java):
 1. Weighted Average:
-   - Variance for asymmetric uncertainties: V = (dxp + dxm)^2/4 + 0.3633802276324186 * (dxp - dxm)^2/4
-   - For symmetric uncertainties (dxp = dxm): V = sigma^2 (standard variance)
+   - Variance for asymmetric uncertainties (V.AveLib dataPt.gaussVariance()):
+       varianceFactor = 1 - 2/pi = 0.3633802276324186
+       V = varianceFactor * (upper - lower)^2 + upper * lower
+     For symmetric (upper == lower == sigma): V = sigma^2
    - Weight = 1/V
-   - Internal uncertainty = sqrt(1/sum(weights))
-   - External uncertainty = sqrt(sum(normWeight * (x - mu)^2) / (n-1))
-   - Use larger of internal or external uncertainty
+   - WeightedAveChiSq: asymmetric weights — if x > mean: w=1/lower^2; else w=1/upper^2
+   - Internal uncertainty (V.AveLib averagingMethods.weightedAverage_legacy):
+       lower_int = sqrt(2 / (1 + upperTot/lowerTot) / weightSum)
+       upper_int = sqrt(2 / (1 + lowerTot/upperTot) / weightSum)
+       Symmetric if |lower_int/upper_int - 1| < 0.01: use sqrt(1/weightSum)
+   - External uncertainty = sqrt(WeightedAveChiSq / (weightSum * (n-1)))
+   - Use external if its gaussVariance > internal gaussVariance
 
 2. Unweighted Average:
    - Simple mean of values
-   - Internal uncertainty = sqrt(sum(sigma^2))/n
+   - Internal uncertainty = sqrt(sum(V_i))/n where V_i = gaussVariance(dxp, dxm)
    - External uncertainty = sqrt(sum((x - mean)^2) / (n * (n-1)))
    - Use larger of internal or external uncertainty
+   - Unweighted chi^2/(n-1) = sum((x_i - mean_u)^2 / V_i) / (n-1)  [normalized by individual variances]
 
 3. Decision Threshold (HARDCODED in Java AverageReport.java):
    - THRESHOLD = 3.5 (hardcoded constant, NOT from chi-squared distribution)
@@ -26,7 +33,8 @@ ALGORITHM DETAILS (from Java source code):
    - If chi^2/(n-1)  > 3.5: use UNWEIGHTED average (BOTH value AND uncertainty)
 
 4. Display Critical Value (for reference only, shown in output as [critical=X]):
-   - Java: EnsdfUtil.criticalReducedChi2(N) = chi^2(N, 90%) where N = #data points
+   - Java: EnsdfUtil.criticalReducedChi2(N) = chi^2(N-1, 90%) / (N-1) where N = #data points
+   - This is the critical REDUCED chi^2 at 90% confidence (e.g. n=2→2.706, n=3→2.303, n=4→2.084)
    - This is NOT the adoption decision threshold
 
 5. Minimum Uncertainty Rule (findSuggestedAverage):
@@ -58,11 +66,9 @@ import math
 from typing import List, Tuple, Dict, Any
 from scipy import stats
 
-# Magic constant from Java code for asymmetric uncertainty handling
-# This is (1 - 4/pi^2) = 1 - 4/9.8696 = 1 - 0.4053 = 0.5947... 
-# Wait, let me check: 0.3633802276324186 ≈ 1/e ≈ 0.368 or related to normal distribution
-# Actually this appears to be related to the variance of a split-normal distribution
-ASYM_VARIANCE_FACTOR = 0.3633802276324186
+# varianceFactor = 1 - 2/pi (V.AveLib dataPt.java: private static final double varianceFactor)
+# This is the asymmetric Gaussian variance factor for a split-normal distribution.
+ASYM_VARIANCE_FACTOR = 1.0 - 2.0 / math.pi  # = 0.3633802276324186
 
 # Hardcoded adoption threshold from Java AverageReport.java
 # if Math.min(chi2, all_chi2) > 3.5 -> label="Unweighted-Average"
@@ -72,18 +78,33 @@ INCONSISTENCY_THRESHOLD = 3.5
 
 def gauss_variance(lower: float, upper: float) -> float:
     """
-    Calculate Gaussian variance for potentially asymmetric uncertainties.
-    This matches the Java dataPt.gaussVariance() method.
-    
-    For symmetric uncertainties (lower == upper): V = sigma^2
-    For asymmetric: V = (dxp + dxm)^2/4 + FACTOR * (dxp - dxm)^2/4
+    Variance of the asymmetric (split-normal) Gaussian.
+    Matches V.AveLib dataPt.gaussVariance():
+        varianceFactor = 1 - 2/pi
+        V = varianceFactor * (upper - lower)^2 + upper * lower
+    For symmetric (upper == lower == sigma): V = sigma^2
     """
     dxp = max(upper, 0.0)
     dxm = max(lower, 0.0)
-    
-    # From Java: V = Math.pow(dxp + dxm, 2.0D) / 4.0D + 0.3633802276324186D * Math.pow(dxp - dxm, 2.0D) / 4.0D
-    V = (dxp + dxm)**2 / 4.0 + ASYM_VARIANCE_FACTOR * (dxp - dxm)**2 / 4.0
+    V = ASYM_VARIANCE_FACTOR * (dxp - dxm)**2 + dxp * dxm
     return V
+
+
+def weighted_ave_chi_sq(data: List[Tuple[float, float, float]], mean: float) -> float:
+    """
+    Chi-square using asymmetric weights, matching V.AveLib averagingMethods.WeightedAveChiSq().
+    If x_i > mean: weight = 1/lower_i^2 (left half-width faces the mean).
+    If x_i <= mean: weight = 1/upper_i^2 (right half-width faces the mean).
+    For symmetric inputs (lower == upper == sigma): reduces to sum((x-mean)^2/sigma^2).
+    """
+    result = 0.0
+    for v, lower, upper in data:
+        if v > mean:
+            w = 1.0 / lower**2 if lower > 0 else 0.0
+        else:
+            w = 1.0 / upper**2 if upper > 0 else 0.0
+        result += w * (v - mean)**2
+    return result
 
 
 def weighted_average(data: List[Tuple[float, float, float]]) -> Dict[str, Any]:
@@ -100,7 +121,7 @@ def weighted_average(data: List[Tuple[float, float, float]]) -> Dict[str, Any]:
     """
     n = len(data)
     
-    # Calculate weights using Gaussian variance
+    # Calculate weights using Gaussian variance (1/V_i)
     weights = []
     for v, lower, upper in data:
         V = gauss_variance(lower, upper)
@@ -115,32 +136,37 @@ def weighted_average(data: List[Tuple[float, float, float]]) -> Dict[str, Any]:
     # Normalized weights
     norm_weights = [w / weight_sum for w in weights]
     
-    # Weighted mean (mu_max in Java)
+    # Weighted mean
     weighted_mean = sum(nw * d[0] for nw, d in zip(norm_weights, data))
     
-    # Internal uncertainty: sqrt(1/sum(1/sigma_lower^2)) and sqrt(1/sum(1/sigma_upper^2))
-    wtp = sum(1.0 / d[2]**2 for d in data if d[2] > 0)  # upper uncertainties
-    wtm = sum(1.0 / d[1]**2 for d in data if d[1] > 0)  # lower uncertainties
-    
-    upper_uncert = math.sqrt(1.0 / wtp) if wtp > 0 else 0.0
-    lower_uncert = math.sqrt(1.0 / wtm) if wtm > 0 else 0.0
-    
-    # For symmetric case, both should be equal
+    # Internal uncertainty (V.AveLib averagingMethods.weightedAverage_legacy):
+    #   lower_int = sqrt(2 / (1 + upperTot/lowerTot) / weightSum)
+    #   upper_int = sqrt(2 / (1 + lowerTot/upperTot) / weightSum)
+    #   Symmetric fallback: sqrt(1/weightSum) when |lower/upper - 1| < 0.01
+    lower_tot = sum(d[1]**2 for d in data)  # sum of lower^2
+    upper_tot = sum(d[2]**2 for d in data)  # sum of upper^2
+    sym_int_unc = math.sqrt(1.0 / weight_sum) if weight_sum > 0 else 0.0
+    if lower_tot > 0 and upper_tot > 0:
+        lower_uncert = math.sqrt(2.0 / (1.0 + upper_tot / lower_tot) / weight_sum)
+        upper_uncert = math.sqrt(2.0 / (1.0 + lower_tot / upper_tot) / weight_sum)
+        if abs(lower_uncert / upper_uncert - 1.0) < 0.01:
+            lower_uncert = upper_uncert = sym_int_unc
+    else:
+        lower_uncert = upper_uncert = sym_int_unc
     internal_unc = (upper_uncert + lower_uncert) / 2.0
     
-    # Chi-squared calculation (matching Java WeightedAveChiSq)
-    chi_sq = sum(w * (d[0] - weighted_mean)**2 for w, d in zip(weights, data))
+    # Chi-square: asymmetric weights (V.AveLib WeightedAveChiSq)
+    chi_sq = weighted_ave_chi_sq(data, weighted_mean)
     reduced_chi_sq = chi_sq / (n - 1) if n > 1 else 0.0
     
-    # External uncertainty: sqrt(sum(normWeight * (x - mu)^2) / (n-1))
-    ext_unc_sq = sum(nw * (d[0] - weighted_mean)**2 for nw, d in zip(norm_weights, data))
-    external_unc = math.sqrt(ext_unc_sq / (n - 1)) if n > 1 else 0.0
+    # External uncertainty: sqrt(WeightedAveChiSq / (weightSum * (n-1)))
+    external_unc = math.sqrt(chi_sq / (weight_sum * (n - 1))) if (n > 1 and weight_sum > 0) else 0.0
     
-    # Gaussian variance comparison to decide which uncertainty to use
+    # Use external if gaussVariance(external) > gaussVariance(internal result)
+    # For symmetric result: gaussVariance = unc^2, so compare squares
     internal_variance = gauss_variance(lower_uncert, upper_uncert)
     external_variance = external_unc**2
     
-    # Use external if external_variance > internal_variance
     if internal_variance < external_variance:
         final_unc = external_unc
         unc_type = "external"
@@ -204,22 +230,31 @@ def unweighted_average(data: List[Tuple[float, float, float]]) -> Dict[str, Any]
 
 def critical_chi_sq_display(n: int) -> float:
     """
-    Calculate display-only critical chi-squared value.
+    Calculate display-only critical REDUCED chi-squared value.
     Matches Java EnsdfUtil.criticalReducedChi2(n) called in AverageReport.java.
 
     Java uses: criticalReducedChi2(aboveLimitIndexesV().size())
-    which returns chi^2(N, 90%) where N = number of data points above 2% weight.
-    For display as [critical=X] alongside chi^2/(n-1).
+    which takes N = number of data points and returns the critical chi^2/(N-1)
+    at 90% confidence — i.e., chi^2(N-1, 90%) / (N-1).
 
+    Displayed as [critical=X] alongside chi^2/(n-1) for reference.
     This value is NOT used for the adoption decision.
     The decision uses the hardcoded constant INCONSISTENCY_THRESHOLD = 3.5.
 
+    Examples:
+        n=2: chi^2(1, 90%) / 1 = 2.706
+        n=3: chi^2(2, 90%) / 2 = 2.303
+        n=4: chi^2(3, 90%) / 3 = 2.084
+
     Args:
-        n: number of data points
+        n: number of data points (>= 2)
     Returns:
-        chi^2(n, 90%) — e.g. for n=2: chi^2(2, 90%) = 4.605
+        critical reduced chi^2 at 90%, i.e., chi^2(n-1, 90%) / (n-1)
     """
-    return stats.chi2.ppf(0.90, n)
+    if n <= 1:
+        return 0.0
+    dof = n - 1
+    return stats.chi2.ppf(0.90, dof) / dof
 
 
 def find_suggested_average(result_unc: float, data: List[Tuple[float, float, float]]) -> float:
@@ -482,16 +517,18 @@ def main():
     # DISPLAY ONLY — the adoption DECISION uses hardcoded threshold INCONSISTENCY_THRESHOLD = 3.5
     crit_display = critical_chi_sq_display(n)
 
-    # Unweighted chi^2 for display: sum((x - mean)^2) / (n-1)  [sample variance S^2]
+    # Unweighted chi^2/(n-1): sum of squared deviations normalized by individual variances
+    # chi^2 = sum((x_i - mean_u)^2 / V_i) — dimensionless, consistent with weighted chi^2 formula
     mean_uwt = uwt_result['value']
-    uwt_chi2_display = sum((v - mean_uwt)**2 for v, _, _ in data) / (n - 1) if n > 1 else 0.0
+    uwt_chi2_display = sum(
+        (v - mean_uwt)**2 / gauss_variance(lo, hi)
+        for v, lo, hi in data
+    ) / (n - 1) if n > 1 else 0.0
 
-    # Apply minimum-uncertainty rule to weighted internal and external for display
-    wt_int_disp = find_suggested_average(wt_result['internal_unc'], data)
-    wt_ext_disp = find_suggested_average(wt_result['external_unc'], data)
-
-    # Apply minimum-uncertainty rule to unweighted final uncertainty for display
-    uwt_disp = find_suggested_average(uwt_result['final_unc'], data)
+    # Internal/external shown raw — min-unc rule applied only to the final suggested result
+    wt_int_disp = wt_result['internal_unc']
+    wt_ext_disp = wt_result['external_unc']
+    uwt_disp = uwt_result['final_unc']
 
     unit_label = f" {base_unit}" if base_unit else ""
 

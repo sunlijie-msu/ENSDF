@@ -48,9 +48,9 @@ Standardize T$ (lifetime) comment structure in cL lines for clarity and consiste
 
 ### Two Limits
 
-**Format:** `T$lifetime |t>VALUE UNIT: >VALUE1 UNIT (NSR1, METHOD1). Other: >VALUE2 UNIT (NSR2, METHOD2).`
+**Format:** `T$lifetime |t>VALUE1 UNIT (NSR1, METHOD1). Other: >VALUE2 UNIT (NSR2, METHOD2).`
 
-**Example:** `T$lifetime |t>3 ps: >3.5 ps (1970Br10, DSAM). Other: >2.8 ps (1968An02, DSAM).`
+**Example:** `T$lifetime |t>3.5 ps (1970Br10, DSAM). Other: >2.8 ps (1968An02, DSAM).`
 
 ### Mixed Value and Limit
 
@@ -94,7 +94,7 @@ Standardize T$ (lifetime) comment structure in cL lines for clarity and consiste
 
 ### Single Limit with Others
 
-**Rule:** When all limits, adopt the **strictest** limit (largest for `>`, smallest for `<`) as the adopted value, and move the other limits to "Other:".
+**Rule:** When only limits are available, adopt the **strictest** limit (largest for `>`, smallest for `<`) as the adopted value, and move the other limits to "Other:". Limits cannot join for averaging.
 
 **Format:** `T$lifetime |t>VALUE UNIT in REACTION from NSR with METHOD. Others: >VALUE1 UNIT in REACTION1 from NSR1 with METHOD1, >VALUE2 UNIT in REACTION2 from NSR2 with METHOD2, and >VALUE3 UNIT in REACTION3 from NSR3 with METHOD3.`
 
