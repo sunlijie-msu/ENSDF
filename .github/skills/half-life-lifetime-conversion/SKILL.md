@@ -12,47 +12,57 @@ argument-hint: "[ENSDF file path]"
 
 ## Workflow
 
-**Progress:**
-- [ ] Step 1: Build replacement table from all T$ comments
-- [ ] Step 2: Edit each L-record T/DT field (one at a time, validate after each)
-- [ ] Step 3: Run final file validation
+1. Extract the adopted `|t` value from the first `|t=`, `|t>`, or `|t<` in the cL T$ comment.
+2. Convert lifetime to half-life with `T{-1/2}=|t|*ln(2)`.
+3. Format T/DT using ENSDF data-field uncertainty rules from `.github/copilot-instructions.md`.
+4. Edit one L record at a time and validate immediately.
 
----
+## Core Rule
 
-## Step 1 — Extract adopted value from T$ comment
+**cL T$ gives lifetime `|t`, but the L-record T field stores half-life.**
 
-**Source:** First occurrence after `|t=`, `|t>`, or `|t<` — stop at colon, `Others:`, or `Other:`.
+- Numeric value: `T{-1/2}=|t|*ln(2)`.
+- Symmetric uncertainty: `DT{-1/2}=D|t|*ln(2)`.
+- Limits keep their sense after scaling: `|t>...` → `T>...`, `|t<...` → `T<...`.
 
-| T$ pattern | T field content | DT field content |
-|---|---|---|
-| `\|t=V U {In}` | `V U` | `n` |
-| `\|t>V U` | `V U` | `GT` |
-| `\|t<V U` | `V U` | `LT` |
+## Comment Decoding
 
-## Step 2 — Format and edit
+- Decode comment uncertainties in `{In}` notation before applying `ln(2)`.
+- Use the last-digits rule from `.github/copilot-instructions.md`.
+- Examples:
+  - `|t=3.0 fs {I25}` means `|t=3.0 fs`, `D|t=2.5 fs`.
+  - `|t=7.7 fs {I17}` means `D|t=1.7 fs`.
 
-**T field:** cols 40–49, 10 chars, `VALUE UNIT` left-justified, trailing spaces to fill.
-**DT field:** cols 50–55, 6 chars, digits or `GT`/`LT` left-justified, trailing spaces.
+## Formatting
 
-After each edit, validate immediately:
+- Choose a natural T-field unit by scaling between `FS`, `PS`, `NS`, `US`, ... so the stored value is not `>200`; if the converted value is `<0.2`, scale down when that yields a value `<=200` in the smaller unit.
+- T field: cols 40–49, `VALUE UNIT`, left-justified.
+- DT field: cols 50–55, digits or `GT`/`LT`, left-justified.
+- After `ln(2)` conversion and unit selection, round the value and uncertainty together so DT is a valid 1- or 2-digit ENSDF last-digits field.
+- For GT/LT limits, convert the bound with `ln(2)` and preserve enough precision that rounding does not materially change the bound.
+- Do not introduce finer displayed precision than the source lifetime already has unless it is needed to avoid a materially distorted converted half-life.
+- If the source `|t` is quoted as an integer in `fs` and the converted half-life remains in `FS`, integer-fs display is usually preferred for numeric values, but do not force it for converted limits or any case where dropping the decimal would significantly change the converted bound.
+- Example: `|t<2 fs` → `T{-1/2}<1.4 FS`, not `1 FS`.
+- Example: `|t=649 fs {I190}` → `T{-1/2}=0.45 PS`, `DT=13`.
+
+## Validation
+
+After each edit:
 ```
 python .github/scripts/ensdf_1line_ruler.py --line "<exact 80-char line>"
 ```
-Confirm exit code 0 before proceeding.
 
-## Step 3 — Final file validation
-
+After all edits:
 ```
 python .github/scripts/column_calibrate.py "file.ens"
+python .github/scripts/check_gamma_ordering.py "file.ens"
 ```
 
----
+## Lessons
 
-## Gotchas
-
-- **Skip** L records with no following cL T$ comment — leave T/DT untouched.
-- **Unit conversion rule** — If the half-life value in the T field exceeds 200, convert to the bigger unit (value divide by 1000); otherwise use the smaller unit. cL T$ comment lifetime units match the source literature as it is and may not be converted; T field units are uppercase `FS`/`PS`/`NS`/`US` and must be converted if the value exceeds 200.
-  - Example: `|t=286 fs {I45}` → T field `0.286 PS  `, DT `45    ` (digits unchanged).
-  - The DT uncertainty digits are invariant under FS↔PS conversion.
-- **Limits have no numeric DT** — `|t<V U` → T=`V U`, DT=`LT    `. Nothing else in DT.
-- **E-notation** in the existing T field (e.g., `1.6E2 FS`) must be replaced when T$ gives plain digits.
+- Do **not** copy lifetime directly into the T field; always apply `ln(2)` first.
+- Do **not** treat comment `{In}` as a literal uncertainty in units; decode it from the value’s decimal places first.
+- Do **not** let `ln(2)` create a misleading extra decimal place in the same unit when the source value was quoted as an integer.
+- Do **not** remove a decimal place if that would materially change the converted value or limit.
+- Random spot-checks must test the transformation logic (`|t` → `T{-1/2}` and decoded uncertainty → DT), not just text transcription.
+- Skip L records with no following cL T$ comment.
