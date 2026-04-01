@@ -1,5 +1,5 @@
 Program for consistency check: output for XREF Warnings only (version 03/31/2026)
-Generated at: Tue 03/31/2026 at 11:31:55 PM EDT
+Generated at: Wed 04/01/2026 at 02:14:32 AM EDT
 
 
 ################################################################################
@@ -556,12 +556,9 @@ In dataset of 34CL: XQ 35CL(G,N)     XREF Tag=Q
                                                                                        @ 3660.0     3 (1,2,3)             XREF=KQ(3630*)T(*)
  34CL  L 3960                                                                   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 3940.1     3 0+                  XREF=KQ(3960*)TU(3940*)
-                                                                                       @ 3964.1     3 (2,3,4)+            XREF=KQ(3960*)T(3964*)
- 34CL  L 3980                                                                   
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 3982.6    72                     XREF=HQ(3980*)T(3964*)U(3940*)
-                                                                                       @ 3983.0     3 3-                  XREF=KMQ(3980*)T
+                                                                                      #  3940.1     3 0+                  XREF=KTU(3940*)
+                                                                                       @ 3964.1     3 (2,3,4)+            XREF=KQ(3960)T(3964)
+                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=Q
  34CL  L 4075                                                                   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                        @ 4075      10 1+,2+               XREF=Q(4075*)T
@@ -626,18 +623,10 @@ In dataset of 34CL: XT 35CL(3HE,A)     XREF Tag=T
                                                                                        @ 3631.40   12 5-                  XREF=EFGH(*)IKMQ(3630*)T(*)
                                                                                       #@ 3660.0     3 (1,2,3)             XREF=KQ(3630*)T(*)
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=T
- 34CL  L 3964      10                                  2        0.06            
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 3964.1     3 (2,3,4)+            XREF=KQ(3960*)T(3964*)
-                                                                                       @ 3982.6    72                     XREF=HQ(3980*)T(3964*)U(3940*)
  34CL  L 4608                                          1+3      0.007+0.04      
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                        @ 4605.8    10 (1-,2-,3-)          XREF=H(*)J(4665*)KM(*)QT(4608*)
                                                                                        @ 4609.7    15 2-                  XREF=H(*)J(4665*)KM(*)Q(4610*)T(4608*)U(4670*)
- 34CL  L 4639                                                                   
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 4638.9     4 2-                  XREF=J(4665*)KMQ(4610*)T(4639*)U(4670*)
-                                                                                       @ 4670      40 (3-)                XREF=J(4665*)M(4695*)Q(4720*)T(4639*)U(4670*)
  34CL  L 4715      10                                  2        0.20            
          *                                                                        <W> 3 possible matches found in Adopted! Check XREF
                                                                                       #@ 4680      10                     XREF=H(*)J(4665*)M(4695*)Q(4720*)T(4715*)U(4670*)
@@ -672,10 +661,6 @@ In dataset of 34CL: XU 36AR(P,3HE)     XREF Tag=U
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                        @ 3334.0     2 1+,2+,3+            XREF=HIKMOQ(3330*)R(3360*)TU(3350*)
                                                                                        @ 3383.3     2 1+,2+               XREF=HIKMNQR(3360*)TU(3350*)V
- 34CL  L 3940      40                                  (0)                      
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 3940.1     3 0+                  XREF=KQ(3960*)TU(3940*)
-                                                                                       @ 3982.6    72                     XREF=HQ(3980*)T(3964*)U(3940*)
  34CL  L 4670      40                                  (3)                      
          *                                                                        <W> 6 possible matches found in Adopted! Check XREF
                                                                                        @ 4609.7    15 2-                  XREF=H(*)J(4665*)KM(*)Q(4610*)T(4608*)U(4670*)
