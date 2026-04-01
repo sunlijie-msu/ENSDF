@@ -143,7 +143,7 @@ Standardize T$ (lifetime) comment structure in cL lines for clarity and consiste
 -   **Unit consistency:** Convert component units to match the adopted result (e.g., fs to ps if adopting ps).
 -   **Limits:** Use `>` or `<` without parentheses or uncertainties.
 -   **Lifetime uncertainty limit:** Use **99** (not default 35) for full precision.
--   **Adopted average is a placeholder:** Do not derive adopted τ from the L-record T field (T₁/₂). Compute weighted average for the adopted τ is in a separate Skill.
+-   **Adopted average is a placeholder:** Do not derive adopted τ from the L-record T field (T₁/₂). Compute weighted average for the adopted τ is in a separate Skill, and not part of this comment standardization task.
 
 | Input | Standard (Limit 35) | Lifetime (Limit 99) |
 |:---:|:---:|:---:|
