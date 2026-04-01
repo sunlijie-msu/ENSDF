@@ -318,12 +318,13 @@
  34CL cG RI$from ({+3}He,p|g)                                                   
  34CL d                                                                         
  34CL  L 2375.67   14 4+               150 FS    20                             
- 34CLX L XREF=EFGHIKQ(2380*)
+ 34CLX L XREF=EFGHIKQ(2380)V
  34CL cL E$weighted average of 2375.64 {I14} from {+24}Mg({+12}C,pn|g), 2375.8  
  34CL2cL {I5} from {+27}Al({+12}C,|an|g), and 2375.7 {I2} from {+33}S(p,|g).    
- 34CL3cL Other: 2376.8 {I75} from {+32}S({+3}He,p)                              
+ 34CL3cL Others: 2376.8 {I75} from {+32}S({+3}He,p), 2382 {I20} from            
+ 34CL4cL {+36}Ar(d,|a),(pol d,|a)                                               
  34CL cL J$D+Q |DJ=0 |g from 4-, 4076 ({+33}S(p,|g)); |p=+ from E2 |g to 2+,    
- 34CL2cL 1230.                                                                  
+ 34CL2cL 1230. L=0+2 from {+36}Ar(d,|a),(pol d,|a) is inconsistent.
  34CL cL T$lifetime |t=216 fs {I24}: weighted average of 260 fs {I75} in        
  34CL2cL {+32}S({+3}He,p|g) from 1970Br11 with DSAM, 275 fs {I70} in            
  34CL3cL {+32}S({+3}He,p|g) from 1973Ca15 with DSAM, 150 fs {I50} in            
@@ -353,9 +354,6 @@
  34CL  G 2375.6      2       LT [E4]                                            
  34CL cG E$From {+32}S({+3}He,p|g)                                              
  34CL cG RI$From {+32}S({+3}He,p|g)                                             
- 34CL d                                                                         
- 34CL  L 2382      20 1+                                                        
- 34CLX L XREF=Q(2380*)V                                                         
  34CL d                                                                         
  34CL  L 2580.3    2  1+               18 FS     16                             
  34CLX L XREF=AHIKMNOP(2560)Q(2610*)R(2600*)TU(2600*)V
@@ -411,13 +409,15 @@
  34CL cG E$from (|a,n|g)                                                        
  34CL d                                                                         
  34CL  L 2718      10 0:4+                                                      
- 34CLX L XREF=H(*)J(2710*)M(*)O(2718*)TV(2725*)                                 
+ 34CLX L XREF=O(2718*)T                                 
  34CL cL J$L=2 in {+35}Cl({+3}He,|a).                                           
  34CL d                                                                         
  34CL  L 2721.09   20 2-               1.4 PS    GT                             
- 34CLX L XREF=EFGH(*)IJ(2710*)KM(*)O(2718*)TV(2725*)                            
+ 34CLX L XREF=EFGHIJ(2710)KMO(2718*)V(2725)                            
  34CL cL E$weighted average of 2720.78 {I24} from {+24}Mg({+12}C,pn|g), 2721.13 
- 34CL2cL {I34} from {+27}Al({+12}C,|an|g), and 2721.3 {I2} from {+33}S(p,|g)    
+ 34CL2cL {I34} from {+27}Al({+12}C,|an|g), and 2721.3 {I2} from {+33}S(p,|g).   
+ 34CL3cL Others: 2720.5 {I39} from {+32}S({+3}He,p), 2720.7 {I25} from          
+ 34CL4cL {+33}S({+3}He,d).                                                      
  34CL cL J$L=1+3 in {+32}S({+3}He,p).                                           
  34CL cL T$lifetime |t>2 ps in {+32}S({+3}He,p|g) from 1973Ca15 with DSAM.      
  34CL2cL Others: >1.0 ps in {+33}S(p,|g) from 1973An13 with DSAM, >400 fs in    
@@ -482,11 +482,11 @@
  34CL cG RI$from {+34}Ar |e+|b{++} decay                                        
  34CL d                                                                         
  34CL  L 3334.0    2  1+,2+,3+         48 FS     19                             
- 34CLX L XREF=HIKMOQ(3330*)R(3360*)TU(3350*)                                    
+ 34CLX L XREF=HIKMOQ(3330)R(3360*)TU(3350*)V                                   
  34CL cL E$weighted average of 3336.4 {I31} from {+32}S({+3}He,p), 3334.0 {I2}  
  34CL2cL from {+33}S(p,|g), 3333.0 {I24} from {+33}S({+3}He,d), and 3330 {I4}   
  34CL3cL from {+34}S({+3}He,t)                                                  
- 34CL cL J$L=2 in {+32}S({+3}He,p).                                             
+ 34CL cL J$L=2 in {+32}S({+3}He,p). 2-,3-,4- from L=3 in {+36}Ar(d,|a),(pol d,|a) is discrepancy.
  34CL cL T$lifetime |t=68 fs {I27}: weighted average of 115 fs {I35} in         
  34CL2cL {+32}S({+3}He,p|g) from 1973Ca15 with DSAM and 53 fs {I20} in          
  34CL3cL {+33}S(p,|g) from 1985La16 with DSAM.                                  
@@ -497,9 +497,6 @@
  34CL  G 2872.7      54      12 [M1,E2]                                         
  34CL  G 3187.4      4.9     LT [E2]                                            
  34CL  G 3333.8      7.3     LT [M1,E2]                                         
- 34CL d                                                                         
- 34CL  L 3334      20 2-,3-,4-                                                  
- 34CLX L XREF=Q(3330*)V                                                         
  34CL d                                                                         
  34CL  L 3383.3    2  1+,2+            5.4 FS    11                             
  34CLX L XREF=HIKMNQR(3360*)TU(3350*)V                                          
@@ -542,7 +539,7 @@
  34CL  G 3544.88     3.1     LT [E3]                                            
  34CL d                                                                         
  34CL  L 3600.14   11 4-               15.9 PS   35                             
- 34CLX L XREF=EFGHIJKQ(3630*)                                                   
+ 34CLX L XREF=EFGHIJK                                                   
  34CL cL E$weighted average of 3599.90 {I13} from {+24}Mg({+12}C,pn|g), 3600.46 
  34CL2cL {I32} from {+27}Al({+12}C,|an|g), 3601.1 {I49} from {+32}S({+3}He,p),  
  34CL3cL 3603 {I14} from {+32}S(|a,d), and 3600.28 {I11} from {+33}S(p,|g)      
@@ -582,7 +579,7 @@
  34CL  G 3600.08     4.2     LT [M4]                                            
  34CL d                                                                         
  34CL  L 3631.40   12 5-               1.9E2 PS  4                              
- 34CLX L XREF=EFGH(*)IKMQ(3630*)T(*)                                            
+ 34CLX L XREF=EFGHIKMQ(3630)T                                            
  34CL cL E$weighted average of 3631.33 {I12} from {+24}Mg({+12}C,pn|g), 3631.7  
  34CL2cL {I4} from {+27}Al({+12}C,|an|g), and 3631.7 {I3} from {+33}S(p,|g).    
  34CL3cL Other: 3631.4 {I25} from {+33}S({+3}He,d)                              
@@ -615,7 +612,7 @@
  34CL  G 3631.5      5.5     LT [E5]                                            
  34CL d                                                                         
  34CL  L 3646.3    2  (3,4,5+)         1.5E2 FS  6                              
- 34CLX L XREF=FH(*)KQ(3630*)                                                    
+ 34CLX L XREF=FKQ(3630*)                                                    
  34CL cL E$weighted average of 3646.5 {I7} from {+27}Al({+12}C,|an|g) and 3646.3
  34CL2cL {I2} from {+33}S(p,|g)                                                 
  34CL cL J$1+,2,3,4,5+ from D,E2 |g to 3+, 146; 1,2 less likely from no |g (or  
@@ -629,7 +626,7 @@
  34CL  G 3646.1      4       LT                                                 
  34CL d                                                                         
  34CL  L 3660.0    3  (1,2,3)          3.5 FS    LT                             
- 34CLX L XREF=KQ(3630*)T(*)                                                     
+ 34CLX L XREF=K                                                     
  34CL cL J$D, |DJ=0,1 |g to 2+, 2158.                                           
  34CL cL T$lifetime |t<5 fs in {+33}S(p,|g) from 1985La16 with DSAM.            
  34CL  G 1502.1      100                                                        
@@ -662,7 +659,7 @@
  34CL  G 3791.5      7.1     LT                                                 
  34CL d                                                                         
  34CL  L 3847      10                                                           
- 34CLX L XREF=H(3804*)T                                                         
+ 34CLX L XREF=T                                                         
  34CL d                                                                         
  34CL  L 3940.1    3  0+               4 FS      LT                             
  34CLX L XREF=KTU(3940*)                                                
