@@ -1,0 +1,12 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "windows": "powershell -ExecutionPolicy Bypass -File .github/hooks/scripts/block-root-file-creation.ps1",
+        "command": "powershell -ExecutionPolicy Bypass -File .github/hooks/scripts/block-root-file-creation.ps1",
+        "timeout": 10
+      }
+    ]
+  }
+}
