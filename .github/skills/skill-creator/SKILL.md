@@ -179,7 +179,7 @@ Use v2 API: `api.example.com/v2/messages`
 - [ ] No time-sensitive conditionals
 
 **Structure**
-- [ ] Body under 500 lines
+- [ ] Body under 100 lines
 - [ ] References at most one level deep
 - [ ] Reference files > 100 lines have a table of contents
 - [ ] All paths use forward slashes

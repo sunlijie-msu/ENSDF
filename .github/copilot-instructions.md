@@ -69,7 +69,9 @@ You are an AI Agent specializing in the Evaluated Nuclear Structure Data File (E
 - `Zn{-3}P{-2}` → Zn₃P₂
 - `log {Ift}` → log <i>ft</i> (italicize "ft")
 
-#### General Language Style: Telegraphic Phrasing
+#### General Language Style
+
+Use telegraphic phrasing in comment text.
 
 ### Nuclear Science References (NSR)
 
@@ -664,47 +666,9 @@ Validates ascending energy order for L-records and G-records:
 
 
 
-## 5. Tabular Data Extraction and Data Entry Quality Assurance
+## 5. Data Extraction and Entry Quality Assurance
 
 **CRITICAL REQUIREMENT:** For ALL numerical data extraction/entry tasks, you MUST execute BOTH quality assurance checks before claiming task completion: Bidirectional Positional Check and Random Spot Check.
-
-### Trigger Conditions
-
-Execute these checks immediately when any of the following apply:
--   The task involves entering ≥30 numeric data points.
--   The request mentions "data entry," "extract data," or "format tabular data."
--   Bulk numeric input from source tables, figures, or publications is required.
--   Arithmetic-intensive work (calculations, conversions, averaging) is performed.
-
-### Forbidden Behaviors
-
--   Claiming "task complete" without executing both checks.
--   Skipping checks because data "looks correct."
--   Performing checks mentally without documented evidence.
--   Using <100% verification rates (all sampled entries must pass).
-
----
-
-### Critical AI Weakness Mitigation: Column Alignment and Blank Cell Handling
-
-### Mandatory Bidirectional Positional Check
-1. List all header columns explicitly, including blank positions
-2. Count blank cells as positional placeholders
-3. Forward verification: Column header → data column; Row header → data row
-4. Backward verification: data column → column header; data row → row header
-5. Arithmetic validation: verify calculations account for blank-cell shifts
-
-1.  **Column alignment:** Explicitly map ALL columns, including blank ones. Never assume positions based on visible data alone.
-2.  **Blank cells:** Count blank cells meticulously. Each blank cell shifts all subsequent column positions and can cause catastrophic data misalignment.
-3.  **Bidirectional verification:** Always cross-check both forward counting (header to data) and backward mapping (data to header) to ensure accurate alignment.
-4.  **Critical column mapping:** When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns. Only adjust spacing between fields (never move field data to incorrect columns).
-
-#### Example Failure Prevention
-
-```text
-CSV Header Row: Name,Age,,City,Score
-Data Row: John,25,,NYC,95
-```
 
 ### Mandatory Random Spot-Check Protocol
 
@@ -717,8 +681,8 @@ Data Row: John,25,,NYC,95
 -   **Evidence required:** Generate a verification script showing:
     -   Total entry count.
     -   Sample size calculation (e.g., "200 entries → 15% = 30 samples").
-    -   Randomly selected row or line numbers.
-    -   Source data values for each sample.
+    -   Randomly selected entered data.
+    -   Trace back to source data for each sample.
     -   Verification results (PASS/FAIL per sample).
 
 #### Verification Checklist (100% Pass Rate Required)
@@ -743,7 +707,7 @@ If any errors are found:
 #### Workflow Integration
 
 -   Execute after automated validation passes (`column_calibrate.py` and `check_gamma_ordering.py`).
--   Execute after the Bidirectional Positional Check confirms endpoints.
+-   Execute after the Bidirectional Positional Check and Random Spot Check pass with 100% accuracy.
 -   Execute before claiming "task completed successfully."
 -   Document findings in the compliance checklist for user verification.
 
@@ -765,16 +729,6 @@ If any errors are found:
 -   **Hyphenation Rule:** [Number]-[Unit]-[Descriptor] [Noun]. Hyphenate compound adjectives occurring before a noun (e.g., "x-ray diffraction," "4-mm-long gas cell," "R-matrix theory"). Do not hyphenate when they are not adjectives before nouns (e.g., "emitted by x rays," "was 4 mm long").
 -   **Consistency:** Always hyphenate "L-transfers" and "half-life."
 
-### General Comment Ordering at the beginning of Adopted.ens Files
-
-Order comments as follows:
-1.  **Isotope Discovery:** Experimental details and references.
-2.  **Production:** Methods and studies.
-3.  **Decay Measurements:** Half-life and decay modes.
-4.  **Radius Measurement:** Nuclear radius determinations.
-5.  **Mass Measurements:** Mass spectrometry and Q-values.
-6.  **Theoretical Calculations:** Models and predictions (always last).
-
 ---
 
 ## Document Structure
@@ -784,6 +738,6 @@ This document consists of six main sections:
 1. **ENSDF Comment Text Format Standards:** Superscripts, subscripts, Greek letters, mathematical symbols, and NSR citation format.
 2. **ENSDF 80-Column Format Standards:** NUCID field rules, L/G/B/E/A/DP record specifications, and critical formatting rules.
 3. **ENSDF Uncertainty Notation:** Data record fields (plain numbers) and comment lines ({In} notation).
-4. **ENSDF File Editing Workflow:** File protection, Mandatory Edit-Validate-Repeat Workflow, validation tools, Tools and Workflows section, and editing methodology.
+4. **ENSDF File Editing Workflow:** File protection, edit-validate-repeat workflow, validation tools, and editing methodology.
 5. **Tabular Data Extraction and Data Entry Quality Assurance:** Trigger conditions, bidirectional positional checks, random spot-check validation, and error discovery procedures.
-6. **Academic Standards:** Professional English grammar, text formatting conventions, and comment ordering for Adopted ENSDF files.
+6. **Academic Standards:** Professional English grammar and text formatting conventions.

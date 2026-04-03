@@ -219,11 +219,11 @@ When an edit introduces errors:
 
 Nuclear data tasks require high-precision work, not typical software development tasks. Do NOT use `git restore` or `git checkout` to fix mistakes. You must identify and fix errors carefully to maintain absolute rigor.
 
-## Data Extraction Rules
+## Data Extraction and Entry Quality Assurance
 
 ### Numerical Exactness
 
-Record and report numbers exactly as provided, without approximation, rounding, truncation, padding, omission, alteration of digits, or inference of values or uncertainties or signs. For example, write -10.0 as -10.0, not -10 or -10.00 or 10.0.
+Record and report numbers exactly as provided, without approximation, rounding, truncation, padding, omission, alteration of digits, or inference of values or uncertainties or signs. For example, write -10.0 as -10.0, not -10 or -10.00 or 10.0 or +10.0
 
 ### ENSDF Uncertainty Notation
 
@@ -257,8 +257,8 @@ This often catches row/column indexing errors. Apply bidirectional checking on e
 
 #### Data Traceability to Source
 
-- After entering data into ENSDF, randomly select several entries (15% of total)
-- Trace each entry back to its location in original source table
+- For any data entry task, after entering data into .ens dataset files, randomly select data entries (15% of total)
+- Trace each entered data back to its location in original source data file.
 - Verify value, uncertainty, row position, column position, header, and footer all match exactly
 
 This catches errors common to nondeterministic AI LLM tools, especially arithmetic mistakes and column mapping errors.
@@ -285,6 +285,6 @@ This document is organized as follows:
 5. **Task Completion Integrity** - Ensures complete task resolution before ending turn, avoiding premature success claims
 6. **Script and File Management** - Establishes pre-action checklist, script management rules, and ENSDF file editing protocols
 7. **80-Column Format and Validation** - Covers essential formatting rules, compliance requirements, edit-validate-repeat workflow, and editing safeguards including VS Code diff view requirements
-8. **Data Extraction Rules** - Guidelines for numerical exactness, ENSDF uncertainty notation, bidirectional positional checking, and random spot check procedures
+8. **Data Extraction and Entry Quality Assurance** - Guidelines for numerical exactness, ENSDF uncertainty notation, bidirectional positional checking, and random spot check procedures
 
 
