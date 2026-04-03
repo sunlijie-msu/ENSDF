@@ -1,13 +1,13 @@
 ---
 name: numerical-cross-check
-description: "Validates exact consistency between source data files (CSV, Markdown, MRG, ENS) and target ENSDF files after data entry or reconciliation. Checks values, uncertainties, signs, limits, decimal precision, units, provenance comments, and completeness."
+description: "Validates exact consistency between source data files (CSV, Markdown, MRG, ENS) and target ENSDF files after data entry or reconciliation. Checks values, uncertainties, signs, limits, decimal precision, units, provenance comments, strings, and completeness."
 ---
 
 # Numerical Cross-Check
 
 Verify 100% consistency between source data and target `.ens` records. Report every mismatch.
 
-Field definitions, column positions, uncertainty notation, structural rules, and spot-check policy: `.github/copilot-instructions.md`.
+Data record and field definitions, column positions, uncertainty notation, structural rules, and spot-check policy: `.github/copilot-instructions.md`.
 
 ## Task Configuration
 
@@ -16,7 +16,7 @@ Field definitions, column positions, uncertainty notation, structural rules, and
 ```
 SOURCE:   [path]
 TARGET:   [path]
-SCOPE:    [levels / gammas / comments / line range / energy range]
+SCOPE:    [levels / gammas / comments / XREF]
 
 MAPPING  (source → ENSDF)
   [Data A]  -> [record.field]
@@ -27,6 +27,7 @@ CHECKS
   [ ] uncertainty and format
   [ ] decimal places and trailing zeros
   [ ] limits / qualifiers (GT, LT, ?, S)
+  [ ] XREF strings character-for-character (asterisk * is semantically significant)
   [ ] provenance in cL/cG comments
   [ ] completeness (missing/extra)
 
@@ -40,10 +41,10 @@ MATCHING
 ```
 Cross-Check Progress
 - [ ] 1. Confirm Task Configuration
-- [ ] 2. Parse source and target within scope
-- [ ] 3. Compare mapped fields character-for-character
-- [ ] 4. Verify cL/cG quoted values and NSR keys
-- [ ] 5. Run reproducible 15% spot-check (copilot-instructions.md § 5)
+- [ ] 2. Carefully parse source and target within scope
+- [ ] 3. Extract the data needed for the task.
+- [ ] 4. Carefully compare mapped data character-for-character
+- [ ] 5. Run reproducible 15% random spot-check (copilot-instructions.md § 5)
 - [ ] 6. Report all mismatches with locations
 ```
 
@@ -60,5 +61,6 @@ Cross-Check Progress
 | Value mismatch | source value vs target value (exact text) |
 | Uncertainty mismatch | source uncertainty vs target uncertainty (exact text) |
 | Format mismatch | sign, decimal precision, trailing zero, qualifier (`GT`/`LT`/`?`/`S`) |
+| XREF mismatch | full XREF string: source vs target (note: `(3330*)` ≠ `(3330)` — `*` is semantically significant) |
 | Provenance mismatch | wrong or missing NSR key / cL-cG quoted value |
-| Completeness mismatch | missing or extra level/gamma within scope |
+| Completeness mismatch | missing or extra level/gamma — check whether it is a level split (`1 MRG → 2 ENS`) or merge (`2 ENS → 1 MRG`) before calling it an error |
