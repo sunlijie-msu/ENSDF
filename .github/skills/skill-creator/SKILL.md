@@ -39,7 +39,7 @@ This avoids stale duplicates and preserves the single source of truth in the ins
 SKILL.md shares the context window with conversation history, system prompts, and all loaded skills.
 
 - "Does Claude already know this?" → Remove it.
-- "Is this already in `copilot-instructions.md` or `FRIBND.agent.md`?" → Reference it.
+- "Is this already in `.github/copilot-instructions.md` or `.github/agents/FRIBND.agent.md`?" → Reference it.
 - Body under 100 lines.
 
 **Bad** (~150 tokens — explains what Claude already knows):

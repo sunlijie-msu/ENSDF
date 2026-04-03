@@ -227,7 +227,7 @@ Record and report numbers exactly as provided, without approximation, rounding, 
 
 ### ENSDF Uncertainty Notation
 
-Publications use an "uncertainty-in-last-digits" notation: digits in parentheses give the uncertainty in the last digits of the stated value.
+Physics publications typically report data in "uncertainty-in-last-digits" notation: digits in parentheses give the uncertainty in the last digits of the stated value.
 
 #### Examples
 
@@ -238,7 +238,7 @@ Publications use an "uncertainty-in-last-digits" notation: digits in parentheses
 | `0.123(4)` | 0.123 ± 0.0004 |
 
 #### Rules
-
+- Refer to `.github\copilot-instructions.md` for ENSDF uncertainty notation rules
 - Do not over-round the uncertainty, e.g., 123.892 ± 0.233 → 123.89(23) is correct, not 123.9(2)
 - Do not report more decimal places than justified by the uncertainty.
 - Do not mix decimal places between the value and its uncertainty.
