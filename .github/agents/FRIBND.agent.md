@@ -223,7 +223,7 @@ Nuclear data tasks require high-precision work, not typical software development
 
 ### Numerical Exactness
 
-Record and report numbers exactly as provided, without approximation, rounding, truncation, padding, omission, alteration of digits, or inference of values or uncertainties or signs. For example, write -10.0 as -10.0, not -10 or -10.00 or 10.0 or +10.0
+Extract and enter numbers exactly as provided in source data, without approximation, rounding, truncation, padding, omission, alteration of digits and decimal places, or inference of values or uncertainties or signs. For example, write -10.0 as -10.0, not -10 or -10.00 or 10.0 or +10.0
 
 ### ENSDF Uncertainty Notation
 

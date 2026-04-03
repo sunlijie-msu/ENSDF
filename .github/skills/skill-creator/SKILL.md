@@ -95,6 +95,39 @@ description: "..."   # ≤ 1024 chars; third person; WHAT and WHEN; trigger keyw
 
 ## Common Patterns
 
+### Task Configuration (data-entry and reconciliation skills)
+
+For any skill that processes source data into ENSDF records, place a user-fillable **Task Configuration** block as the **first section** (before the workflow). The user fills it in at the start of every task; workflow steps remain fixed.
+
+## Task Configuration
+
+**User fills in this block at the start of each task. Update as needed.**
+
+```
+SOURCE:   [path to source file]
+TARGET:   [path to target .ens file]
+
+MAPPING  (source data → ENSDF data fields in records/comments)
+  [Data A]  →  [record type, field name, comments]
+  [Data B]  →  [record type, field name, comments]
+
+OPERATIONS
+  REPLACE   [field]  with source value   [e.g., G-record RI, DRI from source]
+  KEEP      [field]  from target         [e.g., G-record M, MR, DMR; cG M$ comments]
+  ADD       [field]  from source         [e.g., new G-records absent in target]
+  MERGE     [field]  from both           [e.g., cG RI$ comments quoting both sources]
+  AVERAGE   [field]  across sources      [e.g., weighted average of two RI datasets]
+
+SPECIAL HANDLING
+  [ ] [flag any non-standard cases]
+  Match L-records by:   [ ] exact E    [ ] E within ±[N] keV
+  Match G-records by:   [ ] exact Eγ   [ ] Eγ within ±[N] keV   [ ] parent L first, then Eγ
+```
+
+This block keeps task-specific customization at the top, separate from the fixed workflow steps. Existing skills using this pattern: `tabular-data-entry`, `reconciling-data`.
+
+---
+
 ### Feedback Loop (quality-critical operations)
 
 ```markdown
@@ -177,6 +210,7 @@ Use v2 API: `api.example.com/v2/messages`
 - [ ] One default per task; alternatives only for genuine edge cases
 - [ ] Consistent terminology (one term per concept)
 - [ ] No time-sensitive conditionals
+- [ ] For data-entry/reconciliation skills: Task Configuration template is the first section
 
 **Structure**
 - [ ] Body under 100 lines

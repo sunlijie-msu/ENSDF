@@ -1,6 +1,6 @@
 ---
 name: tabular-data-entry
-description: "Performs bulk data entry from CSV or Markdown tables into ENSDF L-records and G-records. Enforces bidirectional column mapping, ascending energy ordering, and mandatory 15% spot-check validation. Use when transferring ≥10 numeric data points from a paper table or CSV file into an ENSDF dataset file."
+description: "Performs bulk data entry from CSV or Markdown tables into ENSDF L-records and G-records. Enforces bidirectional column mapping,  and mandatory 15% spot-check validation. Use when transferring ≥10 numeric data points from a paper table or CSV file into an ENSDF dataset file."
 ---
 
 # Tabular Data Entry for ENSDF
@@ -20,7 +20,7 @@ COLUMN MAPPING  (source column → ENSDF field)
   [Column D]  →  G-record DRI  (uncertainty in RI, cols 30–31)
   [...]       →  [field]       [description]
 
-TRANSFORMATIONS
+OPERATIONS
   [ ] Unit conversion:  [e.g., MeV × 1000 → keV]
   [ ] Eγ calculation:   Eγ = Ei − Ef
   [ ] Other:            [describe]
@@ -41,11 +41,9 @@ Data Entry Progress:
 - [ ] 1. Task configuration confirmed
 - [ ] 2. Explicit column map built (all columns, including blanks)
 - [ ] 3. Bidirectional positional check passed (forward + backward, two endpoints)
-- [ ] 4. L-records and G-records entered, ascending energy order maintained
-- [ ] 5. column_calibrate.py — exit code 0
-- [ ] 6. check_gamma_ordering.py — exit code 0
-- [ ] 7. 15% spot-check passed (seed and sample size reported)
-- [ ] 8. Report issued
+- [ ] 4. L-records and G-records entered, ascending energy order maintained. column_calibrate.py — exit code 0. check_gamma_ordering.py — exit code 0
+- [ ] 5. 15% spot-check passed (seed and sample size reported)
+- [ ] 6. Report issued
 ```
 
 ### Confirm Task Configuration
