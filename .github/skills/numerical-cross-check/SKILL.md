@@ -1,44 +1,64 @@
 ---
 name: numerical-cross-check
-description: "Validates data consistency between ENSDF records and tabular data sources such as CSV files, Markdown tables, MRG files, and raw ENS dataset files. Use after large-scale data entry tasks to verify that values, uncertainties, and quoted data in comments were transferred correctly. Checks completeness, numerical exactness, provenance comments, and field positioning."
+description: "Validates exact consistency between source data files (CSV, Markdown, MRG, ENS) and target ENSDF files after data entry or reconciliation. Checks values, uncertainties, signs, limits, decimal precision, units, provenance comments, and completeness."
 ---
 
 # Numerical Cross-Check
 
-Verify 100% numerical exactness between a source file (CSV, Markdown, `.mrg`, `.ens`) and a target `.ens` file. Every discrepancy must be reported — none ignored or rounded away.
+Verify 100% consistency between source data and target `.ens` records. Report every mismatch.
 
-Field definitions, column positions, uncertainty notation, and ENSDF structural rules: `.github/copilot-instructions.md`.
+Field definitions, column positions, uncertainty notation, structural rules, and spot-check policy: `.github/copilot-instructions.md`.
+
+## Task Configuration
+
+**User fills this block at task start. Update as needed.**
+
+```
+SOURCE:   [path]
+TARGET:   [path]
+SCOPE:    [levels / gammas / comments / line range / energy range]
+
+MAPPING  (source → ENSDF)
+  [Data A]  -> [record.field]
+  [Data B]  -> [record.field]
+
+CHECKS
+  [ ] value and sign
+  [ ] uncertainty and format
+  [ ] decimal places and trailing zeros
+  [ ] limits / qualifiers (GT, LT, ?, S)
+  [ ] provenance in cL/cG comments
+  [ ] completeness (missing/extra)
+
+MATCHING
+  L-records: [ ] exact E   [ ] E within ±[N] keV
+  G-records: [ ] parent L first, then Eγ   [ ] Eγ within ±[N] keV
+```
 
 ## Workflow
 
 ```
 Cross-Check Progress
-- [ ] 1. Confirm scope: source file, target file, quantities, energy range
-- [ ] 2. Build explicit field map (source → ENSDF record and field)
-- [ ] 3. Compare character-for-character: value, uncertainty, decimal places, digits
-- [ ] 4. Verify provenance comments (NSR key, quoted values in cL/cG)
-- [ ] 5. 15% reproducible spot-check — see copilot-instructions.md § 5
-- [ ] 6. Report all discrepancies
+- [ ] 1. Confirm Task Configuration
+- [ ] 2. Parse source and target within scope
+- [ ] 3. Compare mapped fields character-for-character
+- [ ] 4. Verify cL/cG quoted values and NSR keys
+- [ ] 5. Run reproducible 15% spot-check (copilot-instructions.md § 5)
+- [ ] 6. Report all mismatches with locations
 ```
 
-## Matching Rules
+## Required Matching Rules
 
-**Match parent L-record first, then G-record within that level block.** Never match gammas by Eγ alone.
+- Never match a gamma by Eγ alone; match parent L-record first.
+- For CSV/Markdown tables, include blank separator columns in the mapping.
+- For near-equal energies, use both level energy and transition energy.
 
-For table sources: map every column explicitly including blank separator columns — each blank cell shifts all subsequent column positions.
+## Report Output
 
-## Numerical Exactness Checklist
-
-For each matched record, verify:
-- Value: exact digits and decimal places
-- Uncertainty: exact digits, decimal places, asymmetric format (`+n-m`), and `GT`/`LT` markers
-- NSR key and quoted values in `cL`/`cG` comments
-- No missing or spurious entries within scope
-
-## Source-Specific Notes
-
-| Source | Key check |
+| Type | What to report |
 |---|---|
-| MRG | Identify which prefixed record is the adopted value; verify G-record RI/DRI against it |
-| ENS | Use both initial-level energy and Eγ to resolve near-equal gamma energies |
-| CSV/MD table | Account for OCR-joined cells, blank separator columns, and limit markers (`GT`/`LT`) |
+| Value mismatch | source value vs target value (exact text) |
+| Uncertainty mismatch | source uncertainty vs target uncertainty (exact text) |
+| Format mismatch | sign, decimal precision, trailing zero, qualifier (`GT`/`LT`/`?`/`S`) |
+| Provenance mismatch | wrong or missing NSR key / cL-cG quoted value |
+| Completeness mismatch | missing or extra level/gamma within scope |

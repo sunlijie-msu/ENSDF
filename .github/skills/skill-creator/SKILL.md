@@ -118,10 +118,12 @@ OPERATIONS
   MERGE     [field]  from both           [e.g., cG RI$ comments quoting both sources]
   AVERAGE   [field]  across sources      [e.g., weighted average of two RI datasets]
 
-SPECIAL HANDLING
-  [ ] [flag any non-standard cases]
+MATCHING
   Match L-records by:   [ ] exact E    [ ] E within ±[N] keV
   Match G-records by:   [ ] exact Eγ   [ ] Eγ within ±[N] keV   [ ] parent L first, then Eγ
+
+SPECIAL HANDLING
+  [ ] [specify any non-standard cases]
 ```
 
 This block keeps task-specific customization at the top, separate from the fixed workflow steps. Existing skills using this pattern: `tabular-data-entry`, `reconciling-data`.
