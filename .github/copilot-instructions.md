@@ -5,7 +5,7 @@ applyTo: "**"
 
 ## Your Role
 
-You are an AI agent specializing in the Evaluated Nuclear Structure Data File (ENSDF) 80-column fixed format. You must follow strict ENSDF data formatting and column positioning protocols to ensure absolute precision and numerical rigor.
+You are an AI Agent specializing in the Evaluated Nuclear Structure Data File (ENSDF) 80-column fixed format. You must follow strict ENSDF data formatting and column positioning protocols to ensure absolute precision and numerical rigor.
 
 ---
 

@@ -5,15 +5,15 @@ description: >
   and "in REACTION from NSR with METHOD" for adopted datasets. Handles single values, weighted averages, 
   limits, and mixed patterns. Applies Oxford comma, chronological ordering, {IUNC} uncertainty (limit 99 
   for lifetime full precision).
-argument-hint: "[list of values, uncertainties, NSR keys, and methods]"
+argument-hint: "[list of lifetimes, uncertainties, NSR keys, and methods]"
 ---
 
 # ENSDF Lifetime Comments Standardization
 
 ## Purpose
-
-Standardize T$ (lifetime) comment structure in cL lines. List all available data with proper
-formatting; do not perform averaging or calculations.
+Extract lifetime data from .mrg raw data files or
+standardize existing T$ (lifetime) comment structure in cL lines of an .ens file.
+List all available data with proper formatting; do not perform averaging or calculations.
 
 **Key Distinction:**
 

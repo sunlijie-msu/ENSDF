@@ -1,82 +1,190 @@
 ---
 name: skill-creator
-description: '**WORKFLOW SKILL** — Create, update, review, fix, or debug VS Code agent customization files (.instructions.md, .prompt.md, .agent.md, SKILL.md, copilot-instructions.md, AGENTS.md). USE FOR: saving coding preferences; troubleshooting why instructions/skills/agents are ignored or not invoked; configuring applyTo patterns; defining tool restrictions; creating custom agent modes or specialized workflows; packaging domain knowledge; fixing YAML frontmatter syntax. DO NOT USE FOR: general coding questions (use default agent); runtime debugging or error diagnosis; MCP server configuration (use MCP docs directly); VS Code extension development. INVOKES: file system tools (read/write customization files), ask-questions tool (interview user for requirements), subagents for codebase exploration. FOR SINGLE OPERATIONS: For quick YAML frontmatter fixes or creating a single file from a known pattern, edit the file directly — no skill needed.'
+description: "Creates and revises SKILL.md files for VS Code GitHub Copilot and Claude agent skills. Use when authoring a new SKILL.md, improving an existing one, diagnosing why a skill is not triggering, or packaging domain knowledge into a reusable workflow skill. Not for creating .instructions.md, .prompt.md, .agent.md, hooks, or other customization file types."
 ---
 
 # Skill Creator
 
-## Decision Flow
+## Scope
 
-| Primitive | When to Use |
-|-----------|-------------|
-| Workspace Instructions | Always-on, applies everywhere in the project |
-| File Instructions | Explicit via `applyTo` patterns, or on-demand via `description` |
-| MCP | Integrates external systems, APIs, or data |
-| Hooks | Deterministic shell commands at agent lifecycle points (block tools, auto-format, inject context) |
-| Custom Agents | Subagents for context isolation, or multi-stage workflows with tool restrictions |
-| Prompts | Single focused task with parameterized inputs |
-| Skills | On-demand workflow with bundled assets (scripts/templates) |
+This skill creates and revises **SKILL.md files only**.
 
-## Quick Reference
+For other customization file types (.instructions.md, .prompt.md, .agent.md, hooks, copilot-instructions.md), handle them directly without this skill.
 
-Consult the reference docs for templates, domain examples, advanced frontmatter options, asset organization, anti-patterns, and creation checklists. If the references are not enough, load the official documentation links for each primitive.
+---
 
-| Type | File | Location | Reference |
-|------|------|----------|-----------|
-| Workspace Instructions | `copilot-instructions.md`, `AGENTS.md` | `.github/` or root | [Link](./references/workspace-instructions.md) |
-| File Instructions | `*.instructions.md` | `.github/instructions/` | [Link](./references/instructions.md) |
-| Prompts | `*.prompt.md` | `.github/prompts/` | [Link](./references/prompts.md) |
-| Hooks | `*.json` | `.github/hooks/` | [Link](./references/hooks.md) |
-| Custom Agents | `*.agent.md` | `.github/agents/` | [Link](./references/agents.md) |
-| Skills | `SKILL.md` | `.github/skills/<name>/`, `.agents/skills/<name>/`, `.claude/skills/<name>/` | [Link](./references/skills.md) |
+## Project Rule: Reference, Don't Repeat
 
-**User-level**: `{{VSCODE_USER_PROMPTS_FOLDER}}/` (*.prompt.md, *.instructions.md, *.agent.md; not skills)
-Customizations roam with user's settings sync
+> **If a rule, standard, or convention already exists in `.github/copilot-instructions.md` or `.github/agents/FRIBND.agent.md`, reference the relevant section — do NOT copy or paraphrase it into SKILL.md.**
 
-## Creation Process
+**Bad** — duplicates existing rules:
+```markdown
+## Uncertainty notation
+Use {In} for symmetric uncertainties, {I+n-m} for asymmetric...
+```
 
-If you need to explore or validate patterns in the codebase, use a read-only subagent. If the ask-questions tool is available, use it to interview the user and clarify requirements.
+**Good** — points to the authoritative source:
+```markdown
+Follow uncertainty notation rules in `.github/copilot-instructions.md` § "ENSDF Uncertainty Notation".
+```
 
-Follow these steps when creating any customization file.
+This avoids stale duplicates and preserves the single source of truth in the instruction files.
 
-### 1. Determine Scope
+---
 
-Ask the user where they want the customization:
-- **Workspace**: For project-specific, team-shared customizations → `.github/` folder
-- **User profile**: For personal, cross-workspace customizations → `{{VSCODE_USER_PROMPTS_FOLDER}}/`
+## Core Principles
 
-### 2. Choose the Right Primitive
+### 1. Concise Is Key
 
-Use the Decision Flow above to select the appropriate file type based on the user's need.
+SKILL.md shares the context window with conversation history, system prompts, and all loaded skills.
 
-### 3. Create the File
+- "Does Claude already know this?" → Remove it.
+- "Is this already in `copilot-instructions.md` or `FRIBND.agent.md`?" → Reference it.
+- Body under 100 lines.
 
-Create the file directly at the appropriate path:
-- Use the location tables in each reference file
-- Include required frontmatter as needed
-- Add the body content following the templates
+**Bad** (~150 tokens — explains what Claude already knows):
+```
+PDF files are common. To extract text you need a library. There are many options...
+```
 
-### 4. Validate
+**Good** (~30 tokens):
+```python
+import pdfplumber
+with pdfplumber.open("file.pdf") as pdf:
+    text = pdf.pages[0].extract_text()
+```
 
-After creating:
-- Confirm the file is in the correct location
-- Verify frontmatter syntax (YAML between `---` markers)
-- Check that `description` is present and meaningful
+### 2. Set Appropriate Freedom
 
-## Edge Cases
+| Freedom | Use When | Style |
+|---|---|---|
+| High | Multiple valid approaches; context-dependent | Natural language steps |
+| Medium | Preferred pattern exists; variation acceptable | Pseudocode with parameters |
+| Low | Exact sequence required; fragile or error-prone | Exact commands; no variation |
 
-**Instructions vs Skill?** Does this apply to *most* work, or *specific* tasks? Most → Instructions. Specific → Skill.
+### 3. Progressive Disclosure
 
-**Skill vs Prompt?** Both appear as slash commands in chat (type `/`). Multi-step workflow with bundled assets → Skill. Single focused task with inputs → Prompt.
+```
+skill-name/
+├── SKILL.md        # overview + navigation (< 500 lines)
+├── reference.md    # loaded on demand
+└── scripts/
+    └── validate.py # executed, not loaded into context
+```
 
-**Skill vs Custom Agent?** Same capabilities for all steps → Skill. Need context isolation (subagent returns single output) or different tool restrictions per stage → Custom Agent.
+- References must be **one level deep** from SKILL.md. Never chain: `SKILL.md → a.md → b.md`.
+- Reference files > 100 lines need a table of contents.
+- All paths use **forward slashes**.
 
-**Hooks vs Instructions?** Instructions *guide* agent behavior (non-deterministic). Hooks *enforce* behavior via shell commands at lifecycle events like `PreToolUse` or `PostToolUse` — they can block operations, require approval, or run formatters deterministically. See [hooks reference](./references/hooks.md).
+---
 
-## Common Pitfalls
+## YAML Frontmatter
 
-**Description is the discovery surface.** The `description` field is how the agent decides whether to load a skill, instruction, or agent. If trigger phrases aren't IN the description, the agent won't find it. Use the "Use when..." pattern with specific keywords.
+```yaml
+---
+name: skill-name     # ≤ 64 chars; lowercase letters, numbers, hyphens only
+description: "..."   # ≤ 1024 chars; third person; WHAT and WHEN; trigger keywords
+---
+```
 
-**YAML frontmatter silent failures.** Unescaped colons in values, tabs instead of spaces, `name` that doesn't match folder name — all cause silent failures with no error message. Always quote descriptions that contain colons: `description: "Use when: doing X"`.
+- `name`: no XML tags, no reserved words (`anthropic`, `claude`), matches folder name. Prefer gerund form: `processing-pdfs`.
+- `description`: third-person (`"Processes CSV files"` ✓ — `"I can help you"` ✗); colons must be quoted.
+- **Silent failure causes:** unescaped colons · tabs instead of spaces · name/folder mismatch · XML tags.
 
-**`applyTo: "**"` burns context.** This means "always included for every file request" — it loads the instruction into the context window on every interaction, even when irrelevant. Use specific globs (`**/*.py`, `src/api/**`) unless the instruction truly applies to all files.
+---
+
+## Common Patterns
+
+### Feedback Loop (quality-critical operations)
+
+```markdown
+1. Make edits
+2. Run: `python scripts/validate.py`
+3. Fix errors and return to step 2
+4. Proceed only when validation passes
+```
+
+### Progress Checklist (multi-step workflows)
+
+```
+Task Progress:
+- [ ] Step 1: Analyze input  (run analyze.py)
+- [ ] Step 2: Create mapping (edit fields.json)
+- [ ] Step 3: Validate       (run validate.py)
+- [ ] Step 4: Execute        (run apply.py)
+```
+
+### Template Pattern
+
+For strict output format: use `"ALWAYS use this exact template"`.
+For flexible output: use `"Here is a sensible default — adjust as needed"`.
+
+### Examples Pattern
+
+When output quality depends on seeing examples, provide explicit input → output pairs rather than descriptions alone.
+
+### Conditional Workflow
+
+```markdown
+1. Determine type:
+   **New document?** → Follow Creation workflow below
+   **Editing existing?** → Follow Editing workflow below
+```
+
+### One Default, Not Multiple Options
+
+```
+# Bad — forces a decision
+"You can use pypdf, pdfplumber, PyMuPDF, or pdf2image..."
+
+# Good — default with escape hatch
+Use pdfplumber. For scanned PDFs needing OCR, use pdf2image + pytesseract instead.
+```
+
+### No Time-Sensitive Information
+
+Use "Legacy" / "Current" sections instead of date conditionals:
+
+```markdown
+## Current method
+Use v2 API: `api.example.com/v2/messages`
+
+## Legacy (v1, deprecated)
+...
+```
+
+---
+
+## Anti-Patterns
+
+- **Windows paths** — always use forward slashes: `scripts/helper.py` not `scripts\helper.py`
+- **Too many options** — one default with escape hatch, not a menu
+- **Assumed installs** — list required packages explicitly
+- **Chained references** — one level deep only
+- **Time-sensitive conditionals** — use "Legacy/Current" sections instead
+
+---
+
+## Creation Checklist
+
+**Frontmatter**
+- [ ] `name`: lowercase/hyphens only, matches folder name, no reserved words
+- [ ] `description`: third person, WHAT + WHEN, trigger keywords, colons quoted
+
+**Content**
+- [ ] No rules already in `copilot-instructions.md` or `FRIBND.agent.md` — referenced instead
+- [ ] Every line justifies its token cost; nothing Claude already knows
+- [ ] One default per task; alternatives only for genuine edge cases
+- [ ] Consistent terminology (one term per concept)
+- [ ] No time-sensitive conditionals
+
+**Structure**
+- [ ] Body under 500 lines
+- [ ] References at most one level deep
+- [ ] Reference files > 100 lines have a table of contents
+- [ ] All paths use forward slashes
+
+**Testing**
+- [ ] Description triggers on expected user phrases
+- [ ] Tested with a real task (not synthetic)
+- [ ] Feedback loops present for quality-critical operations
