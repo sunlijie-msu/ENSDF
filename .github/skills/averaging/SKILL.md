@@ -28,12 +28,21 @@ python .github/scripts/Java_Average.py --comment "19.7 ps {I13} (1970Br10) and 2
 
 ## What to adopt
 
-Copy the `suggested adopted result` line exactly — value and uncertainty — character-for-character. Apply to the L-record T/DT fields and cL comment.
+
+When user requests code `Java_Average.py` for calculating averages, follow these rules with absolute precision and zero tolerance for deviation:
+
+- Always use exact Java code "Suggested Adopted Result" value without recalculation or substitution
+- Use exact uncertainty value provided by Java code (automatically applies rule: adopted uncertainty ≥ any individual input uncertainty)
+- Check whether Java suggests weighted or unweighted average in output comments
+- Use whichever method Java code explicitly recommends
+- Transcribe all values character-for-character without rounding, adjustment, or omitting units
+- Never recalculate averages by yourself
+- Never use unrecommended uncertainty results
+- Never substitute weighted/unweighted averages contrary to Java's recommendation
+
 
 ## Gotchas
 
 - **`[critical=X]` is display-only.** The tool decides Weighted vs. Unweighted using a hardcoded threshold of 3.5, not the displayed chi² critical value.
-- **If Unweighted: both value and uncertainty change.** Never substitute the unweighted uncertainty with the weighted one (or vice versa).
-- **Never recalculate.** If the suggested result looks surprising, trust the tool.
 - **Lifetimes use full precision** (uncertainty limit 99): write `197 fs {I50}`, not `2.0E2 {I5}`.
 - **One value per paper.** Comment mode skips any value before "average of" (it's the previous result) and stops at "Other:".

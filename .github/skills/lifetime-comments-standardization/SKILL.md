@@ -5,7 +5,7 @@ description: >
   and "in REACTION from NSR with METHOD" for adopted datasets. Handles single values, weighted averages, 
   limits, and mixed patterns. Applies Oxford comma, chronological ordering, {IUNC} uncertainty (limit 99 
   for lifetime full precision).
-argument-hint: "[ENSDF file or level energy]"
+argument-hint: "[list of values, uncertainties, NSR keys, and methods]"
 ---
 
 # ENSDF Lifetime Comments Standardization
