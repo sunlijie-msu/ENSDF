@@ -24,7 +24,7 @@ The code implements the **Channel Spin Coupling Scheme**, which is a standard me
 
 ### Conservation Laws
 
-In any nuclear reaction $Target + Particle \to Final\_State$, the following quantities are conserved:
+In any nuclear reaction Target + Transferred Particle -> Final State, the following quantities are conserved:
 
 1. **Total Angular Momentum** ($\vec{J}$):
 
@@ -54,7 +54,7 @@ The code performs the vector addition in two steps (Channel Spin representation)
 
 ## 2. Application to Different Reaction Types
 
-To use the code correctly, you must identify the correct "Particle" input based on the reaction mechanism.
+To use the code correctly, you must identify the correct "Transferred Particle" input based on the reaction mechanism.
 
 ### A. Resonant Capture Reactions
 
@@ -62,7 +62,7 @@ Examples: $(p, \gamma)$, $(n, \gamma)$
 
 In these reactions, a projectile fuses with the target to form a compound nucleus (resonance).
 
-* **Particle Input**: `1/2+`
+* **Particle Input**: $1/2^+$
 
 ### B. Single-Nucleon Transfer Reactions
 
@@ -70,7 +70,7 @@ Examples: $(d, p)$, $(p, d)$, $(^3\text{He}, d)$, $(d, ^3\text{He})$, $(n, d)$, 
 
 In these reactions, a single nucleon is transferred between the projectile and the target. You need to input the properties of the **transferred nucleon**.
 
-* **Particle Input**: `1/2+`
+* **Particle Input**: $1/2^+$
 
 
 ### C. Two-Nucleon Transfer Reactions
@@ -86,7 +86,7 @@ For the transfer of two identical nucleons (2n or 2p) in the same shell model or
 * If they are in a relative s-state (spatially symmetric, $L=0$), their **spin wavefunction must be antisymmetric**.
 * An antiparallel spin state for two fermions corresponds to **$s_{particle}=0$** (spin singlet for the transferred pair).
 * **NDS Policy**: For $(p, t)$, $(t, p)$, and $(^3\text{He}, n)$ reactions, it is standard to assume the transferred pair is in a relative $s$ state (**$s_{particle}=0$**).
-* **Particle Input**: `0+` for transferring $s_{particle}=0, T_{particle}=1$ particle pair
+* **Particle Input**: $0^+$ for transferring $s_{particle}=0, T_{particle}=1$ particle pair
 
 #### 2. Neutron-Proton Transfer (1n1p)
 
@@ -97,14 +97,14 @@ For the transfer of a neutron-proton pair, the selection rules depend on the pro
 * **$(\alpha, d)$ and $(d, \alpha)$**:
   * Both $d$ and $\alpha$ have $T=0$. Thus, only **$T=0$** transfer is allowed.
   * Antisymmetry requires $s_{particle}+T$ to be odd (for $L=0$). Since $T=0$, the transferred pair must be spin triplet, i.e., **$s_{particle}=1$**.
-  * **Particle Input**: `1+` for transferring $s_{particle}=1, T_{particle}=0$ particle pair
+  * **Particle Input**: $1^+$ for transferring $s_{particle}=1, T_{particle}=0$ particle pair
 
 * **$(^3\text{He}, p)$ and $(p, ^3\text{He})$**:
   * Both particles have $s_{particle}=1/2, T_{particle}=1/2$.
   * Allowed transferred-pair components: **$(s_{particle}=0, T_{particle}=1)$** and **$(s_{particle}=1, T_{particle}=0)$**.
   * **Particle Input**:
-    * `0+` for transferring $s_{particle}=0, T_{particle}=1$ particle pair
-    * `1+` for transferring $s_{particle}=1, T_{particle}=0$ particle pair
+    * $0^+$ for transferring $s_{particle}=0, T_{particle}=1$ particle pair
+    * $1^+$ for transferring $s_{particle}=1, T_{particle}=0$ particle pair
   * *Note: Both components can contribute.*
 
 ### D. Cluster Transfer Reactions
@@ -113,22 +113,22 @@ For the transfer of a neutron-proton pair, the selection rules depend on the pro
 
 An alpha particle is transferred.
 
-* **Particle Input**: `0+`
+* **Particle Input**: $0^+$
 
 ### E. Inelastic Scattering
 
 *Examples:* $(\alpha, \alpha')$, $(p, p')$
 
 * **$(\alpha, \alpha')$**: The alpha particle has spin 0. Since the projectile spin cannot flip, the angular momentum transfer is purely orbital ($\vec{\ell}$). This selectively excites **Natural Parity** resonances ($\pi = (-1)^\ell$) in the compound nucleus.
-* **Particle Input**: `0+`
+* **Particle Input**: $0^+$
 
 * **$(p, p')$**: The proton ($s=1/2$) can undergo spin-flip. It allows both Isoscalar ($T=0$) and Isovector ($T=1$) transitions.
-  * **Particle Input**: `0+` for non spin-flip
-  * **Particle Input**: `1+` for spin-flip
+  * **Particle Input**: $0^+$ for non spin-flip
+  * **Particle Input**: $1^+$ for spin-flip
 
 ### F. Charge Exchange Reactions
 
-*Examples:* $(p, n)$, $(^3\text{He}, t)$, $(^6\text{Li}, ^6\text{He})$
+*Examples:* $(p,n)$, $(^3\text{He}, t)$, $(^6\text{Li},^6\text{He})$
 
 These reactions exchange nucleon type (n ↔ p), governed by the transferred angular momentum ($\Delta L$), spin ($\Delta S$), and total angular momentum ($\Delta J = \Delta L + \Delta S$). Parity change follows $\pi_f = \pi_i (-1)^{\Delta L}$.
 
@@ -143,11 +143,11 @@ These reactions exchange nucleon type (n ↔ p), governed by the transferred ang
 #### Particle Input
 
 * **$(^6\text{Li}, ^6\text{He})$**: Pure Gamow-Teller ($1^+$ $^6\text{Li}$ to $0^+$ $^6\text{He}$ projectile).
-  * **Particle Input**: `1+`
+  * **Particle Input**: $1^+$
 
 * **$(p, n)$ and $(^3\text{He}, t)$**: Mixed (Fermi + Gamow-Teller).
-  * **Particle Input**: `0+` (Fermi)
-  * **Particle Input**: `1+` (Gamow-Teller)
+  * **Particle Input**: $0^+$ (Fermi)
+  * **Particle Input**: $1^+$ (Gamow-Teller)
 
 
 ## 3. Interpreting the Output
@@ -221,20 +221,25 @@ $$\vec{T}_{final} = \vec{T}_{target} + \vec{T}_{particle}$$
 
 *Note: This tool calculates angular momentum ($J^\pi$) only. Isospin selection rules must be applied separately.*
 
-## 5. Summary of Transferred Particle Properties
+
+## 5. Caveats and Limitations
+
+* This utility is a selection-rule filter, not a full reaction-model calculation. The treatment assumes a single dominant transferred-particle configuration and a single dominant orbital angular-momentum transfer $\ell$. In actual nuclear reactions, multistep processes, configuration mixing or isospin mixing in the nuclear wave functions, and competing reaction paths can populate the same final state through more than one $\ell$ value.
+* The utility does not account for finite experimental resolution or level-density effects. Consequently, unresolved doublets or multiplets, ambiguous level placements, and tentative $J^\pi$ assignments can produce apparent inconsistencies with the calculated selection rules.
+
+## 6. Summary of Transferred Particle Properties
 
 | Reaction Mechanism | Common Examples | Physical Process | $s_{particle}$ | $T_{particle}$ |
 | :--- | :--- | :--- | :--- | :--- |
-| **Radiative Capture** | $(p,\gamma), (n,\gamma)$ | Projectile capture | $1/2$ | $1/2$ |
+| Radiative Capture | $(p,\gamma), (n,\gamma)$ | Projectile capture | $1/2$ | $1/2$ |
 | | $(\alpha,\gamma)$ | Projectile capture | $0$ | $0$ |
-| **Inelastic Scattering** | $(\alpha,\alpha')$ | Excitation (Natural Parity) | $0$ | $0$ |
-| | $(p,p')$ | Excitation (non-flip / spin-flip) | $0$ and $1$ | $0$ and $1$ |
-| **One Neutron Transfer** | $(d,p), (p,d), (t,d), (d,t), (\alpha,^3\text{He}), (^3\text{He},\alpha)$ | Transfer of $n$ | $1/2$ | $1/2$ |
-| **One Proton Transfer** | $(d,n), (n,d), (^3\text{He},d), (d,^3\text{He}), (\alpha,t), (t,\alpha)$ | Transfer of $p$ | $1/2$ | $1/2$ |
-| **Two-Nucleon Transfer** | $(p,t), (t,p), (^3\text{He},n)$ | Transfer of $2n$ or $2p$ ($L_{rel}=0$) | $0$ | $1$ |
-| | $(\alpha,d), (d,\alpha)$ | Transfer of $np$ (Deuteron-like) | $1$ | $0$ |
-| | $(^3\text{He},p), (p,^3\text{He})$ | Transfer of np (Mixed) | $0$ and $1$ | $1$ ($s_{particle}=0$) / $0$ ($s_{particle}=1$) |
-| **Cluster Transfer** | $(^6\text{Li},d)$ | Transfer of $\alpha$-cluster | $0$ | $0$ |
-| **Charge Exchange** | $(p,n), (n,p)$ | Fermi / GT | $0$ / $1$ | $0$ / $0,1$ |
-| | $(^3\text{He},t), (t,^3\text{He})$ | Fermi / GT | $0$ / $1$ | $0$ / $0,1$ |
+| Inelastic Scattering | $(\alpha,\alpha')$ | Excitation (natural parity) | $0$ | $0$ |
+| | $(p,p')$ | Excitation (non-flip; spin-flip) | $0$; $1$ | $0$; $1$ |
+| One Neutron Transfer | $(d,p), (p,d), (t,d), (d,t), (\alpha,^3\text{He}), (^3\text{He},\alpha)$ | Transfer of $n$ | $1/2$ | $1/2$ |
+| One Proton Transfer | $(d,n), (n,d), (^3\text{He},d), (d,^3\text{He}), (\alpha,t), (t,\alpha)$ | Transfer of $p$ | $1/2$ | $1/2$ |
+| Two-Nucleon Transfer | $(p,t), (t,p), (^3\text{He},n)$ | Transfer of $2n$ or $2p$ ($L_{rel}=0$) | $0$ | $1$ |
+| | $(\alpha,d), (d,\alpha)$ | Transfer of $np$ (deuteron-like) | $1$ | $0$ |
+| | $(^3\text{He},p), (p,^3\text{He})$ | Transfer of np (mixed) | $0$; $1$ | $1$; $0$ |
+| Cluster Transfer | $(^6\text{Li},d)$ | Transfer of $\alpha$-cluster | $0$ | $0$ |
+| Charge Exchange | $(p,n), (n,p), (^3\text{He},t), (t,^3\text{He})$ | Fermi; GT | $0$; $1$ | $0$; $0,1$ |
 | | $(^6\text{Li},^6\text{He})$ | Pure GT ($1^+ \to 0^+$) | $1$ | $0,1$ |
