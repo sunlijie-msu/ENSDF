@@ -231,7 +231,7 @@ $$\vec{T}_{final} = \vec{T}_{target} + \vec{T}_{particle}$$
 
 | Reaction Mechanism | Common Examples | Physical Process | $s_{particle}$ | $T_{particle}$ |
 | :--- | :--- | :--- | :--- | :--- |
-| Radiative Capture | $(p,\gamma), (n,\gamma)$ | Projectile capture | $1/2$ | $1/2$ |
+| Radiative Capture | $(p,\gamma), (n,\gamma), (p,p),(p,p'\gamma)$:resonances | Projectile capture | $1/2$ | $1/2$ |
 | | $(\alpha,\gamma)$ | Projectile capture | $0$ | $0$ |
 | Inelastic Scattering | $(\alpha,\alpha')$ | Excitation (natural parity) | $0$ | $0$ |
 | | $(p,p')$ | Excitation (non-flip; spin-flip) | $0$; $1$ | $0$; $1$ |
