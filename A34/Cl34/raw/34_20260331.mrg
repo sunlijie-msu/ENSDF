@@ -836,7 +836,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                    35CL(3HE,A)--->T  T     34CL  L 2718      10                                  2        0.07             *** possible JPI=0+,1+,2+,3+,4+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 2721.09   20 2-               1.4 PS    GT                              --- possible JPI=NA: check contradicting data
-                     *new XREF new tags    34CLX L XREF=EFGHIJ(2710*)KM(*)O(2718*)V(2725*)
+                     *new XREF new tags    34CLX L XREF=EFGHIJ(2710)KMO(2718*)V(2725)
                      *new XREF old tags    34CLX L XREF=EFGHIJ(2710*)KM(*)O(2718*)V(2725*)
                      #old XREF in Adopted  34CLX L XREF=EFGHIJ(2710*)KM(*)O(2718*)V(2725*)
                  24MG(12C,PNG)--->E  E     34CL  L 2720.78   24 2-                                                    A   
@@ -1007,9 +1007,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(P,G)--->K  K     34CL cG RI$other: 100 (1977Da02).                                              
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 3334.0    2  1+,2+,3+         48 FS     19                              --- possible JPI=(1+)
-                     *new XREF new tags    34CLX L XREF=HIKMOQ(3330*)R(3360*)TU(3350*)V
-                     *new XREF old tags    34CLX L XREF=HIKMOQ(3330*)R(3360*)TU(3350*)V
-                     #old XREF in Adopted  34CLX L XREF=HIKMOQ(3330*)R(3360*)TU(3350*)V
+                     *new XREF new tags    34CLX L XREF=HIKMOQ(3330)R(3360*)TU(3350*)V
+                     *new XREF old tags    34CLX L XREF=HIKMOQ(3330)R(3360*)TU(3350*)V
+                     #old XREF in Adopted  34CLX L XREF=HIKMOQ(3330)R(3360*)TU(3350*)V
                     32S(3HE,P)--->H  H     34CL  L 3336.4    31                                  2                         *** possible JPI=1+,2+,3+
                    32S(3HE,PG)--->I  I     34CL  L 3330                          80 FS     24                             
                       33S(P,G)--->K  K     34CL  L 3334.0    2                   37 FS     14                             
@@ -2107,11 +2107,11 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                  27AL(12C,ANG)--->F  F     34CL cG $R{-DCO}(D)=1.88 {I26}, POL=-0.1 {I1}.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 4925      4  0:4+                                                       --- possible JPI=NA: check contradicting data
-                     *new XREF new tags    34CLX L XREF=J(4930*)MOT(4939*)U(4970*)V(4970*)
-                     *new XREF old tags    34CLX L XREF=J(4930*)MOT(4939*)U(4970*)V(4970*)
+                     *new XREF new tags    34CLX L XREF=J(4930*)OT(4939*)U(4970*)V(4970*)
+                     *new XREF old tags    34CLX L XREF=J(4930*)OT(4939*)U(4970*)V(4970*)
                      #old XREF in Adopted  34CLX L XREF=J(4930*)OT(4939*)U(4970*)V(4970*)
                       32S(A,D)--->J  J(*)  34CL  L 4930      20                                  0+2,2                     *** possible JPI=1+,2+,3+
-                    33S(3HE,D)--->M  M     34CL  L 4941.9                                        1        0.0060    7 A    *** possible JPI=0-,1-,2-,3-
+
                     34S(3HE,T)--->O  O     34CL  L 4925      4                                                             *** possible JPI=(0,1,2,3,4,5,6,7+)
                    35CL(3HE,A)--->T  T(*)  34CL  L 4939      11                                  2        0.13             *** possible JPI=0+,1+,2+,3+,4+
                    36AR(P,3HE)--->U  U(*)  34CL  L 4970      40                                  (0)                       *** possible JPI=(0+,1+)
@@ -2130,11 +2130,12 @@ Note: 1. possible JPI presented at the end of each record line of each individua
            36AR(D,A),(POL D,A)--->V  V(*)  34CL2cL should be a doublet of T=1 and T=0 (1969Br21).                         
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 4941.9    4  1+               6 FS      LT                              --- possible JPI=(1+)
-                     *new XREF new tags    34CLX L XREF=J(4930*)KOT(4939*)U(4970*)V(4970*)
-                     *new XREF old tags    34CLX L XREF=J(4930*)KOT(4939*)U(4970*)V(4970*)
+                     *new XREF new tags    34CLX L XREF=J(4930*)KMOT(4939*)U(4970*)V(4970*)
+                     *new XREF old tags    34CLX L XREF=J(4930*)KMOT(4939*)U(4970*)V(4970*)
                      #old XREF in Adopted  34CLX L XREF=J(4930*)KOT(4939*)U(4970*)V(4970*)
                       32S(A,D)--->J  J(*)  34CL  L 4930      20                                  0+2,2                     *** possible JPI=1+,2+,3+
                       33S(P,G)--->K  K     34CL  L 4941.9    4                   6 FS      LT                             
+                    33S(3HE,D)--->M  M     34CL  L 4941.9                                        1        0.0060    7 A    *** possible JPI=0-,1-,2-,3-
                     34S(3HE,T)--->O  O     34CL  L 4942      4                                   0                         *** possible JPI=0+,1+
                    35CL(3HE,A)--->T  T(*)  34CL  L 4939      11                                  2        0.13             *** possible JPI=0+,1+,2+,3+,4+
                    36AR(P,3HE)--->U  U(*)  34CL  L 4970      40                                  (0)                       *** possible JPI=(0+,1+)
@@ -2277,8 +2278,8 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(P,G)--->K  K     34CL  G 2837.6      100                                                         *** EG=2837.6     FL=2157.9     JF=2+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 5009      2  (0:4)+                                                     --- possible JPI=(1+)
-                     *new XREF new tags    34CLX L XREF=MOQ(5010*)R(5000*)T(5010*)U(4970*)V(4970*)
-                     *new XREF old tags    34CLX L XREF=MOQ(5010*)R(5000*)T(5010*)U(4970*)V(4970*)
+                     *new XREF new tags    34CLX L XREF=MOQ(5010*)R(5000*)TU(4970*)V(4970*)
+                     *new XREF old tags    34CLX L XREF=MOQ(5010*)R(5000*)TU(4970*)V(4970*)
                      #old XREF in Adopted  34CLX L XREF=MOQ(5010*)R(5000*)TU(4970*)V(4970*)
                     33S(3HE,D)--->M  M     34CL  L 5009      2                                   2,3      0.070     3      *** possible JPI=0+,1,2,3,4,5-
                     34S(3HE,T)--->O  O     34CL  L 5010      4                                                             *** possible JPI=(0,1,2,3,4,5,6,7+)
@@ -2300,14 +2301,14 @@ Note: 1. possible JPI presented at the end of each record line of each individua
            36AR(D,A),(POL D,A)--->V  V(*)  34CL2cL should be a doublet of T=1 and T=0 (1969Br21).                         
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 5028      2                                                             --- possible JPI=NA: check contradicting data
-                     *new XREF new tags    34CLX L XREF=K(?)MQ(5010*)R(5000*)T(5010*)U(4970*)V(4970*)
-                     *new XREF old tags    34CLX L XREF=K(?)MQ(5010*)R(5000*)T(5010*)U(4970*)V(4970*)
+                     *new XREF new tags    34CLX L XREF=K(5020?)MQ(5010*)R(5000*)T(5010*)U(4970*)V(4970*)
+                     *new XREF old tags    34CLX L XREF=K(5020?)MQ(5010*)R(5000*)T(5010*)U(4970*)V(4970*)
                      #old XREF in Adopted  34CLX L XREF=K(5020?)MO(4994*)Q(5010*)V(4970*)
                       33S(P,G)--->K  K(?)  34CL  L 5020                                                                  ?
                     33S(3HE,D)--->M  M     34CL  L 5028      2                                   1        0.0010    1      *** possible JPI=0-,1-,2-,3-
                      35CL(G,N)--->Q  Q(*)  34CL  L 5010                                                                   
                      35CL(P,D)--->R  R(*)  34CL  L 5000      30                                  2        1.70             *** possible JPI=0+,1+,2+,3+,4+
-                   35CL(3HE,A)--->T  T(*)  34CL  L 5010      13                                  2        0.85             *** possible JPI=0+,1+,2+,3+,4+
+
                    36AR(P,3HE)--->U  U(*)  34CL  L 4970      40                                  (0)                       *** possible JPI=(0+,1+)
            36AR(D,A),(POL D,A)--->V  V(*)  34CL  L 4970      40                                                            *** possible JPI=(0-,1,2,3,4,5,6,7+)
                       33S(P,G)--->K  K(?)  34CL cL E$from 1977Da02.
@@ -2440,6 +2441,7 @@ Split
                       33S(P,G)--->K  K(*)  34CL cL $Observed in 2013Fa10 and E{-r}=183 is quoted.                         
                       33S(P,G)--->K  K(*)  34CL cL $|w|g<1.42 |meV (2013Fa10).
 ------------------------------------------------------------------------------------------------------------------------
+Added by human evaluator
  LEVEL************************************ 34CL  L 5338      2                                                             
                     33S(3HE,D)--->M  M     34CL  L 5338      2                                   1+3,2    .0060+.022       *** possible JPI=0+,1,2,3,4+
                     33S(3HE,D)--->M  M     34CL cL S$0.0060 {I5} for L=1, 0.022 {I2} for L=3, 0.200 {I8} for L=2.         
