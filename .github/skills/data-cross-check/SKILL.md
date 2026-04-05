@@ -1,15 +1,15 @@
 ---
-name: numerical-cross-check
-description: "Validates exact consistency between source data files (CSV, Markdown, MRG, ENS) and target ENSDF files after data entry or reconciliation. Checks values, uncertainties, signs, limits, decimal precision, units, provenance comments, strings, and completeness."
+name: data-cross-check
+description: "Validates exact consistency between source data files (CSV, Markdown, MRG, ENS, ADP) and target ENS files after data entry. Checks values, uncertainties, signs, limits, decimal precision, units, provenance comments, strings, and completeness."
 ---
 
-# Numerical Cross-Check
+# Data Cross-Check
 
 Verify 100% consistency between source data and target `.ens` records. Report every mismatch.
 
 Data record and field definitions, column positions, uncertainty notation, structural rules, and spot-check policy: `.github/copilot-instructions.md`.
 
-## Task Configuration
+## Task Customization & Configuration
 
 **User fills this block at task start. Update as needed.**
 
@@ -39,7 +39,7 @@ MATCHING
 ## Workflow
 
 ```
-Cross-Check Progress
+Cross-Check Procedure
 - [ ] 1. Confirm Task Configuration
 - [ ] 2. Carefully parse source and target within scope
 - [ ] 3. Extract the data needed for the task.

@@ -1,37 +1,35 @@
 ---
-name: reconciling-data
+name: data-reconciliation
 description: "Merges, updates, or replaces data in a target ENSDF file using data extracted from a source file (CSV, Markdown table, MRG, ADP, or raw ENS). User specifies per task what to replace, keep, add, merge, or average. Use when synchronizing Adopted files with source data files, updating energies or intensities while preserving other quantities, or reconciling data from multiple sources."
 ---
 
 # Reconciling ENSDF Data
 
-## Task Configuration
+## Task Customization & Configuration
 
-**User fills in this block at the start of each task. Update as needed.**
+> Fill in before starting. Update as needed.
 
-```
-SOURCE:   [path to source file]
-TARGET:   [path to target .ens file]
+### Files
+- Source: `[path to source .ens/.mrg/.adp/.md/.csv file]`
+- Target: `[path to target .ens file]`
 
-MAPPING  (source data → ENSDF data fields in records/comments)
-  [Data A]  →  [record type, field name, comments]
-  [Data B]  →  [record type, field name, comments]
+### Field Mapping *(source → ENSDF)*
+- `[Data A]` → `[record type]` `[field name]`
+- `[Data B]` → `[record type]` `[field name]`
 
-OPERATIONS
-  REPLACE   [field]  with source value   [e.g., G-record RI, DRI from source]
-  KEEP      [field]  from target         [e.g., G-record M, MR, DMR; cG M$ comments]
-  ADD       [field]  from source         [e.g., new G-records absent in target]
-  MERGE     [field]  from both           [e.g., cG RI$ comments quoting both sources]
-  AVERAGE   [field]  across sources      [e.g., weighted average of two RI datasets]
+### Operations
+- **Keep** `[field]` from target (e.g., M, MR, DMR; cG M$ comments)
+- **Replace** `[field]` with source value (e.g., RI, DRI)
+- **Add** `[field]` from source (e.g., new G-records absent in target)
+- **Merge** `[field]` from both (e.g., cG RI$ comments quoting both)
+- **Average** `[field]` across sources (e.g., weighted average of RI)
 
-MATCHING
-  Match L-records by:   [ ] exact E    [ ] E within ±[N] keV
-  Match G-records by:   [ ] exact Eγ   [ ] Eγ within ±[N] keV   [ ] parent L first, then Eγ
+### Matching
+- L-records: `[ ]` exact E  `[ ]` E within ±[N] keV
+- G-records: `[ ]` exact Eγ  `[ ]` Eγ within ±[N] keV  `[ ]` parent L first, then Eγ
 
-SPECIAL HANDLING
-  [ ] [specify any non-standard cases]
-
-```
+### Special Handling
+- `[ ]` [describe non-standard cases]
 
 ## Workflow
 
