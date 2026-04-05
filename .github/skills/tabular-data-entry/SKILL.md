@@ -5,7 +5,7 @@ description: "Performs bulk data entry from CSV or Markdown tables into ENSDF L-
 
 # Tabular Data Entry for ENSDF
 
-## Task Configuration
+## Task Customization & Configuration
 
 **User fills in this block at the start of each task. Update as needed.**
 
