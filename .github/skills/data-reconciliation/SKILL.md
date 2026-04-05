@@ -1,27 +1,29 @@
 ---
 name: data-reconciliation
-description: "Merges, updates, or replaces data in a target ENSDF file using data extracted from a source file (CSV, Markdown table, MRG, ADP, or raw ENS). User specifies per task what to replace, keep, add, merge, or average. Use when synchronizing Adopted files with source data files, updating energies or intensities while preserving other quantities, or reconciling data from multiple sources."
+description: "Reconciles source data into a target ENS file by replacing, keeping, adding, merging, or averaging data records and fields. Use when synchronizing ENS files with source CSV, Markdown, MRG, ADP, or raw ENS data, or when updating energies, intensities, and comments while preserving selected target values."
 ---
 
 # Reconciling ENSDF Data
 
+Data record and field definitions, column positions, uncertainty notation, structural rules, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Task Customization & Configuration
 
-> Fill in before starting. Update as needed.
+> Fill in before starting task. Update as needed.
 
 ### Files
-- Source: `[path to source .ens/.mrg/.adp/.md/.csv file]`
+- Source: `[path to source .mrg/.adp/.ens/.md/.csv file]`
 - Target: `[path to target .ens file]`
 
-### Field Mapping *(source → ENSDF)*
+### Field Mapping *(source → ENS)*
 - `[Data A]` → `[record type]` `[field name]`
 - `[Data B]` → `[record type]` `[field name]`
 
 ### Operations
 - **Keep** `[field]` from target (e.g., M, MR, DMR; cG M$ comments)
-- **Replace** `[field]` with source value (e.g., RI, DRI)
-- **Add** `[field]` from source (e.g., new G-records absent in target)
-- **Merge** `[field]` from both (e.g., cG RI$ comments quoting both)
+- **Replace/Update** `[field]` with source value (e.g., RI, DRI)
+- **Add/Insert** `[field]` from source (e.g., new G-records absent in target)
+- **Merge/Combine** `[field]` from both (e.g., cG RI$ comments quoting both)
 - **Average** `[field]` across sources (e.g., weighted average of RI)
 
 ### Matching
@@ -31,13 +33,12 @@ description: "Merges, updates, or replaces data in a target ENSDF file using dat
 ### Special Handling
 - `[ ]` [describe non-standard cases]
 
+
 ## Workflow
 
-Copy this checklist at task start:
-
 ```
-Reconciling Progress:
-- [ ] 1. Task configuration confirmed
+Reconciling Procedure:
+- [ ] 1. Task Customization & Configuration confirmed
 - [ ] 2. Source data parsed and mapped
 - [ ] 3. Target fields to keep captured
 - [ ] 4. Records matched (log unmatched cases)
@@ -69,13 +70,7 @@ Read the target file and cache every field marked KEEP — exact character-for-c
 
 ### Step 5 — Apply Operations
 
-For each matched record, apply the operations from Task Configuration in this order:
-
-1. **REPLACE** — overwrite target field with source value (left-justify, exact notation)
-2. **KEEP** — restore cached target value (do not touch)
-3. **ADD** — insert new records absent in target (maintain ascending energy order)
-4. **MERGE** — add `cG` or `cL` comment quoting the other-source value
-5. **AVERAGE** — compute weighted average; enter result and uncertainty; add provenance comments
+For each matched record, apply the operations from Task Customization & Configuration
 
 
 ---

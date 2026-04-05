@@ -1,28 +1,27 @@
 ---
 name: data-cross-check
-description: "Validates exact consistency between source data files (CSV, Markdown, MRG, ENS, ADP) and target ENS files after data entry. Checks values, uncertainties, signs, limits, decimal precision, units, provenance comments, strings, and completeness."
+description: "Checks target data in ENS files against source data for exact consistency after data entry. Use when validating target data in ENS files against source data from CSV, Markdown, MRG, ENS, or ADP files, including values, uncertainties, signs, limits, decimal digits, units, provenance comments, strings, XREFs, and completeness."
 ---
 
 # Data Cross-Check
 
-Verify 100% consistency between source data and target `.ens` records. Report every mismatch.
+Verify 100% consistency between source data and target `.ens` data. Report every mismatch.
 
-Data record and field definitions, column positions, uncertainty notation, structural rules, and spot-check policy: `.github/copilot-instructions.md`.
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
 
 ## Task Customization & Configuration
 
-**User fills this block at task start. Update as needed.**
+> Fill in before starting task. Update as needed.
 
-```
-SOURCE:   [path]
-TARGET:   [path]
-SCOPE:    [levels / gammas / comments / XREF]
+### Files
+- Source: `[path to source .mrg/.adp/.ens/.md/.csv file]`
+- Target: `[path to target .ens file]`
 
-MAPPING  (source → ENSDF)
-  [Data A]  -> [record.field]
-  [Data B]  -> [record.field]
+### Field Mapping *(source → ENS)*
+- `[Data A]` → `[record type]` `[field name]`
+- `[Data B]` → `[record type]` `[field name]`
 
-CHECKS
+### Checks
   [ ] value and sign
   [ ] uncertainty and format
   [ ] decimal places and trailing zeros
@@ -31,10 +30,13 @@ CHECKS
   [ ] provenance in cL/cG comments
   [ ] completeness (missing/extra)
 
-MATCHING
-  L-records: [ ] exact E   [ ] E within ±[N] keV
-  G-records: [ ] parent L first, then Eγ   [ ] Eγ within ±[N] keV
-```
+### Matching
+- L-records: `[ ]` exact E  `[ ]` E within ±[N] keV
+- G-records: `[ ]` exact Eγ  `[ ]` Eγ within ±[N] keV  `[ ]` parent L first, then Eγ
+
+### Special Handling
+- `[ ]` [describe non-standard cases]
+
 
 ## Workflow
 
@@ -52,7 +54,7 @@ Cross-Check Procedure
 
 - Never match a gamma by Eγ alone; match parent L-record first.
 - For CSV/Markdown tables, include blank separator columns in the mapping.
-- For near-equal energies, use both level energy and transition energy.
+- For near-equal energies, use both level energy and transition energy for matching.
 
 ## Report Output
 

@@ -104,10 +104,10 @@ For any skill that processes source data into ENSDF records, place a user-fillab
 ~~~markdown
 ## Task Customization & Configuration
 
-> Fill in before starting. Update as needed.
+> Fill in before starting task. Update as needed.
 
 ### Files
-- Source: `[path to source .ens/.mrg/.adp/.md/.csv file]`
+- Source: `[path to source .mrg/.adp/.ens/.md/.csv file]`
 - Target: `[path to target .ens file]`
 
 ### Field Mapping *(source → ENS)*
