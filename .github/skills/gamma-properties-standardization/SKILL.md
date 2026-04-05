@@ -12,6 +12,8 @@ argument-hint: [ENSDF file path]
 
 # ENSDF Gamma Properties Standardization
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Purpose
 
 Extract M, MR, A2/A4/A6, and POL data from raw comments and create properly formatted G-records with standardized `cG` comment lines.

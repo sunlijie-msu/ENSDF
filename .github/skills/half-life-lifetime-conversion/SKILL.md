@@ -10,6 +10,8 @@ argument-hint: "[ENSDF file path]"
 
 # Sync cL T$ Lifetime to L-Record T/DT Fields
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Workflow
 
 1. Extract the adopted `|t` value from the first `|t=`, `|t>`, or `|t<` in the cL T$ comment.

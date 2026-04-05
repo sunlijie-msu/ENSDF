@@ -5,7 +5,7 @@ description: "Reconciles source data into a target ENS file by replacing, keepin
 
 # Reconciling ENSDF Data
 
-Data record and field definitions, column positions, uncertainty notation, structural rules, and spot-check policy: `.github/copilot-instructions.md`.
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
 
 ## Task Customization & Configuration
 

@@ -7,6 +7,8 @@ argument-hint: [ENSDF file]
 
 # ENSDF Flag Expansion (Generalized)
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## 1. Objective
 Systematically expand flags in column 77 or flags in `FLAG=` continuation records into individual `cG` or `cL` comments. The purpose is human review; **redundant comments are acceptable** — always add the new comment, even if a similar comment already exists.
 

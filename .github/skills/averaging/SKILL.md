@@ -1,5 +1,5 @@
 ---
-name: average
+name: averaging
 description: >
   Use this skill when calculating weighted or unweighted averages for ENSDF
   nuclear data using Java_Average.py. Enforces exact transcription of the
@@ -10,6 +10,8 @@ argument-hint: [VALUE1 UNC1 VALUE2 UNC2 ...]
 ---
 
 # ENSDF Averaging
+
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
 
 ## When
 Run `Java_Average.py` any time you need to adopt a value from 2+ measurements across different papers.

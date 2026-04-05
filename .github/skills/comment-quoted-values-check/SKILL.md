@@ -12,6 +12,8 @@ argument-hint: [adopted.ens]
 
 # Comment Quoted Values Cross-Check
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Purpose
 
 Cross-check all quoted values in `cL J$` comments against corresponding L-record and G-record data fields. Detect discrepancies between comment text and data records.

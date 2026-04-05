@@ -12,6 +12,8 @@ argument-hint: [ENSDF file or reaction type]
 
 # Nuclear Reaction Equation Formatting for ENSDF
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Purpose
 
 Add reaction equation comments to transfer reaction datasets.

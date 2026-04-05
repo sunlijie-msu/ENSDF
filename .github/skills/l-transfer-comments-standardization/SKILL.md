@@ -12,6 +12,8 @@ argument-hint: [ENSDF file or level energy]
 
 # ENSDF L-Transfer Comments Standardization
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Purpose
 Standardize L-transfer comments used in J$ lines for clarity and consistency.
 

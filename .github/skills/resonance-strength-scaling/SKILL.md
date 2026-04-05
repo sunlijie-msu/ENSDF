@@ -11,6 +11,8 @@ argument-hint: [REFERENCE FACTOR UNCERTAINTY_PERCENT THRESHOLD_EV UNCERTAINTY_BE
 
 # Resonance Strength Scaling in ENSDF Comment Lines
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Purpose
 
 Scale `|w|g` (ωγ) resonance strength values from a specific NSR reference in `cL` comment lines by a constant factor, then assign relative uncertainties using the ENSDF `{In}` notation.

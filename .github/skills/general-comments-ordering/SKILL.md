@@ -5,6 +5,8 @@ description: "Organizes general comment sections in Adopted Dataset ENSDF files 
 
 # Adopted Dataset Comments Ordering
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Canonical Sequence
 
 Arrange general comments (non-record-specific) at the Adopted Dataset file start in this order:

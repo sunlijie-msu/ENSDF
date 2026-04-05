@@ -10,6 +10,8 @@ description: >
 
 # ENSDF Editorial Review Skill
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Purpose
 
 Provide a rigorous editorial review of ENSDF comment text with a focus on:

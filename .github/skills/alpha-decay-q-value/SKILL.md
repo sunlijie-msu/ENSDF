@@ -9,6 +9,8 @@ description: >
 
 # Alpha Decay Q-Value Calculation and P Record Update
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Purpose
 
 Compute $Q_\alpha$ from the measured alpha energy $E_\alpha$ and populate the Q and DQ fields in the parent P record of each ENSDF alpha-decay dataset.

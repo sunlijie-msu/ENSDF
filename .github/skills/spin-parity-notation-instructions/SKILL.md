@@ -1,5 +1,5 @@
 ---
-name: spin-parity
+name: spin-parity-notation-instructions
 description: >
   Use this skill as a reference guide for ENSDF spin-parity (Jπ) notation
   rules. Covers L-transfer field positioning at column 56, J-π assignment
@@ -10,6 +10,8 @@ argument-hint: [spin-parity expression or L-record line]
 ---
 
 # ENSDF Spin-Parity Interpretation Reference
+
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
 
 ## L-Transfer Field Positioning
 

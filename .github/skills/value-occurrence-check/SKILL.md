@@ -12,6 +12,8 @@ argument-hint: [CSV or table file]
 
 # Value Occurrence Check
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Purpose
 
 Verify that every nuclear level energy appearing multiple times in a gamma-ray transition table has consistent energy, uncertainty, and J-π across all occurrences.

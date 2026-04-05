@@ -12,6 +12,8 @@ argument-hint: [adopted.ens] [individual.ens] [xref-identifier]
 
 # Adopted vs Individual Dataset Comparison
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Purpose
 
 Systematically verify that quantities in Adopted datasets match their source individual reaction datasets. Detect discrepancies between Adopted values and the experimental measurements that inform them.

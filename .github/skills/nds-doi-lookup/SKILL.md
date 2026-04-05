@@ -11,6 +11,8 @@ argument-hint: [space-separated list of mass numbers, e.g. 204 207 208 211 212]
 
 # NDS DOI Lookup Skill
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Critical Rule: NNDC EvaluationIndexServlet Is the ONLY Ground Truth
 
 **MANDATORY FIRST STEP** for any citation lookup or verification task: fetch the NNDC Evaluation Index and inspect the `citation` field.

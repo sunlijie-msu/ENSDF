@@ -12,6 +12,8 @@ argument-hint: [adopted.ens] [add|remove] [dataset-label]
 
 # Update ENSDF Cross-Reference (XREF) Labels
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Task Overview
 
 Update cross-reference labels in ENSDF adopted file when experimental datasets are added or removed, causing existing dataset labels to shift.

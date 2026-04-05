@@ -10,6 +10,8 @@ argument-hint: "[list of lifetimes, uncertainties, NSR keys, and methods]"
 
 # ENSDF Lifetime Comments Standardization
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Purpose
 Extract lifetime data from .mrg raw data files or
 standardize existing T$ (lifetime) comment structure in cL lines of an .ens file.

@@ -11,6 +11,8 @@ argument-hint: [ENSDF file or dataset name]
 
 # ENSDF Comment Cleanup Instructions
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## General cG E,RI Comment Strategy
 
 **Principle:** Establish the most common data source as default in a general comment, then document exceptions individually.

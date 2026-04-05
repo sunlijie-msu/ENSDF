@@ -5,6 +5,8 @@ description: "Performs bulk data entry from CSV or Markdown tables into ENSDF L-
 
 # Tabular Data Entry for ENSDF
 
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+
 ## Task Customization & Configuration
 
 **User fills in this block at the start of each task. Update as needed.**
