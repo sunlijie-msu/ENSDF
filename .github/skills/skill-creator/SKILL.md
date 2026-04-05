@@ -95,38 +95,39 @@ description: "..."   # ≤ 1024 chars; third person; WHAT and WHEN; trigger keyw
 
 ## Common Patterns
 
-### Task Configuration (data-entry and reconciliation skills)
+### Task Customization and Configuration (data-entry and reconciliation skills)
 
-For any skill that processes source data into ENSDF records, place a user-fillable **Task Configuration** block as the **first section** (before the workflow). The user fills it in at the start of every task; workflow steps remain fixed.
+For any skill that processes source data into ENSDF records, place a user-fillable **Task Customization & Configuration** block as the **first section** (before the workflow). The user fills it in at the start of every task; workflow steps remain fixed. Existing skills using this pattern: `tabular-data-entry`, `reconciling-data`.
 
-## Task Configuration
+**Template (copy verbatim as the first section in the new skill):**
 
-**User fills in this block at the start of each task. Update as needed.**
+~~~markdown
+## Task Customization & Configuration
 
-```
-SOURCE:   [path to source file]
-TARGET:   [path to target .ens file]
+> Fill in before starting. Update as needed.
 
-MAPPING  (source data → ENSDF data fields in records/comments)
-  [Data A]  →  [record type, field name, comments]
-  [Data B]  →  [record type, field name, comments]
+### Files
+- Source: `[path to source .ens/.mrg/.adp/.md/.csv file]`
+- Target: `[path to target .ens file]`
 
-OPERATIONS
-  REPLACE   [field]  with source value   [e.g., G-record RI, DRI from source]
-  KEEP      [field]  from target         [e.g., G-record M, MR, DMR; cG M$ comments]
-  ADD       [field]  from source         [e.g., new G-records absent in target]
-  MERGE     [field]  from both           [e.g., cG RI$ comments quoting both sources]
-  AVERAGE   [field]  across sources      [e.g., weighted average of two RI datasets]
+### Field Mapping *(source → ENS)*
+- `[Data A]` → `[record type]` `[field name]`
+- `[Data B]` → `[record type]` `[field name]`
 
-MATCHING
-  Match L-records by:   [ ] exact E    [ ] E within ±[N] keV
-  Match G-records by:   [ ] exact Eγ   [ ] Eγ within ±[N] keV   [ ] parent L first, then Eγ
+### Operations
+- **Keep** `[field]` from target (e.g., M, MR, DMR; cG M$ comments)
+- **Replace/Update** `[field]` with source value (e.g., RI, DRI)
+- **Add/Insert** `[field]` from source (e.g., new G-records absent in target)
+- **Merge/Combine** `[field]` from both (e.g., cG RI$ comments quoting both)
+- **Average** `[field]` across sources (e.g., weighted average of RI)
 
-SPECIAL HANDLING
-  [ ] [specify any non-standard cases]
-```
+### Matching
+- L-records: `[ ]` exact E  `[ ]` E within ±[N] keV
+- G-records: `[ ]` exact Eγ  `[ ]` Eγ within ±[N] keV  `[ ]` parent L first, then Eγ
 
-This block keeps task-specific customization at the top, separate from the fixed workflow steps. Existing skills using this pattern: `tabular-data-entry`, `reconciling-data`.
+### Special Handling
+- `[ ]` [describe non-standard cases]
+~~~
 
 ---
 
@@ -195,6 +196,7 @@ Use v2 API: `api.example.com/v2/messages`
 - **Windows paths** — always use forward slashes: `scripts/helper.py` not `scripts\helper.py`
 - **Too many options** — one default with escape hatch, not a menu
 - **Assumed installs** — list required packages explicitly
+- **Unqualified MCP tool names** — always use `ServerName:tool_name` format; bare names cause "tool not found" errors
 - **Chained references** — one level deep only
 - **Time-sensitive conditionals** — use "Legacy/Current" sections instead
 
@@ -222,5 +224,7 @@ Use v2 API: `api.example.com/v2/messages`
 
 **Testing**
 - [ ] Description triggers on expected user phrases
+- [ ] Build ≥3 real-failure evaluations before writing extensive documentation
 - [ ] Tested with a real task (not synthetic)
+- [ ] Tested with Haiku and Sonnet (Opus may need less guidance than smaller models)
 - [ ] Feedback loops present for quality-critical operations
