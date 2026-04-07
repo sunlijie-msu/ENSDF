@@ -15,18 +15,21 @@
  34CL4c  yields and deduced 44 levels via the {+33}S(p,p'|g) reaction.          
  34CL cL E$E(level)=E{-c.m.}+S(p)({+34}Cl) where S(p)({+34}Cl)=5143.20 {I5}     
  34CL2cL (2021Wa16) and E{-c.m.}=E{-p}(lab)|*m({+33}S)/[m{-p}+m({+33}S)].       
- 34CL3cL E{-p}(lab) is given under comments. 1989Va15 states that the           
- 34CL4cL calibrations provide accurate energies of |DE=|+300 eV near the        
- 34CL5cL calibration points and a maximum error of |DE=|+1.5 keV away from the  
- 34CL6cL calibration points. The calibration points are at E(p)=1.8804 MeV and  
- 34CL7cL 3.2357 MeV. Therefore, the evaluators assign a |DE=0.3 keV for levels  
- 34CL8cL within 100 keV of either calibration point, and a |DE=1.5 keV for other
- 34CL9cL levels.                                                                
+ 34CL3cL E{-p}(lab) is from 1989Va15, unless otherwise noted. 1989Va15 states   
+ 34CL4cL that the calibrations provide accurate energies of |DE=|+300 eV near   
+ 34CL5cL the calibration points and a maximum error of |DE=|+1.5 keV away from  
+ 34CL6cL the calibration points. The calibration points are at E(p)=1.8804 MeV  
+ 34CL7cL and 3.2357 MeV. Therefore, the evaluators assign a |DE=0.3 keV for     
+ 34CL8cL levels within 100 keV of either calibration point, and a |DE=1.5 keV   
+ 34CL9cL for other levels.                                                      
  34CL cL J,T,L$From 1989Va15 multilevel, multichannel R-matrix analysis.        
  34CL2cL 1989Va15 states that typical uncertainties are 10% for laboratory      
  34CL3cL widths of a few keV or smaller, and 20% for the larger widths of tens  
  34CL4cL of keV. Reduced width |g{+2}=|G/2P, where |G is the laboratory width   
  34CL5cL and P is the Coulomb penetrability (1989Va15).                         
+ 34CL cL S$From 1989Va15, unless otherwise noted.                               
+ 34CL cL S(V)$From 1964Va12.                                                    
+ 34CL cL S$LABEL=E{-p}(lab) (keV)                                               
  34CL  L 6321.2    15 2-               1.6 KEV   2     1        1214.0    15    
  34CL cL $E{-p}(lab)=1214.0 {I15} (1989Va15). |g{+2}=320.0.                     
  34CL  L 6369.0    15 2-               1.6 KEV   2     1        1263.3    15    
@@ -34,7 +37,7 @@
  34CL  L 6545.2    15 2-               2.0 KEV   2     1        1444.8    15    
  34CL cL $E{-p}(lab)=1444.8 {I15} (1989Va15). Other: 1445 {I2} (1964Va12).      
  34CL2cL |g{+2}=128.0. (2J+1)|G{-p0}|G{-p1}/|G=0.19 eV (1964Va12).              
- 34CL  L 6632.7    20                                           1535      2     
+ 34CL  L 6632.7    20                                           1535      2 V   
  34CL cL $E{-p}(lab)=1535 {I2} (1964Va12)                                       
  34CL cL $(2J+1)|G{-p0}|G{-p1}/|G=0.15 eV (1964Va12)                            
  34CL  L 6719.5    15 3-               3.0 KEV   3     1        1624.5    15    
@@ -43,7 +46,7 @@
  34CL cL $E{-p}(lab)=1643.0 {I15} (1989Va15). |g{+2}=60.0.                      
  34CL  L 6748.9    15 2-               0.80 KEV  8     1        1654.8    15    
  34CL cL $E{-p}(lab)=1654.8 {I15} (1989Va15). |g{+2}=23.0.                      
- 34CL  L 6778      2                                            1685      2     
+ 34CL  L 6778      2                                            1685      2 V   
  34CL cL $E{-p}(lab)=1685 {I2} (1964Va12). (2J+1)|G{-p0}|G{-p1}/|G=2.3 eV       
  34CL2cL (1964Va12).                                                            
  34CL  L 6807.0    15 1-               1.0 KEV   1     1        1714.7    15    
@@ -69,7 +72,7 @@
  34CL2cL (1964Va12). |g{+2}=6.7.                                                
  34CL  L 7037.79   30 2-               8.0 KEV   8     1        1952.5    3     
  34CL cL $E{-p}(lab)=1952.5 {I3} (1989Va15). |g{+2}=95.0.                       
- 34CL  L 7057.7    20                                           1973      2     
+ 34CL  L 7057.7    20                                           1973      2 V   
  34CL cL $E{-p}(lab)=1973 {I2} (1964Va12). (2J+1)|G{-p0}|G{-p1}/|G=1.4 eV       
  34CL2cL (1964Va12).                                                            
  34CL  L 7080.4    15 (2,3)-                           1        1996.4    15    
@@ -94,10 +97,10 @@
  34CL cL $E{-p}(lab)=2162.1 {I15} (1989Va15). |g{+2}=16.46.                     
  34CL  L 7317.1    15 2-               3.5 KEV   4     1        2240.3    15    
  34CL cL $E{-p}(lab)=2240.3 {I15} (1989Va15). |g{+2}=21.7.                      
- 34CL  L 7321.6    20                                           2245      2     
+ 34CL  L 7321.6    20                                           2245      2 V   
  34CL cL $E{-p}(lab)=2245 {I2} (1964Va12). (2J+1)|G{-p0}|G{-p1}/|G=23 eV        
  34CL2cL (1964Va12).                                                            
- 34CL  L 7336      2                                            2260      2     
+ 34CL  L 7336      2                                            2260      2 V   
  34CL cL $E{-p}(lab)=2260 {I2} (1964Va12). (2J+1)|G{-p0}|G{-p1}/|G=33 eV        
  34CL2cL (1964Va12).                                                            
  34CL  L 7358.5    15 2-               20 KEV    4     1        2283.0    15    
@@ -106,12 +109,12 @@
  34CL cL $E{-p}(lab)=2293.2 {I15} (1989Va15).                                   
  34CL  L 7386.6    15 2-               0.70 KEV  7     1        2312.0    15    
  34CL cL $E{-p}(lab)=2312.0 {I15} (1989Va15). |g{+2}=3.8.                       
- 34CL  L 7408.0    20                                           2334      2     
+ 34CL  L 7408.0    20                                           2334      2 V   
  34CL cL $E{-p}(lab)=2334 {I2} (1964Va12). (2J+1)|G{-p0}|G{-p1}/|G=9 eV         
  34CL2cL (1964Va12).                                                            
  34CL  L 7412.0    15 (1,2)-                           1+3      2338.1    15    
  34CL cL $E{-p}(lab)=2338.1 {I15} (1989Va15).                                   
- 34CL  L 7451.6    20                                           2379      2     
+ 34CL  L 7451.6    20                                           2379      2 V   
  34CL cL $E{-p}(lab)=2379 {I2} (1964Va12). (2J+1)|G{-p0}|G{-p1}/|G=60 eV        
  34CL2cL (1964Va12).                                                            
  34CL  L 7457.6    15 1-               4.0 KEV   4     1        2385.1    15    
@@ -196,13 +199,13 @@
  34CL2cL (1964Va12). |g{+2}=27.0.                                               
  34CL  L 7849.6    15 (3,4)+                           2        2789.1    15    
  34CL cL $E{-p}(lab)=2789.1 {I15} (1989Va15).                                   
- 34CL  L 7859.2    29                                           2799      3     
+ 34CL  L 7859.2    29                                           2799      3 V   
  34CL cL $E{-p}(lab)=2799 {I3} (1964Va12). (2J+1)|G{-p0}|G{-p1}/|G=24 eV        
  34CL2cL (1964Va12).                                                            
- 34CL  L 7883.4    29                                           2824      3     
+ 34CL  L 7883.4    29                                           2824      3 V   
  34CL cL $E{-p}(lab)=2824 {I3} (1964Va12). (2J+1)|G{-p0}|G{-p1}/|G=23 eV        
  34CL2cL (1964Va12).                                                            
- 34CL  L 7897.0    29                                           2838      3     
+ 34CL  L 7897.0    29                                           2838      3 V   
  34CL cL $E{-p}(lab)=2838 {I3} (1964Va12). (2J+1)|G{-p0}|G{-p1}/|G=24 eV        
  34CL2cL (1964Va12).                                                            
  34CL  L 7909.5    15                                           2850.8    15    
@@ -218,7 +221,7 @@
  34CL cL $E{-p}(lab)=2886.6 {I15} (1989Va15). Other: 2883 {I3} (1964Va12).      
  34CL2cL (2J+1)|G{-p0}|G{-p1}/|G=3.6 eV, (2J+1)|G{-p0}|G{-p2}/|G=6 eV           
  34CL3cL (1964Va12).                                                            
- 34CL  L 7953.3    29                                           2896      3     
+ 34CL  L 7953.3    29                                           2896      3 V   
  34CL cL $E{-p}(lab)=2896 {I3} (1964Va12). (2J+1)|G{-p0}|G{-p1}/|G<3.6 eV,      
  34CL2cL (2J+1)|G{-p0}|G{-p2}/|G=3.5 eV (1964Va12).                             
  34CL  L 7967.8    15 1+               0.20 KEV  2     2        2910.9    15    
