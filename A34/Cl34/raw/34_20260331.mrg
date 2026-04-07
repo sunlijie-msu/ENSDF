@@ -1457,9 +1457,10 @@ Note: 1. possible JPI presented at the end of each record line of each individua
 
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 3983.0    3  3-               131 FS    23                              --- possible JPI=(2-): 1822.9g from 5805.9, (1+,2,3+)
-                     *new XREF new tags    34CLX L XREF=KMQ(3980)T
+                     *new XREF new tags    34CLX L XREF=HKMQ(3980)T
                      *new XREF old tags    34CLX L XREF=KMQ(3980)T
                      #old XREF in Adopted  34CLX L XREF=KMQ(3980)T
+                    32S(3HE,P)--->H  H     34CL  L 3982.6    72                                  (0)+3                     *** possible JPI=(0+)
                       33S(P,G)--->K  K     34CL  L 3983.0    3  3                131 FS    28                             
                     33S(3HE,D)--->M  M     34CL  L 3983.4    25                                  3        0.44             *** possible JPI=1-,2-,3-,4-,5-
                      35CL(G,N)--->Q  Q(*)  34CL  L 3980                                                                   
@@ -5019,7 +5020,7 @@ Added by human     36AR(P,3HE)--->U  U(*)  34CL  L 6160      40                 
                       33S(P,G)--->K  K     34CL  G 6930.7      6.8     LT                                                  *** EG=6930.7     FL=0          JF=0+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 6934.84   30 1-               5.0 KEV   5                               --- possible JPI=(0-,1,2,3,4,5,6,7+)
-                     *new XREF new tags    34CLX L XREF=J(6950*)K(*)L
+                     *new XREF new tags    34CLX L XREF=J(6950*)L
                      *new XREF old tags    34CLX L XREF=J(6950*)K(*)L
                      #old XREF in Adopted  34CLX L XREF=J(6950*)K(*)L
                       32S(A,D)--->J  J(*)  34CL  L 6950                                                               K    *** possible JPI=(0-,1,2,3,4,5,6,7+)
@@ -5031,7 +5032,7 @@ Added by human     36AR(P,3HE)--->U  U(*)  34CL  L 6160      40                 
    33S(P,P),(P,P'G):RESONANCES--->L  L     34CL2cL (2J+1)|G{-p0}|G{-p1}/|G=21 eV (1964Va12).                              
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 6977.4    17 (2-,3,4+)                                                  --- possible JPI=(1+,2,3,4+)
-                     *new XREF new tags    34CLX L XREF=J(6950*)KL(*)
+                     *new XREF new tags    34CLX L XREF=J(6950*)K
                      *new XREF old tags    34CLX L XREF=J(6950*)KL(*)
                      #old XREF in Adopted  34CLX L XREF=J(6950*)KL(*)
                       32S(A,D)--->J  J(*)  34CL  L 6950                                                               K    *** possible JPI=(0-,1,2,3,4,5,6,7+)
@@ -5052,7 +5053,7 @@ Added by human     36AR(P,3HE)--->U  U(*)  34CL  L 6160      40                 
                       33S(P,G)--->K  K     34CL  G 6830.3      29.9    30                                             D    *** EG=6830.3     FL=146.4      JF=3+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 6984.8    10                                                            --- possible JPI=(0-,1,2,3,4,5,6,7+)
-                     *new XREF new tags    34CLX L XREF=J(6950*)K(*)L(*)
+                     *new XREF new tags    34CLX L XREF=J(6950*)K
                      *new XREF old tags    34CLX L XREF=J(6950*)K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=J(6950*)K(*)L(*)
                       32S(A,D)--->J  J(*)  34CL  L 6950                                                               K    *** possible JPI=(0-,1,2,3,4,5,6,7+)
@@ -5064,12 +5065,12 @@ Added by human     36AR(P,3HE)--->U  U(*)  34CL  L 6160      40                 
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL2cL (1964Va12). |g{+2}=8.2. (2J+1)|G{-p0}|G{-p1}/|G=1.0 eV; |G=5 keV {I2}  
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL3cL (1964Va12).                                                            
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34CL  L 6986.85      (1-)             0.6 KEV   1                               --- possible JPI=(0-,1,2,3,4,5,6)
-                     *new XREF new tags    34CLX L XREF=J(6950*)KL(*)
+ LEVEL************************************ 34CL  L 6986.85   30  (1-)            0.6 KEV   1                               --- possible JPI=(0-,1,2,3,4,5,6)
+                     *new XREF new tags    34CLX L XREF=J(6950*)KL
                      *new XREF old tags    34CLX L XREF=J(6950*)KL(*)
                      #old XREF in Adopted  34CLX L XREF=J(6950*)KL(*)
                       32S(A,D)--->J  J(*)  34CL  L 6950                                                               K    *** possible JPI=(0-,1,2,3,4,5,6,7+)
-                      33S(P,G)--->K  K     34CL  L 6986.85                                                1900      2     
+                      33S(P,G)--->K  K     34CL  L 6986.9    20                                           1900      2     
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL  L 6986.85   30 1-               0.6 KEV   6     1                        
                       33S(P,G)--->K  K     34CL cL S$component of a triplet (1977Da02).
                       33S(P,G)--->K  K     34CL cL $|w|g=1.7 eV {I10} for the triplet(1977Da02).
@@ -5093,29 +5094,20 @@ Added by human     36AR(P,3HE)--->U  U(*)  34CL  L 6160      40                 
  GAMMA------------------------------------ 34CL  G 6839.711    18.3    20                                                  --- EG=6839.711   FL=146.36     JF=3+
                       33S(P,G)--->K  K     34CL  G 6839.711    18.3    20                                             D    *** EG=6839.711   FL=146.4      JF=3+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34CL  L 6990.7    20                                                            --- possible JPI=(0-,1,2,3,4,5,6,7+)
-                     *new XREF new tags    34CLX L XREF=J(6950*)KL(*)
-                     *new XREF old tags    34CLX L XREF=J(6950*)KL(*)
-                     #old XREF in Adopted  34CLX L XREF=J(6950*)KL(*)
-                      32S(A,D)--->J  J(*)  34CL  L 6950                                                               K    *** possible JPI=(0-,1,2,3,4,5,6,7+)
-                      33S(P,G)--->K  K     34CL  L 6990.7    20                                           1904      2     
-   33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL  L 6991.31   30 1+               0.22 KEV  2     0+2                      
-                      33S(P,G)--->K  K     34CL cL S$component of a triplet (1977Da02).
-   33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL cL $E{-p}(lab)=1904.6 {I3} (1989Va15), possible doublet 1902 {I2}         
-   33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL2cL (1964Va12). |g{+2}=6.7.                                                
+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34CL  L 6992.7    10 1+               0.22 KEV    2                             ---
-                     *new XREF new tags    34CLX L XREF=KL(*)
+ LEVEL************************************ 34CL  L 6991.41    301+               0.22 KEV    2                             ---
+                     *new XREF new tags    34CLX L XREF=KL
                      *new XREF old tags    34CLX L XREF=KL(*)
                      #old XREF in Adopted  34CLX L XREF=KL(*)
-                      33S(P,G)--->K  K     34CL  L 6992.7    10                                           1906      1     
+                      33S(P,G)--->K  K     34CL  L 6992.3     9                                           1906      1     
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL  L 6991.31   30 1+               0.22 KEV  2     0+2                      
                       33S(P,G)--->K  K     34CL cL $|w|g=2.5 eV {I6} (1992Ka39).
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL cL $E{-p}(lab)=1904.6 {I3} (1989Va15), possible doublet 1902 {I2}         
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL2cL (1964Va12). |g{+2}=6.7.                                                
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7018.9    10                                                            --- possible JPI=(0-,1,2,3,4,5,6,7+)
-                     *new XREF new tags    34CLX L XREF=KU(7070*)V(7070*)
+                     *new XREF new tags    34CLX L XREF=K
                      *new XREF old tags    34CLX L XREF=KU(7070*)V(7070*)
                      #old XREF in Adopted  34CLX L XREF=KU(7070*)V(7070*)
                       33S(P,G)--->K  K     34CL  L 7018.9    10                                           1933      1     
@@ -5137,7 +5129,7 @@ Added by human     36AR(P,3HE)--->U  U(*)  34CL  L 6160      40                 
            36AR(D,A),(POL D,A)--->V  V(*)  34CL cL E$likely determined from {+36}Ar(p,{+3}He){+34}Cl data (1969Br21).     
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7051.6    18 (1-,2,3+)                                                  --- possible JPI=(1,2,3+)
-                     *new XREF new tags    34CLX L XREF=KL(*)U(7070*)V(7070*)
+                     *new XREF new tags    34CLX L XREF=KU(7070*)V(7070*)
                      *new XREF old tags    34CLX L XREF=KL(*)U(7070*)V(7070*)
                      #old XREF in Adopted  34CLX L XREF=KL(*)U(7070*)V(7070*)
                       33S(P,G)--->K  K     34CL  L 7051.6    18                                           1966.7    18    
@@ -5164,7 +5156,7 @@ Added by human     36AR(P,3HE)--->U  U(*)  34CL  L 6160      40                 
                       33S(P,G)--->K  K     34CL  G 6589.7      100     10                                             D    *** EG=6589.7     FL=461.2      JF=1+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7059.04   30 (2-,3+)                                                    --- possible JPI=(1+,2,3+)
-                     *new XREF new tags    34CLX L XREF=KL(*)U(7070*)V(7070*)
+                     *new XREF new tags    34CLX L XREF=KLU(7070*)V(7070*)
                      *new XREF old tags    34CLX L XREF=KL(*)U(7070*)V(7070*)
                      #old XREF in Adopted  34CLX L XREF=KL(*)U(7070*)V(7070*)
                       33S(P,G)--->K  K     34CL  L 7059.04   30 1,2                                       1974.4    3     
@@ -5237,7 +5229,7 @@ Added by human     36AR(P,3HE)--->U  U(*)  34CL  L 6160      40                 
                       33S(P,G)--->K  K     34CL  G 7058.25     0.35    LT                                                  *** EG=7058.25    FL=0          JF=0+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7061.6    10                                                            --- possible JPI=(0-,1,2,3,4,5,6,7+)
-                     *new XREF new tags    34CLX L XREF=KL(*)U(7070*)V(7070*)
+                     *new XREF new tags    34CLX L XREF=KU(7070*)V(7070*)
                      *new XREF old tags    34CLX L XREF=KL(*)U(7070*)V(7070*)
                      #old XREF in Adopted  34CLX L XREF=KL(*)U(7070*)V(7070*)
                       33S(P,G)--->K  K     34CL  L 7061.6    10                                           1977      1     
