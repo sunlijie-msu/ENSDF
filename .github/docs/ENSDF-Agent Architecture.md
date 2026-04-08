@@ -1,13 +1,13 @@
-FRIBND AI Agent Architecture
+ENSDF-Agent Architecture
 
-**Context Engineering**
+**Harness Engineering**
 *   **Custom Instructions:** Rules, Standards, Conventions, Guidelines, Guardrails.
 *   **Custom Agents:** Persona, Role, Behavior, Tools.
 *   **Subagents:** Handoffs, Guided Sequential Workflows.
 *   **Reusable Prompts:** Commands, Specific Tasks, Standardized Workflows.
 *   **Agent Skills:** Portable and Interoperable Capabilities across Agents, Scripts, Templates, Examples, Reference Docs, Dynamic Loading Resources.
 *   **Agent Hooks:** Deterministic Pre/Post-Action Commands.
-*   **Agent Plugins:** To be developed.
+*   **Agent Plugins:** Prepackaged Bundles of Customizations.
 
 **Semantic Structuring**
 (Role Assignment & Tag Wrapping) organizes the context across four primary types: System Messages, User Messages, Assistant Messages, and Tool Messages.
@@ -36,7 +36,7 @@ This framework ensures clear communication between the user, the AI, and the too
     *   Tool Calls (Acting)
 
 *   **Tool Message:**
-    *   Results of Tool Calls (e.g., Data in 80-col ENS diles)
+    *   Results of Tool Calls (e.g., Data in ENS files)
 
 **Structured Message Assembly Pipeline**
 1.  File Discovery

@@ -15,7 +15,7 @@ For other customization file types (.instructions.md, .prompt.md, .agent.md, hoo
 
 ## Project Rule: Reference, Don't Repeat
 
-> **If a rule, standard, or convention already exists in `.github/copilot-instructions.md` or `.github/agents/FRIBND.agent.md`, reference the relevant section — do NOT copy or paraphrase it into SKILL.md.**
+> **If a rule, standard, or convention already exists in `.github/copilot-instructions.md` or `.github/agents/ENSDF-Agent.agent.md`, reference the relevant section — do NOT copy or paraphrase it into SKILL.md.**
 
 **Every ENSDF skill body must begin with this reference line (right after the `#` heading):**
 
@@ -43,7 +43,7 @@ This avoids stale duplicates and preserves the single source of truth in the ins
 SKILL.md shares the context window with conversation history, system prompts, and all loaded skills.
 
 - "Does Claude already know this?" → Remove it.
-- "Is this already in `.github/copilot-instructions.md` or `.github/agents/FRIBND.agent.md`?" → Reference it.
+- "Is this already in `.github/copilot-instructions.md` or `.github/agents/ENSDF-Agent.agent.md`?" → Reference it.
 - Body under 100 lines.
 
 **Bad** (~150 tokens — explains what Claude already knows):
@@ -213,7 +213,7 @@ Use v2 API: `api.example.com/v2/messages`
 - [ ] `description`: third person, WHAT + WHEN, trigger keywords, colons quoted
 
 **Content**
-- [ ] No rules already in `copilot-instructions.md` or `FRIBND.agent.md` — referenced instead
+- [ ] No rules already in `copilot-instructions.md` or `ENSDF-Agent.agent.md` — referenced instead
 - [ ] Every line justifies its token cost; nothing Claude already knows
 - [ ] One default per task; alternatives only for genuine edge cases
 - [ ] Consistent terminology (one term per concept)

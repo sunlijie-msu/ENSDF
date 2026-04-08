@@ -118,7 +118,7 @@ Use `replace_string_in_file` or `multi_replace_string_in_file` with 3-line conte
 
 ### Step 7: Validate
 
-Since this is a **comment-only** task, skip ruler/column validation per FRIBND.agent.md.
+Since this is a **comment-only** task, skip ruler/column validation per ENSDF-Agent.agent.md.
 
 Run verification:
 - Count all target lines matches expected total

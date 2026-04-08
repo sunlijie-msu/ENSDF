@@ -40,7 +40,7 @@ This repository contains the datasets being evaluated by the FRIB Nuclear Data G
 ├── A60/[Element]60/        # A=60 mass chain (13 nuclides, planning phase)
 ├── XUNDL/                  # Experimental Unevaluated Nuclear Data List (Git submodule)
 ├── .github/                # AI-Native Development Infrastructure
-│   ├── agents/             # Custom Agents (FRIBND.agent.md)
+│   ├── agents/             # Custom Agents (ENSDF-Agent.agent.md)
 │   ├── docs/               # Context Engineering (Theory & Manuals)
 │   ├── prompts/            # Agentic Workflows (.prompt.md)
 │   ├── scripts/            # Tooling Infrastructure (Python validators)
@@ -134,7 +134,7 @@ Overview of mass-chain evaluation progress across four baseline evaluations (201
 
 ## AI-Enhanced Workflow Infrastructure
 
-### FRIBND AI Agent
+### ENSDF-Agent
 
 **Overview**: The first AI Agent designed for ENSDF 80-column formatting and nuclear data evaluation, developed and refined through daily evaluation tasks at the FRIB Nuclear Data Group.
 

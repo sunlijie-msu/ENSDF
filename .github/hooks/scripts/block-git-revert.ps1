@@ -1,6 +1,6 @@
-# ENSDF FRIBND Agent Hook: Block git restore/checkout for error recovery
+# ENSDF-Agent Hook: Block git restore/checkout for error recovery
 # -----------------------------------------------------------------------
-# Enforces the Error Recovery Protocol in FRIBND.agent.md:
+# Enforces the Error Recovery Protocol in ENSDF-Agent.agent.md:
 #   "Do NOT use 'git restore' or 'git checkout' to fix mistakes."
 #
 # Hook event : PreToolUse
@@ -57,9 +57,9 @@ if (-not $is_blocked) { exit 0 }
 
 # --- Build denial response ---
 $reason = @(
-    'BLOCKED by FRIBND security hook.',
+    'BLOCKED by ENSDF-Agent security hook.',
     '',
-    'From FRIBND.agent.md (Error Recovery Protocol — Mandatory):',
+    'From ENSDF-Agent.agent.md (Error Recovery Protocol — Mandatory):',
     '  "Nuclear data tasks require high-precision work, not typical',
     '  software development tasks. Do NOT use `git restore` or',
     '  `git checkout` to fix mistakes. You must identify and fix errors',

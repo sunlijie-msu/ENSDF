@@ -6,7 +6,7 @@ Successfully added resonance strength (|w|g) data from the 1983Wa27 publication 
 ## COMPLIANCE CHECKLIST
 
 ### ✅ Precondition Requirements
-- [x] Read `.github\agents\FRIBND.agent.md` thoroughly (100+ mandatory requirements)
+- [x] Read `.github\agents\ENSDF-Agent.agent.md` thoroughly (100+ mandatory requirements)
 - [x] Read `.github\copilot-instructions.md` thoroughly (160+ mandatory rules)
 - [x] Understood ENSDF 80-column fixed format
 - [x] Understood {In} uncertainty notation for comment lines

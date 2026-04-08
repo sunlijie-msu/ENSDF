@@ -5,10 +5,10 @@ import subprocess
 import sys
 import difflib
 
-# ENSDF FRIBND Agent Hook: Validate .ens files after edits
+# ENSDF-Agent Hook: Validate .ens files after edits
 # --------------------------------------------------------
 # PostToolUse event — runs ensdf_1line_ruler.py on any .ens file that was
-# just created or edited by the FRIBND agent.
+# just created or edited by ENSDF-Agent.
 #
 # Key features:
 #   - Handles all VS Code file-editing tool input shapes
@@ -16,7 +16,7 @@ import difflib
 #      apply_patch, edit/editFiles)
 #   - Validates ALL .ens files touched by a single tool call (multi-file)
 #   - Uses hook-provided cwd for robust script path resolution
-#   - Skips validation for comment-only edits (per FRIBND.agent.md)
+#   - Skips validation for comment-only edits (per ENSDF-Agent.agent.md)
 #   - Returns Sacred Workflow guidance on failure
 #
 # Hook event : PostToolUse
@@ -159,7 +159,7 @@ def is_noncomment_record(line):
 def comment_only_edit(payload):
     """Return True if ALL changed non-blank ENSDF records are comment (cL/cG) lines.
 
-    Per FRIBND.agent.md: 'Skip ruler, column validation, and gamma ordering
+    Per ENSDF-Agent.agent.md: 'Skip ruler, column validation, and gamma ordering
     checks only if task is purely editing comments.'
     """
     changed_lines = extract_all_changed_lines(payload)
@@ -204,7 +204,7 @@ def main():
         emit({})
         return
 
-    # Per FRIBND.agent.md: skip validation for comment-only edits
+    # Per ENSDF-Agent.agent.md: skip validation for comment-only edits
     if comment_only_edit(payload):
         emit({})
         return
@@ -231,7 +231,7 @@ def main():
         "decision": "block",
         "reason": (
             "ENSDF 80-column validation failed. Fix the data-record edit before continuing.\n\n"
-            "Sacred Workflow (FRIBND.agent.md — MANDATORY):\n"
+            "Sacred Workflow (ENSDF-Agent.agent.md — MANDATORY):\n"
             "  EDIT -> VALIDATE -> CONFIRM -> REPEAT\n\n"
             "Required steps:\n"
             "  1. Identify the misaligned field from the error output below.\n"

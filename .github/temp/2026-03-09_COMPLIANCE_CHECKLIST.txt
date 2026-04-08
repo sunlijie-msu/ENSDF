@@ -1,5 +1,5 @@
 ================================================================================
-              FRIBND AGENT COMPLIANCE CHECKLIST
+              ENSDF-Agent COMPLIANCE CHECKLIST
                    Task: DRI Verification
                    Date: 2026-03-09
 ================================================================================
@@ -7,8 +7,8 @@
 INSTRUCTION COMPLIANCE VERIFICATION
 ================================================================================
 
-[✓] 1. FRIBND AGENT FILE READING (MANDATORY ZERO TOLERANCE)
-   Requirement: Read both FRIBND.agent.md and copilot-instructions.md 
+[✓] 1. ENSDF-Agent FILE READING (MANDATORY ZERO TOLERANCE)
+   Requirement: Read both ENSDF-Agent.agent.md and copilot-instructions.md 
                 thoroughly from start to end before any action
    Action taken: Read both files in full
    Verification: Confirmed sections on:
@@ -152,7 +152,7 @@ VERIFICATION SUMMARY TABLE
 TOOLS USED
 ================================================================================
 
-[✓] read_file               - Read FRIBND.agent.md, copilot-instructions.md,
+[✓] read_file               - Read ENSDF-Agent.agent.md, copilot-instructions.md,
                               1977DA02.ens (lines 155-600)
 [✓] create_file            - Create verification scripts in .github\temp
 [✓] run_in_terminal        - Execute Python validators
@@ -165,7 +165,7 @@ TOOLS USED
 FINAL VERIFICATION STATEMENT
 ================================================================================
 
-I, Claude Haiku 4.5 (FRIBND Agent), have completed a comprehensive
+I, Claude Haiku 4.5 (ENSDF-Agent), have completed a comprehensive
 verification of all DRI values added by GPT 5.4 to the unbound block
 of 1977DA02.ens (34CL L 6134 - L 7079).
 
@@ -178,7 +178,7 @@ FINDINGS:
 
 COMPLIANCE STATUS: ✓✓✓ FULL COMPLIANCE ✓✓✓
 
-All 10 mandatory requirements in FRIBND.agent.md have been followed.
+All 10 mandatory requirements in ENSDF-Agent.agent.md have been followed.
 All 6 acceptance criteria in the compliance checklist have been verified.
 All data is ready for user review and acceptance.
 
