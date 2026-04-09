@@ -20,13 +20,14 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 ### Field Mapping *(source → ENS)*
 - `[Data A]` → `[record type]` `[field name]`
 - `[Data B]` → `[record type]` `[field name]`
+- `[Data C]` → `[record type]` `[comment]`
 
 ### Checks
   [ ] value and sign
   [ ] uncertainty and format
   [ ] decimal places and trailing zeros
   [ ] limits / qualifiers (GT, LT, ?, S)
-  [ ] XREF strings character-for-character (asterisk * is semantically significant)
+  [ ] XREF strings character-for-character (asterisk * is semantically significant) if applicable
   [ ] provenance in cL/cG comments
   [ ] completeness (missing/extra)
 
@@ -35,8 +36,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 - G-records: `[ ]` exact Eγ  `[ ]` Eγ within ±[N] keV  `[ ]` parent L first, then Eγ
 
 ### Special Handling
-- `[ ]` [describe non-standard cases]
-
+  [ ] [describe non-standard cases]
 
 ## Workflow
 
@@ -45,7 +45,7 @@ Cross-Check Procedure
 - [ ] 1. Confirm Task Configuration
 - [ ] 2. Carefully parse source and target within scope
 - [ ] 3. Extract the data needed for the task.
-- [ ] 4. Carefully compare mapped data character-for-character
+- [ ] 4. For ≥20 records: write a script to regenerate all expected ENSDF records from source, compare line-by-line against target, and report mismatches. For <20 records: compare character-by-character manually.
 - [ ] 5. Run reproducible 15% random spot-check (copilot-instructions.md § 5)
 - [ ] 6. Report all mismatches with locations
 ```
@@ -55,6 +55,7 @@ Cross-Check Procedure
 - Never match a gamma by Eγ alone; match parent L-record first.
 - For CSV/Markdown tables, include blank separator columns in the mapping.
 - For near-equal energies, use both level energy and transition energy for matching.
+- Script-based regenerate-then-compare is preferred for ≥20 records; it catches format mismatches (sign, trailing zero, `{I}` precision) that manual comparison misses.
 
 ## Report Output
 

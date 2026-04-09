@@ -1,6 +1,6 @@
 ---
 name: tabular-data-entry
-description: "Performs bulk data entry from CSV or Markdown tables into ENSDF L-records and G-records. Enforces bidirectional column mapping,  and mandatory 15% spot-check validation. Use when transferring ≥10 numeric data points from a paper table or CSV file into an ENSDF dataset file."
+description: "Performs bulk data entry from CSV or Markdown tables into ENSDF dataset L-records and G-records. Enforces bidirectional column mapping and mandatory 15% spot-check validation. Use when transferring ≥10 numeric data points from CSV or Markdown tables into an ENSDF dataset file."
 ---
 
 # Tabular Data Entry for ENSDF
@@ -16,22 +16,24 @@ SOURCE:   [path to CSV or Markdown file]
 TARGET:   [path to .ens file]
 
 COLUMN MAPPING  (source column → ENSDF field)
-  [Column A]  →  L-record E    (level energy, keV, cols 10–19)
-  [Column B]  →  G-record E    (gamma energy, computed Ei − Ef or direct)
-  [Column C]  →  G-record RI   (relative photon intensity, cols 23–29)
-  [Column D]  →  G-record DRI  (uncertainty in RI, cols 30–31)
+  [Column A]  →  L-record E    (level energy, keV)
+  [Column B]  →  L-record J    (spin parity)
+  [Column C]  →  G-record E    (gamma energy, computed or direct from source)
+  [Column D]  →  G-record RI   (relative gamma intensity)
+  [Column E]  →  G-record DRI  (uncertainty of RI)
   [...]       →  [field]       [description]
 
 OPERATIONS
-  [ ] Unit conversion:  [e.g., MeV × 1000 → keV]
-  [ ] Eγ calculation:   Eγ = Ei − Ef
-  [ ] Other:            [describe]
+  [ ] Unit conversion:  [e.g., MeV × 1000 → keV] if needed
+  [ ] Eγ calculation:   Eγ = Ei − Ef if needed
+  [ ] ΔEγ assumption:  [Uncertainty of Eγ = 0.5 keV for all transitions.]
 
 SPECIAL HANDLING
-  [ ] "Other Ef" column   Ef(Iγ) format — see § Other-Ef Column
+  [ ] "Other Ef" column   Ef(Iγ) format if needed
   [ ] Limit markers       < or > in RI cells → GT/LT in DRI field
-  [ ] DCO ratios          → cG comments only, not data fields
-  [ ] Mixed-format cells  [e.g., "35±1" — describe parsing]
+  [ ] DCO or ADO ratios → cG comments only, not data fields
+  [ ] POL values → cG comments only, positive needs + and negative needs - signs
+  [ ] Other:              [describe]
 ```
 
 ## Workflow
