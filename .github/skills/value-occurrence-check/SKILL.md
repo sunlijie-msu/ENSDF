@@ -39,10 +39,11 @@ Follow the bidirectional column mapping protocol from `copilot-instructions.md` 
 
 For every unique level energy in the table:
 
-1. Collect all rows where it appears as Ei or Ef
-2. Compare energy value character-for-character across occurrences
-3. Compare uncertainty character-for-character
-4. Compare J-π character-for-character
+1. Collect all rows where it appears as Ei or Ef (initial) or derived final (Ei − Eγ)
+2. For row-wise transition tables: Ef = Ei − Eγ may not exactly match canonical Ei due to rounding. Match derived Ef to canonical level with same J-π using nearest-energy rule (tolerance ≤1.0 keV)
+3. Compare energy value character-for-character across occurrences
+4. Compare uncertainty character-for-character
+5. Compare J-π character-for-character
 
 ### Step 3: Report Inconsistencies
 
@@ -63,10 +64,16 @@ LEVEL: 1175.3 keV
 
 ## Data Fidelity
 
-Preserve every decimal place exactly — do not round, omit, alter, or add digits. 10.0 remains 10.0, not 10 or 10.00. See `copilot-instructions.md` Section 4 for numerical exactness rules.
+Preserve every decimal place exactly — do not round, omit, alter, or add digits. 10.0 remains 10.0, not 10 or 10.00. For energy matching: allow ≤1.0 keV tolerance when (Ei − Eγ) ≠ canonical Ei due to measurement precision. See `copilot-instructions.md` Section 4 for numerical exactness rules.
+
+
+## Spot-Check Protocol
+
+Use reproducible random sampling: seed (e.g., 12520260409), sample size ≥15% of rows, verify energy-matching residuals and J-π consistency on each sample.
 
 ## Gotchas
 
-- Blank cells are the primary cause of misaligned column mapping — count them meticulously
-- AI models frequently fail at lower-right table corners — apply extra scrutiny there
-- Forward-only counting leads to off-by-one errors — always verify bidirectionally
+- Blank cells and non-data rows cause misalignment — exclude and count meticulously
+- AI models frequently fail at table corners — apply extra scrutiny
+- Energy residuals from rounding are expected; focus on J-π consistency
+- Terminal (non-depopulated) levels do not indicate errors
