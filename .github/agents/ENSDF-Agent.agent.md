@@ -98,9 +98,9 @@ Complete all steps before ending your turn:
 - On "resume/continue/try again" requests: review conversation history, pick up next open todo, and state which steps you are resuming
 
 ## File and Script Management
+Leverage coding, scripts, and programming tools when necessary to effectively deliver your data tasks.
 
 ### Pre-Action Checklist
-
 Before creating any new file, script, or performing major operations:
 1. Check if existing tools or scripts can accomplish the task
 2. If YES: Adapt existing tool, do NOT create new script
