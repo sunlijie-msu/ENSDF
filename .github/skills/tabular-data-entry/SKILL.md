@@ -17,11 +17,13 @@ TARGET:   [path to .ens file]
 
 COLUMN MAPPING  (source column → ENSDF field)
   [Column A]  →  L-record E    (level energy, keV)
-  [Column B]  →  L-record J    (spin parity)
-  [Column C]  →  G-record E    (gamma energy, computed or direct from source)
-  [Column D]  →  G-record RI   (relative gamma intensity)
-  [Column E]  →  G-record DRI  (uncertainty of RI)
-  [...]       →  [field]       [description]
+  [Column B]  →  L-record DE   (energy uncertainty)
+  [Column C]  →  L-record J    (spin parity)
+  [Column D]  →  L-record S    (spectroscopic factor)
+  [Column E]  →  G-record E    (gamma energy, keV)
+  [Column F]  →  G-record DE   (gamma energy uncertainty)
+  [Column G]  →  G-record RI   (gamma intensity; Eγ = Ei − Ef)
+  [...]       →  [field]
 
 OPERATIONS
   [ ] Unit conversion:  [e.g., MeV × 1000 → keV] if needed
@@ -36,38 +38,17 @@ SPECIAL HANDLING
   [ ] Other:              [describe]
 ```
 
-## Workflow
+## Standard Operating Procedure
 
-Copy this checklist at task start:
-
-```
-Data Entry Progress:
-- [ ] 1. Task configuration confirmed
-- [ ] 2. Explicit column map built (all columns, including blanks)
-- [ ] 3. Bidirectional positional check passed (forward + backward, two endpoints)
-- [ ] 4. L-records and G-records entered, ascending energy order maintained. column_calibrate.py — exit code 0. check_gamma_ordering.py — exit code 0
-- [ ] 5. 15% spot-check passed (seed and sample size reported)
+- [ ] 1. Column map confirmed (all columns enumerated, including blanks)
+- [ ] 2. Bidirectional positional check: forward (header→data) and backward (data→header)
+- [ ] 3. Data entry: generate all new records with Python functions (preferred); assert `len(record) == 80` for each
+- [ ] 4. Records entered in ascending energy order in  `multi_replace_string_in_file` call
+- [ ] 4. `column_calibrate.py` — exit code 0; `check_gamma_ordering.py` — exit code 0
+- [ ] 5. 15% spot-check passed (seed and sample size documented)
 - [ ] 6. Report issued
-```
 
-### Confirm Task Configuration
-
-Resolve any ambiguity with one focused question. Do not proceed with an incomplete or uncertain column map.
-
-### Build the Explicit Column Map
-
-Enumerate ALL columns — including blank separator columns — and assign a position number:
-
-```
-Pos | Source Header  | Content            | ENSDF target
-----|----------------|--------------------|------------------------------
- 1  | Ei (keV)       | Level energy       | L-record E (cols 10–19)
- 2  | (blank)        | separator          | skip
- 3  | Ef = 0         | Iγ to g.s.         | G-record RI (Eγ = Ei − 0)
- 4  | Ef = 847 keV   | Iγ to 847-keV lvl  | G-record RI (Eγ = Ei − 847)
-```
-
-**CRITICAL:** Each blank column is a positional placeholder. Miscounting one shifts all subsequent columns.
+**Column map rule:** Enumerate ALL columns including blank separators — each blank is a positional placeholder; miscounting one shifts all subsequent columns.
 
 ### Bidirectional Positional Check
 
@@ -87,3 +68,5 @@ Before entering any data, verify the column map in both directions:
 
 ### Random Spot Check
 Full protocol: `copilot-instructions.md` § 5.
+
+---

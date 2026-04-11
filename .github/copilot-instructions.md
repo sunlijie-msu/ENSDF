@@ -150,7 +150,7 @@ Example:
 | E | 10–19 | Level energy. |
 | DE | 20–21 | Energy uncertainty. |
 | Space | 22 | Readability space. |
-| J | 23–39 | Spin-parity (starts at col 23). |
+| J | 23–39 | Spin-parity. |
 | T | 40–49 | Half-life with units (e.g., MEV, FS, PS, S, H, D). |
 | DT | 50–55 | Half-life uncertainty. |
 | L | 56–64 | Angular momentum transfer. |
@@ -159,6 +159,9 @@ Example:
 | C | 77 | Comment flag. |
 | MS | 78–79 | Metastable state (isomer), denoted by 'M '. |
 | Q | 80 | '?' for uncertain/questionable; 'S' for assumed but not observed. |
+
+
+For multiple J-π values separated by commas, no spaces after commas.
 
 **CRITICAL: Comment Line Association**
 - `cL` comment lines apply **only** to the immediately preceding L-record.
