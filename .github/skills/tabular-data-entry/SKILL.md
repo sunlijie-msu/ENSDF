@@ -38,17 +38,15 @@ SPECIAL HANDLING
   [ ] Other:              [describe]
 ```
 
-## Standard Operating Procedure
+## Recommended Operating Procedures
 
-- [ ] 1. Column map confirmed (all columns enumerated, including blanks)
-- [ ] 2. Bidirectional positional check: forward (header→data) and backward (data→header)
-- [ ] 3. Data entry: generate all new records with Python functions (preferred); assert `len(record) == 80` for each
-- [ ] 4. Records entered in ascending energy order in  `multi_replace_string_in_file` call
-- [ ] 4. `column_calibrate.py` — exit code 0; `check_gamma_ordering.py` — exit code 0
-- [ ] 5. 15% spot-check passed (seed and sample size documented)
-- [ ] 6. Report issued
-
-**Column map rule:** Enumerate ALL columns including blank separators — each blank is a positional placeholder; miscounting one shifts all subsequent columns.
+1. [ ] **Map:** Enumerate all columns (including blanks) to define exact source-to-field mapping.
+2. [ ] **Extract:** Extract required data via codes or scripts; verify numeric exactness.
+3. [ ] **Cross-Check:** Perform bidirectional positional check (forward: header→data; backward: data→header).
+4. [ ] **Apply:** Apply edits to ensdf file, ensuring no misalignment of fields.
+5. [ ] **Validate:** Confirm `column_calibrate.py` and `check_gamma_ordering.py` return exit code 0.
+6. [ ] **Spot-Check:** Perform 15% random sample validation; trace each entry to source (value, uncertainty, position).
+7. [ ] **Report:** Issue final compliance report with seed and verification results.
 
 ### Bidirectional Positional Check
 
@@ -67,6 +65,6 @@ Before entering any data, verify the column map in both directions:
 
 
 ### Random Spot Check
-Full protocol: `copilot-instructions.md` § 5.
+Trace entries to source: verify value, uncertainty, row, column, header, and units. (Protocol: `copilot-instructions.md` § 5)
 
 ---

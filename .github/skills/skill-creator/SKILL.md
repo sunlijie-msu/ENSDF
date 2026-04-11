@@ -21,17 +21,6 @@ For other customization file types (.instructions.md, .prompt.md, .agent.md, hoo
 
 > ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
 
-**Bad** — duplicates existing rules:
-```markdown
-## Uncertainty notation
-Use {In} for symmetric uncertainties, {I+n-m} for asymmetric...
-```
-
-**Good** — points to the authoritative source:
-```markdown
-Follow uncertainty notation rules in `.github/copilot-instructions.md` § "ENSDF Uncertainty Notation".
-```
-
 This avoids stale duplicates and preserves the single source of truth in the instruction files.
 
 ---
@@ -44,19 +33,8 @@ SKILL.md shares the context window with conversation history, system prompts, an
 
 - "Does Claude already know this?" → Remove it.
 - "Is this already in `.github/copilot-instructions.md` or `.github/agents/ENSDF-Agent.agent.md`?" → Reference it.
-- Body under 100 lines.
+- Body under 90 lines.
 
-**Bad** (~150 tokens — explains what Claude already knows):
-```
-PDF files are common. To extract text you need a library. There are many options...
-```
-
-**Good** (~30 tokens):
-```python
-import pdfplumber
-with pdfplumber.open("file.pdf") as pdf:
-    text = pdf.pages[0].extract_text()
-```
 
 ### 2. Set Appropriate Freedom
 
@@ -77,8 +55,6 @@ skill-name/
 ```
 
 - References must be **one level deep** from SKILL.md. Never chain: `SKILL.md → a.md → b.md`.
-- Reference files > 100 lines need a table of contents.
-- All paths use **forward slashes**.
 
 ---
 
@@ -135,63 +111,8 @@ For any skill that processes source data into ENSDF records, place a user-fillab
 
 ---
 
-### Feedback Loop (quality-critical operations)
+### Recommended Operating Procedures
 
-```markdown
-1. Make edits
-2. Run: `python scripts/validate.py`
-3. Fix errors and return to step 2
-4. Proceed only when validation passes
-```
-
-### Progress Checklist (multi-step workflows)
-
-```
-Task Progress:
-- [ ] Step 1: Analyze input  (run analyze.py)
-- [ ] Step 2: Create mapping (edit fields.json)
-- [ ] Step 3: Validate       (run validate.py)
-- [ ] Step 4: Execute        (run apply.py)
-```
-
-### Template Pattern
-
-For strict output format: use `"ALWAYS use this exact template"`.
-For flexible output: use `"Here is a sensible default — adjust as needed"`.
-
-### Examples Pattern
-
-When output quality depends on seeing examples, provide explicit input → output pairs rather than descriptions alone.
-
-### Conditional Workflow
-
-```markdown
-1. Determine type:
-   **New document?** → Follow Creation workflow below
-   **Editing existing?** → Follow Editing workflow below
-```
-
-### One Default, Not Multiple Options
-
-```
-# Bad — forces a decision
-"You can use pypdf, pdfplumber, PyMuPDF, or pdf2image..."
-
-# Good — default with escape hatch
-Use pdfplumber. For scanned PDFs needing OCR, use pdf2image + pytesseract instead.
-```
-
-### No Time-Sensitive Information
-
-Use "Legacy" / "Current" sections instead of date conditionals:
-
-```markdown
-## Current method
-Use v2 API: `api.example.com/v2/messages`
-
-## Legacy (v1, deprecated)
-...
-```
 
 ---
 
@@ -221,7 +142,7 @@ Use v2 API: `api.example.com/v2/messages`
 - [ ] For data-entry/reconciliation skills: Task Configuration template is the first section
 
 **Structure**
-- [ ] Body under 100 lines
+- [ ] Body under 90 lines
 - [ ] References at most one level deep
 - [ ] Reference files > 100 lines have a table of contents
 - [ ] All paths use forward slashes
