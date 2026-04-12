@@ -742,5 +742,5 @@ This document consists of six main sections:
 2. **ENSDF 80-Column Format Standards:** NUCID field rules, L/G/B/E/A/DP record specifications, and critical formatting rules.
 3. **ENSDF Uncertainty Notation:** Data record fields (plain numbers) and comment lines ({In} notation).
 4. **ENSDF File Editing Workflow:** File protection, edit-validate-repeat workflow, validation tools, and editing methodology.
-5. **Tabular Data Extraction and Data Entry Quality Assurance:** Trigger conditions, bidirectional positional checks, random spot-check validation, and error discovery procedures.
+5. **Data Extraction and Data Entry Quality Assurance:** Trigger conditions, bidirectional positional checks, random spot-check validation, and error discovery procedures.
 6. **Academic Standards:** Professional English grammar and text formatting conventions.
