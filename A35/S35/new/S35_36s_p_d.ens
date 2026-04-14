@@ -1,6 +1,6 @@
  35S     36S(P,D)                      2026JO01                  ENSDF    202509
  35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$          
- 35S  c  J|p=0+ for {+36}S g.s.                                                 
+ 35S  c  J|p=0+, T=2 for {+36}S g.s.                                            
  35S  c  2026Jo01: E=66 MeV dispersion-matched proton beam was produced from the
  35S 2c  Separated Sector Cyclotron facility of iThemba LABS, South Africa. The 
  35S 3c  target was 1-mg/cm{+2}, 99.24%-enriched {+36}S powder encapsulated     
@@ -29,6 +29,15 @@
  35S 7cL target-thickness variation (10%) and the nominal target thickness      
  35S 8cL uncertainty (5%) (2026Jo01). This uncertainty is included by the       
  35S 9cL evaluators.                                                            
+ 35S  cL ISPIN$T=3/2 or 5/2 for {+35}S levels populated in the {+36}S(p,d)      
+ 35S 2cL reaction based on T=2 for the 0+ g.s. of {+36}S. {+35}S levels below 9 
+ 35S 3cL MeV are likely T=3/2 and those above 9 MeV are likely T=5/2 considering
+ 35S 4cL the binding and Coulomb energy differences and proton-neutron mass     
+ 35S 5cL differences suggest that the isobaric analog state (IAS) of the ground 
+ 35S 6cL state in 35P (T=5/2) should be around 9017 in 35S. C{+2}S extracted for
+ 35S 7cL these 35S levels show excellent agreement with proton-removal data from
+ 35S 8cL 35P when scaled by the expected Clebsch-Gordan ratio of 0.167          
+ 35S 9cL (2026Jo01).                                                            
  35S  cL S$LABEL=C{+2}S                                                         
  35S   L 0         5  3/2+                             2        3.5       4     
  35S   L 1569      5  1/2+                             0        1.28      14    
@@ -97,6 +106,8 @@
  35S   L 9032      15 (1/2-,3/2-)                      (1)      0.0070    8     
  35S   L 9065      15 (1/2-,3/2-)                      (1)      0.0070    8     
  35S   L 9126      7  1/2+                             0        0.35      4     
+ 35S 2 L ISPIN=5/2                                                              
+ 35S  cL J,ISPIN$isobaric analog state of 1/2+, T=5/2, g.s. of {+35}P (2026Jo01)
  35S   L 9180      5  1/2+                             0        0.060     7     
  35S   L 9219      15 (1/2-,3/2-)                      (1)      0.00300   34    
  35S   L 9294      8  (1/2-,3/2-)                      (1)      0.0100    11    
@@ -124,7 +135,15 @@
  35S   L 1.0746E4  10 (1/2-,3/2-)                      (1)                      
  35S   L 1.0810E4  10 (1/2-,3/2-)                      (1)                      
  35S   L 1.147E4   2  3/2+                             2        0.052     6     
+ 35S 2 L ISPIN=5/2                                                              
+ 35S  cL J,ISPIN$IAS of 3/2+, T=5/2, 2387 level in {+35}P (2026Jo01)            
  35S   L 1.288E4   10 5/2+                             2        0.49      6     
+ 35S 2 L ISPIN=5/2                                                              
+ 35S  cL J,ISPIN$IAS of 5/2+, T=5/2, 3860 level in {+35}P (2026Jo01)            
  35S   L 1.368E4   10 5/2+                             2        0.156     18    
+ 35S 2 L ISPIN=5/2                                                              
+ 35S  cL J,ISPIN$IAS of 5/2+, T=5/2, 4666 level in {+35}P (2026Jo01)            
  35S   L 1.422E4   10 5/2+                             2        0.247     28    
+ 35S 2 L ISPIN=5/2                                                              
+ 35S  cL J,ISPIN$IAS of 5/2+, T=5/2, 5199 level in {+35}P (2026Jo01)            
  35S   L 1.470E4   10                                                           
