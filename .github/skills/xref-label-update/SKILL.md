@@ -9,11 +9,11 @@ argument-hint: [adopted.ens] [add|remove] [dataset-label]
 
 # Update ENSDF Cross-Reference (XREF) Labels
 
-ENSDF data record definitions and spot-check policy: `.github/copilot-instructions.md`.
+ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
 
 ## Scenario 1: Add Dataset
 
-Determine the shift mapping (e.g., new `F`: F→G, G→H, ...; A–E unchanged).
+Determine the shift mapping (e.g., new `F`: F→G, G→H, H→I, and so on; A–E unchanged).
 
 ### Steps
 
@@ -24,6 +24,7 @@ Insert new dataset at appropriate position, shift subsequent labels, pad spaces 
 Apply mapping — notations `(energy)`, `(*)`, `(?)` travel with their labels:
 - `XREF=BFGH` → `XREF=BGHI`
 - `XREF=BFG(2103)HIJ` → `XREF=BGH(2103)IJK`
+- `XREF=F(*)J` → `XREF=G(*)K`
 - `XREF=H(7300*)J` → `XREF=I(7300*)K`
 
 #### 3. Insert New XREF Label
@@ -34,7 +35,7 @@ Omit column calibrate and line ruler checks. Pad XREF line to 80 chars only.
 
 ## Scenario 2: Remove Dataset
 
-Determine shift mapping (e.g., removed `B`: C→B, D→C, ...; A unchanged).
+Determine shift mapping (e.g., removed `B`: C→B, D→C, E→D, and so on; A unchanged).
 
 ### Steps
 
@@ -45,12 +46,12 @@ Remove dataset line, shift subsequent labels up, pad spaces to 80 characters.
 Apply mapping; delete removed label if present:
 - `XREF=ABC` → `XREF=AB` (B removed; C→B)
 - `XREF=ACD` → `XREF=ABC` (no B; C→B, D→C)
-- `XREF=ACDEF(2420)GIK` → `XREF=ABCDE(2420)FHJ` (notations shift with labels)
+- `XREF=ACDEF(2420)GIK` → `XREF=ABCDE(2420)FHJ` (notations travel with labels)
 
 #### 3. Validation
 Omit column calibrate and line ruler checks. Pad XREF line to 80 chars only.
 
-**CRITICAL:** This task ONLY updates XREF labels. Do NOT delete data records. Human evaluators handle data removal separately.
+**CRITICAL:** This task ONLY updates XREF labels. Do NOT modify data records. Human evaluators handle data editing separately.
 
 ## Spot-Check (Both Scenarios)
 
