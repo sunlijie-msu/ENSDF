@@ -1,8 +1,8 @@
-Program for ENSDF check: output for Format Error and Warnings (version 08/18/2025)
-Generated at: Wed 08/20/2025 at 05:59:38 PM EDT
+Program for ENSDF check: output for Format Error and Warnings (version 03/31/2026)
+Generated at: Wed 04/15/2026 at 05:37:46 PM EDT
 
 ****************************************
-     Total 2 errors 1 warning
+     Total 2 errors 0 warning
 ****************************************
 
 -----------------------------------------------------------------------------------------
@@ -12,24 +12,10 @@ Generated at: Wed 08/20/2025 at 05:59:38 PM EDT
 #########################################################################################
 ### In dataset <35S: ADOPTED LEVELS, GAMMAS>
 
-    260.  35S  cL J$207.0|g from 4022, (11/2)- in ({+14}N,3p|g).???                      
-                                                                **                         <E> Duplicate punctuation marks
-    373.  35S  cL J$2905|g to 1572, 1/2+ and 2487???|g to 1991, 7/2-. L=2 component of   
-                                                 **                                        <E> Duplicate punctuation marks
-
------------------------------------------------------------------------------------------
-    In file: D:\X\ND\ENSDF\A35\S35\new\S35_ng_E_thermal.ens
------------------------------------------------------------------------------------------
-
-
-#########################################################################################
-### In dataset <35S: 34S(N,G) E=THERMAL>
-
-    123.  35S F G FL=2717.05                                                             
-                     *******                                                               <W> EL-EG=2719.14 19 inconsistent with FL=2717.05 9 within 3*sigma=0.63
-                                                                                               Parent level:  4903.374 15
-                                                                                                         EG:  2184.16 19
-
+    337.  35S   L 4105.6    8  (5/2+)      55 FS     LT                                  
+                              ******************                                           <E> Invalid multi-blank in JPI value
+                                                                                               Invalid spin assignment
+                                                **********                                 <E> Invalid value for T
 
 
 End of report

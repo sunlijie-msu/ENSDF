@@ -1,95 +1,73 @@
-Program for consistency check: output for Error and Warnings (version 08/01/2025)
-Generated at: Wed 08/20/2025 at 05:59:39 PM EDT
+Program for consistency check: output for Error and Warnings (version 03/31/2026)
+Generated at: Wed 04/15/2026 at 05:37:48 PM EDT
 
 ################################################################################
 In Adopted dataset of 35S
 
- 35S  cL BAND(B)$Sequence based on 3/2+.                                        
-          *                                                                       <W> Not a band due to different deltaJ for in-band transitions.
-                                                                                           Please use "SEQ" instead of "BAND" in band comments
- 35S   L 3594.62   24 (7/2+)                                                B   
- 35S   G 2022.19     17      LT                                                 
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=(7/2+) JF(1572.370)=1/2+
- 35S   L 5877.70   22 (11/2+)                                               B   
- 35S   G 465.4     2 33.8    26 D                                               
- 35S   G 867.6     4 50.0    26 D                                               
- 35S   G 977.9     3 43      4 D+Q                                              
- 35S   G 1055.1    6 80      5 D                                                
- 35S   G 1854.4    4 44.7    26                                                 
- 35S   G 2061.6    4 98      5 D                                                
- 35S   G 2283.0    4 52      16                                                 
- 35S   G 3886.0    13 7.9    26                                                 
-                     *                                                            <W> Gamma intensity not normalized with strongest=100!
- 35S   G 977.9     3 43      4 D+Q                                              
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=977.9
-                                                                                        JI=(11/2+) JF(4899.82)=5/2,9/2
+ 35S   L 3558.079  28 (5/2+)                                                    
+ 35S  cL J$L=(2) from 0+ in (p,d); 1986|g to 1/2+, 1572.370 and 1566.7|g to     
+                                                                          *       <W> JPI after EG=1566.7 is unrecognized. Please check.
+ 35S   L 3886.28   33 (5/2-)                                                    
+ 35S X L XREF=C(3890)DIJKM
+         *                                                                        <W> XREF tag=M: level possibly not or inconsistent (E/JPI) in M=37CL(D,AG)
+                                                                                        closest level in M=37CL(D,AG)
+                                                                                        3889.0     19   possible JPI=(1/2+)
+ 35S   L 4105.6    8  (5/2+)      55 FS     LT                                  
+ 35S  cL J$L=(2) from 0+ in (p,d); 2533.1|g to 1/2+, 1572.370 and 2114.3|g to   
+                                                                            *     <W> JPI after EG=2114.3 is unrecognized. Please check.
+ 35S   L 4477.63   7  (5/2+)           62 FS     LT                             
+ 35S   G 591.35      8.2     LT [M1,E2]                                         
+                               *                                                  <E> Mult=M1 is inconsistent with spin-parity change
+                                                                                        JI=(5/2+) JF(3886.28)=(5/2-)
+ 35S   L 4822.79   24 (9/2+)                                                    
+ 35S  cL J$1228.1|g D, |DJ=1 to 7/2(+), 3594.62; 1055.1|g D, |DJ=1 from (11/2+),
+                                *                                                 <E> Quoted JF=7/2(+) inconsistent with record JF=(7/2)+ for decaying EG=1228.1
+ 35S   L 5412.28   25 (9/2+)                                                    
+ 35S  cL J$1389.0|g D, |DJ=1 to (11/2)-, 4023.24; 1525.7|g to (5/2+), 3886.28.  
+                                                              *                   <E> Quoted JF=(5/2+) inconsistent with record JF=(5/2-) for decaying EG=1525.7
+ 35S   L 5877.70   22 (11/2+)                                                   
+ 35S 2cL 5010.05; strong 2283.0|g to 7/2(+), 3594.62.                           
+                                     *                                            <E> Quoted JF=7/2(+) inconsistent with record JF=(7/2)+ for decaying EG=2283.0
 
 ################################################################################
 In dataset of 35S: XA 35P B- DECAY (47.3 S)     XREF Tag=A
 
- 35S   L 0            3/2+                                                      
-                                       *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=87.61 D 24 this T1/2=
- 35S   L 1572.290  29 1/2+                                                      
-                                       *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=2.29 PS 14 this T1/2=
- 35S   L 2938.4    4  3/2+                                                      
+ 35S   L 2938.4    4  (3/2)+                                                    
                      *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(3/2)+ this JPI=3/2+
+                                                                                        Adopted JPI=3/2+ this JPI=(3/2)+
 
 ################################################################################
 In dataset of 35S: XC 9BE(36S,35SG)     XREF Tag=C
 
- 35S   L 1575      2  1/2+                             0        1.1       3     
- 35S   G 1576      2                                                            
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=1576      Adopted=1572.327
- 35S   L 2353      2  3/2-                             1        0.4       1     
- 35S   G 2352      2                                                            
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=2352      Adopted=2347.700
- 35S   L 2943      2  1/2+                             0        0.4       2     
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(3/2)+ this JPI=1/2+
- 35S   G 2943      2                                                            
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=2943      Adopted=2938.57
- 35S   L 3602      2                                   2        0.3       1     
-                     *                                                            <W> JPI commented from Adopted but empty
-                                                                                        Adopted JPI=(7/2+) this JPI=
- 35S   G 3602      2                                                            
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=3594.62
+ 35S   L 3818      5  7/2-                             (3)      0.25      7     
+                     *                                                            <W> JPI here contradicts to adopted. Please check
+                                                                                        Adopted JPI=(9/2)- this JPI=7/2-
+ 35S   L 3890      4  1/2+                             (0)      0.29      9     
+                     *                                                            <W> JPI here contradicts to adopted. Please check
+                                                                                        Adopted JPI=(5/2-) this JPI=1/2+
+ 35S   L 4948      5                                                            
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        4963.081  25 5/2+                XREF=FHIK(4955)L
+ 35S   G 4948                                                                   
          *                                                                        <W> No matching gamma within 5 keV found in Adopted
- 35S   L 3821      3                                   3        0.3       1     
-                     *                                                            <W> JPI commented from Adopted but empty
-                                                                                        Adopted JPI=(9/2)- this JPI=
- 35S   G 1830      2                                                            
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=1830      Adopted=1824.7
- 35S   L 3895      3  1/2+                             0        0.15      4     
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(5/2+) this JPI=1/2+
- 35S   G 1542      2                                                            
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=1542      Adopted=1538.4
- 35S   L 4028      2                                   2        0.6       1     
-                     *                                                            <W> JPI commented from Adopted but empty
-                                                                                        Adopted JPI=3/2+,5/2+ this JPI=
+ 35S   L 5349      8                                                            
+         *                                                                        <E> Tag=C of this dataset missing in XREF of matched Adopted Level=5343
+ 35S   G 5349                                                                   
+         *                                                                        <W> This gamma is missing in Adopted Gammas at level=5343
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 35S   L 5775      4                                                            
+         *                                                                        <E> Tag=C of this dataset missing in XREF of matched Adopted Level=5767
+ 35S   G 5775                                                                   
+         *                                                                        <W> This gamma is missing in Adopted Gammas at level=5767
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
 
 ################################################################################
 In dataset of 35S: XD 24MG(14N,3PG)     XREF Tag=D
 
- 35S   L 4822.9    3  9/2+                                                      
+ 35S   L 3886.4    4  5/2+                                                      
                      *                                                            <W> JPI here contradicts to adopted. Please check
-                                                                                        Adopted JPI=(9/2-) this JPI=9/2+
-
-################################################################################
-In dataset of 35S: XE 26MG(18O,2ANG)     XREF Tag=E
-
- 35S   L 4822.4    6  (9/2+)                                                    
-                     *                                                            <W> JPI here contradicts to adopted. Please check
-                                                                                        Adopted JPI=(9/2-) this JPI=(9/2+)
+                                                                                        Adopted JPI=(5/2-) this JPI=5/2+
 
 ################################################################################
 In dataset of 35S: XG 34S(N,N),(N,G):RESONANCES     XREF Tag=G
@@ -99,17 +77,28 @@ In dataset of 35S: XG 34S(N,N),(N,G):RESONANCES     XREF Tag=G
  35S   L 7279.13                       0.10 EV   3              302            ?
          *                                                                        <W> questionable level not placed in Adopted or discrepant.
                                                                                         closest level in Adopted:
-                                                                                        7275.93    5 1/2+                XREF=G
+                                                                                        7275.93    5 1/2+                XREF=GK
  35S   L 7371.97                       0.12 EV                  397.6          ?
          *                                                                        <W> questionable level not placed in Adopted or discrepant.
                                                                                         closest level in Adopted:
-                                                                                        7370.56    6 1/2-                XREF=GK(7375)
+                                                                                        7370.56    6 1/2-                XREF=GL(7375)
+
+################################################################################
+In dataset of 35S: XH 34S(POL D,P)     XREF Tag=H
+
+ 35S   L 4963         3/2-                             1        0.19,0.17   B   
+                     *                                                            <W> JPI here contradicts to adopted. Please check
+                                                                                        Adopted JPI=5/2+ this JPI=3/2-
 
 ################################################################################
 In dataset of 35S: XI 34S(D,P)     XREF Tag=I
 
- 35S   L 5475      10                                                       M  ?
-         *                                                                        <W> Tag=I of this dataset missing in XREF of matched Adopted Level=5412.28
+ 35S   L 4963.12   16 3/2-                             1        0.32      3 P   
+                     *                                                            <W> JPI here contradicts to adopted. Please check
+                                                                                        Adopted JPI=5/2+ this JPI=3/2-
+                                                       *                          <W> L=1 inconsistent with JPI=5/2+ from Adopted Levels for E=4963.081
+                                                                                         possible JPI from L=1 and target JPI=0+
+                                                                                             1/2-,3/2-
  35S   L 7640      40                                  (2,3)                K   
          *                                                                        <W> 4 possible matches found in Adopted! Check XREF
                                                                                        @ 7648.9     6                     XREF=GI(7640*)
@@ -121,13 +110,9 @@ In dataset of 35S: XI 34S(D,P)     XREF Tag=I
 ################################################################################
 In dataset of 35S: XJ 34S(D,PG)     XREF Tag=J
 
- 35S   L 1992.9    17 7/2-             1.03 NS   5                              
- 35S   G 1992.8       100       M2+E3    +0.17   6                              
-                               *                                                  <E> MULT quoted in comment as from Adopted is inconsistent
-                                                                                        Adopted MULT=M2+E3 MULT in comment=D+Q
- 35S   L 2935      3  3/2+                                                      
+ 35S   L 2935      3  (3/2)+                                                    
                      *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(3/2)+ this JPI=3/2+
+                                                                                        Adopted JPI=3/2+ this JPI=(3/2)+
  35S   L 3421.0    10 5/2+             69 FS     LT                             
  35S   G 703.0        6      LT                                                 
          *                                                                        <W> Check discrepancy in gamma energies:
@@ -138,21 +123,15 @@ In dataset of 35S: XJ 34S(D,PG)     XREF Tag=J
  35S   G 1428.1       30     LT                                                 
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=1428.1      Adopted=1431.9
- 35S   L 3592      5  (1/2TO7/2)+                                               
+ 35S   L 3558         (3/2-,5/2+)                                               
                      *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(7/2+) this JPI=(1/2TO7/2)+
- 35S   G 1599         17     LT                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=1599
-                                                                                        JI=(1/2TO7/2)+ JF(1992.9)=7/2-
- 35S   G 2020         17     LT                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2020
-                                                                                        JI=(1/2TO7/2)+ JF(1572.33)=1/2+
- 35S   L 3815      3                                                            
-                     *                                                            <W> JPI commented from Adopted but empty
-                                                                                        Adopted JPI=(9/2)- this JPI=
- 35S   L 3885.0    10 (3/2-,5/2)                                                
+                                                                                        Adopted JPI=(5/2+) this JPI=(3/2-,5/2+)
+ 35S   L 3592      5  7/2(+)                                                    
                      *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(5/2+) this JPI=(3/2-,5/2)
+                                                                                        Adopted JPI=(7/2)+ this JPI=7/2(+)
+ 35S   L 3885.0    10 (5/2+)                                                    
+                     *                                                            <E> JPI commented from Adopted but inconsistent
+                                                                                        Adopted JPI=(5/2-) this JPI=(5/2+)
  35S   G 1167.0       15     LT                                                 
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=1167.0      Adopted=1169.19
@@ -162,38 +141,248 @@ In dataset of 35S: XJ 34S(D,PG)     XREF Tag=J
  35S   G 1892.1       100                                                       
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=1892.1      Adopted=1894.9
- 35S   L 4025.0    10 (1/2,3/2,5/2)+                                            
+ 35S   L 4025.0    10 3/2+,5/2+                                                 
                      *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=3/2+,5/2+ this JPI=(1/2,3/2,5/2)+
+                                                                                        Adopted JPI=(3/2+,5/2+) this JPI=3/2+,5/2+
  35S   G 1676.2       33     12                                                 
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=1676.2      Adopted=1679.4
- 35S   G 2032.0       10     LT                                                 
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=2032.0      Adopted=2037
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2032.0
-                                                                                        JI=(1/2,3/2,5/2)+ JF(1992.9)=7/2-
- 35S   L 4107      2  (1/2,3/2,5/2)+   55 FS     LT                             
+ 35S   L 4107      2  (3/2-,5/2+)      55 FS     LT                             
                      *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(3/2-,5/2+) this JPI=(1/2,3/2,5/2)+
- 35S   G 2114         7      LT                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2114
-                                                                                        JI=(1/2,3/2,5/2)+ JF(1992.9)=7/2-
- 35S   L 4480      2  (1/2,3/2,5/2)+   62 FS     LT                             
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(5/2+) this JPI=(1/2,3/2,5/2)+
- 35S   G 2487         10     LT                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2487
-                                                                                        JI=(1/2,3/2,5/2)+ JF(1992.9)=7/2-
+                                                                                        Adopted JPI=(5/2+)      55 FS this JPI=(3/2-,5/2+)
 
 ################################################################################
-In dataset of 35S: XK 37CL(P,3HE)     XREF Tag=K
+In dataset of 35S: XK 36S(P,D)     XREF Tag=K
 
- 35S   L 7712      10                                  4                       ?
-         *                                                                        <W> Tag=K of this dataset missing in XREF of matched Adopted Level=7731.1
+ 35S   L 3592      5  (5/2+)                           (2)      0.0040    5     
+                     *                                                            <W> JPI here contradicts to adopted. Please check
+                                                                                        Adopted JPI=(7/2)+ this JPI=(5/2+)
+                                                       *                          <W> L=(2) inconsistent with JPI=(7/2)+ from Adopted Levels for E=3594.62
+                                                                                         possible JPI from L=(2) and target JPI=0+
+                                                                                             (3/2+,5/2+)
+ 35S   L 3883      5  7/2-                             3        0.0180    20    
+                     *                                                            <W> JPI here contradicts to adopted. Please check
+                                                                                        Adopted JPI=(5/2-) this JPI=7/2-
+ 35S   L 4107      7  (3/2+)                           (2)      0.00230   26    
+                     *                                                            <W> JPI here contradicts to adopted. Please check
+                                                                                        Adopted JPI=(5/2+)      55 FS this JPI=(3/2+)
+                                                       *                          <W> L=(2) inconsistent with JPI=(5/2+)      55 FS from Adopted Levels for E=4105.6
+                                                                                         possible JPI from L=(2) and target JPI=0+
+                                                                                             (3/2+,5/2+)
+ 35S   L 4907      5  1/2+                             0        0.0110    12    
+                     *                                                            <W> JPI here contradicts to adopted. Please check
+                                                                                        Adopted JPI=1/2- this JPI=1/2+
+                                                       *                          <W> L=0 inconsistent with JPI=1/2- from Adopted Levels for E=4903.371
+                                                                                         parity=+ from L=0 and target JPI=0+
+ 35S   L 5286      5  (1/2-,3/2-)                      (1)      6.5E-4    7     
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        5343       8 (-)                 XREF=IL
+ 35S   L 5476      5  3/2+                             2        0.0090    10    
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        5412.28   25 (9/2+)              XREF=DE
+ 35S   L 5630      5  5/2+                             2        0.110     12    
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        5550      10                     XREF=I(5542?)L
+ 35S   L 6218      5  (7/2-)                           (3)      0.00300   34    
+         *                                                                        <E> Tag=K of this dataset missing in XREF of matched Adopted Level=6293.93
+ 35S   L 6790      5  (5/2+)                           (2)      0.037     4     
+         *                                                                        <E> Tag=K of this dataset missing in XREF of matched Adopted Level=6761.0
+ 35S   L 7019      5  (1/2-,3/2-)                      (1)      0.00150   17    
+                     *                                                            <W> JPI here contradicts to adopted. Please check
+                                                                                        Adopted JPI=3/2+,5/2+ this JPI=(1/2-,3/2-)
+                                                       *                          <W> L=(1) inconsistent with JPI=3/2+,5/2+ from Adopted Levels for E=7018.89
+                                                                                         possible JPI from L=(1) and target JPI=0+
+                                                                                             (1/2-,3/2-)
+ 35S   L 7753      5  5/2+                             2        0.200     23    
+                     *                                                            <W> JPI here contradicts to adopted. Please check
+                                                                                        Adopted JPI=(3/2) this JPI=5/2+
+ 35S   L 8465      7  (5/2+)                           (2)      0.0100    11    
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        8418.8     4 3/2+,5/2+           XREF=GL(8430*)
+ 35S   L 8509      5  5/2+                             2        0.0120    14    
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        8418.8     4 3/2+,5/2+           XREF=GL(8430*)
+ 35S   L 8557      7  (7/2-)                           (3)      0.00300   34    
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        8418.8     4 3/2+,5/2+           XREF=GL(8430*)
+ 35S   L 8602      5  (7/2-)                           (3)      0.0100    11    
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        8755.9    11 (17/2)              XREF=E
+ 35S   L 8649      7  (7/2-)                           (3)      0.0065    7     
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        8755.9    11 (17/2)              XREF=E
+ 35S   L 8707      5  (5/2+)                           (2)      0.0220    25    
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        8755.9    11 (17/2)              XREF=E
+ 35S   L 8761      7  (5/2+)                           (2)      0.0110    12    
+         *                                                                        <E> Tag=K of this dataset missing in XREF of matched Adopted Level=8755.9
+                     *                                                            <W> JPI here contradicts to adopted. Please check
+                                                                                        Adopted JPI=(17/2) this JPI=(5/2+)
+ 35S   L 8822      5  (1/2-,3/2-)                      (1)      0.0060    7     
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        8755.9    11 (17/2)              XREF=E
+ 35S   L 8876      5  (1/2-,3/2-)                      (1)      0.00250   28    
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        8755.9    11 (17/2)              XREF=E
+ 35S   L 8947      7  (1/2-,3/2-)                      (1)      0.00100   11    
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        8755.9    11 (17/2)              XREF=E
+ 35S   L 9032      15 (1/2-,3/2-)                      (1)      0.0070    8     
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        9155      10                     XREF=L
+ 35S   L 9065      15 (1/2-,3/2-)                      (1)      0.0070    8     
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        9155      10                     XREF=L
+ 35S   L 9126      7  1/2+                             0        0.35      4     
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        9155      10                     XREF=L
+ 35S   L 9180      5  1/2+                             0        0.060     7     
+         *                                                                        <E> Tag=K of this dataset missing in XREF of matched Adopted Level=9155
+ 35S   L 9219      15 (1/2-,3/2-)                      (1)      0.00300   34    
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        9155      10                     XREF=L
+ 35S   L 9294      8  (1/2-,3/2-)                      (1)      0.0100    11    
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        9155      10                     XREF=L
+ 35S   L 9339      8  (1/2-,3/2-)                      (1)      0.00200   23    
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        9155      10                     XREF=L
+ 35S   L 9395      5  (1/2-,3/2-)                      (1)      0.0045    5     
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        9155      10                     XREF=L
+ 35S   L 9446      7  (1/2-,3/2-)                      (1)      0.00180   20    
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        9155      10                     XREF=L
+ 35S   L 9510      10 (1/2-,3/2-)                      (1)      0.0035    4     
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        9155      10                     XREF=L
+ 35S   L 9565      20 (1/2-,3/2-)                      (1)      0.0033    4     
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        9155      10                     XREF=L
+ 35S   L 9615      10 (1/2-,3/2-)                      (1)      0.00280   32    
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 9666      10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 9716      10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 9774      10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 9849      10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 9911      10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 9989      10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 1.0049E4  10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <E> Tag=K of this dataset missing in XREF of matched Adopted Level=10048.6
+                     *                                                            <W> JPI here contradicts to adopted. Please check
+                                                                                        Adopted JPI=(19/2+) this JPI=(1/2-,3/2-)
+ 35S   L 1.0166E4  10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 1.0225E4  10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 1.0277E4  10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 1.0350E4  10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 1.0421E4  10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 1.0493E4  10 (7/2-)                           (3)      0.0200    23    
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 1.0563E4  10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 1.0663E4  10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 1.0746E4  10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 1.0810E4  10 (1/2-,3/2-)                      (1)                      
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        10048.6    9 (19/2+)             XREF=E
+ 35S   L 1.147E4   2  3/2+                             2        0.052     6     
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        12469.3   14 (21/2)              XREF=E
+ 35S   L 1.288E4   10 5/2+                             2        0.49      6     
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        12469.3   14 (21/2)              XREF=E
+ 35S   L 1.368E4   10 5/2+                             2        0.156     18    
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        12469.3   14 (21/2)              XREF=E
+ 35S   L 1.422E4   10 5/2+                             2        0.247     28    
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        12469.3   14 (21/2)              XREF=E
+ 35S   L 1.470E4   10                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        12469.3   14 (21/2)              XREF=E
 
 ################################################################################
-In dataset of 35S: XL 37CL(D,AG)     XREF Tag=L
+In dataset of 35S: XL 37CL(P,3HE)     XREF Tag=L
+
+ 35S   L 4290      10                                  (2)                      
+                                                       *                          <W> L=(2) inconsistent with JPI=(1/2-,3/2-) from Adopted Levels for E=4302.6
+                                                                                         parity=(+) from L=(2) and target JPI=3/2+
+
+################################################################################
+In dataset of 35S: XM 37CL(D,AG)     XREF Tag=M
 
  35S   L 3560.8    19                                                           
  35S   G 1212.6       35     4                                                  
@@ -211,17 +400,19 @@ In dataset of 35S: XL 37CL(D,AG)     XREF Tag=L
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=1828.1      Adopted=1824.7
  35S   L 3889.0    19                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        3886.28   33 (5/2-)              XREF=C(3890)DIJKM
  35S   G 1540.8       40     4                                                  
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=1540.8      Adopted=1538.4
+         *                                                                        <W> Similar gammas placed differently in Adopted:
+                                                                                        1538.97        from level=4477.63     JPI=(5/2+)              
  35S   G 1898.9       45     5                                                  
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=1898.9      Adopted=1894.9
+         *                                                                        <W> Similar gammas placed differently in Adopted:
+                                                                                        1894.9(4)      from level=3886.28     JPI=(5/2-)              
  35S   G 3888.8       15     3                                                  
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=3888.8      Adopted=3886.05
- 35S   L 4022.2    22                                                           
-         *                                                                        <E> Tag=L of this dataset missing in XREF of matched Adopted Level=4023.24
+         *                                                                        <W> Similar gammas placed differently in Adopted:
+                                                                                        3886.05        from level=3886.28     JPI=(5/2-)              
+                                                                                        3886.0(13)     from level=5877.70     JPI=(11/2+)             
  35S   L 4480.0    16                                                           
  35S   G 1763.3       36     4                                                  
          *                                                                        <W> Check discrepancy in gamma energies:
@@ -237,16 +428,15 @@ In dataset of 35S: XL 37CL(D,AG)     XREF Tag=L
                                                                                           this energy=4479.7      Adopted=4477.32
 
 ################################################################################
-In dataset of 35S: XM 160GD(34S,XG),(37CL,XG)     XREF Tag=M
+In dataset of 35S: XO 208PB(36S,35SG)     XREF Tag=O
 
- 35S   L 4022         (9/2-)                                                    
-                     *                                                            <W> JPI here contradicts to adopted. Please check
-                                                                                        Adopted JPI=(11/2)- this JPI=(9/2-)
-
-################################################################################
-In dataset of 35S: XN 208PB(36S,35SG)     XREF Tag=N
-
- 35S   L 3818.1    14 (9/2-,11/2-)                                              
+ 35S   L 3558.1    14 (3/2-,5/2+)                                               
+                     *                                                            <E> JPI commented from Adopted but inconsistent
+                                                                                        Adopted JPI=(5/2+) this JPI=(3/2-,5/2+)
+ 35S   L 3593      2   7/2(+)                                                   
+                     *                                                            <E> JPI commented from Adopted but inconsistent
+                                                                                        Adopted JPI=(7/2)+ this JPI=7/2(+)
+ 35S   L 3818.1    14 (9/2)-                                                    
  35S   G 1827      1  12.9   11                                                 
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=1827      Adopted=1824.7
