@@ -158,9 +158,9 @@
  35S B G BM1W=0.012 +7-3 $BE2W=0.9 +6-3                                         
  35S   L 2938.62   5  3/2+                                                      
  35S X L XREF=ACFHIJKLM                                                         
- 35S  cL J$L=2 from 0+ in (d,p), (p,d), (pol d,p), and {+9}Be({+36}S,{+35}S);   
- 35S 2cL L-1/2 from J-dependence in (p,d); possibly allowed |b{+-} feeding from 
- 35S 3cL 1/2+ parent with log {Ift}=5.0.                                        
+ 35S  cL J$L=2 from 0+ in (d,p), (p,d), (pol d,p), and L=(2) in                 
+ 35S 2cL {+9}Be({+36}S,{+35}S); L-1/2 from J-dependence in (p,d); possibly      
+ 35S 3cL allowed |b{+-} feeding from 1/2+ parent with log {Ift}=5.0.            
  35S   G 590.84      10      LT                                                 
  35S   G 947.34      20      LT                                                 
  35S   G 1366.22     15      LT                                                 
@@ -211,7 +211,7 @@
  35S   L 3594.62   24  (7/2)+                                                   
  35S X L XREF=C(3595)DEI(3596)JK(3592)L(3598)MO                                 
  35S  cL J$3594.5|g Q, |DJ=2 to 3/2+, g.s.; L=2+4 from 3/2+ in (p,{+3}He); L=(2)
- 35S 2cL from 0+ in (p,d); L=2 from 0+ in {+9}Be({+36}S,{+35}S). 7/2+ is        
+ 35S 2cL from 0+ in (p,d); L=(2) from 0+ in {+9}Be({+36}S,{+35}S). 7/2+ is      
  35S 3cL suggested by shell model (2014Ay01,2021Go09). If 3594.5|g is consistent
  35S 4cL with |DJ=0 to 3/2+, the discrepancy between the in-beam |g-ray         
  35S 5cL spectroscopy ({+14}N,3p|g) and transfer reactions may be resolved.     
@@ -270,7 +270,7 @@
  35S   L 3816.01   21 (9/2)-           0.28 PS   3                              
  35S X L XREF=CDEHJL(3811*)MO                                                   
  35S  cL J$1824.7|g M1+E2 to 7/2-, 1991.27; 2061.6|g D, |DJ=1 from (11/2+),     
- 35S 2cL 5877.70.                                                               
+ 35S 2cL 5877.70. L=(3) from 0+ in {+9}Be({+36}S,{+35}S|g)                      
  35S  cL T$in ({+14}N,3p|g) from 2014Ay01 with DSAM.                            
  35S   G 1824.7    3 100        M1+E2    +0.55   9                              
  35S S G  CC=0.000200 4$KC=1.098E-5 17$LC=8.46E-7 13$MC=7.14E-8 11              
@@ -283,7 +283,7 @@
  35S   L 3886.28   33 (5/2-)                                                    
  35S X L XREF=C(3890)DIJKM                                                       
  35S  cL J$1894.9|g D, |DJ=1 to 7/2-, 1991.27; 3886.05|g to 3/2+, g.s.; L=3 from
- 35S 2cL 0+ in (p,d). Other: L=0 from 0+ in {+9}Be({+36}S,{+35}S|g) is          
+ 35S 2cL 0+ in (p,d). Other: L=(0) from 0+ in {+9}Be({+36}S,{+35}S|g) is        
  35S 3cL inconsistent.                                                          
  35S   G 463.1       30      LT                                                 
  35S   G 947.65      12      LT                                                 
@@ -317,18 +317,16 @@
  35S B G BE2W=7.5 +8-7                                                          
  35S   L 4027.2    14 3/2+,5/2+                                                 
  35S X L XREF=CI(4025)JK(4023)LM                                                
- 35S  cL J$L=2 from 0+ in {+9}Be({+36}S,{+35}S|g); L=(2) from 0+ in (p,d).      
+ 35S  cL J$L=(2) from 0+ in {+9}Be({+36}S,{+35}S|g); L=(2) from 0+ in (p,d).    
  35S   G 469.1       14      LT                                                 
  35S   G 604.0       28      LT                                                 
  35S   G 1088.6      95      12                                                 
  35S  cG RI$weighted average of 86 {I22} from (d,p|g) and 97 {I12} from         
  35S 2cG (d,|a|g).                                                              
- 35S   G 1309      2 22      LT                                                 
- 35S  cG E$from {+9}Be({+36}S,{+35}S|g).                                        
+ 35S   G 1309        22      LT                                                 
  35S   G 1679.4      97      12                                                 
  35S  cG RI$from (d,|a|g). Other: 92 {I33} from (d,p|g)                         
- 35S   G 2036      2  28     LT                                                 
- 35S  cG E$from {+9}Be({+36}S,{+35}S|g).                                        
+ 35S   G 2036         28     LT                                                 
  35S   G 2454.7      100     18                                                 
  35S  cG RI$from (d,|a|g). Other: 100 {I33} from (d,p|g)                        
  35S   G 4027.0      36      LT                                                 
