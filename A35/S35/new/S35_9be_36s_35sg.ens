@@ -1,8 +1,8 @@
- 35S     9BE(36S,35SG)                 2015MUZY                  ENSDF    202509
+ 35S     9BE(36S,35SG)                 2015MUZY,2021JOAA         ENSDF    202509
  35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$          
  35S  dL E$Least-squares fitting is done by GLSC (version 17-Jul-2025)          
  35S  c  J|p=0+ for {+36}S ground state.                                        
- 35S  c  2015MuZY: A secondary beam of {+36}S was produced via the projectile   
+ 35S  c  2015MuZY: a secondary beam of {+36}S was produced via the projectile   
  35S 2c  fragmentation of a 140-MeV/nucleon {+48}Ca primary beam impinging on a 
  35S 3c  846-mg/cm{+2} {+9}Be target at the coupled cyclotron facility at NSCL, 
  35S 4c  MSU. The {+36}S nuclei were selected using the A1900 separator with an 
@@ -23,6 +23,7 @@
  35S Jc  L-transfers, partial knockout cross sections and spectroscopic factors.
  35S Kc  Calculated single-particle cross sections (|s{-sp}) for neutron removal
  35S Lc  and parallel momentum distributions using the eikonal model.           
+ 35S  c  2021JoAA: a more careful reanalysis of 2015MuZY data.                  
  35S  d                                                                         
  35S  cG E$From 2015MuZY. Evaluators assume |g-ray energy uncertainties based on
  35S 2cG the statement in 2016Mu03 that |g-ray energy centroids were determined 
@@ -39,14 +40,17 @@
  35S 2cL parallel momentum distributions of residuals.                          
  35S  cL J$As given in 2015MuZY. Inconsistencies exist between the 2015MuZY     
  35S 2cL reported L values and J|p from other datasets.                         
- 35S  cL S$The spectroscopic factor C{+2}S=b{-f}|s{-inc}{+exp}/R{-s}|s{-f}{+sp},
- 35S 2cL where b{-f} is the population fraction, |s{-inc}{+exp} is the measured 
- 35S 3cL total inclusive cross section, R{-s} is the quenching factor from a    
- 35S 4cL systematics study 2014To14, and |s{-f}{+sp} is the eikonal model       
- 35S 5cL calculated single-particle cross section.                              
+ 35S  cL S$From 2021JoAA. The spectroscopic factor                              
+ 35S 2cL C{+2}S=b{-f}|s{-inc}{+exp}/R{-s}|s{-f}{+sp}, where b{-f} is the        
+ 35S 3cL population fraction, |s{-inc}{+exp} is the measured total inclusive    
+ 35S 4cL cross section, R{-s} is the quenching factor from a systematics study  
+ 35S 5cL 2014To14, and |s{-f}{+sp} is the eikonal model calculated              
+ 35S 6cL single-particle cross section.                                         
  35S  cL S$LABEL=C{+2}S                                                         
- 35S   L 0.0          3/2+                             2        3.2       7     
- 35S  cL $b{-f}=43.3% {I47}, |s{-f}{+sp}=13.1 mb, R{-s}=0.66 {I13}.             
+ 35S   L 0.0          3/2+                             2        3.33      76    
+ 35S  cL S$3.2 {I7} (2015MuZY).                                                 
+ 35S  cL $b{-f}=44.5% {I37} (2021JoAA), b{-f}=43.3% {I47}, |s{-f}{+sp}=13.1 mb, 
+ 35S 2cL R{-s}=0.66 {I13} (2015MuZY).                                           
  35S   L 1575      2  1/2+                             0        1.1       3     
  35S  cL $b{-f}=18.6% {I31}, |s{-f}{+sp}=16.1 mb, R{-s}=0.64 {I13}.             
  35S   G 1576      2                                                            
