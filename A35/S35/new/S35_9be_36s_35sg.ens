@@ -25,21 +25,20 @@
  35S Lc  and parallel momentum distributions using the eikonal model.           
  35S  c  2021JoAA: a more careful reanalysis of 2015MuZY data.                  
  35S  d                                                                         
- 35S  cG E$From 2015MuZY. Evaluators assume |g-ray energy uncertainties based on
- 35S 2cG the statement in 2016Mu03 that |g-ray energy centroids were determined 
- 35S 3cG with an uncertainty of 2 keV.                                          
+ 35S  cG E$From 2021JoAA level scheme. |g-ray energy uncertainties are not      
+ 35S 2cG given.                                                                 
  35S  cL $b{-f} values under comments are population fraction in the knock-out  
  35S 2cL reaction, |s{-f}{+sp} values are for calculated single-particle cross  
  35S 3cL sections, and R{-s} values are quenching factors from a systematics    
  35S 4cL study in 2014To14. The partial cross sections to each level can be     
  35S 5cL deduced from b{-f}|*|s{-inc}{+exp}.                                    
  35S  cL $The inclusive cross section |s{-inc}{+exp} for producing {+35}S from  
- 35S 2cL {+36}S is measured to be 63.7 mb {I6}.                                 
- 35S  cL E$From a least-squares fit to |g-ray energies.                         
- 35S  cL L$2015MuZY deduced L by comparing the measured and eikonal-calculated  
- 35S 2cL parallel momentum distributions of residuals.                          
- 35S  cL J$As given in 2015MuZY. Inconsistencies exist between the 2015MuZY     
- 35S 2cL reported L values and J|p from other datasets.                         
+ 35S 2cL {+36}S is measured to be 63.7 mb {I6} (2015MuZY) and 67 mb {I4}        
+ 35S 3cL (2021JoAA).                                                            
+ 35S  cL E$From 2021JoAA based on measured E|g.                                 
+ 35S  cL L$From 2021JoAA. L-transfers are deduced by comparing the measured and 
+ 35S 2cL eikonal-calculated parallel momentum distributions of residuals.       
+ 35S  cL J$As given in 2021JoAA.                                                
  35S  cL S$From 2021JoAA. The spectroscopic factor                              
  35S 2cL C{+2}S=b{-f}|s{-inc}{+exp}/R{-s}|s{-f}{+sp}, where b{-f} is the        
  35S 3cL population fraction, |s{-inc}{+exp} is the measured total inclusive    
@@ -47,43 +46,67 @@
  35S 5cL 2014To14, and |s{-f}{+sp} is the eikonal model calculated              
  35S 6cL single-particle cross section.                                         
  35S  cL S$LABEL=C{+2}S                                                         
- 35S   L 0.0          3/2+                             2        3.33      76    
+ 35S   L 0            3/2+                             2        3.33      76    
  35S  cL S$3.2 {I7} (2015MuZY).                                                 
  35S  cL $b{-f}=44.5% {I37} (2021JoAA), b{-f}=43.3% {I47}, |s{-f}{+sp}=13.1 mb, 
  35S 2cL R{-s}=0.66 {I13} (2015MuZY).                                           
- 35S   L 1575      2  1/2+                             0        1.1       3     
- 35S  cL $b{-f}=18.6% {I31}, |s{-f}{+sp}=16.1 mb, R{-s}=0.64 {I13}.             
- 35S   G 1576      2                                                            
- 35S   L 1991      2  7/2-                             3        0.2       LT    
- 35S  cL $b{-f}<2.9%, |s{-f}{+sp}=12.7 mb, R{-s}=0.69 {I14}.                    
- 35S   G 1990      2                                                           ?
- 35S   L 2353      2  3/2-                             1        0.4       1     
- 35S  cL $b{-f}=5.3% {I13}, |s{-f}{+sp}=13.1 mb, R{-s}=0.70 {I14}.              
- 35S   G 778       2                                                            
- 35S   G 2352      2                                                            
- 35S   L 2720      2  5/2+                             2        0.6       2     
- 35S  cL $b{-f}=6.4% {I16}, |s{-f}{+sp}=11.4 mb, R{-s}=0.62 {I12}.              
- 35S   G 2720      2                                                            
- 35S   L 2943      2                                   0        0.4       2     
- 35S  cL $b{-f}=5.7% {I16}, |s{-f}{+sp}=13.5 mb, R{-s}=0.61 {I12}.              
- 35S  cL L$inconsistent with J|p=(3/2)+ in the Adopted Levels.                  
- 35S   G 2943      2                                                            
- 35S   L 3425      2  5/2+                             2        0.5       1     
- 35S  cL $b{-f}=5.1% {I10}, |s{-f}{+sp}=11.0 mb, R{-s}=0.61 {I12}.              
- 35S   G 3425      2                                                            
- 35S   L 3602      2                                   2        0.3       1     
- 35S  cL $b{-f}=3.0% {I7}, |s{-f}{+sp}=11.0 mb, R{-s}=0.60 {I12}.               
- 35S  cL L$inconsistent with J|p=(7/2+) in the Adopted Levels.                  
- 35S   G 3602      2                                                            
- 35S   L 3821      3                                   3        0.3       1     
- 35S  cL $b{-f}=4.0% {I9}, |s{-f}{+sp}=11.8 mb, R{-s}=0.72 {I14}.               
- 35S  cL L$inconsistent with J|p=(9/2)- in the Adopted Levels.                  
- 35S   G 1830      2                                                            
- 35S   L 3895      3                                   0        0.15      4     
- 35S  cL $b{-f}=2.3% {I5}, |s{-f}{+sp}=13.5 mb, R{-s}=0.72 {I14}.               
+ 35S   L 1572      1  1/2+                             0        1.26      25    
+ 35S  cL S$1.1 {I3} (2015MuZY).                                                 
+ 35S  cL $b{-f}=19.9% {I8} (2021JoAA), b{-f}=18.6% {I31}, |s{-f}{+sp}=16.1 mb,  
+ 35S 2cL R{-s}=0.64 {I13} (2015MuZY).                                           
+ 35S   G 1572                                                                   
+ 35S   L 1990         7/2-                             3        0.11      20    
+ 35S  cL S$<0.2 (2015MuZY).                                                     
+ 35S  cL $b{-f}=1.41% {I10} (2021JoAA), b{-f}<2.9%, |s{-f}{+sp}=12.7 mb,        
+ 35S 2cL R{-s}=0.69 {I14} (2015MuZY).                                           
+ 35S   G 1990                                                                  ?
+ 35S   L 2348      1  3/2-                             1        0.34      1     
+ 35S  cL S$0.4 {I1} (2015MuZY).                                                 
+ 35S  cL $b{-f}=4.33% {I8} (2021JoAA), b{-f}=5.3% {I13}, |s{-f}{+sp}=13.1 mb,   
+ 35S 2cL R{-s}=0.70 {I14} (2015MuZY).                                           
+ 35S   G 778                                                                    
+ 35S   G 2348                                                                   
+ 35S   L 2717      2  5/2+                             2        0.56      12    
+ 35S  cL S$0.6 {I2} (2015MuZY).                                                 
+ 35S  cL $b{-f}=6.14% {I7} (2021JoAA), b{-f}=6.4% {I16}, |s{-f}{+sp}=11.4 mb,   
+ 35S 2cL R{-s}=0.62 {I12} (2015MuZY).                                           
+ 35S   G 2717                                                                   
+ 35S   L 2939      2  3/2+                             2        0.31      6     
+ 35S  cL L$2015MuZY reports L=0.                                                
+ 35S  cL S$0.4 {I2} (2015MuZY).                                                 
+ 35S  cL $b{-f}=3.99% {I3} (2021JoAA), b{-f}=5.7% {I16}, |s{-f}{+sp}=13.5 mb,   
+ 35S 2cL R{-s}=0.61 {I12} (2015MuZY).                                           
+ 35S   G 2939                                                                   
+ 35S   L 3421      2  5/2+                             2        0.49      11    
+ 35S  cL S$0.5 {I1} (2015MuZY).                                                 
+ 35S  cL $b{-f}=5.08% {I5} (2021JoAA), b{-f}=5.1% {I10}, |s{-f}{+sp}=11.0 mb,   
+ 35S 2cL R{-s}=0.61 {I12} (2015MuZY).                                           
+ 35S   G 3421                                                                   
+ 35S   L 3595      5                                   2        0.21      6     
+ 35S  cL S$0.3 {I1} (2015MuZY).                                                 
+ 35S  cL $b{-f}=2.13% {I5} (2021JoAA), b{-f}=3.0% {I7}, |s{-f}{+sp}=11.0 mb,    
+ 35S 2cL R{-s}=0.60 {I12} (2015MuZY).                                           
+ 35S   G 3595                                                                   
+ 35S   L 3818      5  7/2-                             3        0.25      7     
+ 35S  cL S$0.3 {I1} (2015MuZY).                                                 
+ 35S  cL $b{-f}=0.49% {I4} (2021JoAA), b{-f}=4.0% {I9}, |s{-f}{+sp}=11.8 mb,    
+ 35S 2cL R{-s}=0.72 {I14} (2015MuZY).                                           
+ 35S   G 1830                                                                   
+ 35S   L 3890      4  1/2+                             0        0.29      9     
+ 35S  cL S$0.15 {I4} (2015MuZY).                                                
+ 35S  cL $b{-f}=3.09% {I6} (2021JoAA), b{-f}=2.3% {I5}, |s{-f}{+sp}=13.5 mb,    
+ 35S 2cL R{-s}=0.72 {I14} (2015MuZY).                                           
  35S  cL L$inconsistent with J|p=(5/2+) in the Adopted Levels.                  
- 35S   G 1542      2                                                            
- 35S   L 4028      2                                   2        0.6       1     
- 35S  cL $b{-f}=6.4% {I10}, |s{-f}{+sp}=12.1 mb, R{-s}=0.60 {I12}.              
- 35S   G 1309      2                                                            
- 35S   G 2037      2                                                            
+ 35S   G 1542                                                                   
+ 35S   L 4025      4                                   2        0.34      9     
+ 35S  cL S$0.6 {I1} (2015MuZY).                                                 
+ 35S  cL $b{-f}=3.98% {I5} (2021JoAA), b{-f}=6.4% {I10}, |s{-f}{+sp}=12.1 mb,   
+ 35S 2cL R{-s}=0.60 {I12} (2015MuZY).                                           
+ 35S   G 1309                                                                   
+ 35S   G 2036                                                                   
+ 35S   L 4948      5                                                            
+ 35S   G 4948                                                                   
+ 35S   L 5349      8                                                            
+ 35S   G 5349                                                                   
+ 35S   L 5775      4                                                            
+ 35S   G 5775                                                                   
