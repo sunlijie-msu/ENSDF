@@ -85,7 +85,8 @@
  35S B G BM1W=0.00247 +16-14                                                    
  35S   L 1991.27   4  7/2-             1.03 NS   5                              
  35S X L XREF=CDEFHIJKLMNO                                                      
- 35S  cL J$L(pol d,p)=3 from 0+ and L+1/2 transfer from analyzing power.        
+ 35S  cL J$L=3 from 0+ in (p,d) and (pol d,p), and L+1/2 transfer from analyzing
+ 35S 2cL power.                                                                 
  35S  cL T$lifetime |t=1.48 ns {I7}: weighted average of 1.7 ns {I3} in (d,p|g) 
  35S 2cL from 2024Co04 with p|g-delayed coin and 1.47 ns {I7} in (d,p|g) from   
  35S 3cL 1971Pr11 with p|g-delayed coin. Other: >4.5 ps in (d,p|g) from 1970Bu18
@@ -130,8 +131,9 @@
  35S B G BE1W=4.6E-5 +9-6                                                       
  35S   L 2717.07   9  5/2+             69 FS     24                             
  35S X L XREF=CDFHIJKLMO                                                        
- 35S  cL J$L=2 from 0+ in (pol d,p), (d,p), (p,d), and {+9}Be({+36}S,{+35}S) and
- 35S 2cL L+1/2 transfer from analyzing power.                                   
+ 35S  cL J$L=2 from 0+ in (pol d,p), (d,p), (p,d), and {+9}Be({+36}S,{+35}S);   
+ 35S 2cL L+1/2 transfer from J-dependence in (p,d) and L+1/2 transfer from      
+ 35S 3cL analyzing power.                                                       
  35S  cL T$lifetime |t=100 fs {I35} in (d,p|g) from 1972Fr11 with DSAM.         
  35S   G 368.7     5 14      8  [E1]                                            
  35S S G  CC=0.0002294 33$KC=0.0002116 31$LC=1.635E-5 24$MC=1.376E-6 20         
@@ -159,8 +161,8 @@
  35S   L 2938.62   5  3/2+                                                      
  35S X L XREF=ACFHIJKLM                                                         
  35S  cL J$L=2 from 0+ in (d,p), (p,d), (pol d,p), and L=(2) in                 
- 35S 2cL {+9}Be({+36}S,{+35}S); L-1/2 from J-dependence in (p,d); possibly      
- 35S 3cL allowed |b{+-} feeding from 1/2+ parent with log {Ift}=5.0.            
+ 35S 2cL {+9}Be({+36}S,{+35}S); L-1/2 transfer from J-dependence in (p,d);      
+ 35S 3cL possibly allowed |b{+-} feeding from 1/2+ parent with log {Ift}=5.0.   
  35S   G 590.84      10      LT                                                 
  35S   G 947.34      20      LT                                                 
  35S   G 1366.22     15      LT                                                 
@@ -169,8 +171,9 @@
  35S 2cG 2938.58 {I11} from (n,|g) E=thermal.                                   
  35S   L 3423.2    20 5/2+             69 FS     LT                             
  35S X L XREF=CHIJKLMO                                                          
- 35S  cL J$L=2 from 0+ in (pol d,p), (d,p), (p,d), and {+9}Be({+36}S,{+35}S) and
- 35S 2cL L+1/2 transfer from analyzing power.                                   
+ 35S  cL J$L=2 from 0+ in (pol d,p), (d,p), (p,d), and {+9}Be({+36}S,{+35}S);   
+ 35S 2cL L+1/2 transfer from J-dependence in (p,d) and L+1/2 transfer from      
+ 35S 3cL analyzing power.                                                       
  35S  cL T$lifetime |t<100 fs in (d,p|g) from 1972Fr11 with DSAM.               
  35S   G 484.6       4       LT [M1,E2]                                         
  35S S G  CC=2.7E-4 13$KC=2.5E-4 12$LC=1.9E-5 9$MC=1.6E-6 8                     
@@ -210,11 +213,12 @@
  35S  cG E,RI$from (n,|g) E=thermal.                                            
  35S   L 3594.62   24  (7/2)+                                                   
  35S X L XREF=C(3595)DEI(3596)JK(3592)L(3598)MO                                 
- 35S  cL J$3594.5|g Q, |DJ=2 to 3/2+, g.s.; L=2+4 from 3/2+ in (p,{+3}He); L=(2)
- 35S 2cL from 0+ in (p,d) and {+9}Be({+36}S,{+35}S). 7/2+ is suggested by shell 
- 35S 3cL model (2014Ay01,2021Go09). If 3594.5|g is consistent with |DJ=0 to     
- 35S 4cL 3/2+, the discrepancy between the in-beam |g-ray spectroscopy          
- 35S 5cL ({+14}N,3p|g) and transfer reactions may be resolved.                  
+ 35S  cL J$3594.5|g Q, |DJ=2 to 3/2+, g.s.; L=2+4 from 3/2+ in (p,{+3}He): L=2  
+ 35S 2cL suggests (1/2+ to 9/2+) and L=4 suggests (3/2+ to 13/2+); L=(2) from 0+
+ 35S 3cL in (p,d) and {+9}Be({+36}S,{+35}S). 7/2+ is suggested by shell model   
+ 35S 4cL (2014Ay01,2021Go09). If 3594.5|g is consistent with |DJ=0 to 3/2+, the 
+ 35S 5cL discrepancy between the in-beam |g-ray spectroscopy ({+14}N,3p|g) and  
+ 35S 6cL transfer reactions may be resolved.                                    
  35S   G 655.99      10      LT                                                 
  35S   G 877.6     5 9.3     23                                                 
  35S  cG E,RI$from ({+14}N,3p|g). Other: I|g<11 from (d,p|g).                   
@@ -389,7 +393,8 @@
  35S   L 4477.63   7  (5/2+)           62 FS     LT                             
  35S X L XREF=FI(4481*)JL(4489)M                                                
  35S  cL J$2905.1|g to 1/2+, 1572.370 and 2486.27|g to 7/2-, 1991.27. L=2 from  
- 35S 2cL 3/2+ in (p,{+3}He). L=2 component of L=2,3 doublet from 0+ in (d,p).   
+ 35S 2cL 3/2+ in (p,{+3}He) suggests (1/2+ to 9/2+). L=2 component of L=2,3     
+ 35S 3cL doublet from 0+ in (d,p).                                              
  35S  cL T$lifetime |t<90 fs in (d,p|g) from 1972Fr11 with DSAM.                
  35S   G 591.35      8.2     LT [M1,E2]                                         
  35S S G  CC=1.5E-4 6$KC=1.4E-4 5$LC=1.1E-5 4$MC=9.2E-7 34                      
@@ -425,14 +430,16 @@
  35S  cG RI$other: 28 {I6} from (d,|a|g).                                       
  35S   L 4486      7  7/2-                                                      
  35S X L XREF=H(4482)I(4481*)K                                                  
- 35S  cL J$L=3 from 0+ in (pol d,p) and L+1/2 transfer from analyzing power. L=3
- 35S 2cL component of L=2,3 doublet from 0+ in (d,p).                           
+ 35S  cL E$from (p,d).                                                          
+ 35S  cL J$L=3 from 0+ in (p,d) and (pol d,p), and L+1/2 transfer from analyzing
+ 35S 2cL power. L=3 component of L=2,3 doublet from 0+ in (d,p).                
  35S   L 4575      5  3/2+                                                      
  35S X L XREF=HIKL                                                              
  35S  cL E$weighted average of 4575 {I8} from (d,p), 4577 {I10} from (p,{+3}He),
  35S 2cL and 4574 {I5} from (p,d)                                               
- 35S  cL J$L=2 from 0+ and L-1/2 from J-dependence in (p,d). L=0+2 from 3/2+ in 
- 35S 2cL (p,{+3}He) with L=0: (1/2+,3/2+,5/2+) and L=2: (1/2+ to 9/2+).         
+ 35S  cL J$L=2 from 0+ and L-1/2 transfer from J-dependence in (p,d). L=0+2 from
+ 35S 2cL 3/2+ in (p,{+3}He): L=0 suggests (1/2+,3/2+,5/2+) and L=2 suggests     
+ 35S 3cL (1/2+ to 9/2+).                                                        
  35S   L 4615      5  3/2+,5/2+                                                 
  35S X L XREF=KL                                                                
  35S  cL E$weighted average of 4614 {I5} from (p,d) and 4617 {I10} from         
@@ -452,11 +459,12 @@
  35S  cG E,RI$other: 1228.3 {I6} with I|g=100 {I18} from ({+18}O,2|an|g)        
  35S  cG M$from ({+14}N,3p|g).                                                  
  35S   G 2831.4    9 36      9                                                  
- 35S   L 4839      5  (+)                                                       
+ 35S   L 4839      5  (1/2+)                                                    
  35S X L XREF=HIKL                                                              
  35S  cL E$weighted average of 4837 {I8} from (d,p), 4838 {I5} from (p,d), and  
  35S 2cL 4843 {I10} from (p,{+3}He). Other: 4837 from (pol d,p).                
- 35S  cL J$L=2 from 3/2+ in (p,{+3}He) suggests |p=+. L=2 gives 1/2+ to 9/2+.   
+ 35S  cL J$L=(0) from 0+ in (p,d); L=2 from 3/2+ in (p,{+3}He) suggests (1/2+ to
+ 35S 2cL 9/2+).                                                                 
  35S   L 4899.82   27 (9/2+)                                                    
  35S X L XREF=DE                                                                
  35S  cL J$2908.3|g D, |DJ=1 to 7/2-, 1991.27; 977.9|g D+Q, |DJ=1 from (11/2+), 
@@ -479,8 +487,8 @@
  35S X L XREF=FHIK(4955)L                                                       
  35S  cL J$L=2 from 0+ and L+1/2 transfer from J-dependence in (p,d). Other: L=1
  35S 2cL from 0+ in (d,p) and (pol d,p) and L+1/2 transfer from analyzing power.
- 35S 3cL 2026Jo01 in (p,d) states that the J|p value is confronted with strong  
- 35S 4cL evidence.                                                              
+ 35S 3cL 2026Jo01 in (p,d) acknowledges the discrepancy and states that the J|p 
+ 35S 4cL value is confronted with strong evidence.                              
  35S   G 1161.05   20 0.98   14                                                 
  35S   G 1404.967  24 10.7   11                                                 
  35S   G 2615.2    2  19.5   18                                                 
@@ -489,8 +497,8 @@
  35S   G 4963.06   22 47     5                                                  
  35S   L 4990      10 (+)                                                       
  35S X L XREF=L                                                                 
- 35S  cL J$L=0+2 from 3/2+ in (p,{+3}He). L=0 gives (1/2+, 3/2+, 5/2+); L=2     
- 35S 2cL gives (1/2+ to 9/2+).                                                  
+ 35S  cL J$L=0+2 from 3/2+ in (p,{+3}He): L=0 suggests (1/2+,3/2+,5/2+) and L=2 
+ 35S 2cL suggests (1/2+ to 9/2+).                                               
  35S   L 5010.05   29 (11/2)-          0.45 PS   8                              
  35S X L XREF=DE                                                                
  35S  cL J$3018.5|g E2, |DJ=2 to 7/2-, 1991.27; 986.8|g to (11/2)-, 4023.24     
@@ -510,16 +518,17 @@
  35S  cL E$from (d,p)                                                           
  35S  cL J$L=3 from 0+ in (d,p) and (pol d,p) and L+1/2 transfer from analyzing 
  35S 2cL power.                                                                 
- 35S   L 5123      5  (+)                                                       
+ 35S   L 5123      5  1/2+                                                      
  35S X L XREF=HIKL                                                        
  35S  cL E$weighted average of 5126 {I11} from (d,p), 5121 {I5} from (p,d), and 
  35S 2cL 5127 {I10} from (p,{+3}He)                                             
- 35S  cL J$L=2 from 3/2+ in (p,{+3}He) suggests |p=+. L=2 gives (1/2+ to 9/2+). 
+ 35S  cL J$L=0 from 0+ in (p,d); L=2 from 3/2+ in (p,{+3}He) suggests (1/2+ to  
+ 35S 2cL 9/2+).                                                                 
  35S   L 5343      8  (-)                                                       
  35S X L XREF=IL                                                                
  35S  cL E$weighted average of 5342 {I8} from (d,p) and 5345 {I10} from         
  35S 2cL (p,{+3}He)                                                             
- 35S  cL J$L=3 from 3/2+ in (p,{+3}He) suggests |p=-. L=3 gives (1/2- to 11/2-).
+ 35S  cL J$L=3 from 3/2+ in (p,{+3}He) suggests (1/2- to 11/2-).                
  35S   L 5412.28   25 (9/2+)                                                    
  35S X L XREF=DE                                                                
  35S  cL J$1389.0|g D, |DJ=1 to (11/2)-, 4023.24; 1525.7|g to (5/2+), 3886.28.  
@@ -530,18 +539,20 @@
  35S   G 3420.6    9 28.2    26                                                 
  35S   L 5550      10                                                           
  35S X L XREF=I(5542?)L                                                         
- 35S  cL J$L=(3) from 3/2+ in (p,{+3}He). L=3 gives (1/2- to 11/2-).            
+ 35S  cL J$L=(3) from 3/2+ in (p,{+3}He): L=3 suggests (1/2- to 11/2-).         
  35S   L 5752.5    8  5/2-,7/2-                                                 
  35S X L XREF=FI(5740)                                                          
  35S  cL J$L=3 from 0+ in (d,p).                                                
  35S   G 5752.0    8 100                                                        
- 35S   L 5767      5  (+)                                                       
+ 35S   L 5767      5  5/2+                                                      
  35S X L XREF=KL                                                                
  35S  cL E$weighted average of 5766 {I5} from (p,d) and 5771 {I10} from         
  35S 2cL (p,{+3}He)                                                             
- 35S  cL J$L=2 from 3/2+ in (p,{+3}He) suggests |p=+. L=2 gives (1/2+ to 9/2+). 
- 35S   L 5841.482  31                                                           
+ 35S  cL J$L=2 from 0+ and L+1/2 transfer from J-dependence in (p,d); L=2 from  
+ 35S 2cL 3/2+ in (p,{+3}He) suggests (1/2+ to 9/2+).                            
+ 35S   L 5841.482  31 (3/2+,5/2+)                                               
  35S X L XREF=FK                                                                
+ 35S  cL J$L=(2) from 0+ in (p,d).                                              
  35S   G 4268.65   14 100                                                       
  35S  cG E,RI$from (n,|g) E=thermal.                                            
  35S   L 5877.70   22 (11/2+)                                                   
@@ -598,12 +609,12 @@
  35S  cL J$L=1 from 0+ in (d,p).                                                
  35S   G 3139.9    5 22      7                                                  
  35S   G 6077.87   11 100    12                                                 
- 35S   L 6123      5  (+)                                                       
+ 35S   L 6123      5  (3/2+,5/2+)                                               
  35S X L XREF=KL                                                          
  35S  cL E$weighted average of 6121 {I5} from (p,d) and 6129 {I10} from         
  35S 2cL (p,{+3}He)                                                             
- 35S  cL J$L=0+2 from 3/2+ in (p,{+3}He) suggests |p=+. L=0 gives (1/2+, 3/2+,  
- 35S 2cL 5/2+); L=2 gives (1/2+ to 9/2+).                                       
+ 35S  cL J$L=(2) from 0+ in (p,d); L=0+2 from 3/2+ in (p,{+3}He): L=0 suggests  
+ 35S 2cL (1/2+,3/2+,5/2+) and L=2 suggests (1/2+ to 9/2+).                      
  35S   L 6293.93   6                                                            
  35S X L XREF=FI(6292)                                                          
  35S  cL E$other: 6292 {I8} from (d,p).                                         
@@ -622,7 +633,7 @@
  35S X L XREF=IL                                                          
  35S  cL E$weighted average of 6344 {I8} from (d,p) and 6347 {I10} from         
  35S 2cL (p,{+3}He)                                                             
- 35S  cL J$L=(2) from 3/2+ in (p,{+3}He) suggests |p=(+)                        
+ 35S  cL J$L=(2) from 3/2+ in (p,{+3}He) suggests (1/2+ to 9/2+).               
  35S   L 6352.2    5  (13/2)-          50 FS     10                             
  35S X L XREF=D                                                                 
  35S  cL J$2535.8|g E2, |DJ=2 to (9/2)-, 3816.01; 2329.5|g (M1), |DJ=1 to       
@@ -651,24 +662,27 @@
  35S X L XREF=I                                                                 
  35S   L 6537.7    14                                                           
  35S X L XREF=I                                                                 
- 35S   L 6545.1    13                                                           
+ 35S   L 6545.1    13 3/2+,5/2+                                                 
  35S X L XREF=IK(6550)                                                          
+ 35S  cL J$L=2 from 0+ in (p,d).                                                
  35S   L 6584      10                                                           
  35S X L XREF=I                                                                 
  35S   L 6629.43   9                                                            
  35S X L XREF=F                                                                 
  35S   G 6628.5    6 100                                                        
  35S  cG E,RI$from (n,|g) E=thermal.                                            
- 35S   L 6635.2    13                                                           
+ 35S   L 6635.2    13 3/2+,5/2+                                                 
  35S X L XREF=IK                                                                
+ 35S  cL J$L=2 from 0+ in (p,d).                                                
  35S   L 6654      10 (-)                                                       
  35S X L XREF=L                                                                 
- 35S  cL J$L=(3) from 3/2+ in (p,{+3}He) suggests |p=(-)                        
- 35S   L 6683      5 (+)                                                        
+ 35S  cL J$L=(3) from 3/2+ in (p,{+3}He) suggests (1/2- to 11/2-).              
+ 35S   L 6683      5  1/2+                                                      
  35S X L XREF=IKL                                                               
  35S  cL E$weighted average of 6677 {I8} from (d,p), 6682 {I5} from (p,d), and  
  35S 2cL 6696 {I10} from (p,{+3}He)                                             
- 35S  cL J$L=2 from 3/2+ in (p,{+3}He) suggests |p=+. L=2 gives (1/2+ to 9/2+). 
+ 35S  cL J$L=0 from 0+ in (p,d); L=2 from 3/2+ in (p,{+3}He) suggests (1/2+ to  
+ 35S 2cL 9/2+).                                                                 
  35S   L 6761.0    12                                                           
  35S X L XREF=F                                                                 
  35S   G 6760.3    12 100                                                       
@@ -848,7 +862,8 @@
  35S X L XREF=G                                                                 
  35S   L 8093.0    5  1/2-                                                      
  35S X L XREF=GK(8103)L(8103)                                                   
- 35S  cL E$from (n,n). Other: 8103 {I10} from (p,{+3}He)                        
+ 35S  cL E$from (n,n). Others: 8103 {I5} from (p,d) and 8103 {I10} from         
+ 35S 2cL (p,{+3}He)                                                             
  35S   L 8143.75   20                                                           
  35S X L XREF=G                                                                 
  35S   L 8160      10                                                           
@@ -894,7 +909,7 @@
  35S  cG E,RI$from ({+18}O,2|an|g)                                              
  35S   L 9155      10                                                           
  35S X L XREF=L                                                                 
- 35S  cL J$L=2 from 3/2+ in (p,{+3}He). L=2 gives (1/2+ to 9/2+).               
+ 35S  cL J$L=2 from 3/2+ in (p,{+3}He) suggests (1/2+ to 9/2+).                 
  35S   L 10048.6   9  (19/2+)                                                   
  35S X L XREF=E                                                                 
  35S  cL J$2868.7|g Q, |DJ=2 to (15/2+), 7179.74.                               
