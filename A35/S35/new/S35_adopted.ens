@@ -2,8 +2,8 @@
  35S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$          
  35S   H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35S 2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
+ 35S  dG $Transition strength is calculated by Java-RULER (version 11-Nov-2025) 
  35S  DG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
- 35S  dG $Transition strength is calculated by Java-RULER (version 10-Jun-2025) 
  35S  dL E$Least-squares fitting is done by GLSC (version 09-Feb-2026)          
  35S   Q 167.322   26 6985.844 11586.5 8 -8322.096     2021WA16                 
  35S  cQ $S(2n)=18402.99 {I4}, S(2p)=22909.8 {I7} (2021Wa16)                    
@@ -82,7 +82,7 @@
  35S 2cG {I3} from ({+14}N,3p|g), 1572.333 {I8} from (n,|g) E=thermal, 1572.24  
  35S 3cG {I17} from (d,p|g), and 1572 {I1} from {+208}Pb({+36}S,{+35}S|g)       
  35S  cG M$D from ({+14}N,3p|g); |D|p=no from level scheme.                     
- 35S B G BM1W=0.00247 +16-14                                                    
+ 35S B G BM1W=0.00248 16                                                        
  35S   L 1991.27   4  7/2-             1.03 NS   5                              
  35S X L XREF=CDEFHIJKLMNO                                                      
  35S  cL J$L=3 from 0+ in (p,d) and (pol d,p), and L+1/2 transfer from analyzing
@@ -99,7 +99,7 @@
  35S 3cG {+208}Pb({+36}S,{+35}S|g).                                             
  35S  cG M,MR$from (d,p|g). D+Q or Q+O from |g(|q) in (d,p|g); E2+M3 is ruled   
  35S 2cG out by RUL; D+Q is inconsistent with level scheme from 7/2- to 3/2+.   
- 35S B G BM2W=0.087 5 $BE3W=3.7 +28-22                                          
+ 35S B G BM2W=0.0874 +46-48 $BE3W=3.7 +29-21                                    
  35S   L 2347.779  10 3/2-             0.78 PS   12                             
  35S X L XREF=BCDFHIJKMO                                                        
  35S  cL J$L=1 from 0+ in (pol d,p), (d,p), (p,d), and {+9}Be({+36}S,{+35}S) and
@@ -128,7 +128,7 @@
  35S 2cG (n,|g) E=thermal, and 100.0 {I28} from (d,p|g)                         
  35S  cG M$D(+Q) from |g(|q) in (d,p|g); |D|p=yes from level scheme; M2         
  35S 2cG component is less likely based on RUL.                                 
- 35S B G BE1W=4.6E-5 +9-6                                                       
+ 35S B G BE1W=4.6E-5 +8-6                                                       
  35S   L 2717.06   8  5/2+             69 FS     24                             
  35S X L XREF=CDFHIJKLMO                                                        
  35S  cL J$L=2 from 0+ in (pol d,p), (d,p), (p,d), and {+9}Be({+36}S,{+35}S);   
@@ -141,7 +141,7 @@
  35S 2cG from {+208}Pb({+36}S,{+35}S|g)                                         
  35S  cG RI$unweighted average of 6.7 {I23} from (n,|g) E=thermal and 22 {I4}   
  35S 2cG from {+208}Pb({+36}S,{+35}S|g)                                         
- 35S B G BE1W=0.022 +19-10                                                      
+ 35S B G BE1W=0.022 +20-10                                                      
  35S   G 725.78      5       LT [E1]                                            
  35S S G  CC=4.10E-5 6$KC=3.78E-5 5$LC=2.92E-6 4$MC=2.459E-7 34                 
  35S   G 1144.67     5       LT [E2]                                            
@@ -240,20 +240,20 @@
  35S   G 863.28    28 1.3    4  [E1]                                            
  35S S G  CC=2.82E-5 4$KC=2.60E-5 4$LC=2.008E-6 28$MC=1.693E-7 24               
  35S  cG E,RI$from (n,|g) E=thermal. Other: I|g<8.9 from (d,p|g).               
- 35S B G BE1W=2.4E-4 +29-12                                                     
+ 35S B G BE1W=2.4E-4 +30-12                                                     
  35S   G 1084.79   15 2.2    7  [E1]                                            
  35S S G  CC=1.801E-5 25$KC=1.662E-5 23$LC=1.281E-6 18$MC=1.080E-7 15           
  35S  cG E$from (n,|g) E=thermal.                                               
  35S  cG RI$weighted average of 2.1 {I4} from (n,|g) E=thermal and 11 {I5} from 
  35S 2cG (d,p|g)                                                                
- 35S B G BE1W=2.0E-4 +25-11                                                     
+ 35S B G BE1W=2.0E-4 +28-11                                                     
  35S   G 1454.09   4 18      5  [M1,E2]                                         
  35S S G  CC=8.0E-5 12$KC=1.73E-5 16$LC=1.33E-6 12$MC=1.13E-7 11                
  35S S G  IPC=6.2E-5 10                                                         
  35S  cG E$from (n,|g) E=thermal.                                               
  35S  cG RI$weighted average of 18 {I4} from (n,|g) E=thermal and 18 {I7} from  
  35S 2cG (d,p|g)                                                                
- 35S  cG $B(M1)(W.u.)=0.024 {I+29-12} if M1, B(E2)(W.u.)=4|*10{+1} {I+5-2} if E2
+ 35S  cG $B(M1)(W.u.)=0.024 {I+32-12} if M1, B(E2)(W.u.)=4|*10{+1} {I+6-2} if E2
  35S   G 1810.63     8.9     LT [E2]                                            
  35S S G  CC=0.0002364 33$KC=1.223E-5 17$LC=9.43E-7 13$MC=7.95E-8 11            
  35S S G  IPC=0.0002231 31                                                      
@@ -270,7 +270,7 @@
  35S  cG E$from (n,|g) E=thermal.                                               
  35S  cG RI$from (d,|a|g). Other: 100 {I9} from (d,p|g), 100 {I9} from (n,|g)   
  35S 2cG E=thermal.                                                             
- 35S B G BE1W=2.2E-4 +25-10                                                     
+ 35S B G BE1W=2.2E-4 +27-10                                                     
  35S   L 3816.01   21 (9/2)-           0.28 PS   3                              
  35S X L XREF=CDEHJL(3811*)MO                                                   
  35S  cL J$1824.7|g M1+E2 to 7/2-, 1991.27; 2061.6|g D, |DJ=1 from (11/2+),     
@@ -309,7 +309,7 @@
  35S  cL T$in ({+14}N,3p|g) from 2014Ay01 with DSAM.                            
  35S   G 207.0     5 0.59    30 [M1+E2]  0.25    LT    0.0012424                
  35S S G  KC=0.00114 22$LC=8.9E-5 17$MC=7.5E-6 14                               
- 35S  cG $B(M1)(W.u.)=0.046 {I+25-22} if M1                                     
+ 35S  cG $B(M1)(W.u.)=0.05 {I+4-3} if M1                                        
  35S  cG MR$calculated by evaluators from the measured half-life of the level   
  35S 2cG and RUL=100 for B(E2)(W.u.).                                           
  35S   G 2032.0    3 100     6  E2                                              
@@ -672,7 +672,7 @@
  35S S G  CC=0.000581 8$KC=6.72E-6 9$LC=5.18E-7 7$MC=4.37E-8 6                  
  35S S G  IPC=0.000574 8                                                        
  35S  cG M$Q from |g|g(|q)(ADO) in ({+14}N,3p|g) and M2 ruled out by RUL.       
- 35S B G BE2W=5.3 +18-12                                                        
+ 35S B G BE2W=5.3 +17-11                                                        
  35S   L 6354.89   23                                                           
  35S X L XREF=F                                                                 
  35S   G 6355.0    6 100                                                        
@@ -764,7 +764,7 @@
  35S  cL T$in ({+14}N,3p|g) from 2014Ay01 with DSAM.                            
  35S   G 827.8     6 2.2     8  [E1]                                            
  35S S G  CC=3.08E-5 4$KC=2.84E-5 4$LC=2.192E-6 31$MC=1.848E-7 26               
- 35S B G BE1W=7E-6 +5-3                                                         
+ 35S B G BE1W=7E-6 +6-3                                                         
  35S   G 880.2     4 5.9     8                                                  
  35S   G 1302.0    3 100     6  E2                                              
  35S S G  CC=5.56E-5 8$KC=2.393E-5 34$LC=1.847E-6 26$MC=1.558E-7 22             
@@ -772,7 +772,7 @@
  35S  cG E$weighted average of 1302.2 {I2} from ({+14}N,3p|g) and 1301.6 {I3}   
  35S 2cG from ({+18}O,2|an|g)                                                   
  35S  cG M$Q from |g|g(|q)(ADO) in ({+14}N,3p|g) and M2 ruled out by RUL.       
- 35S B G BE2W=7 +4-2                                                            
+ 35S B G BE2W=6.6 +41-19                                                        
  35S   L 7210.42   5  1/2-,3/2,5/2+                                             
  35S X L XREF=GI(7205*)K(7215*)                                                 
  35S   L 7218.0    4                   0.33 EV   2                              
@@ -1060,4 +1060,4 @@
  35S X L XREF=K                                                                 
  35S   L 1.470E4   10                                                           
  35S X L XREF=K                                                                 
-      
+                                                                                
