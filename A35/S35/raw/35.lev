@@ -1,5 +1,5 @@
 Program for consistency check: output for levels (version 03/31/2026)
-Generated at: Thu 04/16/2026 at 04:26:07 PM EDT
+Generated at: Thu 04/16/2026 at 05:09:15 PM EDT
 
 
 
@@ -80,7 +80,7 @@ Generated at: Thu 04/16/2026 at 04:26:07 PM EDT
  2938.63    5                                                        34S(N,G) E=THERMAL                         F
  2939            3/2+,5/2+                               2           34S(POL D,P)                               H
  2941       10   3/2+                                    2           34S(D,P)                                   I
- 2935       3    (3/2)+                                              34S(D,PG)                                  J
+ 2935       3    3/2+                                                34S(D,PG)                                  J
  2937       5    3/2+                                    2           36S(P,D)                                   K
  2938       10                                           0+2+4       37CL(P,3HE)                                L
  2939.2     13                                                       37CL(D,AG)                                 M
@@ -99,21 +99,21 @@ Generated at: Thu 04/16/2026 at 04:26:07 PM EDT
  3558.082   27                                                       34S(N,G) E=THERMAL                         F
  3563                                                                34S(POL D,P)                               H
  3560       8                                                        34S(D,P)                                   I
- 3558            (3/2-,5/2+)                                         34S(D,PG)                                  J
+ 3558            (5/2+)                                              34S(D,PG)                                  J
  3558       5    (5/2+)                                  (2)         36S(P,D)                                   K
  3560.8     19                                                       37CL(D,AG)                                 M
- 3558.1     14   (3/2-,5/2+)                                         208PB(36S,35SG)                            O
+ 3558.1     14   (5/2+)                                              208PB(36S,35SG)                            O
 
  3594.62    24   (7/2+)                                              ADOPTED LEVELS, GAMMAS                     
  3595       5                                            (2)         9BE(36S,35SG)                              C
  3594.7     3    7/2+                                                24MG(14N,3PG)                              D
  3594.2     7    (7/2+)                                              26MG(18O,2ANG)                             E
  3596       8                                                        34S(D,P)                                   I
- 3592       5    7/2(+)                                              34S(D,PG)                                  J
+ 3592       5    (7/2+)                                              34S(D,PG)                                  J
  3592       5    (5/2+)                                  (2)         36S(P,D)                                   K
  3598       10                                           2+4         37CL(P,3HE)                                L
  3598.4     21                                                       37CL(D,AG)                                 M
- 3593       2    7/2(+)                                              208PB(36S,35SG)                            O
+ 3593       2    (7/2+)                                              208PB(36S,35SG)                            O
 
  3675       10   (1/2-,3/2-)                                         ADOPTED LEVELS, GAMMAS                     
  3675       10   (1/2-,3/2-)                             (1)         34S(D,P)                                   I
@@ -143,7 +143,7 @@ Generated at: Thu 04/16/2026 at 04:26:07 PM EDT
  3886.28         (5/2)                                               ADOPTED LEVELS, GAMMAS                     
  3886.4     4    5/2+                                                24MG(14N,3PG)                              D
  3885       10                                                       34S(D,P)                                   I(*)
- 3885.0     10   (5/2+)                                              34S(D,PG)                                  J
+ 3885.0     10   (5/2)                                               34S(D,PG)                                  J
 
  3890       4                                            (0)         9BE(36S,35SG)                              C
  3885       10                                                       34S(D,P)                                   I(*)
@@ -160,7 +160,7 @@ Generated at: Thu 04/16/2026 at 04:26:07 PM EDT
  4027.2     14   (3/2+,5/2+)                                         ADOPTED LEVELS, GAMMAS                     
  4025       4                                            (2)         9BE(36S,35SG)                              C
  4025       10                                                       34S(D,P)                                   I(*)
- 4025.0     10   3/2+,5/2+                                           34S(D,PG)                                  J
+ 4025.0     10   (3/2+,5/2+)                                         34S(D,PG)                                  J
  4023       5    (3/2+)                                  (2)         36S(P,D)                                   K
  4027       10                                           2           37CL(P,3HE)                                L
  4027.7     10                                                       37CL(D,AG)                                 M
@@ -168,7 +168,7 @@ Generated at: Thu 04/16/2026 at 04:26:07 PM EDT
  4105.6     8    (5/2+)               55 FS LT                       ADOPTED LEVELS, GAMMAS                     
  4105.6     8                                                        34S(N,G) E=THERMAL                         F
  4109       10                                                       34S(D,P)                                   I
- 4107       2    (3/2-,5/2+)          55 FS LT                       34S(D,PG)                                  J
+ 4107       2    (5/2+)               55 FS LT                       34S(D,PG)                                  J
  4107       7    (3/2+)                                  (2)         36S(P,D)                                   K
  4114       10                                           0+2         37CL(P,3HE)                                L
  4108       3                                                        37CL(D,AG)                                 M
@@ -907,12 +907,12 @@ Statistics of levels and gammas from all datasets of 35S:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                    35S        200          147          604          413            2811             15
+                    35S        200          147          604          413            2821             15
 
-               IN TOTAL        200          147          604          413            2811             15
+               IN TOTAL        200          147          604          413            2821             15
 
 Number of nuclides     : 1
 Number of blocks       : 16
 Number of references   : 93
-Number of lines in files: 2827
+Number of lines in files: 2837
 (from all blocks including abstract, comment, reference)

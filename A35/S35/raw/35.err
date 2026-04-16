@@ -1,12 +1,9 @@
 Program for consistency check: output for Error and Warnings (version 03/31/2026)
-Generated at: Thu 04/16/2026 at 04:26:07 PM EDT
+Generated at: Thu 04/16/2026 at 05:09:16 PM EDT
 
 ################################################################################
 In Adopted dataset of 35S
 
- 35S   L 3558.080  28 (5/2+)                                                    
- 35S  cL J$L=(2) from 0+ in (p,d); 1986|g to 1/2+, 1572.370 and 1566.7|g to     
-                                                                          *       <W> JPI after EG=1566.7 is unrecognized. Please check.
  35S   L 3886.28      (5/2)                                                     
  35S X L XREF=C(3890)DIJKM(3889)
          *                                                                        <E> No match for E(level) in (3889) at tag=M: 37CL(D,AG)
@@ -14,9 +11,6 @@ In Adopted dataset of 35S
                                                                                       XREF tag=M: level possibly not or inconsistent (E/JPI) in M=37CL(D,AG)
                                                                                         closest level in M=37CL(D,AG)
                                                                                         3889.0     19   possible JPI=(1/2+)
- 35S   L 4105.6    8  (5/2+)           55 FS     LT                             
- 35S  cL J$L=(2) from 0+ in (p,d); 2533.1|g to 1/2+, 1572.370 and 2114.3|g to   
-                                                                            *     <W> JPI after EG=2114.3 is unrecognized. Please check.
 
 ################################################################################
 In dataset of 35S: XC 9BE(36S,35SG)     XREF Tag=C
@@ -60,18 +54,7 @@ In dataset of 35S: XI 34S(D,P)     XREF Tag=I
 ################################################################################
 In dataset of 35S: XJ 34S(D,PG)     XREF Tag=J
 
- 35S   L 2935      3  (3/2)+                                                    
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=3/2+ this JPI=(3/2)+
- 35S   L 3558         (3/2-,5/2+)                                               
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(5/2+) this JPI=(3/2-,5/2+)
- 35S   L 3592      5  7/2(+)                                                    
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(7/2+) this JPI=7/2(+)
- 35S   L 3885.0    10 (5/2+)                                                    
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(5/2) this JPI=(5/2+)
+ 35S   L 3885.0    10 (5/2)                                                     
  35S   G 1167.0       15     LT                                                 
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=1167.0      Adopted=1169.20
@@ -81,9 +64,7 @@ In dataset of 35S: XJ 34S(D,PG)     XREF Tag=J
  35S   G 1892.1       100                                                       
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=1892.1      Adopted=1894.9
- 35S   L 4025.0    10 3/2+,5/2+                                                 
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(3/2+,5/2+) this JPI=3/2+,5/2+
+ 35S   L 4025.0    10 (3/2+,5/2+)                                               
  35S   G 1307.0       8      LT                                                 
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=1307.0      Adopted=1310.1
@@ -93,9 +74,6 @@ In dataset of 35S: XJ 34S(D,PG)     XREF Tag=J
  35S   G 2032.0       10     LT                                                 
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=2032.0      Adopted=2035.9
- 35S   L 4107      2  (3/2-,5/2+)      55 FS     LT                             
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(5/2+) this JPI=(3/2-,5/2+)
 
 ################################################################################
 In dataset of 35S: XK 36S(P,D)     XREF Tag=K
@@ -175,12 +153,6 @@ In dataset of 35S: XM 37CL(D,AG)     XREF Tag=M
 ################################################################################
 In dataset of 35S: XO 208PB(36S,35SG)     XREF Tag=O
 
- 35S   L 3558.1    14 (3/2-,5/2+)                                               
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(5/2+) this JPI=(3/2-,5/2+)
- 35S   L 3593      2   7/2(+)                                                   
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(7/2+) this JPI=7/2(+)
  35S   L 3818.1    14 (9/2)-                                                    
  35S   G 1827      1  12.9   11                                                 
          *                                                                        <W> Check discrepancy in gamma energies:
