@@ -31,8 +31,10 @@
  35S 2cL levels connected with |g transitions; from transfer reactions or       
  35S 3cL {+34}S(n,n),(n,|g):resonances for other levels, unless otherwise noted.
  35S  cL J$For high-spin states, it is assumed that spin increases as the       
- 35S 2cL excitation energy increases. For resonances (>7 MeV), J|p is from      
- 35S 3cL {+34}S(n,n),(n,|g):resonances, unless otherwise noted.                 
+ 35S 2cL excitation energy increases. For resonances (7018-8418 keV), J|p is    
+ 35S 3cL from {+34}S(n,n),(n,|g):resonances, unless otherwise noted; for        
+ 35S 4cL resonances above 8418 keV, J|p is from {+36}S(p,d), unless otherwise   
+ 35S 5cL noted.                                                                 
  35S   XA35P B- DECAY (47.3 S)                                                  
  35S   XB2H(34S,PG)                                                             
  35S   XC9BE(36S,35SG)                                                          
@@ -749,10 +751,9 @@
  35S   G 6985.7    10 0.064  14                                                 
  35S   L 7018.89   4  3/2+,5/2+                                                 
  35S X L XREF=GI(7021)K(7019)                                                   
- 35S  cL E$from (n,n),(n,|g):resonances. Others: 7021 {I10} from {+34}S(d,p) and
- 35S 2cL 7019 {I5} from {+36}S(p,d).                                            
+ 35S  cL E$from (n,n),(n,|g):resonances.                                        
  35S  cL J$L=2 from 0+ in (n,n),(n,|g):resonances. Others: L=(2,3) from 0+ in   
- 35S 2cL {+34}S(d,p). L=(1) from 0+ in {+36}S(p,d).                             
+ 35S 2cL {+34}S(d,p) for 7021 {I10}; L=(1) from 0+ in {+36}S(p,d) for 7019 {I5}.
  35S   L 7072.66   5                   0.14 EV   4                              
  35S X L XREF=G                                                                 
  35S   L 7074.33   6                   0.084 EV  3                              
@@ -760,13 +761,14 @@
  35S   L 7097.72   30 3/2+,5/2+        0.009 EV  3                              
  35S X L XREF=G                                                                 
  35S   L 7099.85   20 3/2+,5/2+        0.033 EV  5                              
- 35S X L XREF=GI(7150*)L(7151?)                                                 
+ 35S X L XREF=G                                                
  35S   L 7100.73   4  3/2-                                                      
  35S X L XREF=GK                                                                
  35S  cL J$other: L=(1) from 0+ in {+36}S(p,d).                                 
  35S   L 7143.27   11 (5/2-,7/2-)      0.42 EV   1                              
  35S X L XREF=GI(7150)K(7151)L(7151?)                                           
- 35S  cL J$L=(3) from 0+ in {+36}S(p,d).                                        
+ 35S  cL J$L=(3) from 0+ in {+36}S(p,d). Others: L=(0,3) from 0+ in {+34}S(d,p);
+ 35S 2cL L=(4) from 3/2+ in (p,{+3}He) suggests (3/2+ to 13/2+).                
  35S   L 7179.74   32 (15/2+)          3.1 PS    12                             
  35S X L XREF=DE                                                                
  35S  cL J$1302.0|g E2, |DJ=2 to (11/2+), 5877.70; 827.8|g to (13/2)-, 6352.2.  
@@ -784,6 +786,8 @@
  35S B G BE2W=6.6 +41-19                                                        
  35S   L 7210.42   5  1/2-,3/2,5/2+                                             
  35S X L XREF=GI(7205*)K(7215*)                                                 
+ 35S  cL J$others: L=(1,2) from 0+ in {+34}S(d,p) for 7205 {I35}; L=2 from 0+ in
+ 35S 2cL {+36}S(p,d) for 7215 {I5}.                                             
  35S   L 7218.0    4                   0.33 EV   2                              
  35S X L XREF=GI(7205*)K(7215*)                                                 
  35S   L 7234.0    5                   0.19 EV   1                              
@@ -843,12 +847,13 @@
  35S   L 7462.2    6                   0.33 EV   4                              
  35S X L XREF=G                                                                 
  35S   L 7481.15   7  1/2-                                                      
- 35S X L XREF=GIK(7490)                                                         
+ 35S X L XREF=GI                                                         
  35S  cL E$weighted average of 7481.15 {I6} from (n,n),(n,|g):resonances and    
  35S 2cL 7482.7 {I13} from {+34}S(d,p)                                          
- 35S  cL J$L=1 from 0+ in {+34}S(d,p).                                          
- 35S   L 7494.5    6                   0.17 EV   4                              
- 35S X L XREF=GK                                                                
+ 35S  cL J$other: L=(1,2) from 0+ in {+34}S(d,p).                               
+ 35S   L 7494.5    6  1/2-,3/2-        0.17 EV   4                              
+ 35S X L XREF=GK(7490)                                                                
+ 35S  cL J$L=1 from 0+ in {+36}S(p,d).                                          
  35S   L 7542.3    6                   0.21 EV   3                              
  35S X L XREF=GI(7570*)                                                         
  35S   L 7604.0    6                   0.90 EV   8                              
@@ -882,8 +887,10 @@
  35S X L XREF=G                                                                 
  35S   L 7880.8    12                  0.67 EV   17                             
  35S X L XREF=GK(7885*)                                                         
+ 35S  cL J$L=(2) from 0+ in {+36}S(p,d) for 7885 {I5}.                          
  35S   L 7889.0    12                  0.57 EV   25                             
  35S X L XREF=GK(7885*)                                                         
+ 35S  cL J$L=(2) from 0+ in {+36}S(p,d) for 7885 {I5}.                          
  35S   L 7894.63   7  3/2-                                                      
  35S X L XREF=G                                                                 
  35S   L 7899.70   30                                                           
@@ -914,9 +921,10 @@
  35S X L XREF=G                                                                 
  35S   L 8076.46   20 3/2+,5/2+                                                 
  35S X L XREF=GK(8073*)                                                         
- 35S  cL J$other: L=(2) from 0+ in {+36}S(p,d).                                 
+ 35S  cL J$other: L=(2) from 0+ in {+36}S(p,d) for 8073 {I5}.                   
  35S   L 8077.91   30 3/2+,5/2+                                                 
  35S X L XREF=GK(8073*)                                                         
+ 35S  cL J$other: L=(2) from 0+ in {+36}S(p,d) for 8073 {I5}.                   
  35S   L 8093.0    5  1/2-                                                      
  35S X L XREF=GK(8103)L(8103)                                                   
  35S  cL E$from (n,n),(n,|g):resonances. Others: 8103 {I5} from {+36}S(p,d) and 
@@ -959,19 +967,19 @@
  35S X L XREF=GK(8410*)                                                         
  35S   L 8418.8    4  3/2+,5/2+                                                 
  35S X L XREF=GK(8410*)L(8430)                                                  
- 35S  cL J$other: L=(2) from 0+ in {+36}S(p,d); L=2 from 3/2+ in (p,{+3}He)     
+ 35S  cL J$others: L=(2) from 0+ in {+36}S(p,d); L=2 from 3/2+ in (p,{+3}He)    
  35S 2cL suggests (1/2+ to 9/2+).                                               
- 35S   L 8465      7  (5/2+)                                                    
+ 35S   L 8465      7  (3/2+,5/2+)                                                    
  35S X L XREF=K                                                                 
- 35S   L 8509      5  5/2+                                                      
+ 35S   L 8509      5  3/2+,5/2+                                                      
  35S X L XREF=K                                                                 
- 35S   L 8557      7  (7/2-)                                                    
+ 35S   L 8557      7  (5/2-,7/2-)                                                    
  35S X L XREF=K                                                                 
- 35S   L 8602      5  (7/2-)                                                    
+ 35S   L 8602      5  (5/2-,7/2-)                                                    
  35S X L XREF=K                                                                 
- 35S   L 8649      7  (7/2-)                                                    
+ 35S   L 8649      7  (5/2-,7/2-)                                                    
  35S X L XREF=K                                                                 
- 35S   L 8707      5  (5/2+)                                                    
+ 35S   L 8707      5  (3/2+,5/2+)                                                    
  35S X L XREF=K                                                                 
  35S   L 8755.9    11 (17/2)           1 PS      LT                             
  35S X L XREF=E                                                                 
@@ -982,7 +990,7 @@
  35S  cG E,RI$from ({+18}O,2|an|g).                                             
  35S   G 1576.3    14 100    22 D                                               
  35S  cG E,RI$from ({+18}O,2|an|g).                                             
- 35S   L 8761      7  (5/2+)                                                    
+ 35S   L 8761      7  (3/2+,5/2+)                                                    
  35S X L XREF=K                                                                 
  35S   L 8822      5  (1/2-,3/2-)                                               
  35S X L XREF=K                                                                 
@@ -996,6 +1004,8 @@
  35S X L XREF=K                                                                 
  35S   L 9126      7  1/2+                                                      
  35S X L XREF=KL(9155*)                                                         
+ 35S 2 L ISPIN=5/2                                                              
+ 35S  cL J,ISPIN$isobaric analog state of 1/2+, T=5/2, g.s. of {+35}P (2026Jo01)
  35S   L 9180      5                                                            
  35S X L XREF=K(9180)L(9155*)                                                   
  35S  cL J$L=2 from 3/2+ in (p,{+3}He) suggests (1/2+ to 9/2+).                 
@@ -1044,7 +1054,7 @@
  35S X L XREF=K                                                                 
  35S   L 1.0421E4  10 (1/2-,3/2-)                                               
  35S X L XREF=K                                                                 
- 35S   L 1.0493E4  10 (7/2-)                                                    
+ 35S   L 1.0493E4  10 (5/2-,7/2-)                                                    
  35S X L XREF=K                                                                 
  35S   L 1.0563E4  10 (1/2-,3/2-)                                               
  35S X L XREF=K                                                                 
@@ -1054,19 +1064,27 @@
  35S X L XREF=K                                                                 
  35S   L 1.0810E4  10 (1/2-,3/2-)                                               
  35S X L XREF=K                                                                 
- 35S   L 1.147E4   2  3/2+                                                      
+ 35S   L 1.147E4   2  (3/2)+                                                      
  35S X L XREF=K                                                                 
+ 35S 2 L ISPIN=5/2                                                              
+ 35S  cL J,ISPIN$IAS of 3/2+, T=5/2, 2387 level in {+35}P (2026Jo01)            
  35S   L 12469.3   14 (21/2)                                                    
  35S X L XREF=E                                                                 
  35S  cL J$2420.6|g (D), |DJ=(1) to (19/2+), 10048.6.                           
  35S   G 2420.6    11 100       (D)                                             
  35S  cG E,RI$from ({+18}O,2|an|g).                                             
- 35S   L 1.288E4   10 5/2+                                                      
+ 35S   L 1.288E4   10 (5/2)+                                                      
  35S X L XREF=K                                                                 
- 35S   L 1.368E4   10 5/2+                                                      
+ 35S 2 L ISPIN=5/2                                                              
+ 35S  cL J,ISPIN$IAS of 5/2+, T=5/2, 3860 level in {+35}P (2026Jo01)            
+ 35S   L 1.368E4   10 (5/2)+                                                      
  35S X L XREF=K                                                                 
- 35S   L 1.422E4   10 5/2+                                                      
+ 35S 2 L ISPIN=5/2                                                              
+ 35S  cL J,ISPIN$IAS of 5/2+, T=5/2, 4666 level in {+35}P (2026Jo01)            
+ 35S   L 1.422E4   10 (5/2)+                                                      
  35S X L XREF=K                                                                 
+ 35S 2 L ISPIN=5/2                                                              
+ 35S  cL J,ISPIN$IAS of 5/2+, T=5/2, 5199 level in {+35}P (2026Jo01)            
  35S   L 1.470E4   10                                                           
  35S X L XREF=K                                                                 
 
