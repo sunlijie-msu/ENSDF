@@ -438,20 +438,11 @@ Format: Plain numbers only (NO `{I}` notation, NO braces).
 -   RI: `70.0` with uncertainty `24` in DRI field means 70.0(24).
 -   T1/2: `2.29 PS` with uncertainty `14` in DT field means 2.29(14) PS.
 
-#### Standard 2-Column Uncertainty Fields (2 Digits Maximum)
+#### Standard 2-Column Uncertainty Fields (DE, DRI, DIP, DCC, DTI, DS)
 
--   **DE field** (cols 20-21): 1-2 digits with space padding.
-    -   Single digit: `"5 "` (digit + space), Double digits: `"15"` (two digits).
--   **DRI field** (cols 30-31): 1-2 digits OR special markers (G records).
-    -   Single digit: `"7 "` (digit + space), Double digits: `"24"`, Markers: `"GT"`, `"LT"`.
--   **DIP field** (cols 30-31): 1-2 digits with space padding (DP records).
-    -   Single digit: `"7 "` (digit + space), Double digits: `"17"` (two digits).
--   **DCC field** (cols 63-64): 1-2 digits with space padding.
-    -   Single digit: `"3 "` (digit + space), Double digits: `"18"` (two digits).
--   **DTI field** (cols 75-76): 1-2 digits with space padding.
-    -   Single digit: `"9 "` (digit + space), Double digits: `"42"` (two digits).
--   **DS field** (cols 75-76): 1-2 digits with space padding.
-    -   Single digit: `"2 "` (digit + space), Double digits: `"35"` (two digits).
+-   **field**: 1-2 digits with space padding.
+    -   Single digit: `"5 "` (digit + space), Double digits: `"15"` (two digits), Limit Markers: `"GT"`, `"LT"`.
+
 
 #### Extended Uncertainty Fields (Up to 6 Characters for Asymmetric Uncertainties)
 
@@ -467,7 +458,7 @@ Format: Plain numbers only (NO `{I}` notation, NO braces).
 -   Double digits in 2-column fields: Fill both columns completely.
 -   Asymmetric uncertainties: Use +X-Y format in 6-character fields (DT, DMR).
 -   **FORBIDDEN:** "123" not allowed in either 2-column fields (corrupts adjacent data) or in 6-column fields.
--   **Rounding carry-over:** When 1 sig fig rounding carries to the next decimal place (e.g., ±0.0098 → ±0.010), the field value is `10` and the main value rounds to 3 decimal places. This `10` represents ±0.010 at 3dp precision, not 2 significant figures.
+
 
 #### Scientific Notation Format
 
