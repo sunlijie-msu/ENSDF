@@ -423,15 +423,35 @@ Only in the Adopted Datasets: XREF (cross-reference) entries immediately followi
 **CRITICAL:** Uncertainties in data record fields and comment lines use DIFFERENT formats, but both follow an "uncertainty-in-last-digits" notation. Ensure the number of decimal places in the main value precisely matches the decimal place represented by the final digit of the uncertainty.
 
 Physics publication data typically allows 1 or 2 digits for uncertainties.
-Two Significant Figures (leading 2 digits of uncertainty 10–34) → 2-digit uncertainties, e.g., 1.2333±0.3220 → 1.23(32)
+
+Uncertainty applies to the last significant digit of the value.
+
+Rounding Threshold for uncertainty: 4-up, 3-down
+
 One Significant Figure (leading 2 digits of uncertainty 35–99) → 1-digit uncertainties, e.g., 1.2333±0.3680 → 1.2(4)
+
+Two Significant Figures (leading 2 digits of uncertainty 10–34) → 2-digit uncertainties, e.g., 1.2333±0.3220 → 1.23(32)
+
 Special case: for half-lives or lifetimes, two significant figures with leading 2 digits of uncertainty 35-99 are allowed.
+
+**Examples by Decimal Places:**
+
+| Value Decimals | Field Notation | Comment Notation | Meaning (± format) |
+| :--- | :--- | :--- | :--- |
+| 0 decimals | `1234  5 ` | `1234 {I5}` | 1234 ± 5 |
+| 0 decimals | `1234  26` | `1234 {I26}` | 1234 ± 26 |
+| 1 decimal | `12.3  6 ` | `12.3 {I6}` | 12.3 ± 0.6 |
+| 1 decimal | `3.6  11 ` | `3.6 {I11}` | 3.6 ± 1.1 |
+| 2 decimals | `1.23  7` | `1.23 {I7}` | 1.23 ± 0.07 |
+| 2 decimals | `1.23  21` | `1.23 {I21}` | 1.23 ± 0.21 |
+| 4 decimals | `0.0060  6` | `0.0060 {I6}` | 0.0060 ± 0.0006 |
+| 4 decimals | `0.0060  24` | `0.0060 {I24}` | 0.0060 ± 0.0024 |
 
 ### Uncertainty Format in Data Record Fields
 
 #### In Data Record Fields (L, G, E, B, DP Records)
 
-Format: Plain numbers only (NO `{I}` notation, NO braces).
+Format: Plain integers only (NO `{I}` notation, NO parentheses).
 
 **Examples:**
 -   Energy: `1572.0` with uncertainty `12` in DE field means 1572.0(12).
@@ -441,15 +461,14 @@ Format: Plain numbers only (NO `{I}` notation, NO braces).
 #### Standard 2-Column Uncertainty Fields (DE, DRI, DIP, DCC, DTI, DS)
 
 -   **field**: 1-2 digits with space padding.
-    -   Single digit: `"5 "` (digit + space), Double digits: `"15"` (two digits), Limit Markers: `"GT"`, `"LT"`.
+    -   Single digit: `"5 "` (digit + space), Double digits: `"15"` (two digits), Limit Markers: `"GT"`, `"LT"` (two letters).
 
 
-#### Extended Uncertainty Fields (Up to 6 Characters for Asymmetric Uncertainties)
+#### Extended 6-Column Uncertainty Fields (DT, DMR)
 
--   **DT field** (cols 50-55): Half-life uncertainties, supports asymmetric format.
-    -   Symmetric: `"14    "` (digits + spaces), Asymmetric: `"+3-4  "`, `"+19-8 "`, `"+13-28"`.
--   **DMR field** (cols 50-55): Mixing ratio uncertainties, supports asymmetric format.
-    -   Symmetric: `"25    "` (value + spaces), Asymmetric: `"+5-3 "`, `"+21-18"`.
+-   **field** (cols 50-55): 6 characters, left-justified, with space padding if <6 characters.
+    -   Symmetric: `"14    "` (1 or 2 digits + 5 or 4 spaces), Asymmetric: `"+3-4  "` (2 spaces), `"+19-8 "` (1 spaces), `"+13-28"` (no spaces), Limit Markers: `"GT    "`, `"LT    "` (two letters + 4 spaces).
+
     -   For source data using the Rose and Brink (1967) sign convention, reverse the sign of the quoted mixing ratio before entering it into ENSDF. Reverse the asymmetric uncertainty order at the same time so the ENSDF value keeps the correct upper and lower bounds. Example: -0.27$_{-0.04}^{+0.03}$ becomes +0.27$_{+0.04}^{-0.03}$ in ENSDF.
 
 
@@ -492,25 +511,7 @@ Format: Use `{In}` or `{I+n-m}` notation with braces.
 
 -   **Symmetric:** `{In}` (e.g., `{I7}`, `{I11}`) without plus/minus signs.
 -   **Asymmetric:** `{I+n-m}` (e.g., `{I+10-11}`, `{I+7-9}`) with plus/minus signs.
--   **FORBIDDEN:** `{I+n}` for symmetric uncertainties (incorrect format).
 
-**Comment Line {In} Examples by Decimal Places:**
-
-| Value Decimals | Comment Notation | Meaning (± format) |
-| :--- | :--- | :--- |
-| 0 decimals | `1234 {I5}` | 1234 ± 5 |
-| 0 decimals | `1234 {I26}` | 1234 ± 26 |
-| 1 decimal | `12.3 {I6}` | 12.3 ± 0.6 |
-| 1 decimal | `3.6 {I11}` | 3.6 ± 1.1 |
-| 2 decimals | `1.23 {I7}` | 1.23 ± 0.07 |
-| 2 decimals | `1.23 {I21}` | 1.23 ± 0.21 |
-| 4 decimals | `0.0060 {I24}` | 0.0060 ± 0.0024 |
-
-**Critical Rules for {In} in Comments:**
--   `{In}` applies to the last significant digit of the value.
--   For 1 decimal: `{I11}` means ±11 in last digit = ±1.1.
--   For 2 decimals: `{I21}` means ±21 in last two digits = ±0.21.
--   **FORBIDDEN:** `{I0.1}`, `{I1.1}`, `{I2.7}` (decimals violate ENSDF rules).
 
 #### Scientific Notation Format
 In comment lines, scientific notation uses `{In}` for uncertainties:
