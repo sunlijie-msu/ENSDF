@@ -3752,8 +3752,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 34CL  G 6266.0      2.6     LT                                                  --- EG=6266.0     FL=0.0        JF=0+
                       33S(P,G)--->K  K     34CL  G 6266.0      2.6     LT                                                  *** EG=6266.0     FL=0          JF=0+
 ------------------------------------------------------------------------------------------------------------------------
+human evaluator prefers no L
  LEVEL************************************ 34CL  L 6273.3    13 (3-,4)                                                     --- possible JPI=(2,3+)
-                     *new XREF new tags    34CLX L XREF=J(6300*)KL(*)
+                     *new XREF new tags    34CLX L XREF=J(6300*)K 
                      *new XREF old tags    34CLX L XREF=J(6300*)KL(*)
                      #old XREF in Adopted  34CLX L XREF=J(6300*)K
                       32S(A,D)--->J  J(*)  34CL  L 6300                                                               K    *** possible JPI=(0-,1,2,3,4,5,6,7+)
@@ -3819,7 +3820,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(P,G)--->K  K     34CL cG RI$other: <0.74 (1969Gr29).                                            
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 6322.0    13 2-               1.6 KEV   2                               --- possible JPI=(0-,1,2,3,4,5)
-                     *new XREF new tags    34CLX L XREF=HJ(6300*)KL(*)
+                     *new XREF new tags    34CLX L XREF=HJ(6300*)KL
                      *new XREF old tags    34CLX L XREF=HJ(6300*)KL(*)
                      #old XREF in Adopted  34CLX L XREF=HJ(6300*)KL
                     32S(3HE,P)--->H  H     34CL  L 6319                                                                    *** possible JPI=(0,1,2,3,4,5,6,7+)
@@ -4988,11 +4989,13 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(P,G)--->K  K     34CL  G 6917.2      0.65    LT                                                  *** EG=6917.2     FL=0          JF=0+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 6931.5    17 (2-)                                                       --- possible JPI=(1+,2,3+)
-                     *new XREF new tags    34CLX L XREF=J(6950*)K
+human evaluator prefers L here
+                     *new XREF new tags    34CLX L XREF=J(6950*)KL
                      *new XREF old tags    34CLX L XREF=J(6950*)K
                      #old XREF in Adopted  34CLX L XREF=J(6950*)K
                       32S(A,D)--->J  J(*)  34CL  L 6950                                                               K    *** possible JPI=(0-,1,2,3,4,5,6,7+)
                       33S(P,G)--->K  K     34CL  L 6931.5    17                                           1843.0    17    
+   33S(P,P),(P,P'G):RESONANCES--->L  L     34CL  L 6934.84   30 1-               5.0 KEV   5     1        1846.4    3     
                       33S(P,G)--->K  K     34CL cL S$from 1977Da02.                                                       
                       33S(P,G)--->K  K     34CL cL $|w|g=0.8 eV {I3} (1983Wa27).
                       33S(P,G)--->K  K     34CL cL $|w|g=0.8 eV {I5} (1977Da02).
@@ -5049,7 +5052,8 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(P,G)--->K  K     34CL  G 6930.7      6.8     LT                                                  *** EG=6930.7     FL=0          JF=0+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 6934.84   30 1-               5.0 KEV   5                               --- possible JPI=(0-,1,2,3,4,5,6,7+)
-                     *new XREF new tags    34CLX L XREF=J(6950*)K(*)L
+human evaluator prefers no level here
+
                      *new XREF old tags    34CLX L XREF=J(6950*)K(*)L
                      #old XREF in Adopted  34CLX L XREF=J(6950*)L
                       32S(A,D)--->J  J(*)  34CL  L 6950                                                               K    *** possible JPI=(0-,1,2,3,4,5,6,7+)
@@ -5061,8 +5065,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L     34CL cL S$other: 1845 {I2} (1964Va12). |g{+2}=80.0. (2J+1)|G{-p0}|G{-p1}/|G=21 
    33S(P,P),(P,P'G):RESONANCES--->L  L     34CL2cL eV (1964Va12).                                                         
 ------------------------------------------------------------------------------------------------------------------------
+human evaluator prefers no L here
  LEVEL************************************ 34CL  L 6977.4    17 (2-,3,4+)                                                  --- possible JPI=(1+,2,3,4+)
-                     *new XREF new tags    34CLX L XREF=J(6950*)KL(*)
+                     *new XREF new tags    34CLX L XREF=J(6950*)K
                      *new XREF old tags    34CLX L XREF=J(6950*)KL(*)
                      #old XREF in Adopted  34CLX L XREF=J(6950*)K
                       32S(A,D)--->J  J(*)  34CL  L 6950                                                               K    *** possible JPI=(0-,1,2,3,4,5,6,7+)
@@ -5082,7 +5087,8 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(P,G)--->K  K     34CL  G 6830.3      29.9    30                                             D    *** EG=6830.3     FL=146.4      JF=3+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 6984.9    10                                                            --- possible JPI=(0-,1,2,3,4,5,6,7+)
-                     *new XREF new tags    34CLX L XREF=J(6950*)K(*)L(*)
+human evaluator prefers L not here
+                     *new XREF new tags    34CLX L XREF=J(6950*)K
                      *new XREF old tags    34CLX L XREF=J(6950*)K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=J(6950*)K
                       32S(A,D)--->J  J(*)  34CL  L 6950                                                               K    *** possible JPI=(0-,1,2,3,4,5,6,7+)
@@ -5095,7 +5101,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL2cL (2J+1)|G{-p0}|G{-p1}/|G=1.0 eV; |G=5 keV {I2} (1964Va12).              
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 6986.85   30 (1-)             0.6 KEV   1                               --- possible JPI=(0-,1,2,3,4,5,6)
-                     *new XREF new tags    34CLX L XREF=J(6950*)KL(*)
+                     *new XREF new tags    34CLX L XREF=J(6950*)KL
                      *new XREF old tags    34CLX L XREF=J(6950*)KL(*)
                      #old XREF in Adopted  34CLX L XREF=J(6950*)KL
                       32S(A,D)--->J  J(*)  34CL  L 6950                                                               K    *** possible JPI=(0-,1,2,3,4,5,6,7+)
@@ -5135,7 +5141,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L     34CL cL S$possible doublet 1902 {I2} (1964Va12). |g{+2}=6.7.                   
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7018.9    10                                                            --- possible JPI=(0-,1,2,3,4,5,6,7+)
-                     *new XREF new tags    34CLX L XREF=KU(7070*)V(7070*)
+                     *new XREF new tags    34CLX L XREF=K
                      *new XREF old tags    34CLX L XREF=KU(7070*)V(7070*)
                      #old XREF in Adopted  34CLX L XREF=K
                       33S(P,G)--->K  K     34CL  L 7018.9    10                                           1933      1     
@@ -5157,7 +5163,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
            36AR(D,A),(POL D,A)--->V  V(*)  34CL cL E$likely determined from {+36}Ar(p,{+3}He){+34}Cl data (1969Br21).     
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7051.6    18 (1-,2,3+)                                                  --- possible JPI=(1,2,3+)
-                     *new XREF new tags    34CLX L XREF=KL(*)U(7070*)V(7070*)
+human evaluator prefers no L here
+                      33S(P,G)--->K  K     34CL  L 7051.6    18                                           1966.7    18
+                     *new XREF new tags    34CLX L XREF=KU(7070*)V(7070*)
                      *new XREF old tags    34CLX L XREF=KL(*)U(7070*)V(7070*)
                      #old XREF in Adopted  34CLX L XREF=KU(7070*)V(7070*)
                       33S(P,G)--->K  K     34CL  L 7051.6    18                                           1966.7    18    
@@ -5183,7 +5191,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(P,G)--->K  K     34CL  G 6589.7      100     10                                             D    *** EG=6589.7     FL=461.2      JF=1+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7059.04   30 (2-,3+)                                                    --- possible JPI=(1+,2,3+)
-                     *new XREF new tags    34CLX L XREF=KL(*)U(7070*)V(7070*)
+                     *new XREF new tags    34CLX L XREF=KLU(7070*)V(7070*)
                      *new XREF old tags    34CLX L XREF=KL(*)U(7070*)V(7070*)
                      #old XREF in Adopted  34CLX L XREF=KLU(7070*)V(7070*)
                       33S(P,G)--->K  K     34CL  L 7059.04   30 1,2                                       1974.4    3     
@@ -5254,8 +5262,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 34CL  G 7058.25     0.35    LT                                                  --- EG=7058.25    FL=0.0        JF=0+
                       33S(P,G)--->K  K     34CL  G 7058.25     0.35    LT                                                  *** EG=7058.25    FL=0          JF=0+
 ------------------------------------------------------------------------------------------------------------------------
+human evaluator prefers no L here
  LEVEL************************************ 34CL  L 7061.6    10                                                            --- possible JPI=(0-,1,2,3,4,5,6,7+)
-                     *new XREF new tags    34CLX L XREF=KL(*)U(7070*)V(7070*)
+                     *new XREF new tags    34CLX L XREF=KU(7070*)V(7070*)
                      *new XREF old tags    34CLX L XREF=KL(*)U(7070*)V(7070*)
                      #old XREF in Adopted  34CLX L XREF=KU(7070*)V(7070*)
                       33S(P,G)--->K  K     34CL  L 7061.6    10                                           1977      1     
@@ -5339,7 +5348,8 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(P,G)--->K  K     34CL  G 7078.10     3       LT                                                  *** EG=7078.10    FL=0          JF=0+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7111.6    15 2-               1.2 KEV   1                               --- possible JPI=(0-,1,2,3,4,5,6,7+)
-                     *new XREF new tags    34CLX L XREF=K(*)L(*)U(7070*)V(7070*)
+human evaluator prefers no K here
+                     *new XREF new tags    34CLX L XREF=L
                      *new XREF old tags    34CLX L XREF=K(*)L(*)U(7070*)V(7070*)
                      #old XREF in Adopted  34CLX L XREF=K(*)L(*)U(7070*)V(7070*)
                       33S(P,G)--->K  K(*)  34CL  L 7115.9    10                                           2033      1     
@@ -5352,7 +5362,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
            36AR(D,A),(POL D,A)--->V  V(*)  34CL cL E$likely determined from {+36}Ar(p,{+3}He){+34}Cl data (1969Br21).     
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7115.9    10                                                            --- possible JPI=(0-,1,2,3,4,5,6,7+)
-                     *new XREF new tags    34CLX L XREF=K(*)L(*)U(7070*)V(7070*)
+                     *new XREF new tags    34CLX L XREF=K
                      *new XREF old tags    34CLX L XREF=K(*)L(*)U(7070*)V(7070*)
                      #old XREF in Adopted  34CLX L XREF=K(*)L(*)U(7070*)V(7070*)
                       33S(P,G)--->K  K(*)  34CL  L 7115.9    10                                           2033      1     
@@ -5365,7 +5375,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
            36AR(D,A),(POL D,A)--->V  V(*)  34CL cL E$likely determined from {+36}Ar(p,{+3}He){+34}Cl data (1969Br21).     
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7122.7    10 2-               4.0 KEV   8                               --- possible JPI=(0-,1,2,3,4,5,6,7+)
-                     *new XREF new tags    34CLX L XREF=KL(*)U(7070*)V(7070*)
+                     *new XREF new tags    34CLX L XREF=KL
                      *new XREF old tags    34CLX L XREF=KL(*)U(7070*)V(7070*)
                      #old XREF in Adopted  34CLX L XREF=KL(*)U(7070*)V(7070*)
                       33S(P,G)--->K  K     34CL  L 7122.7    10                                           2040      1     
@@ -5378,8 +5388,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                    36AR(P,3HE)--->U  U(*)  34CL2 L ISPIN=0                                                                
            36AR(D,A),(POL D,A)--->V  V(*)  34CL cL E$likely determined from {+36}Ar(p,{+3}He){+34}Cl data (1969Br21).     
 ------------------------------------------------------------------------------------------------------------------------
+human evaluator prefers K(7127*) as a doublet
  LEVEL************************************ 34CL  L 7126.5    10                                                            --- possible JPI=(0-,1,2,3,4,5,6,7+)
-                     *new XREF new tags    34CLX L XREF=K(*)L(*)U(7070*)V(7070*)
+                     *new XREF new tags    34CLX L XREF=K(7127*)L
                      *new XREF old tags    34CLX L XREF=K(*)L(*)U(7070*)V(7070*)
                      #old XREF in Adopted  34CLX L XREF=K(*)L(*)U(7070*)V(7070*)
                       33S(P,G)--->K  K(*)  34CL  L 7126.6    10                                           2044      1     
@@ -5448,7 +5459,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(P,G)--->K  K     34CL cL $|w|g=1.0 eV {I3} (1992Ka39).
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7213.7    15 1-               2.0 KEV   2                               ---
-                     *new XREF new tags    34CLX L XREF=K(*)L(*)
+                     *new XREF new tags    34CLX L XREF=L
                      *new XREF old tags    34CLX L XREF=K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=K(*)L(*)
                       33S(P,G)--->K  K(*)  34CL  L 7218.8    10                                           2139      1     
@@ -5458,7 +5469,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL2cL eV (1964Va12).                                                         
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7218.7    10                                                            ---
-                     *new XREF new tags    34CLX L XREF=K(*)L(*)
+                     *new XREF new tags    34CLX L XREF=K
                      *new XREF old tags    34CLX L XREF=K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=K(*)L(*)
                       33S(P,G)--->K  K(*)  34CL  L 7218.8    10                                           2139      1     
@@ -5468,7 +5479,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL2cL eV (1964Va12).                                                         
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7238.1    10                                                            ---
-                     *new XREF new tags    34CLX L XREF=K(*)L(*)
+                     *new XREF new tags    34CLX L XREF=KL
                      *new XREF old tags    34CLX L XREF=K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=K(*)L(*)
                       33S(P,G)--->K  K(*)  34CL  L 7238.2    10                                           2159      1     
@@ -5486,7 +5497,8 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL cL $|g{+2}=16.46.                                                         
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7250.0    5                   0.155 PS  28                              --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
-                     *new XREF new tags    34CLX L XREF=EFGK
+human evaluator prefers to split this level into EF and GK
+                     *new XREF new tags    34CLX L XREF=EF
                      *new XREF old tags    34CLX L XREF=EFGK
                      #old XREF in Adopted  34CLX L XREF=EFGK
                  24MG(12C,PNG)--->E  E     34CL  L 7249.9    5  (9)                                                       
@@ -5523,7 +5535,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(P,G)--->K  K     34CL cL $|w|g=2.5 eV {I6} (1992Ka39).
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7317.1    15 2-               3.5 KEV   4                               --- possible JPI=2-,3-,4-,5+,6+,7+
-                     *new XREF new tags    34CLX L XREF=J(7350*)K(*)L
+                     *new XREF new tags    34CLX L XREF=L
                      *new XREF old tags    34CLX L XREF=J(7350*)K(*)L
                      #old XREF in Adopted  34CLX L XREF=J(7350*)K(*)L
                       32S(A,D)--->J  J(*)  34CL  L 7350      20                                  3,6                       *** possible JPI=2-,3-,4-,5+,6+,7+
@@ -5536,7 +5548,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L     34CL cL $|g{+2}=21.7.                                                          
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7321.6    20                                                            --- possible JPI=2-,3-,4-,5+,6+,7+
-                     *new XREF new tags    34CLX L XREF=J(7350*)K(*)L
+                     *new XREF new tags    34CLX L XREF=KL
                      *new XREF old tags    34CLX L XREF=J(7350*)K(*)L
                      #old XREF in Adopted  34CLX L XREF=J(7350*)K(*)L
                       32S(A,D)--->J  J(*)  34CL  L 7350      20                                  3,6                       *** possible JPI=2-,3-,4-,5+,6+,7+
@@ -5549,7 +5561,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L     34CL cL $(2J+1)|G{-p0}|G{-p1}/|G=23 eV (1964Va12).                             
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7336      2                                                             --- possible JPI=2-,3-,4-,5+,6+,7+
-                     *new XREF new tags    34CLX L XREF=J(7350*)K(*)L
+                     *new XREF new tags    34CLX L XREF=L
                      *new XREF old tags    34CLX L XREF=J(7350*)K(*)L
                      #old XREF in Adopted  34CLX L XREF=J(7350*)K(*)L(7336*)
                       32S(A,D)--->J  J(*)  34CL  L 7350      20                                  3,6                       *** possible JPI=2-,3-,4-,5+,6+,7+
@@ -5562,7 +5574,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L     34CL cL $(2J+1)|G{-p0}|G{-p1}/|G=33 eV (1964Va12).                             
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7346.8    10                                                            --- possible JPI=2-,3-,4-,5+,6+,7+
-                     *new XREF new tags    34CLX L XREF=J(7350*)K(*)L(*)
+                     *new XREF new tags    34CLX L XREF=J(7350*)K
                      *new XREF old tags    34CLX L XREF=J(7350*)K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=J(7350*)K(*)
                       32S(A,D)--->J  J(*)  34CL  L 7350      20                                  3,6                       *** possible JPI=2-,3-,4-,5+,6+,7+
@@ -5574,7 +5586,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(P,G)--->K  K(*)  34CL cL $|w|g=1.7 eV {I5} (1992Ka39).
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7358.5    15 2-               20 KEV    4                               --- possible JPI=2-,3-,4-,5+,6+,7+
-                     *new XREF new tags    34CLX L XREF=J(7350*)K(*)L(*)
+                     *new XREF new tags    34CLX L XREF=J(7350*)L
                      *new XREF old tags    34CLX L XREF=J(7350*)K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=J(7350*)K(*)L
                       32S(A,D)--->J  J(*)  34CL  L 7350      20                                  3,6                       *** possible JPI=2-,3-,4-,5+,6+,7+
@@ -5587,7 +5599,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL cL $|g{+2}=110.0.                                                         
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7368.4    15 (1:3)-                                                     --- possible JPI=2-,3-,4-,5+,6+,7+
-                     *new XREF new tags    34CLX L XREF=J(7350*)K(*)L(*)
+                     *new XREF new tags    34CLX L XREF=J(7350*)L
                      *new XREF old tags    34CLX L XREF=J(7350*)K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=J(7350*)K(*)L
                       32S(A,D)--->J  J(*)  34CL  L 7350      20                                  3,6                       *** possible JPI=2-,3-,4-,5+,6+,7+
@@ -5599,7 +5611,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(P,G)--->K  K(*)  34CL cL $|w|g=1.0 eV {I3} (1992Ka39).
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7375.9    10                                                            --- possible JPI=2-,3-,4-,5+,6+,7+
-                     *new XREF new tags    34CLX L XREF=J(7350*)K(*)L(*)
+                     *new XREF new tags    34CLX L XREF=K
                      *new XREF old tags    34CLX L XREF=J(7350*)K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=J(7350*)K(*)L(7336*)
                       32S(A,D)--->J  J(*)  34CL  L 7350      20                                  3,6                       *** possible JPI=2-,3-,4-,5+,6+,7+
@@ -5611,8 +5623,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(P,G)--->K  K(*)  34CL cL $|w|g=1.0 eV {I3} (1992Ka39).
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL cL $|g{+2}=110.0.                                                         
 ------------------------------------------------------------------------------------------------------------------------
+human evaluator prefers to merge the following two levels into 7384.7    20 
  LEVEL************************************ 34CL  L 7382.7    10                                                            --- possible JPI=2-,3-,4-,5+,6+,7+
-                     *new XREF new tags    34CLX L XREF=J(7350*)K(*)L(*)
+                     *new XREF new tags    34CLX L XREF=KL
                      *new XREF old tags    34CLX L XREF=J(7350*)K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=J(7350*)K(*)L(*)
                       32S(A,D)--->J  J(*)  34CL  L 7350      20                                  3,6                       *** possible JPI=2-,3-,4-,5+,6+,7+
@@ -5625,17 +5638,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL cL $|g{+2}=3.8.                                                           
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7386.6    15 2-               0.70 KEV                                  --- possible JPI=2-,3-,4-,5+,6+,7+
-                     *new XREF new tags    34CLX L XREF=J(7350*)K(*)L(*)
-                     *new XREF old tags    34CLX L XREF=J(7350*)K(*)L(*)
-                     #old XREF in Adopted  34CLX L XREF=J(7350*)K(*)L(*)
-                      32S(A,D)--->J  J(*)  34CL  L 7350      20                                  3,6                       *** possible JPI=2-,3-,4-,5+,6+,7+
-                      33S(P,G)--->K  K(*)  34CL  L 7382.7    10                                           2308      1     
-   33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL  L 7386.6    15 2-               0.70 KEV  7     1        2312.0    15    
-                      32S(A,D)--->J  J(*)  34CL cL E$other: 7370 (1966Ki10).                                              
-                      32S(A,D)--->J  J(*)  34CL cL $A{+2}{-L=3}=1.47 {I13} for 3-, A{+2}{-L=6}=0.60 {I5} for 6+,          
-                      32S(A,D)--->J  J(*)  34CL2cL A{+2}{-L=6}=0.34 {I3} for 7+ (1982De29).                               
-                      33S(P,G)--->K  K(*)  34CL cL $|w|g=1.5 eV {I5} (1992Ka39).
-   33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL cL $|g{+2}=3.8.                                                           
+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7406.4    10                                                            ---
                      *new XREF new tags    34CLX L XREF=KL
@@ -5676,7 +5679,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L     34CL cL $(2J+1)|G{-p0}|G{-p1}/|G=60 eV (1964Va12).                             
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7457.5    15 1-               4.0 KEV                                   ---
-                     *new XREF new tags    34CLX L XREF=K(*)L(*)
+                     *new XREF new tags    34CLX L XREF=L
                      *new XREF old tags    34CLX L XREF=K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=K(*)L(*)
                       33S(P,G)--->K  K(*)  34CL  L 7462.3    10                                           2390      1     
@@ -5685,7 +5688,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL cL $|g{+2}=19.0.                                                          
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7462.3    10                                                            ---
-                     *new XREF new tags    34CLX L XREF=K(*)L(*)
+                     *new XREF new tags    34CLX L XREF=K
                      *new XREF old tags    34CLX L XREF=K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=K(*)L(*)
                       33S(P,G)--->K  K(*)  34CL  L 7462.3    10                                           2390      1     
@@ -5694,7 +5697,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL cL $|g{+2}=19.0.                                                          
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7470.2    9                                                             ---
-                     *new XREF new tags    34CLX L XREF=K(*)L(*)
+                     *new XREF new tags    34CLX L XREF=K
                      *new XREF old tags    34CLX L XREF=K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=K(*)L(*)
                       33S(P,G)--->K  K(*)  34CL  L 7470.1    10                                           2398      1     
@@ -5704,7 +5707,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL2cL eV (1964Va12).                                                         
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7475.3    15 2+               0.17 KEV  2                               ---
-                     *new XREF new tags    34CLX L XREF=K(*)L(*)
+                     *new XREF new tags    34CLX L XREF=L
                      *new XREF old tags    34CLX L XREF=K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=K(*)L(*)
                       33S(P,G)--->K  K(*)  34CL  L 7470.1    10                                           2398      1     
@@ -5714,7 +5717,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL2cL eV (1964Va12).                                                         
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7486.5    10                                                            ---
-                     *new XREF new tags    34CLX L XREF=K(*)L(*)
+                     *new XREF new tags    34CLX L XREF=K
                      *new XREF old tags    34CLX L XREF=K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=K(*)L(*)
                       33S(P,G)--->K  K(*)  34CL  L 7486.6    10                                           2415      1     
@@ -5723,7 +5726,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
    33S(P,P),(P,P'G):RESONANCES--->L  L(*)  34CL cL $|g{+2}=23.0.                                                          
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34CL  L 7491.3    15 2-               0.1 KEV   1                               ---
-                     *new XREF new tags    34CLX L XREF=K(*)L(*)
+                     *new XREF new tags    34CLX L XREF=L
                      *new XREF old tags    34CLX L XREF=K(*)L(*)
                      #old XREF in Adopted  34CLX L XREF=K(*)L(*)
                       33S(P,G)--->K  K(*)  34CL  L 7486.6    10                                           2415      1     
