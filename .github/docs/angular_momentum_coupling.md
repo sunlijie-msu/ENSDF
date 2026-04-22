@@ -115,14 +115,16 @@ An alpha particle is transferred.
 
 * **Particle Input**: $0^+$
 
-### E. Inelastic Scattering
+### E. Elastic Scattering
 
-*Examples:* $(\alpha, \alpha')$, $(p, p')$
+*Examples:* $(\alpha, \alpha)$, $(p, p)$
 
-* **$(\alpha, \alpha')$**: The alpha particle has spin 0. Since the projectile spin cannot flip, the angular momentum transfer is purely orbital ($\vec{\ell}$). This selectively excites **Natural Parity** resonances ($\pi = (-1)^\ell$) in the compound nucleus.
-* **Particle Input**: $0^+$
+* **$(\alpha, \alpha)$**: The alpha particle has spin 0. Since the projectile spin cannot flip, the angular momentum transfer is purely orbital ($\vec{\ell}$). This selectively excites **Natural Parity** resonances ($\pi = (-1)^\ell$) in the compound nucleus.
+  * **Particle Input**: $0^+$
 
-* **$(p, p')$**: The proton ($s=1/2$) can undergo spin-flip. It allows both Isoscalar ($T=0$) and Isovector ($T=1$) transitions.
+* **$(p,p)$**: For proton scattering on nonzero spin targets, the compound states generally have several formation
+and decay channels. The proton ($s=1/2$) can undergo spin-flip. It allows both Isoscalar ($T=0$) and Isovector ($T=1$) transitions.
+  * **Particle Input**: $1/2^+$ 
   * **Particle Input**: $0^+$ for non spin-flip
   * **Particle Input**: $1^+$ for spin-flip
 
