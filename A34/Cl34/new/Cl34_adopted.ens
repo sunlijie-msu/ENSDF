@@ -1035,7 +1035,7 @@
  34CL d                                                                         
  34CL  L 4862.4    8  5-                                                        
  34CLX L XREF=F                                                                 
- 34CL  G 2681        100                                                        
+ 34CL  G 2681        100        (M2)                                            
  34CL d                                                                         
  34CL  L 4925      4  0:4+                                                      
  34CLX L XREF=J(4930*)OT(4939*)U(4970*)V(4970*)                                 
@@ -2147,7 +2147,7 @@
  34CL cL J$(0,1,2) from |g to 1+, 665 and |g to 1-, 4354; (2-) from |g to 4-,   
  34CL2cL 3600.                                                                  
  34CL cL E$weighted average of 6931.5 {I17} from {+33}S(p,|g) and 6934.84 {I30} 
- 34CL2cL from {+33}S(p,p).                                                      
+ 34CL2cL from {+33}S(p,p),(p,p'|g):resonances.                                  
  34CL cL J$1- from {+33}S(p,p),(p,p'|g):resonances R-matrix analysis (1989Va15) 
  34CL  G 2214.0      24                                                         
  34CL  G 2321.7      100                                                        
@@ -2184,11 +2184,11 @@
  34CL  L 6986.85   30 (1-)             0.6 KEV   1                             
  34CLX L XREF=J(6950*)KL                                             
  34CL cL E$weighted average of 6986.9 {I20} from {+33}S(p,|g) and 6986.85 {I30} 
- 34CL2cL from {+33}S(p,p).                                                      
- 34CL cL J$1- from {+33}S(p,p), which differs from (2-,3) from {+33}S(p,|g).    
- 34CL2cL However the components of the triplet resonance are insufficiently     
- 34CL3cL separated in order to allow the proper assignment of the |g branching  
- 34CL4cL (1977Da02).                                                            
+ 34CL2cL from {+33}S(p,p),(p,p'|g):resonances.                                  
+ 34CL cL J$1- from {+33}S(p,p),(p,p'|g):resonances, which differs from (2-,3)   
+ 34CL2cL from {+33}S(p,|g). However the components of the triplet resonance are 
+ 34CL3cL insufficiently separated in order to allow the proper assignment of the
+ 34CL4cL |g branching (1977Da02).                                               
  34CL cL J$assignment based on |g branching ({+33}S(p,|g), 1977Da02): (1,2,3)   
  34CL2cL from |g to 2+, 2158 and |g to 2-, 2721; (2-,3) from |g to 4-, 3600.    
  34CL  G 2381.0      4.9     LT                                                 
@@ -2227,8 +2227,8 @@
  34CLX L XREF=KLU(7070*)V(7070*)                                             
  34CL cL E$weighted average of 7059.04 {I30} from {+33}S(p,|g) and 7057.7 {I20} 
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL J$(0,1,2,3+) from |g to 1+, 461; (0,1,2+) less likely from no |g (or   
- 34CL2cL weak) to 0+, g.s.                                                      
+ 34CL cL J$spin=1,2 from |g(|q) in {+33}S(p,|g); (0,1,2,3+) from |g to 1+, 461; 
+ 34CL2cL (0,1,2+) less likely from no |g (or weak) to 0+, g.s.                  
  34CL  G 2063.4      2.6     14                                                 
  34CL  G 2117.1      1.75    88                                                 
  34CL  G 2363.3      0.35                                                       
@@ -2256,8 +2256,8 @@
  34CLX L XREF=KLU(7070*)V(7070*)                                                
  34CL cL E$weighted average of 7078.89 {I9} from {+33}S(p,|g) and 7080.4 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL J$3 from D(+Q) |DJ=0 |g to 3+, 146; 2- from L=1 in                     
- 34CL2cL {+33}S(p,p),(p,p'|g):resonances.                                       
+ 34CL cL J$spin=3 from from |g(|q) in (p,|g); from D(+Q) |DJ=0 |g to 3+, 146;   
+ 34CL2cL 2-,(3)- from {+33}S(p,p),(p,p'|g):resonances.                          
  34CL cL T$weighted average |G of 1.0 {I1} ({+33}S(p,p),1989Va15) and 0.787     
  34CL2cL {I30} ({+33}S(p,|g),1977Da03).                                         
  34CL  G 2473.0      6.3                                                        
@@ -2295,7 +2295,7 @@
  34CL  L 7115.9    10                                                           
  34CLX L XREF=K                                                                 
  34CL d                                                                         
- 34CL  L 7123.2    10                  4.0 KEV   4                              
+ 34CL  L 7123.2    10 2-               4.0 KEV   4                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7122.7 {I10} from {+33}S(p,|g) and 7124.3 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
@@ -2729,8 +2729,12 @@
  34CL d                                                                         
  34CL  L 7980.3    15 3+               0.3 KEV   3                              
  34CLX L XREF=K(*)L                                                             
+ 34CL cL J$from R-matrix analysis in {+33}S(p,p),(p,p'|g):resonances.           
+ 34CL d                                                                         
  34CL  L 7985.3    15 2-               19 KEV    4                              
  34CLX L XREF=L                                                                 
+ 34CL cL J$from R-matrix analysis in {+33}S(p,p),(p,p'|g):resonances.           
+ 34CL d                                                                         
  34CL  L 7990.2    10                                                           
  34CLX L XREF=K                                                          
  34CL d                                                                         

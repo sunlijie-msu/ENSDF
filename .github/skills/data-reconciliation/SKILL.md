@@ -20,7 +20,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 - `[Data B]` → `[record type]` `[field name]`
 
 ### Operations
-- **Keep** `[field]` from target (e.g., M, MR, DMR; cG M$ comments)
+- **Keep** `[field]` already in target (e.g., M, MR, DMR; cG M$ comments)
 - **Replace/Update** `[field]` with source value (e.g., RI, DRI)
 - **Add/Insert** `[field]` from source (e.g., new G-records absent in target)
 - **Merge/Combine** `[field]` from both (e.g., cG RI$ comments quoting both)
