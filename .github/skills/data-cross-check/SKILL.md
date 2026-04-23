@@ -27,7 +27,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
   [ ] uncertainty and format
   [ ] decimal places and trailing zeros
   [ ] limits / qualifiers (GT, LT, ?, S)
-  [ ] XREF strings character-for-character (asterisk * is semantically significant) if applicable
+  [ ] XREF strings character-for-character (asterisk * or ? is semantically significant) if applicable
   [ ] provenance in cL/cG comments
   [ ] completeness (missing/extra)
 
@@ -41,7 +41,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 ## Workflow
 
 ```
-Cross-Check Procedure
+Recommended Operating Procedure
 - [ ] 1. Confirm Task Configuration
 - [ ] 2. Carefully parse source and target within scope
 - [ ] 3. Extract the data needed for the task.
