@@ -32,17 +32,32 @@
  34CL2c  isochronous cyclotron (AVF930). Measured thick target yields.          
  34CL c  Other {+34}Cl cross-section measurements: 2007Na31, 2004De41, 2003Ya20,
  34CL2c  2002DeZU, 2001Pi10.                                                    
+
+
  34CL cG E$E|g values without uncertainties are deduced from level-energy       
  34CL2cG differences, unless otherwise noted.                                   
  34CL cG E,RI,M,MR$From |g(|q) and/or |g|g(|q) in {+33}S(p,|g), unless otherwise
  34CL2cG noted.                                                                 
  34CL cG E(F),RI(F),M(F),MR(F)$From |g|g(|q)(DCO) and |g|g(|q)(POL) in          
  34CL2cG {+27}Al({+12}C,|an|g), and RUL if available.                           
- 34CL cL E$From {+33}S(p,|g), unless otherwise noted.                           
- 34CL cL E,J,T$For levels above 7 MeV, from {+33}S(p,p),(p,p'|g):resonances,    
+ 34CL cL E$From {+33}S(p,|g) for levels below 7.1 MeV, unless otherwise noted.  
+ 34CL2cL For levels below 7.1 MeV, from {+33}S(p,|g), unless otherwise noted.   
+ 34CL cL E,J,T$For levels above 6.8 MeV, from {+33}S(p,p),(p,p'|g):resonances,  
  34CL2cL unless otherwise noted. J|p and widths are from multilevel,            
  34CL3cL multichannel R-matrix analysis in {+33}S(p,p),(p,p'|g):resonances      
  34CL4cL (1989Va15).                                                            
+
+
+ 34CL cG E(I),RI(I)$From {+32}S({+3}He,p|g)                                     
+ 34CL cG E(E),RI(E)$From {+24}Mg({+12}C,pn|g)                                   
+
+ 34CL cL E(a)$From {+32}S({+3}He,p|g)                                           
+ 34CL cL J(b)$From {+33}S(p,p),(p,p'|g):resonances R-matrix analysis (1989Va15) 
+ 34CL cL T$|G values <0.05 keV are from {+33}S(p,|g) (1977Da03) and |G values > 
+ 34CL2cL 0.05 keV are from {+33}S(p,p) (1989Va15), unless noted otherwise. For  
+ 34CL3cL T{-1/2} values see comments                                            
+
+
  34CL  XA34AR EC+B+ DECAY (0.84646 S)                                           
  34CL  XB34CL IT DECAY (31.99 M)                                                
  34CL  XC35K ECP DECAY (175 MS)                                                 
@@ -1885,6 +1900,9 @@
  34CL cG MR$from {+33}S(p,|g).                                                  
  34CL  G 6640.22     0.91    LT                                                 
  34CL d                                                                         
+ 34CL d                                                                         
+ 34CL d  ???Finalized/Good comments below this line, except for J|p assignments.
+ 34CL d                                                                         
  34CL  L 6695.1    16 (3+,4,5+)                                                 
  34CLX L XREF=K                                                                 
  34CL cL J$gammas to 5+,4825 and 3+, 2611.                                      
@@ -1911,7 +1929,6 @@
  34CLX L XREF=H(6724*)KL                                                        
  34CL cL E$weighted average of 6720.2 {I16} from {+33}S(p,|g) and 6719.5 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
-
  34CL  G 2110.4      31.3    31                                                 
  34CLF G FL=4609.7                                                              
  34CL  G 2114.3      22.9    23                                                 
@@ -1943,7 +1960,6 @@
  34CLX L XREF=H(6724*)KL                                                        
  34CL cL E$weighted average of 6737.0 {I16} from {+33}S(p,|g) and 6737.5 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
-
  34CL  G 3607.7      5.1     26                                                 
  34CL  G 4578.8      100     10                                                 
  34CL  G 4849.3      3.6                                                        
@@ -1968,10 +1984,9 @@
  34CL  G 6643.7      6       LT                                                 
  34CL  G 6790.1      100     10                                                 
  34CL d                                                                         
- 34CL  L 6797.4    16 (3-,4+)                                                   
+ 34CL  L 6797.4    16 1:5                                                       
  34CLX L XREF=K                                                                 
- 34CL cL J$(1+,2,3,4+) from gammas to 3+, 146 and 2+, 1887; (1,2,3+) less likely
- 34CL2cL from no |g (or weak) to 1+, 665.                                       
+ 34CL cL J$spin=1:5 from |g(|q) in {+33}S(p,|g)                                 
  34CL  G 2833.2      1.10    55                                                 
  34CL  G 3413.9      0.55    28                                                 
  34CL  G 4186.1      2.2     11                                                 
@@ -1987,7 +2002,6 @@
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 6807.2 {I16} from {+33}S(p,|g) and 6807.0 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
-
  34CL  G 3423.7      12.7    13                                                 
  34CL  G 4226.6      16.9    17                                                 
  34CL  G 4649.0      11.3    11                                                 
@@ -2010,7 +2024,6 @@
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 6842.8 {I14} from {+33}S(p,|g) and 6842.8 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
-
  34CL  G 2233.0      10      LT                                                 
  34CLF G FL=4609.7                                                              
  34CL  G 2236.9      5.0     25                                                 
@@ -2038,7 +2051,6 @@
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 6853.0 {I14} from {+33}S(p,|g) and 6851.8 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
-
  34CL  G 1857.4      2.5     13                                                 
  34CLF G FL=4995.6                                                              
  34CL  G 2157.2      2.5     13                                                 
@@ -2053,15 +2065,13 @@
  34CL  G 6705.9      10.0    50                                                 
  34CL  G 6852.3      13      6                                                  
  34CL d                                                                         
- 34CL d                                                                         
- 34CL d  $Finalized comments below this line, except for J|p assignments.       
- 34CL  L 6871.18   30 5(-)             26 EV     7                              
- 34CLX L XREF=K                                                                 
- 34CL cL J$spin=5 from |g(|q) in {+33}S(p,|g).
+ 34CL  L 6871.18   30 5-               26 EV     7                              
+ 34CLX L XREF=KL                                                                
+ 34CL cL J$spin=5 from |g(|q) in {+33}S(p,|g).                                  
  34CL  G 1330.4      13.6    14                                                 
  34CL  G 1484.4      6.8     34                                                 
  34CL  G 1699.5      25.0    25 D(+Q)    +0.02   3                              
- 34CL  G 2424.5      64      7 D+Q       +0.05   +1-3                           
+ 34CL  G 2424.5      64      7  D+Q      +0.05   +1-3                           
  34CL  G 2794.9      5.7                                                        
  34CL  G 3239.3      100     10 D(+Q)    +0.04   7                              
  34CL  G 4495.2      18.2    18 D(+Q)    +0.04   +3-5                           
