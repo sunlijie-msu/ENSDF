@@ -432,6 +432,28 @@ Only in the Adopted Datasets: XREF (cross-reference) entries immediately followi
 - Two significant figures (leading 2 digits of uncertainty 10–34) → 2-digit uncertainties, e.g., 1.2333±0.3220 → 1.23(32).
 - Special case: for half-lives or lifetimes, two significant figures with leading 2 digits of uncertainty 35–99 are allowed.
 
+ENSDF Rounding and Uncertainty Convention
+
+Successive (Sequential) Rounding.
+ENSDF data employ a Successive Rounding methodology where values are processed digit-by-digit from the rightmost decimal place moving leftward.
+
+Value Rounding Threshold: Round Half-Up (5-Up)
+For general calculated values, we apply the Standard Round Half-Up convention.
+Down: Digits 0, 1, 2, 3, 4 are truncated (the preceding digit remains unchanged).
+Up: Digits 5, 6, 7, 8, 9 cause the preceding digit to be incremented by 1.
+
+Application example:
+0.344 → 0.34 → 0.3, the last 4 rounds down; then the 4 rounds down.
+0.345 → 0.35 → 0.4, the 5 rounds the 4 up; then the new 5 rounds the 3 up.
+
+Uncertainty Rounding Threshold: 4-Up, 3-Down
+The final reported value is rounded to match the decimal place of the least significant digit in the uncertainty. The uncertainty digits are rounded according to the "4-up" threshold (rather than the general 5-up rule). This conservative approach ensures that measurement precision is not greatly overstated, which could occur if the uncertainty were rounded down. This is a compromised approach only for rounding uncertainty (4-up, 3-down): more conservative than "4-down, 5-up" rounding rule for general values.
+
+Application example:
+100.00(333) → 100.0(33), last '3' rounds down; uncertainty stays '33'
+100.00(334) → 100.0(34), last '4' rounds the '3' up; uncertainty becomes '34'
+
+
 **Examples by Decimal Places:**
 
 | Value Decimals | Field Notation | Comment Notation | Meaning (± format) |

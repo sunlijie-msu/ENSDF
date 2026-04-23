@@ -234,17 +234,19 @@ def critical_chi_sq_display(n: int) -> float:
     Matches Java EnsdfUtil.criticalReducedChi2(n) called in AverageReport.java.
 
     Java uses: criticalReducedChi2(aboveLimitIndexesV().size())
-    which takes N = number of data points and returns the critical chi^2/(N-1)
-    at 90% confidence — i.e., chi^2(N-1, 90%) / (N-1).
+    which takes N = number of data points ABOVE weight limit (nAboveLimit),
+    and returns chi^2(N, 90%) / (N-1).
+
+    CRITICAL: the chi^2 distribution dof = N (NOT N-1).
 
     Displayed as [critical=X] alongside chi^2/(n-1) for reference.
     This value is NOT used for the adoption decision.
     The decision uses the hardcoded constant INCONSISTENCY_THRESHOLD = 3.5.
 
     Examples:
-        n=2: chi^2(1, 90%) / 1 = 2.706
-        n=3: chi^2(2, 90%) / 2 = 2.303
-        n=4: chi^2(3, 90%) / 3 = 2.084
+        n=2: chi^2(2, 90%) / 1 = 4.605
+        n=3: chi^2(3, 90%) / 2 = 3.0
+        n=4: chi^2(4, 90%) / 3 = 2.472
 
     Args:
         n: number of data points (>= 2)
@@ -253,8 +255,8 @@ def critical_chi_sq_display(n: int) -> float:
     """
     if n <= 1:
         return 0.0
-    dof = n - 1
-    return stats.chi2.ppf(0.90, dof) / dof
+    # Java: chi^2(n, 90%) / (n-1) — dof for ppf = n, NOT n-1
+    return stats.chi2.ppf(0.90, n) / (n - 1)
 
 
 def find_suggested_average(result_unc: float, data: List[Tuple[float, float, float]]) -> float:
@@ -277,17 +279,81 @@ def find_suggested_average(result_unc: float, data: List[Tuple[float, float, flo
     return result_unc
 
 
-def fmt_val_unc(val: float, unc: float, max_decimals: int) -> str:
-    """Format value(uncertainty) in ENSDF notation matching Java XDX2SDS."""
-    if max_decimals == 0:
-        val_str = f"{val:.0f}"
-        unc_int = int(round(unc))
-    elif max_decimals == 1:
-        val_str = f"{val:.1f}"
-        unc_int = int(round(unc * 10))
+def _successive_round_4up(value: float, src_decimals: int, tgt_decimals: int) -> float:
+    """
+    Apply ENSDF successive rounding from src_decimals down to tgt_decimals.
+    Uses 4-up threshold: digit 0-3 rounds DOWN, digit 4-9 rounds UP.
+    Processes one decimal place at a time from right to left.
+    """
+    from decimal import Decimal, ROUND_DOWN
+    d = Decimal(str(value))
+    for nd in range(src_decimals, tgt_decimals, -1):
+        # To remove the nd-th decimal digit, shift by 10^(nd-1) so that the
+        # digit being removed appears as the TENTHS position of scaled.
+        # Example: removing 2nd decimal (nd=2): shift=10, 0.44*10=4.4 → digit=4 → UP → 0.5
+        shift = Decimal(10) ** (nd - 1)
+        scaled = d * shift
+        floor_val = int(scaled.to_integral_value(rounding=ROUND_DOWN))
+        remainder_digit = int((scaled - floor_val) * 10)  # digit being removed (0-9)
+        if remainder_digit >= 4:  # 4-up rule
+            floor_val += 1
+        d = Decimal(floor_val) / shift
+    return float(d)
+
+
+def _ensdf_unc_target_decimals(unc: float) -> int:
+    """
+    Determine target decimal places for ENSDF uncertainty display.
+    Rule: express uncertainty to 1 sig fig if leading-2-digits >= 35;
+          express to 2 sig figs if leading-2-digits in [10, 34].
+    Uses 4-up successive rounding to determine the rounded leading-2-digit value.
+    """
+    if unc <= 0:
+        return 0
+    import math
+    # Order of magnitude: floor(log10(unc))
+    log10 = math.floor(math.log10(unc))
+    # Scale to 2-digit integer representation (10.x to 99.x)
+    leading_raw = unc / (10.0 ** (log10 - 1))  # 10.0 to 99.9...
+    # Apply successive 4-up rounding from raw precision to 2 decimal places of leading_raw
+    # (i.e., from ~4 sig digits to 2 sig digits of the leading scaled value)
+    raw_dec = max(0, 4)  # work with 4 extra digits of leading_raw
+    rounded_leading = _successive_round_4up(leading_raw, raw_dec, 0)
+    leading_2 = int(rounded_leading)
+    if leading_2 >= 35:  # or single digit after rounding up to 100+
+        n_sig = 1
     else:
-        val_str = f"{val:.{max_decimals}f}"
-        unc_int = int(round(unc * 10**max_decimals))
+        n_sig = 2
+    # Decimal places = n_sig - (log10 + 1)
+    target_dec = n_sig - log10 - 1
+    return target_dec
+
+
+def fmt_val_unc(val: float, unc: float, src_max_decimals: int) -> str:
+    """
+    Format value(uncertainty) in ENSDF notation matching Java XDX2SDS.
+    Uses ENSDF successive 4-up rounding: each digit removed right-to-left;
+    digit 0-3 rounds down, digit 4-9 rounds up.
+    Decimal places are determined by the uncertainty sig-fig rule, not src_max_decimals.
+    src_max_decimals is the raw precision of the inputs (used as starting point).
+    """
+    if unc <= 0:
+        return f"{val}(0)"
+    # Step 1: determine target decimal places from uncertainty
+    tgt_dec = _ensdf_unc_target_decimals(unc)
+    tgt_dec = max(0, tgt_dec)
+    # Step 2: apply successive 4-up rounding to uncertainty
+    rounded_unc = _successive_round_4up(unc, src_max_decimals + 2, tgt_dec)
+    unc_int = int(round(rounded_unc * 10**tgt_dec))
+    if unc_int == 0:
+        unc_int = 1  # floor at 1
+    # Step 3: round value to tgt_dec decimal places using standard 5-up (general values)
+    val_str = f"{val:.{tgt_dec}f}"  # Python's round-half-even; apply 5-up manually
+    # Manual 5-up rounding of val to tgt_dec
+    import math
+    factor = 10.0 ** tgt_dec
+    val_rounded = math.floor(val * factor + 0.5) / factor
+    val_str = f"{val_rounded:.{tgt_dec}f}"
     return f"{val_str}({unc_int})"
 
 
@@ -487,6 +553,10 @@ def main():
                   + (f" {base_unit}" if base_unit else ""))
         # Use src_max_dec (from original string representations) for output formatting
         max_dec = src_max_dec
+        # Extract record name from comment header: T$, E$, RI$, etc.
+        import re as _re
+        m = _re.search(r'\b([A-Za-z]{1,2})\$', comment_text)
+        record_name = m.group(1).upper() if m else 'T'
 
     # --- Numeric mode ---
     # Strip commas used as pair separators: "19.7 1.3, 22 4, 21.5 1.5"
@@ -500,6 +570,7 @@ def main():
                 data.append((value, unc, unc))
             base_unit = None
             max_dec = count_max_decimals(data)
+            record_name = 'E'  # numeric mode default
         else:
             print(__doc__)
             print("\nError: provide either:")
@@ -517,11 +588,11 @@ def main():
     # DISPLAY ONLY — the adoption DECISION uses hardcoded threshold INCONSISTENCY_THRESHOLD = 3.5
     crit_display = critical_chi_sq_display(n)
 
-    # Unweighted chi^2/(n-1): sum of squared deviations normalized by individual variances
-    # chi^2 = sum((x_i - mean_u)^2 / V_i) — dimensionless, consistent with weighted chi^2 formula
+    # Unweighted chi^2/(n-1): Java avg.unweightedChi2() = sum((x_i - mean_u)^2) / (n-1)
+    # Note: Java does NOT normalize by individual variances here.
     mean_uwt = uwt_result['value']
     uwt_chi2_display = sum(
-        (v - mean_uwt)**2 / gauss_variance(lo, hi)
+        (v - mean_uwt)**2
         for v, lo, hi in data
     ) / (n - 1) if n > 1 else 0.0
 
@@ -534,8 +605,8 @@ def main():
 
     # --- Print output matching Java AverageTool format ---
     print()
-    print("------ average T------")
-    print("Data points of T record")
+    print(f"------ average {record_name}------")
+    print(f"Data points of {record_name} record")
     for i, (v, lower, upper) in enumerate(data):
         unc_str = fmt_val_unc(v, lower, max_dec) + unit_label
         nw = wt_result['norm_weights'][i]
@@ -556,10 +627,14 @@ def main():
 
     # --- ADOPTION DECISION: hardcoded threshold 3.5 (Java AverageReport.java) ---
     # Java: if Math.min(chi2, all_chi2) > 3.5 -> Unweighted-Average
+    # Java: if avg.isEqualWeighted(avg_all) -> "Weighted-Of-All" (all points used)
+    # Java: else -> "Weighted-Of-All" with avg_all, or default weighted
+    # For the Python (no weight-threshold exclusion): all points are always used,
+    # so avg == avg_all -> label is always "Weighted-Of-All" when chi2 <= 3.5.
     chi2_val = wt_result['reduced_chi_sq']
 
     if chi2_val <= INCONSISTENCY_THRESHOLD:
-        label = "Weighted-Average"
+        label = "Weighted-Of-All"  # all points used (no weight exclusion in this implementation)
         suggested_value = wt_result['value']
         # Java uses max(internal, external) for the weighted adopted uncertainty
         wt_unc_raw = max(wt_result['internal_unc'], wt_result['external_unc'])
