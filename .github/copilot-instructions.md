@@ -423,35 +423,47 @@ Only in the Adopted Datasets: XREF (cross-reference) entries immediately followi
 
 ### General Rules
 
-**CRITICAL:** Uncertainties in data record fields and comment lines use DIFFERENT formats, but both follow an "uncertainty-in-last-digits" notation. Ensure that the number of decimal places in the main value exactly matches the decimal place represented by the final digit of the uncertainty.
+**CRITICAL:** Uncertainties in data-record fields and comment lines use different formats, but both follow uncertainty-in-last-digits notation. The decimal place of the final uncertainty digit must match the decimal place of the reported value.
 
-- Physics publications typically allow 1 or 2 digits for uncertainties.
-- The uncertainty applies to the last significant digit of the value.
-- Rounding threshold for uncertainty: 4-up, 3-down.
-- One significant figure (leading 2 digits of uncertainty 35–99) → 1-digit uncertainties, e.g., 1.2333±0.3680 → 1.2(4).
-- Two significant figures (leading 2 digits of uncertainty 10–34) → 2-digit uncertainties, e.g., 1.2333±0.3220 → 1.23(32).
-- Special case: for half-lives or lifetimes, two significant figures with leading 2 digits of uncertainty 35–99 are allowed.
+- Published nuclear data usually report uncertainties with one or two digits.
+- The uncertainty applies to the least significant reported digit of the value.
+- Use 1 significant figure when the leading two uncertainty digits are `35-99`.
+    Example: `1.2333±0.3680 -> 1.2(4)`.
+- Use 2 significant figures when the leading two uncertainty digits are `10-34`.
+    Example: `1.2333±0.3220 -> 1.23(32)`.
+- Special case: for half-lives and lifetimes, 2 significant figures may be used even when the leading two uncertainty digits are `35-99`.
 
-ENSDF Rounding and Uncertainty Convention
+### ENSDF Rounding and Uncertainty Convention
 
-Successive (Sequential) Rounding.
-ENSDF data employ a Successive Rounding methodology where values are processed digit-by-digit from the rightmost decimal place moving leftward.
+#### Successive (Sequential) Rounding
 
-Value Rounding Threshold: Round Half-Up (5-Up)
-For general calculated values, we apply the Standard Round Half-Up convention.
-Down: Digits 0, 1, 2, 3, 4 are truncated (the preceding digit remains unchanged).
-Up: Digits 5, 6, 7, 8, 9 cause the preceding digit to be incremented by 1.
+Use successive rounding for all ENSDF values. Round one digit at a time, from right to left.
 
-Application example:
-0.344 → 0.34 → 0.3, the last 4 rounds down; then the 4 rounds down.
-0.345 → 0.35 → 0.4, the 5 rounds the 4 up; then the new 5 rounds the 3 up.
+#### Value Rounding Threshold: Round Half-Up (5-Up)
 
-Uncertainty Rounding Threshold: 4-Up, 3-Down
-The final reported value is rounded to match the decimal place of the least significant digit in the uncertainty. The uncertainty digits are rounded according to the "4-up" threshold (rather than the general 5-up rule). This conservative approach ensures that measurement precision is not greatly overstated, which could occur if the uncertainty were rounded down. This is a compromised approach only for rounding uncertainty (4-up, 3-down): more conservative than "4-down, 5-up" rounding rule for general values.
+Apply standard round-half-up for general calculated values.
 
-Application example:
-100.00(333) → 100.0(33), last '3' rounds down; uncertainty stays '33'
-100.00(334) → 100.0(34), last '4' rounds the '3' up; uncertainty becomes '34'
+- Round down when the discarded digit is 0-4.
+- Round up when the discarded digit is 5-9.
+
+Examples:
+
+- `0.344 -> 0.34 -> 0.3`: the discarded `4` rounds down at each step.
+- `0.345 -> 0.35 -> 0.4`: the discarded `5` rounds up at each step.
+
+#### Uncertainty Rounding Threshold: 4-Up, 3-Down
+
+Apply the conservative 4-up rule to uncertainties only.
+
+- Round down when the discarded digit is 0-3.
+- Round up when the discarded digit is 4-9.
+
+After rounding the uncertainty, round the reported value to the same decimal place as the least significant uncertainty digit.
+
+Examples:
+
+- `100.00(333) -> 100.0(33)`: discarded `3` rounds down; uncertainty stays `33`.
+- `100.00(334) -> 100.0(34)`: discarded `4` rounds up; uncertainty becomes `34`.
 
 
 **Examples by Decimal Places:**

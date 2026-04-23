@@ -279,26 +279,53 @@ def find_suggested_average(result_unc: float, data: List[Tuple[float, float, flo
     return result_unc
 
 
-def _successive_round_4up(value: float, src_decimals: int, tgt_decimals: int) -> float:
+def _decimal_places_from_value(value: float) -> int:
+    """Return decimal places visible in Decimal(str(value))."""
+    from decimal import Decimal
+
+    exponent = Decimal(str(value)).as_tuple().exponent
+    return max(0, -exponent)
+
+
+def _successive_round(value: float, tgt_decimals: int, threshold: int, min_src_decimals: int = 0) -> float:
     """
-    Apply ENSDF successive rounding from src_decimals down to tgt_decimals.
-    Uses 4-up threshold: digit 0-3 rounds DOWN, digit 4-9 rounds UP.
-    Processes one decimal place at a time from right to left.
+    Apply ENSDF successive rounding digit-by-digit from right to left.
+
+    Args:
+        value: numeric value to round
+        tgt_decimals: target number of decimal places
+        threshold: rounding threshold for the discarded digit
+            5 => standard round-half-up for general values
+            4 => conservative uncertainty rounding
+        min_src_decimals: minimum source precision to honor when the original
+            input carried trailing zeros not preserved by float conversion
     """
     from decimal import Decimal, ROUND_DOWN
-    d = Decimal(str(value))
+
+    sign = -1 if value < 0 else 1
+    d = Decimal(str(abs(value)))
+    src_decimals = max(_decimal_places_from_value(value), min_src_decimals)
+
     for nd in range(src_decimals, tgt_decimals, -1):
-        # To remove the nd-th decimal digit, shift by 10^(nd-1) so that the
-        # digit being removed appears as the TENTHS position of scaled.
-        # Example: removing 2nd decimal (nd=2): shift=10, 0.44*10=4.4 → digit=4 → UP → 0.5
         shift = Decimal(10) ** (nd - 1)
         scaled = d * shift
         floor_val = int(scaled.to_integral_value(rounding=ROUND_DOWN))
-        remainder_digit = int((scaled - floor_val) * 10)  # digit being removed (0-9)
-        if remainder_digit >= 4:  # 4-up rule
+        remainder_digit = int((scaled - floor_val) * 10)
+        if remainder_digit >= threshold:
             floor_val += 1
         d = Decimal(floor_val) / shift
-    return float(d)
+
+    return float(d) * sign
+
+
+def _successive_round_4up(value: float, tgt_decimals: int, min_src_decimals: int = 0) -> float:
+    """Apply ENSDF successive 4-up uncertainty rounding."""
+    return _successive_round(value, tgt_decimals, threshold=4, min_src_decimals=min_src_decimals)
+
+
+def _successive_round_5up(value: float, tgt_decimals: int, min_src_decimals: int = 0) -> float:
+    """Apply ENSDF successive 5-up general-value rounding."""
+    return _successive_round(value, tgt_decimals, threshold=5, min_src_decimals=min_src_decimals)
 
 
 def _ensdf_unc_target_decimals(unc: float) -> int:
@@ -318,7 +345,7 @@ def _ensdf_unc_target_decimals(unc: float) -> int:
     # Apply successive 4-up rounding from raw precision to 2 decimal places of leading_raw
     # (i.e., from ~4 sig digits to 2 sig digits of the leading scaled value)
     raw_dec = max(0, 4)  # work with 4 extra digits of leading_raw
-    rounded_leading = _successive_round_4up(leading_raw, raw_dec, 0)
+    rounded_leading = _successive_round_4up(leading_raw, 0, min_src_decimals=raw_dec)
     leading_2 = int(rounded_leading)
     if leading_2 >= 35:  # or single digit after rounding up to 100+
         n_sig = 1
@@ -343,16 +370,12 @@ def fmt_val_unc(val: float, unc: float, src_max_decimals: int) -> str:
     tgt_dec = _ensdf_unc_target_decimals(unc)
     tgt_dec = max(0, tgt_dec)
     # Step 2: apply successive 4-up rounding to uncertainty
-    rounded_unc = _successive_round_4up(unc, src_max_decimals + 2, tgt_dec)
+    rounded_unc = _successive_round_4up(unc, tgt_dec, min_src_decimals=src_max_decimals + 2)
     unc_int = int(round(rounded_unc * 10**tgt_dec))
     if unc_int == 0:
         unc_int = 1  # floor at 1
-    # Step 3: round value to tgt_dec decimal places using standard 5-up (general values)
-    val_str = f"{val:.{tgt_dec}f}"  # Python's round-half-even; apply 5-up manually
-    # Manual 5-up rounding of val to tgt_dec
-    import math
-    factor = 10.0 ** tgt_dec
-    val_rounded = math.floor(val * factor + 0.5) / factor
+    # Step 3: round value to tgt_dec decimal places using successive 5-up.
+    val_rounded = _successive_round_5up(val, tgt_dec, min_src_decimals=src_max_decimals)
     val_str = f"{val_rounded:.{tgt_dec}f}"
     return f"{val_str}({unc_int})"
 
