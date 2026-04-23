@@ -230,7 +230,7 @@ After completing the required tasks, carefully reflect on how agent skills have 
 
 ### Numerical Exactness
 
-Extract and enter numbers exactly as provided in source data, without approximation, rounding, truncation, padding, omission, alteration of digits and decimal places, or inference of values, uncertainties, or signs. For example, write -10.0 as -10.0, not -10, -10.00, 10.0, or +10.0.
+Extract and enter numbers exactly as provided in source data, without approximation, rounding, truncation, padding, omission, alteration of digits and decimal places, or inference of values, uncertainties, or signs. For example, -10.0 must be -10.0, not -10, -10.00, -10.01, 10.0, or +10.0.
 
 ### ENSDF Uncertainty Notation
 

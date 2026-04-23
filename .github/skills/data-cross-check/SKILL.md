@@ -45,7 +45,7 @@ Recommended Operating Procedure
 - [ ] 1. Confirm Task Configuration
 - [ ] 2. Carefully parse source and target within scope
 - [ ] 3. Extract the data needed for the task.
-- [ ] 4. For ≥20 records: write a script to regenerate all expected ENSDF records from source, compare line-by-line against target, and report mismatches. For <20 records: compare character-by-character manually.
+- [ ] 4. For ≥20 records: write a script to process all expected ENSDF data records from source, compare item-by-item against target, debug as needed, and report mismatches. For <20 records: compare character-by-character manually.
 - [ ] 5. Run reproducible 15% random spot-check (copilot-instructions.md § 5)
 - [ ] 6. Report all mismatches with locations
 ```
@@ -56,6 +56,8 @@ Recommended Operating Procedure
 - For CSV/Markdown tables, include blank separator columns in the mapping.
 - For near-equal energies, use both level energy and transition energy for matching.
 - Script-based regenerate-then-compare is preferred for ≥20 records; it catches format mismatches (sign, trailing zero, `{I}` precision) that manual comparison misses.
+- Numerical Exactness: see `.github/ENSDF-Agent.agent.md` § Numerical Exactness.
+
 
 ## Report Output
 

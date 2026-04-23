@@ -223,13 +223,13 @@ Example:
 - **cG, 2cG, 3cG lines:** Form a unified comment block for that G-record.
 - When multiple G-comment identifiers are present, order them as follows: `E$ → RI$ → M$ → MR$ → other identifiers`.
 
-**Continuation Records and Comments (Column 6)**
-
+**Integral Understanding of Continuation Records and Comments (Column 6)**
 - Column 6 contains the continuation marker: blank for the first record and alphanumeric for continuation records.
 - Common continuation records include `2 L` and `F L` for L-records, and `2 G` and `B G` for G-records.
 - Common continuation comments include `2cL` and `3cL` for L-comment lines, and `2cG` and `3cG` for G-comment lines.
 - Continuation records must remain attached to, and apply only to, the immediately preceding record type (L or G).
 - Continuation comments must remain attached to the immediately preceding comment line.
+- Multi-line `c` comments (with `2c`, `3c` continuation markers) must be fully concatenated as an **Inseparable Whole** during data editing and parsing.
 - `2cL` must follow `cL`, and `3cL` must follow `2cL`, etc.
 - `2cG` must follow `cG`, and `3cG` must follow `2cG`, etc.
 - Continuation records have their own text-format standards. Do not use comment text format in continuation records. Example: `35CA2 L %EC+%B+=100$%ECP=95.8 3$%EC2P=4.2 3`.
