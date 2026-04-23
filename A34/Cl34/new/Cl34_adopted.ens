@@ -34,10 +34,15 @@
  34CL2c  2002DeZU, 2001Pi10.                                                    
  34CL cG E$E|g values without uncertainties are deduced from level-energy       
  34CL2cG differences, unless otherwise noted.                                   
- 34CL cG RI$From {+33}S(p,|g), unless otherwise noted.                          
- 34CL cL J,T$For levels >8 MeV, J|p and widths are from multilevel, multichannel
- 34CL2cL R-matrix analysis in {+33}S(p,p),(p,p'|g):resonances (1989Va15), unless
- 34CL3cL otherwise noted.                                                       
+ 34CL cG E,RI,M,MR$From |g(|q) and/or |g|g(|q) in {+33}S(p,|g), unless otherwise
+ 34CL2cG noted.                                                                 
+ 34CL cG E(F),RI(F),M(F),MR(F)$From |g|g(|q)(DCO) and |g|g(|q)(POL) in          
+ 34CL2cG {+27}Al({+12}C,|an|g), and RUL if available.                           
+ 34CL cL E$From {+33}S(p,|g), unless otherwise noted.                           
+ 34CL cL E,J,T$For levels above 8 MeV, from {+33}S(p,p),(p,p'|g):resonances,    
+ 34CL2cL unless otherwise noted. J|p and widths are from multilevel,            
+ 34CL3cL multichannel R-matrix analysis in {+33}S(p,p),(p,p'|g):resonances      
+ 34CL4cL (1989Va15).                                                            
  34CL  XA34AR EC+B+ DECAY (0.84646 S)                                           
  34CL  XB34CL IT DECAY (31.99 M)                                                
  34CL  XC35K ECP DECAY (175 MS)                                                 
@@ -2570,7 +2575,6 @@
  34CL cL E$weighted average of 7690.3 {I10} from {+33}S(p,|g) and 7690.5 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
  34CL cL J$from R-matrix analysis in {+33}S(p,p),(p,p'|g):resonances.           
- 34CL cL T$from {+33}S(p,p),(p,p'|g):resonances                                 
  34CL d                                                                         
  34CL  L 7696.8    15 1-               1.3 KEV   1                              
  34CLX L XREF=L                                                                 
@@ -2578,7 +2582,7 @@
  34CL d                                                                         
  34CL  L 7699.5    11 (7+)             0.34 PS   LT                             
  34CLX L XREF=F                                                                 
- 34CL cL J$                                                                     
+ 34CL cL J$2384|g, |DJ=0 to 7+, 5315.4 level in {+27}Al({+12}C,|an|g).          
  34CL cL T$|t<0.49 ps (2014Bi03, DSAM) from {+27}Al({+12}C,|an|g).              
  34CL  G 2384        100       [M1,E2]                                          
  34CL d                                                                         
@@ -2594,7 +2598,6 @@
  34CL cL E$weighted average of 7720.4 {I10} from {+33}S(p,|g) and 7719.3 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
  34CL cL J$from R-matrix analysis in {+33}S(p,p),(p,p'|g):resonances.           
- 34CL cL T$from {+33}S(p,p),(p,p'|g):resonances                                 
  34CL d                                                                         
  34CL  L 7730.1    10                                                           
  34CLX L XREF=K                                                                 
@@ -2621,19 +2624,18 @@
  34CLX L XREF=L                                                                 
  34CL cL J$from R-matrix analysis in {+33}S(p,p),(p,p'|g):resonances.           
  34CL d                                                                         
- 34CL  L 7801.5    10 8-               69 FS     49                             
- 34CLX L XREF=EFG                                                           
+ 34CL  L 7801.5    10 8-               83.0 FS   LT                             
+ 34CLX L XREF=EF                                                           
  34CL cL E$weighted average of 7802.4 {I10} from {+24}Mg({+12}C,pn|g) and 7800.5
  34CL2cL {I11} from {+27}Al({+12}C,|an|g)                                       
- 34CL cL J$|g(|q) in {+24}Mg({+12}C,pn|g)                                       
- 34CL cL T$from lifetime |t=100 fs {I70} (1982Va02, DSAM) in {+31}P(|a,n|g);    
- 34CL2cL |t<0.12 ps (2014Bi03, DSAM) from {+27}Al({+12}C,|an|g).                
- 34CL  G 2487.4    10 100      E1+M2     +0.22   7                              
+ 34CL cL J$2487.4|g, E1+M2, to 7+, 5315.4 level in {+27}Al({+12}C,|an|g).       
+ 34CL cL T$lifetime |t<0.12 ps (2014Bi03, DSAM) from {+27}Al({+12}C,|an|g).     
+ 34CL  G 2487.4    10 100      E1+M2     +0.22   7                          F   
  34CL cG E$from {+24}Mg({+12}C,pn|g)                                            
- 34CL cG M,MR$from {+27}Al({+12}C,|an|g)                                        
  34CL d                                                                         
- 34CL  L 7803.9    10
- 34CLX L XREF=K
+ 34CL  L 7803.9    10                  69 FS     49                             
+ 34CLX L XREF=G(7800)K
+ 34CL cL T$lifetime |t=100 fs {I70} (1982Va02, DSAM) in {+31}P(|a,n|g)          
  34CL d                                                                         
  34CL  L 7809.7    10                                                           
  34CLX L XREF=K                                                                 
@@ -2710,7 +2712,6 @@
  34CL cL E$weighted average of 7966.9 {I10} from {+33}S(p,|g) and 7967.8 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
  34CL cL J$from R-matrix analysis in {+33}S(p,p),(p,p'|g):resonances.           
- 34CL cL T$from {+33}S(p,p),(p,p'|g):resonances                                 
  34CL d                                                                         
  34CL  L 7975.1    15 2+               3.0 KEV   3                              
  34CLX L XREF=L                                                             
@@ -2746,7 +2747,7 @@
  34CLX L XREF=L                                                                 
  34CL cL J$from R-matrix analysis in {+33}S(p,p),(p,p'|g):resonances.           
  34CL d                                                                         
- 34CL  L 8029.9    15                  8.0 KEV   8                              
+ 34CL  L 8029.9    15 1-               8.0 KEV   8                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 8030.9 {I10} from {+33}S(p,|g) and 8027.6 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
@@ -2771,8 +2772,8 @@
  34CL d                                                                         
  34CL  L 8059.3    15 3+               1.2 KEV   1                             
  34CLX L XREF=L                                                                
- 34CL cL J$(2)+,(4)+ also possible {+33}S(p,p),(p,p'|g):resonances R-matrix     
- 34CL2cL analysis (1989Va15)                                                    
+ 34CL cL J$other: (2)+,(4)+ also possible {+33}S(p,p),(p,p'|g):resonances       
+ 34CL2cL (1989Va15).                                                            
  34CL d                                                                         
  34CL  L 8070.5    10 (1:5)-                                                    
  34CLX L XREF=KL                                                                
@@ -2818,9 +2819,9 @@
  34CL d                                                                         
  34CL  L 8155.5    11 6+               56 FS     LT                             
  34CLX L XREF=F                                                             
+ 34CL cL J$2840|g, M1+E2, to 7+, 5315.4 level                                   
  34CL cL T$|t<0.08 ps (2014Bi03, DSAM) from {+27}Al({+12}C,|an|g).              
- 34CL  G 2840        100       M1+E2     -0.3    1                              
- 34CL cG M,MR$from {+27}Al({+12}C,|an|g)                                        
+ 34CL  G 2840         100       M1+E2    -0.3    1                          F   
  34CL d                                                                         
  34CL  L 8159.0    15 1+               0.90 KEV  9                              
  34CLX L XREF=L                                                             
@@ -2901,9 +2902,8 @@
  34CL d                                                                         
  34CL  L 8305.5    10 2,3                                                       
  34CLX L XREF=K                                                                 
- 34CL cL J$spin from |g(|q) in {+33}S(p,|g).                                    
- 34CL  G 8158.1      100       D+Q       0.27    18                             
- 34CL cG M,MR$from |g(|q) in {+33}S(p,|g).                                      
+ 34CL cL J$spin=2,3 from |g(|q) in {+33}S(p,|g).                                
+ 34CL  G 8158.1       100      D+Q       0.27    18                             
  34CL d                                                                         
  34CL  L 8316.60   30 4+               2.0 KEV   2                              
  34CLX L XREF=L                                                                 
@@ -2940,8 +2940,8 @@
  34CL d                                                                         
  34CL  L 8381.3    15 (2)-             0.30 KEV  3                              
  34CLX L XREF=J(8390*)L                                                  
- 34CL cL J$from R-matrix analysis in {+33}S(p,p),(p,p'|g):resonances. Other:    
- 34CL2cL L=3,5,6 from 0+ in {+32}S(|a,d) gives 2-,3-,4-,5,6,7+ for 8390 {I20}.  
+ 34CL cL J$other: L=3,5,6 from 0+ in {+32}S(|a,d) gives 2-,3-,4-,5,6,7+ for 8390
+ 34CL2cL {I20}.                                                                 
  34CL d                                                                         
  34CL  L 8386.5    15 3+,4+
  34CLX L XREF=J(8390*)L
