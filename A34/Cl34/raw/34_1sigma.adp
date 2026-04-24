@@ -942,7 +942,6 @@
  34CLX L XREF=IKM(4461*)Q(4460*)                                                
  34CL cL T$weighted average of 139 fs {I42} from {+32}S({+3}He,p|g) and 2.6E2 fs
  34CL2cL {I17} from {+33}S(p,|g)                                                
- 34CL cL E$from (p,|g)                                                          
  34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-.                 
  34CL cL T$mean lifetime |t in fs, from {+33}S(p,|g): 370 {I250} (1985La16);    
  34CL2cL from {+32}S({+3}He,p|g): 200 {I60} (1973Ca15) adopted weighted average:
@@ -1281,7 +1280,6 @@
  34CL d                                                                         
  34CL  L 5386.8    15 (3-,4,5,6-)                                               
  34CLX L XREF=KMO(5388?)                                                        
- 34CL cL E$from (p,|g)                                                          
  34CL cL J$L=3 from 3/2+ in {+33}S({+3}He,d) gives 1-,2-,3-,4-,5-; (2-,3,4,5,6-)
  34CL2cL from |g to 4-, 3600; (3-,4,5,6,7-) from |g from 5(-), 6870.            
  34CL  G 1786.5      100                                                        
@@ -1387,7 +1385,6 @@
  34CL d                                                                         
  34CL  L 5673.0    10 (1,2+)                                                    
  34CLX L XREF=KMO(5671?)                                                        
- 34CL cL E$from (p,|g)                                                          
  34CL cL J$L=0 from 3/2+ in {+33}S({+3}He,d) gives 1+,2+; gamma to 0+. Possible 
  34CL2cL |g to 5- disfavors 1.                                                  
  34CL  G 1255.7      0.41                                                       
@@ -1610,7 +1607,6 @@
  34CL d                                                                         
  34CL  L 6169.4    11 3-               25 EV     4                          L   
  34CLX L XREF=KLV(6160*)                                                        
- 34CL cL E$from (p,|g)                                                          
  34CL cL E$from {+33}S(p,|g).                                                   
  34CL cL J$spin=3 from |g(|q) in {+33}S(p,|g); D |DJ=0 |g to 3-, 3984 (and to   
  34CL2cL 3-, 3545 and 3+, 146); |p=(-) from no |g (or weak) to 1+, 665.         
@@ -1968,7 +1964,6 @@
  34CL d                                                                         
  34CL  L 6640.92   7  4-               40 EV     6                              
  34CLX L XREF=KL                                                                
- 34CL cL E$from (p,|g)                                                          
  34CL cL J$4- from {+33}S(p,p),(p,p'|g):resonances; spin=4 from |g(|q) in       
  34CL2cL {+33}S(p,|g).                                                          
  34CL cL T$from {+33}S(p,p),(p,p'|g):resonances.                                
@@ -2151,7 +2146,6 @@
  34CL d                                                                         
  34CL  L 6871.18   30 5-               26 EV     7                              
  34CLX L XREF=KL                                                                
- 34CL cL E$from (p,|g)                                                          
  34CL cL J$spin=5 from |g(|q) in {+33}S(p,|g).                                  
  34CL  G 1330.4      13.6    14                                                 
  34CL  G 1484.4      6.8     34                                                 
