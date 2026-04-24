@@ -1,5 +1,5 @@
-Program for consistency check: output for averaging results for gamma energies and intensities (version 04/21/2026)
-Generated at: Thu 04/23/2026 at 06:22:13 PM EDT
+Program for consistency check: output for averaging results for gamma energies and intensities (version 04/24/2026)
+Generated at: Fri 04/24/2026 at 04:20:23 PM EDT
 
 **************** Level=146.36 in 34CL     *******************ID#=1-2
 
@@ -386,14 +386,15 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 Data points of E record
 ### (1 value has weight>2.00%; all values with unc  considered in weighted average)
                34AR EC+B+ DECAY   665.8(10)           weight=0.25%
-*                   32S(3HE,PG)   665.57(5)           weight=99.75%
+                  27AL(12C,ANG)   666(1)              weight=0.25%
+*                   32S(3HE,PG)   665.57(5)           weight=99.50%
 
 Averaging results:
            weighted average:      665.57(5)            (internal)
-                                  665.571(12)          (external)
-                                  chi**2/(n-1)=0.053     [critical=6.635]
-         unweighted average:      665.69(12)          
-           (of all values)        chi**2/(n-1)=0.026     [critical=4.605]
+                                  665.572(17)          (external)
+                                  chi**2/(n-1)=0.118     [critical=6.635]
+         unweighted average:      665.79(13)          
+           (of all values)        chi**2/(n-1)=0.046     [critical=3.780]
 
    suggested adopted result:      665.57(5)           
        (Weighted-Of-All)
@@ -403,16 +404,18 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 34CL cG E$weighted average of 665.8 {I10} from {+34}Ar |e+|b{++} decay and     
- 34CL2cG 665.57 {I5} from {+32}S({+3}He,p|g)                                    
+ 34CL cG E$weighted average of 665.8 {I10} from {+34}Ar |e+|b{++} decay, 666    
+ 34CL2cG {I1} from {+27}Al({+12}C,|an|g), and 665.57 {I5} from                  
+ 34CL3cG {+32}S({+3}He,p|g)                                                     
 
 ### unweighted average comment (all non-limit values with/without unc):
- 34CL cG E$unweighted average of 665.8 {I10} from {+34}Ar |e+|b{++} decay and   
- 34CL2cG 665.57 {I5} from {+32}S({+3}He,p|g)                                    
+ 34CL cG E$unweighted average of 665.8 {I10} from {+34}Ar |e+|b{++} decay, 666  
+ 34CL2cG {I1} from {+27}Al({+12}C,|an|g), and 665.57 {I5} from                  
+ 34CL3cG {+32}S({+3}He,p|g)                                                     
 
 ### Non-average comment:
- 34CL cG E$from {+32}S({+3}He,p|g). Other: 665.8 {I10} from {+34}Ar |e+|b{++}   
- 34CL2cG decay                                                                  
+ 34CL cG E$from {+32}S({+3}He,p|g). Others: 665.8 {I10} from {+34}Ar |e+|b{++}  
+ 34CL2cG decay and 666 {I1} from {+27}Al({+12}C,|an|g)                          
 
 
 **************** Level=1230.28 in 34CL     *******************ID#=1-5
@@ -505,6 +508,39 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 **************** Level=1230.28     Gamma=564.67 in 34CL     *******************ID#=1-5-1
 
+------ average E------
+Data points of E record
+### (1 value has weight>2.00%; all values with unc  considered in weighted average)
+                  27AL(12C,ANG)   564(1)              weight=0.36%
+*                   32S(3HE,PG)   564.67(6)           weight=99.64%
+
+Averaging results:
+           weighted average:      564.67(6)            (internal)
+                                  564.67(4)            (external)
+                                  chi**2/(n-1)=0.447     [critical=6.635]
+         unweighted average:      564.34(34)          
+           (of all values)        chi**2/(n-1)=0.224     [critical=4.605]
+
+   suggested adopted result:      564.67(6)           
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34CL cG E$weighted average of 564 {I1} from {+27}Al({+12}C,|an|g) and 564.67   
+ 34CL2cG {I6} from {+32}S({+3}He,p|g)                                           
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34CL cG E$unweighted average of 564 {I1} from {+27}Al({+12}C,|an|g) and 564.67 
+ 34CL2cG {I6} from {+32}S({+3}He,p|g)                                           
+
+### Non-average comment:
+ 34CL cG E$from {+32}S({+3}He,p|g). Other: 564 {I1} from {+27}Al({+12}C,|an|g)  
+
+
+<For Gamma=564.67 from Level=1230.28>
 ------ average RI------
 Data points of RI record
 *                   32S(3HE,PG)   74(5)               weight=7.27%
@@ -545,6 +581,39 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 **************** Level=1230.28     Gamma=769.25 in 34CL     *******************ID#=1-5-2
 
+------ average E------
+Data points of E record
+### (1 value has weight>2.00%; all values with unc  considered in weighted average)
+                  27AL(12C,ANG)   769(1)              weight=0.49%
+*                   32S(3HE,PG)   769.25(7)           weight=99.51%
+
+Averaging results:
+           weighted average:      769.25(7)            (internal)
+                                  769.249(18)          (external)
+                                  chi**2/(n-1)=0.062     [critical=6.635]
+         unweighted average:      769.13(13)          
+           (of all values)        chi**2/(n-1)=0.031     [critical=4.605]
+
+   suggested adopted result:      769.25(7)           
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34CL cG E$weighted average of 769 {I1} from {+27}Al({+12}C,|an|g) and 769.25   
+ 34CL2cG {I7} from {+32}S({+3}He,p|g)                                           
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34CL cG E$unweighted average of 769 {I1} from {+27}Al({+12}C,|an|g) and 769.25 
+ 34CL2cG {I7} from {+32}S({+3}He,p|g)                                           
+
+### Non-average comment:
+ 34CL cG E$from {+32}S({+3}He,p|g). Other: 769 {I1} from {+27}Al({+12}C,|an|g)  
+
+
+<For Gamma=769.25 from Level=1230.28>
 ------ average RI------
 Data points of RI record
 *                 27AL(12C,ANG)   100(5)              weight=7.07%
@@ -580,6 +649,38 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 **************** Level=1230.28     Gamma=1083.9 in 34CL     *******************ID#=1-5-3
 
+------ average E------
+Data points of E record
+*                 27AL(12C,ANG)   1084(1)             weight=8.26%
+*                   32S(3HE,PG)   1083.9(3)           weight=91.74%
+
+Averaging results:
+           weighted average:      1083.91(29)          (internal)
+                                  1083.908(28)         (external)
+                                  chi**2/(n-1)=0.009     [critical=4.605]
+         unweighted average:      1083.95(5)          
+           (of all values)        chi**2/(n-1)=0.005     [critical=4.605]
+
+   suggested adopted result:      1083.9(3)           
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34CL cG E$weighted average of 1084 {I1} from {+27}Al({+12}C,|an|g) and 1083.9  
+ 34CL2cG {I3} from {+32}S({+3}He,p|g)                                           
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34CL cG E$unweighted average of 1084 {I1} from {+27}Al({+12}C,|an|g) and 1083.9
+ 34CL2cG {I3} from {+32}S({+3}He,p|g)                                           
+
+### Non-average comment:
+ 34CL cG E$from {+32}S({+3}He,p|g). Other: 1084 {I1} from {+27}Al({+12}C,|an|g) 
+
+
+<For Gamma=1083.9 from Level=1230.28>
 ------ average RI------
 Data points of RI record
 *                   32S(3HE,PG)   84(5)               weight=7.27%
@@ -656,6 +757,35 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 **************** Level=1887.29     Gamma=1426.7 in 34CL     *******************ID#=1-6-3
 
+------ average E------
+Data points of E record
+*                 27AL(12C,ANG)   1426(1)             weight=32.89%
+*                   32S(3HE,PG)   1426.7(7)           weight=67.11%
+
+Averaging results:
+           weighted average:      1426.5(6)            (internal)
+                                  1426.47(33)          (external)
+                                  chi**2/(n-1)=0.329     [critical=4.605]
+         unweighted average:      1426.35(35)         
+           (of all values)        chi**2/(n-1)=0.245     [critical=4.605]
+
+   suggested adopted result:      1426.5(7)           
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34CL cG E$weighted average of 1426 {I1} from {+27}Al({+12}C,|an|g) and 1426.7  
+ 34CL2cG {I7} from {+32}S({+3}He,p|g)                                           
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34CL cG E$unweighted average of 1426 {I1} from {+27}Al({+12}C,|an|g) and 1426.7
+ 34CL2cG {I7} from {+32}S({+3}He,p|g)                                           
+
+
+<For Gamma=1426.7 from Level=1887.29>
 ------ average RI------
 Data points of RI record
 *                 27AL(12C,ANG)   100(6)              weight=3.64%
@@ -691,6 +821,35 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 **************** Level=1887.29     Gamma=1740.2 in 34CL     *******************ID#=1-6-4
 
+------ average E------
+Data points of E record
+*                 27AL(12C,ANG)   1741(1)             weight=71.91%
+*                   32S(3HE,PG)   1740.2(16)          weight=28.09%
+
+Averaging results:
+           weighted average:      1740.8(9)            (internal)
+                                  1740.8(4)            (external)
+                                  chi**2/(n-1)=0.180     [critical=4.605]
+         unweighted average:      1740.6(4)           
+           (of all values)        chi**2/(n-1)=0.320     [critical=4.605]
+
+   suggested adopted result:      1740.8(10)          
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34CL cG E$weighted average of 1741 {I1} from {+27}Al({+12}C,|an|g) and 1740.2  
+ 34CL2cG {I16} from {+32}S({+3}He,p|g)                                          
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34CL cG E$unweighted average of 1741 {I1} from {+27}Al({+12}C,|an|g) and 1740.2
+ 34CL2cG {I16} from {+32}S({+3}He,p|g)                                          
+
+
+<For Gamma=1740.2 from Level=1887.29>
 ------ average RI------
 Data points of RI record
 *                   32S(3HE,PG)   66(5)               weight=5.45%
@@ -873,6 +1032,35 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 **************** Level=2157.9     Gamma=1697.6 in 34CL     *******************ID#=1-8-4
 
+------ average E------
+Data points of E record
+*                 27AL(12C,ANG)   1697(1)             weight=13.79%
+*                   32S(3HE,PG)   1697.6(4)           weight=86.21%
+
+Averaging results:
+           weighted average:      1697.5(4)            (internal)
+                                  1697.52(21)          (external)
+                                  chi**2/(n-1)=0.310     [critical=4.605]
+         unweighted average:      1697.30(30)         
+           (of all values)        chi**2/(n-1)=0.180     [critical=4.605]
+
+   suggested adopted result:      1697.5(4)           
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34CL cG E$weighted average of 1697 {I1} from {+27}Al({+12}C,|an|g) and 1697.6  
+ 34CL2cG {I4} from {+32}S({+3}He,p|g)                                           
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34CL cG E$unweighted average of 1697 {I1} from {+27}Al({+12}C,|an|g) and 1697.6
+ 34CL2cG {I4} from {+32}S({+3}He,p|g)                                           
+
+
+<For Gamma=1697.6 from Level=2157.9>
 ------ average RI------
 Data points of RI record
 *                   32S(3HE,PG)   100.0(5)            weight=58.67%
@@ -1127,6 +1315,38 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 **************** Level=2181.09     Gamma=2035.1 in 34CL     *******************ID#=1-9-4
 
+------ average E------
+Data points of E record
+*                 27AL(12C,ANG)   2035(1)             weight=32.89%
+*                   32S(3HE,PG)   2035.1(7)           weight=67.11%
+
+Averaging results:
+           weighted average:      2035.1(6)            (internal)
+                                  2035.07(5)           (external)
+                                  chi**2/(n-1)=0.007     [critical=4.605]
+         unweighted average:      2035.05(5)          
+           (of all values)        chi**2/(n-1)=0.005     [critical=4.605]
+
+   suggested adopted result:      2035.1(7)           
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34CL cG E$weighted average of 2035 {I1} from {+27}Al({+12}C,|an|g) and 2035.1  
+ 34CL2cG {I7} from {+32}S({+3}He,p|g)                                           
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34CL cG E$unweighted average of 2035 {I1} from {+27}Al({+12}C,|an|g) and 2035.1
+ 34CL2cG {I7} from {+32}S({+3}He,p|g)                                           
+
+### Non-average comment:
+ 34CL cG E$from {+32}S({+3}He,p|g). Other: 2035 {I1} from {+27}Al({+12}C,|an|g) 
+
+
+<For Gamma=2035.1 from Level=2181.09>
 ------ average RI------
 Data points of RI record
 *                 27AL(12C,ANG)   7.0(5)              weight=95.87%
@@ -1271,6 +1491,35 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 **************** Level=2375.67     Gamma=2230.1 in 34CL     *******************ID#=1-10-4
 
+------ average E------
+Data points of E record
+*                 27AL(12C,ANG)   2229(1)             weight=13.79%
+*                   32S(3HE,PG)   2230.1(4)           weight=86.21%
+
+Averaging results:
+           weighted average:      2230.0(4)            (internal)
+                                  2230.0(4)            (external)
+                                  chi**2/(n-1)=1.043     [critical=4.605]
+         unweighted average:      2229.6(6)           
+           (of all values)        chi**2/(n-1)=0.605     [critical=4.605]
+
+   suggested adopted result:      2230.0(4)           
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34CL cG E$weighted average of 2229 {I1} from {+27}Al({+12}C,|an|g) and 2230.1  
+ 34CL2cG {I4} from {+32}S({+3}He,p|g)                                           
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34CL cG E$unweighted average of 2229 {I1} from {+27}Al({+12}C,|an|g) and 2230.1
+ 34CL2cG {I4} from {+32}S({+3}He,p|g)                                           
+
+
+<For Gamma=2230.1 from Level=2375.67>
 ------ average RI------
 Data points of RI record
 ### (1 value has weight>2.00%; all values with unc  considered in weighted average)
@@ -1451,7 +1700,8 @@ Data points of T record
 
 Averaging results:
            weighted average:      0.17(4)              (internal)
-                                  0.17(7)              (external)
+                                  0.17(7)              (external, combined weight)
+                                  0.17(+7-7)           (external, separate weights)
                                   chi**2/(n-1)=2.846     [critical=4.605]
          unweighted average:      0.36(21)            
            (of all values)        chi**2/(n-1)=0.084     [critical=4.605]
@@ -1459,7 +1709,11 @@ Averaging results:
    suggested adopted result:      0.17(7)             
        (Weighted-Of-All)
 
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
+Note:  Combined weight means both unc+ and unc- of each input value are used to calculate
+          the final weight and external uncertainty, as used for the average value and chi2.
+       Separate weights means unc+ and unc- are used separately to calculate corresponding
+          weights and external uncertainties, respectively.
+       Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
           getting the external uncertainty. It is user's decision to make the final choice.
 
@@ -1614,24 +1868,18 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 ------ average RI------
 Data points of RI record
-*                 27AL(12C,ANG)   14.1(8)             weight=64.33%
-*                      33S(P,G)   14.9(11)            weight=34.02%
-                    32S(3HE,PG)   39(5)               weight=1.65%
-### (weight<2.00% not considered in weighted average)
-                    32S(3HE,PG)   39(5)               weight=1.65%
+*                 27AL(12C,ANG)   14.1(8)             weight=65.41%
+*                      33S(P,G)   14.9(11)            weight=34.59%
 
 Averaging results:
            weighted average:      14.4(7)              (internal)
                                   14.4(4)              (external)
                                   chi**2/(n-1)=0.346     [critical=4.605]
-           weighted average:      14.8(7)              (internal)
-            (of all values)       14.8(22)             (external)
-                                  chi**2/(n-1)=12.099     [critical=3.780]
-         unweighted average:      23(8)               
-           (of all values)        chi**2/(n-1)=200.243     [critical=3.780]
+         unweighted average:      14.5(4)             
+           (of all values)        chi**2/(n-1)=0.320     [critical=4.605]
 
    suggested adopted result:      14.4(8)             
-      (Weighted-Average)
+       (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1639,18 +1887,44 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 ### weighted average comment:
  34CL cG RI$weighted average of 14.1 {I8} from {+27}Al({+12}C,|an|g) and 14.9   
- 34CL2cG {I11} from {+33}S(p,|g). Other: 39 {I5} from {+32}S({+3}He,p|g)        
-
-### weighted average comment (all values):
- 34CL cG RI$weighted average of 14.1 {I8} from {+27}Al({+12}C,|an|g), 39 {I5}   
- 34CL2cG from {+32}S({+3}He,p|g), and 14.9 {I11} from {+33}S(p,|g)              
+ 34CL2cG {I11} from {+33}S(p,|g)                                                
 
 ### unweighted average comment (all non-limit values with/without unc):
- 34CL cG RI$unweighted average of 14.1 {I8} from {+27}Al({+12}C,|an|g), 39 {I5} 
- 34CL2cG from {+32}S({+3}He,p|g), and 14.9 {I11} from {+33}S(p,|g)              
+ 34CL cG RI$unweighted average of 14.1 {I8} from {+27}Al({+12}C,|an|g) and 14.9 
+ 34CL2cG {I11} from {+33}S(p,|g)                                                
 
 
-**************** Level=2721.09     Gamma=1490.9 in 34CL     *******************ID#=1-15-5
+**************** Level=2721.09     Gamma=563 in 34CL     *******************ID#=1-15-3
+
+------ average RI------
+Data points of RI record
+*                   32S(3HE,PG)   39(5)               weight=4.62%
+*                      33S(P,G)   14.9(11)            weight=95.38%
+
+Averaging results:
+           weighted average:      16.0(11)             (internal)
+                                  16(5)                (external)
+                                  chi**2/(n-1)=22.160     [critical=4.605]
+         unweighted average:      27(12)              
+           (of all values)        chi**2/(n-1)=290.405     [critical=4.605]
+
+   suggested adopted result:      27(12)              
+    (Unweighted-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34CL cG RI$weighted average of 39 {I5} from {+32}S({+3}He,p|g) and 14.9 {I11}  
+ 34CL2cG from {+33}S(p,|g)                                                      
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34CL cG RI$unweighted average of 39 {I5} from {+32}S({+3}He,p|g) and 14.9 {I11}
+ 34CL2cG from {+33}S(p,|g)                                                      
+
+
+**************** Level=2721.09     Gamma=1490.9 in 34CL     *******************ID#=1-15-6
 
 ------ average RI------
 Data points of RI record
@@ -1681,7 +1955,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cG from {+33}S(p,|g)                                                      
 
 
-**************** Level=2721.09     Gamma=2055.9 in 34CL     *******************ID#=1-15-6
+**************** Level=2721.09     Gamma=2055.9 in 34CL     *******************ID#=1-15-7
 
 ------ average RI------
 Data points of RI record
@@ -1727,8 +2001,37 @@ Note:  Combined weight means both unc+ and unc- of each input value are used to 
  34CL2cG from {+32}S({+3}He,p|g), and 15.5 {I11} from {+33}S(p,|g)              
 
 
-**************** Level=2721.09     Gamma=2260.7 in 34CL     *******************ID#=1-15-7
+**************** Level=2721.09     Gamma=2260.7 in 34CL     *******************ID#=1-15-8
 
+------ average E------
+Data points of E record
+*                 27AL(12C,ANG)   2260(1)             weight=20.00%
+*                   32S(3HE,PG)   2260.7(5)           weight=80.00%
+
+Averaging results:
+           weighted average:      2260.6(5)            (internal)
+                                  2260.56(28)          (external)
+                                  chi**2/(n-1)=0.392     [critical=4.605]
+         unweighted average:      2260.35(35)         
+           (of all values)        chi**2/(n-1)=0.245     [critical=4.605]
+
+   suggested adopted result:      2260.6(5)           
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34CL cG E$weighted average of 2260 {I1} from {+27}Al({+12}C,|an|g) and 2260.7  
+ 34CL2cG {I5} from {+32}S({+3}He,p|g)                                           
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34CL cG E$unweighted average of 2260 {I1} from {+27}Al({+12}C,|an|g) and 2260.7
+ 34CL2cG {I5} from {+32}S({+3}He,p|g)                                           
+
+
+<For Gamma=2260.7 from Level=2721.09>
 ------ average RI------
 Data points of RI record
 *                 27AL(12C,ANG)   100(6)              weight=5.64%
@@ -1762,7 +2065,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cG 100 {I7} from {+32}S({+3}He,p|g)                                       
 
 
-**************** Level=2721.09     Gamma=2.58E3 in 34CL     *******************ID#=1-15-8
+**************** Level=2721.09     Gamma=2.58E3 in 34CL     *******************ID#=1-15-9
 
 ------ average RI------
 Data points of RI record
@@ -1793,7 +2096,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cG from {+32}S({+3}He,p|g), and 38.9 {I11} from {+33}S(p,|g)              
 
 
-**************** Level=2721.09     Gamma=2721.2 in 34CL     *******************ID#=1-15-9
+**************** Level=2721.09     Gamma=2721.2 in 34CL     *******************ID#=1-15-10
 
 ------ average RI------
 Data points of RI record
@@ -3708,6 +4011,40 @@ Note:  Combined weight means both unc+ and unc- of each input value are used to 
 
 **************** Level=4824.18     Gamma=1192.67 in 34CL     *******************ID#=1-55-1
 
+------ average E------
+Data points of E record
+### (1 value has weight>2.00%; all values with unc  considered in weighted average)
+*                 24MG(12C,PNG)   1192.67(5)          weight=99.75%
+                  27AL(12C,ANG)   1193(1)             weight=0.25%
+
+Averaging results:
+           weighted average:      1192.67(5)           (internal)
+                                  1192.671(17)         (external)
+                                  chi**2/(n-1)=0.109     [critical=6.635]
+         unweighted average:      1192.84(17)         
+           (of all values)        chi**2/(n-1)=0.054     [critical=4.605]
+
+   suggested adopted result:      1192.67(5)          
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34CL cG E$weighted average of 1192.67 {I5} from {+24}Mg({+12}C,pn|g) and 1193  
+ 34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34CL cG E$unweighted average of 1192.67 {I5} from {+24}Mg({+12}C,pn|g) and 1193
+ 34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
+
+### Non-average comment:
+ 34CL cG E$from {+24}Mg({+12}C,pn|g). Other: 1193 {I1} from                     
+ 34CL2cG {+27}Al({+12}C,|an|g)                                                  
+
+
+<For Gamma=1192.67 from Level=4824.18>
 ------ average RI------
 Data points of RI record
 *                 24MG(12C,PNG)   5.7(14)             weight=3.99%
@@ -3812,6 +4149,35 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 **************** Level=4824.18     Gamma=2643.5 in 34CL     *******************ID#=1-55-5
 
+------ average E------
+Data points of E record
+*                 24MG(12C,PNG)   2643.5(5)           weight=80.00%
+*                 27AL(12C,ANG)   2643(1)             weight=20.00%
+
+Averaging results:
+           weighted average:      2643.4(5)            (internal)
+                                  2643.40(20)          (external)
+                                  chi**2/(n-1)=0.200     [critical=4.605]
+         unweighted average:      2643.25(25)         
+           (of all values)        chi**2/(n-1)=0.125     [critical=4.605]
+
+   suggested adopted result:      2643.4(5)           
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34CL cG E$weighted average of 2643.5 {I5} from {+24}Mg({+12}C,pn|g) and 2643   
+ 34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34CL cG E$unweighted average of 2643.5 {I5} from {+24}Mg({+12}C,pn|g) and 2643 
+ 34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
+
+
+<For Gamma=2643.5 from Level=4824.18>
 ------ average RI------
 Data points of RI record
 *                 24MG(12C,PNG)   10.0(14)            weight=10.41%
@@ -6702,6 +7068,40 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL 0.14 ps {I5} from {+31}P(|a,n|g)                                       
 
 
+**************** Level=7249.8     Gamma=1935 in 34CL     *******************ID#=1-173-1
+
+------ average E------
+Data points of E record
+*                 24MG(12C,PNG)   1935.0(5)           weight=80.00%
+*                 27AL(12C,ANG)   1935(1)             weight=20.00%
+
+Averaging results:
+           weighted average:      1935.0(5)            (internal)
+                                  1935.0(0)            (external)
+                                  chi**2/(n-1)=0.000     [critical=4.605]
+         unweighted average:      1935.0(0)           
+           (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
+
+   suggested adopted result:      1935.0(5)           
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34CL cG E$weighted average of 1935.0 {I5} from {+24}Mg({+12}C,pn|g) and 1935   
+ 34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34CL cG E$unweighted average of 1935.0 {I5} from {+24}Mg({+12}C,pn|g) and 1935 
+ 34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
+
+### Non-average comment:
+ 34CL cG E$from {+24}Mg({+12}C,pn|g). Other: 1935 {I1} from                     
+ 34CL2cG {+27}Al({+12}C,|an|g)                                                  
+
+
 **************** Level=7250.0 in 34CL     *******************ID#=1-174
 
 ------ average E------
@@ -6760,6 +7160,40 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 ### unweighted average comment (all non-limit values with/without unc):
  34CL cL T$unweighted average of 0.159 ps {I28} from {+27}Al({+12}C,|an|g) and  
  34CL2cL 0.14 ps {I5} from {+31}P(|a,n|g)                                       
+
+
+**************** Level=7250.0     Gamma=1935.0 in 34CL     *******************ID#=1-174-1
+
+------ average E------
+Data points of E record
+*                 24MG(12C,PNG)   1935.0(5)           weight=80.00%
+*                 27AL(12C,ANG)   1935(1)             weight=20.00%
+
+Averaging results:
+           weighted average:      1935.0(5)            (internal)
+                                  1935.0(0)            (external)
+                                  chi**2/(n-1)=0.000     [critical=4.605]
+         unweighted average:      1935.0(0)           
+           (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
+
+   suggested adopted result:      1935.0(5)           
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34CL cG E$weighted average of 1935.0 {I5} from {+24}Mg({+12}C,pn|g) and 1935   
+ 34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34CL cG E$unweighted average of 1935.0 {I5} from {+24}Mg({+12}C,pn|g) and 1935 
+ 34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
+
+### Non-average comment:
+ 34CL cG E$from {+24}Mg({+12}C,pn|g). Other: 1935 {I1} from                     
+ 34CL2cG {+27}Al({+12}C,|an|g)                                                  
 
 
 **************** Level=7321.6 in 34CL     *******************ID#=1-179
@@ -7736,6 +8170,36 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 ### unweighted average comment (all non-limit values with/without unc):
  34CL cL E$unweighted average of 7802.4 {I10} from {+24}Mg({+12}C,pn|g) and     
  34CL2cL 7800.5 {I11} from {+27}Al({+12}C,|an|g)                                
+
+
+**************** Level=7801.5     Gamma=2487.4 in 34CL     *******************ID#=1-242-1
+
+------ average E------
+Data points of E record
+*                 24MG(12C,PNG)   2487.4(10)          weight=50.00%
+*                 27AL(12C,ANG)   2485(1)             weight=50.00%
+
+Averaging results:
+           weighted average:      2486.2(7)            (internal)
+                                  2486.2(12)           (external)
+                                  chi**2/(n-1)=2.880     [critical=4.605]
+         unweighted average:      2486.2(12)          
+           (of all values)        chi**2/(n-1)=2.880     [critical=4.605]
+
+   suggested adopted result:      2486.2(12)          
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34CL cG E$weighted average of 2487.4 {I10} from {+24}Mg({+12}C,pn|g) and 2485  
+ 34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34CL cG E$unweighted average of 2487.4 {I10} from {+24}Mg({+12}C,pn|g) and 2485
+ 34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
 
 
 **************** Level=7809.7 in 34CL     *******************ID#=1-244
