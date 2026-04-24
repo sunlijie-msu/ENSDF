@@ -1,0 +1,40 @@
+﻿CONFIG
+{'source': 'd:\\X\\ND\\ENSDF\\A34\\Cl34\\new\\Cl34_33s_p_p_resonances.ens', 'target': 'd:\\X\\ND\\ENSDF\\A34\\Cl34\\new\\Cl34_adopted.ens', 'scope_min_energy': 6321.2, 'checks': ['value/sign', 'uncertainty/format', 'completeness'], 'matching': 'ordered one-to-one after verifying equal counts in scoped source and target'}
+SUMMARY
+{'source_levels': 157, 'target_levels_with_L': 157, 'max_abs_delta_E': 3.34, 'j_field_mismatches': 2, 'j_missing_from_field_and_comments': 0, 't_field_mismatches': 2, 't_missing_from_field_and_comments': 1}
+J_FIELD_MISMATCHES
+{'source_line': 87, 'target_line': 2193, 'source_E': 7080.4, 'target_E': 7078.9, 'delta_E': -1.5, 'source_J': '2-,3-', 'target_J': '3-', 'xref': 'XREF=KLU(7070*)V(7070*)', 'target_J_comments': [' 34CL cL J$spin=3 from |g(|q) in {+33}S(p,|g); 2-,3- from']}
+{'source_line': 167, 'target_line': 2449, 'source_E': 7674.3, 'target_E': 7675.3, 'delta_E': 1.0, 'source_J': '1+,2+,3+,4+', 'target_J': '2+,3+', 'xref': 'XREF=KL', 'target_J_comments': [' 34CL cL J$spin=2,3 from |g(|q) in {+33}S(p,|g); 1+,2+,3+,4+ from']}
+T_FIELD_MISMATCHES
+{'source_line': 78, 'target_line': 2131, 'source_E': 6986.85, 'target_E': 6986.85, 'delta_E': 0.0, 'source_T': '0.6 KEV', 'source_DT': '6', 'target_T': '0.6 KEV', 'target_DT': '1', 'xref': 'XREF=J(6950*)KL', 'target_T_comments': []}
+{'source_line': 87, 'target_line': 2193, 'source_E': 7080.4, 'target_E': 7078.9, 'delta_E': -1.5, 'source_T': '0.787 KEV', 'source_DT': '30', 'target_T': '0.89 KEV', 'target_DT': '11', 'xref': 'XREF=KLU(7070*)V(7070*)', 'target_T_comments': [' 34CL cL T$unweighted average of 0.787 keV {I30} (1977Da03) and 1.00 keV {I10}']}
+J_MISSING
+T_MISSING
+{'source_line': 78, 'target_line': 2131, 'source_E': 6986.85, 'target_E': 6986.85, 'delta_E': 0.0, 'source_T': '0.6 KEV', 'source_DT': '6', 'target_T': '0.6 KEV', 'target_DT': '1', 'xref': 'XREF=J(6950*)KL', 'target_T_comments': []}
+SPOTCHECK
+{'sample_size': 24, 'seed': 34023}
+{'sample': 1, 'source_line': 301, 'target_line': 2775, 'source_E': 8376.18, 'target_E': 8376.18, 'xref': 'XREF=J(8390*)L', 'j_ok': True, 't_ok': True}
+{'sample': 2, 'source_line': 352, 'target_line': 2861, 'source_E': 8693.3, 'target_E': 8693.3, 'xref': 'XREF=L', 'j_ok': True, 't_ok': True}
+{'sample': 3, 'source_line': 121, 'target_line': 2332, 'source_E': 7451.6, 'target_E': 7450.1, 'xref': 'XREF=KL', 'j_ok': True, 't_ok': True}
+{'sample': 4, 'source_line': 185, 'target_line': 2526, 'source_E': 7825.3, 'target_E': 7825.3, 'xref': 'XREF=L', 'j_ok': True, 't_ok': True}
+{'sample': 5, 'source_line': 356, 'target_line': 2867, 'source_E': 8700.1, 'target_E': 8700.1, 'xref': 'XREF=L', 'j_ok': True, 't_ok': True}
+{'sample': 6, 'source_line': 287, 'target_line': 2727, 'source_E': 8260.22, 'target_E': 8260.12, 'xref': 'XREF=KL', 'j_ok': True, 't_ok': True}
+{'sample': 7, 'source_line': 308, 'target_line': 2792, 'source_E': 8468.2, 'target_E': 8468.2, 'xref': 'XREF=L', 'j_ok': True, 't_ok': True}
+{'sample': 8, 'source_line': 153, 'target_line': 2419, 'source_E': 7613.7, 'target_E': 7613.7, 'xref': 'XREF=L', 'j_ok': True, 't_ok': True}
+{'sample': 9, 'source_line': 161, 'target_line': 2439, 'source_E': 7652.1, 'target_E': 7652.1, 'xref': 'XREF=L', 'j_ok': True, 't_ok': True}
+{'sample': 10, 'source_line': 235, 'target_line': 2629, 'source_E': 8048.1, 'target_E': 8048.3, 'xref': 'XREF=KL', 'j_ok': True, 't_ok': True}
+{'sample': 11, 'source_line': 181, 'target_line': 2495, 'source_E': 7761.6, 'target_E': 7761.6, 'xref': 'XREF=L', 'j_ok': True, 't_ok': True}
+{'sample': 12, 'source_line': 204, 'target_line': 2573, 'source_E': 7934.2, 'target_E': 7934.7, 'xref': 'XREF=KL', 'j_ok': True, 't_ok': True}
+{'sample': 13, 'source_line': 368, 'target_line': 2885, 'source_E': 8761.4, 'target_E': 8761.4, 'xref': 'XREF=L', 'j_ok': True, 't_ok': True}
+{'sample': 14, 'source_line': 239, 'target_line': 2634, 'source_E': 8052.5, 'target_E': 8052.5, 'xref': 'XREF=L', 'j_ok': True, 't_ok': True}
+{'sample': 15, 'source_line': 125, 'target_line': 2346, 'source_E': 7475.3, 'target_E': 7475.3, 'xref': 'XREF=L', 'j_ok': True, 't_ok': True}
+{'sample': 16, 'source_line': 289, 'target_line': 2732, 'source_E': 8265.56, 'target_E': 8265.56, 'xref': 'XREF=L', 'j_ok': True, 't_ok': True}
+{'sample': 17, 'source_line': 109, 'target_line': 2290, 'source_E': 7321.6, 'target_E': 7321.6, 'xref': 'XREF=KL', 'j_ok': True, 't_ok': True}
+{'sample': 18, 'source_line': 199, 'target_line': 2565, 'source_E': 7909.6, 'target_E': 7909.6, 'xref': 'XREF=KL', 'j_ok': True, 't_ok': True}
+{'sample': 19, 'source_line': 298, 'target_line': 2760, 'source_E': 8330.19, 'target_E': 8330.19, 'xref': 'XREF=L', 'j_ok': True, 't_ok': True}
+{'sample': 20, 'source_line': 297, 'target_line': 2757, 'source_E': 8322.91, 'target_E': 8322.91, 'xref': 'XREF=L', 'j_ok': True, 't_ok': True}
+{'sample': 21, 'source_line': 52, 'target_line': 1851, 'source_E': 6642.0, 'target_E': 6640.92, 'xref': 'XREF=KL', 'j_ok': True, 't_ok': True}
+{'sample': 22, 'source_line': 277, 'target_line': 2705, 'source_E': 8214.91, 'target_E': 8214.86, 'xref': 'XREF=KL', 'j_ok': True, 't_ok': True}
+{'sample': 23, 'source_line': 151, 'target_line': 2413, 'source_E': 7595.4, 'target_E': 7595.4, 'xref': 'XREF=L', 'j_ok': True, 't_ok': True}
+{'sample': 24, 'source_line': 306, 'target_line': 2789, 'source_E': 8460.4, 'target_E': 8460.4, 'xref': 'XREF=L', 'j_ok': True, 't_ok': True}
+{'spotcheck_failures': 0}

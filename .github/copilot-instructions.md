@@ -313,7 +313,7 @@ Example:
 | SPACE | 7 | Must be blank |
 | TYPE | 8 | "B" for beta minus |
 | SPACE | 9 | Must be blank |
-| E | 10–19 | Endpoint energy of β⁻ in keV (given only if measured) |
+| E | 10–19 | Endpoint energy of β⁻ in keV (no need to edit) |
 | DE | 20–21 | Energy uncertainty |
 | SPACE | 22 | Readability space |
 | IB | 23–29 | Intensity of β⁻-decay branch |
@@ -329,7 +329,6 @@ Example:
 
 **Critical B-Record Rules:**
 -   Must follow LEVEL record for the level which is fed by the beta minus decay.
--   E field given only if measured (endpoint energy of beta minus transition).
 -   IB intensity in same units as other intensity fields in file.
 -   LOGFT for uniqueness classification (col 78-79).
 -   Blank signifies allowed transition for forbiddenness field.
@@ -350,7 +349,7 @@ Example:
 | SPACE | 7 | Must be blank |
 | TYPE | 8 | "E" for electron capture |
 | SPACE | 9 | Must be blank |
-| E | 10–19 | Energy for electron capture to level (if measured or deduced) |
+| E | 10–19 | Energy for electron capture to level (no need to edit) |
 | DE | 20–21 | Uncertainty in E |
 | SPACE | 22 | Readability space |
 | IB | 23–29 | Intensity of β⁺-decay branch |

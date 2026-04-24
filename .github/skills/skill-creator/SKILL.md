@@ -94,16 +94,16 @@ For any skill that processes source data into ENSDF records, place a user-fillab
 - `[Data A]` → `[record type]` `[field name]`
 - `[Data B]` → `[record type]` `[field name]`
 
+### Matching
+- L-records: `[ ]` exact E  `[ ]` E within ±[N] keV
+- G-records: `[ ]` exact Eγ  `[ ]` Eγ within ±[N] keV  `[ ]` parent L first, then Eγ
+
 ### Operations
 - **Keep** `[field]` from target (e.g., M, MR, DMR; cG M$ comments)
 - **Replace/Update** `[field]` with source value (e.g., RI, DRI)
 - **Add/Insert** `[field]` from source (e.g., new G-records absent in target)
 - **Merge/Combine** `[field]` from both (e.g., cG RI$ comments quoting both)
 - **Average** `[field]` across sources (e.g., weighted average of RI)
-
-### Matching
-- L-records: `[ ]` exact E  `[ ]` E within ±[N] keV
-- G-records: `[ ]` exact Eγ  `[ ]` Eγ within ±[N] keV  `[ ]` parent L first, then Eγ
 
 ### Special Handling
 - `[ ]` [describe non-standard cases]

@@ -19,16 +19,16 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 - `[Data A]` → `[record type]` `[field name]`
 - `[Data B]` → `[record type]` `[field name]`
 
+### Matching
+- L-records: `[ ]` exact E  `[ ]` E within ±[N] keV
+- G-records: `[ ]` exact Eγ  `[ ]` Eγ within ±[N] keV  `[ ]` matching parent Level first, matching then γ
+
 ### Operations
 - **Keep** `[field]` already in target (e.g., M, MR, DMR; cG M$ comments)
 - **Replace/Update** `[field]` with source value (e.g., RI, DRI)
 - **Add/Insert** `[field]` from source (e.g., new G-records absent in target)
 - **Merge/Combine** `[field]` from both (e.g., cG RI$ comments quoting both)
 - **Average** `[field]` across sources (e.g., weighted average of RI)
-
-### Matching
-- L-records: `[ ]` exact E  `[ ]` E within ±[N] keV
-- G-records: `[ ]` exact Eγ  `[ ]` Eγ within ±[N] keV  `[ ]` parent L first, then Eγ
 
 ### Special Handling
 - `[ ]` [describe non-standard cases]
@@ -37,16 +37,17 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 ## Workflow
 
 ```
-Reconciling Procedure:
+Recommended Operating Procedure:
 - [ ] 1. Task Customization & Configuration confirmed
 - [ ] 2. Source data parsed and mapped
 - [ ] 3. Target fields to keep captured
 - [ ] 4. Records matched (log unmatched cases)
 - [ ] 5. Operations applied (replace / keep / add / merge / average)
-- [ ] 6. Per-line ruler validation — every edited line exit code 0
-- [ ] 7. column_calibrate.py — exit code 0
-- [ ] 8. check_gamma_ordering.py — exit code 0
-- [ ] 9. Report issued
+- [ ] 6. Leverage coding, scripts, and programming tools when necessary to effectively deliver your data tasks.
+- [ ] 7. Per-line ruler validation — every edited line exit code 0
+- [ ] 8. column_calibrate.py — exit code 0
+- [ ] 9. check_gamma_ordering.py — exit code 0
+- [ ] 10. Report issued
 ```
 
 ### Step 1 — Confirm Task Configuration
