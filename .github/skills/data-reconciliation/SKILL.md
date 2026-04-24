@@ -60,7 +60,7 @@ Read source file and extract the fields specified in Task Configuration. For tab
 
 ### Step 3 — Capture Target Fields to Keep
 
-Read the target file and cache every field marked KEEP — exact character-for-character values. These must survive the reconciliation unchanged.
+Read the target file and cache every field marked KEEP — exact character-for-character values. Every digit, character, trailing zeros space, and location must not be touched when editing other fields.
 
 ### Step 4 — Match Records
 
