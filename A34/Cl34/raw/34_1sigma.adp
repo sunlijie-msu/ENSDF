@@ -1,6 +1,3 @@
-Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 04/24/2026)
-Generated at: Fri 04/24/2026 at 04:20:22 PM EDT                                 
-                                                                                
  34CL    ADOPTED LEVELS, GAMMAS                                  ENSDF    202609
  34CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34CL  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
@@ -35,7 +32,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL2c  isochronous cyclotron (AVF930). Measured thick target yields.          
  34CL c  Other {+34}Cl cross-section measurements: 2007Na31, 2004De41, 2003Ya20,
  34CL2c  2002DeZU, 2001Pi10.                                                    
- 34CL d                                                                         
+ 34CL d                                                                                                                                                 
  34CL cG E$E|g values without uncertainties are deduced from level-energy       
  34CL2cG differences, unless otherwise noted.                                   
  34CL cG E,RI,M,MR$From |g(|q) and/or |g|g(|q) in {+33}S(p,|g), unless otherwise
@@ -47,7 +44,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL2cL noted. J|p and widths are from multilevel, multichannel R-matrix       
  34CL3cL analysis in {+33}S(p,p),(p,p'|g):resonances (1989Va15), unless         
  34CL4cL otherwise noted.                                                       
- 34CL d                                                                         
+ 34CL d                                                                                                                                                 
  34CL cG E(I),RI(I)$From {+32}S({+3}He,p|g)                                     
  34CL cG E(E),RI(E)$From {+24}Mg({+12}C,pn|g)                                   
  34CL cL E(a)$From {+32}S({+3}He,p|g)                                           
@@ -55,7 +52,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cL T$|G values <0.05 keV are from {+33}S(p,|g) (1977Da03) and |G values > 
  34CL2cL 0.05 keV are from {+33}S(p,p) (1989Va15), unless noted otherwise. For  
  34CL3cL T{-1/2} values see comments                                            
- 34CL d                                                                         
+ 34CL d                                                                                                                                                 
  34CL  XA34AR EC+B+ DECAY (0.84646 S)                                           
  34CL  XB34CL IT DECAY (31.99 M)                                                
  34CL  XC35K ECP DECAY (175 MS)                                                 
@@ -80,6 +77,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  XV36AR(D,A),(POL D,A)                                                    
  34CL  XW40CA(MU-,NUA2NG)                                                       
  34CL PN                                                                     6  
+ 34CL d                                                                         
  34CL  L 0.0       25 0+               1.5266 S  5                              
  34CLX L XREF=ABCDEFGHIKMNOPQRSTUV(0?)W                                         
  34CL2 L %EC+%B+=100                                                            
@@ -91,6 +89,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL3cL Others: 1.530 s {I4} (1975Ha24), 1.534 s {I3} (1972Ha28), 1.565 s {I7} 
  34CL4cL (1965Eb01), 1.565 s {I7} (1965Fr06), 1.560 s {I14} (1961Ja22), 1.58 s  
  34CL5cL {I1} (1960Ja12), 1.61 s {I1} (1958Mi85), and 1.53 s {I2} (1954Kl36).   
+ 34CL d                                                                         
  34CL  L 146.36    3  3+               31.99 M   3                           M  
  34CLX L XREF=ABC(?)EFGHIJ(165)KMQRSTVW                                         
  34CL2 L %IT=44.6 6 $ %EC+%B+=55.4 6                                            
@@ -106,6 +105,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CLS G KC=0.1512 22$LC=0.01322 19$MC=0.001194 17                              
  34CL cG E$weighted average of 146.36 {I3} from {+34}Cl IT decay and 146.36 {I3}
  34CL2cG from {+32}S({+3}He,p|g)                                                
+ 34CL d                                                                         
  34CL  L 461.01    4  1+               5.8 PS    5                              
  34CLX L XREF=AC(?)DEFGHIJ(479)KMNOPQR(450)S(450)TUVW                           
  34CL cL T$weighted average of 4.0 ps {I+16-12} from {+9}Be({+37}Ca,{+34}Cl|g), 
@@ -129,6 +129,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL3cG {+32}S({+3}He,p|g)                                                     
  34CL cG RI$from {+34}Ar |e+|b{++} decay.                                       
  34CL cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in {+27}Al({+12}C,|an|g).       
+ 34CL d                                                                         
  34CL  L 665.57    5  1+               9.4 PS    6                              
  34CLX L XREF=ACDEFGHIKMNOP(680)QRSTVW                                          
  34CL cL T$weighted average of 9.8 ps {I6} from {+31}P(|a,n|g) and 8.9 ps {I7}  
@@ -164,6 +165,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG RI$From {+32}S({+3}He,p|g).                                            
  34CL cG M$from {+27}Al({+12}C,|an|g).                                          
  34CL cG M$D |DJ=1 |g ({+32}S({+3}He,p|g)), M1 from |D|p=no.                    
+ 34CL d                                                                         
  34CL  L 1230.28   6  2+               13.3 PS   10                             
  34CLX L XREF=ADFGHIJKMNQRS(1210)TUVW                                           
  34CL cL T$weighted average of 15.3 ps {I28} from {+31}P(|a,n|g) and 13 ps {I1} 
@@ -204,6 +206,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG E$from (p,|g)                                                          
  34CL cG E$From {+32}S({+3}He,p|g).                                             
  34CL cG RI$from {+32}S({+3}He,p|g).                                            
+ 34CL d                                                                         
  34CL  L 1887.29   8  2+               0.8 PS    3                              
  34CLX L XREF=AFGHIJ(1896*)KMNQRS(1840)TUV                                      
  34CL cL E$weighted average of 1887.2 {I6} from {+27}Al({+12}C,|an|g), 1880.0   
@@ -242,9 +245,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG E,RI$from (p,|g)                                                       
  34CL cG E$From {+32}S({+3}He,p|g).                                             
  34CL cG RI$From {+32}S({+3}He,p|g).                                            
+ 34CL d                                                                         
  34CL  L 1923.3    17 +                                                         
  34CLX L XREF=J(1896*)M                                                         
  34CL cL J$L=2 from 3/2+ in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+.              
+ 34CL d                                                                         
  34CL  L 2157.9    1  2+               33 FS     4                              
  34CLX L XREF=AEFGHIKMQRTU                                                      
  34CL cL T$weighted average of 36 fs {I10} from {+32}S({+3}He,p|g) and 33 fs    
@@ -292,6 +297,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL2cG from {+33}S(p,|g)                                                      
  34CL cG E$from ({+12}C,|an|g)                                                  
  34CL cG E$From {+32}S({+3}He,p|g).                                             
+ 34CL d                                                                         
  34CL  L 2181.09   8  3+               0.34 PS   6                              
  34CLX L XREF=AEFIJKQTV                                                         
  34CL cL T$weighted average of 0.32 ps {I6} from {+32}S({+3}He,p|g) and 0.45 ps 
@@ -327,6 +333,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 2181.03     2.3     LT [M3]                                            
  34CL cG E$from (p,|g)                                                          
  34CL cG RI$from {+32}S({+3}He,p|g).                                            
+ 34CL d                                                                         
  34CL  L 2375.67   14 4+               163 FS    35                             
  34CLX L XREF=EFGHIKQ(2380*)                                                    
  34CL cL T$weighted average of 186 fs {I35} from {+32}S({+3}He,p|g) and 139 fs  
@@ -368,8 +375,10 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG E,RI$from (p,|g)                                                       
  34CL cG E$From {+32}S({+3}He,p|g).                                             
  34CL cG RI$From {+32}S({+3}He,p|g).                                            
+ 34CL d                                                                         
  34CL  L 2382      20 1+                                                        
  34CLX L XREF=Q(2380*)V                                                         
+ 34CL d                                                                         
  34CL  L 2580.3    2  1+               2.5 FS    29                             
  34CLX L XREF=AHIKMNOP(2560)R(2600*)TU(2600*)V                                  
  34CL cL T$weighted average of 21 fs {I11} from {+32}S({+3}He,p|g) and 2.1 fs   
@@ -404,10 +413,9 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG RI$from {+34}Ar |e+|b{++} decay.                                       
  34CL cG M$(D) |DJ=1 |g ({+32}S({+3}He,p|g)), |D|p=no.                          
  34CL cG MR$0 ({+32}S({+3}He,p|g)).                                             
+ 34CL d                                                                         
  34CL  L 2611.04   11 3+               0.17 PS   7                              
  34CLX L XREF=FGHIKMQR(2600*)TU(2600*)V                                         
- 34CL cL T$weighted average of 0.57 ps {I24} from {+32}S({+3}He,p|g) and 0.159  
- 34CL2cL ps {I42} from {+33}S(p,|g)                                             
  34CL cL E$weighted average of 2611.3 {I5} from {+27}Al({+12}C,|an|g) and       
  34CL2cL 2611.03 {I11} from {+33}S(p,|g). Others: 2614.2 {I38} from             
  34CL3cL {+32}S({+3}He,p), 2608.5 {I13} from {+33}S({+3}He,d), and 2620 {I20}   
@@ -440,9 +448,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG E$from ({+12}C,|an|g)                                                  
  34CL cG RI$from (p,|g)                                                         
  34CL cG E$from {+31}P(|a,n|g).                                                 
+ 34CL d                                                                         
  34CL  L 2718      10 0:4+                                                      
  34CLX L XREF=H(*)J(2710*)M(*)O(2718*)TV(2725*)                                 
  34CL cL J$L=2 in {+35}Cl({+3}He,|a).                                           
+ 34CL d                                                                         
  34CL  L 2721.09   20 2-               1.4 PS    GT                             
  34CLX L XREF=EFGH(*)IJ(2710*)KM(*)O(2718*)V(2725*)                             
  34CL cL E$weighted average of 2720.78 {I24} from {+24}Mg({+12}C,pn|g), 2721.13 
@@ -500,6 +510,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL2cG from {+32}S({+3}He,p|g), and 32.8 {I11} from {+33}S(p,|g)              
  34CL cG E,M$from ({+12}C,|an|g)                                                
  34CL cG M$from {+27}Al({+12}C,|an|g).                                          
+ 34CL d                                                                         
  34CL  L 3129.11   12 1+               28 FS     8                              
  34CLX L XREF=AHIKMNOPQTUV(3146)                                                
  34CL cL E$weighted average of 3129.0 {I10} from {+34}Ar |e+|b{++} decay, 3127.0
@@ -530,6 +541,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 3128.8    10 100.0  20 [M1]                                            
  34CL cG E$from {+34}Ar |e+|b{++} decay (0.84646 s).                            
  34CL cG RI$from {+34}Ar |e+|b{++} decay.                                       
+ 34CL d                                                                         
  34CL  L 3334.0    2  1+,2+,3+         48 FS     19                             
  34CLX L XREF=HIKMOQ(3330*)R(3360*)TU(3350*)                                    
  34CL cL T$weighted average of 80 fs {I24} from {+32}S({+3}He,p|g) and 37 fs    
@@ -551,14 +563,15 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 2872.7      54      12 [M1,E2]                                         
  34CL  G 3187.4      4.9     LT [E2]                                            
  34CL  G 3333.8      7.3     LT [M1,E2]                                         
+ 34CL d                                                                         
  34CL  L 3334      20 2-,3-,4-                                                  
  34CLX L XREF=Q(3330*)V                                                         
+ 34CL d                                                                         
  34CL  L 3383.3    2  1+,2+            5.3 FS    12                             
  34CLX L XREF=HIKMNQR(3360*)TU(3350*)V                                          
  34CL cL E$weighted average of 3383.2 {I43} from {+32}S({+3}He,p), 3383.3 {I2}  
  34CL2cL from {+33}S(p,|g), 3382.7 {I20} from {+33}S({+3}He,d), and 3377 {I20}  
  34CL3cL from {+36}Ar(d,|a),(pol d,|a)                                          
- 34CL cL T$from (p,|g)                                                          
  34CL cL J$L=2 from 3/2+ in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+; L=0+2 in     
  34CL2cL {+35}Cl({+3}He,|a).                                                    
  34CL cL T$lifetime |t=7.7 fs {I16}: weighted average of 7.5 fs {I17} in        
@@ -573,6 +586,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 3236.7      100.0   34 [E2]                                            
  34CL cG E,RI$from (p,|g)                                                       
  34CL  G 3383.1      3.1     LT [M1,E2]                                         
+ 34CL d                                                                         
  34CL  L 3545.08   15 3-               100 FS    21                             
  34CLX L XREF=HIKMQT                                                            
  34CL cL T$weighted average of 97 fs {I28} from {+32}S({+3}He,p|g) and 102 fs   
@@ -598,12 +612,12 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG E,RI,MR$from (p,|g)                                                    
  34CL cG M$D(+Q), |DJ=0 |g ({+33}S(p,|g)).                                      
  34CL  G 3544.88     3.1     LT [E3]                                            
+ 34CL d                                                                         
  34CL  L 3600.14   11 4-               15.9 PS   35                             
  34CLX L XREF=EFGHIJK                                                           
  34CL cL E$weighted average of 3599.90 {I13} from {+24}Mg({+12}C,pn|g), 3600.46 
  34CL2cL {I32} from {+27}Al({+12}C,|an|g), 3601.1 {I49} from {+32}S({+3}He,p),  
  34CL3cL 3603 {I14} from {+32}S(|a,d), and 3600.28 {I11} from {+33}S(p,|g)      
- 34CL cL T$from (|a,n|g)                                                        
  34CL cL J$0-,4- from E2 |DJ=2 |g to 2-,2721; 2,4 from D(+Q) |DJ=1 |g to 3+, 146
  34CL cL T$lifetime |t=23 ps {I5} in {+31}P(|a,n|g) from 1978Ba61 with RDM.     
  34CL2cL Others: >0.7 ps in {+33}S(p,|g) from 1973An13 with DSAM and >2 ps in   
@@ -638,13 +652,13 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG MR$from (p,|g)                                                         
  34CL cG M$D(+Q) |DJ=1 |g ({+33}S(p,|g)).                                       
  34CL  G 3600.08     4.2     LT [M4]                                            
+ 34CL d                                                                         
  34CL  L 3631.40   12 5-               1.9E2 PS  4                              
  34CLX L XREF=EFGHIKMQ(3630*)T                                                  
  34CL cL E$weighted average of 3631.33 {I12} from {+24}Mg({+12}C,pn|g), 3631.7  
  34CL2cL {I4} from {+27}Al({+12}C,|an|g), and 3631.7 {I3} from {+33}S(p,|g).    
  34CL3cL Others: 3635.2 {I48} from {+32}S({+3}He,p) and 3631.4 {I25} from       
  34CL4cL {+33}S({+3}He,d)                                                       
- 34CL cL T$from (|a,n|g)                                                        
  34CL cL J$L=3 from 3/2+ in {+33}S({+3}He,d) gives 1-,2-,3-,4-,5-; 4-,5-,6- from
  34CL2cL L=5 in {+32}S(|a,d), {+32}S({+3}He,p); 3,5 from D |DJ=1 |g to 4+, 2376.
  34CL cL T$lifetime |t=280 ps {I60} in {+31}P(|a,n|g) from 1978Ba61 with RDM.   
@@ -672,11 +686,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG MR$from {+24}Mg({+12}C,pn|g)...: adopted: -0.23 {I10} (1982Va02);      
  34CL2cG others -0.14 {I18} or -6.0 {I29} (1978Ba61).                           
  34CL  G 3631.5      5.5     LT [E5]                                            
+ 34CL d                                                                         
  34CL  L 3646.3    2  (3,4,5+)         0.15 PS   6                              
  34CLX L XREF=FK                                                                
  34CL cL E$weighted average of 3646.5 {I7} from {+27}Al({+12}C,|an|g) and 3646.3
  34CL2cL {I2} from {+33}S(p,|g)                                                 
- 34CL cL T$from (p,|g)                                                          
  34CL cL J$1+,2,3,4,5+ from D,E2 |g to 3+, 146; 1,2 less likely from no |g (or  
  34CL2cL weak) to 0+, g.s.                                                      
  34CL cL T$lifetime |t=220 fs {I90} in {+33}S(p,|g) from 1985La16 with DSAM.    
@@ -688,6 +702,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG M$from {+27}Al({+12}C,|an|g).                                          
  34CL cG M$D or E2 based on RUL.                                                
  34CL  G 3646.1      4       LT                                                 
+ 34CL d                                                                         
  34CL  L 3660.0    3  (1,2,3)          3 FS      LT                             
  34CLX L XREF=KQ(3630*)                                                         
  34CL cL J$D, |DJ=0,1 |g to 2+, 2158.                                           
@@ -700,6 +715,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 3198.6      2       LT                                                 
  34CL  G 3513.4      5       LT                                                 
  34CL  G 3659.8      3       LT                                                 
+ 34CL d                                                                         
  34CL  L 3773.7    4  (1)-             67 FS     19                             
  34CLX L XREF=H(3804*)IKM                                                       
  34CL cL T$weighted average of 80 fs {I21} from {+32}S({+3}He,p|g) and 57 fs    
@@ -715,6 +731,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 3773.5      100       [E1]                                             
  34CL cG E$from (p,|g)                                                          
  34CL cG M$D,E2 based on RUL; M1 and E2 excluded from |D|p=yes, thus E1.        
+ 34CL d                                                                         
  34CL  L 3791.7    2  (0+,1+)                                                   
  34CLX L XREF=H(3804*)K                                                         
  34CL cL J$|g to 1+; L({+3}He,p)=0 for an uncertain 3804 level.                 
@@ -722,8 +739,10 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 3330.3      100     7                                                  
  34CL  G 3645.1      8.2     LT                                                 
  34CL  G 3791.5      7.1     LT                                                 
+ 34CL d                                                                         
  34CL  L 3847      10                                                           
  34CLX L XREF=T                                                                 
+ 34CL d                                                                         
  34CL  L 3940.1    3  0+               4 FS      LT                             
  34CLX L XREF=KT(3937*)U(3940*)                                                 
  34CL cL E$weighted average of 3940.1 {I3} from {+33}S(p,|g) and 3937 {I10} from
@@ -735,11 +754,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 3274.6      100     9 [M1]                                             
  34CL  G 3478.7      72      9 [M1]                                             
  34CL  G 3939.9      5.2     LT [E0]                                            
+ 34CL d                                                                         
  34CL  L 3964.1    3  (2,3,4)+         90 FS     42                             
  34CLX L XREF=KQT                                                               
  34CL cL E$weighted average of 3964.1 {I3} from {+33}S(p,|g) and 3964 {I10} from
  34CL2cL {+35}Cl({+3}He,|a)                                                     
- 34CL cL T$from (p,|g)                                                          
  34CL cL J$(2,3,4) from gammas to 2+, 2157; 3+, 146; and 4+, 2376; |p=+ from L=2
  34CL2cL in {+35}Cl({+3}He,|a).                                                 
  34CL cL T$lifetime |t=130 fs {I46}: weighted average of 160 fs {I60} in        
@@ -748,13 +767,14 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 1588.4      11      5 [E2]                                             
  34CL  G 1806.2      100     16 [M1,E2]                                         
  34CL  G 3817.5      67      25 [M1,E2]                                         
+ 34CL d                                                                         
  34CL  L 3982.6    72                                                           
  34CLX L XREF=HQ(3980*)T(3937*)U(3940*)                                         
+ 34CL d                                                                         
  34CL  L 3983.0    3  3-               131 FS    28                             
  34CLX L XREF=KMQ(3980*)T                                                       
  34CL cL E$weighted average of 3983.0 {I3} from {+33}S(p,|g) and 3983.4 {I25}   
  34CL2cL from {+33}S({+3}He,d)                                                  
- 34CL cL T$from (p,|g)                                                          
  34CL cL J$L=3 from 3/2+ in {+33}S({+3}He,d) gives 1-,2-,3-,4-,5-; D(+Q), |DJ=0 
  34CL2cL |g to 3+, 146 ({+33}S(p,|g)); |p=- from L=3 in {+35}Cl({+3}He,|a).     
  34CL cL T$lifetime |t=189 fs {I33}: weighted average of 165 fs {I60} in        
@@ -775,9 +795,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG M$D(+Q), |DJ=0 |g ({+33}S(p,|g)).                                      
  34CL cG MR$from {+33}S(p,|g); other: -0.06 {I5} ({+33}S(p,|g)).                
  34CL  G 3982.8      5.2     LT [E3]                                            
+ 34CL d                                                                         
  34CL  L 4075      10 1+,2+                                                     
  34CLX L XREF=Q(4075*)T                                                         
  34CL cL J$L=0+2 ({+35}Cl({+3}He,|a)).                                          
+ 34CL d                                                                         
  34CL  L 4076.2    2  4-               0.9 PS    +12-4                          
  34CLX L XREF=HIJ(4060)KMQ(4075*)                                               
  34CL cL E$weighted average of 4076.5 {I58} from {+32}S({+3}He,p), 4060 {I18}   
@@ -800,9 +822,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG E,RI,MR$from (p,|g)                                                    
  34CL cG M$D(+Q) |DJ=1 |g ({+33}S(p,|g)).                                       
  34CL  G 4075.9      3.3     LT [M4]                                            
+ 34CL d                                                                         
  34CL  L 4136.6       1+,2+                                                     
  34CLX L XREF=T                                                                 
  34CL cL J$L=0+2 in {+35}Cl({+3}He,|a).                                         
+ 34CL d                                                                         
  34CL  L 4139.7    3  2-               95 FS     28                             
  34CLX L XREF=HIKM                                                              
  34CL cL T$weighted average of 104 fs {I35} from {+32}S({+3}He,p|g) and 89 fs   
@@ -823,6 +847,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 3993.1      100     6 [E1]                                             
  34CL cG E,RI$from (p,|g)                                                       
  34CL  G 4139.4      3.9     LT [M2]                                            
+ 34CL d                                                                         
  34CL  L 4147.8    2  (1+,2+)                                                   
  34CLX L XREF=KR(4160)                                                          
  34CL cL E$weighted average of 4147.8 {I2} from {+33}S(p,|g) and 4160 {I20} from
@@ -834,16 +859,16 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 3482.3      66.2    19                                                 
  34CL  G 4001.2      3.8     LT                                                 
  34CL  G 4147.5      9.8     15                                                 
+ 34CL d                                                                         
  34CL  L 4211      4  1+,2+                                                     
  34CLX L XREF=OT                                                                
  34CL cL E$weighted average of 4212 {I4} from {+34}S({+3}He,t) and 4206 {I10}   
  34CL2cL from {+35}Cl({+3}He,|a)                                                
+ 34CL d                                                                         
  34CL  L 4325.89   15 1+,2+            5.1 FS    21                             
  34CLX L XREF=KT                                                                
  34CL cL E$weighted average of 4325.89 {I15} from {+33}S(p,|g) and 4321 {I10}   
  34CL2cL from {+35}Cl({+3}He,|a)                                                
- 34CL cL T$from (p,|g)                                                          
- 34CL cL T$from {+33}S(p,|g).                                                   
  34CL cL J$L=0+2 ({+35}Cl({+3}He,|a)).                                          
  34CL cL T$mean lifetime |t in fs {+33}S(p,|g): 7 {I3} (1985La16); 11 {I9}      
  34CL2cL (1977Da02). Adopted weighted average: 7.4 {I28}.                       
@@ -854,6 +879,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 3864.5      3.8     LT [M1,E2]                                         
  34CL  G 4179.2      2.5     LT [E2]                                            
  34CL  G 4325.60     5       LT [M1,E2]                                         
+ 34CL d                                                                         
  34CL  L 4354.2    2  1-               32 FS     6                              
  34CLX L XREF=HIKM                                                              
  34CL cL T$weighted average of 45 fs {I14} from {+32}S({+3}He,p|g) and 30 fs    
@@ -874,17 +900,18 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4353.9      100.0   28 [E1]                                            
  34CL cG E,RI$from (p,|g)                                                       
  34CL cG M$D,E2 based on RUL, |DJ|p requires E1.                                
+ 34CL d                                                                         
  34CL  L 4371.5    13 4+               2.08 PS   GT                             
  34CLX L XREF=F                                                                 
  34CL  G 725       1 100       M1+E2                                            
+ 34CL d                                                                         
  34CL  L 4412.1    31                                                           
  34CLX L XREF=HJ(4417*)                                                         
+ 34CL d                                                                         
  34CL  L 4417.3    2  2-               24 FS     8                              
  34CLX L XREF=J(4417*)KMQ(4450*)                                                
  34CL cL E$weighted average of 4417.3 {I2} from {+33}S(p,|g) and 4418 {I3} from 
  34CL2cL {+33}S({+3}He,d)                                                       
- 34CL cL T$from (p,|g)                                                          
- 34CL cL T$from {+33}S(p,|g).                                                   
  34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-; 2-,3-,4- from   
  34CL2cL L=3 in {+32}S({+3}He,p); 3-,4- less likely from gammas to 1+, 665 and  
  34CL3cL 1+, 461.                                                               
@@ -896,6 +923,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG M$D,E2 based on RUL, |DJ|p requires E1.                                
  34CL  G 4270.6      6.3     LT [E1]                                            
  34CL  G 4417.0      7.8     LT [M2]                                            
+ 34CL d                                                                         
  34CL  L 4446.6    2  4-               116 FS    24                             
  34CLX L XREF=KQ(4450*)                                                         
  34CL cL J$2-,3-,4- from L=3 in {+32}S({+3}He,p); 3- excluded from D |DJ=1 |g to
@@ -906,8 +934,10 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4299.9      100       D(+Q)     -0.02   +2-1                           
  34CL cG M$D(+Q) |DJ=1 |g ({+33}S(p,|g)).                                       
  34CL  G 4446.3      3       LT [M4]                                            
+ 34CL d                                                                         
  34CL  L 4455.8    40                                                           
  34CLX L XREF=HM(4461*)Q(4460*)                                                 
+ 34CL d                                                                         
  34CL  L 4461.4    3  (2,3,4)-         1.5E2 FS  4                              
  34CLX L XREF=IKM(4461*)Q(4460*)                                                
  34CL cL T$weighted average of 139 fs {I42} from {+32}S({+3}He,p|g) and 2.6E2 fs
@@ -920,12 +950,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4314.7      100       [E1]                                             
  34CL cG E$from (p,|g)                                                          
  34CL cG M$D |g: D,E2 based on RUL; E2 excluded from |D|p=yes.                  
+ 34CL d                                                                         
  34CL  L 4515.7    2  2-               10 FS     4                              
  34CLX L XREF=HKM                                                               
  34CL cL E$weighted average of 4514.5 {I32} from {+32}S({+3}He,p), 4515.7 {I2}  
  34CL2cL from {+33}S(p,|g), and 4516.3 {I22} from {+33}S({+3}He,d)              
- 34CL cL T$from (p,|g)                                                          
- 34CL cL T$from {+33}S(p,|g).                                                   
  34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-; L=1+3 in        
  34CL2cL {+32}S({+3}He,p).                                                      
  34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): 15 {I5} (1985La16); 15 {I7}
@@ -935,9 +964,9 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4054.2      2.5     LT [E1]                                            
  34CL  G 4369.0      25.0    25 [E1]                                            
  34CL  G 4515.4      5       LT [M2]                                            
+ 34CL d                                                                         
  34CL  L 4605.8    10 (1-,2-,3-)       0.24 PS   17                             
  34CLX L XREF=H(*)KM(*)QT(4608*)                                                
- 34CL cL E,T$from (p,|g)                                                        
  34CL cL E,T$from {+33}S(p,|g).                                                 
  34CL cL J$1,2,3: 1,2,3,4- from D,E2 |g to 2-, 2721; 0+,1,2,3,4+ from D,E2 |g to
  34CL2cL 2+, 2158. |p=(-) from L=1 in {+33}S({+3}He,d) and {+35}Cl({+3}He,|a) if
@@ -950,31 +979,32 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 2718.4      35        [E1]                                             
  34CL  G 3375.3      54        [E1]                                             
  34CL  G 4459.1      12      LT [M2]                                            
+ 34CL d                                                                         
  34CL  L 4609.7    15 2-                                                        
  34CLX L XREF=H(*)KM(*)Q(4610*)T(4608*)                                         
  34CL cL J$L=1+3 in {+35}Cl({+3}He,|a).                                         
  34CL  G 1888.3      71                                                         
  34CL  G 3379.2      100                                                        
  34CL  G 4463.0      73                                                         
+ 34CL d                                                                         
  34CL  L 4611      4  0+,1+                                                     
  34CLX L XREF=OQ(4610*)                                                         
  34CL cL J$L=0 in {+34}S({+3}He,t).                                             
+ 34CL d                                                                         
  34CL  L 4638.9    4  2-               31 FS     10                             
  34CLX L XREF=J(4665*)KMU(4670*)                                                
  34CL cL E$weighted average of 4638.9 {I4} from {+33}S(p,|g) and 4638.7 {I21}   
  34CL2cL from {+33}S({+3}He,d)                                                  
- 34CL cL T$from (p,|g)                                                          
- 34CL cL T$from {+33}S(p,|g).                                                   
  34CL cL J$L=1+3 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-,4-,5-; L=1+3 in
  34CL2cL {+32}S({+3}He,p).                                                      
  34CL cL T$mean lifetime |t in fs: 45 {I14} (1985La16).                         
  34CL  G 4177.4      100     8 [E1]                                             
  34CL  G 4492.2      58      10 [E1]                                            
+ 34CL d                                                                         
  34CL  L 4695.7    2  0+,1,2,3,4+      6 FS      3                              
  34CLX L XREF=HJ(4665*)KMU(4670*)                                               
  34CL cL E$weighted average of 4693.0 {I34} from {+32}S({+3}He,p), 4695.7 {I2}  
  34CL2cL from {+33}S(p,|g), and 4695 {I2} from {+33}S({+3}He,d)                 
- 34CL cL T$from (p,|g)                                                          
  34CL cL J$D,E2 |g to 2+, 2158.                                                 
  34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): 9 {I4} (1985La16, adopted).
  34CL2cL Other: <10 (1983Wa27).                                                 
@@ -985,12 +1015,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4030.1      5       LT                                                 
  34CL  G 4234.2      4       LT                                                 
  34CL  G 4695.4      2       LT                                                 
+ 34CL d                                                                         
  34CL  L 4717.5    6  1+,2             9 FS      LT                             
  34CLX L XREF=KMQT                                                              
  34CL cL E$weighted average of 4717.4 {I6} from {+33}S(p,|g) and 4718 {I2} from 
  34CL2cL {+33}S({+3}He,d). Other: 4715 {I10} from {+35}Cl({+3}He,|a)            
- 34CL cL T$from (p,|g)                                                          
- 34CL cL T$from {+33}S(p,|g).                                                   
  34CL cL J$1+,2,3+ from D,E2 |g to 3+, 146 and 1+, 461; 3+ excluded by RUL for  
  34CL2cL I(4717)|g<1% to 0+, g.s.                                               
  34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): <13 (1985La16).            
@@ -1005,11 +1034,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4255.9      4.9     LT                                                 
  34CL  G 4570.7      100     5                                                  
  34CL cG M$D,E2 |g based on RUL.                                                
+ 34CL d                                                                         
  34CL  L 4743.15   17 6-               4.9 PS    21                             
  34CLX L XREF=EFG                                                               
  34CL cL E$weighted average of 4743.08 {I13} from {+24}Mg({+12}C,pn|g) and      
  34CL2cL 4743.59 {I34} from {+27}Al({+12}C,|an|g)                               
- 34CL cL T$from (|a,n|g)                                                        
  34CL cL T$from {+31}P(|a,n|g).                                                 
  34CL cL J$6 from: 4,6 from D+Q |DJ=1 |g 5-, 3631; 2,6 from Q |DJ=2 |g to 4-,   
  34CL2cL 3600; |p=- from |DJ=3 E3 |g to 3+.                                     
@@ -1043,9 +1072,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG M$from {+31}P(|a,n|g).                                                 
  34CL cG M$D,Q,E3 based on RUL, |DJ|p requires E3.                              
  34CL cG MR$+0.07 {I9} ({+24}Mg({+12}C,pn|g)...).                               
+ 34CL d                                                                         
  34CL  L 4786      10 3:7+                                                      
  34CLX L XREF=J                                                                 
  34CL cL J$L=4,6 in {+32}S(|a,d).                                               
+ 34CL d                                                                         
  34CL  L 4824.18   12 5+               0.32 PS   14                             
  34CLX L XREF=EFGHK                                                             
  34CL cL T$weighted average of 0.31 ps {I14} from {+31}P(|a,n|g) and 0.33 ps    
@@ -1096,36 +1127,36 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG M$Q |DJ=2 |g ({+24}Mg({+12}C,pn|g)...).                                
  34CL cG MR$0.00 {I6} ({+24}Mg({+12}C,pn|g)...).                                
  34CL  G 4824.04     3.2     LT [M5]                                            
+ 34CL d                                                                         
  34CL  L 4857      2                                                            
  34CLX L XREF=M                                                                 
  34CL cL J$L=2 from 3/2+ in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+; L=1+3 from   
  34CL2cL 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-,4-,5-.                      
+ 34CL d                                                                         
  34CL  L 4862.4    8  5-                                                        
  34CLX L XREF=F                                                                 
  34CL  G 2681      1 100       (M2)                                             
+ 34CL d                                                                         
  34CL  L 4925      4  0:4+                                                      
- 34CLX L XREF=J(4930*)MOT(4939*)U(4970*)V(4970*)                                
- 34CL cL E$from ({+3}He,t)                                                      
+ 34CLX L XREF=J(4930*)OT(4939*)U(4970*)V(4970*)                                 
  34CL cL J$L=2 in {+35}Cl({+3}He,|a).                                           
+ 34CL d                                                                         
  34CL  L 4941.9    4  1+               6 FS      LT                             
- 34CLX L XREF=J(4930*)KM(*)OT(4939*)U(4970*)V(4970*)                            
+ 34CLX L XREF=J(4930*)KMOT(4939*)U(4970*)V(4970*)                               
  34CL cL E$weighted average of 4941.9 {I4} from {+33}S(p,|g) and 4942 {I4} from 
  34CL2cL {+34}S({+3}He,t)                                                       
- 34CL cL T$from (p,|g)                                                          
- 34CL cL T$from {+33}S(p,|g).                                                   
  34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-; L=0 in          
  34CL2cL {+34}S({+3}He,t); |g to 3+.                                            
  34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): <8 (1985La16).             
  34CL  G 2330.8      43      19 [E2]                                            
  34CL  G 2361.5      45      19 [M1,E2]                                         
  34CL  G 4941.5      1.0E2   4 [M1]                                             
+ 34CL d                                                                         
  34CL  L 4957.5    11 1+,2+            12 FS     LT                             
- 34CLX L XREF=HKM(*)N(4985*)OQ(4990*)TU(4970*)V(4970*)                          
+ 34CLX L XREF=HKMOTU(4970*)V(4970*)                                             
  34CL cL E$weighted average of 4965.7 {I71} from {+32}S({+3}He,p), 4957.3 {I11} 
  34CL2cL from {+33}S(p,|g), and 4957 {I4} from {+34}S({+3}He,t). Other: 4958    
  34CL3cL {I11} from {+35}Cl({+3}He,|a)                                          
- 34CL cL T$from (p,|g)                                                          
- 34CL cL T$from {+33}S(p,|g).                                                   
  34CL cL J$L=2 from 3/2+ in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+; 0 to 4+ from 
  34CL2cL L=2 in {+35}Cl({+3}He,|a); 0,1,2 from D,Q |g to 0+ g.s.; 1+,2,3 from   
  34CL3cL D,E2 |g to 3+, 146.                                                    
@@ -1137,46 +1168,50 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4810.5      94      10 [E2]                                            
  34CL cG M$D,E2 |g based on RUL.                                                
  34CL  G 4956.9      3.9     LT [M1,E2]                                         
+ 34CL d                                                                         
  34CL  L 4979      2  1+,2+                                                     
  34CLX L XREF=MN(4985*)O(4981*)Q(4990*)R(5000*)TU(4970*)V(4970*)                
  34CL cL E$weighted average of 4979 {I2} from {+33}S({+3}He,d) and 4971 {I11}   
  34CL2cL from {+35}Cl({+3}He,|a)                                                
  34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-; L=0 from 3/2+ in
  34CL2cL {+33}S({+3}He,d) gives 1+,2+; L=0+2 in {+35}Cl({+3}He,|a).             
+ 34CL d                                                                         
  34CL  L 4995.6    3  1+,2+            5 FS      3                              
  34CLX L XREF=KMN(4985*)OQ(4990*)R(5000*)TU(4970*)V(4970*)                      
  34CL cL E$weighted average of 4995.6 {I3} from {+33}S(p,|g) and 4994 {I2} from 
  34CL2cL {+33}S({+3}He,d). Others: 4994 {I4} from {+34}S({+3}He,t) and 4998     
  34CL3cL {I12} from {+35}Cl({+3}He,|a)                                          
- 34CL cL T$from (p,|g)                                                          
- 34CL cL T$from {+33}S(p,|g).                                                   
  34CL cL J$L=2 from 3/2+ in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+; L=0+2 in     
  34CL2cL {+35}Cl({+3}He,|a).                                                    
  34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): 7 {I4} (1985La16, adopted).
  34CL2cL Other: <5 (1983Wa27).                                                  
  34CL  G 2837.6      100       [M1,E2]                                          
+ 34CL d                                                                         
  34CL  L 5009      2  (0:4)+                                                    
  34CLX L XREF=MOQR(5000*)TU(4970*)V(4970*)                                      
  34CL cL E$weighted average of 5009 {I2} from {+33}S({+3}He,d) and 5010 {I4}    
  34CL2cL from {+34}S({+3}He,t). Other: 5010 {I13} from {+35}Cl({+3}He,|a)       
  34CL cL J$L=2 from 3/2+ in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+; L=3 from 3/2+
  34CL2cL in {+33}S({+3}He,d) gives 1-,2-,3-,4-,5-; L=2 in {+35}Cl({+3}He,|a).   
+ 34CL d                                                                         
  34CL  L 5028      2                                                            
  34CLX L XREF=K(5020?)MO(4981*)R(5000*)                                         
  34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-.                 
  34CL  G 2862        100                                                       ?
+ 34CL d                                                                         
  34CL  L 5061      4                                                            
  34CLX L XREF=O                                                                 
+ 34CL d                                                                         
  34CL  L 5093      4                                                            
  34CLX L XREF=O                                                                 
+ 34CL d                                                                         
  34CL  L 5154      4                                                            
  34CLX L XREF=O                                                                 
+ 34CL d                                                                         
  34CL  L 5171.6    3  4                51 FS     21                             
  34CLX L XREF=KMO                                                               
  34CL cL E$weighted average of 5171.6 {I3} from {+33}S(p,|g) and 5173 {I4} from 
  34CL2cL {+34}S({+3}He,t)                                                       
- 34CL cL T$from (p,|g)                                                          
- 34CL cL T$from {+33}S(p,|g).                                                   
  34CL cL J$L=3 from 3/2+ in {+33}S({+3}He,d) gives 1-,2-,3-,4-,5-; L=2 from 3/2+
  34CL2cL in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+; 1+,2,3,4,5+ from D,E2 |g to  
  34CL3cL 3+, 146; 4,6 from D |DJ=1 from 5(-), 6870.                             
@@ -1185,18 +1220,24 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 1571.3      100                                                        
  34CL  G 5024.8      100                                                        
  34CL cG M$D,E2 |g based on RUL.                                                
+ 34CL d                                                                         
  34CL  L 5233      4                                                            
  34CLX L XREF=O                                                                 
+ 34CL d                                                                         
  34CL  L 5246      2                                                            
  34CLX L XREF=M                                                                 
  34CL cL J$L=3 from 3/2+ in {+33}S({+3}He,d) gives 1-,2-,3-,4-,5-.              
+ 34CL d                                                                         
  34CL  L 5263      4                                                            
  34CLX L XREF=O(5263*)                                                          
+ 34CL d                                                                         
  34CL  L 5278      7  5+,6+,7+                                                  
  34CLX L XREF=J(5277*)                                                          
  34CL cL J$L=6 in {+32}S(|a,d).                                                 
+ 34CL d                                                                         
  34CL  L 5292                                                                   
  34CLX L XREF=HJ(5277*)O(5263*)                                                 
+ 34CL d                                                                         
  34CL  L 5314.95   20 7+               65 PS     8                              
  34CLX L XREF=EFG                                                               
  34CL cL E$weighted average of 5314.86 {I18} from {+24}Mg({+12}C,pn|g) and      
@@ -1224,18 +1265,20 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG MR$-0.05 {I2}; -0.02 {I7}; +0.03 {I12} (all from                       
  34CL2cG {+24}Mg({+12}C,pn|g)...).                                              
  34CL  G 1669      1 5.46    32 E2                                              
+ 34CL d                                                                         
  34CL  L 5326      4                                                            
  34CLX L XREF=KO                                                                
- 34CL cL E$from ({+3}He,t)                                                      
  34CL cL E$from {+34}S({+3}He,t).                                               
+ 34CL d                                                                         
  34CL  L 5338      2                                                            
  34CLX L XREF=M                                                                 
  34CL cL J$L=1+3 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-,4-,5-; L=2 from
  34CL2cL 3/2+ in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+.                         
+ 34CL d                                                                         
  34CL  L 5357      4                                                            
  34CLX L XREF=KO                                                                
- 34CL cL E$from ({+3}He,t)                                                      
  34CL cL E$from {+34}S({+3}He,t).                                               
+ 34CL d                                                                         
  34CL  L 5386.8    15 (3-,4,5,6-)                                               
  34CLX L XREF=KMO(5388?)                                                        
  34CL cL E$from (p,|g)                                                          
@@ -1248,31 +1291,33 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4925.2      4       LT                                                 
  34CL  G 5240.0      3       LT                                                 
  34CL  G 5386.3      3       LT                                                 
+ 34CL d                                                                         
  34CL  L 5424      4                                                            
  34CLX L XREF=KO                                                                
- 34CL cL E$from ({+3}He,t)                                                      
  34CL cL E$from {+34}S({+3}He,t).                                               
+ 34CL d                                                                         
  34CL  L 5435      2                                                            
  34CLX L XREF=K(5436?)MO(5444*)                                                 
  34CL cL E$from {+33}S({+3}He,d). Both 2014Pa44 in {+33}S({+3}He,d) and 2013Fa10
  34CL2cL in {+33}S(p,|g) assign this as a new level different from adjacent     
  34CL3cL known levels.                                                          
  34CL cL J$L=0 from 3/2+ in {+33}S({+3}He,d) gives 1+,2+.                       
+ 34CL d                                                                         
  34CL  L 5444      4                                                            
  34CLX L XREF=O(5444*)                                                          
+ 34CL d                                                                         
  34CL  L 5453      2                                                            
  34CLX L XREF=K(5454?)M                                                         
  34CL cL J$L=0 from 3/2+ in {+33}S({+3}He,d) gives 1+,2+.                       
+ 34CL d                                                                         
  34CL  L 5485      4                                                            
  34CLX L XREF=KO                                                                
- 34CL cL E$from ({+3}He,t)                                                      
  34CL cL E$from {+34}S({+3}He,t).                                               
+ 34CL d                                                                         
  34CL  L 5541.1    11 3-               0.7 PS    GT                             
  34CLX L XREF=KO                                                                
  34CL cL E$weighted average of 5540.8 {I11} from {+33}S(p,|g) and 5545 {I4} from
  34CL2cL {+34}S({+3}He,t)                                                       
- 34CL cL T$from (p,|g)                                                          
- 34CL cL T$from {+33}S(p,|g).                                                   
  34CL cL J$3,7 from |DJ=2, Q |g from 5(-), 6870.                                
  34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): >1000 (1977Da02).          
  34CL  G 1940.5      100     8 [M1,E2]                                          
@@ -1281,6 +1326,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5079.2      4.7     LT [M2]                                            
  34CL  G 5393.9      7.8     LT [E1]                                            
  34CL  G 5540.3      6.3     LT [E3]                                            
+ 34CL d                                                                         
  34CL  L 5577.2    10 (2-,3)                                                    
  34CLX L XREF=KMOU(5600*)V(5600*)                                               
  34CL cL E$weighted average of 5577.6 {I10} from {+33}S(p,|g), 5577 {I2} from   
@@ -1302,11 +1348,13 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5116.0      1.4     LT                                                 
  34CL  G 5430.7      62      6                                                  
  34CL  G 5577.1      0.24    LT                                                 
+ 34CL d                                                                         
  34CL  L 5608      2                                                            
  34CLX L XREF=MOU(5600*)V(5600*)                                                
  34CL cL E$weighted average of 5608 {I2} from {+33}S({+3}He,d) and 5606 {I4}    
  34CL2cL from {+34}S({+3}He,t)                                                  
  34CL cL J$L=3 from 3/2+ in {+33}S({+3}He,d) gives 1-,2-,3-,4-,5-.              
+ 34CL d                                                                         
  34CL  L 5635.75   20 (1,2+)                                                    
  34CLX L XREF=KMOU(5600*)V(5600*)                                               
  34CL cL E$weighted average of 5635.75 {I20} from {+33}S(p,|g) and 5635 {I4}    
@@ -1336,6 +1384,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5174.1      2.2     7                                                  
  34CL  G 5488.9      0.65    LT                                                 
  34CL  G 5635.25     100                                                        
+ 34CL d                                                                         
  34CL  L 5673.0    10 (1,2+)                                                    
  34CLX L XREF=KMO(5671?)                                                        
  34CL cL E$from (p,|g)                                                          
@@ -1364,8 +1413,10 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5211.4      3.8     LT                                                 
  34CL  G 5526.1      1.4     LT                                                 
  34CL  G 5672.5      100                                                        
+ 34CL d                                                                         
  34CL  L 5705      5                                                            
  34CLX L XREF=J(*)O                                                             
+ 34CL d                                                                         
  34CL  L 5763.3    10 (1+,2+)                                                   
  34CLX L XREF=J(*)KO(5761?)                                                     
  34CL cL J$gammas to 0+, g.s. and 3+, 146.                                      
@@ -1378,6 +1429,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5301.7      3                                                          
  34CL  G 5616.4      16                                                         
  34CL  G 5762.8      44                                                         
+ 34CL d                                                                         
  34CL  L 5785.1    10 (2,3,4+)                                                  
  34CLX L XREF=J(*)KMO                                                           
  34CL cL E$weighted average of 5785.6 {I10} from {+33}S(p,|g), 5784 {I2} from   
@@ -1398,6 +1450,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5324.0      1.2     LT                                                 
  34CL  G 5638.7      100                                                        
  34CL  G 5785.1      0.6     LT                                                 
+ 34CL d                                                                         
  34CL  L 5805.9    10 (2+)                                                      
  34CLX L XREF=J(*)KO(5806*)                                                     
  34CL cL J$L=1+3 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-,4-,5-; gammas  
@@ -1415,8 +1468,10 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5344.3      100                                                        
  34CL  G 5659.0      65                                                         
  34CL  G 5805.4      6.1                                                        
+ 34CL d                                                                         
  34CL  L 5805.9                                                                 
  34CLX L XREF=J(*)MO(5806*)                                                     
+ 34CL d                                                                         
  34CL  L 5852.91   30 (3-)                                                      
  34CLX L XREF=J(*)KMO                                                           
  34CL cL E$weighted average of 5852.91 {I30} from {+33}S(p,|g) and 5852 {I4}    
@@ -1440,8 +1495,10 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5391.3      1       LT                                                 
  34CL  G 5706.0      100                                                        
  34CL  G 5852.37     0.4     LT                                                 
+ 34CL d                                                                         
  34CL  L 5868      4                                                            
  34CLX L XREF=J(*)K(*)M(*)O                                                     
+ 34CL d                                                                         
  34CL  L 5897.3    10 (2)                                                       
  34CLX L XREF=J(*)KM(*)O                                                        
  34CL cL E$weighted average of 5897.2 {I10} from {+33}S(p,|g) and 5898 {I4} from
@@ -1461,8 +1518,10 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5435.5      100                                                        
  34CL  G 5750.3      85                                                         
  34CL  G 5896.7      5                                                          
+ 34CL d                                                                         
  34CL  L 5917      4                                                            
  34CLX L XREF=J(*)K(*)M(*)O                                                     
+ 34CL d                                                                         
  34CL  L 5940.8    10 (2-)                                                      
  34CLX L XREF=J(*)KO                                                            
  34CL cL E$weighted average of 5940.8 {I10} from {+33}S(p,|g) and 5941 {I4} from
@@ -1481,8 +1540,10 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5479.1      21                                                         
  34CL  G 5793.9      6.8                                                        
  34CL  G 5940.2      0.99                                                       
+ 34CL d                                                                         
  34CL  L 5980      4                                                            
  34CLX L XREF=J(*)O                                                             
+ 34CL d                                                                         
  34CL  L 6030.1    20 (1+,2+)                                                   
  34CLX L XREF=K                                                                 
  34CL cL J$gammas to 0+, g.s. and 3+, 146.                                      
@@ -1494,6 +1555,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5568.4      0.89    LT                                                 
  34CL  G 5883.2      6.4                                                        
  34CL  G 6029.5      100                                                        
+ 34CL d                                                                         
  34CL  L 6088.94   6  (1,2+)                                                    
  34CLX L XREF=K                                                                 
  34CL cL J$spin=1,2 from |g(|q) in {+33}S(p,|g); (1,2+) from |g to 0+, g.s.;    
@@ -1509,6 +1571,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5627.2      2.7                                                        
  34CL  G 5942.0      0.33    LT                                                 
  34CL  G 6088.36     100                                                        
+ 34CL d                                                                         
  34CL  L 6136.2    11 1(+)                                                      
  34CLX L XREF=KU(6160*)V(6160*)                                                 
  34CL cL J$spin=1,2 from |g(|q) in {+33}S(p,|g); D |DJ=0 |g to 1+, 665; |p=(+)  
@@ -1525,6 +1588,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5470.4      100     10                                                 
  34CL  G 5674.5      0.52    LT                                                 
  34CL  G 5989.2      20.0    20                                                 
+ 34CL d                                                                         
  34CL  L 6141.8    11 1,2                                                       
  34CLX L XREF=KU(6160*)V(6160*)                                                 
  34CL cL J$spin=1,2 from |g(|q) in {+33}S(p,|g).                                
@@ -1543,10 +1607,10 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5994.8      0.35    LT                                                 
  34CL  G 6141.2      100     10                                                 
  34CL dG $A2=-0.14 3, A4=+0.08 3 (1983Wa27).                                    
+ 34CL d                                                                         
  34CL  L 6169.4    11 3-               25 EV     4                          L   
  34CLX L XREF=KLV(6160*)                                                        
  34CL cL E$from (p,|g)                                                          
- 34CL cL T$from (p,p)                                                           
  34CL cL E$from {+33}S(p,|g).                                                   
  34CL cL J$spin=3 from |g(|q) in {+33}S(p,|g); D |DJ=0 |g to 3-, 3984 (and to   
  34CL2cL 3-, 3545 and 3+, 146); |p=(-) from no |g (or weak) to 1+, 665.         
@@ -1569,6 +1633,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5707.7      0.91    LT                                                 
  34CL  G 6022.4      80      8 D(+Q)     -0.02   3                              
  34CL  G 6168.8      0.91    LT                                                 
+ 34CL d                                                                         
  34CL  L 6181.27   20 (2-)                                                      
  34CLX L XREF=KV(6160*)                                                         
  34CL cL J$(2,4) from (D) |DJ=(1) |g to 3+, 146; (2+,4) less likely from no |g  
@@ -1591,6 +1656,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6034.3      20.1    21                                                 
  34CL cG M$(D) |DJ=(1) |g ({+33}S(p,|g)).                                       
  34CL  G 6180.67     1.9                                                        
+ 34CL d                                                                         
  34CL  L 6208.2    5  4(-)             1.4 FS    LT                             
  34CLX L XREF=K                                                                 
  34CL cL J$spin=4 from |g(|q) in {+33}S(p,|g); 2,4 from D(+Q) |DJ=1 |g to 3-,   
@@ -1614,6 +1680,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5746.5      0.21    LT [E3]                                            
  34CL  G 6061.2      1.04    52 [E1]                                            
  34CL  G 6207.6      0.21    LT [M4]                                            
+ 34CL d                                                                         
  34CL  L 6219.3    12 (2-,3+)                                                   
  34CLX L XREF=K                                                                 
  34CL cL J$(1+,2,3+) from gammas to 3+, 2181 and 1+, 2580; (1,2+) less likely   
@@ -1628,6 +1695,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4037.9      46      5                                                  
  34CL  G 4988.6      28.2    28                                                 
  34CL  G 6072.3      33.3    33                                                 
+ 34CL d                                                                         
  34CL  L 6229.5    5  2                                                         
  34CLX L XREF=K                                                                 
  34CL cL J$spin=1 from |g(|q) in {+33}S(p,|g); 0,2 from D, |DJ=1 |g to 1-, 4354;
@@ -1647,6 +1715,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5767.8      2.4     10                                                 
  34CL  G 6082.5      0.49    LT                                                 
  34CL  G 6228.9      1.9     8                                                  
+ 34CL d                                                                         
  34CL  L 6266.6    13 (1+,2,3+)                                                 
  34CLX L XREF=K                                                                 
  34CL cL J$gammas to 3+, 146 and 1+, 665.                                       
@@ -1659,6 +1728,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5804.9      2.3     LT                                                 
  34CL  G 6119.6      72                                                         
  34CL  G 6266.0      2.6     LT                                                 
+ 34CL d                                                                         
  34CL  L 6273.3    13 (3-,4)                                                    
  34CLX L XREF=K                                                                 
  34CL cL J$spin=3 from |g(|q) in {+33}S(p,|g); (2+,3,4+) from gammas to 4+, 2376
@@ -1679,11 +1749,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5811.6      0.15    LT                                                 
  34CL  G 6126.3      4.8     24                                                 
  34CL  G 6272.7      0.15    LT                                                 
+ 34CL d                                                                         
  34CL  L 6321.7    13 2-               1.60 KEV  16                         L   
  34CLX L XREF=HJ(6300)KL                                                        
  34CL cL E$weighted average of 6322.0 {I13} from {+33}S(p,|g) and 6321.2 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
  34CL cL J$spin=1,2 from |g(|q) in {+33}S(p,|g).                                
  34CL  G 1716.2      4.6     23                                                 
  34CL  G 1967.7      2.3     12                                                 
@@ -1705,6 +1775,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5860.3      16.5    18                                                 
  34CL  G 6175.0      100     10                                                 
  34CL  G 6321.4      0.61    LT                                                 
+ 34CL d                                                                         
  34CL  L 6361.3    13 (1+,2,3+)                                                 
  34CLX L XREF=K                                                                 
  34CL cL J$gammas to 3+, 146 and 1+, 461.                                       
@@ -1713,11 +1784,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5130.6      25.0    25                                                 
  34CL  G 5899.6      14.8    16                                                 
  34CL  G 6214.3      17.1    18                                                 
+ 34CL d                                                                         
  34CL  L 6370.2    2  2-               1.60 KEV  16                         L   
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 6370.2 {I2} from {+33}S(p,|g) and 6369.0 {I15}   
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
  34CL  G 1412.9      3.5     17                                                 
  34CL  G 1731.3      1.72    86                                                 
  34CL  G 1854.5      3.5     17                                                 
@@ -1740,6 +1811,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5908.5      25.6    23                                                 
  34CL  G 6223.2      37      5                                                  
  34CL  G 6369.6      46      5                                                  
+ 34CL d                                                                         
  34CL  L 6382.4    14 (2-,3,4-)                                                 
  34CLX L XREF=K                                                                 
  34CL cL J$gammas to 2-, 4610 and 4-, 3600.                                     
@@ -1757,6 +1829,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4006.5      6.4     33                                                 
  34CL  G 5716.6      5.1     26                                                 
  34CL  G 6235.4      100     10                                                 
+ 34CL d                                                                         
  34CL  L 6399.8    14 (3)                                                       
  34CLX L XREF=K                                                                 
  34CL cL J$(1,2,3) from gammas to 2+, 1230 and 2-, 2721; (3,4,5) from gammas to 
@@ -1767,6 +1840,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4023.8      5.5     27                                                 
  34CL  G 5169.1      9.1     46                                                 
  34CL  G 6252.8      100     10                                                 
+ 34CL d                                                                         
  34CL  L 6441.2    14 (2-,3+)                                                   
  34CLX L XREF=K                                                                 
  34CL cL J$gammas to 4-,4076 and 1+, 461.                                       
@@ -1777,6 +1851,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5775.4      5.5     28                                                 
  34CL  G 5979.4      8.2     8                                                  
  34CL  G 6294.2      11.0    11                                                 
+ 34CL d                                                                         
  34CL  L 6450.54   20 (4-)                                                      
  34CLX L XREF=K                                                                 
  34CL cL J$spin=3,4 from |g(|q); (2,3,4) from gammas to 3+, 146 and 3-, 3545;   
@@ -1798,6 +1873,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5988.8      0.83    LT                                                 
  34CL  G 6303.5      100     10                                                 
  34CL  G 6449.88     1.7     LT                                                 
+ 34CL d                                                                         
  34CL  L 6477.5    14 (0,1,2)                                                   
  34CLX L XREF=K                                                                 
  34CL cL J$gammas to 1+, 461 and 1-, 4354.                                      
@@ -1806,6 +1882,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 3897.0      9.2     9                                                  
  34CL  G 5811.7      18.5    19                                                 
  34CL  G 6015.7      100     10                                                 
+ 34CL d                                                                         
  34CL  L 6486.9    14 (1,2+)                                                    
  34CLX L XREF=K                                                                 
  34CL cL J$spin=1:4 from |g(|q); gamma to 0+.                                   
@@ -1817,6 +1894,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6025.1      13.3    13                                                 
  34CL  G 6339.9      0.85    LT                                                 
  34CL  G 6486.2      33.3    33                                                 
+ 34CL d                                                                         
  34CL  L 6527.6    15 (2-,3+)                                                   
  34CLX L XREF=K                                                                 
  34CL cL J$(1+,2,3+) from gammas to 1+, 461 and 3+, 146; (2-,3+) from |g to 4-, 
@@ -1827,13 +1905,14 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4640.0      6.5     32                                                 
  34CL  G 5861.8      11.3    11                                                 
  34CL  G 6380.6      12.9    13                                                 
+ 34CL d                                                                         
  34CL  L 6540                                                                   
  34CLX L XREF=J                                                                 
+ 34CL d                                                                         
  34CL  L 6545.9    15 2-               2.0 KEV   2                          L   
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 6546.6 {I15} from {+33}S(p,|g) and 6545.2 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
  34CL  G 1375.0      1.6                                                        
  34CL  G 3163.1      0.95                                                       
  34CL  G 3966.1      7.7     8                                                  
@@ -1842,6 +1921,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6084.8      0.48    LT                                                 
  34CL  G 6399.6      100     10                                                 
  34CL  G 6545.9      0.48    LT                                                 
+ 34CL d                                                                         
  34CL  L 6574.7    15 (2+,3,4+)                                                 
  34CLX L XREF=K                                                                 
  34CL cL J$gammas to 2+, 2158 and 4+, 2376.                                     
@@ -1850,6 +1930,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5908.9      0.65    LT                                                 
  34CL  G 6427.7      5.3     26                                                 
  34CL  G 6574.0      0.65    LT                                                 
+ 34CL d                                                                         
  34CL  L 6583.7    15 (1-,2+)                                                   
  34CLX L XREF=K                                                                 
  34CL cL J$gammas to 0+, g.s. and 3-, 3545.                                     
@@ -1858,8 +1939,10 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5917.9      21.3    21                                                 
  34CL  G 6121.9      100     10                                                 
  34CL  G 6583.0      17.0    17                                                 
+ 34CL d                                                                         
  34CL  L 6605      2                                                           ?
  34CLX L XREF=K(6605?)                                                          
+ 34CL d                                                                         
  34CL  L 6624.7    15 (3-)                                                      
  34CLX L XREF=K                                                                 
  34CL cL J$gammas to 1+, 461 and 5-, 3631.                                      
@@ -1879,12 +1962,13 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 5958.8      3.9     LT                                                 
  34CL  G 6162.9      100                                                        
  34CL  G 6477.6      92                                                         
+ 34CL d                                                                         
  34CL  L 6632.7    20                                                       L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 6640.92   7  4-               40 EV     6                              
  34CLX L XREF=KL                                                                
  34CL cL E$from (p,|g)                                                          
- 34CL cL T$from (p,p)                                                           
  34CL cL J$4- from {+33}S(p,p),(p,p'|g):resonances; spin=4 from |g(|q) in       
  34CL2cL {+33}S(p,|g).                                                          
  34CL cL T$from {+33}S(p,p),(p,p'|g):resonances.                                
@@ -1902,6 +1986,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6179.1      0.46    LT                                                 
  34CL  G 6493.9      58      6 D(+Q)     +0.02   +1-2                           
  34CL  G 6640.22     0.91    LT                                                 
+ 34CL d                                                                         
  34CL  L 6695.1    16 (3+,4,5+)                                                 
  34CLX L XREF=K                                                                 
  34CL cL J$gammas to 5+,4825 and 3+, 2611.                                      
@@ -1911,6 +1996,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 3094.7      47      5                                                  
  34CL  G 4083.8      72      7                                                  
  34CL  G 4319.1      100     10                                                 
+ 34CL d                                                                         
  34CL  L 6702.8    16 (3,4)                                                     
  34CLX L XREF=K                                                                 
  34CL cL J$(2,3,4) from gammas to 3+, 146 and 3-, 3545; (3,4,5) from gammas to  
@@ -1922,11 +2008,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 3368.6      2.4     12                                                 
  34CL  G 4326.8      6.0     30                                                 
  34CL  G 6555.7      100     10                                                 
+ 34CL d                                                                         
  34CL  L 6719.8    15 3-               3.0 KEV   3                              
  34CLX L XREF=H(6724*)KL                                                        
  34CL cL E$weighted average of 6720.2 {I16} from {+33}S(p,|g) and 6719.5 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
  34CL  G 2110.4      31.3    31                                                 
  34CLF G FL=4609.7                                                              
  34CL  G 2114.3      22.9    23                                                 
@@ -1935,6 +2021,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4832.5      11.5    13                                                 
  34CL  G 5489.4      25.0    25                                                 
  34CL  G 6573.1      100     10                                                 
+ 34CL d                                                                         
  34CL  L 6723.7    16 (4+)                                                      
  34CLX L XREF=H(6724*)K                                                         
  34CL cL J$(3+,4+) from gammas to 2+, 2158 and 5+, 4825; (3+) less likely from  
@@ -1952,11 +2039,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6261.9      2       LT                                                 
  34CL  G 6576.6      64                                                         
  34CL  G 6723.0      0.8     LT                                                 
+ 34CL d                                                                         
  34CL  L 6737.3    15 2-               2.0 KEV   2                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 6737.0 {I16} from {+33}S(p,|g) and 6737.5 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
  34CL  G 3607.7      5.1     26                                                 
  34CL  G 4578.8      100     10                                                 
  34CL  G 4849.3      3.6                                                        
@@ -1965,10 +2052,13 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6275.2      28.2    28                                                 
  34CL  G 6589.9      74      8                                                  
  34CL  G 6736.3      1.7     LT                                                 
+ 34CL d                                                                         
  34CL  L 6748.9    15 2-               0.80 KEV  8                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 6778      2                                                        L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 6790.8    16 (1+,2+)                                                   
  34CLX L XREF=K                                                                 
  34CL cL J$(1,2+) from gammas to 0+, g.s. and 2+, 1887; |g to 3+, 146.          
@@ -1977,6 +2067,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6329.0      4       LT                                                 
  34CL  G 6643.7      6       LT                                                 
  34CL  G 6790.1      100     10                                                 
+ 34CL d                                                                         
  34CL  L 6797.4    16 1:5                                                       
  34CLX L XREF=K                                                                 
  34CL cL J$spin=1:5 from |g(|q) in {+33}S(p,|g).                                
@@ -1990,15 +2081,16 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6335.6      0.33    LT                                                 
  34CL  G 6650.3      100     10                                                 
  34CL  G 6796.7      0.44    LT                                                 
+ 34CL d                                                                         
  34CL  L 6807.1    15 1-               1.0 KEV   1                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 6807.2 {I16} from {+33}S(p,|g) and 6807.0 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
  34CL  G 3423.7      12.7    13                                                 
  34CL  G 4226.6      16.9    17                                                 
  34CL  G 4649.0      11.3    11                                                 
  34CL  G 6141.3      100     10                                                 
+ 34CL d                                                                         
  34CL  L 6828.6    14 (2,3+)                                                    
  34CLX L XREF=K                                                                 
  34CL cL J$(2,3,4) from gammas to 3+, 146 and |g to 3-, 3545; (2,3+) from |g to 
@@ -2011,11 +2103,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6366.8      19.0    19                                                 
  34CL  G 6681.5      32.8    33                                                 
  34CL  G 6827.9      1.4     LT                                                 
+ 34CL d                                                                         
  34CL  L 6842.8    14 2-               2.0 KEV   2                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 6842.8 {I14} from {+33}S(p,|g) and 6842.8 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
  34CL  G 2233.0      10      LT                                                 
  34CLF G FL=4609.7                                                              
  34CL  G 2236.9      5.0     25                                                 
@@ -2038,11 +2130,11 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6381.0      100     10                                                 
  34CL  G 6695.7      12.5    65                                                 
  34CL  G 6842.1      1.9     LT                                                 
+ 34CL d                                                                         
  34CL  L 6852.4    14 2+               0.80 KEV  8                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 6853.0 {I14} from {+33}S(p,|g) and 6851.8 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
  34CL  G 1857.4      2.5     13                                                 
  34CLF G FL=4995.6                                                              
  34CL  G 2157.2      2.5     13                                                 
@@ -2056,10 +2148,10 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6391.2      100     10                                                 
  34CL  G 6705.9      10.0    50                                                 
  34CL  G 6852.3      13      6                                                  
+ 34CL d                                                                         
  34CL  L 6871.18   30 5-               26 EV     7                              
  34CLX L XREF=KL                                                                
  34CL cL E$from (p,|g)                                                          
- 34CL cL T$from (p,p)                                                           
  34CL cL J$spin=5 from |g(|q) in {+33}S(p,|g).                                  
  34CL  G 1330.4      13.6    14                                                 
  34CL  G 1484.4      6.8     34                                                 
@@ -2073,6 +2165,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6409.3      1.5     LT                                                 
  34CL  G 6724.1      1.3     LT                                                 
  34CL  G 6870.44     1.3     LT                                                 
+ 34CL d                                                                         
  34CL  L 6887.97   30 3                                                         
  34CLX L XREF=K                                                                 
  34CL cL J$spin=2 from |g(|q) in {+33}S(p,|g).                                  
@@ -2088,8 +2181,10 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6426.1      0.37    LT                                                 
  34CL  G 6740.9      5.8     29                                                 
  34CL  G 6887.22     0.49    LT                                                 
+ 34CL d                                                                         
  34CL  L 6890.78   30 1-               0.85 KEV  9                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 6901.75   30 (1+,2+)                                                   
  34CLX L XREF=K                                                                 
  34CL cL J$gammas to 0+, g.s. and 3+, 146.                                      
@@ -2100,6 +2195,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6439.9      1.2                                                        
  34CL  G 6754.6      2.6     13                                                 
  34CL  G 6901.00     7.9     8                                                  
+ 34CL d                                                                         
  34CL  L 6918.0    17 3,4                                                       
  34CLX L XREF=K                                                                 
  34CL cL J$spin=3,4 from |g(|q) in {+33}S(p,|g).                                
@@ -2115,6 +2211,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6456.1      0.32    LT                                                 
  34CL  G 6770.9      100     10                                                 
  34CL  G 6917.2      0.65    LT                                                 
+ 34CL d                                                                         
  34CL  L 6931.5    17 1-               5.0 KEV   5                              
  34CLX L XREF=KL(*)                                                             
  34CL cL E$weighted average of 6931.5 {I17} from {+33}S(p,|g) and 6934.84 {I30} 
@@ -2138,8 +2235,10 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6469.6      9.1     LT                                                 
  34CL  G 6784.4      50                                                         
  34CL  G 6930.7      6.8     LT                                                 
+ 34CL d                                                                         
  34CL  L 6950                                                                   
  34CLX L XREF=JL(*)                                                             
+ 34CL d                                                                         
  34CL  L 6977.4    17 (2-,3,4+)                                                 
  34CLX L XREF=K                                                                 
  34CL cL J$(1+,2,3,4+) from gammas to 2+, 2158 and 3+, 146; (1,2+) less likely  
@@ -2148,8 +2247,10 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4819.1      100     10                                                 
  34CL  G 5746.6      8.2     9                                                  
  34CL  G 6830.3      29.9    30                                                 
+ 34CL d                                                                         
  34CL  L 6984.9    10                                                           
  34CLX L XREF=KL(*)                                                             
+ 34CL d                                                                         
  34CL  L 6986.9    20 1-               0.60 KEV  6                              
  34CLX L XREF=KL(*)                                                             
  34CL cL E$weighted average of 6986.9 {I20} from {+33}S(p,|g) and 6986.85 {I30} 
@@ -2162,15 +2263,18 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4828.582    100     10                                                 
  34CL  G 5756.00     59      6                                                  
  34CL  G 6839.711    18.3    20                                                 
+ 34CL d                                                                         
  34CL  L 6991.41   30 1+               0.220 KEV 22                             
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 6992.3 {I9} from {+33}S(p,|g) and 6991.31 {I30}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 7018.9    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7037.79   30 2-               8.0 KEV   8                              
  34CLX L XREF=LU(7070*)V(7070*)                                                 
+ 34CL d                                                                         
  34CL  L 7051.6    18 (1-,2,3+)                                                 
  34CLX L XREF=KU(7070*)V(7070*)                                                 
  34CL cL J$gammas to 1+, 461 and 3-, 3545.                                      
@@ -2180,6 +2284,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 4893.3      93      9                                                  
  34CL  G 6385.7      71      7                                                  
  34CL  G 6589.7      100     10                                                 
+ 34CL d                                                                         
  34CL  L 7059.01   30 1,2                                                       
  34CLX L XREF=KLU(7070*)V(7070*)                                                
  34CL cL E$weighted average of 7059.04 {I30} from {+33}S(p,|g) and 7057.7 {I20} 
@@ -2204,13 +2309,14 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6597.2      100     10                                                 
  34CL  G 6911.9      1.8     LT                                                 
  34CL  G 7058.25     0.35    LT                                                 
+ 34CL d                                                                         
  34CL  L 7061.6    10                                                           
  34CLX L XREF=KU(7070*)V(7070*)                                                 
+ 34CL d                                                                         
  34CL  L 7078.90   9  3-               0.787 KEV 30                             
  34CLX L XREF=KLU(7070*)V(7070*)                                                
  34CL cL E$weighted average of 7078.89 {I9} from {+33}S(p,|g) and 7080.4 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
  34CL cL J$spin=3 from |g(|q) in {+33}S(p,|g); 2-,3- from                       
  34CL2cL {+33}S(p,p),(p,p'|g):resonances.                                       
  34CL  G 2473.0      6.3                                                        
@@ -2229,40 +2335,53 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL  G 6617.0      2.2     LT                                                 
  34CL  G 6931.7      28.6    29 D(+Q)    -0.05   7                              
  34CL  G 7078.10     3       LT                                                 
+ 34CL d                                                                         
  34CL  L 7111.6    15 2-               1.20 KEV  12                         L   
  34CLX L XREF=LU(7070*)V(7070*)                                                 
+ 34CL d                                                                         
  34CL  L 7115.9    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7123.2    10 2-               4.0 KEV   4                              
  34CLX L XREF=KLU(7070*)V(7070*)                                                
  34CL cL E$weighted average of 7122.7 {I10} from {+33}S(p,|g) and 7124.3 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 7126.6    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7130.5    15 2-               15.0 KEV  30                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7145.0    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7165.4    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7175.1    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7183.8    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7196.2    15 2-               1.60 KEV  16                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7203.2    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7213.7    15 1-               2.0 KEV   2                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7218.8    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7239.1    14 1+               0.55 KEV  6                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7238.2 {I10} from {+33}S(p,|g) and 7241.2 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 7249.8    10                  0.14 PS   5                              
  34CLX L XREF=E(*)F(*)G(7250*)K(*)                                              
  34CL cL T$lifetime |t=200 fs {I70} in {+31}P(|a,n|g) from 1982Va02 with DSAM.  
@@ -2270,6 +2389,7 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG E$weighted average of 1935.0 {I5} from {+24}Mg({+12}C,pn|g) and 1935   
  34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
  34CL cG M$from ({+12}C,|an|g)                                                  
+ 34CL d                                                                         
  34CL  L 7250.0    5  9+               0.159 PS  28                             
  34CLX L XREF=E(*)F(*)G(7250*)K(*)                                              
  34CL cL E$weighted average of 7249.9 {I5} from {+24}Mg({+12}C,pn|g), 7250.5    
@@ -2281,130 +2401,178 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL cG E$weighted average of 1935.0 {I5} from {+24}Mg({+12}C,pn|g) and 1935   
  34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
  34CL cG M$from ({+12}C,|an|g)                                                  
+ 34CL d                                                                         
  34CL  L 7271.2    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7284.7    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7295.4    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7317.1    15 2-               3.5 KEV   4                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7321.6    10                                                           
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7321.6 {I10} from {+33}S(p,|g) and 7321.6 {I20}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
+ 34CL d                                                                         
  34CL  L 7336      2                                                            
  34CLX L XREF=J(7350*)L                                                         
+ 34CL d                                                                         
  34CL  L 7346.8    10                                                           
  34CLX L XREF=J(7350*)KL(*)                                                     
  34CL cL E$from {+33}S(p,|g).                                                   
  34CL cL J$L=3,6 from 0+ in {+32}S(|a,d) gives 2-,3-,4-,5+,6+,7+ for 7350 {I20}.
+ 34CL d                                                                         
  34CL  L 7358.5    15 2-               20 KEV    4                              
  34CLX L XREF=J(7350*)L(*)                                                      
+ 34CL d                                                                         
  34CL  L 7368.4    15 1-,2-,3-                                                  
  34CLX L XREF=J(7350*)K(*)L                                                     
+ 34CL d                                                                         
  34CL  L 7376.0    10                                                           
  34CLX L XREF=K(*)                                                              
+ 34CL d                                                                         
  34CL  L 7382.7    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7386.6    15 2-               0.70 KEV  7                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7406.4    10                                                           
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7406.0 {I10} from {+33}S(p,|g) and 7408.0 {I20}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
+ 34CL d                                                                         
  34CL  L 7412.0    15 1-,2-                                                 L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7424.5    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7441.0    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7450.1    10                                                           
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7449.7 {I10} from {+33}S(p,|g) and 7451.6 {I20}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
+ 34CL d                                                                         
  34CL  L 7457.6    15 1-               4.0 KEV   4                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7462.3    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7470.1    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7475.3    15 2+               0.170 KEV 17                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7486.6    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7491.3    15 2-               0.10 KEV  1                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7495.6    11 2-               1.40 KEV  14                             
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7496.3 {I10} from {+33}S(p,|g) and 7493.9 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 7506.0    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7511.3    10 1+               0.30 KEV  3                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7511.8 {I10} from {+33}S(p,|g) and 7510.2 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 7517.6    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7525.7    15 1+,2+                                                 L   
  34CLX L XREF=K(*)L                                                             
+ 34CL d                                                                         
  34CL  L 7527.1    15 1+               3.0 KEV   3                              
  34CLX L XREF=K(*)L                                                             
  34CL cL E$weighted average of 7527.3 {I10} from {+33}S(p,|g) and 7527.1 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances.                                  
+ 34CL d                                                                         
  34CL  L 7531.2    15 3-               40 KEV    8                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7533.9    15 1-,2-,3-,4-,5-                                        L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7536.4    15 2-               3.6 KEV   4                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7539.9    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7544.5    11 1+               0.150 KEV 15                             
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7543.8 {I10} from {+33}S(p,|g) and 7546.1 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 7553.3    15 2+               2.50 KEV  25                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7562.3    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7577.8    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7582.6    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7585.8    15 1+               1.40 KEV  14                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7588.5    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7595.4    15 2+               0.70 KEV  7                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7609.8    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7613.7    15 2+               0.30 KEV  3                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7618.1    15 (1)-             0.50 KEV  5                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7624.4    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7630.2    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7643.8    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7649.3    10 1-               32 KEV    7                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7649.6 {I10} from {+33}S(p,|g) and 7648.6 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 7652.1    15 2-               0.70 KEV  7                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7666.1    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7673.6    15 1-               2.0 KEV   2                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7675.3    10 2+,3+                                                     
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7675.8 {I10} from {+33}S(p,|g) and 7674.3 {I15}  
@@ -2413,334 +2581,453 @@ Generated at: Fri 04/24/2026 at 04:20:22 PM EDT
  34CL2cL {+33}S(p,p),(p,p'|g):resonances.                                       
  34CL  G 5517.4                D+Q       0.12    8                              
  34CL  G 7528.5                D+Q       0.32    25                             
+ 34CL d                                                                         
  34CL  L 7677.9    15 3-               2.0 KEV   2                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7684.7    15 2+,3+                                                 L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7690.4    10 1+               0.30 KEV  3                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7690.3 {I10} from {+33}S(p,|g) and 7690.5 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 7696.8    15 1-               1.30 KEV  13                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7699.5    11 (7+)             0.34 PS   LT                             
  34CLX L XREF=F                                                                 
  34CL cL J$2384|g, |DJ=0 to 7+, 5315.4 level in {+27}Al({+12}C,|an|g).          
  34CL cL T$lifetime |t<0.49 ps in {+27}Al({+12}C,|an|g) from 2014Bi03 with DSAM.
  34CL  G 2384      1 100       [M1,E2]                                          
+ 34CL d                                                                         
  34CL  L 7704.6    15 1-,2-,3-,4-,5-                                        L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7708.8    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7720.1    10 1-               6.0 KEV   6                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7720.4 {I10} from {+33}S(p,|g) and 7719.3 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 7730.1    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7753.4    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7761.6    15 0+,1+,2+                                              L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7768.5    15 1-,2-,3-                                              L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7784.5    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7787.6    15 1+,2+                                                 L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7799.9    15 3+,4+                                                 L   
  34CLX L XREF=L(*)                                                              
+ 34CL d                                                                         
  34CL  L 7801.5    10 8-               69 FS     49                             
  34CLX L XREF=EFG                                                               
  34CL cL E$weighted average of 7802.4 {I10} from {+24}Mg({+12}C,pn|g) and 7800.5
  34CL2cL {I11} from {+27}Al({+12}C,|an|g)                                       
- 34CL cL T$from (|a,n|g)                                                        
  34CL cL J$2487.4|g, E1+M2, to 7+, 5315.4 level in {+27}Al({+12}C,|an|g).       
  34CL cL T$lifetime |t<0.12 ps in {+27}Al({+12}C,|an|g) from 2014Bi03 with DSAM.
  34CL  G 2486.2    12 100      E1+M2     +0.22   7                          F   
  34CL cG E$weighted average of 2487.4 {I10} from {+24}Mg({+12}C,pn|g) and 2485  
  34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
  34CL cG MR$from ({+12}C,|an|g)                                                 
+ 34CL d                                                                         
  34CL  L 7803.9    10                  69 FS     49                             
  34CLX L XREF=K(*)                                                              
  34CL cL T$lifetime |t=100 fs {I70} in {+31}P(|a,n|g) from 1982Va02 with DSAM.  
+ 34CL d                                                                         
  34CL  L 7809.7    10                                                           
  34CLX L XREF=J(7840*)KL(*)                                                     
+ 34CL d                                                                         
  34CL  L 7825.3    15 3+               0.040 KEV 4                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7827.3    15 2-               10.0 KEV  20                             
  34CLX L XREF=J(7840*)K(*)L(*)                                                  
+ 34CL d                                                                         
  34CL  L 7831.0    10                                                           
  34CLX L XREF=J(7840*)KL(*)                                                     
+ 34CL d                                                                         
  34CL  L 7848.8    10 3+,4+                                                     
  34CLX L XREF=K(*)L(*)                                                          
  34CL cL E$weighted average of 7848.5 {I10} from {+33}S(p,|g) and 7849.6 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances.                                  
+ 34CL d                                                                         
  34CL  L 7853.4    10                                                           
  34CLX L XREF=J(7840*)KL(*)                                                     
+ 34CL d                                                                         
  34CL  L 7859.2    29                                                           
  34CLX L XREF=J(7840*)K(*)L                                                     
+ 34CL d                                                                         
  34CL  L 7878.6    10                                                           
  34CLX L XREF=KL(*)                                                             
+ 34CL d                                                                         
  34CL  L 7886.4    10                                                           
  34CLX L XREF=KL(*)                                                             
  34CL cL E$weighted average of 7886.4 {I10} from {+33}S(p,|g) and 7883.4 {I29}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances.                                  
+ 34CL d                                                                         
  34CL  L 7898.8    10                                                           
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7899.0 {I10} from {+33}S(p,|g) and 7897.0 {I29}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
+ 34CL d                                                                         
  34CL  L 7904.8    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7909.5    15                                                       L   
  34CLX L XREF=K(*)L                                                             
+ 34CL d                                                                         
  34CL  L 7909.6    15 2-               8.0 KEV   8                              
  34CLX L XREF=K(*)L                                                             
  34CL cL E$weighted average of 7909.6 {I10} from {+33}S(p,|g) and 7909.5 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances.                                  
+ 34CL d                                                                         
  34CL  L 7929.1    15 2+               1.40 KEV  14                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7934.7    10 3+               0.50 KEV  5                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7934.9 {I10} from {+33}S(p,|g) and 7934.2 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 7943.1    10 1+,2+,3+,4+                                               
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7942.6 {I10} from {+33}S(p,|g) and 7944.2 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
+ 34CL d                                                                         
  34CL  L 7953.3    29                                                       L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7967.2    10 1+               0.20 KEV  2                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 7966.9 {I10} from {+33}S(p,|g) and 7967.8 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 7975.1    15 2+               3.0 KEV   3                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7977.5    15 1+               2.70 KEV  27                             
  34CLX L XREF=K(*)L                                                             
+ 34CL d                                                                         
  34CL  L 7980.3    15 3+               0.30 KEV  3                              
  34CLX L XREF=K(*)L                                                             
+ 34CL d                                                                         
  34CL  L 7985.3    15 2-               19 KEV    4                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 7990.2    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 7997.0    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 8002.6    15 1+,2+                                                 L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8012.5    15 1+,2+,3+,4+                                           L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8020.8    15 2-               0.60 KEV  6                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8029.9    15 1-               8.0 KEV   8                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 8030.9 {I10} from {+33}S(p,|g) and 8027.6 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 8035.8    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 8043.2    15 2-               4.5 KEV   5                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8048.3    10 2+               0.20 KEV  2                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 8048.4 {I10} from {+33}S(p,|g) and 8048.1 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 8052.5    15 1-               0.30 KEV  3                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8059.3    15 3+               1.20 KEV  12                         L   
  34CLX L XREF=L                                                                 
  34CL cL J$other: (2)+,(4)+ also possible {+33}S(p,p),(p,p'|g):resonances       
  34CL2cL (1989Va15).                                                            
+ 34CL d                                                                         
  34CL  L 8070.5    10 1-,2-,3-,4-,5-                                            
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 8070.7 {I10} from {+33}S(p,|g) and 8069.9 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
+ 34CL d                                                                         
  34CL  L 8084.6    15 2+               0.70 KEV  7                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8087.5    15 1-               0.50 KEV  5                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8106.4    15 (2)-             5.0 KEV   5                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8118.7    15 2+               1.10 KEV  11                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8127.4    15 0+               1.0 KEV   1                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8132.8    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 8141.6    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 8149.2    15 2-               26 KEV    5                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8155.6    15 1-               1.20 KEV  12                             
  34CLX L XREF=K(*)L                                                             
  34CL cL E$weighted average of 8154.2 {I10} from {+33}S(p,|g) and 8155.6 {I15}  
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances.                                  
+ 34CL d                                                                         
  34CL  L 8155.5    11 6+               56 FS     LT                             
  34CLX L XREF=FK(*)                                                             
  34CL cL J$2840|g, M1+E2, to 7+, 5315.4 level.                                  
  34CL cL T$lifetime |t<0.08 ps in {+27}Al({+12}C,|an|g) from 2014Bi03 with DSAM.
  34CL  G 2840      1 100       M1+E2     -0.3    1                          F   
+ 34CL d                                                                         
  34CL  L 8159.0    15 1+               0.90 KEV  9                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8164.6    15 1-,2-                                                 L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8186.38   30 3+,4+                                                 L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8192.5    5  2+               0.50 KEV  5                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 8191.0 {I10} from {+33}S(p,|g) and 8192.59 {I30} 
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 8195.9    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 8203.75   30 1-               15.0 KEV  30                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8210.54   30 (3)+             0.20 KEV  2                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8214.86   30 3-               0.30 KEV  3                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 8214.3 {I10} from {+33}S(p,|g) and 8214.91 {I30} 
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 8231.99   30 2-               10.0 KEV  20                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8236.30   30 2+               0.95 KEV  10                             
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 8235.7 {I10} from {+33}S(p,|g) and 8236.35 {I30} 
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 8248.3    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 8251.39   30 (2+)             0.10 KEV  1                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8254.30   30 2-,3-            0.70 KEV  7                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8260.12   34 4+               0.80 KEV  8                              
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 8259.0 {I10} from {+33}S(p,|g) and 8260.22 {I30} 
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
- 34CL cL T$from (p,p)                                                           
+ 34CL d                                                                         
  34CL  L 8265.56   30 2+,3+                                                 L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8271.58   30 0-               0.30 KEV  3                             ?
  34CLX L XREF=L(?)                                                              
+ 34CL d                                                                         
  34CL  L 8276.72   30 2-               2.20 KEV  22                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8280.3    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 8305.5    10 2,3                                                       
  34CLX L XREF=K                                                                 
  34CL cL J$spin=2,3 from |g(|q) in {+33}S(p,|g).                                
  34CL  G 8158.1      100       D+Q       0.27    18                             
+ 34CL d                                                                         
  34CL  L 8316.60   30 4+               2.0 KEV   2                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8317.7    4  1+,2+                                                     
  34CLX L XREF=KL                                                                
  34CL cL E$weighted average of 8319.1 {I10} from {+33}S(p,|g) and 8317.57 {I30} 
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
+ 34CL d                                                                         
  34CL  L 8322.91   30 1-,2-,3-,4-,5-                                        L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8330.19   30 1-,2-,3-,4-,5-                                        L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8337.6    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 8358.42   30 2+               1.50 KEV  15                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8361.8    10                                                           
  34CLX L XREF=K                                                                 
+ 34CL d                                                                         
  34CL  L 8372.5    10                                                           
  34CLX L XREF=J(8390*)K(*)                                                      
+ 34CL d                                                                         
  34CL  L 8376.18   30 2+               0.80 KEV  8                              
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8381.3    15 (2)-             0.30 KEV  3                              
  34CLX L XREF=J(8390*)K(*)L                                                     
  34CL cL J$other: L=3,5,6 from 0+ in {+32}S(|a,d) gives 2-,3-,4-,5,6,7+ for 8390
  34CL2cL {I20}.                                                                 
+ 34CL d                                                                         
  34CL  L 8386.5    15 3+,4+                                                     
  34CLX L XREF=J(8390*)K(*)L                                                     
+ 34CL d                                                                         
  34CL  L 8390.0    10                                                           
  34CLX L XREF=J(8390*)K(*)                                                      
+ 34CL d                                                                         
  34CL  L 8460.4    15 1+               0.80 KEV  8                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8468.2    15 2-               2.80 KEV  28                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8477.2    15 (2)+             1.90 KEV  19                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8485.9    15 1-               1.40 KEV  14                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8494.2    15 2+               1.50 KEV  15                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8494.7    15 2-               0.45 KEV  5                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8509.3    15 2+               25 KEV    5                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8537.6    15 3-               2.0 KEV   2                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8543.4    15 3-               2.0 KEV   2                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8548.1    15 1+               25 KEV    5                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8549.2    15 2-               3.0 KEV   3                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8563.4    15 4+               1.50 KEV  15                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8579.4    15 1+               3.10 KEV  31                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8587.1    15 4-               0.40 KEV  4                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8597.9    15 1+               3.0 KEV   3                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8601.8    15 2+               3.0 KEV   3                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8603.2    15 3-               0.20 KEV  2                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8610.5    15 3-               6.0 KEV   6                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8613.4    15 4-,5-                                                 L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8643.6    15 1-               0.60 KEV  6                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8647.5    15 2+               10.0 KEV  20                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8651.9    15 (1)+             1.0 KEV   1                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8655.7    15 (1)+             1.80 KEV  18                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8665.1    15 4-,5-                                                 L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8693.3    15 1+               0.50 KEV  5                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8697.2    15 2+               1.50 KEV  15                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8700.1    15 1-               1.50 KEV  15                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8706.4    15 1+               0.80 KEV  8                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8714.6    15 3+               4.0 KEV   4                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8733.2    15 3-               35 KEV    7                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8754.6    15 1-               0.70 KEV  7                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8756.6    15 1-               4.0 KEV   4                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8761.4    15 3+               1.60 KEV  16                         L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8779.4    15 3+               0.80 KEV  8                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8790.6    15 2-               6.0 KEV   6                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 8794.0    15 1-               0.20 KEV  2                          L   
  34CLX L XREF=L                                                                 
+ 34CL d                                                                         
  34CL  L 9392.7    11 9-               6.9 FS    LT                             
  34CLX L XREF=F                                                                 
  34CL cL T$lifetime |t<0.01 ps in {+27}Al({+12}C,|an|g) from 2014Bi03 with DSAM.
  34CL  G 4077      1 100       M2(+E3)   +0.2    5                              
+ 34CL d                                                                         
  34CL  L 10631.7   15 11+              28 FS     LT                             
  34CLX L XREF=F                                                                 
  34CL cL T$lifetime |t<0.04 ps in {+27}Al({+12}C,|an|g) from 2014Bi03 with DSAM.
