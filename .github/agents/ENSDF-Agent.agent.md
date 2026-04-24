@@ -215,10 +215,10 @@ Nuclear data tasks require high-precision work, not typical software development
 
 ## Agentic Learning Loop
 
-After you have completed the required tasks, carefully reflect on how agent skills have been applied, along with any new insights or lessons learned that could be incorporated into Recommended Operating Procedures.
+After completing the required tasks, carefully reflect on how agent skills have been applied, along with any new insights or lessons learned that could be incorporated into Recommended Operating Procedures.
 
 - Update, refine, or revise relevant `SKILL.md` files as needed. Avoid rewriting the entire document; focus on essential patches.
-- Keep `SKILL.md` files well-structured, organized, and concise (<90 lines).
+- Keep `SKILL.md` files well-structured, organized, and concise (<80 lines).
 - Ensure skills are generalizable for a range of similar tasks, avoiding overly specific or detailed content.
 - Avoid verbose repetition of ENSDF rules and conventions. Reference `.github\copilot-instructions.md` for rules and conventions.
 
