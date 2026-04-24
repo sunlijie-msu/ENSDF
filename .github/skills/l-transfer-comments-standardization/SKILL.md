@@ -28,8 +28,8 @@ Standardize L-transfer comments used in J$ lines for clarity and consistency.
 **Example:** `L=2 from 0+ in ({+3}He,|a).`
 
 ### Multiple L Values (e.g. Discrepancies)
-**Format:** `L=VALUE1 from INITIAL_JPI in REACTION1. Discrepancy: L=VALUE2 from INITIAL_JPI in REACTION2.`
-**Example:** `L=2 from 0+ in ({+3}He,|a). Discrepancy: L=3 from 0+ in (p,d).`
+**Format:** `L=VALUE1 from INITIAL_JPI in REACTION1. Other: L=VALUE2 from INITIAL_JPI in REACTION2.`
+**Example:** `L=2 from 0+ in ({+3}He,|a). Other: L=3 from 0+ in (p,d).`
 
 ### Complex Cases with Additional Info
 **Format:** `L=VALUE from INITIAL_JPI in REACTION. Additional info.`
