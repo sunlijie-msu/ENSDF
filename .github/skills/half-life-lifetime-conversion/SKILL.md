@@ -37,7 +37,10 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 
 ## Formatting
 
-- Choose a natural T-field unit by scaling between `FS`, `PS`, `NS`, `US`, ... so the stored value is not `>200`; if the converted value is `<0.2`, scale down when that yields a value `<=200` in the smaller unit.
+- Choose a natural T-field unit by scaling between `FS`, `PS`, `NS`, `US`, ... so the stored value is not `>100`; if the converted value is `<0.1`, scale down when that yields a value `<=100` in the smaller unit.
+- For example,
+  - `T{-1/2}=650 FS {I80}` should be converted to `T{-1/2}=0.65 PS {I8}`
+  - `T{-1/2}=250 PS {I50}` should be converted to `T{-1/2}=0.25 NS {I5}`
 - T field: cols 40–49, `VALUE UNIT`, left-justified.
 - DT field: cols 50–55, digits or `GT`/`LT`, left-justified.
 - After `ln(2)` conversion and unit selection, round the value and uncertainty together so DT is a valid 1- or 2-digit ENSDF last-digits field.
@@ -45,7 +48,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 - Do not introduce finer displayed precision than the source lifetime already has unless it is needed to avoid a materially distorted converted half-life.
 - If the source `|t` is quoted as an integer in `fs` and the converted half-life remains in `FS`, integer-fs display is usually preferred for numeric values, but do not force it for converted limits or any case where dropping the decimal would significantly change the converted bound.
 - Example: `|t<2 fs` → `T{-1/2}<1.4 FS`, not `1 FS`.
-- Example: `|t=649 fs {I190}` → `T{-1/2}=0.45 PS`, `DT=13`.
+- Example: `|t=649 fs {I190}` → `T{-1/2}=0.45 PS`, `DT=13`, not `T{-1/2}=0.447 PS {I132}`.
 
 ## Validation
 
