@@ -1,10 +1,9 @@
 ---
 name: half-life-lifetime-conversion
 description: >
-  Use this skill when updating L-record T (half-life) and DT (uncertainty) fields to match
-  the adopted lifetime values already verified in cL T$ comment lines. Transfers VALUE, UNIT,
-  and uncertainty from each T$ comment into the corresponding L-record T field (cols 40–49)
-  and DT field (cols 50–55). Applies to individual datasets and adopted ENSDF files.
+  Update L-record half-life value
+  T and uncertainty DT from adopted cL T$ lifetime values by converting |t to T{-1/2}
+  with ln(2), applying ENSDF uncertainty notation, unit scaling, and validation.
 argument-hint: "[ENSDF file path]"
 ---
 
@@ -12,62 +11,46 @@ argument-hint: "[ENSDF file path]"
 
 ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
 
-## Workflow
+## Recommended Operating Procedure
 
-1. Extract the adopted `|t` value from the first `|t=`, `|t>`, or `|t<` in the cL T$ comment.
-2. Convert lifetime to half-life with `T{-1/2}=|t|*ln(2)`.
-3. Format T/DT using ENSDF data-field uncertainty rules from `.github/copilot-instructions.md`.
-4. Edit one L record at a time and validate immediately.
+1. Read the adopted lifetime from the first `|t=`, `|t>`, or `|t<` in cL T$.
+2. Decode comment uncertainty (`{In}` or `{I+n-m}`) in value units.
+3. Convert with `T{-1/2}=|t|*ln(2)`; scale uncertainty by `ln(2)`.
+4. Choose a natural unit (`FS`, `PS`, `NS`, ...): keep stored value not `>100`; if converted value is `<0.1`, scale down when the smaller unit gives `<=100`.
+5. Round value/uncertainty together so DT is valid ENSDF data-field content.
+6. Update one L-record at a time, then validate immediately.
 
 ## Core Rule
 
-**cL T$ gives lifetime `|t`, but the L-record T field stores half-life.**
+`cL T$` stores lifetime (`|t`), but L-record `T` stores half-life (`T{-1/2}`).
 
-- Numeric value: `T{-1/2}=|t|*ln(2)`.
+- Numeric: `T{-1/2}=|t|*ln(2)`.
 - Symmetric uncertainty: `DT{-1/2}=D|t|*ln(2)`.
-- Limits keep their sense after scaling: `|t>...` → `T>...`, `|t<...` → `T<...`.
+- Limits preserve direction: `|t>...` -> `T>...`, `|t<...` -> `T<...`.
 
-## Comment Decoding
+## Precision Rules
 
-- Decode comment uncertainties in `{In}` notation before applying `ln(2)`.
-- Use the last-digits rule from `.github/copilot-instructions.md`.
-- Examples:
-  - `|t=3.0 fs {I25}` means `|t=3.0 fs`, `D|t=2.5 fs`.
-  - `|t=7.7 fs {I17}` means `D|t=1.7 fs`.
+See `.github/copilot-instructions.md` § ENSDF Uncertainty Notation Rules.
 
-## Formatting
+Follow uncertainty-in-last-digits notation.
+Round the T value and DT uncertainty together so DT is a valid 1- or 2-digit.
+Example: `|t=649 fs {I190}` → `T{-1/2}=0.45 PS`, `DT=13`.
 
-- Choose a natural T-field unit by scaling between `FS`, `PS`, `NS`, `US`, ... so the stored value is not `>100`; if the converted value is `<0.1`, scale down when that yields a value `<=100` in the smaller unit.
+- Choose a natural T-field unit by scaling between `FS`, `PS`, `NS`, `US`, etc. so the stored value is not `>100` or `<0.1`; if the converted value is `>100` or `<0.1`, scale up or down to the nearest appropriate unit.
 - For example,
   - `T{-1/2}=650 FS {I80}` should be converted to `T{-1/2}=0.65 PS {I8}`
-  - `T{-1/2}=250 PS {I50}` should be converted to `T{-1/2}=0.25 NS {I5}`
-- T field: cols 40–49, `VALUE UNIT`, left-justified.
-- DT field: cols 50–55, digits or `GT`/`LT`, left-justified.
-- After `ln(2)` conversion and unit selection, round the value and uncertainty together so DT is a valid 1- or 2-digit ENSDF last-digits field.
-- For GT/LT limits, convert the bound with `ln(2)` and preserve enough precision that rounding does not materially change the bound.
-- Do not introduce finer displayed precision than the source lifetime already has unless it is needed to avoid a materially distorted converted half-life.
-- If the source `|t` is quoted as an integer in `fs` and the converted half-life remains in `FS`, integer-fs display is usually preferred for numeric values, but do not force it for converted limits or any case where dropping the decimal would significantly change the converted bound.
-- Example: `|t<2 fs` → `T{-1/2}<1.4 FS`, not `1 FS`.
-- Example: `|t=649 fs {I190}` → `T{-1/2}=0.45 PS`, `DT=13`, not `T{-1/2}=0.447 PS {I132}`.
+  - `T{-1/2}=650 PS {I10}` should be converted to `T{-1/2}=0.650 NS {I10}`
+- Avoid introducing unjustified or misleading extra digits.
+- Do not over-truncate digits; keep physically faithful bounds.
+- Example: `|t<2 fs` → `T{-1/2}<1.4 FS`, not `T{-1/2}<1 FS`, which would change the original value by 40%.
 
 ## Validation
 
-After each edit:
-```
-python .github/scripts/ensdf_1line_ruler.py --line "<exact 80-char line>"
-```
+- Run a reproducible random spot-check focused on transformation correctness (`|t` -> `T{-1/2}`, decoded uncertainty -> `DT`).
+
+After each edit: `python .github/scripts/ensdf_1line_ruler.py --line "<exact 80-char line>"`
 
 After all edits:
-```
-python .github/scripts/column_calibrate.py "file.ens"
-python .github/scripts/check_gamma_ordering.py "file.ens"
-```
+- `python .github/scripts/column_calibrate.py "file.ens"`
+- `python .github/scripts/check_gamma_ordering.py "file.ens"`
 
-## Lessons
-
-- Do **not** copy lifetime directly into the T field; always apply `ln(2)` first.
-- Do **not** treat comment `{In}` as a literal uncertainty in units; decode it from the value’s decimal places first.
-- Do **not** let `ln(2)` create a misleading extra decimal place in the same unit when the source value was quoted as an integer.
-- Do **not** remove a decimal place if that would materially change the converted value or limit.
-- Random spot-checks must test the transformation logic (`|t` → `T{-1/2}` and decoded uncertainty → DT), not just text transcription.
-- Skip L records with no following cL T$ comment.
