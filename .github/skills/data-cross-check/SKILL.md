@@ -36,12 +36,11 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
   [ ] completeness (missing/extra)
 
 ### Special Handling
-  [ ] [describe non-standard cases]
+- `[ ]` [describe non-standard cases]
 
-## Workflow
+## Recommended Operating Procedure:
 
 ```
-Recommended Operating Procedure:
 - [ ] 1. Confirm Task Configuration
 - [ ] 2. Carefully parse and extract data needed from source and/or target within scope
 - [ ] 3. Leverage coding, scripts, and programming tools when necessary to effectively deliver your data tasks.

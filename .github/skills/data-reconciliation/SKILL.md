@@ -18,6 +18,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 ### Field Mapping *(source → ENS)*
 - `[Data A]` → `[record type]` `[field name]`
 - `[Data B]` → `[record type]` `[field name]`
+- `[Data C]` → `[record type]` `[comment]`
 
 ### Matching
 - L-records: `[ ]` exact E  `[ ]` E within ±[N] keV
@@ -34,10 +35,9 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 - `[ ]` [describe non-standard cases]
 
 
-## Workflow
+## Recommended Operating Procedure:
 
 ```
-Recommended Operating Procedure:
 - [ ] 1. Task Customization & Configuration confirmed
 - [ ] 2. Source data parsed and mapped
 - [ ] 3. Target fields to keep captured
@@ -52,7 +52,7 @@ Recommended Operating Procedure:
 
 ### Step 1 — Confirm Task Configuration
 
-Resolve any ambiguity in one focused question. Do not proceed with an incomplete operation list or uncertain matching strategy.
+Resolve any ambiguity in one focused question. Do not proceed with an incomplete operation list or ambiguous matching strategy.
 
 ### Step 2 — Parse Source Data
 
