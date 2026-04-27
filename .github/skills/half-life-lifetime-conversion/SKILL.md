@@ -52,3 +52,9 @@ See `.github/copilot-instructions.md` § ENSDF Uncertainty Notation Rules.
   - `python .github/scripts/column_calibrate.py "file.ens"`
   - `python .github/scripts/check_gamma_ordering.py "file.ens"`
 
+## Audit Addendum (Recommended)
+
+- Treat `cL`, `2cL`, `3cL`, ... as one inseparable comment block before extracting lifetimes or averaging inputs.
+- For comments containing `weighted average of` or `unweighted average of`, verify the adopted lifetime using:
+  - `python .github/scripts/Java_Average.py --comment "<full cL T block text>"`
+

@@ -397,31 +397,51 @@ def count_max_decimals(data: List[Tuple[float, float, float]]) -> int:
 
 
 def decimal_places(s: str) -> int:
-    """Return the number of decimal places in a numeric string like '19.7' or '22'."""
-    s = s.strip()
-    if '.' in s:
-        stripped = s.rstrip('0')
-        if '.' in stripped:
-            return len(stripped.split('.')[-1])
-        return 0
+    """Return literal decimal places in the mantissa of a numeric string (preserve trailing zeros)."""
+    s = s.strip().upper()
+    mantissa = s.split('E', 1)[0] if 'E' in s else s
+    if '.' in mantissa:
+        return len(mantissa.split('.', 1)[1])
     return 0
+
+
+def uncertainty_scale_from_value_str(value_str: str) -> float:
+    """
+    Scale for ENSDF {In} uncertainties from the literal value token.
+
+    The uncertainty digits are in the last shown digit of the value token,
+    so scale = 10^(exp - literal_decimal_places_in_mantissa).
+    Examples:
+      19.7   -> 10^-1
+      3.0    -> 10^-1
+      22     -> 10^0
+      3.3E-4 -> 10^(-4-1) = 10^-5
+    """
+    s = value_str.strip().upper()
+    exp = 0
+    if 'E' in s:
+        mantissa, exp_str = s.split('E', 1)
+        exp = int(exp_str)
+    else:
+        mantissa = s
+    ndp = len(mantissa.split('.', 1)[1]) if '.' in mantissa else 0
+    return 10.0 ** (exp - ndp)
 
 
 def parse_ensdf_unc(value_str: str, unc_str: str) -> float:
     """
     Convert ENSDF {In} or {I+n-m} uncertainty to absolute float.
 
-    Rule: the integer n (or m) represents n units in the last decimal place of value_str.
-    - {I13} with value '19.7' (1 decimal) -> 13 * 10^-1 = 1.3
-    - {I4}  with value '22'   (0 decimals) -> 4  * 10^0  = 4.0
-    - {I14} with value '19.4' (1 decimal)  -> 14 * 10^-1 = 1.4
-    - {I7}  with value '1.23' (2 decimals) -> 7  * 10^-2 = 0.07
+    Rule: the integer n (or m) represents n units in the last displayed digit of value_str.
+    - {I13} with value '19.7'   -> 13 * 10^-1 = 1.3
+    - {I25} with value '3.0'    -> 25 * 10^-1 = 2.5
+    - {I4}  with value '22'     -> 4  * 10^0  = 4.0
+    - {I12} with value '3.3E-4' -> 12 * 10^-5 = 1.2E-4
 
     For asymmetric {I+n-m}: average of upper and lower (symmetric treatment for averaging).
     Returns the uncertainty as a float.
     """
-    ndp = decimal_places(value_str)
-    scale = 10.0 ** (-ndp)
+    scale = uncertainty_scale_from_value_str(value_str)
 
     unc_str = unc_str.strip()
     if '+' in unc_str and '-' in unc_str:
