@@ -26,7 +26,15 @@ from typing import Iterable
 
 
 def is_true_g_record(line80: str) -> bool:
-    return len(line80) == 80 and line80[6] == " " and line80[7] == "G" and line80[8] == " "
+    # col 6 (idx 5) = CONT: must be blank for primary records; non-blank means continuation record
+    # col 7 (idx 6) = space; col 8 (idx 7) = record type 'G'; col 9 (idx 8) = space
+    return (
+        len(line80) == 80
+        and line80[5] == " "   # CONT field blank = primary record, not continuation
+        and line80[6] == " "
+        and line80[7] == "G"
+        and line80[8] == " "
+    )
 
 
 def resolve_input(user_arg: str, workspace_root: Path) -> Path:
@@ -62,8 +70,8 @@ def ensure_g_lines_80(lines: Iterable[str], src: Path) -> None:
         core = line[:-1] if line.endswith("\n") else line
         if core == "" or len(core) < 9:
             continue
-        # Enforce strict 80-column length only for true G-records.
-        if core[6] == " " and core[7] == "G" and core[8] == " " and len(core) != 80:
+        # Enforce strict 80-column length only for primary G-records (CONT field blank at idx 5).
+        if core[5] == " " and core[6] == " " and core[7] == "G" and core[8] == " " and len(core) != 80:
             bad.append((i, len(core)))
             if len(bad) >= 10:
                 break

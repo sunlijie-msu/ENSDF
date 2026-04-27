@@ -665,8 +665,11 @@ def validate_mul_field(filename):
     
     for line_num, line_content in enumerate(lines, 1):
         
-        # Only check G-records for MUL field validation
-        if len(line_content) < 10 or ' G ' not in line_content[6:10]:
+        # Only check primary G-records for MUL field validation
+        # Must have: CONT field blank (idx 5), col 7 blank (idx 6), 'G' at col 8 (idx 7), col 9 blank (idx 8)
+        if len(line_content) < 10:
+            continue
+        if line_content[5] != ' ' or line_content[6] != ' ' or line_content[7] != 'G' or line_content[8] != ' ':
             continue
         
         # Skip comment lines
