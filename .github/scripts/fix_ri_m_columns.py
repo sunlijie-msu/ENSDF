@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-Fix ENSDF G-record RI and M left-shift issues only.
+Fix ENSDF G-record RI and M left-shift issues only. Shifts RI/M columns right by one if col22/col32 are non-space, but only on true G-records with strict 80-character length.
 
 Usage:
   python fix_ri_m_columns.py Cl34_adopted.ens
   python fix_ri_m_columns.py A34/Cl34/new/Cl34_adopted.ens
 
 Behavior:
+- Edits the input file IN-PLACE (no separate output file created).
 - Accepts file path or bare filename.
 - If bare filename is not found directly, searches workspace recursively.
 - Requires true G-record lines to be exactly 80 characters (excluding newline).
@@ -15,7 +16,6 @@ Behavior:
   1) RI: col22->col23 shift (indices 21:28 -> 22:29)
   2) M:  col32->col33 shift (indices 31:40 -> 32:41)
 - DRI and all non-target columns remain byte-identical.
-- Writes output to D:/X/ND/Files/<stem>.out
 """
 
 from __future__ import annotations
@@ -23,8 +23,6 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 from typing import Iterable
-
-OUT_DIR = Path(r"D:/X/ND/Files")
 
 
 def is_true_g_record(line80: str) -> bool:
@@ -142,23 +140,20 @@ def process(src: Path) -> Path:
 
         out_lines.append(fixed + nl)
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    out_path = OUT_DIR / f"{src.stem}.out"
-    out_path.write_text("".join(out_lines), encoding="utf-8", newline="")
+    src.write_text("".join(out_lines), encoding="utf-8", newline="")
 
-    print(f"Input:  {src}")
-    print(f"Output: {out_path}")
+    print(f"File:              {src}")
     print(f"G-records scanned: {g_scanned}")
-    print(f"Lines changed: {changed_lines}")
+    print(f"Lines changed:     {changed_lines}")
     print(f"RI shifts applied: {ri_count}")
-    print(f"M shifts applied: {m_count}")
+    print(f"M shifts applied:  {m_count}")
 
-    return out_path
+    return src
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Fix RI/M column left-shifts on ENSDF G-records and write .out file."
+        description="Fix RI/M column left-shifts on ENSDF G-records in-place."
     )
     parser.add_argument("input", help="Input .ens file path or filename")
     args = parser.parse_args()

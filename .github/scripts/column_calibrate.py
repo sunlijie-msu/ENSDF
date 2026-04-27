@@ -17,7 +17,7 @@ ENSDF L-Record Field Positions (Mandatory):
 
 Usage: 
   python column_calibrate.py "filename.ens"           # Complete ENSDF validation
-  python column_calibrate.py "filename.ens" --fix     # Validate and fix line lengths  
+  python column_calibrate.py "filename.ens" --fix     # Pads/trims data records to 80-character length
 
 ALWAYS CHECKS:
 - Line length compliance (80 characters for ALL record types: H, L, G, E, B, DP)
