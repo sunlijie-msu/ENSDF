@@ -82,15 +82,17 @@ def fix_one_line(line80: str) -> tuple[str, bool, bool]:
     ri_fixed = False
     m_fixed = False
 
-    # RI fix (only if content is incorrectly at col22/index21)
-    if chars[21] != " " and any(c != " " for c in chars[22:29]):
-        moved = chars[21:28]  # cols 22-28
+    # RI fix: col 22 (idx 21) must always be a readability space in valid G-records.
+    # If it is non-space, the RI value is shifted one column left and must be corrected.
+    if chars[21] != " ":
+        moved = chars[21:28]  # 7 chars starting at wrong col 22
         chars[21] = " "
-        chars[22:29] = moved   # cols 23-29
+        chars[22:29] = moved   # shift right to correct cols 23-29
         ri_fixed = True
 
-    # M fix (only if content is incorrectly at col32/index31)
-    if chars[31] != " " and any(c != " " for c in chars[32:41]):
+    # M fix: col 32 (idx 31) must always be a readability space in valid G-records.
+    # If it is non-space, the M value is shifted one column left and must be corrected.
+    if chars[31] != " ":
         moved = chars[31:40]  # cols 32-40
         chars[31] = " "
         chars[32:41] = moved   # cols 33-41

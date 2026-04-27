@@ -71,7 +71,12 @@ def is_data_record_line(line):
     """
     if len(line) < 8:
         return False
-    
+
+    # Exclude comment lines: col 7 (index 6) = lowercase 'c' followed by record-type letter.
+    # Example: ' 34CL cG ...' has line[6]='c', line[7]='G'. Must NOT be padded.
+    if line[6] == 'c' and len(line) > 7 and line[7].isalpha() and line[7].isupper():
+        return False
+
     # Check for record types in column 8 (0-based index 7)
     # H-records have H at column 8 (index 7)
     # L/G/E/B records have those letters at column 8
