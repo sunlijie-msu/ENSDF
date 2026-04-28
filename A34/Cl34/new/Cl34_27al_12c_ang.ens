@@ -77,16 +77,16 @@
  34CL cG $R{-DCO}(Q)=0.48 {I4}, POL=-0.10 {I3}                                  
  34CL  L 1230.2    5  2+                                                        
  34CL  G 564       1                                            36        5     
- 34CL  G 769       1  19.4   10 M1+E2    +0.04   3              32        5     
+ 34CL  G 769       1  19.4   10 D+Q      +0.04   3              32        5     
  34CL cG $R{-DCO}(D)=1.13 {I9}                                                  
  34CL  G 1084      1                                            31        4     
  34CL  L 1887.2    6  2+                                                        
- 34CL  G 1426      1  8.5    5  M1+E2    -0.11   5              48        4     
+ 34CL  G 1426      1  8.5    5  D+Q      -0.11   5              48        4     
  34CL cG $R{-DCO}(D)=0.71 {I11}                                                 
  34CL  G 1741      1                                            52        5     
  34CL  L 2158.2    5  2+                                                        
  34CL  G 928       1                                            8.6       11    
- 34CL  G 1697      1  22.3   11 M1+E2    -0.10   2              62        4     
+ 34CL  G 1697      1  22.3   11 D+Q      -0.10   2              62        4     
  34CL cG $R{-DCO}(D)=0.74 {I6}                                                  
  34CL  G 2012      1                                            10.2      11    
  34CL  G 2158      1                                            19.1      22    
@@ -99,12 +99,13 @@
  34CL cG $Note that the branching ratio of 44.1 {I46} in Table II of 2014Bi03   
  34CL2cG differs from 4.9 {I2} deduced from the relative intensity in Table I of
  34CL3cG 2014Bi03.                                                              
- 34CL cG $R{-DCO}(Q)=0.51 {I8}, POL=+0.04 {I1}                                  
+ 34CL cG $R{-DCO}(Q)=0.51 {I8}, POL=0.04 {I1}. 2014Bi03 calculates B(M1) for    
+ 34CL2cG this |g, so POL is likely missing a negative sign.                     
  34CL  L 2375.8    5  4+                                                        
  34CL  G 2229      1  40.9   21 M1+E2    +0.4    1                              
  34CL cG $R{-DCO}(Q)=0.90 {I9}, POL=-0.09 {I3}                                  
  34CL  L 2611.3    5  3+                                                        
- 34CL  G 453       1  7.9    4  M1+E2    +0.11   6              19        13    
+ 34CL  G 453       1  7.9    4  D+Q      +0.11   6              19        13    
  34CL cG $R{-DCO}(D)=1.30 {I17}                                                 
  34CL  G 1381      1                                            28.0      25    
  34CL  G 1945      1                                            17.0      16    
