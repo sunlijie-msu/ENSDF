@@ -82,3 +82,4 @@ cG E$ → cG RI$ → cG M$ → cG MR$ → other identifiers
 - Comment ordering follows ENSDF sequence rules.
 
 For general comment ordering at the beginning of Adopted files, see `copilot-instructions.md` Section 6.
+
