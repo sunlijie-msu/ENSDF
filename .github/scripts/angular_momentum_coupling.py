@@ -1,3 +1,4 @@
+import argparse
 from fractions import Fraction
 
 
@@ -36,7 +37,7 @@ def calc(target, particle):
     particle : str
         Transferred particle in s^π format (e.g., "1/2+", "0+", "1-")
         where s is intrinsic particle spin and π is intrinsic particle parity
-    
+
     Selection Rules:
     1. Channel Spin S: |J_target - s_particle| <= S <= J_target + s_particle
     2. Final Spin J: |S - L| <= J <= S + L
@@ -106,12 +107,27 @@ def calc(target, particle):
         print("-" * 70)
 
 if __name__ == "__main__":
-    print("Interactive mode: enter target and particle spin-parity.")
-    print("Format: Jπ, such as 3/2-, 1/2+, 0+, 1-")
-    print("")
+    parser = argparse.ArgumentParser(
+        description="Compute allowed final Jπ from angular momentum coupling.",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="Examples:\n"
+               "  python angular_momentum_coupling.py 0+ 1+\n"
+               "  python angular_momentum_coupling.py 3/2- 1/2+\n"
+               "  python angular_momentum_coupling.py  (interactive mode)"
+    )
+    parser.add_argument("target", nargs="?", metavar="TARGET",
+                        help="Target nucleus spin-parity, e.g. 0+ or 3/2-")
+    parser.add_argument("particle", nargs="?", metavar="PARTICLE",
+                        help="Particle intrinsic spin-parity, e.g. 1+ or 1/2+")
+    args = parser.parse_args()
 
-    _, _, target_text = prompt_spin_parity("Target Jπ", "Target")
-    _, _, particle_text = prompt_spin_parity("Particle Jπ", "Particle")
-    print("")
-
-    calc(target_text, particle_text)
+    if args.target and args.particle:
+        calc(args.target, args.particle)
+    else:
+        print("Interactive mode: enter target and particle spin-parity.")
+        print("Format: Jπ, such as 3/2-, 1/2+, 0+, 1-")
+        print("")
+        _, _, target_text = prompt_spin_parity("Target Jπ", "Target")
+        _, _, particle_text = prompt_spin_parity("Particle Jπ", "Particle")
+        print("")
+        calc(target_text, particle_text)
