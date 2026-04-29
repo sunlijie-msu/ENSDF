@@ -19,24 +19,21 @@ Standardize only the L-transfer portion of cL J$ comments. Preserve all other J$
 
 ### One L Value
 **Format:** `L=VALUE from INITIAL_JPI in REACTION.`
-**Example:** `L=2 from 0+ in ({+3}He,|a).`
+**Example:** `L=2 from 0+ in ({+3}He,|a) gives 3/2+,5/2+.`
 
 ### One L Value in Multiple Reactions
 **Format:** `L=VALUE from INITIAL_JPI in REACTION1, REACTION2, and REACTION3.`
-**Example:** `L=2 from 0+ in (p,d), (d,t), and ({+3}He,|a).`
+**Example:** `L=2 from 0+ in (p,d), (d,t), and ({+3}He,|a) gives 3/2+,5/2+.`
 
 ### Different L Values Across Reactions
 **Format:** `L=VALUE1 from INITIAL_JPI in REACTION1. Other: L=VALUE2 from INITIAL_JPI in REACTION2.`
 **Example:** `L=2 from 0+ in ({+3}He,|a). Other: L=3 from 0+ in (p,d).`
 
-### Ambiguous Multi-L in One Reaction
+### Multiple L Values in One Reaction
 **Preferred format:** `L=VALUE1+VALUE2 from INITIAL_JPI in REACTION: L=VALUE1 gives JPI_LIST1; L=VALUE2 gives JPI_LIST2.`
 
 **Example:** `L=0+2 from 3/2+ in ({+3}He,d): L=0 gives 1+,2+; L=2 gives 0+,1+,2+,3+,4+.`
 
-### Cases with Additional Info
-**Format:** `L=VALUE from INITIAL_JPI in REACTION. Additional info.`
-**Example:** `L=2 from 0+ in (pol p,d) and L+1/2 transfer from analyzing power. L+1/2 transfer from J-dependence in (p,d).`
 
 ## Rules
 
@@ -47,5 +44,10 @@ Standardize only the L-transfer portion of cL J$ comments. Preserve all other J$
 - **Initial State:** Always specify "from INITIAL_JPI" (e.g., from 0+).
 - **Reaction List:** Comma-separated list with "and" before the last item.
 - **Oxford Comma:** Use the Oxford comma.
-- **Max Line Length:** Keep within 80 columns. If needed, wrap to continuation lines (`2cL`, etc.).
+- **Max Line Length:** No need to wrap lines. Users will wrap manually.
 - **Validation Shortcut:** Skip ruler, column validation, and gamma-ordering checks. This skill applies to comment-only edits.
+- **XREF → dataset:** Each XREF letter in an adopted L-record identifies a reaction dataset. L-transfers measured in that dataset are valid Jπ constraints for the level.
+
+## Task Configuration
+- **Source:** Individual reaction dataset `.ens` files.
+- **Target:** Adopted `.ens` file.
