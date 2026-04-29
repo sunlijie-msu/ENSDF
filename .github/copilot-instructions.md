@@ -153,7 +153,7 @@ Example:
 | J | 23–39 | Spin-parity. |
 | T | 40–49 | Half-life with units (e.g., MEV, FS, PS, S, H, D). |
 | DT | 50–55 | Half-life uncertainty. |
-| L | 56–64 | Angular momentum transfer. |
+| L | 56–64 | Angular momentum transfer (L-transfer). |
 | S | 65–74 | Spectroscopic strength. |
 | DS | 75–76 | Uncertainty in S. |
 | C | 77 | Comment flag. |
