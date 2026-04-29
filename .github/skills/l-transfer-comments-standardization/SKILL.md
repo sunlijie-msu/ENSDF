@@ -1,10 +1,7 @@
 ---
 name: l-transfer-comments-standardization
 description: >
-  Standardizes L-transfer phrases in ENSDF cL J$ comments. Use when converting
-  legacy notation, resolving cross-reaction discrepancies, or deducing Jπ from
-  L-transfers in XREF-identified reaction datasets using angular momentum
-  coupling. Comment-only workflow; no ruler or column validation required.
+  Standardizes L-transfer phrases in ENSDF cL J$ comments. Use when deducing Jπ from L-transfers in XREF-identified reaction datasets using angular momentum coupling rules. Comment-only workflow; no ruler or column validation required.
 argument-hint: [ENSDF file or level energy]
 ---
 
