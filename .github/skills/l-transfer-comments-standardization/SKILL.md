@@ -29,7 +29,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 - **Keep** all non-L-transfer J$ arguments unchanged
 
 ## Purpose
-Standardize only the L-transfer portion of cL J$ comments. Preserve all other J$ arguments exactly.
+Standardize only the L-transfer portion of cL J$ comments. Preserve all other J$ arguments exactly. Preserve all other existing comments.
 
 ## XREF → Jπ Deduction Workflow
 
@@ -56,5 +56,23 @@ Example: `L=2 from 0+ in ({+3}He,|a) gives 3/2+,5/2+. L=3 from 0+ in (p,d) gives
 Do not collapse L=V1+V2 into one Jπ list; use separate `gives` clauses.
 `L=V1+V2 from INITIAL_JPI in REACTION: L=V1 gives JPI_LIST1; L=V2 gives JPI_LIST2.`
 Example: `L=0+2 from 3/2+ in ({+3}He,d): L=0 gives 1+,2+; L=2 gives 0+,1+,2+,3+,4+.`
+
+### Off-Energy ("Other") Dataset Level Notes
+Existing comments by users may include `for E_dataset {IU}` appended directly to the `gives` clause. Do not remove the energy information.
+Correct: `L=0+2 from 0+ in {+36}Ar(d,|a),(pol d,|a): L=0 gives 1+; L=2 gives 1+,2+,3+ for 2382 {I20}.`
+
+### Period Separator Rule
+Each independent Jπ argument must end with a period (.). Arguments from different reactions or evidence types are separated by periods, not semicolons.
+Correct: `L=2 from 0+ in R1 gives 1+,2+,3+. L=4 from 0+ in R2 gives 3+,4+,5+.`
+
+### Analyzing Power (Polarized Beam) Spin Constraint
+The analyzing power (L+1 or L-1 transfer) from polarized beam data constrains the final Jπ independently of the unpolarized L-transfer. NEVER remove or merge this argument. It is a distinct physics constraint with its own sentence.
+Example: `L=2 from 0+ in {+36}Ar(d,|a),(pol d,|a) and L+1 transfer from analyzing power gives 3+.`
+
+### XREF → Source L-Field Cross-Check (Mandatory)
+Before writing any L-transfer comment, ALWAYS read the actual L-field (cols 56–64) of the matched L-record in the source dataset. NEVER use L values from old adopted comment text as a proxy. Old comments may be wrong.
+
+### Completeness Check (Mandatory)
+For each adopted level, examine ALL non-asterisk XREF letters. Every letter with a non-blank, non-asterisk L-field in the source dataset must have a corresponding clause in the adopted cL J$ comment.
 
 *Comment-only edits: skip ruler, column, and ordering validation.*
