@@ -22,6 +22,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 
 ### Matching
 - L-records: `[ ]` exact E  `[ ]` E within ±[N] keV  `[ ]` XREF letter → dataset
+  If an XREF letter is followed by asterisk (*), it is usually not considered for Jπ assignment.
 
 ### Operations
 - **Write/Update** cL J$ L-transfer phrase in adopted target
@@ -47,14 +48,9 @@ Always specify "from INITIAL_JPI" (e.g., from 3/2+). Use Oxford comma in reactio
 `L=VALUE from INITIAL_JPI in REACTION gives JPI_LIST.`
 Example: `L=2 from 0+ in ({+3}He,|a) gives 3/2+,5/2+.`
 
-### One L Value, Multiple Reactions
-`L=VALUE from INITIAL_JPI in R1, R2, and R3 gives JPI_LIST.`
-Example: `L=2 from 0+ in (p,d), (d,t), and ({+3}He,|a) gives 3/2+,5/2+.`
-
 ### Different L Values Across Reactions
-Use `Other:` only when different reactions give different Jπ values.
-`L=V1 from INITIAL_JPI in R1 gives LIST1. Other: L=V2 from INITIAL_JPI in R2 gives LIST2.`
-Example: `L=2 from 0+ in ({+3}He,|a) gives 3/2+,5/2+. Other: L=3 from 0+ in (p,d) gives 5/2-,7/2-.`
+`L=V1 from INITIAL_JPI in R1 gives LIST1. L=V2 from INITIAL_JPI in R2 gives LIST2.`
+Example: `L=2 from 0+ in ({+3}He,|a) gives 3/2+,5/2+. L=3 from 0+ in (p,d) gives 5/2-,7/2-.`
 
 ### Multiple L Values in One Reaction
 Do not collapse L=V1+V2 into one Jπ list; use separate `gives` clauses.
