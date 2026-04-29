@@ -1,10 +1,10 @@
 ---
 name: l-transfer-comments-standardization
 description: >
-  Standardizes L-transfer phrases in ENSDF cL J$ comments when converting
-  legacy notation, cross-reaction discrepancies, or ambiguous same-reaction
-  notation. Preserves non-L-transfer J$ arguments and uses the comment-only
-  workflow without ruler or column validation.
+  Standardizes L-transfer phrases in ENSDF cL J$ comments. Use when converting
+  legacy notation, resolving cross-reaction discrepancies, or deducing Jπ from
+  L-transfers in XREF-identified reaction datasets using angular momentum
+  coupling. Comment-only workflow; no ruler or column validation required.
 argument-hint: [ENSDF file or level energy]
 ---
 
@@ -12,42 +12,53 @@ argument-hint: [ENSDF file or level energy]
 
 ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
 
+## Task Customization & Configuration
+
+> Fill in before starting task. Update as needed.
+
+### Files
+- Source: `[path to reaction dataset .ens file(s)]`
+- Target: `[path to adopted .ens file]`
+
+### Matching
+- L-records: `[ ]` exact E  `[ ]` E within ±[N] keV  `[ ]` XREF letter → dataset
+
+### Operations
+- **Write/Update** cL J$ L-transfer phrase in adopted target
+- **Keep** all non-L-transfer J$ arguments unchanged
+
 ## Purpose
 Standardize only the L-transfer portion of cL J$ comments. Preserve all other J$ arguments exactly.
 
+## XREF → Jπ Deduction Workflow
+
+Each XREF letter in an adopted L-record maps to a source reaction dataset. L-transfers from that dataset constrain final-state Jπ. To compute `gives JPI_LIST`:
+
+1. Map the XREF letter to its reaction dataset; read L from cols 56-64 of the matched level.
+2. Verify the `target J^π` and `s_particle^π` for the reaction type in `.github/docs/angular_momentum_coupling.md` §6.
+3. Run `python .github/scripts/angular_momentum_coupling.py`; enter target J^π and particle s^π.
+4. Read the allowed Jπ list for the measured L value and write to the comment.
+
 ## Standard Formats
 
-### One L Value
-**Format:** `L=VALUE from INITIAL_JPI in REACTION.`
-**Example:** `L=2 from 0+ in ({+3}He,|a) gives 3/2+,5/2+.`
+Always specify "from INITIAL_JPI" (e.g., from 3/2+). Use Oxford comma in reaction lists.
 
-### One L Value in Multiple Reactions
-**Format:** `L=VALUE from INITIAL_JPI in REACTION1, REACTION2, and REACTION3.`
-**Example:** `L=2 from 0+ in (p,d), (d,t), and ({+3}He,|a) gives 3/2+,5/2+.`
+### One L Value
+`L=VALUE from INITIAL_JPI in REACTION gives JPI_LIST.`
+Example: `L=2 from 0+ in ({+3}He,|a) gives 3/2+,5/2+.`
+
+### One L Value, Multiple Reactions
+`L=VALUE from INITIAL_JPI in R1, R2, and R3 gives JPI_LIST.`
+Example: `L=2 from 0+ in (p,d), (d,t), and ({+3}He,|a) gives 3/2+,5/2+.`
 
 ### Different L Values Across Reactions
-**Format:** `L=VALUE1 from INITIAL_JPI in REACTION1. Other: L=VALUE2 from INITIAL_JPI in REACTION2.`
-**Example:** `L=2 from 0+ in ({+3}He,|a). Other: L=3 from 0+ in (p,d).`
+Use `Other:` only when different reactions give different Jπ values.
+`L=V1 from INITIAL_JPI in R1 gives LIST1. Other: L=V2 from INITIAL_JPI in R2 gives LIST2.`
+Example: `L=2 from 0+ in ({+3}He,|a) gives 3/2+,5/2+. Other: L=3 from 0+ in (p,d) gives 5/2-,7/2-.`
 
 ### Multiple L Values in One Reaction
-**Preferred format:** `L=VALUE1+VALUE2 from INITIAL_JPI in REACTION: L=VALUE1 gives JPI_LIST1; L=VALUE2 gives JPI_LIST2.`
+Do not collapse L=V1+V2 into one Jπ list; use separate `gives` clauses.
+`L=V1+V2 from INITIAL_JPI in REACTION: L=V1 gives JPI_LIST1; L=V2 gives JPI_LIST2.`
+Example: `L=0+2 from 3/2+ in ({+3}He,d): L=0 gives 1+,2+; L=2 gives 0+,1+,2+,3+,4+.`
 
-**Example:** `L=0+2 from 3/2+ in ({+3}He,d): L=0 gives 1+,2+; L=2 gives 0+,1+,2+,3+,4+.`
-
-
-## Rules
-
-- **Preservation:** Standardize only the L-transfer phrase. Keep all other J$ text, punctuation, and ordering unchanged.
-- **Uniformity:** Convert `L(p,d)=L(d,t)=2` to `L=2 from INITIAL_JPI in (p,d) and (d,t).`
-- **Cross-reaction rule:** Use `Other:` only when different reactions report different L values.
-- **Same-reaction ambiguity rule:** Do not collapse `L=1+3` or `L=0+2` into one combined Jπ list unless the source explicitly states an AND meaning. Use separate `gives` clauses.
-- **Initial State:** Always specify "from INITIAL_JPI" (e.g., from 0+).
-- **Reaction List:** Comma-separated list with "and" before the last item.
-- **Oxford Comma:** Use the Oxford comma.
-- **Max Line Length:** No need to wrap lines. Users will wrap manually.
-- **Validation Shortcut:** Skip ruler, column validation, and gamma-ordering checks. This skill applies to comment-only edits.
-- **XREF → dataset:** Each XREF letter in an adopted L-record identifies a reaction dataset. L-transfers measured in that dataset are valid Jπ constraints for the level.
-
-## Task Configuration
-- **Source:** Individual reaction dataset `.ens` files.
-- **Target:** Adopted `.ens` file.
+*Comment-only edits: skip ruler, column, and ordering validation.*
