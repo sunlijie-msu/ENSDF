@@ -104,7 +104,7 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 *   If level scheme indicates $|J_i - J_f| = 1$ and $\delta$ is given, assign D+Q in the M field.
 *   If level scheme indicates $|J_i - J_f| = 2$ and $\delta$ is given, assign Q+O in the M field.
 
-### If $R_{DCO}$ is Far from Any Expected Values or in the Middle of two Expected Values
+### If $R_{DCO}$ is in the Middle of two Expected Values or Inconsistent with any Expected Values
 
 *   If level scheme indicates $|J_i - J_f| = 0$ or $|J_i - J_f| = 1$ and $\delta$ is given, assign D+Q.
 *   If level scheme indicates $|J_i - J_f| = 2$ and $\delta$ is given, assign Q+O.
