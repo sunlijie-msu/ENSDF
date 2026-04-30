@@ -99,12 +99,12 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 
 *   The transition is stretched quadrupole ($\Delta J = 2$) dominant.
 *   If level scheme indicates $|J_i - J_f| = 2$ and $\delta$ is not given, assign Q ($\Delta J = 2$) in the M field.
-*   If level scheme indicates $J_i = J_f$ and $\delta$ is not given, assign D in the M field and note consistent with $\Delta J = 0$ in the cG comment.
-*   If level scheme indicates $J_i = J_f$ and $\delta$ is given, assign D+Q in the M field and note consistent with $\Delta J = 0$ in the cG comment.
+*   If level scheme indicates $J_i = J_f$ and $\delta$ is not given, assign D in the M field and note consistent with |DJ=0 right after the DCO value in the cG comment.
+*   If level scheme indicates $J_i = J_f$ and $\delta$ is given, assign D+Q in the M field and note consistent with |DJ=0 right after the DCO value in the cG comment.
 *   If level scheme indicates $|J_i - J_f| = 1$ and $\delta$ is given, assign D+Q in the M field.
 *   If level scheme indicates $|J_i - J_f| = 2$ and $\delta$ is given, assign Q+O in the M field.
 
-### If $R_{DCO}$ is Far from Any Expected Values
+### If $R_{DCO}$ is Far from Any Expected Values or in the Middle of two Expected Values
 
 *   If level scheme indicates $|J_i - J_f| = 0$ or $|J_i - J_f| = 1$ and $\delta$ is given, assign D+Q.
 *   If level scheme indicates $|J_i - J_f| = 2$ and $\delta$ is given, assign Q+O.
