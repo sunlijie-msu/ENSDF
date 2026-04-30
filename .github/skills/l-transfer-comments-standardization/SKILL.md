@@ -33,7 +33,7 @@ Standardize only the L-transfer portion of cL J$ comments. Preserve all other J$
 2. Read the L-transfer field (cols 56–64) from the matched source L-record. **Never** use old adopted comment text as the L value source.
 3. Run `python .github/scripts/angular_momentum_coupling.py Jπ_target Jπ_particle` to compute allowed Jπ for each L value.
 4. Write standardized cL J$ comment, preserving all non-L-transfer arguments exactly.
-5. **Completeness:** For each adopted level, user-specified non-asterisk XREF letter with a non-blank L-field must appear in the cL J$ comment.
+5. **Completeness:** For each adopted level, user-specified non-asterisk XREF letter with a non-blank L-field must appear in the cL J$ comment. Some angular momentum couplings may yield too many possible Jπ values, which can be omitted if stronger constraints from other sources are available.
 
 ## Standard Comment Formats
 
@@ -56,7 +56,7 @@ Existing comments by human evaluators may include `for <E_level> {I<Uncertainty>
 ### Analyzing power constraint
 The analyzing power (J=<L-1>, <L>, <L+1> transfer) from polarized beam data further constrains the final Jπ.
 ```
-L=<L1> from <Jπ_target1> in <pol reaction1> and <L±1> transfer from analyzing power gives <Jπ_results1>.
+L=<L1> from <Jπ_target1> in <pol reaction1> with <L±1> transfer from analyzing power gives <Jπ_results1>.
 ```
 
 *Comment-only edits: skip ruler, column, and ordering validation.*
