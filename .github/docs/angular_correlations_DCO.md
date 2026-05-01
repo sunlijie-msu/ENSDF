@@ -109,7 +109,7 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 *   Transition is stretched quadrupole ($\Delta J = 2$) dominant.
 *   Mark as **Q**.
 *   Then look at spins, a lesson common case is if the level scheme indicates $J_i = J_f$:
-*   Mark as **DJ=0**.
+*   Mark as **ΔJ=0**.
 
 **If $R_{DCO}$ is between two expected values or inconsistent with all expected values:**
 *   Mark as **Mixed**.
@@ -129,7 +129,7 @@ Based on the Step 1 classification:
 *   If $|\delta| < 1$ is given, assign Q+O in M field.
 *   Then look at spins, the level scheme should indicate $\Delta J = 2$; but if it indicates $\Delta J = 1$, assign D+Q in M field.
 
-##### For Transitions Marked DJ=0
+##### For Transitions Marked ΔJ=0
 
 *   If $\delta$ is not given, assign D in M field and note "consistent with |DJ=0" in the cG comment after the DCO value.
 *   If $|\delta| < 1$ is given, assign D+Q in M field and note "consistent with |DJ=0" in the cG comment after the DCO value.
