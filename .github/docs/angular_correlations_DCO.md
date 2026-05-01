@@ -114,7 +114,7 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 **If $R_{DCO}$ is between two expected values or inconsistent with all expected values:**
 *   Mark as **Mixed**.
 
-#### Step 2: Look at Mixing Ratio and Level Scheme Spin Information
+#### Step 2: Look at Mixing Ratio ($\delta$) and Level Scheme Spin Change ($\Delta J$)
 
 Based on the Step 1 classification:
 
