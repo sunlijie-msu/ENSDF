@@ -83,37 +83,50 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 
 ## 6. Practical Workflow: Multipolarity Assignment Reasoning Logic
 
-### DCO Reference Gates
+If only $\delta$, $J_i$, and $J_f$ are given:
+If level scheme indicates ΔJ=0 or 1, assign D+Q in the M field.
+If level scheme indicates ΔJ=2, assign Q+O in the M field.
+If level scheme indicates ΔJ=3, assign O in the M field. Note O+H and the $\delta$ value in the cG M,MR comment.
 
+If DCO ratios, $\delta$, $J_i$, and $J_f$ are given:
+
+### DCO Reference Gates
 *   Gating on a stretched dipole ($\Delta J = 1$) transition yields $R_{DCO}(D)$.
 *   Gating on a stretched quadrupole ($\Delta J = 2$) transition yields $R_{DCO}(Q)$.
 *   Expected DCO values depend on experimental detection setups.
 
+Step 1: Look at measured DCO values
 ### If $R_{DCO}(D) \approx 1.0$ or $R_{DCO}(Q) \approx 0.5$
-
-*   The transition is stretched dipole ($\Delta J = 1$) dominant.
-*   If $\delta$ is not given, assign D in the M field.
-*   If $\delta$ is given, assign D+Q in the M field.
-
-### If $R_{DCO}(Q) \approx 1.0$
-
-*   The transition is stretched quadrupole ($\Delta J = 2$) dominant.
-*   If level scheme indicates $|J_i - J_f| = 2$ and $\delta$ is not given, assign Q ($\Delta J = 2$) in the M field.
-*   If level scheme indicates $J_i = J_f$ and $\delta$ is not given, assign D in the M field and note consistent with |DJ=0 after the DCO value in the cG comment.
-*   If level scheme indicates $J_i = J_f$ and $\delta$ is given, assign D+Q in the M field and note consistent with |DJ=0 after the DCO value in the cG comment.
-*   If level scheme indicates $|J_i - J_f| = 1$ and $\delta$ is given, assign D+Q in the M field.
-*   If level scheme indicates $|J_i - J_f| = 2$ and $\delta$ is given, assign Q+O in the M field.
-
+The transition is stretched dipole ($\Delta J = 1$) dominant, mark D.
+### If $R_{DCO}(Q) \approx 1.0$ or $R_{DCO}(D) \approx 2.0$
+The transition is stretched quadrupole ($\Delta J = 2$) dominant, mark Q.
+Less common: If level scheme indicates $J_i = J_f$, mark DJ=0.
 ### If $R_{DCO}$ is in the Middle of two Expected Values or Inconsistent with any Expected Values
+Mark mixed.
 
-*   If level scheme indicates $|J_i - J_f| = 0$ or $|J_i - J_f| = 1$ and $\delta$ is given, assign D+Q.
-*   If level scheme indicates $|J_i - J_f| = 2$ and $\delta$ is given, assign Q+O.
-*   If level scheme indicates $|J_i - J_f| = 3$ and $\delta$ is given, assign O in the M field and put O+H and $\delta$ in the cG comment.
+Step 2: Look at measured mixing ratios and then ΔJ from level scheme.
+For transitions marked D,
+*   If $\delta$ is not given, assign D in the M field.
+*   If $|\delta|<1$ is given, assign D+Q in the M field.
+
+For transitions marked Q,
+*   If $\delta$ is not given, assign Q in the M field.
+*   If $|\delta|<1$ is given, assign Q+O in the M field.
+*   The level scheme should indicate ΔJ=2, but if level scheme indicates ΔJ=1 and $\delta$ is given, assign D+Q in the M field.
+
+For transitions marked DJ=0,
+*   If $\delta$ is not given, assign D in the M field.
+*   If $|\delta|<1$ is given, assign D+Q in the M field and note consistent with |DJ=0 after the DCO value in the cG comment.
+
+For transitions marked mixed,
+*   If $\delta$ is not given, leave M field blank.
+*   If $|\delta|<1$ is given, If level scheme indicates ΔJ=0 or 1, assign D+Q in the M field. If level scheme indicates ΔJ=2, assign Q+O in the M field. If level scheme indicates ΔJ=3, assign O in the M field. Note O+H and the $\delta$ value in the cG M,MR comment.
+
 
 ### Mixing Ratio Refinement
 
-*   If $\delta$ is given and does not overlap with zero, D+Q or Q+O remains unchanged.
-*   If $\delta$ is given and overlaps with zero, place the higher-order multipolarity in parentheses: D+Q changes to D(+Q), and Q+O changes to Q(+O).
+*   If $\delta$ is given and does not overlap with 0, D+Q or Q+O remains unchanged.
+*   If $\delta$ is given and overlaps with 0, place the higher-order multipolarity in parentheses: D+Q changes to D(+Q), and Q+O changes to Q(+O).
 
 ### Polarization
 
@@ -131,5 +144,5 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
     *   D(+Q) → M1(+E2)
     *   Q+O → M2+E3
     *   Q(+O) → M2(+E3)
-*   **No POL data available:** Do not assign E or M. Use only D, Q, and/or O based on DCO data.
+*   **No POL data available:** Do not assign E or M. Use only D, Q, and/or O based on the above DCO rules.
 
