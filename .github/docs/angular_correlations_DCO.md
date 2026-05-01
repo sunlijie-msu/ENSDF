@@ -79,9 +79,9 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 ### C. Ambiguities
 
 *   **Overlap:** An unstretched dipole transition ($\Delta J = 0$) exhibits similar $R_{DCO}$ values to a stretched quadrupole transition ($\Delta J = 2$) in both gating configurations ($1.0$ in Quad gate; $1.8$ in Dipole gate).
-*   **Resolution:** Linear polarization measurements are required to distinguish these cases by determining the electromagnetic character (Electric vs. Magnetic).
+*   **Resolution:** Linear polarization measurements are required to assign the electromagnetic character (Electric vs. Magnetic).
 
-## 6. Multipolarity Assignment Reasoning Logic
+## 6. Practical Workflow: Multipolarity Assignment Reasoning Logic
 
 ### DCO Reference Gates
 
@@ -95,7 +95,7 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 *   If $\delta$ is not given, assign D in the M field.
 *   If $\delta$ is given, assign D+Q in the M field.
 
-### If $R_{DCO}(Q) \approx 1.0$ or $R_{DCO}(D) \approx 2.0$
+### If $R_{DCO}(Q) \approx 1.0$
 
 *   The transition is stretched quadrupole ($\Delta J = 2$) dominant.
 *   If level scheme indicates $|J_i - J_f| = 2$ and $\delta$ is not given, assign Q ($\Delta J = 2$) in the M field.
