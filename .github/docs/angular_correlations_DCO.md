@@ -85,15 +85,11 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 
 ### Scenario A: Only Mixing Ratio and Spins Given
 
-When only $\delta$, $J_i$, and $J_f$ are available:
-
 *   If level scheme indicates $\Delta J = 0$ or $1$, assign D+Q in M field.
 *   If level scheme indicates $\Delta J = 2$, assign Q+O in M field.
 *   If level scheme indicates $\Delta J = 3$, assign O in M field and note O+H and $\delta$ value in cG M,MR comment.
 
 ### Scenario B: DCO Ratios, Mixing Ratio, and Spins Given
-
-When DCO ratios, $\delta$, $J_i$, and $J_f$ are available, follow Steps 1 and 2 below.
 
 #### Step 1: Look at DCO Ratios
 
