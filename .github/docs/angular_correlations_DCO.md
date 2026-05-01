@@ -83,66 +83,100 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 
 ## 6. Practical Workflow: Multipolarity Assignment Reasoning Logic
 
-If only $\delta$, $J_i$, and $J_f$ are given:
-If level scheme indicates ΔJ=0 or 1, assign D+Q in the M field.
-If level scheme indicates ΔJ=2, assign Q+O in the M field.
-If level scheme indicates ΔJ=3, assign O in the M field. Note O+H and the $\delta$ value in the cG M,MR comment.
+### Scenario A: Only Mixing Ratio and Spins Given
 
-If DCO ratios, $\delta$, $J_i$, and $J_f$ are given:
+When only $\delta$, $J_i$, and $J_f$ are available:
 
-### DCO Reference Gates
+*   If level scheme indicates $\Delta J = 0$ or $1$, assign D+Q in the M field.
+*   If level scheme indicates $\Delta J = 2$, assign Q+O in the M field.
+*   If level scheme indicates $\Delta J = 3$, assign O in the M field and note O+H and the $\delta$ value in the cG M,MR comment.
+
+### Scenario B: DCO Ratios, Mixing Ratio, and Spins Given
+
+When DCO ratios, $\delta$, $J_i$, and $J_f$ are available, follow Steps 1 and 2 below.
+
+#### Step 1: Look at DCO Ratios
+
+##### DCO Reference Gates
+
 *   Gating on a stretched dipole ($\Delta J = 1$) transition yields $R_{DCO}(D)$.
 *   Gating on a stretched quadrupole ($\Delta J = 2$) transition yields $R_{DCO}(Q)$.
 *   Expected DCO values depend on experimental detection setups.
 
-Step 1: Look at measured DCO values
-### If $R_{DCO}(D) \approx 1.0$ or $R_{DCO}(Q) \approx 0.5$
-The transition is stretched dipole ($\Delta J = 1$) dominant, mark D.
-### If $R_{DCO}(Q) \approx 1.0$ or $R_{DCO}(D) \approx 2.0$
-The transition is stretched quadrupole ($\Delta J = 2$) dominant, mark Q.
-Less common: If level scheme indicates $J_i = J_f$, mark DJ=0.
-### If $R_{DCO}$ is in the Middle of two Expected Values or Inconsistent with any Expected Values
-Mark mixed.
+##### DCO Decision Rules
 
-Step 2: Look at measured mixing ratios and then ΔJ from level scheme.
-For transitions marked D,
+**If $R_{DCO}(D) \approx 1.0$ or $R_{DCO}(Q) \approx 0.5$:**
+*   The transition is stretched dipole ($\Delta J = 1$) dominant.
+*   Mark as **D**.
+
+**If $R_{DCO}(Q) \approx 1.0$ or $R_{DCO}(D) \approx 2.0$:**
+*   The transition is stretched quadrupole ($\Delta J = 2$) dominant.
+*   Mark as **Q**.
+*   Then look at spins, a lesson common case is if the level scheme indicates $J_i = J_f$:
+*   Mark as **DJ=0**.
+
+**If $R_{DCO}$ is between two expected values or inconsistent with all expected values:**
+*   Mark as **Mixed**.
+
+#### Step 2: Look at Mixing Ratio and Level Scheme Spin Information
+
+Assign the M field based on the Step 1 classification:
+
+##### For Transitions Marked D
+
 *   If $\delta$ is not given, assign D in the M field.
-*   If $|\delta|<1$ is given, assign D+Q in the M field.
+*   If $|\delta| < 1$ is given, assign D+Q in the M field.
 
-For transitions marked Q,
+##### For Transitions Marked Q
+
 *   If $\delta$ is not given, assign Q in the M field.
-*   If $|\delta|<1$ is given, assign Q+O in the M field.
-*   The level scheme should indicate ΔJ=2, but if level scheme indicates ΔJ=1 and $\delta$ is given, assign D+Q in the M field.
+*   If $|\delta| < 1$ is given, assign Q+O in the M field.
+*   Then look at spins, the level scheme should indicate $\Delta J = 2$; but if it indicates $\Delta J = 1$, assign D+Q in the M field.
 
-For transitions marked DJ=0,
-*   If $\delta$ is not given, assign D in the M field.
-*   If $|\delta|<1$ is given, assign D+Q in the M field and note consistent with |DJ=0 after the DCO value in the cG comment.
+##### For Transitions Marked DJ=0
 
-For transitions marked mixed,
-*   If $\delta$ is not given, leave M field blank.
-*   If $|\delta|<1$ is given, If level scheme indicates ΔJ=0 or 1, assign D+Q in the M field. If level scheme indicates ΔJ=2, assign Q+O in the M field. If level scheme indicates ΔJ=3, assign O in the M field. Note O+H and the $\delta$ value in the cG M,MR comment.
+*   If $\delta$ is not given, assign D in the M field and note "consistent with |DJ=0" in the cG comment after the DCO value.
+*   If $|\delta| < 1$ is given, assign D+Q in the M field and note "consistent with |DJ=0" in the cG comment after the DCO value.
 
+##### For Transitions Marked Mixed
+
+*   If $\delta$ is not given, omit assignment of the M field.
+*   If $|\delta| < 1$ is given:
+    *   If level scheme indicates $\Delta J = 0$ or $1$, assign D+Q in the M field.
+    *   If level scheme indicates $\Delta J = 2$, assign Q+O in the M field.
+    *   If level scheme indicates $\Delta J = 3$, assign O in the M field and note O+H and the $\delta$ value in the cG M,MR comment.
 
 ### Mixing Ratio Refinement
 
 *   If $\delta$ is given and does not overlap with 0, D+Q or Q+O remains unchanged.
-*   If $\delta$ is given and overlaps with 0, place the higher-order multipolarity in parentheses: D+Q changes to D(+Q), and Q+O changes to Q(+O).
+*   If $\delta$ is given and overlaps with 0:
+    *   D+Q changes to D(+Q).
+    *   Q+O changes to Q(+O).
 
-### Polarization
+### Polarization Assignment
 
-*   **Positive POL** (dominant electric character):
-    *   D → E1
-    *   Q → E2
-    *   D+Q → E1+M2
-    *   D(+Q) → E1(+M2)
-    *   Q+O → E2+M3
-    *   Q(+O) → E2(+M3)
-*   **Negative POL** (dominant magnetic character):
-    *   D → M1
-    *   Q → M2
-    *   D+Q → M1+E2
-    *   D(+Q) → M1(+E2)
-    *   Q+O → M2+E3
-    *   Q(+O) → M2(+E3)
-*   **No POL data available:** Do not assign E or M. Use only D, Q, and/or O based on the above DCO rules.
+Apply these rules based on measured POL to assign electromagnetic character:
+
+#### Positive POL (Dominant Electric Character)
+
+*   D → E1
+*   Q → E2
+*   D+Q → E1+M2
+*   D(+Q) → E1(+M2)
+*   Q+O → E2+M3
+*   Q(+O) → E2(+M3)
+
+#### Negative POL (Dominant Magnetic Character)
+
+*   D → M1
+*   Q → M2
+*   D+Q → M1+E2
+*   D(+Q) → M1(+E2)
+*   Q+O → M2+E3
+*   Q(+O) → M2(+E3)
+
+#### No POL Data Available
+
+*   Do not assign E or M labels.
+*   Use only D, Q, and/or O based on the DCO decision rules in Step 1.
 
