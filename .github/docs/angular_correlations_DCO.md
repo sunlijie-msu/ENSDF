@@ -108,7 +108,7 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 **If $R_{DCO}(Q) \approx 1.0$ or $R_{DCO}(D) \approx 2.0$:**
 *   Transition is stretched quadrupole ($\Delta J = 2$) dominant.
 *   Mark as **Q**.
-*   Then look at spins, a lesson common case is if the level scheme indicates $J_i = J_f$:
+*   Then look at spins, a less common case is if the level scheme indicates $J_i = J_f$:
 *   Mark as **ΔJ=0**.
 
 **If $R_{DCO}$ is between two expected values or inconsistent with all expected values:**
