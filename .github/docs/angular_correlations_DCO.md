@@ -87,9 +87,9 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 
 When only $\delta$, $J_i$, and $J_f$ are available:
 
-*   If level scheme indicates $\Delta J = 0$ or $1$, assign D+Q in the M field.
-*   If level scheme indicates $\Delta J = 2$, assign Q+O in the M field.
-*   If level scheme indicates $\Delta J = 3$, assign O in the M field and note O+H and the $\delta$ value in the cG M,MR comment.
+*   If level scheme indicates $\Delta J = 0$ or $1$, assign D+Q in M field.
+*   If level scheme indicates $\Delta J = 2$, assign Q+O in M field.
+*   If level scheme indicates $\Delta J = 3$, assign O in M field and note O+H and $\delta$ value in cG M,MR comment.
 
 ### Scenario B: DCO Ratios, Mixing Ratio, and Spins Given
 
@@ -106,11 +106,11 @@ When DCO ratios, $\delta$, $J_i$, and $J_f$ are available, follow Steps 1 and 2 
 ##### DCO Decision Rules
 
 **If $R_{DCO}(D) \approx 1.0$ or $R_{DCO}(Q) \approx 0.5$:**
-*   The transition is stretched dipole ($\Delta J = 1$) dominant.
+*   Transition is stretched dipole ($\Delta J = 1$) dominant.
 *   Mark as **D**.
 
 **If $R_{DCO}(Q) \approx 1.0$ or $R_{DCO}(D) \approx 2.0$:**
-*   The transition is stretched quadrupole ($\Delta J = 2$) dominant.
+*   Transition is stretched quadrupole ($\Delta J = 2$) dominant.
 *   Mark as **Q**.
 *   Then look at spins, a lesson common case is if the level scheme indicates $J_i = J_f$:
 *   Mark as **DJ=0**.
@@ -120,40 +120,40 @@ When DCO ratios, $\delta$, $J_i$, and $J_f$ are available, follow Steps 1 and 2 
 
 #### Step 2: Look at Mixing Ratio and Level Scheme Spin Information
 
-Assign the M field based on the Step 1 classification:
+Based on the Step 1 classification:
 
 ##### For Transitions Marked D
 
-*   If $\delta$ is not given, assign D in the M field.
-*   If $|\delta| < 1$ is given, assign D+Q in the M field.
+*   If $\delta$ is not given, assign D in M field.
+*   If $|\delta| < 1$ is given, assign D+Q in M field.
 
 ##### For Transitions Marked Q
 
-*   If $\delta$ is not given, assign Q in the M field.
-*   If $|\delta| < 1$ is given, assign Q+O in the M field.
-*   Then look at spins, the level scheme should indicate $\Delta J = 2$; but if it indicates $\Delta J = 1$, assign D+Q in the M field.
+*   If $\delta$ is not given, assign Q in M field.
+*   If $|\delta| < 1$ is given, assign Q+O in M field.
+*   Then look at spins, the level scheme should indicate $\Delta J = 2$; but if it indicates $\Delta J = 1$, assign D+Q in M field.
 
 ##### For Transitions Marked DJ=0
 
-*   If $\delta$ is not given, assign D in the M field and note "consistent with |DJ=0" in the cG comment after the DCO value.
-*   If $|\delta| < 1$ is given, assign D+Q in the M field and note "consistent with |DJ=0" in the cG comment after the DCO value.
+*   If $\delta$ is not given, assign D in M field and note "consistent with |DJ=0" in the cG comment after the DCO value.
+*   If $|\delta| < 1$ is given, assign D+Q in M field and note "consistent with |DJ=0" in the cG comment after the DCO value.
 
 ##### For Transitions Marked Mixed
 
-*   If $\delta$ is not given, omit assignment of the M field.
-*   If $|\delta| < 1$ is given:
-    *   If level scheme indicates $\Delta J = 0$ or $1$, assign D+Q in the M field.
-    *   If level scheme indicates $\Delta J = 2$, assign Q+O in the M field.
-    *   If level scheme indicates $\Delta J = 3$, assign O in the M field and note O+H and the $\delta$ value in the cG M,MR comment.
+*   If $\delta$ is not given, no need to assign M field.
+*   If $\delta$ is given:
+    *   If level scheme indicates $\Delta J = 0$ or $1$, assign D+Q in M field.
+    *   If level scheme indicates $\Delta J = 2$, assign Q+O in M field.
+    *   If level scheme indicates $\Delta J = 3$, assign O in M field and note O+H and $\delta$ value in cG M,MR comment.
 
-### Mixing Ratio Refinement
+#### Step 3: Mixing Ratio Refinement
 
 *   If $\delta$ is given and does not overlap with 0, D+Q or Q+O remains unchanged.
-*   If $\delta$ is given and overlaps with 0:
+*   If $\delta$ is given and overlaps with 0, place the higher-order multipolarity in parentheses:
     *   D+Q changes to D(+Q).
     *   Q+O changes to Q(+O).
 
-### Polarization Assignment
+#### Step 4: Polarization Refinement
 
 Apply these rules based on measured POL to assign electromagnetic character:
 
@@ -175,8 +175,8 @@ Apply these rules based on measured POL to assign electromagnetic character:
 *   Q+O → M2+E3
 *   Q(+O) → M2(+E3)
 
-#### No POL Data Available
+#### If No POL Data Available
 
 *   Do not assign E or M labels.
-*   Use only D, Q, and/or O based on the DCO decision rules in Step 1.
+*   Assign only D, Q, O multipolarities based on DCO decision rules above.
 
