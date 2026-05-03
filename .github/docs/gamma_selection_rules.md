@@ -84,14 +84,12 @@ Selection rules for each transition type:
 
 ## 5. Mixed Multipolarities
 
-Common mixing patterns constrained by the dominance rule:
-
-*   D+Q (E1+M2 or M1+E2): ΔJ = 0, 1
-*   Q+O (E2+M3 or M2+E3): ΔJ = 2
-*   M1+E2: ΔJ = 0, 1; Δπ = No
-*   E1+M2: ΔJ = 0, 1; Δπ = Yes
-*   E2+M3: ΔJ = 2; Δπ = No
-*   M2+E3: ΔJ = 2; Δπ = Yes
+*   D+Q (E1+M2 or M1+E2) → ΔJ = 0, 1
+*   Q+O (E2+M3 or M2+E3) → ΔJ = 2
+*   M1+E2 → ΔJ = 0, 1; Δπ = No
+*   E1+M2 → ΔJ = 0, 1; Δπ = Yes
+*   E2+M3 → ΔJ = 2; Δπ = No
+*   M2+E3 → ΔJ = 2; Δπ = Yes
 
 ### Examples: Deducing Jπ Initial from Multipolarity and Jπ Final
 
