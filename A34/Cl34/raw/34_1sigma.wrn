@@ -1,24 +1,43 @@
 Program for consistency check: output for XREF Warnings only (version 04/24/2026)
-Generated at: Tue 04/28/2026 at 03:46:46 PM EDT
+Generated at: Sat 05/02/2026 at 07:58:19 PM EDT
 
+
+################################################################################
+In dataset of 34CL: XF 27AL(12C,ANG)     XREF Tag=F
+
+ 34CL  L 7250.5    11 9+               0.159 PS  28                             
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                      #  7249.8    10                     XREF=GK
+                                                                                       @ 7250.0     5 9+                  XREF=EF
+                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=F
+
+################################################################################
+In dataset of 34CL: XG 31P(A,NG)     XREF Tag=G
+
+ 34CL  L 7800                          69 FS     49                             
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                         7801.5    10 8-                  XREF=EF
+                                                                                      #@ 7803.9    10                     XREF=G(7800)K
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=G
 
 ################################################################################
 In dataset of 34CL: XH 32S(3HE,P)     XREF Tag=H
 
- 34CL  L 2720.5    39                                  1+3                      
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  2718      10 0:4+                XREF=O(2718*)T
-                                                                                       @ 2721.09   20 2-                  XREF=EFGHIJ(2710)KMO(2718*)V(2725)
-                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=H
- 34CL  L 3635.2    48                                  5                        
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 3631.40   12 5-                  XREF=EFGHIKMQ(3630)T
-                                                                                         3646.3     2 (3,4,5+)            XREF=FK
  34CL  L 3804      29                                                          ?
-         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                        @ 3773.7     4 (1)-                XREF=H(3804*)IKM
                                                                                        @ 3791.7     2 (0+,1+)             XREF=H(3804*)K
-                                                                                         3847      10                     XREF=T
+ 34CL  L 4611.9    70                                  1+3                      
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 4605.8    10 (1-,2-,3-)          XREF=H(*)KM(*)QT(4608*)
+                                                                                       @ 4609.7    15 2-                  XREF=H(*)KM(*)Q(4610*)T(4608*)
+ 34CL  L 6724                                                                   
+         *                                                                        <W> 4 possible matches found in Adopted! Check XREF
+                                                                                      #@ 6719.8    15 3-                  XREF=H(6724*)KL
+                                                                                      #@ 6723.7    16 (4+)                XREF=H(6724*)K
+                                                                                      #@ 6737.3    15 2-                  XREF=H(6724*)KL
+                                                                                      #@ 6702.8    16 (3,4)               XREF=H(6724*)K
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=H
 
 ################################################################################
 In dataset of 34CL: XJ 32S(A,D)     XREF Tag=J
@@ -26,54 +45,230 @@ In dataset of 34CL: XJ 32S(A,D)     XREF Tag=J
  34CL  L 1896      40                                                           
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                        @ 1887.29    8 2+                  XREF=AFGHIJ(1896*)KMNQRS(1840)TUV
-                                                                                       @ 1923.3    17 +                   XREF=J(1896*)M
- 34CL  L 2710      20                                  1+3                      
+                                                                                       @ 1923.3    17 0+,1+,2+,3+,4+      XREF=J(1896*)M
+ 34CL  L 4665      40                                  1+3                      
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  2718      10 0:4+                XREF=O(2718*)T
-                                                                                       @ 2721.09   20 2-                  XREF=EFGHIJ(2710)KMO(2718*)V(2725)
+                                                                                       @ 4638.9     4 2-                  XREF=J(4665*)KMU(4670*)
+                                                                                       @ 4695.7     2 0+,1,2,3,4+         XREF=HJ(4665*)KMU(4670*)
+ 34CL  L 4930      20                                  0+2,2                    
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 4925       4 0:4+                XREF=J(4930*)OT(4939*)U(4970*)V(4970*)
+                                                                                       @ 4941.9     4 1+                  XREF=J(4930*)KMOT(4939*)U(4970*)V(4970*)
+ 34CL  L 5277      10                                  6                        
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 5278       7 5+,6+,7+            XREF=J
+                                                                                         5292                             XREF=H
+ 34CL  L 5.85E3    15                                                       K   
+         *                                                                        <W> 10 possible matches found in Adopted! Check XREF
+                                                                                      #  5705       5                     XREF=O
+                                                                                       @ 5763.3    10 (1+,2+)             XREF=J(*)KO(5761?)
+                                                                                       @ 5785.1    10 (2,3,4+)            XREF=J(*)KMO
+                                                                                       @ 5805.9    10 (2+)                XREF=J(*)KMO(5806)
+                                                                                       @ 5852.91   30 (3-)                XREF=J(*)KMO
+                                                                                       @ 5868       4                     XREF=J(*)KO
+                                                                                       @ 5897.3    10 (2)                 XREF=J(*)KMO
+                                                                                       @ 5917       4                     XREF=J(*)O
+                                                                                       @ 5940.8    10 (2-)                XREF=J(*)KO
+                                                                                      #  5980       4                     XREF=O
                                                                                       *** Check for possible missing XREF assignment (# marked) of this tag=J
+ 34CL  L 6300                                                               K   
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+                                                                                      #@ 6321.7    13 2-                  XREF=HJ(6300*)KL
+                                                                                      #@ 6273.3    13 (3-,4)              XREF=J(6300*)K
+                                                                                      #@ 6266.6    13 (1+,2,3+)           XREF=J(6300*)K
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=J
+ 34CL  L 6540                                                               K   
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+                                                                                      #@ 6545.9    15 2-                  XREF=J(6540*)KL
+                                                                                      #@ 6574.7    15 (2+,3,4+)           XREF=J(6540*)K
+                                                                                      #@ 6527.6    15 (2-,3+)             XREF=J(6540*)K
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=J
+ 34CL  L 6950                                                               K   
+         *                                                                        <W> 5 possible matches found in Adopted! Check XREF
+                                                                                      #@ 6931.5    17 1-                  XREF=J(6950*)KL
+                                                                                      #@ 6977.4    17 (2-,3,4+)           XREF=J(6950*)K
+                                                                                      #@ 6984.9    10                     XREF=J(6950*)K
+                                                                                      #@ 6986.85   30 1-                  XREF=J(6950*)KL
+                                                                                      #@ 6918.0    17 3,4                 XREF=J(6950*)K
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=J
+ 34CL  L 7350      20                                  3,6                      
+         *                                                                        <W> 4 possible matches found in Adopted! Check XREF
+                                                                                       @ 7336       2                     XREF=J(7350*)L
+                                                                                       @ 7346.8    10                     XREF=J(7350*)K
+                                                                                       @ 7358.5    15 2-                  XREF=J(7350*)L
+                                                                                       @ 7368.4    15 1-,2-,3-            XREF=J(7350*)L
+ 34CL  L 7840      30                                  3,5,6                    
+         *                                                                        <W> 5 possible matches found in Adopted! Check XREF
+                                                                                         7809.7    10                     XREF=K
+                                                                                       @ 7827.3    15 2-                  XREF=J(7840*)L
+                                                                                       @ 7831.0    10                     XREF=J(7840*)K
+                                                                                       @ 7853.4    10                     XREF=J(7840*)K
+                                                                                       @ 7859.2    29                     XREF=J(7840*)L
+ 34CL  L 8390      20                                  3,5,6                    
+         *                                                                        <W> 5 possible matches found in Adopted! Check XREF
+                                                                                       @ 8372.5    10                     XREF=J(8390*)K
+                                                                                       @ 8381.3    15 (2)-                XREF=J(8390*)L
+                                                                                       @ 8386.5    15 3+,4+               XREF=J(8390*)L
+                                                                                       @ 8390.0    10                     XREF=J(8390*)K
+                                                                                       @ 8376.18   30 2+                  XREF=J(8390*)L
+
+################################################################################
+In dataset of 34CL: XK 33S(P,G)     XREF Tag=K
+
+ 34CL  L 5868.0    10                                           747       1     
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 5868       4                     XREF=J(*)KO
+                                                                                         5917       4                     XREF=J(*)O
+ 34CL  L 7249.8    10                                           2171      1     
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 7249.8    10                     XREF=GK
+                                                                                      #  7250.0     5 9+                  XREF=EF
+                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=K
+ 34CL  L 7376.0    10                                           2301      1     
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                         7368.4    15 1-,2-,3-            XREF=J(7350*)L
+                                                                                       @ 7376.0    10                     XREF=K
+ 34CL  L 7527.3    10                                           2457      1     
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                      #  7525.7    15 1+,2+               XREF=L
+                                                                                       @ 7527.2    10 1+                  XREF=KL
+                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=K
+ 34CL  L 7803.9    10                                           2742      1     
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 7803.9    10                     XREF=G(7800)K
+                                                                                         7827.3    15 2-                  XREF=J(7840*)L
+ 34CL  L 7848.5    10                                           2788      1     
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 7848.8    10 3+,4+               XREF=KL
+                                                                                         7859.2    29                     XREF=J(7840*)L
+ 34CL  L 7909.6    10                                           2851      1     
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                      #  7909.5    15                     XREF=L
+                                                                                       @ 7909.6    10 2-                  XREF=KL
+                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=K
+ 34CL  L 7979.5    10                                           2923      1     
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 7977.5    15 1+                  XREF=K(*)L
+                                                                                       @ 7980.3    15 3+                  XREF=K(*)L
+ 34CL  L 8154.2    10                                           3103      1     
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 8154.6    10 1-                  XREF=KL
+                                                                                      #  8155.5    11 6+                  XREF=F
+                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=K
+ 34CL  L 8372.5    10                                           3328      1     
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 8372.5    10                     XREF=J(8390*)K
+                                                                                         8386.5    15 3+,4+               XREF=J(8390*)L
+ 34CL  L 8390.0    10                                           3346      1     
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                         8381.3    15 (2)-                XREF=J(8390*)L
+                                                                                       @ 8390.0    10                     XREF=J(8390*)K
+
+################################################################################
+In dataset of 34CL: XL 33S(P,P),(P,P'G):RESONANCES     XREF Tag=L
+
+ 34CL  L 6986.85   30 1-               0.60 KEV  6     1        1900.0    3     
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                         6984.9    10                     XREF=J(6950*)K
+                                                                                       @ 6986.85   30 1-                  XREF=J(6950*)KL
+ 34CL  L 7358.5    15 2-               20 KEV    4     1        2283.0    15    
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                         7346.8    10                     XREF=J(7350*)K
+                                                                                       @ 7358.5    15 2-                  XREF=J(7350*)L
+ 34CL  L 7799.9    15 3+,4+                            2        2737.9    15    
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 7799.9    15 3+,4+               XREF=L
+                                                                                         7809.7    10                     XREF=K
+ 34CL  L 7827.3    15 2-               10.0 KEV  20    1        2766.1    15    
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 7827.3    15 2-                  XREF=J(7840*)L
+                                                                                         7853.4    10                     XREF=J(7840*)K
+ 34CL  L 7849.6    15 3+,4+                            2        2789.1    15    
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                         7831.0    10                     XREF=J(7840*)K
+                                                                                       @ 7848.8    10 3+,4+               XREF=KL
+ 34CL  L 7883.4    29                                           2824      3 V   
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                         7878.6    10                     XREF=K
+                                                                                       @ 7886.1    10                     XREF=KL
 
 ################################################################################
 In dataset of 34CL: XM 33S(3HE,D)     XREF Tag=M
 
- 34CL  L 2720.7    25                                  1+3      0.04+0.39       
+ 34CL  L 4607.9    21                                  1        0.11            
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  2718      10 0:4+                XREF=O(2718*)T
-                                                                                       @ 2721.09   20 2-                  XREF=EFGHIJ(2710)KMO(2718*)V(2725)
-                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=M
+                                                                                       @ 4605.8    10 (1-,2-,3-)          XREF=H(*)KM(*)QT(4608*)
+                                                                                       @ 4609.7    15 2-                  XREF=H(*)KM(*)Q(4610*)T(4608*)
+ 34CL  L 4957.3                                        2        0.079     5 A   
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                      #@ 4941.9     4 1+                  XREF=J(4930*)KMOT(4939*)U(4970*)V(4970*)
+                                                                                      #@ 4957.5    11 1+,2+               XREF=HKMOTU(4970*)V(4970*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=M
+ 34CL  L 5897.1                                        1        0.0088    7 A   
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+                                                                                         5868       4                     XREF=J(*)KO
+                                                                                      #@ 5897.3    10 (2)                 XREF=J(*)KMO
+                                                                                         5917       4                     XREF=J(*)O
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=M
+
+################################################################################
+In dataset of 34CL: XN 34S(P,N)     XREF Tag=N
+
+ 34CL  L 4985         1+,2+                            1,2                      
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+                                                                                         4957.5    11 1+,2+               XREF=HKMOTU(4970*)V(4970*)
+                                                                                      #@ 4979       2 1+,2+               XREF=MN(4985*)O(4981*)Q(4990*)R(5000*)TU(4970*)V(4970*)
+                                                                                      #@ 4995.6     3 1+,2+               XREF=KMN(4985*)OQ(4990*)R(5000*)TU(4970*)V(4970*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=N
 
 ################################################################################
 In dataset of 34CL: XO 34S(3HE,T)     XREF Tag=O
 
  34CL  L 2718      4                                   GE1                  F   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 2718      10 0:4+                XREF=O(2718*)T
+                                                                                       @ 2718      10 0+,1+,2+,3+,4+      XREF=O(2718*)T
                                                                                        @ 2721.09   20 2-                  XREF=EFGHIJ(2710)KMO(2718*)V(2725)
+ 34CL  L 4981      4                                                            
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 4979       2 1+,2+               XREF=MN(4985*)O(4981*)Q(4990*)R(5000*)TU(4970*)V(4970*)
+                                                                                       @ 5028       2                     XREF=K(5020?)MO(4981*)R(5000*)
+ 34CL  L 5263      4                                                            
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 5263       4                     XREF=O
+                                                                                         5292                             XREF=H
+ 34CL  L 5444      4                                                            
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                         5435       2                     XREF=K(?)M
+                                                                                       @ 5444       4                     XREF=O
 
 ################################################################################
 In dataset of 34CL: XQ 35CL(G,N)     XREF Tag=Q
 
- 34CL  L 2610                                                                   
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                         2580.3     2 1+                  XREF=AHIKMNOP(2560)R(2600*)TU(2600*)V
-                                                                                      #@ 2611.04   11 3+                  XREF=FGHIKMQR(2600*)TU(2600*)V
-                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=Q
  34CL  L 3630                                                                   
-         *                                                                        <W> 4 possible matches found in Adopted! Check XREF
-                                                                                         3600.14   11 4-                  XREF=EFGHIJK
-                                                                                      #@ 3631.40   12 5-                  XREF=EFGHIKMQ(3630)T
-                                                                                      #  3646.3     2 (3,4,5+)            XREF=FK
-                                                                                         3660.0     3 (1,2,3)             XREF=K
-                                                                                      *** Check for possible missing and incorrect XREF assignment (# marked) of this tag=Q
- 34CL  L 3960                                                                   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  3940.1     3 0+                  XREF=KTU(3940)
-                                                                                      #@ 3964.1     3 (2,3,4)+            XREF=KQ(3960)T(3964)
-                                                                                      *** Check for possible missing and incorrect XREF assignment (# marked) of this tag=Q
+                                                                                      #@ 3631.40   12 5-                  XREF=EFGHIKMQ(3630)T
+                                                                                         3660.0     3 (1,2,3)             XREF=K
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=Q
  34CL  L 4075                                                                   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                        @ 4075      10 1+,2+               XREF=Q(4075*)T
                                                                                       #@ 4076.2     2 4-                  XREF=HIJ(4060)KMQ(4075*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=Q
+ 34CL  L 4450                                                                   
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                         4417.3     2 2-                  XREF=HJKM
+                                                                                      #@ 4446.6     2 4-                  XREF=KQ(4450*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=Q
+ 34CL  L 4610                                                                   
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                      #@ 4609.7    15 2-                  XREF=H(*)KM(*)Q(4610*)T(4608*)
+                                                                                      #@ 4611       4 0+,1+               XREF=OQ(4610*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=Q
+ 34CL  L 4990                                                                   
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+                                                                                         4957.5    11 1+,2+               XREF=HKMOTU(4970*)V(4970*)
+                                                                                      #@ 4979       2 1+,2+               XREF=MN(4985*)O(4981*)Q(4990*)R(5000*)TU(4970*)V(4970*)
+                                                                                      #@ 4995.6     3 1+,2+               XREF=KMN(4985*)OQ(4990*)R(5000*)TU(4970*)V(4970*)
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=Q
 
 ################################################################################
@@ -85,21 +280,27 @@ In dataset of 34CL: XR 35CL(P,D)     XREF Tag=R
                                                                                        @ 2611.04   11 3+                  XREF=FGHIKMQR(2600*)TU(2600*)V
  34CL  L 3360      20                                  0        0.75            
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 3334.0     2 1+,2+,3+            XREF=HIKMOQ(3330)R(3360*)TU(3350*)V
+                                                                                       @ 3334.0     2 (1+,2+,3+)          XREF=HIKMOQ(3330)R(3360*)TU(3350*)V
                                                                                        @ 3383.3     2 1+,2+               XREF=HIKMNQR(3360*)TU(3350*)V
- 34CL  L 4160      20                                  0        0.30            
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                         4136.6       1+,2+               XREF=T
-                                                                                       @ 4147.8     2 (1+,2+)             XREF=KR(4160)
+ 34CL  L 5000      30                                  2        1.70            
+         *                                                                        <W> 4 possible matches found in Adopted! Check XREF
+                                                                                       @ 4979       2 1+,2+               XREF=MN(4985*)O(4981*)Q(4990*)R(5000*)TU(4970*)V(4970*)
+                                                                                       @ 4995.6     3 1+,2+               XREF=KMN(4985*)OQ(4990*)R(5000*)TU(4970*)V(4970*)
+                                                                                       @ 5009       2 (0:4)+              XREF=MOQR(5000*)TU(4970*)V(4970*)
+                                                                                       @ 5028       2                     XREF=K(5020?)MO(4981*)R(5000*)
 
 ################################################################################
 In dataset of 34CL: XT 35CL(3HE,A)     XREF Tag=T
 
- 34CL  L 3632.5                                        3        0.030           
+ 34CL  L 4608                                          1+3      0.007+0.04      
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #@ 3631.40   12 5-                  XREF=EFGHIKMQ(3630)T
-                                                                                         3660.0     3 (1,2,3)             XREF=K
+                                                                                      #@ 4605.8    10 (1-,2-,3-)          XREF=H(*)KM(*)QT(4608*)
+                                                                                      #@ 4609.7    15 2-                  XREF=H(*)KM(*)Q(4610*)T(4608*)
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=T
+ 34CL  L 4939      11                                  2        0.13            
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 4925       4 0:4+                XREF=J(4930*)OT(4939*)U(4970*)V(4970*)
+                                                                                       @ 4941.9     4 1+                  XREF=J(4930*)KMOT(4939*)U(4970*)V(4970*)
 
 ################################################################################
 In dataset of 34CL: XU 36AR(P,3HE)     XREF Tag=U
@@ -115,14 +316,67 @@ In dataset of 34CL: XU 36AR(P,3HE)     XREF Tag=U
                                                                                        @ 2611.04   11 3+                  XREF=FGHIKMQR(2600*)TU(2600*)V
  34CL  L 3350      50                                  (2)                      
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 3334.0     2 1+,2+,3+            XREF=HIKMOQ(3330)R(3360*)TU(3350*)V
+                                                                                       @ 3334.0     2 (1+,2+,3+)          XREF=HIKMOQ(3330)R(3360*)TU(3350*)V
                                                                                        @ 3383.3     2 1+,2+               XREF=HIKMNQR(3360*)TU(3350*)V
+ 34CL  L 4670      40                                  (3)                      
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 4638.9     4 2-                  XREF=J(4665*)KMU(4670*)
+                                                                                       @ 4695.7     2 0+,1,2,3,4+         XREF=HJ(4665*)KMU(4670*)
+ 34CL  L 4970      40                                  (0)                      
+         *                                                                        <W> 6 possible matches found in Adopted! Check XREF
+                                                                                       @ 4925       4 0:4+                XREF=J(4930*)OT(4939*)U(4970*)V(4970*)
+                                                                                       @ 4941.9     4 1+                  XREF=J(4930*)KMOT(4939*)U(4970*)V(4970*)
+                                                                                       @ 4957.5    11 1+,2+               XREF=HKMOTU(4970*)V(4970*)
+                                                                                       @ 4979       2 1+,2+               XREF=MN(4985*)O(4981*)Q(4990*)R(5000*)TU(4970*)V(4970*)
+                                                                                       @ 4995.6     3 1+,2+               XREF=KMN(4985*)OQ(4990*)R(5000*)TU(4970*)V(4970*)
+                                                                                       @ 5009       2 (0:4)+              XREF=MOQR(5000*)TU(4970*)V(4970*)
+ 34CL  L 5600      40                                                           
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+                                                                                       @ 5577.2    10 (2-,3)              XREF=KMOU(5600*)V(5600*)
+                                                                                       @ 5608       2                     XREF=MOU(5600*)V(5600*)
+                                                                                       @ 5635.75   20 (1,2+)              XREF=KMOU(5600*)V(5600*)
+ 34CL  L 6160      40                                  (2)                      
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 6136.2    11 1(+)                XREF=KU(6160*)V(6160*)
+                                                                                       @ 6141.8    11 1,2                 XREF=KU(6160*)V(6160*)
+ 34CL  L 7070      40                                                           
+         *                                                                        <W> 7 possible matches found in Adopted! Check XREF
+                                                                                       @ 7037.79   30 2-                  XREF=LU(7070*)V(7070*)
+                                                                                       @ 7051.6    18 (1-,2,3+)           XREF=KU(7070*)V(7070*)
+                                                                                       @ 7059.01   30 1,2                 XREF=KLU(7070*)V(7070*)
+                                                                                       @ 7061.6    10                     XREF=KU(7070*)V(7070*)
+                                                                                       @ 7078.90    9 3-                  XREF=KLU(7070*)V(7070*)
+                                                                                         7111.6    15 2-                  XREF=L
+                                                                                         7123.2    10 2-                  XREF=KL
 
 ################################################################################
 In dataset of 34CL: XV 36AR(D,A),(POL D,A)     XREF Tag=V
 
- 34CL  L 2725      20 2-                               1+3                      
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  2718      10 0:4+                XREF=O(2718*)T
-                                                                                       @ 2721.09   20 2-                  XREF=EFGHIJ(2710)KMO(2718*)V(2725)
-                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=V
+ 34CL  L 4970      40                                                           
+         *                                                                        <W> 6 possible matches found in Adopted! Check XREF
+                                                                                       @ 4925       4 0:4+                XREF=J(4930*)OT(4939*)U(4970*)V(4970*)
+                                                                                       @ 4941.9     4 1+                  XREF=J(4930*)KMOT(4939*)U(4970*)V(4970*)
+                                                                                       @ 4957.5    11 1+,2+               XREF=HKMOTU(4970*)V(4970*)
+                                                                                       @ 4979       2 1+,2+               XREF=MN(4985*)O(4981*)Q(4990*)R(5000*)TU(4970*)V(4970*)
+                                                                                       @ 4995.6     3 1+,2+               XREF=KMN(4985*)OQ(4990*)R(5000*)TU(4970*)V(4970*)
+                                                                                       @ 5009       2 (0:4)+              XREF=MOQR(5000*)TU(4970*)V(4970*)
+ 34CL  L 5600      40                                                           
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+                                                                                       @ 5577.2    10 (2-,3)              XREF=KMOU(5600*)V(5600*)
+                                                                                       @ 5608       2                     XREF=MOU(5600*)V(5600*)
+                                                                                       @ 5635.75   20 (1,2+)              XREF=KMOU(5600*)V(5600*)
+ 34CL  L 6160      40                                                           
+         *                                                                        <W> 4 possible matches found in Adopted! Check XREF
+                                                                                       @ 6136.2    11 1(+)                XREF=KU(6160*)V(6160*)
+                                                                                       @ 6141.8    11 1,2                 XREF=KU(6160*)V(6160*)
+                                                                                       @ 6169.4    11 3-                  XREF=KLV(6160*)
+                                                                                       @ 6181.27   20 (2-)                XREF=KV(6160*)
+ 34CL  L 7070      40                                                           
+         *                                                                        <W> 7 possible matches found in Adopted! Check XREF
+                                                                                       @ 7037.79   30 2-                  XREF=LU(7070*)V(7070*)
+                                                                                       @ 7051.6    18 (1-,2,3+)           XREF=KU(7070*)V(7070*)
+                                                                                       @ 7059.01   30 1,2                 XREF=KLU(7070*)V(7070*)
+                                                                                       @ 7061.6    10                     XREF=KU(7070*)V(7070*)
+                                                                                       @ 7078.90    9 3-                  XREF=KLU(7070*)V(7070*)
+                                                                                         7111.6    15 2-                  XREF=L
+                                                                                         7123.2    10 2-                  XREF=KL
