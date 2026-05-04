@@ -40,19 +40,24 @@ Standardize only the L-transfer portion of cL J$ comments. Preserve all other J$
 ### L values from reactions (period between each clause)
 ```
 L=<L1> from <Jπ_target1> in <reaction1> gives <Jπ_results1>. L=<L2> from <Jπ_target2> in <reaction2> gives <Jπ_results2>.
+
+L=<L1> from <Jπ_target1> in <reaction1> for <E_level> {I<Uncertainty>} level gives <Jπ_results1>. can be used if the level energy is coarse and may contain multiple levels. In this case, the L used for Jπ assignment is tentative.
+
 ```
 
 ### Multiple L values in one reaction (colon, semicolons between sub-clauses, final period)
-L=L1,L2 or L=L1+L2 is an inseparable list — all sub-clauses share the colon group.
+L=L1,L2 or L=L1+L2 or L=L1,L2+L3 is an inseparable list — all sub-clauses share the colon group.
 L in parentheses indicates less firm L assignment due to data quality or less certain transfer reaction mechanism, e.g., (p,3He), (3He,p).
 ```
 L=<L1,L2> from <Jπ_target> in <reaction>: L=<L1> gives <Jπ_results1>; L=<L2> gives <Jπ_results2>.
+
 L=<L1+L2> from <Jπ_target> in <reaction> gives <Jπ_results>.
 <Jπ_results> is the AND of {L=<L1> gives <Jπ_results1>; L=<L2> gives <Jπ_results2>}.
+
 L=<L1+L2,L3> from <Jπ_target> in <reaction>: L=<L1+L2> gives <Jπ_results1AND2>; L=<L3> gives <Jπ_results3>.
 ```
 
-Existing comments by human evaluators may include `for <E_level> {I<Uncertainty>}` appended. Do not delete the energy information.
+Existing comments by human evaluators may include `for <E_level> {I<Uncertainty>}` appended to indicate some coarse energies. Do not delete the energy information.
 
 
 ### Analyzing power constraint
