@@ -183,6 +183,7 @@ Follow for every single edit:
 ### ENSDF Editing Safeguards
 
 - Always read the entire file structure first; never edit blindly.
+- During task, agentic reasoning may take long and you must re-read the file immediately before applying each edit; the user may have modified it concurrently. Do not get confused if the file content slightly changes between your edits; this is expected.
 - Use ruler for every edit: `python .github\scripts\ensdf_1line_ruler.py --line "line"`.
 - Validate after every edit: check file structure integrity immediately.
 
