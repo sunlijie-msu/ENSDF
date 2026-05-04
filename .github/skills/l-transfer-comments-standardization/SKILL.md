@@ -32,18 +32,17 @@ Standardize only the L-transfer portion of cL J$ comments. Preserve all other J$
 1. Map each non-asterisk XREF letter to its reaction dataset.
 2. Read the L-transfer field (cols 56–64) from the matched source L-record. **Never** use old adopted comment text as the L value source.
 3. Run `python .github/scripts/angular_momentum_coupling.py Jπ_target Jπ_particle` to compute allowed Jπ for each L value.
+   > **Two-layer accuracy check:** (a) quoted L-value must match source cols 56–64 — never trust existing comment text; (b) deduced Jπ range must be correct per the script. L=A+B (simultaneous) requires AND intersection, not union. L=A,B (alternative) requires separate sub-clauses, and then the union of their Jπ results.
 4. Write standardized cL J$ comment, preserving all non-L-transfer arguments exactly.
-5. **Completeness:** For each adopted level, user-specified non-asterisk XREF letter with a non-blank L-field must appear in the cL J$ comment. Some angular momentum couplings may yield too many possible Jπ values, which can be omitted if stronger constraints from other sources are available.
+5. **Completeness:** Each non-asterisk XREF letter with non-blank L-field must appear in the cL J$ comment; angular momentum couplings yielding too many Jπ values may be omitted if other stronger constraints exist.
 
 ## Standard Comment Formats
 
 ### L values from reactions (period between each clause)
 ```
 L=<L1> from <Jπ_target1> in <reaction1> gives <Jπ_results1>. L=<L2> from <Jπ_target2> in <reaction2> gives <Jπ_results2>.
-
-L=<L1> from <Jπ_target1> in <reaction1> for <E_level> {I<Uncertainty>} level gives <Jπ_results1>. can be used if the level energy is coarse and may be a doublet/multiplet indicated by aterisk in its XREF. In this case, using L for Jπ assignment of a level in the Adopted dataset is weak and can be put in comments for sake of completeness.
-
 ```
+Append `for <E_level> {I<Unc>} level` after <Jπ_results> for possible doublets/multiplets that are indicated by aterisk in its XREF.
 
 ### Multiple L values in one reaction (colon, semicolons between sub-clauses, final period)
 L=L1,L2 or L=L1+L2 or L=L1,L2+L3 is an inseparable list — all sub-clauses share the colon group.
@@ -57,13 +56,7 @@ L=<L1+L2> from <Jπ_target> in <reaction> gives <Jπ_results>.
 L=<L1+L2,L3> from <Jπ_target> in <reaction>: L=<L1+L2> gives <Jπ_results1AND2>; L=<L3> gives <Jπ_results3>.
 ```
 
-Existing comments by human evaluators may include `for <E_level> {I<Uncertainty>}` appended to indicate some coarse energies. Do not delete the energy information.
-
-
 ### Analyzing power constraint
-The analyzing power (J=<L-1>, <L>, <L+1> transfer) from polarized beam data further constrains the final Jπ.
-```
-L=<L1> from <Jπ_target1> in <pol reaction1> with <L±1> transfer from analyzing power gives <Jπ_results1>.
-```
+From polarized-beam data: `L=<L> from <Jπ> in <pol reaction> with <L±1> transfer from analyzing power gives <Jπ_results>.`
 
 *Comment-only edits: skip ruler, column, and ordering validation.*
