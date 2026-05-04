@@ -44,6 +44,7 @@ L=<L1> from <Jπ_target1> in <reaction1> gives <Jπ_results1>. L=<L2> from <Jπ_
 
 ### Multiple L values in one reaction (colon, semicolons between sub-clauses, final period)
 L=L1,L2 or L=L1+L2 is an inseparable list — all sub-clauses share the colon group.
+L in parentheses indicates less firm L assignment due to data quality or less certain transfer reaction mechanism, e.g., (p,3He), (3He,p).
 ```
 L=<L1,L2> from <Jπ_target> in <reaction>: L=<L1> gives <Jπ_results1>; L=<L2> gives <Jπ_results2>.
 L=<L1+L2> from <Jπ_target> in <reaction> gives <Jπ_results>.
