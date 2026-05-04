@@ -46,7 +46,8 @@ L=<L1> from <Jπ_target1> in <reaction1> gives <Jπ_results1>. L=<L2> from <Jπ_
 L=L1,L2 or L=L1+L2 is an inseparable list — all sub-clauses share the colon group.
 ```
 L=<L1,L2> from <Jπ_target> in <reaction>: L=<L1> gives <Jπ_results1>; L=<L2> gives <Jπ_results2>.
-L=<L1+L2> from <Jπ_target> in <reaction>: L=<L1> gives <Jπ_results1>; L=<L2> gives <Jπ_results2>.
+L=<L1+L2> from <Jπ_target> in <reaction> gives <Jπ_results>.
+<Jπ_results> is the AND of {L=<L1> gives <Jπ_results1>, L=<L2> gives <Jπ_results2>}.
 L=<L1+L2,L3> from <Jπ_target> in <reaction>: L=<L1> gives <Jπ_results1>; L=<L2> gives <Jπ_results2>; L=<L3> gives <Jπ_results3>.
 ```
 
