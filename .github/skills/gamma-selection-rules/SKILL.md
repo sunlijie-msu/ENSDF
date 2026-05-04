@@ -14,6 +14,8 @@ argument-hint: [feeding Jπ list] [deexciting transitions] [lifetime known?]
 
 ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
 
+γ-ray multipolarity selection rules: `.github/docs/gamma_selection_rules.md`.
+
 ## Goal
 
 Deduce the Jπ of a level by combining constraints from:
