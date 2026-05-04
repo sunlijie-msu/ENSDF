@@ -48,8 +48,8 @@ L in parentheses indicates less firm L assignment due to data quality or less ce
 ```
 L=<L1,L2> from <Jπ_target> in <reaction>: L=<L1> gives <Jπ_results1>; L=<L2> gives <Jπ_results2>.
 L=<L1+L2> from <Jπ_target> in <reaction> gives <Jπ_results>.
-<Jπ_results> is the AND of {L=<L1> gives <Jπ_results1>, L=<L2> gives <Jπ_results2>}.
-L=<L1+L2,L3> from <Jπ_target> in <reaction>: L=<L1> gives <Jπ_results1>; L=<L2> gives <Jπ_results2>; L=<L3> gives <Jπ_results3>.
+<Jπ_results> is the AND of {L=<L1> gives <Jπ_results1>; L=<L2> gives <Jπ_results2>}.
+L=<L1+L2,L3> from <Jπ_target> in <reaction>: L=<L1+L2> gives <Jπ_results1AND2>; L=<L3> gives <Jπ_results3>.
 ```
 
 Existing comments by human evaluators may include `for <E_level> {I<Uncertainty>}` appended. Do not delete the energy information.
