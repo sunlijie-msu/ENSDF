@@ -137,16 +137,16 @@ def extract_comment_blocks(path):
 # ---------------------------------------------------------------------------
 # Match: ENERGY|g[, MULT[,|DJ=...]] (to|from) JPI[, LEVEL_E (level)?|g.s.]
 GAMMA_REF = re.compile(
-    r'(\d+(?:\.\d+)?)'                          # 1: gamma energy
-    r'\s*\|g'
-    r'(?:\s*,\s*([A-Za-z0-9+\(\)\[\]]+))?'      # 2: optional multipolarity
+    r'(\d+(?:\.\d+)?)'                           # 1: gamma energy (must be directly adjacent)
+    r'\|g'                                        # NO \s* — direct adjacency excludes |DJ=N |g
+    r'(?:\s*,\s*([A-Za-z0-9+\(\)\[\]]+))?'       # 2: optional multipolarity
     r'(?:\s*,\s*\|DJ=[^\s,;]+)?'                 # optional |DJ clause
-    r'\s*(?:,\s*)?'
-    r'(to|from)'                                 # 3: direction
+    r'(?:\s*(?:,\s*)?(?:\|g\s+)?)'               # optional standalone |g before to/from
+    r'(to|from)'                                  # 3: direction
     r'\s+'
-    r'([^\s,;]+(?:\s*[±(][^,;]*[±)])?\+?)'      # 4: J-pi
+    r'([^\s,;]+(?:\s*[±(][^,;]*[±)])?[^\s,;-]*)' # 4: J-pi
     r'(?:\s*,\s*'
-    r'(g\.s\.|(\d+(?:\.\d+)?))(?:\s+level)?)?'  # 5: level (g.s. or number)
+    r'(g\.s\.|\d+(?:\.\d+)?)(?:\s+level)?)?'    # 5: level (g.s. or number)
 )
 
 
@@ -169,26 +169,46 @@ def check_refs(path):
 
             checked += 1
 
-            # 1. Check gamma energy exists in this level's gammas
-            matched_ge = find_gamma(gammas, parent_e, ge_str)
-            if matched_ge is None:
-                errors.append(
-                    f"Line {lineno} (parent={parent_e}): GAMMA_NOT_FOUND "
-                    f"quoted={ge_str}|g — not in G-records for this level"
-                )
-                continue
+            # 1. Find the level that owns this gamma
+            # 'to'   → gamma is in G-records of parent_e (deexciting)
+            # 'from' → gamma is in G-records of the feeding level (lev_capture)
+            if direction == 'to':
+                lookup_parent = parent_e
+            else:
+                # For 'from', look up feeding level from lev_capture
+                if lev_capture and lev_capture != 'g.s.':
+                    feeding_e = find_level(levels, lev_capture)
+                    lookup_parent = feeding_e  # may be None if resonance not in file
+                else:
+                    lookup_parent = None
 
-            # 2. Check multipolarity matches
-            if mult_str:
-                rec_mult = gammas[parent_e][matched_ge]['mult']
-                # Strip brackets for comparison
-                clean_rec = rec_mult.strip('[]() ')
-                clean_cmt = mult_str.strip('[]() ')
-                if clean_rec != clean_cmt:
-                    errors.append(
-                        f"Line {lineno} (parent={parent_e}): MULTIPOLARITY_MISMATCH "
-                        f"quoted={mult_str!r} record={rec_mult!r} for {ge_str}|g"
+            matched_ge = find_gamma(gammas, lookup_parent, ge_str) if lookup_parent is not None else None
+            if matched_ge is None:
+                if direction == 'from':
+                    # Feeding gammas from resonances may legitimately not be in the file
+                    warnings.append(
+                        f"Line {lineno} (parent={parent_e}): FEEDING_GAMMA_NOT_FOUND "
+                        f"quoted={ge_str}|g from {lev_capture} — not in G-records "
+                        f"(may be a resonance or primary transition)"
                     )
+                else:
+                    errors.append(
+                        f"Line {lineno} (parent={parent_e}): GAMMA_NOT_FOUND "
+                        f"quoted={ge_str}|g — not in G-records for this level"
+                    )
+                # Still do energy conservation if level info is present
+            else:
+                # 2. Check multipolarity matches
+                if mult_str:
+                    rec_mult = gammas[lookup_parent][matched_ge]['mult']
+                    # Strip brackets for comparison
+                    clean_rec = rec_mult.strip('[]() ')
+                    clean_cmt = mult_str.strip('[]() ')
+                    if clean_rec != clean_cmt:
+                        errors.append(
+                            f"Line {lineno} (parent={parent_e}): MULTIPOLARITY_MISMATCH "
+                            f"quoted={mult_str!r} record={rec_mult!r} for {ge_str}|g"
+                        )
 
             # 3. Check level energy if given
             if lev_capture and lev_capture != 'g.s.':
