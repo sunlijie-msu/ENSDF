@@ -41,7 +41,7 @@ Standardize only the L-transfer portion of cL J$ comments. Preserve all other J$
 ```
 L=<L1> from <Jπ_target1> in <reaction1> gives <Jπ_results1>. L=<L2> from <Jπ_target2> in <reaction2> gives <Jπ_results2>.
 
-L=<L1> from <Jπ_target1> in <reaction1> for <E_level> {I<Uncertainty>} level gives <Jπ_results1>. can be used if the level energy is coarse and may contain multiple levels. In this case, the L used for Jπ assignment is tentative.
+L=<L1> from <Jπ_target1> in <reaction1> for <E_level> {I<Uncertainty>} level gives <Jπ_results1>. can be used if the level energy is coarse and may be a doublet/multiplet indicated by aterisk in its XREF. In this case, using L for Jπ assignment of a level in the Adopted dataset is weak and can be put in comments for sake of completeness.
 
 ```
 
