@@ -1457,8 +1457,6 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      *new XREF old tags    34CLX L XREF=HQ(3980*)T(3937*)U(3940*)
                     32S(3HE,P)--->H  H     34CL  L 3982.6    72                                  (0)+3                     *** possible JPI=(1+)
                      35CL(G,N)--->Q  Q(*)  34CL  L 3980                                                                   
-                   35CL(3HE,A)--->T  T(*)  34CL  L 3937      10                                  0+2      0.003+0.07       *** possible JPI=1+,2+
-                   36AR(P,3HE)--->U  U(*)  34CL  L 3940      40                                  (0)                       *** possible JPI=(0+,1+)
                     32S(3HE,P)--->H  H     34CL cL E$doublet.
                    36AR(P,3HE)--->U  U(*)  34CL2 L ISPIN=1                                                                
 ------------------------------------------------------------------------------------------------------------------------
@@ -2111,9 +2109,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      *new XREF old tags    34CLX L XREF=J(4930*)MOT(4939*)U(4970*)V(4970*)
                      #old XREF in Adopted  34CLX L XREF=J(4930*)OT(4939*)U(4970*)V(4970*)
                       32S(A,D)--->J  J(*)  34CL  L 4930      20                                  0+2,2                     *** possible JPI=1+,2+,3+
-                    33S(3HE,D)--->M  M     34CL  L 4941.9                                        1        0.0060    7 A    *** possible JPI=0-,1-,2-,3-
                     34S(3HE,T)--->O  O     34CL  L 4925      4                                                             *** possible JPI=(0,1,2,3,4,5,6,7+)
-                   35CL(3HE,A)--->T  T(*)  34CL  L 4939      11                                  2        0.13             *** possible JPI=0+,1+,2+,3+,4+
                    36AR(P,3HE)--->U  U(*)  34CL  L 4970      40                                  (0)                       *** possible JPI=(0+,1+)
            36AR(D,A),(POL D,A)--->V  V(*)  34CL  L 4970      40                                                            *** possible JPI=(0-,1,2,3,4,5,6,7+)
                       32S(A,D)--->J  J(*)  34CL cL L$2 is slightly preferred based on the DWBA fit (1982De29).            
@@ -2132,12 +2128,11 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  LEVEL************************************ 34CL  L 4941.9    4  1+               5.5 FS    LT                              --- possible JPI=(1+)
                      *new XREF new tags    34CLX L XREF=J(4930*)KM(*)OT(4939*)U(4970*)V(4970*)
                      *new XREF old tags    34CLX L XREF=J(4930*)KM(*)OT(4939*)U(4970*)V(4970*)
-                     #old XREF in Adopted  34CLX L XREF=J(4930*)KMOT(4939*)U(4970*)V(4970*)
+                     #old XREF in Adopted  34CLX L XREF=J(4930*)KMOT(4939)U(4970*)V(4970*)
                       32S(A,D)--->J  J(*)  34CL  L 4930      20                                  0+2,2                     *** possible JPI=1+,2+,3+
                       33S(P,G)--->K  K     34CL  L 4941.9    4                   6 FS      LT                             
-                    33S(3HE,D)--->M  M(*)  34CL  L 4957.3                                        2        0.079     5 A    *** possible JPI=0+,1+,2+,3+,4+
                     34S(3HE,T)--->O  O     34CL  L 4942      4                                   0                         *** possible JPI=0+,1+
-                   35CL(3HE,A)--->T  T(*)  34CL  L 4939      11                                  2        0.13             *** possible JPI=0+,1+,2+,3+,4+
+                   35CL(3HE,A)--->T  T     34CL  L 4939      11                                  2        0.13             *** possible JPI=0+,1+,2+,3+,4+
                    36AR(P,3HE)--->U  U(*)  34CL  L 4970      40                                  (0)                       *** possible JPI=(0+,1+)
            36AR(D,A),(POL D,A)--->V  V(*)  34CL  L 4970      40                                                            *** possible JPI=(0-,1,2,3,4,5,6,7+)
                       32S(A,D)--->J  J(*)  34CL cL L$2 is slightly preferred based on the DWBA fit (1982De29).            
