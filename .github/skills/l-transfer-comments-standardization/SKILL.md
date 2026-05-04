@@ -45,15 +45,26 @@ L=<L1> from <Jπ_target1> in <reaction1> gives <Jπ_results1>. L=<L2> from <Jπ_
 Append `for <E_level> {I<Unc>} level` after <Jπ_results> for possible doublets/multiplets that are indicated by aterisk in its XREF.
 
 ### Multiple L values in one reaction (colon, semicolons between sub-clauses, final period)
-L=L1,L2 or L=L1+L2 or L=L1,L2+L3 is an inseparable list — all sub-clauses share the colon group.
+L=L1,L2 or L=L1+L2 or L=L1,L2+L3 is an inseparable list.
 L in parentheses indicates less firm L assignment due to data quality or less certain transfer reaction mechanism, e.g., (p,3He), (3He,p).
-```
-L=<L1,L2> from <Jπ_target> in <reaction>: L=<L1> gives <Jπ_results1>; L=<L2> gives <Jπ_results2>.
 
-L=<L1+L2> from <Jπ_target> in <reaction> gives <Jπ_results>.
+```
+cL J$L=<L1,L2> from <Jπ_target> in <reaction>: L=<L1> gives <Jπ_results1>; L=<L2> gives <Jπ_results2>.
+
+<Jπ_results> is the OR of {<Jπ_results1>; <Jπ_results2>}.
+
+cL J$L=<L1+L2> from <Jπ_target> in <reaction> gives <Jπ_results>.
 <Jπ_results> is the AND of {L=<L1> gives <Jπ_results1>; L=<L2> gives <Jπ_results2>}.
 
-L=<L1+L2,L3> from <Jπ_target> in <reaction>: L=<L1+L2> gives <Jπ_results1AND2>; L=<L3> gives <Jπ_results3>.
+cL J$L=<L1+L2,L3> from <Jπ_target> in <reaction>: L=<L1+L2> gives <Jπ_results1AND2>; L=<L3> gives <Jπ_results3>.
+
+<Jπ_results> is the OR of {<Jπ_results1AND2>; <Jπ_results3>}.
+
+cL J$L=<L1+L2,L3+L4> from <Jπ_target> in <reaction>: L=<L1+L2> gives <Jπ_results1AND2>; L=<L3+L4> gives <Jπ_results3AND4>.
+
+<Jπ_results> is the OR of {<Jπ_results1AND2>; <Jπ_results3AND4>}.
+
+Final Jπ results that go to the Level-record J|p field usually take the AND of each <Jπ_results> from different datasets into account.
 ```
 
 ### Analyzing power constraint
