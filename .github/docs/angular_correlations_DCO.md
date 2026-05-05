@@ -1,4 +1,5 @@
-﻿# Guidelines on Directional Correlations of γ-rays from Oriented States (DCO)
+﻿# Guidelines on Directional Correlations of γ-rays from Oriented States (DCO) and Angular Distribution of Oriented nuclei (ADO)
+DCO and ADO are experimental observables commonly measured in in-beam γ spectroscopy to determine the spin changes of excited nuclear states and the multipolarity of γ-ray transitions.
 
 ## 1. General Selection Rules for Gamma Transitions
 
@@ -33,17 +34,16 @@ The nuclear spin changes by less than the multipole order. The angular momentum 
 
 Initial state spin: $J_i = 9/2$
 
-| Classification | Spin Change ($\Delta J$) | Final Spin ($J_f$) |
-| :--- | :---: | :--- |
-| **Stretched Quadrupole** | $2$ | $5/2$ or $13/2$ |
-| **Unstretched Quadrupole** | $1$ | $7/2$ or $11/2$ |
-| **Unstretched Quadrupole** | $0$ | $9/2$ |
-| **Stretched Dipole** | $1$ | $7/2$ or $11/2$ |
-| **Unstretched Dipole** | $0$ | $9/2$ |
+| Classification             | Spin Change ($\Delta J$) | Final Spin ($J_f$) |
+| :------------------------- | :----------------------: | :----------------- |
+| **Stretched Quadrupole**   |           $2$            | $5/2$ or $13/2$    |
+| **Unstretched Quadrupole** |           $1$            | $7/2$ or $11/2$    |
+| **Unstretched Quadrupole** |           $0$            | $9/2$              |
+| **Stretched Dipole**       |           $1$            | $7/2$ or $11/2$    |
+| **Unstretched Dipole**     |           $0$            | $9/2$              |
 
 ## 4. DCO Ratios
 
-The DCO ratio ($R_{DCO}$) is an experimental observable used to determine the multipolarity and electromagnetic character of γ-ray transitions. By comparing intensities measured at different angles relative to the beam axis, physicists can deduce the change in nuclear spin ($\Delta J$) between energy levels.
 
 The ratio is defined as:
 
@@ -58,23 +58,23 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 
 *Reference Transition:* $\Delta J = 2$
 
-| Observed Transition Type | Spin Change ($\Delta J$) | Expected $R_{DCO}$ |
-| :--- | :--- | :--- |
-| **Stretched Quadrupole** | $\Delta J = 2$ | $\approx 1.0$ |
-| **Stretched Dipole** | $\Delta J = 1$ | $\approx 0.56$ |
+| Observed Transition Type      | Spin Change    | Expected $R_{DCO}$                                       |
+| :---------------------------- | :------------- | :------------------------------------------------------- |
+| **Stretched Quadrupole**      | $\Delta J = 2$ | $\approx 1.0$                                            |
+| **Stretched Dipole**          | $\Delta J = 1$ | $\approx 0.56$                                           |
 | **Mixed Dipole + Quadrupole** | $\Delta J = 1$ | $0.2 \text{ -- } 1.3$ (Depends on mixing ratio $\delta$) |
-| **Unstretched Dipole** | $\Delta J = 0$ | $\approx 1.0$ |
-| **Mixed Unstretched** | $\Delta J = 0$ | $0.6 \text{ -- } 1.0$ |
+| **Unstretched Dipole**        | $\Delta J = 0$ | $\approx 1.0$                                            |
+| **Mixed Unstretched**         | $\Delta J = 0$ | $0.6 \text{ -- } 1.0$                                    |
 
 ### B. Gate on Stretched Dipole Transition
 
 *Reference Transition:* $\Delta J = 1$.
 
-| Observed Transition Type | Spin Change ($\Delta J$) | Expected $R_{DCO}$ |
-| :--- | :--- | :--- |
-| **Stretched Quadrupole** | $\Delta J = 2$ | $\approx 1.8$ |
-| **Stretched Dipole** | $\Delta J = 1$ | $\approx 1.0$ |
-| **Unstretched Dipole** | $\Delta J = 0$ | $\approx 1.8$ |
+| Observed Transition Type | Spin Change    | Expected $R_{DCO}$ |
+| :----------------------- | :------------- | :----------------- |
+| **Stretched Quadrupole** | $\Delta J = 2$ | $\approx 1.8$      |
+| **Stretched Dipole**     | $\Delta J = 1$ | $\approx 1.0$      |
+| **Unstretched Dipole**   | $\Delta J = 0$ | $\approx 1.8$      |
 
 ### C. Ambiguities
 
@@ -106,7 +106,7 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 *   Mark as **D**.
 
 **If $R_{DCO}(Q) \approx 1.0$ or $R_{DCO}(D) \approx 2.0$:**
-*   Transition is stretched quadrupole ($\Delta J = 2$) dominant.
+*   Transition is stretched quadrupole ($\Delta J = 2$) dominant and with a possibly weaker dipole or octupole component.
 *   Mark as **Q**.
 *   Then look at spins, a less common case is if the level scheme indicates $J_i = J_f$:
 *   Mark as **ΔJ=0**.
@@ -127,7 +127,8 @@ Based on the Step 1 classification:
 
 *   If $\delta$ is not given, assign Q in M field.
 *   If $|\delta| < 1$ is given, assign Q+O in M field.
-*   Then look at spins, the level scheme should indicate $\Delta J = 2$; but if it indicates $\Delta J = 1$, assign D+Q in M field.
+*   If $|\delta| > 1$ is given, assign D+Q in M field because dipole is the weaker component.
+*   Then look at spins, the level scheme should indicate $\Delta J = 2$; but if it indicates $\Delta J = 1$, assign D+Q in M field and flag this discrepancy for user review.
 
 ##### For Transitions Marked ΔJ=0
 
