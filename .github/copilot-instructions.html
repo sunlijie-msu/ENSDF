@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Evaluated Nuclear Structure Data File &lpar;ENSDF&rpar; Instructions for GitHub Copilot</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 17px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <hr>
+<h2 id="applyto-">applyTo: &quot;**&quot;</h2>
+<h1 id="evaluated-nuclear-structure-data-file-ensdf-instructions-for-github-copilot">Evaluated Nuclear Structure Data File (ENSDF) Instructions for GitHub Copilot</h1>
+<h2 id="your-role">Your Role</h2>
+<p>You are an AI Agent specializing in the Evaluated Nuclear Structure Data File (ENSDF) 80-column fixed format. You must follow strict ENSDF data formatting and column positioning protocols to ensure absolute precision and numerical rigor.</p>
+<hr>
+<h2 id="1-ensdf-comment-text-format-standards">1. ENSDF Comment Text Format Standards</h2>
+<h3 id="superscripts-and-subscripts">Superscripts and Subscripts</h3>
+<ul>
+<li><code>{+n}</code>: Superscript (e.g., <code>{+3}He</code> displays as ³He)</li>
+<li><code>{-n}</code>: Subscript (e.g., <code>T{-1/2}</code> → T₁/₂, <code>CO{-2}</code> → CO₂)</li>
+<li><code>{+-n}</code>: Negative superscript (e.g., <code>10{+-4}</code> displays as 10⁻⁴)</li>
+</ul>
+<h3 id="greek-letters-and-mathematical-symbols">Greek Letters and Mathematical Symbols</h3>
+<p><strong>Greek Lowercase:</strong></p>
+<ul>
+<li><code>|a</code> → α (alpha), <code>|b</code> → β (beta), <code>|c</code> → η (eta), <code>|d</code> → δ (delta)</li>
+<li><code>|e</code> → ε (varepsilon), <code>|f</code> → φ (phi), <code>|g</code> → γ (gamma), <code>|h</code> → χ (chi)</li>
+<li><code>|i</code> → ι (iota), <code>|j</code> → ε (epsilon), <code>|k</code> → κ (kappa), <code>|l</code> → λ (lambda)</li>
+<li><code>|m</code> → μ (mu), <code>|n</code> → ν (nu), <code>|p</code> → π (pi), <code>|q</code> → θ (theta)</li>
+<li><code>|r</code> → ρ (rho), <code>|s</code> → σ (sigma), <code>|t</code> → τ (tau), <code>|u</code> → υ (upsilon)</li>
+<li><code>|v</code> → ? (undefined), <code>|w</code> → ω (omega), <code>|x</code> → ξ (xi), <code>|y</code> → ψ (psi), <code>|z</code> → ζ (zeta)</li>
+</ul>
+<p><strong>Greek Uppercase:</strong></p>
+<ul>
+<li><code>|C</code> → H, <code>|D</code> → Δ (Delta), <code>|F</code> → Φ (Phi), <code>|G</code> → Γ (Gamma), <code>|H</code> → X</li>
+<li><code>|J</code> → ~ (sim), <code>|L</code> → Λ (Lambda), <code>|P</code> → Π (Pi), <code>|Q</code> → Θ (Theta), <code>|R</code> → P</li>
+<li><code>|S</code> → Σ (Sigma), <code>|U</code> → Υ (Upsilon), <code>|V</code> → ∇ (nabla)</li>
+<li><code>|W</code> → Ω (Omega), <code>|X</code> → Ξ (Xi), <code>|Y</code> → Ψ (Psi)</li>
+</ul>
+<p><strong>Mathematical Symbols:</strong></p>
+<ul>
+<li><code>|*</code> → × (times), <code>|?</code> → ≈ (approximate/tilde), <code>|&lt;</code> → ≤ (leq), <code>|&gt;</code> → ≥ (geq)</li>
+<li><code>|'</code> → ° (degree), <code>|+</code> → ± (plus-minus), <code>|-</code> → ∓ (minus-plus)</li>
+<li><code>|=</code> → ≠ (not equal), <code>|@</code> → ∞ (infinity), <code>|^</code> → ↑ (up arrow)</li>
+<li><code>|_</code> → ↓ (down arrow), <code>|&amp;</code> → ≡ (equivalent), <code>|(</code> → ← (left arrow)</li>
+<li><code>|)</code> → → (right arrow), <code>|.</code> → ∝ (proportional), <code>||</code> → | (vertical bar)</li>
+<li><code>~#</code> → ⊗ (tensor product)</li>
+</ul>
+<p><strong>Brackets and Parentheses:</strong></p>
+<ul>
+<li><code>|0</code> → ( (left parenthesis), <code>|1</code> → ) (right parenthesis)</li>
+<li><code>|2</code> → [ (left bracket), <code>|3</code> → ] (right bracket)</li>
+<li><code>|4</code> → ⟨ (left angle bracket), <code>|5</code> → ⟩ (right angle bracket)</li>
+</ul>
+<p><strong>Mathematical Operators:</strong></p>
+<ul>
+<li><code>|7</code> → ∫ (integral), <code>|8</code> → ∏ (product), <code>|9</code> → ∑ (summation)</li>
+</ul>
+<p><strong>Important Rules:</strong></p>
+<ul>
+<li>Use <code>|?</code> for approximate values (renders as ≈).</li>
+<li>Standalone <code>~</code> is prohibited for approximate values in ENSDF.</li>
+</ul>
+<h4 id="common-examples">Common Examples</h4>
+<ul>
+<li><code>%(|e+|b{++})p</code> decay → %(ε+β⁺)p decay</li>
+<li><code>{+208}Pb({+36}S,{+35}S)</code> reaction → ²⁰⁸Pb(³⁶S,³⁵S) reaction</li>
+<li><code>{+32}S({+3}He,p|g){+34}Cl</code> reaction → ³²S(³He,pγ)³⁴Cl reaction</li>
+<li><code>{+nat}Ni</code> means natural nickel</li>
+<li><code>|s(E({+3}He),|q)</code> → σ(E(³He),θ)</li>
+<li><code>Zn{-3}P{-2}</code> → Zn₃P₂</li>
+<li><code>log {Ift}</code> → log <i>ft</i> (italicize &quot;ft&quot;)</li>
+</ul>
+<h4 id="general-language-style">General Language Style</h4>
+<p>Use telegraphic phrasing in comment text.</p>
+<h3 id="nuclear-science-references-nsr">Nuclear Science References (NSR)</h3>
+<ul>
+<li>Each article in NSR has a unique 8-character key number (the &quot;key number&quot;).</li>
+<li>ENSDF uses this key number to reference published articles.</li>
+</ul>
+<p><strong>Format:</strong> <code>YYYYAA##</code> (e.g., <code>1970Br10</code>, <code>1974ClZK</code>).</p>
+<p><strong>Capitalization rules:</strong></p>
+<ul>
+<li>Author initials: First letter uppercase, rest lowercase (e.g., <code>Ba</code>, not <code>BA</code>; <code>Br</code>, not <code>BR</code>).</li>
+<li>Letter suffixes: All uppercase (e.g., <code>ClZK</code>, not <code>Clzk</code>; <code>UmZZ</code>, not <code>Umzz</code>).</li>
+</ul>
+<p><strong>Citation lists:</strong> Use comma-separated values with spaces (e.g., <code>2021Vl03, 2015Vl01, 1974ClZK</code>).</p>
+<hr>
+<h2 id="2-ensdf-80-column-format-standards">2. ENSDF 80-Column Format Standards</h2>
+<h3 id="ensdf-nucid-field-format-rules-columns-15">ENSDF NUCID Field Format Rules (Columns 1–5)</h3>
+<p><strong>CRITICAL: Exact Column Positioning Required</strong></p>
+<p><strong>Two-digit mass number + single-letter element</strong> (e.g., 35S, 51V, 12C):</p>
+<ul>
+<li><strong>Format:</strong> <code>MME</code> (space, mass, element, space).</li>
+<li><strong>Column 1:</strong> Space.</li>
+<li><strong>Columns 2–3:</strong> Mass number (35, 51, 12).</li>
+<li><strong>Column 4:</strong> One-letter element symbol (S, V, C).</li>
+<li><strong>Column 5:</strong> Space.</li>
+<li><strong>Results:</strong> <code>35S</code>, <code>51V</code>, <code>12C</code>.</li>
+</ul>
+<p><strong>Two-digit mass number + two-letter element</strong> (e.g., 35Cl, 74Ge, 32Si):</p>
+<ul>
+<li><strong>Format:</strong> <code> MMEl</code> (space, mass, element).</li>
+<li><strong>Column 1:</strong> Space.</li>
+<li><strong>Columns 2–3:</strong> Mass number (35, 74, 32).</li>
+<li><strong>Columns 4–5:</strong> Two-letter element symbol (Cl, Ge, Si).</li>
+<li><strong>Results:</strong> <code> 35Cl</code>, <code> 74Ge</code>, <code> 32Si</code>.</li>
+</ul>
+<p><strong>Three-digit mass number + single-letter element</strong> (e.g., 127I, 232U):</p>
+<ul>
+<li><strong>Format:</strong> <code>MMME </code> (mass, element, space).</li>
+<li><strong>Columns 1–3:</strong> Mass number (127, 232).</li>
+<li><strong>Column 4:</strong> One-letter element symbol (I, W, U).</li>
+<li><strong>Column 5:</strong> Space.</li>
+<li><strong>Results:</strong> <code>127I </code>, <code>184W </code>.</li>
+</ul>
+<p><strong>Three-digit mass number + two-letter element</strong> (e.g., 120Sn, 208Pb, 252Cf):</p>
+<ul>
+<li><strong>Format:</strong> <code>MMMEl</code> (mass, two-letter element).</li>
+<li><strong>Columns 1–3:</strong> Mass number (120, 208, 252).</li>
+<li><strong>Columns 4–5:</strong> Two-letter element symbol (Sn, Pb, Cf).</li>
+<li><strong>Results:</strong> <code>120Sn</code>, <code>208Pb</code>, <code>252Cf</code>.</li>
+</ul>
+<p><strong>CRITICAL NUCID RULES:</strong></p>
+<ul>
+<li>Column positioning is <strong>EXACT</strong>; being one column off will break the ENSDF parser.</li>
+<li>Element symbols are case-sensitive and must follow the official ENSDF style (e.g., antimony is <code>SB</code>, not <code>Sb</code>).</li>
+<li>Spaces are mandatory where specified to maintain field boundaries.</li>
+<li>Mass numbers must be numeric only.</li>
+</ul>
+<h3 id="record-format-specifications">Record Format Specifications</h3>
+<h4 id="energy-level-record-l-record">Energy Level Record (L-Record)</h4>
+<pre><code class="language-text">Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ 35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q
+ 35P   L 3572.0    12 3/2+,5/2+        29 FS     14    2        0.8       4 A  ?
+ 35CL  L 1219      5  3/2+             0.39 PS   8     2        0.43      15A  S
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Columns</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">NUCID</td>
+<td style="text-align:left">1–5</td>
+<td style="text-align:left">Nucleus (e.g., &quot; 35P &quot; or &quot; 35Cl&quot;).</td>
+</tr>
+<tr>
+<td style="text-align:left">CONT</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">Continuation label.</td>
+</tr>
+<tr>
+<td style="text-align:left">Space</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">Must be blank.</td>
+</tr>
+<tr>
+<td style="text-align:left">TYPE</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">&quot;L&quot; (Level).</td>
+</tr>
+<tr>
+<td style="text-align:left">Space</td>
+<td style="text-align:left">9</td>
+<td style="text-align:left">Must be blank.</td>
+</tr>
+<tr>
+<td style="text-align:left">E</td>
+<td style="text-align:left">10–19</td>
+<td style="text-align:left">Level energy.</td>
+</tr>
+<tr>
+<td style="text-align:left">DE</td>
+<td style="text-align:left">20–21</td>
+<td style="text-align:left">Energy uncertainty.</td>
+</tr>
+<tr>
+<td style="text-align:left">Space</td>
+<td style="text-align:left">22</td>
+<td style="text-align:left">Readability space.</td>
+</tr>
+<tr>
+<td style="text-align:left">J</td>
+<td style="text-align:left">23–39</td>
+<td style="text-align:left">Spin-parity.</td>
+</tr>
+<tr>
+<td style="text-align:left">T</td>
+<td style="text-align:left">40–49</td>
+<td style="text-align:left">Half-life with units (e.g., MEV, FS, PS, S, H, D).</td>
+</tr>
+<tr>
+<td style="text-align:left">DT</td>
+<td style="text-align:left">50–55</td>
+<td style="text-align:left">Half-life uncertainty.</td>
+</tr>
+<tr>
+<td style="text-align:left">L</td>
+<td style="text-align:left">56–64</td>
+<td style="text-align:left">Angular momentum transfer (L-transfer).</td>
+</tr>
+<tr>
+<td style="text-align:left">S</td>
+<td style="text-align:left">65–74</td>
+<td style="text-align:left">Spectroscopic strength.</td>
+</tr>
+<tr>
+<td style="text-align:left">DS</td>
+<td style="text-align:left">75–76</td>
+<td style="text-align:left">Uncertainty in S.</td>
+</tr>
+<tr>
+<td style="text-align:left">C</td>
+<td style="text-align:left">77</td>
+<td style="text-align:left">Comment flag.</td>
+</tr>
+<tr>
+<td style="text-align:left">MS</td>
+<td style="text-align:left">78–79</td>
+<td style="text-align:left">Metastable state (isomer), denoted by 'M '.</td>
+</tr>
+<tr>
+<td style="text-align:left">Q</td>
+<td style="text-align:left">80</td>
+<td style="text-align:left">'?' for uncertain/questionable; 'S' for assumed but not observed.</td>
+</tr>
+</tbody>
+</table>
+<p>For multiple J-π values separated by commas, no spaces after commas.</p>
+<p><strong>CRITICAL: Comment Line Association</strong></p>
+<ul>
+<li><code>cL</code> comment lines apply <strong>only</strong> to the immediately preceding L-record.</li>
+<li>Do not modify L-record data based on comments for other levels.</li>
+<li>Each L-record with or without a following <code>cL</code> line is an independent record.</li>
+</ul>
+<h4 id="gamma-transition-record-g-record">Gamma Transition Record (G-Record)</h4>
+<pre><code class="language-text">Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ 35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q
+ 35P   G 1572.0    10 70.0   24 M1+E2    -1.23   25    0.090  20 71.0     23A  S
+ 35Si  G 2572.0    5  5.0    2  E2       +2.1          0.05   5  5.1      6 B  ?
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Columns</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">NUCID</td>
+<td style="text-align:left">1–5</td>
+<td style="text-align:left">Nucleus (e.g., &quot; 35P &quot; or &quot; 35Cl&quot;)</td>
+</tr>
+<tr>
+<td style="text-align:left">CONT</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">Continuation label</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">Must be blank</td>
+</tr>
+<tr>
+<td style="text-align:left">TYPE</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">&quot;G&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">9</td>
+<td style="text-align:left">Must be blank</td>
+</tr>
+<tr>
+<td style="text-align:left">E</td>
+<td style="text-align:left">10–19</td>
+<td style="text-align:left">Gamma energy</td>
+</tr>
+<tr>
+<td style="text-align:left">DE</td>
+<td style="text-align:left">20–21</td>
+<td style="text-align:left">Energy uncertainty</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">22</td>
+<td style="text-align:left">Readability space</td>
+</tr>
+<tr>
+<td style="text-align:left">RI</td>
+<td style="text-align:left">23–29</td>
+<td style="text-align:left">Relative photon intensity (starts at col 23)</td>
+</tr>
+<tr>
+<td style="text-align:left">DRI</td>
+<td style="text-align:left">30–31</td>
+<td style="text-align:left">Uncertainty in RI (including GT, LT markers)</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">Readability space</td>
+</tr>
+<tr>
+<td style="text-align:left">M</td>
+<td style="text-align:left">33–41</td>
+<td style="text-align:left">Multipolarity</td>
+</tr>
+<tr>
+<td style="text-align:left">MR</td>
+<td style="text-align:left">42–49</td>
+<td style="text-align:left">Mixing ratio</td>
+</tr>
+<tr>
+<td style="text-align:left">DMR</td>
+<td style="text-align:left">50–55</td>
+<td style="text-align:left">Uncertainty in MR</td>
+</tr>
+<tr>
+<td style="text-align:left">CC</td>
+<td style="text-align:left">56–62</td>
+<td style="text-align:left">Conversion coefficient</td>
+</tr>
+<tr>
+<td style="text-align:left">DCC</td>
+<td style="text-align:left">63–64</td>
+<td style="text-align:left">Uncertainty in CC</td>
+</tr>
+<tr>
+<td style="text-align:left">TI</td>
+<td style="text-align:left">65–74</td>
+<td style="text-align:left">Total transition intensity</td>
+</tr>
+<tr>
+<td style="text-align:left">DTI</td>
+<td style="text-align:left">75–76</td>
+<td style="text-align:left">Uncertainty in TI</td>
+</tr>
+<tr>
+<td style="text-align:left">C</td>
+<td style="text-align:left">77</td>
+<td style="text-align:left"><strong>Comment flag</strong> (A-Z, a-z, *, &amp;, @) - See G-Record Flag Rules below</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">78–79</td>
+<td style="text-align:left">Must be blank</td>
+</tr>
+<tr>
+<td style="text-align:left">Q</td>
+<td style="text-align:left">80</td>
+<td style="text-align:left"><strong>Additional indicator</strong> (space, ?, S) - See G-Record Indicator Rules below</td>
+</tr>
+</tbody>
+</table>
+<h3 id="critical-ensdf-formatting-rules">Critical ENSDF Formatting Rules</h3>
+<h4 id="ensdf-structural-relationships">ENSDF Structural Relationships</h4>
+<p><strong>Level Blocks or Level Units</strong></p>
+<ol>
+<li>Each L-record starts a new level block (physical level).</li>
+<li>All G-records immediately following an L-record belong to that level block.</li>
+<li>Any G-records that appear before the next L-record attach to the previous level, never to the next level.</li>
+<li>A level with no gamma rays consists of a single L-record with no following G-records.</li>
+<li>Preserve strict L→G grouping; ENSDF parsers depend on it.</li>
+</ol>
+<p><strong>Comment Line Scope and Order</strong></p>
+<ul>
+<li><strong>cL lines:</strong> Apply only to the immediately preceding L-record and are an optional part of that L-record.</li>
+<li><strong>cL, 2cL, 3cL lines:</strong> Form a unified comment block for that L-record.</li>
+<li>When multiple L-comment identifiers are present, order them as follows: <code>E$ → J$ → T$ → S$ → general</code> (no identifier).</li>
+<li><strong>cG lines:</strong> Apply only to the immediately preceding G-record and are an optional part of that G-record.</li>
+<li><strong>cG, 2cG, 3cG lines:</strong> Form a unified comment block for that G-record.</li>
+<li>When multiple G-comment identifiers are present, order them as follows: <code>E$ → RI$ → M$ → MR$ → other identifiers</code>.</li>
+</ul>
+<p><strong>Integral Understanding of Continuation Records and Comments (Column 6)</strong></p>
+<ul>
+<li>Column 6 contains the continuation marker: blank for the first record and alphanumeric for continuation records.</li>
+<li>Common continuation records include <code>2 L</code> and <code>F L</code> for L-records, and <code>2 G</code> and <code>B G</code> for G-records.</li>
+<li>Common continuation comments include <code>2cL</code> and <code>3cL</code> for L-comment lines, and <code>2cG</code> and <code>3cG</code> for G-comment lines.</li>
+<li>Continuation records must remain attached to, and apply only to, the immediately preceding record type (L or G).</li>
+<li>Continuation comments must remain attached to the immediately preceding comment line.</li>
+<li>Multi-line <code>c</code> comments (with <code>2c</code>, <code>3c</code> continuation markers) must be fully concatenated as an <strong>Inseparable Whole</strong> during data editing and parsing.</li>
+<li><code>2cL</code> must follow <code>cL</code>, and <code>3cL</code> must follow <code>2cL</code>, etc.</li>
+<li><code>2cG</code> must follow <code>cG</code>, and <code>3cG</code> must follow <code>2cG</code>, etc.</li>
+<li>Continuation records have their own text-format standards. Do not use comment text format in continuation records. Example: <code>35CA2 L %EC+%B+=100$%ECP=95.8 3$%EC2P=4.2 3</code>.</li>
+<li>Less common: FLAG markers (for example, <code>FLAG=A</code>) are placed in continuation records following the record (L or G) that they describe.</li>
+</ul>
+<h4 id="left-justification-requirement">Left-Justification Requirement</h4>
+<p><strong>MANDATORY:</strong> All values and uncertainties in all fields MUST be left-justified (NEVER right-justified or centered).</p>
+<ul>
+<li><strong>Applies to:</strong> energies, intensities, half-lives, spin-parity, uncertainties (DE, DRI, DT, DMR, DCC, DTI, DS), special markers (GT, LT), and all other field content.</li>
+<li><strong>Formatting:</strong> Values start at the leftmost column of the field, padded with trailing spaces to fill field width.</li>
+</ul>
+<h4 id="energy-ordering-requirement">Energy Ordering Requirement</h4>
+<p><strong>Requirement:</strong></p>
+<ul>
+<li>L-records and G-records MUST be in ascending energy order.</li>
+<li><strong>Consequence:</strong> Violations break automated ENSDF parsers and database ingestion.</li>
+<li><strong>Common error:</strong> Inserting new levels or gammas without reordering by energy.</li>
+</ul>
+<h4 id="g-record-flag-rules">G-Record Flag Rules</h4>
+<p><strong>Column 77 (C Field, Comment Flag):</strong></p>
+<ul>
+<li><code>A-Z</code>, <code>a-z</code>: Any single letter used to refer to a specific comment record (cannot be a number).</li>
+<li><code>*</code> (asterisk): Denotes a multiply-placed gamma ray.</li>
+<li><code>&amp;</code> (ampersand): Denotes a multiply-placed transition with intensity not divided.</li>
+<li><code>@</code> (at symbol): Denotes a multiply-placed transition with intensity suitably divided.
+Note: Multiple identical gamma energies appearing in multiple level blocks should be flagged with either <code>*</code>, <code>&amp;</code>, or <code>@</code>.</li>
+<li><code>Space</code>: No comment flag.</li>
+<li><strong>FORBIDDEN:</strong> Question mark (<code>?</code>) is NOT allowed in column 77.</li>
+</ul>
+<p><strong>Column 80 (Q Field, Additional Indicator):</strong></p>
+<ul>
+<li><code>Space</code>: Normal, well-established gamma transition.</li>
+<li><code>?</code>: Denotes uncertain placement of the transition in the level scheme.</li>
+<li><code>S</code>: Denotes expected or assumed, but as yet unobserved, gamma transition.</li>
+<li><strong>CRITICAL:</strong> Only space, <code>?</code>, or <code>S</code> allowed in column 80.</li>
+</ul>
+<p><strong>Critical Note:</strong> ENSDF files require exact positioning. One column off equals data rejection.</p>
+<h4 id="delayed-proton-emission-record-dp-record">Delayed Proton Emission Record (DP-Record)</h4>
+<pre><code class="language-text">Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ 35XX  DP EP       DE IP     DI EI                                              
+ 35CL  DP 501      10 3.5    12 9022                                            
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Columns</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">NUCID</td>
+<td style="text-align:left">1–5</td>
+<td style="text-align:left">Nucleus (e.g., &quot; 35Cl&quot; or &quot; 35P &quot;)</td>
+</tr>
+<tr>
+<td style="text-align:left">CONT</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">Continuation label (blank)</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">Must be blank</td>
+</tr>
+<tr>
+<td style="text-align:left">D</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">&quot;D&quot; for delayed particle</td>
+</tr>
+<tr>
+<td style="text-align:left">P</td>
+<td style="text-align:left">9</td>
+<td style="text-align:left">&quot;P&quot; for proton</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">Readability space</td>
+</tr>
+<tr>
+<td style="text-align:left">EP</td>
+<td style="text-align:left">11–19</td>
+<td style="text-align:left">Proton energy in keV</td>
+</tr>
+<tr>
+<td style="text-align:left">DE</td>
+<td style="text-align:left">20–21</td>
+<td style="text-align:left">Energy uncertainty</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">22</td>
+<td style="text-align:left">Readability space</td>
+</tr>
+<tr>
+<td style="text-align:left">IP</td>
+<td style="text-align:left">23–29</td>
+<td style="text-align:left">Proton intensity in percent</td>
+</tr>
+<tr>
+<td style="text-align:left">DIP</td>
+<td style="text-align:left">30–31</td>
+<td style="text-align:left">Uncertainty in IP</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">Readability space</td>
+</tr>
+<tr>
+<td style="text-align:left">EI</td>
+<td style="text-align:left">33–39</td>
+<td style="text-align:left">Energy of emitting level in keV</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Critical DP Format Rules:</strong></p>
+<ul>
+<li>Readable spaces at columns 10, 22, and 32 for human readability.</li>
+<li>All field positioning follows standard ENSDF left-justification rules.</li>
+</ul>
+<h4 id="beta-minus-decay-record-b-record">Beta Minus Decay Record (B-Record)</h4>
+<pre><code class="language-text">Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ 35XX  B EEEE.E    DE IB     DI           LOGFT  DFT                        CUNQ
+ 35P   B 1572.0    1  100.0  4            5.23   12                         C1U 
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Columns</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">NUCID</td>
+<td style="text-align:left">1–5</td>
+<td style="text-align:left">Nucleus (e.g., &quot; 35P &quot; or &quot; 35Cl&quot;)</td>
+</tr>
+<tr>
+<td style="text-align:left">CONT</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">Continuation label</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">Must be blank</td>
+</tr>
+<tr>
+<td style="text-align:left">TYPE</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">&quot;B&quot; for beta minus</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">9</td>
+<td style="text-align:left">Must be blank</td>
+</tr>
+<tr>
+<td style="text-align:left">E</td>
+<td style="text-align:left">10–19</td>
+<td style="text-align:left">Endpoint energy of β⁻ in keV (no need to edit)</td>
+</tr>
+<tr>
+<td style="text-align:left">DE</td>
+<td style="text-align:left">20–21</td>
+<td style="text-align:left">Energy uncertainty</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">22</td>
+<td style="text-align:left">Readability space</td>
+</tr>
+<tr>
+<td style="text-align:left">IB</td>
+<td style="text-align:left">23–29</td>
+<td style="text-align:left">Intensity of β⁻-decay branch</td>
+</tr>
+<tr>
+<td style="text-align:left">DIB</td>
+<td style="text-align:left">30–31</td>
+<td style="text-align:left">Uncertainty in IB</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">32–41</td>
+<td style="text-align:left">Must be blank</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">42</td>
+<td style="text-align:left">Readability space</td>
+</tr>
+<tr>
+<td style="text-align:left">LOGFT</td>
+<td style="text-align:left">43–49</td>
+<td style="text-align:left">The log ft for the β⁻ transition</td>
+</tr>
+<tr>
+<td style="text-align:left">DFT</td>
+<td style="text-align:left">50–55</td>
+<td style="text-align:left">Uncertainty in LOGFT</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">56–76</td>
+<td style="text-align:left">Must be blank</td>
+</tr>
+<tr>
+<td style="text-align:left">C</td>
+<td style="text-align:left">77</td>
+<td style="text-align:left">Comment flag ('C' denotes coincidence, '?' denotes probable coincidence)</td>
+</tr>
+<tr>
+<td style="text-align:left">UN</td>
+<td style="text-align:left">78–79</td>
+<td style="text-align:left">Forbiddenness classification ('1U', '2U' for unique forbidden, blank = allowed)</td>
+</tr>
+<tr>
+<td style="text-align:left">Q</td>
+<td style="text-align:left">80</td>
+<td style="text-align:left">'?' denotes uncertain or questionable beta minus decay</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Critical B-Record Rules:</strong></p>
+<ul>
+<li>Must follow LEVEL record for the level which is fed by the beta minus decay.</li>
+<li>IB intensity in same units as other intensity fields in file.</li>
+<li>LOGFT for uniqueness classification (col 78-79).</li>
+<li>Blank signifies allowed transition for forbiddenness field.</li>
+</ul>
+<h4 id="electron-capture-and-beta-plus-decay-record-e-record">Electron Capture and Beta Plus Decay Record (E-Record)</h4>
+<pre><code class="language-text">Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ 35XX  E EEEE.E    DE IB     DI IE     DI LOGFT  DFT            TI        DICUNQ
+ 35CL  E 1750.0    5  65.0   8  35.0   5  4.85   15             100.0     8 C1US
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Columns</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">NUCID</td>
+<td style="text-align:left">1–5</td>
+<td style="text-align:left">Nucleus (e.g., &quot; 35Cl&quot; or &quot; 35P &quot;)</td>
+</tr>
+<tr>
+<td style="text-align:left">CONT</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">Continuation label</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">Must be blank</td>
+</tr>
+<tr>
+<td style="text-align:left">TYPE</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">&quot;E&quot; for electron capture</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">9</td>
+<td style="text-align:left">Must be blank</td>
+</tr>
+<tr>
+<td style="text-align:left">E</td>
+<td style="text-align:left">10–19</td>
+<td style="text-align:left">Energy for electron capture to level (no need to edit)</td>
+</tr>
+<tr>
+<td style="text-align:left">DE</td>
+<td style="text-align:left">20–21</td>
+<td style="text-align:left">Uncertainty in E</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">22</td>
+<td style="text-align:left">Readability space</td>
+</tr>
+<tr>
+<td style="text-align:left">IB</td>
+<td style="text-align:left">23–29</td>
+<td style="text-align:left">Intensity of β⁺-decay branch</td>
+</tr>
+<tr>
+<td style="text-align:left">DIB</td>
+<td style="text-align:left">30–31</td>
+<td style="text-align:left">Uncertainty in IB</td>
+</tr>
+<tr>
+<td style="text-align:left">IE</td>
+<td style="text-align:left">32–39</td>
+<td style="text-align:left">Intensity of electron capture branch</td>
+</tr>
+<tr>
+<td style="text-align:left">DIE</td>
+<td style="text-align:left">40–41</td>
+<td style="text-align:left">Uncertainty in IE</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">42</td>
+<td style="text-align:left">Readability space</td>
+</tr>
+<tr>
+<td style="text-align:left">LOGFT</td>
+<td style="text-align:left">43–49</td>
+<td style="text-align:left">The log ft for (ε + β⁺) transition</td>
+</tr>
+<tr>
+<td style="text-align:left">DFT</td>
+<td style="text-align:left">50–55</td>
+<td style="text-align:left">Uncertainty in LOGFT</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">56–64</td>
+<td style="text-align:left">Must be blank</td>
+</tr>
+<tr>
+<td style="text-align:left">TI</td>
+<td style="text-align:left">65–74</td>
+<td style="text-align:left">Total (ε + β⁺) decay intensity</td>
+</tr>
+<tr>
+<td style="text-align:left">DTI</td>
+<td style="text-align:left">75–76</td>
+<td style="text-align:left">Uncertainty in TI</td>
+</tr>
+<tr>
+<td style="text-align:left">C</td>
+<td style="text-align:left">77</td>
+<td style="text-align:left">Comment flag ('C' denotes coincidence, '?' denotes probable coincidence)</td>
+</tr>
+<tr>
+<td style="text-align:left">UN</td>
+<td style="text-align:left">78–79</td>
+<td style="text-align:left">Forbiddenness classification ('1U', '2U' for unique forbidden, blank = allowed)</td>
+</tr>
+<tr>
+<td style="text-align:left">Q</td>
+<td style="text-align:left">80</td>
+<td style="text-align:left">'?' = uncertain branch, 'S' = expected or assumed transition</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Critical E-Record Rules:</strong></p>
+<ul>
+<li>Must follow LEVEL record for the level being populated in the decay.</li>
+<li>IE, IB and TI must be in same units.</li>
+<li>TI = IE + IB for total decay intensity to the level.</li>
+<li>Forbiddenness classification in columns 78-79 ('1U', '2U' for first-, second-unique forbidden).</li>
+</ul>
+<h4 id="alpha-decay-record-a-record">Alpha Decay Record (A-Record)</h4>
+<pre><code class="language-text">Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+235XX  A EEEE.E    DE IA     DI HF     DHF                                  C  Q
+204AT  A 6632      6  100    5  1.5    3                                    C  ?
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Columns</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">NUCID</td>
+<td style="text-align:left">1–5</td>
+<td style="text-align:left">Nucleus (e.g., &quot; 35P &quot; or &quot;204AT&quot;)</td>
+</tr>
+<tr>
+<td style="text-align:left">CONT</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">Continuation label</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">Must be blank</td>
+</tr>
+<tr>
+<td style="text-align:left">TYPE</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">&quot;A&quot; for alpha decay</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">9</td>
+<td style="text-align:left">Must be blank</td>
+</tr>
+<tr>
+<td style="text-align:left">E</td>
+<td style="text-align:left">10–19</td>
+<td style="text-align:left">Alpha energy in keV</td>
+</tr>
+<tr>
+<td style="text-align:left">DE</td>
+<td style="text-align:left">20–21</td>
+<td style="text-align:left">Standard uncertainty in E</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">22</td>
+<td style="text-align:left">Readability space</td>
+</tr>
+<tr>
+<td style="text-align:left">IA</td>
+<td style="text-align:left">23–29</td>
+<td style="text-align:left">Intensity of α-decay branch in percent of the total α decay</td>
+</tr>
+<tr>
+<td style="text-align:left">DIA</td>
+<td style="text-align:left">30–31</td>
+<td style="text-align:left">Standard uncertainty in IA</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">Readability space</td>
+</tr>
+<tr>
+<td style="text-align:left">HF</td>
+<td style="text-align:left">33–39</td>
+<td style="text-align:left">Hindrance factor for α decay</td>
+</tr>
+<tr>
+<td style="text-align:left">DHF</td>
+<td style="text-align:left">40–41</td>
+<td style="text-align:left">Standard uncertainty in HF</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">42–76</td>
+<td style="text-align:left">Must be blank</td>
+</tr>
+<tr>
+<td style="text-align:left">C</td>
+<td style="text-align:left">77</td>
+<td style="text-align:left">Comment flag ('C' denotes coincidence, '?' denotes probable coincidence)</td>
+</tr>
+<tr>
+<td style="text-align:left">SPACE</td>
+<td style="text-align:left">78–79</td>
+<td style="text-align:left">Must be blank</td>
+</tr>
+<tr>
+<td style="text-align:left">Q</td>
+<td style="text-align:left">80</td>
+<td style="text-align:left">'?' = uncertain or questionable α branch, 'S' = expected or predicted α branch</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Critical A-Record Rules:</strong></p>
+<ul>
+<li>Must follow the daughter LEVEL record for the level being populated in the α decay.</li>
+</ul>
+<h3 id="xref-notation-rules">XREF Notation Rules</h3>
+<p>Only in the Adopted Datasets: XREF (cross-reference) entries immediately following an L-record indicate which datasets observe this level.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Notation</th>
+<th style="text-align:left">Meaning</th>
+<th style="text-align:left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Plain letter</td>
+<td style="text-align:left">Dataset level energies match the Adopted level within uncertainties.</td>
+<td style="text-align:left"><code>XREF=FH</code> — Datasets F and H report this level with energies consistent with the Adopted value.</td>
+</tr>
+<tr>
+<td style="text-align:left">Letter(energy)</td>
+<td style="text-align:left">Dataset reports an energy outside the uncertainty range but still matches the same physical level.</td>
+<td style="text-align:left"><code>XREF=H(4865)</code> — Dataset H reports a level at 4866±3 keV (outside Adopted 4860±2).</td>
+</tr>
+<tr>
+<td style="text-align:left">Letter(*)</td>
+<td style="text-align:left">Ambiguous matching; dataset level may correspond to two or more Adopted levels.</td>
+<td style="text-align:left"><code>XREF=I(*)</code> — The level from dataset I has ambiguous doublet/multiplet matching.</td>
+</tr>
+<tr>
+<td style="text-align:left">Letter(?)</td>
+<td style="text-align:left">Questionable or uncertain match.</td>
+<td style="text-align:left"><code>XREF=J(?)</code> — Dataset J reports a questionable level that possibly matches the Adopted level.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="3-ensdf-uncertainty-notation-rules">3. ENSDF Uncertainty Notation Rules</h2>
+<h3 id="general-rules">General Rules</h3>
+<p><strong>CRITICAL:</strong> Uncertainties in data-record fields and comment lines use different formats, but both follow uncertainty-in-last-digits notation. The decimal place of the final uncertainty digit must match the decimal place of the reported value.</p>
+<ul>
+<li>Published nuclear data usually report uncertainties with one or two digits.</li>
+<li>The uncertainty applies to the least significant reported digit of the value.</li>
+<li>Use 1 significant figure when the leading two uncertainty digits are <code>35-99</code>.
+Example: <code>1.2333±0.3680 -&gt; 1.2(4)</code>.</li>
+<li>Use 2 significant figures when the leading two uncertainty digits are <code>10-34</code>.
+Example: <code>1.2333±0.3220 -&gt; 1.23(32)</code>.</li>
+<li>Special case: for half-lives and lifetimes, 2 significant figures may be used even when the leading two uncertainty digits are <code>35-99</code>.</li>
+</ul>
+<h3 id="ensdf-rounding-and-uncertainty-convention">ENSDF Rounding and Uncertainty Convention</h3>
+<h4 id="successive-sequential-rounding">Successive (Sequential) Rounding</h4>
+<p>Use successive rounding for all ENSDF values. Round one digit at a time, from right to left.</p>
+<h4 id="value-rounding-threshold-round-half-up-5-up">Value Rounding Threshold: Round Half-Up (5-Up)</h4>
+<p>Apply standard round-half-up for general calculated values.</p>
+<ul>
+<li>Round down when the discarded digit is 0-4.</li>
+<li>Round up when the discarded digit is 5-9.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><code>0.344 -&gt; 0.34 -&gt; 0.3</code>: the discarded <code>4</code> rounds down at each step.</li>
+<li><code>0.345 -&gt; 0.35 -&gt; 0.4</code>: the discarded <code>5</code> rounds up at each step.</li>
+</ul>
+<h4 id="uncertainty-rounding-threshold-4-up-3-down">Uncertainty Rounding Threshold: 4-Up, 3-Down</h4>
+<p>Apply the conservative 4-up rule to uncertainties only.</p>
+<ul>
+<li>Round down when the discarded digit is 0-3.</li>
+<li>Round up when the discarded digit is 4-9.</li>
+</ul>
+<p>After rounding the uncertainty, round the reported value to the same decimal place as the least significant uncertainty digit.</p>
+<p>Examples:</p>
+<ul>
+<li><code>100.00(333) -&gt; 100.0(33)</code>: discarded <code>3</code> rounds down; uncertainty stays <code>33</code>.</li>
+<li><code>100.00(334) -&gt; 100.0(34)</code>: discarded <code>4</code> rounds up; uncertainty becomes <code>34</code>.</li>
+</ul>
+<p><strong>Examples by Decimal Places:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Value Decimals</th>
+<th style="text-align:left">Field Notation</th>
+<th style="text-align:left">Comment Notation</th>
+<th style="text-align:left">Meaning (± format)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">0 decimals</td>
+<td style="text-align:left"><code>1234  5 </code></td>
+<td style="text-align:left"><code>1234 {I5}</code></td>
+<td style="text-align:left">1234 ± 5</td>
+</tr>
+<tr>
+<td style="text-align:left">0 decimals</td>
+<td style="text-align:left"><code>1234  26</code></td>
+<td style="text-align:left"><code>1234 {I26}</code></td>
+<td style="text-align:left">1234 ± 26</td>
+</tr>
+<tr>
+<td style="text-align:left">1 decimal</td>
+<td style="text-align:left"><code>12.3  6 </code></td>
+<td style="text-align:left"><code>12.3 {I6}</code></td>
+<td style="text-align:left">12.3 ± 0.6</td>
+</tr>
+<tr>
+<td style="text-align:left">1 decimal</td>
+<td style="text-align:left"><code>3.6  11 </code></td>
+<td style="text-align:left"><code>3.6 {I11}</code></td>
+<td style="text-align:left">3.6 ± 1.1</td>
+</tr>
+<tr>
+<td style="text-align:left">2 decimals</td>
+<td style="text-align:left"><code>1.23  7</code></td>
+<td style="text-align:left"><code>1.23 {I7}</code></td>
+<td style="text-align:left">1.23 ± 0.07</td>
+</tr>
+<tr>
+<td style="text-align:left">2 decimals</td>
+<td style="text-align:left"><code>1.23  21</code></td>
+<td style="text-align:left"><code>1.23 {I21}</code></td>
+<td style="text-align:left">1.23 ± 0.21</td>
+</tr>
+<tr>
+<td style="text-align:left">4 decimals</td>
+<td style="text-align:left"><code>0.0060  6</code></td>
+<td style="text-align:left"><code>0.0060 {I6}</code></td>
+<td style="text-align:left">0.0060 ± 0.0006</td>
+</tr>
+<tr>
+<td style="text-align:left">4 decimals</td>
+<td style="text-align:left"><code>0.0060  24</code></td>
+<td style="text-align:left"><code>0.0060 {I24}</code></td>
+<td style="text-align:left">0.0060 ± 0.0024</td>
+</tr>
+</tbody>
+</table>
+<h3 id="uncertainty-format-in-data-record-fields">Uncertainty Format in Data Record Fields</h3>
+<h4 id="general-format">General Format</h4>
+<p>Format: Plain integers only (NO <code>{I}</code> notation, NO parentheses).</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Energy: <code>1572.0</code> with uncertainty <code>12</code> in DE field means 1572.0(12).</li>
+<li>RI: <code>70.0</code> with uncertainty <code>24</code> in DRI field means 70.0(24).</li>
+<li>T1/2: <code>2.29 PS</code> with uncertainty <code>14</code> in DT field means 2.29(14) PS.</li>
+</ul>
+<h4 id="standard-2-column-uncertainty-fields-de-dri-dip-dcc-dti-ds">Standard 2-Column Uncertainty Fields (DE, DRI, DIP, DCC, DTI, DS)</h4>
+<ul>
+<li><strong>Field:</strong> 1–2 digits with space padding.
+<ul>
+<li>Single digit: <code>&quot;5 &quot;</code> (digit + space).</li>
+<li>Double digits: <code>&quot;15&quot;</code> (two digits).</li>
+<li>Limit markers: <code>&quot;GT&quot;</code>, <code>&quot;LT&quot;</code> (two letters).</li>
+</ul>
+</li>
+</ul>
+<h4 id="extended-6-column-uncertainty-fields-dt-dmr">Extended 6-Column Uncertainty Fields (DT, DMR)</h4>
+<ul>
+<li><strong>Field</strong> (cols 50–55): 6 characters, left-justified, with space padding if fewer than 6 characters.
+<ul>
+<li>Symmetric: <code>&quot;14    &quot;</code> (1 or 2 digits + 5 or 4 spaces).</li>
+<li>Asymmetric: <code>&quot;+3-4  &quot;</code> (2 spaces), <code>&quot;+19-8 &quot;</code> (1 space), <code>&quot;+13-28&quot;</code> (no spaces).</li>
+<li>Limit markers: <code>&quot;GT    &quot;</code>, <code>&quot;LT    &quot;</code> (two letters + 4 spaces).</li>
+</ul>
+</li>
+<li>For source data using the Rose and Brink (1967) sign convention, reverse the sign of the mixing ratio value before entering it into ENSDF. Reverse the asymmetric uncertainty order at the same time so the ENSDF value keeps the correct upper and lower bounds. Example: -0.27$<em>{-0.04}^{+0.03}$ becomes +0.27$</em>{+0.04}^{-0.03}$ in ENSDF.</li>
+</ul>
+<p><strong>Critical Formatting Rules:</strong></p>
+<ul>
+<li>Single digits in 2-column fields: MUST be padded with trailing space.</li>
+<li>Double digits in 2-column fields: Fill both columns completely.</li>
+<li>Asymmetric uncertainties: Use +X-Y format in 6-character fields (DT, DMR).</li>
+<li><strong>FORBIDDEN:</strong> <code>123</code> is not allowed in either 2-column fields (corrupts adjacent data) or in 6-column fields.</li>
+</ul>
+<h4 id="scientific-notation-format">Scientific Notation Format</h4>
+<p>For intensities and other values in scientific notation:</p>
+<ul>
+<li><strong>Standard format:</strong> <code>(5.6±1.0)×10^-4</code> becomes <code>5.6E-4 10</code> in ENSDF.</li>
+<li><strong>Value field:</strong> Use <code>E-n</code> notation (e.g., <code>5.6E-4</code>).</li>
+<li><strong>Uncertainty field:</strong> Use digits representing the last significant digit (e.g., <code>10</code> for ±1.0 if the value has one decimal place).</li>
+<li><strong>Examples:</strong>
+<ul>
+<li><code>(1.1±0.3)×10^-6</code> → Value: <code>1.1E-6</code>, Uncertainty: <code>3</code>.</li>
+<li><code>(76±20)×10^-6</code> → Value: <code>76E-6</code>, Uncertainty: <code>20</code>.</li>
+<li><code>(3.3±1.2)×10^-4</code> → Value: <code>3.3E-4</code>, Uncertainty: <code>12</code>.</li>
+</ul>
+</li>
+<li><strong>NEVER use:</strong> <code>×10^-n</code> notation directly in ENSDF records.</li>
+<li><strong>ALWAYS use:</strong> <code>E-n</code> notation for the value with a separate uncertainty field.</li>
+</ul>
+<h4 id="gt-and-lt-markers-in-uncertainty-fields">GT and LT Markers in Uncertainty Fields</h4>
+<ul>
+<li><strong>LT</strong> = &quot;Less Than&quot; (e.g., <code>&lt;1.6 ps</code> becomes <code>1.6 PS    LT</code> in T and DT fields).</li>
+<li><strong>GT</strong> = &quot;Greater Than&quot; (e.g., <code>&gt;5.2 fs</code> becomes <code>5.2 FS   GT</code> in T and DT fields).</li>
+<li><strong>Format:</strong> Place the value in the main field and the GT/LT marker in the uncertainty field.</li>
+<li><strong>Examples for RI and DRI:</strong>
+<ul>
+<li><code>&lt;1.6</code> → RI=<code>1.6    </code> (cols 23–29), DRI=<code>LT</code> (cols 30–31).</li>
+<li><code>&gt;5.2</code> → RI=<code>5.2    </code> (cols 23–29), DRI=<code>GT</code> (cols 30–31).</li>
+</ul>
+</li>
+</ul>
+<h3 id="uncertainty-format-in-comment-lines">Uncertainty Format in Comment Lines</h3>
+<h4 id="general-format-1">General Format</h4>
+<p>Format: Use <code>{In}</code> or <code>{I+n-m}</code> notation with braces.</p>
+<p><strong>CRITICAL:</strong> n must be INTEGER ONLY (NEVER decimals like <code>{I0.1}</code> or <code>{I1.1}</code>).</p>
+<ul>
+<li><strong>Symmetric:</strong> <code>{In}</code> (e.g., <code>{I7}</code>, <code>{I11}</code>) without plus/minus signs.</li>
+<li><strong>Asymmetric:</strong> <code>{I+n-m}</code> (e.g., <code>{I+10-11}</code>, <code>{I+7-9}</code>) with plus/minus signs.</li>
+</ul>
+<h4 id="scientific-notation-format-1">Scientific Notation Format</h4>
+<p>In comment lines, scientific notation uses <code>{In}</code> for uncertainties:</p>
+<ul>
+<li><strong>Example 1:</strong> <code>(5.6±1.0)×10^-4</code> becomes <code>5.6|*10{+-4} {I10}</code> in comments.
+<ul>
+<li><strong>Value:</strong> <code>5.6E-4</code></li>
+<li><strong>Uncertainty:</strong> <code>{I10}</code> (±1.0 in last digit).</li>
+</ul>
+</li>
+<li><strong>Example 2:</strong> <code>(1.1±0.3)×10^6</code> becomes <code>1.1|*10{+6} {I3}</code> in comments.
+<ul>
+<li><strong>Value:</strong> <code>1.1E6</code></li>
+<li><strong>Uncertainty:</strong> <code>{I3}</code> (±0.3 in last digit).</li>
+</ul>
+</li>
+</ul>
+<h4 id="uncertainty-notation-with-units">Uncertainty Notation with Units</h4>
+<p>Units are placed after the value before the uncertainty:</p>
+<pre><code class="language-text"> 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)
+ 34S   cL $|t=54 fs {I+18-11} (1980Be15)
+</code></pre>
+<p><strong>Examples in Context:</strong></p>
+<ul>
+<li>Data record: <code> 35P   L 1572.0    12 3/2+             2.29 PS   14</code> (uncertainties are plain numbers).</li>
+<li>Comment line: <code> 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)</code> (uncertainty uses <code>{I11}</code> notation).</li>
+</ul>
+<hr>
+<h2 id="4-ensdf-file-editing-workflow">4. ENSDF File Editing Workflow</h2>
+<h3 id="file-protection-rules">File Protection Rules</h3>
+<ul>
+<li><strong>NEVER</strong> edit <code>.old</code> files (reference files from previous evaluation rounds).</li>
+<li><strong>NEVER</strong> modify first/last line indentation or spacing in <code>.ens</code> files.</li>
+<li><strong>NEVER</strong> modify XREF lists (XREF entries with pattern <code>NUCID X</code> have their own specific formatting rules).</li>
+</ul>
+<h3 id="debugging-technique">Debugging Technique</h3>
+<p><strong>CRITICAL 80-Column Debugging Technique</strong>:
+When dealing with ENSDF alignment issues, ALWAYS use the visual ruler method:</p>
+<pre><code class="language-python">python -c <span class="hljs-string">&quot;
+header=&#x27;[paste actual header line here]&#x27;
+print(&#x27;ENSDF 80-Column Ruler:&#x27;)
+print(&#x27;Ones:  12345678901234567890123456789012345678901234567890123456789012345678901234567890&#x27;)
+print(&#x27;Tens:  1111111111222222222233333333334444444444555555555566666666667777777777888888888999&#x27;)  
+print(&#x27;Header:&#x27;, header)
+print(&#x27;Length:&#x27;, len(header))
+&quot;</span>
+</code></pre>
+<p><strong>Process</strong>:</p>
+<ol>
+<li>Display 80-char ruler.</li>
+<li>Extract L/G/E/B records.</li>
+<li>Validate against ENSDF Manual.</li>
+<li>Report issues.</li>
+</ol>
+<h3 id="mandatory-edit-validate-repeat-workflow">Mandatory Edit-Validate-Repeat Workflow</h3>
+<p><strong>CRITICAL: THE MOST IMPORTANT RULE</strong></p>
+<p><strong>The Sacred Workflow</strong> (MUST Follow for Every Single Edit):</p>
+<ol>
+<li><strong>EDIT</strong> → Make ONE precise change to ONE field.</li>
+<li><strong>VALIDATE</strong> → Run ruler on that exact line: <code>python .github/scripts/ensdf_1line_ruler.py --line &quot;your 80-char line&quot;</code>.</li>
+<li><strong>CONFIRM</strong> → Verify exit code 0 and check ruler output.</li>
+<li><strong>REPEAT</strong> → Move to next edit only after confirmation.</li>
+</ol>
+<p><strong>Forbidden Behaviors:</strong></p>
+<ul>
+<li><strong>NEVER</strong> edit multiple lines without validating each one.</li>
+<li><strong>NEVER</strong> make multiple edits then validate at the end.</li>
+<li><strong>NEVER</strong> assume an edit worked without checking.</li>
+<li><strong>NEVER</strong> skip validation &quot;just this once&quot;.</li>
+</ul>
+<h3 id="validation-tools-and-when-to-use-them">Validation Tools and When to Use Them</h3>
+<h4 id="before-any-edit">Before Any Edit</h4>
+<ol>
+<li>Run <code>python .github/scripts/column_calibrate.py &quot;filename.ens&quot;</code> (MANDATORY).
+<ul>
+<li>Validates L-field positioning (column 56), S-field left-justification (columns 65-74).</li>
+<li>Verifies comment flags at column 77.</li>
+<li>Reports data-record line-length issues (L/G/E/B/DP records).</li>
+</ul>
+</li>
+<li>Run <code>python .github/scripts/check_gamma_ordering.py &quot;filename.ens&quot;</code> (MANDATORY).
+<ul>
+<li>Verifies ascending energy order for L-records and G-records.</li>
+</ul>
+</li>
+<li>Manual verification: <code>column_calibrate.py</code> does NOT check DP, B, or E record formatting.</li>
+<li>Read current file state (never assume file structure).</li>
+<li>Identify target line uniquely (must have 5+ lines of unique context).</li>
+<li>Single field modification only (never edit multiple fields at once).</li>
+</ol>
+<h4 id="during-each-edit">During Each Edit</h4>
+<p>Run ruler for each changed line: <code>python .github/scripts/ensdf_1line_ruler.py --line &quot;your 80-char line&quot;</code></p>
+<ul>
+<li>MANDATORY for every line you edit.</li>
+<li>Immediate visual ruler, length, and field validation.</li>
+<li>Must verify exit code 0 before proceeding to next edit.</li>
+</ul>
+<h4 id="after-all-edits">After All Edits</h4>
+<p>Repeat validation sequence (steps 1-2 from &quot;Before Any Edit&quot; section).</p>
+<h3 id="ensdf-1-line-ruler-tool">ENSDF 1-Line Ruler Tool</h3>
+<p><strong>Usage Modes:</strong></p>
+<ul>
+<li><strong>Single line check:</strong> <code>python .github/scripts/ensdf_1line_ruler.py --line &quot;your exact 80-char line&quot;</code>
+<ul>
+<li>Quick ruler display, length check, immediate validation feedback.</li>
+<li>USE THIS for every line you edit (essential AI workflow step).</li>
+</ul>
+</li>
+<li><strong>File scan:</strong> <code>python .github/scripts/ensdf_1line_ruler.py --file path/to/file.ens [--show-only-wrong]</code>
+<ul>
+<li>Checks all data records (L, G, E, B, DP records); exit code 1 if any errors found.</li>
+<li>Use <code>--show-only-wrong</code> to quickly identify problem lines only.</li>
+</ul>
+</li>
+</ul>
+<h3 id="column-calibration-tool-column_calibratepy">Column Calibration Tool (column_calibrate.py)</h3>
+<p>Comprehensive ENSDF field validation and data-record line-length checking:</p>
+<ul>
+<li><strong>Basic validation:</strong> <code>python .github/scripts/column_calibrate.py &quot;file.ens&quot;</code>
+<ul>
+<li>Prints 80-column ruler with field boundaries.</li>
+<li>Checks field positioning and reports line-length issues.</li>
+</ul>
+</li>
+<li><strong>Optional auto-fix:</strong> <code>--fix</code> flag can pad/trim spaces to exactly 80-character line lengths.
+<ul>
+<li>Use with extreme caution (does NOT fix field content or formatting errors).</li>
+<li>May surface new issues if misused (prefer manual corrections).</li>
+<li>Always re-validate after using <code>--fix</code> option.</li>
+</ul>
+</li>
+<li><strong>Exit codes:</strong> 0 = all checks pass; 1 = errors found.</li>
+<li><strong>Limitations:</strong> DP, B, and E records require additional manual verification.</li>
+</ul>
+<h3 id="energy-ordering-tool-check_gamma_orderingpy">Energy Ordering Tool (check_gamma_ordering.py)</h3>
+<p>Validates ascending energy order for L-records and G-records:</p>
+<ul>
+<li><strong>Basic check:</strong> <code>python .github/scripts/check_gamma_ordering.py &quot;file.ens&quot;</code></li>
+<li><strong>Multiple files:</strong> <code>python .github/scripts/check_gamma_ordering.py &quot;A35/K35/new/*.ens&quot; --summary</code></li>
+<li><strong>Verbose output:</strong> Add <code>--verbose</code> flag for detailed checking process.</li>
+<li><strong>Exit codes:</strong> 0 = correct ordering; 1 = ordering violations found.</li>
+</ul>
+<h3 id="output-interpretation-guidelines">Output Interpretation Guidelines</h3>
+<p><strong>SUCCESS indicators:</strong></p>
+<ul>
+<li>Exit code 0: Validation PASSED (safe to proceed).</li>
+<li>&quot;SUCCESS: All ENSDF field positions appear correct!&quot;</li>
+</ul>
+<p><strong>ERROR indicators:</strong></p>
+<ul>
+<li>Exit code 1: Validation FAILED (MUST fix errors before proceeding).</li>
+<li>&quot;DATA RECORD LINE LENGTH ISSUES DETECTED&quot;: Lines not exactly 80 characters.</li>
+<li>&quot;ERROR: Field positioning errors found&quot;: Field alignment problems.</li>
+</ul>
+<h3 id="editing-methodology">Editing Methodology</h3>
+<ol>
+<li><strong>ONE EDIT AT A TIME</strong> (never batch multiple field changes).</li>
+<li><strong>PRECISE CONTEXT MATCHING</strong> (use complete L-record + surrounding context).</li>
+<li><strong>FIELD-SPECIFIC REPLACEMENTS</strong> (target only the specific field being changed).</li>
+<li><strong>IMMEDIATE VALIDATION</strong> (check file structure after each edit).</li>
+</ol>
+<p><strong>NEVER PROCEED WITHOUT COMPLETE COLUMN MAPPING VERIFICATION</strong></p>
+<p><strong>CRITICAL COLUMN RULE:</strong> When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns. Only adjust spacing between fields (never move field data to incorrect columns).</p>
+<h2 id="5-data-extraction-and-entry-quality-assurance">5. Data Extraction and Entry Quality Assurance</h2>
+<p><strong>CRITICAL REQUIREMENT:</strong> For ALL numerical data extraction/entry tasks, you MUST execute BOTH quality assurance checks before claiming task completion: Bidirectional Positional Check and Random Spot Check.</p>
+<h3 id="mandatory-random-spot-check-protocol">Mandatory Random Spot-Check Protocol</h3>
+<p><strong>NON-NEGOTIABLE REQUIREMENT:</strong> After ANY large-scale data entry task, you MUST perform random spot-check validation before claiming completion. This is NOT optional.</p>
+<h4 id="execution-requirements">Execution Requirements</h4>
+<ul>
+<li><strong>Minimum sample size:</strong> 15% of total entries (absolute minimum: 10 samples).</li>
+<li><strong>Selection method:</strong> Random sampling (neither sequential nor cherry-picked).</li>
+<li><strong>Evidence required:</strong> Generate a verification script showing:
+<ul>
+<li>Total entry count.</li>
+<li>Sample size calculation (e.g., &quot;200 entries → 15% = 30 samples&quot;).</li>
+<li>Randomly selected entered data.</li>
+<li>Trace back to source data for each sample.</li>
+<li>Verification results (PASS/FAIL per sample).</li>
+</ul>
+</li>
+</ul>
+<h4 id="verification-checklist-100-pass-rate-required">Verification Checklist (100% Pass Rate Required)</h4>
+<ul>
+<li>Arithmetic accuracy (no calculation errors).</li>
+<li>Values match source data exactly (character-for-character).</li>
+<li>Uncertainties match source data exactly.</li>
+<li>Mapping accuracy (correct ENSDF fields used).</li>
+<li>Positional alignment (no off-by-one errors).</li>
+</ul>
+<h4 id="procedures-for-error-discovery">Procedures for Error Discovery</h4>
+<p>If any errors are found:</p>
+<ol>
+<li><strong>Stop immediately</strong> and do not claim completion.</li>
+<li>Identify the root cause (systematic vs. isolated error).</li>
+<li>Analyze the error pattern across all entries.</li>
+<li>Correct all instances of the identified error type.</li>
+<li>Re-run automated validation (<code>column_calibrate.py</code> and <code>check_gamma_ordering.py</code>).</li>
+<li>Perform a new random spot-check with different samples.</li>
+<li>Repeat until a 100% pass rate is achieved.</li>
+</ol>
+<h4 id="workflow-integration">Workflow Integration</h4>
+<ul>
+<li>Execute after automated validation passes (<code>column_calibrate.py</code> and <code>check_gamma_ordering.py</code>).</li>
+<li>Execute after the Bidirectional Positional Check and Random Spot Check pass with 100% accuracy.</li>
+<li>Execute before claiming &quot;task completed successfully.&quot;</li>
+<li>Document findings in the compliance checklist for user verification.</li>
+</ul>
+<h4 id="zero-tolerance-enforcement">Zero-Tolerance Enforcement</h4>
+<ul>
+<li>Tasks are incomplete until the spot-check passes with zero errors.</li>
+<li>No exceptions for &quot;simple&quot; or &quot;small&quot; data entry tasks.</li>
+<li>Failure to execute constitutes failure to complete the assigned task.</li>
+</ul>
+<hr>
+<h2 id="6-academic-standards">6. Academic Standards</h2>
+<h3 id="professional-english-grammar">Professional English Grammar</h3>
+<p><strong>Common corrections:</strong></p>
+<ul>
+<li><strong>Spelling:</strong> &quot;other&quot; (not &quot;ohter&quot;), &quot;stopped&quot; (not &quot;stoped&quot;), &quot;using&quot; (not &quot;usign&quot;), &quot;coefficients&quot; (not &quot;coeffcients&quot;), &quot;deexciting&quot; (not &quot;deexiting&quot;), &quot;multipolarities&quot; (not &quot;multiporities&quot;), &quot;parentheses&quot; (not &quot;paretheses&quot;).</li>
+<li><strong>Dittography:</strong> Remove duplicated words (e.g., &quot;the the&quot;).</li>
+<li><strong>Hyphenation Rule:</strong> [Number]-[Unit]-[Descriptor] [Noun]. Hyphenate compound adjectives occurring before a noun (e.g., &quot;x-ray diffraction,&quot; &quot;4-mm-long gas cell,&quot; &quot;R-matrix theory&quot;). Do not hyphenate when they are not adjectives before nouns (e.g., &quot;emitted by x rays,&quot; &quot;was 4 mm long&quot;).</li>
+<li><strong>Consistency:</strong> Always hyphenate &quot;L-transfers&quot; and &quot;half-life.&quot;</li>
+</ul>
+<hr>
+<h2 id="document-structure">Document Structure</h2>
+<p>This document consists of six main sections:</p>
+<ol>
+<li><strong>ENSDF Comment Text Format Standards:</strong> Superscripts, subscripts, Greek letters, mathematical symbols, and NSR citation format.</li>
+<li><strong>ENSDF 80-Column Format Standards:</strong> NUCID field rules, L/G/B/E/A/DP record specifications, and critical formatting rules.</li>
+<li><strong>ENSDF Uncertainty Notation:</strong> Data record fields (plain numbers) and comment lines ({In} notation).</li>
+<li><strong>ENSDF File Editing Workflow:</strong> File protection, edit-validate-repeat workflow, validation tools, and editing methodology.</li>
+<li><strong>Data Extraction and Data Entry Quality Assurance:</strong> Trigger conditions, bidirectional positional checks, random spot-check validation, and error discovery procedures.</li>
+<li><strong>Academic Standards:</strong> Professional English grammar and text formatting conventions.</li>
+</ol>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>
