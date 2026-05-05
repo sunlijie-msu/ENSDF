@@ -1,8 +1,8 @@
 Program for ENSDF check: output for Format Error and Warnings (version 04/24/2026)
-Generated at: Sat 05/02/2026 at 07:58:14 PM EDT
+Generated at: Tue 05/05/2026 at 01:54:19 PM EDT
 
 ****************************************
-     Total 3 errors 4 warnings
+     Total 1 error 1 warning
 ****************************************
 
 -----------------------------------------------------------------------------------------
@@ -12,7 +12,7 @@ Generated at: Sat 05/02/2026 at 07:58:14 PM EDT
 #########################################################################################
 ### In dataset <34CL: 33S(P,G)>
 
-    904.  34CL  G 1700         7      3                                                 ?
+    903.  34CL  G 1700         7      3                                                 ?
                   *****                                                                    <E> No final level found
                                                                                                Parent level:  5577.6 10
                                                                                                Calculated FL: 3877.6 14
@@ -30,38 +30,6 @@ Generated at: Sat 05/02/2026 at 07:58:14 PM EDT
      29.  34CL t     |m x ray       Energy       Intensity in percent                    
          *************************************************************                     <W> Possible duplicate line
 
-
------------------------------------------------------------------------------------------
-    In file: D:\X\ND\ENSDF\A34\Cl34\new\Cl34_adopted.ens
------------------------------------------------------------------------------------------
-
-#########################################################################################
-### In dataset <34CL: ADOPTED LEVELS, GAMMAS>
-
-    229.  34CL d                                                                         
-                **                                                                         <E> Comment record type missing
-                  *                                                                        <E> $ missing at beginning
-   1056.  34CL  G 2862         100                                                      ?
-                  *****                                                                    <W> No final level within 3*sigma=6.71
-                                                                                               Parent level:  5028 2
-                                                                                               Calculated FL: 2166 2
-                                                                                               Possible matches within 10 keV:
-                                                                                                              2157.9 1, JPI=2+ (assigned by default)
-                                                                                               Level-difference=2870 2 (with recoil correction)
-   2047.  34CL  G 2449.3       0.86                                                      
-                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
-                                                                                               Parent level:  7059.01 30, JPI=1,2
-                                                                                               Calculated FL: 4609.6 6
-                                                                                               Possible final levels:
-                                                                                                              4609.7 15, JPI=2- (assigned by default)
-                                                                                                              4611 4, JPI=0+,1+
-   2075.  34CL  G 3002.6       3.6    18                                                 
-                  *******                                                                  <W> Ambiguous final levels found. Use "FL=" to specify
-                                                                                               Parent level:  7078.90 9, JPI=3-
-                                                                                               Calculated FL: 4076.2 5
-                                                                                               Possible final levels:
-                                                                                                              4075 10, JPI=1+,2+
-                                                                                                              4076.2 2, JPI=4- (assigned by default)
 
 
 End of report

@@ -1,5 +1,5 @@
-Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 04/24/2026)
-Generated at: Sat 05/02/2026 at 07:58:40 PM EDT                                 
+Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 05/05/2026)
+Generated at: Tue 05/05/2026 at 01:54:31 PM EDT                                 
                                                                                 
  34CL    ADOPTED LEVELS, GAMMAS                                  ENSDF    202609
  34CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
@@ -47,6 +47,7 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL3cL {+33}S(p,p),(p,p'|g):resonances (1989Va15), unless otherwise noted.    
  34CL cL T$Widths are from multilevel, multichannel R-matrix analysis in        
  34CL2cL {+33}S(p,p),(p,p'|g):resonances (1989Va15), unless otherwise noted.    
+ 34CL3cL Half-lives are from sources given in each comment.                     
  34CL  XA34AR EC+B+ DECAY (0.84646 S)                                           
  34CL  XB34CL IT DECAY (31.99 M)                                                
  34CL  XC35K ECP DECAY (175 MS)                                                 
@@ -110,8 +111,8 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL5cL {+33}S({+3}He,d), 458 {I4} from {+34}S({+3}He,t), 450 {I15} from       
  34CL6cL {+35}Cl(p,d), and 459 {I20} from {+36}Ar(d,|a),(pol d,|a)              
  34CL cL J$L=2 from 0+ in {+36}Ar(d,|a),(pol d,|a) gives 1+,2+,3+; L-1 transfer 
- 34CL2cL from analyzing power. L=0+2 from 0+ in {+32}S(|a,d): L=0 gives 1+; L=2 
- 34CL3cL gives 1+,2+,3+. Spin=1 from p|g(|q) in {+32}S({+3}He,p|g).             
+ 34CL2cL from analyzing power. L=0+2 from 0+ in {+32}S(|a,d) gives 1+. Spin=1   
+ 34CL3cL from p|g(|q) in {+32}S({+3}He,p|g).                                    
  34CL  G 314.64      0.5     LT [E2]                                            
  34CL cG E,RI$from ({+3}He,p|g)                                                 
  34CL cG RI$from {+32}S({+3}He,p|g); others: <1 from {+33}S(p,|g), <2.4 from    
@@ -133,9 +134,9 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL3cL 665.58 {I5} from {+32}S({+3}He,p|g), 665.3 {I2} from {+33}S(p,|g),     
  34CL4cL 665.1 {I14} from {+33}S({+3}He,d), 666 {I4} from {+34}S({+3}He,t), 670 
  34CL5cL {I15} from {+35}Cl(p,d), and 665 {I20} from {+36}Ar(d,|a),(pol d,|a)   
- 34CL cL J$L=0+2,2+4 from 0+ in {+36}Ar(d,|a),(pol d,|a): L=0 gives 1+; L=2     
- 34CL2cL gives 1+,2+,3+; L=4 gives 3+,4+,5+. Spin=1 from p|g(|q) in             
- 34CL3cL {+32}S({+3}He,p|g) and |g(|q) in {+33}S(p,|g).                         
+ 34CL cL J$L=0+2,2+4 from 0+ in {+36}Ar(d,|a),(pol d,|a): L=0+2 gives 1+; L=2+4 
+ 34CL2cL gives 3+. Spin=1 from p|g(|q) in {+32}S({+3}He,p|g) and |g(|q) in      
+ 34CL3cL {+33}S(p,|g).                                                          
  34CL cL T$lifetime |t=13.2 ps {I10}: weighted average of 14 ps {I+11-6} in     
  34CL2cL {+31}P(|a,n|g) from 1970Br10 with DSAM, 14.2 ps {I15} in {+31}P(|a,n|g)
  34CL3cL from 1971Ba98 with RDM, and 12.8 ps {I10} in {+32}S({+3}He,p|g) from   
@@ -186,8 +187,8 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL2cG {I7} from {+32}S({+3}He,p|g)                                           
  34CL cG RI$weighted average of 100 {I5} from {+27}Al({+12}C,|an|g), 100 {I8}   
  34CL2cG from {+32}S({+3}He,p|g), and 100.0 {I14} from {+33}S(p,|g)             
- 34CL cG M,MR$from {+27}Al({+12}C,|an|g); D+Q from p|g(|q) in                   
- 34CL2cG {+32}S({+3}He,p|g).                                                    
+ 34CL cG M,MR$from |g|g(|q)(DCO) and |g|g(|q)(POL) in {+27}Al({+12}C,|an|g);    
+ 34CL2cG other: D+Q from p|g(|q) in {+32}S({+3}He,p|g).                         
  34CL  G 1083.9    3 86.9    14 D+Q      +1.2    +23-7                          
  34CL cG E$weighted average of 1084 {I1} from {+27}Al({+12}C,|an|g) and 1083.9  
  34CL2cG {I3} from {+32}S({+3}He,p|g)                                           
@@ -225,7 +226,7 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL2cG from {+32}S({+3}He,p|g), and 100.0 {I12} from {+33}S(p,|g)             
  34CL cG MR$from ({+3}He,p|g)                                                   
  34CL cG M,MR$D+Q from |g|g(|q)(DCO) in {+27}Al({+12}C,|an|g). Other: D+Q with  
- 34CL2cG |d=-2.1 {+8-4} from {+32}S({+3}He,p|g).                                
+ 34CL2cG |d=-2.1 {+8-4} from {+32}S({+3}He,p|g). |D|p=no from level scheme.     
  34CL  G 1740.8    10 72.8   16 D+Q      -0.8    +6-15                          
  34CL cG E$weighted average of 1741 {I1} from {+27}Al({+12}C,|an|g) and 1740.2  
  34CL2cG {I16} from {+32}S({+3}He,p|g)                                          
@@ -236,7 +237,7 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL cG E,RI$from (p,|g)                                                       
  34CL  L 1923.3    17 0+,1+,2+,3+,4+                                            
  34CLX L XREF=J(1896*)M                                                         
- 34CL cL J$L=2 from 3/2+ in {+33}S({+3}He,d).                                   
+ 34CL cL J$L=2 from 3/2+ in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+.              
  34CL  L 2157.9    1  2+               33 FS     4                              
  34CLX L XREF=AEFGHIKMQRTU                                                      
  34CL cL T$weighted average of 36 fs {I10} from {+32}S({+3}He,p|g) and 33 fs    
@@ -244,6 +245,8 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL cL E$weighted average of 2158.2 {I5} from {+27}Al({+12}C,|an|g) and 2157.9
  34CL2cL {I1} from {+33}S(p,|g). Others: 2163.0 {I87} from {+32}S({+3}He,p),    
  34CL3cL 2157.5 {I15} from {+33}S({+3}He,d), and 2160 {I15} from {+35}Cl(p,d)   
+ 34CL cL J$1697.5|g, M1+E2, |DJ=1 |g to 1+, 461.01 level; 2012|g, M1+E2, |DJ=1  
+ 34CL2cL to 3+, 146.36 level. L=0 from 3/2+ in {+35}Cl(p,d) gives 1+,2+.        
  34CL cL T$lifetime |t=48 fs {I5}: weighted average of 46 fs {I15} in           
  34CL2cL {+32}S({+3}He,p|g) from 1970Br11 with DSAM, 40 fs {I20} in             
  34CL3cL {+32}S({+3}He,p|g) from 1972AlZT with DSAM, 100 fs {I30} in            
@@ -286,9 +289,8 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL3cL Others: 2175 {I7} from {+32}S(|a,d) and 2191 {I20} from                
  34CL4cL {+36}Ar(d,|a),(pol d,|a)                                               
  34CL cL J$L=(2) from 0+ in {+36}Ar(d,|a),(pol d,|a) and L+1 transfer from      
- 34CL2cL analyzing power gives (3+). L=2+4 from 0+ in {+32}S(|a,d): L=2 gives   
- 34CL3cL 1+,2+,3+; L=4 gives 3+,4+,5+ for 2175 {I7}. Spin=3 from |g(|q) in      
- 34CL4cL {+33}S(p,|g).                                                          
+ 34CL2cL analyzing power gives (3+). L=2+4 from 0+ in {+32}S(|a,d) gives 3+ for 
+ 34CL3cL 2175 {I7}. Spin=3 from |g(|q) in {+33}S(p,|g).                         
  34CL cL T$lifetime |t=504 fs {I100}: weighted average of 400 fs {I100} in      
  34CL2cL {+32}S({+3}He,p|g) from 1970Br11 with DSAM, 600 fs {I150} in           
  34CL3cL {+32}S({+3}He,p|g) from 1973Ca15 with DSAM, 600 fs {I350} in           
@@ -302,7 +304,7 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL2cG {I12} from {+32}S({+3}He,p|g), and 25.0 {I14} from {+33}S(p,|g)        
  34CL cG E,M$from ({+12}C,|an|g)                                                
  34CL cG E$from {+27}Al({+12}C,|an|g).                                          
- 34CL cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in {+27}Al({+12}C,|an|g).       
+ 34CL cG M$Q from |g|g(|q)(DCO) in {+27}Al({+12}C,|an|g). M2 ruled out by RUL.  
  34CL  G 1720      1 88      8 E2                                               
  34CL cG RI$unweighted average of 100 {I5} from {+27}Al({+12}C,|an|g), 89 {I9}  
  34CL2cG from {+32}S({+3}He,p|g), and 74 {I7} from {+33}S(p,|g)                 
@@ -314,8 +316,8 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL2cG {I7} from {+32}S({+3}He,p|g)                                           
  34CL cG RI$unweighted average of 7.0 {I5} from {+27}Al({+12}C,|an|g), 100 {I9} 
  34CL2cG from {+32}S({+3}He,p|g), and 100.0 {I25} from {+33}S(p,|g)             
- 34CL cG M,MR$from {+27}Al({+12}C,|an|g); D+Q from p|g(|q) in {+32}S({+3}He,p|g)
- 34CL2cG and M2 ruled out by RUL.                                               
+ 34CL cG M,MR$from |g|g(|q)(DCO) and |g|g(|q)(POL) in {+27}Al({+12}C,|an|g); D+Q
+ 34CL2cG from p|g(|q) in {+32}S({+3}He,p|g) and M2 ruled out by RUL.            
  34CL  G 2181.03     2.3     LT [M3]                                            
  34CL cG E$from (p,|g)                                                          
  34CL cG RI$from ({+3}He,p|g)                                                   
@@ -328,9 +330,8 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL2cL {I5} from {+27}Al({+12}C,|an|g), and 2375.7 {I2} from {+33}S(p,|g).    
  34CL3cL Other: 2376.8 {I75} from {+32}S({+3}He,p)                              
  34CL cL J$spin=4 from p|g(|q) in {+33}S(p,|g) and {+32}S({+3}He,p|g); |p=+ from
- 34CL2cL 2230|g, M1+E2, to 2+, 1230 level. Other: L=0+2 from 0+ in              
- 34CL3cL {+36}Ar(d,|a),(pol d,|a): L=0 gives 1+; L=2 gives 1+,2+,3+ for 2382    
- 34CL4cL {I20}.                                                                 
+ 34CL2cL 2230|g, M1+E2, to 3+, 146 level. Other: L=0+2 from 0+ in               
+ 34CL3cL {+36}Ar(d,|a),(pol d,|a) gives 1+ for 2382 {I20}.                      
  34CL cL T$lifetime |t=216 fs {I50}: weighted average of 260 fs {I75} in        
  34CL2cL {+32}S({+3}He,p|g) from 1970Br11 with DSAM, 275 fs {I70} in            
  34CL3cL {+32}S({+3}He,p|g) from 1973Ca15 with DSAM, 150 fs {I50} in            
@@ -354,8 +355,8 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL cG RI$weighted average of 100 {I8} from {+32}S({+3}He,p|g) and 100.00     
  34CL2cG {I20} from {+33}S(p,|g)                                                
  34CL cG M,MR$from |g|g(|q)(DCO) and |g|g(|q)(POL) in {+27}Al({+12}C,|an|g). D+Q
- 34CL2cG with |d=+5.7 25 from {+32}S({+3}He,p|g); D+Q with |d=+6.3 +32-20 from  
- 34CL3cG {+33}S(p,|g).                                                          
+ 34CL2cG with |d=+5.7 {I25} from {+32}S({+3}He,p|g); D+Q with |d=+6.3 {I+32-20} 
+ 34CL3cG from {+33}S(p,|g).                                                     
  34CL  G 2375.6      2       LT [E4]                                            
  34CL cG E,RI$from (p,|g)                                                       
  34CL  L 2382      20 1+                                                        
@@ -369,8 +370,8 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL3cL {I16} from {+33}S({+3}He,d), 2579 {I4} from {+34}S({+3}He,t), and 2589 
  34CL4cL {I20} from {+36}Ar(d,|a),(pol d,|a)                                    
  34CL cL J$spin=1 from p|g(|q) in {+33}S(p,|g). L=0 from 3/2+ in                
- 34CL2cL {+33}S({+3}He,d) gives 1+,2+; L=0+2 from 0+ in {+36}Ar(d,|a),(pol      
- 34CL3cL d,|a): L=0 gives 1+; L=2 gives 1+,2+,3+.                               
+ 34CL2cL {+33}S({+3}He,d) gives 1+,2+; L=0+2 from 0+ in {+36}Ar(d,|a),(pol d,|a)
+ 34CL3cL gives 1+.                                                              
  34CL cL T$lifetime |t=22 fs {I13}: unweighted average of 15 fs {I6} in         
  34CL2cL {+32}S({+3}He,p|g) from 1972AlZT with DSAM, 47 fs {I12} in             
  34CL3cL {+32}S({+3}He,p|g) from 1973Ca15 with DSAM, and 3.0 fs {I25} in        
@@ -431,7 +432,7 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL cG RI$from (p,|g).                                                        
  34CL  L 2718      10 0+,1+,2+,3+,4+                                            
  34CLX L XREF=O(2718*)T                                                         
- 34CL cL J$L=2 from 3/2+ in {+35}Cl({+3}He,|a).                                 
+ 34CL cL J$L=2 from 3/2+ in {+35}Cl({+3}He,|a) gives 0+,1+,2+,3+,4+.            
  34CL  L 2721.09   20 2-               1.4 PS    GT                             
  34CLX L XREF=EFGHIJ(2710)KMO(2718*)V                                           
  34CL cL E$weighted average of 2720.78 {I24} from {+24}Mg({+12}C,pn|g), 2721.13 
@@ -442,21 +443,21 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL cL T$from ({+3}He,p|g)                                                    
  34CL cL J$spin=2 from |g(|q) in {+31}P(|a,n|g), {+32}S({+3}He,p|g), and        
  34CL2cL {+33}S(p,|g); L=1+3 from 0+ in {+36}Ar(d,|a),(pol d,|a) and            
- 34CL3cL {+32}S(|a,d): L=1 gives 0-,1-,2-; L=3 gives 2-,3-,4-; 2721|g, M2, |DJ=2
- 34CL4cL to 0+, g.s.                                                            
+ 34CL3cL {+32}S(|a,d) gives 2-; 2721|g, M2, |DJ=2 to 0+, g.s.                   
  34CL cL T$lifetime |t>2 ps in {+32}S({+3}He,p|g) from 1973Ca15 with DSAM.      
  34CL2cL Others: >1.0 ps in {+33}S(p,|g) from 1973An13 with DSAM, >400 fs in    
  34CL3cL {+33}S(p,|g) from 1977Da02 with DSAM, and >1500 fs in {+33}S(p,|g) from
  34CL4cL 1985La16 with DSAM.                                                    
- 34CL  G 540         44      LT [E1]                                        &   
  34CL  G 563       1 14.4    8 D+Q       -0.38   6                              
  34CL cG RI$weighted average of 14.1 {I8} from {+27}Al({+12}C,|an|g) and 14.9   
  34CL2cG {I11} from {+33}S(p,|g). Other: 39 {I5} from {+32}S({+3}He,p|g)        
  34CL cG E,MR$from ({+12}C,|an|g)                                               
  34CL cG E,M,MR$from {+27}Al({+12}C,|an|g).                                     
- 34CL  G 564         14.9    11 [E1]                                            
- 34CL cG E$from ({+12}C,pn|g)                                                   
- 34CL cG RI$from (p,|g)                                                         
+ 34CL  G 563       1 14.4    8 D+Q       -0.38   6                              
+ 34CL cG RI$weighted average of 14.1 {I8} from {+27}Al({+12}C,|an|g) and 14.9   
+ 34CL2cG {I11} from {+33}S(p,|g). Other: 39 {I5} from {+32}S({+3}He,p|g)        
+ 34CL cG E,MR$from ({+12}C,|an|g)                                               
+ 34CL cG E,M,MR$from {+27}Al({+12}C,|an|g).                                     
  34CL  G 834       1 4.4     4 [E1]                                             
  34CL cG E$from {+27}Al({+12}C,|an|g).                                          
  34CL cG RI$from (p,|g).                                                        
@@ -475,8 +476,9 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL2cG {I5} from {+32}S({+3}He,p|g)                                           
  34CL cG RI$weighted average of 100 {I6} from {+27}Al({+12}C,|an|g), 100 {I7}   
  34CL2cG from {+32}S({+3}He,p|g), and 100.0 {I15} from {+33}S(p,|g)             
- 34CL cG M,MR$from {+27}Al({+12}C,|an|g). Others: D(+Q) with |d=-0.1 {I3} from  
- 34CL2cG {+32}S({+3}He,p|g); D(+Q) with |d=-0.03 {I5} from {+33}S(p,|g).        
+ 34CL cG M,MR$from |g|g(|q)(DCO) and |g|g(|q)(POL) in {+27}Al({+12}C,|an|g).    
+ 34CL2cG Others: D(+Q) with |d=-0.1 {I3} from {+32}S({+3}He,p|g); D(+Q) with    
+ 34CL3cG |d=-0.03 {I5} from {+33}S(p,|g).                                       
  34CL  G 2575      1 37.8    15 E1+M2    -0.3    1                              
  34CL cG RI$weighted average of 34.3 {I18} from {+27}Al({+12}C,|an|g), 42 {I5}  
  34CL2cG from {+32}S({+3}He,p|g), and 38.9 {I11} from {+33}S(p,|g)              
@@ -495,8 +497,7 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL4cL {I30} from {+36}Ar(p,{+3}He), and 3146 {I20} from {+36}Ar(d,|a),(pol   
  34CL5cL d,|a)                                                                  
  34CL cL T$from ({+3}He,p|g)                                                    
- 34CL cL J$L=0+2 from 0+ in {+36}Ar(d,|a),(pol d,|a): L=0 gives 1+; L=2 gives   
- 34CL2cL 1+,2+,3+.                                                              
+ 34CL cL J$L=0+2 from 0+ in {+36}Ar(d,|a),(pol d,|a) gives 1+.                  
  34CL cL T$lifetime |t<4 fs in {+33}S(p,|g) from 1985La16 with DSAM. Others: <10
  34CL2cL fs in {+33}S(p,|g) from 1983Wa27 with DSAM and 40 fs {I12} in          
  34CL3cL {+32}S({+3}He,p|g) from 1973Ca15 with DSAM.                            
@@ -616,7 +617,8 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL2cG {I6} from {+27}Al({+12}C,|an|g)                                        
  34CL cG RI$weighted average of 14 {I4} from {+24}Mg({+12}C,pn|g), 15.8 {I8}    
  34CL2cG from {+27}Al({+12}C,|an|g), and 15.4 {I19} from {+33}S(p,|g)           
- 34CL cG MR$from {+27}Al({+12}C,|an|g).                                         
+ 34CL cG M,MR$D(+Q) consistent with |DJ=0 from {+27}Al({+12}C,|an|g), |D|p=yes  
+ 34CL2cG from level scheme.                                                     
  34CL  G 1419.15     4.3     LT [E1]                                            
  34CL  G 1442.4      5.6     LT [M2]                                            
  34CL  G 1712.94     7.4     LT [M2]                                            
@@ -628,8 +630,9 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL2cG {I6} from {+27}Al({+12}C,|an|g)                                        
  34CL cG RI$unweighted average of 82 {I4} from {+24}Mg({+12}C,pn|g), 87 {I4}    
  34CL2cG from {+27}Al({+12}C,|an|g), and 100.0 {I11} from {+33}S(p,|g)          
- 34CL cG M$D(+Q) |DJ=1 |g {+33}S(p,|g).                                         
- 34CL cG MR$from (p,|g).                                                        
+ 34CL cG M,MR$D+Q from {+33}S(p,|g). Others: D(+Q) with |d=+0.05 I5 from        
+ 34CL2cG {+27}Al({+12}C,|an|g), D(+Q) with |d=+0.07 {I17} from {+31}P(|a,n|g).  
+ 34CL3cG |D|p=yes from level scheme.                                            
  34CL  G 3600.08     4.2     LT [M4]                                            
  34CL  L 3631.40   12 5-               1.9E2 PS  4                              
  34CLX L XREF=EFGHIKMQ(3630*)T                                                  
@@ -638,8 +641,8 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL3cL Others: 3635.2 {I48} from {+32}S({+3}He,p) and 3631.4 {I25} from       
  34CL4cL {+33}S({+3}He,d)                                                       
  34CL cL T$from (|a,n|g)                                                        
- 34CL cL J$L=3 from 3/2+ in {+33}S({+3}He,d) gives 1-,2-,3-,4-,5-; 4-,5-,6- from
- 34CL2cL L=5 in {+32}S(|a,d), {+32}S({+3}He,p); 3,5 from D |DJ=1 |g to 4+, 2376.
+ 34CL cL J$spin=5 from {+33}S(p,|g). |p=- from L=3 from 3/2+ in                 
+ 34CL2cL {+33}S({+3}He,d), L=5 from 0+ in {+32}S(|a,d) and {+32}S({+3}He,p).    
  34CL cL T$lifetime |t=280 ps {I60} in {+31}P(|a,n|g) from 1978Ba61 with RDM.   
  34CL2cL Others: >0.7 ps in {+33}S(p,|g) from 1977Da02 with DSAM, >1.1 ps in    
  34CL3cL {+33}S(p,|g) from 1985La16 with DSAM, and >3 ps in {+32}S({+3}He,p|g)  
@@ -649,10 +652,9 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL2cG {I8} from {+27}Al({+12}C,|an|g)                                        
  34CL cG RI$weighted average of 100.0 {I33} from {+24}Mg({+12}C,pn|g), 100 {I5} 
  34CL2cG from {+27}Al({+12}C,|an|g), and 100.0 {I13} from {+33}S(p,|g)          
- 34CL cG M$D(+Q) |DJ=1 |g {+33}S(p,|g), {+24}Mg({+12}C,pn|g).                   
- 34CL cG MR$from {+27}Al({+12}C,|an|g).                                         
- 34CL cG MR$from {+33}S(p,|g): 0.00 {I+1-2}, from {+24}Mg({+12}C,pn|g): 0.00    
- 34CL2cG {I2}, +0.08 {I20}.                                                     
+ 34CL cG M,MR$from |g|g(|q)(DCO) and |g|g(|q)(POL) in {+27}Al({+12}C,|an|g).    
+ 34CL2cG Other: D(+Q) with |d=0.00 {I2} from {+33}S(p,|g) and                   
+ 34CL3cG {+24}Mg({+12}C,pn|g).                                                  
  34CL  G 2401.3      3.7     LT [E3]                                            
  34CL  G 2966.3      3.7     LT [M4]                                            
  34CL  G 3170.3      5.5     LT [M4]                                            
@@ -661,80 +663,75 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL2cG {I6} from {+27}Al({+12}C,|an|g)                                        
  34CL cG RI$unweighted average of 66.7 {I33} from {+24}Mg({+12}C,pn|g), 67.0    
  34CL2cG {I35} from {+27}Al({+12}C,|an|g), and 83.4 {I13} from {+33}S(p,|g)     
- 34CL cG M$(Q+O) |DJ=2 |g {+24}Mg({+12}C,pn|g); (M2+E3) from level scheme.      
- 34CL cG MR$from {+24}Mg({+12}C,pn|g): adopted: -0.23 {I10} (1982Va02); others  
- 34CL2cG -0.14 {I18} or -6.0 {I29} (1978Ba61).                                  
+ 34CL cG M$from from {+27}Al({+12}C,|an|g). Other: Q+O from {+24}Mg({+12}C,pn|g)
+ 34CL cG MR$from {+24}Mg({+12}C,pn|g). Other: -0.23 {I12} from                  
+ 34CL2cG {+27}Al({+12}C,|an|g).                                                 
  34CL  G 3631.5      5.5     LT [E5]                                            
- 34CL  L 3646.3    2  (3,4,5+)         0.15 PS   6                              
+ 34CL  L 3646.3    2  5+               0.15 PS   6                              
  34CLX L XREF=FK                                                                
  34CL cL E$weighted average of 3646.5 {I7} from {+27}Al({+12}C,|an|g) and 3646.3
  34CL2cL {I2} from {+33}S(p,|g)                                                 
  34CL cL T$from (p,|g)                                                          
- 34CL cL J$1+,2,3,4,5+ from D,E2 |g to 3+, 146; 1,2 less likely from no |g (or  
- 34CL2cL weak) to 0+, g.s.                                                      
+ 34CL cL J$3500|g, E2, |DJ=2 to 3+, 146.36 level. 725|g, M1+E2, from 4+, 4371.5 
+ 34CL2cL level.                                                                 
  34CL cL T$lifetime |t=220 fs {I90} in {+33}S(p,|g) from 1985La16 with DSAM.    
- 34CL  G 2415.9      2.7     LT                                                 
- 34CL  G 3184.9      4       LT                                                 
+ 34CL  G 2415.9      2.7     LT [M3]                                            
+ 34CL  G 3184.9      4       LT [E4]                                            
  34CL  G 3500      1 100     7 E2                                               
  34CL cG E,M$from {+27}Al({+12}C,|an|g).                                        
  34CL cG RI$from (p,|g).                                                        
- 34CL cG M$from {+27}Al({+12}C,|an|g).                                          
- 34CL cG M$D or E2 based on RUL.                                                
- 34CL  G 3646.1      4       LT                                                 
- 34CL  L 3660.0    3  (1,2,3)          3 FS      LT                             
+ 34CL  G 3646.1      4       LT [M5]                                            
+ 34CL  L 3660.0    3  (0+:4+)          3 FS      LT                             
  34CLX L XREF=KQ(3630*)                                                         
- 34CL cL J$D, |DJ=0,1 |g to 2+, 2158.                                           
+ 34CL cL J$1502.1|g to 2+, 2157.9 level.                                        
  34CL cL T$lifetime |t<5 fs in {+33}S(p,|g) from 1985La16 with DSAM.            
  34CL  G 1502.1      100                                                        
- 34CL cG M$D |g from RUL.                                                       
  34CL  G 1772.7      2       LT                                                 
  34CL  G 2429.6      2       LT                                                 
  34CL  G 2994.6      2       LT                                                 
  34CL  G 3198.6      2       LT                                                 
  34CL  G 3513.4      5       LT                                                 
  34CL  G 3659.8      3       LT                                                 
- 34CL  L 3773.7    4  (1)-             67 FS     19                             
+ 34CL  L 3773.7    4  1-               67 FS     19                             
  34CLX L XREF=H(3804*)IKM                                                       
  34CL cL T$weighted average of 80 fs {I21} from {+32}S({+3}He,p|g) and 57 fs    
  34CL2cL {I19} from {+33}S(p,|g)                                                
  34CL cL E$weighted average of 3773.72 {I41} from {+33}S(p,|g) and 3773.0 {I24} 
  34CL2cL from {+33}S({+3}He,d)                                                  
- 34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-; |DJ=(1) E1 |g to
- 34CL2cL 0+, g.s.                                                               
+ 34CL cL J$spin=1 from |g(|q) in {+33}S(p,|g). |p=- from L=1 from 3/2+ in       
+ 34CL2cL {+33}S({+3}He,d).                                                      
  34CL cL T$lifetime |t=80 fs {I20}: weighted average of 115 fs {I30} in         
  34CL2cL {+32}S({+3}He,p|g) from 1973Ca15 with DSAM, 55 fs {I15} in {+33}S(p,|g)
  34CL3cL from 1983Wa27 with DSAM, and 110 fs {I20} in {+33}S(p,|g) from 1985La16
  34CL4cL with DSAM.                                                             
  34CL  G 3773.5      100       [E1]                                             
  34CL cG E$from (p,|g)                                                          
- 34CL cG M$D,E2 based on RUL; M1 and E2 excluded from |D|p=yes, thus E1.        
- 34CL  L 3791.7    2  (0+,1+)                                                   
+ 34CL  L 3791.7    2  (0:3+)                                                    
  34CLX L XREF=H(3804*)K                                                         
- 34CL cL J$|g to 1+; L({+3}He,p)=0 for an uncertain 3804 level.                 
+ 34CL cL J$3330.5|g to 1+, 461.01 level.                                        
  34CL  G 2561.3      3.5     LT                                                 
  34CL  G 3330.3      100     7                                                  
  34CL  G 3645.1      8.2     LT                                                 
  34CL  G 3791.5      7.1     LT                                                 
  34CL  L 3847      10                                                           
  34CLX L XREF=T                                                                 
- 34CL  L 3940.1    3  0+               4 FS      LT                             
+ 34CL  L 3940.1    3  (1)+             4 FS      LT                             
  34CLX L XREF=KT(3937*)U(3940*)                                                 
- 34CL cL E$weighted average of 3940.1 {I3} from {+33}S(p,|g) and 3937 {I10} from
- 34CL2cL {+35}Cl({+3}He,|a).                                                    
- 34CL cL J$L=0 in {+36}Ar(p,{+3}He) and isobaric analog state of {+34}Ar state  
- 34CL2cL from {+36}Ar(p,t) reaction (1969Br21).                                 
+ 34CL cL E$from {+33}S(p,|g). Other: 3937 {I10} from {+35}Cl({+3}He,|a).        
+ 34CL cL J$L=0+2 from 3/2+ in {+35}Cl({+3}He,|a) gives 1+,2+; L=(0) from 0+ in  
+ 34CL2cL {+36}Ar(p,{+3}He) gives (0+,1+).                                       
  34CL cL T$lifetime |t<6 fs in {+33}S(p,|g) from 1985La16 with DSAM.            
- 34CL  G 2709.7      3.5     LT [E2]                                            
- 34CL  G 3274.6      100     9 [M1]                                             
- 34CL  G 3478.7      72      9 [M1]                                             
- 34CL  G 3939.9      5.2     LT [E0]                                            
+ 34CL  G 2709.7      3.5     LT [M1,E2]                                         
+ 34CL  G 3274.6      100     9 [M1,E2]                                          
+ 34CL  G 3478.7      72      9 [M1,E2]                                          
+ 34CL  G 3939.9      5.2     LT [M1]                                            
  34CL  L 3964.1    3  (2,3,4)+         90 FS     42                             
  34CLX L XREF=KQT                                                               
  34CL cL E$weighted average of 3964.1 {I3} from {+33}S(p,|g) and 3964 {I10} from
  34CL2cL {+35}Cl({+3}He,|a)                                                     
  34CL cL T$from (p,|g)                                                          
- 34CL cL J$(2,3,4) from gammas to 2+, 2157; 3+, 146; and 4+, 2376; |p=+ from L=2
- 34CL2cL in {+35}Cl({+3}He,|a).                                                 
+ 34CL cL J$|g to 2+, 2157, 3+, 146, and 4+, 2376; |p=+ from L=2 from 3/2+ in    
+ 34CL2cL {+35}Cl({+3}He,|a).                                                    
  34CL cL T$lifetime |t=130 fs {I60}: weighted average of 160 fs {I60} in        
  34CL2cL {+33}S(p,|g) from 1977Da02 with DSAM and 90 fs {I70} in {+33}S(p,|g)   
  34CL3cL from 1985La16 with DSAM.                                               
@@ -748,63 +745,59 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL cL E$weighted average of 3983.0 {I3} from {+33}S(p,|g) and 3983.4 {I25}   
  34CL2cL from {+33}S({+3}He,d)                                                  
  34CL cL T$from (p,|g)                                                          
- 34CL cL J$L=3 from 3/2+ in {+33}S({+3}He,d) gives 1-,2-,3-,4-,5-; D(+Q), |DJ=0 
- 34CL2cL |g to 3+, 146 {+33}S(p,|g); |p=- from L=3 in {+35}Cl({+3}He,|a).       
+ 34CL cL J$spin=3 from |g(|q) in {+33}S(p,|g). |p=- from L=3 from 3/2+ in       
+ 34CL2cL {+33}S({+3}He,d) and {+35}Cl({+3}He,|a).                               
  34CL cL T$lifetime |t=189 fs {I40}: weighted average of 165 fs {I60} in        
  34CL2cL {+33}S(p,|g) from 1983Wa27 with DSAM and 200 fs {I40} in {+33}S(p,|g)  
  34CL3cL from 1985La16 with DSAM. Other: >100 fs in {+33}S(p,|g) from 1973An13  
  34CL4cL with DSAM.                                                             
  34CL  G 1261.7      13.5    11 D+Q      -0.8    3                              
- 34CL cG M$D+Q |DJ=1 |g {+33}S(p,|g).                                           
+ 34CL cG M,MR$from {+33}S(p,|g).                                                
  34CL  G 1402.7      12      LT [M2]                                            
  34CL  G 1607.3      12      LT [E1]                                            
  34CL  G 1825.1      43.2    17 D(+Q)    +0.02   4                              
- 34CL cG M$D(+Q), |DJ=1 |g {+33}S(p,|g).                                        
+ 34CL cG M,MR$from {+33}S(p,|g).                                                
  34CL  G 2095.6      26      LT [E1]                                            
  34CL  G 2752.6      6.4     LT [E1]                                            
  34CL  G 3317.5      12      LT [M2]                                            
  34CL  G 3521.6      1.6     LT [M2]                                            
  34CL  G 3836.4      100.0   31 D(+Q)    -0.02   4                              
- 34CL cG M$D(+Q), |DJ=0 |g {+33}S(p,|g).                                        
- 34CL cG MR$from {+33}S(p,|g); other: -0.06 {I5} {+33}S(p,|g).                  
+ 34CL cG M,MR$from {+33}S(p,|g).                                                
  34CL  G 3982.8      5.2     LT [E3]                                            
  34CL  L 4075      10 1+,2+                                                     
  34CLX L XREF=Q(4075*)T                                                         
- 34CL cL J$L=0+2 ({+35}Cl({+3}He,|a)).                                          
+ 34CL cL J$L=0+2 from 3/2+ in {+35}Cl({+3}He,|a) gives 1+,2+.                   
  34CL  L 4076.2    2  4-               0.9 PS    +12-4                          
  34CLX L XREF=HIJ(4060)KMQ(4075*)                                               
  34CL cL E$weighted average of 4076.5 {I58} from {+32}S({+3}He,p), 4060 {I18}   
  34CL2cL from {+32}S(|a,d), 4076.2 {I2} from {+33}S(p,|g), and 4076 {I3} from   
  34CL3cL {+33}S({+3}He,d)                                                       
  34CL cL T$from ({+3}He,p|g)                                                    
- 34CL cL J$L=3 from 3/2+ in {+33}S({+3}He,d) gives 1-,2-,3-,4-,5-. L=3+5 from 0+
- 34CL2cL in {+32}S(|a,d): L=3 gives 2-,3-,4-; L=5 gives 4-,5-,6-. 2,4 from D(+Q)
- 34CL3cL |DJ=1 |g to 3+, 2181 (1977Da03).                                       
+ 34CL cL J$spin=4 from |g(|q) in {+33}S(p,|g). L=3+5 from 0+ in {+32}S(|a,d)    
+ 34CL2cL gives 4-.                                                              
  34CL cL T$lifetime |t=1.3 ps {I+17-6} in {+32}S({+3}He,p|g) from 1973Ca15 with 
  34CL2cL DSAM. Others: >0.25 ps in {+33}S(p,|g) from 1973An13 with DSAM and >0.5
  34CL3cL ps in {+33}S(p,|g) from 1977Da02 with DSAM.                            
  34CL  G 1354.9      9.1     11 [E2]                                            
  34CL  G 1700.5      35.5    13 D+Q      -0.27   +4-3                           
- 34CL cG M$D+Q |DJ=0 |g {+33}S(p,|g).                                           
  34CL  G 1895.0      22.0    13 D+Q      +0.05   +3-1                           
- 34CL cG M$D(+Q) |DJ=1 |g {+33}S(p,|g).                                         
  34CL  G 2845.7      5       LT [M2]                                            
  34CL  G 3614.8      3.3     LT [E3]                                            
  34CL  G 3929.6      100.0   25 D(+Q)    0.00    +1-2                           
- 34CL cG E,RI,MR$from (p,|g).                                                   
- 34CL cG M$D(+Q) |DJ=1 |g {+33}S(p,|g).                                         
+ 34CL cG E,RI,MR$from (p,|g)                                                    
  34CL  G 4075.9      3.3     LT [M4]                                            
  34CL  L 4136.6       1+,2+                                                     
  34CLX L XREF=T                                                                 
- 34CL cL J$L=0+2 in {+35}Cl({+3}He,|a).                                         
- 34CL  L 4139.7    3  2-               95 FS     28                             
+ 34CL cL J$L=0+2 from 3/2+ in {+35}Cl({+3}He,|a) gives 1+,2+.                   
+ 34CL  L 4139.7    3  (2-)             95 FS     28                             
  34CLX L XREF=HIKM                                                              
  34CL cL T$weighted average of 104 fs {I35} from {+32}S({+3}He,p|g) and 89 fs   
  34CL2cL {I28} from {+33}S(p,|g)                                                
  34CL cL E$weighted average of 4141.1 {I79} from {+32}S({+3}He,p), 4139.7 {I2}  
  34CL2cL from {+33}S(p,|g), and 4146 {I3} from {+33}S({+3}He,d)                 
- 34CL cL J$L=(1+3) from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-,4-,5-; L=1+3 
- 34CL2cL in {+32}S({+3}He,p).                                                   
+ 34CL cL J$spin=2,3 from |g(|q) in {+33}S(p,|g); L=1+3 from 0+ in               
+ 34CL2cL {+32}S({+3}He,p) gives (2-); L=(1+3) from 3/2+ in {+33}S({+3}He,d)     
+ 34CL3cL gives (1-,2-,3-).                                                      
  34CL cL T$lifetime |t=136 fs {I40}: weighted average of 150 fs {I50} in        
  34CL2cL {+32}S({+3}He,p|g) from 1973Ca15 with DSAM, 120 fs {I40} in            
  34CL3cL {+33}S(p,|g) from 1983Wa27 with DSAM, and 150 fs {I60} in {+33}S(p,|g) 
@@ -817,11 +810,11 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL  G 3993.1      100     6 [E1]                                             
  34CL cG E,RI$from (p,|g)                                                       
  34CL  G 4139.4      3.9     LT [M2]                                            
- 34CL  L 4147.8    2  (1+,2+)                                                   
+ 34CL  L 4147.8    2  1+,2+                                                     
  34CLX L XREF=KR(4160)                                                          
  34CL cL E$weighted average of 4147.8 {I2} from {+33}S(p,|g) and 4160 {I20} from
  34CL2cL {+35}Cl(p,d)                                                           
- 34CL cL J$gammas to 0+ and 3+.                                                 
+ 34CL cL J$L=0 from 3/2+ in {+35}Cl(p,d) gives 1+,2+. 4147.5|g to 0+, g.s.      
  34CL  G 1966.6      7.0     10                                                 
  34CL  G 1989.8      6.1     13                                                 
  34CL  G 2917.3      100.0   23                                                 
@@ -832,97 +825,94 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CLX L XREF=OT                                                                
  34CL cL E$weighted average of 4212 {I4} from {+34}S({+3}He,t) and 4206 {I10}   
  34CL2cL from {+35}Cl({+3}He,|a)                                                
+ 34CL cL J$L=0+2 from 3/2+ in {+35}Cl({+3}He,|a) gives 1+,2+.                   
  34CL  L 4325.89   15 1+,2+            5.1 FS    21                             
  34CLX L XREF=KT                                                                
  34CL cL E$weighted average of 4325.89 {I15} from {+33}S(p,|g) and 4321 {I10}   
  34CL2cL from {+35}Cl({+3}He,|a)                                                
  34CL cL T$from (p,|g)                                                          
- 34CL cL J$L=0+2 ({+35}Cl({+3}He,|a)).                                          
+ 34CL cL J$L=0+2 from 3/2+ in {+35}Cl({+3}He,|a) gives 1+,2+.                   
  34CL cL T$lifetime |t=7.4 fs {I30}: weighted average of 11 fs {I9} in          
  34CL2cL {+33}S(p,|g) from 1977Da02 with DSAM and 7 fs {I3} in {+33}S(p,|g) from
  34CL3cL 1985La16 with DSAM.                                                    
  34CL  G 2167.9      100     6 [M1,E2]                                          
- 34CL cG M$D |g based on RUL.                                                   
  34CL  G 2438.51     1.3     LT [M1,E2]                                         
  34CL  G 3660.4      2.5     LT [M1,E2]                                         
  34CL  G 3864.5      3.8     LT [M1,E2]                                         
  34CL  G 4179.2      2.5     LT [E2]                                            
  34CL  G 4325.60     5       LT [M1,E2]                                         
- 34CL  L 4354.2    2  1-               32 FS     6                              
+ 34CL  L 4354.2    2  (1)-             32 FS     6                              
  34CLX L XREF=HIKM                                                              
  34CL cL T$weighted average of 45 fs {I14} from {+32}S({+3}He,p|g) and 30 fs    
  34CL2cL {I6} from {+33}S(p,|g)                                                 
  34CL cL E$weighted average of 4354.5 {I20} from {+32}S({+3}He,p), 4354.2 {I2}  
  34CL2cL from {+33}S(p,|g), and 4353 {I3} from {+33}S({+3}He,d)                 
- 34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-; 0-,1-,2- from   
- 34CL2cL L=1 in {+32}S({+3}He,p); 0- and 2- excluded from D,E2 |g to 2+, 2157,  
- 34CL3cL and D,E2 |g to 0+, g.s.                                                
+ 34CL cL J$spin=(1) from |g(|q) in {+33}S(p,|g). L=1 from 3/2+ in               
+ 34CL2cL {+33}S({+3}He,d) gives 0-,1-,2-,3-. L=1 from 0+ in {+32}S({+3}He,p)    
+ 34CL3cL gives (0-,1-,2-).                                                      
  34CL cL T$lifetime |t=46 fs {I8}: weighted average of 43 fs {I8} in            
  34CL2cL {+33}S(p,|g) from 1985La16 with DSAM and 65 fs {I20} in                
  34CL3cL {+32}S({+3}He,p|g) from 1973Ca15 with DSAM. Other: <10 fs in           
  34CL4cL {+33}S(p,|g) from 1983Wa27 with DSAM.                                  
  34CL  G 2196.2      33.2    28 [E1]                                            
- 34CL cG M$D,E2 based on RUL, |DJ|p requires E1.                                
  34CL  G 3688.7      4.2     LT [E1]                                            
  34CL  G 3892.8      11.5    28 [E1]                                            
  34CL  G 4207.5      2.8     LT [M2]                                            
  34CL  G 4353.9      100.0   28 [E1]                                            
  34CL cG E,RI$from (p,|g)                                                       
- 34CL cG M$D,E2 based on RUL, |DJ|p requires E1.                                
  34CL  L 4371.5    13 4+               2.08 PS   GT                             
  34CLX L XREF=F                                                                 
+ 34CL cL J$725|g, M1+E2, |DJ=1 to 5+, 3646.3 level.                             
+ 34CL cL T$lifetime |t>3 ps in {+27}Al({+12}C,|an|g) from 1978Ba39 with RDM.    
  34CL  G 725       1 100       M1+E2                                            
+ 34CL cG M$from 27Al({+12}C,|an|g).                                             
  34CL  L 4412.1    31                                                           
  34CLX L XREF=HJ(4417*)                                                         
- 34CL  L 4417.3    2  2-               24 FS     8                              
+ 34CL  L 4417.3    2  (2)-             24 FS     8                              
  34CLX L XREF=J(4417*)KMQ(4450*)                                                
  34CL cL E$weighted average of 4417.3 {I2} from {+33}S(p,|g) and 4418 {I3} from 
  34CL2cL {+33}S({+3}He,d)                                                       
  34CL cL T$from (p,|g)                                                          
- 34CL cL J$L=1,1+3 from 0+ in {+32}S(|a,d): L=1 gives 0-,1-,2-; L=3 gives       
- 34CL2cL 2-,3-,4-. L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-; 2-,3-,4-
- 34CL3cL from L=3 in {+32}S({+3}He,p); 3-,4- less likely from gammas to 1+, 665 
- 34CL4cL and 1+, 461.                                                           
- 34CL cL T$mean lifetime |t in fs from {+33}S(p,|g): 35 {I11} (1985La16).       
+ 34CL cL J$L=1,1+3 from 0+ in {+32}S(|a,d): L=1 gives 0-,1-,2-; L=1+3 gives 2-. 
+ 34CL2cL L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-; L=3 from 0+ in    
+ 34CL3cL {+32}S({+3}He,p) gives (2-,3-,4-).                                     
+ 34CL cL T$lifetime |t=35 fs {I11} in {+33}S(p,|g) from 1985La16 with DSAM.     
  34CL  G 3186.8      3.1     LT [E1]                                            
  34CL  G 3751.8      58      5 [E1]                                             
- 34CL cG M$D,E2 based on RUL, |DJ|p requires E1.                                
  34CL  G 3955.9      100     5 [E1]                                             
- 34CL cG M$D,E2 based on RUL, |DJ|p requires E1.                                
  34CL  G 4270.6      6.3     LT [E1]                                            
  34CL  G 4417.0      7.8     LT [M2]                                            
- 34CL  L 4446.6    2  4-               116 FS    24                             
+ 34CL  L 4446.6    2  (1:5)            116 FS    24                             
  34CLX L XREF=KQ(4450*)                                                         
- 34CL cL J$2-,3-,4- from L=3 in {+32}S({+3}He,p); 3- excluded from D |DJ=1 |g to
- 34CL2cL 3+, 146 {+33}S(p,|g); 2- excluded from D |DJ=1 |g from 5(-), 6870.     
+ 34CL cL J$4300.0|g, D(+Q), to 3+, 146.36 level.                                
  34CL cL T$lifetime |t=167 fs {I35}: weighted average of 160 fs {I60} in        
  34CL2cL {+33}S(p,|g) from 1977Da02 with DSAM, 180 fs {I60} in {+33}S(p,|g) from
  34CL3cL 1983Wa27 with DSAM, and 165 fs {I35} in {+33}S(p,|g) from 1985La16 with
  34CL4cL DSAM.                                                                  
  34CL  G 4299.9      100       D(+Q)     -0.02   +2-1                           
- 34CL cG M$D(+Q) |DJ=1 |g {+33}S(p,|g).                                         
- 34CL  G 4446.3      3       LT [M4]                                            
+ 34CL  G 4446.3      3       LT                                                 
  34CL  L 4455.8    40                                                           
  34CLX L XREF=HM(4461*)Q(4460*)                                                 
- 34CL  L 4461.4    3  (2,3,4)-         1.5E2 FS  4                              
+ 34CL  L 4461.4    3  (2,3)-           1.5E2 FS  4                              
  34CLX L XREF=IKM(4461*)Q(4460*)                                                
  34CL cL T$weighted average of 139 fs {I42} from {+32}S({+3}He,p|g) and 2.6E2 fs
  34CL2cL {I17} from {+33}S(p,|g)                                                
  34CL cL E$from (p,|g)                                                          
- 34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-.                 
+ 34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-. L=3 from 0+ in  
+ 34CL2cL {+32}S({+3}He,p) gives (2-,3-,4-).                                     
  34CL cL T$lifetime |t=209 fs {I60}: weighted average of 200 fs {I60} in        
  34CL2cL {+32}S({+3}He,p|g) from 1973Ca15 with DSAM and 370 fs {I250} in        
  34CL3cL {+33}S(p,|g) from 1985La16 with DSAM.                                  
  34CL  G 4314.7      100       [E1]                                             
  34CL cG E$from (p,|g)                                                          
- 34CL cG M$D |g: D,E2 based on RUL; E2 excluded from |D|p=yes.                  
+ 34CL cG M$|D|p=yes from level scheme; M2 ruled out by RUL.                     
  34CL  L 4515.7    2  2-               10 FS     4                              
  34CLX L XREF=HKM                                                               
  34CL cL E$weighted average of 4514.5 {I32} from {+32}S({+3}He,p), 4515.7 {I2}  
  34CL2cL from {+33}S(p,|g), and 4516.3 {I22} from {+33}S({+3}He,d)              
  34CL cL T$from (p,|g)                                                          
- 34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-; L=1+3 in        
- 34CL2cL {+32}S({+3}He,p).                                                      
+ 34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-; L=1+3 from 0+ in
+ 34CL2cL {+32}S({+3}He,p) gives (2-).                                           
  34CL cL T$lifetime |t=15 fs {I5}: weighted average of 15 fs {I7} in            
  34CL2cL {+33}S(p,|g) from 1983Wa27 with DSAM and 15 fs {I5} in {+33}S(p,|g)    
  34CL3cL from 1985La16 with DSAM.                                               
@@ -931,90 +921,87 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL  G 4054.2      2.5     LT [E1]                                            
  34CL  G 4369.0      25.0    25 [E1]                                            
  34CL  G 4515.4      5       LT [M2]                                            
- 34CL  L 4605.8    10 (1-,2-,3-)       0.24 PS   17                             
+ 34CL  L 4605.8    10 (-)              0.24 PS   17                             
  34CLX L XREF=H(*)KM(*)QT(4608*)                                                
  34CL cL E,T$from (p,|g)                                                        
  34CL cL E,T$from {+33}S(p,|g).                                                 
- 34CL cL J$1,2,3: 1,2,3,4- from D,E2 |g to 2-, 2721; 0+,1,2,3,4+ from D,E2 |g to
- 34CL2cL 2+, 2158. |p=(-) from L=1 in {+33}S({+3}He,d) and {+35}Cl({+3}He,|a) if
- 34CL3cL these can be confirmed to pertain to this level.                       
+ 34CL cL J$L=1+3 from 3/2+ in {+35}Cl({+3}He,|a) gives 1-,2-,3- for 4608 level. 
+ 34CL2cL L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3- for 4607.9 {I21}   
+ 34CL3cL level. L=1+3 from 0+ in {+32}S({+3}He,p) gives (2-) for 4611.9 {I70}   
+ 34CL4cL level.                                                                 
  34CL cL T$lifetime |t=350 fs {I240} in {+33}S(p,|g) from 1985La16 with DSAM.   
  34CL  G 1884.4      100       [M1,E2]                                          
- 34CL cG M$D,E2 |g based on RUL, |DJ|p requires M1,E2.                          
  34CL  G 2447.8      44        [E1]                                             
- 34CL cG M$D,E2 |g based on RUL, |DJ|p requires E1.                             
  34CL  G 2718.4      35        [E1]                                             
  34CL  G 3375.3      54        [E1]                                             
- 34CL  G 4459.1      12      LT [M2]                                            
- 34CL  L 4609.7    15 2-                                                        
+ 34CL  G 4459.1      12      LT [E1]                                            
+ 34CL  L 4609.7    15 (-)                                                       
  34CLX L XREF=H(*)KM(*)Q(4610*)T(4608*)                                         
- 34CL cL J$L=1+3 in {+35}Cl({+3}He,|a).                                         
+ 34CL cL J$same arguments as 4605.8 level also apply to this level.             
  34CL  G 1888.3      71                                                         
  34CL  G 3379.2      100                                                        
  34CL  G 4463.0      73                                                         
  34CL  L 4611      4  0+,1+                                                     
  34CLX L XREF=OQ(4610*)                                                         
- 34CL cL J$L=0 in {+34}S({+3}He,t).                                             
- 34CL  L 4638.9    4  2-               31 FS     10                             
+ 34CL cL E$from 34S(3HE,T).                                                     
+ 34CL cL J$L=0 from 0+ in {+34}S({+3}He,t).                                     
+ 34CL  L 4638.9    4  1-,2-,3-         31 FS     10                             
  34CLX L XREF=J(4665*)KMU(4670*)                                                
  34CL cL E$weighted average of 4638.9 {I4} from {+33}S(p,|g) and 4638.7 {I21}   
  34CL2cL from {+33}S({+3}He,d)                                                  
  34CL cL T$from (p,|g)                                                          
- 34CL cL J$L=1+3 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-,4-,5-; L=1+3 in
- 34CL2cL {+32}S({+3}He,p).                                                      
+ 34CL cL J$L=1+3 from 3/2+ in {+33}S({+3}He,d) gives 1-,2-,3-.                  
  34CL cL T$lifetime |t=45 fs {I14} in {+33}S(p,|g) from 1985La16 with DSAM.     
  34CL  G 4177.4      100     8 [E1]                                             
- 34CL  G 4492.2      58      10 [E1]                                            
- 34CL  L 4695.7    2  0+,1,2,3,4+      6 FS      3                              
+ 34CL cG M$|D|p=yes from level scheme; M2 ruled out by RUL.                     
+ 34CL  G 4492.2      58      10 [M2]                                            
+ 34CL cG M$|D|p=yes from level scheme; M2 ruled out by RUL.                     
+ 34CL  L 4695.7    2  (1+,2,3+)        6.2 FS    28                             
  34CLX L XREF=HJ(4665*)KMU(4670*)                                               
  34CL cL E$weighted average of 4693.0 {I34} from {+32}S({+3}He,p), 4695.7 {I2}  
  34CL2cL from {+33}S(p,|g), and 4695 {I2} from {+33}S({+3}He,d)                 
  34CL cL T$from (p,|g)                                                          
- 34CL cL J$D,E2 |g to 2+, 2158.                                                 
+ 34CL cL J$L=2,1+3 from 0+ in {+32}S({+3}He,p) gives (1+,2,3+).                 
  34CL cL T$lifetime |t=9 fs {I4} in {+33}S(p,|g) from 1985La16 with DSAM. Other:
  34CL2cL <10 fs in {+33}S(p,|g) from 1983Wa27 with DSAM.                        
  34CL  G 2537.7      100                                                        
- 34CL cG M$D,E2 |g based on RUL.                                                
  34CL  G 2808.3      4       LT                                                 
  34CL  G 3465.2      4       LT                                                 
  34CL  G 4030.1      5       LT                                                 
  34CL  G 4234.2      4       LT                                                 
  34CL  G 4695.4      2       LT                                                 
- 34CL  L 4717.5    6  1+,2             9 FS      LT                             
+ 34CL  L 4717.5    6  2+,3+,4+         9 FS      LT                             
  34CLX L XREF=KMQT                                                              
  34CL cL E$weighted average of 4717.4 {I6} from {+33}S(p,|g) and 4718 {I2} from 
  34CL2cL {+33}S({+3}He,d). Other: 4715 {I10} from {+35}Cl({+3}He,|a)            
  34CL cL T$from (p,|g)                                                          
- 34CL cL J$1+,2,3+ from D,E2 |g to 3+, 146 and 1+, 461; 3+ excluded by RUL for  
- 34CL2cL I(4717)|g<1% to 0+, g.s.                                               
+ 34CL cL J$L=2 from 3/2+ in {+35}Cl({+3}He,|a) gives 0+,1+,2+,3+,4+. 2341.6|g to
+ 34CL2cL 4+, 2375.7 level.                                                      
  34CL cL T$lifetime |t<13 fs in {+33}S(p,|g) from 1985La16 with DSAM.           
- 34CL  G 2106.3      16      5                                                  
- 34CL cG M$D,E2 |g based on RUL.                                                
- 34CL  G 2341.6      11.1    32                                                 
- 34CL  G 2536.2      35      5                                                  
- 34CL  G 2559.4      11      5                                                  
- 34CL  G 2830.0      3.3     LT                                                 
- 34CL  G 3486.9      4.9     LT                                                 
- 34CL  G 4051.8      4.9     LT                                                 
- 34CL  G 4255.9      4.9     LT                                                 
- 34CL  G 4570.7      100     5                                                  
- 34CL cG M$D,E2 |g based on RUL.                                                
+ 34CL  G 2106.3      16      5 [M1,E2]                                          
+ 34CL  G 2341.6      11.1    32 [E2]                                            
+ 34CL  G 2536.2      35      5 [M1,E2]                                          
+ 34CL  G 2559.4      11      5 [M1,E2]                                          
+ 34CL  G 2830.0      3.3     LT [M1,E2]                                         
+ 34CL  G 3486.9      4.9     LT [M1,E2]                                         
+ 34CL  G 4051.8      4.9     LT [M1,E2]                                         
+ 34CL  G 4255.9      4.9     LT [M1,E2]                                         
+ 34CL  G 4570.7      100     5 [M1,E2]                                          
  34CL  L 4743.15   17 6-               4.9 PS    21                             
  34CLX L XREF=EFG                                                               
  34CL cL E$weighted average of 4743.08 {I13} from {+24}Mg({+12}C,pn|g) and      
  34CL2cL 4743.59 {I34} from {+27}Al({+12}C,|an|g)                               
  34CL cL T$from (|a,n|g)                                                        
- 34CL cL J$6 from: 4,6 from D+Q |DJ=1 |g 5-, 3631; 2,6 from Q |DJ=2 |g to 4-,   
- 34CL2cL 3600; |p=- from |DJ=3 E3 |g to 3+.                                     
+ 34CL cL J$1143.0|g, E2, |DJ=2 to 4-, 3600.14 level; 1111.77|g, M1+E2, |DJ=1 to 
+ 34CL2cL 5-, 3631.2 level.                                                      
  34CL cL T$lifetime |t=7 ps {I3} in {+31}P(|a,n|g) from 1978Ba61 with RDM.      
  34CL2cL Other: >3 ps in {+27}Al({+12}C,|an|g) from 1978Ba39 with RDM.          
- 34CL  G 1111.77   10 83     4 M1+E2     +4.7    6                              
+ 34CL  G 1111.77   10 83     4 M1+E2     +4.7    6                          F   
  34CL cG E$weighted average of 1111.77 {I10} from {+24}Mg({+12}C,pn|g) and      
  34CL2cG 1111.8 {I6} from {+27}Al({+12}C,|an|g)                                 
  34CL cG RI$weighted average of 84 {I6} from {+24}Mg({+12}C,pn|g) and 82 {I4}   
  34CL2cG from {+27}Al({+12}C,|an|g)                                             
- 34CL cG M$D+Q |DJ=1 |g {+24}Mg({+12}C,pn|g).                                   
- 34CL cG MR$from {+24}Mg({+12}C,pn|g).                                          
+ 34CL cG M,MR$other: D+Q with +4.7 {I6} from {+24}Mg({+12}C,pn|g).              
  34CL cG $A{-2}=+0.30 {I4} A{-4}=+0.25 {I4} (1982Va02); A{-2}=-0.08 {I20}       
  34CL2cG (1978Ba39).                                                            
  34CL  G 1143.0    2 97      5 E2                                               
@@ -1022,23 +1009,21 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL2cG {I6} from {+27}Al({+12}C,|an|g)                                        
  34CL cG RI$weighted average of 100 {I6} from {+24}Mg({+12}C,pn|g) and 95 {I5}  
  34CL2cG from {+27}Al({+12}C,|an|g)                                             
- 34CL cG M$from {+27}Al({+12}C,|an|g).                                          
- 34CL cG M$Q |DJ=2 |g {+24}Mg({+12}C,pn|g).                                     
- 34CL cG MR$from {+24}Mg({+12}C,pn|g): +0.02 {I7} (1982Va02); -0.09 {I53}       
- 34CL2cG (1978Ba39); -0.03 {I9} (1978Ba61).                                     
- 34CL  G 1143                  Q(+O)     -0.03   9                              
+ 34CL cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in {+27}Al({+12}C,|an|g). Other:
+ 34CL2cG Q(+O) with |d=+0.02 {I7} from {+24}Mg({+12}C,pn|g).                    
  34CL  G 2562      1                                                            
  34CL  G 4596.6    3 95      7 O                                                
  34CL cG E$weighted average of 4596.5 {I3} from {+24}Mg({+12}C,pn|g) and 4597.1 
  34CL2cG {I7} from {+27}Al({+12}C,|an|g)                                        
  34CL cG RI$weighted average of 87 {I6} from {+24}Mg({+12}C,pn|g) and 100 {I5}  
  34CL2cG from {+27}Al({+12}C,|an|g)                                             
- 34CL cG M$from {+31}P(|a,n|g).                                                 
- 34CL cG M$D,Q,E3 based on RUL, |DJ|p requires E3.                              
- 34CL cG MR$+0.07 {I9} {+24}Mg({+12}C,pn|g).                                    
- 34CL  L 4786      10 3:7+                                                      
+ 34CL cG M$from (|a,n|g)                                                        
+ 34CL cG M$electric character from |g|g(|q)(POL) in {+27}Al({+12}C,|an|g). O(+H)
+ 34CL2cG with |d=+0.07 {I9} from {+24}Mg({+12}C,pn|g). |D|p=yes from level      
+ 34CL3cG scheme. M4 ruled out by RUL.                                           
+ 34CL  L 4786      10 2-:5+                                                     
  34CLX L XREF=J                                                                 
- 34CL cL J$L=1+3,3,4 from 0+ in {+32}S(|a,d): L=1 gives 0-,1-,2-; L=3 gives     
+ 34CL cL J$L=1+3,3,4 from 0+ in {+32}S(|a,d): L=1+3 gives 2-; L=3 gives         
  34CL2cL 2-,3-,4-; L=4 gives 3+,4+,5+.                                          
  34CL  L 4824.18   12 5+               0.32 PS   14                             
  34CLX L XREF=EFGHK                                                             
@@ -1047,27 +1032,26 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL cL E$weighted average of 4824.03 {I12} from {+24}Mg({+12}C,pn|g), 4824.52 
  34CL2cL {I34} from {+27}Al({+12}C,|an|g), 4824.8 {I24} from {+32}S({+3}He,p),  
  34CL3cL and 4824.41 {I18} from {+33}S(p,|g)                                    
- 34CL cL J$3 to 7+ from L=4,6 in {+32}S(|a,d); 1,5 from Q |DJ=2 |g to 3+, 146   
- 34CL2cL {+24}Mg({+12}C,pn|g).                                                  
+ 34CL cL J$1224.1|g, E1(+M2), |DJ=1 to 4-, 3600.14 level; 4677.4|g, E2, |DJ=2 to
+ 34CL2cL 3+, 146.36 level.                                                      
  34CL cL T$lifetime |t=464 fs {I200}: weighted average of 450 fs {I200} in      
  34CL2cL {+24}Mg({+12}C,pn|g) from 1982Va02 with DSAM and 480 fs {I220} in      
  34CL3cL {+33}S(p,|g) from 1983Wa27 with DSAM. Other: >500 fs in {+33}S(p,|g)   
  34CL4cL from 1985La16 with DSAM.                                               
- 34CL  G 1192.67   5 5.21    29 E1(+M2)  +0.3    6                              
+ 34CL  G 1192.67   5 5.21    29 E1(+M2)  +0.3    6                          F   
  34CL cG E$weighted average of 1192.67 {I5} from {+24}Mg({+12}C,pn|g) and 1193  
  34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
  34CL cG RI$weighted average of 5.7 {I14} from {+24}Mg({+12}C,pn|g), 5.15 {I29} 
  34CL2cG from {+27}Al({+12}C,|an|g), and 6.5 {I16} from {+33}S(p,|g)            
- 34CL cG E$From {+24}Mg({+12}C,pn|g), {+27}Al({+12}C,|an|g).                    
- 34CL cG M$D |DJ=0 |g {+24}Mg({+12}C,pn|g).                                     
- 34CL cG MR$+0.3 {I6} {+24}Mg({+12}C,pn|g).                                     
- 34CL  G 1224.1    2 21.1    19 E1(+M2)  -0.02   2                              
+ 34CL cG MR$from ({+12}C,pn|g)                                                  
+ 34CL cG M,MR$consistent with |DJ=0 from {+27}Al({+12}C,|an|g). Other: D(+Q)    
+ 34CL2cG with |d=+0.3 {I6} from {+24}Mg({+12}C,pn|g).                           
+ 34CL  G 1224.1    2 21.1    19 E1(+M2)  -0.02   2                          F   
  34CL cG E$weighted average of 1224.1 {I2} from {+24}Mg({+12}C,pn|g) and 1223.9 
  34CL2cG {I6} from {+27}Al({+12}C,|an|g)                                        
  34CL cG RI$weighted average of 27.1 {I29} from {+24}Mg({+12}C,pn|g), 20.1 {I11}
  34CL2cG from {+27}Al({+12}C,|an|g), and 37 {I13} from {+33}S(p,|g)             
- 34CL cG M$D |DJ=1 |g {+24}Mg({+12}C,pn|g).                                     
- 34CL cG MR$from {+27}Al({+12}C,|an|g).                                         
+ 34CL cG MR$from ({+12}C,|an|g)                                                 
  34CL  G 2213      1 1.21    12 [E2]                                            
  34CL  G 2449      1                                                            
  34CL  G 2643.4    5 8.4     8 Q                                                
@@ -1075,10 +1059,8 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
  34CL cG RI$weighted average of 10.0 {I14} from {+24}Mg({+12}C,pn|g), 8.5 {I5}  
  34CL2cG from {+27}Al({+12}C,|an|g), and 4.8 {I16} from {+33}S(p,|g)            
- 34CL cG E$From {+24}Mg({+12}C,pn|g), {+27}Al({+12}C,|an|g).                    
- 34CL cG M$from {+27}Al({+12}C,|an|g).                                          
- 34CL cG M$Q |DJ=2 |g {+24}Mg({+12}C,pn|g).                                     
- 34CL cG MR$-0.3 {I6} {+24}Mg({+12}C,pn|g).                                     
+ 34CL cG M,MR$from |g|g(|q)(DCO) and |g|g(|q)(POL) in {+27}Al({+12}C,|an|g).    
+ 34CL2cG Other: Q(+O) with |d=-0.03 {I6} from {+24}Mg({+12}C,pn|g).             
  34CL  G 3593.88     11      LT [M3]                                            
  34CL  G 4362.9      3.2     LT [E4]                                            
  34CL  G 4677.4    2 100.0   29 E2                                              
@@ -1086,77 +1068,79 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL2cG {I7} from {+27}Al({+12}C,|an|g)                                        
  34CL cG RI$weighted average of 100.0 {I29} from {+24}Mg({+12}C,pn|g), 100 {I5} 
  34CL2cG from {+27}Al({+12}C,|an|g), and 100.0 {I32} from {+33}S(p,|g)          
- 34CL cG E$From {+24}Mg({+12}C,pn|g), {+27}Al({+12}C,|an|g).                    
- 34CL cG M$from {+27}Al({+12}C,|an|g).                                          
- 34CL cG M$Q |DJ=2 |g {+24}Mg({+12}C,pn|g).                                     
- 34CL cG MR$0.00 {I6} {+24}Mg({+12}C,pn|g).                                     
+ 34CL cG M,MR$from |g|g(|q)(DCO) and |g|g(|q)(POL) in {+27}Al({+12}C,|an|g).    
+ 34CL2cG Other: Q(+O) with |d=0.00 {I6} from {+24}Mg({+12}C,pn|g).              
  34CL  G 4824.04     3.2     LT [M5]                                            
- 34CL  L 4857      2                                                            
+ 34CL  L 4857      2  0+:4+                                                     
  34CLX L XREF=M                                                                 
- 34CL cL J$L=2 from 3/2+ in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+; L=1+3 from   
- 34CL2cL 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-,4-,5-.                      
+ 34CL cL J$L=2,1+3 from 3/2+ in {+33}S({+3}He,d): L=2 gives 0+,1+,2+,3+,4+;     
+ 34CL2cL L=1+3 from 3/2+ in {+33}S({+3}He,d) gives 1-,2-,3-.                    
  34CL  L 4862.4    8  5-                                                        
  34CLX L XREF=F                                                                 
+ 34CL cL J$2681|g, M2, |DJ=2 to 3+, 2181.09 level. 453|g from 7+, 5314.95 level.
  34CL  G 2681      1 100       M2                                               
- 34CL  L 4925      4  0:4+                                                      
- 34CLX L XREF=J(4930*)MOT(4939*)U(4970*)V(4970*)                                
- 34CL cL E$from ({+3}He,t)                                                      
- 34CL cL J$L=2 in {+35}Cl({+3}He,|a).                                           
+ 34CL cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in {+27}Al({+12}C,|an|g).       
+ 34CL  L 4925      4  (+)                                                       
+ 34CLX L XREF=J(4930*)O                                                         
+ 34CL cL E$from ({+3}He,t).                                                     
+ 34CL cL J$L=0+2,2 from 0+ in {+32}S(|a,d) for 4930 {I20} level: L=0+2 gives 1+;
+ 34CL2cL L=2 gives 1+,2+,3+.                                                    
  34CL  L 4941.9    4  1+               6 FS      LT                             
- 34CLX L XREF=J(4930*)KM(*)OT(4939*)U(4970*)V(4970*)                            
- 34CL cL E$weighted average of 4941.9 {I4} from {+33}S(p,|g) and 4942 {I4} from 
- 34CL2cL {+34}S({+3}He,t)                                                       
+ 34CLX L XREF=J(4930*)KMOTU(4970*)V(4970*)                                      
+ 34CL cL E$weighted average of 4941.9 {I4} from {+33}S(p,|g), 4942 {I4} from    
+ 34CL2cL {+34}S({+3}He,t), and 4939 {I11} from {+35}Cl({+3}He,|a)               
  34CL cL T$from (p,|g)                                                          
- 34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-; L=0 in          
- 34CL2cL {+34}S({+3}He,t); |g to 3+.                                            
+ 34CL cL J$L=0 from 0+ in {+34}S({+3}He,t) gives 0+,1+; L=2 from 3/2+ in        
+ 34CL2cL {+35}Cl({+3}He,|a) gives 0+,1+,2+,3+,4+; 2330.8|g to 3+, 2611 level.   
  34CL cL T$lifetime |t<8 fs in {+33}S(p,|g) from 1985La16 with DSAM.            
  34CL  G 2330.8      43      19 [E2]                                            
  34CL  G 2361.5      45      19 [M1,E2]                                         
  34CL  G 4941.5      1.0E2   4 [M1]                                             
- 34CL  L 4957.5    11 1+,2+            12 FS     LT                             
- 34CLX L XREF=HKM(*)N(4985*)OQ(4990*)TU(4970*)V(4970*)                          
+ 34CL  L 4957.5    11 1+,2+,3+         12 FS     LT                             
+ 34CLX L XREF=HKMN(4985*)OQ(4990*)TU(4970*)V(4970*)                             
  34CL cL E$weighted average of 4965.7 {I71} from {+32}S({+3}He,p), 4957.3 {I11} 
  34CL2cL from {+33}S(p,|g), and 4957 {I4} from {+34}S({+3}He,t). Other: 4958    
  34CL3cL {I11} from {+35}Cl({+3}He,|a)                                          
  34CL cL T$from (p,|g)                                                          
- 34CL cL J$L=2 from 3/2+ in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+; 0 to 4+ from 
- 34CL2cL L=2 in {+35}Cl({+3}He,|a); 0,1,2 from D,Q |g to 0+ g.s.; 1+,2,3 from   
- 34CL3cL D,E2 |g to 3+, 146.                                                    
+ 34CL cL J$L=2 from 3/2+ in {+33}S({+3}He,d) and {+35}Cl({+3}He,|a) gives       
+ 34CL2cL 0+,1+,2+,3+,4+; L=(1,2) from 0+ in {+32}S({+3}He,p) gives (0-,1,2,3+). 
+ 34CL3cL 4810.8|g to 3+, 146.36 level.                                          
  34CL cL T$lifetime |t<17 fs in {+33}S(p,|g) from 1985La16 with DSAM.           
  34CL  G 3069.9      3.9     LT [M1,E2]                                         
  34CL  G 3726.8      100     10 [M1,E2]                                         
  34CL  G 4291.7      5.9     LT [M1,E2]                                         
  34CL  G 4495.8      5.9     LT [M1,E2]                                         
  34CL  G 4810.5      94      10 [E2]                                            
- 34CL cG M$D,E2 |g based on RUL.                                                
  34CL  G 4956.9      3.9     LT [M1,E2]                                         
  34CL  L 4979      2  1+,2+                                                     
- 34CLX L XREF=MN(4985*)O(4981*)Q(4990*)R(5000*)TU(4970*)V(4970*)                
- 34CL cL E$weighted average of 4979 {I2} from {+33}S({+3}He,d) and 4971 {I11}   
- 34CL2cL from {+35}Cl({+3}He,|a)                                                
- 34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-; L=0 from 3/2+ in
- 34CL2cL {+33}S({+3}He,d) gives 1+,2+; L=0+2 in {+35}Cl({+3}He,|a).             
+ 34CLX L XREF=MN(4985*)OQ(4990*)R(5000*)TU(4970*)V(4970*)                       
+ 34CL cL E$weighted average of 4979 {I2} from {+33}S({+3}He,d), 4981 {I4} from  
+ 34CL2cL {+34}S({+3}He,t), and 4971 {I11} from {+35}Cl({+3}He,|a)               
+ 34CL cL J$L=1,0 from 3/2+ in {+33}S({+3}He,d): L=1 gives 0-,1-,2-,3-; L=0 gives
+ 34CL2cL 1+,2+; L=0+2 from 3/2+ in {+35}Cl({+3}He,|a) gives 1+,2+.              
  34CL  L 4995.6    3  1+,2+            5 FS      3                              
  34CLX L XREF=KMN(4985*)OQ(4990*)R(5000*)TU(4970*)V(4970*)                      
  34CL cL E$weighted average of 4995.6 {I3} from {+33}S(p,|g) and 4994 {I2} from 
  34CL2cL {+33}S({+3}He,d). Others: 4994 {I4} from {+34}S({+3}He,t) and 4998     
  34CL3cL {I12} from {+35}Cl({+3}He,|a)                                          
  34CL cL T$from (p,|g)                                                          
- 34CL cL J$L=2 from 3/2+ in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+; L=0+2 in     
- 34CL2cL {+35}Cl({+3}He,|a).                                                    
+ 34CL cL J$L=0+2 from 3/2+ in {+35}Cl({+3}He,|a) gives 1+,2+. L=2 from 3/2+ in  
+ 34CL2cL {+35}Cl(p,d) gives 0+,1+,2+,3+,4+ for 5000 {I30} level.                
  34CL cL T$lifetime |t=7 fs {I4} in {+33}S(p,|g) from 1985La16 with DSAM. Other:
  34CL2cL <5 fs in {+33}S(p,|g) from 1983Wa27 with DSAM.                         
  34CL  G 2837.6      100       [M1,E2]                                          
- 34CL  L 5009      2  (0:4)+                                                    
- 34CLX L XREF=MOQR(5000*)TU(4970*)V(4970*)                                      
+ 34CL  L 5009      2  0+,1+,2+,3+,4+                                            
+ 34CLX L XREF=MO(5010*)Q(5010*)R(5000*)T(5010*)U(4970*)V(4970*)                 
  34CL cL E$weighted average of 5009 {I2} from {+33}S({+3}He,d) and 5010 {I4}    
- 34CL2cL from {+34}S({+3}He,t). Other: 5010 {I13} from {+35}Cl({+3}He,|a)       
- 34CL cL J$L=2 from 3/2+ in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+; L=3 from 3/2+
- 34CL2cL in {+33}S({+3}He,d) gives 1-,2-,3-,4-,5-; L=2 in {+35}Cl({+3}He,|a).   
- 34CL  L 5028      2                                                            
- 34CLX L XREF=K(5020?)MO(4981*)R(5000*)                                         
- 34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-.                 
+ 34CL2cL from {+34}S({+3}He,t). Other: 5010 {I13} from {+35}Cl({+3}He,|a).      
+ 34CL cL J$L=2 from 3/2+ in {+35}Cl({+3}He,|a). L=2,3 from 3/2+ in              
+ 34CL2cL {+33}S({+3}He,d): L=2 gives 0+,1+,2+,3+,4+; L=3 gives 1-,2-,3-,4-,5-.  
+ 34CL  L 5020                                                                  ?
+ 34CLX L XREF=K(5020?)N(4985*)O(5010*)Q(5010*)R(5000*)T(5010*)U(4970*)V(4970*)  
  34CL  G 2862        100                                                       ?
+ 34CL  L 5028      2  0-,1-,2-,3-                                               
+ 34CLX L XREF=MQ(4990*)                                                         
+ 34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-.                 
  34CL  L 5061      4                                                            
  34CLX L XREF=O                                                                 
  34CL  L 5093      4                                                            
@@ -1168,15 +1152,13 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL cL E$weighted average of 5171.6 {I3} from {+33}S(p,|g) and 5173 {I4} from 
  34CL2cL {+34}S({+3}He,t)                                                       
  34CL cL T$from (p,|g)                                                          
- 34CL cL J$L=3 from 3/2+ in {+33}S({+3}He,d) gives 1-,2-,3-,4-,5-; L=2 from 3/2+
- 34CL2cL in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+; 1+,2,3,4,5+ from D,E2 |g to  
- 34CL3cL 3+, 146; 4,6 from D |DJ=1 from 5(-), 6870.                             
+ 34CL cL J$spin=4 from |g(|q) in {+33}S(p,|g). L=3,2 from 3/2+ in               
+ 34CL2cL {+33}S({+3}He,d): L=3 gives 1-,2-,3-,4-,5-; L=2 gives 0+,1+,2+,3+,4+.  
  34CL cL T$lifetime |t=73 fs {I30}: weighted average of 90 fs {I35} in          
  34CL2cL {+33}S(p,|g) from 1985La16 with DSAM and 60 fs {I30} in {+33}S(p,|g)   
  34CL3cL from 1977Da02 with DSAM.                                               
  34CL  G 1571.3      100                                                        
  34CL  G 5024.8      100                                                        
- 34CL cG M$D,E2 |g based on RUL.                                                
  34CL  L 5233      4                                                            
  34CLX L XREF=O                                                                 
  34CL  L 5246      2                                                            
@@ -1194,8 +1176,8 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL cL E$weighted average of 5314.86 {I18} from {+24}Mg({+12}C,pn|g) and      
  34CL2cL 5315.4 {I4} from {+27}Al({+12}C,|an|g)                                 
  34CL cL T$from ({+12}C,|an|g)                                                  
- 34CL cL J$Spin=7 from |g(|q) in 31P(A,NG); 3+,7+ from E2 |DJ=2 |g to 5+, 4824; 
- 34CL2cL 5,7 from D, |DJ=1 |g to 6-, 4743.                                      
+ 34CL cL J$Spin=7 from |g(|q) in {+31}P(|a,n|g) and 24MG(12C,PNG); 490.8|g, E2, 
+ 34CL2cL |DJ=2 to 5+, 4824 level; 571.8|g, E1+M2, |DJ=1 to 6-, 4743 level.      
  34CL cL T$lifetime |t=94 ps {I12} in {+27}Al({+12}C,|an|g) from 1978Ba39 with  
  34CL2cL RDM.                                                                   
  34CL  G 453       1                                                            
@@ -1204,35 +1186,36 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL2cG {I3} from {+27}Al({+12}C,|an|g)                                        
  34CL cG RI$weighted average of 100.0 {I14} from {+24}Mg({+12}C,pn|g) and 100   
  34CL2cG {I5} from {+27}Al({+12}C,|an|g)                                        
- 34CL cG M$from {+27}Al({+12}C,|an|g).                                          
- 34CL cG M$Q |DJ=2 |g {+24}Mg({+12}C,pn|g), E2 based on RUL.                    
- 34CL cG MR$+0.02 {I2}; 0.00 {I5} (both from {+24}Mg({+12}C,pn|g)).             
- 34CL  G 491                                                                    
+ 34CL cG M,MR$from |g|g(|q)(DCO) and |g|g(|q)(POL) in {+27}Al({+12}C,|an|g).    
+ 34CL2cG Other: Q(+O) with |d=+0.02 {I2} from {+24}Mg({+12}C,pn|g).             
  34CL  G 571.8     2 22      13 E1+M2    -0.05   2                              
  34CL cG E$weighted average of 571.8 {I2} from {+24}Mg({+12}C,pn|g) and 571.8   
  34CL2cG {I3} from {+27}Al({+12}C,|an|g)                                        
  34CL cG RI$unweighted average of 35.1 {I14} from {+24}Mg({+12}C,pn|g) and 8.6  
  34CL2cG {I5} from {+27}Al({+12}C,|an|g)                                        
- 34CL cG M$D |DJ=1 |g {+24}Mg({+12}C,pn|g).                                     
- 34CL cG MR$-0.05 {I2}; -0.02 {I7}; +0.03 {I12} (all from {+24}Mg({+12}C,pn|g)).
+ 34CL cG MR$from ({+12}C,pn|g)                                                  
+ 34CL cG M,MR$from |g|g(|q)(DCO) and |g|g(|q)(POL) in {+27}Al({+12}C,|an|g).    
+ 34CL2cG Other: D+Q with |d=-0.05 {I2} from 24MG(12C,PNG); D(+Q) with |d=-0.02  
+ 34CL3cG {I7} from {+31}P(|a,n|g).                                              
  34CL  G 1669      1 5.46    32 Q                                               
+ 34CL cG M$Q from {+27}Al({+12}C,|an|g). |D|p=no from level scheme.             
  34CL  L 5326      4                                                            
  34CLX L XREF=KO                                                                
  34CL cL E$from ({+3}He,t)                                                      
  34CL cL E$from {+34}S({+3}He,t).                                               
  34CL  L 5338      2                                                            
  34CLX L XREF=M                                                                 
- 34CL cL J$L=1+3 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-,4-,5-; L=2 from
- 34CL2cL 3/2+ in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+.                         
+ 34CL cL J$L=1+3,2 from 3/2+ in {+33}S({+3}He,d): L=1+3 gives 0-,1-,2-,3-,4-,5-;
+ 34CL2cL L=2 from 3/2+ in {+33}S({+3}He,d) gives 0+,1+,2+,3+,4+.                
  34CL  L 5357      4                                                            
  34CLX L XREF=KO                                                                
  34CL cL E$from ({+3}He,t)                                                      
  34CL cL E$from {+34}S({+3}He,t).                                               
- 34CL  L 5386.8    15 (3-,4,5,6-)                                               
+ 34CL  L 5386.8    15 (2,3,4,5)-                                                
  34CLX L XREF=KMO(5388?)                                                        
  34CL cL E$from (p,|g)                                                          
- 34CL cL J$L=3 from 3/2+ in {+33}S({+3}He,d) gives 1-,2-,3-,4-,5-; (2-,3,4,5,6-)
- 34CL2cL from |g to 4-, 3600; (3-,4,5,6,7-) from |g from 5(-), 6870.            
+ 34CL cL J$L=3 from 3/2+ in {+33}S({+3}He,d) gives 1-,2-,3-,4-,5-; primary      
+ 34CL2cL transition 1786.6 |g to 4-, 3600.14 level gives (2-,3,4,5,6-).         
  34CL  G 1786.5      100                                                        
  34CL  G 1841.7                                                                ?
  34CL  G 4156.2      2       LT                                                 
@@ -1244,7 +1227,7 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CLX L XREF=KO                                                                
  34CL cL E$from ({+3}He,t)                                                      
  34CL cL E$from {+34}S({+3}He,t).                                               
- 34CL  L 5435      2                                                            
+ 34CL  L 5435      2  1+,2+                                                     
  34CLX L XREF=K(5436?)MO(5444*)                                                 
  34CL cL E$from {+33}S({+3}He,d). Both 2014Pa44 in {+33}S({+3}He,d) and 2013Fa10
  34CL2cL in {+33}S(p,|g) assign this as a new level different from adjacent     
@@ -1252,32 +1235,32 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL cL J$L=0 from 3/2+ in {+33}S({+3}He,d) gives 1+,2+.                       
  34CL  L 5444      4                                                            
  34CLX L XREF=O(5444*)                                                          
- 34CL  L 5453      2                                                            
+ 34CL  L 5453      2  1+,2+                                                     
  34CLX L XREF=K(5454?)M                                                         
  34CL cL J$L=0 from 3/2+ in {+33}S({+3}He,d) gives 1+,2+.                       
  34CL  L 5485      4                                                            
  34CLX L XREF=KO                                                                
  34CL cL E$from ({+3}He,t)                                                      
  34CL cL E$from {+34}S({+3}He,t).                                               
- 34CL  L 5541.1    11 3-               0.7 PS    GT                             
+ 34CL  L 5541.1    11                  0.7 PS    GT                             
  34CLX L XREF=KO                                                                
  34CL cL E$weighted average of 5540.8 {I11} from {+33}S(p,|g) and 5545 {I4} from
  34CL2cL {+34}S({+3}He,t)                                                       
  34CL cL T$from (p,|g)                                                          
- 34CL cL J$3,7 from |DJ=2, Q |g from 5(-), 6870.                                
  34CL cL T$lifetime |t>1000 fs in {+33}S(p,|g) from 1977Da02 with DSAM.         
- 34CL  G 1940.5      100     8 [M1,E2]                                          
- 34CL  G 1995.7      56      8 [M1,E2]                                          
- 34CL  G 4875.1      9.4     LT [M2]                                            
- 34CL  G 5079.2      4.7     LT [M2]                                            
- 34CL  G 5393.9      7.8     LT [E1]                                            
- 34CL  G 5540.3      6.3     LT [E3]                                            
+ 34CL  G 1940.5      100     8                                                  
+ 34CL  G 1995.7      56      8                                                  
+ 34CL  G 4875.1      9.4     LT                                                 
+ 34CL  G 5079.2      4.7     LT                                                 
+ 34CL  G 5393.9      7.8     LT                                                 
+ 34CL  G 5540.3      6.3     LT                                                 
  34CL  L 5577.2    10 (2-,3)                                                    
  34CLX L XREF=KMOU(5600*)V(5600*)                                               
  34CL cL E$weighted average of 5577.6 {I10} from {+33}S(p,|g), 5577 {I2} from   
  34CL2cL {+33}S({+3}He,d), and 5572 {I4} from {+34}S({+3}He,t)                  
- 34CL cL J$L=0 from 3/2+ in {+33}S({+3}He,d) gives 1+,2+; (2,3) from gammas to  
- 34CL2cL 2-, 4140, 2+, 1230; (2-,3) from |g to 4-,3600.                         
+ 34CL cL J$L=0 from 3/2+ in {+33}S({+3}He,d) gives 1+,2+; primary transitions   
+ 34CL2cL 1977.0|g to 4-, 3600.14 level and 3201.4|g to 4+, 2375.67 level give   
+ 34CL3cL (3,4,5).                                                               
  34CL  G 1061.9      9.0     30                                                 
  34CL  G 1700        7.0     30                                                ?
  34CL  G 1977.3      29      7                                                  
@@ -1293,7 +1276,7 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL  G 5116.0      1.4     LT                                                 
  34CL  G 5430.7      62      6                                                  
  34CL  G 5577.1      0.24    LT                                                 
- 34CL  L 5608      2                                                            
+ 34CL  L 5608      2  1-,2-,3-,4-,5-                                            
  34CLX L XREF=MOU(5600*)V(5600*)                                                
  34CL cL E$weighted average of 5608 {I2} from {+33}S({+3}He,d) and 5606 {I4}    
  34CL2cL from {+34}S({+3}He,t)                                                  
@@ -1302,9 +1285,9 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CLX L XREF=KMOU(5600*)V(5600*)                                               
  34CL cL E$weighted average of 5635.75 {I20} from {+33}S(p,|g) and 5635 {I4}    
  34CL2cL from {+34}S({+3}He,t)                                                  
- 34CL cL J$L=1+3,2 from 3/2+ in {+33}S({+3}He,d): L=1 gives 0-,1-,2-,3-; L=3    
- 34CL2cL gives 1-,2-,3-,4-,5-; L=2 gives 0+,1+,2+,3+,4+; gamma to 0+. Possible  
- 34CL3cL |g to 5- disfavors 1.                                                  
+ 34CL cL J$L=1+3,2 from 3/2+ in {+33}S({+3}He,d): L=1+3 gives 1-,2-,3-; L=2     
+ 34CL2cL gives 0+,1+,2+,3+,4+. Primary transition 5635.7|g to 0+, g.s. gives    
+ 34CL3cL (1,2+).                                                                
  34CL  G 996.8       0.44                                                       
  34CL  G 1029.9      4.0     10                                                ?
  34CL  G 1218.4      0.44                                                       
@@ -1327,11 +1310,11 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL  G 5174.1      2.2     7                                                  
  34CL  G 5488.9      0.65    LT                                                 
  34CL  G 5635.25     100                                                        
- 34CL  L 5673.0    10 (1,2+)                                                    
+ 34CL  L 5673.0    10 1+,2+                                                     
  34CLX L XREF=KMO(5671?)                                                        
  34CL cL E$from (p,|g)                                                          
- 34CL cL J$L=0 from 3/2+ in {+33}S({+3}He,d) gives 1+,2+; gamma to 0+. Possible 
- 34CL2cL |g to 5- disfavors 1.                                                  
+ 34CL cL J$L=0 from 3/2+ in {+33}S({+3}He,d) gives 1+,2+. Primary transition    
+ 34CL2cL 5672.5|g to 0+, g.s. gives (1,2+).                                     
  34CL  G 1255.7      0.41                                                       
  34CL  G 1318.8      0.81                                                       
  34CL  G 1732.9      2                                                          
@@ -1359,7 +1342,8 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CLX L XREF=J(*)O                                                             
  34CL  L 5763.3    10 (1+,2+)                                                   
  34CLX L XREF=J(*)KO(5761?)                                                     
- 34CL cL J$gammas to 0+, g.s. and 3+, 146.                                      
+ 34CL cL J$primary transitions 5762.8|g to 0+, g.s. and 5616.4|g to 3+, 146.36  
+ 34CL2cL level.                                                                 
  34CL  G 1823.2      2.2                                                        
  34CL  G 2379.9      17                                                         
  34CL  G 2634.1      1.5                                                        
@@ -1369,13 +1353,12 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL  G 5301.7      3                                                          
  34CL  G 5616.4      16                                                         
  34CL  G 5762.8      44                                                         
- 34CL  L 5785.1    10 (2,3,4+)                                                  
+ 34CL  L 5785.1    10 (2,3)-                                                    
  34CLX L XREF=J(*)KMO                                                           
  34CL cL E$weighted average of 5785.6 {I10} from {+33}S(p,|g), 5784 {I2} from   
  34CL2cL {+33}S({+3}He,d), and 5782 {I4} from {+34}S({+3}He,t)                  
- 34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-; (1+,2,3,4+) from
- 34CL2cL gammas to 3+, 146 and 2+, 2158; (1+) less likely from no or weak |g to 
- 34CL3cL 0+, g.s.                                                               
+ 34CL cL J$L=1 from 3/2+ in {+33}S({+3}He,d) gives 0-,1-,2-,3-. Primary         
+ 34CL2cL transition 5638.6|g to 3+, 146.36 level gives (1+,2,3,4,5+).           
  34CL  G 2011.8      0.8                                                        
  34CL  G 2402.2      52                                                         
  34CL  G 2451.5      1.2                                                        
@@ -1591,7 +1574,7 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL  G 2131.9      18.6    19 [M1,E2]                                         
  34CLF G FL=4076.2                                                              
  34CL  G 2225.1      10      4 [M1,E2]                                          
- 34CL  G 2561.8      1.04    52                                                 
+ 34CL  G 2561.8      1.04    52 [E1]                                            
  34CL  G 2576.4      20.8    21 [M1,E2]                                         
  34CL  G 2607.8      100     10 D(+Q)    -0.03   5                              
  34CL  G 2663.0      49      5 D(+Q)     0.00    2                              
@@ -2179,6 +2162,7 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL  G 2117.1      1.75    88                                                 
  34CL  G 2363.3      0.35                                                       
  34CL  G 2449.3      0.86                                                       
+ 34CLF G FL=4609.7                                                              
  34CL  G 2733.03     0.88    44                                                 
  34CL  G 3285.2      0.88    LT                                                 
  34CL  G 3398.9      1.75    88                                                 
@@ -2206,6 +2190,7 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL  G 2473.0      6.3                                                        
  34CL  G 2752.88     2.2                                                        
  34CL  G 3002.6      3.6     18                                                 
+ 34CLF G FL=4076.2                                                              
  34CL  G 3095.7      57      6 D(+Q)     0.00    +6-4                           
  34CL  G 3478.42     61      6 D(+Q)     0.00    3                              
  34CL  G 3533.61     54      6 D(+Q)     -0.07   +7-4                           
@@ -2264,7 +2249,7 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CLX L XREF=E(*)F(*)G(7250*)K(*)                                              
  34CL cL E$weighted average of 7249.9 {I5} from {+24}Mg({+12}C,pn|g), 7250.5    
  34CL2cL {I11} from {+27}Al({+12}C,|an|g).                                      
- 34CL cL J$1935.0|g, E2, |DJ=2 to 7+, 5315.4 level in {+27}Al({+12}C,|an|g).    
+ 34CL cL J$1935.0|g, E2, |DJ=2 to 7+, 5314.95 level in {+27}Al({+12}C,|an|g).   
  34CL cL T$lifetime |t=0.23 ps {I4} in {+27}Al({+12}C,|an|g) from 2014Bi03 with 
  34CL2cL DSAM.                                                                  
  34CL  G 1935.0    5 100       E2                                               
@@ -2414,11 +2399,12 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL cL T$from (p,p)                                                           
  34CL  L 7696.8    15 1-               1.30 KEV  13                         L   
  34CLX L XREF=L                                                                 
- 34CL  L 7699.5    11 (7+)             0.34 PS   LT                             
+ 34CL  L 7699.5    11 (7)+             0.34 PS   LT                             
  34CLX L XREF=F                                                                 
- 34CL cL J$2384|g, |DJ=0 to 7+, 5315.4 level in {+27}Al({+12}C,|an|g).          
+ 34CL cL J$2384|g, M1, |DJ=0 to 7+, 5314.95 level in {+27}Al({+12}C,|an|g).     
  34CL cL T$lifetime |t<0.49 ps in {+27}Al({+12}C,|an|g) from 2014Bi03 with DSAM.
  34CL  G 2384      1 100       M1                                               
+ 34CL cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in {+27}Al({+12}C,|an|g).       
  34CL  L 7704.6    15 1-,2-,3-,4-,5-                                        L   
  34CLX L XREF=L                                                                 
  34CL  L 7708.8    10                                                           
@@ -2447,7 +2433,7 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL cL E$weighted average of 7802.4 {I10} from {+24}Mg({+12}C,pn|g) and 7800.5
  34CL2cL {I11} from {+27}Al({+12}C,|an|g)                                       
  34CL cL T$from (|a,n|g)                                                        
- 34CL cL J$2487.4|g, E1+M2, to 7+, 5315.4 level in {+27}Al({+12}C,|an|g).       
+ 34CL cL J$2486.2|g, E1+M2, to 7+, 5314.95 level in {+27}Al({+12}C,|an|g).      
  34CL cL T$lifetime |t<0.12 ps in {+27}Al({+12}C,|an|g) from 2014Bi03 with DSAM.
  34CL  G 2486.2    12 100      E1+M2     +0.22   7                          F   
  34CL cG E$weighted average of 2487.4 {I10} from {+24}Mg({+12}C,pn|g) and 2485  
@@ -2572,7 +2558,7 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances.                                  
  34CL  L 8155.5    11 6+               56 FS     LT                             
  34CLX L XREF=FK(*)                                                             
- 34CL cL J$2840|g, M1+E2, to 7+, 5315.4 level.                                  
+ 34CL cL J$2840|g, M1+E2, to 7+, 5314.95 level.                                 
  34CL cL T$lifetime |t<0.08 ps in {+27}Al({+12}C,|an|g) from 2014Bi03 with DSAM.
  34CL  G 2840      1 100       M1+E2     -0.3    1                          F   
  34CL  L 8159.0    15 1+               0.90 KEV  9                          L   
@@ -2727,12 +2713,14 @@ Generated at: Sat 05/02/2026 at 07:58:40 PM EDT
  34CLX L XREF=L                                                                 
  34CL  L 8794.0    15 1-               0.20 KEV  2                          L   
  34CLX L XREF=L                                                                 
- 34CL  L 9392.7    11 9-               6.9 FS    LT                             
+ 34CL  L 9392.7    11 (7)+             6.9 FS    LT                             
  34CLX L XREF=F                                                                 
+ 34CL cL J$4077|g, M1(+E2), |DJ=0 to 7+, 5314.95 level in {+27}Al({+12}C,|an|g).
  34CL cL T$lifetime |t<0.01 ps in {+27}Al({+12}C,|an|g) from 2014Bi03 with DSAM.
- 34CL  G 4077      1 100       M1(+E2)   +0.2    5                              
+ 34CL  G 4077      1 100       M1(+E2)   +0.2    5                          F   
  34CL  L 10631.7   15 11+              28 FS     LT                             
  34CLX L XREF=F                                                                 
+ 34CL cL J$3381|g, E2, |DJ=2 to 9+, 7250.0 level in {+27}Al({+12}C,|an|g).      
  34CL cL T$lifetime |t<0.04 ps in {+27}Al({+12}C,|an|g) from 2014Bi03 with DSAM.
  34CL  G 3381      1 100       E2                                               
                                                                                 
