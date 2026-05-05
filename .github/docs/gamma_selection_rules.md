@@ -55,13 +55,13 @@ While geometry permits a range of L, nuclear transition probabilities dictate wh
 
 Allowed multipolarities based on spin-parity change:
 
-| ΔJ | No Parity Change | Parity Change |
-| :---: | :--- | :--- |
-| 0 | M1(+E2) | E1(+M2) |
-| 1 | M1(+E2) | E1(+M2) |
-| 2 | E2(+M3) | M2(+E3) |
-| 3 | M3(+E4) | E3(+M4) |
-| 4 | E4(+M5) | M4(+E5) |
+|  ΔJ   | No Parity Change | Parity Change |
+| :---: | :--------------- | :------------ |
+|   0   | M1(+E2)          | E1(+M2)       |
+|   1   | M1(+E2)          | E1(+M2)       |
+|   2   | E2(+M3)          | M2(+E3)       |
+|   3   | M3(+E4)          | E3(+M4)       |
+|   4   | E4(+M5)          | M4(+E5)       |
 
 ---
 
@@ -69,16 +69,16 @@ Allowed multipolarities based on spin-parity change:
 
 Selection rules for each transition type:
 
-| Type | L | Designation | ΔJ Allowed | Δπ |
-| :---: | :---: | :---: | :---: | :---: |
-| E1 | 1 | D | 0, 1 | Yes |
-| M1 | 1 | D | 0, 1 | No |
-| E2 | 2 | Q | 0, 1, 2 | No |
-| M2 | 2 | Q | 0, 1, 2 | Yes |
-| E3 | 3 | O | 0, 1, 2, 3 | Yes |
-| M3 | 3 | O | 0, 1, 2, 3 | No |
-| E4 | 4 | H | 0, 1, 2, 3, 4 | No |
-| M4 | 4 | H | 0, 1, 2, 3, 4 | Yes |
+| Type  |   L   | Designation |  ΔJ Allowed   |  Δπ   |
+| :---: | :---: | :---------: | :-----------: | :---: |
+|  E1   |   1   |      D      |     0, 1      |  Yes  |
+|  M1   |   1   |      D      |     0, 1      |  No   |
+|  E2   |   2   |      Q      |    0, 1, 2    |  No   |
+|  M2   |   2   |      Q      |    0, 1, 2    |  Yes  |
+|  E3   |   3   |      O      |  0, 1, 2, 3   |  Yes  |
+|  M3   |   3   |      O      |  0, 1, 2, 3   |  No   |
+|  E4   |   4   |      H      | 0, 1, 2, 3, 4 |  No   |
+|  M4   |   4   |      H      | 0, 1, 2, 3, 4 |  Yes  |
 
 ---
 
@@ -104,6 +104,32 @@ Selection rules for each transition type:
 3. M2+E3 transition from/to 5/2+:
    *   ΔJ = 2; Δπ = Yes
    *   Result: 1/2−, 9/2−
+
+
+Assigning M1+E2 or (M1+E2) in G-record M field:
+
+Assign firm M1+E2 based on DCO/ADO and POL data:
+cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.
+
+Assign firm M1+E2 based on |g(|q)/DCO without POL, but the level is short-lived:
+cG M$D+Q from |g(|q) in dataset. M2 ruled out by RUL.
+cG M$D+Q from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.
+
+Use firm M1+E2 in cL J comments to deduce J|p:
+<G-energy>|g, M1+E2, to <Jπ>, <L-energy> level
+cG M$D+Q from |g(|q) in dataset. M2 ruled out by RUL.
+
+Use firm M1+E2, |DJ=1 in cL J comments to deduce J|p:
+<G-energy>|g, M1+E2, |DJ=1 to <Jπ>, <L-energy> level
+cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.
+cG M$D+Q from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.
+
+Assign tentative (M1+E2) based on level scheme info.
+cG M$D+Q from |g(|q) in dataset. |D|p=no from level scheme.
+cG M$D+Q from |g|g(|q)(DCO) in dataset. |D|p=no from level scheme.
+
+Assigning and using E1+M2 is similar.
+
 
 ---
 
@@ -146,10 +172,10 @@ Deduce the Jπ of a level by combining constraints from:
 
 ### Multipolarity Selection Rules
 
-| Transition Type | Apply | Condition |
-|:----------------|:------|:----------|
-| **Primary feeding γ** (from resonances) | **D or E2** | Always |
-| **Deexciting γ** (decay to lower levels) | **D or Q** | Long or unknown lifetime |
+| Transition Type                          | Apply       | Condition                                  |
+| :--------------------------------------- | :---------- | :----------------------------------------- |
+| **Primary feeding γ** (from resonances)  | **D or E2** | Always                                     |
+| **Deexciting γ** (decay to lower levels) | **D or Q**  | Long or unknown lifetime                   |
 | **Deexciting γ** (decay to lower levels) | **D or E2** | Short lifetime (RUL applies: M2 ruled out) |
 
 *Note: Primary γ = capture transition from neutron/proton resonance*
