@@ -26,17 +26,17 @@ Deduce the Jπ of a level by combining constraints from:
 
 ## Multipolarity Selection Rules
 
-| Transition Type | Apply | Condition |
-|:----------------|:------|:----------|
-| **Primary feeding γ** (from resonances) | **D or E2** | Always |
-| **Deexciting γ** (decay to lower levels) | **D or Q** | Long or unknown lifetime |
+| Transition Type                          | Apply       | Condition                                  |
+| :--------------------------------------- | :---------- | :----------------------------------------- |
+| **Primary feeding γ** (from resonances)  | **D or E2** | Always                                     |
+| **Deexciting γ** (decay to lower levels) | **D or Q**  | Long or unknown lifetime                   |
 | **Deexciting γ** (decay to lower levels) | **D or E2** | Short lifetime (RUL applies: M2 ruled out) |
 
 *Note: Primary γ = capture transition from neutron/proton resonance*
 
 ---
 
-## Workflow Algorithm
+## Recommended Workflow
 
 ```
 FOR each feeding γ:
