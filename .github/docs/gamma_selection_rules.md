@@ -268,3 +268,13 @@ Decay γ to 3/2+ (D or E2):
 Adopted: (1/2,3/2)
 
 *Note: When initial level has multiple J-π values (e.g., 1/2+,3/2+), calculate allowed final states for EACH initial value separately, then take OR (union) before applying AND with other constraints.*
+
+---
+
+### cL J$ Comment Style Rules
+
+When writing primary transition lists in `cL J$` comments:
+
+1. **Exclude LT and ? gammas** — Do not use γ rays with an upper-limit intensity (LT in the DRI field) or questionable placement (? in column 80) for Jπ deduction.
+2. **Rank by final-level spin** — List transitions in ascending order of the final-level spin (smallest Jπ first, e.g., 0+, 1+, 3+, 4+).
+3. **Oxford comma** — Use Oxford comma style in multi-transition lists (e.g., "5805|g to 0+, g.s., 5344|g to 1+, 461, 5659|g to 3+, 146, and 3430|g to 4+, 2376 give (2+).").
