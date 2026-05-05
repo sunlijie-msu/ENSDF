@@ -31,7 +31,6 @@ Apply mapping — notations `(energy)`, `(*)`, `(?)` travel with their labels:
 For levels in the new dataset, insert label alphabetically:
 - `XREF=ABCDGHIJK` → `XREF=ABCDFGHIJK`
 
-Omit column calibrate and line ruler checks. Pad XREF line to 80 chars only.
 
 ## Scenario 2: Remove Dataset
 
@@ -48,8 +47,8 @@ Apply mapping; delete removed label if present:
 - `XREF=ACD` → `XREF=ABC` (no B; C→B, D→C)
 - `XREF=ACDEF(2420)GIK` → `XREF=ABCDE(2420)FHJ` (notations travel with labels)
 
-#### 3. Validation
-Omit column calibrate and line ruler checks. Pad XREF line to 80 chars only.
+## Validation
+Skip column calibrate and line ruler checks. Pad XREF line to 80 chars only.
 
 **CRITICAL:** This task ONLY updates XREF labels. Do NOT modify data records. Human evaluators handle data editing separately.
 

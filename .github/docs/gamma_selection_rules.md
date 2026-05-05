@@ -108,10 +108,10 @@ Selection rules for each transition type:
 
 Assigning M1+E2 or (M1+E2) in G-record M field:
 
-Assign firm M1+E2 based on DCO/ADO and POL data:
+Assign firm M1+E2 directly based on DCO/ADO and POL data:
 cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.
 
-Assign firm M1+E2 based on |g(|q)/DCO without POL, but the level is short-lived:
+Assign firm M1+E2 based on D+Q from |g(|q)/DCO without POL, and the level lifetime is short:
 cG M$D+Q from |g(|q) in dataset. M2 ruled out by RUL.
 cG M$D+Q from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.
 
@@ -124,12 +124,12 @@ Use firm M1+E2, |DJ=1 in cL J comments to deduce J|p:
 cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.
 cG M$D+Q from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.
 
-Assign tentative (M1+E2) based on level scheme info.
+Assign tentative (M1+E2) based on firm D+Q and level scheme info.
 cG M$D+Q from |g(|q) in dataset. |D|p=no from level scheme.
 cG M$D+Q from |g|g(|q)(DCO) in dataset. |D|p=no from level scheme.
 
-Assigning and using E1+M2 is similar.
-
+If D(+Q) is firm, the corresponding converted form is M1(+E2).
+The same logic applies to assigning and using E1+M2.
 
 ---
 
