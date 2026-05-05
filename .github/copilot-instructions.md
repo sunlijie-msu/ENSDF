@@ -140,25 +140,25 @@ Example:
  35CL  L 1219      5  3/2+             0.39 PS   8     2        0.43      15A  S
 ```
 
-| Field | Columns | Description |
-| :--- | :--- | :--- |
-| NUCID | 1–5 | Nucleus (e.g., " 35P " or " 35Cl"). |
-| CONT | 6 | Continuation label. |
-| Space | 7 | Must be blank. |
-| TYPE | 8 | "L" (Level). |
-| Space | 9 | Must be blank. |
-| E | 10–19 | Level energy. |
-| DE | 20–21 | Energy uncertainty. |
-| Space | 22 | Readability space. |
-| J | 23–39 | Spin-parity. |
-| T | 40–49 | Half-life with units (e.g., MEV, FS, PS, S, H, D). |
-| DT | 50–55 | Half-life uncertainty. |
-| L | 56–64 | Angular momentum transfer (L-transfer). |
-| S | 65–74 | Spectroscopic strength. |
-| DS | 75–76 | Uncertainty in S. |
-| C | 77 | Comment flag. |
-| MS | 78–79 | Metastable state (isomer), denoted by 'M '. |
-| Q | 80 | '?' for uncertain/questionable; 'S' for assumed but not observed. |
+| Field | Columns | Description                                                       |
+| :---- | :------ | :---------------------------------------------------------------- |
+| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 35Cl").                               |
+| CONT  | 6       | Continuation label.                                               |
+| Space | 7       | Must be blank.                                                    |
+| TYPE  | 8       | "L" (Level).                                                      |
+| Space | 9       | Must be blank.                                                    |
+| E     | 10–19   | Level energy.                                                     |
+| DE    | 20–21   | Energy uncertainty.                                               |
+| Space | 22      | Readability space.                                                |
+| J     | 23–39   | Spin-parity.                                                      |
+| T     | 40–49   | Half-life with units (e.g., MEV, FS, PS, S, H, D).                |
+| DT    | 50–55   | Half-life uncertainty.                                            |
+| L     | 56–64   | Angular momentum transfer (L-transfer).                           |
+| S     | 65–74   | Spectroscopic strength.                                           |
+| DS    | 75–76   | Uncertainty in S.                                                 |
+| C     | 77      | Comment flag.                                                     |
+| MS    | 78–79   | Metastable state (isomer), denoted by 'M '.                       |
+| Q     | 80      | '?' for uncertain/questionable; 'S' for assumed but not observed. |
 
 
 For multiple J-π values separated by commas, no spaces after commas.
@@ -178,29 +178,29 @@ Example:
  35Si  G 2572.0    5  5.0    2  E2       +2.1          0.05   5  5.1      6 B  ?
 ```
 
-| Field | Columns | Description |
-| :--- | :--- | :--- |
-| NUCID | 1–5 | Nucleus (e.g., " 35P " or " 35Cl") |
-| CONT | 6 | Continuation label |
-| SPACE | 7 | Must be blank |
-| TYPE | 8 | "G" |
-| SPACE | 9 | Must be blank |
-| E | 10–19 | Gamma energy |
-| DE | 20–21 | Energy uncertainty |
-| SPACE | 22 | Readability space |
-| RI | 23–29 | Relative photon intensity (starts at col 23) |
-| DRI | 30–31 | Uncertainty in RI (including GT, LT markers) |
-| SPACE | 32 | Readability space |
-| M | 33–41 | Multipolarity |
-| MR | 42–49 | Mixing ratio |
-| DMR | 50–55 | Uncertainty in MR |
-| CC | 56–62 | Conversion coefficient |
-| DCC | 63–64 | Uncertainty in CC |
-| TI | 65–74 | Total transition intensity |
-| DTI | 75–76 | Uncertainty in TI |
-| C | 77 | **Comment flag** (A-Z, a-z, *, &, @) - See G-Record Flag Rules below |
-| SPACE | 78–79 | Must be blank |
-| Q | 80 | **Additional indicator** (space, ?, S) - See G-Record Indicator Rules below |
+| Field | Columns | Description                                                                 |
+| :---- | :------ | :-------------------------------------------------------------------------- |
+| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 35Cl")                                          |
+| CONT  | 6       | Continuation label                                                          |
+| SPACE | 7       | Must be blank                                                               |
+| TYPE  | 8       | "G"                                                                         |
+| SPACE | 9       | Must be blank                                                               |
+| E     | 10–19   | Gamma energy                                                                |
+| DE    | 20–21   | Energy uncertainty                                                          |
+| SPACE | 22      | Readability space                                                           |
+| RI    | 23–29   | Relative photon intensity (starts at col 23)                                |
+| DRI   | 30–31   | Uncertainty in RI (including GT, LT markers)                                |
+| SPACE | 32      | Readability space                                                           |
+| M     | 33–41   | Multipolarity                                                               |
+| MR    | 42–49   | Mixing ratio                                                                |
+| DMR   | 50–55   | Uncertainty in MR                                                           |
+| CC    | 56–62   | Conversion coefficient                                                      |
+| DCC   | 63–64   | Uncertainty in CC                                                           |
+| TI    | 65–74   | Total transition intensity                                                  |
+| DTI   | 75–76   | Uncertainty in TI                                                           |
+| C     | 77      | **Comment flag** (A-Z, a-z, *, &, @) - See G-Record Flag Rules below        |
+| SPACE | 78–79   | Must be blank                                                               |
+| Q     | 80      | **Additional indicator** (space, ?, S) - See G-Record Indicator Rules below |
 
 ### Critical ENSDF Formatting Rules
 
@@ -277,21 +277,21 @@ Example:
  35CL  DP 501      10 3.5    12 9022                                            
 ```
 
-| Field | Columns | Description |
-| :--- | :--- | :--- |
-| NUCID | 1–5 | Nucleus (e.g., " 35Cl" or " 35P ") |
-| CONT | 6 | Continuation label (blank) |
-| SPACE | 7 | Must be blank |
-| D | 8 | "D" for delayed particle |
-| P | 9 | "P" for proton |
-| SPACE | 10 | Readability space |
-| EP | 11–19 | Proton energy in keV |
-| DE | 20–21 | Energy uncertainty |
-| SPACE | 22 | Readability space |
-| IP | 23–29 | Proton intensity in percent |
-| DIP | 30–31 | Uncertainty in IP |
-| SPACE | 32 | Readability space |
-| EI | 33–39 | Energy of emitting level in keV |
+| Field | Columns | Description                        |
+| :---- | :------ | :--------------------------------- |
+| NUCID | 1–5     | Nucleus (e.g., " 35Cl" or " 35P ") |
+| CONT  | 6       | Continuation label (blank)         |
+| SPACE | 7       | Must be blank                      |
+| D     | 8       | "D" for delayed particle           |
+| P     | 9       | "P" for proton                     |
+| SPACE | 10      | Readability space                  |
+| EP    | 11–19   | Proton energy in keV               |
+| DE    | 20–21   | Energy uncertainty                 |
+| SPACE | 22      | Readability space                  |
+| IP    | 23–29   | Proton intensity in percent        |
+| DIP   | 30–31   | Uncertainty in IP                  |
+| SPACE | 32      | Readability space                  |
+| EI    | 33–39   | Energy of emitting level in keV    |
 
 **Critical DP Format Rules:**
 -   Readable spaces at columns 10, 22, and 32 for human readability.
@@ -306,26 +306,26 @@ Example:
  35P   B 1572.0    1  100.0  4            5.23   12                         C1U 
 ```
 
-| Field | Columns | Description |
-| :--- | :--- | :--- |
-| NUCID | 1–5 | Nucleus (e.g., " 35P " or " 35Cl") |
-| CONT | 6 | Continuation label |
-| SPACE | 7 | Must be blank |
-| TYPE | 8 | "B" for beta minus |
-| SPACE | 9 | Must be blank |
-| E | 10–19 | Endpoint energy of β⁻ in keV (no need to edit) |
-| DE | 20–21 | Energy uncertainty |
-| SPACE | 22 | Readability space |
-| IB | 23–29 | Intensity of β⁻-decay branch |
-| DIB | 30–31 | Uncertainty in IB |
-| SPACE | 32–41 | Must be blank |
-| SPACE | 42 | Readability space |
-| LOGFT | 43–49 | The log ft for the β⁻ transition |
-| DFT | 50–55 | Uncertainty in LOGFT |
-| SPACE | 56–76 | Must be blank |
-| C | 77 | Comment flag ('C' denotes coincidence, '?' denotes probable coincidence) |
-| UN | 78–79 | Forbiddenness classification ('1U', '2U' for unique forbidden, blank = allowed) |
-| Q | 80 | '?' denotes uncertain or questionable beta minus decay |
+| Field | Columns | Description                                                                     |
+| :---- | :------ | :------------------------------------------------------------------------------ |
+| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 35Cl")                                              |
+| CONT  | 6       | Continuation label                                                              |
+| SPACE | 7       | Must be blank                                                                   |
+| TYPE  | 8       | "B" for beta minus                                                              |
+| SPACE | 9       | Must be blank                                                                   |
+| E     | 10–19   | Endpoint energy of β⁻ in keV (no need to edit)                                  |
+| DE    | 20–21   | Energy uncertainty                                                              |
+| SPACE | 22      | Readability space                                                               |
+| IB    | 23–29   | Intensity of β⁻-decay branch                                                    |
+| DIB   | 30–31   | Uncertainty in IB                                                               |
+| SPACE | 32–41   | Must be blank                                                                   |
+| SPACE | 42      | Readability space                                                               |
+| LOGFT | 43–49   | The log ft for the β⁻ transition                                                |
+| DFT   | 50–55   | Uncertainty in LOGFT                                                            |
+| SPACE | 56–76   | Must be blank                                                                   |
+| C     | 77      | Comment flag ('C' denotes coincidence, '?' denotes probable coincidence)        |
+| UN    | 78–79   | Forbiddenness classification ('1U', '2U' for unique forbidden, blank = allowed) |
+| Q     | 80      | '?' denotes uncertain or questionable beta minus decay                          |
 
 **Critical B-Record Rules:**
 -   Must follow LEVEL record for the level which is fed by the beta minus decay.
@@ -342,29 +342,29 @@ Example:
  35CL  E 1750.0    5  65.0   8  35.0   5  4.85   15             100.0     8 C1US
 ```
 
-| Field | Columns | Description |
-| :--- | :--- | :--- |
-| NUCID | 1–5 | Nucleus (e.g., " 35Cl" or " 35P ") |
-| CONT | 6 | Continuation label |
-| SPACE | 7 | Must be blank |
-| TYPE | 8 | "E" for electron capture |
-| SPACE | 9 | Must be blank |
-| E | 10–19 | Energy for electron capture to level (no need to edit) |
-| DE | 20–21 | Uncertainty in E |
-| SPACE | 22 | Readability space |
-| IB | 23–29 | Intensity of β⁺-decay branch |
-| DIB | 30–31 | Uncertainty in IB |
-| IE | 32–39 | Intensity of electron capture branch |
-| DIE | 40–41 | Uncertainty in IE |
-| SPACE | 42 | Readability space |
-| LOGFT | 43–49 | The log ft for (ε + β⁺) transition |
-| DFT | 50–55 | Uncertainty in LOGFT |
-| SPACE | 56–64 | Must be blank |
-| TI | 65–74 | Total (ε + β⁺) decay intensity |
-| DTI | 75–76 | Uncertainty in TI |
-| C | 77 | Comment flag ('C' denotes coincidence, '?' denotes probable coincidence) |
-| UN | 78–79 | Forbiddenness classification ('1U', '2U' for unique forbidden, blank = allowed) |
-| Q | 80 | '?' = uncertain branch, 'S' = expected or assumed transition |
+| Field | Columns | Description                                                                     |
+| :---- | :------ | :------------------------------------------------------------------------------ |
+| NUCID | 1–5     | Nucleus (e.g., " 35Cl" or " 35P ")                                              |
+| CONT  | 6       | Continuation label                                                              |
+| SPACE | 7       | Must be blank                                                                   |
+| TYPE  | 8       | "E" for electron capture                                                        |
+| SPACE | 9       | Must be blank                                                                   |
+| E     | 10–19   | Energy for electron capture to level (no need to edit)                          |
+| DE    | 20–21   | Uncertainty in E                                                                |
+| SPACE | 22      | Readability space                                                               |
+| IB    | 23–29   | Intensity of β⁺-decay branch                                                    |
+| DIB   | 30–31   | Uncertainty in IB                                                               |
+| IE    | 32–39   | Intensity of electron capture branch                                            |
+| DIE   | 40–41   | Uncertainty in IE                                                               |
+| SPACE | 42      | Readability space                                                               |
+| LOGFT | 43–49   | The log ft for (ε + β⁺) transition                                              |
+| DFT   | 50–55   | Uncertainty in LOGFT                                                            |
+| SPACE | 56–64   | Must be blank                                                                   |
+| TI    | 65–74   | Total (ε + β⁺) decay intensity                                                  |
+| DTI   | 75–76   | Uncertainty in TI                                                               |
+| C     | 77      | Comment flag ('C' denotes coincidence, '?' denotes probable coincidence)        |
+| UN    | 78–79   | Forbiddenness classification ('1U', '2U' for unique forbidden, blank = allowed) |
+| Q     | 80      | '?' = uncertain branch, 'S' = expected or assumed transition                    |
 
 **Critical E-Record Rules:**
 -   Must follow LEVEL record for the level being populated in the decay.
@@ -381,25 +381,25 @@ Example:
 204AT  A 6632      6  100    5  1.5    3                                    C  ?
 ```
 
-| Field | Columns | Description |
-| :--- | :--- | :--- |
-| NUCID | 1–5 | Nucleus (e.g., " 35P " or "204AT") |
-| CONT | 6 | Continuation label |
-| SPACE | 7 | Must be blank |
-| TYPE | 8 | "A" for alpha decay |
-| SPACE | 9 | Must be blank |
-| E | 10–19 | Alpha energy in keV |
-| DE | 20–21 | Standard uncertainty in E |
-| SPACE | 22 | Readability space |
-| IA | 23–29 | Intensity of α-decay branch in percent of the total α decay |
-| DIA | 30–31 | Standard uncertainty in IA |
-| SPACE | 32 | Readability space |
-| HF | 33–39 | Hindrance factor for α decay |
-| DHF | 40–41 | Standard uncertainty in HF |
-| SPACE | 42–76 | Must be blank |
-| C | 77 | Comment flag ('C' denotes coincidence, '?' denotes probable coincidence) |
-| SPACE | 78–79 | Must be blank |
-| Q | 80 | '?' = uncertain or questionable α branch, 'S' = expected or predicted α branch |
+| Field | Columns | Description                                                                    |
+| :---- | :------ | :----------------------------------------------------------------------------- |
+| NUCID | 1–5     | Nucleus (e.g., " 35P " or "204AT")                                             |
+| CONT  | 6       | Continuation label                                                             |
+| SPACE | 7       | Must be blank                                                                  |
+| TYPE  | 8       | "A" for alpha decay                                                            |
+| SPACE | 9       | Must be blank                                                                  |
+| E     | 10–19   | Alpha energy in keV                                                            |
+| DE    | 20–21   | Standard uncertainty in E                                                      |
+| SPACE | 22      | Readability space                                                              |
+| IA    | 23–29   | Intensity of α-decay branch in percent of the total α decay                    |
+| DIA   | 30–31   | Standard uncertainty in IA                                                     |
+| SPACE | 32      | Readability space                                                              |
+| HF    | 33–39   | Hindrance factor for α decay                                                   |
+| DHF   | 40–41   | Standard uncertainty in HF                                                     |
+| SPACE | 42–76   | Must be blank                                                                  |
+| C     | 77      | Comment flag ('C' denotes coincidence, '?' denotes probable coincidence)       |
+| SPACE | 78–79   | Must be blank                                                                  |
+| Q     | 80      | '?' = uncertain or questionable α branch, 'S' = expected or predicted α branch |
 
 **Critical A-Record Rules:**
 -   Must follow the daughter LEVEL record for the level being populated in the α decay.
@@ -409,12 +409,12 @@ Example:
 
 Only in the Adopted Datasets: XREF (cross-reference) entries immediately following an L-record indicate which datasets observe this level.
 
-| Notation | Meaning | Example |
-| :--- | :--- | :--- |
-| Plain letter | Dataset level energies match the Adopted level within uncertainties. | `XREF=FH` — Datasets F and H report this level with energies consistent with the Adopted value. |
-| Letter(energy) | Dataset reports an energy outside the uncertainty range but still matches the same physical level. | `XREF=H(4865)` — Dataset H reports a level at 4866±3 keV (outside Adopted 4860±2). |
-| Letter(*) | Ambiguous matching; dataset level may correspond to two or more Adopted levels. | `XREF=I(*)` — The level from dataset I has ambiguous doublet/multiplet matching. |
-| Letter(?) | Questionable or uncertain match. | `XREF=J(?)` — Dataset J reports a questionable level that possibly matches the Adopted level. |
+| Notation       | Meaning                                                                                            | Example                                                                                         |
+| :------------- | :------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
+| Plain letter   | Dataset level energies match the Adopted level within uncertainties.                               | `XREF=FH` — Datasets F and H report this level with energies consistent with the Adopted value. |
+| Letter(energy) | Dataset reports an energy outside the uncertainty range but still matches the same physical level. | `XREF=H(4865)` — Dataset H reports a level at 4866±3 keV (outside Adopted 4860±2).              |
+| Letter(*)      | Ambiguous matching; dataset level may correspond to two or more Adopted levels.                    | `XREF=I(*)` — The level from dataset I has ambiguous doublet/multiplet matching.                |
+| Letter(?)      | Questionable or uncertain match.                                                                   | `XREF=J(?)` — Dataset J reports a questionable level that possibly matches the Adopted level.   |
 
 ---
 
@@ -468,15 +468,15 @@ Examples:
 **Examples by Decimal Places:**
 
 | Value Decimals | Field Notation | Comment Notation | Meaning (± format) |
-| :--- | :--- | :--- | :--- |
-| 0 decimals | `1234  5 ` | `1234 {I5}` | 1234 ± 5 |
-| 0 decimals | `1234  26` | `1234 {I26}` | 1234 ± 26 |
-| 1 decimal | `12.3  6 ` | `12.3 {I6}` | 12.3 ± 0.6 |
-| 1 decimal | `3.6  11 ` | `3.6 {I11}` | 3.6 ± 1.1 |
-| 2 decimals | `1.23  7` | `1.23 {I7}` | 1.23 ± 0.07 |
-| 2 decimals | `1.23  21` | `1.23 {I21}` | 1.23 ± 0.21 |
-| 4 decimals | `0.0060  6` | `0.0060 {I6}` | 0.0060 ± 0.0006 |
-| 4 decimals | `0.0060  24` | `0.0060 {I24}` | 0.0060 ± 0.0024 |
+| :------------- | :------------- | :--------------- | :----------------- |
+| 0 decimals     | `1234  5 `     | `1234 {I5}`      | 1234 ± 5           |
+| 0 decimals     | `1234  26`     | `1234 {I26}`     | 1234 ± 26          |
+| 1 decimal      | `12.3  6 `     | `12.3 {I6}`      | 12.3 ± 0.6         |
+| 1 decimal      | `3.6  11 `     | `3.6 {I11}`      | 3.6 ± 1.1          |
+| 2 decimals     | `1.23  7`      | `1.23 {I7}`      | 1.23 ± 0.07        |
+| 2 decimals     | `1.23  21`     | `1.23 {I21}`     | 1.23 ± 0.21        |
+| 4 decimals     | `0.0060  6`    | `0.0060 {I6}`    | 0.0060 ± 0.0006    |
+| 4 decimals     | `0.0060  24`   | `0.0060 {I24}`   | 0.0060 ± 0.0024    |
 
 ### Uncertainty Format in Data Record Fields
 

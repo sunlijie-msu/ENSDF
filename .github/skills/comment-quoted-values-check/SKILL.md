@@ -30,19 +30,19 @@ Cross-check all quoted values in `cL J$` comments against corresponding L-record
 
 ### L-Record Fields Used
 
-| Field | Columns | Purpose |
-|:------|:--------|:--------|
-| E     | 10–19   | Level energy |
+| Field | Columns | Purpose           |
+| :---- | :------ | :---------------- |
+| E     | 10–19   | Level energy      |
 | J     | 23–39   | Spin-parity (J-π) |
 
 Column 22 may be a readability space (some evaluators use column 22 as start of J field, which is acceptable).
 
 ### G-Record Fields Used
 
-| Field | Columns | Purpose |
-|:------|:--------|:--------|
+| Field | Columns | Purpose          |
+| :---- | :------ | :--------------- |
 | E     | 10–19   | Gamma-ray energy |
-| M     | 33–41   | Multipolarity |
+| M     | 33–41   | Multipolarity    |
 
 Column 32 may be part of M field (some evaluators do not use readability space at column 32, which is acceptable).
 
@@ -85,27 +85,27 @@ For transitions quoted as `E_gamma|g to/from E_level`, verify:
 
 ## Comment Patterns Detected
 
-| Pattern Example | Checks Performed |
-|:----------------|:-----------------|
-| `1824.7\|g M1+E2 to 1991, 7/2-` | γ vs G-record, mult vs G-record, level E vs L-record, J-π vs L-record, E conservation |
-| `2061.6\|g D, \|DJ=1 from 5877.7 (11/2+)` | Same as above (`from` reverses energy conservation) |
-| `1986\|g to 1572, 1/2+` | γ vs G-record, level E vs L-record, J-π, E conservation |
-| `3594.5\|g Q, \|DJ=2 to g.s., 3/2+` | Same as above (g.s. treated as 0.0 keV) |
+| Pattern Example                           | Checks Performed                                                                      |
+| :---------------------------------------- | :------------------------------------------------------------------------------------ |
+| `1824.7\|g M1+E2 to 1991, 7/2-`           | γ vs G-record, mult vs G-record, level E vs L-record, J-π vs L-record, E conservation |
+| `2061.6\|g D, \|DJ=1 from 5877.7 (11/2+)` | Same as above (`from` reverses energy conservation)                                   |
+| `1986\|g to 1572, 1/2+`                   | γ vs G-record, level E vs L-record, J-π, E conservation                               |
+| `3594.5\|g Q, \|DJ=2 to g.s., 3/2+`       | Same as above (g.s. treated as 0.0 keV)                                               |
 
 ---
 
 ## Error Classification
 
-| Code | Severity | Description |
-|:-----|:---------|:------------|
-| `GAMMA_NOT_FOUND` | ERROR | No G-record matches quoted gamma energy |
-| `GAMMA_ENERGY_MISMATCH` | ERROR | Quoted gamma energy ≠ G-record E field |
-| `MULTIPOLARITY_MISMATCH` | ERROR | Comment multipolarity ≠ G-record M field |
-| `LEVEL_NOT_FOUND` | ERROR | No L-record matches quoted level energy |
-| `LEVEL_ENERGY_MISMATCH` | ERROR | Quoted level energy ≠ L-record E field |
-| `JPI_MISMATCH` | ERROR | Comment J-π ≠ L-record J field |
-| `ENERGY_CONSERVATION_WARNING` | WARNING | \|E_initial - E_final - E_gamma\| > 2 keV |
-| `ENERGY_CONSERVATION_ERROR` | ERROR | \|E_initial - E_final - E_gamma\| > 5 keV |
+| Code                          | Severity | Description                               |
+| :---------------------------- | :------- | :---------------------------------------- |
+| `GAMMA_NOT_FOUND`             | ERROR    | No G-record matches quoted gamma energy   |
+| `GAMMA_ENERGY_MISMATCH`       | ERROR    | Quoted gamma energy ≠ G-record E field    |
+| `MULTIPOLARITY_MISMATCH`      | ERROR    | Comment multipolarity ≠ G-record M field  |
+| `LEVEL_NOT_FOUND`             | ERROR    | No L-record matches quoted level energy   |
+| `LEVEL_ENERGY_MISMATCH`       | ERROR    | Quoted level energy ≠ L-record E field    |
+| `JPI_MISMATCH`                | ERROR    | Comment J-π ≠ L-record J field            |
+| `ENERGY_CONSERVATION_WARNING` | WARNING  | \|E_initial - E_final - E_gamma\| > 2 keV |
+| `ENERGY_CONSERVATION_ERROR`   | ERROR    | \|E_initial - E_final - E_gamma\| > 5 keV |
 
 **Exit codes:** `0` = no errors; `1` = one or more errors found
 

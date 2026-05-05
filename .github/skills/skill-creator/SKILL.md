@@ -38,11 +38,11 @@ SKILL.md shares the context window with conversation history, system prompts, an
 
 ### 2. Set Appropriate Freedom
 
-| Freedom | Use When | Style |
-|---|---|---|
-| High | Multiple valid approaches; context-dependent | Natural language steps |
-| Medium | Preferred pattern exists; variation acceptable | Pseudocode with parameters |
-| Low | Exact sequence required; fragile or error-prone | Exact commands; no variation |
+| Freedom | Use When                                        | Style                        |
+| ------- | ----------------------------------------------- | ---------------------------- |
+| High    | Multiple valid approaches; context-dependent    | Natural language steps       |
+| Medium  | Preferred pattern exists; variation acceptable  | Pseudocode with parameters   |
+| Low     | Exact sequence required; fragile or error-prone | Exact commands; no variation |
 
 ### 3. Progressive Disclosure
 

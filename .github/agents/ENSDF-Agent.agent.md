@@ -242,11 +242,11 @@ Physics publications typically report data in "uncertainty-in-last-digits" notat
 
 #### Examples
 
-| Data | Meaning |
-|---|---:|
-| `123(12)` | 123 ± 12 |
-| `123.4(12)` | 123.4 ± 1.2 |
-| `0.123(4)` | 0.123 ± 0.0004 |
+| Data        |        Meaning |
+| ----------- | -------------: |
+| `123(12)`   |       123 ± 12 |
+| `123.4(12)` |    123.4 ± 1.2 |
+| `0.123(4)`  | 0.123 ± 0.0004 |
 
 **Rules:**
 - Refer to `.github\copilot-instructions.md` for ENSDF uncertainty notation rules.
