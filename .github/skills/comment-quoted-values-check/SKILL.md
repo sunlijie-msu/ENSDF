@@ -27,6 +27,7 @@ Cross-check all quoted values in `cL J$` comments against corresponding L-record
 ---
 
 ## ENSDF Record Reference
+Be sure to follow the **Integral Understanding of Continuation Records and Comments (Column 6)** specified in `.github/copilot-instructions.md`.
 
 ### L-Record Fields Used
 
