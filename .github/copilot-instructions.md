@@ -559,11 +559,11 @@ In comment lines, scientific notation uses `{In}` for uncertainties:
 
 #### Uncertainty Notation with Units
 
-Units are placed after the value before the uncertainty:
+Units or percent signs are placed after the value before the uncertainty:
 
 ```text
  35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)
- 34S   cL $|t=54 fs {I+18-11} (1980Be15)
+ 34S   cL $ratio=54% {I+18-11} (1980Be15)
 ```
 
 
