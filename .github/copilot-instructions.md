@@ -409,7 +409,7 @@ Example:
 
 Only in the Adopted Datasets: XREF (cross-reference) entries immediately following an L-record indicate which datasets observe this level.
 
-- Plain letter: dataset level energies match the Adopted level within uncertainties. Example: `XREF=FH` means datasets F and H report this level with energies consistent with the Adopted level.
+- Plain letter: dataset level energies match the Adopted level within uncertainties. Example: `XREF=EK` means datasets E and K report this level with energies consistent with the Adopted level.
 
 - Letter(energy): dataset reports an energy outside the Adopted uncertainty range but still matches the same physical level. Example: `XREF=H(4865)` means dataset H reports a level near 4865 keV that is judged to be the same level. The energy in parentheses is the dataset level energy, not the Adopted level energy. The energy value must match the dataset level energy exactly, including decimal places.
 
