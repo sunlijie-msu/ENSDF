@@ -35,6 +35,10 @@ Do not review data-record fields (`L`, `G`, `E`, `B`, `DP`) for editorial issues
 - **Superscript/subscript:** Element symbol must appear **outside** braces.
   - Wrong: `{+13C}`, `{+208Pb}` → Correct: `{+13}C`, `{+208}Pb`
   - Correct regex pattern: `{+[0-9]+}[A-Z][a-z]?`
+- **Number+element isotope tokens:** Plain isotope tokens are invalid in comment text.
+  - Wrong: `3He`, `36S(d,3He)` → Correct: `{+3}He`, `{+36}S(d,{+3}He)`
+  - Candidate scan regex: `(?<!\{\+)\b\d{1,3}[A-Z][a-z]?\b`
+  - Filter rule: keep only valid element symbols; ignore ENSDF symbol constructs such as `2I|g`.
 - **Uncertainty notation:** Use `{In}` notation; never use inline parenthetical uncertainties.
   - Wrong: `36(4)-mg/cm{+2}` → Correct: `36-mg/cm{+2} {I4}`
   - Wrong: `E=1234(5) keV` → Correct: `E=1234 keV {I5}`
@@ -116,6 +120,8 @@ Do not flag:
 3. Useful regex patterns:
    - Dittography: `\b(\w+)\s+\1\b`
    - Leaked tags: `\s(cL|cG|\bL\b|\bG\b|\bE\b|\bB\b)\s`
+  - Plain isotope token candidate: `(?<!\{\+)\b\d{1,3}[A-Z][a-z]?\b`
+  - Post-filter for isotope-token scan: retain only valid element symbols and exclude tokens followed by `|` (for example, `2I|g`).
    - Extra space after `=`: `=\s[0-9]`
 4. Compile the findings table.
 
