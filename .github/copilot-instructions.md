@@ -409,12 +409,13 @@ Example:
 
 Only in the Adopted Datasets: XREF (cross-reference) entries immediately following an L-record indicate which datasets observe this level.
 
-| Notation       | Meaning                                                                                            | Example                                                                                         |
-| :------------- | :------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
-| Plain letter   | Dataset level energies match the Adopted level within uncertainties.                               | `XREF=FH` — Datasets F and H report this level with energies consistent with the Adopted value. |
-| Letter(energy) | Dataset reports an energy outside the uncertainty range but still matches the same physical level. | `XREF=H(4865)` — Dataset H reports a level at 4866±3 keV (outside Adopted 4860±2).              |
-| Letter(*)      | Ambiguous matching; dataset level may correspond to two or more Adopted levels.                    | `XREF=I(*)` — The level from dataset I has ambiguous doublet/multiplet matching.                |
-| Letter(?)      | Questionable or uncertain match.                                                                   | `XREF=J(?)` — Dataset J reports a questionable level that possibly matches the Adopted level.   |
+- Plain letter: dataset level energies match the Adopted level within uncertainties. Example: `XREF=FH` means datasets F and H report this level with energies consistent with the Adopted level.
+
+- Letter(energy): dataset reports an energy outside the Adopted uncertainty range but still matches the same physical level. Example: `XREF=H(4865)` means dataset H reports a level near 4865 keV that is judged to be the same level. The energy in parentheses is the dataset level energy, not the Adopted level energy. The energy value must match the dataset level energy exactly, including decimal places.
+
+- Letter(*): ambiguous matching; one dataset level may correspond to two or more Adopted levels. Example: `XREF=G(*)` means the level from dataset G has ambiguous doublet or multiplet matching. Because `(*)` denotes ambiguity among multiple Adopted levels, an XREF tag with `(*)` must appear on at least two levels in the Adopted dataset. Letter(energy*) is allowed for ambiguous matching with energy information.
+
+- Letter(?): questionable or uncertain match. Example: `XREF=J(?)` means dataset J reports a questionable level that possibly matches the Adopted level. Letter(energy?) is allowed for questionable matching with energy information.
 
 ---
 
