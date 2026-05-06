@@ -1402,15 +1402,17 @@
  34CL  L 6169.4    11 3-               25 EV     4                          L   
  34CLX L XREF=KLV(6160*)                                                        
  34CL cL E$from {+33}S(p,|g).                                                   
- 34CL cL J$spin=3 from |g(|q) in {+33}S(p,|g); D |DJ=0 |g to 3-, 3984 (and to   
- 34CL2cL 3-, 3545 and 3+, 146); |p=(-) from no |g (or weak) to 1+, 665.         
+ 34CL cL J$spin=3 from |g(|q) in {+33}S(p,|g).                                  
  34CL  G 1653.7       4.4    24                                                 
  34CL  G 2029.6       2.9    LT                                                 
- 34CL  G 2093.1       16     6  D(+Q)    +0.03   5                              
+ 34CL  G 2093.1       16     6  (M1(+E2))+0.03   5                              
  34CLF G FL=4076.2                                                              
- 34CL  G 2186.3       100    10 D(+Q)    -0.03   +5-4                           
+ 34CL cG M,MR$D(+Q) from |g(|q) in {+33}S(p,|g). |D|p=no from level scheme.     
+ 34CL  G 2186.3       100    10 (M1(+E2))-0.03   +5-4                           
+ 34CL cG M,MR$D(+Q) from |g(|q) in {+33}S(p,|g). |D|p=no from level scheme.     
  34CL  G 2569.2       23.6   24                                                 
- 34CL  G 2624.2       17     6  D(+Q)    -0.05   +19-14                         
+ 34CL  G 2624.2       17     6  (M1(+E2))-0.05   +19-14                         
+ 34CL cG M,MR$D(+Q) from |g(|q) in {+33}S(p,|g). |D|p=no from level scheme.     
  34CL  G 3448.1       20.7   21                                                 
  34CL  G 3558.2       7.3    30                                                 
  34CL  G 3588.9       31     LT                                                 
@@ -1418,10 +1420,12 @@
  34CL  G 3988.1       16     6                                                  
  34CL  G 4011.3       1.47   74                                                 
  34CL  G 4281.8       7.1    31                                                 
- 34CL  G 4938.7       10.7   31 D(+Q)    0.00    1                              
+ 34CL  G 4938.7       10.7   31 (E1(+M2))0.00    1                              
+ 34CL cG M,MR$D(+Q) from |g(|q) in {+33}S(p,|g). |D|p=yes from level scheme.    
  34CL  G 5503.4       0.61   LT                                                 
  34CL  G 5707.9       0.91   LT                                                 
- 34CL  G 6022.5       80     8  D(+Q)    -0.02   3                              
+ 34CL  G 6022.5       80     8  (E1(+M2))-0.02   3                              
+ 34CL cG M,MR$D(+Q) from |g(|q) in {+33}S(p,|g). |D|p=yes from level scheme.    
  34CL  G 6168.8       0.91   LT                                                 
  34CL  L 6181.27   20 (2-)                                                      
  34CLX L XREF=KV(6160*)                                                         
