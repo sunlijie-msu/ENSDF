@@ -227,48 +227,70 @@ def extract_quoted_refs(filepath: Path) -> List[QuotedRef]:
 
 def _parse_j_block(texts: List[str], start_line: int) -> List[QuotedRef]:
     """Parse a merged cL J$ text block into QuotedRef objects."""
-    full = ''.join(texts)
+    full = ' '.join(text.strip() for text in texts)
+    full = re.sub(r'\s+', ' ', full)
+    full = full.replace('ground state', 'g.s.')
+
     results: List[QuotedRef] = []
+    seen: set[Tuple[str, str, str, str, str]] = set()
 
-    # Pattern: [MULTIPOLARITY] ENERGY|g (from|to) JPI (LEVEL_ENERGY|g.s.)
-    pattern = (
-        r'(?:([A-Z0-9+\(\)\[\]]+)\s+)?'  # group 1: optional multipolarity at start
-        r'(\d+(?:\.\d+)?)\s*\|g'          # group 2: gamma energy (allow space before |g)
-        r'\s+'
-        r'(from|to)'                       # group 3: direction
-        r'\s+'
-        r'([^\s,;]+(?:\s*\([^\)]*\))?[^\s,;-]*)'  # group 4: J-pi
-        r'\s+'
-        r'(g\.s\.|(\d+(?:\.\d+)?))(?:-keV)?(?:\s+level)?'  # group 5: level (g.s. or number), group 6: numeric part
+    gamma_pattern = re.compile(r'(\d+(?:\.\d+)?)\|g(?:\(\|q\))?')
+    target_pattern = re.compile(
+        r'^\s*(?P<jpi>.+)(?:,\s*|\s+)(?P<level>g\.s\.|\d+(?:\.\d+)?)'
+        r'(?:\s+(?:level|resonance))?'
     )
+    multipolarity_pattern = re.compile(r'^[A-Z][A-Z0-9+\(\)\[\]]*$')
 
-    for m in re.finditer(pattern, full):
-        mul = m.group(1).strip() if m.group(1) else None
-        ge_str = m.group(2)
-        direction = m.group(3)
-        jpi = m.group(4).strip()
-        lev_capture = m.group(5)  # either "g.s." or the numeric string
-        if lev_capture == 'g.s.':
-            lev_str = 'g.s.'
-            lev_e = 0.0
+    for gamma_match in gamma_pattern.finditer(full):
+        ge_str = gamma_match.group(1)
+        lookahead = full[gamma_match.end():gamma_match.end() + 200]
+        direction_match = re.search(r'\b(to|from)\b', lookahead)
+        if not direction_match:
+            continue
+
+        direction = direction_match.group(1)
+        direction_start = gamma_match.end() + direction_match.start()
+        between = full[gamma_match.end():direction_start]
+        after_direction = full[direction_start + len(direction):direction_start + len(direction) + 200]
+
+        target_match = target_pattern.match(after_direction)
+        if not target_match:
+            continue
+
+        jpi = target_match.group('jpi').strip(' ,;.')
+        level_capture = target_match.group('level')
+        if level_capture == 'g.s.':
+            level_str = 'g.s.'
+            level_energy = 0.0
         else:
-            lev_str = lev_capture
-            lev_e = float(lev_capture)
-        
-        # Clean trailing artefacts
-        jpi = re.sub(r'[;,.]$', '', jpi)
+            level_str = level_capture
+            level_energy = float(level_capture)
+
+        multipolarity: Optional[str] = None
+        if not gamma_pattern.search(between):
+            cleaned_between = between.replace('(|q)', '').strip(' ,;')
+            if cleaned_between and multipolarity_pattern.fullmatch(cleaned_between):
+                multipolarity = cleaned_between
+
+        context_end = direction_start + len(direction) + target_match.end()
+        context = full[gamma_match.start():context_end].strip()
+        key = (ge_str, direction, jpi, level_str, context)
+        if key in seen:
+            continue
+        seen.add(key)
 
         results.append(QuotedRef(
             gamma_energy_str=ge_str,
             gamma_energy=float(ge_str),
-            multipolarity=mul,
+            multipolarity=multipolarity,
             direction=direction,
-            level_energy_str=lev_str,
-            level_energy=lev_e,
+            level_energy_str=level_str,
+            level_energy=level_energy,
             jpi=jpi,
             line_num=start_line,
-            context=m.group(0),
+            context=context,
         ))
+
     return results
 
 
