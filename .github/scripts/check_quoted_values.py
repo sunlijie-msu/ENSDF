@@ -166,7 +166,10 @@ def parse_gammas(filepath: Path, *, debug: bool = False) -> List[Gamma]:
                     energy = float(e_str)
                 except ValueError:
                     continue
-                mul = line[32:41].strip() if len(line) > 41 else ''
+                if len(line) > 41 and line[31:32] != ' ':
+                    mul = line[31:41].strip()
+                else:
+                    mul = line[32:41].strip() if len(line) > 41 else ''
                 gammas.append(Gamma(energy, e_str, mul, current_level_energy, i))
                 if debug:
                     print(f"  G-rec line {i}: E={e_str}  M={mul!r}  parent={current_level_energy}")
