@@ -34,9 +34,7 @@ Deduce the Jπ of a level by combining constraints from:
 
 *Note: Primary γ = capture transition from neutron/proton resonance*
 
----
-
-## Recommended Workflow
+## 7. Practical Workflow: Combining Jπ Constraints Logic
 
 ```
 FOR each feeding γ:
@@ -62,9 +60,7 @@ RESULT: Common Jπ values → Put in parentheses to indicate tentative assignmen
 
 *Parentheses in ENSDF denote tentative assignments based on assumed multipolarities*
 
----
-
-## Example 1: Fed by primary γ from 7/2-, 7/2+, and 5/2+
+### Example 1: Fed by primary γ from 7/2-, 7/2+, and 5/2+
 
 Fed by primary γ from 7/2- (D or E2):
 3/2-, 5/2±, 7/2±, 9/2±, 11/2-
@@ -79,9 +75,7 @@ Fed by primary γ from 5/2+ (D or E2):
 
 Adopted: (5/2±, 7/2±, 9/2+)
 
----
-
-## Example 2: Fed by primary γ from 5/2-. Decay γ to 1/2+ and 5/2+ (Lifetime short, RUL applies, M2 ruled out)
+### Example 2: Fed by primary γ from 5/2-. Decay γ to 1/2+ and 5/2+ (Lifetime short, RUL applies, M2 ruled out)
 
 Fed by primary γ (D or E2):
 1/2-, 3/2±, 5/2±, 7/2±, 9/2-
@@ -96,9 +90,7 @@ Decay γ to 5/2+ (D or E2):
 
 Adopted: (3/2±, 5/2+)
 
----
-
-## Example 3: Fed by primary γ from 7/2+. Decay γ to 5/2+ (Lifetime unknown, RUL does not apply, M2 allowed)
+### Example 3: Fed by primary γ from 7/2+. Decay γ to 5/2+ (Lifetime unknown, RUL does not apply, M2 allowed)
 
 Fed by primary γ (D or E2):
 3/2+, 5/2±, 7/2±, 9/2±, 11/2+
@@ -110,9 +102,7 @@ Decay γ to 5/2+ (D or Q):
 
 Adopted: (3/2+, 5/2±, 7/2±, 9/2±)
 
----
-
-## Example 4: Fed by primary γ from 1/2+,3/2+ (multi-valued initial). Decay γ to 1/2+ and 3/2+ (Lifetime short, RUL applies, M2 ruled out)
+### Example 4: Fed by primary γ from 1/2+,3/2+ (multi-valued initial). Decay γ to 1/2+ and 3/2+ (Lifetime short, RUL applies, M2 ruled out)
 
 Fed by primary γ from **1/2+,3/2+** (D or E2):
 *   From 1/2+ via D or E2: 1/2±, 3/2±, 5/2+
@@ -130,3 +120,14 @@ Decay γ to 3/2+ (D or E2):
 Adopted: (1/2,3/2)
 
 *Note: When initial level has multiple J-π values (e.g., 1/2+,3/2+), calculate allowed final states for EACH initial value separately, then take OR (union) before applying AND with other constraints.*
+
+---
+
+### cL J$ Comment Style Rules
+
+When writing primary transition lists in `cL J$` comments:
+
+1. **Exclude LT gamma, ? gamma, and weak gamma** — Do not use γ rays with an upper-limit intensity (LT in the DRI field) or questionable placement (? in column 80) for Jπ deduction. Avoid using weak γ rays (e.g., <5% intensity) unless the user specifically requests.
+2. **Rank by final-level spin** — List transitions in ascending order of the final-level spin (smallest Jπ first, e.g., 0+, 1+, 3+, 4+).
+3. **Oxford comma** — Use Oxford comma style in multi-transition lists (e.g., "5805|g to 0+, g.s., 5344|g to 1+, 461, 5659|g to 3+, 146, and 3430|g to 4+, 2376 give (2+).").
+4. **Example** — "<E_gamma1>|g to <Jπ1>, g.s., <E_gamma2>|g to <Jπ2>, <E_level2>, and <E_gamma3>|g to <Jπ3>, <E_level3>."
