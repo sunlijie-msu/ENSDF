@@ -5,11 +5,14 @@ Fix ENSDF G-record RI and M left-shift issues only. Shifts RI/M columns right by
 Usage:
   python fix_ri_m_columns.py Cl34_adopted.ens
   python fix_ri_m_columns.py A34/Cl34/new/Cl34_adopted.ens
+    python fix_ri_m_columns.py A35/S35/new/S35_*.ens
+    python fix_ri_m_columns.py A35/S35/new/*.ens A35/Cl35/new/*.ens
 
 Behavior:
-- Edits the input file IN-PLACE (no separate output file created).
-- Accepts file path or bare filename.
-- If bare filename is not found directly, searches workspace recursively.
+- Edits matched input files IN-PLACE (no separate output files created).
+- Accepts one or more file paths, bare filenames, or glob patterns.
+- If a non-glob bare filename is not found directly, searches workspace recursively.
+- Glob patterns must resolve to at least one file.
 - Requires true G-record lines to be exactly 80 characters (excluding newline).
 - Non-G lines are passed through unchanged.
 - Applies only these fixes on true G-records:
@@ -62,6 +65,45 @@ def resolve_input(user_arg: str, workspace_root: Path) -> Path:
         "Ambiguous input filename. Multiple matches found. "
         "Provide a path instead.\n" + sample
     )
+
+
+def has_wildcard(token: str) -> bool:
+    return any(ch in token for ch in "*?[")
+
+
+def resolve_inputs(user_args: list[str], workspace_root: Path) -> list[Path]:
+    resolved: list[Path] = []
+    seen: set[Path] = set()
+
+    for arg in user_args:
+        matches: list[Path]
+
+        if has_wildcard(arg):
+            pattern = Path(arg)
+
+            if pattern.is_absolute():
+                parent = pattern.parent
+                if not parent.exists():
+                    raise FileNotFoundError(f"Pattern parent does not exist: {parent}")
+                matches = sorted(
+                    m.resolve() for m in parent.glob(pattern.name) if m.is_file()
+                )
+            else:
+                matches = sorted(
+                    m.resolve() for m in workspace_root.glob(arg) if m.is_file()
+                )
+
+            if not matches:
+                raise FileNotFoundError(f"Pattern matched no files: {arg}")
+        else:
+            matches = [resolve_input(arg, workspace_root)]
+
+        for m in matches:
+            if m not in seen:
+                seen.add(m)
+                resolved.append(m)
+
+    return resolved
 
 
 def ensure_g_lines_80(lines: Iterable[str], src: Path) -> None:
@@ -163,14 +205,32 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description="Fix RI/M column left-shifts on ENSDF G-records in-place."
     )
-    parser.add_argument("input", help="Input .ens file path or filename")
+    parser.add_argument(
+        "inputs",
+        nargs="+",
+        help="Input .ens file path(s), filename(s), or glob pattern(s)",
+    )
     args = parser.parse_args()
 
     script_dir = Path(__file__).resolve().parent
     workspace_root = script_dir.parent.parent
-    src = resolve_input(args.input, workspace_root)
-    process(src)
-    return 0
+    sources = resolve_inputs(args.inputs, workspace_root)
+
+    print(f"Matched files: {len(sources)}")
+
+    ok = 0
+    failed = 0
+    for src in sources:
+        try:
+            process(src)
+            ok += 1
+        except Exception as exc:
+            failed += 1
+            print(f"ERROR: {src}: {exc}")
+
+    print(f"Processed OK:      {ok}")
+    print(f"Processed failed:  {failed}")
+    return 0 if failed == 0 else 1
 
 
 if __name__ == "__main__":
