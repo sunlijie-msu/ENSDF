@@ -128,7 +128,7 @@ For each discrepancy:
 2. Determine whether the comment or the data record is the source of truth
 3. If comment is wrong → fix comment (Step 3)
 4. If data record is wrong → flag for separate handling (do NOT fix in this workflow)
-5. Update and debug the script if needed to handle edge cases.
+5. Update and debug the script only if needed to handle edge cases. Keep the script simple, straightforward, and robust.
 
 ### Step 3: Correct Comments
 
