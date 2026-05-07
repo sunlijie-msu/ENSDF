@@ -190,11 +190,12 @@ def process(src: Path) -> Path:
 
         out_lines.append(fixed + nl)
 
-    src.write_text("".join(out_lines), encoding="utf-8", newline="")
+    if changed_lines > 0:
+        src.write_text("".join(out_lines), encoding="utf-8", newline="")
 
     print(f"File:              {src}")
     print(f"G-records scanned: {g_scanned}")
-    print(f"Lines changed:     {changed_lines}")
+    print(f"Lines changed:     {changed_lines}" + (" (file rewritten)" if changed_lines > 0 else " (file unchanged, skipped)"))
     print(f"RI shifts applied: {ri_count}")
     print(f"M shifts applied:  {m_count}")
 
