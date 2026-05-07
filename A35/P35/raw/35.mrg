@@ -1,126 +1,143 @@
-Program for consistency check: output for original lines grouped by level and gamma energies (version 02/26/2025)
-Generated at: Mon 03/24/2025 at 07:11:50 PM EDT
+Program for consistency check: output for original lines grouped by level and gamma energies (version 05/05/2026)
+Generated at: Thu 05/07/2026 at 03:13:22 PM EDT
 
+
+Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
+         available data in the corresponding dataset, including decay data (logft or HF), L-transfer, and decaying
+         and feeding gammas of each level, and so on.
+      2. possible JPI presented at the end of each adopted record line is deduced by combining data from all
+         individual datasets (data from the record lines only and might be incomplete since arguments only presented
+         in comments haven't been considered, like shell-model calculations, analyzing power, atomic method for g.s.
+         spin, and other qualitative arguments).
+
+*** All possible JPI values are for reference purpose only and should not be taken as the final adopted assignments ***
 
 
 ########################################################################################################################
         new XREFs                        old XREFs
  35P   XA35SI B- DECAY (0.78 S)        A-A 35SI B- DECAY (0.78 S)
- 35P   XB36SI B-N DECAY (503 MS)       B-B 36SI B-N DECAY (503 MS)
- 35P   XC1H(34SI,P):RESONANCES         C-C 1H(34SI,P):RESONANCES
+ 35P   XB1H(34SI,P):RESONANCES         B-B 1H(34SI,P):RESONANCES
+ 35P   XC2H(34SI,35PG)                 C-C 2H(34SI,35PG)
  35P   XD2H(36S,3HE)                   D-D 2H(36S,3HE)
  35P   XE9BE(36S,35PG)                 E-E 9BE(36S,35PG)
  35P   XF34S(18O,17F)                  F-F 34S(18O,17F)
- 35P   XG36S(D,3HE)                    G-G 36S(D,3HE)
- 35P   XH36S(POL D,3HE)                H-H 36S(POL D,3HE)
+ 35P   XG36S(D,3HE)                    G-H 36S(D,3HE)
+ 35P   XH36S(POL D,3HE)                H-G 36S(POL D,3HE)
  35P   XI37CL(11B,13N)                 I-I 37CL(11B,13N)
  35P   XJ160GD(37CL,XG)                J-J 160GD(37CL,XG)
- 35P   XK208PB(36S,XG)                 K-K 208PB(36S,XG)
+ 35P   XK208PB(36S,35PG) E=215 MEV     K-?
+ 35P   XL208PB(36S,35PG) E=230 MEV     L-?
 ################################## new tag show first below ############################################################
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 0         1  1/2+             47.3 S    8                               ---
-                     *new XREF new tags    35P X L XREF=ADEFGHIJK
-                     *new XREF old tags    35P X L XREF=ADEFGHIJK
-                     #old XREF in Adopted  35P X L XREF=ADEFGHIJK
-        35SI B- DECAY (0.78 S)--->A  A     35P   L 0            1/2+             47.3 S    8                               *** possible JPI=(1/2+,3/2,5/2,7/2+): 2386.4g from 2386.5,3/2+; 4100.8g from 4101.2,(7/2-)
+ LEVEL************************************ 35P   L 0            1/2+             47.3 S    8                               --- possible JPI=1/2+
+                     *new XREF new tags    35P X L XREF=ACDEFGHIJKL
+                     *new XREF old tags    35P X L XREF=ACDEFGHIJ?0?1
+                     #old XREF in Adopted  35P X L XREF=ACDEFGHIJK
+        35SI B- DECAY (0.78 S)--->A  A     35P   L 0            1/2+             47.3 S    8                               *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2,15/2,17/2): 2386.4g from 2386.5,3/2+
+                 2H(34SI,35PG)--->C  C     35P   L 0                                                                      
                    2H(36S,3HE)--->D  D     35P   L 0         1  1/2+                                      2.0             
-                 9BE(36S,35PG)--->E  E     35P   L 0.0          1/2+                             0        2.2       7      *** possible JPI=(1/2,3/2,5/2,7/2): 5709g from 5710,(1/2-)
-                  34S(18O,17F)--->F  F     35P   L 0                                                                       *** possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2+
-                    36S(D,3HE)--->G  G     35P   L 0                                             0        2.3       12     *** possible JPI=1/2+
-                36S(POL D,3HE)--->H  H     35P   L 0            1/2+                             0        1.63             *** possible JPI=1/2+
+                 9BE(36S,35PG)--->E  E     35P   L 0.0          1/2+                             0        2.2       7      *** possible JPI=1/2+
+                  34S(18O,17F)--->F  F     35P   L 0                                                                       *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
+                    36S(D,3HE)--->G  H     35P   L 0                                             0        2.3       12     *** possible JPI=1/2+
+                36S(POL D,3HE)--->H  G     35P   L 0            1/2+                             0        1.63             *** possible JPI=1/2+
                  37CL(11B,13N)--->I  I     35P   L 0                                                                      
                 160GD(37CL,XG)--->J  J     35P   L 0                                                                      
-                 208PB(36S,XG)--->K  K     35P   L 0            1/2+                                                       *** possible JPI=(1/2+,3/2,5/2,7/2+): 2386g from 2386.7,3/2+; 4102g from 4102.1,(7/2-)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   L 0            1/2+                                                      
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   L 0            1/2+                                                      
                  9BE(36S,35PG)--->E  E     35P  cL $b{-f}=31.4% {I72}, |s{-f}{+sp}=13.5 mb, R{-s}=0.55 {I11}.             
                  37CL(11B,13N)--->I  I     35P  cL $d|s/d|W=120 |mb/sr {I30}.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 2386.9    11 3/2+             0.69 PS   LT                              ---
-                     *new XREF new tags    35P X L XREF=ADEF(2420)HIK
-                     *new XREF old tags    35P X L XREF=ADEF(2420)HIK
-                     #old XREF in Adopted  35P X L XREF=ADEF(2420)HIK
-        35SI B- DECAY (0.78 S)--->A  A     35P   L 2386.5    5  3/2+             0.69 PS   LT                              *** possible JPI=(3/2,5/2+): 1714.7g from 4101.2,(7/2-)
+ LEVEL************************************ 35P   L 2386.9    11 3/2+             0.69 PS   LT                              --- possible JPI=3/2+,5/2+
+                     *new XREF new tags    35P X L XREF=ACDEF(2420)HIKL
+                     *new XREF old tags    35P X L XREF=ACDEF(2420)GI?0?1
+                     #old XREF in Adopted  35P X L XREF=ACDEF(2420)GIK
+        35SI B- DECAY (0.78 S)--->A  A     35P   L 2386.5    5  3/2+             0.69 PS   LT                              *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2): logft=8.6 from (7/2)-
+                 2H(34SI,35PG)--->C  C     35P   L 2386.5    8                                                            
                    2H(36S,3HE)--->D  D     35P   L 2388      13 3/2+                                      0.33      9     
-                 9BE(36S,35PG)--->E  E     35P   L 2388      1  3/2+                             2        0.7       3      *** possible JPI=(1/2,3/2,5/2,7/2-)
-                  34S(18O,17F)--->F  F     35P   L 2420      40                                                            *** possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2+
-                36S(POL D,3HE)--->H  H     35P   L 2386      6  3/2+                             2        0.31        A    *** possible JPI=3/2+,5/2+
+                 9BE(36S,35PG)--->E  E     35P   L 2388      1  3/2+                             2        0.7       3      *** possible JPI=3/2+,5/2+
+                  34S(18O,17F)--->F  F     35P   L 2420      40                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
+                36S(POL D,3HE)--->H  G     35P   L 2386      6  3/2+                             2        0.31        A    *** possible JPI=3/2+,5/2+
                  37CL(11B,13N)--->I  I     35P   L 2389      4                                                            
-                 208PB(36S,XG)--->K  K     35P   L 2386.7    7  3/2+             0.69 PS   LT                              *** possible JPI=(3/2,5/2+): 1715g from 4102.1,(7/2-)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   L 2386.1    8  3/2+             0.69 PS   LT                             
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   L 2386.9    7  3/2+                                                      
         35SI B- DECAY (0.78 S)--->A  A     35P   B             1.9                 8.6                                 1U 
                  9BE(36S,35PG)--->E  E     35P  cL $b{-f}=7.8% {I36}, |s{-f}{+sp}=10.2 mb, R{-s}=0.52 {I10}.              
                  37CL(11B,13N)--->I  I     35P  cL $d|s/d|W=200 |mb/sr {I50}.
-                 208PB(36S,XG)--->K  K     35P  cL T$estimated mean lifetime |t<1 ps (2019Gr08).                          
- GAMMA------------------------------------ 35P   G 2386.3    6 100        [M1,E2]                                          --- EG=2386.3     FL=0          JF=1/2+
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P  cL T$estimated mean lifetime |t<1 ps (2019Gr08).                          
+ GAMMA------------------------------------ 35P   G 2386.3    6  100       [M1,E2]                                          --- EG=2386.3     FL=0          JF=1/2+
         35SI B- DECAY (0.78 S)--->A  A     35P   G 2386.4    6 100        [M1,E2]                                          *** EG=2386.4     FL=0          JF=1/2+
+                 2H(34SI,35PG)--->C  C     35P   G 2386                                                                    *** EG=2386       FL=0          JF=
                  9BE(36S,35PG)--->E  E     35P   G 2386      2                                                             *** EG=2386       FL=0.0        JF=1/2+
-                 208PB(36S,XG)--->K  K     35P   G 2386      1 100        [M1,E2]                                          *** EG=2386       FL=0          JF=1/2+
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   G 2386      1 100                                                         *** EG=2386       FL=0          JF=1/2+
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 2386      1 100                                                         *** EG=2386       FL=0          JF=1/2+
         35SI B- DECAY (0.78 S)--->A  A     35P 2 G %IG=32                                                                 
-                 208PB(36S,XG)--->K  K     35P  cG E$from 2008Wi09 and 2015Ch56.
-                 208PB(36S,XG)--->K  K     35P  cG RI$from 2008Wi09. Other: 99.2 {I28} (2015Ch56). Shell-model            
-                 208PB(36S,XG)--->K  K     35P 2cG calculations indidate a small occupancy of the proton 1d{-3/2} orbit in
-                 208PB(36S,XG)--->K  K     35P 3cG the ground state of {+36}S.                                            
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 3860.4    11 5/2+             0.69 PS   LT                              ---
-                     *new XREF new tags    35P X L XREF=ADEGHIJK
-                     *new XREF old tags    35P X L XREF=ADEGHIJK
-                     #old XREF in Adopted  35P X L XREF=ADEGHIJK
-        35SI B- DECAY (0.78 S)--->A  A     35P   L 3859.7    5  5/2+             0.69 PS   LT                              *** possible JPI=(5/2): 241.4g from 4101.2,(7/2-)
+ LEVEL************************************ 35P   L 3860.4    11 5/2+             0.69 PS   LT                              --- possible JPI=3/2+,5/2+
+                     *new XREF new tags    35P X L XREF=ACDEGHIJKL
+                     *new XREF old tags    35P X L XREF=ACDEGHIJ?0?1
+                     #old XREF in Adopted  35P X L XREF=ACDEGHIJK
+        35SI B- DECAY (0.78 S)--->A  A     35P   L 3859.7    5  5/2+             0.69 PS   LT                              *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2,15/2): 633.7g from 4493.5,(7/2-)
+                 2H(34SI,35PG)--->C  C     35P   L 3859.9    8                                                            
                    2H(36S,3HE)--->D  D     35P   L 3860      2  5/2+                                      2.9       10    
-                 9BE(36S,35PG)--->E  E     35P   L 3862      1  5/2+                             2        2.7       8      *** possible JPI=(3/2-,5/2,7/2): 237g from 4101,(7/2-)
-                    36S(D,3HE)--->G  G     35P   L 3864      10                                  2        1.45,1.10   A    *** possible JPI=3/2+,5/2+
-                36S(POL D,3HE)--->H  H     35P   L 3857      2  5/2+                             2        2.91        B    *** possible JPI=3/2+,5/2+
+                 9BE(36S,35PG)--->E  E     35P   L 3862      1  5/2+                             2        2.7       8      *** possible JPI=3/2+,5/2+
+                    36S(D,3HE)--->G  H     35P   L 3864      10                                  2        1.45,1.10   A    *** possible JPI=3/2+,5/2+
+                36S(POL D,3HE)--->H  G     35P   L 3857      2  5/2+                             2        2.91        B    *** possible JPI=3/2+,5/2+
                  37CL(11B,13N)--->I  I     35P   L 3860      10                                                           
                 160GD(37CL,XG)--->J  J     35P   L 3860                                                                   
-                 208PB(36S,XG)--->K  K     35P   L 3860.8    7  5/2+             0.69 PS   LT                              *** possible JPI=(5/2): 241g from 4102.1,(7/2-)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   L 3860.2    7  5/2+             0.69 PS   LT                             
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   L 3860.6    7  5/2+                                                      
                  9BE(36S,35PG)--->E  E     35P  cL $b{-f}=27.3% {I58}, |s{-f}{+sp}=10.6 mb, R{-s}=0.49 {I10}.             
                  37CL(11B,13N)--->I  I     35P  cL $d|s/d|W=35 |mb/sr {I9}.
-                 208PB(36S,XG)--->K  K     35P  cL T$estimated mean lifetime |t<1 ps (2019Gr08).                          
- GAMMA------------------------------------ 35P   G 1473.5    5 15.6    14 [M1,E2]                                          --- EG=1473.5     FL=2386.9     JF=3/2+
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P  cL T$estimated mean lifetime |t<1 ps (2019Gr08).                          
+ GAMMA------------------------------------ 35P   G 1473.5    5  15.6   14 [M1,E2]                                          --- EG=1473.5     FL=2386.9     JF=3/2+
         35SI B- DECAY (0.78 S)--->A  A     35P   G 1473.4    5 14.1    33 [M1,E2]                                          *** EG=1473.4     FL=2386.5     JF=3/2+
+                 2H(34SI,35PG)--->C  C(?)  35P   G 1473                                                                  ? *** EG=1473       FL=2386.5     JF=
                  9BE(36S,35PG)--->E  E     35P   G 1473      2                                                             *** EG=1473       FL=2388       JF=3/2+
-                 208PB(36S,XG)--->K  K     35P   G 1474      1 15.9    14 [M1,E2]                                          *** EG=1474       FL=2386.7     JF=3/2+
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   G 1474      1 16.4    14                                                  *** EG=1474       FL=2386.1     JF=3/2+
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 1473      1 15      2                                                   *** EG=1473       FL=2386.9     JF=3/2+
         35SI B- DECAY (0.78 S)--->A  A     35P 2 G %IG=4.6                                                                
-                 208PB(36S,XG)--->K  K     35P  cG E$weighted average of 1473 {I1} (2008Wi09) and 1474 {I1} (2015Ch56).
-                 208PB(36S,XG)--->K  K     35P  cG RI$weighted average of 15 {I2} (2008Wi09) and 16.4 {I14} (2015Ch56).
  GAMMA------------------------------------ 35P   G 3860.2    10 100.0  32 [E2]                   1.12E-3 2                 --- EG=3860.2     FL=0          JF=1/2+
-        35SI B- DECAY (0.78 S)--->A  A     35P   G 3859.5    10 100    7  [E2]                                             *** EG=3859.5     FL=0          JF=1/2+
+        35SI B- DECAY (0.78 S)--->A  A     35P   G 3859.5    10 100    7  [E2]                   1.12E-3 2                 *** EG=3859.5     FL=0          JF=1/2+
+                 2H(34SI,35PG)--->C  C     35P   G 3860                                                                    *** EG=3860       FL=0          JF=
                  9BE(36S,35PG)--->E  E     35P   G 3860      2                                                             *** EG=3860       FL=0.0        JF=1/2+
                 160GD(37CL,XG)--->J  J     35P   G 3860                                                                    *** EG=3860       FL=0          JF=
-                 208PB(36S,XG)--->K  K     35P   G 3861      1 100.0   32 [E2]                                             *** EG=3861       FL=0          JF=1/2+
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   G 3860      1 100.0   32                                                  *** EG=3860       FL=0          JF=1/2+
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 3861      1 100                                                         *** EG=3861       FL=0          JF=1/2+
         35SI B- DECAY (0.78 S)--->A  A     35P 2 G %IG=33                                                                 
-                 208PB(36S,XG)--->K  K     35P  cG E$weighted average of 3861 {I1} (2008Wi09) and 3860 {I1} (2015Ch56).
-                 208PB(36S,XG)--->K  K     35P  cG RI$from 2015Ch56. Other: 100 (2008Wi09).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 4101.7    11 (7/2-)           69 PS     GT                              ---
-                     *new XREF new tags    35P X L XREF=AEJK
-                     *new XREF old tags    35P X L XREF=AEJK
-                     #old XREF in Adopted  35P X L XREF=AEJK
-        35SI B- DECAY (0.78 S)--->A  A     35P   L 4101.2    5  (7/2-)           69 PS     GT                              *** possible JPI=(5/2,7/2-): 392.3g from 4493.5,(7/2-)
-                 9BE(36S,35PG)--->E  E     35P   L 4101      2  (7/2-)                                                A    *** possible JPI=(5/2-,7/2,9/2+): 666g from 4768,(9/2-)
+ LEVEL************************************ 35P   L 4101.7    11 (7/2-)           69 PS     GT                              --- possible JPI=(3/2,5/2,7/2-)
+                     *new XREF new tags    35P X L XREF=ACEJKL
+                     *new XREF old tags    35P X L XREF=ACEJ?0?1
+                     #old XREF in Adopted  35P X L XREF=ACEJK
+        35SI B- DECAY (0.78 S)--->A  A     35P   L 4101.2    5  (7/2-)           69 PS     GT                              *** possible JPI=(3/2,5/2,7/2,9/2,11/2): logft=4.6 from (7/2)-
+                 2H(34SI,35PG)--->C  C     35P   L 4100.9    13                                                           
+                 9BE(36S,35PG)--->E  E     35P   L 4101      2  (7/2-)                                                A    *** possible JPI=(1/2-,3/2,5/2,7/2,9/2+): 391g from 4494,(7/2-)
                 160GD(37CL,XG)--->J  J     35P   L 4101                                                                   
-                 208PB(36S,XG)--->K  K     35P   L 4102.1    7  (7/2-)           69 PS     GT                              *** possible JPI=(5/2-,7/2-): 392g from 4494.2,(7/2-); 664g from 4767.1,(9/2-)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   L 4101.2    8  (7/2-)           69 PS     GT                             
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   L 4102.1    7  (7/2-)                                                    
         35SI B- DECAY (0.78 S)--->A  A     35P   B             46.1                4.6                                    
         35SI B- DECAY (0.78 S)--->A  A     35P  cB $I|b=45.9 {I31} and log {Ift}=4.5 from 1988DuZS.
                  9BE(36S,35PG)--->E  E     35P  cL $b{-f}=-0.7% {I7}.                                                     
-                 208PB(36S,XG)--->K  K     35P  cL J$7/2- proposed by 2019Gr08 based on comparisons with shell-model      
-                 208PB(36S,XG)--->K  K     35P 2cL calculations.                                                          
-                 208PB(36S,XG)--->K  K     35P  cL T$estimated mean lifetime |t>100 ps (2019Gr08).                        
- GAMMA------------------------------------ 35P   G 241.3     5 100     7  [E1]                                        A    --- EG=241.3      FL=3860.4     JF=5/2+
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P  cL J$7/2- proposed by 2019Gr08 based on comparisons with shell-model      
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P 2cL calculations.                                                          
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P  cL T$estimated mean lifetime |t>100 ps (2019Gr08).                        
+ GAMMA------------------------------------ 35P   G 241.3     5  100    7  [E1]                                        A    --- EG=241.3      FL=3860.4     JF=5/2+
         35SI B- DECAY (0.78 S)--->A  A     35P   G 241.4     3 74.1    30 [E1]                                             *** EG=241.4      FL=3859.7     JF=5/2+
+                 2H(34SI,35PG)--->C  C     35P   G 241                                                                     *** EG=241        FL=3859.9     JF=
                  9BE(36S,35PG)--->E  E     35P   G 237       2                                                             *** EG=237        FL=3862       JF=5/2+
                 160GD(37CL,XG)--->J  J     35P   G 241                                                                     *** EG=241        FL=3860       JF=
-                 208PB(36S,XG)--->K  K     35P   G 241       1 100     7  [E1]                                             *** EG=241        FL=3860.8     JF=5/2+
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   G 241       1 100.0   28                                                  *** EG=241        FL=3860.2     JF=5/2+
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 241       1 100     7                                                   *** EG=241        FL=3860.6     JF=5/2+
         35SI B- DECAY (0.78 S)--->A  A     35P 2 G %IG=27                                                                 
-                 208PB(36S,XG)--->K  K     35P  cG E$from 2008Wi09 and 2015Ch56.
-                 208PB(36S,XG)--->K  K     35P  cG RI$from 2008Wi09. Other: 32.6 {I9} (2015Ch56).
- GAMMA------------------------------------ 35P   G 1714.8    6 6.6     17 [M2]                                        A    --- EG=1714.8     FL=2386.9     JF=3/2+
+ GAMMA------------------------------------ 35P   G 1714.8    6  6.6    17 [M2]                                        A    --- EG=1714.8     FL=2386.9     JF=3/2+
         35SI B- DECAY (0.78 S)--->A  A     35P   G 1714.7    6 16      4  [M2]                                             *** EG=1714.7     FL=2386.5     JF=3/2+
-                 208PB(36S,XG)--->K  K     35P   G 1715      1 6.6     17 [M2,E3]                                     A    *** EG=1715       FL=2386.7     JF=3/2+
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 1715      1 6.6     17                                                  *** EG=1715       FL=2386.9     JF=3/2+
         35SI B- DECAY (0.78 S)--->A  A     35P 2 G %IG=5.9                                                                
  GAMMA------------------------------------ 35P   G 4101.4    10 54     8  [E3]                                        A    --- EG=4101.4     FL=0          JF=1/2+
         35SI B- DECAY (0.78 S)--->A  A     35P   G 4100.8    10 100    6  [E3]                                             *** EG=4100.8     FL=0          JF=1/2+
-                 208PB(36S,XG)--->K  K     35P   G 4102      1 54      8  [E3]                                        A    *** EG=4102       FL=0          JF=1/2+
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   G 4101                                                                    *** EG=4101       FL=0          JF=1/2+
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 4102      1 54      8                                                   *** EG=4102       FL=0          JF=1/2+
         35SI B- DECAY (0.78 S)--->A  A     35P 2 G %IG=36                                                                 
-                 208PB(36S,XG)--->K  K     35P  cG E$other: 4101 (2015Ch56).
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35P   L 4250      20                                                            ---
                      *new XREF new tags    35P X L XREF=I
@@ -128,38 +145,40 @@ Generated at: Mon 03/24/2025 at 07:11:50 PM EDT
                      #old XREF in Adopted  35P X L XREF=I
                  37CL(11B,13N)--->I  I     35P   L 4250      20                                                           
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 4382.0    12 (5/2-)                                                     ---
-                     *new XREF new tags    35P X L XREF=A(?)EK
-                     *new XREF old tags    35P X L XREF=A(?)EK
+ LEVEL************************************ 35P   L 4382.0    12 (5/2-)                                                     --- possible JPI=(3/2,5/2,7/2,9/2+)
+                     *new XREF new tags    35P X L XREF=A(?)EKL
+                     *new XREF old tags    35P X L XREF=A(?)E?0?1
                      #old XREF in Adopted  35P X L XREF=A(?)EK
-        35SI B- DECAY (0.78 S)--->A  A(?)  35P   L 4381.3    8  (5/2-)                                                   ? *** possible JPI=(1/2-,3/2,5/2,7/2,9/2-)
-                 9BE(36S,35PG)--->E  E     35P   L 4383      3  (5/2-)                                                A    *** possible JPI=(1/2,3/2,5/2,7/2,9/2-)
-                 208PB(36S,XG)--->K  K     35P   L 4381.9    10 (5/2-)                                                     *** possible JPI=(1/2-,3/2,5/2,7/2,9/2-): 487g from 4869.0,(5/2-,7/2-)
+        35SI B- DECAY (0.78 S)--->A  A(?)  35P   L 4381.3    8  (5/2-)                                                   ? *** possible JPI=(3/2,5/2,7/2,9/2,11/2): logft=5.1 from (7/2)-
+                 9BE(36S,35PG)--->E  E     35P   L 4383      3  (5/2-)                                                A    *** possible JPI=(1/2,3/2,5/2,7/2,9/2+)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   L 4380.2    13 (5/2-)                                                    
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   L 4381.8    10 (5/2-)                                                    
         35SI B- DECAY (0.78 S)--->A  A(?)  35P   B             9.7                 5.1                                    
         35SI B- DECAY (0.78 S)--->A  A(?)  35P  cB $I|b=9.4 {I13} and log {Ift}=5.1 from 1988DuZS.
                  9BE(36S,35PG)--->E  E     35P  cL $b{-f}=2.0% {I4}.                                                      
- GAMMA------------------------------------ 35P   G 1994.9    6 100                                                         --- EG=1994.9     FL=2386.9     JF=3/2+
+ GAMMA------------------------------------ 35P   G 1994.9    6  100                                                        --- EG=1994.9     FL=2386.9     JF=3/2+
         35SI B- DECAY (0.78 S)--->A  A(?)  35P   G 1994.8    6 100                                                       ? *** EG=1994.8     FL=2386.5     JF=3/2+
                  9BE(36S,35PG)--->E  E     35P   G 1995      2                                                             *** EG=1995       FL=2388       JF=3/2+
-                 208PB(36S,XG)--->K  K     35P   G 1995      1 100                                                         *** EG=1995       FL=2386.7     JF=3/2+
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   G 1994      1 100                                                         *** EG=1994       FL=2386.1     JF=3/2+
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 1995      1 100                                                         *** EG=1995       FL=2386.9     JF=3/2+
         35SI B- DECAY (0.78 S)--->A  A(?)  35P 2 G %IG=9.7                                                                
-        35SI B- DECAY (0.78 S)--->A  A(?)  35P  cG $Placement from 1988DuZS, consistent with the 1995|g 4381->2386        
+        35SI B- DECAY (0.78 S)--->A  A(?)  35P  cG $Placement from 1988DuZS, consistent with the 1995|g 4381 to 2386      
         35SI B- DECAY (0.78 S)--->A  A(?)  35P 2cG transition observed in {+208}Pb({+36}S,X|g) (2008Wi09) and the 1995|g  
-        35SI B- DECAY (0.78 S)--->A  A(?)  35P 3cG 4382->2386 transition observed in {+9}Be({+36}S,{+35}P|g) (2016Mu03).  
-        35SI B- DECAY (0.78 S)--->A  A(?)  35P 4cG 1988DuZT and 1987Wa10 placed this |g as the 6096->4101 transition.     
-        35SI B- DECAY (0.78 S)--->A  A(?)  35P 5cG 1988Or01 placed this |g as the 6488->4493 transition.                  
-                 208PB(36S,XG)--->K  K     35P  cG E$weighted average of 1995 {I1} (2008Wi09) and 1994 {I1} (2015Ch56).
-                 208PB(36S,XG)--->K  K     35P  cG RI$unweighted average of 2 {I1} (2008Wi09) and 14.2 {I11} (2015Ch56).
+        35SI B- DECAY (0.78 S)--->A  A(?)  35P 3cG 4382 to 2386 transition observed in {+9}Be({+36}S,{+35}P|g) (2016Mu03).
+        35SI B- DECAY (0.78 S)--->A  A(?)  35P 4cG 1988DuZT and 1987Wa10 placed this |g as the 6096 to 4101 transition.   
+        35SI B- DECAY (0.78 S)--->A  A(?)  35P 5cG 1988Or01 placed this |g as the 6488 to 4493 transition.                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 4494.1    12 (7/2-)           2.29 PS   49                              ---
-                     *new XREF new tags    35P X L XREF=AEH(4474)JK
-                     *new XREF old tags    35P X L XREF=AEH(4474)JK
-                     #old XREF in Adopted  35P X L XREF=AEH(4474)JK
-        35SI B- DECAY (0.78 S)--->A  A     35P   L 4493.5    6  (7/2-)           2.29 PS   49                              *** possible JPI=(5/2-,7/2): 468.9g from 4962.4,(9/2-)
-                 9BE(36S,35PG)--->E  E     35P   L 4494      2  (7/2-)                           (3)      0.30      7      *** possible JPI=(5/2-,7/2,9/2+): 274g from 4768,(9/2-)
-                36S(POL D,3HE)--->H  H     35P   L 4474      21                                           0.2       LT     *** possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2+
+ LEVEL************************************ 35P   L 4494.1    12 (7/2-)           2.29 PS   49                              --- possible JPI=(5/2-,7/2-)
+                     *new XREF new tags    35P X L XREF=ACEH(4474)JKL
+                     *new XREF old tags    35P X L XREF=ACEG(4474)J?0?1
+                     #old XREF in Adopted  35P X L XREF=ACEG(4474)JK
+        35SI B- DECAY (0.78 S)--->A  A     35P   L 4493.5    6  (7/2-)           2.29 PS   49                              *** possible JPI=(3/2,5/2,7/2,9/2,11/2): logft=4.9 from (7/2)-
+                 2H(34SI,35PG)--->C  C     35P   L 4492.9    16                                                           
+                 9BE(36S,35PG)--->E  E     35P   L 4494      2  (7/2-)                           (3)      0.30      7      *** possible JPI=(5/2-,7/2-)
+                36S(POL D,3HE)--->H  G     35P   L 4474      21                                           0.2       LT     *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                 160GD(37CL,XG)--->J  J     35P   L 4493                                                                   
-                 208PB(36S,XG)--->K  K     35P   L 4494.2    8  (7/2-)           2.29 PS   49                              *** possible JPI=(5/2-,7/2): 468g from 4962.1,(9/2-)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   L 4493.2    9  (7/2-)           2.29 PS   49                             
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   L 4493.3    8  (7/2-)                                                    
         35SI B- DECAY (0.78 S)--->A  A     35P   B             16.6                4.9                                    
         35SI B- DECAY (0.78 S)--->A  A     35P  cB $I|b=21.4 {I11} and log {Ift}=4.8 from 1988DuZS. 468.9I|g feeding this 
         35SI B- DECAY (0.78 S)--->A  A     35P 2cB level is deducted from its I|b.                                        
@@ -167,36 +186,35 @@ Generated at: Mon 03/24/2025 at 07:11:50 PM EDT
                  9BE(36S,35PG)--->E  E     35P 2cL on the statement in 2016Mu03 that the parallel momentum distribution   
                  9BE(36S,35PG)--->E  E     35P 3cL has limited statistics and seems more consistent with L=3.             
                  9BE(36S,35PG)--->E  E     35P  cL $b{-f}=2.9% {I5}, |s{-f}{+sp}=10.7 mb, R{-s}=0.48 {I10}.               
-                36S(POL D,3HE)--->H  H     35P  cL $1d{-5/2} proton transfer assumed in DWBA calculations, but 2016Mu03   
-                36S(POL D,3HE)--->H  H     35P 2cL proposed 1f{-7/2} (L=3) based the measured parallel momentum           
-                36S(POL D,3HE)--->H  H     35P 3cL distribution.                                                          
-                 208PB(36S,XG)--->K  K     35P  cL J$7/2- proposed by 2019Gr08 based on comparisons with shell-model      
-                 208PB(36S,XG)--->K  K     35P 2cL calculations.                                                          
-                 208PB(36S,XG)--->K  K     35P  cL T$measured mean lifetime |t=3.3 ps {I7} (2019Gr08).                    
- GAMMA------------------------------------ 35P   G 392.3     3 100     5 [M1+E2]   0.22    LT                              --- EG=392.3      FL=4101.7     JF=(7/2-)
+                36S(POL D,3HE)--->H  G     35P  cL $1d{-5/2} proton transfer assumed in DWBA calculations, but 2016Mu03   
+                36S(POL D,3HE)--->H  G     35P 2cL proposed 1f{-7/2} (L=3) based on the measured parallel momentum        
+                36S(POL D,3HE)--->H  G     35P 3cL distribution.                                                          
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P  cL J$7/2- proposed by 2019Gr08 based on comparisons with shell-model      
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P 2cL calculations.                                                          
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P  cL T$measured mean lifetime |t=3.3 ps {I7} (2019Gr08).                    
+ GAMMA------------------------------------ 35P   G 392.3     3  100    5  [M1+E2]  0.22    LT                              --- EG=392.3      FL=4101.7     JF=(7/2-)
         35SI B- DECAY (0.78 S)--->A  A     35P   G 392.3     3 100     5  [M1+E2]                                          *** EG=392.3      FL=4101.2     JF=(7/2-)
+                 2H(34SI,35PG)--->C  C     35P   G 392                                                                     *** EG=392        FL=4100.9     JF=
                  9BE(36S,35PG)--->E  E     35P   G 391       2                                                             *** EG=391        FL=4101       JF=(7/2-)
                 160GD(37CL,XG)--->J  J     35P   G 392                                                                     *** EG=392        FL=4101       JF=
-                 208PB(36S,XG)--->K  K     35P   G 392       1 100     17                                                  *** EG=392        FL=4102.1     JF=(7/2-)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   G 392       1 100     5                                                   *** EG=392        FL=4101.2     JF=(7/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 391       1 100     9                                                   *** EG=391        FL=4102.1     JF=(7/2-)
         35SI B- DECAY (0.78 S)--->A  A     35P 2 G %IG=16                                                                 
-                 208PB(36S,XG)--->K  K     35P  cG E$weighted average of 391 {I1} (2008Wi09) and 392 {I1} (2015Ch56).
-                 208PB(36S,XG)--->K  K     35P  cG RI$unweighted average of 35 {I3} (2008Wi09) and 24.9 {I11} (2015Ch56).
- GAMMA------------------------------------ 35P   G 633.6     5 34      5 [E1]                                              --- EG=633.6      FL=3860.4     JF=5/2+
+ GAMMA------------------------------------ 35P   G 633.6     5  34     5  [E1]                                             --- EG=633.6      FL=3860.4     JF=5/2+
         35SI B- DECAY (0.78 S)--->A  A     35P   G 633.7     5 38      5  [E1]                                             *** EG=633.7      FL=3859.7     JF=5/2+
                  9BE(36S,35PG)--->E  E     35P   G 634       2                                                             *** EG=634        FL=3862       JF=5/2+
-                 208PB(36S,XG)--->K  K     35P   G 633       1 27      7                                                   *** EG=633        FL=3860.8     JF=5/2+
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   G 633       1 42      4                                                   *** EG=633        FL=3860.2     JF=5/2+
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 632       1 17.1    29                                                  *** EG=632        FL=3860.6     JF=5/2+
         35SI B- DECAY (0.78 S)--->A  A     35P 2 G %IG=5.9                                                                
-                 208PB(36S,XG)--->K  K     35P  cG E$weighted average of 632 {I1} (2008Wi09) and 633 {I1} (2015Ch56).
-                 208PB(36S,XG)--->K  K     35P  cG RI$unweighted average of 6 {I1} (2008Wi09) and 10.4 {I9} (2015Ch56).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 4666.2    16 5/2+                                                       ---
+ LEVEL************************************ 35P   L 4666.2    16 5/2+                                                       --- possible JPI=3/2+,5/2+
                      *new XREF new tags    35P X L XREF=DEGHI(4640)
                      *new XREF old tags    35P X L XREF=DEGHI(4640)
                      #old XREF in Adopted  35P X L XREF=DEGHI(4640)
                    2H(36S,3HE)--->D  D     35P   L 4666      9  5/2+                                      0.71      34    
-                 9BE(36S,35PG)--->E  E     35P   L 4667      2  5/2+                             2        1.0       2      *** possible JPI=(1/2,3/2,5/2,7/2)
-                    36S(D,3HE)--->G  G     35P   L 4664      10                                  2        0.53,0.41   A    *** possible JPI=3/2+,5/2+
-                36S(POL D,3HE)--->H  H     35P   L 4665      3  5/2+                             2        1.06        B    *** possible JPI=3/2+,5/2+
+                 9BE(36S,35PG)--->E  E     35P   L 4667      2  5/2+                             2        1.0       2      *** possible JPI=3/2+,5/2+
+                    36S(D,3HE)--->G  H     35P   L 4664      10                                  2        0.53,0.41   A    *** possible JPI=3/2+,5/2+
+                36S(POL D,3HE)--->H  G     35P   L 4665      3  5/2+                             2        1.06        B    *** possible JPI=3/2+,5/2+
                  37CL(11B,13N)--->I  I     35P   L 4640      20                                                           
                  9BE(36S,35PG)--->E  E     35P  cL $b{-f}=9.5% {I10}, |s{-f}{+sp}=10.3 mb, R{-s}=0.47 {I9}.               
                  37CL(11B,13N)--->I  I     35P  cL $d|s/d|W=30 |mb/sr {I8}.
@@ -207,113 +225,112 @@ Generated at: Mon 03/24/2025 at 07:11:50 PM EDT
  GAMMA------------------------------------ 35P   G 4668      2                                                        B    --- EG=4668       FL=0          JF=1/2+
                  9BE(36S,35PG)--->E  E     35P   G 4668      2                                                             *** EG=4668       FL=0.0        JF=1/2+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 4767.0    13 (9/2-)                                                     ---
-                     *new XREF new tags    35P X L XREF=EK
-                     *new XREF old tags    35P X L XREF=EK
+ LEVEL************************************ 35P   L 4767.0    13 (9/2-)                                                     --- possible JPI=(1/2-,3/2,5/2,7/2,9/2,11/2-)
+                     *new XREF new tags    35P X L XREF=EKL
+                     *new XREF old tags    35P X L XREF=E?0?1
                      #old XREF in Adopted  35P X L XREF=EK
-                 9BE(36S,35PG)--->E  E     35P   L 4768      2  (9/2-)                                                A    *** possible JPI=(7/2-,9/2,11/2-): 321g from 5089,(11/2-)
-                 208PB(36S,XG)--->K  K     35P   L 4767.1    10 (9/2-)                                                     *** possible JPI=(7/2-,9/2,11/2-): 322g from 5089.8,(11/2-)
+                 9BE(36S,35PG)--->E  E     35P   L 4768      2  (9/2-)                                                A    *** possible JPI=(1/2-,3/2,5/2,7/2,9/2,11/2-)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   L 4766.2    10 (9/2-)                                                    
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   L 4766.0    9  (9/2-)                                                    
                  9BE(36S,35PG)--->E  E     35P  cL $b{-f}=0.9% {I3}.                                                      
-                 208PB(36S,XG)--->K  K     35P  cL J$9/2- proposed by 2019Gr08 based on comparisons with shell-model      
-                 208PB(36S,XG)--->K  K     35P 2cL calculations.                                                          
- GAMMA------------------------------------ 35P   G 273       1 40.0    25                                             A    --- EG=273        FL=4494.1     JF=(7/2-)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P  cL J$9/2- proposed by 2019Gr08 based on comparisons with shell-model      
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P 2cL calculations.                                                          
+ GAMMA------------------------------------ 35P   G 273       1  40.0   25                                             A    --- EG=273        FL=4494.1     JF=(7/2-)
                  9BE(36S,35PG)--->E  E     35P   G 274       2                                                             *** EG=274        FL=4494       JF=(7/2-)
-                 208PB(36S,XG)--->K  K     35P   G 273       1 40.0    25                                                  *** EG=273        FL=4494.2     JF=(7/2-)
-                 208PB(36S,XG)--->K  K     35P  cG E$from 2008Wi09 and 2015Ch56.
-                 208PB(36S,XG)--->K  K     35P  cG RI$weighted average of 12 {I2} (2008Wi09) and 12.9 {I8} (2015Ch56).
- GAMMA------------------------------------ 35P   G 664       1 100     47                                             A    --- EG=664        FL=4101.7     JF=(7/2-)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   G 273       1 73      5                                                   *** EG=273        FL=4493.2     JF=(7/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 273       1 26      4                                                   *** EG=273        FL=4493.3     JF=(7/2-)
+ GAMMA------------------------------------ 35P   G 664       1  100    47                                             A    --- EG=664        FL=4101.7     JF=(7/2-)
                  9BE(36S,35PG)--->E  E     35P   G 666       2                                                             *** EG=666        FL=4101       JF=(7/2-)
-                 208PB(36S,XG)--->K  K     35P   G 664       1 100     47                                                  *** EG=664        FL=4102.1     JF=(7/2-)
-                 208PB(36S,XG)--->K  K     35P  cG E$weighted average of 663 {I1} (2008Wi09) and 665 {I1} (2015Ch56).
-                 208PB(36S,XG)--->K  K     35P  cG RI$unweighted average of 47 {I4} (2008Wi09) and 17.8 {I10} (2015Ch56).
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   G 665       1 100     6                                                   *** EG=665        FL=4101.2     JF=(7/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 663       1 100     9                                                   *** EG=663        FL=4102.1     JF=(7/2-)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 4869.6    12 (5/2-,7/2-)                                                ---
-                     *new XREF new tags    35P X L XREF=AK
-                     *new XREF old tags    35P X L XREF=AK
-                     #old XREF in Adopted  35P X L XREF=AK
-        35SI B- DECAY (0.78 S)--->A  A     35P   L 4869.4    6  (5/2-,7/2-)                                                *** possible JPI=(3/2-,5/2,7/2,9/2)
-                 208PB(36S,XG)--->K  K     35P   L 4869.0    8  (5/2-,7/2-)                                                *** possible JPI=(3/2-,5/2,7/2,9/2-)
+ LEVEL************************************ 35P   L 4869.6    12 (5/2-,7/2-)                                                --- possible JPI=(3/2,5/2,7/2,9/2)
+                     *new XREF new tags    35P X L XREF=ACL
+                     *new XREF old tags    35P X L XREF=AC?1
+                     #old XREF in Adopted  35P X L XREF=ACK
+        35SI B- DECAY (0.78 S)--->A  A     35P   L 4869.4    6  (5/2-,7/2-)                                                *** possible JPI=(3/2,5/2,7/2,9/2,11/2): logft=4.9 from (7/2)-
+                 2H(34SI,35PG)--->C  C     35P   L 4868.9    13                                                           
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   L 4868.7    8  (5/2-,7/2-)                                               
         35SI B- DECAY (0.78 S)--->A  A     35P   B             10.8                4.9                                    
         35SI B- DECAY (0.78 S)--->A  A     35P  cB $I|b=10.8 {I16} and log {Ift}=4.9 from 1988DuZS.
- GAMMA------------------------------------ 35P   G 374       1 60      20                                             A    --- EG=374        FL=4494.1     JF=(7/2-)
-                 208PB(36S,XG)--->K  K     35P   G 374       1 60      20                                             A    *** EG=374        FL=4494.2     JF=(7/2-)
- GAMMA------------------------------------ 35P   G 487       1 40      LT                                             A    --- EG=487        FL=4382.0     JF=(5/2-)
-                 208PB(36S,XG)--->K  K     35P   G 487       1 40      LT                                             A    *** EG=487        FL=4381.9     JF=(5/2-)
-                 208PB(36S,XG)--->K  K     35P  cG RI$ 1 {I1} from 2008Wi09.                                              
- GAMMA------------------------------------ 35P   G 767.9     4 100     20                                             A    --- EG=767.9      FL=4101.7     JF=(7/2-)
+ GAMMA------------------------------------ 35P   G 374       1  60     20                                             A    --- EG=374        FL=4494.1     JF=(7/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 374       1 60      20                                                  *** EG=374        FL=4493.3     JF=(7/2-)
+ GAMMA------------------------------------ 35P   G 487       1  40     LT                                             A    --- EG=487        FL=4382.0     JF=(5/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 487       1 40      LT                                                  *** EG=487        FL=4381.8     JF=(5/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P  cG RI$original 1 {I1} from 2008Wi09 and 2010WiZZ.                         
+ GAMMA------------------------------------ 35P   G 767.9     4  100    20                                             A    --- EG=767.9      FL=4101.7     JF=(7/2-)
         35SI B- DECAY (0.78 S)--->A  A     35P   G 768.0     4 66      12                                                  *** EG=768.0      FL=4101.2     JF=(7/2-)
-                 208PB(36S,XG)--->K  K     35P   G 767       1 100     20                                             A    *** EG=767        FL=4102.1     JF=(7/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 767       1 100     20                                                  *** EG=767        FL=4102.1     JF=(7/2-)
         35SI B- DECAY (0.78 S)--->A  A     35P 2 G %IG=4.3                                                                
- GAMMA------------------------------------ 35P   G 1009.7    5 20      LT                                             A    --- EG=1009.7     FL=3860.4     JF=5/2+
+ GAMMA------------------------------------ 35P   G 1009.7    5  20     LT                                             A    --- EG=1009.7     FL=3860.4     JF=5/2+
         35SI B- DECAY (0.78 S)--->A  A     35P   G 1009.9    5 100     21                                                  *** EG=1009.9     FL=3859.7     JF=5/2+
-                 208PB(36S,XG)--->K  K     35P   G 1009      1 20      LT                                             A    *** EG=1009       FL=3860.8     JF=5/2+
+                 2H(34SI,35PG)--->C  C     35P   G 1009                                                                    *** EG=1009       FL=3859.9     JF=
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 1009      1 20      LT                                                  *** EG=1009       FL=3860.6     JF=5/2+
         35SI B- DECAY (0.78 S)--->A  A     35P 2 G %IG=6.5                                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 4962.8    12 (9/2-)                                                     ---
-                     *new XREF new tags    35P X L XREF=A(?)EK
-                     *new XREF old tags    35P X L XREF=A(?)EK
+ LEVEL************************************ 35P   L 4962.8    12 (9/2-)                                                     --- possible JPI=(3/2,5/2,7/2,9/2,11/2-)
+                     *new XREF new tags    35P X L XREF=A(?)EKL
+                     *new XREF old tags    35P X L XREF=A(?)E?0?1
                      #old XREF in Adopted  35P X L XREF=A(?)EK
-        35SI B- DECAY (0.78 S)--->A  A(?)  35P   L 4962.4    7  (9/2-)                                                   ? *** possible JPI=(3/2-,5/2,7/2,9/2,11/2-)
-                 9BE(36S,35PG)--->E  E     35P   L 4962      3  (9/2-)                                                A    *** possible JPI=(9/2,11/2-): 127g from 5089,(11/2-)
-                 208PB(36S,XG)--->K  K     35P   L 4962.1    12 (9/2-)                                                     *** possible JPI=(9/2,11/2-): 128g from 5089.8,(11/2-)
+        35SI B- DECAY (0.78 S)--->A  A(?)  35P   L 4962.4    7  (9/2-)                                                   ? *** possible JPI=(3/2,5/2,7/2,9/2,11/2): logft=5.2 from (7/2)-
+                 9BE(36S,35PG)--->E  E     35P   L 4962      3  (9/2-)                                                A    *** possible JPI=(1/2-,3/2,5/2,7/2,9/2,11/2-)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   L 4962.2    10 (9/2-)                                                    
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   L 4959.3    9  (9/2-)                                                    
         35SI B- DECAY (0.78 S)--->A  A(?)  35P   B             5.1                 5.2                                    
-        35SI B- DECAY (0.78 S)--->A  A(?)  35P  cB $Placed based on the 4959->4493 transition observed in                 
+        35SI B- DECAY (0.78 S)--->A  A(?)  35P  cB $Placed based on the 4959 to 4493 transition observed in               
         35SI B- DECAY (0.78 S)--->A  A(?)  35P 2cB {+208}Pb({+36}S,X|g) (2008Wi09) and adopted 468.9I|g from 1988DuZS to  
         35SI B- DECAY (0.78 S)--->A  A(?)  35P 3cB deduce its I|b.                                                        
                  9BE(36S,35PG)--->E  E     35P  cL $b{-f}=0.3% {I2}.                                                      
-                 208PB(36S,XG)--->K  K     35P  cL J$9/2- proposed by 2019Gr08 based on comparisons with shell-model      
-                 208PB(36S,XG)--->K  K     35P 2cL calculations.                                                          
- GAMMA------------------------------------ 35P   G 468.9     4 100     8                                              A    --- EG=468.9      FL=4494.1     JF=(7/2-)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P  cL J$9/2- proposed by 2019Gr08 based on comparisons with shell-model      
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P 2cL calculations.                                                          
+ GAMMA------------------------------------ 35P   G 468.9     4  100    8                                              A    --- EG=468.9      FL=4494.1     JF=(7/2-)
         35SI B- DECAY (0.78 S)--->A  A(?)  35P   G 468.9     4 100                                                       ? *** EG=468.9      FL=4493.5     JF=(7/2-)
                  9BE(36S,35PG)--->E  E     35P   G 469       2                                                             *** EG=469        FL=4494       JF=(7/2-)
-                 208PB(36S,XG)--->K  K     35P   G 468       2 100     8                                                   *** EG=468        FL=4494.2     JF=(7/2-)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   G 469       1 100     7                                                   *** EG=469        FL=4493.2     JF=(7/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 466       1 100     14                                                  *** EG=466        FL=4493.3     JF=(7/2-)
         35SI B- DECAY (0.78 S)--->A  A(?)  35P 2 G %IG=5.0                                                                
         35SI B- DECAY (0.78 S)--->A  A(?)  35P F G FL=4493.5                                                              
         35SI B- DECAY (0.78 S)--->A  A(?)  35P  cG $Unplaced |g ray in 1988DuZS. The placement is based on a 466|g        
         35SI B- DECAY (0.78 S)--->A  A(?)  35P 2cG observed in {+208}Pb({+36}S,X|g) (2008Wi09).                           
-                 208PB(36S,XG)--->K  K     35P  cG E$unweighted average of 466 {I1} (2008Wi09) and 469 {I1} (2015Ch56).
-                 208PB(36S,XG)--->K  K     35P  cG RI$weighted average of 14 {I2} (2008Wi09) and 16.8 {I11} (2015Ch56).
- GAMMA------------------------------------ 35P   G 859       3 66      9                                              A    --- EG=859        FL=4101.7     JF=(7/2-)
-                 208PB(36S,XG)--->K  K     35P   G 859       3 66      9                                                   *** EG=859        FL=4102.1     JF=(7/2-)
-                 208PB(36S,XG)--->K  K     35P  cG E$unweighted average of 856 {I1} (2008Wi09) and 861 {I1} (2015Ch56).
-                 208PB(36S,XG)--->K  K     35P  cG RI$weighted average of 13 {I2} (2008Wi09) and 9.8 {I12} (2015Ch56).
+ GAMMA------------------------------------ 35P   G 859       3  66     9                                              A    --- EG=859        FL=4101.7     JF=(7/2-)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   G 861       1 58      7                                                   *** EG=861        FL=4101.2     JF=(7/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 856       1 93      14                                                  *** EG=856        FL=4102.1     JF=(7/2-)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 5010      20                                                            ---
+ LEVEL************************************ 35P   L 5010      20                                                            --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                      *new XREF new tags    35P X L XREF=F(5070*)I
                      *new XREF old tags    35P X L XREF=F(5070*)I
                      #old XREF in Adopted  35P X L XREF=I
-                  34S(18O,17F)--->F  F(*)  35P   L 5070      40                                                            *** possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2+
+                  34S(18O,17F)--->F  F(*)  35P   L 5070      40                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                  37CL(11B,13N)--->I  I     35P   L 5010      20                                                           
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 5090.2    13 (11/2-)                                                    ---
-                     *new XREF new tags    35P X L XREF=EF(5070*)K
-                     *new XREF old tags    35P X L XREF=EF(5070*)K
+ LEVEL************************************ 35P   L 5090.2    13 (11/2-)                                                    --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
+                     *new XREF new tags    35P X L XREF=EF(5070*)KL
+                     *new XREF old tags    35P X L XREF=EF(5070*)?0?1
                      #old XREF in Adopted  35P X L XREF=EF(5070)K
-                 9BE(36S,35PG)--->E  E     35P   L 5089      3  (11/2-)                                               A    *** possible JPI=(7/2,9/2,11/2)
-                  34S(18O,17F)--->F  F(*)  35P   L 5070      40                                                            *** possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2+
-                 208PB(36S,XG)--->K  K     35P   L 5089.8    11 (11/2-)                                                    *** possible JPI=(7/2,9/2,11/2)
+                 9BE(36S,35PG)--->E  E     35P   L 5089      3  (11/2-)                                               A    *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
+                  34S(18O,17F)--->F  F(*)  35P   L 5070      40                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   L 5089.2    12 (11/2-)                                                   
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   L 5087.6    10 (11/2-)                                                   
                  9BE(36S,35PG)--->E  E     35P  cL $b{-f}=1.5% {I2}.                                                      
-                 208PB(36S,XG)--->K  K     35P  cL J$11/2- proposed by 2019Gr08 based on comparisons with shell-model     
-                 208PB(36S,XG)--->K  K     35P 2cL calculations.                                                          
- GAMMA------------------------------------ 35P   G 128       1 50      25                                             A    --- EG=128        FL=4962.8     JF=(9/2-)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P  cL J$11/2- proposed by 2019Gr08 based on comparisons with shell-model     
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P 2cL calculations.                                                          
+ GAMMA------------------------------------ 35P   G 128       1  50     25                                             A    --- EG=128        FL=4962.8     JF=(9/2-)
                  9BE(36S,35PG)--->E  E     35P   G 127       2                                                             *** EG=127        FL=4962       JF=(9/2-)
-                 208PB(36S,XG)--->K  K     35P   G 128       1 50      25                                                  *** EG=128        FL=4962.1     JF=(9/2-)
-                 208PB(36S,XG)--->K  K     35P  cG E$weighted average of 128 {I1} (2008Wi09) and 127 {I1} (2015Ch56).
-                 208PB(36S,XG)--->K  K     35P  cG RI$unweighted average of 14 {I2} (2008Wi09) and 5.2 {I6} (2015Ch56).
- GAMMA------------------------------------ 35P   G 322       1 100     35                                             A    --- EG=322        FL=4767.0     JF=(9/2-)
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   G 127       1 40      5                                                   *** EG=127        FL=4962.2     JF=(9/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 128       1 52      8                                                   *** EG=128        FL=4959.3     JF=(9/2-)
+ GAMMA------------------------------------ 35P   G 322       1  100    35                                             A    --- EG=322        FL=4767.0     JF=(9/2-)
                  9BE(36S,35PG)--->E  E     35P   G 321       2                                                             *** EG=321        FL=4768       JF=(9/2-)
-                 208PB(36S,XG)--->K  K     35P   G 322       1 100     35                                                  *** EG=322        FL=4767.1     JF=(9/2-)
-                 208PB(36S,XG)--->K  K     35P  cG E$weighted average of 321 {I1} (2008Wi09) and 323 {I1} (2015Ch56).
-                 208PB(36S,XG)--->K  K     35P  cG RI$unweighted average of 27 {I3} (2008Wi09) and 12.9 {I8} (2015Ch56).
+     208PB(36S,35PG) E=215 MEV--->K  ?0    35P   G 323       1 100     6                                                   *** EG=323        FL=4766.2     JF=(9/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 321       1 100     11                                                  *** EG=321        FL=4766.0     JF=(9/2-)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 5199.3    16 5/2+                                                       ---
+ LEVEL************************************ 35P   L 5199.3    16 5/2+                                                       --- possible JPI=3/2+,5/2+
                      *new XREF new tags    35P X L XREF=DEGHI(5220)
                      *new XREF old tags    35P X L XREF=DEGHI(5220)
                      #old XREF in Adopted  35P X L XREF=DEGHI(5220)
                    2H(36S,3HE)--->D  D     35P   L 5202      8  5/2+                                      1.1       6     
-                 9BE(36S,35PG)--->E  E     35P   L 5200      2  5/2+                             2        1.5       3      *** possible JPI=(1/2,3/2,5/2,7/2)
-                    36S(D,3HE)--->G  G     35P   L 5202      10                                  2        0.40,0.30   A    *** possible JPI=3/2+,5/2+
-                36S(POL D,3HE)--->H  H     35P   L 5189      13 5/2+                             2        1.38        B    *** possible JPI=3/2+,5/2+
+                 9BE(36S,35PG)--->E  E     35P   L 5200      2  5/2+                             2        1.5       3      *** possible JPI=3/2+,5/2+
+                    36S(D,3HE)--->G  H     35P   L 5202      10                                  2        0.40,0.30   A    *** possible JPI=3/2+,5/2+
+                36S(POL D,3HE)--->H  G     35P   L 5189      13 5/2+                             2        1.38        B    *** possible JPI=3/2+,5/2+
                  37CL(11B,13N)--->I  I     35P   L 5220      40                                                           
                  9BE(36S,35PG)--->E  E     35P  cL $b{-f}=14.5% {I14}, |s{-f}{+sp}=10.2 mb, R{-s}=0.47 {I9}.              
                  37CL(11B,13N)--->I  I     35P  cL $d|s/d|W|?10 |mb/sr {I3}.
@@ -324,27 +341,27 @@ Generated at: Mon 03/24/2025 at 07:11:50 PM EDT
  GAMMA------------------------------------ 35P   G 5202      2                                                        B    --- EG=5202       FL=0          JF=1/2+
                  9BE(36S,35PG)--->E  E     35P   G 5202      2                                                             *** EG=5202       FL=0.0        JF=1/2+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 5487.9    13                                                            ---
-                     *new XREF new tags    35P X L XREF=K
-                     *new XREF old tags    35P X L XREF=K
+ LEVEL************************************ 35P   L 5487.9    13                                                            --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2)
+                     *new XREF new tags    35P X L XREF=L
+                     *new XREF old tags    35P X L XREF=?1
                      #old XREF in Adopted  35P X L XREF=K
-                 208PB(36S,XG)--->K  K     35P   L 5488.2    10                                                            *** possible JPI=(3/2,5/2,7/2,9/2,11/2)
- GAMMA------------------------------------ 35P   G 993       1 100     20                                             A    --- EG=993        FL=4494.1     JF=(7/2-)
-                 208PB(36S,XG)--->K  K     35P   G 993       1 100     20                                             A    *** EG=993        FL=4494.2     JF=(7/2-)
- GAMMA------------------------------------ 35P   G 1387      1 60      20                                             A    --- EG=1387       FL=4101.7     JF=(7/2-)
-                 208PB(36S,XG)--->K  K     35P   G 1387      1 60      20                                             A    *** EG=1387       FL=4102.1     JF=(7/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   L 5487.7    10                                                           
+ GAMMA------------------------------------ 35P   G 993       1  100    20                                             A    --- EG=993        FL=4494.1     JF=(7/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 993       1 100     20                                                  *** EG=993        FL=4493.3     JF=(7/2-)
+ GAMMA------------------------------------ 35P   G 1387      1  60     20                                             A    --- EG=1387       FL=4101.7     JF=(7/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 1387      1 60      20                                                  *** EG=1387       FL=4102.1     JF=(7/2-)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 5561.0    13 (5/2-)                                                     ---
-                     *new XREF new tags    35P X L XREF=AK
-                     *new XREF old tags    35P X L XREF=AK
+ LEVEL************************************ 35P   L 5561.0    13 (5/2-)                                                     --- possible JPI=(3/2,5/2,7/2,9/2+)
+                     *new XREF new tags    35P X L XREF=AL
+                     *new XREF old tags    35P X L XREF=A?1
                      #old XREF in Adopted  35P X L XREF=AK
-        35SI B- DECAY (0.78 S)--->A  A     35P   L 5560.7    7  (5/2-)                                                     *** possible JPI=(3/2,5/2,7/2,9/2-)
-                 208PB(36S,XG)--->K  K     35P   L 5560.1    12 (5/2-)                                                     *** possible JPI=(3/2,5/2,7/2,9/2,11/2)
+        35SI B- DECAY (0.78 S)--->A  A     35P   L 5560.7    7  (5/2-)                                                     *** possible JPI=(3/2,5/2,7/2,9/2,11/2): logft=4.6 from (7/2)-
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   L 5560.1    12 (5/2-)                                                    
         35SI B- DECAY (0.78 S)--->A  A     35P   B             12.7                4.6                                    
         35SI B- DECAY (0.78 S)--->A  A     35P  cB $I|b=12.4 {I18} and log {Ift}=4.6 from 1988DuZS.
- GAMMA------------------------------------ 35P   G 1459.4    7 34      12                                                  --- EG=1459.4     FL=4101.7     JF=(7/2-)
+ GAMMA------------------------------------ 35P   G 1459.4    7  34     12                                                  --- EG=1459.4     FL=4101.7     JF=(7/2-)
         35SI B- DECAY (0.78 S)--->A  A     35P   G 1459.7    5 34      12                                                  *** EG=1459.7     FL=4101.2     JF=(7/2-)
-                 208PB(36S,XG)--->K  K     35P   G 1458      1 100                                                    A    *** EG=1458       FL=4102.1     JF=(7/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 1458      1 100                                                         *** EG=1458       FL=4102.1     JF=(7/2-)
         35SI B- DECAY (0.78 S)--->A  A     35P 2 G %IG=3.2                                                                
  GAMMA------------------------------------ 35P   G 3173.5    10 100    17                                                  --- EG=3173.5     FL=2386.9     JF=3/2+
         35SI B- DECAY (0.78 S)--->A  A     35P   G 3173.5    10 100    17                                                  *** EG=3173.5     FL=2386.5     JF=3/2+
@@ -353,69 +370,67 @@ Generated at: Mon 03/24/2025 at 07:11:50 PM EDT
         35SI B- DECAY (0.78 S)--->A  A     35P 2cG scheme of {+35}Si, and it could be a transition to the 4101 or 4493    
         35SI B- DECAY (0.78 S)--->A  A     35P 3cG levels based on intensity balances.                                    
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 5709.5    23 (1/2-)                                                     ---
+ LEVEL************************************ 35P   L 5709.5    23 (1/2-)                                                     --- possible JPI=(1/2-,3/2-)
                      *new XREF new tags    35P X L XREF=DE
                      *new XREF old tags    35P X L XREF=DE
                      #old XREF in Adopted  35P X L XREF=DE
                    2H(36S,3HE)--->D  D     35P   L 5706      38 (1/2-)                                    0.23      5     
-                 9BE(36S,35PG)--->E  E     35P   L 5710      2  (1/2-)                           (1)      0.21      16     *** possible JPI=(1/2,3/2,5/2,7/2)
+                 9BE(36S,35PG)--->E  E     35P   L 5710      2  (1/2-)                           (1)      0.21      16     *** possible JPI=(1/2-,3/2-)
                  9BE(36S,35PG)--->E  E     35P  cL $b{-f}=1.4% {I10}, |s{-f}{+sp}=10.8 mb, R{-s}=0.47 {I9}.               
-                 9BE(36S,35PG)--->E  E     35P  cL J$inteprted as the deeply bound 1p{-1/2} proton removal.               
+                 9BE(36S,35PG)--->E  E     35P  cL J$Interpreted as the deeply bound 1p{-1/2} proton removal.             
+                 9BE(36S,35PG)--->E  E     35P  cL L$1 reported in 2016Mu03. The parentheses are added by evaluators based
+                 9BE(36S,35PG)--->E  E     35P 2cL on the parallel momentum distribution (Fig. 3) in 2016Mu03.            
  GAMMA------------------------------------ 35P   G 5709      2                                                        B    --- EG=5709       FL=0          JF=1/2+
                  9BE(36S,35PG)--->E  E     35P   G 5709      2                                                             *** EG=5709       FL=0.0        JF=1/2+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 5.86E3    5                                                             ---
+ LEVEL************************************ 35P   L 5.86E3    5                                                             --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                      *new XREF new tags    35P X L XREF=F(5890)I(5840)
                      *new XREF old tags    35P X L XREF=F(5890)I(5840)
                      #old XREF in Adopted  35P X L XREF=F(5890)I(5840)
-                  34S(18O,17F)--->F  F     35P   L 5890      70                                                            *** possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2+
+                  34S(18O,17F)--->F  F     35P   L 5890      70                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                  37CL(11B,13N)--->I  I     35P   L 5840      50                                                           
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 6222.7    13 (7/2-,9/2,11/2-)                                           ---
-                     *new XREF new tags    35P X L XREF=K
-                     *new XREF old tags    35P X L XREF=K
+ LEVEL************************************ 35P   L 6222.7    13 (7/2-,9/2,11/2-)                                           --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
+                     *new XREF new tags    35P X L XREF=L
+                     *new XREF old tags    35P X L XREF=?1
                      #old XREF in Adopted  35P X L XREF=K
-                 208PB(36S,XG)--->K  K     35P   L 6222.4    11 (7/2-,9/2,11/2-)                                           *** possible JPI=(7/2,9/2,11/2,13/2+)
- GAMMA------------------------------------ 35P   G 1132      1 25      LT                                             A    --- EG=1132       FL=5090.2     JF=(11/2-)
-                 208PB(36S,XG)--->K  K     35P   G 1132      1 25      LT                                             A    *** EG=1132       FL=5089.8     JF=(11/2-)
- GAMMA------------------------------------ 35P   G 1260      1 100     25                                             A    --- EG=1260       FL=4962.8     JF=(9/2-)
-                 208PB(36S,XG)--->K  K     35P   G 1260      1 100     25                                             A    *** EG=1260       FL=4962.1     JF=(9/2-)
- GAMMA------------------------------------ 35P   G 1729      1 100     25                                             A    --- EG=1729       FL=4494.1     JF=(7/2-)
-                 208PB(36S,XG)--->K  K     35P   G 1729      1 100     25                                             A    *** EG=1729       FL=4494.2     JF=(7/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   L 6220.4    10 (7/2-,9/2,11/2-)                                          
+ GAMMA------------------------------------ 35P   G 1132      1  25     LT                                             A    --- EG=1132       FL=5090.2     JF=(11/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 1132      1 25      LT                                                  *** EG=1132       FL=5087.6     JF=(11/2-)
+ GAMMA------------------------------------ 35P   G 1260      1  100    25                                             A    --- EG=1260       FL=4962.8     JF=(9/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 1260      1 100     25                                                  *** EG=1260       FL=4959.3     JF=(9/2-)
+ GAMMA------------------------------------ 35P   G 1729      1  100    25                                             A    --- EG=1729       FL=4494.1     JF=(7/2-)
+     208PB(36S,35PG) E=230 MEV--->L  ?1    35P   G 1729      1 100     25                                                  *** EG=1729       FL=4493.3     JF=(7/2-)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 6440      60                                                            ---
+ LEVEL************************************ 35P   L 6440      60                                                            --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                      *new XREF new tags    35P X L XREF=F
                      *new XREF old tags    35P X L XREF=F
                      #old XREF in Adopted  35P X L XREF=F
-                  34S(18O,17F)--->F  F     35P   L 6440      60                                                            *** possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2+
+                  34S(18O,17F)--->F  F     35P   L 6440      60                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 7050      60                                                            ---
+ LEVEL************************************ 35P   L 7050      60                                                            --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                      *new XREF new tags    35P X L XREF=F
                      *new XREF old tags    35P X L XREF=F
                      #old XREF in Adopted  35P X L XREF=F
-                  34S(18O,17F)--->F  F     35P   L 7050      60                                                            *** possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2+
+                  34S(18O,17F)--->F  F     35P   L 7050      60                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 7440      60                                                            ---
+ LEVEL************************************ 35P   L 7440      60                                                            --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                      *new XREF new tags    35P X L XREF=FH(7520*)
-                     *new XREF old tags    35P X L XREF=FH(7520*)
-                     #old XREF in Adopted  35P X L XREF=F
-                  34S(18O,17F)--->F  F     35P   L 7440      60                                                            *** possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2+
-                36S(POL D,3HE)--->H  H(*)  35P   L 7520      30                                           0.4       LT     *** possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2+
-                36S(POL D,3HE)--->H  H(*)  35P  cL $1d{-5/2} proton transfer assumed in DWBA calculations, but 2016Mu03   
-                36S(POL D,3HE)--->H  H(*)  35P 2cL proposed 1p{-1/2} (L=1) based the measured parallel momentum           
-                36S(POL D,3HE)--->H  H(*)  35P 3cL distribution.                                                          
+                     *new XREF old tags    35P X L XREF=FG(7520*)
+                     #old XREF in Adopted  35P X L XREF=FG(7520*)
+                  34S(18O,17F)--->F  F     35P   L 7440      60                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
+                36S(POL D,3HE)--->H  G(*)  35P   L 7520      30                                           0.4       LT     *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 7526.9    23 (1/2-)                                                     ---
+ LEVEL************************************ 35P   L 7526.9    23 (1/2-)                                                     --- possible JPI=(1/2-,3/2-)
                      *new XREF new tags    35P X L XREF=EH(7520*)
-                     *new XREF old tags    35P X L XREF=EH(7520*)
-                     #old XREF in Adopted  35P X L XREF=EH(7520)
-                 9BE(36S,35PG)--->E  E     35P   L 7527      2  (1/2-)                           (1)      0.20      6      *** possible JPI=(1/2,3/2,5/2,7/2,9/2+)
-                36S(POL D,3HE)--->H  H(*)  35P   L 7520      30                                           0.4       LT     *** possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2+
+                     *new XREF old tags    35P X L XREF=EG(7520*)
+                     #old XREF in Adopted  35P X L XREF=EG(7520*)
+                 9BE(36S,35PG)--->E  E     35P   L 7527      2  (1/2-)                           (1)      0.20      6      *** possible JPI=(1/2-,3/2-)
+                36S(POL D,3HE)--->H  G(*)  35P   L 7520      30                                           0.4       LT     *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                  9BE(36S,35PG)--->E  E     35P  cL $b{-f}=1.2% {I3}, |s{-f}{+sp}=10.2 mb, R{-s}=0.44 {I9}.                
-                 9BE(36S,35PG)--->E  E     35P  cL J$inteprted as the deeply bound 1p{-1/2} proton removal.               
-                36S(POL D,3HE)--->H  H(*)  35P  cL $1d{-5/2} proton transfer assumed in DWBA calculations, but 2016Mu03   
-                36S(POL D,3HE)--->H  H(*)  35P 2cL proposed 1p{-1/2} (L=1) based the measured parallel momentum           
-                36S(POL D,3HE)--->H  H(*)  35P 3cL distribution.                                                          
+                 9BE(36S,35PG)--->E  E     35P  cL J$Interpreted as the deeply bound 1p{-1/2} proton removal.             
+                 9BE(36S,35PG)--->E  E     35P  cL L$1 reported in 2016Mu03. The parentheses are added by evaluators based
+                 9BE(36S,35PG)--->E  E     35P 2cL on the parallel momentum distribution (Fig. 3) in 2016Mu03.            
  GAMMA------------------------------------ 35P   G 7526      2                                                             --- EG=7526       FL=0          JF=1/2+
                  9BE(36S,35PG)--->E  E     35P   G 7526      2                                                             *** EG=7526       FL=0.0        JF=1/2+
 ------------------------------------------------------------------------------------------------------------------------
@@ -426,11 +441,11 @@ Generated at: Mon 03/24/2025 at 07:11:50 PM EDT
                  37CL(11B,13N)--->I  I     35P   L 7590      20                                                           
                  37CL(11B,13N)--->I  I     35P  cL $d|s/d|W=45 |mb/sr {I11}.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 7920      60                                                            ---
+ LEVEL************************************ 35P   L 7920      60                                                            --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                      *new XREF new tags    35P X L XREF=F
                      *new XREF old tags    35P X L XREF=F
                      #old XREF in Adopted  35P X L XREF=F
-                  34S(18O,17F)--->F  F     35P   L 7920      60                                                            *** possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2+
+                  34S(18O,17F)--->F  F     35P   L 7920      60                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 35P   L 8390      40                                                            ---
                      *new XREF new tags    35P X L XREF=I
@@ -438,84 +453,86 @@ Generated at: Mon 03/24/2025 at 07:11:50 PM EDT
                      #old XREF in Adopted  35P X L XREF=I
                  37CL(11B,13N)--->I  I     35P   L 8390      40                                                           
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 8.60E3    10                                                            ---
+ LEVEL************************************ 35P   L 8.60E3    10                                                            --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                      *new XREF new tags    35P X L XREF=F
                      *new XREF old tags    35P X L XREF=F
                      #old XREF in Adopted  35P X L XREF=F
-                  34S(18O,17F)--->F  F     35P   L 8.60E3    10                                                            *** possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2+
+                  34S(18O,17F)--->F  F     35P   L 8.60E3    10                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 9290      50                                                            ---
+ LEVEL************************************ 35P   L 9290      50                                                            --- possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
                      *new XREF new tags    35P X L XREF=F
                      *new XREF old tags    35P X L XREF=F
                      #old XREF in Adopted  35P X L XREF=F
-                  34S(18O,17F)--->F  F     35P   L 9290      50                                                            *** possible JPI=1/2,3/2,5/2,7/2,9/2,11/2,13/2+
+                  34S(18O,17F)--->F  F     35P   L 9290      50                                                            *** possible JPI=(1/2,3/2,5/2,7/2,9/2,11/2,13/2+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 14938     24                  12.7 KEV  LT                              ---
-                     *new XREF new tags    35P X L XREF=C
-                     *new XREF old tags    35P X L XREF=C
-                     #old XREF in Adopted  35P X L XREF=C
-         1H(34SI,P):RESONANCES--->C  C     35P   L 14938     24                  12.7 KEV  LT    0                        
-         1H(34SI,P):RESONANCES--->C  C     35P  cL $E{-R}=2783 {I24}, |G{-p}=4.6 keV {I28}, |G=4.6 keV {I81} in 2012Im01. 
+ LEVEL************************************ 35P   L 14938     24 1/2+             12.7 KEV  LT                              ---
+                     *new XREF new tags    35P X L XREF=B
+                     *new XREF old tags    35P X L XREF=B
+                     #old XREF in Adopted  35P X L XREF=B
+         1H(34SI,P):RESONANCES--->B  B     35P   L 14938     24                  12.7 KEV  LT    0                        
+         1H(34SI,P):RESONANCES--->B  B     35P  cL T$from original value of 4.6 keV {I81} in 2012Im01.
+         1H(34SI,P):RESONANCES--->B  B     35P  cL $E{-R}=2783 {I24}, |G{-p}=4.6 keV {I28}.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 15161     3                   4.4 KEV   LT                              ---
-                     *new XREF new tags    35P X L XREF=C
-                     *new XREF old tags    35P X L XREF=C
-                     #old XREF in Adopted  35P X L XREF=C
-         1H(34SI,P):RESONANCES--->C  C     35P   L 15161     3                   4.4 KEV   LT    3        0.63      16    
-         1H(34SI,P):RESONANCES--->C  C     35P  cL $E{-R}=3006 {I2}, |G{-p}=1.6 keV {I4}, |G=1.6 keV {I28} in 2012Im01.   
-         1H(34SI,P):RESONANCES--->C  C     35P 2cL IAR of the 7/2- g.s. of {+35}Si.                                       
+ LEVEL************************************ 35P   L 15161     3  5/2-,7/2-        4.4 KEV   LT                              ---
+                     *new XREF new tags    35P X L XREF=B
+                     *new XREF old tags    35P X L XREF=B
+                     #old XREF in Adopted  35P X L XREF=B
+         1H(34SI,P):RESONANCES--->B  B     35P   L 15161     3                   4.4 KEV   LT    3        0.63      16    
+         1H(34SI,P):RESONANCES--->B  B     35P  cL T$from original value of 1.6 keV {I28} in 2012Im01.
+         1H(34SI,P):RESONANCES--->B  B     35P  cL $E{-R}=3006 {I2}, |G{-p}=1.6 keV {I4}.
+         1H(34SI,P):RESONANCES--->B  B     35P  cL $IAR of the 7/2- g.s. of {+35}Si.                                      
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 15306     24                  30.4 KEV  LT                              ---
-                     *new XREF new tags    35P X L XREF=C
-                     *new XREF old tags    35P X L XREF=C
-                     #old XREF in Adopted  35P X L XREF=C
-         1H(34SI,P):RESONANCES--->C  C     35P   L 15306     24                  30.4 KEV  LT    2        0.19      15    
-         1H(34SI,P):RESONANCES--->C  C     35P  cL $E{-R}=3151 {I24}, |G{-p}=3.3 keV {I27}, |G=10.4 keV {I200} in         
-         1H(34SI,P):RESONANCES--->C  C     35P 2cL 2012Im01.                                                              
+ LEVEL************************************ 35P   L 15306     24 3/2+,5/2+        30.4 KEV  LT                              ---
+                     *new XREF new tags    35P X L XREF=B
+                     *new XREF old tags    35P X L XREF=B
+                     #old XREF in Adopted  35P X L XREF=B
+         1H(34SI,P):RESONANCES--->B  B     35P   L 15306     24                  30.4 KEV  LT    2        0.19      15    
+         1H(34SI,P):RESONANCES--->B  B     35P  cL T$from original value of 10.4 keV {I200} in 2012Im01.
+         1H(34SI,P):RESONANCES--->B  B     35P  cL $E{-R}=3151 {I24}, |G{-p}=3.3 keV {I27}.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 15964     18                  84 KEV    25                              ---
-                     *new XREF new tags    35P X L XREF=C
-                     *new XREF old tags    35P X L XREF=C
-                     #old XREF in Adopted  35P X L XREF=C
-         1H(34SI,P):RESONANCES--->C  C     35P   L 15964     18                  84 KEV    25    2        0.79      20    
-         1H(34SI,P):RESONANCES--->C  C     35P  cL $E{-R}=3809 {I18}, |G{-p}=26.7 keV {I69} in 2012Im01.                  
+ LEVEL************************************ 35P   L 15964     18 3/2+,5/2+        84 KEV    25                              ---
+                     *new XREF new tags    35P X L XREF=B
+                     *new XREF old tags    35P X L XREF=B
+                     #old XREF in Adopted  35P X L XREF=B
+         1H(34SI,P):RESONANCES--->B  B     35P   L 15964     18                  84 KEV    25    2        0.79      20    
+         1H(34SI,P):RESONANCES--->B  B     35P  cL $E{-R}=3809 {I18}, |G{-p}=26.7 keV {I69} in 2012Im01.                  
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 16145     36                  0.35 MEV  9                               ---
-                     *new XREF new tags    35P X L XREF=C
-                     *new XREF old tags    35P X L XREF=C
-                     #old XREF in Adopted  35P X L XREF=C
-         1H(34SI,P):RESONANCES--->C  C     35P   L 16145     36                  0.35 MEV  9     1        1.37      32    
-         1H(34SI,P):RESONANCES--->C  C     35P  cL $E{-R}=3990 {I36}, |G{-p}=185 keV {I43}, |G=354 keV {I87} in 2012Im01. 
+ LEVEL************************************ 35P   L 16145     36 1/2-,3/2-        0.35 MEV  9                               ---
+                     *new XREF new tags    35P X L XREF=B
+                     *new XREF old tags    35P X L XREF=B
+                     #old XREF in Adopted  35P X L XREF=B
+         1H(34SI,P):RESONANCES--->B  B     35P   L 16145     36                  354 KEV   87    1        1.37      32    
+         1H(34SI,P):RESONANCES--->B  B     35P  cL $E{-R}=3990 {I36}, |G{-p}=185 keV {I43}.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 16605     44                  0.22 MEV  15                              ---
-                     *new XREF new tags    35P X L XREF=C
-                     *new XREF old tags    35P X L XREF=C
-                     #old XREF in Adopted  35P X L XREF=C
-         1H(34SI,P):RESONANCES--->C  C     35P   L 16605     44                  0.22 MEV  15    0        0.45      28    
-         1H(34SI,P):RESONANCES--->C  C     35P  cL $E{-R}=4450 {I44}, |G{-p}=58.4 keV {I370}, |G=215 keV {I150} in        
-         1H(34SI,P):RESONANCES--->C  C     35P 2cL 2012Im01.                                                              
+ LEVEL************************************ 35P   L 16605     44 1/2+             0.22 MEV  15                              ---
+                     *new XREF new tags    35P X L XREF=B
+                     *new XREF old tags    35P X L XREF=B
+                     #old XREF in Adopted  35P X L XREF=B
+         1H(34SI,P):RESONANCES--->B  B     35P   L 16605     44                  0.22 MEV  15    0        0.45      28    
+         1H(34SI,P):RESONANCES--->B  B     35P  cL $E{-R}=4450 {I44}, |G{-p}=58.4 keV {I370}.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 17254     12                  11.6 KEV  LT                              ---
-                     *new XREF new tags    35P X L XREF=C
-                     *new XREF old tags    35P X L XREF=C
-                     #old XREF in Adopted  35P X L XREF=C
-         1H(34SI,P):RESONANCES--->C  C     35P   L 17254     12                  11.6 KEV  LT    2        0.04      1     
-         1H(34SI,P):RESONANCES--->C  C     35P  cL $E{-R}=5099 {I12}, |G{-p}=3.8 keV {I9}, |G=3.8 keV {I78} in 2012Im01.  
+ LEVEL************************************ 35P   L 17254     12 3/2+,5/2+        11.6 KEV  LT                              ---
+                     *new XREF new tags    35P X L XREF=B
+                     *new XREF old tags    35P X L XREF=B
+                     #old XREF in Adopted  35P X L XREF=B
+         1H(34SI,P):RESONANCES--->B  B     35P   L 17254     12                  11.6 KEV  LT    2        0.04      1     
+         1H(34SI,P):RESONANCES--->B  B     35P  cL T$from original value of 3.8 keV {I78} in 2012Im01.
+         1H(34SI,P):RESONANCES--->B  B     35P  cL $E{-R}=5099 {I12}, |G{-p}=3.8 keV {I9}.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 35P   L 17355     15                  32 KEV    22                              ---
-                     *new XREF new tags    35P X L XREF=C
-                     *new XREF old tags    35P X L XREF=C
-                     #old XREF in Adopted  35P X L XREF=C
-         1H(34SI,P):RESONANCES--->C  C     35P   L 17355     15                  32 KEV    22    1        0.12      7     
-         1H(34SI,P):RESONANCES--->C  C     35P  cL $E{-R}=5200 {I15}, |G{-p}=20.9 keV {I120} in 2012Im01.                 
+ LEVEL************************************ 35P   L 17355     15 1/2-,3/2-        32 KEV    22                              ---
+                     *new XREF new tags    35P X L XREF=B
+                     *new XREF old tags    35P X L XREF=B
+                     #old XREF in Adopted  35P X L XREF=B
+         1H(34SI,P):RESONANCES--->B  B     35P   L 17355     15                  32 KEV    22    1        0.12      7     
+         1H(34SI,P):RESONANCES--->B  B     35P  cL $E{-R}=5200 {I15}, |G{-p}=20.9 keV {I120}.
 
 
 Statistics of levels and gammas from all datasets of 35P:
                              DSID     #of levels       #of gammas       level range
            ADOPTED LEVELS, GAMMAS        36               34            0          to      17355
            35SI B- DECAY (0.78 S)        9                16            0          to     5560.7
-          36SI B-N DECAY (503 MS)        0                0             
             1H(34SI,P):RESONANCES        8                0             14938      to      17355
+                    2H(34SI,35PG)        6                6             0          to     4868.9
                       2H(36S,3HE)        6                0             0          to       5706
                     9BE(36S,35PG)        13               20            0.0        to       7527
                      34S(18O,17F)        10               0             0          to       9290
@@ -523,9 +540,10 @@ Statistics of levels and gammas from all datasets of 35P:
                    36S(POL D,3HE)        7                0             0          to       7520
                     37CL(11B,13N)        10               0             0          to       8390
                    160GD(37CL,XG)        4                3             0          to       4493
-                    208PB(36S,XG)        13               27            0          to     6222.4
+        208PB(36S,35PG) E=215 MEV        9                16            0          to     5089.2
+        208PB(36S,35PG) E=230 MEV        13               25            0          to     6220.4
 
-                         IN TOTAL        120              100           0          to      17355
+                         IN TOTAL        135              120           0          to      17355
 
 
 
@@ -533,12 +551,12 @@ Statistics of levels and gammas from all datasets of 35P:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                    35P        36           34           120          100            869              11
+                    35P        36           34           135          120            925              12
 
-               IN TOTAL        36           34           120          100            869              11
+               IN TOTAL        36           34           135          120            925              12
 
 Number of nuclides     : 1
-Number of blocks       : 12
-Number of references   : 44
-Number of lines in files: 881
+Number of blocks       : 13
+Number of references   : 46
+Number of lines in files: 938
 (from all blocks including abstract, comment, reference)
