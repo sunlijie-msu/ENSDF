@@ -506,6 +506,7 @@
 </ol>
 <p><strong>Comment Line Scope and Order</strong></p>
 <ul>
+<li>Column 7 contains the comment identifier: <code>c</code>.</li>
 <li><strong>cL lines:</strong> Apply only to the immediately preceding L-record and are an optional part of that L-record.</li>
 <li><strong>cL, 2cL, 3cL lines:</strong> Form a unified comment block for that L-record.</li>
 <li>When multiple L-comment identifiers are present, order them as follows: <code>E$ → J$ → T$ → S$ → general</code> (no identifier).</li>
@@ -515,16 +516,17 @@
 </ul>
 <p><strong>Integral Understanding of Continuation Records and Comments (Column 6)</strong></p>
 <ul>
-<li>Column 6 contains the continuation marker: blank for the first record and alphanumeric for continuation records.</li>
+<li>Column 6 contains the continuation identifier: blank for the first record and alphanumeric for continuation records.</li>
 <li>Common continuation records include <code>2 L</code> and <code>F L</code> for L-records, and <code>2 G</code> and <code>B G</code> for G-records.</li>
 <li>Common continuation comments include <code>2cL</code> and <code>3cL</code> for L-comment lines, and <code>2cG</code> and <code>3cG</code> for G-comment lines.</li>
 <li>Continuation records must remain attached to, and apply only to, the immediately preceding record type (L or G).</li>
 <li>Continuation comments must remain attached to the immediately preceding comment line.</li>
-<li>Multi-line <code>c</code> comments (with <code>2c</code>, <code>3c</code> continuation markers) must be fully concatenated as an <strong>Inseparable Whole</strong> during data editing and parsing.</li>
+<li>Multi-line <code>c</code> comments (with <code>2c</code>, <code>3c</code> continuation and comment identifiers in columns 6 and 7 respectively) must be fully concatenated as an <strong>Inseparable Whole</strong> during data editing and parsing.</li>
 <li><code>2cL</code> must follow <code>cL</code>, and <code>3cL</code> must follow <code>2cL</code>, etc.</li>
 <li><code>2cG</code> must follow <code>cG</code>, and <code>3cG</code> must follow <code>2cG</code>, etc.</li>
 <li>Continuation records have their own text-format standards. Do not use comment text format in continuation records. Example: <code>35CA2 L %EC+%B+=100$%ECP=95.8 3$%EC2P=4.2 3</code>.</li>
-<li>Less common: FLAG markers (for example, <code>FLAG=A</code>) are placed in continuation records following the record (L or G) that they describe.</li>
+<li>Continuation records are usually placed before comment lines. Example: <code>2 L</code> and <code>F L</code> records appear before any <code> cL</code> lines for that level, and <code>2 G</code> and <code>B G</code> records appear before any <code> cG</code> lines for that gamma.</li>
+<li>Less common: FLAG markers (for example, <code>FLAG=A</code>) are placed in <code>F L</code> or <code>F G</code>continuation records following the record (L or G) that they describe.</li>
 </ul>
 <h4 id="left-justification-requirement">Left-Justification Requirement</h4>
 <p><strong>MANDATORY:</strong> All values and uncertainties in all fields MUST be left-justified (NEVER right-justified or centered).</p>
@@ -996,37 +998,20 @@ Note: Multiple identical gamma energies appearing in multiple level blocks shoul
 </ul>
 <h3 id="xref-notation-rules">XREF Notation Rules</h3>
 <p>Only in the Adopted Datasets: XREF (cross-reference) entries immediately following an L-record indicate which datasets observe this level.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Notation</th>
-<th style="text-align:left">Meaning</th>
-<th style="text-align:left">Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Plain letter</td>
-<td style="text-align:left">Dataset level energies match the Adopted level within uncertainties.</td>
-<td style="text-align:left"><code>XREF=FH</code> — Datasets F and H report this level with energies consistent with the Adopted value.</td>
-</tr>
-<tr>
-<td style="text-align:left">Letter(energy)</td>
-<td style="text-align:left">Dataset reports an energy outside the uncertainty range but still matches the same physical level.</td>
-<td style="text-align:left"><code>XREF=H(4865)</code> — Dataset H reports a level at 4866±3 keV (outside Adopted 4860±2).</td>
-</tr>
-<tr>
-<td style="text-align:left">Letter(*)</td>
-<td style="text-align:left">Ambiguous matching; dataset level may correspond to two or more Adopted levels.</td>
-<td style="text-align:left"><code>XREF=I(*)</code> — The level from dataset I has ambiguous doublet/multiplet matching.</td>
-</tr>
-<tr>
-<td style="text-align:left">Letter(?)</td>
-<td style="text-align:left">Questionable or uncertain match.</td>
-<td style="text-align:left"><code>XREF=J(?)</code> — Dataset J reports a questionable level that possibly matches the Adopted level.</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>
+<p>Plain letter: dataset level energies match the Adopted level within uncertainties. Example: <code>XREF=EK</code> means datasets E and K report this level with energies consistent with the Adopted level.</p>
+</li>
+<li>
+<p>Letter(energy): dataset reports an energy outside the Adopted uncertainty range but still matches the same physical level. Example: <code>XREF=H(4865)</code> means dataset H reports a level near 4865 keV that is judged to be the same level. The energy in parentheses is the dataset level energy, not the Adopted level energy. The energy value must match the dataset level energy exactly, including decimal places.</p>
+</li>
+<li>
+<p>Letter(<em>): ambiguous matching; one dataset level may correspond to two or more Adopted levels. Example: <code>XREF=G(*)</code> means the level from dataset G has ambiguous doublet or multiplet matching. Because <code>(*)</code> denotes ambiguity among multiple Adopted levels, an XREF tag with <code>(*)</code> must appear on at least two levels in the Adopted dataset. Letter(energy</em>) is allowed for ambiguous matching with energy information.</p>
+</li>
+<li>
+<p>Letter(?): questionable or uncertain match. Example: <code>XREF=J(?)</code> means dataset J reports a questionable level that possibly matches the Adopted level. Letter(energy?) is allowed for questionable matching with energy information.</p>
+</li>
+</ul>
 <hr>
 <h2 id="3-ensdf-uncertainty-notation-rules">3. ENSDF Uncertainty Notation Rules</h2>
 <h3 id="general-rules">General Rules</h3>
@@ -1217,9 +1202,9 @@ Example: <code>1.2333±0.3220 -&gt; 1.23(32)</code>.</li>
 </li>
 </ul>
 <h4 id="uncertainty-notation-with-units">Uncertainty Notation with Units</h4>
-<p>Units are placed after the value before the uncertainty:</p>
+<p>Units or percent signs are placed after the value before the uncertainty:</p>
 <pre><code class="language-text"> 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)
- 34S   cL $|t=54 fs {I+18-11} (1980Be15)
+ 34S   cL $ratio=54% {I+18-11} (1980Be15)
 </code></pre>
 <p><strong>Examples in Context:</strong></p>
 <ul>

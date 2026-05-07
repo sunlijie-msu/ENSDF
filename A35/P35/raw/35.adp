@@ -68,7 +68,7 @@
  35P   XK208PB(36S,35PG) E=215 MEV                                              
  35P   XL208PB(36S,35PG) E=230 MEV                                              
  35P  PN                                                                     6  
- 35P   L 0         1  1/2+             47.3 S    8                              
+ 35P   L 0            1/2+             47.3 S    8                              
  35P X L XREF=ACDEFGHIJKL                                                       
  35P 2 L %B-=100                                                                
  35P  cL J$L(pol d,{+3}He)=0 from 0+ and analyzing power.                       
@@ -153,7 +153,6 @@
  35P   L 4494.1    12 (7/2-)           2.29 PS   49                             
  35P X L XREF=ACEH(4474)JKL                                                     
  35P F L FLAG=C                                                                 
- 35P  cL T$from ({+36}S,{+35}P|g) E=215 MeV                                     
  35P  cL J$L=(3) in {+9}Be({+36}S,{+35}P) from 0+.                              
  35P   G 392.2     3  100    5  [M1,E2]                                         
  35P S G  CC=0.000199 12$KC=0.000184 11$LC=1.37E-5 8$MC=1.04E-6 6               

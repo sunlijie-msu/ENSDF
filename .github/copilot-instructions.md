@@ -215,7 +215,7 @@ Example:
 5. Preserve strict L→G grouping; ENSDF parsers depend on it.
 
 **Comment Line Scope and Order**
-
+- Column 7 contains the comment identifier: `c`.
 - **cL lines:** Apply only to the immediately preceding L-record and are an optional part of that L-record.
 - **cL, 2cL, 3cL lines:** Form a unified comment block for that L-record.
 - When multiple L-comment identifiers are present, order them as follows: `E$ → J$ → T$ → S$ → general` (no identifier).
@@ -224,16 +224,17 @@ Example:
 - When multiple G-comment identifiers are present, order them as follows: `E$ → RI$ → M$ → MR$ → other identifiers`.
 
 **Integral Understanding of Continuation Records and Comments (Column 6)**
-- Column 6 contains the continuation marker: blank for the first record and alphanumeric for continuation records.
+- Column 6 contains the continuation identifier: blank for the first record and alphanumeric for continuation records.
 - Common continuation records include `2 L` and `F L` for L-records, and `2 G` and `B G` for G-records.
 - Common continuation comments include `2cL` and `3cL` for L-comment lines, and `2cG` and `3cG` for G-comment lines.
 - Continuation records must remain attached to, and apply only to, the immediately preceding record type (L or G).
 - Continuation comments must remain attached to the immediately preceding comment line.
-- Multi-line `c` comments (with `2c`, `3c` continuation markers) must be fully concatenated as an **Inseparable Whole** during data editing and parsing.
+- Multi-line `c` comments (with `2c`, `3c` continuation and comment identifiers in columns 6 and 7 respectively) must be fully concatenated as an **Inseparable Whole** during data editing and parsing.
 - `2cL` must follow `cL`, and `3cL` must follow `2cL`, etc.
 - `2cG` must follow `cG`, and `3cG` must follow `2cG`, etc.
 - Continuation records have their own text-format standards. Do not use comment text format in continuation records. Example: `35CA2 L %EC+%B+=100$%ECP=95.8 3$%EC2P=4.2 3`.
-- Less common: FLAG markers (for example, `FLAG=A`) are placed in continuation records following the record (L or G) that they describe.
+- Continuation records are usually placed before comment lines. Example: `2 L` and `F L` records appear before any ` cL` lines for that level, and `2 G` and `B G` records appear before any ` cG` lines for that gamma.
+- Less common: FLAG markers (for example, `FLAG=A`) are placed in `F L` or `F G`continuation records following the record (L or G) that they describe.
 
 #### Left-Justification Requirement
 
