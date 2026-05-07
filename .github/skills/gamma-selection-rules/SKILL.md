@@ -130,4 +130,4 @@ When writing primary transition lists in `cL J$` comments:
 1. **Exclude LT gamma, ? gamma, and weak gamma** — Do not use γ rays with an upper-limit intensity (LT in the DRI field) or questionable placement (? in column 80) for Jπ deduction. Avoid using weak γ rays (e.g., <5% intensity) unless the user specifically requests.
 2. **Rank by final-level spin** — List transitions in ascending order of the final-level spin (smallest Jπ first, e.g., 0+, 1+, 3+, 4+).
 3. **Oxford comma** — Use Oxford comma style in multi-transition lists (e.g., "5805|g to 0+, g.s., 5344|g to 1+, 461, 5659|g to 3+, 146, and 3430|g to 4+, 2376 give (2+).").
-4. **Example** — "<E_gamma1>|g to <Jπ1>, g.s., <E_gamma2>|g to <Jπ2>, <E_level2>, and <E_gamma3>|g to <Jπ3>, <E_level3>."
+4. **Example** — "Primary transitions: <E_gamma1>|g to <Jπ1> g.s., <E_gamma2>|g to <Jπ2>, <E_level2>, and <E_gamma3>|g to <Jπ3>, <E_level3>."
