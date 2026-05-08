@@ -2683,8 +2683,8 @@
  35S  cG E$from {+208}Pb({+36}S,{+35}S|g).                                      
  35S   L 3558.080  28 (5/2+)                                                    
  35S X L XREF=FHIJKMO                                                           
- 35S  cL J$L=(2) from 0+ in {+36}S(p,d); 1986|g to 1/2+, 1572.370 and 1566.7|g  
- 35S 2cL to 7/2-, 1991.27.                                                      
+ 35S  cL J$L=(2) from 0+ in {+36}S(p,d); 1986|g to 1/2+, 1572.369 level and     
+ 35S 2cL 1566.7|g to 7/2-, 1991.27 level.                                       
  35S   G 619.23    19 8.9    17                                                 
  35S  cG E,RI$from (n,|g) E=thermal.                                            
  35S   G 1210.28   4  54     6                                                  
@@ -2825,8 +2825,8 @@
  35S   G 4027.0       36     LT                                                 
  35S   L 4105.6    8  (5/2+)           55 FS     LT                             
  35S X L XREF=FIJKLM                                                            
- 35S  cL J$L=(2) from 0+ in {+36}S(p,d); 2533.1|g to 1/2+, 1572.370 and 2114.3|g
- 35S 2cL to 7/2-, 1991.27.                                                      
+ 35S  cL J$L=(2) from 0+ in {+36}S(p,d); 2533.1|g to 1/2+, 1572.369 level and   
+ 35S 2cL 2114.3|g to 7/2-, 1991.27 level.                                       
  35S  cL T$lifetime |t<80 fs in {+34}S(d,p|g) from 1972Fr11 with DSAM.          
  35S   G 547.5        4.6    LT                                                 
  35S   G 684.4        4.6    LT                                                 
@@ -2840,7 +2840,7 @@
  35S   L 4180      3  (1/2,3/2,5/2+)                                            
  35S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
  35S X L XREF=L(4186*)M                                                         
- 35S  cL J$2608|g to 1/2+, 1572.370.                                            
+ 35S  cL J$2608|g to 1/2+, 1572.369 level.                                      
  35S   G 2608         22     6                                                  
  35S  cG RI$from (d,|a|g).                                                      
  35S   G 4180         100    6                                                  
@@ -2882,9 +2882,9 @@
  35S  cG RI$from (d,|a|g).                                                      
  35S   L 4477.63      (5/2+)           62 FS     LT                             
  35S X L XREF=FI(4481*)JL(4489)M                                                
- 35S  cL J$2905.1|g to 1/2+, 1572.370 and 2486.27|g to 7/2-, 1991.27. L=2 from  
- 35S 2cL 3/2+ in (p,{+3}He) suggests (1/2+ to 9/2+). L=2 component of L=2,3     
- 35S 3cL doublet from 0+ in {+34}S(d,p).                                        
+ 35S  cL J$2905.1|g to 1/2+, 1572.369 level and 2486.27|g to 7/2-, 1991.27      
+ 35S 2cL level. L=2 from 3/2+ in (p,{+3}He) suggests (1/2+ to 9/2+). L=2        
+ 35S 3cL component of L=2,3 doublet from 0+ in {+34}S(d,p).                     
  35S  cL T$lifetime |t<90 fs in {+34}S(d,p|g) from 1972Fr11 with DSAM.          
  35S   G 591.35       8.2    LT                        1.5E-4 6                 
  35S S G  CC=1.5E-4 6$KC=1.4E-4 5$LC=1.1E-5 4$MC=9.2E-7 34                      
@@ -3570,7 +3570,7 @@
  35S   H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35S 2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
  35S  dB EAV,LOGFT$FROM BetaShape v2.4 (Jun-2024) 2023Mo21.                     
- 35P  dL E$Least-squares fitting is done by GLSC (version 21-Mar-2025)          
+ 35S  dL E$Least-squares fitting is done by GLSC (version 21-Mar-2025)          
  35S  c  1986Wa22: {+35}P was produced via the {+36}S(t,|a){+35}P reaction. 81% 
  35S 2c  enriched {+36}S targets were bombarded with 3.4-MeV tritons from the   
  35S 3c  Brookhaven National Laboratory (BNL) tandem van de Graaff facility. |g 
@@ -4476,10 +4476,9 @@
  35S 3c  carbon-backed sulfur enriched in {+34}S. Protons were spatially        
  35S 4c  dispersed by the Super-Enge Split-Pole Spectrograph and detected using 
  35S 5c  a position-sensitive ionization chamber (|DE) and a plastic            
- 35S 6c  scintillator (E) at the focal plane with FWHM|?45 keV. Measured |s(E{-p},|q).     
- 35S Ac  Deduced 23 levels, single-neutron spectroscopic factors and strengths  
- 35S Bc  from finite-range PTOLEMY-DWBA analysis.                               
- 35S  d                                                                         
+ 35S 6c  scintillator (E) at the focal plane with FWHM|?45 keV. Measured        
+ 35S 7c  |s(E{-p},|q). Deduced 23 levels, single-neutron spectroscopic factors  
+ 35S 8c  and strengths from finite-range PTOLEMY-DWBA analysis.                 
  35S  c  1971Va18: A 10-MeV deuteron beam was produced from the Utrecht 6-MV    
  35S 2c  tandem accelerator. Targets were 100 |mg/cm{+2} PbS on carbon plus     
  35S 3c  formvar foils and 5 |mg/cm{+2} pure {+34}S embedded in aluminum foil.  
@@ -4489,7 +4488,6 @@
  35S 7c  Deduced 17 levels, L-transfers, J, |p, spectroscopic factors from      
  35S 8c  DWUCK-DWBA analysis for the ground state and seven excited states of   
  35S 9c  {+35}S.                                                                
- 35S  d                                                                         
  35S  c  1969Mo12: A 6.495-MeV deuteron beam was produced from the ONR-CIT      
  35S 2c  tandem accelerator. The target was an enriched target of 450-|mg/cm{+2}
  35S 3c  {I25} CdS (85% {+34}S) evaporated onto a 301-|mg/cm{+2} {I15} gold foil
@@ -4497,7 +4495,6 @@
  35S 5c  onto a 289-|mg/cm{+2} {I30} gold foil. Protons were detected using an  
  35S 6c  array of 16 Au-Si surface barrier detectors with FWHM=30 keV. Measured 
  35S 7c  |s(E{-p},|q). Deduced 37 levels.                                       
- 35S  d                                                                         
  35S  c  1984Pi03: A 12.3-MeV deuteron beam was produced from a cyclotron. The  
  35S 2c  target was CdS (61.9% in {+36}S, 37.7% in {+34}S), 100 |mg/cm{+2} on a 
  35S 3c  20 |mg/cm{+2} carbon backing. Protons were analyzed by a multi-angle   
@@ -4505,20 +4502,17 @@
  35S 5c  plates Ilford L4. Measured |s(E{-p},|q). Deduced 13 levels,            
  35S 6c  L-transfers, J, |p, and spectroscopic factors from DWUCK-DWBA analysis 
  35S 7c  for six excited states of {+35}S.                                      
- 35S  d                                                                         
  35S  c  1979So01: A 3.55-MeV deuteron beam was produced from a Van de Graaff   
  35S 2c  electrostatic generator. The target was 18-|mg/cm{+2} GeS (80% {+36}S, 
  35S 3c  20% {+34}S) on a 25-|mg/cm{+2} carbon backing. Protons were analyzed by
  35S 4c  a magnetic spectrograph and recorded by a spark chamber with FWHM=10-15
  35S 5c  keV. Measured |s(E{-p},|q). Deduced levels.                            
- 35S  d                                                                         
  35S  c  1971Ko33: A 6.6-MeV deuteron beam was produced from a cyclotron.       
  35S 2c  Targets were GeS films of 70-80 |mg/cm{+2} (98% enrichment in {+34}S)  
  35S 3c  evaporated onto a 20 |mg/cm{+2} carbon substrate. Protons were detected
  35S 4c  using an 800-|mm-thick Si(Li). Measured |s(E{-p},|q). Deduced levels,  
  35S 5c  J, |p, L-transfers, and spectroscopic factors from distorted-wave      
  35S 6c  analysis for the ground state and five excited states of {+35}S.       
- 35S  d                                                                         
  35S  c  1971Me12: An 18-MeV deuteron beam was produced from the Yale MP tandem 
  35S 2c  Van de Graaff accelerator. The target was H{+2}S gas of natural        
  35S 3c  isotopic composition (95.06% {+32}S, 4.18% {+34}S). Protons were       
@@ -4526,19 +4520,16 @@
  35S 5c  Measured |s(E{-p},|q). Deduced levels, J, |p, L-transfers, and         
  35S 6c  spectroscopic factors from local, zero-range JULIE-DWBA analysis of    
  35S 7c  |s(E{-p},|q) for the ground state and two excited states of {+35}S.    
- 35S  d                                                                         
  35S  c  1966Sc09: 9- and 12-MeV deuteron beams were produced from the Argonne  
  35S 2c  tandem accelerator. The target was PbS. Protons were detected using    
  35S 3c  silicon surface barrier detectors. Measured |s(E{-p},|q) for the ground
  35S 4c  state and one excited state of {+35}S.                                 
- 35S  d                                                                         
  35S  c  1958En51: 6.006- and 6.542-MeV deuteron beams were produced from the   
  35S 2c  MIT-ONR electrostatic generator. Targets were Sb{+2}S{+3} of natural   
  35S 3c  isotopic constitution (4.2% {+34}S). Energies of charged reaction      
  35S 4c  products emitted from the target at angles of 50, 90, and 130|' were   
  35S 5c  measured by a broad-range magnetic spectrograph and nuclear emulsions. 
  35S 6c  Measured |s(E{-p},|q). Deduced 5 levels.                               
- 35S  d                                                                         
  35S  c  Other measurements: 1976We29: {+34}S(d,p){+35}S angular distributions  
  35S 2c  for the ground state and the first excited state of {+35}S. 1973Co25:  
  35S 3c  {+34}S(d,p){+35}S excitation functions for the two lowest excited      
