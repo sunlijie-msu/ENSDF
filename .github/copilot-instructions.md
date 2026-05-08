@@ -157,7 +157,7 @@ Example:
 | S     | 65–74   | Spectroscopic strength.                                           |
 | DS    | 75–76   | Uncertainty in S.                                                 |
 | C     | 77      | Comment flag.                                                     |
-| MS    | 78–79   | 'M ' for isomeric metastable levels; 'R ' for resonances          |
+| MS    | 78–79   | 'M ' isomer; 'R ' resonance; 'C ' PN comments (uncommon)          |
 | Q     | 80      | '?' for uncertain/questionable; 'S' for assumed but not observed. |
 
 J field: For multiple J-π values separated by commas, no spaces after commas.
