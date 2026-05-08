@@ -2,9 +2,9 @@
  35P   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$          
  35P   H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35P 2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35P  dG $Transition strength is calculated by Java-RULER (version 18-Feb-2025) 
+ 35P  dG $Transition strength is calculated by Java-RULER (version 11-Nov-2025) 
  35P  dG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
- 35P  dL E$Least-squares fitting is done by GLSC (version 21-Mar-2025)          
+ 35P  dL E$Least-squares fitting is done by GLSC (version 21-Apr-2026)          
  35P   Q 3988.4    19 8380.4 20 12155.120-12332.029    2021WA16                 
  35P  cQ $S(2n)=14663.1 {I22}, S(2p)=30938 {I7} (2021Wa16)                      
  35P  c  Isotope discovery (2012Th10): {+232}Th({+40}Ar,X) at Dubna (1971Ar32)  
@@ -45,7 +45,8 @@
  35P  c  Theoretical calculations (binding energies, dipole moments, quadrupole 
  35P 2c  moments, radii, levels, J, |p, etc.): 2012BoZT, 2009No01, 2004Kh16,    
  35P 3c  2003Sm02, 1999Du05, 1988Wa04, 1987Wa10, 1986Wo02,1983Wi08, 1975JeZX.   
- 35P  cG E(W),RI(W)$From {+208}Pb({+36}S,{+35}P|g) E=230 MeV.                   
+ 35P  cG E(W),RI(W)$From {+208}Pb({+36}S,{+35}P|g) E=230 MeV, unless otherwise  
+ 35P 2cG noted.                                                                 
  35P  cG E(B)$From {+9}Be({+36}S,{+35}P|g).                                     
  35P  cL E$From a least-squares fit to |g-ray energies for levels connected with
  35P 2cL |g transitions, from particle-transfer reactions for other levels, or  
@@ -53,8 +54,8 @@
  35P  cL J(C)$Comparisons with shell-model calculations (2019Gr08).             
  35P  cL T$LABEL=T{-1/2} or |G                                                  
  35P  cL T$T{-1/2} from the differential recoil-distance method (2019Gr08) in   
- 35P 2cL {+208}Pb({+36}S,{+35}P|g) and widths from the R-matrix analysis of     
- 35P 3cL ({+34}Si,p) for resonances, unless otherwise noted.                    
+ 35P 2cL {+208}Pb({+36}S,{+35}P|g) E=215 MeV and widths from the R-matrix       
+ 35P 3cL analysis of ({+34}Si,p) for resonances, unless otherwise noted.        
  35P   XA35SI B- DECAY (0.78 S)                                                 
  35P   XB1H(34SI,P):RESONANCES                                                  
  35P   XC2H(34SI,35PG)                                                          
@@ -75,7 +76,7 @@
  35P  cL T$weighted average of 45 s {I2} (1971Gr53, |g(t)), 47.7 s {I29}        
  35P 2cL (1972Go31, |g(t)), 48.2 s {I17} (1972Go31, |g(t)), and 47.4 s {I8}     
  35P 3cL (1972Ap01, |g(t)).                                                     
- 35P   L 2386.9    11 3/2+             0.69 PS   LT                             
+ 35P   L 2386.9    5  3/2+             0.69 PS   LT                             
  35P X L XREF=ACDEF(2420)HIKL                                                   
  35P  cL J$L(pol d,{+3}He)=2 from 0+ and L-1/2 transfer from analyzing power.   
  35P   G 2386.3    6  100       [M1,E2]                                         
@@ -84,8 +85,7 @@
  35P  cG E$weighted average of 2386.4 {I6} from {+35}Si |b{+-} decay, 2386 {I2} 
  35P 2cG from {+9}Be({+36}S,{+35}P|g), 2386 {I1} from {+208}Pb({+36}S,{+35}P|g) 
  35P 3cG E=215 MeV, and 2386 {I1} from {+208}Pb({+36}S,{+35}P|g) E=230 MeV      
- 35P  cG $B(M1)(W.u.)>0.0023 if M1, B(E2)(W.u.)>1.6 if E2.                      
- 35P   L 3860.4    11 5/2+             0.69 PS   LT                             
+ 35P   L 3860.4    5  5/2+             0.69 PS   LT                             
  35P X L XREF=ACDEGHIJKL                                                        
  35P  cL J$L(pol d,{+3}He)=2 from 0+ and L+1/2 transfer from analyzing power.   
  35P   G 1473.4    5  15.7   14 [M1,E2]                                         
@@ -97,46 +97,41 @@
  35P  cG RI$weighted average of 14.1 {I33} from {+35}Si |b{+-} decay, 16.4 {I14}
  35P 2cG from {+208}Pb({+36}S,{+35}P|g) E=215 MeV, and 15.0 {I20} from          
  35P 3cG {+208}Pb({+36}S,{+35}P|g) E=230 MeV                                    
- 35P  cG $B(M1)(W.u.)>0.0012 if M1, B(E2)(W.u.)>2.1 if E2.                      
  35P   G 3860.2    10 100.0  32 [E2]                                            
  35P S G  KC=2.90E-6 4$LC=2.155E-7 30$MC=1.638E-8 23                            
  35P S G  IPC=0.001120 16                                                       
- 35P B G BE2W GT 0.12                                                           
  35P  cG E$weighted average of 3859.5 {I10} from {+35}Si |b{+-} decay, 3860 {I2}
  35P 2cG from {+9}Be({+36}S,{+35}P|g), 3860 {I1} from {+208}Pb({+36}S,{+35}P|g) 
  35P 3cG E=215 MeV, and 3861 {I1} from {+208}Pb({+36}S,{+35}P|g) E=230 MeV      
  35P  cG RI$from {+208}Pb({+36}S,{+35}P|g) E=215 MeV. Other: 100 {I7} from      
- 35P 2cG {+35}Si |b{+-} decay                                                   
- 35P   L 4101.7    11 (7/2-)           69 PS     GT                         C   
+ 35P 2cG {+35}Si |b{+-} decay.                                                  
+ 35P   L 4101.7    5  (7/2-)           69 PS     GT                         C   
  35P X L XREF=ACEJKL                                                            
  35P   G 241.3     5  100.0  28 [E1]                                            
  35P S G  CC=0.000665 10$KC=0.000616 9$LC=4.59E-5 7$MC=3.48E-6 5                
- 35P B G BE1W LT 4.4E-4                                                         
  35P  cG E$weighted average of 241.4 {I3} from {+35}Si |b{+-} decay, 237 {I2}   
  35P 2cG from {+9}Be({+36}S,{+35}P|g), 241 {I1} from {+208}Pb({+36}S,{+35}P|g)  
  35P 3cG E=215 MeV, and 241 {I1} from {+208}Pb({+36}S,{+35}P|g) E=230 MeV.      
  35P  cG RI$from {+208}Pb({+36}S,{+35}P|g) E=215 MeV. Others: 100 {I4} from     
  35P 2cG {+35}Si |b{+-} decay and 100 {I7} from {+208}Pb({+36}S,{+35}P|g) E=230 
  35P 3cG MeV.                                                                   
- 35P   G 1714.8    6  6.6    17 [M2]                                        A   
+ 35P   G 1714.8    6  6.6    17 [M2]                                        W   
  35P S G  CC=7.93E-5 11$KC=1.668E-5 23$LC=1.242E-6 17$MC=9.44E-8 13             
  35P S G  IPC=6.13E-5 9                                                         
- 35P B G BM2W LT 0.16                                                           
  35P  cG E$weighted average of 1714.7 {I6} from {+35}Si |b{+-} decay and 1715   
  35P 2cG {I1} from {+208}Pb({+36}S,{+35}P|g) E=230 MeV                          
  35P  cG RI$other: 22 {I5} from {+35}Si |b{+-} decay.                           
- 35P   G 4101.4    10 54     8  [E3]                                        A   
+ 35P   G 4101.4    10 54     8  [E3]                                        W   
  35P S G  CC=0.000924 13$KC=3.47E-6 5$LC=2.58E-7 4$MC=1.961E-8 27               
  35P S G  IPC=0.000920 13                                                       
- 35P B G BE3W LT 4.8                                                            
  35P  cG E$weighted average of 4100.8 {I10} from {+35}Si |b{+-} decay and 4102  
  35P 2cG {I1} from {+208}Pb({+36}S,{+35}P|g) E=230 MeV                          
  35P  cG RI$other: 135 {I8} from {+35}Si |b{+-} decay.                          
  35P   L 4250      20                                                           
  35P X L XREF=I                                                                 
- 35P   L 4382.0    12 (5/2-)                                                    
+ 35P   L 4381.9    7  (5/2-)                                                    
  35P X L XREF=A(?)EKL                                                           
- 35P  cL J$possibly allowed |b{+-} feeding from 7/2- parent; 1994.9|g to 3/2+.  
+ 35P  cL J$possibly allowed |b{+-} feeding from 7/2- parent; 1994.7|g to 3/2+.  
  35P   G 1994.7    6  100                                                       
  35P  cG E$weighted average of 1994.8 {I6} from {+35}Si |b{+-} decay, 1995 {I2} 
  35P 2cG from {+9}Be({+36}S,{+35}P|g), 1994 {I1} from {+208}Pb({+36}S,{+35}P|g) 
@@ -144,69 +139,69 @@
  35P  cG $Placement by 1988DuZS, 2008Wi09, and 2016Mu03. 1988DuZT and 1987Wa10  
  35P 2cG placed this |g as the 6096 to 4101 transition. 1988Or01 placed this |g 
  35P 3cG as the 6488 to 4493 transition.                                        
- 35P   L 4494.1    12 (7/2-)           2.29 PS   49                         C   
+ 35P   L 4494.0    6  (7/2-)           2.29 PS   49                         C   
  35P X L XREF=ACEH(4474)JKL                                                     
  35P  cL J$L=(3) from 0+ in {+9}Be({+36}S,{+35}P).                              
  35P   G 392.3     3  100    5  [M1+E2]  0.22    LT                             
  35P S G  CC=0.000199 12$KC=0.000184 11$LC=1.37E-5 8$MC=1.04E-6 6               
- 35P B G BM1W=0.117 +42-29                                                      
+ 35P B G BM1W=0.112 +39-27                                                      
  35P  cG E$weighted average of 392.3 {I3} from {+35}Si |b{+-} decay, 391 {I2}   
  35P 2cG from {+9}Be({+36}S,{+35}P|g), 392 {I1} from {+208}Pb({+36}S,{+35}P|g)  
  35P 3cG E=215 MeV, and 391 {I1} from {+208}Pb({+36}S,{+35}P|g) E=230 MeV       
  35P  cG RI$from {+35}Si |b{+-} decay and {+208}Pb({+36}S,{+35}P|g) E=215 MeV.  
  35P 2cG Other: 100 {I9} from {+208}Pb({+36}S,{+35}P|g) E=230 MeV               
- 35P  cG MR$deduced by evaluators from RUL=100 for B(E2)(W.u.).                 
+ 35P  cG MR$deduced by evaluators assuming RUL=100 for B(E2)(W.u.).             
  35P   G 633.3     5  40     4  [E1]                                            
  35P S G  CC=4.64E-5 7$KC=4.30E-5 6$LC=3.20E-6 5$MC=2.432E-7 34                 
- 35P B G BE1W=2.8E-4 +8-6                                                       
+ 35P B G BE1W=3.1E-4 +9-6                                                       
  35P  cG E$weighted average of 633.7 {I5} from {+35}Si |b{+-} decay, 634 {I2}   
  35P 2cG from {+9}Be({+36}S,{+35}P|g), 633 {I1} from {+208}Pb({+36}S,{+35}P|g)  
  35P 3cG E=215 MeV, and 632 {I1} from {+208}Pb({+36}S,{+35}P|g) E=230 MeV       
  35P  cG RI$weighted average of 38 {I5} from {+35}Si |b{+-} decay and 42 {I4}   
  35P 2cG from {+208}Pb({+36}S,{+35}P|g) E=215 MeV. Other: 17.1 {I29} from       
  35P 3cG {+208}Pb({+36}S,{+35}P|g) E=230 MeV                                    
- 35P   L 4666.2    16 5/2+                                                      
+ 35P   L 4666.2    12 5/2+                                                      
  35P X L XREF=DEGHI(4640)                                                       
  35P  cL J$L(pol d,{+3}He)=2 from 0+ and L+1/2 transfer from analyzing power.   
  35P   G 804       2                                                        B   
  35P   G 2279      2                                                        B   
  35P   G 4668      2                                                        B   
- 35P   L 4767.0    13 (9/2-)                                                C   
+ 35P   L 4766.7    8  (9/2-)                                                C   
  35P X L XREF=EKL                                                               
- 35P   G 273       1  50     24                                             A   
+ 35P   G 273       1  50     24                                             W   
  35P  cG E$weighted average of 274 {I2} from {+9}Be({+36}S,{+35}P|g), 273 {I1}  
  35P 2cG from {+208}Pb({+36}S,{+35}P|g) E=215 MeV, and 273 {I1} from            
  35P 3cG {+208}Pb({+36}S,{+35}P|g) E=230 MeV                                    
  35P  cG RI$unweighted average of 73 {I5} from {+208}Pb({+36}S,{+35}P|g) E=215  
- 35P 2cG MeV and 26 {I4} from {+208}Pb({+36}S,{+35}P|g) E=230 MeV               
- 35P   G 664       1  100    6                                              A   
+ 35P 2cG MeV and 26 {I4} from {+208}Pb({+36}S,{+35}P|g) E=230 MeV.              
+ 35P   G 664       1  100    6                                              W   
  35P  cG E$weighted average of 666 {I2} from {+9}Be({+36}S,{+35}P|g), 665 {I1}  
  35P 2cG from {+208}Pb({+36}S,{+35}P|g) E=215 MeV, and 663 {I1} from            
- 35P 3cG {+208}Pb({+36}S,{+35}P|g) E=230 MeV                                    
+ 35P 3cG {+208}Pb({+36}S,{+35}P|g) E=230 MeV.                                   
  35P  cG RI$from {+208}Pb({+36}S,{+35}P|g) E=215 MeV. Other: 100 {I9} from      
- 35P 2cG {+208}Pb({+36}S,{+35}P|g) E=230 MeV                                    
- 35P   L 4869.6    12 (5/2-,7/2-)                                               
+ 35P 2cG {+208}Pb({+36}S,{+35}P|g) E=230 MeV.                                   
+ 35P   L 4869.6    6  (5/2-,7/2-)                                               
  35P X L XREF=ACL                                                               
  35P  cL J$possibly allowed |b{+-} feeding from 7/2- parent; 1009.7|g to 5/2+.  
- 35P   G 374       1  60     20                                             A   
- 35P   G 487       1  40     LT                                             A   
- 35P   G 767.9     4  100    20                                             A   
+ 35P   G 374       1  60     20                                             W   
+ 35P   G 487       1  40     LT                                             W   
+ 35P   G 767.9     4  100    20                                             W   
  35P  cG E$weighted average of 768.0 {I4} from {+35}Si |b{+-} decay and 767 {I1}
  35P 2cG from {+208}Pb({+36}S,{+35}P|g) E=230 MeV                               
  35P  cG RI$other: 100 {I18} from {+35}Si |b{+-} decay.                         
- 35P   G 1009.7    5  20     LT                                             A   
+ 35P   G 1009.7    5  20     LT                                             W   
  35P  cG E$weighted average of 1009.9 {I5} from {+35}Si |b{+-} decay and 1009   
  35P 2cG {I1} from {+208}Pb({+36}S,{+35}P|g) E=230 MeV                          
  35P  cG RI$other: 152 {I32} from {+35}Si |b{+-} decay.                         
- 35P   L 4962.8    12 (9/2-)                                                C   
+ 35P   L 4962.5    8  (9/2-)                                                C   
  35P X L XREF=A(?)EKL                                                           
- 35P   G 468.6     6  100    7                                              A   
+ 35P   G 468.6     6  100    7                                              W   
  35P  cG E$weighted average of 468.9 {I4} from {+35}Si |b{+-} decay, 469 {I2}   
  35P 2cG from {+9}Be({+36}S,{+35}P|g), 469 {I1} from {+208}Pb({+36}S,{+35}P|g)  
  35P 3cG E=215 MeV, and 466 {I1} from {+208}Pb({+36}S,{+35}P|g) E=230 MeV       
  35P  cG RI$from {+208}Pb({+36}S,{+35}P|g) E=215 MeV. Other: 100 {I14} from     
- 35P 2cG {+208}Pb({+36}S,{+35}P|g) E=230 MeV                                    
- 35P   G 859       3  76     18                                             A   
+ 35P 2cG {+208}Pb({+36}S,{+35}P|g) E=230 MeV.                                   
+ 35P   G 859       3  76     18                                                 
  35P  cG E$unweighted average of 861 {I1} from {+208}Pb({+36}S,{+35}P|g) E=215  
  35P 2cG MeV and 856 {I1} from {+208}Pb({+36}S,{+35}P|g) E=230 MeV              
  35P  cG RI$unweighted average of 58 {I7} from {+208}Pb({+36}S,{+35}P|g) E=215  
@@ -216,31 +211,31 @@
  35P  cL $1988Or01 observed a 5010 {I20} level in ({+11}B,{+13}N) and a 5070    
  35P 2cL {I40} level in ({+18}O,{+17}F) but did not assign them as the same     
  35P 3cL level.                                                                 
- 35P   L 5090.2    13 (11/2-)                                               C   
+ 35P   L 5089.5    9  (11/2-)                                               C   
  35P X L XREF=EF(5070)KL                                                        
- 35P   G 127       1  43     6                                              A   
+ 35P   G 127       1  43     6                                                  
  35P  cG E$weighted average of 127 {I2} from {+9}Be({+36}S,{+35}P|g), 127 {I1}  
  35P 2cG from {+208}Pb({+36}S,{+35}P|g) E=215 MeV, and 128 {I1} from            
  35P 3cG {+208}Pb({+36}S,{+35}P|g) E=230 MeV                                    
  35P  cG RI$weighted average of 40 {I5} from {+208}Pb({+36}S,{+35}P|g) E=215 MeV
  35P 2cG and 52 {I8} from {+208}Pb({+36}S,{+35}P|g) E=230 MeV                   
- 35P   G 322       1  100    6                                              A   
+ 35P   G 322       1  100    6                                              W   
  35P  cG E$weighted average of 321 {I2} from {+9}Be({+36}S,{+35}P|g), 323 {I1}  
  35P 2cG from {+208}Pb({+36}S,{+35}P|g) E=215 MeV, and 321 {I1} from            
  35P 3cG {+208}Pb({+36}S,{+35}P|g) E=230 MeV                                    
  35P  cG RI$from {+208}Pb({+36}S,{+35}P|g) E=215 MeV. Other: 100 {I11} from     
  35P 2cG {+208}Pb({+36}S,{+35}P|g) E=230 MeV                                    
- 35P   L 5199.3    16 5/2+                                                      
+ 35P   L 5199.3    12 5/2+                                                      
  35P X L XREF=DEGHI(5220)                                                       
  35P  cL J$L(pol d,{+3}He)=2 from 0+ and L+1/2 transfer from analyzing power.   
  35P   G 1337      2                                                        B   
  35P   G 2811      2                                                        B   
  35P   G 5202      2                                                        B   
- 35P   L 5487.9    13                                                           
+ 35P   L 5487.8    9                                                            
  35P X L XREF=L                                                                 
- 35P   G 993       1  100    20                                             A   
- 35P   G 1387      1  60     20                                             A   
- 35P   L 5561.0    13 (5/2-)                                                    
+ 35P   G 993       1  100    20                                             W   
+ 35P   G 1387      1  60     20                                             W   
+ 35P   L 5560.9    8  (5/2-)                                                    
  35P X L XREF=AL                                                                
  35P  cL J$possibly allowed |b{+-} feeding from 7/2- parent; 3173.5|g to 3/2+.  
  35P   G 1459.4    7  34     12                                                 
@@ -248,39 +243,38 @@
  35P 2cG {I1} from {+208}Pb({+36}S,{+35}P|g) E=230 MeV                          
  35P  cG RI$From {+35}Si |b{+-} decay.                                          
  35P   G 3173.5    10 100    17                                                 
- 35P  cG $3173.5|g is not observed in {+208}Pb({+36}S,{+35}P|g), but the weaker 
- 35P 2cG 1459|g deexciting the same level is observed in                        
- 35P 3cG {+208}Pb({+36}S,{+35}P|g). Further experiments are needed to resolve   
- 35P 4cG the discrepancy.                                                       
+ 35P  cG $3173.5|g is not observed in {+208}Pb({+36}S,{+35}P|g) E=230 MeV, but  
+ 35P 2cG the weaker 1459|g deexciting the same level is observed in             
+ 35P 3cG {+208}Pb({+36}S,{+35}P|g) E=230 MeV.                                   
  35P  cG E,RI$From {+35}Si |b{+-} decay.                                        
- 35P   L 5709.5    23 (1/2-)                                                    
+ 35P   L 5710      2  (1/2-)                                                    
  35P X L XREF=DE                                                                
  35P  cL J$L=(1) from 0+ in {+9}Be({+36}S,{+35}P); interpreted as the deeply    
  35P 2cL bound 1p{-1/2} proton removal from 0+ in {+9}Be({+36}S,{+35}P); 5709|g 
  35P 3cL to 1/2+.                                                               
- 35P   G 5709      2                                                        B   
+ 35P   G 5709      2  100                                                   B   
  35P   L 5.86E3    5                                                            
  35P X L XREF=F(5890)I(5840)                                                    
  35P  cL E$weighted average of 5890 {I70} from {+34}S({+18}O,{+17}F) and 5840   
  35P 2cL {I50} from {+37}Cl({+11}B,{+13}N)                                      
- 35P   L 6222.7    13 (7/2-,9/2,11/2-)                                          
+ 35P   L 6222.3    9  (7/2-,9/2,11/2-)                                          
  35P X L XREF=L                                                                 
  35P  cL J$1132|g to (11/2-) and 1729|g to (7/2-).                              
- 35P   G 1132      1  25     LT                                             A   
- 35P   G 1260      1  100    25                                             A   
- 35P   G 1729      1  100    25                                             A   
+ 35P   G 1132      1  25     LT                                             W   
+ 35P   G 1260      1  100    25                                             W   
+ 35P   G 1729      1  100    25                                             W   
  35P   L 6440      60                                                           
  35P X L XREF=F                                                                 
  35P   L 7050      60                                                           
  35P X L XREF=F                                                                 
  35P   L 7440      60                                                           
  35P X L XREF=FH(7520*)                                                         
- 35P   L 7526.9    23 (1/2-)                                                    
+ 35P   L 7527      2  (1/2-)                                                    
  35P X L XREF=EH(7520*)                                                         
  35P  cL J$L=(1) from 0+ in {+9}Be({+36}S,{+35}P); interpreted as the deeply    
  35P 2cL bound 1p{-1/2} proton removal from 0+ in {+9}Be({+36}S,{+35}P); 7526|g 
  35P 3cL to 1/2+.                                                               
- 35P   G 7526      2                                                            
+ 35P   G 7526      2  100                                                       
  35P   L 7590      20                                                           
  35P X L XREF=I                                                                 
  35P   L 7920      60                                                           
@@ -315,4 +309,4 @@
  35P   L 17355     15 1/2-,3/2-        32 KEV    22                             
  35P X L XREF=B                                                                 
  35P  cL J$L=1 in {+1}H({+34}Si,p).                                             
-
+                                                                                
