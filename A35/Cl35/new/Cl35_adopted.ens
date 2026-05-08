@@ -1927,10 +1927,11 @@
  35CL  G 6415.6       100    10                                                 
  35CL  G 8178.4       11.8   12                                                 
  35CL  L 8208.2    10 5/2+             0.033 KEV 10                             
- 35CLX L XREF=OPW(8210)X(8204)                                                  
+ 35CLX L XREF=OPW(8210*)X(8204*)                                                
  35CL2 L ISPIN=3/2                                                              
  35CL cL E$other: 8209 {I3} from {+34}S(p,p),(p,p'|g):resonances                
- 35CL cL J$L(pol d,{+3}He)=2 and L+1/2 from analyzing power.                    
+ 35CL cL J$other: L(pol d,{+3}He)=2 and L+1/2 from analyzing power for 8204     
+ 35CL2cL {I34} level.                                                           
  35CL  G 2553         0.9                                                       
  35CL  G 3327.1       1.0                                                       
  35CL  G 3368.9       0.51                                                      
@@ -1945,7 +1946,7 @@
  35CL  G 8207.2       100       M1+E2    -0.36   4                              
  35CLB G BM1W=2.0 +9-5 $BE2W=15 +7-4                                            
  35CL  L 8211      3  1/2+             0.094 KEV 15                             
- 35CLX L XREF=LO(8209)P                                                         
+ 35CLX L XREF=L(*)O(8209)P                                                      
  35CL cL E$from (p,p):resonances. Other: 8210.2 {I46} from (|a,p)               
  35CL  L 8216.3    10 5/2+             0.014 KEV 3                              
  35CLX L XREF=L(*)OPW(8210*)X(8204*)                                            
@@ -2025,7 +2026,7 @@
  35CL  G 6518.6       25                                                        
  35CL  G 8281.4       100                                                       
  35CL  L 8287.82   30 1/2-             0.04 KEV  1                              
- 35CLX L XREF=L(8292)OP(8290)                                                   
+ 35CLX L XREF=L(8292*)OP(8290)                                                  
  35CL cL J$from |g(|q) in (p,|g) and R-Matrix analysis in (p,p):resonances.     
  35CL  G 2633         4.6                                                       
  35CL  G 3278.6       6.8                                                       
@@ -2041,7 +2042,7 @@
  35CLB G BE1W=0.069 +24-14                                                      
  35CL  G 8286.77      30                                                        
  35CL  L 8297.2    9  3/2-             0.073 KEV 15                             
- 35CLX L XREF=OP(8300)                                                          
+ 35CLX L XREF=L(8292*)OP(8300)                                                  
  35CL  L 8298.2    5  3/2+                                                      
  35CLX L XREF=L(8292*)O                                                         
  35CL cL J$spin=3/2 from |g(|q) in (p,|g); 8297.1|g M1+E2 to 3/2+ g.s.          
@@ -2568,7 +2569,7 @@
  35CL  G 7069.2       39     22                                                 
  35CL  G 8831.9       13     7                                                  
  35CL  L 8838.1    5  5/2-,7/2-        0.001 KEV 1                              
- 35CLX L XREF=L(*)OP(8839)                                                      
+ 35CLX L XREF=LOP(8839)                                                         
  35CL  G 3674.6                                                                 
  35CL  G 3956.9                                                                 
  35CL  G 4068.0       13     7                                                  
