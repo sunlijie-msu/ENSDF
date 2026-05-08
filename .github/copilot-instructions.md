@@ -150,18 +150,18 @@ Example:
 | E     | 10–19   | Level energy.                                                     |
 | DE    | 20–21   | Energy uncertainty.                                               |
 | Space | 22      | Readability space.                                                |
-| J     | 23–39   | Spin-parity.                                                      |
+| J     | 23–39   | Spin 'J' and parity 'π'                                           |
 | T     | 40–49   | Half-life with units (e.g., MEV, FS, PS, S, H, D).                |
 | DT    | 50–55   | Half-life uncertainty.                                            |
 | L     | 56–64   | Angular momentum transfer (L-transfer).                           |
 | S     | 65–74   | Spectroscopic strength.                                           |
 | DS    | 75–76   | Uncertainty in S.                                                 |
 | C     | 77      | Comment flag.                                                     |
-| MS    | 78–79   | Metastable state (isomer), denoted by 'M '.                       |
+| MS    | 78–79   | 'M ' for isomeric metastable levels; 'R ' for resonances          |
 | Q     | 80      | '?' for uncertain/questionable; 'S' for assumed but not observed. |
 
-
-For multiple J-π values separated by commas, no spaces after commas.
+J field: For multiple J-π values separated by commas, no spaces after commas.
+Critical: Be sure to distinguish comment flags (col 77), MS labels (col 78–79), and '?' (col 80).
 
 **CRITICAL: Comment Line Association**
 - `cL` comment lines apply **only** to the immediately preceding L-record.
@@ -532,6 +532,7 @@ For intensities and other values in scientific notation:
 
 - **LT** = "Less Than" (e.g., `<1.6 ps` becomes `1.6 PS    LT` in T and DT fields).
 - **GT** = "Greater Than" (e.g., `>5.2 fs` becomes `5.2 FS   GT` in T and DT fields).
+- LE = "Less or equal to" (≤) and GE = "Greater or equal to" (≥) are also allowed.
 - **Format:** Place the value in the main field and the GT/LT marker in the uncertainty field.
 - **Examples for RI and DRI:**
     - `<1.6` → RI=`1.6    ` (cols 23–29), DRI=`LT` (cols 30–31).
