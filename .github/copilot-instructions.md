@@ -408,15 +408,15 @@ Example:
 
 ### XREF Notation Rules
 
-Only in the Adopted Datasets: XREF (cross-reference) entries immediately following an L-record indicate which datasets observe this level.
+Only in the Adopted Datasets: XREF (cross-reference) labels use capital letters immediately follow an L-record indicate which datasets observe this level. XREF labels can be followed by notations such as (energy), (*), (?), or combinations thereof.
 
-- `Plain letter`: dataset level energies match the Adopted level within uncertainties. Example: `XREF=EK` means datasets E and K report this level with energies consistent with the Adopted level.
+- `Plain capital letter` label: dataset contains a level that matches the Adopted level. Example: `XREF=EK` means datasets E and K contain a level that matches the Adopted level.
 
-- `Letter(energy)`: dataset reports an energy outside the Adopted uncertainty range but still matches the same physical level. Example: `XREF=H(4865)` means dataset H reports a level near 4865 keV that is judged to be the same level. The energy in parentheses is the dataset level energy, not the Adopted level energy. The energy value must match the dataset level energy exactly, including decimal places. Usually, the energy values in parentheses are integers.
+- `Label(energy)`: dataset reports an energy outside the Adopted uncertainty range but is still considered to match the same physical level. Example: L 4858.5 with `XREF=BEGH(4865)K`, in which `H(4865)` means dataset H contains a level at 4865 keV that is judged to be the same level as the Adopted level 4858.5. The energy in parentheses is the dataset H level energy, not the Adopted level energy. The energy value must match the dataset level energy exactly, including decimal places. Usually, the energy values in parentheses are integers.
 
-- `Letter(*)`: ambiguous matching; one dataset level may correspond to two or more Adopted levels. Example: `XREF=G(*)` means the level from dataset G has ambiguous doublet or multiplet matching. Because `(*)` denotes ambiguity among multiple Adopted levels, an XREF tag with `(*)` must appear on at least two levels in the Adopted dataset. `Letter(energy*)` is optional for denoting ambiguous matching while providing energy information.
+- `Letter(*)`: ambiguous matching; one dataset level may correspond to two or more Adopted levels. Example: `XREF=CDFG(*)LN`, in which `G(*)` means the level from dataset G has ambiguous doublet or multiplet matching. Because `(*)` denotes ambiguity among multiple Adopted levels, an XREF tag with `(*)` must appear on at least two levels in the Adopted dataset. `Letter(energy*)` denotes ambiguous matching while providing energy information.
 
-- `Letter(?)`: questionable or uncertain match. Example: `XREF=J(?)` means dataset J reports a questionable level that possibly matches the Adopted level. `Letter(energy?)` is allowed for questionable matching with energy information.
+- `Letter(?)`: questionable or uncertain match. Example: `XREF=ADIJ(?)OP` means dataset J reports a questionable level that possibly matches the Adopted level. `Letter(energy?)` is allowed for questionable matching with energy information.
 
 ---
 
