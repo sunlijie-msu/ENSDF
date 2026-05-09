@@ -232,7 +232,7 @@ After completing the required tasks, carefully reflect on how agent skills have 
 
 ## Data Extraction and Entry Quality Assurance
 
-### Numerical Exactness
+### Numerical exactness and character-for-character matching
 
 Extract and enter numbers exactly as provided in source data, without approximation, rounding, truncation, padding, omission, alteration of digits and decimal places, or inference of values, uncertainties, or signs. For example, -10.0 must be -10.0, not -10, -10.00, -10.01, 10.0, or +10.0.
 
@@ -266,7 +266,7 @@ This often catches row/column indexing errors. Apply bidirectional checking on e
 ### Random Spot Check
 
 **Data Traceability to Source:**
-- For any data entry task, after entering data into .ens dataset files, randomly select data entries (15% of total).
+- For any data entry task, after entering data into target dataset files, randomly select data entries (15% of total).
 - Trace each entered data point back to its location in the original source data file.
 - Verify value, uncertainty, row position, column position, header, and footer all match exactly.
 
@@ -275,10 +275,14 @@ This catches errors common to nondeterministic AI LLM tools, especially arithmet
 **Error Handling Procedure:**
 - If errors are found, investigate the root cause immediately.
 - Analyze the error pattern (systematic vs. isolated).
-- Correct all instances of the identified error.
+- Correct all instances of the identified root cause.
 - Revalidate the full dataset.
-- Draw a new random sample and repeat verification.
+- Draw a new random sample and repeat spot checks.
 - Do not claim task completion until all spot checks pass without error.
+
+### Workflow Integration
+Both Bidirectional Positional Check and Random Spot Check must pass with 100% accuracy before claiming "task completed successfully."
+
 
 ## Document Structure
 
