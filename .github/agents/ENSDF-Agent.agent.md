@@ -258,6 +258,7 @@ Physics publications typically report data in "uncertainty-in-last-digits" notat
 
 **Forward and Reverse Counting:**
 - For tabular data (e.g., 10×10 table), verify the same cell by counting both ways.
+- Empty cells must be counted as placeholders to maintain correct alignment.
 - **Example:** Row 2, Column 4 from top-left should match Row 9, Column 7 from bottom-right if referencing the same cell.
 - Use both header and footer labels to confirm positions.
 
