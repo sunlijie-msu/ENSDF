@@ -711,49 +711,6 @@ Validates ascending energy order for L-records and G-records:
 
 **NON-NEGOTIABLE REQUIREMENT:** After ANY large-scale data entry task, you MUST perform random spot-check validation before claiming completion. This is NOT optional.
 
-#### Execution Requirements
-
--   **Minimum sample size:** 15% of total entries (absolute minimum: 10 samples).
--   **Selection method:** Random sampling (neither sequential nor cherry-picked).
--   **Evidence required:** Generate a verification script showing:
-    -   Total entry count.
-    -   Sample size calculation (e.g., "200 entries → 15% = 30 samples").
-    -   Randomly selected entered data.
-    -   Trace back to source data for each sample.
-    -   Verification results (PASS/FAIL per sample).
-
-#### Verification Checklist (100% Pass Rate Required)
-
--    Arithmetic accuracy (no calculation errors).
--    Values match source data exactly (character-for-character).
--    Uncertainties match source data exactly.
--    Mapping accuracy (correct ENSDF fields used).
--    Positional alignment (no off-by-one errors).
-
-#### Procedures for Error Discovery
-
-If any errors are found:
-1.  **Stop immediately** and do not claim completion.
-2.  Identify the root cause (systematic vs. isolated error).
-3.  Analyze the error pattern across all entries.
-4.  Correct all instances of the identified error type.
-5.  Re-run automated validation (`column_calibrate.py` and `check_gamma_ordering.py`).
-6.  Perform a new random spot-check with different samples.
-7.  Repeat until a 100% pass rate is achieved.
-
-#### Workflow Integration
-
--   Execute after automated validation passes (`column_calibrate.py` and `check_gamma_ordering.py`).
--   Execute after the Bidirectional Positional Check and Random Spot Check pass with 100% accuracy.
--   Execute before claiming "task completed successfully."
--   Document findings in the compliance checklist for user verification.
-
-#### Zero-Tolerance Enforcement
-
--   Tasks are incomplete until the spot-check passes with zero errors.
--   No exceptions for "simple" or "small" data entry tasks.
--   Failure to execute constitutes failure to complete the assigned task.
-
 ---
 
 ## 6. Academic Standards

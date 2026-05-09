@@ -79,7 +79,7 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 ### C. Ambiguities
 
 *   **Overlap:** An unstretched dipole transition ($\Delta J = 0$) exhibits similar $R_{DCO}$ values to a stretched quadrupole transition ($\Delta J = 2$) in both gating configurations ($1.0$ in Quad gate; $1.8$ in Dipole gate).
-*   **Resolution:** Linear polarization measurements are required to assign the electromagnetic character (Electric vs. Magnetic).
+*   **Character:** DCO alone cannot distinguish between electric and magnetic transitions. Linear polarization measurements are required to assign the electromagnetic character.
 
 ## 6. Practical Workflow: Multipolarity Assignment Reasoning Logic
 
