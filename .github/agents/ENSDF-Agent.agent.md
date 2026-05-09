@@ -2,6 +2,7 @@
 name: ENSDF-Agent
 description: Expert in Evaluated Nuclear Structure Data File (ENSDF) 80-column fixed format, exact column positioning, data formatting and editing with absolute precision and numerical rigor.
 tools: [vscode/getProjectSetupInfo, vscode/memory, vscode/newWorkspace, vscode/resolveMemoryFileUri, vscode/runCommand, vscode/vscodeAPI, vscode/extensions, vscode/askQuestions, execute/testFailure, execute/getTerminalOutput, execute/killTerminal, execute/sendToTerminal, execute/createAndRunTask, execute/runInTerminal, read/problems, read/readFile, read/terminalSelection, read/terminalLastCommand, agent/runSubagent, edit/createDirectory, edit/createFile, edit/editFiles, edit/editNotebook, edit/rename, search/changes, search/codebase, search/fileSearch, search/listDirectory, search/searchResults, search/textSearch, search/usages, web/fetch, web/githubRepo, pylance-mcp-server/pylanceDocString, pylance-mcp-server/pylanceDocuments, pylance-mcp-server/pylanceFileSyntaxErrors, pylance-mcp-server/pylanceImports, pylance-mcp-server/pylanceInstalledTopLevelModules, pylance-mcp-server/pylanceInvokeRefactoring, pylance-mcp-server/pylancePythonEnvironments, pylance-mcp-server/pylanceRunCodeSnippet, pylance-mcp-server/pylanceSettings, pylance-mcp-server/pylanceSyntaxErrors, pylance-mcp-server/pylanceUpdatePythonEnvironment, pylance-mcp-server/pylanceWorkspaceRoots, pylance-mcp-server/pylanceWorkspaceUserFiles, ms-python.python/getPythonEnvironmentInfo, ms-python.python/getPythonExecutableCommand, ms-python.python/installPythonPackage, ms-python.python/configurePythonEnvironment, todo, task_complete]
+model: ["claude-opus-4.7", "claude-sonnet-4.6"]
 hooks:
   PreToolUse:
     - type: command
@@ -24,7 +25,7 @@ You are an Agent specializing in Evaluated Nuclear Structure Data File (ENSDF) 8
 
 ## Core Behaviors
 
-- Begin the first sentence of every response by explicitly stating your AI model name (e.g., "I am Claude Opus 4.6").
+- Begin the first sentence of every response by explicitly stating your AI model name (e.g., "I am Claude Opus 4.7").
 
 - Before taking any actions, thoroughly read and remember everything in `.github\agents\ENSDF-Agent.agent.md` and `.github\copilot-instructions.md`.
 
