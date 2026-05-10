@@ -108,12 +108,8 @@ Before creating any new file, script, or performing major operations:
 **Forbidden file suffixes:**
 - `_updated.ens`, `_backup.ens`, `_corrected.ens`, `_fixed.ens`, `_v2.ens`, `_final.ens`, `_backup_20251013.ens`, etc.
 
-**Correct workflow:**
-1. Read original file.
-2. Edit the same file.
-3. Validate the same file.
-
 **Rationale:** Prevents confusion about authoritative files and maintains git history integrity.
+
 
 ## 80-Column Format and Validation
 
@@ -123,7 +119,7 @@ ENSDF uses a fixed-width record model of exactly 80 columns, analogous to Fortra
 
 In ENSDF files, columns use 1-based indexing: the first character of a line (letter, number, or space) occupies column 1.
 
-See `.github\copilot-instructions.md` for complete field definitions, exact column positions, and validation requirements.
+See `.github\ENSDF-Agent.agent.md` for complete data record and field column definitions.
 
 Each field begins at prescribed columns with fixed widths. Content must be left-justified within fields. Do not allow field truncation, overflow, or misalignment.
 
@@ -134,9 +130,9 @@ Each field begins at prescribed columns with fixed widths. Content must be left-
 - Left-justify all ENSDF values and uncertainties within their fields
 - Maintain ascending energy order: L-records and G-records (following a given L-record) must be in ascending energy order
 
-### Edit-Validate-Repeat Workflow
+### Sacred Edit-Validate-Confirm-Repeat Workflow
 
-**CRITICAL:** Execute ENSDF 1-line ruler for immediate 80-column validation:
+**CRITICAL:** ENSDF 1-line ruler for immediate 80-column validation:
 
 - Single line: `python .github\scripts\ensdf_1line_ruler.py --line "your 80-char line"`
 - File scan: `python .github\scripts\ensdf_1line_ruler.py --file "filename.ens" --show-only-wrong`
@@ -146,19 +142,6 @@ Each field begins at prescribed columns with fixed widths. Content must be left-
 **Note:** Skip ruler, column validation, and gamma ordering checks only if task is purely editing comments. Comment editing tasks should prioritize content accuracy and completeness, and wrapping to 80 characters is not required for comments.
 
 **AI Behavior Rule:** Never claim edit completion without ruler and column validation.
-
-#### The Sacred Workflow
-Follow for every single edit:
-1. **EDIT:** Make one precise change to one field.
-2. **VALIDATE:** Run ruler: `python .github\scripts\ensdf_1line_ruler.py --line "your 80-char line"`
-3. **CONFIRM:** Verify exit code 0 and check ruler output.
-4. **REPEAT:** Move to the next edit only after confirmation.
-
-#### Forbidden Behaviors
-- Never blindly edit multiple times without validating each one.
-- Never make multiple edits and then validate only at the end.
-- Never assume an edit is correct without checking.
-- Never skip validation "just this once."
 
 
 ### ENSDF Editing Safeguards
@@ -182,7 +165,7 @@ ENSDF file modifications require human expert review. VS Code's inline diff view
 - `git restore` or `git checkout` for `.ens` file error recovery.
 - Any tooling or action on .ens files that circumvents the VS Code diff interface or prevents human review before commit.
 
-Temp scripts or code in temp folders are not part of this restriction. Those may be restored or checked out only when the command explicitly targets temp paths and does not touch any `.ens` file.
+Temp scripts or codes in temp folders are not part of this restriction, and they may be restored or checked out when the command explicitly refers to temp paths and does not touch any `.ens` file.
 
 If a hook denies `git restore` or `git checkout`, treat that as expected policy enforcement.
 Read the denial reason, do not retry with alternate Git syntax, and continue with
@@ -267,13 +250,17 @@ Both Bidirectional Positional Check and Random Spot Check must pass with 100% ac
 
 ## Document Structure
 
-1. **Primary Role** – Specialized ENSDF expertise.
-2. **Core Behaviors** – Operational guidelines.
-3. **Instruction Compliance** – Reading and compliance protocols.
-4. **Structured Agentic Workflow** – 8-step process.
-5. **Task Completion Integrity** – Resolution and autonomy.
-6. **File and Script Management** – Tools and organization.
-7. **80-Column Format and Validation** – Formatting and Sacred Workflow.
-8. **Agentic Learning Loop** – Standard operating procedure updates.
-9. **Data Extraction and Quality Assurance** – Exactness, notation, and spot checks.
+### Foundation & Principles
+- **Primary Role** – ENSDF expertise and scope
+- **Core Behaviors** – Communication, execution, quality standards
+### Execution & Workflow
+- **Instruction Compliance** – Zero-tolerance protocols
+- **Structured Agentic Workflow** – Critical 8-step process
+- **Task Completion Integrity** – Autonomy and resolution
+### Technical Operations
+- **File and Script Management** – Tools, pre-action checklist, ENSDF file handling
+- **80-Column Format and Validation** – Formatting rules, edit-validate cycle, diff view requirement
+### Quality & Learning
+- **Agentic Learning Loop** – Skills refinement and procedure updates
+- **Data Extraction and Entry Quality Assurance** – Numerical exactness, spot checks, bidirectional verification
 
