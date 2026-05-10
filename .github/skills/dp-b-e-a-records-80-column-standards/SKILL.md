@@ -1,5 +1,15 @@
+---
+name: dp-b-e-a-records-80-column-standards
+description: "ENSDF DP (Delayed Proton), B (Beta Minus), E (Electron Capture/Beta Plus), and A (Alpha) record 80-column format specifications and field definitions."
+---
 
-#### Delayed Proton Emission Record (DP-Record)
+# DP, B, E, and A Record 80-Column Standards
+
+Use this skill when checking or writing delayed proton, beta minus, electron capture/beta plus, or alpha decay records in ENSDF files.
+
+## Record Standards
+
+### Delayed Proton Emission Record (DP-Record)
 
 ```text
 Example:
@@ -25,10 +35,10 @@ Example:
 | EI    | 33–39   | Energy of emitting level in keV    |
 
 **Critical DP Format Rules:**
--   Readable spaces at columns 10, 22, and 32 for human readability.
--   All field positioning follows standard ENSDF left-justification rules.
+- Readable spaces at columns 10, 22, and 32 for human readability.
+- All field positioning follows standard ENSDF left-justification rules.
 
-#### Beta Minus Decay Record (B-Record)
+### Beta Minus Decay Record (B-Record)
 
 ```text
 Example:
@@ -59,12 +69,12 @@ Example:
 | Q     | 80      | '?' denotes uncertain or questionable beta minus decay                          |
 
 **Critical B-Record Rules:**
--   Must follow LEVEL record for the level which is fed by the beta minus decay.
--   IB intensity in same units as other intensity fields in file.
--   LOGFT for uniqueness classification (col 78-79).
--   Blank signifies allowed transition for forbiddenness field.
+- Must follow LEVEL record for the level which is fed by the beta minus decay.
+- IB intensity in same units as other intensity fields in file.
+- LOGFT for uniqueness classification (col 78-79).
+- Blank signifies allowed transition for forbiddenness field.
 
-#### Electron Capture and Beta Plus Decay Record (E-Record)
+### Electron Capture and Beta Plus Decay Record (E-Record)
 
 ```text
 Example:
@@ -98,12 +108,12 @@ Example:
 | Q     | 80      | '?' = uncertain branch, 'S' = expected or assumed transition                    |
 
 **Critical E-Record Rules:**
--   Must follow LEVEL record for the level being populated in the decay.
--   IE, IB and TI must be in same units.
--   TI = IE + IB for total decay intensity to the level.
--   Forbiddenness classification in columns 78-79 ('1U', '2U' for first-, second-unique forbidden).
+- Must follow LEVEL record for the level being populated in the decay.
+- IE, IB and TI must be in same units.
+- TI = IE + IB for total decay intensity to the level.
+- Forbiddenness classification in columns 78-79 ('1U', '2U' for first-, second-unique forbidden).
 
-#### Alpha Decay Record (A-Record)
+### Alpha Decay Record (A-Record)
 
 ```text
 Example:
@@ -133,4 +143,4 @@ Example:
 | Q     | 80      | '?' = uncertain or questionable α branch, 'S' = expected or predicted α branch |
 
 **Critical A-Record Rules:**
--   Must follow the daughter LEVEL record for the level being populated in the α decay.
+- Must follow the daughter LEVEL record for the level being populated in the α decay.
