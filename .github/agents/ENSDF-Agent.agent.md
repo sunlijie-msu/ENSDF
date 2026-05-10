@@ -158,25 +158,25 @@ Example:
  35CL  L 1219      5  3/2+             0.39 PS   8     2        0.43      15A  S
 ```
 
-| Field | Columns | Description                                                       |
-| :---- | :------ | :---------------------------------------------------------------- |
-| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 35Cl").                               |
-| CONT  | 6       | Continuation label.                                               |
-| Space | 7       | Must be blank.                                                    |
-| TYPE  | 8       | "L" (Level).                                                      |
-| Space | 9       | Must be blank.                                                    |
-| E     | 10–19   | Level energy.                                                     |
-| DE    | 20–21   | Energy uncertainty.                                               |
-| Space | 22      | Readability space.                                                |
-| J     | 23–39   | Spin 'J' and parity 'π'                                           |
-| T     | 40–49   | Half-life with units (e.g., MEV, FS, PS, S, H, D).                |
-| DT    | 50–55   | Half-life uncertainty.                                            |
-| L     | 56–64   | Angular momentum transfer (L-transfer).                           |
-| S     | 65–74   | Spectroscopic strength.                                           |
-| DS    | 75–76   | Uncertainty in S.                                                 |
-| C     | 77      | Comment flag.                                                     |
-| MS    | 78–79   | 'M ' isomer; 'R ' resonance; 'C ' PN comments (uncommon)          |
-| Q     | 80      | '?' questionable/uncertain; 'S' assumed or at separation energy.  |
+| Field | Columns | Description                                                   |
+| :---- | :------ | :------------------------------------------------------------ |
+| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 35Cl").                           |
+| CONT  | 6       | Continuation label.                                           |
+| Space | 7       | Must be blank.                                                |
+| TYPE  | 8       | "L" (Level).                                                  |
+| Space | 9       | Must be blank.                                                |
+| E     | 10–19   | Level energy.                                                 |
+| DE    | 20–21   | Energy uncertainty.                                           |
+| Space | 22      | Readability space.                                            |
+| J     | 23–39   | Spin 'J' and parity 'π'                                       |
+| T     | 40–49   | Half-life with units (e.g., MEV, FS, PS, S, H, D).            |
+| DT    | 50–55   | Half-life uncertainty.                                        |
+| L     | 56–64   | Angular momentum transfer (L-transfer).                       |
+| S     | 65–74   | Spectroscopic strength.                                       |
+| DS    | 75–76   | Uncertainty in S.                                             |
+| C     | 77      | Comment flag.                                                 |
+| MS    | 78–79   | 'M ' isomer; 'R ' resonance; 'C ' PN comments (uncommon)      |
+| Q     | 80      | '?' questionable/uncertain; 'S' assumed/at separation energy. |
 
 J field: For multiple J-π values separated by commas, no spaces after commas.
 Critical: Be sure to distinguish comment flags (col 77), MS labels (col 78–79), and '?' (col 80).
@@ -196,33 +196,32 @@ Example:
  35Si  G 2572.0    5  5.0    2  E2       +2.1          0.05   5  5.1      6 B  ?
 ```
 
-| Field | Columns | Description                                                                 |
-| :---- | :------ | :-------------------------------------------------------------------------- |
-| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 35Cl")                                          |
-| CONT  | 6       | Continuation label                                                          |
-| SPACE | 7       | Must be blank                                                               |
-| TYPE  | 8       | "G"                                                                         |
-| SPACE | 9       | Must be blank                                                               |
-| E     | 10–19   | Gamma energy                                                                |
-| DE    | 20–21   | Energy uncertainty                                                          |
-| SPACE | 22      | Readability space                                                           |
-| RI    | 23–29   | Relative photon intensity (starts at col 23)                                |
-| DRI   | 30–31   | Uncertainty in RI (including GT, LT markers)                                |
-| SPACE | 32      | Readability space                                                           |
-| M     | 33–41   | Multipolarity                                                               |
-| MR    | 42–49   | Mixing ratio                                                                |
-| DMR   | 50–55   | Uncertainty in MR                                                           |
-| CC    | 56–62   | Conversion coefficient                                                      |
-| DCC   | 63–64   | Uncertainty in CC                                                           |
-| TI    | 65–74   | Total transition intensity                                                  |
-| DTI   | 75–76   | Uncertainty in TI                                                           |
-| C     | 77      | **Comment flag** (A-Z, a-z, *, &, @) - See G-Record Flag Rules below        |
-| SPACE | 78–79   | Must be blank                                                               |
-| Q     | 80      | **Additional indicator** (space, ?, S) - See G-Record Indicator Rules below |
+| Field | Columns | Description                                                           |
+| :---- | :------ | :-------------------------------------------------------------------- |
+| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 35Cl")                                    |
+| CONT  | 6       | Continuation label                                                    |
+| SPACE | 7       | Must be blank                                                         |
+| TYPE  | 8       | "G"                                                                   |
+| SPACE | 9       | Must be blank                                                         |
+| E     | 10–19   | Gamma energy                                                          |
+| DE    | 20–21   | Energy uncertainty                                                    |
+| SPACE | 22      | Readability space                                                     |
+| RI    | 23–29   | Relative photon intensity (starts at col 23)                          |
+| DRI   | 30–31   | Uncertainty in RI (including GT, LT markers)                          |
+| SPACE | 32      | Readability space                                                     |
+| M     | 33–41   | Multipolarity                                                         |
+| MR    | 42–49   | Mixing ratio                                                          |
+| DMR   | 50–55   | Uncertainty in MR                                                     |
+| CC    | 56–62   | Conversion coefficient                                                |
+| DCC   | 63–64   | Uncertainty in CC                                                     |
+| TI    | 65–74   | Total transition intensity                                            |
+| DTI   | 75–76   | Uncertainty in TI                                                     |
+| C     | 77      | **Comment flag** (A-Z, a-z, *, &, @) - See G-Record Flag Rules        |
+| SPACE | 78–79   | Must be blank                                                         |
+| Q     | 80      | **Additional indicator** (space, ?, S) - See G-Record Indicator Rules |
 
 
 #### G-Record Flag Rules
-
 **Column 77 (C Field, Comment Flag):**
 -   `A-Z`, `a-z`: Any single letter used to refer to a specific comment record (cannot be a number).
 -   `*` (asterisk): Denotes a multiply-placed gamma ray.
@@ -232,6 +231,7 @@ Note: Multiple identical gamma energies appearing in multiple level blocks shoul
 -   `Space`: No comment flag.
 -   **FORBIDDEN:** Question mark (`?`) is NOT allowed in column 77.
 
+#### G-Record Indicator Rules
 **Column 80 (Q Field, Additional Indicator):**
 -   `Space`: Normal, well-established gamma transition.
 -   `?`: Denotes uncertain placement of the transition in the level scheme.
