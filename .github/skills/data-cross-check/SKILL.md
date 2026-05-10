@@ -9,6 +9,8 @@ Verify 100% consistency between source data and target `.ens` data. Report every
 
 ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
 
+Actively leverage coding, scripts, and programming tools when necessary to effectively deliver your data tasks.
+
 ## Task Customization & Configuration
 
 > Fill in before starting task. Update as needed.
@@ -42,12 +44,13 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 
 ```
 - [ ] 1. Confirm Task Configuration
-- [ ] 2. Carefully parse and extract data needed from source and/or target within scope
-- [ ] 3. Leverage coding, scripts, and programming tools when necessary to effectively deliver your data tasks.
-- [ ] 4. Compare item-by-item source against target, debug codes as needed
-- [ ] 5. Identify mismatches.
-- [ ] 6. Run reproducible 15% random spot-check (copilot-instructions.md § 5)
-- [ ] 7. Report all mismatches with locations
+- [ ] 2. Carefully parse and extract data needed from source
+- [ ] 3. Carefully parse and extract data needed from target
+- [ ] 4. Carefully match data items between source and target
+- [ ] 5. Compare item-by-item source against target
+- [ ] 6. Identify mismatches.
+- [ ] 7. Run reproducible 15% random spot-check (ENSDF-Agent.agent.md § 9)
+- [ ] 8. Report all mismatches with locations
 ```
 
 ## Required Matching Rules
