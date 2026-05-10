@@ -110,7 +110,6 @@ Before creating any new file, script, or performing major operations:
 
 **Rationale:** Prevents confusion about authoritative files and maintains git history integrity.
 
-
 ## 80-Column Format and Validation
 
 ### Essential Formatting Rules
