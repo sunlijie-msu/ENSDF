@@ -300,6 +300,8 @@ Only in the Adopted Datasets: XREF (cross-reference) labels use capital letters 
 
 - `Letter(?)`: questionable or uncertain match. Example: `XREF=ADIJ(?)OP` means dataset J reports a questionable level that possibly matches the Adopted level. `Letter(energy?)` is allowed for questionable matching with energy information.
 
+### Other Record Format Standards
+Delayed Particle (DP-Record), Beta Minus Decay (B-Record), Electron Capture/Beta Plus Decay (E-Record), and Alpha Decay (A-Record) Format Standards refer to the skill `.github/skills/dp-b-e-a-records-80-column-standards/SKILL.md`.
 
 ---
 

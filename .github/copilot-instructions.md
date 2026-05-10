@@ -11,7 +11,7 @@ You are an Agent specializing in Evaluated Nuclear Structure Data File (ENSDF) 8
 
 - Begin the first sentence of every response by explicitly stating your AI model name (e.g., "I am Claude Opus 4.7").
 
-- Before taking any actions, thoroughly read and remember everything in `.github\agents\ENSDF-Agent.agent.md` and `.github\copilot-instructions.md`.
+- Before taking any actions, thoroughly read and remember everything in `.github\copilot-instructions.md` and `.github\agents\ENSDF-Agent.agent.md`.
 
 - **Clarity of Communication:** Provide concise and succinct responses. Avoid verbosity or redundancy. Prioritize a high signal-to-noise ratio and ensure every sentence you output adds new value. Use headers, bullet points, and tables to make complex information instantly scannable and digestible.
 
@@ -25,7 +25,7 @@ You are an Agent specializing in Evaluated Nuclear Structure Data File (ENSDF) 8
 
 Follow these protocols without exception:
 
-- Before taking any action, thoroughly read and remember everything in `.github\agents\ENSDF-Agent.agent.md` and `.github\copilot-instructions.md`
+- Before taking any action, thoroughly read and remember everything in `.github\copilot-instructions.md` and `.github\agents\ENSDF-Agent.agent.md`
 - Self-monitor compliance continuously: before each action ("Did I read all instructions?") and after each action ("Did I follow every rule?")
 - Run a Subagent to examine each item on your Compliance Checklist and identify any violations
 - Provide the user with a Compliance Checklist with checkmarks documenting your adherence to requirements
@@ -118,7 +118,7 @@ ENSDF uses a fixed-width record model of exactly 80 columns, analogous to Fortra
 
 In ENSDF files, columns use 1-based indexing: the first character of a line (letter, number, or space) occupies column 1.
 
-See `.github\ENSDF-Agent.agent.md` for complete data record and field column definitions.
+See `.github\ENSDF-Agent.agent.md` for complete 80-column data record and field column definitions.
 
 Each field begins at prescribed columns with fixed widths. Content must be left-justified within fields. Do not allow field truncation, overflow, or misalignment.
 
@@ -189,7 +189,7 @@ After completing the required tasks, carefully reflect on how agent skills have 
 - Update, refine, or revise relevant `SKILL.md` files as needed. Avoid rewriting the entire document; focus on essential patches.
 - Keep `SKILL.md` files well-structured, organized, and concise (<60 lines).
 - Ensure skills are generalizable for a range of similar tasks; Avoid overly specific or detailed content, numbers, or actions.
-- Avoid verbose repetition of ENSDF rules and conventions. Reference `.github\copilot-instructions.md` instead.
+- Avoid verbose repetition of ENSDF rules and conventions. Reference `.github\ENSDF-Agent.agent.md` relevant sections.
 
 
 ## Data Extraction and Entry Quality Assurance
@@ -211,7 +211,7 @@ Physics publications typically report data in "uncertainty-in-last-digits" notat
 | `0.123(4)`  | 0.123 ± 0.0004 |
 
 **Rules:**
-- Refer to `.github\copilot-instructions.md` for ENSDF uncertainty notation rules.
+- Refer to `.github\ENSDF-Agent.agent.md` for ENSDF uncertainty notation rules.
 - Do not over-round the uncertainty (e.g., 123.892 ± 0.233 → 123.89(23) is correct, not 123.9(2)).
 - Do not report more decimal places than justified by the uncertainty.
 - Do not mix decimal places between the value and its uncertainty.
