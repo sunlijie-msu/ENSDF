@@ -11,7 +11,7 @@ argument-hint: [ENSDF file or dataset name]
 
 # ENSDF Comment Cleanup Instructions
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 ## General cG E,RI Comment Strategy
 
@@ -81,5 +81,5 @@ cG E$ → cG RI$ → cG M$ → cG MR$ → other identifiers
 - No redundant per-gamma default-source comments remain.
 - Comment ordering follows ENSDF sequence rules.
 
-For general comment ordering at the beginning of Adopted files, see `copilot-instructions.md` Section 6.
+For general comment ordering at the beginning of Adopted files, see `.github/agents/ENSDF-Agent.agent.md`.
 

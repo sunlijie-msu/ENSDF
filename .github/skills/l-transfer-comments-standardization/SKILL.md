@@ -7,7 +7,7 @@ argument-hint: [ENSDF file or level energy]
 
 # ENSDF L-Transfer Comments Standardization
 
-ENSDF rules and column positions: `.github/copilot-instructions.md`.
+ENSDF rules and column positions: `.github/agents/ENSDF-Agent.agent.md`.
 ## Task Customization & Configuration
 
 > Fill in before starting task. Update as needed.

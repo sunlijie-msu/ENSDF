@@ -5,7 +5,7 @@ description: "Performs bulk data entry from CSV or Markdown tables into ENSDF da
 
 # Tabular Data Entry for ENSDF
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 ## Task Customization & Configuration
 
@@ -63,6 +63,6 @@ Before entering any data, verify the column map in both directions:
 
 
 ### Random Spot Check
-Trace entries to source: verify value, uncertainty, row, column, header, and units. (Protocol: `copilot-instructions.md` § 5)
+Trace entries to source: verify value, uncertainty, row, column, header, and units. (Protocol: `.github/copilot-instructions.md` § Random Spot Check)
 
 ---

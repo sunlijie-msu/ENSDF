@@ -7,7 +7,7 @@ argument-hint: "[ENSDF file path]"
 
 # Sync cL T$ Lifetime to L-Record T/DT Fields
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 ## Recommended Operating Procedure
 
@@ -26,7 +26,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 - Symmetric uncertainty: `DT{-1/2}=D|t|*ln(2)`.
 - Asymmetric uncertainty: Min and max are converted separately and then combined.
 - Limits preserve direction: `|t>...` -> `T>...`, `|t<...` -> `T<...`.
-- Follow uncertainty-in-last-digits notation. See `.github/copilot-instructions.md` § ENSDF Uncertainty Notation Rules.
+- Follow uncertainty-in-last-digits notation. See `.github/agents/ENSDF-Agent.agent.md` § ENSDF Uncertainty Notation Rules.
 - Round the T value and DT uncertainty together so DT is a valid 1- or 2-digit.
 - Example: `|t=649 fs {I190}` → `T{-1/2}=0.45 PS`, `DT=13`.
 - Choose a natural T-field unit by scaling between `FS`, `PS`, `NS`, `US`, etc. so the stored final value is not `>100` or `<0.1`; if the converted value is `>100` or `<0.1`, scale up or down to the nearest appropriate unit.

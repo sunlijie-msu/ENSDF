@@ -11,7 +11,7 @@ argument-hint: [VALUE1 UNC1 VALUE2 UNC2 ...]
 
 # ENSDF Averaging
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 ## When
 Run `Java_Average.py` any time you need to adopt a value from 2+ measurements across different papers.

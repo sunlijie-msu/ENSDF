@@ -12,7 +12,7 @@ argument-hint: [adopted.ens] [individual.ens] [xref-identifier]
 
 # Adopted vs Individual Dataset Comparison
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 ## Purpose
 

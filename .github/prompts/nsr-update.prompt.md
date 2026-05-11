@@ -9,7 +9,7 @@ Scope: XUNDL folder and files within.
 
 Inputs: oldUpper, newUpper, oldMixed, newMixed, citation.
 Use oldUpper->newUpper and oldMixed->newMixed only; never cross-replace.
-Reference .github/copilot-instructions.md for NSR definition and conventions.
+Reference .github/agents/ENSDF-Agent.agent.md for NSR definition and conventions.
 
 Update all relevant occurrences in:
 1) target ENS file content,

@@ -11,7 +11,7 @@ argument-hint: [REFERENCE FACTOR UNCERTAINTY_PERCENT THRESHOLD_EV UNCERTAINTY_BE
 
 # Resonance Strength Scaling in ENSDF Comment Lines
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 ## Purpose
 
@@ -81,7 +81,7 @@ unc = scaled * rel_unc
 
 ### Step 4: Apply PDG Significant Figure Convention
 
-Per copilot-instructions.md Section 3:
+Per `.github/agents/ENSDF-Agent.agent.md` § ENSDF Uncertainty Notation Rules:
 - Leading digit of uncertainty 1, 2, or <35 → **2 significant figures**
 - Leading digit ≥35, or 4-9 → **1 significant figure**
 

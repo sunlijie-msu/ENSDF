@@ -7,7 +7,7 @@ description: "Checks target data in ENS files against source data for exact cons
 
 Verify 100% consistency between source data and target `.ens` data. Report every mismatch.
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 Actively leverage coding, scripts, and programming tools when necessary to effectively deliver your data tasks.
 
@@ -49,14 +49,14 @@ Actively leverage coding, scripts, and programming tools when necessary to effec
 - [ ] 4. Carefully match data items between source and target
 - [ ] 5. Compare item-by-item source against target
 - [ ] 6. Identify mismatches.
-- [ ] 7. Run reproducible 15% random spot-check (ENSDF-Agent.agent.md § 9)
+- [ ] 7. Run reproducible 15% random spot-check (`.github/copilot-instructions.md` § Random Spot Check)
 - [ ] 8. Report all mismatches with locations
 ```
 
 ## Required Matching Rules
 
 - Never match a gamma by Eγ alone; match parent L-record first. For near-equal energies, use both level energy and transition energy for accurate matching.
-- Numerical Exactness: see `.github/ENSDF-Agent.agent.md` § Numerical Exactness.
+- Numerical Exactness: see `.github/agents/ENSDF-Agent.agent.md` § Numerical Exactness.
 
 
 ## Report Output

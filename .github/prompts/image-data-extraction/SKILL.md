@@ -64,15 +64,15 @@ When level energies are not explicitly provided:
 
 ### Spin-Parity Notation
 
-For full spin-parity rules, see `copilot-instructions.md` and the `spin-parity` skill.
+For full spin-parity rules, see `.github/agents/ENSDF-Agent.agent.md` and the `spin-parity` skill.
 
 ## Energy Ordering
 
-All level energies and gamma energies within each level must be in ascending order. See `copilot-instructions.md` Section 2 for the energy ordering requirement.
+All level energies and gamma energies within each level must be in ascending order. See `.github/agents/ENSDF-Agent.agent.md` § Energy Ordering Requirement.
 
 ## Uncertainty Notation
 
-For ENSDF uncertainty field rules (2-column maximum, GT/LT markers, scientific notation), see `copilot-instructions.md` Section 3.
+For ENSDF uncertainty field rules (2-column maximum, GT/LT markers, scientific notation), see `.github/agents/ENSDF-Agent.agent.md` § ENSDF Uncertainty Notation Rules.
 
 ## Validation Checklist
 

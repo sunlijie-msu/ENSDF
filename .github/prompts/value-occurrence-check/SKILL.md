@@ -12,7 +12,7 @@ argument-hint: [CSV, Markdown, or pipe table file]
 
 # Value Occurrence Check
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 ## Purpose
 
@@ -29,7 +29,7 @@ Verify that every nuclear level energy appearing multiple times in a gamma-ray t
 
 ### Step 1: Column Mapping
 
-Follow the bidirectional column mapping protocol from `copilot-instructions.md` Section 5:
+Follow the bidirectional column mapping protocol from `.github/agents/ENSDF-Agent.agent.md` § Bidirectional Positional Check:
 
 1. List all header columns explicitly, including blank positions
 2. Count blank cells as positional placeholders

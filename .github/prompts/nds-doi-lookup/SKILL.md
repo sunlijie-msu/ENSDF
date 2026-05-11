@@ -11,7 +11,7 @@ argument-hint: [space-separated list of mass numbers, e.g. 204 207 208 211 212]
 
 # NDS DOI Lookup Skill
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 ## Critical Rule: NNDC EvaluationIndexServlet Is the ONLY Ground Truth
 

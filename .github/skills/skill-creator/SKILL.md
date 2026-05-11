@@ -19,7 +19,7 @@ For other customization file types (.instructions.md, .prompt.md, .agent.md, hoo
 
 **Every ENSDF skill body must begin with this reference line (right after the `#` heading):**
 
-> ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+> ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 This avoids stale duplicates and preserves the single source of truth in the instruction files.
 

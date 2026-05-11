@@ -12,7 +12,7 @@ argument-hint: [ENSDF file path]
 
 # ENSDF Gamma Properties Standardization
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 ## Purpose
 
@@ -131,7 +131,7 @@ All must return exit code 0.
 - Mixing `(unc)` with `{Iunc}`: publications use parentheses, ENSDF comments use `{I}` — always convert
 - Wrong subscript notation: `A2` vs `A{-2}` — ENSDF requires the subscript markup
 - Forgetting to create a G-record when only comment data exists — the M/MR fields need a G-record to live in
-- Rose-Brink sign convention reversal: if source uses Rose-Brink (1967), reverse the MR sign and swap asymmetric uncertainty bounds (see `copilot-instructions.md` Section 2, DMR field)
+- Rose-Brink sign convention reversal: if source uses Rose-Brink (1967), reverse the MR sign and swap asymmetric uncertainty bounds (see `.github/agents/ENSDF-Agent.agent.md` § ENSDF 80-Column Format Standards, DMR field)
 
 ## Validation Checklist
 

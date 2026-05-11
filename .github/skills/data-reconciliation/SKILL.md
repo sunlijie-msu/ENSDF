@@ -5,7 +5,7 @@ description: "Reconciles source data into a target ENS file by replacing, keepin
 
 # Reconciling ENSDF Data
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 ## Task Customization & Configuration
 
@@ -56,7 +56,7 @@ Resolve any ambiguity in one focused question. Do not proceed with an incomplete
 
 ### Step 2 — Parse Source Data
 
-Read source file and extract the fields specified in Task Configuration. For tabular sources, build an explicit column map (all columns including blanks) and verify bidirectionally. See `copilot-instructions.md` § 5 for blank-cell counting rules.
+Read source file and extract the fields specified in Task Configuration. For tabular sources, build an explicit column map (all columns including blanks) and verify bidirectionally. See `.github/agents/ENSDF-Agent.agent.md` § Bidirectional Positional Check for blank-cell counting rules.
 
 ### Step 3 — Capture Target Fields to Keep
 

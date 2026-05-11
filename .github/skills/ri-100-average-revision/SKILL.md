@@ -9,7 +9,7 @@ argument-hint: [adopted.ens]
 ---
 
 # RI=100 Average Revision in Adopted ENSDF Files
-ENSDF 80-column data record and field definitions, structural rules, column positions, uncertainty notation, and spot-check policy: `.github/copilot-instructions.md`.
+ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 ## Use When
 - A `cG RI$` comment averages multiple RI=100 values
