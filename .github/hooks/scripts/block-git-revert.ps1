@@ -46,7 +46,7 @@ if ([string]::IsNullOrEmpty($command)) { exit 0 }
 # still be analyzed segment-by-segment.
 $cmd = (($command -replace "[`r`n]+", ' ') -replace '\s+', ' ').Trim()
 
-function Unquote-Token {
+function Get-UnquotedToken {
     param([string]$Token)
 
     if ([string]::IsNullOrEmpty($Token)) { return $Token }
@@ -63,14 +63,14 @@ function Unquote-Token {
 function Get-CommandTokens {
     param([string]$Text)
 
-    $matches = [regex]::Matches($Text, '"[^"]*"|''[^'']*''|&&|\|\||[;|&]|[^\s;|&]+')
-    return $matches | ForEach-Object { $_.Value }
+    $regexMatches = [regex]::Matches($Text, '"[^"]*"|''[^'']*''|&&|\|\||[;|&]|[^\s;|&]+')
+    return $regexMatches | ForEach-Object { $_.Value }
 }
 
-function Normalize-PathToken {
+function Get-NormalizedPath {
     param([string]$Token)
 
-    $normalized = Unquote-Token $Token
+    $normalized = Get-UnquotedToken $Token
     if ([string]::IsNullOrWhiteSpace($normalized)) { return '' }
 
     $normalized = $normalized.Trim()
@@ -81,30 +81,30 @@ function Normalize-PathToken {
     return ($normalized -replace '\\', '/').Trim()
 }
 
-function Is-EnsPathSpec {
+function Test-EnsPathSpec {
     param([string]$Token)
 
-    $normalized = Normalize-PathToken $Token
+    $normalized = Get-NormalizedPath $Token
     if ([string]::IsNullOrWhiteSpace($normalized)) { return $false }
 
     return $normalized -match '(?i)(^|/)[^/]*\.ens$'
 }
 
-function Is-TempPathSpec {
+function Test-TempPathSpec {
     param([string]$Token)
 
-    $normalized = Normalize-PathToken $Token
+    $normalized = Get-NormalizedPath $Token
     if ([string]::IsNullOrWhiteSpace($normalized)) { return $false }
     if ($normalized -in @('.', '*')) { return $false }
 
     return $normalized -match '(?i)(^|/)(temp|tmp)(/|$)'
 }
 
-function Is-StrongTempFilePath {
+function Test-StrongTempFilePath {
     param([string]$Token)
 
-    $normalized = Normalize-PathToken $Token
-    if (-not (Is-TempPathSpec $normalized)) { return $false }
+    $normalized = Get-NormalizedPath $Token
+    if (-not (Test-TempPathSpec $normalized)) { return $false }
 
     return $normalized -match '(?i)(^|/)[^/]+\.[A-Za-z0-9_*?-]+$'
 }
@@ -144,7 +144,7 @@ function Get-GitPathSpecs {
     $sawDoubleDash = $false
 
     for ($i = $SubcommandIndex + 1; $i -lt $Segment.Count; $i++) {
-        $token = Unquote-Token $Segment[$i]
+        $token = Get-UnquotedToken $Segment[$i]
         if ([string]::IsNullOrWhiteSpace($token)) { continue }
 
         if ($token -eq '--') {
@@ -159,7 +159,7 @@ function Get-GitPathSpecs {
                 continue
             }
 
-            if ($Subcommand -eq 'checkout' -and -not (Is-StrongTempFilePath $token)) {
+            if ($Subcommand -eq 'checkout' -and -not (Test-StrongTempFilePath $token)) {
                 return [pscustomobject]@{
                     PathSpecs   = @()
                     IsAmbiguous = $true
@@ -208,13 +208,13 @@ function Get-BlockedGitCommand {
 
     foreach ($segment in $segments) {
         for ($i = 0; $i -lt $segment.Count; $i++) {
-            $token = Unquote-Token $segment[$i]
+            $token = Get-UnquotedToken $segment[$i]
 
             if ($token -match '^(?i)(powershell|pwsh|cmd|bash|sh|zsh)$') {
                 for ($j = $i + 1; $j -lt $segment.Count - 1; $j++) {
-                    $wrapperArg = Unquote-Token $segment[$j]
+                    $wrapperArg = Get-UnquotedToken $segment[$j]
                     if ($wrapperArg -match '^(?i)(-command|-c|/c)$') {
-                        $nestedText = Unquote-Token $segment[$j + 1]
+                        $nestedText = Get-UnquotedToken $segment[$j + 1]
                         $nestedMatch = Get-BlockedGitCommand -Text $nestedText -Depth ($Depth + 1)
                         if ($nestedMatch) { return $nestedMatch }
                         break
@@ -224,12 +224,12 @@ function Get-BlockedGitCommand {
         }
 
         for ($i = 0; $i -lt $segment.Count; $i++) {
-            $token = Unquote-Token $segment[$i]
+            $token = Get-UnquotedToken $segment[$i]
 
             if ($token -notmatch '(?i)(^|[\\/])git(?:\.exe)?$') { continue }
 
             for ($j = $i + 1; $j -lt $segment.Count; $j++) {
-                $nextToken = Unquote-Token $segment[$j]
+                $nextToken = Get-UnquotedToken $segment[$j]
                 if ([string]::IsNullOrWhiteSpace($nextToken)) { continue }
 
                 if ($nextToken -match '^(?i)(-c|-C|--config-env)$') {
@@ -265,7 +265,7 @@ function Get-BlockedGitCommand {
                         }
                     }
 
-                    if ($pathSpecs | Where-Object { Is-EnsPathSpec $_ }) {
+                    if ($pathSpecs | Where-Object { Test-EnsPathSpec $_ }) {
                         return [pscustomobject]@{
                             Subcommand = $subcommand
                             PathSpecs  = $pathSpecs
@@ -273,7 +273,7 @@ function Get-BlockedGitCommand {
                         }
                     }
 
-                    if ($pathSpecs | Where-Object { -not (Is-TempPathSpec $_) }) {
+                    if ($pathSpecs | Where-Object { -not (Test-TempPathSpec $_) }) {
                         return [pscustomobject]@{
                             Subcommand = $subcommand
                             PathSpecs  = $pathSpecs
@@ -303,7 +303,7 @@ $commandExcerpt = if ($cmd.Length -gt 220) {
 }
 
 $targetSummary = if ($blockedCommandInfo.PathSpecs.Count -gt 0) {
-    'Target paths:' + "`n" + (($blockedCommandInfo.PathSpecs | ForEach-Object { '  ' + (Normalize-PathToken $_) }) -join "`n")
+    'Target paths:' + "`n" + (($blockedCommandInfo.PathSpecs | ForEach-Object { '  ' + (Get-NormalizedPath $_) }) -join "`n")
 } else {
     'Target paths: none explicitly identified.'
 }
@@ -359,8 +359,6 @@ $reason = @(
     'the mandatory human review layer that catches LLM formatting mistakes',
     'in nuclear data files.'
 ) -join "`n"
-
-$shortReason = 'Git restore/checkout is forbidden in .ens file editing tasks. Read the denial message and repair the file in place.'
 
 $output = [ordered]@{
     continue = $false
