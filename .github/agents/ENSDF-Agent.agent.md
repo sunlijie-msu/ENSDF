@@ -480,7 +480,7 @@ header='[paste actual header line here]'
 print('ENSDF 80-Column Ruler:')
 print('Ones: ')
 print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
-print('Tens:')
+print('Tens: ')
 print('11111111112222222222333333333344444444445555555555666666666677777777778888888889')
 print('Header:', header)
 print('Length:', len(header))

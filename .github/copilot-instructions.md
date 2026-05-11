@@ -249,17 +249,13 @@ Both Bidirectional Positional Check and Random Spot Check must pass with 100% ac
 
 ## Document Structure
 
-### Foundation & Principles
 - **Primary Role** – ENSDF expertise and scope
 - **Core Behaviors** – Communication, execution, quality standards
-### Execution & Workflow
 - **Instruction Compliance** – Zero-tolerance protocols
 - **Structured Agentic Workflow** – Critical 8-step process
 - **Task Completion Integrity** – Autonomy and resolution
-### Technical Operations
 - **File and Script Management** – Tools, pre-action checklist, ENSDF file handling
 - **80-Column Format and Validation** – Formatting rules, edit-validate cycle, diff view requirement
-### Quality & Learning
 - **Agentic Learning Loop** – Skills refinement and procedure updates
 - **Data Extraction and Entry Quality Assurance** – Numerical exactness, spot checks, bidirectional verification
 
