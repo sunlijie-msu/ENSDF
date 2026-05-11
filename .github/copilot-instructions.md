@@ -1,6 +1,3 @@
----
-applyTo: "**"
----
 # Evaluated Nuclear Structure Data File (ENSDF) Instructions for GitHub Copilot
 
 ## Primary Role

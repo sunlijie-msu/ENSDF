@@ -6,15 +6,13 @@ model: ["claude-opus-4.7", "claude-sonnet-4.6"]
 hooks:
   PreToolUse:
     - type: command
+      command: "python .github/hooks/scripts/block-git-revert.py"
       windows: "powershell -ExecutionPolicy Bypass -File .github/hooks/scripts/block-git-revert.ps1"
-      command: "powershell -ExecutionPolicy Bypass -File .github/hooks/scripts/block-git-revert.ps1"
       timeout: 10
   PostToolUse:
     - type: command
-      windows: "python .github/hooks/scripts/validate_ens.py"
       command: "python .github/hooks/scripts/validate_ens.py"
       timeout: 30
-
 ---
 
 # ENSDF Nuclear Data Agent
@@ -482,7 +480,8 @@ print('Ones: ')
 print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
 print('Tens: ')
 print('11111111112222222222333333333344444444445555555555666666666677777777778888888889')
-print('Header:', header)
+print('Header: ')
+print(header)
 print('Length:', len(header))
 "
 ```
