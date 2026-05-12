@@ -44,11 +44,15 @@ def _blank_only(ch: str) -> bool:
     return ch == ' '
 
 
+def _pad_record_example(text: str) -> str:
+    return text.ljust(80)
+
+
 RECORD_DEFINITIONS: Dict[str, RecordDefinition] = {
     'H': RecordDefinition(
         label='Header record (H)',
-        fmt='H-Fmt: 35XX  H metadata...                                                        ',
-        fields='H-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|H(8)|BLANK(9)|...metadata fields...             ',
+        fmt=_pad_record_example(' 35XX  H metadata...'),
+        fields='NUCID(1-5)|CONT(6)|BLANK(7)|H(8)|BLANK(9)|...metadata fields...             ',
         col77_hint='Column 77 must be blank for H records',
         col80_hint='Column 80 must be blank for H records',
         col77_validator=_blank_only,
@@ -56,8 +60,8 @@ RECORD_DEFINITIONS: Dict[str, RecordDefinition] = {
     ),
     'L': RecordDefinition(
         label='Level record (L)',
-        fmt='L-Fmt: 35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q',
-        fields='L-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|L(8)|BLANK(9)|E(10-19)|DE(20-21)|SPACE(22)|J-pi(23-39)|T(40-49)|DT(50-55)|L(56-64)|S(65-74)|DS(75-76)|C(77)|BLANK(78-79)|Q(80)',
+        fmt=_pad_record_example(' 35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q'),
+        fields='NUCID(1-5)|CONT(6)|BLANK(7)|L(8)|BLANK(9)|E(10-19)|DE(20-21)|SPACE(22)|J-pi(23-39)|T(40-49)|DT(50-55)|L(56-64)|S(65-74)|DS(75-76)|C(77)|BLANK(78-79)|Q(80)',
         col77_hint='Column 77 may hold alphabetic comment flags only',
         col80_hint='Column 80: space, ?, S only',
         col77_validator=_alpha_or_space,
@@ -65,8 +69,8 @@ RECORD_DEFINITIONS: Dict[str, RecordDefinition] = {
     ),
     'G': RecordDefinition(
         label='Gamma record (G)',
-        fmt='G-Fmt: 35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q',
-        fields='G-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|G(8)|BLANK(9)|E(10-19)|DE(20-21)|SPACE(22)|RI(23-29)|DRI(30-31)|SPACE(32)|M(33-41)|MR(42-49)|DMR(50-55)|CC(56-62)|DCC(63-64)|TI(65-74)|DTI(75-76)|C(77)|BLANK(78-79)|Q(80)',
+        fmt=_pad_record_example(' 35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q'),
+        fields='NUCID(1-5)|CONT(6)|BLANK(7)|G(8)|BLANK(9)|E(10-19)|DE(20-21)|SPACE(22)|RI(23-29)|DRI(30-31)|SPACE(32)|M(33-41)|MR(42-49)|DMR(50-55)|CC(56-62)|DCC(63-64)|TI(65-74)|DTI(75-76)|C(77)|BLANK(78-79)|Q(80)',
         col77_hint='Column 77: space, alphabetic, *, &, @ only',
         col80_hint='Column 80: space, ?, S only',
         col77_validator=_g_flag,
@@ -74,8 +78,8 @@ RECORD_DEFINITIONS: Dict[str, RecordDefinition] = {
     ),
     'E': RecordDefinition(
         label='Electron capture record (E)',
-        fmt='E-Fmt: 35XX  E EEEE.E   DE  IB     DIB IE     DIE LOGFT   DFT    TI       DTI C UN  Q',
-        fields='E-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|E(8)|BLANK(9)|E(10-19)|DE(20-21)|IB(22-29)|DIB(30-31)|IE(32-39)|DIE(40-41)|LOGFT(42-49)|DFT(50-55)|BLANK(56-64)|TI(65-74)|DTI(75-76)|C(77)|UN(78-79)|Q(80)',
+        fmt=_pad_record_example(' 35XX  E EEEE.E   DE  IB     DIB IE     DIE LOGFT   DFT    TI       DTI C UN  Q'),
+        fields='NUCID(1-5)|CONT(6)|BLANK(7)|E(8)|BLANK(9)|E(10-19)|DE(20-21)|IB(22-29)|DIB(30-31)|IE(32-39)|DIE(40-41)|LOGFT(42-49)|DFT(50-55)|BLANK(56-64)|TI(65-74)|DTI(75-76)|C(77)|UN(78-79)|Q(80)',
         col77_hint='Column 77 alphabetic comment flag (C = coincidence, etc.)',
         col80_hint='Column 80: space, ?, S only',
         col77_validator=_alpha_or_space,
@@ -83,8 +87,8 @@ RECORD_DEFINITIONS: Dict[str, RecordDefinition] = {
     ),
     'B': RecordDefinition(
         label='Beta-minus record (B)',
-        fmt='B-Fmt: 35XX  B EEEE.E   DE  IB     DIB          LOGFT   DFT              C   UN  Q',
-        fields='B-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|B(8)|BLANK(9)|E(10-19)|DE(20-21)|IB(22-29)|DIB(30-31)|BLANK(32-41)|LOGFT(42-49)|DFT(50-55)|BLANK(56-76)|C(77)|UN(78-79)|Q(80)',
+        fmt=_pad_record_example(' 35XX  B EEEE.E   DE  IB     DIB          LOGFT   DFT              C   UN  Q'),
+        fields='NUCID(1-5)|CONT(6)|BLANK(7)|B(8)|BLANK(9)|E(10-19)|DE(20-21)|IB(22-29)|DIB(30-31)|BLANK(32-41)|LOGFT(42-49)|DFT(50-55)|BLANK(56-76)|C(77)|UN(78-79)|Q(80)',
         col77_hint='Column 77 alphabetic comment flag',
         col80_hint='Column 80: space, ? only',
         col77_validator=_alpha_or_space,
@@ -92,8 +96,8 @@ RECORD_DEFINITIONS: Dict[str, RecordDefinition] = {
     ),
     'DP': RecordDefinition(
         label='Delayed particle record (DP)',
-        fmt='DP-Fmt:35XX  DP EP       DE IP     DIP EI',
-        fields='DP-Fld: NUCID(1-5)|CONT(6)|BLANK(7)|D(8)|P(9)|BLANK(10)|EP(11-19)|DE(20-21)|BLANK(22)|IP(23-29)|DIP(30-31)|BLANK(32)|EI(33-39)',
+        fmt=_pad_record_example(' 35XX  DP EP       DE IP     DIP EI'),
+        fields='NUCID(1-5)|CONT(6)|BLANK(7)|D(8)|P(9)|BLANK(10)|EP(11-19)|DE(20-21)|BLANK(22)|IP(23-29)|DIP(30-31)|BLANK(32)|EI(33-39)',
         col77_hint='Column 77 blank for DP records',
         col80_hint='Column 80: space, ?, S only',
         col77_validator=_blank_only,
@@ -129,8 +133,10 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
     """Print ENSDF 80-column ruler with format specifications for validation."""
 
     print('ENSDF 80-Column Ruler:')
-    print('Ones: 12345678901234567890123456789012345678901234567890123456789012345678901234567890')
-    print('Tens: 1111111111222222222233333333334444444444555555555566666666667777777777888888888999')
+    print('Tens:')
+    print('11111111112222222222333333333344444444445555555555666666666677777777778888888889')
+    print('Ones:')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
     
     record_key = _record_key(line)
     record_def = RECORD_DEFINITIONS.get(record_key)
@@ -138,7 +144,9 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
     is_comment = comment_hint is not None
 
     if record_def:
+        print(f'Format ({record_def.label}):')
         print(record_def.fmt)
+        print('Fields (schematic):')
         print(record_def.fields)
     if comment_hint:
         print(comment_hint)
@@ -147,9 +155,10 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
         print(f'Unknown record type "{record_key}" (Column 8).')
 
     if label:
-        print(f'Line ({label}): {line}')
+        print(f'Line ({label}):')
     else:
-        print(f'Line: {line}')
+        print('Line:')
+    print(line)
     print(f'Len:  {len(line)} chars')
     
     # Quick validation

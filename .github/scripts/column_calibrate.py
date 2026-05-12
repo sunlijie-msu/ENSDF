@@ -57,6 +57,12 @@ def invalidate_file_cache(filename: str) -> None:
     """Clear the cached copy after modifying a file on disk."""
     _read_file_cached.cache_clear()
 
+
+def is_valid_two_column_uncertainty(value: str) -> bool:
+    """Return True for standard ENSDF 2-column uncertainty or qualifier content."""
+    qualifiers = {'LT', 'GT', 'LE', 'GE', 'AP', 'CA', 'SY'}
+    return value.isdigit() or value in qualifiers
+
 def is_data_record_line(line):
     """
     Check if a line is a record line that must be exactly 80 characters.
@@ -195,8 +201,10 @@ def fix_line_lengths(filename, dry_run=False):
 def print_ruler():
     """Print the 80-column ruler for visual reference."""
     print('ENSDF 80-Column Ruler:')
-    print('Ones:  12345678901234567890123456789012345678901234567890123456789012345678901234567890')
-    print('Tens:  1111111111222222222233333333334444444444555555555566666666667777777777888888888999')
+    print('Tens:')
+    print('11111111112222222222333333333344444444445555555555666666666677777777778888888889')
+    print('Ones:')
+    print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
 
 def find_field_positions(line, field_chars):
     """Find positions of specific characters that represent field values."""
@@ -264,12 +272,12 @@ def validate_de_field(filename):
                     print(f"  ERROR: Line {line_num}: DE field '{de_field_content}' is NOT left-justified. Must start at column 20.")
                     print(f"         Line: {line_content}")
 
-                # Check if content is numeric (typical for uncertainty values)
-                if not de_value.isdigit():
+                # Accept standard 2-column ENSDF uncertainty qualifiers as well as digits.
+                if not is_valid_two_column_uncertainty(de_value):
                     de_field_errors += 1
                     print(f"  ERROR: Line {line_num}: Non-numeric DE field '{de_value}' in columns 20-21")
                     print(f"         Line: {line_content}")
-                    print(f"         Expected: Numeric uncertainty value or blank")
+                    print(f"         Expected: Numeric uncertainty, standard qualifier (LT/GT/LE/GE/AP/CA/SY), or blank")
                     print()
             # If DE field is blank/empty, that's perfectly valid - no error
             
@@ -283,7 +291,7 @@ def validate_de_field(filename):
         print("   Note: Empty DE fields are valid and were not flagged as errors")
     else:
         print(f"[ERROR] ERROR: {de_field_errors} DE field content errors found!")
-        print("   CRITICAL: DE fields must contain only numeric uncertainties or be blank!")
+        print("   CRITICAL: DE fields must contain numeric uncertainties, standard 2-column qualifiers, or be blank!")
         
     return de_field_errors == 0
 

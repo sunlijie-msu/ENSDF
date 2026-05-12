@@ -474,15 +474,15 @@ When dealing with ENSDF alignment issues, ALWAYS use the visual ruler method:
 
 ```python
 python -c "
-header='[paste actual header line here]'
+line='[paste actual 80-char line here]'
 print('ENSDF 80-Column Ruler:')
-print('Ones: ')
-print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
-print('Tens: ')
+print('Tens:')
 print('11111111112222222222333333333344444444445555555555666666666677777777778888888889')
-print('Header: ')
-print(header)
-print('Length:', len(header))
+print('Ones:')
+print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
+print('Line:')
+print(line)
+print('Length:', len(line))
 "
 ```
 **Process**:
