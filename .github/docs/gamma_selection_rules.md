@@ -275,8 +275,8 @@ Adopted: (1/2,3/2)
 
 When writing primary transition lists in `cL J$` comments:
 
-1. **Exclude LT γ, ? γ, and weak γ** — Do not use γ rays with an upper-limit intensity (LT in the DRI field) or questionable placement (? in column 80) for Jπ deduction. Avoid using weak γ rays (e.g., <5% intensity) unless the user specifically requests.
-2. **Rank by γ intensities** — List transitions in ascending order of the intensity (strongest first) to reflect the most probable deexcitation paths.
-3. **Oxford comma** — Use Oxford comma style in multi-transition lists (e.g., "5805|g to 0+ g.s., 5344|g to 1+, 461, 5659|g to 3+, 146, and 3430|g to 4+, 2376 give (2+).").
-4. **Example for one γ transition** — "Primary transition <E_gamma1>|g to <Jπ1> g.s."
-5. **Example for multiple γ transitions** — "Primary transitions: <E_gamma1>|g to <Jπ1> g.s., <E_gamma2>|g to <Jπ2>, <E_level2>, and <E_gamma3>|g to <Jπ3>, <E_level3>." or with specified intensities — "Primary transitions with I|g>10: <E_gamma1>|g to <Jπ1> <E_level1> and <E_gamma2>|g to <Jπ2>, <E_level2>."
+1. For primary transitions used to deduce Jπ of a level, do not use weak γ rays (Iγ < 5), γ rays with upper-limit intensity (`LT` in the `DRI` field), γ rays with questionable placement (`?` in col 80), or γ rays to final levels with uncertain or multi-valued Jπ.
+2. List transitions in descending order of intensity, with the strongest first, to reflect the most probable deexcitation paths. If there are γ transitions to final levels with the same Jπ, include only the strongest one for that Jπ, as this is sufficient for Jπ deduction.
+3. Example for one γ transition: `Primary transition <E_gamma1>|g to <Jπ1> g.s.`
+4. Example for multiple γ transitions: `Primary transitions: <E_gamma1>|g to <Jπ1> g.s., <E_gamma2>|g to <Jπ2>, <E_level2>, and <E_gamma3>|g to <Jπ3>, <E_level3>.` Or, with specified intensities: `Primary transitions with I|g>10: <E_gamma1>|g to <Jπ1> <E_level1> and <E_gamma2>|g to <Jπ2>, <E_level2>.`
+5. Use Oxford comma style in multi-transition lists, for example: `Primary transitions: 5805|g to 0+ g.s., 5344|g to 1+, 461 level, 5659|g to 3+, 146 level, and 3430|g to 4+, 2376 level.`
