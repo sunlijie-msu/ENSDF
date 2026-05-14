@@ -1,5 +1,5 @@
-Program for consistency check: output for Error and Warnings (version 05/05/2026)
-Generated at: Tue 05/05/2026 at 01:54:24 PM EDT
+Program for consistency check: output for Error and Warnings (version 05/07/2026)
+Generated at: Thu 05/14/2026 at 05:46:41 PM EDT
 
 ################################################################################
 In Adopted dataset of 34CL
@@ -8,16 +8,6 @@ In Adopted dataset of 34CL
  34CL  G 3333.8       7.3    LT [M1,E2]                                         
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=3333.8
                                                                                         JI=(1+,2+,3+) JF(0.0)=0+
- 34CL  L 3646.3    2  5+               0.152 PS  62                             
- 34CL  G 2415.9       2.7    LT                                                 
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=5+ JF(1230.28)=2+
- 34CL  G 3185.1       4      LT                                                 
-                               *                                                  <W> large deltaJ=4 ([E4]), but no Mult is given
-                                                                                        JI=5+ JF(461.01)=1+
- 34CL  G 3646.1       4      LT                                                 
-                               *                                                  <W> large deltaJ=5 ([M5]), but no Mult is given
-                                                                                        JI=5+ JF(0.0)=0+
  34CL  L 3660.0    3  (0+:4+)          3.5 FS    LT                             
  34CL  G 2994.3       2      LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2994.3
@@ -47,12 +37,9 @@ In Adopted dataset of 34CL
          *                                                                        <W> XREF tag=H: level possibly not or inconsistent (E/JPI) in H=32S(3HE,P)
                                                                                         closest level in H=32S(3HE,P)
                                                                                         4412.1     31   possible JPI=2-   from L=3 and target JPI=0+
- 34CL  L 4446.6    2  (1:5)            0.116 PS  24                             
- 34CL  G 4446.3       3      LT [M4]                                            
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=4446.3
-                                                                                        JI=(1:5) JF(0.0)=0+
-                               *                                                  <W> Mult=[M4] but parity-change unknown from deltaJPI
-                                                                                        JI=(1:5) JF(0.0)=0+
+ 34CL  L 4446.6    2  4-               0.116 PS  24                             
+ 34CLX L XREF=KQ(4450*)
+                     *                                                            <W> Check if * is on a single appearance of a XREF tag=Q
  34CL  L 4461.4    3  (2,3)-           0.145 PS  42                             
  34CLX L XREF=HIKMQ
          *                                                                        <W> XREF tag=H: level possibly not or inconsistent (E/JPI) in H=32S(3HE,P)
@@ -65,10 +52,10 @@ In Adopted dataset of 34CL
  34CL  L 4717.5    6  2+,3+,4+         9 FS      LT                             
  34CL cL J$L=2 from 3/2+ in {+35}Cl({+3}He,|a) gives 0+,1+,2+,3+,4+. 2341.6|g to
                                                                      *            <E> Quoted EG=2341.6 inconsistent with record EG=2341.7
- 34CL  G 4051.7       4.9    LT                                                 
+ 34CL  G 4051.7       4.9    LT [M1,E2]                                         
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=4051.7
                                                                                         JI=2+,3+,4+ JF(665.57)=1+
- 34CL  G 4256.2       4.9    LT                                                 
+ 34CL  G 4256.2       4.9    LT [M1,E2]                                         
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=4256.2
                                                                                         JI=2+,3+,4+ JF(461.01)=1+
  34CL  L 4743.15   17 6-               4.9 PS    21                             
@@ -79,6 +66,9 @@ In Adopted dataset of 34CL
  34CL  G 4957.1       3.9    LT [M1,E2]                                         
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=4957.1
                                                                                         JI=1+,2+,3+ JF(0.0)=0+
+ 34CL  L 5028      2  0-,1-,2-,3-                                               
+ 34CLX L XREF=K(5020?)MO(4981*)R(5000*)
+                             *                                                    <W> Check if * is on a single appearance of a XREF tag=O
  34CL  L 5386.8    15 (2,3,4,5)-                                                
  34CL  G 4156.3       2      LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=4156.3
@@ -92,32 +82,19 @@ In Adopted dataset of 34CL
  34CL  G 5386.3       3      LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5386.3
                                                                                         JI=(2,3,4,5)- JF(0.0)=0+
- 34CL  L 5541.1    11                  0.7 PS    GT                             
- 34CL  G 1940.9       100    8  [M1,E2]                                         
-                               *                                                  <W> Mult is inconsistent with JPI (one of JPIs is empty)
-                                                                                        JI= JF(3600.14)=4-
- 34CL  G 1996.0       56     8  [M1,E2]                                         
-                               *                                                  <W> Mult is inconsistent with JPI (one of JPIs is empty)
-                                                                                        JI= JF(3545.08)=3-
- 34CL  G 4875.2       9.4    LT [M2]                                            
-                               *                                                  <W> Mult is inconsistent with JPI (one of JPIs is empty)
-                                                                                        JI= JF(665.57)=1+
- 34CL  G 5079.7       4.7    LT [M2]                                            
-                               *                                                  <W> Mult is inconsistent with JPI (one of JPIs is empty)
-                                                                                        JI= JF(461.01)=1+
- 34CL  G 5394.3       7.8    LT [E1]                                            
-                               *                                                  <W> Mult is inconsistent with JPI (one of JPIs is empty)
-                                                                                        JI= JF(146.36)=3+
- 34CL  G 5540.6       6.3    LT [E3]                                            
-                               *                                                  <W> Mult is inconsistent with JPI (one of JPIs is empty)
-                                                                                        JI= JF(0.0)=0+
- 34CL  L 5577.2    10 (2-,3)                                                    
- 34CL  G 5576.7       0.24   LT                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5576.7
-                                                                                        JI=(2-,3) JF(0.0)=0+
+ 34CL  L 5541.1    11 (2-:5-)          0.7 PS    GT                             
+ 34CL  G 4875.2       9.4    LT                                                 
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=4875.2
+                                                                                        JI=(2-:5-) JF(665.57)=1+
+ 34CL  G 5079.7       4.7    LT                                                 
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5079.7
+                                                                                        JI=(2-:5-) JF(461.01)=1+
+ 34CL  G 5540.6       6.3    LT                                                 
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5540.6
+                                                                                        JI=(2-:5-) JF(0.0)=0+
  34CL  L 5635.75   20 (1,2+)                                                    
- 34CL2cL gives 0+,1+,2+,3+,4+. Primary transition 5635.7|g to 0+, g.s. gives    
-                                                  *                               <E> Quoted EG=5635.7 inconsistent with record EG=5635.25
+ 34CL2cL gives 0+,1+,2+,3+,4+. Primary transitions: 5635.7|g to 0+, g.s.,       
+                                                    *                             <E> Quoted EG=5635.7 inconsistent with record EG=5635.25
  34CL  G 1989.4       0.4    LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=1989.4
                                                                                         JI=(1,2+) JF(3646.3)=5+
@@ -146,62 +123,67 @@ In Adopted dataset of 34CL
  34CL  G 5784.6       0.6    LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5784.6
                                                                                         JI=(2,3)- JF(0.0)=0+
- 34CL  L 5852.91   30 (3-)                                                      
+ 34CL  L 5852.91   30 (2,3)-                                                    
+ 34CL2cL transitions: 5706|g to 3+, 146 level, 2307|g to 3-, 3545 level, and    
+                                               *                                  <E> Quoted EG=2307 inconsistent with record EG=2307.75
  34CL  G 5852.37      0.4    LT                                                 
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=(3-) JF(0.0)=0+
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5852.37
+                                                                                        JI=(2,3)- JF(0.0)=0+
+ 34CL  L 5940.8    10 1+,2,3+                                                   
+ 34CL cL J$spin=1:3 from |g(|q) in {+33}S(p,|g). Primary transitions: 5479.1|g  
+                                                                      *           <E> Quoted EG=5479.1 inconsistent with record EG=5479.3
+ 34CL  G 3564.9       0.56                                                      
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=3564.9
+                                                                                        JI=1+,2,3+ JF(2375.67)=4+
+ 34CL  G 5940.2       0.99                                                      
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5940.2
+                                                                                        JI=1+,2,3+ JF(0.0)=0+
+ 34CL  L 6030.1    20 (1+,2+)                                                   
+ 34CL cL J$primary transitions: 6030.1|g to 0+, g.s. and 5883.2|g to 3+, 146    
+                                *                                                 <E> Quoted EG=6030.1 inconsistent with record EG=6029.5
  34CL  L 6169.4    11 3-               25 EV     4                          L   
  34CL  G 6168.8       0.91   LT                                                 
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
                                                                                         JI=3- JF(0.0)=0+
- 34CL  L 6219.3    12 (2-,3+)                                                   
- 34CL  G 2572.9       18.0   18                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2572.9
-                                                                                        JI=(2-,3+) JF(3646.3)=5+
- 34CL  G 2587.8       2.6    13                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2587.8
-                                                                                        JI=(2-,3+) JF(3631.40)=5-
+ 34CL  L 6181.27   20 1+,2                                                      
+ 34CL  G 3805.37      0.94   LT                                                 
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=3805.37
+                                                                                        JI=1+,2 JF(2375.67)=4+
  34CL  L 6266.6    13 (1+,2,3+)                                                 
  34CL  G 6266.0       2.6    LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6266.0
                                                                                         JI=(1+,2,3+) JF(0.0)=0+
- 34CL  L 6273.3    13 (3-,4)                                                    
+ 34CL  L 6273.3    13 (2+,3,4+)                                                 
  34CL  G 3692.8       0.99   LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=3692.8
-                                                                                        JI=(3-,4) JF(2580.3)=1+
+                                                                                        JI=(2+,3,4+) JF(2580.3)=1+
  34CL  G 5607.2       0.15   LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5607.2
-                                                                                        JI=(3-,4) JF(665.57)=1+
+                                                                                        JI=(2+,3,4+) JF(665.57)=1+
  34CL  G 5811.8       0.15   LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5811.8
-                                                                                        JI=(3-,4) JF(461.01)=1+
+                                                                                        JI=(2+,3,4+) JF(461.01)=1+
  34CL  G 6272.7       0.15   LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6272.7
-                                                                                        JI=(3-,4) JF(0.0)=0+
+                                                                                        JI=(2+,3,4+) JF(0.0)=0+
  34CL  L 6321.7    13 2-               1.60 KEV  16                         L   
  34CL  G 2690.2       2.3    12                                                 
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
                                                                                         JI=2- JF(3631.40)=5-
- 34CL  L 6382.4    14 (2-,3,4-)                                                 
- 34CL  G 5716.3       5.1    26                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5716.3
-                                                                                        JI=(2-,3,4-) JF(665.57)=1+
- 34CL  L 6450.54   20 (4-)                                                      
- 34CL  G 2003.9       7.3    38                                                 
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2003.9
-                                                                                        JI=(4-) JF(4446.6)=(1:5)
- 34CL  G 3116.4       1                                                         
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=3116.4
-                                                                                        JI=(4-) JF(3334.0)=(1+,2+,3+)
+ 34CL  L 6441.2    14 (1+,2,3+)                                                 
+ 34CL  G 2364.9       2.7    14                                                 
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2364.9
+                                                                                        JI=(1+,2,3+) JF(4076.2)=4-
+ 34CL  L 6450.54   20 3(-),4                                                    
  34CL  G 5784.44      1      LT                                                 
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=(4-) JF(665.57)=1+
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5784.44
+                                                                                        JI=3(-),4 JF(665.57)=1+
  34CL  G 5988.96      0.83   LT                                                 
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=(4-) JF(461.01)=1+
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5988.96
+                                                                                        JI=3(-),4 JF(461.01)=1+
  34CL  G 6449.88      1.7    LT                                                 
-                               *                                                  <W> large deltaJ=4 ([M4]), but no Mult is given
-                                                                                        JI=(4-) JF(0.0)=0+
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6449.88
+                                                                                        JI=3(-),4 JF(0.0)=0+
  34CL  L 6574.7    15 (2+,3,4+)                                                 
  34CL  G 5908.6       0.65   LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5908.6
@@ -209,10 +191,13 @@ In Adopted dataset of 34CL
  34CL  G 6574.0       0.65   LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6574.0
                                                                                         JI=(2+,3,4+) JF(0.0)=0+
- 34CL  L 6640.92   7  4-               40 EV     6                              
+ 34CL  L 6640.92   7  4-               40 EV     6                          L   
  34CL  G 2314.95      1.32   66                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2314.95
                                                                                         JI=4- JF(4325.89)=1+,2+
+ 34CL  G 4264.96      15.8   16 M1+E2    -0.14   4                              
+                               *                                                  <E> Mult=M1 is inconsistent with spin-parity change
+                                                                                        JI=4- JF(2375.67)=4+
  34CL  G 5974.79      0.68   LT                                                 
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
                                                                                         JI=4- JF(665.57)=1+
@@ -222,55 +207,49 @@ In Adopted dataset of 34CL
  34CL  G 6640.22      0.91   LT                                                 
                                *                                                  <W> large deltaJ=4 ([M4]), but no Mult is given
                                                                                         JI=4- JF(0.0)=0+
- 34CL  L 6723.7    16 (4+)                                                      
- 34CL  G 2027.9       20                                                        
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2027.9
-                                                                                        JI=(4+) JF(4695.7)=(1+,2,3+)
- 34CL  G 3340.2       1.6                                                       
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=3340.2
-                                                                                        JI=(4+) JF(3383.3)=1+,2+
+ 34CL  L 6723.7    16 (3+,4+)                                                   
  34CL  G 6057.6       1.2    LT                                                 
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=(4+) JF(665.57)=1+
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6057.6
+                                                                                        JI=(3+,4+) JF(665.57)=1+
  34CL  G 6262.1       2      LT                                                 
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=(4+) JF(461.01)=1+
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6262.1
+                                                                                        JI=(3+,4+) JF(461.01)=1+
  34CL  G 6723.0       0.8    LT                                                 
-                               *                                                  <W> large deltaJ=4 ([E4]), but no Mult is given
-                                                                                        JI=(4+) JF(0.0)=0+
- 34CL  L 6797.4    16 1:5                                                       
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6723.0
+                                                                                        JI=(3+,4+) JF(0.0)=0+
+ 34CL  L 6797.4    16 (1+:5+)                                                   
  34CL  G 3413.9       0.55   28                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=3413.9
-                                                                                        JI=1:5 JF(3383.3)=1+,2+
+                                                                                        JI=(1+:5+) JF(3383.3)=1+,2+
  34CL  G 4421.4       1.10   55                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=4421.4
-                                                                                        JI=1:5 JF(2375.67)=4+
+                                                                                        JI=(1+:5+) JF(2375.67)=4+
  34CL  G 4639.2       0.55   28                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=4639.2
-                                                                                        JI=1:5 JF(2157.9)=2+
+                                                                                        JI=(1+:5+) JF(2157.9)=2+
  34CL  G 4909.7       4.4    22                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=4909.7
-                                                                                        JI=1:5 JF(1887.29)=2+
+                                                                                        JI=(1+:5+) JF(1887.29)=2+
  34CL  G 6131.2       0.22   LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6131.2
-                                                                                        JI=1:5 JF(665.57)=1+
+                                                                                        JI=(1+:5+) JF(665.57)=1+
  34CL  G 6335.8       0.33   LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6335.8
-                                                                                        JI=1:5 JF(461.01)=1+
+                                                                                        JI=(1+:5+) JF(461.01)=1+
  34CL  G 6796.7       0.44   LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6796.7
-                                                                                        JI=1:5 JF(0.0)=0+
+                                                                                        JI=(1+:5+) JF(0.0)=0+
  34CL  L 6828.6    14 (2,3+)                                                    
  34CL  G 6827.9       1.4    LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6827.9
                                                                                         JI=(2,3+) JF(0.0)=0+
- 34CL  L 6871.18   30 5-               26 EV     7                              
+ 34CL  L 6871.18   30 5-               26 EV     7                          L   
+ 34CL  G 1330.1       13.6   14                                                 
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=1330.1
+                                                                                        JI=5- JF(5541.1)=(2-:5-)
  34CL  G 1484.4       6.8    34                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=1484.4
                                                                                         JI=5- JF(5386.8)=(2,3,4,5)-
- 34CL  G 2424.5       64     7  D+Q      +0.05   +1-3                           
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2424.5
-                                                                                        JI=5- JF(4446.6)=(1:5)
  34CL  G 4712.9       0.87   LT                                                 
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
                                                                                         JI=5- JF(2157.9)=2+
@@ -283,10 +262,6 @@ In Adopted dataset of 34CL
  34CL  G 6870.44      1.3    LT                                                 
                                *                                                  <W> large deltaJ=5 ([E5]), but no Mult is given
                                                                                         JI=5- JF(0.0)=0+
- 34CL  L 6887.97   30 3                                                         
- 34CL  G 6887.22      0.49   LT                                                 
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=3 JF(0.0)=0+
  34CL  L 6918.0    17 3,4                                                       
  34CL  G 6251.8       0.16   LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6251.8
@@ -297,7 +272,7 @@ In Adopted dataset of 34CL
  34CL  G 6917.2       0.65   LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6917.2
                                                                                         JI=3,4 JF(0.0)=0+
- 34CL  L 6931.5    17 1-               5.0 KEV   5                              
+ 34CL  L 6931.5    17 1-               5.0 KEV   5                          L   
  34CL  G 2213.9       24                                                        
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2213.9
                                                                                         JI=1- JF(4717.5)=2+,3+,4+
@@ -312,6 +287,12 @@ In Adopted dataset of 34CL
  34CL  G 7078.11      3      LT                                                 
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
                                                                                         JI=3- JF(0.0)=0+
+ 34CL  L 7249.8    10                  0.14 PS   5                              
+ 34CL  G 1934.8                                                                 
+                     *                                                            <W> Check if RI=100 can be assigned to the single branch
+ 34CL  L 10631.7   15 11+              28 FS     LT                             
+ 34CL cL J$3381|g, E2, |DJ=2 to 9+, 7250.0 level in {+27}Al({+12}C,|an|g).      
+                                *                                                 <E> Quoted JF=9+ inconsistent with record JF(7250.0)=(9)+ for decaying EG=3381
 
 ################################################################################
 In dataset of 34CL: XA 34AR EC+B+ DECAY (0.84646 S)     XREF Tag=A
@@ -348,6 +329,13 @@ In dataset of 34CL: XA 34AR EC+B+ DECAY (0.84646 S)     XREF Tag=A
                                                                                         Adopted T1/2=3 FS LT this T1/2=
 
 ################################################################################
+In dataset of 34CL: XB 34CL IT DECAY (31.99 M)     XREF Tag=B
+
+ 34CL  L 0.0          0+               1.5266 S  4                              
+                                       *                                          <E> T1/2 here inconsistent with adopted
+                                                                                        Adopted T1/2=1.5266 S 5 this T1/2=1.5266 S 4
+
+################################################################################
 In dataset of 34CL: XC 35K ECP DECAY (175 MS)     XREF Tag=C
 
  34CL  L 0            0+               1.5266 S  4                              
@@ -361,10 +349,28 @@ In dataset of 34CL: XC 35K ECP DECAY (175 MS)     XREF Tag=C
                                                                                         Adopted E=665.57 5 this E=665.56 4
 
 ################################################################################
+In dataset of 34CL: XE 24MG(12C,PNG)     XREF Tag=E
+
+ 34CL  L 2720.78   24 2-                                                    A   
+ 34CL  G 564                                                                    
+         *                                                                        <W> This gamma is missing in Adopted Gammas at level=2721.09
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
 In dataset of 34CL: XG 31P(A,NG)     XREF Tag=G
 
+ 34CL  L 4743         6                4.9 PS    21                             
+ 34CL  G 1143                   Q(+O)    -0.03   9                              
+         *                                                                        <W> This gamma is missing in Adopted Gammas at level=4743.15
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34CL  L 5315         7                                                         
+ 34CL  G 491                                                                    
+         *                                                                        <W> This gamma is missing in Adopted Gammas at level=5314.95
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34CL  L 7800                          69 FS     49                             
-         *                                                                        <E> Tag=G of this dataset missing in XREF of matched Adopted Level=7801.5
+ 34CL  G 2485                                                                   
+         *                                                                        <W> This gamma is missing in Adopted Gammas at level=7803.9
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
 
 ################################################################################
 In dataset of 34CL: XH 32S(3HE,P)     XREF Tag=H
@@ -380,7 +386,7 @@ In dataset of 34CL: XH 32S(3HE,P)     XREF Tag=H
  34CL  L 6724                                                                   
          *                                                                        <W> 4 possible matches found in Adopted! Check XREF
                                                                                       #@ 6719.8    15 3-                  XREF=H(6724*)KL
-                                                                                      #@ 6723.7    16 (4+)                XREF=H(6724*)K
+                                                                                      #@ 6723.7    16 (3+,4+)             XREF=H(6724*)K
                                                                                       #@ 6737.3    15 2-                  XREF=H(6724*)KL
                                                                                       #@ 6702.8    16 (3,4)               XREF=H(6724*)K
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=H
@@ -408,10 +414,8 @@ In dataset of 34CL: XI 32S(3HE,PG)     XREF Tag=I
                                                                                         JI=4 JF(0.0)=0+
  34CL  L 2721.8       2                1.4 PS    GT                             
  34CL  G 540          16     2                                              &   
-         *                                                                        <W> This gamma is probably missing in Adopted Gammas at level=2721.09
-                                                                                          this gamma=540      closest gamma in Adopted=563
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        548.8          from level=3129.11     JPI=1+                  
+         *                                                                        <W> This gamma is missing in Adopted Gammas at level=2721.09
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
 
 ################################################################################
 In dataset of 34CL: XJ 32S(A,D)     XREF Tag=J
@@ -421,18 +425,18 @@ In dataset of 34CL: XJ 32S(A,D)     XREF Tag=J
                                                                                       #  5705       5                     XREF=O
                                                                                        @ 5763.3    10 (1+,2+)             XREF=J(*)KO(5761?)
                                                                                        @ 5785.1    10 (2,3)-              XREF=J(*)KMO
-                                                                                       @ 5805.9    10 (2+)                XREF=J(*)KMO(5806)
-                                                                                       @ 5852.91   30 (3-)                XREF=J(*)KMO
+                                                                                       @ 5805.9    10 (2)                 XREF=J(*)KMO(5806)
+                                                                                       @ 5852.91   30 (2,3)-              XREF=J(*)KMO
                                                                                        @ 5868       4                     XREF=J(*)KO
                                                                                        @ 5897.3    10 (2)                 XREF=J(*)KMO
                                                                                        @ 5917       4                     XREF=J(*)O
-                                                                                       @ 5940.8    10 (2-)                XREF=J(*)KO
+                                                                                       @ 5940.8    10 1+,2,3+             XREF=J(*)KO
                                                                                       #  5980       4                     XREF=O
                                                                                       *** Check for possible missing XREF assignment (# marked) of this tag=J
  34CL  L 6300                                                               K   
          *                                                                        <W> 3 possible matches found in Adopted! Check XREF
                                                                                       #@ 6321.7    13 2-                  XREF=HJ(6300*)KL
-                                                                                      #@ 6273.3    13 (3-,4)              XREF=J(6300*)K
+                                                                                      #@ 6273.3    13 (2+,3,4+)           XREF=J(6300*)K
                                                                                       #@ 6266.6    13 (1+,2,3+)           XREF=J(6300*)K
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=J
  34CL  L 6540                                                               K   
@@ -579,7 +583,7 @@ In dataset of 34CL: XK 33S(P,G)     XREF Tag=K
                                                                                         Adopted JPI=(2)- this JPI=
  34CL  L 4446.6    2  4                116 FS    24                             
                      *                                                            <W> JPI here inconsistent with adopted
-                                                                                        Adopted JPI=(1:5) this JPI=4
+                                                                                        Adopted JPI=4- this JPI=4
  34CL  G 4446.3       3      LT                                                 
                                *                                                  <W> large deltaJ=4 ([E4]), but no Mult is given
                                                                                         JI=4 JF(0)=0+
@@ -628,32 +632,12 @@ In dataset of 34CL: XK 33S(P,G)     XREF Tag=K
  34CL  L 5454      2                                                           ?
                      *                                                            <W> JPI commented from Adopted but empty
                                                                                         Adopted JPI=1+,2+ this JPI=
+ 34CL  L 5540.8    11                  0.7 PS    GT                             
+                     *                                                            <W> JPI commented from Adopted but empty
+                                                                                        Adopted JPI=(2-:5-) this JPI=
  34CL  L 5577.6    10                                           447.0     10    
                      *                                                            <W> JPI commented from Adopted but empty
-                                                                                        Adopted JPI=(2-,3) this JPI=
- 34CL  G 1700         7      3                                                 ?
-         *                                                                        <W> No final level found
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1740.8(10)     from level=1887.29     JPI=2+                  
-                                                                                        1697.5(4)      from level=2157.9      JPI=2+                  
-                                                                                        1720(1)        from level=2181.09     JPI=3+                  
-                                                                                        1710.05        from level=2375.67     JPI=4+                  
-                                                                                        1657.75        from level=3545.08     JPI=3-                  
-                                                                                        1712.80        from level=3600.14     JPI=4-                  
-                                                                                        1700.5         from level=4076.2      JPI=4-                  
-                                                                                        1669(1)        from level=5314.95     JPI=7+                  
-                                                                                        1652.7         from level=5635.75     JPI=(1,2+)              
-                                                                                        1732.9         from level=5673.0      JPI=1+,2+               
-                                                                                        1658.1         from level=5805.9      JPI=(2+)                
-                                                                                        1705.1         from level=5852.91     JPI=(3-)                
-                                                                                        1749.5         from level=5897.3      JPI=(2)                 
-                                                                                        1718.9         from level=6136.2      JPI=1(+)                
-                                                                                        1724.5         from level=6141.8      JPI=1,2                 
-                                                                                        1653.7         from level=6169.4      JPI=3-                  
-                                                                                        1713.8         from level=6229.5      JPI=2                   
-                                                                                        1715.9         from level=6321.7      JPI=2-                  
-                                                                                        1731.3         from level=6370.2      JPI=2-                  
-                                                                                        1699.5         from level=6871.18     JPI=5-                  
+                                                                                        Adopted JPI=(2)+ this JPI=
  34CL  L 5635.75   20 1,2                                       507.6     2     
                      *                                                            <W> JPI here inconsistent with adopted
                                                                                         Adopted JPI=(1,2+) this JPI=1,2
@@ -674,16 +658,16 @@ In dataset of 34CL: XK 33S(P,G)     XREF Tag=K
                                                                                         Adopted JPI=(2,3)- this JPI=
  34CL  L 5805.9    10                                           683       1     
                      *                                                            <W> JPI commented from Adopted but empty
-                                                                                        Adopted JPI=(2+) this JPI=
+                                                                                        Adopted JPI=(2) this JPI=
  34CL  L 5852.91   30                                           731.4     3     
                      *                                                            <W> JPI commented from Adopted but empty
-                                                                                        Adopted JPI=(3-) this JPI=
+                                                                                        Adopted JPI=(2,3)- this JPI=
  34CL  L 5897.2    10                                           777       1     
                      *                                                            <W> JPI commented from Adopted but empty
                                                                                         Adopted JPI=(2) this JPI=
  34CL  L 5940.8    10 1:3                                       822       1     
                      *                                                            <W> JPI here inconsistent with adopted
-                                                                                        Adopted JPI=(2-) this JPI=1:3
+                                                                                        Adopted JPI=1+,2,3+ this JPI=1:3
  34CL  G 3564.9       0.56                                                      
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=3564.9
                                                                                         JI=1:3 JF(2375.7)=4
@@ -695,10 +679,13 @@ In dataset of 34CL: XK 33S(P,G)     XREF Tag=K
                                                                                         Adopted JPI=(1+,2+) this JPI=
  34CL  L 6088.94   6  1,2                                       974.62    4     
                      *                                                            <W> JPI here inconsistent with adopted
-                                                                                        Adopted JPI=(1,2+) this JPI=1,2
+                                                                                        Adopted JPI=1,2(+) this JPI=1,2
  34CL  L 6136.2    11 1:3                                       1023.3    11    
                      *                                                            <W> JPI here inconsistent with adopted
-                                                                                        Adopted JPI=1(+) this JPI=1:3
+                                                                                        Adopted JPI=1(+),2,3(+) this JPI=1:3
+ 34CL  L 6141.8    11 1,2                                       1029.1    11    
+                     *                                                            <W> JPI here inconsistent with adopted
+                                                                                        Adopted JPI=1,2(+) this JPI=1,2
  34CL  L 6169.4    11 3                                         1057.6    5     
                      *                                                            <W> JPI here inconsistent with adopted
                                                                                         Adopted JPI=3- this JPI=3
@@ -707,7 +694,7 @@ In dataset of 34CL: XK 33S(P,G)     XREF Tag=K
                                                                                         JI=3 JF(0)=0+
  34CL  L 6181.27   20 1,2                                       1069.8    2     
                      *                                                            <W> JPI here inconsistent with adopted
-                                                                                        Adopted JPI=(2-) this JPI=1,2
+                                                                                        Adopted JPI=1+,2 this JPI=1,2
  34CL  G 3805.3       0.94   LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=3805.3
                                                                                         JI=1,2 JF(2375.7)=4
@@ -725,16 +712,13 @@ In dataset of 34CL: XK 33S(P,G)     XREF Tag=K
                                                                                         JI=4 JF(0)=0+
  34CL  L 6219.3    12                                           1109.0    12    
                      *                                                            <W> JPI commented from Adopted but empty
-                                                                                        Adopted JPI=(2-,3+) this JPI=
- 34CL  L 6229.5    5  1                                         1119.5    5     
-                     *                                                            <W> JPI here inconsistent with adopted
-                                                                                        Adopted JPI=2 this JPI=1
+                                                                                        Adopted JPI=(3+,4+) this JPI=
  34CL  L 6266.6    13                                           1157.7    13    
                      *                                                            <W> JPI commented from Adopted but empty
                                                                                         Adopted JPI=(1+,2,3+) this JPI=
  34CL  L 6273.3    13 3                                         1164.6    13    
                      *                                                            <W> JPI here inconsistent with adopted
-                                                                                        Adopted JPI=(3-,4) this JPI=3
+                                                                                        Adopted JPI=(2+,3,4+) this JPI=3
  34CL  G 6272.7       0.15   LT                                                 
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
                                                                                         JI=3 JF(0)=0+
@@ -758,16 +742,16 @@ In dataset of 34CL: XK 33S(P,G)     XREF Tag=K
                                                                                         Adopted JPI=2- this JPI=2
  34CL  L 6382.4    14                                           1277.1    14    
                      *                                                            <W> JPI commented from Adopted but empty
-                                                                                        Adopted JPI=(2-,3,4-) this JPI=
+                                                                                        Adopted JPI=(3+) this JPI=
  34CL  L 6399.8    14                                           1295.0    14    
                      *                                                            <W> JPI commented from Adopted but empty
-                                                                                        Adopted JPI=(3) this JPI=
+                                                                                        Adopted JPI=(3,4+) this JPI=
  34CL  L 6441.2    14                                           1337.7    14    
                      *                                                            <W> JPI commented from Adopted but empty
-                                                                                        Adopted JPI=(2-,3+) this JPI=
+                                                                                        Adopted JPI=(1+,2,3+) this JPI=
  34CL  L 6450.54   20 3,4                                       1347.3    2     
                      *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(4-) this JPI=3,4
+                                                                                        Adopted JPI=3(-),4 this JPI=3,4
  34CL  G 5784.7       1.0    LT                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=5784.7
                                                                                         JI=3,4 JF(665.3)=1
@@ -779,7 +763,7 @@ In dataset of 34CL: XK 33S(P,G)     XREF Tag=K
                                                                                         JI=3,4 JF(0)=0+
  34CL  L 6477.5    14                                           1375.1    14    
                      *                                                            <W> JPI commented from Adopted but empty
-                                                                                        Adopted JPI=(0,1,2) this JPI=
+                                                                                        Adopted JPI=(0,1,2,3+) this JPI=
  34CL  L 6486.9    14 1:4                                       1384.8    14    
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=(1,2+) this JPI=1:4
@@ -830,14 +814,16 @@ In dataset of 34CL: XK 33S(P,G)     XREF Tag=K
                                                                                         Adopted JPI=3- this JPI=
  34CL  L 6723.7    16                                           1628.8    16    
                      *                                                            <W> JPI commented from Adopted but empty
-                                                                                        Adopted JPI=(4+) this JPI=
+                                                                                        Adopted JPI=(3+,4+) this JPI=
  34CL  L 6737.0    16                                           1642.5    16    
                      *                                                            <W> JPI commented from Adopted but empty
                                                                                         Adopted JPI=2- this JPI=
  34CL  L 6790.8    16                                           1698.0    16    
                      *                                                            <W> JPI commented from Adopted but empty
-                                                                                        Adopted JPI=(1+,2+) this JPI=
+                                                                                        Adopted JPI=(1,2+) this JPI=
  34CL  L 6797.4    16 1:5                                       1704.8    16    
+                     *                                                            <E> JPI commented from Adopted but inconsistent
+                                                                                        Adopted JPI=(1+:5+) this JPI=1:5
  34CL  G 4421.4       1.10   55                                             D   
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=4421.4
                                                                                         JI=1:5 JF(2375.7)=4
@@ -883,9 +869,6 @@ In dataset of 34CL: XK 33S(P,G)     XREF Tag=K
  34CL  G 6870.44      1.3    LT                                                 
                                *                                                  <W> large deltaJ=5 ([M5]), but no Mult is given
                                                                                         JI=5 JF(0)=0+
- 34CL  L 6887.97   30 2                                         1798.1    3     
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=3 this JPI=2
  34CL  L 6901.75   30                                           1812.3    3     
                      *                                                            <W> JPI commented from Adopted but empty
                                                                                         Adopted JPI=(1+,2+) this JPI=
@@ -1001,10 +984,6 @@ In dataset of 34CL: XM 33S(3HE,D)     XREF Tag=M
  34CL  L 4941.9                                        1        0.0060    7 A   
                                                        *                          <W> L=1 inconsistent with JPI=1+ from Adopted Levels for E=4941.9
                                                                                          parity=- from L=1 and target JPI=3/2+
- 34CL  L 5577      2                                   0        0.081     1     
-                                                       *                          <W> L=0 inconsistent with JPI=(2-,3) from Adopted Levels for E=5577.2
-                                                                                         possible JPI from L=0 and target JPI=3/2+
-                                                                                             1+,2+
 
 ################################################################################
 In dataset of 34CL: XN 34S(P,N)     XREF Tag=N
@@ -1012,7 +991,7 @@ In dataset of 34CL: XN 34S(P,N)     XREF Tag=N
  34CL  L 4985         1+,2+                            1,2                      
          *                                                                        <W> 3 possible matches found in Adopted! Check XREF
                                                                                          4957.5    11 1+,2+,3+            XREF=HKMOTU(4970*)V(4970*)
-                                                                                      #@ 4979       2 1+,2+               XREF=MN(4985*)O(4981*)Q(4990*)R(5000*)TU(4970*)V(4970*)
+                                                                                      #@ 4979       2 1+,2+               XREF=MN(4985*)OQ(4990*)R(5000*)TU(4970*)V(4970*)
                                                                                       #@ 4995.6     3 1+,2+               XREF=KMN(4985*)OQ(4990*)R(5000*)TU(4970*)V(4970*)
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=N
 
@@ -1032,7 +1011,7 @@ In dataset of 34CL: XQ 35CL(G,N)     XREF Tag=Q
  34CL  L 4990                                                                   
          *                                                                        <W> 4 possible matches found in Adopted! Check XREF
                                                                                          4957.5    11 1+,2+,3+            XREF=HKMOTU(4970*)V(4970*)
-                                                                                      #@ 4979       2 1+,2+               XREF=MN(4985*)O(4981*)Q(4990*)R(5000*)TU(4970*)V(4970*)
+                                                                                      #@ 4979       2 1+,2+               XREF=MN(4985*)OQ(4990*)R(5000*)TU(4970*)V(4970*)
                                                                                       #@ 4995.6     3 1+,2+               XREF=KMN(4985*)OQ(4990*)R(5000*)TU(4970*)V(4970*)
                                                                                          5028       2 0-,1-,2-,3-         XREF=K(5020?)MO(4981*)R(5000*)
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=Q
@@ -1085,6 +1064,12 @@ In dataset of 34CL: XU 36AR(P,3HE)     XREF Tag=U
                                                        *                          <W> L=(0) inconsistent with JPI=0+,1+,2+,3+,4+ from Adopted Levels for E=5009
                                                                                          possible JPI from L=(0) and target JPI=0+
                                                                                              (0+,1+)
+ 34CL  L 6160      40                                  (2)                      
+         *                                                                        <W> 3 possible matches found in Adopted! Check XREF
+                                                                                       @ 6136.2    11 1(+),2,3(+)         XREF=KU(6160*)V(6160*)
+                                                                                       @ 6141.8    11 1,2(+)              XREF=KU(6160*)V(6160*)
+                                                                                      #  6181.27   20 1+,2                XREF=KV(6160*)
+                                                                                      *** Check for possible missing XREF assignment (# marked) of this tag=U
 
 ################################################################################
 In dataset of 34CL: XV 36AR(D,A),(POL D,A)     XREF Tag=V

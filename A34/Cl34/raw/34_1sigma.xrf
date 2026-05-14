@@ -1,5 +1,5 @@
-Program for consistency check: output for tentative Adopted levels with tentative new XREF flags (version 05/05/2026)
-Generated at: Tue 05/05/2026 at 01:54:24 PM EDT
+Program for consistency check: output for tentative Adopted levels with tentative new XREF flags (version 05/07/2026)
+Generated at: Thu 05/14/2026 at 05:46:41 PM EDT
 
  34CL  XA34AR EC+B+ DECAY (0.84646 S)                                           
  34CL  XB34CL IT DECAY (31.99 M)                                                
@@ -108,7 +108,7 @@ Generated at: Tue 05/05/2026 at 01:54:24 PM EDT
  34CLX L XREF=HJ(*)                                                             
  34CL  L 4417.3    2  (2)-             24 FS     8                              
  34CLX L XREF=J(*)KMQ(*)                                                        
- 34CL  L 4446.6    2  (1:5)            0.116 PS  24                             
+ 34CL  L 4446.6    2  4-               0.116 PS  24                             
  34CLX L XREF=KQ(*)                                                             
  34CL  L 4455.8    40                                                           
  34CLX L XREF=HM(*)Q(*)                                                         
@@ -192,9 +192,9 @@ Generated at: Tue 05/05/2026 at 01:54:24 PM EDT
  34CLX L XREF=K(?)M                                                             
  34CL  L 5485      4                                                            
  34CLX L XREF=KO                                                                
- 34CL  L 5541.1    11                  0.7 PS    GT                             
+ 34CL  L 5541.1    11 (2-:5-)          0.7 PS    GT                             
  34CLX L XREF=KO                                                                
- 34CL  L 5577.2    10 (2-,3)                                                    
+ 34CL  L 5577.2    10 (2)+                                                      
  34CLX L XREF=KMOU(*)V(*)                                                       
  34CL  L 5608      2  1-,2-,3-,4-,5-                                            
  34CLX L XREF=MOU(*)V(*)                                                        
@@ -208,11 +208,9 @@ Generated at: Tue 05/05/2026 at 01:54:24 PM EDT
  34CLX L XREF=J(*)KO(?)                                                         
  34CL  L 5785.1    10 (2,3)-                                                    
  34CLX L XREF=J(*)KMO                                                           
- 34CL  L 5805.9    10 (2+)                                                      
- 34CLX L XREF=J(*)KO(*)                                                         
- 34CL  L 5805.9                                                                 
- 34CLX L XREF=J(*)MO(*)                                                         
- 34CL  L 5852.91   30 (3-)                                                      
+ 34CL  L 5805.9    10 (2)                                                       
+ 34CLX L XREF=J(*)KMO                                                           
+ 34CL  L 5852.91   30 (2,3)-                                                    
  34CLX L XREF=J(*)KMO                                                           
  34CL  L 5868      4                                                            
  34CLX L XREF=J(*)K(*)M(*)O                                                     
@@ -220,31 +218,31 @@ Generated at: Tue 05/05/2026 at 01:54:24 PM EDT
  34CLX L XREF=J(*)KM(*)O                                                        
  34CL  L 5917      4                                                            
  34CLX L XREF=J(*)K(*)M(*)O                                                     
- 34CL  L 5940.8    10 (2-)                                                      
+ 34CL  L 5940.8    10 1+,2,3+                                                   
  34CLX L XREF=J(*)KO                                                            
  34CL  L 5980      4                                                            
  34CLX L XREF=J(*)O                                                             
  34CL  L 6030.1    20 (1+,2+)                                                   
  34CLX L XREF=K                                                                 
- 34CL  L 6088.94   6  (1,2+)                                                    
+ 34CL  L 6088.94   6  1,2(+)                                                    
  34CLX L XREF=K                                                                 
- 34CL  L 6136.2    11 1(+)                                                      
+ 34CL  L 6136.2    11 1(+),2,3(+)                                               
  34CLX L XREF=KU(*)V(*)                                                         
- 34CL  L 6141.8    11 1,2                                                       
+ 34CL  L 6141.8    11 1,2(+)                                                    
  34CLX L XREF=KU(*)V(*)                                                         
  34CL  L 6169.4    11 3-               25 EV     4                              
  34CLX L XREF=KLV(*)                                                            
- 34CL  L 6181.27   20 (2-)                                                      
- 34CLX L XREF=KV(*)                                                             
+ 34CL  L 6181.27   20 1+,2                                                      
+ 34CLX L XREF=KU(*)V(*)                                                         
  34CL  L 6208.2    5  4(-)             1.4 FS    LT                             
  34CLX L XREF=K                                                                 
- 34CL  L 6219.3    12 (2-,3+)                                                   
+ 34CL  L 6219.3    12 (3+,4+)                                                   
  34CLX L XREF=K                                                                 
- 34CL  L 6229.5    5  2                                                         
+ 34CL  L 6229.5    5  1                                                         
  34CLX L XREF=K                                                                 
  34CL  L 6266.6    13 (1+,2,3+)                                                 
  34CLX L XREF=K                                                                 
- 34CL  L 6273.3    13 (3-,4)                                                    
+ 34CL  L 6273.3    13 (2+,3,4+)                                                 
  34CLX L XREF=K                                                                 
  34CL  L 6321.7    13 2-               1.60 KEV  16                             
  34CLX L XREF=HJKL                                                              
@@ -252,15 +250,15 @@ Generated at: Tue 05/05/2026 at 01:54:24 PM EDT
  34CLX L XREF=K                                                                 
  34CL  L 6370.2    2  2-               1.60 KEV  16                             
  34CLX L XREF=KL                                                                
- 34CL  L 6382.4    14 (2-,3,4-)                                                 
+ 34CL  L 6382.4    14 (3+)                                                      
  34CLX L XREF=K                                                                 
- 34CL  L 6399.8    14 (3)                                                       
+ 34CL  L 6399.8    14 (3,4+)                                                    
  34CLX L XREF=K                                                                 
- 34CL  L 6441.2    14 (2-,3+)                                                   
+ 34CL  L 6441.2    14 (1+,2,3+)                                                 
  34CLX L XREF=K                                                                 
- 34CL  L 6450.54   20 (4-)                                                      
+ 34CL  L 6450.54   20 3(-),4                                                    
  34CLX L XREF=K                                                                 
- 34CL  L 6477.5    14 (0,1,2)                                                   
+ 34CL  L 6477.5    14 (0,1,2,3+)                                                
  34CLX L XREF=K                                                                 
  34CL  L 6486.9    14 (1,2+)                                                    
  34CLX L XREF=K                                                                 
@@ -288,7 +286,7 @@ Generated at: Tue 05/05/2026 at 01:54:24 PM EDT
  34CLX L XREF=K                                                                 
  34CL  L 6719.8    15 3-               3.0 KEV   3                              
  34CLX L XREF=H(*)KL                                                            
- 34CL  L 6723.7    16 (4+)                                                      
+ 34CL  L 6723.7    16 (3+,4+)                                                   
  34CLX L XREF=H(*)K                                                             
  34CL  L 6737.3    15 2-               2.0 KEV   2                              
  34CLX L XREF=KL                                                                
@@ -296,9 +294,9 @@ Generated at: Tue 05/05/2026 at 01:54:24 PM EDT
  34CLX L XREF=L                                                                 
  34CL  L 6778      2                                                            
  34CLX L XREF=L                                                                 
- 34CL  L 6790.8    16 (1+,2+)                                                   
+ 34CL  L 6790.8    16 (1,2+)                                                    
  34CLX L XREF=K                                                                 
- 34CL  L 6797.4    16 1:5                                                       
+ 34CL  L 6797.4    16 (1+:5+)                                                   
  34CLX L XREF=K                                                                 
  34CL  L 6807.1    15 1-               1.0 KEV   1                              
  34CLX L XREF=KL                                                                
@@ -310,7 +308,7 @@ Generated at: Tue 05/05/2026 at 01:54:24 PM EDT
  34CLX L XREF=KL                                                                
  34CL  L 6871.18   30 5-               26 EV     7                              
  34CLX L XREF=KL                                                                
- 34CL  L 6887.97   30 3                                                         
+ 34CL  L 6887.97   30 2                                                         
  34CLX L XREF=K                                                                 
  34CL  L 6890.78   30 1-               0.85 KEV  9                              
  34CLX L XREF=L                                                                 
@@ -372,7 +370,7 @@ Generated at: Tue 05/05/2026 at 01:54:24 PM EDT
  34CLX L XREF=KL                                                                
  34CL  L 7249.8    10                  0.14 PS   5                              
  34CLX L XREF=E(*)F(*)G(*)K(*)                                                  
- 34CL  L 7250.0    5  9+               0.159 PS  28                             
+ 34CL  L 7250.0    5  (9)+             0.159 PS  28                             
  34CLX L XREF=E(*)F(*)G(*)K(*)                                                  
  34CL  L 7271.2    10                                                           
  34CLX L XREF=K                                                                 

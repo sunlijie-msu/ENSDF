@@ -1,33 +1,32 @@
-Program for consistency check: output for averaging results for gamma energies and intensities (version 05/05/2026)
-Generated at: Tue 05/05/2026 at 01:54:32 PM EDT
+Program for consistency check: output for averaging results for gamma energies and intensities (version 05/07/2026)
+Generated at: Thu 05/14/2026 at 05:47:02 PM EDT
 
 **************** Level=146.36 in 34CL     *******************ID#=1-2
 
 ------ average E------
 Data points of E record
-*                 34CL IT DECAY   146.36(3)           weight=32.36%
-*                 27AL(12C,ANG)   146.36(3)           weight=32.36%
-*                   32S(3HE,PG)   146.36(3)           weight=32.36%
-*                      33S(P,G)   146.4(1)            weight=2.91%
-                     32S(3HE,P)   145.3(16)           weight=0.01%
+*                 27AL(12C,ANG)   146.36(3)           weight=47.84%
+*                   32S(3HE,PG)   146.36(3)           weight=47.84%
+*                      33S(P,G)   146.4(1)            weight=4.31%
+                     32S(3HE,P)   145.3(16)           weight=0.02%
                        32S(A,D)   165(40)             weight=0.00%
                       35CL(P,D)   140(15)             weight=0.00%
             36AR(D,A),(POL D,A)   147(20)             weight=0.00%
 ### (weight<2.00% not considered in weighted average)
-                     32S(3HE,P)   145.3(16)           weight=0.01%
+                     32S(3HE,P)   145.3(16)           weight=0.02%
                        32S(A,D)   165(40)             weight=0.00%
                       35CL(P,D)   140(15)             weight=0.00%
             36AR(D,A),(POL D,A)   147(20)             weight=0.00%
 
 Averaging results:
-           weighted average:      146.361(17)          (internal)
-                                  146.361(4)           (external)
-                                  chi**2/(n-1)=0.052     [critical=3.319]
-           weighted average:      146.361(17)          (internal)
-            (of all values)       146.361(7)           (external)
-                                  chi**2/(n-1)=0.142     [critical=2.511]
-         unweighted average:      147.9(26)           
-           (of all values)        chi**2/(n-1)=53.105     [critical=2.511]
+           weighted average:      146.362(21)          (internal)
+                                  146.362(6)           (external)
+                                  chi**2/(n-1)=0.077     [critical=3.780]
+           weighted average:      146.362(21)          (internal)
+            (of all values)       146.362(9)           (external)
+                                  chi**2/(n-1)=0.165     [critical=2.639]
+         unweighted average:      148.1(30)           
+           (of all values)        chi**2/(n-1)=61.534     [critical=2.639]
 
    suggested adopted result:      146.36(3)           
        (Weighted-Of-All)
@@ -37,65 +36,28 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 34CL cL E$weighted average of 146.36 {I3} from {+34}Cl IT decay, 146.36 {I3}   
- 34CL2cL from {+27}Al({+12}C,|an|g), 146.36 {I3} from {+32}S({+3}He,p|g), and   
- 34CL3cL 146.4 {I1} from {+33}S(p,|g). Others: 145.3 {I16} from                 
- 34CL4cL {+32}S({+3}He,p), 165 {I40} from {+32}S(|a,d), 140 {I15} from          
- 34CL5cL {+35}Cl(p,d), and 147 {I20} from {+36}Ar(d,|a),(pol d,|a)              
+ 34CL cL E$weighted average of 146.36 {I3} from {+27}Al({+12}C,|an|g), 146.36   
+ 34CL2cL {I3} from {+32}S({+3}He,p|g), and 146.4 {I1} from {+33}S(p,|g). Others:
+ 34CL3cL 145.3 {I16} from {+32}S({+3}He,p), 165 {I40} from {+32}S(|a,d), 140    
+ 34CL4cL {I15} from {+35}Cl(p,d), and 147 {I20} from {+36}Ar(d,|a),(pol d,|a)   
 
 ### weighted average comment (all values):
- 34CL cL E$weighted average of 146.36 {I3} from {+34}Cl IT decay, 146.36 {I3}   
- 34CL2cL from {+27}Al({+12}C,|an|g), 145.3 {I16} from {+32}S({+3}He,p), 146.36  
- 34CL3cL {I3} from {+32}S({+3}He,p|g), 165 {I40} from {+32}S(|a,d), 146.4 {I1}  
- 34CL4cL from {+33}S(p,|g), 140 {I15} from {+35}Cl(p,d), and 147 {I20} from     
- 34CL5cL {+36}Ar(d,|a),(pol d,|a)                                               
+ 34CL cL E$weighted average of 146.36 {I3} from {+27}Al({+12}C,|an|g), 145.3    
+ 34CL2cL {I16} from {+32}S({+3}He,p), 146.36 {I3} from {+32}S({+3}He,p|g), 165  
+ 34CL3cL {I40} from {+32}S(|a,d), 146.4 {I1} from {+33}S(p,|g), 140 {I15} from  
+ 34CL4cL {+35}Cl(p,d), and 147 {I20} from {+36}Ar(d,|a),(pol d,|a)              
 
 ### unweighted average comment (all non-limit values with/without unc):
- 34CL cL E$unweighted average of 146.36 {I3} from {+34}Cl IT decay, 146.36 {I3} 
- 34CL2cL from {+27}Al({+12}C,|an|g), 145.3 {I16} from {+32}S({+3}He,p), 146.36  
- 34CL3cL {I3} from {+32}S({+3}He,p|g), 165 {I40} from {+32}S(|a,d), 146.4 {I1}  
- 34CL4cL from {+33}S(p,|g), 140 {I15} from {+35}Cl(p,d), and 147 {I20} from     
- 34CL5cL {+36}Ar(d,|a),(pol d,|a)                                               
+ 34CL cL E$unweighted average of 146.36 {I3} from {+27}Al({+12}C,|an|g), 145.3  
+ 34CL2cL {I16} from {+32}S({+3}He,p), 146.36 {I3} from {+32}S({+3}He,p|g), 165  
+ 34CL3cL {I40} from {+32}S(|a,d), 146.4 {I1} from {+33}S(p,|g), 140 {I15} from  
+ 34CL4cL {+35}Cl(p,d), and 147 {I20} from {+36}Ar(d,|a),(pol d,|a)              
 
 ### Non-average comment:
- 34CL cL E$from {+34}Cl IT decay. Others: 146.36 {I3} from                      
- 34CL2cL {+27}Al({+12}C,|an|g), 145.3 {I16} from {+32}S({+3}He,p), 146.36 {I3}  
- 34CL3cL from {+32}S({+3}He,p|g), 165 {I40} from {+32}S(|a,d), 146.4 {I1} from  
- 34CL4cL {+33}S(p,|g), 140 {I15} from {+35}Cl(p,d), and 147 {I20} from          
- 34CL5cL {+36}Ar(d,|a),(pol d,|a)                                               
-
-
-**************** Level=146.36     Gamma=146.36 in 34CL     *******************ID#=1-2-1
-
------- average E------
-Data points of E record
-*                 34CL IT DECAY   146.36(3)           weight=50.00%
-*                   32S(3HE,PG)   146.36(3)           weight=50.00%
-
-Averaging results:
-           weighted average:      146.360(21)          (internal)
-                                  146.360(0)           (external)
-                                  chi**2/(n-1)=0.000     [critical=4.605]
-         unweighted average:      146.360(0)          
-           (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
-
-   suggested adopted result:      146.36(3)           
-       (Weighted-Of-All)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 34CL cG E$weighted average of 146.36 {I3} from {+34}Cl IT decay and 146.36 {I3}
- 34CL2cG from {+32}S({+3}He,p|g)                                                
-
-### unweighted average comment (all non-limit values with/without unc):
- 34CL cG E$unweighted average of 146.36 {I3} from {+34}Cl IT decay and 146.36   
- 34CL2cG {I3} from {+32}S({+3}He,p|g)                                           
-
-### Non-average comment:
- 34CL cG E$from {+34}Cl IT decay. Other: 146.36 {I3} from {+32}S({+3}He,p|g)    
+ 34CL cL E$from {+27}Al({+12}C,|an|g). Others: 145.3 {I16} from                 
+ 34CL2cL {+32}S({+3}He,p), 146.36 {I3} from {+32}S({+3}He,p|g), 165 {I40} from  
+ 34CL3cL {+32}S(|a,d), 146.4 {I1} from {+33}S(p,|g), 140 {I15} from             
+ 34CL4cL {+35}Cl(p,d), and 147 {I20} from {+36}Ar(d,|a),(pol d,|a)              
 
 
 **************** Level=461.01 in 34CL     *******************ID#=1-3
@@ -628,7 +590,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=3.780]
 
    suggested adopted result:      100.0(14)           
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -800,7 +762,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=3.780]
 
    suggested adopted result:      100.0(12)           
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1080,7 +1042,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=3.780]
 
    suggested adopted result:      100.0(5)            
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1771,7 +1733,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
 
    suggested adopted result:      2718(4)             
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1847,46 +1809,6 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL5cL {+34}S({+3}He,t), and 2725 {I20} from {+36}Ar(d,|a),(pol d,|a)         
 
 
-**************** Level=2721.09     Gamma=563 in 34CL     *******************ID#=1-15-1
-
------- average RI------
-Data points of RI record
-*                 27AL(12C,ANG)   14.1(8)             weight=64.33%
-*                      33S(P,G)   14.9(11)            weight=34.02%
-                    32S(3HE,PG)   39(5)               weight=1.65%
-### (weight<2.00% not considered in weighted average)
-                    32S(3HE,PG)   39(5)               weight=1.65%
-
-Averaging results:
-           weighted average:      14.4(7)              (internal)
-                                  14.4(4)              (external)
-                                  chi**2/(n-1)=0.346     [critical=4.605]
-           weighted average:      14.8(7)              (internal)
-            (of all values)       14.8(22)             (external)
-                                  chi**2/(n-1)=12.099     [critical=3.780]
-         unweighted average:      23(8)               
-           (of all values)        chi**2/(n-1)=200.243     [critical=3.780]
-
-   suggested adopted result:      14.4(8)             
-      (Weighted-Average)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 34CL cG RI$weighted average of 14.1 {I8} from {+27}Al({+12}C,|an|g) and 14.9   
- 34CL2cG {I11} from {+33}S(p,|g). Other: 39 {I5} from {+32}S({+3}He,p|g)        
-
-### weighted average comment (all values):
- 34CL cG RI$weighted average of 14.1 {I8} from {+27}Al({+12}C,|an|g), 39 {I5}   
- 34CL2cG from {+32}S({+3}He,p|g), and 14.9 {I11} from {+33}S(p,|g)              
-
-### unweighted average comment (all non-limit values with/without unc):
- 34CL cG RI$unweighted average of 14.1 {I8} from {+27}Al({+12}C,|an|g), 39 {I5} 
- 34CL2cG from {+32}S({+3}He,p|g), and 14.9 {I11} from {+33}S(p,|g)              
-
-
 **************** Level=2721.09     Gamma=563 in 34CL     *******************ID#=1-15-2
 
 ------ average RI------
@@ -1927,7 +1849,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cG from {+32}S({+3}He,p|g), and 14.9 {I11} from {+33}S(p,|g)              
 
 
-**************** Level=2721.09     Gamma=1491 in 34CL     *******************ID#=1-15-4
+**************** Level=2721.09     Gamma=1491 in 34CL     *******************ID#=1-15-5
 
 ------ average RI------
 Data points of RI record
@@ -1958,7 +1880,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cG from {+33}S(p,|g)                                                      
 
 
-**************** Level=2721.09     Gamma=2055 in 34CL     *******************ID#=1-15-5
+**************** Level=2721.09     Gamma=2055 in 34CL     *******************ID#=1-15-6
 
 ------ average RI------
 Data points of RI record
@@ -2004,7 +1926,7 @@ Note:  Combined weight means both unc+ and unc- of each input value are used to 
  34CL2cG from {+32}S({+3}He,p|g), and 15.5 {I11} from {+33}S(p,|g)              
 
 
-**************** Level=2721.09     Gamma=2260.6 in 34CL     *******************ID#=1-15-6
+**************** Level=2721.09     Gamma=2260.6 in 34CL     *******************ID#=1-15-7
 
 ------ average E------
 Data points of E record
@@ -2049,7 +1971,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=3.780]
 
    suggested adopted result:      100.0(15)           
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -2068,7 +1990,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cG 100 {I7} from {+32}S({+3}He,p|g)                                       
 
 
-**************** Level=2721.09     Gamma=2575 in 34CL     *******************ID#=1-15-7
+**************** Level=2721.09     Gamma=2575 in 34CL     *******************ID#=1-15-8
 
 ------ average RI------
 Data points of RI record
@@ -2099,7 +2021,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cG from {+32}S({+3}He,p|g), and 38.9 {I11} from {+33}S(p,|g)              
 
 
-**************** Level=2721.09     Gamma=2721 in 34CL     *******************ID#=1-15-8
+**************** Level=2721.09     Gamma=2721 in 34CL     *******************ID#=1-15-9
 
 ------ average RI------
 Data points of RI record
@@ -2692,7 +2614,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=3.780]
 
    suggested adopted result:      100.0(13)           
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3824,7 +3746,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
 
    suggested adopted result:      1143.0(2)           
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3872,7 +3794,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cG from {+27}Al({+12}C,|an|g)                                             
 
 
-**************** Level=4743.15     Gamma=4596.6 in 34CL     *******************ID#=1-53-4
+**************** Level=4743.15     Gamma=4596.6 in 34CL     *******************ID#=1-53-5
 
 ------ average E------
 Data points of E record
@@ -4259,7 +4181,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=3.780]
 
    suggested adopted result:      100.0(29)           
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4769,7 +4691,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
 
    suggested adopted result:      100.0(14)           
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4788,7 +4710,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cG {+27}Al({+12}C,|an|g)                                                  
 
 
-**************** Level=5314.95     Gamma=571.8 in 34CL     *******************ID#=1-75-3
+**************** Level=5314.95     Gamma=571.8 in 34CL     *******************ID#=1-75-4
 
 ------ average E------
 Data points of E record
@@ -4803,7 +4725,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
 
    suggested adopted result:      571.8(2)            
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -5333,41 +5255,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {I4} from {+34}S({+3}He,t)                                             
 
 
-**************** Level=5.85E3 in 34CL     *******************ID#=1-94
-
------- average E------
-Data points of E record
-### (1 value has weight>2.00%; all values with unc  considered in weighted average)
-                       32S(A,D)   5.85E3(15)          weight=0.07%
-*                    34S(3HE,T)   5806(4)             weight=99.93%
-
-Averaging results:
-           weighted average:      5806(4)              (internal)
-                                  5806.0(12)           (external)
-                                  chi**2/(n-1)=0.086     [critical=6.635]
-         unweighted average:      5828(22)            
-           (of all values)        chi**2/(n-1)=968.000     [critical=4.605]
-
-   suggested adopted result:      5806(4)             
-       (Weighted-Of-All)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 34CL cL E$weighted average of 5.85E3 {I15} from {+32}S(|a,d) and 5806 {I4} from
- 34CL2cL {+34}S({+3}He,t)                                                       
-
-### unweighted average comment (all non-limit values with/without unc):
- 34CL cL E$unweighted average of 5.85E3 {I15} from {+32}S(|a,d) and 5806 {I4}   
- 34CL2cL from {+34}S({+3}He,t)                                                  
-
-### Non-average comment:
- 34CL cL E$from {+34}S({+3}He,t). Other: 5.85E3 {I15} from {+32}S(|a,d)         
-
-
-**************** Level=5852.91 in 34CL     *******************ID#=1-95
+**************** Level=5852.91 in 34CL     *******************ID#=1-94
 
 ------ average E------
 Data points of E record
@@ -5403,7 +5291,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {I4} from {+34}S({+3}He,t)                                             
 
 
-**************** Level=5868 in 34CL     *******************ID#=1-96
+**************** Level=5868 in 34CL     *******************ID#=1-95
 
 ------ average E------
 Data points of E record
@@ -5477,7 +5365,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S({+3}He,d)                                                       
 
 
-**************** Level=5897.3 in 34CL     *******************ID#=1-97
+**************** Level=5897.3 in 34CL     *******************ID#=1-96
 
 ------ average E------
 Data points of E record
@@ -5551,7 +5439,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S({+3}He,d)                                                       
 
 
-**************** Level=5917 in 34CL     *******************ID#=1-98
+**************** Level=5917 in 34CL     *******************ID#=1-97
 
 ------ average E------
 Data points of E record
@@ -5621,7 +5509,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S({+3}He,d)                                                       
 
 
-**************** Level=5940.8 in 34CL     *******************ID#=1-99
+**************** Level=5940.8 in 34CL     *******************ID#=1-98
 
 ------ average E------
 Data points of E record
@@ -5665,7 +5553,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {I4} from {+34}S({+3}He,t)                                             
 
 
-**************** Level=5980 in 34CL     *******************ID#=1-100
+**************** Level=5980 in 34CL     *******************ID#=1-99
 
 ------ average E------
 Data points of E record
@@ -5699,7 +5587,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL cL E$from {+34}S({+3}He,t). Other: 5.85E3 {I15} from {+32}S(|a,d)         
 
 
-**************** Level=6136.2 in 34CL     *******************ID#=1-103
+**************** Level=6136.2 in 34CL     *******************ID#=1-102
 
 ------ average E------
 Data points of E record
@@ -5735,7 +5623,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {I40} from {+36}Ar(d,|a),(pol d,|a)                                    
 
 
-**************** Level=6141.8 in 34CL     *******************ID#=1-104
+**************** Level=6141.8 in 34CL     *******************ID#=1-103
 
 ------ average E------
 Data points of E record
@@ -5771,7 +5659,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {I40} from {+36}Ar(d,|a),(pol d,|a)                                    
 
 
-**************** Level=6169.4 in 34CL     *******************ID#=1-105
+**************** Level=6169.4 in 34CL     *******************ID#=1-104
 
 ------ average E------
 Data points of E record
@@ -5805,20 +5693,21 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL cL E$from {+33}S(p,|g). Other: 6160 {I40} from {+36}Ar(d,|a),(pol d,|a)   
 
 
-**************** Level=6181.27 in 34CL     *******************ID#=1-106
+**************** Level=6181.27 in 34CL     *******************ID#=1-105
 
 ------ average E------
 Data points of E record
 ### (1 value has weight>2.00%; all values with unc  considered in weighted average)
 *                      33S(P,G)   6181.27(20)         weight=100.00%
+                    36AR(P,3HE)   6160(40)            weight=0.00%
             36AR(D,A),(POL D,A)   6160(40)            weight=0.00%
 
 Averaging results:
            weighted average:      6181.27(20)          (internal)
                                   6181.27(11)          (external)
                                   chi**2/(n-1)=0.283     [critical=6.635]
-         unweighted average:      6171(11)            
-           (of all values)        chi**2/(n-1)=226.207     [critical=4.605]
+         unweighted average:      6167(7)             
+           (of all values)        chi**2/(n-1)=150.805     [critical=3.780]
 
    suggested adopted result:      6181.27(20)         
        (Weighted-Of-All)
@@ -5828,18 +5717,19 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 34CL cL E$weighted average of 6181.27 {I20} from {+33}S(p,|g) and 6160 {I40}   
- 34CL2cL from {+36}Ar(d,|a),(pol d,|a)                                          
+ 34CL cL E$weighted average of 6181.27 {I20} from {+33}S(p,|g), 6160 {I40} from 
+ 34CL2cL {+36}Ar(p,{+3}He), and 6160 {I40} from {+36}Ar(d,|a),(pol d,|a)        
 
 ### unweighted average comment (all non-limit values with/without unc):
- 34CL cL E$unweighted average of 6181.27 {I20} from {+33}S(p,|g) and 6160 {I40} 
- 34CL2cL from {+36}Ar(d,|a),(pol d,|a)                                          
+ 34CL cL E$unweighted average of 6181.27 {I20} from {+33}S(p,|g), 6160 {I40}    
+ 34CL2cL from {+36}Ar(p,{+3}He), and 6160 {I40} from {+36}Ar(d,|a),(pol d,|a)   
 
 ### Non-average comment:
- 34CL cL E$from {+33}S(p,|g). Other: 6160 {I40} from {+36}Ar(d,|a),(pol d,|a)   
+ 34CL cL E$from {+33}S(p,|g). Others: 6160 {I40} from {+36}Ar(p,{+3}He) and 6160
+ 34CL2cL {I40} from {+36}Ar(d,|a),(pol d,|a)                                    
 
 
-**************** Level=6321.7 in 34CL     *******************ID#=1-112
+**************** Level=6321.7 in 34CL     *******************ID#=1-111
 
 ------ average E------
 Data points of E record
@@ -5898,7 +5788,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=6370.2 in 34CL     *******************ID#=1-114
+**************** Level=6370.2 in 34CL     *******************ID#=1-113
 
 ------ average E------
 Data points of E record
@@ -5967,7 +5857,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=6545.9 in 34CL     *******************ID#=1-123
+**************** Level=6545.9 in 34CL     *******************ID#=1-122
 
 ------ average E------
 Data points of E record
@@ -6026,7 +5916,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=6719.8 in 34CL     *******************ID#=1-132
+**************** Level=6719.8 in 34CL     *******************ID#=1-131
 
 ------ average E------
 Data points of E record
@@ -6085,7 +5975,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=6737.3 in 34CL     *******************ID#=1-134
+**************** Level=6737.3 in 34CL     *******************ID#=1-133
 
 ------ average E------
 Data points of E record
@@ -6144,7 +6034,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=6807.1 in 34CL     *******************ID#=1-139
+**************** Level=6807.1 in 34CL     *******************ID#=1-138
 
 ------ average E------
 Data points of E record
@@ -6211,7 +6101,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,|g)                                                           
 
 
-**************** Level=6842.8 in 34CL     *******************ID#=1-141
+**************** Level=6842.8 in 34CL     *******************ID#=1-140
 
 ------ average E------
 Data points of E record
@@ -6226,7 +6116,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
 
    suggested adopted result:      6842.8(14)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -6259,7 +6149,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
 
    suggested adopted result:      1751.5(14)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -6278,7 +6168,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=6852.4 in 34CL     *******************ID#=1-142
+**************** Level=6852.4 in 34CL     *******************ID#=1-141
 
 ------ average E------
 Data points of E record
@@ -6337,7 +6227,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=6931.5 in 34CL     *******************ID#=1-148
+**************** Level=6931.5 in 34CL     *******************ID#=1-147
 
 ------ average E------
 Data points of E record
@@ -6396,7 +6286,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=6984.9 in 34CL     *******************ID#=1-151
+**************** Level=6984.9 in 34CL     *******************ID#=1-150
 
 ------ average E------
 Data points of E record
@@ -6455,7 +6345,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=6986.85 in 34CL     *******************ID#=1-152
+**************** Level=6986.85 in 34CL     *******************ID#=1-151
 
 ------ average E------
 Data points of E record
@@ -6503,7 +6393,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
 
    suggested adopted result:      1900.0(3)           
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -6522,7 +6412,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,|g)                                                           
 
 
-**************** Level=6991.41 in 34CL     *******************ID#=1-153
+**************** Level=6991.41 in 34CL     *******************ID#=1-152
 
 ------ average E------
 Data points of E record
@@ -6581,7 +6471,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7037.79 in 34CL     *******************ID#=1-155
+**************** Level=7037.79 in 34CL     *******************ID#=1-154
 
 ------ average E------
 Data points of E record
@@ -6619,7 +6509,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+36}Ar(p,{+3}He) and 7070 {I40} from {+36}Ar(d,|a),(pol d,|a)         
 
 
-**************** Level=7051.6 in 34CL     *******************ID#=1-156
+**************** Level=7051.6 in 34CL     *******************ID#=1-155
 
 ------ average E------
 Data points of E record
@@ -6655,7 +6545,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {I40} from {+36}Ar(d,|a),(pol d,|a)                                    
 
 
-**************** Level=7059.01 in 34CL     *******************ID#=1-157
+**************** Level=7059.01 in 34CL     *******************ID#=1-156
 
 ------ average E------
 Data points of E record
@@ -6733,7 +6623,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=7061.6 in 34CL     *******************ID#=1-158
+**************** Level=7061.6 in 34CL     *******************ID#=1-157
 
 ------ average E------
 Data points of E record
@@ -6769,7 +6659,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {I40} from {+36}Ar(d,|a),(pol d,|a)                                    
 
 
-**************** Level=7078.90 in 34CL     *******************ID#=1-159
+**************** Level=7078.90 in 34CL     *******************ID#=1-158
 
 ------ average E------
 Data points of E record
@@ -6838,7 +6728,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=7111.6 in 34CL     *******************ID#=1-160
+**************** Level=7111.6 in 34CL     *******************ID#=1-159
 
 ------ average E------
 Data points of E record
@@ -6872,7 +6762,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL3cL 7070 {I40} from {+36}Ar(d,|a),(pol d,|a)                               
 
 
-**************** Level=7123.2 in 34CL     *******************ID#=1-162
+**************** Level=7123.2 in 34CL     *******************ID#=1-161
 
 ------ average E------
 Data points of E record
@@ -6946,7 +6836,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7239.1 in 34CL     *******************ID#=1-173
+**************** Level=7239.1 in 34CL     *******************ID#=1-172
 
 ------ average E------
 Data points of E record
@@ -7005,7 +6895,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7249.8 in 34CL     *******************ID#=1-174
+**************** Level=7249.8 in 34CL     *******************ID#=1-173
 
 ------ average E------
 Data points of E record
@@ -7065,7 +6955,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL 0.14 ps {I5} from {+31}P(|a,n|g)                                       
 
 
-**************** Level=7249.8     Gamma=1934.8 in 34CL     *******************ID#=1-174-1
+**************** Level=7249.8     Gamma=1934.8 in 34CL     *******************ID#=1-173-1
 
 ------ average E------
 Data points of E record
@@ -7080,7 +6970,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
 
    suggested adopted result:      1935.0(5)           
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -7099,7 +6989,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cG {+27}Al({+12}C,|an|g)                                                  
 
 
-**************** Level=7250.0 in 34CL     *******************ID#=1-175
+**************** Level=7250.0 in 34CL     *******************ID#=1-174
 
 ------ average E------
 Data points of E record
@@ -7159,7 +7049,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL 0.14 ps {I5} from {+31}P(|a,n|g)                                       
 
 
-**************** Level=7250.0     Gamma=1935.0 in 34CL     *******************ID#=1-175-1
+**************** Level=7250.0     Gamma=1935.0 in 34CL     *******************ID#=1-174-1
 
 ------ average E------
 Data points of E record
@@ -7174,7 +7064,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
 
    suggested adopted result:      1935.0(5)           
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -7193,7 +7083,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cG {+27}Al({+12}C,|an|g)                                                  
 
 
-**************** Level=7321.6 in 34CL     *******************ID#=1-180
+**************** Level=7321.6 in 34CL     *******************ID#=1-179
 
 ------ average E------
 Data points of E record
@@ -7208,7 +7098,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
 
    suggested adopted result:      7321.6(10)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -7241,7 +7131,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
 
    suggested adopted result:      2245(1)             
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -7260,7 +7150,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=7336 in 34CL     *******************ID#=1-181
+**************** Level=7336 in 34CL     *******************ID#=1-180
 
 ------ average E------
 Data points of E record
@@ -7295,7 +7185,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+32}S(|a,d)                                                           
 
 
-**************** Level=7346.8 in 34CL     *******************ID#=1-182
+**************** Level=7346.8 in 34CL     *******************ID#=1-181
 
 ------ average E------
 Data points of E record
@@ -7365,7 +7255,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7358.5 in 34CL     *******************ID#=1-183
+**************** Level=7358.5 in 34CL     *******************ID#=1-182
 
 ------ average E------
 Data points of E record
@@ -7400,7 +7290,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+32}S(|a,d)                                                           
 
 
-**************** Level=7368.4 in 34CL     *******************ID#=1-184
+**************** Level=7368.4 in 34CL     *******************ID#=1-183
 
 ------ average E------
 Data points of E record
@@ -7470,7 +7360,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7406.4 in 34CL     *******************ID#=1-188
+**************** Level=7406.4 in 34CL     *******************ID#=1-187
 
 ------ average E------
 Data points of E record
@@ -7533,7 +7423,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=7450.1 in 34CL     *******************ID#=1-192
+**************** Level=7450.1 in 34CL     *******************ID#=1-191
 
 ------ average E------
 Data points of E record
@@ -7596,7 +7486,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=7495.6 in 34CL     *******************ID#=1-199
+**************** Level=7495.6 in 34CL     *******************ID#=1-198
 
 ------ average E------
 Data points of E record
@@ -7655,7 +7545,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7511.3 in 34CL     *******************ID#=1-201
+**************** Level=7511.3 in 34CL     *******************ID#=1-200
 
 ------ average E------
 Data points of E record
@@ -7714,7 +7604,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7525.7 in 34CL     *******************ID#=1-203
+**************** Level=7525.7 in 34CL     *******************ID#=1-202
 
 ------ average E------
 Data points of E record
@@ -7773,7 +7663,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7527.2 in 34CL     *******************ID#=1-204
+**************** Level=7527.2 in 34CL     *******************ID#=1-203
 
 ------ average E------
 Data points of E record
@@ -7840,7 +7730,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=7544.5 in 34CL     *******************ID#=1-209
+**************** Level=7544.5 in 34CL     *******************ID#=1-208
 
 ------ average E------
 Data points of E record
@@ -7899,7 +7789,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7649.3 in 34CL     *******************ID#=1-223
+**************** Level=7649.3 in 34CL     *******************ID#=1-222
 
 ------ average E------
 Data points of E record
@@ -7958,7 +7848,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7675.3 in 34CL     *******************ID#=1-227
+**************** Level=7675.3 in 34CL     *******************ID#=1-226
 
 ------ average E------
 Data points of E record
@@ -8017,7 +7907,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7690.4 in 34CL     *******************ID#=1-230
+**************** Level=7690.4 in 34CL     *******************ID#=1-229
 
 ------ average E------
 Data points of E record
@@ -8080,7 +7970,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=7720.1 in 34CL     *******************ID#=1-235
+**************** Level=7720.1 in 34CL     *******************ID#=1-234
 
 ------ average E------
 Data points of E record
@@ -8139,7 +8029,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7801.5 in 34CL     *******************ID#=1-243
+**************** Level=7801.5 in 34CL     *******************ID#=1-242
 
 ------ average E------
 Data points of E record
@@ -8169,7 +8059,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL 7800.5 {I11} from {+27}Al({+12}C,|an|g)                                
 
 
-**************** Level=7801.5     Gamma=2486.2 in 34CL     *******************ID#=1-243-1
+**************** Level=7801.5     Gamma=2486.2 in 34CL     *******************ID#=1-242-1
 
 ------ average E------
 Data points of E record
@@ -8199,7 +8089,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cG {I1} from {+27}Al({+12}C,|an|g)                                        
 
 
-**************** Level=7809.7 in 34CL     *******************ID#=1-245
+**************** Level=7809.7 in 34CL     *******************ID#=1-244
 
 ------ average E------
 Data points of E record
@@ -8269,7 +8159,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7827.3 in 34CL     *******************ID#=1-247
+**************** Level=7827.3 in 34CL     *******************ID#=1-246
 
 ------ average E------
 Data points of E record
@@ -8339,7 +8229,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7831.0 in 34CL     *******************ID#=1-248
+**************** Level=7831.0 in 34CL     *******************ID#=1-247
 
 ------ average E------
 Data points of E record
@@ -8409,7 +8299,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7848.8 in 34CL     *******************ID#=1-249
+**************** Level=7848.8 in 34CL     *******************ID#=1-248
 
 ------ average E------
 Data points of E record
@@ -8468,7 +8358,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7853.4 in 34CL     *******************ID#=1-250
+**************** Level=7853.4 in 34CL     *******************ID#=1-249
 
 ------ average E------
 Data points of E record
@@ -8538,7 +8428,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7859.2 in 34CL     *******************ID#=1-251
+**************** Level=7859.2 in 34CL     *******************ID#=1-250
 
 ------ average E------
 Data points of E record
@@ -8608,7 +8498,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=7878.6 in 34CL     *******************ID#=1-252
+**************** Level=7878.6 in 34CL     *******************ID#=1-251
 
 ------ average E------
 Data points of E record
@@ -8667,7 +8557,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=7886.1 in 34CL     *******************ID#=1-253
+**************** Level=7886.1 in 34CL     *******************ID#=1-252
 
 ------ average E------
 Data points of E record
@@ -8730,7 +8620,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=7898.8 in 34CL     *******************ID#=1-254
+**************** Level=7898.8 in 34CL     *******************ID#=1-253
 
 ------ average E------
 Data points of E record
@@ -8793,7 +8683,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=7909.5 in 34CL     *******************ID#=1-256
+**************** Level=7909.5 in 34CL     *******************ID#=1-255
 
 ------ average E------
 Data points of E record
@@ -8860,7 +8750,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=7909.6 in 34CL     *******************ID#=1-257
+**************** Level=7909.6 in 34CL     *******************ID#=1-256
 
 ------ average E------
 Data points of E record
@@ -8875,7 +8765,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
 
    suggested adopted result:      7909.6(10)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -8907,8 +8797,8 @@ Averaging results:
          unweighted average:      2851.0(0)           
            (of all values)        chi**2/(n-1)=0.000     [critical=4.605]
 
-   suggested adopted result:      2851.0(10)          
-       (Weighted-Of-All)
+   suggested adopted result:      2851(1)             
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -8927,7 +8817,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=7934.7 in 34CL     *******************ID#=1-259
+**************** Level=7934.7 in 34CL     *******************ID#=1-258
 
 ------ average E------
 Data points of E record
@@ -8986,7 +8876,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7943.1 in 34CL     *******************ID#=1-260
+**************** Level=7943.1 in 34CL     *******************ID#=1-259
 
 ------ average E------
 Data points of E record
@@ -9045,7 +8935,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7967.2 in 34CL     *******************ID#=1-262
+**************** Level=7967.2 in 34CL     *******************ID#=1-261
 
 ------ average E------
 Data points of E record
@@ -9104,7 +8994,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7977.5 in 34CL     *******************ID#=1-264
+**************** Level=7977.5 in 34CL     *******************ID#=1-263
 
 ------ average E------
 Data points of E record
@@ -9163,7 +9053,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=7980.3 in 34CL     *******************ID#=1-265
+**************** Level=7980.3 in 34CL     *******************ID#=1-264
 
 ------ average E------
 Data points of E record
@@ -9222,7 +9112,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=8029.9 in 34CL     *******************ID#=1-272
+**************** Level=8029.9 in 34CL     *******************ID#=1-271
 
 ------ average E------
 Data points of E record
@@ -9281,7 +9171,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=8048.3 in 34CL     *******************ID#=1-275
+**************** Level=8048.3 in 34CL     *******************ID#=1-274
 
 ------ average E------
 Data points of E record
@@ -9348,7 +9238,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,p),(p,p'|g):resonances                                        
 
 
-**************** Level=8070.5 in 34CL     *******************ID#=1-278
+**************** Level=8070.5 in 34CL     *******************ID#=1-277
 
 ------ average E------
 Data points of E record
@@ -9407,7 +9297,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=8154.6 in 34CL     *******************ID#=1-287
+**************** Level=8154.6 in 34CL     *******************ID#=1-286
 
 ------ average E------
 Data points of E record
@@ -9466,7 +9356,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=8155.5 in 34CL     *******************ID#=1-288
+**************** Level=8155.5 in 34CL     *******************ID#=1-287
 
 ------ average E------
 Data points of E record
@@ -9496,7 +9386,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL 8154.2 {I10} from {+33}S(p,|g)                                         
 
 
-**************** Level=8192.5 in 34CL     *******************ID#=1-292
+**************** Level=8192.5 in 34CL     *******************ID#=1-291
 
 ------ average E------
 Data points of E record
@@ -9555,7 +9445,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=8214.86 in 34CL     *******************ID#=1-296
+**************** Level=8214.86 in 34CL     *******************ID#=1-295
 
 ------ average E------
 Data points of E record
@@ -9618,7 +9508,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL {+33}S(p,|g)                                                           
 
 
-**************** Level=8236.30 in 34CL     *******************ID#=1-298
+**************** Level=8236.30 in 34CL     *******************ID#=1-297
 
 ------ average E------
 Data points of E record
@@ -9677,7 +9567,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=8260.12 in 34CL     *******************ID#=1-302
+**************** Level=8260.12 in 34CL     *******************ID#=1-301
 
 ------ average E------
 Data points of E record
@@ -9736,7 +9626,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=8317.7 in 34CL     *******************ID#=1-309
+**************** Level=8317.7 in 34CL     *******************ID#=1-308
 
 ------ average E------
 Data points of E record
@@ -9795,7 +9685,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=8372.5 in 34CL     *******************ID#=1-315
+**************** Level=8372.5 in 34CL     *******************ID#=1-314
 
 ------ average E------
 Data points of E record
@@ -9829,7 +9719,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL cL E$from {+33}S(p,|g). Other: 8390 {I20} from {+32}S(|a,d)               
 
 
-**************** Level=8381.3 in 34CL     *******************ID#=1-317
+**************** Level=8381.3 in 34CL     *******************ID#=1-316
 
 ------ average E------
 Data points of E record
@@ -9899,7 +9789,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=8386.5 in 34CL     *******************ID#=1-318
+**************** Level=8386.5 in 34CL     *******************ID#=1-317
 
 ------ average E------
 Data points of E record
@@ -9969,7 +9859,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34CL2cL from {+33}S(p,p),(p,p'|g):resonances                                   
 
 
-**************** Level=8390.0 in 34CL     *******************ID#=1-319
+**************** Level=8390.0 in 34CL     *******************ID#=1-318
 
 ------ average E------
 Data points of E record
