@@ -105,6 +105,15 @@ Selection rules for each transition type:
    *   ΔJ = 2; Δπ = Yes
    *   Result: 1/2−, 9/2−
 
+| Individual G | cG Argument | Adopted G  | cG Argument                 | To deduce Jπ |
+| ---------- | -------- | --------- | ------------------------ | -------------------------- |
+| M1+E2      | DCO+POL  | M1+E2     |                          | M1+E2, ΔJ=1
+| E1+M2      | DCO+POL  | E1+M2     |                          | E1+M2, ΔJ=1
+| D+Q        | DCO/γ(θ) | M1+E2     | M2 ruled out by RUL      | M1+E2, ΔJ=1
+| D+Q        | DCO/γ(θ) | (M1+E2)   | Δπ=no from level scheme  | 
+| D+Q        | DCO/γ(θ) | (E1+M2)   | Δπ=yes from level scheme |
+| D(+Q)      | DCO/γ(θ) | (M1(+E2)) | Δπ=no from level scheme  |
+| D(+Q)      | DCO/γ(θ) | (E1(+M2)) | Δπ=yes from level scheme |
 
 Assigning M1+E2 or (M1+E2) in G-record M field:
 
