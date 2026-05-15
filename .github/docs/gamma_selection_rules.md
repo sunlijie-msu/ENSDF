@@ -105,15 +105,8 @@ Selection rules for each transition type:
    *   ΔJ = 2; Δπ = Yes
    *   Result: 1/2−, 9/2−
 
-| Individual G | cG Argument | Adopted G  | cG Argument                 | To deduce Jπ |
-| ---------- | -------- | --------- | ------------------------ | -------------------------- |
-| M1+E2      | DCO+POL  | M1+E2     |                          | M1+E2, ΔJ=1
-| E1+M2      | DCO+POL  | E1+M2     |                          | E1+M2, ΔJ=1
-| D+Q        | DCO/γ(θ) | M1+E2     | M2 ruled out by RUL      | M1+E2, ΔJ=1
-| D+Q        | DCO/γ(θ) | (M1+E2)   | Δπ=no from level scheme  | 
-| D+Q        | DCO/γ(θ) | (E1+M2)   | Δπ=yes from level scheme |
-| D(+Q)      | DCO/γ(θ) | (M1(+E2)) | Δπ=no from level scheme  |
-| D(+Q)      | DCO/γ(θ) | (E1(+M2)) | Δπ=yes from level scheme |
+G-record M field multipolarity assignments
+The adopted multipolarity is then used to deduce Jπ of levels.
 
 Assigning M1+E2 or (M1+E2) in G-record M field:
 
@@ -139,6 +132,22 @@ cG M$D+Q from |g|g(|q)(DCO) in dataset. |D|p=no from level scheme.
 
 If D(+Q) is firm, the corresponding converted form is M1(+E2).
 The same logic applies to assigning and using E1+M2.
+
+
+| Individual G | Experiment | Adopted G | cG M$comment             | cL J$comment  |
+| ------------ | ---------- | --------- | ------------------------ | ------------- |
+| M1+E2        | DCO+POL    | M1+E2     |                          | M1+E2, ΔJ=1   |
+| E1+M2        | DCO+POL    | E1+M2     |                          | E1+M2, ΔJ=1   |
+| D+Q          | DCO        | M1+E2     | M2 ruled out by RUL      | M1+E2, ΔJ=1   |
+| D+Q          | DCO        | (M1+E2)   | Δπ=no from level scheme  | D+Q, ΔJ=1     |
+| D+Q          | DCO        | (E1+M2)   | Δπ=yes from level scheme | D+Q, ΔJ=1     |
+| D(+Q)        | DCO        | (M1(+E2)) | Δπ=no from level scheme  | D(+Q), ΔJ=1   |
+| D(+Q)        | DCO        | (E1(+M2)) | Δπ=yes from level scheme | D(+Q), ΔJ=1   |
+| D+Q          | γ(θ)       | M1+E2     | M2 ruled out by RUL      | M1+E2, ΔJ=0,1 |
+| D+Q          | γ(θ)       | (M1+E2)   | Δπ=no from level scheme  | D+Q, ΔJ=0,1   |
+| D+Q          | γ(θ)       | (E1+M2)   | Δπ=yes from level scheme | D+Q, ΔJ=0,1   |
+| D(+Q)        | γ(θ)       | (M1(+E2)) | Δπ=no from level scheme  | D(+Q), ΔJ=0,1 |
+| D(+Q)        | γ(θ)       | (E1(+M2)) | Δπ=yes from level scheme | D(+Q), ΔJ=0,1 |
 
 ---
 
