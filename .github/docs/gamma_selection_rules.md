@@ -137,7 +137,9 @@ The same logic applies to assigning and using E1+M2.
 | Individual G | Measurement              | Adopted G | cG M$comment             | cL J$comment                   |
 | ------------ | ------------------------ | --------- | ------------------------ | ------------------------------ |
 | M1+E2        | DCO stretched D, POL     | M1+E2     |                          | M1+E2, ΔJ=1, Δπ=no             |
+| M1(+E2)      | DCO stretched D, POL     | M1(+E2)   |                          | M1(+E2), ΔJ=1, Δπ=no           |
 | E1+M2        | DCO stretched D, POL     | E1+M2     |                          | E1+M2, ΔJ=1, Δπ=yes            |
+| E1(+M2)      | DCO stretched D, POL     | E1(+M2)   |                          | E1(+M2), ΔJ=1, Δπ=yes          |
 | D+Q          | DCO stretched D          | M1+E2     | M2 ruled out by RUL      | M1+E2, ΔJ=1, Δπ=no             |
 | D+Q          | DCO stretched D          | (M1+E2)   | Δπ=no from level scheme  | D+Q, ΔJ=1                      |
 | D+Q          | DCO stretched D          | (E1+M2)   | Δπ=yes from level scheme | D+Q, ΔJ=1                      |
