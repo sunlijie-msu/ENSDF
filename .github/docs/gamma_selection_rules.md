@@ -158,7 +158,9 @@ The same logic applies to assigning and using E1+M2.
 | D+Q          | γ(θ)/DCO mixed           | (E1+M2)   | Δπ=yes from level scheme | D+Q, ΔJ=0,1                    |
 | D(+Q)        | γ(θ)/DCO mixed           | (M1(+E2)) | Δπ=no from level scheme  | D(+Q), ΔJ=0,1                  |
 | D(+Q)        | γ(θ)/DCO mixed           | (E1(+M2)) | Δπ=yes from level scheme | D(+Q), ΔJ=0,1                  |
-|              |                          | [M1,E2]   | Purely from level scheme | Do not use                     |
+|              |                          | [M1,E2]   | Purely from level scheme | Do not use to deduce Jπ        |
+
+If Δπ is unknown from level scheme or RUL does not rule out M2, keep the original multipolarity assignment.
 
 ---
 

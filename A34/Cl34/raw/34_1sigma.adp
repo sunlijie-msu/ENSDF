@@ -1,5 +1,5 @@
 Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 05/07/2026)
-Generated at: Thu 05/14/2026 at 11:54:52 PM EDT                                 
+Generated at: Fri 05/15/2026 at 01:30:44 AM EDT                                 
                                                                                 
  34CL    ADOPTED LEVELS, GAMMAS                                  ENSDF    202609
  34CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
