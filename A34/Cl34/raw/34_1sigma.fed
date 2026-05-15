@@ -1,5 +1,5 @@
 Program for consistency check: output for feeding gammas of levels (version 05/07/2026)
-Generated at: Thu 05/14/2026 at 05:46:41 PM EDT
+Generated at: Thu 05/14/2026 at 11:54:46 PM EDT
 
 
 
@@ -61,7 +61,7 @@ Generated at: Thu 05/14/2026 at 05:46:41 PM EDT
                        33S(P,G)--> EL=2375.7            4                 EG=2375.6    RI=2.0(LT)               FL=0                 0+        
 
     GAMMA=2579.4
-         ADOPTED LEVELS, GAMMAS--> EL=2580.3            1+                EG=2579.4    RI=100.0(24)   D         FL=0.0               0+        
+         ADOPTED LEVELS, GAMMAS--> EL=2580.3            1+                EG=2579.4    RI=100.0(24)   (M1)      FL=0.0               0+        
    34AR EC+B+ DECAY (0.84646 S)--> EL=2579.5            1+                EG=2579.4    RI=33.8(8)               FL=0                 0+        
                     32S(3HE,PG)--> EL=2581              1                 EG=2581      RI=100         D         FL=0.0               0+        
                        33S(P,G)--> EL=2580.3                              EG=2580.2    RI=100                   FL=0                 0+        
@@ -365,7 +365,7 @@ Generated at: Thu 05/14/2026 at 05:46:41 PM EDT
                40CA(MU-,NUA2NG)--> EL=1230.3            2+                EG=1083.9    RI=0.15(LT)              FL=146.4             3+        
 
     GAMMA=1740.8
-         ADOPTED LEVELS, GAMMAS--> EL=1887.29           2+                EG=1740.8    RI=72.8(16)    D+Q       FL=146.36            3+        
+         ADOPTED LEVELS, GAMMAS--> EL=1887.29           2+                EG=1740.8    RI=72.8(16)    M1+E2     FL=146.36            3+        
                   27AL(12C,ANG)--> EL=1887.2            2+                EG=1741      RI=                      FL=146.36            3+        
                       31P(A,NG)--> EL=1887                                EG=1741      RI=                      FL=146               3         
                     32S(3HE,PG)--> EL=1887.6            2                 EG=1740.2    RI=38(3)       D+Q       FL=146.36            3+        
@@ -772,7 +772,7 @@ Generated at: Thu 05/14/2026 at 05:46:41 PM EDT
                        33S(P,G)--> EL=665.3             1                 EG=204.1     RI=0.3(LT)               FL=461.2             1+        
 
     GAMMA=769.25
-         ADOPTED LEVELS, GAMMAS--> EL=1230.28           2+                EG=769.25    RI=100.0(14)   D+Q       FL=461.01            1+        
+         ADOPTED LEVELS, GAMMAS--> EL=1230.28           2+                EG=769.25    RI=100.0(14)   (M1+E2)   FL=461.01            1+        
                 9BE(37CA,34CLG)--> EL=1230                                EG=769       RI=12(6)                 FL=461                         
                   27AL(12C,ANG)--> EL=1230.2            2+                EG=769       RI=19.4(10)    D+Q       FL=460.98            1+        
                       31P(A,NG)--> EL=1230                                EG=769       RI=                      FL=461                         
@@ -1103,7 +1103,7 @@ Generated at: Thu 05/14/2026 at 05:46:41 PM EDT
 --- Gamma feedings to level: EL=665.57     JPI=1+
 
     GAMMA=564.67
-         ADOPTED LEVELS, GAMMAS--> EL=1230.28           2+                EG=564.67    RI=91(9)       D+Q       FL=665.57            1+        
+         ADOPTED LEVELS, GAMMAS--> EL=1230.28           2+                EG=564.67    RI=91(9)       M1+E2     FL=665.57            1+        
                   27AL(12C,ANG)--> EL=1230.2            2+                EG=564       RI=                      FL=666.2             1+        
                       31P(A,NG)--> EL=1230                                EG=565       RI=                      FL=665                         
                     32S(3HE,PG)--> EL=1230.26           2                 EG=564.67    RI=28(2)       D+Q       FL=665.58            1         
@@ -1430,7 +1430,7 @@ Generated at: Thu 05/14/2026 at 05:46:41 PM EDT
                        33S(P,G)--> EL=1887.29           2+                EG=656.95    RI=3.5(LT)               FL=1230.33           2+        
 
     GAMMA=928
-         ADOPTED LEVELS, GAMMAS--> EL=2157.9            2+                EG=928       RI=8.61(31)    M1(+E2)   FL=1230.28           2+        
+         ADOPTED LEVELS, GAMMAS--> EL=2157.9            2+                EG=928       RI=8.61(31)    (M1(+E2)) FL=1230.28           2+        
                   27AL(12C,ANG)--> EL=2158.2            2+                EG=928       RI=                      FL=1230.2            2+        
                     32S(3HE,PG)--> EL=2158.7                              EG=928.4     RI=7.0(20)               FL=1230.26           2         
                        33S(P,G)--> EL=2157.9            2+                EG=927.6     RI=8.59(31)    D(+Q)     FL=1230.33           2+        
@@ -1882,13 +1882,15 @@ Generated at: Thu 05/14/2026 at 05:46:41 PM EDT
                        33S(P,G)--> EL=2611.03           3                 EG=453.1     RI=61(5)                 FL=2157.9            2+        
 
     GAMMA=563
-         ADOPTED LEVELS, GAMMAS--> EL=2721.09           2-                EG=563       RI=14.4(8)     D+Q       FL=2157.9            2+        
-                  27AL(12C,ANG)--> EL=2721.13           2-                EG=563       RI=12.4(7)     D+Q       FL=2158.2            2+        
-                    32S(3HE,PG)--> EL=2721.8            2                 EG=563       RI=16(2)                 FL=2158.7                      
+         ADOPTED LEVELS, GAMMAS--> EL=2721.09           2-                EG=563       RI=14.4(8)     (E1+M2)   FL=2157.9            2+        
+*                 24MG(12C,PNG)--> EL=2720.78           2-                EG=564       RI=                      FL=2158.05                     
+*                 27AL(12C,ANG)--> EL=2721.13           2-                EG=563       RI=12.4(7)     D+Q       FL=2158.2            2+        
+                    32S(3HE,PG)--> EL=2721.8            2                 EG=540       RI=16(2)                 FL=2181.5            1,2,3     
 *                      33S(P,G)--> EL=2721.3            2                 EG=563.4     RI=14.9(11)              FL=2157.9            2+        
 
-    GAMMA=971
-   34AR EC+B+ DECAY (0.84646 S)--> EL=3129.0            1+                EG=971       RI=0.34(LT)              FL=2158              2+        
+    GAMMA=971.2
+         ADOPTED LEVELS, GAMMAS--> EL=3129.11           1+                EG=971.2     RI=0.67(LT)    [M1,E2]   FL=2157.9            2+        
+?  34AR EC+B+ DECAY (0.84646 S)--> EL=3129.0            1+                EG=971       RI=0.34(LT)              FL=2158              2+        
 
     GAMMA=1176.1
          ADOPTED LEVELS, GAMMAS--> EL=3334.0            (1+,2+,3+)        EG=1176.1    RI=100(15)     [M1,E2]   FL=2157.9            2+        
@@ -2115,9 +2117,14 @@ Generated at: Thu 05/14/2026 at 05:46:41 PM EDT
 
 
 --- Gamma feedings to level: EL=2181.09    JPI=3+
+(* indicates possibly uncertain placements made by the program)
 
-    GAMMA=540
+    GAMMA=563
+         ADOPTED LEVELS, GAMMAS--> EL=2721.09           2-                EG=563       RI=14.4(8)     (E1+M2)   FL=2157.9            2+        
+*                 24MG(12C,PNG)--> EL=2720.78           2-                EG=564       RI=                      FL=2158.05                     
+*                 27AL(12C,ANG)--> EL=2721.13           2-                EG=563       RI=12.4(7)     D+Q       FL=2158.2            2+        
                     32S(3HE,PG)--> EL=2721.8            2                 EG=540       RI=16(2)                 FL=2181.5            1,2,3     
+*                      33S(P,G)--> EL=2721.3            2                 EG=563.4     RI=14.9(11)              FL=2157.9            2+        
 
     GAMMA=948.01
          ADOPTED LEVELS, GAMMAS--> EL=3129.11           1+                EG=948.01    RI=0.65(LT)    [E2]      FL=2181.09           3+        
@@ -3030,6 +3037,7 @@ Generated at: Thu 05/14/2026 at 05:46:41 PM EDT
          ADOPTED LEVELS, GAMMAS--> EL=4743.15           6-                EG=1143.0    RI=100(5)      E2        FL=3600.14           4-        
                   24MG(12C,PNG)--> EL=4743.08           6                 EG=1143.0    RI=37(2)       Q(+O)     FL=3599.90           4-        
                   27AL(12C,ANG)--> EL=4743.59           6-                EG=1143.0    RI=34.4(18)    E2        FL=3600.46           4-        
+                      31P(A,NG)--> EL=4743              6                 EG=1143      RI=            Q(+O)     FL=3600              4         
 
     GAMMA=1224.1
          ADOPTED LEVELS, GAMMAS--> EL=4824.18           5+                EG=1224.1    RI=21.1(19)    E1(+M2)   FL=3600.14           4-        
@@ -3776,6 +3784,7 @@ Generated at: Thu 05/14/2026 at 05:46:41 PM EDT
          ADOPTED LEVELS, GAMMAS--> EL=5314.95           7+                EG=490.8     RI=100.0(14)   E2        FL=4824.18           5+        
                   24MG(12C,PNG)--> EL=5314.86           7                 EG=490.8     RI=74(1)       Q(+O)     FL=4824.03           5         
                   27AL(12C,ANG)--> EL=5315.4            7+                EG=490.9     RI=253(13)     E2        FL=4824.52           5+        
+                      31P(A,NG)--> EL=5315              7                 EG=491       RI=                      FL=4824                        
 
     GAMMA=1384.0
          ADOPTED LEVELS, GAMMAS--> EL=6208.2            4(-)              EG=1384.0    RI=1.04(52)    [E1]      FL=4824.18           5+        

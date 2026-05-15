@@ -127,8 +127,8 @@ Based on the Step 1 classification:
 
 *   If $\delta$ is not given, assign Q in M field.
 *   If $|\delta| < 1$ is given, assign Q+O in M field.
-*   If $|\delta| > 1$ is given, assign D+Q in M field because dipole is the weaker component.
 *   Then look at spins, the level scheme should indicate $\Delta J = 2$; but if it indicates $\Delta J = 1$, assign D+Q in M field and flag this discrepancy for user review.
+*   If $|\delta| > 1$ is given, assign D+Q in M field because dipole is the weaker component.
 
 ##### For Transitions Marked ΔJ=0
 
