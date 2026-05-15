@@ -134,32 +134,35 @@ If D(+Q) is firm, the corresponding converted form is M1(+E2).
 The same logic applies to assigning and using E1+M2.
 
 
-| Individual G | Measurement              | Adopted G | cG M$comment             | cL J$comment                   |
-| ------------ | ------------------------ | --------- | ------------------------ | ------------------------------ |
-| M1+E2        | DCO stretched D, POL     | M1+E2     |                          | M1+E2, ΔJ=1, Δπ=no             |
-| M1(+E2)      | DCO stretched D, POL     | M1(+E2)   |                          | M1(+E2), ΔJ=1, Δπ=no           |
-| E1+M2        | DCO stretched D, POL     | E1+M2     |                          | E1+M2, ΔJ=1, Δπ=yes            |
-| E1(+M2)      | DCO stretched D, POL     | E1(+M2)   |                          | E1(+M2), ΔJ=1, Δπ=yes          |
-| D+Q          | DCO stretched D          | M1+E2     | M2 ruled out by RUL      | M1+E2, ΔJ=1, Δπ=no             |
-| D+Q          | DCO stretched D          | (M1+E2)   | Δπ=no from level scheme  | D+Q, ΔJ=1                      |
-| D+Q          | DCO stretched D          | (E1+M2)   | Δπ=yes from level scheme | D+Q, ΔJ=1                      |
-| D(+Q)        | DCO stretched D          | (M1(+E2)) | Δπ=no from level scheme  | D(+Q), ΔJ=1                    |
-| D(+Q)        | DCO stretched D          | (E1(+M2)) | Δπ=yes from level scheme | D(+Q), ΔJ=1                    |
-| D+Q          | DCO stretched Q with δ>1 | M1+E2     | M2 ruled out by RUL      | M1+E2, ΔJ=0,1, Δπ=no           |
-| D+Q          | DCO stretched Q with δ>1 | (M1+E2)   | Δπ=no from level scheme  | D+Q, ΔJ=0,1                    |
-| D+Q          | DCO stretched Q with δ>1 | (E1+M2)   | Δπ=yes from level scheme | D+Q, ΔJ=0,1                    |
-| D+Q          | DCO consistent with ΔJ=0 | M1+E2     | M2 ruled out by RUL      | M1+E2, Δπ=no, Avoid using ΔJ=0 |
-| D+Q          | DCO consistent with ΔJ=0 | (M1+E2)   | Δπ=no from level scheme  | Avoid using ΔJ=0               |
-| D+Q          | DCO consistent with ΔJ=0 | (E1+M2)   | Δπ=yes from level scheme | Avoid using ΔJ=0               |
-| D(+Q)        | DCO consistent with ΔJ=0 | (M1(+E2)) | Δπ=no from level scheme  | Avoid using ΔJ=0               |
-| D(+Q)        | DCO consistent with ΔJ=0 | (E1(+M2)) | Δπ=yes from level scheme | Avoid using ΔJ=0               |
-| D+Q          | γ(θ)/DCO mixed           | M1+E2     | M2 ruled out by RUL      | M1+E2, ΔJ=0,1, Δπ=no           |
-| D+Q          | γ(θ)/DCO mixed           | (M1+E2)   | Δπ=no from level scheme  | D+Q, ΔJ=0,1                    |
-| D+Q          | γ(θ)/DCO mixed           | (E1+M2)   | Δπ=yes from level scheme | D+Q, ΔJ=0,1                    |
-| D(+Q)        | γ(θ)/DCO mixed           | (M1(+E2)) | Δπ=no from level scheme  | D(+Q), ΔJ=0,1                  |
-| D(+Q)        | γ(θ)/DCO mixed           | (E1(+M2)) | Δπ=yes from level scheme | D(+Q), ΔJ=0,1                  |
-|              |                          | [M1,E2]   | Purely from level scheme | Do not use to deduce Jπ        |
+| Individual G | Measurement                      | Adopted G | cG M$comment             | cL J$comment                   |
+| ------------ | -------------------------------- | --------- | ------------------------ | ------------------------------ |
+| M1+E2        | DCO stretched D, POL             | M1+E2     |                          | M1+E2, ΔJ=1, Δπ=no             |
+| M1(+E2)      | DCO stretched D, POL             | M1(+E2)   |                          | M1(+E2), ΔJ=1, Δπ=no           |
+| E1+M2        | DCO stretched D, POL             | E1+M2     |                          | E1+M2, ΔJ=1, Δπ=yes            |
+| E1(+M2)      | DCO stretched D, POL             | E1(+M2)   |                          | E1(+M2), ΔJ=1, Δπ=yes          |
+| D+Q          | DCO stretched D with δ<1         | M1+E2     | M2 ruled out by RUL      | M1+E2, ΔJ=1, Δπ=no             |
+| D+Q          | DCO stretched D with δ<1         | (M1+E2)   | Δπ=no from level scheme  | D+Q, ΔJ=1                      |
+| D+Q          | DCO stretched D with δ<1         | (E1+M2)   | Δπ=yes from level scheme | D+Q, ΔJ=1                      |
+| D(+Q)        | DCO stretched D with δ≈0         | (M1(+E2)) | Δπ=no from level scheme  | D(+Q), ΔJ=1                    |
+| D(+Q)        | DCO stretched D with δ≈0         | (E1(+M2)) | Δπ=yes from level scheme | D(+Q), ΔJ=1                    |
+| D+Q          | DCO stretched Q with δ>1         | M1+E2     | M2 ruled out by RUL      | M1+E2, ΔJ=0,1, Δπ=no           |
+| D+Q          | DCO stretched Q with δ>1         | (M1+E2)   | Δπ=no from level scheme  | D+Q, ΔJ=0,1                    |
+| D+Q          | DCO stretched Q with δ>1         | (E1+M2)   | Δπ=yes from level scheme | D+Q, ΔJ=0,1                    |
+| D+Q          | DCO consistent with ΔJ=0 and δ<1 | M1+E2     | M2 ruled out by RUL      | M1+E2, Δπ=no, Avoid using ΔJ=0 |
+| D+Q          | DCO consistent with ΔJ=0 and δ<1 | (M1+E2)   | Δπ=no from level scheme  | Avoid using ΔJ=0               |
+| D+Q          | DCO consistent with ΔJ=0 and δ<1 | (E1+M2)   | Δπ=yes from level scheme | Avoid using ΔJ=0               |
+| D(+Q)        | DCO consistent with ΔJ=0 and δ≈0 | (M1(+E2)) | Δπ=no from level scheme  | Avoid using ΔJ=0               |
+| D(+Q)        | DCO consistent with ΔJ=0 and δ≈0 | (E1(+M2)) | Δπ=yes from level scheme | Avoid using ΔJ=0               |
+| D+Q          | γ(θ)/DCO mixed                   | M1+E2     | M2 ruled out by RUL      | M1+E2, ΔJ=0,1, Δπ=no           |
+| D+Q          | γ(θ)/DCO mixed                   | (M1+E2)   | Δπ=no from level scheme  | D+Q, ΔJ=0,1                    |
+| D+Q          | γ(θ)/DCO mixed                   | (E1+M2)   | Δπ=yes from level scheme | D+Q, ΔJ=0,1                    |
+| D(+Q)        | γ(θ)/DCO mixed                   | (M1(+E2)) | Δπ=no from level scheme  | D(+Q), ΔJ=0,1                  |
+| D(+Q)        | γ(θ)/DCO mixed                   | (E1(+M2)) | Δπ=yes from level scheme | D(+Q), ΔJ=0,1                  |
+|              |                                  | [M1,E2]   | Purely from level scheme | Do not use to deduce Jπ        |
 
+If lifetime is available and rules out M2 by RUL, then D+Q can be converted to firm M1+E2.
+If RUL does not rule out M2, then D+Q can be converted to tentative (M1+E2) if level scheme indicates Δπ=no.
+RUL takes precedence over level scheme for this conversion.
 If Δπ is unknown from level scheme or RUL does not rule out M2, keep the original multipolarity assignment.
 
 ---
