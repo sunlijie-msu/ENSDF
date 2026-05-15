@@ -64,7 +64,7 @@ cL J$L=<L1+L2,L3+L4> from <Jπ_target> in <reaction>: L=<L1+L2> gives <Jπ_resul
 
 <Jπ_results> is the OR of {<Jπ_results1AND2>; <Jπ_results3AND4>}.
 
-Final Jπ results that go to the Level-record J|p field usually take the AND of each <Jπ_results> from different datasets into account.
+Usually, take the AND of each <Jπ_results> from different datasets to deduce the final Jπ that goes to the Level-record Jπ field.
 
 
 ### Analyzing power constraint
