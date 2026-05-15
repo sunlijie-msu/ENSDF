@@ -250,7 +250,7 @@ def _parse_j_block(texts: List[str], start_line: int) -> List[QuotedRef]:
         text = text.lstrip(' ,;')
 
         match = re.match(
-            r'(?P<jpi>.+?)\s*,?\s*(?P<level>g\.s\.)\b',
+            r'(?P<jpi>[^.]+?)\s*,?\s*(?P<level>g\.s\.)(?=\s|[,;(]|$)',
             text,
         )
         if match:
@@ -299,7 +299,9 @@ def _parse_j_block(texts: List[str], start_line: int) -> List[QuotedRef]:
         cleaned_between = between.replace('(|q)', ' ').strip(' ,;')
         if cleaned_between:
             token = cleaned_between.split(',', 1)[0].strip()
-            if token and token not in {'DJ', 'RUL'} and not token.startswith('|DJ='):
+            if (token and token not in {'DJ', 'RUL'}
+                    and not token.startswith('|DJ=')
+                    and not re.match(r'\(I[|=]', token)):
                 multipolarity = token
 
         context = full[gamma_match.start():next_start].strip(' ,;')
