@@ -1,9 +1,20 @@
 Program for ENSDF check: output for Format Error and Warnings (version 05/07/2026)
-Generated at: Thu 05/14/2026 at 11:54:40 PM EDT
+Generated at: Fri 05/15/2026 at 03:38:14 AM EDT
 
 ****************************************
-     Total 1 error 1 warning
+     Total 2 errors 5 warnings
 ****************************************
+
+-----------------------------------------------------------------------------------------
+    In file: D:\X\ND\ENSDF\A34\Cl34\new\Cl34_27al_12c_ang.ens
+-----------------------------------------------------------------------------------------
+
+#########################################################################################
+### In dataset <34CL: 27AL(12C,ANG)>
+
+    257.  34CL cG $R{-DCO}(Q)=0.74 {I8} and POL=+0.016 {I2} indicate E1+M2. 8- to 7+ from 2014Bi03 level   
+                                                                                         * <E> Line longer than 80
+
 
 -----------------------------------------------------------------------------------------
     In file: D:\X\ND\ENSDF\A34\Cl34\new\Cl34_33s_p_p_resonances.ens
@@ -27,6 +38,19 @@ Generated at: Thu 05/14/2026 at 11:54:40 PM EDT
      29.  34CL t     |m x ray       Energy       Intensity in percent                    
          *************************************************************                     <W> Possible duplicate line
 
+
+-----------------------------------------------------------------------------------------
+    In file: D:\X\ND\ENSDF\A34\Cl34\new\Cl34_adopted.ens
+-----------------------------------------------------------------------------------------
+
+#########################################################################################
+### In dataset <34CL: ADOPTED LEVELS, GAMMAS>
+
+     39.  34CL cG E(F),RI(F),M(F),MR(F)$From |g|g(|q)(DCO) and |g|g(|q)(POL) in          
+                    *                                                                      <W> Unreferenced flag=F for G record
+                          *                                                                <W> Unreferenced flag=F for G record
+                               *                                                           <W> Unreferenced flag=F for G record
+                                     *                                                     <W> Unreferenced flag=F for G record
 
 
 End of report

@@ -1,5 +1,5 @@
 Program for consistency check: output for averaging results for gamma energies and intensities (version 05/07/2026)
-Generated at: Thu 05/14/2026 at 11:54:53 PM EDT
+Generated at: Fri 05/15/2026 at 03:38:19 AM EDT
 
 **************** Level=146.36 in 34CL     *******************ID#=1-2
 
@@ -1662,8 +1662,7 @@ Data points of T record
 
 Averaging results:
            weighted average:      0.17(4)              (internal)
-                                  0.17(7)              (external, combined weight)
-                                  0.17(+7-7)           (external, separate weights)
+                                  0.17(7)              (external)
                                   chi**2/(n-1)=2.846     [critical=4.605]
          unweighted average:      0.36(21)            
            (of all values)        chi**2/(n-1)=0.084     [critical=4.605]
@@ -1671,11 +1670,7 @@ Averaging results:
    suggested adopted result:      0.17(7)             
        (Weighted-Of-All)
 
-Note:  Combined weight means both unc+ and unc- of each input value are used to calculate
-          the final weight and external uncertainty, as used for the average value and chi2.
-       Separate weights means unc+ and unc- are used separately to calculate corresponding
-          weights and external uncertainties, respectively.
-       Suggested adopted result is just the preference of this average code which adopts
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
           getting the external uncertainty. It is user's decision to make the final choice.
 
