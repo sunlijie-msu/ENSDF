@@ -1,8 +1,32 @@
- 34MG    1H(34MG,34MG'G)               2006EL03                  ENSDF    202609
+ 34MG    1H(34MG,34MG'G)               2014MI09,2006EL03         ENSDF    202609
  34MG  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34MG  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34MG2 H CUT=28-May-2012$                                                       
- 34MG c  Beam={+34}Mg, target=liquid hydrogen                                   
+ 34MG c  Beam={+34}Mg at 51.1 MeV/nucleon, target=liquid hydrogen. Proton-proton
+ 34MG2c  inelastic scattering in inverse kinematics used to determine           
+ 34MG3c  deformation length and |b{-2} for first 2+ state                       
+ 34MG c  {+34}Mg produced by fragmentation of 63 MeV/nucleon {+48}Ca beam with  
+ 34MG2c  {+181}Ta and enriched {+64}Ni target foils of 150 |mm and 200 |mm      
+ 34MG3c  thicknesses, respectively at RFQ-RILAC-CSM-RRC accelerator at RIKEN    
+ 34MG4c  facility. The fragments were separated and identified by RIPS fragment 
+ 34MG5c  separator optimized for A/Z=3 reaction products. Particle              
+ 34MG6c  identification was made from measurements of magnetic rigidity (B|r),  
+ 34MG7c  time-of-flight (tof), and energy loss (|DE-E). The secondary beam of   
+ 34MG8c  {+34}Mg at 51.1 MeV/nucleon hit a liquid hydrogen target (CRYPTA). The 
+ 34MG9c  scattered particles were analyzed by the TOMBEE spectrometer consisting
+ 34MGAc  of a superconducting triplet quadrupole, plastic scintillator, and a   
+ 34MGBc  |DE-E telescope of a silicon detector and a NaI(Tl) detector. Measured 
+ 34MGCc  E|g, I|g, |g|g-coin using DALI2 array of 160 NaI(Tl) detectors         
+ 34MGDc  surrounding the hydrogen target. In order to apply Doppler correction  
+ 34MGEc  to the measured |g-ray energies, angles of the |g rays were measured   
+ 34MGFc  relative to the trajectories of the scattered particles. The scattering
+ 34MGGc  angles were measured using two parallel-plate avalanche counters (PPAC)
+ 34MGHc  upstream and one PPAC detector downstream from the {+1}H target.       
+ 34MGIc  Deduced deformation lengths and |b{-2} deformation parameter from the  
+ 34MGJc  analysis of measured angle-integrated cross section by coupled-channel 
+ 34MGKc  calculations with the ECIS97 computer code, and WP09 global potential. 
+ 34MGLc  Comparison with shell-model (SDPF-M) calculations, and with previous   
+ 34MGMc  experimental results                                                   
  34MG c  2006EL03: a 94-MeV/nucleon {+40}Ar primary beam was transported to a   
  34MG2c  {+181}Ta primary target. Tge secondary beams of 30Na, 31Na, {+33}Mg,   
  34MG3c  and {+34}Mg were separated by the RIPS fragment separator and bombarded
@@ -12,9 +36,27 @@
  34MG7c  deexciting |g rays emitted by the inelastically scattered nuclei were  
  34MG8c  detected by the DALI2 setup consisting of 146 NaI(Tl) detectors.       
  34MG9c  Deduced mass deformation and neutron deformation parameters.           
- 34MG  L 0            0+                                                       
- 34MG  L 685       16 2+                                                       
- 34MG cL $|b{-mass}=0.68 {I16}, |b{-n}=0.70 {I13}                               
+ 34MG  L 0                                                                     
+ 34MG  L 685       16                                                          
+ 34MG cL $The matter or mass deformation parameter |b{-M}=0.68 {I16}. The       
+ 34MG2cL neutron deformation parameter |b{-n}=0.70 {I13} using the charge       
+ 34MG3cL deformation parameter |b{-C}=0.58 {I6} from 2001Iw07.                  
  34MG  G 685       16                                                           
- 34MG cG $|s=111 mb {I37} in (p,p')                                             
+ 34MG cG $The cross section of production of the |g rays in proton inelastic    
+ 34MG2cG scattering |s=111 mb {I37}.                                            
+ 34MG  L 658       4  2+                                                        
+ 34MG cL $Excitation |s=63 mb {I5} (2014Mi09)                                   
+ 34MG cL $Total excitation |s=78 mb {I6} (2014Mi09) including feeding from      
+ 34MG2cL higher state                                                           
+ 34MG cL $Deformation length |d=2.30 fm {I+9-10}(stat) {I16}(syst) (2014Mi09)   
+ 34MG cL $|b{-2}=0.62 {I3}(stat) {I5}(syst) (2014Mi09)                          
+ 34MG  G 658       4                                                            
+ 34MG  L 2011      28                                                           
+ 34MG cL $Excitation |s=5 mb {I2} (2014Mi09)                                    
+ 34MG  G 1353      28                                                           
+ 34MG cG E$1353 {I+29-27} in 2014Mi09                                           
+ 34MG  L 3194      34                                                           
+ 34MG cL $Excitation |s=10 mb {I2} (2014Mi09)                                   
+ 34MG  G 2536      34                                                           
+ 34MG cG E$2536 {I+34-33} in 2014Mi09                                           
 
