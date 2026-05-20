@@ -1,0 +1,61 @@
+Program for consistency check: output for levels (version 05/07/2026)
+Generated at: Wed 05/20/2026 at 07:00:46 PM EDT
+
+
+
+34MG
+ E(Level)        JPI                  T1/2               L-value     DSID                                       XREF
+ -------------   ------------------   ----------------   ---------   ----------------------------------------   ---
+ 0               0+                   20 MS 10                       ADOPTED LEVELS, GAMMAS                     
+ 0                                                                   35NA B-N DECAY (2.1 MS)                    B
+ 0                                                                   1H(34MG,34MG'G)                            ?0
+ 0               0+                                                  9BE(36SI,34MGG)                            ?1
+ 0               0+                                                  C(37AL,34MGG)                              ?2
+ 0                                                                   COULOMB EXCITATION                         E
+
+ 660        7    2+                   40 PS 8                        ADOPTED LEVELS, GAMMAS                     
+ 661                                                                 35NA B-N DECAY (2.1 MS)                    B(?)
+ 658        4                                                        1H(34MG,34MG'G)                            ?0
+ 660        10   (2+)                                                9BE(36SI,34MGG)                            ?1
+ 652        6    (2+)                                                C(37AL,34MGG)                              ?2
+ 657        7                                                        COULOMB EXCITATION                         E
+
+ 2011       28                                                       1H(34MG,34MG'G)                            ?0
+ 2047       16   (4+)                                                C(37AL,34MGG)                              ?2
+
+ 2120       22   (4+)                                                ADOPTED LEVELS, GAMMAS                     
+ 2120       23   (4+)                                                9BE(36SI,34MGG)                            ?1
+ 2117                                                                COULOMB EXCITATION                         E(?)
+
+ 3131       22                                                       C(37AL,34MGG)                              ?2
+
+ 3194       34                                                       1H(34MG,34MG'G)                            ?0
+
+
+
+Statistics of levels and gammas from all datasets of 34MG:
+                             DSID     #of levels       #of gammas       level range
+           ADOPTED LEVELS, GAMMAS        3                2             0          to       2120
+          35NA B-N DECAY (2.1 MS)        2                1             0          to        661
+                  1H(34MG,34MG'G)        4                3             0          to       3194
+                  9BE(36SI,34MGG)        3                2             0          to       2120
+                    C(37AL,34MGG)        4                4             0          to       3131
+               COULOMB EXCITATION        3                2             0          to       2117
+
+                         IN TOTAL        19               14            0          to       3194
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Statistics of all datasets from input ENSDF files:
+                Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
+                               Levels       Gammas     L Records    G Records                      (non-Adopted)
+                   34MG        3            2            19           14             281              5
+
+               IN TOTAL        3            2            19           14             281              5
+
+Number of nuclides     : 1
+Number of blocks       : 6
+Number of references   : 39
+Number of lines in files: 287
+(from all blocks including abstract, comment, reference)

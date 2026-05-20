@@ -1,0 +1,75 @@
+Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 05/07/2026)
+Generated at: Wed 05/20/2026 at 07:00:56 PM EDT                                 
+                                                                                
+ 34MG    ADOPTED LEVELS, GAMMAS                                  ENSDF    202609
+ 34MG  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 34MG  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
+ 34MG2 H CUT=28-May-2012$                                                       
+ 34MG  Q 11321     7 4711    7 22564.5 81-1.738E425    2021WA16                 
+ 34MG cQ SP$Deduced by the evaluator using mass excesses of 23598.8 {I43} for   
+ 34MG2cQ {+33}Na measured by 2025Ly01; 8323 {I7} for {+34}Mg from 2021Wa16.     
+ 34MG3cQ Value from 2021Wa16: S(p)=22750 {I450}                                 
+ 34MG cQ $S(2n)=6990 {I8}, S(2p)=43250 {I500} (syst), Q(|b{+-}n)=8749 {I10}     
+ 34MG2cQ (2021Wa16)                                                             
+ 34MG c  1979We10: identification and production of {+34}Mg in {+9}Be({+48}Ca,X)
+ 34MG2c  reaction at 212 MeV/nucleon.                                           
+ 34MG c  Later papers for decay studies of {+34}Mg nuclide: 1984La13, 1984Gu19  
+ 34MG c  Mass measurements: 2007Ju03 (Penning-trap method), 2001Sa72 and        
+ 34MG2c  2001Sa21, 1991Or01 and 1991Zh24                                        
+ 34MG c  2007No13: {+9}Be({+40}Ar,X) E=100 MeV/nucleon, RIKEN, measured         
+ 34MG2c  production |s and momentum distribution                                
+ 34MG c  Cross section and strong absorption radius measurement in Si({+34}Mg,X)
+ 34MG2c  reaction at 43.43 MeV/nucleon: 2006Kh08.                               
+ 35MG c  {+34}Mg radius measurements:                                           
+ 35MG c  2011Ka01: {+34}Mg produced by {+9}Be({+48}Ca,X) fragmentation at GSI.  
+ 35MG2c  Measured interaction cross sections with C and CH{-2} targets at 900   
+ 35MG3c  MeV/nucleon. Deduced rms matter radii.                                 
+ 34MG c  Structure calculations: 2012Li11, 2011Hi18, 2009No01, 2008Yo08,        
+ 34MG2c  2006Zh05, 2005Ro10, 2004Ot02, 2001Ca49                                 
+ 34MG d  Other structure calculations: 2008Na18, 2008Yo14, 2008Yo02             
+ 34MG  XA35NA B-N DECAY (2.1 MS)                                                
+ 34MG  XB1H(34MG,34MG'G)                                                        
+ 34MG  XC9BE(36SI,34MGG)                                                        
+ 34MG  XDC(37AL,34MGG)                                                          
+ 34MG  XECOULOMB EXCITATION                                                     
+ 34MG  L 0            0+               20 MS     10                             
+ 34MGX L XREF=ABCDE                                                             
+ 34MG2 L %B-=100$ %B-N=?                                                        
+ 34MG cL $Strong absorption r{-0}{+2}=1.255 fm{+2} {I30} (2006Kh08).            
+ 34MG cL $Interaction |s=1372 mb {I46} for Carbon and 568 mb {I90} for Hydrogen 
+ 34MG2cL (2011Ka01).                                                            
+ 34MG cL $rms matter radius=3.23 fm {I13} (2011Ka01).                           
+ 34MG cL T$from 1984La03. Calculated half-life=74 ms (1997Mo25).                
+ 34MG cL $Calculated %|b{+-}n=27.2, %|b{+-}2n=0.40 (1997Mo25).                  
+ 34MG  L 660       7  2+               40 PS     8                              
+ 34MGX L XREF=A(661?)BCDE                                                       
+ 34MG2 L BE2=0.057 10                                                           
+ 34MG cL $B(E2): weighted average of 0.054 {I10} (2005Ch66) and B(E2)=0.063     
+ 34MG2cL {I13} (2001Iw07). Other: |<0.067 (1999Pr09).                           
+ 34MG cL J$the only level populated in Coulomb excitation and (p,p'|g).         
+ 34MG cL T$40 ps {I8} if B(E2)=0.057 {I10}, <52 ps if B(E2)>0.044 (2005Ch66,    
+ 34MG2cL when feeding from 4+ is considered).                                   
+ 34MG  G 657       4                                                            
+ 34MGB G BE2W=17 3                                                              
+ 34MG cG E$weighted average of 658 {I4} from {+1}H({+34}Mg,{+34}Mg'|g), 660     
+ 34MG2cG {I10} from {+9}Be({+36}Si,{+34}Mg|g), 652 {I6} from                    
+ 34MG3cG C({+37}Al,{+34}Mg|g), and 657 {I7} from Coulomb excitation             
+ 34MG  L 2047      16 (4+)                                                      
+ 34MGX L XREF=B(2011)D                                                          
+ 34MG  G 1386      18                                                           
+ 34MG cG E$weighted average of 1353 {I28} from {+1}H({+34}Mg,{+34}Mg'|g) and    
+ 34MG2cG 1395 {I15} from C({+37}Al,{+34}Mg|g)                                   
+ 34MG  L 2120      22 (4+)                                                     ?
+ 34MGX L XREF=CE(2117?)                                                         
+ 34MG cL J$systematics of even-even nuclei, shell-model predictions.            
+ 34MG  G 1460      20                                                           
+ 34MG cG E$from ({+36}Si,{+34}Mg|g)                                             
+ 34MG cG E$from 2001Yo03 (also 2002Sa11,2002Mo35,2002Yo04).                     
+ 34MG  L 3131      22                                                           
+ 34MGX L XREF=D                                                                 
+ 34MG  G 2480      30                                                           
+ 34MG  G 3130      30                                                           
+ 34MG  L 3194      34                                                           
+ 34MGX L XREF=B                                                                 
+ 34MG  G 2536      34                                                           
+                                                                                

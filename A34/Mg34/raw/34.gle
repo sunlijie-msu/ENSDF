@@ -1,0 +1,56 @@
+Program for consistency check: output for gammas ordered by level energies (version 05/07/2026)
+Generated at: Wed 05/20/2026 at 07:00:46 PM EDT
+
+
+
+34MG
+ EI         JI           EG              EF         JF           RI              MULT         MR                CC           DSID
+ ---------- ----------   -------------   ---------- ----------   -------------   ----------   ---------------   ----------   ------------------------------
+ 660        2+           660        7    0          0+           100                                                         ADOPTED LEVELS, GAMMAS
+ 661                     661             0                       100                                                         35NA B-N DECAY (2.1 MS)
+ 658                     658        4    0                       100                                                         1H(34MG,34MG'G)
+ 660        (2+)         660        10   0          0+           100                                                         9BE(36SI,34MGG)
+ 652        (2+)         652        6    0          0+           100                                                         C(37AL,34MGG)
+ 657                     657        7    0                       100                                                         COULOMB EXCITATION
+
+ 2011                    1353       28   658                     100                                                         1H(34MG,34MG'G)
+ 2047       (4+)         1395       15   652        (2+)         100                                                         C(37AL,34MGG)
+
+ 2120       (4+)         1460       20   660        2+           100                                                         ADOPTED LEVELS, GAMMAS
+ 2120       (4+)         1460       20   660        (2+)         100                                                         9BE(36SI,34MGG)
+ 2117                    1460            657                     100                                                         COULOMB EXCITATION
+
+ 3131                    2480       30   652        (2+)                                                                     C(37AL,34MGG)
+
+ 3131                    3130       30   0          0+                                                                       C(37AL,34MGG)
+
+ 3194                    2536       34   658                     100                                                         1H(34MG,34MG'G)
+
+
+
+Statistics of levels and gammas from all datasets of 34MG:
+                             DSID     #of levels       #of gammas       level range
+           ADOPTED LEVELS, GAMMAS        3                2             0          to       2120
+          35NA B-N DECAY (2.1 MS)        2                1             0          to        661
+                  1H(34MG,34MG'G)        4                3             0          to       3194
+                  9BE(36SI,34MGG)        3                2             0          to       2120
+                    C(37AL,34MGG)        4                4             0          to       3131
+               COULOMB EXCITATION        3                2             0          to       2117
+
+                         IN TOTAL        19               14            0          to       3194
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Statistics of all datasets from input ENSDF files:
+                Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
+                               Levels       Gammas     L Records    G Records                      (non-Adopted)
+                   34MG        3            2            19           14             281              5
+
+               IN TOTAL        3            2            19           14             281              5
+
+Number of nuclides     : 1
+Number of blocks       : 6
+Number of references   : 39
+Number of lines in files: 287
+(from all blocks including abstract, comment, reference)

@@ -1,0 +1,56 @@
+Program for consistency check: output for gammas ordered by gamma energies (version 05/07/2026)
+Generated at: Wed 05/20/2026 at 07:00:46 PM EDT
+
+
+
+34MG
+ EG              RI              MULT         MR                CC           EI         JI          EF         JF           DSID
+ -------------   -------------   ----------   ---------------   ----------   ---------- ----------  ---------- ----------   ------------------------------
+ 660        7                                                                660        2+          0          0+           ADOPTED LEVELS, GAMMAS
+ 661                                                                         661                    0                       35NA B-N DECAY (2.1 MS)
+ 658        4                                                                658                    0                       1H(34MG,34MG'G)
+ 660        10                                                               660        (2+)        0          0+           9BE(36SI,34MGG)
+ 652        6                                                                652        (2+)        0          0+           C(37AL,34MGG)
+ 657        7                                                                657                    0                       COULOMB EXCITATION
+
+ 1353       28                                                               2011                   658                     1H(34MG,34MG'G)
+ 1395       15                                                               2047       (4+)        652        (2+)         C(37AL,34MGG)
+
+ 1460       20                                                               2120       (4+)        660        2+           ADOPTED LEVELS, GAMMAS
+ 1460       20                                                               2120       (4+)        660        (2+)         9BE(36SI,34MGG)
+ 1460                                                                        2117                   657                     COULOMB EXCITATION
+
+ 2480       30                                                               3131                   652        (2+)         C(37AL,34MGG)
+
+ 2536       34                                                               3194                   658                     1H(34MG,34MG'G)
+
+ 3130       30                                                               3131                   0          0+           C(37AL,34MGG)
+
+
+
+Statistics of levels and gammas from all datasets of 34MG:
+                             DSID     #of levels       #of gammas       level range
+           ADOPTED LEVELS, GAMMAS        3                2             0          to       2120
+          35NA B-N DECAY (2.1 MS)        2                1             0          to        661
+                  1H(34MG,34MG'G)        4                3             0          to       3194
+                  9BE(36SI,34MGG)        3                2             0          to       2120
+                    C(37AL,34MGG)        4                4             0          to       3131
+               COULOMB EXCITATION        3                2             0          to       2117
+
+                         IN TOTAL        19               14            0          to       3194
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Statistics of all datasets from input ENSDF files:
+                Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
+                               Levels       Gammas     L Records    G Records                      (non-Adopted)
+                   34MG        3            2            19           14             281              5
+
+               IN TOTAL        3            2            19           14             281              5
+
+Number of nuclides     : 1
+Number of blocks       : 6
+Number of references   : 39
+Number of lines in files: 287
+(from all blocks including abstract, comment, reference)

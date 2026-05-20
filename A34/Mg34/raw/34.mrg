@@ -1,0 +1,146 @@
+Program for consistency check: output for original lines grouped by level and gamma energies (version 05/07/2026)
+Generated at: Wed 05/20/2026 at 07:00:46 PM EDT
+
+
+Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
+         available data in the corresponding dataset, including decay data (logft or HF), L-transfer, and decaying
+         and feeding gammas of each level, and so on.
+      2. possible JPI presented at the end of each adopted record line is deduced by combining data from all
+         individual datasets (data from the record lines only and might be incomplete since arguments only presented
+         in comments haven't been considered, like shell-model calculations, analyzing power, atomic method for g.s.
+         spin, and other qualitative arguments).
+
+*** All possible JPI values are for reference purpose only and should not be taken as the final adopted assignments ***
+
+
+########################################################################################################################
+        new XREFs                        old XREFs
+ 34MG  XA35NA B-N DECAY (2.1 MS)       A-B 35NA B-N DECAY (1.5 MS)
+ 34MG  XB1H(34MG,34MG'G)               B-?
+ 34MG  XC9BE(36SI,34MGG)               C-?
+ 34MG  XDC(37AL,34MGG)                 D-?
+ 34MG  XECOULOMB EXCITATION            E-E COULOMB EXCITATION
+################################## new tag show first below ############################################################
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34MG  L 0            0+               20 MS     10                              ---
+                     *new XREF new tags    34MGX L XREF=ABCDE
+                     *new XREF old tags    34MGX L XREF=BE?0?1?2
+                     #old XREF in Adopted  34MGX L XREF=CDE
+       35NA B-N DECAY (2.1 MS)--->A  B     34MG  L 0                                                                      
+               1H(34MG,34MG'G)--->B  ?0    34MG  L 0                                                                      
+               9BE(36SI,34MGG)--->C  ?1    34MG  L 0            0+                                                        
+                 C(37AL,34MGG)--->D  ?2    34MG  L 0            0+                                                        
+            COULOMB EXCITATION--->E  E     34MG  L 0                                                                      
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34MG  L 660       7   2+               40 PS    8                               ---
+                     *new XREF new tags    34MGX L XREF=A(?)BCDE
+                     *new XREF old tags    34MGX L XREF=B(?)E?0?1?2
+                     #old XREF in Adopted  34MGX L XREF=CDE
+       35NA B-N DECAY (2.1 MS)--->A  B(?)  34MG  L 661                                                                   ?
+               1H(34MG,34MG'G)--->B  ?0    34MG  L 658       4                                                            
+               9BE(36SI,34MGG)--->C  ?1    34MG  L 660       10 (2+)                                                      
+                 C(37AL,34MGG)--->D  ?2    34MG  L 652       6  (2+)                                                      
+            COULOMB EXCITATION--->E  E     34MG  L 657       7                                                            
+               1H(34MG,34MG'G)--->B  ?0    34MG cL $Population |s=63 mb {I5} (2014Mi09). Total population including       
+               1H(34MG,34MG'G)--->B  ?0    34MG2cL feeding from higher state |s=78 mb {I6} (2014Mi09) and |s=111 mb {I37} 
+               1H(34MG,34MG'G)--->B  ?0    34MG3cL (2006El03).                                                            
+               1H(34MG,34MG'G)--->B  ?0    34MG cL $Deformation length |d=2.30 fm {I+9-10} (stat) {I16} (syst) (2014Mi09).
+               1H(34MG,34MG'G)--->B  ?0    34MG cL $|b{-2}=0.62 {I3} (stat) {I5} (syst) (2014Mi09). Matter or mass        
+               1H(34MG,34MG'G)--->B  ?0    34MG2cL deformation parameter |b{-M}=0.68 {I16} (2006El03). Neutron deformation
+               1H(34MG,34MG'G)--->B  ?0    34MG3cL parameter |b{-n}=0.70 {I13} (2006El03) using charge deformation        
+               1H(34MG,34MG'G)--->B  ?0    34MG4cL parameter |b{-C}=0.58 {I6} from 2001Iw07.                              
+            COULOMB EXCITATION--->E  E     34MG2 L BE2=0.057 10                                                           
+            COULOMB EXCITATION--->E  E     34MG cL E$from E|g data.                                                       
+            COULOMB EXCITATION--->E  E     34MG cL BE2$weighted average of 0.054 {I10} (2005Ch66) and 0.063 {I13}         
+            COULOMB EXCITATION--->E  E     34MG2cL (2001Iw07). Other: |<0.067 (1999Pr09). B(E2)=0.054 {I10} (2005Ch66)    
+            COULOMB EXCITATION--->E  E     34MG3cL from |s=126 mb {I22} if no correction for feeding from higher-lying    
+            COULOMB EXCITATION--->E  E     34MG4cL 2116 level is applied. B(E2)>0.044 {I8} if possible correction for     
+            COULOMB EXCITATION--->E  E     34MG5cL feeding from the 2116 level is considered.                             
+            COULOMB EXCITATION--->E  E     34MG cL $|b{-2}=0.58 {I6} (2001Iw07), 0.54 {I5} (2005Ch66).                    
+ GAMMA------------------------------------ 34MG  G 660       7                                                             --- EG=660        FL=0          JF=0+
+       35NA B-N DECAY (2.1 MS)--->A  B(?)  34MG  G 661                                                                   ? *** EG=661        FL=0          JF=
+               1H(34MG,34MG'G)--->B  ?0    34MG  G 658       4                                                             *** EG=658        FL=0          JF=
+               9BE(36SI,34MGG)--->C  ?1    34MG  G 660       10                                                            *** EG=660        FL=0          JF=0+
+                 C(37AL,34MGG)--->D  ?2    34MG  G 652       6                                                             *** EG=652        FL=0          JF=0+
+            COULOMB EXCITATION--->E  E     34MG  G 657       7                                                             *** EG=657        FL=0          JF=
+       35NA B-N DECAY (2.1 MS)--->A  B(?)  34MG cG $2013StZY observed this |g ray in the background-subtracted |g-ray     
+       35NA B-N DECAY (2.1 MS)--->A  B(?)  34MG2cG spectrum in a time window of 0-10 ms after the implantation of {+35}Na 
+       35NA B-N DECAY (2.1 MS)--->A  B(?)  34MG3cG but did not observe it in later time windows. 2013StZY proposed that it
+       35NA B-N DECAY (2.1 MS)--->A  B(?)  34MG4cG could be either the deexcitation of the first 2+ level to 0+ g.s. in   
+       35NA B-N DECAY (2.1 MS)--->A  B(?)  34MG5cG {+34}Mg or the deexcitation of an excited state in {+35}Mg. Based on   
+       35NA B-N DECAY (2.1 MS)--->A  B(?)  34MG6cG theoretical calculations (2019Mo01, 2021Mi17), the |b{+-}1n should be  
+       35NA B-N DECAY (2.1 MS)--->A  B(?)  34MG7cG the dominant branch, implying that this |g ray is more likely from     
+       35NA B-N DECAY (2.1 MS)--->A  B(?)  34MG8cG {+34}Mg.                                                               
+               1H(34MG,34MG'G)--->B  ?0    34MG cG E$other: 685 {I16} (2006El03).                                         
+            COULOMB EXCITATION--->E  E     34MG cG E$weighted average of 656 {I7} (2001Iw07) and 659 {I14} (2005Ch66).    
+            COULOMB EXCITATION--->E  E     34MG2cG Other: 900-1400 assumed in 1999Pr09.                                   
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34MG  L 2047      16 (4+)                                                      
+                     *new XREF new tags    34MGX L XREF=B(2011)D
+                     *new XREF old tags    34MGX L XREF=?2?0(2011)
+               1H(34MG,34MG'G)--->B  ?0    34MG  L 2011      28                                                           
+                 C(37AL,34MGG)--->D  ?2    34MG  L 2047      16 (4+)                                                      
+               1H(34MG,34MG'G)--->B  ?0    34MG cL $Population |s=5 mb {I2} (2014Mi09).                                   
+ GAMMA------------------------------------ 34MG  G 1395      15                                                           
+               1H(34MG,34MG'G)--->B  ?0    34MG  G 1353      28                                                            *** EG=1353       FL=658        JF=
+                 C(37AL,34MGG)--->D  ?2    34MG  G 1395      15                                                            *** EG=1395       FL=652        JF=(2+)
+               1H(34MG,34MG'G)--->B  ?0    34MG cG E$1353 {I+29-27} in 2014Mi09.                                          
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34MG  L 2120      22   (4+)                                                   ? ---
+                     *new XREF new tags    34MGX L XREF=CE(?)
+                     *new XREF old tags    34MGX L XREF=E(?)?1
+                     #old XREF in Adopted  34MGX L XREF=D
+               9BE(36SI,34MGG)--->C  ?1    34MG  L 2120      23 (4+)                                                      
+            COULOMB EXCITATION--->E  E(?)  34MG  L 2117                                                                  ?
+ GAMMA------------------------------------ 34MG  G  1460     20                                                          ? --- EG=1460       FL=660        JF=2+
+               9BE(36SI,34MGG)--->C  ?1    34MG  G 1460      20                                                            *** EG=1460       FL=660        JF=(2+)
+            COULOMB EXCITATION--->E  E(?)  34MG  G 1460                                                                  ? *** EG=1460       FL=657        JF=
+            COULOMB EXCITATION--->E  E(?)  34MG cG $Not observed by any work in this dataset. An upper limit of intensity 
+            COULOMB EXCITATION--->E  E(?)  34MG2cG of this |g is estimated by 2005Ch66 to correct the possible feeding    
+            COULOMB EXCITATION--->E  E(?)  34MG3cG from the 2116 level.                                                   
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34MG  L 3131      22                                                           
+                     *new XREF new tags    34MGX L XREF=D
+                     *new XREF old tags    34MGX L XREF=?2
+                 C(37AL,34MGG)--->D  ?2    34MG  L 3131      22                                                           
+ GAMMA------------------------------------ 34MG  G 2480      30                                                           
+                 C(37AL,34MGG)--->D  ?2    34MG  G 2480      30                                                            *** EG=2480       FL=652        JF=(2+)
+ GAMMA------------------------------------ 34MG  G 3130      30                                                           
+                 C(37AL,34MGG)--->D  ?2    34MG  G 3130      30                                                            *** EG=3130       FL=0          JF=0+
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34MG  L 3194      34                                                           
+                     *new XREF new tags    34MGX L XREF=B
+                     *new XREF old tags    34MGX L XREF=?0
+               1H(34MG,34MG'G)--->B  ?0    34MG  L 3194      34                                                           
+               1H(34MG,34MG'G)--->B  ?0    34MG cL $Population |s=10 mb {I2} (2014Mi09).
+ GAMMA------------------------------------ 34MG  G 2536      34                                                           
+               1H(34MG,34MG'G)--->B  ?0    34MG  G 2536      34                                                            *** EG=2536       FL=658        JF=
+               1H(34MG,34MG'G)--->B  ?0    34MG cG E$2536 {I+34-33} in 2014Mi09.                                          
+
+
+Statistics of levels and gammas from all datasets of 34MG:
+                             DSID     #of levels       #of gammas       level range
+           ADOPTED LEVELS, GAMMAS        3                2             0          to       2120
+          35NA B-N DECAY (2.1 MS)        2                1             0          to        661
+                  1H(34MG,34MG'G)        4                3             0          to       3194
+                  9BE(36SI,34MGG)        3                2             0          to       2120
+                    C(37AL,34MGG)        4                4             0          to       3131
+               COULOMB EXCITATION        3                2             0          to       2117
+
+                         IN TOTAL        19               14            0          to       3194
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Statistics of all datasets from input ENSDF files:
+                Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
+                               Levels       Gammas     L Records    G Records                      (non-Adopted)
+                   34MG        3            2            19           14             281              5
+
+               IN TOTAL        3            2            19           14             281              5
+
+Number of nuclides     : 1
+Number of blocks       : 6
+Number of references   : 39
+Number of lines in files: 287
+(from all blocks including abstract, comment, reference)
