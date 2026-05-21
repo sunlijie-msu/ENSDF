@@ -50,6 +50,11 @@ Do not review data-record fields (`L`, `G`, `E`, `B`, `DP`) for editorial issues
 
 ### 2. Grammar and Style
 
+- **Capitalization by scope:**
+  - Top general comments (before first data record) start with uppercase, with or without identifier headers.
+  - Record-specific comments with identifier(s) after level/gamma records (`cL E$`, `cL J$`, `cL T$`, `cG E$`, `cG RI$`, `cG M$`, `cG MR$`, etc.) start with lowercase unless first token is a numeral, symbol, isotope token (`{+34}Mg`), or required acronym.
+  - **Exception (mandatory):** `cP` and `cN` identifier comments start with uppercase whether general or record-specific.
+  - Examples: `cL T$from fitting ...` (record-specific L/G style), `cL E$From a least-squares fit ...` (top default block), `cP J,T$From ...`, `cN BR$Experimental ...`.
 - **Dittography:** Scan with `\b(\w+)\s+\1\b` (e.g., `the the`, `were were`, `and and`).
 - **Subject-verb agreement:** NSR key numbers (`YYYYAA##`) take singular verbs.
   - Wrong: `1972Hu10 measure` → Correct: `1972Hu10 measures`
