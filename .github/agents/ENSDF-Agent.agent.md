@@ -252,11 +252,11 @@ Note: Multiple identical gamma energies appearing in multiple level blocks shoul
 
 - **cL lines:** Apply only to the immediately preceding L-record and are an optional part of that L-record.
 - **cL, 2cL, 3cL lines:** Form a unified comment block for that L-record.
-- When multiple L-comment identifiers are present, order them as follows: `E$ → J$ → T$ → S$ → general` (no identifier).
+- When multiple L-comment identifiers are present, order them as follows: `E$ → J$ → T$ → S$ → general (no identifier before $)`.
 
 - **cG lines:** Apply only to the immediately preceding G-record and are an optional part of that G-record.
 - **cG, 2cG, 3cG lines:** Form a unified comment block for that G-record.
-- When multiple G-comment identifiers are present, order them as follows: `E$ → RI$ → M$ → MR$ → other identifiers`.
+- When multiple G-comment identifiers are present, order them as follows: `E$ → RI$ → M$ → MR$ → general (no identifier before $)`.
 
 **Integral Understanding of Continuation Records and Comments (Column 6)**
 - Column 6 contains the continuation identifier: blank for the first record and alphanumeric for continuation records.
@@ -604,7 +604,7 @@ Validates ascending energy order for L-records and G-records:
 
 **Common corrections:**
 -   **Spelling:** "other" (not "ohter"), "stopped" (not "stoped"), "using" (not "usign"), "coefficients" (not "coeffcients"), "deexciting" (not "deexiting"), "multipolarities" (not "multiporities"), "parentheses" (not "paretheses").
--   **Dittography:** Remove duplicated words (e.g., "the the").
+-   **Dittography:** Remove duplicated words (e.g., "the the", "is is", "and and").
 -   **Hyphenation Rule:** [Number]-[Unit]-[Descriptor] [Noun]. Hyphenate compound adjectives occurring before a noun (e.g., "x-ray diffraction," "4-mm-long gas cell," "R-matrix theory"). Do not hyphenate when they are not adjectives before nouns (e.g., "emitted by x rays," "was 4 mm long").
 -   **Consistency:** Always hyphenate "L-transfers" and "half-life."
 

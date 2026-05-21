@@ -9,7 +9,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 
 ## Canonical Sequence
 
-Arrange general comments (non-record-specific) at the Adopted Dataset file start in this order:
+Arrange general comments (non-record-specific) at the top of the Adopted Dataset file after Q-value comments and before any record-specific general comments. Follow this order:
 
 1. **Isotope Discovery** — experimental details, discovery references
 2. **Production** — methods and reaction studies
