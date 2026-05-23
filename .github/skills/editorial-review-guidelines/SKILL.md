@@ -44,6 +44,10 @@ Do not review data-record fields (`L`, `G`, `E`, `B`, `DP`) for editorial issues
   - Wrong: `E=1234(5) keV` → Correct: `E=1234 keV {I5}`
 - **Leaked record tags:** Scan columns 10–80 for spurious ` cL `, ` cG `, ` L `, ` G `, ` E `, ` B ` (common copy-paste artifact).
 - **Unintended symbol prefixes:** `|resonance` renders as `ρesonance`; verify intent.
+- **Unicode leakage (mandatory):** ENSDF comment text must use ENSDF symbol encoding, not raw Unicode glyphs.
+  - Wrong: `μ`, `×`, `β`, `γ`, `θ`, `≈`, `≤`, `≥` in plain Unicode.
+  - Correct: `|m`, `|*`, `|b`, `|g`, `|q`, `|?`, `|<`, `|>`.
+  - Example: `1500-μm-thick` → `1500-|mm-thick`; `6.5×10^5` → `6.5|*10{+5}`.
 - **Inconsistent subscript notation:** All coefficients in an expression must use the same style.
   - Wrong: `A{-2}=0.5 A{-4}=0.1 A6=-0.1` → Correct: `A{-2}=0.5 A{-4}=0.1 A{-6}=-0.1`
 - **Mid-token line breaks:** Compound tokens such as `E{-p}(lab)` must not split across continuation lines.
@@ -128,6 +132,7 @@ Do not flag:
   - Plain isotope token candidate: `(?<!\{\+)\b\d{1,3}[A-Z][a-z]?\b`
   - Post-filter for isotope-token scan: retain only valid element symbols and exclude tokens followed by `|` (for example, `2I|g`).
    - Extra space after `=`: `=\s[0-9]`
+  - Non-ASCII scan (mandatory): `[^\x00-\x7F]`
 4. Compile the findings table.
 
 ## Workflow
