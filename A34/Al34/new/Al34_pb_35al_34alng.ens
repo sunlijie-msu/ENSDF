@@ -1,6 +1,6 @@
  34AL    PB(35AL,34ALNG)               2017CH36                  ENSDF    202609
  34AL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
- 34AL c  Coulomb dissociation of {+35}Al on Pb target                           
+ 34AL c  Coulomb dissociation of {+35}Al|){+34}Al+n.                            
  34AL c  2017Ch36,2014ChZZ: {+35}Al was produced via the projectile             
  34AL2c  fragmentation of a 531-MeV/nucleon {+40}Ar primary beam from the Heavy 
  34AL3c  Ion Synchrotron (SIS18) at GSI. The secondary cocktail beam was        
@@ -13,11 +13,11 @@
  34ALAc  deexcited projectile and projectile-like fragments were detected using 
  34ALBc  a spherical 4|p Crystal Ball detector array of 162 NaI(Tl) crystals.   
  34ALCc  Measured E(fragment), E{-n}, E|g, Coulomb dissociation cross sections. 
- 34ALDc  Deduced relative populations of {+34}Al, {+35}Al g.s. configuration.   
- 34ALEc  Comparisons with shell-model calculations with the SDPF-M interaction. 
- 34ALFc  The measured inclusive differential CD cross section (integrated up to 
- 34ALGc  5.0 MeV relative energy) for {+35}Al|){+34}Al+n using a Pb target is 78
- 34ALHc  mb {I13}.                                                              
+ 34ALDc  Deduced relative populations of {+34}Al levels and {+35}Al g.s.        
+ 34ALEc  configuration. Comparisons with shell-model calculations with the      
+ 34ALFc  SDPF-M interaction. The measured inclusive differential CD cross       
+ 34ALGc  section (integrated up to 5.0 MeV relative energy) for                 
+ 34ALHc  {+35}Al|){+34}Al+n using a Pb target is 78 mb {I13}.                   
  34AL c  2021Bh12: A further analysis of the data from 2017Ch36. The            
  34AL2c  {+35}Al(|g,n){+34}Al photoabsorption cross section was obtained from   
  34AL3c  fitting the direct breakup model to the measured differential Coulomb  
@@ -25,25 +25,22 @@
  34AL5c  excited states. The {+34}Al(n,|g){+35}Al neutron capture cross sections
  34AL6c  were obtained from the photoabsorption cross sections using the        
  34AL7c  detailed balance theorem.                                              
- 34AL cG E$From level-energy difference, as indicated in Fig. 2(c) of 2017Ch36  
- 34AL cL $Partial level scheme and half-lives are as given in 2017Ch36, taken   
- 34AL2cL from 2017Li03: Phys Rev C 95, 021301(R) (2017), unless otherwise noted.
- 34AL3cL Energy values are rounded-off values.                                  
+ 34AL cG E$From level-energy difference in 2017Ch36.                            
+ 34AL cL E$From 2017Ch36.                                                       
  34AL cL $The total measured inclusive differential Coulomb dissociation cross  
  34AL2cL section is 78 mb {I13}, integrated up to 5.0 MeV relative energy       
- 34AL3cL between the {+34}Al core and the neutron using a Pb target.            
+ 34AL3cL between the {+34}Al core and the neutron.                              
  34AL cL S$LABEL=|s (mb)                                                        
  34AL cL S$Coulomb dissociation cross section.                                  
- 34AL cL S(A)$48 mb {I13} for g.s.+isomer                                       
- 34AL  L 0            4-               54.4 MS                              A   
- 34AL cL $Relative population=62% {I20} for g.s.+isomer                         
- 34AL  L 46           1+               26 MS                                AM  
- 34AL cL $Relative population=62% {I20} for g.s.+isomer                         
+ 34AL cL S(A)$Sum |s for g.s.+ 46 isomer. Sum relative population=62% {I20} for 
+ 34AL2cL g.s.+ 46 isomer.                                                       
+ 34AL  L 0                                                      48        13A   
+ 34AL  L 46                                                     48        13AM  
  34AL  L 487                                                                    
  34AL  G 441                                                                    
  34AL  L 1048                                                   5         1     
  34AL cL $Relative population=6% {I2}                                           
- 34AL  G 1002                                                                   
+ 34AL  G 1002                                                                  ?
  34AL  L 1460                                                   4         1     
  34AL cL $Relative population=5% {I2}                                           
  34AL  G 1414                                                                   
@@ -52,8 +49,7 @@
  34AL  G 1513                                                                   
  34AL  G 1954                                                                   
  34AL  L 2550                                                   16        6    ?
- 34AL cL E$proposed by 2017Ch36 based on the observed cascade of 1090|g and     
- 34AL2cL 1414|g.                                                                
  34AL cL $Relative population=21% {I8}                                          
- 34AL  G 1090                                                                   
+ 34AL  G 1090                                                                  ?
+ 34AL  G 1414                                                                  ?
 
