@@ -75,12 +75,14 @@ Do not review data-record fields (`L`, `G`, `E`, `B`, `DP`) for editorial issues
 - Replace comma splices between independent clauses with semicolons.
 - Require the Oxford comma in lists of three or more items.
 - Only one `and` per list (at the final item).
+- Use comma-space separators in NSR citation lists and author/date pairs in comment text.
   - Wrong: `14.9 {I6} (Ref1), and 8.3 {I4} (Ref2), and 10.5 {I60} (Ref3)`
   - Correct: `14.9 {I6} (Ref1), 8.3 {I4} (Ref2), and 10.5 {I60} (Ref3)`
 
 ### 4. Hyphenation
 
 - Hyphenate compound modifiers before nouns: `4-mm-long target`, `gamma-ray spectrum`, `R-matrix analysis`.
+- Hyphenate attributive unit phrases before nouns: `2-g/cm{+2} Pb target`, `0.93-g/cm{+2} C target`.
 - Do not hyphenate predicatively: `the target was 4 mm long`.
 - Always hyphenate: `half-life`, `L-transfer`, `L-transfers`.
 - Gamma terminology: noun = `gamma rays`; adjective = `gamma-ray`.
