@@ -48,6 +48,11 @@ Do not review data-record fields (`L`, `G`, `E`, `B`, `DP`) for editorial issues
   - Wrong: `μ`, `×`, `β`, `γ`, `θ`, `≈`, `≤`, `≥` in plain Unicode.
   - Correct: `|m`, `|*`, `|b`, `|g`, `|q`, `|?`, `|<`, `|>`.
   - Example: `1500-μm-thick` → `1500-|mm-thick`; `6.5×10^5` → `6.5|*10{+5}`.
+- **Plain isotope tokens in prose (mandatory):** after the regex scan, manually review every remaining isotope-like token in comment text.
+  - Wrong: `34Al`, `36Al`, `35Mg` in prose.
+  - Correct: `{+34}Al`, `{+36}Al`, `{+35}Mg`.
+- **Mixed symbol-text compounds:** reject mixed Unicode/ENSDF compounds such as `γ -ray`, `μm`, or split symbol-text forms.
+  - Correct: `|g-ray`, `|mm`, `|b-delayed`.
 - **Inconsistent subscript notation:** All coefficients in an expression must use the same style.
   - Wrong: `A{-2}=0.5 A{-4}=0.1 A6=-0.1` → Correct: `A{-2}=0.5 A{-4}=0.1 A{-6}=-0.1`
 - **Mid-token line breaks:** Compound tokens such as `E{-p}(lab)` must not split across continuation lines.
@@ -134,6 +139,7 @@ Do not flag:
    - Extra space after `=`: `=\s[0-9]`
   - Non-ASCII scan (mandatory): `[^\x00-\x7F]`
 4. Compile the findings table.
+5. Perform a final symbol sweep on all edited or flagged comment lines: raw Unicode glyphs, plain isotope tokens, and mixed symbol-text compounds.
 
 ## Workflow
 
