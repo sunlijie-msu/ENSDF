@@ -1,30 +1,27 @@
- 34AL    34MG B- DECAY:44.9 MS:XUNDL-5 2017LI03                  ENSDF    202609
+ 34AL    34MG B- DECAY (44.9 MS)       2017LI03                  ENSDF    202609
  34AL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
- 34AL c  Compiled (unevaluated) dataset from 2017Li03:                          
- 34AL2c  Phys Rev C 95, 021301(R) (2017)                                        
- 34AL c  Compiled by B. Singh (McMaster): July 27, 2017                         
- 34AL c  2017Li03: {+34}Mg source formed in U(p,X),E=1.4 GeV reaction           
- 34AL2c  using UC{-x} target and Proton Synchrotron Booster at ISOLDE-CERN.     
- 34AL3c  The Mg atoms were selectively ionized using resonance ionization laser 
- 34AL4c  ion source (RILIS), accelerated to 40 keV, then A=34 ions selected     
- 34AL5c  by the ISOLDE General Purpose Separator, and finally deposited on a    
- 34AL6c  movable tape located at the ISOLDE Decay station. Measured E|g, I|g,   
- 34AL7c  |b particles, |b-gated |g spectra, |b-gated |g|g-coin, half-life and   
+ 34AL c  2017Li03: {+34}Mg source formed in U(p,X),E=1.4 GeV reaction using     
+ 34AL2c  UC{-x} target and Proton Synchrotron Booster at ISOLDE-CERN. The Mg    
+ 34AL3c  atoms were selectively ionized using resonance ionization laser ion    
+ 34AL4c  source (RILIS), accelerated to 40 keV, then A=34 ions selected by the  
+ 34AL5c  ISOLDE General Purpose Separator, and finally deposited on a movable   
+ 34AL6c  tape located at the ISOLDE Decay station. Measured E|g, I|g, |b        
+ 34AL7c  particles, |b-gated |g spectra, |b-gated |g|g-coin, half-life and      
  34AL8c  %|b{+-}n for {+34}Mg decay using a plastic scintillator for |b         
  34AL9c  particles, and five HPGe clover detectors for |g detection. Deduced    
  34ALAc  levels, J|p, |b feedings and log| {Ift} values. Comparison with        
  34ALBc  large-scale shell-model calculations using the SDPF-U-MIX interaction. 
  34AL cB IB$From 2017Li03.                                                      
  34AL cB LOGFT$Deduced by compiler. Values in 2017Li03 are nearly the same.     
- 34AL cG E,RI$Values are from e-mail replies of Feb 13 and 16, 2017 from        
- 34AL2cG A. Negret and R. Lica (first author of 2017Li03), with systematic      
- 34AL3cG uncertainty of 0.1 keV in E|g, arising from calibration of             
- 34AL4cG |g-ray spectra, added in quadrature to the uncertainties listed        
- 34AL5cG in the e-mail communication. |DE|g(stat) is the statistical uncertainty
- 34AL6cG in keV, as communicated by authors in e-mail reply.                    
+ 34AL cG E,RI$Values are from e-mail replies of Feb 13 and 16, 2017 from A.     
+ 34AL2cG Negret and R. Lica (first author of 2017Li03), with systematic         
+ 34AL3cG uncertainty of 0.1 keV in E|g, arising from calibration of |g-ray      
+ 34AL4cG spectra, added in quadrature to the uncertainties listed in the e-mail 
+ 34AL5cG communication. |DE|g(stat) is the statistical uncertainty in keV, as   
+ 34AL6cG communicated by authors in e-mail reply.                               
  34AL cL E$Deduced by compiler from least-squares fit to the E|g values.        
- 34AL cL J$As proposed by 2017Li03, based on log| {Ift} values from 0+          
- 34AL2cL parent state and shell-model predictions.                              
+ 34AL cL J$As proposed by 2017Li03, based on log| {Ift} values from 0+ parent   
+ 34AL2cL state and shell-model predictions.                                     
  34AL cL T$From 2012Ro25.                                                       
  34MG  P 0.0          0+               44.9 MS   4              11324     29    
  34MG cP T$Measured by 2017Li03 from decay curve for |b-gated 364.5, 441.2,     
@@ -38,9 +35,9 @@
  34AL  L 46.47     17 1+               26 MS     1                           M  
  34AL2 L %B- AP 100 $ %IT=?                                                     
  34AL cL E$Level energy with uncertainty held fixed in least-squares adjustment 
- 34AL cL E$deduced by compiler from energy difference of 487.67 and 441.20      
- 34AL2cL gamma rays from the 487.8 level. Other: 46.69 {I81} from energy        
- 34AL3cL difference of 970.38 and 923.69 gamma rays from the 970.0 level        
+ 34AL cL E$deduced by compiler from energy difference of 487.67 and 441.20 gamma
+ 34AL2cL rays from the 487.8 level. Other: 46.69 {I81} from energy difference of
+ 34AL3cL 970.38 and 923.69 gamma rays from the 970.0 level                      
  34AL  B               45    8             4.5   1                              
  34ALS B EAV=5377 15                                                            
  34AL  L 410.95    18                                                           
@@ -159,4 +156,4 @@
  34AL2cL (2017Wa10: AME-2016)                                                   
  34AL  B              21     7                                                  
  34AL cB IB$%|b{+-}n=21 {I7} (2017Li03)                                         
-                                                                                
+
