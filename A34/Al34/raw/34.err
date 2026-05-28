@@ -1,0 +1,270 @@
+Program for consistency check: output for Error and Warnings (version 05/27/2026)
+Generated at: Thu 05/28/2026 at 03:43:17 PM EDT
+
+################################################################################
+In Adopted dataset of 34AL
+
+ 34AL  L 0            (4-)             56.3 MS   5                              
+ 34ALX L XREF=AC
+         *                                                                        <W> No input dataset with XREF tag=A for DSID=34MG B- DECAY (20 MS)
+ 34AL2 L MOMM1=(+)2.156 8 (2008Hi01,2011StZZ)                                   
+         *                                                                        <W> Check if MOMM1 and reference are updated with 2019STZV or 2020STZV
+ 34AL  L 44.6         1+                                                        
+ 34AL2 L MOME2=0.038 5$G=1.757 14 (2018Xu05)                                    
+         *                                                                        <W> Check if MOME2 and reference are updated with 2021STZZ
+ 34AL  L 657       9  (4-)                                                      
+ 34AL  G 657       9                                                            
+                     *                                                            <W> Check if RI=100 can be assigned to the single branch
+
+################################################################################
+In dataset of 34AL: X?0 34MG B- DECAY (44.9 MS)     XREF Tag=?0
+
+ 34AL  L 0.0          4-               54.4 MS   5                              
+         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=0
+                     *                                                            <E> JPI commented from Adopted but inconsistent
+                                                                                        Adopted JPI=(4-) this JPI=4-
+                                       *                                          <E> T1/2 commented from Adopted but inconsistent
+                                                                                        Adopted T1/2=56.3 MS 5 this T1/2=54.4 MS 5
+ 34AL  L 46.56     11 1+               26 MS     1                           M  
+         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=44.6
+                                       *                                          <E> T1/2 commented from Adopted but inconsistent
+                                                                                        Adopted T1/2= this T1/2=26 MS 1
+ 34AL  L 411.03    11                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+ 34AL  G 364.51    10 11.2   15                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  L 471.85    12                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+ 34AL  G 425.21    10 4.17   57                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  L 487.77    11 (2-)                                                      
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34AL  G 76.72     12 2.33   38                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 441.20    10 8.8    12                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 487.67    14 0.045  10                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  L 597.52    10 (3-)                                                      
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34AL  G 597.54    11 0.077  10                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  L 893.23    12                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+ 34AL  G 405.47    22 0.044  20                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 421.30    14 0.16   2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 846.63    10 2.27   31                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  L 969.98    12                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+ 34AL  G 482.19    20 0.07   1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 498.14    14 0.19   3                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 558.98    16 0.45   11                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 923.69    71 0.014  10                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 970.38    41 0.023  10                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  L 1048.69   11                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+ 34AL  G 451.20    11 0.10   2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 560.96    11 0.17   4                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 576.96    12 0.05   1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 637.64    12 0.19   3                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 1002.02   10 3.78   52                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  L 1179.04   13                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+ 34AL  G 285.85    26 0.36   6                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 767.96    11 0.20   3                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 1132.51   11 0.43   6                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  L 1231.33   13                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+ 34AL  G 338.15    11 0.25   4                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 759.18    18 0.06   1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 820.33    10 0.53   7                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  L 1462.81   11 1+                                                        
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34AL  G 283.85    25 0.40   7                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 414.16    10 4.29   59                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 492.88    10 0.77   11                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 569.63    10 1.80   25                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 974.96    10 8.6    12                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 990.92    10 1.56   22                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 1051.70   10 8.1    11                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 1416.23   10 2.92   40                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  L 2004.07   12 (1+)                                                      
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34AL  G 1110.45   14 0.025  10                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 1516.13   17 0.09   2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 1532.21   10 1.43   20                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 1593.14   19 0.08   2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 1957.65   11 0.40   6                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  L 2645.91   14                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+ 34AL  G 2158.08   14 0.11   3                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 2173.89   14 0.12   3                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 2235.13   24 0.11   3                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 2598.9    5  0.06   1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34AL: X?1 36MG B-2N DECAY (6.9 MS)     XREF Tag=?1
+
+ 34AL  L 0            4-                                                        
+         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=0
+                     *                                                            <E> JPI commented from Adopted but inconsistent
+                                                                                        Adopted JPI=(4-) this JPI=4-
+ 34AL  L 658          (4-)                                                      
+         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=657
+
+################################################################################
+In dataset of 34AL: X?2 2H(33AL,34ALG),(34SI,34ALG)     XREF Tag=?2
+
+ 34AL  L 0                                                                      
+         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=0
+ 34AL  L 388          (3-)                                                      
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+ 34AL  G 388                                                                    
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  L 1304         (3-)                                                      
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+ 34AL  G 916                                                                    
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34AL: X?3 9BE(36S,34AL)     XREF Tag=?3
+
+ 34AL  L 0            4-               54.4 MS   5                              
+         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=0
+                     *                                                            <E> JPI commented from Adopted but inconsistent
+                                                                                        Adopted JPI=(4-) this JPI=4-
+ 34AL  L 46.7         1+               26 MS     1                           M  
+         *                                                                        <E> Tag=?3 of this dataset missing in XREF of matched Adopted Level=44.6
+
+################################################################################
+In dataset of 34AL: X?4 9BE(40AR,34AL)     XREF Tag=?4
+
+ 34AL  L 0            4-               51.5 MS   9                              
+         *                                                                        <E> Tag=?4 of this dataset missing in XREF of matched Adopted Level=0
+                     *                                                            <E> JPI commented from Adopted but inconsistent
+                                                                                        Adopted JPI=(4-) this JPI=4-
+ 34AL  L 46.6         1+               21.6 MS   15                          M  
+         *                                                                        <E> Tag=?4 of this dataset missing in XREF of matched Adopted Level=44.6
+
+################################################################################
+In dataset of 34AL: X?5 PB(35AL,34ALNG)     XREF Tag=?5
+
+ 34AL  L 0                                                      48        13A   
+         *                                                                        <E> Tag=?5 of this dataset missing in XREF of matched Adopted Level=0
+ 34AL  L 46                                                     48        13A   
+         *                                                                        <E> Tag=?5 of this dataset missing in XREF of matched Adopted Level=44.6
+ 34AL  L 487                                                                    
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+ 34AL  G 441                                                                    
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  L 1048                                                   5         1     
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+ 34AL  L 1460                                                   4         1     
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+ 34AL  L 2000                                                   4         2     
+         *                                                                        <W> level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+ 34AL  G 1513                                                                   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  G 1954                                                                   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34AL  L 2550                                                   16        6    ?
+         *                                                                        <W> questionable level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        657        9 (4-)                XREF=C
+
+################################################################################
+In dataset of 34AL: X?6 U(P,34AL)     XREF Tag=?6
+
+ 34AL  L 0            4-               53.73 MS  13                             
+         *                                                                        <E> Tag=?6 of this dataset missing in XREF of matched Adopted Level=0
+                     *                                                            <E> JPI commented from Adopted but inconsistent
+                                                                                        Adopted JPI=(4-) this JPI=4-
+ 34AL  L 46.6         1+               22.1 MS   2                              
+         *                                                                        <E> Tag=?6 of this dataset missing in XREF of matched Adopted Level=44.6
+                                                                             *    <W> Meta-stable flag missing
+
+################################################################################
+In dataset of 34AL: XC COULOMB EXCITATION     XREF Tag=C
+
+ 34AL  L 657       9  (3-)                                                      
+                     *                                                            <W> JPI here contradicts to adopted. Please check
+                                                                                        Adopted JPI=(4-) this JPI=(3-)
+
+
+End of report
