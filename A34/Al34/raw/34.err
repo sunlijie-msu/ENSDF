@@ -1,15 +1,15 @@
 Program for consistency check: output for Error and Warnings (version 05/27/2026)
-Generated at: Thu 05/28/2026 at 08:26:18 PM EDT
+Generated at: Fri 05/29/2026 at 01:15:07 AM EDT
 
 ################################################################################
 In Adopted dataset of 34AL
 
- 34AL  L 0.0          (4-)             56.3 MS   5                              
- 34AL2 L MOMM1=(+)2.156 8 (2008Hi01,2011StZZ)                                   
+ 34AL  L 0.0          4-               54.0 MS   10                             
+ 34AL2 L MOMM1=(+)2.157 16$G=0.539 2 (2008Hi01,2019StZV)                        
          *                                                                        <W> Check if MOMM1 and reference are updated with 2019STZV or 2020STZV
- 34AL  L 46.56     11 1+               23.2 MS   14                             
+ 34AL  L 46.56     11 1+               16.6 MS   8                              
                                                                              *    <W> Meta-stable flag missing
- 34AL2 L MOME2=0.038 5$G=1.757 14 (2018Xu05)                                    
+ 34AL2 L MOME2=0.038 5$G=1.757 14 (2018Xu05,2021STZZ)                           
          *                                                                        <W> Check if MOME2 and reference are updated with 2021STZZ
  34AL  L 388          (3-)                                                      
  34AL  G 388                                                                    
@@ -22,61 +22,38 @@ In Adopted dataset of 34AL
 In dataset of 34AL: XA 34MG B- DECAY (44.9 MS)     XREF Tag=A
 
  34AL  L 0.0          4-               54.4 MS   5                              
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(4-) this JPI=4-
                                        *                                          <E> T1/2 commented from Adopted but inconsistent
-                                                                                        Adopted T1/2=56.3 MS 5 this T1/2=54.4 MS 5
+                                                                                        Adopted T1/2=54.0 MS 10 this T1/2=54.4 MS 5
  34AL  L 46.56     11 1+               26 MS     1                           M  
                                        *                                          <E> T1/2 commented from Adopted but inconsistent
-                                                                                        Adopted T1/2=23.2 MS 14 this T1/2=26 MS 1
-
-################################################################################
-In dataset of 34AL: XB 36MG B-2N DECAY (6.9 MS)     XREF Tag=B
-
- 34AL  L 0            4-                                                        
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(4-) this JPI=4-
+                                                                                        Adopted T1/2=16.6 MS 8 this T1/2=26 MS 1
+ 34AL  L 2645.91   14                                                           
+                     *                                                            <W> JPI commented from Adopted but empty
+                                                                                        Adopted JPI=(0+,1+,2+) this JPI=
 
 ################################################################################
 In dataset of 34AL: XD 9BE(36S,34AL)     XREF Tag=D
 
- 34AL  L 0            4-               54.4 MS   5                              
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(4-) this JPI=4-
  34AL  L 46.7         1+               26 MS     1                           M  
          *                                                                        <E> E(level) commented from Adopted but inconsistent
                                                                                         Adopted E=46.56 11 this E=46.7
 
 ################################################################################
-In dataset of 34AL: XE 9BE(40AR,34AL)     XREF Tag=E
+In dataset of 34AL: XG PB(35AL,34ALNG)     XREF Tag=G
 
- 34AL  L 0            4-               51.5 MS   9                              
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(4-) this JPI=4-
-
-################################################################################
-In dataset of 34AL: X?0 HE(34AL,34AL'G)     XREF Tag=?0
-
- 34AL  L 0                                                                      
-         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=0.0
- 34AL  L 46.6                                                                   
-         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=46.56
- 34AL  L 383.7                                                                 ?
-         *                                                                        <W> Tag=?0 of this dataset missing in XREF of matched Adopted Level=388
- 34AL  L 471.8                                                                 ?
-         *                                                                        <W> Tag=?0 of this dataset missing in XREF of matched Adopted Level=471.85
+ 34AL  L 2550                                                   16        6    ?
+         *                                                                        <W> questionable level not placed in Adopted.
+                                                                                        closest level in Adopted:
+                                                                                        2645.91   14 (0+,1+,2+)          XREF=A
 
 ################################################################################
-In dataset of 34AL: XG U(P,34AL)     XREF Tag=G
+In dataset of 34AL: XH U(P,34AL)     XREF Tag=H
 
- 34AL  L 0            4-               53.73 MS  13                             
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(4-) this JPI=4-
  34AL  L 46.6         1+               22.1 MS   2                              
                                                                              *    <W> Meta-stable flag missing
 
 ################################################################################
-In dataset of 34AL: XH COULOMB EXCITATION     XREF Tag=H
+In dataset of 34AL: XI COULOMB EXCITATION     XREF Tag=I
 
  34AL  L 657       9  (3-)                                                      
                      *                                                            <W> JPI here contradicts to adopted. Please check

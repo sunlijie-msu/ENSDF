@@ -1,5 +1,5 @@
 Program for consistency check: output for original lines grouped by level and gamma energies (version 05/27/2026)
-Generated at: Thu 05/28/2026 at 08:26:18 PM EDT
+Generated at: Fri 05/29/2026 at 01:15:07 AM EDT
 
 
 Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
@@ -20,44 +20,44 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  34AL  XC2H(33AL,34ALG),(34SI,34ALG)   C-C 2H(33AL,34ALG),(34SI,34ALG)
  34AL  XD9BE(36S,34AL)                 D-D 9BE(36S,34AL)
  34AL  XE9BE(40AR,34AL)                E-E 9BE(40AR,34AL)
- 34AL  XFHE(34AL,34AL'G)               F-?
- 34AL  XGPB(35AL,34ALNG)               G-F PB(35AL,34ALNG)
- 34AL  XHU(P,34AL)                     H-G U(P,34AL)
- 34AL  XICOULOMB EXCITATION            I-H COULOMB EXCITATION
+ 34AL  XFHE(34AL,34AL'G)               F-F HE(34AL,34AL'G)
+ 34AL  XGPB(35AL,34ALNG)               G-G PB(35AL,34ALNG)
+ 34AL  XHU(P,34AL)                     H-H U(P,34AL)
+ 34AL  XICOULOMB EXCITATION            I-I COULOMB EXCITATION
 ################################## new tag show first below ############################################################
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AL  L 0.0          (4-)             56.3 MS   5                               --- possible JPI=(0,1,2,3,4,5+)
+ LEVEL************************************ 34AL  L 0.0          4-               54.0 MS   10                              --- possible JPI=(0,1,2,3,4,5+)
                      *new XREF new tags    34ALX L XREF=ABCDEFGHI
-                     *new XREF old tags    34ALX L XREF=ABCDEFGH?0
-                     #old XREF in Adopted  34ALX L XREF=ABCDEFGH
+                     *new XREF old tags    34ALX L XREF=ABCDEFGHI
+                     #old XREF in Adopted  34ALX L XREF=ABCDEFGHI
        34MG B- DECAY (44.9 MS)--->A  A     34AL  L 0.0          4-               54.4 MS   5                               *** possible JPI=(0,1,2,3,4,5+): 487.67g from 487.77,(2-)
       36MG B-2N DECAY (6.9 MS)--->B  B     34AL  L 0            4-                                                        
    2H(33AL,34ALG),(34SI,34ALG)--->C  C     34AL  L 0                                                                      
                  9BE(36S,34AL)--->D  D     34AL  L 0            4-               54.4 MS   5                              
                 9BE(40AR,34AL)--->E  E     34AL  L 0            4-               51.5 MS   9                              
-               HE(34AL,34AL'G)--->F  ?0    34AL  L 0                                                                      
-               PB(35AL,34ALNG)--->G  F     34AL  L 0                                                      48        13A   
-                     U(P,34AL)--->H  G     34AL  L 0            4-               53.73 MS  13                             
-            COULOMB EXCITATION--->I  H     34AL  L 0            (4-)                                                      
+               HE(34AL,34AL'G)--->F  F     34AL  L 0                                                                      
+               PB(35AL,34ALNG)--->G  G     34AL  L 0                                                      48        13A   
+                     U(P,34AL)--->H  H     34AL  L 0            4-               53.73 MS  13                             
+            COULOMB EXCITATION--->I  I     34AL  L 0            (4-)                                                      
                  9BE(36S,34AL)--->D  D     34AL cL J$from the Adopted Levels. Dominated by neutron 1p0h configuration     
                  9BE(36S,34AL)--->D  D     34AL2cL (f{-7/2}){+1} with a proton hole in d{-5/2} from shell-model           
                  9BE(36S,34AL)--->D  D     34AL3cL calculations (2012Ro25).                                               
                  9BE(36S,34AL)--->D  D     34AL cL T$from fit of |b decay curve in coincidence with 926-keV |b-delayed |g 
                  9BE(36S,34AL)--->D  D     34AL2cL ray in {+34}Si (2012Ro25).                                             
                 9BE(40AR,34AL)--->E  E     34AL cL T$from fit of implant-|b-929|g decay curve (2017Ha23, 2017Ha34).       
-                     U(P,34AL)--->H  G     34AL cL J$from the Adopted Levels of {+34}Al in ENSDF database.
-                     U(P,34AL)--->H  G     34AL cL T$from fit of time distribution gated on 929|g in {+34}Si (2019Li41).
+                     U(P,34AL)--->H  H     34AL cL J$from the Adopted Levels of {+34}Al in ENSDF database.
+                     U(P,34AL)--->H  H     34AL cL T$from fit of time distribution gated on 929|g in {+34}Si (2019Li41).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AL  L 46.56     11 1+               23.2 MS   14                              --- possible JPI=1+
+ LEVEL************************************ 34AL  L 46.56     11 1+               16.6 MS   8                               --- possible JPI=1+
                      *new XREF new tags    34ALX L XREF=ADEFGH
-                     *new XREF old tags    34ALX L XREF=ADEFG?0
-                     #old XREF in Adopted  34ALX L XREF=ADEFG
+                     *new XREF old tags    34ALX L XREF=ADEFGH
+                     #old XREF in Adopted  34ALX L XREF=ADEFGH
        34MG B- DECAY (44.9 MS)--->A  A     34AL  L 46.56     11 1+               26 MS     1                           M   *** possible JPI=1+: logft=4.5(1) from 0+
                  9BE(36S,34AL)--->D  D     34AL  L 46.7         1+               26 MS     1                           M  
                 9BE(40AR,34AL)--->E  E     34AL  L 46.6         1+               21.6 MS   15                          M  
-               HE(34AL,34AL'G)--->F  ?0    34AL  L 46.6                                                                   
-               PB(35AL,34ALNG)--->G  F     34AL  L 46                                                     48        13A   
-                     U(P,34AL)--->H  G     34AL  L 46.6         1+               22.1 MS   2                              
+               HE(34AL,34AL'G)--->F  F     34AL  L 46.6                                                                   
+               PB(35AL,34ALNG)--->G  G     34AL  L 46                                                     48        13A   
+                     U(P,34AL)--->H  H     34AL  L 46.6         1+               22.1 MS   2                              
        34MG B- DECAY (44.9 MS)--->A  A     34AL  B             45      8           4.5     1                              
                  9BE(36S,34AL)--->D  D     34AL cL E,J$from the Adopted Levels. E(level)=0.55 MeV and J|p=1+ with dominant
                  9BE(36S,34AL)--->D  D     34AL2cL neutron 2p1h configuration (d{-3/2}){+-1}(f{-7/2}){+2} from shell-model
@@ -65,8 +65,8 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                  9BE(36S,34AL)--->D  D     34AL4cL 3326-keV |b-delayed |g ray in {+34}Si yields a shorter T{-1/2} of 49.8 
                  9BE(36S,34AL)--->D  D     34AL5cL ms {I2}, which indicates that the 2+, 3326 level in {+34}Si is also fed
                  9BE(36S,34AL)--->D  D     34AL6cL by the |b decay of the isomer in {+34}Al. Even without decay branching 
-                 9BE(36S,34AL)--->D  D     34AL7cL ratios, the fact that the both the 0+ and 2+ levels in {+34}Si are fed 
-                 9BE(36S,34AL)--->D  D     34AL8cL by the isomer suggests a 1+ assignment for the isomer.                 
+                 9BE(36S,34AL)--->D  D     34AL7cL ratios, the fact that both the 0+ and 2+ levels in {+34}Si are fed by  
+                 9BE(36S,34AL)--->D  D     34AL8cL the isomer suggests a 1+ assignment for the isomer.                    
                  9BE(36S,34AL)--->D  D     34AL cL T$from fit of |b decay curve in coincidence with 511-keV |g ray arising
                  9BE(36S,34AL)--->D  D     34AL2cL from positron annihilation. The second 0+ state in {+34}Si is observed 
                  9BE(36S,34AL)--->D  D     34AL3cL to be populated by the |b decay of the 1+ isomer in {+34}Al and to     
@@ -76,19 +76,19 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                 9BE(40AR,34AL)--->E  E     34AL cL T$from fit of implant-|b-1193|g decay curve (2017Ha23, 2017Ha34). A    
                 9BE(40AR,34AL)--->E  E     34AL2cL total of 6.5|*10{+5} 46.6-keV isomer decay events were observed in     
                 9BE(40AR,34AL)--->E  E     34AL3cL 2017Ha23 from fit of the inclusive |b decay curve.                     
-                     U(P,34AL)--->H  G     34AL2 L %B-N=11 4 (2019Li41)                                                   
-                     U(P,34AL)--->H  G     34AL cL T$from fit of time distribution of E0 transition of 0+, 2718 level to  
-                     U(P,34AL)--->H  G     34AL2cL 0+ g.s. of {+34}Si via the internal pair formation (IPF).              
+                     U(P,34AL)--->H  H     34AL2 L %B-N=11 4 (2019Li41)                                                   
+                     U(P,34AL)--->H  H     34AL cL T$from fit of time distribution of E0 transition of 0+, 2718 level to  
+                     U(P,34AL)--->H  H     34AL2cL 0+ g.s. of {+34}Si via the internal pair formation (IPF).              
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34AL  L 388          (3-)                                                       --- possible JPI=(0,1,2,3,4,5,6,7+)
                      *new XREF new tags    34ALX L XREF=CF(?)
-                     *new XREF old tags    34ALX L XREF=C?0(?)
-                     #old XREF in Adopted  34ALX L XREF=C
+                     *new XREF old tags    34ALX L XREF=CF(?)
+                     #old XREF in Adopted  34ALX L XREF=CF(?)
    2H(33AL,34ALG),(34SI,34ALG)--->C  C     34AL  L 388          (3-)                                                      
-               HE(34AL,34AL'G)--->F  ?0(?) 34AL  L 383.7                                                                 ?
- GAMMA------------------------------------ 34AL  G 388                                                                     --- EG=388        FL=0.0        JF=(4-)
+               HE(34AL,34AL'G)--->F  F(?)  34AL  L 383.7                                                                 ?
+ GAMMA------------------------------------ 34AL  G 388                                                                     --- EG=388        FL=0.0        JF=4-
    2H(33AL,34ALG),(34SI,34ALG)--->C  C     34AL  G 388                                                                     *** EG=388        FL=0          JF=
-               HE(34AL,34AL'G)--->F  ?0(?) 34AL  G 383.7     12                                                          ? *** EG=383.7      FL=0          JF=
+               HE(34AL,34AL'G)--->F  F(?)  34AL  G 383.7     12                                                          ? *** EG=383.7      FL=0          JF=
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34AL  L 411.03    11                                                            --- possible JPI=(0,1,2,3+)
                      *new XREF new tags    34ALX L XREF=A
@@ -101,23 +101,23 @@ Note: 1. possible JPI presented at the end of each record line of each individua
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34AL  L 471.85    12                                                            --- possible JPI=(0,1,2,3+)
                      *new XREF new tags    34ALX L XREF=AF(?)
-                     *new XREF old tags    34ALX L XREF=A?0(?)
-                     #old XREF in Adopted  34ALX L XREF=A
+                     *new XREF old tags    34ALX L XREF=AF(?)
+                     #old XREF in Adopted  34ALX L XREF=AF(?)
        34MG B- DECAY (44.9 MS)--->A  A     34AL  L 471.85    12                                                            *** possible JPI=(0,1,2,3+): logft=5.9(GT) from 0+
-               HE(34AL,34AL'G)--->F  ?0(?) 34AL  L 471.8                                                                 ?
+               HE(34AL,34AL'G)--->F  F(?)  34AL  L 471.8                                                                 ?
        34MG B- DECAY (44.9 MS)--->A  A     34AL  B             1.47    LT          5.9     GT                            ?
        34MG B- DECAY (44.9 MS)--->A  A     34AL cB IB$0.6 {I6} in 2017Li03.                                               
  GAMMA------------------------------------ 34AL  G 425.21    10 100                                                        --- EG=425.21     FL=46.56      JF=1+
        34MG B- DECAY (44.9 MS)--->A  A     34AL  G 425.21    10 100                                                        *** EG=425.21     FL=46.56      JF=1+
-               HE(34AL,34AL'G)--->F  ?0(?) 34AL  G 425.3     11                                                          ? *** EG=425.3      FL=46.6       JF=
+               HE(34AL,34AL'G)--->F  F(?)  34AL  G 425.3     11                                                          ? *** EG=425.3      FL=46.6       JF=
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.01 keV.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34AL  L 487.77    11 (2-)                                                       --- possible JPI=(0,1,2,3+)
                      *new XREF new tags    34ALX L XREF=AG
-                     *new XREF old tags    34ALX L XREF=AF
-                     #old XREF in Adopted  34ALX L XREF=AF
+                     *new XREF old tags    34ALX L XREF=AG
+                     #old XREF in Adopted  34ALX L XREF=AG
        34MG B- DECAY (44.9 MS)--->A  A     34AL  L 487.77    11 (2-)                                                       *** possible JPI=(0,1,2,3+): logft=7.8(GT) from 0+
-               PB(35AL,34ALNG)--->G  F     34AL  L 487                                                                    
+               PB(35AL,34ALNG)--->G  G     34AL  L 487                                                                    
        34MG B- DECAY (44.9 MS)--->A  A     34AL  B             4.6     LT          7.8     GT                          1U?
        34MG B- DECAY (44.9 MS)--->A  A     34AL cB IB$2 {I2} in 2017Li03.                                                 
  GAMMA------------------------------------ 34AL  G 76.72     12 27     4                                                   --- EG=76.72      FL=411.03     JF=
@@ -125,9 +125,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.06 keV.
  GAMMA------------------------------------ 34AL  G 441.20    10 100    14                                                  --- EG=441.20     FL=46.56      JF=1+
        34MG B- DECAY (44.9 MS)--->A  A     34AL  G 441.20    10 100    14                                                  *** EG=441.20     FL=46.56      JF=1+
-               PB(35AL,34ALNG)--->G  F     34AL  G 441                                                                     *** EG=441        FL=46         JF=
+               PB(35AL,34ALNG)--->G  G     34AL  G 441                                                                     *** EG=441        FL=46         JF=
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.01 keV.
- GAMMA------------------------------------ 34AL  G 487.67    14 0.51   12                                                  --- EG=487.67     FL=0.0        JF=(4-)
+ GAMMA------------------------------------ 34AL  G 487.67    14 0.51   12                                                  --- EG=487.67     FL=0.0        JF=4-
        34MG B- DECAY (44.9 MS)--->A  A     34AL  G 487.67    14 0.51   12                                                  *** EG=487.67     FL=0.0        JF=4-
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.10 keV.
 ------------------------------------------------------------------------------------------------------------------------
@@ -136,20 +136,20 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      *new XREF old tags    34ALX L XREF=A
                      #old XREF in Adopted  34ALX L XREF=A
        34MG B- DECAY (44.9 MS)--->A  A     34AL  L 597.52    10 (3-)                                                       *** possible JPI=(0,1,2,3,4,5): 451.20g from 1048.69,
- GAMMA------------------------------------ 34AL  G 597.54    11 100                                                        --- EG=597.54     FL=0.0        JF=(4-)
+ GAMMA------------------------------------ 34AL  G 597.54    11 100                                                        --- EG=597.54     FL=0.0        JF=4-
        34MG B- DECAY (44.9 MS)--->A  A     34AL  G 597.54    11 100                                                        *** EG=597.54     FL=0.0        JF=4-
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.05 keV.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34AL  L 657       9  (4-)                                                       --- possible JPI=(0,1,2,3,4,5,6,7+)
                      *new XREF new tags    34ALX L XREF=BI
-                     *new XREF old tags    34ALX L XREF=BH
-                     #old XREF in Adopted  34ALX L XREF=BH
+                     *new XREF old tags    34ALX L XREF=BI
+                     #old XREF in Adopted  34ALX L XREF=BI
       36MG B-2N DECAY (6.9 MS)--->B  B     34AL  L 658          (4-)                                                      
-            COULOMB EXCITATION--->I  H     34AL  L 657       9  (3-)                                                      
-            COULOMB EXCITATION--->I  H     34AL2 L BE2=0.0100 39 (2001Pr08)                                               
- GAMMA------------------------------------ 34AL  G 657       9  100                                                        --- EG=657        FL=0.0        JF=(4-)
+            COULOMB EXCITATION--->I  I     34AL  L 657       9  (3-)                                                      
+            COULOMB EXCITATION--->I  I     34AL2 L BE2=0.0100 39 (2001Pr08)                                               
+ GAMMA------------------------------------ 34AL  G 657       9  100                                                        --- EG=657        FL=0.0        JF=4-
       36MG B-2N DECAY (6.9 MS)--->B  B     34AL  G 658         100                                                         *** EG=658        FL=0          JF=4-
-            COULOMB EXCITATION--->I  H     34AL  G 657       9                                                             *** EG=657        FL=0          JF=(4-)
+            COULOMB EXCITATION--->I  I     34AL  G 657       9                                                             *** EG=657        FL=0          JF=(4-)
       36MG B-2N DECAY (6.9 MS)--->B  B     34AL cG E,RI$from 2013StZY.                                                    
       36MG B-2N DECAY (6.9 MS)--->B  B     34AL cG $2013StZY observed a 658|g that appears predominantly in the time 0-10 
       36MG B-2N DECAY (6.9 MS)--->B  B     34AL2cG ms after an implantation of {+36}Mg. 2013StZY states that the 658|g is 
@@ -200,18 +200,18 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.7 keV.
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG RI$|DI|g=0.00 is given in 2017LiZZ. Evaluators assign 0.01 based on    
        34MG B- DECAY (44.9 MS)--->A  A     34AL2cG minimum |DI|g in 2017LiZZ.                                             
- GAMMA------------------------------------ 34AL  G 970.38    41 5.1    22                                                  --- EG=970.38     FL=0.0        JF=(4-)
+ GAMMA------------------------------------ 34AL  G 970.38    41 5.1    22                                                  --- EG=970.38     FL=0.0        JF=4-
        34MG B- DECAY (44.9 MS)--->A  A     34AL  G 970.38    41 5.1    22                                                  *** EG=970.38     FL=0.0        JF=4-
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.4 keV.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34AL  L 1048.69   11                                                            --- possible JPI=(0,1,2,3)
                      *new XREF new tags    34ALX L XREF=AG
-                     *new XREF old tags    34ALX L XREF=AF
-                     #old XREF in Adopted  34ALX L XREF=AF
+                     *new XREF old tags    34ALX L XREF=AG
+                     #old XREF in Adopted  34ALX L XREF=AG
        34MG B- DECAY (44.9 MS)--->A  A     34AL  L 1048.69   11                                                            *** possible JPI=(0,1,2,3): logft=5.9(GT) from 0+
-               PB(35AL,34ALNG)--->G  F     34AL  L 1048                                                   5         1     
+               PB(35AL,34ALNG)--->G  G     34AL  L 1048                                                   5         1     
        34MG B- DECAY (44.9 MS)--->A  A     34AL  B             1.1     LT          5.9     GT                             
-               PB(35AL,34ALNG)--->G  F     34AL cL $Relative population=6% {I2}.
+               PB(35AL,34ALNG)--->G  G     34AL cL $Relative population=6% {I2}.
  GAMMA------------------------------------ 34AL  G 451.20    11 2.7    5                                                   --- EG=451.20     FL=597.52     JF=(3-)
        34MG B- DECAY (44.9 MS)--->A  A     34AL  G 451.20    11 2.7    5                                                   *** EG=451.20     FL=597.52     JF=(3-)
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.05 keV.
@@ -226,7 +226,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.07 keV.
  GAMMA------------------------------------ 34AL  G 1002.02   10 100    14                                                  --- EG=1002.02    FL=46.56      JF=1+
        34MG B- DECAY (44.9 MS)--->A  A     34AL  G 1002.02   10 100    14                                                  *** EG=1002.02    FL=46.56      JF=1+
-               PB(35AL,34ALNG)--->G  F(?)  34AL  G 1002                                                                  ? *** EG=1002       FL=46         JF=
+               PB(35AL,34ALNG)--->G  G(?)  34AL  G 1002                                                                  ? *** EG=1002       FL=46         JF=
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.004 keV.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34AL  L 1179.04   13                                                            --- possible JPI=(0,1,2,3)
@@ -271,12 +271,12 @@ Note: 1. possible JPI presented at the end of each record line of each individua
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34AL  L 1462.81   11 1+                                                         --- possible JPI=(0,1,2)
                      *new XREF new tags    34ALX L XREF=AG
-                     *new XREF old tags    34ALX L XREF=AF
-                     #old XREF in Adopted  34ALX L XREF=AF
+                     *new XREF old tags    34ALX L XREF=AG
+                     #old XREF in Adopted  34ALX L XREF=AG
        34MG B- DECAY (44.9 MS)--->A  A     34AL  L 1462.81   11 1+                                                         *** possible JPI=(0,1,2): logft=4.4 from 0+
-               PB(35AL,34ALNG)--->G  F     34AL  L 1460                                                   4         1     
+               PB(35AL,34ALNG)--->G  G     34AL  L 1460                                                   4         1     
        34MG B- DECAY (44.9 MS)--->A  A     34AL  B             28.4                4.4                                    
-               PB(35AL,34ALNG)--->G  F     34AL cL $Relative population=5% {I2}.
+               PB(35AL,34ALNG)--->G  G     34AL cL $Relative population=5% {I2}.
  GAMMA------------------------------------ 34AL  G 283.85    25 4.7    8                                                   --- EG=283.85     FL=1179.04    JF=
        34MG B- DECAY (44.9 MS)--->A  A     34AL  G 283.85    25 4.7    8                                                   *** EG=283.85     FL=1179.04    JF=
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.23 keV.
@@ -300,23 +300,23 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.004 keV.
  GAMMA------------------------------------ 34AL  G 1416.23   10 34     5                                                   --- EG=1416.23    FL=46.56      JF=1+
        34MG B- DECAY (44.9 MS)--->A  A     34AL  G 1416.23   10 34     5                                                   *** EG=1416.23    FL=46.56      JF=1+
-               PB(35AL,34ALNG)--->G  F(?)  34AL  G 1414                                                                  ? *** EG=1414       FL=46         JF=
+               PB(35AL,34ALNG)--->G  G(?)  34AL  G 1414                                                                  ? *** EG=1414       FL=46         JF=
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.013 keV.
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34AL  L 2004.07   12 (1+)                                                       --- possible JPI=(0,1,2)
                      *new XREF new tags    34ALX L XREF=AG
-                     *new XREF old tags    34ALX L XREF=AF
-                     #old XREF in Adopted  34ALX L XREF=AF
+                     *new XREF old tags    34ALX L XREF=AG
+                     #old XREF in Adopted  34ALX L XREF=AG
        34MG B- DECAY (44.9 MS)--->A  A     34AL  L 2004.07   12 (1+)                                                       *** possible JPI=(0,1,2): logft=5.4 from 0+
-               PB(35AL,34ALNG)--->G  F     34AL  L 2000                                                   4         2     
+               PB(35AL,34ALNG)--->G  G     34AL  L 2000                                                   4         2     
        34MG B- DECAY (44.9 MS)--->A  A     34AL  B             2.03                5.4                                    
-               PB(35AL,34ALNG)--->G  F     34AL cL $Relative population=5% {I3}.
+               PB(35AL,34ALNG)--->G  G     34AL cL $Relative population=5% {I3}.
  GAMMA------------------------------------ 34AL  G 1110.45   14 1.8    7                                                   --- EG=1110.45    FL=893.23     JF=
        34MG B- DECAY (44.9 MS)--->A  A     34AL  G 1110.45   14 1.8    7                                                   *** EG=1110.45    FL=893.23     JF=
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.09 keV.
  GAMMA------------------------------------ 34AL  G 1516.13   17 6.3    14                                                  --- EG=1516.13    FL=487.77     JF=(2-)
        34MG B- DECAY (44.9 MS)--->A  A     34AL  G 1516.13   17 6.3    14                                                  *** EG=1516.13    FL=487.77     JF=(2-)
-               PB(35AL,34ALNG)--->G  F     34AL  G 1513                                                                    *** EG=1513       FL=487        JF=
+               PB(35AL,34ALNG)--->G  G     34AL  G 1513                                                                    *** EG=1513       FL=487        JF=
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.14 keV.
  GAMMA------------------------------------ 34AL  G 1532.21   10 100    14                                                  --- EG=1532.21    FL=471.85     JF=
        34MG B- DECAY (44.9 MS)--->A  A     34AL  G 1532.21   10 100    14                                                  *** EG=1532.21    FL=471.85     JF=
@@ -326,19 +326,18 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.16 keV.
  GAMMA------------------------------------ 34AL  G 1957.65   11 28     4                                                   --- EG=1957.65    FL=46.56      JF=1+
        34MG B- DECAY (44.9 MS)--->A  A     34AL  G 1957.65   11 28     4                                                   *** EG=1957.65    FL=46.56      JF=1+
-               PB(35AL,34ALNG)--->G  F     34AL  G 1954                                                                    *** EG=1954       FL=46         JF=
+               PB(35AL,34ALNG)--->G  G     34AL  G 1954                                                                    *** EG=1954       FL=46         JF=
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.04 keV.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AL  L 2550                                                                  ? --- possible JPI=(0,1,2,3,4)
+ LEVEL************************************ 34AL  L 2550                                                   16        6    ?
                      *new XREF new tags    34ALX L XREF=G(?)
-                     *new XREF old tags    34ALX L XREF=F(?)
-                     #old XREF in Adopted  34ALX L XREF=F(2550?)
-               PB(35AL,34ALNG)--->G  F(?)  34AL  L 2550                                                   16        6    ?
-               PB(35AL,34ALNG)--->G  F(?)  34AL cL $Relative population=21% {I8}.
- GAMMA------------------------------------ 34AL  G 1090                                                                  ? --- EG=1090       FL=1462.81    JF=1+
-               PB(35AL,34ALNG)--->G  F(?)  34AL  G 1090                                                                  ? *** EG=1090       FL=1460       JF=
+                     *new XREF old tags    34ALX L XREF=G(?)
+               PB(35AL,34ALNG)--->G  G(?)  34AL  L 2550                                                   16        6    ?
+               PB(35AL,34ALNG)--->G  G(?)  34AL cL $Relative population=21% {I8}.
+ GAMMA------------------------------------ 34AL  G 1090                                                                  ?
+               PB(35AL,34ALNG)--->G  G(?)  34AL  G 1090                                                                  ? *** EG=1090       FL=1460       JF=
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AL  L 2645.91   14                                                            --- possible JPI=(0,1,2)
+ LEVEL************************************ 34AL  L 2645.91   14 (0+,1+,2+)                                                 --- possible JPI=(0,1,2)
                      *new XREF new tags    34ALX L XREF=A
                      *new XREF old tags    34ALX L XREF=A
                      #old XREF in Adopted  34ALX L XREF=A
@@ -374,7 +373,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
 
 Statistics of levels and gammas from all datasets of 34AL:
                              DSID     #of levels       #of gammas       level range
-           ADOPTED LEVELS, GAMMAS        18               46            0.0        to    2645.91
+           ADOPTED LEVELS, GAMMAS        17               45            0.0        to    2645.91
           34MG B- DECAY (44.9 MS)        15               42            0.0        to     2572+x
          36MG B-2N DECAY (6.9 MS)        2                1             0          to        658
       2H(33AL,34ALG),(34SI,34ALG)        3                2             0          to       1304
@@ -385,7 +384,7 @@ Statistics of levels and gammas from all datasets of 34AL:
                         U(P,34AL)        2                0             0          to       46.6
                COULOMB EXCITATION        2                1             0          to        657
 
-                         IN TOTAL        57               100           0.0        to    2645.91
+                         IN TOTAL        56               99            0.0        to    2645.91
 
 
 
@@ -393,12 +392,12 @@ Statistics of levels and gammas from all datasets of 34AL:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                   34AL        18           46           57           100            631              9
+                   34AL        17           45           56           99             643              9
 
-               IN TOTAL        18           46           57           100            631              9
+               IN TOTAL        17           45           56           99             643              9
 
 Number of nuclides     : 1
 Number of blocks       : 10
-Number of references   : 42
-Number of lines in files: 641
+Number of references   : 44
+Number of lines in files: 653
 (from all blocks including abstract, comment, reference)
