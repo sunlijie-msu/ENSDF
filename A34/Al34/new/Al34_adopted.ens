@@ -25,24 +25,18 @@
  34AL5c  models. Studied target dependence of fragment cross sections.          
  34AL c  2007No13: {+9}Be({+40}Ar,X) at E({+40}Ar)=100 MeV/nucleon at RIKEN.    
  34AL2c  Measured fragment momentum distributions and production cross sections.
- 34AL d  2012Zh06: measured momentum distributions and production cross section 
- 34AL2d  in 9BE,181TA(40AR,X) at 57 MEV/nucleon                                 
- 34AL c  2008Hi01: {+9}Be({+36}S,x|g) E=77.5 MeV/nucleon. Extracted {+34}Al beam
- 34AL2c  using LISE fragment separator at GANIL facility. Beam implanted in Si  
- 34AL3c  crystal. Measured magnetic moment using nuclear magnetic resonance     
- 34AL4c  (NMR) method following |b decay.                                       
- 34AL c  {+34}Al decay measurements:                                            
- 34AL c  2001Nu01 (also 2002Nu02): mass-separated {+34}Al produced in U(p,X) E=1
- 34AL2c  GeV reaction using uranium carbide target, CERN-ISOLDE facility.       
- 34AL3c  Measured E|g, I|g, |b, |b|g, |b|g|g, |bn|g coin, |b|g(t), T{-1/2} and  
- 34AL4c  delayed neutron-emission probability using Ge and BaF{-2} detectors for
- 34AL5c  |g rays, plastic scintillation detectors for |b rays and neutrons.     
+ 34AL c  {+34}Al and {+34m}Al decay measurements:                               
+ 34AL c  2019Li41: U(p,X) at CERN. Measured T{-1/2}, |b{+-}-delayed |g          
+ 34AL2c  spectroscopy.                                                          
+ 35AL c  2001Nu01,2002Nu02: U(p,X) at CERN. Measured T{-1/2}, |b{+-}-delayed |g 
+ 35AL2c  and neutron spectroscopy.                                              
  34AL c  {+34}Al radius measurements:                                           
- 34AL c  2006Kh08: Cross section and strong absorption radius measurement in    
- 34AL2c  Si({+34}Al,X) reaction at 44.4 MeV/nucleon and 50.9 MeV/nucleon.       
- 34AL c  {+34}Al mass measurement:                                              
- 34AL c  2019As04: ToF-ICR with ISOLTRAP, ISOLDE-CERN.                          
- 34AL c  2015Kw01: ToF-ICR with TITAN, TRIUMF.                                  
+ 34AL c  2006Kh08: {+35}Al produced by {+181}Ta({+48}Ca,X) fragmentation at     
+ 34AL2c  E({+48}Ca)=60.3 MeV/nucleon at GANIL. Measured energy-integrated       
+ 34AL3c  reaction cross sections at 30-65 MeV/nucleon using a silicon telescope 
+ 34AL4c  as both active target and detector. Deduced reduced strong absorption  
+ 34AL5c  radii, isospin dependence, and possible halo structure or large        
+ 34AL6c  deformation.                                                           
  34AL c  {+34}Al knockout-reaction measurements:                                
  34AL c  2012No05: {+33,34,35,36}Al produced by Be({+48}Ca,X) fragmentation at  
  34AL2c  E({+48}Ca)=900 MeV/nucleon at GSI. Measured 1n removal cross sections  
@@ -53,6 +47,9 @@
  34AL2c  E({+40}Ar)=700 MeV/nucleon at GSI. Measured 1n knockout cross sections 
  34AL3c  and longitudinal momentum distributions of the residues.               
  34AL4c  |s({+35}Al|){+34}Al)=65 mb {I18} and |s({+34}Al|){+33}Al)=102 mb {I24}.
+ 34AL c  {+34}Al mass measurement:                                              
+ 34AL c  2019As04: ToF-ICR with ISOLTRAP, ISOLDE-CERN.                          
+ 34AL c  2015Kw01: ToF-ICR with TITAN, TRIUMF.                                  
  34AL c  Theoretical calculations:                                              
  34AL c  2025Zh57, 2024SA36, 2022ST03, 2013LI39                                 
  34AL cG E,RI$from {+34}Mg |b{+-} decay (44.9 ms), unless otherwise noted.      
@@ -120,19 +117,21 @@
  34AL cG E$other: 425.3 {I11} from He({+34}Al,{+34}Al'|g)                       
  34AL  L 487.77    11 (2-)                                                      
  34ALX L XREF=AG                                                                
- 34AL cL J$|g from 1+ level and |g to 1+, 4- levels. (2-) from shell-model      
- 34AL2cL calculations using the SDPF-U-MIX interaction (2017Li03).              
+ 34AL cL J$974.96|g from 1+, 1462.81 level, 441.20|g to 1+, 46.56 level, and    
+ 34AL2cL 487.67|g to 4- g.s. There is no nearby 3+ levels based on SDPF-U-MIX   
+ 34AL3cL shell-model calculations (2017Li03).                                   
  34AL  G 76.72     12 27     4                                                  
  34AL  G 441.20    10 100    14                                                 
  34AL  G 487.67    14 0.51   12                                                 
  34AL  L 597.52    10 (3-)                                                      
  34ALX L XREF=A                                                                 
- 34AL cL J$|g to 4- level.                                                      
+ 34AL cL J$597.54|g to 4- g.s. and no direct |b-feeding from 0+ {+34}Mg parent. 
  34AL  G 597.54    11 100                                                       
  34AL  L 657       9  (4-)                                                      
  34ALX L XREF=BI                                                                
  34AL2 L BE2=0.0100 39 (2001Pr08)                                               
- 34AL cL J$shell-model calculations (2008Hi01).                                 
+ 34AL cL J$4- from shell-model calculations in 2008Hi01 to reproduce the        
+ 34AL2cL measured B(E2) in 2001Pr08.                                            
  34AL  G 657       9  100       E2                                              
  34AL cG E,RI,M$from Coulomb excitation.                                        
  34AL  L 893.23    12                                                           
@@ -154,13 +153,13 @@
  34AL  G 576.96    12 1.32   27                                                 
  34AL  G 637.64    12 5.0    8                                                  
  34AL  G 1002.02   10 100    14                                                 
- 34AL  L 1179.04   13 (0,1,2+)                                                  
+ 34AL  L 1179.04   13 (0,1,2)                                                   
  34ALX L XREF=A                                                                 
  34AL cL J$|b{+-} feeding with logft=6.1 from 0+ {+34}Mg parent.                
  34AL  G 285.85    26 84     14                                                 
  34AL  G 767.96    11 47     7                                                  
  34AL  G 1132.51   11 100    14                                                 
- 34AL  L 1231.33   13 (0,1,2+)                                                  
+ 34AL  L 1231.33   13 (0,1,2)                                                   
  34ALX L XREF=A                                                                 
  34AL cL J$|b{+-} feeding with logft=6.0 from 0+ {+34}Mg parent.                
  34AL  G 338.15    11 47     8                                                  
@@ -185,7 +184,7 @@
  34AL  G 990.92    10 18.1   26                                                 
  34AL  G 1051.70   10 94     13                                                 
  34AL  G 1416.23   10 34     5                                                  
- 34AL  L 2004.07   12 (1+)                                                      
+ 34AL  L 2004.07   12 0(+),1(+)                                                 
  34ALX L XREF=AG                                                                
  34AL cL J$possible allowed |b{+-} feeding with logft=5.4 from 0+ {+34}Mg       
  34AL2cL parent.                                                                
