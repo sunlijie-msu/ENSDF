@@ -2,6 +2,7 @@
  34AL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34AL  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34AL2 H CUT=28-May-2012$                                                       
+ 34AL dG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  34AL dL E$Least-squares fitting is done by GLSC (version 20-May-2026)          
  34AL  Q 16994.1   23 2572   7 15249   3 -13897  5     2021WA16                 
  34AL cQ $S(2n)=8041 {I7}, S(2p)=36220 {I40}, Q(|b{+-}n)=9445.4 {I22} (2021Wa16)
@@ -27,10 +28,11 @@
  34AL2c  Measured fragment momentum distributions and production cross sections.
  34AL c  {+34}Al knockout-reaction measurements:                                
  34AL c  2012No05: {+33,34,35,36}Al produced by {+9}Be({+48}Ca,X) fragmentation 
- 34AL2c  E({+48}Ca)=900 MeV/nucleon at GSI. Measured 1n removal cross sections  
- 34AL3c  and longitudinal momentum distributions of the residues. Deduced       
- 34AL4c  single-particle occupancies in the ground states of {+33,34,35}Al.     
- 34AL5c  |s({+35}Al|){+34}Al)=75 mb {I4} and |s({+34}Al|){+33}Al)=81 mb {I4}.   
+ 34AL2c  at E({+48}Ca)=900 MeV/nucleon at GSI. Measured 1n removal cross        
+ 34AL3c  sections and longitudinal momentum distributions of the residues.      
+ 34AL4c  Deduced single-particle occupancies in the ground states of            
+ 34AL5c  {+33,34,35}Al. |s({+35}Al|){+34}Al)=75 mb {I4} and                     
+ 34AL6c  |s({+34}Al|){+33}Al)=81 mb {I4}.                                       
  34AL c  2010Ro23: {+35}Al produced by {+9}Be({+40}Ar,X) fragmentation at       
  34AL2c  E({+40}Ar)=700 MeV/nucleon at GSI. Measured 1n knockout cross sections 
  34AL3c  and longitudinal momentum distributions of the residues.               
@@ -68,13 +70,10 @@
  34ALX L XREF=ABCDEFGHI                                                         
  34AL2 L %B-=100$ %B-N=24 4 (2001Nu01)                                          
  34AL2 L MOMM1=(+)2.157 16$G=0.539 2 (2019StZV,2008Hi01)                        
- 34AL cL MOMM1,G$original (+)2.156 {I16} using |b-NMR (2008Hi01).               
  34AL cL $%|b{+-}n: weighted average of 22 {I5} (2019Li41), 26 {I4} (2001Nu01), 
  34AL2cL and 27 {I5} (1989Ba50). Others: 54 {I12} (1988Mu08), 12.5 {I25}        
  34AL3cL (1995ReZZ).                                                            
- 34AL cL $Strong absorption r{-0}{+2}=1.187 fm{+2} {I18} from Si({+34}Al,X)     
- 34AL2cL (2006Kh08). See also 1999YoZW. Values from 1988Mu08 and 1995ReZZ are in
- 34AL3cL serious disagreement with those from 2001Nu01 and 1989Ba50.            
+ 34AL cL MOMM1,G$original (+)2.156 {I16} using |b-NMR (2008Hi01).               
  34AL cL J$4-, 5- from g factor measurement (2008Hi01). Normal configuration of 
  34AL2cL |p(d{-5/2}){+-1}~#|n(f{-7/2}){+1} from shell-model calculations using  
  34AL3cL the SDPF-U-MIX interaction (2017Li03).                                 
@@ -86,10 +85,14 @@
  34AL6cL |b-delayed |g in {+34}Si, and 56.3 ms {I5} in U(p,{+34}Al) from        
  34AL7cL 2001Nu01 by |b and |g counting rates. Others: 50 ms {I25} (1986Du07),  
  34AL8cL 70 ms {I25} (1988Mu08), and 42 ms {I6} (1995ReZZ).                     
+ 34AL cL $Strong absorption r{-0}{+2}=1.187 fm{+2} {I18} from Si({+34}Al,X)     
+ 34AL2cL (2006Kh08).                                                            
  34AL  L 46.56     11 1+               23.2 MS   14                          M  
  34ALX L XREF=ADEFGH                                                            
  34AL2 L %B-=100$ %B-N=11 4 (2019Li41)                                          
  34AL2 L MOME2=0.038 5$G=1.757 14 (2021STZZ,2018Xu05)                           
+ 34AL cL MOME2$from |b-detected quadrupole resonance (2018Xu05).                
+ 34AL cL G$from |b-detected nuclear magnetic resonance (2018Xu05).              
  34AL cL J$spin=1 from nuclear magnetic resonance (|b-NMR) and quadrupole       
  34AL2cL resonance (|b-NQR) by 2018Xu05. Intruder configuration of              
  34AL3cL |p(d{-5/2}){+-1}~#|n(d{-3/2}){+-1}(f{-7/2}){+2} from shell-model       
@@ -101,8 +104,6 @@
  34AL5cL implant-|b-1193|g decay curve, and 26 ms {I1} in {+9}Be({+36}S,{+34}Al)
  34AL6cL from 2012Ro25 by fitting |b decay curve in coincidence with 511-keV |g 
  34AL7cL ray arising from positron annihilation.                                
- 34AL cL MOME2$from |b-detected quadrupole resonance (2018Xu05).                
- 34AL cL G$from |b-detected nuclear magnetic resonance (2018Xu05).              
  34AL  L 383.7     12                                                           
  34ALX L XREF=CF(?)                                                             
  34AL cL J$(3-) from shell-model calculations (2007GeZX).                       
@@ -118,14 +119,16 @@
  34AL  L 487.77    11 (2-)                                                      
  34ALX L XREF=AG                                                                
  34AL cL J$974.96|g from 1+, 1462.81 level, 441.20|g to 1+, 46.56 level, and    
- 34AL2cL 487.67|g to 4- g.s. There is no nearby 3+ levels based on SDPF-U-MIX   
- 34AL3cL shell-model calculations (2017Li03).                                   
+ 34AL2cL 487.67|g to 4- g.s. There is no nearby levels with positive parity     
+ 34AL3cL based on SDPF-U-MIX shell-model calculations (2017Li03).               
  34AL  G 76.72     12 27     4                                                  
  34AL  G 441.20    10 100    14                                                 
  34AL  G 487.67    14 0.51   12                                                 
  34AL  L 597.52    10 (3-)                                                      
  34ALX L XREF=A                                                                 
  34AL cL J$597.54|g to 4- g.s. and no direct |b-feeding from 0+ {+34}Mg parent. 
+ 34AL2cL There is no nearby levels with positive parity based on SDPF-U-MIX     
+ 34AL3cL shell-model calculations (2017Li03).                                   
  34AL  G 597.54    11 100                                                       
  34AL  L 657       9  (4-)                                                      
  34ALX L XREF=BI                                                                
@@ -133,6 +136,7 @@
  34AL cL J$4- from shell-model calculations in 2008Hi01 to reproduce the        
  34AL2cL measured B(E2) in 2001Pr08.                                            
  34AL  G 657       9  100       E2                                              
+ 34ALS G  CC=8.3E-5 4$KC=7.76E-5 35$LC=5.29E-6 24$MC=2.81E-7 13                 
  34AL cG E,RI,M$from Coulomb excitation.                                        
  34AL  L 893.23    12                                                           
  34ALX L XREF=A                                                                 
@@ -193,10 +197,10 @@
  34AL  G 1532.21   10 100    14                                                 
  34AL  G 1593.14   19 5.6    14                                                 
  34AL  G 1957.65   11 28     4                                                  
- 34AL  L 2645.91   14 (0,1)                                                
+ 34AL  L 2645.91   14 0(+),1(+)                                                 
  34ALX L XREF=A                                                                 
- 34AL cL J$above S(n) of 34Al and |b{+-} feeding with logft=6.0 from 0+ {+34}Mg 
- 34AL2cL parent.                                                                
+ 34AL cL J$above S(n) of {+34}Al and possible allowed |b{+-} feeding with       
+ 34AL2cL logft=6.0 from 0+ {+34}Mg parent.                                      
  34AL  G 2158.08   14 92     25                                                 
  34AL  G 2173.89   14 100    25                                                 
  34AL  G 2235.13   24 92     25                                                 
