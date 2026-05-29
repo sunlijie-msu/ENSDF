@@ -1,32 +1,33 @@
 Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 05/27/2026)
-Generated at: Fri 05/29/2026 at 01:15:14 AM EDT                                 
+Generated at: Fri 05/29/2026 at 02:16:56 AM EDT                                 
                                                                                 
  34AL    ADOPTED LEVELS, GAMMAS                                  ENSDF    202609
  34AL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34AL  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34AL2 H CUT=28-May-2012$                                                       
+ 34AL dL E$Least-squares fitting is done by GLSC (version 20-May-2026)          
  34AL  Q 16994.1   23 2572   7 15249   3 -13897  5     2021WA16                 
  34AL cQ $S(2n)=8041 {I7}, S(2p)=36220 {I40}, Q(|b{+-}n)=9445.4 {I22} (2021Wa16)
  34AL c  Isotope discovery (2012Th10): U(p,X) E=800 MeV at the Los Alamos Meson 
  34AL2c  Physics Facility (1977Bu11).                                           
  34AL c  {+34}Al production:                                                    
- 35SI c  2015Mo17: {+9}Be({+40}Ar,X) at E({+40}Ar)=95 MeV/nucleon at RIKEN.     
- 35SI2c  Measured angular distributions and transverse momentum distributions of
- 35SI3c  fragments. Deduced formulation for the width of transverse momentum    
- 35SI4c  distribution as a function of fragment velocity.                       
- 35SI c  2012Kw02: E({+40}Ar)=140 MeV/nucleon impinged on {+9}Be, natural       
- 35SI2c  nickel, and {+181}Ta targets at NSCL. Measured fragmentation cross     
- 35SI3c  sections, parallel momentum transfers, and widths. Compared with       
- 35SI4c  empirical formula EPAX, and predictions from internuclear cascade and  
- 35SI5c  deep inelastic models using Monte Carlo ISABEL-GEMINI and DIT-GEMINI   
- 35SI6c  codes.                                                                 
- 35SI c  2012Zh06: {+9}Be,{+181}Ta({+40}Ar,X) at E({+40}Ar)=57 MeV/nucleon at   
- 35SI2c  HIRFL. Measured momentum distributions and production cross sections of
- 35SI3c  fragments. Observed competition between projectile fragmentation and   
- 35SI4c  other mechanisms. Compared with EPAX, abrasion-ablation, and HIPSE     
- 35SI5c  models. Studied target dependence of fragment cross sections.          
- 35SI c  2007No13: {+9}Be({+40}Ar,X) at E({+40}Ar)=100 MeV/nucleon at RIKEN.    
- 35SI2c  Measured fragment momentum distributions and production cross sections.
+ 34AL c  2015Mo17: {+9}Be({+40}Ar,X) at E({+40}Ar)=95 MeV/nucleon at RIKEN.     
+ 34AL2c  Measured angular distributions and transverse momentum distributions of
+ 34AL3c  fragments. Deduced formulation for the width of transverse momentum    
+ 34AL4c  distribution as a function of fragment velocity.                       
+ 34AL c  2012Kw02: E({+40}Ar)=140 MeV/nucleon impinged on {+9}Be, natural       
+ 34AL2c  nickel, and {+181}Ta targets at NSCL. Measured fragmentation cross     
+ 34AL3c  sections, parallel momentum transfers, and widths. Compared with       
+ 34AL4c  empirical formula EPAX, and predictions from internuclear cascade and  
+ 34AL5c  deep inelastic models using Monte Carlo ISABEL-GEMINI and DIT-GEMINI   
+ 34AL6c  codes.                                                                 
+ 34AL c  2012Zh06: {+9}Be,{+181}Ta({+40}Ar,X) at E({+40}Ar)=57 MeV/nucleon at   
+ 34AL2c  HIRFL. Measured momentum distributions and production cross sections of
+ 34AL3c  fragments. Observed competition between projectile fragmentation and   
+ 34AL4c  other mechanisms. Compared with EPAX, abrasion-ablation, and HIPSE     
+ 34AL5c  models. Studied target dependence of fragment cross sections.          
+ 34AL c  2007No13: {+9}Be({+40}Ar,X) at E({+40}Ar)=100 MeV/nucleon at RIKEN.    
+ 34AL2c  Measured fragment momentum distributions and production cross sections.
  34AL d  2012Zh06: measured momentum distributions and production cross section 
  34AL2d  in 9BE,181TA(40AR,X) at 57 MEV/nucleon                                 
  34AL c  2008Hi01: {+9}Be({+36}S,x|g) E=77.5 MeV/nucleon. Extracted {+34}Al beam
@@ -45,17 +46,19 @@ Generated at: Fri 05/29/2026 at 01:15:14 AM EDT
  34AL c  {+34}Al mass measurement:                                              
  34AL c  2019As04: ToF-ICR with ISOLTRAP, ISOLDE-CERN.                          
  34AL c  2015Kw01: ToF-ICR with TITAN, TRIUMF.                                  
- 35AL c  {+34}Al knockout-reaction measurements:                                
- 35AL c  2012No05: {+33,34,35,36}Al produced by Be({+48}Ca,X) fragmentation at  
- 35AL2c  E({+48}Ca)=900 MeV/nucleon at GSI. Measured 1n removal cross sections  
- 35AL3c  and longitudinal momentum distributions of the residues. Deduced       
- 35AL4c  single-particle occupancies in the ground states of {+33,34,35}Al.     
- 35AL5c  |s({+35}Al|){+34}Al)=75 mb {I4} and |s({+34}Al|){+33}Al)=81 mb {I4}.   
- 35AL c  2010Ro23: {+35}Al produced by {+9}Be({+40}Ar,X) fragmentation at       
- 35AL2c  E({+40}Ar)=700 MeV/nucleon at GSI. Measured 1n knockout cross sections 
- 35AL3c  and longitudinal momentum distributions of the residues.               
- 35AL4c  |s({+35}Al|){+34}Al)=65 mb {I18} and |s({+34}Al|){+33}Al)=102 mb {I24}.
+ 34AL c  {+34}Al knockout-reaction measurements:                                
+ 34AL c  2012No05: {+33,34,35,36}Al produced by Be({+48}Ca,X) fragmentation at  
+ 34AL2c  E({+48}Ca)=900 MeV/nucleon at GSI. Measured 1n removal cross sections  
+ 34AL3c  and longitudinal momentum distributions of the residues. Deduced       
+ 34AL4c  single-particle occupancies in the ground states of {+33,34,35}Al.     
+ 34AL5c  |s({+35}Al|){+34}Al)=75 mb {I4} and |s({+34}Al|){+33}Al)=81 mb {I4}.   
+ 34AL c  2010Ro23: {+35}Al produced by {+9}Be({+40}Ar,X) fragmentation at       
+ 34AL2c  E({+40}Ar)=700 MeV/nucleon at GSI. Measured 1n knockout cross sections 
+ 34AL3c  and longitudinal momentum distributions of the residues.               
+ 34AL4c  |s({+35}Al|){+34}Al)=65 mb {I18} and |s({+34}Al|){+33}Al)=102 mb {I24}.
  34AL c  Theoretical calculations:                                              
+ 34AL cG E,RI$from {+34}Mg |b{+-} decay (44.9 ms), unless otherwise noted.      
+ 34AL cL E$From a least-squares fit to |g-ray energies.                         
  34AL  XA34MG B- DECAY (44.9 MS)                                                
  34AL  XB36MG B-2N DECAY (6.9 MS)                                               
  34AL  XC2H(33AL,34ALG),(34SI,34ALG)                                            
@@ -65,10 +68,11 @@ Generated at: Fri 05/29/2026 at 01:15:14 AM EDT
  34AL  XGPB(35AL,34ALNG)                                                        
  34AL  XHU(P,34AL)                                                              
  34AL  XICOULOMB EXCITATION                                                     
+ 34AL PN                                                                     6  
  34AL  L 0.0          4-               54.0 MS   10                             
  34ALX L XREF=ABCDEFGHI                                                         
  34AL2 L %B-=100$ %B-N=24 4 (2001Nu01)                                          
- 34AL2 L MOMM1=(+)2.157 16$G=0.539 2 (2008Hi01,2019StZV)                        
+ 34AL2 L MOMM1=(+)2.157 16$G=0.539 2 (2019StZV,2008Hi01)                        
  34AL cL MOMM1,G$original (+)2.156 {I16} using |b-NMR (2008Hi01).               
  34AL cL $%|b{+-}n: weighted average of 22 {I5} (2019Li41), 26 {I4} (2001Nu01), 
  34AL2cL and 27 {I5} (1989Ba50). Others: 54 {I12} (1988Mu08), 12.5 {I25}        
@@ -77,30 +81,30 @@ Generated at: Fri 05/29/2026 at 01:15:14 AM EDT
  34AL2cL (2006Kh08). See also 1999YoZW. Values from 1988Mu08 and 1995ReZZ are in
  34AL3cL serious disagreement with those from 2001Nu01 and 1989Ba50.            
  34AL cL J$4-, 5- from g factor measurement (2008Hi01).                         
- 34AL cL T$54.4 ms {I5} in {+9}Be({+36}S,{+34}Al) from 2012Ro25 with fit of |b  
- 34AL2cL decay curve in coincidence with 926-keV |b-delayed |g in {+34}Si. 51.5 
- 34AL3cL ms {I9} in {+9}Be({+40}Ar,{+34}Al) from 2017Ha23, 2017Ha34 with fit of 
- 34AL4cL implant-|b-929|g decay curve. 53.73 ms {I13} in U(p,{+34}Al) from      
- 34AL5cL 2019Li41 with fit of time distribution gated on 929|g in {+34}Si. 56.3 
- 34AL6cL ms {I5} in U(p,{+34}Al) from 2001Nu01 with |b multiscaling and |g      
- 34AL7cL counting. Others: 50 ms {I25} (1986Du07), 70 ms {I25} (1988Mu08), and  
- 34AL8cL 42 ms {I6} (1995ReZZ).                                                 
- 34AL  L 46.56     11 1+               16.6 MS   8                              
+ 34AL cL T$unweighted average of 53.73 ms {I13} in U(p,{+34}Al) from 2019Li41 by
+ 34AL2cL fitting time distribution gated on 929|g in {+34}Si, 51.5 ms {I9} in   
+ 34AL3cL {+9}Be({+40}Ar,{+34}Al) from 2017Ha23 and 2017Ha34 by fitting          
+ 34AL4cL implant-|b-929|g decay curve, 54.4 ms {I5} in {+9}Be({+36}S,{+34}Al)   
+ 34AL5cL from 2012Ro25 by fitting |b decay curve in coincidence with 926-keV    
+ 34AL6cL |b-delayed |g in {+34}Si, and 56.3 ms {I5} in U(p,{+34}Al) from        
+ 34AL7cL 2001Nu01 by |b and |g counting rates. Others: 50 ms {I25} (1986Du07),  
+ 34AL8cL 70 ms {I25} (1988Mu08), and 42 ms {I6} (1995ReZZ).                     
+ 34AL  L 46.56     11 1+               23.2 MS   14                          M  
  34ALX L XREF=ADEFGH                                                            
- 34AL2 L MOME2=0.038 5$G=1.757 14 (2018Xu05,2021STZZ)                           
- 34AL cL T$from |t=23.9 ms {I12}, unweighted average of 26 ms {I1} from {+34}Mg 
- 34AL2cL |b{+-} decay, 26 ms {I1} from ({+36}S,{+34}Al), 21.6 ms {I15} from     
- 34AL3cL ({+40}Ar,{+34}Al), and 22.1 ms {I2} from (p,{+34}Al).                  
- 34AL cL E$from {+34}Mg |b{+-} decay (44.9 ms)                                  
+ 34AL2 L %B-=100$ %B-N=11 4 (2019Li41)                                          
+ 34AL2 L MOME2=0.038 5$G=1.757 14 (2021STZZ,2018Xu05)                           
+ 34AL cL T$unweighted average of 26 ms {I1} from ({+36}S,{+34}Al), 21.6 ms {I15}
+ 34AL2cL from ({+40}Ar,{+34}Al), and 22.1 ms {I2} from (p,{+34}Al)              
+ 34AL cL E$from (p,{+34}Al)                                                     
  34AL cL MOME2$from |b-detected quadrupole resonance (2018Xu05).                
  34AL cL G$from |b-detected nuclear magnetic resonance (2018Xu05).              
  34AL cL $Intruder configuration of                                             
  34AL2cL |p(d{-5/2}){+-1}~#|n(d{-3/2}){+-1}(f{-7/2}){+2} by shell-model         
  34AL3cL calculations (2017Li03).                                               
- 34AL  L 388          (3-)                                                      
+ 34AL  L 383.7     12 (3-)                                                      
  34ALX L XREF=CF(?)                                                             
  34AL  G 388                                                                    
- 34AL cG E$from ({+33}Al,{+34}Al|g).                                            
+ 34AL cG E$from He({+33}Al,{+34}Al|g).                                          
  34AL  L 411.03    11                                                           
  34ALX L XREF=A                                                                 
  34AL  G 364.51    10 100                                                       
@@ -109,12 +113,11 @@ Generated at: Fri 05/29/2026 at 01:15:14 AM EDT
  34AL  G 425.21    10 100                                                       
  34AL cG E$from {+34}Mg |b{+-} decay. Other: 425.3 {I11} from                   
  34AL2cG ({+34}Al,{+34}Al'|g)                                                   
+ 34AL cG E$other: 425.3 {I11} from He({+34}Al,{+34}Al'|g).                      
  34AL  L 487.77    11 (2-)                                                      
  34ALX L XREF=AG                                                                
  34AL  G 76.72     12 27     4                                                  
  34AL  G 441.20    10 100    14                                                 
- 34AL cG E$from {+34}Mg |b{+-} decay (44.9 ms).                                 
- 34AL cG RI$from {+34}Mg |b{+-} decay.                                          
  34AL  G 487.67    14 0.51   12                                                 
  34AL  L 597.52    10 (3-)                                                      
  34ALX L XREF=A                                                                 
@@ -122,9 +125,7 @@ Generated at: Fri 05/29/2026 at 01:15:14 AM EDT
  34AL  L 657       9  (4-)                                                      
  34ALX L XREF=BI                                                                
  34AL2 L BE2=0.0100 39 (2001Pr08)                                               
- 34AL cL J$calculated B(E2) values for lowest 2-, 3- and 4- states give the best
- 34AL2cL agreement for experimental value for 4- to 4- (2008Hi01), but 2001Pr08 
- 34AL3cL obtained best agreement for 4- to 3-.                                  
+ 34AL cL J$shell-model calculations (2008Hi01).                                 
  34AL  G 657       9  100                                                       
  34AL cG E$from Coulomb excitation.                                             
  34AL  L 893.23    12                                                           
@@ -146,8 +147,6 @@ Generated at: Fri 05/29/2026 at 01:15:14 AM EDT
  34AL  G 576.96    12 1.32   27                                                 
  34AL  G 637.64    12 5.0    8                                                  
  34AL  G 1002.02   10 100    14                                                 
- 34AL cG E$from {+34}Mg |b{+-} decay (44.9 ms).                                 
- 34AL cG RI$from {+34}Mg |b{+-} decay.                                          
  34AL  L 1179.04   13                                                           
  34ALX L XREF=A                                                                 
  34AL  G 285.85    26 84     14                                                 
@@ -158,7 +157,7 @@ Generated at: Fri 05/29/2026 at 01:15:14 AM EDT
  34AL  G 338.15    11 47     8                                                  
  34AL  G 759.18    18 11.3   19                                                 
  34AL  G 820.33    10 100    13                                                 
- 34AL  L 1304         (3-)                                                      
+ 34AL  L 1299.7    16 (3-)                                                      
  34ALX L XREF=C                                                                 
  34AL  G 916                                                                    
  34AL  L 1462.81   11 1+                                                        
@@ -171,19 +170,13 @@ Generated at: Fri 05/29/2026 at 01:15:14 AM EDT
  34AL  G 990.92    10 18.1   26                                                 
  34AL  G 1051.70   10 94     13                                                 
  34AL  G 1416.23   10 34     5                                                  
- 34AL cG E$from {+34}Mg |b{+-} decay (44.9 ms).                                 
- 34AL cG RI$from {+34}Mg |b{+-} decay.                                          
  34AL  L 2004.07   12 (1+)                                                      
  34ALX L XREF=AG                                                                
  34AL  G 1110.45   14 1.8    7                                                  
  34AL  G 1516.13   17 6.3    14                                                 
- 34AL cG E$from {+34}Mg |b{+-} decay (44.9 ms).                                 
- 34AL cG RI$from {+34}Mg |b{+-} decay.                                          
  34AL  G 1532.21   10 100    14                                                 
  34AL  G 1593.14   19 5.6    14                                                 
  34AL  G 1957.65   11 28     4                                                  
- 34AL cG E$from {+34}Mg |b{+-} decay (44.9 ms).                                 
- 34AL cG RI$from {+34}Mg |b{+-} decay.                                          
  34AL  L 2550                                                                  ?
  34ALX L XREF=G(2550?)                                                          
  34AL  G 1090                                                                  ?

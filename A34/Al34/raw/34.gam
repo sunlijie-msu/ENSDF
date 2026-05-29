@@ -1,5 +1,5 @@
 Program for consistency check: output for gammas ordered by gamma energies (version 05/27/2026)
-Generated at: Fri 05/29/2026 at 01:18:46 AM EDT
+Generated at: Fri 05/29/2026 at 02:16:51 AM EDT
 
 
 
@@ -21,7 +21,7 @@ Generated at: Fri 05/29/2026 at 01:18:46 AM EDT
  364.51     10   100                                                         411.03                 46.56      1+           ADOPTED LEVELS, GAMMAS
  364.51     10   11.2       15                                               411.03                 46.56      1+           34MG B- DECAY (44.9 MS)
 
- 388                                                                         388        (3-)        0.0        4-           ADOPTED LEVELS, GAMMAS
+ 383.7      12                                                               383.7      (3-)        0.0        4-           ADOPTED LEVELS, GAMMAS
  388                                                                         388        (3-)        0                       2H(33AL,34ALG),(34SI,34ALG)
  383.7      12                                                               383.7                  0                       HE(34AL,34AL'G)
 
@@ -36,7 +36,7 @@ Generated at: Fri 05/29/2026 at 01:18:46 AM EDT
 
  425.21     10   100                                                         471.85                 46.56      1+           ADOPTED LEVELS, GAMMAS
  425.21     10   4.17       57                                               471.85                 46.56      1+           34MG B- DECAY (44.9 MS)
- 425.3      11                                                               471.8                  46.6                    HE(34AL,34AL'G)
+ 425.3      11                                                               471.8                  46.56                   HE(34AL,34AL'G)
 
  441.20     10   100        14                                               487.77     (2-)        46.56      1+           ADOPTED LEVELS, GAMMAS
  441.20     10   8.8        12                                               487.77     (2-)        46.56      1+           34MG B- DECAY (44.9 MS)
@@ -77,7 +77,7 @@ Generated at: Fri 05/29/2026 at 01:18:46 AM EDT
 
  657        9    100                                                         657        (4-)        0.0        4-           ADOPTED LEVELS, GAMMAS
  658             100        10                                               658        (4-)        0          4-           36MG B-2N DECAY (6.9 MS)
- 657        9                                                                657        (3-)        0          (4-)         COULOMB EXCITATION
+ 657        9                                                                657                    0                       COULOMB EXCITATION
 
  759.18     18   11.3       19                                               1231.33                471.85                  ADOPTED LEVELS, GAMMAS
  759.18     18   0.06       1                                                1231.33                471.85                  34MG B- DECAY (44.9 MS)
@@ -91,7 +91,7 @@ Generated at: Fri 05/29/2026 at 01:18:46 AM EDT
  846.63     10   100        14                                               893.23                 46.56      1+           ADOPTED LEVELS, GAMMAS
  846.63     10   2.27       31                                               893.23                 46.56      1+           34MG B- DECAY (44.9 MS)
 
- 916                                                                         1304       (3-)        388        (3-)         ADOPTED LEVELS, GAMMAS
+ 916                                                                         1299.7     (3-)        383.7      (3-)         ADOPTED LEVELS, GAMMAS
  916                                                                         1304       (3-)        388        (3-)         2H(33AL,34ALG),(34SI,34ALG)
 
  923.69     71   3.1        22                                               969.98                 46.56      1+           ADOPTED LEVELS, GAMMAS
@@ -159,11 +159,11 @@ Statistics of levels and gammas from all datasets of 34AL:
           34MG B- DECAY (44.9 MS)        15               42            0.0        to     2572+x
          36MG B-2N DECAY (6.9 MS)        2                1             0          to        658
       2H(33AL,34ALG),(34SI,34ALG)        3                2             0          to       1304
-                    9BE(36S,34AL)        2                0             0          to       46.7
-                   9BE(40AR,34AL)        2                0             0          to       46.6
+                    9BE(36S,34AL)        2                0             0          to      46.56
+                   9BE(40AR,34AL)        2                0             0          to      46.56
                   HE(34AL,34AL'G)        4                2             0          to      471.8
                   PB(35AL,34ALNG)        7                6             0          to       2550
-                        U(P,34AL)        2                0             0          to       46.6
+                        U(P,34AL)        2                0             0          to      46.56
                COULOMB EXCITATION        2                1             0          to        657
 
                          IN TOTAL        56               99            0.0        to    2645.91
@@ -174,12 +174,12 @@ Statistics of levels and gammas from all datasets of 34AL:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                   34AL        17           45           56           99             643              9
+                   34AL        17           45           56           99             639              9
 
-               IN TOTAL        17           45           56           99             643              9
+               IN TOTAL        17           45           56           99             639              9
 
 Number of nuclides     : 1
 Number of blocks       : 10
 Number of references   : 44
-Number of lines in files: 653
+Number of lines in files: 649
 (from all blocks including abstract, comment, reference)
