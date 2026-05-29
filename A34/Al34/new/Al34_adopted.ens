@@ -25,20 +25,8 @@
  34AL5c  models. Studied target dependence of fragment cross sections.          
  34AL c  2007No13: {+9}Be({+40}Ar,X) at E({+40}Ar)=100 MeV/nucleon at RIKEN.    
  34AL2c  Measured fragment momentum distributions and production cross sections.
- 34AL c  {+34}Al and {+34m}Al decay measurements:                               
- 34AL c  2019Li41: U(p,X) at CERN. Measured T{-1/2}, |b{+-}-delayed |g          
- 34AL2c  spectroscopy.                                                          
- 35AL c  2001Nu01,2002Nu02: U(p,X) at CERN. Measured T{-1/2}, |b{+-}-delayed |g 
- 35AL2c  and neutron spectroscopy.                                              
- 34AL c  {+34}Al radius measurements:                                           
- 34AL c  2006Kh08: {+35}Al produced by {+181}Ta({+48}Ca,X) fragmentation at     
- 34AL2c  E({+48}Ca)=60.3 MeV/nucleon at GANIL. Measured energy-integrated       
- 34AL3c  reaction cross sections at 30-65 MeV/nucleon using a silicon telescope 
- 34AL4c  as both active target and detector. Deduced reduced strong absorption  
- 34AL5c  radii, isospin dependence, and possible halo structure or large        
- 34AL6c  deformation.                                                           
  34AL c  {+34}Al knockout-reaction measurements:                                
- 34AL c  2012No05: {+33,34,35,36}Al produced by Be({+48}Ca,X) fragmentation at  
+ 34AL c  2012No05: {+33,34,35,36}Al produced by {+9}Be({+48}Ca,X) fragmentation 
  34AL2c  E({+48}Ca)=900 MeV/nucleon at GSI. Measured 1n removal cross sections  
  34AL3c  and longitudinal momentum distributions of the residues. Deduced       
  34AL4c  single-particle occupancies in the ground states of {+33,34,35}Al.     
@@ -47,7 +35,19 @@
  34AL2c  E({+40}Ar)=700 MeV/nucleon at GSI. Measured 1n knockout cross sections 
  34AL3c  and longitudinal momentum distributions of the residues.               
  34AL4c  |s({+35}Al|){+34}Al)=65 mb {I18} and |s({+34}Al|){+33}Al)=102 mb {I24}.
- 34AL c  {+34}Al mass measurement:                                              
+ 34AL c  {+34}Al and {+34m}Al decay measurements:                               
+ 34AL c  2019Li41: U(p,X) at CERN. Measured T{-1/2}, |b{+-}-delayed |g          
+ 34AL2c  spectroscopy.                                                          
+ 34AL c  2001Nu01, 2002Nu02: U(p,X) at CERN. Measured T{-1/2}, |b{+-}-delayed |g
+ 34AL2c  and neutron spectroscopy.                                              
+ 34AL c  {+34}Al radius measurements:                                           
+ 34AL c  2006Kh08: {+35}Al produced by {+181}Ta({+48}Ca,X) fragmentation at     
+ 34AL2c  E({+48}Ca)=60.3 MeV/nucleon at GANIL. Measured energy-integrated       
+ 34AL3c  reaction cross sections at 30-65 MeV/nucleon using a silicon telescope 
+ 34AL4c  as both active target and detector. Deduced reduced strong absorption  
+ 34AL5c  radii, isospin dependence, and possible halo structure or large        
+ 34AL6c  deformation.                                                           
+ 34AL c  {+34}Al mass measurements:                                             
  34AL c  2019As04: ToF-ICR with ISOLTRAP, ISOLDE-CERN.                          
  34AL c  2015Kw01: ToF-ICR with TITAN, TRIUMF.                                  
  34AL c  Theoretical calculations:                                              
@@ -60,7 +60,7 @@
  34AL  XD9BE(36S,34AL)                                                          
  34AL  XE9BE(40AR,34AL)                                                         
  34AL  XFHE(34AL,34AL'G)                                                        
- 34AL  XGPB(34AL,34ALNG)                                                        
+ 34AL  XGPB(35AL,34ALNG)                                                        
  34AL  XHU(P,34AL)                                                              
  34AL  XICOULOMB EXCITATION                                                     
  34AL PN                                                                     6  
@@ -106,7 +106,7 @@
  34AL  L 383.7     12                                                           
  34ALX L XREF=CF(?)                                                             
  34AL cL J$(3-) from shell-model calculations (2007GeZX).                       
- 34AL  G 383.7     12                                                           
+ 34AL  G 383.7     12 100                                                       
  34AL cG E$from He({+33}Al,{+34}Al|g)                                           
  34AL  L 411.03    11                                                           
  34ALX L XREF=A                                                                 
@@ -168,7 +168,7 @@
  34AL  L 1299.7    16                                                           
  34ALX L XREF=C                                                                 
  34AL cL J$(3-) from shell-model calculations (2007GeZX).                       
- 34AL  G 916                                                                    
+ 34AL  G 916          100                                                       
  34AL  L 1462.81   11 1+                                                        
  34ALX L XREF=AG                                                                
  34AL cL J$allowed |b{+-} feeding with logft=4.4 from 0+ {+34}Mg parent. Even if
