@@ -1,7 +1,7 @@
 Program for consistency check: output for averaging results for gamma energies and intensities (version 05/27/2026)
-Generated at: Thu 05/28/2026 at 03:43:49 PM EDT
+Generated at: Thu 05/28/2026 at 08:26:20 PM EDT
 
-**************** Level=0 in 34AL     *******************ID#=1-1
+**************** Level=0.0 in 34AL     *******************ID#=1-1
 
 ------ average T------
 Data points of T record
@@ -41,7 +41,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34AL2cL {I9} from ({+40}Ar,{+34}Al), and 53.73 ms {I13} from (p,{+34}Al)       
 
 
-**************** Level=44.6 in 34AL     *******************ID#=1-2
+**************** Level=46.56 in 34AL     *******************ID#=1-2
 
 ------ average T------
 Data points of T record
@@ -79,5 +79,40 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 ### unweighted average comment (all non-limit values with/without unc):
  34AL cL T$unweighted average of 26 ms {I1} from ({+36}S,{+34}Al), 21.6 ms {I15}
  34AL2cL from ({+40}Ar,{+34}Al), and 22.1 ms {I2} from (p,{+34}Al)              
+
+
+**************** Level=471.85     Gamma=425.21 in 34AL     *******************ID#=1-5-1
+
+------ average E------
+Data points of E record
+### (1 value has weight>2.00%; all values with unc  considered in weighted average)
+*                 34MG B- DECAY   425.21(10)          weight=99.18%
+                  (34AL,34AL'G)   425.3(11)           weight=0.82%
+
+Averaging results:
+           weighted average:      425.21(10)           (internal)
+                                  425.211(8)           (external)
+                                  chi**2/(n-1)=0.007     [critical=6.635]
+         unweighted average:      425.26(5)           
+           (of all values)        chi**2/(n-1)=0.004     [critical=4.605]
+
+   suggested adopted result:      425.21(10)          
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34AL cG E$weighted average of 425.21 {I10} from {+34}Mg |b{+-} decay and 425.3 
+ 34AL2cG {I11} from ({+34}Al,{+34}Al'|g)                                        
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34AL cG E$unweighted average of 425.21 {I10} from {+34}Mg |b{+-} decay and     
+ 34AL2cG 425.3 {I11} from ({+34}Al,{+34}Al'|g)                                  
+
+### Non-average comment:
+ 34AL cG E$from {+34}Mg |b{+-} decay. Other: 425.3 {I11} from                   
+ 34AL2cG ({+34}Al,{+34}Al'|g)                                                   
 
 
