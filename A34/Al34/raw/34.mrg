@@ -1,5 +1,5 @@
 Program for consistency check: output for original lines grouped by level and gamma energies (version 05/27/2026)
-Generated at: Fri 05/29/2026 at 12:49:06 PM EDT
+Generated at: Fri 05/29/2026 at 02:33:17 PM EDT
 
 
 Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
@@ -148,7 +148,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
       36MG B-2N DECAY (6.9 MS)--->B  B     34AL  L 658          (4-)                                                      
             COULOMB EXCITATION--->I  I     34AL  L 657       9                                                            
             COULOMB EXCITATION--->I  I     34AL2 L BE2=0.0100 39 (2001Pr08)                                               
- GAMMA------------------------------------ 34AL  G 657       9  100                                                        --- EG=657        FL=0.0        JF=4-
+ GAMMA------------------------------------ 34AL  G 657       9  100       E2                                               --- EG=657        FL=0.0        JF=4-
       36MG B-2N DECAY (6.9 MS)--->B  B     34AL  G 658         100                                                         *** EG=658        FL=0          JF=4-
             COULOMB EXCITATION--->I  I     34AL  G 657       9                                                             *** EG=657        FL=0          JF=
       36MG B-2N DECAY (6.9 MS)--->B  B     34AL cG E,RI$from 2013StZY.                                                    
@@ -230,7 +230,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                PB(35AL,34ALNG)--->G  ?0(?) 34AL  G 1002                                                                  ? *** EG=1002       FL=46         JF=
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.004 keV.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AL  L 1179.04   13                                                            --- possible JPI=(0,1,2,3)
+ LEVEL************************************ 34AL  L 1179.04   13 (0,1,2+)                                                   --- possible JPI=(0,1,2,3)
                      *new XREF new tags    34ALX L XREF=A
                      *new XREF old tags    34ALX L XREF=A
                      #old XREF in Adopted  34ALX L XREF=A
@@ -246,7 +246,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        34MG B- DECAY (44.9 MS)--->A  A     34AL  G 1132.51   11 100    14                                                  *** EG=1132.51    FL=46.56      JF=1+
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.032 keV.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AL  L 1231.33   13                                                            --- possible JPI=(0,1,2)
+ LEVEL************************************ 34AL  L 1231.33   13 (0,1,2+)                                                   --- possible JPI=(0,1,2)
                      *new XREF new tags    34ALX L XREF=A
                      *new XREF old tags    34ALX L XREF=A
                      #old XREF in Adopted  34ALX L XREF=A
@@ -278,7 +278,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                PB(35AL,34ALNG)--->G  ?0    34AL  L 1460                                                   4         1     
        34MG B- DECAY (44.9 MS)--->A  A     34AL  B             28.4                4.4                                    
                PB(35AL,34ALNG)--->G  ?0    34AL cL $Relative population=5% {I2}.
- GAMMA------------------------------------ 34AL  G 283.85    25 4.7    8                                                   --- EG=283.85     FL=1179.04    JF=
+ GAMMA------------------------------------ 34AL  G 283.85    25 4.7    8                                                   --- EG=283.85     FL=1179.04    JF=(0,1,2+)
        34MG B- DECAY (44.9 MS)--->A  A     34AL  G 283.85    25 4.7    8                                                   *** EG=283.85     FL=1179.04    JF=
        34MG B- DECAY (44.9 MS)--->A  A     34AL cG $|DE|g(stat)=0.23 keV.
  GAMMA------------------------------------ 34AL  G 414.16    10 50     7                                                   --- EG=414.16     FL=1048.69    JF=
@@ -338,7 +338,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 34AL  G 1090                                                                  ?
                PB(35AL,34ALNG)--->G  ?0(?) 34AL  G 1090                                                                  ? *** EG=1090       FL=1460       JF=
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34AL  L 2645.91   14 (0+,1+,2+)                                                 --- possible JPI=(0,1,2)
+ LEVEL************************************ 34AL  L 2645.91   14 (0,1)                                                      --- possible JPI=(0,1,2)
                      *new XREF new tags    34ALX L XREF=A
                      *new XREF old tags    34ALX L XREF=A
                      #old XREF in Adopted  34ALX L XREF=A
@@ -393,12 +393,12 @@ Statistics of levels and gammas from all datasets of 34AL:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                   34AL        17           45           56           99             644              9
+                   34AL        17           45           56           99             658              9
 
-               IN TOTAL        17           45           56           99             644              9
+               IN TOTAL        17           45           56           99             658              9
 
 Number of nuclides     : 1
 Number of blocks       : 10
 Number of references   : 48
-Number of lines in files: 654
+Number of lines in files: 668
 (from all blocks including abstract, comment, reference)
