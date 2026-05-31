@@ -10,7 +10,7 @@ description: >
 argument-hint: [feeding Jπ list] [deexciting transitions] [lifetime known?]
 ---
 
-# Gamma Transition Selection Rules — Practical Workflow: Combining Jπ Constraints Logic
+# Gamma Transition Selection Rules — Practical Workflow: Deducing Jπ Constraints Logic
 
 ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
