@@ -1,4 +1,4 @@
----
+﻿---
 name: editorial-review-guidelines
 description: >
   Use this skill when performing editorial review of ENSDF comment lines.
@@ -10,77 +10,46 @@ description: >
 
 # ENSDF Editorial Review Skill
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
+Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
-## Overview
-
-Rigorous editorial review of ENSDF comment text, focusing on:
-- Grammar and punctuation
-- Technical nuclear-physics terminology and spelling
-- ENSDF text-notation correctness
-
-**Scope:** Review comment records only: `c`, `cL`, `cG`, `cB`, `cN`, and their continuation lines. Do not review data-record fields (`L`, `G`, `E`, `B`, `DP`) for editorial issues.
-
-**Action Policy:** Check-Only by default. Do not edit files unless the user explicitly requests edits. Report findings with line numbers, current text, recommended text, and rationale. LLM edits can introduce subtle ENSDF formatting errors; human diff-view review is a required safety layer.
+**Scope:** `c`, `cL`, `cG`, `cB`, `cE`, `cN`, `cP`, `cQ` comment records and continuation lines. Skip data-record fields (`L`, `G`, `E`, `B`, `DP`).
+**Action Policy:** Check-Only. Report findings table. Do not edit unless user requests.
 
 ## Error Classes
 
 ### 1. ENSDF Notation
-
-- **Superscript/subscript:** Element symbol must appear **outside** braces.
-  - Wrong: `{+13C}`, `{+208Pb}` → Correct: `{+13}C`, `{+208}Pb`
-  - Correct regex pattern: `{+[0-9]+}[A-Z][a-z]?`
-- **Number+element isotope tokens:** Plain isotope tokens are invalid in comment text.
-  - Wrong: `3He`, `36S(d,3He)` → Correct: `{+3}He`, `{+36}S(d,{+3}He)`
-  - Candidate scan regex: `(?<!\{\+)\b\d{1,3}[A-Z][a-z]?\b`
-  - Filter rule: keep only valid element symbols; ignore ENSDF symbol constructs such as `2I|g`.
-- **Uncertainty notation:** Use `{In}` notation; never use inline parenthetical uncertainties.
-  - Wrong: `36(4)-mg/cm{+2}` → Correct: `36-mg/cm{+2} {I4}`
-  - Wrong: `E=1234(5) keV` → Correct: `E=1234 keV {I5}`
-- **Leaked record tags:** Scan columns 10–80 for spurious ` cL `, ` cG `, ` L `, ` G `, ` E `, ` B ` (common copy-paste artifact).
-- **Unintended symbol prefixes:** `|resonance` renders as `ρesonance`; verify intent.
-- **Unicode leakage (mandatory):** ENSDF comment text must use ENSDF symbol encoding, not raw Unicode glyphs.
-  - Wrong: `μ`, `×`, `β`, `γ`, `θ`, `≈`, `≤`, `≥` in plain Unicode.
-  - Correct: `|m`, `|*`, `|b`, `|g`, `|q`, `|?`, `|<`, `|>`.
-  - Example: `1500-μm-thick` → `1500-|mm-thick`; `6.5×10^5` → `6.5|*10{+5}`.
-- **Plain isotope tokens in prose (mandatory):** after the regex scan, manually review every remaining isotope-like token in comment text.
-  - Wrong: `34Al`, `36Al`, `35Mg` in prose.
-  - Correct: `{+34}Al`, `{+36}Al`, `{+35}Mg`.
-- **Mixed symbol-text compounds:** reject mixed Unicode/ENSDF compounds such as `γ-ray`, `μm`, or split symbol-text forms.
-  - Correct: `|g-ray`, `|mm`, `|b-delayed`.
-- **Inconsistent subscript notation:** All coefficients in an expression must use the same style.
-  - Wrong: `A{-2}=0.5 A{-4}=0.1 A6=-0.1` → Correct: `A{-2}=0.5 A{-4}=0.1 A{-6}=-0.1`
-- **Mid-token line breaks:** Compound tokens such as `E{-p}(lab)` must not split across continuation lines.
+- **Superscript/subscript:** Symbol outside braces. Wrong: `{+13C}` → Correct: `{+13}C`. Detection regex (correct form): `{+[0-9]+}[A-Z][a-z]?`
+- **Plain isotope tokens:** Wrong: `3He`, `36S(d,3He)` → Correct: `{+3}He`, `{+36}S(d,{+3}He)`. Scan: `(?<!\{\+)\b\d{1,3}[A-Z][a-z]?\b`; keep valid element symbols; exclude tokens followed by `|` (e.g., `2I|g`). **Mandatory:** after the regex scan, manually review every remaining candidate — regex misses tokens in dense prose.
+- **Uncertainty notation:** Use `{In}`. Wrong: `1234(5) keV`, `36(4)-mg/cm{+2}` → Correct: `1234 keV {I5}`, `36-mg/cm{+2} {I4}`.
+- **Unicode leakage:** No raw Unicode glyphs. Wrong: `μ`, `×`, `β`, `γ`, `θ`, `≈`, `≤`, `≥` → Correct: `|m`, `|*`, `|b`, `|g`, `|q`, `|?`, `|<`, `|>`. Example: `1500-μm-thick` → `1500-|mm-thick`.
+- **Mixed symbol-text:** Wrong: `γ-ray`, `μm`, `β-delayed` → Correct: `|g-ray`, `|mm`, `|b-delayed`.
+- **Leaked record tags:** Scan cols 10-80 for spurious ` cL `, ` cG `, ` L `, ` G ` (copy-paste artifact).
+- **Unintended symbol prefixes:** `|resonance` renders as rho+esonance; verify intent.
+- **Inconsistent subscripts:** `A{-2}=0.5 A6=-0.1` → `A{-2}=0.5 A{-6}=-0.1`.
+- **Mid-token line breaks:** `E{-p}(lab)` must not split across continuation lines.
 
 ### 2. Grammar and Style
-
-- **Capitalization by scope:**
-  - Top general comments (before first data record) start with uppercase either with or without identifier headers.
-  - Record-specific comments with identifier(s) after level/gamma records (`cL E$`, `cL J$`, `cL T$`, `cG E$`, `cG RI$`, `cG M$`, `cG MR$`, etc.) start with lowercase unless first token is a numeral, symbol, isotope token (`{+34}Mg`), or required acronym.
-  - **Exception (mandatory):** `cP` and `cN` identifier comments start with uppercase whether general or record-specific.
-  - Examples: `cL T$from fitting ...` (record-specific L/G style), `cL E$From a least-squares fit ...` (top default block), `cP J,T$From ...`, `cN BR$Experimental ...` (parent or normalization comments block).
-- **Dittography:** Scan with `\b(\w+)\s+\1\b` (e.g., `the the`, `were were`, `and and`, `from from`).
-- **Subject-verb agreement:** NSR key numbers (`YYYYAA##`) take singular verbs.
-  - Wrong: `1972Hu10 report that` → Correct: `1972Hu10 reports that`
-- **Missing auxiliary verbs:** `spectra recorded` → `spectra were recorded`
-- **Adjective/noun errors:** `decay to others levels` → `decay to other levels`
+- **Capitalization:**
+  - Top-block comments (before first data record, any type) → uppercase.
+  - Record-specific comments **with** field identifier (`cL E$`, `cL J$`, `cL T$`, `cG E$`, `cG RI$`, `cG M$`, etc.) → lowercase, unless first token is numeral, symbol, isotope token, or acronym.
+  - Record-specific comments **without** field identifier (`cL $`, `cG $`) → uppercase (standalone statements).
+  - **Exception:** `cP` and `cN` comments always uppercase.
+  - Examples: `cL T$from lifetime ...` ✓; `cL E$From a least-squares fit ...` (top-block) ✓; `cL $Possible mirror level...` ✓; `cP J,T$From ...` ✓; `cN BR$Experimental ...` ✓.
+- **Extra space after `$`:** `cL J$ from ...` → `cL J$from ...`. Scan: `\$\s`.
+- **Dittography:** `\b(\w+)\s+\1\b` -- flag `the the`, `were were`, etc.
+- **Subject-verb agreement:** NSR keys are singular. Wrong: `1972Hu10 report` → Correct: `1972Hu10 reports`.
+- **Missing auxiliary verbs:** `spectra recorded` → `spectra were recorded`.
+- **Adjective/noun errors:** `others levels` → `other levels`.
 
 ### 3. Punctuation and Lists
-
-- Replace comma splices between independent clauses with semicolons.
-- Require the Oxford comma in lists of three or more items.
-- Only one `and` per list (at the final item).
-- Use comma-space separators in NSR citation lists and author/date pairs in comment text.
-  - Wrong: `14.9 {I6} (Ref1), and 8.3 {I4} (Ref2), and 10.5 {I60} (Ref3)`
-  - Correct: `14.9 {I6} (Ref1), 8.3 {I4} (Ref2), and 10.5 {I60} (Ref3)`
+- Comma splice between independent clauses → semicolon.
+- Oxford comma required in lists of 3 or more items; only one `and` (at final item).
+- Wrong: `14.9 {I6} (R1), and 8.3 {I4} (R2), and 10.5 {I60} (R3)` → Correct: `14.9 {I6} (R1), 8.3 {I4} (R2), and 10.5 {I60} (R3)`.
 
 ### 4. Hyphenation
-
-- Hyphenate compound modifiers before nouns: `4-mm-long target`, `gamma-ray spectrum`, `R-matrix analysis`.
-- Hyphenate attributive unit phrases before nouns: `2-g/cm{+2} Pb target`, `0.93-g/cm{+2} C target`.
-- Do not hyphenate predicatively: `the target was 4 mm long`.
-- Always hyphenate: `half-life`, `L-transfer`, `L-transfers`.
-- Gamma terminology: noun = `gamma rays`; adjective = `gamma-ray energy`.
+- Compound modifier before noun: `4-mm-long target`, `gamma-ray spectrum`, `R-matrix analysis`, `2-g/cm{+2} Pb target`.
+- Predicative: no hyphen (`the target was 4 mm long`).
+- Always: `half-life`, `L-transfer`, `L-transfers`. Noun: `gamma rays`; adjective: `gamma-ray energy`.
 
 ### 5. Terminology and Spelling
 
@@ -99,55 +68,33 @@ Rigorous editorial review of ENSDF comment text, focusing on:
 | `multiporities` | `multipolarities` |
 | `grand-daughter` | `granddaughter` |
 | `novelly designed` | `newly designed` |
-| `ohter`, `usign`, `coeffcients`, `paretheses`, `stoped`, `striped` | `other`, `using`, `coefficients`, `parentheses`, `stopped`, `stripped` |
+| `ohter`, `usign`, `stoped`, `striped`, `coeffcients` | `other`, `using`, `stopped`, `stripped`, `coefficients` |
 
 - `GXPF1A` — exact capitalization required (shell-model interaction name).
-- **Chemical formulas:** `CD{-2}` (deuterated polyethylene) ≠ `Cd{-2}` (cadmium); always verify against the original publication.
+- **Chemical formulas:** `CD{-2}` (deuterated polyethylene) ≠ `Cd{-2}` (cadmium); verify against publication.
 
 ### 6. Text and Number Integrity
-
-- **Extra space after `=`:** `|w|g= 0.45` → `|w|g=0.45`; scan for `=[space][digit]`.
-- **Space within a number:** `E{-p}(lab)=54 6` → `E{-p}(lab)=546`. Do not get confused by the space between value and uncertainty.
-- **Field cross-contamination:** Energy values must not appear in `RI$` fields; intensity values must not appear in `E$` fields.
-  - Wrong: `cG RI$ weighted average of 1224.6 {I154} weighted average of 14.9 {I21}`
-  - Correct: `cG RI$ weighted average of 14.9 {I21}`
+- **Extra space after `=`:** `|w|g= 0.45` → `|w|g=0.45`. Scan: `=\s[0-9]`.
+- **Space within number:** `E{-p}(lab)=54 6` → `E{-p}(lab)=546`. Note: space between value and uncertainty is correct.
+- **Field cross-contamination:** Energy in `RI$` or intensity in `E$` is an error. Wrong: `cG RI$ weighted average of 1224.6 {I154} ...` (contains energy, not intensity).
 
 ### 7. Logical Clarity
-
-- Flag contradictory claims (e.g., "confirmed" and "tentative" in the same sentence).
-- Flag unsupported conclusions lacking a citation or method reference.
+- Flag contradictory claims (confirmed and tentative in same sentence).
+- Flag conclusions without citation or method reference.
 
 ## Exclusions
-
-Do not flag:
-- Missing terminal periods (Java NDF PDF renderer will add them).
-- XREF notation or alignment.
-- Valid ENSDF symbols: `|?` (≈), `{+n}/{-n}`, `|a` (α), `|b` (β), `|g` (γ), `|d` (δ), `|w` (ω), `|*` (×), `|+` (±), `|-` (∓).
+Missing terminal periods, XREF notation, alignment. Valid ENSDF symbols: `|?`, `{+n}`, `{-n}`, `|a`, `|b`, `|g`, `|d`, `|w`, `|*`, `|+`, `|-`.
 
 ## Procedure
-
-1. Isolate all comment records (`c`, `cL`, `cG`, `cB`, `cN`) including continuation lines.
-2. Apply error classes in order: notation → grammar → punctuation → hyphenation → terminology → logical clarity.
-3. Useful regex patterns:
-   - Dittography: `\b(\w+)\s+\1\b`
-   - Leaked tags: `\s(cL|cG|\bL\b|\bG\b|\bE\b|\bB\b)\s`
-   - Plain isotope token candidate: `(?<!\{\+)\b\d{1,3}[A-Z][a-z]?\b`
-   - Post-filter for isotope-token scan: retain only valid element symbols and exclude tokens followed by `|` (for example, `2I|g`).
-   - Extra space after `=`: `=\s[0-9]`
-   - Non-ASCII scan (mandatory): `[^\x00-\x7F]`
-4. Compile the findings table using the Output Format below.
-5. Perform a final symbol sweep on all flagged lines: raw Unicode glyphs, plain isotope tokens, and mixed symbol-text compounds.
-6. Before reporting, confirm:
-   - No valid ENSDF notation was misclassified as an error.
-   - Each recommendation preserves scientific meaning.
-   - Wording is concise and technically precise.
-7. Do not edit unless the user explicitly requests corrections.
+1. Isolate all comment records (`c`, `cL`, `cG`, `cB`, `cE`, `cN`, `cP`, `cQ`) and their continuation lines.
+2. Apply error classes: notation → grammar → punctuation → hyphenation → terminology → integrity → clarity.
+3. Regex sweeps: dittography `\b(\w+)\s+\1\b`; leaked tags `\s(cL|cG|\bL\b|\bG\b)\s`; isotope tokens `(?<!\{\+)\b\d{1,3}[A-Z][a-z]?\b`; extra `=` space `=\s[0-9]`; extra `$` space `\$\s`; non-ASCII `[^\x00-\x7F]`.
+4. Final symbol sweep on all flagged lines: verify no raw Unicode glyphs, plain isotope tokens, or mixed symbol-text compounds were missed.
+5. Before reporting: confirm no valid ENSDF notation misclassified; each fix preserves scientific meaning. Do not edit unless user explicitly requests.
 
 ## Output Format
-
-```markdown
+```
 | File | Line(s) | Category | Current Text | Recommended | Rationale |
 |------|---------|----------|--------------|-------------|-----------|
-| filename.ens | 47 | Subject-Verb | `predict` | `predicts` | NSR key is singular |
-| filename.ens | 89-90 | Dittography | `the the decay` | `the decay` | Duplicated word |
+| f.ens | 47 | Subject-Verb | `predict` | `predicts` | NSR key is singular |
 ```
