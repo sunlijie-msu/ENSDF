@@ -40,17 +40,18 @@ Identify M, MR, A2/A4, and POL data embedded in messy raw comment text (cL, cG, 
 
 **Multipolarity and mixing ratio:**
 ```
- NUCID cG M,MR$ from |g(|q) in NSR.
+ NUCID cG M,MR$from |g(|q) in NSR_keynumber.
+ NUCID cG M,MR$from |g|g(|q)(DCO) in NSR_keynumber.
 ```
 
 **Angular correlation coefficients:**
 ```
- NUCID cG $A{-2}=value {Iunc}, A{-4}=value {Iunc}, A{-6}=value {Iunc} (NSR).
+ NUCID cG $A{-2}=value {Iunc}, A{-4}=value {Iunc}, A{-6}=value {Iunc} (NSR_keynumber).
 ```
 
 **Polarization:**
 ```
- NUCID cG $POL=value {Iunc} (NSR).
+ NUCID cG $POL=value {Iunc} (NSR_keynumber).
 ```
 
 ## Formatting Rules
@@ -63,7 +64,7 @@ Identify M, MR, A2/A4, and POL data embedded in messy raw comment text (cL, cG, 
 
 ## Workflow
 
-### 1. Assess
+### 1. Understand the Data Landscape
 
 Read the target file. Identify levels with M, MR, A2/A4, or POL data in comments. Create an inventory table.
 
@@ -122,7 +123,7 @@ All must return exit code 0.
  34CL  L 3600.00   10 (2,3)            23 PS     5                              
  34CL cL T$lifetime |t=23 ps {I5} (1978Ba61, RDM).                              
  34CL  G 879                    Q(+O)    -0.02   3                              
- 34CL cG M,MR$ from |g(|q) in 1978Ba61.                                         
+ 34CL cG M,MR$from |g(|q) in 1978Ba61.                                          
  34CL cG $A{-2}=0.40 {I2}, A{-4}=-0.14 {I3} (1978Ba61).                         
 ```
 
