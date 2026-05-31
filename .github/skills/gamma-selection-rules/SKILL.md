@@ -132,3 +132,102 @@ When writing primary transition lists in `cL J$` comments:
 3. Example for one γ transition: `cL J$primary transition <E_gamma1>|g to <Jπ1> g.s.`
 4. Example for multiple γ transitions: `cL J$primary transitions: <E_gamma1>|g to <Jπ1> g.s., <E_gamma2>|g to <Jπ2>, <E_level2>, and <E_gamma3>|g to <Jπ3>, <E_level3>.` Or, with specified intensities: `cL J$primary transitions with I|g>10: <E_gamma1>|g to <Jπ1> <E_level1> and <E_gamma2>|g to <Jπ2>, <E_level2>.` Or, with specified multipolarities: `cL J$primary transitions: <E_gamma1>|g, D(+Q), to <Jπ1>, <E_level1> and <E_gamma2>|g, D(+Q), to <Jπ2>, <E_level2>.`
 5. Use Oxford comma style in multi-transition lists and keep existing other Jπ arguments. Example: `cL J$spin=1:4 from |g(|q) in {+33}S(p,|g). Primary transitions: 4328.7|g to 2+, 2157.9 level, 6486.2|g to 0+ g.s., and 6025.3|g to 1+, 461.01 level.`
+
+
+
+## 6. Practical Workflow: Multipolarity Assignment Reasoning Logic
+
+### Scenario A: Only Mixing Ratio and Spins Given
+
+*   If level scheme indicates $\Delta J = 0$ or $1$, assign D+Q in M field.
+*   If level scheme indicates $\Delta J = 2$, assign Q+O in M field.
+*   If level scheme indicates $\Delta J = 3$, assign O in M field and note O+H and $\delta$ value in cG M,MR comment.
+
+### Scenario B: DCO Ratios, Mixing Ratio, and Spins Given
+
+#### Step 1: Look at DCO Ratios
+
+##### DCO Reference Gates
+
+*   Gating on a stretched dipole ($\Delta J = 1$) transition yields $R_{DCO}(D)$.
+*   Gating on a stretched quadrupole ($\Delta J = 2$) transition yields $R_{DCO}(Q)$.
+*   Expected DCO values depend on experimental detection setups.
+
+##### DCO Decision Rules
+
+**If $R_{DCO}(D) \approx 1.0$ or $R_{DCO}(Q) \approx 0.5$:**
+*   Transition is stretched dipole ($\Delta J = 1$) dominant.
+*   Mark as **D**.
+
+**If $R_{DCO}(Q) \approx 1.0$ or $R_{DCO}(D) \approx 2.0$:**
+*   Transition is stretched quadrupole ($\Delta J = 2$) dominant and with a possibly weaker dipole or octupole component.
+*   Mark as **Q**.
+*   Then look at spins, a less common case is if the level scheme indicates $J_i = J_f$:
+*   Mark as **ΔJ=0**.
+
+**If $R_{DCO}$ is between two expected values or inconsistent with all expected values:**
+*   Mark as **Mixed**.
+
+#### Step 2: Look at Mixing Ratio ($\delta$) and Level Scheme Spin Change ($\Delta J$)
+
+Based on the Step 1 classification:
+
+##### For Transitions Marked D
+
+*   If $\delta$ is not given, assign D in M field.
+*   If $|\delta| < 1$ is given, assign D+Q in M field.
+
+##### For Transitions Marked Q
+
+*   If $\delta$ is not given, assign Q in M field.
+*   If $|\delta| < 1$ is given, assign Q+O in M field.
+*   Then look at spins, the level scheme should indicate $\Delta J = 2$; but if it indicates $\Delta J = 1$, assign D+Q in M field and flag this discrepancy for user review.
+*   If $|\delta| > 1$ is given, assign D+Q in M field because dipole is the weaker component.
+
+##### For Transitions Marked ΔJ=0
+
+*   If $\delta$ is not given, assign D in M field and note "consistent with |DJ=0" in the cG comment after the DCO value.
+*   If $|\delta| < 1$ is given, assign D+Q in M field and note "consistent with |DJ=0" in the cG comment after the DCO value.
+
+##### For Transitions Marked Mixed
+
+*   If $\delta$ is not given, no need to assign M field.
+*   If $\delta$ is given:
+    *   If level scheme indicates $\Delta J = 0$ or $1$, assign D+Q in M field.
+    *   If level scheme indicates $\Delta J = 2$, assign Q+O in M field.
+    *   If level scheme indicates $\Delta J = 3$, assign O in M field and note O+H and $\delta$ value in cG M,MR comment.
+
+#### Step 3: Mixing Ratio Refinement
+
+*   If $\delta$ is given and does not overlap with 0, D+Q or Q+O remains unchanged.
+*   If $\delta$ is given and overlaps with 0, place the higher-order multipolarity in parentheses:
+    *   D+Q changes to D(+Q).
+    *   Q+O changes to Q(+O).
+
+#### Step 4: Polarization Refinement
+
+Apply these rules based on measured POL to assign electromagnetic character:
+
+#### Positive POL (Dominant Electric Character)
+
+*   D → E1
+*   Q → E2
+*   D+Q → E1+M2
+*   D(+Q) → E1(+M2)
+*   Q+O → E2+M3
+*   Q(+O) → E2(+M3)
+
+#### Negative POL (Dominant Magnetic Character)
+
+*   D → M1
+*   Q → M2
+*   D+Q → M1+E2
+*   D(+Q) → M1(+E2)
+*   Q+O → M2+E3
+*   Q(+O) → M2(+E3)
+
+#### If No POL Data Available
+
+*   Do not assign E or M labels.
+*   Assign only D, Q, O multipolarities based on DCO decision rules above.
+
