@@ -1,5 +1,5 @@
 ---
-name: adopted-comments-ordering
+name: general-comments-ordering
 description: "Organizes general comment sections in Adopted Dataset ENSDF files in the canonical sequence: Isotope Discovery, Production, Decay Measurements, Radius, Mass, Theoretical Calculations. Use when adding or reorganizing general comments at the beginning of an Adopted dataset file."
 ---
 
