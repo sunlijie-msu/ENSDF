@@ -253,21 +253,21 @@ class ENSDFEnergyChecker:
     def print_summary(self):
         """Print overall summary statistics"""
         print(f"\n{'='*70}")
-        print(f"🏁 ENSDF ENERGY ORDERING CHECK SUMMARY")
+        print(f"ENSDF ENERGY ORDERING CHECK SUMMARY")
         print(f"{'='*70}")
-        print(f"📁 Total files checked: {self.total_files}")
+        print(f"Total files checked: {self.total_files}")
         print(f"[OK] Files with correct ordering: {self.total_files - self.files_with_issues}")
         print(f"[WARNING] Files with ordering issues: {self.files_with_issues}")
         print(f"[ERROR] Total ordering problems found: {self.total_issues}")
         
         if self.files_with_issues > 0:
-            print(f"\n📋 Manual fixes needed for {self.files_with_issues} files:")
-            print(f"   • Level ordering: Sort L-records by ascending energy")
-            print(f"   • Gamma ordering: Sort G-records by ascending energy within each level")
-            print(f"   • Use line numbers shown above to locate records needing reordering")
-            print(f"   • Remember to move continuation lines with their parent records")
+            print(f"\nManual fixes needed for {self.files_with_issues} files:")
+            print(f"   - Level ordering: Sort L-records by ascending energy")
+            print(f"   - Gamma ordering: Sort G-records by ascending energy within each level")
+            print(f"   - Use line numbers shown above to locate records needing reordering")
+            print(f"   - Remember to move continuation lines with their parent records")
         else:
-            print(f"\n🎉 All files have correctly ordered energy records!")
+            print(f"\nAll files have correctly ordered energy records!")
 
 def main():
     parser = argparse.ArgumentParser(

@@ -275,7 +275,6 @@ Note: Multiple identical gamma energies appearing in multiple level blocks shoul
 
 **MANDATORY:** All values and uncertainties in all fields MUST be left-justified (NEVER right-justified or centered).
 
--   **Applies to:** energies, intensities, half-lives, spin-parity, uncertainties (DE, DRI, DT, DMR, DCC, DTI, DS), special markers (GT, LT), and all other field content.
 -   **Formatting:** Values start at the leftmost column of the field, padded with trailing spaces to fill field width.
 
 #### Energy Ordering Requirement
@@ -452,7 +451,6 @@ Units or percent signs are placed after the value before the uncertainty:
  34S   cL $ratio=54% {I+18-11} (1980Be15)
 ```
 
-
 **Examples in Context:**
 - Data record: ` 35P   L 1572.0    12 3/2+             2.29 PS   14` (uncertainties are plain numbers).
 - Comment line: ` 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)` (uncertainty uses `{I11}` notation).
@@ -491,100 +489,33 @@ print('Length:', len(line))
 3.  Validate against ENSDF Manual.
 4.  Report issues.
 
-### Mandatory Edit-Validate-Repeat Workflow
+### Edit-Validate-Repeat Workflow
 
-**CRITICAL: THE MOST IMPORTANT RULE**
+ONE field per edit. Validate each changed line before proceeding.
 
-**The Sacred Workflow** (MUST Follow for Every Single Edit):
-1.  **EDIT** → Make ONE precise change to ONE field.
-2.  **VALIDATE** → Run ruler on that exact line: `python .github/scripts/ensdf_1line_ruler.py --line "your 80-char line"`.
-3.  **CONFIRM** → Verify exit code 0 and check ruler output.
-4.  **REPEAT** → Move to next edit only after confirmation.
+**Mandatory sequence:**
+1. **Before editing:** run `column_calibrate.py` and `check_gamma_ordering.py` on the file.
+2. **Each changed line:** run `ensdf_1line_ruler.py --line "exact 80-char line"`.
+3. **After all edits:** repeat step 1.
 
-**Forbidden Behaviors:**
--   **NEVER** edit multiple lines without validating each one.
--   **NEVER** make multiple edits then validate at the end.
--   **NEVER** assume an edit worked without checking.
--   **NEVER** skip validation "just this once".
+Exit code 0 = pass; exit code 1 = errors. Fix all errors before proceeding.
 
-### Validation Tools and When to Use Them
+### Validation Scripts
 
-#### Before Any Edit
+**`ensdf_1line_ruler.py`** — line-level field layout and length check (L/G/E/B/DP records):
+- `--line "…"` → single line; `--file f.ens [--show-only-wrong] [--line-number N]` → file scan
 
-1.  Run `python .github/scripts/column_calibrate.py "filename.ens"` (MANDATORY).
-    -   Validates L-field positioning (column 56), S-field left-justification (columns 65-74).
-    -   Verifies comment flags at column 77.
-    -   Reports data-record line-length issues (L/G/E/B/DP records).
-2.  Run `python .github/scripts/check_gamma_ordering.py "filename.ens"` (MANDATORY).
-    -   Verifies ascending energy order for L-records and G-records.
-3.  Manual verification: `column_calibrate.py` does NOT check DP, B, or E record formatting.
-4.  Read current file state (never assume file structure).
-5.  Identify target line uniquely (must have 5+ lines of unique context).
-6.  Single field modification only (never edit multiple fields at once).
+**`column_calibrate.py`** — file-level field positioning, flag placement, and line-length check:
+- `"file.ens"` → full validation; `--fix` → pad/trim lines to 80 chars by adding/removing spaces (field content unchanged); `--fix --dry-run` → preview without modifying
+- Does NOT validate DP, B, or E record field content; use `ensdf_1line_ruler.py` for those.
 
-#### During Each Edit
-
-Run ruler for each changed line: `python .github/scripts/ensdf_1line_ruler.py --line "your 80-char line"`
--   MANDATORY for every line you edit.
--   Immediate visual ruler, length, and field validation.
--   Must verify exit code 0 before proceeding to next edit.
-
-#### After All Edits
-
-Repeat validation sequence (steps 1-2 from "Before Any Edit" section).
-
-### ENSDF 1-Line Ruler Tool
-
-**Usage Modes:**
--   **Single line check:** `python .github/scripts/ensdf_1line_ruler.py --line "your exact 80-char line"`
-    -   Quick ruler display, length check, immediate validation feedback.
-    -   USE THIS for every line you edit (essential AI workflow step).
--   **File scan:** `python .github/scripts/ensdf_1line_ruler.py --file path/to/file.ens [--show-only-wrong]`
-    -   Checks all data records (L, G, E, B, DP records); exit code 1 if any errors found.
-    -   Use `--show-only-wrong` to quickly identify problem lines only.
-
-### Column Calibration Tool (column_calibrate.py)
-
-Comprehensive ENSDF field validation and data-record line-length checking:
--   **Basic validation:** `python .github/scripts/column_calibrate.py "file.ens"`
-    -   Prints 80-column ruler with field boundaries.
-    -   Checks field positioning and reports line-length issues.
--   **Optional auto-fix:** `--fix` flag can pad/trim spaces to exactly 80-character line lengths.
-    -   Use with extreme caution (does NOT fix field content or formatting errors).
-    -   May surface new issues if misused (prefer manual corrections).
-    -   Always re-validate after using `--fix` option.
--   **Exit codes:** 0 = all checks pass; 1 = errors found.
--   **Limitations:** DP, B, and E records require additional manual verification.
-
-### Energy Ordering Tool (check_gamma_ordering.py)
-
-Validates ascending energy order for L-records and G-records:
--   **Basic check:** `python .github/scripts/check_gamma_ordering.py "file.ens"`
--   **Multiple files:** `python .github/scripts/check_gamma_ordering.py "A35/K35/new/*.ens" --summary`
--   **Verbose output:** Add `--verbose` flag for detailed checking process.
--   **Exit codes:** 0 = correct ordering; 1 = ordering violations found.
-
-### Output Interpretation Guidelines
-
-**SUCCESS indicators:**
--   Exit code 0: Validation PASSED (safe to proceed).
--   "SUCCESS: All ENSDF field positions appear correct!"
-
-**ERROR indicators:**
--   Exit code 1: Validation FAILED (MUST fix errors before proceeding).
--   "DATA RECORD LINE LENGTH ISSUES DETECTED": Lines not exactly 80 characters.
--   "ERROR: Field positioning errors found": Field alignment problems.
+**`check_gamma_ordering.py`** — ascending energy order for L- and G-records (check-only, no fixes):
+- `"file.ens" [--verbose] [--summary]`; `--summary` auto-enables for multiple files; glob patterns accepted
 
 ### Editing Methodology
 
-1.  **ONE EDIT AT A TIME** (never batch multiple field changes).
-2.  **PRECISE CONTEXT MATCHING** (use complete L-record + surrounding context).
-3.  **FIELD-SPECIFIC REPLACEMENTS** (target only the specific field being changed).
-4.  **IMMEDIATE VALIDATION** (check file structure after each edit).
-
-**NEVER PROCEED WITHOUT COMPLETE COLUMN MAPPING VERIFICATION**
-
-**CRITICAL COLUMN RULE:** When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns. Only adjust spacing between fields (never move field data to incorrect columns).
+One field per edit. Use ≥5 lines of unique context for `replace_string_in_file`.
+When performing field-specific edits, ensure that only the targeted field is modified, and adjust surrounding spacing as needed. Never shift adjacent fields into wrong columns.
 
 
 
