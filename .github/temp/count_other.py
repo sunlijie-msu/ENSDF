@@ -1,5 +1,0 @@
-f = open(r'd:\X\ND\ENSDF\A34\Cl34\raw\1977DA02_1983WA27.adp', encoding='utf-8')
-lines = f.readlines()
-f.close()
-n = sum(1 for l in lines if 'cG RI' in l and 'other: 100' in l)
-print('other: 100 count =', n, '(expected 19)')
