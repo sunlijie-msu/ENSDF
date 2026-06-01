@@ -12,9 +12,9 @@ argument-hint: [feeding Jπ list] [deexciting transitions] [lifetime known?]
 
 # Gamma Transition Selection Rules: Deducing multipolarities and Jπ
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
-
-γ-ray multipolarity selection rules: `.github/docs/gamma_selection_rules.md`.
+- ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`.
+- Spot-check policy: `.github/copilot-instructions.md`.
+- γ-ray multipolarity selection rules: `.github/docs/gamma_selection_rules.md`.
 
 ## Goal
 Deduce the multipolarity of γ-ray transitions from experimental data.
@@ -118,14 +118,16 @@ Apply these rules based on measured POL to assign electromagnetic character:
 *   Do not assign E or M labels.
 *   Assign only D, Q, O multipolarities based on DCO decision rules above.
 
-
-
 ---
 
 ## Further Constraining Multipolarity in the Adopted Dataset
 
+### Overview
+
 G-record M field multipolarity assignments
 The adopted multipolarity is then used to deduce Jπ of levels.
+
+### Assignment Patterns
 
 Assigning M1+E2 or (M1+E2) in G-record M field:
 
@@ -151,6 +153,8 @@ cG M$D+Q from |g|g(|q)(DCO) in dataset. |D|p=no from level scheme.
 
 If D(+Q) is firm, the corresponding converted form is M1(+E2).
 The same logic applies to assigning and using E1+M2.
+
+### Conversion Decision Table
 
 
 | Individual G | Measurement                      | Adopted G | cG M$comment             | cL J$comment                   |
@@ -179,11 +183,12 @@ The same logic applies to assigning and using E1+M2.
 | D(+Q)        | γ(θ)/DCO mixed                   | (E1(+M2)) | Δπ=yes from level scheme | D(+Q), ΔJ=0,1                  |
 |              |                                  | [M1,E2]   | Purely from level scheme | Do not use to deduce Jπ        |
 
+### Conversion Precedence Rules
+
 If lifetime is available and rules out M2 by RUL, then D+Q can be converted to firm M1+E2.
 If RUL does not rule out M2, then D+Q can be converted to tentative (M1+E2) if level scheme indicates Δπ=no.
 RUL takes precedence over level scheme for this conversion.
 If Δπ is unknown from level scheme or RUL does not rule out M2, keep the original multipolarity assignment.
-
 
 ---
 
