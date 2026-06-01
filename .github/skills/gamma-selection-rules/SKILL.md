@@ -7,7 +7,6 @@ description: >
   D/Q or D/E2 to deexciting gammas (lifetime-dependent), and takes AND
   intersection of all constraints. Handles multi-valued initial Jπ via
   union before intersection.
-argument-hint: [feeding Jπ list] [deexciting transitions] [lifetime known?]
 ---
 
 # Gamma Transition Selection Rules: Deducing multipolarities and Jπ
