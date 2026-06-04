@@ -1,20 +1,45 @@
- 34SI    35AL B-N DECAY (37.7 MS)      2001NU01,2005TI11,1988MU08ENSDF    202609
+ 34SI    35AL B-N DECAY (37.7 MS)      2001NU01,2005TI11         ENSDF    202609
  34SI  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34SI  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34SI2 H CUT=28-May-2012$                                                       
- 34SI c  The level scheme is from 2005Ti11 and 2001Nu01 (also 2002Nu02)         
- 34SI d  2006AnZW reports the same results for {+35}Al decay as 2005Ti11        
+ 34SI c  2005Ti11,2006AnZW: a {+35}Al secondary beam at |?2 pps was produced via
+ 34SI2c  the fragmentation of a 78-MeV/nucleon {+36}S primary beam and selected 
+ 34SI3c  by the LISE3 spectrometer at GANIL. A total of 3.46|*10{+5} {+35}Al    
+ 34SI4c  ions were continuously implanted into an NE102A plastic scintillator   
+ 34SI5c  also for detecting |b. The implantation detector was sandwiched between
+ 34SI6c  two silicon detectors for monitoring beam and for veto, respectively.  
+ 34SI7c  Neutrons were detected using the TONNERRE array consisting of 19       
+ 34SI8c  plastic scintillator modules. |g rays were detected using two EXOGAM   
+ 34SI9c  clover modules and a LEPS detector. Measured E|g, I|g, E{-n}, I{-n},   
+ 34SIAc  |b|g-coin, |bn-coin, and |bn|g-coin. Deduced the decay scheme          
+ 34SIBc  consisting of {+35}Si and {+34}Si levels, {+35}Al T{-1/2}, decay       
+ 34SICc  branching ratios, log {Ift}, B(GT), and |b-delayed neutron emission    
+ 34SIDc  probability. Comparisons with shell-model calculations.                
+ 34SI c  2001Nu01,2002Nu02: Exp 1: a {+35}Al secondary beam at 8 pps was        
+ 34SI2c  produced via the fragmentation of a UC target with 1.4 GeV protons at  
+ 34SI3c  ISOLDE, CERN with subsequent surface-ionization and mass separation.   
+ 34SI4c  {+35}Al ions were collected onto a moving tape. |b particles were      
+ 34SI5c  detected using a thin cylindrical plastic scintillator, |g rays were   
+ 34SI6c  detected using two Ge detectors, and neutrons were detected using eight
+ 34SI7c  low-threshold plastic scintillators. Measured E|g, I|g, E{-n}, I{-n},  
+ 34SI8c  |b|g-coin, |g|g-coin, |bn-coin. Deduced the decay scheme consisting of 
+ 34SI9c  {+35}Si and {+34}Si levels, {+35}Al T{-1/2}, decay branching ratios,   
+ 34SIAc  log {Ift}, and |b-delayed neutron emission probability. Comparisons    
+ 34SIBc  with shell-model calculations. Exp 2: A lifetime measurement for the   
+ 34SICc  974-keV level in {+35}Si used a thin plastic scintillator for detecting
+ 34SIDc  |b and a BaF{-2} detector for detecting |g.                            
+ 34SI c  Other experimental studies on {+35}Al T{-1/2} and |b-delayed neutron   
+ 34SI2c  emission probability: 2019Wa38, 2017Ha23, 1999YoZW, 1995ReZZ/2008ReZZ, 
+ 34SI3c  1989MuZU, 1989Le16, 1988MuZY, 1988Mu08, 1988DuZT, 1988BaYZ, 1987DuZU,  
+ 34SI4c  1987BaZI.                                                              
+ 35SI c  Theoretical studies involving {+35}Al decay: 2018Yo06, 2013Li39        
  34SI cG E$From 2001Nu01.                                                       
  34SI cG RI$From 2005Ti11, absolute values                                      
  34SI cL J$From Adopted Levels                                                  
- 35AL  P 0             (5/2+)          37.7 MS   9              11666     71    
- 35AL cP T$From timing of |b and |g rays (2001Nu01,2005Ti11). Unweighted        
- 35AL2cP average of 36.8 ms {I5} (2005Ti11) and 38.6 ms {I4} (2001Nu01).        
- 35AL3cP Weighted average is 37.9 ms {I9} but with reduced |h{+2}=7. Others:    
- 35AL4cP 30 ms {I4} (1995ReZZ), 170 ms {I70} (1989Le16),                        
- 35AL5cP 130 ms {I+100-50} (1988Mu08)                                           
- 35AL cP QP$From 2011AuZZ. Other: 11760 {I180} (2003Au03)                       
- 34SI  N 2.64                  0.38    2               0.38   2                 
+ 35AL  P 0            (5/2)+           38.1 MS   4              11697     7     
+ 35AL cP J,T$From the Adopted Levels of {+35}Al                                 
+ 35AL cP QP$From 2021Wa16                                                       
+ 34SI  N 2.64                  0.37    4               0.37    4                 
  34SI cN NR$Based on data from 2005Ti01                                         
  34SI cN BR$%|b{+-}n=38 {I2} (2005Ti11). Other %|b{+-}n: 41 {I13} (2001Nu01 from
  34SI2cN intensities of |g rays in the granddaughter nuclei {+35}P and {+34}P), 
@@ -34,4 +59,4 @@
  34SIS G KC=0.023 22 $ LC=0.0017 16                                             
  34SI cG RI$2.5 {i9} (2001Nu01) relative to 100 for 64.0|g from {+35}Al decay;  
  34SI2cG absolute intensity=1.1 {I4}                                            
-                                                                                
+
