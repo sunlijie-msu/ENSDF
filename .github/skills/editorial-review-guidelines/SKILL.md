@@ -35,6 +35,7 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
   - Record-specific comments **without** field identifier (`cL $`, `cG $`) → uppercase (standalone statements).
   - **Exception:** `cP` and `cN` comments always uppercase.
   - Examples: `cL T$from lifetime ...` ✓; `cL E$From a least-squares fit ...` (top-block) ✓; `cL $Possible mirror level...` ✓; `cP J,T$From ...` ✓; `cN BR$Experimental ...` ✓.
+- **NUCID case on comment lines:** Cols 1–5 must be uppercase. Wrong: `34Si cL J$` → Correct: `34SI cL J$`.
 - **Extra space after `$`:** `cL J$ from ...` → `cL J$from ...`. Scan: `\$\s`.
 - **Dittography:** `\b(\w+)\s+\1\b` -- flag `the the`, `were were`, etc.
 - **Subject-verb agreement:** NSR keys are singular. Wrong: `1972Hu10 report` → Correct: `1972Hu10 reports`.
