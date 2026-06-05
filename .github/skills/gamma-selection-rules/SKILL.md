@@ -4,7 +4,7 @@ description: >
   Use this skill when deducing multipolarities for gamma transitions and then Jπ for nuclear levels by combining constraints
   from feeding and deexciting gamma transitions using electromagnetic
   selection rules. Applies D/E2 rules to primary capture transitions,
-  D/Q or D/E2 to deexciting gammas (if RUL applys), and takes AND
+  D/Q or D/E2 to deexciting gammas (if RUL applies), and takes AND
   intersection of all constraints. Handles multi-valued initial Jπ via
   union before intersection.
 ---
@@ -94,7 +94,7 @@ Based on the Step 1 classification:
 
 Apply these rules based on measured POL to assign electromagnetic character:
 
-#### Positive POL (Dominant Electric Character)
+##### Positive POL (Dominant Electric Character)
 
 *   D → E1
 *   Q → E2
@@ -103,7 +103,7 @@ Apply these rules based on measured POL to assign electromagnetic character:
 *   Q+O → E2+M3
 *   Q(+O) → E2(+M3)
 
-#### Negative POL (Dominant Magnetic Character)
+##### Negative POL (Dominant Magnetic Character)
 
 *   D → M1
 *   Q → M2
@@ -112,7 +112,7 @@ Apply these rules based on measured POL to assign electromagnetic character:
 *   Q+O → M2+E3
 *   Q(+O) → M2(+E3)
 
-#### If No POL Data Available
+##### If No POL Data Available
 
 *   Do not assign E or M labels.
 *   Assign only D, Q, O multipolarities based on DCO decision rules above.
@@ -123,39 +123,40 @@ Apply these rules based on measured POL to assign electromagnetic character:
 
 ### Overview
 
-To further constrain G-record M field multipolarities
-
-The adopted multipolarities are then used to deduce L-record Jπ field spins and parities for the levels.
+To further constrain multipolarities (G-record M field) and then use them to deduce Jπ for each level (L-record Jπ field).
 
 ### Assignment Patterns
 
-Assigning M1+E2 or (M1+E2) in G-record M field:
+Assigning M1+E2 or (M1+E2) in the G-record M field:
 
-1) Assign firm M1+E2 directly based on DCO/ADO and POL data and cG comment should refer to the specific dataset used for this assignment.
-cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.
+1. Assign firm M1+E2 directly based on DCO/ADO and POL data. The `cG M$` comment should cite the specific dataset:
 
-2) Assign firm M1+E2 based on D+Q from |g(|q)/DCO without POL or from |g(|q), and the level lifetime is short. cG comment should refer to the specific dataset used for this assignment and note that M2 is ruled out by RUL.
-cG M$D+Q from |g(|q) in dataset. M2 ruled out by RUL.
-cG M$D+Q from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.
+   `cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.`
 
-M1+E2 can be used in cL J comments to deduce J|p:
-cL J$<G-energy>|g, M1+E2, to <Jπ>, <L-energy> level
-cG M$D+Q from |g(|q) in dataset. M2 ruled out by RUL.
+2. Assign firm M1+E2 from D+Q without POL when the level lifetime is short (M2 ruled out by RUL). The `cG M$` comment should cite the dataset and note RUL:
 
-M1+E2, |DJ=1, can be used in cL J comments to deduce J|p:
-<G-energy>|g, M1+E2, |DJ=1 to <Jπ>, <L-energy> level
-cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.
-cG M$D+Q from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.
+   `cG M$D+Q from |g(|q) in dataset. M2 ruled out by RUL.`
+   `cG M$D+Q from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.`
 
-3) Assign tentative (M1+E2) based on firm D+Q and level scheme info.
-cG M$D+Q from |g(|q) in dataset. |D|p=no from level scheme.
-cG M$D+Q from |g|g(|q)(DCO) in dataset. |D|p=no from level scheme.
+   Use M1+E2 in `cL J$` comments to deduce Jπ:
 
-If D(+Q) is firm, the corresponding converted form is M1(+E2).
-The same logic applies to assigning and using E1+M2.
+   `cL J$<G-energy>|g, M1+E2, to <Jπ>, <L-energy> level`
+   `cG M$D+Q from |g(|q) in dataset. M2 ruled out by RUL.`
+
+   Use M1+E2, |DJ=1, in `cL J$` comments to deduce Jπ:
+
+   `<G-energy>|g, M1+E2, |DJ=1 to <Jπ>, <L-energy> level`
+   `cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.`
+   `cG M$D+Q from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.`
+
+3. Assign tentative (M1+E2) from firm D+Q when the level scheme indicates Δπ=no:
+
+   `cG M$D+Q from |g(|q) in dataset. |D|p=no from level scheme.`
+   `cG M$D+Q from |g|g(|q)(DCO) in dataset. |D|p=no from level scheme.`
+
+If D(+Q) is firm, the corresponding converted form is M1(+E2). The same logic applies to E1+M2.
 
 ### Conversion Decision Table
-
 
 | Individual G | Measurement                      | Adopted G | cG M$comment             | cL J$comment                   |
 | ------------ | -------------------------------- | --------- | ------------------------ | ------------------------------ |
