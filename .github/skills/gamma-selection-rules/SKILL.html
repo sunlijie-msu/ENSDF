@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Gamma Transition Selection Rules&colon; Deducing multipolarities and J&pi;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 17px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <span id="markdown-mermaid" aria-hidden="true" data-config="{&quot;darkModeTheme&quot;:&quot;vscode&quot;,&quot;lightModeTheme&quot;:&quot;vscode&quot;,&quot;maxTextSize&quot;:50000,&quot;clickDrag&quot;:&quot;alt&quot;,&quot;showControls&quot;:&quot;onHoverOrFocus&quot;,&quot;resizable&quot;:true,&quot;maxHeight&quot;:&quot;&quot;}"></span>
+				<hr>
+<h2 id="name-gamma-selection-rulesdescription-use-this-skill-when-deducing-multipolarities-for-gamma-transitions-and-then-jπ-for-nuclear-levels-by-combining-constraintsfrom-feeding-and-deexciting-gamma-transitions-using-electromagneticselection-rules-applies-de2-rules-to-primary-capture-transitionsdq-or-de2-to-deexciting-gammas-if-rul-applies-and-takes-andintersection-of-all-constraints-handles-multi-valued-initial-jπ-viaunion-before-intersection">name: gamma-selection-rules
+description: &gt;
+Use this skill when deducing multipolarities for gamma transitions and then Jπ for nuclear levels by combining constraints
+from feeding and deexciting gamma transitions using electromagnetic
+selection rules. Applies D/E2 rules to primary capture transitions,
+D/Q or D/E2 to deexciting gammas (if RUL applies), and takes AND
+intersection of all constraints. Handles multi-valued initial Jπ via
+union before intersection.</h2>
+<h1 id="gamma-transition-selection-rules-deducing-multipolarities-and-jπ">Gamma Transition Selection Rules: Deducing multipolarities and Jπ</h1>
+<ul>
+<li>ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: <code>.github/agents/ENSDF-Agent.agent.md</code>.</li>
+<li>Spot-check policy: <code>.github/copilot-instructions.md</code>.</li>
+<li>γ-ray multipolarity selection rules: <code>.github/docs/gamma_selection_rules.md</code>.</li>
+</ul>
+<h2 id="goal">Goal</h2>
+<p>Deduce the multipolarity of γ-ray transitions from experimental data.
+Deduce the Jπ of levels by combining constraints from:</p>
+<ul>
+<li><strong>Feeding transitions</strong> — γ rays populating the level (from capture resonances above)</li>
+<li><strong>Deexciting transitions</strong> — γ rays depopulating the level (to lower levels below)</li>
+</ul>
+<h2 id="multipolarity-assignment-reasoning-logic-in-individual-datasets">Multipolarity Assignment Reasoning Logic in Individual Datasets</h2>
+<h3 id="scenario-a-only-mixing-ratios-and-spins-given-in-literature">Scenario A: Only Mixing Ratios and Spins Given in Literature</h3>
+<ul>
+<li>If level scheme indicates <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>J</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Delta J = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span> or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>, assign D+Q in M field.</li>
+<li>If level scheme indicates <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>J</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\Delta J = 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span>, assign Q+O in M field.</li>
+<li>If level scheme indicates <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>J</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\Delta J = 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span>, assign O in M field and note O+H and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span></span></span></span> value in cG M,MR comment.</li>
+</ul>
+<h3 id="scenario-b-dco-ratios-mixing-ratio-and-spins-given-in-literature">Scenario B: DCO Ratios, Mixing Ratio, and Spins Given in Literature</h3>
+<h4 id="step-1-look-at-dco-ratios">Step 1: Look at DCO Ratios</h4>
+<h5 id="dco-reference-gates">DCO Reference Gates</h5>
+<ul>
+<li>Gating on a stretched dipole (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>J</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\Delta J = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>) transition yields <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi>D</mi><mi>C</mi><mi>O</mi></mrow></msub><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R_{DCO}(D)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">D</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">CO</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">)</span></span></span></span>.</li>
+<li>Gating on a stretched quadrupole (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>J</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\Delta J = 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span>) transition yields <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi>D</mi><mi>C</mi><mi>O</mi></mrow></msub><mo stretchy="false">(</mo><mi>Q</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R_{DCO}(Q)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">D</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">CO</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">Q</span><span class="mclose">)</span></span></span></span>.</li>
+<li>Expected DCO values depend on experimental detection setups.</li>
+</ul>
+<h5 id="dco-decision-rules">DCO Decision Rules</h5>
+<p><strong>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi>D</mi><mi>C</mi><mi>O</mi></mrow></msub><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo><mo>≈</mo><mn>1.0</mn></mrow><annotation encoding="application/x-tex">R_{DCO}(D) \approx 1.0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">D</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">CO</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1.0</span></span></span></span> or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi>D</mi><mi>C</mi><mi>O</mi></mrow></msub><mo stretchy="false">(</mo><mi>Q</mi><mo stretchy="false">)</mo><mo>≈</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">R_{DCO}(Q) \approx 0.5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">D</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">CO</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">Q</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.5</span></span></span></span>:</strong></p>
+<ul>
+<li>Transition is stretched dipole (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>J</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\Delta J = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>) dominant.</li>
+<li>Mark as <strong>D</strong>.</li>
+</ul>
+<p><strong>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi>D</mi><mi>C</mi><mi>O</mi></mrow></msub><mo stretchy="false">(</mo><mi>Q</mi><mo stretchy="false">)</mo><mo>≈</mo><mn>1.0</mn></mrow><annotation encoding="application/x-tex">R_{DCO}(Q) \approx 1.0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">D</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">CO</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">Q</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1.0</span></span></span></span> or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi>D</mi><mi>C</mi><mi>O</mi></mrow></msub><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo><mo>≈</mo><mn>2.0</mn></mrow><annotation encoding="application/x-tex">R_{DCO}(D) \approx 2.0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">D</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">CO</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2.0</span></span></span></span>:</strong></p>
+<ul>
+<li>Transition is stretched quadrupole (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>J</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\Delta J = 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span>) dominant and with a possibly weaker dipole or octupole component.</li>
+<li>Mark as <strong>Q</strong>.</li>
+<li>Then look at spins, a less common case is if the level scheme indicates <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mi>i</mi></msub><mo>=</mo><msub><mi>J</mi><mi>f</mi></msub></mrow><annotation encoding="application/x-tex">J_i = J_f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0962em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0962em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span>:</li>
+<li>Mark as <strong>ΔJ=0</strong>.</li>
+</ul>
+<p><strong>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi>D</mi><mi>C</mi><mi>O</mi></mrow></msub></mrow><annotation encoding="application/x-tex">R_{DCO}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">D</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">CO</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is between two expected values or inconsistent with all expected values:</strong></p>
+<ul>
+<li>Mark as <strong>Mixed</strong>.</li>
+</ul>
+<h4 id="step-2-look-at-mixing-ratio-delta-and-level-scheme-spin-change-delta-j">Step 2: Look at Mixing Ratio (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span></span></span></span>) and Level Scheme Spin Change (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>J</mi></mrow><annotation encoding="application/x-tex">\Delta J</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span></span></span></span>)</h4>
+<p>Based on the Step 1 classification:</p>
+<h5 id="for-transitions-marked-d">For Transitions Marked D</h5>
+<ul>
+<li>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span></span></span></span> is not given, assign D in M field.</li>
+<li>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>δ</mi><mi mathvariant="normal">∣</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|\delta| &lt; 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> is given, assign D+Q in M field.</li>
+</ul>
+<h5 id="for-transitions-marked-q">For Transitions Marked Q</h5>
+<ul>
+<li>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span></span></span></span> is not given, assign Q in M field.</li>
+<li>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>δ</mi><mi mathvariant="normal">∣</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|\delta| &lt; 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> is given, assign Q+O in M field.</li>
+<li>Then look at spins, the level scheme should indicate <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>J</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\Delta J = 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span>; but if it indicates <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>J</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\Delta J = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>, assign D+Q in M field and flag this discrepancy for user review.</li>
+<li>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>δ</mi><mi mathvariant="normal">∣</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|\delta| &gt; 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> is given, assign D+Q in M field because dipole is the weaker component.</li>
+</ul>
+<h5 id="for-transitions-marked-δj0">For Transitions Marked ΔJ=0</h5>
+<ul>
+<li>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span></span></span></span> is not given, assign D in M field and note &quot;consistent with |DJ=0&quot; in the cG comment after the DCO value.</li>
+<li>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>δ</mi><mi mathvariant="normal">∣</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|\delta| &lt; 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> is given, assign D+Q in M field and note &quot;consistent with |DJ=0&quot; in the cG comment after the DCO value.</li>
+</ul>
+<h5 id="for-transitions-marked-mixed">For Transitions Marked Mixed</h5>
+<ul>
+<li>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span></span></span></span> is not given, no need to assign M field.</li>
+<li>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span></span></span></span> is given:
+<ul>
+<li>If level scheme indicates <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>J</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Delta J = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span> or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>, assign D+Q in M field.</li>
+<li>If level scheme indicates <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>J</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\Delta J = 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span>, assign Q+O in M field.</li>
+<li>If level scheme indicates <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>J</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\Delta J = 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span>, assign O in M field and note O+H and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span></span></span></span> value in cG M,MR comment.</li>
+</ul>
+</li>
+</ul>
+<h4 id="step-3-mixing-ratio-refinement">Step 3: Mixing Ratio Refinement</h4>
+<ul>
+<li>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span></span></span></span> is given and does not overlap with 0, D+Q or Q+O remains unchanged.</li>
+<li>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span></span></span></span> is given and overlaps with 0, place the higher-order multipolarity in parentheses:
+<ul>
+<li>D+Q changes to D(+Q).</li>
+<li>Q+O changes to Q(+O).</li>
+</ul>
+</li>
+</ul>
+<h4 id="step-4-polarization-refinement">Step 4: Polarization Refinement</h4>
+<p>Apply these rules based on measured POL to assign electromagnetic character:</p>
+<h5 id="positive-pol-dominant-electric-character">Positive POL (Dominant Electric Character)</h5>
+<ul>
+<li>D → E1</li>
+<li>Q → E2</li>
+<li>D+Q → E1+M2</li>
+<li>D(+Q) → E1(+M2)</li>
+<li>Q+O → E2+M3</li>
+<li>Q(+O) → E2(+M3)</li>
+</ul>
+<h5 id="negative-pol-dominant-magnetic-character">Negative POL (Dominant Magnetic Character)</h5>
+<ul>
+<li>D → M1</li>
+<li>Q → M2</li>
+<li>D+Q → M1+E2</li>
+<li>D(+Q) → M1(+E2)</li>
+<li>Q+O → M2+E3</li>
+<li>Q(+O) → M2(+E3)</li>
+</ul>
+<h5 id="if-no-pol-data-available">If No POL Data Available</h5>
+<ul>
+<li>Do not assign E or M labels.</li>
+<li>Assign only D, Q, O multipolarities based on DCO decision rules above.</li>
+</ul>
+<hr>
+<h2 id="multipolarity-assignment-reasoning-logic-in-the-adopted-dataset">Multipolarity Assignment Reasoning Logic in the Adopted Dataset</h2>
+<h3 id="overview">Overview</h3>
+<p>To further constrain multipolarities (G-record M field) and then use them to deduce Jπ for each level (L-record Jπ field).</p>
+<h3 id="assignment-patterns">Assignment Patterns</h3>
+<p>Assigning M1+E2 or (M1+E2) in the G-record M field:</p>
+<ol>
+<li>
+<p>Assign firm M1+E2 directly based on DCO/ADO and POL data. The <code>cG M$</code> comment should cite the specific dataset:</p>
+<p><code>cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.</code></p>
+</li>
+<li>
+<p>Assign firm M1+E2 from D+Q without POL when the level lifetime is short (M2 ruled out by RUL). The <code>cG M$</code> comment should cite the dataset and note RUL:</p>
+<p><code>cG M$D+Q from |g(|q) in dataset. M2 ruled out by RUL.</code>
+<code>cG M$D+Q from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.</code></p>
+<p>Use M1+E2 in <code>cL J$</code> comments to deduce Jπ:</p>
+<p><code>cL J$&lt;G-energy&gt;|g, M1+E2, to &lt;Jπ&gt;, &lt;L-energy&gt; level</code>
+<code>cG M$D+Q from |g(|q) in dataset. M2 ruled out by RUL.</code></p>
+<p>Use M1+E2, |DJ=1, in <code>cL J$</code> comments to deduce Jπ:</p>
+<p><code>&lt;G-energy&gt;|g, M1+E2, |DJ=1 to &lt;Jπ&gt;, &lt;L-energy&gt; level</code>
+<code>cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.</code>
+<code>cG M$D+Q from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.</code></p>
+</li>
+<li>
+<p>Assign tentative (M1+E2) from firm D+Q when the level scheme indicates Δπ=no:</p>
+<p><code>cG M$D+Q from |g(|q) in dataset. |D|p=no from level scheme.</code>
+<code>cG M$D+Q from |g|g(|q)(DCO) in dataset. |D|p=no from level scheme.</code></p>
+</li>
+</ol>
+<p>If D(+Q) is firm, the corresponding converted form is M1(+E2). The same logic applies to E1+M2.</p>
+<h3 id="conversion-decision-table">Conversion Decision Table</h3>
+<table>
+<thead>
+<tr>
+<th>Individual G</th>
+<th>Measurement</th>
+<th>Adopted G</th>
+<th>For G record M field</th>
+<th>For L record Jπ field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M1+E2</td>
+<td>DCO stretched D, POL, w/wo δ</td>
+<td>M1+E2</td>
+<td></td>
+<td>M1+E2, ΔJ=1, Δπ=no</td>
+</tr>
+<tr>
+<td>M1(+E2)</td>
+<td>DCO stretched D, POL, w/wo δ</td>
+<td>M1(+E2)</td>
+<td></td>
+<td>M1(+E2), ΔJ=1, Δπ=no</td>
+</tr>
+<tr>
+<td>E1+M2</td>
+<td>DCO stretched D, POL, w/wo δ</td>
+<td>E1+M2</td>
+<td></td>
+<td>E1+M2, ΔJ=1, Δπ=yes</td>
+</tr>
+<tr>
+<td>E1(+M2)</td>
+<td>DCO stretched D, POL, w/wo δ</td>
+<td>E1(+M2)</td>
+<td></td>
+<td>E1(+M2), ΔJ=1, Δπ=yes</td>
+</tr>
+<tr>
+<td>D+Q</td>
+<td>DCO stretched D with δ&lt;1</td>
+<td>M1+E2</td>
+<td>M2 ruled out by RUL</td>
+<td>M1+E2, ΔJ=1, Δπ=no</td>
+</tr>
+<tr>
+<td>D+Q</td>
+<td>DCO stretched D with δ&lt;1</td>
+<td>(M1+E2)</td>
+<td>Δπ=no from level scheme</td>
+<td>D+Q, ΔJ=1</td>
+</tr>
+<tr>
+<td>D+Q</td>
+<td>DCO stretched D with δ&lt;1</td>
+<td>(E1+M2)</td>
+<td>Δπ=yes from level scheme</td>
+<td>D+Q, ΔJ=1</td>
+</tr>
+<tr>
+<td>D(+Q)</td>
+<td>DCO stretched D with δ≈0</td>
+<td>(M1(+E2))</td>
+<td>Δπ=no from level scheme</td>
+<td>D(+Q), ΔJ=1</td>
+</tr>
+<tr>
+<td>D(+Q)</td>
+<td>DCO stretched D with δ≈0</td>
+<td>(E1(+M2))</td>
+<td>Δπ=yes from level scheme</td>
+<td>D(+Q), ΔJ=1</td>
+</tr>
+<tr>
+<td>D+Q</td>
+<td>DCO stretched Q with δ&gt;1</td>
+<td>M1+E2</td>
+<td>M2 ruled out by RUL</td>
+<td>M1+E2, ΔJ=0,1, Δπ=no</td>
+</tr>
+<tr>
+<td>D+Q</td>
+<td>DCO stretched Q with δ&gt;1</td>
+<td>(M1+E2)</td>
+<td>Δπ=no from level scheme</td>
+<td>D+Q, ΔJ=0,1</td>
+</tr>
+<tr>
+<td>D+Q</td>
+<td>DCO stretched Q with δ&gt;1</td>
+<td>(E1+M2)</td>
+<td>Δπ=yes from level scheme</td>
+<td>D+Q, ΔJ=0,1</td>
+</tr>
+<tr>
+<td>D+Q</td>
+<td>DCO consistent with ΔJ=0 and δ&lt;1</td>
+<td>M1+E2</td>
+<td>M2 ruled out by RUL</td>
+<td>M1+E2, Δπ=no, Avoid using ΔJ=0</td>
+</tr>
+<tr>
+<td>D+Q</td>
+<td>DCO consistent with ΔJ=0 and δ&lt;1</td>
+<td>(M1+E2)</td>
+<td>Δπ=no from level scheme</td>
+<td>Avoid using ΔJ=0</td>
+</tr>
+<tr>
+<td>D+Q</td>
+<td>DCO consistent with ΔJ=0 and δ&lt;1</td>
+<td>(E1+M2)</td>
+<td>Δπ=yes from level scheme</td>
+<td>Avoid using ΔJ=0</td>
+</tr>
+<tr>
+<td>D(+Q)</td>
+<td>DCO consistent with ΔJ=0 and δ≈0</td>
+<td>(M1(+E2))</td>
+<td>Δπ=no from level scheme</td>
+<td>Avoid using ΔJ=0</td>
+</tr>
+<tr>
+<td>D(+Q)</td>
+<td>DCO consistent with ΔJ=0 and δ≈0</td>
+<td>(E1(+M2))</td>
+<td>Δπ=yes from level scheme</td>
+<td>Avoid using ΔJ=0</td>
+</tr>
+<tr>
+<td>D+Q</td>
+<td>γ(θ)/DCO mixed</td>
+<td>M1+E2</td>
+<td>M2 ruled out by RUL</td>
+<td>M1+E2, ΔJ=0,1, Δπ=no</td>
+</tr>
+<tr>
+<td>D+Q</td>
+<td>γ(θ)/DCO mixed</td>
+<td>(M1+E2)</td>
+<td>Δπ=no from level scheme</td>
+<td>D+Q, ΔJ=0,1</td>
+</tr>
+<tr>
+<td>D+Q</td>
+<td>γ(θ)/DCO mixed</td>
+<td>(E1+M2)</td>
+<td>Δπ=yes from level scheme</td>
+<td>D+Q, ΔJ=0,1</td>
+</tr>
+<tr>
+<td>D(+Q)</td>
+<td>γ(θ)/DCO mixed</td>
+<td>(M1(+E2))</td>
+<td>Δπ=no from level scheme</td>
+<td>D(+Q), ΔJ=0,1</td>
+</tr>
+<tr>
+<td>D(+Q)</td>
+<td>γ(θ)/DCO mixed</td>
+<td>(E1(+M2))</td>
+<td>Δπ=yes from level scheme</td>
+<td>D(+Q), ΔJ=0,1</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>[M1,E2]</td>
+<td>Purely from level scheme</td>
+<td>Do not use to deduce Jπ</td>
+</tr>
+</tbody>
+</table>
+<h3 id="conversion-precedence-rules">Conversion Precedence Rules</h3>
+<p>If lifetime is available and rules out M2 by RUL, then D+Q can be converted to firm M1+E2.
+If RUL does not rule out M2, then D+Q can be converted to tentative (M1+E2) if level scheme indicates Δπ=no.
+RUL takes precedence over level scheme for this conversion.
+If Δπ is unknown from level scheme or RUL does not rule out M2, keep the original multipolarity assignment with only D and Q labels.</p>
+<hr>
+<h2 id="capture-transitions">Capture Transitions</h2>
+<p>Primary γ transitions from neutron/proton capture resonances are possibly dominated by the lowest multipoles (E1, M1, E2). Higher orders are suppressed.</p>
+<ul>
+<li>D including E1 or M1: ΔJ = 0, 1; Δπ = Yes or No</li>
+<li>E2: ΔJ = 2; Δπ = No</li>
+</ul>
+<h3 id="examples-deducing-jπ-of-a-final-level-from-multipolarity-and-jπ-of-the-initial-level">Examples: Deducing Jπ of a final level from multipolarity and Jπ of the initial level</h3>
+<p>Primary γ transition from 5/2+ Initial via D or E2:</p>
+<ul>
+<li>D {E1, M1}: Final 3/2±, 5/2±, 7/2±</li>
+<li>E2: Final 1/2+, 9/2+</li>
+<li>Combination: 1/2+, 3/2±, 5/2±, 7/2±, 9/2+</li>
+</ul>
+<p>Primary γ transition from 7/2- Initial via D or E2:</p>
+<ul>
+<li>D {E1, M1}: Final 5/2±, 7/2±, 9/2±</li>
+<li>E2: Final 3/2-, 11/2-</li>
+<li>Combination: 3/2-, 5/2±, 7/2±, 9/2±, 11/2-</li>
+</ul>
+<p>If two primary γ transitions from 5/2+ and 7/2-, the &quot;AND&quot; intersection of the above two sets:</p>
+<ul>
+<li>Jπ of the final level: 3/2-, 5/2±, 7/2±, 9/2+</li>
+</ul>
+<p>Considering the multipolarity is not directly determined by experimental evidence, the final Jπ is put in parentheses to indicate the assumptions made:</p>
+<ul>
+<li>Adopted: (3/2-, 5/2±, 7/2±, 9/2+)</li>
+</ul>
+<hr>
+<h2 id="spin-and-parity-assignment-reasoning-logic-in-the-adopted-dataset">Spin and Parity Assignment Reasoning Logic in the Adopted Dataset</h2>
+<h3 id="scenario-c-no-angular-distribution-dco-ratios-or-mixing-ratios-given-in-literature">Scenario C: No Angular Distribution DCO Ratios or Mixing Ratios Given in Literature</h3>
+<h4 id="goal-1">Goal</h4>
+<p>Deduce the Jπ of a level by combining constraints from:</p>
+<ul>
+<li><strong>Feeding transitions</strong> — γ rays populating the level (from capture resonances above)</li>
+<li><strong>Deexciting transitions</strong> — γ rays depopulating the level (to lower levels below)</li>
+</ul>
+<hr>
+<h4 id="multipolarity-selection-rules">Multipolarity Selection Rules</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Transition Type</th>
+<th style="text-align:left">Apply</th>
+<th style="text-align:left">Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Primary feeding γ</strong> (from resonances)</td>
+<td style="text-align:left"><strong>D or E2</strong></td>
+<td style="text-align:left">Always</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Deexciting γ</strong> (decay to lower levels)</td>
+<td style="text-align:left"><strong>D or Q</strong></td>
+<td style="text-align:left">Long or unknown lifetime</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Deexciting γ</strong> (decay to lower levels)</td>
+<td style="text-align:left"><strong>D or E2</strong></td>
+<td style="text-align:left">Short lifetime (RUL applies: M2 ruled out)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: Primary γ = capture transition from neutron/proton resonance</em></p>
+<hr>
+<h4 id="workflow-algorithm">Workflow Algorithm</h4>
+<pre><code>FOR each feeding γ:
+    Apply D or E2 selection rules
+    IF feeding level has multi-valued Jπ (e.g., 1/2+,3/2+):
+        Calculate allowed Jπ for EACH value separately
+        Take OR (union) of results
+    ENDIF
+ENDFOR
+
+FOR each deexciting γ:
+    IF lifetime is short (RUL applies):
+        Apply D or E2 selection rules
+    ELSE:
+        Apply D or Q selection rules
+    ENDIF
+ENDFOR
+
+Take AND (intersection) of ALL constraints above
+
+RESULT: Common Jπ values → Put in parentheses to indicate tentative assignment
+</code></pre>
+<p><em>Parentheses in ENSDF denote tentative assignments based on assumed multipolarities</em></p>
+<h4 id="example-1-fed-by-primary-γ-from-72--72-and-52">Example 1: Fed by primary γ from 7/2-, 7/2+, and 5/2+</h4>
+<p>Fed by primary γ from 7/2- (D or E2):
+3/2-, 5/2±, 7/2±, 9/2±, 11/2-</p>
+<p>Fed by primary γ from 7/2+ (D or E2):
+3/2+, 5/2±, 7/2±, 9/2±, 11/2+</p>
+<p>Fed by primary γ from 5/2+ (D or E2):
+1/2+, 3/2±, 5/2±, 7/2±, 9/2+</p>
+<p><strong>AND:</strong> 5/2±, 7/2±, 9/2+</p>
+<p>Adopted: (5/2±, 7/2±, 9/2+)</p>
+<h4 id="example-2-fed-by-primary-γ-from-52--decay-γ-to-12-and-52-lifetime-short-rul-applies-m2-ruled-out">Example 2: Fed by primary γ from 5/2-. Decay γ to 1/2+ and 5/2+ (Lifetime short, RUL applies, M2 ruled out)</h4>
+<p>Fed by primary γ (D or E2):
+1/2-, 3/2±, 5/2±, 7/2±, 9/2-</p>
+<p>Decay γ to 1/2+ (D or E2):
+1/2±, 3/2±, 5/2+</p>
+<p>Decay γ to 5/2+ (D or E2):
+1/2+, 3/2±, 5/2±, 7/2±, 9/2+</p>
+<p><strong>AND:</strong> 3/2±, 5/2+</p>
+<p>Adopted: (3/2±, 5/2+)</p>
+<h4 id="example-3-fed-by-primary-γ-from-72-decay-γ-to-52-lifetime-unknown-rul-does-not-apply-m2-allowed">Example 3: Fed by primary γ from 7/2+. Decay γ to 5/2+ (Lifetime unknown, RUL does not apply, M2 allowed)</h4>
+<p>Fed by primary γ (D or E2):
+3/2+, 5/2±, 7/2±, 9/2±, 11/2+</p>
+<p>Decay γ to 5/2+ (D or Q):
+1/2±, 3/2±, 5/2±, 7/2±, 9/2±</p>
+<p><strong>AND:</strong> 3/2+, 5/2±, 7/2±, 9/2±</p>
+<p>Adopted: (3/2+, 5/2±, 7/2±, 9/2±)</p>
+<h4 id="example-4-fed-by-primary-γ-from-1232-multi-valued-initial-decay-γ-to-12-and-32-lifetime-short-rul-applies-m2-ruled-out">Example 4: Fed by primary γ from 1/2+,3/2+ (multi-valued initial). Decay γ to 1/2+ and 3/2+ (Lifetime short, RUL applies, M2 ruled out)</h4>
+<p>Fed by primary γ from <strong>1/2+,3/2+</strong> (D or E2):</p>
+<ul>
+<li>From 1/2+ via D or E2: 1/2±, 3/2±, 5/2+</li>
+<li>From 3/2+ via D or E2: 1/2±, 3/2±, 5/2±, 7/2+</li>
+<li><strong>OR (union):</strong> 1/2±, 3/2±, 5/2±, 7/2+</li>
+</ul>
+<p>Decay γ to 1/2+ (D or E2):
+1/2±, 3/2±, 5/2+</p>
+<p>Decay γ to 3/2+ (D or E2):
+1/2±, 3/2±, 5/2±, 7/2+</p>
+<p><strong>AND:</strong> 1/2±, 3/2±</p>
+<p>Adopted: (1/2,3/2)</p>
+<p><em>Note: When initial level has multiple J-π values (e.g., 1/2+,3/2+), calculate allowed final states for EACH initial value separately, then take OR (union) before applying AND with other constraints.</em></p>
+<hr>
+<h4 id="cl-j-comment-style-rules">cL J$ Comment Style Rules</h4>
+<p>When writing primary transition lists in <code>cL J$</code> comments:</p>
+<ol>
+<li>For primary transitions used to deduce Jπ of a level, do not use weak γ rays (Iγ &lt; 5), γ rays with upper-limit intensity (<code>LT</code> in the <code>DRI</code> field), γ rays with questionable placement (<code>?</code> in col 80), or γ rays to final levels with uncertain or multi-valued Jπ.</li>
+<li>List transitions in descending order of intensity, with the strongest first, to reflect the most probable deexcitation paths. If there are γ transitions to final levels with the same Jπ, include only the strongest one for that Jπ, as this is sufficient for Jπ deduction.</li>
+<li>Example for one γ transition: <code>cL J$primary transition &lt;E_gamma1&gt;|g to &lt;Jπ1&gt; g.s.</code></li>
+<li>Example for multiple γ transitions: <code>cL J$primary transitions: &lt;E_gamma1&gt;|g to &lt;Jπ1&gt; g.s., &lt;E_gamma2&gt;|g to &lt;Jπ2&gt;, &lt;E_level2&gt;, and &lt;E_gamma3&gt;|g to &lt;Jπ3&gt;, &lt;E_level3&gt;.</code> Or, with specified intensities: <code>cL J$primary transitions with I|g&gt;10: &lt;E_gamma1&gt;|g to &lt;Jπ1&gt; &lt;E_level1&gt; and &lt;E_gamma2&gt;|g to &lt;Jπ2&gt;, &lt;E_level2&gt;.</code> Or, with specified multipolarities: <code>cL J$primary transitions: &lt;E_gamma1&gt;|g, D(+Q), to &lt;Jπ1&gt;, &lt;E_level1&gt; and &lt;E_gamma2&gt;|g, D(+Q), to &lt;Jπ2&gt;, &lt;E_level2&gt;.</code></li>
+<li>Use Oxford comma style in multi-transition lists and keep existing other Jπ arguments. Example: <code>cL J$spin=1:4 from |g(|q) in {+33}S(p,|g). Primary transitions: 4328.7|g to 2+, 2157.9 level, 6486.2|g to 0+ g.s., and 6025.3|g to 1+, 461.01 level.</code></li>
+</ol>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>
