@@ -169,9 +169,9 @@ If D(+Q) is firm, the corresponding converted form is M1(+E2). The same logic ap
 | D+Q          | DCO stretched D with δ<1         | (E1+M2)   | Δπ=yes from level scheme | D+Q, ΔJ=1                      |
 | D(+Q)        | DCO stretched D with δ≈0         | (M1(+E2)) | Δπ=no from level scheme  | D(+Q), ΔJ=1                    |
 | D(+Q)        | DCO stretched D with δ≈0         | (E1(+M2)) | Δπ=yes from level scheme | D(+Q), ΔJ=1                    |
-| D+Q          | DCO stretched Q with δ>1         | M1+E2     | M2 ruled out by RUL      | M1+E2, ΔJ=0,1, Δπ=no           |
-| D+Q          | DCO stretched Q with δ>1         | (M1+E2)   | Δπ=no from level scheme  | D+Q, ΔJ=0,1                    |
-| D+Q          | DCO stretched Q with δ>1         | (E1+M2)   | Δπ=yes from level scheme | D+Q, ΔJ=0,1                    |
+| D+Q          | DCO seems like Q with δ>1        | M1+E2     | M2 ruled out by RUL      | M1+E2, ΔJ=0,1, Δπ=no           |
+| D+Q          | DCO seems like Q with δ>1        | (M1+E2)   | Δπ=no from level scheme  | D+Q, ΔJ=0,1                    |
+| D+Q          | DCO seems like Q with δ>1        | (E1+M2)   | Δπ=yes from level scheme | D+Q, ΔJ=0,1                    |
 | D+Q          | DCO consistent with ΔJ=0 and δ<1 | M1+E2     | M2 ruled out by RUL      | M1+E2, Δπ=no, Avoid using ΔJ=0 |
 | D+Q          | DCO consistent with ΔJ=0 and δ<1 | (M1+E2)   | Δπ=no from level scheme  | Avoid using ΔJ=0               |
 | D+Q          | DCO consistent with ΔJ=0 and δ<1 | (E1+M2)   | Δπ=yes from level scheme | Avoid using ΔJ=0               |
