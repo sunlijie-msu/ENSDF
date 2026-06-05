@@ -158,12 +158,12 @@ If D(+Q) is firm, the corresponding converted form is M1(+E2). The same logic ap
 
 ### Conversion Decision Table
 
-| Individual G | Measurement                      | Adopted G | cG M$comment             | cL J$comment                   |
+| Individual G | Measurement                      | Adopted G | For G record M field     | For L record Jπ field          |
 | ------------ | -------------------------------- | --------- | ------------------------ | ------------------------------ |
-| M1+E2        | DCO stretched D, POL             | M1+E2     |                          | M1+E2, ΔJ=1, Δπ=no             |
-| M1(+E2)      | DCO stretched D, POL             | M1(+E2)   |                          | M1(+E2), ΔJ=1, Δπ=no           |
-| E1+M2        | DCO stretched D, POL             | E1+M2     |                          | E1+M2, ΔJ=1, Δπ=yes            |
-| E1(+M2)      | DCO stretched D, POL             | E1(+M2)   |                          | E1(+M2), ΔJ=1, Δπ=yes          |
+| M1+E2        | DCO stretched D, POL, w/wo δ     | M1+E2     |                          | M1+E2, ΔJ=1, Δπ=no             |
+| M1(+E2)      | DCO stretched D, POL, w/wo δ     | M1(+E2)   |                          | M1(+E2), ΔJ=1, Δπ=no           |
+| E1+M2        | DCO stretched D, POL, w/wo δ     | E1+M2     |                          | E1+M2, ΔJ=1, Δπ=yes            |
+| E1(+M2)      | DCO stretched D, POL, w/wo δ     | E1(+M2)   |                          | E1(+M2), ΔJ=1, Δπ=yes          |
 | D+Q          | DCO stretched D with δ<1         | M1+E2     | M2 ruled out by RUL      | M1+E2, ΔJ=1, Δπ=no             |
 | D+Q          | DCO stretched D with δ<1         | (M1+E2)   | Δπ=no from level scheme  | D+Q, ΔJ=1                      |
 | D+Q          | DCO stretched D with δ<1         | (E1+M2)   | Δπ=yes from level scheme | D+Q, ΔJ=1                      |
