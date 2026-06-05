@@ -4,7 +4,7 @@ description: >
   Use this skill when deducing multipolarities for gamma transitions and then Jπ for nuclear levels by combining constraints
   from feeding and deexciting gamma transitions using electromagnetic
   selection rules. Applies D/E2 rules to primary capture transitions,
-  D/Q or D/E2 to deexciting gammas (lifetime-dependent), and takes AND
+  D/Q or D/E2 to deexciting gammas (if RUL applys), and takes AND
   intersection of all constraints. Handles multi-valued initial Jπ via
   union before intersection.
 ---
