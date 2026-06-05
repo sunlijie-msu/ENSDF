@@ -1,7 +1,7 @@
 ---
 name: gamma-selection-rules
 description: >
-  Use this skill when deducing nuclear level Jπ by combining constraints
+  Use this skill when deducing multipolarities for gamma transitions and then Jπ for nuclear levels by combining constraints
   from feeding and deexciting gamma transitions using electromagnetic
   selection rules. Applies D/E2 rules to primary capture transitions,
   D/Q or D/E2 to deexciting gammas (lifetime-dependent), and takes AND
@@ -119,34 +119,35 @@ Apply these rules based on measured POL to assign electromagnetic character:
 
 ---
 
-## Further Constraining Multipolarity in the Adopted Dataset
+## Multipolarity Assignment Reasoning Logic in the Adopted Dataset
 
 ### Overview
 
-G-record M field multipolarity assignments
-The adopted multipolarity is then used to deduce Jπ of levels.
+To further constrain G-record M field multipolarities
+
+The adopted multipolarities are then used to deduce L-record Jπ field spins and parities for the levels.
 
 ### Assignment Patterns
 
 Assigning M1+E2 or (M1+E2) in G-record M field:
 
-Assign firm M1+E2 directly based on DCO/ADO and POL data:
+1) Assign firm M1+E2 directly based on DCO/ADO and POL data and cG comment should refer to the specific dataset used for this assignment.
 cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.
 
-Assign firm M1+E2 based on D+Q from |g(|q)/DCO without POL, and the level lifetime is short:
+2) Assign firm M1+E2 based on D+Q from |g(|q)/DCO without POL or from |g(|q), and the level lifetime is short. cG comment should refer to the specific dataset used for this assignment and note that M2 is ruled out by RUL.
 cG M$D+Q from |g(|q) in dataset. M2 ruled out by RUL.
 cG M$D+Q from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.
 
-Use firm M1+E2 in cL J comments to deduce J|p:
-<G-energy>|g, M1+E2, to <Jπ>, <L-energy> level
+M1+E2 can be used in cL J comments to deduce J|p:
+cL J$<G-energy>|g, M1+E2, to <Jπ>, <L-energy> level
 cG M$D+Q from |g(|q) in dataset. M2 ruled out by RUL.
 
-Use firm M1+E2, |DJ=1 in cL J comments to deduce J|p:
+M1+E2, |DJ=1, can be used in cL J comments to deduce J|p:
 <G-energy>|g, M1+E2, |DJ=1 to <Jπ>, <L-energy> level
 cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.
 cG M$D+Q from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.
 
-Assign tentative (M1+E2) based on firm D+Q and level scheme info.
+3) Assign tentative (M1+E2) based on firm D+Q and level scheme info.
 cG M$D+Q from |g(|q) in dataset. |D|p=no from level scheme.
 cG M$D+Q from |g|g(|q)(DCO) in dataset. |D|p=no from level scheme.
 
@@ -187,7 +188,7 @@ The same logic applies to assigning and using E1+M2.
 If lifetime is available and rules out M2 by RUL, then D+Q can be converted to firm M1+E2.
 If RUL does not rule out M2, then D+Q can be converted to tentative (M1+E2) if level scheme indicates Δπ=no.
 RUL takes precedence over level scheme for this conversion.
-If Δπ is unknown from level scheme or RUL does not rule out M2, keep the original multipolarity assignment.
+If Δπ is unknown from level scheme or RUL does not rule out M2, keep the original multipolarity assignment with only D and Q labels.
 
 ---
 
@@ -218,7 +219,7 @@ Considering the multipolarity is not directly determined by experimental evidenc
 
 ---
 
-## Combining Jπ Constraints Logic
+## Spin and Parity Assignment Reasoning Logic in the Adopted Dataset
 
 ### Scenario C: No Angular Distribution DCO Ratios or Mixing Ratios Given in Literature
 
