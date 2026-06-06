@@ -20,7 +20,11 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 ### 1. ENSDF Notation
 - **Superscript/subscript:** Symbol outside braces. Wrong: `{+13C}` → Correct: `{+13}C`. Detection regex (correct form): `{+[0-9]+}[A-Z][a-z]?`
 - **Plain isotope tokens:** Wrong: `3He`, `36S(d,3He)` → Correct: `{+3}He`, `{+36}S(d,{+3}He)`. Scan: `(?<!\{\+)\b\d{1,3}[A-Z][a-z]?\b`; keep valid element symbols; exclude tokens followed by `|` (e.g., `2I|g`). **Mandatory:** after the regex scan, manually review every remaining candidate — regex misses tokens in dense prose.
-- **Uncertainty notation:** Use `{In}`. Wrong: `1234(5) keV`, `36(4)-mg/cm{+2}` → Correct: `1234 keV {I5}`, `36-mg/cm{+2} {I4}`.
+- **Missing `{I}` on uncertainty:** Comment uncertainties require `{In}` or `{I+n-m}`. Three patterns:
+  - Parentheses: `124(5) ps` → `124 ps {I5}`.
+  - Bare `I` prefix: `|d=+0.05 I5` → `|d=+0.05 {I5}`.
+  - Bare number (no `I`): `A{-2}=+0.05 5` → `A{-2}=+0.05 {I5}`.
+  Scan for bare `I`: `\bI\d{1,3}\b` near values. Scan for bare numbers: lone 1-3 digit integers after `=` or after a value with space, where context suggests uncertainty.
 - **Unicode leakage:** No raw Unicode glyphs. Wrong: `μ`, `×`, `β`, `γ`, `θ`, `≈`, `≤`, `≥` → Correct: `|m`, `|*`, `|b`, `|g`, `|q`, `|?`, `|<`, `|>`. Example: `1500-μm-thick` → `1500-|mm-thick`.
 - **Mixed symbol-text:** Wrong: `γ-ray`, `μm`, `β-delayed` → Correct: `|g-ray`, `|mm`, `|b-delayed`.
 - **Leaked record tags:** Scan cols 10-80 for spurious ` cL `, ` cG `, ` L `, ` G ` (copy-paste artifact).
