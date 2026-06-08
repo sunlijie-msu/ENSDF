@@ -43,6 +43,17 @@ When user requests code `Java_Average.py` for calculating averages, follow these
 - Never substitute weighted/unweighted averages contrary to Java's recommendation
 
 
+## Minimum Uncertainty Rule
+
+**ENSDF-Specific Requirement:** Adopted uncertainty ≥ any individual input uncertainty.
+
+**Rationale:** Prevents averaging from artificially reducing systematic uncertainty below best single measurement. Maintains conservative uncertainty estimates in nuclear data evaluation. Java_Average.py automatically enforces this.
+
+- **Statistical avg < min input uncertainty** → Adopted = min input uncertainty
+- **Statistical avg ≥ min input uncertainty** → Adopted = statistical average
+
+**Example:** Averaging 665.56±0.05 and 665.6±0.1 yields statistical uncertainty 0.0447, but adopted uncertainty becomes 0.05 (matches smallest input).
+
 ## Gotchas
 
 - **`[critical=X]` is display-only.** The tool decides Weighted vs. Unweighted using a hardcoded threshold of 3.5, not the displayed chi² critical value.
