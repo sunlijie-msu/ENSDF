@@ -37,7 +37,7 @@ Deduce the Jπ of levels by combining constraints from:
 
 *   Gating on a stretched dipole ($\Delta J = 1$) transition yields $R_{DCO}(D)$.
 *   Gating on a stretched quadrupole ($\Delta J = 2$) transition yields $R_{DCO}(Q)$.
-*   Expected DCO values depend on experimental detection setups.
+*   Expected DCO values depend on experimental detection setups. The values below are for example purposes.
 
 ##### DCO Decision Rules
 
