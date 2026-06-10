@@ -8,5 +8,13 @@
 		{
 			"path": "../../ENSDF"
 		}
-	]
+	],
+	"settings": {
+		"chat.plugins.enabled": true,
+		"chat.agentSkillsLocations": {
+			"~/.copilot/skills": false,
+			"~/.agents/skills": false,
+			"~/.claude/skills": false
+		}
+	}
 }
