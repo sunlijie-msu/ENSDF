@@ -10,6 +10,7 @@ Use this skill when checking or writing delayed proton, beta minus, electron cap
 ## Record Standards
 
 ### Delayed Proton Emission Record (DP-Record)
+Delayed Neutron Emission Record (DN-Record) is similar.
 
 ```text
 Example:
