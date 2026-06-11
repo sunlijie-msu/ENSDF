@@ -10,7 +10,6 @@ Use this skill when checking or writing delayed proton, beta minus, electron cap
 ## Record Standards
 
 ### Delayed Proton Emission Record (DP-Record)
-Delayed Neutron Emission Record (DN-Record) is similar.
 
 ```text
 Example:
@@ -19,23 +18,24 @@ Example:
  35CL  DP 501      10 3.5    12 9022                                            
 ```
 
-| Field | Columns | Description                        |
-| :---- | :------ | :--------------------------------- |
-| NUCID | 1–5     | Nucleus (e.g., " 35Cl" or " 35P ") |
-| CONT  | 6       | Continuation label (blank)         |
-| SPACE | 7       | Must be blank                      |
-| D     | 8       | "D" for delayed particle           |
-| P     | 9       | "P" for proton                     |
-| SPACE | 10      | Readability space                  |
-| EP    | 11–19   | Proton energy in keV               |
-| DE    | 20–21   | Energy uncertainty                 |
-| SPACE | 22      | Readability space                  |
-| IP    | 23–29   | Proton intensity in percent        |
-| DIP   | 30–31   | Uncertainty in IP                  |
-| SPACE | 32      | Readability space                  |
-| EI    | 33–39   | Energy of emitting level in keV    |
+| Field | Columns | Description                            |
+| :---- | :------ | :------------------------------------- |
+| NUCID | 1–5     | Nucleus (e.g., " 35Cl" or " 35P ")     |
+| CONT  | 6       | Continuation label (blank)             |
+| SPACE | 7       | Must be blank                          |
+| D     | 8       | "D" for delayed particle               |
+| P     | 9       | "P" for proton                         |
+| SPACE | 10      | Readability space                      |
+| EP    | 11–19   | Proton energy in keV                   |
+| DE    | 20–21   | Energy uncertainty                     |
+| SPACE | 22      | Readability space                      |
+| IP    | 23–29   | Proton intensity in percent            |
+| DIP   | 30–31   | Uncertainty in IP                      |
+| SPACE | 32      | Readability space                      |
+| EI    | 33–39   | Energy of proton-emitting level in keV |
 
 **Critical DP Format Rules:**
+- Delayed Neutron Emission Record (DN-Record), Delayed Alpha Emission Record (DA-Record), Delayed Deuteron Emission Record (DD-Record), and Delayed Triton Emission Record (DT-Record) follow the same format as DP-Records, with "D" in column 8 and "N", "A", "D", or "T" in column 9, respectively.
 - Readable spaces at columns 10, 22, and 32 for human readability.
 - All field positioning follows standard ENSDF left-justification rules.
 
