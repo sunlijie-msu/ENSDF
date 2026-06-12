@@ -16,7 +16,7 @@ The following formulas calculate the **absolute intensity** (per 100 decays of t
 
 1.  **Absolute Photon Intensity ($I_\gamma$):**
     $$I_\gamma (\text{abs}) = RI \times (NR \times BR)$$
-    *(Note: $NR \times BR$ is the combined multiplier found in the P-record.)*
+    *(Note: $NR \times BR$ is the combined multiplier found in the PN-record.)*
 
 2.  **Absolute Total Transition Intensity ($I_{tot}$):**
     $$I_{tot} (\text{abs}) = TI \times (NT \times BR)$$
