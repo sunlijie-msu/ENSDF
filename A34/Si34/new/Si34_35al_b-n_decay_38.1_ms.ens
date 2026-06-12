@@ -2,6 +2,7 @@
  34SI  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34SI  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34SI2 H CUT=28-May-2012$                                                       
+ 34SI dL E$Least-squares fitting is done by GLSC (version 01-Jun-2026)          
  34AL c  2019Wa38: a 69.2-MeV/nucleon {+40}Ar primary beam was produced by the  
  34AL2c  Sector Focusing Cyclotron and Separated Sector Cyclotron at the Heavy  
  34AL3c  Ion Research Facility in Lanzhou (HIRFL). The secondary beam containing
@@ -40,7 +41,8 @@
  34SI8c  |g|g-coin, |bn-coin. Deduced the decay scheme consisting of {+35}Si and
  34SI9c  {+34}Si levels, {+35}Al T{-1/2}, decay branching ratios, log {Ift}, and
  34SIAc  |b-delayed neutron emission probability. Comparisons with shell-model  
- 34SIBc  calculations.                                                          
+ 34SIBc  calculations. No evidence was found for any A=33 activity and 2n       
+ 34SICc  emission was thus found negligible.                                    
  34SI c  Other experimental studies on {+35}Al T{-1/2} and |b-delayed neutron   
  34SI2c  emission probability: 2019Wa38, 2017Ha23, 1999YoZW, 1995ReZZ/2008ReZZ, 
  34SI3c  1989MuZU, 1989Le16, 1988MuZY, 1988Mu08, 1988DuZT, 1988BaYZ, 1987DuZU,  
@@ -48,6 +50,7 @@
  34SI c  Theoretical studies involving {+35}Al decay: 2018Yo06, 2013Li39        
  34SI cG E$From 2001Nu01.                                                       
  34SI cG RI$From 2005Ti11, absolute values                                      
+ 34SI cL E$From a least-squares fit to |g-ray energies.                         
  34SI cL J$From Adopted Levels                                                  
  34SI cDN$Neutron transitions in 2019Wa38 are placed by evaluators based on the 
  34SI2cDN similarity of the neutron energy spectra of Fig. 5 of 2019Wa38 to Fig.
@@ -65,8 +68,8 @@
  35AL  P 0            (5/2)+           38.1 MS   4              11697     7     
  35AL cP J,T$From the Adopted Levels of {+35}Al (2026SuAA).                     
  35AL cP QP$From 2021Wa16.                                                      
- 34SI  N 2.64                  0.37    3               1.0                      
- 34SI cN NR$Based on data from 2005Ti01                                         
+ 34SI  N 2.70      22          0.37    3               1.0                      
+ 34SI cN NR$From 100/%|b{+-}n.                                                  
  34SI cN BR$%|b{+-}n=37 {I3}: weighted average of 40 {I2} (2005Ti11,2006AnZW),  
  34SI2cN 41 {I13} (2001Nu01,2002Nu02), 26 {I4} (1995ReZZ,2008ReZZ), and 40 {I10}
  34SI3cN (1989Le16,1989MuZU). Others: 43 {I9} (1999YoZW, preliminary), 87       
@@ -78,8 +81,6 @@
  34SI9cN %|b{+-}n value, as the authors state that these levels are fed by      
  34SIAcN either neutrons with energy below their detection threshold or by weak 
  34SIBcN transitions that cannot be identified in the neutron spectrum.         
- 35AL cL $%|b{+-}2n: No evidence was found for any A=33 activity and 2n emission
- 35AL2cL was thus found negligible (2001Nu01).                                  
  34SI PN                                                                     3  
  34SI  L 0            0+                                                        
  34SI  DN 640      10 3.3    2  3140                                            
@@ -100,8 +101,8 @@
  34SI cDNE$weighted average of 3850 {I240} from 2019Wa38 short neutron wall and 
  34SI2cDN 3840 {I40} from 2019Wa38 long neutron wall. Other: 3746 from 2005Ti11.
  34SI cDNIP$6.8 {I3} for the neutron branches to g.s. and 3326.96 level.        
- 34SI  L 3326.96   20 2+                                                        
- 34SI  DN 510      10 7.1    LT 6330
+ 34SI  L 3327.1    7  2+                                                        
+ 34SI  DN 510      10 7.1    LT 6330                                            
  34SI cDNE$from 2019Wa38 short neutron wall. Other: 515 from 2005Ti11.          
  34SI cDNIP$6.8 {I3} for the neutron branches to g.s. and 3326.96 level.        
  34SI  DN 1685     40 2.6    2  7360                                            
@@ -111,16 +112,20 @@
  34SI cDNE$weighted average of 2030 {I70} from 2019Wa38 short neutron wall and  
  34SI2cDN 2020 {I90} from 2019Wa38 long neutron wall. Other: 1836 from 2005Ti11.
  34SI  G 3326.96   70 5.5    11 [E2]                                            
+ 34SI2 G %IG=5.5 13                                                             
  34SI cG RI$18 {I4} (2001Nu01) relative to 100 for 64.0|g from {+35}Al decay;   
  34SI2cG absolute intensity=8.1 {I18}                                           
- 34SI  L 4256.1    5  (3-)                                                      
+ 34SI  L 4256.3    8  (3-)                                                      
  34SI  DN             1.1    8                                                  
  34SI  G 929.12    40 2.0    8                                                  
+ 34SI2 G %IG=2.0 8                                                              
  34SI cG RI$5.8 {I13} (2001Nu01) relative to 100 for 64.0|g from {+35}Al decay; 
  34SI2cG absolute intensity=2.6 {I6}                                            
- 34SI  L 4380.3    5  (3-)                                                      
+ 34SI  L 4380.5    9  (3-)                                                      
  34SI  DN             0.9    2                                                  
  34SI  G 124.20    30 0.9    2 [M1+E2]                  0.025 23                
  34SIS G KC=0.023 22 $ LC=0.0017 16                                             
+ 34SI2 G %IG=0.90 23                                                            
  34SI cG RI$2.5 {I9} (2001Nu01) relative to 100 for 64.0|g from {+35}Al decay;  
  34SI2cG absolute intensity=1.1 {I4}                                            
+
