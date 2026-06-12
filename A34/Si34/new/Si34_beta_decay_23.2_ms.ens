@@ -1,111 +1,98 @@
- 34SI    34AL B- DECAY (54.0 MS)       2001NU01                  ENSDF    202609
+ 34SI    34AL B- DECAY (23.2 MS)       2019LI41,2017HA23         ENSDF    202609
  34SI  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34SI  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34SI2 H CUT=28-May-2012$                                                       
- 34AL c  2017Ha23, 2017Ha34: a 69.2-MeV/nucleon {+40}Ar primary beam was        
- 34AL2c  produced by the Sector Focusing Cyclotron and Separated Sector         
- 34AL3c  Cyclotron at the Heavy Ion Research Facility in Lanzhou (HIRFL). The   
- 34AL4c  secondary beam containing {+34}Al was produced via the projectile      
- 34AL5c  fragmentation of {+40}Ca impinging on a 182.6-mg/cm{+2} {+9}Be target  
- 34AL6c  and was selected using |DE-tof-B|r by the Radioactive Ion Beam Line in 
- 34AL7c  Lanzhou (RIBLL). The secondary beam ions were transported into a target
- 34AL8c  chamber filled with low-temperature nitrogen and implanted into a      
- 34AL9c  1500-|mm-thick DSSD sandwiched between two 3000-|mm-thick plastic      
- 34ALAc  scintillators for beam diagnostics and veto, respectively. |g rays were
- 34ALBc  detected using two Ge clover detectors. The fast timing signals of the 
- 34ALCc  |g rays were provided by a lanthanum bromide (LaBr{-3}) detector.      
- 34ALDc  Neutrons were detected using two plastic scintillator arrays. Measured 
- 34ALEc  implant-|b correlation, E|g, I|g, |b|g-coin, |g|g-coin, and |bn-coin.  
- 34ALFc  Deduced levels, J, |p, decay branching ratios, log {Ift}, parent       
- 34ALGc  {+34}Al and {+34}Al isomer T{-1/2}. Comparisons with shell-model       
- 34ALHc  calculations using Gogny D1S and SDPF-M interactions. Also see 2019Wa38
- 34ALIc  for the same experiment with 35Al |b-delayed neutron data.             
- 34SI c  2001Nu01,2002Nu02: a {+34}Al secondary beam at 30 pps was produced via 
- 34SI2c  the fragmentation of a UC target with 1.4-GeV protons at ISOLDE, CERN  
- 34SI3c  with subsequent surface-ionization and mass separation. {+34}Al ions   
- 34SI4c  were collected onto a moving tape. |b particles were detected using a  
- 34SI5c  thin cylindrical plastic scintillator, |g rays were detected using two 
- 34SI6c  Ge detectors, and neutrons were detected using eight low-threshold     
- 34SI7c  plastic scintillators. Measured E|g, I|g, E{-n}, I{-n}, |b|g-coin,     
- 34SI8c  |g|g-coin, |bn-coin. Deduced the decay scheme consisting of {+33}Si and
- 34SI9c  {+34}Si levels, {+34}Al T{-1/2}, decay branching ratios, log {Ift}, and
- 34SIAc  |b-delayed neutron emission probability. Comparisons with shell-model  
- 34SIBc  calculations.                                                          
- 34SI c  Energy balance: total decay energy of 12130 keV {I890} deduced (using  
- 34SI2c  RADLIST code) from proposed decay scheme is much lower than the        
- 34SI3c  expected value of 16910 keV {I62}, indicating that the decay scheme is 
- 34SI4c  incomplete                                                             
- 34SI cB IB$ From |g-ray intensity balance                                      
- 34SI cG E(A)$Placement from 2003Iw02 from {+2}H({+34}Si,{+34}Si'|g)            
- 34SI cL $ A 2133, (0+) level proposed in 2001Nu01 with possible population by  
- 34SI2cL 1193.3-keV transition from 3327, 2+ level is not confirmed by 2003Iw01 
- 34SI3cL who find 1193|g to be in coin with 3327|g. Thus 2133, (0+) is omitted  
- 34SI4cL here                                                                   
- 34SI cL E$From least-squares fit to E|g data                                   
- 34SI cL E(A)$Level proposed in 2003Iw02 from {+2}H({+34}Si,{+34}Si'|g)         
- 34SI cL J$From Adopted Levels                                                  
- 34AL  P 0.0          4-               54.0 MS   10             16994.1   23    
- 34AL cP J,T$From the Adopted Levels of {+34}Al.                                
+ 34SI c  {+34}Al in 1+ isomeric state produced through the |b decay of {+34}Mg. 
+ 34SI2c  {+34}Mg produced through fragmentation of 1.4 GeV proton beam on a     
+ 34SI3c  UC{-x} target at ISOLDE-CERN facility, selectively ionized using the   
+ 34SI4c  Resonance Ionization Laser Ion Source (RILIS) and selected by the      
+ 34SI5c  ISOLDE General Purpose Separator (GPS). Nuclei were implanted on a     
+ 34SI6c  movable tape. Measured E|g, I|g, |g|g, |b|g, |g(t) using five HPGe     
+ 34SI7c  Clover detectors and a 3 cm thick NE102 plastic scintillator.          
+ 34SI cB IB$From |g-ray intensity balance                                       
+ 34SI cL E$From least-squares fit to E|g data, by compiler                      
+ 34SI cL J$As proposed by 2019Li41 based on log {Ift} values and |g ray decay   
+ 34SI2cL patterns.                                                              
+ 34AL  P 46.56     11 1+               23.2 MS   14             16994.1   23    
+ 34AL cP E,J,T$From the Adopted Levels of {+34}Al.                              
  34AL cP QP$From 2021Wa16.                                                      
- 34SI  N  0.51     7           1.0        1.0                                   
- 34SI cN NR$deduced by evaluators from I|g(4257)+I|g(gammas feeding 3327        
- 34SI2cN level)=74 {I4}. Others: 0.55 (2001Nu01), 0.60 {I8} (1989Ba50)          
- 34SI cN BR$%|b{+-}n=26 {i4} (2001Nu01). Others: 27 {i5} (1989Ba50), 54 {i12}   
- 34SI2cN (1988Mu08), 12.5 {i25} (1995ReZZ). Values from 1988Mu08 and 1995ReZZ   
- 34SI3cN are in serious disagreement with that from 2001Nu01                    
+ 34SI  N 0.22      3  0.22   3  1.0       1.0                                   
+ 34SI cN NR$from 2019Li41 from measurement of number of implanted nuclei;       
+ 34SI2cN analysis includes following the decay of daughters {+33}Mg and {+33}Al 
+ 34SI cN BR$%|b{+-}n=11 {I4} (2019Li41)                                         
  34SI PN                                                                     3  
- 34SI  L  0.0           0+                                                      
- 34SI  L 3326.8    15  2+                                                       
- 34SI cL $2001Nu01 proposed that 1193.3|g possibly populates excited 0+ state at
- 34SI2cL 2133 keV. 2002En02 in {+9}Be({+35}Si,{+34}SiX|g) reaction reported an  
- 34SI3cL 1193|g from 3327 level with a branching of about 13%, but 2002Mi44 set 
- 34SI4cL an upper limit of 1% for such a transition in their                    
- 34SI5cL Si({+34}Si,{+34}Si'|g) reaction study. 2003Iw02 observed 1193|g in coin
- 34SI6cL with 3326|g, thus negating the placement of 1193 transition in parallel
- 34SI7cL with 3326 transition as well as the existence of an excited 0+ level at
- 34SI8cL 2133 keV                                                               
- 34SI  B                                                                     1U?
- 34SI cB IB$evaluators obtain -11 {I6}. 2001Nu01 give <12                       
- 34SIS B EAV=6526 31                                                            
- 34SI  G 3326.2    16 100       [E2]                                            
- 34SI dG $ EG=3327.5 5, IG=100 (1989Ba50)                                       
- 34SI  L 4255.8    15  (3-)              210 NS  LT                             
- 34SI cL T$estimated from |b|g(t) (1989Ba50)                                    
- 34SI  B              38     8             4.9   1                              
- 34SIS B EAV=6053 31                                                            
- 34SI cB IB$2001Nu01 list 44 {I4}                                               
- 34SI  G 929.0     3   104   10                                                 
- 34SI dG $ EG=929.5 3, IG=94 8 (1989Ba50)                                       
- 34SI  G 4257      3   24    4   [E3]                                           
- 34SI dG $ EG=4257.1 5, IG=21 4 (1989Ba50)                                      
- 34SI  L 4379.8    15  (3-)                                                     
- 34SI  B              25     5             5.1    1                             
- 34SIS B EAV=5992 31                                                            
- 34SI cB IB$2001Nu01 list 26 {I3}                                               
- 34SI  G 124.2     4  52     4  [M1+E2]                 0.025 23                
- 34SIS G KC=0.023 22$LC=0.0017 16$MC=0.00011 10                                 
- 34SI dG $ EG=125.4 3, IG=43 4 (1989Ba50)                                       
- 34SI  G 1052.8    4  3.9    6                                                  
- 34SI  L 4520.2    15                                                       A  ?
- 34SI  B               3.3   6             5.9    1                            ?
- 34SIS B EAV=5923 31                                                            
- 34SI  G 1193.34   20  6.4   8                                              A  ?
- 34SI cG RI$from |b|g coin (2001Nu01). The authors deduced the intensity as 3.2 
- 34SI2cG {I6} if 1193.3|g populated excited 0+ state at 2133 keV.               
- 34SI  L 4970.7    15 (3-,4-,5-)                                                
- 34SI  B              3.9    7             5.8    1                             
- 34SIS B EAV=5701 31                                                            
- 34SI cB IB$2001Nu01 list 4.2 {I4}                                              
- 34SI  G 590.9     3  7.7    8                                                  
- 34SI  L 5042.3    17                                                       A  ?
- 34SI  B              1.2    3             6.3   1                             ?
- 34SIS B EAV=5665 31                                                            
- 34SI  G  1715.4   8  2.4    4                                              A  ?
- 34SI cG E$this transition was also considered by 2001Nu01 as a possible but    
- 34SI2cG less likely candidate for a transition from 3326.8 keV to an uncertain 
- 34SI3cG 2133, (0+) state. But 2003Iw02 observe 1715|g in coin with 3326|g      
- 34SI  L 6023.3    19                                                       A  ?
- 34SI  B              2.4    7             5.8   1                             ?
- 34SIS B EAV=5181 31                                                            
- 34SI  G  2696.4   12 4.8    10                                             A  ?
+ 34SI  L 0.0          0+                                                        
+ 34SI  B             27      10          5.24    16                             
+ 34SIS B EAV=8194.6 69                                                          
+ 34SI  L 2718.52   10 0+                19.4 NS   5                             
+ 34SI cL T$from |b-E0(t) (2019Li41)                                             
+ 34SI  G 2718.4    1            E0                               168      3     
+ 34SI  B             37      6           4.74    7                              
+ 34SIS B EAV=6856.8 69                                                          
+ 34SI  L 3325.59   6  2+                                                        
+ 34SI  G 3325.4    1  100    3                                                  
+ 34SI  B             7       3           5.37    19                             
+ 34SIS B EAV=6557.0 70                                                          
+ 34SI  L 4254.70   8  3-                                                        
+ 34SI  G 929.1     1  2.6    1                                                  
+ 34SI  G 4254.4    1  0.7    1                                                  
+ 34SI  B             0.1     LT          7.1     GT                             
+ 34SIS B EAV=6099.0 70                                                          
+ 34SI  L 4518.98   7  (2+)                                                      
+ 34SI  G 1193.4    1  36.5   8                                                  
+ 34SI  G 4518.6    1  2.0    1                                                  
+ 34SI  B             4.8     12          5.35    11                            ?
+ 34SIS B EAV=5969.6 70                                                          
+ 34SI  L 5041.49   11 (3-)                                                      
+ 34SI  G 1715.8    1  0.7    1                                                  
+ 34SI  B             0.1     LT          6.9     GT                            ?
+ 34SIS B EAV=5711.7 71                                                          
+ 34SI  L 5348.72   9  (2+)                                                      
+ 34SI  G 2023.1    2  1.0    1                                                  
+ 34SI  G 5348.7    2  1.6    1                                                  
+ 34SI  B             0.1     LT          6.9     GT                             
+ 34SIS B EAV=5559.9 69                                                          
+ 34SI  L 5773.42   8  (2+)                                                      
+ 34SI  G 2447.4    2  2.9    2                                                  
+ 34SI  G 5772.8    2  5.3    2                                                  
+ 34SI  B             0.4     LT          6.2     GT                             
+ 34SIS B EAV=5350.6 70                                                          
+ 34SI  L 6201.69   10                                                           
+ 34SI  G 6201.2    3  2.1    1                                                  
+ 34SI  B             0.1     LT          6.7     GT                             
+ 34SIS B EAV=5139.2 70                                                          
+ 34SI  L 6432.22   9                                                            
+ 34SI  G 230.6     1  0.7    1                                                  
+ 34SI  G 658.7     1  2.1    1                                                  
+ 34SI  G 3106.5    1  6.8    2                                                  
+ 34SI  B             2.1     2           5.36    5                              
+ 34SIS B EAV=5025.4 70                                                          
+ 34SI  L 6676.21   11 (2+)                                                      
+ 34SI  G 2421.4    1  3.3    1                                                  
+ 34SI  G 3350.5    2  1.3    1                                                  
+ 34SI  B             1.0     1           5.64    5                              
+ 34SIS B EAV=4904.8 70                                                          
+ 34SI  L 6764.66   16 (2+)                                                      
+ 34SI  G 1722.9    2  0.6    1                                                  
+ 34SI  G 3439.1    2  0.6    1                                                  
+ 34SI  B             0.26    4           6.20    7                              
+ 34SIS B EAV=4861.2 70                                                          
+ 34SI  L 6964.75   23                                                           
+ 34SI  G 1923.2    2  0.2    1                                                  
+ 34SI  B             0.1     LT          6.6     GT                             
+ 34SIS B EAV=4762.4 70                                                          
+ 34SI  L 7107.05   8                                                            
+ 34SI  G 905.3     1  1.5    1                                                  
+ 34SI  G 1333.6    1  1.3    1                                                  
+ 34SI  G 1758.3    1  1.4    2                                                  
+ 34SI  G 2588.0    1  11.3   4                                                  
+ 34SI  B             3.4     4           5.02    6                              
+ 34SIS B EAV=4692.2 70                                                          
+ 34SI  L 7476.29   8  (0+)                                                      
+ 34SI  G 1702.8    1  4.2    2                                                  
+ 34SI  G 2127.6    1  1.0    1                                                  
+ 34SI  G 2957.1    1  5.6    1                                                  
+ 34SI  G 4150.4    1  14.6   5                                                  
+ 34SI  B             5.6     6           4.72    5                              
+ 34SIS B EAV=4510.0 70                                                          
 
