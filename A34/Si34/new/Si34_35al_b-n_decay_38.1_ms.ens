@@ -1,4 +1,4 @@
- 34SI    35AL B-N DECAY (38.1 MS)      2001NU01,2005TI11         ENSDF    202609
+ 34SI    35AL B-N DECAY (38.1 MS)      2019WA38,2005TI11,2001NU01ENSDF    202609
  34SI  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34SI  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34SI2 H CUT=28-May-2012$                                                       
@@ -50,8 +50,7 @@
  34SI c  Theoretical studies involving {+35}Al decay: 2018Yo06, 2013Li39        
  34SI cG E$From 2001Nu01.                                                       
  34SI cG RI$From 2005Ti11 and 2001Nu01, normalized so I|g for the strongest     
- 34SI2cG branch in each dataset equals 100. Evaluators then take a weighted     
- 34SI3cG average of the two normalized values.                                  
+ 34SI2cG 3327|g equals 100.                                                     
  34SI cL E$From a least-squares fit to |g-ray energies.                         
  34SI cL J$From Adopted Levels                                                  
  34SI cDN$Neutron transitions in 2019Wa38 are placed by evaluators based on the 
@@ -75,8 +74,7 @@
  35AL  P 0            (5/2)+           38.1 MS   4              11697     7     
  35AL cP J,T$From the Adopted Levels of {+35}Al (2026SuAA).                     
  35AL cP QP$From 2021Wa16.                                                      
- 34SI  N 0.055                 0.37    3               1.0                      
- 34SI cN NR$From %I|g(3327)=5.5 {I15} (2001Nu01).                               
+ 34SI  N                       0.37    3               1.0                      
  34SI cN BR$%|b{+-}n=37 {I3}: weighted average of 40 {I2} (2005Ti11,2006AnZW),  
  34SI2cN 41 {I13} (2001Nu01,2002Nu02), 26 {I4} (1995ReZZ,2008ReZZ), and 40 {I10}
  34SI3cN (1989Le16,1989MuZU). Others: 43 {I9} (1999YoZW, preliminary), 87       
@@ -88,7 +86,8 @@
  34SI9cN %|b{+-}n value, as the authors state that these levels are fed by      
  34SIAcN either neutrons with energy below their detection threshold or by weak 
  34SIBcN transitions that cannot be identified in the neutron spectrum.         
- 34SI PN                                                                     5  
+ 34SI PN 0.055                                                               5  
+ 34SI cN NRBR$From %I|g(3327)=5.5 {I15} (2001Nu01).                             
  34SI  L 0            0+                                                        
  34SI  DN 640      10 3.05   19 3129                                            
  34SI cDNE$from 2019Wa38 short neutron wall. Other: 647 from 2005Ti11.          
