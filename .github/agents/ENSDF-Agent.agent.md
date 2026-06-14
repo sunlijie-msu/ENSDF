@@ -105,6 +105,7 @@ Use telegraphic phrasing in comment text.
 ## ENSDF 80-Column Format Standards
 
 **Critical: ENSDF files require exact positioning. One column off lead data rejection.**
+In ENSDF files, columns use 1-based indexing: the first character of a line (letter, number, or space) occupies column 1.
 
 ### ENSDF NUCID Field Format Rules (Columns 1–5)
 
