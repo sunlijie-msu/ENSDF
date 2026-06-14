@@ -7,20 +7,23 @@ import difflib
 
 # ENSDF-Agent Hook: Validate .ens files after edits
 # --------------------------------------------------------
-# PostToolUse event — runs ensdf_1line_ruler.py on any .ens file that was
-# just created or edited by ENSDF-Agent.
+# PostToolUse event — runs two validation passes on any .ens file that was
+# just created or edited by ENSDF-Agent:
+#
+#   PASS 1 (always): ASCII-only check — blocks if any non-ASCII character
+#     found in the .ens file. Applies to ALL edits (data records AND comments).
+#
+#   PASS 2 (data only): 80-column ruler validation via ensdf_1line_ruler.py.
+#     Skipped for comment-only edits (per ENSDF-Agent.agent.md).
 #
 # Key features:
 #   - Handles all VS Code file-editing tool input shapes
-#     (replace_string_in_file, multi_replace_string_in_file, create_file,
-#      apply_patch, edit/editFiles)
 #   - Validates ALL .ens files touched by a single tool call (multi-file)
 #   - Uses hook-provided cwd for robust script path resolution
-#   - Skips validation for comment-only edits (per ENSDF-Agent.agent.md)
 #   - Returns Sacred Workflow guidance on failure
 #
 # Hook event : PostToolUse
-# On failure : decision "block" + Sacred Workflow steps in reason
+# On failure : decision "block" + fix instructions in reason
 # On success : exit 0  (silent)
 
 
@@ -195,6 +198,45 @@ def resolve_path(path, cwd):
     return os.path.normpath(os.path.join(cwd, path))
 
 
+def check_ascii_only(abs_path):
+    """Return list of (line_number, non_ascii_chars) for any line containing non-ASCII."""
+    violations = []
+    try:
+        with open(abs_path, "r", encoding="utf-8") as f:
+            for lineno, line in enumerate(f, 1):
+                non_ascii = [c for c in line if ord(c) > 127]
+                if non_ascii:
+                    violations.append((lineno, line.rstrip("\n"), non_ascii))
+    except Exception:
+        pass
+    return violations
+
+
+def validate_ens_ascii(abs_path):
+    """Check file for non-ASCII characters. Return (is_clean, error_text)."""
+    vios = check_ascii_only(abs_path)
+    if not vios:
+        return True, ""
+    lines = []
+    lines.append(f"ASCII-ONLY VIOLATION in {abs_path}:")
+    lines.append(f"  ENSDF files (.ens) MUST contain only standard ASCII characters.")
+    lines.append(f"  {len(vios)} line(s) with non-ASCII characters found:")
+    for lineno, text, chars in vios[:5]:
+        unique = sorted(set(chars), key=ord)
+        char_list = " ".join(f"U+{ord(c):04X} ({c!r})" for c in unique)
+        snippet = text[:80]
+        lines.append(f"    Line {lineno}: {char_list}")
+        lines.append(f"      {snippet}")
+    if len(vios) > 5:
+        lines.append(f"    ... and {len(vios)-5} more line(s)")
+    lines.append("")
+    lines.append("  Fix: Replace non-ASCII characters with ASCII equivalents:")
+    lines.append("    Unicode minus (U+2212) -> ASCII hyphen-minus (-)")
+    lines.append("    Unicode asterisk (U+2217) -> ASCII asterisk (*)")
+    lines.append("    Degree symbol (U+00B0) -> |' (ENSDF degree notation)")
+    return False, "\n".join(lines)
+
+
 def main():
     payload = load_input()
 
@@ -204,13 +246,40 @@ def main():
         emit({})
         return
 
-    # Per ENSDF-Agent.agent.md: skip validation for comment-only edits
+    # ===== PASS 1: ASCII-only validation (ALWAYS — data records AND comments) =====
+    # Non-ASCII characters are forbidden in .ens files regardless of record type.
+    cwd = payload.get("cwd", "") or os.getcwd()
+    ascii_errors = []
+    for path in ens_paths:
+        abs_path = resolve_path(path, cwd)
+        if not os.path.isfile(abs_path):
+            continue
+        clean, err = validate_ens_ascii(abs_path)
+        if not clean:
+            ascii_errors.append(err)
+
+    if ascii_errors:
+        error_text = "\n\n".join(ascii_errors)
+        emit({
+            "decision": "block",
+            "reason": (
+                "ENSDF ASCII-only violation. .ens files must use standard ASCII.\n\n"
+                f"{error_text}"
+            ),
+            "hookSpecificOutput": {
+                "hookEventName": "PostToolUse",
+                "additionalContext": f"ASCII validation FAILED:\n{error_text}",
+            },
+        })
+        return
+
+    # ===== PASS 2: 80-column ruler validation (DATA RECORDS ONLY) =====
+    # Comments have no strict column requirements — skip for comment-only edits.
     if comment_only_edit(payload):
         emit({})
         return
 
     ruler_script = find_ruler_script(payload)
-    cwd = payload.get("cwd", "") or os.getcwd()
 
     all_errors = []
     for path in ens_paths:

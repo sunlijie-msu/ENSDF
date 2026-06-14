@@ -111,6 +111,8 @@ Before creating any new file, script, or performing major operations:
 
 ### Essential Formatting Rules
 
+Use only standard ASCII characters.
+
 ENSDF uses a fixed-width record model of exactly 80 columns, analogous to Fortran 77 fixed-form layout. Each column has a defined purpose, and content must not extend beyond the defined column limits.
 
 In ENSDF files, columns use 1-based indexing: the first character of a line (letter, number, or space) occupies column 1.
