@@ -20,10 +20,12 @@ The reduced $\chi^2$ dictates which average and uncertainty must be adopted. The
 *   **Action:** Adopt the **Weighted Average**, but adopt the larger **External Uncertainty**.
 
 ### Zone 3: Severe Discrepancy ($\chi^2/\nu > \chi^2_{crit}$)
-*   **Meaning:** Reported errors are fundamentally unreliable. The dataset is broken.
-*   **Action:** The raw weighted average is **invalid**. You must intervene:
-    1.  **LRSW Protocol:** Artificially inflate the uncertainty of the most precise value until its relative weight is $\le 50\%$, then recalculate.
-    2.  **Unweighted Average:** If the dataset remains discrepant, abandon weighting entirely and adopt the unweighted average.
+*   **Meaning:** The dataset is statistically inconsistent. Individual uncertainties are likely underestimated or influenced by unrecognized systematic effects, rendering the raw weighted average invalid.
+*   **Actions:** Evaluators must implement a specialized intervention to mitigate the influence of discrepant data:
+    1.  **Limitation of Relative Statistical Weight (LRSW):** The most common ENSDF protocol. The uncertainty of the most precise measurement is increased until its relative weight is capped at 50%.
+    2.  **Normalized Residuals Method (NRM):** An iterative procedure that adjusts the uncertainties of measurements with large residuals until the reduced $\chi^2$ approximately equals unity.
+    3.  **Rajeval Technique:** A three-stage statistical method that identifies discrepant measurements and adjusts their uncertainties based on their deviation from the population mean.
+    4.  **Unweighted Average (UWA):** A conservative fallback utilized when the reported uncertainties are considered fundamentally unreliable or when more complex techniques fail to resolve the discrepancy.
 
 ## 4. Universal Procedural Rules
 *   **Degrees of Freedom ($\nu$):** For averaging $N$ independent measurements, $\nu = N - 1$.
