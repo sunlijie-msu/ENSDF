@@ -38,7 +38,8 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
   - Record-specific comments **with** field identifier (`cL E$`, `cL J$`, `cL T$`, `cG E$`, `cG RI$`, `cG M$`, etc.) → lowercase, unless first token is numeral, symbol, isotope token, or acronym.
   - Record-specific comments **without** field identifier (`cL $`, `cG $`) → uppercase (standalone statements).
   - **Exception:** `cP` and `cN` comments always uppercase.
-  - Examples: `cL T$from lifetime ...` ✓; `cL E$From a least-squares fit ...` (top-block) ✓; `cL $Possible mirror level...` ✓; `cP J,T$From ...` ✓; `cN BR$Experimental ...` ✓.
+  - Examples (top-block, before first L/G/E/B/DP record): `cL E$From a least-squares fit` ✓; `cG E,RI$From 2017Li03` ✓; `cB IB,LOGFT$From I(|g+ce)` ✓ — all uppercase.
+  - Examples (record-specific, after first data record): `cL T$from lifetime measurement` ✓ (lowercase continuation); `cL J$from the Adopted Levels` ✓; `cL J$1+ from shell model` ✓ (numeral exception).
 - **NUCID case on comment lines:** Cols 1–5 must be uppercase. Wrong: `34Si cL J$` → Correct: `34SI cL J$`.
 - **Extra space after `$`:** `cL J$ from ...` → `cL J$from ...`. Scan: `\$\s`.
 - **Dittography:** `\b(\w+)\s+\1\b` -- flag `the the`, `were were`, etc.
