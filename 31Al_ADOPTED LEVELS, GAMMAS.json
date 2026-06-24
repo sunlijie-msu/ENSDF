@@ -1,0 +1,3833 @@
+{
+    "observationStatus": "observed",
+    "hasStableGroundState": false,
+    "qValues": {
+        "decayEnergies": {
+            "B-": {
+                "isFromSystematics": false,
+                "unit": "keV",
+                "value": 7998.3,
+                "uncertainty": {
+                    "type": "symmetric",
+                    "value": 2.2
+                },
+                "evaluatorInput": "7998.3 22",
+                "nsrKeys": [
+                    "2021WA16"
+                ]
+            },
+            "a": {
+                "isFromSystematics": false,
+                "unit": "keV",
+                "value": -11858,
+                "uncertainty": {
+                    "type": "symmetric",
+                    "value": 4
+                },
+                "evaluatorInput": "-11858 4",
+                "nsrKeys": [
+                    "2021WA16"
+                ]
+            }
+        },
+        "separationEnergies": {
+            "p": {
+                "isFromSystematics": false,
+                "unit": "keV",
+                "value": 13358.3,
+                "uncertainty": {
+                    "type": "symmetric",
+                    "value": 2.6
+                },
+                "evaluatorInput": "13358.3 26",
+                "nsrKeys": [
+                    "2021WA16"
+                ]
+            },
+            "n": {
+                "isFromSystematics": false,
+                "unit": "keV",
+                "value": 7157.9,
+                "uncertainty": {
+                    "type": "symmetric",
+                    "value": 3
+                },
+                "evaluatorInput": "7157.9 30",
+                "nsrKeys": [
+                    "2021WA16"
+                ]
+            }
+        }
+    },
+    "datasets": {
+        "32MG B-N DECAY (80.4 MS)": {
+            "decayMode": "B-n",
+            "parents": [
+                {
+                    "z": 12,
+                    "a": 32,
+                    "elementSymbol": "Mg",
+                    "levelEnergy": {
+                        "unit": "keV",
+                        "value": 0,
+                        "uncertainty": {
+                            "type": "symmetric",
+                            "value": 0
+                        },
+                        "evaluatorInput": "0 0"
+                    },
+                    "spinParity": {
+                        "values": [
+                            {
+                                "twoTimesSpin": 0,
+                                "isTentativeSpin": false,
+                                "parity": "+",
+                                "isTentativeParity": false
+                            }
+                        ],
+                        "evaluatorInput": "0+"
+                    },
+                    "halfLife": {
+                        "unit": "ms",
+                        "value": 80.4,
+                        "uncertainty": {
+                            "type": "symmetric",
+                            "value": 0.4
+                        },
+                        "evaluatorInput": "80.4 4",
+                        "comments": [
+                            "From 2017Ha23. Other less precise measurements: 86 ms \\textit{5} (2004Gr08, $^{32}$Mg fragment)$\\gamma $-coin decay curve; 120 ms \\textit{20} (1984La03) and 85 ms \\textit{13} (1995ReZZ)."
+                        ]
+                    },
+                    "qValue": {
+                        "unit": "keV",
+                        "value": 6050,
+                        "uncertainty": {
+                            "type": "symmetric",
+                            "value": 4
+                        },
+                        "evaluatorInput": "6050 4",
+                        "comments": [
+                            "From 2021Wa16"
+                        ]
+                    },
+                    "normalization": {
+                        "branchingRatio": {
+                            "value": 0.055,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.005
+                            },
+                            "evaluatorInput": "0.055 5",
+                            "comments": [
+                                "%$\\beta ^{-}$n=5.5 \\textit{5} (2004Gr08). Other: %$\\beta ^{-}$n=2.4 \\textit{5} (1984La03). The larger value from 2004Gr08 can be understood by the neutron emission occuring around 300 keV as noted by the authors."
+                            ]
+                        },
+                        "particle": {
+                            "value": 0.055,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.005
+                            },
+                            "evaluatorInput": "0.055 5"
+                        }
+                    }
+                }
+            ],
+            "levelsTable": {
+                "levels": [
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 0,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0
+                            },
+                            "evaluatorInput": "0 0"
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 5,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": true
+                                }
+                            ],
+                            "evaluatorInput": "5/2(+)"
+                        },
+                        "isStable": false,
+                        "halfLife": {
+                            "unit": "ms",
+                            "value": 644,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 25
+                            },
+                            "evaluatorInput": "644 25"
+                        },
+                        "comments": [
+                            "J$^{\\pi }$, T$_{1/2}$: from Adopted Levels"
+                        ]
+                    }
+                ]
+            },
+            "header": {
+                "documentType": "delayedParticleDecay",
+                "schemaVersion": "beta",
+                "datasetName": "32MG B-N DECAY (80.4 MS)",
+                "database": "ENSDF",
+                "z": 13,
+                "n": 18,
+                "a": 31,
+                "elementName": "Aluminium",
+                "elementSymbol": "Al",
+                "history": {
+                    "fullEvaluation": {
+                        "cutoffDate": "2022-06-24",
+                        "publication": "NDS 184, 29 (2022)",
+                        "authors": [
+                            {
+                                "name": "Jun Chen and Balraj Singh"
+                            }
+                        ]
+                    },
+                    "updates": [
+                        {
+                            "date": "2025-05-02",
+                            "authors": [
+                                {
+                                    "name": "NNDC"
+                                }
+                            ],
+                            "comment": "Automatically parsed w/ ensdf-parser on 2025-05-02"
+                        }
+                    ]
+                }
+            },
+            "comments": [
+                "1984La03: measured $^{32}$Mg half-life and %$\\beta ^{-}$n branch at CERN",
+                "2004Gr08: $^{32}$Mg from 50 MeV/nucleon $^{36}$S primary beam at GANIL on a Be target. Large neutron array TONNERRE used to measure %$\\beta ^{-}$n and time of flight for T$_{1/2}$",
+                "other: 2017Ha23: measured T$_{1/2}$ from ($^{32}$Mg fragment)$\\beta $-coin decay curve"
+            ],
+            "references": {
+                "cited": [
+                    {
+                        "nsrKeys": [
+                            "2004GR08"
+                        ]
+                    },
+                    {
+                        "nsrKeys": [
+                            "1984LA03"
+                        ]
+                    }
+                ]
+            }
+        },
+        "31MG B- DECAY (270 MS)": {
+            "decayMode": "B-",
+            "betasTable": {
+                "betas": [
+                    {
+                        "endpointEnergy": {
+                            "unit": "keV",
+                            "value": 10882,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 4
+                            },
+                            "evaluatorInput": "10882 4",
+                            "isCalculated": true
+                        },
+                        "averageEnergy": {
+                            "unit": "keV",
+                            "value": 5182.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2
+                            },
+                            "evaluatorInput": "5182.7 20"
+                        },
+                        "betaIntensity": {
+                            "value": 5.2,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2.7
+                            },
+                            "evaluatorInput": "5.2 27"
+                        },
+                        "logft": {
+                            "value": 6.1,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.2
+                            },
+                            "evaluatorInput": "6.1 2"
+                        },
+                        "finalLevel": 1
+                    },
+                    {
+                        "endpointEnergy": {
+                            "unit": "keV",
+                            "value": 10216,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 4
+                            },
+                            "evaluatorInput": "10216 4",
+                            "isCalculated": true
+                        },
+                        "averageEnergy": {
+                            "unit": "keV",
+                            "value": 4853.5,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2
+                            },
+                            "evaluatorInput": "4853.5 20"
+                        },
+                        "betaIntensity": {
+                            "value": 10.6,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2
+                            },
+                            "evaluatorInput": "10.6 20"
+                        },
+                        "logft": {
+                            "value": 5.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.1
+                            },
+                            "evaluatorInput": "5.7 1"
+                        },
+                        "finalLevel": 2
+                    },
+                    {
+                        "endpointEnergy": {
+                            "unit": "keV",
+                            "value": 8590,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 4
+                            },
+                            "evaluatorInput": "8590 4",
+                            "isCalculated": true
+                        },
+                        "averageEnergy": {
+                            "unit": "keV",
+                            "value": 4050.2,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2
+                            },
+                            "evaluatorInput": "4050.2 20"
+                        },
+                        "betaIntensity": {
+                            "value": 28.8,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2.4
+                            },
+                            "evaluatorInput": "28.8 24"
+                        },
+                        "logft": {
+                            "value": 4.88,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.04
+                            },
+                            "evaluatorInput": "4.88 4"
+                        },
+                        "finalLevel": 3
+                    },
+                    {
+                        "endpointEnergy": {
+                            "unit": "keV",
+                            "value": 8396,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 4
+                            },
+                            "evaluatorInput": "8396 4",
+                            "isCalculated": true
+                        },
+                        "averageEnergy": {
+                            "unit": "keV",
+                            "value": 3954.4,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2
+                            },
+                            "evaluatorInput": "3954.4 20"
+                        },
+                        "betaIntensity": {
+                            "value": 11.3,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.7
+                            },
+                            "evaluatorInput": "11.3 17"
+                        },
+                        "logft": {
+                            "value": 5.2,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.1
+                            },
+                            "evaluatorInput": "5.2 1"
+                        },
+                        "finalLevel": 4
+                    },
+                    {
+                        "endpointEnergy": {
+                            "unit": "keV",
+                            "value": 8206,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 4
+                            },
+                            "evaluatorInput": "8206 4",
+                            "isCalculated": true
+                        },
+                        "averageEnergy": {
+                            "unit": "keV",
+                            "value": 3860.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2
+                            },
+                            "evaluatorInput": "3860.7 20"
+                        },
+                        "betaIntensity": {
+                            "value": 11.3,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.2
+                            },
+                            "evaluatorInput": "11.3 12"
+                        },
+                        "logft": {
+                            "value": 5.2,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.1
+                            },
+                            "evaluatorInput": "5.2 1"
+                        },
+                        "finalLevel": 5
+                    },
+                    {
+                        "endpointEnergy": {
+                            "unit": "keV",
+                            "value": 7686,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 4
+                            },
+                            "evaluatorInput": "7686 4",
+                            "isCalculated": true
+                        },
+                        "averageEnergy": {
+                            "unit": "keV",
+                            "value": 3603.9,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2
+                            },
+                            "evaluatorInput": "3603.9 20"
+                        },
+                        "betaIntensity": {
+                            "value": 12.5,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.3
+                            },
+                            "evaluatorInput": "12.5 13"
+                        },
+                        "logft": {
+                            "value": 5,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.1
+                            },
+                            "evaluatorInput": "5.0 1"
+                        },
+                        "finalLevel": 6
+                    },
+                    {
+                        "endpointEnergy": {
+                            "unit": "keV",
+                            "value": 7265,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 4
+                            },
+                            "evaluatorInput": "7265 4",
+                            "isCalculated": true
+                        },
+                        "averageEnergy": {
+                            "unit": "keV",
+                            "value": 3396.5,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2
+                            },
+                            "evaluatorInput": "3396.5 20"
+                        },
+                        "betaIntensity": {
+                            "value": 7.9,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1
+                            },
+                            "evaluatorInput": "7.9 10"
+                        },
+                        "logft": {
+                            "value": 5.1,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.1
+                            },
+                            "evaluatorInput": "5.1 1"
+                        },
+                        "finalLevel": 7
+                    },
+                    {
+                        "endpointEnergy": {
+                            "unit": "keV",
+                            "value": 7189,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 4
+                            },
+                            "evaluatorInput": "7189 4",
+                            "isCalculated": true
+                        },
+                        "averageEnergy": {
+                            "unit": "keV",
+                            "value": 3358.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2.1
+                            },
+                            "evaluatorInput": "3358.7 21"
+                        },
+                        "betaIntensity": {
+                            "value": 1.6,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.4
+                            },
+                            "evaluatorInput": "1.6 4"
+                        },
+                        "logft": {
+                            "value": 5.8,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.1
+                            },
+                            "evaluatorInput": "5.8 1"
+                        },
+                        "finalLevel": 8
+                    },
+                    {
+                        "existence": "uncertain",
+                        "endpointEnergy": {
+                            "unit": "keV",
+                            "value": 7020,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 4
+                            },
+                            "evaluatorInput": "7020 4",
+                            "isCalculated": true
+                        },
+                        "averageEnergy": {
+                            "unit": "keV",
+                            "value": 3275.5,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2.1
+                            },
+                            "evaluatorInput": "3275.5 21"
+                        },
+                        "betaIntensity": {
+                            "value": 1,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.3
+                            },
+                            "evaluatorInput": "1.0 3"
+                        },
+                        "logft": {
+                            "value": 5.9,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.1
+                            },
+                            "evaluatorInput": "5.9 1"
+                        },
+                        "finalLevel": 9
+                    },
+                    {
+                        "endpointEnergy": {
+                            "unit": "keV",
+                            "value": 6783,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 4
+                            },
+                            "evaluatorInput": "6783 4",
+                            "isCalculated": true
+                        },
+                        "averageEnergy": {
+                            "unit": "keV",
+                            "value": 3158.5,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2.1
+                            },
+                            "evaluatorInput": "3158.5 21"
+                        },
+                        "betaIntensity": {
+                            "value": 3.5,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.9
+                            },
+                            "evaluatorInput": "3.5 9"
+                        },
+                        "logft": {
+                            "value": 5.3,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.1
+                            },
+                            "evaluatorInput": "5.3 1"
+                        },
+                        "finalLevel": 10
+                    },
+                    {
+                        "endpointEnergy": {
+                            "unit": "keV",
+                            "value": 6679,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 4
+                            },
+                            "evaluatorInput": "6679 4",
+                            "isCalculated": true
+                        },
+                        "averageEnergy": {
+                            "unit": "keV",
+                            "value": 3107.6,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2.1
+                            },
+                            "evaluatorInput": "3107.6 21"
+                        },
+                        "betaIntensity": {
+                            "value": 2.9,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.5
+                            },
+                            "evaluatorInput": "2.9 5"
+                        },
+                        "logft": {
+                            "value": 5.4,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.1
+                            },
+                            "evaluatorInput": "5.4 1"
+                        },
+                        "finalLevel": 11
+                    },
+                    {
+                        "endpointEnergy": {
+                            "unit": "keV",
+                            "value": 2336,
+                            "uncertainty": {
+                                "type": "unreported"
+                            },
+                            "evaluatorInput": "2336",
+                            "isCalculated": true
+                        },
+                        "betaIntensity": {
+                            "value": 6.2,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.9
+                            },
+                            "evaluatorInput": "6.2 19",
+                            "comments": [
+                                "from adopted %$\\beta ^{-}$n=6.2 \\textit{19} for the decay of $^{31}$Mg g.s."
+                            ]
+                        },
+                        "finalLevel": 12
+                    }
+                ],
+                "comments": [
+                    {
+                        "text": "From I$\\gamma $ intensity balance at each level",
+                        "columns": [
+                            "betaIntensity"
+                        ]
+                    }
+                ]
+            },
+            "parents": [
+                {
+                    "z": 12,
+                    "a": 31,
+                    "elementSymbol": "Mg",
+                    "levelEnergy": {
+                        "unit": "keV",
+                        "value": 0,
+                        "uncertainty": {
+                            "type": "symmetric",
+                            "value": 0
+                        },
+                        "evaluatorInput": "0 0"
+                    },
+                    "spinParity": {
+                        "values": [
+                            {
+                                "twoTimesSpin": 1,
+                                "isTentativeSpin": false,
+                                "parity": "+",
+                                "isTentativeParity": false
+                            }
+                        ],
+                        "evaluatorInput": "1/2+"
+                    },
+                    "halfLife": {
+                        "unit": "ms",
+                        "value": 270,
+                        "uncertainty": {
+                            "type": "symmetric",
+                            "value": 2
+                        },
+                        "evaluatorInput": "270 2"
+                    },
+                    "qValue": {
+                        "unit": "keV",
+                        "value": 11829,
+                        "uncertainty": {
+                            "type": "symmetric",
+                            "value": 4
+                        },
+                        "evaluatorInput": "11829 4",
+                        "comments": [
+                            "From 2021Wa16"
+                        ]
+                    },
+                    "normalization": {
+                        "branchingRatio": {
+                            "value": 1,
+                            "uncertainty": {
+                                "type": "unreported"
+                            },
+                            "evaluatorInput": "1.0",
+                            "comments": [
+                                "%$\\beta ^{-}$n=6.2 \\textit{19} (2008ReZZ,1995ReZZ). Note that %$\\beta ^{-}$n=1.7 \\textit{3} (1984La03) is also reported."
+                            ]
+                        },
+                        "gamma": {
+                            "includesBranchingRatio": false,
+                            "value": 0.448,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.034
+                            },
+                            "evaluatorInput": "0.448 34",
+                            "comments": [
+                                "scaled from the original value of 0.368 in 2005Ma86 by a factor of f1*f2 with f1=127.7/100 due to renormalization of I$\\gamma $(1612.8$\\gamma $) from 127.7 \\textit{93} in 2005Ma86 to 100 in this dataset by the evaluators, in order to align intensities from 2005Ma86 relative to I$\\gamma $(946.7$\\gamma $)=100 with those from other studies (1984Gu19,1993Kl02) relative to I$\\gamma $(1612.8$\\gamma $)=100, and f2=(100-6.2)/(100-1.7) accounting for the change of %$\\beta _{n}$ for $^{31}$Mg used in obtaining the total number of $^{31}$Mg from measured $\\gamma $ intensities, from 1.7 \\textit{3} quoted in 2005Ma86 to the adopted 6.2 \\textit{19}. The original value of 0.368 in 2005Ma86 is obtained by using absolute intensities deduced from the total number of $^{31}$Mg which is derived from measured intensities of five $\\gamma $-rays (not reported in 2005Ma86) from the decay of $^{31}$Al to $^{31}$Si and previously known $^{31}$Al decay scheme. By assuming $\\Sigma $(I$\\gamma $ to g.s.)=93.8% \\textit{19} from 100-%I$_{\\beta n}$ (6.2 \\textit{19} from Adopted Levels of $^{31}$Mg) with no $\\beta $ branch to the g.s. for $\\Delta $J=2, $\\Delta \\pi $=no transition and with no unobserved $\\gamma $ transitions to g.s., the evaluators obtain 0.440 \\textit{3}. Others: 0.39 \\textit{8} (1993Kl02) and 0.36 \\textit{11} (1984Gu19), deduced by evaluators from the ratios of absolute intensities to relative intensities in each reference, which are significantly different and appear to be less reliable because of an overestimate of the $\\beta $ feeding to the ground state, and incomplete level schemes compared to that of 2005Ma86."
+                            ]
+                        },
+                        "beta": {
+                            "includesBranchingRatio": false,
+                            "value": 1,
+                            "uncertainty": {
+                                "type": "unreported"
+                            },
+                            "evaluatorInput": "1.0"
+                        }
+                    },
+                    "comments": [
+                        "J$^{\\pi }$, T$_{1/2}$: From Adopted Levels of $^{31}$Mg"
+                    ]
+                }
+            ],
+            "levelsTable": {
+                "levels": [
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 0,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0
+                            },
+                            "evaluatorInput": "0 0"
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 5,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": true
+                                }
+                            ],
+                            "evaluatorInput": "5/2(+)"
+                        },
+                        "isStable": false,
+                        "halfLife": {
+                            "unit": "ms",
+                            "value": 644,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 25
+                            },
+                            "evaluatorInput": "644 25"
+                        }
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 946.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.4
+                            },
+                            "evaluatorInput": "946.7 4"
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 1,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": true
+                                },
+                                {
+                                    "twoTimesSpin": 3,
+                                    "isTentativeSpin": false
+                                }
+                            ],
+                            "evaluatorInput": "1/2(+),3/2"
+                        },
+                        "isStable": false,
+                        "beta": 0,
+                        "gammas": [
+                            2
+                        ]
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 1613,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.3
+                            },
+                            "evaluatorInput": "1613.0 3"
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 1,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                },
+                                {
+                                    "twoTimesSpin": 3,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                }
+                            ],
+                            "evaluatorInput": "1/2+,3/2+"
+                        },
+                        "isStable": false,
+                        "beta": 1,
+                        "gammas": [
+                            0,
+                            3
+                        ]
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 3239.3,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.5
+                            },
+                            "evaluatorInput": "3239.3 5"
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 1,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                },
+                                {
+                                    "twoTimesSpin": 3,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                }
+                            ],
+                            "evaluatorInput": "1/2+,3/2+"
+                        },
+                        "isStable": false,
+                        "beta": 2,
+                        "gammas": [
+                            4,
+                            6
+                        ]
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 3433.3,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.5
+                            },
+                            "evaluatorInput": "3433.3 5"
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 1,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                },
+                                {
+                                    "twoTimesSpin": 3,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                }
+                            ],
+                            "evaluatorInput": "1/2+,3/2+"
+                        },
+                        "isStable": false,
+                        "beta": 3,
+                        "gammas": [
+                            5,
+                            7,
+                            12
+                        ]
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 3623,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.6
+                            },
+                            "evaluatorInput": "3623.0 6"
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 1,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                },
+                                {
+                                    "twoTimesSpin": 3,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                }
+                            ],
+                            "evaluatorInput": "1/2+,3/2+"
+                        },
+                        "isStable": false,
+                        "beta": 4,
+                        "gammas": [
+                            9,
+                            15
+                        ]
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 4143.3,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.4
+                            },
+                            "evaluatorInput": "4143.3 4"
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 1,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                },
+                                {
+                                    "twoTimesSpin": 3,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                }
+                            ],
+                            "evaluatorInput": "1/2+,3/2+"
+                        },
+                        "isStable": false,
+                        "beta": 5,
+                        "gammas": [
+                            1,
+                            8,
+                            11,
+                            17
+                        ]
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 4563.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.5
+                            },
+                            "evaluatorInput": "4563.7 5"
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 1,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                },
+                                {
+                                    "twoTimesSpin": 3,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                }
+                            ],
+                            "evaluatorInput": "1/2+,3/2+"
+                        },
+                        "isStable": false,
+                        "beta": 6,
+                        "gammas": [
+                            10,
+                            14,
+                            19
+                        ]
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 4640.4,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.1
+                            },
+                            "evaluatorInput": "4640.4 11"
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 1,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                },
+                                {
+                                    "twoTimesSpin": 3,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                }
+                            ],
+                            "evaluatorInput": "1/2+,3/2+"
+                        },
+                        "isStable": false,
+                        "beta": 7,
+                        "gammas": [
+                            16,
+                            20
+                        ]
+                    },
+                    {
+                        "existence": "uncertain",
+                        "energy": {
+                            "unit": "keV",
+                            "value": 4809.1,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.5
+                            },
+                            "evaluatorInput": "4809.1 15",
+                            "comments": [
+                                "reported in 1993Kl02 and 1984Gu19. This level was not seen in the coincidence measurements or in the un-gated $\\gamma $-spectrum (2005Ma86)"
+                            ]
+                        },
+                        "isStable": false,
+                        "beta": 8,
+                        "gammas": [
+                            21
+                        ]
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 5046.5,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.4
+                            },
+                            "evaluatorInput": "5046.5 14"
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 1,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                },
+                                {
+                                    "twoTimesSpin": 3,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                }
+                            ],
+                            "evaluatorInput": "1/2+,3/2+"
+                        },
+                        "isStable": false,
+                        "beta": 9,
+                        "gammas": [
+                            13
+                        ]
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 5149.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.1
+                            },
+                            "evaluatorInput": "5149.7 11"
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 1,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                },
+                                {
+                                    "twoTimesSpin": 3,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                }
+                            ],
+                            "evaluatorInput": "1/2+,3/2+"
+                        },
+                        "isStable": false,
+                        "beta": 10,
+                        "gammas": [
+                            18
+                        ]
+                    },
+                    {
+                        "energy": {
+                            "offset": "X",
+                            "unit": "keV",
+                            "value": 7157.9,
+                            "uncertainty": {
+                                "type": "unreported"
+                            },
+                            "evaluatorInput": "X+7157.9",
+                            "comments": [
+                                "x\\textless 4671 \\textit{5} from Q($\\beta ^{-}$)($^{31}$Mg)-S(n)($^{31}$Al), where Q($\\beta ^{-}$)=11829 \\textit{4} and S(n)=7157.9 \\textit{30} from 2021Wa16. This represents a range of unobserved levels that subsequently decay to $^{30}$Mg via one-neutron emission"
+                            ]
+                        },
+                        "isStable": false,
+                        "beta": 11
+                    }
+                ],
+                "comments": [
+                    {
+                        "text": "From a least-squares fit to $\\gamma $-ray energies.",
+                        "columns": [
+                            "energy"
+                        ]
+                    },
+                    {
+                        "text": "From Adopted Levels",
+                        "columns": [
+                            "spinParity",
+                            "halfLife"
+                        ]
+                    }
+                ]
+            },
+            "gammasTable": {
+                "gammas": [
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 665.9,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.7
+                            },
+                            "evaluatorInput": "665.9 7",
+                            "comments": [
+                                "weighted average of 666.2 \\textit{7} (1993Kl02), 665.5 \\textit{8} (1984Gu19), and 665.7 \\textit{13} (2005Ma86)"
+                            ]
+                        },
+                        "gammaIntensity": {
+                            "value": 31.4,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2
+                            },
+                            "evaluatorInput": "31.4 20",
+                            "comments": [
+                                "weighted average of 34.0 \\textit{24} (1993Kl02), 29.4 \\textit{20} (1984Gu19), and 32.4 \\textit{37} (2005Ma86)"
+                            ]
+                        },
+                        "initialLevel": 2,
+                        "absoluteIntensity": {
+                            "value": 14.1,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.4
+                            },
+                            "evaluatorInput": "14.1 14"
+                        },
+                        "finalLevel": 1
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 903.8,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.8
+                            },
+                            "evaluatorInput": "903.8 8",
+                            "comments": [
+                                "weighted average of 904.0 \\textit{8} (1993Kl02), 903.7 \\textit{12} (1984Gu19), and 903.6 \\textit{11} (2005Ma86)"
+                            ]
+                        },
+                        "gammaIntensity": {
+                            "value": 5.1,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.7
+                            },
+                            "evaluatorInput": "5.1 7",
+                            "comments": [
+                                "unweighted average of 5.3 \\textit{6} (1993Kl02), 6.3 \\textit{10} (1984Gu19), and 3.8 \\textit{4} (2005Ma86)"
+                            ]
+                        },
+                        "initialLevel": 6,
+                        "absoluteIntensity": {
+                            "value": 2.3,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.4
+                            },
+                            "evaluatorInput": "2.3 4"
+                        },
+                        "finalLevel": 3
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 946.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.5
+                            },
+                            "evaluatorInput": "946.7 5",
+                            "comments": [
+                                "weighted average of 946.6 \\textit{5} (1993Kl02), 946.9 \\textit{10} (1984Gu19), and 947.0 \\textit{10} (2005Ma86)"
+                            ]
+                        },
+                        "gammaIntensity": {
+                            "value": 82,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 5
+                            },
+                            "evaluatorInput": "82 5",
+                            "comments": [
+                                "weighted average of 78.3 \\textit{56} (1993Kl02), 87.5 \\textit{50} (1984Gu19), and 78.3 \\textit{57} (2005Ma86)"
+                            ]
+                        },
+                        "initialLevel": 1,
+                        "absoluteIntensity": {
+                            "value": 37,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 4
+                            },
+                            "evaluatorInput": "37 4"
+                        },
+                        "finalLevel": 0
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 1612.8,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.4
+                            },
+                            "evaluatorInput": "1612.8 4",
+                            "comments": [
+                                "weighted average of 1612.8 \\textit{4} (1993Kl02), 1612.8 \\textit{6} (1984Gu19), and 1612.9 \\textit{8} (2005Ma86)"
+                            ]
+                        },
+                        "gammaIntensity": {
+                            "value": 100,
+                            "uncertainty": {
+                                "type": "unreported"
+                            },
+                            "evaluatorInput": "100"
+                        },
+                        "initialLevel": 2,
+                        "absoluteIntensity": {
+                            "value": 44.8,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 3.4
+                            },
+                            "evaluatorInput": "44.8 34"
+                        },
+                        "finalLevel": 0
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 1626.2,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.5
+                            },
+                            "evaluatorInput": "1626.2 5",
+                            "comments": [
+                                "weighted average of 1626.2 \\textit{5} (1993Kl02), 1626.2 \\textit{6} (1984Gu19), and 1626.4 \\textit{12} (2005Ma86)"
+                            ]
+                        },
+                        "gammaIntensity": {
+                            "value": 68.1,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.8
+                            },
+                            "evaluatorInput": "68.1 18",
+                            "comments": [
+                                "weighted average of 63.6 \\textit{46} (1993Kl02), 68.8 \\textit{18} (1984Gu19), and 67.3 \\textit{71} (2005Ma86)"
+                            ]
+                        },
+                        "initialLevel": 3,
+                        "absoluteIntensity": {
+                            "value": 30.5,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2.5
+                            },
+                            "evaluatorInput": "30.5 25"
+                        },
+                        "finalLevel": 2
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 1820,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.8
+                            },
+                            "evaluatorInput": "1820.0 8",
+                            "comments": [
+                                "weighted average of 1820.0 \\textit{8} (1993Kl02), 1820.0 \\textit{9} (1984Gu19), and 1820.1 \\textit{11} (2005Ma86)"
+                            ]
+                        },
+                        "gammaIntensity": {
+                            "value": 11.1,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2
+                            },
+                            "evaluatorInput": "11.1 20",
+                            "comments": [
+                                "unweighted average of 8.8 \\textit{12} (1993Kl02), 9.4 \\textit{11} (1984Gu19), and 15.0 \\textit{18} (2005Ma86)"
+                            ]
+                        },
+                        "initialLevel": 4,
+                        "absoluteIntensity": {
+                            "value": 5,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1
+                            },
+                            "evaluatorInput": "5.0 10"
+                        },
+                        "finalLevel": 2
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 2291.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.4
+                            },
+                            "evaluatorInput": "2291.7 14"
+                        },
+                        "gammaIntensity": {
+                            "value": 1.17,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.25
+                            },
+                            "evaluatorInput": "1.17 25"
+                        },
+                        "initialLevel": 3,
+                        "absoluteIntensity": {
+                            "value": 0.52,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.12
+                            },
+                            "evaluatorInput": "0.52 12"
+                        },
+                        "finalLevel": 1
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 2487.4,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.2
+                            },
+                            "evaluatorInput": "2487.4 12",
+                            "comments": [
+                                "weighted average of 2487.6 \\textit{15} (1993Kl02), 2487.5 \\textit{18} (1984Gu19), and 2487.3 \\textit{12} (2005Ma86)"
+                            ]
+                        },
+                        "gammaIntensity": {
+                            "value": 4.1,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.7
+                            },
+                            "evaluatorInput": "4.1 7",
+                            "comments": [
+                                "weighted average of 4.8 \\textit{8} (1993Kl02), 3.8 \\textit{10} (1984Gu19), and 3.7 \\textit{7} (2005Ma86)"
+                            ]
+                        },
+                        "initialLevel": 4,
+                        "absoluteIntensity": {
+                            "value": 1.84,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.34
+                            },
+                            "evaluatorInput": "1.84 34"
+                        },
+                        "finalLevel": 1
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 2529.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.9
+                            },
+                            "evaluatorInput": "2529.7 9",
+                            "comments": [
+                                "weighted average of 2529.8 \\textit{10} (1993Kl02), 2529.8 \\textit{9} (1984Gu19), and 2529.5 \\textit{10} (2005Ma86)"
+                            ]
+                        },
+                        "gammaIntensity": {
+                            "value": 8.9,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.9
+                            },
+                            "evaluatorInput": "8.9 9",
+                            "comments": [
+                                "weighted average of 8.7 \\textit{9} (1993Kl02), 8.8 \\textit{15} (1984Gu19), and 9.8 \\textit{18} (2005Ma86)"
+                            ]
+                        },
+                        "initialLevel": 6,
+                        "absoluteIntensity": {
+                            "value": 4,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.5
+                            },
+                            "evaluatorInput": "4.0 5"
+                        },
+                        "finalLevel": 2
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 2675.8,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.9
+                            },
+                            "evaluatorInput": "2675.8 9",
+                            "comments": [
+                                "weighted average of 2676.1 \\textit{10} (1993Kl02),2675.6 \\textit{9} (1984Gu19), and 2675.6 \\textit{13} (2005Ma86)"
+                            ]
+                        },
+                        "gammaIntensity": {
+                            "value": 7.5,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.8
+                            },
+                            "evaluatorInput": "7.5 8",
+                            "comments": [
+                                "weighted average of 7.7 \\textit{8} (1993Kl02), 6.3 \\textit{14} (1984Gu19), and 8.7 \\textit{17} (2005Ma86)"
+                            ]
+                        },
+                        "initialLevel": 5,
+                        "absoluteIntensity": {
+                            "value": 3.4,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.5
+                            },
+                            "evaluatorInput": "3.4 5"
+                        },
+                        "finalLevel": 1
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 2949.4,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1
+                            },
+                            "evaluatorInput": "2949.4 10",
+                            "comments": [
+                                "weighted average of 2949.0 \\textit{10} (1993Kl02), 2949.8 \\textit{10} (1984Gu19), and 2949.5 \\textit{11} (2005Ma86)"
+                            ]
+                        },
+                        "gammaIntensity": {
+                            "value": 12,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.2
+                            },
+                            "evaluatorInput": "12.0 12",
+                            "comments": [
+                                "weighted average of 12.3 \\textit{12}(1993Kl02), 11.2 \\textit{16} (1984Gu19), and 13.1 \\textit{29} (2005Ma86)"
+                            ]
+                        },
+                        "initialLevel": 7,
+                        "absoluteIntensity": {
+                            "value": 5.4,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.7
+                            },
+                            "evaluatorInput": "5.4 7"
+                        },
+                        "finalLevel": 2
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 3196.6,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1
+                            },
+                            "evaluatorInput": "3196.6 10",
+                            "comments": [
+                                "weighted average of 3196.2 \\textit{10} (1993Kl02), 3197.0 \\textit{10} (1984Gu19), and 3196.5 \\textit{12} (2005Ma86)"
+                            ]
+                        },
+                        "gammaIntensity": {
+                            "value": 12.8,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.4
+                            },
+                            "evaluatorInput": "12.8 14",
+                            "comments": [
+                                "weighted average of 13.0 \\textit{14} (1993Kl02), 11.9 \\textit{19} (1984Gu19), 14.6 \\textit{36} (2005Ma86)"
+                            ]
+                        },
+                        "initialLevel": 6,
+                        "absoluteIntensity": {
+                            "value": 5.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.8
+                            },
+                            "evaluatorInput": "5.7 8"
+                        },
+                        "finalLevel": 1
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 3432.8,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.8
+                            },
+                            "evaluatorInput": "3432.8 8",
+                            "comments": [
+                                "weighted average of 3431.8 \\textit{12} (1993Kl02),3433.0 \\textit{8} (1984Gu19), and 3433.3 \\textit{14} (2005Ma86)"
+                            ]
+                        },
+                        "gammaIntensity": {
+                            "value": 10,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2.6
+                            },
+                            "evaluatorInput": "10.0 26",
+                            "comments": [
+                                "2005Ma86 claim two very close $\\gamma $-rays from different levels, one from the 3433 level, the other from a 5046 level; the differences were unresolved by earlier experiments and all the intensity from earlier experiments is attributed to this level feeding alone. Others: 16.2 \\textit{15} (1993Kl02) and 15 \\textit{2} (1984Gu19) for unresolved doublet"
+                            ]
+                        },
+                        "initialLevel": 4,
+                        "absoluteIntensity": {
+                            "value": 4.5,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.2
+                            },
+                            "evaluatorInput": "4.5 12"
+                        },
+                        "finalLevel": 0
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 3433.3,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.4
+                            },
+                            "evaluatorInput": "3433.3 14"
+                        },
+                        "gammaIntensity": {
+                            "value": 7.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 2
+                            },
+                            "evaluatorInput": "7.7 20"
+                        },
+                        "initialLevel": 10,
+                        "absoluteIntensity": {
+                            "value": 3.5,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.9
+                            },
+                            "evaluatorInput": "3.5 9"
+                        },
+                        "finalLevel": 2
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 3617.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.2
+                            },
+                            "evaluatorInput": "3617.7 12"
+                        },
+                        "gammaIntensity": {
+                            "value": 3.9,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.1
+                            },
+                            "evaluatorInput": "3.9 11"
+                        },
+                        "initialLevel": 7,
+                        "absoluteIntensity": {
+                            "value": 1.8,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.5
+                            },
+                            "evaluatorInput": "1.8 5"
+                        },
+                        "finalLevel": 1
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 3623,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.8
+                            },
+                            "evaluatorInput": "3623.0 8",
+                            "comments": [
+                                "weighted average of 3621.9 \\textit{13} (1993Kl02),3623.0 \\textit{9} (1984Gu19), and 3623.4 \\textit{8} (2005Ma86)"
+                            ]
+                        },
+                        "gammaIntensity": {
+                            "value": 17.8,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.5
+                            },
+                            "evaluatorInput": "17.8 15",
+                            "comments": [
+                                "weighted average of 18.2 \\textit{15} (1993Kl02), 16.9 \\textit{22} (1984Gu19), and 18.4 \\textit{52} (2005Ma86)"
+                            ]
+                        },
+                        "initialLevel": 5,
+                        "absoluteIntensity": {
+                            "value": 8,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.9
+                            },
+                            "evaluatorInput": "8.0 9"
+                        },
+                        "finalLevel": 0
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 3693,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.9
+                            },
+                            "evaluatorInput": "3693.0 19"
+                        },
+                        "gammaIntensity": {
+                            "value": 2.9,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.8
+                            },
+                            "evaluatorInput": "2.9 8"
+                        },
+                        "initialLevel": 8,
+                        "absoluteIntensity": {
+                            "value": 1.3,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.4
+                            },
+                            "evaluatorInput": "1.3 4"
+                        },
+                        "finalLevel": 1
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 4143.2,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.6
+                            },
+                            "evaluatorInput": "4143.2 6"
+                        },
+                        "gammaIntensity": {
+                            "value": 1.1,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.4
+                            },
+                            "evaluatorInput": "1.1 4"
+                        },
+                        "initialLevel": 6,
+                        "absoluteIntensity": {
+                            "value": 0.49,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.18
+                            },
+                            "evaluatorInput": "0.49 18"
+                        },
+                        "finalLevel": 0
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 4202.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1
+                            },
+                            "evaluatorInput": "4202.7 10",
+                            "comments": [
+                                "weighted average of 4201.1 \\textit{14} (1993Kl02), 4203.2 \\textit{10} (1984Gu19), and 4203.5 \\textit{17} (2005Ma86)"
+                            ]
+                        },
+                        "gammaIntensity": {
+                            "value": 6.4,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.9
+                            },
+                            "evaluatorInput": "6.4 9",
+                            "comments": [
+                                "weighted average of 5.7 \\textit{9} (1993Kl02), 7.5 \\textit{12} (1984Gu19), and 7.4 \\textit{25} (2005Ma86)"
+                            ]
+                        },
+                        "initialLevel": 11,
+                        "absoluteIntensity": {
+                            "value": 2.9,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.5
+                            },
+                            "evaluatorInput": "2.9 5"
+                        },
+                        "finalLevel": 1
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 4563.5,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.7
+                            },
+                            "evaluatorInput": "4563.5 7"
+                        },
+                        "gammaIntensity": {
+                            "value": 1.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.6
+                            },
+                            "evaluatorInput": "1.7 6"
+                        },
+                        "initialLevel": 7,
+                        "absoluteIntensity": {
+                            "value": 0.76,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.28
+                            },
+                            "evaluatorInput": "0.76 28"
+                        },
+                        "finalLevel": 0
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 4640.3,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.3
+                            },
+                            "evaluatorInput": "4640.3 13"
+                        },
+                        "gammaIntensity": {
+                            "value": 0.63,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.24
+                            },
+                            "evaluatorInput": "0.63 24"
+                        },
+                        "initialLevel": 8,
+                        "absoluteIntensity": {
+                            "value": 0.28,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.11
+                            },
+                            "evaluatorInput": "0.28 11"
+                        },
+                        "finalLevel": 0
+                    },
+                    {
+                        "existence": "uncertain",
+                        "energy": {
+                            "unit": "keV",
+                            "value": 4808.7,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 1.5
+                            },
+                            "evaluatorInput": "4808.7 15",
+                            "comments": [
+                                "weighted average of 4809.0 \\textit{15} (1993Kl02) and 4808.3 \\textit{20} (1984Gu19)"
+                            ]
+                        },
+                        "gammaIntensity": {
+                            "value": 2.3,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.6
+                            },
+                            "evaluatorInput": "2.3 6",
+                            "comments": [
+                                "weighted average of 2.3 \\textit{6} (1993Kl02) and 2.2 \\textit{12} (1984Gu19)"
+                            ]
+                        },
+                        "initialLevel": 9,
+                        "absoluteIntensity": {
+                            "value": 1.03,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.28
+                            },
+                            "evaluatorInput": "1.03 28"
+                        },
+                        "finalLevel": 0
+                    }
+                ],
+                "comments": [
+                    {
+                        "text": "From 2005Ma86, unless otherwise noted. Weighted average are taken where values from 1993Kl02 and 1984Gu19 are also available. Intensities are relative to I$\\gamma $(1612.8$\\gamma $)=100. 2005Ma86 list the values as I($\\gamma $+ce), but no multipolarities are assigned. The conversion coefficients are however expected to be insignificant; thus, I(ce) values are negligible.",
+                        "columns": [
+                            "energy",
+                            "gammaIntensity"
+                        ]
+                    },
+                    {
+                        "text": "Used value from Erratum (September 2007) by 2005Ma86 in weighted average. Value was incorrect in the original paper by 2005Ma86.",
+                        "columns": [
+                            "gammaIntensity"
+                        ],
+                        "rows": [
+                            5,
+                            15,
+                            14
+                        ]
+                    }
+                ]
+            },
+            "header": {
+                "documentType": "betaDecay",
+                "schemaVersion": "beta",
+                "datasetName": "31MG B- DECAY (270 MS)",
+                "database": "ENSDF",
+                "z": 13,
+                "n": 18,
+                "a": 31,
+                "elementName": "Aluminium",
+                "elementSymbol": "Al",
+                "history": {
+                    "fullEvaluation": {
+                        "cutoffDate": "2022-06-24",
+                        "publication": "NDS 184, 29 (2022)",
+                        "authors": [
+                            {
+                                "name": "Jun Chen and Balraj Singh"
+                            }
+                        ]
+                    },
+                    "updates": [
+                        {
+                            "date": "2025-05-02",
+                            "authors": [
+                                {
+                                    "name": "NNDC"
+                                }
+                            ],
+                            "comment": "Automatically parsed w/ ensdf-parser on 2025-05-02"
+                        }
+                    ]
+                },
+                "drawingOptions": {
+                    "intensityDisplay": 3
+                }
+            },
+            "comments": [
+                "2005Ma86: $^{31}$Mg source was produced via Be($^{36}$S,X) with 77.5 MeV/nucleon $^{36}$S beam on a 1014 $\\mu $g-thick Be target at GANIL. Fragments were analyzed and separated by the LISE3 spectrometer and implanted into a DSSD detector. $\\gamma $ rays were detected with 3 Clover Ge detectors and one low-energy photon spectrometer (LEPS). Measured E$\\gamma $, I$\\gamma $, $\\beta \\gamma $-coin, $\\beta \\gamma \\gamma $-coin, fragment-$\\beta $ time correlation. Deduced levels, parent T$_{1/2}$, J, $\\pi $, $\\beta $-decay branching ratios, log \\textit{ft}, B(\\textgreater ). Comparisons with theoretical calculations.",
+                "1993Kl02: Mg isotopes were produced by bombarding an Uranium Carbide target with 600 MeV protons from the CERN synchrocyclotron and separated by the ISOLDE2 separator. $\\beta $ particles were detected with a thin plastic scintillator, neutrons were detected with an efficient detector, and $\\gamma $ rays were detected with two Ge detectors. Measured E$\\gamma $, I$\\gamma $, $\\beta \\gamma $-coin, $\\beta \\gamma \\gamma $-coin, $\\beta \\gamma $-n-coin. Deduced levels, J, $\\pi $, branching ratios, log \\textit{ft}.",
+                "1984Gu19: Mg isotopes were produced by bombarding a 30 g/cm$^{2}$ Iridium target with 10 GeV proton beam from the CERN synchrotron. Fragments were separated and collected into a thin stainless steel tube. $\\gamma $ rays were detected with two Ge(Li) detectors and $\\beta $ particles were detected with two plastic scintillators. Measured E$\\gamma $, I$\\gamma $, $\\beta \\gamma $(t), $\\beta \\gamma $-coin, $\\beta \\gamma \\gamma $-coin. Deduced levels, T$_{1/2}$, $\\gamma $-ray branching ratios, $\\beta $-delayed neutron-emission probabilities. Other papers from the same group with the same experimental setup are 1984La03: measured %$\\beta ^{-}$n, and 1979De02: measured 5 $\\gamma $ ray energies and intensities.",
+                "Other: 1977Bu11"
+            ],
+            "documents": [
+                "2005Ma86 was considered with the inclusion an Erratum published in Phys Rev C 76, 059902(E) (2007)"
+            ],
+            "references": {
+                "cited": [
+                    {
+                        "nsrKeys": [
+                            "2005MA86"
+                        ]
+                    },
+                    {
+                        "nsrKeys": [
+                            "1993KL02"
+                        ]
+                    },
+                    {
+                        "nsrKeys": [
+                            "1984GU19"
+                        ]
+                    }
+                ]
+            }
+        },
+        "15N(18O,2P)": {
+            "levelsTable": {
+                "levels": [
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 0,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0
+                            },
+                            "evaluatorInput": "0 0"
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 5,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": true
+                                }
+                            ],
+                            "evaluatorInput": "5/2(+)",
+                            "comments": [
+                                "from the Adopted Levels"
+                            ]
+                        },
+                        "isStable": false
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 2090,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 110
+                            },
+                            "evaluatorInput": "2.09E3 11"
+                        },
+                        "isStable": false
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 3700,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 100
+                            },
+                            "evaluatorInput": "3.70E3 10",
+                            "documents": [
+                                "3.8 MeV listed in Fig. 2 of 1981Pa11"
+                            ]
+                        },
+                        "isStable": false
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 4320,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 90
+                            },
+                            "evaluatorInput": "4320 90"
+                        },
+                        "isStable": false
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 4900,
+                            "uncertainty": {
+                                "type": "approximation"
+                            },
+                            "evaluatorInput": "4900"
+                        },
+                        "isStable": false
+                    }
+                ],
+                "comments": [
+                    {
+                        "text": "From 1981Pa11",
+                        "columns": [
+                            "energy"
+                        ]
+                    }
+                ]
+            },
+            "header": {
+                "documentType": "generalReaction",
+                "schemaVersion": "beta",
+                "datasetName": "15N(18O,2P)",
+                "database": "ENSDF",
+                "z": 13,
+                "n": 18,
+                "a": 31,
+                "elementName": "Aluminium",
+                "elementSymbol": "Al",
+                "history": {
+                    "fullEvaluation": {
+                        "cutoffDate": "2022-06-24",
+                        "publication": "NDS 184, 29 (2022)",
+                        "authors": [
+                            {
+                                "name": "Jun Chen and Balraj Singh"
+                            }
+                        ]
+                    },
+                    "updates": [
+                        {
+                            "date": "2025-05-02",
+                            "authors": [
+                                {
+                                    "name": "NNDC"
+                                }
+                            ],
+                            "comment": "Automatically parsed w/ ensdf-parser on 2025-05-02"
+                        }
+                    ]
+                }
+            },
+            "comments": [
+                "1981Pa11: E=35 MeV $^{18}$O beam was produced from the MP tandem accelerator in Strasbourg. Target was 200 $\\mu $g/cm$^{2}$ hydrocarbon C$_{3}$H$_{6}$N$_{6}$  enriched to 98% in $^{15}$N. Reaction products were detected using a $\\Delta $E-E silicon telescope. Measured proton spectra. Deduced levels. 2p energy spectrum was used for the determination of tentatively assigned states in $^{31}$Al. The spectrum is not clean, $^{28}$Mg is also present.",
+                "Measured mass excess=-15.09 MeV \\textit{9} (1981Pa11)"
+            ],
+            "references": {
+                "cited": [
+                    {
+                        "nsrKeys": [
+                            "1981PA11"
+                        ]
+                    }
+                ]
+            }
+        },
+        "30SI(18O,17F)": {
+            "levelsTable": {
+                "levels": [
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 0,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0
+                            },
+                            "evaluatorInput": "0 0"
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 5,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": true
+                                }
+                            ],
+                            "evaluatorInput": "5/2(+)",
+                            "comments": [
+                                "from the Adopted Levels"
+                            ]
+                        },
+                        "isStable": false
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 979,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 28
+                            },
+                            "evaluatorInput": "979 28"
+                        },
+                        "isStable": false
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 1602,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 29
+                            },
+                            "evaluatorInput": "1602 29"
+                        },
+                        "isStable": false
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 2676,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 28
+                            },
+                            "evaluatorInput": "2676 28"
+                        },
+                        "isStable": false
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 5164,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 26
+                            },
+                            "evaluatorInput": "5164 26"
+                        },
+                        "isStable": false
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 5729,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 24
+                            },
+                            "evaluatorInput": "5729 24"
+                        },
+                        "isStable": false
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 6480,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 35
+                            },
+                            "evaluatorInput": "6480 35"
+                        },
+                        "isStable": false
+                    }
+                ],
+                "comments": [
+                    {
+                        "text": "From 1988Wo02",
+                        "columns": [
+                            "energy"
+                        ]
+                    }
+                ]
+            },
+            "header": {
+                "documentType": "generalReaction",
+                "schemaVersion": "beta",
+                "datasetName": "30SI(18O,17F)",
+                "database": "ENSDF",
+                "z": 13,
+                "n": 18,
+                "a": 31,
+                "elementName": "Aluminium",
+                "elementSymbol": "Al",
+                "history": {
+                    "fullEvaluation": {
+                        "cutoffDate": "2022-06-24",
+                        "publication": "NDS 184, 29 (2022)",
+                        "authors": [
+                            {
+                                "name": "Jun Chen and Balraj Singh"
+                            }
+                        ]
+                    },
+                    "updates": [
+                        {
+                            "date": "2025-05-02",
+                            "authors": [
+                                {
+                                    "name": "NNDC"
+                                }
+                            ],
+                            "comment": "Automatically parsed w/ ensdf-parser on 2025-05-02"
+                        }
+                    ]
+                }
+            },
+            "comments": [
+                "1988Wo02: E=100 MeV $^{18}$O beam was produced at the Australian National University. Target was 50 $\\mu $g/cm$^{2}$ SiO$_{2}$ (95.3% enriched in $^{30}$Si). Reaction products were momentum-analyzed with an Enge split-pole spectrometer (FHWM=220 keV). Measured particle spectrum. Deduced levels. Measured mass excess=-14967 keV \\textit{25}"
+            ],
+            "references": {
+                "cited": [
+                    {
+                        "nsrKeys": [
+                            "1988WO02"
+                        ]
+                    }
+                ]
+            }
+        },
+        "1H(30MG,P):IAR": {
+            "levelsTable": {
+                "levels": [
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 15804,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 5
+                            },
+                            "evaluatorInput": "15804 5",
+                            "comments": [
+                                "IAR of $^{31}$Mg ground state, J$\\pi $=1/2+"
+                            ]
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 1,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                }
+                            ],
+                            "evaluatorInput": "1/2+"
+                        },
+                        "isStable": false,
+                        "decayWidths": {
+                            "totalWidth": {
+                                "unit": "keV",
+                                "value": 15,
+                                "uncertainty": {
+                                    "type": "symmetric",
+                                    "value": 8
+                                },
+                                "evaluatorInput": "15 8"
+                            },
+                            "partialWidths": {
+                                "p": {
+                                    "unit": "keV",
+                                    "value": 13,
+                                    "uncertainty": {
+                                        "type": "unreported"
+                                    },
+                                    "evaluatorInput": "13"
+                                }
+                            }
+                        },
+                        "deformationLength": {
+                            "unit": "fm",
+                            "value": 0.07,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.08
+                            },
+                            "evaluatorInput": "0.07 8"
+                        },
+                        "comments": [
+                            "Quenched spectroscopic factor suggests drastic change in shell structures of $^{31}$Mg and $^{30}$Mg",
+                            "Measured E$_{R}$=2446 keV \\textit{4} (stat) (2014Im02)",
+                            "S: from 0.07 \\textit{3}(stat)\\textit{7}(syst) (2014Im02)"
+                        ]
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 15867,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 3
+                            },
+                            "evaluatorInput": "15867 3",
+                            "comments": [
+                                "IAR of first excited state in $^{31}$Mg at 50 keV, J$\\pi $=3/2+. E$_{ex}$(in $^{31}$Mg)=63 keV \\textit{4} (2014Im02) from energy difference of 2509- and 2446-keV proton resonances with only the statistical uncertainties, which is not in good agreement with the adopted E(level)=50 keV. Note that the 2446- and 2509-keV resonances are unresolved. Consideration of systematic uncertainties in resonance energies may resolve the discrepancy"
+                            ]
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 3,
+                                    "isTentativeSpin": false,
+                                    "parity": "+",
+                                    "isTentativeParity": false
+                                }
+                            ],
+                            "evaluatorInput": "3/2+"
+                        },
+                        "isStable": false,
+                        "decayWidths": {
+                            "totalWidth": {
+                                "unit": "keV",
+                                "value": 1.3,
+                                "uncertainty": {
+                                    "type": "symmetric",
+                                    "value": 1.3
+                                },
+                                "evaluatorInput": "1.3 13"
+                            },
+                            "partialWidths": {
+                                "p": {
+                                    "unit": "keV",
+                                    "value": 1.3,
+                                    "uncertainty": {
+                                        "type": "unreported"
+                                    },
+                                    "evaluatorInput": "1.3"
+                                }
+                            }
+                        },
+                        "deformationLength": {
+                            "unit": "fm",
+                            "value": 0.1,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.11
+                            },
+                            "evaluatorInput": "0.10 11"
+                        },
+                        "comments": [
+                            "Quenched spectroscopic factor suggests drastic change in shell structures of $^{31}$Mg and $^{30}$Mg",
+                            "Measured E$_{R}$=2509 keV \\textit{4} (stat) (2014Im02)",
+                            "S: from 0.10 \\textit{4}(stat)\\textit{10}(syst) (2014Im02)"
+                        ]
+                    },
+                    {
+                        "energy": {
+                            "unit": "keV",
+                            "value": 16026,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 4
+                            },
+                            "evaluatorInput": "16026 4",
+                            "comments": [
+                                "IAR of second excited state in $^{31}$Mg at 221 keV, J$\\pi $=(3/2)-. E$_{ex}$(in $^{31}$Mg)=222 keV \\textit{5} (2014Im02) from energy difference of 2668- and 2446-keV proton resonances with only the statistical uncertainties."
+                            ]
+                        },
+                        "spinParity": {
+                            "values": [
+                                {
+                                    "twoTimesSpin": 3,
+                                    "isTentativeSpin": true,
+                                    "parity": "-",
+                                    "isTentativeParity": false
+                                }
+                            ],
+                            "evaluatorInput": "(3/2)-"
+                        },
+                        "isStable": false,
+                        "decayWidths": {
+                            "totalWidth": {
+                                "unit": "keV",
+                                "value": 109,
+                                "uncertainty": {
+                                    "type": "symmetric",
+                                    "value": 2
+                                },
+                                "evaluatorInput": "109 2"
+                            },
+                            "partialWidths": {
+                                "p": {
+                                    "unit": "keV",
+                                    "value": 79,
+                                    "uncertainty": {
+                                        "type": "unreported"
+                                    },
+                                    "evaluatorInput": "79"
+                                }
+                            }
+                        },
+                        "deformationLength": {
+                            "unit": "fm",
+                            "value": 0.68,
+                            "uncertainty": {
+                                "type": "symmetric",
+                                "value": 0.2
+                            },
+                            "evaluatorInput": "0.68 20"
+                        },
+                        "comments": [
+                            "Measured E$_{R}$=2668 keV \\textit{3} (stat) (2014Im02)",
+                            "Large spectroscopic factor indicates similar shell structure of $^{31}$Mg and $^{30}$Mg",
+                            "S: from 0.68 \\textit{4}(stat)\\textit{20}(syst) (2014Im02)"
+                        ]
+                    }
+                ],
+                "comments": [
+                    {
+                        "text": "Deduced by evaluators from E$_{R}$+S(p)($^{31}$Al), with S(p)=13358.3 \\textit{26} (2021Wa16). Resonance energies were obtained from R-matrix analysis of excitation functions of the proton elastic scattering. The three resonances (IARs) observed here correspond to parent states at 0, 50 and 221 keV in $^{31}$Mg",
+                        "columns": [
+                            "energy"
+                        ]
+                    },
+                    {
+                        "text": "2446- and 2509-keV proton resonances are unresolved as shown in figure 2 of 2014Im02. Choice of values given here is based on R-matrix analysis and minimum $\\chi ^{2}$ using MINUIT computer code. Final values are listed in column 9 of table I in 2014Im02",
+                        "columns": [
+                            "energy",
+                            "angularMomentumTransfer"
+                        ],
+                        "rows": [
+                            0,
+                            1
+                        ]
+                    },
+                    {
+                        "text": "From R-matrix analysis of the excitation functions of the proton elastic scattering.",
+                        "columns": [
+                            "spectroscopicFactor"
+                        ]
+                    },
+                    {
+                        "text": "From R-Matrix analysis in 2014Im02. Identification as IAR of states in $^{31}$Mg is also used for J$\\pi $ assignments. For first excited state, consideration of a 7/2- gave a somewhat higher $\\chi ^{2}$ than 3/2+",
+                        "columns": [
+                            "spinParity",
+                            "halfLife"
+                        ]
+                    }
+                ]
+            },
+            "header": {
+                "documentType": "generalReaction",
+                "schemaVersion": "beta",
+                "datasetName": "1H(30MG,P):IAR",
+                "database": "ENSDF",
+                "z": 13,
+                "n": 18,
+                "a": 31,
+                "elementName": "Aluminium",
+                "elementSymbol": "Al",
+                "history": {
+                    "fullEvaluation": {
+                        "cutoffDate": "2022-06-24",
+                        "publication": "NDS 184, 29 (2022)",
+                        "authors": [
+                            {
+                                "name": "Jun Chen and Balraj Singh"
+                            }
+                        ]
+                    },
+                    "updates": [
+                        {
+                            "date": "2025-05-02",
+                            "authors": [
+                                {
+                                    "name": "NNDC"
+                                }
+                            ],
+                            "comment": "Automatically parsed w/ ensdf-parser on 2025-05-02"
+                        }
+                    ]
+                }
+            },
+            "comments": [
+                "Dataset adapted from compiled dataset from 2014Im02 in the XUNDL database by M.S. Basunia (LBNL), Oct 20, 2014",
+                "Includes $^{12}$C($^{30}$Mg,p) due to the presence of carbon in the target, but contribution from this reaction is found to be negligible (2014Im02)",
+                "2014Im02: E=2.92 MeV/nucleon $^{30}$Mg beam was produced by bombarding 1.4-GeV protons on Uranium Carbide (UC) target and separated by the ISOLDE facility at CERN. Target was 5.6 mg/cm$^{2}$ thick polyethylene. Outgoing protons were detected by two layers of Si detectors (FWHM=80 keV). Measured $\\sigma $(E$_{p}$). Deduced resonance energy E$_{R}$, L-transfer, $\\Gamma _{p}$, and spectroscopic factor from R-matrix analysis. Studied $^{31}$Mg g.s. and first two excited states through their isobaric analog resonances (IAR) in $^{31}$Al. Comparisons of spectroscopic factors with shell-model calculations.",
+                "Determination of structural differences between $^{30}$Mg and $^{31}$Mg, nuclei at the boundary of the 'island of inversion' through the study of IAR (in $^{31}$Al) of low-lying states in $^{31}$Mg (2014Im02)"
+            ],
+            "references": {
+                "cited": [
+                    {
+                        "nsrKeys": [
+                            "2014IM02"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "levelsTable": {
+        "levels": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0
+                    },
+                    "evaluatorInput": "0 0"
+                },
+                "spinParity": {
+                    "values": [
+                        {
+                            "twoTimesSpin": 5,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": true
+                        }
+                    ],
+                    "evaluatorInput": "5/2(+)",
+                    "comments": [
+                        "spin from agreement of measured g-factor=1.517 \\textit{20} with free-nucleon g-factor=1.524 from shell-model calculations. In contrast theoretical g factor=0.804 for another low-lying predicted state 3/2+. Parity is from shell-model predictions giving 5/2+ and 3/2+ as the lowest states."
+                    ]
+                },
+                "isStable": false,
+                "halfLife": {
+                    "unit": "ms",
+                    "value": 644,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 25
+                    },
+                    "evaluatorInput": "644 25"
+                },
+                "decayBranchingRatios": {
+                    "B-n": {
+                        "isObserved": true,
+                        "value": 1.6,
+                        "uncertainty": {
+                            "type": "limit",
+                            "limitType": "upper",
+                            "isInclusive": false
+                        },
+                        "evaluatorInput": "1.6"
+                    },
+                    "B-": {
+                        "isObserved": true,
+                        "value": 100,
+                        "uncertainty": {
+                            "type": "symmetric",
+                            "value": 0
+                        },
+                        "evaluatorInput": "100"
+                    }
+                },
+                "multipoleMoments": {
+                    "E2": {
+                        "unit": "eb",
+                        "isAbsoluteValue": false,
+                        "value": 0.134,
+                        "uncertainty": {
+                            "type": "symmetric",
+                            "value": 0.0016
+                        },
+                        "evaluatorInput": "+0.1340 16",
+                        "comments": [
+                            "0.1340 \\textit{16} from 2009Na03 using $\\beta ^{-}$-NQR method, and sign is from Q=+0.156 \\textit{14} measured by 2021He04 using collinear laser spectroscopy with $^{27}$Al as reference. Others: 0.1365 \\textit{23} (2016He09, $\\beta $-NQR); 0.112 \\textit{32} (2009Na03,2008Na28), same method used as in 2009De25 at RIKEN-RIPS facility. 2007Ka68 (from the same group as 2009Na03) gave a preliminary value of 0.104 \\textit{9}. 2021StZZ evaluation gives a value of 0.134 \\textit{2}, without sign, from 2009De25"
+                        ]
+                    },
+                    "M1": {
+                        "unit": "u_N",
+                        "isAbsoluteValue": false,
+                        "value": 3.827,
+                        "uncertainty": {
+                            "type": "symmetric",
+                            "value": 0.005
+                        },
+                        "evaluatorInput": "+3.827 5",
+                        "comments": [
+                            "weighted average of +3.822 \\textit{11} from collinear laser spectroscopy with $^{27}$Al as reference (2021He04), 3.824 \\textit{8} (2007Ue02) and 3.830 \\textit{5} (2006Hi18) from $\\beta $-NMR method following $\\beta $ decay of $^{31}$Al. Other: 3.79 \\textit{5} (2002Bo22,2002Bo49,2001Ne03, level-mixing resonance on oriented nuclei). 2019StZV evaluation gives +3.832 \\textit{5}, based on value from 2006Hi18"
+                        ]
+                    }
+                },
+                "crossReferences": {
+                    "31MG B- DECAY (270 MS)": [],
+                    "30SI(18O,17F)": [],
+                    "15N(18O,2P)": [],
+                    "32MG B-N DECAY (80.4 MS)": []
+                },
+                "comments": [
+                    "T$_{1/2}$ from timing of $\\beta \\gamma $-coin measurement (1973Go22), with an additional 10 ms systematic uncertainty included. Other: 0.94 $\\mu $s \\textit{43} (1982Mu08) in $\\beta $ decay; 646 ms \\textit{45} (2008ReZZ); 620 ms (1982MuZX)",
+                    "Measured (small) quadrupole moment of the ground state (2021He04,2016He09,2009De25,2009Na03) suggests that $^{31}$Al lies outside the \"island of inversion\" with a dominant sd-shell configuration, and with a possible small admixture of 2p-2h neutron states.",
+                    "Reduced strong absorption radius r$_{o}^{2}$=1.03 fm$^{2}$ \\textit{5} (2006Kh08). Other: 1.16 fm$^{2}$ \\textit{7} (1997Ai02)",
+                    "Relative mean-square charge radius $\\delta $\\textless r$^{2}$\\textgreater ($^{31}$Al,$^{27}$Al)=+0.301 \\textit{16}(stat)\\textit{178}(syst), with an additional systematic uncertainty of 0.250 in the calculations of atomic field shift and mass shift factors (2021He04)"
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 946.7,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.4
+                    },
+                    "evaluatorInput": "946.7 4"
+                },
+                "spinParity": {
+                    "values": [
+                        {
+                            "twoTimesSpin": 1,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 3,
+                            "isTentativeSpin": false
+                        }
+                    ],
+                    "evaluatorInput": "1/2(+),3/2",
+                    "comments": [
+                        "946.7$\\gamma $ to 5/2(+); log \\textit{ft}=6.1 from 1/2+"
+                    ]
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "30SI(18O,17F)": [],
+                    "31MG B- DECAY (270 MS)": []
+                },
+                "gammas": [
+                    2
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 1613,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.3
+                    },
+                    "evaluatorInput": "1613.0 3"
+                },
+                "spinParity": {
+                    "values": [
+                        {
+                            "twoTimesSpin": 1,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        },
+                        {
+                            "twoTimesSpin": 3,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        }
+                    ],
+                    "evaluatorInput": "1/2+,3/2+"
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "30SI(18O,17F)": [],
+                    "31MG B- DECAY (270 MS)": []
+                },
+                "gammas": [
+                    0,
+                    3
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 2090,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 110
+                    },
+                    "evaluatorInput": "2.09E+3 11",
+                    "comments": [
+                        "from ($^{18}$O,2p)"
+                    ]
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "15N(18O,2P)": []
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 2676,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 28
+                    },
+                    "evaluatorInput": "2676 28",
+                    "comments": [
+                        "from ($^{18}$O,$^{17}$F)"
+                    ]
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "30SI(18O,17F)": []
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3239.3,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.5
+                    },
+                    "evaluatorInput": "3239.3 5"
+                },
+                "spinParity": {
+                    "values": [
+                        {
+                            "twoTimesSpin": 1,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        },
+                        {
+                            "twoTimesSpin": 3,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        }
+                    ],
+                    "evaluatorInput": "1/2+,3/2+"
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "31MG B- DECAY (270 MS)": []
+                },
+                "gammas": [
+                    4,
+                    6
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3433.3,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.5
+                    },
+                    "evaluatorInput": "3433.3 5"
+                },
+                "spinParity": {
+                    "values": [
+                        {
+                            "twoTimesSpin": 1,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        },
+                        {
+                            "twoTimesSpin": 3,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        }
+                    ],
+                    "evaluatorInput": "1/2+,3/2+"
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "31MG B- DECAY (270 MS)": []
+                },
+                "gammas": [
+                    5,
+                    7,
+                    12
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3623,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.6
+                    },
+                    "evaluatorInput": "3623.0 6"
+                },
+                "spinParity": {
+                    "values": [
+                        {
+                            "twoTimesSpin": 1,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        },
+                        {
+                            "twoTimesSpin": 3,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        }
+                    ],
+                    "evaluatorInput": "1/2+,3/2+"
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "31MG B- DECAY (270 MS)": [],
+                    "15N(18O,2P)": [
+                        {}
+                    ]
+                },
+                "gammas": [
+                    9,
+                    15
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4143.3,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.4
+                    },
+                    "evaluatorInput": "4143.3 4"
+                },
+                "spinParity": {
+                    "values": [
+                        {
+                            "twoTimesSpin": 1,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        },
+                        {
+                            "twoTimesSpin": 3,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        }
+                    ],
+                    "evaluatorInput": "1/2+,3/2+"
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "31MG B- DECAY (270 MS)": []
+                },
+                "gammas": [
+                    1,
+                    8,
+                    11,
+                    17
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4320,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 90
+                    },
+                    "evaluatorInput": "4320 90",
+                    "comments": [
+                        "from ($^{18}$O,2p)"
+                    ]
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "15N(18O,2P)": []
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4563.7,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.5
+                    },
+                    "evaluatorInput": "4563.7 5"
+                },
+                "spinParity": {
+                    "values": [
+                        {
+                            "twoTimesSpin": 1,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        },
+                        {
+                            "twoTimesSpin": 3,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        }
+                    ],
+                    "evaluatorInput": "1/2+,3/2+"
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "31MG B- DECAY (270 MS)": []
+                },
+                "gammas": [
+                    10,
+                    14,
+                    19
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4640.4,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 1.1
+                    },
+                    "evaluatorInput": "4640.4 11"
+                },
+                "spinParity": {
+                    "values": [
+                        {
+                            "twoTimesSpin": 1,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        },
+                        {
+                            "twoTimesSpin": 3,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        }
+                    ],
+                    "evaluatorInput": "1/2+,3/2+",
+                    "comments": [
+                        "$\\beta $ feeding (log \\textit{ft}=5.8) from 1/2+"
+                    ]
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "31MG B- DECAY (270 MS)": []
+                },
+                "gammas": [
+                    16,
+                    20
+                ]
+            },
+            {
+                "existence": "uncertain",
+                "energy": {
+                    "unit": "keV",
+                    "value": 4809.2,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 1.2
+                    },
+                    "evaluatorInput": "4809.2 12"
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "31MG B- DECAY (270 MS)": [],
+                    "15N(18O,2P)": []
+                },
+                "gammas": [
+                    21
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 5046.5,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 1.4
+                    },
+                    "evaluatorInput": "5046.5 14"
+                },
+                "spinParity": {
+                    "values": [
+                        {
+                            "twoTimesSpin": 1,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        },
+                        {
+                            "twoTimesSpin": 3,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        }
+                    ],
+                    "evaluatorInput": "1/2+,3/2+"
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "31MG B- DECAY (270 MS)": []
+                },
+                "gammas": [
+                    13
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 5149.7,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 1.1
+                    },
+                    "evaluatorInput": "5149.7 11"
+                },
+                "spinParity": {
+                    "values": [
+                        {
+                            "twoTimesSpin": 1,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        },
+                        {
+                            "twoTimesSpin": 3,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        }
+                    ],
+                    "evaluatorInput": "1/2+,3/2+"
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "30SI(18O,17F)": [
+                        {
+                            "levelIndex": 4
+                        }
+                    ],
+                    "31MG B- DECAY (270 MS)": []
+                },
+                "gammas": [
+                    18
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 5729,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 24
+                    },
+                    "evaluatorInput": "5729 24",
+                    "comments": [
+                        "from ($^{18}$O,$^{17}$F)"
+                    ]
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "30SI(18O,17F)": []
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 6480,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 35
+                    },
+                    "evaluatorInput": "6480 35",
+                    "comments": [
+                        "from ($^{18}$O,$^{17}$F)"
+                    ]
+                },
+                "isStable": false,
+                "crossReferences": {
+                    "30SI(18O,17F)": []
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 15804,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5
+                    },
+                    "evaluatorInput": "15804 5"
+                },
+                "spinParity": {
+                    "values": [
+                        {
+                            "twoTimesSpin": 1,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        }
+                    ],
+                    "evaluatorInput": "1/2+"
+                },
+                "isStable": false,
+                "decayWidths": {
+                    "totalWidth": {
+                        "unit": "keV",
+                        "value": 15,
+                        "uncertainty": {
+                            "type": "symmetric",
+                            "value": 8
+                        },
+                        "evaluatorInput": "15 8"
+                    }
+                },
+                "crossReferences": {
+                    "1H(30MG,P):IAR": []
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 15867,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 3
+                    },
+                    "evaluatorInput": "15867 3"
+                },
+                "spinParity": {
+                    "values": [
+                        {
+                            "twoTimesSpin": 3,
+                            "isTentativeSpin": false,
+                            "parity": "+",
+                            "isTentativeParity": false
+                        }
+                    ],
+                    "evaluatorInput": "3/2+"
+                },
+                "isStable": false,
+                "decayWidths": {
+                    "totalWidth": {
+                        "unit": "keV",
+                        "value": 1.3,
+                        "uncertainty": {
+                            "type": "symmetric",
+                            "value": 1.3
+                        },
+                        "evaluatorInput": "1.3 13"
+                    }
+                },
+                "crossReferences": {
+                    "1H(30MG,P):IAR": []
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 16026,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 4
+                    },
+                    "evaluatorInput": "16026 4"
+                },
+                "spinParity": {
+                    "values": [
+                        {
+                            "twoTimesSpin": 3,
+                            "isTentativeSpin": true,
+                            "parity": "-",
+                            "isTentativeParity": false
+                        }
+                    ],
+                    "evaluatorInput": "(3/2)-"
+                },
+                "isStable": false,
+                "decayWidths": {
+                    "totalWidth": {
+                        "unit": "keV",
+                        "value": 109,
+                        "uncertainty": {
+                            "type": "symmetric",
+                            "value": 2
+                        },
+                        "evaluatorInput": "109 2"
+                    }
+                },
+                "crossReferences": {
+                    "1H(30MG,P):IAR": []
+                }
+            }
+        ],
+        "comments": [
+            {
+                "text": "From a least-squares fit to $\\gamma $-ray energies for levels connected with $\\gamma $ transitions and from particle-transfer reactions for others, unless otherwise noted.",
+                "columns": [
+                    "energy"
+                ]
+            },
+            {
+                "text": "$\\Gamma $ from R-matrix analysis in $^{1}$H($^{30}$Mg,p):IAR (2014Im02)",
+                "columns": [
+                    "halfLife"
+                ]
+            },
+            {
+                "text": "Allowed $\\beta $ transitions (log| \\textit{ft}=4.9-5.7) from 1/2+ ($^{31}$Mg g.s.)",
+                "columns": [
+                    "spinParity"
+                ],
+                "rows": [
+                    2,
+                    5,
+                    6,
+                    7,
+                    8,
+                    10,
+                    11,
+                    13,
+                    14
+                ]
+            },
+            {
+                "text": "From R-matrix analysis in $^{1}$H($^{30}$Mg,p):IAR (2014Im02) and identification as IAR of states in $^{31}$Mg",
+                "columns": [
+                    "spinParity"
+                ],
+                "rows": [
+                    17,
+                    18,
+                    19
+                ]
+            }
+        ]
+    },
+    "gammasTable": {
+        "gammas": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 665.9,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.7
+                    },
+                    "evaluatorInput": "665.9 7"
+                },
+                "gammaIntensity": {
+                    "value": 31.4,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 2
+                    },
+                    "evaluatorInput": "31.4 20"
+                },
+                "initialLevel": 2,
+                "finalLevel": 1
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 903.8,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.8
+                    },
+                    "evaluatorInput": "903.8 8"
+                },
+                "gammaIntensity": {
+                    "value": 40,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 6
+                    },
+                    "evaluatorInput": "40 6"
+                },
+                "initialLevel": 8,
+                "finalLevel": 5
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 946.7,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.5
+                    },
+                    "evaluatorInput": "946.7 5"
+                },
+                "gammaIntensity": {
+                    "value": 100,
+                    "uncertainty": {
+                        "type": "unreported"
+                    },
+                    "evaluatorInput": "100"
+                },
+                "initialLevel": 1,
+                "finalLevel": 0
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 1612.8,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.4
+                    },
+                    "evaluatorInput": "1612.8 4"
+                },
+                "gammaIntensity": {
+                    "value": 100,
+                    "uncertainty": {
+                        "type": "unreported"
+                    },
+                    "evaluatorInput": "100"
+                },
+                "initialLevel": 2,
+                "finalLevel": 0
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 1626.2,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.5
+                    },
+                    "evaluatorInput": "1626.2 5"
+                },
+                "gammaIntensity": {
+                    "value": 100,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 2.7
+                    },
+                    "evaluatorInput": "100.0 27"
+                },
+                "initialLevel": 5,
+                "finalLevel": 2
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 1820,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.8
+                    },
+                    "evaluatorInput": "1820.0 8"
+                },
+                "gammaIntensity": {
+                    "value": 100,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 18
+                    },
+                    "evaluatorInput": "100 18"
+                },
+                "initialLevel": 6,
+                "finalLevel": 2
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 2291.7,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 1.4
+                    },
+                    "evaluatorInput": "2291.7 14"
+                },
+                "gammaIntensity": {
+                    "value": 1.7,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.4
+                    },
+                    "evaluatorInput": "1.7 4"
+                },
+                "initialLevel": 5,
+                "finalLevel": 1
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 2487.4,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 1.2
+                    },
+                    "evaluatorInput": "2487.4 12"
+                },
+                "gammaIntensity": {
+                    "value": 37,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 6
+                    },
+                    "evaluatorInput": "37 6"
+                },
+                "initialLevel": 6,
+                "finalLevel": 1
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 2529.7,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.9
+                    },
+                    "evaluatorInput": "2529.7 9"
+                },
+                "gammaIntensity": {
+                    "value": 70,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 7
+                    },
+                    "evaluatorInput": "70 7"
+                },
+                "initialLevel": 8,
+                "finalLevel": 2
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 2675.8,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.9
+                    },
+                    "evaluatorInput": "2675.8 9"
+                },
+                "gammaIntensity": {
+                    "value": 42,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5
+                    },
+                    "evaluatorInput": "42 5"
+                },
+                "initialLevel": 7,
+                "finalLevel": 1
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 2949.4,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 1
+                    },
+                    "evaluatorInput": "2949.4 10"
+                },
+                "gammaIntensity": {
+                    "value": 100,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 10
+                    },
+                    "evaluatorInput": "100 10"
+                },
+                "initialLevel": 10,
+                "finalLevel": 2
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3196.6,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 1
+                    },
+                    "evaluatorInput": "3196.6 10"
+                },
+                "gammaIntensity": {
+                    "value": 100,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 11
+                    },
+                    "evaluatorInput": "100 11"
+                },
+                "initialLevel": 8,
+                "finalLevel": 1
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3432.8,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.8
+                    },
+                    "evaluatorInput": "3432.8 8"
+                },
+                "gammaIntensity": {
+                    "value": 90,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 24
+                    },
+                    "evaluatorInput": "90 24"
+                },
+                "initialLevel": 6,
+                "finalLevel": 0
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3433.3,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 1.4
+                    },
+                    "evaluatorInput": "3433.3 14"
+                },
+                "gammaIntensity": {
+                    "value": 100,
+                    "uncertainty": {
+                        "type": "unreported"
+                    },
+                    "evaluatorInput": "100"
+                },
+                "initialLevel": 13,
+                "finalLevel": 2
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3617.7,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 1.2
+                    },
+                    "evaluatorInput": "3617.7 12"
+                },
+                "gammaIntensity": {
+                    "value": 33,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 9
+                    },
+                    "evaluatorInput": "33 9"
+                },
+                "initialLevel": 10,
+                "finalLevel": 1
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3623,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.8
+                    },
+                    "evaluatorInput": "3623.0 8"
+                },
+                "gammaIntensity": {
+                    "value": 100,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 9
+                    },
+                    "evaluatorInput": "100 9"
+                },
+                "initialLevel": 7,
+                "finalLevel": 0
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3693,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 1.9
+                    },
+                    "evaluatorInput": "3693.0 19"
+                },
+                "gammaIntensity": {
+                    "value": 100,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 28
+                    },
+                    "evaluatorInput": "100 28"
+                },
+                "initialLevel": 11,
+                "finalLevel": 1
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4143.2,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.6
+                    },
+                    "evaluatorInput": "4143.2 6"
+                },
+                "gammaIntensity": {
+                    "value": 8.6,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 3.1
+                    },
+                    "evaluatorInput": "8.6 31"
+                },
+                "initialLevel": 8,
+                "finalLevel": 0
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4202.7,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 1
+                    },
+                    "evaluatorInput": "4202.7 10"
+                },
+                "gammaIntensity": {
+                    "value": 100,
+                    "uncertainty": {
+                        "type": "unreported"
+                    },
+                    "evaluatorInput": "100"
+                },
+                "initialLevel": 14,
+                "finalLevel": 1
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4563.5,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.7
+                    },
+                    "evaluatorInput": "4563.5 7"
+                },
+                "gammaIntensity": {
+                    "value": 14,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5
+                    },
+                    "evaluatorInput": "14 5"
+                },
+                "initialLevel": 10,
+                "finalLevel": 0
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4640.3,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 1.3
+                    },
+                    "evaluatorInput": "4640.3 13"
+                },
+                "gammaIntensity": {
+                    "value": 22,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 8
+                    },
+                    "evaluatorInput": "22 8"
+                },
+                "initialLevel": 11,
+                "finalLevel": 0
+            },
+            {
+                "existence": "uncertain",
+                "energy": {
+                    "unit": "keV",
+                    "value": 4808.8,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 1.2
+                    },
+                    "evaluatorInput": "4808.8 12"
+                },
+                "gammaIntensity": {
+                    "value": 100,
+                    "uncertainty": {
+                        "type": "unreported"
+                    },
+                    "evaluatorInput": "100"
+                },
+                "initialLevel": 12,
+                "finalLevel": 0
+            }
+        ],
+        "comments": [
+            {
+                "text": "From $^{31}$Mg $\\beta ^{-}$ decay",
+                "columns": [
+                    "energy",
+                    "gammaIntensity"
+                ]
+            }
+        ]
+    },
+    "header": {
+        "documentType": "adopted",
+        "schemaVersion": "beta",
+        "datasetName": "ADOPTED LEVELS, GAMMAS",
+        "database": "ENSDF",
+        "z": 13,
+        "n": 18,
+        "a": 31,
+        "elementName": "Aluminium",
+        "elementSymbol": "Al",
+        "history": {
+            "fullEvaluation": {
+                "cutoffDate": "2022-06-24",
+                "publication": "NDS 184, 29 (2022)",
+                "authors": [
+                    {
+                        "name": "Jun Chen and Balraj Singh"
+                    }
+                ]
+            },
+            "updates": [
+                {
+                    "date": "2025-05-02",
+                    "authors": [
+                        {
+                            "name": "NNDC"
+                        }
+                    ],
+                    "comment": "Automatically parsed w/ ensdf-parser on 2025-05-02"
+                }
+            ]
+        },
+        "drawingOptions": {
+            "intensityDisplay": 6
+        }
+    },
+    "comments": [
+        "S(2n)=12885.6 \\textit{23}, S(2p)=32209 \\textit{8}, Q($\\beta ^{-}$n)=1410.9 \\textit{22} (2021Wa16)",
+        "This nucleus is at the edge of a small set of nuclei belonging to the \"island of inversion\" where the ground state is deformed from a spherical shell, investigations in 2005Ma86 show that it does not fall within this group",
+        "Mass measurements: 2015Kw01",
+        "Other measurements:",
+        "2021He04: measured hyperfine spectra using the COLLAPS collinear laser spectroscopy beam line at ISOLDE-CERN. Deduced magnetic dipole and electric quadrupole moments.",
+        "2016He09: measured $\\beta $-detected nuclear quadrupole resonance ($\\beta $-NQR) spectra using the $\\beta $-NRM/NQR setup at LISE-GANIL. Deduced electric quadrupole moment.",
+        "2012Kw02: production cross section measurement in fragmentation of $^{40}$Ar beam at 140 MeV/nucleon with $^{9}$Be, Ni and $^{181}$Ta targets by time-of-flight and energy loss measurements at NSCL facility",
+        "2012Zh06: $^{9}$Be($^{40}$Ar,X) E=57 MeV/nucleon, measured fragment yield, momentum distributions at HIRFL facility; deduced target dependence on production cross section",
+        "2009De25: measured electric quadrupole moment using $\\beta $-NQR method with fragmentation-induced spin-polarized beam at LISE-GANIL facility",
+        "Theoretical calculations: 24 primary references for structure and three for decay characteristics retrieved from the NSR database (www.nndc.bnl.gov/nsr/) are listed under 'document records'."
+    ],
+    "documents": [
+        "Theoretical structure calculations: 2020Bh02, 2020Fo04, 2020Ma25, 2018Ha14, 2018Ka12, 2018Mi22, 2017Sa48, 2016Fu05, 2016Si02, 2013Fu02, 2013Ka02, 2009Yo05, 2006Ko02, 2004Kh16, 1997Pr05, 1983Sa22, 1974Co40.",
+        "$^{31}$Al decay theoretical calculations: 2013Li39, 2003Sm02, 1983Wi08.",
+        "2009Yo05: calculated polarization charges and quadrupole moment"
+    ]
+}
