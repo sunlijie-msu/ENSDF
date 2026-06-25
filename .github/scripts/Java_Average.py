@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ENSDF Averaging Tool - Python Command Line Interface
-Exact implementation matching AverageTool_22January2025.jar
+Adapted from AverageTool_22January2025.jar, part of the ENSDF Analysis and Utility Codes
 
 This tool implements the EXACT same weighted/unweighted averaging algorithm as the Java tool.
 
@@ -27,14 +27,18 @@ ALGORITHM DETAILS (from V.AveLib dataPt.java / averagingMethods.java):
    - Use larger of internal or external uncertainty
    - Unweighted chi^2/(n-1) = sum((x_i - mean_u)^2 / V_i) / (n-1)  [normalized by individual variances]
 
-3. Decision Threshold (HARDCODED in Java AverageReport.java):
-   - THRESHOLD = 3.5 (hardcoded constant, NOT from chi-squared distribution)
-   - If chi^2/(n-1) <= 3.5: use WEIGHTED average (value + max(int,ext) unc)
-   - If chi^2/(n-1)  > 3.5: use UNWEIGHTED average (BOTH value AND uncertainty)
+3. Decision Threshold:
+   - THRESHOLD = max(3.5, chi^2_crit(99% CL))
+   - 3.5 is a hardcoded floor; for n <= 4, chi^2_crit > 3.5 so the larger critical
+     value is used instead — prevents premature rejection of weighted average
+     with small datasets
+   - If chi^2/(n-1) <= threshold: use WEIGHTED average (value + max(int,ext) unc)
+   - If chi^2/(n-1)  > threshold: use UNWEIGHTED average (BOTH value AND uncertainty)
 
 4. Display Critical Value (for reference only, shown in output as [critical=X]):
-   - Java: EnsdfUtil.criticalReducedChi2(N) = chi^2(N-1, 90%) / (N-1) where N = #data points
-   - This is the critical REDUCED chi^2 at 90% confidence (e.g. n=2→2.706, n=3→2.303, n=4→2.084)
+   - Java: EnsdfUtil.criticalReducedChi2(N) = chi^2(N-1, 99%) / (N-1) where N = #data points
+   - This is the critical REDUCED chi^2 at 99% confidence
+   - See critical_chi_sq_display() docstring for canonical table (dof=1..20)
    - This is NOT the adoption decision threshold
 
 5. Minimum Uncertainty Rule (findSuggestedAverage):
@@ -235,28 +239,29 @@ def critical_chi_sq_display(n: int) -> float:
 
     Java uses: criticalReducedChi2(aboveLimitIndexesV().size())
     which takes N = number of data points ABOVE weight limit (nAboveLimit),
-    and returns chi^2(N, 90%) / (N-1).
-
-    CRITICAL: the chi^2 distribution dof = N (NOT N-1).
+    and returns chi^2(N-1, 99%) / (N-1) where the dof = N-1 = |n|-1.
 
     Displayed as [critical=X] alongside chi^2/(n-1) for reference.
     This value is NOT used for the adoption decision.
     The decision uses the hardcoded constant INCONSISTENCY_THRESHOLD = 3.5.
 
-    Examples:
-        n=2: chi^2(2, 90%) / 1 = 4.605
-        n=3: chi^2(3, 90%) / 2 = 3.0
-        n=4: chi^2(4, 90%) / 3 = 2.472
+    Canonical critical reduced chi^2 at 99% CL (dof = n-1):
+        dof  1: 6.635    dof  6: 2.802    dof 11: 2.248    dof 16: 2.000
+        dof  2: 4.605    dof  7: 2.639    dof 12: 2.185    dof 17: 1.965
+        dof  3: 3.782    dof  8: 2.511    dof 13: 2.130    dof 18: 1.934
+        dof  4: 3.319    dof  9: 2.407    dof 14: 2.082    dof 19: 1.905
+        dof  5: 3.017    dof 10: 2.321    dof 15: 2.039    dof 20: 1.878
 
     Args:
         n: number of data points (>= 2)
     Returns:
-        critical reduced chi^2 at 90%, i.e., chi^2(n-1, 90%) / (n-1)
+        critical reduced chi^2 at 99%, i.e., chi^2(n-1, 99%) / (n-1)
     """
     if n <= 1:
         return 0.0
-    # Java: chi^2(n, 90%) / (n-1) — dof for ppf = n, NOT n-1
-    return stats.chi2.ppf(0.90, n) / (n - 1)
+    # dof = n-1 (corrected from Java bug which used dof=n)
+    # conf = 99% matches EnsdfUtil.criticalReducedChi2 standard
+    return stats.chi2.ppf(0.99, n - 1) / (n - 1)
 
 
 def find_suggested_average(result_unc: float, data: List[Tuple[float, float, float]]) -> float:
@@ -668,16 +673,15 @@ def main():
     print(f"           (of all values)        chi**2/(n-1)={uwt_chi2_display:.3f}     [critical={crit_display:.3f}]")
     print()
 
-    # --- ADOPTION DECISION: hardcoded threshold 3.5 (Java AverageReport.java) ---
-    # Java: if Math.min(chi2, all_chi2) > 3.5 -> Unweighted-Average
-    # Java: if avg.isEqualWeighted(avg_all) -> "Weighted-Of-All" (all points used)
-    # Java: else -> "Weighted-Of-All" with avg_all, or default weighted
-    # For the Python (no weight-threshold exclusion): all points are always used,
-    # so avg == avg_all -> label is always "Weighted-Of-All" when chi2 <= 3.5.
+    # --- ADOPTION DECISION: threshold = max(3.5, chi^2_crit) ---
+    # Use the larger of the hardcoded floor (3.5) and the 99% CL critical
+    # reduced chi^2. For n <= 4, chi^2_crit > 3.5, protecting small datasets
+    # from premature rejection of the weighted average.
     chi2_val = wt_result['reduced_chi_sq']
+    effective_threshold = max(INCONSISTENCY_THRESHOLD, crit_display)
 
-    if chi2_val <= INCONSISTENCY_THRESHOLD:
-        label = "Weighted-Of-All"  # all points used (no weight exclusion in this implementation)
+    if chi2_val <= effective_threshold:
+        label = "Weighted-Of-All"
         suggested_value = wt_result['value']
         # Java uses max(internal, external) for the weighted adopted uncertainty
         wt_unc_raw = max(wt_result['internal_unc'], wt_result['external_unc'])
