@@ -2,6 +2,7 @@
  34SI  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34SI  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34SI2 H CUT=28-May-2012$                                                       
+ 34SI dB EAV,LOGFT$From BetaShape v2.4 (Jun-2024) 2023Mo21.                     
  34SI dL E$Least-squares fitting is done by GLSC (version 12-Jun-2026)          
  34SI c  2019Li41: {+34}Mg and {+34}Al ions were produced via fragmentation     
  34SI2c  reactions induced by a 1.4-GeV pulsed proton beam from the Proton      
@@ -48,9 +49,17 @@
  34SI9c  {+34}Si levels, {+34}Al T{-1/2}, decay branching ratios, log {Ift}, and
  34SIAc  |b-delayed neutron emission probability. Comparisons with shell-model  
  34SIBc  calculations.                                                          
- 34SI cB IB$From |g-ray intensity balance                                       
+ 34SI c  The decay scheme is considered incomplete due to a large gap of about  
+ 34SI2c  10.8 MeV between the highest observed level at E=6227 and Q(|b{+-})    
+ 34SI3c  value=16994.1 {I23} (2021Wa16). There may be missing transitions from  
+ 34SI4c  unobserved levels in the gap.                                          
+ 34SI cB IB,LOGFT$|b-feeding intensity is from |g-ray intensity balance at each 
+ 34SI2cB level. Quoted I|b{+-} values are considered upper limits due to the    
+ 34SI3cB incomplete decay scheme, and the associated log {Ift} values are       
+ 34SI4cB considered lower limits.                                               
+ 34SI cG E,RI$From 2019Li41.                                                    
  34SI cL E$From a least-squares fit to |g-ray energies.                         
- 34SI cL J$From the Adopted Levels.                                             
+ 34SI cL J,T$From the Adopted Levels.                                           
  34AL  P 0.0          4-               54.0 MS   10             16994.1   23    
  34AL cP J,T$From the Adopted Levels of {+34}Al.                                
  34AL cP QP$From 2021Wa16.                                                      
@@ -61,60 +70,78 @@
  34SI4cN deduced normalization factor may be considered an upper limit due to   
  34SI5cN potential missing |g transitions from unobserved levels in the gap to  
  34SI6cN the ground state. The original normalization factor is 0.61 {I6} in    
- 34SI7cN 2017Li03. 2017Li03 states that the number of implanted 34Mg and 34Al   
- 34SI8cN nuclei is derived from singles |g-ray spectra, using the transitions   
+ 34SI7cN 2017Li03. 2017Li03 states that the numbers of implanted 34Mg and 34Al  
+ 34SI8cN nuclei are derived from singles |g-ray spectra, using the transitions  
  34SI9cN corresponding to the last populated daughters in the decay chains.     
  34SI PN                                                                     5  
  34SI  L 0.0          0+                                                        
  34SI  L 2718.77   12 0+                                                        
- 34SI  B             0.1     LT          7.7     GT                            ?
- 34SIS B EAV=6833.8 69                                                          
+ 34SI  B             0.12    LT          15.9    GT                          3U?
+ 34SIS B EAV=6832.6 11                                                          
  34SI  G 2718                   [E0]                            0.5       LT    
  34SI  L 3325.58   7  2+                                                        
  34SI  G 606.8     1  0.056  6                                                  
+ 34SI2 G %IG=0.034                                                              
  34SI  G 3325.4    1  100    2                                                  
- 34SI  B             0.1     LT          7.6     GT                             
- 34SIS B EAV=6534.7 69                                                          
+ 34SI2 G %IG=61                                                                 
+ 34SI  B             0.1     LT          10.3    GT                          1U 
+ 34SIS B EAV=6527.5 11                                                          
  34SI  L 4254.68   8  3-                                                        
  34SI  G 929.1     1  94     2                                                  
+ 34SI2 G %IG=57                                                                 
  34SI  G 4254.4    1  28     1                                                  
- 34SI  B             41      7           4.84    8                              
- 34SIS B EAV=6076.6 69                                                          
+ 34SI2 G %IG=17                                                                 
+ 34SI  B             41      7           4.9     1                              
+ 34SIS B EAV=6068.7 11                                                          
  34SI  L 4378.85   10 (4-)                                                      
  34SI  G 123.9     1  54     2                                                  
- 34SI  B             28      3           4.98    5                              
- 34SIS B EAV=6015.4 69                                                          
+ 34SI2 G %IG=33                                                                 
+ 34SI  B             28      3           5.00    6                              
+ 34SIS B EAV=6007.7 11                                                          
  34SI  L 4518.99   7  (2+)                                                      
  34SI  G 1193.4    1  0.83   3                                                  
+ 34SI2 G %IG=0.51                                                               
  34SI  G 4518.6    1  0.05   2                                                  
- 34SI  B             0.1     LT          7.4     GT                            ?
- 34SIS B EAV=5946.3 69                                                          
+ 34SI2 G %IG=0.031                                                              
+ 34SI  B             0.1     LT          10.0    GT                          1U?
+ 34SIS B EAV=5941.4 11                                                          
  34SI  L 4969.65   12 (5-)                                                      
  34SI  G 590.8     1  6.5    2                                                  
- 34SI  B             3.9     4           5.74    5                              
- 34SIS B EAV=5724.0 69                                                          
+ 34SI2 G %IG=4.0                                                                
+ 34SI  B             3.9     4           5.76    5                              
+ 34SIS B EAV=5717.5 11                                                          
  34SI  L 5041.34   10 (3-)                                                      
  34SI  G 1715.7    1  1.8    1                                                  
- 34SI  B             0.95    13          6.34    6                             ?
- 34SIS B EAV=5688.6 69                                                          
- 34SI  L 5348.84   10 (2+)                                                      
+ 34SI2 G %IG=1.1                                                                
+ 34SI  B             0.95    13          6.4     1                              
+ 34SIS B EAV=5682.3 11                                                          
+ 34SI  L 5348.84   11 (2+)                                                      
  34SI  G 2023.1    2  0.18   2                                                  
+ 34SI2 G %IG=0.11                                                               
  34SI  G 5348.7    2  0.38   3                                                  
- 34SI  B             0.1     LT          7.3     GT                             
- 34SIS B EAV=5536.9 69                                                          
+ 34SI2 G %IG=0.23                                                               
+ 34SI  B             0.1     LT          9.8     GT                          1U 
+ 34SIS B EAV=5534.0 11                                                          
  34SI  L 6022.19   9  (3-)                                                      
  34SI  G 673.4     1  0.53   2                                                  
+ 34SI2 G %IG=0.32                                                               
  34SI  G 1503.1    1  0.79   2                                                  
+ 34SI2 G %IG=0.48                                                               
  34SI  G 2696.5    1  3.2    1                                                  
- 34SI  B             2.76    21          5.70    4                              
- 34SIS B EAV=5204.6 70                                                          
+ 34SI2 G %IG=2.0                                                                
+ 34SI  B             2.76    21          5.72    4                              
+ 34SIS B EAV=5200.3 11                                                          
  34SI  L 6227.17   10 (4-)                                                      
  34SI  G 1185.8    1  0.25   2                                                  
+ 34SI2 G %IG=0.15                                                               
  34SI  G 1257.5    1  0.04   1                                                  
+ 34SI2 G %IG=0.024                                                              
  34SI  G 1848.0    1  0.87   5                                                  
+ 34SI2 G %IG=0.53                                                               
  34SI  G 1972.7    1  0.14   2                                                  
- 34SI  B             0.79    7           6.20    4                              
- 34SIS B EAV=5103.4 70                                                          
+ 34SI2 G %IG=0.085                                                              
+ 34SI  B             0.79    7           6.22    5                              
+ 34SIS B EAV=5099.6 11                                                          
  34SI  L 7549+X                                                              R  
  34SI cL E$x<9445.4 {I22} from Q(|b{+-})({+34}Al)-S(n)({+34}Si), where          
  34SI2cL Q(|b{+-})({+34}Al)=16994.1 {I23} and S(n)({+34}Al)=7548.7 {I11} from   
@@ -126,3 +153,4 @@
  34SI2cL Q(|b{+-})({+34}Al)=16994.1 {I23} and S(2n)({+34}Al)=12056.6 {I9} from  
  34SI3cL 2021Wa16. This represents a range of unidentified levels in {+34}Si    
  34SI4cL that subsequently decay to {+32}Si via two-neutron emission.           
+
