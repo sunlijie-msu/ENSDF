@@ -1,10 +1,12 @@
- 34SI    34AL B- DECAY (23.2 MS)       2019LI41,2017HA23         ENSDF    202609
+ 34SI    34AL B- DECAY (23.2 MS)       2019LI41,2017HA23,2012RO25ENSDF    202609
  34SI  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34SI  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34SI2 H CUT=28-May-2012$                                                       
+ 34SI dB EAV,LOGFT$From BetaShape v2.4 (Jun-2024) 2023Mo21.                     
+ 34SI dL E$Least-squares fitting is done by GLSC (version 12-Jun-2026)          
  34SI c  2019Li41: {+34}Mg and {+34}Al ions were produced via fragmentation     
  34SI2c  reactions induced by a 1.4-GeV pulsed proton beam from the Proton      
- 34SI3c  Synchrotron Booster on a UC{-x} target at ISOLDE-CERN. Th atoms that   
+ 34SI3c  Synchrotron Booster on a UC{-x} target at CERN-ISOLDE. Th atoms that   
  34SI4c  diffused out of the target matrix were selectively laser ionized using 
  34SI5c  the resonance ionization laser ion source (RILIS) and accelerated to 40
  34SI6c  keV. A=34 nuclei were selected by the ISOLDE General Purpose Separator 
@@ -18,41 +20,68 @@
  34SIEc  ratios, log {Ift}, T{-1/2} and %|b{+-}n of parent, and configuration   
  34SIFc  mixings. Comparisons with large-scale shell-model calculations using   
  34SIGc  the SDPF-U-MIX interaction.                                            
- 34AL c  2017Ha23, 2017Ha34: a 69.2-MeV/nucleon {+40}Ar primary beam was        
- 34AL2c  produced by the Sector Focusing Cyclotron and Separated Sector         
- 34AL3c  Cyclotron at the Heavy Ion Research Facility in Lanzhou (HIRFL). The   
- 34AL4c  secondary beam containing {+34}Al was produced via the projectile      
- 34AL5c  fragmentation of {+40}Ca impinging on a 182.6-mg/cm{+2} {+9}Be target  
- 34AL6c  and was selected using |DE-tof-B|r by the Radioactive Ion Beam Line in 
- 34AL7c  Lanzhou (RIBLL). The secondary beam ions were transported into a target
- 34AL8c  chamber filled with low-temperature nitrogen and implanted into a      
- 34AL9c  1500-|mm-thick DSSD sandwiched between two 3000-|mm-thick plastic      
- 34ALAc  scintillators for beam diagnostics and veto, respectively. |g rays were
- 34ALBc  detected using two Ge clover detectors. The fast timing signals of the 
- 34ALCc  |g rays were provided by a lanthanum bromide (LaBr{-3}) detector.      
- 34ALDc  Neutrons were detected using two plastic scintillator arrays. Measured 
- 34ALEc  implant-|b correlation, E|g, I|g, |b|g-coin, |g|g-coin, and |bn-coin.  
- 34ALFc  Deduced levels, J, |p, decay branching ratios, log {Ift}, parent       
- 34ALGc  {+34}Al and {+34}Al isomer T{-1/2}. Comparisons with shell-model       
- 34ALHc  calculations using Gogny D1S and SDPF-M interactions. Also see 2019Wa38
- 34ALIc  for the same experiment with 35Al |b-delayed neutron data.             
- 34SI cB IB$From |g-ray intensity balance                                       
- 34SI cL E$From least-squares fit to E|g data, by compiler                      
- 34SI cL J$As proposed by 2019Li41 based on log {Ift} values and |g ray decay   
- 34SI2cL patterns.                                                              
+ 34SI c  2017Ha23, 2017Ha34: a 69.2-MeV/nucleon {+40}Ar primary beam was        
+ 34SI2c  produced by the Sector Focusing Cyclotron and Separated Sector         
+ 34SI3c  Cyclotron at the Heavy Ion Research Facility in Lanzhou (HIRFL). The   
+ 34SI4c  secondary beam containing {+34}Al was produced via the projectile      
+ 34SI5c  fragmentation of {+40}Ca impinging on a 182.6-mg/cm{+2} {+9}Be target  
+ 34SI6c  and was selected using |DE-tof-B|r by the Radioactive Ion Beam Line in 
+ 34SI7c  Lanzhou (RIBLL). The secondary beam ions were transported into a target
+ 34SI8c  chamber filled with low-temperature nitrogen and implanted into a      
+ 34SI9c  1500-|mm-thick DSSD sandwiched between two 3000-|mm-thick plastic      
+ 34SIAc  scintillators for beam diagnostics and veto, respectively. |g rays were
+ 34SIBc  detected using two Ge clover detectors. The fast timing signals of the 
+ 34SICc  |g rays were provided by a lanthanum bromide (LaBr{-3}) detector.      
+ 34SIDc  Neutrons were detected using two plastic scintillator arrays. Measured 
+ 34SIEc  implant-|b correlation, E|g, I|g, |b|g-coin, |g|g-coin, and |bn-coin.  
+ 34SIFc  Deduced levels, J, |p, decay branching ratios, log {Ift}, parent       
+ 34SIGc  {+34}Al and {+34}Al isomer T{-1/2}. Comparisons with shell-model       
+ 34SIHc  calculations using Gogny D1S and SDPF-M interactions. Also see 2019Wa38
+ 34SIIc  for the same experiment with {+35}Al |b-delayed neutron data.          
+ 34SI c  2012Ro25: a 600-pps, 93% pure {+34}Al secondary beam was produced via  
+ 34SI2c  the projectile fragmentation of a 77.5-MeV/nucleon {+36}S primary beam 
+ 34SI3c  on a 240-mg/cm{+2} {+9}Be target and selected by the LISE3 spectrometer
+ 34SI4c  at GANIL. {+34}Al ions were implanted into a 50-|mm Kapton foil in a   
+ 34SI5c  beam-on (120 ms)/beam-off (300 ms) mode. Electrons and positrons were  
+ 34SI6c  detected using four |DE-E telescopes, each consisting of a 1-mm-thick  
+ 34SI7c  Si detector and a 4.5-mm-thick Si(Li) detector. |g rays were detected  
+ 34SI8c  using two Ge clover detectors of the EXOGAM array. Measured E|b,       
+ 34SI9c  Ee{++}, Ee{+-}, E|g, |b|g-coin, and |be{++}/e{+-}coin. Deduced {+34}Al 
+ 34SIAc  g.s. and isomer T{-1/2}, {+34}Si levels, J, |p, transition strengths,  
+ 34SIBc  and configuration mixing. Comparisons with shell-model calculations.   
+ 34SICc  Earlier measurements at GANIL: 1988Mu08, 1986Du07.                     
+ 34SI c  The decay scheme is considered incomplete due to a large gap of about  
+ 34SI2c  10.8 MeV between the highest observed level at E=6227 and Q(|b{+-})    
+ 34SI3c  value=16994.1 {I23} (2021Wa16). There may be missing transitions from  
+ 34SI4c  unobserved levels in the gap.                                          
+ 34SI cB IB,LOGFT$|b-feeding intensity is from |g-ray intensity balance at each 
+ 34SI2cB level. Quoted I|b{+-} values are considered upper limits due to the    
+ 34SI3cB incomplete decay scheme, and the associated log {Ift} values are       
+ 34SI4cB considered lower limits.                                               
+ 34SI cG E,RI$From 2019Li41.                                                    
+ 34SI cL E$From a least-squares fit to |g-ray energies.                         
+ 34SI cL J,T$From the Adopted Levels.                                           
  34AL  P 46.56     11 1+               23.2 MS   14             16994.1   23    
  34AL cP E,J,T$From the Adopted Levels of {+34}Al.                              
  34AL cP QP$From 2021Wa16.                                                      
- 34SI  N 0.22      3  0.22   3  1.0       1.0                                   
- 34SI cN NR$from 2019Li41 from measurement of number of implanted nuclei;       
- 34SI2cN analysis includes following the decay of daughters {+33}Mg and {+33}Al 
- 34SI cN BR$%|b{+-}n=11 {I4} (2019Li41)                                         
- 34SI PN                                                                     3  
+ 34SI  N 0.22         0.22     1.0       1.0                                    
+ 34SI cN NR$From |S%I(|g+ce to g.s.)=89 {I4}, deduced from                      
+ 34SI2cN 100-%|b{+-}n-%I|b{+-}(g.s.), where %|b{+-}n=22 {I5} from the Adopted   
+ 34SI3cN Levels of {+34}Al (originally from 2019Li41) and %I|b{+-}(g.s.)=27     
+ 34SI4cN {I10}. The deduced normalization factor may be considered an upper     
+ 34SI5cN limit due to potential missing |g transitions from unobserved levels in
+ 34SI6cN the gap to the ground state. The original normalization factor is 0.61 
+ 34SI7cN {I6} in 2019Li41. 2019Li41 states that the numbers of implanted {+34}Mg
+ 34SI8cN and {+34}Al nuclei are derived from singles |g-ray spectra, using the  
+ 34SI9cN transitions corresponding to the last populated daughters in the decay 
+ 34SIAcN chains.                                                                
+ 34SI PN                                                                     5  
  34SI  L 0.0          0+                                                        
  34SI  B             27      10          5.24    16                             
  34SIS B EAV=8194.6 69                                                          
- 34SI  L 2718.52   10 0+                19.4 NS   5                             
- 34SI cL T$from |b-E0(t) (2019Li41)                                             
+ 34SI  L 2718.52   10 0+               19.4 NS   5                             
+ 34SI cL T$from fit of time difference between |b and electron-positron pair due
+ 34SI2cL to 0+ |) 0+ E0 transition (2019Li41).                                  
  34SI  G 2718.4    1            E0                               168      3     
  34SI  B             37      6           4.74    7                              
  34SIS B EAV=6856.8 69                                                          
@@ -122,4 +151,15 @@
  34SI  G 4150.4    1  14.6   5                                                  
  34SI  B             5.6     6           4.72    5                              
  34SIS B EAV=4510.0 70                                                          
+ 34SI  L 7549+X                                                              R  
+ 34SI cL E$x<9445.4 {I22} from Q(|b{+-})({+34}Al)-S(n)({+34}Si), where          
+ 34SI2cL Q(|b{+-})({+34}Al)=16994.1 {I23} and S(n)({+34}Al)=7548.7 {I11} from   
+ 34SI3cL 2021Wa16. This represents a range of unidentified levels in {+34}Si    
+ 34SI4cL that subsequently decay to {+33}Si via one-neutron emission.           
+ 34SI  B             11      4                                                  
+ 34SI  L 12057+Y                                                             R  
+ 34SI cL E$y<4937 {I3} from Q(|b{+-})({+34}Al)-S(2n)({+34}Si), where            
+ 34SI2cL Q(|b{+-})({+34}Al)=16994.1 {I23} and S(2n)({+34}Al)=12056.6 {I9} from  
+ 34SI3cL 2021Wa16. This represents a range of unidentified levels in {+34}Si    
+ 34SI4cL that subsequently decay to {+32}Si via two-neutron emission.           
 
