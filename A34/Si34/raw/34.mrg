@@ -1,0 +1,584 @@
+Program for consistency check: output for original lines grouped by level and gamma energies (version 06/19/2026)
+Generated at: Wed 07/01/2026 at 12:03:53 AM EDT
+
+
+Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
+         available data in the corresponding dataset, including decay data (logft or HF), L-transfer, and decaying
+         and feeding gammas of each level, and so on.
+      2. possible JPI presented at the end of each adopted record line is deduced by combining data from all
+         individual datasets (data from the record lines only and might be incomplete since arguments only presented
+         in comments haven't been considered, like shell-model calculations, analyzing power, atomic method for g.s.
+         spin, and other qualitative arguments).
+
+*** All possible JPI values are for reference purpose only and should not be taken as the final adopted assignments ***
+
+
+########################################################################################################################
+        new XREFs                        old XREFs
+ 34SI  XA34AL B- DECAY (53.73 MS)      A-A 34AL B- DECAY (53.73 MS)
+ 34SI  XB34AL B- DECAY (23.2 MS)       B-B 34AL B- DECAY (23.2 MS)
+ 34SI  XC34AL B- DECAY:MIXED           C-C 34AL B- DECAY:MIXED
+ 34SI  XD35AL B-N DECAY (38.1 MS)      D-D 35AL B-N DECAY (38.1 MS)
+ 34SI  XE2H(34SI,34SI'G)               E-E 2H(34SI,34SI'G)
+ 34SI  XF7LI(34P,7BEG)                 F-F 7LI(34P,7BEG)
+ 34SI  XG9BE(35SI,34SIG)               G-G 9BE(35SI,34SIG)
+ 34SI  XH18O(18O,2PG)                  H-H 18O(18O,2PG)
+ 34SI  XI36S(11B,13N)                  I-I 36S(11B,13N)
+ 34SI  XJ36S(14C,16O)                  J-J 36S(14C,16O)
+ 34SI  XK160GD(34S,XG),(36S,XG)        K-K 160GD(34S,XG),(36S,XG)
+ 34SI  XLSI(34SI,34SI'G)               L-L SI(34SI,34SI'G)
+ 34SI  XMCOULOMB EXCITATION            M-M COULOMB EXCITATION
+################################## new tag show first below ############################################################
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 0.0          0+               2.77 S    20                              --- possible JPI=(2+): 2718.4g from 2718.52, (1+,2+)
+                     *new XREF new tags    34SIX L XREF=ABCDEFGHIJKLM
+                     *new XREF old tags    34SIX L XREF=ABCDEFGHIJKLM
+                     #old XREF in Adopted  34SIX L XREF=ABCDEFGHIJKLM
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  L 0.0          0+               2.77 S    20                              *** possible JPI=(1-,2,3,4,5,6,7-): 4254.4g from 4254.68,3-
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 0.0          0+               2.77 S    20                              *** possible JPI=0+,1+,2+: logft=5.24(16) from 1+
+           34AL B- DECAY:MIXED--->C  C     34SI  L 0            0+                                                        
+      35AL B-N DECAY (38.1 MS)--->D  D     34SI  L 0            0+                                                        
+               2H(34SI,34SI'G)--->E  E     34SI  L 0.0          0+                                                        
+                 7LI(34P,7BEG)--->F  F     34SI  L 0                                             0                    A   
+               9BE(35SI,34SIG)--->G  G     34SI  L 0                                                                      
+                  18O(18O,2PG)--->H  H     34SI  L 0                                                                      
+                  36S(11B,13N)--->I  I     34SI  L 0            0+                                                        
+                  36S(14C,16O)--->J  J     34SI  L 0                                                                      
+        160GD(34S,XG),(36S,XG)--->K  K     34SI  L 0            0+                                                        
+               SI(34SI,34SI'G)--->L  L     34SI  L 0                                                                      
+            COULOMB EXCITATION--->M  M     34SI  L 0                                                                      
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             27      10          5.24    16                             
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 2718.52   10 0+               19.4 NS   5                               --- possible JPI=(1+,2+)
+                     *new XREF new tags    34SIX L XREF=ABC
+                     *new XREF old tags    34SIX L XREF=ABC
+                     #old XREF in Adopted  34SIX L XREF=ABC
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  L 2718.77   12 0+                                                         *** possible JPI=(0,1,2,3,4,5,6,7,8): logft=15.9(GT) from 4-
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 2718.52   10 0+               19.4 NS   5                               *** possible JPI=0+,1+,2+: logft=4.74(7) from 1+
+           34AL B- DECAY:MIXED--->C  C     34SI  L 2718.6    3  0+                                                        
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  B             0.12    LT          15.9    GT                          3U?
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             37      6           4.74    7                              
+ GAMMA------------------------------------ 34SI  G 2718.4    1                                                             --- EG=2718.4     FL=0.0        JF=0+
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 2718                   [E0]                                             *** EG=2718       FL=0.0        JF=0+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 2718.4    1            [E0]                                             *** EG=2718.4     FL=0.0        JF=0+
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 3327.14   20 2+               82 FS     32                              --- possible JPI=(2+)
+                     *new XREF new tags    34SIX L XREF=ABCDEFGHKLM(3305)
+                     *new XREF old tags    34SIX L XREF=ABCDEFGHKLM(3305)
+                     #old XREF in Adopted  34SIX L XREF=ABCDEFGHKLM(3305)
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  L 3325.58   7  2+                                                         *** possible JPI=(1-,2,3,4,5,6,7-): logft=10.3(GT) from 4-; 929.1g from 4254.68,3-; 2696.5g from 6022.19,(3-)
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 3325.59   6  2+                                                         *** possible JPI=0+,1+,2+: logft=5.37(19) from 1+
+           34AL B- DECAY:MIXED--->C  C     34SI  L 3325.7    1  2+                                                        
+      35AL B-N DECAY (38.1 MS)--->D  D     34SI  L 3327.1    7  2+                                                        
+               2H(34SI,34SI'G)--->E  E     34SI  L 3326         2+                                                        
+                 7LI(34P,7BEG)--->F  F     34SI  L 3326                                                                   
+               9BE(35SI,34SIG)--->G  G     34SI  L 3327                                                                   
+                  18O(18O,2PG)--->H  H     34SI  L 3326.2    8                                                            
+        160GD(34S,XG),(36S,XG)--->K  K     34SI  L 3326         2+                                                        
+               SI(34SI,34SI'G)--->L  L     34SI  L 3330      50                                                           
+            COULOMB EXCITATION--->M  M     34SI  L 3305      55                                                           
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  B             0.1     LT          10.3    GT                          1U 
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             7       3           5.37    19                             
+               SI(34SI,34SI'G)--->L  L     34SI cL $Population |s=9.5 {I2}.
+            COULOMB EXCITATION--->M  M     34SI2 L BE2=0.0085 33 (1998Ib01)                                               
+            COULOMB EXCITATION--->M  M     34SI cL $|s=18.5 mb {I72} (1998Ib01).
+ GAMMA------------------------------------ 34SI  G 606.8     1  0.103  47 [E2]                                             --- EG=606.8      FL=2718.52    JF=0+
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 606.8     1 0.056   6                                                   *** EG=606.8      FL=2718.77    JF=0+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 607.0     3 0.15    2                                                   *** EG=607.0      FL=2718.6     JF=0+
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=0.034                                                              
+      34AL B- DECAY (53.73 MS)--->A  A     34SI cG RI$other: 0.073 {I+79-25} from I|g(3326)/I|g(607)=1380 {I717}          
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2cG (2012Ro25).                                                            
+ GAMMA------------------------------------ 34SI  G 3325.45   10 100.0  15 [E2]                                             --- EG=3325.45    FL=0.0        JF=0+
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 3325.4    1 100     2                                                   *** EG=3325.4     FL=0.0        JF=0+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 3325.4    1 100                                                         *** EG=3325.4     FL=0.0        JF=0+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 3325.5    2 100.0   15                                                  *** EG=3325.5     FL=0          JF=0+
+      35AL B-N DECAY (38.1 MS)--->D  D     34SI  G 3326.96   70 100       [E2]                                             *** EG=3326.96    FL=0          JF=0+
+               2H(34SI,34SI'G)--->E  E     34SI  G 3326        100                                                         *** EG=3326       FL=0.0        JF=0+
+                 7LI(34P,7BEG)--->F  F     34SI  G 3326                                                                    *** EG=3326       FL=0          JF=
+               9BE(35SI,34SIG)--->G  G     34SI  G 3326        100                                                         *** EG=3326       FL=0          JF=
+                  18O(18O,2PG)--->H  H     34SI  G 3326      1                                                             *** EG=3326       FL=0          JF=
+        160GD(34S,XG),(36S,XG)--->K  K     34SI  G 3326                                                                    *** EG=3326       FL=0          JF=0+
+               SI(34SI,34SI'G)--->L  L     34SI  G 3330      50                                                            *** EG=3330       FL=0          JF=
+            COULOMB EXCITATION--->M  M     34SI  G 3305      55                                                            *** EG=3305       FL=0          JF=
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=61                                                                 
+      35AL B-N DECAY (38.1 MS)--->D  D     34SI2 G %IG=5.5                                                                
+      35AL B-N DECAY (38.1 MS)--->D  D     34SI cG RI$100 {I27} from 2005Ti11 and 100 {I20} from 2001Nu01.                
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 3590      25                                                            ---
+                     *new XREF new tags    34SIX L XREF=J
+                     *new XREF old tags    34SIX L XREF=J
+                     #old XREF in Adopted  34SIX L XREF=J
+                  36S(14C,16O)--->J  J     34SI  L 3590      25                                                           
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 4256.1    4  3-               210 NS    LT                              --- possible JPI=(3-)
+                     *new XREF new tags    34SIX L XREF=ABCDEFGHKL(4270)
+                     *new XREF old tags    34SIX L XREF=ABCDEFGHKL(4270)
+                     #old XREF in Adopted  34SIX L XREF=ABCDEFGHKL(4270)
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  L 4254.68   8  3-                                                         *** possible JPI=3-,4-,5-: logft=4.9(1) from 4-
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 4254.70   8  3-                                                         *** possible JPI=(0,1,2,3,4+): logft=7.1(GT) from 1+
+           34AL B- DECAY:MIXED--->C  C     34SI  L 4254.9    1  3-                                                        
+      35AL B-N DECAY (38.1 MS)--->D  D     34SI  L 4256.3    8  (3-)                                                      
+               2H(34SI,34SI'G)--->E  E     34SI  L 4256                                                                   
+                 7LI(34P,7BEG)--->F  F     34SI  L 4256                                                                   
+               9BE(35SI,34SIG)--->G  G     34SI  L 4257                                                                   
+                  18O(18O,2PG)--->H  H     34SI  L 4255.2    8                                                            
+        160GD(34S,XG),(36S,XG)--->K  K     34SI  L 4255         3-                                                        
+               SI(34SI,34SI'G)--->L  L     34SI  L 4270      71                                                           
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  B             41      7           4.9     1                              
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             0.1     LT          7.1     GT                             
+               SI(34SI,34SI'G)--->L  L     34SI cL $Population |s=4.3 {I15}.
+ GAMMA------------------------------------ 34SI  G 929.12    10 100.0  16 (E1+M2)  +0.02   1                               --- EG=929.12     FL=3327.14    JF=2+
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 929.1     1 100.0   21                                                  *** EG=929.1      FL=3325.58    JF=2+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 929.1     1 100     4                                                   *** EG=929.1      FL=3325.59    JF=2+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 929.2     2 100.0   16 D+Q      +0.02   1                               *** EG=929.2      FL=3325.7     JF=2+
+      35AL B-N DECAY (38.1 MS)--->D  D     34SI  G 929.12    40 100                                                        *** EG=929.12     FL=3327.1     JF=2+
+               2H(34SI,34SI'G)--->E  E     34SI  G 930         100.0   27                                                  *** EG=930        FL=3326       JF=2+
+                 7LI(34P,7BEG)--->F  F     34SI  G 929                                                                     *** EG=929        FL=3326       JF=
+               9BE(35SI,34SIG)--->G  G     34SI  G 929         100     12                                                  *** EG=929        FL=3327       JF=
+                  18O(18O,2PG)--->H  H     34SI  G 929       1                                                             *** EG=929        FL=3326.2     JF=
+        160GD(34S,XG),(36S,XG)--->K  K     34SI  G 929                                                                     *** EG=929        FL=3326       JF=2+
+               SI(34SI,34SI'G)--->L  L     34SI  G 940       50                                                            *** EG=940        FL=3330       JF=
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=57                                                                 
+      35AL B-N DECAY (38.1 MS)--->D  D     34SI2 G %IG=1.8                                                                
+      35AL B-N DECAY (38.1 MS)--->D  D     34SI cG RI$weighted average of 36 {I15} from 2005Ti11 and 32 {I7} from         
+      35AL B-N DECAY (38.1 MS)--->D  D     34SI2cG 2001Nu01.                                                              
+               SI(34SI,34SI'G)--->L  L     34SI cG E$950 {I50} is given in text of 2002Mi44.                              
+ GAMMA------------------------------------ 34SI  G 4254.4    1  26.9   9  [E3]                                             --- EG=4254.4     FL=0.0        JF=0+
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 4254.4    1 29.8    11                                                  *** EG=4254.4     FL=0.0        JF=0+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 4254.4    1 27      4                                                   *** EG=4254.4     FL=0.0        JF=0+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 4254.6    2 26.5    5                                                   *** EG=4254.6     FL=0          JF=0+
+               2H(34SI,34SI'G)--->E  E     34SI  G 4255        53.4    31                                                  *** EG=4255       FL=0.0        JF=0+
+                 7LI(34P,7BEG)--->F  F     34SI  G 4255                                                                    *** EG=4255       FL=0          JF=
+               9BE(35SI,34SIG)--->G  G     34SI  G 4257        21.2    30                                                  *** EG=4257       FL=0          JF=
+                  18O(18O,2PG)--->H  H     34SI  G 4255      1                                                             *** EG=4255       FL=0          JF=
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=17                                                                 
+               2H(34SI,34SI'G)--->E  E     34SI cG RI$contains contamination from {+32}Si and {+33}Si |g rays with similar
+               2H(34SI,34SI'G)--->E  E     34SI2cG energies (2003Iw02).                                                   
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 4380.2    4  4-                                                         --- possible JPI=(3-,4-): 590.8g D(+Q) from 4971.1, 3(-),4(-),5(-)
+                     *new XREF new tags    34SIX L XREF=ACDFGHK
+                     *new XREF old tags    34SIX L XREF=ACDFGHK
+                     #old XREF in Adopted  34SIX L XREF=ACDEFGHK
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  L 4378.85   10 (4-)                                                       *** possible JPI=3-,4-,5-: logft=5.00(6) from 4-
+           34AL B- DECAY:MIXED--->C  C     34SI  L 4378.8    2  4-                                                        
+      35AL B-N DECAY (38.1 MS)--->D  D     34SI  L 4380.5    9  (3-)                                                      
+                 7LI(34P,7BEG)--->F  F     34SI  L 4379                                                                   
+               9BE(35SI,34SIG)--->G  G     34SI  L 4380                                                                   
+                  18O(18O,2PG)--->H  H     34SI  L 4379.4    11                                                           
+        160GD(34S,XG),(36S,XG)--->K  K     34SI  L 4380         (4,5)-                                                    
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  B             28      3           5.00    6                              
+                 7LI(34P,7BEG)--->F  F     34SI cL $A summed 1053|g from this level was also included to fit the |g-ray   
+                 7LI(34P,7BEG)--->F  F     34SI2cL spectrum in 2010Ze03.                                                  
+ GAMMA------------------------------------ 34SI  G 123.94    10 100       (M1(+E2))-0.012  17                              --- EG=123.94     FL=4256.1     JF=3-
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 123.9     1 100                                                         *** EG=123.9      FL=4254.68    JF=3-
+           34AL B- DECAY:MIXED--->C  C     34SI  G 124.0     2 100        D(+Q)    -0.012  17                              *** EG=124.0      FL=4254.9     JF=3-
+      35AL B-N DECAY (38.1 MS)--->D  D     34SI  G 124.20    30 100       [M1+E2]                0.025  23                 *** EG=124.20     FL=4256.3     JF=(3-)
+                 7LI(34P,7BEG)--->F  F     34SI  G 125                                                                     *** EG=125        FL=4256       JF=
+               9BE(35SI,34SIG)--->G  G     34SI  G 123                                                                     *** EG=123        FL=4257       JF=
+                  18O(18O,2PG)--->H  H     34SI  G 124       1                                                             *** EG=124        FL=4255.2     JF=
+        160GD(34S,XG),(36S,XG)--->K  K     34SI  G 125                                                                     *** EG=125        FL=4255       JF=3-
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=33                                                                 
+      35AL B-N DECAY (38.1 MS)--->D  D     34SI2 G %IG=0.88                                                               
+      35AL B-N DECAY (38.1 MS)--->D  D     34SI cG RI$weighted average of 16 {I4} from 2005Ti11 and 14 {I11} from         
+      35AL B-N DECAY (38.1 MS)--->D  D     34SI2cG 2001Nu01.                                                              
+ GAMMA------------------------------------ 34SI  G 1053        100     50                                                ?
+               9BE(35SI,34SIG)--->G  G     34SI  G 1053        100     50                                                ? *** EG=1053       FL=3327       JF=
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 4520.2    11 (2+)                                                       --- possible JPI=(1,2,3)
+                     *new XREF new tags    34SIX L XREF=ABCE(?)F(?)G(?)H
+                     *new XREF old tags    34SIX L XREF=ABCE(?)F(?)G(?)H
+                     #old XREF in Adopted  34SIX L XREF=ABCE(4519?)F(4519?)G(4520?)H
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  L 4518.99   7  (2+)                                                       *** possible JPI=(1,2,3,4,5,6,7): logft=10.0(GT) from 4-; 1503.1g from 6022.19,(3-)
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 4518.98   7  (2+)                                                       *** possible JPI=(0,1,2,3): logft=5.35(11) from 1+
+           34AL B- DECAY:MIXED--->C  C     34SI  L 4519.2    2  (2+)                                                      
+               2H(34SI,34SI'G)--->E  E(?)  34SI  L 4519                                                                  ?
+                 7LI(34P,7BEG)--->F  F(?)  34SI  L 4519                                                                  ?
+               9BE(35SI,34SIG)--->G  G(?)  34SI  L 4520                                                               A  ?
+                  18O(18O,2PG)--->H  H     34SI  L 4517.5    11                                                           
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  B             0.1     LT          10.0    GT                          1U?
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             4.8     12          5.35    11                            ?
+ GAMMA------------------------------------ 34SI  G 1193.4    1  100.0  15 D+Q      +0.43   2                               --- EG=1193.4     FL=3327.14    JF=2+
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 1193.4    1 100     4                                                   *** EG=1193.4     FL=3325.58    JF=2+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 1193.4    1 100.0   22                                                  *** EG=1193.4     FL=3325.59    JF=2+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 1193.5    2 100.0   15 D+Q      +0.43   2                               *** EG=1193.5     FL=3325.7     JF=2+
+               2H(34SI,34SI'G)--->E  E(?)  34SI  G 1193        100                                                    A    *** EG=1193       FL=3326       JF=2+
+                 7LI(34P,7BEG)--->F  F(?)  34SI  G 1193                                                                    *** EG=1193       FL=3326       JF=
+               9BE(35SI,34SIG)--->G  G(?)  34SI  G 1193        100                                                    A  ? *** EG=1193       FL=3327       JF=
+                  18O(18O,2PG)--->H  H     34SI  G 1191      1                                                             *** EG=1191       FL=3326.2     JF=
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=0.51                                                               
+ GAMMA------------------------------------ 34SI  G 4518.6    1  5.0    4                                                   --- EG=4518.6     FL=0.0        JF=0+
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 4518.6    1 6.0     24                                                  *** EG=4518.6     FL=0.0        JF=0+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 4518.6    1 5.48    28                                                  *** EG=4518.6     FL=0.0        JF=0+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 4518.8    4 4.46    30                                                  *** EG=4518.8     FL=0          JF=0+
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=0.031                                                              
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 4920.1    10                                                            --- possible JPI=(1-,2,3,4)
+                     *new XREF new tags    34SIX L XREF=H
+                     *new XREF old tags    34SIX L XREF=H
+                     #old XREF in Adopted  34SIX L XREF=H
+                  18O(18O,2PG)--->H  H     34SI  L 4920.1    10                                                           
+ GAMMA------------------------------------ 34SI  G 665       1                                                             --- EG=665        FL=4256.1     JF=3-
+                  18O(18O,2PG)--->H  H     34SI  G 665       1                                                             *** EG=665        FL=4255.2     JF=
+ GAMMA------------------------------------ 34SI  G 1594      1                                                             --- EG=1594       FL=3327.14    JF=2+
+                  18O(18O,2PG)--->H  H     34SI  G 1594      1                                                             *** EG=1594       FL=3326.2     JF=
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 4971.1    5  (5-)                                                       --- possible JPI=3(-),4(-),5(-)
+                     *new XREF new tags    34SIX L XREF=ACEFGH
+                     *new XREF old tags    34SIX L XREF=ACEFGH
+                     #old XREF in Adopted  34SIX L XREF=ACEFGH
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  L 4969.65   12 (5-)                                                       *** possible JPI=3(-),4(-),5(-): logft=5.76(5) from 4-
+           34AL B- DECAY:MIXED--->C  C     34SI  L 4969.7    2  5-                                                        
+               2H(34SI,34SI'G)--->E  E     34SI  L 4970                                                                   
+                 7LI(34P,7BEG)--->F  F     34SI  L 4970                                                                   
+               9BE(35SI,34SIG)--->G  G     34SI  L 4971                                                                   
+                  18O(18O,2PG)--->H  H     34SI  L 4969.6    12                                                           
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  B             3.9     4           5.76    5                              
+ GAMMA------------------------------------ 34SI  G 590.8     1  100       D(+Q)    +0.01   4                               --- EG=590.8      FL=4380.2     JF=4-
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 590.8     1 100                                                         *** EG=590.8      FL=4378.85    JF=(4-)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 591.0     2 100        D(+Q)    +0.01   4                               *** EG=591.0      FL=4378.8     JF=4-
+               2H(34SI,34SI'G)--->E  E     34SI  G 591         100                                                         *** 
+                 7LI(34P,7BEG)--->F  F     34SI  G 591                                                                     *** EG=591        FL=4379       JF=
+               9BE(35SI,34SIG)--->G  G     34SI  G 591         100                                                         *** EG=591        FL=4380       JF=
+                  18O(18O,2PG)--->H  H     34SI  G 590       1                                                             *** EG=590        FL=4379.4     JF=
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=4.0                                                                
+           34AL B- DECAY:MIXED--->C  C     34SI cG MR$other: -0.09 {I35}.
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 5042.2    11                                                            --- possible JPI=(3,4,5-)
+                     *new XREF new tags    34SIX L XREF=ABCE(?)F(?)G(?)
+                     *new XREF old tags    34SIX L XREF=ABCE(?)F(?)G(?)
+                     #old XREF in Adopted  34SIX L XREF=ABCE(5041?)F(5041?)G(5042?)
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  L 5041.34   10 (3-)                                                       *** possible JPI=(3,4,5): logft=6.4(1) from 4-
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 5041.49   11 (3-)                                                       *** possible JPI=(0,1,2,3,4,5-): logft=6.9(GT) from 1+
+           34AL B- DECAY:MIXED--->C  C     34SI  L 5041.5    2  (3-)                                                      
+               2H(34SI,34SI'G)--->E  E(?)  34SI  L 5041                                                                  ?
+                 7LI(34P,7BEG)--->F  F(?)  34SI  L 5041                                                                  ?
+               9BE(35SI,34SIG)--->G  G(?)  34SI  L 5042                                                               A  ?
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  B             0.95    13          6.4     1                              
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             0.1     LT          6.9     GT                            ?
+ GAMMA------------------------------------ 34SI  G 662.7     2  5.4    6                                                   --- EG=662.7      FL=4380.2     JF=4-
+           34AL B- DECAY:MIXED--->C  C     34SI  G 662.7     2 5.4     6                                                   *** EG=662.7      FL=4378.8     JF=4-
+ GAMMA------------------------------------ 34SI  G 1715.8    1  100.0  18                                                  --- EG=1715.8     FL=3327.14    JF=2+
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 1715.7    1 100                                                         *** EG=1715.7     FL=3325.58    JF=2+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 1715.8    1 100                                                         *** EG=1715.8     FL=3325.59    JF=2+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 1715.8    2 100.0   18                                                  *** EG=1715.8     FL=3325.7     JF=2+
+               2H(34SI,34SI'G)--->E  E(?)  34SI  G 1715        100                                                    A    *** EG=1715       FL=3326       JF=2+
+                 7LI(34P,7BEG)--->F  F(?)  34SI  G 1715                                                                    *** EG=1715       FL=3326       JF=
+               9BE(35SI,34SIG)--->G  G(?)  34SI  G 1715        100                                                    A  ? *** EG=1715       FL=3327       JF=
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=1.1                                                                
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 5243.4    2                                                             --- possible JPI=(1-,2,3,4,5-): 778.9g from 6023.3, (3-)
+                     *new XREF new tags    34SIX L XREF=C
+                     *new XREF old tags    34SIX L XREF=C
+                     #old XREF in Adopted  34SIX L XREF=C
+           34AL B- DECAY:MIXED--->C  C     34SI  L 5243.4    2                                                            
+ GAMMA------------------------------------ 34SI  G 988.5     2  100                                                        --- EG=988.5      FL=4256.1     JF=3-
+           34AL B- DECAY:MIXED--->C  C     34SI  G 988.5     2 100                                                         *** EG=988.5      FL=4254.9     JF=3-
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 5330.4    10 (2)+                                                       --- possible JPI=(1-,2,3,4+)
+                     *new XREF new tags    34SIX L XREF=ABCFI
+                     *new XREF old tags    34SIX L XREF=ABCFI
+                     #old XREF in Adopted  34SIX L XREF=ABCFI
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  L 5348.84   11 (2+)                                                       *** possible JPI=(1-,2,3,4,5,6,7-): logft=9.8(GT) from 4-; 673.4g from 6022.19,(3-)
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 5348.72   9  (2+)                                                       *** possible JPI=(0,1,2,3,4+): logft=6.9(GT) from 1+
+           34AL B- DECAY:MIXED--->C  C     34SI  L 5348.8    2  (2+)                                                      
+                 7LI(34P,7BEG)--->F  F     34SI  L 5330         (2)+                             0                    A   
+                  36S(11B,13N)--->I  I     34SI  L 5330      50 (2+)                                                      
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  B             0.1     LT          9.8     GT                          1U 
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             0.1     LT          6.9     GT                             
+                 7LI(34P,7BEG)--->F  F     34SI cL J$2+ from shell-model calculations.                                    
+                 7LI(34P,7BEG)--->F  F     34SI cL $B(GT)=0.74 {I18} (stat) {I+00-14} (syst) from 2010Ze03.               
+                  36S(11B,13N)--->I  I     34SI cL E$from 1985Fi03.                                                       
+                  36S(11B,13N)--->I  I     34SI cL J$proposed by 1985Fi03 based on agreement with excitation energy       
+                  36S(11B,13N)--->I  I     34SI2cL calculated by shell model and relative intensities calculated using    
+                  36S(11B,13N)--->I  I     34SI3cL DWBA with the shell-model spectroscopic amplitudes.                    
+ GAMMA------------------------------------ 34SI  G 2023.1    2  50.4   27                                                ? --- 
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 2023.1    2 47      5                                                   *** EG=2023.1     FL=3325.58    JF=2+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 2023.1    2 63      6                                                   *** EG=2023.1     FL=3325.59    JF=2+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 2023.2    3 48.9    22                                                  *** EG=2023.2     FL=3325.7     JF=2+
+                 7LI(34P,7BEG)--->F  F(?)  34SI  G 2000        59      9                                                 ? *** EG=2000       FL=3326       JF=
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=0.11                                                               
+ GAMMA------------------------------------ 34SI  G 5348.6    2  100.0  22                                                  --- 
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 5348.7    2 100     8                                                   *** EG=5348.7     FL=0.0        JF=0+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 5348.7    2 100     6                                                   *** EG=5348.7     FL=0.0        JF=0+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 5348.3    3 100.0   22                                                  *** EG=5348.3     FL=0          JF=0+
+                 7LI(34P,7BEG)--->F  F     34SI  G 5330        100                                                         *** EG=5330       FL=0          JF=
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=0.23                                                               
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 5637.4    3                                                             --- possible JPI=(0+,1,2,3,4+)
+                     *new XREF new tags    34SIX L XREF=C
+                     *new XREF old tags    34SIX L XREF=C
+                     #old XREF in Adopted  34SIX L XREF=C
+           34AL B- DECAY:MIXED--->C  C     34SI  L 5637.4    3                                                            
+ GAMMA------------------------------------ 34SI  G 1117.9    3  50     17                                                  --- EG=1117.9     FL=4520.2     JF=(2+)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 1117.9    3 50      17                                                  *** EG=1117.9     FL=4519.2     JF=(2+)
+ GAMMA------------------------------------ 34SI  G 2312.3    5  100    33                                                  --- EG=2312.3     FL=3327.14    JF=2+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 2312.3    5 100     33                                                  *** EG=2312.3     FL=3325.7     JF=2+
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 5773.42   8                                                             --- possible JPI=(0+,1,2,3,4+)
+                     *new XREF new tags    34SIX L XREF=BC
+                     *new XREF old tags    34SIX L XREF=BC
+                     #old XREF in Adopted  34SIX L XREF=BC
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 5773.42   8  (2+)                                                       *** possible JPI=(0,1,2,3,4+): logft=6.2(GT) from 1+
+           34AL B- DECAY:MIXED--->C  C     34SI  L 5773.5    2  (2+)                                                      
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             0.4     LT          6.2     GT                             
+ GAMMA------------------------------------ 34SI  G 2447.6    2  53     4                                                   --- EG=2447.6     FL=3327.14    JF=2+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 2447.4    2 55      4                                                   *** EG=2447.4     FL=3325.59    JF=2+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 2447.7    2 50      5                                                   *** EG=2447.7     FL=3325.7     JF=2+
+ GAMMA------------------------------------ 34SI  G 5772.9    2  100.0  26                                                  --- EG=5772.9     FL=0.0        JF=0+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 5772.8    2 100     4                                                   *** EG=5772.8     FL=0.0        JF=0+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 5773.0    3 100.0   26                                                  *** EG=5773.0     FL=0          JF=0+
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 6023.3    11                                                          ? --- possible JPI=(3-)
+                     *new XREF new tags    34SIX L XREF=ACE(?)F(?)G(?)
+                     *new XREF old tags    34SIX L XREF=ACE(?)F(?)G(?)
+                     #old XREF in Adopted  34SIX L XREF=ACE(6022?)F(6022?)G(6023?)
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  L 6022.19   9  (3-)                                                       *** possible JPI=3-,4-,5-: logft=5.72(4) from 4-
+           34AL B- DECAY:MIXED--->C  C     34SI  L 6022.3    2  (3-)                                                      
+               2H(34SI,34SI'G)--->E  E(?)  34SI  L 6022                                                                  ?
+                 7LI(34P,7BEG)--->F  F(?)  34SI  L 6022                                                                  ?
+               9BE(35SI,34SIG)--->G  G(?)  34SI  L 6023                                                               A  ?
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  B             2.76    21          5.72    4                              
+ GAMMA------------------------------------ 34SI  G 673.4     1  17.00  35                                                  --- 
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 673.4     1 16.6    6                                                   *** EG=673.4      FL=5348.84    JF=(2+)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 673.5     2 17.13   35                                                  *** EG=673.5      FL=5348.8     JF=(2+)
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=0.32                                                               
+ GAMMA------------------------------------ 34SI  G 778.9     2  4.55   35                                                  --- EG=778.9      FL=5243.4     JF=
+           34AL B- DECAY:MIXED--->C  C     34SI  G 778.9     2 4.55    35                                                  *** EG=778.9      FL=5243.4     JF=
+ GAMMA------------------------------------ 34SI  G 1503.1    1  25.3   4                                                   --- EG=1503.1     FL=4520.2     JF=(2+)
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 1503.1    1 24.7    6                                                   *** EG=1503.1     FL=4518.99    JF=(2+)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 1503.2    2 25.52   35                                                  *** EG=1503.2     FL=4519.2     JF=(2+)
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=0.48                                                               
+ GAMMA------------------------------------ 34SI  G 1767.6    3  4.2    14                                                  --- EG=1767.6     FL=4256.1     JF=3-
+           34AL B- DECAY:MIXED--->C  C     34SI  G 1767.6    3 4.2     14                                                  *** EG=1767.6     FL=4254.9     JF=3-
+ GAMMA------------------------------------ 34SI  G 2696.5    1  100.0  18                                                  --- EG=2696.5     FL=3327.14    JF=2+
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 2696.5    1 100.0   31                                                  *** EG=2696.5     FL=3325.58    JF=2+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 2696.5    2 100.0   18                                                  *** EG=2696.5     FL=3325.7     JF=2+
+               2H(34SI,34SI'G)--->E  E(?)  34SI  G 2696        100                                                    A    *** EG=2696       FL=3326       JF=2+
+                 7LI(34P,7BEG)--->F  F(?)  34SI  G 2696                                                                    *** EG=2696       FL=3326       JF=
+               9BE(35SI,34SIG)--->G  G(?)  34SI  G 2696        100                                                    A  ? *** EG=2696       FL=3327       JF=
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=2.0                                                                
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 6201.69   10                                                            --- possible JPI=(0+,1,2,3,4+)
+                     *new XREF new tags    34SIX L XREF=BC
+                     *new XREF old tags    34SIX L XREF=BC
+                     #old XREF in Adopted  34SIX L XREF=BC
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 6201.69   10                                                            *** possible JPI=(0,1,2,3,4+): logft=6.7(GT) from 1+
+           34AL B- DECAY:MIXED--->C  C     34SI  L 6201.8    2                                                            
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             0.1     LT          6.7     GT                             
+ GAMMA------------------------------------ 34SI  G 6201.2    3  100                                                        --- EG=6201.2     FL=0.0        JF=0+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 6201.2    3 100                                                         *** EG=6201.2     FL=0.0        JF=0+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 6201.1    4 100                                                         *** EG=6201.1     FL=0          JF=0+
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 6227.17   10 (4-)                                                       --- possible JPI=(3,4,5-)
+                     *new XREF new tags    34SIX L XREF=AC
+                     *new XREF old tags    34SIX L XREF=AC
+                     #old XREF in Adopted  34SIX L XREF=AC
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  L 6227.17   10 (4-)                                                       *** possible JPI=(3,4,5): logft=6.22(5) from 4-
+           34AL B- DECAY:MIXED--->C  C     34SI  L 6227.5    2  (4-)                                                      
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  B             0.79    7           6.22    5                              
+ GAMMA------------------------------------ 34SI  G 1185.8    1  31.7   30                                                  --- EG=1185.8     FL=5042.2     JF=
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 1185.8    1 28.7    23                                                  *** EG=1185.8     FL=5041.34    JF=(3-)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 1185.9    2 34.6    19                                                  *** EG=1185.9     FL=5041.5     JF=(3-)
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=0.15                                                               
+ GAMMA------------------------------------ 34SI  G 1257.6    2  8.1    35                                                  --- EG=1257.6     FL=4971.1     JF=(5-)
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 1257.5    1 4.6     12                                                  *** EG=1257.5     FL=4969.65    JF=(5-)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 1257.9    2 11.5    19                                                  *** EG=1257.9     FL=4969.7     JF=5-
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=0.024                                                              
+ GAMMA------------------------------------ 34SI  G 1848.4    4  100    4                                                   --- EG=1848.4     FL=4380.2     JF=4-
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 1848.0    1 100     6                                                   *** EG=1848.0     FL=4378.85    JF=(4-)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 1848.7    2 100     4                                                   *** EG=1848.7     FL=4378.8     JF=4-
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=0.53                                                               
+ GAMMA------------------------------------ 34SI  G 1972.7    1  16.8   19                                                  --- EG=1972.7     FL=4256.1     JF=3-
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  G 1972.7    1 16.1    23                                                  *** EG=1972.7     FL=4254.68    JF=3-
+           34AL B- DECAY:MIXED--->C  C     34SI  G 1972.5    2 17.3    19                                                  *** EG=1972.5     FL=4254.9     JF=3-
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=0.085                                                              
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 6233.7    11                                                            --- possible JPI=(1,2,3,4,5,6)
+                     *new XREF new tags    34SIX L XREF=H
+                     *new XREF old tags    34SIX L XREF=H
+                     #old XREF in Adopted  34SIX L XREF=H
+                  18O(18O,2PG)--->H  H     34SI  L 6233.7    11                                                           
+ GAMMA------------------------------------ 34SI  G 1264      1                                                             --- EG=1264       FL=4971.1     JF=(5-)
+                  18O(18O,2PG)--->H  H     34SI  G 1264      1                                                             *** EG=1264       FL=4969.6     JF=
+ GAMMA------------------------------------ 34SI  G 1314      1                                                             --- EG=1314       FL=4920.1     JF=
+                  18O(18O,2PG)--->H  H     34SI  G 1314      1                                                             *** EG=1314       FL=4920.1     JF=
+ GAMMA------------------------------------ 34SI  G 1716      1                                                           ? --- EG=1716       FL=4520.2     JF=(2+)
+                  18O(18O,2PG)--->H  H(?)  34SI  G 1716      1                                                           ? *** EG=1716       FL=4517.5     JF=
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 6432.22   9                                                             --- possible JPI=0(+),1(+),2(+)
+                     *new XREF new tags    34SIX L XREF=BC
+                     *new XREF old tags    34SIX L XREF=BC
+                     #old XREF in Adopted  34SIX L XREF=BC
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 6432.22   9                                                             *** possible JPI=0(+),1(+),2(+): logft=5.36(5) from 1+
+           34AL B- DECAY:MIXED--->C  C     34SI  L 6432.4    2                                                            
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             2.1     2           5.36    5                              
+ GAMMA------------------------------------ 34SI  G 230.6     1  9.1    18                                                  --- EG=230.6      FL=6201.69    JF=
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 230.6     1 10.3    15                                                  *** EG=230.6      FL=6201.69    JF=
+           34AL B- DECAY:MIXED--->C  C     34SI  G 230.7     3 6.5     22                                                  *** EG=230.7      FL=6201.8     JF=
+ GAMMA------------------------------------ 34SI  G 658.7     1  35     4                                                   --- EG=658.7      FL=5773.42    JF=
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 658.7     1 30.9    15                                                  *** EG=658.7      FL=5773.42    JF=(2+)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 658.8     2 39.1    22                                                  *** EG=658.8      FL=5773.5     JF=(2+)
+ GAMMA------------------------------------ 34SI  G 3106.5    1  100.0  30                                                  --- EG=3106.5     FL=3327.14    JF=2+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 3106.5    1 100     3                                                   *** EG=3106.5     FL=3325.59    JF=2+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 3106.6    2 100     5                                                   *** EG=3106.6     FL=3325.7     JF=2+
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 6676.21   11 (2+)                                                       --- possible JPI=(2+)
+                     *new XREF new tags    34SIX L XREF=BC
+                     *new XREF old tags    34SIX L XREF=BC
+                     #old XREF in Adopted  34SIX L XREF=BC
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 6676.21   11 (2+)                                                       *** possible JPI=0(+),1(+),2(+): logft=5.64(5) from 1+
+           34AL B- DECAY:MIXED--->C  C     34SI  L 6676.4    2  (2+)                                                      
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             1.0     1           5.64    5                              
+ GAMMA------------------------------------ 34SI  G 2421.4    1  100.0  30                                                  --- EG=2421.4     FL=4256.1     JF=3-
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 2421.4    1 100     3                                                   *** EG=2421.4     FL=4254.70    JF=3-
+           34AL B- DECAY:MIXED--->C  C     34SI  G 2421.3    2 100     5                                                   *** EG=2421.3     FL=4254.9     JF=3-
+ GAMMA------------------------------------ 34SI  G 3350.6    2  40.6   30                                                  --- EG=3350.6     FL=3327.14    JF=2+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 3350.5    2 39.4    30                                                  *** EG=3350.5     FL=3325.59    JF=2+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 3350.6    2 44      5                                                   *** EG=3350.6     FL=3325.7     JF=2+
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 6764.66   16 (2+)                                                       --- possible JPI=(0+,1,2)
+                     *new XREF new tags    34SIX L XREF=BC
+                     *new XREF old tags    34SIX L XREF=BC
+                     #old XREF in Adopted  34SIX L XREF=BC
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 6764.66   16 (2+)                                                       *** possible JPI=(0,1,2): logft=6.20(7) from 1+
+           34AL B- DECAY:MIXED--->C  C     34SI  L 6764.0    2  (2+)                                                      
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             0.26    4           6.20    7                              
+ GAMMA------------------------------------ 34SI  G 1722.8    2  75     25                                                  --- EG=1722.8     FL=5042.2     JF=
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 1722.9    2 100     17                                                  *** EG=1722.9     FL=5041.49    JF=(3-)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 1722.5    3 50      13                                                  *** EG=1722.5     FL=5041.5     JF=(3-)
+ GAMMA------------------------------------ 34SI  G 3438.7    5  77     18                                                  --- EG=3438.7     FL=3327.14    JF=2+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 3439.1    2 100     17                                                  *** EG=3439.1     FL=3325.59    JF=2+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 3438.2    3 63      13                                                  *** EG=3438.2     FL=3325.7     JF=2+
+ GAMMA------------------------------------ 34SI  G 6763.3    4  100    13                                                  --- EG=6763.3     FL=0.0        JF=0+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 6763.3    4 100     13                                                  *** EG=6763.3     FL=0          JF=0+
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 6872.6    2  (2+)                                                       --- possible JPI=(0+,1,2,3,4+)
+                     *new XREF new tags    34SIX L XREF=C
+                     *new XREF old tags    34SIX L XREF=C
+                     #old XREF in Adopted  34SIX L XREF=C
+           34AL B- DECAY:MIXED--->C  C     34SI  L 6872.6    2  (2+)                                                      
+ GAMMA------------------------------------ 34SI  G 6871.8    4  100                                                        --- EG=6871.8     FL=0.0        JF=0+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 6871.8    4 100                                                         *** EG=6871.8     FL=0          JF=0+
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 6964.75   23                                                            --- possible JPI=(0,1,2,3,4,5)
+                     *new XREF new tags    34SIX L XREF=BC
+                     *new XREF old tags    34SIX L XREF=BC
+                     #old XREF in Adopted  34SIX L XREF=BC
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 6964.75   23                                                            *** possible JPI=(0,1,2,3,4,5): logft=6.6(GT) from 1+
+           34AL B- DECAY:MIXED--->C  C     34SI  L 6964.7    6                                                            
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             0.1     LT          6.6     GT                             
+ GAMMA------------------------------------ 34SI  G 1923.2    2  100                                                        --- EG=1923.2     FL=5042.2     JF=
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 1923.2    2 100                                                         *** EG=1923.2     FL=5041.49    JF=(3-)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 1923.1    6 100                                                         *** EG=1923.1     FL=5041.5     JF=(3-)
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 7107.05   8                                                             --- possible JPI=0+,1+,2+
+                     *new XREF new tags    34SIX L XREF=BC
+                     *new XREF old tags    34SIX L XREF=BC
+                     #old XREF in Adopted  34SIX L XREF=BC
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 7107.05   8                                                             *** possible JPI=0+,1+,2+: logft=5.02(6) from 1+
+           34AL B- DECAY:MIXED--->C  C     34SI  L 7107.4    2  (0+)                                                      
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             3.4     4           5.02    6                              
+ GAMMA------------------------------------ 34SI  G 235.1     3  1.3    4                                                   --- EG=235.1      FL=6872.6     JF=(2+)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 235.1     3 1.3     4                                                   *** EG=235.1      FL=6872.6     JF=(2+)
+ GAMMA------------------------------------ 34SI  G 905.3     1  12.9   9                                                   --- EG=905.3      FL=6201.69    JF=
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 905.3     1 13.3    9                                                   *** EG=905.3      FL=6201.69    JF=
+           34AL B- DECAY:MIXED--->C  C     34SI  G 905.5     2 12.2    12                                                  *** EG=905.5      FL=6201.8     JF=
+ GAMMA------------------------------------ 34SI  G 1333.6    1  9.4    21                                                  --- EG=1333.6     FL=5773.42    JF=
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 1333.6    1 11.5    9                                                   *** EG=1333.6     FL=5773.42    JF=(2+)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 1333.9    8 7.3     12                                                  *** EG=1333.9     FL=5773.5     JF=(2+)
+ GAMMA------------------------------------ 34SI  G 1758.4    1  14.8   16                                                  --- 
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 1758.3    1 12.4    18                                                  *** EG=1758.3     FL=5348.72    JF=(2+)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 1758.6    2 15.9    12                                                  *** EG=1758.6     FL=5348.8     JF=(2+)
+ GAMMA------------------------------------ 34SI  G 2588.0    1  100.0  25                                                  --- EG=2588.0     FL=4520.2     JF=(2+)
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 2588.0    1 100     4                                                   *** EG=2588.0     FL=4518.98    JF=(2+)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 2588.0    2 100.0   25                                                  *** EG=2588.0     FL=4519.2     JF=(2+)
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 7476.29   8  (0+)                                                       --- possible JPI=0+,1+,2+
+                     *new XREF new tags    34SIX L XREF=BC
+                     *new XREF old tags    34SIX L XREF=BC
+                     #old XREF in Adopted  34SIX L XREF=BC
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 7476.29   8  (0+)                                                       *** possible JPI=0+,1+,2+: logft=4.72(5) from 1+
+           34AL B- DECAY:MIXED--->C  C     34SI  L 7476.5    2  0+                                                        
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             5.6     5           4.72    5                              
+ GAMMA------------------------------------ 34SI  G 603.8     2  7.4    11                                                  --- EG=603.8      FL=6872.6     JF=(2+)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 603.8     2 7.4     11                                                  *** EG=603.8      FL=6872.6     JF=(2+)
+ GAMMA------------------------------------ 34SI  G 1702.8    1  28.6   11                                                  --- EG=1702.8     FL=5773.42    JF=
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 1702.8    1 28.8    14                                                  *** EG=1702.8     FL=5773.42    JF=(2+)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 1703.0    2 28.4    11                                                  *** EG=1703.0     FL=5773.5     JF=(2+)
+ GAMMA------------------------------------ 34SI  G 2127.6    1  7.0    7                                                   --- 
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 2127.6    1 6.9     7                                                   *** EG=2127.6     FL=5348.72    JF=(2+)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 2127.8    3 7.4     21                                                  *** EG=2127.8     FL=5348.8     JF=(2+)
+ GAMMA------------------------------------ 34SI  G 2957.1    1  38.8   11                                                  --- EG=2957.1     FL=4520.2     JF=(2+)
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 2957.1    1 38.4    7                                                   *** EG=2957.1     FL=4518.98    JF=(2+)
+           34AL B- DECAY:MIXED--->C  C     34SI  G 2957.2    2 42.1    21                                                  *** EG=2957.2     FL=4519.2     JF=(2+)
+ GAMMA------------------------------------ 34SI  G 4150.4    1  100.0  34                                                  --- EG=4150.4     FL=3327.14    JF=2+
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  G 4150.4    1 100.0   34                                                  *** EG=4150.4     FL=3325.59    JF=2+
+           34AL B- DECAY:MIXED--->C  C     34SI  G 4150.5    2 100     4                                                   *** EG=4150.5     FL=3325.7     JF=2+
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 7549+X                                                              R   ---
+                     *new XREF new tags    34SIX L XREF=A(7549+x)B(7549+x)
+                     *new XREF old tags    34SIX L XREF=A(7549+x)B(7549+x)
+                     #old XREF in Adopted  34SIX L XREF=A(7549+x)B(7549+x)
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  L 7549+X                                                              R  
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 7549+X                                                              R  
+      34AL B- DECAY (53.73 MS)--->A  A     34SI cL E$x<9445.4 {I22} from Q(|b{+-})({+34}Al)-S(n)({+34}Si), where          
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2cL Q(|b{+-})({+34}Al)=16994.1 {I23} and S(n)({+34}Al)=7548.7 {I11} from   
+      34AL B- DECAY (53.73 MS)--->A  A     34SI3cL 2021Wa16. This represents a range of unidentified levels in {+34}Si    
+      34AL B- DECAY (53.73 MS)--->A  A     34SI4cL that subsequently decay to {+33}Si via one-neutron emission.           
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  B             22      5                                                  
+       34AL B- DECAY (23.2 MS)--->B  B     34SI cL E$x<9445.4 {I22} from Q(|b{+-})({+34}Al)-S(n)({+34}Si), where          
+       34AL B- DECAY (23.2 MS)--->B  B     34SI2cL Q(|b{+-})({+34}Al)=16994.1 {I23} and S(n)({+34}Al)=7548.7 {I11} from   
+       34AL B- DECAY (23.2 MS)--->B  B     34SI3cL 2021Wa16. This represents a range of unidentified levels in {+34}Si    
+       34AL B- DECAY (23.2 MS)--->B  B     34SI4cL that subsequently decay to {+33}Si via one-neutron emission.           
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  B             11      4                                                  
+------------------------------------------------------------------------------------------------------------------------
+ LEVEL************************************ 34SI  L 12057+Y                                                             R   ---
+                     *new XREF new tags    34SIX L XREF=A(12057+y)B(12057+y)
+                     *new XREF old tags    34SIX L XREF=A(12057+y)B(12057+y)
+                     #old XREF in Adopted  34SIX L XREF=A(12057+y)B(12057+y)
+      34AL B- DECAY (53.73 MS)--->A  A     34SI  L 12057+Y                                                             R  
+       34AL B- DECAY (23.2 MS)--->B  B     34SI  L 12057+Y                                                             R  
+      34AL B- DECAY (53.73 MS)--->A  A     34SI cL E$y<4937 {I3} from Q(|b{+-})({+34}Al)-S(2n)({+34}Si), where            
+      34AL B- DECAY (53.73 MS)--->A  A     34SI2cL Q(|b{+-})({+34}Al)=16994.1 {I23} and S(2n)({+34}Al)=12056.6 {I9} from  
+      34AL B- DECAY (53.73 MS)--->A  A     34SI3cL 2021Wa16. This represents a range of unidentified levels in {+34}Si    
+      34AL B- DECAY (53.73 MS)--->A  A     34SI4cL that subsequently decay to {+32}Si via two-neutron emission.           
+       34AL B- DECAY (23.2 MS)--->B  B     34SI cL E$y<4937 {I3} from Q(|b{+-})({+34}Al)-S(2n)({+34}Si), where            
+       34AL B- DECAY (23.2 MS)--->B  B     34SI2cL Q(|b{+-})({+34}Al)=16994.1 {I23} and S(2n)({+34}Al)=12056.6 {I9} from  
+       34AL B- DECAY (23.2 MS)--->B  B     34SI3cL 2021Wa16. This represents a range of unidentified levels in {+34}Si    
+       34AL B- DECAY (23.2 MS)--->B  B     34SI4cL that subsequently decay to {+32}Si via two-neutron emission.           
+
+
+Statistics of levels and gammas from all datasets of 34SI:
+                             DSID     #of levels       #of gammas       level range
+           ADOPTED LEVELS, GAMMAS        27               53            0.0        to    12057+y
+         34AL B- DECAY (53.73 MS)        13               19            0.0        to    12057+y
+          34AL B- DECAY (23.2 MS)        17               28            0.0        to    12057+y
+              34AL B- DECAY:MIXED        22               47            0          to     7476.5
+         35AL B-N DECAY (38.1 MS)        4                3             0          to     4380.5
+                  2H(34SI,34SI'G)        7                8             0.0        to       6022
+                    7LI(34P,7BEG)        9                11            0          to       6022
+                  9BE(35SI,34SIG)        8                9             0          to       6023
+                     18O(18O,2PG)        8                11            0          to     6233.7
+                     36S(11B,13N)        2                0             0          to       5330
+                     36S(14C,16O)        2                0             0          to       3590
+           160GD(34S,XG),(36S,XG)        4                3             0          to       4380
+                  SI(34SI,34SI'G)        3                2             0          to       4270
+               COULOMB EXCITATION        2                1             0          to       3305
+
+                         IN TOTAL        128              195           0.0        to     7476.5
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Statistics of all datasets from input ENSDF files:
+                Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
+                               Levels       Gammas     L Records    G Records                      (non-Adopted)
+                   34SI        27           53           128          195            1176             13
+
+               IN TOTAL        27           53           128          195            1176             13
+
+Number of nuclides     : 1
+Number of blocks       : 14
+Number of references   : 72
+Number of lines in files: 1190
+(from all blocks including abstract, comment, reference)
