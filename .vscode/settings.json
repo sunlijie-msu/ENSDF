@@ -1,3 +1,10 @@
 {
-    "chat.agent.enabled": true
+    "chat.agent.enabled": true,
+    "python-envs.pythonProjects": [
+        {
+            "path": ".",
+            "envManager": "ms-python.python:system",
+            "packageManager": "ms-python.python:pip"
+        }
+    ]
 }
