@@ -2,6 +2,8 @@
  34SI  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34SI  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34SI2 H CUT=28-May-2012$                                                       
+ 34SI dG $Transition strength is calculated by Java-RULER (version 14-Jun-2026) 
+ 34SI DG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  34SI dL E$Least-squares fitting is done by GLSC (version 12-Jun-2026)          
  34SI  Q 4557.0    11 7548.7 11 18783  7 -13535.215    2021WA16                 
  34SI cQ $S(2n)=12056.6 {I9}, S(2p)=33741 {I3} (2021Wa16)                       
@@ -75,17 +77,22 @@
  34SI2cL scattering.                                                            
  34SI cL T$from B(E2)|^=0.0085 {I33} in Coulomb excitation.                     
  34SI  G 606.8     1  0.103  47 [E2]                                            
+ 34SIS G  CC=0.0001315 18$KC=0.0001222 17$LC=8.75E-6 12$MC=5.74E-7 8            
  34SI cG E$weighted average of 606.8 {I1} from {+34}Al |b{+-} decay (53.73 ms)  
  34SI2cG and 607.0 {I3} from {+34}Al |b{+-} decay:mixed                         
  34SI cG RI$unweighted average of 0.056 {I6} from {+34}Al |b{+-} decay (53.73   
  34SI2cG ms) and 0.150 {I20} from {+34}Al |b{+-} decay:mixed                    
+ 34SIB G BE2W=13 +11-7                                                          
  34SI  G 3325.45   10 100.0  15 [E2]                                            
+ 34SIS G  CC=0.000924 13$KC=2.97E-6 4$LC=2.116E-7 30$MC=1.394E-8 20             
+ 34SIS G  IPC=0.000920 13                                                       
  34SI cG E$weighted average of 3325.4 {I1} from {+34}Al |b{+-} decay (53.73 ms),
  34SI2cG 3325.5 {I2} from {+34}Al |b{+-} decay:mixed, 3326.96 {I70} from {+35}Al
  34SI3cG |b{+-}n decay, 3326 {I1} from ({+18}O,2p|g), 3330 {I50} from           
  34SI4cG Si({+34}Si,{+34}Si'|g), and 3305 {I55} from Coulomb excitation         
  34SI cG RI$from {+34}Al |b{+-} decay:mixed. Other: 100.0 {I20} from {+34}Al    
  34SI2cG |b{+-} decay (53.73 ms)                                                
+ 34SIB G BE2W=2.6 +16-7                                                         
  34SI  L 3590      25                                                           
  34SIX L XREF=J                                                                 
  34SI  L 4254.67   7  3-               210 NS    LT                             
@@ -94,6 +101,7 @@
  34SI2cL |b-feeding from 4- parent {+34}Al g.s. with log {Ift}=4.8              
  34SI cL T$estimated from |b|g(t) (1989Ba50).                                   
  34SI  G 929.12    10 100.0  16 (E1+M2)  +0.02   1                              
+ 34SIS G  CC=1.645E-5 23$KC=1.529E-5 21$LC=1.092E-6 15$MC=7.19E-8 10            
  34SI cG E$weighted average of 929.1 {I1} from {+34}Al |b{+-} decay (53.73 ms), 
  34SI2cG 929.2 {I2} from {+34}Al |b{+-} decay:mixed, and 929.12 {I40} from      
  34SI3cG {+35}Al |b{+-}n decay. Others: 929 {I1} from ({+18}O,2p|g) and 940     
@@ -105,6 +113,8 @@
  34SI cG M,MR$D+Q from |g|g(|q) in {+34}Al |b{+-} decay:mixed. |D|p=yes from    
  34SI2cG level scheme.                                                          
  34SI  G 4254.4    1  26.9   9  [E3]                                            
+ 34SIS G  CC=0.000970 14$KC=2.67E-6 4$LC=1.907E-7 27$MC=1.257E-8 18             
+ 34SIS G  IPC=0.000967 14                                                       
  34SI cG E$weighted average of 4254.4 {I1} from {+34}Al |b{+-} decay (53.73 ms) 
  34SI2cG and 4254.6 {I2} from {+34}Al |b{+-} decay:mixed. Other: 4255 {I1} from 
  34SI3cG ({+18}O,2p|g)                                                          
@@ -113,11 +123,11 @@
  34SI3cG |b{+-} decay:mixed, and 21.2 {I30} from ({+35}Si,{+34}Si|g). Other:    
  34SI4cG 53.4 {I31} from {+2}H({+34}Si,{+34}Si'|g).                             
  34SI  L 4378.68   11 4-                                                        
- 34SIX L XREF=ACDFGHK                                                           
+ 34SIX L XREF=ACDEFGHK                                                          
  34SI cL J$spin=4 from |g|g(|q) in {+34}Al |b{+-} decay:mixed. Allowed          
  34SI2cL |b-feeding from 4- parent {+34}Al g.s. with log {Ift}=5.0              
- 34SI  G 123.94    10 100       (M1(+E2))-0.012  17                             
- 34SIS G KC=0.023 22 $ LC=0.0017 16                                             
+ 34SI  G 123.94    10 100       (M1(+E2))-0.012  17    0.00223 5                
+ 34SIS G  KC=0.00207 4$LC=0.0001498 30$MC=9.81E-6 20                            
  34SI cG E$weighted average of 123.9 {I1} from {+34}Al |b{+-} decay (53.73 ms), 
  34SI2cG 124.0 {I2} from {+34}Al |b{+-} decay:mixed, and 124.20 {I30} from      
  34SI3cG {+35}Al |b{+-}n decay. Other: 124 {I1} from ({+18}O,2p|g)              
@@ -362,4 +372,4 @@
  34SI2cG and 4150.5 {I2} from {+34}Al |b{+-} decay:mixed                        
  34SI cG RI$from {+34}Al |b{+-} decay (23.2 ms). Other: 100 {I4} from {+34}Al   
  34SI2cG |b{+-} decay:mixed                                                     
-
+      
