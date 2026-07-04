@@ -88,10 +88,10 @@ For transitions quoted as `E_gamma|g to/from E_level`, verify:
 
 | Pattern Example                           | Checks Performed                                                                      |
 | :---------------------------------------- | :------------------------------------------------------------------------------------ |
-| `1824.7\|g M1+E2 to 1991, 7/2-`           | γ vs G-record, mult vs G-record, level E vs L-record, J-π vs L-record, E conservation |
-| `2061.6\|g D, \|DJ=1 from 5877.7 (11/2+)` | Same as above (`from` reverses energy conservation)                                   |
-| `1986\|g to 1572, 1/2+`                   | γ vs G-record, level E vs L-record, J-π, E conservation                               |
-| `3594.5\|g Q, \|DJ=2 to g.s., 3/2+`       | Same as above (g.s. treated as 0.0 keV)                                               |
+| `1824.7\|g M1+E2 to 7/2-, 1991`           | γ vs G-record, mult vs G-record, level E vs L-record, J-π vs L-record, E conservation |
+| `2061.6\|g D, \|DJ=1 from (11/2+), 5877.7` | Same as above (`from` reverses energy conservation)                                   |
+| `1986\|g to 1/2+, 1572`                   | γ vs G-record, level E vs L-record, J-π, E conservation                               |
+| `3594.5\|g Q, \|DJ=2 to 3/2+, g.s.`       | Same as above (g.s. treated as 0.0 keV)                                               |
 
 ---
 
