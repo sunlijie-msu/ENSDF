@@ -1,5 +1,5 @@
 Program for consistency check: output for Error and Warnings (version 06/19/2026)
-Generated at: Fri 07/03/2026 at 10:21:13 PM EDT
+Generated at: Fri 07/03/2026 at 11:54:44 PM EDT
 
 ################################################################################
 In Adopted dataset of 34SI
@@ -9,14 +9,6 @@ In Adopted dataset of 34SI
                      *                                                            <W> Check if RI=100 can be assigned to the single branch
  34SI  G 2718.4    1  E0                                                        
                                *                                                  <W> Check E0 transition.
- 34SI  L 7549+X                                                              R  
- 34SIX L XREF=A(7549+x)B(7549+x)
-         *                                                                        <W> Possible wrong input in (7549+x) at tag=A
-                                                                                      Possible wrong input in (7549+x) at tag=B
- 34SI  L 12057+Y                                                             R  
- 34SIX L XREF=A(12057+y)B(12057+y)
-         *                                                                        <W> Possible wrong input in (12057+y) at tag=A
-                                                                                      Possible wrong input in (12057+y) at tag=B
 
 ################################################################################
 In dataset of 34SI: XA 34AL B- DECAY (53.73 MS)     XREF Tag=A
@@ -67,6 +59,12 @@ In dataset of 34SI: XB 34AL B- DECAY (23.2 MS)     XREF Tag=B
  34SI  L 5773.42   8  (2+)                                                      
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI= this JPI=(2+)
+ 34SI  L 6201.69   10                                                           
+                     *                                                            <W> JPI commented from Adopted but empty
+                                                                                        Adopted JPI=(1,2+) this JPI=
+ 34SI  L 7107.05   8                                                            
+                     *                                                            <W> JPI commented from Adopted but empty
+                                                                                        Adopted JPI=(0+) this JPI=
 
 ################################################################################
 In dataset of 34SI: XC 34AL B- DECAY:MIXED     XREF Tag=C
@@ -95,9 +93,9 @@ In dataset of 34SI: XC 34AL B- DECAY:MIXED     XREF Tag=C
  34SI  L 5773.5    2  (2+)                                                      
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI= this JPI=(2+)
- 34SI  L 7107.4    2  (0+)                                                      
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI= this JPI=(0+)
+ 34SI  L 6201.8    2                                                            
+                     *                                                            <W> JPI commented from Adopted but empty
+                                                                                        Adopted JPI=(1,2+) this JPI=
  34SI  L 7476.5    2  0+                                                        
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=(0+) this JPI=0+

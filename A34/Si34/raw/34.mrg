@@ -1,5 +1,5 @@
 Program for consistency check: output for original lines grouped by level and gamma energies (version 06/19/2026)
-Generated at: Fri 07/03/2026 at 10:21:12 PM EDT
+Generated at: Fri 07/03/2026 at 11:54:44 PM EDT
 
 
 Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
@@ -357,7 +357,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                9BE(35SI,34SIG)--->G  G(?)  34SI  G 2696        100                                                    A  ? *** EG=2696       FL=3327       JF=
       34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=2.0                                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34SI  L 6201.71   10                                                            --- possible JPI=(0+,1,2,3,4+)
+ LEVEL************************************ 34SI  L 6201.71   10 (1,2+)                                                     --- possible JPI=(0+,1,2,3,4+)
                      *new XREF new tags    34SIX L XREF=BC
                      *new XREF old tags    34SIX L XREF=BC
                      #old XREF in Adopted  34SIX L XREF=BC
@@ -375,7 +375,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
       34AL B- DECAY (53.73 MS)--->A  A     34SI  L 6227.17   10 (4-)                                                       *** possible JPI=(3,4,5): logft=6.22(5) from 4-
            34AL B- DECAY:MIXED--->C  C     34SI  L 6227.5    2  (4-)                                                      
       34AL B- DECAY (53.73 MS)--->A  A     34SI  B             0.79    7           6.22    5                              
- GAMMA------------------------------------ 34SI  G 1185.8    1  31.7   30                                                  --- EG=1185.8     FL=5041.44    JF=(3-)
+ GAMMA------------------------------------ 34SI  G 1185.8    1  32.2   29                                                  --- EG=1185.8     FL=5041.44    JF=(3-)
       34AL B- DECAY (53.73 MS)--->A  A     34SI  G 1185.8    1 28.7    23                                                  *** EG=1185.8     FL=5041.34    JF=(3-)
            34AL B- DECAY:MIXED--->C  C     34SI  G 1185.9    2 34.6    19                                                  *** EG=1185.9     FL=5041.5     JF=(3-)
       34AL B- DECAY (53.73 MS)--->A  A     34SI2 G %IG=0.15                                                               
@@ -411,7 +411,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        34AL B- DECAY (23.2 MS)--->B  B     34SI  L 6432.22   9                                                             *** possible JPI=0(+),1(+),2(+): logft=5.36(5) from 1+
            34AL B- DECAY:MIXED--->C  C     34SI  L 6432.4    2                                                            
        34AL B- DECAY (23.2 MS)--->B  B     34SI  B             2.1     2           5.36    5                              
- GAMMA------------------------------------ 34SI  G 230.6     1  9.1    18                                                  --- EG=230.6      FL=6201.71    JF=
+ GAMMA------------------------------------ 34SI  G 230.6     1  9.1    18                                                  --- EG=230.6      FL=6201.71    JF=(1,2+)
        34AL B- DECAY (23.2 MS)--->B  B     34SI  G 230.6     1 10.3    15                                                  *** EG=230.6      FL=6201.69    JF=
            34AL B- DECAY:MIXED--->C  C     34SI  G 230.7     3 6.5     22                                                  *** EG=230.7      FL=6201.8     JF=
  GAMMA------------------------------------ 34SI  G 658.7     1  35     4                                                   --- EG=658.7      FL=5773.45    JF=
@@ -442,10 +442,10 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        34AL B- DECAY (23.2 MS)--->B  B     34SI  L 6764.66   16 (2+)                                                       *** possible JPI=(0,1,2): logft=6.20(7) from 1+
            34AL B- DECAY:MIXED--->C  C     34SI  L 6764.0    2  (2+)                                                      
        34AL B- DECAY (23.2 MS)--->B  B     34SI  B             0.26    4           6.20    7                              
- GAMMA------------------------------------ 34SI  G 1722.8    2  75     25                                                  --- EG=1722.8     FL=5041.44    JF=(3-)
+ GAMMA------------------------------------ 34SI  G 1722.8    2  50     13                                                  --- EG=1722.8     FL=5041.44    JF=(3-)
        34AL B- DECAY (23.2 MS)--->B  B     34SI  G 1722.9    2 100     17                                                  *** EG=1722.9     FL=5041.49    JF=(3-)
            34AL B- DECAY:MIXED--->C  C     34SI  G 1722.5    3 50      13                                                  *** EG=1722.5     FL=5041.5     JF=(3-)
- GAMMA------------------------------------ 34SI  G 3438.7    5  77     18                                                  --- EG=3438.7     FL=3325.55    JF=2+
+ GAMMA------------------------------------ 34SI  G 3438.8    4  63     13                                                  --- EG=3438.8     FL=3325.55    JF=2+
        34AL B- DECAY (23.2 MS)--->B  B     34SI  G 3439.1    2 100     17                                                  *** EG=3439.1     FL=3325.59    JF=2+
            34AL B- DECAY:MIXED--->C  C     34SI  G 3438.2    3 63      13                                                  *** EG=3438.2     FL=3325.7     JF=2+
  GAMMA------------------------------------ 34SI  G 6763.3    4  100    13                                                  --- EG=6763.3     FL=0.0        JF=0+
@@ -470,7 +470,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        34AL B- DECAY (23.2 MS)--->B  B     34SI  G 1923.2    2 100                                                         *** EG=1923.2     FL=5041.49    JF=(3-)
            34AL B- DECAY:MIXED--->C  C     34SI  G 1923.1    6 100                                                         *** EG=1923.1     FL=5041.5     JF=(3-)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34SI  L 7107.09   8                                                             --- possible JPI=0+,1+,2+
+ LEVEL************************************ 34SI  L 7107.09   8  (0+)                                                       --- possible JPI=0+,1+,2+
                      *new XREF new tags    34SIX L XREF=BC
                      *new XREF old tags    34SIX L XREF=BC
                      #old XREF in Adopted  34SIX L XREF=BC
@@ -479,7 +479,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        34AL B- DECAY (23.2 MS)--->B  B     34SI  B             3.4     4           5.02    6                              
  GAMMA------------------------------------ 34SI  G 235.1     3  1.3    4                                                   --- EG=235.1      FL=6872.35    JF=(2+)
            34AL B- DECAY:MIXED--->C  C     34SI  G 235.1     3 1.3     4                                                   *** EG=235.1      FL=6872.6     JF=(2+)
- GAMMA------------------------------------ 34SI  G 905.3     1  12.9   9                                                   --- EG=905.3      FL=6201.71    JF=
+ GAMMA------------------------------------ 34SI  G 905.3     1  12.9   9                                                   --- EG=905.3      FL=6201.71    JF=(1,2+)
        34AL B- DECAY (23.2 MS)--->B  B     34SI  G 905.3     1 13.3    9                                                   *** EG=905.3      FL=6201.69    JF=
            34AL B- DECAY:MIXED--->C  C     34SI  G 905.5     2 12.2    12                                                  *** EG=905.5      FL=6201.8     JF=
  GAMMA------------------------------------ 34SI  G 1333.6    1  9.4    21                                                  --- EG=1333.6     FL=5773.45    JF=
@@ -514,10 +514,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        34AL B- DECAY (23.2 MS)--->B  B     34SI  G 4150.4    1 100.0   34                                                  *** EG=4150.4     FL=3325.59    JF=2+
            34AL B- DECAY:MIXED--->C  C     34SI  G 4150.5    2 100     4                                                   *** EG=4150.5     FL=3325.7     JF=2+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34SI  L 7549+X                                                              R   ---
-                     *new XREF new tags    34SIX L XREF=A(7549+x)B(7549+x)
-                     *new XREF old tags    34SIX L XREF=A(7549+x)B(7549+x)
-                     #old XREF in Adopted  34SIX L XREF=A(7549+x)B(7549+x)
+ LEVEL************************************ 34SI  L 7549+X                                                              R  
+                     *new XREF new tags    34SIX L XREF=AB(7549+x)
+                     *new XREF old tags    34SIX L XREF=AB(7549+x)
       34AL B- DECAY (53.73 MS)--->A  A     34SI  L 7549+X                                                              R  
        34AL B- DECAY (23.2 MS)--->B  B     34SI  L 7549+X                                                              R  
       34AL B- DECAY (53.73 MS)--->A  A     34SI cL E$x<9445.4 {I22} from Q(|b{+-})({+34}Al)-S(n)({+34}Si), where          
@@ -531,10 +530,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        34AL B- DECAY (23.2 MS)--->B  B     34SI4cL that subsequently decay to {+33}Si via one-neutron emission.           
        34AL B- DECAY (23.2 MS)--->B  B     34SI  B             11      4                                                  
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34SI  L 12057+Y                                                             R   ---
-                     *new XREF new tags    34SIX L XREF=A(12057+y)B(12057+y)
-                     *new XREF old tags    34SIX L XREF=A(12057+y)B(12057+y)
-                     #old XREF in Adopted  34SIX L XREF=A(12057+y)B(12057+y)
+ LEVEL************************************ 34SI  L 12057+Y                                                             R  
+                     *new XREF new tags    34SIX L XREF=AB(12057+y)
+                     *new XREF old tags    34SIX L XREF=AB(12057+y)
       34AL B- DECAY (53.73 MS)--->A  A     34SI  L 12057+Y                                                             R  
        34AL B- DECAY (23.2 MS)--->B  B     34SI  L 12057+Y                                                             R  
       34AL B- DECAY (53.73 MS)--->A  A     34SI cL E$y<4937 {I3} from Q(|b{+-})({+34}Al)-S(2n)({+34}Si), where            
@@ -549,7 +547,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
 
 Statistics of levels and gammas from all datasets of 34SI:
                              DSID     #of levels       #of gammas       level range
-           ADOPTED LEVELS, GAMMAS        27               53            0.0        to    12057+y
+           ADOPTED LEVELS, GAMMAS        25               53            0.0        to    7476.27
          34AL B- DECAY (53.73 MS)        13               19            0.0        to    12057+y
           34AL B- DECAY (23.2 MS)        17               28            0.0        to    12057+y
               34AL B- DECAY:MIXED        22               47            0          to     7476.5
@@ -564,7 +562,7 @@ Statistics of levels and gammas from all datasets of 34SI:
                   SI(34SI,34SI'G)        3                2             0          to       4270
                COULOMB EXCITATION        2                1             0          to       3305
 
-                         IN TOTAL        128              195           0.0        to     7476.5
+                         IN TOTAL        126              195           0.0        to     7476.5
 
 
 
@@ -572,12 +570,12 @@ Statistics of levels and gammas from all datasets of 34SI:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                   34SI        27           53           128          195            1182             13
+                   34SI        25           53           126          195            1187             13
 
-               IN TOTAL        27           53           128          195            1182             13
+               IN TOTAL        25           53           126          195            1187             13
 
 Number of nuclides     : 1
 Number of blocks       : 14
 Number of references   : 72
-Number of lines in files: 1196
+Number of lines in files: 1201
 (from all blocks including abstract, comment, reference)
