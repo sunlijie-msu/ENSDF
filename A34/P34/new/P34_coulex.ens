@@ -2,6 +2,7 @@
  34P   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34P   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34P 2 H CUT=28-May-2012$                                                       
+ 34P  dL E$Least-squares fitting is done by GLSC (version 12-Jun-2026)          
  34P  c  2000Pr09: {+197}Au({+34}P,{+34}P'|g). A 54.5-MeV/nucleon radioactive   
  34P 2c  beam of {+34}P was produced via fragmentation of a 90-MeV/nucleon      
  34P 3c  {+40}Ar primary beam on a {+9}Be primary target at NSCL, MSU. The      
@@ -9,20 +10,23 @@
  34P 5c  MeV/nucleon. |g rays were detected using the NSCL NaI(Tl) array.       
  34P 6c  Measured E|g, I|g, and (scattered-{+34}P)-|g coin. Deduced excitation  
  34P 7c  cross sections and B(E2). Also see 2002Gl01.                           
- 34P   L 0            1+                                                        
- 34P   L 422       7  (2+)                                                      
- 34P  cL $ B(E2)=0.0020 {I10} if directly excited, but 2000Pr09 propose that    
- 34P 2cL this state is being indirectly populated via 2225 state. B(E2) assigned
- 34P 3cL to 2235 will account completely for the population of 429 state        
+ 34P  cL E$From E|g data in 2000Pr09.                                           
+ 34P   L 0                                                                      
+ 34P   L 422       7                                                            
+ 34P  cL $B(E2)=0.0020 {I10} if the yield of 429|g is entirely from direct      
+ 34P 2cL population of the 422 level in the Coulomb excitation reaction.        
+ 34P 3cL 2000Pr09 adopts the B(E2)|^ for the 2235 level and concludes that they 
+ 34P 4cL have no evidence for direct E2 excitation of the 429 level. The yield  
+ 34P 5cL of 429|g can be explained entirely by feeding from the decay of the    
+ 34P 6cL 2235 level through the 1608 level.                                     
  34P   G 422       7                                                            
- 34P  cG $ |s=5.2 mb {I24}                                                      
- 34P   L 1608         (1+)                                                      
- 34P   G 1178                                                                  S
- 34P   G 1608                                                                  S
- 34P   L 2235      9   (2+)                                                    ?
+ 34P  cG $|s=5.2 mb {I24}                                                       
+ 34P   L 1608                                                                   
+ 34P  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
+ 34P  cL E$rounded value from the Adopted Levels. 1178|g and 1608|g are assumed 
+ 34P 2cL to deexcite this level but are not observed in 2000Pr09.               
+ 34P   L 2235      9                                                           ?
  34P 2 L BE2=0.0026 12 (2000Pr09)                                               
- 34P  cL E$ but 2232 {I6} is assigned an unnatural parity, (3+) state in (pol   
- 34P 2cL d,|a) (1987TrZZ)                                                       
- 34P   G  627      9                                                           ?
- 34P  cG $ |s=6.8 mb {I30}                                                      
+ 34P   G 627       9                                                           ?
+ 34P  cG $|s=6.8 mb {I30}                                                       
 
