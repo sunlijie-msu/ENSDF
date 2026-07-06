@@ -7,9 +7,10 @@
  34P 3c  particles were momentum analyzed by an Enge split-pole spectrograph and
  34P 4c  detected in a focal-plane position-sensitive delay-line counter. The |g
  34P 5c  rays were measured using a Ge detector. The |a|g(|q) measurements were 
- 34P 6c  performed using five large NaI(Tl) detectors. Measured E|a, E|g,       
- 34P 7c  |a|g(|q), and tensor analyzing powers (T{-20}). Deduced levels, J, and 
- 34P 8c  |p. Comparisons with shell-model calculations.                         
+ 34P 6c  performed using five large NaI(Tl) detectors. Measured E|a, E|g, I|g,  
+ 34P 7c  |a|g(|q), and tensor analyzing powers (T{-20}). Deduced levels, J, |p, 
+ 34P 8c  multipolarities, and mixing ratios. Comparisons with shell-model       
+ 34P 9c  calculations.                                                          
  34P  c  1978Ba30: 36S(d,|a). E{-d}=3.05-3.26 MeV on 81.1%-enriched 36S target  
  34P 2c  at the Radium Institute. Measured |a spectra with a magnetic           
  34P 3c  spectrograph Deduced levels.                                           
@@ -23,11 +24,13 @@
  34P   L 0             1+                                                       
  34P  cL J$from the Adopted Levels.                                             
  34P   L 429.1     1   2+                                                       
+ 34P  cL E$429 {I7} from 1978Ba30 E|a data, 430 {I4} from 1987TrZZ E|a data.    
  34P  cL J$natural parity from analyzing powers (1987TrZZ) and spin=2 from      
  34P 2cL |a|g(|q) (1987TrZZ).                                                   
  34P   G 429.1                  (M1+E2)  +0.52   10                             
  34P  cG MR$or +1/(0.01 {I8}) (1987TrZZ).                                       
  34P   L 1607.6    5   1+                                                       
+ 34P  cL E$1616 {I10} from 1978Ba30 E|a data, 1610 {I3} from 1987TrZZ E|a data. 
  34P  cL J$unnatural parity from analyzing powers (1987TrZZ) and spin=1 from    
  34P 2cL |a|g(|q) (1987TrZZ).                                                   
  34P   G 1178.5       61     7  (M1+E2)  -0.93   26                             
@@ -35,48 +38,41 @@
  34P   G 1607.6       39     5  (M1+E2)  +0.13   6                              
  34P  cG MR$or +1/(0.13 {I6}) (1987TrZZ).                                       
  34P   L 2225      2  (3+)                                                      
+ 34P  cL E$2236 {I10} from 1978Ba30, 2232 {I10} from 1987TrZZ E|a data.         
  34P  cL J$unnatural parity from analyzing powers (1987TrZZ) and spin=3 seems   
  34P 2cL better than spin=1,2 from |a|g(|q) plot (1987TrZZ).                    
  34P   G 1796                                                                   
  34P   G 2225                                                                  ?
  34P   L 2299      3  (1+,2-,3+,4-)                                             
+ 34P  cL E$2302 {I20} from 1978Ba30 E|a data, 2307 {I7} from 1987TrZZ E|a data. 
  34P   G 1870                                                                  ?
+ 34P   L 2372      20                                                           
+ 34P  cL E$from 1978Ba30 E|a data.                                              
+ 34P   L 2628      12                                                           
+ 34P  cL E$from 1978Ba30 E|a data.                                              
  34P   L 2675      3  (1+,2-,3+)                                                
+ 34P  cL E$2683 {I7} from 1987TrZZ E|a data.                                    
  34P   G 376          9      LT                                                ?
  34P   G 1068         23     9                                                  
  34P   G 2246         50     13                                                 
  34P   G 2675         18     10                                                ?
+ 34P   L 3086      15                                                          ?
+ 34P  cL E$from 1987TrZZ E|a data.                                              
+ 34P   L 3201      16                                                           
+ 34P  cL E$from 1978Ba30 E|a data.                                              
+ 34P   L 3291      23                                                          ?
+ 34P  cL E$from 1987TrZZ E|a data.                                              
+ 34P   L 3482       8                                                           
+ 34P  cL E$from 1987TrZZ E|a data.                                              
+ 34P   L 3546      12                                                          ?
+ 34P  cL E$from 1987TrZZ E|a data.                                              
  34P   L 4302      6  (1+,2-,3+,4-)                                             
+ 34P  cL E$4306 {I7} from 1987TrZZ E|a data.                                    
  34P   G 1627                                                                  ?
  34P   G 2695                                                                   
  34P   L 4434      10                                                           
+ 34P  cL E$4438 {I13} from 1987TrZZ E|a data.                                   
  34P   G 2135                                                                  ?
  34P   L 4725      12 (1+,2-,3+,4-,5+)                                          
+ 34P  cL E$4744 {I9} from 1987TrZZ E|a data.                                    
  34P   G 4296                                                                   
-
-
-
- 34P   L 0             1+                                                       
- 34P   L 430       4   2+                                                       
- 34P  cL E$429 {I7} (1978Ba30)                                                  
- 34P   L 1610      3   1+                                                       
- 34P  cL E$1616 {I10} (1978Ba30)                                                
- 34P   L 2231      10 (3+)                                                      
- 34P  cL E$2236 {I10} (1978Ba30)                                                
- 34P   L 2307      7                                                            
- 34P  cL E$2302 {I20} (1978Ba30)                                                
- 34P   L 2372      20                                                           
- 34P  cL E$2372 {I20} (1978Ba30)                                                
- 34P   L 2628      12                                                           
- 34P  cL E$2628 {I12} (1978Ba30)                                                
- 34P   L 2683      7  (1+,2-,3+)                                                
- 34P   L 3086      15                                                           
- 34P   L 3201      16                                                           
- 34P  cL E$3201 {I16} (1978Ba30)                                                
- 34P   L 3291      23                                                           
- 34P   L 3482      8                                                            
- 34P   L 3546      12                                                           
- 34P   L 4306      7  (1+,2-,3+)                                                
- 34P   L 4438      13                                                           
- 34P   L 4744      9 (1+,2-,3+,4-)                                              
-
