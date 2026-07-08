@@ -49,6 +49,9 @@ You are an Agent specializing in Evaluated Nuclear Structure Data File (ENSDF) 8
 - `|S` → Σ (Sigma), `|U` → Υ (Upsilon), `|V` → ∇ (nabla)
 - `|W` → Ω (Omega), `|X` → Ξ (Xi), `|Y` → Ψ (Psi)
 
+**Accents:**
+-`~h` → ħ (h-bar)
+
 **Mathematical Symbols:**
 
 - `|*` → × (times), `|?` → ≈ (approximate/tilde), `|<` → ≤ (leq), `|>` → ≥ (geq)

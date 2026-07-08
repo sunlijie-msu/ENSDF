@@ -1,14 +1,16 @@
  34P     18O(18O,PNG) E=24 MEV         2018LU08                  ENSDF    202609
  34P   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34P  c  2018Lu08: a 24-MeV {+18}O beam was provided by the ATLAS accelerator at
- 34P 2c  Argonne National Laboratory. The target was 0.26 mg/cm{+2} of {+18}O   
- 34P 3c  (97% enrichment) on a 12.7 |mm Ta backing. Measured E|g, I|g, |g|g,    
- 34P 4c  proton-|g, |g(|q) using the Gammasphere array consisting of 101        
- 34P 5c  Compton-suppressed HPGe detectors and the nearly 4|p Microball detector
- 34P 6c  consisting of 95 CsI(Tl) scintillators Comparison to p-sd-pf shell     
- 34P 7c  model calculations using the PSDPF interaction.                        
- 34P  cG RI$Relative intensities normalized to I|g(429|g)=100.                  
- 34P  cG E(a)$From Figure 7. 2018Lu08 state that these transitions were observed
+ 34P 2c  Argonne National Laboratory. The target was 260-|mg/cm{+2} 97%-enriched
+ 34P 3c  {+18}O on a 12.7-|mm Ta backing. The deexciting |g rays were detected  
+ 34P 4c  by Gammasphere, consisting of 101 Compton-suppressed HPGe detectors.   
+ 34P 5c  The evaporated protons and light charged particles were detected by the
+ 34P 6c  nearly 4|p Microball detector, consisting of 95 CsI(Tl) scintillators. 
+ 34P 7c  Measured E|g with Doppler correction, I|g, |g|g-coin, p|g-coin, and    
+ 34P 8c  |g(|q). Comparisons to shell model calculations using the (0+1)~h|w    
+ 34P 9c  PSDPF interaction.                                                     
+ 34P  cG E,RI$From 2018Lu08.
+ 34P  cG E(B)$From Figure 7. 2018Lu08 states that these transitions were observed
  34P 2cG in 2012Be11 and verified in the present work.                          
  34P  cL E$From least-squares fit to E|g, by compiler.                          
  34P  cL J$From 2018Lu08 based on prior literature values, |g(|q) measurements  
@@ -32,17 +34,14 @@
  34P   L 3806      3                                                            
  34P   G 3377.2    26 1.2    2                                                  
  34P   L 3911.3    9  (4-)                                                  A   
- 34P   G 1591                                                                   
- 34P F G FLAG=a                                                                 
- 34P   G 1606                                                                  ?
- 34P F G FLAG=a                                                                 
+ 34P   G 1591                                                               B   
+ 34P   G 1606                                                               B  ?
  34P   L 4424      3                                                            
  34P   G 3994.9    27 4.7    2                                                  
  34P   L 4454.7    12 (4-)                                                  A   
  34P  cL J$|g(|q) for 2134 transition is consistent with J=4, but does not rule 
  34P 2cL out J=3 (2018Lu08).                                                    
- 34P   G 2134                                                                   
- 34P F G FLAG=a                                                                 
+ 34P   G 2134                                                               B   
  34P   L 4570.8    21                                                           
  34P   G 2250.1    20 1.0    3                                                  
  34P   L 4613.2    22                                                           
