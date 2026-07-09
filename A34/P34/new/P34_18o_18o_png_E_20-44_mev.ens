@@ -21,50 +21,39 @@
  34P  cG E,RI,M$From 2009Be26. Multipolarities are deduced from |g(|q).         
  34P  cL E$From a least-squares fit to |g-ray energies.                         
  34P  cL J$From |g(|q) measurements in 2009Be26.                                
- 34P  tG $ --------------------------------------------------------------       
- 34P  tG $   Relative intensities measured at various beam energies             
- 34P  tG $   E|g(keV)    20 MeV     25 MeV      30 MeV      44 MeV              
- 34P  tG $ --------------------------------------------------------------       
- 34P  tG $   429         100         100         100                            
- 34P  tG $   679           1.0 {I5}    4 {I1}      7 {I1}      9 {I2}           
- 34P  tG $   1047         17 {I2}     28 {I2}     44 {I4}     36 {I4}           
- 34P  tG $   1179          9 {I2}      6 {I1}      3 {I1}      8 {I2}           
- 34P  tG $   1607 a        6 {I2}     13 {I2}     11 {I2}                       
- 34P  tG $   1607 a        6 {I2}     13 {I2}     11 {I2}     13 {I2}           
- 34P  tG $   1645         11 {I2}     31 {I2}     46 {I4}     20 {I3}           
- 34P  tG $   1876         37 {I4}     54 {I4}     64 {I4}     76 {I6}           
- 34P  tG $   1891         17 {I2}     15 {I2}      9 {I1}      6 {I1}           
- 34P  tG $   2325          2 {I1}      4 {I1}     10 {I2}     11 {I2}           
- 34P  tG $   2839        < 1           2 {I1}      7 {I1}     10 {I2}           
- 34P  tG $   2883        < 1           3 {I1}      5 {I1}     11 {I2}           
- 34P  tG $    a: unresolved doublet. Combined intensity given except for        
- 34P  tG $    44 MeV data where it is assigned to decay of 6236 level           
- 34P  tG $ -------------------------------------------------------------        
  34P  PN                                                                     5  
  34P   L 0.0          1+                                                        
  34P   L 428.7      9 2+               0.97 PS   LT                             
+ 34P  cL T$lifetime |t<1.4 ps (2009Be26, DSAM).                                 
  34P   G 429       1  100       M1                                              
  34P   L 1607.4     9 1+               0.90 PS   28                             
+ 34P  cL T$lifetime |t=1.3 ps {I4} (2009Be26, DSAM).                            
  34P   G 1179      1  5      1  M1                                              
  34P  cG RI$ branching ratio I|g(1179)/I|g(1607)=36 {I9}/64 {I9}                
  34P   G 1607      1  11     2  M1                                              
  34P   L 2304.7    22 4-               1.4 NS    11                             
- 34P  cL T$ 2009Be26 give mean lifetime as 430-3600 ps                          
+ 34P  cL T$lifetime |t=430 ps - 3600 ps (2009Be26, DSAM).                       
  34P   G 1876      2  76     6  M2                                              
  34P   L 2319.7    22 3-               2.1 PS    GT                             
+ 34P  cL T$lifetime |t>3 ps (2009Be26, DSAM).                                   
  34P   G 1891      2  10     2  E1                                              
  34P   L 3352       3 (5-)             0.21 PS   10                             
+ 34P  cL T$lifetime |t=0.30 ps {I15} (2009Be26, DSAM).                          
  34P   G 1047      2  37     4  M1                                              
  34P   L 3950       3 (5-)             0.21 PS   10                             
+ 34P  cL T$lifetime |t=0.30 ps {I15} (2009Be26, DSAM).                          
  34P   G 1645      2  19     2  M1                                              
  34P   L 4629       3 (6-)             0.35 PS   14                             
+ 34P  cL T$lifetime |t=0.5 ps {I2} (2009Be26, DSAM).                            
  34P   G 679       2  7      1  M1                                              
  34P  cG RI$ branching ratio I|g(679)/I|g(2325)=40 {I11}/60 {I11}               
  34P   G 2325      2  10     2  E2                                              
  34P   L 6191       4 (6-)             0.69 PS   LT                             
+ 34P  cL T$lifetime |t<1 ps (2009Be26, DSAM).                                   
  34P   G 2839      2  6      1  M1                                              
  34P   L 6236       3 (7+)             2.08 PS   GT                             
+ 34P  cL T$lifetime |t>3 ps (2009Be26, DSAM).                                   
  34P   G 1607      2  11     2  E1                                              
  34P  cG RI$ branching ratio I|g(1607)/I|g(2883)=75 {I8}/25 {I8}                
  34P   G 2883      2  5      1  M2                                              
-                                                                                
+
