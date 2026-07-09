@@ -20,7 +20,7 @@ Generated at: Thu 07/09/2026 at 03:53:05 PM EDT
  34P   G 1799.7    6  100    16                                             B   
  34P   G 2229      1  59     14                                             B   
  34P   L 2305.2    4  4-                                                    B   
- 34P   G 1875.9    4  100       (M2)                                        B   
+ 34P   G 1875.9    4  100       Q(+O)    0.00    12                         B   
  34P  cG E$from 2012Be11. Other: 1875.8 {I6} (2018Lu08)                         
  34P  cG M$from 2012Be11                                                        
  34P  cG $A{-2}=+0.32 {I6}, A{-4}=+0.02 {I8}.                                   
@@ -82,11 +82,11 @@ Generated at: Thu 07/09/2026 at 03:53:05 PM EDT
  34P   L 4710.0    17 (6)                                                   B   
  34P  cL J$spin=4,5,6 from 1357|g(|q). 2018Lu08 adopts spin=(6) based on the    
  34P 2cL tendency of fusion-evaporation reactions to favor higher-spin states.  
- 34P   G 1356.9    23 33     11 D+Q                                         B   
- 34P   G 2405.5    20 100    5                                              B   
- 34P   L 4729.6    30                                                       B   
- 34P   G 4300.2    30 100                                                   B   
- 34P   L 5012.6    21 (2)-             0.07 PS   LT                         B   
+ 34P   G 1356.9    23 33     11 D+Q                                             
+ 34P   G 2405.5    20 100    5                                                  
+ 34P   L 4729.6    30                                                           
+ 34P   G 4300.2    30 100                                                       
+ 34P   L 5012.6    21 (2)              0.07 PS   LT                         B   
  34P  cL T$|t<0.1 ps (2012Be11, DSAM).                                          
  34P   G 2692      2  100                                                   B   
  34P   L 5280.7    21 (3)-             0.07 PS   LT                         B   
