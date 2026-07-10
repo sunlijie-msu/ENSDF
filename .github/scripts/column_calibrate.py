@@ -96,6 +96,14 @@ def is_data_record_line(line):
     # Also check for DP records (delayed proton)
     if len(line) > 8 and line[7:9] == 'DP':
         return True
+    
+    # NUCID-shift detection: when column 1 is a digit (missing leading space),
+    # the record type shifts from col 8 (index 7) to col 7 (index 6).
+    # Check index 6 for record types when col 1 starts with a digit.
+    if record_type not in all_record_types and len(line) > 0 and line[0].isdigit():
+        shifted_type = line[6] if len(line) > 6 else ' '
+        if shifted_type in all_record_types:
+            return True
         
     return record_type in all_record_types
 
@@ -153,13 +161,13 @@ def fix_line_lengths(filename, dry_run=False):
             else:
                 fixed_lines.append(line_content + '\n')
         elif current_length < 80:
-            # Too short - check if missing leading space
+            # Too short - check if missing leading space (NUCID shifted left)
             if len(line_content) >= 1 and line_content[0].isdigit():
-                # Likely missing NUCID leading space
-                fixed_line = ' ' + line_content[:79]
+                # NUCID shifted left - prepend space, pad to exactly 80
+                fixed_line = (' ' + line_content).ljust(80)[:80]
                 fixed_lines.append(fixed_line + '\n')
                 lines_modified += 1
-                print(f"Line {line_num}: {line_content[7]} record - Fixed NUCID + padding (was {current_length} chars, col 1 was '{line_content[0]}')")
+                print(f"Line {line_num}: {line_content[7] if len(line_content) > 7 else line_content[6] if len(line_content) > 6 else '?'} record - Fixed NUCID: prepended leading space (col 1 was '{line_content[0]}'), padded to 80")
             else:
                 padded_line = line_content.ljust(80)
                 fixed_lines.append(padded_line + '\n')
