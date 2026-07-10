@@ -143,16 +143,30 @@ def fix_line_lengths(filename, dry_run=False):
             continue
         
         if current_length == 80:
-            # Perfect length - keep as is
-            fixed_lines.append(line_content + '\n')
+            # Perfect length - but also check NUCID column 1
+            if len(line_content) >= 5 and line_content[0].isdigit():
+                # NUCID shifted left - prepend space, trim last char
+                fixed_line = ' ' + line_content[:79]
+                fixed_lines.append(fixed_line + '\n')
+                lines_modified += 1
+                print(f"Line {line_num}: {line_content[7]} record - Fixed NUCID: prepended leading space (col 1 was '{line_content[0]}')")
+            else:
+                fixed_lines.append(line_content + '\n')
         elif current_length < 80:
-            # Too short - pad with spaces to 80 characters
-            padded_line = line_content.ljust(80)
-            fixed_lines.append(padded_line + '\n')
-            lines_modified += 1
-            issues_found.append((line_num, 'SHORT', current_length, 80 - current_length))
-            if not dry_run:
-                print(f"Line {line_num}: {line_content[7]} record - Padded {80 - current_length} spaces (was {current_length} chars)")
+            # Too short - check if missing leading space
+            if len(line_content) >= 1 and line_content[0].isdigit():
+                # Likely missing NUCID leading space
+                fixed_line = ' ' + line_content[:79]
+                fixed_lines.append(fixed_line + '\n')
+                lines_modified += 1
+                print(f"Line {line_num}: {line_content[7]} record - Fixed NUCID + padding (was {current_length} chars, col 1 was '{line_content[0]}')")
+            else:
+                padded_line = line_content.ljust(80)
+                fixed_lines.append(padded_line + '\n')
+                lines_modified += 1
+                issues_found.append((line_num, 'SHORT', current_length, 80 - current_length))
+                if not dry_run:
+                    print(f"Line {line_num}: {line_content[7]} record - Padded {80 - current_length} spaces (was {current_length} chars)")
         elif current_length > 80:
             # Too long - trim to exactly 80 characters
             trimmed_line = line_content[:80]
@@ -1944,6 +1958,7 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
     # Check for line length issues in data record lines only
     length_issues = []
     tab_issues = []
+    nucid_issues = []
     for line_num, line in enumerate(lines, 1):
         line_content = line.rstrip('\n\r')
         length = len(line_content)
@@ -1954,6 +1969,9 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
                 length_issues.append((line_num, length, line_content[7] if len(line_content) > 7 else '?'))
             if '\t' in line_content:
                 tab_issues.append((line_num, line_content[7] if len(line_content) > 7 else '?'))
+            # NUCID column 1 check: for mass < 100, column 1 MUST be space
+            if len(line_content) >= 5 and line_content[0].isdigit():
+                nucid_issues.append((line_num, line_content[:6].rstrip()))
     
     if length_issues:
         print("DATA RECORD LINE LENGTH ISSUES DETECTED:")
@@ -1972,6 +1990,14 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
         print("DATA RECORD TAB CHARACTER ISSUES DETECTED:")
         for line_num, record_type in tab_issues:
             print(f"  Line {line_num}: {record_type} record contains tab characters; ENSDF requires spaces only")
+        print()
+        errors_found = True
+
+    if nucid_issues:
+        print("NUCID COLUMN 1 POSITION ERRORS DETECTED:")
+        print("  Column 1 must be SPACE for mass numbers < 100 (e.g., ' 34P ' not '34P  ').")
+        for line_num, nucid in nucid_issues:
+            print(f"  Line {line_num}: NUCID starts at column 1 with digit '{nucid[0]}' — missing leading space. Found: '{nucid}'")
         print()
         errors_found = True
     

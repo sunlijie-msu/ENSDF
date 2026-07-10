@@ -173,10 +173,17 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
         # Specific heuristic for shifted comments
         if len(line) > 7 and line[7] in {'c', 'C'} and line[6] == ' ':
             errors.append('HINT: Found "c" in Column 8. Comment flags must be in Column 7.')
+        # NUCID shift detection: if col 1 is a digit, the whole line is shifted left
+        if len(line) > 0 and line[0].isdigit() and len(line) < 80:
+            errors.append('NUCID shifted left: Column 1 is digit "' + line[0] + '" (must be space for A<100). Whole line shifted left by 1 column.')
 
     if record_def and _is_primary_data_record(line):
         col_77 = line[76] if len(line) > 76 else ' '
         col_80 = line[79] if len(line) > 79 else ' '
+        
+        # NUCID column 1 check for all data records
+        if len(line) > 0 and line[0].isdigit():
+            errors.append('NUCID shifted left: Column 1 is digit "' + line[0] + '" (must be space for A<100).')
 
         # CRITICAL AI FIX: Check for shifted flags in Column 76 (Index 75)
         # Column 76 (part of 2-col uncertainty fields like DS, DTI) should only contain:
