@@ -130,18 +130,18 @@ Generated at: Thu 07/09/2026 at 03:53:05 PM EDT
  34P   G 2884.3    7  90     13 M2(+E3)) +0.11   18                         B   
  34P  cG $A{-2}=+0.52 {I10}, A{-4}=-0.05 {I11}.                                 
  34P   G 3932      3  12.5   75                                             B   
- 34P   L 6294.7    23                                                       B   
- 34P   G 2942.2    21 100                                                   B   
- 34P   L 6316.9    31                                                       B   
- 34P   G 4011.6    30 100                                                   B   
+ 34P   L 6294.7    23                                                           
+ 34P   G 2942.2    21 100                                                       
+ 34P   L 6316.9    31                                                           
+ 34P   G 4011.6    30 100                                                       
  34P   L 6357.4    8  (7)-             0.035 PS  LT                         B   
  34P  cL T$|t<0.05 ps (2012Be11, DSAM).                                         
  34P   G 2405.9    7  75     14 (E2)                                        B   
  34P  cG $A{-2}=-0.53 {I12}, A{-4}=-0.57 {I13}.                                 
  34P   G 3004      2  100    14                                             B   
- 34P   L 6445.1    31                                                       B   
- 34P   G 4139.8    30 100                                                   B   
- 34P   L 6923.1    27 (6)                                                   B   
+ 34P   L 6445.1    31                                                           
+ 34P   G 4139.8    30 100                                                       
+ 34P   L 6923.1    27 (6)                                                       
  34P  cL J$spin=4,5,6 from 3571|g(|q). 2018Lu08 adopts spin=(6) based on the    
  34P 2cL tendency of fusion-evaporation reactions to favor higher-spin states.  
  34P   G 3570.6    26 100       D+Q                                         B   
