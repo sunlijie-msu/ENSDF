@@ -26,7 +26,9 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
   - Bare number (no `I`): `A{-2}=+0.05 5` → `A{-2}=+0.05 {I5}`.
   Scan for bare `I`: `\bI\d{1,3}\b` near values. Scan for bare numbers: lone 1-3 digit integers after `=` or after a value with space, where context suggests uncertainty.
 - **Unicode leakage:** No raw Unicode glyphs. Wrong: `μ`, `×`, `β`, `γ`, `θ`, `≈`, `≤`, `≥` → Correct: `|m`, `|*`, `|b`, `|g`, `|q`, `|?`, `|<`, `|>`. Example: `1500-μm-thick` → `1500-|mm-thick`.
-- **Mixed symbol-text:** Wrong: `γ-ray`, `μm`, `β-delayed` → Correct: `|g-ray`, `|mm`, `|b-delayed`.
+- **Non-ENSDF unit spellings:** `ug` → `|mg` (microgram); `cm2`, `mg/cm2` → `cm{+2}`, `mg/cm{+2}` (superscript exponent).
+- **Mixed symbol-text:** Wrong: `γ-ray`, `μm`, `β-delayed`, `ug/cm2` → Correct: `|g-ray`, `|mm`, `|b-delayed`, `|mg/cm{+2}`.
+- **Proper-noun exceptions:** Skip well-known instrument names (e.g., `Gamma Array` as part of INGA) — not every `Gamma` match is a symbol-text error.
 - **Leaked record tags:** Scan cols 10-80 for spurious ` cL `, ` cG `, ` L `, ` G ` (copy-paste artifact).
 - **Unintended symbol prefixes:** `|resonance` renders as rho+esonance; verify intent.
 - **Inconsistent subscripts:** `A{-2}=0.5 A6=-0.1` → `A{-2}=0.5 A{-6}=-0.1`.
