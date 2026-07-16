@@ -132,11 +132,12 @@ Assigning M1+E2 or (M1+E2) in the G-record M field:
 1. Assign firm M1+E2 directly based on DCO/ADO and POL data. The `cG M$` comment should cite the specific dataset:
 
    `cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.`
+   `cG M$M1+E2, |DJ=1, from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.`
 
 2. Assign firm M1+E2 from D+Q without POL when the level lifetime is short (M2 ruled out by RUL). The `cG M$` comment should cite the dataset and note RUL:
 
    `cG M$D+Q from |g(|q) in dataset. M2 ruled out by RUL.`
-   `cG M$D+Q from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.`
+   `cG M$D+Q, |DJ=1, from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.`
 
    Use M1+E2 in `cL J$` comments to deduce Jπ:
 
@@ -146,13 +147,13 @@ Assigning M1+E2 or (M1+E2) in the G-record M field:
    Use M1+E2, |DJ=1, in `cL J$` comments to deduce Jπ:
 
    `<G-energy>|g, M1+E2, |DJ=1 to <Jπ>, <L-energy> level`
-   `cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.`
-   `cG M$D+Q from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.`
+   `cG M$M1+E2, |DJ=1, from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.`
+   `cG M$D+Q, |DJ=1, from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.`
 
 3. Assign tentative (M1+E2) from firm D+Q when the level scheme indicates Δπ=no:
 
    `cG M$D+Q from |g(|q) in dataset. |D|p=no from level scheme.`
-   `cG M$D+Q from |g|g(|q)(DCO) in dataset. |D|p=no from level scheme.`
+   `cG M$D+Q, |DJ=1, from |g|g(|q)(DCO) in dataset. |D|p=no from level scheme.`
 
 If D(+Q) is firm, the corresponding converted form is M1(+E2). The same logic applies to E1+M2.
 
