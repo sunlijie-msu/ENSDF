@@ -39,9 +39,9 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 ### Critical Formatting Rules
 
 - **LEFT-JUSTIFIED** in columns 33-41
-- **Shorthand (D, Q, O) is valid ENSDF notation** — do NOT auto-replace with full notation unless specified
-- **Parentheses indicate uncertainty** in multipolarity assignment
-- **Plus sign (+)** indicates mixed transitions with comparable amplitudes
+- **Shorthand (D, Q, O) is valid ENSDF notation**
+- Parentheses ( ) indicate a less firm assignment in multipolarity.
+- **Plus sign (+)** indicates mixed transitions with non-zero amplitudes
 - **Full notation (E1, M1, E2, etc.) provides explicit multipole type specification**
 
 ### Examples
