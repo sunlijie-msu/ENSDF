@@ -1,18 +1,18 @@
 Program for consistency check: output for gammas ordered by level energies (version 06/19/2026)
-Generated at: Sun 07/12/2026 at 01:31:29 PM EDT
+Generated at: Wed 07/15/2026 at 10:30:41 PM EDT
 
 
 
 34P
  EI         JI           EG              EF         JF           RI              MULT         MR                CC           DSID
  ---------- ----------   -------------   ---------- ----------   -------------   ----------   ---------------   ----------   ------------------------------
- 429.09     2+           429.07     13   0.0        1+           100             M1                                          ADOPTED LEVELS, GAMMAS
+ 429.09     2+           429.07     13   0.0        1+           100             M1(+E2)      -0.07    7                     ADOPTED LEVELS, GAMMAS
  429.07     2+           429.07     13   0          1+           100                                                         34SI B- DECAY (2.77 S)
  428.7      2            429        1    0.0        1+           100                                                         18O(18O,PNG) E=20 MEV
  429.1      2            429.1      4    0.0        1+           100             D(+Q)        +0.11    +13-12                18O(18O,PNG) E=24 MEV
  428.7      2            429        1    0.0        1+           100                                                         18O(18O,PNG) E=25 MEV
  428.7      2            429        1    0.0        1+           100                                                         18O(18O,PNG) E=30 MEV
- 429.4      2+           429.4      10   0.0        1+           100             M1+E2        -0.14    GT                    18O(18O,PNG) E=34 MEV
+ 429.4      2+           429.4      10   0.0        1+           100             M1(+E2)      -0.07    7                     18O(18O,PNG) E=34 MEV
  428.7      2            429        1    0.0        1+           100                                                         18O(18O,PNG) E=44 MEV
  429.1      2+           429.1           0          1+           100             (M1+E2)      +0.52    10                    36S(POL D,A),(POL D,AG)
  429.3      2+           429.3           0          1+           100             M1                                          115IN(34S,XG)
@@ -332,7 +332,7 @@ Generated at: Sun 07/12/2026 at 01:31:29 PM EDT
 
 Statistics of levels and gammas from all datasets of 34P:
                              DSID     #of levels       #of gammas       level range
-           ADOPTED LEVELS, GAMMAS        55               72            0.0        to     7920.1
+           ADOPTED LEVELS, GAMMAS        54               72            0.0        to     7920.1
            34SI B- DECAY (2.77 S)        3                3             0          to    1607.62
             18O(18O,PNG) E=20 MEV        10               12            0.0        to     6235.8
             18O(18O,PNG) E=24 MEV        40               57            0.0        to     7920.2
@@ -351,7 +351,7 @@ Statistics of levels and gammas from all datasets of 34P:
                   208PB(36S,34PG)        8                9             0          to     3950.1
                COULOMB EXCITATION        4                2             0          to       2235
 
-                         IN TOTAL        211              232           0.0        to     7920.2
+                         IN TOTAL        210              232           0.0        to     7920.2
 
 
 
@@ -359,12 +359,12 @@ Statistics of levels and gammas from all datasets of 34P:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                    34P        55           72           211          232            1404             17
+                    34P        54           72           210          232            1415             17
 
-               IN TOTAL        55           72           211          232            1404             17
+               IN TOTAL        54           72           210          232            1415             17
 
 Number of nuclides     : 1
-Number of blocks       : 19
-Number of references   : 32
-Number of lines in files: 1425
+Number of blocks       : 18
+Number of references   : 41
+Number of lines in files: 1433
 (from all blocks including abstract, comment, reference)

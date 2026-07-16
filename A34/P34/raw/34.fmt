@@ -1,8 +1,8 @@
 Program for ENSDF check: output for Format Error and Warnings (version 06/15/2026)
-Generated at: Sun 07/12/2026 at 01:31:28 PM EDT
+Generated at: Wed 07/15/2026 at 10:30:40 PM EDT
 
 ****************************************
-     Total 2 errors 1 warning
+     Total 5 errors 3 warnings
 ****************************************
 
 -----------------------------------------------------------------------------------------
@@ -12,7 +12,7 @@ Generated at: Sun 07/12/2026 at 01:31:28 PM EDT
 #########################################################################################
 ### In dataset <34P: 18O(18O,PNG) E=34 MEV>
 
-     47.  34P   L 2305.6    14 4(-)     2.0 NS    1                                      
+     48.  34P   L 2305.6    14 4(-)     2.0 NS    1                                      
                               ******************                                           <E> Invalid multi-blank in JPI value
                                                                                                Invalid text for unknown JPI
 
@@ -34,12 +34,33 @@ Generated at: Sun 07/12/2026 at 01:31:28 PM EDT
 
 
 #########################################################################################
-### In dataset <Progr: or consistency check: output f>
+### In dataset <34P: ADOPTED LEVELS, GAMMAS>
 
+     14.  34SI c  1999Ai02: Si({+34}P,X) at NSCL. Measured energy-integrated reaction    
+         *****                                                                             <E> NUCID doesn't match
+     15.  34SI2c  cross sections at E=38-80 MeV/nucleon. Deduced strong absorption radii.
+         *****                                                                             <E> NUCID doesn't match
+    173.  34P 2cG ({+18}O({+18}O,pn|g) E=20-44 MeV; (E1) from |g|g(lin pol)              
+                  *                                                                        <E> Unbalanced bracket
+    183.  34P   G 376          18     LT                                                ?
+                  ****                                                                     <W> No final level within 3*sigma=4.02
+                                                                                               Parent level:  2675.5 8, JPI=(1+,2-,3+)
+                                                                                               Calculated FL: 2299.5 13
+                                                                                               Closest level within 5 keV:
+                                                                                                              2305.1 4, JPI=4(-) (assigned by default)
+                                                                                               Level-difference=370.4 9 (with recoil correction)
+    285.  34P   G 2134                   D+Q                                             
+                  *****                                                                    <W> No final level within 3*sigma=7.08
+                                                                                               Parent level:  4446.6 21, JPI=(4-)
+                                                                                               Calculated FL: 2312.5 23
+                                                                                               Closest level within 7 keV:
+                                                                                                              2305.1 4, JPI=4(-) (assigned by default)
+                                                                                               Level-difference=2141.4 22 (with recoil correction)
 
 -----------------------------------------------------------------------------------------
     In file: D:\X\ND\ENSDF\A34\P34\new\P34_beta_decay_2.77_s.ens
 -----------------------------------------------------------------------------------------
+
 
 #########################################################################################
 ### In dataset <34P: 34SI B- DECAY (2.77 S)>

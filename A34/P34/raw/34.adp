@@ -1,5 +1,5 @@
 Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 06/19/2026)
-Generated at: Sun 07/12/2026 at 01:31:35 PM EDT                                 
+Generated at: Wed 07/15/2026 at 10:31:06 PM EDT                                 
                                                                                 
  34P     ADOPTED LEVELS, GAMMAS                                  ENSDF    202609
  34P   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
@@ -9,12 +9,28 @@ Generated at: Sun 07/12/2026 at 01:31:35 PM EDT
  34P  cQ $S(2n)=16386.5 {I8}, S(2p)=28027 {I7} (2021Wa16)                       
  34P  c  Isotope discovery (2012Th10): Cl(n,X) reaction at ETH Zurich (1945Zu01,
  34P 2c  1946Bl01).                                                             
- 34P  c  Measurement of strong absorption radius: 1999Ai02: Si({+34}P,X)        
- 34P 2c  reaction at 38-80 MeV/nucleon, NSCL facility. The {+34}P beam was      
- 34P 3c  obtained from fragmentation of {+55}Mn beam with {+9}Be target at 50-90
- 34P 4c  MeV/nucleon, NSCL facility.                                            
- 34P  d  2012Zh06: measured momentum distributions and production cross section 
- 34P 2d  in 9BE,181TA(40AR,X) at 57 MEV/nucleon                                 
+ 34P  c  {+34}P Production:                                                     
+ 34P  c  2012Zh06: {+9}Be,{+181}Ta({+40}Ar,X) at E({+40}Ar)=57 MeV/nucleon at   
+ 34P 2c  HIRFL, Lanzhou.                                                        
+ 34P  c  2007No13: {+9}Be({+40}Ar,X) at E({+40}Ar)=100 MeV/nucleon at RIKEN.    
+ 34P  c  {+34}P radius measurement:                                             
+ 34SI c  1999Ai02: Si({+34}P,X) at NSCL. Measured energy-integrated reaction    
+ 34SI2c  cross sections at E=38-80 MeV/nucleon. Deduced strong absorption radii.
+ 34P  c  {+34}P mass measurement:                                               
+ 34P  c  2009Kw02: LEBIT Penning trap.                                          
+ 34P  c  Theoretical calculations:                                              
+ 34P  c  2023Ch17: shell model with N3LO, JISP16, and DJ16A interactions.       
+ 34P 2c  Calculated energy levels, J, |p.                                       
+ 34P  c  2020Fo04: shell model, USD interaction. Uncertainty quantification of  
+ 34P 2c  level energies, J, |p, B(E2), B(M1).                                   
+ 34P  c  2017Tr02: shell model with SDPF-MU interaction. Calculated levels, J,  
+ 34P 2c  |p.                                                                    
+ 34P  c  2016Si02: ab initio with NN+3N interactions. Calculated S(2n), S(2p),  
+ 34P 2c  energies of first 2+ states.                                           
+ 34P  c  2012BoZT: shell model with PSDPF interaction, intruder states.         
+ 34P 2c  Calculated levels, J, |p, T{-1/2}.                                     
+ 34P  c  2012SrZZ: large-scale shell model. Calculated energy levels, J, |p,    
+ 34P 2c  B(E2), B(M1).                                                          
  34P  cG E,RI$ Weighted averages of all available data, unless otherwise stated.
  34P 2cG Energies given without uncertainties are from level-energy differences 
  34P  cG M,MR$Unless commented otherwise, from |g(|q) in {+18}O({+18}O,pn|g)    
@@ -46,44 +62,39 @@ Generated at: Sun 07/12/2026 at 01:31:35 PM EDT
  34P   L 0.0          1+               12.43 S   10                             
  34P X L XREF=ABCDEFGHIJKLMNOPQ                                                 
  34P 2 L %B-=100                                                                
- 34P  cL $r{-0}{+2} (strong absorption)=1.14 fm{+2} {I8} (1999Ai02).            
- 34P  cL J$ allowed |b transition from 0+ in {+34}Si decay; unnatural parity    
- 34P 2cL state in (pol |a,d).                                                   
+ 34P  cL J$allowed |b-feeding to 0+ {+34}S ground state; unnatural parity from  
+ 34P 2cL analyzing powers from 36S(POL D,A),(POL D,AG).                         
  34P  cL T$weighted average of 12.40 s {I12} (1946Bl01) and 12.45 s {I10}       
  34P 2cL (1973Go33). Other: 12.5 s (1958Sc31).                                  
- 34P   L 429.09    11 2+               1.14 PS   +35-30                         
+ 34P  cL $Reduced strong absorption radius r{+2}{-0}=1.144 fm{+2} {I76}         
+ 34P 2cL (1999Ai02).                                                            
+ 34P   L 429.09    11 2+               1.11 PS   35                             
  34P X L XREF=ABCDEFGH(441)IJKLMNOPQ                                            
- 34P  cL T$weighted average of 1.3 ps {I+6-3} from ({+18}O,pn|g) E=24 MeV and   
- 34P 2cL 1.04 ps {I35} from ({+36}S,{+34}P|g)                                   
  34P  cL T$from |t=1.6 ps {I5}, weighted average of 1.9 ps {I+9-5} from         
  34P 2cL ({+18}O,pn|g) E=24 MeV and 1.5 ps {I5} from ({+36}S,{+34}P|g).         
  34P  cL T$|t=1.6 ps {I5}: weighted average of |t=1.9 ps {I+9-5} (2012Be11,     
  34P 2cL DSAM) from ({+18}O,pn|g) E=24 MeV and |t=1.5 ps {I5} from differential 
- 34P 3cL recoil-distance method (DRDM) (2019Gr08) from ({+36}S,{+34}P|g).       
- 34P  cL J$ natural parity state from (pol d,|a); |DJ=1, M1+E2 |g to 1+.        
+ 34P 3cL recoil-distance method (DRDM) (2019Gr08) from ({+36}S,{+34}P|g). Other:
+ 34P 4cL |t<1.4 ps (2009Be26, DSAM) from ({+18}O,pn|g).                         
+ 34P  cL J$natural parity from analyzing powers and spin=2 from |a|g(|q) in     
+ 34P 2cL 36S(POL D,A),(POL D,AG). Spin=2 from |g(|q) (2009Be26) in 18O(18O,PNG).
  34P   G 429.07    13 100       M1                                              
  34P B G BM1W=0.21 +5-10$BE2W=50 +130-50                                        
  34P  cG E$from {+34}Si |b{+-} decay. Others: 429 {I1} from ({+18}O,pn|g) E=20  
  34P 2cG MeV, 429.1 {I4} from ({+18}O,pn|g) E=24 MeV, 429.4 {I10} from          
  34P 3cG ({+18}O,pn|g) E=34 MeV, 429 {I1} from ({+36}S,{+34}P|g), and 422 {I7}  
  34P 4cG from Coulomb excitation                                                
- 34P  cG M$M1 from {+115}In({+34}S,X|g); D(+Q) from {+18}O({+18}O,pn|g) E=20-44 
- 34P 2cG MeV.                                                                   
- 34P  cG MR$other values (both from {+36}S(pol d,|a|g)): -14 to +11 (possible   
- 34P 2cG but not allowed by RUL); -0.52 {I10} (gives B(E2)(W.u.)>910, which is  
- 34P 3cG unrealistic in view of RUL=100).                                       
+ 34P  cG M$from ({+34}S,X|g)                                                    
+ 34P  cG M,MR$from |g|g(|q)(DCO) and |g|g(|q)(POL) in 18O(18O,PNG) E=34 MEV.    
+ 34P 2cG Other: D(+Q) with |d=+0.11 {+13-12} from 18O(18O,png) (2009Be26).      
  34P   L 667       40                                                          ?
  34P X L XREF=H(667?)                                                           
- 34P   L 1607.77   20 1+               0.84 PS   +28-14                         
+ 34P   L 1607.77   20 1+               0.83 PS   +28-14                         
  34P X L XREF=ABCDEFGIJKLPQ                                                     
- 34P  cL T$weighted average of 0.90 ps {I28} from ({+18}O,pn|g) E=20 MeV, 0.52  
- 34P 2cL ps {I+45-14} from ({+18}O,pn|g) E=24 MeV, 0.90 ps {I28} from           
- 34P 3cL ({+18}O,pn|g) E=25 MeV, 0.90 ps {I28} from ({+18}O,pn|g) E=30 MeV, and 
- 34P 4cL 0.90 ps {I28} from ({+18}O,pn|g) E=44 MeV                              
  34P  cL T$from |t=1.2 ps {I+4-2}, weighted average of 1.3 ps {I4} from         
  34P 2cL ({+18}O,pn|g) E=20 MeV, 1.3 ps {I4} from ({+18}O,pn|g) E=25 MeV, 1.3 ps
- 34P 3cL {I4} from ({+18}O,pn|g) E=30 MeV, 1.3 ps {I4} from ({+18}O,pn|g) E=44  
- 34P 4cL MeV, and 0.75 ps {I+65-20} from ({+18}O,pn|g) E=24 MeV.                
+ 34P 3cL {I4} from ({+18}O,pn|g) E=30 MeV, and 0.75 ps {I+65-20} from           
+ 34P 4cL ({+18}O,pn|g) E=24 MeV.                                                
  34P  cL J$ allowed |b transition from 0+ in {+34}Si decay; unnatural parity    
  34P 2cL state from (pol d,|a).                                                 
  34P   G 1178.62   16 100    5  D                                               
@@ -126,18 +137,21 @@ Generated at: Sun 07/12/2026 at 01:31:35 PM EDT
  34P   G 620.6     4  68     14 D(+Q)    +0.07   16                             
  34P B G BE1W<0.00041 $                                                         
  34P  cG E$from ({+18}O,pn|g) E=24 MeV. Other: 627 {I9} from Coulomb excitation 
- 34P  cG RI,MR$from ({+18}O,pn|g) E=24 MeV                                      
+ 34P  cG MR$from ({+18}O,pn|g) E=24 MeV.                                        
  34P  cG M$|DJ=1, D(+Q) in {+18}O({+18}O,pn|g) E=20-44 MeV; (E1(+M2)) from      
  34P 2cG |D|p=(yes).                                                            
  34P   G 1799.7    6  100    16 [E1]                                            
  34P B G BE1W<2.4E-5                                                            
  34P   G 2229      1  59     14 [E1]                                            
  34P B G BE1W<7.6E-6                                                            
- 34P   L 2305.1    4  4(-)             1.4 NS    11                             
+ 34P   L 2305.1    4  4(-)             0.97 NS   76                             
  34P X L XREF=BCDEFGI(2309*)J(2287)KLMNOP                                       
  34P F L FLAG=A                                                                 
- 34P  cL T$from ({+18}O,pn|g) E=20 MeV                                          
  34P  cL T$from |t=1.4 ns {I11} in ({+18}O,pn|g) E=20 MeV.                      
+ 34P  cL T$from ({+18}O,pn|g) E=36 MeV. Others: 1.4 ns {I11} from ({+18}O,pn|g) 
+ 34P 2cL E=20 MeV, 1.4 ns {I11} from ({+18}O,pn|g) E=25 MeV, 1.4 ns {I11} from  
+ 34P 3cL ({+18}O,pn|g) E=30 MeV, 1.4 ns {I11} from ({+18}O,pn|g) E=44 MeV, and  
+ 34P 4cL 1.4 ns {I11} from {+198}Pt({+37}Cl,X|g).                               
  34P  cL J$|DJ=2, (M2(+E3)) |g to 2+, 429; unnatural parity state from (pol     
  34P 2cL d,|a).                                                                 
  34P  cL T$ from 2011MaZP (|g-ray coincidence fast-timing technique) other: 0.3 
@@ -188,21 +202,18 @@ Generated at: Sun 07/12/2026 at 01:31:35 PM EDT
  34P X L XREF=K                                                                 
  34P   L 3291      23                                                           
  34P X L XREF=K(3291?)                                                          
- 34P   L 3352.5    5  5(-)             0.24 PS   +10-8                          
+ 34P   L 3352.5    5  5(-)             0.24 PS   +11-8                          
  34P X L XREF=BCDEFGI(3345?)NP                                                  
- 34P  cL T$weighted average of 0.21 ps {I10} from ({+18}O,pn|g) E=20 MeV, 0.36  
- 34P 2cL ps {I+12-8} from ({+18}O,pn|g) E=24 MeV, 0.21 ps {I10} from            
- 34P 3cL ({+18}O,pn|g) E=25 MeV, 0.21 ps {I10} from ({+18}O,pn|g) E=30 MeV, and 
- 34P 4cL 0.21 ps {I10} from ({+18}O,pn|g) E=44 MeV                              
- 34P  cL T$from |t=0.34 ps {I+15-12}, weighted average of 0.30 ps {I15} from    
+ 34P  cL T$from |t=0.35 ps {I+15-12}, weighted average of 0.30 ps {I15} from    
  34P 2cL ({+18}O,pn|g) E=20 MeV, 0.30 ps {I15} from ({+18}O,pn|g) E=25 MeV, 0.30
- 34P 3cL ps {I15} from ({+18}O,pn|g) E=30 MeV, 0.30 ps {I15} from ({+18}O,pn|g) 
- 34P 4cL E=44 MeV, and 0.52 ps {I+18-12} from ({+18}O,pn|g) E=24 MeV.           
+ 34P 3cL ps {I15} from ({+18}O,pn|g) E=30 MeV, and 0.52 ps {I+18-12} from       
+ 34P 4cL ({+18}O,pn|g) E=24 MeV.                                                
  34P  cL J$|DJ=1, D(+Q) |g to 4(-), 2305; |p=(-) more likely in                 
  34P 2cL {+18}O({+18}O,pn|g) E=20-44 MeV based on theory.                       
  34P   G 1031.6    9  3.17   10 [E2]                                            
  34P B G BE2W=4.0 +22-25                                                        
- 34P  cG E,RI$from ({+18}O,pn|g) E=24 MeV                                       
+ 34P  cG E$from ({+18}O,pn|g) E=24 MeV.                                         
+ 34P  cG RI$from ({+18}O,pn|g) E=24 MeV.                                        
  34P   G 1047.1    8  100.0  5  D                                               
  34P B G BM1W=0.052 +12-18$BE2W=0.1 +7-1                                        
  34P  cG E$weighted average of 1047 {I2} from ({+18}O,pn|g) E=20 MeV, 1047.3    
@@ -228,7 +239,7 @@ Generated at: Sun 07/12/2026 at 01:31:35 PM EDT
  34P   G 1438      6  100.0  22 D(+Q)                                          ?
  34P  cG E$unweighted average of 1431.8 {I6} from ({+18}O,pn|g) E=24 MeV and    
  34P 2cG 1443.7 {I10} from ({+18}O,pn|g) E=34 MeV                               
- 34P  cG RI,M$from ({+18}O,pn|g) E=24 MeV                                       
+ 34P  cG M$from ({+18}O,pn|g) E=24 MeV.                                         
  34P   G 1523.9    9  7.5    22 [M1,E2]                                         
  34P  cG M$D,E2 based on RUL; E2,M1 more likely in {+18}O({+18}O,pn|g) E=20-44  
  34P 2cG MeV from |D|p=(no).                                                    
@@ -246,16 +257,12 @@ Generated at: Sun 07/12/2026 at 01:31:35 PM EDT
  34P   L 3942.8    11                                                          ?
  34P X L XREF=F                                                                 
  34P   G 1637.7    10                                                       X   
- 34P   L 3951.3    5  (5-)             0.144 PS  35                             
+ 34P   L 3951.3    5  (5-)             0.139 PS  35                             
  34P X L XREF=BCDEFGP                                                           
- 34P  cL T$weighted average of 0.21 ps {I10} from ({+18}O,pn|g) E=20 MeV, 0.111 
- 34P 2cL ps {I35} from ({+18}O,pn|g) E=24 MeV, 0.21 ps {I10} from ({+18}O,pn|g) 
- 34P 3cL E=25 MeV, 0.21 ps {I10} from ({+18}O,pn|g) E=30 MeV, and 0.21 ps {I10} 
- 34P 4cL from ({+18}O,pn|g) E=44 MeV                                            
  34P  cL T$from |t=0.20 ps {I5}, weighted average of 0.30 ps {I15} from         
  34P 2cL ({+18}O,pn|g) E=20 MeV, 0.30 ps {I15} from ({+18}O,pn|g) E=25 MeV, 0.30
- 34P 3cL ps {I15} from ({+18}O,pn|g) E=30 MeV, 0.30 ps {I15} from ({+18}O,pn|g) 
- 34P 4cL E=44 MeV, and 0.16 ps {I5} from ({+18}O,pn|g) E=24 MeV.                
+ 34P 3cL ps {I15} from ({+18}O,pn|g) E=30 MeV, and 0.16 ps {I5} from            
+ 34P 4cL ({+18}O,pn|g) E=24 MeV.                                                
  34P  cL J$|DJ=1, (M1(+E2)) |g to 4(-), 2305.                                   
  34P   G 1631.5    11 4.2    21 [E2]                                            
  34P B G BE2W=2.7 16                                                            
@@ -264,7 +271,7 @@ Generated at: Sun 07/12/2026 at 01:31:35 PM EDT
  34P  cG E$weighted average of 1645 {I2} from ({+18}O,pn|g) E=20 MeV, 1646.1    
  34P 2cG {I4} from ({+18}O,pn|g) E=24 MeV, 1646.2 {I10} from ({+18}O,pn|g) E=34 
  34P 3cG MeV, and 1645 {I1} from ({+36}S,{+34}P|g)                              
- 34P  cG RI,MR$from ({+18}O,pn|g) E=24 MeV                                      
+ 34P  cG MR$from ({+18}O,pn|g) E=24 MeV.                                        
  34P  cG M$(M1) |g from |g|g(|q)(DCO) and |g|g(|q,lin pol) in                   
  34P 2cG {+18}O({+18}O,pn|g) E=34 MeV; |DJ=1, D |g in {+18}O({+18}O,pn|g)       
  34P 3cG E=20-44 MeV.                                                           
@@ -293,14 +300,10 @@ Generated at: Sun 07/12/2026 at 01:31:35 PM EDT
  34P   G 2292.5    21 100                                                       
  34P   L 4630.1    5  6(-)             0.32 PS   5                              
  34P X L XREF=BCDEFG                                                            
- 34P  cL T$weighted average of 0.35 ps {I14} from ({+18}O,pn|g) E=20 MeV, 0.30  
- 34P 2cL ps {I5} from ({+18}O,pn|g) E=24 MeV, 0.35 ps {I14} from ({+18}O,pn|g)  
- 34P 3cL E=25 MeV, 0.35 ps {I14} from ({+18}O,pn|g) E=30 MeV, and 0.35 ps {I14} 
- 34P 4cL from ({+18}O,pn|g) E=44 MeV                                            
  34P  cL T$from |t=0.46 ps {I7}, weighted average of 0.5 ps {I2} from           
  34P 2cL ({+18}O,pn|g) E=20 MeV, 0.5 ps {I2} from ({+18}O,pn|g) E=25 MeV, 0.5 ps
- 34P 3cL {I2} from ({+18}O,pn|g) E=30 MeV, 0.5 ps {I2} from ({+18}O,pn|g) E=44  
- 34P 4cL MeV, and 0.44 ps {I7} from ({+18}O,pn|g) E=24 MeV.                     
+ 34P 3cL {I2} from ({+18}O,pn|g) E=30 MeV, and 0.44 ps {I7} from ({+18}O,pn|g)  
+ 34P 4cL E=24 MeV.                                                              
  34P  cL J$|DJ=1, (M1) |g to (5-), 3951; |DJ=2, (E2) |g to 4(-), 2305.          
  34P   G 678.8     4  68     5  D(+Q)    +0.12   11                             
  34P B G BM1W=0.093 23$BE2W=11 +21-11                                           
@@ -329,7 +332,8 @@ Generated at: Sun 07/12/2026 at 01:31:35 PM EDT
  34P X L XREF=CN                                                                
  34P   G 1356.9    23 33     11 D+Q                                             
  34P   G 2405.5    20 100    5                                                  
- 34P  cG E,RI$from ({+18}O,pn|g) E=24 MeV                                       
+ 34P  cG E$from ({+18}O,pn|g) E=24 MeV.                                         
+ 34P  cG RI$from ({+18}O,pn|g) E=24 MeV.                                        
  34P   L 4729.6    30                                                           
  34P X L XREF=CK                                                                
  34P   G 4300.2    30 100                                                       
