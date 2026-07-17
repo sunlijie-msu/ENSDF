@@ -140,4 +140,4 @@ Adopt the **strictest** limit (largest `>`, smallest `<`); move all others to "O
 - **Lifetime (τ):** Mean lifetime; symbol |t. Relation: τ = T₁/₂ / ln(2) ≈ 1.443 × T₁/₂.
 - **Half-life (T₁/₂):** Time for half decay; goes in the ENSDF T field.
 - **T$ comment rule:** Use "lifetime |t=" for τ values. Omit for T₁/₂ references.
-- **No conversion:** Do not convert τ ↔ T₁/₂ unless explicitly instructed. If τ (weighted average) ≠ τ derived from the T field, do not reconcile — preserve both values as-is.
+- **No conversion:** Do not convert τ ↔ T₁/₂ unless explicitly instructed.

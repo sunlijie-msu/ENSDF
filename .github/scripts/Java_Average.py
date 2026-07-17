@@ -433,18 +433,20 @@ def uncertainty_scale_from_value_str(value_str: str) -> float:
     return 10.0 ** (exp - ndp)
 
 
-def parse_ensdf_unc(value_str: str, unc_str: str) -> float:
+def parse_ensdf_unc(value_str: str, unc_str: str) -> Tuple[float, float]:
     """
-    Convert ENSDF {In} or {I+n-m} uncertainty to absolute float.
+    Convert ENSDF {In} or {I+n-m} uncertainty to absolute (lower, upper) tuple.
 
     Rule: the integer n (or m) represents n units in the last displayed digit of value_str.
-    - {I13} with value '19.7'   -> 13 * 10^-1 = 1.3
-    - {I25} with value '3.0'    -> 25 * 10^-1 = 2.5
-    - {I4}  with value '22'     -> 4  * 10^0  = 4.0
-    - {I12} with value '3.3E-4' -> 12 * 10^-5 = 1.2E-4
+    - {I13} with value '19.7'   -> 13 * 10^-1 = 1.3, returns (1.3, 1.3)
+    - {I25} with value '3.0'    -> 25 * 10^-1 = 2.5, returns (2.5, 2.5)
+    - {I4}  with value '22'     -> 4  * 10^0  = 4.0, returns (4.0, 4.0)
+    - {I12} with value '3.3E-4' -> 12 * 10^-5 = 1.2E-4, returns (1.2E-4, 1.2E-4)
 
-    For asymmetric {I+n-m}: average of upper and lower (symmetric treatment for averaging).
-    Returns the uncertainty as a float.
+    For asymmetric {I+n-m}: returns (neg_val*scale, pos_val*scale) — the lower and
+    upper uncertainties respectively. Note: in {I+n-m}, +n is the upper uncertainty
+    (n digits in last decimal), -m is the lower uncertainty (m digits in last decimal).
+    Returns (lower_unc, upper_unc) tuple.
     """
     scale = uncertainty_scale_from_value_str(value_str)
 
@@ -452,13 +454,17 @@ def parse_ensdf_unc(value_str: str, unc_str: str) -> float:
     if '+' in unc_str and '-' in unc_str:
         # Asymmetric: {I+n-m} — extract both parts
         # Format examples: '+10-11', '+7-9'
+        # +n = upper uncertainty, -m = lower uncertainty
         unc_str_clean = unc_str.replace('+', ' +').replace('-', ' -').strip()
         parts = unc_str_clean.split()
-        pos_val = abs(float(parts[0]))
-        neg_val = abs(float(parts[1]))
-        return ((pos_val + neg_val) / 2.0) * scale
+        pos_val = abs(float(parts[0]))  # upper uncertainty (after +)
+        neg_val = abs(float(parts[1]))  # lower uncertainty (after -)
+        lower_unc = neg_val * scale
+        upper_unc = pos_val * scale
+        return (lower_unc, upper_unc)
     else:
-        return float(unc_str) * scale
+        unc = float(unc_str) * scale
+        return (unc, unc)
 
 
 def parse_comment_data(comment_text: str) -> List[Tuple[float, float, float]]:
@@ -546,13 +552,13 @@ def parse_comment_data(comment_text: str) -> List[Tuple[float, float, float]]:
         val = float(val_str)
 
         if i_unc_str is not None:
-            unc = parse_ensdf_unc(val_str, i_unc_str)
+            lower, upper = parse_ensdf_unc(val_str, i_unc_str)
         elif p_unc_str is not None:
-            unc = parse_ensdf_unc(val_str, p_unc_str)
+            lower, upper = parse_ensdf_unc(val_str, p_unc_str)
         else:
             continue
 
-        if unc <= 0:
+        if lower <= 0 and upper <= 0:
             continue
 
         # Track max decimal places from original strings (avoid float noise in formatting)
@@ -574,9 +580,10 @@ def parse_comment_data(comment_text: str) -> List[Tuple[float, float, float]]:
             factor_base = TO_PS.get(base_unit, 1.0)
             if factor_u is not None and factor_base is not None:
                 val = val * factor_u / factor_base
-                unc = unc * factor_u / factor_base
+                lower = lower * factor_u / factor_base
+                upper = upper * factor_u / factor_base
 
-        data.append((val, unc, unc))
+        data.append((val, lower, upper))
 
     return data, base_unit, src_max_dec
 
@@ -597,8 +604,11 @@ def main():
         print(f"\nParsed {len(data)} data point(s) from comment"
               + (f" [unit: {base_unit}]" if base_unit else "") + ":")
         for v, lo, hi in data:
-            print(f"  value={v:.{src_max_dec}f}, unc={lo:.{src_max_dec}f}"
-                  + (f" {base_unit}" if base_unit else ""))
+            unit_str = f" {base_unit}" if base_unit else ""
+            if abs(lo - hi) / max(abs(lo), abs(hi), 1e-30) < 0.001:
+                print(f"  value={v:.{src_max_dec}f}, unc={lo:.{src_max_dec}f}{unit_str}")
+            else:
+                print(f"  value={v:.{src_max_dec}f}, lower={lo:.{src_max_dec}f}, upper={hi:.{src_max_dec}f}{unit_str}")
         # Use src_max_dec (from original string representations) for output formatting
         max_dec = src_max_dec
         # Extract record name from comment header: T$, E$, RI$, etc.
