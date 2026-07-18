@@ -63,6 +63,29 @@ def is_valid_two_column_uncertainty(value: str) -> bool:
     qualifiers = {'LT', 'GT', 'LE', 'GE', 'AP', 'CA', 'SY'}
     return value.isdigit() or value in qualifiers
 
+def is_nucid_shifted_left(line):
+    """Detect 2-digit-mass NUCID shifted left by 1 column.
+    
+    ENSDF NUCID column-1 rules:
+    - 2-digit mass (e.g., ' 34S '): col 1 MUST be space, col 2-3 = mass, col 4-5 = element
+    - 3-digit mass (e.g., '152GD'): col 1-3 = mass, col 4-5 = element (col 1 IS digit)
+    
+    Shifted: '34S  L' has col1=3, col2=4, col3=S (letter) → 2-digit mass shifted left
+    Correct: '152GD' has col1=1, col2=5, col3=2 (digit) → 3-digit mass, correct
+    
+    Returns True only for 2-digit-mass NUCIDs that start at col 1 instead of col 2.
+    """
+    if len(line) < 3:
+        return False
+    # Both col 1 and col 2 are digits → could be 2-digit or 3-digit mass
+    if line[0].isdigit() and line[1].isdigit():
+        # col 3 is NOT a digit → 2-digit mass shifted left (e.g., '34S')
+        # col 3 IS a digit → 3-digit mass, correct (e.g., '152')
+        if not line[2].isdigit():
+            return True
+    return False
+
+
 def is_data_record_line(line):
     """
     Check if a line is a record line that must be exactly 80 characters.
@@ -97,10 +120,11 @@ def is_data_record_line(line):
     if len(line) > 8 and line[7:9] == 'DP':
         return True
     
-    # NUCID-shift detection: when column 1 is a digit (missing leading space),
-    # the record type shifts from col 8 (index 7) to col 7 (index 6).
-    # Check index 6 for record types when col 1 starts with a digit.
-    if record_type not in all_record_types and len(line) > 0 and line[0].isdigit():
+    # NUCID-shift detection: when a 2-digit-mass NUCID is shifted left
+    # (missing leading space), the record type shifts from col 8 (index 7)
+    # to col 7 (index 6). Only 2-digit-mass NUCIDs need the leading space;
+    # 3-digit-mass NUCIDs (e.g., '152GD') correctly start at col 1.
+    if record_type not in all_record_types and is_nucid_shifted_left(line):
         shifted_type = line[6] if len(line) > 6 else ' '
         if shifted_type in all_record_types:
             return True
@@ -151,8 +175,9 @@ def fix_line_lengths(filename, dry_run=False):
             continue
         
         if current_length == 80:
-            # Perfect length - but also check NUCID column 1
-            if len(line_content) >= 5 and line_content[0].isdigit():
+            # Perfect length - but also check for 2-digit-mass NUCID shifted left
+            # (3-digit-mass NUCIDs like '152GD' correctly start at col 1)
+            if is_nucid_shifted_left(line_content):
                 # NUCID shifted left - prepend space, trim last char
                 fixed_line = ' ' + line_content[:79]
                 fixed_lines.append(fixed_line + '\n')
@@ -161,8 +186,8 @@ def fix_line_lengths(filename, dry_run=False):
             else:
                 fixed_lines.append(line_content + '\n')
         elif current_length < 80:
-            # Too short - check if missing leading space (NUCID shifted left)
-            if len(line_content) >= 1 and line_content[0].isdigit():
+            # Too short - check if missing leading space (2-digit-mass NUCID shifted left)
+            if is_nucid_shifted_left(line_content):
                 # NUCID shifted left - prepend space, pad to exactly 80
                 fixed_line = (' ' + line_content).ljust(80)[:80]
                 fixed_lines.append(fixed_line + '\n')
@@ -1977,8 +2002,9 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
                 length_issues.append((line_num, length, line_content[7] if len(line_content) > 7 else '?'))
             if '\t' in line_content:
                 tab_issues.append((line_num, line_content[7] if len(line_content) > 7 else '?'))
-            # NUCID column 1 check: for mass < 100, column 1 MUST be space
-            if len(line_content) >= 5 and line_content[0].isdigit():
+            # NUCID column 1 check: for 2-digit mass (<100), column 1 MUST be space.
+            # 3-digit mass (>=100, e.g., '152GD') correctly starts with digit at col 1.
+            if is_nucid_shifted_left(line_content):
                 nucid_issues.append((line_num, line_content[:6].rstrip()))
     
     if length_issues:
