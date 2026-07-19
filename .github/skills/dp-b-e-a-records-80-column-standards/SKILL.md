@@ -6,6 +6,7 @@ description: "ENSDF DP (Delayed Proton), B (Beta Minus), E (Electron Capture/Bet
 # DP, B, E, and A Record 80-Column Standards
 
 Use this skill when checking or writing delayed proton, beta minus, electron capture/beta plus, or alpha decay records in ENSDF files.
+Note that readability spaces may be absent in many ENSDF files, which are not necessary for machine parsing.
 
 ## Record Standards
 
