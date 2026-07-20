@@ -53,7 +53,7 @@ Complete all steps before ending your turn:
    - Run mandatory validation tools after each edit
 
 5. **Test frequently**
-   - Run ruler and column validation after each change
+   - Run ruler and column validation after each change on data records
    - Use print statements with descriptive messages to inspect results
 
 6. **Debug thoroughly**
