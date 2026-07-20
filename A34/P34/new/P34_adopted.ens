@@ -29,6 +29,8 @@
  34P  c  2012SrZZ: large-scale shell model. Calculated energy levels, J, |p,    
  34P 2c  B(E2), B(M1).                                                          
  34P  cG E,RI$From {+18}O({+18}O,pn|g) E=24 MeV, unless otherwise noted.        
+ 34P  cG M,MR$From |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV, unless otherwise     
+ 34P 2cG noted.                                                                 
  34P  cL E$From a least-squares fit to |g-ray energies.                         
  34P   XA34SI B- DECAY (2.77 S)                                                 
  34P   XB18O(18O,PNG) E=20 MEV                                                  
@@ -275,53 +277,40 @@
  34P 2cG {+18}O({+18}O,pn|g) E=34 MeV. Electric nature is assigned in 2009Ch43  
  34P 3cG as POL qualitatively indicates. M2(+E3) ruled out by RUL.              
 
- 34P   L 4723                                                                   
- 34P X L XREF=CN                                                                
+ 34P   L 4710         (5,6)                                                     
+ 34P X L XREF=CN(?)                                                             
+ 34P  cL J$spin=4,5,6 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV.              
  34P   G 1356.9    23 33     11 D+Q                                             
  34P   G 2405.5    20 100    5                                                  
- 34P  cG E$from ({+18}O,pn|g) E=24 MeV.                                         
- 34P  cG RI$from ({+18}O,pn|g) E=24 MeV.                                        
 
  34P   L 4729.6    30                                                           
  34P X L XREF=CK                                                                
  34P   G 4300.2    30 100                                                       
- 34P  cG E$from ({+18}O,pn|g) E=24 MeV.                                         
 
- 34P   L 5012.7    21 (2-)             0.07 PS   LT                             
+ 34P   L 5012.7    21                  0.07 PS   LT                             
  34P X L XREF=C                                                                 
- 34P  cL J$D,E2 |g to 3(-), 2321; (2-) in {+18}O({+18}O,pn|g) E=20-44 MeV based 
- 34P 2cL on qualitative decay-strength and theory arguments.                    
- 34P   G 2692      2  100       [M1,E2]                                         
- 34P  cG M$D,E2 |g based on RUL; (M1,E2) from |D|p=(no).                        
-
- 34P   L 5188.4    9  6-                                                        
- 34P X L XREF=L                                                                 
- 34P   G 2883.0       100       M2                                              
+ 34P   G 2692      2  100                                                       
 
  34P   L 5344.5    29                                                           
  34P X L XREF=C                                                                 
  34P   G 3039.3    28 100                                                       
 
- 34P   L 5394.2    6  (6-)             0.11 PS   +8-5                           
+ 34P   L 5394.2    6  6                0.11 PS   +8-5                           
  34P X L XREF=C                                                                 
- 34P  cL J$|DJ=1, D(+Q) |g to 5(-), 3352; |p=(-) in {+18}O({+18}O,pn|g) E=20-44 
- 34P 2cL MeV based on qualitative decay-strength and theory arguments.          
+ 34P  cL J$spin=6 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV.                  
+ 34P  cL T$|t=0.16 ps {I+12-7} (2012Be11, DSAM) {+18}O({+18}O,pn|g) E=24 MeV.   
  34P   G 762.9     8  15     6  [M1,E2]                                         
  34P   G 1442.6    7  100    11 D(+Q)    +0.02   5                              
- 34P  cG M$|DJ=1, D(+Q) in {+18}O({+18}O,pn|g) E=20-44 MeV; (M1(+E2)) from      
- 34P 2cG |D|p=(no).                                                             
  34P   G 2042      1  44     9  D(+Q)    +0.05   14                             
- 34P  cG M$|DJ=1, D(+Q) in {+18}O({+18}O,pn|g) E=20-44 MeV; (M1(+E2)) from      
- 34P 2cG |D|p=(no).                                                             
  34P   G 3090      2  28     9  [E2]                                            
 
  34P   L 5594.5    26                                                           
  34P X L XREF=C                                                                 
  34P   G 3289.2    25 100                                                       
 
- 34P   L 5726.4    13 (3-,4,5,6-)                                               
+ 34P   L 5726.4    13 4,6                                                       
  34P X L XREF=C                                                                 
- 34P  cL J$|g to 5(-), 3352 and |g to 4(-), 2305.                               
+ 34P  cL J$spin=4,6 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV.                
  34P   G 2373.9    15 100    8  D(+Q)                                           
  34P   G 3421      2  28     8                                                  
 
@@ -344,25 +333,21 @@
  34P   L 6193.8    10                  0.69 PS   LT                             
  34P X L XREF=BCDEG                                                             
  34P  cL T$lifetime |t<1 ps in {+18}O({+18}O,pn|g) from 2009Be26 with DSAM.     
- 34P  cL J$(7+) based on shell-model arguments is suggested but not adopted in  
- 34P 2cL {+18}O({+18}O,pn|g) E=20-44 MeV (2012Be11); possible 2 particle-hole   
- 34P 3cL |pf{-7/2}~#|nf{-7/2} intruder state.                                   
  34P   G 1563.4    14 49     11                                                 
  34P   G 2840      2  100    11                                                 
- 34P  cG E$weighted average of 2839 {I2} from ({+18}O,pn|g) E=20 MeV and 2841   
+ 34P  cG E$weighted average of 2839 {I2} from ({+18}O,pn|g) (2009Be26) and 2841   
  34P 2cG {I2} from ({+18}O,pn|g) E=24 MeV                                       
- 34P  cG RI$from ({+18}O,pn|g) E=24 MeV.                                        
 
  34P   L 6237.2    5  7(+)             6.9 PS    GT                             
- 34P X L XREF=BCDEFGN                                                           
+ 34P X L XREF=BCDEFGLN                                                          
  34P  cL T$lifetime |t>10 ps in {+18}O({+18}O,pn|g) E=24 MeV from 2012Be11 with 
  34P 2cL DSAM. Other: >3 ps in {+18}O({+18}O,pn|g) from 2009Be26 with DSAM.     
- 34P  cL J$|DJ=1, D(+Q) |g to 6(-), 4630; |DJ=2, M2(+E3) |g to 5(-), 3352.      
+ 34P  cL J$spin=7 from |g(|q) in {+18}O({+18}O,pn|g)
+ |DJ=1, D(+Q) |g to 6(-), 4630; |DJ=2, M2(+E3) |g to 5(-), 3352.      
  34P 2cL |p=(+) is assigned in both {+18}O({+18}O,pn|g) datasets based on level 
  34P 3cL scheme and shell-model arguments; possible 2 particle-hole             
  34P 4cL |pf{-7/2}~#|nf{-7/2} intruder state.                                   
  34P   G 842.5     6  48     10 D(+Q)    +0.05   14                             
- 34P  cG RI$from {+18}O({+18}O,pn|g) E=20-44 MeV.                               
  34P  cG M$|DJ=1, D(+Q) |g in {+18}O({+18}O,pn|g) E=20-44 MeV; (E1(+M2)) more   
  34P 2cG likely from |D|p=(yes).                                                
  34P   G 1607.7    5  1.7E2  6  D(+Q)    +0.05   9                              
