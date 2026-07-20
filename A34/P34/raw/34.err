@@ -1,159 +1,1182 @@
 Program for consistency check: output for Error and Warnings (version 06/19/2026)
-Generated at: Wed 07/15/2026 at 10:30:41 PM EDT
+Generated at: Sun 07/19/2026 at 11:45:16 PM EDT
 
-################################################################################
-In Adopted dataset of 34P
-
- 34P   L 2675.5    8  (1+,2-,3+)                                                
- 34P 2cL less likely if 370|g to 4(-) exists.                                   
-                        *                                                         <E> Quoted EG=370 inconsistent with record EG=376
- 34P   G 376          18     LT                                                ?
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=376
-                                                                                        JI=(1+,2-,3+) JF(2305.1)=4(-)
- 34P   L 3752.4    6  (3-,4-)          0.26 PS   6                              
- 34P   G 1431.8    6  100.0  22 D(+Q)                                           
-                               *                                                  <W> Mult is inconsistent with JPI (one of JPIs is empty)
-                                                                                        JI=(3-,4-) JF(2372)=
- 34P   L 3911.6    11 (3-,4-)          0.14 PS   7                              
- 34P   G 1591      1  100       [M1,E2]                                         
-                               *                                                  <W> Mult is inconsistent with JPI (one of JPIs is empty)
-                                                                                        JI=(3-,4-) JF(2372)=
- 34P   L 3942.8    11                                                          ?
- 34P   G 1637.7    10                                                       X   
-                     *                                                            <W> Check if RI=100 can be assigned to the single branch
- 34P   L 4438      13                  0.10 PS   LT                             
- 34P   G 2135                                                                   
-                     *                                                            <W> Check if RI=100 can be assigned to the single branch
- 34P   L 4446.6    21 (4-)             0.10 PS   LT                             
- 34P   G 2134                   D+Q                                             
-                     *                                                            <W> Check if RI=100 can be assigned to the single branch
- 34P   L 4723                                                                   
- 34P   G 1356.9    23 33     11 D+Q                                             
-                               *                                                  <W> Mult is inconsistent with JPI (one of JPIs is empty)
-                                                                                        JI= JF(3352.5)=5(-)
- 34P   L 5188.4    9  6-                                                        
- 34P   G 2883.0       100       M2                                              
-                               *                                                  <E> Mult=M2 is inconsistent with spin-parity change
-                                                                                        JI=6- JF(2305.1)=4(-)
- 34P   L 6237.2    5  7(+)             2.08 PS   GT                             
- 34P   G 842.5     6  48     10 D(+Q)    +0.05   14                             
- 34P   G 1607.7    5  1.7E2  6  D(+Q)    +0.05   9                              
- 34P   G 2884.2    7  97     6  Q                                               
- 34P   G 3931.7    10 12.5   75 [E3]                                            
-                     *                                                            <W> Gamma intensity not normalized with strongest=100!
 
 ################################################################################
 In dataset of 34P: XA 34SI B- DECAY (2.77 S)     XREF Tag=A
 
  34P   L 0            1+                                                        
-                                       *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=12.43 S 10 this T1/2=
+         *                                                                        <W> level not placed in Adopted.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
  34P   L 429.07    13 2+                                                        
-                                       *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=1.11 PS 35 this T1/2=
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   G 429.07    13 60      2                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   L 1607.62   19 1+                                                        
-                                       *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=0.83 PS +28-14 this T1/2=
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   G 1178.52   16 64      3                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1607.6    5  36      5                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: XB 18O(18O,PNG) E=20 MEV     XREF Tag=B
+
+ 34P   L 0.0          1+                                                        
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   L 428.7     8  2                0.97 PS   LT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 429       1  100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 1607.4    8                   0.90 PS   28                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1179      1  9      2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1607      1  6      2                                              &   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2304.7    22 (4)                                                       
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1876      2  37     4                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2319.7    22 3                2.1 PS    GT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1891      2  17     2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3352.2    28 (5)              0.21 PS   10                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1047      2  17     2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3950.0    27                  0.21 PS   10                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1645      2  11     2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 4629.2    26                  0.35 PS   14                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 679       2  1.0    5                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2325      2  2      1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6191.3    34                  0.69 PS   LT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2839      2  1      LT                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6235.8    29 (7)              2.08 PS   GT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1607      2  6      2                                              &   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2883      2  1      LT                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
 
 ################################################################################
 In dataset of 34P: XC 18O(18O,PNG) E=24 MEV     XREF Tag=C
 
+ 34P   L 0.0          1+                                                        
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   L 429.1     4  2                1.3 PS    +6-3                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 429.1     4  100       D(+Q)    +0.11   +13-12                         
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 1608.2    5  1                0.52 PS   +45-14                     B   
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1179.1    4  100    5  D                                           B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1608      1  52     5                                              B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2228.8    5  2                2 PS      GT                         B   
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 620.6     4  68     14 D(+Q)    +0.07   16                         B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1799.7    6  100    16                                             B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2229      1  59     14                                             B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2305.1    6  4                                                         
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1875.8    6  100       Q(+O)    0.00    12                             
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2320.6    6  3                7 PS      GT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1891.5    7  100       D(+Q)    +0.07   14                             
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3352.6    7  5                0.36 PS   +12-8                          
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1031.6    9  3.17   10                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1047.3    8  100.0  5  D(+Q)    +0.02   9                              
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3752.6    7  (3,4)            0.26 PS   6                          B   
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1431.8    6  100.0  22 D(+Q)                                       B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1523.9    9  7.5    22                                             B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3806.5    26                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3377.2    26 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3911.7    12 (3,4)            0.14 PS   7                          B   
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1591      1  100                                                   B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3951.4    7  5                0.111 PS  35                         B   
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1631.5    11 4.2    21                                             B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1646.1    4  100.0  21 D(+Q)    -0.03   18                         B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 4424.3    27                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3994.9    27 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 4454.7    12 (4)              0.10 PS   LT                         B   
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2134                   D+Q                                             
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 4570.8    21                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2250.1    20 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 4613.2    22                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2292.5    21 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 4630.1    7  6                0.30 PS   5                          B   
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 678.7     4  54     5  D+Q      +0.12   11                         B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2325.1    6  100    5  Q(+O)    +0.02   +11-10                     B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 4710.2    16 (6)                                                       
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1356.9    23 33     11 D+Q                                             
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2405.5    20 100    5                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 4729.6    30                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 4300.2    30 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 5012.8    21 (2)              0.07 PS   LT                         B   
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2692      2  100                                                   B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 5344.5    29                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3039.3    28 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 5394.2    8  6                0.11 PS   +8-5                       B   
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 762.9     8  15     6                                              B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1442.6    7  100    11 D(+Q)    +0.02   5                          B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2042      1  44     9  D(+Q)    +0.05   14                         B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 3090      2  28     9                                              B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 5594.5    26                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3289.2    25 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 5726.4    14 4,6                                                   B   
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2373.9    15 100    8  D(+Q)                                       B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 3421      2  28     8                                              B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 5788.7    29                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3483.4    28 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 5975.7    30                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3670.4    29 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6118.6    31                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3813.3    30 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6174.6    29                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3869.3    28 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6193.9    11                                                       B   
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1563.4    14 49     11                                             B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2841      2  100    11                                             B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   L 6237.3    8  7                6.9 PS    GT                         B   
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 842.5     6  48     10 D(+Q)    +0.05   14                         B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1607.9    5  100    13 D(+Q)    +0.05   9                          B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2884.3    7  90     13 Q(+O)    +0.11   18                         B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   G 3932      3  12.5   75                                             B   
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
                                                                                         JI=7 JF(2305.1)=4
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6294.9    22                  0.07 PS   LT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2942.2    21 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6316.9    31                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 4011.6    30 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6357.3    9  7                0.035 PS  LT                         B   
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2405.9    7  75     14 Q                                           B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 3004      2  100    14                                             B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6445.2    31                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 4139.8    30 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6923.4    27 (6)                                                       
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3570.6    26 100       D+Q                                             
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6991.3    29                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3638.5    28 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 7066.0    26                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3713.2    25 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 7256.5    26                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3903.7    25 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 7426.4    21                  0.07 PS   LT                         B   
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1189      2  100                                                   B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 7590.8    32                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 4238.0    31 100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 7920.2    11                  0.35 PS   GT                         B   
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1683      1  100    6                                              B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1726      1  49     6                                              B   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: XD 18O(18O,PNG) E=25 MEV     XREF Tag=D
+
+ 34P   L 0.0          1+                                                        
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   L 428.7     8  2                0.97 PS   LT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 429       1  100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 1607.4    8                   0.90 PS   28                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1179      1  6      1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1607      1  13     2                                              &   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2304.7    22 (4)                                                       
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1876      2  54     4                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2319.7    22 3                2.1 PS    GT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1891      2  15     2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3352.2    28 (5)              0.21 PS   10                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1047      2  28     2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3950.0    27                  0.21 PS   10                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1645      2  31     2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 4629.2    26                  0.35 PS   14                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 679       2  4      1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2325      2  4      1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6191.3    34                  0.69 PS   LT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2839      2  2      1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6235.8    29 (7)              2.08 PS   GT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1607      2  13     2                                              &   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2883      2  3      1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: XE 18O(18O,PNG) E=30 MEV     XREF Tag=E
+
+ 34P   L 0.0          1+                                                        
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   L 428.7     8  2                0.97 PS   LT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 429       1  100                                                       
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 1607.4    8                   0.90 PS   28                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1179      1  3      1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1607      1  11     2                                              &   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2304.7    22 (4)                                                       
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1876      2  64     4                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2319.7    22 3                2.1 PS    GT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1891      2  9      1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3352.2    28 (5)              0.21 PS   10                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1047      2  44     4                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3950.0    27                  0.21 PS   10                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1645      2  46     4                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 4629.2    26                  0.35 PS   14                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 679       2  7      1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2325      2  10     2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6191.3    34                  0.69 PS   LT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2839      2  7      1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6235.8    29 (7)              2.08 PS   GT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1607      2  11     2                                              &   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2883      2  5      1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
 
 ################################################################################
 In dataset of 34P: XF 18O(18O,PNG) E=34 MEV     XREF Tag=F
 
- 34P   L 2305.6    14 4(-)     2.0 NS    1                                      
-                     *                                                            <W> JPI here contradicts to adopted. Please check
-                                                                                        Adopted JPI=4(-) this JPI=4(-)     2.0 NS
+ 34P   L 0.0          1+                                                        
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   L 429.4     10 2+                                                        
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 429.4     10 100    3  M1(+E2)  -0.07   7                              
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 1609.2    14 (1+)                                                      
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1179.8    10 0.74   10 D                                               
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2305.6    14 4(-)             2.0 NS    1                              
+         *                                                                        <W> level not placed in Adopted or discrepant.
  34P   G 1876.1    10 88.6   11 Q+O      -0.65   38                             
-                               *                                                  <E> Mult=O is inconsistent with spin-parity change
-                                                                                        JI=4(-)     2.0 NS JF(429.4)=2+
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2321.1    14 (3-)                                                      
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1891.6    10 11.3   9  D                                               
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3353.3    16  5(-)                                                     
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1047.8    10 17.1   9  D                                               
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3749.3    17                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   L 3943.3    17                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
  34P   L 3951.6    16  5(-)                                                     
+         *                                                                        <W> level not placed in Adopted or discrepant.
  34P   G 1646.2    10  3.6   4  (M1)                                            
-                               *                                                  <W> Mult=(M1) but parity-change unknown from deltaJPI
-                                                                                        JI=5(-) JF(2305.6)=4(-)     2.0 NS
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   L 4630.8    16  6(-)                                                     
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 679.4     10  3.17  16 (M1)                                            
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   G 2325.1    10  4.2   3  (E2)                                            
-                               *                                                  <W> Mult=(E2) but parity-change unknown from deltaJPI
-                                                                                        JI=6(-) JF(2305.6)=4(-)     2.0 NS
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   L 6237.7    16  7(+)                                                     
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1607.1    10  4.5   5  (E1)                                            
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2884.3    10  6.6   4  Q                                               
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   G 3931.7    10           [E3]                                            
-                               *                                                  <E> Mult=E3 is inconsistent with spin-parity change
-                                                                                        JI=7(+) JF(2305.6)=4(-)     2.0 NS
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: XG 18O(18O,PNG) E=44 MEV     XREF Tag=G
+
+ 34P   L 0.0          1+                                                        
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   L 428.7     8  2                                                         
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   L 1607.4    8                                                            
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1179      1  8      2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2304.7    22 (4)                                                       
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1876      2  76     6                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2319.7    22 3                                                         
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1891      2  6      1                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3352.2    28 (5)                                                       
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1047      2  36     4                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3950.0    27                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1645      2  20     3                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 4629.2    26                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 679       2  9      2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2325      2  11     2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6191.3    34                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2839      2  10     2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 6235.8    29 (7)                                                       
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1607      2  13     2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2883      2  11     2                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
 
 ################################################################################
 In dataset of 34P: XH 30SI(7LI,3HE)     XREF Tag=H
 
+ 34P   L 0                                                                      
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 441       20                                                           
+         *                                                                        <W> level not placed in Adopted.
  34P   L 667       40                                                          ?
          *                                                                        <W> questionable level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        429.09    11 2+                  XREF=ABCDEFGH(441)IJKLMNOPQ
+
+################################################################################
+In dataset of 34P: XI 34S(T,3HE)     XREF Tag=I
+
+ 34P   L 0                                                                      
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 423       10                                                           
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 1605      10                                                           
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 2225      10                                                           
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 2309      10                                                           
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 3345                                                                  ?
+         *                                                                        <W> questionable level not placed in Adopted.
+
+################################################################################
+In dataset of 34P: XJ 34S(7LI,7BE),(11B,11C)     XREF Tag=J
+
+ 34P   L 0                                                                      
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 430                                                                    
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 1600                                                                   
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 2287      15                                                           
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 4470      70                                                           
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 7440      70                                                           
+         *                                                                        <W> level not placed in Adopted.
 
 ################################################################################
 In dataset of 34P: XK 36S(POL D,A),(POL D,AG)     XREF Tag=K
 
+ 34P   L 0             1+                                                       
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 429.1     1   2+                                                       
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 429.1                  (M1+E2)  +0.52   10                             
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 1607.6    5   1+                                                       
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1178.5       61     7  (M1+E2)  -0.93   26                             
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1607.6       39     5  (M1+E2)  +0.13   6                              
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2225      2  (+)                                                       
+         *                                                                        <W> level not placed in Adopted.
+ 34P   G 1796                                                                   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2299      3  (1+,2-,3+,4-)                                             
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 2372      20                                                           
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 2628      12                                                           
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 2675      3  (1+,2-,3+)                                                
+         *                                                                        <W> level not placed in Adopted.
+ 34P   G 1067         23     9                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2246         50     13                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 3086      15                                                          ?
+         *                                                                        <W> questionable level not placed in Adopted.
+ 34P   L 3201      16                                                           
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 3291      23                                                          ?
+         *                                                                        <W> questionable level not placed in Adopted.
+ 34P   L 3482       8                                                           
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 3546      12                                                          ?
+         *                                                                        <W> questionable level not placed in Adopted.
  34P   L 4302      6  (1+,2-,3+,4-)                                             
+         *                                                                        <W> level not placed in Adopted.
  34P   G 2694                                                                   
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2694
                                                                                         JI=(1+,2-,3+,4-) JF(1607.6)=1+
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 4434      10                                                           
+         *                                                                        <W> level not placed in Adopted.
  34P   L 4725      12 (1+,2-,3+,4-,5+)                                          
+         *                                                                        <W> level not placed in Adopted.
  34P   G 4296                                                                   
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=4296
                                                                                         JI=(1+,2-,3+,4-,5+) JF(429.1)=2+
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
 
 ################################################################################
 In dataset of 34P: XL 115IN(34S,XG)     XREF Tag=L
 
+ 34P   L 0            1+                                                        
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 429.3     5  2+                                                        
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 429.3        155    GT M1                                              
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 1608.4    7  1+                                                        
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1179.1       17.7   11                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   L 2305.3    7  4+                                                        
-                     *                                                            <W> JPI here contradicts to adopted. Please check
-                                                                                        Adopted JPI=4(-) this JPI=4+
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1875.9       100       Q                                               
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2320.6    7  3-                                                        
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1891.2       38.5   18 (E1)                                            
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   L 5188.4    9  6-                                                        
+         *                                                                        <W> level not placed in Adopted or discrepant.
  34P   G 2883.0       16.1   11 M2                                              
-         *                                                                        <E> E(gamma) in comment quoted as from Adopted is inconsistent
-                                                                                        Adopted E=2883.0  value in comment=6236
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: XM 160GD(37CL,XG)     XREF Tag=M
+
+ 34P   L 0            1+                                                        
+         *                                                                        <W> level not placed in Adopted.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   L 429          2+                                                        
+         *                                                                        <W> level not placed in Adopted.
+ 34P   G 429.1                                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2305         (3-,4-)                                                   
+         *                                                                        <W> level not placed in Adopted.
+ 34P   G 1876                                                                   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
 
 ################################################################################
 In dataset of 34P: XN 176YB(36S,XG)     XREF Tag=N
 
+ 34P   L 0            1+                                                        
+         *                                                                        <W> level not placed in Adopted.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   L 429          2+                                                        
+         *                                                                        <W> level not placed in Adopted.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   G 429                                                                    
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   L 2305         4-                                                        
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=4(-) this JPI=4-
+         *                                                                        <W> level not placed in Adopted.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   G 1876                                                                   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   L 2320         (3-)                                                      
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=3(-) this JPI=(3-)
+         *                                                                        <W> level not placed in Adopted.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   G 1891                                                                   
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   L 3351         (5-)                                                      
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=5(-) this JPI=(5-)
+         *                                                                        <W> level not placed in Adopted.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   G 1046         257    36                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 4723                                                                   
+         *                                                                        <W> level not placed in Adopted.
  34P   L 6236         (7+)                                                      
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=7(+) this JPI=(7+)
+         *                                                                        <W> level not placed in Adopted.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   G 2885         72     30                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
 
 ################################################################################
 In dataset of 34P: XO 198PT(37CL,XG)     XREF Tag=O
 
+ 34P   L 0            1+                                                        
+         *                                                                        <W> level not placed in Adopted.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   L 429          2+                                                        
+         *                                                                        <W> level not placed in Adopted.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   G 429                    D                                               
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   L 2305         4-               1.4 NS    11                             
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=4(-) this JPI=4-
+         *                                                                        <W> level not placed in Adopted.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   G 1876                   Q                                               
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
 
 ################################################################################
 In dataset of 34P: XP 208PB(36S,34PG)     XREF Tag=P
 
+ 34P   L 0            1+                                                        
+         *                                                                        <W> level not placed in Adopted.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   L 429.0     7  2+                1.04 PS  35                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   G 429       1  100.0  13                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 1607.0    8  1+                                                        
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   G 1178      1  10.2   7                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1607      1  6.1    7                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   L 2305.1    12 4-                                                        
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=4(-) this JPI=4-
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   G 1876      1  24.4   11                                                 
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   L 2320.1    12 3-                                                        
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=3(-) this JPI=3-
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   G 1891      1  7.1    6                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 2682.1    8  (3)                                                      ?
+         *                                                                        <W> questionable level not placed in Adopted or discrepant.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
  34P   L 3351.1    16 5-                                                        
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=5(-) this JPI=5-
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   G 1046      1  9.6    7                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
  34P   L 3950.1    16 (5)                                                       
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(5-) this JPI=(5)
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34P   G 1645      1  7.0    7                                                  
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?0 2675.5    8  (1+,2-,3+)     XREF Tag=?0
+
+ 34P   L 2675.5    8  (1+,2-,3+)                                                
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1067         46     18                                                 
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2246         100    26                                                 
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?1 4305.9    11 (1+,2-,3+)     XREF Tag=?1
+
+ 34P   L 4305.9    11 (1+,2-,3+)                                                
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2694                                                                   
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?2 5726.4    13 (3-,4,5,6-)     XREF Tag=?2
+
+ 34P   L 5726.4    13 (3-,4,5,6-)                                               
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2373.9    15 100    8  D(+Q)                                           
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 3421      2  28     8                                                  
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?3 0.0          1+     XREF Tag=?3
+
+ 34P   L 0.0          1+               12.43 S   10                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+
+################################################################################
+In dataset of 34P: X?4 1607.77   20 1+     XREF Tag=?4
+
+ 34P   L 1607.77   20 1+               0.76 PS   +28-21                         
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1178.62   16 100    5  (M1+E2)  -0.93   26                             
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1607.5    5  57     5  (M1+E2)  +0.13   6                              
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?5 2228.6    4  2-     XREF Tag=?5
+
+ 34P   L 2228.6    4  2-               2 PS      GT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 620.6     4  68     14 (E1(+M2))+0.07   16                             
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1799.7    6  100    16 [E1]                                            
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2229      1  59     14 [E1]                                            
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?6 2305.1    4  4-     XREF Tag=?6
+
+ 34P   L 2305.1    4  4-               2.0 NS    1                              
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1875.9    6  100       M2+E3    -0.65   38                             
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?7 2320.6    4  3     XREF Tag=?7
+
+ 34P   L 2320.6    4  3                6.9 PS    GT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1891.4    7  100       D(+Q)    +0.07   14                             
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?8 2372      20     XREF Tag=?8
+
+ 34P   L 2372      20                                                           
+         *                                                                        <W> level not placed in Adopted.
+
+################################################################################
+In dataset of 34P: X?9 2628      12     XREF Tag=?9
+
+ 34P   L 2628      12                                                           
+         *                                                                        <W> level not placed in Adopted.
+
+################################################################################
+In dataset of 34P: X?10 3201      16     XREF Tag=?10
+
+ 34P   L 3201      16                                                           
+         *                                                                        <W> level not placed in Adopted.
+
+################################################################################
+In dataset of 34P: X?11 3352.5    5  (5)     XREF Tag=?11
+
+ 34P   L 3352.5    5  (5)              0.28 PS   +10-8                          
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1031.6    9  3.17   10 [E2]                                            
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1047.1    8  100.0  5  D(+Q)    +0.02   9                              
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?12 3482      8     XREF Tag=?12
+
+ 34P   L 3482      8                                                            
+         *                                                                        <W> level not placed in Adopted.
+
+################################################################################
+In dataset of 34P: X?13 3752.4    6     XREF Tag=?13
+
+ 34P   L 3752.4    6                   0.26 PS   6                              
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1431.8    6  100.0  22                                                 
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1523.9    9  7.5    22                                                 
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?14 3806.5    26     XREF Tag=?14
+
+ 34P   L 3806.5    26                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3377.2    26 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?15 3911.6    11     XREF Tag=?15
+
+ 34P   L 3911.6    11                  0.14 PS   7                              
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1591      1  100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1591      1  100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?16 3951.3    5  5(-)     XREF Tag=?16
+
+ 34P   L 3951.3    5  5(-)             0.118 PS  35                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1631.5    11 4.2    21 [E2]                                            
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1646.0    4  100.0  21 (M1(+E2))-0.03   18                             
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?17 429.09    11 2+     XREF Tag=?17
+
+ 34P   L 429.09    11 2+               1.11 PS   35                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 429.07    13 100       M1(+E2)  -0.07   7                              
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?18 4424.3    27     XREF Tag=?18
+
+ 34P   L 4424.3    27                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3994.9    27 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?19 4454.7    12 (4-)     XREF Tag=?19
+
+ 34P   L 4454.7    12 (4-)             0.10 PS   LT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2134                   D+Q                                             
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?20 4570.8    21     XREF Tag=?20
+
+ 34P   L 4570.8    21                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2250.1    20 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?21 4613.2    22     XREF Tag=?21
+
+ 34P   L 4613.2    22                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2292.5    21 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?22 4630.1    5  6-     XREF Tag=?22
+
+ 34P   L 4630.1    5  6-               0.31 PS   5                              
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 678.8     4  68     5  M1+E2    +0.12   11                             
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2325.1    6  100    5  E2(+M3)  +0.02   +11-10                         
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?23 4723     XREF Tag=?23
+
+ 34P   L 4723                                                                   
+         *                                                                        <W> level not placed in Adopted.
+ 34P   G 1356.9    23 33     11 D+Q                                             
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2405.5    20 100    5                                                  
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?24 4729.6    30     XREF Tag=?24
+
+ 34P   L 4729.6    30                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 4300.2    30 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?25 5012.7    21 (2-)     XREF Tag=?25
+
+ 34P   L 5012.7    21 (2-)             0.07 PS   LT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2692      2  100       [M1,E2]                                         
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?26 5188.4    9  6-     XREF Tag=?26
+
+ 34P   L 5188.4    9  6-                                                        
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2883.0       100       M2                                              
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?27 5344.5    29     XREF Tag=?27
+
+ 34P   L 5344.5    29                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3039.3    28 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?28 5394.2    6  (6-)     XREF Tag=?28
+
+ 34P   L 5394.2    6  (6-)             0.11 PS   +8-5                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 762.9     8  15     6  [M1,E2]                                         
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1442.6    7  100    11 D(+Q)    +0.02   5                              
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2042      1  44     9  D(+Q)    +0.05   14                             
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 3090      2  28     9  [E2]                                            
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?29 5594.5    26     XREF Tag=?29
+
+ 34P   L 5594.5    26                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3289.2    25 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?30 5788.7    29     XREF Tag=?30
+
+ 34P   L 5788.7    29                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3483.4    28 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?31 5975.7    30     XREF Tag=?31
+
+ 34P   L 5975.7    30                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3670.4    29 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?32 6118.6    31     XREF Tag=?32
+
+ 34P   L 6118.6    31                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3813.3    30 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?33 6174.6    29     XREF Tag=?33
+
+ 34P   L 6174.6    29                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3869.3    28 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?34 6193.8    10     XREF Tag=?34
+
+ 34P   L 6193.8    10                  0.69 PS   LT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1563.4    14 49     11                                                 
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2840      2  100    11                                                 
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?35 6237.2    5  7(+)     XREF Tag=?35
+
+ 34P   L 6237.2    5  7(+)             6.9 PS    GT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 842.5     6  48     10 D(+Q)    +0.05   14                             
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1607.7    5  1.7E2  6  D(+Q)    +0.05   9                              
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 2884.2    7  97     6  Q                                               
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 3931.7    10 12.5   75 [E3]                                            
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?36 6294.9    22     XREF Tag=?36
+
+ 34P   L 6294.9    22                  0.07 PS   LT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2942.2    21 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?37 6316.9    31     XREF Tag=?37
+
+ 34P   L 6316.9    31                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 4011.6    30 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?38 6357.2    8  (7-)     XREF Tag=?38
+
+ 34P   L 6357.2    8  (7-)             0.035 PS  LT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 2405.9    7  75     14 Q                                               
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 3004      2  100    14 [E2]                                            
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?39 6445.2    31     XREF Tag=?39
+
+ 34P   L 6445.2    31                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 4139.8    30 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?40 6923.4    27 (6)     XREF Tag=?40
+
+ 34P   L 6923.4    27 (6)                                                       
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3570.6    26 100       D+Q                                             
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?41 6991.3    29     XREF Tag=?41
+
+ 34P   L 6991.3    29                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3638.5    28 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?42 7066.0    26     XREF Tag=?42
+
+ 34P   L 7066.0    26                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3713.2    25 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?43 7256.5    26     XREF Tag=?43
+
+ 34P   L 7256.5    26                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 3903.7    25 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?44 7426.2    21     XREF Tag=?44
+
+ 34P   L 7426.2    21                  0.07 PS   LT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1189      2  100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?45 7590.8    32     XREF Tag=?45
+
+ 34P   L 7590.8    32                                                           
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 4238.0    31 100                                                       
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: X?46 7920.1    10     XREF Tag=?46
+
+ 34P   L 7920.1    10                  0.35 PS   GT                             
+         *                                                                        <W> level not placed in Adopted or discrepant.
+ 34P   G 1683      1  100    6                                                  
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   G 1726      1  49     6                                                  
+         *                                                                        <W> No final level found
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+
+################################################################################
+In dataset of 34P: XQ COULOMB EXCITATION     XREF Tag=Q
+
+ 34P   L 0                                                                      
+         *                                                                        <W> level not placed in Adopted.
+ 34P   L 422       7                                                            
+         *                                                                        <W> level not placed in Adopted.
+ 34P   G 422       7                                                            
+         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 34P   L 1608                                                                   
+         *                                                                        <W> level not placed in Adopted.
+         *                                                                        <E> E(level) commented from Adopted but no such Adopted level
+ 34P   L 2235      9                                                           ?
+         *                                                                        <W> questionable level not placed in Adopted.
 
 
 End of report
