@@ -1,6 +1,12 @@
 Program for consistency check: output for Error and Warnings (version 06/19/2026)
-Generated at: Tue 07/21/2026 at 01:43:18 AM EDT
+Generated at: Tue 07/21/2026 at 03:20:12 PM EDT
 
+################################################################################
+In Adopted dataset of 34P
+
+ 34P   L 6357.2    9  (7-)             0.035 PS  LT                             
+ 34P  cL J$2405.9|g, E2 to 5(-), 3951.3 level. Shell-model suggests 7-          
+                           *                                                      <E> Quoted JF=5(-) inconsistent with record JF(3951.3)=5- for decaying EG=2405.9
 
 ################################################################################
 In dataset of 34P: XA 34SI B- DECAY (2.77 S)     XREF Tag=A
@@ -33,7 +39,7 @@ In dataset of 34P: XF 18O(18O,PNG) E=34 MEV     XREF Tag=F
  34P   L 3943.3    17                                                           
          *                                                                        <W> level not placed in Adopted or discrepant.
                                                                                         closest level in Adopted:
-                                                                                        3951.3     6 5(-)                XREF=BCDEFGP
+                                                                                        3951.3     6 5-                  XREF=BCDEFGP
 
 ################################################################################
 In dataset of 34P: XH 30SI(7LI,3HE)     XREF Tag=H
@@ -59,7 +65,7 @@ In dataset of 34P: XK 36S(POL D,A),(POL D,AG)     XREF Tag=K
  34P   L 4302      6  (1+,2-,3+,4-)                                             
  34P   G 1627                                                                  ?
          *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1631.5(11)     from level=3951.3      JPI=5(-)                
+                                                                                        1631.5(11)     from level=3951.3      JPI=5-                  
  34P   G 2694                                                                   
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=2694
                                                                                         JI=(1+,2-,3+,4-) JF(1607.6)=1+
@@ -71,9 +77,6 @@ In dataset of 34P: XK 36S(POL D,A),(POL D,AG)     XREF Tag=K
 ################################################################################
 In dataset of 34P: XL 115IN(34S,XG)     XREF Tag=L
 
- 34P   L 2305.3    7  4+                                                        
-                     *                                                            <W> JPI here contradicts to adopted. Please check
-                                                                                        Adopted JPI=4- this JPI=4+
  34P   L 6237.1       6-                                                        
                      *                                                            <W> JPI here contradicts to adopted. Please check
                                                                                         Adopted JPI=7(+) this JPI=6-
@@ -89,7 +92,7 @@ In dataset of 34P: XN 176YB(36S,XG)     XREF Tag=N
                                                                                         Adopted JPI=3(-) this JPI=(3-)
  34P   L 3351         (5-)                                                      
                      *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(5) this JPI=(5-)
+                                                                                        Adopted JPI=5(-) this JPI=(5-)
  34P   L 4723                                                                  ?
                      *                                                            <W> JPI commented from Adopted but empty
                                                                                         Adopted JPI=(5,6) this JPI=
@@ -113,10 +116,10 @@ In dataset of 34P: XP 208PB(36S,34PG)     XREF Tag=P
                                                                                         2246           from level=2675.0      JPI=(1+,2-,3+)          
  34P   L 3351.1    16 5-                                                        
                      *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(5) this JPI=5-
+                                                                                        Adopted JPI=5(-) this JPI=5-
  34P   L 3950.1    16 (5)                                                       
                      *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=5(-) this JPI=(5)
+                                                                                        Adopted JPI=5- this JPI=(5)
 
 
 End of report
