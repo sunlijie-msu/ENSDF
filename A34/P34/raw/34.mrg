@@ -1,5 +1,5 @@
 Program for consistency check: output for original lines grouped by level and gamma energies (version 06/19/2026)
-Generated at: Sun 07/19/2026 at 11:48:42 PM EDT
+Generated at: Tue 07/21/2026 at 01:43:18 AM EDT
 
 
 Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
@@ -34,11 +34,11 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  34P   XQCOULOMB EXCITATION            Q-Q COULOMB EXCITATION
 ################################## new tag show first below ############################################################
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 0.0          1+               12.43 S   10                              --- possible JPI=(0-,1,2,3,4,5): 1607.5g (M1+E2) from 1607.77, (0-,1,2,3,4)
+ LEVEL************************************ 34P   L 0.0          1+               12.43 S   10                              --- possible JPI=(0-,1,2,3,4+): 429.07g M1(+E2) from 429.07, (0-,1,2,3,4+); 1607.5g (M1+E2) from 1607.73, (0-,1,2,3+)
                      *new XREF new tags    34P X L XREF=ABCDEFGHIJKLMNOPQ
                      *new XREF old tags    34P X L XREF=ABCDEFGHIJKLMNOPQ
                      #old XREF in Adopted  34P X L XREF=ABCDEFGHIJKLMNOPQ
-        34SI B- DECAY (2.77 S)--->A  A     34P   L 0            1+                                                         *** possible JPI=(0,1,2,3,4,5,6): 1607.6g from 1607.62,1+
+        34SI B- DECAY (2.77 S)--->A  A     34P   L 0            1+                                                         *** possible JPI=(0,1,2,3,4,5): 1607.6g from 1607.62,1+
          18O(18O,PNG) E=20 MEV--->B  B     34P   L 0.0          1+                                                        
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 0.0          1+                                                        
          18O(18O,PNG) E=25 MEV--->D  D     34P   L 0.0          1+                                                        
@@ -74,11 +74,11 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        36S(POL D,A),(POL D,AG)--->K  K     34P 2cL Adopted Levels.                                                        
                 160GD(37CL,XG)--->M  M     34P  cL J$from the Adopted Levels.                                             
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 429.09    11 2+               1.11 PS   35                              --- possible JPI=(0-,1,2,3,4,5): 1178.62g (M1+E2) from 1607.77, (0-,1,2,3,4)
+ LEVEL************************************ 34P   L 429.07    13 2+               1.11 PS   35                              --- possible JPI=(0-,1,2,3,4+): 1178.62g (M1+E2) from 1607.73, (0-,1,2,3+)
                      *new XREF new tags    34P X L XREF=ABCDEFGH(441)IJKLMNOPQ
                      *new XREF old tags    34P X L XREF=ABCDEFGH(441)IJKLMNOPQ
                      #old XREF in Adopted  34P X L XREF=ABCDEFGH(441)IJKLMNOPQ
-        34SI B- DECAY (2.77 S)--->A  A     34P   L 429.07    13 2+                                                         *** possible JPI=(0,1,2,3,4,5,6): 1178.52g from 1607.62,1+
+        34SI B- DECAY (2.77 S)--->A  A     34P   L 429.07    13 2+                                                         *** possible JPI=(0,1,2,3,4,5): 1178.52g from 1607.62,1+
          18O(18O,PNG) E=20 MEV--->B  B     34P   L 428.7     8  2                0.97 PS   LT                             
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 429.1     4  2                1.3 PS    +6-3                           
          18O(18O,PNG) E=25 MEV--->D  D     34P   L 428.7     8  2                0.97 PS   LT                             
@@ -141,7 +141,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=34 MEV--->F  F     34P  cG M$DCO(Q)=0.57 {I10} gated on 1876|g. Magnetic nature is assigned in    
          18O(18O,PNG) E=34 MEV--->F  F     34P 2cG 2009Ch43 as POL indicates.                                             
        36S(POL D,A),(POL D,AG)--->K  K     34P  cG MR$or +1/(0.01 {I8}) (1987TrZZ).                                       
-                 115IN(34S,XG)--->L  L     34P  cG $R{-DCO}(Q)=0.59 {I5}, POL=-0.16 {I13}.
+                 115IN(34S,XG)--->L  L     34P  cG $R{-DCO}(Q)=0.59 {I5}, POL=-0.16 {I13}.                                
                 198PT(37CL,XG)--->O  O     34P  cG M$stretched dipole from in-plane to out-of-plane |g anisotropy analysis
                 198PT(37CL,XG)--->O  O     34P 2cG and M1 is assigned by 2002AsZY.                                        
             COULOMB EXCITATION--->Q  Q     34P  cG $|s=5.2 mb {I24}.
@@ -153,11 +153,11 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                  30SI(7LI,3HE)--->H  H(?)  34P  cL $d|s/d|W=0.28 {I6}.
                  30SI(7LI,3HE)--->H  H(?)  34P  cL E$1977Pe17 states that this may be due to an impurity.                 
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 1607.77   20 1+               0.76 PS   +28-21                          --- possible JPI=(0-,1,2,3,4)
+ LEVEL************************************ 34P   L 1607.73   19 1+               0.76 PS   +28-21                          --- possible JPI=(0-,1,2,3+)
                      *new XREF new tags    34P X L XREF=ABCDEFGIJKLPQ
                      *new XREF old tags    34P X L XREF=ABCDEFGIJKLPQ
                      #old XREF in Adopted  34P X L XREF=ABCDEFGIJKLPQ
-        34SI B- DECAY (2.77 S)--->A  A     34P   L 1607.62   19 1+                                                         *** possible JPI=(0,1,2,3,4): logft=3.3(GE) from 0+
+        34SI B- DECAY (2.77 S)--->A  A     34P   L 1607.62   19 1+                                                         *** possible JPI=(0,1,2,3+): logft=3.3(GE) from 0+
          18O(18O,PNG) E=20 MEV--->B  B     34P   L 1607.4    8                   0.90 PS   28                             
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 1608.2    5  1                0.52 PS   +45-14                     B   
          18O(18O,PNG) E=25 MEV--->D  D     34P   L 1607.4    8                   0.90 PS   28                             
@@ -183,7 +183,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        36S(POL D,A),(POL D,AG)--->K  K     34P 2cL |a|g(|q) (1987TrZZ).                                                   
             COULOMB EXCITATION--->Q  Q     34P  cL E$rounded value from the Adopted Levels. 1178|g and 1608|g are assumed 
             COULOMB EXCITATION--->Q  Q     34P 2cL to deexcite this level but are not observed in 2000Pr09.               
- GAMMA------------------------------------ 34P   G 1178.62   16 100    5  (M1+E2)  -0.93   26                              --- EG=1178.62    FL=429.09     JF=2+
+ GAMMA------------------------------------ 34P   G 1178.62   16 100    5  (M1+E2)  -0.93   26                              --- EG=1178.62    FL=429.07     JF=2+
         34SI B- DECAY (2.77 S)--->A  A     34P   G 1178.52   16 100    5                                                   *** EG=1178.52    FL=429.07     JF=2+
          18O(18O,PNG) E=20 MEV--->B  B     34P   G 1179      1 100     22                                                  *** EG=1179       FL=428.7      JF=2
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 1179.1    4 100     5  D                                           B    *** EG=1179.1     FL=429.1      JF=2
@@ -211,41 +211,33 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$11 {I2} for doublet (2009Be26).                                     
        36S(POL D,A),(POL D,AG)--->K  K     34P  cG MR$or +1/(0.13 {I6}) (1987TrZZ).                                       
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 2225      2  (+)                                                       
-                     *new XREF new tags    34P X L XREF=I(2225*)K
-                     *new XREF old tags    34P X L XREF=I(2225*)K
-                    34S(T,3HE)--->I  I(*)  34P   L 2225      10                                                            *** possible JPI=(0,1,2,3,4,5,6,7+)
-       36S(POL D,A),(POL D,AG)--->K  K     34P   L 2225      2  (+)                                                        *** possible JPI=(0-,1,2,3,4,5,6,7+)
-                    34S(T,3HE)--->I  I(*)  34P  cL $d|s/d|W=22 {I7}.
+ LEVEL************************************ 34P   L 2228.53   34 2-               2 PS      GT                              --- possible JPI=(0-,1,2,3,4-)
+                     *new XREF new tags    34P X L XREF=CIKQ(?)
+                     *new XREF old tags    34P X L XREF=CIKQ(?)
+                     #old XREF in Adopted  34P X L XREF=CI(2225)KQ(2235?)
+         18O(18O,PNG) E=24 MEV--->C  C     34P   L 2228.8    5  2                2 PS      GT                         B   
+                    34S(T,3HE)--->I  I     34P   L 2225      10                                                            *** possible JPI=(0,1,2,3,4,5,6,7+)
+       36S(POL D,A),(POL D,AG)--->K  K     34P   L 2225      2                                                             *** possible JPI=(0-,1,2,3,4,5,6,7+)
+            COULOMB EXCITATION--->Q  Q(?)  34P   L 2235      9                                                           ?
+         18O(18O,PNG) E=24 MEV--->C  C     34P  cL T$|t>3 ps (2012Be11, DSAM).                                            
+                    34S(T,3HE)--->I  I     34P  cL $d|s/d|W=22 {I7}.
        36S(POL D,A),(POL D,AG)--->K  K     34P  cL E$2236 {I10} from 1978Ba30, 2232 {I10} from 1987TrZZ E|a data.         
        36S(POL D,A),(POL D,AG)--->K  K     34P  cL J$unnatural parity from analyzing powers (1987TrZZ). Spin=3 seems      
        36S(POL D,A),(POL D,AG)--->K  K     34P 2cL better than spin=1,2 from |a|g(|q) plot (1987TrZZ).                    
- GAMMA------------------------------------ 34P   G 1796                                                                   
-       36S(POL D,A),(POL D,AG)--->K  K     34P   G 1796                                                                    *** EG=1796       FL=429.1      JF=2+
- GAMMA------------------------------------ 34P   G 2225                                                                  ?
-       36S(POL D,A),(POL D,AG)--->K  K     34P   G 2225                                                                  ? *** EG=2225       FL=0          JF=1+
-------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 2228.6    4  2-               2 PS      GT                              --- possible JPI=(0,1,2,3,4,5)
-                     *new XREF new tags    34P X L XREF=CI(2225*)Q(?)
-                     *new XREF old tags    34P X L XREF=CI(2225*)Q(?)
-                     #old XREF in Adopted  34P X L XREF=CI(2225)KQ(2235?)
-         18O(18O,PNG) E=24 MEV--->C  C     34P   L 2228.8    5  2                2 PS      GT                         B   
-                    34S(T,3HE)--->I  I(*)  34P   L 2225      10                                                            *** possible JPI=(0,1,2,3,4,5,6,7+)
-            COULOMB EXCITATION--->Q  Q(?)  34P   L 2235      9                                                           ?
-         18O(18O,PNG) E=24 MEV--->C  C     34P  cL T$|t>3 ps (2012Be11, DSAM).                                            
-                    34S(T,3HE)--->I  I(*)  34P  cL $d|s/d|W=22 {I7}.
             COULOMB EXCITATION--->Q  Q(?)  34P 2 L BE2=0.0026 12 (2000Pr09)                                               
- GAMMA------------------------------------ 34P   G 620.6     4  68     14 (E1(+M2))+0.07   16                              --- EG=620.6      FL=1607.77    JF=1+
+ GAMMA------------------------------------ 34P   G 620.6     4  68     14 (E1(+M2))+0.07   16                              --- EG=620.6      FL=1607.73    JF=1+
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 620.6     4 68      14 D(+Q)    +0.07   16                         B    *** EG=620.6      FL=1608.2     JF=1
             COULOMB EXCITATION--->Q  Q(?)  34P   G 627       9                                                           ? *** EG=627        FL=1608       JF=
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG $A{-2}=-0.12 {I8}, A{-4}=+0.06 {I10} (2012Be11).                       
             COULOMB EXCITATION--->Q  Q(?)  34P  cG $|s=6.8 mb {I30}.
- GAMMA------------------------------------ 34P   G 1799.7    6  100    16 [E1]                                             --- EG=1799.7     FL=429.09     JF=2+
+ GAMMA------------------------------------ 34P   G 1799.7    6  100    16 [E1]                                             --- EG=1799.7     FL=429.07     JF=2+
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 1799.7    6 100     16                                             B    *** EG=1799.7     FL=429.1      JF=2
+       36S(POL D,A),(POL D,AG)--->K  K     34P   G 1796                                                                    *** EG=1796       FL=429.1      JF=2+
  GAMMA------------------------------------ 34P   G 2229      1  59     14 [E1]                                             --- EG=2229       FL=0.0        JF=1+
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 2229      1 59      14                                             B    *** EG=2229       FL=0.0        JF=1+
+       36S(POL D,A),(POL D,AG)--->K  K(?)  34P   G 2225                                                                  ? *** EG=2225       FL=0          JF=1+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 2305.1    4  4-               2.0 NS    1                               --- possible JPI=(0-,1,2,3,4,5,6,7+)
+ LEVEL************************************ 34P   L 2305.1    5  4-               2.0 NS    1                               --- possible JPI=(0-,1,2,3,4,5,6-)
                      *new XREF new tags    34P X L XREF=BCDEFGI(2309*)J(2287)KLMNOP
                      *new XREF old tags    34P X L XREF=BCDEFGI(2309*)J(2287)KLMNOP
                      #old XREF in Adopted  34P X L XREF=BCDEFGI(2309*)J(2287)KLMNOP
@@ -272,7 +264,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        36S(POL D,A),(POL D,AG)--->K  K     34P  cL E$2302 {I20} from 1978Ba30 E|a data, 2307 {I7} from 1987TrZZ E|a data. 
                 160GD(37CL,XG)--->M  M     34P  cL J$proposed by 1994Fo04 from configuration |ps{-1/2}|nf{-7/2}.          
                 198PT(37CL,XG)--->O  O     34P  cL T$0.3 < T{-1/2} < 2.5 ns from fragment-|g(t) (2002AsZY).               
- GAMMA------------------------------------ 34P   G 1875.9    6  100       M2+E3    -0.65   38                              --- EG=1875.9     FL=429.09     JF=2+
+ GAMMA------------------------------------ 34P   G 1875.9    6  100       M2+E3    -0.65   38                              --- EG=1875.9     FL=429.07     JF=2+
          18O(18O,PNG) E=20 MEV--->B  B     34P   G 1876      2 100                                                         *** EG=1876       FL=428.7      JF=2
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 1875.8    6 100        Q(+O)    0.00    12                              *** EG=1875.8     FL=429.1      JF=2
          18O(18O,PNG) E=25 MEV--->D  D     34P   G 1876      2 100                                                         *** EG=1876       FL=428.7      JF=2
@@ -290,11 +282,11 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=34 MEV--->F  F     34P  cG M,MR$DCO(D)=1.62 {I26} gated on 429|g. (M2+E3) is assigned in 2009Ch43 
          18O(18O,PNG) E=34 MEV--->F  F     34P 2cG based on RUL. -1.03 < |d < -0.27 from analysis of DCO and POL data with
          18O(18O,PNG) E=34 MEV--->F  F     34P 3cG |s/J=0.4. Other possible +1.2 < |d < +4.0 is unrealistic by RUL.       
-                 115IN(34S,XG)--->L  L     34P  cG $R{-DCO}(D)=1.68 {I14}, POL=+0.15 {I17}. E2 is given in 2006Kr07.      
+                 115IN(34S,XG)--->L  L     34P  cG $R{-DCO}(D)=1.68 {I14}, POL=+0.15 {I17}. E2 is assigned in 2006Kr07.   
                 198PT(37CL,XG)--->O  O     34P  cG M$stretched quadrupole from in-plane to out-of-plane |g anisotropy     
                 198PT(37CL,XG)--->O  O     34P 2cG analysis and M2 is assigned by 2002AsZY.                               
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 2320.6    4  3                6.9 PS    GT                              --- possible JPI=(0,1,2,3,4,5,6)
+ LEVEL************************************ 34P   L 2320.5    5  3(-)             6.9 PS    GT                              --- possible JPI=(0,1,2,3,4,5)
                      *new XREF new tags    34P X L XREF=BCDEFGI(2309*)LNP
                      *new XREF old tags    34P X L XREF=BCDEFGI(2309*)LNP
                      #old XREF in Adopted  34P X L XREF=BCDEFGI(2309*)LNP
@@ -317,20 +309,20 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=30 MEV--->E  E     34P  cL T$|t>3 ps (2009Be26, DSAM).                                            
          18O(18O,PNG) E=44 MEV--->G  G     34P  cL J$spin=3 from 1891|g(|q) without showing |g(|q) plot.                  
                     34S(T,3HE)--->I  I(*)  34P  cL $d|s/d|W=94 {I28}.
- GAMMA------------------------------------ 34P   G 1891.4    7  100       D(+Q)    +0.07   14                              --- EG=1891.4     FL=429.09     JF=2+
+ GAMMA------------------------------------ 34P   G 1891.4    7  100       D(+Q)    +0.07   14                              --- EG=1891.4     FL=429.07     JF=2+
          18O(18O,PNG) E=20 MEV--->B  B     34P   G 1891      2 100                                                         *** EG=1891       FL=428.7      JF=2
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 1891.5    7 100        D(+Q)    +0.07   14                              *** EG=1891.5     FL=429.1      JF=2
          18O(18O,PNG) E=25 MEV--->D  D     34P   G 1891      2 100                                                         *** EG=1891       FL=428.7      JF=2
          18O(18O,PNG) E=30 MEV--->E  E     34P   G 1891      2 100                                                         *** EG=1891       FL=428.7      JF=2
          18O(18O,PNG) E=34 MEV--->F  F     34P   G 1891.6    10 100       D                                                *** EG=1891.6     FL=429.4      JF=2+
          18O(18O,PNG) E=44 MEV--->G  G     34P   G 1891      2 100                                                         *** EG=1891       FL=428.7      JF=2
-                 115IN(34S,XG)--->L  L     34P   G 1891.2      100        (E1)                                             *** EG=1891.2     FL=429.3      JF=2+
+                 115IN(34S,XG)--->L  L     34P   G 1891.2      100        D                                                *** EG=1891.2     FL=429.3      JF=2+
                  176YB(36S,XG)--->N  N     34P   G 1891                                                                    *** EG=1891       FL=429        JF=2+
                208PB(36S,34PG)--->P  P     34P   G 1891      1 100                                                         *** EG=1891       FL=429.0      JF=2+
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$12.2 {I1} (2018Lu08). 10 {I2} (2009Be26).                           
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG $A{-2}=-0.15 {I7}, A{-4}=+0.03 {I8} (2012Be11).                        
          18O(18O,PNG) E=34 MEV--->F  F     34P  cG M$DCO(D)=1.07 {I18} gated on 429|g. (E1+M2) is assigned in 2009Ch43.   
-                 115IN(34S,XG)--->L  L     34P  cG $R{-DCO}(D)=0.89 {I10}, POL=+0.16 {I17}.                               
+                 115IN(34S,XG)--->L  L     34P  cG $R{-DCO}(D)=0.89 {I10}, POL=+0.16 {I17}. E1 is assigned in 2006Kr07.   
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34P   L 2372      20                                                            --- possible JPI=(0-,1,2,3,4,5,6,7+)
                      *new XREF new tags    34P X L XREF=K
@@ -346,7 +338,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        36S(POL D,A),(POL D,AG)--->K  K     34P   L 2628      12                                                            *** possible JPI=(0-,1,2,3,4,5,6,7+)
        36S(POL D,A),(POL D,AG)--->K  K     34P  cL E$from 1978Ba30 E|a data.                                              
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 2675.5    8  (1+,2-,3+)                                                 --- possible JPI=(0-,1,2,3,4,5,6)
+ LEVEL************************************ 34P   L 2675.0    7  (1+,2-,3+)                                                 --- possible JPI=(0-,1,2,3,4,5)
                      *new XREF new tags    34P X L XREF=K
                      *new XREF old tags    34P X L XREF=K
                      #old XREF in Adopted  34P X L XREF=K
@@ -354,9 +346,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        36S(POL D,A),(POL D,AG)--->K  K     34P  cL E$2683 {I7} from 1987TrZZ E|a data.                                    
  GAMMA------------------------------------ 34P   G 376         18      LT                                                ?
        36S(POL D,A),(POL D,AG)--->K  K     34P   G 376         18      LT                                                ? *** EG=376        FL=2299       JF=(1+,2-,3+,4-)
- GAMMA------------------------------------ 34P   G 1067         46     18                                                  --- EG=1067       FL=1607.77    JF=1+
+ GAMMA------------------------------------ 34P   G 1067         46     18                                                  --- EG=1067       FL=1607.73    JF=1+
        36S(POL D,A),(POL D,AG)--->K  K     34P   G 1067        46      18                                                  *** EG=1067       FL=1607.6     JF=1+
- GAMMA------------------------------------ 34P   G 2246         100    26                                                  --- EG=2246       FL=429.09     JF=2+
+ GAMMA------------------------------------ 34P   G 2246         100    26                                                  --- EG=2246       FL=429.07     JF=2+
        36S(POL D,A),(POL D,AG)--->K  K     34P   G 2246        100     26                                                  *** EG=2246       FL=429.1      JF=2+
  GAMMA------------------------------------ 34P   G 2675        36      20                                                ?
        36S(POL D,A),(POL D,AG)--->K  K     34P   G 2675        36      20                                                ? *** EG=2675       FL=0          JF=1+
@@ -383,18 +375,19 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        36S(POL D,A),(POL D,AG)--->K  K     34P   L 3201      16                                                            *** possible JPI=(0-,1,2,3,4,5,6,7+)
        36S(POL D,A),(POL D,AG)--->K  K     34P  cL E$from 1978Ba30 E|a data.                                              
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 3352.5    5  (5)              0.28 PS   +10-8                           --- possible JPI=(0-,1,2,3,4,5,6,7+)
-                     *new XREF new tags    34P X L XREF=BCDEFGI(?)K(3291)NP
-                     *new XREF old tags    34P X L XREF=BCDEFGI(?)K(3291)NP
-                     #old XREF in Adopted  34P X L XREF=BCDEFGI(3345?)NP
+ LEVEL************************************ 34P   L 3352.5    7  (5)              0.28 PS   +10-8                           --- possible JPI=(0-,1,2,3,4,5,6,7+)
+                     *new XREF new tags    34P X L XREF=BCDEFGI(?)K(3291)LNP
+                     *new XREF old tags    34P X L XREF=BCDEFGI(?)K(3291)LNP
+                     #old XREF in Adopted  34P X L XREF=BCDEFGI(3345?)LNP
          18O(18O,PNG) E=20 MEV--->B  B     34P   L 3352.2    28 (5)              0.21 PS   10                             
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 3352.6    7  5                0.36 PS   +12-8                          
          18O(18O,PNG) E=25 MEV--->D  D     34P   L 3352.2    28 (5)              0.21 PS   10                             
          18O(18O,PNG) E=30 MEV--->E  E     34P   L 3352.2    28 (5)              0.21 PS   10                             
-         18O(18O,PNG) E=34 MEV--->F  F     34P   L 3353.3    16  5(-)                                                     
+         18O(18O,PNG) E=34 MEV--->F  F     34P   L 3353.3    16 5(-)                                                      
          18O(18O,PNG) E=44 MEV--->G  G     34P   L 3352.2    28 (5)                                                       
                     34S(T,3HE)--->I  I(?)  34P   L 3345                                                                  ? *** possible JPI=(0,1,2,3,4,5,6,7+)
        36S(POL D,A),(POL D,AG)--->K  K     34P   L 3291      23                                                          ? *** possible JPI=(0-,1,2,3,4,5,6,7+)
+                 115IN(34S,XG)--->L  L     34P   L 3352.5                                                                 
                  176YB(36S,XG)--->N  N     34P   L 3351         (5-)                                                      
                208PB(36S,34PG)--->P  P     34P   L 3351.1    16 5-                                                        
          18O(18O,PNG) E=20 MEV--->B  B     34P  cL J$spin=3,5 from 1047|g(|q). 2009Be26 adopts spin=5 from tendency of    
@@ -412,7 +405,8 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                     34S(T,3HE)--->I  I(?)  34P  cL $d|s/d|W=7 {I2}.
                     34S(T,3HE)--->I  I(?)  34P  cL $observed only at one angle.
        36S(POL D,A),(POL D,AG)--->K  K     34P  cL E$from 1987TrZZ E|a data.                                              
- GAMMA------------------------------------ 34P   G 1031.6    9  3.17   10 [E2]                                             --- EG=1031.6     FL=2320.6     JF=3
+                 115IN(34S,XG)--->L  L     34P  cL $from the Adopted Levels; final level for 2883|g.                      
+ GAMMA------------------------------------ 34P   G 1031.6    9  3.17   10                                                  --- EG=1031.6     FL=2320.5     JF=3(-)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 1031.6    9 3.17    10                                                  *** EG=1031.6     FL=2320.6     JF=3
                  176YB(36S,XG)--->N  N(*)  34P   G 1046        100                                                         *** EG=1046       FL=2305       JF=4-
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$0.64 {I2} (2018Lu08).                                               
@@ -442,42 +436,40 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        36S(POL D,A),(POL D,AG)--->K  K(?)  34P   L 3546      12                                                          ? *** possible JPI=(0-,1,2,3,4,5,6,7+)
        36S(POL D,A),(POL D,AG)--->K  K(?)  34P  cL E$from 1987TrZZ E|a data.                                              
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 3752.4    6                   0.26 PS   6                               --- possible JPI=(0,1,2,3,4,5,6,7)
+ LEVEL************************************ 34P   L 3752.4    7  (3,4)            0.26 PS   6                               --- possible JPI=(0,1,2,3,4,5,6-)
                      *new XREF new tags    34P X L XREF=CF
                      *new XREF old tags    34P X L XREF=CF
                      #old XREF in Adopted  34P X L XREF=CF
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 3752.6    7  (3,4)            0.26 PS   6                          B   
          18O(18O,PNG) E=34 MEV--->F  F     34P   L 3749.3    17                                                           
          18O(18O,PNG) E=24 MEV--->C  C     34P  cL T$|t=0.37 ps {I8} (2012Be11, DSAM).                                    
- GAMMA------------------------------------ 34P   G 1431.8    6  100.0  22                                                  --- EG=1431.8     FL=2320.6     JF=3
+ GAMMA------------------------------------ 34P   G 1431.8    6  100.0  22 D(+Q)                                            --- EG=1431.8     FL=2320.5     JF=3(-)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 1431.8    6 100.0   22 D(+Q)                                       B    *** EG=1431.8     FL=2320.6     JF=3
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG $|d(E2/M1)=+0.18 {I+15-14} for 4- or |d(E2/M1)=-0.36 for 3- (e-mail    
          18O(18O,PNG) E=24 MEV--->C  C     34P 2cG reply from the first author of 2012Be11, P.C. Bender, to B. Singh on   
          18O(18O,PNG) E=24 MEV--->C  C     34P 3cG Feb. 29, 2012).
  GAMMA------------------------------------ 34P   G 1443.7    10                                                          ?
          18O(18O,PNG) E=34 MEV--->F  F     34P   G 1443.7    10                                                          ? *** EG=1443.7     FL=2305.6     JF=4(-)
- GAMMA------------------------------------ 34P   G 1523.9    9  7.5    22                                                  --- EG=1523.9     FL=2228.6     JF=2-
+ GAMMA------------------------------------ 34P   G 1523.9    9  7.5    22                                                  --- EG=1523.9     FL=2228.53    JF=2-
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 1523.9    9 7.5     22                                             B    *** EG=1523.9     FL=2228.8     JF=2
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 3806.5    26                                                            --- possible JPI=(0,1,2,3,4,5,6,7)
+ LEVEL************************************ 34P   L 3806.5    26                                                            --- possible JPI=(0,1,2,3,4,5,6+)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 3806.5    26                                                           
- GAMMA------------------------------------ 34P   G 3377.2    26 100                                                        --- EG=3377.2     FL=429.09     JF=2+
+ GAMMA------------------------------------ 34P   G 3377.2    26 100                                                        --- EG=3377.2     FL=429.07     JF=2+
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 3377.2    26 100                                                        *** EG=3377.2     FL=429.1      JF=2
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$1.2 {I2} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 3911.6    11                  0.14 PS   7                               --- possible JPI=(0,1,2,3,4,5,6,7,8)
+ LEVEL************************************ 34P   L 3911.5    11 (3,4)            0.14 PS   7                               --- possible JPI=(0,1,2,3,4,5,6,7)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 3911.7    12 (3,4)            0.14 PS   7                          B   
          18O(18O,PNG) E=24 MEV--->C  C     34P  cL T$|t=0.2 ps {I1} (2012Be11, DSAM).                                     
- GAMMA------------------------------------ 34P   G 1591      1  100                                                        --- EG=1591       FL=2320.6     JF=3
-         18O(18O,PNG) E=24 MEV--->C  C(*)  34P   G 1591      1 100                                                    B    *** EG=1591       FL=2320.6     JF=3
- GAMMA------------------------------------ 34P   G 1591      1  100                                                        --- EG=1591       FL=2372       JF=
-         18O(18O,PNG) E=24 MEV--->C  C(*)  34P   G 1591      1 100                                                    B    *** EG=1591       FL=2320.6     JF=3
+ GAMMA------------------------------------ 34P   G 1591      1  100                                                        --- EG=1591       FL=2320.5     JF=3(-)
+         18O(18O,PNG) E=24 MEV--->C  C     34P   G 1591      1 100                                                    B    *** EG=1591       FL=2320.6     JF=3
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34P   L 3943.3    17                                                           
                      *new XREF new tags    34P X L XREF=F
@@ -486,7 +478,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 34P   G 1637.7    10                                                          ?
          18O(18O,PNG) E=34 MEV--->F  F     34P   G 1637.7    10                                                          ? *** EG=1637.7     FL=2305.6     JF=4(-)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 3951.3    5  5(-)             0.118 PS  35                              --- possible JPI=(0,1,2,3,4,5,6,7,8+)
+ LEVEL************************************ 34P   L 3951.3    6  5(-)             0.118 PS  35                              --- possible JPI=(0,1,2,3,4,5,6,7-)
                      *new XREF new tags    34P X L XREF=BCDEFGP
                      *new XREF old tags    34P X L XREF=BCDEFGP
                      #old XREF in Adopted  34P X L XREF=BCDEFGP
@@ -494,14 +486,14 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 3951.4    7  5                0.111 PS  35                         B   
          18O(18O,PNG) E=25 MEV--->D  D     34P   L 3950.0    27                  0.21 PS   10                             
          18O(18O,PNG) E=30 MEV--->E  E     34P   L 3950.0    27                  0.21 PS   10                             
-         18O(18O,PNG) E=34 MEV--->F  F     34P   L 3951.6    16  5(-)                                                     
+         18O(18O,PNG) E=34 MEV--->F  F     34P   L 3951.6    16 5(-)                                                      
          18O(18O,PNG) E=44 MEV--->G  G     34P   L 3950.0    27                                                           
                208PB(36S,34PG)--->P  P     34P   L 3950.1    16 (5)                                                       
          18O(18O,PNG) E=20 MEV--->B  B     34P  cL T$|t=0.30 ps {I15} (2009Be26, DSAM).                                   
          18O(18O,PNG) E=24 MEV--->C  C     34P  cL T$|t=0.16 ps {I5} (2012Be11, DSAM).                                    
          18O(18O,PNG) E=25 MEV--->D  D     34P  cL T$|t=0.30 ps {I15} (2009Be26, DSAM).                                   
          18O(18O,PNG) E=30 MEV--->E  E     34P  cL T$|t=0.30 ps {I15} (2009Be26, DSAM).                                   
- GAMMA------------------------------------ 34P   G 1631.5    11 4.2    21 [E2]                                             --- EG=1631.5     FL=2320.6     JF=3
+ GAMMA------------------------------------ 34P   G 1631.5    11 4.2    21 [E2]                                             --- EG=1631.5     FL=2320.5     JF=3(-)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 1631.5    11 4.2    21                                             B    *** EG=1631.5     FL=2320.6     JF=3
  GAMMA------------------------------------ 34P   G 1646.0    4  100.0  21 (M1(+E2))-0.03   18                              --- EG=1646.0     FL=2305.1     JF=4-
          18O(18O,PNG) E=20 MEV--->B  B     34P   G 1645      2 100                                                         *** EG=1645       FL=2304.7     JF=(4)
@@ -516,7 +508,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=34 MEV--->F  F     34P  cG $DCO(D)=0.88 {I15} gated on 1607|g. Magnetic nature is assigned in     
          18O(18O,PNG) E=34 MEV--->F  F     34P 2cG 2009Ch43 as POL qualitatively indicates.                               
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 4305.9    11 (1+,2-,3+)                                                 --- possible JPI=(0-,1,2,3,4,5,6)
+ LEVEL************************************ 34P   L 4301.8    10 (1+,2-,3+)                                                 --- possible JPI=(0-,1,2,3,4,5+)
                      *new XREF new tags    34P X L XREF=K
                      *new XREF old tags    34P X L XREF=K
                      #old XREF in Adopted  34P X L XREF=K
@@ -524,20 +516,20 @@ Note: 1. possible JPI presented at the end of each record line of each individua
        36S(POL D,A),(POL D,AG)--->K  K     34P  cL E$4306 {I7} from 1987TrZZ E|a data.                                    
  GAMMA------------------------------------ 34P   G 1627                                                                  ?
        36S(POL D,A),(POL D,AG)--->K  K     34P   G 1627                                                                  ? *** EG=1627       FL=2675       JF=(1+,2-,3+)
- GAMMA------------------------------------ 34P   G 2694                                                                    --- EG=2694       FL=1607.77    JF=1+
+ GAMMA------------------------------------ 34P   G 2694         100                                                        --- EG=2694       FL=1607.73    JF=1+
        36S(POL D,A),(POL D,AG)--->K  K     34P   G 2694                                                                    *** EG=2694       FL=1607.6     JF=1+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 4424.3    27                                                            --- possible JPI=(0,1,2,3,4,5,6,7)
+ LEVEL************************************ 34P   L 4424.2    27                                                            --- possible JPI=(0,1,2,3,4,5,6+)
                      *new XREF new tags    34P X L XREF=CJ(4470*)
                      *new XREF old tags    34P X L XREF=CJ(4470*)
                      #old XREF in Adopted  34P X L XREF=CJ(4470*)
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 4424.3    27                                                           
         34S(7LI,7BE),(11B,11C)--->J  J(*)  34P   L 4470      70                                                           
- GAMMA------------------------------------ 34P   G 3994.9    27 100                                                        --- EG=3994.9     FL=429.09     JF=2+
+ GAMMA------------------------------------ 34P   G 3994.9    27 100                                                        --- EG=3994.9     FL=429.07     JF=2+
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 3994.9    27 100                                                        *** EG=3994.9     FL=429.1      JF=2
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$4.7 {I2} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 4454.7    12 (4-)             0.10 PS   LT                              --- possible JPI=(0-,1,2,3,4,5,6,7+)
+ LEVEL************************************ 34P   L 4454.6    11 (4-)             0.10 PS   LT                              --- possible JPI=(0-,1,2,3,4,5,6)
                      *new XREF new tags    34P X L XREF=CJ(4470*)K(4434)
                      *new XREF old tags    34P X L XREF=CJ(4470*)K(4434)
                      #old XREF in Adopted  34P X L XREF=CJ(4470*)K(4434)
@@ -550,30 +542,30 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P 2cL calculations.                                                          
          18O(18O,PNG) E=24 MEV--->C  C     34P  cL T$|t<0.14 ps (2012Be11, DSAM).                                         
        36S(POL D,A),(POL D,AG)--->K  K     34P  cL E$4438 {I13} from 1987TrZZ E|a data.                                   
- GAMMA------------------------------------ 34P   G 2134                   D+Q                                              --- EG=2134       FL=2320.6     JF=3
+ GAMMA------------------------------------ 34P   G 2134         100       M1+E2                                            --- EG=2134       FL=2320.5     JF=3(-)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 2134                   D+Q                                              *** EG=2134       FL=2320.6     JF=3
        36S(POL D,A),(POL D,AG)--->K  K(?)  34P   G 2135                                                                  ? *** EG=2135       FL=2299       JF=(1+,2-,3+,4-)
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG E$revised from 2126 {I2} in 2012Be11 by 2018Lu08.                      
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 4570.8    21                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8)
+ LEVEL************************************ 34P   L 4570.7    21                                                            --- possible JPI=(0,1,2,3,4,5,6,7)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 4570.8    21                                                           
- GAMMA------------------------------------ 34P   G 2250.1    20 100                                                        --- EG=2250.1     FL=2320.6     JF=3
+ GAMMA------------------------------------ 34P   G 2250.1    20 100                                                        --- EG=2250.1     FL=2320.5     JF=3(-)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 2250.1    20 100                                                        *** EG=2250.1     FL=2320.6     JF=3
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$1.0 {I3} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 4613.2    22                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8)
+ LEVEL************************************ 34P   L 4613.1    22                                                            --- possible JPI=(0,1,2,3,4,5,6,7)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 4613.2    22                                                           
- GAMMA------------------------------------ 34P   G 2292.5    21 100                                                        --- EG=2292.5     FL=2320.6     JF=3
+ GAMMA------------------------------------ 34P   G 2292.5    21 100                                                        --- EG=2292.5     FL=2320.5     JF=3(-)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 2292.5    21 100                                                        *** EG=2292.5     FL=2320.6     JF=3
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$0.8 {I2} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 4630.1    5  6-               0.31 PS   5                               --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 4630.1    6  6-               0.31 PS   5                               --- possible JPI=(0,1,2,3,4,5,6,7,8-)
                      *new XREF new tags    34P X L XREF=BCDEFG
                      *new XREF old tags    34P X L XREF=BCDEFG
                      #old XREF in Adopted  34P X L XREF=BCDEFG
@@ -581,7 +573,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 4630.1    7  6                0.30 PS   5                          B   
          18O(18O,PNG) E=25 MEV--->D  D     34P   L 4629.2    26                  0.35 PS   14                             
          18O(18O,PNG) E=30 MEV--->E  E     34P   L 4629.2    26                  0.35 PS   14                             
-         18O(18O,PNG) E=34 MEV--->F  F     34P   L 4630.8    16  6(-)                                                     
+         18O(18O,PNG) E=34 MEV--->F  F     34P   L 4630.8    16 6(-)                                                      
          18O(18O,PNG) E=44 MEV--->G  G     34P   L 4629.2    26                                                           
          18O(18O,PNG) E=20 MEV--->B  B     34P  cL T$|t=0.5 ps {I2} (2009Be26, DSAM).                                     
          18O(18O,PNG) E=24 MEV--->C  C     34P  cL T$|t=0.44 ps {I7} (2012Be11, DSAM).                                    
@@ -610,58 +602,46 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=34 MEV--->F  F     34P  cG $DCO(D)=1.8 {I3} gated on 1607|g. Electric nature is assigned in       
          18O(18O,PNG) E=34 MEV--->F  F     34P 2cG 2009Ch43 as POL qualitatively indicates.                               
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 4723                                                                    --- possible JPI=(0,1,2,3,4,5,6,7,8)
-                     *new XREF new tags    34P X L XREF=CN
-                     *new XREF old tags    34P X L XREF=CN
-                     #old XREF in Adopted  34P X L XREF=CN
-         18O(18O,PNG) E=24 MEV--->C  C     34P   L 4710.2    16 (6)                                                       
-                 176YB(36S,XG)--->N  N     34P   L 4723                                                                   
-         18O(18O,PNG) E=24 MEV--->C  C     34P  cL J$spin=4,5,6 from 1357|g(|q). 2018Lu08 adopts spin=(6) based on the    
-         18O(18O,PNG) E=24 MEV--->C  C     34P 2cL tendency of fusion-evaporation reactions to favor higher-spin states.  
+ LEVEL************************************ 34P   L 4710.1    16 (5,6)                                                      --- possible JPI=(0,1,2,3,4,5,6,7,8-)
+                     *new XREF new tags    34P X L XREF=CN(?)
+                     *new XREF old tags    34P X L XREF=CN(?)
+                     #old XREF in Adopted  34P X L XREF=CN(?)
+         18O(18O,PNG) E=24 MEV--->C  C     34P   L 4710.2    16 (5,6)                                                     
+                 176YB(36S,XG)--->N  N(?)  34P   L 4723                                                                  ?
+         18O(18O,PNG) E=24 MEV--->C  C     34P  cL J$spin=4,5,6 from 1357|g(|q). Spin=(5,6) in Fig. 7 and spin=(6) in     
+         18O(18O,PNG) E=24 MEV--->C  C     34P 2cL Table II of 2018Lu08. Spin=5 suggested by shell model and spin=6 based 
+         18O(18O,PNG) E=24 MEV--->C  C     34P 3cL on the tendency of fusion-evaporation reactions to favor higher-spin   
+         18O(18O,PNG) E=24 MEV--->C  C     34P 4cL states.                                                                
  GAMMA------------------------------------ 34P   G 1356.9    23 33     11 D+Q                                              --- EG=1356.9     FL=3352.5     JF=(5)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 1356.9    23 33     11 D+Q                                              *** EG=1356.9     FL=3352.6     JF=5
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$2.1 {I7} (2018Lu08).                                                
- GAMMA------------------------------------ 34P   G 2405.5    20 100    5                                                   --- EG=2405.5     FL=2320.6     JF=3
+ GAMMA------------------------------------ 34P   G 2405.5    20 100    5                                                   --- EG=2405.5     FL=2305.1     JF=4-
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 2405.5    20 100    5                                                   *** EG=2405.5     FL=2305.1     JF=4
                  176YB(36S,XG)--->N  N(?)  34P   G 2403                                                                  ? *** EG=2403       FL=2320       JF=(3-)
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$6.3 {I3} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 4729.6    30                                                            --- possible JPI=(0-,1,2,3,4,5,6,7+)
+ LEVEL************************************ 34P   L 4729.6    30                                                            --- possible JPI=(0-,1,2,3,4,5,6+)
                      *new XREF new tags    34P X L XREF=CK
                      *new XREF old tags    34P X L XREF=CK
                      #old XREF in Adopted  34P X L XREF=CK
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 4729.6    30                                                           
        36S(POL D,A),(POL D,AG)--->K  K     34P   L 4725      12 (1+,2-,3+,4-,5+)                                           *** possible JPI=(0-,1,2,3,4,5,6,7+)
        36S(POL D,A),(POL D,AG)--->K  K     34P  cL E$4744 {I9} from 1987TrZZ E|a data.                                    
- GAMMA------------------------------------ 34P   G 4300.2    30 100                                                        --- EG=4300.2     FL=429.09     JF=2+
+ GAMMA------------------------------------ 34P   G 4300.2    30 100                                                        --- EG=4300.2     FL=429.07     JF=2+
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 4300.2    30 100                                                        *** EG=4300.2     FL=429.1      JF=2
        36S(POL D,A),(POL D,AG)--->K  K     34P   G 4296                                                                    *** EG=4296       FL=429.1      JF=2+
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$0.5 {I2} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 5012.7    21 (2-)             0.07 PS   LT                              --- possible JPI=(0,1,2,3,4,5,6,7,8)
+ LEVEL************************************ 34P   L 5012.6    21                  0.07 PS   LT                              --- possible JPI=(0,1,2,3,4,5,6,7)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 5012.8    21 (2)              0.07 PS   LT                         B   
          18O(18O,PNG) E=24 MEV--->C  C     34P  cL T$|t<0.1 ps (2012Be11, DSAM).                                          
- GAMMA------------------------------------ 34P   G 2692      2  100       [M1,E2]                                          --- EG=2692       FL=2320.6     JF=3
+ GAMMA------------------------------------ 34P   G 2692      2  100                                                        --- EG=2692       FL=2320.5     JF=3(-)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 2692      2 100                                                    B    *** EG=2692       FL=2320.6     JF=3
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 5188.4    9  6-                                                         --- possible JPI=(0,1,2,3,4,5,6,7,8,9-)
-                     *new XREF new tags    34P X L XREF=L
-                     *new XREF old tags    34P X L XREF=L
-                     #old XREF in Adopted  34P X L XREF=L
-                 115IN(34S,XG)--->L  L     34P   L 5188.4    9  6-                                                        
-                 115IN(34S,XG)--->L  L     34P  cL E$this level is not listed in Adopted Levels since 2883|g has been     
-                 115IN(34S,XG)--->L  L     34P 2cL assigned to be from a 6236 level.
- GAMMA------------------------------------ 34P   G 2883.0       100       M2                                               --- EG=2883.0     FL=2305.1     JF=4-
-                 115IN(34S,XG)--->L  L     34P   G 2883.0      100        M2                                               *** EG=2883.0     FL=2305.3     JF=4+
-                 115IN(34S,XG)--->L  L     34P  cG $R{-DCO}(Q)=0.88 {I9}, POL=-0.22 {I11}.
-                 115IN(34S,XG)--->L  L     34P  cG E$placement from 6236 level in Adopted Levels, Gammas according to the 
-                 115IN(34S,XG)--->L  L     34P 2cG level scheme in 2009Be26, 2009Ch43 and 2005Ol02; a strong 1046|g       
-                 115IN(34S,XG)--->L  L     34P 3cG reported in 2009Be26 and 2005Ol02 is not seen in 2006Kr07.
-------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 5344.5    29                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 5344.5    29                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8-)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
@@ -670,13 +650,13 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 3039.3    28 100                                                        *** EG=3039.3     FL=2305.1     JF=4
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$2.6 {I6} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 5394.2    6  (6-)             0.11 PS   +8-5                            --- possible JPI=(0,1,2,3,4,5,6,7,8)
+ LEVEL************************************ 34P   L 5394.1    7  6                0.11 PS   +8-5                            --- possible JPI=(0,1,2,3,4,5,6,7,8-)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 5394.2    8  6                0.11 PS   +8-5                       B   
          18O(18O,PNG) E=24 MEV--->C  C     34P  cL T$|t=0.16 ps {I+12-7} (2012Be11, DSAM).                                
- GAMMA------------------------------------ 34P   G 762.9     8  15     6  [M1,E2]                                          --- EG=762.9      FL=4630.1     JF=6-
+ GAMMA------------------------------------ 34P   G 762.9     8  15     6                                                   --- EG=762.9      FL=4630.1     JF=6-
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 762.9     8 15      6                                              B    *** EG=762.9      FL=4630.1     JF=6
  GAMMA------------------------------------ 34P   G 1442.6    7  100    11 D(+Q)    +0.02   5                               --- EG=1442.6     FL=3951.3     JF=5(-)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 1442.6    7 100     11 D(+Q)    +0.02   5                          B    *** EG=1442.6     FL=3951.4     JF=5
@@ -684,10 +664,10 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 34P   G 2042      1  44     9  D(+Q)    +0.05   14                              --- EG=2042       FL=3352.5     JF=(5)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 2042      1 44      9  D(+Q)    +0.05   14                         B    *** EG=2042       FL=3352.6     JF=5
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG $A{-2}=-0.21 {I12}, A{-4}=+0.26 {I15} (2012Be11).                      
- GAMMA------------------------------------ 34P   G 3090      2  28     9  [E2]                                             --- EG=3090       FL=2305.1     JF=4-
+ GAMMA------------------------------------ 34P   G 3090      2  28     9                                                   --- EG=3090       FL=2305.1     JF=4-
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 3090      2 28      9                                              B    *** EG=3090       FL=2305.1     JF=4
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 5594.5    26                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 5594.5    26                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8-)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
@@ -696,7 +676,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 3289.2    25 100                                                        *** EG=3289.2     FL=2305.1     JF=4
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$1.1 {I5} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 5726.4    13 (3-,4,5,6-)                                                --- possible JPI=(0,1,2,3,4,5,6,7,8)
+ LEVEL************************************ 34P   L 5726.4    13 4,6                                                        --- possible JPI=(0,1,2,3,4,5,6,7,8-)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
@@ -707,7 +687,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 34P   G 3421      2  28     8                                                   --- EG=3421       FL=2305.1     JF=4-
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 3421      2 28      8                                              B    *** EG=3421       FL=2305.1     JF=4
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 5788.7    29                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 5788.7    29                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8-)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
@@ -716,7 +696,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 3483.4    28 100                                                        *** EG=3483.4     FL=2305.1     JF=4
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$1.1 {I8} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 5975.7    30                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 5975.7    30                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8-)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
@@ -725,7 +705,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 3670.4    29 100                                                        *** EG=3670.4     FL=2305.1     JF=4
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$1.5 {I5} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 6118.6    31                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 6118.6    31                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8-)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
@@ -734,7 +714,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 3813.3    30 100                                                        *** EG=3813.3     FL=2305.1     JF=4
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$0.8 {I6} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 6174.6    29                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 6174.6    29                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8-)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
@@ -743,7 +723,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 3869.3    28 100                                                        *** EG=3869.3     FL=2305.1     JF=4
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$1.3 {I3} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 6193.8    10                  0.69 PS   LT                              --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 6193.6    11                  0.69 PS   LT                              --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
                      *new XREF new tags    34P X L XREF=BCDEG
                      *new XREF old tags    34P X L XREF=BCDEG
                      #old XREF in Adopted  34P X L XREF=BCDEG
@@ -765,16 +745,17 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=44 MEV--->G  G     34P   G 2839      2 100                                                         *** EG=2839       FL=3352.2     JF=(5)
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$6 {I1} (2009Be26).                                                  
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 6237.2    5  7(+)             6.9 PS    GT                              --- possible JPI=(0,1,2,3,4,5,6,7,8,9)
-                     *new XREF new tags    34P X L XREF=BCDEFGN
-                     *new XREF old tags    34P X L XREF=BCDEFGN
-                     #old XREF in Adopted  34P X L XREF=BCDEFGN
+ LEVEL************************************ 34P   L 6237.1    7  7(+)             6.9 PS    GT                              --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+                     *new XREF new tags    34P X L XREF=BCDEFGLN
+                     *new XREF old tags    34P X L XREF=BCDEFGLN
+                     #old XREF in Adopted  34P X L XREF=BCDEFGLN
          18O(18O,PNG) E=20 MEV--->B  B     34P   L 6235.8    29 (7)              2.08 PS   GT                             
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 6237.3    8  7                6.9 PS    GT                         B   
          18O(18O,PNG) E=25 MEV--->D  D     34P   L 6235.8    29 (7)              2.08 PS   GT                             
          18O(18O,PNG) E=30 MEV--->E  E     34P   L 6235.8    29 (7)              2.08 PS   GT                             
-         18O(18O,PNG) E=34 MEV--->F  F     34P   L 6237.7    16  7(+)                                                     
+         18O(18O,PNG) E=34 MEV--->F  F     34P   L 6237.7    16 7(+)                                                      
          18O(18O,PNG) E=44 MEV--->G  G     34P   L 6235.8    29 (7)                                                       
+                 115IN(34S,XG)--->L  L     34P   L 6237.1       6-                                                        
                  176YB(36S,XG)--->N  N     34P   L 6236         (7+)                                                      
          18O(18O,PNG) E=20 MEV--->B  B     34P  cL J$spin=6,7 from 1607|g(|q). 2009Be26 adopts spin=7 for a smaller |d    
          18O(18O,PNG) E=20 MEV--->B  B     34P 2cL value.                                                                 
@@ -788,10 +769,12 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=30 MEV--->E  E     34P  cL T$|t>3 ps (2009Be26, DSAM).                                            
          18O(18O,PNG) E=44 MEV--->G  G     34P  cL J$spin=6,7 from 1607|g(|q). 2009Be26 adopts spin=7 for a smaller |d    
          18O(18O,PNG) E=44 MEV--->G  G     34P 2cL value.                                                                 
- GAMMA------------------------------------ 34P   G 842.5     6  48     10 D(+Q)    +0.05   14                              --- EG=842.5      FL=5394.2     JF=(6-)
+                 115IN(34S,XG)--->L  L     34P  cL E$from the Adopted Levels. The 2883|g was placed to be from a 5188     
+                 115IN(34S,XG)--->L  L     34P 2cL level in 2006Kr07.                                                     
+ GAMMA------------------------------------ 34P   G 842.5     6  48     10 D(+Q)    +0.05   14                              --- EG=842.5      FL=5394.1     JF=6
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 842.5     6 48      10 D(+Q)    +0.05   14                         B    *** EG=842.5      FL=5394.2     JF=6
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG $A{-2}=-0.19 {I12}, A{-4}=-0.02 {I12} (2012Be11).                      
- GAMMA------------------------------------ 34P   G 1607.7    5  1.7E2  6  D(+Q)    +0.05   9                               --- EG=1607.7     FL=4630.1     JF=6-
+ GAMMA------------------------------------ 34P   G 1607.7    5  100    13 (E1(+M2))+0.05   9                               --- EG=1607.7     FL=4630.1     JF=6-
          18O(18O,PNG) E=20 MEV--->B  B     34P   G 1607      2 100     33                                             &    *** EG=1607       FL=4629.2     JF=
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 1607.9    5 100     13 D(+Q)    +0.05   9                          B    *** EG=1607.9     FL=4630.1     JF=6
          18O(18O,PNG) E=25 MEV--->D  D     34P   G 1607      2 433     67                                             &    *** EG=1607       FL=4629.2     JF=
@@ -802,22 +785,24 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG $A{-2}=-0.17 {I10}, A{-4}=+0.11 {I11} (2012Be11).                      
          18O(18O,PNG) E=34 MEV--->F  F     34P  cG M$DCO(Q)=0.43 {I8} gated on 1876|g. Electric nature is assigned in     
          18O(18O,PNG) E=34 MEV--->F  F     34P 2cG 2009Ch43 as POL qualitatively indicates.                               
- GAMMA------------------------------------ 34P   G 2884.2    7  97     6  Q                                                --- EG=2884.2     FL=3352.5     JF=(5)
+ GAMMA------------------------------------ 34P   G 2884.2    7  90     13 Q(+O)    +0.11   18                              --- EG=2884.2     FL=3352.5     JF=(5)
          18O(18O,PNG) E=20 MEV--->B  B     34P   G 2883      2 17      LT                                                  *** EG=2883       FL=3352.2     JF=(5)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 2884.3    7 90      13 Q(+O)    +0.11   18                         B    *** EG=2884.3     FL=3352.6     JF=5
          18O(18O,PNG) E=25 MEV--->D  D     34P   G 2883      2 100     33                                                  *** EG=2883       FL=3352.2     JF=(5)
          18O(18O,PNG) E=30 MEV--->E  E     34P   G 2883      2 100     20                                                  *** EG=2883       FL=3352.2     JF=(5)
          18O(18O,PNG) E=34 MEV--->F  F     34P   G 2884.3    10 100    6  Q                                                *** EG=2884.3     FL=3353.3     JF=5(-)
          18O(18O,PNG) E=44 MEV--->G  G     34P   G 2883      2 85      16                                                  *** EG=2883       FL=3352.2     JF=(5)
+                 115IN(34S,XG)--->L  L     34P   G 2883.0      100        M2                                               *** EG=2883.0     FL=3352.5     JF=
                  176YB(36S,XG)--->N  N     34P   G 2885        100                                                         *** EG=2885       FL=3351       JF=(5-)
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$5 {I1} (2009Be26).                                                  
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG $A{-2}=+0.52 {I10}, A{-4}=-0.05 {I11} (2012Be11).                      
          18O(18O,PNG) E=34 MEV--->F  F     34P  cG M$DCO(Q)=1.35 {I22} gated on 1876|g. (M2) is assigned in 2009Ch43.     
+                 115IN(34S,XG)--->L  L     34P  cG $R{-DCO}(Q)=0.88 {I9}, POL=-0.22 {I11}.                                
  GAMMA------------------------------------ 34P   G 3931.7    10 12.5   75 [E3]                                             --- EG=3931.7     FL=2305.1     JF=4-
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 3932      3 12.5    75                                             B    *** EG=3932       FL=2305.1     JF=4
          18O(18O,PNG) E=34 MEV--->F  F     34P   G 3931.7    10           [E3]                                             *** EG=3931.7     FL=2305.6     JF=4(-)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 6294.9    22                  0.07 PS   LT                              --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 6294.8    22                  0.07 PS   LT                              --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
@@ -828,7 +813,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 2942.2    21 100                                                        *** EG=2942.2     FL=3352.6     JF=5
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$4.0 {I8} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 6316.9    31                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 6317.0    31                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8-)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
@@ -837,19 +822,19 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 4011.6    30 100                                                        *** EG=4011.6     FL=2305.1     JF=4
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$0.60 {I5} (2018Lu08).                                               
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 6357.2    8  (7-)             0.035 PS  LT                              --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 6357.2    9  (7-)             0.035 PS  LT                              --- possible JPI=(0,1,2,3,4,5,6,7,8)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
-         18O(18O,PNG) E=24 MEV--->C  C     34P   L 6357.3    9  7                0.035 PS  LT                         B   
+         18O(18O,PNG) E=24 MEV--->C  C     34P   L 6357.3    9  (7)              0.035 PS  LT                         B   
          18O(18O,PNG) E=24 MEV--->C  C     34P  cL T$|t<0.05 ps (2012Be11, DSAM).                                         
- GAMMA------------------------------------ 34P   G 2405.9    7  75     14 Q                                                --- EG=2405.9     FL=3951.3     JF=5(-)
+ GAMMA------------------------------------ 34P   G 2405.9    7  75     14 E2                                               --- EG=2405.9     FL=3951.3     JF=5(-)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 2405.9    7 75      14 Q                                           B    *** EG=2405.9     FL=3951.4     JF=5
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG $A{-2}=-0.53 {I12}, A{-4}=-0.57 {I13} (2012Be11).                      
- GAMMA------------------------------------ 34P   G 3004      2  100    14 [E2]                                             --- EG=3004       FL=3352.5     JF=(5)
+ GAMMA------------------------------------ 34P   G 3004      2  100    14                                                  --- EG=3004       FL=3352.5     JF=(5)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 3004      2 100     14                                             B    *** EG=3004       FL=3352.6     JF=5
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 6445.2    31                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 6445.2    31                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8-)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
@@ -858,18 +843,19 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 4139.8    30 100                                                        *** EG=4139.8     FL=2305.1     JF=4
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$1.3 {I8} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 6923.4    27 (6)                                                        --- possible JPI=(0,1,2,3,4,5,6,7,8)
+ LEVEL************************************ 34P   L 6923.3    27 (6)                                                        --- possible JPI=(0,1,2,3,4,5,6,7,8)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 6923.4    27 (6)                                                       
-         18O(18O,PNG) E=24 MEV--->C  C     34P  cL J$spin=4,5,6 from 3571|g(|q). 2018Lu08 adopts spin=(6) based on the    
-         18O(18O,PNG) E=24 MEV--->C  C     34P 2cL tendency of fusion-evaporation reactions to favor higher-spin states.  
+         18O(18O,PNG) E=24 MEV--->C  C     34P  cL J$spin=4,5,6 from 3571|g(|q). 2018Lu08 adopts spin=(6) based on shell  
+         18O(18O,PNG) E=24 MEV--->C  C     34P 2cL model and the tendency of fusion-evaporation reactions to favor        
+         18O(18O,PNG) E=24 MEV--->C  C     34P 3cL higher-spin states.                                                    
  GAMMA------------------------------------ 34P   G 3570.6    26 100       D+Q                                              --- EG=3570.6     FL=3352.5     JF=(5)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 3570.6    26 100       D+Q                                              *** EG=3570.6     FL=3352.6     JF=5
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$0.60 {I9} (2018Lu08).                                               
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 6991.3    29                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 6991.2    29                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
@@ -878,7 +864,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 3638.5    28 100                                                        *** EG=3638.5     FL=3352.6     JF=5
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$0.8 {I3} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 7066.0    26                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 7065.9    26                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
@@ -887,7 +873,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 3713.2    25 100                                                        *** EG=3713.2     FL=3352.6     JF=5
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$0.20 {I5} (2018Lu08).                                               
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 7256.5    26                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 7256.4    26                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
@@ -903,10 +889,10 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 7426.4    21                  0.07 PS   LT                         B   
         34S(7LI,7BE),(11B,11C)--->J  J     34P   L 7440      70                                                           
          18O(18O,PNG) E=24 MEV--->C  C     34P  cL T$|t<0.1 ps (2012Be11, DSAM).                                          
- GAMMA------------------------------------ 34P   G 1189      2  100                                                        --- EG=1189       FL=6237.2     JF=7(+)
+ GAMMA------------------------------------ 34P   G 1189      2  100                                                        --- EG=1189       FL=6237.1     JF=7(+)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 1189      2 100                                                    B    *** EG=1189       FL=6237.3     JF=7
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 7590.8    32                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34P   L 7590.7    32                                                            --- possible JPI=(0,1,2,3,4,5,6,7,8,9+)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
@@ -915,21 +901,21 @@ Note: 1. possible JPI presented at the end of each record line of each individua
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 4238.0    31 100                                                        *** EG=4238.0     FL=3352.6     JF=5
          18O(18O,PNG) E=24 MEV--->C  C     34P  cG RI$1.0 {I4} (2018Lu08).                                                
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34P   L 7920.1    10                  0.35 PS   GT                              --- possible JPI=(0,1,2,3,4,5,6,7,8,9,10,11+)
+ LEVEL************************************ 34P   L 7919.9    10                  0.35 PS   GT                              --- possible JPI=(0,1,2,3,4,5,6,7,8,9,10,11+)
                      *new XREF new tags    34P X L XREF=C
                      *new XREF old tags    34P X L XREF=C
                      #old XREF in Adopted  34P X L XREF=C
          18O(18O,PNG) E=24 MEV--->C  C     34P   L 7920.2    11                  0.35 PS   GT                         B   
          18O(18O,PNG) E=24 MEV--->C  C     34P  cL T$|t>0.5 ps (2012Be11, DSAM).                                          
- GAMMA------------------------------------ 34P   G 1683      1  100    6                                                   --- EG=1683       FL=6237.2     JF=7(+)
+ GAMMA------------------------------------ 34P   G 1683      1  100    6                                                   --- EG=1683       FL=6237.1     JF=7(+)
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 1683      1 100     6                                              B    *** EG=1683       FL=6237.3     JF=7
- GAMMA------------------------------------ 34P   G 1726      1  49     6                                                   --- EG=1726       FL=6193.8     JF=
+ GAMMA------------------------------------ 34P   G 1726      1  49     6                                                   --- EG=1726       FL=6193.6     JF=
          18O(18O,PNG) E=24 MEV--->C  C     34P   G 1726      1 49      6                                              B    *** EG=1726       FL=6193.9     JF=
 
 
 Statistics of levels and gammas from all datasets of 34P:
                              DSID     #of levels       #of gammas       level range
-           ADOPTED LEVELS, GAMMAS        47               62            0.0        to     7920.1
+           ADOPTED LEVELS, GAMMAS        46               60            0.0        to     7919.9
            34SI B- DECAY (2.77 S)        3                3             0          to    1607.62
             18O(18O,PNG) E=20 MEV        10               12            0.0        to     6235.8
             18O(18O,PNG) E=24 MEV        40               57            0.0        to     7920.2
@@ -941,14 +927,14 @@ Statistics of levels and gammas from all datasets of 34P:
                        34S(T,3HE)        6                0             0          to       3345
            34S(7LI,7BE),(11B,11C)        6                0             0          to       7440
           36S(POL D,A),(POL D,AG)        16               14            0          to       4725
-                    115IN(34S,XG)        6                5             0          to     5188.4
+                    115IN(34S,XG)        7                5             0          to     6237.1
                    160GD(37CL,XG)        3                2             0          to       2305
                     176YB(36S,XG)        7                6             0          to       6236
                    198PT(37CL,XG)        3                2             0          to       2305
                   208PB(36S,34PG)        8                9             0          to     3950.1
                COULOMB EXCITATION        4                2             0          to       2235
 
-                         IN TOTAL        203              222           0.0        to     7920.2
+                         IN TOTAL        203              220           0.0        to     7920.2
 
 
 
@@ -956,9 +942,9 @@ Statistics of levels and gammas from all datasets of 34P:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                    34P        47           62           203          222            1337             17
+                    34P        46           60           203          220            1337             17
 
-               IN TOTAL        47           62           203          222            1337             17
+               IN TOTAL        46           60           203          220            1337             17
 
 Number of nuclides     : 1
 Number of blocks       : 18
