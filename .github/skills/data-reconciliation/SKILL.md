@@ -33,6 +33,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 
 ### Special Handling
 - `[ ]` [describe non-standard cases]
+- `[ ]` "From the Adopted Levels" pattern: global cG/cL provenance comments referencing adopted dataset — extract data into target record fields according to the provenance comment
 
 
 ## Recommended Operating Procedure:
