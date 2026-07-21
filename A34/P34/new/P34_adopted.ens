@@ -3,7 +3,7 @@
  34P   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34P 2 H CUT=28-May-2012$                                                       
  34P  dG $Transition strength is calculated by Java-RULER (version 14-Jun-2026) 
- 34P  DG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
+ 34P  dG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  34P  dL E$Least-squares fitting is done by GLSC (version 12-Jun-2026)          
  34P   Q 5383.0    8 6282.7  14 11323.311-11109.521    2021WA16                 
  34P  cQ $S(2n)=16386.5 {I8}, S(2p)=28027 {I7} (2021Wa16)                       
@@ -173,14 +173,15 @@
  34P   L 2628      12                                                           
  34P X L XREF=K                                                                 
  34P   L 2675.0    7  (1+,2-,3+)                                                
- 34P X L XREF=K                                                                 
+ 34P X L XREF=KP(2682?)                                                         
  34P  cL J$2246|g to 2+, 429.07 level. 1067|g to 1+, 1607.73 level. Possible    
  34P 2cL unnatural parity from analyzing powers in {+36}S(pol d,|a), (pol       
  34P 3cL d,|a|g).                                                               
  34P   G 1067         46     18                                                 
  34P  cG E,RI$from {+36}S(pol d,|a),(pol d,|a|g).                               
  34P   G 2246         100    26                                                 
- 34P  cG E,RI$from {+36}S(pol d,|a),(pol d,|a|g).                               
+ 34P  cG E,RI$from {+36}S(pol d,|a),(pol d,|a|g). Other: questionable 2253 {I1} 
+ 34P 2cG with 100 {I10} and 2682 {I1} iwth 79 {I10} from 208PB(36S,34PG).       
  34P   L 3201      16                                                           
  34P X L XREF=K                                                                 
  34P   L 3352.5    7  5(-)             0.28 PS   +10-8                          
@@ -441,4 +442,4 @@
  34P 2cL DSAM.                                                                  
  34P   G 1683      1  100    6                                                  
  34P   G 1726      1  49     6                                                  
-                                                                                
+
