@@ -2,6 +2,8 @@
  34P   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34P   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34P 2 H CUT=28-May-2012$                                                       
+ 34P  dG $Transition strength is calculated by Java-RULER (version 14-Jun-2026) 
+ 34P  DG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  34P  dL E$Least-squares fitting is done by GLSC (version 12-Jun-2026)          
  34P   Q 5383.0    8 6282.7  14 11323.311-11109.521    2021WA16                 
  34P  cQ $S(2n)=16386.5 {I8}, S(2p)=28027 {I7} (2021Wa16)                       
@@ -70,6 +72,7 @@
  34P 3cL in {+208}Pb({+36}S,{+34}P|g) from 2019Gr08 with DRDM. Other: |t<1.4 ps 
  34P 4cL in {+18}O({+18}O,pn|g) from 2009Be26 with DSAM.                        
  34P   G 429.07    13 100       M1(+E2)  -0.07   7                              
+ 34P S G  CC=0.000155 5$KC=0.000144 5$LC=1.07E-5 4$MC=8.16E-7 29                
  34P  cG E$from {+34}Si |b{+-} decay. Others: 429 {I1} from {+18}O({+18}O,pn|g) 
  34P 2cG (2009Be26), 429.1 {I4} from ({+18}O,pn|g) E=24 MeV, 429.4 {I10} from   
  34P 3cG ({+18}O,pn|g) E=34 MeV, 429 {I1} from ({+36}S,{+34}P|g), and 422 {I7}  
@@ -77,6 +80,7 @@
  34P  cG M,MR$from |g|g(|q)(DCO) and |g|g(|q)(POL) in {+18}O({+18}O,pn|g) E=34  
  34P 2cG MeV (2009Ch43). Other: D(+Q) with |d=+0.11 {I+13-12} from |g(|q) in    
  34P 3cG {+18}O({+18}O,pn|g) E=24 MeV.                                          
+ 34P B G BM1W=0.25 +12-6                                                        
  34P   L 1607.73   19 1+               0.76 PS   +28-21                         
  34P X L XREF=ABCDEFGIJKLPQ                                                     
  34P  cL J$spin=1 from |a|g(|q) in {+36}S(pol d,|a),(pol d,|a|g) and from |g(|q)
@@ -86,6 +90,8 @@
  34P 2cL {+18}O({+18}O,pn|g) from 2009Be26 with DSAM and 0.75 ps {I+65-20} in   
  34P 3cL {+18}O({+18}O,pn|g) E=24 MeV from 2012Be11 with DSAM.                  
  34P   G 1178.62   16 100    5  (M1+E2)  -0.93   26                             
+ 34P S G  CC=2.87E-5 14$KC=2.16E-5 10$LC=1.61E-6 7$MC=1.22E-7 6                 
+ 34P S G  IPC=5.33E-6 35                                                        
  34P  cG E$weighted average of 1178.52 {I16} from {+34}Si |b{+-} decay, 1179    
  34P 2cG {I1} from {+18}O({+18}O,pn|g) (2009Be26), 1179.1 {I4} from             
  34P 3cG {+18}O({+18}O,pn|g) E=24 MeV, 1179.8 {I10} from {+18}O({+18}O,pn|g)    
@@ -98,7 +104,10 @@
  34P  cG M,MR$D+Q from |a|g(|q) in {+36}S(pol d,|a|g). |D|p=no from level       
  34P 2cG scheme. Other: D from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV and       
  34P 3cG {+18}O({+18}O,pn|g) E=34 MeV.                                          
+ 34P B G BM1W=0.0060 +30-20 $BE2W=15 +7-6                                       
  34P   G 1607.5    5  57     5  (M1+E2)  +0.13   6                              
+ 34P S G  CC=0.0001096 17$KC=1.091E-5 16$LC=8.12E-7 12$MC=6.17E-8 9             
+ 34P S G  IPC=9.78E-5 15                                                        
  34P  cG E$weighted average of 1607.6 {I5} from {+34}Si |b{+-} decay, 1607 {I1} 
  34P 2cG from {+18}O({+18}O,pn|g) (2009Be26), 1608 {I1} from {+18}O({+18}O,pn|g)
  34P 3cG E=24 MeV, and 1607 {I1} from ({+36}S,{+34}P|g)                         
@@ -107,6 +116,7 @@
  34P 3cG ({+36}S,{+34}P|g).                                                     
  34P  cG M,MR$D+Q from |a|g(|q) in {+36}S(pol d,|a|g). |D|p=no from level       
  34P 2cG scheme.                                                                
+ 34P B G BM1W=0.0025 +10-7 $BE2W=0.064 +78-45                                   
  34P   L 2228.53   34 2-               2 PS      GT                             
  34P X L XREF=CI(2225)KQ(2235?)                                                 
  34P  cL J$unnatural parity from analyzing powers in {+36}S(pol d,|a), (pol     
@@ -114,11 +124,16 @@
  34P  cL T$lifetime |t>3 ps in {+18}O({+18}O,pn|g) E=24 MeV from 2012Be11 with  
  34P 2cL DSAM.                                                                  
  34P   G 620.6     4  68     14 (E1(+M2))+0.07   16                             
+ 34P S G  CC=5.0E-5 7$KC=4.6E-5 6$LC=3.4E-6 5$MC=2.59E-7 35                     
  34P  cG E$other: 627 {I9} from Coulomb excitation                              
  34P  cG M,MR$D(+Q) from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. |D|p=yes from  
  34P 2cG level scheme.                                                          
  34P   G 1799.7    6  100    16 [E1]                                            
+ 34P S G  CC=0.000504 7$KC=5.94E-6 8$LC=4.42E-7 6$MC=3.36E-8 5                  
+ 34P S G  IPC=0.000498 7                                                        
  34P   G 2229      1  59     14 [E1]                                            
+ 34P S G  CC=0.000803 11$KC=4.36E-6 6$LC=3.24E-7 5$MC=2.464E-8 35               
+ 34P S G  IPC=0.000799 11                                                       
  34P   L 2305.1    5  4-               2.0 NS    1                              
  34P X L XREF=BCDEFGI(2309*)J(2287)KLMNOP                                       
  34P  cL J$spin=3,4 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. 1875.9|g,      
@@ -128,6 +143,8 @@
  34P 2cL T{-1/2} < 2.5 ns in {+198}Pt({+37}Cl,X|g) from 2002AsZY with           
  34P 3cL fragment-|g(t).                                                        
  34P   G 1875.9    6  100       M2+E3    -0.65   38                             
+ 34P S G  CC=0.000124 8$KC=1.43E-5 4$LC=1.067E-6 29$MC=8.11E-8 22               
+ 34P S G  IPC=0.000108 7                                                        
  34P  cG E$weighted average of 1876 {I2} from {+18}O({+18}O,pn|g) (2009Be26),   
  34P 2cG 1875.8 {I6} from ({+18}O,pn|g) E=24 MeV, 1876.1 {I10} from             
  34P 3cG ({+18}O,pn|g) E=34 MeV, and 1876 {I1} from ({+36}S,{+34}P|g)           
@@ -135,6 +152,7 @@
  34P 2cG (2009Ch43). M3 ruled out by RUL. Others: Q(+O) with |d=0.00 {I12} from 
  34P 3cG |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. Q, |DJ=2 from |g|g(|q)(DCO) in 
  34P 4cG {+115}In({+34}S,X|g) (2006Kr07). Q from |g anisotropy in               
+ 34P B G BM2W=0.045 14 $BE3W=32 24                                              
  34P   L 2320.5    5  3(-)             6.9 PS    GT                             
  34P X L XREF=BCDEFGI(2309*)LNP                                                 
  34P  cL J$spin=3 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. 3- from shell    
@@ -142,6 +160,8 @@
  34P  cL T$lifetime |t>10 ps in {+18}O({+18}O,pn|g) E=24 MeV from 2012Be11 with 
  34P 2cL DSAM. Other: >3 ps in {+18}O({+18}O,pn|g) from 2009Be26 with DSAM.     
  34P   G 1891.4    7  100       (E1(+M2))+0.07   14                             
+ 34P S G  CC=0.000569 19$KC=5.56E-6 31$LC=4.13E-7 23$MC=3.14E-8 18              
+ 34P S G  IPC=0.000563 19                                                       
  34P  cG E$weighted average of 1891 {I2} from {+18}O({+18}O,pn|g) (2009Be26),   
  34P 2cG 1891.5 {I7} from ({+18}O,pn|g) E=24 MeV, 1891.6 {I10} from             
  34P 3cG ({+18}O,pn|g) E=34 MeV, and 1891 {I1} from ({+36}S,{+34}P|g)           
@@ -173,11 +193,13 @@
  34P 3cL {+18}O({+18}O,pn|g) E=24 MeV from 2012Be11 with DSAM.                  
  34P   G 1031.6    9  3.17   10                                                 
  34P   G 1047.1    8  100.0  5  (M1(+E2))+0.02   9                              
+ 34P S G  CC=2.53E-5 4$KC=2.339E-5 35$LC=1.742E-6 26$MC=1.323E-7 20             
  34P  cG E$weighted average of 1047 {I2} from {+18}O({+18}O,pn|g) (2009Be26),   
  34P 2cG 1047.3 {I8} from ({+18}O,pn|g) E=24 MeV, 1047.8 {I10} from             
  34P 3cG ({+18}O,pn|g) E=34 MeV, and 1046 {I1} from ({+36}S,{+34}P|g)           
  34P  cG M,MR$other: D, |DJ=1 from |g|g(|q)(DCO) in {+18}O({+18}O,pn|g) E=34 MeV
  34P 2cG (2009Ch43). |D|p=(no) from level scheme.                               
+ 34P B G BM1W=0.066 +27-18                                                      
  34P   L 3482      8                                                            
  34P X L XREF=K                                                                 
  34P   L 3752.4    7  (3,4)            0.26 PS   6                              
@@ -204,13 +226,19 @@
  34P 2cL {+18}O({+18}O,pn|g) from 2009Be26 with DSAM and 0.16 ps {I5} in        
  34P 3cL {+18}O({+18}O,pn|g) E=24 MeV from 2012Be11 with DSAM.                  
  34P   G 1631.5    11 4.2    21 [E2]                                            
+ 34P S G  CC=0.0001562 22$KC=1.240E-5 17$LC=9.23E-7 13$MC=7.01E-8 10            
+ 34P S G  IPC=0.0001428 21                                                      
+ 34P B G BE2W=2.6 +17-12                                                        
  34P   G 1646.0    4  100.0  21 (M1(+E2))-0.03   18                             
+ 34P S G  CC=0.0001216 24$KC=1.046E-5 16$LC=7.78E-7 12$MC=5.91E-8 9             
+ 34P S G  IPC=0.0001103 22                                                      
  34P  cG E$weighted average of 1645 {I2} from {+18}O({+18}O,pn|g) (2009Be26),   
  34P 2cG 1646.1 {I4} from ({+18}O,pn|g) E=24 MeV, 1646.2 {I10} from             
  34P 3cG ({+18}O,pn|g) E=34 MeV, and 1645 {I1} from ({+36}S,{+34}P|g)           
  34P  cG M,MR$D, |DJ=1 from |g|g(|q)(DCO) and possible magnetic character from  
  34P 2cG |g|g(|q)(POL) in {+18}O({+18}O,pn|g) E=34 MeV (2009Ch43). D(+Q) with   
  34P 3cG |d=-0.03 {I18} from |g(|q) in ({+18}O,pn|g) E=24 MeV.                  
+ 34P B G BM1W=0.040 +18-11                                                      
  34P   L 4301.8    10 (1+,2-,3+)                                                
  34P X L XREF=K                                                                 
  34P  cL J$2694|g to 1+, 1607.73 level. Possible unnatural parity from analyzing
@@ -226,6 +254,8 @@
  34P  cL T$lifetime |t<0.14 ps in {+18}O({+18}O,pn|g) E=24 MeV from 2012Be11    
  34P 2cL with DSAM.                                                             
  34P   G 2134         100       M1+E2                                           
+ 34P S G  CC=0.00035 4$KC=7.2E-6 4$LC=5.32E-7 27$MC=4.04E-8 20                  
+ 34P S G  IPC=0.00034 4                                                         
  34P  cG M$D+Q from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. M2 ruled out by RUL.
  34P   L 4570.7    21                                                           
  34P X L XREF=C                                                                 
@@ -241,6 +271,7 @@
  34P 2cL {+18}O({+18}O,pn|g) from 2009Be26 with DSAM and 0.44 ps {I7} in        
  34P 3cL {+18}O({+18}O,pn|g) E=24 MeV from 2012Be11 with DSAM.                  
  34P   G 678.8     4  68     5  M1+E2    +0.12   11                             
+ 34P S G  CC=5.95E-5 22$KC=5.50E-5 20$LC=4.10E-6 15$MC=3.12E-7 11               
  34P  cG E$weighted average of 679 {I2} from {+18}O({+18}O,pn|g) (2009Be26),    
  34P 2cG 678.7 {I4} from ({+18}O,pn|g) E=24 MeV, and 679.4 {I10} from           
  34P 3cG ({+18}O,pn|g) E=34 MeV                                                 
@@ -252,7 +283,10 @@
  34P 2cG |g|g(|q)(POL) in {+18}O({+18}O,pn|g) E=34 MeV (2009Ch43). D+Q with     
  34P 3cG |d=+0.12 {I11} from |g(|q) in ({+18}O,pn|g) E=24 MeV (2012Be11). M2    
  34P 4cG ruled out by RUL.                                                      
+ 34P B G BM1W=0.091 +17-15 $BE2W=11 +29-10                                      
  34P   G 2325.1    6  100    5  E2(+M3)  +0.02   +11-10                         
+ 34P S G  CC=0.000480 8$KC=6.46E-6 15$LC=4.80E-7 11$MC=3.65E-8 8                
+ 34P S G  IPC=0.000473 8                                                        
  34P  cG E$others: 2325 {I2} from {+18}O({+18}O,pn|g) (2009Be26) and 2325.1     
  34P 2cG {I10} from ({+18}O,pn|g) E=34 MeV                                      
  34P  cG RI$others: 100 {I50} from ({+18}O,pn|g) E=20 MeV, 100 {I25} from       
@@ -262,6 +296,7 @@
  34P 2cG |g|g(|q)(POL) in {+18}O({+18}O,pn|g) E=34 MeV (2009Ch43). M2 ruled out 
  34P 3cG by RUL. Q(+O) with |d=+0.02 {I+11-10} from |g(|q) in ({+18}O,pn|g) E=24
  34P 4cG MeV.                                                                   
+ 34P B G BE2W=2.4 +6-5                                                          
  34P   L 4710.1    16 (5,6)                                                     
  34P X L XREF=CN(?)                                                             
  34P  cL J$spin=4,5,6 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. 2018Lu08     
@@ -270,7 +305,7 @@
  34P   G 1356.9    23 33     11 D+Q                                             
  34P   G 2405.5    20 100    5                                                  
  34P   L 4729.6    30                                                           
- 34P X L XREF=CK                                                                
+ 34P X L XREF=CK(4725)                                                          
  34P   G 4300.2    30 100                                                       
  34P   L 5012.6    21                  0.07 PS   LT                             
  34P X L XREF=C                                                                 
@@ -325,6 +360,8 @@
  34P 2cL DSAM. Other: >3 ps in {+18}O({+18}O,pn|g) from 2009Be26 with DSAM.     
  34P   G 842.5     6  48     10 D(+Q)    +0.05   14                             
  34P   G 1607.7    5  100    13 (E1(+M2))+0.05   9                              
+ 34P S G  CC=0.000358 7$KC=7.09E-6 22$LC=5.27E-7 17$MC=4.01E-8 13               
+ 34P S G  IPC=0.000351 7                                                        
  34P  cG E$weighted average of 1607 {I2} from {+18}O({+18}O,pn|g) (2009Be26),   
  34P 2cG 1607.9 {I5} from ({+18}O,pn|g) E=24 MeV, and 1607.1 {I10} from         
  34P 3cG ({+18}O,pn|g) E=34 MeV                                                 
@@ -336,6 +373,8 @@
  34P 2cG |g|g(|q)(POL) in {+18}O({+18}O,pn|g) E=34 MeV (2009Ch43). D(+Q) with   
  34P 3cG |d=+0.05 {I9} from |g(|q) in ({+18}O,pn|g) E=24 MeV.                   
  34P   G 2884.2    7  90     13 M2(+E3)  +0.11   18                             
+ 34P S G  CC=0.000425 8$KC=6.19E-6 9$LC=4.60E-7 7$MC=3.50E-8 5                  
+ 34P S G  IPC=0.000418 8                                                        
  34P  cG E$weighted average of 2883 {I2} from {+18}O({+18}O,pn|g) (2009Be26),   
  34P 2cG 2884.3 {I7} from ({+18}O,pn|g) E=24 MeV, and 2884.3 {I10} from         
  34P 3cG ({+18}O,pn|g) E=34 MeV                                                 
@@ -347,6 +386,8 @@
  34P 3cG {+18}O({+18}O,pn|g) E=24 MeV. Q, |DJ=2 from |g|g(|q)(DCO) in           
  34P 4cG {+18}O({+18}O,pn|g) E=34 MeV (2009Ch43).                               
  34P   G 3931.7    10 12.5   75 [E3]                                            
+ 34P S G  CC=0.000870 12$KC=3.72E-6 5$LC=2.77E-7 4$MC=2.104E-8 29               
+ 34P S G  IPC=0.000866 12                                                       
  34P  cG E$from ({+18}O,pn|g) E=34 MeV. Other: 3932 {I3} from ({+18}O,pn|g) E=24
  34P 2cG MeV.                                                                   
  34P   L 6294.8    22                  0.07 PS   LT                             
@@ -364,6 +405,8 @@
  34P  cL T$lifetime |t<0.05 ps in {+18}O({+18}O,pn|g) E=24 MeV from 2012Be11    
  34P 2cL with DSAM.                                                             
  34P   G 2405.9    7  75     14 E2                                              
+ 34P S G  CC=0.000519 7$KC=6.09E-6 9$LC=4.53E-7 6$MC=3.44E-8 5                  
+ 34P S G  IPC=0.000513 7                                                        
  34P  cG M$Q from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. M2 ruled out by RUL.  
  34P   G 3004      2  100    14                                                 
  34P   L 6445.2    31                                                           
@@ -398,3 +441,4 @@
  34P 2cL DSAM.                                                                  
  34P   G 1683      1  100    6                                                  
  34P   G 1726      1  49     6                                                  
+                                                                                
