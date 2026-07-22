@@ -1,6 +1,7 @@
  34S     12C(24MG,34SG)                2020KE03,2021KE04         ENSDF    202609
  34S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34S  dL E$Least-squares fitting is done by GLSC (version 11-Nov-2025)          
+ 34S  c  {+12}C+{+24}Mg|){+36}Ar|)2p+{+34}S fusion evaporation.                 
  34S  c  2020Ke03,2021Ke04: a 95-MeV {+24}Mg beam was produced from the ATLAS   
  34S 2c  accelerator at ANL and bombarded a |?200-|mg/cm{+2} {+12}C target.     
  34S 3c  Prompt |g rays were detected using the GRETINA tracking array          
@@ -12,15 +13,13 @@
  34S 9c  model calculations. Calculated astrophysical {+33}Cl(p,|g){+34}Ar      
  34S Ac  reaction rate and discussed its implications for the identification of 
  34S Bc  nova presolar grains from sulfur isotopic abundances.                  
- 34S  cG E,RI,M$From 2020Ke03 and 2021Ke04. The authors state that dipole       
- 34S 2cG transitions, |DJ=1, have negative A{-2} values while quadrupole        
- 34S 3cG transitions,|DJ=2, have positive A{-2} values.                         
+ 34S  cG E$From Fig. 3 of 2020Ke03.                                             
+ 34S  cG M$From Fig. 3 of 2021Ke04. The authors state that dipole transitions,  
+ 34S 2cG |DJ=1, have negative A{-2} values while quadrupole transitions,|DJ=2,  
+ 34S 3cG have positive A{-2} values.                                            
  34S  cL E$From a least-squares fit to |g-ray energies                          
- 34S  cL J$As given in 2020Ke03 and 2021Ke04 based on known assignments of      
- 34S 2cL low-lying levels, comparison with mirror nucleus {+34}S, characteristic
- 34S 3cL |g-decay patterns, and |g(|q) analysis. When considered in the Adopted 
- 34S 4cL Levels, the firm assignments here are placed within parentheses if     
- 34S 5cL there are no other strong arguments to support these firm assignments. 
+ 34S  cL J$As given in 2020Ke03 and 2021Ke04 based on known assignments. The    
+ 34S 2cL main focus is to study the mirror nucleus {+34}Ar.                     
  34S  PN                                                                     5  
  34S   L 0.0          0+                                                        
  34S   L 2128         2+                                                        
@@ -36,10 +35,14 @@
  34S   L 4115         2+                                                        
  34S   G 4115                                                                   
  34S   L 4624         3-                                                        
- 34S   G 1320                                                                   
+ 34S   G 1320                   D                                               
+ 34S  cG M$|DJ=1, dipole.                                                       
+ 34S  cG $A{-2}=-0.23 {I3}, A{-4}=+0.07 {I4}                                    
  34S   G 2497                                                                   
  34S   L 4689         4+                                                        
- 34S   G 2561                                                                   
+ 34S   G 2561                   Q                                               
+ 34S  cG M$|DJ=2, quadrupole.                                                   
+ 34S  cG $A{-2}=+0.22 {I3}, A{-4}=-0.03 {I5}                                    
  34S   L 4877         3+                                                        
  34S   G 1573                                                                   
  34S   G 2749                                                                   
