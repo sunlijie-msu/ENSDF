@@ -1,17 +1,27 @@
- 34S     12C(24MG,2PG):XUNDL-3         2020KE03                  ENSDF    202609
+ 34S     12C(24MG,34SG)                2020KE03,2021KE04         ENSDF    202609
  34S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
- 34S  c  Compiled (unevaluated) dataset from 2020Ke03:                          
- 34S 2c  Phys Rev Lett 124, 252702 (2020)                                       
- 34S  c  Compiled by J. Chen (NSCL, MSU), September 28, 2020                    
- 34S  c  2020Ke03: E=95 MeV {+24}Mg beam was produced from the ATLAS accelerator
- 34S 2c  at ANL. Target was |?200 |mg/cm{+2} {+12}C. |g rays were detected with 
- 34S 3c  the GRETINA tracking array consisting of 12 modules; recoils were      
- 34S 4c  separated and identified by the Fragment Mass Analyzer (FMA) with a    
- 34S 5c  position-sensitive parallel-grid avalanche counter (PGAC) and an       
- 34S 6c  ionization chamber. Measured E|g, I|g, |g|g-coin, particle-|g-coin.    
- 34S 7c  Deduced levels, J, |p, proton-resonance energy. Discussed implications 
- 34S 8c  for astrophysical {+33}Cl(p,|g) reaction rate.                         
- 34S  c  All data are taken from the level scheme given in FIG.3 of 2020Ke03.   
+ 34S  dL E$Least-squares fitting is done by GLSC (version 11-Nov-2025)          
+ 34S  c  2020Ke03,2021Ke04: a 95-MeV {+24}Mg beam was produced from the ATLAS   
+ 34S 2c  accelerator at ANL and bombarded a |?200-|mg/cm{+2} {+12}C target.     
+ 34S 3c  Prompt |g rays were detected using the GRETINA tracking array          
+ 34S 4c  consisting of 12 modules. Fusion-evaporation residues were separated   
+ 34S 5c  and identified by the Fragment Mass Analyzer (FMA) with a focal-plane  
+ 34S 6c  position-sensitive parallel-grid avalanche counter (PGAC) and an       
+ 34S 7c  ionization chamber. Measured E|g, I|g, |g|g-coin, recoil-|g(|q).       
+ 34S 8c  Deduced levels, J, |p. Compared mirror nuclei {+34}S-{+34}Ar and shell 
+ 34S 9c  model calculations. Calculated astrophysical {+33}Cl(p,|g){+34}Ar      
+ 34S Ac  reaction rate and discussed its implications for the identification of 
+ 34S Bc  nova presolar grains from sulfur isotopic abundances.                  
+ 34S  cG E,RI,M$From 2020Ke03 and 2021Ke04. The authors state that dipole       
+ 34S 2cG transitions, |DJ=1, have negative A{-2} values while quadrupole        
+ 34S 3cG transitions,|DJ=2, have positive A{-2} values.                         
+ 34S  cL E$From a least-squares fit to |g-ray energies                          
+ 34S  cL J$As given in 2020Ke03 and 2021Ke04 based on known assignments of      
+ 34S 2cL low-lying levels, comparison with mirror nucleus {+34}S, characteristic
+ 34S 3cL |g-decay patterns, and |g(|q) analysis. When considered in the Adopted 
+ 34S 4cL Levels, the firm assignments here are placed within parentheses if     
+ 34S 5cL there are no other strong arguments to support these firm assignments. 
+ 34S  PN                                                                     5  
  34S   L 0.0          0+                                                        
  34S   L 2128         2+                                                        
  34S   G 2128                                                                   
@@ -43,4 +53,4 @@
  34S   G 3195                                                                   
  34S   L 5381         1+                                                        
  34S   G 2077                                                                   
-                                                                                
+
