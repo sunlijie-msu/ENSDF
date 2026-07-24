@@ -1,22 +1,28 @@
- 34S     3H(32S,PG)                    1975HE25                  ENSDF    202609
+ 34S     3H(32S,PG)                    1975HE25,1977HE12         ENSDF    202609
  34S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34S   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34S 2 H CUT=28-May-2012$                                                       
- 34S  c  1975He25: 
- 
- {+32}S(t,p|g) inverse kinematics E({+32}S)=38 MeV, target of 
- 34S 2c  TiT on thick backing. Used Ge(Li) for |g rays at 0|', and annular Si   
- 34S 2c  counter at 180|' for protons (the angles are relative to the beam      
- 34S 2c  direction). Measured lifetimes by DSAM                                 
- 34S  c  1977He12: reinterpret results of 1975He25 with different stopping      
- 34S 2c  power data                                                             
+ 34S  c  1975He25: {+32}S(t,p|g)34S in inverse kinematics. A 38-MeV 32S beam was
+ 34S 2c  provided from the Utrecht EN tandem accelerator. Targets were 200      
+ 34S 3c  ug/cm2 TiD and TiT on a 0.3-mm thick Al or Cu backing as well as       
+ 34S 4c  slowing-down materials. Tritium targets have a 45 ug/cm2 of Al or Au as
+ 34S 5c  a protective layer. Protons were detected uisng an annular Si counter  
+ 34S 6c  at 165|'-172|'. |g rays were detected uisng a Ge(Li) detector at 0|' in
+ 34S 7c  coincidence with protons. Measured E|p, E|g, and p|g-coin. Deduced     
+ 34S 8c  levels, and lifetimes from DSAM lineshape analysis.                    
+ 34S  c  1977He12: a series of lifetime measurements using (d,p) and (t,p)      
+ 34S 2c  reactions in inverse kinematics at Utrecht, Netherlands.               
+ 34S  cG E$From the Adopted Gammas.                                             
+ 34S  cL E,J$From the Adopted Levels.                                           
  34S   L 0.0                                                                    
- 34S   L 2127                          340 FS    21                             
- 34S  cL T$mean lifetime |t in fs: 490 {I30} (1977He12; initial result: 470     
- 34S 2cL {I20} (1975He25))                                                      
+ 34S   L 2127                          0.340 PS  21                             
+ 34S  cL T$lifetime |t=490 fs {I30} from 1977He12 reanalysis of 1975He25 data   
+ 34S 2cL using 4He-scaled stopping power data of Northcliffe and Schilling.     
+ 34S 3cL |t=470 {I20} from 1975He25 initial DSAM lineshape analysis.            
  34S   G 2127.3                                                                 
- 34S   L 3303                          133 FS    9                              
- 34S  cL T$mean lifetime |t in fs: 192 {I13} (1977He12; initial result: 196     
- 34S 2cL {I13} (1975He25))                                                      
+ 34S   L 3303                          0.133 PS  9                              
+ 34S  cL T$lifetime |t=192 fs {I13} from 1977He12 reanalysis of 1975He25 data   
+ 34S 2cL using 4He-scaled stopping power data of Northcliffe and Schilling.     
+ 34S 3cL |t=196 {I13} from 1975He25 initial DSAM lineshape analysis.            
  34S   G 1176.1                                                                 
-                                                                                
+
