@@ -1,8 +1,7 @@
- 34S     33S(N,G),(N,N):RESONANCES     2006MUZX                  ENSDF    202609
+ 34S     33S(N,G),(N,N):RESONANCES     2018MUZY                  ENSDF    202609
  34S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34S   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34S 2 H CUT=28-May-2012$                                                       
- 34S  c  Includes {+33}S(n,|a) resonances                                       
  34S  c  J|p=3/2+ for {+33}S ground state (2025Ch07).                           
  34S  c  1987Wa20: 33S(n,|a) with E{-n}=0.010-1 MeV at the Geel Electron Linear 
  34S 2c  Accelerator (GELINA). |a particles were detected using a large surface 
@@ -22,14 +21,18 @@
  34S  c  2018MuZY: Atlas of Neutron Resonances. Evaluation of neutron resonance 
  34S 2c  energies, spins, width parameters, and resonance strengths for nuclei  
  34S 3c  of Z=1-60.                                                             
- 34S  cL E$Values deduced by the evaluators. E(level)=E(n)(c.m.)+S(n)({+34}S);  
- 34S 2cL E(n)(c.m.)= M({+33}S)/(M({+33}S)+M(n))|*\ E(n)(lab), where M({+33}S)   
- 34S 3cL and M(n) are the atomic masses, and S(n)=11417.12 {I6}, all from       
- 34S 4cL 2011AuZZ                                                               
- 34S  cL S$ g=statistical weight factor=[(2J+1)]/[(2s+1)(2I+1)], s=1/2 for      
+ 34S  cL $J|p, L, and resonance parameters E{-n}, g|G{-n}, |G{-|g}, and         
+ 34S 2cL g|G{-n}|G{-|g}/|G are all from 2018MuZY. g|G{-n}=(2J+1)|G{-n}/2.       
+ 34S  cL E$From E{-c.m.}+S(n)({+34}S) where S(n)({+34}S)=11417.15 {I4}          
+ 34S 2cL (2021Wa16) and E{-c.m.}=E{-n}(lab)|*m({+33}S)/[m{-n}+m({+33}S)]        
+ 34S  cL T$LABEL=|G                                                             
+ 34S  cL S$LABEL=E{-n}(lab) (keV)                                               
+ 34S  cL S$g=statistical weight factor=[(2J+1)]/[(2s+1)(2I+1)], s=1/2 for       
  34S 2cL neutrons. For {+33}S, I=3/2, thus g=(2J+1)/8                           
  34S  cL E(X)$ Fictitious level with a negative E(n) value                      
- 34S   L 11411.31     2+                               0                    X   
+ 34S   L 11411.31     2+                               0                       ?
+ 34S  cL E$fictitious level from analysis of resonance spectrum below the S(n)  
+ 34S 2cL threshold.                                                             
  34S 2 L WIDTHG=1.5 EV $                                                        
  34S  cL $ E(n)(lab)=-5.987 keV                                                 
  34S   L 11430.17     2+               0.116 KEV 20    0                        
