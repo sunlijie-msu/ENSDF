@@ -405,14 +405,13 @@ Format: Plain integers only (NO `{I}` notation, NO parentheses).
 
 For intensities and other values in scientific notation:
 - **Standard format:** `(5.6±1.0)×10^-4` becomes `5.6E-4 10` in ENSDF.
-- **Value field:** Use `E-n` notation (e.g., `5.6E-4`).
+- **Value field:** Use `E-n` notation (e.g., `5.6E-4`) and ``En` for positive exponents (e.g., `1.1E6`).
 - **Uncertainty field:** Use digits representing the last significant digit (e.g., `10` for ±1.0 if the value has one decimal place).
 - **Examples:**
     - `(1.1±0.3)×10^-6` → Value: `1.1E-6`, Uncertainty: `3`.
     - `(76±20)×10^-6` → Value: `76E-6`, Uncertainty: `20`.
     - `(3.3±1.2)×10^-4` → Value: `3.3E-4`, Uncertainty: `12`.
-- **NEVER use:** `×10^-n` notation directly in ENSDF records.
-- **ALWAYS use:** `E-n` notation for the value with a separate uncertainty field.
+- **NEVER use:** `×10^-n` notation directly in ENSDF data records.
 
 #### GT and LT Markers in Uncertainty Fields
 
