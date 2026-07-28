@@ -2,6 +2,8 @@
  34CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34CL  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34CL2 H CUT=28-May-2012$                                                       
+ 34CL dE EAV,LOGFT$From BetaShape v2.4 (Jun-2024) 2023Mo21.                     
+ 34CL DG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  34CL dL E$Least-squares fitting is done by GLSC (version 12-Jun-2026)          
  34CL c  2020Ia01: a 30-MeV/nucleon {+35}Cl beam was produced from the K500     
  34CL2c  cyclotron at Texas A&M University and impinged on a                    
@@ -52,68 +54,100 @@
  34CL5cN pile-up, summing, dead time, random coincidence, and background.       
  34CL PN                                                                     4  
  34CL  L 0            0+               1.5266 S  5                              
- 34CL  E             94.42   8 0.0644  7 3.4854  4              94.48     8     
- 34CLS E EAV=2330.537 30$CK=6.14808E-4 22$CL=5.86839E-5 21$CM+=7.55783E-6 27    
+ 34CL  E             94.41   8 0.06647 6 3.4931  6              94.48     8     
+ 34CLS E EAV=2319.731 29$CK=6.362E-4 70$CL=5.862E-5 69$CM=8.67E-6 14            
  34CL  L 146.36       3+               31.99 M   3                           M  
  34CL dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
  34CL cL E$from the Adopted Levels.                                             
  34CL  L 460.8     10 1+               5.1 PS    5                              
- 34CL  E             0.88    4 8.0E-4  4 5.32    2              0.88      4     
- 34CLS E EAV=2105.394 29$CK=8.17172E-4 32$CL=7.80052E-5 30$CM+=1.004627E-5 39   
+ 34CL  E             0.88    4 8.2E-4  4 5.33    2              0.88      4     
+ 34CLS E EAV=2096.25 48$CK=8.420E-4 98$CL=7.758E-5 96$CM=1.147E-5 19            
  34CL cE TI$original value=0.88 {I+2-4} (2020Ia02)                              
- 34CL  G 315          0.18   LT [E2]                                           ?
+ 34CL  G 315          0.18   LT [E2]                   2.14E-3 3               ?
  34CL2 G %IG LT 0.00451                                                         
+ 34CLS G  KC=0.001967 28$LC=0.0001578 22$MC=1.436E-5 20                         
  34CL  G 460.8     10 35.4   9  M1                                              
+ 34CLS G  CC=0.0001974 29$KC=0.0001816 27$LC=1.451E-5 21$MC=1.326E-6 20         
  34CL2 G %IG=0.878 25                                                           
  34CL  L 665.8     10 1+               9.2 PS    7                              
- 34CL  E             2.52    4 0.00261 5 4.78    1              2.52      4     
- 34CLS E EAV=2005.732 29$CK=9.35897E-4 38$CL=8.93414E-5 37$CM+=1.150629E-5 47   
+ 34CL  E             2.52    4 0.00268 4 4.78    1              2.52      4     
+ 34CLS E EAV=1997.06 48$CK=9.63E-4 11$CL=8.87E-5 11$CM=1.312E-5 22              
  34CL cE TI$original value=2.517 {I+38-30} (2020Ia02)                           
- 34CL  G 205          1.0    LT [M1,E2]                                        ?
+ 34CL  G 205          1.0    LT [M1,E2]                0.006  5                ?
  34CL2 G %IG LT 0.0251                                                          
+ 34CLS G  KC=0.006 4$LC=4.5E-4 36$MC=4.1E-5 32                                  
  34CL  G 519          1.46   19 [E2]                                            
+ 34CLS G  CC=0.000376 5$KC=0.000346 5$LC=2.76E-5 4$MC=2.522E-6 35               
  34CL2 G %IG=0.036 5                                                            
  34CL  G 665.8     10 100       M1                                              
+ 34CLS G  CC=9.09E-5 13$KC=8.36E-5 12$LC=6.66E-6 10$MC=6.09E-7 9                
  34CL2 G %IG=2.5                                                                
  34CL  L 1230         2+               13.7 PS   10                             
  34CL  L 1887         2+               0.76 PS   28                             
  34CL  L 2158         2+               33.3 FS   35                             
  34CL  L 2181         3+               0.35 PS   7                              
  34CL  L 2579.5    14 1+               15 FS     9                              
- 34CL  E             0.85    3 0.0049  2 4.12    2              0.85      3     
- 34CLS E EAV=1085.315 28$CK=0.00520319 38$CL=4.96959E-4 36$CM+=6.40067E-5 47    
+ 34CL  E             0.85    3 0.0050  2 4.13    2              0.85      3     
+ 34CLS E EAV=1082.73 66$CK=0.005270 66$CL=4.858E-4 65$CM=7.19E-5 13             
  34CL cE TI$original value=0.85 {I+3-2} (2020Ia02)                              
  34CL  G 693          0.26   LT [M1,E2]                                        ?
+ 34CLS G  CC=1.19E-4 35$KC=1.09E-4 32$LC=8.7E-6 26$MC=8.0E-7 24                 
  34CL2 G %IG LT 0.00652                                                         
  34CL  G 1350         0.41   LT [M1,E2]                                        ?
  34CL2 G %IG LT 0.0103                                                          
+ 34CLS G  CC=6.1E-5 9$KC=2.39E-5 24$LC=1.90E-6 20$MC=1.74E-7 18                 
+ 34CLS G  IPC=3.5E-5 6                                                          
  34CL  G 1915         0.32   LT [M1,E2]                                        ?
  34CL2 G %IG LT 0.00803                                                         
+ 34CLS G  CC=0.000256 31$KC=1.25E-5 7$LC=9.9E-7 6$MC=9.1E-8 5                   
+ 34CLS G  IPC=0.000242 31                                                       
  34CL  G 2119         0.35   LT [M1,E2]                                        ?
  34CL2 G %IG LT 0.00878                                                         
+ 34CLS G  CC=0.00035 4$KC=1.04E-5 5$LC=8.3E-7 4$MC=7.6E-8 4                     
+ 34CLS G  IPC=0.00033 4                                                         
  34CL  G 2434         0.26   LT [E2]                                           ?
  34CL2 G %IG LT 0.00652                                                         
+ 34CLS G  CC=0.000535 7$KC=8.58E-6 12$LC=6.82E-7 10$MC=6.24E-8 9                
+ 34CLS G  IPC=0.000526 7                                                        
  34CL  G 2579.4    14 34.1   6  (M1)                                            
  34CL2 G %IG=0.846 18                                                           
+ 34CLS G  CC=0.000499 7$KC=7.31E-6 10$LC=5.80E-7 8$MC=5.31E-8 7                 
+ 34CLS G  IPC=0.000491 7                                                        
  34CL  L 3129.0    10 1+               3 FS      LT                             
- 34CL  E             1.26    4 0.0157  5 3.47    2              1.28      4     
- 34CLS E EAV=828.517 28$CK=0.0111028 11$CL=0.00106072 10$CM+=1.36621E-4 13      
+ 34CL  E             1.26    4 0.0159  5 3.48    2              1.28      4     
+ 34CLS E EAV=826.75 46$CK=0.01122 14$CL=0.001035 14$CM=1.530E-4 26              
  34CL cE TI$original value=0.88 {I+4-2} (2020Ia02)                              
  34CL  G 549          0.45   LT [M1,E2]                                        ?
+ 34CLS G  CC=2.2E-4 9$KC=2.1E-4 8$LC=1.7E-5 7$MC=1.5E-6 6                       
  34CL2 G %IG LT 0.0113                                                          
  34CL  G 948          0.33   LT [E2]                                           ?
+ 34CLS G  CC=6.55E-5 9$KC=6.03E-5 8$LC=4.81E-6 7$MC=4.39E-7 6                   
  34CL2 G %IG LT 0.00828                                                         
  34CL  G 971          0.34   LT [M1,E2]                                        ?
+ 34CLS G  CC=5.2E-5 9$KC=4.8E-5 9$LC=3.8E-6 7$MC=3.5E-7 6                       
  34CL2 G %IG LT 0.00853                                                         
  34CL  G 1242         0.56   LT [M1,E2]                                        ?
  34CL2 G %IG LT 0.0140                                                          
+ 34CLS G  CC=4.5E-5 6$KC=2.83E-5 33$LC=2.26E-6 27$MC=2.06E-7 24                 
+ 34CLS G  IPC=1.40E-5 27                                                        
  34CL  G 1899         0.55   LT [M1,E2]                                        ?
  34CL2 G %IG LT 0.0138                                                          
+ 34CLS G  CC=0.000249 31$KC=1.26E-5 7$LC=1.00E-6 6$MC=9.2E-8 5                  
+ 34CLS G  IPC=0.000235 30                                                       
  34CL  G 2464         0.27   LT [M1,E2]                                        ?
  34CL2 G %IG LT 0.00677                                                         
+ 34CLS G  CC=0.00050 5$KC=8.13E-6 30$LC=6.46E-7 24$MC=5.91E-8 22                
+ 34CLS G  IPC=0.00049 5                                                         
  34CL  G 2668         0.29   LT [M1,E2]                                        ?
  34CL2 G %IG LT 0.00727                                                         
+ 34CLS G  CC=0.00059 5$KC=7.15E-6 24$LC=5.68E-7 19$MC=5.19E-8 17                
+ 34CLS G  IPC=0.00058 5                                                         
  34CL  G 2983         0.22   LT [E2]                                            
  34CL2 G %IG LT 0.00552                                                         
+ 34CLS G  CC=0.000784 11$KC=6.15E-6 9$LC=4.89E-7 7$MC=4.47E-8 6                 
+ 34CLS G  IPC=0.000777 11                                                       
  34CL  G 3128.8    10 51.5   8  [M1]                                            
  34CL2 G %IG=1.277 25                                                           
+ 34CLS G  CC=0.000720 10$KC=5.45E-6 8$LC=4.33E-7 6$MC=3.96E-8 6                 
+ 34CLS G  IPC=0.000714 10                                                       
+                                                                                
