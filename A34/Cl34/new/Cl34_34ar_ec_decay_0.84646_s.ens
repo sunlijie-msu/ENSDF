@@ -3,7 +3,7 @@
  34CL  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34CL2 H CUT=28-May-2012$                                                       
  34CL dE EAV,LOGFT$From BetaShape v2.4 (Jun-2024) 2023Mo21.                     
- 34CL DG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
+ 34CL dG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  34CL dL E$Least-squares fitting is done by GLSC (version 12-Jun-2026)          
  34CL c  2020Ia01: a 30-MeV/nucleon {+35}Cl beam was produced from the K500     
  34CL2c  cyclotron at Texas A&M University and impinged on a                    
@@ -38,7 +38,8 @@
  34CL cG E$No E|g with uncertainty is given in this dataset. If a |g transition 
  34CL2cG is to the g.s. and also the strongest |g branch, the E|g is deduced    
  34CL3cG from the level energy.                                                 
- 34CL cG RI$From 2020Ia02.                                                      
+ 34CL cG RI$From 2020Ia02, which takes into account their own data, 1974Ha26,   
+ 34CL2cG 1990En08, and an unpublished (p,|g) I|g data.                          
  34CL cG M,MR$From the Adopted Gammas.                                          
  34CL cL E$From 1974Ha26 based on measured E|g, unless otherwise noted.         
  34CL cL J,T$From the Adopted Levels.                                           
@@ -66,9 +67,11 @@
  34CL  G 315          0.18   LT [E2]                   2.14E-3 3               ?
  34CL2 G %IG LT 0.00451                                                         
  34CLS G  KC=0.001967 28$LC=0.0001578 22$MC=1.436E-5 20                         
+ 34CL cG RI$<0.86 (2020Ia02).                                                   
  34CL  G 460.8     10 35.4   9  M1                                              
  34CLS G  CC=0.0001974 29$KC=0.0001816 27$LC=1.451E-5 21$MC=1.326E-6 20         
  34CL2 G %IG=0.878 25                                                           
+ 34CL cG RI$35.3 {I9} (2020Ia02), 36.5 {I36} (1974Ha26).                        
  34CL  L 665.8     10 1+               9.2 PS    7                              
  34CL  E             2.52    4 0.00268 4 4.78    1              2.52      4     
  34CLS E EAV=1997.06 48$CK=9.63E-4 11$CL=8.87E-5 11$CM=1.312E-5 22              
@@ -76,9 +79,11 @@
  34CL  G 205          1.0    LT [M1,E2]                0.006  5                ?
  34CL2 G %IG LT 0.0251                                                          
  34CLS G  KC=0.006 4$LC=4.5E-4 36$MC=4.1E-5 32                                  
+ 34CL cG RI$<1.3 (2020Ia02).                                                    
  34CL  G 519          1.46   19 [E2]                                            
  34CLS G  CC=0.000376 5$KC=0.000346 5$LC=2.76E-5 4$MC=2.522E-6 35               
  34CL2 G %IG=0.036 5                                                            
+ 34CL cG RI$2.9 {I10} (2020Ia02).                                               
  34CL  G 665.8     10 100       M1                                              
  34CLS G  CC=9.09E-5 13$KC=8.36E-5 12$LC=6.66E-6 10$MC=6.09E-7 9                
  34CL2 G %IG=2.5                                                                
@@ -93,10 +98,11 @@
  34CL  G 693          0.26   LT [M1,E2]                                        ?
  34CLS G  CC=1.19E-4 35$KC=1.09E-4 32$LC=8.7E-6 26$MC=8.0E-7 24                 
  34CL2 G %IG LT 0.00652                                                         
- 34CL  G 1350         0.41   LT [M1,E2]                                        ?
+ 34CL  G 1350         0.34   LT [M1,E2]                                        ?
  34CL2 G %IG LT 0.0103                                                          
  34CLS G  CC=6.1E-5 9$KC=2.39E-5 24$LC=1.90E-6 20$MC=1.74E-7 18                 
  34CLS G  IPC=3.5E-5 6                                                          
+ 34CL cG RI$<0.41 (2020Ia02).                                                   
  34CL  G 1915         0.32   LT [M1,E2]                                        ?
  34CL2 G %IG LT 0.00803                                                         
  34CLS G  CC=0.000256 31$KC=1.25E-5 7$LC=9.9E-7 6$MC=9.1E-8 5                   
@@ -113,6 +119,7 @@
  34CL2 G %IG=0.846 18                                                           
  34CLS G  CC=0.000499 7$KC=7.31E-6 10$LC=5.80E-7 8$MC=5.31E-8 7                 
  34CLS G  IPC=0.000491 7                                                        
+ 34CL cG RI$33.8 {I8} (2020Ia02), 34.5 {I10} (1974Ha26).                        
  34CL  L 3129.0    10 1+               3 FS      LT                             
  34CL  E             1.26    4 0.0159  5 3.48    2              1.28      4     
  34CLS E EAV=826.75 46$CK=0.01122 14$CL=0.001035 14$CM=1.530E-4 26              
@@ -150,4 +157,5 @@
  34CL2 G %IG=1.277 25                                                           
  34CLS G  CC=0.000720 10$KC=5.45E-6 8$LC=4.33E-7 6$MC=3.96E-8 6                 
  34CLS G  IPC=0.000714 10                                                       
-                                                                                
+ 34CL cG RI$51.1 {I10} (2020Ia02), 52.1 {I12} (1974Ha26).                       
+
