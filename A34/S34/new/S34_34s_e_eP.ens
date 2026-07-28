@@ -2,22 +2,26 @@
  34S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34S   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34S 2 H CUT=28-May-2012$                                                       
- 34S  c  1985Wo06: {+34}S(e,e') E=120, 240, 320 MeV. Used enriched target and   
- 34S 2c  measured |s(|q,E(e')), E2 strengths for two groups                     
+ 34S  c  1985Wo06: {+34}S(e,e') with 120, 240, 320-MeV at the Mainz             
+ 34S 2c  electron-scattering setup. The target was 80-120-mg/cm2 enriched       
+ 34S 3c  {+34}S. Measured |s(E(e'),|q). Deduced form factors, transition charge 
+ 34S 4c  densities, transition radii, and transition strengths.                 
  34S  c  1994Pe08: {+34}S(e,e') E=28-64 MeV. Used 95%-enriched {+34}S, CaS      
  34S 2c  target and measured |s(|q,E(e')), M1 and M2 strengths for 22 groups    
- 34S  cL $All data lower than 3304 level inclusively are from 1985Wo06;         
- 34S 2cL above this level all data are from 1994Pe08                            
+ 34S  cL $All data lower than 3304 level inclusively are from 1985Wo06; above   
+ 34S 2cL this level all data are from 1994Pe08                                  
  34S  PN                                                                     6  
  34S   L 0.0          0+                                                        
  34S   L 2127.564  13 2+               337 FS    12                             
- 34S 2 L BE2=0.01928 66                                                         
- 34S  cL E,J$From Adopted Levels                                                
- 34S  cL T$from B(E2)|^                                                         
+ 34S  cL $B(E2)|^=0.01928 {I66}. Transition radius R{-tr}=4.54 fs {I7}. Proton  
+ 34S 2cL transition matrix elements M{-p}=13.88 fm{+2} {I24}.                   
+ 34S  cL E,J$From Adopted Levels.                                               
+ 34S  cL T$from B(E2)|^ in 1985Wo06.                                            
  34S   G 2127.499  20 100       E2                                              
  34S  cG E,RI,M$from Adopted Gammas                                             
  34S   L 3304.212  13 2+               150 FS    17                             
- 34S 2 L BE2=0.00256 29                                                         
+ 34S  cL $B(E2)|^=0.00256 {I29}. Transition radius R{-tr}=4.71 fs {I19}. Proton 
+ 34S 2cL transition matrix elements M{-p}=5.05 fm{+2} {I29}.                    
  34S  cL E,J$from Adopted Levels                                                
  34S  cL T$from B(E2)|^                                                         
  34S   G 1176.650  20 100.0  9                                                  
@@ -68,4 +72,4 @@
  34S 2 L BM1=0.27 5                                                             
  34S   L 14800     10  2-                                                       
  34S 2 L BM2=90 7                                                               
-                                                                                
+
