@@ -66,7 +66,7 @@
  34CL  L 460.8     10 1+               5.1 PS    5                              
  34CL  E             0.88    4 8.2E-4  4 5.33    2              0.88      4     
  34CLS E EAV=2096.25 48$CK=8.420E-4 98$CL=7.758E-5 96$CM=1.147E-5 19            
- 34CL cE TI$original value=0.88 {I+2-4} (2020Ia02)                              
+ 34CL cE TI$original value with asymmetric uncertainties=0.88 {I+2-4} (2020Ia02)
  34CL  G 315          0.18   LT [E2]                   2.14E-3 3               ?
  34CL2 G %IG LT 0.00451                                                         
  34CLS G  KC=0.001967 28$LC=0.0001578 22$MC=1.436E-5 20                         
@@ -78,7 +78,12 @@
  34CL  L 665.8     10 1+               9.2 PS    7                              
  34CL  E             2.52    4 0.00268 4 4.78    1              2.52      4     
  34CLS E EAV=1997.06 48$CK=9.63E-4 11$CL=8.87E-5 11$CM=1.312E-5 22              
- 34CL cE TI$original value=2.517 {I+38-30} (2020Ia02)                           
+ 34CL cE TI$original value with asymmetric uncertainties=2.52 {I+4-3} (2020Ia02)
+ 34CL2cE is obtained by multiplying the |g/|b normalization factor of 0.02480   
+ 34CL3cE {I28} to the relative |b{++}+ec feeding of 1.015 {I+10-5} to the 665.8 
+ 34CL4cE level, which was deduced by taking into account the possible feeding   
+ 34CL5cE and deexcitation |g branchings of this level. The correction for the   
+ 34CL6cE electron-capture-to-positron ratio (ec/|b{++}) is negligible.          
  34CL  G 205          1.0    LT [M1,E2]                0.006  5                ?
  34CL2 G %IG LT 0.0251                                                          
  34CLS G  KC=0.006 4$LC=4.5E-4 36$MC=4.1E-5 32                                  
@@ -97,7 +102,7 @@
  34CL  L 2579.5    14 1+               15 FS     9                              
  34CL  E             0.85    3 0.0050  2 4.13    2              0.85      3     
  34CLS E EAV=1082.73 66$CK=0.005270 66$CL=4.858E-4 65$CM=7.19E-5 13             
- 34CL cE TI$original value=0.85 {I+3-2} (2020Ia02)                              
+ 34CL cE TI$original value with asymmetric uncertainties=0.85 {I+3-2} (2020Ia02)
  34CL  G 693          0.26   LT [M1,E2]                                        ?
  34CLS G  CC=1.19E-4 35$KC=1.09E-4 32$LC=8.7E-6 26$MC=8.0E-7 24                 
  34CL2 G %IG LT 0.00652                                                         
@@ -126,7 +131,7 @@
  34CL  L 3129.0    10 1+               3 FS      LT                             
  34CL  E             1.26    4 0.0159  5 3.48    2              1.28      4     
  34CLS E EAV=826.75 46$CK=0.01122 14$CL=0.001035 14$CM=1.530E-4 26              
- 34CL cE TI$original value=0.88 {I+4-2} (2020Ia02)                              
+ 34CL cE TI$original value with asymmetric uncertainties=1.28 {I+4-2} (2020Ia02)
  34CL  G 549          0.45   LT [M1,E2]                                        ?
  34CLS G  CC=2.2E-4 9$KC=2.1E-4 8$LC=1.7E-5 7$MC=1.5E-6 6                       
  34CL2 G %IG LT 0.0113                                                          
