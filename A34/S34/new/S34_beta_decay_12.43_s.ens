@@ -2,6 +2,8 @@
  34S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34S   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34S 2 H CUT=28-May-2012$                                                       
+ 34S  dB EAV,LOGFT$From BetaShape v2.4 (Jun-2024) 2023Mo21.                     
+ 34S  dL E$Least-squares fitting is done by GLSC (version 12-Jun-2026)          
  34S  c  1973Go33: {+33}Si was produced via the {+18}O({+18}O,pn) reaction using
  34S 2c  a 42-MeV {+18}O beam bombarding a 3-mg/cm{+2} Ta{-2}O{-5} target,      
  34S 3c  99%-enriched in {+18}O, at BNL. |g rays were detected using a 60 cm{+3}
@@ -20,43 +22,62 @@
  34S  c  1956Mo93: measured |b-delayed |g from {+34}P decay.                    
  34S  c  1946Bl01: measured |b from {+34}P decay and isotope discovery of       
  34S 2c  {+34}P.                                                                
- 34S  cG E,RI$From 1973Go33. E|g without uncertainty is given by 1973Go33 based 
- 34S 2cG on available literature E(level).                                      
+ 34S  cG E,RI$From 1973Go33. E|g without uncertainty is deduced by 1973Go33     
+ 34S 2cG based on available literature E(level).                                
  34S  cG M,MR$From the Adopted Gammas.                                          
+ 34S  cL E$From a least-squares fit to |g-ray energies measured by 1973Go33.    
+ 34S 2cL E(level) without uncertainty is deduced by 1973Go33 based on available 
+ 34S 3cL literature E(level).                                                   
  34S  cL J,T$From the Adopted Levels.                                           
  34P   P 0.0          1+               12.43 S   10             5383.0    8     
  34P  cP J,T$From the Adopted Levels of {+34}P.                                 
  34P  cP QP$From 2021Wa16.                                                      
- 34S   N       0.15 2             1.0    1.0                                    
+ 34S   N 0.148     20             1.0    1.0                                    
  34S  PN                                                                     4  
  34S   L 0.0          0+               STABLE                                   
- 34S   B              84.8   21            5.159 12                             
+ 34S   B             84.8    21          5.17    2                              
  34S  cB IB$others: 85 {I2} from |b and |b|g-coin spetra measured in 1971Wa04.  
  34S 2cB 75 from |b spectra measured in 1946Bl01.                               
- 34S   L 2127.4    2  2+                                                        
- 34S   B                14.8 20            4.93   6                             
+ 34S S B EAV=2455.52 39                                                         
+ 34S   L 2127.3    5  2+                                                        
+ 34S   B             14.5    19          5.0     1                              
  34S  cB IB$others: 15 {I2} from |b and |b|g-coin spetra measured in 1971Wa04.  
  34S 2cB 25 from |b spectra measured in 1946Bl01.                               
- 34S   G 2127.3       100.0  3  E2                                              
- 34S   L 3303.7    3                                                            
- 34S   G 3303.5       0.12   LT                                                 
- 34S   L 3914.2    6  0+                                                        
- 34S   B               0.045 17            5.98  17                             
+ 34S S B EAV=1423.34 45                                                         
+ 34S   G 2127.3       100.0  3  E2                                            N 
+ 34S 2 G %IG=14.7 20                                                            
+ 34S   L 3303.7                                                                 
+ 34S   G 3303.5       0.12   LT                                               N 
+ 34S 2 G %IG LT 0.0200                                                          
+ 34S   L 3914.4    11 0+                                                        
+ 34S   B             0.044   16          6.0     2                              
+ 34S S B EAV=582.82 63                                                          
  34S   G 1787      1  0.3    1  E2                                              
- 34S   L 4073.0    10 1+                                                        
- 34S   B               0.111 23            5.38   9                             
+ 34S 2 G %IG=0.044 +23-19                                                       
+ 34S   L 4074.1    11 1+                                                        
+ 34S   B             0.109   23          5.4     1                              
+ 34S S B EAV=510.98 63                                                          
  34S   G 1947.1    15 0.28   10 M1+E2    +1.3    +9-32                          
- 34S   G 4073.4    15 0.46   6  D                                               
- 34S   L 4114.5    6  2+                                                        
- 34S   B                 0.31 6            4.88   9                             
+ 34S 2 G %IG=0.041 +23-19                                                       
+ 34S   G 4073.4    15 0.46   6  D                                             N 
+ 34S 2 G %IG=0.068 +19-17                                                       
+ 34S   L 4114.5    9  2+                                                        
+ 34S   B             0.32    6           4.9     1                              
+ 34S S B EAV=492.96 53                                                          
  34S   G 1987.2    10 1.0    2  M1+E2    -0.40   5                              
- 34S   G 4114.0    15 1.2    2  E2                                              
+ 34S 2 G %IG=0.15 +6-5                                                          
+ 34S   G 4114.0    15 1.2    2  E2                                            N 
+ 34S 2 G %IG=0.18 +6-5                                                          
  34S   L 4622.2                                                                 
  34S   G 1318.5       0.21   LT                                                 
+ 34S 2 G %IG LT 0.0351                                                          
  34S   L 4687.5                                                                 
  34S   G 2560.0       0.11   LT                                                 
+ 34S 2 G %IG LT 0.0184                                                          
  34S   L 4875.2                                                                 
  34S   G 1571.5       1.0    LT                                                 
+ 34S 2 G %IG LT 0.167                                                           
  34S   L 4891                                                                   
- 34S   G 4891         0.08   LT                                                 
-
+ 34S   G 4891         0.08   LT                                               N 
+ 34S 2 G %IG LT 0.0134                                                          
+                                                                                
