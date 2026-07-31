@@ -266,6 +266,27 @@ def _parse_j_block(texts: List[str], start_line: int) -> List[QuotedRef]:
             level_str = match.group('level')
             return match.group('jpi').strip(' ,;'), level_str, float(level_str)
 
+        # Pattern 3a: jpi LEVEL-keV [level|resonance]  (no comma, ENSDF standard style)
+        # e.g. "2+ 811-keV level", "3+ 2134-keV level", "(9+) 6841-keV level",
+        #      "10(+) 7243-keV level", "5 4215-keV"
+        # Must come before comma patterns to avoid matching commas in parentheses.
+        match = re.match(
+            r'(?P<jpi>'
+            r'\(?\d+(?:/\d+)?\)?[+-]?\(?\d*(?:/\d+)?\)?'
+            r'|'
+            r'[+-]?\(?\d+(?:/\d+)?\(?[+-]?\)?'
+            r')'
+            r'\s+'
+            r'(?P<level>\d+(?:\.\d+)?)'
+            r'-keV\s*'
+            r'(?:level|resonance)?',
+            text,
+        )
+        if match:
+            level_str = match.group('level')
+            return match.group('jpi').strip(' ,;'), level_str, float(level_str)
+
+        # Pattern 3b: jpi, level (comma-separated)
         match = re.match(
             r'(?P<jpi>.+?)\s*,\s*(?P<level>\d+(?:\.\d+)?)'
             r'(?:\s+(?:level|resonance))?',
