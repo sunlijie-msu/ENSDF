@@ -33,6 +33,7 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 - **Unintended symbol prefixes:** `|resonance` renders as rho+esonance; verify intent.
 - **Inconsistent subscripts:** `A{-2}=0.5 A6=-0.1` → `A{-2}=0.5 A{-6}=-0.1`.
 - **Mid-token line breaks:** `E{-p}(lab)` must not split across continuation lines.
+- **Subscript used as negative exponent:** `10{-n}` (renders as subscript) must be `10{+-n}` (negative superscript). Scan: `10\{-\d+\}` . Applies to all scientific-notation contexts (`\|*10\{-`, `E\{-`, `×10\{-` in raw Unicode).
 
 ### 2. Grammar and Style
 - **Capitalization:**
