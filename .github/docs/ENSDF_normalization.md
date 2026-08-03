@@ -1,12 +1,12 @@
 ### **Normalization Multipliers Table**
 
-| Multiplier | Full Name | Application | Local Normalization (To Branch Level) | Global Normalization (To Parent Level) | Source |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **NR** | Photon Multiplier | Relative Photons (**RI**) | Photons per 100 branch decays | $RI \times (NR \times BR)$ |, |
-| **NT** | Transition Multiplier | Relative Transitions (**TI**) | Transitions per 100 branch decays | $TI \times (NT \times BR)$ |, |
-| **NB** | Beta/EC Multiplier | Rel. Beta/EC (**IB/IE**) | Intensity per 100 branch decays | $IB \times (NB \times BR)$ |, |
-| **BR** | Branching Ratio | **N/A** (Bridge) | Bridge from Branch $\rightarrow$ Parent | Multiplies NR, NT, and NB | |
-| **NP** | Delayed Particle Multiplier | Delayed Transitions | **N/A** (Direct Step) | Intensity per 100 decays of precursor |, |
+| Multiplier | Full Name | Application | Local Normalization (To Branch Level) | Global Normalization (To Parent Level) |
+| :--- | :--- | :--- | :--- | :--- |
+| **NR** | Photon Multiplier | Relative Photons (**RI**) | Photons per 100 branch decays | $RI \times (NR \times BR)$ |
+| **NT** | Transition Multiplier | Relative Transitions (**TI**) | Transitions per 100 branch decays | $TI \times (NT \times BR)$ |
+| **NB** | Beta/EC Multiplier | Rel. Beta/EC (**IB/IE**) | Intensity per 100 branch decays | $IB \times (NB \times BR)$ |
+| **BR** | Branching Ratio | **N/A** (Bridge) | Bridge from Branch $\rightarrow$ Parent | Multiplies NR, NT, and NB |
+| **NP** | Delayed Particle Multiplier | Delayed Transitions | **N/A** (Direct Step) | Intensity per 100 decays of precursor |
 
 ---
 
