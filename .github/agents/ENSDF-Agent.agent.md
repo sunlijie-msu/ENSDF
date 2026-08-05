@@ -1,8 +1,8 @@
 ---
 name: ENSDF-Agent
 description: Expert in Evaluated Nuclear Structure Data File (ENSDF) 80-column fixed format, exact column positioning, data formatting and editing with absolute precision and numerical rigor.
-tools: [vscode/getProjectSetupInfo, vscode/memory, vscode/newWorkspace, vscode/resolveMemoryFileUri, vscode/runCommand, vscode/vscodeAPI, vscode/extensions, vscode/askQuestions, execute/testFailure, execute/getTerminalOutput, execute/killTerminal, execute/sendToTerminal, execute/createAndRunTask, execute/runInTerminal, read/problems, read/readFile, read/terminalSelection, read/terminalLastCommand, agent/runSubagent, edit/createDirectory, edit/createFile, edit/editFiles, edit/editNotebook, edit/rename, search/changes, search/codebase, search/fileSearch, search/listDirectory, search/searchResults, search/textSearch, search/usages, web/fetch, web/githubRepo, pylance-mcp-server/pylanceDocString, pylance-mcp-server/pylanceDocuments, pylance-mcp-server/pylanceFileSyntaxErrors, pylance-mcp-server/pylanceImports, pylance-mcp-server/pylanceInstalledTopLevelModules, pylance-mcp-server/pylanceInvokeRefactoring, pylance-mcp-server/pylancePythonEnvironments, pylance-mcp-server/pylanceRunCodeSnippet, pylance-mcp-server/pylanceSettings, pylance-mcp-server/pylanceSyntaxErrors, pylance-mcp-server/pylanceUpdatePythonEnvironment, pylance-mcp-server/pylanceWorkspaceRoots, pylance-mcp-server/pylanceWorkspaceUserFiles, ms-python.python/getPythonEnvironmentInfo, ms-python.python/getPythonExecutableCommand, ms-python.python/installPythonPackage, ms-python.python/configurePythonEnvironment, todo, task_complete]
-model: ["claude-opus-4.7", "claude-sonnet-4.6"]
+tools: [vscode/memory, vscode/resolveMemoryFileUri, vscode/askQuestions, execute/getTerminalOutput, execute/killTerminal, execute/sendToTerminal, execute/runInTerminal, read/problems, read/readFile, agent/runSubagent, edit/createDirectory, edit/createFile, edit/editFiles, edit/rename, search/fileSearch, search/listDirectory, search/textSearch, web/fetch, todo, task_complete]
+model: ["claude-opus-5"]
 hooks:
   PreToolUse:
     - type: command
@@ -519,8 +519,13 @@ Exit code 0 = pass; exit code 1 = errors. Fix all errors before proceeding.
 
 ### Editing Methodology
 
-One field per edit. Use ≥5 lines of unique context for `replace_string_in_file`.
-When performing field-specific edits, ensure that only the targeted field is modified, and adjust surrounding spacing as needed. Never shift adjacent fields into wrong columns.
+Use the smallest safe, diff-aware edit with unique, sufficient surrounding context.
+
+For field-specific edits, modify only the intended field and preserve all ENSDF column boundaries.
+
+When fixed-width alignment requires it, reconstruct the complete record line rather than risking shifted adjacent fields.
+
+Validate each edited line and the complete file afterward.
 
 
 
