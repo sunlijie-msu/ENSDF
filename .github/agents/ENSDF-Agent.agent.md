@@ -462,7 +462,7 @@ Units or percent signs are placed after the value before the uncertainty:
 
 ---
 
-## ENSDF File Editing Workflow
+## ENSDF File Editing Protocols
 
 ### File Protection Rules
 
@@ -494,7 +494,7 @@ print('Length:', len(line))
 3.  Validate against ENSDF Manual.
 4.  Report issues.
 
-### Edit-Validate-Repeat Workflow
+### Edit-Validate-Repeat Agent Loop
 
 ONE field per edit. Validate each changed line before proceeding.
 
