@@ -21,34 +21,37 @@
  34S  cL J$Adopted by evaluators assuming that spins increase with increasing   
  34S 2cL excitation energy. For specific arguments see comments, where the      
  34S 3cL assignments of 2005Ma03 are given for completeness                     
- 34S  cL BAND(A)$ GS BAND                                                       
- 34S  cL BAND(C)$ |g-sequence based on 4624 LEVEL                               
- 34S  cL BAND(B)$ |g-sequence based on 5680 LEVEL                               
+ 34S  cL BAND(A)$Ground-state band.                                             
+ 34S  cL SEQ(B)$Sequence based on 5680 level.                                   
+ 34S  cL SEQ(C)$Sequence based on 4624 level.                                   
  34S  PN                                                                     5  
  34S   L 0.0          0+                                                    A   
  34S   L 2127.7     5 2+                                                    A   
  34S  cL J$E2 |DJ=2 |g to 0+, g.s.; 2+ in 2005Ma03                              
- 34S   G 2127.5    6  100        E2                                             
- 34S  cG $A{-2}=+0.28 4, A{-4}=-0.15 7                                          
+ 34S   G 2127.5    6  100       Q                                               
+ 34S  cG $A{-2}=+0.28 {I4}, A{-4}=-0.15 {I7}                                    
  34S  cG $R{-ADO}=1.23 {I3}                                                     
+ 34S  cG M$E2                                                                   
  34S   L 3304.6     5 2+                                                        
  34S  cL J$E2 |DJ=2 |g to 0+, g.s.; 2+ in 2005Ma03                              
  34S   G 1177.3    5  22.5   23                                                 
- 34S   G 3304.6    7  17.8   18  E2                                             
- 34S  cG $A{-2}=+0.34 8, A{-4}=-0.14 11                                         
+ 34S   G 3304.6    7  17.8   18 Q                                               
+ 34S  cG $A{-2}=+0.34 {I8}, A{-4}=-0.14 {I11}                                   
+ 34S  cG M$E2                                                                   
  34S   L 4624.6     6 3-                                                    C   
  34S  cL J$D |DJ=1 |g to 2+, 3305; 3- in 2005Ma03                               
  34S   G 1320.1    5  27     3  D                                               
- 34S  cG $A{-2}=-0.29 7, A{-4}=-0.01 20                                         
+ 34S  cG $A{-2}=-0.29 {I7}, A{-4}=-0.01 {I20}                                   
  34S  cG $R{-ADO}=0.78 {I2}                                                     
  34S   G 2496.5    8  12.3   12 D                                               
- 34S  cG $A{-2}=-0.31 9, A{-4}=-0.14 22                                         
+ 34S  cG $A{-2}=-0.31 {I9}, A{-4}=-0.14 {I22}                                   
  34S  cG $R{-ADO}=0.77 {I4}                                                     
  34S   L 4689.2     6 4+                                                    A   
  34S  cL J$E2 |DJ=2 |g to 2+, 2128; 4+ in 2005Ma03                              
  34S   G 1384.5    14 0.3    2                                                  
- 34S   G 2561.1    6  68     7   E2                                             
- 34S  cG $A{-2}=+0.33 5, A{-4}=-0.12 8                                          
+ 34S   G 2561.1    6  68     7  Q                                               
+ 34S  cG $A{-2}=+0.33 {I5}, A{-4}=-0.12 {I8}                                    
+ 34S  cG M$E2                                                                   
  34S  cG $R{-ADO}=1.24 {I4}                                                     
  34S   L 4877.0     6                                                           
  34S  cL J$3+ in 2005Ma03                                                       
@@ -63,12 +66,14 @@
  34S  cL J$E2 |DJ=2 |g to 3, 4625 and D |DJ=1 |g to 4+, 4689; 5- in 2005Ma03    
  34S  cL T$mean lifetime |t in ps: 52.9 {I24} (1976Me03)                        
  34S   G 1001.6    5  42     4  D                                               
- 34S  cG $A{-2}=-0.28 6, A{-4}=+0.02 15                                         
+ 34S  cG $A{-2}=-0.28 {I6}, A{-4}=+0.02 {I15}                                   
  34S  cG $R{-ADO}=0.81 {I1}                                                     
- 34S   G 1066.2    5  35     4   E2                                             
- 34S  cG $A{-2}=+0.28 3, A{-4}=-0.09 4                                          
+ 34S   G 1066.2    5  35     4  Q                                               
+ 34S  cG $A{-2}=+0.28 {I3}, A{-4}=-0.09 {I4}                                    
  34S  cG $R{-ADO}=1.35 {I3}                                                     
- 34S   G 3562.7    6  1.2    5   [E3]                                           
+ 34S  cG M$E2                                                                   
+ 34S   G 3562.7    6  1.2    5                                                  
+ 34S  cG M$[E3]                                                                 
  34S   L 6251.5     6 4-                                                    B   
  34S  cL J$E2 |DJ=2 |g from 6, 7791; 4- in 2005Ma03                             
  34S   G 572.0     1  0.8    4  D                                               
@@ -78,23 +83,25 @@
  34S   G 1626.7    5  1.3    3                                                  
  34S   L 7790.7     7 6-               132 FS    35                         B   
  34S  cL J$M1+E2 |DJ=1 |g to 5, 5691; 6- in 2005Ma03                            
- 34S   G 1539.6    5  5.0    10 E2                                              
- 34S  cG $A{-2}=+0.29 4, A{-4}=-0.18 6                                          
- 34S   G 2099.6    8  27     3  M1+E2    -1.8    1                              
- 34S  cG $A{-2}=-0.9 3, A{-4}=+0.4 7                                            
+ 34S   G 1539.6    5  5.0    10 Q                                               
+ 34S  cG $A{-2}=+0.29 {I4}, A{-4}=-0.18 {I6}                                    
+ 34S  cG M$E2                                                                   
+ 34S   G 2099.6    8  27     3  D+Q      -1.8    1                              
+ 34S  cG $A{-2}=-0.93 {I27}, A{-4}=+0.38 {I69}                                  
  34S  cG $R{-ADO}=0.37 {I1}                                                     
  34S  cG M$from |g(|q)                                                          
  34S   L 8371.1     7 7-               85 FS     28                         C   
  34S  cL J$E2 |DJ=2 |g to 5, 5691 and D |DJ=1 |g to 6, 7791; 7- in 2005Ma03     
  34S   G 580.3     6  0.6    3  D                                               
  34S  cG $R{-ADO}=0.88 {I12}                                                    
- 34S   G 2680.5    6  30     3  E2                                              
- 34S  cG $A{-2}=+0.40 2, A{-4}=-0.19 2                                          
+ 34S   G 2680.5    6  30     3  Q                                               
+ 34S  cG $A{-2}=+0.40 {I2}, A{-4}=-0.19 {I2}                                    
  34S  cG $R{-ADO}=1.3 {I2}                                                      
+ 34S  cG M$E2                                                                   
  34S   L 8503.8     7 6+                                                    A   
  34S  cL J$D |DJ=1 |g to 5, 5691; |p=+ from band structure; 6+ in 2005Ma03      
  34S   G 2812.7    9  7.7    14 D                                               
- 34S  cG $A{-2}=-0.41 21, A{-4}=0.0 3                                           
+ 34S  cG $A{-2}=-0.41 {I21}, A{-4}=-0.03 {I33}                                  
  34S  cG $R{-ADO}=0.69 {I5}                                                     
  34S   G 3813.6    7  3.9    8                                                  
  34S   L 8734.9     8 6-                                                        
@@ -113,7 +120,7 @@
  34S   L 9912.8     7 7+               184 FS    38                             
  34S  cL J$D |DJ=1 |g to 6+, 8504; 7+ in 2005Ma03                               
  34S   G 942.3     5  2.0    6  D                                               
- 34S  cG $A{-2}=-0.24 8, A{-4}=-0.01 13                                         
+ 34S  cG $A{-2}=-0.24 {I8}, A{-4}=-0.01 {I13}                                   
  34S   G 1178      1  1.0    5                                                  
  34S   G 1408.6    9  2.1    6  D                                               
  34S  cG $R{-ADO}=0.8 {I1}                                                      
@@ -124,22 +131,23 @@
  34S   G 986.8     9  0.8    4                                                  
  34S   G 2028.8    6  3.3    7                                                  
  34S   G 2608.6    6  7.1    10 Q                                               
- 34S  cG $A{-2}=+0.45 3, A{-4}=-0.23 5                                          
+ 34S  cG $A{-2}=+0.45 {I3}, A{-4}=-0.23 {I5}                                    
  34S  cG $R{-ADO}=1.27 {I6}                                                     
  34S   L 10651.6    8 8+               35 FS     17                         A   
  34S  cL J$E2 |DJ=2 |g to 6+, 8504; 8+ in 2005Ma03                              
- 34S   G 2147.2    6  4.7    10  E2                                             
- 34S  cG $A{-2}=+0.49 6, A{-4}=-0.29 9                                          
+ 34S   G 2147.2    6  4.7    10 Q                                               
+ 34S  cG $A{-2}=+0.49 {I6}, A{-4}=-0.29 {I9}                                    
  34S  cG $R{-ADO}=1.5 {I1}                                                      
+ 34S  cG M$E2                                                                   
  34S   G 2280.4    10 4.7    10 D                                               
- 34S  cG $A{-2}=-0.11 8, A{-4}=+0.02 14                                         
+ 34S  cG $A{-2}=-0.11 {I8}, A{-4}=+0.02 {I14}                                   
  34S  cG $R{-ADO}=0.74 {I4}                                                     
  34S   L 11374.2    8 8+                                                        
  34S  cL J$D |DJ=1 |g to 7, 8371; 8+ in 2005Ma03                                
  34S   G 1461.7    9  3.7    8  D(+Q)                                           
  34S  cG $R{-ADO}=0.87 {I7}                                                     
  34S   G 3002.8    6  4.1    8  D                                               
- 34S  cG $A{-2}=-0.36 24, A{-4}=0.0 3                                           
+ 34S  cG $A{-2}=-0.36 {I24}, A{-4}=-0.03 {I33}                                  
  34S  cG $R{-ADO}=0.65 {I5}                                                     
  34S   L 11807.4    8 8+                                                        
  34S  cL J$D |DJ=1 |g to 7, 8371; 8+ in 2005Ma03                                
@@ -150,8 +158,9 @@
  34S  cL J$E2 |DJ=2 |g to 7, 9912; 9+ in 2005Ma03                               
  34S   G 1489.2    6  0.7    4                                                  
  34S   G 1741.6    5  1.2    3                                                  
- 34S   G 2228.8    6  9.5    11 E2                                              
+ 34S   G 2228.8    6  9.5    11 Q                                               
  34S  cG $R{-ADO}=1.18 {I7}                                                     
+ 34S  cG M$E2                                                                   
  34S   L 12985.5    8  (9+)                                                     
  34S  cL J$from 2005Ma03                                                        
  34S   G 1178      1  0.5    3                                                  
@@ -163,14 +172,15 @@
  34S   G 4949.3    18 1.9    4                                                  
  34S   L 13341.6    8 10+              180 FS    28                             
  34S  cL J$E2 |DJ=2 |g to 8, 11374 and M1+E2 |g to (9+), 12986; 10+ in 2005Ma03 
- 34S   G 356.3     6  0.2    1   D                                              
- 34S  cG M$based on RUL                                                         
- 34S   G 1200.4    7  3.2    7   M1+E2                                          
+ 34S   G 356.3     6  0.2    1                                                  
+ 34S  cG M$D, based on RUL                                                      
+ 34S   G 1200.4    7  3.2    7  D+Q                                             
  34S  cG M$in the text 2005Ma03 state that R{-ADO} indicates pure M1, but in    
  34S 2cG table I, authors give mult=D+Q                                         
  34S  cG $R{-ADO}=0.93 {I9}                                                     
- 34S   G 1966.8    9  2.6    6  E2                                              
+ 34S   G 1966.8    9  2.6    6  Q                                               
  34S  cG $R{-ADO}=1.2 {I1}                                                      
+ 34S  cG M$E2                                                                   
  34S   L 13960.5   11 (10+)                                                 A   
  34S  cL J$based on |DJ=2 band structure; (10+) in 2005Ma03                     
  34S   G 3308.8    8  3.0    6                                                  
@@ -184,4 +194,3 @@
  34S   G 4880.8    16 1.8    5                                                  
  34S   L 16649.1   14                                                       A   
  34S   G 2688.4    8  0.7    4                                                  
-
