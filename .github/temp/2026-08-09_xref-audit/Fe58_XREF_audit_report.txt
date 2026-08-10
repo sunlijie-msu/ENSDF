@@ -1,0 +1,80 @@
+Fe-58 Adopted XREF Audit Report
+Date: 2026-08-09
+Mode: CHECK-ONLY; no ENSDF data files modified
+
+Scope
+-----
+Adopted file: XUNDL/A58/Fe58/old/Fe58_adopted.ens
+Source datasets: 30
+Adopted XREF lines: 391
+XREF tokens checked: 842
+
+Summary
+-------
+ENERGY_TEXT_MISMATCH: 74 occurrences
+XREF_STRUCTURE: 15 defects on 14 lines
+AMBIGUITY_SINGLETON: 6 occurrences
+Unknown dataset labels: 0
+Parenthesized energies absent from corresponding source datasets: 0
+XREF line-length errors: 0
+
+1. Parenthesized-energy text mismatches
+---------------------------------------
+Numeric values agree, but adopted parenthesized text differs from source L-record text.
+User rule requires exact source energy text/value, including decimal representation.
+
+Adopted token       Source L energy       Occurrences             Adopted lines
+U(3340)              3.34E3               1                      362
+X(4700)              4.7E3                1                      758
+U(4820*)             4.82E3               13                     758, 761, 765, 767, 803, 807, 810, 815, 821, 824, 827, 830, 848
+U(5310*)             5.31E3               17                     866, 869, 871, 874, 884, 886, 890, 900, 903, 928, 931, 935, 938, 947, 950, 959, 961
+U(5740*)             5.74E3               16                     966, 969, 972, 974, 977, 980, 982, 985, 988, 991, 1005, 1014, 1017, 1020, 1023, 1025
+U(6280*)             6.28E3               11                     1052, 1055, 1066, 1070, 1074, 1083, 1094, 1097, 1100, 1102, 1104
+U(6590*)             6.59E3               15                     1107, 1110, 1113, 1116, 1118, 1120, 1123, 1125, 1127, 1130, 1133, 1136, 1138, 1141, 1143
+
+2. XREF structure defects
+-------------------------
+Non-alphabetical dataset labels:
+  line 628: BJ(4290)NPQ(4289)Y(4310)U(*)d
+  line 689: Y(4440*)JQ(4441*)
+  line 759: YX(4700)U(4820*)d
+  line 804: NY(4710)U(4820*)
+  line 825: JN(4937)Y(4940)U(4820*)
+  line 872: J(5220*)Y(5200*)NU(5310*)
+  line 929: JNa(*)U(5310*)
+  line 932: N(5406*)Ya(*)U(5310*)
+  line 936: J(5410)N(5406*)a(5390*)U(5310*)
+  line 939: L N(5406*)a(5390*)U(5310*)
+  line 1053: YU(6280*)
+
+Internal spaces inside XREF value:
+  line 901: J(5300*)NU(5310*) Y(5310)
+  line 904: FGI U(5310*)d
+  line 939: L N(5406*)a(5390*)U(5310*)
+  line 975: NU(5740*) Y(5710)
+
+Line 939 has both defects; total = 15 defects on 14 lines.
+
+3. Singleton (*) modifiers
+--------------------------
+Rule: every Letter(*) must occur on at least two adopted levels.
+
+  line 703: T(4450*)
+  line 706: J(4470*)
+  line 815: L(4832*)
+  line 985: J(5790*)
+  line 1049: J(6050*)
+  line 1094: J(6270*)
+
+Each corresponding source level exists, but each ambiguity marker occurs only once.
+
+Validation notes
+----------------
+- All 30 dataset labels in adopted X-records were recognized.
+- All parenthesized numeric values had numerically equal source levels; mismatches concern exact text representation.
+- All adopted XREF lines have length 80.
+- Existing column validator reports unrelated baseline errors in Fe58_adopted.ens, including line 546; no XREF edits were made.
+
+Audit utility
+-------------
+.github/temp/2026-08-09_xref-audit/audit_fe58_xref.py

@@ -1,0 +1,78 @@
+A=58 Adopted XREF Audit Report
+Datasets: Ca58, Sc58, Ti58, V58, Cr58, Mn58
+Date: 2026-08-09
+Mode: CHECK-ONLY; no .ens files modified
+
+Rules checked
+------------
+- Every XREF label maps to an adopted X-record/source dataset.
+- Every XREF token parses as label, optional energy, optional * or ? marker.
+- Every parenthesized energy is checked against corresponding source L-record text/value.
+- Every Letter(*) must occur on at least two adopted levels.
+- Every Letter(energy*) must repeat exactly across ambiguous occurrences.
+- XREF labels checked for internal spaces, duplicate labels, and non-alphabetical order.
+- Every XREF line checked for 80-column length.
+
+Results
+-------
+Isotope  Adopted L  XREF lines  Tokens  Sources mapped  Findings
+Ca58          9          2         2       1/1            NONE
+Sc58         12          3         6       2/2            NONE
+Ti58         15          6         9       3/3            NONE
+V58           6          2         2       1/1            NONE
+Cr58         36         14        32       5/5            NONE
+Mn58        134         61        86       6/6            NONE
+TOTAL       212         88       137      18/18           NONE
+
+Critical singleton (*) review
+-----------------------------
+Ca58: none
+Sc58: none
+Ti58: none
+V58: none
+Cr58: none
+Mn58: none
+
+No XREF token containing (*) occurs only once. No Letter(energy*) tokens found.
+Therefore no singleton ambiguity or repeated-energy* defect identified.
+
+Non-plain/questionable tokens checked
+--------------------------------------
+Ti58 adopted line 86: B(2422?)
+  Source B mapped; source energy/value check passed; questionable marker valid.
+
+Mn58 adopted line 67: D(88)
+Mn58 adopted line 89: D(88)
+Mn58 adopted line 123: D(303)
+Mn58 adopted line 140: D(466)
+Mn58 adopted line 154: D(679)
+Mn58 adopted line 251: C(1883.4)
+Mn58 adopted line 276: C(2464.8)
+  All mapped to corresponding source datasets; exact source energy/value checks passed.
+  No * markers present.
+
+Structural and formatting results
+----------------------------------
+- Unknown dataset labels: 0.
+- Malformed modifiers: 0.
+- Parenthesized energies absent from source: 0.
+- Exact energy-text mismatches: 0.
+- Internal XREF spaces: 0.
+- Duplicate labels: 0.
+- Non-alphabetical label sequences: 0.
+- XREF lines not exactly 80 columns: 0.
+
+Source mapping
+--------------
+Ca58: A -> Ca58_1h_59sc_2pg.ens
+Sc58: A -> Sc58_9be_70zn_xg.ens; B -> Sc58_9be_238u_fg.ens
+Ti58: A -> Ti58_beta_decay_12_ms.ens; B -> Ti58_1h_58ti_58tiPg.ens; C -> Ti58_9be_61v_58tig.ens
+V58: A -> V58_beta_decay_58_ms.ens
+Cr58: A -> Cr58_beta_decay_191_ms.ens; B -> Cr58_coulex.ens; C -> Cr58_9be_59mn_58crg.ens; D -> Cr58_238u_64ni_xg.ens; E -> Cr58_238u_48ca_xg_208pb_48ca_xg.ens
+Mn58: A -> Mn58_beta_decay_7.0_s.ens; B -> Mn58_58mn_it_decay_65.4_s.ens; C -> Mn58_48ca_13c_2npg.ens; D -> Mn58_58fe_t_3he.ens; E -> Mn58_238u_70zn_xg.ens; F -> Mn58_13c_48ca_p2ng_14c_48ca_p3ng.ens
+
+Validation
+----------
+- Generic audit utility compiled successfully.
+- All six adopted files remain unmodified.
+- Audit utility: .github/temp/2026-08-09_xref-audit/audit_a58_xrefs.py
