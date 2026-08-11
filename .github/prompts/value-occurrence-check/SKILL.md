@@ -2,8 +2,7 @@
 name: value-occurrence-check
 description: >
   Use this skill when checking consistency of nuclear level energies across
-  multiple occurrences in a gamma-ray transition CSV, Markdown, or pipe
-  table. Verifies that energy, uncertainty, and J-π are identical wherever
+  multiple occurrences in a gamma-ray transition CSV, Markdown, or table. Verifies that energy, uncertainty, and J-π are identical wherever
   a level appears as both an initial (Ei) and final (Ef) state. Mandates
   explicit column mapping including blank cells and bidirectional
   forward/backward verification.
@@ -12,8 +11,6 @@ argument-hint: [CSV, Markdown, or pipe table file]
 
 # Value Occurrence Check
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
-
 ## Purpose
 
 Verify that every nuclear level energy appearing multiple times in a gamma-ray transition table has consistent energy, uncertainty, and J-π across all occurrences.
@@ -21,7 +18,7 @@ Verify that every nuclear level energy appearing multiple times in a gamma-ray t
 ## When to Use
 
 - Before entering CSV table data into ENSDF records
-- Before entering Markdown or pipe-table data into ENSDF records
+- Before entering Markdown or table data into ENSDF records
 - When a gamma-ray transition table lists levels as both initial (Ei) and final (Ef) states
 - To catch transcription errors or inconsistent J-π assignments across table entries
 
