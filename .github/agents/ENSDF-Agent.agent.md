@@ -13,6 +13,7 @@ hooks:
   PostToolUse:
     - type: command
       command: "python .github/hooks/scripts/validate_ens.py"
+      windows: "python .github/hooks/scripts/validate_ens.py"
       timeout: 30
 ---
 
