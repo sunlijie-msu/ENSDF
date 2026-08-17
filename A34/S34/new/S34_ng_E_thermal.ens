@@ -3,45 +3,41 @@
  34S   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34S 2 H CUT=28-May-2012$                                                       
  34S  c  1985Ra15: 6|*10{+11} n/cm{+2}/s thermal neutrons at the target position
- 35S 2c  were produced from the Los Alamos Omega West Reactor at a nominal 8-MW 
- 35S 3c  reactor power. |g rays following thermal neutron capture by a 1.09-g,  
- 35S 4c  77.7% enriched {+34}S target were detected using a 26 cm{+3} coaxial   
- 35S 5c  Ge(Li) detector inside a 20-cm-diam by 30-cm-long NaI(Tl) annulus with 
- 35S 6c  FWHM=2.3 keV at 1 MeV, 5.5 keV at 6 MeV and 8.8 keV at 11 MeV. Measured
- 35S 7c  |s{-|g}, E|g, and I|g for 61 |g-ray transitions. Deduced 22 levels and 
- 35S 8c  |g-ray branching ratios.                                               
- 
+ 34S 2c  were produced from the Los Alamos Omega West Reactor at a nominal 8-MW 
+ 34S 3c  reactor power. |g rays following thermal neutron capture by a 1.09-g,  
+ 34S 4c  77.7% enriched {+34}S target were detected using a 26 cm{+3} coaxial   
+ 34S 5c  Ge(Li) detector inside a 20-cm-diam by 30-cm-long NaI(Tl) annulus with 
+ 34S 6c  FWHM=2.3 keV at 1 MeV, 5.5 keV at 6 MeV and 8.8 keV at 11 MeV. Measured
+ 34S 7c  |s{-|g}, E|g, and I|g for 61 |g-ray transitions. Deduced 22 levels and 
+ 34S 8c  |g-ray branching ratios.                                               
+
  34S  c  Others:                                                                
- 34S  c  1983Ra04: paper by the same group as 1985Ra15. Measured S(n)           
- 34S 2c  for {+34}S based on 11 strong cascades. All 22 E|g values stated are   
- 34S 3c  the same as in 1985Ra15.                                               
+ 34S  c  1983Ra04: by the same group as 1985Ra15. Measured S(n) of {+34}S and   
+ 34S 2c  deduced (n,|g) reaction Q value based on 11 |g cascades. All 22 E|g    
+ 34S 3c  values stated are the same as in 1985Ra15.                             
  34S  c  2007ChZX: prompt |g activation analysis (PGAA database for elemental   
  34S 2c  analysis), natural target. In the measurements at Budapest, 5 primary  
  34S 3c  and 6 secondary |g rays were identified. The energies and relative     
  34S 4c  intensities (deduced from measured elemental cross sections) are in    
- 34S 5c  good agreement with those from 1985Ra15. The normalization factor      
- 34S 6c  is also in agreement. The data in 1985Ra15 are much more complete and  
- 34S 7c  precise, thus adopted here. For data from 2007ChZX, consult            
- 34S 8c  PGAA websites at IAEA and LBNL, most of which is taken from earlier    
- 34S 9c  ENSDF database which was based on data from 1985Ra15                   
+ 34S 5c  good agreement with those from 1985Ra15. The normalization factor is   
+ 34S 6c  also in agreement. The data in 1985Ra15 are much more complete and     
+ 34S 7c  precise, thus adopted here. For data from 2007ChZX, consult PGAA       
+ 34S 8c  websites at IAEA and LBNL, most of which is taken from earlier ENSDF   
+ 34S 9c  database which was based on data from 1985Ra15                         
  34S  c  Other: 2009KiZW (method to identify nuclear levels based on neutron    
  34S 2c  capture reactions).                                                    
  34S  cG RI$|s(mb). 1985Ra15 give cross sections in mb and quote a              
  34S 2cG multiplication factor of 0.220 to obtain intensities per 100 thermal   
  34S 3cG neutron captures                                                       
  34S  cG M,MR$From Adopted Gammas                                               
- 34S  cG E(B),RI(B)$Energy from level-energy difference. Intensity is           
- 34S 2cG an upper limit, deduced from Table I(x ray) of 1985Ra15                
- 34S  cL E$ From least-squares fit to E|g data. Normalized |h{+2}=1.127, with   
- 34S 2cL only about 10 gamma-ray energies deviating by slightly more than       
- 34S 3cL two standard deviations. Doubly-placed |g rays were not used in the    
- 34S 4cL fitting procedure                                                      
+ 34S  cG E(B),RI(B)$Energy from level-energy difference. Intensity is an upper  
+ 34S 2cG limit, deduced from Table I(x ray) of 1985Ra15                         
+ 34S  cL E$From a least-squares fit to |g-ray energies.                         
  34S  cL J$From Adopted Levels                                                  
  34S   N 0.220     15                                                           
- 34S  cN NR$From intensity balance in the level scheme. 1985Ra15 give 0.220     
- 34S 2cN with no uncertainty                                                    
- 34S  PN                                                                    C3  
- 34S 2PN           Per 100 thermal neutron captures                             
+ 34S  cN NR$From intensity balance in the level scheme. 1985Ra15 give 0.220 with
+ 34S 2cN no uncertainty                                                         
+ 34S  PN                                                                     4  
  34S   G 95.45     18 0.012  3                                                  
  34S   G 229.71    16 0.054  10                                                 
  34S   G 743.50    20 0.098  15                                                 
@@ -406,16 +402,15 @@
  34S   G 4903.4    5 0.28    8                                                  
  34S   G 5268.9    6 0.27    7                                                  
  34S   L 11417.223 16  1+,2+                                                   S
- 34S  cL E$ from least-squares fit to E|g data, this value is higher by         
- 34S 2cL |?0.10 keV from S(n)=11417.12 {I6} (2011AuZZ).                         
- 34S 3cL Other: S(n)=11417.11 {I9} (2003Au03), 11417.22 {I5}                    
- 34S 4cL and 11417.12 {I10} (1983Ra04) using 'mass-doublet standard' and        
- 34S 5cL 'gold standard', respectively                                          
+ 34S  cL E$ from least-squares fit to E|g data, this value is higher by |?0.10  
+ 34S 2cL keV from S(n)=11417.12 {I6} (2011AuZZ). Other: S(n)=11417.11 {I9}      
+ 34S 3cL (2003Au03), 11417.22 {I5} and 11417.12 {I10} (1983Ra04) using          
+ 34S 4cL 'mass-doublet standard' and 'gold standard', respectively              
  34S  cL J$ s-wave capture in {+33}S g.s., J|p=3/2+                             
- 34S  cL $ Observed deexcitation intensity is 83% {I2}, other 17% intensity     
- 34S 2cL of the primary |g rays is unaccounted                                  
+ 34S  cL $ Observed deexcitation intensity is 83% {I2}, other 17% intensity of  
+ 34S 2cL the primary |g rays is unaccounted                                     
  34S   G 392.28    11 0.124  20                                                 
- 34S  DG E$ typo corrected, it was 392.98 in earlier ENSDF                      
+ 34S  dG E$ typo corrected, it was 392.98 in earlier ENSDF                      
  34S F G FL=11024.94                                                            
  34S   G 576.80    19 0.146  21                                                 
  34S   G 767.20    21 0.098  16                                                 
@@ -501,4 +496,4 @@
  34S   G 8111.99   9 6.1     7                                                  
  34S   G 9288.28   16 1.10   12                                                 
  34S   G 11415.17  11 7.1    7                                                  
-                                                                                
+
