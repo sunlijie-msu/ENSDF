@@ -1,5 +1,3 @@
-Table V, here are the extracted energies and intensities of \\(\gamma\\) rays from the \\(^{33}\text{S}(n, \gamma)^{34}\text{S}\\) reaction.
-
 | Energy (keV) | Intensity (mb) |
 | :--- | :--- |
 | 95.45(18) | 0.012(3) |
@@ -118,7 +116,7 @@ Table V, here are the extracted energies and intensities of \\(\gamma\\) rays fr
 | 2490.6(13) | 0.62(16) |
 | 2496.726(20) | 15.4(14) |
 | 2530.25(10) | 0.51(7) |
-| 2543.13(9) | 9.6(9) |
+| 2543.13(10) | 9.6(9) |
 | 2558.82(13) | 1.24(14) |
 | 2561.36(5) | 3.6(4) |
 | 2611.7(4) | 1.2(3) |
