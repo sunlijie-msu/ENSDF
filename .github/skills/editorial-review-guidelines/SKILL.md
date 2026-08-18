@@ -24,7 +24,7 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
   - Parentheses: `124(5) ps` → `124 ps {I5}`.
   - Bare `I` prefix: `|d=+0.05 I5` → `|d=+0.05 {I5}`.
   - Bare number (no `I`): `A{-2}=+0.05 5` → `A{-2}=+0.05 {I5}`.
-  Scan for bare `I`: `\bI\d{1,3}\b` near values. Scan for bare numbers: lone 1-3 digit integers after `=` or after a value with space, where context suggests uncertainty.
+  Scan for bare `I`: `(?<!\{)\bI\d{1,3}\b` — the `(?<!\{)` lookbehind excludes valid `{I3}` / `{I+7-5}` braces (otherwise all braced uncertainties false-positive). Scan for bare numbers: lone 1-3 digit integers after `=` or after a value with space, where context suggests uncertainty.
 - **Unicode leakage:** No raw Unicode glyphs. Wrong: `μ`, `×`, `β`, `γ`, `θ`, `≈`, `≤`, `≥` → Correct: `|m`, `|*`, `|b`, `|g`, `|q`, `|?`, `|<`, `|>`. Example: `1500-μm-thick` → `1500-|mm-thick`.
 - **Non-ENSDF unit spellings:** `ug` → `|mg` (microgram); `ug/cm2` → `|mg/cm{+2}` (microgram per square centimeter); `mg/cm2` → `mg/cm{+2}` (milligram per square centimeter), `cm3` → `cm{+3}` (cubic centimeter).
 - **Chemical formula stoichiometry:** Integer coefficients must be subscripts. Wrong: `H3BO3`, `Sb2S3` → Correct: `H{-3}BO{-3}`, `Sb{-2}S{-3}`. Scan: `(?<!\{\+)\b[A-Z][a-z]?\d+\b`. Exclude 1:1 binaries (`NaCl`), multipolarities (`E2`, `M1`), and `B(E2)` quantities.
@@ -100,9 +100,9 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 Missing terminal periods, XREF notation. Valid ENSDF symbols: `|?`, `{+n}`, `{-n}`, `|a`, `|b`, `|g`, `|d`, `|w`, `|*`, `|+`, `|-`.
 
 ## Procedure
-1. Isolate all comment records (`c`, `cL`, `cG`, `cB`, `cE`, `cN`, `cP`, `cQ`) and their continuation lines.
-2. Apply error classes: notation → grammar → punctuation → hyphenation → terminology → integrity → clarity.
-3. Regex sweeps: dittography `\b(\w+)\s+\1\b`; leaked tags `\s(cL|cG|\bL\b|\bG\b)\s`; isotope tokens `(?<!\{\+)\b\d{1,3}[A-Z][a-z]?\b`; chemical-formula subscripts `(?<!\{\+)\b[A-Z][a-z]?\d+\b`; extra `=` space `=\s[0-9]`; extra `$` space `\$\s`; non-ASCII `[^\x00-\x7F]`.
+1. Run `python .github/scripts/scan_editorial_review.py [folder_or_file] --skip adopted` — automated sweeps (isotope tokens, bare `I`, braced `{I}`, units, chemical formulas, dittography, `$`/`=` space, `10{-n}`, unicode, leaked tags, spelling). Review every flagged line; discard false positives manually.
+2. Apply error classes in order: notation → grammar → punctuation → hyphenation → terminology → integrity → clarity.
+3. Manually scan the remaining lines for regex-missed issues (dense prose, capitalization, subject-verb, hyphenation) per the Error Classes above.
 4. Final symbol sweep on all flagged lines: verify no raw Unicode glyphs, plain isotope tokens, mixed symbol-text compounds, or un-subscripted chemical formulas were missed.
 5. Before reporting: confirm no valid ENSDF notation misclassified; each fix preserves scientific meaning. Do not edit unless user explicitly requests.
 
