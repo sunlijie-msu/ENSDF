@@ -13,7 +13,7 @@ description: >
 Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 **Scope:** `c`, `cL`, `cG`, `cB`, `cE`, `cN`, `cP`, `cQ` comment records and continuation lines. Skip data-record fields (`L`, `G`, `E`, `B`, `DP`).
-**Action Policy:** Check-Only. Report findings table. Do not edit unless user requests.
+**Action Policy:** Two options: (1) Check only. Report findings table. No edits or revisions. (2) Check and revise. Report findings table, then apply edits to comment lines.
 
 ## Error Classes
 
