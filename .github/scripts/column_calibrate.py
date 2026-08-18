@@ -385,10 +385,11 @@ def validate_s_field(filename):
             if s_field_stripped and any(c.isdigit() for c in s_field_stripped):
                 s_fields_analyzed += 1
                 
-                # Find where the first digit actually appears in the S field
+                # Find where the S value actually starts (first non-space char,
+                # e.g. '-' sign for negative values — NOT the first digit)
                 first_digit_pos = None
                 for i, char in enumerate(s_field_area):
-                    if char.isdigit():
+                    if not char.isspace():
                         first_digit_pos = 65 + i  # Convert to 1-based column number
                         break
                 

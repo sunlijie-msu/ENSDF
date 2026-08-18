@@ -221,7 +221,8 @@ Example:
 | TI    | 65–74   | Total transition intensity                                            |
 | DTI   | 75–76   | Uncertainty in TI                                                     |
 | C     | 77      | **Comment flag** (A-Z, a-z, *, &, @) - See G-Record Flag Rules        |
-| SPACE | 78–79   | Must be blank                                                         |
+| SPACE | 78      | Must be blank                                                         |
+| SPACE | 79      | Usually blank; may be N to indicate use for normalization             |
 | Q     | 80      | **Additional indicator** (space, ?, S) - See G-Record Indicator Rules |
 
 

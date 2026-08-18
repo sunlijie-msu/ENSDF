@@ -12,7 +12,7 @@ description: >
 
 Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
-**Scope:** `c`, `cL`, `cG`, `cB`, `cE`, `cN`, `cP`, `cQ` comment records and continuation lines. Skip data-record fields (`L`, `G`, `E`, `B`, `DP`).
+**Scope:** `c`, `cL`, `cG`, `cB`, `cE`, `cN`, `cP`, `cQ` comment records and continuation comment lines. Skip data-record fields (`L`, `G`, `E`, `B`, `DP`).
 **Action Policy:** Two options: (1) Check only. Report findings table. No edits or revisions. (2) Check and revise. Report findings table, then apply edits to comment lines.
 
 ## Error Classes
@@ -26,8 +26,9 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
   - Bare number (no `I`): `A{-2}=+0.05 5` → `A{-2}=+0.05 {I5}`.
   Scan for bare `I`: `\bI\d{1,3}\b` near values. Scan for bare numbers: lone 1-3 digit integers after `=` or after a value with space, where context suggests uncertainty.
 - **Unicode leakage:** No raw Unicode glyphs. Wrong: `μ`, `×`, `β`, `γ`, `θ`, `≈`, `≤`, `≥` → Correct: `|m`, `|*`, `|b`, `|g`, `|q`, `|?`, `|<`, `|>`. Example: `1500-μm-thick` → `1500-|mm-thick`.
-- **Non-ENSDF unit spellings:** `ug` → `|mg` (microgram); `cm2`, `mg/cm2` → `cm{+2}`, `mg/cm{+2}` (superscript exponent).
-- **Mixed symbol-text:** Wrong: `γ-ray`, `μm`, `β-delayed`, `ug/cm2` → Correct: `|g-ray`, `|mm`, `|b-delayed`, `|mg/cm{+2}`.
+- **Non-ENSDF unit spellings:** `ug` → `|mg` (microgram); `ug/cm2` → `|mg/cm{+2}` (microgram per square centimeter); `mg/cm2` → `mg/cm{+2}` (milligram per square centimeter), `cm3` → `cm{+3}` (cubic centimeter).
+- **Chemical formula stoichiometry:** Integer coefficients must be subscripts. Wrong: `H3BO3`, `Sb2S3` → Correct: `H{-3}BO{-3}`, `Sb{-2}S{-3}`. Scan: `(?<!\{\+)\b[A-Z][a-z]?\d+\b`. Exclude 1:1 binaries (`NaCl`), multipolarities (`E2`, `M1`), and `B(E2)` quantities.
+- **Mixed symbol-text:** Wrong: `γ-ray`, `β-delayed` → Correct: `|g-ray`, `|b-delayed`.
 - **Proper-noun exceptions:** Skip well-known instrument names (e.g., `Gamma Array` as part of INGA) — not every `Gamma` match is a symbol-text error.
 - **Leaked record tags:** Scan cols 10-80 for spurious ` cL `, ` cG `, ` L `, ` G ` (copy-paste artifact).
 - **Unintended symbol prefixes:** `|resonance` renders as rho+esonance; verify intent.
@@ -38,8 +39,8 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 ### 2. Grammar and Style
 - **Capitalization:**
   - Top-block comments (before first data record, any type) → uppercase.
-  - Record-specific comments **with** field identifier (`cL E$`, `cL J$`, `cL T$`, `cG E$`, `cG RI$`, `cG M$`, etc.) → lowercase, unless first token is numeral, symbol, isotope token, or acronym.
-  - Record-specific comments **without** field identifier (`cL $`, `cG $`) → uppercase (standalone statements).
+  - Record-specific (after first data record comments) **with** field identifier (`cL E$`, `cL J$`, `cL T$`, `cG E$`, `cG RI$`, `cG M$`, etc.) → lowercase, unless first token is numeral, symbol, isotope token, or acronym.
+  - Record-specific comments (after first data record comments) **without** field identifier (`cL $`, `cG $`) → uppercase (standalone statements).
   - **Exception:** `cP` and `cN` comments always uppercase.
   - Examples (top-block, before first L/G/E/B/DP record): `cL E$From a least-squares fit` ✓; `cG E,RI$From 2017Li03` ✓; `cB IB,LOGFT$From I(|g+ce)` ✓ — all uppercase.
   - Examples (record-specific, after first data record): `cL T$from lifetime measurement` ✓ (lowercase continuation); `cL J$from the Adopted Levels` ✓; `cL J$1+ from shell model` ✓ (numeral exception).
@@ -73,14 +74,18 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 
 | Wrong | Correct |
 |-------|---------|
+| `uising`, `usign` | `using` |
 | `deexiting` | `deexciting` |
 | `multiporities` | `multipolarities` |
 | `grand-daughter` | `granddaughter` |
-| `novelly designed` | `newly designed` |
-| `ohter`, `usign`, `stoped`, `striped`, `coeffcients` | `other`, `using`, `stopped`, `stripped`, `coefficients` |
+| `ohter` | `other` |
+| `stoped` | `stopped` |
+| `striped` | `stripped` |
+| `·coeffcients·` | `coefficients` |
+
 
 - `GXPF1A` — exact capitalization required (shell-model interaction name).
-- **Chemical formulas:** `CD{-2}` (deuterated polyethylene) ≠ `Cd{-2}` (cadmium); verify against publication.
+- **Chemical formulas:** Use `{-n}` subscripts for stoichiometry. `CD{-2}` (deuterated polyethylene) ≠ `Cd{-2}` (cadmium); verify against publication.
 
 ### 6. Text and Number Integrity
 - **Extra space after `=`:** `|w|g= 0.45` → `|w|g=0.45`. Scan: `=\s[0-9]`.
@@ -92,13 +97,13 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 - Flag conclusions without citation or method reference.
 
 ## Exclusions
-Missing terminal periods, XREF notation, alignment. Valid ENSDF symbols: `|?`, `{+n}`, `{-n}`, `|a`, `|b`, `|g`, `|d`, `|w`, `|*`, `|+`, `|-`.
+Missing terminal periods, XREF notation. Valid ENSDF symbols: `|?`, `{+n}`, `{-n}`, `|a`, `|b`, `|g`, `|d`, `|w`, `|*`, `|+`, `|-`.
 
 ## Procedure
 1. Isolate all comment records (`c`, `cL`, `cG`, `cB`, `cE`, `cN`, `cP`, `cQ`) and their continuation lines.
 2. Apply error classes: notation → grammar → punctuation → hyphenation → terminology → integrity → clarity.
-3. Regex sweeps: dittography `\b(\w+)\s+\1\b`; leaked tags `\s(cL|cG|\bL\b|\bG\b)\s`; isotope tokens `(?<!\{\+)\b\d{1,3}[A-Z][a-z]?\b`; extra `=` space `=\s[0-9]`; extra `$` space `\$\s`; non-ASCII `[^\x00-\x7F]`.
-4. Final symbol sweep on all flagged lines: verify no raw Unicode glyphs, plain isotope tokens, or mixed symbol-text compounds were missed.
+3. Regex sweeps: dittography `\b(\w+)\s+\1\b`; leaked tags `\s(cL|cG|\bL\b|\bG\b)\s`; isotope tokens `(?<!\{\+)\b\d{1,3}[A-Z][a-z]?\b`; chemical-formula subscripts `(?<!\{\+)\b[A-Z][a-z]?\d+\b`; extra `=` space `=\s[0-9]`; extra `$` space `\$\s`; non-ASCII `[^\x00-\x7F]`.
+4. Final symbol sweep on all flagged lines: verify no raw Unicode glyphs, plain isotope tokens, mixed symbol-text compounds, or un-subscripted chemical formulas were missed.
 5. Before reporting: confirm no valid ENSDF notation misclassified; each fix preserves scientific meaning. Do not edit unless user explicitly requests.
 
 ## Output Format
