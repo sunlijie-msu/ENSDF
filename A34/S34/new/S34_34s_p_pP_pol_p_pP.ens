@@ -1,4 +1,4 @@
- 34S     34S(P,P'),(POL P,P')          1991KE09,1978BEXU,1968MO22ENSDF    202609
+ 34S     34S(P,P),(P,P'),(POL P,P')    1991KE09,1978BEXU,1968MO22ENSDF    202609
  34S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34S   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34S 2 H CUT=28-May-2012$                                                       
@@ -20,13 +20,13 @@
  34S 4c  high-resolution spectrometer at the Los Alamos Meson Physics Facility  
  34S 5c  at angles between 5|' and 39|'. Measured differential cross sections   
  34S 6c  and analyzing powers.                                                  
- 34S  c  1985Al03: {+34}S(p,p') with a 29.8-MeV proton beam on a target         
- 34S 2c  94.3%-enriched in {+34}S on C backing. Scattered protons were detected 
- 34S 3c  using a position-sensitive gas proportional counter (FWHM=20 keV).     
- 34S 4c  Measured angular distributions covering the angles from 15|' to 120|'  
- 34S 5c  in steps of 5|'.                                                       
- 34S  c  1983Iv01: {+34}S(p,p') with a 6-MeV proton beam. Measured elastic and  
- 34S 2c  inelastic angular distributions.                                       
+
+ 34S  c  1985Al03: {+34}S(p,p') with a 29.8-MeV proton beam from the Princeton  
+ 34S 2c  Univeristy AVF cyclotron on 94.3%-enriched {+34}S targets on C         
+ 34S 3c  backings. Scattered protons were analyzed by a QDDD spectrometer       
+ 34S 4c  detected using a position-sensitive gas proportional counter with      
+ 34S 5c  FWHM=20 keV. Measured |s(E{-p},|q). Deduced levels, J, and |p.         
+ 34S  c  1983Iv01: {+34}S(p,p') with a 6-MeV proton beam. Measured |s(E{-p},|q).
  34S  c  1975Al08, 1975Al28: {+34}S(p,p) with a 1-GeV proton beam on a target   
  34S 2c  98.0%-enriched in {+34}S. Scattered protons were detected using a      
  34S 3c  magnetic spectrometer with FWHM=1.6 MeV. Measured |s(E{-p},|q).        
@@ -42,13 +42,17 @@
  34S 2c  57.17%-enriched in {+34}S. Scattered protons were detected using a     
  34S 3c  Si(Li) detector. Measured |s(E{-p},|q). Deduced levels, J, and |p.     
 
- 34S  c  Others:                                                                
+ 34S  c  Others: 1999ShZX: {+34}S(p,p') with 160-MeV protons. Measured proton   
+ 34S 2c  spectra at 0|'.                                                        
  34S  c  1985SaZS: {+34}S(pol p,p') with a 65-MeV polarized proton beam.        
- 34S 2c  Scattered protons were analyzed by a high-resolution magnetic       
- 34S 3c  spectrograph. Measured |s(E{-p},|q) and analyzing powers. Deduced the relative signs of neutron and proton transition matrix elements to the 2+ state at 3.30 MeV.
+ 34S 2c  Scattered protons were analyzed by a high-resolution magnetic          
+ 34S 3c  spectrograph. Measured |s(E{-p},|q) and analyzing powers. Deduced the  
+ 34S 4c  relative signs of neutron and proton transition matrix elements to the 
+ 34S 5c  2+ state at 3.30 MeV.                                                  
  34S  c  1982Be32, 1982MiZQ: {+34}S(p,p') with 650-MeV protons. Deduced relative
- 34S 2c  signs of neutron and proton transition matrix elements to the 2+ state at 3.30 MeV. See 1983Mi25   
- 34S 3c  for distorted wave impulse approximation calculations.                 
+ 34S 2c  signs of neutron and proton transition matrix elements to the 2+ state 
+ 34S 3c  at 3.30 MeV. See 1983Mi25 for distorted wave impulse approximation     
+ 34S 4c  calculations.                                                          
  34S  c  1980PrZT: {+34}S(p,p') with 6.9-MeV protons. Deduced spin-flip         
  34S 2c  probability in the inelastic scattering to the 2+ state at 2.13 MeV.   
  34S  c  1980Fa07: systematic study of (p,p) and (p,p') with optical model and  
