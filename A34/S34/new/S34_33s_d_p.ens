@@ -2,35 +2,35 @@
  34S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34S   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34S 2 H CUT=28-May-2012$                                                       
- 34S  c  {+33}S target J|p: 3/2+                                                
+ 34S  c  J|p=3/2+ for {+33}S ground state (2025Ch07).                           
  34S  c  1972Cr08: {+33}S(d,p) E=12 MeV, 83%-enriched {+33}S target in between  
  34S 2c  thin C foils (on formvar backing). Used split-pole magnetic            
  34S 3c  spectrograph and recorded spectra at ten angles from 9|' to 59|' with  
  34S 4c  overall energy resolution of 16 keV. DWBA calculations (code DWUCK)    
  34S  c  1971Va21: {+33}S(d,p) E=12 MeV, 77%-enriched {+33}S target made from   
  34S 2c  mass-separated ions implanted in thin Al foil. Used split-pole magnetic
- 34S 3c  spectrograph and position-sensitive detectors covering the interval 5  
- 34S 4c  ' to 95|' in steps of 5|' to measure |s(|q). FWHM|>12-14               
- 34S 5c  keV. DWBA calculations (code DWUCK). Given in comments are the         
- 34S 6c  spectroscopic factors (2J+1)S obtained from the formula:               
- 34S 7c  |s(|q)=1.53[(2J{-f}+1)/(2J{-i}+1)]S(|s{-DWBA}(|q)),                    
- 34S 8c  where J{-f} IS THE FINAL STATE SPIN, AND J{-i} IS                      
- 34S 9c  the initial state spin in {+33}S. 1971Va21 give for the level energies 
- 34S Ac  the average of values measured elsewhere, replaced by evaluators with  
- 34S Bc  those from 1973EnVA                                                    
+ 34S 3c  spectrograph and position-sensitive detectors covering the interval 5 '
+ 34S 4c  to 95|' in steps of 5|' to measure |s(|q). FWHM|>12-14 keV. DWBA       
+ 34S 5c  calculations (code DWUCK). Given in comments are the spectroscopic     
+ 34S 6c  factors (2J+1)S obtained from the formula:                             
+ 34S 7c  |s(|q)=1.53[(2J{-f}+1)/(2J{-i}+1)]S(|s{-DWBA}(|q)), where J{-f} IS THE 
+ 34S 8c  FINAL STATE SPIN, AND J{-i} IS the initial state spin in {+33}S.       
+ 34S 9c  1971Va21 give for the level energies the average of values measured    
+ 34S Ac  elsewhere, replaced by evaluators with those from 1973EnVA             
  34S  c  1963Br05: {+33}S(d,p) E=6 MeV, targets of natural and 25%-enriched     
  34S 2c  {+33}S in between thin Ag foils. Measured proton groups at 20|', 50|', 
- 34S 2c  and 90|' with broad-range magnetic spectrograph and nuclear emulsions  
- 34S  CL S$LABEL=(2^J+1)^S                                                      
+ 34S 3c  and 90|' with broad-range magnetic spectrograph and nuclear emulsions  
+ 34S 4c  1949Da16: {+33}S(d,p) with 3.22-MeV deuterons. Measured |s(E{-p}).     
+ 34S 5c  Deduced Q values and a 0.82-MeV level in {+34}S.                       
+ 34S  cL S$LABEL=(2^J+1)^S                                                      
  34S  cL L$From 1972Cr08, except where noted otherwise                          
  34S  cL S$Unless noted otherwise, the values given here are those of 1972Cr08  
  34S 2cL multiplied by a factor of 4. 1972Cr08 define spectroscopic factor as:  
- 34S 3cL C{+2}S(2J{-f}+1)=[|s(exp)(2J{-i}+1)]/[1.53|s(DWBA)], where J{-f}       
- 34S 4cL is the final state spin and J{-i} is the initial state spin, 3/2+      
- 34S 5cL in this case for {+33}S target. According to 1972Cr08 the              
- 34S 6cL spectroscopic strengths were normalized in such a way that the         
- 34S 7cL spectroscopic factors for another reaction, {+32}S(d,p){+33}S, had the 
- 34S 8cL full single-particle value                                             
+ 34S 3cL C{+2}S(2J{-f}+1)=[|s(exp)(2J{-i}+1)]/[1.53|s(DWBA)], where J{-f} is the
+ 34S 4cL final state spin and J{-i} is the initial state spin, 3/2+ in this case
+ 34S 5cL for {+33}S target. According to 1972Cr08 the spectroscopic strengths   
+ 34S 6cL were normalized in such a way that the spectroscopic factors for       
+ 34S 7cL another reaction, {+32}S(d,p){+33}S, had the full single-particle value
  34S   L 0.0                                           2        1.84            
  34S  cL E$observed by 1972Cr08, 1971Va21, and 1963Br05                         
  34S  cL L$2 (1971Va21)                                                         
@@ -94,7 +94,7 @@
  34S   L 6128                                                                   
  34S  cL E$weak, from 1972Cr08; also observed by 1971Va21. Reported with no     
  34S 2cL uncertainty, which was adopted by evaluators (equal to maximum in the  
- 34S 2cL dataset)                                                               
+ 34S 3cL dataset)                                                               
  34S   L 6174      6                                   1+3      1.00+2.84       
  34S  cL E$weighted average of: 6174 {I8} (1972Cr08); 6173 {I10} (1963Br05)     
  34S   L 6254      6                                   3        2.28            
@@ -125,7 +125,7 @@
  34S   L 7393      10                                                           
  34S  cL E$weighted average of: 7388 {I14} (1972Cr08); 7398 {I14} (1963Br05).   
  34S 2cL The 1972Cr08 energy is reported with no uncertainty, which was adopted 
- 34S 2cL by evaluators (equal to maximum in the dataset)                        
+ 34S 3cL by evaluators (equal to maximum in the dataset)                        
  34S   L 7547      14                                                           
  34S  cL E$weak, from 1972Cr08; reported with no uncertainty, which was adopted 
  34S 2cL by evaluators (equal to maximum in the dataset)                        
@@ -145,4 +145,4 @@
  34S  cL E$from 1963Br05                                                        
  34S   L 8622      14                                                          ?
  34S  cL E$from 1963Br05                                                        
-                                                                                
+
