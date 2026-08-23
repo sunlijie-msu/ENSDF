@@ -2,38 +2,30 @@
  34S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34S   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34S 2 H CUT=28-May-2012$                                                       
- 34S   Q -5491.60  4 11417.164 10883.3 11-7923.655     2012WA38                 
- 34S  cQ $Note: Current evaluation has used the following Q record              
- 34S 2cQ -5491.634 {I4311417}.12 {I310883}.3 {I11}-7923.62 {I6}    2011AuZZ     
- 34S  cQ $S(2n)=20058.76 {I3}, S(2p)=20431.9 {I3} (2011AuZZ)                    
- 34S  cQ $Values in 2003Au03: Q(|b{+-})=-5492.01 {I15}, S(n)=11417.11 {I9},     
- 34S 2cQ S(p)=10883.3 {I11}, Q(|a)=-7923.78 {I11}, S(2n)=20058.73 {I9},         
- 34S xcQ S(2p)=20428.82 {I12}                                                   
- 34S  c  XREF table: levels populated in reactions labelled with XREF=Y:        
- 34S 2c  {+28}Si({+34}S,{+34}S'), {+34}S(p,p'|g), {+206}Pb({+34}S,{+34}S'|g):   
- 34S xc  0, 2128                                                                
- 34S  c  The following abbreviations are used in the table: {+33}S(n,|g) for    
- 34S 2c  {+33}S(n,|g) E=thermal; {+33}S(n,|g),(n,n) for                         
- 34S 2c  {+33}S(n,|g),(n,n):resonances; {+30}Si(|a,|g),(|a,n) for               
- 34S xc  {+30}Si(|a,|g),(|a,n):resonances                                       
- 34S  c  Evidence of rotational behavior in alpha-clusters is shown in          
- 34S 2c  2011No06: {+4}He({+28}Si,X) E=150 MeV, by measuring E|a, I|a, |s(|q)   
- 34S 2c  and resonance energies                                                 
- 34S  c  {+34}S stable isotope identified in mass spectrographic studies by     
- 34S 2c  F.W. Aston, Nature 117 (1926) 893.                                     
- 34S  D  2012Zh06: measured momentum distributions and production cross section 
- 34S 2D  in 9BE,181TA(40AR,X) at 57 MEV/nucleon                                 
+ 34S   Q -5491.60  4 11417.154 10883.3 11-7923.645     2021WA16                 
+ 34S  cQ $S(2n)=20058.789 {I40}, S(2p)=20431.9 {I3} (2021Wa16)                  
+ 34S  c  Isotope discovery (2012Th10): identified using the mass spectrometer at
+ 34S 2c  the Cavendish Laboratory, UK (1926As01).                               
+ 34CL c  {+34}S production:                                                     
+
+ 34S  c  Evidence of rotational behavior in alpha-clusters is shown in 2011No06:
+ 34S 2c  {+4}He({+28}Si,X) E=150 MeV, by measuring E|a, I|a, |s(|q) and         
+ 34S 3c  resonance energies                                                     
+ 34S  c  {+34}S stable isotope identified in mass spectrographic studies by F.W.
+ 34S 2c  Aston, Nature 117 (1926) 893.                                          
+ 34S  d  2012Zh06: measured momentum distributions and production cross section 
+ 34S 2d  in 9BE,181TA(40AR,X) at 57 MEV/nucleon                                 
  34S  cG E,RI$From {+33}S(n,|g), unless noted otherwise                         
  34S  cG E(a),RI(b),M(c),MR(d)$From {+30}Si(|a,|g),(|a,n)                       
  34S  cL $Table: the |G{-|g} values are from {+30}Si(|a,|g),(|a,n), and the     
  34S 2cL |G{-|g0} values are from {+34}S(|g,|g'),(pol |g,|g'), unless noted     
- 34S xcL otherwise                                                              
+ 34S 3cL otherwise                                                              
  34S  cL E$From {+33}S(n,|g), unless noted otherwise                            
  34S  cL J$The states populated by {+32}S(t,p) and {+30}Si(|a,|g),(|a,n)        
  34S 2cL reactions are only of natural parity                                   
- 34S  CL BAND(A)$ GS BAND                                                       
- 34S  CL BAND(C)$ |g cascade based on 3-, 4624                                  
- 34S  CL BAND(B)$ |g cascade based on 3-, 5680                                  
+ 34S  cL BAND(A)$ GS BAND                                                       
+ 34S  cL BAND(C)$ |g cascade based on 3-, 4624                                  
+ 34S  cL BAND(B)$ |g cascade based on 3-, 5680                                  
  34S   XA34P B- DECAY (12.43 S)                                                 
  34S   XB34CL EC DECAY (1.5266 S)                                               
  34S   XC34CL EC DECAY (31.99 M)                                                
@@ -82,15 +74,13 @@
  34S  cL J$E2 |DJ=2 |g to 0+, g.s. ({+31}P(|a,p|g), {+24}Mg({+16}O,|a2p|g))     
  34S  cL T$mean lifetime |t in fs, from {+31}P(|a,p|g): 440 {I50} (1970Gr11),   
  34S 2cL 400 {I32} (1970Ra17), 400 {I40} (1974Gr06), 460 {I95} (1970Br18), 467  
- 34S 2cL {I90} (1970Cu02); from {+32}S(t,p|g): 490 {I30} (1977He12);            
- 34S 2cL from {+34}S(e,e'): 486 {I17} (1985Wo06);                               
- 34S 2cL from {+34}S(|a,|a'): 442 {I25} (1980Ba40);                             
- 34S 2cL from {+28}Si({+34}S,{+34}S'): 462 {I26} (1977Sc36).                    
- 34S 2cL Weighted average (external uncertainty) |t: 459 fs {i11}.              
- 34S 2cL Others T{-1/2}: 350 fs {i60} (1969Gr03, from {+31}P(|a,p|g));          
- 34S 3cL 380 fs {i60} (1974Ol02, from {+206}Pb({+34}S,{+34}S'|g));              
- 34S 3cL 307 fs {i17} (2001Ra27 evaluation, total of 14 measurements are        
- 34S 4cL listed in this evaluation)                                             
+ 34S 3cL {I90} (1970Cu02); from {+32}S(t,p|g): 490 {I30} (1977He12); from       
+ 34S 4cL {+34}S(e,e'): 486 {I17} (1985Wo06); from {+34}S(|a,|a'): 442 {I25}     
+ 34S 5cL (1980Ba40); from {+28}Si({+34}S,{+34}S'): 462 {I26} (1977Sc36).        
+ 34S 6cL Weighted average (external uncertainty) |t: 459 fs {i11}. Others       
+ 34S 7cL T{-1/2}: 350 fs {i60} (1969Gr03, from {+31}P(|a,p|g)); 380 fs {i60}    
+ 34S 8cL (1974Ol02, from {+206}Pb({+34}S,{+34}S'|g)); 307 fs {i17} (2001Ra27    
+ 34S 9cL evaluation, total of 14 measurements are listed in this evaluation)    
  34S   G 2127.499  20 100       E2                                              
  34S  cG M$from {+31}P(|a,p|g), {+24}Mg({+16}O,|a2p|g)                          
  34S B G BE2W=6.24 16                                                           
@@ -100,9 +90,9 @@
  34S  cL J$E2 |DJ=2 |g to 0+, g.s. ({+24}Mg({+16}O,|a2p|g))                     
  34S  cL T$mean lifetime |t in fs, from {+31}P(|a,p|g): 218 {I30} (1970Gr11);   
  34S 2cL 175 {I25} (1970Ra17); 190 {I40} (1970Br18). From {+31}P(|a,p|g): 192   
- 34S 2cL {I13} (1977He12). From {+34}S(e,e'): 216 {I25} (1985Wo06). Weighted    
- 34S 2cL average: 196 {I10}. Others (from {+31}P(|a,p|g)): 145 {I20}            
- 34S 2cL (1974Gr06); 144 {I28} (1970Cu02); 120 {I30} (1969Gr03).                
+ 34S 3cL {I13} (1977He12). From {+34}S(e,e'): 216 {I25} (1985Wo06). Weighted    
+ 34S 4cL average: 196 {I10}. Others (from {+31}P(|a,p|g)): 145 {I20} (1974Gr06);
+ 34S 5cL 144 {I28} (1970Cu02); 120 {I30} (1969Gr03).                            
  34S   G 1176.650  20 100.0  9  M1+E2    -0.16   2                              
  34S  cG M,MR$D+Q |DJ=0 |g ({+31}P(|a,p|g))                                     
  34S B G BM1W=0.052 3$BE2W=3.8 10                                               
@@ -120,8 +110,8 @@
  34S 2cG based on level scheme                                                  
  34S B G BE2W=4.2 7                                                             
  34S   G 3916.2       2      LT  [E0]                                          ?
- 34S  cG $ X(E0/E2)=0.093 {I15}, |r{+2}(E0)=0.011 {I3},                         
- 34S 2cG q{-K}{+2}(E0/E2)=0.055 {I9} (2005Ki02 evaluation)                      
+ 34S  cG $ X(E0/E2)=0.093 {I15}, |r{+2}(E0)=0.011 {I3}, q{-K}{+2}(E0/E2)=0.055  
+ 34S 2cG {I9} (2005Ki02 evaluation)                                             
  34S  cG E$from |DE{-levels}                                                    
  34S  cG RI$from {+31}P(|a,p|g)                                                 
  34S   L 4074.667  14 1+                17 FS    LT                             
@@ -158,7 +148,7 @@
  34S  cL J$L=3 in {+32}S(t,p), and also from {+34}S(p,p'),(pol p,p')            
  34S  cL T$mean lifetime |t in fs, from {+31}P(|a,p|g): 125 {I20} (1970Gr11);   
  34S 2cL 135 {I17} (1970Ra17); 145 {I50} (1971So01); 115 {I10} (1974Gr06).      
- 34S 2cL Weighted average: 121 {I8}                                             
+ 34S 3cL Weighted average: 121 {I8}                                             
  34S  cL $ Adopted B(E3)=0.008 {I2} (2002Ki06 evaluation)                       
  34S   G 509.6     12 4      LT                                                ?
  34S  cG E$from |DE{-levels}                                                    
@@ -179,7 +169,7 @@
  34S 2cL ({+31}P(|a,p|g)); also J=4 in {+34}S(n,n),(n,n')                       
  34S  cL T$mean lifetime |t in fs, from {+31}P(|a,p|g): 132 {I15} (1970Gr11);   
  34S 2cL 131 {I13} (1970Ra17); 110 {I20} (1971So01); 125 {I10} (1974Gr06); 130  
- 34S 2cL {I20} (1977GrZH). Weighted average: 127 {I6}                           
+ 34S 3cL {I20} (1977GrZH). Weighted average: 127 {I6}                           
  34S   G 573.4     11 3      LT                                                ?
  34S  cG E$from |DE{-levels}                                                    
  34S  cG RI$from {+31}P(|a,p|g)                                                 
@@ -201,8 +191,8 @@
  34S   L 4876.839  243+                 40 FS     15                            
  34S X L XREF=CDGJLR(*4880)S(*4900)                                             
  34S  cL J$M1+E2 |DJ=1 |g to 2+, 3303 and test of spin hyphotheses (1971Mu03)   
- 34S  cL T$mean lifetime |t in fs, from {+31}P(|a,p|g): 57 {I22}                
- 34S 2cL (1970Ra17). Others: <85 (1970Gr11), |<70 (1974Gr06).                   
+ 34S  cL T$mean lifetime |t in fs, from {+31}P(|a,p|g): 57 {I22} (1970Ra17).    
+ 34S 2cL Others: <85 (1970Gr11), |<70 (1974Gr06).                               
  34S   G 187.9       0.4     LT                                                ?
  34S   G 252.4       0.4     LT                                                ?
  34S   G 762.0       1.6     LT                                                ?
@@ -268,7 +258,7 @@
  34S X L XREF=GHJLOR                                                            
  34S  cL E$5380 (1971Mu03); 5382 {I4} (1974Gr06)                                
  34S  cL J$D |DJ=1 |g to 0+, g.s. and M1+E2 |DJ=1 |g to 2+, 2127                
- 34S xcL ({+31}P(|a,p|g))                                                       
+ 34S 2cL ({+31}P(|a,p|g))                                                       
  34S  cL T$mean lifetime |t in fs from {+31}P(|a,p|g): |<70 (1974Gr06)          
  34S   G 151.8       0.5     LT                                                ?
  34S   G 491.2       1.6     LT                                                ?
@@ -288,7 +278,7 @@
  34S   L 5679.927  17  3-                                                   B   
  34S X L XREF=DGJLO                                                             
  34S  cL J$D |DJ=1 |g from 4-, 6251 ({+24}Mg({+16}O,|a2p|g)); |p=- from L=1 in  
- 34S xcL {+33}S(d,p)                                                            
+ 34S 2cL {+33}S(d,p)                                                            
  34S   G 357.4       0.2     LT                                                ?
  34S   G 451.8       0.2     LT                                                ?
  34S   G 789.1     6 1.5     7                                                  
@@ -309,10 +299,10 @@
  34S X L XREF=DGHLOQTZ                                                          
  34S  cL E$from {+24}Mg({+16}O,|a2p|g)                                          
  34S  cL J$E2 |DJ=2 |g to 3-, 4625 and E1 |DJ=1 |g to 4+, 4689                  
- 34S xcL ({+24}Mg({+16}O,|a2p|g))                                               
+ 34S 2cL ({+24}Mg({+16}O,|a2p|g))                                               
  34S  cL T$mean lifetime |t in ps, from {+31}P(|a,p|g): 54 {I5} (1972Gr15); from
  34S 2cL {+35}Cl(t,|a|g): 55 {I7} (1976Co11); from {+24}Mg({+16}O,|a2p|g): 52.9 
- 34S 2cL {I24} (1976Me03). Weighted average: 53.3 {I21}                         
+ 34S 3cL {I24} (1976Me03). Weighted average: 53.3 {I21}                         
  34S   G 1001.6    5  100    10 E1                                              
  34S  cG E,RI$from {+24}Mg({+16}O,|a2p|g)                                       
  34S  cG M$D(+Q) |DJ=1 |g, E1 from polarization measurement ({+31}P(|a,p|g))    
@@ -391,7 +381,7 @@
  34S   L 6251.22   19 4+               0.42 PS   +49-21                         
  34S X L XREF=D(*6251.5)GJO(*6248)RS                                            
  34S  cL J$M1+E2 |DJ=1 |g to 3+, 4875 and test of spin hypotheses               
- 34S xcL ({+31}P(|a,p|g))                                                       
+ 34S 2cL ({+31}P(|a,p|g))                                                       
  34S  cL T$mean lifetime |t in fs, from {+31}P(|a,p|g): 600 {I+700-300}         
  34S   G 1374.34   20 46     10 M1+E2    -3.7    +7-26                          
  34S  cG M$D+Q |DJ=1 |g, M1+E2 based on RUL ({+31}P(|a,p|g))                    
@@ -404,7 +394,7 @@
  34S 2cL {+33}S(d,p)                                                            
  34S   G 571.7     6 42      16 D                                               
  34S  cG M$D, |DJ=1 |g from {+24}Mg({+16}O,|a2p|g) (angular distribution and    
- 34S xcG R(ADO))                                                                
+ 34S 2cG R(ADO))                                                                
  34S   G 1627.2    10 100    37                                                 
  34S   L 6342.50   10 1-                                                        
  34S X L XREF=GHJLO                                                             
@@ -455,7 +445,7 @@
  34S  cL E$from {+31}P(|a,p|g)                                                  
  34S  cL J$D |DJ=1 |g to 3-, 5680 ({+31}P(|a,p|g); J=2 excluded by 1977GrZH);   
  34S 2cL |p=(-) from L=(3) in {+33}S(d,p) sustained by argument in              
- 34S xcL {+34}S(|a,|a')                                                         
+ 34S 3cL {+34}S(|a,|a')                                                         
  34S  cL T$mean lifetime |t in fs from {+31}P(|a,p|g): 60 {I15}                 
  34S   G 959.9     14 28     13 D                                               
  34S  cG E,RI$from {+31}P(|a,p|g)                                               
@@ -534,8 +524,8 @@
  34S   L 7112        2+                                                         
  34S X L XREF=GS                                                                
  34S  cL E$from {+31}P(|a,p|g)                                                  
- 34S  cL J$Q, |DJ=2 |g to 0+, g.s. and test of spin hypotheses                  
- 34S 2cL ({+31}P(|a,p|g)); |p=+ from L=0 in (d,{+3}He)                          
+ 34S  cL J$Q, |DJ=2 |g to 0+, g.s. and test of spin hypotheses ({+31}P(|a,p|g));
+ 34S 2cL |p=+ from L=0 in (d,{+3}He)                                            
  34S   G 3809        40      11                                                 
  34S  cG E,RI$from {+31}P(|a,p|g)                                               
  34S   G 4985        100     11[D+Q]     +0.27   +19-15                         
@@ -564,7 +554,7 @@
  34S   L 7248      2 (4)               14 FS     7                              
  34S X L XREF=GO(*7248)Z(*7240)                                                 
  34S  cL J$(2,4) from 1977GrZH in {+31}P(|a,p|g); (4) from D |DJ=1 |g to 5-,    
- 34S xcL 5688                                                                   
+ 34S 2cL 5688                                                                   
  34S  cL T$mean lifetime |t in fs, from {+31}P(|a,p|g): 20 {I10} (1977GrZH)     
  34S   G 1560      4 100       (D)                                              
  34S  cG E$from {+31}P(|a,p|g)                                                  
@@ -627,7 +617,7 @@
  34S X L XREF=HL                                                                
  34S  cL J$L=2 in {+32}S(t,p); {+33}S(d,p) gives |p=- from L=1 (not adopted)    
  34S  cL E$weighted average of 7739 {I16} ({+32}S(t,p)) and 7753 {I9}           
- 34S xcL ({+33}S(d,p))                                                          
+ 34S 2cL ({+33}S(d,p))                                                          
  34S   L 7781.22   6  (1)-                                                      
  34S 2 L WIDTHG0=57 EV 9                                                        
  34S X L XREF=JLMOS                                                             
@@ -638,10 +628,10 @@
  34S X L XREF=DG                                                                
  34S  cL E$from {+24}Mg({+16}O,|a2p|g)                                          
  34S  cL J$M1+E2 |DJ=1 |g to 5-, 5691 and E2 |DJ=2 |g to 4-, 6252               
- 34S xcL ({+24}Mg({+16}O,|a2p|g)                                                
+ 34S 2cL ({+24}Mg({+16}O,|a2p|g)                                                
  34S  cL T$weighted average of values (in fs), from {+24}Mg({+16}O,|a2p|g): 132 
- 34S 2cL {I35} (2005Ma03), and from {+31}P(|a,p|g): 80 {I24} (from mean         
- 34S 2cL lifetime |t 115 {I35} (1977GrZH))                                      
+ 34S 2cL {I35} (2005Ma03), and from {+31}P(|a,p|g): 80 {I24} (from mean lifetime
+ 34S 3cL |t 115 {I35} (1977GrZH))                                               
  34S   G 1539.6    5  19     4  E2                                              
  34S F G FL=6251.68                                                             
  34S  cG E,RI,M$from {+24}Mg({+16}O,|a2p|g)                                     
@@ -675,8 +665,8 @@
  34S  cL T$mean lifetime |t in fs, from {+31}P(|a,p|g): 64 {I10} (1977GrZH)     
  34S   L 8138.10   8 (1)-                                                       
  34S X L XREF=JL                                                                
- 34S  cL J$(1,2+) from gammas to 0+, g.s., 1-, 6343, and 2+, 2128;              
- 34S 2cL |p=- from L=1 in {+33}S(d,p)                                           
+ 34S  cL J$(1,2+) from gammas to 0+, g.s., 1-, 6343, and 2+, 2128; |p=- from L=1
+ 34S 2cL in {+33}S(d,p)                                                         
  34S   G 1795.3    3  14     4                                              &   
  34S   G 2290.26   15 19     4                                                  
  34S   G 6010.3    3 36      6                                                  
@@ -714,7 +704,7 @@
  34S  cL J$E2 |DJ=2 |g to 5-, 5691 and D |DJ=1 |g to 6-, 7791; 7- in 2005Ma03   
  34S  cL T$weighted average of values (in fs) from {+24}Mg({+16}O,|a2p|g): 85   
  34S 2cL {I28} (2005Ma03) and from {+31}P(|a,p|g): 83 {I14} (from mean lifetime 
- 34S 2cL |t in fs: 120 {I20} (1977GrZH))                                        
+ 34S 3cL |t in fs: 120 {I20} (1977GrZH))                                        
  34S   G 580.3     6  2      1  D                                               
  34S  cG E,RI,M$from {+24}Mg({+16}O,|a2p|g)                                     
  34S   G 2680.5    6  100    10 E2                                              
@@ -761,8 +751,8 @@
  34S   L 8656      4  (1)+                                                      
  34S 2 L WIDTHG0=0.41 EV 19                                                     
  34S X L XREF=MO                                                                
- 34S  cL E$weighted average of 8656 {I5} ({+34}S(p,p'),(pol p,p')) and          
- 34S 2cL 8657 {I7} ({+34}S(|g,|g'),(pol |g,|g'))                                
+ 34S  cL E$weighted average of 8656 {I5} ({+34}S(p,p'),(pol p,p')) and 8657 {I7}
+ 34S 2cL ({+34}S(|g,|g'),(pol |g,|g'))                                          
  34S  cL J$from {+34}S(|g,|g'),(pol |g,|g')                                     
  34S   G 8655      4                                                            
  34S  cG E$from |DE{-levels}                                                    
@@ -902,8 +892,8 @@
  34S   L 9868      4  (1)+                                                      
  34S 2 L WIDTHG0=0.60 EV 12                                                     
  34S X L XREF=MOV                                                               
- 34S  cL E$weighted average of 9860 {I7} ({+34}S(|g,|g'),(pol |g,|g')) and      
- 34S 2cL 9872 {I5} ({+34}S(p,p'),(pol p,p'))                                    
+ 34S  cL E$weighted average of 9860 {I7} ({+34}S(|g,|g'),(pol |g,|g')) and 9872 
+ 34S 2cL {I5} ({+34}S(p,p'),(pol p,p'))                                         
  34S  cL J$from {+34}S(|g,|g'),(pol |g,|g')                                     
  34S   G 9866      4                                                            
  34S  cG E$from |DE{-levels} (measured by {+34}S(|g,|g'),(pol |g,|g'))          
@@ -981,7 +971,7 @@
  34S X L XREF=E                                                                 
  34S   L 10248     4  1-                                                        
  34S X L XREF=E                                                                 
- 34S  DL J$E1 DJ=1 G TO 0+, GS                                                  
+ 34S  dL J$E1 DJ=1 G TO 0+, GS                                                  
  34S   G 8119        100                                                        
  34S F G FLAG=ab                                                                
  34S   G 10246       20        E1                                               
@@ -998,8 +988,8 @@
  34S   G 4988.6    4 100     14                                                 
  34S   G 6236.3    11 30     8                                                  
  34S   G 8182.9                                                                 
- 34S  cG $ In (|a,|g),(|a,n) relative intensities are: 100 for 8182.9|g, and    
- 34S 2cG 40 for 10309.9|g. These cannot be matched with intensities from (n,|g) 
+ 34S  cG $ In (|a,|g),(|a,n) relative intensities are: 100 for 8182.9|g, and 40 
+ 34S 2cG for 10309.9|g. These cannot be matched with intensities from (n,|g)    
  34S   G 10309.9               E2                                               
  34S   L 10385     4                                                            
  34S X L XREF=E                                                                 
@@ -1204,7 +1194,7 @@
  34S  cL J$(E2) |DJ=2 |g to 0+, g.s.                                            
  34S   G X           100                                                        
  34S F G FLAG=b                                                                 
- 34S  DG $unobservedGammaIntensity=1000:From {+30}Si(|a,|g),(|a,n)              
+ 34S  dG $unobservedGammaIntensity=1000:From {+30}Si(|a,|g),(|a,n)              
  34S   G 7915        8                                                          
  34S F G FLAG=ab                                                                
  34S   G 9091        10                                                         
@@ -1281,7 +1271,7 @@
  34S  cL J$E2 |DJ=2 |g to 0+, g.s.                                              
  34S   G X           79                                                         
  34S F G FLAG=b                                                                 
- 34S  DG $unobservedGammaIntensity=79:From {+30}Si(|a,|g),(|a,n)                
+ 34S  dG $unobservedGammaIntensity=79:From {+30}Si(|a,|g),(|a,n)                
  34S   G 8075        11                                                         
  34S F G FLAG=ab                                                                
  34S   G 9251        30                                                         
@@ -1301,14 +1291,14 @@
  34S X L XREF=J                                                                 
  34S  cL E$from least-squares fit to E|g data in {+33}S(n,|g) dataset. This     
  34S 2cL value is higher by |?0.10 keV than S(n)=11417.12 {I6} (2011AuZZ).      
- 34S 3cL Other: S(n)=11417.11 {I9} (2003Au03),                                  
- 34S 4cL 11417.22 {I5} and 11417.12 {I10} (1983Ra04) using 'mass-doublet        
- 34S 5cL standard' and 'gold standard', respectively                            
+ 34S 3cL Other: S(n)=11417.11 {I9} (2003Au03), 11417.22 {I5} and 11417.12 {I10} 
+ 34S 4cL (1983Ra04) using 'mass-doublet standard' and 'gold standard',          
+ 34S 5cL respectively                                                           
  34S  cL J$ s-wave capture in {+33}S g.s., J|p=3/2+                             
- 34S  cL $ Observed deexcitation intensity is 83% {I2}, other 17% intensity     
- 34S 2cL of the primary |g rays is unaccounted                                  
+ 34S  cL $ Observed deexcitation intensity is 83% {I2}, other 17% intensity of  
+ 34S 2cL the primary |g rays is unaccounted                                     
  34S   G 392.28    11 0.2    3                                                  
- 34S  DG E$ typo corrected, it was 392.98 in earlier ENSDF                      
+ 34S  dG E$ typo corrected, it was 392.98 in earlier ENSDF                      
  34S F G FL=11024.94                                                            
  34S   G 576.80    19 0.24   3                                                  
  34S   G 767.20    21 0.16   3                                                  
@@ -1438,11 +1428,11 @@
  34S X L XREF=EK                                                                
  34S 2 L WIDTHN=65 EV 10 $ WIDTHG=0.6 EV $ WIDTHA=0.11 KEV 6                    
  34S  cL $|G{-n} and |G|a from {+33}S(n,|g),(n,n); |G{-|g} from                 
- 34S xcL {+30}Si(|a,|g),(|a,n)                                                  
+ 34S 2cL {+30}Si(|a,|g),(|a,n)                                                  
  34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
  34S   G X           100                                                        
  34S F G FLAG=b                                                                 
- 34S  DG $unobservedGammaIntensity=1299:From {+30}Si(|a,|g),(|a,n)              
+ 34S  dG $unobservedGammaIntensity=1299:From {+30}Si(|a,|g),(|a,n)              
  34S   G 8180.7      7.7                                                        
  34S F G FLAG=ab                                                                
  34S   G 9357.0      4.3                                                        
@@ -1483,7 +1473,7 @@
  34S  cL $|G from {+33}S(n,|g),(n,n) and |G{-|g} from {+30}Si(|a,|g),(|a,n)     
  34S   G X           100                                                        
  34S F G FLAG=b                                                                 
- 34S  DG $unobservedGammaIntensity=1613:From {+30}Si(|a,|g),(|a,n)              
+ 34S  dG $unobservedGammaIntensity=1613:From {+30}Si(|a,|g),(|a,n)              
  34S   G 8238.6      3.9                                                        
  34S F G FLAG=b                                                                 
  34S   G 9414.9      6.2                                                        
@@ -1533,7 +1523,7 @@
  34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
  34S   G X           100                                                        
  34S F G FLAG=b                                                                 
- 34S  DG $unobservedGammaIntensity=769:From {+30}Si(|a,|g),(|a,n)               
+ 34S  dG $unobservedGammaIntensity=769:From {+30}Si(|a,|g),(|a,n)               
  34S   G 8337        13                                                         
  34S F G FLAG=ab                                                                
  34S   G 9513        2.7                                                        
@@ -1723,4 +1713,4 @@
  34S X L XREF=D                                                                 
  34S  cL J$|g to (10+)                                                          
  34S   G 2688.4    8  100                                                       
-                                                                                
+
