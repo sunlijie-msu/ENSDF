@@ -6,19 +6,18 @@ description: >
   parenthetical notations such as (energy), (*), and (?).
 argument-hint: [adopted.ens] [add|remove] [dataset-label]
 ---
-
 # Update ENSDF Cross-Reference (XREF) Labels
 
 ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
-## Scenario 1: Add Dataset
+## Scenario 1: Add Dataset(s)
 
-Determine the shift mapping (e.g., new `F`: F→G, G→H, H→I, and so on; A–E unchanged).
+Before editing, compare complete old/new X-record lists. Build one `old label → new label` map; use final positions, not sequential shifts. For multiple insertions, insert all new labels in one pass.
 
 ### Steps
 
 #### 1. Update X-Records
-Insert new dataset at appropriate position, shift subsequent labels, pad spaces to 80 characters.
+Replace index with final X-record list. Pad each record to 80 characters.
 
 #### 2. Alphabetically Shift Existing XREF Labels
 Apply mapping — notations `(energy)`, `(*)`, `(?)` travel with their labels:
@@ -27,10 +26,10 @@ Apply mapping — notations `(energy)`, `(*)`, `(?)` travel with their labels:
 - `XREF=F(*)J` → `XREF=G(*)K`
 - `XREF=H(7300*)J` → `XREF=I(7300*)K`
 
-#### 3. Insert New XREF Label
-For levels in the new dataset, insert label alphabetically:
+#### 3. Insert New XREF Labels
+Match each new dataset L-record to adopted levels before insertion. Insert labels alphabetically; use `Label(source-energy)` when source/adopted energies differ, and retain source `?`/`*` only when present in the source record:
 - `XREF=ABCDGHIJK` → `XREF=ABCDFGHIJK`
-
+- `XREF=ABCDFG` → `XREF=ABCDE(3326)FG`
 
 ## Scenario 2: Remove Dataset
 
