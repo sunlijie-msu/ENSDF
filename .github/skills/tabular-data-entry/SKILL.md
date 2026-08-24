@@ -35,6 +35,7 @@ SPECIAL HANDLING
   [ ] Limit markers       < or > in RI cells → GT/LT in DRI field
   [ ] DCO or ADO ratios → cG comments only, not data fields
   [ ] POL values → cG comments only, positive needs + and negative needs - signs
+  [ ] Intensity uncertainty rounding: 3-digit DRI (e.g., 1.43) → round to ≤2 digits (1.4); round RI to matching decimal place
   [ ] Other:              [describe]
 ```
 
