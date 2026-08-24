@@ -2,7 +2,7 @@
  34SI  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34SI  H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34SI2 H CUT=28-May-2012$                                                       
- 34SI DG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
+ 34SI dG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  34SI dB EAV,LOGFT$From BetaShape v2.4 (Jun-2024) 2023Mo21.                     
  34SI dL E$Least-squares fitting is done by GLSC (version 12-Jun-2026)          
  34SI c  2019Li41: {+34}Mg and {+34}Al ions were produced via fragmentation     
@@ -60,6 +60,7 @@
  34SI3cB incomplete decay scheme, and the associated log {Ift} values are       
  34SI4cB considered lower limits.                                               
  34SI cG E,RI$From 2019Li41.                                                    
+ 34SI cG M,MR$From the Adopted Gammas.                                          
  34SI cL E$From a least-squares fit to |g-ray energies.                         
  34SI cL J,T$From the Adopted Levels.                                           
  34AL  P 46.56     11 1+               23.2 MS   14             16994.1   23    
@@ -85,16 +86,21 @@
  34SI  B             37      6           4.74    7                              
  34SIS B EAV=6856.8 69                                                          
  34SI  L 3325.59   6  2+               82 FS     32                             
- 34SI  G 3325.4    1  100    3                                                  
+ 34SI  G 3325.4    1  100    3  [E2]                                            
+ 34SIS G  CC=0.000923 13$KC=2.97E-6 4$LC=2.116E-7 30$MC=1.394E-8 20             
+ 34SIS G  IPC=0.000920 13                                                       
  34SI  B             7       3           5.37    19                             
  34SIS B EAV=6557.0 70                                                          
  34SI  L 4254.70   8  3-               210 NS    LT                             
- 34SI  G 929.1     1  2.6    1                                                  
- 34SI  G 4254.4    1  0.7    1                                                  
+ 34SI  G 929.1     1  2.6    1  (E1+M2)  +0.02   1                              
+ 34SIS G  CC=1.645E-5 23$KC=1.529E-5 21$LC=1.092E-6 15$MC=7.19E-8 10            
+ 34SI  G 4254.4    1  0.7    1  [E3]                                            
+ 34SIS G  CC=0.000970 14$KC=2.67E-6 4$LC=1.907E-7 27$MC=1.257E-8 18             
+ 34SIS G  IPC=0.000967 14                                                       
  34SI  B             0.1     LT          7.1     GT                             
  34SIS B EAV=6099.0 70                                                          
  34SI  L 4518.98   7  (2+)                                                      
- 34SI  G 1193.4    1  36.5   8                                                  
+ 34SI  G 1193.4    1  36.5   8  D+Q      +0.43   2                              
  34SI  G 4518.6    1  2.0    1                                                  
  34SI  B             4.8     12          5.35    11                            ?
  34SIS B EAV=5969.6 70                                                          
