@@ -1,0 +1,26 @@
+Hypothesis A: one γ emission per one proton decay.
+Hypothesis B: zero γ emission per one proton decay.
+
+The Si detectors detect 125 protons.
+
+The Ge detectors' efficiency at 1247 keV is 5 %, so 6.25 γ counts are expected under Hypothesis A.
+0 γ counts are expected under Hypothesis B.
+
+Data = 0 because no γ counts are observed in data.
+
+We can evaluate the probabilities of Hypotheses A and B using Bayes' theorem:
+
+Posterior: P(A|Data)=P(Data|A)*P(A)/P(Data)
+Posterior: P(B|Data)=P(Data|B)*P(B)/P(Data)
+
+Likelihood: P(Data|A) = e^(-6.25) = 0.00193. Poisson is appropriate for counting rare events.
+Likelihood: P(Data|B) = 1.0
+
+Bayes Factor = P(Data|A)/P(Data|B) = 0.00193/1.0 = 0.00193
+Priors: P(A) = P(B)
+
+P(A|Data)/P(B|Data) = P(Data|A)*P(A)/P(Data|B)*P(B) = P(Data|A)/P(Data|B) = 0.00193
+Therefore, Hypothesis B is about 518 times more likely than Hypothesis A.
+The data strongly favor Hypothesis B.
+
+Conclusion: Your analysis is mathematically sound and scientifically rigorous.
