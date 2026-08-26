@@ -31,7 +31,50 @@ CREATE_TOOL_NAMES = {
     "functions.create_file",
     "vscode.createFile",
 }
+DIRECTORY_TOOL_NAMES = {
+    "create_directory",
+    "createDirectory",
+    "edit/createDirectory",
+    "functions.create_directory",
+    "vscode.createDirectory",
+}
 PATCH_TOOL_NAMES = {"apply_patch", "edit/applyPatch", "functions.apply_patch"}
+TERMINAL_TOOL_NAMES = {
+    "run_in_terminal",
+    "execute/runInTerminal",
+    "functions.run_in_terminal",
+}
+WRITE_COMMANDS = {
+    "new-item",
+    "ni",
+    "set-content",
+    "sc",
+    "add-content",
+    "ac",
+    "out-file",
+    "of",
+    "mkdir",
+    "md",
+    "new-item -itemtype directory",
+    "copy-item",
+    "cp",
+    "move-item",
+    "mv",
+    "tee-object",
+    "tee",
+}
+PATH_OPTIONS = {
+    "-path",
+    "-literalpath",
+    "-destination",
+    "-target",
+    "-filepath",
+    "-name",
+}
+OPTIONS_WITH_VALUES = PATH_OPTIONS | {
+    "-itemtype",
+    "-value",
+}
 
 
 def load_input():
@@ -63,6 +106,12 @@ def default_workspace_root():
     return os.path.dirname(
         os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     )
+
+
+def unquote_token(token):
+    if len(token) >= 2 and token[0] == token[-1] and token[0] in ('"', "'"):
+        return token[1:-1]
+    return token
 
 
 def resolve_path(file_path, workspace_root):
@@ -102,11 +151,12 @@ def extract_target_paths(hook_input):
     if not isinstance(tool_input, dict):
         return []
 
-    if tool_name in CREATE_TOOL_NAMES:
+    if tool_name in CREATE_TOOL_NAMES or tool_name in DIRECTORY_TOOL_NAMES:
         for key in ("filePath", "file_path", "path"):
             value = tool_input.get(key)
             if isinstance(value, str) and value.strip():
-                return [(value, "create_file")]
+                operation = "create_directory" if tool_name in DIRECTORY_TOOL_NAMES else "create_file"
+                return [(value, operation)]
         return []
 
     if tool_name in PATCH_TOOL_NAMES:
@@ -118,7 +168,55 @@ def extract_target_paths(hook_input):
             paths.append((match.group(1), "apply_patch add-file"))
         return paths
 
+    if tool_name in TERMINAL_TOOL_NAMES:
+        command = tool_input.get("command") or tool_input.get("input") or ""
+        if not isinstance(command, str):
+            return []
+        return extract_terminal_targets(command)
+
     return []
+
+
+def extract_terminal_targets(command):
+    """Return targets for common shell write commands and redirections.
+
+    A missing target is represented by an empty path so the caller can deny
+    ambiguous write operations instead of allowing them silently.
+    """
+    tokens = re.findall(r'"[^"]*"|\'[^\']*\'|[^\s|;&]+', command)
+    normalized_tokens = [unquote_token(token) for token in tokens]
+    targets = []
+    write_seen = False
+    pending_option = None
+    for token in normalized_tokens:
+        if pending_option:
+            if pending_option == "path":
+                targets.append((token, "terminal write"))
+            elif pending_option == "redirection":
+                targets.append((token, "terminal redirection"))
+            pending_option = None
+            continue
+        lower = token.lower()
+        redirection = re.match(r"^\d*(>>|>)(.*)$", token)
+        if redirection:
+            target = redirection.group(2)
+            if target:
+                targets.append((target, "terminal redirection"))
+            else:
+                pending_option = "redirection"
+            continue
+        if lower in WRITE_COMMANDS or lower.startswith("new-item"):
+            write_seen = True
+            continue
+        if write_seen and lower in OPTIONS_WITH_VALUES:
+            pending_option = "path" if lower in PATH_OPTIONS else "value"
+            continue
+        if write_seen and not token.startswith("-") and lower not in ("file", "directory"):
+            targets.append((token, "terminal write"))
+    if pending_option in ("path", "redirection") or (write_seen and not targets):
+        operation = "terminal redirection" if pending_option == "redirection" else "terminal write"
+        targets.append(("", operation))
+    return targets
 
 
 def main():
@@ -136,10 +234,17 @@ def main():
     if not target_paths:
         sys.exit(0)
 
-    workspace_root = hook_input.get("cwd") or default_workspace_root()
-    workspace_root = os.path.realpath(os.path.normpath(workspace_root))
+    # Policy root is derived from this hook, not caller-supplied cwd.
+    workspace_root = default_workspace_root()
 
     for file_path, operation in target_paths:
+        if not file_path:
+            emit_denial(
+                "BLOCKED by workspace security hook (block-root-file-creation).\n\n"
+                f"Reason: Ambiguous {operation} target; file creation cannot be verified safely.\n"
+                "Use an explicit path under .github/temp/ for AI-generated files."
+            )
+            break
         violation, matched_dir, absolute_path = classify_path(file_path, workspace_root)
         if not violation:
             continue
