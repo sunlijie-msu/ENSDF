@@ -4,7 +4,7 @@
       {
         "type": "command",
         "command": "python .github/hooks/scripts/block-root-file-creation.py",
-        "windows": "powershell -ExecutionPolicy Bypass -File .github/hooks/scripts/block-root-file-creation.ps1",
+        "windows": "python .github/hooks/scripts/block-root-file-creation.py",
         "timeout": 10
       }
     ]

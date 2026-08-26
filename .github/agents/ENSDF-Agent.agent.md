@@ -7,6 +7,10 @@ model: ["claude-opus-5"]
 hooks:
   PreToolUse:
     - type: command
+      command: "python .github/hooks/scripts/block-root-file-creation.py"
+      windows: "python .github/hooks/scripts/block-root-file-creation.py"
+      timeout: 10
+    - type: command
       command: "python .github/hooks/scripts/block-git-revert.py"
       windows: "powershell -ExecutionPolicy Bypass -File .github/hooks/scripts/block-git-revert.ps1"
       timeout: 10
