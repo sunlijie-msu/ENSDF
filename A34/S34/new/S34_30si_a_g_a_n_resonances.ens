@@ -2,14 +2,25 @@
  34S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34S   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34S 2 H CUT=28-May-2012$                                                       
+ 34S  c  J|p=0+ for {+30}Si ground state.                                       
+ 34S  c  1967Wi01: {+30}Si(|a,|g) and (|a,n) with 3.25-4.95 MeV |a beams from   
+ 34S 2c  the 5.5 MeV Van de Graaff accelerator of the Southern Universities     
+ 34S 3c  Nuclear Institute, South Africa. Targets were 15-40 |mg/cm2, 45%-95%   
+ 34S 4c  enriched 30Si targets on tantalum backings. |g rays were detected using
+ 34S 5c  NaI(Tl) detectors. Neutrons were detected using a Harwell-form neutron 
+ 34S 6c  detector. Measured E|g, I|g, |g(|q), |g|g(|q), yields, (E; Eγ, En, θ), 
+ 34S 7c  α, γ(θ), γγ(θ). Deduced resonance levels, J, |p, resonance streng      
+ 34S  c  1965Mc07: {+30}Si(|a,|g) with 3.25-4.25 MeV |a beams from the 5.5 MeV  
+ 34S 2c  Van de Graaff accelerator of the Southern Universities Nuclear         
+ 34S 3c  Institute, South Africa. Measured σ(E; Eγ, En, θ), α, γ(θ), γγ(θ). 34S 
+ 34S 4c  deduced levels, J, π, γ-width.                                         
  34S  c  1964Va08: {+30}Si(|a,|g) E=2.1-3.25 MeV                                
- 34S  c  1965Mc07: {+30}Si(|a,|g) E=3.25-4.25 MeV                               
- 34S  c  1967Wi01: {+30}Si(|a,|g) and (|a,n) E=3.25-4.95 MeV                    
+ 34S  c  1975DeZS: {+30}Si(|a,|g) with a 2.8-MeV |a beam at Queen's University, 
+ 34S 2c  Canada. Measured E|g, I|g, |g(|q). Deduced resonance strengths.        
  34S  c  1979Ku10: {+30}Si(|a,|g) with 4-15 MeV |a beams from the Stanford FN   
  34S 2c  tandem Van de Graaff accelerator. Measured |s(E|g,|q). Deduced E2      
  34S 3c  strength distribution.                                                 
- 34S  c  1975DeZS: {+30}Si(|a,|g) with a 2.8-MeV |a beam at Queen's University, 
- 34S 2c  Canada. Measured E|g, I|g, |g(|q). Deduced resonance strengths.        
+
 
  34S  c  All the data are from the paper that reported the level (see the       
  34S 2c  E(level) footnote), except otherwise noted                             
@@ -29,6 +40,7 @@
  34S  cL E(B)$Below (|a,n) threshold (1967Wi01)                                 
  34S  cL E(C)$(|a,n) only (1967Wi01)                                            
  34S  cL E(D)$(|a,|g) only (1967Wi01)                                           
+ 34S  cL S$LABEL=E{-|a}(lab) (keV)                                              
  34S  PN                                                                     6  
  34S   L 0.0          0+                                                        
  34S   L 2127.564  13 2+                                                        
@@ -75,12 +87,12 @@
  34S  cL $E(|a)(lab)=2712 {I5}                                                  
  34S   G 8187        100                                                        
  34S   G 10314       40        E2                                               
- 34S   L 10382     4  1-                                                        
+ 34S   L 10382     4  1-                                                    D   
  34S  cL $(2J+1)|G{-|g}|G{-|a}/|G=0.05 eV {I1}                                  
  34S  cL $Main |g-decay branch: 26% to 3914 level (1975DeZS)                    
  34S   L 10385     4                                                            
  34S  cL $E(|a)(lab)=2790 {I5}                                                  
- 34S   L 10386     4  3-                                                        
+ 34S   L 10386     4  3-                                                    D   
  34S  cL $(2J+1)|G{-|g}|G{-|a}/|G=0.20 eV {I4}                                  
  34S  cL $Main |g-decay branch: 40% to 5680 level (1975DeZS)                    
  34S   L 10407     4  2+                                                        
@@ -88,12 +100,12 @@
  34S  cL $E(|a)(lab)=2815 {I5}                                                  
  34S   G 8278        100                                                        
  34S   G 10405       100       E2                                               
- 34S   L 10443     4  3-                                                        
+ 34S   L 10443     4  3-                                                    D   
  34S  cL $(2J+1)|G{-|g}|G{-|a}/|G=0.09 eV {I2}                                  
  34S  cL $Main |g-decay branch: 51% to 3303 level (1975DeZS)                    
  34S   L 10447     4                                                            
  34S  cL $E(|a)(lab)=2860 {I5}                                                  
- 34S   L 10482     4  0+                                                        
+ 34S   L 10482     4  0+                                                    D   
  34S  cL $(2J+1)|G{-|g}|G{-|a}/|G=0.08 eV {I2}                                  
  34S  cL $Main |g-decay branch: 73% to 4073 level (1975DeZS)                    
  34S   L 10493     4  1-                                                        
