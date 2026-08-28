@@ -8,8 +8,7 @@
  34S 3c  Nuclear Institute, South Africa. Targets were 15-40 |mg/cm2, 45%-95%   
  34S 4c  enriched 30Si targets on tantalum backings. |g rays were detected using
  34S 5c  NaI(Tl) detectors. Neutrons were detected using a Harwell-form neutron 
- 34S 6c  detector. Measured E|g, I|g, |g(|q), |g|g(|q), yields, (E; Eγ, En, θ), 
- 34S 7c  α, γ(θ), γγ(θ). Deduced resonance levels, J, |p, resonance streng      
+ 34S 6c  detector. Measured E|g, I|g, |g(|q), |g|g(|q), E{-n}, I{-n}, and yields. Deduced resonance levels, J, |p, resonance strengths.
  34S  c  1965Mc07: {+30}Si(|a,|g) with 3.25-4.25 MeV |a beams from the 5.5 MeV  
  34S 2c  Van de Graaff accelerator of the Southern Universities Nuclear         
  34S 3c  Institute, South Africa. Measured σ(E; Eγ, En, θ), α, γ(θ), γγ(θ). 34S 
@@ -43,10 +42,8 @@
  34S  cL S$LABEL=E{-|a}(lab) (keV)                                              
  34S  PN                                                                     6  
  34S   L 0.0          0+                                                        
- 34S   L 2127.564  13 2+                                                        
- 34S F L FLAG=A                                                                 
- 34S   L 3304.212  13 2+                                                        
- 34S F L FLAG=A                                                                 
+ 34S   L 2127.564  13 2+                                                    A   
+ 34S   L 3304.212  13 2+                                                    A   
  34S   L 9932      4  1-                                                        
  34S  cL $(2J+1)|G{-|g}|G{-|a}/|G=0.14                                          
  34S  cL $E(|a)(lab)=2276 {I5}                                                  
@@ -272,20 +269,18 @@
  34S   G 8018        48                                                         
  34S   G 9194        65                                                         
  34S   G 11321       100       E1                                               
- 34S   L 11357     4  1-                                                        
+ 34S   L 11357     4  1-                                                    B   
  34S  cL $|G{-|g}=1.4 eV                                                        
  34S  cL $E(|a)(lab)=3892 {I5}                                                  
- 34S F L FLAG=B                                                                 
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=0.8 eV (1965Mc07)                            
  34S  cL J,T$from 1965Mc07                                                      
  34S   G 8052        280                                                        
  34S   G 9228        49                                                         
  34S   G 11355       100       E1                                               
  34S  cG M$from 1965Mc07                                                        
- 34S   L 11371     4  3-                                                        
+ 34S   L 11371     4  3-                                                    B   
  34S  cL $|G{-|g}=1.5 eV                                                        
  34S  cL $E(|a)(lab)=3908 {I5}                                                  
- 34S F L FLAG=B                                                                 
  34S  cL T$from 1965Mc07                                                        
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=0.1 eV (1965Mc07);                           
  34S 2cL (2J+1)|G{-|g1}|G{-|a}/|G=2.0 eV (1967Wi01)                             
@@ -293,38 +288,31 @@
  34S   G 9242        1700      E1+M2     +0.022  6                              
  34S  cG A{-2}=-0.400, A{-4}=+0.007                                             
  34S   G 11369       100        [E3]                                            
- 34S   L 11380     4  2+                                                        
+ 34S   L 11380     4  2+                                                    B   
  34S  cL $|G{-|g}=0.1 eV                                                        
  34S  cL $E(|a)(lab)=3918 {I5}                                                  
- 34S F L FLAG=B                                                                 
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=0.1 eV (1965Mc07)                            
  34S   G X           700                                                        
  34S   G 8075        270                                                        
  34S   G 9251        890                                                        
  34S   G 11378       100       E2                                               
- 34S   L 11398     4                                                            
+ 34S   L 11398     4                                                        B   
  34S  cL $E(|a)(lab)=3938 {I5}                                                  
- 34S F L FLAG=B                                                                 
- 34S   L 11405     4                                                            
+ 34S   L 11405     4                                                        B   
  34S  cL $E(|a)(lab)=3946 {I5}                                                  
- 34S F L FLAG=B                                                                 
- 34S   L 11419     4  1-                                                        
+ 34S   L 11419     4  1-                                                    B   
  34S  cL $|G{-|g}=4.4 eV                                                        
  34S  cL $E(|a)(lab)=3962 {I5}                                                  
- 34S F L FLAG=B                                                                 
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=10.7 eV (1965Mc07)                           
  34S   G 8114        5                                                          
  34S   G 9290        19                                                         
  34S   G 11417       100       E1                                               
- 34S   L 11434     4                                                            
+ 34S   L 11434     4                                                        C   
  34S  cL $E(|a)(lab)=3979 {I5}                                                  
- 34S F L FLAG=C                                                                 
- 34S   L 11444     4                                                            
+ 34S   L 11444     4                                                        D   
  34S  cL $E(|a)(lab)=3990 {I5}                                                  
- 34S F L FLAG=D                                                                 
- 34S   L 11457     4 3-                                                         
+ 34S   L 11457     4 3-                                                     B   
  34S  cL $E(|a)(lab)=4005 {I5}                                                  
- 34S F L FLAG=B                                                                 
  34S  cL $(2J+1)|G{-|g1}|G{-|a}/|G=2.4 eV                                       
  34S   G 9328                  E1+M2     +0.037  2                              
  34S  cG A{-2}=-0.405, A{-4}=-0.043                                             
@@ -366,9 +354,8 @@
  34S  cG E,RI,M$from 1965Mc07                                                   
  34S   L 11618     4                                                            
  34S  cL $E(|a)(lab)=4188 {I5}                                                  
- 34S   L 11636     4                                                            
+ 34S   L 11636     4                                                        C   
  34S  cL $E(|a)(lab)=4208 {I5}                                                  
- 34S F L FLAG=C                                                                 
  34S   L 11642     4  1-                                                        
  34S  cL $|G{-|g}=2.3 eV                                                        
  34S  cL $E(|a)(lab)=4215 {I5}                                                  
@@ -382,34 +369,29 @@
  34S  cG E,RI$from 1965Mc07                                                     
  34S   G 11640       100       E1                                               
  34S  cG E,RI,M$from 1965Mc07                                                   
- 34S   L 11669     4                                                            
+ 34S   L 11669     4                                                        C   
  34S  cL $E(|a)(lab)=4246 {I5}                                                  
- 34S F L FLAG=C                                                                 
  34S   L 11711     4  1-                                                        
  34S  cL $E(|a)(lab)=4293 {I5}                                                  
  34S  cL $(2J+1)|G{-|g1}|G{-|a}/|G=0.63 eV                                      
  34S   G 9582                   E1+M2    -0.080  80                             
  34S  cG A{-2}=-0.195, A{-4}=-0.022                                             
- 34S   L 11751     4                                                            
+ 34S   L 11751     4                                                        C   
  34S  cL $E(|a)(lab)=4338 {I5}                                                  
- 34S F L FLAG=C                                                                 
  34S   L 11789     4                                                            
  34S  cL $E(|a)(lab)=4382 {I5}                                                  
- 34S   L 11849     4                                                            
+ 34S   L 11849     4                                                        B   
  34S  cL $E(|a)(lab)=4450 {I5}                                                  
- 34S F L FLAG=B                                                                 
  34S   L 11858     4                                                            
  34S  cL $E(|a)(lab)=4460 {I5}                                                  
- 34S   L 11866     4                                                            
+ 34S   L 11866     4                                                        B   
  34S  cL $E(|a)(lab)=4469 {I5}                                                  
- 34S F L FLAG=B                                                                 
  34S   L 11878     4                                                            
  34S  cL $E(|a)(lab)=4482 {I5}                                                  
  34S   L 11908     4                                                            
  34S  cL $E(|a)(lab)=4516 {I5}                                                  
- 34S   L 11921     4  (3-)                                                      
+ 34S   L 11921     4  (3-)                                                  D   
  34S  cL $E(|a)(lab)=4531 {I5}                                                  
- 34S F L FLAG=D                                                                 
  34S  cL $(2J+1)|G{-|g1}|G{-|a}/|G=2.1 eV                                       
  34S   G 9792                   E1                                              
  34S  cG A{-2}=-0.321, A{-4}=-0.080                                             
@@ -437,12 +419,10 @@
  34S  cL $E(|a)(lab)=4733 {I5}                                                  
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=1.5 eV                                       
  34S   G 12097                  E1                                              
- 34S   L 12136     4                                                            
+ 34S   L 12136     4                                                        C   
  34S  cL $E(|a)(lab)=4775 {I5}                                                  
- 34S F L FLAG=C                                                                 
- 34S   L 12150     4                                                            
+ 34S   L 12150     4                                                        C   
  34S  cL $E(|a)(lab)=4791 {I5}                                                  
- 34S F L FLAG=C                                                                 
  34S   L 12164     4                                                            
  34S  cL $E(|a)(lab)=4807 {I5}                                                  
  34S   L 12172     4                                                            
