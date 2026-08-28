@@ -177,12 +177,52 @@ def extract_target_paths(hook_input):
     return []
 
 
+# Stream-to-stream redirections (PowerShell 2>&1 / 1>&2, sh >&2) merge one
+# I/O stream into another and never create files. Without special handling,
+# "2>&1" tokenizes as "2>" + "1" and the bare "1" is misreported as a file
+# redirection target in the workspace root (a false positive).
+STREAM_REDIRECTION_RE = re.compile(
+    r"(?<!\d)(?:\d+>\s*&\s*\d+|\*?>\s*&\s*\d+)(?!\d)"
+)
+
+
+def neutralize_stream_redirections(command):
+    """Replace stream-to-stream redirections with spaces before tokenizing.
+
+    Quoted occurrences are left untouched so literal text is preserved.
+    """
+    out = []
+    i, n, quote = 0, len(command), None
+    while i < n:
+        ch = command[i]
+        if quote:
+            out.append(ch)
+            if ch == quote:
+                quote = None
+            i += 1
+            continue
+        if ch in ('"', "'"):
+            quote = ch
+            out.append(ch)
+            i += 1
+            continue
+        m = STREAM_REDIRECTION_RE.match(command, i)
+        if m:
+            out.append(" " * (m.end() - m.start()))
+            i = m.end()
+            continue
+        out.append(ch)
+        i += 1
+    return "".join(out)
+
+
 def extract_terminal_targets(command):
     """Return targets for common shell write commands and redirections.
 
     A missing target is represented by an empty path so the caller can deny
     ambiguous write operations instead of allowing them silently.
     """
+    command = neutralize_stream_redirections(command)
     tokens = re.findall(r'"[^"]*"|\'[^\']*\'|[^\s|;&]+', command)
     normalized_tokens = [unquote_token(token) for token in tokens]
     targets = []
@@ -197,9 +237,14 @@ def extract_terminal_targets(command):
             pending_option = None
             continue
         lower = token.lower()
-        redirection = re.match(r"^\d*(>>|>)(.*)$", token)
+        # Also match PowerShell's "*>" all-streams file redirect.
+        redirection = re.match(r"^\d*(\*)?(>>|>)(.*)$", token)
         if redirection:
-            target = redirection.group(2)
+            target = redirection.group(3)
+            # A target beginning with '&' is a stream descriptor (e.g. a quoted
+            # literal "2>&1"), not a file path.
+            if target.startswith("&"):
+                continue
             if target:
                 targets.append((target, "terminal redirection"))
             else:
