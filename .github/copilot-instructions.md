@@ -155,7 +155,7 @@ ENSDF file modifications require human expert review. VS Code's inline diff view
 #### Forbidden Patterns (Bypass Diff Viewer)
 
 - `git restore` or `git checkout` for `.ens` file error recovery.
-- Any tooling or action on .ens files that circumvents the VS Code diff interface or prevents human review before commit.
+- Any tooling, action, or script-based edits on .ens files that circumvents the VS Code diff interface or prevents human review before commit.
 
 Temp scripts or codes in temp folders are not part of this restriction, and they may be restored or checked out when the command explicitly refers to temp paths and does not touch any `.ens` file.
 
