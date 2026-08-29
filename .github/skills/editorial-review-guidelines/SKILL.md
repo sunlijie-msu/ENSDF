@@ -89,6 +89,7 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 
 ### 6. Text and Number Integrity
 - **Extra space after `=`:** `|w|g= 0.45` → `|w|g=0.45`. Scan: `=\s[0-9]`.
+- **Missing space surrounding `=`:** `Intensity=0.45` → `Intensity = 0.45`.
 - **Space within number:** `E{-p}(lab)=54 6` → `E{-p}(lab)=546`. Note: space between value and uncertainty is correct.
 - **Field cross-contamination:** Energy in `RI$` or intensity in `E$` is an error. Wrong: `cG RI$ weighted average of 1224.6 {I154} ...` (contains energy, not intensity).
 

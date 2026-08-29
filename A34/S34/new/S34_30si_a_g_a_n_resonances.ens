@@ -2,16 +2,16 @@
  34S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34S   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34S 2 H CUT=28-May-2012$                                                       
- 34S  c  The ground states of 30Si, |a, and 34S are all 0+. Therefore, the      
- 34S 2c  resonances in 34S populated in 30Si+|a are with natural parities and |g
- 34S 3c  tranistion to 34S g.s. are most likely electric.                       
+ 34S  c  The ground states of {+30}Si, |a, and {+34}S are all 0+; therefore, the
+ 34S 2c  resonances in {+34}S populated in {+30}Si+|a have natural parity, and  
+ 34S 3c  the |g transitions to the {+34}S g.s. are most likely electric.        
  34S  c  1967Wi01: {+30}Si(|a,|g) and (|a,n) with 3.25-4.95 MeV |a beams from   
  34S 2c  the 5.5 MeV Van de Graaff accelerator of the Southern Universities     
- 34S 3c  Nuclear Institute, South Africa. Targets were 15-40 |mg/cm2, 45%-95%   
- 34S 4c  enriched 30Si targets on tantalum backings. |g rays were detected using
- 34S 5c  NaI(Tl) detectors. Neutrons were detected using a Harwell-form neutron 
- 34S 6c  detector. Measured E|g, I|g, |g(|q), |g|g(|q), E{-n}, I{-n}, and       
- 34S 7c  yields. Deduced resonance levels, J, |p, multipolarities, mixing       
+ 34S 3c  Nuclear Institute, South Africa. Targets were 15-40 |mg/cm{+2}, 45%-95%
+ 34S 4c  enriched {+30}Si targets on tantalum backings. |g rays were detected   
+ 34S 5c  using NaI(Tl) detectors. Neutrons were detected using a Harwell-form   
+ 34S 6c  neutron detector. Measured E|g, I|g, |g(|q), |g|g(|q), E{-n}, I{-n},   
+ 34S 7c  and yields. Deduced resonance levels, J, |p, multipolarities, mixing   
  34S 8c  ratios, and resonance strengths.                                       
  34S  c  1965Mc07: {+30}Si(|a,|g) with 3.25-4.25 MeV |a beams. Work was done by 
  34S 2c  the same group as 1967Wi01.                                            
@@ -20,7 +20,7 @@
  34S 3c  Utrecht, Netherlands.                                                  
  34S  c  1975DeZS: {+30}Si(|a,|g) with a 2.8-MeV |a beam at Queen's University, 
  34S 2c  Canada. Measured E|g, I|g, |g(|q). Deduced 4 levels and resonance      
- 34S 3c  strengths. J|p=0+ for {+30}Si ground state,                            
+ 34S 3c  strengths.                                                             
  34S  c  1979Ku10: {+30}Si(|a,|g) with 4-15 MeV |a beams from the Stanford FN   
  34S 2c  tandem Van de Graaff accelerator. Measured |s(E|g,|q). Deduced E2      
  34S 3c  strength distributions.                                                
@@ -37,10 +37,10 @@
  34S  cL J$From 1967Wi01 by analyzing measured angular distributions, unless    
  34S 2cL otherwise noted.                                                       
  34S  cL E(A),J(A)$From the Adopted Levels.                                     
- 34S  cL E(N)$Resonances bserved in (|a,n) spectra only (1967Wi01)              
+ 34S  cL E(N)$Resonances observed in (|a,n) spectra only (1967Wi01)             
  34S  cL E(G)$Resonances observed in (|a,|g) spectra only (1967Wi01)            
- 34S  cL E(H)$1964Va08 states that |g intensities >0 from this resonance to     
- 34S 2cL levels higher than 3304 keV.                                           
+ 34S  cL E(H)$1964Va08 states that there is an appreciable |g branch from this  
+ 34S 2cL resonance to one of the levels higher than 3304 keV.                   
  34S  cL E(Z),J(Z)$From 1975DeZS. 1975DeZS only reports E(level) without        
  34S 2cL E{-|a}(lab).                                                           
  34S  cL S$From 1967Wi01, unless otherwise noted.                               
@@ -209,8 +209,8 @@
  34S   L 11220     5  (2+)                                      3736      5 M   
  34S  cL $|G{-|g}=0.2 eV (1965Mc07)                                             
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=0.2 eV (1965Mc07)                            
- 34S  cL $1965Mc07 states that |g intensities = 1300 from this resonance to 34S 
- 34S 2cL levels higher than 3304 keV.                                           
+ 34S  cL $1965Mc07 states that |g intensities = 1300 from this resonance to     
+ 34S 2cL {+34}S levels higher than 3304 keV.                                    
  34S   G 7915         130                                                       
  34S   G 9091         150                                                       
  34S   G 11218        100       E2                                              
@@ -262,8 +262,8 @@
  34S  cL S$other: 3918 {I5} (1965Mc07)                                          
  34S  cL $|G{-|g}=0.1 eV (1965Mc07)                                             
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=0.1 eV (1965Mc07)                            
- 34S  cL $1965Mc07 states that |g intensities = 700 from this resonance to 34S  
- 34S 2cL levels higher than 3304 keV.                                           
+ 34S  cL $1965Mc07 states that |g intensities = 700 from this resonance to      
+ 34S 2cL {+34}S levels higher than 3304 keV.                                    
  34S   G 8076         270                                                       
  34S   G 9252         890                                                       
  34S   G 11379        100       E2                                              
@@ -296,8 +296,8 @@
  34S  cL S$other: 4043 {I5} (1965Mc07)                                          
  34S  cL $|G{-|g}=0.6 eV (1965Mc07)                                             
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=0.9 eV (1965Mc07)                            
- 34S  cL $1965Mc07 states that |g intensities = 1300 from this resonance to 34S 
- 34S 2cL levels higher than 3304 keV.                                           
+ 34S  cL $1965Mc07 states that |g intensities = 1300 from this resonance to     
+ 34S 2cL {+34}S levels higher than 3304 keV.                                    
  34S   G 8185         56                                                        
  34S  cG E,RI$from 1965Mc07                                                     
  34S   G 9361         46                                                        
@@ -314,8 +314,8 @@
  34S  cL S$other: 4106 {I5} (1965Mc07)                                          
  34S  cL $|G{-|g}=1.0 eV (1965Mc07)                                             
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=0.9 eV (1965Mc07)                            
- 34S  cL $1965Mc07 states that |g intensities = 2600 from this resonance to 34S 
- 34S 2cL levels higher than 3304 keV.                                           
+ 34S  cL $1965Mc07 states that |g intensities = 2600 from this resonance to     
+ 34S 2cL {+34}S levels higher than 3304 keV.                                    
  34S   G 8240         160                                                       
  34S  cG E,RI$from 1965Mc07                                                     
  34S   G 9416         96                                                        
@@ -330,8 +330,8 @@
  34S  cL S$other: 4220 {I5} (1965Mc07)                                          
  34S  cL $|G{-|g}=2.3 eV (1965Mc07)                                             
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=4.7 eV (1965Mc07)                            
- 34S  cL $1965Mc07 states that |g intensities = 750 from this resonance to 34S  
- 34S 2cL levels higher than 3304 keV.                                           
+ 34S  cL $1965Mc07 states that |g intensities = 750 from this resonance to      
+ 34S 2cL {+34}S levels higher than 3304 keV.                                    
  34S   G 8338         20                                                        
  34S  cG E,RI$from 1965Mc07                                                     
  34S   G 9514         25                                                        
