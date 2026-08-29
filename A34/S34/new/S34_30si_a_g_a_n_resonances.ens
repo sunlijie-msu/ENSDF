@@ -2,7 +2,9 @@
  34S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34S   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34S 2 H CUT=28-May-2012$                                                       
- 34S  c  J|p=0+ for {+30}Si ground state (2024Ba28).                            
+ 34S  c  The ground states of 30Si, |a, and 34S are all 0+. Therefore, the      
+ 34S 2c  resonances in 34S populated in 30Si+|a are with natural parities and |g
+ 34S 3c  tranistion to 34S g.s. are electric E1 or E2 most likely.              
  34S  c  1967Wi01: {+30}Si(|a,|g) and (|a,n) with 3.25-4.95 MeV |a beams from   
  34S 2c  the 5.5 MeV Van de Graaff accelerator of the Southern Universities     
  34S 3c  Nuclear Institute, South Africa. Targets were 15-40 |mg/cm2, 45%-95%   
@@ -18,7 +20,7 @@
  34S 3c  Utrecht, Netherlands.                                                  
  34S  c  1975DeZS: {+30}Si(|a,|g) with a 2.8-MeV |a beam at Queen's University, 
  34S 2c  Canada. Measured E|g, I|g, |g(|q). Deduced 4 levels and resonance      
- 34S 3c  strengths.                                                             
+ 34S 3c  strengths. J|p=0+ for {+30}Si ground state,                            
  34S  c  1979Ku10: {+30}Si(|a,|g) with 4-15 MeV |a beams from the Stanford FN   
  34S 2c  tandem Van de Graaff accelerator. Measured |s(E|g,|q). Deduced E2      
  34S 3c  strength distributions.                                                
@@ -27,20 +29,25 @@
  34S  cG E$Deduced by evaluators from level-energy difference.                  
  34S  cG M,MR$From measured |g(|q) and |g|g(|q) in 1967Wi01, unless otherwise   
  34S 2cG noted.                                                                 
- 34S  cL S$From 1967Wi01, unless otherwise noted.                               
  34S  cL E$From E{-c.m.}+S(|a)({+34}S), where S(|a)({+34}S)=7923.64 {I5}        
  34S 2cL (2021Wa16). E{-c.m.}=E{-|a}(lab)|*m({+30}Si)/[m{-|a}+m({+30}Si)].      
+ 34S  cL E(A),J(A)$From the Adopted Levels.                                     
  35CL cL J$From 1967Wi01 by analyzing measured angular distributions, unless    
  35CL2cL otherwise noted.                                                       
- 34S  cL E(N)$Resonanceso bserved in (|a,n) spectra only (1967Wi01)             
+ 34S  cL E(N)$Resonances bserved in (|a,n) spectra only (1967Wi01)              
  34S  cL E(G)$Resonances observed in (|a,|g) spectra only (1967Wi01)            
  34S  cL E(H)$1964Va08 states that |g intensities >0 from this resonance to     
  34S 2cL levels higher than 3304 keV.                                           
+ 34S  cL E(Z),J(Z)$From 1975DeZS. 1975DeZS only reports E(level) without        
+ 34S 2cL E{-|a}(lab).                                                           
+ 34S  cL S$From 1967Wi01, unless otherwise noted.                               
  34S  cL S$LABEL=E{-|a}(lab) (keV)                                              
  34S  PN                                                                     6  
  34S   L 0.0          0+                                                        
  34S   L 2127.564  13 2+                                                        
  34S   L 3304.212  13 2+                                                        
+ 34S   L 3916.408  21 0+                                                        
+ 34S   L 4074.667  14 1+                                                        
  34S   L 9932      5  1-                                        2276      5 V   
  34S  cL $(2J+1)|G{-|g}|G{-|a}/|G=0.14 eV (1964Va08)                            
  34S   G 7803         30                                                        
@@ -72,23 +79,27 @@
  34S   G 8187         100                                                       
  34S   G 10314        40        E2                                              
  34S   L 10382     4  1-                                                    Z   
- 34S  cL $(2J+1)|G{-|g}|G{-|a}/|G=0.05 eV {I1}                                  
- 34S  cL $Main |g-decay branch: 26% to 3914 level (1975DeZS)                    
- 34S   L 10385     5                                            2790      5 V   
+ 34S  cL $|w|g=0.05 eV {I1} (1975DeZS)                                          
+ 34S   G 6468         100                                                       
+ 34S  cG RI$main |g-decay branch: 26% to 3914 level (1975DeZS)                  
  34S   L 10386     4  3-                                                    Z   
- 34S  cL $(2J+1)|G{-|g}|G{-|a}/|G=0.20 eV {I4}                                  
- 34S  cL $Main |g-decay branch: 40% to 5680 level (1975DeZS)                    
+ 34S  cL E$other: 10385 {I5}, E{-a}=2790 {I5} from 1964Va08.                    
+ 34S  cL $|w|g=0.20 eV {I4}(1975DeZS).                                          
+ 34S   G 4706         100                                                       
+ 34S  cG RI$main |g-decay branch: 40% to 5680 level (1975DeZS)                  
  34S   L 10408     5  2+                                        2815      5 V   
  34S  cL $(2J+1)|G{-|g}|G{-|a}/|G=0.2 eV (1964Va08)                             
  34S   G 8278         100                                                       
  34S   G 10405        100       E2                                              
- 34S   L 10443     4  3-                                                    Z   
- 34S  cL $(2J+1)|G{-|g}|G{-|a}/|G=0.09 eV {I2}                                  
- 34S  cL $Main |g-decay branch: 51% to 3303 level (1975DeZS)                    
- 34S   L 10447     5                                            2860      5 V   
+ 34S   L 10447     5  3-                                        2860      5 V   
+ 34S  cL E$other: 10443 {I4} from 1975DeZS.                                     
+ 34S  cL J$from 1975DeZS. |w|g=0.09 eV {I2} (1975DeZS).                         
+ 34S   G 7144         100                                                       
+ 34S  cG RI$main |g-decay branch: 51% to 3303 level (1975DeZS).                 
  34S   L 10482     4  0+                                                    Z   
- 34S  cL $(2J+1)|G{-|g}|G{-|a}/|G=0.08 eV {I2}                                  
- 34S  cL $Main |g-decay branch: 73% to 4073 level (1975DeZS)                    
+ 34S  cL $|w|g=0.08 eV {I2} (1975DeZS).                                         
+ 34S   G 6409         100                                                       
+ 34S  cG RI$main |g-decay branch: 73% to 4073 level (1975DeZS).                 
  34S   L 10494     5  1-                                        2913      5 V   
  34S  cL $|G{-|g}=0.84 eV                                                       
  34S  cL $(2J+1)|G{-|g}|G{-|a}/|G=2 eV (1964Va08)                               
@@ -133,7 +144,7 @@
  34S  cL J$from 1967Wi01                                                        
  34S  cL $(2J+1)|G{-|g1}|G{-|a}/|G=2.1 eV (1967Wi01)                            
  34S   G 8717                   E1+M2    -0.024  17                             
- 34S  cG A{-2}=-0.289, A{-4}=-0.039 (1967Wi01)                                  
+ 34S  cG A{-2}=-0.289, A{-4}=-0.039 (1967Wi01).                                 
  34S  cG M$from 1967Wi01                                                        
  34S   L 10869     5                                            3338      5 M   
  34S   L 10895     5                                            3368      5 M   
@@ -142,19 +153,19 @@
  34S  cL J$from 1967Wi01                                                        
  34S  cL $(2J+1)|G{-|g1}|G{-|a}/|G=1.3 eV (1967Wi01)                            
  34S   G 8801                   E1+M2    +0.154  17                             
- 34S  cG A{-2}=+0.099, A{-4}=-0.042 (1967Wi01)                                  
+ 34S  cG A{-2}=+0.099, A{-4}=-0.042 (1967Wi01).                                 
  34S  cG M$from 1967Wi01                                                        
  34S   L 10994     5  2+                                        3480      5 M   
  34S  cL J$from 1967Wi01                                                        
  34S  cL $(2J+1)|G{-|g1}|G{-|a}/|G=1.5 eV (1967Wi01)                            
  34S   G 8865                   M1+E2    +0.078  32                             
- 34S  cG A{-2}=+0.339, A{-4}=+0.001 (1967Wi01)                                  
+ 34S  cG A{-2}=+0.339, A{-4}=+0.001 (1967Wi01).                                 
  34S  cG M$from 1967Wi01                                                        
  34S   L 11015     5  2+                                        3503      5 M   
  34S  cL J$from 1967Wi01                                                        
  34S  cL $(2J+1)|G{-|g1}|G{-|a}/|G=0.94 eV (1967Wi01)                           
  34S   G 8885                   M1+E2    -0.52   22                             
- 34S  cG A{-2}=+0.645, A{-4}=-0.068 (1967Wi01)                                  
+ 34S  cG A{-2}=+0.645, A{-4}=-0.068 (1967Wi01).                                 
  34S  cG M$from 1967Wi01                                                        
  34S   L 11025     5  1-                                        3515      5 M   
  34S  cL $|G{-|g}=1.7 eV                                                        
@@ -173,7 +184,7 @@
  34S  cL J$from 1967Wi01                                                        
  34S  cL $(2J+1)|G{-|g1}|G{-|a}/|G=1.7 eV (1967Wi01)                            
  34S   G 8978                   E1+M2    +0.062  1                              
- 34S  cG A{-2}=-0.457, A{-4}=-0.029 (1967Wi01)                                  
+ 34S  cG A{-2}=-0.457, A{-4}=-0.029 (1967Wi01).                                 
  34S  cG M$from 1967Wi01                                                        
  34S   L 11142     5  1-                                        3647      5 M   
  34S  cL $|G{-|g}=2.6 eV                                                        
@@ -192,7 +203,8 @@
  34S   L 11220     5  (2+)                                      3736      5 M   
  34S  cL $|G{-|g}=0.2 eV                                                        
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=0.2 eV (1965Mc07)                            
- 34S   G x            1300                                                      
+ 34S  cL $1965Mc07 states that |g intensities = 1300 from this resonance to 34S 
+ 34S 2cL levels higher than 3304 keV.                                           
  34S   G 7915         130                                                       
  34S   G 9091         150                                                       
  34S   G 11218        100       E2                                              
@@ -206,7 +218,7 @@
  34S  cL J$from 1967Wi01                                                        
  34S  cL $(2J+1)|G{-|g1}|G{-|a}/|G=1.6 eV (1967Wi01)                            
  34S   G 9143                   M1+E2    +0.18   15                             
- 34S  cG A{-2}=+0.188, A{-4}=+0.025 (1967Wi01)                                  
+ 34S  cG A{-2}=+0.188, A{-4}=+0.025 (1967Wi01).                                 
  34S  cG M$from 1967Wi01                                                        
  34S   L 11289     5                                            3814      5 M   
  34S   L 11315     5  2+                                        3843      5 M   
@@ -238,13 +250,14 @@
  34S 2cL (2J+1)|G{-|g1}|G{-|a}/|G=2.0 eV (1967Wi01)                             
  34S   G 8066         740                                                       
  34S   G 9242         1700      E1+M2    +0.022  6                              
- 34S  cG A{-2}=-0.400, A{-4}=+0.007                                             
+ 34S  cG A{-2}=-0.400, A{-4}=+0.007 (1967Wi01).                                 
  34S   G 11369        100       [E3]                                            
  34S   L 11381     5  2+                                        3918      5     
  34S  cL S$other: 3918 {I5} (1965Mc07)                                          
  34S  cL $|G{-|g}=0.1 eV                                                        
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=0.1 eV (1965Mc07)                            
- 34S   G x            700                                                       
+ 34S  cL $1965Mc07 states that |g intensities = 700 from this resonance to 34S  
+ 34S 2cL levels higher than 3304 keV.                                           
  34S   G 8075         270                                                       
  34S   G 9251         890                                                       
  34S   G 11378        100       E2                                              
@@ -266,19 +279,19 @@
  34S  cL S$other: 4007 {I5} (1965Mc07)                                          
  34S  cL $(2J+1)|G{-|g1}|G{-|a}/|G=2.4 eV (1967Wi01)                            
  34S   G 9328                   E1+M2    +0.037  2                              
- 34S  cG A{-2}=-0.405, A{-4}=-0.043                                             
+ 34S  cG A{-2}=-0.405, A{-4}=-0.043 (1967Wi01).                                 
  34S   L 11473     5  1-                                        4023      5     
  34S  cL S$other: 4024 {I5} (1965Mc07)                                          
  34S  cL $(2J+1)|G{-|g1}|G{-|a}/|G=1.2 eV (1967Wi01)                            
  34S   G 9344                   E1+M2    -0.13   7                              
- 34S  cG A{-2}=-0.242, A{-4}=-0.020                                             
+ 34S  cG A{-2}=-0.242, A{-4}=-0.020 (1967Wi01).                                 
  34S   L 11490     5  1-                                        4042      5     
  34S  cL J,T$from 1965Mc07                                                      
  34S  cL S$other: 4043 {I5} (1965Mc07)                                          
  34S  cL $|G{-|g}=0.6 eV                                                        
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=0.9 eV (1965Mc07)                            
- 34S   G x            1300                                                      
- 34S  cG RI$from 1965Mc07                                                       
+ 34S  cL $1965Mc07 states that |g intensities = 1300 from this resonance to 34S 
+ 34S 2cL levels higher than 3304 keV.                                           
  34S   G 8184         56                                                        
  34S  cG E,RI$from 1965Mc07                                                     
  34S   G 9360         46                                                        
@@ -289,14 +302,14 @@
  34S  cL S$other: 4058 {I5} (1965Mc07)                                          
  34S  cL $(2J+1)|G{-|g1}|G{-|a}/|G=0.74 eV (1967Wi01)                           
  34S   G 9376                   E1+M2    -0.058  16                             
- 34S  cG A{-2}=-0.127, A{-4}=-0.068                                             
+ 34S  cG A{-2}=-0.127, A{-4}=-0.068 (1967Wi01).                                 
  34S   L 11545     5  1-                                        4104      5     
  34S  cL J,T$from 1965Mc07                                                      
  34S  cL S$other: 4106 {I5} (1965Mc07)                                          
  34S  cL $|G{-|g}=1.0 eV                                                        
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=0.9 eV (1965Mc07)                            
- 34S   G x            2600                                                      
- 34S  cG RI$from 1965Mc07                                                       
+ 34S  cL $1965Mc07 states that |g intensities = 2600 from this resonance to 34S 
+ 34S 2cL levels higher than 3304 keV.                                           
  34S   G 8239         160                                                       
  34S  cG E,RI$from 1965Mc07                                                     
  34S   G 9415         96                                                        
@@ -311,8 +324,8 @@
  34S  cL S$other: 4220 {I5} (1965Mc07)                                          
  34S  cL $|G{-|g}=2.3 eV                                                        
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=4.7 eV (1965Mc07)                            
- 34S   G x            750                                                       
- 34S  cG RI$from 1965Mc07                                                       
+ 34S  cL $1965Mc07 states that |g intensities = 750 from this resonance to 34S  
+ 34S 2cL levels higher than 3304 keV.                                           
  34S   G 8337         20                                                        
  34S  cG E,RI$from 1965Mc07                                                     
  34S   G 9513         25                                                        
@@ -322,8 +335,8 @@
  34S   L 11670     5                                            4246      5 N   
  34S   L 11712     5  1-                                        4293      5     
  34S  cL $(2J+1)|G{-|g1}|G{-|a}/|G=0.63 eV (1967Wi01)                           
- 34S   G 9582                   E1+M2    -0.080  80                             
- 34S  cG A{-2}=-0.195, A{-4}=-0.022                                             
+ 34S   G 9582                   E1(+M2)  -0.080  80                             
+ 34S  cG A{-2}=-0.195, A{-4}=-0.022 (1967Wi01).                                 
  34S   L 11751     5                                            4338      5 N   
  34S   L 11790     5                                            4382      5     
  34S   L 11850     5                                            4450      5     
@@ -334,7 +347,7 @@
  34S   L 11922     5  (3-)                                      4531      5 G   
  34S  cL $(2J+1)|G{-|g1}|G{-|a}/|G=2.1 eV (1967Wi01)                            
  34S   G 9792                   E1                                              
- 34S  cG A{-2}=-0.321, A{-4}=-0.080                                             
+ 34S  cG A{-2}=-0.321, A{-4}=-0.080 (1967Wi01).                                 
  34S  cG MR$+0.005 {I21}                                                        
  34S   L 11932     5  1-                                        4543      5     
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=5.2 eV (1967Wi01)                            
@@ -342,7 +355,7 @@
  34S   L 11957     5  3-                                        4571      5     
  34S  cL $(2J+1)|G{-|g1}|G{-|a}/|G=1.9 eV (1967Wi01)                            
  34S   G 9827                   E1+M2    +0.031  4                              
- 34S  cG A{-2}=-0.420, A{-4}=-0.009                                             
+ 34S  cG A{-2}=-0.420, A{-4}=-0.009 (1967Wi01).                                 
  34S   L 11979     5                                            4596      5     
  34S   L 12034     5  1-                                        4658      5     
  34S  cL $(2J+1)|G{-|g0}|G{-|a}/|G=2.1 eV (1967Wi01)                            
