@@ -27,11 +27,11 @@
  34S  c  1949Da16: {+33}S(d,p) with 3.22-MeV deuterons. Measured |s(E{-p}).     
  34S 2c  Deduced Q values and a 0.82-MeV level in {+34}S.                       
  34S  cL L$From 1972Cr08, unless otherwise noted.                               
- 34S  cL S$From 1972Cr08 multiplied by a factor of 4. 1972Cr08 define           
- 34S 2cL spectroscopic factor as:                                               
- 34S 3cL C{+2}S=(2J{-i}+1)/(2J{-f}+1)|s(|q){-exp}/|s(|q){-DWBA}/N, where the    
- 34S 4cL normalization factor N=1.53. J{-f} is the final spin of the 34S level  
- 34S 5cL and J{-i}=3/2 is the initial spin for the target {+33} g.s.            
+ 34S  cL S$Scaled from the spectroscopic strengths in 1972Cr08. 1972Cr08 reports
+ 34S 2cL spectroscopic strengths G=(2J+1)/(2J{-i}+1)|*C{+2}S. The spectroscopic 
+ 34S 3cL factors C{+2}S=(2J{-i}+1)/(2J+1)|s(|q){-exp}/|s(|q){-DWBA}/N, where the
+ 34S 4cL normalization factor N=1.53. J is the spin of the populated 34S level  
+ 34S 5cL and J{-i}=3/2 is the spin for the initial target {+33}S g.s.           
  34S  cL S$LABEL=(2J+1)C{+2}S                                                   
  34S   L 0.0                                           2        1.84            
  34S  cL E$observed by 1972Cr08, 1971Va21, and 1963Br05                         
@@ -54,7 +54,7 @@
  34S  cL E$weighted average of: 4118 {I4} (1972Cr08); 4120 {I10} (1963Br05)     
  34S  cL L$0+2 (1971Va21)                                                       
  34S  cL S$0.46+2.4 (1971Va21)                                                  
- 34S   L 4627      4                                   1+3      0.84+1.84       
+ 34S   L 4627      5                                   1+3      0.84+1.84       
  34S  cL E$weighted average of: 4627 {I5} (1972Cr08); 4629 {I10} (1963Br05)     
  34S  cL L$1+3 (1971Va21)                                                       
  34S  cL S$0.35+1.4 (1971Va21)                                                  
@@ -74,7 +74,7 @@
  34S  cL E$from 1972Cr08                                                        
  34S  cL L$(1+)3 (1971Va21)                                                     
  34S  cL S$(0.029),2.7 (1971Va21)                                               
- 34S   L 5384      5                                   0        0.92            
+ 34S   L 5384      6                                   0        0.92            
  34S  cL E$weighted average of: 5384 {I6} (1972Cr08); 5384 {I10} (1963Br05)     
  34S  cL L$0+2 (1971Va21)                                                       
  34S  cL S$0.20+0.36 (1971Va21)                                                 
@@ -97,46 +97,46 @@
  34S  cL E$weak, from 1972Cr08; also observed by 1971Va21. Reported with no     
  34S 2cL uncertainty, which was adopted by evaluators (equal to maximum in the  
  34S 3cL dataset)                                                               
- 34S   L 6174      6                                   1+3      1.00+2.84       
+ 34S   L 6174      8                                   1+3      1.00+2.84       
  34S  cL E$weighted average of: 6174 {I8} (1972Cr08); 6173 {I10} (1963Br05)     
- 34S   L 6254      6                                   3        2.28            
+ 34S   L 6254      8                                   3        2.28            
  34S  cL E$weighted average of: 6256 {I8} (1972Cr08); 6251 {I10} (1963Br05)     
- 34S   L 6345      6                                   1        0.80            
+ 34S   L 6345      8                                   1        0.80            
  34S  cL E$weighted average of: 6346 {I8} (1972Cr08); 6344 {I10} (1963Br05)     
  34S   L 6422      8                                   3        0.88            
  34S  cL E$from 1972Cr08                                                        
- 34S   L 6482      7                                   1        3.64            
+ 34S   L 6482      8                                   1        3.64            
  34S  cL E$weighted average of: 6483 {I8} (1972Cr08); 6480 {I14} (1963Br05)     
  34S  cL L$1(+3) (1971Va21)                                                     
  34S  cL S$1.20(+0.89) (1971Va21)                                               
  34S   L 6533                                                                  ?
  34S  cL E$level measured by 1971Va21 (energy value from 1973EnVA)              
- 34S   L 6640      7                                   (3)      (6.56)          
+ 34S   L 6640      9                                   (3)      (6.56)          
  34S  cL E$weighted average of: 6644 {I9} (1972Cr08); 6634 {I10} (1963Br05)     
  34S  cL L$(1+)3 (1971Va21)                                                     
  34S  cL S$(0.041),2.2 (1971Va21)                                               
- 34S   L 6690      7                                   1        1.28            
+ 34S   L 6690      9                                   1        1.28            
  34S  cL E$weighted average of: 6690 {I9} (1972Cr08); 6690 {I10} (1963Br05)     
  34S  cL L$(1+)3 (1971Va21)                                                     
  34S   L 6832      9                                   0        0.56            
  34S  cL E$from 1972Cr08                                                        
- 34S   L 6959      7                                   1        0.84            
+ 34S   L 6959      10                                  1        0.84            
  34S  cL E$weighted average of: 6959 {I10} (1972Cr08); 6959 {I10} (1963Br05)    
- 34S   L 7114      7                                   1+3      0.52+1.76       
+ 34S   L 7114      10                                  1+3      0.52+1.76       
  34S  cL E$weighted average of: 7115 {I10} (1972Cr08); 7112 {I10} (1963Br05)    
  34S   L 7398      14                                                           
  34S  cL E$from 1963Br05. Other: 7388 (1972Cr08).                               
  34S   L 7547                                                                   
  34S  cL E$from 1972Cr08.                                                       
- 34S   L 7632      7                                   1+3      3.92,12         
+ 34S   L 7632      10                                  1+3      3.92,12         
  34S  cL E$weighted average of: 7633 {I11} (1972Cr08); 7631 {I10} (1963Br05)    
  34S   L 7659      11                                  (3)      (2.28)          
  34S  cL E$from 1972Cr08                                                        
  34S   L 7732      11                                  (1+3)    (0.12,0.6)      
  34S  cL E$from 1972Cr08                                                        
- 34S   L 7753      9                                   1        0.32            
+ 34S   L 7753      11                                  1        0.32            
  34S  cL E$weighted average of: 7755 {I11} (1972Cr08); 7750 {I14} (1963Br05)    
- 34S   L 7783      9                                   1        1.08            
+ 34S   L 7784      11                                  1        1.08            
  34S  cL E$weighted average of: 7785 {I11} (1972Cr08); 7783 {I14} (1963Br05)    
  34S   L 8142      12                                  1        1.04            
  34S  cL E$from 1972Cr08                                                        
