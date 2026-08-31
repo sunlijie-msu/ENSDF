@@ -2,10 +2,10 @@
  34S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34S   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34S 2 H CUT=28-May-2012$                                                       
- 34S  c  1962Li07: {+31}P(|a,p) E=42 MeV, target of red phosphorus on          
+ 34S  c  1962Li07: {+31}P(|a,p) E=42 MeV, target of red phosphorus on           
  34S 2c  polystyrene backing. Used dE/dx-E telescope (of plastic and CsI(Tl)    
  34S 3c  detectors). Measured angular distribution                              
- 34S  c  1975So11: {+31}P(|a,p) E=7.60 MeV, target of red phosphorus on Au     
+ 34S  c  1975So11: {+31}P(|a,p) E=7.60 MeV, target of red phosphorus on Au      
  34S 2c  backing. Used surface barrier annular counter for protons and |DE      
  34S 3c  plastic scintillator telescope for pair detection                      
  34S  cL E$From Adopted Levels                                                  
@@ -16,18 +16,19 @@
  34S   L 3916.408  21                  1.11 PS   9                              
  34S  cL T$mean lifetime |t in fs: 1600 {I130} (given by 1975So11 from 1970Gr11,
  34S 2cL see {+31}P(|a,p|g) dataset)                                            
- 34S  cL $For g.s. decay (1975So11): |G{-|p}/|G(|*10{+-3})=0.38 {I6}, E0      
- 34S 2cL matrix element <M>{-|p}=1.55 {I15} fm{+2}; see also 2005Ki02:          
- 34S 3cL q{+2}{-K}(E0/E2)=0.055 {I9}; X(E0/E2)=0.093 {I15}; 10{+3}|*           
+ 34S  cL $For g.s. decay (1975So11): |G{-|p}/|G(|*10{+-3})=0.38 {I6}, E0 matrix 
+ 34S 2cL element <M>{-|p}=1.55 {I15} fm{+2}; see also 2005Ki02:                 
+ 34S 3cL q{+2}{-K}(E0/E2)=0.055 {I9}; X(E0/E2)=0.093 {I15}; 10{+3}|*            
  34S 4cL |r{+2}(E0)=11 {I3} (E0 refers to 3916.4|g and E2 to 1788.8|g)          
  34S  d                                                                         
- 34S  c  1970Mo09: {+31}P(|a,p|g) E=8.00 MeV, target of Zn{-3}P{-2} evaporated  
- 34S 2c  on C foil. Used annular surface barrier Si detector for protons at 172 
- 34S 3c  ' - 175|' (FWHM=90 keV for protons corresponding to the 3300 keV level 
- 34S 4c  in {+34}S). Used NaI |g-ray detector at |+26|', |+40|', |+50|', |+65|',
- 34S 5c  and |+90|', as well as |g-ray coaxial Ge(Li) detector at 90|', relative
- 34S 6c  to the beam axis. Measured p|g, and |g-ray angular correlations. Also  
- 34S 7c  studied one |g from 146 keV isomer (32 min) {+34}Cl |b{++} decay       
+ 34S  c  1970Mo09: an 8.0-MeV |a beam was provided from the Triangle            
+ 34S 2c  Universities Nuclear Laboratory 4 MV Van de Graaff accelerator and     
+ 34S 3c  bombarded a target of 200-|mg/cm2 Zn{-3}P{-2} evaporated onto a        
+ 34S 4c  20-|mg/cm2 C backing. Protons were detected using a 100-|mm annular    
+ 34S 5c  silicon surface-barrier detector. |g rays were detected using a NaI(Tl)
+ 34S 6c  detector and $20\text{ cm}^3$ coaxial $\text{Ge(Li)}$ detector.        
+ 34S 7c  Measured E{-p}, I{-p}, E|g, I|g, p|g-coin, and p|g(|q). Deduced levels,
+ 34S 8c  J, |p, multipolarities, lifetimes, and mixing ratios.                  
  34S  c  1970Gr11: {+31}P(|a,p|g) E=6-9 MeV, target of {+31}P on Au backing.    
  34S 2c  Used Ge(Li)-NaI(Tl) anti-Compton and pair escape spectrometer (annulus 
  34S 3c  of four NaI(Tl) detectors surrounding the Ge(Li)). Measured lifetimes  
@@ -38,13 +39,13 @@
  34S  c  1971So01: {+31}P(|a,p|g) E=7 MeV, target of Zn{-3}P{-2} evaporated on  
  34S 2c  thick Au and Cu backings, and on thin C foil. Used Ge(Li) detector and 
  34S 3c  measured lifetimes by DSAM                                             
- 34S  c  1971Mu03: {+31}P(|a,p|g) E=11.0 MeV, target of red phosphorus on C    
+ 34S  c  1971Mu03: {+31}P(|a,p|g) E=11.0 MeV, target of red phosphorus on C     
  34S 2c  foils. Did angular correlations by measuring |g rays with five NaI(Tl) 
  34S 3c  detectors and measured at the 8|', 30|', 45|', 60|', 90|', 120|',      
  34S 4c  270|', 315|', and 352|' angles relative to the beam axis, in           
  34S 5c  coincidence with protons stopped in an annular surface barrier detector
  34S 6c  at 180|' relative to the beam direction.                               
- 34S  c  1972Jo10: {+31}P(|a,p|g) E=9.3,11.0 MeV, target of red phosphorus on C
+ 34S  c  1972Jo10: {+31}P(|a,p|g) E=9.3,11.0 MeV, target of red phosphorus on C 
  34S 2c  foils. Did angular correlations by measuring |g rays with five NaI(Tl) 
  34S 3c  detectors surrounding the target, in coincidence with protons stopped  
  34S 4c  in an annular surface barrier detector at 180|' relative to the beam   
@@ -64,13 +65,13 @@
  34S 3c  lifetimes by DSAM                                                      
  34S  c  1969Gr03: {+31}P(|a,p|g) E=5.90 MeV, target of Zn{-3}P{-2} evaporated  
  34S 2c  on Cu backing. Used Ge(Li) and measured lifetimes by DSAM.             
- 34S  c  1970Br18: {+31}P(|a,p|g) E=4.67 MeV, target of red phosphorus on C    
+ 34S  c  1970Br18: {+31}P(|a,p|g) E=4.67 MeV, target of red phosphorus on C     
  34S 2c  foils. Used two Ge(Li) detectors (planar and coaxial) and measured     
  34S 3c  lifetimes by DSAM                                                      
  34S  c  1970Cu02: {+31}P(|a,p|g) E=8.05, 8.14, 8.35 MeV, target of red         
- 34S 2c  phosphorus on Ni foils. Used NaI(Tl) detectors and measured lifetimes 
+ 34S 2c  phosphorus on Ni foils. Used NaI(Tl) detectors and measured lifetimes  
  34S 3c  by DSAM                                                                
- 34S  c  1971Gr26: {+31}P(|a,p|g) E=9.5 MeV, target of red phosphorus on Au    
+ 34S  c  1971Gr26: {+31}P(|a,p|g) E=9.5 MeV, target of red phosphorus on Au     
  34S 2c  backing. Used Ge(Li) and did angular correlation and polarization      
  34S 3c  measurements for two |g rays deexciting the 5689 level                 
  34S  c  1972Gr15: {+31}P(|a,p|g) E=9.5 MeV, target of InP evaporated on Au     
