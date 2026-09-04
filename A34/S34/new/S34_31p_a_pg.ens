@@ -110,9 +110,10 @@
  34S   L 2126.8     4 2+               282 FS    14                             
  34S  cL E$others: 2126.8 {I8} (1970Gr11), 2127 {I1} (1974Gr06).                
  34S  cL J$E2 |DJ=2 |g to 0+, g.s.                                              
- 34S  cL T$mean lifetime |t in fs: 440 {I50} (1970Gr11); 400 {I32} (1970Ra17);  
- 34S 2cL 400 {I40} (1974Gr06); 350 {I60} (1969Gr03, DSAM); 460 {I95} (1970Br18);
- 34S 3cL 467 {I90} (1970Cu02, DSAM). Weighted average: 407 {I20}                
+ 34S  cL T$lifetime |t=407 fs {I20}: weighted average of 350 fs {I60} (1969Gr03,
+ 34S 2cL DSAM), 460 fs {I95} (1970Br18, DSAM), 467 fs {I90} (1970Cu02, DSAM),   
+ 34S 3cL 440 fs {I50} (1970Gr11, DSAM), 400 fs {I32} (1970Ra17, DSAM), and 400  
+ 34S 4cL fs {I40} (1974Gr06, DSAM).                                             
  34S  cL ${+31}P(|a,p) |s{-total}=20 {I+8-6} |mb (1962Li07).                    
  34S   G 2126.7    8  100        E2                                             
  34S  cG E$weighted average of 2126.8 {I8} (1970Mo09), 2126.7 {I8} (1970Gr11),  
@@ -147,10 +148,10 @@
  34S   L 3303.2     4 2+               111 FS    9                              
  34S  cL E$others: 3303.0 {I9} (1970Gr11), 3303 (1971Mu03), 3304 {I2}           
  34S 2cL (1974Gr06), 3300 {I3} (1969Gr03).                                      
- 34S  cL T$mean lifetime |t in fs: 218 {I30} (1970Gr11, DSAM); 175 {I25}        
- 34S 2cL (1970Ra17, DSAM; 145 {I20} (1974Gr06, DSAM); 120 {I30} (1969Gr03,      
- 34S 3cL DSAM); 190 {I40} (1970Br18, DSAM); 144 {I28} (1970Cu02, DSAM). Weighted
- 34S 4cL average: 161 {I13} (external uncertainty)                              
+ 34S  cL T$lifetime |t=161 fs {I13}: weighted average (external uncertainty) of 
+ 34S 2cL 120 fs {I30} (1969Gr03, DSAM), 190 fs {I40} (1970Br18, DSAM), 144 fs   
+ 34S 3cL {I28} (1970Cu02, DSAM), 218 fs {I30} (1970Gr11, DSAM), 175 fs {I25}    
+ 34S 4cL (1970Ra17, DSAM), and 145 fs {I20} (1974Gr06, DSAM).                   
  34S  cL J$D+Q |DJ=0 |g to 2+, 2127 (1970Mo09); |p=+ from E2 |g to 0+, g.s.     
  34S 2cL (1979Ba54)                                                             
  34S   G 1175.2    8  52     3  D+Q      -0.16   2                              
@@ -198,9 +199,8 @@
  34S  cL E$others: 3915.1 {I9} (1970Gr11), 3915 (1971Mu03), 3914 {I2}           
  34S 2cL (1974Gr06).                                                            
  34S  cL J$D,Q |g to 2+, 2127 (1970Mo09); 0+ in Adopted Levels                  
- 34S  cL T$mean lifetime |t in fs: 1600 {I130} (1970Gr11); 1890 {I500}          
- 34S 2cL (1970Ra17, or a more conservative value is >1390); |>400 (1974Gr06).   
- 34S 3cL Weighted average: 1618 {I126}                                          
+ 34S  cL T$lifetime |t=1618 fs {I126}: weighted average of 1600 fs {I130}       
+ 34S 2cL (1970Gr11, DSAM) and 1890 fs {I500} (1970Ra17, DSAM). Other: |>400 fs (1974Gr06, DSAM).        
  34S   G 609.9        3      LT                                                ?
  34S  cG RI$<3 (1970Mo09)                                                       
  34S   G 1786.0    8  100       (E2)                                            
@@ -214,8 +214,8 @@
  34S  cL E$others: 4075 {I2} (1970Gr11), 4075 (1971Mu03), 4078 {I3} (1974Gr06). 
  34S  cL J$D |DJ=1 |g to 0+, g.s. (1970Mo09, 1971Mu03); |p=+ from M1+E2 |g to   
  34S 2cL 2+, 2127                                                               
- 34S  cL T$mean lifetime |t in fs: <33 (1970Gr11); <24 (1970Ra17); |<50         
- 34S 2cL (1974Gr06).                                                            
+ 34S  cL T$lifetime |t<24 fs (1970Ra17, DSAM). Others: <33 fs (1970Gr11, DSAM), 
+ 34S 2cL |<50 fs (1974Gr06, DSAM).                                              
  34S   G 158.8        5      LT                                                ?
  34S  cG RI$<5 (1970Mo09)                                                       
  34S   G 769.6        3      1 D                                                
@@ -241,8 +241,9 @@
  34S   L 4114.7    9  2+               73 FS     6                              
  34S  cL E$others: 4116 {I2} (1970Gr11), 4116 (1971Mu03), 4119 {I3} (1974Gr06). 
  34S  cL J$E2 |DJ=2 |g to 0+, g.s.                                              
- 34S  cL T$mean lifetime |t in fs: 89 {I20} (1970Gr11); 110 {I10} (1970Ra17);   
- 34S 2cL 100 {I15} (1974Gr06). Weighted average: 105 {I9}                       
+ 34S  cL T$lifetime |t=104 fs {I8}: weighted average of 89 fs {I20} (1970Gr11,  
+ 34S 2cL DSAM), 110 fs {I10} (1970Ra17, DSAM), and 100 fs {I15} (1974Gr06,      
+ 34S 3cL DSAM).                                                                 
  34S   G 811.0        11     LT                                                ?
  34S  cG RI$<11 (1970Mo09)                                                      
  34S   G 1987.9       48     3  M1+E2    -0.40   5                              
@@ -261,8 +262,9 @@
  34S  cL E$others: 4623 {I2} (1970Gr11), 4623 (1971Mu03), 4622 {I2} (1974Gr06). 
  34S  cL J$3, D(+Q) |DJ=1 |g to 2+, 2127 and test of spin hypotheses; |p=- from 
  34S 2cL E2 |g from 5-, 5688                                                    
- 34S  cL T$mean lifetime |t in fs: 125 {I20} (1970Gr11); 135 {I17} (1970Ra17);  
- 34S 2cL 145 {I50} (1971So01); 115 {I10} (1974Gr06). Weighted average: 121 {I8} 
+ 34S  cL T$lifetime |t=121 fs {I8}: weighted average of 125 fs {I20} (1970Gr11, 
+ 34S 2cL DSAM), 135 fs {I17} (1970Ra17, DSAM), 145 fs {I50} (1971So01), and 115 
+ 34S 3cL fs {I10} (1974Gr06, DSAM).                                             
  34S   G 508.2        3      LT                                                ?
  34S  cG RI$<3 (1970Mo09)                                                       
  34S   G 550.5        4      LT                                                ?
@@ -292,9 +294,9 @@
  34S  cL E$others: 4688 {I2} (1970Gr11), 4688 (1971Mu03), 4687 {I2} (1974Gr06), 
  34S 2cL 4688 {I1} (1977GrZH).                                                  
  34S  cL J$E2 |DJ=2 |g to 2+, 2127 and test of spin hypotheses (1971Mu03)       
- 34S  cL T$mean lifetime |t in fs: 132 {I15} (1970Gr11); 131 {I13} (1970Ra17);  
- 34S 2cL 110 {I20} (1971So01); 125 {I10} (1974Gr06); 130 {I20} (1977GrZH).      
- 34S 3cL Weighted average: 127 {I6}                                             
+ 34S  cL T$lifetime |t=127 fs {I6}: weighted average of 132 fs {I15} (1970Gr11, 
+ 34S 2cL DSAM), 131 fs {I13} (1970Ra17, DSAM), 110 fs {I20} (1971So01), 125 fs  
+ 34S 3cL {I10} (1974Gr06, DSAM), and 130 fs {I20} (1977GrZH, DSAM).             
  34S   G 573.4        3      LT                                                ?
  34S  cG RI$<3 (1970Mo09)                                                       
  34S   G 615.7        4      LT                                                ?
@@ -314,8 +316,8 @@
  34S   L 4875.0     7 3+               38 FS     14                             
  34S  cL E$others: 4874 {I2} (1970Gr11), 4874 (1971Mu03), 4874 {I4} (1974Gr06). 
  34S  cL J$M1+E2 |DJ=1 |g to 2+, 3303 and test of spin hypotheses (1971Mu03)    
- 34S  cL T$mean lifetime |t in fs: <85 (1970Gr11); 57 {I22} (1970Ra17); |<70    
- 34S 2cL (1974Gr06). Weighted average: 55 {I20}                                 
+ 34S  cL T$lifetime |t=57 fs {I22} (1970Ra17, DSAM). Others: <85 fs (1970Gr11,  
+ 34S 2cL DSAM), |<70 fs (1974Gr06, DSAM).                                       
  34S   G 187.6        14     LT                                                ?
  34S  cG RI$<14 (1970Mo09)                                                      
  34S   G 252.8        21     LT                                                ?
@@ -343,8 +345,8 @@
  34S   L 4891.7    16 2+               29 FS     10                             
  34S  cL E$others: 4892 {I3} (1970Gr11), 4892 (1971Mu03), 4892 {I4} (1974Gr06). 
  34S  cL J$E2 |DJ=2 |g to 0+ g.s. (1970Mo09, 1971Mu03)                          
- 34S  cL T$mean lifetime |t in fs: <40 (1970Gr11); 52 {I14} (1970Ra17). Weighted
- 34S 2cL average (external uncertainty): 42 {I15}                               
+ 34S  cL T$lifetime |t=52 fs {I14} (1970Ra17, DSAM). Other: <40 fs (1970Gr11,   
+ 34S 2cL DSAM).                                                                 
  34S   G 775          13     LT                                                ?
  34S  cG RI$<13 (1970Mo09)                                                      
  34S   G 818          10     LT                                                ?
@@ -373,7 +375,8 @@
  34S  cL E$weighted average of: 5318 {I2} (1970Gr11); 5318 (1971Mu03); 5322 {I4}
  34S 2cL (1974Gr06)                                                             
  34S  cL J$D+Q |DJ=0 |g to 2+, 2127                                             
- 34S  cL T$mean lifetime |t in fs: 24 {I10} (1970Gr11); |<40 (1974Gr06)         
+ 34S  cL T$lifetime |t=24 fs {I10} (1970Gr11, DSAM). Other: |<40 fs (1974Gr06,  
+ 34S 2cL DSAM).                                                                 
  34S   G 3191.8       100      D+Q       -0.17   6                              
  34S  cG RI$100 (1970Gr11); 100 (1971Mu03); 100 (1974Gr06)                      
  34S  cG A{-2}=+0.12 2, A{-4}=+0.05 2 (1971Mu03)                                
@@ -382,7 +385,7 @@
  34S   L 5382      4 1+                49 FS     LT                             
  34S  cL E$5380 (1971Mu03); 5382 {I4} (1974Gr06)                                
  34S  cL J$D |DJ=1 |g to 0+, g.s. and M1+E2 |DJ=1 |g to 2+, 2127 (1971Mu03)     
- 34S  cL T$mean lifetime |t in fs: |<70 (1974Gr06)                              
+ 34S  cL T$lifetime |t|<70 fs (1974Gr06, DSAM).                                 
  34S   G 3255         62     8  M1+E2    -1.1    10                             
  34S  cG RI$62 {I8} (1971Mu03)                                                  
  34S  cG A{-2}=+0.04 3, A{-4}=+0.02 3 (1971Mu03)                                
@@ -408,8 +411,8 @@
  34S   L 5688      4 5-                37 PS     3                              
  34S  cL E$5689 (1972Jo10); 5688 {I4} (1974Gr06)                                
  34S  cL J$|DJ=2 |g to 3, 4622; E1 |DJ=1 |g 4+, 4688                            
- 34S  cL T$mean lifetime |t in ps: |>0.5 ps (1974Gr06); 54 ps {I5} (1972Gr15,   
- 34S 2cL RDM)                                                                   
+ 34S  cL T$lifetime |t=54 ps {I5} (1972Gr15, RDM). Other: |>0.5 ps (1974Gr06,   
+ 34S 2cL DSAM).                                                                 
  34S   G 1001         45     10E1                                               
  34S  cG RI$45 {I10} (1974Gr06)                                                 
  34S  cG A{-2}=-0.32 5, A{-4}=-0.22 5 (1972Jo10)                                
@@ -463,7 +466,7 @@
  34S  cL E$6250 (1972Jo10); 6251 {I2} (1977GrZH)                                
  34S  cL J$M1+E2 |DJ=1 |g to 3+, 4875 and test of spin hypotheses; J=4,(3)      
  34S 2cL (1977GrZH)                                                             
- 34S  cL T$mean lifetime |t in fs: 600 {I+700-300} (1977GrZH)                   
+ 34S  cL T$lifetime |t=600 fs {I+700-300} (1977GrZH, DSAM).                     
  34S   G 1376.0       57     10 M1+E2    +3.7    +7-26                          
  34S  cG A{-2}=-0.44 6, A{-4}=+0.63 8 (1972Jo10)                                
  34S  cG M$D+Q |DJ=1 |g (1972Jo10); M1+E2 based on RUL                          
@@ -506,7 +509,7 @@
  34S 2cL level (A{-4}=+0.19 {I7} for 1176|g, and A{-4}=-0.29 {I13} for 3303,    
  34S 3cL both from 3303, J=2) makes unlikely J=1 but allow J=(2,3,4) (1972Jo10);
  34S 4cL J=3 from D |DJ=1 |g to 2, 5679; J=4 (1977GrZH)                         
- 34S  cL T$mean lifetime |t in fs: 60 {I15} (1977GrZH)                          
+ 34S  cL T$lifetime |t=60 fs {I15} (1977GrZH, DSAM).                            
  34S   G 959.9        22     10 D                                               
  34S  cG A{-2}=-0.46 8, A{-4}=+0.00 10 (1972Jo10)                               
  34S  cG M$D |DJ=1 |g (1972Jo10 and RUL)                                        
@@ -535,7 +538,7 @@
  34S  cL E$6864 (1972Jo10); 6864 {I1} (1977GrZH)                                
  34S  cL J$5, from Q |DJ=2 |g to 3, 4622 (1977GrZH); (0,2,4) from D+Q |DJ=0 |g, 
  34S 2cL or Q |DJ=2 |g, to 2, 2127 and test of spin hypotheses                  
- 34S  cL T$mean lifetime |t in fs: 39 {I10} (1977GrZH)                          
+ 34S  cL T$lifetime |t=39 fs {I10} (1977GrZH, DSAM).                            
  34S   G 2176.3                                                                 
  34S   G 2241.6                Q                                                
  34S  cG M$Q |DJ=2 (1977GrZH)                                                   
@@ -548,7 +551,7 @@
  34S  cL E$6890 {I1} (1977GrZH); 6898 (1972Jo10 with no other piece of          
  34S 2cL information)                                                           
  34S  cL J$(3,4) from 1977GrZH                                                  
- 34S  cL T$mean lifetime |t in fs: <20 (1977GrZH)                               
+ 34S  cL T$lifetime |t<20 fs (1977GrZH, DSAM).                                  
  34S   L 6950        2                                                          
  34S  cL E$6950 (1972Jo10)                                                      
  34S  cL J$from test of spin hypotheses of secondary 4892|g with primary 2058|g 
@@ -576,37 +579,37 @@
  34S   L 7248      2 (4)               14 FS     7                              
  34S  cL E$7245 (1972Jo10); 7248 {I2} (1977GrZH)                                
  34S  cL J$(2,4) from 1977GrZH; (4) from D |DJ=1 |g to 5-, 5688                 
- 34S  cL T$mean lifetime |t in fs: 20 {I10} (1977GrZH)                          
+ 34S  cL T$lifetime |t=20 fs {I10} (1977GrZH, DSAM).                            
  34S   G 1560                  (D)                                              
  34S  cG M$(D) |DJ=1 |g based on RUL                                            
  34S   L 7392      1 5,(4)             159 FS    35                             
  34S  cL E$7392 {I1} (1977GrZH)                                                 
  34S  cL J$5,(4) from 1977GrZH                                                  
- 34S  cL T$mean lifetime |t in fs: 230 {I50} (1977GrZH)                         
+ 34S  cL T$lifetime |t=230 fs {I50} (1977GrZH, DSAM).                           
  34S   L 7629      1                   14 FS     7                              
  34S  cL E$7629 {I1} (1977GrZH)                                                 
- 34S  cL T$mean lifetime |t in fs: 20 {I10} (1977GrZH)                          
+ 34S  cL T$lifetime |t=20 fs {I10} (1977GrZH, DSAM).                            
  34S   L 7788      1 6                 80 FS     24                             
  34S  cL E$7788 {I1} (1977GrZH)                                                 
  34S  cL J$4,6 from D |DJ=1 |g to 5-, 5688; 6 from 1977GrZH (test of spin       
  34S 2cL hypotheses)                                                            
- 34S  cL T$mean lifetime |t in fs: 115 {I35} (1977GrZH)                         
+ 34S  cL T$lifetime |t=115 fs {I35} (1977GrZH, DSAM).                           
  34S   G 2100                  D+Q                                              
  34S  cG M$D+Q |DJ=1 |g (1977GrZH)                                              
  34S   L 8083      1 5                 44 FS     7                              
  34S  cL E$8083 {I1} (1977GrZH)                                                 
  34S  cL J$5 from 1977GrZH                                                      
- 34S  cL T$mean lifetime |t in fs: 64 {I10} (1977GrZH)                          
+ 34S  cL T$lifetime |t=64 fs {I10} (1977GrZH, DSAM).                            
  34S   L 8293      2 4                 28 FS     LT                             
  34S  cL E$8293 {I2} (1977GrZH)                                                 
  34S  cL J$4 from 1977GrZH                                                      
- 34S  cL T$mean lifetime |t in fs: <40 (1977GrZH)                               
+ 34S  cL T$lifetime |t<40 fs (1977GrZH, DSAM).                                  
  34S   L 8369      1 7,(5)             83 FS     14                             
  34S  cL E$8293 {I2} (1977GrZH)                                                 
  34S  cL J$7(5) from 1977GrZH                                                   
- 34S  cL T$mean lifetime |t in fs: 120 {I20} (1977GrZH)                         
+ 34S  cL T$lifetime |t=120 fs {I20} (1977GrZH, DSAM).                           
  34S   L 8502      2 (4,6)             28 FS     7                              
  34S  cL E$8502 {I2} (1977GrZH)                                                 
  34S  cL J$(4,6) from 1977GrZH                                                  
- 34S  cL T$mean lifetime |t in fs: 40 {I10} (1977GrZH)                          
+ 34S  cL T$lifetime |t=40 fs {I10} (1977GrZH, DSAM).                            
 
