@@ -144,7 +144,7 @@ Each field begins at prescribed columns with fixed widths. Content must be left-
 
 ### ENSDF Editing Safeguards
 - Always read the entire file structure first; never edit blindly.
-- While working on the task, agentic reasoning may take some time, and it is important to reload the current state of the file before applying each edit, as the human user may have made changes concurrently. It is normal for the file content to change slightly between your edits and don not get confused.
+- While working on the task, agentic reasoning may take some time, and it is important to reload the current state of the file before applying each edit, as the human user may have made changes concurrently. It is normal for the file content to change slightly between your edits, so stay focused on the task and do not get confused.
 - Use ruler for every edit: `python .github\scripts\ensdf_1line_ruler.py --line "line"`.
 - Validate after every edit: check file structure integrity immediately.
 
