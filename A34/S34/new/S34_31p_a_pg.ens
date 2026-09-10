@@ -1,4 +1,4 @@
- 34S     31P(A,PG)                     1970MO09,1971MU03,1972JO10ENSDF    202609
+﻿ 34S     31P(A,PG)                     1970MO09,1971MU03,1972JO10ENSDF    202609
  34S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34S   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34S 2 H CUT=28-May-2012$                                                       
@@ -199,7 +199,7 @@
  34S   L 4071.8    10 1+               17 FS     LT                             
  34S  cL E$others: 4075 {I2} (1970Gr11), 4075 (1971Mu03), 4078 {I3} (1974Gr06). 
  34S  cL J$spin=1 from p|g(|q) in 1970Mo09, 1971Mu03, and 1974Gr06. |p=+ from   
- 34S 2cL 1945.5|g, M1+E2 to 2+, 2127 level.                                     
+ 34S 2cL 1945.5|g, M1+E2 to 2+, 2127.0 level.                                   
  34S  cL T$lifetime |t<24 fs (1970Ra17, DSAM). Others: <33 fs (1970Gr11, DSAM), 
  34S 2cL |<50 fs (1974Gr06, DSAM).                                              
  34S   G 159          5      LT                                             M  ?
@@ -269,7 +269,7 @@
  34S  cL E$others: 4688 {I2} (1970Gr11), 4688 (1971Mu03), 4687 {I2} (1974Gr06), 
  34S 2cL 4688 {I1} (1977GrZH).                                                  
  34S  cL J$spin=4 from p|g(|q) in 1971Mu03 and |g|g(|q) in 1974Gr06. |p=+ from  
- 34S 2cL 2560.5|g, E2 to 2+, 2127 level.                                        
+ 34S 2cL 2560.5|g, E2 to 2+, 2127.0 level.                                      
  34S  cL T$lifetime |t=127 fs {I6}: weighted average of 132 fs {I15} (1970Gr11, 
  34S 2cL DSAM), 131 fs {I13} (1970Ra17, DSAM), 110 fs {I20} (1971So01, DSAM),   
  34S 3cL 125 fs {I10} (1974Gr06, DSAM), and 130 fs {I20} (1977GrZH, DSAM).      
@@ -288,7 +288,7 @@
  34S   L 4875.2       3+               40 FS     15                             
  34S  cL E$others: 4874 {I2} (1970Gr11), 4874 (1971Mu03), 4874 {I4} (1974Gr06). 
  34S  cL J$spin=3 from p|g(|q) in 1971Mu03. |p=+ from 2750.9|g, M1+E2 to 2+,    
- 34S 2cL 2127 level.                                                            
+ 34S 2cL 2127.0 level.                                                          
  34S  cL T$lifetime |t=57 fs {I22} (1970Ra17, DSAM). Others: <85 fs (1970Gr11,  
  34S 2cL DSAM), |<70 fs (1974Gr06, DSAM).                                       
  34S   G 188          14     LT                                             M  ?
@@ -311,7 +311,7 @@
  34S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  34S  cL E$weighted average of 4889.6 {I40} (1970Mo09) and 4892 {I3} (1970Gr11).
  34S 2cL Other: 4892 (1971Mu03).                                                
- 34S  cL J$spin=2 from p|g(|q) in 1970Mo09 and 1971Mu03. |p=+ from 4891.1|g, E2 
+ 34S  cL J$spin=2 from p|g(|q) in 1970Mo09 and 1971Mu03. |p=+ from 4890.7|g, E2 
  34S 2cL to 0+, g.s.                                                            
  34S  cL T$lifetime |t=52 fs {I14} (1970Ra17, DSAM). Other: <40 fs (1970Gr11,   
  34S 2cL DSAM).                                                                 
@@ -335,11 +335,12 @@
  34S   G 1153         100       D                                           M   
  34S  cG M$from 1971Mu03.                                                       
  34S  cG A{-2}=-0.01 {I3}, A{-4}=-0.02 {I4} (1971Mu03)                          
- 34S   L 5318.8    18 2                17 FS     7                              
+ 34S   L 5318.8    18 2+               17 FS     7                              
  34S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  34S  cL E$weighted average of 5318 {I2} (1970Gr11) and 5322 {I4} (1974Gr06).   
  34S 2cL Other: 5318 (1971Mu03)                                                 
- 34S  cL J$D+Q |DJ=0 |g to 2+, 2127                                             
+ 34S  cL J$spin=2 from p|g(|q) in 1971Mu03. |p=+ from 3191.6|g, M1+E2 to 2+,    
+ 34S 2cL 2127.0 level.                                                          
  34S  cL T$lifetime |t=24 fs {I10} (1970Gr11, DSAM). Other: |<40 fs (1974Gr06,  
  34S 2cL DSAM).                                                                 
  34S   G 3191.6       100       M1+E2    -0.17   6                              
@@ -350,8 +351,8 @@
  34S   L 5382      4  1+               49 FS     LE                             
  34S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  34S  cL E$from 1974Gr06. Other: 5380 (1971Mu03)                                
- 34S  cL J$spin=1 from p|g(|q) in 1971Mu03. |p=+ from 3255|g, M1+E2 to 2+, 2127 
- 34S 2cL level.                                                                 
+ 34S  cL J$spin=1 from p|g(|q) in 1971Mu03. |p=+ from 3255|g, M1+E2 to 2+,      
+ 34S 2cL 2127.0 level.                                                          
  34S  cL T$lifetime |t|<70 fs (1974Gr06, DSAM).                                 
  34S   G 3255         62     8  M1+E2    -1.1    10                             
  34S  cG RI$from 1971Mu03.                                                      
@@ -360,14 +361,16 @@
  34S   G 5382         38     8  D                                               
  34S  cG RI,M$from 1971Mu03.                                                    
  34S  cG A{-2}=-0.13 {I3}, A{-4}=+0.02 {I4} (1971Mu03)                          
- 34S   L 5679      1  2                263 FS    21                         Z   
+ 34S   L 5679      1  2+               263 FS    21                         Z   
  34S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  34S  cL E$other: 5680 (1972Jo10).                                              
- 34S  cL J$spin=2 from p|g(|q) in 1972Jo10. Other: 3-,(2-) from 1977GrZH.       
+ 34S  cL J$spin=2 from p|g(|q) in 1972Jo10. Other: 3-,(2-) from 1977GrZH. |p=+  
+ 34S 2cL from 2376|g, M1+E2 to 2+, 3303 level.                                  
  34S  cL T$lifetime |t=380 fs {I30} (1972Jo10, DSAM).                           
- 34S   G 2376         65     10 D+Q                                             
+ 34S   G 2376         65     10 M1+E2    -0.4    LT                             
  34S  cG RI$from 1974Gr06.                                                      
- 34S  cG M,MR$D+Q with |d<-0.4 or |d>+2.4 (1972Jo10)                            
+ 34S  cG M,MR$D+Q with |d<-0.4 or |d>+2.4 (1972Jo10). M2 ruled out by RUL with  
+ 34S 2cG either |d.                                                             
  34S  cG A{-2}=-0.13 {I12}, A{-4}=-0.50 {I14} (1972Jo10)                        
  34S   G 3552         35     10 D+Q      -0.47   +7-11                          
  34S  cG RI$from 1974Gr06.                                                      
@@ -418,8 +421,8 @@
  34S  cG $A{-2}=+0.05 {I5}, A{-4}=-0.07 {I6} (1972Jo10)                         
  34S   L 6173         3+               9.0 FS    LT                         J   
  34S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
- 34S  cL J$spin=3 from p|g(|q) in 1972Jo10. |p=+ from 2870|g, M1+E2 to 2+, 3303 
- 34S 2cL level.                                                                 
+ 34S  cL J$spin=3 from p|g(|q) in 1972Jo10. |p=+ from 2870|g, M1+E2 to 2+,      
+ 34S 2cL 3303.2 level.                                                          
  34S  cL T$lifetime |t<13 fs (1972Jo10, DSAM).                                  
  34S   G 1282         6      5                                                  
  34S   G 1485         36     5  D+Q      +0.04   +6-3                           
@@ -436,7 +439,7 @@
  34S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  34S  cL E$other: 6250 (1972Jo10)                                               
  34S  cL J$spin=4 from p|g(|q) in 1972Jo10. Other: 4-,(3-) from 1977GrZH. |p=+  
- 34S 2cL from 1376|g, M1+E2 to 3+, 4874 level.                                  
+ 34S 2cL from 1376|g, M1+E2 to 3+, 4875.2 level.                                
  34S  cL T$lifetime |t=390 fs {I+70-40} (1972Jo10, DSAM). Other: |t=600 fs      
  34S 2cL {I+700-300} (1977GrZH, DSAM).                                          
  34S   G 1376         57     10 M1+E2    -3.7    +7-26                          
@@ -455,7 +458,7 @@
  34S   L 6415         4                6.9 FS    LT                         J   
  34S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  34S  cL J$spin=2,4 from p|g(|q) in 1972Jo10. Spin=2 is ruled out because either
- 34S 2cL E2 or M2 for 1727|g to 4+, 4688 level would be ruled out by RUL.       
+ 34S 2cL E2 or M2 for 1727|g to 4+, 4687.6 level would be ruled out by RUL.     
  34S  cL T$lifetime |t<10 fs (1972Jo10, DSAM).                                  
  34S   G 1540         62     5  D                                               
  34S  cG M,MR$0.00 {I6} from 1972Jo10.                                          
@@ -474,15 +477,15 @@
  34S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  34S  cL E$other: 6640 (1972Jo10)                                               
  34S  cL J$4- from 1977GrZH. Spin|=1 from p|g(|q) and nonzero A{-4} in 1972Jo10.
- 34S 2cL |p=(-) from 960|g to 2-, 5680 level.                                   
+ 34S 2cL |p=(-) from 960|g to 2, 5679 level.                                    
  34S  cL T$lifetime |t=60 fs {I15} (1977GrZH, DSAM).                            
  34S   G 960          22     10                                                 
  34S  cG A{-2}=-0.46 {I8}, A{-4}=+0.00 {I10} (1972Jo10)                         
  34S   G 2017         78     10                                                 
  34S   L 6731         2(+),4(+)        6.9 FS    LT                         J   
  34S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
- 34S  cL J$spin=2,4 from p|g(|q) in 1972Jo10. |p=(+) from 4604|g to 2+, 2127    
- 34S 2cL level and 2043|g to 4+, 4688 level.                                    
+ 34S  cL J$spin=2,4 from p|g(|q) in 1972Jo10. |p=(+) from 4604|g to 2+, 2127.0  
+ 34S 2cL level and 2043|g to 4+, 4687.6 level.                                  
  34S  cL T$lifetime |t<10 fs (1972Jo10, DSAM).                                  
  34S   G 1856         5      5                                                  
  34S   G 2043         20     7                                                  
@@ -504,16 +507,16 @@
  34S   L 6864      1  2(+),4(+)        28 FS     7                          Z   
  34S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  34S  cL E$other: 6864 (1972Jo10)                                               
- 34S  cL J$spin=2,4 from p|g(|q) in 1972Jo10. |p=(+) from 2176|g to 4+, 4688    
- 34S 2cL level and 4737|g to 2+, 2127 level. 5- from 1977GrZH is considered     
- 34S 3cL unlikely because of the presence of 4737|g to 2+, 2127 level.          
+ 34S  cL J$spin=2,4 from p|g(|q) in 1972Jo10. |p=(+) from 2176|g to 4+, 4687.6  
+ 34S 2cL level and 4737|g to 2+, 2127.0 level. 5- from 1977GrZH is considered   
+ 34S 3cL unlikely because of the presence of 4737|g to 2+, 2127.0 level.        
  34S  cL T$lifetime |t=40 fs {I10}: weighted average of 39 fs {I10} (1977GrZH,  
  34S 2cL DSAM) and 70 fs {I50} (1972Jo10, DSAM).                                
  34S   G 2176                                                                   
  34S   G 2242                                                                  ?
  34S  cG M$E2, 5- to 3-, assigned by 1977GrZH, but 1972Jo10 did not observed    
- 34S 2cG this |g transition. Instead, 1972Jo10 observed 4737|g to 2+, 2127 level
- 34S 3cG to be the major branch.                                                
+ 34S 2cG this |g transition. Instead, 1972Jo10 observed 4737|g to 2+, 2127.0    
+ 34S 3cG level to be the strongest branch.                                      
  34S   G 4737                                                                  ?
  34S  cG M,MR$D+Q with |d=+2.2 {I5} or Q(+O) with |d=0.00 {I4} (1972Jo10).      
  34S  cG A{-2}=+0.50 {I5}, A{-4}=-0.25 {I7} (1972Jo10)                          

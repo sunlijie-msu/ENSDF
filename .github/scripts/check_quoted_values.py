@@ -257,7 +257,17 @@ def _parse_j_block(texts: List[str], start_line: int) -> List[QuotedRef]:
             return match.group('jpi').strip(' ,;'), 'g.s.', 0.0
 
         match = re.match(
-            r'(?P<level>\d+(?:\.\d+)?)\s*,\s*(?P<jpi>[^;.]+' 
+            r'(?P<jpi>\d+(?:/\d+)?[+-]?)\s*,\s*'
+            r'(?P<level>\d+(?:\.\d+)?)(?!\.\d)'
+            r'(?:\s+(?:level|resonance))?',
+            text,
+        )
+        if match:
+            level_str = match.group('level')
+            return match.group('jpi'), level_str, float(level_str)
+
+        match = re.match(
+            r'(?P<level>\d+(?:\.\d+)?)(?!\.\d)\s*,\s*(?P<jpi>[^;.]+'
             r'?)(?:\s+(?:level|resonance))?(?=$|[,;.]|\s+(?:and|but|which|in|rules|'
             r'disfavors|favors|gives|based|from))',
             text,
@@ -288,7 +298,7 @@ def _parse_j_block(texts: List[str], start_line: int) -> List[QuotedRef]:
 
         # Pattern 3b: jpi, level (comma-separated)
         match = re.match(
-            r'(?P<jpi>.+?)\s*,\s*(?P<level>\d+(?:\.\d+)?)'
+            r'(?P<jpi>.+?)\s*,\s*(?P<level>\d+(?:\.\d+)?)(?!\.\d)'
             r'(?:\s+(?:level|resonance))?',
             text,
         )
