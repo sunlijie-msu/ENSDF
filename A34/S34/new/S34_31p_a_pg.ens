@@ -4,10 +4,10 @@
  34S 2 H CUT=28-May-2012$                                                       
  34S  c  1970Mo09: E=8.0-MeV |a beam was provided from the Triangle Universities
  34S 2c  Nuclear Laboratory 4 MV Van de Graaff accelerator and bombarded a      
- 34S 3c  target of 200-|mg/cm2 Zn{-3}P{-2} evaporated onto a 20-|mg/cm2 C       
+ 34S 3c  target of 200-|mg/cm{+2} Zn{-3}P{-2} evaporated onto a 20-|mg/cm{+2} C 
  34S 4c  backing. Protons were detected using a 100-|mm annular silicon         
  34S 5c  surface-barrier detector. |g rays were detected using a NaI(Tl)        
- 34S 6c  detector and 20-cm3 coaxial Ge(Li) detector. Measured E{-p}, I{-p},    
+ 34S 6c  detector and 20-cm{+3} coaxial Ge(Li) detector. Measured E{-p}, I{-p}, 
  34S 7c  E|g, I|g, p|g-coin, and p|g(|q). Deduced levels, J, |p,                
  34S 8c  multipolarities, and multipole mixing ratios. Also measured            
  34S 9c  {+31}P(|a,n|g){+34}Cl and {+34}Cl isomer decay.                        
@@ -29,7 +29,7 @@
  34S 9c  private communications from the authors of 1970Gr11 using DSAM.        
  34S  c  1970Gr11: E=6-9 MeV |a beams were provided from the University of      
  34S 2c  Liverpool EN tandem accelerator and bombarded a natural red phosphorus 
- 34S 3c  target on an Au backing. |g rays were detected using a a Ge(Li)-NaI(T1)
+ 34S 3c  target on an Au backing. |g rays were detected using a Ge(Li)-NaI(Tl)  
  34S 4c  anti-Compton and pair escape spectrometer. Measured E|g, I|g. Deduced  
  34S 5c  levels, |g branching ratios, and lifetimes using DSAM.                 
  34S  c  1970Ra17: E=5.0-7.3 MeV |a beams were provided from the Triangle       
@@ -48,15 +48,15 @@
  34S 9c  abstract by the same group of 1974Gr06 using E{-|a}=13.9 MeV at        
  34S Ac  University of Freiburg. Measured higher-lying levels. 1969Gr03:        
  34S Bc  E{-|a}=5.90 MeV at University of Freiburg. Measured lifetimes of two   
- 34S Cc  34S levels from DSAM lineshape analysis.                               
+ 34S Cc  {+34}S levels from DSAM lineshape analysis.                            
  34S  c  1970Br18: E=4.67-MeV |a beam from the 5.5 MV Van de Graaff generator at
  34S 2c  the National Laboratory of Legnaro, Padova. Targets were red phosphorus
- 34S 3c  on C foils. Deduced lifetimes of two 34S levels using DSAM.            
+ 34S 3c  on C foils. Deduced lifetimes of two {+34}S levels using DSAM.         
  34S  c  1970Cu02: E=8.05, 8.14, 8.35 MeV |a beams from the Atomic Energy       
  34S 2c  Research Establishment (AERE), UK. Targets were red phosphorus on Ni   
  34S 3c  and Ti backings foils Ni foils. Protons were detected using an annular 
  34S 4c  silicon surface-barrier detector. |g rays were detected using a NaI(Tl)
- 34S 5c  detector and a Ge(Li) detector. Deduced lifetimes of two 34S levels    
+ 34S 5c  detector and a Ge(Li) detector. Deduced lifetimes of two {+34}S levels 
  34S 6c  from DSAM lineshape analysis.                                          
  34S  c  1971Gr26: E=9.5 MeV |a beam bombarded a target of red phosphorus on a  
  34S 2c  Au backing. |g rays were detected using a single planar Ge(Li)         
@@ -72,9 +72,9 @@
  34S 3c  cylindrical Ge(Li) detectors. Measured E|g, I|g, |g(|q), and           
  34S 4c  polarization. Deduced multipolarities and multipole mixing ratios.     
  34S  c  1971So01: E=7 MeV |a beam was provided from the Heidelberg EN Tandem   
- 34S 2c  Van de Graaff accelerator and bombarded a target of Zn3P2 on Au, Cu,   
- 34S 3c  and C backings. |g rays were detected using a Ge(Li) detector. Deduced 
- 34S 4c  lifetimes of two 34S levels using DSAM lineshape analysis.             
+ 34S 2c  Van de Graaff accelerator and bombarded a target of Zn{-3}P{-2} on Au, 
+ 34S 3c  Cu, and C backings. |g rays were detected using a Ge(Li) detector.     
+ 34S 4c  Deduced lifetimes of two {+34}S levels using DSAM lineshape analysis.  
  34S  c  1988Mc05: {+31}P(|a,p) with E=1.7-5.5 MeV |a beams from the 5.5-MV CN  
  34S 2c  Van de Graaff accelerator at the University of Arizona. Measured proton
  34S 3c  yields.                                                                
@@ -365,7 +365,7 @@
  34S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  34S  cL E$other: 5680 (1972Jo10).                                              
  34S  cL J$spin=2 from p|g(|q) in 1972Jo10. Other: 3-,(2-) from 1977GrZH. |p=+  
- 34S 2cL from 2376|g, M1+E2 to 2+, 3303 level.                                  
+ 34S 2cL from 2376|g, M1+E2 to 2+, 3303.2 level.                                
  34S  cL T$lifetime |t=380 fs {I30} (1972Jo10, DSAM).                           
  34S   G 2376         65     10 M1+E2    -0.4    LT                             
  34S  cG RI$from 1974Gr06.                                                      
@@ -473,11 +473,11 @@
  34S   G 4353         41     10 D+Q      -1.1    9                              
  34S  cG M,MR$-2.0|<|d|<-0.19 from 1972Jo10.                                    
  34S  cG A{-2}=+0.12 {I5}, A{-4}=+0.05 {I6} (1972Jo10)                          
- 34S   L 6639      1  4(-)             42 FS     10                         Z   
+ 34S   L 6639      1  4(+)             42 FS     10                         Z   
  34S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  34S  cL E$other: 6640 (1972Jo10)                                               
  34S  cL J$4- from 1977GrZH. Spin|=1 from p|g(|q) and nonzero A{-4} in 1972Jo10.
- 34S 2cL |p=(-) from 960|g to 2, 5679 level.                                    
+ 34S 2cL |p=(+) from 960|g to 2+, 5679 level.                                   
  34S  cL T$lifetime |t=60 fs {I15} (1977GrZH, DSAM).                            
  34S   G 960          22     10                                                 
  34S  cG A{-2}=-0.46 {I8}, A{-4}=+0.00 {I10} (1972Jo10)                         
@@ -514,9 +514,9 @@
  34S 2cL DSAM) and 70 fs {I50} (1972Jo10, DSAM).                                
  34S   G 2176                                                                   
  34S   G 2242                                                                  ?
- 34S  cG M$E2, 5- to 3-, assigned by 1977GrZH, but 1972Jo10 did not observed    
- 34S 2cG this |g transition. Instead, 1972Jo10 observed 4737|g to 2+, 2127.0    
- 34S 3cG level to be the strongest branch.                                      
+ 34S  cG M$E2, 5- to 3-, assigned by 1977GrZH, but 1972Jo10 did not observe this
+ 34S 2cG |g transition. Instead, 1972Jo10 observed 4737|g to 2+, 2127.0 level to
+ 34S 3cG be the strongest branch.                                               
  34S   G 4737                                                                  ?
  34S  cG M,MR$D+Q with |d=+2.2 {I5} or Q(+O) with |d=0.00 {I4} (1972Jo10).      
  34S  cG A{-2}=+0.50 {I5}, A{-4}=-0.25 {I7} (1972Jo10)                          
@@ -544,8 +544,7 @@
  34S  cG A{-2}=+0.70 {I12}, A{-4}=-1.03 {I17} (1972Jo10)                        
  34S   L 7220         2+               13 FS     LT                         J   
  34S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
- 34S  cL J$spin=2 from from p|g(|q) in 1972Jo10. |p=+ from 7219|g, E2 to 0+,    
- 34S 2cL g.s.                                                                   
+ 34S  cL J$spin=2 from p|g(|q) in 1972Jo10. |p=+ from 7219|g, E2 to 0+, g.s.    
  34S  cL T$lifetime |t<18 fs (1972Jo10, DSAM).                                  
  34S   G 2532                                                                   
  34S   G 5093                                                                   
