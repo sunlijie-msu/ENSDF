@@ -32,6 +32,7 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 - **Proper-noun exceptions:** Skip well-known instrument names (e.g., `Gamma Array` as part of INGA) — not every `Gamma` match is a symbol-text error.
 - **Leaked record tags:** Scan cols 10-80 for spurious ` cL `, ` cG `, ` L `, ` G ` (copy-paste artifact).
 - **Unintended symbol prefixes:** `|resonance` renders as rho+esonance; verify intent.
+- **Reaction ejectile comma:** `target(beam,ejectiles)` takes exactly one comma, separating beam from concatenated ejectiles. Wrong: `27Al(12C,|a,p|g)` → Correct: `{+27}Al({+12}C,|ap|g)` (ejectiles α+p+γ concatenated, no internal comma).
 - **Inconsistent subscripts:** `A{-2}=0.5 A6=-0.1` → `A{-2}=0.5 A{-6}=-0.1`.
 - **Mid-token line breaks:** `E{-p}(lab)` must not split across continuation lines.
 - **Subscript used as negative exponent:** `10{-n}` (renders as subscript) must be `10{+-n}` (negative superscript). Scan: `10\{-\d+\}` . Applies to all scientific-notation contexts (`\|*10\{-`, `E\{-`, `×10\{-` in raw Unicode).
