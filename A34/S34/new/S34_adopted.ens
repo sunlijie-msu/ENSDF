@@ -282,72 +282,46 @@
  34S   G 2076.89   8  39     4  [M1,E2]                                         
  34S   G 3253.21   6  100    11 M1+E2    -1.1    10                             
  34S  cG RI$other: 100 {I13} from (|a,p|g)                                      
- 34S  cG M$D+Q |DJ=1 |g, M1+E2 based on RUL ({+31}P(|a,p|g)).                   
- 34S  cG MR$from {+31}P(|a,p|g).                                                
- 34S   G 5380.59   9  53     5  D                                               
+ 34S   G 5380.59   9  53     5  (M1)                                            
  34S  cG RI$weighted average of 61 {I13} from (|a,p|g) and 52 {I5} from (n,|g)  
  34S 2cG E=thermal                                                              
- 34S  cG M$D |DJ=1 |g ({+31}P(|a,p|g)).                                         
+ 34S  cG M$D from p|g(|q) in {+31}P(|a,p|g). |D|p=no from level scheme.         
  34S  d                                                                         
- 34S   L 5679.928  17 3-               263 FS    21                         B   
+ 34S   L 5679.928  17 2+               263 FS    21                         B   
  34S X L XREF=HLMO(5690*)PRWZ(5690*)                                            
- 34S  cL E$weighted average of 5679.6 {I6} from ({+16}O,|a2p|g), 5679 {I1} from 
- 34S 2cL (|a,p|g), 5679.928 {I17} from (n,|g) E=thermal, 5683 {I7} from (d,p),  
- 34S 3cL and 5684 {I14} from (p,p)                                              
  34S  cL T$from (|a,p|g)                                                        
- 34S  cL J$D |DJ=1 |g from 4-, 6251 ({+24}Mg({+16}O,|a2p|g)); |p=- from L=1 in  
- 34S 2cL {+33}S(d,p).                                                           
  34S   G 789.1     6  1.50   27 [E1]                                            
  34S   G 803.103   27 4.4    4  [E1]                                            
- 34S   G 1055.491  20 27.1   27 [M1,E2]                                         
+ 34S   G 1055.491  20 26.9   27 [M1,E2]                                         
  34S  cG E$weighted average of 1055.4 {I8} from ({+16}O,|a2p|g) and 1055.491    
  34S 2cG {I20} from (n,|g) E=thermal.                                           
- 34S  cG RI$weighted average of 33 {I17} from ({+16}O,|a2p|g) and 26.9 {I27}    
- 34S 2cG from (n,|g) E=thermal.                                                 
+ 34S  cG RI$other: 49 {I25} from ({+16}O,|a2p|g).                               
  34S   G 1564.8    5  3.5    8  [E1]                                            
- 34S   G 2375.657  20 98     9  M1+E2    -0.4    LT                             
+ 34S   G 2375.657  20 100    9  M1+E2    -0.4    LT                             
  34S  cG E$weighted average of 2375.4 {I7} from ({+16}O,|a2p|g) and 2375.657    
  34S 2cG {I20} from (n,|g) E=thermal.                                           
- 34S  cG RI$weighted average of 67 {I33} from ({+16}O,|a2p|g), 100 {I16} from   
- 34S 2cG (|a,p|g), and 100 {I9} from (n,|g) E=thermal.                          
- 34S  cG M$D+Q |g ({+31}P(|a,p|g)).                                             
- 34S  cG MR$from {+31}P(|a,p|g): <-0.4 or >+2.4.                                
+ 34S  cG RI$others: 100 {I49} from ({+16}O,|a2p|g), 100 {I16} from (|a,p|g).    
+ 34S  cG MR$or |d>+2.4 {+31}P(|a,p|g).                                          
  34S   G 3552.08   6  66.7   7  D+Q      -0.47   +7-11                          
  34S  cG E$weighted average of 3551.2 {I6} from ({+16}O,|a2p|g) and 3552.08 {I4}
  34S 2cG from (n,|g) E=thermal.                                                 
- 34S  cG RI$weighted average of 100 {I50} from ({+16}O,|a2p|g), 54 {I16} from   
- 34S 2cG (|a,p|g), and 66.7 {I7} from (n,|g) E=thermal.                         
- 34S  cG M$D+Q |g ({+31}P(|a,p|g)).                                             
- 34S  cG MR$from {+31}P(|a,p|g).                                                
+ 34S  cG RI$others: 149 {I75} from ({+16}O,|a2p|g), 54 {I16} from (|a,p|g).     
  34S  d                                                                         
  34S   L 5690.8    6  5-               36.9 PS   17                         C   
  34S X L XREF=EHJMN(5679)O(5690*)RWZ(5690*)g                                    
  34S  cL T$from |t=53.3 ps {I24}, weighted average of 55 ps {I7} from           
  34S 2cL ({+35}Cl,|a|g), 52.9 ps {I24} from ({+12}C,|ap|g), and 54 ps {I5} from 
  34S 3cL (|a,p|g).                                                              
- 34S  cL E$weighted average of 5690.8 {I6} from ({+16}O,|a2p|g), 5688 {I4} from 
- 34S 2cL (|a,p|g), 5679 {I14} from (t,p), 5694 {I7} from (d,p), and 5690.8 {I16}
- 34S 3cL from ({+36}S,{+34}S|g)                                                 
- 34S  cL E$from {+24}Mg({+16}O,|a2p|g).                                         
- 34S  cL J$E2 |DJ=2 |g to 3-, 4625 and E1 |DJ=1 |g to 4+, 4689                  
- 34S 2cL ({+24}Mg({+16}O,|a2p|g)).                                              
- 34S  cL T$mean lifetime |t in ps, from {+31}P(|a,p|g): 54 {I5} (1972Gr15); from
- 34S 2cL {+35}Cl(t,|a|g): 55 {I7} (1976Co11); from {+24}Mg({+16}O,|a2p|g): 52.9 
- 34S 3cL {I24} (1976Me03). Weighted average: 53.3 {I21}.                        
- 34S   G 1001.5    5  97     4  E1                                              
+ 34S   G 1001.5    5  100    4  E1                                          M   
  34S  cG E$weighted average of 1001.6 {I5} from ({+16}O,|a2p|g) and 1001 {I1}   
  34S 2cG from ({+36}S,{+34}S|g)                                                 
- 34S  cG RI$weighted average of 100 {I10} from ({+16}O,|a2p|g), 96 {I4} from    
- 34S 2cG (|a,p|g), and 100 {I9} from ({+36}S,{+34}S|g)                          
- 34S  cG E,RI$from {+24}Mg({+16}O,|a2p|g).                                      
- 34S  cG M$D(+Q) |DJ=1 |g, E1 from polarization measurement ({+31}P(|a,p|g)).   
- 34S   G 1066.2    5  87     7  E2                                              
+ 34S  cG RI$others: 100 {I10} from ({+16}O,|a2p|g), 100 {I9} from               
+ 34S 2cG ({+36}S,{+34}S|g)                                                      
+ 34S   G 1066.2    5  88     8  E2                                              
  34S  cG E$weighted average of 1066.2 {I5} from ({+16}O,|a2p|g) and 1066 {I1}   
  34S 2cG from ({+36}S,{+34}S|g)                                                 
- 34S  cG RI$unweighted average of 83 {I10} from ({+16}O,|a2p|g), 100 {I4} from  
+ 34S  cG RI$unweighted average of 83 {I10} from ({+16}O,|a2p|g), 104 {I4} from  
  34S 2cG (|a,p|g), and 78 {I8} from ({+36}S,{+34}S|g)                           
- 34S  cG E,RI$from {+24}Mg({+16}O,|a2p|g).                                      
- 34S  cG M$Q |DJ=2 |g, E2 from polarization measurement ({+31}P(|a,p|g)).       
  34S   G 3562.7    6  2.9    12 [E3]                                            
  34S  cG E,RI$from {+24}Mg({+16}O,|a2p|g).                                      
  34S  d                                                                         
