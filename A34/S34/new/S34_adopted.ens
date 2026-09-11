@@ -204,14 +204,13 @@
  34S  dG E,RI$from (n,|g) E=thermal                                             
  34S   G 708.0        0.29   LT [E3]                                           ?
  34S  dG E,RI$from (n,|g) E=thermal                                             
- 34S   G 1320.168  20 100    7  D(+Q)    -0.03   5                              
+ 34S   G 1320.168  20 100    7  D(+Q)    -0.03   5                          M   
  34S  cG E$weighted average of 1320.1 {I5} from ({+16}O,|a2p|g), 1318.8 {I10}   
  34S 2cG from (|a,p|g), 1320.169 {I20} from (n,|g) E=thermal, and 1320 {I1} from
  34S 3cG ({+36}S,{+34}S|g)                                                      
- 34S  cG RI$from (|a,p|g). Others: 100 {I11} from ({+16}O,|a2p|g) and 100 {I11} 
- 34S 2cG from (n,|g) E=thermal                                                  
- 34S  cG M$from {+31}P(|a,p|g) and {+24}Mg({+16}O,|a2p|g).                      
- 34S  cG MR$-0.03 {I5} ({+31}P(|a,p|g)).                                        
+ 34S  cG RI$others: 100 {I11} from ({+16}O,|a2p|g) and 100 {I11} from (n,|g)    
+ 34S 2cG E=thermal                                                              
+ 34S  cG M$D(+Q) from {+31}P(|a,p|g). |D|p=yes from level scheme.               
  34S   G 2496.725  25 41     4  D(+Q)    +0.02   4                              
  34S  cG E$weighted average of 2496.5 {I8} from ({+16}O,|a2p|g), 2495.5 {I7}    
  34S 2cG from (|a,p|g), and 2496.726 {I20} from (n,|g) E=thermal                
@@ -288,12 +287,11 @@
  34S 3cG from (n,|g) E=thermal                                                  
  34S  cG M$D+Q |DJ=1 |g, M1+E2 based on RUL ({+31}P(|a,p|g)).                   
  34S  cG MR$from {+31}P(|a,p|g).                                                
- 34S   G 2749.24   5  100    8  M1+E2    -0.11   3                              
+ 34S   G 2749.24   5  100    8  M1+E2    -0.11   3                          M   
  34S  cG E$weighted average of 2749.6 {I6} from ({+16}O,|a2p|g), 2750.9 {I25}   
  34S 2cG from (|a,p|g), and 2749.24 {I5} from (n,|g) E=thermal                  
- 34S  cG RI$from (|a,p|g). Others: 100 {I14} from {+34}Cl |e+|b{++} decay (31.99
- 34S 2cG min), 100 {I22} from ({+16}O,|a2p|g), and 100 {I10} from (n,|g)        
- 34S 3cG E=thermal                                                              
+ 34S  cG RI$others: 100 {I14} from {+34}Cl |e+|b{++} decay (31.99 min), 100     
+ 34S 2cG {I22} from ({+16}O,|a2p|g), and 100 {I10} from (n,|g) E=thermal        
  34S  cG M$D+Q |DJ=1 |g, M1+E2 based on RUL ({+31}P(|a,p|g)).                   
  34S  cG MR$from {+31}P(|a,p|g).                                                
  34S   G 4877         1.5    LT [M3]                                           ?
