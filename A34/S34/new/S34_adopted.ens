@@ -142,7 +142,7 @@
  34S  dG RI$from (n,|g) E=thermal.                                              
  34S  cG M$D,Q |DJ=0,1,2 |g, D,E2 based on RUL ({+31}P(|a,p|g)); D excluded     
  34S 2cG based on level scheme.                                                 
- 34S   G 3913         2      LT [E0]                                        M  ?
+ 34S  dG 3913         2      LT [E0]                                        M  ?
  34S  cG $X(E0/E2)=0.093 {I15}, |r{+2}(E0)=0.011 {I3}, q{-K}{+2}(E0/E2)=0.055   
  34S 2cG {I9} (2005Ki02 evaluation).                                            
  34S  d                                                                         
@@ -150,7 +150,7 @@
  34S X L XREF=AB(4070?)CGLMN(4085)PRWYac(4090*)                                 
  34S  cL T$lifetime |t<24 fs (1970Ra17, DSAM). Others: <33 fs (1970Gr11, DSAM), 
  34S 2cL |<50 fs (1974Gr06, DSAM).                                              
- 34S   G 158.3        0.19   LT [M1]                                           ?
+ 34S  dG 158.3        0.19   LT [M1]                                           ?
  34S  dG E,RI$from (n,|g) E=thermal.                                            
  34S   G 770.428   20 8.5    9  (M1(+E2))-1.3    15                             
  34S  cG RI$weighted average of 6.2 {I22} from (|a,p|g) and 8.8 {I8} from (n,|g)
@@ -175,8 +175,8 @@
  34S 2cL 1970Gr11, 110 fs {I10} from 1970Ra17, and 100 fs {I15} from 1974Gr06 in
  34S 3cL (|a,p|g).                                                              
  34S  cL J$L=2 from 0+ in {+32}S(t,p).                                          
- 34S   G 198.4        0.35   LT [E2]                                           ?
- 34S   G 810.6        0.7    LT [M1,E2]                                        ?
+ 34S  dG 198.4        0.35   LT [E2]                                           ?
+ 34S  dG 810.6        0.7    LT [M1,E2]                                        ?
  34S  dG E,RI$from (n,|g) E=thermal.                                            
  34S   G 1987.19   3  69.8   34 M1+E2    -0.40   5                              
  34S  cG E$weighted average of 1987.2 {I10} from {+34}P |b{+-} decay and 1987.19
@@ -198,10 +198,10 @@
  34S 2cL 135 fs {I17} from 1970Ra17, 115 fs {I10} from 1974Gr06, and 145 fs     
  34S 3cL {I50} from 1971So01 in (|a,p|g).                                       
  34S  cL J$L=3 from 0+ in {+32}S(t,p).                                          
- 34S   G 508.4        4      LT [E1]                                        M  ?
- 34S   G 549.7        0.13   LT [M2]                                           ?
+ 34S  dG 508.4        4      LT [E1]                                        M  ?
+ 34S  dG 549.7        0.13   LT [M2]                                           ?
  34S  dG E,RI$from (n,|g) E=thermal.                                            
- 34S   G 708.0        0.29   LT [E3]                                           ?
+ 34S  dG 708.0        0.29   LT [E3]                                           ?
  34S  dG E,RI$from (n,|g) E=thermal.                                            
  34S   G 1320.168  20 100    7  (E1(+M2))-0.03   5                          M   
  34S  cG E$weighted average of 1320.1 {I5} from ({+16}O,|a2p|g), 1318.8 {I10}   
@@ -290,20 +290,20 @@
  34S  cL J$D+Q |DJ=0 |g to 2+, 2127; |p=(-) based on statement in {+34}S(|a,|a')
  34S  cL T$mean lifetime |t in fs, from {+31}P(|a,p|g): 24 {I10} (1970Gr11).    
  34S 2cL Other: |<40 (1974Gr06).                                                
- 34S   G 432.8        0.81   LT [E1]                                           ?
- 34S   G 445.7        0.81   LT [E1]                                           ?
- 34S   G 633.5        1.5    LT [M2]                                           ?
+ 34S  dG 432.8        0.81   LT [E1]                                           ?
+ 34S  dG 445.7        0.81   LT [E1]                                           ?
+ 34S  dG 633.5        1.5    LT [M2]                                           ?
  34S   G 698.18    13 1.37   19 [M1,E2]                                         
- 34S   G 1207.7       2.2    LT [E1]                                           ?
+ 34S  dG 1207.7       2.2    LT [E1]                                           ?
  34S   G 1247.92   6  8.0    10 [E1]                                            
- 34S   G 1406.1       1.4    LT [M2]                                           ?
- 34S   G 2018.3       1.5    LT [E1]                                           ?
+ 34S  dG 1406.1       1.4    LT [M2]                                           ?
+ 34S  dG 2018.3       1.5    LT [E1]                                           ?
  34S   G 3194.74   5  100    11 [E1]                                            
  34S  dG E$from (n,|g) E=thermal.                                               
  34S  dG RI$from (n,|g) E=thermal.                                              
  34S  cG M$D+Q |DJ=0 |g ({+31}P(|a,p|g)).                                       
  34S  cG MR$from {+31}P(|a,p|g).                                                
- 34S   G 5322.5       3.2    LT [M2]                                           ?
+ 34S  dG 5322.5       3.2    LT [M2]                                           ?
  34S  d                                                                         
  34S   L 5380.99   3  1+               49 FS     LE                             
  34S X L XREF=B(5380?)GMNPRWac(5360*)                                           
@@ -315,14 +315,14 @@
  34S  cL J$D |DJ=1 |g to 0+, g.s. and M1+E2 |DJ=1 |g to 2+, 2127                
  34S 2cL ({+31}P(|a,p|g)).                                                      
  34S  cL T$mean lifetime |t in fs from {+31}P(|a,p|g): |<70 (1974Gr06).         
- 34S   G 151.8        0.53   LT [M1]                                           ?
- 34S   G 491.2        1.6    LT [M1,E2]                                        ?
- 34S   G 504.2        1.6    LT [E2]                                           ?
- 34S   G 692.0        1.6    LT [M3]                                           ?
- 34S   G 756.6        1.6    LT [M2]                                           ?
+ 34S  dG 151.8        0.53   LT [M1]                                           ?
+ 34S  dG 491.2        1.6    LT [M1,E2]                                        ?
+ 34S  dG 504.2        1.6    LT [E2]                                           ?
+ 34S  dG 692.0        1.6    LT [M3]                                           ?
+ 34S  dG 756.6        1.6    LT [M2]                                           ?
  34S   G 1266.11   5  17.4   19 [M1,E2]                                         
- 34S   G 1306.3       2.6    LT [M1,E2]                                        ?
- 34S   G 1464.6       2.6    LT [M1]                                           ?
+ 34S  dG 1306.3       2.6    LT [M1,E2]                                        ?
+ 34S  dG 1464.6       2.6    LT [M1]                                           ?
  34S   G 2076.89   8  39     4  [M1,E2]                                         
  34S  dG E$from (n,|g) E=thermal.                                               
  34S  dG RI$from (n,|g) E=thermal.                                              
@@ -343,19 +343,19 @@
  34S  cL T$from (|a,p|g)                                                        
  34S  cL J$D |DJ=1 |g from 4-, 6251 ({+24}Mg({+16}O,|a2p|g)); |p=- from L=1 in  
  34S 2cL {+33}S(d,p).                                                           
- 34S   G 357.4        0.19   LT [M1,E2]                                        ?
- 34S   G 451.8        0.19   LT [E3]                                           ?
+ 34S  dG 357.4        0.19   LT [M1,E2]                                        ?
+ 34S  dG 451.8        0.19   LT [E3]                                           ?
  34S   G 789.1     6  1.50   27 [E1]                                            
  34S   G 803.103   27 4.4    4  [E1]                                            
- 34S   G 990.9        0.42   LT [E1]                                           ?
+ 34S  dG 990.9        0.42   LT [E1]                                           ?
  34S   G 1055.491  20 27.1   27 [M1,E2]                                         
  34S  cG E$weighted average of 1055.4 {I8} from ({+16}O,|a2p|g) and 1055.491    
  34S 2cG {I20} from (n,|g) E=thermal.                                           
  34S  cG RI$weighted average of 33 {I17} from ({+16}O,|a2p|g) and 26.9 {I27}    
  34S 2cG from (n,|g) E=thermal.                                                 
  34S   G 1564.8    5  3.5    8  [E1]                                            
- 34S   G 1605.3       0.42   LT [M2]                                           ?
- 34S   G 1763.5       0.42   LT [E3]                                           ?
+ 34S  dG 1605.3       0.42   LT [M2]                                           ?
+ 34S  dG 1763.5       0.42   LT [E3]                                           ?
  34S   G 2375.657  20 98     9  M1+E2    -0.4    LT                             
  34S  cG E$weighted average of 2375.4 {I7} from ({+16}O,|a2p|g) and 2375.657    
  34S 2cG {I20} from (n,|g) E=thermal.                                           
@@ -370,7 +370,7 @@
  34S 2cG (|a,p|g), and 66.7 {I7} from (n,|g) E=thermal.                         
  34S  cG M$D+Q |g ({+31}P(|a,p|g)).                                             
  34S  cG MR$from {+31}P(|a,p|g).                                                
- 34S   G 5679.9       2.0    LT [E3]                                           ?
+ 34S  dG 5679.9       2.0    LT [E3]                                           ?
  34S  d                                                                         
  34S   L 5690.8    6  5-               36.9 PS   17                         C   
  34S X L XREF=EHJMN(5679)O(5690*)RWZ(5690*)g                                    
@@ -408,15 +408,15 @@
  34S  cL E$weighted average of 5759 {I14} from (t,p), 5755.876 {I21} from (n,|g)
  34S 2cL E=thermal, 5758 {I7} from (d,p), and 5755 {I14} from (p,p)             
  34S  cL J$L=1 in {+32}S(t,p), also from {+34}S(p,p'),(pol p,p').               
- 34S   G 433.4        0.28   LT                                                ?
- 34S   G 527.7        0.28   LT                                                ?
- 34S   G 866.1        0.4    LT                                                ?
- 34S   G 879.0        0.4    LT                                                ?
- 34S   G 1066.9       0.51   LT                                                ?
- 34S   G 1131.5       0.51   LT                                                ?
+ 34S  dG 433.4        0.28   LT                                                ?
+ 34S  dG 527.7        0.28   LT                                                ?
+ 34S  dG 866.1        0.4    LT                                                ?
+ 34S  dG 879.0        0.4    LT                                                ?
+ 34S  dG 1066.9       0.51   LT                                                ?
+ 34S  dG 1131.5       0.51   LT                                                ?
  34S   G 1640.7    10 0.97   57                                                 
- 34S   G 1681.2       0.51   LT                                                ?
- 34S   G 1839.5       4      LT                                                ?
+ 34S  dG 1681.2       0.51   LT                                                ?
+ 34S  dG 1839.5       4      LT                                                ?
  34S   G 2451.557  20 29.6   29                                                 
  34S   G 3628.10   4  100    9                                                  
  34S  dG E$from (n,|g) E=thermal.                                               
@@ -428,13 +428,13 @@
  34S  cL E$weighted average of 5859 {I14} from (t,p), 5847.524 {I29} from (n,|g)
  34S 2cL E=thermal, and 5848 {I18} from (p,p)                                   
  34S  cL J$L=0 in {+32}S(t,p).                                                  
- 34S   G 525.0        4.7    LT                                                ?
- 34S   G 619.4        4.7    LT                                                ?
- 34S   G 957.8        7.3    LT                                                ?
- 34S   G 970.7        7.3    LT                                                ?
- 34S   G 1158.6       14     LT                                                ?
- 34S   G 1223.1       11     LT                                                ?
- 34S   G 1732.7       39     LT                                                ?
+ 34S  dG 525.0        4.7    LT                                                ?
+ 34S  dG 619.4        4.7    LT                                                ?
+ 34S  dG 957.8        7.3    LT                                                ?
+ 34S  dG 970.7        7.3    LT                                                ?
+ 34S  dG 1158.6       14     LT                                                ?
+ 34S  dG 1223.1       11     LT                                                ?
+ 34S  dG 1732.7       39     LT                                                ?
  34S   G 1772.82   4  73     7                                                  
  34S   G 2543.13   10 5.0E2  5                                              &   
  34S   G 3719.68   16 100    11                                                 
@@ -484,16 +484,16 @@
  34S  cL J$from {+34}S(p,p'),(pol p,p'); J=3 from D+Q |DJ=1 gammas to 2+, 3303  
  34S 2cL and 4+, 4688 ({+31}P(|a,p|g)); |p=- from L=1+3 in {+33}S(d,p).         
  34S   G 846.1     13 2.6    17                                                 
- 34S   G 940.7        2.7    LT                                                ?
- 34S   G 1279.1       1.0    LT                                                ?
- 34S   G 1292.0       0.83   LT                                                ?
+ 34S  dG 940.7        2.7    LT                                                ?
+ 34S  dG 1279.1       1.0    LT                                                ?
+ 34S  dG 1292.0       0.83   LT                                                ?
  34S   G 1479.73   15 2.41   30                                                 
  34S  cG M$D(+Q) |DJ=1 |g ({+31}P(|a,p|g)).                                     
  34S  cG MR$from {+31}P(|a,p|g).                                                
  34S   G 1544.41   10 23.7   22                                             &   
  34S   G 2053.94   14 5.4    8                                                  
- 34S   G 2094.2       1.0    LT                                                ?
- 34S   G 2252.5       1.0    LT                                                ?
+ 34S  dG 2094.2       1.0    LT                                                ?
+ 34S  dG 2252.5       1.0    LT                                                ?
  34S   G 2864.56   4  100    10                                                 
  34S  cG M$D+Q |DJ=1 |g ({+31}P(|a,p|g)).                                       
  34S  cG MR$from {+31}P(|a,p|g).                                                
@@ -594,8 +594,8 @@
  34S   G 722.95    14 1.67   21                                                 
  34S   G 798.92    10 2.8    4                                                  
  34S   G 1156.39   7  15.0   17                                                 
- 34S   G 1250.6       2.1    LT                                                ?
- 34S   G 1589.0       1.1    LT                                                ?
+ 34S  dG 1250.6       2.1    LT                                                ?
+ 34S  dG 1589.0       1.1    LT                                                ?
  34S   G 1602.06   15 4.1    7                                                  
  34S   G 1854.28   4  12.2   13                                                 
  34S   G 2404.04   6  10.2   11                                                 
@@ -607,7 +607,7 @@
  34S 2cG E=thermal                                                              
  34S  cG M$D+Q |DJ=1 |g ({+31}P(|a,p|g)).                                       
  34S  cG MR$from {+31}P(|a,p|g).                                                
- 34S   G 6478.8       0.19   LT                                                ?
+ 34S  dG 6478.8       0.19   LT                                                ?
  34S  d                                                                         
  34S   L 6535      15                                                           
  34S X L XREF=NR(6533?)                                                         
@@ -826,15 +826,15 @@
  34S  cL T$from (|a,p|g)                                                        
  34S  cL J$L=3 in {+32}S(t,p).                                                  
  34S  cL T$mean lifetime |t in fs, from {+31}P(|a,p|g): 20 {I10} (1977GrZH).    
- 34S   G 2307.4       1.0    LT [M1,E2]                                        ?
- 34S   G 2401.7       1.0    LT [E3]                                           ?
- 34S   G 2740.2       1.4    LT [E1]                                           ?
+ 34S  dG 2307.4       1.0    LT [M1,E2]                                        ?
+ 34S  dG 2401.7       1.0    LT [E3]                                           ?
+ 34S  dG 2740.2       1.4    LT [E1]                                           ?
  34S   G 2940.42   31 8.3    12 [E1]                                            
  34S   G 3005.39   5  79     8  [M1,E2]                                         
  34S   G 3515.07   11 11.3   13 [E1]                                            
- 34S   G 3713.5       1.4    LT [E3]                                           ?
+ 34S  dG 3713.5       1.4    LT [E3]                                           ?
  34S   G 4325.397  30 100    10 [E1]                                            
- 34S   G 7629.9       2.6    LT [E3]                                           ?
+ 34S  dG 7629.9       2.6    LT [E3]                                           ?
  34S  d                                                                         
  34S   L 7655      11 (-)                                                       
  34S X L XREF=N(7621*)RW                                                        
