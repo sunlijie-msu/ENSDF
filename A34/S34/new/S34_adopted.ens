@@ -13,7 +13,7 @@
  34S 4c  other mechanisms. Compared with EPAX, abrasion-ablation, and HIPSE     
  34S 5c  models. Studied target dependence of fragment cross sections.          
  34S  d                                                                         
- 34S  cG E,RI$ From {+33}S(n,|g), unless noted otherwise                        
+ 34S  cG E,RI$ From {+33}S(n,|g) E=thermal, unless otherwise noted.             
  34S  cG E(a),RI(b),M(c),MR(d)$ From {+30}Si(|a,|g),(|a,n)                      
  34S  cG M,MR$ From measured |g(|q) and/or |g|g(|q) in {+31}P(|a,p|g), and RUL  
  34S 2cG if applicable, unless otherwise noted.                                 
@@ -131,17 +131,14 @@
  34S 2cL {+31}P(|a,p|g) from 1970Gr11 with DSAM and 1890 fs {I500} in           
  34S 3cL {+31}P(|a,p|g) from 1970Ra17 with DSAM. Other: >400 fs in              
  34S 4cL {+31}P(|a,p|g) from 1974Gr06 with DSAM.                                
- 34S  cL E$weighted average of 3914.4 {I11} from {+34}P |b{+-} decay, 3915 {I12}
- 34S 2cL from (t,p), 3916.408 {I21} from (n,|g) E=thermal, and 3917 {I14} from  
- 34S 3cL (p,p)                                                                  
  34S  cL J$L=0 from 0+ in {+32}S(t,p).                                          
  34S   G 612.16    5  0.33   4  [E2]                                            
- 34S  cG E$from (n,|g) E=thermal                                                
- 34S  cG RI$from (n,|g) E=thermal                                               
+ 34S  dG E$from (n,|g) E=thermal                                                
+ 34S  dG RI$from (n,|g) E=thermal                                               
  34S   G 1787.3    8  100    10 [E2]                                            
  34S  cG E$unweighted average of 1787 {I1} from {+34}P |b{+-} decay, 1786.0 {I8}
  34S 2cG from (|a,p|g), and 1788.794 {I20} from (n,|g) E=thermal                
- 34S  cG RI$from (n,|g) E=thermal                                               
+ 34S  dG RI$from (n,|g) E=thermal                                               
  34S  cG M$D,Q |DJ=0,1,2 |g, D,E2 based on RUL ({+31}P(|a,p|g)); D excluded     
  34S 2cG based on level scheme.                                                 
  34S   G 3913         2      LT [E0]                                           ?
@@ -247,8 +244,8 @@
  34S  cG M$from {+31}P(|a,p|g) and {+24}Mg({+16}O,|a2p|g).                      
  34S  cG MR$+0.02 {I4} ({+31}P(|a,p|g)).                                        
  34S   G 4624.2    5  0.55   13 [E3]                                            
- 34S  cG E$from (n,|g) E=thermal                                                
- 34S  cG RI$from (n,|g) E=thermal                                               
+ 34S  dG E$from (n,|g) E=thermal                                                
+ 34S  dG RI$from (n,|g) E=thermal                                               
  34S  d 
  34S   L 4688.97   4  4+               88 FS     7                          A   
  34S X L XREF=ACEGHJMN(4690*)PRV(4688*)W(4689*)YZ(4690*)a(4690*)c(4710*)g       
@@ -353,10 +350,10 @@
  34S   G 1585.510  20 85     8  [M1,E2]                                         
  34S  cG RI$weighted average of 96 {I24} from (|a,p|g) and 84 {I8} from (n,|g)  
  34S 2cG E=thermal                                                              
- 34S  cG E$from (n,|g) E=thermal                                                
+ 34S  dG E$from (n,|g) E=thermal                                                
  34S   G 2762.10   8  100    10 [M1,E2]                                         
- 34S  cG E$from (n,|g) E=thermal                                                
- 34S  cG RI$from (n,|g) E=thermal                                               
+ 34S  dG E$from (n,|g) E=thermal                                                
+ 34S  dG RI$from (n,|g) E=thermal                                               
  34S   G 4889.30   8  90     9  E2                                              
  34S  cG RI$weighted average of 100 {I24} from (|a,p|g) and 89 {I9} from (n,|g) 
  34S 2cG E=thermal                                                              
@@ -373,7 +370,7 @@
  34S   G 603.8        0.4    LT                                                ?
  34S   G 1113.27   9  4.1    6                                                  
  34S   G 1153.492  20 100    9  D                                               
- 34S  cG RI$from (n,|g) E=thermal                                               
+ 34S  dG RI$from (n,|g) E=thermal                                               
  34S  cG M$D |DJ=1 |g ({+31}P(|a,p|g)).                                         
  34S   G 1924.0       2.1    LT                                                ?
  34S   G 3100.6       2.1    LT                                                ?
@@ -398,8 +395,8 @@
  34S   G 1406.1       1.4    LT [M2]                                           ?
  34S   G 2018.3       1.5    LT [E1]                                           ?
  34S   G 3194.74   5  100    11 [E1]                                            
- 34S  cG E$from (n,|g) E=thermal                                                
- 34S  cG RI$from (n,|g) E=thermal                                               
+ 34S  dG E$from (n,|g) E=thermal                                                
+ 34S  dG RI$from (n,|g) E=thermal                                               
  34S  cG M$D+Q |DJ=0 |g ({+31}P(|a,p|g)).                                       
  34S  cG MR$from {+31}P(|a,p|g).                                                
  34S   G 5322.5       3.2    LT [M2]                                           ?
@@ -423,10 +420,10 @@
  34S   G 1306.3       2.6    LT [M1,E2]                                        ?
  34S   G 1464.6       2.6    LT [M1]                                           ?
  34S   G 2076.89   8  39     4  [M1,E2]                                         
- 34S  cG E$from (n,|g) E=thermal                                                
- 34S  cG RI$from (n,|g) E=thermal                                               
+ 34S  dG E$from (n,|g) E=thermal                                                
+ 34S  dG RI$from (n,|g) E=thermal                                               
  34S   G 3253.21   6  100    11 M1+E2    -1.1    10                             
- 34S  cG RI$from (n,|g) E=thermal. Other: 100 {I13} from (|a,p|g)               
+ 34S  dG RI$from (n,|g) E=thermal. Other: 100 {I13} from (|a,p|g)               
  34S  cG M$D+Q |DJ=1 |g, M1+E2 based on RUL ({+31}P(|a,p|g)).                   
  34S  cG MR$from {+31}P(|a,p|g).                                                
  34S   G 5380.59   9  53     5  D                                               
@@ -518,8 +515,8 @@
  34S   G 1839.5       4      LT                                                ?
  34S   G 2451.557  20 29.6   29                                                 
  34S   G 3628.10   4  100    9                                                  
- 34S  cG E$from (n,|g) E=thermal                                                
- 34S  cG RI$from (n,|g) E=thermal                                               
+ 34S  dG E$from (n,|g) E=thermal                                                
+ 34S  dG RI$from (n,|g) E=thermal                                               
  34S   G 5755.5    5  2.9    5                                                  
  34S  d 
  34S   L 5847.524  29 0+                                                        
@@ -537,8 +534,8 @@
  34S   G 1772.82   4  73     7                                                  
  34S   G 2543.13   10 5.0E2  5                                              &   
  34S   G 3719.68   16 100    11                                                 
- 34S  cG E$from (n,|g) E=thermal                                                
- 34S  cG RI$from (n,|g) E=thermal                                               
+ 34S  dG E$from (n,|g) E=thermal                                                
+ 34S  dG RI$from (n,|g) E=thermal                                               
  34S  d 
  34S   L 5998.10   8  2+               6.9 FS    LT                             
  34S X L XREF=MNPRWZ                                                            
@@ -550,11 +547,11 @@
  34S   G 1922.92   22 68     32 [M1,E2]                                         
  34S  cG RI$unweighted average of 36 {I15} from (|a,p|g) and 100 {I18} from     
  34S 2cG (n,|g) E=thermal                                                       
- 34S  cG E$from (n,|g) E=thermal                                                
+ 34S  dG E$from (n,|g) E=thermal                                                
  34S   G 3870.51   31 69     23 [M1,E2]                                         
  34S  cG RI$unweighted average of 46 {I15} from (|a,p|g) and 92 {I13} from      
  34S 2cG (n,|g) E=thermal                                                       
- 34S  cG E$from (n,|g) E=thermal                                                
+ 34S  dG E$from (n,|g) E=thermal                                                
  34S   G 5997.30   31 78     22 E2                                              
  34S  cG RI$unweighted average of 100 {I18} from (|a,p|g) and 56 {I10} from     
  34S 2cG (n,|g) E=thermal                                                       
@@ -574,7 +571,7 @@
  34S   G 3994.8    8  61     39 [M1,E2]                                         
  34S  cG RI$unweighted average of 22 {I9} from (|a,p|g) and 100 {I28} from      
  34S 2cG (n,|g) E=thermal                                                       
- 34S  cG E$from (n,|g) E=thermal                                                
+ 34S  dG E$from (n,|g) E=thermal                                                
  34S  d 
  34S   L 6168.862  28 3-                                                        
  34S X L XREF=NPRW(6170*)Z(6130*)                                               
@@ -700,8 +697,8 @@
  34S   G 1854.28   4  12.2   13                                                 
  34S   G 2404.04   6  10.2   11                                                 
  34S   G 3174.37   5  100    10                                                 
- 34S  cG RI$from (n,|g) E=thermal. Other: 100 {I17} from (|a,p|g)               
- 34S  cG E$from (n,|g) E=thermal                                                
+ 34S  dG RI$from (n,|g) E=thermal. Other: 100 {I17} from (|a,p|g)               
+ 34S  dG E$from (n,|g) E=thermal                                                
  34S   G 4350.85   9  61     7  D+Q      -1.1    9                              
  34S  cG RI$weighted average of 70 {I17} from (|a,p|g) and 59 {I7} from (n,|g)  
  34S 2cG E=thermal                                                              
@@ -809,8 +806,8 @@
  34S   G 2059                   D(+Q)    0.0     5                             ?
  34S   G 2839.3    4  32     5                                                  
  34S   G 3649.88   12 100    10                                                 
- 34S  cG E$from (n,|g) E=thermal                                                
- 34S  cG RI$from (n,|g) E=thermal                                               
+ 34S  dG E$from (n,|g) E=thermal                                                
+ 34S  dG RI$from (n,|g) E=thermal                                               
  34S   G 4826.0    5  3.5    16                                                 
  34S  d 
  34S   L 7110.451  33 3-                                                        
@@ -858,8 +855,8 @@
  34S  cL J$(1,2+) from {+34}S(|g,|g'),(pol |g,|g'); |g to 4+.                   
  34S   G 2328.8    5  5.2    15                                                 
  34S   G 2530.25   10 18.8   26                                                 
- 34S  cG E$from (n,|g) E=thermal                                                
- 34S  cG RI$from (n,|g) E=thermal                                               
+ 34S  dG E$from (n,|g) E=thermal                                                
+ 34S  dG RI$from (n,|g) E=thermal                                               
  34S   G 5093                                                                   
  34S  cG E$from {+31}P(|a,p|g) (|DE{-levels}).                                  
  34S   G 7218.48   13 100    10 E2                                              
@@ -968,7 +965,7 @@
  34S   G 7780.22   10 100    13                                                 
  34S  cG E$weighted average of 7780.22 {I10} from (n,|g) E=thermal and 7780 {I2}
  34S 2cG from (|g,|g')                                                          
- 34S  cG RI$from (n,|g) E=thermal                                               
+ 34S  dG RI$from (n,|g) E=thermal                                               
  34S  d 
  34S   L 7790.2    9  6-               97 FS     28                         B   
  34S X L XREF=HMW(7779*)g                                                       
@@ -1125,7 +1122,7 @@
  34S   G 8505.68   15 100    11                                                 
  34S  cG E$weighted average of 8505.68 {I10} from (n,|g) E=thermal and 8510 {I3}
  34S 2cG from (|g,|g')                                                          
- 34S  cG RI$from (n,|g) E=thermal                                               
+ 34S  dG RI$from (n,|g) E=thermal                                               
  34S  d 
  34S   L 8580      5                                                            
  34S X L XREF=W                                                                 
@@ -1363,7 +1360,7 @@
  34S  cG E,RI$from |DE{-levels} (|g observed in {+30}Si(|a,|g),(|a,n)).         
  34S   G 9932.1    6  48     11 E1                                              
  34S F G FLAG=c                                                                 
- 34S  cG RI$from (n,|g) E=thermal                                               
+ 34S  dG RI$from (n,|g) E=thermal                                               
  34S  cG M$from (|a,|g)                                                         
  34S  d 
  34S   L 9981      5  1-                                                        
