@@ -14,6 +14,7 @@
  34S 5c  models. Studied target dependence of fragment cross sections.          
  34S  d                                                                         
  34S  cG E,RI$ From {+33}S(n,|g) E=thermal, unless otherwise noted.             
+ 34S  cG RI(M)$ From {+31}P(|a,p|g), unless otherwise noted.                    
  34S  cG E(a),RI(b),M(c),MR(d)$ From {+30}Si(|a,|g),(|a,n)                      
  34S  cG M,MR$ From measured |g(|q) and/or |g|g(|q) in {+31}P(|a,p|g), and RUL  
  34S 2cG if applicable, unless otherwise noted.                                 
@@ -141,64 +142,48 @@
  34S  dG RI$from (n,|g) E=thermal                                               
  34S  cG M$D,Q |DJ=0,1,2 |g, D,E2 based on RUL ({+31}P(|a,p|g)); D excluded     
  34S 2cG based on level scheme.                                                 
- 34S   G 3913         2      LT [E0]                                           ?
+ 34S   G 3913         2      LT [E0]                                        M  ?
  34S  cG $X(E0/E2)=0.093 {I15}, |r{+2}(E0)=0.011 {I3}, q{-K}{+2}(E0/E2)=0.055   
  34S 2cG {I9} (2005Ki02 evaluation).                                            
- 34S  cG E$from |DE{-levels}.                                                   
- 34S  cG RI$from {+31}P(|a,p|g).                                                
  34S  d 
  34S   L 4074.666  20 1+               17 FS     LT                             
  34S X L XREF=AB(4070?)CGLMN(4085)PRWYac(4090*)                                 
- 34S  cL E$weighted average of 4074.1 {I11} from {+34}P |b{+-} decay, 4071.8    
- 34S 2cL {I10} from (|a,p|g), 4085 {I12} from (t,p), 4074.667 {I13} from (n,|g) 
- 34S 3cL E=thermal, and 4077 {I15} from (p,p)                                   
- 34S  cL T$from (|a,p|g)                                                        
- 34S  cL J$D |DJ=1 |g to 0+, g.s. (1970Mo09, 1971Mu03); |p=+ from L=0 in        
- 34S 2cL {+35}Cl(d,{+3}He).                                                     
- 34S  cL T$mean lifetime |t in fs, from {+31}P(|a,p|g): <33 (1970Gr11); <24     
- 34S 2cL (1970Ra17); |<50 (1974Gr06).                                           
+ 34S  cL T$lifetime |t<24 fs (1970Ra17, DSAM). Others: <33 fs (1970Gr11, DSAM), 
+ 34S 2cL |<50 fs (1974Gr06, DSAM).                                              
  34S   G 158.3        0.19   LT [M1]                                           ?
- 34S  cG E,RI$from (n,|g) E=thermal                                             
- 34S   G 770.428   20 8.5    9  D(+Q)    -1.3    15                             
- 34S  cG RI$weighted average of 6.1 {I21} from (|a,p|g) and 8.8 {I8} from (n,|g)
+ 34S  dG E,RI$from (n,|g) E=thermal                                             
+ 34S   G 770.428   20 8.5    9  (M1(+E2))-1.3    15                             
+ 34S  cG RI$weighted average of 6.2 {I22} from (|a,p|g) and 8.8 {I8} from (n,|g)
  34S 2cG E=thermal                                                              
- 34S  cG MR$from (|a,p|g)                                                       
- 34S  cG M$D |g based on RUL.                                                   
- 34S   G 1947.060  20 94     8  M1+E2    +1.3    +32-9                          
+ 34S  cG M,MR$from p|g(|q) in {+31}P(|a,p|g). |D|p=no from level scheme.        
+ 34S   G 1947.060  20 95     8  M1+E2    +1.3    +32-9                          
  34S  cG E$weighted average of 1947.1 {I15} from {+34}P |b{+-} decay, 1945.5    
  34S 2cG {I13} from (|a,p|g), and 1947.060 {I20} from (n,|g) E=thermal          
- 34S  cG RI$weighted average of 61 {I22} from {+34}P |b{+-} decay, 100 {I8} from
+ 34S  cG RI$weighted average of 61 {I22} from {+34}P |b{+-} decay, 102 {I8} from
  34S 2cG (|a,p|g), and 93 {I8} from (n,|g) E=thermal                            
  34S  cG M$D+Q |DJ=1 |g, M1+E2 based on RUL ({+31}P(|a,p|g)).                   
  34S  cG MR$from {+31}P(|a,p|g).                                                
- 34S   G 4072.9    11 99     9  D                                               
+ 34S   G 4072.9    11 100    9  (M1)                                             
  34S  cG E$unweighted average of 4073.4 {I15} from {+34}P |b{+-} decay, 4070.9  
  34S 2cG {I13} from (|a,p|g), and 4074.418 {I20} from (n,|g) E=thermal          
- 34S  cG RI$weighted average of 100 {I13} from {+34}P |b{+-} decay, 98 {I10}    
- 34S 2cG from (|a,p|g), and 100 {I9} from (n,|g) E=thermal                      
- 34S  cG M$D |DJ=1 |g ({+31}P(|a,p|g)).                                         
+ 34S  cG RI$other: 100 {I13} from {+34}P |b{+-} decay, 100 {I10} from (|a,p|g). 
+ 34S  cG M$D from p|g(|q) in {+31}P(|a,p|g). |D|p=no from level scheme.         
  34S  d 
  34S   L 4114.81   2  2+               72 FS     7                              
  34S X L XREF=ACGMNPRVWYZac(4090*)                                              
- 34S  cL T$from |t=104 fs {I10}, weighted average of 89 fs {I20} from 1970Gr11, 
- 34S 2cL 110 fs {I10} from 1970Ra17, and 100 fs {I15} from 1974Gr06 in (|a,p|g).
- 34S  cL E$weighted average of 4114.5 {I9} from {+34}P |b{+-} decay, 4114.0 {I9}
- 34S 2cL from (|a,p|g), 4121 {I12} from (t,p), 4114.81 {I2} from (n,|g)         
- 34S 3cL E=thermal, 4118 {I4} from (d,p), and 4115 {I14} from (p,p)             
- 34S  cL J$E2 |DJ=2 |g to 0+, g.s. ({+31}P(|a,p|g)), or L=2 in {+32}S(t,p).     
- 34S  cL T$mean lifetime |t in fs ({+31}P(|a,p|g)): 89 {I20} (1970Gr11); 110    
- 34S 2cL {I10} (1970Ra17); 100 {I15} (1974Gr06). Weighted average: 105 {I9}.    
+ 34S  cL T$lifetime |t=104 fs {I10}: weighted average of 89 fs {I20} from       
+ 34S 2cL 1970Gr11, 110 fs {I10} from 1970Ra17, and 100 fs {I15} from 1974Gr06 in
+ 34S 3cL (|a,p|g).                                                              
+ 34S  cL J$L=2 from 0+ in {+32}S(t,p).                                          
  34S   G 198.4        0.35   LT [E2]                                           ?
  34S   G 810.6        0.7    LT [M1,E2]                                        ?
- 34S  cG E,RI$from (n,|g) E=thermal                                             
+ 34S  dG E,RI$from (n,|g) E=thermal                                             
  34S   G 1987.19   3  69.8   34 M1+E2    -0.40   5                              
  34S  cG E$weighted average of 1987.2 {I10} from {+34}P |b{+-} decay and 1987.19
  34S 2cG {I3} from (n,|g) E=thermal                                             
  34S  cG RI$weighted average of 83 {I17} from {+34}P |b{+-} decay, 67.7 {I24}   
  34S 2cG from {+34}Cl |e+|b{++} decay (31.99 min), 92 {I10} from (|a,p|g), and  
  34S 3cG 76 {I8} from (n,|g) E=thermal                                          
- 34S  cG M$D+Q |DJ=0 |g, M1+E2 based on RUL ({+31}P(|a,p|g)).                   
- 34S  cG MR$from {+31}P(|a,p|g).                                                
  34S   G 4114.52   4  100.0  22 E2                                              
  34S  cG E$weighted average of 4114.0 {I15} from {+34}P |b{+-} decay, 4115.0    
  34S 2cG {I20} from {+34}Cl |e+|b{++} decay (31.99 min), 4113.7 {I9} from       
@@ -206,28 +191,19 @@
  34S  cG RI$from {+34}Cl |e+|b{++} decay (31.99 min). Others: 100 {I17} from    
  34S 2cG {+34}P |b{+-} decay, 100 {I10} from (|a,p|g), and 100 {I11} from (n,|g)
  34S 3cG E=thermal                                                              
- 34S  cG M$Q |DJ=2 |g, E2 based on RUL ({+31}P(|a,p|g)).                        
  34S  d 
  34S   L 4624.404  16 3-               85 FS     7                          C   
  34S X L XREF=AEGHJMNOPRVWYag                                                   
- 34S  cL T$from |t=122 fs {I10}, weighted average of 125 fs {I20} from 1970Gr11,
+ 34S  cL T$from |t=122 fs {I10}: weighted average of 125 fs {I20} from 1970Gr11,
  34S 2cL 135 fs {I17} from 1970Ra17, 115 fs {I10} from 1974Gr06, and 145 fs     
  34S 3cL {I50} from 1971So01 in (|a,p|g).                                       
- 34S  cL E$weighted average of 4624.6 {I6} from ({+16}O,|a2p|g), 4623 {I13} from
- 34S 2cL (t,p), 4624.404 {I16} from (n,|g) E=thermal, 4627 {I5} from (d,p), 4625
- 34S 3cL {I14} from (p,p), and 4624.9 {I14} from ({+36}S,{+34}S|g)              
- 34S  cL J$L=3 in {+32}S(t,p), and also from {+34}S(p,p'),(pol p,p').           
- 34S  cL T$mean lifetime |t in fs, from {+31}P(|a,p|g): 125 {I20} (1970Gr11);   
- 34S 2cL 135 {I17} (1970Ra17); 145 {I50} (1971So01); 115 {I10} (1974Gr06).      
- 34S 3cL Weighted average: 121 {I8}.                                            
- 34S  cL $Adopted B(E3)=0.008 {I2} (2002Ki06 evaluation).                       
- 34S   G 508.4        4      LT [E1]                                           ?
+ 34S  cL J$L=3 from 0+ in {+32}S(t,p).                                          
+ 34S   G 508.4        4      LT [E1]                                           M  ?
  34S  cG E$from |DE{-levels}.                                                   
- 34S  cG RI$from {+31}P(|a,p|g).                                                
  34S   G 549.7        0.13   LT [M2]                                           ?
- 34S  cG E,RI$from (n,|g) E=thermal                                             
+ 34S  dG E,RI$from (n,|g) E=thermal                                             
  34S   G 708.0        0.29   LT [E3]                                           ?
- 34S  cG E,RI$from (n,|g) E=thermal                                             
+ 34S  dG E,RI$from (n,|g) E=thermal                                             
  34S   G 1320.168  20 100    7  D(+Q)    -0.03   5                              
  34S  cG E$weighted average of 1320.1 {I5} from ({+16}O,|a2p|g), 1318.8 {I10}   
  34S 2cG from (|a,p|g), 1320.169 {I20} from (n,|g) E=thermal, and 1320 {I1} from
@@ -299,15 +275,15 @@
  34S  cL T$mean lifetime |t in fs, from {+31}P(|a,p|g): 57 {I22} (1970Ra17).    
  34S 2cL Others: <85 (1970Gr11), |<70 (1974Gr06).                               
  34S   G 187.9        0.43   LT [M1,E2]                                        ?
- 34S  cG E,RI$from (n,|g) E=thermal                                             
+ 34S  dG E,RI$from (n,|g) E=thermal                                             
  34S   G 252.4        0.43   LT [E1]                                           ?
- 34S  cG E,RI$from (n,|g) E=thermal                                             
+ 34S  dG E,RI$from (n,|g) E=thermal                                             
  34S   G 762.0        1.6    LT [M1,E2]                                        ?
- 34S  cG E,RI$from (n,|g) E=thermal                                             
+ 34S  dG E,RI$from (n,|g) E=thermal                                             
  34S   G 802.2        9.1    LT [E2]                                           ?
- 34S  cG E,RI$from (n,|g) E=thermal                                             
+ 34S  dG E,RI$from (n,|g) E=thermal                                             
  34S   G 960.4        1.1    LT [M3]                                           ?
- 34S  cG E,RI$from (n,|g) E=thermal                                             
+ 34S  dG E,RI$from (n,|g) E=thermal                                             
  34S   G 1572.56   5  70     8  M1+E2    -0.09   4                              
  34S  cG E$weighted average of 1572.5 {I5} from ({+16}O,|a2p|g), 1571.9 {I5}    
  34S 2cG from (|a,p|g), 1572.57 {I5} from (n,|g) E=thermal, and 1573 {I1} from  
@@ -342,11 +318,11 @@
  34S   G 200.8        0.67   LT [E2]                                           ?
  34S   G 265.4        0.67   LT [E1]                                           ?
  34S   G 774.9        3      LT [M1,E2]                                        ?
- 34S  cG E,RI$from (n,|g) E=thermal                                             
+ 34S  dG E,RI$from (n,|g) E=thermal                                             
  34S   G 815.1        2      LT [M1,E2]                                        ?
- 34S  cG E,RI$from (n,|g) E=thermal                                             
+ 34S  dG E,RI$from (n,|g) E=thermal                                             
  34S   G 973.3        1.7    LT [E2]                                           ?
- 34S  cG E,RI$from (n,|g) E=thermal                                             
+ 34S  dG E,RI$from (n,|g) E=thermal                                             
  34S   G 1585.510  20 85     8  [M1,E2]                                         
  34S  cG RI$weighted average of 96 {I24} from (|a,p|g) and 84 {I8} from (n,|g)  
  34S 2cG E=thermal                                                              
