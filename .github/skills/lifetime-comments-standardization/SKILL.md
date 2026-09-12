@@ -1,4 +1,4 @@
----
+﻿---
 name: lifetime-comments-standardization
 description: >
   Standardize cL T$ lifetime comments in ENSDF files. Use (NSR, METHOD) format for individual datasets 
@@ -96,6 +96,9 @@ Adopt the **strictest** limit (largest `>`, smallest `<`); move all others to "O
 
 > **Note:** "Others:" items may be limits or finite values (with {IUNC}), as determined by the human evaluators.
 
+### Special Case: Converted from Adopted B(E2).
+`T$lifetime |t=3.6E2 fs {I+7-5} converted from the adopted B(E2)|^=0.025 e{+2}b{+2} {I4} by evaluators.`
+
 ---
 
 ## Standard Rules
@@ -123,7 +126,6 @@ Adopt the **strictest** limit (largest `>`, smallest `<`); move all others to "O
 
 - **Chronology:** Adopted datasets: list by dataset XREF alphabetically. Individual datasets: list chronologically by NSR key year.
 - **Method tags:** Use standard abbreviations (DSAM, RDM, DRDM).
-- **Measured-value attribution:** If a technique label isn't a method but a measured quantity that can be converted to lifetime (e.g., B(E2) up), use `VALUE1 UNIT {IUNC1} converted from the adopted B(E2)|^=VALUE {IUNC} by evaluators.` instead of `with METHOD` (e.g., `3.6E2 fs {I+7-5} converted from the adopted B(E2)|^=0.025 e{+2}b{+2} {I4} by evaluators.`).
 
 ---
 
