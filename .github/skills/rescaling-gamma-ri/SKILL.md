@@ -1,6 +1,6 @@
 ---
 name: rescaling-gamma-ri
-description: Rescales G-record relative intensities (RI) and their uncertainties within a single adopted level block when the contributing datasets use different RI=100 normalization references. Adopts the reference dataset's RI/DRI into the G-record fields and quotes the rescaled values in cG RI$other comments.
+description: Rescales G-record relative intensities (RI) and their uncertainties within a single adopted level block when the contributing datasets use different RI=100 normalization references.
 ---
 
 # Rescaling Relative Intensities (Adopted Dataset)
