@@ -68,8 +68,7 @@
  34S 2 L MOMM1=+1.0 2 (1979Za01,1989Ra17,2020StZV)                            
  34S 2 L MOME2=+0.04 3 (1980Ba40,1981Sp07,2021StZZ)                             
  34S 2 L BE2=0.0197 7                                                           
- 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 2126.7|g, E2 to 0+, 
- 34S 2cL g.s.                                                                   
+ 34S  cL J$spin=2 from {+31}P(|a,p|g). |p=+ from 2126.7|g, E2 to 0+, g.s.       
  34S  cL T$lifetime |t=454 fs {I17}: weighted average of 490 fs {I30} in        
  34S 2cL {+3}H({+32}S,p|g) from 1977He12 with DSAM, 465 fs {I50} in             
  34S 3cL {+28}Si({+34}S,{+34}S'|g) from 1977Sc36 with DSAM, 350 fs {I60} in     
@@ -99,8 +98,6 @@
  34S   L 3304.212  13 2+               123       9                              
  34S X L XREF=UACDEGHIJLMNPRTVWYZabcdg                                          
  34S 2 L BE2=0.00256 29                                                         
- 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 3303.1|g, E2 to 0+, 
- 34S 2cL g.s.                                                                   
  34S  cL T$lifetime |t=176 fs {I13}: weighted average of 192 fs {I13} in        
  34S 2cL {+3}H({+32}S,p|g) from 1977He12 with DSAM, 120 fs {I30} in             
  34S 3cL {+31}P(|a,p|g) from 1969Gr03 with DSAM, 190 fs {I40} in {+31}P(|a,p|g) 
@@ -128,12 +125,11 @@
  34S  d                                                                         
  34S   L 3916.407  22 0+               1.12E3 FS 9                              
  34S X L XREF=AB(3910?)GLMNPRWYZa                                               
- 34S  cL J$spin=(0,1,2) from p|g(|q) in {+31}P(|a,p|g). L=0 from 0+ in          
- 34S 2cL {+32}S(t,p).                                                           
  34S  cL T$lifetime |t=1618 fs {I126}: weighted average of 1600 fs {I130} in    
  34S 2cL {+31}P(|a,p|g) from 1970Gr11 with DSAM and 1890 fs {I500} in           
  34S 3cL {+31}P(|a,p|g) from 1970Ra17 with DSAM. Other: >400 fs in              
  34S 4cL {+31}P(|a,p|g) from 1974Gr06 with DSAM.                                
+ 34S  cL J$L=0 from 0+ in {+32}S(t,p).                                          
  34S   G 612.16    5  0.33   4  [E2]                                            
  34S   G 1787.3    8  100    10 [E2]                                            
  34S  cG E$unweighted average of 1787 {I1} from {+34}P |b{+-} decay, 1786.0 {I8}
@@ -145,8 +141,6 @@
  34S  d                                                                         
  34S   L 4074.666  20 1+               17 FS     LT                             
  34S X L XREF=AB(4070?)CGLMN(4085)PRWYac(4090*)                                 
- 34S  cL J$spin=1 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 1945.5|g, M1+E2 to  
- 34S 2cL 2+, 2127.0 level.                                                      
  34S  cL T$lifetime |t<24 fs (1970Ra17, DSAM). Others: <33 fs (1970Gr11, DSAM), 
  34S 2cL |<50 fs (1974Gr06, DSAM).                                              
  34S   G 770.428   20 8.5    9  (M1(+E2))-1.3    15                             
@@ -168,11 +162,10 @@
  34S  d                                                                         
  34S   L 4114.81   2  2+               72 FS     7                              
  34S X L XREF=ACGMNPRVWYZac(4090*)                                              
- 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 4113.7|g, E2 to 0+, 
- 34S 2cL g.s. L=2 from 0+ in {+32}S(t,p).                                       
  34S  cL T$lifetime |t=104 fs {I10}: weighted average of 89 fs {I20} from       
  34S 2cL 1970Gr11, 110 fs {I10} from 1970Ra17, and 100 fs {I15} from 1974Gr06 in
  34S 3cL (|a,p|g).                                                              
+ 34S  cL J$L=2 from 0+ in {+32}S(t,p).                                          
  34S   G 1987.19   3  69.8   34 M1+E2    -0.40   5                              
  34S  cG E$weighted average of 1987.2 {I10} from {+34}P |b{+-} decay and 1987.19
  34S 2cG {I3} from (n,|g) E=thermal.                                            
@@ -189,12 +182,10 @@
  34S  d                                                                         
  34S   L 4624.404  16 3-               85 FS     7                          C   
  34S X L XREF=AEGHJMNOPRVWYag                                                   
- 34S  cL J$spin=3 from p|g(|q) in {+31}P(|a,p|g). Spin|<4 from p|g(|q) in       
- 34S 2cL {+31}P(|a,p|g). |p=- from 1066|g, E2 from 5-, 5688 level. L=3 from 0+  
- 34S 3cL in {+32}S(t,p).                                                        
  34S  cL T$from |t=122 fs {I10}: weighted average of 125 fs {I20} from 1970Gr11,
  34S 2cL 135 fs {I17} from 1970Ra17, 115 fs {I10} from 1974Gr06, and 145 fs     
  34S 3cL {I50} from 1971So01 in (|a,p|g).                                       
+ 34S  cL J$L=3 from 0+ in {+32}S(t,p).                                          
  34S   G 1320.168  20 100    7  (E1(+M2))-0.03   5                          M   
  34S  cG E$weighted average of 1320.1 {I5} from ({+16}O,|a2p|g), 1318.8 {I10}   
  34S 2cG from (|a,p|g), 1320.169 {I20} from (n,|g) E=thermal, and 1320 {I1} from
@@ -212,8 +203,6 @@
  34S  d                                                                         
  34S   L 4688.97   4  4+               88 FS     7                          A   
  34S X L XREF=ACEGHJMN(4690)PR(4688)V(4688)W(4689)YZ(4690)a(4690)c(4710)g       
- 34S  cL J$spin=4 from p|g(|q) and |g|g(|q) in {+31}P(|a,p|g). |p=+ from        
- 34S 2cL 2560.5|g, E2 to 2+, 2127.0 level.                                      
  34S  cL T$|t=127 fs {I10}: weighted average of 132 fs {I15} from 1970Gr11, 131 
  34S 2cL fs {I13} from 1970Ra17, 125 fs {I10} from 1974Gr06, 110 fs {I20} from  
  34S 3cL 1971So01, and 130 fs {I20} from 1977GrZH in (|a,p|g).                  
@@ -228,8 +217,6 @@
  34S  d                                                                         
  34S   L 4876.842  23 3+               40 FS     15                             
  34S X L XREF=ACGHMPR(4874)a(4880*)g                                            
- 34S  cL J$spin=3 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 2750.9|g, M1+E2 to  
- 34S 2cL 2+, 2127.0 level.                                                      
  34S  cL T$lifetime |t=57 fs {I22} (1970Ra17, DSAM). Others: <85 fs (1970Gr11,  
  34S 2cL DSAM), |<70 fs (1974Gr06, DSAM).                                       
  34S   G 1572.56   5  70     8  M1+E2    -0.09   4                              
@@ -251,8 +238,6 @@
  34S  d                                                                         
  34S   L 4889.76   2  2+               36 FS     10                             
  34S X L XREF=ACGMNPRWZ(4890*)ac(4900*)                                         
- 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 4890.7|g, E2 to 0+, 
- 34S 2cL g.s.                                                                   
  34S  cL T$lifetime |t=52 fs {I14} (1970Ra17, DSAM). Other: <40 fs (1970Gr11,   
  34S 2cL DSAM).                                                                 
  34S   G 1585.510  20 96     24 [M1,E2]                                     M   
@@ -267,16 +252,13 @@
  34S  d                                                                         
  34S   L 5228.175  22 0+                                                        
  34S X L XREF=B(5230?)GMNPRWZ                                                   
- 34S  cL J$spin=0 based on nonobservation of |g to 0+, g.s. Isotropic |g|g(|q)  
- 34S 2cL in {+31}P(|a,p|g). L=0 in {+32}S(t,p).                                 
+ 34S  cL J$L=0 in {+32}S(t,p). Isotropic |g|g(|q) in {+31}P(|a,p|g).            
  34S   G 1113.27   9  4.1    6                                                  
  34S   G 1153.492  20 100    9  D                                               
  34S  d                                                                         
  34S   L 5318.8    18 2+               17 FS     7                              
  34S X L XREF=MN(5320*)W(5321*)Z(5320*)c(5360*)                                 
  34S  cL E$from {+31}P(|a,p|g).                                                 
- 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 3191.6|g, M1+E2 to  
- 34S 2cL 2+, 2127.0 level.                                                      
  34S  cL T$lifetime |t=24 fs {I10} (1970Gr11, DSAM). Other: |<40 fs (1974Gr06,  
  34S 2cL DSAM).                                                                 
  34S   G 3191.6       100       M1+E2    -0.17   6                          M   
@@ -292,8 +274,6 @@
  34S  d                                                                         
  34S   L 5380.99   3  1+               49 FS     LE                             
  34S X L XREF=B(5380?)GMNPRWac(5360*)                                           
- 34S  cL J$spin=1 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 3255|g, M1+E2 to 2+,
- 34S 2cL 2127.0 level.                                                          
  34S  cL T$lifetime |t|<70 fs (1974Gr06, DSAM).                                 
  34S   G 1266.11   5  17.4   19 [M1,E2]                                         
  34S   G 2076.89   8  39     4  [M1,E2]                                         
@@ -306,8 +286,6 @@
  34S  d                                                                         
  34S   L 5679.928  17 2+               263 FS    21                         B   
  34S X L XREF=HLMO(5690*)PRWZ(5690*)                                            
- 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 2376|g, M1+E2 to 2+,
- 34S 2cL 3303.2 level.                                                          
  34S  cL T$from (|a,p|g)                                                        
  34S   G 789.1     6  1.50   27 [E1]                                            
  34S   G 803.103   27 4.4    4  [E1]                                            
@@ -328,8 +306,6 @@
  34S  d                                                                         
  34S   L 5690.8    6  5-               36.9 PS   17                         C   
  34S X L XREF=EHJMN(5679)O(5690*)RWZ(5690*)g                                    
- 34S  cL J$spin=5 from |g(|q) and |g(|q)(POL) in {+31}P(|a,p|g). |p=- from      
- 34S 2cL 1000|g, E1 to 4+, 4687.6 level.                                        
  34S  cL T$lifetime |t=53.3 ps {I24}: weighted average of 55 ps {I7} in         
  34S 2cL {+3}H({+35}Cl,|a|g) from 1976Co11 with RDM, 52.9 ps {I24} in           
  34S 3cL {+27}Al({+12}C,|ap|g) from 1976Me03 with RDM, and 54 ps {I5} in        
@@ -365,9 +341,9 @@
  34S  d                                                                         
  34S   L 5998.10   8  2+               6.9 FS    LT                             
  34S X L XREF=MN(6008)PRWZ                                                      
+ 34S  cL T$lifetime |t<10 fs (1972Jo10, DSAM).                                  
  34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 5992|g, E2 to 0+,   
  34S 2cL g.s. L=2 from 0+ in {+32}S(t,p).                                       
- 34S  cL T$lifetime |t<10 fs (1972Jo10, DSAM).                                  
  34S   G 1121.33   9  57     8  [M1,E2]                                         
  34S   G 1922.92   22 68     32 [M1,E2]                                         
  34S  cG RI$unweighted average of 36 {I15} from (|a,p|g) and 100 {I18} from     
