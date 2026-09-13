@@ -30,6 +30,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 | E or RI from default dataset only | No individual comment needed |
 | E|g without uncertainty | No comment needed (deduced from level difference) |
 | Weighted/unweighted average from multiple datasets | Add cG E$ or cG RI$ with average details |
+| Intensities normalized to different references | Rescale to one reference, adopt its RI/DRI, move others to `RI$other` → `.github/skills/rescaling-gamma-ri/SKILL.md` |
 | Value from non-default dataset | Add cG E$ or cG RI$ stating source |
 | Other values exist but not used for averaging | Add "other: VALUE from DATASET" |
 

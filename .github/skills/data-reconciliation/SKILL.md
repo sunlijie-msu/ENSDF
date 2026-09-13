@@ -30,6 +30,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 - **Add/Insert** `[field]` from source (e.g., new G-records absent in target)
 - **Merge/Combine** `[field]` from both (e.g., cG RI$ comments quoting both)
 - **Average** `[field]` across sources (e.g., weighted average of RI)
+- **Rescale** `[field]` onto a common normalization reference → `.github/skills/rescaling-gamma-ri/SKILL.md`
 
 ### Special Handling
 - `[ ]` [describe non-standard cases]
