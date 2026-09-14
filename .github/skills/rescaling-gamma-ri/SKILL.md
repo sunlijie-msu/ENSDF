@@ -12,9 +12,12 @@ ENSDF record/field definitions, column positions, uncertainty notation: `.github
 **Scope** — G-records under one L-record in an adopted dataset (e.g., `ElementA_adopted.ens`) whose RI come from datasets with different RI=100 references. *Fill in:* the adopted RI standard, whose RI/DRI enters the fields verbatim = `[dataset]`; the datasets to rescale into `cG RI$other` = `[datasets]`.
 
 1. Adopt the RI standard: its reference γ has RI=100. Copy its RI and DRI verbatim into the G-record fields.
-2. For every other dataset, compute k = RI_ref(adopted) / RI_ref(other) at that reference γ.
-3. Multiply each other RI and its uncertainty by k. Round value and σ together as described in `.github/skills/rounding/SKILL.md`, keeping decimal places aligned and avoiding over-rounding of σ.
-4. For each affected γ, add `cG RI$other: RI' {Iσ'} from REACTION.`; delete the superseded average comments and their continuation lines.
-5. Never average RI values that rest on different references — rescaling exposes the disagreement.
+2. Transcribe each dataset's reference RI/DRI from its source record or supplied source table; do not reuse an adopted value as a source value.
+3. Compute k = RI_ref(adopted) / RI_ref(other) at the same physical reference γ, then multiply each other RI and uncertainty by k.
+4. Round value and σ together per `.github/skills/rounding/SKILL.md`; align decimal places and avoid over-rounding σ.
+5. Add `cG RI$other: RI' {Iσ'} from REACTION.`; delete superseded average comments and continuations.
+6. Never average RI values with different references; rescaling exposes the disagreement.
 
-**Validation** — check the 80-column format, with RI in columns 23-29 and DRI in columns 30-31; then run `.github/scripts/column_calibrate.py` and `.github/scripts/check_gamma_ordering.py`.
+**Safeguards** — verify level/gamma identity and source normalization before arithmetic. After editing, assert adopted fields are unchanged, rescaled comments match the calculation, and old average text is absent.
+
+**Validation** — check RI/DRI columns 23-31 and exact changed-line scope; run `.github/scripts/column_calibrate.py` and `.github/scripts/check_gamma_ordering.py`. Follow `.github/copilot-instructions.md` for full rules.
