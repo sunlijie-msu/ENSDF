@@ -581,7 +581,8 @@
  34S  d                                                                         
  34S   L 7110.451  33 3-                                                        
  34S X L XREF=N(7112*)PRW(7110*)                                                
- 34S  cL J$L=3,(2) from 0+ in {+32}S(t,p). L=1+3 from 3/2+ in {+33}S(d,p).      
+ 34S  cL J$L=3,(2) from 0+ in {+32}S(t,p) for a possible doublet. L=1+3 from    
+ 34S 2cL 3/2+ in {+33}S(d,p).                                                   
  34S   G 281.34    24 0.46   16                                                 
  34S   G 941.59    6  8.2    10                                                 
  34S   G 989.1     3  1.6    5                                              &   
@@ -591,16 +592,18 @@
  34S  d                                                                         
  34S   L 7110         2+               6.9 FS    LT                             
  34S X L XREF=MN(7112*)W(7110*)c                                                
- 34S  cL E$from {+35}Cl(d,{+3}He)                                               
+ 34S  cL E$weighted average of 7112 {I15} from {+32}S(t,p) and 7110 {I14} from  
+ 34S 2cL {+34}S(p,p),(p,p'),(pol p,p').                                         
  34S  cL T$lifetime |t<10 fs in {+31}P(|a,p|g) from 1972Jo10 with DSAM.         
- 34S  cL E$from {+31}P(|a,p|g).                                                 
  34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from L=0 from 3/2+ in    
- 34S 2cL {+35}Cl(d,{+3}He).                                                     
+ 34S 2cL {+35}Cl(d,{+3}He). L=3,(2) from 0+ in {+32}S(t,p) for a possible       
+ 34S 3cL doublet.                                                               
  34S   G 3809         39     11 [M1,E2]                                     M   
- 34S   G 4985         100    11 D+Q      +0.27   +19-15                     M   
- 34S  cG MR$+0.27 {I+19-15} or +1.2 {I+7-4} ({+31}P(|a,p|g)).                   
- 34S   G 7111         12.1   91 Q                                           M   
- 34S  cG M$Q, |DJ=2 |g ({+31}P(|a,p|g)).                                        
+ 34S   G 4985         100    11 (M1+E2)  +0.27   +19-15                     M   
+ 34S  cG M,MR$D+Q with |d=+0.27 {I+19-15} or +1.2 {I+7-4} from {+31}P(|a,p|g).  
+ 34S 2cG |D|p=no from level scheme.                                             
+ 34S   G 7111         12.1   91 (E2)                                        M   
+ 34S  cG M$Q from {+31}P(|a,p|g). |D|p=no from level scheme.                    
  34S  d                                                                         
  34S   L 7164.47   17 (0:3)+                                                    
  34S X L XREF=Pc(7190*)                                                         
