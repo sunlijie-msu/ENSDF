@@ -1,0 +1,15 @@
+p = r'd:\X\ND\ENSDF\A34\S34\new\S34_adopted.ens'
+data = open(p, 'rb').read()
+print('bytes', len(data))
+print('CRLF', data.count(b'\r\n'), 'LF', data.count(b'\n'), 'CR', data.count(b'\r'))
+text = data.decode('utf-8', 'replace')
+print('decode ok, len', len(text))
+print('first 3 lines repr:')
+for i, ln in enumerate(text.split('\r\n')[:3]):
+    print(i, repr(ln))
+norm = text.replace('\r\n', '\n')
+lines = norm.split('\n')
+a = '\n'.join(x.rstrip() for x in lines[0:5])
+print('block repr:', repr(a[:80]))
+print('count in norm:', norm.count(a))
+print('count line0 rstrip in norm:', norm.count(lines[0].rstrip()))
