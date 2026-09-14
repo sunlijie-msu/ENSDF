@@ -429,8 +429,6 @@
  34S  d                                                                         
  34S   L 6251.68   9  4-                                                    B   
  34S X L XREF=H(*)M(6251*)N(6256*)PRW(6248*)a(6250*)g(*)                        
- 34S  cL E$weighted average of 6251.68 {I9} from (n,|g) E=thermal.and 6254 {I8} 
- 34S 2cL from (d,p)                                                             
  34S  cL J$E2 |DJ=2 |g from 6, 7791 ({+24}Mg({+16}O,|a2p|g)); |p=- from L=3 in  
  34S 2cL {+33}S(d,p).                                                           
  34S   G 572.0     1  34     14 D                                               
@@ -448,39 +446,30 @@
  34S  d                                                                         
  34S   L 6342.52   10 1-               25 FS     LT                             
  34S X L XREF=MNPRW                                                             
- 34S  cL E$weighted average of 6349 {I14} from (t,p), 6342.52 {I10} from (n,|g) 
- 34S 2cL E=thermal, 6345 {I8} from (d,p), and 6340 {I14} from (p,p)             
  34S  cL T$lifetime |t<36 fs in {+31}P(|a,p|g) from 1972Jo10 with DSAM.         
- 34S  cL J$L=1 in {+32}S(t,p).                                                  
- 34S   G 3038.18   32 100    14 D(+Q)    -0.55   65                         M  ?
- 34S  cG M$D+Q |DJ=1 |g ({+31}P(|a,p|g)).                                       
- 34S  cG MR$from {+31}P(|a,p|g).                                                
+ 34S  cL J$L=1 from 0+ in {+32}S(t,p). Spin=1 from p|g(|q) in {+31}P(|a,p|g).   
+ 34S   G 3038.18   32 100    14 D(+Q)    -0.55   65                             
  34S   G 6341.58   32 36     6  D                                               
  34S  cG RI$weighted average of 43 {I14} from (|a,p|g) and 35 {I6} from (n,|g)  
  34S 2cG E=thermal                                                              
- 34S  cG M$D |DJ=1 |g ({+31}P(|a,p|g)).                                         
  34S  d                                                                         
  34S   L 6421.34   8  4-               6.9 FS    LT                             
  34S X L XREF=MN(6423*)PRW(6414*)                                               
- 34S  cL E$weighted average of 6421.34 {I8} from (n,|g) E=thermal.and 6422 {I8} 
- 34S 2cL from (d,p)                                                             
  34S  cL T$lifetime |t<10 fs in {+31}P(|a,p|g) from 1972Jo10 with DSAM.         
- 34S  cL J$D |DJ=0 |g to 4+, 4689 ({+31}P(|a,p|g)); |p=- from L=3 in {+33}S(d,p)
- 34S   G 1544.41   10 3.5E2  25 D                                           &   
- 34S  cG RI$unweighted average of 100 {I8} from (|a,p|g) and 5.9E2 {I6} from    
- 34S 2cG (n,|g) E=thermal                                                       
- 34S  cG M$D |DJ=1 |g ({+31}P(|a,p|g)).                                         
- 34S  cG MR$0.00 {I6} ({+31}P(|a,p|g)).                                         
- 34S   G 1732.39   11 81     20 D                                               
- 34S  cG RI$unweighted average of 61 {I8} from (|a,p|g) and 100 {I14} from      
- 34S 2cG (n,|g) E=thermal                                                       
- 34S  cG M$D |DJ=0 |g ({+31}P(|a,p|g)).                                         
- 34S  cG MR$0.00 {I+32-14} ({+31}P(|a,p|g)).                                    
+ 34S  cL J$spin=2,4 from p|g(|q) in {+31}P(|a,p|g). Spin=2 is ruled out because 
+ 34S 2cL either E2 or M2 for 1727|g to 4+, 4687.6 level would be ruled out by   
+ 34S 3cL RUL. |p=- from L=3 from 3/2+ in {+33}S(d,p).                           
+ 34S   G 1544.41   10 100    8  D                                           M   
+ 34S  cG MR$0.00 {I6} from {+31}P(|a,p|g).                                      
+ 34S   G 1732.39   11 61     8  D                                           M   
+ 34S  cG MR$0.00 {I+32-14} from {+31}P(|a,p|g).                                 
  34S  d                                                                         
- 34S   L 6428.13   7  (2+)                                                      
+ 34S   L 6428.13   7  (2,3-)                                                    
  34S X L XREF=N(6423*)PW(6414*)                                                 
- 34S  cL J$(2+,3+) from gammas to 1+, 4075 and 4+, 4689; (3+) less likely from  
- 34S 2cL |g from (1)-, 7781.                                                    
+ 34S  cL J$(2,3-): |g to 4+, 4690, 1+, 4075, and 2+, 6122 restrict J to 2 or 3; 
+ 34S 2cL J|p=3+ is excluded: M2 is required for 1353.46|g from the short-lived  
+ 34S 3cL (1)-, 7781: J|p=2- and 3- are not excluded, as the lifetime of 6428.13 
+ 34S 4cL is unmeasured and M2 is required for 1739.32|g and 2353.06|g.          
  34S   G 306.63    16 19     4                                                  
  34S   G 1739.32   9  100    13                                                 
  34S   G 2353.06   21 48     8                                                  
@@ -745,8 +734,6 @@
  34S   L 7781.22   6  (1)-             0.57 EV   9                              
  34S X L XREF=PRSW(7779*)                                                       
  34S 2 L WIDTHG0=57 EV 9                                                        
- 34S  cL E$weighted average of 7781.22 {I6} from (n,|g) E=thermal, 7784 {I11}   
- 34S 2cL from (d,p), and 7781 {I2} from (|g,|g')                                
  34S  cL T$from (|g,|g')                                                        
  34S  cL J$(1) from {+34}S(|g,|g'),(pol |g,|g'); |p=- from L=1 in {+33}S(d,p).  
  34S   G 1353.46   16 10.0   13                                                 
