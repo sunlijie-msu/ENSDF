@@ -136,39 +136,44 @@ def match(r):
 ast = sorted([r for r in rows if r["ast"]], key=lambda z: z["E"])
 assert len(ast) == 53, len(ast)
 
+def relation(r, q):
+    """A: same E_gamma, same Igamma; B: same E_gamma, different Igamma;
+    C: different E_gamma, same Igamma; D: different E_gamma, different Igamma."""
+    same_e = abs(q["E"] - r["E"]) < 0.005
+    same_i = r["I"] is not None and q["I"] is not None and abs(q["I"] - r["I"]) <= 1e-12
+    return ("A" if same_e and same_i else "B" if same_e else "C" if same_i else "D"), same_e, same_i
+
+
 tbl = []
 for k, r in enumerate(ast, 1):
     ln, flag = match(r)
     part = [q for q in rows if q is not r and abs(q["E"] - r["E"]) <= TOL]
-    exact = [q for q in part if abs(q["E"] - r["E"]) < 0.005]
-    twin = [q for q in part if q["ast"] and abs(q["E"] - r["E"]) < 0.005
-            and abs(q["I"] - r["I"]) <= 1e-12]
-    if exact:
-        assert all(q["ast"] for q in exact) or all(not q["ast"] for q in exact), r
-        cls = ("A" if abs(exact[0]["I"] - r["I"]) < 1e-12 else "B") if exact[0]["ast"] else "C"
-    else:
-        cls = "D"
-    lines = [ln] + [match(q)[0] for q in twin] if cls == "A" else [ln]
     pairs = []
     for q in sorted(part, key=lambda z: (abs(z["E"] - r["E"]), z["ln"])):
-        if cls == "A":
-            basis = "same E\u03b3, same I\u03b3"
-        elif cls == "B":
-            basis = "same E\u03b3, I\u03b3 split"
-        elif cls == "C":
-            basis = "same E\u03b3, partner unmarked"
-        else:
-            basis = "\u0394E\u03b3 \u2260 0"
+        c, same_e, same_i = relation(r, q)
         sig = "no"
         if r["sd"] is not None and q["sd"] is not None and abs(q["E"] - r["E"]) > r["sd"] + q["sd"]:
             sig = "yes"
-        pairs.append(dict(q=q, pln=match(q)[0], d=q["E"] - r["E"], sig=sig))
-    tbl.append(dict(k=k, r=r, tln="/".join(str(x) for x in sorted(lines)), own=ln, flag=flag,
-                    cls=cls, part=part, pairs=pairs, basis=basis if part else "no partner"))
+        pairs.append(dict(q=q, pln=match(q)[0], d=q["E"] - r["E"], sig=sig,
+                          cls=c, sameE=same_e, sameI=same_i))
+    tbl.append(dict(k=k, r=r, own=ln, flag=flag, part=part, pairs=pairs,
+                    cls=[p["cls"] for p in pairs]))
 
-cls_count = {c: sum(1 for x in tbl if x["cls"] == c) for c in "ABCD"}
+cls_count = {c: sum(1 for x in tbl for p in x["pairs"] if p["cls"] == c) for c in "ABCD"}
+cls_ast = {c: sum(1 for x in tbl for p in x["pairs"] if p["cls"] == c and p["q"]["ast"])
+           for c in "ABCD"}
+cls_ex = {c: [] for c in "ABCD"}
+_seen = {c: set() for c in "ABCD"}
+for x in tbl:
+    for p in x["pairs"]:
+        k = int(round(x["r"]["E"] * 100))
+        if k not in _seen[p["cls"]] and len(cls_ex[p["cls"]]) < 3:
+            _seen[p["cls"]].add(k)
+            cls_ex[p["cls"]].append(x["r"]["eg"])
 flag_tally = {f: sum(1 for x in tbl if x["flag"] == f) for f in "*@&"}
-d_both = sum(1 for x in tbl if x["cls"] == "D" and any(q["ast"] for q in x["part"]))
+n_two = sum(1 for x in tbl if len(x["pairs"]) == 2)
+n_mix = sum(1 for x in tbl if len(set(x["cls"])) > 1)
+n_diff = sum(1 for x in tbl if abs(min(x["pairs"], key=lambda p: abs(p["d"]))["d"]) >= 0.005)
 unp_hits = [x for x in tbl if any(abs(q["E"] - x["r"]["E"]) <= TOL for q in unplaced)]
 unp_near = min((abs(q["E"] - x["r"]["E"]), x["r"]["eg"], q["eg"])
                for x in tbl for q in unplaced)
@@ -297,21 +302,6 @@ A("- The 53 rows fall into **{} multiplet groups**: {} groups hold two asteriske
   "{} groups hold one ({} rows).".format(len(ast_groups), n_multi, 2 * n_multi, n_single, n_single))
 A("- {}/53 asterisked rows have a partner that is itself asterisked; the other {} pair only with "
   "unasterisked rows \u2014 the one-sided asterisks of \u00a78.1.".format(rows_with_ast_partner, 53 - rows_with_ast_partner))
-A("**Unplaced transitions as partners** \u2014 the 348 unplaced G-records (source: Table VI_3rd, the "
-  "unplaced block of `2026OSAA_CT11035_152Gd.ens`, ens lines 46\u2013393) were searched against the 53 "
-  "asterisked E_\u03b3 with the same \u00b1{:.1f} keV window:".format(TOL))
-A("")
-A("| Finding (348 unplaced peaks vs the 53 asterisked E_\u03b3) | Result |")
-A("|---|---|")
-A("| asterisked rows whose nearest unplaced peak lies within \u00b1{:.1f} keV | **{}** |".format(TOL, len(unp_hits)))
-A("| nearest unplaced peak to any asterisked E_\u03b3 | {:.2f} keV ({} vs {} keV) |".format(unp_near[0], unp_near[2], unp_near[1].split()[0]))
-A("| range of the nearest-unplaced distance over the 53 rows | {:.2f}\u2013{:.2f} keV |".format(unp_near[0], unp_far))
-A("| unplaced E_\u03b3 coinciding (\u00b10.005 keV) with any of the 751 placed Table II E_\u03b3 | **{}** |".format(unp_same_E))
-A("| duplicate E_\u03b3 inside the unplaced set (own pairs below 0.005 keV) | **0** |")
-A("")
-A("No asterisked row can therefore be multiply placed with an unplaced record; the multiplet structure is "
-  "confined to the 751 placed transitions, \u00a77 covers all of it, and the unplaced block needs no "
-  "column-77 flag (§6).")
 A("- For {} rows the separation to the nearest partner exceeds the sum of the two quoted energy "
   "uncertainties, i.e. the two energies disagree at face value; the largest excess is {:.2f} keV "
   "({} vs {}, separation {:.2f} keV against summed uncertainties {:.2f} keV). Those look like "
@@ -319,32 +309,56 @@ A("- For {} rows the separation to the nearest partner exceeds the sum of the tw
       incons, worst[0], worst[1]["eg"], worst[2]["eg"], abs(worst[2]["E"] - worst[1]["E"]),
       worst[1]["sd"] + worst[2]["sd"]))
 A("")
+A("**Unplaced transitions as partners** \u2014 the {} unplaced G-records (source: Table VI_3rd, the "
+  "unplaced block of `2026OSAA_CT11035_152Gd.ens`, ens lines 46\u2013393) were searched against the 53 "
+  "asterisked E_\u03b3 with the same \u00b1{:.1f} keV window:".format(len(unplaced), TOL))
+A("")
+A("| Finding (348 unplaced peaks vs the 53 asterisked E_\u03b3) | Result |")
+A("|---|---|")
+A("| asterisked rows whose nearest unplaced peak lies within \u00b1{:.1f} keV | **{}** |".format(TOL, len(unp_hits)))
+A("| nearest unplaced peak to any asterisked E_\u03b3 | {:.2f} keV ({} vs {} keV) |".format(unp_near[0], unp_near[2], unp_near[1].split()[0]))
+A("| range of the nearest-unplaced distance over the 53 rows | {:.2f}\u2013{:.2f} keV |".format(unp_near[0], unp_far))
+A("| unplaced E_\u03b3 coinciding (\u00b10.005 keV) with any of the 751 placed Table II E_\u03b3 | **{}** |".format(unp_same_E))
+A("| duplicate E_\u03b3 inside the unplaced set (own pairs below 0.005 keV) | **0** (nearest distinct pair 0.62 keV apart) |")
+A("")
+A("No asterisked row can therefore be multiply placed with an unplaced record; the multiplet structure is "
+  "confined to the 751 placed transitions, \u00a77 covers all of it, and the unplaced block needs no "
+  "column-77 flag (\u00a76).")
+A("")
 A("## 5. Cases of the 53 asterisked records")
 A("")
-A("| Case | Records | E_\u03b3 (keV) | Description |")
-A("|------|---------|--------------|-------------|")
-A("| A | {} | 2709.50, 2728.78 | identical E_\u03b3, both placements asterisked, identical I\u03b3 |".format(cls_count["A"]))
-A("| B | {} | 1631.30, 1902.30, 2104.10 | identical E_\u03b3, both placements asterisked, different I\u03b3 |".format(cls_count["B"]))
-A("| C | {} | 1857.20 | identical E_\u03b3, partner not asterisked |".format(cls_count["C"]))
-A("| D | {} | the remaining near-degenerate rows | 0.03 \u2264 \\|\u0394E_\u03b3\\| \u2264 1.0 keV; {} have both members "
-  "asterisked, {} only one |".format(cls_count["D"], d_both, cls_count["D"] - d_both))
+A("The case of a (record, partner) pair follows from the E_\u03b3 and I\u03b3 cells only; asterisks play no "
+  "role in the definition and are reported in their own column of \u00a77.")
+A("")
+A("| Case | Relation between the two placements | Pairs | Example asterisked E_\u03b3 (keV) |")
+A("|------|-------------------------------------|-------|-----------------------|")
+A("| A | identical E_\u03b3, identical I\u03b3 | {} | {} |".format(cls_count["A"], ", ".join(cls_ex["A"])))
+A("| B | identical E_\u03b3, different I\u03b3 | {} | {} |".format(cls_count["B"], ", ".join(cls_ex["B"])))
+A("| C | different E_\u03b3 (\u22641.0 keV), identical I\u03b3 | {} | {} |".format(cls_count["C"], ", ".join(cls_ex["C"])))
+A("| D | different E_\u03b3 (\u22641.0 keV), different I\u03b3 | {} | {} |".format(cls_count["D"], ", ".join(cls_ex["D"])))
+A("")
+A("The 53 records give **{} pairs** in total. {} records pair once, {} twice; {} of the latter mix cases "
+  "(the case column of \u00a77 then stacks one letter per partner).".format(
+      sum(cls_count.values()), 53 - n_two, n_two, n_mix))
 A("")
 A("## 6. Column-77 flags applied in the target")
 A("")
-A("| Case | Records | col 77 | Rationale |")
-A("|------|---------|--------|-----------|")
-A("| A | {} | `&` | identical E_\u03b3 and identical I\u03b3 at both placements \u2192 one transition placed "
-  "twice, intensity not divided |".format(cls_count["A"]))
-A("| B | {} | `@` | identical E_\u03b3 but different I\u03b3 \u2192 one transition placed twice, intensity "
-  "suitably divided |".format(cls_count["B"]))
-A("| C | {} | `*` | multiply-placed gamma ray; the partner placement is unmarked, so no division can be "
-  "asserted |".format(cls_count["C"]))
-A("| D | {} | `*` | the two energies differ by 0.03\u20131.0 keV, so they are distinct transitions in an "
-  "unresolved multiplet; `&`/`@` would assert one transition placed twice |".format(cls_count["D"]))
+A("| col 77 | Records | Rule |")
+A("|--------|---------|------|")
+A("| `&` | {} | a case A pair: identical E_\u03b3 and identical I\u03b3 at both placements \u2192 one "
+  "transition placed twice, intensity not divided |".format(cls_count["A"]))
+A("| `@` | {} | a case B pair whose partner placement is itself asterisked: identical E_\u03b3 with split "
+  "I\u03b3 \u2192 one transition placed twice, intensity suitably divided |".format(cls_ast["B"]))
+A("| `*` | {} | everything else: case B with an unasterisked partner (no division can be asserted on an "
+  "unmarked placement), and all case C and D pairs, whose E_\u03b3 differ so the placements are distinct "
+  "transitions of an unresolved multiplet |".format(flag_tally["*"]))
 A("")
 A("Applied tally in `2026OSAA_CT11035_152Gd.ens`: **{}** `*`, **{}** `@`, **{}** `&` (all 53 flagged "
   "G-records); the remaining 698 G-records keep column 77 blank. `?` is not legal in column 77, and "
-  "column 80 was left unchanged for all 53 records.".format(flag_tally["*"], flag_tally["@"], flag_tally["&"]))
+  "column 80 was left unchanged for all 53 records. Case is a property of the pair, not of the flag: the "
+  "one case B pair with an unasterisked partner (1857.20) is flagged `*`, so the `@` count ({}) is one "
+  "less than the case B pair count ({}).".format(
+      flag_tally["*"], flag_tally["@"], flag_tally["&"], flag_tally["@"], cls_count["B"]))
 A("")
 A("The ten non-`*` flags are: `@` on both placements of 1631.30 (1975.64 \u2192 344.37 and "
   "2246.85 \u2192 615.51), 1902.30 (2246.85 \u2192 344.37 and 3012.23 \u2192 1109.38) and 2104.10 "
@@ -362,28 +376,34 @@ A("The **unplaced block** is a separate flag population and needed no change: of
 A("")
 A("## 7. Per-record evidence")
 A("")
-A("Exactly one row per asterisked Table II row (**53 rows**), 8 columns. All multiplet partners within "
+A("Exactly one row per asterisked Table II row (**53 rows**), 10 columns. All multiplet partners within "
   "\u00b1{:.1f} keV are listed: {} rows have one partner, {} have two. In the two-partner rows the partner "
-  "columns carry both values as **stacked subcells** (separated by `<br>`), same order in all four "
+  "columns carry both values as **stacked subcells** (separated by `<br>`), same order in all five partner "
   "columns. All values are copied character-for-character from `2026OSAA_CT11035_152Gd_Table_II.md`, the "
-  "`*` I\u03b3 marker included; `0` is the ground state. The {} unplaced G-records of the target contribute "
-  "no partner (\u00a74), so this table is complete.".format(
-      TOL, sum(1 for x in tbl if len(x["pairs"]) == 1), sum(1 for x in tbl if len(x["pairs"]) == 2),
-      len(unplaced)))
+  "`*` I\u03b3 marker included; `0` is the ground state. `case` is the pair class of \u00a75 (A = same "
+  "E_\u03b3 + same I\u03b3, B = same E_\u03b3 + different I\u03b3, C = different E_\u03b3 + same I\u03b3, "
+  "D = different E_\u03b3 + different I\u03b3), stacked one letter per partner when the two partners are of "
+  "different classes. `partner`\u2009`*` is a separate question and reports whether the partner placement "
+  "itself carries the Table II asterisk footnote: yes for {} of the 53 rows, no for the other {} "
+  "(\u00a78.1). The {} unplaced G-records of the target contribute no partner (\u00a74), so this table is "
+  "complete.".format(
+      TOL, 53 - n_two, n_two, rows_with_ast_partner, 53 - rows_with_ast_partner, len(unplaced)))
 A("")
-A("| E_\u03b3 (keV) | I_\u03b3 | E_i (keV) | E_f (keV) | partner E_\u03b3 (keV) | partner I_\u03b3 | partner E_i (keV) | partner E_f (keV) |")
-A("|---|---|---|---|---|---|---|---|")
+A("| case | E_\u03b3 (keV) | I_\u03b3 | E_i (keV) | E_f (keV) | partner E_\u03b3 (keV) | partner I_\u03b3 | partner E_i (keV) | partner E_f (keV) | partner `*` |")
+A("|---|---|---|---|---|---|---|---|---|---|")
 for x in tbl:
     ps = x["pairs"] or [None]
     cellsx = []
     for key in ("eg", "ig", "ei", "ef"):
         cellsx.append("<br>".join("-" if p is None else p["q"][key] for p in ps))
-    A("| {} | {} | {} | {} | {} | {} | {} | {} |".format(
-        x["r"]["eg"], x["r"]["ig"], x["r"]["ei"], x["r"]["ef"], *cellsx))
+    cellsx.append("<br>".join("-" if p is None else ("yes" if p["q"]["ast"] else "no") for p in ps))
+    A("| {} | {} | {} | {} | {} | {} | {} | {} | {} | {} |".format(
+        "<br>".join(x["cls"]) or "-", x["r"]["eg"], x["r"]["ig"], x["r"]["ei"], x["r"]["ef"], *cellsx))
 A("")
-A("The four left columns are the asterisked placement, the four right columns its partner(s): one value "
-  "for a single-partner row, two stacked values for a two-partner row. A partner I\u03b3 without `*` is an "
-  "unmarked placement (\u00a78.1); a pair whose two E_\u03b3 differ by more than the sum of their quoted "
+A("The first five columns are the asterisked placement, the last five its partner(s): one value for a "
+  "single-partner row, two stacked values for a two-partner row. A row whose partner column reads `no` is a "
+  "one-sided asterisk (\u00a78.1: the partner placement is unmarked in Table II, which is why the target "
+  "keeps one blank column 77 there); a pair whose two E_\u03b3 differ by more than the sum of their quoted "
   "uncertainties is listed in \u00a78.4.")
 A("")
 A("## 8. Inconsistencies / questions for the 2026OSAA authors")
@@ -399,13 +419,14 @@ A("2. **Footnote vs. numbers.** The footnote says the *total* multiplet intensit
   "only with a *divided* intensity. The flags here follow the numbers (`@`), not the footnote; please "
   "confirm the intended convention.")
 A("3. **1857.20\u2217.** Its only equal-E_\u03b3 source row, 1857.2(8) from 2788.17, carries I\u03b3 "
-  "0.0006(4) and no asterisk; the asterisked 1857.20 de-excites 2201.79 \u2192 344.37. The asterisk "
-  "therefore has no confirmed partner in the table and was flagged `*`.")
+  "0.0006(4) and no asterisk; the asterisked 1857.20 de-excites 2201.79 \u2192 344.37. The pair is "
+  "therefore case B (identical E_\u03b3, I\u03b3 0.244(17) vs 0.0006(4)) but its partner placement is "
+  "unmarked, so `@` would assert a division that the table does not support; the record was flagged `*`.")
 A("4. **Near-degenerate pairs.** {} of the 53 rows differ from their nearest partner by 0.03\u20131.0 keV, "
   "and for {} of them the separation exceeds the summed quoted uncertainties: {}. If these are unresolved "
   "*doublets of different transitions*, the asterisk is appropriate; if the authors intend *one transition "
   "placed twice*, the E_\u03b3 values should agree and the flag would have to carry the intensity "
-  "relation.".format(cls_count["D"], incons, incons_txt))
+  "relation.".format(n_diff, incons, incons_txt))
 A("5. **Level 3271.97(10)** is the only source level whose target energy differs by more than 0.05 keV "
   "(target 3271.73(12), \u0394 = \u22120.24 keV); the other 199 levels agree within \u22120.02\u20130.00 keV "
   "(158 of them at \u22120.01 keV, the GLSC refit offset). The source's own ground-state transition "
@@ -451,13 +472,14 @@ A("- Unplaced audit (`Table_VI_3rd.md` \u2194 the {} target unplaced G-records):
       len(unplaced), unp_coin, len(vi_ri_equiv), unp_near[0], unp_far))
 A("- Reverse check: all 53 flagged target G-records are accounted for by the audit; 0 misses.")
 A("- Markdown render check (`check_table_pipes.py`): every table is column-consistent and \u00a77 holds "
-  "8 columns \u00d7 {} rows (one per asterisked row, {} partner values in total).".format(
+  "10 columns \u00d7 {} rows (one per asterisked row, {} partner values in total), the `case` and "
+  "`partner *` columns agreeing row-by-row with the re-derived classes and with the source `*` marker.".format(
       len(tbl), sum(len(x["pairs"]) for x in tbl)))
 A("")
 open(OUT, "w", encoding="utf-8", newline="\r\n").write("\n".join(L) + "\n")
 print("written:", OUT, "lines:", len(L))
 print("groups:", len(ast_groups), "multi:", n_multi, "single:", n_single,
-      "ast_partner:", rows_with_ast_partner, "incons:", incons, "d_both:", d_both, "base:", base)
+      "ast_partner:", rows_with_ast_partner, "incons:", incons, "diff_rows:", n_diff, "base:", base)
 print("flags:", flag_tally, "cls:", cls_count, "maxd:", round(maxd, 2), "worst_d:", round(worst[0], 2))
 print("unplaced:", len(unplaced), "rows_with_unplaced_partner:", len(unp_hits),
       "nearest_d:", round(unp_near[0], 2), unp_near[2], "vs", unp_near[1],

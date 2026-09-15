@@ -27,7 +27,9 @@ for i, line in enumerate(src, 1):
     c = [x.strip() for x in line.strip("|").split("|")]
     if len(c) < 5:
         continue
+    mI = re.match(r"-?\d+(?:\.\d+)?", c[2])
     rows.append(dict(ln=i, ei=c[0], eg=c[1], ig=c[2], ef=c[3],
+                     I=float(mI.group(0)) if mI else None,
                      E=float(re.match(r"-?\d+(?:\.\d+)?", c[1]).group(0)), ast=AST in c[2]))
 assert len(rows) == 751, len(rows)
 ast_rows = [r for r in rows if r["ast"]]
@@ -86,10 +88,11 @@ print("target flagged G-records:", len(flagged), "| flags:", sorted({f for _, f 
 print("mapping failures:", len(fail), "| reverse-check misses:", rev_miss)
 
 # ---- 3. report evidence table, re-derived independently --------------------
-hdr = ("| E_\u03b3 (keV) | I_\u03b3 | E_i (keV) | E_f (keV) | "
-       "partner E_\u03b3 (keV) | partner I_\u03b3 | partner E_i (keV) | partner E_f (keV) |")
-assert hdr in rep, "8-column header not found"
-ncol = 8
+hdr = ("| case | E_\u03b3 (keV) | I_\u03b3 | E_i (keV) | E_f (keV) | "
+       "partner E_\u03b3 (keV) | partner I_\u03b3 | partner E_i (keV) | partner E_f (keV) | "
+       "partner `*` |")
+assert hdr in rep, "10-column header not found"
+ncol = 10
 rep_rows, i = [], rep.index(hdr) + 2
 while i < len(rep) and rep[i].startswith("|"):
     rep_rows.append([c.strip() for c in rep[i].strip("|").split("|")])
@@ -107,13 +110,30 @@ byline = {r["ln"]: r for r in rows}
 
 
 def partners(c):
-    """Expand the four stacked partner subcells into full 4-tuples."""
-    parts = [v.split("<br>") for v in c[4:8]]
+    """Expand the five stacked partner subcells into full 4-tuples + asterisk flags."""
+    parts = [v.split("<br>") for v in c[5:9]]
+    flags = c[9].split("<br>")
     n = len(parts[0])
-    if any(len(p) != n for p in parts):
+    if any(len(p) != n for p in parts) or len(flags) != n:
         fail.append(("partner-cell-count-mismatch", c))
         return []
-    return [tuple(p[k] for p in parts) for k in range(n)]
+    out = []
+    for k in range(n):
+        t = tuple(p[k] for p in parts)
+        if flags[k] not in ("yes", "no"):
+            fail.append(("partner-flag-text", c, flags[k]))
+        elif (flags[k] == "yes") != bool(byline[bycell[t]]["ast"] if t in bycell else None):
+            fail.append(("partner-flag-mismatch", c, t, flags[k]))
+        else:
+            out.append(t)
+    return out
+
+
+def want_case(r, q):
+    """A same Eg+same Ig, B same Eg+diff Ig, C diff Eg+same Ig, D diff Eg+diff Ig."""
+    same_e = abs(q["E"] - r["E"]) < 0.005
+    same_i = r["I"] is not None and q["I"] is not None and abs(q["I"] - r["I"]) <= 1e-12
+    return "A" if same_e and same_i else "B" if same_e else "C" if same_i else "D"
 
 
 got = set()
@@ -122,10 +142,14 @@ for c in rep_rows:
     if len(c) != ncol:
         fail.append(("cols", len(c), c))
         continue
-    a = bycell.get(tuple(c[0:4]))
+    a = bycell.get(tuple(c[1:5]))
     if a is None:
         fail.append(("unmatched-record", c))
         continue
+    ps = partners(c)
+    exp_cls = [want_case(byline[a], byline[bycell[t]]) for t in ps if t in bycell]
+    if c[0].split("<br>") != exp_cls:
+        fail.append(("case-mismatch", a, c[0], exp_cls))
     if not byline[a]["ast"]:
         fail.append(("left-not-asterisked", c))
     if a in rec_rows:

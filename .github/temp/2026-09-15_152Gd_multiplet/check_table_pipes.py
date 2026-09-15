@@ -1,11 +1,13 @@
 """Markdown render sanity for the multiplet report: every row of a table must carry
-the same number of unescaped pipes, and the evidence table must have 8 columns."""
+the same number of unescaped pipes, and the evidence table must have 10 columns."""
 import io
 import re
 import sys
 
 MD = sys.argv[1] if len(sys.argv) > 1 else \
     r"D:\X\ND\ENSDF\XUNDL\2026OSAA_CT11035_152Gd_Multiplet_Gammas.md"
+NCOL = 10
+NROW = 53
 L = [l.rstrip("\r\n") for l in io.open(MD, encoding="utf-8")]
 pipes = lambda line: len(re.findall(r"(?<!\\)\|", line))
 
@@ -22,12 +24,19 @@ while i < len(L):
     else:
         i += 1
 
-hdr = [i for i, l in enumerate(L) if l.startswith("| E_")]
-ev = L[hdr[0]].strip("|").split("|") if hdr else []
-rows, j = 0, (hdr[0] + 2 if hdr else 0)
-while hdr and j < len(L) and L[j].startswith("|"):
-    assert len(L[j].strip("|").split("|")) == len(ev), (j + 1, L[j])
+hdr = [i for i, l in enumerate(L) if l.startswith("| case |")]
+assert len(hdr) == 1, hdr
+ev = [c.strip() for c in L[hdr[0]].strip("|").split("|")]
+assert len(ev) == NCOL, (len(ev), ev)
+rows, j = 0, hdr[0] + 2
+while j < len(L) and L[j].startswith("|"):
+    c = [x.strip() for x in L[j].strip("|").split("|")]
+    assert len(c) == NCOL, (j + 1, c)
+    assert c[0].split("<br>")[0] in ("A", "B", "C", "D") and \
+        all(x in ("A", "B", "C", "D") for x in c[0].split("<br>")), (j + 1, c[0])
+    assert all(x in ("yes", "no") for x in c[-1].split("<br>")), (j + 1, c[-1])
     rows += 1
     j += 1
+assert rows == NROW, rows
 print("inconsistent tables:", bad)
 print("evidence table columns:", len(ev), "rows:", rows)

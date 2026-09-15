@@ -96,8 +96,8 @@ print("\nsection 7 columns: {} | rows: {}".format(len(sec[0][1]) if sec else 0, 
 
 
 def expand(c):
-    """Split the four stacked partner subcells into 4-tuples."""
-    parts = [v.split("<br>") for v in c[4:8]]
+    """Split the five stacked partner subcells into 4-tuples."""
+    parts = [v.split("<br>") for v in c[5:9]]
     n = len(parts[0])
     if any(len(p) != n for p in parts):
         print("CELL-COUNT MISMATCH", c)
@@ -107,7 +107,7 @@ def expand(c):
 
 for ln, c in sec:
     for g in expand(c):
-        rep_pairs.append(tuple(c[0:4]) + g)
+        rep_pairs.append(tuple(c[1:5]) + g)
 print("expected pairs: {} | report pairs: {}".format(len(src_pairs), len(rep_pairs)))
 miss = sorted(p for p in src_pairs if p not in rep_pairs)
 extra = sorted(p for p in rep_pairs if p not in src_pairs)
@@ -123,7 +123,7 @@ multirec = 0
 for r in astro:
     p = multi[r["ln"]]
     key = (r["eg"], r["ig"], r["ei"], r["ef"])
-    hits = [c for _, c in sec if tuple(c[0:4]) == key]
+    hits = [c for _, c in sec if tuple(c[1:5]) == key]
     ngot = sum(len(expand(c)) for c in hits)
     if len(hits) != 1 or ngot != len(p):
         bad += 1
