@@ -1,0 +1,14 @@
+sample rows: [1, 8, 16, 23, 31, 38, 46, 53]
+row 1   src line 76   ens line 557       E_lvl 1785.89    flag '*' | SRC-OK ENS-OK LVL-OK
+row 8   src line 372  ens line 1072      E_lvl 3012.22    flag '@' | SRC-OK ENS-OK LVL-OK
+row 16  src line 180  ens line 741       E_lvl 2448.57    flag '@' | SRC-OK ENS-OK LVL-OK
+row 23  src line 340  ens line 1020      E_lvl 2958.4     flag '*' | SRC-OK ENS-OK LVL-OK
+row 31  src line 534  ens line 1393      E_lvl 3359.05    flag '*' | SRC-OK ENS-OK LVL-OK
+row 38  src line 249  ens line 866/1094  E_lvl 2709.51    flag '&' | SRC-OK ENS-OK LVL-OK
+row 38  src line 249  ens line 866/1094  E_lvl 3053.98    flag '&' | SRC-OK ENS-OK LVL-OK
+row 46  src line 648  ens line 1628      E_lvl 3534.75    flag '*' | SRC-OK ENS-OK LVL-OK
+row 53  src line 735  ens line 1811      E_lvl 3703.61    flag '*' | SRC-OK ENS-OK LVL-OK
+failures: 0
+
+flagged G-records: 53 distinct flags ['&', '*', '@']
+report ens lines: 53 reverse misses: []

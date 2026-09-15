@@ -1,0 +1,319 @@
+source rows=751  asterisked=53  target G-records=751
+TOL=2.0 keV
+
+[ 1] src L76: Ei=1785.90 (19) Eg=855.17 (19) Ig=0.0230 (24)∗ Ef=930.73 (3)
+     target: ens L557 lvl=1785.89 E=855.17(19) RI=0.0230(24) flag='*' q=' '
+       partner dE=-0.26 src L127: Ei=2169.58 (9) Eg=854.91 (15) Ig=0.170 (12) Ef=1314.69 (4) equalIg=n
+       partner dE=+1.93 src L285: Ei=2772.42 (6) Eg=857.10 (15) Ig=0.186 (13) Ef=1915.41 (6) equalIg=n
+       ens-partner dE=-0.26 L648 lvl=2169.57 E=854.9100(15) RI=0.170(12) flag=' '
+       ens-partner dE=+1.93 L925 lvl=2772.41 E=857.1000(15) RI=0.186(13) flag=' '
+
+[ 2] src L112: Ei=1975.64 (9) Eg=1631.30 (15) Ig=0.125 (30)∗ Ef=344.37 (3)
+     target: ens L619 lvl=1975.63 E=1631.30(15) RI=0.125(30) flag='@' q=' ' ; ens L672 lvl=2246.84 E=1631.30(15) RI=0.229(17) flag='@' q=' '
+       partner dE=+0.00 src L143: Ei=2246.85 (5) Eg=1631.30 (15) Ig=0.229 (17)∗* Ef=615.51 (3) equalIg=n
+
+[ 3] src L119: Ei=2121.18 (8) Eg=1190.53 (16) Ig=0.64 (5)∗ Ef=930.73 (3)
+     target: ens L632 lvl=2121.17 E=1190.53(16) RI=0.64(5) flag='*' q=' '
+       partner dE=-0.13 src L160: Ei=2299.77 (6) Eg=1190.40 (15) Ig=0.64 (5) Ef=1109.38 (4) equalIg=Y
+       ens-partner dE=-0.13 L702 lvl=2299.76 E=1190.4000(15) RI=0.64(5) flag=' '
+
+[ 4] src L132: Ei=2201.79 (8) Eg=1857.20 (15) Ig=0.244 (17)∗ Ef=344.37 (3)
+     target: ens L657 lvl=2201.78 E=1857.20(15) RI=0.244(17) flag='*' q=' ' ; ens L937 lvl=2788.17 E=1857.20(8 ) RI=0.0006(4) flag=' ' q=' '
+       partner dE=+0.00 src L295: Ei=2788.17 (16) Eg=1857.2 (8) Ig=0.0006 (4) Ef=930.73 (3) equalIg=n
+       partner dE=+1.19 src L347: Ei=2981.31 (9) Eg=1858.39 (17) Ig=0.0062 (6) Ef=1123.34 (3) equalIg=n
+       ens-partner dE=+1.19 L1033 lvl=2981.3 E=1858.3900(17) RI=0.0062(6) flag=' '
+
+[ 5] src L143: Ei=2246.85 (5) Eg=1631.30 (15) Ig=0.229 (17)∗ Ef=615.51 (3)
+     target: ens L619 lvl=1975.63 E=1631.30(15) RI=0.125(30) flag='@' q=' ' ; ens L672 lvl=2246.84 E=1631.30(15) RI=0.229(17) flag='@' q=' '
+       partner dE=+0.00 src L112: Ei=1975.64 (9) Eg=1631.30 (15) Ig=0.125 (30)∗* Ef=344.37 (3) equalIg=n
+
+[ 6] src L144: Ei=2246.85 (5) Eg=1902.30 (16) Ig=2.38 (19)∗ Ef=344.37 (3)
+     target: ens L673 lvl=2246.84 E=1902.30(16) RI=2.38(19) flag='@' q=' ' ; ens L1072 lvl=3012.22 E=1902.30(15) RI=0.27(4) flag='@' q=' '
+       partner dE=+0.00 src L372: Ei=3012.23 (7) Eg=1902.30 (15) Ig=0.27 (4)∗* Ef=1109.38 (4) equalIg=n
+
+[ 7] src L180: Ei=2448.58 (10) Eg=2104.10 (18) Ig=0.073 (10)∗ Ef=344.37 (3)
+     target: ens L741 lvl=2448.57 E=2104.10(18) RI=0.073(10) flag='@' q=' ' ; ens L874 lvl=2719.58 E=2104.10(15) RI=0.0385(28) flag='@' q=' '
+       partner dE=+0.00 src L255: Ei=2719.59 (6) Eg=2104.10 (15) Ig=0.0385 (28)∗* Ef=615.51 (3) equalIg=n
+
+[ 8] src L225: Ei=2604.42 (9) Eg=1989.2 (27) Ig=0.0085 (9)∗ Ef=615.51 (3)
+     target: ens L824 lvl=2604.41 E=1989.20(27) RI=0.0085(9) flag='*' q=' '
+       partner dE=-0.03 src L322: Ei=2920.09 (11) Eg=1989.17 (25) Ig=0.0019 (4)∗* Ef=930.73 (3) equalIg=n
+       partner dE=+1.40 src L276: Ei=2746.41 (15) Eg=1990.60 (28) Ig=0.0051 (8) Ef=755.55 (3) equalIg=n
+       ens-partner dE=-0.03 L984 lvl=2920.08 E=1989.1700(25) RI=0.0019(4) flag='*'
+       ens-partner dE=+1.40 L908 lvl=2746.4 E=1990.6000(28) RI=0.0051(8) flag=' '
+
+[ 9] src L230: Ei=2641.89 (8) Eg=2642.20 (18) Ig=0.0083 (8)∗ Ef=0
+     target: ens L833 lvl=2641.89 E=2642.20(18) RI=0.0083(8) flag='*' q=' '
+       partner dE=-0.24 src L666: Ei=3572.97 (9) Eg=2641.96 (22) Ig=0.0052 (7)∗* Ef=930.73 (3) equalIg=n
+       ens-partner dE=-0.24 L1668 lvl=3572.96 E=2641.9600(22) RI=0.0052(7) flag='*'
+
+[10] src L249: Ei=2709.52 (7) Eg=2709.50 (15) Ig=0.308 (22)∗ Ef=0
+     target: ens L866 lvl=2709.51 E=2709.50(15) RI=0.308(22) flag='&' q=' ' ; ens L1094 lvl=3053.98 E=2709.50(18) RI=0.308(22) flag='&' q=' '
+       partner dE=+0.00 src L384: Ei=3053.99 (13) Eg=2709.50 (18) Ig=0.308 (22)∗* Ef=344.37 (3) equalIg=Y
+       partner dE=-0.70 src L511: Ei=3324.81 (8) Eg=2708.80 (16) Ig=0.308 (22) Ef=615.51 (3) equalIg=Y
+       ens-partner dE=-0.70 L1345 lvl=3324.81 E=2708.8000(16) RI=0.308(22) flag=' '
+
+[11] src L255: Ei=2719.59 (6) Eg=2104.10 (15) Ig=0.0385 (28)∗ Ef=615.51 (3)
+     target: ens L741 lvl=2448.57 E=2104.10(18) RI=0.073(10) flag='@' q=' ' ; ens L874 lvl=2719.58 E=2104.10(15) RI=0.0385(28) flag='@' q=' '
+       partner dE=+0.00 src L180: Ei=2448.58 (10) Eg=2104.10 (18) Ig=0.073 (10)∗* Ef=344.37 (3) equalIg=n
+
+[12] src L282: Ei=2749.21 (7) Eg=1818.64 (18) Ig=0.088 (6)∗ Ef=930.73 (3)
+     target: ens L916 lvl=2749.21 E=1818.64(18) RI=0.088(6) flag='*' q=' '
+       partner dE=-0.24 src L327: Ei=2928.05 (6) Eg=1818.40 (15) Ig=0.088 (6) Ef=1109.38 (4) equalIg=Y
+       ens-partner dE=-0.24 L993 lvl=2928.04 E=1818.4000(15) RI=0.088(6) flag=' '
+
+[13] src L292: Ei=2772.42 (6) Eg=2016.5 (4) Ig=0.012 (7)∗ Ef=755.55 (3)
+     target: ens L932 lvl=2772.41 E=2016.50(4 ) RI=0.012(7) flag='*' q=' '
+       partner dE=+0.30 src L423: Ei=3140.37 (7) Eg=2016.8 (4) Ig=0.00109 (34)∗* Ef=1123.34 (3) equalIg=n
+       ens-partner dE=+0.30 L1180 lvl=3140.36 E=2016.8000(4 ) RI=0.00109(34) flag='*'
+
+[14] src L293: Ei=2772.42 (6) Eg=2157.40 (28) Ig=0.00229 (35)∗ Ef=615.51 (3)
+     target: ens L933 lvl=2772.41 E=2157.40(28) RI=0.00229(35) flag='*' q=' '
+       partner dE=-0.21 src L400: Ei=3088.65 (7) Eg=2157.19 (16) Ig=0.0073 (6) Ef=930.73 (3) equalIg=n
+       partner dE=+1.16 src L319: Ei=2914.07 (8) Eg=2158.56 (15) Ig=0.121 (9) Ef=755.55 (3) equalIg=n
+       ens-partner dE=-0.21 L1129 lvl=3088.64 E=2157.1900(16) RI=0.0073(6) flag=' '
+       ens-partner dE=+1.16 L975 lvl=2914.06 E=2158.5600(15) RI=0.121(9) flag=' '
+
+[15] src L298: Ei=2800.33 (32) Eg=2184.80 (32) Ig=0.402 (29)∗ Ef=615.51 (3)
+     target: ens L942 lvl=2800.32 E=2184.80(32) RI=0.402(29) flag='*' q=' '
+       partner dE=+0.20 src L200: Ei=2529.65 (7) Eg=2185.00 (15) Ig=0.402 (29) Ef=344.37 (3) equalIg=Y
+       partner dE=+0.53 src L415: Ei=3115.77 (13) Eg=2185.33 (17) Ig=0.402 (29) Ef=930.73 (3) equalIg=Y
+       ens-partner dE=+0.20 L779 lvl=2529.65 E=2185.0000(15) RI=0.402(29) flag=' '
+       ens-partner dE=+0.53 L1163 lvl=3115.77 E=2185.3300(17) RI=0.402(29) flag=' '
+
+[16] src L322: Ei=2920.09 (11) Eg=1989.17 (25) Ig=0.0019 (4)∗ Ef=930.73 (3)
+     target: ens L984 lvl=2920.08 E=1989.17(25) RI=0.0019(4) flag='*' q=' '
+       partner dE=+0.03 src L225: Ei=2604.42 (9) Eg=1989.2 (27) Ig=0.0085 (9)∗* Ef=615.51 (3) equalIg=n
+       partner dE=+1.43 src L276: Ei=2746.41 (15) Eg=1990.60 (28) Ig=0.0051 (8) Ef=755.55 (3) equalIg=n
+       ens-partner dE=+0.03 L824 lvl=2604.41 E=1989.2000(27) RI=0.0085(9) flag='*'
+       ens-partner dE=+1.43 L908 lvl=2746.4 E=1990.6000(28) RI=0.0051(8) flag=' '
+
+[17] src L340: Ei=2958.4 (5) Eg=2342.9 (5) Ig=0.00088 (25)∗ Ef=615.51 (3)
+     target: ens L1020 lvl=2958.4 E=2342.90(5 ) RI=0.00088(25) flag='*' q=' '
+       partner dE=-0.50 src L240: Ei=2687.29 (9) Eg=2342.40 (15) Ig=0.196 (14) Ef=344.37 (3) equalIg=n
+       partner dE=-1.87 src L480: Ei=3271.97 (10) Eg=2341.03 (27) Ig=0.00150 (33) Ef=930.73 (3) equalIg=n
+       ens-partner dE=-0.50 L849 lvl=2687.28 E=2342.4000(15) RI=0.196(14) flag=' '
+       ens-partner dE=-1.87 L1283 lvl=3271.73 E=2341.0300(27) RI=0.00150(33) flag=' '
+
+[18] src L345: Ei=2964.22 (7) Eg=2619.60 (15) Ig=0.424 (30)∗ Ef=344.37 (3)
+     target: ens L1027 lvl=2964.21 E=2619.60(15) RI=0.424(30) flag='*' q=' '
+       partner dE=-0.01 src L548: Ei=3375.22 (15) Eg=2619.59 (20) Ig=0.00139 (18)∗* Ef=755.55 (3) equalIg=n
+       partner dE=+1.90 src L464: Ei=3237.19 (6) Eg=2621.50 (19) Ig=0.0039 (4)∗* Ef=615.51 (3) equalIg=n
+       partner dE=+2.00 src L657: Ei=3552.73 (11) Eg=2621.6 (4) Ig=0.0012 (4) Ef=930.73 (3) equalIg=n
+       ens-partner dE=-0.01 L1423 lvl=3375.21 E=2619.5900(20) RI=0.00139(18) flag='*'
+       ens-partner dE=+1.90 L1251 lvl=3237.18 E=2621.5000(19) RI=0.0039(4) flag='*'
+       ens-partner dE=+2.00 L1648 lvl=3552.72 E=2621.6000(4 ) RI=0.0012(4) flag=' '
+
+[19] src L350: Ei=2981.31 (9) Eg=2636.90 (15) Ig=0.0447 (32)∗ Ef=344.37 (3)
+     target: ens L1036 lvl=2981.3 E=2636.90(15) RI=0.0447(32) flag='*' q=' '
+       partner dE=+0.06 src L662: Ei=3567.53 (13) Eg=2636.96 (28) Ig=0.0056 (10) Ef=930.73 (3) equalIg=n
+       ens-partner dE=+0.06 L1659 lvl=3567.52 E=2636.9600(28) RI=0.0056(10) flag=' '
+
+[20] src L355: Ei=2999.68 (8) Eg=2384.30 (26) Ig=0.206 (15)∗ Ef=615.51 (3)
+     target: ens L1043 lvl=2999.67 E=2384.30(26) RI=0.206(15) flag='*' q=' '
+       partner dE=+0.40 src L267: Ei=2729.35 (5) Eg=2384.70 (15) Ig=0.204 (15) Ef=344.37 (3) equalIg=n
+       partner dE=-0.93 src L630: Ei=3506.67 (20) Eg=2383.37 (21) Ig=0.00299 (32) Ef=1123.34 (3) equalIg=n
+       ens-partner dE=+0.40 L891 lvl=2729.34 E=2384.7000(15) RI=0.204(15) flag=' '
+       ens-partner dE=-0.93 L1595 lvl=3506.66 E=2383.3700(21) RI=0.00299(32) flag=' '
+
+[21] src L372: Ei=3012.23 (7) Eg=1902.30 (15) Ig=0.27 (4)∗ Ef=1109.38 (4)
+     target: ens L673 lvl=2246.84 E=1902.30(16) RI=2.38(19) flag='@' q=' ' ; ens L1072 lvl=3012.22 E=1902.30(15) RI=0.27(4) flag='@' q=' '
+       partner dE=+0.00 src L144: Ei=2246.85 (5) Eg=1902.30 (16) Ig=2.38 (19)∗* Ef=344.37 (3) equalIg=n
+
+[22] src L384: Ei=3053.99 (13) Eg=2709.50 (18) Ig=0.308 (22)∗ Ef=344.37 (3)
+     target: ens L866 lvl=2709.51 E=2709.50(15) RI=0.308(22) flag='&' q=' ' ; ens L1094 lvl=3053.98 E=2709.50(18) RI=0.308(22) flag='&' q=' '
+       partner dE=+0.00 src L249: Ei=2709.52 (7) Eg=2709.50 (15) Ig=0.308 (22)∗* Ef=0 equalIg=Y
+       partner dE=-0.70 src L511: Ei=3324.81 (8) Eg=2708.80 (16) Ig=0.308 (22) Ef=615.51 (3) equalIg=Y
+       ens-partner dE=-0.70 L1345 lvl=3324.81 E=2708.8000(16) RI=0.308(22) flag=' '
+
+[23] src L385: Ei=3063.56 (13) Eg=1940.77 (20) Ig=0.0046 (6)∗ Ef=1123.34 (3)
+     target: ens L1098 lvl=3063.55 E=1940.77(20) RI=0.0046(6) flag='*' q=' '
+       partner dE=+0.23 src L110: Ei=1941.31 (5) Eg=1941.00 (15) Ig=1.08 (8) Ef=0 equalIg=n
+       ens-partner dE=+0.23 L615 lvl=1941.3 E=1941.0000(15) RI=1.08(8) flag=' '
+
+[24] src L391: Ei=3074.69 (11) Eg=1965.20 (16) Ig=0.130 (16)∗ Ef=1109.38 (4)
+     target: ens L1110 lvl=3074.69 E=1965.20(16) RI=0.130(16) flag='*' q=' '
+       partner dE=-0.03 src L399: Ei=3088.65 (7) Eg=1965.17 (15) Ig=0.0234 (18)∗* Ef=1123.34 (3) equalIg=n
+       ens-partner dE=-0.03 L1128 lvl=3088.64 E=1965.1700(15) RI=0.0234(18) flag='*'
+
+[25] src L399: Ei=3088.65 (7) Eg=1965.17 (15) Ig=0.0234 (18)∗ Ef=1123.34 (3)
+     target: ens L1128 lvl=3088.64 E=1965.17(15) RI=0.0234(18) flag='*' q=' '
+       partner dE=+0.03 src L391: Ei=3074.69 (11) Eg=1965.20 (16) Ig=0.130 (16)∗* Ef=1109.38 (4) equalIg=n
+       ens-partner dE=+0.03 L1110 lvl=3074.69 E=1965.2000(16) RI=0.130(16) flag='*'
+
+[26] src L423: Ei=3140.37 (7) Eg=2016.8 (4) Ig=0.00109 (34)∗ Ef=1123.34 (3)
+     target: ens L1180 lvl=3140.36 E=2016.80(4 ) RI=0.00109(34) flag='*' q=' '
+       partner dE=-0.30 src L292: Ei=2772.42 (6) Eg=2016.5 (4) Ig=0.012 (7)∗* Ef=755.55 (3) equalIg=n
+       ens-partner dE=-0.30 L932 lvl=2772.41 E=2016.5000(4 ) RI=0.012(7) flag='*'
+
+[27] src L462: Ei=3237.19 (6) Eg=2306.21 (15) Ig=0.0440 (33)∗ Ef=930.73 (3)
+     target: ens L1247 lvl=3237.18 E=2306.21(15) RI=0.0440(33) flag='*' q=' '
+       partner dE=-0.10 src L579: Ei=3429.71 (10) Eg=2306.11 (26) Ig=0.00117 (17)∗* Ef=1123.34 (3) equalIg=n
+       ens-partner dE=-0.10 L1484 lvl=3429.7 E=2306.1100(26) RI=0.00117(17) flag='*'
+
+[28] src L464: Ei=3237.19 (6) Eg=2621.50 (19) Ig=0.0039 (4)∗ Ef=615.51 (3)
+     target: ens L1251 lvl=3237.18 E=2621.50(19) RI=0.0039(4) flag='*' q=' '
+       partner dE=+0.10 src L657: Ei=3552.73 (11) Eg=2621.6 (4) Ig=0.0012 (4) Ef=930.73 (3) equalIg=n
+       partner dE=+1.30 src L749: Ei=3746.39 (12) Eg=2622.80 (29) Ig=0.00059 (11) Ef=1123.34 (3) equalIg=n
+       partner dE=-1.90 src L345: Ei=2964.22 (7) Eg=2619.60 (15) Ig=0.424 (30)∗* Ef=344.37 (3) equalIg=n
+       partner dE=-1.91 src L548: Ei=3375.22 (15) Eg=2619.59 (20) Ig=0.00139 (18)∗* Ef=755.55 (3) equalIg=n
+       ens-partner dE=+0.10 L1648 lvl=3552.72 E=2621.6000(4 ) RI=0.0012(4) flag=' '
+       ens-partner dE=+1.30 L1842 lvl=3746.38 E=2622.8000(29) RI=0.00059(11) flag=' '
+       ens-partner dE=-1.90 L1027 lvl=2964.21 E=2619.6000(15) RI=0.424(30) flag='*'
+       ens-partner dE=-1.91 L1423 lvl=3375.21 E=2619.5900(20) RI=0.00139(18) flag='*'
+
+[29] src L483: Ei=3271.97 (10) Eg=2927.30 (29) Ig=0.059 (4)∗ Ef=344.37 (3)
+     target: ens L1286 lvl=3271.73 E=2927.30(29) RI=0.059(4) flag='*' q=' '
+       partner dE=-0.40 src L723: Ei=3681.85 (26) Eg=2926.9 (6) Ig=0.00028 (10)∗* Ef=755.55 (3) equalIg=n
+       ens-partner dE=-0.40 L1788 lvl=3681.84 E=2926.9000(6 ) RI=0.00028(10) flag='*'
+
+[30] src L489: Ei=3284.83 (6) Eg=2529.34 (17) Ig=0.0058 (6)∗ Ef=755.55 (3)
+     target: ens L1294 lvl=3284.83 E=2529.34(17) RI=0.0058(6) flag='*' q=' '
+       partner dE=-0.11 src L599: Ei=3460.47 (11) Eg=2529.23 (21) Ig=0.003 (4) Ef=930.73 (3) equalIg=n
+       ens-partner dE=-0.11 L1532 lvl=3460.47 E=2529.2300(21) RI=0.003(4) flag=' '
+
+[31] src L534: Ei=3359.06 (10) Eg=2603.3 (6) Ig=0.086 (8)∗ Ef=755.55 (3)
+     target: ens L1393 lvl=3359.05 E=2603.30(6 ) RI=0.086(8) flag='*' q=' '
+       partner dE=+0.56 src L647: Ei=3534.75 (7) Eg=2603.86 (15) Ig=0.0139 (10) Ef=930.73 (3) equalIg=n
+       partner dE=-1.52 src L745: Ei=3725.26 (20) Eg=2601.78 (32) Ig=0.00048 (10) Ef=1123.34 (3) equalIg=n
+       ens-partner dE=+0.56 L1627 lvl=3534.75 E=2603.8600(15) RI=0.0139(10) flag=' '
+       ens-partner dE=-1.52 L1834 lvl=3725.25 E=2601.7800(32) RI=0.00048(10) flag=' '
+
+[32] src L548: Ei=3375.22 (15) Eg=2619.59 (20) Ig=0.00139 (18)∗ Ef=755.55 (3)
+     target: ens L1423 lvl=3375.21 E=2619.59(20) RI=0.00139(18) flag='*' q=' '
+       partner dE=+0.01 src L345: Ei=2964.22 (7) Eg=2619.60 (15) Ig=0.424 (30)∗* Ef=344.37 (3) equalIg=n
+       partner dE=+1.91 src L464: Ei=3237.19 (6) Eg=2621.50 (19) Ig=0.0039 (4)∗* Ef=615.51 (3) equalIg=n
+       ens-partner dE=+0.01 L1027 lvl=2964.21 E=2619.6000(15) RI=0.424(30) flag='*'
+       ens-partner dE=+1.91 L1251 lvl=3237.18 E=2621.5000(19) RI=0.0039(4) flag='*'
+
+[33] src L568: Ei=3412.32 (10) Eg=2796.30 (24) Ig=0.11 (8)∗ Ef=615.51 (3)
+     target: ens L1463 lvl=3412.32 E=2796.30(24) RI=0.11(8) flag='*' q=' '
+       partner dE=-0.30 src L426: Ei=3140.37 (7) Eg=2796.00 (15) Ig=0.11 (8) Ef=344.37 (3) equalIg=Y
+       partner dE=+0.80 src L658: Ei=3552.73 (11) Eg=2797.10 (16) Ig=0.0129 (10) Ef=755.55 (3) equalIg=n
+       partner dE=-1.10 src L746: Ei=3725.26 (20) Eg=2795.2 (4) Ig=0.00042 (10) Ef=930.73 (3) equalIg=n
+       ens-partner dE=-0.30 L1183 lvl=3140.36 E=2796.0000(15) RI=0.11(8) flag=' '
+       ens-partner dE=+0.80 L1649 lvl=3552.72 E=2797.1000(16) RI=0.0129(10) flag=' '
+       ens-partner dE=-1.10 L1835 lvl=3725.25 E=2795.2000(4 ) RI=0.00042(10) flag=' '
+
+[34] src L575: Ei=3423.53 (15) Eg=2300.5 (7) Ig=0.00045 (22)∗ Ef=1123.34 (3)
+     target: ens L1478 lvl=3423.53 E=2300.50(7 ) RI=0.00045(22) flag='*' q=' '
+       partner dE=-0.50 src L163: Ei=2299.77 (6) Eg=2300.00 (15) Ig=0.0049 (23) Ef=0 equalIg=n
+       ens-partner dE=-0.50 L707 lvl=2299.76 E=2300.0000(15) RI=0.0049(23) flag=' '
+
+[35] src L579: Ei=3429.71 (10) Eg=2306.11 (26) Ig=0.00117 (17)∗ Ef=1123.34 (3)
+     target: ens L1484 lvl=3429.7 E=2306.11(26) RI=0.00117(17) flag='*' q=' '
+       partner dE=+0.10 src L462: Ei=3237.19 (6) Eg=2306.21 (15) Ig=0.0440 (33)∗* Ef=930.73 (3) equalIg=n
+       ens-partner dE=+0.10 L1247 lvl=3237.18 E=2306.2100(15) RI=0.0440(33) flag='*'
+
+[36] src L594: Ei=3452.76 (10) Eg=2837.60 (33) Ig=0.00061 (10)∗ Ef=615.51 (3)
+     target: ens L1521 lvl=3452.75 E=2837.60(33) RI=0.00061(10) flag='*' q=' '
+       partner dE=+0.65 src L679: Ei=3593.72 (20) Eg=2838.25 (28) Ig=0.00093 (16)∗* Ef=755.55 (3) equalIg=n
+       ens-partner dE=+0.65 L1694 lvl=3593.71 E=2838.2500(28) RI=0.00093(16) flag='*'
+
+[37] src L610: Ei=3479.34 (9) Eg=2723.86 (17) Ig=0.00400 (34)∗ Ef=755.55 (3)
+     target: ens L1553 lvl=3479.33 E=2723.86(17) RI=0.00400(34) flag='*' q=' '
+       partner dE=-0.16 src L712: Ei=3654.93 (14) Eg=2723.7 (6) Ig=0.00028 (11) Ef=930.73 (3) equalIg=n
+       partner dE=-1.16 src L518: Ei=3337.99 (9) Eg=2722.70 (17) Ig=0.00278 (27) Ef=615.51 (3) equalIg=n
+       ens-partner dE=-0.16 L1761 lvl=3654.92 E=2723.7000(6 ) RI=0.00028(11) flag=' '
+       ens-partner dE=-1.16 L1360 lvl=3337.99 E=2722.7000(17) RI=0.00278(27) flag=' '
+
+[38] src L616: Ei=3484.38 (11) Eg=2728.78 (15) Ig=0.0293 (22)∗ Ef=755.55 (3)
+     target: ens L1566 lvl=3484.37 E=2728.78(15) RI=0.0293(22) flag='&' q=' ' ; ens L1770 lvl=3659.52 E=2728.78(25) RI=0.0293(22) flag='&' q=' '
+       partner dE=+0.00 src L716: Ei=3659.53 (20) Eg=2728.78 (25) Ig=0.0293 (22)∗* Ef=930.73 (3) equalIg=Y
+       partner dE=+0.42 src L268: Ei=2729.35 (5) Eg=2729.20 (15) Ig=0.0293 (22) Ef=0 equalIg=Y
+       partner dE=+1.82 src L528: Ei=3346.12 (11) Eg=2730.60 (19) Ig=0.00153 (17) Ef=615.51 (3) equalIg=n
+       ens-partner dE=+0.42 L894 lvl=2729.34 E=2729.2000(15) RI=0.0293(22) flag=' '
+       ens-partner dE=+1.82 L1380 lvl=3346.11 E=2730.6000(19) RI=0.00153(17) flag=' '
+
+[39] src L633: Ei=3508.80 (10) Eg=2893.60 (32) Ig=0.061 (4)∗ Ef=615.51 (3)
+     target: ens L1600 lvl=3508.79 E=2893.60(32) RI=0.061(4) flag='*' q=' '
+       partner dE=-0.50 src L465: Ei=3237.19 (6) Eg=2893.10 (15) Ig=0.058 (4) Ef=344.37 (3) equalIg=n
+       partner dE=+0.86 src L710: Ei=3650.01 (19) Eg=2894.46 (33) Ig=0.00036 (7) Ef=755.55 (3) equalIg=n
+       ens-partner dE=-0.50 L1252 lvl=3237.18 E=2893.1000(15) RI=0.058(4) flag=' '
+       ens-partner dE=+0.86 L1756 lvl=3650.0 E=2894.4600(33) RI=0.00036(7) flag=' '
+
+[40] src L636: Ei=3511.28 (13) Eg=2388.3 (4) Ig=0.045 (4)∗ Ef=1123.34 (3)
+     target: ens L1607 lvl=3511.27 E=2388.30(4 ) RI=0.045(4) flag='*' q=' '
+       partner dE=+0.47 src L430: Ei=3144.34 (9) Eg=2388.77 (15) Ig=0.045 (4) Ef=755.55 (3) equalIg=Y
+       partner dE=+0.60 src L271: Ei=2733.86 (8) Eg=2388.90 (15) Ig=0.045 (4) Ef=344.37 (3) equalIg=Y
+       ens-partner dE=+0.47 L1191 lvl=3144.33 E=2388.7700(15) RI=0.045(4) flag=' '
+       ens-partner dE=+0.60 L899 lvl=2733.85 E=2388.9000(15) RI=0.045(4) flag=' '
+
+[41] src L637: Ei=3511.28 (13) Eg=2580.18 (20) Ig=0.0061 (6)∗ Ef=930.73 (3)
+     target: ens L1608 lvl=3511.27 E=2580.18(20) RI=0.0061(6) flag='*' q=' '
+       partner dE=+0.06 src L733: Ei=3703.62 (11) Eg=2580.24 (18) Ig=0.00159 (18)∗* Ef=1123.34 (3) equalIg=n
+       ens-partner dE=+0.06 L1809 lvl=3703.61 E=2580.2400(18) RI=0.00159(18) flag='*'
+
+[42] src L639: Ei=3518.85 (10) Eg=2763.95 (26) Ig=0.00062 (12)∗ Ef=755.55 (3)
+     target: ens L1612 lvl=3518.84 E=2763.95(26) RI=0.00062(12) flag='*' q=' '
+       partner dE=-0.57 src L728: Ei=3694.18 (13) Eg=2763.38 (18) Ig=0.00317 (32) Ef=930.73 (3) equalIg=n
+       partner dE=+1.05 src L551: Ei=3380.57 (12) Eg=2765.00 (22) Ig=0.00125 (15) Ef=615.51 (3) equalIg=n
+       ens-partner dE=-0.57 L1798 lvl=3694.17 E=2763.3800(18) RI=0.00317(32) flag=' '
+       ens-partner dE=+1.05 L1429 lvl=3380.57 E=2765.0000(22) RI=0.00125(15) flag=' '
+
+[43] src L648: Ei=3534.75 (7) Eg=2779.38 (16) Ig=0.0352 (29)∗ Ef=755.55 (3)
+     target: ens L1628 lvl=3534.75 E=2779.38(16) RI=0.0352(29) flag='*' q=' '
+       partner dE=+0.04 src L737: Ei=3710.41 (11) Eg=2779.42 (23) Ig=0.00095 (15) Ef=930.73 (3) equalIg=n
+       partner dE=-0.98 src L418: Ei=3122.46 (9) Eg=2778.40 (15) Ig=0.0301 (29) Ef=344.37 (3) equalIg=n
+       ens-partner dE=+0.04 L1816 lvl=3710.4 E=2779.4200(23) RI=0.00095(15) flag=' '
+       ens-partner dE=-0.98 L1168 lvl=3122.46 E=2778.4000(15) RI=0.0301(29) flag=' '
+
+[44] src L656: Ei=3552.73 (11) Eg=2428.77 (23) Ig=0.097 (7)∗ Ef=1123.34 (3)
+     target: ens L1647 lvl=3552.72 E=2428.77(23) RI=0.097(7) flag='*' q=' '
+       partner dE=-0.52 src L533: Ei=3359.06 (10) Eg=2428.25 (16) Ig=0.097 (7) Ef=930.73 (3) equalIg=Y
+       partner dE=-0.87 src L294: Ei=2772.42 (6) Eg=2427.90 (15) Ig=0.097 (7) Ef=344.37 (3) equalIg=Y
+       ens-partner dE=-0.52 L1392 lvl=3359.05 E=2428.2500(16) RI=0.097(7) flag=' '
+       ens-partner dE=-0.87 L934 lvl=2772.41 E=2427.9000(15) RI=0.097(7) flag=' '
+
+[45] src L666: Ei=3572.97 (9) Eg=2641.96 (22) Ig=0.0052 (7)∗ Ef=930.73 (3)
+     target: ens L1668 lvl=3572.96 E=2641.96(22) RI=0.0052(7) flag='*' q=' '
+       partner dE=+0.24 src L230: Ei=2641.89 (8) Eg=2642.20 (18) Ig=0.0083 (8)∗* Ef=0 equalIg=n
+       ens-partner dE=+0.24 L833 lvl=2641.89 E=2642.2000(18) RI=0.0083(8) flag='*'
+
+[46] src L679: Ei=3593.72 (20) Eg=2838.25 (28) Ig=0.00093 (16)∗ Ef=755.55 (3)
+     target: ens L1694 lvl=3593.71 E=2838.25(28) RI=0.00093(16) flag='*' q=' '
+       partner dE=-0.65 src L594: Ei=3452.76 (10) Eg=2837.60 (33) Ig=0.00061 (10)∗* Ef=615.51 (3) equalIg=n
+       ens-partner dE=-0.65 L1521 lvl=3452.75 E=2837.6000(33) RI=0.00061(10) flag='*'
+
+[47] src L709: Ei=3650.01 (19) Eg=2719.30 (27) Ig=0.362 (26)∗ Ef=930.73 (3)
+     target: ens L1755 lvl=3650.0 E=2719.30(27) RI=0.362(26) flag='*' q=' '
+       partner dE=+0.60 src L257: Ei=2719.59 (6) Eg=2719.90 (15) Ig=0.353 (26) Ef=0 equalIg=n
+       partner dE=-0.60 src L387: Ei=3063.56 (13) Eg=2718.70 (21) Ig=0.085 (6) Ef=344.37 (3) equalIg=n
+       ens-partner dE=+0.60 L878 lvl=2719.58 E=2719.9000(15) RI=0.353(26) flag=' '
+       ens-partner dE=-0.60 L1100 lvl=3063.55 E=2718.7000(21) RI=0.085(6) flag=' '
+
+[48] src L715: Ei=3659.53 (20) Eg=2536.6 (4) Ig=0.465 (33)∗ Ef=1123.34 (3)
+     target: ens L1769 lvl=3659.52 E=2536.60(4 ) RI=0.465(33) flag='*' q=' '
+       partner dE=-0.40 src L314: Ei=2880.62 (5) Eg=2536.20 (15) Ig=0.465 (33) Ef=344.37 (3) equalIg=Y
+       partner dE=+0.41 src L602: Ei=3467.77 (13) Eg=2537.01 (16) Ig=0.465 (33) Ef=930.73 (3) equalIg=Y
+       ens-partner dE=-0.40 L966 lvl=2880.61 E=2536.2000(15) RI=0.465(33) flag=' '
+       ens-partner dE=+0.41 L1537 lvl=3467.76 E=2537.0100(16) RI=0.465(33) flag=' '
+
+[49] src L716: Ei=3659.53 (20) Eg=2728.78 (25) Ig=0.0293 (22)∗ Ef=930.73 (3)
+     target: ens L1566 lvl=3484.37 E=2728.78(15) RI=0.0293(22) flag='&' q=' ' ; ens L1770 lvl=3659.52 E=2728.78(25) RI=0.0293(22) flag='&' q=' '
+       partner dE=+0.00 src L616: Ei=3484.38 (11) Eg=2728.78 (15) Ig=0.0293 (22)∗* Ef=755.55 (3) equalIg=Y
+       partner dE=+0.42 src L268: Ei=2729.35 (5) Eg=2729.20 (15) Ig=0.0293 (22) Ef=0 equalIg=Y
+       partner dE=+1.82 src L528: Ei=3346.12 (11) Eg=2730.60 (19) Ig=0.00153 (17) Ef=615.51 (3) equalIg=n
+       ens-partner dE=+0.42 L894 lvl=2729.34 E=2729.2000(15) RI=0.0293(22) flag=' '
+       ens-partner dE=+1.82 L1380 lvl=3346.11 E=2730.6000(19) RI=0.00153(17) flag=' '
+
+[50] src L721: Ei=3675.49 (16) Eg=2745.1 (4) Ig=0.00054 (15)∗ Ef=930.73 (3)
+     target: ens L1782 lvl=3675.48 E=2745.10(4 ) RI=0.00054(15) flag='*' q=' '
+       partner dE=-0.90 src L402: Ei=3088.65 (7) Eg=2744.20 (15) Ig=0.087 (9) Ef=344.37 (3) equalIg=n
+       ens-partner dE=-0.90 L1133 lvl=3088.64 E=2744.2000(15) RI=0.087(9) flag=' '
+
+[51] src L723: Ei=3681.85 (26) Eg=2926.9 (6) Ig=0.00028 (10)∗ Ef=755.55 (3)
+     target: ens L1788 lvl=3681.84 E=2926.90(6 ) RI=0.00028(10) flag='*' q=' '
+       partner dE=+0.40 src L483: Ei=3271.97 (10) Eg=2927.30 (29) Ig=0.059 (4)∗* Ef=344.37 (3) equalIg=n
+       ens-partner dE=+0.40 L1286 lvl=3271.73 E=2927.3000(29) RI=0.059(4) flag='*'
+
+[52] src L733: Ei=3703.62 (11) Eg=2580.24 (18) Ig=0.00159 (18)∗ Ef=1123.34 (3)
+     target: ens L1809 lvl=3703.61 E=2580.24(18) RI=0.00159(18) flag='*' q=' '
+       partner dE=-0.06 src L637: Ei=3511.28 (13) Eg=2580.18 (20) Ig=0.0061 (6)∗* Ef=930.73 (3) equalIg=n
+       ens-partner dE=-0.06 L1608 lvl=3511.27 E=2580.1800(20) RI=0.0061(6) flag='*'
+
+[53] src L735: Ei=3703.62 (11) Eg=3088.3 (4) Ig=0.00029 (6)∗ Ef=615.51 (3)
+     target: ens L1811 lvl=3703.61 E=3088.30(4 ) RI=0.00029(6) flag='*' q=' '
+       partner dE=+0.50 src L403: Ei=3088.65 (7) Eg=3088.80 (15) Ig=0.0098 (8) Ef=0 equalIg=n
+       ens-partner dE=+0.50 L1136 lvl=3088.64 E=3088.8000(15) RI=0.0098(8) flag=' '
+
