@@ -35,8 +35,17 @@ while j < len(L) and L[j].startswith("|"):
     assert c[0].split("<br>")[0] in ("A", "B", "C", "D") and \
         all(x in ("A", "B", "C", "D") for x in c[0].split("<br>")), (j + 1, c[0])
     assert all(x in ("yes", "no") for x in c[-1].split("<br>")), (j + 1, c[-1])
+    assert c[1].endswith("*"), (j + 1, c[1])
+    for v in c[3].split("<br>"):
+        assert re.match(r"^-$|^[0-9][0-9.]*\s*\(\d+\)\*?$", v.strip()), (j + 1, v)
     rows += 1
     j += 1
 assert rows == NROW, rows
 print("inconsistent tables:", bad)
-print("evidence table columns:", len(ev), "rows:", rows)
+print("evidence table columns:", len(ev), "rows:", rows,
+      "| record E_gamma cells marked:", sum(
+          1 for l in L[hdr[0] + 2:hdr[0] + 2 + rows] if l.split("|")[2].strip().endswith("*")),
+      "| partner E_gamma subcells marked:", sum(
+          v.strip().endswith("*")
+          for l in L[hdr[0] + 2:hdr[0] + 2 + rows]
+          for v in l.split("|")[4].split("<br>")))

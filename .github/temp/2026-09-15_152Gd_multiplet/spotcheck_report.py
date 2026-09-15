@@ -64,7 +64,7 @@ def match(r):
         if abs(float(x["RI"]) - qi) > max(1e-9, 1e-5 * qi):
             continue
         ei = num(r["ei"])
-        if min(abs(x["lvl"] - ei), abs(x["lvl"] - ei + 0.01), abs(x["lvl"] - ei + 0.24)) < 0.005:
+        if min(abs(x["lvl"] - ei), abs(x["lvl"] - ei - 0.01)) < 0.005:
             out.append(x)
     return out
 
@@ -88,8 +88,8 @@ print("target flagged G-records:", len(flagged), "| flags:", sorted({f for _, f 
 print("mapping failures:", len(fail), "| reverse-check misses:", rev_miss)
 
 # ---- 3. report evidence table, re-derived independently --------------------
-hdr = ("| case | E_\u03b3 (keV) | I_\u03b3 | E_i (keV) | E_f (keV) | "
-       "partner E_\u03b3 (keV) | partner I_\u03b3 | partner E_i (keV) | partner E_f (keV) | "
+hdr = ("| case | E_\u03b3 (keV) | I_\u03b3 | partner E_\u03b3 (keV) | partner I_\u03b3 | "
+       "E_i (keV) | E_f (keV) | partner E_i (keV) | partner E_f (keV) | "
        "partner `*` |")
 assert hdr in rep, "10-column header not found"
 ncol = 10
@@ -105,13 +105,19 @@ for r in sorted(ast_rows, key=lambda z: (z["E"], z["ln"])):
     for q in sorted((q for q in rows if q is not r and abs(q["E"] - r["E"]) <= TOL),
                     key=lambda z: (abs(z["E"] - r["E"]), z["ln"])):
         want.add((r["ln"], q["ln"]))
-bycell = {(r["eg"], r["ig"], r["ei"], r["ef"]): r["ln"] for r in rows}
+bycell = {(r["eg"], r["ig"].replace(AST, "").strip(), r["ei"], r["ef"]): r["ln"] for r in rows}
 byline = {r["ln"]: r for r in rows}
 
 
 def partners(c):
-    """Expand the five stacked partner subcells into full 4-tuples + asterisk flags."""
-    parts = [v.split("<br>") for v in c[5:9]]
+    """Expand the four stacked partner subcells into full 4-tuples + asterisk flags.
+
+    Only the partner E_gamma cell carries the added marker; the I_gamma, E_i and E_f
+    cells are matched against the source text exactly as written (the Table II asterisk
+    lives in the source I_gamma cell and is therefore stripped before comparing).
+    """
+    parts = [[v.replace(AST, "").strip() for v in c[k].split("<br>")]
+             for k in (3, 4, 7, 8)]
     flags = c[9].split("<br>")
     n = len(parts[0])
     if any(len(p) != n for p in parts) or len(flags) != n:
@@ -129,6 +135,26 @@ def partners(c):
     return out
 
 
+def sub(cell, k):
+    return cell.split("<br>")[k].strip()
+
+
+def ast_marked(cell, k):
+    """True when the k-th `<br>` subcell of a (partner) E_gamma cell carries the marker."""
+    return sub(cell, k).endswith(AST)
+
+
+def check_eg_markers(c, rec):
+    """E_gamma / partner E_gamma markers must follow the Table II asterisk of the placement."""
+    if not ast_marked(c[1], 0) or not byline[rec]["ast"]:
+        fail.append(("record-eg-marker", rec, c[1]))
+    for k in range(len(c[3].split("<br>"))):
+        q = byline.get(bycell.get((sub(c[3], k).replace(AST, ""), sub(c[4], k),
+                                   sub(c[7], k), sub(c[8], k))))
+        if q is not None and ast_marked(c[3], k) != q["ast"]:
+            fail.append(("partner-eg-marker", rec, q["ln"], sub(c[3], k), q["ast"]))
+
+
 def want_case(r, q):
     """A same Eg+same Ig, B same Eg+diff Ig, C diff Eg+same Ig, D diff Eg+diff Ig."""
     same_e = abs(q["E"] - r["E"]) < 0.005
@@ -142,7 +168,7 @@ for c in rep_rows:
     if len(c) != ncol:
         fail.append(("cols", len(c), c))
         continue
-    a = bycell.get(tuple(c[1:5]))
+    a = bycell.get((c[1].replace(AST, "").strip(), c[2].replace(AST, "").strip(), c[5], c[6]))
     if a is None:
         fail.append(("unmatched-record", c))
         continue
@@ -152,6 +178,7 @@ for c in rep_rows:
         fail.append(("case-mismatch", a, c[0], exp_cls))
     if not byline[a]["ast"]:
         fail.append(("left-not-asterisked", c))
+    check_eg_markers(c, a)
     if a in rec_rows:
         fail.append(("record-duplicated", a))
     rec_rows[a] = c

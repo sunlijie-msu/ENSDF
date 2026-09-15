@@ -115,12 +115,10 @@ unp_coin = sum(1 for a in vi if a["coin"])
 
 
 def block_of(ei):
-    """Target level block for a source level energy. 0.05 keV normally; the 3271.97 level
-    needs a wider window because the target adopted 3271.73 (-0.24 keV)."""
-    for tol in (0.05, 0.30):
-        cands = [b for b in blocks if abs(b["E"] - ei) <= tol]
-        if len(cands) == 1:
-            return cands[0]
+    """Target level block for a source level energy (all 200 levels agree within 0.05 keV)."""
+    cands = [b for b in blocks if abs(b["E"] - ei) <= 0.05]
+    if len(cands) == 1:
+        return cands[0]
     raise AssertionError((ei, [(b["E"], b["ln"]) for b in cands]))
 
 
@@ -180,6 +178,12 @@ unp_near = min((abs(q["E"] - x["r"]["E"]), x["r"]["eg"], q["eg"])
 unp_same_E = sum(1 for q in unplaced
                  if any(abs(q["E"] - r["E"]) < 0.005 for r in rows))
 unp_far = max(min(abs(q["E"] - x["r"]["E"]) for q in unplaced) for x in tbl)
+
+# target block of source level 3271.97(10) (used by the report text)
+_b3271 = [b for b in blocks if b["E"] is not None and abs(b["E"] - 3271.97) < 0.005]
+assert len(_b3271) == 1, [(b["E"], b["ln"]) for b in blocks if b["E"] and abs(b["E"] - 3271.97) < 0.30]
+blk3271 = [ _b3271[0]["ln"] ] + [g["ln"] for g in _b3271[0]["g"]]
+assert len(blk3271) == 6, blk3271
 
 # ---- statistics ----------------------------------------------------------
 base = sum(1 for r in rows if any(q is not r and abs(q["E"] - r["E"]) <= TOL for q in rows))
@@ -290,8 +294,8 @@ A("")
 A("## 4. Pairing criterion and significance")
 A("")
 A("An asterisk declares an unresolved multiplet, so each asterisked row must have a partner: another row "
-  "of (near-)equal E_\u03b3 placed from a different parent level. Search window \u00b1{:.1f} keV "
-  "(the target energies come from the GLSC refit, offset \u22120.01 keV for 158 of 200 levels).".format(TOL))
+  "of (near-)equal E_\u03b3 placed from a different parent level. Search window \u00b1{:.1f} keV, applied "
+  "to the E_\u03b3 values of Table II itself, so no target-side level offset enters the pairing.".format(TOL))
 A("")
 A("- **53/53** asterisked rows have \u22651 partner within \u00b1{:.1f} keV; the largest separation needed "
   "to reach a nearest partner is {:.2f} keV ({:.2f} vs {:.2f}), and the widest (record, partner) pair "
@@ -378,33 +382,41 @@ A("## 7. Per-record evidence")
 A("")
 A("Exactly one row per asterisked Table II row (**53 rows**), 10 columns. All multiplet partners within "
   "\u00b1{:.1f} keV are listed: {} rows have one partner, {} have two. In the two-partner rows the partner "
-  "columns carry both values as **stacked subcells** (separated by `<br>`), same order in all five partner "
-  "columns. All values are copied character-for-character from `2026OSAA_CT11035_152Gd_Table_II.md`, the "
-  "`*` I\u03b3 marker included; `0` is the ground state. `case` is the pair class of \u00a75 (A = same "
-  "E_\u03b3 + same I\u03b3, B = same E_\u03b3 + different I\u03b3, C = different E_\u03b3 + same I\u03b3, "
-  "D = different E_\u03b3 + different I\u03b3), stacked one letter per partner when the two partners are of "
-  "different classes. `partner`\u2009`*` is a separate question and reports whether the partner placement "
-  "itself carries the Table II asterisk footnote: yes for {} of the 53 rows, no for the other {} "
-  "(\u00a78.1). The {} unplaced G-records of the target contribute no partner (\u00a74), so this table is "
-  "complete.".format(
+  "columns carry both values as **stacked subcells** (separated by `<br>`), same order in all four partner "
+  "value columns. All values are copied character-for-character from `2026OSAA_CT11035_152Gd_Table_II.md`; "
+  "`0` is the ground state. The columns run record then partner: `E_\u03b3`\u2009/`I_\u03b3` followed by "
+  "`partner E_\u03b3`\u2009/`partner I_\u03b3`, and `E_i`\u2009/`E_f` followed by `partner E_i`\u2009/"
+  "`partner E_f`. `case` is the pair class of \u00a75 (A = same E_\u03b3 + same I\u03b3, B = same E_\u03b3 "
+  "+ different I\u03b3, C = different E_\u03b3 + same I\u03b3, D = different E_\u03b3 + different "
+  "I\u03b3), stacked one letter per partner when the two partners are of different classes. `partner`\u2009"
+  "`*` is a separate question and reports whether the partner placement itself carries the Table II "
+  "asterisk footnote: yes for {} of the 53 rows, no for the other {} (\u00a78.1). The {} unplaced G-records "
+  "of the target contribute no partner (\u00a74), so this table is complete.".format(
       TOL, 53 - n_two, n_two, rows_with_ast_partner, 53 - rows_with_ast_partner, len(unplaced)))
 A("")
-A("| case | E_\u03b3 (keV) | I_\u03b3 | E_i (keV) | E_f (keV) | partner E_\u03b3 (keV) | partner I_\u03b3 | partner E_i (keV) | partner E_f (keV) | partner `*` |")
+A("Table II writes its asterisk inside the I\u03b3 cell; here the marker is moved to the E_\u03b3 value it "
+  "qualifies, so `E_\u03b3` and `partner E_\u03b3` are asterisked exactly when that placement is "
+  "asterisked in Table II (all 53 record cells, {} of the partner cells), and the `I_\u03b3` and "
+  "`partner I_\u03b3` cells give the plain source value with that trailing `*` removed. Each asterisk "
+  "therefore appears exactly once per placement, in its E_\u03b3 column.".format(rows_with_ast_partner))
+A("")
+A("| case | E_\u03b3 (keV) | I_\u03b3 | partner E_\u03b3 (keV) | partner I_\u03b3 | E_i (keV) | E_f (keV) | partner E_i (keV) | partner E_f (keV) | partner `*` |")
 A("|---|---|---|---|---|---|---|---|---|---|")
 for x in tbl:
     ps = x["pairs"] or [None]
-    cellsx = []
-    for key in ("eg", "ig", "ei", "ef"):
-        cellsx.append("<br>".join("-" if p is None else p["q"][key] for p in ps))
-    cellsx.append("<br>".join("-" if p is None else ("yes" if p["q"]["ast"] else "no") for p in ps))
+    peg = "<br>".join("-" if p is None else p["q"]["eg"] + (AST if p["q"]["ast"] else "") for p in ps)
+    pig = "<br>".join("-" if p is None else p["q"]["ig"].replace("*", "").strip() for p in ps)
+    pei = "<br>".join("-" if p is None else p["q"]["ei"] for p in ps)
+    pef = "<br>".join("-" if p is None else p["q"]["ef"] for p in ps)
+    pfl = "<br>".join("-" if p is None else ("yes" if p["q"]["ast"] else "no") for p in ps)
     A("| {} | {} | {} | {} | {} | {} | {} | {} | {} | {} |".format(
-        "<br>".join(x["cls"]) or "-", x["r"]["eg"], x["r"]["ig"], x["r"]["ei"], x["r"]["ef"], *cellsx))
+        "<br>".join(x["cls"]) or "-", x["r"]["eg"] + (AST if x["r"]["ast"] else ""),
+        x["r"]["ig"].replace("*", "").strip(), peg, pig, x["r"]["ei"], x["r"]["ef"], pei, pef, pfl))
 A("")
-A("The first five columns are the asterisked placement, the last five its partner(s): one value for a "
-  "single-partner row, two stacked values for a two-partner row. A row whose partner column reads `no` is a "
-  "one-sided asterisk (\u00a78.1: the partner placement is unmarked in Table II, which is why the target "
-  "keeps one blank column 77 there); a pair whose two E_\u03b3 differ by more than the sum of their quoted "
-  "uncertainties is listed in \u00a78.4.")
+A("One value per column for a single-partner row, two stacked values for a two-partner row. A row whose "
+  "`partner`\u2009`*` reads `no` is a one-sided asterisk (\u00a78.1: the partner placement is unmarked in "
+  "Table II, which is why the target keeps one blank column 77 there); a pair whose two E_\u03b3 differ by "
+  "more than the sum of their quoted uncertainties is listed in \u00a78.4.")
 A("")
 A("## 8. Inconsistencies / questions for the 2026OSAA authors")
 A("")
@@ -427,12 +439,13 @@ A("4. **Near-degenerate pairs.** {} of the 53 rows differ from their nearest par
   "*doublets of different transitions*, the asterisk is appropriate; if the authors intend *one transition "
   "placed twice*, the E_\u03b3 values should agree and the flag would have to carry the intensity "
   "relation.".format(n_diff, incons, incons_txt))
-A("5. **Level 3271.97(10)** is the only source level whose target energy differs by more than 0.05 keV "
-  "(target 3271.73(12), \u0394 = \u22120.24 keV); the other 199 levels agree within \u22120.02\u20130.00 keV "
-  "(158 of them at \u22120.01 keV, the GLSC refit offset). The source's own ground-state transition "
-  "3272.40(16) implies 3272.40(16) \u2014 neither value. Please confirm the adopted energy. All five "
+A("5. **Level 3271.97(10)** \u2014 the target now adopts the source energy; all 200 source levels agree with "
+  "the target (189 exactly, 11 within +0.01 keV, none beyond 0.05 keV). The earlier target carried the GLSC "
+  "refit offset (\u22120.01 keV for 158 levels) and 3271.73(12) for this level (\u0394 = \u22120.24 keV); both "
+  "were corrected separately of this flag work, in the target commit `342aaa6` (\"Implement new feature "
+  "\u2026\", 172 lines, level energies only), so no level-energy question remains here. All five "
   "\u03b3 rays of this level, including the asterisked 2927.30, sit in the single target block "
-  "(ens lines 1283\u20131287).")
+  "(ens lines {}\u2013{}).".format(blk3271[0], blk3271[-1]))
 A("6. **Superseded E_\u03b3 asterisks.** Table I marked 16 E_\u03b3 cells (all with E_i \u2265 3479.34) that "
   "Table II no longer marks; if those were multiplet markers, Table II has lost that information.")
 A("7. **Unplaced I\u03b3 notation.** {} of the {} Table VI peaks are decimal in the source but `E`-notation "
@@ -459,8 +472,13 @@ A("- Full source\u2013target rematch, independent of the flag work: all 751 Tabl
   "the 751 placed records were matched 1:1, and no Table II E_\u03b3 occurs among the 348 unplaced records.")
 A("- \u00a77 evidence table re-derived from scratch by `spotcheck_report.py`, using only Table II and the "
   "target file: each of the {} rows decodes to a pair of source rows, the expected pair set is reproduced "
-  "exactly (0 missing, 0 extra), every left-hand row is an asterisked source row, and every cell equals the "
-  "source cell text character-for-character.".format(sum(len(x["pairs"]) for x in tbl)))
+  "exactly (0 missing, 0 extra), every left-hand row is an asterisked source row, every cell equals the "
+  "source cell text character-for-character, and the added E_\u03b3 markers equal the Table II asterisk of "
+  "the placement (53 record cells, {} partner cells).".format(
+      sum(len(x["pairs"]) for x in tbl), rows_with_ast_partner))
+A("- Level-energy audit (`level_offsets.py`): all 200 source levels agree with the target L-record "
+  "energies \u2014 189 exactly, 11 within +0.01 keV, 0 beyond 0.05 keV (the earlier GLSC refit offset and "
+  "3271.73 for source 3271.97 were corrected in target commit `342aaa6`, outside this flag work).")
 A("- 15% spot check (8 of 53 records, deterministic sample): the \u00a77 rows of each sampled record equal "
   "its complete partner set, and the mapped target G-record matches in E_\u03b3, uncertainty, I\u03b3, DRI, "
   "parent level and column 77 \u2014 0 failures.")
@@ -473,8 +491,10 @@ A("- Unplaced audit (`Table_VI_3rd.md` \u2194 the {} target unplaced G-records):
 A("- Reverse check: all 53 flagged target G-records are accounted for by the audit; 0 misses.")
 A("- Markdown render check (`check_table_pipes.py`): every table is column-consistent and \u00a77 holds "
   "10 columns \u00d7 {} rows (one per asterisked row, {} partner values in total), the `case` and "
-  "`partner *` columns agreeing row-by-row with the re-derived classes and with the source `*` marker.".format(
-      len(tbl), sum(len(x["pairs"]) for x in tbl)))
+  "`partner *` columns agreeing row-by-row with the re-derived classes and with the source `*` marker, "
+  "and the E_\u03b3 columns carrying the marker on exactly the {} record and {} partner placements that "
+  "Table II asterisks.".format(len(tbl), sum(len(x["pairs"]) for x in tbl), len(tbl),
+                                rows_with_ast_partner))
 A("")
 open(OUT, "w", encoding="utf-8", newline="\r\n").write("\n".join(L) + "\n")
 print("written:", OUT, "lines:", len(L))

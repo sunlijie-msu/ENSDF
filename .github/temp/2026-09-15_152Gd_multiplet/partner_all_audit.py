@@ -79,13 +79,18 @@ with open(REP, encoding="utf-8") as fh:
             break
         if insec and line.startswith("|"):
             c = cells(line)
-            if c and NUM.match(c[0].strip()):
+            if c and c[0].split("<br>")[0] in ("A", "B", "C", "D"):
                 sec.append((ln, c))
 print("\nsection 7 data rows: {}".format(len(sec)))
 
 
+def plain(t):
+    return t.replace("*", "").strip()
+
+
 def src_tuple(r, q):
-    return (r["eg"], r["ig"], r["ei"], r["ef"], q["eg"], q["ig"], q["ei"], q["ef"])
+    return (r["eg"], plain(r["ig"]), r["ei"], r["ef"],
+            q["eg"], plain(q["ig"]), q["ei"], q["ef"])
 
 
 src_pairs = [src_tuple(r, q) for r in astro for q in multi[r["ln"]]]
@@ -94,10 +99,17 @@ maxp = 1
 rep_pairs = []
 print("\nsection 7 columns: {} | rows: {}".format(len(sec[0][1]) if sec else 0, len(sec)))
 
+REC = (1, 2, 5, 6)          # record E_gamma, I_gamma, E_i, E_f
+PART = (3, 4, 7, 8)         # partner E_gamma, I_gamma, E_i, E_f
+
+
+def strip(c):
+    return [v.replace("*", "").strip() for v in c]
+
 
 def expand(c):
-    """Split the five stacked partner subcells into 4-tuples."""
-    parts = [v.split("<br>") for v in c[5:9]]
+    """Split the four stacked partner subcells into 4-tuples (markers stripped)."""
+    parts = [strip([v for v in c[k].split("<br>")]) for k in PART]
     n = len(parts[0])
     if any(len(p) != n for p in parts):
         print("CELL-COUNT MISMATCH", c)
@@ -107,7 +119,7 @@ def expand(c):
 
 for ln, c in sec:
     for g in expand(c):
-        rep_pairs.append(tuple(c[1:5]) + g)
+        rep_pairs.append(tuple(c[k].replace("*", "").strip() for k in REC) + g)
 print("expected pairs: {} | report pairs: {}".format(len(src_pairs), len(rep_pairs)))
 miss = sorted(p for p in src_pairs if p not in rep_pairs)
 extra = sorted(p for p in rep_pairs if p not in src_pairs)
@@ -122,8 +134,9 @@ bad = 0
 multirec = 0
 for r in astro:
     p = multi[r["ln"]]
-    key = (r["eg"], r["ig"], r["ei"], r["ef"])
-    hits = [c for _, c in sec if tuple(c[1:5]) == key]
+    key = (r["eg"], plain(r["ig"]), r["ei"], r["ef"])
+    hits = [c for _, c in sec
+            if tuple(c[k].replace("*", "").strip() for k in REC) == key]
     ngot = sum(len(expand(c)) for c in hits)
     if len(hits) != 1 or ngot != len(p):
         bad += 1

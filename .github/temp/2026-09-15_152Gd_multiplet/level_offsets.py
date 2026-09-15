@@ -1,3 +1,4 @@
+import os
 """Level-energy offset statistics: source Table II Ei vs target .ens L-record."""
 import re
 from collections import Counter
@@ -5,7 +6,7 @@ from collections import Counter
 AST = "\u2217"
 SRC = r"D:\X\ND\ENSDF\XUNDL\2026OSAA_CT11035_152Gd_Table_II.md"
 ENS = r"D:\X\ND\ENSDF\XUNDL\2026OSAA_CT11035_152Gd.ens"
-OUT = open(r"D:\X\ND\ENSDF\.github\temp\level_offsets.txt", "w", encoding="utf-8")
+OUT = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "level_offsets.txt"), "w", encoding="utf-8")
 
 
 def num(txt):
