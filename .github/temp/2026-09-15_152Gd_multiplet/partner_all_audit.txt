@@ -1,0 +1,67 @@
+﻿source rows parsed: 751 | asterisked rows: 53
+partner-count histogram (partners -> records): [(1, 40), (2, 13)]
+total pairs: 66
+
+--- records with MORE THAN ONE partner ---
+row 249  Eg=2709.50 (15)  Ig=0.308 (22)*  Ei=2709.52 (7)
+    partner row 384  Eg=2709.50 (18)  Ig=0.308 (22)*  Ei=3053.99 (13)  dE=+0.00
+    partner row 511  Eg=2708.80 (16)  Ig=0.308 (22)  Ei=3324.81 (8)  dE=-0.70
+row 298  Eg=2184.80 (32)  Ig=0.402 (29)*  Ei=2800.33 (32)
+    partner row 200  Eg=2185.00 (15)  Ig=0.402 (29)  Ei=2529.65 (7)  dE=+0.20
+    partner row 415  Eg=2185.33 (17)  Ig=0.402 (29)  Ei=3115.77 (13)  dE=+0.53
+row 355  Eg=2384.30 (26)  Ig=0.206 (15)*  Ei=2999.68 (8)
+    partner row 267  Eg=2384.70 (15)  Ig=0.204 (15)  Ei=2729.35 (5)  dE=+0.40
+    partner row 630  Eg=2383.37 (21)  Ig=0.00299 (32)  Ei=3506.67 (20)  dE=-0.93
+row 384  Eg=2709.50 (18)  Ig=0.308 (22)*  Ei=3053.99 (13)
+    partner row 249  Eg=2709.50 (15)  Ig=0.308 (22)*  Ei=2709.52 (7)  dE=+0.00
+    partner row 511  Eg=2708.80 (16)  Ig=0.308 (22)  Ei=3324.81 (8)  dE=-0.70
+row 568  Eg=2796.30 (24)  Ig=0.11 (8)*  Ei=3412.32 (10)
+    partner row 426  Eg=2796.00 (15)  Ig=0.11 (8)  Ei=3140.37 (7)  dE=-0.30
+    partner row 658  Eg=2797.10 (16)  Ig=0.0129 (10)  Ei=3552.73 (11)  dE=+0.80
+row 616  Eg=2728.78 (15)  Ig=0.0293 (22)*  Ei=3484.38 (11)
+    partner row 716  Eg=2728.78 (25)  Ig=0.0293 (22)*  Ei=3659.53 (20)  dE=+0.00
+    partner row 268  Eg=2729.20 (15)  Ig=0.0293 (22)  Ei=2729.35 (5)  dE=+0.42
+row 633  Eg=2893.60 (32)  Ig=0.061 (4)*  Ei=3508.80 (10)
+    partner row 465  Eg=2893.10 (15)  Ig=0.058 (4)  Ei=3237.19 (6)  dE=-0.50
+    partner row 710  Eg=2894.46 (33)  Ig=0.00036 (7)  Ei=3650.01 (19)  dE=+0.86
+row 636  Eg=2388.3 (4)  Ig=0.045 (4)*  Ei=3511.28 (13)
+    partner row 430  Eg=2388.77 (15)  Ig=0.045 (4)  Ei=3144.34 (9)  dE=+0.47
+    partner row 271  Eg=2388.90 (15)  Ig=0.045 (4)  Ei=2733.86 (8)  dE=+0.60
+row 648  Eg=2779.38 (16)  Ig=0.0352 (29)*  Ei=3534.75 (7)
+    partner row 737  Eg=2779.42 (23)  Ig=0.00095 (15)  Ei=3710.41 (11)  dE=+0.04
+    partner row 418  Eg=2778.40 (15)  Ig=0.0301 (29)  Ei=3122.46 (9)  dE=-0.98
+row 656  Eg=2428.77 (23)  Ig=0.097 (7)*  Ei=3552.73 (11)
+    partner row 533  Eg=2428.25 (16)  Ig=0.097 (7)  Ei=3359.06 (10)  dE=-0.52
+    partner row 294  Eg=2427.90 (15)  Ig=0.097 (7)  Ei=2772.42 (6)  dE=-0.87
+row 709  Eg=2719.30 (27)  Ig=0.362 (26)*  Ei=3650.01 (19)
+    partner row 257  Eg=2719.90 (15)  Ig=0.353 (26)  Ei=2719.59 (6)  dE=+0.60
+    partner row 387  Eg=2718.70 (21)  Ig=0.085 (6)  Ei=3063.56 (13)  dE=-0.60
+row 715  Eg=2536.6 (4)  Ig=0.465 (33)*  Ei=3659.53 (20)
+    partner row 314  Eg=2536.20 (15)  Ig=0.465 (33)  Ei=2880.62 (5)  dE=-0.40
+    partner row 602  Eg=2537.01 (16)  Ig=0.465 (33)  Ei=3467.77 (13)  dE=+0.41
+row 716  Eg=2728.78 (25)  Ig=0.0293 (22)*  Ei=3659.53 (20)
+    partner row 616  Eg=2728.78 (15)  Ig=0.0293 (22)*  Ei=3484.38 (11)  dE=+0.00
+    partner row 268  Eg=2729.20 (15)  Ig=0.0293 (22)  Ei=2729.35 (5)  dE=+0.42
+
+section 7 data rows: 53
+
+section 7 columns: 8 | rows: 53
+expected pairs: 66 | report pairs: 66
+missing from report: 0 | extra in report: 0
+
+--- per-record expansion check ---
+OK  row 249  Eg=2709.50 (15)   partners=2  2709.50 | 2708.80
+OK  row 298  Eg=2184.80 (32)   partners=2  2185.00 | 2185.33
+OK  row 355  Eg=2384.30 (26)   partners=2  2384.70 | 2383.37
+OK  row 384  Eg=2709.50 (18)   partners=2  2709.50 | 2708.80
+OK  row 568  Eg=2796.30 (24)   partners=2  2796.00 | 2797.10
+OK  row 616  Eg=2728.78 (15)   partners=2  2728.78 | 2729.20
+OK  row 633  Eg=2893.60 (32)   partners=2  2893.10 | 2894.46
+OK  row 636  Eg=2388.3 (4)     partners=2  2388.77 | 2388.90
+OK  row 648  Eg=2779.38 (16)   partners=2  2779.42 | 2778.40
+OK  row 656  Eg=2428.77 (23)   partners=2  2428.25 | 2427.90
+OK  row 709  Eg=2719.30 (27)   partners=2  2719.90 | 2718.70
+OK  row 715  Eg=2536.6 (4)     partners=2  2536.20 | 2537.01
+OK  row 716  Eg=2728.78 (25)   partners=2  2728.78 | 2729.20
+two-partner records: 13 | rows/expansion mismatches: 0
+report rows: 53 | asterisked source rows: 53

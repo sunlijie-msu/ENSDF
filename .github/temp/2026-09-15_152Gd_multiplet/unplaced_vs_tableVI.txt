@@ -1,0 +1,30 @@
+﻿Table VI_3rd data rows : 348
+  coincidence '*' rows : 314
+  rows with I_gamma    : 169
+  ascending energy     : True
+target unplaced G recs : 348 lines 46 - 393
+  col 77 non-blank     : 314 [' ', 'X']
+
+--- Table VI_3rd vs target unplaced G-records ---
+row-count match        : True (VI 348 vs ens 348)
+mismatches             : 4
+    ('VI', 343, 339, 'RI', '0.000182', '1.82E-4')
+    ('VI', 348, 344, 'RI', '0.000213', '2.13E-4')
+    ('VI', 349, 345, 'RI', '0.000131', '1.31E-4')
+    ('VI', 350, 346, 'RI', '0.000253', '2.53E-4')
+coincidence->col77 X rows matched 1:1 : 348 / 348
+
+--- unplaced gamma as partner of an asterisked Table II row ---
+asterisked rows        : 53
+  asterisked rows with unplaced partner within 0.005 keV : 0
+  asterisked rows with unplaced partner within   0.1 keV : 0
+  asterisked rows with unplaced partner within   0.5 keV : 0
+  asterisked rows with unplaced partner within   1.0 keV : 0
+  asterisked rows with unplaced partner within   2.0 keV : 2
+  closest overall      : 94.180 keV  (2728.78 (15) vs unplaced 2634.6)
+  nearest-distance range: 2.00 - 94.18 keV
+
+--- unplaced internal duplicates (same E_gamma twice) ---
+  unplaced pairs with identical E_gamma: 0 []
+
+FAILS: 4

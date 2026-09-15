@@ -1,86 +1,199 @@
-﻿"""Independent 15% spot check of the multiplet report table against Table II and the .ens target."""
+"""Independent audit of the multiplet report's per-record evidence table.
+
+Re-derives, from Table II and the .ens target alone, the asterisked rows, their
+partner sets and the target G-record mapping, then compares all of that with the
+table actually written to the report.  Nothing is trusted from the generator.
+"""
 import re
 
-AST = "\u2217"
+TOL = 1.0
+AST = "*"
 MD = r"D:\X\ND\ENSDF\XUNDL\2026OSAA_CT11035_152Gd_Multiplet_Gammas.md"
 SRC = r"D:\X\ND\ENSDF\XUNDL\2026OSAA_CT11035_152Gd_Table_II.md"
 ENS = r"D:\X\ND\ENSDF\XUNDL\2026OSAA_CT11035_152Gd.ens"
-OUT = r"D:\X\ND\ENSDF\.github\temp\2026-09-15_152Gd_multiplet\spotcheck_report.txt"
-OUT2 = r"D:\X\ND\ENSDF\.github\temp\2026-09-15_152Gd_multiplet\spotcheck_report_encoded.txt"
+DIR = r"D:\X\ND\ENSDF\.github\temp\2026-09-15_152Gd_multiplet"
+OUT = DIR + r"\spotcheck_report.txt"
+OUT2 = DIR + r"\spotcheck_report_encoded.txt"
 
-rep = [l.rstrip("\r") for l in open(MD, encoding="utf-8")]
-src = [l.rstrip("\r") for l in open(SRC, encoding="utf-8")]
-ens = [l.rstrip("\r") for l in open(ENS, encoding="ascii", errors="ignore")]
+rep = [l.rstrip("\r\n") for l in open(MD, encoding="utf-8")]
+src = [l.rstrip("\r\n") for l in open(SRC, encoding="utf-8")]
+ens = [l.rstrip("\r\n") for l in open(ENS, encoding="ascii", errors="ignore")]
 
-tbl = {}
-for l in rep:
-    m = re.match(r"\| (\d+) \| (\d+) \| (.+?) \| (.+?) \| (.+?) \| (.+?) \| ([\d/]+) \| `(.)` \| ([A-D]) \| (.*?) \|$", l)
-    if m:
-        tbl[int(m.group(1))] = dict(ln=int(m.group(2)), ei=m.group(3), eg=m.group(4), ig=m.group(5),
-                                    ef=m.group(6), ens=m.group(7), flag=m.group(8), cls=m.group(9))
-assert len(tbl) == 53, len(tbl)
+# ---- 1. source rows --------------------------------------------------------
+rows = []
+for i, line in enumerate(src, 1):
+    if not line.startswith("|") or line.startswith("| :") or "E_i" in line:
+        continue
+    c = [x.strip() for x in line.strip("|").split("|")]
+    if len(c) < 5:
+        continue
+    rows.append(dict(ln=i, ei=c[0], eg=c[1], ig=c[2], ef=c[3],
+                     E=float(re.match(r"-?\d+(?:\.\d+)?", c[1]).group(0)), ast=AST in c[2]))
+assert len(rows) == 751, len(rows)
+ast_rows = [r for r in rows if r["ast"]]
+print("source data rows:", len(rows), "| asterisked rows:", len(ast_rows))
 
-sample = [1, 8, 16, 23, 31, 38, 46, 53]  # deterministic 15% sample (8 of 53)
-fail = []
-enc = []
+# ---- 2. target G-records ---------------------------------------------------
+L = [l.ljust(80) for l in ens]
+placed, lvl_ln = [], None
+for i, e in enumerate(L, 1):
+    if e[6] == " " and e[7] == "L":
+        lvl_ln = i
+    if e[5] == " " and e[6] == " " and e[7] == "G" and lvl_ln:
+        placed.append(dict(ln=i, E=float(e[9:19]), DE=e[19:21].strip(), RI=e[22:29].strip(),
+                           DRI=e[29:31].strip(), flag=e[76], lvl=float(L[lvl_ln - 1][9:19]),
+                           lvl_ln=lvl_ln))
+allg = sum(1 for e in L if e[5] == " " and e[6] == " " and e[7] == "G")
+assert len(placed) == 751, (len(placed), allg)
+print("target G-records:", allg, "(placed", len(placed), ")")
+
+
+def num(txt):
+    return float(re.match(r"-?\d+(?:\.\d+)?", txt).group(0))
+
+
+def match(r):
+    """Mapped target G-record for one source row (parent level, then E_gamma and I_gamma)."""
+    out = []
+    for x in placed:
+        if abs(x["E"] - r["E"]) >= 0.005 or not x["RI"]:
+            continue
+        qi = num(r["ig"].replace(AST, "").strip())
+        if abs(float(x["RI"]) - qi) > max(1e-9, 1e-5 * qi):
+            continue
+        ei = num(r["ei"])
+        if min(abs(x["lvl"] - ei), abs(x["lvl"] - ei + 0.01), abs(x["lvl"] - ei + 0.24)) < 0.005:
+            out.append(x)
+    return out
+
+
+fail, enc, rev = [], [], {}
+for k, r in enumerate(sorted(ast_rows, key=lambda z: (z["E"], z["ln"])), 1):
+    m = match(r)
+    if len(m) != 1:
+        fail.append(("map", k, r["ln"], [(x["ln"], x["E"], x["RI"]) for x in m]))
+        continue
+    rev[m[0]["ln"]] = (k, r["ln"])
+    if m[0]["flag"] not in "*&@":
+        fail.append(("flag", k, r["ln"], m[0]["ln"], repr(m[0]["flag"])))
+    enc.append("row {:<3} src line {:<5} Ei {:<12} Eg {:<14} Ig {:<16} -> ens line {:<5} "
+               "(lvl {}) flag {!r}".format(k, r["ln"], r["ei"], r["eg"], r["ig"],
+                                           m[0]["ln"], m[0]["lvl"], m[0]["flag"]))
+
+flagged = [(x["ln"], x["flag"]) for x in placed if x["flag"] in "*&@"]
+rev_miss = [(i, f) for i, f in flagged if i not in rev]
+print("target flagged G-records:", len(flagged), "| flags:", sorted({f for _, f in flagged}))
+print("mapping failures:", len(fail), "| reverse-check misses:", rev_miss)
+
+# ---- 3. report evidence table, re-derived independently --------------------
+hdr = ("| E_\u03b3 (keV) | I_\u03b3 | E_i (keV) | E_f (keV) | "
+       "partner E_\u03b3 (keV) | partner I_\u03b3 | partner E_i (keV) | partner E_f (keV) |")
+assert hdr in rep, "8-column header not found"
+ncol = 8
+rep_rows, i = [], rep.index(hdr) + 2
+while i < len(rep) and rep[i].startswith("|"):
+    rep_rows.append([c.strip() for c in rep[i].strip("|").split("|")])
+    i += 1
+print("report evidence rows:", len(rep_rows), "| columns:",
+      len(rep_rows[0]) if rep_rows else 0)
+
+want = set()
+for r in sorted(ast_rows, key=lambda z: (z["E"], z["ln"])):
+    for q in sorted((q for q in rows if q is not r and abs(q["E"] - r["E"]) <= TOL),
+                    key=lambda z: (abs(z["E"] - r["E"]), z["ln"])):
+        want.add((r["ln"], q["ln"]))
+bycell = {(r["eg"], r["ig"], r["ei"], r["ef"]): r["ln"] for r in rows}
+byline = {r["ln"]: r for r in rows}
+
+
+def partners(c):
+    """Expand the four stacked partner subcells into full 4-tuples."""
+    parts = [v.split("<br>") for v in c[4:8]]
+    n = len(parts[0])
+    if any(len(p) != n for p in parts):
+        fail.append(("partner-cell-count-mismatch", c))
+        return []
+    return [tuple(p[k] for p in parts) for k in range(n)]
+
+
+got = set()
+rec_rows = {}
+for c in rep_rows:
+    if len(c) != ncol:
+        fail.append(("cols", len(c), c))
+        continue
+    a = bycell.get(tuple(c[0:4]))
+    if a is None:
+        fail.append(("unmatched-record", c))
+        continue
+    if not byline[a]["ast"]:
+        fail.append(("left-not-asterisked", c))
+    if a in rec_rows:
+        fail.append(("record-duplicated", a))
+    rec_rows[a] = c
+    for g in partners(c):
+        b = bycell.get(g)
+        if b is None:
+            fail.append(("unmatched-partner", c, g))
+            continue
+        if a == b:
+            fail.append(("self-pair", c))
+        got.add((a, b))
+print("pairs expected:", len(want), "| in report:", len(got),
+      "| missing:", len(want - got), "| extra:", len(got - want))
+for p in sorted(want - got):
+    fail.append(("missing-pair", p))
+for p in sorted(got - want):
+    fail.append(("extra-pair", p))
+for a, c in rec_rows.items():
+    exp = len([q for q in rows if q is not byline[a] and abs(q["E"] - byline[a]["E"]) <= TOL])
+    if len(partners(c)) != exp:
+        fail.append(("record-partner-count", a, len(partners(c)), exp))
+print("rows: {} | asterisked rows: {} | two-partner rows: {}".format(
+    len(rec_rows), len(ast_rows),
+    sum(1 for a, c in rec_rows.items() if len(partners(c)) > 1)))
+if len(rec_rows) != len(ast_rows):
+    fail.append(("row-count", len(rec_rows), len(ast_rows)))
+
+# ---- 4. deterministic 15% spot check (8 of 53 records) ---------------------
+sample = [1, 8, 16, 23, 31, 38, 46, 53]
+sast = sorted(ast_rows, key=lambda z: (z["E"], z["ln"]))
 for k in sample:
-    x = tbl[k]
-    s = src[x["ln"] - 1]
-    c = [f.strip() for f in s.strip("|").split("|")]
-    # (a) source row: line number, Ei, Eg, Ig(asterisked), Ef  -- text compared after stripping the asterisk
-    ok_src = (c[0] == x["ei"] and c[1] == x["eg"] and c[2].replace(AST, "").strip() == x["ig"]
-              and c[3] == x["ef"] and AST in c[2])
-    # (b) target record: line, NUCID/type, E field, RI+DRI field, column 77
-    for ln in x["ens"].split("/"):
-        e = ens[int(ln) - 1].ljust(80)
-        eg_val, eg_unc = re.match(r"(-?\d+(?:\.\d+)?)\s*\((\d+)\)", x["eg"]).groups()
-        ig_val, ig_unc = re.match(r"([\d.]+)\s*\((\d+)\)", x["ig"]).groups()
-        same_eg = [t for t in tbl.values()
-                   if abs(float(re.match(r"-?\d+(?:\.\d+)?", t["eg"]).group(0)) - float(eg_val)) < 0.005]
-        uncs = {re.match(r"(-?\d+(?:\.\d+)?)\s*\((\d+)\)", t["eg"]).group(2) for t in same_eg}
-        ok_ens = (e[5] == " " and e[6] == " " and e[7] == "G" and e[9:19].strip() == eg_val
-                  and e[19:21].strip() in uncs and e[22:29].strip() == ig_val
-                  and e[29:31].strip() == ig_unc and e[76] == x["flag"])
-        # (c) parent level energy: target = Ei (offset 0.00) or Ei - 0.01 (GLSC refit);
-        #     3271.97 -> 3271.73; class-A twin lines sit under the twin row's parent level
-        j = int(ln) - 1
-        while not (ens[j].ljust(80)[5] == " " and ens[j].ljust(80)[7] == "L"):
-            j -= 1
-        lvl = float(ens[j].ljust(80)[9:19])
-        bases = []
-        for t in same_eg:
-            bases.append(float(re.match(r"-?\d+(?:\.\d+)?", t["ei"]).group(0)))
-        if any(abs(b - 3271.97) < 0.02 for b in bases):
-            bases.append(3271.73)
-        ok_lvl = any(min(abs(lvl - b), abs(lvl - b + 0.01), abs(lvl - b + 0.02)) < 0.005 for b in bases)
-        if not (ok_src and ok_ens and ok_lvl):
-            fail.append((k, ok_src, ok_ens, ok_lvl, repr(s), repr(ens[int(ln) - 1][:80]),
-                         repr(ens[j][:80]), x))
-        enc.append("row {:<3} src line {:<4} ens line {:<9} E_lvl {:<10} flag {!r} | {} {} {}".format(
-            k, x["ln"], x["ens"], lvl, e[76], "SRC-OK" if ok_src else "SRC-FAIL",
-            "ENS-OK" if ok_ens else "ENS-FAIL", "LVL-OK" if ok_lvl else "LVL-FAIL"))
+    r = sast[k - 1]
+    m = match(r)
+    ok_map = len(m) == 1
+    rp = [rec_rows[r["ln"]]] if r["ln"] in rec_rows else []
+    exp_ln = sorted(q["ln"] for q in rows if q is not r and abs(q["E"] - r["E"]) <= TOL)
+    got_ln = sorted(bycell[g] for c in rp for g in partners(c))
+    ok_rows = got_ln == exp_ln
+    ok_part = all(abs(num(g[0]) - r["E"]) <= TOL and g[0] == byline[bycell[g]]["eg"]
+                  for c in rp for g in partners(c))
+    ok_ens = False
+    if ok_map:
+        x, e = m[0], L[m[0]["ln"] - 1]
+        ev = re.match(r"(-?\d+(?:\.\d+)?)\s*\((\d+)\)", r["eg"])
+        iv = re.match(r"([\d.]+)\s*\((\d+)\)", r["ig"].replace(AST, "").strip())
+        ok_ens = (e[9:19].strip() == ev.group(1) and e[19:21].strip() == ev.group(2)
+                  and e[22:29].strip() == iv.group(1) and e[29:31].strip() == iv.group(2)
+                  and e[76] == x["flag"])
+    ok = ok_map and ok_rows and ok_part and ok_ens
+    if not ok:
+        fail.append(("spot", k, r["ln"], ok_map, ok_rows, ok_part, ok_ens))
+    enc.append("spot row {:<3} src line {:<5} Ei {:<12} Eg {:<14} rows {} target line {} "
+               "flag {!r} {}".format(k, r["ln"], r["ei"], r["eg"], len(rp),
+                                     m[0]["ln"] if ok_map else "-",
+                                     m[0]["flag"] if ok_map else "?", "OK" if ok else "FAIL"))
 
-# (d) reverse: every flagged target G-record must appear in the report
-flagged = []
-for i, raw in enumerate(ens, 1):
-    e = raw.ljust(80)
-    if e[5] == " " and e[6] == " " and e[7] == "G" and e[76] in "*&@":
-        flagged.append((i, e[76]))
-rep_lines = {int(l) for x in tbl.values() for l in x["ens"].split("/")}
-rev_fail = [(i, f) for i, f in flagged if i not in rep_lines]
-print("flagged G-records in target:", len(flagged), "| distinct flag chars:", sorted({f for _, f in flagged}))
-print("report ens lines:", len(rep_lines), "| reverse-check misses:", rev_fail)
-
+print("failures:", len(fail))
 with open(OUT, "w", encoding="utf-8") as fh:
-    fh.write("sample rows: {}\n".format(sample))
+    fh.write("source rows {} asterisked {} target placed {} flagged {}\n".format(
+        len(rows), len(ast_rows), len(placed), len(flagged)))
     fh.write("\n".join(enc) + "\n")
-    fh.write("failures: {}\n".format(len(fail)))
+    fh.write("evidence rows {} expected pairs {} report pairs {} reverse misses {}\n".format(
+        len(rep_rows), len(want), len(got), rev_miss))
+    fh.write("FAILURES {}\n".format(len(fail)))
     for f in fail:
         fh.write("  {}\n".format(f))
-    fh.write("\nflagged G-records: {} distinct flags {}\n".format(len(flagged), sorted({f for _, f in flagged})))
-    fh.write("report ens lines: {} reverse misses: {}\n".format(len(rep_lines), rev_fail))
-# ASCII-escaped copy so the console can print it under the GBK code page
 with open(OUT2, "w", encoding="ascii") as fh:
     fh.write("\n".join(l.encode("ascii", "backslashreplace").decode("ascii")
                        for l in open(OUT, encoding="utf-8").read().split("\n")))
-print("failures:", len(fail))
