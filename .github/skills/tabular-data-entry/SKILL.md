@@ -49,21 +49,30 @@ SPECIAL HANDLING
 
 ### Bidirectional Positional Check
 
-Before entering any data, verify the column map in both directions:
+Verify the column map in both directions before entering data, counting blank cells as positional placeholders:
 
-1. List all header columns explicitly, including blank positions
-2. Count blank cells as positional placeholders
-3. Forward verification: Column header → data column; Row header → data row
-4. Backward verification: data column → column header; data row → row header
-5. Arithmetic validation: verify calculations account for blank-cell shifts
-
-1.  **Column alignment:** Explicitly map ALL columns, including blank ones. Never assume positions based on visible data alone.
-2.  **Blank cells:** Count blank cells meticulously. Each blank cell shifts all subsequent column positions and can cause catastrophic data misalignment.
-3.  **Bidirectional verification:** Always cross-check both forward counting (header to data) and backward mapping (data to header) to ensure accurate alignment.
-4.  **Critical column mapping:** When fixing a quantity's position to the correct columns, NEVER shift other field values to wrong columns. Only adjust spacing between fields (never move field data to incorrect columns).
+1. List all header columns explicitly, including blank positions.
+2. Forward: header → data (column and row); Backward: data → header.
+3. Confirm each cell by counting from top-left and again from bottom-right.
+4. When fixing a quantity's position, adjust only field spacing — never move other field data to wrong columns.
 
 
 ### Random Spot Check
 Trace entries to source: verify value, uncertainty, row, column, header, and units. (Protocol: `.github/copilot-instructions.md` § Random Spot Check)
+
+### Bulk Insertion into `.ens` (diff-safe)
+
+- Write a generator script in `.github/temp/...` that emits the expected 80-column block to a text file; use it as ground truth.
+- Insert with the diff-aware edit tool in chunks (~85 records), anchoring each chunk on the current last line of the block. Verify the anchor is unique (energy search) before editing.
+- After each chunk, compare the file block byte-for-byte against the expected file; report mismatches with wanted/got lines, then repair by re-editing (never `git restore`/`checkout`).
+- Never let a script write to the `.ens`; a script may only produce the expected block.
+- Classify records by cols 6–8 (continuation char + type; `PN` occupies cols 7–8), not col 8 alone. Check line endings with a binary read (Python text mode masks CRLF).
+
+### Placement of Unplaced Gammas
+
+- Unplaced G-records form one ascending-energy block immediately after the `PN` record and before the first `L`-record (precede with a blank line if the file does so).
+- Set col-77 flag letters from the dataset's own field-flagged general comment (e.g. `cG E(X)$…` defines flag `X`); reproduce the author's existing flagged record byte-for-byte to confirm the mapping.
+- Intensities absent in the source leave RI/DRI blank; never fabricate.
+- A value too wide for the 7-char RI field (cols 23–29) becomes E-notation (`1.82E-4`) with DRI unchanged.
 
 ---

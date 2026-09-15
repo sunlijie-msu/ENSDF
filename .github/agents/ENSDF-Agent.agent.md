@@ -413,7 +413,7 @@ Format: Plain integers only (NO `{I}` notation, NO parentheses).
 #### Scientific Notation Format
 
 For intensities and other values in scientific notation:
-- **Standard format:** `(5.6±1.0)×10^-4` becomes `5.6E-4 10` in ENSDF.
+- **Standard format:** `(5.6±1.0)×10^-4` becomes `5.6E-4 10` in ENSDF data records.
 - **Value field:** Use `E-n` notation (e.g., `5.6E-4`) and ``En` for positive exponents (e.g., `1.1E6`).
 - **Uncertainty field:** Use digits representing the last significant digit (e.g., `10` for ±1.0 if the value has one decimal place).
 - **Examples:**
@@ -436,10 +436,10 @@ For intensities and other values in scientific notation:
 
 #### General Format
 
-Format: Use `{In}` or `{I+n-m}` notation with braces.
+Format: Use integers in `{In}` or `{I+n-m}` notation with braces.
 
-**CRITICAL:** n must be INTEGER ONLY (NEVER decimals like `{I0.1}` or `{I1.1}`).
-
+**Critical Formatting Rules:**
+- n must be integer ONLY (NEVER decimals like `{I0.1}` or `{I1.1}`).
 - **Symmetric:** `{In}` (e.g., `{I7}`, `{I11}`) without plus/minus signs.
 - **Asymmetric:** `{I+n-m}` (e.g., `{I+10-11}`, `{I+7-9}`) with plus/minus signs.
 
