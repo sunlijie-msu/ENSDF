@@ -234,8 +234,8 @@ Example:
 **Column 77 (C Field, Comment Flag):**
 -   `A-Z`, `a-z`: Any single letter used to refer to a specific comment record (cannot be a number).
 -   `*` (asterisk): Denotes a multiply-placed gamma ray.
--   `&` (ampersand): Denotes a multiply-placed transition with intensity not divided.
--   `@` (at symbol): Denotes a multiply-placed transition with intensity suitably divided.
+-   `&` (ampersand): Denotes a multiply-placed gamma transition with intensity not divided.
+-   `@` (at symbol): Denotes a multiply-placed gamma transition with intensity suitably divided.
 Note: Multiple identical gamma energies appearing in multiple level blocks should be flagged with either `*`, `&`, or `@`.
 -   `Space`: No comment flag.
 -   **FORBIDDEN:** Question mark (`?`) is NOT allowed in column 77.
