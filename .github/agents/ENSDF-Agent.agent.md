@@ -14,10 +14,14 @@ hooks:
       command: "python .github/hooks/scripts/block-git-revert.py"
       windows: "powershell -ExecutionPolicy Bypass -File .github/hooks/scripts/block-git-revert.ps1"
       timeout: 10
+    - type: command
+      command: "python .github/hooks/scripts/guard_ens_edit.py"
+      windows: "python .github/hooks/scripts/guard_ens_edit.py"
+      timeout: 20
   PostToolUse:
     - type: command
-      command: "python .github/hooks/scripts/validate_ens.py"
-      windows: "python .github/hooks/scripts/validate_ens.py"
+      command: "python .github/hooks/scripts/verify_ens_edit.py"
+      windows: "python .github/hooks/scripts/verify_ens_edit.py"
       timeout: 30
 ---
 
