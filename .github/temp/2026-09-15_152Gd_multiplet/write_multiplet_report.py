@@ -488,6 +488,15 @@ A("- Unplaced audit (`Table_VI_3rd.md` \u2194 the {} target unplaced G-records):
   "for the 53 asterisked E_\u03b3 they give 0 hits (nearest {:.2f} keV, farthest nearest-neighbour "
   "{:.2f} keV), so \u00a77 needs no unplaced rows.".format(
       len(unplaced), unp_coin, len(vi_ri_equiv), unp_near[0], unp_far))
+A("- Column-77 flag audit (`flag_final_check.py`, independent of the generator): the target tally is "
+  "{} blank + {} `*` + {} `@` + {} `&` on the placed records and {} `X` + {} blank on the unplaced block; "
+  "each of the 53 flagged records maps to exactly one asterisked Table II row and the mapping is one-to-one "
+  "(no asterisked row left unflagged, none flagged twice); the \u00a76 rule reproduces all 53 flags; the five "
+  "non-`*` pairs enumerated above are the only ones; all 66 partner placements of \u00a77 map to target "
+  "G-records whose column 77 is blank exactly when \u00a77 says `partner *` = no; column 80 is blank on "
+  "every flagged record.".format(len(plns) - sum(flag_tally.values()),
+                                  flag_tally["*"], flag_tally["@"], flag_tally["&"],
+                                  unp_coin, len(unplaced) - unp_coin))
 A("- Reverse check: all 53 flagged target G-records are accounted for by the audit; 0 misses.")
 A("- Markdown render check (`check_table_pipes.py`): every table is column-consistent and \u00a77 holds "
   "10 columns \u00d7 {} rows (one per asterisked row, {} partner values in total), the `case` and "

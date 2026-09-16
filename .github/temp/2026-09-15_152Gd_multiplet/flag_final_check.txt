@@ -1,0 +1,27 @@
+﻿target G-records: 1099 | before first L (unplaced): 348 | placed: 751
+placed col-77 tally: {' ': 698, '*': 43, '@': 6, '&': 4}
+unplaced col-77 tally: {'X': 314, ' ': 34}
+col-80 values on flagged records: [' ']
+
+flagged records mapped: 53 | distinct source rows: 53
+source rows mapped more than once (row, flag): []
+asterisked source rows left unflagged: []
+
+section 6 flag table rows: 3
+   | `&` | 4 | a case A pair: identical E_γ and identical Iγ at both placements → one transition placed twice, intensity not divided |
+   | `@` | 6 | a case B pair whose partner placement is itself asterisked: identical E_γ with split Iγ → one transition placed twice, intensity suitably divided |
+   | `*` | 43 | everything else: case B with an unasterisked partner (no division can be asserted on an unmarked placement), and all case C and D pairs, whose E_γ differ so the placements are distinct transitions of an unresolved multiplet |
+non-* enumeration present: True
+  non-* listed 1631.30: 2 target records flagged @
+  non-* listed 1902.30: 2 target records flagged @
+  non-* listed 2104.10: 2 target records flagged @
+  non-* listed 2709.50: 2 target records flagged &
+  non-* listed 2728.78: 2 target records flagged &
+non-* flags outside the listed five pairs: 0
+
+section 7 rows: 53 | columns: 10
+section 7 rows with a problem: 0
+
+--- FAILURES: 0 ---
+
+target-only flag/partner consistency failures: 0
