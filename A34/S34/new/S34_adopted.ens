@@ -599,20 +599,19 @@
  34S   G 3089.53   26 100    20                                                 
  34S   G 5036.4    7  45     11                                                 
  34S  d                                                                         
- 34S   L 7219.28   6  2+               0.92 EV   28                             
+ 34S   L 7219.28   6  2+               12 FS     LT                             
  34S X L XREF=MPSc(7190*)                                               
- 34S 2 L WIDTHG0=0.92 EV 28                                                     
- 34S  cL WIDTHG0$for J|p=2+ ({+34}S(|g,|g'),(pol |g,|g')).                      
  34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 7219|g, E2 to 0+,   
  34S 2cL g.s.                                                                   
- 34S  cL T$from {+34}S(|g,|g'). Lifetime |t<18 fs (1972Jo10, DSAM) in           
- 34S 2cL {+31}P(|a,p|g).                                                        
+ 34S  cL T$lifetime |t<18 fs (1972Jo10, DSAM) in {+31}P(|a,p|g). |G{-|g0}=1.09  
+ 34S 2cL eV {I33} from {+34}S(|g,|g'),(pol |g,|g').                             
  34S   G 2328.8    5  5.2    15                                                 
  34S   G 2530.25   10 18.8   26                                                 
  34S   G 5093                                                                   
  34S   G 7218.48   13 100    10 E2                                              
  34S  cG E$weighted average of 7218.48 {I13} from {+33}S(n,|g) E=thermal and    
  34S 2cG 7219 {I2} from {+34}S(|g,|g')                                          
+ 34S  cG M$from |g(|q) and azimuthal asymmetry in {+34}S(pol |g,|g').           
  34S  d                                                                         
  34S   L 7248      2  (4)              14 FS     7                          P   
  34S X L XREF=MO(7240*)W(7248*)                                                 
@@ -760,14 +759,16 @@
  34S   G 2945.8    10 1.9E2  6                                              &   
  34S   G 8173.8    9  100    20                                                 
  34S  d                                                                         
- 34S   L 8185.46   12 (1)              0.78 EV   20                             
+ 34S   L 8185.46   12 1+                                                        
  34S X L XREF=PS                                                                
  34S 2 L WIDTHG0=0.78 EV 20                                                     
- 34S  cL T$from {+34}S(|g,|g')                                                  
- 34S  cL J$from {+34}S(|g,|g'),(pol |g,|g').                                    
- 34S   G 8184.70   24 100                                                       
+ 34S  cL J$spin=1 from |g(|q) in {+34}S(pol |g,|g'). |p=+ from 8184.70|g, M1 to 
+ 34S 2cL 0+, g.s.                                                               
+ 34S  cL $|G{-|g0}=0.78 eV {I20} from {+34}S(|g,|g'),(pol |g,|g').              
+ 34S   G 8184.70   24 100       M1                                              
  34S  cG E$weighted average of 8184.70 {I24} from {+33}S(n,|g) E=thermal and    
  34S 2cG 8184 {I3} from {+34}S(|g,|g')                                          
+ 34S  cG RI,M$from |g(|q) and azimuthal asymmetry in {+34}S(pol |g,|g').        
  34S  d                                                                         
  34S   L 8205.4    1  (1-:4+)                                                   
  34S X L XREF=P                                                                 
@@ -863,14 +864,16 @@
  34S   G 5311.10   15 22.2   28                                                 
  34S   G 6487.48   6  100    11                                                 
  34S  d                                                                         
- 34S   L 8656      5  (1)              0.41 EV   19                             
+ 34S   L 8656      5  1+                                                        
  34S X L XREF=R(8622*)SW                                                        
- 34S 2 L WIDTHG0=0.41 EV 19                                                     
  34S  cL E$weighted average of 8657 {I7} from {+34}S(|g,|g') and 8656 {I5} from 
  34S 2cL {+34}S(p,p)                                                            
- 34S  cL T$from {+34}S(|g,|g')                                                  
- 34S  cL J$from {+34}S(|g,|g'),(pol |g,|g').                                    
- 34S   G 8656      7                                                            
+ 34S  cL J$spin=1 from |g(|q) in {+34}S(pol |g,|g'). |p=+ from 8656|g, M1 to 0+,
+ 34S 2cL g.s.                                                                   
+ 34S  cL $|G{-|g0}=0.41 eV {I19} from {+34}S(|g,|g'),(pol |g,|g').              
+ 34S   G 8656         100       M1                                              
+ 34S  cG E$other: 8656 {I7} from {+34}S(|g,|g'),(pol |g,|g').                   
+ 34S  cG RI,M$from |g(|q) and azimuthal asymmetry in {+34}S(pol |g,|g').        
  34S  d                                                                         
  34S   L 8671      5                                                            
  34S X L XREF=W                                                                 
@@ -982,14 +985,16 @@
  34S   L 9445      5                                                            
  34S X L XREF=W                                                                 
  34S  d                                                                         
- 34S   L 9479      4  (1)              1.1 EV    3                              
+ 34S   L 9479      4  1+                                                        
  34S X L XREF=STW                                                               
- 34S 2 L WIDTHG0=1.1 EV 3                                                       
  34S  cL E$weighted average of 9478 {I4} from {+34}S(|g,|g'), 9480 {I10} from   
  34S 2cL {+34}S(e,e'), and 9481 {I5} from {+34}S(p,p)                           
- 34S  cL T$from {+34}S(|g,|g')                                                  
- 34S   G 9477      4                                                            
- 34S  cG E$from |DE{-levels} (measured by {+34}S(|g,|g'),(pol |g,|g')).         
+ 34S  cL J$spin=1 from |g(|q) in {+34}S(pol |g,|g'). |p=+ from 9477|g, M1 to 0+,
+ 34S 2cL g.s.                                                                   
+ 34S  cL $|G{-|g0}=1.1 eV {I3} from {+34}S(|g,|g'),(pol |g,|g').                
+ 34S   G 9477         100       M1                                              
+ 34S  cG E$other: 9477 {I4} from {+34}S(|g,|g'),(pol |g,|g').                   
+ 34S  cG RI,M$from |g(|q) and azimuthal asymmetry in {+34}S(pol |g,|g').        
  34S  d                                                                         
  34S   L 9546.09   7  (1,2+)                                                    
  34S X L XREF=PW(9566*)                                                         
@@ -1025,10 +1030,9 @@
  34S 2 L WIDTHG0=0.50 EV 14                                                     
  34S  cL E$weighted average of 9711 {I5} from {+34}S(|g,|g') and 9700 {I6} from 
  34S 2cL {+34}S(p,p)                                                            
- 34S  cL T$from {+34}S(|g,|g')                                                  
- 34S  cL J$from {+34}S(|g,|g'),(pol |g,|g').                                    
- 34S   G 9710      5                                                            
- 34S  cG E$from |DE{-levels} (measured by {+34}S(|g,|g'),(pol |g,|g')).         
+ 34S  cL J$9710|g to 0+, g.s.                                                   
+ 34S   G 9710         100                                                       
+ 34S  cG E$other: 9710 {I5} from {+34}S(|g,|g'),(pol |g,|g').                   
  34S  d                                                                         
  34S   L 9801.89   9  (1,2+)                                                    
  34S X L XREF=P                                                                 
@@ -1044,15 +1048,16 @@
  34S   G 2989.9    7  41     21                                                 
  34S   G 7708.32   30 100    16                                                 
  34S  d                                                                         
- 34S   L 9868      5  (1)              0.60 EV   12                             
+ 34S   L 9868      5  1+               0.60 EV   12                             
  34S X L XREF=STW                                                               
  34S 2 L WIDTHG0=0.60 EV 12                                                     
  34S  cL E$weighted average of 9860 {I7} from {+34}S(|g,|g'), 9870 {I10} from   
  34S 2cL {+34}S(e,e'), and 9872 {I5} from {+34}S(p,p)                           
- 34S  cL T$from {+34}S(|g,|g')                                                  
- 34S  cL J$from {+34}S(|g,|g'),(pol |g,|g').                                    
- 34S   G 9858      7                                                            
- 34S  cG E$from |DE{-levels} (measured by {+34}S(|g,|g'),(pol |g,|g')).         
+ 34S  cL J$spin=1 from |g(|q) in {+34}S(pol |g,|g'). |p=+ from 9858|g, M1 to 0+,
+ 34S 2cL g.s.                                                                   
+ 34S   G 9858         100       M1                                              
+ 34S  cG E$other: 9858 {I7} from {+34}S(|g,|g'),(pol |g,|g').                   
+ 34S  cG RI,M$from |g(|q) and azimuthal asymmetry in {+34}S(pol |g,|g').        
  34S  d                                                                         
  34S   L 9912.9    7  7(+)             184 FS    38                             
  34S X L XREF=HW(9925*)                                                         
@@ -1115,11 +1120,13 @@
  34S   G 10167        30        E1                                              
  34S F G FLAG=abc                                                               
  34S  d                                                                         
- 34S   L 10170     5  (1)              1.06 EV   20                             
+ 34S   L 10170     5  1+               1.06 EV   20                             
  34S X L XREF=ST(10180*)                                                        
  34S 2 L WIDTHG0=1.06 EV 20                                                     
- 34S  cL J$from {+34}S(|g,|g'),(pol |g,|g').                                    
- 34S   G 10168     5                                                            
+ 34S  cL J$spin=1 from |g(|q) in {+34}S(pol |g,|g'). |p=+ from 10168|g, M1 to   
+ 34S 2cL 0+, g.s.                                                               
+ 34S   G 10168     5  100       M1                                              
+ 34S  cG E,RI,M$from |g(|q) and azimuthal asymmetry in {+34}S(pol |g,|g').      
  34S  d                                                                         
  34S   L 10179.59  5  (1,2,3)                                                   
  34S X L XREF=PT(10180*)                                                        
