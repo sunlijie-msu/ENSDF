@@ -1,0 +1,229 @@
+data records = 40
+
+L1208 E=10494     J=1-        T=          XREF=L
+   rec  1210: ' 34S 2 L WIDTHG=0.84 EV'
+      WIDTHG   -> |G{-|g}=0.84 eV
+   cL  1211: ' 34S  cL J$E1 |DJ=1 |g to 0+, g.s.'
+
+L1220 E=10587     J=1-        T=          XREF=L
+   rec  1222: ' 34S 2 L WIDTHG GT 1.3 EV'
+      WIDTHG   -> |G{-|g}>1.3 eV
+   cL  1223: ' 34S  cL J$E1 |DJ=1 |g to 0+, g.s.'
+
+L1234 E=10625     J=1-        T=          XREF=L
+   rec  1236: ' 34S 2 L WIDTHG GT 0.7 EV'
+      WIDTHG   -> |G{-|g}>0.7 eV
+   cL  1237: ' 34S  cL J$E1 |DJ=1 |g to 0+, g.s.'
+
+L1260 E=10670     J=1-        T=          XREF=LO(10700*)
+   rec  1262: ' 34S 2 L WIDTHG=0.73 EV'
+      WIDTHG   -> |G{-|g}=0.73 eV
+   cL  1263: ' 34S  cL J$E1 |DJ=1 |g to 2+, 3304 (angular correlation excludes 3-).'
+
+L1286 E=10790     J=1-        T=          XREF=LS
+   rec  1288: ' 34S 2 L WIDTHG=3 EV'
+      WIDTHG   -> |G{-|g}=3 eV
+   cL  1289: ' 34S  cL E$weighted average of 10791 {I5} from {+30}Si(|a,|g) and 10786 {I13}'
+   cL  1290: " 34S 2cL from {+34}S(|g,|g')"
+   cL  1291: ' 34S  cL J$E1 |DJ=1 |g to 0+, g.s.'
+   cL  1292: " 34S  cL $|G{-|g0}=0.75 eV {I14} from {+34}S(|g,|g'),(pol |g,|g')."
+
+L1374 E=11088     J=2+        T=          XREF=L
+   rec  1376: ' 34S 2 L WIDTHG=0.2 EV'
+      WIDTHG   -> |G{-|g}=0.2 eV
+   cL  1377: ' 34S  cL J$E2 |DJ=2 |g to 0+, g.s.'
+
+L1391 E=11142     J=1-        T=          XREF=L
+   rec  1393: ' 34S 2 L WIDTHG=2.6 EV'
+      WIDTHG   -> |G{-|g}=2.6 eV
+   cL  1394: ' 34S  cL J$E1 |DJ=1 |g to 0+, g.s.'
+
+L1402 E=11165     J=1-        T=          XREF=L
+   rec  1404: ' 34S 2 L WIDTHG=1.7 EV'
+      WIDTHG   -> |G{-|g}=1.7 eV
+   cL  1405: ' 34S  cL J$E1 |DJ=1 |g to 0+, g.s.'
+
+L1419 E=11220     J=(2+)      T=          XREF=L
+   rec  1421: ' 34S 2 L WIDTHG=0.2 EV'
+      WIDTHG   -> |G{-|g}=0.2 eV
+   cL  1422: ' 34S  cL J$(E2) |DJ=2 |g to 0+, g.s.'
+
+L1430 E=11233     J=1-        T=          XREF=L
+   rec  1432: ' 34S 2 L WIDTHG=2.8 EV'
+      WIDTHG   -> |G{-|g}=2.8 eV
+   cL  1433: ' 34S  cL J$E1 |DJ=1 |g to 0+, g.s.'
+
+L1450 E=11315     J=2+        T=          XREF=L
+   rec  1452: ' 34S 2 L WIDTHG=0.08 EV'
+      WIDTHG   -> |G{-|g}=0.08 eV
+   cL  1453: ' 34S  cL J$E2 |DJ=2 |g to 0+, g.s.'
+
+L1461 E=11323     J=1-        T=          XREF=L
+   rec  1463: ' 34S 2 L WIDTHG=2.2 EV'
+      WIDTHG   -> |G{-|g}=2.2 eV
+   cL  1464: ' 34S  cL J$E1 |DJ=1 |g to 0+, g.s.'
+
+L1475 E=11358     J=1-        T=          XREF=L
+   rec  1477: ' 34S 2 L WIDTHG=1.4 EV'
+      WIDTHG   -> |G{-|g}=1.4 eV
+   cL  1478: ' 34S  cL J$E1 |DJ=1 |g to 0+, g.s.'
+
+L1486 E=11372     J=3-        T=          XREF=L
+   rec  1488: ' 34S 2 L WIDTHG=1.5 EV'
+      WIDTHG   -> |G{-|g}=1.5 eV
+   cL  1489: ' 34S  cL J$E1+M2 |DJ=1 |g to 2+, 2128 (angular correlation excludes 1-).'
+
+L1503 E=11381     J=2+        T=          XREF=L
+   rec  1505: ' 34S 2 L WIDTHG=0.1 EV'
+      WIDTHG   -> |G{-|g}=0.1 eV
+   cL  1506: ' 34S  cL J$E2 |DJ=2 |g to 0+, g.s.'
+
+L1520 E=11411.31  J=2+        T=          XREF=L(11405*)Q(*)
+   rec  1522: ' 34S 2 L WIDTHG=1.5 EV $'
+      WIDTHG   -> |G{-|g}=1.5 eV
+   cL  1523: ' 34S  cL WIDTHG$from {+33}S(n,|g),(n,n).'
+   cL  1524: ' 34S  cL E$Fictitious level with a negative E(n) value.'
+
+L1618 E=11420     J=1-        T=          XREF=L
+   rec  1620: ' 34S 2 L WIDTHG=4.4 EV'
+      WIDTHG   -> |G{-|g}=4.4 eV
+   cL  1621: ' 34S  cL J$E1 |DJ=1 |g to 0+, g.s.'
+
+L1629 E=11430.3   J=2+        T=0.116 KEV XREF=L(11435*)Q
+   rec  1631: ' 34S 2 L WIDTHN=75.0 EV 8 $ WIDTHG=0.21 EV 5 $ WIDTHA=41 EV 5'
+      WIDTHN   -> |G{-n}=75.0 eV {I8}
+      WIDTHG   -> |G{-|g}=0.21 eV {I5}
+      WIDTHA   -> |G{-|a}=41 eV {I5}
+
+L1633 E=11434.3   J=2-        T=0.049 KEV XREF=L(11435*)Q
+   rec  1635: ' 34S 2 L WIDTHN=39.1 EV 8 $ WIDTHG=0.90 EV 5 $'
+      WIDTHN   -> |G{-n}=39.1 eV {I8}
+      WIDTHG   -> |G{-|g}=0.90 eV {I5}
+   cL  1636: ' 34S  cL $All data are from {+33}S(n,|g),(n,n).'
+
+L1638 E=11440.4   J=3-        T=0.0198 KEV XREF=L(11444*)Q
+   rec  1640: ' 34S 2 L WIDTHN=16.0 EV 9 $ WIDTHG=1.44 EV 10 $ WIDTHA=2.5 EV 3'
+      WIDTHN   -> |G{-n}=16.0 eV {I9}
+      WIDTHG   -> |G{-|g}=1.44 eV {I10}
+      WIDTHA   -> |G{-|a}=2.5 eV {I3}
+   cL  1641: ' 34S  cL $All data are from {+33}S(n,|g),(n,n).'
+
+L1664 E=11474.51  J=2-        T=0.45 KEV  XREF=Q(*)
+   rec  1666: ' 34S 2 L WIDTHN=275 EV 5 $ WIDTHG=1.08 EV 7 $ WIDTHA=0.17 KEV 5'
+      WIDTHN   -> |G{-n}=275 eV {I5}
+      WIDTHG   -> |G{-|g}=1.08 eV {I7}
+      WIDTHA   -> |G{-|a}=0.17 keV {I5}
+
+L1668 E=11490     J=1-        T=          XREF=LQ
+   rec  1670: ' 34S 2 L WIDTHN=65 EV 10 $ WIDTHG=0.6 EV $ WIDTHA=0.11 KEV 6'
+      WIDTHN   -> |G{-n}=65 eV {I10}
+      WIDTHG   -> |G{-|g}=0.6 eV
+      WIDTHA   -> |G{-|a}=0.11 keV {I6}
+   cL  1671: ' 34S  cL E$from {+30}Si(|a,|g)'
+   cL  1672: ' 34S  cL $|G{-n} and |G|a from {+33}S(n,|g),(n,n); |G{-|g} from'
+   cL  1673: ' 34S 2cL {+30}Si(|a,|g),(|a,n).'
+   cL  1674: ' 34S  cL J$E1 |DJ=1 |g to 0+, g.s.'
+
+L1682 E=11492.7   J=2-        T=0.51 KEV  XREF=Q
+   rec  1684: ' 34S 2 L WIDTHN=507 EV 13 $ WIDTHG=2.11 EV 14 $'
+      WIDTHN   -> |G{-n}=507 eV {I13}
+      WIDTHG   -> |G{-|g}=2.11 eV {I14}
+
+L1686 E=11496.2   J=2+        T=0.71 KEV  XREF=QT(11500*)
+   rec  1688: ' 34S 2 L WIDTHN=705 EV 19 $ WIDTHG=0.94 EV 6 $ WIDTHA=4 EV 2'
+      WIDTHN   -> |G{-n}=705 eV {I19}
+      WIDTHG   -> |G{-|g}=0.94 eV {I6}
+      WIDTHA   -> |G{-|a}=4 eV {I2}
+
+L1690 E=11499.6   J=1-        T=          XREF=Q
+   rec  1692: ' 34S 2 L WIDTHN=1.33 KEV 8 $ WIDTHA=4.0 KEV 6'
+      WIDTHN   -> |G{-n}=1.33 keV {I8}
+      WIDTHA   -> |G{-|a}=4.0 keV {I6}
+
+L1697 E=11502.3   J=1-        T=0.292 KEV XREF=Q
+   rec  1699: ' 34S 2 L WIDTHN=280 EV 20 $ WIDTHG=2.11 EV 14 $ WIDTHA=10 EV 5'
+      WIDTHN   -> |G{-n}=280 eV {I20}
+      WIDTHG   -> |G{-|g}=2.11 eV {I14}
+      WIDTHA   -> |G{-|a}=10 eV {I5}
+
+L1710 E=11515.3   J=2-        T=1.262 KEV XREF=Q
+   rec  1712: ' 34S 2 L WIDTHN=1.260 KEV 25 $ WIDTHG=1.48 EV 13 $'
+      WIDTHN   -> |G{-n}=1.260 keV {I25}
+      WIDTHG   -> |G{-|g}=1.48 eV {I13}
+
+L1714 E=11541     J=1-        T=0.63 KEV  XREF=Q
+   rec  1716: ' 34S 2 L WIDTHN=0.36 KEV 4 $ WIDTHG=1.4 EV 4 $ WIDTHA=0.27 KEV 6'
+      WIDTHN   -> |G{-n}=0.36 keV {I4}
+      WIDTHG   -> |G{-|g}=1.4 eV {I4}
+      WIDTHA   -> |G{-|a}=0.27 keV {I6}
+
+L1718 E=11545     J=1-        T=0.20 KEV  XREF=LQ
+   rec  1720: ' 34S 2 L WIDTHG=1.0 EV'
+      WIDTHG   -> |G{-|g}=1.0 eV
+   cL  1721: ' 34S  cL E$from {+30}Si(|a,|g)'
+   cL  1722: ' 34S  cL T$from {+33}S(n,|g)'
+   cL  1723: ' 34S  cL J$E1 |DJ=1 |g to 0+, g.s.'
+   cL  1724: ' 34S  cL E$from {+33}S(n,|g),(n,n).'
+   cL  1725: ' 34S  cL $|G from {+33}S(n,|g),(n,n) and |G{-|g} from {+30}Si(|a,|g),(|a,n).'
+
+L1745 E=11581     J=2-        T=3.42 KEV  XREF=Q
+   rec  1747: ' 34S 2 L WIDTHN=3.42 KEV 8 $ WIDTHG=2.6 EV 3 $'
+      WIDTHN   -> |G{-n}=3.42 keV {I8}
+      WIDTHG   -> |G{-|g}=2.6 eV {I3}
+
+L1749 E=11590     J=2-        T=0.76 KEV  XREF=Q
+   rec  1751: ' 34S 2 L WIDTHN=0.76 KEV 4 $ WIDTHG=0.87 EV 11 $'
+      WIDTHN   -> |G{-n}=0.76 keV {I4}
+      WIDTHG   -> |G{-|g}=0.87 eV {I11}
+
+L1753 E=11608     J=3-        T=0.62 KEV  XREF=L(11619*)Q
+   rec  1755: ' 34S 2 L WIDTHN=0.61 KEV 3 $ WIDTHG=1.33 EV 12 $'
+      WIDTHN   -> |G{-n}=0.61 keV {I3}
+      WIDTHG   -> |G{-|g}=1.33 eV {I12}
+
+L1760 E=11614     J=3-        T=2.1 KEV   XREF=L(11619*)Q
+   rec  1762: ' 34S 2 L WIDTHN=2.09 KEV 8 $ WIDTHG=2.17 EV 20 $ WIDTHA=14 EV 5'
+      WIDTHN   -> |G{-n}=2.09 keV {I8}
+      WIDTHG   -> |G{-|g}=2.17 eV {I20}
+      WIDTHA   -> |G{-|a}=14 eV {I5}
+   cL  1763: ' 34S  cL $All data are from {+33}S(n,|g),(n,n).'
+
+L1771 E=11632     J=2+        T=0.75 KEV  XREF=L(11637*)Q
+   rec  1773: ' 34S 2 L WIDTHN=0.69 KEV 7 $ WIDTHG=1.2 EV 4 $ WIDTHA=55 EV 20'
+      WIDTHN   -> |G{-n}=0.69 keV {I7}
+      WIDTHG   -> |G{-|g}=1.2 eV {I4}
+      WIDTHA   -> |G{-|a}=55 eV {I20}
+
+L1775 E=11634     J=0+        T=5.3 KEV   XREF=L(11637*)Q
+   rec  1777: ' 34S 2 L WIDTHN=4.4 KEV 9 $ WIDTHA=0.9 KEV 3'
+      WIDTHN   -> |G{-n}=4.4 keV {I9}
+      WIDTHA   -> |G{-|a}=0.9 keV {I3}
+   cL  1778: ' 34S  cL $All data are from {+33}S(n,|g),(n,n).'
+
+L1780 E=11638.93  J=3-        T=0.96 KEV  XREF=L(11637*)Q(11639*)
+   rec  1782: ' 34S 2 L WIDTHN=0.76 KEV 5 $ WIDTHG=0.81 EV 13 $ WIDTHA=0.20 KEV 3'
+      WIDTHN   -> |G{-n}=0.76 keV {I5}
+      WIDTHG   -> |G{-|g}=0.81 eV {I13}
+      WIDTHA   -> |G{-|a}=0.20 keV {I3}
+
+L1784 E=11643     J=1-        T=          XREF=LQ(11610*)
+   rec  1786: ' 34S 2 L WIDTHG=2.3 EV'
+      WIDTHG   -> |G{-|g}=2.3 eV
+   cL  1787: ' 34S  cL J$E1 |DJ=1 |g to 0+, g.s.'
+
+L1795 E=11648.64  J=3-        T=0.61 KEV  XREF=L(11637*)Q(11639*)
+   rec  1797: ' 34S 2 L WIDTHN=0.46 KEV 3 $ WIDTHG=1.82 EV 20 $'
+      WIDTHN   -> |G{-n}=0.46 keV {I3}
+      WIDTHG   -> |G{-|g}=1.82 eV {I20}
+
+L1802 E=11669     J=2-        T=0.40 KEV  XREF=L(11670*)Q
+   rec  1804: ' 34S 2 L WIDTHN=0.67 KEV 6 $ WIDTHG=2.4 EV 2 $'
+      WIDTHN   -> |G{-n}=0.67 keV {I6}
+      WIDTHG   -> |G{-|g}=2.4 eV {I2}
+   cL  1805: ' 34S  cL $All data are from {+33}S(n,|g),(n,n).'
+
+L1807 E=11670     J=1+        T=0.55 KEV  XREF=L(11670*)Q
+   rec  1809: ' 34S 2 L WIDTHN=0.23 KEV 7 $ WIDTHG=2.1 EV 3 $'
+      WIDTHN   -> |G{-n}=0.23 keV {I7}
+      WIDTHG   -> |G{-|g}=2.1 eV {I3}
+
