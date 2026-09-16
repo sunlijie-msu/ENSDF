@@ -22,8 +22,8 @@
  34S  cL E$ From a least-squares fit to |g-ray energies, unless otherwise noted.
  34S  cL E(P)$ From {+31}P(|a,p|g), in which most literature reports E(level)   
  34S 2cL directly.                                                              
- 34S  cL J$ From {+31}P(|a,p|g) based on measured |g angular distributions,     
- 34S 2cL unless otherwise noted.                                                
+ 34S  cL J$ From measured p|g(|q) and/or |g|g(|q) in {+31}P(|a,p|g), unless     
+ 34S 2cL otherwise noted.                                                       
  34S  cL BAND(A)$GS BAND.                                                       
  34S  cL BAND(C)$|g cascade based on 3-, 4624.                                  
  34S  cL BAND(B)$|g cascade based on 3-, 5680.                                  
@@ -641,7 +641,7 @@
  34S  d                                                                         
  34S   L 7392      1  (4,5)            159 FS    35                         P   
  34S X L XREF=MN(7388*)R(7398*)W(7389*)                                  
- 34S  cL J$from {+31}P(|a,p|g)                                                  
+ 34S  cL J$from p|g(|q) in {+31}P(|a,p|g).                                      
  34S  cL T$lifetime |t=230 fs {I50} (1977GrZH, DSAM) {+31}P(|a,p|g).            
  34S  d                                                                         
  34S   L 7467.75   16 (0+,1,2)                                                  
@@ -743,15 +743,12 @@
  34S  d                                                                         
  34S   L 8083      1  5                44 FS     7                          P   
  34S X L XREF=M                                                                 
- 34S  cL J$from {+31}P(|a,p|g).                                                 
+ 34S  cL J$from p|g(|q) in {+31}P(|a,p|g).                                      
  34S  cL T$mean lifetime |t in fs, from {+31}P(|a,p|g): 64 {I10} (1977GrZH).    
  34S  d                                                                         
  34S   L 8138.08   7  (1)-                                                      
- 34S X L XREF=PR                                                                
- 34S  cL E$weighted average of 8138.08 {I7} from {+33}S(n,|g) E=thermal and 8142
- 34S 2cL {I12} from {+33}S(d,p)                                                 
- 34S  cL J$(1,2+) from gammas to 0+, g.s., 1-, 6343, and 2+, 2128; |p=- from L=1
- 34S 2cL in {+33}S(d,p).                                                        
+ 34S X L XREF=PR(8142)                                                          
+ 34S  cL J$L=1 from 3/2+ in {+33}S(d,p). 8138.08|g to 0+, g.s.                  
  34S   G 1795.3    3  14     4                                              &   
  34S   G 2290.26   15 19     4                                                  
  34S   G 6010.3    3  36     6                                                  
@@ -759,7 +756,7 @@
  34S  d                                                                         
  34S   L 8174.9    4  (1,2+)                                                    
  34S X L XREF=P                                                                 
- 34S  cL J$|g to 0+.                                                            
+ 34S  cL J$8173|g to 0+, g.s.                                                   
  34S   G 2945.8    10 1.9E2  6                                              &   
  34S   G 8173.8    9  100    20                                                 
  34S  d                                                                         
@@ -786,7 +783,7 @@
  34S  d                                                                         
  34S   L 8293      2  4                28 FS     LT                         P   
  34S X L XREF=M(8293*)N(8293*)R(8299*)W(8296*)                                  
- 34S  cL J$from {+31}P(|a,p|g).                                                 
+ 34S  cL J$from p|g(|q) in {+31}P(|a,p|g).                                      
  34S  cL T$mean lifetime |t in fs from {+31}P(|a,p|g): <40 (1977GrZH).          
  34S  d                                                                         
  34S   L 8294.40   9  (0+:3-)                                                   
