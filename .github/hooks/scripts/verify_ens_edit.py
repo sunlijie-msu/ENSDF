@@ -5,6 +5,8 @@ import subprocess
 import sys
 import difflib
 
+MUTATING_RE = re.compile(r"--fix\b|>>?\s|Set-Content|Out-File|Add-Content|\.write_text\(|WriteAllText", re.IGNORECASE)
+
 # ENSDF-Agent Hook: Validate .ens files after edits
 # --------------------------------------------------------
 # PostToolUse event — runs two validation passes on any .ens file that was
@@ -93,6 +95,13 @@ def find_all_ens_paths(payload):
             if path.lower().endswith(".ens"):
                 paths.add(path)
 
+    # run_in_terminal / send_to_terminal → only when the command looks mutating
+    # (avoids re-validating on every read-only script call)
+    command_text = tool_input.get("command")
+    if isinstance(command_text, str) and "--dry-run" not in command_text and MUTATING_RE.search(command_text):
+        for match in re.finditer(r"[^\s\"']+\.ens", command_text, re.IGNORECASE):
+            paths.add(match.group(0).strip("\"'"))
+
     return sorted(paths)
 
 
@@ -152,11 +161,11 @@ def extract_all_changed_lines(payload):
 
 
 def is_comment_record(line):
-    return len(line) >= 8 and line[7] == "c"
+    return len(line) >= 7 and line[6] == "c"  # column 7 (0-indexed 6) is the comment flag
 
 
 def is_noncomment_record(line):
-    return len(line) >= 8 and line[7] != "c" and not line.isspace()
+    return len(line) >= 7 and line[6] != "c" and not line.isspace()
 
 
 def comment_only_edit(payload):

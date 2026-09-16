@@ -142,12 +142,12 @@ Each field begins at prescribed columns with fixed widths. Content must be left-
 **AI Behavior Rule:** Never claim edit completion without ruler and column validation.
 
 
-### ENSDF Editing Safeguards
-- While working on the task, agentic reasoning may take some time, and human user may have made changes concurrently. Stay focused on the task and do not get confused. Preserve user's concurrent edits.
-- Read full structure immediately before EACH edit, reload target and inspect current surrounding block.
-- Guard every edit: match exact current text once using content anchors; never trust line numbers, cache, or baseline copies.
-- If text differs, match duplicates, or user changes appear, STOP and reload; never overwrite or delete user's concurrent edits.
-- After each edit, reload and verify changed text, neighbors, continuations, record type, and diff.
+### ENSDF Editing Safeguards (hook-enforced)
+- While working on the task, agentic reasoning may take some time. Meanwhile, human user may have made changes on dataset files concurrently. Stay focused on the task and do not get confused. Preserve the human user's concurrent edits.
+- Reload target immediately before every edit or mutating script/terminal call; never trust line numbers, memory, or cached baseline copies.
+- Guard every edit by ensuring anchors are byte-exact and unique. Never use short, repeated, or cross-record anchors.
+- If ambiguous match, differing content, or a hook denial → STOP, re-read, rebuild; never bypass or overwrite a concurrent edit.
+- After each edit, reload and verify changed text, neighbors, and diff.
 
 #### VS Code Diff View Requirement: Mandatory Human Review Layer
 
