@@ -101,11 +101,12 @@ def emit_denial(reason):
     print(json.dumps(output))
 
 
-def default_workspace_root():
-    # This file lives at <workspace>/.github/hooks/scripts/.
-    return os.path.dirname(
-        os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    )
+def default_workspace_root(hook_input):
+    # Installed plugins live outside the workspace; use the hook event's cwd.
+    cwd = hook_input.get("cwd")
+    if isinstance(cwd, str) and cwd.strip():
+        return os.path.realpath(os.path.normpath(cwd))
+    return os.path.realpath(os.getcwd())
 
 
 def unquote_token(token):
@@ -279,8 +280,7 @@ def main():
     if not target_paths:
         sys.exit(0)
 
-    # Policy root is derived from this hook, not caller-supplied cwd.
-    workspace_root = default_workspace_root()
+    workspace_root = default_workspace_root(hook_input)
 
     for file_path, operation in target_paths:
         if not file_path:

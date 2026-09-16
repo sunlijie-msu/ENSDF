@@ -182,8 +182,13 @@ def comment_only_edit(payload):
 
 
 def find_ruler_script(payload):
-    """Locate ensdf_1line_ruler.py, preferring the cwd provided by VS Code."""
+    """Locate bundled ruler first, then the workspace copy."""
     cwd = payload.get("cwd", "") or os.getcwd()
+    plugin_root = os.environ.get("PLUGIN_ROOT", "")
+    if plugin_root:
+        candidate = os.path.join(plugin_root, "scripts", "ensdf_1line_ruler.py")
+        if os.path.isfile(candidate):
+            return candidate
     candidate = os.path.join(cwd, ".github", "scripts", "ensdf_1line_ruler.py")
     if os.path.isfile(candidate):
         return candidate
