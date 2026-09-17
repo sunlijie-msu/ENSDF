@@ -147,7 +147,7 @@ Each field begins at prescribed columns with fixed widths. Content must be left-
 - Reload target immediately before every edit or mutating script/terminal call; never trust line numbers, memory, or cached baseline copies.
 - Guard every edit by ensuring anchors are byte-exact and unique. Never use short, repeated, or cross-record anchors.
 - If ambiguous match, differing content, or a hook denial → STOP, re-read, rebuild; never bypass or overwrite a concurrent edit.
-- After each edit, reload and verify changed text, neighbors, and diff.
+- After each edit, reload and verify changed text, neighbors, diff, and post-edit prediction.
 
 #### VS Code Diff View Requirement: Mandatory Human Review Layer
 

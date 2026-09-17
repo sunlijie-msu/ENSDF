@@ -37,6 +37,10 @@ AI rereads current file
 AI rebuilds anchor
 AI retries → edit allowed
 
+Approved .ens edit tools: editFiles and replacement tools with exact oldText/newText.
+apply_patch on .ens is refused. PostToolUse compares actual content with this hook's
+predicted result, catching editor-side block collapse or unexpected rewrites.
+
 """
 import hashlib
 import json
@@ -158,14 +162,14 @@ def edit_operations(data):
     return operations, paths
 
 
-def guard_edits(data, state, root):
-    """Check exact anchors for all supported edit payload shapes."""
-    operations, paths = edit_operations(data)
-    if paths and not operations:
-            deny(".ens edit has no exact old/new text anchor. Use editFiles with files[].edits[].oldText/newText.")
+def guard_operations(operations, state, root):
+    """Check exact anchors for ordered operations and predict resulting hashes."""
     by_file = {}
     for path, old, new in operations:
-        by_file.setdefault(key_of(path, root), []).append((old, new))
+        if not path.lower().endswith(".ens"):
+            continue
+        by_file.setdefault(key_of(path, root), []).append((old.replace("\r\n", "\n"),
+                                                            new.replace("\r\n", "\n")))
 
     touched = False
     for key, ops in by_file.items():
@@ -179,13 +183,21 @@ def guard_edits(data, state, root):
             hits = text.count(old)
             if hits != 1:
                 deny(f"Anchor matches {hits} time(s) in {os.path.basename(key)}; must match byte-exactly once. "
-                     f"Rebuild oldString from the current 80-column text — short or repeated anchors are forbidden.")
+                     f"Rebuild the current patch hunk from the file — short or repeated anchors are forbidden.")
             if len(old.split("\n")) > SPAN:
                 deny(f"Edit spans more than {SPAN} lines. Split it into record-group edits.")
-            text = text.replace(old, new, 1)  # simulate so state matches the file the tool is about to write
+            text = text.replace(old, new, 1)
         state[key] = digest(text)
         touched = True
     return touched
+
+
+def guard_edits(data, state, root):
+    """Check exact anchors for all supported edit payload shapes."""
+    operations, paths = edit_operations(data)
+    if paths and not operations:
+            deny(".ens edit has no exact old/new text anchor. Use editFiles with files[].edits[].oldText/newText.")
+    return guard_operations(operations, state, root)
 
 
 def guard_terminal(command, state, root):
@@ -226,9 +238,9 @@ def main():
         return
 
     if tool == "apply_patch":
-        if re.search(r"\*\*\* (?:Update|Add|Delete) File: .*\.ens", data.get("input", "") or "", re.IGNORECASE):
-            deny("apply_patch on .ens files is refused — use replace_string_in_file/"
-                 "multi_replace_string_in_file or editFiles with exact old/new anchors so anchors can be verified.")
+        patch_text = data.get("input", "") or ""
+        if re.search(r"^\*\*\* (?:Update|Add|Delete) File: .*\.ens", patch_text, re.IGNORECASE | re.MULTILINE):
+            deny("apply_patch on .ens is refused. Use editFiles or a replacement tool with exact oldText/newText anchors.")
         return
 
     if tool in ("run_in_terminal", "send_to_terminal"):

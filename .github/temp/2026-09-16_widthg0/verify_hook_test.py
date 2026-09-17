@@ -7,7 +7,9 @@ import sys
 from pathlib import Path
 
 VERIFY = ".github/hooks/scripts/verify_ens_edit.py"
+GUARD = ".github/hooks/scripts/guard_ens_edit.py"
 SCRATCH = Path(".github/temp/2026-09-16_widthg0/scratch.ens")
+STATE = Path(".github/temp/ens_guard/state.json")
 
 # scratch.ens: line 0 is a comment (col7='c'), line 1 is a plain data-like line
 COMMENT_LINE = " 34S  cL $Scratch comment".ljust(80)
@@ -25,6 +27,11 @@ def run(payload):
     return p.stdout.strip()
 
 
+def run_guard(payload):
+    p = subprocess.run([sys.executable, GUARD], input=json.dumps(payload), capture_output=True, text=True)
+    return p.stdout.strip()
+
+
 def edit_payload(old, new):
     return {"tool_name": "replace_string_in_file",
             "tool_input": {"filePath": str(SCRATCH), "oldString": old, "newString": new},
@@ -39,6 +46,8 @@ def edit_files_payload(old, new, tool_name="editFiles"):
 
 
 checks = []
+
+STATE.unlink(missing_ok=True)
 
 # 1. comment-only edit on a file with a BAD (short) data line elsewhere -> ruler must be SKIPPED
 reset_scratch(BAD_LEN_LINE)
@@ -64,6 +73,25 @@ reset_scratch(DATA_LINE)
 out = run(edit_payload(DATA_LINE, DATA_LINE))
 checks.append(("clean data edit passes ruler", out in ("{}", "")))
 
+# Predicted post-edit hash: matching actual result passes.
+reset_scratch(DATA_LINE)
+run_guard({"tool_name": "read_file", "tool_input": {"filePath": str(SCRATCH)}})
+run_guard({"tool_name": "replace_string_in_file",
+           "tool_input": {"filePath": str(SCRATCH), "oldString": DATA_LINE, "newString": DATA_LINE}})
+checks.append(("matching predicted post-edit content passes", run(edit_payload(DATA_LINE, DATA_LINE)) in ("{}", "")))
+
+# Simulate an editor-side block collapse: actual file differs from guarded prediction.
+collapse_a = " 34S  cL $first".ljust(80)
+collapse_b = " 34S 2cL $second".ljust(80)
+reset_scratch(collapse_b)
+SCRATCH.write_text(collapse_a + "\n" + collapse_b + "\n", encoding="utf-8")
+run_guard({"tool_name": "read_file", "tool_input": {"filePath": str(SCRATCH)}})
+run_guard({"tool_name": "replace_string_in_file",
+           "tool_input": {"filePath": str(SCRATCH), "oldString": collapse_b, "newString": collapse_b + " changed"}})
+SCRATCH.write_text(collapse_a + collapse_b + " changed\n", encoding="utf-8")
+out = run(edit_payload(collapse_b, collapse_b + " changed"))
+checks.append(("unexpected collapsed post-edit content blocked", '"decision": "block"' in out and "differs" in out))
+
 # 4. ASCII violation always blocks, even declared as comment-only
 # (PostToolUse fires AFTER the real write, so the test must apply the edit to
 # disk first — validate_ens_ascii reads the file, not the payload strings)
@@ -81,7 +109,8 @@ checks.append(("mutating terminal command on clean file passes", run(term_payloa
 
 # 6. mutating terminal command referencing a BAD file -> path detected, ruler runs, blocks
 reset_scratch(BAD_LEN_LINE)
-checks.append(("mutating terminal command on bad file blocks", '"decision": "block"' in run(term_payload)))
+out = run(term_payload)
+checks.append(("mutating terminal command on bad file blocks", '"decision": "block"' in out))
 
 # 7. read-only terminal command -> no path extracted -> no-op
 reset_scratch(BAD_LEN_LINE)

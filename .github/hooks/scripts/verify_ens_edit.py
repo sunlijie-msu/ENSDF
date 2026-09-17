@@ -1,4 +1,5 @@
 import json
+import hashlib
 import os
 import re
 import subprocess
@@ -16,7 +17,10 @@ EDIT_TOOLS = {"replace_string_in_file", "multi_replace_string_in_file", "editFil
 #   PASS 1 (always): ASCII-only check — blocks if any non-ASCII character
 #     found in the .ens file. Applies to ALL edits (data records AND comments).
 #
-#   PASS 2 (data only): 80-column ruler validation via ensdf_1line_ruler.py.
+#   PASS 2 (always when guard supplied an expectation): actual content must match
+#     the PreToolUse predicted result, catching editor-side block collapse.
+#
+#   PASS 3 (data only): 80-column ruler validation via ensdf_1line_ruler.py.
 #     Skipped for comment-only edits (per ENSDF-Agent.agent.md).
 #
 # Key features:
@@ -52,6 +56,44 @@ def load_input():
         return json.loads(raw)
     except json.JSONDecodeError:
         return {}
+
+
+def file_digest(path):
+    with open(path, "r", encoding="utf-8", newline="") as fh:
+        text = fh.read().replace("\r\n", "\n")
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def pop_expected_hashes(paths, cwd):
+    """Return post-edit hash mismatches, then consume one-shot expectations."""
+    state_path = os.path.join(cwd, ".github", "temp", "ens_guard", "state.json")
+    try:
+        with open(state_path, encoding="utf-8") as fh:
+            state = json.load(fh)
+    except (OSError, ValueError):
+        return []
+
+    mismatches = []
+    consumed = False
+    for path in paths:
+        absolute = os.path.realpath(resolve_path(path, cwd))
+        expected = state.get(absolute)
+        if not expected:
+            continue
+        consumed = True
+        try:
+            actual = file_digest(absolute)
+        except OSError:
+            actual = None
+        if actual != expected:
+            mismatches.append((absolute, expected, actual))
+        state.pop(absolute, None)
+
+    if consumed:
+        os.makedirs(os.path.dirname(state_path), exist_ok=True)
+        with open(state_path, "w", encoding="utf-8") as fh:
+            json.dump(state, fh)
+    return mismatches
 
 
 def path_value(item):
@@ -319,9 +361,27 @@ def main():
         emit({})
         return
 
+    cwd = payload.get("cwd", "") or os.getcwd()
+    mismatches = pop_expected_hashes(ens_paths, cwd)
+    if mismatches:
+        files = "\n".join(f"  {path}" for path, _, _ in mismatches)
+        emit({
+            "decision": "block",
+            "reason": (
+                "ENSDF post-edit content differs from the PreToolUse prediction. "
+                "The edit may have collapsed, expanded, or otherwise rewritten an unintended block.\n"
+                f"Affected file(s):\n{files}\n"
+                "Re-read the affected block, inspect the diff, and rebuild a smaller exact edit."
+            ),
+            "hookSpecificOutput": {
+                "hookEventName": "PostToolUse",
+                "additionalContext": "Predicted post-edit hash did not match actual file content.",
+            },
+        })
+        return
+
     # ===== PASS 1: ASCII-only validation (ALWAYS — data records AND comments) =====
     # Non-ASCII characters are forbidden in .ens files regardless of record type.
-    cwd = payload.get("cwd", "") or os.getcwd()
     ascii_errors = []
     for path in ens_paths:
         abs_path = resolve_path(path, cwd)

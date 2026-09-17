@@ -38,6 +38,17 @@ def edit_files_event(old, new, tool_name="editFiles"):
                                         "edits": [{"oldText": old, "newText": new}]}]}}
 
 
+def patch_event(old, new):
+    patch = ("*** Begin Patch\n"
+             f"*** Update File: {SCRATCH.as_posix()}\n"
+             "@@\n"
+             f"-{old}\n"
+             f"+{new}\n"
+             f"{LINES[1]}\n"
+             "*** End Patch")
+    return {"tool_name": "apply_patch", "tool_input": {"input": patch}}
+
+
 def denied(payload):
     return "deny" in run(payload)
 
@@ -69,6 +80,11 @@ read_event()
 checks.append(("editFiles unanchored .ens edit denied", denied({"tool_name": "editFiles",
     "tool_input": {"files": [{"path": str(SCRATCH), "content": "replacement"}]}})))
 
+# apply_patch is refused for .ens, even when its hunk appears anchored
+reset_scratch()
+read_event()
+checks.append(("anchored apply_patch denied", denied(patch_event(LINES[0], VARIANT))))
+
 # concurrent edit: mutate scratch WITHOUT a read_file, then try to edit the old text
 read_event()
 reset_scratch([VARIANT] + LINES[1:])  # simulates a human edit the guard was never told about
@@ -94,7 +110,7 @@ ro_cmd = f'python .github/scripts/ensdf_1line_ruler.py --file "{SCRATCH.as_posix
 checks.append(("read-only terminal command allowed", not denied({"tool_name": "run_in_terminal", "tool_input": {"command": ro_cmd}})))
 
 patch_event = {"tool_name": "apply_patch", "tool_input": {"input": f"*** Update File: {SCRATCH.as_posix()}\n@@\n-old\n+new\n"}}
-checks.append(("apply_patch on .ens denied", denied(patch_event)))
+checks.append(("unanchored apply_patch denied", denied(patch_event)))
 
 for name, ok in checks:
     print(("PASS " if ok else "FAIL ") + name)
