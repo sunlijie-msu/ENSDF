@@ -23,6 +23,11 @@ EDIT_TOOLS = {"replace_string_in_file", "multi_replace_string_in_file", "editFil
 #   PASS 3 (data only): 80-column ruler validation via ensdf_1line_ruler.py.
 #     Skipped for comment-only edits (per ENSDF-Agent.agent.md).
 #
+#   Token policy: only mutating calls (edits / apply_patch / create_file /
+#     mutating terminal) consume the one-shot PreToolUse token. Read-only
+#     calls exit early and never touch guard state — a read issues the token
+#     that the immediately following edit depends on.
+#
 # Key features:
 #   - Handles all VS Code file-editing tool input shapes
 #   - Validates ALL .ens files touched by a single tool call (multi-file)
@@ -352,8 +357,29 @@ def validate_ens_ascii(abs_path):
     return False, "\n".join(lines)
 
 
+def is_mutating_call(payload):
+    """True only for calls that can rewrite .ens content.
+
+    Read-only calls must never consume guard tokens: PreToolUse issues a
+    token on each read and the immediately following edit depends on it.
+    Popping tokens for read calls caused false
+    "changed since your last read/edit (concurrent edit)" denials.
+    """
+    tool = payload.get("tool_name", "")
+    if tool in EDIT_TOOLS or tool in ("apply_patch", "create_file"):
+        return True
+    command = (payload.get("tool_input") or {}).get("command")
+    return isinstance(command, str) and "--dry-run" not in command and bool(MUTATING_RE.search(command))
+
+
 def main():
     payload = load_input()
+    tool = payload.get("tool_name", "")
+
+    # Read-only calls: nothing to validate; the guard token must survive.
+    if tool in ("read_file", "readFile", "read/readFile"):
+        emit({})
+        return
 
     # Collect all .ens files touched by this edit
     ens_paths = find_all_ens_paths(payload)
@@ -362,7 +388,7 @@ def main():
         return
 
     cwd = payload.get("cwd", "") or os.getcwd()
-    mismatches = pop_expected_hashes(ens_paths, cwd)
+    mismatches = pop_expected_hashes(ens_paths, cwd) if is_mutating_call(payload) else []
     if mismatches:
         files = "\n".join(f"  {path}" for path, _, _ in mismatches)
         emit({

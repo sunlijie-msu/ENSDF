@@ -23,10 +23,15 @@ If text changed or matches zero/multiple times, hook denies edit.
 
 PostToolUse validation stays with verify_ens_edit.py (ASCII + 80-column ruler).
 
+Token lifecycle (state.json, one-shot):
+issued by   read_file
+consumed by each verified edit / mutating terminal command
+preserved   by read-only tools (a read never consumes its own token)
+
 Normal edit flow:
-AI reads current file
+AI reads current file          (token issued)
 AI builds exact oldText → newText edit
-Hook hash matches → edit allowed
+Hook hash matches → edit allowed (token consumed after PostToolUse verify)
 
 Concurrent edit flow:
 AI reads file
@@ -53,6 +58,7 @@ SPAN = 8  # max lines in one oldString
 ENS_PATH_RE = re.compile(r"[^\s\"']+\.ens", re.IGNORECASE)
 MUTATING_RE = re.compile(r"--fix\b|>>?\s|Set-Content|Out-File|Add-Content|\.write_text\(|WriteAllText", re.IGNORECASE)
 EDIT_TOOLS = {"replace_string_in_file", "multi_replace_string_in_file", "editFiles", "edit/editFiles"}
+READ_TOOLS = {"read_file", "readFile", "read/readFile"}
 
 
 def deny(reason):
@@ -176,8 +182,13 @@ def guard_operations(operations, state, root):
         text = read(key)
         if text is None:
             deny(f"Cannot read {os.path.basename(key)}.")
-        if state.get(key) != digest(text):
-            deny(f"{os.path.basename(key)} changed since your last read/edit (concurrent edit). "
+        expected = state.get(key)
+        if expected is None:
+            deny(f"No fresh-read token for {os.path.basename(key)} (tokens are one-shot: issued by read_file, "
+                 f"consumed by each verified edit) — this is not a concurrent-edit warning. "
+                 f"Re-read the file, then retry the edit.")
+        if expected != digest(text):
+            deny(f"{os.path.basename(key)} changed on disk since your last read/edit (concurrent edit). "
                  f"Re-read the surrounding block, rebuild the anchor, retry. Never overwrite a concurrent edit.")
         for old, new in ops:
             hits = text.count(old)
@@ -265,8 +276,13 @@ def guard_comment_operations(operations, state, root):
         text = read(key)
         if text is None:
             deny(f"Cannot read {os.path.basename(key)}.")
-        if state.get(key) != digest(text):
-            deny(f"{os.path.basename(key)} changed since your last read/edit (concurrent edit). "
+        expected = state.get(key)
+        if expected is None:
+            deny(f"No fresh-read token for {os.path.basename(key)} (tokens are one-shot: issued by read_file, "
+                 f"consumed by each verified edit) — this is not a concurrent-edit warning. "
+                 f"Re-read the file, then retry the edit.")
+        if expected != digest(text):
+            deny(f"{os.path.basename(key)} changed on disk since your last read/edit (concurrent edit). "
                  f"Re-read the surrounding block, rebuild the anchor, retry. Never overwrite a concurrent edit.")
         lines = text.split("\n")
         if comment_index >= len(lines) or lines[comment_index][6:7] != "c":
@@ -297,8 +313,12 @@ def guard_terminal(command, state, root):
         text = read(key)
         if text is None:
             continue
-        if state.get(key) != digest(text):
-            deny(f"{os.path.basename(key)} changed since your last read (concurrent edit). "
+        expected = state.get(key)
+        if expected is None:
+            deny(f"No fresh-read token for {os.path.basename(key)} — re-read the file before running "
+                 f"a command that rewrites it (this is not a concurrent-edit warning).")
+        if expected != digest(text):
+            deny(f"{os.path.basename(key)} changed on disk since your last read (concurrent edit). "
                  f"Re-read before running a command that rewrites this file.")
         state.pop(key, None)
         touched = True
@@ -313,7 +333,14 @@ def main():
     state_path = os.path.join(root, ".github", "temp", "ens_guard", "state.json")
     state = state_load(state_path)
 
-    if tool in ("read_file", "readFile"):  # a read refreshes freshness
+    try:  # TEMP DIAGNOSTIC (remove after tool-name discovery)
+        with open(os.path.join(root, ".github", "temp", "ens_guard", "hook_events.log"),
+                  "a", encoding="utf-8") as fh:
+            fh.write(f"{tool!r} filePath={data.get('filePath', '')!r} keys={sorted(data)[:12]}\n")
+    except OSError:
+        pass
+
+    if tool in READ_TOOLS:  # a read refreshes freshness; verify skips reads so it is not consumed
         path = data.get("filePath", "")
         if path.lower().endswith(".ens"):
             text = read(key_of(path, root))
