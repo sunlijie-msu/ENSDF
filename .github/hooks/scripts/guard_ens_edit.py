@@ -313,7 +313,7 @@ def main():
     state_path = os.path.join(root, ".github", "temp", "ens_guard", "state.json")
     state = state_load(state_path)
 
-    if tool == "read_file":  # a read refreshes freshness
+    if tool in ("read_file", "readFile"):  # a read refreshes freshness
         path = data.get("filePath", "")
         if path.lower().endswith(".ens"):
             text = read(key_of(path, root))
