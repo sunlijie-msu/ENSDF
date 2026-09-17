@@ -192,6 +192,54 @@ def guard_operations(operations, state, root):
     return touched
 
 
+def comment_patch_operations(patch_text, root):
+    """Extract one-line c-record replacements from apply_patch text."""
+    operations = []
+    current_path = None
+    old_line = None
+    new_line = None
+    context_seen = False
+
+    def flush():
+        nonlocal old_line, new_line, context_seen
+        if current_path and old_line is not None and new_line is not None:
+            if context_seen or old_line[6:7] != "c" or new_line[6:7] != "c":
+                deny("Only single anchored cL/cG apply_patch replacements are allowed for .ens files.")
+            text = read(key_of(current_path, root))
+            if text is None:
+                deny(f"Cannot read {os.path.basename(key_of(current_path, root))}.")
+            matches = [line for line in text.split("\n") if line.rstrip() == old_line.rstrip()]
+            if len(matches) != 1:
+                deny(f"Comment anchor matches {len(matches)} time(s); rebuild it from the current file.")
+            operations.append((current_path, matches[0], new_line.rstrip()))
+        old_line = None
+        new_line = None
+        context_seen = False
+
+    for line in patch_text.splitlines():
+        if line.startswith("*** Update File: "):
+            flush()
+            current_path = line.split(": ", 1)[1].strip()
+            continue
+        if line.startswith("*** "):
+            flush()
+            current_path = None
+            continue
+        if line.startswith("@@"):
+            flush()
+            continue
+        if line.startswith("-"):
+            old_line = line[1:]
+        elif line.startswith("+"):
+            new_line = line[1:]
+        elif line.startswith(" "):
+            context_seen = True
+    flush()
+    if not operations:
+        deny(".ens apply_patch requires one exact single-line cL/cG replacement.")
+    return operations
+
+
 def guard_edits(data, state, root):
     """Check exact anchors for all supported edit payload shapes."""
     operations, paths = edit_operations(data)
@@ -240,7 +288,9 @@ def main():
     if tool == "apply_patch":
         patch_text = data.get("input", "") or ""
         if re.search(r"^\*\*\* (?:Update|Add|Delete) File: .*\.ens", patch_text, re.IGNORECASE | re.MULTILINE):
-            deny("apply_patch on .ens is refused. Use editFiles or a replacement tool with exact oldText/newText anchors.")
+            operations = comment_patch_operations(patch_text, root)
+            if guard_operations(operations, state, root):
+                state_save(state, state_path)
         return
 
     if tool in ("run_in_terminal", "send_to_terminal"):

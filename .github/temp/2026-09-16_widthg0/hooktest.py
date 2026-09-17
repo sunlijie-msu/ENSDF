@@ -44,7 +44,6 @@ def patch_event(old, new):
              "@@\n"
              f"-{old}\n"
              f"+{new}\n"
-             f"{LINES[1]}\n"
              "*** End Patch")
     return {"tool_name": "apply_patch", "tool_input": {"input": patch}}
 
@@ -80,10 +79,10 @@ read_event()
 checks.append(("editFiles unanchored .ens edit denied", denied({"tool_name": "editFiles",
     "tool_input": {"files": [{"path": str(SCRATCH), "content": "replacement"}]}})))
 
-# apply_patch is refused for .ens, even when its hunk appears anchored
+# apply_patch is allowed only for one exact cL/cG replacement
 reset_scratch()
 read_event()
-checks.append(("anchored apply_patch denied", denied(patch_event(LINES[0], VARIANT))))
+checks.append(("anchored comment apply_patch allowed", not denied(patch_event(LINES[0], VARIANT))))
 
 # concurrent edit: mutate scratch WITHOUT a read_file, then try to edit the old text
 read_event()
@@ -109,8 +108,8 @@ checks.append(("--dry-run exempted", not denied({"tool_name": "run_in_terminal",
 ro_cmd = f'python .github/scripts/ensdf_1line_ruler.py --file "{SCRATCH.as_posix()}"'
 checks.append(("read-only terminal command allowed", not denied({"tool_name": "run_in_terminal", "tool_input": {"command": ro_cmd}})))
 
-patch_event = {"tool_name": "apply_patch", "tool_input": {"input": f"*** Update File: {SCRATCH.as_posix()}\n@@\n-old\n+new\n"}}
-checks.append(("unanchored apply_patch denied", denied(patch_event)))
+unanchored_patch = {"tool_name": "apply_patch", "tool_input": {"input": f"*** Update File: {SCRATCH.as_posix()}\n@@\n-old\n+new\n"}}
+checks.append(("unanchored apply_patch denied", denied(unanchored_patch)))
 
 for name, ok in checks:
     print(("PASS " if ok else "FAIL ") + name)
