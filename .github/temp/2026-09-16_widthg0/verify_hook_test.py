@@ -31,6 +31,13 @@ def edit_payload(old, new):
             "cwd": r"D:\X\ND\ENSDF"}
 
 
+def edit_files_payload(old, new, tool_name="editFiles"):
+    return {"tool_name": tool_name,
+            "tool_input": {"files": [{"path": str(SCRATCH),
+                                        "edits": [{"oldText": old, "newText": new}]}]},
+            "cwd": r"D:\X\ND\ENSDF"}
+
+
 checks = []
 
 # 1. comment-only edit on a file with a BAD (short) data line elsewhere -> ruler must be SKIPPED
@@ -38,10 +45,19 @@ reset_scratch(BAD_LEN_LINE)
 out = run(edit_payload(COMMENT_LINE, COMMENT_LINE.replace("Scratch", "Edited")))
 checks.append(("comment-only edit skips ruler despite bad data line elsewhere", out == "{}" or out == ""))
 
+# editFiles workspace-edit shape must receive the same comment-only treatment
+reset_scratch(BAD_LEN_LINE)
+out = run(edit_files_payload(COMMENT_LINE, COMMENT_LINE.replace("Scratch", "Edited")))
+checks.append(("editFiles comment-only edit skips ruler", out == "{}" or out == ""))
+
 # 2. data-record edit on the SAME bad-line file -> ruler must RUN and BLOCK
 reset_scratch(BAD_LEN_LINE)
 out = run(edit_payload(BAD_LEN_LINE, BAD_LEN_LINE + "x"))
 checks.append(("data edit triggers ruler and blocks on bad-length line", '"decision": "block"' in out))
+
+reset_scratch(BAD_LEN_LINE)
+out = run(edit_files_payload(BAD_LEN_LINE, BAD_LEN_LINE + "x", "edit/editFiles"))
+checks.append(("editFiles data edit triggers ruler", '"decision": "block"' in out))
 
 # 3. clean file, clean data edit -> ruler runs and PASSES
 reset_scratch(DATA_LINE)

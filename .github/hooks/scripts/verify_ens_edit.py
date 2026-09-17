@@ -6,6 +6,7 @@ import sys
 import difflib
 
 MUTATING_RE = re.compile(r"--fix\b|>>?\s|Set-Content|Out-File|Add-Content|\.write_text\(|WriteAllText", re.IGNORECASE)
+EDIT_TOOLS = {"replace_string_in_file", "multi_replace_string_in_file", "editFiles", "edit/editFiles"}
 
 # ENSDF-Agent Hook: Validate .ens files after edits
 # --------------------------------------------------------
@@ -53,12 +54,70 @@ def load_input():
         return {}
 
 
+def path_value(item):
+    for field in ("filePath", "file_path", "path", "uri"):
+        value = item.get(field)
+        if isinstance(value, str) and value:
+            return value
+    return ""
+
+
+def text_value(item, *fields):
+    for field in fields:
+        value = item.get(field)
+        if isinstance(value, str):
+            return value
+    return None
+
+
+def edit_entries(tool_input):
+    """Return (path, old, new) entries for legacy and editFiles payloads."""
+    entries = []
+    direct_path = path_value(tool_input)
+    direct_old = text_value(tool_input, "oldString", "old_string", "oldText", "old_text")
+    direct_new = text_value(tool_input, "newString", "new_string", "newText", "new_text")
+    if direct_path and direct_old is not None and direct_new is not None:
+        entries.append((direct_path, direct_old, direct_new))
+
+    for item in tool_input.get("replacements") or []:
+        if not isinstance(item, dict):
+            continue
+        path = path_value(item) or direct_path
+        old = text_value(item, "oldString", "old_string", "oldText", "old_text")
+        new = text_value(item, "newString", "new_string", "newText", "new_text")
+        if path and old is not None and new is not None:
+            entries.append((path, old, new))
+
+    for file_item in tool_input.get("files") or []:
+        if not isinstance(file_item, dict):
+            continue
+        path = path_value(file_item)
+        for item in file_item.get("edits") or file_item.get("operations") or []:
+            if not isinstance(item, dict):
+                continue
+            old = text_value(item, "oldString", "old_string", "oldText", "old_text")
+            new = text_value(item, "newString", "new_string", "newText", "new_text")
+            if path and old is not None and new is not None:
+                entries.append((path, old, new))
+
+    for item in tool_input.get("edits") or tool_input.get("operations") or []:
+        if not isinstance(item, dict):
+            continue
+        path = path_value(item) or direct_path
+        old = text_value(item, "oldString", "old_string", "oldText", "old_text")
+        new = text_value(item, "newString", "new_string", "newText", "new_text")
+        if path and old is not None and new is not None:
+            entries.append((path, old, new))
+    return entries
+
+
 def find_all_ens_paths(payload):
     """Collect all unique .ens file paths touched by this tool call.
 
     Handles four input shapes:
       - replace_string_in_file / create_file  → tool_input.filePath
-      - multi_replace_string_in_file          → tool_input.replacements[*].filePath
+    - multi_replace_string_in_file          → tool_input.replacements[*].filePath
+    - editFiles / edit/editFiles            → tool_input.files[*].path
       - apply_patch                           → *** Update/Add File: <path> headers
       - TOOL_INPUT_FILE_PATH env var          → set by some integrations
     """
@@ -70,11 +129,23 @@ def find_all_ens_paths(payload):
     if env_path and env_path.lower().endswith(".ens"):
         paths.add(env_path)
 
-    # replace_string_in_file / create_file → tool_input.filePath
+    # Direct and workspace-edit payloads
     for key in ("filePath", "file_path"):
         value = tool_input.get(key)
         if isinstance(value, str) and value.lower().endswith(".ens"):
             paths.add(value)
+
+    for file_item in tool_input.get("files") or []:
+        if isinstance(file_item, dict):
+            value = path_value(file_item)
+            if value.lower().endswith(".ens"):
+                paths.add(value)
+
+    for item in tool_input.get("edits") or tool_input.get("operations") or []:
+        if isinstance(item, dict):
+            value = path_value(item)
+            if isinstance(value, str) and value.lower().endswith(".ens"):
+                paths.add(value)
 
     # multi_replace_string_in_file → tool_input.replacements[*].filePath
     replacements = tool_input.get("replacements")
@@ -138,24 +209,12 @@ def extract_all_changed_lines(payload):
 
     changed = []
 
-    old_string = tool_input.get("oldString")
-    new_string = tool_input.get("newString")
-    if isinstance(old_string, str) and isinstance(new_string, str):
+    for _, old_string, new_string in edit_entries(tool_input):
         changed.extend(extract_changed_lines_from_pair(old_string, new_string))
 
     content = tool_input.get("content")
     if isinstance(content, str):
         changed.extend(content.splitlines())
-
-    replacements = tool_input.get("replacements")
-    if isinstance(replacements, list):
-        for item in replacements:
-            if not isinstance(item, dict):
-                continue
-            old_string = item.get("oldString")
-            new_string = item.get("newString")
-            if isinstance(old_string, str) and isinstance(new_string, str):
-                changed.extend(extract_changed_lines_from_pair(old_string, new_string))
 
     return changed
 
@@ -318,7 +377,7 @@ def main():
             "  EDIT -> VALIDATE -> CONFIRM -> REPEAT\n\n"
             "Required steps:\n"
             "  1. Identify the misaligned field from the error output below.\n"
-            "  2. Fix ONE field at a time using replace_string_in_file.\n"
+            "  2. Fix ONE field at a time using replace_string_in_file or editFiles.\n"
             '  3. Re-run: python .github/scripts/ensdf_1line_ruler.py --line "<fixed line>"\n'
             "  4. Confirm exit code 0 before proceeding to the next edit.\n\n"
             "Do NOT make multiple edits before validating each one.\n\n"

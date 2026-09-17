@@ -32,6 +32,12 @@ def edit_event(old, new):
             "tool_input": {"filePath": str(SCRATCH), "oldString": old, "newString": new}}
 
 
+def edit_files_event(old, new, tool_name="editFiles"):
+    return {"tool_name": tool_name,
+            "tool_input": {"files": [{"path": str(SCRATCH),
+                                        "edits": [{"oldText": old, "newText": new}]}]}}
+
+
 def denied(payload):
     return "deny" in run(payload)
 
@@ -52,6 +58,16 @@ checks.append(("byte-exact anchor allowed", not denied(edit_event(LINES[0], VARI
 reset_scratch([VARIANT] + LINES[1:])
 checks.append(("chained edit without re-read allowed", not denied(edit_event(VARIANT, LINES[0]))))
 reset_scratch()
+
+# editFiles workspace-edit shape must receive the same protection
+read_event()
+checks.append(("editFiles exact anchor allowed", not denied(edit_files_event(LINES[0], VARIANT))))
+reset_scratch([VARIANT] + LINES[1:])
+checks.append(("editFiles chained edit allowed", not denied(edit_files_event(VARIANT, LINES[0], "edit/editFiles"))))
+reset_scratch()
+read_event()
+checks.append(("editFiles unanchored .ens edit denied", denied({"tool_name": "editFiles",
+    "tool_input": {"files": [{"path": str(SCRATCH), "content": "replacement"}]}})))
 
 # concurrent edit: mutate scratch WITHOUT a read_file, then try to edit the old text
 read_event()
