@@ -710,8 +710,8 @@
  34S  cL T$lifetime |t=1.4|*10{+2} fs {I4}: weighted average of 190 fs {I50}    
  34S 2cL from (2005Ma03, DSAM) {+24}Mg({+16}O,|a2p|g) and 115 fs {I35} from     
  34S 3cL (1977GrZH, DSAM) {+31}P(|a,p|g).                                       
- 34S  cL J$2099.6|g M1+E2, |DJ=1 |g to 5-, 5691 level. 1539.7|g E2, |DJ=2 to 4-,
- 34S 2cL 6252 level.                                                            
+ 34S  cL J$2099.6|g, M1+E2, |DJ=1 |g to 5-, 5691 level. 1539.7|g, E2, |DJ=2 to  
+ 34S 2cL 4-, 6252 level.                                                        
  34S   G 1539.7    5  19     4  E2                                          M   
  34S F G FL=6251.68                                                             
  34S  cG E$weighted average of 1539.6 {I5} from {+24}Mg({+16}O,|a2p|g) and 1540 
@@ -1152,18 +1152,16 @@
  34S  d                                                                         
  34S   L 10399.9   7  8(-)                                                  B   
  34S X L XREF=H                                                                 
- 34S  cL J$Q |DJ=2 |g to 6-, 7791.                                              
+ 34S  cL J$2608|g, Q to 6-, 7791 level, 2028.8|g to 7-, 8370 level.             
  34S   G 986.8     9  11.3   56                                             M   
  34S   G 2028.8    6  47     10                                             M   
  34S   G 2608.6    6  100    14 Q                                           M   
  34S  d                                                                         
- 34S   L 10408     5  2+                                                        
+ 34S   L 10408     5  2+                                                    A   
  34S X L XREF=L                                                                 
  34S  cL J$E2 |DJ=2 |g to 0+, g.s.                                              
  34S   G 8279         100                                                       
- 34S F G FLAG=ab                                                                
  34S   G 10406        100       E2                                              
- 34S F G FLAG=abc                                                               
  34S  d                                                                         
  34S   L 10430     10 1+                                                        
  34S X L XREF=T                                                                 
@@ -1181,9 +1179,7 @@
  34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
  34S  cL $|G{-|g}=0.84 eV from {+30}Si(|a,|g),(|a,n).                           
  34S   G 8365         10     LT                                                 
- 34S F G FLAG=ab                                                                
  34S   G 10492        100       E1                                              
- 34S F G FLAG=abc                                                               
  34S  d                                                                         
  34S   L 10528     5                                                            
  34S X L XREF=L                                                                 
@@ -1193,11 +1189,9 @@
  34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
  34S  cL $|G{-|g}>1.3 eV from {+30}Si(|a,|g),(|a,n).                            
  34S   G 7282         100       E1                                              
- 34S F G FLAG=abc                                                               
  34S S G NC+=0.00258 4                                                          
  34S S G IPC=0.00258 4                                                          
  34S   G 8458         60                                                        
- 34S F G FLAG=ab                                                                
  34S  d                                                                         
  34S   L 10617     5                                                            
  34S X L XREF=L                                                                 
@@ -1207,9 +1201,7 @@
  34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
  34S  cL $|G{-|g}>0.7 eV from {+30}Si(|a,|g),(|a,n).                            
  34S   G 8496         100                                                       
- 34S F G FLAG=ab                                                                
  34S   G 10623        100       E1                                              
- 34S F G FLAG=abc                                                               
  34S  d                                                                         
  34S   L 10650.13  19                                                           
  34S X L XREF=L(10663*)O(10700*)PT(10660*)                                      
@@ -1233,11 +1225,8 @@
  34S  cL J$E1 |DJ=1 |g to 2+, 3304 (angular correlation excludes 3-).           
  34S  cL $|G{-|g}=0.73 eV from {+30}Si(|a,|g),(|a,n).                           
  34S   G 7365         100       E1                                              
- 34S F G FLAG=abc                                                               
  34S   G 8541         30                                                        
- 34S F G FLAG=ab                                                                
  34S   G 10668        10     LT                                                 
- 34S F G FLAG=ab                                                                
  34S  d                                                                         
  34S   L 10700        (6+)                                                      
  34S X L XREF=L(10705*)O(10700*)                                                
@@ -1250,9 +1239,7 @@
  34S X L XREF=L                                                                 
  34S  cL J$M1+E2 |DJ=0 |g to 2+, 3304.                                          
  34S   G 8639         100       M1+E2    +0.3                                   
- 34S F G FLAG=abcd                                                              
  34S   G 10766        10     LT                                                 
- 34S F G FLAG=ab                                                                
  34S  d                                                                         
  34S   L 10790     5  1-                                                        
  34S X L XREF=LS                                                                
@@ -1262,11 +1249,8 @@
  34S  cL $|G{-|g0}=0.75 eV {I14} from {+34}S(|g,|g'),(pol |g,|g').              
  34S  cL $|G{-|g}=3 eV from {+30}Si(|a,|g),(|a,n).                              
  34S   G 7486         5                                                         
- 34S F G FLAG=ab                                                                
  34S   G 8662         20                                                        
- 34S F G FLAG=ab                                                                
  34S   G 10784     13 100       E1                                              
- 34S F G FLAG=abc                                                               
  34S  cG RI,M$from {+30}Si(|a,|g)                                               
  34S  d                                                                         
  34S   L 10800     10 1+                                                        
@@ -1303,19 +1287,16 @@
  34S X L XREF=L                                                                 
  34S  cL J$E1+M2 |DJ=1 |g to 2+, 2128 (angular correlation excludes 3-).        
  34S   G 8802         100       E1+M2    +0.154  17                             
- 34S F G FLAG=abcd                                                              
  34S  d                                                                         
  34S   L 10994     5  2+                                                        
  34S X L XREF=L                                                                 
  34S  cL J$M1+E2 |DJ=0 |g to 2+, 2128.                                          
  34S   G 8865         100       M1+E2    +0.078  32                             
- 34S F G FLAG=abcd                                                              
  34S  d                                                                         
  34S   L 11015     5  2+                                                        
  34S X L XREF=LT(11020*)                                                        
  34S  cL J$M1+E2 |DJ=0 |g to 2+, 2128.                                          
  34S   G 8886         100       M1+E2    -0.52   22                             
- 34S F G FLAG=abcd                                                              
  34S  d                                                                         
  34S   L 11020     10 1+                                                        
  34S X L XREF=L(11047*)T(11020*)                                                
@@ -1347,39 +1328,29 @@
  34S  cL J$E2 |DJ=2 |g to 0+, g.s.                                              
  34S  cL $|G{-|g}=0.2 eV from {+30}Si(|a,|g),(|a,n).                            
  34S   G 7783         47                                                        
- 34S F G FLAG=ab                                                                
  34S   G 8959         44                                                        
- 34S F G FLAG=ab                                                                
  34S   G 11086        100       E2                                              
- 34S F G FLAG=abc                                                               
  34S  d                                                                         
  34S   L 11108     5  3-                                                        
  34S X L XREF=L                                                                 
  34S  cL J$E1+M2 |DJ=1 |g to 2+, 2128 (angular correlation excludes 1-).        
  34S   G 8979         100       E1+M2    +0.062  1                              
- 34S F G FLAG=abcd                                                              
  34S  d                                                                         
  34S   L 11142     5  1-                                                        
  34S X L XREF=L                                                                 
  34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
  34S  cL $|G{-|g}=2.6 eV from {+30}Si(|a,|g),(|a,n).                            
  34S   G 7837         9                                                         
- 34S F G FLAG=ab                                                                
  34S   G 9013         18                                                        
- 34S F G FLAG=ab                                                                
  34S   G 11140        100       E1                                              
- 34S F G FLAG=abc                                                               
  34S  d                                                                         
  34S   L 11165     5  1-                                                        
  34S X L XREF=L                                                                 
  34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
  34S  cL $|G{-|g}=1.7 eV from {+30}Si(|a,|g),(|a,n).                            
  34S   G 7860         100                                                       
- 34S F G FLAG=ab                                                                
  34S   G 9036         13                                                        
- 34S F G FLAG=ab                                                                
  34S   G 11163        77        E1                                              
- 34S F G FLAG=abc                                                               
  34S  d                                                                         
  34S   L 11180     5                                                            
  34S X L XREF=L                                                                 
@@ -1392,28 +1363,21 @@
  34S  cL J$(E2) |DJ=2 |g to 0+, g.s.                                            
  34S  cL $|G{-|g}=0.2 eV from {+30}Si(|a,|g),(|a,n).                            
  34S   G 7915         100                                                       
- 34S F G FLAG=ab                                                                
  34S   G 9091         48                                                        
- 34S F G FLAG=ab                                                                
  34S   G 11218        32        E2                                              
- 34S F G FLAG=abc                                                               
  34S  d                                                                         
  34S   L 11233     5  1-                                                        
  34S X L XREF=L                                                                 
  34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
  34S  cL $|G{-|g}=2.8 eV from {+30}Si(|a,|g),(|a,n).                            
  34S   G 7928         100                                                       
- 34S F G FLAG=ab                                                                
  34S   G 9104         3.7                                                       
- 34S F G FLAG=ab                                                                
  34S   G 11231        24        E1                                              
- 34S F G FLAG=abc                                                               
  34S  d                                                                         
  34S   L 11272     5  2+                                                        
  34S X L XREF=L                                                                 
  34S  cL J$M1+E2 |DJ=0 |g to 2+, 2128.                                          
  34S   G 9143         100       M1+E2    +0.18   15                             
- 34S F G FLAG=abcd                                                              
  34S  d                                                                         
  34S   L 11289     5                                                            
  34S X L XREF=L                                                                 
@@ -1423,22 +1387,16 @@
  34S  cL J$E2 |DJ=2 |g to 0+, g.s.                                              
  34S  cL $|G{-|g}=0.08 eV from {+30}Si(|a,|g),(|a,n).                           
  34S   G 8010         67                                                        
- 34S F G FLAG=ab                                                                
  34S   G 9186         38                                                        
- 34S F G FLAG=ab                                                                
  34S   G 11313        100       E2                                              
- 34S F G FLAG=abc                                                               
  34S  d                                                                         
  34S   L 11323     5  1-                                                        
  34S X L XREF=L                                                                 
  34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
  34S  cL $|G{-|g}=2.2 eV from {+30}Si(|a,|g),(|a,n).                            
  34S   G 8018         48                                                        
- 34S F G FLAG=ab                                                                
  34S   G 9194         65                                                        
- 34S F G FLAG=ab                                                                
  34S   G 11321        100       E1                                              
- 34S F G FLAG=abc                                                               
  34S  d                                                                         
  34S   L 11350     10 1+                                                        
  34S X L XREF=T                                                                 
@@ -1448,22 +1406,16 @@
  34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
  34S  cL $|G{-|g}=1.4 eV from {+30}Si(|a,|g),(|a,n).                            
  34S   G 8053         100                                                       
- 34S F G FLAG=ab                                                                
  34S   G 9229         18                                                        
- 34S F G FLAG=ab                                                                
  34S   G 11356        36        E1                                              
- 34S F G FLAG=abc                                                               
  34S  d                                                                         
  34S   L 11372     5  3-                                                        
  34S X L XREF=L                                                                 
  34S  cL J$E1+M2 |DJ=1 |g to 2+, 2128 (angular correlation excludes 1-).        
  34S  cL $|G{-|g}=1.5 eV from {+30}Si(|a,|g),(|a,n).                            
  34S   G 8067         44                                                        
- 34S F G FLAG=ab                                                                
  34S   G 9243         100       E1+M2    +0.022  6                              
- 34S F G FLAG=abc                                                               
  34S   G 11370        5.9                                                       
- 34S F G FLAG=ab                                                                
  34S  d                                                                         
  34S   L 11374.3   8  8(+)                                                      
  34S X L XREF=H                                                                 
@@ -1476,11 +1428,8 @@
  34S  cL J$E2 |DJ=2 |g to 0+, g.s.                                              
  34S  cL $|G{-|g}=0.1 eV from {+30}Si(|a,|g),(|a,n).                            
  34S   G 8076         100                                                       
- 34S F G FLAG=ab                                                                
  34S   G 9252         33                                                        
- 34S F G FLAG=ab                                                                
  34S   G 11379        37        E2                                              
- 34S F G FLAG=abc                                                               
  34S  d                                                                         
  34S   L 11398     5                                                            
  34S X L XREF=L                                                                 
@@ -1585,11 +1534,8 @@
  34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
  34S  cL $|G{-|g}=4.4 eV from {+30}Si(|a,|g),(|a,n).                            
  34S   G 8115         5                                                         
- 34S F G FLAG=ab                                                                
  34S   G 9291         19                                                        
- 34S F G FLAG=ab                                                                
  34S   G 11418        100       E1                                              
- 34S F G FLAG=abc                                                               
  34S  d                                                                         
  34S   L 11430.3      2+               0.116 KEV 20                             
  34S X L XREF=L(11435*)Q                                                        
@@ -1640,11 +1586,8 @@
  34S  cL $|G{-n}=65 eV {I10}, |G{-|a}=0.11 keV {I6} from {+33}S(n,|g),(n,n);    
  34S 2cL |G{-|g}=0.6 eV from {+30}Si(|a,|g),(|a,n).                             
  34S   G 8185         56                                                        
- 34S F G FLAG=ab                                                                
  34S   G 9361         46                                                        
- 34S F G FLAG=ab                                                                
  34S   G 11488        100       E1                                              
- 34S F G FLAG=abc                                                               
  34S  d                                                                         
  34S   L 11492.7      2-               0.51 KEV  10                             
  34S X L XREF=Q                                                                 
@@ -1759,11 +1702,8 @@
  34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
  34S  cL $|G{-|g}=2.3 eV from {+30}Si(|a,|g),(|a,n).                            
  34S   G 8338         20                                                        
- 34S F G FLAG=ab                                                                
  34S   G 9514         25                                                        
- 34S F G FLAG=ab                                                                
  34S   G 11641        100       E1                                              
- 34S F G FLAG=abc                                                               
  34S  d                                                                         
  34S   L 11648.64     3-               0.61 KEV  12                             
  34S X L XREF=L(11637*)Q(11639*)                                                
