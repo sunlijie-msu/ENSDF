@@ -12,17 +12,43 @@ Set-Content) bypass anchor matching entirely, so they get the same freshness
 gate and then invalidate state — the write outcome is unverifiable until the
 next read_file.
 
+oldText is the anchor.
+Safe anchor requirements:
+Exists in current file.
+Matches exactly once.
+Includes enough surrounding text to identify the correct comment.
+Comes from a freshly read file.
+Does not use short, repeated text.
+If text changed or matches zero/multiple times, hook denies edit.
+
 PostToolUse validation stays with verify_ens_edit.py (ASCII + 80-column ruler).
+
+Normal edit flow:
+AI reads current file
+AI builds exact oldText → newText edit
+Hook hash matches → edit allowed
+
+Concurrent edit flow:
+AI reads file
+Human edits file
+AI attempts edit
+Hook detects hash mismatch → deny
+AI rereads current file
+AI rebuilds anchor
+AI retries → edit allowed
+
 """
 import hashlib
 import json
 import os
 import re
 import sys
+from urllib.parse import unquote, urlparse
 
 SPAN = 8  # max lines in one oldString
 ENS_PATH_RE = re.compile(r"[^\s\"']+\.ens", re.IGNORECASE)
 MUTATING_RE = re.compile(r"--fix\b|>>?\s|Set-Content|Out-File|Add-Content|\.write_text\(|WriteAllText", re.IGNORECASE)
+EDIT_TOOLS = {"replace_string_in_file", "multi_replace_string_in_file", "editFiles", "edit/editFiles"}
 
 
 def deny(reason):
@@ -40,6 +66,11 @@ def workspace_root(data):
 
 
 def key_of(path, root):
+    if path.startswith("file://"):
+        parsed = urlparse(path)
+        path = unquote(parsed.path)
+        if re.match(r"^/[A-Za-z]:/", path):
+            path = path[1:]
     if os.path.isabs(path):
         return os.path.realpath(path)
     return os.path.realpath(os.path.join(root, path))
@@ -71,17 +102,69 @@ def state_save(state, state_path):
         json.dump(state, fh)
 
 
-def guard_edits(data, state, root):
-    """replace_string_in_file / multi_replace_string_in_file: byte-exact anchors,
-    applied in order per file so a multi-edit call is checked against the text
-    each earlier edit in the SAME call actually produces."""
-    by_file = {}
-    for edit in data.get("replacements") or [data]:
-        path = edit.get("filePath", "") or edit.get("file_path", "")
-        if not path.lower().endswith(".ens"):
+def path_value(item):
+    for field in ("filePath", "file_path", "path", "uri"):
+        value = item.get(field)
+        if isinstance(value, str) and value:
+            return value
+    return ""
+
+
+def text_value(item, *fields):
+    for field in fields:
+        value = item.get(field)
+        if isinstance(value, str):
+            return value
+    return None
+
+
+def edit_operations(data):
+    """Return (path, old, new) operations and every .ens path in an edit payload."""
+    operations = []
+    paths = set()
+
+    def add(path, item):
+        if not isinstance(path, str) or not path.lower().endswith(".ens"):
+            return
+        paths.add(path)
+        old = text_value(item, "oldString", "old_string", "oldText", "old_text")
+        new = text_value(item, "newString", "new_string", "newText", "new_text")
+        if old is not None and new is not None:
+            operations.append((path, old.replace("\r\n", "\n"), new.replace("\r\n", "\n")))
+
+    direct_path = path_value(data)
+    if direct_path:
+        add(direct_path, data)
+
+    for item in data.get("replacements") or []:
+        if isinstance(item, dict):
+            add(path_value(item) or direct_path, item)
+
+    for file_item in data.get("files") or []:
+        if not isinstance(file_item, dict):
             continue
-        old = (edit.get("oldString") or "").replace("\r\n", "\n")
-        new = (edit.get("newString") or "").replace("\r\n", "\n")
+        path = path_value(file_item)
+        if path.lower().endswith(".ens"):
+            paths.add(path)
+        edits = file_item.get("edits") or file_item.get("operations") or []
+        for item in edits:
+            if isinstance(item, dict):
+                add(path_value(item) or path, item)
+
+    for item in data.get("edits") or data.get("operations") or []:
+        if isinstance(item, dict):
+            add(path_value(item) or direct_path, item)
+
+    return operations, paths
+
+
+def guard_edits(data, state, root):
+    """Check exact anchors for all supported edit payload shapes."""
+    operations, paths = edit_operations(data)
+    if paths and not operations:
+            deny(".ens edit has no exact old/new text anchor. Use editFiles with files[].edits[].oldText/newText.")
+    by_file = {}
+    for path, old, new in operations:
         by_file.setdefault(key_of(path, root), []).append((old, new))
 
     touched = False
@@ -145,7 +228,7 @@ def main():
     if tool == "apply_patch":
         if re.search(r"\*\*\* (?:Update|Add|Delete) File: .*\.ens", data.get("input", "") or "", re.IGNORECASE):
             deny("apply_patch on .ens files is refused — use replace_string_in_file/"
-                 "multi_replace_string_in_file so anchors can be verified.")
+                 "multi_replace_string_in_file or editFiles with exact old/new anchors so anchors can be verified.")
         return
 
     if tool in ("run_in_terminal", "send_to_terminal"):
@@ -153,7 +236,7 @@ def main():
             state_save(state, state_path)
         return
 
-    if tool not in ("replace_string_in_file", "multi_replace_string_in_file"):
+    if tool not in EDIT_TOOLS:
         return
 
     if guard_edits(data, state, root):
