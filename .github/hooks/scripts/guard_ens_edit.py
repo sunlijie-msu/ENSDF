@@ -193,28 +193,48 @@ def guard_operations(operations, state, root):
 
 
 def comment_patch_operations(patch_text, root):
-    """Extract one-line c-record replacements from apply_patch text."""
+    """Extract one-line c-record replacements with optional unique context."""
     operations = []
     current_path = None
-    old_line = None
-    new_line = None
-    context_seen = False
+    hunk = None
 
     def flush():
-        nonlocal old_line, new_line, context_seen
-        if current_path and old_line is not None and new_line is not None:
-            if context_seen or old_line[6:7] != "c" or new_line[6:7] != "c":
+        nonlocal hunk
+        if current_path and hunk is not None:
+            old_lines = []
+            new_lines = []
+            old_indexes = []
+            new_indexes = []
+            for line in hunk:
+                if line.startswith("-"):
+                    old_indexes.append(len(old_lines))
+                    old_lines.append(line[1:])
+                elif line.startswith("+"):
+                    new_indexes.append(len(new_lines))
+                    new_lines.append(line[1:])
+                elif line.startswith(" "):
+                    old_lines.append(line[1:])
+                    new_lines.append(line[1:])
+            if len(old_indexes) != 1 or len(new_indexes) != 1:
+                deny("Only one anchored cL/cG replacement is allowed per .ens apply_patch hunk.")
+            old_line = old_lines[old_indexes[0]]
+            new_line = new_lines[new_indexes[0]]
+            if old_line[6:7] != "c" or new_line[6:7] != "c":
                 deny("Only single anchored cL/cG apply_patch replacements are allowed for .ens files.")
             text = read(key_of(current_path, root))
             if text is None:
                 deny(f"Cannot read {os.path.basename(key_of(current_path, root))}.")
-            matches = [line for line in text.split("\n") if line.rstrip() == old_line.rstrip()]
+            file_lines = text.split("\n")
+            matches = []
+            for index in range(len(file_lines) - len(old_lines) + 1):
+                if all(file_lines[index + offset].rstrip() == source.rstrip()
+                       for offset, source in enumerate(old_lines)):
+                    matches.append(index)
             if len(matches) != 1:
-                deny(f"Comment anchor matches {len(matches)} time(s); rebuild it from the current file.")
-            operations.append((current_path, matches[0], new_line.rstrip()))
-        old_line = None
-        new_line = None
-        context_seen = False
+                deny(f"Comment anchor/context matches {len(matches)} time(s); rebuild it from the current file.")
+            comment_index = matches[0] + old_indexes[0]
+            operations.append((current_path, text, comment_index, new_line.rstrip()))
+        hunk = None
 
     for line in patch_text.splitlines():
         if line.startswith("*** Update File: "):
@@ -227,17 +247,34 @@ def comment_patch_operations(patch_text, root):
             continue
         if line.startswith("@@"):
             flush()
+            hunk = []
             continue
-        if line.startswith("-"):
-            old_line = line[1:]
-        elif line.startswith("+"):
-            new_line = line[1:]
-        elif line.startswith(" "):
-            context_seen = True
+        if hunk is not None:
+            hunk.append(line)
     flush()
     if not operations:
         deny(".ens apply_patch requires one exact single-line cL/cG replacement.")
     return operations
+
+
+def guard_comment_operations(operations, state, root):
+    """Guard comment replacements while preserving exact current file context."""
+    touched = False
+    for path, original, comment_index, new_line in operations:
+        key = key_of(path, root)
+        text = read(key)
+        if text is None:
+            deny(f"Cannot read {os.path.basename(key)}.")
+        if state.get(key) != digest(text):
+            deny(f"{os.path.basename(key)} changed since your last read/edit (concurrent edit). "
+                 f"Re-read the surrounding block, rebuild the anchor, retry. Never overwrite a concurrent edit.")
+        lines = text.split("\n")
+        if comment_index >= len(lines) or lines[comment_index][6:7] != "c":
+            deny("Comment anchor no longer identifies a cL/cG record; reread and rebuild the edit.")
+        lines[comment_index] = new_line
+        state[key] = digest("\n".join(lines))
+        touched = True
+    return touched
 
 
 def guard_edits(data, state, root):
@@ -289,7 +326,7 @@ def main():
         patch_text = data.get("input", "") or ""
         if re.search(r"^\*\*\* (?:Update|Add|Delete) File: .*\.ens", patch_text, re.IGNORECASE | re.MULTILINE):
             operations = comment_patch_operations(patch_text, root)
-            if guard_operations(operations, state, root):
+            if guard_comment_operations(operations, state, root):
                 state_save(state, state_path)
         return
 
