@@ -76,6 +76,8 @@ Three sections (read-only; no file edits). Script: `.github/temp/match_levels.py
 | `!!`, possible match (Δ near threshold) | Likely different levels; raise `BASELINE_KEV` or flag unmatched |
 | Many new source levels in a region | Adopted incomplete for that excitation range |
 | Adopted-only, high-spin or blank Jπ | Inaccessible to this reaction type, or fine-grained resonance levels |
+| One adopted L-record wrongly grouped multiple datasets' levels | Split: `.github/skills/split-adopted-levels/SKILL.md` |
+| One physical level is wrongly split into multiple adopted L-records | Group: `.github/skills/group-adopted-levels/SKILL.md` |
 
 ## Pitfalls
 

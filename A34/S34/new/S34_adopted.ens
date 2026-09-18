@@ -1809,10 +1809,12 @@
  34S  cL E$from {+34}S(e,e')                                                    
  34S  cL T$from ({+30}Si,|a):resonances                                         
  34S  d                                                                         
- 34S   L 12985.5   8  (9+)             50 KEV    LT                             
- 34S X L XREF=FH                                                                
+ 34S   L 12970                         50 KEV    LT                             
+ 34S X L XREF=F                                                                 
+ 34S  d                                                                         
+ 34S   L 12985.5   8  (9+)                                                      
+ 34S X L XREF=H                                                                 
  34S  cL E$from {+24}Mg({+16}O,|a2p|g)                                          
- 34S  cL T$from ({+30}Si,|a):resonances                                         
  34S  cL J$gamma to 8+; M1+E2 |g from 10(+), 13342.                             
  34S   G 1178      1  42     25                                                 
  34S   G 1611.5    7  50     25                                                 
@@ -1831,12 +1833,15 @@
  34S  d                                                                         
  34S   L 13341.7   8  10(+)            180 FS    28                             
  34S X L XREF=H                                                                 
- 34S  cL J$1966|g, E2, |DJ=2 to 8(+), 11374 level.                              
+ 34S  cL J$1966|g, Q, |DJ=2 to 8(+), 11374 level.                               
  34S   G 356.3     6  6.3    31 [M1,E2]                                     M   
- 34S   G 1200.4    7  100    22 D+Q                                         M   
+ 34S   G 1200.4    7  100    22 (M1+E2)                                     M   
  34S F G FL=12141.3                                                             
- 34S   G 1966.8    9  81     19 Q                                           M   
+ 34S  cG M$D+Q from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by    
+ 34S 2cG RUL.                                                                   
+ 34S   G 1966.8    9  81     19 (E2)                                        M   
  34S F G FL=11374.2                                                             
+ 34S  cG M$Q from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL. 
  34S  d                                                                         
  34S   L 13460                         40 KEV    LT                             
  34S X L XREF=F                                                                 
