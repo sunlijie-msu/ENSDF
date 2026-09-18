@@ -1,8 +1,8 @@
 ---
-name: merge-adopted-levels
-description: Merges two or more adopted ENSDF L-records (or a dataset's level into an existing adopted level) into one record with union XREF and each dataset's owned fields. Use when one physical level but wrongly split into separate records.
+name: group-adopted-levels
+description: Groups two or more adopted ENSDF L-records (or a dataset's level into an existing adopted level) into one record with union XREF and each dataset's owned fields. Use when one physical level but wrongly split into separate records.
 ---
-# Merge Adopted Levels
+# Group Adopted Levels
 ENSDF 80-column record/field definitions, structural rules, column positions, uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 *Fill in:* adopted file; the L-records to group; dataset letters and source files.
 1. Read each source dataset; confirm one physical level (E within DE, compatible Jπ); never group levels a dataset reports as distinct.
