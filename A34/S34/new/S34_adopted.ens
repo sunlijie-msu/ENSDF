@@ -12,7 +12,8 @@
  34S 3c  fragments. Observed competition between projectile fragmentation and   
  34S 4c  other mechanisms. Compared with EPAX, abrasion-ablation, and HIPSE     
  34S 5c  models. Studied target dependence of fragment cross sections.          
- 34S  d                                                                         
+ 34S  d  The levels in this dataset are placed with the assistance of the       
+ 34S 2d  'Level-Matcher' machine learning tool.                                 
  34S  cG E,RI$ From {+33}S(n,|g) E=thermal, unless otherwise noted.             
  34S  cG E(M),RI(M)$ From {+24}Mg({+16}O,|a2p|g), unless otherwise noted.       
  34S 2cG Multipolarities are also from {+24}Mg({+16}O,|a2p|g) if available.     
@@ -1685,9 +1686,9 @@
  34S  d                                                                         
  34S   L 11807.5   7  8(+)                                                      
  34S X L XREF=H                                                        
- 34S  cL J$3436|g, D, |DJ=1 to 7-, 8371.                                        
- 34S   G 1894.6    6  100    20                                                 
- 34S   G 3436.1    6  1.0E2  4  D                                               
+ 34S  cL J$3436|g, D, |DJ=1 to 7-, 8370.6 level.                                
+ 34S   G 1894.6    6  100    20                                             M   
+ 34S   G 3436.1    6  1.0E2  4  D                                           M   
  34S  d                                                                         
  34S   L 11829                         1.7 KEV   3                              
  34S X L XREF=Q                                                         
@@ -1748,7 +1749,7 @@
  34S   L 12141.4   7  9                173 FS    35                             
  34S X L XREF=H                                               
  34S  cL J$2228.8, E2, |DJ=2 to 7, 9912 level.                                  
- 34S  cL T$from {+24}Mg({+16}O,|a2p|g).                                         
+ 34S  cL T$from |t=250 fs {I50} (2005Ma03, DSAM) {+24}Mg({+16}O,|a2p|g).        
  34S   G 1489.2    6  7.4    42 [M1,E2]                                     M   
  34S   G 1741.6    5  12.6   32 [E1]                                        M   
  34S   G 2228.8    6  100    12 E2                                          M   
