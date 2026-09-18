@@ -1869,34 +1869,38 @@
  34S  cL E$from {+34}S(e,e')                                                    
  34S  cL T$from ({+30}Si,|a):resonances                                         
  34S  d                                                                         
- 34S   L 14270        (1+,2-)          100 KEV   LT                         E   
- 34S X L XREF=F(14270)T(14320*)                                                 
+ 34S   L 14270                         100 KEV   LT                             
+ 34S X L XREF=F                                                 
+ 34S  d                                                                         
+ 34S   L 14320     10 (1+,2-)                                               E   
+ 34S X L XREF=T
  34S  d                                                                         
  34S   L 14370                         50 KEV    LT                             
- 34S X L XREF=FT(14320*)                                                        
+ 34S X L XREF=F                                                        
  34S  d                                                                         
  34S   L 14430     10 (1+,2-)          50 KEV    LT                         E   
  34S X L XREF=FT                                                                
- 34S  cL E$from {+34}S(e,e')                                                    
- 34S  cL T$from ({+30}Si,|a):resonances                                         
+ 34S  cL E$other: 14430 from ({+30}Si,|a):resonances                            
  34S  d                                                                         
  34S   L 14520                         50 KEV    LT                             
  34S X L XREF=F                                                                 
  34S  d                                                                         
- 34S   L 14576.5   12 (10+)            50 KEV    LT                             
- 34S X L XREF=FH                                                                
- 34S  cL E$from {+24}Mg({+16}O,|a2p|g)                                          
- 34S  cL T$from ({+30}Si,|a):resonances                                         
- 34S  cL J$|g to 8(+).                                                          
- 34S   G 2768.9    9  100                                                       
+ 34S   L 14600                         50 KEV    LT 
+ 34S X L XREF=F                                                                 
+ 34S  d                                                                         
+ 34S   L 14576.5   12 (10+)                                                     
+ 34S X L XREF=H                                                                
+ 34S  cL J$2768|g to 8(+), 11807 level.                                         
+ 34S   G 2768.9    9  100                                                   M   
  34S  d                                                                         
  34S   L 14730                         100 KEV   LT                             
  34S X L XREF=F                                                                 
  34S  d                                                                         
- 34S   L 14800     10 2-               50 KEV    LT                             
- 34S X L XREF=F(14840)T                                                         
- 34S  cL E$from {+34}S(e,e')                                                    
- 34S  cL T$from ({+30}Si,|a):resonances                                         
+ 34S   L 14800     10 2-                                                    E   
+ 34S X L XREF=T                                                         
+ 34S  d                                                                         
+ 34S   L 14840                         50 KEV    LT                             
+ 34S X L XREF=F                                                                 
  34S  d                                                                         
  34S   L 14930                         100 KEV   LT                             
  34S X L XREF=F                                                                 
@@ -1910,18 +1914,22 @@
  34S   L 15170                         50 KEV    LT                             
  34S X L XREF=F                                                                 
  34S  d                                                                         
- 34S   L 15244.4   10 (10,11,12+)      50 KEV    LT                             
- 34S X L XREF=FH                                                                
- 34S  cL E$from {+24}Mg({+16}O,|a2p|g)                                          
- 34S  cL T$from ({+30}Si,|a):resonances                                         
- 34S  cL J$|g to 10(+).                                                         
- 34S   G 1902.7    6  100                                                       
+ 34S   L 15220                         50 KEV    LT                             
+ 34S X L XREF=F                                                                 
  34S  d                                                                         
- 34S   L 15281.0   18 (10)             100 KEV   LT                         B   
- 34S X L XREF=FH                                                                
+ 34S   L 15244.4   10 (10,11,12+)                                   
+ 34S X L XREF=H                                                                
+ 34S  cL J$1902|g to 10(+), 13341 level.                                        
+ 34S   G 1902.7    6  100                                                   M   
+ 34S  d                                                                         
+ 34S   L 15281.0   18 (10)                                                      
+ 34S X L XREF=H                                                                
  34S  cL J$4880.8|g to 8(-), 10399.9 level in {+24}Mg({+16}O,|a2p|g).           
  34S   G 4880.8    16 100                                                       
  34S F G FL=10399.9                                                             
+ 34S  d                                                                         
+ 34S   L 15300                         100 KEV   LT                             
+ 34S X L XREF=F                                                                 
  34S  d                                                                         
  34S   L 15540                         100 KEV   LT                             
  34S X L XREF=F                                                                 
@@ -1959,10 +1967,13 @@
  34S   L 16600                         50 KEV    LT                             
  34S X L XREF=F                                                                 
  34S  d                                                                         
- 34S   L 16649.1   14 (10,11,12+)      70 KEV    LT                         A   
- 34S X L XREF=F(16650)H                                                         
+ 34S   L 16649.1   14 (10,11,12+)                                               
+ 34S X L XREF=H                                                         
  34S  cL J$2688.4|g to (10+), 13960.6 level in {+24}Mg({+16}O,|a2p|g).          
- 34S   G 2688.4    8  100                                                       
+ 34S   G 2688.4    8  100                                                   M   
+ 34S  d                                                                         
+ 34S   L 16650                         70 KEV    LT                             
+ 34S X L XREF=F                                                                 
  34S  d                                                                         
  34S   L 16730                         70 KEV    LT                             
  34S X L XREF=F                                                                 
