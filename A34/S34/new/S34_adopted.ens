@@ -1090,7 +1090,7 @@
  34S X L XREF=L                                                                 
  34S  d                                                                         
  34S   L 10169     5  1-                                                    A   
- 34S X L XREF=L                                                                 
+ 34S X L XREF=L                                        
  34S   G 8040         100                                                   A   
  34S   G 10167        30        (E1)                                        A   
  34S  cG M$D from |g(|q) in {+30}Si(|a,|g),(|a,n). |D|p=yes from level scheme.  
@@ -1218,25 +1218,20 @@
  34S  cL E$weighted average of 10663 {I5} from {+30}Si(|a,|g),(|a,n) and 10660  
  34S 2cL {I10} from {+34}S(e,e').                                               
  34S  d                                                                         
- 34S   L 10670     5  1-                                                        
- 34S X L XREF=LO(10700*)                                                        
- 34S  cL J$E1 |DJ=1 |g to 2+, 3304 (angular correlation excludes 3-).           
+ 34S   L 10670     5  1-                                                    A   
+ 34S X L XREF=L                                                        
  34S  cL $|G{-|g}=0.73 eV from {+30}Si(|a,|g),(|a,n).                           
- 34S   G 7365         100       E1                                              
- 34S   G 8541         30                                                        
- 34S   G 10668        10     LT                                                 
+ 34S   G 7365         100       (E1)                                        A   
+ 34S   G 8541         30                                                    A   
+ 34S   G 10668        10     LT                                             A   
  34S  d                                                                         
- 34S   L 10700        (6+)                                                      
- 34S X L XREF=L(10705*)O(10700*)                                                
- 34S  cL J$based on angular distribution ({+32}S(|a,{+2}He)).                   
- 34S  d                                                                         
- 34S   L 10704     4                                                            
- 34S X L XREF=L(10705*)O(10700*)T(10660*)                                       
+ 34S   L 10705     5                                                            
+ 34S X L XREF=LO(10700)                                                
  34S  d                                                                         
  34S   L 10768     5  2+                                                    A   
  34S X L XREF=L                                                                 
- 34S  cL J$M1+E2 |DJ=0 |g to 2+, 3304.                                          
- 34S   G 8639         100       M1+E2    +0.3                               A   
+ 34S   G 8639         100       (M1+E2)  +0.3                               A   
+ 34S  cG M$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n). |D|p=no from level scheme. 
  34S   G 10766        10     LT                                             A   
  34S  d                                                                         
  34S   L 10790     5  1-                                                        
@@ -1248,8 +1243,8 @@
  34S  cL $|G{-|g}=3 eV from {+30}Si(|a,|g),(|a,n).                              
  34S   G 7486         5                                                     A   
  34S   G 8662         20                                                    A   
- 34S   G 10784     13 100       E1                                          A   
- 34S  cG RI,M$from {+30}Si(|a,|g)                                               
+ 34S   G 10784        100       (E1)                                        A   
+ 34S  cG E$other: 10784 {I13} from {+34}S(|g,|g'),(pol |g,|g').                 
  34S  d                                                                         
  34S   L 10803     6  1+                                                    E   
  34S X L XREF=ST(10800)                                                         
