@@ -17,9 +17,11 @@
  34S  cG E(M),RI(M)$ From {+24}Mg({+16}O,|a2p|g), unless otherwise noted.       
  34S 2cG Multipolarities are also from {+24}Mg({+16}O,|a2p|g) if available.     
  34S  cG RI(P)$ From {+31}P(|a,p|g).                                            
- 34S  cG RI(A)$ From {+30}Si(|a,|g),(|a,n):resonances.                          
+ 34S  cG RI(A,S)$ From {+30}Si(|a,|g),(|a,n):resonances.                        
  34S  cG M,MR$ From measured |g(|q) and/or |g|g(|q) in {+31}P(|a,p|g), and RUL  
  34S 2cG if applicable, unless otherwise noted.                                 
+ 34S  cG M(A)$From |g(|q) and/or |g|g(|q) in {+30}Si(|a,|g),(|a,n):resonances.  
+ 34S 2cG |D|p=yes/no from level scheme.                                         
  34S  cL E$ From a least-squares fit to |g-ray energies, unless otherwise noted.
  34S  cL E(P)$ From {+31}P(|a,p|g), in which most literature reports E(level)   
  34S 2cL directly.                                                              
@@ -1382,7 +1384,6 @@
  34S  d                                                                         
  34S   L 11358     5  1-                                                    A   
  34S X L XREF=L                                                                 
- 34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
  34S  cL $|G{-|g}=1.4 eV from {+30}Si(|a,|g),(|a,n).                            
  34S   G 8053         100                                                   A   
  34S   G 9229         18                                                    A   
@@ -1390,21 +1391,22 @@
  34S  d                                                                         
  34S   L 11372     5  3-                                                    A   
  34S X L XREF=L                                                                 
- 34S  cL J$E1+M2 |DJ=1 |g to 2+, 2128 (angular correlation excludes 1-).        
  34S  cL $|G{-|g}=1.5 eV from {+30}Si(|a,|g),(|a,n).                            
- 34S   G 8067         44                                                    A   
+ 34S   G 8067         44                                                    S   
  34S   G 9243         100       (E1+M2)  +0.022  6                          A   
- 34S   G 11370        5.9                                                   A   
+ 34S   G 11370        5.9                                                   S   
  34S  d                                                                         
- 34S   L 11374.3   8  8(+)                                                      
+ 34S   L 11374.3   8  (8)                                                      
  34S X L XREF=H                                                                 
- 34S  cL J$D |DJ=1 |g to 7-, 8371.                                              
+ 34S  cL J$1461.7|g, D(+Q), |DJ=1 to 7, 9912.9 level, 3002.8|g, D, |DJ=1 to 7-, 
+ 34S 2cL 8370.6 level.                                                          
  34S   G 1461.7    9  90     20 D(+Q)                                           
+ 34S  cG M$D(+Q), |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).           
  34S   G 3002.8    6  100    20 D                                               
+ 34S  cG M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).               
  34S  d                                                                         
  34S   L 11381     5  2+                                                    A   
  34S X L XREF=L                                                                 
- 34S  cL J$E2 |DJ=2 |g to 0+, g.s.                                              
  34S  cL $|G{-|g}=0.1 eV from {+30}Si(|a,|g),(|a,n).                            
  34S   G 8076         100                                                   A   
  34S   G 9252         33                                                    A   
@@ -1809,7 +1811,7 @@
  34S  d                                                                         
  34S   L 12141.4   7  9(+)             173 FS    35                             
  34S X L XREF=F(12150*)HL(12137*)                                               
- 34S  cL J$E2 |DJ=2 |g to 7(+), 9912.                                           
+ 34S  cL J$E2 |DJ=2 |g to 7, 9912.                                              
  34S  cL T$from {+24}Mg({+16}O,|a2p|g).                                         
  34S   G 1489.2    6  7.4    42 [M1,E2]                                         
  34S   G 1741.6    5  12.6   32 [E1]                                            
