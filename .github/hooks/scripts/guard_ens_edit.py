@@ -333,13 +333,6 @@ def main():
     state_path = os.path.join(root, ".github", "temp", "ens_guard", "state.json")
     state = state_load(state_path)
 
-    try:  # TEMP DIAGNOSTIC (remove after tool-name discovery)
-        with open(os.path.join(root, ".github", "temp", "ens_guard", "hook_events.log"),
-                  "a", encoding="utf-8") as fh:
-            fh.write(f"{tool!r} filePath={data.get('filePath', '')!r} keys={sorted(data)[:12]}\n")
-    except OSError:
-        pass
-
     if tool in READ_TOOLS:  # a read refreshes freshness; verify skips reads so it is not consumed
         path = data.get("filePath", "")
         if path.lower().endswith(".ens"):

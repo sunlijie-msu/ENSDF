@@ -1,0 +1,444 @@
+# R1: remove A (op1 inserts @, op2 cleans)
+[R1 10447] line 1165
+OP1_OLD>>> 34S   L 10447     5                                                        
+OP1_NEW>>> 34S   L 10447     5                                                        @
+OP2_OLD>>>@A   
+ 34S X L XREF=L
+OP2_NEW>>>    
+ 34S X L XREF=L
+[R1 10528] line 1180
+OP1_OLD>>> 34S   L 10528     5                                                        
+OP1_NEW>>> 34S   L 10528     5                                                        @
+OP2_OLD>>>@A   
+ 34S X L XREF=L
+OP2_NEW>>>    
+ 34S X L XREF=L
+[R1 10617] line 1190
+OP1_OLD>>> 34S   L 10617     5                                                        
+OP1_NEW>>> 34S   L 10617     5                                                        @
+OP2_OLD>>>@A   
+ 34S X L XREF=L
+OP2_NEW>>>    
+ 34S X L XREF=L
+[R1 10869] line 1266
+OP1_OLD>>> 34S   L 10869     5                                                        
+OP1_NEW>>> 34S   L 10869     5                                                        @
+OP2_OLD>>>@A   
+ 34S X L XREF=L
+OP2_NEW>>>    
+ 34S X L XREF=L
+[R1 10895] line 1269
+OP1_OLD>>> 34S   L 10895     5                                                        
+OP1_NEW>>> 34S   L 10895     5                                                        @
+OP2_OLD>>>@A   
+ 34S X L XREF=L
+OP2_NEW>>>    
+ 34S X L XREF=L
+[R1 10917] line 1272
+OP1_OLD>>> 34S   L 10917     5                                                        
+OP1_NEW>>> 34S   L 10917     5                                                        @
+OP2_OLD>>>@A   
+ 34S X L XREF=L
+OP2_NEW>>>    
+ 34S X L XREF=L
+[R1 11180] line 1344
+OP1_OLD>>> 34S   L 11180     5                                                        
+OP1_NEW>>> 34S   L 11180     5                                                        @
+OP2_OLD>>>@A   
+ 34S X L XREF=L
+OP2_NEW>>>    
+ 34S X L XREF=L
+[R1 11194] line 1347
+OP1_OLD>>> 34S   L 11194     5                                                        
+OP1_NEW>>> 34S   L 11194     5                                                        @
+OP2_OLD>>>@A   
+ 34S X L XREF=L
+OP2_NEW>>>    
+ 34S X L XREF=L
+[R1 11289] line 1371
+OP1_OLD>>> 34S   L 11289     5                                                        
+OP1_NEW>>> 34S   L 11289     5                                                        @
+OP2_OLD>>>@A   
+ 34S X L XREF=L
+OP2_NEW>>>    
+ 34S X L XREF=L
+
+# R2: add A
+[R2 10587 g=7282] line 1186
+OP1_OLD>>> 34S   G 7282         100       (E1)                                        
+OP1_NEW>>> 34S   G 7282         100       (E1)                                        @
+OP2_OLD>>>@    
+ 34S  cG M$D from |g(|q)
+OP2_NEW>>>A   
+ 34S  cG M$D from |g(|q)
+[R2 10587 g=8458] line 1188
+OP1_OLD>>> 34S   G 8458         60                                                    
+OP1_NEW>>> 34S   G 8458         60                                                    @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 10625 g=8496] line 1197
+OP1_OLD>>> 34S   G 8496         100                                                   
+OP1_NEW>>> 34S   G 8496         100                                                   @
+OP2_OLD>>>@    
+ 34S   G 10623        10
+OP2_NEW>>>A   
+ 34S   G 10623        10
+[R2 10625 g=10623] line 1198
+OP1_OLD>>> 34S   G 10623        100       E1                                          
+OP1_NEW>>> 34S   G 10623        100       E1                                          @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 10768 g=8639] line 1235
+OP1_OLD>>> 34S   G 8639         100       M1+E2    +0.3                               
+OP1_NEW>>> 34S   G 8639         100       M1+E2    +0.3                               @
+OP2_OLD>>>@    
+ 34S   G 10766        10
+OP2_NEW>>>A   
+ 34S   G 10766        10
+[R2 10768 g=10766] line 1236
+OP1_OLD>>> 34S   G 10766        10     LT                                             
+OP1_NEW>>> 34S   G 10766        10     LT                                             @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 10931 g=8802] line 1278
+OP1_OLD>>> 34S   G 8802         100       E1+M2    +0.154  17                         
+OP1_NEW>>> 34S   G 8802         100       E1+M2    +0.154  17                         @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 10994 g=8865] line 1283
+OP1_OLD>>> 34S   G 8865         100       M1+E2    +0.078  32                         
+OP1_NEW>>> 34S   G 8865         100       M1+E2    +0.078  32                         @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 11088 g=7783] line 1319
+OP1_OLD>>> 34S   G 7783         47                                                    
+OP1_NEW>>> 34S   G 7783         47                                                    @
+OP2_OLD>>>@    
+ 34S   G 8959         44
+OP2_NEW>>>A   
+ 34S   G 8959         44
+[R2 11088 g=8959] line 1320
+OP1_OLD>>> 34S   G 8959         44                                                    
+OP1_NEW>>> 34S   G 8959         44                                                    @
+OP2_OLD>>>@    
+ 34S   G 11086        10
+OP2_NEW>>>A   
+ 34S   G 11086        10
+[R2 11088 g=11086] line 1321
+OP1_OLD>>> 34S   G 11086        100       E2                                          
+OP1_NEW>>> 34S   G 11086        100       E2                                          @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 11108 g=8979] line 1326
+OP1_OLD>>> 34S   G 8979         100       E1+M2    +0.062  1                          
+OP1_NEW>>> 34S   G 8979         100       E1+M2    +0.062  1                          @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 11142 g=7837] line 1332
+OP1_OLD>>> 34S   G 7837         9                                                     
+OP1_NEW>>> 34S   G 7837         9                                                     @
+OP2_OLD>>>@    
+ 34S   G 9013         18
+OP2_NEW>>>A   
+ 34S   G 9013         18
+[R2 11142 g=9013] line 1333
+OP1_OLD>>> 34S   G 9013         18                                                    
+OP1_NEW>>> 34S   G 9013         18                                                    @
+OP2_OLD>>>@    
+ 34S   G 11140        10
+OP2_NEW>>>A   
+ 34S   G 11140        10
+[R2 11142 g=11140] line 1334
+OP1_OLD>>> 34S   G 11140        100       E1                                          
+OP1_NEW>>> 34S   G 11140        100       E1                                          @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 11165 g=7860] line 1340
+OP1_OLD>>> 34S   G 7860         100                                                   
+OP1_NEW>>> 34S   G 7860         100                                                   @
+OP2_OLD>>>@    
+ 34S   G 9036         13
+OP2_NEW>>>A   
+ 34S   G 9036         13
+[R2 11165 g=9036] line 1341
+OP1_OLD>>> 34S   G 9036         13                                                    
+OP1_NEW>>> 34S   G 9036         13                                                    @
+OP2_OLD>>>@    
+ 34S   G 11163        77
+OP2_NEW>>>A   
+ 34S   G 11163        77
+[R2 11165 g=11163] line 1342
+OP1_OLD>>> 34S   G 11163        77        E1                                          
+OP1_NEW>>> 34S   G 11163        77        E1                                          @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 11220 g=7915] line 1354
+OP1_OLD>>> 34S   G 7915         100                                                   
+OP1_NEW>>> 34S   G 7915         100                                                   @
+OP2_OLD>>>@    
+ 34S   G 9091         48
+OP2_NEW>>>A   
+ 34S   G 9091         48
+[R2 11220 g=9091] line 1355
+OP1_OLD>>> 34S   G 9091         48                                                    
+OP1_NEW>>> 34S   G 9091         48                                                    @
+OP2_OLD>>>@    
+ 34S   G 11218        32
+OP2_NEW>>>A   
+ 34S   G 11218        32
+[R2 11220 g=11218] line 1356
+OP1_OLD>>> 34S   G 11218        32        E2                                          
+OP1_NEW>>> 34S   G 11218        32        E2                                          @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 11233 g=7928] line 1362
+OP1_OLD>>> 34S   G 7928         100                                                   
+OP1_NEW>>> 34S   G 7928         100                                                   @
+OP2_OLD>>>@    
+ 34S   G 9104         3.
+OP2_NEW>>>A   
+ 34S   G 9104         3.
+[R2 11233 g=9104] line 1363
+OP1_OLD>>> 34S   G 9104         3.7                                                   
+OP1_NEW>>> 34S   G 9104         3.7                                                   @
+OP2_OLD>>>@    
+ 34S   G 11231        24
+OP2_NEW>>>A   
+ 34S   G 11231        24
+[R2 11233 g=11231] line 1364
+OP1_OLD>>> 34S   G 11231        24        E1                                          
+OP1_NEW>>> 34S   G 11231        24        E1                                          @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 11272 g=9143] line 1369
+OP1_OLD>>> 34S   G 9143         100       M1+E2    +0.18   15                         
+OP1_NEW>>> 34S   G 9143         100       M1+E2    +0.18   15                         @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 11315 g=8010] line 1378
+OP1_OLD>>> 34S   G 8010         67                                                    
+OP1_NEW>>> 34S   G 8010         67                                                    @
+OP2_OLD>>>@    
+ 34S   G 9186         38
+OP2_NEW>>>A   
+ 34S   G 9186         38
+[R2 11315 g=9186] line 1379
+OP1_OLD>>> 34S   G 9186         38                                                    
+OP1_NEW>>> 34S   G 9186         38                                                    @
+OP2_OLD>>>@    
+ 34S   G 11313        10
+OP2_NEW>>>A   
+ 34S   G 11313        10
+[R2 11315 g=11313] line 1380
+OP1_OLD>>> 34S   G 11313        100       E2                                          
+OP1_NEW>>> 34S   G 11313        100       E2                                          @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 11323 g=8018] line 1386
+OP1_OLD>>> 34S   G 8018         48                                                    
+OP1_NEW>>> 34S   G 8018         48                                                    @
+OP2_OLD>>>@    
+ 34S   G 9194         65
+OP2_NEW>>>A   
+ 34S   G 9194         65
+[R2 11323 g=9194] line 1387
+OP1_OLD>>> 34S   G 9194         65                                                    
+OP1_NEW>>> 34S   G 9194         65                                                    @
+OP2_OLD>>>@    
+ 34S   G 11321        10
+OP2_NEW>>>A   
+ 34S   G 11321        10
+[R2 11323 g=11321] line 1388
+OP1_OLD>>> 34S   G 11321        100       E1                                          
+OP1_NEW>>> 34S   G 11321        100       E1                                          @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 11358 g=8053] line 1397
+OP1_OLD>>> 34S   G 8053         100                                                   
+OP1_NEW>>> 34S   G 8053         100                                                   @
+OP2_OLD>>>@    
+ 34S   G 9229         18
+OP2_NEW>>>A   
+ 34S   G 9229         18
+[R2 11358 g=9229] line 1398
+OP1_OLD>>> 34S   G 9229         18                                                    
+OP1_NEW>>> 34S   G 9229         18                                                    @
+OP2_OLD>>>@    
+ 34S   G 11356        36
+OP2_NEW>>>A   
+ 34S   G 11356        36
+[R2 11358 g=11356] line 1399
+OP1_OLD>>> 34S   G 11356        36        E1                                          
+OP1_NEW>>> 34S   G 11356        36        E1                                          @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 11372 g=8067] line 1405
+OP1_OLD>>> 34S   G 8067         44                                                    
+OP1_NEW>>> 34S   G 8067         44                                                    @
+OP2_OLD>>>@    
+ 34S   G 9243         10
+OP2_NEW>>>A   
+ 34S   G 9243         10
+[R2 11372 g=9243] line 1406
+OP1_OLD>>> 34S   G 9243         100       E1+M2    +0.022  6                          
+OP1_NEW>>> 34S   G 9243         100       E1+M2    +0.022  6                          @
+OP2_OLD>>>@    
+ 34S   G 11370        5.
+OP2_NEW>>>A   
+ 34S   G 11370        5.
+[R2 11372 g=11370] line 1407
+OP1_OLD>>> 34S   G 11370        5.9                                                   
+OP1_NEW>>> 34S   G 11370        5.9                                                   @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 11381 g=8076] line 1419
+OP1_OLD>>> 34S   G 8076         100                                                   
+OP1_NEW>>> 34S   G 8076         100                                                   @
+OP2_OLD>>>@    
+ 34S   G 9252         33
+OP2_NEW>>>A   
+ 34S   G 9252         33
+[R2 11381 g=9252] line 1420
+OP1_OLD>>> 34S   G 9252         33                                                    
+OP1_NEW>>> 34S   G 9252         33                                                    @
+OP2_OLD>>>@    
+ 34S   G 11379        37
+OP2_NEW>>>A   
+ 34S   G 11379        37
+[R2 11381 g=11379] line 1421
+OP1_OLD>>> 34S   G 11379        37        E2                                          
+OP1_NEW>>> 34S   G 11379        37        E2                                          @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 11420 g=8115] line 1525
+OP1_OLD>>> 34S   G 8115         5                                                     
+OP1_NEW>>> 34S   G 8115         5                                                     @
+OP2_OLD>>>@    
+ 34S   G 9291         19
+OP2_NEW>>>A   
+ 34S   G 9291         19
+[R2 11420 g=9291] line 1526
+OP1_OLD>>> 34S   G 9291         19                                                    
+OP1_NEW>>> 34S   G 9291         19                                                    @
+OP2_OLD>>>@    
+ 34S   G 11418        10
+OP2_NEW>>>A   
+ 34S   G 11418        10
+[R2 11420 g=11418] line 1527
+OP1_OLD>>> 34S   G 11418        100       E1                                          
+OP1_NEW>>> 34S   G 11418        100       E1                                          @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
+[R2 10311.53 g=8188] line 1135
+OP1_OLD>>> 34S   G 8188                                                               
+OP1_NEW>>> 34S   G 8188                                                               @
+OP2_OLD>>>@    
+ 34S  cG RI$100 from {+3
+OP2_NEW>>>A   
+ 34S  cG RI$100 from {+3
+[R2 10311.53 g=10315] line 1137
+OP1_OLD>>> 34S   G 10315                  (E2)                                        
+OP1_NEW>>> 34S   G 10315                  (E2)                                        @
+OP2_OLD>>>@    
+ 34S  cG RI$40 from {+30
+OP2_NEW>>>A   
+ 34S  cG RI$40 from {+30
+[R2 10790 g=7486] line 1245
+OP1_OLD>>> 34S   G 7486         5                                                     
+OP1_NEW>>> 34S   G 7486         5                                                     @
+OP2_OLD>>>@    
+ 34S   G 8662         20
+OP2_NEW>>>A   
+ 34S   G 8662         20
+[R2 10790 g=8662] line 1246
+OP1_OLD>>> 34S   G 8662         20                                                    
+OP1_NEW>>> 34S   G 8662         20                                                    @
+OP2_OLD>>>@    
+ 34S   G 10784     13 10
+OP2_NEW>>>A   
+ 34S   G 10784     13 10
+[R2 10790 g=10784] line 1247
+OP1_OLD>>> 34S   G 10784     13 100       E1                                          
+OP1_NEW>>> 34S   G 10784     13 100       E1                                          @
+OP2_OLD>>>@    
+ 34S  cG RI,M$from {+30}
+OP2_NEW>>>A   
+ 34S  cG RI,M$from {+30}
+[R2 10840.63 g=748.43] line 1260
+OP1_OLD>>> 34S   G 748.43    14 71     10                                             
+OP1_NEW>>> 34S   G 748.43    14 71     10                                             @
+OP2_OLD>>>@    
+ 34S   G 6152.1    5  10
+OP2_NEW>>>A   
+ 34S   G 6152.1    5  10
+[R2 10840.63 g=6152.1] line 1261
+OP1_OLD>>> 34S   G 6152.1    5  100    28                                             
+OP1_NEW>>> 34S   G 6152.1    5  100    28                                             @
+OP2_OLD>>>@    
+ 34S   G 8718         10
+OP2_NEW>>>A   
+ 34S   G 8718         10
+[R2 10840.63 g=8718] line 1262
+OP1_OLD>>> 34S   G 8718         100       E1+M2    -0.024  17                         
+OP1_NEW>>> 34S   G 8718         100       E1+M2    -0.024  17                         @
+OP2_OLD>>>@    
+ 34S  cG E,RI,M,MR$from
+OP2_NEW>>>A   
+ 34S  cG E,RI,M,MR$from
+[R2 11024.95 g=7720] line 1305
+OP1_OLD>>> 34S   G 7720         17                                                    
+OP1_NEW>>> 34S   G 7720         17                                                    @
+OP2_OLD>>>@    
+ 34S  cG $In {+30}Si(|a,
+OP2_NEW>>>A   
+ 34S  cG $In {+30}Si(|a,
+[R2 11024.95 g=8896] line 1309
+OP1_OLD>>> 34S   G 8896         14                                                    
+OP1_NEW>>> 34S   G 8896         14                                                    @
+OP2_OLD>>>@    
+ 34S   G 11023        10
+OP2_NEW>>>A   
+ 34S   G 11023        10
+[R2 11024.95 g=11023] line 1310
+OP1_OLD>>> 34S   G 11023        100       E1                                          
+OP1_NEW>>> 34S   G 11023        100       E1                                          @
+OP2_OLD>>>@    
+ 34S  d
+OP2_NEW>>>A   
+ 34S  d
