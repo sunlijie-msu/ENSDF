@@ -11,4 +11,4 @@ ENSDF 80-column record/field definitions, structural rules, column positions, un
 4. Give each record `XREF=<letter>` (strip `(energy)`, `(*)`, `(?)` unless ambiguity survives), its comments in `E$`, `J$`, `T$`, `S$`, general order.
 5. Drop `(*)` from sibling levels that shared the label.
 6. Validate each edited line, then column calibration and gamma ordering; edit in place, never scripts.
-**Pitfall** - reload anchors before editing (partners share XREF text). Inverse: `.github/skills/group-adopted-levels/SKILL.md`.
+**Pitfall** - reload anchors before editing (partners share XREF text); re-measure every edited line's length after each edit, since padding may be lost; ` 34S  d` delimiter lines trigger a spurious type error in the one-line ruler. Inverse: `.github/skills/group-adopted-levels/SKILL.md`.
