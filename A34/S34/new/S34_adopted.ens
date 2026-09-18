@@ -1478,30 +1478,26 @@
  34S   G 11418        100       (E1)                                        A   
  34S  d                                                                         
  34S   L 11430.3      2+               0.116 KEV 20                             
- 34S X L XREF=L(11435*)Q                                                        
+ 34S X L XREF=Q                                                        
  34S  cL $|G{-n}=75.0 eV {I8}, |G{-|g}=0.21 eV {I5}, |G{-|a}=41 eV {I5} from    
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
  34S  d                                                                         
  34S   L 11434.3      2-               0.049 KEV 10                             
- 34S X L XREF=L(11435*)Q                                                        
+ 34S X L XREF=L(11435)Q                                                        
  34S  cL $|G{-n}=39.1 eV {I8}, |G{-|g}=0.90 eV {I5} from                        
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
- 34S  cL $All data are from {+33}S(n,|g),(n,n):resonances.                      
  34S  d                                                                         
  34S   L 11440.4      3-               0.0198 KEV 10                            
- 34S X L XREF=L(11444*)Q                                                        
+ 34S X L XREF=Q                                                        
  34S  cL $|G{-n}=16.0 eV {I9}, |G{-|g}=1.44 eV {I10}, |G{-|a}=2.5 eV {I3} from  
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
- 34S  cL $All data are from {+33}S(n,|g),(n,n):resonances.                      
  34S  d                                                                         
- 34S   L 11447.97                      0.015 KEV LT                             
- 34S X L XREF=L(11444*)Q(*)                                                     
+ 34S   L 11448.1                       0.015 KEV LT                             
+ 34S X L XREF=L(11444)Q                                                     
  34S  d                                                                         
- 34S   L 11458     5  3-                                                        
- 34S X L XREF=LQ(*)                                                             
- 34S  cL J$E1+M2 |DJ=1 to 2+, 2128 (angular correlation excludes 1-).           
- 34S   G 9329         100       E1+M2    +0.037  2                              
- 34S F G FLAG=acd                                                               
+ 34S   L 11458     5  3-                                                    A   
+ 34S X L XREF=LQ                                                             
+ 34S   G 9329         100       E1+M2    +0.037  2                          A   
  34S  d                                                                         
  34S   L 11467.8      2+               0.368 KEV 8                              
  34S X L XREF=Q                                                                 
@@ -1509,27 +1505,26 @@
  34S   L 11469.2      3-               0.152 KEV 15                             
  34S X L XREF=Q                                                                 
  34S  d                                                                         
- 34S   L 11473     5  1-                                                        
- 34S X L XREF=LQ(*)                                                             
- 34S  cL J$E1+M2 |DJ=1 to 2+, 2128 (angular correlation excludes 3-).           
- 34S   G 9344         100       E1+M2    -0.13   7                              
- 34S F G FLAG=acd                                                               
+ 34S   L 11473     5  1-                                                    A   
+ 34S X L XREF=L                                                             
+ 34S   G 9344         100       E1+M2    -0.13   7                          A   
  34S  d                                                                         
- 34S   L 11474.51     2-               0.45 KEV  6                              
- 34S X L XREF=Q(*)                                                              
+ 34S   L 11474.6      2-               0.45 KEV  6                              
+ 34S X L XREF=Q                                                              
  34S  cL $|G{-n}=275 eV {I5}, |G{-|g}=1.08 eV {I7}, |G{-|a}=0.17 keV {I5} from  
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
  34S  d                                                                         
- 34S   L 11490     5  1-                                                        
+ 34S   L 11490     5  1-                                                    A   
  34S X L XREF=LQ                                                                
- 34S  cL E$from {+30}Si(|a,|g),(|a,n):resonances                                
- 34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
+ 34S  cL E$other: 11486.0 from {+33}S(n,|g),(n,n):resonances.                   
+ 34S  cL J$1- in both {+30}Si(|a,|g),(|a,n):resonances and                      
+ 34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
  34S  cL $|G{-n}=65 eV {I10}, |G{-|a}=0.11 keV {I6} from                        
- 34S 2cL {+33}S(n,|g),(n,n):resonances; |G{-|g}=0.6 eV from                     
+ 34S 2cL {+33}S(n,|g),(n,n):resonances. |G{-|g}=0.6 eV from                     
  34S 3cL {+30}Si(|a,|g),(|a,n):resonances.                                      
- 34S   G 8185         56                                                        
- 34S   G 9361         46                                                        
- 34S   G 11488        100       E1                                              
+ 34S   G 8185         56                                                    S   
+ 34S   G 9361         46                                                    S   
+ 34S   G 11488        100       E1                                          A   
  34S  d                                                                         
  34S   L 11492.7      2-               0.51 KEV  10                             
  34S X L XREF=Q                                                                 
@@ -1537,7 +1532,7 @@
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
  34S  d                                                                         
  34S   L 11496.2      2+               0.71 KEV  3                              
- 34S X L XREF=QT(11500*)                                                        
+ 34S X L XREF=Q                                                        
  34S  cL $|G{-n}=705 eV {I19}, |G{-|g}=0.94 eV {I6}, |G{-|a}=4 eV {I2} from     
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
  34S  d                                                                         
@@ -1547,21 +1542,17 @@
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
  34S  d                                                                         
  34S   L 11500     10 1+                                                    E   
- 34S X L XREF=T(11500*)                                                         
+ 34S X L XREF=T                                                         
  34S  d                                                                         
  34S   L 11502.3      1-               0.292 KEV 25                             
  34S X L XREF=Q                                                                 
  34S  cL $|G{-n}=280 eV {I20}, |G{-|g}=2.11 eV {I14}, |G{-|a}=10 eV {I5} from   
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
  34S  d                                                                         
- 34S   L 11506     5  (1-)             0.26 KEV  5                              
+ 34S   L 11506     5  (1-)             0.26 KEV  5                          A   
  34S X L XREF=LQ                                                                
- 34S  cL E$from {+30}Si(|a,|g),(|a,n):resonances                                
- 34S  cL T$from {+33}S(n,|g),(n,n):resonances                                   
- 34S  cL $All data are from {+33}S(n,|g),(n,n):resonances.                      
- 34S  cL J$E1+M2 |DJ=(1) |g to 2+, 2128 (angular correlation excludes 3-).      
- 34S   G 9377         100       E1+M2    -0.058  16                             
- 34S F G FLAG=cd                                                                
+ 34S  cL E$other: 11502.9 from {+33}S(n,|g),(n,n):resonances.                   
+ 34S   G 9377         100       E1+M2    -0.058  16                         A   
  34S  d                                                                         
  34S   L 11515.3      2-               1.262 KEV 25                             
  34S X L XREF=Q                                                                 
@@ -1573,24 +1564,18 @@
  34S  cL $|G{-n}=0.36 keV {I4}, |G{-|g}=1.4 eV {I4}, |G{-|a}=0.27 keV {I6} from 
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
  34S  d                                                                         
- 34S   L 11545     5  1-               0.20 KEV  4                              
- 34S X L XREF=LQ                                                                
- 34S  cL E$from {+30}Si(|a,|g),(|a,n):resonances                                
- 34S  cL T$from {+33}S(n,|g),(n,n):resonances                                   
- 34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
- 34S  cL E$from {+33}S(n,|g),(n,n):resonances.                                  
- 34S  cL $|G from {+33}S(n,|g),(n,n):resonances and |G{-|g} from                
- 34S 2cL {+30}Si(|a,|g),(|a,n):resonances.                                      
- 34S  cL $|G{-|g}=1.0 eV from {+30}Si(|a,|g),(|a,n):resonances.                 
- 34S   G 8240         100                                                       
- 34S F G FLAG=b                                                                 
- 34S   G 9416         60                                                        
- 34S F G FLAG=b                                                                 
- 34S   G 11543        63        E1                                              
- 34S F G FLAG=bc                                                                
+ 34S   L 11544                         0.20 KEV  4                              
+ 34S X L XREF=L(11545*)Q                                                                
  34S  d                                                                         
  34S   L 11546                         0.23 KEV  4                              
- 34S X L XREF=Q                                                                 
+ 34S X L XREF=L(11545*)Q                                                                 
+ 34S  cL E$other: 11545 {I5} from {+30}Si(|a,|g),(|a,n):resonances, matching    
+ 34S 2cL 11544 or 11546 level in {+33}S(n,|g),(n,n):resonances.                 
+ 34S  cL J$1- for 11545 {I5} doublet from {+30}Si(|a,|g),(|a,n):resonances.     
+ 34S  cL $|G{-|g}=1.0 eV from {+30}Si(|a,|g),(|a,n):resonances.                 
+ 34S   G 8240         100                                                   S   
+ 34S   G 9416         60                                                    S   
+ 34S   G 11543        63        E1                                          A   
  34S  d                                                                         
  34S   L 11551                         0.15 KEV  3                              
  34S X L XREF=Q                                                                 
@@ -1612,48 +1597,45 @@
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
  34S  d                                                                         
  34S   L 11608        3-               0.62 KEV  3                              
- 34S X L XREF=L(11619*)Q                                                        
+ 34S X L XREF=Q                                                        
  34S  cL $|G{-n}=0.61 keV {I3}, |G{-|g}=1.33 eV {I12} from                      
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
  34S  d                                                                         
- 34S   L 11610.31                      0.70 KEV  14                             
- 34S X L XREF=L(11619*)Q(11610*)                                                
+ 34S   L 11610                         0.70 KEV  14                             
+ 34S X L XREF=Q                                                
  34S  d                                                                         
  34S   L 11614        3-               2.1 KEV   8                              
- 34S X L XREF=L(11619*)Q                                                        
+ 34S X L XREF=Q                                                        
  34S  cL $|G{-n}=2.09 keV {I8}, |G{-|g}=2.17 eV {I20}, |G{-|a}=14 eV {I5} from  
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
- 34S  cL $All data are from {+33}S(n,|g),(n,n):resonances.                      
  34S  d                                                                         
  34S   L 11622                         0.31 KEV  6                              
- 34S X L XREF=L(11619*)Q                                                        
+ 34S X L XREF=L(11619)Q                                                        
  34S  d                                                                         
  34S   L 11626                         0.12 KEV  LT                             
- 34S X L XREF=L(11619*)Q                                                        
+ 34S X L XREF=Q                                                        
  34S  d                                                                         
  34S   L 11632        2+               0.75 KEV  7                              
- 34S X L XREF=L(11637*)Q                                                        
+ 34S X L XREF=Q                                                        
  34S  cL $|G{-n}=0.69 keV {I7}, |G{-|g}=1.2 eV {I4}, |G{-|a}=55 eV {I20} from   
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
  34S  d                                                                         
  34S   L 11634        0+               5.3 KEV   10                             
- 34S X L XREF=L(11637*)Q                                                        
+ 34S X L XREF=Q                                                        
  34S  cL $|G{-n}=4.4 keV {I9}, |G{-|a}=0.9 keV {I3} from                        
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
- 34S  cL $All data are from {+33}S(n,|g),(n,n):resonances.                      
  34S  d                                                                         
- 34S   L 11638.93     3-               0.96 KEV  6                              
- 34S X L XREF=L(11637*)Q(11639*)                                                
+ 34S   L 11639        3-               0.96 KEV  6                              
+ 34S X L XREF=L(11637)Q                                                
  34S  cL $|G{-n}=0.76 keV {I5}, |G{-|g}=0.81 eV {I13}, |G{-|a}=0.20 keV {I3}    
  34S 2cL from {+33}S(n,|g),(n,n):resonances.                                    
  34S  d                                                                         
- 34S   L 11643     5  1-                                                        
- 34S X L XREF=LQ(11610*)                                                        
- 34S  cL J$E1 |DJ=1 |g to 0+, g.s.                                              
+ 34S   L 11643     5  1-                                                    A   
+ 34S X L XREF=L                                                        
  34S  cL $|G{-|g}=2.3 eV from {+30}Si(|a,|g),(|a,n):resonances.                 
- 34S   G 8338         20                                                        
- 34S   G 9514         25                                                        
- 34S   G 11641        100       E1                                              
+ 34S   G 8338         20                                                    S   
+ 34S   G 9514         25                                                    S   
+ 34S   G 11641        100       E1                                          A   
  34S  d                                                                         
  34S   L 11648.64     3-               0.61 KEV  12                             
  34S X L XREF=L(11637*)Q(11639*)                                                
@@ -1667,7 +1649,7 @@
  34S X L XREF=L(11670*)Q                                                        
  34S  cL $|G{-n}=0.67 keV {I6}, |G{-|g}=2.4 eV {I2} from                        
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
- 34S  cL $All data are from {+33}S(n,|g),(n,n):resonances.                      
+
  34S  d                                                                         
  34S   L 11670        1+               0.55 KEV  11                             
  34S X L XREF=L(11670*)Q                                                        
