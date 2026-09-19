@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ENSDF Averaging Tool - Python Command Line Interface
-Adapted from AverageTool_22January2025.jar, part of the ENSDF Analysis and Utility Codes
+Adapted from AverageTool.jar, part of the ENSDF Analysis and Utility Codes
 
 This tool implements the EXACT same weighted/unweighted averaging algorithm as the Java tool.
 
@@ -61,7 +61,7 @@ Usage:
     # (pipe multiple continuation lines as one string, concatenated)
 
 Examples:
-    python Java_Average.py 280 50 215 70 130 60 120 65
+    python Java_Average.py 280 50 215 70 130 20 120 35
     python Java_Average.py --comment "weighted average of 22 ps {I4} ... and 19.4 ps {I14} ..."
 """
 

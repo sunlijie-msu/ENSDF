@@ -1,0 +1,60 @@
+﻿cmt       owner id   record                 recomputed mean(sig)       chi2/dof  verdict
+----------------------------------------------------------------------------------------------------------------------------------
+87-95     80    LT   0.315 PS 12            tau=454.2(11.6)->T=314.86(8.01) -         UNC-MISMATCH
+109-112   108   GE   2127.498(20)           2127.5(0.0199)ext0.0199    1.31/4    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+119-127   114   LT   122 FS 9               tau=175.7(7.86)->T=121.77(5.44) -         UNC-MISMATCH
+130-132   129   GE   1176.650(26)           1176.7(0.02)ext0.026       5.10/3    UNC-MISMATCH(A_round:20/B_ceil:20/C_maxmin:20/D_ceil_ext:27)
+137-139   136   GE   3304.029(29)           3304(0.02)ext0.0289        6.30/3    UNC=D_ceil_ext
+140-143   136   GRI  87.1(9)                87.07(0.883)ext0.883       1.65/4    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+149-152   145   LT   -                      PARSE FAIL                 -         T$lifetime |t=1618 fs {I126}: weighted average of 1600 fs {I
+155-156   154   GE   1787.3(8)              1787.3(0.427)ext0.427      nan/2     UNC-MISMATCH(A_round:4/B_ceil:5/C_maxmin:5/D_ceil_ext:5)
+169-170   168   GRI  8.5(9)                 8.4964(0.752)ext0.835      1.23/1    UNC=D_ceil_ext
+173-175   172   GE   1947.060(20)           1947.1(0.02)ext0.02        1.44/2    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+176-177   172   GRI  95(8)                  95.236(5.48)ext6.95        3.21/2    UNC=C_maxmin
+180-182   179   GE   4072.9(11)             4072.9(0.662)ext0.662      nan/2     UNC-MISMATCH(A_round:7/B_ceil:7/C_maxmin:7/D_ceil_ext:7)
+191-193   187   LT   72 FS 7                tau=104.3(7.68)->T=72.28(5.32) -         UNC-MISMATCH
+195-196   194   GE   1987.19(3)             1987.2(0.03)ext0.03        0.00/1    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+197-199   194   GRI  69.8(34)               69.8(2.22)ext3.37          6.90/3    UNC=D_ceil_ext
+201-203   200   GE   4114.52(4)             4114.5(0.0399)ext0.0399    1.01/3    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+213-215   208   LT   85 FS 7                tau=121.5(7.82)->T=84.212(5.42) -         VALUE(84)
+217-219   216   GE   1320.168(20)           1320.2(0.02)ext0.02        1.92/3    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+224-226   223   GE   2496.725(25)           2496.7(0.02)ext0.0251      3.14/2    UNC-MISMATCH(A_round:20/B_ceil:20/C_maxmin:20/D_ceil_ext:26)
+227-228   223   GRI  41(4)                  41.133(2.85)ext3.28        2.65/2    UNC=C_maxmin/D_ceil_ext
+236-238   232   LT   88 FS 7                tau=126.6(6.28)->T=87.781(4.35) -         UNC-MISMATCH
+242-244   241   GE   2561.35(6)             2561.3(0.0494)ext0.0622    4.75/3    VALUE(2561.34) UNC-MISMATCH(A_round:5/B_ceil:5/C_maxmin:5/D_ceil_ext:7)
+255-257   254   GE   1572.56(5)             1572.6(0.0494)ext0.0494    1.98/3    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+258-260   254   GRI  70(8)                  70.03(5.56)ext6.44         4.03/3    UNC=C_maxmin
+262-264   261   GE   2749.24(5)             2749.2(0.0498)ext0.0498    0.80/2    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+322-323   321   GRI  53(5)                  53.16(4.67)ext4.67         0.42/1    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+334-335   333   GE   1055.491(20)           1055.5(0.02)ext0.02        0.01/1    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+339-340   338   GE   2375.657(20)           2375.7(0.02)ext0.02        0.13/1    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+345-346   344   GE   3552.08(6)             3552.1(0.0399)ext0.0584    2.14/1    UNC=D_ceil_ext
+354-358   350   LT   -                      PARSE FAIL                 -         T$lifetime |t=53.3 ps {I24}: weighted average of 55 ps {I7} 
+360-361   359   GE   1001.5(5)              1001.5(0.447)ext0.447      0.29/1    UNC=B_ceil/C_maxmin/D_ceil_ext
+365-366   364   GE   1066.2(5)              1066.2(0.447)ext0.447      0.03/1    UNC=B_ceil/C_maxmin/D_ceil_ext
+367-368   364   GRI  88(8)                  88.333(4.47)ext4.47        nan/2     UNC-MISMATCH(A_round:4/B_ceil:5/C_maxmin:5/D_ceil_ext:5)
+438-439   437   GE   1374.43(23)            1374.4(0.186)ext0.228      1.50/1    UNC=D_ceil_ext
+443-445   442   GE   1562.4(5)              1562.4(0.333)ext0.333      0.22/2    UNC=C_maxmin
+464-465   462   GRI  36(6)                  36.241(5.51)ext5.51        0.28/1    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+498-499   497   GRI  61(7)                  60.595(6.47)ext6.47        0.36/1    UNC=B_ceil/C_maxmin/D_ceil_ext
+507-509   505   LE   6639(1)                6639(0.989)ext0.989        0.09/3    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+524-525   522   LE   -                      PARSE FAIL                 -         E$weighted average of 6743 {I15} from {+32}S(t,p) and 6738 {
+553-554   551   LT   28 FS 7                tau=40.19(9.81)->T=27.859(6.8) -         UNC=A_round UNC=B_ceil UNC=D_ceil_ext
+562-564   560   LE   6890(1)                6890(0.995)ext0.995        0.55/3    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+593-594   591   LE   7111(14)               7110.9(10.2)ext10.2        0.01/1    UNC=C_maxmin
+680-681   678   LE   7655(11)               7655.2(8.65)ext8.65        0.32/1    UNC=C_maxmin
+709-711   707   LT   97 FS 24               tau=139.7(28.7)->T=96.808(19.9) -         UNC-MISMATCH
+716-717   714   GE   1539.7(5)              1539.7(0.447)ext0.447      0.13/1    UNC=B_ceil/C_maxmin/D_ceil_ext
+726-727   724   LE   7804(5)                7804(4.71)ext4.71          0.72/2    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+794-796   792   LT   83 FS 14               tau=120.4(17.9)->T=83.455(12.4) -         UNC-MISMATCH
+803-804   802   GE   2680.5(6)              2680.5(0.575)ext0.575      0.06/1    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+816-817   814   LE   8423(5)                8422.6(4.77)ext4.77        0.09/1    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+855-856   853   LE   8656(5)                8656.3(4.07)ext4.07        0.01/1    UNC=B_ceil/C_maxmin/D_ceil_ext
+969-970   967   LE   9479(4)                9479.2(2.98)ext2.98        0.23/2    UNC=C_maxmin
+990-991   988   LE   9598.42(8)             9598.4(0.08)ext0.08        0.27/1    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+1008-1009 1006  LE   9707(6)                9706.5(3.84)ext5.41        1.98/1    VALUE(9706) UNC=D_ceil_ext
+1028-1029 1026  LE   9868(5)                9868.2(3.77)ext3.77        1.98/2    UNC=C_maxmin
+1048-1049 1046  LE   9933.36(12)            9933.4(0.12)ext0.12        0.07/1    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+1199-1200 1197  LE   10662(5)               10662(4.47)ext4.47         0.07/1    UNC=B_ceil/C_maxmin/D_ceil_ext
+1219-1220 1217  LE   10790(5)               10790(4.67)ext4.67         0.13/1    UNC=A_round/B_ceil/C_maxmin/D_ceil_ext
+1230-1231 1228  LE   10802(6)               10802(5.14)ext5.14         0.07/1    UNC=B_ceil/C_maxmin/D_ceil_ext
