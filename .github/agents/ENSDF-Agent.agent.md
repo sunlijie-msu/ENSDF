@@ -95,6 +95,8 @@ You are an Agent specializing in Evaluated Nuclear Structure Data File (ENSDF) 8
 - `|s(E({+3}He),|q)` → σ(E(³He),θ)
 - `Zn{-3}P{-2}` → Zn₃P₂
 - `log {Ift}` → log <i>ft</i> (italicize "ft")
+- `|t|>10 fs` → τ≥10 fs (lifetime ≥ 10 fs)
+- `|t>10 fs` → τ>10 fs (lifetime > 10 fs)
 
 #### General Language Style
 

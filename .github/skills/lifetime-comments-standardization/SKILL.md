@@ -114,7 +114,7 @@ Adopt the **strictest** limit (largest `>`, smallest `<`); move all others to "O
 - **Preserve values:** Do not round or alter values, uncertainties, or NSR keys.
 - **ENSDF notation:** Use `{IUNC}` for symmetric; `{I+n-m}` for asymmetric uncertainties.
 - **Unit consistency:** Convert component units to match the adopted result (e.g., fs → ps).
-- **Limits:** Use `>` or `<` without parentheses or uncertainties.
+- **Limits:** No parentheses or uncertainties. Keep the source's exact symbol: `>`/`<` are strict, `|>` = ≥ and `|<` = ≤ (`|` is ENSDF standard slash), so `|t|<20 fs` (τ≤20 fs) not `|t<20 fs` (τ<20 fs); never get confused between them.
 - **Lifetime uncertainty limit:** Use **99** (not default 35) for full precision.
 - **Adopted average:** Do not derive adopted τ from the L-record T field (T₁/₂). The the final averaged value is a placeholder. Computing the average is handled by a separate skill. This skill focuses on formatting the available data into the standardized comment structure.
 
