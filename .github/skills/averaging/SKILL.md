@@ -13,8 +13,6 @@ argument-hint: [VALUE1 UNC1 VALUE2 UNC2 ...]
 
 ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
-## When
-Run `Java_Average.py` any time you need to adopt a value from 2+ measurements across different papers.
 
 ## How
 
@@ -29,7 +27,16 @@ python .github/scripts/Java_Average.py --comment "19.7 ps {I13} (1970Br10) and 2
 ```
 
 ## What to adopt
+- Transcribe the printed **Suggested Adopted Result** character-for-character to data fields; never recompute, re-round, or substitute. Comments quote must match the suggestion.
+- Use the method the tool labels (Weighted vs Unweighted).
+- Adopted uncertainty ≥ smallest input uncertainty (min-uncertainty rule); the tool enforces it — do not override.
+- Lifetimes use full precision (limit 99): `197 fs {I50}`. In the record, `T`/`DT` = ln2 × tool τ/unc in the record's unit.
 
+## Uncertainty digits by destination
+| Destination | Digits |
+| --- | --- |
+| Comment line (`cL T$`, `cG RI$`, …) | as printed; 2 digits kept even when >35 |
+| Data-record field (`E`/`DE`, `RI`/`DRI`, `T`/`DT`, `2 L BE2=`) | >35 → 1 digit |
 
 When user requests code `Java_Average.py` for calculating averages, follow these rules with absolute precision and zero tolerance for deviation:
 
