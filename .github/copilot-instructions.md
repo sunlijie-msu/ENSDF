@@ -136,7 +136,7 @@ Each field begins at prescribed columns with fixed widths. Content must be left-
 - Mandatory usage: Before editing, during editing (each line), and after editing
 
 **Note:** Skip ruler, column validation, and gamma ordering checks only if task is purely editing comments.
-- Comment editing tasks should prioritize content accuracy and completeness, and wrapping to 80 characters is not required for comments. Human user will wrap long comments to 80-char lines using other tools.
+- Comment editing tasks should prioritize content accuracy and completeness. Wrapping to 80 characters is not required for comments. Human user will wrap comments to 80-char lines using other tools.
 - If the task is purely editing comments, you must ensure no accidental changes are made to data records via git diff.
 
 **AI Behavior Rule:** Never claim edit completion without ruler and column validation.
