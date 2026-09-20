@@ -4,9 +4,8 @@ description: >
   Use this skill when reviewing, writing, or reordering comments for an ENSDF
   dataset. Establishes a single default-source general cG E,RI$ comment and adds
   individual exception comments only where needed. Covers weighted averages,
-  non-default dataset sources, and enforces ENSDF comment-unit ordering
-  (cL: E$ → J$ → T$ → S$ → general; cG: E$ → RI$ → M$ → MR$ → general), including
-  the safe whole-unit reorder procedure.
+  non-default dataset sources, and whole-unit reordering of comment units into
+  ENSDF comment order.
 argument-hint: [ENSDF file or dataset name]
 ---
 
@@ -35,34 +34,12 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 | Value from non-default dataset | Add cG E$ or cG RI$ stating source |
 | Other values exist but not used for averaging | Add "other: VALUE from DATASET" |
 
-### Comment Ordering (per ENSDF rules)
+### Comment Ordering
 
-Within one level block all `cL` units and within one gamma block all `cG` units must
-appear in this order; the general comment (no identifier before `$`) is always last:
-
-```
-cL: E$ → J$ → T$ → S$ → general (no identifier)
-cG: E$ → RI$ → M$ → MR$ → general (no identifier)
-```
-
-- A **unit** is a `cX` first line plus its `2cX`, `3cX`, … continuation lines — an
-  inseparable whole. Column 7 holds the flag (`c`/`C` = comment, `d`/`D` = hidden
-  message — records kept in the file but ignored by the processing codes); column 8
-  holds the record type being commented. Any other character in column 7 is invalid,
-  and only `c`/`C`/`d`/`D` mark a comment-style record.
-- Composite identifiers (e.g. `E,RI$`, `E(E),J(E)$`) rank by their **first** field.
-- Only the category order is enforced; sub-order inside one category is free.
-- Units with other identifiers (e.g. `BE2$`, `MOMM1$`) follow the listed categories.
-- Alphabetical sub-order among dataset-scoped identifiers is not required.
-
-### Reordering Procedure
-
-1. Reload the file, then map each unit's span (first line + continuations) before editing.
-2. Move **whole units** only; never split a unit, never touch data records.
-3. Continuation markers restart at `2` for every unit — moving units needs **no renumbering**.
-4. Keep comment text byte-identical and every line exactly 80 columns.
-5. Validate in order: `ensdf_1line_ruler.py`, `check_gamma_ordering.py`,
-   `column_calibrate.py` (`.github/scripts/`), then confirm `git diff` touches comment lines only.
+Order comment units in each `cL`/`cG` block per `.github/agents/ENSDF-Agent.agent.md`
+(general comment last). Move whole units (first line plus continuations) unchanged — no
+text edits, no renumbering, no data-record changes. Validate with `.github/scripts/`:
+`ensdf_1line_ruler.py`, `check_gamma_ordering.py`, `column_calibrate.py`.
 
 ### What to Avoid
 
@@ -78,10 +55,8 @@ cG: E$ → RI$ → M$ → MR$ → general (no identifier)
 	- From multiple datasets → add weighted/unweighted average comment
 	- From non-default dataset → add source comment, with `Other:` values when applicable
 3. Remove redundant individual comments that merely restate the default source.
-4. Preserve ENSDF ordering for each level/gamma comment block:
-	- `cL`: `cL E$` → `cL J$` → `cL T$` → `cL S$` → general (no identifier)
-	- `cG`: `cG E$` → `cG RI$` → `cG M$` → `cG MR$` → general (no identifier)
-	- Move whole units (first line + continuations) with the reordering procedure above.
+4. Order each level/gamma comment block per `.github/agents/ENSDF-Agent.agent.md`,
+	moving whole units (first line + continuations).
 5. Keep deduced E|g values (no uncertainty) undocumented at per-gamma level unless an explicit exception is required.
 
 ## Completion Criteria
@@ -89,8 +64,7 @@ cG: E$ → RI$ → M$ → MR$ → general (no identifier)
 - One clear default-source general comment exists for E,RI.
 - Exception comments exist only where source differs from default or averaging is required.
 - No redundant per-gamma default-source comments remain.
-- Comment ordering follows ENSDF sequence rules for both `cL` and `cG` units, with the
-  general comment last.
+- Comment units in every `cL`/`cG` block follow ENSDF order, general comment last.
 
 For general comment ordering at the beginning of Adopted files, see
 `.github/skills/general-comments-ordering/SKILL.md`. Full record/column rules:

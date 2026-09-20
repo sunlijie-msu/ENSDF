@@ -3,11 +3,13 @@
 ENSDF Energy Record Ordering Checker
 ====================================
 
-This script checks for both L-record (level) and G-record (gamma transition) ordering 
-issues in ENSDF files. According to ENSDF format requirements:
+This script checks for L-record (level), G-record (gamma transition) and comment-unit
+ordering issues in ENSDF files. According to ENSDF format requirements:
 - ALL L-records MUST be arranged in ASCENDING energy order
 - ALL G-records following each L-record MUST be arranged in ASCENDING energy order
 - X+ energies must have uncertainties in the DE field
+- Comment units in a level/gamma block MUST follow the category order of
+  .github/agents/ENSDF-Agent.agent.md, with the general comment last
 
 This script DOES NOT fix anything - it only reports problems for manual correction.
 This is important because records can have continuation lines that need to be moved 
@@ -17,6 +19,7 @@ Enhanced Features:
 - Level energy ordering validation (NEW)
 - X+ energy uncertainty checking (NEW)  
 - Gamma energy ordering validation (ENHANCED)
+- Comment-unit ordering validation for cL and cG blocks (NEW)
 - Comprehensive issue reporting with line numbers
 - Support for Windows and Unix line endings
 
@@ -36,6 +39,7 @@ Date: January 2025
 import sys
 import argparse
 import glob
+import re
 from pathlib import Path
 from typing import List, Dict, Tuple
 
@@ -45,6 +49,9 @@ class ENSDFEnergyChecker:
         self.total_files = 0
         self.files_with_issues = 0
         self.total_issues = 0
+        # Comment category order per commented record type; the general comment
+        # (no identifier) is appended last.
+        self.comment_order = {'L': ('E', 'J', 'T', 'S'), 'G': ('E', 'RI', 'M', 'MR')}
         
     def log(self, message: str, force: bool = False):
         """Print message if verbose mode or force is True"""
@@ -88,6 +95,87 @@ class ENSDFEnergyChecker:
         # This excludes: cG (pos6='c'), dG (pos6='d'), B G (pos5='B'), S G (pos5='S'), etc.
         return (len(line) > 7 and line[5] == ' ' and line[6] == ' ' and 
                 line[7] == 'G' and line[8] == ' ')
+
+    def is_comment_record(self, line: str) -> bool:
+        """True if line is a comment record ('c'/'C' flag in column 7).
+
+        Hidden-message records ('d'/'D') are not comments and are ignored here.
+        """
+        return len(line) > 7 and line[6] in ('c', 'C')
+
+    def comment_rank(self, target: str, ident) -> int:
+        """Category index of a comment identifier, -1 when unconstrained.
+
+        Composite identifiers ("E,RI", "E(E),J(E)") are ranked by the category that
+        leads them. The general comment (no identifier) ranks last.
+        """
+        categories = self.comment_order.get(target, ())
+        if ident is None:
+            return len(categories)
+        first = re.sub(r'\([^)]*\)', '', ident).split(',')[0].strip().upper()
+        matches = [i for i, token in enumerate(categories)
+                   if first == token or first.startswith(token)]
+        # Longest token wins, so "MR" is not read as "M".
+        return max(matches, key=lambda i: len(categories[i])) if matches else -1
+
+    def check_comment_ordering(self, lines: list) -> list:
+        """Check comment-unit ordering inside cL and cG blocks.
+
+        A block is a run of consecutive comment units for the same record type; a unit
+        is a first comment line plus its continuation lines ('2cL', '3cG', ...). Only
+        the category order is enforced, not the sub-order inside one category.
+        """
+        blocks = []
+        for i, line in enumerate(lines):
+            if not self.is_comment_record(line):
+                # A hidden-message record belongs to the same data record, so it
+                # neither starts nor ends a comment run.
+                if (len(line) > 7 and line[6] in ('d', 'D')
+                        and blocks and line[7] == blocks[-1]['target']):
+                    blocks[-1]['last'] = i + 1
+                continue
+            target = line[7]
+            if target not in self.comment_order:
+                continue
+            body = line[8:]
+            ident = body.split('$', 1)[0].strip() if '$' in body else ''
+            continuation = line[5] != ' '
+            if continuation and blocks and blocks[-1]['target'] == target and blocks[-1]['last'] == i:
+                blocks[-1]['last'] = i + 1
+                continue
+            unit = {'line_num': i + 1, 'ident': ident or None}
+            if blocks and blocks[-1]['target'] == target and blocks[-1]['last'] == i:
+                blocks[-1]['units'].append(unit)
+                blocks[-1]['last'] = i + 1
+            else:
+                blocks.append({'target': target, 'start': i + 1, 'last': i + 1,
+                               'units': [unit]})
+        
+        issues = []
+        for block in blocks:
+            highest = -1
+            out_of_order = False
+            for unit in block['units']:
+                rank = self.comment_rank(block['target'], unit['ident'])
+                if rank < 0:
+                    continue
+                if rank < highest:
+                    out_of_order = True
+                highest = max(highest, rank)
+            
+            if out_of_order:
+                found = ', '.join(u['ident'] or 'general' for u in block['units'])
+                issues.append({
+                    'type': 'comment_ordering',
+                    'line_num': block['start'],
+                    'message': (f"{block['target']} comment block (lines {block['start']}-"
+                                f"{block['last']}) is out of order: found {found}"),
+                    'expected': ' -> '.join(self.comment_order[block['target']])
+                                + ' -> general',
+                    'units': block['units']
+                })
+        
+        return issues
 
     def check_level_ordering(self, lines: list) -> list:
         """Check that L-records are in ascending energy order"""
@@ -155,6 +243,11 @@ class ENSDFEnergyChecker:
         gamma_issues = self.check_gamma_ordering_all_levels(lines)
         all_issues.extend(gamma_issues)
         
+        # Check comment-unit ordering in cL/cG blocks
+        self.log(">> Checking comment-unit ordering...", force=True)
+        comment_issues = self.check_comment_ordering(lines)
+        all_issues.extend(comment_issues)
+        
         # Report all issues with enhanced formatting
         if all_issues:
             self.files_with_issues += 1
@@ -163,6 +256,7 @@ class ENSDFEnergyChecker:
             # Group issues by type
             level_order_issues = [i for i in all_issues if i['type'] == 'level_ordering']
             gamma_order_issues = [i for i in all_issues if i['type'] == 'gamma_ordering']
+            comment_order_issues = [i for i in all_issues if i['type'] == 'comment_ordering']
             
             if level_order_issues:
                 print(f"\n[X] LEVEL ORDERING ISSUES ({len(level_order_issues)}):")
@@ -182,11 +276,20 @@ class ENSDFEnergyChecker:
                         marker = "[X]" if current_order[idx] != correct_order[idx] else "[OK]"
                         print(f"        {marker} Line {gamma['line_num']}: G {gamma['energy']} keV")
             
+            if comment_order_issues:
+                print(f"\n[X] COMMENT ORDERING ISSUES ({len(comment_order_issues)}):")
+                for issue in comment_order_issues:
+                    print(f"   * {issue['message']}")
+                    print(f"     Expected: {issue['expected']}")
+                    for unit in issue['units']:
+                        print(f"        Line {unit['line_num']}: {unit['ident'] or 'general comment'}")
+            
             self.total_issues += len(all_issues)
             print(f"\n[STATS] {filename}: {len(all_issues)} total issues found")
             return False
         else:
-            print(f"[OK] {filename}: All energy records are correctly ordered!")
+            print(f"[OK] {filename}: All energy records are correctly ordered, "
+                  f"and comments follow ENSDF comment order!")
             return True
 
     def check_gamma_ordering_all_levels(self, lines: list) -> list:
@@ -264,6 +367,7 @@ class ENSDFEnergyChecker:
             print(f"\nManual fixes needed for {self.files_with_issues} files:")
             print(f"   - Level ordering: Sort L-records by ascending energy")
             print(f"   - Gamma ordering: Sort G-records by ascending energy within each level")
+            print(f"   - Comment ordering: cL/cG units per ENSDF-Agent.agent.md, general last")
             print(f"   - Use line numbers shown above to locate records needing reordering")
             print(f"   - Remember to move continuation lines with their parent records")
         else:
@@ -271,7 +375,7 @@ class ENSDFEnergyChecker:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Check G-record ordering in ENSDF files (check-only, no fixes applied)",
+        description="Check L/G-record energy ordering and cL/cG comment-unit ordering in ENSDF files (check-only, no fixes applied)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
