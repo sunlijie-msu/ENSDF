@@ -1,5 +1,5 @@
 Program for consistency check: output for averaging results for gamma energies and intensities (version 08/20/2026)
-Generated at: Sun 09/20/2026 at 05:29:46 PM EDT
+Generated at: Sun 09/20/2026 at 07:51:16 PM EDT
 
 **************** Level=2128 in 34S     *******************ID#=1-2
 
@@ -1398,37 +1398,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cG E=thermal                                                              
 
 
-**************** Level=4882 in 34S     *******************ID#=1-12
-
------- average E------
-Data points of E record
-*                         (P,P)   4882(14)            weight=67.11%
-*                       (D,3HE)   4900(20)            weight=32.89%
-
-Averaging results:
-           weighted average:      4888(12)             (internal)
-                                  4888(9)              (external)
-                                  chi**2/(n-1)=0.544     [critical=6.635]
-         unweighted average:      4891(9)             
-           (of all values)        chi**2/(n-1)=162.000     [critical=6.635]
-
-   suggested adopted result:      4888(14)            
-       (Weighted-Of-All)
-
-NOTE:  Suggested adopted result is just the preference of this average code which adopts
-          an uncertainty no smaller than any input uncertainty and uses combined weight for
-          getting the external uncertainty. It is user's decision to make the final choice.
-
-### weighted average comment:
- 34S  cL E$weighted average of 4882 {I14} from (p,p) and 4900 {I20} from        
- 34S 2cL (d,{+3}He)                                                             
-
-### unweighted average comment (all non-limit values with/without unc):
- 34S  cL E$unweighted average of 4882 {I14} from (p,p) and 4900 {I20} from      
- 34S 2cL (d,{+3}He)                                                             
-
-
-**************** Level=4889.76 in 34S     *******************ID#=1-13
+**************** Level=4889.76 in 34S     *******************ID#=1-12
 
 ------ average E------
 Data points of E record
@@ -1437,14 +1407,15 @@ Data points of E record
                           (T,P)   4888(13)            weight=0.00%
 *               (N,G) E=THERMAL   4889.76(2)          weight=99.99%
                           (D,P)   4888(10)            weight=0.00%
+                          (P,P)   4882(14)            weight=0.00%
                         (D,3HE)   4900(20)            weight=0.00%
 
 Averaging results:
            weighted average:      4889.760(20)         (internal)
-                                  4889.760(7)          (external)
-                                  chi**2/(n-1)=0.128     [critical=6.635]
-         unweighted average:      4891.4(22)          
-           (of all values)        chi**2/(n-1)=24.964     [critical=3.319]
+                                  4889.760(8)          (external)
+                                  chi**2/(n-1)=0.164     [critical=6.635]
+         unweighted average:      4889.8(24)          
+           (of all values)        chi**2/(n-1)=34.610     [critical=3.017]
 
    suggested adopted result:      4889.76(2)          
            (Non-Average)
@@ -1455,20 +1426,21 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 ### weighted average comment:
  34S  cL E$weighted average of 4891.1 {I30} from (|a,p|g), 4888 {I13} from      
- 34S 2cL (t,p), 4889.76 {I2} from (n,|g) E=thermal, 4888 {I10} from (d,p), and  
- 34S 3cL 4900 {I20} from (d,{+3}He)                                             
+ 34S 2cL (t,p), 4889.76 {I2} from (n,|g) E=thermal, 4888 {I10} from (d,p), 4882 
+ 34S 3cL {I14} from (p,p), and 4900 {I20} from (d,{+3}He)                       
 
 ### unweighted average comment (all non-limit values with/without unc):
  34S  cL E$unweighted average of 4891.1 {I30} from (|a,p|g), 4888 {I13} from    
- 34S 2cL (t,p), 4889.76 {I2} from (n,|g) E=thermal, 4888 {I10} from (d,p), and  
- 34S 3cL 4900 {I20} from (d,{+3}He)                                             
+ 34S 2cL (t,p), 4889.76 {I2} from (n,|g) E=thermal, 4888 {I10} from (d,p), 4882 
+ 34S 3cL {I14} from (p,p), and 4900 {I20} from (d,{+3}He)                       
 
 ### Non-average comment:
  34S  cL E$from (n,|g) E=thermal. Others: 4891.1 {I30} from (|a,p|g), 4888 {I13}
- 34S 2cL from (t,p), 4888 {I10} from (d,p), and 4900 {I20} from (d,{+3}He)      
+ 34S 2cL from (t,p), 4888 {I10} from (d,p), 4882 {I14} from (p,p), and 4900     
+ 34S 3cL {I20} from (d,{+3}He)                                                  
 
 
-**************** Level=4889.76     Gamma=1585.510 in 34S     *******************ID#=1-13-6
+**************** Level=4889.76     Gamma=1585.510 in 34S     *******************ID#=1-12-6
 
 ------ average RI------
 Data points of RI record
@@ -1498,7 +1470,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG E=thermal                                                              
 
 
-**************** Level=4889.76     Gamma=4889.30 in 34S     *******************ID#=1-13-8
+**************** Level=4889.76     Gamma=4889.30 in 34S     *******************ID#=1-12-8
 
 ------ average RI------
 Data points of RI record
@@ -1528,7 +1500,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=5228.175 in 34S     *******************ID#=1-14
+**************** Level=5228.175 in 34S     *******************ID#=1-13
 
 ------ average E------
 Data points of E record
@@ -1564,25 +1536,26 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=5318.8 in 34S     *******************ID#=1-15
+**************** Level=5322.514 in 34S     *******************ID#=1-14
 
 ------ average E------
 Data points of E record
 ### (1 value has weight>2.00%; all values with unc  considered in weighted average)
-*                        (A,PG)   5318.8(18)          weight=96.36%
-                          (T,P)   5320(13)            weight=1.85%
-                          (P,P)   5321(14)            weight=1.59%
-                        (D,3HE)   5360(40)            weight=0.20%
+                         (A,PG)   5318.8(18)          weight=0.02%
+                          (T,P)   5320(13)            weight=0.00%
+*               (N,G) E=THERMAL   5322.514(28)        weight=99.97%
+                          (P,P)   5321(14)            weight=0.00%
+                        (D,3HE)   5360(40)            weight=0.00%
 
 Averaging results:
-           weighted average:      5318.9(18)           (internal)
-                                  5318.9(11)           (external)
-                                  chi**2/(n-1)=0.363     [critical=6.635]
-         unweighted average:      5330(10)            
-           (of all values)        chi**2/(n-1)=402.145     [critical=3.780]
+           weighted average:      5322.513(28)         (internal)
+                                  5322.513(32)         (external)
+                                  chi**2/(n-1)=1.296     [critical=6.635]
+         unweighted average:      5329(8)             
+           (of all values)        chi**2/(n-1)=312.667     [critical=3.319]
 
-   suggested adopted result:      5318.8(18)          
-           (Non-Average)
+   suggested adopted result:      5322.513(32)        
+       (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1590,55 +1563,47 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 ### weighted average comment:
  34S  cL E$weighted average of 5318.8 {I18} from (|a,p|g), 5320 {I13} from      
- 34S 2cL (t,p), 5321 {I14} from (p,p), and 5360 {I40} from (d,{+3}He)           
+ 34S 2cL (t,p), 5322.514 {I28} from (n,|g) E=thermal, 5321 {I14} from (p,p), and
+ 34S 3cL 5360 {I40} from (d,{+3}He)                                             
 
 ### unweighted average comment (all non-limit values with/without unc):
  34S  cL E$unweighted average of 5318.8 {I18} from (|a,p|g), 5320 {I13} from    
- 34S 2cL (t,p), 5321 {I14} from (p,p), and 5360 {I40} from (d,{+3}He)           
-
-### Non-average comment:
- 34S  cL E$from (|a,p|g). Others: 5320 {I13} from (t,p), 5321 {I14} from (p,p), 
- 34S 2cL and 5360 {I40} from (d,{+3}He)                                         
+ 34S 2cL (t,p), 5322.514 {I28} from (n,|g) E=thermal, 5321 {I14} from (p,p), and
+ 34S 3cL 5360 {I40} from (d,{+3}He)                                             
 
 
-**************** Level=5322.514 in 34S     *******************ID#=1-16
+**************** Level=5320 in 34S     *******************ID#=1-15
 
 ------ average E------
 Data points of E record
-### (1 value has weight>2.00%; all values with unc  considered in weighted average)
-                          (T,P)   5320(13)            weight=0.00%
-*               (N,G) E=THERMAL   5322.514(28)        weight=100.00%
-                          (D,P)   5326(6)             weight=0.00%
-                          (P,P)   5321(14)            weight=0.00%
+*                         (T,P)   5320(13)            weight=15.25%
+*                         (D,P)   5326(6)             weight=71.60%
+*                         (P,P)   5321(14)            weight=13.15%
 
 Averaging results:
-           weighted average:      5322.514(28)         (internal)
-                                  5322.514(10)         (external)
-                                  chi**2/(n-1)=0.129     [critical=6.635]
-         unweighted average:      5322.4(13)          
-           (of all values)        chi**2/(n-1)=6.897     [critical=3.780]
+           weighted average:      5324(5)              (internal)
+                                  5324.4(18)           (external)
+                                  chi**2/(n-1)=0.122     [critical=4.605]
+         unweighted average:      5322.3(19)          
+           (of all values)        chi**2/(n-1)=10.333     [critical=4.605]
 
-   suggested adopted result:      5322.514(28)        
-           (Non-Average)
+   suggested adopted result:      5324(6)             
+       (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 34S  cL E$weighted average of 5320 {I13} from (t,p), 5322.514 {I28} from (n,|g)
- 34S 2cL E=thermal, 5326 {I6} from (d,p), and 5321 {I14} from (p,p)             
+ 34S  cL E$weighted average of 5320 {I13} from (t,p), 5326 {I6} from (d,p), and 
+ 34S 2cL 5321 {I14} from (p,p)                                                  
 
 ### unweighted average comment (all non-limit values with/without unc):
- 34S  cL E$unweighted average of 5320 {I13} from (t,p), 5322.514 {I28} from     
- 34S 2cL (n,|g) E=thermal, 5326 {I6} from (d,p), and 5321 {I14} from (p,p)      
-
-### Non-average comment:
- 34S  cL E$from (n,|g) E=thermal. Others: 5320 {I13} from (t,p), 5326 {I6} from 
- 34S 2cL (d,p), and 5321 {I14} from (p,p)                                       
+ 34S  cL E$unweighted average of 5320 {I13} from (t,p), 5326 {I6} from (d,p),   
+ 34S 2cL and 5321 {I14} from (p,p)                                              
 
 
-**************** Level=5380.99 in 34S     *******************ID#=1-17
+**************** Level=5380.99 in 34S     *******************ID#=1-16
 
 ------ average E------
 Data points of E record
@@ -1680,7 +1645,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cL from (d,{+3}He)                                                        
 
 
-**************** Level=5380.99     Gamma=3253.21 in 34S     *******************ID#=1-17-10
+**************** Level=5380.99     Gamma=3253.21 in 34S     *******************ID#=1-16-10
 
 ------ average RI------
 Data points of RI record
@@ -1713,7 +1678,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG RI$from (n,|g) E=thermal. Other: 100 {I13} from (|a,p|g)               
 
 
-**************** Level=5380.99     Gamma=5380.59 in 34S     *******************ID#=1-17-11
+**************** Level=5380.99     Gamma=5380.59 in 34S     *******************ID#=1-16-11
 
 ------ average RI------
 Data points of RI record
@@ -1743,7 +1708,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG E=thermal                                                              
 
 
-**************** Level=5679.928 in 34S     *******************ID#=1-18
+**************** Level=5679.928 in 34S     *******************ID#=1-17
 
 ------ average E------
 Data points of E record
@@ -1782,7 +1747,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL {I1} from (|a,p|g), and 5684 {I14} from (p,p)                          
 
 
-**************** Level=5679.928     Gamma=1055.491 in 34S     *******************ID#=1-18-6
+**************** Level=5679.928     Gamma=1055.491 in 34S     *******************ID#=1-17-6
 
 ------ average E------
 Data points of E record
@@ -1848,7 +1813,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG RI$from (n,|g) E=thermal. Other: 33 {I17} from ({+16}O,|a2p|g)         
 
 
-**************** Level=5679.928     Gamma=2375.657 in 34S     *******************ID#=1-18-10
+**************** Level=5679.928     Gamma=2375.657 in 34S     *******************ID#=1-17-10
 
 ------ average E------
 Data points of E record
@@ -1912,7 +1877,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (|a,p|g), and 100 {I9} from (n,|g) E=thermal                           
 
 
-**************** Level=5679.928     Gamma=3552.08 in 34S     *******************ID#=1-18-11
+**************** Level=5679.928     Gamma=3552.08 in 34S     *******************ID#=1-17-11
 
 ------ average E------
 Data points of E record
@@ -1978,7 +1943,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG {I16} from (|a,p|g)                                                    
 
 
-**************** Level=5690 in 34S     *******************ID#=1-19
+**************** Level=5690 in 34S     *******************ID#=1-18
 
 ------ average E------
 Data points of E record
@@ -2009,7 +1974,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (d,p). Other: 5684 {I14} from (p,p)                             
 
 
-**************** Level=5690.8 in 34S     *******************ID#=1-20
+**************** Level=5690.8 in 34S     *******************ID#=1-19
 
 ------ average E------
 Data points of E record
@@ -2091,7 +2056,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from ({+12}C,|ap|g), and 37.4 ps {I35} from (|a,p|g)                   
 
 
-**************** Level=5690.8     Gamma=1001.5 in 34S     *******************ID#=1-20-1
+**************** Level=5690.8     Gamma=1001.5 in 34S     *******************ID#=1-19-1
 
 ------ average E------
 Data points of E record
@@ -2151,7 +2116,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (|a,p|g), and 100 {I9} from ({+36}S,{+34}S|g)                          
 
 
-**************** Level=5690.8     Gamma=1066.2 in 34S     *******************ID#=1-20-2
+**************** Level=5690.8     Gamma=1066.2 in 34S     *******************ID#=1-19-2
 
 ------ average E------
 Data points of E record
@@ -2214,7 +2179,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (|a,p|g), and 78 {I8} from ({+36}S,{+34}S|g)                           
 
 
-**************** Level=5755.876 in 34S     *******************ID#=1-21
+**************** Level=5755.876 in 34S     *******************ID#=1-20
 
 ------ average E------
 Data points of E record
@@ -2251,7 +2216,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 5755 {I14} from (p,p)                                       
 
 
-**************** Level=5847.524 in 34S     *******************ID#=1-22
+**************** Level=5847.524 in 34S     *******************ID#=1-21
 
 ------ average E------
 Data points of E record
@@ -2287,7 +2252,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=5998.10 in 34S     *******************ID#=1-23
+**************** Level=5998.10 in 34S     *******************ID#=1-22
 
 ------ average E------
 Data points of E record
@@ -2323,7 +2288,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=5998.10     Gamma=1922.92 in 34S     *******************ID#=1-23-2
+**************** Level=5998.10     Gamma=1922.92 in 34S     *******************ID#=1-22-2
 
 ------ average RI------
 Data points of RI record
@@ -2353,7 +2318,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=5998.10     Gamma=3870.51 in 34S     *******************ID#=1-23-3
+**************** Level=5998.10     Gamma=3870.51 in 34S     *******************ID#=1-22-3
 
 ------ average RI------
 Data points of RI record
@@ -2383,7 +2348,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=5998.10     Gamma=5997.30 in 34S     *******************ID#=1-23-4
+**************** Level=5998.10     Gamma=5997.30 in 34S     *******************ID#=1-22-4
 
 ------ average RI------
 Data points of RI record
@@ -2413,7 +2378,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=6121.56 in 34S     *******************ID#=1-24
+**************** Level=6121.56 in 34S     *******************ID#=1-23
 
 ------ average E------
 Data points of E record
@@ -2449,7 +2414,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=6121.56     Gamma=2817.76 in 34S     *******************ID#=1-24-1
+**************** Level=6121.56     Gamma=2817.76 in 34S     *******************ID#=1-23-1
 
 ------ average RI------
 Data points of RI record
@@ -2479,7 +2444,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=6121.56     Gamma=3994.8 in 34S     *******************ID#=1-24-2
+**************** Level=6121.56     Gamma=3994.8 in 34S     *******************ID#=1-23-2
 
 ------ average RI------
 Data points of RI record
@@ -2509,7 +2474,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=6168.862 in 34S     *******************ID#=1-25
+**************** Level=6168.862 in 34S     *******************ID#=1-24
 
 ------ average E------
 Data points of E record
@@ -2546,7 +2511,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 6170 {I14} from (p,p)                                       
 
 
-**************** Level=6173 in 34S     *******************ID#=1-26
+**************** Level=6173 in 34S     *******************ID#=1-25
 
 ------ average E------
 Data points of E record
@@ -2576,7 +2541,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,{+3}He)                                                             
 
 
-**************** Level=6251.23 in 34S     *******************ID#=1-27
+**************** Level=6251.23 in 34S     *******************ID#=1-26
 
 ------ average E------
 Data points of E record
@@ -2630,7 +2595,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 4cL 6251.7 {I19} from ({+36}S,{+34}S|g)                                    
 
 
-**************** Level=6251.23     Gamma=1374.43 in 34S     *******************ID#=1-27-1
+**************** Level=6251.23     Gamma=1374.43 in 34S     *******************ID#=1-26-1
 
 ------ average E------
 Data points of E record
@@ -2690,7 +2655,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (|a,p|g), and 46 {I10} from (n,|g) E=thermal                           
 
 
-**************** Level=6251.23     Gamma=1562.4 in 34S     *******************ID#=1-27-2
+**************** Level=6251.23     Gamma=1562.4 in 34S     *******************ID#=1-26-2
 
 ------ average E------
 Data points of E record
@@ -2751,7 +2716,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (|a,p|g), and 100 {I25} from (n,|g) E=thermal                          
 
 
-**************** Level=6251.68 in 34S     *******************ID#=1-28
+**************** Level=6251.68 in 34S     *******************ID#=1-27
 
 ------ average E------
 Data points of E record
@@ -2810,7 +2775,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cL {I18} from (p,p), and 6251.7 {I19} from ({+36}S,{+34}S|g)              
 
 
-**************** Level=6251.68     Gamma=572.0 in 34S     *******************ID#=1-28-1
+**************** Level=6251.68     Gamma=572.0 in 34S     *******************ID#=1-27-1
 
 ------ average E------
 Data points of E record
@@ -2872,7 +2837,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG from (n,|g) E=thermal                                                  
 
 
-**************** Level=6251.68     Gamma=1626.7 in 34S     *******************ID#=1-28-2
+**************** Level=6251.68     Gamma=1626.7 in 34S     *******************ID#=1-27-2
 
 ------ average E------
 Data points of E record
@@ -2931,7 +2896,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG from (n,|g) E=thermal                                                  
 
 
-**************** Level=6342.52 in 34S     *******************ID#=1-29
+**************** Level=6342.52 in 34S     *******************ID#=1-28
 
 ------ average E------
 Data points of E record
@@ -2968,7 +2933,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 6340 {I14} from (p,p)                                       
 
 
-**************** Level=6342.52     Gamma=3038.18 in 34S     *******************ID#=1-29-1
+**************** Level=6342.52     Gamma=3038.18 in 34S     *******************ID#=1-28-1
 
 ------ average RI------
 Data points of RI record
@@ -3001,7 +2966,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG RI$from (|a,p|g)                                                       
 
 
-**************** Level=6342.52     Gamma=6341.58 in 34S     *******************ID#=1-29-2
+**************** Level=6342.52     Gamma=6341.58 in 34S     *******************ID#=1-28-2
 
 ------ average RI------
 Data points of RI record
@@ -3031,7 +2996,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG E=thermal                                                              
 
 
-**************** Level=6421.34 in 34S     *******************ID#=1-30
+**************** Level=6421.34 in 34S     *******************ID#=1-29
 
 ------ average E------
 Data points of E record
@@ -3068,7 +3033,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 6414 {I14} from (p,p)                                       
 
 
-**************** Level=6421.34     Gamma=1544.41 in 34S     *******************ID#=1-30-1
+**************** Level=6421.34     Gamma=1544.41 in 34S     *******************ID#=1-29-1
 
 ------ average RI------
 Data points of RI record
@@ -3104,7 +3069,7 @@ Note:  Combined weight means both unc+ and unc- of each input value are used to 
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=6421.34     Gamma=1732.39 in 34S     *******************ID#=1-30-2
+**************** Level=6421.34     Gamma=1732.39 in 34S     *******************ID#=1-29-2
 
 ------ average RI------
 Data points of RI record
@@ -3134,7 +3099,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=6428.13 in 34S     *******************ID#=1-31
+**************** Level=6428.13 in 34S     *******************ID#=1-30
 
 ------ average E------
 Data points of E record
@@ -3170,7 +3135,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=6478.770 in 34S     *******************ID#=1-32
+**************** Level=6478.770 in 34S     *******************ID#=1-31
 
 ------ average E------
 Data points of E record
@@ -3207,7 +3172,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 6479 {I18} from (p,p)                                       
 
 
-**************** Level=6478.770     Gamma=3174.37 in 34S     *******************ID#=1-32-10
+**************** Level=6478.770     Gamma=3174.37 in 34S     *******************ID#=1-31-10
 
 ------ average RI------
 Data points of RI record
@@ -3240,7 +3205,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG RI$from (n,|g) E=thermal. Other: 100 {I17} from (|a,p|g)               
 
 
-**************** Level=6478.770     Gamma=4350.85 in 34S     *******************ID#=1-32-11
+**************** Level=6478.770     Gamma=4350.85 in 34S     *******************ID#=1-31-11
 
 ------ average RI------
 Data points of RI record
@@ -3270,7 +3235,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG E=thermal                                                              
 
 
-**************** Level=6639 in 34S     *******************ID#=1-34
+**************** Level=6639 in 34S     *******************ID#=1-33
 
 ------ average E------
 Data points of E record
@@ -3307,7 +3272,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 6635 {I14} from (p,p)                                              
 
 
-**************** Level=6685.333 in 34S     *******************ID#=1-35
+**************** Level=6685.333 in 34S     *******************ID#=1-34
 
 ------ average E------
 Data points of E record
@@ -3344,7 +3309,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 6680 {I14} from (p,p)                                       
 
 
-**************** Level=6742 in 34S     *******************ID#=1-36
+**************** Level=6742 in 34S     *******************ID#=1-35
 
 ------ average E------
 Data points of E record
@@ -3375,7 +3340,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (t,p). Other: 6738 {I25} from (p,p)                             
 
 
-**************** Level=6828.83 in 34S     *******************ID#=1-37
+**************** Level=6828.83 in 34S     *******************ID#=1-36
 
 ------ average E------
 Data points of E record
@@ -3412,7 +3377,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 6819 {I26} from (p,p)                                       
 
 
-**************** Level=6847.90 in 34S     *******************ID#=1-38
+**************** Level=6847.90 in 34S     *******************ID#=1-37
 
 ------ average E------
 Data points of E record
@@ -3445,7 +3410,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL E=thermal, 6832 {I9} from (d,p), and 6860 {I14} from (p,p)             
 
 
-**************** Level=6864 in 34S     *******************ID#=1-39
+**************** Level=6864 in 34S     *******************ID#=1-38
 
 ------ average E------
 Data points of E record
@@ -3481,7 +3446,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (p,p)                                                                  
 
 
-**************** Level=6890 in 34S     *******************ID#=1-40
+**************** Level=6890 in 34S     *******************ID#=1-39
 
 ------ average E------
 Data points of E record
@@ -3518,7 +3483,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 6910 {I40} from (d,{+3}He)                                         
 
 
-**************** Level=6954.218 in 34S     *******************ID#=1-41
+**************** Level=6954.218 in 34S     *******************ID#=1-40
 
 ------ average E------
 Data points of E record
@@ -3555,7 +3520,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 6950 {I14} from (p,p)                                       
 
 
-**************** Level=7110.451 in 34S     *******************ID#=1-42
+**************** Level=7110.451 in 34S     *******************ID#=1-41
 
 ------ average E------
 Data points of E record
@@ -3592,7 +3557,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 7110 {I14} from (p,p)                                       
 
 
-**************** Level=7111 in 34S     *******************ID#=1-43
+**************** Level=7111 in 34S     *******************ID#=1-42
 
 ------ average E------
 Data points of E record
@@ -3623,7 +3588,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (p,p). Other: 7112 {I15} from (t,p)                             
 
 
-**************** Level=7164.47 in 34S     *******************ID#=1-44
+**************** Level=7164.47 in 34S     *******************ID#=1-43
 
 ------ average E------
 Data points of E record
@@ -3657,7 +3622,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 7190 {I40} from (d,{+3}He)             
 
 
-**************** Level=7219.28 in 34S     *******************ID#=1-45
+**************** Level=7219.28 in 34S     *******************ID#=1-44
 
 ------ average E------
 Data points of E record
@@ -3693,7 +3658,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cL {I40} from (d,{+3}He)                                                  
 
 
-**************** Level=7248 in 34S     *******************ID#=1-46
+**************** Level=7248 in 34S     *******************ID#=1-45
 
 ------ average E------
 Data points of E record
@@ -3730,7 +3695,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7190 {I40} from (d,{+3}He)                                         
 
 
-**************** Level=7248.05 in 34S     *******************ID#=1-47
+**************** Level=7248.05 in 34S     *******************ID#=1-46
 
 ------ average E------
 Data points of E record
@@ -3767,7 +3732,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (p,p), and 7190 {I40} from (d,{+3}He)                                  
 
 
-**************** Level=7245 in 34S     *******************ID#=1-48
+**************** Level=7245 in 34S     *******************ID#=1-47
 
 ------ average E------
 Data points of E record
@@ -3798,7 +3763,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7190 {I40} from (d,{+3}He)                                         
 
 
-**************** Level=7367.42 in 34S     *******************ID#=1-49
+**************** Level=7367.42 in 34S     *******************ID#=1-48
 
 ------ average E------
 Data points of E record
@@ -3830,7 +3795,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (d,p), and 7360 {I18} from (p,p)                                  
 
 
-**************** Level=7388 in 34S     *******************ID#=1-50
+**************** Level=7388 in 34S     *******************ID#=1-49
 
 ------ average E------
 Data points of E record
@@ -3867,7 +3832,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7389 {I18} from (p,p)                                              
 
 
-**************** Level=7392 in 34S     *******************ID#=1-51
+**************** Level=7392 in 34S     *******************ID#=1-50
 
 ------ average E------
 Data points of E record
@@ -3904,7 +3869,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7389 {I18} from (p,p)                                              
 
 
-**************** Level=7467.75 in 34S     *******************ID#=1-52
+**************** Level=7467.75 in 34S     *******************ID#=1-51
 
 ------ average E------
 Data points of E record
@@ -3936,7 +3901,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (n,|g) E=thermal, and 7479 {I5} from (p,p)                             
 
 
-**************** Level=7552.70 in 34S     *******************ID#=1-53
+**************** Level=7552.70 in 34S     *******************ID#=1-52
 
 ------ average E------
 Data points of E record
@@ -3972,7 +3937,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=7629.907 in 34S     *******************ID#=1-54
+**************** Level=7629.907 in 34S     *******************ID#=1-53
 
 ------ average E------
 Data points of E record
@@ -4012,7 +3977,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (t,p), 7632 {I10} from (d,p), and 7625 {I5} from (p,p)            
 
 
-**************** Level=7655 in 34S     *******************ID#=1-55
+**************** Level=7655 in 34S     *******************ID#=1-54
 
 ------ average E------
 Data points of E record
@@ -4049,7 +4014,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7649 {I14} from (p,p)                                              
 
 
-**************** Level=7621 in 34S     *******************ID#=1-56
+**************** Level=7621 in 34S     *******************ID#=1-55
 
 ------ average E------
 Data points of E record
@@ -4080,7 +4045,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7649 {I14} from (p,p)                                              
 
 
-**************** Level=7730.79 in 34S     *******************ID#=1-57
+**************** Level=7730.79 in 34S     *******************ID#=1-56
 
 ------ average E------
 Data points of E record
@@ -4117,7 +4082,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 7732 {I5} from (p,p)                                        
 
 
-**************** Level=7739 in 34S     *******************ID#=1-58
+**************** Level=7739 in 34S     *******************ID#=1-57
 
 ------ average E------
 Data points of E record
@@ -4148,7 +4113,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7780 {I30} from (d,{+3}He)                                         
 
 
-**************** Level=7753 in 34S     *******************ID#=1-59
+**************** Level=7753 in 34S     *******************ID#=1-58
 
 ------ average E------
 Data points of E record
@@ -4179,7 +4144,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7732 {I5} from (p,p)                                               
 
 
-**************** Level=7781.22 in 34S     *******************ID#=1-60
+**************** Level=7781.22 in 34S     *******************ID#=1-59
 
 ------ average E------
 Data points of E record
@@ -4216,7 +4181,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (|g,|g'), and 7779 {I5} from (p,p)                                     
 
 
-**************** Level=7790.2 in 34S     *******************ID#=1-61
+**************** Level=7790.2 in 34S     *******************ID#=1-60
 
 ------ average E------
 Data points of E record
@@ -4288,7 +4253,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL {I24} from (|a,p|g)                                                    
 
 
-**************** Level=7790.2     Gamma=1539.7 in 34S     *******************ID#=1-61-1
+**************** Level=7790.2     Gamma=1539.7 in 34S     *******************ID#=1-60-1
 
 ------ average E------
 Data points of E record
@@ -4318,7 +4283,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG from ({+36}S,{+34}S|g)                                                 
 
 
-**************** Level=7804 in 34S     *******************ID#=1-62
+**************** Level=7804 in 34S     *******************ID#=1-61
 
 ------ average E------
 Data points of E record
@@ -4349,7 +4314,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7780 {I30} from (d,{+3}He)                                         
 
 
-**************** Level=7974.72 in 34S     *******************ID#=1-63
+**************** Level=7974.72 in 34S     *******************ID#=1-62
 
 ------ average E------
 Data points of E record
@@ -4385,7 +4350,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=8025 in 34S     *******************ID#=1-64
+**************** Level=8025 in 34S     *******************ID#=1-63
 
 ------ average E------
 Data points of E record
@@ -4413,7 +4378,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$unweighted average of 8025 {I16} from (t,p) and 8034 {I5} from (p,p) 
 
 
-**************** Level=8036.31 in 34S     *******************ID#=1-65
+**************** Level=8036.31 in 34S     *******************ID#=1-64
 
 ------ average E------
 Data points of E record
@@ -4447,7 +4412,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 8034 {I5} from (p,p)                   
 
 
-**************** Level=8138.08 in 34S     *******************ID#=1-67
+**************** Level=8138.08 in 34S     *******************ID#=1-66
 
 ------ average E------
 Data points of E record
@@ -4481,7 +4446,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 8142 {I12} from (d,p)                  
 
 
-**************** Level=8185.46 in 34S     *******************ID#=1-69
+**************** Level=8185.46 in 34S     *******************ID#=1-68
 
 ------ average E------
 Data points of E record
@@ -4515,7 +4480,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 8185 {I3} from (|g,|g')                
 
 
-**************** Level=8255 in 34S     *******************ID#=1-71
+**************** Level=8255 in 34S     *******************ID#=1-70
 
 ------ average E------
 Data points of E record
@@ -4543,7 +4508,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$unweighted average of 8255 {I16} from (t,p) and 8299 {I14} from (d,p)
 
 
-**************** Level=8294.40 in 34S     *******************ID#=1-72
+**************** Level=8294.40 in 34S     *******************ID#=1-71
 
 ------ average E------
 Data points of E record
@@ -4583,7 +4548,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (t,p), 8299 {I14} from (d,p), and 8296 {I5} from (p,p)            
 
 
-**************** Level=8370.6 in 34S     *******************ID#=1-73
+**************** Level=8370.6 in 34S     *******************ID#=1-72
 
 ------ average E------
 Data points of E record
@@ -4646,7 +4611,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL T$from (|a,p|g). Other: 85 fs {I28} from ({+16}O,|a2p|g)               
 
 
-**************** Level=8370.6     Gamma=2680.5 in 34S     *******************ID#=1-73-2
+**************** Level=8370.6     Gamma=2680.5 in 34S     *******************ID#=1-72-2
 
 ------ average E------
 Data points of E record
@@ -4679,7 +4644,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG E$from ({+16}O,|a2p|g). Other: 2681 {I2} from ({+36}S,{+34}S|g)        
 
 
-**************** Level=8385.41 in 34S     *******************ID#=1-74
+**************** Level=8385.41 in 34S     *******************ID#=1-73
 
 ------ average E------
 Data points of E record
@@ -4716,7 +4681,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (|g,|g'), and 8385 {I5} from (p,p)                                     
 
 
-**************** Level=8423 in 34S     *******************ID#=1-75
+**************** Level=8423 in 34S     *******************ID#=1-74
 
 ------ average E------
 Data points of E record
@@ -4747,7 +4712,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (p,p). Other: 8418 {I16} from (t,p)                             
 
 
-**************** Level=8503.6 in 34S     *******************ID#=1-76
+**************** Level=8503.6 in 34S     *******************ID#=1-75
 
 ------ average E------
 Data points of E record
@@ -4787,7 +4752,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (|a,p|g), and 8511 {I5} from (p,p)                                
 
 
-**************** Level=8506.77 in 34S     *******************ID#=1-77
+**************** Level=8506.77 in 34S     *******************ID#=1-76
 
 ------ average E------
 Data points of E record
@@ -4824,7 +4789,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (|g,|g'), and 8511 {I5} from (p,p)                                     
 
 
-**************** Level=8615.74 in 34S     *******************ID#=1-79
+**************** Level=8615.74 in 34S     *******************ID#=1-78
 
 ------ average E------
 Data points of E record
@@ -4860,7 +4825,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=8656 in 34S     *******************ID#=1-80
+**************** Level=8656 in 34S     *******************ID#=1-79
 
 ------ average E------
 Data points of E record
@@ -4891,7 +4856,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 8656 {I5} from (p,p)                                               
 
 
-**************** Level=8727.64 in 34S     *******************ID#=1-84
+**************** Level=8727.64 in 34S     *******************ID#=1-83
 
 ------ average E------
 Data points of E record
@@ -4922,7 +4887,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL {I5} from (p,p)                                                        
 
 
-**************** Level=8735.0 in 34S     *******************ID#=1-85
+**************** Level=8735.0 in 34S     *******************ID#=1-84
 
 ------ average E------
 Data points of E record
@@ -4956,7 +4921,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from ({+16}O,|a2p|g). Other: 8740 {I10} from (p,p)                   
 
 
-**************** Level=8805.6 in 34S     *******************ID#=1-87
+**************** Level=8805.6 in 34S     *******************ID#=1-86
 
 ------ average E------
 Data points of E record
@@ -4990,7 +4955,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 8809 {I5} from (p,p)                   
 
 
-**************** Level=9158.715 in 34S     *******************ID#=1-94
+**************** Level=9158.715 in 34S     *******************ID#=1-93
 
 ------ average E------
 Data points of E record
@@ -5021,7 +4986,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL {I5} from (p,p)                                                        
 
 
-**************** Level=9208.04 in 34S     *******************ID#=1-96
+**************** Level=9208.04 in 34S     *******************ID#=1-95
 
 ------ average E------
 Data points of E record
@@ -5055,7 +5020,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 9205 {I7} from (p,p)                   
 
 
-**************** Level=9479 in 34S     *******************ID#=1-102
+**************** Level=9479 in 34S     *******************ID#=1-101
 
 ------ average E------
 Data points of E record
@@ -5086,7 +5051,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e'), and 9481 {I5} from (p,p)                                       
 
 
-**************** Level=9546.09 in 34S     *******************ID#=1-103
+**************** Level=9546.09 in 34S     *******************ID#=1-102
 
 ------ average E------
 Data points of E record
@@ -5117,7 +5082,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL {I10} from (p,p)                                                       
 
 
-**************** Level=9598.42 in 34S     *******************ID#=1-105
+**************** Level=9598.42 in 34S     *******************ID#=1-104
 
 ------ average E------
 Data points of E record
@@ -5151,7 +5116,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 9601 {I5} from (p,p)                   
 
 
-**************** Level=9707 in 34S     *******************ID#=1-108
+**************** Level=9707 in 34S     *******************ID#=1-107
 
 ------ average E------
 Data points of E record
@@ -5180,7 +5145,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (p,p)                                                                  
 
 
-**************** Level=9836.70 in 34S     *******************ID#=1-110
+**************** Level=9836.70 in 34S     *******************ID#=1-109
 
 ------ average E------
 Data points of E record
@@ -5214,7 +5179,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 9847 {I10} from (p,p)                  
 
 
-**************** Level=9868 in 34S     *******************ID#=1-111
+**************** Level=9868 in 34S     *******************ID#=1-110
 
 ------ average E------
 Data points of E record
@@ -5245,7 +5210,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e'), and 9872 {I5} from (p,p)                                       
 
 
-**************** Level=9912.9 in 34S     *******************ID#=1-112
+**************** Level=9912.9 in 34S     *******************ID#=1-111
 
 ------ average E------
 Data points of E record
@@ -5276,7 +5241,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=9933.36 in 34S     *******************ID#=1-113
+**************** Level=9933.36 in 34S     *******************ID#=1-112
 
 ------ average E------
 Data points of E record
@@ -5308,7 +5273,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (n,|g) E=thermal, and 9925 {I5} from (p,p)                             
 
 
-**************** Level=9981 in 34S     *******************ID#=1-114
+**************** Level=9981 in 34S     *******************ID#=1-113
 
 ------ average E------
 Data points of E record
@@ -5337,7 +5302,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (p,p)                                                                  
 
 
-**************** Level=10000 in 34S     *******************ID#=1-115
+**************** Level=10000 in 34S     *******************ID#=1-114
 
 ------ average E------
 Data points of E record
@@ -5366,7 +5331,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (p,p)                                                                  
 
 
-**************** Level=10092.21 in 34S     *******************ID#=1-116
+**************** Level=10092.21 in 34S     *******************ID#=1-115
 
 ------ average E------
 Data points of E record
@@ -5400,7 +5365,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 10092 {I5} from (|a,|g)                
 
 
-**************** Level=10170 in 34S     *******************ID#=1-120
+**************** Level=10170 in 34S     *******************ID#=1-119
 
 ------ average E------
 Data points of E record
@@ -5430,7 +5395,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=10179.59 in 34S     *******************ID#=1-121
+**************** Level=10179.59 in 34S     *******************ID#=1-120
 
 ------ average E------
 Data points of E record
@@ -5464,7 +5429,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 10180 {I10} from (e,e')                
 
 
-**************** Level=10201 in 34S     *******************ID#=1-122
+**************** Level=10201 in 34S     *******************ID#=1-121
 
 ------ average E------
 Data points of E record
@@ -5494,7 +5459,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=10212.15 in 34S     *******************ID#=1-123
+**************** Level=10212.15 in 34S     *******************ID#=1-122
 
 ------ average E------
 Data points of E record
@@ -5525,7 +5490,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (n,|g) E=thermal                                                       
 
 
-**************** Level=10311.53 in 34S     *******************ID#=1-126
+**************** Level=10311.53 in 34S     *******************ID#=1-125
 
 ------ average E------
 Data points of E record
@@ -5559,7 +5524,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 10317 {I5} from (|a,|g)                
 
 
-**************** Level=10650.13 in 34S     *******************ID#=1-139
+**************** Level=10650.13 in 34S     *******************ID#=1-138
 
 ------ average E------
 Data points of E record
@@ -5591,7 +5556,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (n,|g) E=thermal, and 10660 {I10} from (e,e')                          
 
 
-**************** Level=10651.6 in 34S     *******************ID#=1-140
+**************** Level=10651.6 in 34S     *******************ID#=1-139
 
 ------ average E------
 Data points of E record
@@ -5622,7 +5587,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL {I5} from (|a,|g)                                                      
 
 
-**************** Level=10662 in 34S     *******************ID#=1-141
+**************** Level=10662 in 34S     *******************ID#=1-140
 
 ------ average E------
 Data points of E record
@@ -5652,7 +5617,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=10705 in 34S     *******************ID#=1-143
+**************** Level=10705 in 34S     *******************ID#=1-142
 
 ------ average E------
 Data points of E record
@@ -5682,7 +5647,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=10790 in 34S     *******************ID#=1-145
+**************** Level=10790 in 34S     *******************ID#=1-144
 
 ------ average E------
 Data points of E record
@@ -5712,7 +5677,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (|g,|g')                                                               
 
 
-**************** Level=10802 in 34S     *******************ID#=1-146
+**************** Level=10802 in 34S     *******************ID#=1-145
 
 ------ average E------
 Data points of E record
@@ -5742,7 +5707,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=10840.63 in 34S     *******************ID#=1-147
+**************** Level=10840.63 in 34S     *******************ID#=1-146
 
 ------ average E------
 Data points of E record
@@ -5773,7 +5738,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (n,|g) E=thermal                                                       
 
 
-**************** Level=11015 in 34S     *******************ID#=1-153
+**************** Level=11015 in 34S     *******************ID#=1-152
 
 ------ average E------
 Data points of E record
@@ -5803,7 +5768,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=11020 in 34S     *******************ID#=1-154
+**************** Level=11020 in 34S     *******************ID#=1-153
 
 ------ average E------
 Data points of E record
@@ -5833,7 +5798,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=11024.95 in 34S     *******************ID#=1-155
+**************** Level=11024.95 in 34S     *******************ID#=1-154
 
 ------ average E------
 Data points of E record
@@ -5867,7 +5832,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 11025 {I5} from (|a,|g)                
 
 
-**************** Level=11047 in 34S     *******************ID#=1-156
+**************** Level=11047 in 34S     *******************ID#=1-155
 
 ------ average E------
 Data points of E record
@@ -5897,7 +5862,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=11417.22 in 34S     *******************ID#=1-176
+**************** Level=11417.22 in 34S     *******************ID#=1-175
 
 ------ average E------
 Data points of E record
@@ -5928,7 +5893,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (n,|g) E=thermal                                                       
 
 
-**************** Level=12120 in 34S     *******************ID#=1-242
+**************** Level=12120 in 34S     *******************ID#=1-241
 
 ------ average E------
 Data points of E record
@@ -5958,7 +5923,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=12137 in 34S     *******************ID#=1-243
+**************** Level=12137 in 34S     *******************ID#=1-242
 
 ------ average E------
 Data points of E record
@@ -5988,7 +5953,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=12141.4 in 34S     *******************ID#=1-244
+**************** Level=12141.4 in 34S     *******************ID#=1-243
 
 ------ average E------
 Data points of E record
@@ -6019,7 +5984,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL {I5} from (|a,|g)                                                      
 
 
-**************** Level=12151 in 34S     *******************ID#=1-245
+**************** Level=12151 in 34S     *******************ID#=1-244
 
 ------ average E------
 Data points of E record
@@ -6049,7 +6014,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=12165 in 34S     *******************ID#=1-246
+**************** Level=12165 in 34S     *******************ID#=1-245
 
 ------ average E------
 Data points of E record
@@ -6079,7 +6044,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=12173 in 34S     *******************ID#=1-247
+**************** Level=12173 in 34S     *******************ID#=1-246
 
 ------ average E------
 Data points of E record
@@ -6109,7 +6074,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=12180 in 34S     *******************ID#=1-248
+**************** Level=12180 in 34S     *******************ID#=1-247
 
 ------ average E------
 Data points of E record
@@ -6139,7 +6104,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=12210 in 34S     *******************ID#=1-250
+**************** Level=12210 in 34S     *******************ID#=1-249
 
 ------ average E------
 Data points of E record

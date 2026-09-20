@@ -1,5 +1,5 @@
 Program for consistency check: output for levels (version 08/20/2026)
-Generated at: Sun 09/20/2026 at 05:29:46 PM EDT
+Generated at: Sun 09/20/2026 at 07:51:16 PM EDT
 
 
 
@@ -168,7 +168,7 @@ Generated at: Sun 09/20/2026 at 05:29:46 PM EDT
  4688.97    4    4+                                                  33S(N,G) E=THERMAL                         P
  4688                                                                33S(D,P)                                   R
  4688            4+                                                  34S(N,N),(N,N')                            V(*)
- 4689       25                                                       34S(P,P),(P,P'),(POL P,P')                 W(*)
+ 4689       25   4+                                                  34S(P,P),(P,P'),(POL P,P')                 W(*)
  4688                                                                34S(POL D,D),(POL D,D')                    Y
  4690                                                                34S(A,A),(A,A'),(A,A'G)                    Z(*)
  4690                                                                35CL(G,P)                                  a(*)
@@ -178,7 +178,7 @@ Generated at: Sun 09/20/2026 at 05:29:46 PM EDT
  4690       13   (4+)                                    (4)         32S(T,P)                                   N(*)
  4702       14                                                       33S(D,P)                                   R(?)
  4688            4+                                                  34S(N,N),(N,N')                            V(*)
- 4689       25                                                       34S(P,P),(P,P'),(POL P,P')                 W(*)
+ 4689       25   4+                                                  34S(P,P),(P,P'),(POL P,P')                 W(*)
  4696                                                                34S(POL D,D),(POL D,D')                    Y
  4690                                                                34S(A,A),(A,A'),(A,A'G)                    Z(*)
  4690                                                                35CL(G,P)                                  a(*)
@@ -195,16 +195,10 @@ Generated at: Sun 09/20/2026 at 05:29:46 PM EDT
  4877.0     6    3+                                                  24MG(16O,A2PG)                             H
  4875.2          3+                   40 FS 15                       31P(A,PG)                                  M
  4876.842   23   3+                                                  33S(N,G) E=THERMAL                         P
- 4882       14   4+                                                  34S(P,P),(P,P'),(POL P,P')                 W(*)
+ 4882       14   2+                                                  34S(P,P),(P,P'),(POL P,P')                 W(*)
  4880                                                                35CL(G,P)                                  a(*)
  4900       20                                           2           35CL(D,3HE)                                c(*)
  4878.1     15   (3+)                                                208PB(36S,34SG)                            g
-
- 4882       14   4+                                                  ADOPTED LEVELS, GAMMAS                     
- 4882       14   4+                                                  34S(P,P),(P,P'),(POL P,P')                 W(*)
- 4890                                                                34S(A,A),(A,A'),(A,A'G)                    Z(*)
- 4880                                                                35CL(G,P)                                  a(*)
- 4900       20                                           2           35CL(D,3HE)                                c(*)
 
  4889.76    2    2+                   36 FS 10                       ADOPTED LEVELS, GAMMAS                     
  4891                                                                34P B- DECAY (12.43 S)                     A
@@ -214,7 +208,7 @@ Generated at: Sun 09/20/2026 at 05:29:46 PM EDT
  4888       13   (2+)                                    (2)         32S(T,P)                                   N
  4889.76    2    2+                                                  33S(N,G) E=THERMAL                         P
  4888       10                                           (0)         33S(D,P)                                   R
- 4889            2+                                                  34S(P,P),(P,P'),(POL P,P')                 W
+ 4882       14   2+                                                  34S(P,P),(P,P'),(POL P,P')                 W(*)
  4890                                                                34S(A,A),(A,A'),(A,A'G)                    Z(*)
  4890                                                                35CL(G,P)                                  a
  4900       20                                           2           35CL(D,3HE)                                c(*)
@@ -229,17 +223,16 @@ Generated at: Sun 09/20/2026 at 05:29:46 PM EDT
  5228       14                                                       34S(P,P),(P,P'),(POL P,P')                 W
  5230                                                                34S(A,A),(A,A'),(A,A'G)                    Z
 
- 5318.8     18   2+                   17 FS 7                        ADOPTED LEVELS, GAMMAS                     
+ 5322.514   28   2+                   17 FS 7                        ADOPTED LEVELS, GAMMAS                     
+ 5323            2-                                                  12C(24MG,34SG)                             G
  5318.8     18   2+                   17 FS 7                        31P(A,PG)                                  M
  5320       13                                                       32S(T,P)                                   N(*)
+ 5322.514   28   2(-)                                                33S(N,G) E=THERMAL                         P
  5321       14                                                       34S(P,P),(P,P'),(POL P,P')                 W(*)
  5320                                                                34S(A,A),(A,A'),(A,A'G)                    Z(*)
  5360       40                                           2           35CL(D,3HE)                                c(*)
 
- 5322.514   28   -                    17 FS 6                        ADOPTED LEVELS, GAMMAS                     
- 5323            2-                                                  12C(24MG,34SG)                             G
  5320       13                                                       32S(T,P)                                   N(*)
- 5322.514   28   2(-)                                                33S(N,G) E=THERMAL                         P
  5326       6                                            3           33S(D,P)                                   R
  5321       14                                                       34S(P,P),(P,P'),(POL P,P')                 W(*)
  5320                                                                34S(A,A),(A,A'),(A,A'G)                    Z(*)
@@ -1653,7 +1646,7 @@ Generated at: Sun 09/20/2026 at 05:29:46 PM EDT
 
 Statistics of levels and gammas from all datasets of 34S:
                              DSID     #of levels       #of gammas       level range
-           ADOPTED LEVELS, GAMMAS        371              424           0.0        to      23500
+           ADOPTED LEVELS, GAMMAS        369              423           0.0        to      23500
            34P B- DECAY (12.43 S)        10               11            0.0        to       4891
       34CL EC+B+ DECAY (1.5266 S)        5                0             0          to       5380
        34CL EC+B+ DECAY (31.99 M)        8                14            0          to       4890
@@ -1676,7 +1669,7 @@ Statistics of levels and gammas from all datasets of 34S:
                         34S(E,E')        25               0             0.0        to      14800
         34S(PI+,PI+'),(PI-,PI-'),        3                0             0.0        to       3304
                   34S(N,N),(N,N')        6                0             0.0        to       4688
-       34S(P,P),(P,P'),(POL P,P')        74               0             0.0        to       9969
+       34S(P,P),(P,P'),(POL P,P')        73               0             0.0        to       9969
                        34S(P,P'G)        2                1             0.0        to    2127.52
           34S(POL D,D),(POL D,D')        9                0             0.0        to       4696
           34S(A,A),(A,A'),(A,A'G)        13               1             0.0        to       6640
@@ -1688,7 +1681,7 @@ Statistics of levels and gammas from all datasets of 34S:
                   208PB(34S,34S')        2                0             0          to       2127
                   208PB(36S,34SG)        10               11            0.0        to     8372.0
 
-                         IN TOTAL        1101             1100          0.0        to      23500
+                         IN TOTAL        1098             1099          0.0        to      23500
 
 
 
@@ -1696,12 +1689,12 @@ Statistics of levels and gammas from all datasets of 34S:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                    34S        371          424          1101         1100           5671             33
+                    34S        369          423          1098         1099           5683             33
 
-               IN TOTAL        371          424          1101         1100           5671             33
+               IN TOTAL        369          423          1098         1099           5683             33
 
 Number of nuclides     : 1
 Number of blocks       : 34
 Number of references   : 159
-Number of lines in files: 5705
+Number of lines in files: 5717
 (from all blocks including abstract, comment, reference)
