@@ -34,13 +34,17 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 | Value from non-default dataset | Add cG E$ or cG RI$ stating source |
 | Other values exist but not used for averaging | Add "other: VALUE from DATASET" |
 | M or MR without a stated basis | Add `cG M$`/`cG M,MR$` with the measured basis (γ(θ), γγ(θ), ADO) and RUL, after confirming it in the raw `.mrg` G-record comments |
+| Unit supplies both M and MR | Tag the unit `M,MR$`; identifiers must name every field their source supplies (e.g. `E,RI,M(M)$`, `M,MR(A)$`), so `M$` never carries mixing-ratio text |
 
 ### Comment Ordering
 
 Order comment units in each `cL`/`cG` block per `.github/agents/ENSDF-Agent.agent.md`
 (general comment last). Move whole units (first line plus continuations) unchanged — no
-text edits, no renumbering, no data-record changes. Validate with `.github/scripts/`:
-`ensdf_1line_ruler.py`, `check_gamma_ordering.py`, `column_calibrate.py`.
+text edits, no renumbering, no data-record changes. Within one `cG M,MR$` unit, list
+measured bases before the level-scheme/RUL clause, and keep each identifier scoped to the
+fields its source supplies. Validate with `.github/scripts/`: `ensdf_1line_ruler.py`,
+`check_gamma_ordering.py`, `column_calibrate.py`; re-check that every line stays exactly
+80 characters after each edit — editor tooling can strip trailing padding.
 
 ### What to Avoid
 
@@ -59,7 +63,7 @@ text edits, no renumbering, no data-record changes. Validate with `.github/scrip
 4. Order each level/gamma comment block per `.github/agents/ENSDF-Agent.agent.md`,
 	moving whole units (first line + continuations).
 5. Keep deduced E|g values (no uncertainty) undocumented at per-gamma level unless an explicit exception is required.
-6. For each M/MR assignment, confirm the basis against the raw `.mrg` G-record comments and cite that same source.
+6. For each M/MR assignment, confirm the basis against the raw `.mrg` G-record comments and cite that same source, named by its reaction (e.g. `in {+24}Mg({+16}O,|a2p|g)`) so the basis stays traceable.
 
 ## Completion Criteria
 
