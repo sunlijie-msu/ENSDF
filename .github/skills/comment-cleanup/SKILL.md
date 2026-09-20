@@ -1,11 +1,12 @@
 ---
 name: comment-cleanup
 description: >
-  Use this skill when reviewing or writing gamma-ray source comments for an
-  ENSDF dataset. Establishes a single default-source general cG E,RI$ comment
-  and adds individual exception comments only where needed. Covers weighted
-  averages, non-default dataset sources, and enforces ENSDF comment ordering
-  (E$ → RI$ → M$ → MR$).
+  Use this skill when reviewing, writing, or reordering comments for an ENSDF
+  dataset. Establishes a single default-source general cG E,RI$ comment and adds
+  individual exception comments only where needed. Covers weighted averages,
+  non-default dataset sources, and enforces ENSDF comment-unit ordering
+  (cL: E$ → J$ → T$ → S$ → general; cG: E$ → RI$ → M$ → MR$ → general), including
+  the safe whole-unit reorder procedure.
 argument-hint: [ENSDF file or dataset name]
 ---
 
@@ -35,27 +36,33 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 | Other values exist but not used for averaging | Add "other: VALUE from DATASET" |
 
 ### Comment Ordering (per ENSDF rules)
+
+Within one level block all `cL` units and within one gamma block all `cG` units must
+appear in this order; the general comment (no identifier before `$`) is always last:
+
 ```
-cG E$ → cG RI$ → cG M$ → cG MR$ → other identifiers
+cL: E$ → J$ → T$ → S$ → general (no identifier)
+cG: E$ → RI$ → M$ → MR$ → general (no identifier)
 ```
 
-### Examples
+- A **unit** is a `cX` first line plus its `2cX`, `3cX`, … continuation lines — an
+  inseparable whole. Column 7 holds the flag (`c`/`C` = comment, `d`/`D` = hidden
+  message — records kept in the file but ignored by the processing codes); column 8
+  holds the record type being commented. Any other character in column 7 is invalid,
+  and only `c`/`C`/`d`/`D` mark a comment-style record.
+- Composite identifiers (e.g. `E,RI$`, `E(E),J(E)$`) rank by their **first** field.
+- Only the category order is enforced; sub-order inside one category is free.
+- Units with other identifiers (e.g. `BE2$`, `MOMM1$`) follow the listed categories.
+- Alphabetical sub-order among dataset-scoped identifiers is not required.
 
-**Weighted average:**
-```
- 34AR cG E$weighted average of 1197.5 {I4} from {+12}C({+24}Mg,{+34}Ar|g) and   
- 34AR2cG 1196.5 {I4} from {+32}S({+3}He,n|g)                                    
-```
+### Reordering Procedure
 
-**Non-default source with other value:**
-```
- 34AR cG RI$from {+32}S({+3}He,n|g). Other: 100 from {+12}C({+24}Mg,{+34}Ar|g)  
-```
-
-**Non-default source only:**
-```
- 34AR cG RI$from {+32}S({+3}He,n|g)                                             
-```
+1. Reload the file, then map each unit's span (first line + continuations) before editing.
+2. Move **whole units** only; never split a unit, never touch data records.
+3. Continuation markers restart at `2` for every unit — moving units needs **no renumbering**.
+4. Keep comment text byte-identical and every line exactly 80 columns.
+5. Validate in order: `ensdf_1line_ruler.py`, `check_gamma_ordering.py`,
+   `column_calibrate.py` (`.github/scripts/`), then confirm `git diff` touches comment lines only.
 
 ### What to Avoid
 
@@ -71,8 +78,10 @@ cG E$ → cG RI$ → cG M$ → cG MR$ → other identifiers
 	- From multiple datasets → add weighted/unweighted average comment
 	- From non-default dataset → add source comment, with `Other:` values when applicable
 3. Remove redundant individual comments that merely restate the default source.
-4. Preserve ENSDF ordering for each gamma comment block:
-	- `cG E$` → `cG RI$` → `cG M$` → `cG MR$` → other identifiers
+4. Preserve ENSDF ordering for each level/gamma comment block:
+	- `cL`: `cL E$` → `cL J$` → `cL T$` → `cL S$` → general (no identifier)
+	- `cG`: `cG E$` → `cG RI$` → `cG M$` → `cG MR$` → general (no identifier)
+	- Move whole units (first line + continuations) with the reordering procedure above.
 5. Keep deduced E|g values (no uncertainty) undocumented at per-gamma level unless an explicit exception is required.
 
 ## Completion Criteria
@@ -80,7 +89,10 @@ cG E$ → cG RI$ → cG M$ → cG MR$ → other identifiers
 - One clear default-source general comment exists for E,RI.
 - Exception comments exist only where source differs from default or averaging is required.
 - No redundant per-gamma default-source comments remain.
-- Comment ordering follows ENSDF sequence rules.
+- Comment ordering follows ENSDF sequence rules for both `cL` and `cG` units, with the
+  general comment last.
 
-For general comment ordering at the beginning of Adopted files, see `.github/agents/ENSDF-Agent.agent.md`.
+For general comment ordering at the beginning of Adopted files, see
+`.github/skills/general-comments-ordering/SKILL.md`. Full record/column rules:
+`.github/agents/ENSDF-Agent.agent.md`.
 

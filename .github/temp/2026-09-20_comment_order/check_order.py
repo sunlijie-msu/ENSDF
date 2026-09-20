@@ -41,19 +41,17 @@ def parse(path):
 
 
 def rank(kind, ident):
-    """Return (group, key) for ordering; group None = exempt (not order-checked).
+    """Return (group, key) for ordering.
 
-    Only single-field identifiers are order-checked, because multi-field composites
-    (e.g. "E,T" or "E(E),J(E)") are grouped by the evaluator next to whichever field
-    they were compiled for.  A survey of 24 adopted datasets shows such composites
-    follow the plain field units (20/20 blocks that mix a plain J$ with a compound
-    J(x) unit).  The general (identifier-less) comment is always last.
+    Composite identifiers (e.g. "E,RI" or "E(E),J(E)") are ranked by their FIRST
+    field, so the category order is enforced for every unit.  Dataset-scoped
+    parentheses are stripped before ranking.  The general (identifier-less)
+    comment is always last.
     """
     if ident is None or ident == "":
         return (99, "")
-    if "," in re.sub(r"\([^)]*\)", "", ident):
-        return (None, ident)  # composite field list at top level (multi-field comment)
-    up = ident.upper()
+    first = re.sub(r"\([^)]*\)", "", ident).split(",")[0].strip()
+    up = first.upper()
     if kind == "cL":
         if up.startswith("E"):
             return (1, "")
@@ -81,14 +79,13 @@ def main(path):
     blocks = parse(path)
     bad = 0
     for b in blocks:
-        seq = [(u["ident"], u["start"]) for u in b["units"]]
-        ranks = [rank(b["kind"], i)[0] for i, _ in seq]
-        keys = [r for r in ranks if r is not None]
+        seq = [u["ident"] for u in b["units"]]
+        keys = [rank(b["kind"], i)[0] for i in seq]
         ordered = all(keys[i] <= keys[i + 1] for i in range(len(keys) - 1))
         flag = "" if ordered else "  <<< OUT OF ORDER"
         if not ordered:
             bad += 1
-        shown = ["-" if r is None else i for i, r in zip([s[0] for s in seq], ranks)]
+        shown = keys
         print("%-5s line %5d-%-5d n=%d %s%s" % (b["kind"], b["start"], b["last"],
                                                 len(b["units"]), shown, flag))
     print("\nblocks out of order:", bad, "of", len(blocks))

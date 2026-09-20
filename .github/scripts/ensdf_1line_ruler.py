@@ -18,6 +18,13 @@ import sys
 from dataclasses import dataclass
 from typing import Callable, Dict, Optional
 
+# Column 7 holds a flag on comment-style records, which may be continued ('2c', '2d', ...):
+#   'c'/'C' -> comment record
+#   'd'/'D' -> hidden message record (kept in the file, ignored by the processing codes)
+# Any other character in Column 7 is invalid.
+COMMENT_FLAGS = {'c': 'comment', 'C': 'comment',
+                 'd': 'hidden message', 'D': 'hidden message'}
+
 
 @dataclass(frozen=True)
 class RecordDefinition:
@@ -120,14 +127,21 @@ def _is_primary_data_record(line: str) -> bool:
 
 
 def _is_comment_record(line: str) -> bool:
-    return len(line) > 6 and line[6] in {'c', 'C'}
+    """Comment-style records carry a flag in column 7 ('c'/'C' comment, 'd'/'D' hidden
+    message) and the commented record type in column 8 (blank for a dataset-wide record)."""
+    return len(line) > 6 and line[6] in COMMENT_FLAGS
 
 
 def _describe_comment(line: str) -> Optional[str]:
+    """Label a comment-style record, naming the column-7 flag that marks it."""
     if _is_comment_record(line):
-        target = line[7] if len(line) > 7 else '?'
-        return f'Comment record referencing "{target}" data block'
+        flag = line[6]
+        target = line[7] if len(line) > 7 else ' '
+        scope = f'"{target}" data block' if target.strip() else 'the whole dataset'
+        return (f'{COMMENT_FLAGS[flag].capitalize()} record (flag "{flag}") '
+                f'referencing {scope}')
     return None
+
 
 def print_ruler(line: str, label: Optional[str] = None) -> bool:
     """Print ENSDF 80-column ruler with format specifications for validation."""
@@ -176,6 +190,10 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
         # NUCID shift detection: if col 1 is a digit, the whole line is shifted left
         if len(line) > 0 and line[0].isdigit() and len(line) < 80:
             errors.append('NUCID shifted left: Column 1 is digit "' + line[0] + '" (must be space for A<100). Whole line shifted left by 1 column.')
+    elif is_comment and line[7:8].strip() and not line[7].isalpha():
+        errors.append(f'Comment record has invalid commented-record-type "{line[7]}" in '
+                      'Column 8. Expected blank (dataset-wide comment) or a record-type '
+                      'letter such as H, L, G, B, E, A, D, or Q.')
 
     if record_def and _is_primary_data_record(line):
         col_77 = line[76] if len(line) > 76 else ' '
@@ -204,7 +222,8 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
         if not record_def.col80_validator(col_80):
             errors.append(f'Col 80: "{col_80}" invalid — {record_def.col80_hint}')
     elif record_def and len(line) >= 8 and not _is_primary_data_record(line) and not is_comment:
-        errors.append('Column 7 must be blank for data records (found continuation/comment marker).')
+        errors.append('Column 7 must be blank or hold a flag ("c"/"C" comment, '
+                      f'"d"/"D" hidden message); found "{line[6]}".')
     
     if errors:
         print(f'[ERROR] {" | ".join(errors)}')
