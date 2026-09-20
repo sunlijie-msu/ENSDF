@@ -33,6 +33,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 | Intensities normalized to different references | Rescale to one reference, adopt its RI/DRI, move others to `RI$other` → `.github/skills/rescaling-gamma-ri/SKILL.md` |
 | Value from non-default dataset | Add cG E$ or cG RI$ stating source |
 | Other values exist but not used for averaging | Add "other: VALUE from DATASET" |
+| M or MR without a stated basis | Add `cG M$`/`cG M,MR$` with the measured basis (γ(θ), γγ(θ), ADO) and RUL, after confirming it in the raw `.mrg` G-record comments |
 
 ### Comment Ordering
 
@@ -58,6 +59,7 @@ text edits, no renumbering, no data-record changes. Validate with `.github/scrip
 4. Order each level/gamma comment block per `.github/agents/ENSDF-Agent.agent.md`,
 	moving whole units (first line + continuations).
 5. Keep deduced E|g values (no uncertainty) undocumented at per-gamma level unless an explicit exception is required.
+6. For each M/MR assignment, confirm the basis against the raw `.mrg` G-record comments and cite that same source.
 
 ## Completion Criteria
 
