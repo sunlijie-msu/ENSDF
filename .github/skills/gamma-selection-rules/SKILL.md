@@ -157,9 +157,9 @@ Assigning M1+E2 or (M1+E2) in the G-record M field:
 
 If D(+Q) is firm, the corresponding converted form is M1(+E2). The same logic applies to E1+M2.
 
-Even when a file-header general comment (e.g. `cG M,MR$`, `cG M(A)$`) covers all records, add a per-record `cG M$`/`cG MR$`/`cG M,MR$` unit naming the dataset and method
-whenever an M or MR value would otherwise be untraceable, e.g. an MR (δ) value whose record carries only a lettered flag definition.
-Conversely, bracketed `[...]` multipolarities (deduced from level-scheme only) need no provenance comment.
+A general comment in the ens file top block (`cG M,MR$`, `cG M(A)$`) can hardly cover all cases. So, to ensure data traceability, add a per-record `cG M$`/`cG MR$`/`cG M,MR$` comment to specify the source method and dataset.
+
+Bracketed `[...]` multipolarities are solely deduced from level-scheme Jπ changes between the transition initial and final levels and need no provenance comment.
 
 ### Conversion Decision Table
 
@@ -191,10 +191,10 @@ Conversely, bracketed `[...]` multipolarities (deduced from level-scheme only) n
 
 ### Conversion Precedence Rules
 
-If lifetime is available and rules out M2 by RUL, then D+Q can be converted to firm M1+E2.
-If RUL does not rule out M2, then D+Q can be converted to tentative (M1+E2) if level scheme indicates Δπ=no.
-RUL takes precedence over level scheme for this conversion.
-If Δπ is unknown from level scheme or RUL does not rule out M2, keep the original multipolarity assignment with only D and Q labels.
+If a lifetime is available and the Java transition-strength code run by humans excludes M2 by RUL, convert D+Q to firm M1+E2, and state the clause in the record's `cG M$`/`cG M,MR$` comment, e.g. `M2 ruled out by RUL.`
+If RUL does not rule out M2, and if the level scheme gives a firm Δπ, convert D+Q to tentative (M1+E2), adding `|D|p=no from level scheme.` to cG comment.
+No conversion: if neither basis exists, i.e. RUL does not exclude M2 and Δπ is unknown from level scheme, keep the measured assignment with only D and Q labels, and do not cite a conversion in the comment.
+
 
 ---
 
