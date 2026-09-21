@@ -245,6 +245,7 @@ Example:
 Note: Multiple identical gamma energies appearing in multiple level blocks should be flagged with either `*`, `&`, or `@`.
 -   `Space`: No comment flag.
 -   **FORBIDDEN:** Question mark (`?`) is NOT allowed in column 77.
+-   Flag definition letters are human-controlled: parenthesized letters in an identifier (`cL J(A)$`, `cL E(B)$`, `cG E(D),RI(D)$`) name the col-77 flag of the records the comment applies to.
 
 #### G-Record Indicator Rules
 **Column 80 (Q Field, Additional Indicator):**
