@@ -1,5 +1,5 @@
 Program for consistency check: output for Error and Warnings (version 08/20/2026)
-Generated at: Mon 09/21/2026 at 04:32:50 AM EDT
+Generated at: Mon 09/21/2026 at 06:45:44 PM EDT
 
 ################################################################################
 In Adopted dataset of 34S
@@ -42,9 +42,6 @@ In Adopted dataset of 34S
  34S 2cL from the strongest branch 2864|g, M1+E2 to 2+, 3303.2 level. |p=- from 
                                    *                                              <E> Quoted EG=2864 inconsistent with record EG=2864.56
                                                         *                         <E> Quoted EL=3303.2 inconsistent with record EL=3304.212
- 34S   G 1479.73   15 2.41   30 M1(+E2)  +0.04   +6-3                           
-                               *                                                  <W> Mult=M1(+E2) but parity-change unknown from deltaJPI
-                                                                                        JI=3 JF(4688.97)=4+
  34S   G 2864.56   4  100    10 M1+E2    -0.23   7                              
                                *                                                  <W> Mult=M1+E2 but parity-change unknown from deltaJPI
                                                                                         JI=3 JF(3304.212)=2+
@@ -52,7 +49,7 @@ In Adopted dataset of 34S
  34S  cL J$spin=4 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 1375|g, M1+E2 to 3+,
                                                             *                     <E> Quoted EG=1375 inconsistent with record EG=1374.43
  34S   L 6251.68   9  (3)-                                                      
- 34S X L XREF=HN(6256*)RW(6248*)a(6250*)g(*)
+ 34S X L XREF=HN(6256*)PRW(6248*)a(6250*)g(*)
          *                                                                        <W> XREF tag=g: level possibly not or inconsistent (E,JPI) in g=208PB(36S,34SG)
                                                                                         closest level in g=208PB(36S,34SG)
                                                                                         6251.7     19 (4-)                
@@ -62,8 +59,7 @@ In Adopted dataset of 34S
  34S   G 1626.7    5  45     10                                             M   
                      *                                                            <W> Gamma intensity not normalized with strongest=100!
  34S   L 6421.34   8  4-               6.9 FS    LT                             
- 34S 2cL either E2 or M2 for 1727|g to 4+, 4687.6 level would be ruled out by   
-                             *                                                    <E> Quoted EG=1727 inconsistent with record EG=1732.39
+ 34S 2cL either E2 or M2 for 1732|g to 4+, 4687.6 level would be ruled out by   
                                            *                                      <E> Quoted EL=4687.6 inconsistent with record EL=4688.97
  34S   L 6685.333  29 (0:3)-                                                    
  34S  cL J$929|g to 1-, 5575 level. |p=- from L=1 from 3/2+ in {+33}S(d,p).     
@@ -657,7 +653,6 @@ In dataset of 34S: XP 33S(N,G) E=THERMAL     XREF Tag=P
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
                                                                                         JI=3- JF(3916.408)=0+
  34S   L 6251.68   9  4-                                                        
-         *                                                                        <E> Tag=P of this dataset missing in XREF of matched Adopted Level=6251.68
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=(3)- this JPI=4-
  34S   L 6428.13   7  (2+)                                                      
@@ -774,7 +769,7 @@ In dataset of 34S: Xa 35CL(G,P)     XREF Tag=a
  34S   L 6250                                                                   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                       #@ 6251.22   19 4+                  XREF=M(6251)N(6256*)PW(6248*)a(6250*)c(6220)g(*)
-                                                                                      #@ 6251.68    9 (3)-                XREF=HN(6256*)RW(6248*)a(6250*)g(*)
+                                                                                      #@ 6251.68    9 (3)-                XREF=HN(6256*)PRW(6248*)a(6250*)g(*)
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=a
 
 ################################################################################
