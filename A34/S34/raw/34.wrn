@@ -1,5 +1,5 @@
 Program for consistency check: output for XREF Warnings only (version 08/20/2026)
-Generated at: Sun 09/20/2026 at 07:51:16 PM EDT
+Generated at: Mon 09/21/2026 at 04:32:50 AM EDT
 
 
 ################################################################################
@@ -96,8 +96,8 @@ In dataset of 34S: XH 24MG(16O,A2PG)     XREF Tag=H
 
  34S   L 6251.6    5  4-                                                    B   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #  6251.23   19 4+                  XREF=M(6251)N(6256*)PW(6248*)a(6250*)c(6220*)g(*)
-                                                                                       @ 6251.68    9 3-                  XREF=HN(6256*)RW(6248*)a(6250*)g(*)
+                                                                                      #  6251.22   19 4+                  XREF=M(6251)N(6256*)PW(6248*)a(6250*)c(6220)g(*)
+                                                                                       @ 6251.68    9 (3)-                XREF=HN(6256*)RW(6248*)a(6250*)g(*)
                                                                                       *** Check for possible missing XREF assignment (# marked) of this tag=H
 
 ################################################################################
@@ -202,8 +202,8 @@ In dataset of 34S: XN 32S(T,P)     XREF Tag=N
 
  34S   L 6256      14                                                           
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 6251.23   19 4+                  XREF=M(6251)N(6256*)PW(6248*)a(6250*)c(6220*)g(*)
-                                                                                       @ 6251.68    9 3-                  XREF=HN(6256*)RW(6248*)a(6250*)g(*)
+                                                                                       @ 6251.22   19 4+                  XREF=M(6251)N(6256*)PW(6248*)a(6250*)c(6220)g(*)
+                                                                                       @ 6251.68    9 (3)-                XREF=HN(6256*)RW(6248*)a(6250*)g(*)
  34S   L 6423      14                                                           
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                        @ 6421.34    8 4-                  XREF=MN(6423*)PRW(6414*)
@@ -240,9 +240,9 @@ In dataset of 34S: XO 32S(A,2HE)     XREF Tag=O
 
  34S   L 5690                                                                   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #@ 5679.928  17 2+                  XREF=HLMO(5690*)PR(5683)WZ(5690*)
-                                                                                      #@ 5690.8     6 5-                  XREF=EHJMN(5679)O(5690*)RWZ(5690*)g
-                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=O
+                                                                                      #  5679.928  17 2+                  XREF=HLMPR(5683)W(5684)
+                                                                                      #@ 5690.8     6 5-                  XREF=EHJMN(5679)O(5690)RWZ(5690)g
+                                                                                      *** Check for possible missing and incorrect XREF assignment (# marked) of this tag=O
  34S   L 7240                                                                   
          *                                                                        <W> 3 possible matches found in Adopted! Check XREF
                                                                                          7219.28    6 2+                  XREF=MPSc(7190*)
@@ -422,15 +422,10 @@ In dataset of 34S: XW 34S(P,P),(P,P'),(POL P,P')     XREF Tag=W
                                                                                       #  4876.842  23 3+                  XREF=ACGHMPR(4874)a(4880*)g
                                                                                        @ 4889.76    2 2+                  XREF=ACGMNPRW(4882)Z(4890)ac(4900)
                                                                                       *** Check for possible missing XREF assignment (# marked) of this tag=W
- 34S   L 6170      14                                                       M   
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 6168.862  28 (3)-                XREF=NPRW(6170*)Z(6130*)
-                                                                                      #@ 6173         3+                  XREF=MW(6170*)c(6220*)
-                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=W
  34S   L 6248      18                                                       M   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                       @ 6251.23   19 4+                  XREF=M(6251)N(6256*)PW(6248*)a(6250*)c(6220*)g(*)
-                                                                                       @ 6251.68    9 3-                  XREF=HN(6256*)RW(6248*)a(6250*)g(*)
+                                                                                       @ 6251.22   19 4+                  XREF=M(6251)N(6256*)PW(6248*)a(6250*)c(6220)g(*)
+                                                                                       @ 6251.68    9 (3)-                XREF=HN(6256*)RW(6248*)a(6250*)g(*)
  34S   L 6414      14                                                       M   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                        @ 6421.34    8 4-                  XREF=MN(6423*)PRW(6414*)
@@ -500,13 +495,13 @@ In dataset of 34S: XZ 34S(A,A),(A,A'),(A,A'G)     XREF Tag=Z
 
  34S   L 5690                                                                   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #@ 5679.928  17 2+                  XREF=HLMO(5690*)PR(5683)WZ(5690*)
-                                                                                      #@ 5690.8     6 5-                  XREF=EHJMN(5679)O(5690*)RWZ(5690*)g
-                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=Z
+                                                                                      #  5679.928  17 2+                  XREF=HLMPR(5683)W(5684)
+                                                                                      #@ 5690.8     6 5-                  XREF=EHJMN(5679)O(5690)RWZ(5690)g
+                                                                                      *** Check for possible missing and incorrect XREF assignment (# marked) of this tag=Z
  34S   L 6130                                                                   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                       #@ 6121.56   10 2+                  XREF=MN(6128)PRW(6118)Z(6130*)
-                                                                                      #@ 6168.862  28 (3)-                XREF=NPRW(6170*)Z(6130*)
+                                                                                      #@ 6168.862  28 3                   XREF=MNPRW(6170)Z(6130*)
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=Z
 
 ################################################################################
@@ -514,8 +509,8 @@ In dataset of 34S: Xa 35CL(G,P)     XREF Tag=a
 
  34S   L 6250                                                                   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #@ 6251.23   19 4+                  XREF=M(6251)N(6256*)PW(6248*)a(6250*)c(6220*)g(*)
-                                                                                      #@ 6251.68    9 3-                  XREF=HN(6256*)RW(6248*)a(6250*)g(*)
+                                                                                      #@ 6251.22   19 4+                  XREF=M(6251)N(6256*)PW(6248*)a(6250*)c(6220)g(*)
+                                                                                      #@ 6251.68    9 (3)-                XREF=HN(6256*)RW(6248*)a(6250*)g(*)
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=a
 
 ################################################################################
@@ -533,11 +528,6 @@ In dataset of 34S: Xc 35CL(D,3HE)     XREF Tag=c
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
                                                                                        @ 5322.514  28 2+                  XREF=GMN(5320)PRW(5321)Z(5320)c(5360*)
                                                                                        @ 5380.99    3 1+                  XREF=B(5380?)GMNPRWac(5360*)
- 34S   L 6220      50                                  2        0.24            
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #@ 6173         3+                  XREF=MW(6170*)c(6220*)
-                                                                                       @ 6251.23   19 4+                  XREF=M(6251)N(6256*)PW(6248*)a(6250*)c(6220*)g(*)
-                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=c
  34S   L 6830                                          0        0.08            
          *                                                                        <W> 3 possible matches found in Adopted! Check XREF
                                                                                       #@ 6828.83   18 2+                  XREF=MN(6828)PR(6832*)Wc(6830*)

@@ -1,0 +1,528 @@
+total G records: 419
+
+C1 tentative/bracket M field whose own comment cites RUL/POL/AZ : 0
+
+C2 firm E/M character with NO RUL/POL/AZ in own comment : 1
+  L429   E=1479.73    M=M1(+E2)     flag=  q=  lvl=6168.86228 Jpi=3         T=9.0 FS LT      tok=gth
+        cmt: RI$other: 95 {I13} from {+31}P(|a,p|g). M,MR$D+Q from p|g(|q) in {+31}P(|a,p|g).
+
+C3 empty M field but M$ comment present : 0
+
+C4 comment writes D(+Q) but M field not tentative : 1
+  L1451  E=1461.7     M=D(+Q)       flag=  q=  lvl=11374.38   Jpi=(8)       T=               tok=ADO,gth,ggth
+        cmt: M$D(+Q), |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+
+C5 bracket [..] M field with provenance comment (comment unneeded) : 9
+  L157   E=1787.3     M=[E2]        flag=  q=  lvl=3916.40722 Jpi=0+        T=1.12 PS 9      tok=
+        cmt: E$unweighted average of 1787 {I1} from {+34}P |b{+-} decay, 1786.0 {I8} from {+31}P(|a,p|g), and 1788.794 {I20} from {+33}S(n,|g) E=thermal.
+  L246   E=1384.5     M=[E2]        flag=M q=  lvl=4688.974   Jpi=4+        T=88 FS 7        tok=
+        cmt: RI$other: <2 from {+31}P(|a,p|g).
+  L287   E=1585.510   M=[M1,E2]     flag=P q=  lvl=4889.762   Jpi=2+        T=36 FS 10       tok=
+        cmt: RI$others: 94 {I9} from {+33}S(n,|g) E=thermal, <100 from {+34}Cl |e+|b{++} decay (31.99 min).
+  L290   E=2762.10    M=[M1,E2]     flag=P q=  lvl=4889.762   Jpi=2+        T=36 FS 10       tok=
+        cmt: RI$others: 112 {I11} from {+33}S(n,|g) E=thermal, <61 from {+34}Cl |e+|b{++} decay (31.99 min).
+  L341   E=1055.491   M=[E1]        flag=  q=  lvl=5679.92817 Jpi=2+        T=263 FS 21      tok=
+        cmt: E$weighted average of 1055.4 {I8} from {+24}Mg({+16}O,|a2p|g) and 1055.491 {I20} from {+33}S(n,|g) E=thermal. RI$other: 49 {I25} from {+24}Mg({+16}O,|a2p|g).
+  L406   E=1922.92    M=[M1,E2]     flag=  q=  lvl=5998.108   Jpi=2+        T=6.9 FS LT      tok=
+        cmt: RI$other: 100 {I42} from {+31}P(|a,p|g).
+  L408   E=3870.51    M=[M1,E2]     flag=  q=  lvl=5998.108   Jpi=2+        T=6.9 FS LT      tok=
+        cmt: RI$other: 128 {I42} from {+31}P(|a,p|g).
+  L454   E=1562.4     M=[M1,E2]     flag=  q=  lvl=6251.2219  Jpi=4+        T=0.42 PS +49-21 tok=
+        cmt: E$weighted average of 1562.5 {I5} from {+24}Mg({+16}O,|a2p|g), 1562.3 {I5} from {+33}S(n,|g) E=thermal, and 1562 {I1} from {+208}Pb({+36}S,{+34}S|g) RI$other: 1
+  L545   E=4604       M=[M1,E2]     flag=P q=  lvl=674215     Jpi=2(+),4(+) T=6.9 FS LT      tok=gth
+        cmt: M,MR$D+Q with |d=+1.8 {I3} for J{-i}=2 or Q(+O) with |d=0.00 {I3} for J{-i}=4 from p|g(|q) in {+31}P(|a,p|g).
+
+C6 tentative M field with FIRM D+Q measured and RUL/LS basis : 14
+  L418   E=2817.76    M=(M1+E2)     flag=P q=  lvl=6121.5610  Jpi=2+        T=52 FS LT       tok=LS,gth
+        cmt: M,MR$D+Q from p|g(|q) in {+31}P(|a,p|g). |D|p=no from level scheme.
+  L616   E=4985       M=(M1+E2)     flag=P q=  lvl=711114     Jpi=2+        T=6.9 FS LT      tok=LS
+        cmt: M,MR$D+Q with |d=+0.27 {I+19-15} or +1.2 {I+7-4} from {+31}P(|a,p|g). |D|p=no from level scheme.
+  L1256  E=8639       M=(M1+E2)     flag=A q=  lvl=107685     Jpi=2+        T=               tok=LS,RES,gth
+        cmt: M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+  L1286  E=8718       M=(E1+M2)     flag=A q=  lvl=10840.6318 Jpi=3-        T=               tok=LS,RES,gth
+        cmt: RI$100 from {+30}Si(|a,|g),(|a,n):resonances. This is the only |g branch observed from this level in {+30}Si(|a,|g),(|a,n):resonances. M,MR$D+Q from |g(|q) in {
+  L1303  E=8802       M=(E1+M2)     flag=A q=  lvl=109315     Jpi=1-        T=               tok=LS,RES,gth
+        cmt: M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+  L1309  E=8865       M=(M1+E2)     flag=A q=  lvl=109945     Jpi=2+        T=               tok=LS,RES,gth
+        cmt: M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+  L1315  E=8886       M=(M1+E2)     flag=A q=  lvl=110155     Jpi=2+        T=               tok=LS,RES,gth
+        cmt: M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+  L1353  E=8979       M=(E1+M2)     flag=A q=  lvl=111085     Jpi=3-        T=               tok=LS,RES,gth
+        cmt: M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+  L1401  E=9143       M=(M1+E2)     flag=A q=  lvl=112725     Jpi=2+        T=               tok=LS,RES,gth
+        cmt: M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+  L1442  E=9243       M=(E1+M2)     flag=A q=  lvl=113725     Jpi=3-        T=               tok=LS,RES,gth
+        cmt: M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+  L1585  E=9329       M=(E1+M2)     flag=A q=  lvl=114585     Jpi=3-        T=               tok=LS,RES,gth
+        cmt: M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+  L1597  E=9344       M=(E1+M2)     flag=A q=  lvl=114735     Jpi=1-        T=               tok=LS,RES,gth
+        cmt: M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+  L1646  E=9377       M=(E1+M2)     flag=A q=  lvl=115065     Jpi=(1-)      T=0.26 KEV 5     tok=LS,RES,gth
+        cmt: M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+  L1827  E=9828       M=(E1+M2)     flag=A q=  lvl=119575     Jpi=3-        T=               tok=LS,RES,gth
+        cmt: M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+
+C7 firm E/M character + own comment cites RUL : 21
+  L128   E=1176.650   M=M1+E2       flag=  q=  lvl=3304.21213 Jpi=2+        T=122 FS 9       tok=RUL,gth
+        cmt: E$weighted average of 1177.3 {I5} from {+24}Mg({+16}O,|a2p|g), 1175.2 {I8} from {+31}P(|a,p|g), 1176.650 {I20} from {+33}S(n,|g) E=thermal, and 1177 {I1} from {
+  L172   E=1947.060   M=M1+E2       flag=  q=  lvl=4074.66620 Jpi=1+        T=17 FS LT       tok=RUL,gth
+        cmt: E$weighted average of 1947.1 {I15} from {+34}P |b{+-} decay, 1945.5 {I13} from {+31}P(|a,p|g), and 1947.060 {I20} from {+33}S(n,|g) E=thermal. RI$weighted avera
+  L195   E=1987.19    M=M1+E2       flag=  q=  lvl=4114.812   Jpi=2+        T=72 FS 7        tok=RUL,gth
+        cmt: E$weighted average of 1987.2 {I10} from {+34}P |b{+-} decay and 1987.19 {I3} from {+33}S(n,|g) E=thermal. RI$weighted average of 83 {I17} from {+34}P |b{+-} dec
+  L202   E=4114.52    M=E2          flag=  q=  lvl=4114.812   Jpi=2+        T=72 FS 7        tok=RUL,gth
+        cmt: E$weighted average of 4114.0 {I15} from {+34}P |b{+-} decay, 4115.0 {I20} from {+34}Cl |e+|b{++} decay (31.99 min), 4113.7 {I9} from {+31}P(|a,p|g), and 4114.52
+  L248   E=2561.35    M=E2          flag=  q=  lvl=4688.974   Jpi=4+        T=88 FS 7        tok=RUL,ADO,gth,ggth
+        cmt: E$weighted average of 2561.1 {I6} from {+24}Mg({+16}O,|a2p|g), 2560.5 {I4} from {+31}P(|a,p|g), 2561.36 {I5} from {+33}S(n,|g) E=thermal, and 2561 {I2} from {+2
+  L264   E=1572.56    M=M1+E2       flag=  q=  lvl=4876.84223 Jpi=3+        T=40 FS 15       tok=RUL,gth
+        cmt: E$weighted average of 1572.5 {I5} from {+24}Mg({+16}O,|a2p|g), 1571.9 {I5} from {+31}P(|a,p|g), 1572.57 {I5} from {+33}S(n,|g) E=thermal, and 1573 {I1} from {+2
+  L272   E=2749.24    M=M1+E2       flag=P q=  lvl=4876.84223 Jpi=3+        T=40 FS 15       tok=RUL,gth
+        cmt: E$weighted average of 2749.6 {I6} from {+24}Mg({+16}O,|a2p|g), 2750.9 {I25} from {+31}P(|a,p|g), and 2749.24 {I5} from {+33}S(n,|g) E=thermal. RI$others: 100 {I
+  L293   E=4889.30    M=E2          flag=P q=  lvl=4889.762   Jpi=2+        T=36 FS 10       tok=RUL,gth
+        cmt: RI$others: 100 {I10} from {+33}S(n,|g) E=thermal, 100 from {+34}Cl |e+|b{++} decay (31.99 min). M$Q from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL.
+  L313   E=3194.74    M=M1+E2       flag=  q=  lvl=5322.51428 Jpi=2+        T=17 FS 7        tok=RUL,gth
+        cmt: M,MR$D+Q with |d=-0.17 {I6} or |d=+1.8 {I10} from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL.
+  L324   E=3253.21    M=M1+E2       flag=  q=  lvl=5380.993   Jpi=1+        T=49 FS LE       tok=RUL
+        cmt: RI$other: 100 {I13} from {+31}P(|a,p|g) M,MR$D+Q with -2.1<|d|<-0.1 from {+31}P(|a,p|g). M2 ruled out by RUL.
+  L346   E=2375.657   M=M1+E2       flag=  q=  lvl=5679.92817 Jpi=2+        T=263 FS 21      tok=RUL
+        cmt: E$weighted average of 2375.4 {I7} from {+24}Mg({+16}O,|a2p|g) and 2375.657 {I20} from {+33}S(n,|g) E=thermal. RI$others: 100 {I49} from {+24}Mg({+16}O,|a2p|g), 
+  L410   E=5997.30    M=E2          flag=  q=  lvl=5998.108   Jpi=2+        T=6.9 FS LT      tok=RUL,gth
+        cmt: RI$other: 278 {I50} from {+31}P(|a,p|g). M$Q from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL.
+  L434   E=2864.56    M=M1+E2       flag=  q=  lvl=6168.86228 Jpi=3         T=9.0 FS LT      tok=RUL,gth
+        cmt: RI$other: 100 {I13} from {+31}P(|a,p|g). M,MR$D+Q from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL. Other: |d=-1.9 {I6}.
+  L449   E=1374.43    M=M1+E2       flag=  q=  lvl=6251.2219  Jpi=4+        T=0.42 PS +49-21 tok=RUL
+        cmt: E$weighted average of 1375.0 {I5} from {+24}Mg({+16}O,|a2p|g) and 1374.34 {I20} from {+33}S(n,|g) E=thermal. RI$other: 133 {I24} from {+31}P(|a,p|g). M,MR$D+Q f
+  L730   E=1539.7     M=E2          flag=M q=  lvl=7790.29    Jpi=6-        T=97 FS 24       tok=RUL
+        cmt: E$weighted average of 1539.6 {I5} from {+24}Mg({+16}O,|a2p|g) and 1540 {I1} from {+208}Pb({+36}S,{+34}S|g) M$Q, |DJ=2 from A{-2} and A{-4} in {+24}Mg({+16}O,|a2
+  L736   E=2099.6     M=M1+E2       flag=M q=  lvl=7790.29    Jpi=6-        T=97 FS 24       tok=RUL,ADO,gth,ggth
+        cmt: M,MR$D+Q from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL.
+  L818   E=2680.5     M=E2          flag=M q=  lvl=8370.67    Jpi=7-        T=83 FS 14       tok=RUL,ADO,gth,ggth
+        cmt: E$weighted average of 2680.5 {I6} from {+24}Mg({+16}O,|a2p|g) and 2681 {I2} from {+208}Pb({+36}S,{+34}S|g) M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|
+  L1230  E=2147.2     M=E2          flag=M q=  lvl=10651.67   Jpi=8(+)      T=35 FS 17       tok=RUL,ADO,gth,ggth
+        cmt: M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL.
+  L1865  E=2228.8     M=E2          flag=M q=  lvl=12141.47   Jpi=9         T=173 FS 35      tok=RUL,ADO,gth,ggth
+        cmt: M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL.
+  L1953  E=1200.4     M=M1+E2       flag=M q=  lvl=13341.78   Jpi=10(+)     T=180 FS 28      tok=RUL,ADO,gth,ggth
+        cmt: M$D+Q from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL.
+  L1957  E=1966.8     M=E2          flag=M q=  lvl=13341.78   Jpi=10(+)     T=180 FS 28      tok=RUL,ADO,gth,ggth
+        cmt: M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL.
+
+=== full table ===
+L105   2127.498   d=20  RI=100     E2          MR=-        flag=- q=- lvl=2127.56413 Jpi=2+        T=0.315 PS 12    firm      POL,ADO,gth,ggth E$weighted average of 2127.5 {I6} from {+24}Mg({+16}O,|a2p|g), 2126.7 {I8} from {+31}P(|a,p|g), 2127.499 {I20}
+L128   1176.650   d=26  RI=100.0   M1+E2       MR=-0.16    flag=- q=- lvl=3304.21213 Jpi=2+        T=122 FS 9       firm      RUL,gth          E$weighted average of 1177.3 {I5} from {+24}Mg({+16}O,|a2p|g), 1175.2 {I8} from {+31}P(|a,p|g), 1176.650 {I20}
+L136   3304.029   d=29  RI=87.1    E2          MR=-        flag=- q=- lvl=3304.21213 Jpi=2+        T=122 FS 9       firm      POL,gth          E$weighted average of 3304.6 {I7} from {+24}Mg({+16}O,|a2p|g), 3303.1 {I4} from {+31}P(|a,p|g), 3304.031 {I20}
+L156   612.16     d=5   RI=0.33    [E2]        MR=-        flag=- q=- lvl=3916.40722 Jpi=0+        T=1.12 PS 9      bracket                    
+L157   1787.3     d=8   RI=100     [E2]        MR=-        flag=- q=- lvl=3916.40722 Jpi=0+        T=1.12 PS 9      bracket                    E$unweighted average of 1787 {I1} from {+34}P |b{+-} decay, 1786.0 {I8} from {+31}P(|a,p|g), and 1788.794 {I20
+L168   770.428    d=20  RI=8.5     (M1(+E2))   MR=-1.3     flag=- q=- lvl=4074.66620 Jpi=1+        T=17 FS LT       paren     LS,gth           RI$weighted average of 6.2 {I22} from {+31}P(|a,p|g) and 8.8 {I8} from {+33}S(n,|g) E=thermal M,MR$D(+Q) from 
+L172   1947.060   d=20  RI=95      M1+E2       MR=+1.3     flag=- q=- lvl=4074.66620 Jpi=1+        T=17 FS LT       firm      RUL,gth          E$weighted average of 1947.1 {I15} from {+34}P |b{+-} decay, 1945.5 {I13} from {+31}P(|a,p|g), and 1947.060 {I
+L179   4072.9     d=11  RI=100     (M1)        MR=-        flag=- q=- lvl=4074.66620 Jpi=1+        T=17 FS LT       paren     LS,gth           E$unweighted average of 4073.4 {I15} from {+34}P |b{+-} decay, 4070.9 {I13} from {+31}P(|a,p|g), and 4074.418 
+L195   1987.19    d=3   RI=69.8    M1+E2       MR=-0.40    flag=- q=- lvl=4114.812   Jpi=2+        T=72 FS 7        firm      RUL,gth          E$weighted average of 1987.2 {I10} from {+34}P |b{+-} decay and 1987.19 {I3} from {+33}S(n,|g) E=thermal. RI$w
+L202   4114.52    d=4   RI=100.0   E2          MR=-        flag=- q=- lvl=4114.812   Jpi=2+        T=72 FS 7        firm      RUL,gth          E$weighted average of 4114.0 {I15} from {+34}P |b{+-} decay, 4115.0 {I20} from {+34}Cl |e+|b{++} decay (31.99 
+L219   1320.168   d=20  RI=100     (E1(+M2))   MR=-0.03    flag=P q=- lvl=4624.40416 Jpi=3-        T=85 FS 7        paren     ADO,LS,gth,ggth  E$weighted average of 1320.1 {I5} from {+24}Mg({+16}O,|a2p|g), 1318.8 {I10} from {+31}P(|a,p|g), 1320.169 {I20
+L227   2496.725   d=25  RI=41      (E1(+M2))   MR=+0.02    flag=- q=- lvl=4624.40416 Jpi=3-        T=85 FS 7        paren     ADO,LS,gth,ggth  E$weighted average of 2496.5 {I8} from {+24}Mg({+16}O,|a2p|g), 2495.5 {I7} from {+31}P(|a,p|g), and 2496.726 {
+L235   4624.2     d=5   RI=0.55    [E3]        MR=-        flag=- q=- lvl=4624.40416 Jpi=3-        T=85 FS 7        bracket                    
+L246   1384.5     d=14  RI=0.44    [E2]        MR=-        flag=M q=- lvl=4688.974   Jpi=4+        T=88 FS 7        bracket                    RI$other: <2 from {+31}P(|a,p|g).
+L248   2561.35    d=6   RI=100     E2          MR=-        flag=- q=- lvl=4688.974   Jpi=4+        T=88 FS 7        firm      RUL,ADO,gth,ggth E$weighted average of 2561.1 {I6} from {+24}Mg({+16}O,|a2p|g), 2560.5 {I4} from {+31}P(|a,p|g), 2561.36 {I5} f
+L264   1572.56    d=5   RI=70      M1+E2       MR=-0.09    flag=- q=- lvl=4876.84223 Jpi=3+        T=40 FS 15       firm      RUL,gth          E$weighted average of 1572.5 {I5} from {+24}Mg({+16}O,|a2p|g), 1571.9 {I5} from {+31}P(|a,p|g), 1572.57 {I5} f
+L272   2749.24    d=5   RI=100     M1+E2       MR=-0.11    flag=P q=- lvl=4876.84223 Jpi=3+        T=40 FS 15       firm      RUL,gth          E$weighted average of 2749.6 {I6} from {+24}Mg({+16}O,|a2p|g), 2750.9 {I25} from {+31}P(|a,p|g), and 2749.24 {
+L287   1585.510   d=20  RI=96      [M1,E2]     MR=-        flag=P q=- lvl=4889.762   Jpi=2+        T=36 FS 10       bracket                    RI$others: 94 {I9} from {+33}S(n,|g) E=thermal, <100 from {+34}Cl |e+|b{++} decay (31.99 min).
+L290   2762.10    d=8   RI=71      [M1,E2]     MR=-        flag=P q=- lvl=4889.762   Jpi=2+        T=36 FS 10       bracket                    RI$others: 112 {I11} from {+33}S(n,|g) E=thermal, <61 from {+34}Cl |e+|b{++} decay (31.99 min).
+L293   4889.30    d=8   RI=100     E2          MR=-        flag=P q=- lvl=4889.762   Jpi=2+        T=36 FS 10       firm      RUL,gth          RI$others: 100 {I10} from {+33}S(n,|g) E=thermal, 100 from {+34}Cl |e+|b{++} decay (31.99 min). M$Q from p|g(|
+L301   1113.27    d=9   RI=4.1     -           MR=-        flag=- q=- lvl=5228.17522 Jpi=0+        T=               empty                      
+L302   1153.492   d=20  RI=100     D           MR=-        flag=- q=- lvl=5228.17522 Jpi=0+        T=               firm      gth              M$D from p|g(|q) in {+31}P(|a,p|g).
+L311   698.18     d=13  RI=1.37    -           MR=-        flag=- q=- lvl=5322.51428 Jpi=2+        T=17 FS 7        empty                      
+L312   1247.92    d=6   RI=8.0     -           MR=-        flag=- q=- lvl=5322.51428 Jpi=2+        T=17 FS 7        empty                      
+L313   3194.74    d=5   RI=100     M1+E2       MR=-0.17    flag=- q=- lvl=5322.51428 Jpi=2+        T=17 FS 7        firm      RUL,gth          M,MR$D+Q with |d=-0.17 {I6} or |d=+1.8 {I10} from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL.
+L322   1266.11    d=5   RI=17.4    [M1,E2]     MR=-        flag=- q=- lvl=5380.993   Jpi=1+        T=49 FS LE       bracket                    
+L323   2076.89    d=8   RI=39      [M1,E2]     MR=-        flag=- q=- lvl=5380.993   Jpi=1+        T=49 FS LE       bracket                    
+L324   3253.21    d=6   RI=100     M1+E2       MR=-1.1     flag=- q=- lvl=5380.993   Jpi=1+        T=49 FS LE       firm      RUL              RI$other: 100 {I13} from {+31}P(|a,p|g) M,MR$D+Q with -2.1<|d|<-0.1 from {+31}P(|a,p|g). M2 ruled out by RUL.
+L327   5380.59    d=9   RI=53      (M1)        MR=-        flag=- q=- lvl=5380.993   Jpi=1+        T=49 FS LE       paren     LS,gth           RI$weighted average of 61 {I13} from {+31}P(|a,p|g) and 52 {I5} from {+33}S(n,|g) E=thermal M$D from p|g(|q) i
+L339   789.1      d=6   RI=1.50    [M1,E2]     MR=-        flag=- q=- lvl=5679.92817 Jpi=2+        T=263 FS 21      bracket                    
+L340   803.103    d=27  RI=4.4     [M1,E2]     MR=-        flag=- q=- lvl=5679.92817 Jpi=2+        T=263 FS 21      bracket                    
+L341   1055.491   d=20  RI=26.9    [E1]        MR=-        flag=- q=- lvl=5679.92817 Jpi=2+        T=263 FS 21      bracket                    E$weighted average of 1055.4 {I8} from {+24}Mg({+16}O,|a2p|g) and 1055.491 {I20} from {+33}S(n,|g) E=thermal. 
+L345   1564.8     d=5   RI=3.5     [M1,E2]     MR=-        flag=- q=- lvl=5679.92817 Jpi=2+        T=263 FS 21      bracket                    
+L346   2375.657   d=20  RI=100     M1+E2       MR=-0.4     flag=- q=- lvl=5679.92817 Jpi=2+        T=263 FS 21      firm      RUL              E$weighted average of 2375.4 {I7} from {+24}Mg({+16}O,|a2p|g) and 2375.657 {I20} from {+33}S(n,|g) E=thermal. 
+L353   3552.08    d=6   RI=66.7    D+Q         MR=-0.47    flag=- q=- lvl=5679.92817 Jpi=2+        T=263 FS 21      firm      gth              E$weighted average of 3551.2 {I6} from {+24}Mg({+16}O,|a2p|g) and 3552.08 {I4} from {+33}S(n,|g) E=thermal. RI
+L369   1001.5     d=5   RI=100     E1          MR=-        flag=P q=- lvl=5690.86    Jpi=5-        T=36.9 PS 17     firm      POL,ADO,gth,ggth E$weighted average of 1001.6 {I5} from {+24}Mg({+16}O,|a2p|g) and 1001 {I1} from {+208}Pb({+36}S,{+34}S|g) RI$
+L376   1066.2     d=5   RI=88      E2          MR=-        flag=- q=- lvl=5690.86    Jpi=5-        T=36.9 PS 17     firm      POL,ADO,gth,ggth E$weighted average of 1066.2 {I5} from {+24}Mg({+16}O,|a2p|g) and 1066 {I1} from {+208}Pb({+36}S,{+34}S|g) RI$
+L383   3562.7     d=6   RI=2.9     [E3]        MR=-        flag=M q=- lvl=5690.86    Jpi=5-        T=36.9 PS 17     bracket                    
+L388   1640.7     d=10  RI=0.97    -           MR=-        flag=- q=- lvl=5755.87621 Jpi=1-        T=               empty                      
+L389   2451.557   d=20  RI=29.6    -           MR=-        flag=- q=- lvl=5755.87621 Jpi=1-        T=               empty                      
+L390   3628.10    d=4   RI=100     -           MR=-        flag=- q=- lvl=5755.87621 Jpi=1-        T=               empty                      
+L391   5755.5     d=5   RI=2.9     -           MR=-        flag=- q=- lvl=5755.87621 Jpi=1-        T=               empty                      
+L396   1772.82    d=4   RI=73      -           MR=-        flag=- q=- lvl=5847.52429 Jpi=0+        T=               empty                      
+L397   2543.13    d=10  RI=550     -           MR=-        flag=& q=- lvl=5847.52429 Jpi=0+        T=               empty                      
+L398   3719.68    d=16  RI=100     -           MR=-        flag=- q=- lvl=5847.52429 Jpi=0+        T=               empty                      
+L405   1121.33    d=9   RI=57      [M1,E2]     MR=-        flag=- q=- lvl=5998.108   Jpi=2+        T=6.9 FS LT      bracket                    
+L406   1922.92    d=22  RI=100     [M1,E2]     MR=-        flag=- q=- lvl=5998.108   Jpi=2+        T=6.9 FS LT      bracket                    RI$other: 100 {I42} from {+31}P(|a,p|g).
+L408   3870.51    d=31  RI=92      [M1,E2]     MR=-        flag=- q=- lvl=5998.108   Jpi=2+        T=6.9 FS LT      bracket                    RI$other: 128 {I42} from {+31}P(|a,p|g).
+L410   5997.30    d=31  RI=56      E2          MR=-        flag=- q=- lvl=5998.108   Jpi=2+        T=6.9 FS LT      firm      RUL,gth          RI$other: 278 {I50} from {+31}P(|a,p|g). M$Q from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL.
+L418   2817.76    d=25  RI=100     (M1+E2)     MR=-0.09    flag=P q=- lvl=6121.5610  Jpi=2+        T=52 FS LT       paren     LS,gth           M,MR$D+Q from p|g(|q) in {+31}P(|a,p|g). |D|p=no from level scheme.
+L420   3994.8     d=8   RI=22      [M1,E2]     MR=-        flag=P q=- lvl=6121.5610  Jpi=2+        T=52 FS LT       bracket                    
+L428   846.1      d=13  RI=2.6     -           MR=-        flag=- q=- lvl=6168.86228 Jpi=3         T=9.0 FS LT      empty                      
+L429   1479.73    d=15  RI=2.41    M1(+E2)     MR=+0.04    flag=- q=- lvl=6168.86228 Jpi=3         T=9.0 FS LT      firm      gth              RI$other: 95 {I13} from {+31}P(|a,p|g). M,MR$D+Q from p|g(|q) in {+31}P(|a,p|g).
+L432   1544.41    d=10  RI=25.9    -           MR=-        flag=& q=- lvl=6168.86228 Jpi=3         T=9.0 FS LT      empty                      
+L433   2053.94    d=14  RI=5.4     -           MR=-        flag=- q=- lvl=6168.86228 Jpi=3         T=9.0 FS LT      empty                      
+L434   2864.56    d=4   RI=100     M1+E2       MR=-0.23    flag=- q=- lvl=6168.86228 Jpi=3         T=9.0 FS LT      firm      RUL,gth          RI$other: 100 {I13} from {+31}P(|a,p|g). M,MR$D+Q from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL. Other: 
+L438   4040.63    d=29  RI=5.0     D(+Q)       MR=-0.43    flag=- q=- lvl=6168.86228 Jpi=3         T=9.0 FS LT      firm      gth              RI$other: 53 {I13} from {+31}P(|a,p|g). M,MR$D+Q from p|g(|q) in {+31}P(|a,p|g). Other: |d=-1.0 {I3}.
+L449   1374.43    d=23  RI=46      M1+E2       MR=-3.7     flag=- q=- lvl=6251.2219  Jpi=4+        T=0.42 PS +49-21 firm      RUL              E$weighted average of 1375.0 {I5} from {+24}Mg({+16}O,|a2p|g) and 1374.34 {I20} from {+33}S(n,|g) E=thermal. R
+L454   1562.4     d=5   RI=100     [M1,E2]     MR=-        flag=- q=- lvl=6251.2219  Jpi=4+        T=0.42 PS +49-21 bracket                    E$weighted average of 1562.5 {I5} from {+24}Mg({+16}O,|a2p|g), 1562.3 {I5} from {+33}S(n,|g) E=thermal, and 15
+L464   572.0      d=1   RI=28      D           MR=-        flag=M q=- lvl=6251.689   Jpi=(3)-      T=               firm      ADO,gth,ggth     M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+L466   1626.7     d=5   RI=45      -           MR=-        flag=M q=- lvl=6251.689   Jpi=(3)-      T=               empty                      
+L472   3038.18    d=32  RI=100     (E1(+M2))   MR=-0.55    flag=- q=- lvl=6342.5210  Jpi=1-        T=25 FS LT       paren     LS               M,MR$D(+Q) from {+31}P(|a,p|g). |D|p=yes from level scheme.
+L474   6341.58    d=32  RI=36      (E1)        MR=-        flag=- q=- lvl=6342.5210  Jpi=1-        T=25 FS LT       paren     LS               RI$weighted average of 43 {I14} from {+31}P(|a,p|g) and 35 {I6} from {+33}S(n,|g) E=thermal M$D from {+31}P(|a
+L485   1544.41    d=10  RI=100     D           MR=-        flag=P q=- lvl=6421.348   Jpi=4-        T=6.9 FS LT      firm                       MR$0.00 {I6} from {+31}P(|a,p|g).
+L487   1732.39    d=11  RI=61      D           MR=-        flag=P q=- lvl=6421.348   Jpi=4-        T=6.9 FS LT      firm                       MR$0.00 {I+32-14} from {+31}P(|a,p|g).
+L493   306.63     d=16  RI=19      -           MR=-        flag=- q=- lvl=6428.137   Jpi=(2+,3+)   T=               empty                      
+L494   1739.32    d=9   RI=100     -           MR=-        flag=- q=- lvl=6428.137   Jpi=(2+,3+)   T=               empty                      
+L495   2353.06    d=21  RI=48      -           MR=-        flag=- q=- lvl=6428.137   Jpi=(2+,3+)   T=               empty                      
+L500   631.13     d=6   RI=2.70    -           MR=-        flag=- q=- lvl=6478.77022 Jpi=1-        T=               empty                      
+L501   722.95     d=14  RI=1.67    -           MR=-        flag=- q=- lvl=6478.77022 Jpi=1-        T=               empty                      
+L502   798.92     d=10  RI=2.8     -           MR=-        flag=- q=- lvl=6478.77022 Jpi=1-        T=               empty                      
+L503   1156.39    d=7   RI=15.0    -           MR=-        flag=- q=- lvl=6478.77022 Jpi=1-        T=               empty                      
+L504   1602.06    d=15  RI=4.1     -           MR=-        flag=- q=- lvl=6478.77022 Jpi=1-        T=               empty                      
+L505   1854.28    d=4   RI=12.2    -           MR=-        flag=- q=- lvl=6478.77022 Jpi=1-        T=               empty                      
+L506   2404.04    d=6   RI=10.2    -           MR=-        flag=- q=- lvl=6478.77022 Jpi=1-        T=               empty                      
+L507   3174.37    d=5   RI=100     -           MR=-        flag=- q=- lvl=6478.77022 Jpi=1-        T=               empty                      
+L509   4350.85    d=9   RI=61      D+Q         MR=-1.1     flag=- q=- lvl=6478.77022 Jpi=1-        T=               firm      gth              RI$weighted average of 70 {I17} from {+31}P(|a,p|g) and 59 {I7} from {+33}S(n,|g) E=thermal M,MR$-2.0<|d|<-0.1
+L527   960        d=    RI=28      -           MR=-        flag=P q=- lvl=66391      Jpi=4(-)      T=42 FS 10       empty                      
+L528   2017       d=    RI=100     -           MR=-        flag=P q=- lvl=66391      Jpi=4(-)      T=42 FS 10       empty                      
+L533   929.436    d=21  RI=100     -           MR=-        flag=- q=- lvl=6685.33329 Jpi=(0:3)-    T=               empty                      
+L542   1856       d=    RI=9.1     [M1,E2]     MR=-        flag=P q=- lvl=674215     Jpi=2(+),4(+) T=6.9 FS LT      bracket                    
+L543   2043       d=    RI=36      [E2]        MR=-        flag=P q=- lvl=674215     Jpi=2(+),4(+) T=6.9 FS LT      bracket                    
+L544   3428       d=    RI=36      [M1,E2]     MR=-        flag=P q=- lvl=674215     Jpi=2(+),4(+) T=6.9 FS LT      bracket                    
+L545   4604       d=    RI=100     [M1,E2]     MR=-        flag=P q=- lvl=674215     Jpi=2(+),4(+) T=6.9 FS LT      bracket   gth              M,MR$D+Q with |d=+1.8 {I3} for J{-i}=2 or Q(+O) with |d=0.00 {I3} for J{-i}=4 from p|g(|q) in {+31}P(|a,p|g).
+L553   2208       d=    RI=        -           MR=-        flag=- q=- lvl=6828.8318  Jpi=2+        T=46 FS LT       empty                      
+L554   2716       d=    RI=        -           MR=-        flag=- q=- lvl=6828.8318  Jpi=2+        T=46 FS LT       empty                      
+L555   2753.3     d=13  RI=100     [M1,E2]     MR=-        flag=- q=- lvl=6828.8318  Jpi=2+        T=46 FS LT       bracket                    
+L556   6829       d=    RI=        Q           MR=-        flag=- q=- lvl=6828.8318  Jpi=2+        T=46 FS LT       firm      gth              M$Q from p|g(|q) in {+31}P(|a,p|g).
+L562   1525.39    d=6   RI=100     -           MR=-        flag=- q=- lvl=6847.906   Jpi=(1,2+)    T=               empty                      
+L563   6846.37    d=32  RI=50      -           MR=-        flag=- q=- lvl=6847.906   Jpi=(1,2+)    T=               empty                      
+L572   2176       d=    RI=        -           MR=-        flag=- q=- lvl=68641      Jpi=2(+),4(+) T=28 FS 7        empty                      
+L573   4737       d=    RI=        -           MR=-        flag=- q=- lvl=68641      Jpi=2(+),4(+) T=28 FS 7        empty                      
+L588   1274.30    d=4   RI=38      -           MR=-        flag=- q=- lvl=6954.21830 Jpi=2-        T=               empty                      
+L589   1631.641   d=25  RI=93      -           MR=-        flag=- q=- lvl=6954.21830 Jpi=2-        T=               empty                      
+L590   2059       d=    RI=        D(+Q)       MR=0.0      flag=- q=- lvl=6954.21830 Jpi=2-        T=               firm      gth              M,MR$from p|g(|q) in {+31}P(|a,p|g).
+L592   2839.3     d=4   RI=32      -           MR=-        flag=- q=- lvl=6954.21830 Jpi=2-        T=               empty                      
+L593   3649.88    d=12  RI=100     -           MR=-        flag=- q=- lvl=6954.21830 Jpi=2-        T=               empty                      
+L594   4826.0     d=5   RI=3.5     -           MR=-        flag=- q=- lvl=6954.21830 Jpi=2-        T=               empty                      
+L600   281.34     d=24  RI=0.46    -           MR=-        flag=- q=- lvl=7110.45133 Jpi=3-        T=               empty                      
+L601   941.59     d=6   RI=8.2     -           MR=-        flag=- q=- lvl=7110.45133 Jpi=3-        T=               empty                      
+L602   989.1      d=3   RI=1.6     -           MR=-        flag=& q=- lvl=7110.45133 Jpi=3-        T=               empty                      
+L603   2233.49    d=4   RI=100     -           MR=-        flag=- q=- lvl=7110.45133 Jpi=3-        T=               empty                      
+L604   2995.8     d=6   RI=7.4     -           MR=-        flag=- q=- lvl=7110.45133 Jpi=3-        T=               empty                      
+L605   4982.44    d=20  RI=26.2    -           MR=-        flag=- q=- lvl=7110.45133 Jpi=3-        T=               empty                      
+L615   3809       d=    RI=39      [M1,E2]     MR=-        flag=P q=- lvl=711114     Jpi=2+        T=6.9 FS LT      bracket                    
+L616   4985       d=    RI=100     (M1+E2)     MR=+0.27    flag=P q=- lvl=711114     Jpi=2+        T=6.9 FS LT      paren     LS               M,MR$D+Q with |d=+0.27 {I+19-15} or +1.2 {I+7-4} from {+31}P(|a,p|g). |D|p=no from level scheme.
+L619   7111       d=    RI=12.1    (E2)        MR=-        flag=P q=- lvl=711114     Jpi=2+        T=6.9 FS LT      paren     LS               M$Q from {+31}P(|a,p|g). |D|p=no from level scheme.
+L625   3089.53    d=26  RI=100     -           MR=-        flag=- q=- lvl=7164.4717  Jpi=(0:3+)    T=               empty                      
+L626   5036.4     d=7   RI=45      -           MR=-        flag=- q=- lvl=7164.4717  Jpi=(0:3+)    T=               empty                      
+L634   2328.8     d=5   RI=5.2     -           MR=-        flag=- q=- lvl=7219.286   Jpi=2+        T=12 FS LT       empty                      
+L635   2530.25    d=10  RI=18.8    -           MR=-        flag=- q=- lvl=7219.286   Jpi=2+        T=12 FS LT       empty                      
+L636   5093       d=    RI=        -           MR=-        flag=- q=- lvl=7219.286   Jpi=2+        T=12 FS LT       empty                      
+L637   7218.48    d=13  RI=100     E2          MR=-        flag=- q=- lvl=7219.286   Jpi=2+        T=12 FS LT       firm      AZ,gth           M$from |g(|q) and azimuthal asymmetry in {+34}S(|g,|g'),(pol |g,|g').
+L645   1560       d=    RI=100     -           MR=-        flag=P q=- lvl=72482      Jpi=(4)       T=14 FS 7        empty                      
+L651   2558.82    d=13  RI=100     -           MR=-        flag=- q=- lvl=7248.0511  Jpi=(2+,3-)   T=               empty                      
+L657   2490.6     d=13  RI=95      -           MR=-        flag=- q=- lvl=7367.4210  Jpi=(1+,2+)   T=               empty                      
+L658   3451.5     d=9   RI=54      -           MR=-        flag=- q=- lvl=7367.4210  Jpi=(1+,2+)   T=               empty                      
+L659   5239.8     d=4   RI=100     -           MR=-        flag=- q=- lvl=7367.4210  Jpi=(1+,2+)   T=               empty                      
+L673   989.1      d=3   RI=5.0     -           MR=-        flag=& q=- lvl=7467.7516  Jpi=(0+,1,2)  T=               empty                      
+L674   1469.67    d=24  RI=14.7    -           MR=-        flag=- q=- lvl=7467.7516  Jpi=(0+,1,2)  T=               empty                      
+L675   3392.86    d=24  RI=100     -           MR=-        flag=- q=- lvl=7467.7516  Jpi=(0+,1,2)  T=               empty                      
+L681   1210.04    d=13  RI=10.2    -           MR=-        flag=- q=- lvl=7552.708   Jpi=(0+,1,2)  T=               empty                      
+L682   2230.14    d=14  RI=50      -           MR=-        flag=- q=- lvl=7552.708   Jpi=(0+,1,2)  T=               empty                      
+L683   4248.28    d=21  RI=100     -           MR=-        flag=- q=- lvl=7552.708   Jpi=(0+,1,2)  T=               empty                      
+L689   2940.42    d=31  RI=8.3     [E1]        MR=-        flag=- q=- lvl=7629.90721 Jpi=3-        T=14 FS 7        bracket                    
+L690   3005.39    d=5   RI=79      [M1,E2]     MR=-        flag=- q=- lvl=7629.90721 Jpi=3-        T=14 FS 7        bracket                    
+L691   3515.07    d=11  RI=11.3    [E1]        MR=-        flag=- q=- lvl=7629.90721 Jpi=3-        T=14 FS 7        bracket                    
+L692   4325.397   d=30  RI=100     [E1]        MR=-        flag=- q=- lvl=7629.90721 Jpi=3-        T=14 FS 7        bracket                    
+L703   5602.78    d=15  RI=100     -           MR=-        flag=- q=- lvl=7730.7915  Jpi=(1-,2-,3-) T=               empty                      
+L720   1353.46    d=16  RI=10.0    -           MR=-        flag=- q=- lvl=7781.226   Jpi=(1)-      T=               empty                      
+L721   7780.22    d=10  RI=100     -           MR=-        flag=- q=- lvl=7781.226   Jpi=(1)-      T=               empty                      
+L730   1539.7     d=5   RI=19      E2          MR=-        flag=M q=- lvl=7790.29    Jpi=6-        T=97 FS 24       firm      RUL              E$weighted average of 1539.6 {I5} from {+24}Mg({+16}O,|a2p|g) and 1540 {I1} from {+208}Pb({+36}S,{+34}S|g) M$Q
+L736   2099.6     d=8   RI=100     M1+E2       MR=-1.8     flag=M q=- lvl=7790.29    Jpi=6-        T=97 FS 24       firm      RUL,ADO,gth,ggth M,MR$D+Q from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL.
+L749   4670.1     d=6   RI=26      -           MR=-        flag=- q=- lvl=7974.7216  Jpi=(1,2+)    T=               empty                      
+L750   5847.4     d=5   RI=60      -           MR=-        flag=- q=- lvl=7974.7216  Jpi=(1,2+)    T=               empty                      
+L751   7973.45    d=25  RI=100     -           MR=-        flag=- q=- lvl=7974.7216  Jpi=(1,2+)    T=               empty                      
+L761   925.79     d=14  RI=95      -           MR=-        flag=- q=- lvl=8036.3114  Jpi=(1-,2+)   T=               empty                      
+L762   8036.6     d=7   RI=100     -           MR=-        flag=- q=- lvl=8036.3114  Jpi=(1-,2+)   T=               empty                      
+L772   1795.3     d=3   RI=14      -           MR=-        flag=& q=- lvl=8138.087   Jpi=(1)-      T=               empty                      
+L773   2290.26    d=15  RI=19      -           MR=-        flag=- q=- lvl=8138.087   Jpi=(1)-      T=               empty                      
+L774   6010.3     d=3   RI=36      -           MR=-        flag=- q=- lvl=8138.087   Jpi=(1)-      T=               empty                      
+L775   8136.98    d=17  RI=100     -           MR=-        flag=- q=- lvl=8138.087   Jpi=(1)-      T=               empty                      
+L780   2945.8     d=10  RI=1.9E2   -           MR=-        flag=& q=- lvl=8174.94    Jpi=(1,2+)    T=               empty                      
+L781   8173.8     d=9   RI=100     -           MR=-        flag=- q=- lvl=8174.94    Jpi=(1,2+)    T=               empty                      
+L788   8184.70    d=24  RI=100     M1          MR=-        flag=- q=- lvl=8185.4612  Jpi=1+        T=               firm      AZ,gth           M$from |g(|q) and azimuthal asymmetry in {+34}S(|g,|g'),(pol |g,|g').
+L794   3581.2     d=4   RI=31      -           MR=-        flag=- q=- lvl=8205.41    Jpi=(1-:4+)   T=               empty                      
+L795   6077.27    d=12  RI=100     -           MR=-        flag=- q=- lvl=8205.41    Jpi=(1-:4+)   T=               empty                      
+L805   1951.77    d=19  RI=34      -           MR=-        flag=- q=- lvl=8294.409   Jpi=4(+)      T=28 FS LT       empty                      
+L806   6166.24    d=13  RI=100     -           MR=-        flag=- q=- lvl=8294.409   Jpi=4(+)      T=28 FS LT       empty                      
+L815   580.3      d=6   RI=2.0     (M1)        MR=-        flag=M q=- lvl=8370.67    Jpi=7-        T=83 FS 14       paren     ADO,LS,gth,ggth  M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). |D|p=no from level scheme.
+L818   2680.5     d=6   RI=100     E2          MR=-        flag=M q=- lvl=8370.67    Jpi=7-        T=83 FS 14       firm      RUL,ADO,gth,ggth E$weighted average of 2680.5 {I6} from {+24}Mg({+16}O,|a2p|g) and 2681 {I2} from {+208}Pb({+36}S,{+34}S|g) M$Q
+L828   8384.28    d=9   RI=100     -           MR=-        flag=- q=- lvl=8385.416   Jpi=1-        T=               empty                      
+L841   2812.7     d=9   RI=100     (E1)        MR=-        flag=M q=- lvl=8503.67    Jpi=6(+)      T=28 FS 7        paren     ADO,LS,gth,ggth  M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). |D|p=yes from level scheme.
+L844   3813.6     d=7   RI=51      [E2]        MR=-        flag=M q=- lvl=8503.67    Jpi=6(+)      T=28 FS 7        bracket                    
+L850   3183.9     d=7   RI=2.6     -           MR=-        flag=- q=- lvl=8506.775   Jpi=1-        T=               empty                      
+L851   4391.77    d=29  RI=9.4     -           MR=-        flag=- q=- lvl=8506.775   Jpi=1-        T=               empty                      
+L852   5202.06    d=6   RI=64      -           MR=-        flag=- q=- lvl=8506.775   Jpi=1-        T=               empty                      
+L853   8505.68    d=10  RI=100     -           MR=-        flag=- q=- lvl=8506.775   Jpi=1-        T=               empty                      
+L862   2363.97    d=8   RI=58      -           MR=-        flag=- q=- lvl=8615.746   Jpi=(2-,3+)   T=               empty                      
+L863   3738.69    d=17  RI=33      -           MR=-        flag=- q=- lvl=8615.746   Jpi=(2-,3+)   T=               empty                      
+L864   3990.7     d=7   RI=8.1     -           MR=-        flag=- q=- lvl=8615.746   Jpi=(2-,3+)   T=               empty                      
+L865   4540.68    d=15  RI=47      -           MR=-        flag=- q=- lvl=8615.746   Jpi=(2-,3+)   T=               empty                      
+L866   5311.10    d=15  RI=22.2    -           MR=-        flag=- q=- lvl=8615.746   Jpi=(2-,3+)   T=               empty                      
+L867   6487.48    d=6   RI=100     -           MR=-        flag=- q=- lvl=8615.746   Jpi=(2-,3+)   T=               empty                      
+L876   8656       d=    RI=100     M1          MR=-        flag=- q=- lvl=86565      Jpi=1+        T=               firm      AZ,gth           M$from |g(|q) and azimuthal asymmetry in {+34}S(|g,|g'),(pol |g,|g').
+L886   516.86     d=12  RI=29      -           MR=-        flag=- q=- lvl=8702.3512  Jpi=(0+,1,2)  T=               empty                      
+L887   2945.8     d=10  RI=28      -           MR=-        flag=& q=- lvl=8702.3512  Jpi=(0+,1,2)  T=               empty                      
+L888   3022.0     d=10  RI=14.7    -           MR=-        flag=- q=- lvl=8702.3512  Jpi=(0+,1,2)  T=               empty                      
+L889   3812.0     d=5   RI=23      -           MR=-        flag=- q=- lvl=8702.3512  Jpi=(0+,1,2)  T=               empty                      
+L890   6573.6     d=4   RI=100     -           MR=-        flag=- q=- lvl=8702.3512  Jpi=(0+,1,2)  T=               empty                      
+L898   1617.00    d=12  RI=100     -           MR=-        flag=- q=- lvl=8727.647   Jpi=(1-,2+)   T=               empty                      
+L899   3500.3     d=5   RI=25      -           MR=-        flag=- q=- lvl=8727.647   Jpi=(1-,2+)   T=               empty                      
+L900   6600.1     d=7   RI=11.9    -           MR=-        flag=- q=- lvl=8727.647   Jpi=(1-,2+)   T=               empty                      
+L901   8726.78    d=24  RI=22.7    -           MR=-        flag=- q=- lvl=8727.647   Jpi=(1-,2+)   T=               empty                      
+L906   3044.1     d=6   RI=100     D+Q         MR=-        flag=M q=- lvl=8735.08    Jpi=4,5,6     T=               firm      ADO,gth,ggth     M$D+Q from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+L915   2326.2     d=10  RI=10.9    -           MR=-        flag=& q=- lvl=8805.63    Jpi=(1,2+)    T=               empty                      
+L916   5501.4     d=5   RI=100     -           MR=-        flag=- q=- lvl=8805.63    Jpi=(1,2+)    T=               empty                      
+L917   8804.4     d=4   RI=52      -           MR=-        flag=- q=- lvl=8805.63    Jpi=(1,2+)    T=               empty                      
+L922   1244.32    d=21  RI=4.4     -           MR=-        flag=- q=- lvl=8874.016   Jpi=(1-,2,3+) T=               empty                      
+L923   4758.79    d=27  RI=17.0    -           MR=-        flag=- q=- lvl=8874.016   Jpi=(1-,2,3+) T=               empty                      
+L924   4799.11    d=28  RI=19.2    -           MR=-        flag=- q=- lvl=8874.016   Jpi=(1-,2,3+) T=               empty                      
+L925   6745.64    d=16  RI=100     -           MR=-        flag=- q=- lvl=8874.016   Jpi=(1-,2,3+) T=               empty                      
+L933   1180       d=1   RI=5.7     -           MR=-        flag=M q=- lvl=8970.77    Jpi=6         T=               empty                      
+L934   3280.0     d=6   RI=100     -           MR=-        flag=M q=- lvl=8970.77    Jpi=6         T=               empty                      
+L942   3644.8     d=8   RI=60      -           MR=-        flag=- q=- lvl=9026.316   Jpi=(1,2+)    T=               empty                      
+L943   9024.95    d=17  RI=100     -           MR=-        flag=- q=- lvl=9026.316   Jpi=(1,2+)    T=               empty                      
+L951   3311.6     d=5   RI=39      -           MR=-        flag=- q=- lvl=9158.71528 Jpi=(1,2+)    T=               empty                      
+L952   5043.3     d=4   RI=100     -           MR=-        flag=- q=- lvl=9158.71528 Jpi=(1,2+)    T=               empty                      
+L953   5084.2     d=5   RI=8.8     -           MR=-        flag=- q=- lvl=9158.71528 Jpi=(1,2+)    T=               empty                      
+L961   334.21     d=15  RI=4.8     -           MR=-        flag=- q=- lvl=9208.045   Jpi=(1,2+)    T=               empty                      
+L962   1840.52    d=12  RI=64      -           MR=-        flag=- q=- lvl=9208.045   Jpi=(1,2+)    T=               empty                      
+L963   1959.67    d=17  RI=100     -           MR=-        flag=- q=- lvl=9208.045   Jpi=(1,2+)    T=               empty                      
+L964   9206.65    d=26  RI=40      -           MR=-        flag=- q=- lvl=9208.045   Jpi=(1,2+)    T=               empty                      
+L975   1043.8     d=7   RI=21      -           MR=-        flag=- q=- lvl=9413.97    Jpi=5(-),6    T=               empty                      
+L976   3722.6     d=6   RI=100     D+Q         MR=-        flag=- q=- lvl=9413.97    Jpi=5(-),6    T=               firm      ADO,gth,ggth     M$D+Q from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+L992   9477       d=    RI=100     M1          MR=-        flag=- q=- lvl=94794      Jpi=1+        T=               firm      AZ,gth           M$from |g(|q) and azimuthal asymmetry in {+34}S(|g,|g'),(pol |g,|g').
+L998   672.00     d=10  RI=34      -           MR=-        flag=- q=- lvl=9546.097   Jpi=(1,2+)    T=               empty                      
+L999   2326.2     d=10  RI=11.1    -           MR=-        flag=& q=- lvl=9546.097   Jpi=(1,2+)    T=               empty                      
+L1000  6241.0     d=5   RI=100     -           MR=-        flag=- q=- lvl=9546.097   Jpi=(1,2+)    T=               empty                      
+L1001  9544.83    d=28  RI=84      -           MR=-        flag=- q=- lvl=9546.097   Jpi=(1,2+)    T=               empty                      
+L1010  982.68     d=9   RI=26      -           MR=-        flag=- q=- lvl=9598.428   Jpi=          T=               empty                      
+L1011  3476.95    d=18  RI=100     -           MR=-        flag=- q=- lvl=9598.428   Jpi=          T=               empty                      
+L1017  9639       d=4   RI=        -           MR=-        flag=- q=- lvl=96404      Jpi=(1,2+)    T=               empty                      
+L1021  2817.76    d=25  RI=191     -           MR=-        flag=& q=- lvl=9665.743   Jpi=          T=               empty                      
+L1022  7536.2     d=7   RI=100     -           MR=-        flag=- q=- lvl=9665.743   Jpi=          T=               empty                      
+L1030  9710       d=    RI=100     -           MR=-        flag=- q=- lvl=97076      Jpi=(1,2+)    T=               empty                      
+L1035  5884.6     d=6   RI=48      -           MR=-        flag=- q=- lvl=9801.899   Jpi=(1,2+)    T=               empty                      
+L1036  6496.62    d=23  RI=100     -           MR=-        flag=- q=- lvl=9801.899   Jpi=(1,2+)    T=               empty                      
+L1037  7675.0     d=8   RI=29      -           MR=-        flag=- q=- lvl=9801.899   Jpi=(1,2+)    T=               empty                      
+L1041  2989.9     d=7   RI=41      -           MR=-        flag=- q=- lvl=9836.706   Jpi=          T=               empty                      
+L1042  7708.32    d=30  RI=100     -           MR=-        flag=- q=- lvl=9836.706   Jpi=          T=               empty                      
+L1051  9868       d=    RI=100     M1          MR=-        flag=- q=- lvl=98685      Jpi=1+        T=               firm      AZ,gth           M$from |g(|q) and azimuthal asymmetry in {+34}S(|g,|g'),(pol |g,|g').
+L1059  942.3      d=5   RI=29      D           MR=-        flag=M q=- lvl=9912.97    Jpi=7         T=184 FS 38      firm                       M$D, |DJ=1 from A{-2} and A{-4} in {+24}Mg({+16}O,|a2p|g).
+L1061  1178       d=1   RI=14.3    -           MR=-        flag=M q=- lvl=9912.97    Jpi=7         T=184 FS 38      empty                      
+L1062  1408.6     d=9   RI=30      D           MR=-        flag=M q=- lvl=9912.97    Jpi=7         T=184 FS 38      firm      ADO,gth,ggth     M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+L1064  1541.5     d=5   RI=12.9    -           MR=-        flag=M q=- lvl=9912.97    Jpi=7         T=184 FS 38      empty                      
+L1065  2122.9     d=6   RI=100     -           MR=-        flag=M q=- lvl=9912.97    Jpi=7         T=184 FS 38      empty                      
+L1073  725.25     d=22  RI=68      -           MR=-        flag=- q=- lvl=9933.3612  Jpi=1-        T=               empty                      
+L1074  1795.3     d=3   RI=112     -           MR=-        flag=& q=- lvl=9933.3612  Jpi=1-        T=               empty                      
+L1075  2152.41    d=23  RI=100     -           MR=-        flag=- q=- lvl=9933.3612  Jpi=1-        T=               empty                      
+L1076  7804       d=    RI=14      -           MR=-        flag=S q=- lvl=9933.3612  Jpi=1-        T=               empty                      
+L1077  9932.1     d=6   RI=48      (E1)        MR=-        flag=A q=- lvl=9933.3612  Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1083  7853       d=    RI=100     -           MR=-        flag=- q=- lvl=99815      Jpi=1-        T=               empty                      
+L1084  9979       d=    RI=40      (E1)        MR=-        flag=A q=- lvl=99815      Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1093  1364.4     d=4   RI=68      -           MR=-        flag=- q=- lvl=10092.2115 Jpi=          T=               empty                      
+L1094  3664.8     d=4   RI=100     -           MR=-        flag=- q=- lvl=10092.2115 Jpi=          T=               empty                      
+L1098  7968       d=    RI=100     -           MR=-        flag=S q=- lvl=100975     Jpi=          T=               empty                      
+L1099  10095      d=    RI=10      -           MR=-        flag=S q=- lvl=100975     Jpi=          T=               empty                      
+L1106  8040       d=    RI=100     -           MR=-        flag=S q=- lvl=101695     Jpi=1-        T=               empty                      
+L1107  10167      d=    RI=30      (E1)        MR=-        flag=A q=- lvl=101695     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1116  10168      d=5   RI=100     M1          MR=-        flag=- q=- lvl=101705     Jpi=1+        T=               firm      AZ,gth           E,RI,M$from |g(|q) and azimuthal asymmetry in {+34}S(|g,|g'),(pol |g,|g').
+L1122  4499.7     d=10  RI=89      -           MR=-        flag=- q=- lvl=10179.595  Jpi=1+        T=               empty                      
+L1123  8051.1     d=6   RI=100     -           MR=-        flag=- q=- lvl=10179.595  Jpi=1+        T=               empty                      
+L1130  4532.6     d=7   RI=49      -           MR=-        flag=- q=- lvl=10212.154  Jpi=          T=               empty                      
+L1131  8083.49    d=31  RI=100     -           MR=-        flag=- q=- lvl=10212.154  Jpi=          T=               empty                      
+L1138  8120       d=    RI=100     -           MR=-        flag=S q=- lvl=102495     Jpi=1-        T=               empty                      
+L1139  10247      d=    RI=20      (E1)        MR=-        flag=A q=- lvl=102495     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1145  1925.94    d=17  RI=44      -           MR=-        flag=- q=- lvl=10311.533  Jpi=2+        T=               empty                      
+L1146  2173.55    d=21  RI=25      -           MR=-        flag=- q=- lvl=10311.533  Jpi=2+        T=               empty                      
+L1147  2843.7     d=6   RI=94      -           MR=-        flag=- q=- lvl=10311.533  Jpi=2+        T=               empty                      
+L1148  4988.6     d=4   RI=100     -           MR=-        flag=- q=- lvl=10311.533  Jpi=2+        T=               empty                      
+L1149  6236.3     d=11  RI=30      -           MR=-        flag=- q=- lvl=10311.533  Jpi=2+        T=               empty                      
+L1150  8188       d=    RI=0       -           MR=-        flag=S q=- lvl=10311.533  Jpi=2+        T=               empty     RES              RI$100 from {+30}Si(|a,|g),(|a,n):resonances.
+L1152  10315      d=    RI=0       (E2)        MR=-        flag=A q=- lvl=10311.533  Jpi=2+        T=               paren     LS,RES,gth       RI$40 from {+30}Si(|a,|g),(|a,n):resonances, relative to I|g(8188)=100. M$Q from |g(|q) in {+30}Si(|a,|g),(|a,
+L1159  6465       d=    RI=100     -           MR=-        flag=S q=- lvl=103824     Jpi=1-        T=               empty                      
+L1163  4706       d=    RI=100     -           MR=-        flag=S q=- lvl=103864     Jpi=3-        T=               empty                      
+L1168  986.8      d=9   RI=11.3    -           MR=-        flag=M q=- lvl=10399.97   Jpi=8(-)      T=               empty                      
+L1169  2028.8     d=6   RI=47      -           MR=-        flag=M q=- lvl=10399.97   Jpi=8(-)      T=               empty                      
+L1170  2608.6     d=6   RI=100     Q           MR=-        flag=M q=- lvl=10399.97   Jpi=8(-)      T=               firm      ADO,gth,ggth     M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+L1175  8279       d=    RI=100     -           MR=-        flag=S q=- lvl=104085     Jpi=2+        T=               empty                      
+L1176  10406      d=    RI=100     (E2)        MR=-        flag=A q=- lvl=104085     Jpi=2+        T=               paren     LS,RES,gth       M$Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+L1185  7142       d=    RI=100     -           MR=-        flag=S q=- lvl=104475     Jpi=          T=               empty                      
+L1189  6407       d=    RI=100     -           MR=-        flag=S q=- lvl=104824     Jpi=0+        T=               empty                      
+L1194  8365       d=    RI=10      -           MR=-        flag=S q=- lvl=104945     Jpi=1-        T=               empty                      
+L1195  10492      d=    RI=100     (E1)        MR=-        flag=A q=- lvl=104945     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1205  7282       d=    RI=100     (E1)        MR=-        flag=A q=- lvl=105875     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1208  8458       d=    RI=60      -           MR=-        flag=S q=- lvl=105875     Jpi=1-        T=               empty                      
+L1216  8496       d=    RI=100     -           MR=-        flag=S q=- lvl=106255     Jpi=1-        T=               empty                      
+L1217  10623      d=    RI=100     (E1)        MR=-        flag=A q=- lvl=106255     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1223  2919.7     d=5   RI=100     -           MR=-        flag=- q=- lvl=10650.1319 Jpi=          T=               empty                      
+L1224  5268.9     d=6   RI=63      -           MR=-        flag=& q=- lvl=10650.1319 Jpi=          T=               empty                      
+L1230  2147.2     d=6   RI=100     E2          MR=-        flag=M q=- lvl=10651.67   Jpi=8(+)      T=35 FS 17       firm      RUL,ADO,gth,ggth M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL.
+L1233  2280.4     d=10  RI=100     (M1)        MR=-        flag=M q=- lvl=10651.67   Jpi=8(+)      T=35 FS 17       paren     ADO,LS,gth,ggth  M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). |D|p=(no) from level scheme.
+L1245  7365       d=    RI=100     (E1)        MR=-        flag=A q=- lvl=106705     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1248  8541       d=    RI=30      -           MR=-        flag=S q=- lvl=106705     Jpi=1-        T=               empty                      
+L1249  10668      d=    RI=10      -           MR=-        flag=S q=- lvl=106705     Jpi=1-        T=               empty                      
+L1256  8639       d=    RI=100     (M1+E2)     MR=+0.3     flag=A q=- lvl=107685     Jpi=2+        T=               paren     LS,RES,gth       M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+L1259  10766      d=    RI=10      -           MR=-        flag=S q=- lvl=107685     Jpi=2+        T=               empty                      
+L1268  7486       d=    RI=5       -           MR=-        flag=S q=- lvl=107905     Jpi=1-        T=               empty                      
+L1269  8662       d=    RI=20      -           MR=-        flag=S q=- lvl=107905     Jpi=1-        T=               empty                      
+L1270  10784      d=    RI=100     (E1)        MR=-        flag=A q=- lvl=107905     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1279  10801      d=    RI=100     -           MR=-        flag=- q=- lvl=108026     Jpi=1+        T=               empty                      
+L1284  748.43     d=14  RI=71      -           MR=-        flag=- q=- lvl=10840.6318 Jpi=3-        T=               empty                      
+L1285  6152.1     d=5   RI=100     -           MR=-        flag=- q=- lvl=10840.6318 Jpi=3-        T=               empty                      
+L1286  8718       d=    RI=0       (E1+M2)     MR=-0.024   flag=A q=- lvl=10840.6318 Jpi=3-        T=               paren     LS,RES,gth       RI$100 from {+30}Si(|a,|g),(|a,n):resonances. This is the only |g branch observed from this level in {+30}Si(|
+L1303  8802       d=    RI=100     (E1+M2)     MR=+0.154   flag=A q=- lvl=109315     Jpi=1-        T=               paren     LS,RES,gth       M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1309  8865       d=    RI=100     (M1+E2)     MR=+0.078   flag=A q=- lvl=109945     Jpi=2+        T=               paren     LS,RES,gth       M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+L1315  8886       d=    RI=100     (M1+E2)     MR=-0.52    flag=A q=- lvl=110155     Jpi=2+        T=               paren     LS,RES,gth       M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+L1325  1998.3     d=4   RI=50      -           MR=-        flag=- q=- lvl=11024.9511 Jpi=1-        T=               empty                      
+L1326  4903.4     d=5   RI=100     -           MR=-        flag=- q=- lvl=11024.9511 Jpi=1-        T=               empty                      
+L1327  5268.9     d=6   RI=96      -           MR=-        flag=- q=- lvl=11024.9511 Jpi=1-        T=               empty                      
+L1328  7720       d=    RI=0       -           MR=-        flag=S q=- lvl=11024.9511 Jpi=1-        T=               empty     RES              RI$17 from {+30}Si(|a,|g),(|a,n):resonances, relative to I|g(11023)=100.
+L1331  8896       d=    RI=0       -           MR=-        flag=S q=- lvl=11024.9511 Jpi=1-        T=               empty     RES              RI$14 from {+30}Si(|a,|g),(|a,n):resonances, relative to I|g(11023)=100.
+L1334  11023      d=    RI=0       (E1)        MR=-        flag=A q=- lvl=11024.9511 Jpi=1-        T=               paren     LS,RES,gth       RI$100 from {+30}Si(|a,|g),(|a,n):resonances. M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes fr
+L1345  7783       d=    RI=47      -           MR=-        flag=S q=- lvl=110885     Jpi=2+        T=               empty                      
+L1346  8959       d=    RI=44      -           MR=-        flag=S q=- lvl=110885     Jpi=2+        T=               empty                      
+L1347  11086      d=    RI=100     (E2)        MR=-        flag=A q=- lvl=110885     Jpi=2+        T=               paren     LS,RES,gth       M$Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+L1353  8979       d=    RI=100     (E1+M2)     MR=+0.062   flag=A q=- lvl=111085     Jpi=3-        T=               paren     LS,RES,gth       M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1360  7837       d=    RI=9       -           MR=-        flag=S q=- lvl=111425     Jpi=1-        T=               empty                      
+L1361  9013       d=    RI=18      -           MR=-        flag=S q=- lvl=111425     Jpi=1-        T=               empty                      
+L1362  11140      d=    RI=100     (E1)        MR=-        flag=A q=- lvl=111425     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1369  7860       d=    RI=100     -           MR=-        flag=S q=- lvl=111655     Jpi=1-        T=               empty                      
+L1370  9036       d=    RI=13      -           MR=-        flag=S q=- lvl=111655     Jpi=1-        T=               empty                      
+L1371  11163      d=    RI=77      (E1)        MR=-        flag=A q=- lvl=111655     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1384  7915       d=    RI=100     -           MR=-        flag=S q=- lvl=112205     Jpi=(2+)      T=               empty                      
+L1385  9091       d=    RI=48      -           MR=-        flag=S q=- lvl=112205     Jpi=(2+)      T=               empty                      
+L1386  11218      d=    RI=32      (E2)        MR=-        flag=A q=- lvl=112205     Jpi=(2+)      T=               paren     LS,RES,gth       M$Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+L1393  7928       d=    RI=100     -           MR=-        flag=S q=- lvl=112335     Jpi=1-        T=               empty                      
+L1394  9104       d=    RI=3.7     -           MR=-        flag=S q=- lvl=112335     Jpi=1-        T=               empty                      
+L1395  11231      d=    RI=24      (E1)        MR=-        flag=A q=- lvl=112335     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1401  9143       d=    RI=100     (M1+E2)     MR=+0.18    flag=A q=- lvl=112725     Jpi=2+        T=               paren     LS,RES,gth       M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+L1411  8010       d=    RI=67      -           MR=-        flag=S q=- lvl=113155     Jpi=2+        T=               empty                      
+L1412  9186       d=    RI=38      -           MR=-        flag=S q=- lvl=113155     Jpi=2+        T=               empty                      
+L1413  11313      d=    RI=100     (E2)        MR=-        flag=A q=- lvl=113155     Jpi=2+        T=               paren     LS,RES,gth       M$Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+L1420  8018       d=    RI=48      -           MR=-        flag=S q=- lvl=113235     Jpi=1-        T=               empty                      
+L1421  9194       d=    RI=65      -           MR=-        flag=S q=- lvl=113235     Jpi=1-        T=               empty                      
+L1422  11321      d=    RI=100     (E1)        MR=-        flag=A q=- lvl=113235     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1432  8053       d=    RI=100     -           MR=-        flag=S q=- lvl=113585     Jpi=1-        T=               empty                      
+L1433  9229       d=    RI=18      -           MR=-        flag=S q=- lvl=113585     Jpi=1-        T=               empty                      
+L1434  11356      d=    RI=36      (E1)        MR=-        flag=A q=- lvl=113585     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1441  8067       d=    RI=44      -           MR=-        flag=S q=- lvl=113725     Jpi=3-        T=               empty                      
+L1442  9243       d=    RI=100     (E1+M2)     MR=+0.022   flag=A q=- lvl=113725     Jpi=3-        T=               paren     LS,RES,gth       M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1445  11370      d=    RI=5.9     -           MR=-        flag=S q=- lvl=113725     Jpi=3-        T=               empty                      
+L1451  1461.7     d=9   RI=90      D(+Q)       MR=-        flag=- q=- lvl=11374.38   Jpi=(8)       T=               firm      ADO,gth,ggth     M$D(+Q), |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+L1453  3002.8     d=6   RI=100     D           MR=-        flag=- q=- lvl=11374.38   Jpi=(8)       T=               firm      ADO,gth,ggth     M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+L1459  8076       d=    RI=100     -           MR=-        flag=S q=- lvl=113815     Jpi=2+        T=               empty                      
+L1460  9252       d=    RI=33      -           MR=-        flag=S q=- lvl=113815     Jpi=2+        T=               empty                      
+L1461  11379      d=    RI=37      (E2)        MR=-        flag=A q=- lvl=113815     Jpi=2+        T=               paren     LS,RES,gth       M$Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+L1474  392.28     d=11  RI=0.200   -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1476  576.80     d=19  RI=0.236   -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1477  767.20     d=21  RI=0.158   -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1478  1105.673   d=21  RI=2.40    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1480  1205.05    d=4   RI=0.98    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1482  1237.61    d=5   RI=0.84    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1484  1325.22    d=26  RI=0.53    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1485  1484.06    d=19  RI=0.53    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1486  1580.50    d=6   RI=1.07    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1488  1615.24    d=10  RI=3.6     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1489  1751.431   d=29  RI=2.32    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1491  1818.96    d=14  RI=0.61    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1492  1871.04    d=8   RI=3.3     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1493  2209.10    d=6   RI=1.39    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1494  2258.430   d=23  RI=6.0     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1496  2390.82    d=6   RI=2.15    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1497  2543.13    d=10  RI=15.5    -           MR=-        flag=& q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1498  2611.7     d=4   RI=1.9     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1499  2689.50    d=10  RI=3.5     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1500  2714.50    d=19  RI=4.5     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1501  2801.33    d=5   RI=16.3    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1503  2910.28    d=5   RI=16.1    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1505  3031.69    d=8   RI=7.4     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1506  3122.65    d=15  RI=4.4     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1507  3211.69    d=9   RI=3.8     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1508  3231.89    d=20  RI=1.36    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1509  3241.9     d=5   RI=0.58    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1510  3278.79    d=11  RI=5.2     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1511  3442.24    d=25  RI=1.65    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1512  3635.83    d=8   RI=8.4     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1513  3787.096   d=20  RI=43      -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1515  3864.25    d=11  RI=2.71    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1516  3949.27    d=12  RI=2.48    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1517  4049.68    d=15  RI=1.89    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1518  4197.69    d=9   RI=4.8     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1519  4252.38    d=22  RI=1.98    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1520  4306.44    d=6   RI=13.4    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1521  4462.44    d=20  RI=12.7    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1522  4568.9     d=4   RI=0.48    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1523  4588.37    d=26  RI=0.95    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1524  4731.37    d=10  RI=2.55    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1525  4938.06    d=3   RI=35.8    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1527  5074.79    d=25  RI=0.68    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1528  5247.94    d=4   RI=19.0    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1530  5294.94    d=24  RI=0.68    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1531  5569.30    d=5   RI=9.0     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1533  5660.78    d=6   RI=29.7    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1534  5736.76    d=4   RI=69      -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1536  6035.68    d=7   RI=7.1     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1538  6094.4     d=4   RI=0.34    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1539  6188.45    d=6   RI=14.0    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1541  6526.84    d=6   RI=8.9     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1543  6539.66    d=16  RI=1.60    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1544  6727.5     d=9   RI=0.113   -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1545  6792.10    d=3   RI=39      -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1547  7302.2     d=8   RI=0.45    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1548  7341.67    d=6   RI=59      -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1550  7499.90    d=5   RI=100     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1552  8111.99    d=9   RI=9.8     -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1553  9288.28    d=16  RI=1.77    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1554  11415.17   d=11  RI=11.5    -           MR=-        flag=- q=- lvl=11417.222  Jpi=1+,2+     T=               empty                      
+L1559  8115       d=    RI=5       -           MR=-        flag=S q=- lvl=114205     Jpi=1-        T=               empty                      
+L1560  9291       d=    RI=19      -           MR=-        flag=S q=- lvl=114205     Jpi=1-        T=               empty                      
+L1561  11418      d=    RI=100     (E1)        MR=-        flag=A q=- lvl=114205     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1585  9329       d=    RI=100     (E1+M2)     MR=+0.037   flag=A q=- lvl=114585     Jpi=3-        T=               paren     LS,RES,gth       M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1597  9344       d=    RI=100     (E1+M2)     MR=-0.13    flag=A q=- lvl=114735     Jpi=1-        T=               paren     LS,RES,gth       M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1614  8185       d=    RI=56      -           MR=-        flag=S q=- lvl=114905     Jpi=1-        T=               empty                      
+L1615  9361       d=    RI=46      -           MR=-        flag=S q=- lvl=114905     Jpi=1-        T=               empty                      
+L1616  11488      d=    RI=100     (E1)        MR=-        flag=A q=- lvl=114905     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1646  9377       d=    RI=100     (E1+M2)     MR=-0.058   flag=A q=- lvl=115065     Jpi=(1-)      T=0.26 KEV 5     paren     LS,RES,gth       M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1666  8240       d=    RI=100     -           MR=-        flag=S q=- lvl=115455     Jpi=1-        T=0.63 KEV 7     empty                      
+L1667  9416       d=    RI=60      -           MR=-        flag=S q=- lvl=115455     Jpi=1-        T=0.63 KEV 7     empty                      
+L1668  11543      d=    RI=63      (E1)        MR=-        flag=A q=- lvl=115455     Jpi=1-        T=0.63 KEV 7     paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1731  8338       d=    RI=20      -           MR=-        flag=S q=- lvl=116435     Jpi=1-        T=               empty                      
+L1732  9514       d=    RI=25      -           MR=-        flag=S q=- lvl=116435     Jpi=1-        T=               empty                      
+L1733  11641      d=    RI=100     (E1)        MR=-        flag=A q=- lvl=116435     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1760  9583       d=    RI=100     (E1(+M2))   MR=-0.080   flag=A q=- lvl=117125     Jpi=1-        T=               paren     LS,RES,gth       M,MR$D(+Q) from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1788  1894.6     d=6   RI=100     -           MR=-        flag=M q=- lvl=11807.57   Jpi=8(+)      T=               empty                      
+L1789  3436.1     d=6   RI=1.0E2   D           MR=-        flag=M q=- lvl=11807.57   Jpi=8(+)      T=               firm      ADO,gth,ggth     M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+L1812  9793       d=    RI=100     (E1)        MR=-        flag=A q=- lvl=119225     Jpi=(3-)      T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1818  11930      d=    RI=100     (E1)        MR=-        flag=A q=- lvl=119325     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1827  9828       d=    RI=100     (E1+M2)     MR=+0.031   flag=A q=- lvl=119575     Jpi=3-        T=               paren     LS,RES,gth       M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1836  12032      d=    RI=100     (E1)        MR=-        flag=A q=- lvl=120345     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1848  12098      d=    RI=100     (E1)        MR=-        flag=A q=- lvl=121005     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1863  1489.2     d=6   RI=7.4     [M1,E2]     MR=-        flag=M q=- lvl=12141.47   Jpi=9         T=173 FS 35      bracket                    
+L1864  1741.6     d=5   RI=12.6    [E1]        MR=-        flag=M q=- lvl=12141.47   Jpi=9         T=173 FS 35      bracket                    
+L1865  2228.8     d=6   RI=100     E2          MR=-        flag=M q=- lvl=12141.47   Jpi=9         T=173 FS 35      firm      RUL,ADO,gth,ggth M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL.
+L1883  12192      d=    RI=100     (E1)        MR=-        flag=A q=- lvl=121945     Jpi=1-        T=               paren     LS,RES,gth       M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+L1934  1178       d=1   RI=42      -           MR=-        flag=- q=- lvl=12985.58   Jpi=(9+)      T=               empty                      
+L1935  1611.5     d=7   RI=50      -           MR=-        flag=- q=- lvl=12985.58   Jpi=(9+)      T=               empty                      
+L1937  2333.8     d=7   RI=1.0E2   -           MR=-        flag=- q=- lvl=12985.58   Jpi=(9+)      T=               empty                      
+L1943  2920.1     d=10  RI=26      -           MR=-        flag=- q=- lvl=13320.311  Jpi=(9-)      T=               empty                      
+L1944  4949.3     d=18  RI=100     -           MR=-        flag=- q=- lvl=13320.311  Jpi=(9-)      T=               empty                      
+L1952  356.3      d=6   RI=6.3     [M1,E2]     MR=-        flag=M q=- lvl=13341.78   Jpi=10(+)     T=180 FS 28      bracket                    
+L1953  1200.4     d=7   RI=100     M1+E2       MR=-        flag=M q=- lvl=13341.78   Jpi=10(+)     T=180 FS 28      firm      RUL,ADO,gth,ggth M$D+Q from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL.
+L1957  1966.8     d=9   RI=81      E2          MR=-        flag=M q=- lvl=13341.78   Jpi=10(+)     T=180 FS 28      firm      RUL,ADO,gth,ggth M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL.
+L1984  3308.8     d=8   RI=100     -           MR=-        flag=M q=- lvl=13960.611  Jpi=(10+)     T=               empty                      
+L2021  2768.9     d=9   RI=100     -           MR=-        flag=M q=- lvl=14576.512  Jpi=(10+)     T=               empty                      
+L2050  1902.7     d=6   RI=100     -           MR=-        flag=M q=- lvl=15244.410  Jpi=(10,11,12+) T=               empty                      
+L2055  4880.8     d=16  RI=100     -           MR=-        flag=- q=- lvl=15281.018  Jpi=(10)      T=               empty                      
+L2100  2688.4     d=8   RI=100     -           MR=-        flag=M q=- lvl=16649.114  Jpi=(10,11,12+) T=               empty                      

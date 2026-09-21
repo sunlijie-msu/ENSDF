@@ -1,0 +1,139 @@
+### paren: 61 records (60 with M-basis comment)
+### bracket: 32 records (1 with M-basis comment)
+### firm: 327 records (43 with M-basis comment)
+
+=== MISMATCH CANDIDATE 1: tentative/bracket field citing RUL/POL ===
+count=0
+
+=== MISMATCH CANDIDATE 2: firm field, M-basis comment, no RUL/POL ===
+firm    L302   E=1153.492   M=D           MR=         flag=' ' L(Jpi)=0+
+        M$D from p|g(|q) in {+31}P(|a,p|g).
+firm    L353   E=3552.08    M=D+Q         MR=-0.47    flag=' ' L(Jpi)=2+
+        E$weighted average of 3551.2 {I6} from {+24}Mg({+16}O,|a2p|g) and 3552.08 {I4} from {+33}S(n,|g) E=thermal. RI$others: 149 {I75} from {+24}Mg({+16}O,|a2p|g), 54 {I16} from {+31}P(|a,p|g). M,MR$D+Q with |d=-0.47 {I+7-11} from p|g(|q) in {+31}P(|a,p|g).
+firm    L464   E=572.0      M=D           MR=         flag='M' L(Jpi)=3-
+        M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+firm    L509   E=4350.85    M=D+Q         MR=-1.1     flag=' ' L(Jpi)=1-
+        RI$weighted average of 70 {I17} from {+31}P(|a,p|g) and 59 {I7} from {+33}S(n,|g) E=thermal M,MR$-2.0<|d|<-0.19 from p|g(|q) in {+31}P(|a,p|g).
+firm    L556   E=6829       M=Q           MR=         flag=' ' L(Jpi)=2+
+        M$Q from p|g(|q) in {+31}P(|a,p|g).
+firm    L906   E=3044.1     M=D+Q         MR=         flag='M' L(Jpi)=4,5,6
+        M$D+Q from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+firm    L976   E=3722.6     M=D+Q         MR=         flag=' ' L(Jpi)=5(-),6
+        M$D+Q from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+firm    L1059  E=942.3      M=D           MR=         flag='M' L(Jpi)=7
+        M$D, |DJ=1 from A{-2} and A{-4} in {+24}Mg({+16}O,|a2p|g).
+firm    L1062  E=1408.6     M=D           MR=         flag='M' L(Jpi)=7
+        M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+firm    L1170  E=2608.6     M=Q           MR=         flag='M' L(Jpi)=8(-)
+        M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+firm    L1453  E=3002.8     M=D           MR=         flag=' ' L(Jpi)=(8)
+        M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+firm    L1789  E=3436.1     M=D           MR=         flag='M' L(Jpi)=8(+)
+        M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+count=12
+
+=== ALL records with M-basis comment: field class tally ===
+firm    L105   E=2127.498   M=E2          flag=' ' RUL=False POL=True | E$weighted average of 2127.5 {I6} from {+24}Mg({+16}O,|a2p|g), 2126.7 {I8} from {+31}P(|a,p|g),
+firm    L128   E=1176.650   M=M1+E2       flag=' ' RUL=True POL=False | E$weighted average of 1177.3 {I5} from {+24}Mg({+16}O,|a2p|g), 1175.2 {I8} from {+31}P(|a,p|g),
+firm    L136   E=3304.029   M=E2          flag=' ' RUL=False POL=True | E$weighted average of 3304.6 {I7} from {+24}Mg({+16}O,|a2p|g), 3303.1 {I4} from {+31}P(|a,p|g),
+paren   L168   E=770.428    M=(M1(+E2))   flag=' ' RUL=False POL=False | RI$weighted average of 6.2 {I22} from {+31}P(|a,p|g) and 8.8 {I8} from {+33}S(n,|g) E=thermal M
+firm    L172   E=1947.060   M=M1+E2       flag=' ' RUL=True POL=False | E$weighted average of 1947.1 {I15} from {+34}P |b{+-} decay, 1945.5 {I13} from {+31}P(|a,p|g), 
+paren   L179   E=4072.9     M=(M1)        flag=' ' RUL=False POL=False | E$unweighted average of 4073.4 {I15} from {+34}P |b{+-} decay, 4070.9 {I13} from {+31}P(|a,p|g)
+firm    L195   E=1987.19    M=M1+E2       flag=' ' RUL=True POL=False | E$weighted average of 1987.2 {I10} from {+34}P |b{+-} decay and 1987.19 {I3} from {+33}S(n,|g) 
+firm    L202   E=4114.52    M=E2          flag=' ' RUL=True POL=False | E$weighted average of 4114.0 {I15} from {+34}P |b{+-} decay, 4115.0 {I20} from {+34}Cl |e+|b{++
+paren   L219   E=1320.168   M=(E1(+M2))   flag='P' RUL=False POL=False | E$weighted average of 1320.1 {I5} from {+24}Mg({+16}O,|a2p|g), 1318.8 {I10} from {+31}P(|a,p|g)
+paren   L227   E=2496.725   M=(E1(+M2))   flag=' ' RUL=False POL=False | E$weighted average of 2496.5 {I8} from {+24}Mg({+16}O,|a2p|g), 2495.5 {I7} from {+31}P(|a,p|g),
+firm    L248   E=2561.35    M=E2          flag=' ' RUL=True POL=False | E$weighted average of 2561.1 {I6} from {+24}Mg({+16}O,|a2p|g), 2560.5 {I4} from {+31}P(|a,p|g),
+firm    L264   E=1572.56    M=M1+E2       flag=' ' RUL=True POL=False | E$weighted average of 1572.5 {I5} from {+24}Mg({+16}O,|a2p|g), 1571.9 {I5} from {+31}P(|a,p|g),
+firm    L272   E=2749.24    M=M1+E2       flag='P' RUL=True POL=False | E$weighted average of 2749.6 {I6} from {+24}Mg({+16}O,|a2p|g), 2750.9 {I25} from {+31}P(|a,p|g)
+firm    L293   E=4889.30    M=E2          flag='P' RUL=True POL=False | RI$others: 100 {I10} from {+33}S(n,|g) E=thermal, 100 from {+34}Cl |e+|b{++} decay (31.99 min).
+firm    L302   E=1153.492   M=D           flag=' ' RUL=False POL=False | M$D from p|g(|q) in {+31}P(|a,p|g).
+firm    L313   E=3194.74    M=M1+E2       flag=' ' RUL=True POL=False | M,MR$D+Q with |d=-0.17 {I6} or |d=+1.8 {I10} from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RU
+firm    L324   E=3253.21    M=M1+E2       flag=' ' RUL=True POL=False | RI$other: 100 {I13} from {+31}P(|a,p|g) M,MR$D+Q with -2.1<|d|<-0.1 from {+31}P(|a,p|g). M2 rul
+paren   L327   E=5380.59    M=(M1)        flag=' ' RUL=False POL=False | RI$weighted average of 61 {I13} from {+31}P(|a,p|g) and 52 {I5} from {+33}S(n,|g) E=thermal M$D
+firm    L346   E=2375.657   M=M1+E2       flag=' ' RUL=True POL=False | E$weighted average of 2375.4 {I7} from {+24}Mg({+16}O,|a2p|g) and 2375.657 {I20} from {+33}S(n,
+firm    L353   E=3552.08    M=D+Q         flag=' ' RUL=False POL=False | E$weighted average of 3551.2 {I6} from {+24}Mg({+16}O,|a2p|g) and 3552.08 {I4} from {+33}S(n,|g
+firm    L369   E=1001.5     M=E1          flag='P' RUL=False POL=True | E$weighted average of 1001.6 {I5} from {+24}Mg({+16}O,|a2p|g) and 1001 {I1} from {+208}Pb({+36}
+firm    L376   E=1066.2     M=E2          flag=' ' RUL=False POL=True | E$weighted average of 1066.2 {I5} from {+24}Mg({+16}O,|a2p|g) and 1066 {I1} from {+208}Pb({+36}
+firm    L410   E=5997.30    M=E2          flag=' ' RUL=True POL=False | RI$other: 278 {I50} from {+31}P(|a,p|g). M$Q from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RU
+paren   L418   E=2817.76    M=(M1+E2)     flag='P' RUL=False POL=False | M,MR$D+Q from p|g(|q) in {+31}P(|a,p|g). |D|p=no from level scheme.
+paren   L429   E=1479.73    M=M1(+E2)     flag=' ' RUL=False POL=False | RI$other: 95 {I13} from {+31}P(|a,p|g). M,MR$D+Q from p|g(|q) in {+31}P(|a,p|g).
+firm    L434   E=2864.56    M=M1+E2       flag=' ' RUL=True POL=False | RI$other: 100 {I13} from {+31}P(|a,p|g). M,MR$D+Q from p|g(|q) in {+31}P(|a,p|g). M2 ruled out 
+paren   L438   E=4040.63    M=D(+Q)       flag=' ' RUL=False POL=False | RI$other: 53 {I13} from {+31}P(|a,p|g). M,MR$D+Q from p|g(|q) in {+31}P(|a,p|g). Other: |d=-1.0
+firm    L449   E=1374.43    M=M1+E2       flag=' ' RUL=True POL=False | E$weighted average of 1375.0 {I5} from {+24}Mg({+16}O,|a2p|g) and 1374.34 {I20} from {+33}S(n,|
+firm    L464   E=572.0      M=D           flag='M' RUL=False POL=False | M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+paren   L472   E=3038.18    M=(E1(+M2))   flag=' ' RUL=False POL=False | M,MR$D(+Q) from {+31}P(|a,p|g). |D|p=yes from level scheme.
+paren   L474   E=6341.58    M=(E1)        flag=' ' RUL=False POL=False | RI$weighted average of 43 {I14} from {+31}P(|a,p|g) and 35 {I6} from {+33}S(n,|g) E=thermal M$D
+firm    L509   E=4350.85    M=D+Q         flag=' ' RUL=False POL=False | RI$weighted average of 70 {I17} from {+31}P(|a,p|g) and 59 {I7} from {+33}S(n,|g) E=thermal M,M
+bracket L545   E=4604       M=[M1,E2]     flag='P' RUL=False POL=False | M,MR$D+Q with |d=+1.8 {I3} for J{-i}=2 or Q(+O) with |d=0.00 {I3} for J{-i}=4 from p|g(|q) in {
+firm    L556   E=6829       M=Q           flag=' ' RUL=False POL=False | M$Q from p|g(|q) in {+31}P(|a,p|g).
+paren   L590   E=2059       M=D(+Q)       flag=' ' RUL=False POL=False | M,MR$from p|g(|q) in {+31}P(|a,p|g).
+paren   L616   E=4985       M=(M1+E2)     flag='P' RUL=False POL=False | M,MR$D+Q with |d=+0.27 {I+19-15} or +1.2 {I+7-4} from {+31}P(|a,p|g). |D|p=no from level scheme
+paren   L619   E=7111       M=(E2)        flag='P' RUL=False POL=False | M$Q from {+31}P(|a,p|g). |D|p=no from level scheme.
+firm    L637   E=7218.48    M=E2          flag=' ' RUL=False POL=True | M$from |g(|q) and azimuthal asymmetry in {+34}S(|g,|g'),(pol |g,|g').
+firm    L730   E=1539.7     M=E2          flag='M' RUL=True POL=False | E$weighted average of 1539.6 {I5} from {+24}Mg({+16}O,|a2p|g) and 1540 {I1} from {+208}Pb({+36}
+firm    L736   E=2099.6     M=M1+E2       flag='M' RUL=True POL=False | M,MR$D+Q from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL.
+firm    L788   E=8184.70    M=M1          flag=' ' RUL=False POL=True | M$from |g(|q) and azimuthal asymmetry in {+34}S(|g,|g'),(pol |g,|g').
+paren   L815   E=580.3      M=(M1)        flag='M' RUL=False POL=False | M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). |D|p=no from level scheme.
+firm    L818   E=2680.5     M=E2          flag='M' RUL=True POL=False | E$weighted average of 2680.5 {I6} from {+24}Mg({+16}O,|a2p|g) and 2681 {I2} from {+208}Pb({+36}
+paren   L841   E=2812.7     M=(E1)        flag='M' RUL=False POL=False | M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). |D|p=yes from level scheme.
+firm    L876   E=8656       M=M1          flag=' ' RUL=False POL=True | M$from |g(|q) and azimuthal asymmetry in {+34}S(|g,|g'),(pol |g,|g').
+firm    L906   E=3044.1     M=D+Q         flag='M' RUL=False POL=False | M$D+Q from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+firm    L976   E=3722.6     M=D+Q         flag=' ' RUL=False POL=False | M$D+Q from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+firm    L992   E=9477       M=M1          flag=' ' RUL=False POL=True | M$from |g(|q) and azimuthal asymmetry in {+34}S(|g,|g'),(pol |g,|g').
+firm    L1051  E=9868       M=M1          flag=' ' RUL=False POL=True | M$from |g(|q) and azimuthal asymmetry in {+34}S(|g,|g'),(pol |g,|g').
+firm    L1059  E=942.3      M=D           flag='M' RUL=False POL=False | M$D, |DJ=1 from A{-2} and A{-4} in {+24}Mg({+16}O,|a2p|g).
+firm    L1062  E=1408.6     M=D           flag='M' RUL=False POL=False | M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+paren   L1077  E=9932.1     M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1084  E=9979       M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1107  E=10167      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+firm    L1116  E=10168      M=M1          flag=' ' RUL=False POL=True | E,RI,M$from |g(|q) and azimuthal asymmetry in {+34}S(|g,|g'),(pol |g,|g').
+paren   L1139  E=10247      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1152  E=10315      M=(E2)        flag='A' RUL=False POL=False | RI$40 from {+30}Si(|a,|g),(|a,n):resonances, relative to I|g(8188)=100. M$Q from |g(|q) in {+30
+firm    L1170  E=2608.6     M=Q           flag='M' RUL=False POL=False | M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+paren   L1176  E=10406      M=(E2)        flag='A' RUL=False POL=False | M$Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+paren   L1195  E=10492      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1205  E=7282       M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1217  E=10623      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+firm    L1230  E=2147.2     M=E2          flag='M' RUL=True POL=False | M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL.
+paren   L1233  E=2280.4     M=(M1)        flag='M' RUL=False POL=False | M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). |D|p=(no) from level scheme.
+paren   L1245  E=7365       M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1256  E=8639       M=(M1+E2)     flag='A' RUL=False POL=False | M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+paren   L1270  E=10784      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1286  E=8718       M=(E1+M2)     flag='A' RUL=False POL=False | RI$100 from {+30}Si(|a,|g),(|a,n):resonances. This is the only |g branch observed from this lev
+paren   L1303  E=8802       M=(E1+M2)     flag='A' RUL=False POL=False | M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1309  E=8865       M=(M1+E2)     flag='A' RUL=False POL=False | M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+paren   L1315  E=8886       M=(M1+E2)     flag='A' RUL=False POL=False | M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+paren   L1334  E=11023      M=(E1)        flag='A' RUL=False POL=False | RI$100 from {+30}Si(|a,|g),(|a,n):resonances. M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonanc
+paren   L1347  E=11086      M=(E2)        flag='A' RUL=False POL=False | M$Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+paren   L1353  E=8979       M=(E1+M2)     flag='A' RUL=False POL=False | M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1362  E=11140      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1371  E=11163      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1386  E=11218      M=(E2)        flag='A' RUL=False POL=False | M$Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+paren   L1395  E=11231      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1401  E=9143       M=(M1+E2)     flag='A' RUL=False POL=False | M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+paren   L1413  E=11313      M=(E2)        flag='A' RUL=False POL=False | M$Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+paren   L1422  E=11321      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1434  E=11356      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1442  E=9243       M=(E1+M2)     flag='A' RUL=False POL=False | M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1451  E=1461.7     M=D(+Q)       flag=' ' RUL=False POL=False | M$D(+Q), |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+firm    L1453  E=3002.8     M=D           flag=' ' RUL=False POL=False | M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+paren   L1461  E=11379      M=(E2)        flag='A' RUL=False POL=False | M$Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=no from level scheme.
+paren   L1561  E=11418      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1585  E=9329       M=(E1+M2)     flag='A' RUL=False POL=False | M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1597  E=9344       M=(E1+M2)     flag='A' RUL=False POL=False | M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1616  E=11488      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1646  E=9377       M=(E1+M2)     flag='A' RUL=False POL=False | M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1668  E=11543      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1733  E=11641      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1760  E=9583       M=(E1(+M2))   flag='A' RUL=False POL=False | M,MR$D(+Q) from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+firm    L1789  E=3436.1     M=D           flag='M' RUL=False POL=False | M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).
+paren   L1812  E=9793       M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1818  E=11930      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1827  E=9828       M=(E1+M2)     flag='A' RUL=False POL=False | M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1836  E=12032      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+paren   L1848  E=12098      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+firm    L1865  E=2228.8     M=E2          flag='M' RUL=True POL=False | M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL.
+paren   L1883  E=12192      M=(E1)        flag='A' RUL=False POL=False | M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from level scheme.
+firm    L1953  E=1200.4     M=M1+E2       flag='M' RUL=True POL=False | M$D+Q from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL.
+firm    L1957  E=1966.8     M=E2          flag='M' RUL=True POL=False | M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out by RUL.
