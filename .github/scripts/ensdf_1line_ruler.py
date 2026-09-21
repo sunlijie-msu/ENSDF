@@ -21,8 +21,7 @@ from typing import Callable, Dict, Optional
 # Column 7 holds a flag on comment-style records, which may be continued ('2c', '2d', ...):
 #   'c'/'C' -> comment record
 #   'd'/'D' -> hidden message record (kept in the file, ignored by the processing codes);
-#              free-format note, so the 80-column rule is not enforced for it
-#              Free-format note; the 80-column rule is not enforced for these.
+#              free-format note, so the 80-column length rule is not enforced for these.
 # Any other character in Column 7 is invalid.
 COMMENT_FLAGS = {'c': 'comment', 'C': 'comment',
                  'd': 'hidden message', 'D': 'hidden message'}
@@ -164,7 +163,7 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
     record_def = RECORD_DEFINITIONS.get(record_key)
     comment_hint = _describe_comment(line)
     is_comment = comment_hint is not None
-    flag_only = _is_flag_only_record(line)
+    free_text = _is_free_text_record(line)
 
     if record_def:
         print(f'Format ({record_def.label}):')
@@ -173,8 +172,8 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
         print(record_def.fields)
     if comment_hint:
         print(comment_hint)
-        if flag_only:
-            print('Flag-only marker record: 80-column length is not enforced.')
+        if free_text:
+            print('Hidden message (free-text) record: 80-column length is not enforced.')
         else:
             print('Comment lines must still obey the 80-column rule and inherit the associated record scope.')
     elif record_key and not record_def:
@@ -189,7 +188,7 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
     
     # Quick validation
     errors = []
-    if len(line) != 80 and not flag_only:
+    if len(line) != 80 and not free_text:
         errors.append(f'Length {len(line)} ≠ 80')
     if '\t' in line:
         errors.append('Tab character present. ENSDF records must use spaces only.')

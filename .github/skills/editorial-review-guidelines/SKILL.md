@@ -104,6 +104,7 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 Missing terminal periods, XREF notation. Valid ENSDF symbols: `|?`, `{+n}`, `{-n}`, `|a`, `|b`, `|g`, `|d`, `|w`, `|*`, `|+`, `|-`.
 - Never strip a leading `|`: `|<` = ≤, `|>` = ≥, `|*` = ×. A leading `|` is never a stray artifact.
 - Comment lines need not be padded to 80 columns (human wraps later); still confirm the diff is comment-only (col 7 = `c`).
+- `d`/`D` (col 7) hidden-message records are free-text notes, not comments: never length-check or reword them.
 - Values quoted in comments must name the specific gamma/level/multipolarity record and match it character-for-character — see `comment-quoted-values-check`.
 
 ## Editing Discipline
