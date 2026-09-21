@@ -14,7 +14,7 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 
 **Scope:** `c`, `cL`, `cG`, `cB`, `cE`, `cN`, `cP`, `cQ` comment records and continuation comment lines. Skip data-record fields (`L`, `G`, `E`, `B`, `DP`).
 **Action Policy:** Two options: (1) Check only. Report findings table. No edits or revisions. (2) Check and revise. Report findings table, then apply edits to comment lines.
-- Flag definitions are human-controlled: never reword a comment line that defines what a flag letter means.
+- Flag letters, marks, and labels are human-controlled: parenthesized letters in an identifier (`cL J(A)$`, `cL E(B)$`, `cG E(B),RI(B)$`) name the col-77 flag of the records the comment applies to; such lines may be reworded, but the flag letter must never be changed.
 - General and per-reference comments are editable, but keep edits surgical and meaning-preserving.
 
 ## Error Classes
@@ -41,7 +41,7 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 
 ### 2. Grammar and Style
 - **Capitalization:**
-  - Top-block comments (before first data record, any type) → uppercase.
+  - Top-block comments (before first data record, any type, (`c  `, `cL $`, `cG  $`, `cL J$`, `cL J(A)$`, etc.)) → uppercase.
   - Record-specific (after first data record comments) **with** field identifier (`cL E$`, `cL J$`, `cL T$`, `cG E$`, `cG RI$`, `cG M$`, etc.) → lowercase, unless first token is numeral, symbol, isotope token, or acronym.
   - Record-specific comments (after first data record comments) **without** field identifier (`cL $`, `cG $`) → uppercase (standalone statements).
   - **Exception:** `cP` and `cN` comments always uppercase.
@@ -105,6 +105,12 @@ Missing terminal periods, XREF notation. Valid ENSDF symbols: `|?`, `{+n}`, `{-n
 - Never strip a leading `|`: `|<` = ≤, `|>` = ≥, `|*` = ×. A leading `|` is never a stray artifact.
 - Comment lines need not be padded to 80 columns (human wraps later); still confirm the diff is comment-only (col 7 = `c`).
 - Values quoted in comments must name the specific gamma/level/multipolarity record and match it character-for-character — see `comment-quoted-values-check`.
+
+## Editing Discipline
+- Use minimal single-line anchors; multi-line anchors spanning wrapped comment text can re-wrap lines and silently drop words.
+- After each file's edits, prove the diff is comment-only (changed lines have `c`/`d` in col 7) and no text was lost (word-level compare against `git show HEAD:<file>`).
+- Find the top block by skipping lines whose col 7 is `c`/`d`; `P`/`N` records count as data records, and `cP`/`cN` stay uppercase.
+- Add a recurring class to `scan_editorial_review.py` CHECKS with a `--selftest` case instead of writing ad-hoc sweep scripts; run it one path at a time.
 
 ## Procedure
 1. Run `python .github/scripts/scan_editorial_review.py [folder_or_file] --skip adopted` — automated sweeps (isotope tokens, bare `I`, braced `{I}`, units, chemical formulas, dittography, `$`/`=` space, `10{-n}`, unicode, leaked tags, spelling). Review every flagged line; discard false positives manually.
