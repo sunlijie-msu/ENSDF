@@ -100,6 +100,9 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 
 ## Exclusions
 Missing terminal periods, XREF notation. Valid ENSDF symbols: `|?`, `{+n}`, `{-n}`, `|a`, `|b`, `|g`, `|d`, `|w`, `|*`, `|+`, `|-`.
+- Never strip a leading `|`: `|<` = ≤, `|>` = ≥, `|*` = ×. A leading `|` is never a stray artifact.
+- Comment lines need not be padded to 80 columns (human wraps later); still confirm the diff is comment-only (col 7 = `c`).
+- Values quoted in comments must name the specific gamma/level/multipolarity record and match it character-for-character — see `comment-quoted-values-check`.
 
 ## Procedure
 1. Run `python .github/scripts/scan_editorial_review.py [folder_or_file] --skip adopted` — automated sweeps (isotope tokens, bare `I`, braced `{I}`, units, chemical formulas, dittography, `$`/`=` space, `10{-n}`, unicode, leaked tags, spelling). Review every flagged line; discard false positives manually.
