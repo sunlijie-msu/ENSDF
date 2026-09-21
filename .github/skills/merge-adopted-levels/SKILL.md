@@ -8,7 +8,7 @@ ENSDF 80-column record/field definitions, structural rules, column positions, un
 1. Read each source dataset; confirm one physical level (E within DE, compatible Jπ); never group levels a dataset reports as distinct.
 2. Build the ownership map first: which dataset supplies E/DE, Jπ, T/DT, L, S/DS, each G-record, continuation and comment.
 3. Emit one L-record: single E/DE and Jπ, every field filled from its owner, blank what no dataset reported; comments in `E$`, `J$`, `T$`, `S$`, general order, one value and citation per source.
-4. `XREF` = union of grouped labels in alphabetical order, each label's `(energy)`, `(*)`, `(?)` notation preserved.
-5. Merge G-records in ascending energy, one per unique transition, flag multiply placed `*`/`&`/`@`, keep each `cG` and `FL=` with its transition.
+4. `XREF` = union of grouped labels in alphabetical order, each label's `(energy)`, `(*)`, `(?)` notation preserved; drop `(*)` when grouping removes the partner level, and keep `(*)` only if it stays on two or more levels.
+5. Merge G-records in ascending energy, one per unique transition, flag multiply placed `*`/`&`/`@`, keep each `cG` and `FL=` with its transition; where datasets disagree on intensity, keep the owner's RI in the field and cite the other dataset's RI in a `cG RI$other:` comment.
 6. Validate each edited line, then column calibration and gamma ordering; edit in place, never scripts.
 **Pitfall** - keep merges reversible (comment ownership) so a later split can restore each dataset's fields; every merged E/DE must trace to an owning dataset, and col-77 flags declared in the top general-comment section are global, not orphans. Inverse: `.github/skills/split-adopted-levels/SKILL.md`.
