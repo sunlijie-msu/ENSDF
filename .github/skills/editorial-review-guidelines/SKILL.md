@@ -14,6 +14,8 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 
 **Scope:** `c`, `cL`, `cG`, `cB`, `cE`, `cN`, `cP`, `cQ` comment records and continuation comment lines. Skip data-record fields (`L`, `G`, `E`, `B`, `DP`).
 **Action Policy:** Two options: (1) Check only. Report findings table. No edits or revisions. (2) Check and revise. Report findings table, then apply edits to comment lines.
+- Flag definitions are human-controlled: never reword a comment line that defines what a flag letter means.
+- General and per-reference comments are editable, but keep edits surgical and meaning-preserving.
 
 ## Error Classes
 

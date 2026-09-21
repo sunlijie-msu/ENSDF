@@ -48,7 +48,7 @@ every line stays exactly 80 characters after each edit — editor tooling can st
 
 ### What to Avoid
 
-- ❌ Changing flag/identifier definitions in the dataset-general (top-block) comment group (e.g. `E(M),RI(M)$`) — human-owned; text and symbol-format fixes are allowed, flag-scope changes must be reported instead
+- ❌ Changing flag/identifier definitions in the dataset-general (top-block) comment group (e.g. `E(A),RI(A)$`) — human-owned; text and symbol-format fixes are allowed, flag-scope changes must be reported instead
 - ❌ Redundant comments restating the default source
 - ❌ Individual cG E,RI$ for gammas that match the general comment default
 - ❌ Comments for deduced energies (no uncertainty = level difference)

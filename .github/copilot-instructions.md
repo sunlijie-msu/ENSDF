@@ -153,7 +153,7 @@ Each field begins at prescribed columns with fixed widths. Content must be left-
 
 ENSDF file modifications require human expert review. VS Code's inline diff viewer provides the most convenient mechanism for users to inspect, approve, or reject your changes before they are committed.
 
-#### Forbidden Patterns (Bypass Diff Viewer)
+#### Forbidden Patterns
 
 - `git restore` or `git checkout` for `.ens` file error recovery.
 - Any tooling, action, or script-based edits on .ens files that circumvents the VS Code diff interface or prevents human review before commit.
@@ -177,12 +177,13 @@ Editing tasks on `.ens` nuclear data files requires high-precision work, not typ
 
 ## Agentic Learning Loop
 
-After completing the required tasks, carefully reflect on how agent skills have been applied, along with any new insights or lessons learned that could be incorporated into Recommended Operating Procedures.
+After you have completed the required tasks, carefully reflect on how agent skills have been applied, along with any new insights or lessons learned that could be incorporated into Recommended Operating Procedures.
 
-- Update, refine, or revise relevant `SKILL.md` files as needed. Avoid rewriting the entire document; focus on essential patches.
-- Keep `SKILL.md` files well-structured, organized, and concise (<60 lines).
-- Ensure skills are generalizable for a range of similar tasks; Avoid overly specific or detailed content, numbers, or actions.
-- Avoid verbose repetition of ENSDF rules and conventions. Reference `.github\ENSDF-Agent.agent.md` relevant sections.
+Update, refine, or revise relevant `SKILL.md` files as needed. Avoid overcomplicating or rewriting the entire document; focus on essential patches. Avoid rewriting the Task Customization & Configuration section.
+
+Make sure that `SKILL.md` remains well-structured and organized, and concise (no more than 5 lines of incremental changes). It should be generalizable for future tasks, avoiding overly specific or detailed content, numbers, or actions.
+
+Avoid verbose repetition of ENSDF rules and conventions. Refer to `.github\agents\ENSDF-Agent.agent.md` for rules and conventions.
 
 
 ## Data Extraction and Entry Quality Assurance
