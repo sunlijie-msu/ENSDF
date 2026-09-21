@@ -159,6 +159,7 @@ If D(+Q) is firm, the corresponding converted form is M1(+E2). The same logic ap
 
 Even when a file-header general comment (e.g. `cG M,MR$`, `cG M(A)$`) covers all records, add a per-record `cG M$`/`cG MR$`/`cG M,MR$` unit naming the dataset and method
 whenever an M or MR value would otherwise be untraceable, e.g. an MR (δ) value whose record carries only a lettered flag definition.
+Conversely, bracketed `[...]` multipolarities (deduced from level-scheme only) need no provenance comment.
 
 ### Conversion Decision Table
 

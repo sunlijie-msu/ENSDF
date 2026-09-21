@@ -143,6 +143,12 @@ def _describe_comment(line: str) -> Optional[str]:
     return None
 
 
+def _is_flag_only_record(line: str) -> bool:
+    """A comment-style record holding no text after the flag (e.g. ' 34S  d'),
+    such as a deleted/hidden-message marker. These legitimately end before column 80."""
+    return _is_comment_record(line) and not line[7:].strip()
+
+
 def print_ruler(line: str, label: Optional[str] = None) -> bool:
     """Print ENSDF 80-column ruler with format specifications for validation."""
 
@@ -156,6 +162,7 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
     record_def = RECORD_DEFINITIONS.get(record_key)
     comment_hint = _describe_comment(line)
     is_comment = comment_hint is not None
+    flag_only = _is_flag_only_record(line)
 
     if record_def:
         print(f'Format ({record_def.label}):')
@@ -164,7 +171,10 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
         print(record_def.fields)
     if comment_hint:
         print(comment_hint)
-        print('Comment lines must still obey the 80-column rule and inherit the associated record scope.')
+        if flag_only:
+            print('Flag-only marker record: 80-column length is not enforced.')
+        else:
+            print('Comment lines must still obey the 80-column rule and inherit the associated record scope.')
     elif record_key and not record_def:
         print(f'Unknown record type "{record_key}" (Column 8).')
 
@@ -177,7 +187,7 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
     
     # Quick validation
     errors = []
-    if len(line) != 80:
+    if len(line) != 80 and not flag_only:
         errors.append(f'Length {len(line)} ≠ 80')
     if '\t' in line:
         errors.append('Tab character present. ENSDF records must use spaces only.')
