@@ -157,6 +157,9 @@ Assigning M1+E2 or (M1+E2) in the G-record M field:
 
 If D(+Q) is firm, the corresponding converted form is M1(+E2). The same logic applies to E1+M2.
 
+Even when a file-header general comment (e.g. `cG M,MR$`, `cG M(A)$`) covers all records, add a per-record `cG M$`/`cG MR$`/`cG M,MR$` unit naming the dataset and method
+whenever an M or MR value would otherwise be untraceable, e.g. an MR (δ) value whose record carries only a lettered flag definition.
+
 ### Conversion Decision Table
 
 | Individual G | Measurement                      | Adopted G | For G record M field     | For L record Jπ field          |
