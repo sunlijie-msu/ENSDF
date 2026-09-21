@@ -20,7 +20,9 @@ from typing import Callable, Dict, Optional
 
 # Column 7 holds a flag on comment-style records, which may be continued ('2c', '2d', ...):
 #   'c'/'C' -> comment record
-#   'd'/'D' -> hidden message record (kept in the file, ignored by the processing codes)
+#   'd'/'D' -> hidden message record (kept in the file, ignored by the processing codes);
+#              free-format note, so the 80-column rule is not enforced for it
+#              Free-format note; the 80-column rule is not enforced for these.
 # Any other character in Column 7 is invalid.
 COMMENT_FLAGS = {'c': 'comment', 'C': 'comment',
                  'd': 'hidden message', 'D': 'hidden message'}
@@ -143,10 +145,10 @@ def _describe_comment(line: str) -> Optional[str]:
     return None
 
 
-def _is_flag_only_record(line: str) -> bool:
-    """A comment-style record holding no text after the flag (e.g. ' 34S  d'),
-    such as a deleted/hidden-message marker. These legitimately end before column 80."""
-    return _is_comment_record(line) and not line[7:].strip()
+def _is_free_text_record(line: str) -> bool:
+    """'d'/'D' flagged records hold free-format notes, e.g. ' 34S  d' or
+    ' 58FE DB EAV,LOGFT$...', so the 80-column rule is not enforced for them."""
+    return len(line) > 6 and line[6] in {'d', 'D'}
 
 
 def print_ruler(line: str, label: Optional[str] = None) -> bool:
