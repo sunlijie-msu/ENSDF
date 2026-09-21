@@ -33,7 +33,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 | Intensities normalized to different references | Rescale to one reference, adopt its RI/DRI, move others to `RI$other` → `.github/skills/rescaling-gamma-ri/SKILL.md` |
 | Value from non-default dataset | Add cG E$ or cG RI$ stating source |
 | Other values exist but not used for averaging | Add "other: VALUE from DATASET" |
-| M or MR without a stated basis | Add `cG M$`/`cG M,MR$` with the measured basis (γ(θ), γγ(θ), ADO) and RUL, after confirming it in the raw `.mrg` G-record comments |
+| M or MR without a stated basis | Add `cG M$`/`cG M,MR$` with the measured basis (γ(θ), γγ(θ), ADO) after confirming it in the raw `.mrg` G-record comments; cite the RUL clause only when the adopted M field is firm — a tentative field (`D(+Q)`, `M1(+E2)`, `(M1+E2)`) leaves Q open, so M2 is never RUL ruled out |
 | Unit supplies both M and MR | Tag the unit `M,MR$`; per-gamma identifiers name every field their source supplies, so `M$` never carries mixing-ratio text |
 
 ### Comment Ordering
