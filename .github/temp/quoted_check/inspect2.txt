@@ -1,0 +1,856 @@
+====================================================================================================
+### ERRORS AT LINE 83  (1 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "2126.7" keV, G-record has "2127.498" keV || Context: 2126.7|g, E2 to 0+, g.s.
+--- context lines 78..82 ---
+   78| 34S   L 2127.558  15 2+               0.315 PS  12                             
+   79| 34S X L XREF=UACDEGHIJKLMNPRTVWXYZabcdefg                                      
+   80| 34S 2 L MOMM1=+1.0 2 (1979Za01,1989Ra17,2020StZV)                              
+   81| 34S 2 L MOME2=+0.04 3 (1980Ba40,1981Sp07,2021StZZ)                             
+   82| 34S 2 L BE2=0.0197 7                                                           
+--- comment block lines 83..84 ---
+   83| 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 2126.7|g, E2 to 0+, 
+   84| 34S 2cL g.s.                                                                   
+--- following G-records (level 83) ---
+  105| 34S   G 2127.498  20 100       E2                                              
+====================================================================================================
+### ERRORS AT LINE 115  (1 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "3303.1" keV, G-record has "3304.029" keV || Context: 3303.1|g, E2 to 0+, g.s.
+--- context lines 112..114 ---
+  112| 34S   L 3304.207  16 2+               122 FS    9                              
+  113| 34S X L XREF=UACDEGHIJLMNPRTVWYZabcdg                                          
+  114| 34S 2 L BE2=0.00256 29                                                         
+--- comment block lines 115..116 ---
+  115| 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 3303.1|g, E2 to 0+, 
+  116| 34S 2cL g.s.                                                                   
+--- following G-records (level 115) ---
+  127| 34S   G 1176.650  26 100.0  9  M1+E2    -0.16   2                              
+  135| 34S   G 3304.029  29 87.1   9  E2                                              
+====================================================================================================
+### ERRORS AT LINE 160  (2 findings)
+    - GAMMA_NOT_FOUND: No G-record within 1.0 keV of 1945.5 keV || Context: 1945.5|g, M1+E2 to 2+, 2127.0 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "2127.0" keV, L-record has "2127.558" keV || Context: 1945.5|g, M1+E2 to 2+, 2127.0 level.
+--- context lines 158..159 ---
+  158| 34S   L 4074.657  19 1+               17 FS     LT                             
+  159| 34S X L XREF=AB(4070?)CGLMN(4085)PRWYac(4090*)                                 
+--- comment block lines 160..161 ---
+  160| 34S  cL J$spin=1 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 1945.5|g, M1+E2 to  
+  161| 34S 2cL 2+, 2127.0 level.                                                      
+--- following G-records (level 160) ---
+  165| 34S   G 770.428   20 8.5    9  (M1(+E2))-1.3    15                             
+  169| 34S   G 1947.060  20 95     8  M1+E2    +1.3    +32-9                          
+  176| 34S   G 4072.9    11 100    9  (M1)                                            
+====================================================================================================
+### ERRORS AT LINE 185  (1 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "4113.7" keV, G-record has "4114.52" keV || Context: 4113.7|g, E2 to 0+, g.s. L=2 from 0+ in {+32}S(t,p).
+--- context lines 183..184 ---
+  183| 34S   L 4114.810  23 2+               72 FS     7                              
+  184| 34S X L XREF=ACGMNPRVWYZac(4090*)                                              
+--- comment block lines 185..186 ---
+  185| 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 4113.7|g, E2 to 0+, 
+  186| 34S 2cL g.s. L=2 from 0+ in {+32}S(t,p).                                       
+--- following G-records (level 185) ---
+  191| 34S   G 1987.19   3  69.8   34 M1+E2    -0.40   5                              
+  198| 34S   G 4114.52   4  100.0  22 E2                                              
+====================================================================================================
+### ERRORS AT LINE 233  (2 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "2560.5" keV, G-record has "2561.35" keV || Context: 2560.5|g, E2 to 2+, 2127.0 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "2127.0" keV, L-record has "2127.558" keV || Context: 2560.5|g, E2 to 2+, 2127.0 level.
+--- context lines 231..232 ---
+  231| 34S   L 4688.96   5  4+               88 FS     7                              
+  232| 34S X L XREF=ACEGHJMN(4690)PR(4688)V(4688)W(4689)YZ(4690)a(4690)c(4710)g       
+--- comment block lines 233..234 ---
+  233| 34S  cL J$spin=4 from p|g(|q) and |g|g(|q) in {+31}P(|a,p|g). |p=+ from        
+  234| 34S 2cL 2560.5|g, E2 to 2+, 2127.0 level.                                      
+--- following G-records (level 233) ---
+  240| 34S   G 1384.5    14 0.44   30 [E2]                                        M   
+  242| 34S   G 2561.35   6  100    9  E2                                              
+====================================================================================================
+### ERRORS AT LINE 252  (2 findings)
+    - GAMMA_NOT_FOUND: No G-record within 1.0 keV of 2750.9 keV || Context: 2750.9|g, M1+E2 to 2+, 2127.0 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "2127.0" keV, L-record has "2127.558" keV || Context: 2750.9|g, M1+E2 to 2+, 2127.0 level.
+--- context lines 250..251 ---
+  250| 34S   L 4876.839  25 3+               40 FS     15                             
+  251| 34S X L XREF=ACGHMPR(4874)a(4880)g                                             
+--- comment block lines 252..253 ---
+  252| 34S  cL J$spin=3 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 2750.9|g, M1+E2 to  
+  253| 34S 2cL 2+, 2127.0 level.                                                      
+--- following G-records (level 252) ---
+  257| 34S   G 1572.56   5  70     8  M1+E2    -0.09   4                              
+  265| 34S   G 2749.24   5  100    8  M1+E2    -0.11   3                          P   
+====================================================================================================
+### ERRORS AT LINE 275  (1 findings)
+    - GAMMA_NOT_FOUND: No G-record within 1.0 keV of 4890.7 keV || Context: 4890.7|g, E2 to 0+, g.s.
+--- context lines 273..274 ---
+  273| 34S   L 4889.752  24 2+               36 FS     10                             
+  274| 34S X L XREF=ACGMNPRW(4882)Z(4890)ac(4900)                                     
+--- comment block lines 275..276 ---
+  275| 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 4890.7|g, E2 to 0+, 
+  276| 34S 2cL g.s.                                                                   
+--- following G-records (level 275) ---
+  279| 34S   G 1585.510  20 96     24 [M1,E2]                                     P   
+  282| 34S   G 2762.10   8  71     LT [M1,E2]                                     P   
+  285| 34S   G 4889.30   8  100    24 E2                                          P   
+====================================================================================================
+### ERRORS AT LINE 297  (2 findings)
+    - GAMMA_NOT_FOUND: No G-record within 1.0 keV of 3191.6 keV || Context: 3191.6|g, M1+E2 to 2+, 2127.0 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "2127.0" keV, L-record has "2127.558" keV || Context: 3191.6|g, M1+E2 to 2+, 2127.0 level.
+--- context lines 295..296 ---
+  295| 34S   L 5322.509  30 2+               17 FS     7                              
+  296| 34S X L XREF=GMN(5320)PRW(5321)Z(5320)c(5360*)                                 
+--- comment block lines 297..298 ---
+  297| 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 3191.6|g, M1+E2 to  
+  298| 34S 2cL 2+, 2127.0 level.                                                      
+--- following G-records (level 297) ---
+  301| 34S   G 698.18    13 1.37   19                                                 
+  302| 34S   G 1247.92   6  8.0    10                                                 
+  303| 34S   G 3194.74   5  100    11 M1+E2    -0.17   6                              
+====================================================================================================
+### ERRORS AT LINE 308  (2 findings)
+    - GAMMA_NOT_FOUND: No G-record within 1.0 keV of 3255 keV || Context: 3255|g, M1+E2 to 2+, 2127.0 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "2127.0" keV, L-record has "2127.558" keV || Context: 3255|g, M1+E2 to 2+, 2127.0 level.
+--- context lines 306..307 ---
+  306| 34S   L 5380.986  32 1+               49 FS     LE                             
+  307| 34S X L XREF=B(5380?)GMNPRWac(5360*)                                           
+--- comment block lines 308..309 ---
+  308| 34S  cL J$spin=1 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 3255|g, M1+E2 to 2+,
+  309| 34S 2cL 2127.0 level.                                                          
+--- following G-records (level 308) ---
+  311| 34S   G 1266.11   5  17.4   19 [M1,E2]                                         
+  312| 34S   G 2076.89   8  39     4  [M1,E2]                                         
+  313| 34S   G 3253.21   6  100    11 M1+E2    -1.1    10                             
+  316| 34S   G 5380.59   9  53     5  (M1)                                            
+====================================================================================================
+### ERRORS AT LINE 322  (2 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "2376" keV, G-record has "2375.657" keV || Context: 2376|g, M1+E2 to 2+, 3303.2 level. Discrepancy: L=1 from 3/2+ for 5683 {I7} level in {+33}S(d,p) and the DWBA fit of |s(|q) seems acceptable (1971Va21, 1972Cr08).
+    - LEVEL_NOT_FOUND: No L-record within 1.0 keV of 3303.2 keV || Context: 2376|g, M1+E2 to 2+, 3303.2 level. Discrepancy: L=1 from 3/2+ for 5683 {I7} level in {+33}S(d,p) and the DWBA fit of |s(|q) seems acceptable (1971Va21, 1972Cr08).
+--- context lines 320..321 ---
+  320| 34S   L 5679.925  20 2+               263 FS    21                             
+  321| 34S X L XREF=HLMPR(5683)W(5684)                                                
+--- comment block lines 322..325 ---
+  322| 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 2376|g, M1+E2 to 2+,
+  323| 34S 2cL 3303.2 level. Discrepancy: L=1 from 3/2+ for 5683 {I7} level in        
+  324| 34S 3cL {+33}S(d,p) and the DWBA fit of |s(|q) seems acceptable (1971Va21,     
+  325| 34S 4cL 1972Cr08).                                                             
+--- following G-records (level 322) ---
+  327| 34S   G 789.1     6  1.50   27 [M1,E2]                                         
+  328| 34S   G 803.103   27 4.4    4  [M1,E2]                                         
+  329| 34S   G 1055.491  20 26.9   27 [E1]                                            
+  333| 34S   G 1564.8    5  3.5    8  [M1,E2]                                         
+  334| 34S   G 2375.657  20 100    9  M1+E2    -0.4    LT                             
+  341| 34S   G 3552.08   6  66.7   7  D+Q      -0.47   +7-11                          
+====================================================================================================
+### ERRORS AT LINE 349  (2 findings)
+    - GAMMA_NOT_FOUND: No G-record within 1.0 keV of 1000 keV || Context: 1000|g, E1 to 4+, 4687.6 level.
+    - LEVEL_NOT_FOUND: No L-record within 1.0 keV of 4687.6 keV || Context: 1000|g, E1 to 4+, 4687.6 level.
+--- context lines 347..348 ---
+  347| 34S   L 5690.61   27 5-               36.9 PS   17                             
+  348| 34S X L XREF=EHJMN(5679)O(5690)RWZ(5690)g                                      
+--- comment block lines 349..350 ---
+  349| 34S  cL J$spin=5 from |g(|q) and |g(|q)(POL) in {+31}P(|a,p|g). |p=- from      
+  350| 34S 2cL 1000|g, E1 to 4+, 4687.6 level.                                        
+--- following G-records (level 349) ---
+  356| 34S   G 1001.5    5  100    4  E1                                          P   
+  363| 34S   G 1066.2    5  88     8  E2                                              
+  370| 34S   G 3562.7    6  2.9    12 [E3]                                        M   
+====================================================================================================
+### ERRORS AT LINE 386  (1 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "5997" keV, G-record has "5997.30" keV || Context: 5997|g, E2 to 0+, g.s. L=2 from 0+ in {+32}S(t,p).
+--- context lines 384..385 ---
+  384| 34S   L 5998.10   8  2+               6.9 FS    LT                             
+  385| 34S X L XREF=MN(6008)PRWZ                                                      
+--- comment block lines 386..387 ---
+  386| 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 5997|g, E2 to 0+,   
+  387| 34S 2cL g.s. L=2 from 0+ in {+32}S(t,p).                                       
+--- following G-records (level 386) ---
+  389| 34S   G 1121.33   9  57     8  [M1,E2]                                         
+  390| 34S   G 1922.92   22 100    18 [M1,E2]                                         
+  392| 34S   G 3870.51   31 92     13 [M1,E2]                                         
+  394| 34S   G 5997.30   31 56     10 E2                                              
+====================================================================================================
+### ERRORS AT LINE 407  (2 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "2864" keV, G-record has "2864.56" keV || Context: 2864|g, M1+E2 to 2+, 3303.2 level. |p=- from L=1+3 from 3/2+ in {+33}S(d,p) and L=(3) from 0+ in {+32}S(t,p).
+    - LEVEL_NOT_FOUND: No L-record within 1.0 keV of 3303.2 keV || Context: 2864|g, M1+E2 to 2+, 3303.2 level. |p=- from L=1+3 from 3/2+ in {+33}S(d,p) and L=(3) from 0+ in {+32}S(t,p).
+--- context lines 405..406 ---
+  405| 34S   L 6168.857  29 3                9.0 FS    LT                             
+  406| 34S X L XREF=MNPRW(6170)Z(6130*)                                               
+--- comment block lines 407..409 ---
+  407| 34S  cL J$spin=3 from p|g(|q) in {+31}P(|a,p|g). Parity has discrepancy: |p=+  
+  408| 34S 2cL from the strongest branch 2864|g, M1+E2 to 2+, 3303.2 level. |p=- from 
+  409| 34S 3cL L=1+3 from 3/2+ in {+33}S(d,p) and L=(3) from 0+ in {+32}S(t,p).       
+--- following G-records (level 407) ---
+  411| 34S   G 846.1     13 2.6    17                                                 
+  412| 34S   G 1479.73   15 2.41   30 D+Q      +0.04   +6-3                           
+  415| 34S   G 1544.41   10 25.9   LT                                             &   
+  416| 34S   G 2053.94   14 5.4    8                                                  
+  417| 34S   G 2864.56   4  100    10 M1+E2    -0.23   7                              
+  421| 34S   G 4040.63   29 5.0    7  D+Q      -0.43   16                             
+====================================================================================================
+### ERRORS AT LINE 427  (5 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "1375" keV, G-record has "1374.43" keV || Context: 1375|g, M1+E2 to 3+, 4875.2 level. L=2 from 3/2+ for 6220 {I50} level in {+35}Cl(d,{+3}He). Discrepancy:
+    - LEVEL_NOT_FOUND: No L-record within 1.0 keV of 4875.2 keV || Context: 1375|g, M1+E2 to 3+, 4875.2 level. L=2 from 3/2+ for 6220 {I50} level in {+35}Cl(d,{+3}He). Discrepancy:
+    - LEVEL_ENERGY_MISMATCH: Quoted "5679" keV, L-record has "5679.925" keV || Context: 572.0|g, D, |DJ=1 to 2+, 5679 level in {+24}Mg({+16}O,|a2p|g). |p=- L=3 from 3/2+ for 6254 {I8} level in {+33}S(d,p).
+    - LEVEL_ENERGY_MISMATCH: Quoted "7790.2" keV, L-record has "7790.8" keV || Context: 1539.7|g, E2, |DJ=2 from the 6-, 7790.2 level.
+    - JPI_MISMATCH: Quoted J-pi "the 6-", L-record J field is "6-" || Context: 1539.7|g, E2, |DJ=2 from the 6-, 7790.2 level.
+--- context lines 425..426 ---
+  425| 34S   L 6251.72   7  4+               0.42 PS   +49-21                         
+  426| 34S X L XREF=HM(6251)N(6256)PRW(6248)a(6250)c(6220)g                           
+--- comment block lines 427..431 ---
+  427| 34S  cL J$spin=4 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 1375|g, M1+E2 to 3+,
+  428| 34S 2cL 4875.2 level. L=2 from 3/2+ for 6220 {I50} level in {+35}Cl(d,{+3}He). 
+  429| 34S 3cL Discrepancy: 572.0|g, D, |DJ=1 to 2+, 5679 level in                    
+  430| 34S 4cL {+24}Mg({+16}O,|a2p|g). |p=- L=3 from 3/2+ for 6254 {I8} level in      
+  431| 34S 5cL {+33}S(d,p). 1539.7|g, E2, |DJ=2 from the 6-, 7790.2 level.            
+--- following G-records (level 427) ---
+  435| 34S   G 572.0     1  28     14 D                                           M   
+  439| 34S   G 1374.43   23 46     10 M1+E2    -3.7    +7-26                          
+  443| 34S   G 1562.4    5  100    25 [M1,E2]                                         
+  448| 34S   G 1626.7    5  45     10                                             M   
+====================================================================================================
+### ERRORS AT LINE 463  (2 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "1732" keV, G-record has "1732.39" keV || Context: 1732|g to 4+, 4687.6 level would be ruled out by RUL. |p=- from L=3 from 3/2+ in {+33}S(d,p).
+    - LEVEL_NOT_FOUND: No L-record within 1.0 keV of 4687.6 keV || Context: 1732|g to 4+, 4687.6 level would be ruled out by RUL. |p=- from L=3 from 3/2+ in {+33}S(d,p).
+--- context lines 461..462 ---
+  461| 34S   L 6421.34   8  4-               6.9 FS    LT                             
+  462| 34S X L XREF=MN(6423*)PRW(6414*)                                               
+--- comment block lines 463..465 ---
+  463| 34S  cL J$spin=2,4 from p|g(|q) in {+31}P(|a,p|g). Spin=2 is ruled out because 
+  464| 34S 2cL either E2 or M2 for 1732|g to 4+, 4687.6 level would be ruled out by   
+  465| 34S 3cL RUL. |p=- from L=3 from 3/2+ in {+33}S(d,p).                           
+--- following G-records (level 463) ---
+  467| 34S   G 1544.41   10 100    8  (E1)                                        P   
+  470| 34S   G 1732.39   11 61     8  (E1)                                        P   
+====================================================================================================
+### ERRORS AT LINE 475  (2 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "4688.97" keV, L-record has "4688.96" keV || Context: 1739.32|g to 4+, 4688.97 level and
+    - LEVEL_ENERGY_MISMATCH: Quoted "4074.666" keV, L-record has "4074.657" keV || Context: 2353.06|g to 1+, 4074.666 level.
+--- context lines 473..474 ---
+  473| 34S   L 6428.12   8  (2+,3+)                                                   
+  474| 34S X L XREF=N(6423*)PW(6414*)                                                 
+--- comment block lines 475..475 ---
+  475| 34S  cL J$1739.32|g to 4+, 4688.97 level and 2353.06|g to 1+, 4074.666 level.  
+--- following G-records (level 475) ---
+  476| 34S   G 306.63    16 19     4                                                  
+  477| 34S   G 1739.32   9  100    13                                                 
+  478| 34S   G 2353.06   21 48     8                                                  
+====================================================================================================
+### ERRORS AT LINE 512  (2 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "929" keV, G-record has "929.436" keV || Context: 929|g to 1-, 5575 level. |p=- from L=1 from 3/2+ in {+33}S(d,p).
+    - LEVEL_NOT_FOUND: No L-record within 1.0 keV of 5575 keV || Context: 929|g to 1-, 5575 level. |p=- from L=1 from 3/2+ in {+33}S(d,p).
+--- context lines 510..511 ---
+  510| 34S   L 6685.328  30 (0:3)-                                                    
+  511| 34S X L XREF=N(6690)PR(6690)W                                                  
+--- comment block lines 512..512 ---
+  512| 34S  cL J$929|g to 1-, 5575 level. |p=- from L=1 from 3/2+ in {+33}S(d,p).     
+--- following G-records (level 512) ---
+  513| 34S   G 929.436   21 100                                                       
+====================================================================================================
+### ERRORS AT LINE 519  (4 findings)
+    - GAMMA_NOT_FOUND: No G-record within 1.0 keV of 4604 keV || Context: 4604|g to 2+, 2127.0 level and
+    - LEVEL_ENERGY_MISMATCH: Quoted "2127.0" keV, L-record has "2127.558" keV || Context: 4604|g to 2+, 2127.0 level and
+    - GAMMA_NOT_FOUND: No G-record within 1.0 keV of 2043 keV || Context: 2043|g to 4+, 4687.6 level.
+    - LEVEL_NOT_FOUND: No L-record within 1.0 keV of 4687.6 keV || Context: 2043|g to 4+, 4687.6 level.
+--- context lines 514..517 ---
+  514| 34S   L 6742      15 2(+),4(+)        6.9 FS    LT                             
+  515| 34S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
+  516| 34S X L XREF=MNW                                                               
+  517| 34S  cL E$weighted average of 6743 {I15} from {+32}S(t,p) and 6738 {I25} from  
+--- comment block lines 518..520 ---
+  518| 34S 2cL {+34}S(p,p). Other: 6731 from {+31}P(|a,p|g).                          
+  519| 34S  cL J$spin=2,4 from p|g(|q) in {+31}P(|a,p|g). |p=(+) from 4604|g to 2+,   
+  520| 34S 2cL 2127.0 level and 2043|g to 4+, 4687.6 level.                           
+--- following G-records (level 519) ---
+  522| 34S   G 1852         9.1    91 [M1,E2]                                     P   
+  523| 34S   G 2053         36     13 [E2]                                        P   
+  524| 34S   G 3438         36     13 [M1,E2]                                     P   
+  525| 34S   G 4614         100    9  [M1,E2]                                     P   
+====================================================================================================
+### ERRORS AT LINE 547  (4 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "2176" keV, G-record has "2175" keV || Context: 2176|g to 4+, 4687.6 level and
+    - LEVEL_NOT_FOUND: No L-record within 1.0 keV of 4687.6 keV || Context: 2176|g to 4+, 4687.6 level and
+    - GAMMA_ENERGY_MISMATCH: Quoted "4737" keV, G-record has "4736" keV || Context: 4737|g to 2+, 2127.0 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "2127.0" keV, L-record has "2127.558" keV || Context: 4737|g to 2+, 2127.0 level.
+--- context lines 542..545 ---
+  542| 34S   L 6864      1  2(+),4(+)        28 FS     7                          P   
+  543| 34S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
+  544| 34S X L XREF=MN(6869)W(6860)                                                   
+  545| 34S  cL E$weighted average of 6864 {I1} from (|a,p|g), 6869 {I15} from (t,p),  
+--- comment block lines 546..548 ---
+  546| 34S 2cL and 6860 {I14} from {+34}S(p,p),(p,p'),(pol p,p').                     
+  547| 34S  cL J$spin=2,4 from p|g(|q) in {+31}P(|a,p|g) (1972Jo10). |p=(+) from      
+  548| 34S 2cL 2176|g to 4+, 4687.6 level and 4737|g to 2+, 2127.0 level.             
+--- following G-records (level 547) ---
+  552| 34S   G 2175                                                                   
+  553| 34S   G 4736                                                                   
+====================================================================================================
+### ERRORS AT LINE 603  (1 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "4074.666" keV, L-record has "4074.657" keV || Context: 3089.53|g to 1+, 4074.666 level.
+--- context lines 601..602 ---
+  601| 34S   L 7164.46   17 (0:3+)                                                    
+  602| 34S X L XREF=Pc(7190*)                                                         
+--- comment block lines 603..603 ---
+  603| 34S  cL J$3089.53|g to 1+, 4074.666 level.                                     
+--- following G-records (level 603) ---
+  604| 34S   G 3089.53   26 100    20                                                 
+  605| 34S   G 5036.4    7  45     11                                                 
+====================================================================================================
+### ERRORS AT LINE 608  (1 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "7219" keV, G-record has "7218.48" keV || Context: 7219|g, E2 to 0+, g.s.
+--- context lines 606..607 ---
+  606| 34S   L 7219.28   6  2+               12 FS     LT                             
+  607| 34S X L XREF=MPSc(7190*)                                                       
+--- comment block lines 608..609 ---
+  608| 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 7219|g, E2 to 0+,   
+  609| 34S 2cL g.s.                                                                   
+--- following G-records (level 608) ---
+  612| 34S   G 2328.8    5  5.2    15                                                 
+  613| 34S   G 2530.25   10 18.8   26                                                 
+  614| 34S   G 5091.31                                                                
+  615| 34S   G 7218.48   13 100    10 E2                                              
+====================================================================================================
+### ERRORS AT LINE 620  (2 findings)
+    - GAMMA_NOT_FOUND: No G-record within 1.0 keV of 1560 keV || Context: 1560|g to 5-, 5688 level in {+31}P(|a,p|g).
+    - LEVEL_NOT_FOUND: No L-record within 1.0 keV of 5688 keV || Context: 1560|g to 5-, 5688 level in {+31}P(|a,p|g).
+--- context lines 617..619 ---
+  617| 34S   L 7248      2  (4)              14 FS     7                          P   
+  618| 34S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
+  619| 34S X L XREF=MO(7240*)W(7248*)                                                 
+--- comment block lines 620..621 ---
+  620| 34S  cL J$spin=(2,4) from p|g(|q) for 7248 {I2} level in {+31}P(|a,p|g). 1560|g
+  621| 34S 2cL to 5-, 5688 level in {+31}P(|a,p|g).                                   
+--- following G-records (level 620) ---
+  623| 34S   G 1557         100                                                   P   
+====================================================================================================
+### ERRORS AT LINE 626  (1 findings)
+    - LEVEL_NOT_FOUND: No L-record within 1.0 keV of 4687.6 keV || Context: 2558.82|g to 4+, 4687.6 level in {+33}S(n,|g) E=thermal.
+--- context lines 624..625 ---
+  624| 34S   L 7248.04   11 (2+,3-)                                                   
+  625| 34S X L XREF=N(7245)O(7240*)PW(7248*)c(7190*)                                  
+--- comment block lines 626..627 ---
+  626| 34S  cL J$L=(2,3) from 0+ in {+32}S(t,p). 2558.82|g to 4+, 4687.6 level in     
+  627| 34S 2cL {+33}S(n,|g) E=thermal.                                                
+--- following G-records (level 626) ---
+  628| 34S   G 2558.82   13 100                                                       
+====================================================================================================
+### ERRORS AT LINE 631  (2 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "3916" keV, L-record has "3916.40" keV || Context: 3451.5|g to 0+, 3916 level and
+    - LEVEL_ENERGY_MISMATCH: Quoted "4877" keV, L-record has "4876.839" keV || Context: 2490.6|g to 3+, 4877 level in {+33}S(n,|g) E=thermal.
+--- context lines 629..630 ---
+  629| 34S   L 7367.42   10 (1+,2+)                                                   
+  630| 34S X L XREF=PR(7398*)W(7360?)                                                 
+--- comment block lines 631..632 ---
+  631| 34S  cL J$3451.5|g to 0+, 3916 level and 2490.6|g to 3+, 4877 level in         
+  632| 34S 2cL {+33}S(n,|g) E=thermal.                                                
+--- following G-records (level 631) ---
+  633| 34S   G 2490.6    13 95     25                                                 
+  634| 34S   G 3451.5    9  54     16                                                 
+  635| 34S   G 5239.8    4  100    14                                                 
+====================================================================================================
+### ERRORS AT LINE 645  (3 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "4075" keV, L-record has "4074.657" keV || Context: 3392.86|g to 1+, 4075
+    - LEVEL_ENERGY_MISMATCH: Quoted "5998" keV, L-record has "5998.10" keV || Context: 1469.67|g to 2+, 5998, and
+    - LEVEL_ENERGY_MISMATCH: Quoted "6479" keV, L-record has "6478.765" keV || Context: 989.1|g to 1-, 6479.
+--- context lines 643..644 ---
+  643| 34S   L 7467.73   10 (0+,1,2)                                                  
+  644| 34S X L XREF=NPW                                                               
+--- comment block lines 645..646 ---
+  645| 34S  cL J$3392.86|g to 1+, 4075, 1469.67|g to 2+, 5998, and 989.1|g to 1-,     
+  646| 34S 2cL 6479.                                                                  
+--- following G-records (level 645) ---
+  647| 34S   G 989.1     3  5.0    15                                             &   
+  648| 34S   G 1469.67   24 14.7   26                                                 
+  649| 34S   G 3392.86   24 100    12                                                 
+====================================================================================================
+### ERRORS AT LINE 652  (2 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "3304.212" keV, L-record has "3304.207" keV || Context: 4248.28|g to 2+, 3304.212 level and
+    - LEVEL_ENERGY_MISMATCH: Quoted "6342.52" keV, L-record has "6342.51" keV || Context: 1210.04|g to 1-, 6342.52 level.
+--- context lines 650..651 ---
+  650| 34S   L 7552.69   8  (0+:3-)                                                   
+  651| 34S X L XREF=NPRW                                                              
+--- comment block lines 652..652 ---
+  652| 34S  cL J$4248.28|g to 2+, 3304.212 level and 1210.04|g to 1-, 6342.52 level.  
+--- following G-records (level 652) ---
+  653| 34S   G 1210.04   13 10.2   14                                                 
+  654| 34S   G 2230.14   14 50     6                                                  
+  655| 34S   G 4248.28   21 100    11                                                 
+====================================================================================================
+### ERRORS AT LINE 671  (1 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "2128" keV, L-record has "2127.558" keV || Context: 5602.78|g to 2+, 2128 level.
+--- context lines 669..670 ---
+  669| 34S   L 7730.79   15 (1-,2-,3-)                                                
+  670| 34S X L XREF=N(7714)PRW(7732*)                                                 
+--- comment block lines 671..671 ---
+  671| 34S  cL J$L=(1+3) from 3/2+ in {+33}S(d,p). 5602.78|g to 2+, 2128 level.       
+--- following G-records (level 671) ---
+  672| 34S   G 5602.78   15 100                                                       
+====================================================================================================
+### ERRORS AT LINE 689  (3 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "5691" keV, L-record has "5690.61" keV || Context: 2099.6|g, M1+E2, |DJ=0,1 to 5-, 5691 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "6251.22" keV, L-record has "6251.72" keV || Context: 1539.7|g, E2, |DJ=2 to 4-, 6251.22 level.
+    - JPI_MISMATCH: Quoted J-pi "4-", L-record J field is "4+" || Context: 1539.7|g, E2, |DJ=2 to 4-, 6251.22 level.
+--- context lines 687..688 ---
+  687| 34S   L 7790.8    4  6-               97 FS     24                             
+  688| 34S X L XREF=HMg                                                               
+--- comment block lines 689..690 ---
+  689| 34S  cL J$2099.6|g, M1+E2, |DJ=0,1 to 5-, 5691 level. 1539.7|g, E2, |DJ=2 to   
+  690| 34S 2cL 4-, 6251.22 level.                                                     
+--- following G-records (level 689) ---
+  694| 34S   G 1539.7    5  19     4  E2                                          M   
+  700| 34S   G 2099.6    8  100    11 M1+E2    -1.8    1                          M   
+====================================================================================================
+### ERRORS AT LINE 720  (2 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "7110" keV, L-record has "7110.447" keV || Context: 925.79|g to 3-, 7110 level
+    - GAMMA_ENERGY_MISMATCH: Quoted "8036.31" keV, G-record has "8036.6" keV || Context: 8036.31|g to 0+, g.s.
+--- context lines 718..719 ---
+  718| 34S   L 8036.30   14 (1-,2+)                                                   
+  719| 34S X L XREF=PW(8034*)                                                         
+--- comment block lines 720..720 ---
+  720| 34S  cL J$925.79|g to 3-, 7110 level, 8036.31|g to 0+, g.s.                    
+--- following G-records (level 720) ---
+  721| 34S   G 925.79    14 95     12                                                 
+  722| 34S   G 8036.6    7  100    22                                                 
+====================================================================================================
+### ERRORS AT LINE 729  (1 findings)
+    - GAMMA_NOT_FOUND: No G-record within 1.0 keV of 8138.08 keV || Context: 8138.08|g to 0+, g.s.
+--- context lines 727..728 ---
+  727| 34S   L 8138.08   7  (1)-                                                      
+  728| 34S X L XREF=PR(8142)                                                          
+--- comment block lines 729..729 ---
+  729| 34S  cL J$L=1 from 3/2+ in {+33}S(d,p). 8138.08|g to 0+, g.s.                  
+--- following G-records (level 729) ---
+  730| 34S   G 1795.3    3  14     4                                              &   
+  731| 34S   G 2290.26   15 19     4                                                  
+  732| 34S   G 6010.3    3  36     6                                                  
+  733| 34S   G 8136.98   17 100    12                                                 
+====================================================================================================
+### ERRORS AT LINE 736  (1 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "8173" keV, G-record has "8173.8" keV || Context: 8173|g to 0+, g.s.
+--- context lines 734..735 ---
+  734| 34S   L 8174.9    4  (1,2+)                                                    
+  735| 34S X L XREF=P                                                                 
+--- comment block lines 736..736 ---
+  736| 34S  cL J$8173|g to 0+, g.s.                                                   
+--- following G-records (level 736) ---
+  737| 34S   G 2945.8    10 1.9E2  6                                              &   
+  738| 34S   G 8173.8    9  100    20                                                 
+====================================================================================================
+### ERRORS AT LINE 748  (4 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "6077" keV, G-record has "6077.27" keV || Context: 6077|g to 2+, 2128 level
+    - LEVEL_ENERGY_MISMATCH: Quoted "2128" keV, L-record has "2127.558" keV || Context: 6077|g to 2+, 2128 level
+    - GAMMA_ENERGY_MISMATCH: Quoted "3581" keV, G-record has "3581.2" keV || Context: 3581|g to 3-, 4624 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "4624" keV, L-record has "4624.401" keV || Context: 3581|g to 3-, 4624 level.
+--- context lines 746..747 ---
+  746| 34S   L 8205.40   7  (1-:4+)                                                   
+  747| 34S X L XREF=P                                                                 
+--- comment block lines 748..748 ---
+  748| 34S  cL J$6077|g to 2+, 2128 level, 3581|g to 3-, 4624 level.                  
+--- following G-records (level 748) ---
+  749| 34S   G 3581.2    4  31     6                                                  
+  750| 34S   G 6077.27   12 100    11                                                 
+====================================================================================================
+### ERRORS AT LINE 756  (2 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "6166" keV, G-record has "6166.24" keV || Context: 6166|g to 2+, 2128 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "2128" keV, L-record has "2127.558" keV || Context: 6166|g to 2+, 2128 level.
+--- context lines 754..755 ---
+  754| 34S   L 8294.39   9  4(+)             28 FS     LT                             
+  755| 34S X L XREF=M(8293)N(8293)PR(8299)W(8296)                                     
+--- comment block lines 756..756 ---
+  756| 34S  cL J$spin=4 from p|g(|q) in {+31}P(|a,p|g). 6166|g to 2+, 2128 level.     
+--- following G-records (level 756) ---
+  758| 34S   G 1951.77   19 34     7  [E3]                                            
+  759| 34S   G 6166.24   13 100    11 [E2]                                            
+====================================================================================================
+### ERRORS AT LINE 762  (5 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "2680" keV, G-record has "2680.5" keV || Context: 2680|g, E2, |DJ=2 to 5-, 5691 level
+    - LEVEL_ENERGY_MISMATCH: Quoted "5691" keV, L-record has "5690.61" keV || Context: 2680|g, E2, |DJ=2 to 5-, 5691 level
+    - GAMMA_ENERGY_MISMATCH: Quoted "580" keV, G-record has "580.3" keV || Context: 580|g, D, |DJ=1 to 6-, 7791 level. Spin=(5,7) from p|g(|q) in {+31}P(|a,p|g).
+    - MULTIPOLARITY_MISMATCH: Quoted "D", G-record M field is "(M1)" || Context: 580|g, D, |DJ=1 to 6-, 7791 level. Spin=(5,7) from p|g(|q) in {+31}P(|a,p|g).
+    - LEVEL_ENERGY_MISMATCH: Quoted "7791" keV, L-record has "7790.8" keV || Context: 580|g, D, |DJ=1 to 6-, 7791 level. Spin=(5,7) from p|g(|q) in {+31}P(|a,p|g).
+--- context lines 760..761 ---
+  760| 34S   L 8371.0    4  7-               83 FS     14                             
+  761| 34S X L XREF=HMg                                                               
+--- comment block lines 762..763 ---
+  762| 34S  cL J$2680|g, E2, |DJ=2 to 5-, 5691 level, 580|g, D, |DJ=1 to 6-, 7791     
+  763| 34S 2cL level. Spin=(5,7) from p|g(|q) in {+31}P(|a,p|g).                      
+--- following G-records (level 762) ---
+  767| 34S   G 580.3     6  2.0    10 (M1)                                        M   
+  770| 34S   G 2680.5    6  100    10 E2                                          M   
+====================================================================================================
+### ERRORS AT LINE 787  (3 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "2812" keV, G-record has "2812.7" keV || Context: 2812|g, D, |DJ=1 to 5-, 5691 level. 6+ from band assignment in {+24}Mg({+16}O,|a2p|g).
+    - MULTIPOLARITY_MISMATCH: Quoted "D", G-record M field is "(E1)" || Context: 2812|g, D, |DJ=1 to 5-, 5691 level. 6+ from band assignment in {+24}Mg({+16}O,|a2p|g).
+    - LEVEL_ENERGY_MISMATCH: Quoted "5691" keV, L-record has "5690.61" keV || Context: 2812|g, D, |DJ=1 to 5-, 5691 level. 6+ from band assignment in {+24}Mg({+16}O,|a2p|g).
+--- context lines 785..786 ---
+  785| 34S   L 8503.7    5  6(+)             28 FS     7                              
+  786| 34S X L XREF=HM                                                                
+--- comment block lines 787..788 ---
+  787| 34S  cL J$2812|g, D, |DJ=1 to 5-, 5691 level. 6+ from band assignment in       
+  788| 34S 2cL {+24}Mg({+16}O,|a2p|g).                                                
+--- following G-records (level 787) ---
+  790| 34S   G 2812.7    9  100    18 (E1)                                        M   
+  793| 34S   G 3813.6    7  51     11 [E2]                                        M   
+====================================================================================================
+### ERRORS AT LINE 807  (3 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "4074.666" keV, L-record has "4074.657" keV || Context: 4540.68|g to 1+, 4074.666 level and
+    - LEVEL_ENERGY_MISMATCH: Quoted "6251.22" keV, L-record has "6251.72" keV || Context: 2363.97|g to 4-, 6251.22 level.
+    - JPI_MISMATCH: Quoted J-pi "4-", L-record J field is "4+" || Context: 2363.97|g to 4-, 6251.22 level.
+--- context lines 805..806 ---
+  805| 34S   L 8615.74   4  (2-,3+)                                                   
+  806| 34S X L XREF=PR(8622)W                                                         
+--- comment block lines 807..807 ---
+  807| 34S  cL J$4540.68|g to 1+, 4074.666 level and 2363.97|g to 4-, 6251.22 level.  
+--- following G-records (level 807) ---
+  808| 34S   G 2363.97   8  58     31                                                 
+  809| 34S   G 3738.69   17 33     5                                                  
+  810| 34S   G 3990.7    7  8.1    20                                                 
+  811| 34S   G 4540.68   15 47     6                                                  
+  812| 34S   G 5311.10   15 22.2   28                                                 
+  813| 34S   G 6487.48   6  100    11                                                 
+====================================================================================================
+### ERRORS AT LINE 819  (1 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "8656" keV, G-record has "8655" keV || Context: 8656|g, M1 to 0+, g.s.
+--- context lines 814..817 ---
+  814| 34S   L 8656      5  1+                                                        
+  815| 34S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
+  816| 34S X L XREF=SW                                                                
+  817| 34S  cL E$weighted average of 8657 {I7} from {+34}S(|g,|g') and 8656 {I5} from 
+--- comment block lines 818..820 ---
+  818| 34S 2cL {+34}S(p,p)                                                            
+  819| 34S  cL J$spin=1 from |g(|q) in {+34}S(|g,|g'),(pol |g,|g'). |p=+ from 8656|g, 
+  820| 34S 2cL M1 to 0+, g.s.                                                         
+--- following G-records (level 819) ---
+  822| 34S   G 8655         100       M1                                              
+====================================================================================================
+### ERRORS AT LINE 828  (3 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "2127.564" keV, L-record has "2127.558" keV || Context: 6573.6|g to 2+, 2127.564 level
+    - LEVEL_ENERGY_MISMATCH: Quoted "8185" keV, L-record has "8185.45" keV || Context: 516.86|g to 1+, 8185 level, and
+    - LEVEL_ENERGY_MISMATCH: Quoted "5755.876" keV, L-record has "5755.871" keV || Context: 2945.8|g to 1-, 5755.876 level.
+--- context lines 826..827 ---
+  826| 34S   L 8702.34   13 (0+,1,2)                                                  
+  827| 34S X L XREF=P                                                                 
+--- comment block lines 828..829 ---
+  828| 34S  cL J$6573.6|g to 2+, 2127.564 level, 516.86|g to 1+, 8185 level, and      
+  829| 34S 2cL 2945.8|g to 1-, 5755.876 level.                                        
+--- following G-records (level 828) ---
+  830| 34S   G 516.86    12 29     5                                                  
+  831| 34S   G 2945.8    10 28     8                                              &   
+  832| 34S   G 3022.0    10 14.7   83                                                 
+  833| 34S   G 3812.0    5  23     6                                                  
+  834| 34S   G 6573.6    4  100    18                                                 
+====================================================================================================
+### ERRORS AT LINE 839  (1 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "7110.451" keV, L-record has "7110.447" keV || Context: 1617.00|g to 3-, 7110.451 level and
+--- context lines 837..838 ---
+  837| 34S   L 8727.63   7  (1-,2+)                                                   
+  838| 34S X L XREF=P                                                                 
+--- comment block lines 839..839 ---
+  839| 34S  cL J$1617.00|g to 3-, 7110.451 level and 8726.78|g to 0+, g.s.            
+--- following G-records (level 839) ---
+  840| 34S   G 1617.00   12 100    13                                                 
+  841| 34S   G 3500.3    5  25     6                                                  
+  842| 34S   G 6600.1    7  11.9   26                                                 
+  843| 34S   G 8726.78   24 22.7   31                                                 
+====================================================================================================
+### ERRORS AT LINE 846  (2 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "3044" keV, G-record has "3044.1" keV || Context: 3044|g, D+Q, |DJ=0,1 to 5-, 5691.
+    - LEVEL_ENERGY_MISMATCH: Quoted "5691" keV, L-record has "5690.61" keV || Context: 3044|g, D+Q, |DJ=0,1 to 5-, 5691.
+--- context lines 844..845 ---
+  844| 34S   L 8734.8    6  4,5,6                                                     
+  845| 34S X L XREF=HW                                                                
+--- comment block lines 846..846 ---
+  846| 34S  cL J$3044|g, D+Q, |DJ=0,1 to 5-, 5691.                                    
+--- following G-records (level 846) ---
+  847| 34S   G 3044.1    6  100       D+Q                                         M   
+====================================================================================================
+### ERRORS AT LINE 853  (1 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "8804" keV, G-record has "8804.4" keV || Context: 8804|g to 0+ g.s.
+--- context lines 851..852 ---
+  851| 34S   L 8805.62   24 (1,2+)                                                    
+  852| 34S X L XREF=PW                                                                
+--- comment block lines 853..853 ---
+  853| 34S  cL J$8804|g to 0+ g.s.                                                    
+--- following G-records (level 853) ---
+  854| 34S   G 2326.2    10 10.9   87                                             &   
+  855| 34S   G 5501.4    5  100    20                                                 
+  856| 34S   G 8804.4    4  52     9                                                  
+====================================================================================================
+### ERRORS AT LINE 859  (4 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "4799" keV, G-record has "4799.11" keV || Context: 4799|g to 1+, 4075 level
+    - LEVEL_ENERGY_MISMATCH: Quoted "4075" keV, L-record has "4074.657" keV || Context: 4799|g to 1+, 4075 level
+    - GAMMA_ENERGY_MISMATCH: Quoted "1244" keV, G-record has "1244.32" keV || Context: 1244|g to 3-, 7630 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "7630" keV, L-record has "7629.903" keV || Context: 1244|g to 3-, 7630 level.
+--- context lines 857..858 ---
+  857| 34S   L 8874.01   6  (1-,2,3+)                                                 
+  858| 34S X L XREF=P                                                                 
+--- comment block lines 859..859 ---
+  859| 34S  cL J$4799|g to 1+, 4075 level, 1244|g to 3-, 7630 level.                  
+--- following G-records (level 859) ---
+  860| 34S   G 1244.32   21 4.4    10                                                 
+  861| 34S   G 4758.79   27 17.0   30                                                 
+  862| 34S   G 4799.11   28 19.2   30                                                 
+  863| 34S   G 6745.64   16 100    11                                                 
+====================================================================================================
+### ERRORS AT LINE 868  (2 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "9913" keV, L-record has "9912.8" keV || Context: 942.3|g, D, |DJ=1 from 7, 9913 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "5690.8" keV, L-record has "5690.61" keV || Context: 3280.0|g to 5-, 5690.8 level.
+--- context lines 866..867 ---
+  866| 34S   L 8970.6    5  6                                                         
+  867| 34S X L XREF=H                                                                 
+--- comment block lines 868..868 ---
+  868| 34S  cL J$942.3|g, D, |DJ=1 from 7, 9913 level. 3280.0|g to 5-, 5690.8 level.  
+--- following G-records (level 868) ---
+  869| 34S   G 1180      1  5.7    29                                             M   
+  870| 34S   G 3280.0    6  100    20                                             M   
+====================================================================================================
+### ERRORS AT LINE 882  (1 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "5847.524" keV, L-record has "5847.517" keV || Context: 3311.6|g to 0+, 5847.524 level.
+--- context lines 880..881 ---
+  880| 34S   L 9158.711  30 (1,2+)                                                    
+  881| 34S X L XREF=P                                                                 
+--- comment block lines 882..882 ---
+  882| 34S  cL J$3311.6|g to 0+, 5847.524 level.                                      
+--- following G-records (level 882) ---
+  883| 34S   G 3311.6    5  39     7                                                  
+  884| 34S   G 5043.3    4  100    17                                                 
+  885| 34S   G 5084.2    5  8.8    32                                                 
+====================================================================================================
+### ERRORS AT LINE 901  (3 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "3722" keV, G-record has "3722.6" keV || Context: 3722|g, D+Q, |DJ=1 to 5-, 5691 level
+    - LEVEL_ENERGY_MISMATCH: Quoted "5691" keV, L-record has "5690.61" keV || Context: 3722|g, D+Q, |DJ=1 to 5-, 5691 level
+    - LEVEL_ENERGY_MISMATCH: Quoted "8370" keV, L-record has "8371.0" keV || Context: 1043.8|g to 7-, 8370 level.
+--- context lines 899..900 ---
+  899| 34S   L 9413.8    5  5(-),6                                                    
+  900| 34S X L XREF=H                                                                 
+--- comment block lines 901..901 ---
+  901| 34S  cL J$3722|g, D+Q, |DJ=1 to 5-, 5691 level, 1043.8|g to 7-, 8370 level.    
+--- following G-records (level 901) ---
+  902| 34S   G 1043.8    7  21     12                                                 
+  903| 34S   G 3722.6    6  100    21 D+Q                                             
+====================================================================================================
+### ERRORS AT LINE 914  (1 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "9477" keV, G-record has "9478" keV || Context: 9477|g, M1 to 0+, g.s.
+--- context lines 909..912 ---
+  909| 34S   L 9479      4  1+                                                        
+  910| 34S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
+  911| 34S X L XREF=STW                                                               
+  912| 34S  cL E$weighted average of 9478 {I4} from {+34}S(|g,|g'), 9480 {I10} from   
+--- comment block lines 913..915 ---
+  913| 34S 2cL {+34}S(e,e'), and 9481 {I5} from {+34}S(p,p).                          
+  914| 34S  cL J$spin=1 from |g(|q) in {+34}S(|g,|g'),(pol |g,|g'). |p=+ from 9477|g, 
+  915| 34S 2cL M1 to 0+, g.s.                                                         
+--- following G-records (level 914) ---
+  917| 34S   G 9478         100       M1                                              
+====================================================================================================
+### ERRORS AT LINE 948  (1 findings)
+    - GAMMA_NOT_FOUND: No G-record within 1.0 keV of 9710 keV || Context: 9710|g to 0+, g.s.
+--- context lines 943..946 ---
+  943| 34S   L 9707      6  (1,2+)                                                    
+  944| 34S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
+  945| 34S X L XREF=SW                                                                
+  946| 34S  cL E$weighted average of 9711 {I5} from {+34}S(|g,|g') and 9700 {I6} from 
+--- comment block lines 947..948 ---
+  947| 34S 2cL {+34}S(p,p)                                                            
+  948| 34S  cL J$9710|g to 0+, g.s.                                                   
+--- following G-records (level 948) ---
+  950| 34S   G 9706         100                                                       
+====================================================================================================
+### ERRORS AT LINE 953  (1 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "3916.407" keV, L-record has "3916.40" keV || Context: 5884.6|g to 0+, 3916.407 level.
+--- context lines 951..952 ---
+  951| 34S   L 9801.88   9  (1,2+)                                                    
+  952| 34S X L XREF=P                                                                 
+--- comment block lines 953..953 ---
+  953| 34S  cL J$5884.6|g to 0+, 3916.407 level.                                      
+--- following G-records (level 953) ---
+  954| 34S   G 5884.6    6  48     11                                                 
+  955| 34S   G 6496.62   23 100    13                                                 
+  956| 34S   G 7675.0    8  29     7                                                  
+====================================================================================================
+### ERRORS AT LINE 966  (1 findings)
+    - GAMMA_NOT_FOUND: No G-record within 1.0 keV of 9858 keV || Context: 9858|g, M1 to 0+, g.s.
+--- context lines 961..964 ---
+  961| 34S   L 9868      5  1+                                                        
+  962| 34S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
+  963| 34S X L XREF=STW                                                               
+  964| 34S  cL E$weighted average of 9860 {I7} from {+34}S(|g,|g'), 9870 {I10} from   
+--- comment block lines 965..967 ---
+  965| 34S 2cL {+34}S(e,e'), and 9872 {I5} from {+34}S(p,p)                           
+  966| 34S  cL J$spin=1 from |g(|q) in {+34}S(|g,|g'),(pol |g,|g'). |p=+ from 9858|g, 
+  967| 34S 2cL M1 to 0+, g.s.                                                         
+--- following G-records (level 966) ---
+  969| 34S   G 9867         100       M1                                              
+====================================================================================================
+### ERRORS AT LINE 973  (2 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "1408" keV, G-record has "1408.6" keV || Context: 1408|g, D, |DJ=1 to 6(+), 8503 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "8503" keV, L-record has "8503.7" keV || Context: 1408|g, D, |DJ=1 to 6(+), 8503 level.
+--- context lines 971..972 ---
+  971| 34S   L 9912.8    4  7                184 FS    38                             
+  972| 34S X L XREF=HW(9925*)                                                         
+--- comment block lines 973..973 ---
+  973| 34S  cL J$1408|g, D, |DJ=1 to 6(+), 8503 level.                                
+--- following G-records (level 973) ---
+  976| 34S   G 942.3     5  29     9  D                                           M   
+  978| 34S   G 1178      1  14.3   72                                             M   
+  979| 34S   G 1408.6    9  30     9  D                                           M   
+  981| 34S   G 1541.5    5  12.9   72                                             M   
+  982| 34S   G 2122.9    6  100    14                                             M   
+====================================================================================================
+### ERRORS AT LINE 1073  (3 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "2608" keV, G-record has "2608.6" keV || Context: 2608|g, Q to 6-, 7791 level
+    - LEVEL_ENERGY_MISMATCH: Quoted "7791" keV, L-record has "7790.8" keV || Context: 2608|g, Q to 6-, 7791 level
+    - LEVEL_ENERGY_MISMATCH: Quoted "8370" keV, L-record has "8371.0" keV || Context: 2028.8|g to 7-, 8370 level.
+--- context lines 1071..1072 ---
+ 1071| 34S   L 10399.8   5  8(-)                                                      
+ 1072| 34S X L XREF=H                                                                 
+--- comment block lines 1073..1073 ---
+ 1073| 34S  cL J$2608|g, Q to 6-, 7791 level, 2028.8|g to 7-, 8370 level.             
+--- following G-records (level 1073) ---
+ 1074| 34S   G 986.8     9  11.3   56                                             M   
+ 1075| 34S   G 2028.8    6  47     10                                             M   
+ 1076| 34S   G 2608.6    6  100    14 Q                                           M   
+====================================================================================================
+### ERRORS AT LINE 1129  (3 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "8503" keV, L-record has "8503.7" keV || Context: 2147.2|g, E2, |DJ=2 to 6(+), 8503 level
+    - MULTIPOLARITY_MISMATCH: Quoted "D", G-record M field is "(M1)" || Context: 2280.4|g, D, |DJ=1 to 7-, 8370 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "8370" keV, L-record has "8371.0" keV || Context: 2280.4|g, D, |DJ=1 to 7-, 8370 level.
+--- context lines 1127..1128 ---
+ 1127| 34S   L 10651.5   5  8(+)             35 FS     17                             
+ 1128| 34S X L XREF=H                                                                 
+--- comment block lines 1129..1130 ---
+ 1129| 34S  cL J$2147.2|g, E2, |DJ=2 to 6(+), 8503 level, 2280.4|g, D, |DJ=1 to 7-,   
+ 1130| 34S 2cL 8370 level.                                                            
+--- following G-records (level 1129) ---
+ 1131| 34S   G 2147.2    6  100    21 E2                                          M   
+ 1134| 34S   G 2280.4    10 100    21 (M1)                                        M   
+====================================================================================================
+### ERRORS AT LINE 1336  (2 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "9912.9" keV, L-record has "9912.8" keV || Context: 1461.7|g, D(+Q), |DJ=1 to 7, 9912.9 level
+    - LEVEL_ENERGY_MISMATCH: Quoted "8370.6" keV, L-record has "8371.0" keV || Context: 3002.8|g, D, |DJ=1 to 7-, 8370.6 level.
+--- context lines 1334..1335 ---
+ 1334| 34S   L 11374.2   6  (8)                                                       
+ 1335| 34S X L XREF=H                                                                 
+--- comment block lines 1336..1337 ---
+ 1336| 34S  cL J$1461.7|g, D(+Q), |DJ=1 to 7, 9912.9 level, 3002.8|g, D, |DJ=1 to 7-, 
+ 1337| 34S 2cL 8370.6 level.                                                          
+--- following G-records (level 1336) ---
+ 1338| 34S   G 1461.7    9  90     20 D(+Q)                                           
+ 1340| 34S   G 3002.8    6  100    20 D                                               
+====================================================================================================
+### ERRORS AT LINE 1630  (2 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "3436" keV, G-record has "3436.1" keV || Context: 3436|g, D, |DJ=1 to 7-, 8370.6 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "8370.6" keV, L-record has "8371.0" keV || Context: 3436|g, D, |DJ=1 to 7-, 8370.6 level.
+--- context lines 1628..1629 ---
+ 1628| 34S   L 11807.4   5  8(+)                                                      
+ 1629| 34S X L XREF=H                                                                 
+--- comment block lines 1630..1630 ---
+ 1630| 34S  cL J$3436|g, D, |DJ=1 to 7-, 8370.6 level.                                
+--- following G-records (level 1630) ---
+ 1631| 34S   G 1894.6    6  100    20                                             M   
+ 1632| 34S   G 3436.1    6  1.0E2  4  D                                           M   
+====================================================================================================
+### ERRORS AT LINE 1690  (1 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "9912" keV, L-record has "9912.8" keV || Context: 2228.8|g, E2, |DJ=2 to 7, 9912 level.
+--- context lines 1688..1689 ---
+ 1688| 34S   L 12141.3   5  9                173 FS    35                             
+ 1689| 34S X L XREF=H                                                                 
+--- comment block lines 1690..1690 ---
+ 1690| 34S  cL J$2228.8|g, E2, |DJ=2 to 7, 9912 level.                                
+--- following G-records (level 1690) ---
+ 1693| 34S   G 1489.2    6  7.4    42 [M1,E2]                                     M   
+ 1694| 34S   G 1741.6    5  12.6   32 [E1]                                        M   
+ 1695| 34S   G 2228.8    6  100    12 E2                                          M   
+====================================================================================================
+### ERRORS AT LINE 1743  (4 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "11807.5" keV, L-record has "11807.4" keV || Context: 1178|g to 8(+), 11807.5
+    - LEVEL_ENERGY_MISMATCH: Quoted "11374.3" keV, L-record has "11374.2" keV || Context: 1611.5|g to (8), 11374.3
+    - LEVEL_ENERGY_MISMATCH: Quoted "10651.6" keV, L-record has "10651.5" keV || Context: 2333.8|g to 8(+), 10651.6
+    - LEVEL_ENERGY_MISMATCH: Quoted "13341.7" keV, L-record has "13341.6" keV || Context: 356.3|g from 10(+), 13341.7 level, [M1,E2].
+--- context lines 1741..1742 ---
+ 1741| 34S   L 12985.4   6  (9+)                                                      
+ 1742| 34S X L XREF=H                                                                 
+--- comment block lines 1743..1744 ---
+ 1743| 34S  cL J$1178|g to 8(+), 11807.5; 1611.5|g to (8), 11374.3; 2333.8|g to 8(+), 
+ 1744| 34S 2cL 10651.6; 356.3|g from 10(+), 13341.7 level, [M1,E2].                   
+--- following G-records (level 1743) ---
+ 1745| 34S   G 1178      1  42     25                                                 
+ 1746| 34S   G 1611.5    7  50     25                                                 
+ 1748| 34S   G 2333.8    7  1.0E2  4                                                  
+====================================================================================================
+### ERRORS AT LINE 1752  (2 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "4949" keV, G-record has "4949.3" keV || Context: 4949|g to 7-, 8370.6 level; |DJ=2 band structure.
+    - LEVEL_ENERGY_MISMATCH: Quoted "8370.6" keV, L-record has "8371.0" keV || Context: 4949|g to 7-, 8370.6 level; |DJ=2 band structure.
+--- context lines 1750..1751 ---
+ 1750| 34S   L 13320.2   10 (9-)                                                      
+ 1751| 34S X L XREF=H                                                                 
+--- comment block lines 1752..1752 ---
+ 1752| 34S  cL J$4949|g to 7-, 8370.6 level; |DJ=2 band structure.                    
+--- following G-records (level 1752) ---
+ 1753| 34S   G 2920.1    10 26     16                                                 
+ 1754| 34S   G 4949.3    18 100    21                                                 
+====================================================================================================
+### ERRORS AT LINE 1759  (3 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "1966" keV, G-record has "1966.8" keV || Context: 1966|g, E2, |DJ=2 to 8(+), 11374 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "11374" keV, L-record has "11374.2" keV || Context: 1966|g, E2, |DJ=2 to 8(+), 11374 level.
+    - JPI_MISMATCH: Quoted J-pi "8(+)", L-record J field is "(8)" || Context: 1966|g, E2, |DJ=2 to 8(+), 11374 level.
+--- context lines 1757..1758 ---
+ 1757| 34S   L 13341.6   6  10(+)            180 FS    28                             
+ 1758| 34S X L XREF=H                                                                 
+--- comment block lines 1759..1759 ---
+ 1759| 34S  cL J$1966|g, E2, |DJ=2 to 8(+), 11374 level.                              
+--- following G-records (level 1759) ---
+ 1760| 34S   G 356.3     6  6.3    31 [M1,E2]                                     M   
+ 1761| 34S   G 1200.4    7  100    22 M1+E2                                       M   
+ 1765| 34S   G 1966.8    9  81     19 E2                                          M   
+====================================================================================================
+### ERRORS AT LINE 1784  (3 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "3308" keV, G-record has "3308.8" keV || Context: 3308|g to 8+, 10652 level; |DJ=2 band structure.
+    - LEVEL_ENERGY_MISMATCH: Quoted "10652" keV, L-record has "10651.5" keV || Context: 3308|g to 8+, 10652 level; |DJ=2 band structure.
+    - JPI_MISMATCH: Quoted J-pi "8+", L-record J field is "8(+)" || Context: 3308|g to 8+, 10652 level; |DJ=2 band structure.
+--- context lines 1782..1783 ---
+ 1782| 34S   L 13960.5   10 (10+)                                                     
+ 1783| 34S X L XREF=H                                                                 
+--- comment block lines 1784..1784 ---
+ 1784| 34S  cL J$3308|g to 8+, 10652 level; |DJ=2 band structure.                     
+--- following G-records (level 1784) ---
+ 1785| 34S   G 3308.8    8  100                                                   M   
+====================================================================================================
+### ERRORS AT LINE 1808  (2 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "2768" keV, G-record has "2768.9" keV || Context: 2768|g to 8(+), 11807 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "11807" keV, L-record has "11807.4" keV || Context: 2768|g to 8(+), 11807 level.
+--- context lines 1806..1807 ---
+ 1806| 34S   L 14576.4   11 (10+)                                                     
+ 1807| 34S X L XREF=H                                                                 
+--- comment block lines 1808..1808 ---
+ 1808| 34S  cL J$2768|g to 8(+), 11807 level.                                         
+--- following G-records (level 1808) ---
+ 1809| 34S   G 2768.9    9  100                                                   M   
+====================================================================================================
+### ERRORS AT LINE 1830  (2 findings)
+    - GAMMA_ENERGY_MISMATCH: Quoted "1902" keV, G-record has "1902.7" keV || Context: 1902|g to 10(+), 13341 level.
+    - LEVEL_ENERGY_MISMATCH: Quoted "13341" keV, L-record has "13341.6" keV || Context: 1902|g to 10(+), 13341 level.
+--- context lines 1828..1829 ---
+ 1828| 34S   L 15244.3   9  (10,11,12+)                                               
+ 1829| 34S X L XREF=H                                                                 
+--- comment block lines 1830..1830 ---
+ 1830| 34S  cL J$1902|g to 10(+), 13341 level.                                        
+--- following G-records (level 1830) ---
+ 1831| 34S   G 1902.7    6  100                                                   M   
+====================================================================================================
+### ERRORS AT LINE 1834  (1 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "10399.9" keV, L-record has "10399.8" keV || Context: 4880.8|g to 8(-), 10399.9 level in {+24}Mg({+16}O,|a2p|g).
+--- context lines 1832..1833 ---
+ 1832| 34S   L 15281.0   17 (10)                                                      
+ 1833| 34S X L XREF=H                                                                 
+--- comment block lines 1834..1834 ---
+ 1834| 34S  cL J$4880.8|g to 8(-), 10399.9 level in {+24}Mg({+16}O,|a2p|g).           
+--- following G-records (level 1834) ---
+ 1835| 34S   G 4880.8    16 100                                                       
+====================================================================================================
+### ERRORS AT LINE 1865  (1 findings)
+    - LEVEL_ENERGY_MISMATCH: Quoted "13960.6" keV, L-record has "13960.5" keV || Context: 2688.4|g to (10+), 13960.6 level in {+24}Mg({+16}O,|a2p|g).
+--- context lines 1863..1864 ---
+ 1863| 34S   L 16649.0   13 (10,11,12+)                                               
+ 1864| 34S X L XREF=H                                                                 
+--- comment block lines 1865..1865 ---
+ 1865| 34S  cL J$2688.4|g to (10+), 13960.6 level in {+24}Mg({+16}O,|a2p|g).          
+--- following G-records (level 1865) ---
+ 1866| 34S   G 2688.4    8  100                                                   M   
