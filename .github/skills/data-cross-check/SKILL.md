@@ -58,6 +58,14 @@ Actively leverage coding, scripts, and programming tools when necessary to effec
 - Never match a gamma by Eγ alone; match parent L-record first. For near-equal energies, use both level energy and transition energy for accurate matching.
 - Numerical Exactness: see `.github/agents/ENSDF-Agent.agent.md` § Numerical Exactness.
 
+## Adopted E(level) Traceability
+
+- Read provenance notes before judging a level undocumented: unqualified general `cL E$` sets the fit default for all levels; letter-qualified general notes (`cL E(X)$`) cover every level whose L-record **column 77 flag letter** is X (the flag letter, not the XREF letters, matches the note identifier).
+- A fit basis exists only if the level has ≥1 gamma with DE; with no G-records or DE-less gammas, E must be a dataset-measured level energy — compare byte-exact E and DE against the level's XREF datasets, honoring `Letter(value)`/`Letter(*)`/`Letter(?)` letter-by-letter (parentheses bind to the preceding letter only).
+- The XREF notation itself pins the source: a plain unparenthesised letter means that dataset's E agrees with the adopted value, while `Letter(value)` deliberately records a dataset energy that was **not** adopted. If exactly one plain letter's dataset L-record matches adopted E and DE byte-exact, the level is traceable by reading the adopted file alone — never report it as undocumented; reserve the note/flag check for levels with no unique byte-exact plain source.
+- A plain L-record has columns 6–7 blank and `L` in column 8; `X` or another letter in column 6 marks an XREF/continuation record and must not start a new level block when attaching comments.
+- Report only levels a reader cannot resolve from the adopted file: no unique byte-exact plain XREF source, and no fit basis, own `cL E$` note, or col-77 flag note. Flag DE blank/non-blank mismatch with the source level as advisory.
+
 
 ## Report Output
 

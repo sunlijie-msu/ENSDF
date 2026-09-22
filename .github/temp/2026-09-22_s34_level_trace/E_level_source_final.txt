@@ -1,0 +1,321 @@
+S34_adopted.ens  E(level) provenance audit - FINAL (XREF-aware)
+file: A34\S34\new\S34_adopted.ens  (368 L records)
+
+Classification of all 367 levels above the ground state:
+  A  unique plain XREF letter whose dataset L-record matches E and DE byte-exact .... 331   source pinned by XREF, no note needed
+  B  byte-exact source unique, but other plain XREF letters also fall inside DE ...  15   source pinned by byte-exact E+DE
+  C  two datasets share adopted E and DE byte-exact ................................   1   level is fit-basis (default cL E$ applies)
+  D  no byte-exact source, but documented by own cL E note / flag / fit basis .......  20
+  E  needs revision ................................................................   0
+
+=> 0 levels require revision. XREF notation alone determines the E(level) source: a dataset
+   letter written WITHOUT a parenthesised energy means that dataset's level energy agrees
+   with the adopted value; 'Letter(value)' deliberately records a different energy from that
+   dataset. A level whose single plain letter also matches E and DE byte-exact has an
+   unambiguous, readable source and needs no cL E$ comment.
+
+Earlier '194 undocumented' conclusion RETRACTED: it ignored the plain-letter XREF rule and
+counted the col-77 flag mechanism (which exists only for flags A, E, P) as the sole evidence.
+
+====================================================================================================
+LEVELS IN CLASS A WITH NO GAMMAS OR DE-LESS GAMMAS (previously mis-listed as 'undocumented')
+columns: adopted L-line, E, DE, nG, XREF, plain XREF letter(s), source dataset L-line
+====================================================================================================
+line   E(level)    DE   nG   XREF                           source   source record
+516    6535        15   0    NR(6533?)                      N        S34_32s_t_p.ens line 63
+566    6864        1    2    MN(6869)W(6860)                M        S34_31p_a_pg.ens line 512
+580    6890        1    0    MNWc(6910)                     M        S34_31p_a_pg.ens line 528
+646    7248        2    1    MO(7240*)W(7248*)              M        S34_31p_a_pg.ens line 559
+667    7388        15   0    NR(7398*)W(7389*)              N        S34_32s_t_p.ens line 78
+671    7392        1    0    MN(7388*)R(7398*)W(7389*)      M        S34_31p_a_pg.ens line 565
+711    7739        16   0    NW(7732)                       N        S34_32s_t_p.ens line 84
+716    7753        11   0    R                              R        S34_33s_d_p.ens line 125
+758    8025        16   0    NW(8034*)                      N        S34_32s_t_p.ens line 89
+769    8083        1    0    M                              M        S34_31p_a_pg.ens line 576
+802    8255        16   0    N                              N        S34_32s_t_p.ens line 91
+859    8580        5    0    W                              W        S34_34s_p_pP_pol_p_pP.ens line 127
+883    8671        5    0    W                              W        S34_34s_p_pP_pol_p_pP.ens line 130
+896    8718        5    0    W                              W        S34_34s_p_pP_pol_p_pP.ens line 131
+913    8792        5    0    W                              W        S34_34s_p_pP_pol_p_pP.ens line 133
+931    8953        5    0    W                              W        S34_34s_p_pP_pol_p_pP.ens line 135
+940    8987        5    0    W                              W        S34_34s_p_pP_pol_p_pP.ens line 136
+949    9120        5    0    W                              W        S34_34s_p_pP_pol_p_pP.ens line 137
+959    9171        5    0    W                              W        S34_34s_p_pP_pol_p_pP.ens line 138
+970    9226        6    0    W                              W        S34_34s_p_pP_pol_p_pP.ens line 140
+973    9257        10   0    W                              W        S34_34s_p_pP_pol_p_pP.ens line 141
+983    9429        5    0    W                              W        S34_34s_p_pP_pol_p_pP.ens line 142
+986    9445        5    0    W                              W        S34_34s_p_pP_pol_p_pP.ens line 143
+1007   9566        10   0    W                              W        S34_34s_p_pP_pol_p_pP.ens line 145
+1085   9981        5    2    LW(9969)                       L        S34_30si_a_g_a_n_resonances.ens line 66
+1092   10000       10   0    TW                             T        S34_34s_e_eP.ens line 39
+1100   10097       5    2    L                              L        S34_30si_a_g_a_n_resonances.ens line 72
+1105   10140       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 77
+1108   10169       5    2    L                              L        S34_30si_a_g_a_n_resonances.ens line 78
+1129   10201       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 82
+1137   10236       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 83
+1140   10249       5    2    L                              L        S34_30si_a_g_a_n_resonances.ens line 84
+1161   10382       4    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 92
+1165   10386       4    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 96
+1177   10408       5    2    L                              L        S34_30si_a_g_a_n_resonances.ens line 101
+1184   10430       10   0    T                              T        S34_34s_e_eP.ens line 43
+1187   10447       5    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 105
+1191   10482       4    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 110
+1195   10494       5    2    L                              L        S34_30si_a_g_a_n_resonances.ens line 114
+1203   10528       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 119
+1206   10587       5    2    L                              L        S34_30si_a_g_a_n_resonances.ens line 120
+1214   10617       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 126
+1217   10625       5    2    L                              L        S34_30si_a_g_a_n_resonances.ens line 127
+1246   10670       5    3    L                              L        S34_30si_a_g_a_n_resonances.ens line 134
+1255   10705       5    0    LO(10700)                      L        S34_30si_a_g_a_n_resonances.ens line 140
+1258   10768       5    2    L                              L        S34_30si_a_g_a_n_resonances.ens line 141
+1296   10869       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 159
+1299   10895       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 160
+1302   10917       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 161
+1305   10931       5    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 162
+1311   10994       5    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 167
+1317   11015       5    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 172
+1323   11020       10   0    T                              T        S34_34s_e_eP.ens line 49
+1343   11047       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 183
+1346   11088       5    3    L                              L        S34_30si_a_g_a_n_resonances.ens line 184
+1355   11108       5    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 190
+1361   11142       5    3    L                              L        S34_30si_a_g_a_n_resonances.ens line 195
+1370   11165       5    3    L                              L        S34_30si_a_g_a_n_resonances.ens line 201
+1379   11180       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 207
+1382   11194       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 208
+1385   11220       5    3    L                              L        S34_30si_a_g_a_n_resonances.ens line 209
+1394   11233       5    3    L                              L        S34_30si_a_g_a_n_resonances.ens line 217
+1403   11272       5    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 223
+1409   11289       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 228
+1412   11315       5    3    L                              L        S34_30si_a_g_a_n_resonances.ens line 229
+1421   11323       5    3    L                              L        S34_30si_a_g_a_n_resonances.ens line 235
+1430   11350       10   0    T                              T        S34_34s_e_eP.ens line 51
+1433   11358       5    3    L                              L        S34_30si_a_g_a_n_resonances.ens line 241
+1442   11372       5    3    L                              L        S34_30si_a_g_a_n_resonances.ens line 250
+1460   11381       5    3    L                              L        S34_30si_a_g_a_n_resonances.ens line 260
+1469   11398       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 269
+1472   11411.33    -    0    L(11405)Q                      Q        S34_33s_n_g_n_n_resonances.ens line 34
+1560   11420       5    3    L                              L        S34_30si_a_g_a_n_resonances.ens line 273
+1569   11430.3     -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 38
+1574   11434.3     -    0    L(11435)Q                      Q        S34_33s_n_g_n_n_resonances.ens line 41
+1579   11440.4     -    0    L(11444*)Q                     Q        S34_33s_n_g_n_n_resonances.ens line 44
+1584   11448.1     -    0    L(11444*)Q                     Q        S34_33s_n_g_n_n_resonances.ens line 47
+1587   11458       5    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 283
+1593   11467.8     -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 49
+1596   11469.2     -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 52
+1599   11473       5    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 288
+1605   11474.6     -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 55
+1624   11492.7     -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 60
+1629   11496.2     -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 63
+1634   11499.6     -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 66
+1639   11500       10   0    T                              T        S34_34s_e_eP.ens line 53
+1642   11502.3     -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 68
+1654   11515.3     -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 73
+1659   11544       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 79
+1676   11546       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 81
+1679   11551       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 83
+1682   11564       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 85
+1685   11575       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 87
+1688   11581       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 88
+1693   11590       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 91
+1698   11608       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 94
+1703   11610       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 97
+1706   11614       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 99
+1711   11622       -    0    L(11619)Q                      Q        S34_33s_n_g_n_n_resonances.ens line 102
+1714   11626       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 104
+1717   11632       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 106
+1722   11634       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 109
+1727   11637       5    0    LQ(11639)                      L        S34_30si_a_g_a_n_resonances.ens line 320
+1732   11643       5    3    L                              L        S34_30si_a_g_a_n_resonances.ens line 321
+1741   11649       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 114
+1746   11669       -    0    L(11670*)Q                     Q        S34_33s_n_g_n_n_resonances.ens line 117
+1751   11670       -    0    L(11670*)Q                     Q        S34_33s_n_g_n_n_resonances.ens line 120
+1756   11704       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 123
+1759   11706       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 125
+1762   11712       5    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 332
+1768   11717       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 127
+1771   11744       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 129
+1774   11751       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 336
+1777   11773       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 131
+1780   11785       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 133
+1783   11790       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 337
+1786   11796       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 135
+1796   11829       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 137
+1799   11850       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 338
+1802   11859       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 339
+1805   11867       5    0    LQ(11870)                      L        S34_30si_a_g_a_n_resonances.ens line 340
+1808   11878       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 341
+1811   11908       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 342
+1814   11922       5    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 343
+1820   11932       5    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 348
+1826   11949       -    0    Q                              Q        S34_33s_n_g_n_n_resonances.ens line 141
+1829   11957       5    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 351
+1835   11979       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 355
+1838   12034       5    1    F(12030)L                      L        S34_30si_a_g_a_n_resonances.ens line 356
+1844   12063       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 359
+1847   12077       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 360
+1850   12100       5    1    F(12100)L                      L        S34_30si_a_g_a_n_resonances.ens line 361
+1856   12120       10   0    T                              T        S34_34s_e_eP.ens line 55
+1859   12137       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 364
+1873   12151       5    0    F(12150)L                      L        S34_30si_a_g_a_n_resonances.ens line 365
+1876   12165       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 366
+1879   12173       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 367
+1882   12180       10   0    T                              T        S34_34s_e_eP.ens line 57
+1885   12194       5    1    L                              L        S34_30si_a_g_a_n_resonances.ens line 368
+1891   12210       -    0    F                              F        S34_4he_30si_a_resonances.ens line 34
+1894   12224       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 371
+1897   12243       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 372
+1900   12256       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 373
+1903   12271       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 374
+1906   12281       5    0    L                              L        S34_30si_a_g_a_n_resonances.ens line 375
+1909   12350       -    0    F                              F        S34_4he_30si_a_resonances.ens line 36
+1912   12460       10   0    FT                             T        S34_34s_e_eP.ens line 59
+1916   12540       -    0    F                              F        S34_4he_30si_a_resonances.ens line 40
+1919   12650       -    0    F                              F        S34_4he_30si_a_resonances.ens line 42
+1922   12660       10   0    T                              T        S34_34s_e_eP.ens line 61
+1925   12760       -    0    F                              F        S34_4he_30si_a_resonances.ens line 44
+1928   12930       10   0    T                              T        S34_34s_e_eP.ens line 63
+1931   12970       -    0    F                              F        S34_4he_30si_a_resonances.ens line 46
+1950   13340       -    0    F                              F        S34_4he_30si_a_resonances.ens line 48
+1966   13460       -    0    F                              F        S34_4he_30si_a_resonances.ens line 50
+1969   13590       10   0    T                              T        S34_34s_e_eP.ens line 65
+1972   13610       -    0    F                              F        S34_4he_30si_a_resonances.ens line 52
+1975   13710       -    0    F                              F        S34_4he_30si_a_resonances.ens line 54
+1982   13920       -    0    F                              F        S34_4he_30si_a_resonances.ens line 58
+1991   13990       10   0    T                              T        S34_34s_e_eP.ens line 69
+1994   14070       -    0    F                              F        S34_4he_30si_a_resonances.ens line 60
+1997   14160       -    0    F                              F        S34_4he_30si_a_resonances.ens line 62
+2000   14200       10   0    T                              T        S34_34s_e_eP.ens line 71
+2003   14270       -    0    F                              F        S34_4he_30si_a_resonances.ens line 64
+2006   14320       10   0    T                              T        S34_34s_e_eP.ens line 73
+2009   14370       -    0    F                              F        S34_4he_30si_a_resonances.ens line 66
+2016   14520       -    0    F                              F        S34_4he_30si_a_resonances.ens line 70
+2019   14600       -    0    F                              F        S34_4he_30si_a_resonances.ens line 72
+2027   14730       -    0    F                              F        S34_4he_30si_a_resonances.ens line 74
+2030   14800       10   0    T                              T        S34_34s_e_eP.ens line 77
+2033   14840       -    0    F                              F        S34_4he_30si_a_resonances.ens line 76
+2036   14930       -    0    F                              F        S34_4he_30si_a_resonances.ens line 78
+2039   15020       -    0    F                              F        S34_4he_30si_a_resonances.ens line 80
+2042   15120       -    0    F                              F        S34_4he_30si_a_resonances.ens line 82
+2045   15170       -    0    F                              F        S34_4he_30si_a_resonances.ens line 84
+2048   15220       -    0    F                              F        S34_4he_30si_a_resonances.ens line 86
+2062   15300       -    0    F                              F        S34_4he_30si_a_resonances.ens line 88
+2065   15540       -    0    F                              F        S34_4he_30si_a_resonances.ens line 90
+2068   15640       -    0    F                              F        S34_4he_30si_a_resonances.ens line 92
+2071   15700       -    0    F                              F        S34_4he_30si_a_resonances.ens line 94
+2074   15770       -    0    F                              F        S34_4he_30si_a_resonances.ens line 96
+2077   15850       -    0    F                              F        S34_4he_30si_a_resonances.ens line 98
+2080   15950       -    0    F                              F        S34_4he_30si_a_resonances.ens line 100
+2083   16060       -    0    F                              F        S34_4he_30si_a_resonances.ens line 102
+2086   16190       -    0    F                              F        S34_4he_30si_a_resonances.ens line 104
+2089   16340       -    0    F                              F        S34_4he_30si_a_resonances.ens line 106
+2092   16440       -    0    F                              F        S34_4he_30si_a_resonances.ens line 108
+2095   16550       -    0    F                              F        S34_4he_30si_a_resonances.ens line 110
+2098   16600       -    0    F                              F        S34_4he_30si_a_resonances.ens line 112
+2106   16650       -    0    F                              F        S34_4he_30si_a_resonances.ens line 114
+2109   16730       -    0    F                              F        S34_4he_30si_a_resonances.ens line 116
+2112   16820       -    0    F                              F        S34_4he_30si_a_resonances.ens line 118
+2115   16880       -    0    F                              F        S34_4he_30si_a_resonances.ens line 120
+2118   16940       -    0    F                              F        S34_4he_30si_a_resonances.ens line 122
+2121   17010       -    0    F                              F        S34_4he_30si_a_resonances.ens line 124
+2124   17110       -    0    F                              F        S34_4he_30si_a_resonances.ens line 126
+2127   17180       -    0    F                              F        S34_4he_30si_a_resonances.ens line 128
+2130   17250       -    0    F                              F        S34_4he_30si_a_resonances.ens line 130
+2133   17330       -    0    F                              F        S34_4he_30si_a_resonances.ens line 132
+2136   17460       -    0    F                              F        S34_4he_30si_a_resonances.ens line 134
+2139   17520       -    0    F                              F        S34_4he_30si_a_resonances.ens line 136
+2142   17590       -    0    F                              F        S34_4he_30si_a_resonances.ens line 138
+2145   17620       -    0    F                              F        S34_4he_30si_a_resonances.ens line 140
+2148   17660       -    0    F                              F        S34_4he_30si_a_resonances.ens line 142
+2151   17690       -    0    F                              F        S34_4he_30si_a_resonances.ens line 144
+2154   17740       -    0    F                              F        S34_4he_30si_a_resonances.ens line 146
+2157   17790       -    0    F                              F        S34_4he_30si_a_resonances.ens line 148
+2160   17840       -    0    F                              F        S34_4he_30si_a_resonances.ens line 150
+2163   17860       -    0    F                              F        S34_4he_30si_a_resonances.ens line 152
+2166   17900       -    0    F                              F        S34_4he_30si_a_resonances.ens line 154
+2169   18030       -    0    F                              F        S34_4he_30si_a_resonances.ens line 156
+2172   18110       -    0    F                              F        S34_4he_30si_a_resonances.ens line 158
+2175   18210       -    0    F                              F        S34_4he_30si_a_resonances.ens line 160
+2178   18300       -    0    F                              F        S34_4he_30si_a_resonances.ens line 162
+2181   18350       -    0    F                              F        S34_4he_30si_a_resonances.ens line 164
+2184   18430       -    0    F                              F        S34_4he_30si_a_resonances.ens line 166
+2187   18540       -    0    F                              F        S34_4he_30si_a_resonances.ens line 168
+2190   18600       -    0    F                              F        S34_4he_30si_a_resonances.ens line 170
+2193   18670       -    0    F                              F        S34_4he_30si_a_resonances.ens line 172
+2196   18730       -    0    F                              F        S34_4he_30si_a_resonances.ens line 174
+2199   18860       -    0    F                              F        S34_4he_30si_a_resonances.ens line 176
+2202   19080       -    0    F                              F        S34_4he_30si_a_resonances.ens line 178
+2205   19200       -    0    F                              F        S34_4he_30si_a_resonances.ens line 180
+2208   19280       -    0    F                              F        S34_4he_30si_a_resonances.ens line 182
+2211   19370       -    0    F                              F        S34_4he_30si_a_resonances.ens line 184
+2214   19550       -    0    F                              F        S34_4he_30si_a_resonances.ens line 186
+2217   19650       -    0    F                              F        S34_4he_30si_a_resonances.ens line 188
+2220   19720       -    0    F                              F        S34_4he_30si_a_resonances.ens line 190
+2223   19820       -    0    F                              F        S34_4he_30si_a_resonances.ens line 192
+2226   19900       -    0    F                              F        S34_4he_30si_a_resonances.ens line 194
+2229   20080       -    0    F                              F        S34_4he_30si_a_resonances.ens line 196
+2232   20170       -    0    F                              F        S34_4he_30si_a_resonances.ens line 198
+2235   20300       -    0    F                              F        S34_4he_30si_a_resonances.ens line 200
+2238   20390       -    0    F                              F        S34_4he_30si_a_resonances.ens line 202
+2241   20520       -    0    F                              F        S34_4he_30si_a_resonances.ens line 204
+2244   20680       -    0    F                              F        S34_4he_30si_a_resonances.ens line 206
+2247   20770       -    0    F                              F        S34_4he_30si_a_resonances.ens line 208
+2250   20840       -    0    F                              F        S34_4he_30si_a_resonances.ens line 210
+2253   21000       -    0    F                              F        S34_4he_30si_a_resonances.ens line 212
+2256   21140       -    0    F                              F        S34_4he_30si_a_resonances.ens line 214
+2259   21250       -    0    F                              F        S34_4he_30si_a_resonances.ens line 216
+2262   21340       -    0    F                              F        S34_4he_30si_a_resonances.ens line 218
+2265   21460       -    0    F                              F        S34_4he_30si_a_resonances.ens line 220
+2268   21570       -    0    F                              F        S34_4he_30si_a_resonances.ens line 222
+2271   21700       -    0    F                              F        S34_4he_30si_a_resonances.ens line 224
+2274   21840       -    0    F                              F        S34_4he_30si_a_resonances.ens line 226
+2277   22040       -    0    F                              F        S34_4he_30si_a_resonances.ens line 228
+2280   22230       -    0    F                              F        S34_4he_30si_a_resonances.ens line 230
+2283   22340       -    0    F                              F        S34_4he_30si_a_resonances.ens line 232
+2286   22440       -    0    F                              F        S34_4he_30si_a_resonances.ens line 234
+2289   22600       -    0    F                              F        S34_4he_30si_a_resonances.ens line 236
+2292   22720       -    0    F                              F        S34_4he_30si_a_resonances.ens line 238
+2295   22890       -    0    F                              F        S34_4he_30si_a_resonances.ens line 240
+2298   22990       -    0    F                              F        S34_4he_30si_a_resonances.ens line 242
+2301   23170       -    0    F                              F        S34_4he_30si_a_resonances.ens line 244
+2304   23320       -    0    F                              F        S34_4he_30si_a_resonances.ens line 246
+2307   23500       -    0    F                              F        S34_4he_30si_a_resonances.ens line 248
+
+====================================================================================================
+SPECIAL CASES
+====================================================================================================
+line   77 E=2127.564   DE=13  xref=UACDEGHIJKLMNPRTVWXYZabcdefg byteexact=L,P        two datasets share the value; level is fit-basis
+line  112 E=3304.212   DE=13  xref=UACDEGHIJLMNPRTVWYZabcdg     byteexact=L          byte-exact source unique; other plain letters also within DE (harmless)
+line  147 E=3916.407   DE=22  xref=AB(3910?)GLMNPRWYZa          byteexact=-          documented by own cL E note line None / flag ' ' / fit basis
+line  160 E=4074.666   DE=20  xref=AB(4070?)CGLMN(4085)PRWYac(4 byteexact=-          documented by own cL E note line None / flag ' ' / fit basis
+line  236 E=4688.97    DE=4   xref=ACEGHJMN(4690)PR(4688)V(4688 byteexact=P          byte-exact source unique; other plain letters also within DE (harmless)
+line  316 E=5380.99    DE=3   xref=B(5380?)GMNPRWac(5360*)      byteexact=P          byte-exact source unique; other plain letters also within DE (harmless)
+line  331 E=5679.928   DE=17  xref=HLMPR(5683)W(5684)           byteexact=P          byte-exact source unique; other plain letters also within DE (harmless)
+line  359 E=5690.8     DE=6   xref=EHJMN(5679)O(5690)RWZ(5690)g byteexact=H          byte-exact source unique; other plain letters also within DE (harmless)
+line  442 E=6251.22    DE=19  xref=M(6251)N(6256*)PW(6248*)a(62 byteexact=-          documented by own cL E note line None / flag ' ' / fit basis
+line  460 E=6251.68    DE=9   xref=HN(6256*)PRW(6248*)a(6250*)g byteexact=P          byte-exact source unique; other plain letters also within DE (harmless)
+line  520 E=6639       DE=1   xref=MNRWZ                        byteexact=M          byte-exact source unique; other plain letters also within DE (harmless)
+line  536 E=6742       DE=15  xref=MNW                          byteexact=-          documented by own cL E note line 538 / flag ' ' / fit basis
+line  612 E=7111       DE=-   xref=MN(7112*)W(7110*)c           byteexact=-          documented by own cL E note line 614 / flag ' ' / fit basis
+line  676 E=7467.75    DE=16  xref=NPW                          byteexact=-          documented by own cL E note line None / flag ' ' / fit basis
+line  700 E=7655       DE=11  xref=NRW                          byteexact=-          documented by own cL E note line 702 / flag ' ' / fit basis
+line  728 E=7790.2     DE=9   xref=HMg                          byteexact=-          documented by own cL E note line None / flag ' ' / fit basis
+line  745 E=7804       DE=5   xref=NWc(7780)                    byteexact=-          documented by own cL E note line 747 / flag ' ' / fit basis
+line  812 E=8370.6     DE=7   xref=HMg                          byteexact=-          documented by own cL E note line None / flag 'C' / fit basis
+line  834 E=8423       DE=5   xref=NO(8450)W                    byteexact=W          byte-exact source unique; other plain letters also within DE (harmless)
+line  840 E=8503.6     DE=7   xref=HM                           byteexact=-          documented by own cL E note line None / flag 'A' / fit basis
+line  850 E=8506.77    DE=5   xref=NPSW(8511)                   byteexact=-          documented by own cL E note line None / flag ' ' / fit basis
+line  863 E=8615.74    DE=6   xref=PR(8622)W                    byteexact=-          documented by own cL E note line None / flag ' ' / fit basis
+line  873 E=8656       DE=5   xref=SW                           byteexact=W          byte-exact source unique; other plain letters also within DE (harmless)
+line  989 E=9479       DE=4   xref=STW                          byteexact=-          documented by own cL E note line 991 / flag ' ' / fit basis
+line 1028 E=9707       DE=6   xref=SW                           byteexact=-          documented by own cL E note line 1030 / flag ' ' / fit basis
+line 1048 E=9868       DE=5   xref=STW                          byteexact=-          documented by own cL E note line 1050 / flag ' ' / fit basis
+line 1241 E=10662      DE=5   xref=LT                           byteexact=-          documented by own cL E note line 1243 / flag 'E' / fit basis
+line 1265 E=10790      DE=5   xref=LS                           byteexact=-          documented by own cL E note line 1267 / flag ' ' / fit basis
+line 1278 E=10802      DE=6   xref=ST                           byteexact=-          documented by own cL E note line 1280 / flag 'E' / fit basis
+line 1285 E=10840.63   DE=18  xref=LP                           byteexact=-          documented by own cL E note line None / flag ' ' / fit basis
+line 1326 E=11024.95   DE=11  xref=LP                           byteexact=P          byte-exact source unique; other plain letters also within DE (harmless)
+line 1610 E=11490      DE=5   xref=LQ                           byteexact=L          byte-exact source unique; other plain letters also within DE (harmless)
+line 1647 E=11506      DE=5   xref=LQ                           byteexact=L          byte-exact source unique; other plain letters also within DE (harmless)
+line 1662 E=11545      DE=5   xref=LQ                           byteexact=L          byte-exact source unique; other plain letters also within DE (harmless)
+line 1978 E=13790      DE=10  xref=FT                           byteexact=T          byte-exact source unique; other plain letters also within DE (harmless)
+line 2012 E=14430      DE=10  xref=FT                           byteexact=T          byte-exact source unique; other plain letters also within DE (harmless)
