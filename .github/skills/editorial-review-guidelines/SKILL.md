@@ -106,6 +106,8 @@ Missing terminal periods, XREF notation. Valid ENSDF symbols: `|?`, `{+n}`, `{-n
 - Comment lines need not be padded to 80 columns (human wraps later); still confirm the diff is comment-only (col 7 = `c`).
 - `d`/`D` (col 7) hidden-message records are free-text notes, not comments: never length-check or reword them.
 - Values quoted in comments must name the specific gamma/level/multipolarity record and match it character-for-character — see `comment-quoted-values-check`.
+- A capital that starts a new sentence (including after abbreviations such as `g.s.`, `m.s.`, `r.m.s.`) is not a capitalization error; do not lowercase it.
+- Bare `|<`, `|>`, `|=` in comment should not convert to `<`, `>`, `=`.
 
 ## Editing Discipline
 - Use minimal single-line anchors; multi-line anchors spanning wrapped comment text can re-wrap lines and silently drop words.
@@ -114,7 +116,7 @@ Missing terminal periods, XREF notation. Valid ENSDF symbols: `|?`, `{+n}`, `{-n
 - Add a recurring class to `scan_editorial_review.py` CHECKS with a `--selftest` case instead of writing ad-hoc sweep scripts; run it one path at a time.
 
 ## Procedure
-1. Run `python .github/scripts/scan_editorial_review.py [folder_or_file] --skip adopted` — automated sweeps (isotope tokens, bare `I`, braced `{I}`, units, chemical formulas, dittography, `$`/`=` space, `10{-n}`, unicode, leaked tags, spelling). Review every flagged line; discard false positives manually.
+1. Run `python .github/scripts/scan_editorial_review.py [folder_or_file] --skip adopted` — automated sweeps (isotope tokens, bare `I`, braced `{I}`, units, chemical formulas, dittography, `$`/`=` space, `10{-n}`, unicode, leaked tags, spelling). Review every flagged line; discard false positives manually. The glob is one level deep: pass the folder that directly holds the `.ens` files, not its parent.
 2. Apply error classes in order: notation → grammar → punctuation → hyphenation → terminology → integrity → clarity.
 3. Manually scan the remaining lines for regex-missed issues (dense prose, capitalization, subject-verb, hyphenation) per the Error Classes above.
 4. Final symbol sweep on all flagged lines: verify no raw Unicode glyphs, plain isotope tokens, mixed symbol-text compounds, or un-subscripted chemical formulas were missed.
