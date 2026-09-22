@@ -134,6 +134,10 @@ For each discrepancy:
 
 Fix ONLY comment text (`cL`, `2cL`, `3cL` lines) using `replace_string_in_file`.
 
+- Rewrapped blocks: set `old_str` to the comment block plus the following record line, and `new_str` to the corrected block (every line padded to exactly 80 columns) plus that same record line. Content is then written verbatim; the final matched line keeps its own padding.
+- A single-line `old_str` cannot fix line length: the original trailing padding survives after `new_str`, so a rewritten comment stays over-long or short.
+- Verify every touched line is exactly 80 columns (the checker ignores trailing padding, so it never reports these defects); retry with a corrected pad count where off.
+
 ### Step 4: Re-verify
 ```bash
 python .github/scripts/check_quoted_values.py "path/to/adopted.ens"
