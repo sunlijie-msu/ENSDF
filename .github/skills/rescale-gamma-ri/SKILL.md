@@ -1,5 +1,5 @@
 ---
-name: rescaling-gamma-ri
+name: rescale-gamma-ri
 description: Rescales G-record relative intensities (RI) and their uncertainties within a single adopted level block when the contributing datasets use different RI=100 normalization references.
 ---
 
