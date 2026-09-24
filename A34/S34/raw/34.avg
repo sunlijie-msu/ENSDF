@@ -1,43 +1,43 @@
-Program for consistency check: output for averaging results for gamma energies and intensities (version 08/20/2026)
-Generated at: Mon 09/21/2026 at 06:45:56 PM EDT
+Program for consistency check: output for averaging results for gamma energies and intensities (version 09/22/2026)
+Generated at: Thu 09/24/2026 at 01:46:17 AM EDT
 
 **************** Level=2128 in 34S     *******************ID#=1-2
 
 ------ average E------
 Data points of E record
-*        ADOPTED LEVELS, GAMMAS   2127.564(13)        weight=49.84%
-*               (N,G) E=THERMAL   2127.564(13)        weight=49.84%
-                   34P B- DECAY   2127.3(5)           weight=0.03%
-                     (16O,A2PG)   2127.7(5)           weight=0.03%
-                         (A,PG)   2127.0(5)           weight=0.03%
+*        ADOPTED LEVELS, GAMMAS   2127.558(15)        weight=42.74%
+*               (N,G) E=THERMAL   2127.564(13)        weight=56.90%
+                   34P B- DECAY   2127.3(5)           weight=0.04%
+                     (16O,A2PG)   2127.7(5)           weight=0.04%
+                         (A,PG)   2127.0(5)           weight=0.04%
                           (T,P)   2128(10)            weight=0.00%
                           (D,P)   2122(10)            weight=0.00%
                           (P,P)   2129(18)            weight=0.00%
-                        (P,P'G)   2127.52(20)         weight=0.21%
+                        (P,P'G)   2127.52(20)         weight=0.24%
                         (D,3HE)   2120(10)            weight=0.00%
                      (36S,34SG)   2128.1(9)           weight=0.01%
 ### (weight<2.00% not considered in weighted average)
-                   34P B- DECAY   2127.3(5)           weight=0.03%
-                     (16O,A2PG)   2127.7(5)           weight=0.03%
-                         (A,PG)   2127.0(5)           weight=0.03%
+                   34P B- DECAY   2127.3(5)           weight=0.04%
+                     (16O,A2PG)   2127.7(5)           weight=0.04%
+                         (A,PG)   2127.0(5)           weight=0.04%
                           (T,P)   2128(10)            weight=0.00%
                           (D,P)   2122(10)            weight=0.00%
                           (P,P)   2129(18)            weight=0.00%
-                        (P,P'G)   2127.52(20)         weight=0.21%
+                        (P,P'G)   2127.52(20)         weight=0.24%
                         (D,3HE)   2120(10)            weight=0.00%
                      (36S,34SG)   2128.1(9)           weight=0.01%
 
 Averaging results:
-           weighted average:      2127.564(9)          (internal)
-                                  2127.564(0)          (external)
-                                  chi**2/(n-1)=0.000     [critical=6.635]
-           weighted average:      2127.564(9)          (internal)
-            (of all values)       2127.564(5)          (external)
-                                  chi**2/(n-1)=0.292     [critical=2.321]
+           weighted average:      2127.562(10)         (internal)
+                                  2127.5615(29)        (external)
+                                  chi**2/(n-1)=0.087     [critical=6.635]
+           weighted average:      2127.561(10)         (internal)
+            (of all values)       2127.561(6)          (external)
+                                  chi**2/(n-1)=0.299     [critical=2.321]
          unweighted average:      2126.5(9)           
-           (of all values)        chi**2/(n-1)=7.919     [critical=2.321]
+           (of all values)        chi**2/(n-1)=7.918     [critical=2.321]
 
-   suggested adopted result:      2127.564(13)        
+   suggested adopted result:      2127.562(13)        
        (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
@@ -45,7 +45,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 34S  cL E$weighted average of 2127.564 {I13} from Adopted Levels, gammas and   
+ 34S  cL E$weighted average of 2127.558 {I15} from Adopted Levels, gammas and   
  34S 2cL 2127.564 {I13} from (n,|g) E=thermal. Others: 2127.3 {I5} from {+34}P  
  34S 3cL |b{+-} decay, 2127.7 {I5} from ({+16}O,|a2p|g), 2127.0 {I5} from       
  34S 4cL (|a,p|g), 2128 {I10} from (t,p), 2122 {I10} from (d,p), 2129 {I18} from
@@ -53,7 +53,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 6cL 2128.1 {I9} from ({+36}S,{+34}S|g)                                     
 
 ### weighted average comment (all values):
- 34S  cL E$weighted average of 2127.564 {I13} from Adopted Levels, gammas,      
+ 34S  cL E$weighted average of 2127.558 {I15} from Adopted Levels, gammas,      
  34S 2cL 2127.3 {I5} from {+34}P |b{+-} decay, 2127.7 {I5} from ({+16}O,|a2p|g),
  34S 3cL 2127.0 {I5} from (|a,p|g), 2128 {I10} from (t,p), 2127.564 {I13} from  
  34S 4cL (n,|g) E=thermal, 2122 {I10} from (d,p), 2129 {I18} from (p,p), 2127.52
@@ -61,19 +61,12 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 6cL ({+36}S,{+34}S|g)                                                      
 
 ### unweighted average comment (all non-limit values with/without unc):
- 34S  cL E$unweighted average of 2127.564 {I13} from Adopted Levels, gammas,    
+ 34S  cL E$unweighted average of 2127.558 {I15} from Adopted Levels, gammas,    
  34S 2cL 2127.3 {I5} from {+34}P |b{+-} decay, 2127.7 {I5} from ({+16}O,|a2p|g),
  34S 3cL 2127.0 {I5} from (|a,p|g), 2128 {I10} from (t,p), 2127.564 {I13} from  
  34S 4cL (n,|g) E=thermal, 2122 {I10} from (d,p), 2129 {I18} from (p,p), 2127.52
  34S 5cL {I20} from (p,p'|g), 2120 {I10} from (d,{+3}He), and 2128.1 {I9} from  
  34S 6cL ({+36}S,{+34}S|g)                                                      
-
-### Non-average comment:
- 34S  cL E$from Adopted Levels, gammas. Others: 2127.3 {I5} from {+34}P |b{+-}  
- 34S 2cL decay, 2127.7 {I5} from ({+16}O,|a2p|g), 2127.0 {I5} from (|a,p|g),    
- 34S 3cL 2128 {I10} from (t,p), 2127.564 {I13} from (n,|g) E=thermal, 2122 {I10}
- 34S 4cL from (d,p), 2129 {I18} from (p,p), 2127.52 {I20} from (p,p'|g), 2120   
- 34S 5cL {I10} from (d,{+3}He), and 2128.1 {I9} from ({+36}S,{+34}S|g)          
 
 
 <For Level=2128>
@@ -95,8 +88,8 @@ Averaging results:
          unweighted average:      0.307(12)           
            (of all values)        chi**2/(n-1)=0.001     [critical=2.802]
 
-   suggested adopted result:      0.314(12)           
-       (Weighted-Of-All)
+   suggested adopted result:      0.315(12)           
+           (Non-Average)
 
 Note:  Combined weight means both unc+ and unc- of each input value are used to calculate
           the final weight and external uncertainty, as used for the average value and chi2.
@@ -145,8 +138,8 @@ Averaging results:
          unweighted average:      2127.43(21)         
            (of all values)        chi**2/(n-1)=0.217     [critical=3.319]
 
-   suggested adopted result:      2127.498(20)        
-       (Weighted-Of-All)
+   suggested adopted result:      2127.499(20)        
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -172,18 +165,18 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
 
 ------ average E------
 Data points of E record
-*        ADOPTED LEVELS, GAMMAS   3304.212(13)        weight=49.95%
-*               (N,G) E=THERMAL   3304.213(13)        weight=49.95%
-                     (16O,A2PG)   3304.6(5)           weight=0.03%
-                         (A,PG)   3303.2(4)           weight=0.05%
+*        ADOPTED LEVELS, GAMMAS   3304.207(16)        weight=39.72%
+*               (N,G) E=THERMAL   3304.213(13)        weight=60.17%
+                     (16O,A2PG)   3304.6(5)           weight=0.04%
+                         (A,PG)   3303.2(4)           weight=0.06%
                           (T,P)   3308(11)            weight=0.00%
                           (D,P)   3304.9(20)          weight=0.00%
                           (P,P)   3306(14)            weight=0.00%
                         (D,3HE)   3310(15)            weight=0.00%
                      (36S,34SG)   3305.0(11)          weight=0.01%
 ### (weight<2.00% not considered in weighted average)
-                     (16O,A2PG)   3304.6(5)           weight=0.03%
-                         (A,PG)   3303.2(4)           weight=0.05%
+                     (16O,A2PG)   3304.6(5)           weight=0.04%
+                         (A,PG)   3303.2(4)           weight=0.06%
                           (T,P)   3308(11)            weight=0.00%
                           (D,P)   3304.9(20)          weight=0.00%
                           (P,P)   3306(14)            weight=0.00%
@@ -191,16 +184,16 @@ Data points of E record
                      (36S,34SG)   3305.0(11)          weight=0.01%
 
 Averaging results:
-           weighted average:      3304.212(9)          (internal)
-                                  3304.212(0)          (external)
-                                  chi**2/(n-1)=0.003     [critical=6.635]
-           weighted average:      3304.212(9)          (internal)
-            (of all values)       3304.212(9)          (external)
-                                  chi**2/(n-1)=0.990     [critical=2.511]
+           weighted average:      3304.211(10)         (internal)
+                                  3304.211(0)          (external)
+                                  chi**2/(n-1)=0.081     [critical=6.635]
+           weighted average:      3304.210(10)         (internal)
+            (of all values)       3304.210(10)         (external)
+                                  chi**2/(n-1)=0.998     [critical=2.511]
          unweighted average:      3305.6(7)           
-           (of all values)        chi**2/(n-1)=4.592     [critical=2.511]
+           (of all values)        chi**2/(n-1)=4.593     [critical=2.511]
 
-   suggested adopted result:      3304.212(13)        
+   suggested adopted result:      3304.211(13)        
        (Weighted-Of-All)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
@@ -208,32 +201,25 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 34S  cL E$weighted average of 3304.212 {I13} from Adopted Levels, gammas and   
+ 34S  cL E$weighted average of 3304.207 {I16} from Adopted Levels, gammas and   
  34S 2cL 3304.213 {I13} from (n,|g) E=thermal. Others: 3304.6 {I5} from         
  34S 3cL ({+16}O,|a2p|g), 3303.2 {I4} from (|a,p|g), 3308 {I11} from (t,p),     
  34S 4cL 3304.9 {I20} from (d,p), 3306 {I14} from (p,p), 3310 {I15} from        
  34S 5cL (d,{+3}He), and 3305.0 {I11} from ({+36}S,{+34}S|g)                    
 
 ### weighted average comment (all values):
- 34S  cL E$weighted average of 3304.212 {I13} from Adopted Levels, gammas,      
+ 34S  cL E$weighted average of 3304.207 {I16} from Adopted Levels, gammas,      
  34S 2cL 3304.6 {I5} from ({+16}O,|a2p|g), 3303.2 {I4} from (|a,p|g), 3308 {I11}
  34S 3cL from (t,p), 3304.213 {I13} from (n,|g) E=thermal, 3304.9 {I20} from    
  34S 4cL (d,p), 3306 {I14} from (p,p), 3310 {I15} from (d,{+3}He), and 3305.0   
  34S 5cL {I11} from ({+36}S,{+34}S|g)                                           
 
 ### unweighted average comment (all non-limit values with/without unc):
- 34S  cL E$unweighted average of 3304.212 {I13} from Adopted Levels, gammas,    
+ 34S  cL E$unweighted average of 3304.207 {I16} from Adopted Levels, gammas,    
  34S 2cL 3304.6 {I5} from ({+16}O,|a2p|g), 3303.2 {I4} from (|a,p|g), 3308 {I11}
  34S 3cL from (t,p), 3304.213 {I13} from (n,|g) E=thermal, 3304.9 {I20} from    
  34S 4cL (d,p), 3306 {I14} from (p,p), 3310 {I15} from (d,{+3}He), and 3305.0   
  34S 5cL {I11} from ({+36}S,{+34}S|g)                                           
-
-### Non-average comment:
- 34S  cL E$from Adopted Levels, gammas. Others: 3304.6 {I5} from                
- 34S 2cL ({+16}O,|a2p|g), 3303.2 {I4} from (|a,p|g), 3308 {I11} from (t,p),     
- 34S 3cL 3304.213 {I13} from (n,|g) E=thermal, 3304.9 {I20} from (d,p), 3306    
- 34S 4cL {I14} from (p,p), 3310 {I15} from (d,{+3}He), and 3305.0 {I11} from    
- 34S 5cL ({+36}S,{+34}S|g)                                                      
 
 
 <For Level=3304>
@@ -251,7 +237,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=110.333     [critical=4.605]
 
    suggested adopted result:      122(9)              
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -305,7 +291,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cG ({+36}S,{+34}S|g)                                                      
 
 
-<For Gamma=1176.650 from Level=3304.212>
+<For Gamma=1176.650 from Level=3304.207>
 ------ average RI------
 Data points of RI record
 ### (1 value has weight>2.00%; all values with unc  considered in weighted average)
@@ -323,7 +309,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=3.319]
 
    suggested adopted result:      100.0(9)            
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -380,7 +366,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cG ({+36}S,{+34}S|g)                                                      
 
 
-<For Gamma=3304.029 from Level=3304.212>
+<For Gamma=3304.029 from Level=3304.207>
 ------ average RI------
 Data points of RI record
 ### (1 value has weight>2.00%; all values with unc  considered in weighted average)
@@ -415,7 +401,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cG from (n,|g) E=thermal, and 81 {I13} from ({+36}S,{+34}S|g)             
 
 
-**************** Level=3916.407 in 34S     *******************ID#=1-4
+**************** Level=3916.40 in 34S     *******************ID#=1-4
 
 ------ average E------
 Data points of E record
@@ -450,7 +436,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cL from (p,p)                                                             
 
 
-**************** Level=3916.407     Gamma=1787.3 in 34S     *******************ID#=1-4-2
+**************** Level=3916.40     Gamma=1787.3 in 34S     *******************ID#=1-4-2
 
 ------ average E------
 Data points of E record
@@ -482,7 +468,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG from (|a,p|g), and 1788.794 {I20} from (n,|g) E=thermal                
 
 
-**************** Level=4074.666 in 34S     *******************ID#=1-5
+**************** Level=4074.657 in 34S     *******************ID#=1-5
 
 ------ average E------
 Data points of E record
@@ -519,7 +505,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cL E=thermal, 4077 {I15} from (p,p), and 4090 {I15} from (d,{+3}He)       
 
 
-**************** Level=4074.666     Gamma=770.428 in 34S     *******************ID#=1-5-2
+**************** Level=4074.657     Gamma=770.428 in 34S     *******************ID#=1-5-2
 
 ------ average RI------
 Data points of RI record
@@ -554,7 +540,7 @@ Note:  Combined weight means both unc+ and unc- of each input value are used to 
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=4074.666     Gamma=1947.060 in 34S     *******************ID#=1-5-3
+**************** Level=4074.657     Gamma=1947.060 in 34S     *******************ID#=1-5-3
 
 ------ average E------
 Data points of E record
@@ -571,7 +557,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.833     [critical=4.605]
 
    suggested adopted result:      1947.060(20)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -590,7 +576,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG and 1945.5 {I13} from (|a,p|g)                                         
 
 
-<For Gamma=1947.060 from Level=4074.666>
+<For Gamma=1947.060 from Level=4074.657>
 ------ average RI------
 Data points of RI record
 *                  34P B- DECAY   61(22)              weight=6.20%
@@ -620,7 +606,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG from (|a,p|g), and 93 {I8} from (n,|g) E=thermal                       
 
 
-**************** Level=4074.666     Gamma=4072.9 in 34S     *******************ID#=1-5-4
+**************** Level=4074.657     Gamma=4072.9 in 34S     *******************ID#=1-5-4
 
 ------ average E------
 Data points of E record
@@ -652,7 +638,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG {I13} from (|a,p|g), and 4074.418 {I20} from (n,|g) E=thermal          
 
 
-<For Gamma=4072.9 from Level=4074.666>
+<For Gamma=4072.9 from Level=4074.657>
 ------ average RI------
 Data points of RI record
 *                  34P B- DECAY   100(13)             weight=20.94%
@@ -682,7 +668,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG from (|a,p|g), and 100 {I9} from (n,|g) E=thermal                      
 
 
-**************** Level=4114.81 in 34S     *******************ID#=1-6
+**************** Level=4114.810 in 34S     *******************ID#=1-6
 
 ------ average E------
 Data points of E record
@@ -703,7 +689,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=104.430     [critical=2.802]
 
    suggested adopted result:      4114.81(2)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -727,7 +713,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cL 4115 {I14} from (p,p), and 4090 {I15} from (d,{+3}He)                  
 
 
-**************** Level=4114.81     Gamma=1987.19 in 34S     *******************ID#=1-6-3
+**************** Level=4114.810     Gamma=1987.19 in 34S     *******************ID#=1-6-3
 
 ------ average E------
 Data points of E record
@@ -743,7 +729,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.000     [critical=6.635]
 
    suggested adopted result:      1987.19(3)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -761,7 +747,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG E$from (n,|g) E=thermal. Other: 1987.2 {I10} from {+34}P |b{+-} decay  
 
 
-<For Gamma=1987.19 from Level=4114.81>
+<For Gamma=1987.19 from Level=4114.810>
 ------ average RI------
 Data points of RI record
 *    34CL EC+B+ DECAY (31.99 M)   67.7(24)            weight=85.65%
@@ -804,7 +790,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cG 76 {I8} from (n,|g) E=thermal                                          
 
 
-**************** Level=4114.81     Gamma=4114.52 in 34S     *******************ID#=1-6-4
+**************** Level=4114.810     Gamma=4114.52 in 34S     *******************ID#=1-6-4
 
 ------ average E------
 Data points of E record
@@ -822,7 +808,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.329     [critical=3.780]
 
    suggested adopted result:      4114.52(4)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -844,7 +830,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cG from (|a,p|g)                                                          
 
 
-<For Gamma=4114.52 from Level=4114.81>
+<For Gamma=4114.52 from Level=4114.810>
 ------ average RI------
 Data points of RI record
 *    34CL EC+B+ DECAY (31.99 M)   100.0(22)           weight=90.49%
@@ -892,7 +878,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cG E=thermal                                                              
 
 
-**************** Level=4624.404 in 34S     *******************ID#=1-7
+**************** Level=4624.401 in 34S     *******************ID#=1-7
 
 ------ average E------
 Data points of E record
@@ -912,7 +898,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=1.665     [critical=3.017]
 
    suggested adopted result:      4624.404(16)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -934,7 +920,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cL 4624.9 {I14} from ({+36}S,{+34}S|g)                                    
 
 
-**************** Level=4624.404     Gamma=1320.168 in 34S     *******************ID#=1-7-4
+**************** Level=4624.401     Gamma=1320.168 in 34S     *******************ID#=1-7-4
 
 ------ average E------
 Data points of E record
@@ -951,8 +937,8 @@ Averaging results:
          unweighted average:      1319.77(33)         
            (of all values)        chi**2/(n-1)=0.421     [critical=3.780]
 
-   suggested adopted result:      1320.168(20)        
-       (Weighted-Of-All)
+   suggested adopted result:      1320.169(20)        
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -973,7 +959,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG 1318.8 {I10} from (|a,p|g), and 1320 {I1} from ({+36}S,{+34}S|g)       
 
 
-<For Gamma=1320.168 from Level=4624.404>
+<For Gamma=1320.168 from Level=4624.401>
 ------ average RI------
 Data points of RI record
 *                    (16O,A2PG)   100(11)             weight=22.37%
@@ -1007,7 +993,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG from (n,|g) E=thermal                                                  
 
 
-**************** Level=4624.404     Gamma=2496.725 in 34S     *******************ID#=1-7-5
+**************** Level=4624.401     Gamma=2496.725 in 34S     *******************ID#=1-7-5
 
 ------ average E------
 Data points of E record
@@ -1039,7 +1025,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG from (|a,p|g), and 2496.726 {I20} from (n,|g) E=thermal                
 
 
-<For Gamma=2496.725 from Level=4624.404>
+<For Gamma=2496.725 from Level=4624.401>
 ------ average RI------
 Data points of RI record
 *                    (16O,A2PG)   46(5)               weight=32.54%
@@ -1054,7 +1040,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=50.333     [critical=4.605]
 
    suggested adopted result:      41(4)               
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1073,7 +1059,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG {I7} from (|a,p|g)                                                     
 
 
-**************** Level=4688.97 in 34S     *******************ID#=1-8
+**************** Level=4688.96 in 34S     *******************ID#=1-8
 
 ------ average E------
 Data points of E record
@@ -1093,7 +1079,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=71.071     [critical=3.017]
 
    suggested adopted result:      4688.97(4)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1115,7 +1101,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cL and 4689.7 {I16} from ({+36}S,{+34}S|g)                                
 
 
-**************** Level=4688.97     Gamma=2561.35 in 34S     *******************ID#=1-8-5
+**************** Level=4688.96     Gamma=2561.35 in 34S     *******************ID#=1-8-5
 
 ------ average E------
 Data points of E record
@@ -1150,7 +1136,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cG ({+36}S,{+34}S|g)                                                      
 
 
-<For Gamma=2561.35 from Level=4688.97>
+<For Gamma=2561.35 from Level=4688.96>
 ------ average RI------
 Data points of RI record
 *    34CL EC+B+ DECAY (31.99 M)   100(9)              weight=55.25%
@@ -1215,7 +1201,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL 4689 {I25} from (p,p), and 4710 {I20} from (d,{+3}He)                  
 
 
-**************** Level=4876.842 in 34S     *******************ID#=1-11
+**************** Level=4876.839 in 34S     *******************ID#=1-11
 
 ------ average E------
 Data points of E record
@@ -1234,7 +1220,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=96.927     [critical=3.319]
 
    suggested adopted result:      4876.842(23)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1256,7 +1242,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cL ({+36}S,{+34}S|g)                                                      
 
 
-**************** Level=4876.842     Gamma=1572.56 in 34S     *******************ID#=1-11-6
+**************** Level=4876.839     Gamma=1572.56 in 34S     *******************ID#=1-11-6
 
 ------ average E------
 Data points of E record
@@ -1291,7 +1277,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cG ({+36}S,{+34}S|g)                                                      
 
 
-<For Gamma=1572.56 from Level=4876.842>
+<For Gamma=1572.56 from Level=4876.839>
 ------ average RI------
 Data points of RI record
 *    34CL EC+B+ DECAY (31.99 M)   71(23)              weight=5.84%
@@ -1324,7 +1310,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cG from (n,|g) E=thermal                                                  
 
 
-**************** Level=4876.842     Gamma=2749.24 in 34S     *******************ID#=1-11-7
+**************** Level=4876.839     Gamma=2749.24 in 34S     *******************ID#=1-11-7
 
 ------ average E------
 Data points of E record
@@ -1341,7 +1327,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.762     [critical=4.605]
 
    suggested adopted result:      2749.24(5)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1360,7 +1346,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG 2750.9 {I25} from (|a,p|g)                                             
 
 
-<For Gamma=2749.24 from Level=4876.842>
+<For Gamma=2749.24 from Level=4876.839>
 ------ average RI------
 Data points of RI record
 *    34CL EC+B+ DECAY (31.99 M)   100(14)             weight=15.56%
@@ -1398,7 +1384,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cG E=thermal                                                              
 
 
-**************** Level=4889.76 in 34S     *******************ID#=1-12
+**************** Level=4889.752 in 34S     *******************ID#=1-12
 
 ------ average E------
 Data points of E record
@@ -1418,7 +1404,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=34.610     [critical=3.017]
 
    suggested adopted result:      4889.76(2)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1440,7 +1426,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cL {I20} from (d,{+3}He)                                                  
 
 
-**************** Level=4889.76     Gamma=1585.510 in 34S     *******************ID#=1-12-6
+**************** Level=4889.752     Gamma=1585.510 in 34S     *******************ID#=1-12-6
 
 ------ average RI------
 Data points of RI record
@@ -1470,7 +1456,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG E=thermal                                                              
 
 
-**************** Level=4889.76     Gamma=4889.30 in 34S     *******************ID#=1-12-8
+**************** Level=4889.752     Gamma=4889.30 in 34S     *******************ID#=1-12-8
 
 ------ average RI------
 Data points of RI record
@@ -1500,7 +1486,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=5228.175 in 34S     *******************ID#=1-13
+**************** Level=5228.166 in 34S     *******************ID#=1-13
 
 ------ average E------
 Data points of E record
@@ -1517,7 +1503,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=3.185     [critical=4.605]
 
    suggested adopted result:      5228.175(22)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1536,7 +1522,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=5322.514 in 34S     *******************ID#=1-14
+**************** Level=5322.509 in 34S     *******************ID#=1-14
 
 ------ average E------
 Data points of E record
@@ -1603,7 +1589,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 5321 {I14} from (p,p)                                              
 
 
-**************** Level=5380.99 in 34S     *******************ID#=1-16
+**************** Level=5380.986 in 34S     *******************ID#=1-16
 
 ------ average E------
 Data points of E record
@@ -1623,7 +1609,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=79.588     [critical=3.017]
 
    suggested adopted result:      5380.99(3)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1645,7 +1631,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cL from (d,{+3}He)                                                        
 
 
-**************** Level=5380.99     Gamma=3253.21 in 34S     *******************ID#=1-16-10
+**************** Level=5380.986     Gamma=3253.21 in 34S     *******************ID#=1-16-10
 
 ------ average RI------
 Data points of RI record
@@ -1678,7 +1664,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG RI$from (n,|g) E=thermal. Other: 100 {I13} from (|a,p|g)               
 
 
-**************** Level=5380.99     Gamma=5380.59 in 34S     *******************ID#=1-16-11
+**************** Level=5380.986     Gamma=5380.59 in 34S     *******************ID#=1-16-11
 
 ------ average RI------
 Data points of RI record
@@ -1708,7 +1694,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG E=thermal                                                              
 
 
-**************** Level=5679.928 in 34S     *******************ID#=1-17
+**************** Level=5679.925 in 34S     *******************ID#=1-17
 
 ------ average E------
 Data points of E record
@@ -1726,7 +1712,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=5.189     [critical=3.780]
 
    suggested adopted result:      5679.928(17)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1747,7 +1733,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL {I1} from (|a,p|g), and 5684 {I14} from (p,p)                          
 
 
-**************** Level=5679.928     Gamma=1055.491 in 34S     *******************ID#=1-17-6
+**************** Level=5679.925     Gamma=1055.491 in 34S     *******************ID#=1-17-6
 
 ------ average E------
 Data points of E record
@@ -1763,7 +1749,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.004     [critical=6.635]
 
    suggested adopted result:      1055.491(20)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1781,7 +1767,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG E$from (n,|g) E=thermal. Other: 1055.4 {I8} from ({+16}O,|a2p|g)       
 
 
-<For Gamma=1055.491 from Level=5679.928>
+<For Gamma=1055.491 from Level=5679.925>
 ------ average RI------
 Data points of RI record
 *                    (16O,A2PG)   33(17)              weight=2.46%
@@ -1794,8 +1780,8 @@ Averaging results:
          unweighted average:      30.0(31)            
            (of all values)        chi**2/(n-1)=18.605     [critical=6.635]
 
-   suggested adopted result:      27.1(27)            
-       (Weighted-Of-All)
+   suggested adopted result:      26.9(27)            
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1813,7 +1799,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG RI$from (n,|g) E=thermal. Other: 33 {I17} from ({+16}O,|a2p|g)         
 
 
-**************** Level=5679.928     Gamma=2375.657 in 34S     *******************ID#=1-17-10
+**************** Level=5679.925     Gamma=2375.657 in 34S     *******************ID#=1-17-10
 
 ------ average E------
 Data points of E record
@@ -1829,7 +1815,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.033     [critical=6.635]
 
    suggested adopted result:      2375.657(20)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1847,7 +1833,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG E$from (n,|g) E=thermal. Other: 2375.4 {I7} from ({+16}O,|a2p|g)       
 
 
-<For Gamma=2375.657 from Level=5679.928>
+<For Gamma=2375.657 from Level=5679.925>
 ------ average RI------
 Data points of RI record
 *                    (16O,A2PG)   67(33)              weight=5.35%
@@ -1877,7 +1863,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (|a,p|g), and 100 {I9} from (n,|g) E=thermal                           
 
 
-**************** Level=5679.928     Gamma=3552.08 in 34S     *******************ID#=1-17-11
+**************** Level=5679.925     Gamma=3552.08 in 34S     *******************ID#=1-17-11
 
 ------ average E------
 Data points of E record
@@ -1908,7 +1894,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG {I4} from (n,|g) E=thermal                                             
 
 
-<For Gamma=3552.08 from Level=5679.928>
+<For Gamma=3552.08 from Level=5679.925>
 ------ average RI------
 Data points of RI record
 ### (1 value has weight>2.00%; all values with unc  considered in weighted average)
@@ -1924,7 +1910,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=564.363     [critical=4.605]
 
    suggested adopted result:      66.7(7)             
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1958,7 +1944,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.500     [critical=6.635]
 
    suggested adopted result:      5683(7)             
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -1974,7 +1960,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (d,p). Other: 5684 {I14} from (p,p)                             
 
 
-**************** Level=5690.8 in 34S     *******************ID#=1-19
+**************** Level=5690.61 in 34S     *******************ID#=1-19
 
 ------ average E------
 Data points of E record
@@ -1999,7 +1985,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=32.832     [critical=3.319]
 
    suggested adopted result:      5690.8(6)           
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -2026,7 +2012,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cL ({+36}S,{+34}S|g)                                                      
 
 
-<For Level=5690.8>
+<For Level=5690.61>
 ------ average T------
 Data points of T record
 *                     (35CL,AG)   38(5)               weight=8.55%
@@ -2056,7 +2042,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from ({+12}C,|ap|g), and 37.4 ps {I35} from (|a,p|g)                   
 
 
-**************** Level=5690.8     Gamma=1001.5 in 34S     *******************ID#=1-19-1
+**************** Level=5690.61     Gamma=1001.5 in 34S     *******************ID#=1-19-1
 
 ------ average E------
 Data points of E record
@@ -2086,7 +2072,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG from ({+36}S,{+34}S|g)                                                 
 
 
-<For Gamma=1001.5 from Level=5690.8>
+<For Gamma=1001.5 from Level=5690.61>
 ------ average RI------
 Data points of RI record
 *                    (16O,A2PG)   100(10)             weight=11.79%
@@ -2116,7 +2102,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (|a,p|g), and 100 {I9} from ({+36}S,{+34}S|g)                          
 
 
-**************** Level=5690.8     Gamma=1066.2 in 34S     *******************ID#=1-19-2
+**************** Level=5690.61     Gamma=1066.2 in 34S     *******************ID#=1-19-2
 
 ------ average E------
 Data points of E record
@@ -2131,7 +2117,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.020     [critical=6.635]
 
    suggested adopted result:      1066.2(5)           
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -2149,7 +2135,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG E$from ({+16}O,|a2p|g). Other: 1066 {I1} from ({+36}S,{+34}S|g)        
 
 
-<For Gamma=1066.2 from Level=5690.8>
+<For Gamma=1066.2 from Level=5690.61>
 ------ average RI------
 Data points of RI record
 *                    (16O,A2PG)   83(10)              weight=11.35%
@@ -2179,7 +2165,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (|a,p|g), and 78 {I8} from ({+36}S,{+34}S|g)                           
 
 
-**************** Level=5755.876 in 34S     *******************ID#=1-20
+**************** Level=5755.871 in 34S     *******************ID#=1-20
 
 ------ average E------
 Data points of E record
@@ -2197,7 +2183,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=3.420     [critical=3.780]
 
    suggested adopted result:      5755.876(21)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -2216,7 +2202,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 5755 {I14} from (p,p)                                       
 
 
-**************** Level=5847.524 in 34S     *******************ID#=1-21
+**************** Level=5847.517 in 34S     *******************ID#=1-21
 
 ------ average E------
 Data points of E record
@@ -2233,7 +2219,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=42.154     [critical=4.605]
 
    suggested adopted result:      5847.524(29)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -2269,7 +2255,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=46.103     [critical=4.605]
 
    suggested adopted result:      5998.10(8)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -2378,7 +2364,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=6121.56 in 34S     *******************ID#=1-23
+**************** Level=6121.55 in 34S     *******************ID#=1-23
 
 ------ average E------
 Data points of E record
@@ -2395,7 +2381,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=25.691     [critical=4.605]
 
    suggested adopted result:      6121.56(10)         
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -2414,7 +2400,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=6121.56     Gamma=2817.76 in 34S     *******************ID#=1-23-1
+**************** Level=6121.55     Gamma=2817.76 in 34S     *******************ID#=1-23-1
 
 ------ average RI------
 Data points of RI record
@@ -2444,7 +2430,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=6121.56     Gamma=3994.8 in 34S     *******************ID#=1-23-2
+**************** Level=6121.55     Gamma=3994.8 in 34S     *******************ID#=1-23-2
 
 ------ average RI------
 Data points of RI record
@@ -2474,44 +2460,41 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=6168.862 in 34S     *******************ID#=1-24
+**************** Level=6168.857 in 34S     *******************ID#=1-24
 
 ------ average E------
 Data points of E record
 ### (1 value has weight>2.00%; all values with unc  considered in weighted average)
-                          (T,P)   6179(14)            weight=0.00%
 *               (N,G) E=THERMAL   6168.862(28)        weight=100.00%
-                          (D,P)   6174(8)             weight=0.00%
                           (P,P)   6170(14)            weight=0.00%
 
 Averaging results:
            weighted average:      6168.862(28)         (internal)
-                                  6168.862(16)         (external)
-                                  chi**2/(n-1)=0.315     [critical=6.635]
-         unweighted average:      6173.0(23)          
-           (of all values)        chi**2/(n-1)=21.040     [critical=3.780]
+                                  6168.862(0)          (external)
+                                  chi**2/(n-1)=0.007     [critical=6.635]
+         unweighted average:      6169.4(6)           
+           (of all values)        chi**2/(n-1)=0.648     [critical=6.635]
 
    suggested adopted result:      6168.862(28)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
           getting the external uncertainty. It is user's decision to make the final choice.
 
 ### weighted average comment:
- 34S  cL E$weighted average of 6179 {I14} from (t,p), 6168.862 {I28} from (n,|g)
- 34S 2cL E=thermal, 6174 {I8} from (d,p), and 6170 {I14} from (p,p)             
+ 34S  cL E$weighted average of 6168.862 {I28} from (n,|g) E=thermal and 6170    
+ 34S 2cL {I14} from (p,p)                                                       
 
 ### unweighted average comment (all non-limit values with/without unc):
- 34S  cL E$unweighted average of 6179 {I14} from (t,p), 6168.862 {I28} from     
- 34S 2cL (n,|g) E=thermal, 6174 {I8} from (d,p), and 6170 {I14} from (p,p)      
+ 34S  cL E$unweighted average of 6168.862 {I28} from (n,|g) E=thermal and 6170  
+ 34S 2cL {I14} from (p,p)                                                       
 
 ### Non-average comment:
- 34S  cL E$from (n,|g) E=thermal. Others: 6179 {I14} from (t,p), 6174 {I8} from 
- 34S 2cL (d,p), and 6170 {I14} from (p,p)                                       
+ 34S  cL E$from (n,|g) E=thermal. Other: 6170 {I14} from (p,p)                  
 
 
-**************** Level=6168.862     Gamma=1479.73 in 34S     *******************ID#=1-24-5
+**************** Level=6168.857     Gamma=1479.73 in 34S     *******************ID#=1-24-5
 
 ------ average RI------
 Data points of RI record
@@ -2542,7 +2525,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=6168.862     Gamma=2864.56 in 34S     *******************ID#=1-24-10
+**************** Level=6168.857     Gamma=2864.56 in 34S     *******************ID#=1-24-10
 
 ------ average RI------
 Data points of RI record
@@ -2575,7 +2558,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG RI$from (n,|g) E=thermal. Other: 100 {I13} from (|a,p|g)               
 
 
-**************** Level=6168.862     Gamma=4040.63 in 34S     *******************ID#=1-24-11
+**************** Level=6168.857     Gamma=4040.63 in 34S     *******************ID#=1-24-11
 
 ------ average RI------
 Data points of RI record
@@ -2606,7 +2589,41 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=6251.22 in 34S     *******************ID#=1-25
+**************** Level=6179 in 34S     *******************ID#=1-25
+
+------ average E------
+Data points of E record
+*                         (T,P)   6179(14)            weight=19.75%
+*                         (D,P)   6174(8)             weight=60.49%
+*                         (P,P)   6170(14)            weight=19.75%
+
+Averaging results:
+           weighted average:      6174(6)              (internal)
+                                  6174.2(20)           (external)
+                                  chi**2/(n-1)=0.104     [critical=4.605]
+         unweighted average:      6174.3(26)          
+           (of all values)        chi**2/(n-1)=20.333     [critical=4.605]
+
+   suggested adopted result:      6174(8)             
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34S  cL E$weighted average of 6179 {I14} from (t,p), 6174 {I8} from (d,p), and 
+ 34S 2cL 6170 {I14} from (p,p)                                                  
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34S  cL E$unweighted average of 6179 {I14} from (t,p), 6174 {I8} from (d,p),   
+ 34S 2cL and 6170 {I14} from (p,p)                                              
+
+### Non-average comment:
+ 34S  cL E$from (d,p). Others: 6179 {I14} from (t,p) and 6170 {I14} from (p,p)  
+
+
+**************** Level=6251.6 in 34S     *******************ID#=1-26
 
 ------ average E------
 Data points of E record
@@ -2660,7 +2677,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 4cL 6251.7 {I19} from ({+36}S,{+34}S|g)                                    
 
 
-**************** Level=6251.22     Gamma=1374.43 in 34S     *******************ID#=1-25-1
+**************** Level=6251.6     Gamma=1375.0 in 34S     *******************ID#=1-26-1
 
 ------ average E------
 Data points of E record
@@ -2690,7 +2707,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG {I20} from (n,|g) E=thermal                                            
 
 
-<For Gamma=1374.43 from Level=6251.22>
+<For Gamma=1375.0 from Level=6251.6>
 ------ average RI------
 Data points of RI record
 *                    (16O,A2PG)   97(21)              weight=14.77%
@@ -2720,7 +2737,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (|a,p|g), and 46 {I10} from (n,|g) E=thermal                           
 
 
-**************** Level=6251.22     Gamma=1562.4 in 34S     *******************ID#=1-25-2
+**************** Level=6251.6     Gamma=1562.5 in 34S     *******************ID#=1-26-2
 
 ------ average E------
 Data points of E record
@@ -2751,7 +2768,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG from (n,|g) E=thermal, and 1562 {I1} from ({+36}S,{+34}S|g)            
 
 
-<For Gamma=1562.4 from Level=6251.22>
+<For Gamma=1562.5 from Level=6251.6>
 ------ average RI------
 Data points of RI record
 *                    (16O,A2PG)   100(21)             weight=32.61%
@@ -2781,7 +2798,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (|a,p|g), and 100 {I25} from (n,|g) E=thermal                          
 
 
-**************** Level=6251.68 in 34S     *******************ID#=1-26
+**************** Level=6251.72 in 34S     *******************ID#=1-27
 
 ------ average E------
 Data points of E record
@@ -2810,7 +2827,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=6.225     [critical=2.802]
 
    suggested adopted result:      6251.68(9)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -2840,7 +2857,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cL {I18} from (p,p), and 6251.7 {I19} from ({+36}S,{+34}S|g)              
 
 
-**************** Level=6251.68     Gamma=572.0 in 34S     *******************ID#=1-26-1
+**************** Level=6251.72     Gamma=572.0 in 34S     *******************ID#=1-27-1
 
 ------ average E------
 Data points of E record
@@ -2855,7 +2872,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.045     [critical=6.635]
 
    suggested adopted result:      572.0(1)            
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -2873,7 +2890,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG E$from ({+16}O,|a2p|g). Other: 571.7 {I6} from (n,|g) E=thermal        
 
 
-<For Gamma=572.0 from Level=6251.68>
+<For Gamma=572.0 from Level=6251.72>
 ------ average RI------
 Data points of RI record
 *                    (16O,A2PG)   28(14)              weight=56.64%
@@ -2902,7 +2919,99 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG from (n,|g) E=thermal                                                  
 
 
-**************** Level=6251.68     Gamma=1626.7 in 34S     *******************ID#=1-26-2
+**************** Level=6251.72     Gamma=1374.43 in 34S     *******************ID#=1-27-2
+
+------ average RI------
+Data points of RI record
+*                    (16O,A2PG)   97(21)              weight=42.35%
+*                        (A,PG)   100(18)             weight=57.65%
+
+Averaging results:
+           weighted average:      99(14)               (internal)
+                                  98.7(15)             (external)
+                                  chi**2/(n-1)=0.012     [critical=6.635]
+         unweighted average:      98.5(15)            
+           (of all values)        chi**2/(n-1)=4.500     [critical=6.635]
+
+   suggested adopted result:      100(18)             
+           (Non-Average)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34S  cG RI$weighted average of 97 {I21} from ({+16}O,|a2p|g) and 100 {I18} from
+ 34S 2cG (|a,p|g)                                                               
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34S  cG RI$unweighted average of 97 {I21} from ({+16}O,|a2p|g) and 100 {I18}   
+ 34S 2cG from (|a,p|g)                                                          
+
+### Non-average comment:
+ 34S  cG RI$from (|a,p|g). Other: 97 {I21} from ({+16}O,|a2p|g)                 
+
+
+**************** Level=6251.72     Gamma=1562.4 in 34S     *******************ID#=1-27-3
+
+------ average E------
+Data points of E record
+*                    (16O,A2PG)   1562.5(5)           weight=80.00%
+*                    (36S,34SG)   1562(1)             weight=20.00%
+
+Averaging results:
+           weighted average:      1562.4(5)            (internal)
+                                  1562.40(20)          (external)
+                                  chi**2/(n-1)=0.200     [critical=6.635]
+         unweighted average:      1562.25(25)         
+           (of all values)        chi**2/(n-1)=0.125     [critical=6.635]
+
+   suggested adopted result:      1562.4(5)           
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34S  cG E$weighted average of 1562.5 {I5} from ({+16}O,|a2p|g) and 1562 {I1}   
+ 34S 2cG from ({+36}S,{+34}S|g)                                                 
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34S  cG E$unweighted average of 1562.5 {I5} from ({+16}O,|a2p|g) and 1562 {I1} 
+ 34S 2cG from ({+36}S,{+34}S|g)                                                 
+
+
+<For Gamma=1562.4 from Level=6251.72>
+------ average RI------
+Data points of RI record
+*                    (16O,A2PG)   100(21)             weight=42.35%
+*                        (A,PG)   75(18)              weight=57.65%
+
+Averaging results:
+           weighted average:      86(14)               (internal)
+                                  86(13)               (external)
+                                  chi**2/(n-1)=0.817     [critical=6.635]
+         unweighted average:      88(13)              
+           (of all values)        chi**2/(n-1)=312.500     [critical=6.635]
+
+   suggested adopted result:      86(18)              
+       (Weighted-Of-All)
+
+NOTE:  Suggested adopted result is just the preference of this average code which adopts
+          an uncertainty no smaller than any input uncertainty and uses combined weight for
+          getting the external uncertainty. It is user's decision to make the final choice.
+
+### weighted average comment:
+ 34S  cG RI$weighted average of 100 {I21} from ({+16}O,|a2p|g) and 75 {I18} from
+ 34S 2cG (|a,p|g)                                                               
+
+### unweighted average comment (all non-limit values with/without unc):
+ 34S  cG RI$unweighted average of 100 {I21} from ({+16}O,|a2p|g) and 75 {I18}   
+ 34S 2cG from (|a,p|g)                                                          
+
+
+**************** Level=6251.72     Gamma=1626.7 in 34S     *******************ID#=1-27-4
 
 ------ average E------
 Data points of E record
@@ -2932,7 +3041,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG {I10} from (n,|g) E=thermal                                            
 
 
-<For Gamma=1626.7 from Level=6251.68>
+<For Gamma=1626.7 from Level=6251.72>
 ------ average RI------
 Data points of RI record
 *                    (16O,A2PG)   45(10)              weight=94.12%
@@ -2961,7 +3070,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG from (n,|g) E=thermal                                                  
 
 
-**************** Level=6342.52 in 34S     *******************ID#=1-27
+**************** Level=6342.51 in 34S     *******************ID#=1-28
 
 ------ average E------
 Data points of E record
@@ -2979,7 +3088,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=14.708     [critical=3.780]
 
    suggested adopted result:      6342.52(10)         
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -2998,7 +3107,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 6340 {I14} from (p,p)                                       
 
 
-**************** Level=6342.52     Gamma=3038.18 in 34S     *******************ID#=1-27-1
+**************** Level=6342.51     Gamma=3038.18 in 34S     *******************ID#=1-28-1
 
 ------ average RI------
 Data points of RI record
@@ -3031,7 +3140,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG RI$from (|a,p|g)                                                       
 
 
-**************** Level=6342.52     Gamma=6341.58 in 34S     *******************ID#=1-27-2
+**************** Level=6342.51     Gamma=6341.58 in 34S     *******************ID#=1-28-2
 
 ------ average RI------
 Data points of RI record
@@ -3061,7 +3170,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG E=thermal                                                              
 
 
-**************** Level=6421.34 in 34S     *******************ID#=1-28
+**************** Level=6421.34 in 34S     *******************ID#=1-29
 
 ------ average E------
 Data points of E record
@@ -3079,7 +3188,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=16.922     [critical=3.780]
 
    suggested adopted result:      6421.34(8)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3098,7 +3207,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 6414 {I14} from (p,p)                                       
 
 
-**************** Level=6421.34     Gamma=1544.41 in 34S     *******************ID#=1-28-1
+**************** Level=6421.34     Gamma=1544.41 in 34S     *******************ID#=1-29-1
 
 ------ average RI------
 Data points of RI record
@@ -3134,7 +3243,7 @@ Note:  Combined weight means both unc+ and unc- of each input value are used to 
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=6421.34     Gamma=1732.39 in 34S     *******************ID#=1-28-2
+**************** Level=6421.34     Gamma=1732.39 in 34S     *******************ID#=1-29-2
 
 ------ average RI------
 Data points of RI record
@@ -3164,7 +3273,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG (n,|g) E=thermal                                                       
 
 
-**************** Level=6428.13 in 34S     *******************ID#=1-29
+**************** Level=6428.12 in 34S     *******************ID#=1-30
 
 ------ average E------
 Data points of E record
@@ -3181,7 +3290,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=51.162     [critical=4.605]
 
    suggested adopted result:      6428.13(7)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3200,7 +3309,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=6478.770 in 34S     *******************ID#=1-30
+**************** Level=6478.765 in 34S     *******************ID#=1-31
 
 ------ average E------
 Data points of E record
@@ -3218,7 +3327,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=18.473     [critical=3.780]
 
    suggested adopted result:      6478.770(22)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3237,7 +3346,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 6479 {I18} from (p,p)                                       
 
 
-**************** Level=6478.770     Gamma=3174.37 in 34S     *******************ID#=1-30-10
+**************** Level=6478.765     Gamma=3174.37 in 34S     *******************ID#=1-31-10
 
 ------ average RI------
 Data points of RI record
@@ -3270,7 +3379,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG RI$from (n,|g) E=thermal. Other: 100 {I17} from (|a,p|g)               
 
 
-**************** Level=6478.770     Gamma=4350.85 in 34S     *******************ID#=1-30-11
+**************** Level=6478.765     Gamma=4350.85 in 34S     *******************ID#=1-31-11
 
 ------ average RI------
 Data points of RI record
@@ -3300,7 +3409,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG E=thermal                                                              
 
 
-**************** Level=6639 in 34S     *******************ID#=1-32
+**************** Level=6639 in 34S     *******************ID#=1-33
 
 ------ average E------
 Data points of E record
@@ -3318,7 +3427,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=4.917     [critical=3.780]
 
    suggested adopted result:      6639(1)             
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3337,7 +3446,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 6635 {I14} from (p,p)                                              
 
 
-**************** Level=6685.333 in 34S     *******************ID#=1-33
+**************** Level=6685.328 in 34S     *******************ID#=1-34
 
 ------ average E------
 Data points of E record
@@ -3355,7 +3464,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=22.667     [critical=3.780]
 
    suggested adopted result:      6685.333(29)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3374,7 +3483,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 6680 {I14} from (p,p)                                       
 
 
-**************** Level=6742 in 34S     *******************ID#=1-34
+**************** Level=6742 in 34S     *******************ID#=1-35
 
 ------ average E------
 Data points of E record
@@ -3388,8 +3497,8 @@ Averaging results:
          unweighted average:      6740.5(25)          
            (of all values)        chi**2/(n-1)=12.500     [critical=6.635]
 
-   suggested adopted result:      6742(15)            
-       (Weighted-Of-All)
+   suggested adopted result:      6743(15)            
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3405,7 +3514,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (t,p). Other: 6738 {I25} from (p,p)                             
 
 
-**************** Level=6828.83 in 34S     *******************ID#=1-35
+**************** Level=6828.82 in 34S     *******************ID#=1-36
 
 ------ average E------
 Data points of E record
@@ -3423,7 +3532,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=31.114     [critical=3.780]
 
    suggested adopted result:      6828.83(18)         
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3442,7 +3551,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 6819 {I26} from (p,p)                                       
 
 
-**************** Level=6847.90 in 34S     *******************ID#=1-36
+**************** Level=6847.90 in 34S     *******************ID#=1-37
 
 ------ average E------
 Data points of E record
@@ -3475,7 +3584,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL E=thermal, 6832 {I9} from (d,p), and 6860 {I14} from (p,p)             
 
 
-**************** Level=6864 in 34S     *******************ID#=1-37
+**************** Level=6864 in 34S     *******************ID#=1-38
 
 ------ average E------
 Data points of E record
@@ -3492,7 +3601,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=20.333     [critical=4.605]
 
    suggested adopted result:      6864(1)             
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3511,7 +3620,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (p,p)                                                                  
 
 
-**************** Level=6890 in 34S     *******************ID#=1-38
+**************** Level=6890 in 34S     *******************ID#=1-39
 
 ------ average E------
 Data points of E record
@@ -3529,7 +3638,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=99.667     [critical=3.780]
 
    suggested adopted result:      6890(1)             
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3548,7 +3657,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 6910 {I40} from (d,{+3}He)                                         
 
 
-**************** Level=6954.218 in 34S     *******************ID#=1-39
+**************** Level=6954.214 in 34S     *******************ID#=1-40
 
 ------ average E------
 Data points of E record
@@ -3566,7 +3675,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=14.153     [critical=3.780]
 
    suggested adopted result:      6954.218(30)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3585,7 +3694,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 6950 {I14} from (p,p)                                       
 
 
-**************** Level=7110.451 in 34S     *******************ID#=1-40
+**************** Level=7110.447 in 34S     *******************ID#=1-41
 
 ------ average E------
 Data points of E record
@@ -3603,7 +3712,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=3.266     [critical=3.780]
 
    suggested adopted result:      7110.451(33)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3622,7 +3731,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 7110 {I14} from (p,p)                                       
 
 
-**************** Level=7111 in 34S     *******************ID#=1-41
+**************** Level=7111 in 34S     *******************ID#=1-42
 
 ------ average E------
 Data points of E record
@@ -3636,8 +3745,8 @@ Averaging results:
          unweighted average:      7111.0(10)          
            (of all values)        chi**2/(n-1)=2.000     [critical=6.635]
 
-   suggested adopted result:      7111(14)            
-       (Weighted-Of-All)
+   suggested adopted result:      7110(14)            
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3653,7 +3762,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (p,p). Other: 7112 {I15} from (t,p)                             
 
 
-**************** Level=7164.47 in 34S     *******************ID#=1-42
+**************** Level=7164.46 in 34S     *******************ID#=1-43
 
 ------ average E------
 Data points of E record
@@ -3669,7 +3778,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=325.885     [critical=6.635]
 
    suggested adopted result:      7164.47(17)         
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3687,7 +3796,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 7190 {I40} from (d,{+3}He)             
 
 
-**************** Level=7219.28 in 34S     *******************ID#=1-43
+**************** Level=7219.28 in 34S     *******************ID#=1-44
 
 ------ average E------
 Data points of E record
@@ -3723,7 +3832,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cL {I40} from (d,{+3}He)                                                  
 
 
-**************** Level=7248 in 34S     *******************ID#=1-44
+**************** Level=7248 in 34S     *******************ID#=1-45
 
 ------ average E------
 Data points of E record
@@ -3741,7 +3850,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=814.250     [critical=3.780]
 
    suggested adopted result:      7248(2)             
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3760,7 +3869,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7190 {I40} from (d,{+3}He)                                         
 
 
-**************** Level=7248.05 in 34S     *******************ID#=1-45
+**************** Level=7248.04 in 34S     *******************ID#=1-46
 
 ------ average E------
 Data points of E record
@@ -3778,7 +3887,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=814.757     [critical=3.780]
 
    suggested adopted result:      7248.05(11)         
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3797,7 +3906,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (p,p), and 7190 {I40} from (d,{+3}He)                                  
 
 
-**************** Level=7245 in 34S     *******************ID#=1-46
+**************** Level=7245 in 34S     *******************ID#=1-47
 
 ------ average E------
 Data points of E record
@@ -3828,7 +3937,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7190 {I40} from (d,{+3}He)                                         
 
 
-**************** Level=7367.42 in 34S     *******************ID#=1-47
+**************** Level=7367.42 in 34S     *******************ID#=1-48
 
 ------ average E------
 Data points of E record
@@ -3860,7 +3969,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (d,p), and 7360 {I18} from (p,p)                                  
 
 
-**************** Level=7388 in 34S     *******************ID#=1-48
+**************** Level=7388 in 34S     *******************ID#=1-49
 
 ------ average E------
 Data points of E record
@@ -3878,7 +3987,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=20.250     [critical=3.780]
 
    suggested adopted result:      7392(1)             
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3897,7 +4006,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7389 {I18} from (p,p)                                              
 
 
-**************** Level=7392 in 34S     *******************ID#=1-49
+**************** Level=7392 in 34S     *******************ID#=1-50
 
 ------ average E------
 Data points of E record
@@ -3915,7 +4024,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=20.250     [critical=3.780]
 
    suggested adopted result:      7392(1)             
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -3934,7 +4043,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7389 {I18} from (p,p)                                              
 
 
-**************** Level=7467.75 in 34S     *******************ID#=1-50
+**************** Level=7467.73 in 34S     *******************ID#=1-51
 
 ------ average E------
 Data points of E record
@@ -3966,7 +4075,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (n,|g) E=thermal, and 7479 {I5} from (p,p)                             
 
 
-**************** Level=7552.70 in 34S     *******************ID#=1-51
+**************** Level=7552.69 in 34S     *******************ID#=1-52
 
 ------ average E------
 Data points of E record
@@ -3983,7 +4092,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=20.730     [critical=4.605]
 
    suggested adopted result:      7552.70(8)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4002,7 +4111,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=7629.907 in 34S     *******************ID#=1-52
+**************** Level=7629.903 in 34S     *******************ID#=1-53
 
 ------ average E------
 Data points of E record
@@ -4021,7 +4130,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=19.181     [critical=3.319]
 
    suggested adopted result:      7629.907(21)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4042,7 +4151,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (t,p), 7632 {I10} from (d,p), and 7625 {I5} from (p,p)            
 
 
-**************** Level=7655 in 34S     *******************ID#=1-53
+**************** Level=7655 in 34S     *******************ID#=1-54
 
 ------ average E------
 Data points of E record
@@ -4060,7 +4169,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=138.917     [critical=3.780]
 
    suggested adopted result:      7629(1)             
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4079,7 +4188,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7649 {I14} from (p,p)                                              
 
 
-**************** Level=7621 in 34S     *******************ID#=1-54
+**************** Level=7621 in 34S     *******************ID#=1-55
 
 ------ average E------
 Data points of E record
@@ -4110,7 +4219,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7649 {I14} from (p,p)                                              
 
 
-**************** Level=7730.79 in 34S     *******************ID#=1-55
+**************** Level=7730.79 in 34S     *******************ID#=1-56
 
 ------ average E------
 Data points of E record
@@ -4128,7 +4237,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=77.736     [critical=3.780]
 
    suggested adopted result:      7730.79(15)         
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4147,7 +4256,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (d,p), and 7732 {I5} from (p,p)                                        
 
 
-**************** Level=7739 in 34S     *******************ID#=1-56
+**************** Level=7739 in 34S     *******************ID#=1-57
 
 ------ average E------
 Data points of E record
@@ -4178,7 +4287,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7780 {I30} from (d,{+3}He)                                         
 
 
-**************** Level=7753 in 34S     *******************ID#=1-57
+**************** Level=7753 in 34S     *******************ID#=1-58
 
 ------ average E------
 Data points of E record
@@ -4209,7 +4318,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7732 {I5} from (p,p)                                               
 
 
-**************** Level=7781.22 in 34S     *******************ID#=1-58
+**************** Level=7781.21 in 34S     *******************ID#=1-59
 
 ------ average E------
 Data points of E record
@@ -4227,7 +4336,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=4.225     [critical=3.780]
 
    suggested adopted result:      7781.22(6)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4246,7 +4355,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (|g,|g'), and 7779 {I5} from (p,p)                                     
 
 
-**************** Level=7790.2 in 34S     *******************ID#=1-59
+**************** Level=7790.8 in 34S     *******************ID#=1-60
 
 ------ average E------
 Data points of E record
@@ -4289,7 +4398,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 3cL ({+36}S,{+34}S|g)                                                      
 
 
-<For Level=7790.2>
+<For Level=7790.8>
 ------ average T------
 Data points of T record
 *                    (16O,A2PG)   132(35)             weight=31.98%
@@ -4318,7 +4427,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL {I24} from (|a,p|g)                                                    
 
 
-**************** Level=7790.2     Gamma=1539.7 in 34S     *******************ID#=1-59-1
+**************** Level=7790.8     Gamma=1539.7 in 34S     *******************ID#=1-60-1
 
 ------ average E------
 Data points of E record
@@ -4348,7 +4457,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cG from ({+36}S,{+34}S|g)                                                 
 
 
-**************** Level=7804 in 34S     *******************ID#=1-60
+**************** Level=7804 in 34S     *******************ID#=1-61
 
 ------ average E------
 Data points of E record
@@ -4379,7 +4488,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 7780 {I30} from (d,{+3}He)                                         
 
 
-**************** Level=7974.72 in 34S     *******************ID#=1-61
+**************** Level=7974.72 in 34S     *******************ID#=1-62
 
 ------ average E------
 Data points of E record
@@ -4396,7 +4505,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=6.746     [critical=4.605]
 
    suggested adopted result:      7974.72(16)         
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4415,7 +4524,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=8025 in 34S     *******************ID#=1-62
+**************** Level=8025 in 34S     *******************ID#=1-63
 
 ------ average E------
 Data points of E record
@@ -4443,7 +4552,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$unweighted average of 8025 {I16} from (t,p) and 8034 {I5} from (p,p) 
 
 
-**************** Level=8036.31 in 34S     *******************ID#=1-63
+**************** Level=8036.30 in 34S     *******************ID#=1-64
 
 ------ average E------
 Data points of E record
@@ -4459,7 +4568,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=2.668     [critical=6.635]
 
    suggested adopted result:      8036.31(14)         
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4477,7 +4586,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 8034 {I5} from (p,p)                   
 
 
-**************** Level=8138.08 in 34S     *******************ID#=1-65
+**************** Level=8138.08 in 34S     *******************ID#=1-66
 
 ------ average E------
 Data points of E record
@@ -4493,7 +4602,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=7.683     [critical=6.635]
 
    suggested adopted result:      8138.08(7)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4511,7 +4620,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 8142 {I12} from (d,p)                  
 
 
-**************** Level=8185.46 in 34S     *******************ID#=1-67
+**************** Level=8185.45 in 34S     *******************ID#=1-68
 
 ------ average E------
 Data points of E record
@@ -4527,7 +4636,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.106     [critical=6.635]
 
    suggested adopted result:      8185.46(12)         
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4545,7 +4654,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 8185 {I3} from (|g,|g')                
 
 
-**************** Level=8255 in 34S     *******************ID#=1-69
+**************** Level=8255 in 34S     *******************ID#=1-70
 
 ------ average E------
 Data points of E record
@@ -4573,7 +4682,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$unweighted average of 8255 {I16} from (t,p) and 8299 {I14} from (d,p)
 
 
-**************** Level=8294.40 in 34S     *******************ID#=1-70
+**************** Level=8294.39 in 34S     *******************ID#=1-71
 
 ------ average E------
 Data points of E record
@@ -4592,7 +4701,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=6.332     [critical=3.319]
 
    suggested adopted result:      8294.40(9)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4613,7 +4722,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (t,p), 8299 {I14} from (d,p), and 8296 {I5} from (p,p)            
 
 
-**************** Level=8370.6 in 34S     *******************ID#=1-71
+**************** Level=8371.0 in 34S     *******************ID#=1-72
 
 ------ average E------
 Data points of E record
@@ -4644,7 +4753,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (|a,p|g), and 8372.0 {I26} from ({+36}S,{+34}S|g)                 
 
 
-<For Level=8370.6>
+<For Level=8371.0>
 ------ average T------
 Data points of T record
 *                    (16O,A2PG)   85(28)              weight=20.00%
@@ -4658,7 +4767,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=2.000     [critical=6.635]
 
    suggested adopted result:      83(14)              
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4676,7 +4785,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL T$from (|a,p|g). Other: 85 fs {I28} from ({+16}O,|a2p|g)               
 
 
-**************** Level=8370.6     Gamma=2680.5 in 34S     *******************ID#=1-71-2
+**************** Level=8371.0     Gamma=2680.5 in 34S     *******************ID#=1-72-2
 
 ------ average E------
 Data points of E record
@@ -4691,7 +4800,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.125     [critical=6.635]
 
    suggested adopted result:      2680.5(6)           
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4709,7 +4818,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cG E$from ({+16}O,|a2p|g). Other: 2681 {I2} from ({+36}S,{+34}S|g)        
 
 
-**************** Level=8385.41 in 34S     *******************ID#=1-72
+**************** Level=8385.40 in 34S     *******************ID#=1-73
 
 ------ average E------
 Data points of E record
@@ -4727,7 +4836,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=1.179     [critical=3.780]
 
    suggested adopted result:      8385.41(6)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4746,7 +4855,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (|g,|g'), and 8385 {I5} from (p,p)                                     
 
 
-**************** Level=8423 in 34S     *******************ID#=1-73
+**************** Level=8423 in 34S     *******************ID#=1-74
 
 ------ average E------
 Data points of E record
@@ -4761,7 +4870,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=12.500     [critical=6.635]
 
    suggested adopted result:      8423(5)             
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4777,7 +4886,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (p,p). Other: 8418 {I16} from (t,p)                             
 
 
-**************** Level=8503.6 in 34S     *******************ID#=1-74
+**************** Level=8503.7 in 34S     *******************ID#=1-75
 
 ------ average E------
 Data points of E record
@@ -4817,7 +4926,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (|a,p|g), and 8511 {I5} from (p,p)                                
 
 
-**************** Level=8506.77 in 34S     *******************ID#=1-75
+**************** Level=8506.77 in 34S     *******************ID#=1-76
 
 ------ average E------
 Data points of E record
@@ -4835,7 +4944,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=50.148     [critical=3.780]
 
    suggested adopted result:      8506.77(4)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4854,7 +4963,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (|g,|g'), and 8511 {I5} from (p,p)                                     
 
 
-**************** Level=8615.74 in 34S     *******************ID#=1-77
+**************** Level=8615.74 in 34S     *******************ID#=1-78
 
 ------ average E------
 Data points of E record
@@ -4871,7 +4980,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=15.481     [critical=4.605]
 
    suggested adopted result:      8615.74(4)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4890,7 +4999,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=8656 in 34S     *******************ID#=1-78
+**************** Level=8656 in 34S     *******************ID#=1-79
 
 ------ average E------
 Data points of E record
@@ -4921,7 +5030,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL and 8656 {I5} from (p,p)                                               
 
 
-**************** Level=8727.64 in 34S     *******************ID#=1-82
+**************** Level=8727.63 in 34S     *******************ID#=1-83
 
 ------ average E------
 Data points of E record
@@ -4952,7 +5061,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL {I5} from (p,p)                                                        
 
 
-**************** Level=8735.0 in 34S     *******************ID#=1-83
+**************** Level=8734.8 in 34S     *******************ID#=1-84
 
 ------ average E------
 Data points of E record
@@ -4968,7 +5077,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=12.500     [critical=6.635]
 
    suggested adopted result:      8735.0(8)           
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -4986,7 +5095,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from ({+16}O,|a2p|g). Other: 8740 {I10} from (p,p)                   
 
 
-**************** Level=8805.6 in 34S     *******************ID#=1-85
+**************** Level=8805.62 in 34S     *******************ID#=1-86
 
 ------ average E------
 Data points of E record
@@ -5002,7 +5111,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=5.781     [critical=6.635]
 
    suggested adopted result:      8805.6(3)           
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -5020,7 +5129,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 8809 {I5} from (p,p)                   
 
 
-**************** Level=9158.715 in 34S     *******************ID#=1-92
+**************** Level=9158.711 in 34S     *******************ID#=1-93
 
 ------ average E------
 Data points of E record
@@ -5051,7 +5160,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL {I5} from (p,p)                                                        
 
 
-**************** Level=9208.04 in 34S     *******************ID#=1-94
+**************** Level=9208.03 in 34S     *******************ID#=1-95
 
 ------ average E------
 Data points of E record
@@ -5067,7 +5176,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=4.621     [critical=6.635]
 
    suggested adopted result:      9208.04(5)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -5085,7 +5194,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 9205 {I7} from (p,p)                   
 
 
-**************** Level=9479 in 34S     *******************ID#=1-100
+**************** Level=9479 in 34S     *******************ID#=1-101
 
 ------ average E------
 Data points of E record
@@ -5116,7 +5225,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e'), and 9481 {I5} from (p,p)                                       
 
 
-**************** Level=9546.09 in 34S     *******************ID#=1-101
+**************** Level=9546.08 in 34S     *******************ID#=1-102
 
 ------ average E------
 Data points of E record
@@ -5147,7 +5256,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL {I10} from (p,p)                                                       
 
 
-**************** Level=9598.42 in 34S     *******************ID#=1-103
+**************** Level=9598.42 in 34S     *******************ID#=1-104
 
 ------ average E------
 Data points of E record
@@ -5163,7 +5272,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=3.328     [critical=6.635]
 
    suggested adopted result:      9598.42(8)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -5181,7 +5290,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 9601 {I5} from (p,p)                   
 
 
-**************** Level=9707 in 34S     *******************ID#=1-106
+**************** Level=9707 in 34S     *******************ID#=1-107
 
 ------ average E------
 Data points of E record
@@ -5210,7 +5319,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (p,p)                                                                  
 
 
-**************** Level=9836.70 in 34S     *******************ID#=1-108
+**************** Level=9836.69 in 34S     *******************ID#=1-109
 
 ------ average E------
 Data points of E record
@@ -5226,7 +5335,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=53.043     [critical=6.635]
 
    suggested adopted result:      9836.70(6)          
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -5244,7 +5353,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 9847 {I10} from (p,p)                  
 
 
-**************** Level=9868 in 34S     *******************ID#=1-109
+**************** Level=9868 in 34S     *******************ID#=1-110
 
 ------ average E------
 Data points of E record
@@ -5275,7 +5384,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e'), and 9872 {I5} from (p,p)                                       
 
 
-**************** Level=9912.9 in 34S     *******************ID#=1-110
+**************** Level=9912.8 in 34S     *******************ID#=1-111
 
 ------ average E------
 Data points of E record
@@ -5306,7 +5415,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL from (p,p)                                                             
 
 
-**************** Level=9933.36 in 34S     *******************ID#=1-111
+**************** Level=9933.36 in 34S     *******************ID#=1-112
 
 ------ average E------
 Data points of E record
@@ -5338,7 +5447,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (n,|g) E=thermal, and 9925 {I5} from (p,p)                             
 
 
-**************** Level=9981 in 34S     *******************ID#=1-112
+**************** Level=9981 in 34S     *******************ID#=1-113
 
 ------ average E------
 Data points of E record
@@ -5367,7 +5476,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (p,p)                                                                  
 
 
-**************** Level=10000 in 34S     *******************ID#=1-113
+**************** Level=10000 in 34S     *******************ID#=1-114
 
 ------ average E------
 Data points of E record
@@ -5396,7 +5505,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (p,p)                                                                  
 
 
-**************** Level=10092.21 in 34S     *******************ID#=1-114
+**************** Level=10092.21 in 34S     *******************ID#=1-115
 
 ------ average E------
 Data points of E record
@@ -5412,7 +5521,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.022     [critical=6.635]
 
    suggested adopted result:      10092.21(15)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -5430,7 +5539,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 10092 {I5} from (|a,|g)                
 
 
-**************** Level=10170 in 34S     *******************ID#=1-118
+**************** Level=10170 in 34S     *******************ID#=1-119
 
 ------ average E------
 Data points of E record
@@ -5460,7 +5569,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=10179.59 in 34S     *******************ID#=1-119
+**************** Level=10179.59 in 34S     *******************ID#=1-120
 
 ------ average E------
 Data points of E record
@@ -5476,7 +5585,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.084     [critical=6.635]
 
    suggested adopted result:      10179.59(5)         
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -5494,7 +5603,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 10180 {I10} from (e,e')                
 
 
-**************** Level=10201 in 34S     *******************ID#=1-120
+**************** Level=10201 in 34S     *******************ID#=1-121
 
 ------ average E------
 Data points of E record
@@ -5524,7 +5633,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=10212.15 in 34S     *******************ID#=1-121
+**************** Level=10212.15 in 34S     *******************ID#=1-122
 
 ------ average E------
 Data points of E record
@@ -5555,7 +5664,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (n,|g) E=thermal                                                       
 
 
-**************** Level=10311.53 in 34S     *******************ID#=1-124
+**************** Level=10311.527 in 34S     *******************ID#=1-125
 
 ------ average E------
 Data points of E record
@@ -5571,7 +5680,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=14.959     [critical=6.635]
 
    suggested adopted result:      10311.53(3)         
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -5589,7 +5698,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 10317 {I5} from (|a,|g)                
 
 
-**************** Level=10650.13 in 34S     *******************ID#=1-137
+**************** Level=10650.12 in 34S     *******************ID#=1-138
 
 ------ average E------
 Data points of E record
@@ -5621,7 +5730,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (n,|g) E=thermal, and 10660 {I10} from (e,e')                          
 
 
-**************** Level=10651.6 in 34S     *******************ID#=1-138
+**************** Level=10651.5 in 34S     *******************ID#=1-139
 
 ------ average E------
 Data points of E record
@@ -5652,7 +5761,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL {I5} from (|a,|g)                                                      
 
 
-**************** Level=10662 in 34S     *******************ID#=1-139
+**************** Level=10662 in 34S     *******************ID#=1-140
 
 ------ average E------
 Data points of E record
@@ -5682,7 +5791,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=10705 in 34S     *******************ID#=1-141
+**************** Level=10705 in 34S     *******************ID#=1-142
 
 ------ average E------
 Data points of E record
@@ -5712,7 +5821,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=10790 in 34S     *******************ID#=1-143
+**************** Level=10790 in 34S     *******************ID#=1-144
 
 ------ average E------
 Data points of E record
@@ -5742,7 +5851,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (|g,|g')                                                               
 
 
-**************** Level=10802 in 34S     *******************ID#=1-144
+**************** Level=10802 in 34S     *******************ID#=1-145
 
 ------ average E------
 Data points of E record
@@ -5772,7 +5881,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=10840.63 in 34S     *******************ID#=1-145
+**************** Level=10840.62 in 34S     *******************ID#=1-146
 
 ------ average E------
 Data points of E record
@@ -5803,7 +5912,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (n,|g) E=thermal                                                       
 
 
-**************** Level=11015 in 34S     *******************ID#=1-151
+**************** Level=11015 in 34S     *******************ID#=1-152
 
 ------ average E------
 Data points of E record
@@ -5833,7 +5942,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=11020 in 34S     *******************ID#=1-152
+**************** Level=11020 in 34S     *******************ID#=1-153
 
 ------ average E------
 Data points of E record
@@ -5863,7 +5972,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=11024.95 in 34S     *******************ID#=1-153
+**************** Level=11024.94 in 34S     *******************ID#=1-154
 
 ------ average E------
 Data points of E record
@@ -5879,7 +5988,7 @@ Averaging results:
            (of all values)        chi**2/(n-1)=0.001     [critical=6.635]
 
    suggested adopted result:      11024.95(11)        
-       (Weighted-Of-All)
+           (Non-Average)
 
 NOTE:  Suggested adopted result is just the preference of this average code which adopts
           an uncertainty no smaller than any input uncertainty and uses combined weight for
@@ -5897,7 +6006,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S  cL E$from (n,|g) E=thermal. Other: 11025 {I5} from (|a,|g)                
 
 
-**************** Level=11047 in 34S     *******************ID#=1-154
+**************** Level=11047 in 34S     *******************ID#=1-155
 
 ------ average E------
 Data points of E record
@@ -5927,7 +6036,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=11417.22 in 34S     *******************ID#=1-174
+**************** Level=11417.219 in 34S     *******************ID#=1-175
 
 ------ average E------
 Data points of E record
@@ -5958,7 +6067,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (n,|g) E=thermal                                                       
 
 
-**************** Level=12120 in 34S     *******************ID#=1-240
+**************** Level=12120 in 34S     *******************ID#=1-241
 
 ------ average E------
 Data points of E record
@@ -5988,7 +6097,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=12137 in 34S     *******************ID#=1-241
+**************** Level=12137 in 34S     *******************ID#=1-242
 
 ------ average E------
 Data points of E record
@@ -6018,7 +6127,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=12141.4 in 34S     *******************ID#=1-242
+**************** Level=12141.3 in 34S     *******************ID#=1-243
 
 ------ average E------
 Data points of E record
@@ -6049,7 +6158,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL {I5} from (|a,|g)                                                      
 
 
-**************** Level=12151 in 34S     *******************ID#=1-243
+**************** Level=12151 in 34S     *******************ID#=1-244
 
 ------ average E------
 Data points of E record
@@ -6079,7 +6188,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=12165 in 34S     *******************ID#=1-244
+**************** Level=12165 in 34S     *******************ID#=1-245
 
 ------ average E------
 Data points of E record
@@ -6109,7 +6218,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=12173 in 34S     *******************ID#=1-245
+**************** Level=12173 in 34S     *******************ID#=1-246
 
 ------ average E------
 Data points of E record
@@ -6139,7 +6248,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=12180 in 34S     *******************ID#=1-246
+**************** Level=12180 in 34S     *******************ID#=1-247
 
 ------ average E------
 Data points of E record
@@ -6169,7 +6278,7 @@ NOTE:  Suggested adopted result is just the preference of this average code whic
  34S 2cL (e,e')                                                                 
 
 
-**************** Level=12210 in 34S     *******************ID#=1-248
+**************** Level=12210 in 34S     *******************ID#=1-249
 
 ------ average E------
 Data points of E record

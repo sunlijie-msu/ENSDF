@@ -1,205 +1,56 @@
-Program for consistency check: output for Error and Warnings (version 08/20/2026)
-Generated at: Mon 09/21/2026 at 06:45:44 PM EDT
+Program for consistency check: output for Error and Warnings (version 09/22/2026)
+Generated at: Thu 09/24/2026 at 01:46:17 AM EDT
 
 ################################################################################
 In Adopted dataset of 34S
 
- 34S   L 2127.564  13 2+               0.315 PS  12                             
- 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 2126.7|g, E2 to 0+, 
-                                                            *                     <E> Quoted EG=2126.7 inconsistent with record EG=2127.498
- 34S   L 3304.212  13 2+               122 FS    9                              
- 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 3303.1|g, E2 to 0+, 
-                                                            *                     <E> Quoted EG=3303.1 inconsistent with record EG=3304.029
- 34S   L 4074.666  20 1+               17 FS     LT                             
- 34S  cL J$spin=1 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 1945.5|g, M1+E2 to  
-                                                            *                     <E> Quoted EG=1945.5 inconsistent with record EG=1947.060
- 34S   L 4114.81   2  2+               72 FS     7                              
- 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 4113.7|g, E2 to 0+, 
-                                                            *                     <E> Quoted EG=4113.7 inconsistent with record EG=4114.52
- 34S   L 4688.97   4  4+               88 FS     7                              
- 34S 2cL 2560.5|g, E2 to 2+, 2127.0 level.                                      
-         *                                                                        <E> Quoted EG=2560.5 inconsistent with record EG=2561.35
-                             *                                                    <E> Quoted EL=2127.0 inconsistent with record EL=2127.564
- 34S   L 4876.842  23 3+               40 FS     15                             
- 34S X L XREF=ACGHMPR(4874)a(4880*)g
-                                 *                                                <W> Check if * is on a single appearance of a XREF tag=a
- 34S  cL J$spin=3 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 2750.9|g, M1+E2 to  
-                                                            *                     <E> Quoted EG=2750.9 inconsistent with record EG=2749.24
- 34S   L 4889.76   2  2+               36 FS     10                             
- 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 4890.7|g, E2 to 0+, 
-                                                            *                     <E> Quoted EG=4890.7 inconsistent with record EG=4889.30
- 34S   L 5322.514  28 2+               17 FS     7                              
- 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 3191.6|g, M1+E2 to  
-                                                            *                     <E> Quoted EG=3191.6 inconsistent with record EG=3194.74
- 34S   L 5380.99   3  1+               49 FS     LE                             
- 34S  cL J$spin=1 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 3255|g, M1+E2 to 2+,
-                                                            *                     <E> Quoted EG=3255 inconsistent with record EG=3253.21
- 34S   L 5690.8    6  5-               36.9 PS   17                         C   
- 34S 2cL 1000|g, E1 to 4+, 4687.6 level.                                        
-         *                                                                        <E> Quoted EG=1000 inconsistent with record EG=1001.5
-                           *                                                      <E> Quoted EL=4687.6 inconsistent with record EL=4688.97
- 34S   L 6168.862  28 3                9.0 FS    LT                             
- 34S 2cL from the strongest branch 2864|g, M1+E2 to 2+, 3303.2 level. |p=- from 
-                                   *                                              <E> Quoted EG=2864 inconsistent with record EG=2864.56
-                                                        *                         <E> Quoted EL=3303.2 inconsistent with record EL=3304.212
- 34S   G 2864.56   4  100    10 M1+E2    -0.23   7                              
-                               *                                                  <W> Mult=M1+E2 but parity-change unknown from deltaJPI
-                                                                                        JI=3 JF(3304.212)=2+
- 34S   L 6251.22   19 4+               0.42 PS   +49-21                         
- 34S  cL J$spin=4 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 1375|g, M1+E2 to 3+,
-                                                            *                     <E> Quoted EG=1375 inconsistent with record EG=1374.43
- 34S   L 6251.68   9  (3)-                                                      
- 34S X L XREF=HN(6256*)PRW(6248*)a(6250*)g(*)
-         *                                                                        <W> XREF tag=g: level possibly not or inconsistent (E,JPI) in g=208PB(36S,34SG)
-                                                                                        closest level in g=208PB(36S,34SG)
-                                                                                        6251.7     19 (4-)                
- 34S  cL J$572.0|g, D, |DJ=1 to 2+, 5679 level in {+24}Mg({+16}O,|a2p|g). |p=-  
-                                    *                                             <E> Quoted EL=5679 inconsistent with record EL=5679.928
+ 34S   L 6251.72   7  4-               0.42 PS   +49-21                         
  34S   G 572.0     1  28     14 D                                           M   
- 34S   G 1626.7    5  45     10                                             M   
-                     *                                                            <W> Gamma intensity not normalized with strongest=100!
- 34S   L 6421.34   8  4-               6.9 FS    LT                             
- 34S 2cL either E2 or M2 for 1732|g to 4+, 4687.6 level would be ruled out by   
-                                           *                                      <E> Quoted EL=4687.6 inconsistent with record EL=4688.97
- 34S   L 6685.333  29 (0:3)-                                                    
- 34S  cL J$929|g to 1-, 5575 level. |p=- from L=1 from 3/2+ in {+33}S(d,p).     
-                        *                                                         <E> Quoted EL=5575 inconsistent with record EL=5755.876
- 34S   L 6742      15 2(+),4(+)        6.9 FS    LT                             
- 34S 2cL 2127.0 level and 2043|g to 4+, 4687.6 level.                           
-                                        *                                         <E> Quoted EL=4687.6 inconsistent with record EL=4688.97
- 34S   L 6864      1  2(+),4(+)        28 FS     7                          P   
- 34S 2cL 2176|g to 4+, 4687.6 level and 4737|g to 2+, 2127.0 level.             
-                       *                                                          <E> Quoted EL=4687.6 inconsistent with record EL=4688.97
-                                                      *                           <E> Quoted EL=2127.0 inconsistent with record EL=2127.564
- 34S   L 7219.28   6  2+               12 FS     LT                             
- 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 7219|g, E2 to 0+,   
-                                                            *                     <E> Quoted EG=7219 inconsistent with record EG=7218.48
- 34S   L 7248      2  (4)              14 FS     7                          P   
- 34S  cL J$spin=(2,4) from p|g(|q) in {+31}P(|a,p|g). 1560|g to 5-, 5688 level  
-                                                                    *             <E> Quoted EL=5688 inconsistent with record EL=5690.8
- 34S   L 7248.05   11 (2+,3-)                                                   
- 34S  cL J$L=(2,3) from 0+ in {+32}S(t,p). 2558.82|g to 4+, 4687.6 level in     
-                                                            *                     <E> Quoted EL=4687.6 inconsistent with record EL=4688.97
- 34S   L 7392      1  (4,5)            159 FS    35                         P   
- 34S X L XREF=MN(7388*)R(7398*)W(7389*)
-                     *                                                            <W> Check if * is on a single appearance of a XREF tag=N
- 34S   L 7552.70   8  (0+,1,2)                                                  
- 34S  cL J$3392.86|g to 1+, 4074.666 level, 1469.67|g to 2+, 5998 level, and    
-           *                                                                      <E> Quoted EG=3392.86 inconsistent with record EG=4248.28
-                        *                                                         <E> Quoted JF=1+ inconsistent with record JF(7552.70)=(0+,1,2) for decaying EG=3864.25
-                            *                                                     <E> Quoted EL=4074.666 inconsistent with record EL=7552.70
-                                            *                                     <E> Quoted EG=1469.67 inconsistent with record EG=1210.04
-                                                         *                        <E> Quoted JF=2+ inconsistent with record JF(6342.52)=1- for decaying EG=1210.04
-                                                             *                    <E> Quoted EL=5998 inconsistent with record EL=6342.52
- 34S 2cL 989.1|g to 1-, 6479 level in {+33}S(n,|g) E=thermal.                   
-         *                                                                        <E> Quoted EG=989.1 inconsistent with record EG=1210.04
-                        *                                                         <E> Quoted EL=6479 inconsistent with record EL=6342.52
- 34S   L 7730.79   15 (1-,2-,3-)                                                
- 34S X L XREF=N(7714)PRW(7732*)
-                             *                                                    <W> Check if * is on a single appearance of a XREF tag=W
- 34S   L 7790.2    9  6-               97 FS     24                             
- 34S  cL J$2099.6|g, M1+E2, |DJ|<1 to 5-, 5691 level. 1539.7|g, E2, |DJ=2 to 4-,
-                                                                             *    <E> Quoted JF=4- inconsistent with record JF(6251.68)=(3)- for decaying EG=1539.7
- 34S   G 1539.7    5  19     4  E2                                          M   
-                               *                                                  <E> Mult=E2 is inconsistent with spin-parity change
-                                                                                        JI=6- JF(6251.68)=(3)-
- 34S   L 8036.31   14 (1-,2+)                                                   
- 34S  cL J$925.79|g to 3-, 7110 level, 8036.31|g to 0+, g.s.                    
-                                       *                                          <E> Quoted EG=8036.31 inconsistent with record EG=8036.6
- 34S   L 8138.08   7  (1)-                                                      
- 34S  cL J$L=1 from 3/2+ in {+33}S(d,p). 8138.08|g to 0+, g.s.                  
-                                         *                                        <E> Quoted EG=8138.08 inconsistent with record EG=8136.98
- 34S   L 8174.9    4  (1,2+)                                                    
- 34S  cL J$8173|g to 0+, g.s.                                                   
-           *                                                                      <E> Quoted EG=8173 inconsistent with record EG=8173.8
- 34S   L 8294.40   9  4(+)             28 FS     LT                             
- 34S   G 1951.77   19 34     7                                                  
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=4(+) JF(6342.52)=1-
- 34S   L 8370.6    7  7-               83 FS     14                         C   
- 34S  cL J$2680|g, E2, |DJ=2 to 5-, 5691 level, 580|g, D, |DJ=1 to 6-, 7791     
-           *                                                                      <E> Quoted EG=2680 inconsistent with record EG=2680.5
-                                                                       *          <E> Quoted EL=7791 inconsistent with record EL=7790.2
- 34S   L 8503.6    7  6(+)             28 FS     7                          A   
- 34S  cL J$2812|g, D, |DJ=1 to 5-, 5691 level. 6+ from band assignment in       
-           *                                                                      <E> Quoted EG=2812 inconsistent with record EG=2812.7
- 34S   L 8615.74   6  (2-,3+)                                                   
- 34S  cL J$4540.68|g to 1+, 4074.666 level and 2363.97|g to 4-, 6251.68 level.  
-                                                            *                     <E> Quoted JF=4- inconsistent with record JF(6251.68)=(3)- for decaying EG=2363.97
- 34S   L 9413.9    7  5(-),6                                                    
- 34S  cL J$3722|g, D+Q to 5-, 5691 level, 1043.8|g to 7-, 8370 level.           
-           *                                                                      <E> Quoted EG=3722 inconsistent with record EG=3722.6
-                                                          *                       <E> Quoted EL=8370 inconsistent with record EL=8370.6
- 34S   L 9640      4  (1,2+)                                                    
- 34S   G 9639      4                                                            
-                     *                                                            <W> Check if RI=100 can be assigned to the single branch
- 34S   L 9868      5  1+                                                        
- 34S  cL J$spin=1 from |g(|q) in {+34}S(|g,|g'),(pol |g,|g'). |p=+ from 9858|g, 
-                                                                        *         <E> Quoted EG=9858 inconsistent with record EG=9868
- 34S   L 9912.9    7  7                184 FS    38                             
- 34S  cL J$1408|g, D, |DJ=1 to 6(+), 8503 level.                                
-           *                                                                      <E> Quoted EG=1408 inconsistent with record EG=1408.6
-                                     *                                            <E> Quoted EL=8503 inconsistent with record EL=8503.6
+                               *                                                  <E> Mult=D is inconsistent with spin-parity change
+                                                                                        JI=4- JF(5679.925)=2+
+ 34S   G 1374.43   23 97     21 M1+E2    -3.7    +7-26                      M   
+                               *                                                  <E> Mult=M1 is inconsistent with spin-parity change
+                                                                                        JI=4- JF(4876.839)=3+
+ 34S   L 9912.8    4  7                184 FS    38                             
  34S   G 1178      1  14.3   72                                             M   
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=1178
-                                                                                        JI=7 JF(8735.0)=4,5,6
- 34S   L 10399.9   7  8(-)                                                      
- 34S  cL J$2608|g, Q to 6-, 7791 level, 2028.8|g to 7-, 8370 level.             
-           *                                                                      <E> Quoted EG=2608 inconsistent with record EG=2608.6
-                            *                                                     <E> Quoted EL=7791 inconsistent with record EL=7790.2
-                                                        *                         <E> Quoted EL=8370 inconsistent with record EL=8370.6
+                                                                                        JI=7 JF(8734.8)=4,5,6
+ 34S   L 10399.8   5  8(-)                                                      
  34S   G 986.8     9  11.3   56                                             M   
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=986.8
-                                                                                        JI=8(-) JF(9413.9)=5(-),6
- 34S   L 10651.6   7  8(+)             35 FS     17                             
- 34S  cL J$2147.2|g, E2, |DJ=2 to 6(+), 8503 level, 2280.4|g, D, |DJ=1 to 7-,   
-                                        *                                         <E> Quoted EL=8503 inconsistent with record EL=8503.6
+                                                                                        JI=8(-) JF(9413.8)=5(-),6
+ 34S   L 10651.5   5  8(+)             35 FS     17                             
  34S   G 2280.4    10 100    21 (M1)                                        M   
                                *                                                  <E> Mult=M1 is inconsistent with spin-parity change
-                                                                                        JI=8(+) JF(8370.6)=7-
+                                                                                        JI=8(+) JF(8371.0)=7-
  34S   L 11372     5  3-                                                    A   
  34S   G 11370        5.9                                                   S   
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
                                                                                         JI=3- JF(0.0)=0+
- 34S   L 11374.3   8  (8)                                                       
- 34S  cL J$1461.7|g, D(+Q), |DJ=1 to 7, 9912.9 level, 3002.8|g, D, |DJ=1 to 7-, 
-                                                                            *     <E> Quoted JF=7- inconsistent with record JF(9912.9)=7 for decaying EG=1461.7
- 34S   L 11417.22  2  1+,2+                                                    S
+ 34S   L 11374.2   6  (8)                                                       
+ 34S  cL J$1461.7|g, D(+Q), |DJ=1 to 7, 9912.8 level, 3002.8|g, D, |DJ=1 to 7-, 
+                                                                            *     <E> Quoted JF=7- inconsistent with record JF(9912.8)=7 for decaying EG=1461.7
+ 34S   L 11417.219 19 1+,2+                                                    S
  34S   G 3122.65   15 4.4    7                                                  
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=3122.65
-                                                                                        JI=1+,2+ JF(8294.40)=4(+)
+                                                                                        JI=1+,2+ JF(8294.39)=4(+)
  34S   G 6727.5    9  0.113  65                                                 
                      *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=6727.5
-                                                                                        JI=1+,2+ JF(4688.97)=4+
- 34S   L 12141.4   7  9                173 FS    35                             
+                                                                                        JI=1+,2+ JF(4688.96)=4+
+ 34S   L 12141.3   5  9                173 FS    35                             
  34S   G 1741.6    5  12.6   32 [E1]                                        M   
                                *                                                  <W> Mult=[E1] but parity-change unknown from deltaJPI
-                                                                                        JI=9 JF(10399.9)=8(-)
+                                                                                        JI=9 JF(10399.8)=8(-)
  34S   G 2228.8    6  100    12 E2                                          M   
                                *                                                  <W> Mult=E2 but parity-change unknown from deltaJPI
-                                                                                        JI=9 JF(9912.9)=7
- 34S   L 13341.7   8  10(+)            180 FS    28                             
- 34S  cL J$1966|g, E2, |DJ=2 to 8(+), 11374 level.                              
-           *                                                                      <E> Quoted EG=1966 inconsistent with record EG=1966.8
-                                *                                                 <E> Quoted JF=8(+) inconsistent with record JF(11374.3)=(8) for decaying EG=1966.8
+                                                                                        JI=9 JF(9912.8)=7
+ 34S   L 13341.6   6  10(+)            180 FS    28                             
  34S   G 1200.4    7  100    22 M1+E2                                       M   
                                *                                                  <W> Mult=M1+E2 but parity-change unknown from deltaJPI
-                                                                                        JI=10(+) JF(12141.4)=9
+                                                                                        JI=10(+) JF(12141.3)=9
  34S   G 1966.8    9  81     19 E2                                          M   
                                *                                                  <W> Mult=E2 but parity-change unknown from deltaJPI
-                                                                                        JI=10(+) JF(11374.3)=(8)
- 34S   L 13960.6   11 (10+)                                                     
- 34S  cL J$3308|g to 8+, 10652 level; |DJ=2 band structure.                     
-           *                                                                      <E> Quoted EG=3308 inconsistent with record EG=3308.8
-                     *                                                            <E> Quoted JF=8+ inconsistent with record JF(10651.6)=8(+) for decaying EG=3308.8
- 34S   L 14576.5   12 (10+)                                                     
- 34S  cL J$2768|g to 8(+), 11807 level.                                         
-           *                                                                      <E> Quoted EG=2768 inconsistent with record EG=2768.9
-                           *                                                      <E> Quoted EL=11807 inconsistent with record EL=11807.5
- 34S   L 15244.4   10 (10,11,12+)                                               
- 34S  cL J$1902|g to 10(+), 13341 level.                                        
-           *                                                                      <E> Quoted EG=1902 inconsistent with record EG=1902.7
-                            *                                                     <E> Quoted EL=13341 inconsistent with record EL=13341.7
+                                                                                        JI=10(+) JF(11374.2)=(8)
 
 ################################################################################
 In dataset of 34S: XA 34P B- DECAY (12.43 S)     XREF Tag=A
@@ -272,20 +123,20 @@ In dataset of 34S: XB 34CL EC+B+ DECAY (1.5266 S)     XREF Tag=B
 
  34S   L 3910         0+                                                       ?
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=3916.407 22 this E=3910
+                                                                                        Adopted E=3916.40 4 this E=3910
                                        *                                          <W> T1/2 is available from Adopted but empty here
                                                                                         Adopted T1/2=1.12 PS 9 this T1/2=
  34S   L 4070         1+                                                       ?
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=4074.666 20 this E=4070
+                                                                                        Adopted E=4074.657 19 this E=4070
                                        *                                          <W> T1/2 is available from Adopted but empty here
                                                                                         Adopted T1/2=17 FS LT this T1/2=
  34S   L 5230         0+                                                       ?
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=5228.175 22 this E=5230
+                                                                                        Adopted E=5228.166 26 this E=5230
  34S   L 5380         1+                                                       ?
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=5380.99 3 this E=5380
+                                                                                        Adopted E=5380.986 32 this E=5380
                                        *                                          <W> T1/2 is available from Adopted but empty here
                                                                                         Adopted T1/2=49 FS LE this T1/2=
 
@@ -300,7 +151,7 @@ In dataset of 34S: XC 34CL EC+B+ DECAY (31.99 M)     XREF Tag=C
                                                                                         Adopted T1/2=122 FS 9 this T1/2=
  34S   L 4074         1+                                                        
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=4074.666 20 this E=4074
+                                                                                        Adopted E=4074.657 19 this E=4074
                                        *                                          <W> T1/2 is available from Adopted but empty here
                                                                                         Adopted T1/2=17 FS LT this T1/2=
  34S   G 4074         0.00081LT D                                               
@@ -310,12 +161,12 @@ In dataset of 34S: XC 34CL EC+B+ DECAY (31.99 M)     XREF Tag=C
                                                                                         Adopted Mult=(M1) this Mult=D
  34S   L 4115      2  2+                                                        
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=4114.81 2 this E=4115 2
+                                                                                        Adopted E=4114.810 23 this E=4115 2
                                        *                                          <W> T1/2 is available from Adopted but empty here
                                                                                         Adopted T1/2=72 FS 7 this T1/2=
  34S   L 4688         4+                                                        
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=4688.97 4 this E=4688
+                                                                                        Adopted E=4688.96 5 this E=4688
                                        *                                          <W> T1/2 is available from Adopted but empty here
                                                                                         Adopted T1/2=88 FS 7 this T1/2=
  34S   G 1384         0.021  LT                                                 
@@ -325,7 +176,7 @@ In dataset of 34S: XC 34CL EC+B+ DECAY (31.99 M)     XREF Tag=C
                                        *                                          <W> T1/2 is available from Adopted but empty here
                                                                                         Adopted T1/2=40 FS 15 this T1/2=
  34S   G 4877         0.00076LT                                                 
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=4876.842
+         *                                                                        <W> This gamma is missing in Adopted Gammas at level=4876.839
          *                                                                        <E> E(gamma) commented from Adopted but no such Adopted gamma
                                *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
                                                                                         JI=3+ JF(0)=0+
@@ -343,7 +194,7 @@ In dataset of 34S: XD 3H(32S,PG)     XREF Tag=D
                                                                                         Adopted JPI=0+ this JPI=
  34S   L 2127                          0.340 PS  21                             
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=2127.564 13 this E=2127
+                                                                                        Adopted E=2127.558 15 this E=2127
                      *                                                            <W> JPI commented from Adopted but empty
                                                                                         Adopted JPI=2+ this JPI=
  34S   G 2127.3                                                                 
@@ -351,7 +202,7 @@ In dataset of 34S: XD 3H(32S,PG)     XREF Tag=D
                                                                                         Adopted E=2127.498 20 this E=2127.3
  34S   L 3303                          0.133 PS  9                              
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=3304.212 13 this E=3303
+                                                                                        Adopted E=3304.207 16 this E=3303
                      *                                                            <W> JPI commented from Adopted but empty
                                                                                         Adopted JPI=2+ this JPI=
  34S   G 1176.1                                                                 
@@ -378,9 +229,6 @@ In dataset of 34S: XH 24MG(16O,A2PG)     XREF Tag=H
  34S   G 3562.7    6  1.2    5                                                  
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
                                                                                         JI=5- JF(2127.7)=2+
- 34S   L 6251.6    5  4-                                                    B   
-                     *                                                            <W> JPI here contradicts to adopted. Please check
-                                                                                        Adopted JPI=(3)- this JPI=4-
 
 ################################################################################
 In dataset of 34S: XI 27AL(10B,2PNG)     XREF Tag=I
@@ -398,6 +246,8 @@ In dataset of 34S: XI 27AL(10B,2PNG)     XREF Tag=I
 In dataset of 34S: XK 28SI(34S,34S'G)     XREF Tag=K
 
  34S   L 2127.564     2+               0.322 PS  35                             
+         *                                                                        <E> E(level) commented from Adopted but inconsistent
+                                                                                        Adopted E=2127.558 15 this E=2127.564
  34S   G 2127.499               E2                                              
          *                                                                        <E> E(gamma) commented from Adopted but inconsistent
                                                                                         Adopted E=2127.498 20 this E=2127.499
@@ -405,15 +255,21 @@ In dataset of 34S: XK 28SI(34S,34S'G)     XREF Tag=K
 ################################################################################
 In dataset of 34S: XL 30SI(A,G),(A,N):RESONANCES     XREF Tag=L
 
+ 34S   L 2127.564  13 2+                                                    A   
+         *                                                                        <E> E(level) commented from Adopted but inconsistent
+                                                                                        Adopted E=2127.558 15 this E=2127.564 13
+ 34S   L 3304.212  13 2+                                                    A   
+         *                                                                        <E> E(level) commented from Adopted but inconsistent
+                                                                                        Adopted E=3304.207 16 this E=3304.212 13
  34S   L 3916.408  21 0+                                                    A   
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=3916.407 22 this E=3916.408 21
+                                                                                        Adopted E=3916.40 4 this E=3916.408 21
  34S   L 4074.667  14 1+                                                    A   
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=4074.666 20 this E=4074.667 14
+                                                                                        Adopted E=4074.657 19 this E=4074.667 14
  34S   L 5679.927  17 2+                                                    A   
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=5679.928 17 this E=5679.927 17
+                                                                                        Adopted E=5679.925 20 this E=5679.927 17
  34S   L 11372     5  3-                                        3908      5     
  34S   G 11370        5.9                                                       
                                *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
@@ -441,51 +297,7 @@ In dataset of 34S: XM 31P(A,PG)     XREF Tag=M
  34S   G 4070.9    13 48     5  D                                               
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=4070.9      Adopted=4072.9
- 34S   L 4622.4       3-               84 FS     6                              
- 34S   G 709          7      LT                                             M  ?
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=709
-                                                                                        JI=3- JF(3913.0)=(0,1,2)
- 34S   G 4622         1      LT                                                ?
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=3- JF(0.0)=0+
- 34S   L 4687.6       4+               88 FS     4                              
- 34S   G 573.6        3      LT                                             M  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        572.0(1)       from level=6251.68     JPI=(3)-                
- 34S   G 615.8        4      LT                                             M  ?
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=4+ JF(4071.8)=1+
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        612.16(5)      from level=3916.407    JPI=0+                  
- 34S   G 775          7      LT                                             M  ?
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=775
-                                                                                        JI=4+ JF(3913.0)=(0,1,2)
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        770.428(20)    from level=4074.666    JPI=1+                  
-                                                                                        767.20(21)     from level=11417.22    JPI=1+,2+               
- 34S   G 4687         1      LT                                             M  ?
-                               *                                                  <W> large deltaJ=4 ([E4]), but no Mult is given
-                                                                                        JI=4+ JF(0.0)=0+
- 34S   L 4875.2       3+               40 FS     15                             
- 34S   G 803.4        4      LT                                             M  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        803.103(27)    from level=5679.928    JPI=2+                  
- 34S   G 962          8      LT                                             M  ?
-                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=962
-                                                                                        JI=3+ JF(3913.0)=(0,1,2)
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        960            from level=6639        JPI=4(-)                
- 34S   G 4875         4      LT                                             M  ?
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=3+ JF(0.0)=0+
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        4880.8(16)     from level=15281.0     JPI=(10)                
  34S   L 4891.1    30 2+               36 FS     10                             
- 34S   G 978          22     LT                                             M  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        960            from level=6639        JPI=4(-)                
-                                                                                        982.68(9)      from level=9598.42     JPI=                    
-                                                                                        986.8(9)       from level=10399.9     JPI=8(-)                
  34S   G 1587.9       49     12                                                 
          *                                                                        <W> Check discrepancy in gamma energies:
                                                                                           this energy=1587.9      Adopted=1585.510
@@ -495,24 +307,29 @@ In dataset of 34S: XM 31P(A,PG)     XREF Tag=M
                                                                                           this energy=3191.6      Adopted=3194.74
  34S   L 6173         3+               9.0 FS    LT                         J   
  34S   G 1282         6      5                                                  
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=6168.862
+         *                                                                        <W> This gamma is missing in Adopted Gammas at level=6168.857
          *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1274.30(4)     from level=6954.218    JPI=2-                  
+                                                                                        1274.30(4)     from level=6954.214    JPI=2-                  
+ 34S   L 6251      2  4+               0.42 PS   +49-21                     Z   
+                     *                                                            <W> JPI here contradicts to adopted. Please check
+                                                                                        Adopted JPI=4- this JPI=4+
  34S   L 6639      1  4(+)             42 FS     10                         Z   
                      *                                                            <W> JPI here contradicts to adopted. Please check
                                                                                         Adopted JPI=4(-) this JPI=4(+)
- 34S   L 6864      1  2(+),4(+)        28 FS     7                          Z   
- 34S   G 2242                                                                  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        2233.49(4)     from level=7110.451    JPI=3-                  
 
 ################################################################################
 In dataset of 34S: XN 32S(T,P)     XREF Tag=N
 
- 34S   L 7388      15 3-                               3                        
-                                                       *                          <W> L=3 inconsistent with JPI=(4,5) from Adopted Levels for E=7392
-                                                                                         possible JPI from L=3 and target JPI=0+
-                                                                                             3-
+ 34S   L 6179      14 (3-)                             (3)                      
+                     *                                                            <W> JPI here contradicts to adopted. Please check
+                                                                                        Adopted JPI=3+ this JPI=(3-)
+                                                       *                          <W> L=(3) inconsistent with JPI=3+ from Adopted Levels for E=6168.857
+                                                                                         parity=(-) from L=(3) and target JPI=0+
+ 34S   L 7112      15 3-,(2+)                          3,(2)                    
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 7110.447  34 3-                  XREF=N(7112*)PR(7114)W(7110*)
+                                                                                      #@ 7111         2+                  XREF=MN(7112*)W(7110*)c
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=N
 
 ################################################################################
 In dataset of 34S: XO 32S(A,2HE)     XREF Tag=O
@@ -521,150 +338,36 @@ In dataset of 34S: XO 32S(A,2HE)     XREF Tag=O
          *                                                                        <W> 3 possible matches found in Adopted! Check XREF
                                                                                          7219.28    6 2+                  XREF=MPSc(7190*)
                                                                                       #@ 7248       2 (4)                 XREF=MO(7240*)W(7248*)
-                                                                                      #@ 7248.05   11 (2+,3-)             XREF=N(7245)O(7240*)PW(7248*)c(7190*)
+                                                                                      #@ 7248.04   11 (2+,3-)             XREF=N(7245)O(7240*)PW(7248*)c(7190*)
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=O
 
 ################################################################################
 In dataset of 34S: XP 33S(N,G) E=THERMAL     XREF Tag=P
 
- 34S   L 4624.404  16 3-                                                        
- 34S   G 708.0        0.11   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=3- JF(3916.408)=0+
- 34S   L 4876.842  23 3+                                                        
- 34S   G 802.2        0.64   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        803.103(27)    from level=5679.928    JPI=2+                  
- 34S   G 960.4        0.08   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=3+ JF(3916.408)=0+
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        960            from level=6639        JPI=4(-)                
- 34S   G 4876.8       0.25   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=3+ JF(0.0)=0+
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        4880.8(16)     from level=15281.0     JPI=(10)                
- 34S   L 4889.76   2  2+                                                        
- 34S   G 973.3        0.05   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        960            from level=6639        JPI=4(-)                
- 34S   L 5228.175  22 0+                                                        
- 34S   G 351.3        0.10   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=0+ JF(4876.842)=3+
- 34S   G 539.2        0.04   LT                                             B  ?
-                               *                                                  <W> large deltaJ=4 ([E4]), but no Mult is given
-                                                                                        JI=0+ JF(4688.97)=4+
- 34S   G 603.8        0.04   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=0+ JF(4624.404)=3-
- 34S   G 1924.0       0.21   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1922.92(22)    from level=5998.10     JPI=2+                  
-                                                                                        1925.94(17)    from level=10311.53    JPI=2+                  
  34S   L 5322.514  28 2(-)                                                      
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=2+ this JPI=2(-)
- 34S   G 633.5        0.11   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        631.13(6)      from level=6478.770    JPI=1-                  
- 34S   G 1207.7       0.16   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1210.04(13)    from level=7552.70     JPI=(0+,1,2)            
-                                                                                        1205.05(4)     from level=11417.22    JPI=1+,2+               
- 34S   G 1406.1       0.10   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1408.6(9)      from level=9912.9      JPI=7                   
- 34S   G 2018.3       0.11   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        2017           from level=6639        JPI=4(-)                
- 34S   L 5380.99   3  1+                                                        
- 34S   G 692.0        0.06   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=1+ JF(4688.97)=4+
- 34S   G 1464.6       0.10   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1461.7(9)      from level=11374.3     JPI=(8)                 
  34S   L 5679.928  17 3-                                                        
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=2+ this JPI=3-
- 34S   G 357.4        0.05   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        356.3(6)       from level=13341.7     JPI=10(+)               
- 34S   G 451.8        0.05   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=3- JF(5228.175)=0+
- 34S   G 990.9        0.11   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        989.1(3)       from level=7110.451    JPI=3-                  
-                                                                                        989.1(3)       from level=7467.75     JPI=(0+,1,2)            
- 34S   G 1605.3       0.11   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1602.06(15)    from level=6478.770    JPI=1-                  
- 34S   G 1763.5       0.11   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=3- JF(3916.408)=0+
- 34S   G 5679.9       0.53   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=3- JF(0.0)=0+
- 34S   L 5755.876  21 1-                                                        
- 34S   G 1066.9       0.09   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=1- JF(4688.97)=4+
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1066.2(5)      from level=5690.8      JPI=5-                  
- 34S   G 1839.5       0.70   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1840.52(12)    from level=9208.04     JPI=(1,2+)              
- 34S   L 5847.524  29 0+                                                        
- 34S   G 619.4        0.09   LT                                             B  ?
-                               *                                                  <W> Check E0 transition.
- 34S   G 957.8        0.14   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        960            from level=6639        JPI=4(-)                
- 34S   G 970.7        0.14   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([M3]), but no Mult is given
-                                                                                        JI=0+ JF(4876.842)=3+
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        960            from level=6639        JPI=4(-)                
- 34S   G 1158.6       0.26   LT                                             B  ?
-                               *                                                  <W> large deltaJ=4 ([E4]), but no Mult is given
-                                                                                        JI=0+ JF(4688.97)=4+
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1156.39(7)     from level=6478.770    JPI=1-                  
- 34S   G 1223.1       0.20   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=0+ JF(4624.404)=3-
- 34S   G 1732.7       0.75   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1732.39(11)    from level=6421.34     JPI=4-                  
  34S   L 6168.862  28 3-                                                        
                      *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=3 this JPI=3-
- 34S   G 940.7        0.29   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=3- JF(5228.175)=0+
+                                                                                        Adopted JPI=3+ this JPI=3-
+ 34S   L 6251.23   19 4+                                                        
+         *                                                                        <W> level not placed in Adopted or discrepant.
+                                                                                        closest level in Adopted:
+                                                                                        6251.72    7 4-                  XREF=HM(6251)N(6256)PR(6254)W(6248)a(6250)c(6220)g
+                     *                                                            <E> JPI commented from Adopted but no such Adopted level
+ 34S   G 1374.34   20 0.37   8                                                  
          *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        960            from level=6639        JPI=4(-)                
-                                                                                        941.59(6)      from level=7110.451    JPI=3-                  
-                                                                                        942.3(5)       from level=9912.9      JPI=7                   
- 34S   G 2252.5       0.11   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=3- JF(3916.408)=0+
- 34S   L 6251.68   9  4-                                                        
-                     *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(3)- this JPI=4-
+                                                                                        1374.43(23)    from level=6251.72     JPI=4-                  
+ 34S   G 1562.3    5  0.80   20                                                 
+         *                                                                        <W> Similar gammas placed differently in Adopted:
+                                                                                        1562.4(5)      from level=6251.72     JPI=4-                  
+                                                                                        1557           from level=7248        JPI=(4)                 
  34S   L 6428.13   7  (2+)                                                      
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=(2+,3+) this JPI=(2+)
- 34S   L 6478.770  22 1-                                                        
- 34S   G 1250.6       0.22   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1247.92(6)     from level=5322.514    JPI=2+                  
- 34S   G 1589.0       0.11   LT                                             B  ?
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        1585.510(20)   from level=4889.76     JPI=2+                  
  34S   L 6954.218  30 (2)-                                                      
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=2- this JPI=(2)-
@@ -676,19 +379,7 @@ In dataset of 34S: XP 33S(N,G) E=THERMAL     XREF Tag=P
                                                                                         Adopted JPI=2+ this JPI=(2+)
  34S   L 7552.70   8  (1,2,3-)                                                  
                      *                                                            <E> JPI commented from Adopted but inconsistent
-                                                                                        Adopted JPI=(0+,1,2) this JPI=(1,2,3-)
- 34S   L 7629.907  21 3-                                                        
- 34S   G 2401.7       0.13   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=3- JF(5228.175)=0+
-         *                                                                        <W> Similar gammas placed differently in Adopted:
-                                                                                        2404.04(6)     from level=6478.770    JPI=1-                  
- 34S   G 3713.5       0.18   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=3- JF(3916.408)=0+
- 34S   G 7629.9       0.33   LT                                             B  ?
-                               *                                                  <W> large deltaJ=3 ([E3]), but no Mult is given
-                                                                                        JI=3- JF(0.0)=0+
+                                                                                        Adopted JPI=(0+:3-) this JPI=(1,2,3-)
  34S   L 8185.46   12 (1)+                                                      
                      *                                                            <E> JPI commented from Adopted but inconsistent
                                                                                         Adopted JPI=1+ this JPI=(1)+
@@ -726,60 +417,68 @@ In dataset of 34S: XQ 33S(N,G),(N,N):RESONANCES     XREF Tag=Q
 In dataset of 34S: XR 33S(D,P)     XREF Tag=R
 
  34S   L 5326      6                                   3        4.60        C   
-                                                       *                          <W> L=3 inconsistent with JPI=2+ from Adopted Levels for E=5322.514
+                                                       *                          <W> L=3 inconsistent with JPI=2+ from Adopted Levels for E=5322.509
                                                                                          parity=- from L=3 and target JPI=3/2+
  34S   L 5683      7                                   1        2.60        C   
-                                                       *                          <W> L=1 inconsistent with JPI=2+ from Adopted Levels for E=5679.928
+                                                       *                          <W> L=1 inconsistent with JPI=2+ from Adopted Levels for E=5679.925
                                                                                          parity=- from L=1 and target JPI=3/2+
+ 34S   L 6832      9                                   0        0.56        C   
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                      #@ 6828.82      2+                  XREF=MN(6828)PR(6832*)Wc(6830*)
+                                                                                       @ 6847.90    6 (1,2+)              XREF=PR(6832*)c(6830*)
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=R
 
 ################################################################################
 In dataset of 34S: XV 34S(N,N),(N,N')     XREF Tag=V
 
  34S   L 2127         2+                                                        
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=2127.564 13 this E=2127
+                                                                                        Adopted E=2127.558 15 this E=2127
  34S   L 3303         2+                                                        
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=3304.212 13 this E=3303
+                                                                                        Adopted E=3304.207 16 this E=3303
  34S   L 4114         2+                                                        
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=4114.81 2 this E=4114
+                                                                                        Adopted E=4114.810 23 this E=4114
  34S   L 4623         3-                                                        
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=4624.404 16 this E=4623
+                                                                                        Adopted E=4624.401 19 this E=4623
  34S   L 4688         4+                                                        
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=4688.97 4 this E=4688
+                                                                                        Adopted E=4688.96 5 this E=4688
+
+################################################################################
+In dataset of 34S: XW 34S(P,P),(P,P'),(POL P,P')     XREF Tag=W
+
+ 34S   L 7110      14                                                       M   
+         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
+                                                                                       @ 7110.447  34 3-                  XREF=N(7112*)PR(7114)W(7110*)
+                                                                                      #@ 7111         2+                  XREF=MN(7112*)W(7110*)c
+                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=W
 
 ################################################################################
 In dataset of 34S: XZ 34S(A,A),(A,A'),(A,A'G)     XREF Tag=Z
 
  34S   L 2127         2+               306 FS    18                             
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=2127.564 13 this E=2127
+                                                                                        Adopted E=2127.558 15 this E=2127
  34S   L 6130                                                                   
          *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #@ 6121.56   10 2+                  XREF=MN(6128)PRW(6118)Z(6130*)
-                                                                                      #@ 6168.862  28 3                   XREF=MNPRW(6170)Z(6130*)
+                                                                                      #@ 6121.55   10 2+                  XREF=MN(6128)PRW(6118)Z(6130*)
+                                                                                      #@ 6168.857  29 3+                  XREF=MNPRW(6170)Z(6130*)
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=Z
-
-################################################################################
-In dataset of 34S: Xa 35CL(G,P)     XREF Tag=a
-
- 34S   L 6250                                                                   
-         *                                                                        <W> 2 possible matches found in Adopted! Check XREF
-                                                                                      #@ 6251.22   19 4+                  XREF=M(6251)N(6256*)PW(6248*)a(6250*)c(6220)g(*)
-                                                                                      #@ 6251.68    9 (3)-                XREF=HN(6256*)PRW(6248*)a(6250*)g(*)
-                                                                                      *** Check for possible incorrect XREF assignment (# marked) of this tag=a
 
 ################################################################################
 In dataset of 34S: Xc 35CL(D,3HE)     XREF Tag=c
 
+ 34S   L 6220      50                                  2        0.24            
+                                                       *                          <W> L=2 inconsistent with JPI=4- from Adopted Levels for E=6251.72
+                                                                                         parity=+ from L=2 and target JPI=3/2+
  34S   L 6830                                          0        0.08            
          *                                                                        <W> 3 possible matches found in Adopted! Check XREF
-                                                                                      #@ 6828.83   18 2+                  XREF=MN(6828)PR(6832*)Wc(6830*)
-                                                                                      #@ 6847.90    6 (1,2+)              XREF=PR(6832*)W(6860*)c(6830*)
-                                                                                         6864       1 2(+),4(+)           XREF=MN(6869)W(6860*)
+                                                                                      #@ 6828.82      2+                  XREF=MN(6828)PR(6832*)Wc(6830*)
+                                                                                      #@ 6847.90    6 (1,2+)              XREF=PR(6832*)c(6830*)
+                                                                                         6864       1 2(+),4(+)           XREF=MN(6869)W(6860)
                                                                                       *** Check for possible incorrect XREF assignment (# marked) of this tag=c
 
 ################################################################################
@@ -787,21 +486,14 @@ In dataset of 34S: Xe 206PB(34S,34S'G)     XREF Tag=e
 
  34S   L 2127         2+               0.25 PS   +5-3                           
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=2127.564 13 this E=2127
+                                                                                        Adopted E=2127.558 15 this E=2127
 
 ################################################################################
 In dataset of 34S: Xf 208PB(34S,34S')     XREF Tag=f
 
  34S   L 2127         2+                                                        
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=2127.564 13 this E=2127
-
-################################################################################
-In dataset of 34S: Xg 208PB(36S,34SG)     XREF Tag=g
-
- 34S   L 6251.7    19 (4-)                                                      
-                     *                                                            <W> JPI here contradicts to adopted. Please check
-                                                                                        Adopted JPI=4+ this JPI=(4-)
+                                                                                        Adopted E=2127.558 15 this E=2127
 
 
 End of report
