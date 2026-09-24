@@ -6,15 +6,15 @@ Concise reference for nuclear electromagnetic transitions.
 
 ## 1. Definitions
 
-*   J, π: Nuclear spin and parity
-*   L: Multipolarity order (photon angular momentum)
-*   ΔJ: Spin change between initial and final levels (ΔJ = |Ji - Jf|)
-*   Δπ: Parity change between initial and final levels (Δπ = πi * πf)
-*   Multipolarity Designations:
-    *   D (Dipole, L=1): (electric E1 or magnetic M1)
-    *   Q (Quadrupole, L=2): (electric E2 or magnetic M2)
-    *   O (Octupole, L=3): (electric E3 or magnetic M3)
-    *   H (Hexadecapole, L=4): (electric E4 or magnetic M4)
+- J, π: Nuclear spin and parity
+- L: Multipolarity order (photon angular momentum)
+- ΔJ: Spin change between initial and final levels (ΔJ = $|J_i - J_f|$)
+- Δπ: Parity change between initial and final levels (Δπ = $\pi_i \cdot \pi_f$)
+- Multipolarity Designations:
+    - D (Dipole, L=1): electric E1 or magnetic M1
+    - Q (Quadrupole, L=2): electric E2 or magnetic M2
+    - O (Octupole, L=3): electric E3 or magnetic M3
+    - H (Hexadecapole, L=4): electric E4 or magnetic M4
 
 ---
 
@@ -30,8 +30,8 @@ $$ |J_i - J_f| \leq L \leq J_i + J_f $$
 
 ### Parity Selection
 
-*   Electric (EL): Δπ = $(-1)^L$ (Parity changes for odd L)
-*   Magnetic (ML): Δπ = $(-1)^{L+1}$ (Parity changes for even L)
+- Electric (EL): Δπ = $(-1)^L$ (parity changes for odd L)
+- Magnetic (ML): Δπ = $(-1)^{L+1}$ (parity changes for even L)
 
 *Note: 0 → 0 single photon emission is strictly forbidden.*
 
@@ -40,10 +40,10 @@ $$ |J_i - J_f| \leq L \leq J_i + J_f $$
 While geometry permits a range of L, nuclear transition probabilities dictate which are actually observed.
 
 1. *Dominance Rule*: Transitions proceed via the lowest permitted multipolarity ($L_{min}$).
-    *   *Practical implication*: Multipolarity assignments like M2+E3 are only practical when Dipole (L=1) is forbidden by selection rules (i.e., ΔJ ≥ 2).
-2. *Weisskopf Estimates*: Probability decreases by a factor of approximately $\approx 10^5$ for each unit increase in L.
+    - *Practical implication*: Multipolarity assignments like M2+E3 are only practical when Dipole (L=1) is forbidden by selection rules (i.e., ΔJ ≥ 2).
+2. *Weisskopf Estimates*: Probability decreases by a factor of approximately $10^5$ for each unit increase in L.
 3. *Mixing*: Electric multipoles are more probable than the same magnetic multipole by a factor of 100.
-    *   $L_{min}$ + 1 mixing is common (e.g., M1+E2).
+    - $L_{min}$ + 1 mixing is common (e.g., M1+E2).
 
 ---
 
@@ -78,13 +78,13 @@ Selection rules for each transition type:
 
 ---
 
-## 5. Quick Reference: Mixed Multipolarities  to ΔJ and Δπ
+## 5. Quick Reference: Mixed Multipolarities to ΔJ and Δπ
 
-*   D+Q (E1+M2 or M1+E2) → ΔJ = 0, 1
-*   Q+O (E2+M3 or M2+E3) → ΔJ = 2
-*   M1+E2 → ΔJ = 0, 1; Δπ = No
-*   E1+M2 → ΔJ = 0, 1; Δπ = Yes
-*   E2+M3 → ΔJ = 2; Δπ = No
-*   M2+E3 → ΔJ = 2; Δπ = Yes
-*   E3+M4 → ΔJ = 3; Δπ = No
-*   M3+E4 → ΔJ = 3; Δπ = Yes
+- D+Q (E1+M2 or M1+E2) → ΔJ = 0, 1
+- Q+O (E2+M3 or M2+E3) → ΔJ = 2
+- M1+E2 → ΔJ = 0, 1; Δπ = No
+- E1+M2 → ΔJ = 0, 1; Δπ = Yes
+- E2+M3 → ΔJ = 2; Δπ = No
+- M2+E3 → ΔJ = 2; Δπ = Yes
+- E3+M4 → ΔJ = 3; Δπ = Yes
+- M3+E4 → ΔJ = 3; Δπ = No
