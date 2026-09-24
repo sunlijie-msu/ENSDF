@@ -21,10 +21,9 @@ Extract M, MR, A2/A4/A6, and POL data from source/raw data and create properly f
 
 **Multipolarity and mixing ratio:**
 
- `NUCID cG M,MR$from |g(|q) in NSR_keynumber.`
- `NUCID cG M,MR$from |g|g(|q)(DCO) in NSR_keynumber.`
- `NUCID cG M,MR$from |g|g(|q)(ADO) in NSR_keynumber.`
- `NUCID cG M,MR$from |g(|q) in REACTION dataset.`
+ `NUCID cG M,MR$from |g(|q) in NSR_keynumber or Reaction_Dataset.`
+ `NUCID cG M,MR$from |g|g(|q)(DCO) in NSR_keynumber or Reaction_Dataset.`
+ `NUCID cG M,MR$from |g|g(|q)(ADO) in NSR_keynumber or Reaction_Dataset.`
 
 **Polarization:**
 

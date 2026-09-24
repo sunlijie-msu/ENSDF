@@ -1,8 +1,7 @@
 ---
 name: gamma-selection-rules
 description: >
-  Use this skill when deducing multipolarities for gamma transitions and then Jπ for nuclear levels by combining constraints from deexciting and feeding gamma transitions using electromagnetic selection rules. Applies D/E2 rules to primary capture transitions, D/E2 rules to deexciting gammas (if RUL applies), and takes AND intersection of all constraints. Handles multi-valued initial Jπ via
-  union before intersection.
+  Use this skill when deducing multipolarities for gamma transitions and then Jπ for nuclear levels by combining constraints from deexciting and feeding gamma transitions using electromagnetic selection rules. Applies D/E2 rules to primary capture transitions, D/E2 rules to deexciting gammas (if RUL applies), and takes AND intersection of all constraints. Handles multi-valued initial Jπ via union before intersection.
 ---
 
 # Gamma Transition Selection Rules: Deducing multipolarities and Jπ
@@ -14,8 +13,8 @@ description: >
 ## Goal
 Deduce the multipolarity of γ-ray transitions from experimental data.
 Deduce the Jπ of levels by combining constraints from:
-- **Feeding transitions** — γ rays populating the level (from capture resonances above)
-- **Deexciting transitions** — γ rays depopulating the level (to lower levels below)
+- **Deexciting transitions** — γ rays depopulating the level (to lower-lying levels)
+- **Feeding transitions** — γ rays populating the level (from higher-lying levels)
 
 ## Multipolarity Assignment Reasoning Logic in Individual Datasets
 
@@ -121,35 +120,29 @@ Apply these rules based on measured POL to assign electromagnetic character:
 
 To further constrain multipolarities (G-record M field) and then use them to deduce Jπ for each level (L-record Jπ field).
 
-### Assignment Patterns
+### Comment examples
 
-Assigning M1+E2 or (M1+E2) in the G-record M field:
+   `cG M$D+Q from |g(|q) in NSR_keynumber or Reaction_Dataset.`
 
-1. Assign firm M1+E2 directly based on DCO/ADO and POL data. The `cG M$` comment should cite the specific dataset:
-
-   `cG M$from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.`
+   `cG M$M1, |DJ=1, from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.`
+   `cG M$E2, |DJ=2, from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.`
    `cG M$M1+E2, |DJ=1, from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.`
-
-2. Assign firm M1+E2 from D+Q without POL when the level lifetime is short (M2 ruled out by RUL). The `cG M$` comment should cite the dataset and note RUL:
 
    `cG M$D+Q from |g(|q) in dataset. M2 ruled out by RUL.`
    `cG M$D+Q, |DJ=1, from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.`
-
-   Use M1+E2 in `cL J$` comments to deduce Jπ:
-
-   `cL J$<G-energy>|g, M1+E2, to <Jπ>, <L-energy> level`
-   `cG M$D+Q from |g(|q) in dataset. M2 ruled out by RUL.`
-
-   Use M1+E2, |DJ=1, in `cL J$` comments to deduce Jπ:
-
-   `<G-energy>|g, M1+E2, |DJ=1 to <Jπ>, <L-energy> level`
-   `cG M$M1+E2, |DJ=1, from |g|g(|q)(DCO) and |g|g(|q)(POL) in dataset.`
-   `cG M$D+Q, |DJ=1, from |g|g(|q)(DCO) in dataset. M2 ruled out by RUL.`
-
-3. Assign tentative (M1+E2) from firm D+Q when the level scheme indicates Δπ=no:
 
    `cG M$D+Q from |g(|q) in dataset. |D|p=no from level scheme.`
    `cG M$D+Q, |DJ=1, from |g|g(|q)(DCO) in dataset. |D|p=no from level scheme.`
+
+   Use gamma properties in `cL J$` comments to deduce Jπ:
+
+   `cL J$<G-energy>|g to <Jπ>, <L-energy> level`
+   `cL J$<G-energy>|g, M1+E2, to <Jπ>, <L-energy> level`
+   `cL J$<G-energy>|g, M1+E2, |DJ=1 to <Jπ>, <L-energy> level`
+   `cL J$<G-energy>|g, E2, |DJ=2 to <Jπ>, <L-energy> level`
+   `cL J$<G-energy>|g, D, |DJ=1 to <Jπ>, <L-energy> level`
+   `cL J$<G-energy>|g, Q, |DJ=2 to <Jπ>, <L-energy> level`
+
 
 If D(+Q) is firm, the corresponding converted form is M1(+E2). The same logic applies to E1+M2.
 
@@ -188,32 +181,34 @@ Bracketed `[...]` multipolarities are solely deduced from level-scheme Jπ chang
 ### Conversion Precedence Rules
 
 If a lifetime is available and the Java transition-strength code run by humans excludes M2 by RUL, convert D+Q to firm M1+E2, and state the clause in the record's `cG M$`/`cG M,MR$` comment, e.g. `M2 ruled out by RUL.`
+
 If RUL does not rule out M2, and if the level scheme gives a firm Δπ, convert D+Q to tentative (M1+E2), adding `|D|p=no from level scheme.` to cG comment.
+
 No conversion: if neither basis exists, i.e. RUL does not exclude M2 and Δπ is unknown from level scheme, keep the measured assignment with only D and Q labels, and do not cite a conversion in the comment.
 
 
 ---
 
-## Capture Transitions
+## Transitions
 
-Primary γ transitions from neutron/proton capture resonances are possibly dominated by the lowest multipoles (E1, M1, E2). Higher orders are suppressed.
+γ transitions are assumed to be dominated by the three lowest multipoles (E1, M1, E2). Higher orders are suppressed.
 
 *   D including E1 or M1: ΔJ = 0, 1; Δπ = Yes or No
 *   E2: ΔJ = 2; Δπ = No
 
 ### Examples: Deducing Jπ of a final level from multipolarity and Jπ of the initial level
 
-Primary γ transition from 5/2+ Initial via D or E2:
+γ transition from 5/2+ Initial via D or E2:
 *   D {E1, M1}: Final 3/2±, 5/2±, 7/2±
 *   E2: Final 1/2+, 9/2+
 *   Combination: 1/2+, 3/2±, 5/2±, 7/2±, 9/2+
 
-Primary γ transition from 7/2- Initial via D or E2:
+γ transition to 7/2- Initial via D or E2:
 *   D {E1, M1}: Final 5/2±, 7/2±, 9/2±
 *   E2: Final 3/2-, 11/2-
 *   Combination: 3/2-, 5/2±, 7/2±, 9/2±, 11/2-
 
-If two primary γ transitions from 5/2+ and 7/2-, the "AND" intersection of the above two sets:
+If two γ transitions from 5/2+ and 7/2-, the "AND" intersection of the above two sets:
 *   Jπ of the final level: 3/2-, 5/2±, 7/2±, 9/2+
 
 Considering the multipolarity is not directly determined by experimental evidence, the final Jπ is put in parentheses to indicate the assumptions made:
@@ -225,23 +220,10 @@ Considering the multipolarity is not directly determined by experimental evidenc
 
 ### Scenario C: No Angular Distribution DCO Ratios or Mixing Ratios Given in Literature
 
-#### Goal
-
-Deduce the Jπ of a level by combining constraints from:
-- **Feeding transitions** — γ rays populating the level (from capture resonances above)
-- **Deexciting transitions** — γ rays depopulating the level (to lower levels below)
-
 ---
 
 #### Multipolarity Selection Rules
-
-| Transition Type                          | Apply       | Condition                                  |
-| :--------------------------------------- | :---------- | :----------------------------------------- |
-| **Primary feeding γ** (from resonances)  | **D or E2** | Always                                     |
-| **Deexciting γ** (decay to lower levels) | **D or Q**  | Long or unknown lifetime                   |
-| **Deexciting γ** (decay to lower levels) | **D or E2** | Short lifetime (RUL applies: M2 ruled out) |
-
-*Note: Primary γ = capture transition from neutron/proton resonance*
+See `.github/docs/gamma_selection_rules.md` for a detailed discussion of the multipolarity selection rules.
 
 ---
 
@@ -271,47 +253,47 @@ RESULT: Common Jπ values → Put in parentheses to indicate tentative assignmen
 
 *Parentheses in ENSDF denote tentative assignments based on assumed multipolarities*
 
-#### Example 1: Fed by primary γ from 7/2-, 7/2+, and 5/2+
+#### Example 1: Fed by γ from 7/2-, 7/2+, and 5/2+ (Lifetime unknown, RUL does not apply)
 
-Fed by primary γ from 7/2- (D or E2):
+Fed by γ from 7/2- (D or E2):
 3/2-, 5/2±, 7/2±, 9/2±, 11/2-
 
-Fed by primary γ from 7/2+ (D or E2):
+Fed by γ from 7/2+ (D or E2):
 3/2+, 5/2±, 7/2±, 9/2±, 11/2+
 
-Fed by primary γ from 5/2+ (D or E2):
+Fed by γ from 5/2+ (D or E2):
 1/2+, 3/2±, 5/2±, 7/2±, 9/2+
 
 **AND:** 5/2±, 7/2±, 9/2+
 
 Adopted: (5/2±, 7/2±, 9/2+)
 
-#### Example 2: Fed by primary γ from 5/2-. Decay γ to 1/2+ and 5/2+ (Lifetime short, RUL applies, M2 ruled out)
+#### Example 2: Fed by γ from 5/2-. Decay γ to 1/2+ and 5/2+ (Lifetime short, RUL applies, M2 ruled out)
 
-Fed by primary γ (D or E2):
+Fed by γ from 5/2- (D or E2):
 1/2-, 3/2±, 5/2±, 7/2±, 9/2-
 
-Decay γ to 1/2+ (D or E2):
+Decay γ to 1/2+ {firm D or E2}:
 1/2±, 3/2±, 5/2+
 
-Decay γ to 5/2+ (D or E2):
+Decay γ to 5/2+ {firm D or E2}:
 1/2+, 3/2±, 5/2±, 7/2±, 9/2+
 
 **AND:** 3/2±, 5/2+
 
-Adopted: (3/2±, 5/2+)
+Adopted: 3/2±, 5/2+ without parentheses.
 
-#### Example 3: Fed by primary γ from 7/2+. Decay γ to 5/2+ (Lifetime unknown, RUL does not apply, M2 allowed)
+#### Example 3: Decay γ to 7/2+. Decay γ to 5/2+ (Lifetime unknown, RUL does not apply)
 
-Fed by primary γ (D or E2):
+Decay γ to 7/2+ (D or E2):
 3/2+, 5/2±, 7/2±, 9/2±, 11/2+
 
-Decay γ to 5/2+ (D or Q):
-1/2±, 3/2±, 5/2±, 7/2±, 9/2±
+Decay γ to 5/2+ (D or E2):
+1/2+, 3/2±, 5/2±, 7/2±, 9/2+
 
-**AND:** 3/2+, 5/2±, 7/2±, 9/2±
+**AND:** 3/2+, 5/2±, 7/2±, 9/2+
 
-Adopted: (3/2+, 5/2±, 7/2±, 9/2±)
+Adopted: (3/2+, 5/2±, 7/2±, 9/2+)
 
 #### Example 4: Fed by primary γ from 1/2+,3/2+ (multi-valued initial). Decay γ to 1/2+ and 3/2+ (Lifetime short, RUL applies, M2 ruled out)
 
