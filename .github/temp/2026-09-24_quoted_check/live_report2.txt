@@ -1,0 +1,46 @@
+Parsing S34_adopted.ens ...
+  Levels: 367    Gammas: 419
+  Quoted references: 98    Level quotes: 96
+
+================================================================================
+[1mENSDF Comment Quoted Values Cross-Check Report[0m
+File: A34\S34\new\S34_adopted.ens
+Levels: 367   Gammas: 419   Quoted references: 98
+================================================================================
+
+  ERRORS: 7   WARNINGS: 0
+
+--------------------------------------------------------------------------------
+[91m[1mERRORS[0m
+--------------------------------------------------------------------------------
+  [91m#1 [LEVEL_ENERGY_MISMATCH][0m  line 859
+      Quoted "9912" keV, L-record has "9912.8" keV
+      Context: 1178|g from 7+, 9912 level.
+
+  [91m#2 [JPI_MISMATCH][0m  line 859
+      Quoted J-pi "7+", L-record J field is "(7+)"
+      Context: 1178|g from 7+, 9912 level.
+
+  [91m#3 [LEVEL_ENERGY_MISMATCH][0m  line 882
+      Quoted "9912" keV, L-record has "9912.8" keV
+      Context: 942.3|g, D, |DJ=1 from 7+, 9912 level.
+
+  [91m#4 [JPI_MISMATCH][0m  line 882
+      Quoted J-pi "7+", L-record J field is "(7+)"
+      Context: 942.3|g, D, |DJ=1 from 7+, 9912 level.
+
+  [91m#5 [JPI_MISMATCH][0m  line 1355
+      Quoted J-pi "7", L-record J field is "(7+)"
+      Context: 1461.7|g, D(+Q), |DJ=1 to 7, 9912.8 level.
+
+  [91m#6 [JPI_MISMATCH][0m  line 1710
+      Quoted J-pi "7", L-record J field is "(7+)"
+      Context: 2228.8|g, E2, |DJ=2 to 7, 9912.8 level.
+
+  [91m#7 [JPI_MISMATCH][0m  line 1854
+      Quoted J-pi "8(-)", L-record J field is "(8-)"
+      Context: 4880.8|g to 8(-), 10399.8 level in {+24}Mg({+16}O,|a2p|g).
+
+================================================================================
+[91mRESULT: 7 error(s) found — all must be fixed[0m
+================================================================================
