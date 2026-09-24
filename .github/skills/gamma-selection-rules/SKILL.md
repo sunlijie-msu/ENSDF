@@ -179,6 +179,7 @@ A measured `D`, `Q`, `D+Q`, or `D(+Q)` assignment fixes the dipole/quadrupole co
     - Δπ=yes: `D` → `(E1)`, `Q` → `(M2)`, `D+Q` → `(E1+M2)`, `D(+Q)` → `(E1(+M2))`.
 
     Add `|D|p=no from level scheme.` or `|D|p=yes from level scheme.`
+    Write that Δπ value in parentheses when either connected level carries a tentative parity (`8(+)`, `(6+)`, `(1-)`): `|D|p=(yes)`, `|D|p=(no)`. With both parities firm, write it plain: `|D|p=yes`, `|D|p=no`.
 3. **Neither basis applies.** Keep the measured assignment unconverted and add no clause.
 
 A basis-2 conversion is read off the parities of the two levels that the transition connects, so it holds only because those Jπ were already assumed. Quoting the converted `(E1)`, `(M1+E2)`, etc. back as evidence for either endpoint's Jπ is therefore circular. The `cL J$` argument must cite the measured assignment in its unconverted form that matches the converted one: `D, |DJ=1 from |g|g(|q)(ADO)` instead of the parity-derived `(E1)`, or `D+Q, |DJ=0,1 from |g|g(|q)(DCO)` instead of `(M1+E2)`.
