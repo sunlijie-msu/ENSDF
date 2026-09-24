@@ -1,0 +1,261 @@
+==============================================================================
+0. git status --porcelain -- A34/S34/new/S34_adopted.ens   (rc=0)
+==============================================================================
+ M A34/S34/new/S34_adopted.ens
+
+==============================================================================
+1. DIFF SCOPE
+==============================================================================
+hunk count = 8
+removed (old) lines = 13 ; added (new) lines = 11
+non-comment (i.e. NOT col7=c,col8=L) changed lines = 0
+added(new) comment line numbers = [640, 654, 728, 772, 773, 817, 870, 1350, 1351, 1758, 1759]
+all changed lines are cL comment records : YES
+
+file: lines(split \n)=2019  CRLF=True
+
+==============================================================================
+2. 80-COLUMN WIDTH OF TOUCHED LINES
+==============================================================================
+  line   640  total_len= 80  len(rstrip)= 78
+  line   654  total_len= 80  len(rstrip)= 75
+  line   728  total_len= 80  len(rstrip)= 63
+  line   772  total_len= 80  len(rstrip)= 63
+  line   773  total_len= 80  len(rstrip)= 40
+  line   817  total_len= 80  len(rstrip)= 78
+  line   870  total_len= 80  len(rstrip)= 43
+  line  1350  total_len= 80  len(rstrip)= 79
+  line  1351  total_len= 80  len(rstrip)= 22
+  line  1758  total_len= 80  len(rstrip)= 75
+  line  1759  total_len= 80  len(rstrip)= 52
+width failures = NONE
+
+G-record index size = 419
+
+==============================================================================
+3/4/5. RI EVIDENCE FOR NAMED GAMMAS
+==============================================================================
+  989.1     -> L590 RI=1.6 DRI=5 col80=' ' | L655 RI=5.0 DRI=15 col80=' '
+  580.3     -> L777 RI=2.0 DRI=10 col80=' '
+  1244.32   -> L871 RI=4.4 DRI=10 col80=' '
+  3392.86   -> L657 RI=100 DRI=12 col80=' '
+  2680.5    -> L780 RI=100 DRI=10 col80=' '
+  4799.11   -> L873 RI=19.2 DRI=30 col80=' '
+  2490.6    -> L642 RI=95 DRI=25 col80=' '
+  3451.5    -> L643 RI=54 DRI=16 col80=' '
+  8036.6    -> L731 RI=100 DRI=22 col80=' '
+  925.79    -> L729 RI=95 DRI=12 col80=' '
+  2363.97   -> L818 RI=58 DRI=31 col80=' '
+  4540.68   -> L821 RI=47 DRI=6 col80=' '
+  3002.8    -> L1354 RI=100 DRI=20 col80=' '
+  1461.7    -> L1352 RI=90 DRI=20 col80=' '
+  1178      -> L992 RI=14.3 DRI=72 col80=' ' | L1760 RI=42 DRI=25 col80=' '
+  2333.8    -> L1763 RI=1.0E2 DRI=4 col80=' '
+
+==============================================================================
+6. INDEPENDENT cL J$ WALK  (residual violations)
+==============================================================================
+all cL blocks = 233 ; cL J$ blocks = 105
+
+--- every cL J$ block (text + extracted transitions) ---
+  block@line 84     spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 2127.498|g, E2 to   0+, g.s.
+      E=2127.498  dir=to   Jpi=0+         lvl=g.s.      RI=L106 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 116    spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 3304.029|g, E2 to   0+, g.s.
+      E=3304.029  dir=to   Jpi=0+         lvl=g.s.      RI=L136 RI=87.1 DRI=9 col80=' '  (orderRI=87.1)
+  block@line 161    spin=1 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 1947.060|g, M1+E2 to2+, 2127.558 level.
+      E=1947.060  dir=None Jpi=           lvl=          RI=L170 RI=95 DRI=8 col80=' '  (orderRI=95.0)
+  block@line 186    spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 4114.52|g, E2 to 0+,g.s. L=2 from 0+ in {+32}S(t,p).
+      E=4114.52   dir=to   Jpi=0+         lvl=g.s.      RI=L199 RI=100.0 DRI=22 col80=' '  (orderRI=100.0)
+  block@line 234    spin=4 from p|g(|q) and |g|g(|q) in {+31}P(|a,p|g). |p=+ from        2561.35|g, E2 to 2+, 2127.558 level.
+      E=2561.35   dir=to   Jpi=2+         lvl=2127.558  RI=L243 RI=100 DRI=9 col80=' '  (orderRI=100.0)
+  block@line 253    spin=3 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 2749.24|g, M1+E2 to 2+, 2127.558 level.
+      E=2749.24   dir=to   Jpi=2+         lvl=2127.558  RI=L266 RI=100 DRI=8 col80=' '  (orderRI=100.0)
+  block@line 276    spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 4889.30|g, E2 to 0+,g.s.
+      E=4889.30   dir=to   Jpi=0+         lvl=g.s.      RI=L286 RI=100 DRI=24 col80=' '  (orderRI=100.0)
+  block@line 298    spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 3194.74|g, M1+E2 to 2+, 2127.558 level.
+      E=3194.74   dir=to   Jpi=2+         lvl=2127.558  RI=L304 RI=100 DRI=11 col80=' '  (orderRI=100.0)
+  block@line 309    spin=1 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 3253.21|g, M1+E2 to 2+, 2127.558 level.
+      E=3253.21   dir=to   Jpi=2+         lvl=2127.558  RI=L314 RI=100 DRI=11 col80=' '  (orderRI=100.0)
+  block@line 323    spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 2375.657|g, M1+E2 to2+, 3304.207 level. Discrepancy: L=1 from 3/2+ for 5683 {I7} level in  {+33}S(d,p) and the DWBA fit of |s(|q) seems acceptable (1971Va21,     1972Cr08), which could be a different level.
+      E=2375.657  dir=from Jpi=3/2+ for 5683 {I7} lvl=          RI=L335 RI=100 DRI=9 col80=' '  (orderRI=100.0)
+  block@line 350    spin=5 from |g(|q) and |g(|q)(POL) in {+31}P(|a,p|g). |p=- from      1001.5|g, E1 to 4+, 4688.96 level.
+      E=1001.5    dir=to   Jpi=4+         lvl=4688.96   RI=L357 RI=100 DRI=4 col80=' '  (orderRI=100.0)
+  block@line 387    spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 5997.30|g, E2 to 0+,g.s. L=2 from 0+ in {+32}S(t,p).
+      E=5997.30   dir=to   Jpi=0+         lvl=g.s.      RI=L395 RI=56 DRI=10 col80=' '  (orderRI=56.0)
+  block@line 408    spin=3 from p|g(|q) in {+31}P(|a,p|g). |p=+ from the strongest branch2864.56|g, M1+E2 to 2+, 3304.207 level. Discrepancy: |p=- from L=1+3   from 3/2+ for 6174 {I8} level in {+33}S(d,p) and L=(3) from 0+ for 6179{I14} level in {+32}S(t,p), which could be a different level.
+      E=2864.56   dir=to   Jpi=2+         lvl=3304.207  RI=L419 RI=100 DRI=10 col80=' '  (orderRI=100.0)
+  block@line 429    spin=4 from p|g(|q) in {+31}P(|a,p|g). |p=- based on that 6251.72    level is fed by 1539.7|g, E2, |DJ=2 from 7790.8 level with |p=-, which is determined from 7790.8's deexciting |g 2099.6, M1+E2, |DJ=0,1 to 5-,5690.61 level. |p=- also from L=3 from 3/2+ for 6254 {I8} level in     {+33}S(d,p). Discrepancy: 572.0|g, D, |DJ=1 to 2+, 5679.925 level in   {+24}Mg({+16}O,|a2p|g), in which 5679.925 level was assumed to be 3-.  |p=+ seems to be supported by that 1374.43|g, M1+E2 to 3+, 4876.839    level in {+31}P(|a,p|g) and L=2 from 3/2+ for 6220 {I50} level in      {+35}Cl(d,{+3}He). Natural parity for 6256 {I14} level observed in     {+32}S(t,p). 2005Ma03 in {+24}Mg({+16}O,|a2p|g) analyzed the           1539.7|g-gated spectrum and confirms that one level exists at 6251 and all four |g rays (572, 1374, 1562, 1375) are from this level.
+      E=1539.7    dir=from Jpi=7790.8     lvl=7790.8    RI=L703 RI=19 DRI=4 col80=' '  (orderRI=19.0)
+      E=572.0     dir=to   Jpi=2+         lvl=5679.925  RI=L444 RI=28 DRI=14 col80=' '  (orderRI=28.0)
+      E=1374.43   dir=to   Jpi=3+         lvl=4876.839  RI=L448 RI=97 DRI=21 col80=' '  (orderRI=97.0)
+      E=1539.7    dir=from Jpi=this       lvl=          RI=L703 RI=19 DRI=4 col80=' '  (orderRI=19.0)
+  block@line 471    spin=2,4 from p|g(|q) in {+31}P(|a,p|g). Spin=2 is ruled out because either E2 or M2 for 1732.39|g to 4+, 4688.96 level would be ruled out  by RUL. |p=- from L=3 from 3/2+ in {+33}S(d,p).
+      E=1732.39   dir=to   Jpi=4+         lvl=4688.96   RI=L478 RI=61 DRI=8 col80=' '  (orderRI=61.0)
+  block@line 483    1739.32|g to 4+, 4688.96 level and 2353.06|g to 1+, 4074.657 level.
+      E=1739.32   dir=to   Jpi=4+         lvl=4688.96   RI=L485 RI=100 DRI=13 col80=' '  (orderRI=100.0)
+      E=2353.06   dir=to   Jpi=1+         lvl=4074.657  RI=L486 RI=48 DRI=8 col80=' '  (orderRI=48.0)
+  block@line 520    929.436|g to 1-, 5755.871 level. |p=- from L=1 from 3/2+ in          {+33}S(d,p).
+      E=929.436   dir=to   Jpi=1-         lvl=5755.871  RI=L522 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 528    spin=2,4 from p|g(|q) in {+31}P(|a,p|g). |p=(+) from 4614|g to 2+,   2127.558 level and 2053|g to 4+, 4688.96 level.
+      E=4614      dir=to   Jpi=2+         lvl=2127.558  RI=L534 RI=100 DRI=9 col80=' '  (orderRI=100.0)
+      E=2053      dir=to   Jpi=4+         lvl=4688.96   RI=L532 RI=36 DRI=13 col80=' '  (orderRI=36.0)
+  block@line 548    6846.37|g to 0+, g.s.
+      E=6846.37   dir=to   Jpi=0+         lvl=g.s.      RI=L550 RI=50 DRI=6 col80=' '  (orderRI=50.0)
+  block@line 556    spin=2,4 from p|g(|q) in {+31}P(|a,p|g) (1972Jo10). |p=(+) from      2175|g to 4+, 4688.96 level and 4736|g to 2+, 2127.558 level.
+      E=2175      dir=to   Jpi=4+         lvl=4688.96   RI=L561 RI= DRI= col80=' '  (orderRI=None)
+      E=4736      dir=to   Jpi=2+         lvl=2127.558  RI=L562 RI= DRI= col80=' '  (orderRI=None)
+  block@line 612    3089.53|g to 1+, 4074.657 level.
+      E=3089.53   dir=to   Jpi=1+         lvl=4074.657  RI=L613 RI=100 DRI=20 col80=' '  (orderRI=100.0)
+  block@line 617    spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 7218.48|g, E2 to 0+,g.s.
+      E=7218.48   dir=to   Jpi=0+         lvl=g.s.      RI=L624 RI=100 DRI=10 col80=' '  (orderRI=100.0)
+  block@line 629    spin=(2,4) from p|g(|q) for 7248 {I2} level in {+31}P(|a,p|g). The   only deexciting 1557|g to 5-, 5690.61 level in {+31}P(|a,p|g).
+      E=1557      dir=to   Jpi=5-         lvl=5690.61   RI=L632 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 635    L=(2,3) from 0+ in {+32}S(t,p). The only deexciting 2558.82|g to 4+, 4688.96 level in {+33}S(n,|g) E=thermal.
+      E=2558.82   dir=to   Jpi=4+         lvl=4688.96   RI=L637 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 640    2490.6|g to 3+, 4876.839 level and 3451.5|g to 0+, 3916.40 level in  {+33}S(n,|g) E=thermal.
+      E=2490.6    dir=to   Jpi=3+         lvl=4876.839  RI=L642 RI=95 DRI=25 col80=' '  (orderRI=95.0)
+      E=3451.5    dir=to   Jpi=0+         lvl=3916.40   RI=L643 RI=54 DRI=16 col80=' '  (orderRI=54.0)
+  block@line 654    3392.86|g to 1+, 4074.657 level, 1469.67|g to 2+, 5998.10 level.
+      E=3392.86   dir=to   Jpi=1+         lvl=4074.657  RI=L657 RI=100 DRI=12 col80=' '  (orderRI=100.0)
+      E=1469.67   dir=to   Jpi=2+         lvl=5998.10   RI=L656 RI=14.7 DRI=26 col80=' '  (orderRI=14.7)
+  block@line 660    4248.28|g to 2+, 3304.207 level and 1210.04|g to 1-, 6342.51 level.
+      E=4248.28   dir=to   Jpi=2+         lvl=3304.207  RI=L663 RI=100 DRI=11 col80=' '  (orderRI=100.0)
+      E=1210.04   dir=to   Jpi=1-         lvl=6342.51   RI=L661 RI=10.2 DRI=14 col80=' '  (orderRI=10.2)
+  block@line 679    L=(1+3) from 3/2+ in {+33}S(d,p). 5602.78|g to 2+, 2127.558 level.
+      E=5602.78   dir=to   Jpi=2+         lvl=2127.558  RI=L680 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 691    7780.22|g to 0+, g.s. L=1 from 3/2+ for 7784 {I11} in {+33}S(d,p).
+      E=7780.22   dir=to   Jpi=0+         lvl=g.s.      RI=L694 RI=100 DRI=13 col80=' '  (orderRI=100.0)
+  block@line 697    2099.6|g, M1+E2, |DJ=0,1 to 5-, 5690.61 level gives 4-,5-,6-, in     which spin=6 is the only option based on 1539.7|g, E2, |DJ=2 to 4-,    6251.72 level.
+      E=2099.6    dir=to   Jpi=5-         lvl=5690.61   RI=L708 RI=100 DRI=11 col80=' '  (orderRI=100.0)
+      E=1539.7    dir=to   Jpi=4-         lvl=6251.72   RI=L703 RI=19 DRI=4 col80=' '  (orderRI=19.0)
+  block@line 718    7973.45|g to 0+ g.s.
+      E=7973.45   dir=to   Jpi=0+         lvl=g.s.      RI=L721 RI=100 DRI=14 col80=' '  (orderRI=100.0)
+  block@line 728    8036.6|g to 0+, g.s., 925.79|g to 3-, 7110.447 level
+      E=8036.6    dir=to   Jpi=0+         lvl=g.s.      RI=L731 RI=100 DRI=22 col80=' '  (orderRI=100.0)
+      E=925.79    dir=to   Jpi=3-         lvl=7110.447  RI=L729 RI=95 DRI=12 col80=' '  (orderRI=95.0)
+  block@line 738    L=1 from 3/2+ in {+33}S(d,p). 8136.98|g to 0+, g.s.
+      E=8136.98   dir=to   Jpi=0+         lvl=g.s.      RI=L742 RI=100 DRI=12 col80=' '  (orderRI=100.0)
+  block@line 745    8173.8|g to 0+, g.s.
+      E=8173.8    dir=to   Jpi=0+         lvl=g.s.      RI=L747 RI=100 DRI=20 col80=' '  (orderRI=100.0)
+  block@line 750    spin=1 from |g(|q) in {+34}S(|g,|g'),(pol |g,|g'). |p=+ from         8184.70|g, M1 to 0+, g.s.
+      E=8184.70   dir=to   Jpi=0+         lvl=g.s.      RI=L753 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 757    6077.27|g to 2+, 2127.558 level, 3581.2|g to 3-, 4624.401 level.
+      E=6077.27   dir=to   Jpi=2+         lvl=2127.558  RI=L759 RI=100 DRI=11 col80=' '  (orderRI=100.0)
+      E=3581.2    dir=to   Jpi=3-         lvl=4624.401  RI=L758 RI=31 DRI=6 col80=' '  (orderRI=31.0)
+  block@line 765    spin=4 from p|g(|q) in {+31}P(|a,p|g). 6166.24|g to 2+, 2127.558     level.
+      E=6166.24   dir=to   Jpi=2+         lvl=2127.558  RI=L769 RI=100 DRI=11 col80=' '  (orderRI=100.0)
+  block@line 772    2680.5|g, E2, |DJ=2 to 5-, 5690.61 level. Spin=(5,7)                 from p|g(|q) in {+31}P(|a,p|g).
+      E=2680.5    dir=to   Jpi=5-         lvl=5690.61   RI=L780 RI=100 DRI=10 col80=' '  (orderRI=100.0)
+  block@line 797    2812.7|g, (E1), |DJ=1 to 5-, 5690.61 level. 6+ from band assignment  in {+24}Mg({+16}O,|a2p|g).
+      E=2812.7    dir=to   Jpi=5-         lvl=5690.61   RI=L800 RI=100 DRI=18 col80=' '  (orderRI=100.0)
+  block@line 817    2363.97|g to 4-, 6251.72 level and 4540.68|g to 1+, 4074.657 level.
+      E=2363.97   dir=to   Jpi=4-         lvl=6251.72   RI=L818 RI=58 DRI=31 col80=' '  (orderRI=58.0)
+      E=4540.68   dir=to   Jpi=1+         lvl=4074.657  RI=L821 RI=47 DRI=6 col80=' '  (orderRI=47.0)
+  block@line 829    spin=1 from |g(|q) in {+34}S(|g,|g'),(pol |g,|g'). |p=+ from 8655|g, M1 to 0+, g.s.
+      E=8655      dir=to   Jpi=0+         lvl=g.s.      RI=L832 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 838    6573.6|g to 2+, 2127.558 level, 516.86|g to 1+, 8185.45 level, and   2945.8|g to 1-, 5755.871 level.
+      E=6573.6    dir=to   Jpi=2+         lvl=2127.558  RI=L844 RI=100 DRI=18 col80=' '  (orderRI=100.0)
+      E=516.86    dir=to   Jpi=1+         lvl=8185.45   RI=L840 RI=29 DRI=5 col80=' '  (orderRI=29.0)
+      E=2945.8    dir=to   Jpi=1-         lvl=5755.871  RI=L746 RI=1.9E2 DRI=6 col80=' ' | L841 RI=28 DRI=8 col80=' '  (orderRI=28.0)
+  block@line 849    1617.00|g to 3-, 7110.447 level and 8726.78|g to 0+, g.s.
+      E=1617.00   dir=to   Jpi=3-         lvl=7110.447  RI=L850 RI=100 DRI=13 col80=' '  (orderRI=100.0)
+      E=8726.78   dir=to   Jpi=0+         lvl=g.s.      RI=L854 RI=22.7 DRI=31 col80=' '  (orderRI=22.7)
+  block@line 857    3044.1|g, D+Q, |DJ=0,1 to 5-, 5690.61 level.
+      E=3044.1    dir=to   Jpi=5-         lvl=5690.61   RI=L858 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 864    8804.4|g to 0+ g.s.
+      E=8804.4    dir=to   Jpi=0+         lvl=g.s.      RI=L867 RI=52 DRI=9 col80=' '  (orderRI=52.0)
+  block@line 870    4799.11|g to 1+, 4074.657 level.
+      E=4799.11   dir=to   Jpi=1+         lvl=4074.657  RI=L873 RI=19.2 DRI=30 col80=' '  (orderRI=19.2)
+  block@line 879    942.3|g, D, |DJ=1 from 7, 9912.8 level. 3280.0|g to 5-, 5690.61      level.
+      E=942.3     dir=from Jpi=7          lvl=9912.8    RI=L990 RI=29 DRI=9 col80=' '  (orderRI=29.0)
+      E=3280.0    dir=to   Jpi=5-         lvl=5690.61   RI=L882 RI=100 DRI=20 col80=' '  (orderRI=100.0)
+  block@line 887    9024.95|g to 0+ g.s.
+      E=9024.95   dir=to   Jpi=0+         lvl=g.s.      RI=L889 RI=100 DRI=11 col80=' '  (orderRI=100.0)
+  block@line 894    3311.6|g to 0+, 5847.517 level.
+      E=3311.6    dir=to   Jpi=0+         lvl=5847.517  RI=L895 RI=39 DRI=7 col80=' '  (orderRI=39.0)
+  block@line 902    9206.65|g to 0+ g.s.
+      E=9206.65   dir=to   Jpi=0+         lvl=g.s.      RI=L907 RI=40 DRI=6 col80=' '  (orderRI=40.0)
+  block@line 914    3722.6|g, D+Q, |DJ=1 to 5-, 5690.61 level, 1043.8|g to 7-, 8371.0    level.
+      E=3722.6    dir=to   Jpi=5-         lvl=5690.61   RI=L917 RI=100 DRI=21 col80=' '  (orderRI=100.0)
+      E=1043.8    dir=to   Jpi=7-         lvl=8371.0    RI=L916 RI=21 DRI=12 col80=' '  (orderRI=21.0)
+  block@line 928    spin=1 from |g(|q) in {+34}S(|g,|g'),(pol |g,|g'). |p=+ from 9478|g, M1 to 0+, g.s.
+      E=9478      dir=to   Jpi=0+         lvl=g.s.      RI=L931 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 935    9544.83|g to 0+ g.s.
+      E=9544.83   dir=to   Jpi=0+         lvl=g.s.      RI=L939 RI=84 DRI=11 col80=' '  (orderRI=84.0)
+  block@line 962    9706|g to 0+, g.s.
+      E=9706      dir=to   Jpi=0+         lvl=g.s.      RI=L964 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 967    5884.6|g to 0+, 3916.40 level.
+      E=5884.6    dir=to   Jpi=0+         lvl=3916.40   RI=L968 RI=48 DRI=11 col80=' '  (orderRI=48.0)
+  block@line 980    spin=1 from |g(|q) in {+34}S(|g,|g'),(pol |g,|g'). |p=+ from 9867|g, M1 to 0+, g.s.
+      E=9867      dir=to   Jpi=0+         lvl=g.s.      RI=L983 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 987    1408.6|g, D, |DJ=1 to 6(+), 8503.7 level.
+      E=1408.6    dir=to   Jpi=6(+)       lvl=8503.7    RI=L993 RI=30 DRI=9 col80=' '  (orderRI=30.0)
+  block@line 1039   spin=1 from |g(|q) in {+34}S(|g,|g'),(pol |g,|g'). |p=+ from 10168|g,M1 to 0+, g.s.
+      E=10168     dir=to   Jpi=0+         lvl=g.s.      RI=L1042 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 1087   2608.6|g, Q to 6-, 7790.8 level, 2028.8|g to 7-, 8371.0 level.
+      E=2608.6    dir=to   Jpi=6-         lvl=7790.8    RI=L1090 RI=100 DRI=14 col80=' '  (orderRI=100.0)
+      E=2028.8    dir=to   Jpi=7-         lvl=8371.0    RI=L1089 RI=47 DRI=10 col80=' '  (orderRI=47.0)
+  block@line 1143   2147.2|g, E2, |DJ=2 to 6(+), 8503.7 level, 2280.4|g, (M1), |DJ=1 to  7-, 8371.0 level.
+      E=2147.2    dir=to   Jpi=6(+)       lvl=8503.7    RI=L1145 RI=100 DRI=21 col80=' '  (orderRI=100.0)
+      E=2280.4    dir=to   Jpi=7-         lvl=8371.0    RI=L1148 RI=100 DRI=21 col80=' '  (orderRI=100.0)
+  block@line 1350   3002.8|g, D, |DJ=1 to 7-, 8371.0 level, 1461.7|g, D(+Q), |DJ=1 to 7, 9912.8 level.
+      E=3002.8    dir=to   Jpi=7-         lvl=8371.0    RI=L1354 RI=100 DRI=20 col80=' '  (orderRI=100.0)
+      E=1461.7    dir=to   Jpi=7          lvl=9912.8    RI=L1352 RI=90 DRI=20 col80=' '  (orderRI=90.0)
+  block@line 1645   3436.1|g, D, |DJ=1 to 7-, 8371.0 level.
+      E=3436.1    dir=to   Jpi=7-         lvl=8371.0    RI=L1647 RI=1.0E2 DRI=4 col80=' '  (orderRI=100.0)
+  block@line 1705   2228.8|g, E2, |DJ=2 to 7, 9912.8 level.
+      E=2228.8    dir=to   Jpi=7          lvl=9912.8    RI=L1710 RI=100 DRI=12 col80=' '  (orderRI=100.0)
+  block@line 1758   2333.8|g to 8(+), 10651.5 level; 1611.5|g to (8), 11374.2 level;     356.3|g from 10(+), 13341.6 level, [M1,E2].
+      E=2333.8    dir=to   Jpi=8(+)       lvl=10651.5   RI=L1763 RI=1.0E2 DRI=4 col80=' '  (orderRI=100.0)
+      E=1611.5    dir=to   Jpi=(8)        lvl=11374.2   RI=L1761 RI=50 DRI=25 col80=' '  (orderRI=50.0)
+      E=356.3     dir=from Jpi=10(+)      lvl=13341.6   RI=L1775 RI=6.3 DRI=31 col80=' '  (orderRI=6.3)
+  block@line 1767   4949.3|g to 7-, 8371.0 level; |DJ=2 band structure.
+      E=4949.3    dir=to   Jpi=7-         lvl=8371.0    RI=L1769 RI=100 DRI=21 col80=' '  (orderRI=100.0)
+  block@line 1774   1966.8|g, E2, |DJ=2 to (8), 11374.2 level.
+      E=1966.8    dir=to   Jpi=(8)        lvl=11374.2   RI=L1780 RI=81 DRI=19 col80=' '  (orderRI=81.0)
+  block@line 1799   3308.8|g to 8(+), 10651.5 level; |DJ=2 band structure.
+      E=3308.8    dir=to   Jpi=8(+)       lvl=10651.5   RI=L1800 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 1823   2768.9|g to 8(+), 11807.4 level.
+      E=2768.9    dir=to   Jpi=8(+)       lvl=11807.4   RI=L1824 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 1845   1902.7|g to 10(+), 13341.6 level.
+      E=1902.7    dir=to   Jpi=10(+)      lvl=13341.6   RI=L1846 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 1849   4880.8|g to 8(-), 10399.8 level in {+24}Mg({+16}O,|a2p|g).
+      E=4880.8    dir=to   Jpi=8(-)       lvl=10399.8   RI=L1850 RI=100 DRI= col80=' '  (orderRI=100.0)
+  block@line 1880   2688.4|g to (10+), 13960.5 level in {+24}Mg({+16}O,|a2p|g).
+      E=2688.4    dir=to   Jpi=(10+)      lvl=13960.5   RI=L1881 RI=100 DRI= col80=' '  (orderRI=100.0)
+
+--- residual violation classes ---
+  weak   count=0
+  lt     count=0
+  q80    count=0
+  jpunc  count=11
+        (987, '1408.6', '6(+)', 'to', '8503.7')
+        (1143, '2147.2', '6(+)', 'to', '8503.7')
+        (1758, '2333.8', '8(+)', 'to', '10651.5')
+        (1758, '1611.5', '(8)', 'to', '11374.2')
+        (1758, '356.3', '10(+)', 'from', '13341.6')
+        (1774, '1966.8', '(8)', 'to', '11374.2')
+        (1799, '3308.8', '8(+)', 'to', '10651.5')
+        (1823, '2768.9', '8(+)', 'to', '11807.4')
+        (1845, '1902.7', '10(+)', 'to', '13341.6')
+        (1849, '4880.8', '8(-)', 'to', '10399.8')
+        (1880, '2688.4', '(10+)', 'to', '13960.5')
+  order  count=2
+        (429, [('1539.7', 19.0), ('572.0', 28.0), ('1374.43', 97.0), ('1539.7', 19.0)])
+        (879, [('942.3', 29.0), ('3280.0', 100.0)])
+  dup    count=0
+  noGR   count=0
+  ambig  count=1
+        (838, '2945.8', [(746, '1.9E2'), (841, '28')])
+
+TOTAL residual violations (weak+lt+q80+jpunc+order+dup) = 13
+  blocks affected = 11
+  jpunc blocks = 9 ; jpunc items = 11 ; distinct quoted levels = 7
+  distinct quoted (Jpi,level) pairs:
+        ('(10+)', '13960.5')
+        ('(8)', '11374.2')
+        ('10(+)', '13341.6')
+        ('6(+)', '8503.7')
+        ('8(+)', '10651.5')
+        ('8(+)', '11807.4')
+        ('8(-)', '10399.8')
