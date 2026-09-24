@@ -1,11 +1,7 @@
 ---
 name: gamma-selection-rules
 description: >
-  Use this skill when deducing multipolarities for gamma transitions and then Jπ for nuclear levels by combining constraints
-  from feeding and deexciting gamma transitions using electromagnetic
-  selection rules. Applies D/E2 rules to primary capture transitions,
-  D/Q or D/E2 to deexciting gammas (if RUL applies), and takes AND
-  intersection of all constraints. Handles multi-valued initial Jπ via
+  Use this skill when deducing multipolarities for gamma transitions and then Jπ for nuclear levels by combining constraints from deexciting and feeding gamma transitions using electromagnetic selection rules. Applies D/E2 rules to primary capture transitions, D/E2 rules to deexciting gammas (if RUL applies), and takes AND intersection of all constraints. Handles multi-valued initial Jπ via
   union before intersection.
 ---
 

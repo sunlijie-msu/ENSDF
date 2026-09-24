@@ -11,14 +11,10 @@ Concise reference for nuclear electromagnetic transitions.
 *   ΔJ: Spin change between initial and final levels (ΔJ = |Ji - Jf|)
 *   Δπ: Parity change between initial and final levels (Δπ = πi * πf)
 *   Multipolarity Designations:
-    *   D (Dipole, L=1): E1, M1
-    *   Q (Quadrupole, L=2): E2, M2
-    *   O (Octupole, L=3): E3, M3
-    *   H (Hexadecapole, L=4): E4, M4
-*   Notation:
-    -   Comma (,) = OR (alternative multipolarities)
-    -   Plus (+) = AND (mixed multipolarity)
-    -   Tentative assignments in parentheses, e.g., (5/2+)
+    *   D (Dipole, L=1): (electric E1 or magnetic M1)
+    *   Q (Quadrupole, L=2): (electric E2 or magnetic M2)
+    *   O (Octupole, L=3): (electric E3 or magnetic M3)
+    *   H (Hexadecapole, L=4): (electric E4 or magnetic M4)
 
 ---
 
@@ -82,7 +78,7 @@ Selection rules for each transition type:
 
 ---
 
-## 5. Mixed Multipolarities
+## 5. Quick Reference: Mixed Multipolarities  to ΔJ and Δπ
 
 *   D+Q (E1+M2 or M1+E2) → ΔJ = 0, 1
 *   Q+O (E2+M3 or M2+E3) → ΔJ = 2
@@ -90,4 +86,5 @@ Selection rules for each transition type:
 *   E1+M2 → ΔJ = 0, 1; Δπ = Yes
 *   E2+M3 → ΔJ = 2; Δπ = No
 *   M2+E3 → ΔJ = 2; Δπ = Yes
-
+*   E3+M4 → ΔJ = 3; Δπ = No
+*   M3+E4 → ΔJ = 3; Δπ = Yes
