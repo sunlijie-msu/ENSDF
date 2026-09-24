@@ -63,7 +63,8 @@ Quoted multipolarity must match the G-record M field character-for-character.
 
 ### 3. Level Energy
 Quoted level energy must match L-record energy character-for-character.
-- **Pattern:** `to J-π, ENERGY level` or `from J-π, ENERGY level`
+- **Pattern:** `to J-π, ENERGY level` or `from J-π, ENERGY level`; the designator may also be `resonance`
+- **Coverage:** Every quoted level energy in a `cL J$` block is checked, including comments that quote no γ energy
 - **Special Convention:** Comments use `g.s.` for ground state; data records show `0.0` — these are semantically equivalent (no error flagged)
 
 ### 4. J-π Notation
@@ -109,7 +110,7 @@ For transitions quoted as `E_gamma|g to/from E_level`, verify:
 | `ENERGY_CONSERVATION_WARNING` | WARNING  | \|E_initial - E_final - E_gamma\| > 2 keV |
 | `ENERGY_CONSERVATION_ERROR`   | ERROR    | \|E_initial - E_final - E_gamma\| > 5 keV |
 
-**Exit codes:** `0` = no errors; `1` = one or more errors found
+**Exit codes:** `0` = no errors; `1` = one or more errors found; `2` = file not found
 
 ---
 

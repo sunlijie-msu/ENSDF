@@ -40,7 +40,6 @@ from typing import Dict, List, Optional, Tuple
 RED = '\033[91m'
 GREEN = '\033[92m'
 YELLOW = '\033[93m'
-CYAN = '\033[96m'
 BOLD = '\033[1m'
 RESET = '\033[0m'
 
@@ -87,6 +86,16 @@ class QuotedRef:
     line_num: int                       # starting line of cL J$ block
     context: str                        # matched text snippet
     block_level: Optional[float] = None  # energy of the owning L-record
+
+
+@dataclass
+class LevelQuote:
+    """A level energy quoted in a cL J$ comment block."""
+    jpi: str
+    level_str: str
+    line_num: int
+    context: str
+    has_designator: bool
 
 
 @dataclass
@@ -182,10 +191,10 @@ def parse_gammas(filepath: Path, *, debug: bool = False) -> List[Gamma]:
 # ---------------------------------------------------------------------------
 # cL J$ comment extraction
 # ---------------------------------------------------------------------------
-def extract_quoted_refs(filepath: Path) -> Tuple[List[QuotedRef], List[Finding]]:
-    """Extract quoted references and level-designator findings from cL J$ blocks."""
+def extract_quoted_refs(filepath: Path) -> Tuple[List[QuotedRef], List[LevelQuote]]:
+    """Extract quoted gamma references and level quotations from cL J$ blocks."""
     refs: List[QuotedRef] = []
-    designator_findings: List[Finding] = []
+    level_quotes: List[LevelQuote] = []
     with open(filepath, 'r', encoding='utf-8') as fh:
         lines = fh.readlines()
 
@@ -197,8 +206,8 @@ def extract_quoted_refs(filepath: Path) -> Tuple[List[QuotedRef], List[Finding]]
     def flush_block() -> None:
         if block_lines:
             refs.extend(_parse_j_block(block_lines, block_start, current_level))
-            designator_findings.extend(
-                _find_missing_level_designators(block_lines, block_start))
+            level_quotes.extend(
+                _find_level_quotes(block_lines, block_start))
 
     for i, line in enumerate(lines, start=1):
         if len(line) < 10:
@@ -244,36 +253,34 @@ def extract_quoted_refs(filepath: Path) -> Tuple[List[QuotedRef], List[Finding]]
     # End of file
     if in_j_block:
         flush_block()
-    return refs, designator_findings
+    return refs, level_quotes
 
 
 _LEVEL_QUOTE = re.compile(
-    r'\b(?:to|from)\s+[0-9/()+, \-]{1,24}?,\s*'
-    r'(?P<level>\d+(?:\.\d+)?)(?:-keV)?(?!\.\d)'
+    r'\b(?:to|from)\s+'
+    r'(?P<jpi>[0-9/()+, \-]{1,24}?)\s*,\s*'
+    r'(?P<level>g\.s\.|\d+(?:\.\d+)?)'
+    r'(?:-keV)?'
     r'(?P<suffix>\s+(?:level|resonance)\b)?')
 
 
-def _find_missing_level_designators(texts: List[str],
-                                    line_num: int) -> List[Finding]:
-    """Flag quoted level energies not followed by the "level" designator.
+def _find_level_quotes(texts: List[str], line_num: int) -> List[LevelQuote]:
+    """Extract every level energy quoted in a cL J$ comment block.
 
     Scans the whole block, so comments that quote a level without quoting the
     gamma energy (e.g. "E1+M2 |DJ=1 |g to 2+, 2128 level") are covered too.
     """
     full = re.sub(r'\s+', ' ', ' '.join(text.strip() for text in texts))
-    found: List[Finding] = []
+    quotes: List[LevelQuote] = []
     for match in _LEVEL_QUOTE.finditer(full):
-        if match.group('suffix'):
-            continue
-        level_str = match.group('level')
-        found.append(Finding(
-            code='MISSING_LEVEL_SUFFIX', severity='ERROR',
-            line=line_num, context=match.group(0).strip(' ,;'),
-            message=f'Quoted level "{level_str}" is not followed by '
-                    f'the designator "level"',
-            quoted=level_str,
+        quotes.append(LevelQuote(
+            jpi=match.group('jpi').strip(' ,;'),
+            level_str=match.group('level'),
+            line_num=line_num,
+            context=match.group(0).strip(' ,;'),
+            has_designator=bool(match.group('suffix')),
         ))
-    return found
+    return quotes
 
 
 def _parse_j_block(texts: List[str], start_line: int,
@@ -551,6 +558,67 @@ def verify(refs: List[QuotedRef], levels: Dict[float, Level],
     return findings
 
 
+def verify_level_quotes(quotes: List[LevelQuote], levels: Dict[float, Level],
+                        window: float) -> List[Finding]:
+    """Check every quoted level energy against the L-records."""
+    findings: List[Finding] = []
+    for quote in quotes:
+        level_str = quote.level_str.replace('-keV', '')
+        is_gs = level_str == 'g.s.'
+        if not is_gs and not quote.has_designator:
+            findings.append(Finding(
+                code='MISSING_LEVEL_SUFFIX', severity='ERROR',
+                line=quote.line_num, context=quote.context,
+                message=(f'Quoted level "{level_str}" is not followed by '
+                         f'the designator "level"'),
+                quoted=level_str,
+            ))
+        energy = 0.0 if is_gs else float(level_str)
+        lvl = find_closest_level(levels, energy, window)
+        if lvl is None:
+            findings.append(Finding(
+                code='LEVEL_NOT_FOUND', severity='ERROR',
+                line=quote.line_num, context=quote.context,
+                message=(f'No L-record within {window} keV of '
+                         f'{level_str} keV'),
+                quoted=level_str,
+            ))
+            continue
+        # g.s. in comments is equivalent to 0.0 in the data records
+        if not is_gs and lvl.energy_str != level_str:
+            findings.append(Finding(
+                code='LEVEL_ENERGY_MISMATCH', severity='ERROR',
+                line=quote.line_num, context=quote.context,
+                message=(f'Quoted "{level_str}" keV, '
+                         f'L-record has "{lvl.energy_str}" keV'),
+                quoted=level_str,
+                actual=lvl.energy_str,
+                diff_kev=abs(lvl.energy - energy),
+            ))
+        if quote.jpi and lvl.jpi != quote.jpi:
+            findings.append(Finding(
+                code='JPI_MISMATCH', severity='ERROR',
+                line=quote.line_num, context=quote.context,
+                message=(f'Quoted J-pi "{quote.jpi}", '
+                         f'L-record J field is "{lvl.jpi}"'),
+                quoted=quote.jpi,
+                actual=lvl.jpi,
+            ))
+    return findings
+
+
+def dedupe(findings: List[Finding]) -> List[Finding]:
+    """Drop findings reported by both the gamma and the block-level scan."""
+    seen: set[Tuple[str, int, str, str]] = set()
+    unique: List[Finding] = []
+    for finding in findings:
+        key = (finding.code, finding.line, finding.quoted, finding.actual)
+        if key not in seen:
+            seen.add(key)
+            unique.append(finding)
+    return unique
+
+
 # ---------------------------------------------------------------------------
 # Report
 # ---------------------------------------------------------------------------
@@ -636,11 +704,13 @@ def main() -> None:
     print(f'  Levels: {len(levels)}    Gammas: {len(gammas)}')
 
     # Extract quoted references from cL J$ comments
-    refs, designator_findings = extract_quoted_refs(filepath)
-    print(f'  Quoted references: {len(refs)}')
+    refs, level_quotes = extract_quoted_refs(filepath)
+    print(f'  Quoted references: {len(refs)}'
+          f'    Level quotes: {len(level_quotes)}')
 
     # Verify
-    findings = verify(refs, levels, gammas, window) + designator_findings
+    findings = dedupe(verify(refs, levels, gammas, window)
+                      + verify_level_quotes(level_quotes, levels, window))
 
     # Report
     print_report(filepath, findings, len(refs), len(levels), len(gammas))
