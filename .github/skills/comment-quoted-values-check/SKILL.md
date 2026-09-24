@@ -147,6 +147,8 @@ python .github/scripts/check_quoted_values.py "path/to/adopted.ens"
 ```
 Confirm zero errors.
 
+Re-run the checker after any L-record J-π or level-energy edit: existing comment quotations immediately go stale and surface as `JPI_MISMATCH` or `LEVEL_ENERGY_MISMATCH`. Fix the comment text, never the L-record.
+
 ---
 
 ## Common Pitfalls
