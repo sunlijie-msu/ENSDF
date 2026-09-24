@@ -19,6 +19,16 @@ ENSDF CONVENTIONS RECOGNIZED:
     - Data fields record ground state energy as 0.0 keV
     - These are semantically equivalent: no error flagged for g.s. vs 0.0
 
+  Measured vs. character multipolarity:
+    - A measured D/Q composition fixes the multipole orders and ΔJ but not
+      the electromagnetic character. Once the character is fixed (by RUL or by
+      the level scheme), the M field holds a character form while a cL J$
+      argument legitimately quotes the measured form it was derived from:
+      quoting "D, |DJ=1" for an "(E1)" record describes the same transition,
+      so no error is flagged for such a pair.
+    - A different multipole order is still a mismatch (e.g. quoted "D" for an
+      "M1+E2" record).
+
 This script is read-only: it never modifies any files.
 
 Usage:
@@ -437,6 +447,42 @@ def find_closest_gamma(gammas: List[Gamma], energy: float,
 
 
 # ---------------------------------------------------------------------------
+# Multipolarity equivalence
+# ---------------------------------------------------------------------------
+# A measured D/Q composition fixes the multipole orders and ΔJ but not the
+# electromagnetic character. Once the character is fixed -- by RUL or by the
+# level scheme -- the record's M field holds a character form, while a cL J$
+# argument legitimately quotes the measured form it was derived from, e.g.
+# "D, |DJ=1" for an "(E1)" record. Such pairs describe the same transition.
+MEASURED_TO_CHARACTER: Dict[str, Tuple[str, ...]] = {
+    'D': ('E1', 'M1', '(E1)', '(M1)', '[E1]', '[M1]',
+          '[E1,M1]', '[M1,E1]'),
+    'Q': ('E2', 'M2', '(E2)', '(M2)', '[E2]', '[M2]',
+          '[E2,M2]', '[M2,E2]'),
+    'D+Q': ('E1+M2', 'M1+E2', '(E1+M2)', '(M1+E2)', '[E1+M2]', '[M1+E2]',
+            '[E1+M2,M1+E2]', '[M1+E2,E1+M2]', '[M1,E2]', '[E2,M1]'),
+    'D(+Q)': ('E1(+M2)', 'M1(+E2)', '(E1(+M2))', '(M1(+E2))', '[E1(+M2)]',
+              '[M1(+E2)]', '[E1(+M2),M1(+E2)]', '[M1(+E2),E1(+M2)]'),
+}
+
+
+def multipolarity_equivalent(first: str, second: str) -> bool:
+    """True when a measured D/Q form and its character form agree.
+
+    The two strings must describe the same multipole orders; they may differ
+    only in whether the electromagnetic character is stated.
+    """
+    a, b = first.strip(), second.strip()
+    if a == b:
+        return True
+    for measured, characters in MEASURED_TO_CHARACTER.items():
+        if ((a == measured and b in characters)
+                or (b == measured and a in characters)):
+            return True
+    return False
+
+
+# ---------------------------------------------------------------------------
 # Verification
 # ---------------------------------------------------------------------------
 def verify(refs: List[QuotedRef], levels: Dict[float, Level],
@@ -471,7 +517,9 @@ def verify(refs: List[QuotedRef], levels: Dict[float, Level],
 
         # --- Multipolarity ---
         if ref.multipolarity is not None and g is not None:
-            if g.multipolarity != ref.multipolarity:
+            # A measured form and the character form derived from it describe
+            # the same transition, so they are not a mismatch.
+            if not multipolarity_equivalent(ref.multipolarity, g.multipolarity):
                 findings.append(Finding(
                     code='MULTIPOLARITY_MISMATCH', severity='ERROR',
                     line=ref.line_num, context=ref.context,

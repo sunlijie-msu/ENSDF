@@ -171,11 +171,17 @@ To further constrain multipolarities (G-record M field) and then use them to ded
 
 ### Conversion Precedence Rules
 
-If a lifetime is available and the Java transition-strength code run by humans excludes M2 by RUL, convert D+Q to firm M1+E2, and state the clause in the record's `cG M$`/`cG M,MR$` comment, e.g., `M2 ruled out by RUL.`
+A measured `D`, `Q`, `D+Q`, or `D(+Q)` assignment fixes the dipole/quadrupole composition and ΔJ, but leaves the electromagnetic character open. Resolve it with the first basis below that applies:
 
-If RUL does not rule out M2, and if the level scheme gives a firm Δπ, convert D+Q to tentative (M1+E2), adding `|D|p=no from level scheme.` to cG comment.
+1. **RUL (measured lifetime), for assignments containing a Q component.** The transition-strength code (Java, run by humans) shows that the M2 partial half-life exceeds the recommended upper limit, so the Q component is E2 and Δπ=no follows, making the D component M1. Firm result: `Q` → `E2`, `D+Q` → `M1+E2`, `D(+Q)` → `M1(+E2)`. Add `M2 ruled out by RUL.`
+2. **Firm Δπ from the level scheme.** Both level parities are firm, which fixes the character while ΔJ stays as measured. Because it rests on assumed parities, the result is tentative:
+    - Δπ=no: `D` → `(M1)`, `Q` → `(E2)`, `D+Q` → `(M1+E2)`, `D(+Q)` → `(M1(+E2))`.
+    - Δπ=yes: `D` → `(E1)`, `Q` → `(M2)`, `D+Q` → `(E1+M2)`, `D(+Q)` → `(E1(+M2))`.
 
-No conversion: if neither basis exists, i.e., RUL does not exclude M2 and Δπ is unknown from level scheme, keep the measured assignment with only D and Q labels, and do not cite a conversion in the comment.
+    Add `|D|p=no from level scheme.` or `|D|p=yes from level scheme.`
+3. **Neither basis applies.** Keep the measured assignment unconverted and add no clause.
+
+A basis-2 conversion is read off the parities of the two levels that the transition connects, so it holds only because those Jπ were already assumed. Quoting the converted `(E1)`, `(M1+E2)`, etc. back as evidence for either endpoint's Jπ is therefore circular. The `cL J$` argument must cite the measured assignment in its unconverted form that matches the converted one: `D, |DJ=1 from |g|g(|q)(ADO)` instead of the parity-derived `(E1)`, or `D+Q, |DJ=1 from |g|g(|q)(DCO)` instead of `(E1+M2)`.
 
 ### Comment Examples
 
@@ -201,8 +207,6 @@ Use γ properties in `cL J$` comments to deduce Jπ:
 - `cL J$<G-energy>|g, Q, |DJ=2 to <Jπ>, <L-energy> level`
 
 If D(+Q) is firm, the corresponding converted form is M1(+E2). The same logic applies to E1+M2.
-
-A general comment in the ens file top block (`cG M,MR$`, `cG M(A)$`) can hardly cover all cases. So, to ensure data traceability, add a per-record `cG M$`/`cG MR$`/`cG M,MR$` comment to specify the source method and dataset.
 
 Bracketed `[...]` multipolarities are solely deduced from level-scheme Jπ changes between the transition initial and final levels and need no provenance comment.
 

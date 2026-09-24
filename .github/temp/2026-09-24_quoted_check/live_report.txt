@@ -1,0 +1,50 @@
+Parsing S34_adopted.ens ...
+  Levels: 367    Gammas: 419
+  Quoted references: 96    Level quotes: 94
+
+================================================================================
+[1mENSDF Comment Quoted Values Cross-Check Report[0m
+File: A34\S34\new\S34_adopted.ens
+Levels: 367   Gammas: 419   Quoted references: 96
+================================================================================
+
+  ERRORS: 8   WARNINGS: 0
+
+--------------------------------------------------------------------------------
+[91m[1mERRORS[0m
+--------------------------------------------------------------------------------
+  [91m#1 [JPI_MISMATCH][0m  line 917
+      Quoted J-pi "7-", L-record J field is "(7)-"
+      Context: 1043.8|g to 7-, 8371.0 level.
+
+  [91m#2 [JPI_MISMATCH][0m  line 990
+      Quoted J-pi "6(+)", L-record J field is "(6+)"
+      Context: 1408.6|g, D, |DJ=1 to 6(+), 8503.7 level.
+
+  [91m#3 [JPI_MISMATCH][0m  line 1090
+      Quoted J-pi "7-", L-record J field is "(7)-"
+      Context: 2028.8|g to 7-, 8371.0 level.
+
+  [91m#4 [JPI_MISMATCH][0m  line 1146
+      Quoted J-pi "6(+)", L-record J field is "(6+)"
+      Context: 2147.2|g, E2, |DJ=2 to 6(+), 8503.7 level
+
+  [91m#5 [JPI_MISMATCH][0m  line 1146
+      Quoted J-pi "7-", L-record J field is "(7)-"
+      Context: 2280.4|g, (M1), |DJ=1 to 7-, 8371.0 level.
+
+  [91m#6 [JPI_MISMATCH][0m  line 1353
+      Quoted J-pi "7-", L-record J field is "(7)-"
+      Context: 3002.8|g, D, |DJ=1 to 7-, 8371.0 level
+
+  [91m#7 [JPI_MISMATCH][0m  line 1648
+      Quoted J-pi "7-", L-record J field is "(7)-"
+      Context: 3436.1|g, D, |DJ=1 to 7-, 8371.0 level.
+
+  [91m#8 [JPI_MISMATCH][0m  line 1770
+      Quoted J-pi "7-", L-record J field is "(7)-"
+      Context: 4949.3|g to 7-, 8371.0 level; |DJ=2 band structure.
+
+================================================================================
+[91mRESULT: 8 error(s) found — all must be fixed[0m
+================================================================================

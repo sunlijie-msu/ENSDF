@@ -59,7 +59,8 @@ Quoted gamma energy must match G-record energy character-for-character.
 ### 2. Multipolarity
 Quoted multipolarity must match the G-record M field character-for-character.
 - **Pattern:** `energy|g MULT` (e.g., `1824.7|g M1+E2`)
-- Zero tolerance — exact string match required
+- **Equivalence:** a measured `D`/`Q`/`D+Q`/`D(+Q)` form and the electromagnetic character derived from it describe the same transition, so quoting the measured form for a record whose M field holds the character form is accepted, e.g. `D, |DJ=1` quoted for an `(E1)` record. The character derived from the level scheme must not be quoted back as evidence for that same level's Jπ (circular); see `.github/skills/gamma-selection-rules/SKILL.md`.
+- **Zero tolerance** on multipole order — quoted `D` against an `M1+E2` record, or quoted `E2` against a `D` record, is a mismatch
 
 ### 3. Level Energy
 Quoted level energy must match L-record energy character-for-character.
@@ -151,7 +152,7 @@ Confirm zero errors.
 ## Common Pitfalls
 
 1. **J-π parentheses ignored:** `(11/2)-` ≠ `(11/2-)` — different physical meaning
-2. **Multipolarity substitution:** `D` ≠ `(M1)` ≠ `M1`
+2. **Multipolarity order substitution:** `D` ≠ `M1+E2`, `Q` ≠ `D+Q` — measured-to-character pairs (e.g. `D` and `(M1)`) are equivalent, but a different multipole order always is a mismatch
 3. **Energy string mismatches:** `1991` ≠ `1991.27` — must match character-for-character
 4. **Ground state notation:** `g.s.` in comments = `0.0` in data records (no error)
 5. **Energy conservation not checked:** Always verify E_initial - E_final ≈ E_gamma

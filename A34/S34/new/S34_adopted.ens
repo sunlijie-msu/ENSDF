@@ -670,7 +670,7 @@
  34S   G 3005.39   5  79     8  [M1,E2]                                         
  34S   G 3515.07   11 11.3   13 [E1]                                            
  34S   G 4325.397  30 100    10 [E1]                                            
- 34S   L 7655      11 (-)                                                       
+ 34S   L 7655      11 (1-,2-,3-,4-,5-)                                          
  34S X L XREF=NRW                                                               
  34S  cL E$weighted average of 7659 {I11} from {+33}S(d,p) and 7649 {I14} from  
  34S 2cL {+34}S(p,p)                                                            
@@ -696,7 +696,7 @@
  34S   L 7790.8    4  6-               97 FS     24                             
  34S X L XREF=HMg                                                               
  34S  cL J$2099.6|g, M1+E2, |DJ=0,1 to 5-, 5690.61 level gives 4-,5-,6-, in     
- 34S 2cL which spin=6 is the only option based on 1539.7|g, E2, |DJ=2 to 4-,    
+ 34S 2cL which spin=6 is the only option considering 1539.7|g, E2, |DJ=2 to 4-, 
  34S 3cL 6251.72 level.                                                         
  34S  cL T$lifetime |t=140 fs {I35}: weighted average of 190 fs {I50} in        
  34S 2cL {+24}Mg({+16}O,|a2p|g) from 2005Ma03 with DSAM and 115 fs {I35} in     
@@ -768,10 +768,11 @@
  34S  cL T$lifetime |t<40 fs in {+31}P(|a,p|g) from 1977GrZH with DSAM.         
  34S   G 1951.77   19 34     7  [E3]                                            
  34S   G 6166.24   13 100    11 [E2]                                            
- 34S   L 8371.0    4  7-               83 FS     14                             
+ 34S   L 8371.0    4  (7)-             83 FS     14                             
  34S X L XREF=HMg                                                               
  34S  cL J$Spin=(5,7) from p|g(|q) in {+31}P(|a,p|g). 2680.5|g, E2, |DJ=2 to 5-,
- 34S 2cL 5690.61 level. 580.3|g, (M1), |DJ=1 to 6-, 7790.8 level.               
+ 34S 2cL 5690.61 level. 580.3|g, |DJ=1 to 6-, 7790.8 level. Spin increases with 
+ 34S 3cL excitation energy assumed in {+24}Mg({+16}O,|a2p|g).                   
  34S  cL T$lifetime |t=120 fs {I20}: weighted average of 122 fs {I40} in        
  34S 2cL {+24}Mg({+16}O,|a2p|g) from 2005Ma03 with DSAM and 120 fs {I20} in     
  34S 3cL {+31}P(|a,p|g) from 1977GrZH with DSAM.                                
@@ -793,10 +794,11 @@
  34S  cL E$weighted average of 8418 {I16} from {+32}S(t,p) and 8423 {I5} from   
  34S 2cL {+34}S(p,p)                                                            
  34S  cL J$L=4 from 0+ in {+32}S(t,p).                                          
- 34S   L 8503.7    5  6(+)             28 FS     7                              
+ 34S   L 8503.7    5  (6+)             28 FS     7                              
  34S X L XREF=HM                                                                
- 34S  cL J$2812.7|g, (E1), |DJ=1 to 5-, 5690.61 level. 6+ from band assignment  
- 34S 2cL in {+24}Mg({+16}O,|a2p|g).                                             
+ 34S  cL J$2812.7|g, D, |DJ=1 to 5-, 5690.61 level; 3813.6|g to 4+, 4688.96     
+ 34S 2cL level. Spin increases with excitation energy assumed in                
+ 34S 3cL {+24}Mg({+16}O,|a2p|g).                                                
  34S  cL T$lifetime |t=40 fs {I10} in {+31}P(|a,p|g) from 1977GrZH with DSAM.   
  34S   G 2812.7    9  100    18 (E1)                                        M   
  34S  cG M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). |D|p=yes from 
@@ -853,9 +855,10 @@
  34S   G 3500.3    5  25     6                                                  
  34S   G 6600.1    7  11.9   26                                                 
  34S   G 8726.78   24 22.7   31                                                 
- 34S   L 8734.8    6  4,5,6                                                     
+ 34S   L 8734.8    6  (5,6)                                                     
  34S X L XREF=HW                                                                
- 34S  cL J$3044.1|g, D+Q, |DJ=0,1 to 5-, 5690.61 level.                         
+ 34S  cL J$3044.1|g, D+Q, |DJ=0,1 to 5-, 5690.61 level. Spin increases with     
+ 34S 2cL excitation energy assumed in {+24}Mg({+16}O,|a2p|g).                   
  34S   G 3044.1    6  100       D+Q                                         M   
  34S  cG M$D+Q, |DJ=0,1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).           
  34S   L 8792      5                                                            
@@ -877,8 +880,7 @@
  34S X L XREF=W                                                                 
  34S   L 8970.6    5  6                                                         
  34S X L XREF=H                                                                 
- 34S  cL J$942.3|g, D, |DJ=1 from 7, 9912.8 level. 3280.0|g to 5-, 5690.61      
- 34S 2cL level.                                                                 
+ 34S  cL J$3280.0|g to 5-, 5690.61 level; 1180|g to 6-, 7790.8 level.           
  34S   G 1180      1  5.7    29                                             M   
  34S   G 3280.0    6  100    20                                             M   
  34S   L 8987      5                                                            
