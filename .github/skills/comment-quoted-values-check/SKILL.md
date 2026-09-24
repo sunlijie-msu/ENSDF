@@ -63,7 +63,7 @@ Quoted multipolarity must match the G-record M field character-for-character.
 
 ### 3. Level Energy
 Quoted level energy must match L-record energy character-for-character.
-- **Pattern:** `to ENERGY, J-π` or `from ENERGY, J-π`
+- **Pattern:** `to J-π, ENERGY level` or `from J-π, ENERGY level`
 - **Special Convention:** Comments use `g.s.` for ground state; data records show `0.0` — these are semantically equivalent (no error flagged)
 
 ### 4. J-π Notation
@@ -88,9 +88,9 @@ For transitions quoted as `E_gamma|g to/from E_level`, verify:
 
 | Pattern Example                           | Checks Performed                                                                      |
 | :---------------------------------------- | :------------------------------------------------------------------------------------ |
-| `1824.7\|g M1+E2 to 7/2-, 1991`           | γ vs G-record, mult vs G-record, level E vs L-record, J-π vs L-record, E conservation |
-| `2061.6\|g D, \|DJ=1 from (11/2+), 5877.7` | Same as above (`from` reverses energy conservation)                                   |
-| `1986\|g to 1/2+, 1572`                   | γ vs G-record, level E vs L-record, J-π, E conservation                               |
+| `1824.7\|g M1+E2 to 7/2-, 1991 level`           | γ vs G-record, mult vs G-record, level E vs L-record, J-π vs L-record, E conservation |
+| `2061.6\|g D, \|DJ=1 from (11/2+), 5877.7 level` | Same as above (`from` reverses energy conservation)                                   |
+| `1986\|g to 1/2+, 1572 level`                   | γ vs G-record, level E vs L-record, J-π, E conservation                               |
 | `3594.5\|g Q, \|DJ=2 to 3/2+, g.s.`       | Same as above (g.s. treated as 0.0 keV)                                               |
 
 ---
@@ -105,6 +105,7 @@ For transitions quoted as `E_gamma|g to/from E_level`, verify:
 | `LEVEL_NOT_FOUND`             | ERROR    | No L-record matches quoted level energy   |
 | `LEVEL_ENERGY_MISMATCH`       | ERROR    | Quoted level energy ≠ L-record E field    |
 | `JPI_MISMATCH`                | ERROR    | Comment J-π ≠ L-record J field            |
+| `MISSING_LEVEL_SUFFIX`        | ERROR    | Quoted level energy not followed by `level` |
 | `ENERGY_CONSERVATION_WARNING` | WARNING  | \|E_initial - E_final - E_gamma\| > 2 keV |
 | `ENERGY_CONSERVATION_ERROR`   | ERROR    | \|E_initial - E_final - E_gamma\| > 5 keV |
 
@@ -159,5 +160,6 @@ Confirm zero errors.
 ## Success Criteria
 
 - All quoted values match data records character-for-character
+- Every quoted level energy carries the `level` designator (`g.s.` exempt)
 - All transitions satisfy energy conservation (|deviation| ≤ 2 keV)
 - Zero errors returned by `check_quoted_values.py`

@@ -9,6 +9,8 @@ L-record and G-record data fields. Detects discrepancies in:
   2. Multipolarities — quoted multipolarity vs. G-record M field (cols 33-41)
   3. Level energies  — quoted level energy vs. L-record E field
   4. J-pi notation   — quoted J-pi vs. L-record J field (cols 23-39)
+  5. Level designator — quoted level energy followed by the "level" keyword
+  6. Energy conservation — |E_own_level - E_quoted| vs. quoted |g energy
 
 ENSDF CONVENTIONS RECOGNIZED:
 
@@ -28,7 +30,7 @@ Usage:
 import argparse
 import re
 import sys
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -84,13 +86,14 @@ class QuotedRef:
     jpi: str                            # e.g. "7/2-"
     line_num: int                       # starting line of cL J$ block
     context: str                        # matched text snippet
+    block_level: Optional[float] = None  # energy of the owning L-record
 
 
 @dataclass
 class Finding:
     """A single verification finding."""
     code: str              # e.g. GAMMA_NOT_FOUND, JPI_MISMATCH
-    severity: str          # "ERROR" or "INFO"
+    severity: str          # "ERROR" or "WARNING"
     line: int
     context: str
     message: str
@@ -179,19 +182,23 @@ def parse_gammas(filepath: Path, *, debug: bool = False) -> List[Gamma]:
 # ---------------------------------------------------------------------------
 # cL J$ comment extraction
 # ---------------------------------------------------------------------------
-def extract_quoted_refs(filepath: Path) -> List[QuotedRef]:
-    """Extract all quoted gamma/level references from cL J$ comment blocks."""
+def extract_quoted_refs(filepath: Path) -> Tuple[List[QuotedRef], List[Finding]]:
+    """Extract quoted references and level-designator findings from cL J$ blocks."""
     refs: List[QuotedRef] = []
+    designator_findings: List[Finding] = []
     with open(filepath, 'r', encoding='utf-8') as fh:
         lines = fh.readlines()
 
     in_j_block = False
     block_lines: List[str] = []
     block_start = 0
+    current_level: Optional[float] = None
 
     def flush_block() -> None:
         if block_lines:
-            refs.extend(_parse_j_block(block_lines, block_start))
+            refs.extend(_parse_j_block(block_lines, block_start, current_level))
+            designator_findings.extend(
+                _find_missing_level_designators(block_lines, block_start))
 
     for i, line in enumerate(lines, start=1):
         if len(line) < 10:
@@ -227,14 +234,50 @@ def extract_quoted_refs(filepath: Path) -> List[QuotedRef]:
                 flush_block()
                 in_j_block = False
                 block_lines = []
+            # Data L-record: the level owning the comments that follow
+            if col6 == ' ' and col7 == ' ' and col8 == 'L':
+                try:
+                    current_level = float(line[9:19])
+                except ValueError:
+                    current_level = None
 
     # End of file
     if in_j_block:
         flush_block()
-    return refs
+    return refs, designator_findings
 
 
-def _parse_j_block(texts: List[str], start_line: int) -> List[QuotedRef]:
+_LEVEL_QUOTE = re.compile(
+    r'\b(?:to|from)\s+[0-9/()+, \-]{1,24}?,\s*'
+    r'(?P<level>\d+(?:\.\d+)?)(?:-keV)?(?!\.\d)'
+    r'(?P<suffix>\s+(?:level|resonance)\b)?')
+
+
+def _find_missing_level_designators(texts: List[str],
+                                    line_num: int) -> List[Finding]:
+    """Flag quoted level energies not followed by the "level" designator.
+
+    Scans the whole block, so comments that quote a level without quoting the
+    gamma energy (e.g. "E1+M2 |DJ=1 |g to 2+, 2128 level") are covered too.
+    """
+    full = re.sub(r'\s+', ' ', ' '.join(text.strip() for text in texts))
+    found: List[Finding] = []
+    for match in _LEVEL_QUOTE.finditer(full):
+        if match.group('suffix'):
+            continue
+        level_str = match.group('level')
+        found.append(Finding(
+            code='MISSING_LEVEL_SUFFIX', severity='ERROR',
+            line=line_num, context=match.group(0).strip(' ,;'),
+            message=f'Quoted level "{level_str}" is not followed by '
+                    f'the designator "level"',
+            quoted=level_str,
+        ))
+    return found
+
+
+def _parse_j_block(texts: List[str], start_line: int,
+                  block_level: Optional[float] = None) -> List[QuotedRef]:
     """Parse a merged cL J$ text block into QuotedRef objects."""
     full = ' '.join(text.strip() for text in texts)
     full = re.sub(r'\s+', ' ', full)
@@ -250,7 +293,7 @@ def _parse_j_block(texts: List[str], start_line: int) -> List[QuotedRef]:
         text = text.lstrip(' ,;')
 
         match = re.match(
-            r'(?P<jpi>[^.]+?)\s*,?\s*(?P<level>g\.s\.)(?=\s|[,;(]|$)',
+            r'(?P<jpi>[0-9/()+\-, ]{1,24}?)\s*,?\s*(?P<level>g\.s\.)(?=\s|[,;(]|$)',
             text,
         )
         if match:
@@ -298,7 +341,7 @@ def _parse_j_block(texts: List[str], start_line: int) -> List[QuotedRef]:
 
         # Pattern 3b: jpi, level (comma-separated)
         match = re.match(
-            r'(?P<jpi>.+?)\s*,\s*(?P<level>\d+(?:\.\d+)?)(?!\.\d)'
+            r'(?P<jpi>[0-9/()+\-, ]{1,24}?)\s*,\s*(?P<level>\d+(?:\.\d+)?)(?!\.\d)'
             r'(?:\s+(?:level|resonance))?',
             text,
         )
@@ -351,6 +394,7 @@ def _parse_j_block(texts: List[str], start_line: int) -> List[QuotedRef]:
             jpi=jpi,
             line_num=start_line,
             context=context,
+            block_level=block_level,
         ))
 
     return results
@@ -388,9 +432,6 @@ def find_closest_gamma(gammas: List[Gamma], energy: float,
 # ---------------------------------------------------------------------------
 # Verification
 # ---------------------------------------------------------------------------
-_EPS = 1e-6   # floating-point equality threshold
-
-
 def verify(refs: List[QuotedRef], levels: Dict[float, Level],
            gammas: List[Gamma], window: float) -> List[Finding]:
     """Cross-check every QuotedRef against L/G-records."""
@@ -484,6 +525,29 @@ def verify(refs: List[QuotedRef], levels: Dict[float, Level],
                     actual=lvl.jpi,
                 ))
 
+        # --- Energy conservation: |E_own_level - E_quoted| must equal E_gamma ---
+        if ref.block_level is not None:
+            deviation = abs(abs(ref.block_level - ref.level_energy)
+                            - ref.gamma_energy)
+            if deviation > 5.0:
+                findings.append(Finding(
+                    code='ENERGY_CONSERVATION_ERROR', severity='ERROR',
+                    line=ref.line_num, context=ref.context,
+                    message=(f'{ref.gamma_energy_str}|g between '
+                             f'{ref.block_level} and {ref.level_energy_str} keV '
+                             f'deviates by {deviation:.2f} keV'),
+                    diff_kev=deviation,
+                ))
+            elif deviation > 2.0:
+                findings.append(Finding(
+                    code='ENERGY_CONSERVATION_WARNING', severity='WARNING',
+                    line=ref.line_num, context=ref.context,
+                    message=(f'{ref.gamma_energy_str}|g between '
+                             f'{ref.block_level} and {ref.level_energy_str} keV '
+                             f'deviates by {deviation:.2f} keV'),
+                    diff_kev=deviation,
+                ))
+
     return findings
 
 
@@ -494,7 +558,7 @@ def print_report(filepath: Path, findings: List[Finding],
                  n_refs: int, n_levels: int, n_gammas: int) -> None:
     """Print human-readable verification report."""
     errors = [f for f in findings if f.severity == 'ERROR']
-    infos  = [f for f in findings if f.severity == 'INFO']
+    warnings = [f for f in findings if f.severity == 'WARNING']
 
     print()
     print('=' * 80)
@@ -504,7 +568,7 @@ def print_report(filepath: Path, findings: List[Finding],
           f'Quoted references: {n_refs}')
     print('=' * 80)
     print()
-    print(f'  ERRORS: {len(errors)}')
+    print(f'  ERRORS: {len(errors)}   WARNINGS: {len(warnings)}')
     print()
 
     if errors:
@@ -517,9 +581,21 @@ def print_report(filepath: Path, findings: List[Finding],
             print(f'      Context: {f.context}')
             print()
 
+    if warnings:
+        print('-' * 80)
+        print(f'{YELLOW}{BOLD}WARNINGS{RESET}')
+        print('-' * 80)
+        for i, f in enumerate(warnings, 1):
+            print(f'  {YELLOW}#{i} [{f.code}]{RESET}  line {f.line}')
+            print(f'      {f.message}')
+            print(f'      Context: {f.context}')
+            print()
+
     print('=' * 80)
     if errors:
         print(f'{RED}RESULT: {len(errors)} error(s) found — all must be fixed{RESET}')
+    elif warnings:
+        print(f'{YELLOW}RESULT: No errors; {len(warnings)} warning(s) to review{RESET}')
     else:
         print(f'{GREEN}RESULT: All quoted values match records exactly.{RESET}')
     print('=' * 80)
@@ -560,11 +636,11 @@ def main() -> None:
     print(f'  Levels: {len(levels)}    Gammas: {len(gammas)}')
 
     # Extract quoted references from cL J$ comments
-    refs = extract_quoted_refs(filepath)
+    refs, designator_findings = extract_quoted_refs(filepath)
     print(f'  Quoted references: {len(refs)}')
 
     # Verify
-    findings = verify(refs, levels, gammas, window)
+    findings = verify(refs, levels, gammas, window) + designator_findings
 
     # Report
     print_report(filepath, findings, len(refs), len(levels), len(gammas))
