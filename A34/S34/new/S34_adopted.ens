@@ -40,7 +40,8 @@
  34S  cL $E(level), J|p, and width (|G) for resonances (>11.4 MeV) are from     
  34S 2cL {+33}S(n,|g),(n,n):resonances, unless otherwise noted.                 
  34S  cL BAND(Z)$Ground-state band.                                             
- 34S  cL BAND(B)$Band based on 3-, 4624.6 level.                                
+ 34S  cL BAND(B)$Band based on 3-, 4624.401 level.                              
+ 34S  cL BAND(C)$Band based on (3,4), 6251.72 level.                            
  34S   XA34P B- DECAY (12.43 S)                                                 
  34S   XB34CL EC+B+ DECAY (1.5266 S)                                            
  34S   XC34CL EC+B+ DECAY (31.99 M)                                             
@@ -75,10 +76,10 @@
  34S   Xf208PB(34S,34S')                                                        
  34S   Xg208PB(36S,34SG)                                                        
  34S  PN                                                                     6  
- 34S   L 0.0          0+               STABLE                                   
+ 34S   L 0.0          0+               STABLE                               Z   
  34S X L XREF=UABCDEGHIJKLMNOPRSTVWXYZabcdefg                                   
  34S  cL $Evaluated rms nuclear charge radius R=3.2847 fm {I21} (2013An02).     
- 34S   L 2127.558  15 2+               0.315 PS  12                             
+ 34S   L 2127.558  15 2+               0.315 PS  12                         Z   
  34S X L XREF=UACDEGHIJKLMNPRTVWXYZabcdefg                                      
  34S 2 L MOMM1=+1.0 2 (1979Za01,1989Ra17,2020StZV)                              
  34S 2 L MOME2=+0.04 3 (1980Ba40,1981Sp07,2021StZZ)                             
@@ -206,7 +207,7 @@
  34S 2cG {+34}P |b{+-} decay, 100 {I10} from {+31}P(|a,p|g), and 100 {I11} from 
  34S 3cG {+33}S(n,|g) E=thermal                                                 
  34S  cG M$Q from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL.               
- 34S   L 4624.401  19 3-               85 FS     7                              
+ 34S   L 4624.401  19 3-               85 FS     7                          B   
  34S X L XREF=AEGHJMNOPRVWYag                                                   
  34S  cL J$spin=3 from p|g(|q) in {+31}P(|a,p|g). Spin|<4 from p|g(|q) in       
  34S 2cL {+31}P(|a,p|g). L=3 from 0+ in {+32}S(t,p).                            
@@ -231,7 +232,7 @@
  34S  cG M,MR$D(+Q) from p|g(|q) in {+31}P(|a,p|g). D, |DJ=1 from |g|g(|q)(ADO) 
  34S 2cG in {+24}Mg({+16}O,|a2p|g). |D|p=yes from level scheme.                 
  34S   G 4624.2    5  0.55   13 [E3]                                            
- 34S   L 4688.96   5  4+               88 FS     7                              
+ 34S   L 4688.96   5  4+               88 FS     7                          Z   
  34S X L XREF=ACEGHJMN(4690)PR(4688)V(4688)W(4689)YZ(4690)a(4690)c(4710)g       
  34S  cL J$spin=4 from p|g(|q) and |g|g(|q) in {+31}P(|a,p|g). |p=+ from        
  34S 2cL 2561.35|g, E2 to 2+, 2127.558 level.                                   
@@ -347,7 +348,7 @@
  34S  cG RI$others: 149 {I75} from {+24}Mg({+16}O,|a2p|g), 54 {I16} from        
  34S 2cG {+31}P(|a,p|g).                                                        
  34S  cG M,MR$D+Q with |d=-0.47 {I+7-11} from p|g(|q) in {+31}P(|a,p|g).        
- 34S   L 5690.61   27 5-               36.9 PS   17                             
+ 34S   L 5690.61   27 5-               36.9 PS   17                         B   
  34S X L XREF=EHJMN(5679)O(5690)RWZ(5690)g                                      
  34S  cL J$spin=5 from |g(|q) and |g(|q)(POL) in {+31}P(|a,p|g). |p=- from      
  34S 2cL 1001.5|g, E1 to 4+, 4688.96 level.                                     
@@ -426,20 +427,21 @@
  34S  cG RI$other: 53 {I13} from {+31}P(|a,p|g).                                
  34S  cG M,MR$D+Q with |d=-0.43 {I16} or |d=-1.0 {I3} from p|g(|q) in           
  34S 2cG {+31}P(|a,p|g).                                                        
- 34S   L 6251.72   7  (4-)             0.42 PS   +49-21                         
+ 34S   L 6251.72   7  (3,4)            0.42 PS   +49-21                     C   
  34S X L XREF=HM(6251)N(6256)PR(6254)W(6248)a(6250)c(6220)g                     
  34S  cL J$spin=4 from p|g(|q) in {+31}P(|a,p|g). |p=- based on that 6251.72    
- 34S 2cL level is fed by 1539.7|g, E2, |DJ=2 from 7790.8 level with |p=-, which 
- 34S 3cL is determined from 7790.8's deexciting |g 2099.6, M1+E2, |DJ=0,1 to 5-,
- 34S 4cL 5690.61 level. |p=- also from L=3 from 3/2+ for 6254 {I8} level in     
- 34S 5cL {+33}S(d,p). Discrepancy: 572.0|g, D, |DJ=1 to 2+, 5679.925 level in   
- 34S 6cL {+24}Mg({+16}O,|a2p|g), in which 5679.925 level was assumed to be 3-.  
- 34S 7cL |p=+ seems to be supported by that 1374.43|g, M1+E2 to 3+, 4876.839    
- 34S 8cL level in {+31}P(|a,p|g) and L=2 from 3/2+ for 6220 {I50} level in      
- 34S 9cL {+35}Cl(d,{+3}He). Natural parity for 6256 {I14} level observed in     
- 34S AcL {+32}S(t,p). 2005Ma03 in {+24}Mg({+16}O,|a2p|g) analyzed the           
- 34S BcL 1539.7|g-gated spectrum and confirms that only one level exists at 6251
- 34S CcL and all four |g rays (572, 1374, 1562, 1375) are from this level.      
+ 34S 2cL level is fed by 1539.7|g, E2, |DJ=2 from 7790.8 level |p=-, which is   
+ 34S 3cL determined from 7790.8's deexciting |g 2099.6, M1+E2, |DJ=0,1 to 5-,   
+ 34S 4cL 5690.61 level in {+24}Mg({+16}O,|a2p|g). |p=- also from L=3 from 3/2+  
+ 34S 5cL for 6254 {I8} level in {+33}S(d,p). J|p=3+ from 572.0|g, D, |DJ=1 to   
+ 34S 6cL 2+, 5679.925 level in {+24}Mg({+16}O,|a2p|g), in which 5679.925 level  
+ 34S 7cL was assumed to be 3-. |p=+ seems to be supported by that 1374.43|g,    
+ 34S 8cL M1+E2 to 3+, 4876.839 level in {+31}P(|a,p|g) and L=2 from 3/2+ for    
+ 34S 9cL 6220 {I50} level in {+35}Cl(d,{+3}He). Natural parity is expected for  
+ 34S AcL 6256 {I14} level observed in {+32}S(t,p). 2005Ma03 in                  
+ 34S BcL {+24}Mg({+16}O,|a2p|g) analyzed the 1539.7|g-gated spectrum and        
+ 34S CcL confirms that only one level exists at 6251 and all four |g rays (572, 
+ 34S DcL 1374, 1562, 1375) are from this level.                                 
  34S  cL T$lifetime |t=390 fs {I+70-40} in {+31}P(|a,p|g) from 1972Jo10 with    
  34S 2cL DSAM. Other: 600 fs {I+700-300} in {+31}P(|a,p|g) from 1977GrZH with   
  34S 3cL DSAM.                                                                  
@@ -695,10 +697,10 @@
  34S  cL $|G{-|g0}=0.57 eV {I9} from {+34}S(|g,|g'),(pol |g,|g').               
  34S   G 1353.46   16 10.0   13                                                 
  34S   G 7780.22   10 100    13                                                 
- 34S   L 7790.8    4  (6)-             97 FS     24                             
+ 34S   L 7790.8    4  (6)-             97 FS     24                         C   
  34S X L XREF=HMg                                                               
  34S  cL J$|p=- from 2099.6|g, M1+E2, |DJ=0,1 to 5-, 5690.61 level. 1539.7|g,   
- 34S 2cL E2, |DJ=2 to (4-), 6251.72 level. 6- from shell-model calculation      
+ 34S 2cL E2, |DJ=2 to (3,4), 6251.72 level. 6- from shell-model calculation     
  34S 3cL (2005Ma03) in {+24}Mg({+16}O,|a2p|g).                                  
  34S  cL T$lifetime |t=140 fs {I35}: weighted average of 190 fs {I50} in        
  34S 2cL {+24}Mg({+16}O,|a2p|g) from 2005Ma03 with DSAM and 115 fs {I35} in     
@@ -770,10 +772,10 @@
  34S  cL T$lifetime |t<40 fs in {+31}P(|a,p|g) from 1977GrZH with DSAM.         
  34S   G 1951.77   19 34     7  [E3]                                            
  34S   G 6166.24   13 100    11 [E2]                                            
- 34S   L 8371.0    4  (7)-             83 FS     14                             
+ 34S   L 8371.0    4  (7)-             83 FS     14                         B   
  34S X L XREF=HMg                                                               
  34S  cL J$Spin=(5,7) from p|g(|q) in {+31}P(|a,p|g). 2680.5|g, E2, |DJ=2 to 5-,
- 34S 2cL 5690.61 level. 580.3|g, |DJ=1 to 6-, 7790.8 level. 7- from 2025Ma03    
+ 34S 2cL 5690.61 level. 580.3|g, |DJ=1 to (6)-, 7790.8 level. 7- from 2025Ma03  
  34S 3cL shell model calculation and band assignments in {+24}Mg({+16}O,|a2p|g).
  34S  cL T$lifetime |t=120 fs {I20}: weighted average of 122 fs {I40} in        
  34S 2cL {+24}Mg({+16}O,|a2p|g) from 2005Ma03 with DSAM and 120 fs {I20} in     
@@ -796,7 +798,7 @@
  34S  cL E$weighted average of 8418 {I16} from {+32}S(t,p) and 8423 {I5} from   
  34S 2cL {+34}S(p,p)                                                            
  34S  cL J$L=4 from 0+ in {+32}S(t,p).                                          
- 34S   L 8503.7    5  (6+)             28 FS     7                              
+ 34S   L 8503.7    5  (6+)             28 FS     7                          Z   
  34S X L XREF=HM                                                                
  34S  cL J$2812.7|g, D, |DJ=1 to 5-, 5690.61 level; 3813.6|g to 4+, 4688.96     
  34S 2cL level. 6+ from band assignments in {+24}Mg({+16}O,|a2p|g).             
@@ -818,7 +820,7 @@
  34S  cL E$from {+34}S(p,p'),(pol p,p').                                        
  34S   L 8615.74   4  (2-,3+)                                                   
  34S X L XREF=PR(8622)W                                                         
- 34S  cL J$2363.97|g to 4-, 6251.72 level; 4540.68|g to 1+, 4074.657 level.     
+ 34S  cL J$2363.97|g to (3,4), 6251.72 level; 4540.68|g to 1+, 4074.657 level.  
  34S   G 2363.97   8  58     31                                                 
  34S   G 3738.69   17 33     5                                                  
  34S   G 3990.7    7  8.1    20                                                 
@@ -882,7 +884,7 @@
  34S X L XREF=W                                                                 
  34S   L 8970.6    5  (6)                                                    
  34S X L XREF=H                                                                 
- 34S  cL J$3280.0|g to 5-, 5690.61 level; 1180|g to 6-, 7790.8 level; 942.3|g,  
+ 34S  cL J$3280.0|g to 5-, 5690.61 level; 1180|g to (6)-, 7790.8 level; 942.3|g,
  34S 2cL D, |DJ=1 from (7+), 9912.8 level. 6- is given by 2005Ma03 in           
  34S 3cL {+24}Mg({+16}O,|a2p|g).                                                
  34S   G 1180      1  5.7    29                                             M   
@@ -919,7 +921,7 @@
  34S   L 9413.8    5  (6-)                                                      
  34S X L XREF=H                                                                 
  34S  cL J$3722.6|g, D+Q, |DJ=0,1 to 5-, 5690.61 level; 1043.8|g to (7)-, 8371.0
- 34S 2cL level; 986.8|g from (8-), 10399 level. 6- is given by 2005Ma03 in      
+ 34S 2cL level; 986.8|g from (8-), 10399.8 level. 6- is given by 2005Ma03 in    
  34S 3cL {+24}Mg({+16}O,|a2p|g).                                                
  34S   G 1043.8    7  21     12                                                 
  34S   G 3722.6    6  100    21 D+Q                                             
@@ -1091,9 +1093,9 @@
  34S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
  34S X L XREF=L                                                                 
  34S   G 4706         100                                                   S   
- 34S   L 10399.8   5  (8-)                                                      
+ 34S   L 10399.8   5  (8-)                                                  C   
  34S X L XREF=H                                                                 
- 34S  cL J$2608.6|g, Q to 6-, 7790.8 level; 2028.8|g to (7)-, 8371.0 level. 8-  
+ 34S  cL J$2608.6|g, Q to (6)-, 7790.8 level; 2028.8|g to (7)-, 8371.0 level. 8-
  34S 2cL from band assignments in {+24}Mg({+16}O,|a2p|g).                       
  34S   G 986.8     9  11.3   56                                             M   
  34S   G 2028.8    6  47     10                                             M   
@@ -1148,7 +1150,7 @@
  34S X L XREF=P                                                                 
  34S   G 2919.7    5  100    26                                                 
  34S   G 5268.9    6  79     LT                                             &   
- 34S   L 10651.5   5  (8+)             35 FS     17                             
+ 34S   L 10651.5   5  (8+)             35 FS     17                         Z   
  34S X L XREF=H                                                                 
  34S  cL J$2147.2|g, E2, |DJ=2 to (6+), 8503.7 level; 2280.4|g, D, |DJ=1 to     
  34S 2cL (7)-, 8371.0 level. 8+ from shell model calculation and band           
@@ -1359,7 +1361,7 @@
  34S   L 11374.2   6  (8+)                                                       
  34S X L XREF=H                                                                 
  34S  cL J$3002.8|g, D, |DJ=1 to (7)-, 8371.0 level; 1461.7|g, D(+Q), |DJ=1 to  
- 34S 2cL (7+), 9912.8 level. 1200.4|g from (10+), 13341 level. 8+ is given by   
+ 34S 2cL (7+), 9912.8 level. 1966.8|g from (10+), 13341.6 level. 8+ is given by 
  34S 3cL 2005Ma03 in {+24}Mg({+16}O,|a2p|g).                                    
  34S   G 1461.7    9  90     20 D(+Q)                                           
  34S  cG M$D(+Q), |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).           
@@ -1378,9 +1380,11 @@
  34S X L XREF=L                                                                 
  34S   L 11411.33     2+                                                        
  34S X L XREF=L(11405)Q                                                         
- 34S   L 11417.219 19 1+,2+                                                    S
+ 34S   L 11417.219 19 2+                                                       S
  34S X L XREF=P                                                                 
- 34S  cL J$s-wave neutron capture on 3/2+ g.s. of {+33}S.                       
+ 34S  cL J$s-wave neutron capture on 3/2+ g.s. of {+33}S gives 1+,2+. 6727.5|g  
+ 34S 2cL to 4+, 4688.96 level and 3787.096|g to 3-, 7629.903 level favor the 2+ 
+ 34S 3cL assignment.                                                            
  34S   G 392.28    11 0.200  32                                                 
  34S F G FL=11024.94                                                            
  34S   G 576.80    19 0.236  34                                                 
@@ -1716,9 +1720,9 @@
  34S X L XREF=L                                                                 
  34S   L 12141.3   5  (9+)             173 FS    35                             
  34S X L XREF=H                                                                 
- 34S  cL J$2228.8|g, E2, |DJ=2 to (7+), 9912.8 level; 1489|g to 8+ 10650 level; 
- 34S 2cL 1741.6|g to 8-, 10399 level. 9+ from shell-model calculation (2005Ma03)
- 34S 3cL in {+24}Mg({+16}O,|a2p|g).                                             
+ 34S  cL J$2228.8|g, E2, |DJ=2 to (7+), 9912.8 level; 1489.2|g to (8+), 10651.5 
+ 34S 2cL level; 1741.6|g to (8-), 10399.8 level. 9+ from shell-model calculation
+ 34S 3cL (2005Ma03) in {+24}Mg({+16}O,|a2p|g).                                  
  34S  cL T$lifetime |t=250 fs {I50} in {+24}Mg({+16}O,|a2p|g) from 2005Ma03 with
  34S 2cL DSAM.                                                                  
  34S   G 1489.2    6  7.4    42 [M1,E2]                                     M   
@@ -1771,7 +1775,7 @@
  34S X L XREF=F                                                                 
  34S   L 12985.4   6  (9)                                                       
  34S X L XREF=H                                                                 
- 34S  cL J$2333.8|g to (8+), 10651.5 level; 1611.5|g to (8), 11374.2 level;     
+ 34S  cL J$2333.8|g to (8+), 10651.5 level; 1611.5|g to (8+), 11374.2 level;    
  34S 2cL 356.3|g from (10+), 13341.6 level. Spin increases with excitation      
  34S 3cL energy assumed in {+24}Mg({+16}O,|a2p|g). (9+) is given by 2005Ma03 in 
  34S 4cL {+24}Mg({+16}O,|a2p|g).                                                
@@ -1780,9 +1784,9 @@
  34S F G FL=11374.2                                                             
  34S   G 2333.8    7  100    40                                                 
  34S F G FL=10651.5                                                             
- 34S   L 13320.2   10 (9-)                                                      
+ 34S   L 13320.2   10 (9-)                                                  B   
  34S X L XREF=H                                                                 
- 34S  cL J$4949.3|g to (7)-, 8371.0 level; 2920.1|g to 8(-), 10399.1 level; 9-  
+ 34S  cL J$4949.3|g to (7)-, 8371.0 level; 2920.1|g to (8-), 10399.8 level; 9-  
  34S 2cL from band assignments in {+24}Mg({+16}O,|a2p|g).                       
  34S   G 2920.1    10 26     16                                                 
  34S   G 4949.3    18 100    21                                                 
@@ -1814,7 +1818,7 @@
  34S  cL E$other: 13790 from ({+30}Si,|a):resonances                            
  34S   L 13920                         50 KEV    LT                             
  34S X L XREF=F                                                                 
- 34S   L 13960.5   10 (10+)                                                     
+ 34S   L 13960.5   10 (10+)                                                 Z   
  34S X L XREF=H                                                                 
  34S  cL J$3308.8|g to (8+), 10651.5 level; 10+ from band assignments in        
  34S 2cL {+24}Mg({+16}O,|a2p|g).                                                
@@ -1841,8 +1845,8 @@
  34S X L XREF=F                                                                 
  34S   L 14576.4   11 (8,9,10+)                                                 
  34S X L XREF=H                                                                 
- 34S  cL J$2768.9|g to (8+), 11807.4 level. Spin increases with excitation      
- 34S 2cL energy assumed in {+24}Mg({+16}O,|a2p|g). (10+) is given by 2005Ma03 in
+ 34S  cL J$2768.9|g to (8), 11807.4 level. Spin increases with excitation energy
+ 34S 2cL assumed in {+24}Mg({+16}O,|a2p|g). (10+) is given by 2005Ma03 in       
  34S 3cL {+24}Mg({+16}O,|a2p|g).                                                
  34S   G 2768.9    9  100                                                   M   
  34S   L 14600                         50 KEV    LT                             
@@ -1865,10 +1869,10 @@
  34S X L XREF=F                                                                 
  34S   L 15244.3   9  (10,11,12+)                                               
  34S X L XREF=H                                                                 
- 34S  cL J$1902.7|g to 10(+), 13341.6 level. Spin increases with excitation     
+ 34S  cL J$1902.7|g to (10+), 13341.6 level. Spin increases with excitation     
  34S 2cL energy assumed in {+24}Mg({+16}O,|a2p|g).                              
  34S   G 1902.7    6  100                                                   M   
- 34S   L 15281.0   17 (10-)                                                      
+ 34S   L 15281.0   17 (10-)                                                 C   
  34S X L XREF=H                                                                 
  34S  cL J$4880.8|g to (8-), 10399.8 level; 10- from band assignments in        
  34S 2cL {+24}Mg({+16}O,|a2p|g).                                                
@@ -1900,7 +1904,7 @@
  34S X L XREF=F                                                                 
  34S   L 16600                         50 KEV    LT                             
  34S X L XREF=F                                                                 
- 34S   L 16649.0   13 (12+)                                               
+ 34S   L 16649.0   13 (12+)                                                 Z   
  34S X L XREF=H                                                                 
  34S  cL J$2688.4|g to (10+), 13960.5 level; 12+ from band assignments in       
  34S 2cL {+24}Mg({+16}O,|a2p|g).                                                

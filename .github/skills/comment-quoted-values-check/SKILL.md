@@ -139,6 +139,8 @@ Fix ONLY comment text (`cL`, `2cL`, `3cL` lines) using `replace_string_in_file`.
 
 - Rewrapped blocks: set `old_str` to the comment block plus the following record line, and `new_str` to the corrected block (every line padded to exactly 80 columns) plus that same record line. Content is then written verbatim; the final matched line keeps its own padding.
 - A single-line `old_str` cannot fix line length: the original trailing padding survives after `new_str`, so a rewritten comment stays over-long or short.
+- Length-neutral single-line fix: anchor on the line tail + its trailing pad + the opening token of the next line, and set `new_str` to the corrected fragment with `pad_new = pad_old − Δ` (Δ = character-count change of the fragment). No whole-block rewrite needed. If the line already ends at column 80 (pad 0), Δ must be 0 or the block must be rewrapped.
+- The checker only parses `to/from J-π, ENERGY level` (comma required): normalize comma-less quotations by hand (e.g. `to 8+ 10650 level` → `to (8+), 10651.5 level`).
 - Verify every touched line is exactly 80 columns (the checker ignores trailing padding, so it never reports these defects); retry with a corrected pad count where off.
 
 ### Step 4: Re-verify
