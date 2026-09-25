@@ -35,7 +35,7 @@ def load(p):
 
 lines = load(AD)
 is_com = lambda l: len(l) >= 9 and l[6:7] == "c"
-is_rec = lambda l: len(l) >= 9 and l[5:6] == " " and l[7:8] in ("L", "G")
+is_rec = lambda l: len(l) >= 9 and l[5:7] == "  " and l[7:8] in ("L", "G")
 
 units = []
 i = 0
@@ -112,7 +112,7 @@ for u in units:
     t = u["text"]
     if "average of" not in t.lower():
         continue
-    ident_m = re.match(r"^([A-Za-z]{1,3})\$", t)
+    ident_m = re.match(r"^([A-Za-z][A-Za-z0-9]{0,3})\$", t)
     ident = ident_m.group(1).upper() if ident_m else "(gen)"
     stated = "unweighted" if re.search(r"unweighted\s+average", t, re.I) else "weighted"
 
@@ -169,7 +169,10 @@ for u in units:
         elif ident == "T":
             tu = val_unit(L[39:49]); du = val_unit(L[49:55])
             if tu:
-                rec = {"val": tu[0], "unit": tu[1], "unc": du[0] if du else None, "dec": 0}
+                ttxt = L[39:49].strip()
+                tdec = len(ttxt.split()[0].split(".")[1]) if "." in ttxt.split()[0] else 0
+                rec = {"val": tu[0], "unit": tu[1], "dec": tdec,
+                       "unc": (du[0] * 10.0 ** (-tdec)) if du else None}
                 src = "L T/DT"
         elif ident == "BE2":
             b = be2_of(owner)
@@ -255,21 +258,29 @@ for u in units:
         issues.append("METHOD: comment says unweighted, tool recommends weighted")
     if stated == "weighted" and label == "Unweighted-Average":
         issues.append("METHOD: comment says weighted, tool recommends unweighted")
+    if rec is None and q is None:
+        issues.append("no adopted target value located (comment-only)")
 
     rows.append({"line": u["start"], "ident": ident, "owner": owner["line"] if owner else 0,
                  "field": src, "quoted_n": quoted_n, "parsed_n": parsed_n,
                  "sugg": sg_s, "label": label, "wt": wt_s, "uw": uw_s,
-                 "stated": stated, "match": match_names, "issues": issues})
+                 "stated": stated, "match": match_names, "issues": issues,
+                 "rec": rec, "owner_text": owner["text"] if owner else ""})
 
 emit("average comments checked: %d" % len(rows))
 emit("clean: %d    flagged: %d" % (sum(1 for r in rows if not r["issues"]),
                                    sum(1 for r in rows if r["issues"])))
 emit()
-hdr = "%-6s %-4s %-6s %-10s %-4s %-4s %-16s %-17s %-10s %s"
-emit(hdr % ("line", "id", "owner", "field", "qN", "pN", "suggested", "recommend", "stated", "matched-by"))
+hdr = "%-6s %-5s %-6s %-10s %-4s %-4s %-16s %-17s %-10s %-14s %s"
+emit(hdr % ("line", "id", "owner", "field", "qN", "pN", "suggested", "recommend", "stated", "record", "matched-by"))
 for r in rows:
+    rv = "-"
+    if r["rec"]:
+        rv = "%.10g" % r["rec"]["val"]
+        if r["rec"].get("unc") is not None:
+            rv += "(%.3g)" % r["rec"]["unc"]
     emit(hdr % (r["line"], r["ident"], r["owner"], r["field"], r["quoted_n"], r["parsed_n"],
-                r["sugg"], r["label"], r["stated"], ",".join(r["match"]) or "-"))
+                r["sugg"], r["label"], r["stated"], rv, ",".join(r["match"]) or "-"))
 emit()
 emit("=== FLAGGED (%d) ===" % sum(1 for r in rows if r["issues"]))
 for r in rows:
