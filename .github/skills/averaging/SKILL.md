@@ -64,5 +64,6 @@ When user requests code `Java_Average.py` for calculating averages, follow these
 ## Gotchas
 
 - **`[critical=X]` is display-only.** The tool decides Weighted vs. Unweighted using a hardcoded threshold of 3.5, not the displayed chi² critical value.
+- **Prefer `--comment` over numeric mode.** Hand-typing pairs invites mis-scaling: `4074.418 {I20}` is ±0.020 (last digit = 0.001), not ±0.20 — a wrong scale flips the weights and the suggested result. Re-run in comment mode with the real comment text to confirm the suggested result before transcribing.
 - **Lifetimes use full precision** (uncertainty limit 99): write `197 fs {I50}`, not `2.0E2 {I5}`.
 - **One value per paper.** Comment mode skips any value before "average of" (it's the previous result) and stops at "Other:".

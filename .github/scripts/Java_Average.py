@@ -554,6 +554,11 @@ def parse_comment_data(comment_text: str) -> List[Tuple[float, float, float]]:
         if i_unc_str is not None:
             lower, upper = parse_ensdf_unc(val_str, i_unc_str)
         elif p_unc_str is not None:
+            # Parenthetical uncertainty is written as "22(4)" — only accept a
+            # numeric group, so reaction text like "3H(32S,pg)" is not mistaken
+            # for a value plus uncertainty.
+            if not re.fullmatch(r"[+-]?\d+(?:\.\d+)?", p_unc_str):
+                continue
             lower, upper = parse_ensdf_unc(val_str, p_unc_str)
         else:
             continue
