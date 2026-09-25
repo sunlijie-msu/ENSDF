@@ -22,6 +22,8 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 - Parentheses `()` = tentative multipolarity
 - Square brackets `[]` = tentative multipolarity inferred purely from level scheme spin-parity changes
 
+**Deducing multipolarity from the level scheme** is valid only when both levels have a single J and a single |p. Then |D|p=|p{-i}|*|p{-f} fixes the character — E(L) changes parity for odd L, M(L) for even L — and L|>max(1,||DJ|) fixes the lowest allowed order, e.g. `[M1,E2]` (|D|p=no), `[E1+M2]` (|D|p=yes), `[E2]` (||DJ|>=2, |D|p=no). A single multipole may be assigned only when RUL, computed from the initial-level T and I|g, rules out the competitor.
+
 #### Single Multipolarities
 
 - E1

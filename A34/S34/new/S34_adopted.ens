@@ -2,6 +2,8 @@
  34S   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
  34S   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34S 2 H CUT=28-May-2012$                                                       
+ 34S  dG $Transition strength is calculated by Java-RULER (version 16-Sep-2026) 
+ 34S  DG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  34S  dL E$Least-squares fitting is done by GLSC (version 08-Jul-2026)          
  34S   Q -5491.60  4 11417.154 10883.3 11-7923.645     2021WA16                 
  34S  cQ $S(2n)=20058.789 {I40}, S(2p)=20431.9 {I3} (2021Wa16)                  
@@ -107,12 +109,15 @@
  34S  cL $|b{-2}(p,p')=0.28 {I1} (1985Al03); 0.24 {I2} (1999Ma63 by reanalysing 
  34S 2cL 1985Al03 data with Becchetti-Greenless optical potential).             
  34S   G 2127.498  20 100       E2                                              
+ 34S S G  CC=0.000387 5$KC=9.09E-6 13$LC=7.01E-7 10$MC=5.91E-8 8                
+ 34S S G  IPC=0.000377 5                                                        
  34S  cG E$weighted average of 2127.5 {I6} from {+24}Mg({+16}O,|a2p|g), 2126.7  
  34S 2cG {I8} from {+31}P(|a,p|g), 2127.499 {I20} from {+33}S(n,|g) E=thermal,  
  34S 3cG 2127.45 {I20} from {+34}S(p,p'|g), and 2128 {I1} from                  
  34S 4cG {+208}Pb({+36}S,{+34}S|g)                                              
  34S  cG M$Q from p|g(|q) and electric character from |g(|q)(POL) in            
  34S 2cG {+31}P(|a,p|g). Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). 
+ 34S B G BE2W=6.30 +26-23                                                       
  34S   L 3304.207  16 2+               122 FS    9                              
  34S X L XREF=UACDEGHIJLMNPRTVWYZabcdg                                          
  34S 2 L BE2=0.00256 29                                                         
@@ -129,6 +134,8 @@
  34S 9cL branching ratios by evaluators.                                        
  34S  cL BE2$from {+34}S(e,e') (1985Wo06).                                      
  34S   G 1176.650  26 100.0  9  M1+E2    -0.16   2                              
+ 34S S G  CC=2.93E-5 4$KC=2.313E-5 33$LC=1.784E-6 25$MC=1.505E-7 21             
+ 34S S G  IPC=4.19E-6 6                                                         
  34S  cG E$weighted average of 1177.3 {I5} from {+24}Mg({+16}O,|a2p|g), 1175.2  
  34S 2cG {I8} from {+31}P(|a,p|g), 1176.650 {I20} from {+33}S(n,|g) E=thermal,  
  34S 3cG and 1177 {I1} from {+208}Pb({+36}S,{+34}S|g)                           
@@ -136,7 +143,10 @@
  34S 2cG {+24}Mg({+16}O,|a2p|g), 100 {I10} from {+31}P(|a,p|g), 100 {I9} from   
  34S 3cG {+33}S(n,|g) E=thermal, and 100 {I10} from {+208}Pb({+36}S,{+34}S|g)   
  34S  cG M,MR$D+Q, |DJ=0,1 from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL. 
+ 34S B G BM1W=0.0577 +46-40 $BE2W=4.2 +12-10                                    
  34S   G 3304.029  29 87.1   9  E2                                              
+ 34S S G  CC=0.000916 13$KC=4.41E-6 6$LC=3.39E-7 5$MC=2.86E-8 4                 
+ 34S S G  IPC=0.000911 13                                                       
  34S  cG E$weighted average of 3304.6 {I7} from {+24}Mg({+16}O,|a2p|g), 3303.1  
  34S 2cG {I4} from {+31}P(|a,p|g), 3304.031 {I20} from {+33}S(n,|g) E=thermal,  
  34S 3cG and 3305 {I2} from {+208}Pb({+36}S,{+34}S|g)                           
@@ -147,6 +157,7 @@
  34S  cG M$Q from p|g(|q) and electric character from |g(|q)(POL) in            
  34S 2cG {+31}P(|a,p|g). Q, |DJ=2 from A{-2} and A{-4} in                       
  34S 3cG {+24}Mg({+16}O,|a2p|g).                                                
+ 34S B G BE2W=0.84 +7-6                                                         
  34S   L 3916.40   4  0+               1.12 PS   9                              
  34S X L XREF=AB(3910?)GLMNPRWYZa                                               
  34S  cL J$L=0 from 0+ in {+32}S(t,p). Spin=(0,1,2) from p|g(|q) in             
@@ -156,9 +167,14 @@
  34S 3cL {+31}P(|a,p|g) from 1970Ra17 with DSAM. Other: >400 fs in              
  34S 4cL {+31}P(|a,p|g) from 1974Gr06 with DSAM.                                
  34S   G 612.16    5  0.33   4  [E2]                                            
+ 34S S G  CC=0.0001878 26$KC=0.0001733 24$LC=1.341E-5 19$MC=1.129E-6 16         
+ 34S B G BE2W=3.0 +6-5                                                          
  34S   G 1787.3    8  100    10 [E2]                                            
+ 34S S G  CC=0.0002259 32$KC=1.253E-5 18$LC=9.66E-7 14$MC=8.15E-8 11            
+ 34S S G  IPC=0.0002123 30                                                      
  34S  cG E$unweighted average of 1787 {I1} from {+34}P |b{+-} decay, 1786.0 {I8}
  34S 2cG from {+31}P(|a,p|g), and 1788.794 {I20} from {+33}S(n,|g) E=thermal.   
+ 34S B G BE2W=4.22 +37-32                                                       
  34S   L 4074.657  19 1+               17 FS     LT                             
  34S X L XREF=AB(4070?)CGLMN(4085)PRWYac(4090*)                                 
  34S  cL J$spin=1 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 1947.060|g, M1+E2 to
@@ -167,17 +183,22 @@
  34S 2cL <33 fs in {+31}P(|a,p|g) from 1970Gr11 with DSAM and |<50 fs in        
  34S 3cL {+31}P(|a,p|g) from 1974Gr06 with DSAM.                                
  34S   G 770.428   20 8.5    9  (M1(+E2))-1.3    15                             
+ 34S S G  CC=8.1E-5 23$KC=7.5E-5 22$LC=5.8E-6 17$MC=4.9E-7 14                   
  34S  cG RI$weighted average of 6.2 {I22} from {+31}P(|a,p|g) and 8.8 {I8} from 
  34S 2cG {+33}S(n,|g) E=thermal                                                 
  34S  cG M,MR$D(+Q) from p|g(|q) in {+31}P(|a,p|g). |D|p=no from level scheme.  
  34S   G 1947.060  20 95     8  M1+E2    +1.3    +32-9                          
+ 34S S G  CC=0.000276 32$KC=1.03E-5 6$LC=7.9E-7 4$MC=6.7E-8 4                   
+ 34S S G  IPC=0.000265 32                                                       
  34S  cG E$weighted average of 1947.1 {I15} from {+34}P |b{+-} decay, 1945.5    
  34S 2cG {I13} from {+31}P(|a,p|g), and 1947.060 {I20} from {+33}S(n,|g)        
  34S 3cG E=thermal.                                                             
  34S  cG RI$weighted average of 61 {I22} from {+34}P |b{+-} decay, 102 {I8} from
  34S 2cG {+31}P(|a,p|g), and 93 {I8} from {+33}S(n,|g) E=thermal.               
  34S  cG M,MR$D+Q, |DJ=0,1 from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL. 
- 34S   G 4072.9    11 100    9  (M1)                                            
+ 34S   G 4072.9    11 100    9  (M1)                   1.06E-3 2                
+ 34S S G  KC=3.13E-6 4$LC=2.408E-7 34$MC=2.032E-8 28                            
+ 34S S G  IPC=0.001052 15                                                       
  34S  cG E$unweighted average of 4073.4 {I15} from {+34}P |b{+-} decay, 4070.9  
  34S 2cG {I13} from {+31}P(|a,p|g), and 4074.418 {I20} from {+33}S(n,|g)        
  34S 3cG E=thermal.                                                             
@@ -193,13 +214,18 @@
  34S 3cL from 1970Ra17 with DSAM, and 100 fs {I15} in {+31}P(|a,p|g) from       
  34S 4cL 1974Gr06 with DSAM.                                                    
  34S   G 1987.19   3  69.8   34 M1+E2    -0.40   5                              
+ 34S S G  CC=0.000260 4$KC=9.40E-6 14$LC=7.24E-7 10$MC=6.11E-8 9                
+ 34S S G  IPC=0.000250 4                                                        
  34S  cG E$weighted average of 1987.2 {I10} from {+34}P |b{+-} decay and 1987.19
  34S 2cG {I3} from {+33}S(n,|g) E=thermal.                                      
  34S  cG RI$weighted average of 83 {I17} from {+34}P |b{+-} decay, 67.7 {I24}   
  34S 2cG from {+34}Cl |e+|b{++} decay (31.99 min), 92 {I10} from {+31}P(|a,p|g),
  34S 3cG and 76 {I8} from {+33}S(n,|g) E=thermal.                               
  34S  cG M,MR$D+Q, |DJ=0,1 from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL. 
- 34S   G 4114.52   4  100.0  22 E2                                              
+ 34S B G BM1W=0.0138 +16-14 $BE2W=2.2 +6-5                                      
+ 34S   G 4114.52   4  100.0  22 E2                     1.21E-3 2                
+ 34S S G  KC=3.18E-6 4$LC=2.450E-7 34$MC=2.067E-8 29                            
+ 34S S G  IPC=0.001209 17                                                       
  34S  cG E$weighted average of 4114.0 {I15} from {+34}P |b{+-} decay, 4115.0    
  34S 2cG {I20} from {+34}Cl |e+|b{++} decay (31.99 min), 4113.7 {I9} from       
  34S 3cG {+31}P(|a,p|g), and 4114.52 {I4} from {+33}S(n,|g) E=thermal.          
@@ -207,6 +233,7 @@
  34S 2cG {+34}P |b{+-} decay, 100 {I10} from {+31}P(|a,p|g), and 100 {I11} from 
  34S 3cG {+33}S(n,|g) E=thermal                                                 
  34S  cG M$Q from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL.               
+ 34S B G BE2W=0.60 +7-6                                                         
  34S   L 4624.401  19 3-               85 FS     7                          B   
  34S X L XREF=AEGHJMNOPRVWYag                                                   
  34S  cL J$spin=3 from p|g(|q) in {+31}P(|a,p|g). Spin|<4 from p|g(|q) in       
@@ -216,6 +243,8 @@
  34S 3cL from 1970Ra17 with DSAM, 145 fs {I50} in {+31}P(|a,p|g) from 1971So01  
  34S 4cL with DSAM, and 115 fs {I10} in {+31}P(|a,p|g) from 1974Gr06 with DSAM. 
  34S   G 1320.168  20 100    7  (E1(+M2))-0.03   5                          P   
+ 34S S G  CC=0.0001510 22$KC=1.173E-5 21$LC=9.04E-7 16$MC=7.63E-8 14            
+ 34S S G  IPC=0.0001383 21                                                      
  34S  cG E$weighted average of 1320.1 {I5} from {+24}Mg({+16}O,|a2p|g), 1318.8  
  34S 2cG {I10} from {+31}P(|a,p|g), 1320.169 {I20} from {+33}S(n,|g) E=thermal, 
  34S 3cG and 1320 {I1} from {+208}Pb({+36}S,{+34}S|g)                           
@@ -223,7 +252,10 @@
  34S 2cG {+33}S(n,|g) E=thermal                                                 
  34S  cG M,MR$D(+Q) from p|g(|q) in {+31}P(|a,p|g). D, |DJ=1 from |g|g(|q)(ADO) 
  34S 2cG in {+24}Mg({+16}O,|a2p|g). |D|p=yes from level scheme.                 
+ 34S B G BE1W=0.00233 +34-30                                                    
  34S   G 2496.725  25 41     4  (E1(+M2))+0.02   4                              
+ 34S S G  CC=0.000968 14$KC=4.49E-6 7$LC=3.46E-7 5$MC=2.91E-8 4                 
+ 34S S G  IPC=0.000963 14                                                       
  34S  cG E$weighted average of 2496.5 {I8} from {+24}Mg({+16}O,|a2p|g), 2495.5  
  34S 2cG {I7} from {+31}P(|a,p|g), and 2496.726 {I20} from {+33}S(n,|g)         
  34S 3cG E=thermal.                                                             
@@ -231,7 +263,11 @@
  34S 2cG from {+31}P(|a,p|g), and 41 {I4} from {+33}S(n,|g) E=thermal.          
  34S  cG M,MR$D(+Q) from p|g(|q) in {+31}P(|a,p|g). D, |DJ=1 from |g|g(|q)(ADO) 
  34S 2cG in {+24}Mg({+16}O,|a2p|g). |D|p=yes from level scheme.                 
- 34S   G 4624.2    5  0.55   13 [E3]                                            
+ 34S B G BE1W=1.41E-4 +32-27                                                    
+ 34S   G 4624.2    5  0.55   13 [E3]                   1.08E-3 2                
+ 34S S G  KC=3.45E-6 5$LC=2.66E-7 4$MC=2.241E-8 31                              
+ 34S S G  IPC=0.001078 15                                                       
+ 34S B G BE3W=17.9 +47-44                                                       
  34S   L 4688.96   5  4+               88 FS     7                          Z   
  34S X L XREF=ACEGHJMN(4690)PR(4688)V(4688)W(4689)YZ(4690)a(4690)c(4710)g       
  34S  cL J$spin=4 from p|g(|q) and |g|g(|q) in {+31}P(|a,p|g). |p=+ from        
@@ -242,8 +278,13 @@
  34S 4cL with DSAM, 125 fs {I10} in {+31}P(|a,p|g) from 1974Gr06 with DSAM, and 
  34S 5cL 130 fs {I20} in {+31}P(|a,p|g) from 1977GrZH with DSAM.                
  34S   G 1384.5    14 0.44   30 [E2]                                        M   
+ 34S S G  CC=7.32E-5 11$KC=2.096E-5 30$LC=1.617E-6 23$MC=1.364E-7 19            
+ 34S S G  IPC=5.05E-5 8                                                         
  34S  cG RI$other: <2 from {+31}P(|a,p|g).                                      
+ 34S B G BE2W=0.85 +63-45                                                       
  34S   G 2561.35   6  100    9  E2                                              
+ 34S S G  CC=0.000593 8$KC=6.61E-6 9$LC=5.09E-7 7$MC=4.30E-8 6                  
+ 34S S G  IPC=0.000586 8                                                        
  34S  cG E$weighted average of 2561.1 {I6} from {+24}Mg({+16}O,|a2p|g), 2560.5  
  34S 2cG {I4} from {+31}P(|a,p|g), 2561.36 {I5} from {+33}S(n,|g) E=thermal, and
  34S 3cG 2561 {I2} from {+208}Pb({+36}S,{+34}S|g)                               
@@ -251,6 +292,7 @@
  34S 2cG {+24}Mg({+16}O,|a2p|g)                                                 
  34S  cG M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g) and p|g(|q) in 
  34S 2cG {+31}P(|a,p|g). M2 ruled out by RUL.                                   
+ 34S B G BE2W=8.9 +8-7                                                          
  34S   L 4876.839  25 3+               40 FS     15                             
  34S X L XREF=ACGHMPR(4874)a(4880)g                                             
  34S  cL J$spin=3 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 2749.24|g, M1+E2 to 
@@ -259,6 +301,8 @@
  34S 2cL Others: <85 fs in {+31}P(|a,p|g) from 1970Gr11 with DSAM and |<70 fs in
  34S 3cL {+31}P(|a,p|g) from 1974Gr06 with DSAM.                                
  34S   G 1572.56   5  70     8  M1+E2    -0.09   4                              
+ 34S S G  CC=0.0001011 14$KC=1.373E-5 19$LC=1.059E-6 15$MC=8.93E-8 13           
+ 34S S G  IPC=8.62E-5 12                                                        
  34S  cG E$weighted average of 1572.5 {I5} from {+24}Mg({+16}O,|a2p|g), 1571.9  
  34S 2cG {I5} from {+31}P(|a,p|g), 1572.57 {I5} from {+33}S(n,|g) E=thermal, and
  34S 3cG 1573 {I1} from {+208}Pb({+36}S,{+34}S|g)                               
@@ -266,7 +310,10 @@
  34S 2cG min), 89 {I20} from {+24}Mg({+16}O,|a2p|g), 59 {I8} from               
  34S 3cG {+31}P(|a,p|g), and 80 {I9} from {+33}S(n,|g) E=thermal.               
  34S  cG M,MR$D+Q, |DJ=0,1 from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL. 
+ 34S B G BM1W=0.058 +33-16 $BE2W=0.7 +11-5                                      
  34S   G 2749.24   5  100    8  M1+E2    -0.11   3                          P   
+ 34S S G  CC=0.000568 8$KC=5.55E-6 8$LC=4.28E-7 6$MC=3.61E-8 5                  
+ 34S S G  IPC=0.000562 8                                                        
  34S  cG E$weighted average of 2749.6 {I6} from {+24}Mg({+16}O,|a2p|g), 2750.9  
  34S 2cG {I25} from {+31}P(|a,p|g), and 2749.24 {I5} from {+33}S(n,|g)          
  34S 3cG E=thermal.                                                             
@@ -274,6 +321,7 @@
  34S 2cG {I22} from {+24}Mg({+16}O,|a2p|g), and 100 {I10} from {+33}S(n,|g)     
  34S 3cG E=thermal.                                                             
  34S  cG M,MR$D+Q, |DJ=0,1 from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL. 
+ 34S B G BM1W=0.015 +9-4 $BE2W=0.10 +9-5                                        
  34S   L 4889.752  24 2+               36 FS     10                             
  34S X L XREF=ACGMNPRW(4882)Z(4890)ac(4900)                                     
  34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 4889.30|g, E2 to 0+,
@@ -281,15 +329,24 @@
  34S  cL T$lifetime |t=52 fs {I14} in {+31}P(|a,p|g) from 1970Ra17 with DSAM.   
  34S 2cL Other: <40 fs in {+31}P(|a,p|g) from 1970Gr11 with DSAM.               
  34S   G 1585.510  20 96     24 [M1,E2]                                     P   
+ 34S S G  CC=0.000122 18$KC=1.47E-5 12$LC=1.13E-6 9$MC=9.5E-8 8                 
+ 34S S G  IPC=0.000107 16                                                       
  34S  cG RI$others: 94 {I9} from {+33}S(n,|g) E=thermal, <100 from {+34}Cl      
  34S 2cG |e+|b{++} decay (31.99 min).                                           
+ 34S  cG $B(M1)(W.u.)=0.064 {I+29-18} if M1, B(E2)(W.u.)=99 {I+46-28} if E2     
+ 34S  cG $B(E2)(W.u.)=99 {I+46-28} upper bound exceeds RUL=100 if E2            
  34S   G 2762.10   8  71     LT [M1,E2]                                     P   
+ 34S S G  CC=0.00063 6$KC=5.68E-6 18$LC=4.37E-7 14$MC=3.69E-8 12                
+ 34S S G  IPC=0.00062 6                                                         
  34S  cG RI$others: 112 {I11} from {+33}S(n,|g) E=thermal, <61 from {+34}Cl     
  34S 2cG |e+|b{++} decay (31.99 min).                                           
- 34S   G 4889.30   8  100    24 E2                                          P   
+ 34S   G 4889.30   8  100    24 E2                     1.46E-3 2            P   
+ 34S S G  KC=2.496E-6 35$LC=1.921E-7 27$MC=1.621E-8 23                          
+ 34S S G  IPC=0.001457 20                                                       
  34S  cG RI$others: 100 {I10} from {+33}S(n,|g) E=thermal, 100 from {+34}Cl     
  34S 2cG |e+|b{++} decay (31.99 min).                                           
  34S  cG M$Q from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL.               
+ 34S B G BE2W=0.37 +17-11                                                       
  34S   L 5228.166  26 0+                                                        
  34S X L XREF=B(5230?)GMNPRWZ                                                   
  34S  cL J$L=0 from 0+ in {+32}S(t,p). Isotropic |g|g(|q) in {+31}P(|a,p|g).    
@@ -305,19 +362,30 @@
  34S   G 698.18    13 1.37   19                                                 
  34S   G 1247.92   6  8.0    10                                                 
  34S   G 3194.74   5  100    11 M1+E2    -0.17   6                              
+ 34S S G  CC=0.000747 11$KC=4.44E-6 6$LC=3.42E-7 5$MC=2.88E-8 4                 
+ 34S S G  IPC=0.000742 11                                                       
  34S  cG M,MR$D+Q with |d=-0.17 {I6} or |d=+1.8 {I10} from p|g(|q) in           
  34S 2cG {+31}P(|a,p|g). M2 ruled out by RUL.                                   
+ 34S B G BM1W=0.035 +22-11 $BE2W=0.39 +45-24                                    
  34S   L 5380.986  32 1+               49 FS     LE                             
  34S X L XREF=B(5380?)GMNPRWac(5360*)                                           
  34S  cL J$spin=1 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 3253.21|g, M1+E2 to 
  34S 2cL 2+, 2127.558 level.                                                    
  34S  cL T$lifetime |t|<70 fs in {+31}P(|a,p|g) from 1974Gr06 with DSAM.        
  34S   G 1266.11   5  17.4   19 [M1,E2]                                         
+ 34S S G  CC=4.3E-5 6$KC=2.28E-5 27$LC=1.76E-6 21$MC=1.48E-7 18                 
+ 34S S G  IPC=1.81E-5 35                                                        
  34S   G 2076.89   8  39     4  [M1,E2]                                         
+ 34S S G  CC=0.00032 4$KC=9.1E-6 5$LC=6.98E-7 35$MC=5.89E-8 30                  
+ 34S S G  IPC=0.00032 4                                                         
  34S   G 3253.21   6  100    11 M1+E2    -1.1    10                             
+ 34S S G  CC=0.00084 7$KC=4.42E-6 12$LC=3.41E-7 9$MC=2.87E-8 8                  
+ 34S S G  IPC=0.00083 7                                                         
  34S  cG RI$other: 100 {I13} from {+31}P(|a,p|g)                                
  34S  cG M,MR$D+Q with -2.1<|d|<-0.1 from {+31}P(|a,p|g). M2 ruled out by RUL.  
- 34S   G 5380.59   9  53     5  (M1)                                            
+ 34S   G 5380.59   9  53     5  (M1)                   1.44E-3 2                
+ 34S S G  KC=2.143E-6 30$LC=1.649E-7 23$MC=1.391E-8 19                          
+ 34S S G  IPC=0.001435 20                                                       
  34S  cG RI$weighted average of 61 {I13} from {+31}P(|a,p|g) and 52 {I5} from   
  34S 2cG {+33}S(n,|g) E=thermal                                                 
  34S  cG M$D from p|g(|q) in {+31}P(|a,p|g). |D|p=no from level scheme.         
@@ -329,19 +397,31 @@
  34S 4cL 1972Cr08), which could be a different level.                           
  34S  cL T$lifetime |t=380 fs {I30} in {+31}P(|a,p|g) from 1972Jo10 with DSAM.  
  34S   G 789.1     6  1.50   27 [M1,E2]                                         
+ 34S S G  CC=7.1E-5 18$KC=6.6E-5 17$LC=5.1E-6 13$MC=4.3E-7 11                   
+ 34S  cG $B(M1)(W.u.)=0.00126 {I+26-24} if M1, B(E2)(W.u.)=7.9 {I+17-15} if E2  
  34S   G 803.103   27 4.4    4  [M1,E2]                                         
+ 34S S G  CC=6.8E-5 17$KC=6.3E-5 16$LC=4.9E-6 12$MC=4.1E-7 10                   
+ 34S  cG $B(M1)(W.u.)=0.00350 {I+47-42} if M1, B(E2)(W.u.)=21.3 {I+29-26} if E2 
  34S   G 1055.491  20 26.9   27 [E1]                                            
+ 34S S G  CC=1.895E-5 27$KC=1.749E-5 24$LC=1.349E-6 19$MC=1.137E-7 16           
  34S  cG E$weighted average of 1055.4 {I8} from {+24}Mg({+16}O,|a2p|g) and      
  34S 2cG 1055.491 {I20} from {+33}S(n,|g) E=thermal.                            
  34S  cG RI$other: 49 {I25} from {+24}Mg({+16}O,|a2p|g).                        
+ 34S B G BE1W=2.76E-4 +37-34                                                    
  34S   G 1564.8    5  3.5    8  [M1,E2]                                         
+ 34S S G  CC=0.000115 17$KC=1.50E-5 12$LC=1.16E-6 10$MC=9.8E-8 8                
+ 34S S G  IPC=9.9E-5 15                                                         
+ 34S  cG $B(M1)(W.u.)=3.8|*10{+-4} {I9} if M1, B(E2)(W.u.)=0.60 {I15} if E2     
  34S   G 2375.657  20 100    9  M1+E2    -0.4    LT                             
+ 34S S G  CC=0.000417 9$KC=6.99E-6 10$LC=5.39E-7 8$MC=4.54E-8 7                 
+ 34S S G  IPC=0.000410 9                                                        
  34S  cG E$weighted average of 2375.4 {I7} from {+24}Mg({+16}O,|a2p|g) and      
  34S 2cG 2375.657 {I20} from {+33}S(n,|g) E=thermal.                            
  34S  cG RI$others: 100 {I49} from {+24}Mg({+16}O,|a2p|g), 100 {I16} from       
  34S 2cG {+31}P(|a,p|g).                                                        
  34S  cG M,MR$D+Q with |d<-0.4 or |d>+2.4 from {+31}P(|a,p|g). M2 ruled out by  
  34S 2cG RUL.                                                                   
+ 34S B G BE2W=0.3 +22-1                                                         
  34S   G 3552.08   6  66.7   7  D+Q      -0.47   +7-11                          
  34S  cG E$weighted average of 3551.2 {I6} from {+24}Mg({+16}O,|a2p|g) and      
  34S 2cG 3552.08 {I4} from {+33}S(n,|g) E=thermal.                              
@@ -358,20 +438,27 @@
  34S 4cL {+31}P(|a,p|g) from 1972Gr15 with RDM. Other: >0.5 ps in {+31}P(|a,p|g)
  34S 5cL from 1974Gr06 with DSAM.                                               
  34S   G 1001.5    5  100    4  E1                                          P   
+ 34S S G  CC=2.095E-5 29$KC=1.934E-5 27$LC=1.491E-6 21$MC=1.257E-7 18           
  34S  cG E$weighted average of 1001.6 {I5} from {+24}Mg({+16}O,|a2p|g) and 1001 
  34S 2cG {I1} from {+208}Pb({+36}S,{+34}S|g)                                    
  34S  cG RI$others: 100 {I10} from {+24}Mg({+16}O,|a2p|g), 100 {I9} from        
  34S 2cG {+208}Pb({+36}S,{+34}S|g)                                              
  34S  cG M$D from p|g(|q) and electric character from |g(|q)(POL) in            
  34S 2cG {+31}P(|a,p|g). D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). 
+ 34S B G BE1W=9.1E-6 6                                                          
  34S   G 1066.2    5  88     8  E2                                              
+ 34S S G  CC=4.11E-5 6$KC=3.79E-5 5$LC=2.93E-6 4$MC=2.466E-7 35                 
  34S  cG E$weighted average of 1066.2 {I5} from {+24}Mg({+16}O,|a2p|g) and 1066 
  34S 2cG {I1} from {+208}Pb({+36}S,{+34}S|g)                                    
  34S  cG RI$unweighted average of 83 {I10} from {+24}Mg({+16}O,|a2p|g), 104 {I4}
  34S 2cG from {+31}P(|a,p|g), and 78 {I8} from {+208}Pb({+36}S,{+34}S|g)        
  34S  cG M$Q from p|g(|q) and electric character from |g(|q)(POL) in            
  34S 2cG {+31}P(|a,p|g). Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). 
+ 34S B G BE2W=0.78 6                                                            
  34S   G 3562.7    6  2.9    12 [E3]                                        M   
+ 34S S G  CC=0.000749 10$KC=5.31E-6 7$LC=4.09E-7 6$MC=3.45E-8 5                 
+ 34S S G  IPC=0.000743 10                                                       
+ 34S B G BE3W=1.01 42                                                           
  34S   L 5755.871  23 1-                                                        
  34S X L XREF=MNPRWa                                                            
  34S  cL J$L=1 from 0+ in {+32}S(t,p).                                          
@@ -391,11 +478,19 @@
  34S 2cL g.s. L=2 from 0+ in {+32}S(t,p).                                       
  34S  cL T$lifetime |t<10 fs in {+31}P(|a,p|g) from 1972Jo10 with DSAM.         
  34S   G 1121.33   9  57     8  [M1,E2]                                         
+ 34S S G  CC=3.3E-5 5$KC=2.9E-5 4$LC=2.26E-6 33$MC=1.91E-7 28                   
+ 34S S G  IPC=1.51E-6 32                                                        
  34S   G 1922.92   22 100    18 [M1,E2]                                         
+ 34S S G  CC=0.000257 32$KC=1.03E-5 6$LC=8.0E-7 5$MC=6.7E-8 4                   
+ 34S S G  IPC=0.000246 31                                                       
  34S  cG RI$other: 100 {I42} from {+31}P(|a,p|g).                               
- 34S   G 3870.51   31 92     13 [M1,E2]                                         
+ 34S   G 3870.51   31 92     13 [M1,E2]                0.00106 7                
+ 34S S G  KC=3.42E-6 8$LC=2.63E-7 6$MC=2.22E-8 5                                
+ 34S S G  IPC=0.00105 7                                                         
  34S  cG RI$other: 128 {I42} from {+31}P(|a,p|g).                               
- 34S   G 5997.30   31 56     10 E2                                              
+ 34S   G 5997.30   31 56     10 E2                     1.74E-3 2                
+ 34S S G  KC=1.896E-6 27$LC=1.459E-7 20$MC=1.231E-8 17                          
+ 34S S G  IPC=0.001741 24                                                       
  34S  cG RI$other: 278 {I50} from {+31}P(|a,p|g).                               
  34S  cG M$Q from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL.               
  34S   L 6121.55   10 2+               52 FS     LT                             
@@ -403,9 +498,13 @@
  34S  cL J$L=2 from 0+ in {+32}S(t,p). Spin=1,2 from p|g(|q) in {+31}P(|a,p|g). 
  34S  cL T$lifetime |t<75 fs in {+31}P(|a,p|g) from 1972Jo10 with DSAM.         
  34S   G 2817.76   25 100    9  (M1+E2)  -0.09   4                          P   
+ 34S S G  CC=0.000595 8$KC=5.35E-6 7$LC=4.12E-7 6$MC=3.47E-8 5                  
+ 34S S G  IPC=0.000589 8                                                        
  34S  cG M,MR$D+Q, |DJ=0,1 from p|g(|q) in {+31}P(|a,p|g). |D|p=no from level   
  34S 2cG scheme.                                                                
- 34S   G 3994.8    8  22     9  [M1,E2]                                     P   
+ 34S   G 3994.8    8  22     9  [M1,E2]                0.00110 7            P   
+ 34S S G  KC=3.27E-6 7$LC=2.52E-7 5$MC=2.12E-8 5                                
+ 34S S G  IPC=0.00110 7                                                         
  34S   L 6168.857  29 3+               9.0 FS    LT                             
  34S X L XREF=MNPRW(6170)Z(6130*)                                               
  34S  cL J$spin=3 from p|g(|q) in {+31}P(|a,p|g). |p=+ from the strongest branch
@@ -420,6 +519,8 @@
  34S   G 1544.41   10 25.9   LT                                             &   
  34S   G 2053.94   14 5.4    8                                                  
  34S   G 2864.56   4  100    10 M1+E2    -0.23   7                              
+ 34S S G  CC=0.000619 9$KC=5.23E-6 7$LC=4.03E-7 6$MC=3.40E-8 5                  
+ 34S S G  IPC=0.000613 9                                                        
  34S  cG RI$other: 100 {I13} from {+31}P(|a,p|g).                               
  34S  cG M,MR$D+Q, |DJ=0,1 from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL. 
  34S 2cG Other: |d=-1.9 {I6}.                                                   
@@ -449,10 +550,14 @@
  34S  cG E$weighted average of 572.0 {I1} from {+24}Mg({+16}O,|a2p|g) and 571.7 
  34S 2cG {I6} from {+33}S(n,|g) E=thermal.                                      
  34S  cG M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g).               
+ 34S B G BE1W=9E-4 +10-6 $BM1W=0.029 +35-19                                     
  34S   G 1374.43   23 97     21 M1+E2    -3.7    +7-26                      M   
+ 34S S G  CC=6.96E-5 13$KC=2.102E-5 34$LC=1.622E-6 26$MC=1.368E-7 22            
+ 34S S G  IPC=4.68E-5 9                                                         
  34S  cG E$weighted average of 1375.0 {I5} from {+24}Mg({+16}O,|a2p|g) and      
  34S 2cG 1374.34 {I20} from {+33}S(n,|g) E=thermal.                             
  34S  cG M,MR$D+Q, |DJ=0,1 from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL. 
+ 34S B G BM1W=5E-4 +6-3 $BE2W=14 +14-8                                          
  34S   G 1562.4    5  100    21                                             M   
  34S  cG E$weighted average of 1562.5 {I5} from {+24}Mg({+16}O,|a2p|g), 1562.3  
  34S 2cG {I5} from {+33}S(n,|g) E=thermal, and 1562 {I1} from                   
@@ -464,9 +569,12 @@
  34S X L XREF=MNPRW                                                             
  34S  cL J$L=1 from 0+ in {+32}S(t,p). Spin=1 from p|g(|q) in {+31}P(|a,p|g).   
  34S  cL T$lifetime |t<36 fs in {+31}P(|a,p|g) from 1972Jo10 with DSAM.         
- 34S   G 3038.18   32 100    14 (E1(+M2))-0.55   65                             
+ 34S   G 3038.18   32 100    14 (E1(+M2))-0.55   65    0.0010828                
+ 34S S G  KC=4.3E-6 12$LC=3.3E-7 9$MC=2.8E-8 8                                  
+ 34S S G  IPC=0.00108 28                                                        
  34S  cG M,MR$D(+Q) from p|g(|q) in {+31}P(|a,p|g). |D|p=yes from level scheme. 
  34S   G 6341.58   32 36     6  (E1)                                            
+ 34S S G  IPC=0.002376 33                                                       
  34S  cG RI$weighted average of 43 {I14} from {+31}P(|a,p|g) and 35 {I6} from   
  34S 2cG {+33}S(n,|g) E=thermal                                                 
  34S  cG M$D from p|g(|q) in {+31}P(|a,p|g). |D|p=yes from level scheme.        
@@ -477,9 +585,13 @@
  34S 3cL by RUL. |p=- from L=3 from 3/2+ in {+33}S(d,p).                        
  34S  cL T$lifetime |t<10 fs in {+31}P(|a,p|g) from 1972Jo10 with DSAM.         
  34S   G 1544.41   10 100    8  (E1)                                        P   
+ 34S S G  CC=0.000311 4$KC=9.04E-6 13$LC=6.97E-7 10$MC=5.88E-8 8                
+ 34S S G  IPC=0.000301 4                                                        
  34S  cG M,MR$0.00 {I6} from p|g(|q) in {+31}P(|a,p|g). |D|p=yes from level     
  34S 2cG scheme.                                                                
  34S   G 1732.39   11 61     8  (E1)                                        P   
+ 34S S G  CC=0.000456 6$KC=7.56E-6 11$LC=5.83E-7 8$MC=4.91E-8 7                 
+ 34S S G  IPC=0.000447 6                                                        
  34S  cG MR$0.00 {I+32-14} from p|g(|q) in {+31}P(|a,p|g). |D|p=yes from level  
  34S 2cG scheme.                                                                
  34S   L 6428.12   8  (2+,3+)                                                   
@@ -518,7 +630,12 @@
  34S 3cL {+33}S(d,p).                                                           
  34S  cL T$lifetime |t=60 fs {I15} in {+31}P(|a,p|g) from 1977GrZH with DSAM.   
  34S   G 959          28     13 [M2]                                        P   
+ 34S S G  CC=8.00E-5 11$KC=7.38E-5 10$LC=5.71E-6 8$MC=4.82E-7 7                 
+ 34S  cG $B(M2)(W.u.)=1.9|*10{+4} {I+10-8} exceeds RUL=3                        
  34S   G 2015         100    13 [M1,E2]                                     P   
+ 34S S G  CC=0.000297 35$KC=9.5E-6 5$LC=7.4E-7 4$MC=6.20E-8 33                  
+ 34S S G  IPC=0.000287 35                                                       
+ 34S  cG $B(M1)(W.u.)=0.050 {I+17-11} if M1, B(E2)(W.u.)=48 {I+16-11} if E2     
  34S   L 6685.328  30 (0:3)-                                                    
  34S X L XREF=N(6690)PR(6690)W                                                  
  34S  cL J$929.436|g to 1-, 5755.871 level. |p=- from L=1 from 3/2+ in          
@@ -533,9 +650,17 @@
  34S 2cL 2127.558 level and 2053|g to 4+, 4688.96 level.                        
  34S  cL T$lifetime |t<10 fs in {+31}P(|a,p|g) from 1972Jo10 with DSAM.         
  34S   G 1865         9.1    91 [M1,E2]                                     P   
+ 34S S G  CC=0.000232 30$KC=1.09E-5 7$LC=8.4E-7 5$MC=7.1E-8 4                   
+ 34S S G  IPC=0.000220 29                                                       
  34S   G 2053         36     13 [E2]                                        P   
+ 34S S G  CC=0.000351 5$KC=9.69E-6 14$LC=7.47E-7 10$MC=6.30E-8 9                
+ 34S S G  IPC=0.000340 5                                                        
  34S   G 3438         36     13 [M1,E2]                                     P   
- 34S   G 4614         100    9  [M1,E2]                                     P   
+ 34S S G  CC=0.00090 7$KC=4.06E-6 10$LC=3.13E-7 8$MC=2.64E-8 7                  
+ 34S S G  IPC=0.00090 7                                                         
+ 34S   G 4614         100    9  [M1,E2]                0.00130 8            P   
+ 34S S G  KC=2.67E-6 5$LC=2.05E-7 4$MC=1.734E-8 34                              
+ 34S S G  IPC=0.00130 8                                                         
  34S  cG M,MR$D+Q with |d=+1.8 {I3} for J{-i}=2 or Q(+O) with |d=0.00 {I3} for  
  34S 2cG J{-i}=4 from p|g(|q) in {+31}P(|a,p|g).                                
  34S   L 6828.82      2+               46 FS     LT                             
@@ -545,6 +670,8 @@
  34S   G 2204.34                                                                
  34S   G 2713.89                                                                
  34S   G 2753.3    13 100       [M1,E2]                                         
+ 34S S G  CC=0.00062 6$KC=5.70E-6 19$LC=4.39E-7 14$MC=3.71E-8 12                
+ 34S S G  IPC=0.00062 6                                                         
  34S   G 6828                   Q                                               
  34S  cG M$Q from p|g(|q) in {+31}P(|a,p|g).                                    
  34S   L 6847.90   6  (1,2+)                                                    
@@ -605,11 +732,16 @@
  34S 2cL {+35}Cl(d,{+3}He). Possible L=2 component of the L=3,(2) doublet from  
  34S 3cL 0+ in {+32}S(t,p).                                                     
  34S  cL T$lifetime |t<10 fs in {+31}P(|a,p|g) from 1972Jo10 with DSAM.         
- 34S   G 3807         39     11 [M1,E2]                                     P   
- 34S   G 4983         100    11 (M1+E2)  +0.27   +19-15                     P   
+ 34S   G 3807         39     11 [M1,E2]                0.00104 7            P   
+ 34S S G  KC=3.50E-6 8$LC=2.70E-7 6$MC=2.27E-8 5                                
+ 34S S G  IPC=0.00103 7                                                         
+ 34S   G 4983         100    11 (M1+E2)  +0.27   +19-151.34E-3 3            P   
+ 34S S G  KC=2.377E-6 34$LC=1.830E-7 26$MC=1.544E-8 22                          
+ 34S S G  IPC=0.001335 25                                                       
  34S  cG M,MR$D+Q with |d=+0.27 {I+19-15} or +1.2 {I+7-4} from {+31}P(|a,p|g).  
  34S 2cG |D|p=no from level scheme.                                             
  34S   G 7110         12.1   91 (E2)                                        P   
+ 34S S G  IPC=0.001970 28                                                       
  34S  cG M$Q from p|g(|q) in {+31}P(|a,p|g). |D|p=no from level scheme.         
  34S   L 7164.46   17 (0:3+)                                                    
  34S X L XREF=Pc(7190*)                                                         
@@ -626,6 +758,7 @@
  34S   G 2530.25   10 18.8   26                                                 
  34S   G 5091.31                                                                
  34S   G 7218.48   13 100    10 E2                                              
+ 34S S G  IPC=0.001992 28                                                       
  34S  cG M$from |g(|q) and azimuthal asymmetry in {+34}S(|g,|g'),(pol |g,|g').  
  34S   L 7248      2  (4)              14 FS     7                          P   
  34S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
@@ -670,17 +803,29 @@
  34S X L XREF=MN(7621)PR(7632)W(7625)                                           
  34S  cL J$L=3 from 0+ in {+32}S(t,p). L=1+3 from 3/2+ in {+33}S(d,p).          
  34S  cL T$lifetime |t=20 fs {I10} in {+31}P(|a,p|g) from 1977GrZH with DSAM.   
- 34S   G 2940.42   31 8.3    12 [E1]                                            
+ 34S   G 2940.42   31 8.3    12 [E1]                   1.22E-3 2                
+ 34S S G  KC=3.62E-6 5$LC=2.78E-7 4$MC=2.348E-8 33                              
+ 34S S G  IPC=0.001212 17                                                       
+ 34S B G BE1W=8E-5 +7-3                                                         
  34S   G 3005.39   5  79     8  [M1,E2]                                         
- 34S   G 3515.07   11 11.3   13 [E1]                                            
- 34S   G 4325.397  30 100    10 [E1]                                            
+ 34S S G  CC=0.00073 6$KC=4.98E-6 14$LC=3.83E-7 11$MC=3.23E-8 9                 
+ 34S S G  IPC=0.00073 6                                                         
+ 34S  cG $B(M1)(W.u.)=0.023 {I+20-8} if M1, B(E2)(W.u.)=10 {I+9-4} if E2        
+ 34S   G 3515.07   11 11.3   13 [E1]                   1.49E-3 2                
+ 34S S G  KC=2.89E-6 4$LC=2.222E-7 31$MC=1.875E-8 26                            
+ 34S S G  IPC=0.001483 21                                                       
+ 34S B G BE1W=6E-5 +5-2                                                         
+ 34S   G 4325.397  30 100    10 [E1]                   1.81E-3 3                
+ 34S S G  KC=2.245E-6 31$LC=1.728E-7 24$MC=1.458E-8 20                          
+ 34S S G  IPC=0.001804 25                                                       
+ 34S B G BE1W=2.9E-4 +24-10                                                     
  34S   L 7655      11 (1-,2-,3-,4-,5-)                                          
  34S X L XREF=NRW                                                               
  34S  cL E$weighted average of 7659 {I11} from {+33}S(d,p) and 7649 {I14} from  
  34S 2cL {+34}S(p,p)                                                            
  34S  cL J$L=(3) from 3/2+ in {+33}S(d,p).                                      
  34S   L 7730.79   15 (1-,2-,3-)                                                
- 34S X L XREF=N(7714)PRW(7732)                                                 
+ 34S X L XREF=N(7714)PRW(7732)                                                  
  34S  cL J$L=(1+3) from 3/2+ in {+33}S(d,p). 5602.78|g to 2+, 2127.558 level.   
  34S   G 5602.78   15 100                                                       
  34S   L 7739      16 2+                                                        
@@ -706,13 +851,19 @@
  34S 2cL {+24}Mg({+16}O,|a2p|g) from 2005Ma03 with DSAM and 115 fs {I35} in     
  34S 3cL {+31}P(|a,p|g) from 1977GrZH with DSAM.                                
  34S   G 1539.7    5  19     4  E2                                          M   
+ 34S S G  CC=0.0001222 17$KC=1.680E-5 24$LC=1.296E-6 18$MC=1.093E-7 15          
+ 34S S G  IPC=0.0001040 15                                                      
  34S  cG E$weighted average of 1539.6 {I5} from {+24}Mg({+16}O,|a2p|g) and 1540 
  34S 2cG {I1} from {+208}Pb({+36}S,{+34}S|g)                                    
  34S  cG M$Q, |DJ=2 from A{-2} and A{-4} in {+24}Mg({+16}O,|a2p|g). M2 ruled out
  34S 2cG by RUL.                                                                
+ 34S B G BE2W=16 +7-5                                                           
  34S   G 2099.6    8  100    11 M1+E2    -1.8    1                          M   
+ 34S S G  CC=0.000355 5$KC=9.11E-6 13$LC=7.02E-7 10$MC=5.92E-8 8                
+ 34S S G  IPC=0.000345 5                                                        
  34S  cG M,MR$D+Q, |DJ=0,1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2     
  34S 2cG ruled out by RUL.                                                      
+ 34S B G BM1W=0.0049 +17-10 $BE2W=14.0 +47-28                                   
  34S   L 7804      5  2+                                                        
  34S X L XREF=NWc(7780)                                                         
  34S  cL E$weighted average of 7801 {I16} from {+32}S(t,p), 7805 {I5} from      
@@ -771,7 +922,10 @@
  34S 2cL level.                                                                 
  34S  cL T$lifetime |t<40 fs in {+31}P(|a,p|g) from 1977GrZH with DSAM.         
  34S   G 1951.77   19 34     7  [E3]                                            
+ 34S S G  CC=0.0001731 24$KC=1.700E-5 24$LC=1.312E-6 18$MC=1.106E-7 15          
+ 34S S G  IPC=0.0001547 22                                                      
  34S   G 6166.24   13 100    11 [E2]                                            
+ 34S S G  IPC=0.001781 25                                                       
  34S   L 8371.0    4  (7)-             83 FS     14                         B   
  34S X L XREF=HMg                                                               
  34S  cL J$Spin=(5,7) from p|g(|q) in {+31}P(|a,p|g). 2680.5|g, E2, |DJ=2 to 5-,
@@ -781,13 +935,18 @@
  34S 2cL {+24}Mg({+16}O,|a2p|g) from 2005Ma03 with DSAM and 120 fs {I20} in     
  34S 3cL {+31}P(|a,p|g) from 1977GrZH with DSAM.                                
  34S   G 580.3     6  2.0    10 (M1)                                        M   
+ 34S S G  CC=9.95E-5 14$KC=9.18E-5 13$LC=7.10E-6 10$MC=5.98E-7 8                
  34S  cG M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). |D|p=no from  
  34S 2cG level scheme.                                                          
+ 34S B G BM1W=0.027 +16-13                                                      
  34S   G 2680.5    6  100    10 E2                                          M   
+ 34S S G  CC=0.000648 9$KC=6.13E-6 9$LC=4.73E-7 7$MC=3.99E-8 6                  
+ 34S S G  IPC=0.000641 9                                                        
  34S  cG E$weighted average of 2680.5 {I6} from {+24}Mg({+16}O,|a2p|g) and 2681 
  34S 2cG {I2} from {+208}Pb({+36}S,{+34}S|g)                                    
  34S  cG M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out  
  34S 2cG by RUL.                                                                
+ 34S B G BE2W=7.4 +15-11                                                        
  34S   L 8385.40   6  1-                                                        
  34S X L XREF=NPSW                                                              
  34S  cL J$L=1 from 0+ in {+32}S(t,p).                                          
@@ -803,10 +962,16 @@
  34S  cL J$2812.7|g, D, |DJ=1 to 5-, 5690.61 level; 3813.6|g to 4+, 4688.96     
  34S 2cL level. 6+ from band assignments in {+24}Mg({+16}O,|a2p|g).             
  34S  cL T$lifetime |t=40 fs {I10} in {+31}P(|a,p|g) from 1977GrZH with DSAM.   
- 34S   G 2812.7    9  100    18 (E1)                                        M   
+ 34S   G 2812.7    9  100    18 (E1)                   1.15E-3 2            M   
+ 34S S G  KC=3.83E-6 5$LC=2.95E-7 4$MC=2.488E-8 35                              
+ 34S S G  IPC=0.001148 16                                                       
  34S  cG M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). |D|p=(yes)    
  34S 2cG from level scheme.                                                     
- 34S   G 3813.6    7  51     11 [E2]                                        M   
+ 34S B G BE1W=6.8E-4 +24-15                                                     
+ 34S   G 3813.6    7  51     11 [E2]                   1.11E-3 2            M   
+ 34S S G  KC=3.55E-6 5$LC=2.74E-7 4$MC=2.308E-8 32                              
+ 34S S G  IPC=0.001104 15                                                       
+ 34S B G BE2W=1.3 +5-4                                                          
  34S   L 8506.77   4  1-                                                        
  34S X L XREF=NPSW(8511)                                                        
  34S  cL J$L=1 from 0+ in {+32}S(t,p).                                          
@@ -882,7 +1047,7 @@
  34S   G 6745.64   16 100    11                                                 
  34S   L 8953      5                                                            
  34S X L XREF=W                                                                 
- 34S   L 8970.6    5  (6)                                                    
+ 34S   L 8970.6    5  (6)                                                       
  34S X L XREF=H                                                                 
  34S  cL J$3280.0|g to 5-, 5690.61 level; 1180|g to (6)-, 7790.8 level; 942.3|g,
  34S 2cL D, |DJ=1 from (7+), 9912.8 level. 6- is given by 2005Ma03 in           
@@ -963,6 +1128,8 @@
  34S   L 9665.739  34                                                           
  34S X L XREF=P                                                                 
  34S   G 2817.76   25 221    LT                                             &   
+ 34S S G  CC=0.000595 8$KC=5.35E-6 7$LC=4.12E-7 6$MC=3.47E-8 5                  
+ 34S S G  IPC=0.000589 8                                                        
  34S   G 7536.2    7  100    23                                                 
  34S   L 9707      6  (1,2+)                                                    
  34S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
@@ -1133,6 +1300,7 @@
  34S X L XREF=L                                                                 
  34S  cL $|G{-|g}>1.3 eV from {+30}Si(|a,|g),(|a,n):resonances.                 
  34S   G 7282         100       (E1)                                        A   
+ 34S S G  IPC=0.00258 4                                                         
  34S  cG M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from     
  34S 2cG level scheme.                                                          
  34S   G 8458         60                                                    S   
@@ -1156,11 +1324,17 @@
  34S 2cL (7)-, 8371.0 level. 8+ from shell model calculation and band           
  34S 3cL assignments (2005Ma03) in {+24}Mg({+16}O,|a2p|g).                      
  34S   G 2147.2    6  100    21 E2                                          M   
+ 34S S G  CC=0.000396 6$KC=8.95E-6 13$LC=6.90E-7 10$MC=5.82E-8 8                
+ 34S S G  IPC=0.000386 5                                                        
  34S  cG M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out  
  34S 2cG by RUL.                                                                
+ 34S B G BE2W=27 +23-10                                                         
  34S   G 2280.4    10 100    21 (E1)                                        M   
+ 34S S G  CC=0.000837 12$KC=5.08E-6 7$LC=3.91E-7 5$MC=3.30E-8 5                 
+ 34S S G  IPC=0.000832 12                                                       
  34S  cG M$D, |DJ=1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). |D|p=(yes)    
  34S 2cG from level scheme.                                                     
+ 34S B G BE1W=8E-4 +7-3                                                         
  34S   L 10662     5  (1+,2-)                                               E   
  34S X L XREF=LT                                                                
  34S  cL E$weighted average of 10663 {I5} from {+30}Si(|a,|g),(|a,n):resonances 
@@ -1170,6 +1344,7 @@
  34S X L XREF=L                                                                 
  34S  cL $|G{-|g}=0.73 eV from {+30}Si(|a,|g),(|a,n):resonances.                
  34S   G 7365         100       (E1)                                        A   
+ 34S S G  IPC=0.00259 4                                                         
  34S  cG M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from     
  34S 2cG level scheme.                                                          
  34S   G 8541         30                                                    S   
@@ -1358,7 +1533,7 @@
  34S  cG M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from
  34S 2cG level scheme.                                                          
  34S   G 11370        5.9                                                   S   
- 34S   L 11374.2   6  (8+)                                                       
+ 34S   L 11374.2   6  (8+)                                                      
  34S X L XREF=H                                                                 
  34S  cL J$3002.8|g, D, |DJ=1 to (7)-, 8371.0 level; 1461.7|g, D(+Q), |DJ=1 to  
  34S 2cL (7+), 9912.8 level. 1966.8|g from (10+), 13341.6 level. 8+ is given by 
@@ -1549,6 +1724,8 @@
  34S   G 9377         100       (E1+M2)  -0.058  16                         A   
  34S  cG M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=(yes)   
  34S 2cG from level scheme.                                                     
+ 34S  cG $B(E1)(W.u.)=0.44 {I+10-7} exceeds RUL=0.1                             
+ 34S  cG $B(M2)(W.u.)=8|*10{+1} {I+6-4} exceeds RUL=3
  34S   L 11515.3      2-               1.262 KEV 25                             
  34S X L XREF=Q                                                                 
  34S  cL $|G{-n}=1.260 keV {I25}, |G{-|g}=1.48 eV {I13} from                    
@@ -1569,6 +1746,7 @@
  34S   G 11543        63        (E1)                                        A   
  34S  cG M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from     
  34S 2cG level scheme.                                                          
+ 34S  cG $B(E1)(W.u.)=0.164 {I+33-30} exceeds RUL=0.1                           
  34S   L 11546                         0.23 KEV  4                              
  34S X L XREF=Q                                                                 
  34S   L 11551                         0.15 KEV  3                              
@@ -1726,10 +1904,19 @@
  34S  cL T$lifetime |t=250 fs {I50} in {+24}Mg({+16}O,|a2p|g) from 2005Ma03 with
  34S 2cL DSAM.                                                                  
  34S   G 1489.2    6  7.4    42 [M1,E2]                                     M   
+ 34S S G  CC=9.0E-5 13$KC=1.65E-5 15$LC=1.27E-6 11$MC=1.08E-7 10                
+ 34S S G  IPC=7.3E-5 12                                                         
+ 34S  cG $B(M1)(W.u.)=0.0024 {I+16-12} if M1, B(E2)(W.u.)=4.2 {I+28-21} if E2   
  34S   G 1741.6    5  12.6   32 [E1]                                        M   
+ 34S S G  CC=0.000462 6$KC=7.50E-6 11$LC=5.78E-7 8$MC=4.87E-8 7                 
+ 34S S G  IPC=0.000454 6                                                        
+ 34S B G BE1W=7.4E-5 +29-21                                                     
  34S   G 2228.8    6  100    12 E2                                          M   
+ 34S S G  CC=0.000435 6$KC=8.38E-6 12$LC=6.46E-7 9$MC=5.45E-8 8                 
+ 34S S G  IPC=0.000426 6                                                        
  34S  cG M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out  
  34S 2cG by RUL.                                                                
+ 34S B G BE2W=7.6 +20-14                                                        
  34S   L 12151     5                                                            
  34S X L XREF=F(12150)L                                                         
  34S   L 12165     5                                                            
@@ -1797,14 +1984,24 @@
  34S  cL J$1966.8|g, E2, |DJ=2 to (8+), 11374.2 level. 10+ from shell model     
  34S 2cL calculation (2005Ma03) in {+24}Mg({+16}O,|a2p|g).                      
  34S   G 356.3     6  6.3    31 [M1,E2]                                     M   
+ 34S S G  CC=7.E-4 4$KC=7.E-4 4$LC=5.2E-5 31$MC=4.3E-6 26                       
+ 34S  cG $B(M1)(W.u.)=0.09 {I+5-4} if M1                                        
+ 34S  cG $B(E2)(W.u.)=2.8|*10{+3} {I+17-13} exceeds RUL=100 if E2               
  34S   G 1200.4    7  100    22 M1+E2                                       M   
  34S F G FL=12141.3                                                             
+ 34S S G  CC=3.5E-5 5$KC=2.54E-5 33$LC=1.96E-6 26$MC=1.65E-7 22                 
+ 34S S G  IPC=7.9E-6 16                                                         
  34S  cG M$D+Q, |DJ=0,1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled  
  34S 2cG out by RUL.                                                            
+ 34S  cG $B(M1)(W.u.)=0.031 {I+8-7} if M1, B(E2)(W.u.)=83 {I+22-19} if E2       
+ 34S  cG $B(E2)(W.u.)=83 {I+22-19} upper bound exceeds RUL=100 if E2            
  34S   G 1966.8    9  81     19 E2                                          M   
  34S F G FL=11374.2                                                             
+ 34S S G  CC=0.000309 4$KC=1.048E-5 15$LC=8.08E-7 11$MC=6.81E-8 10              
+ 34S S G  IPC=0.000298 4                                                        
  34S  cG M$Q, |DJ=2 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled out  
  34S 2cG by RUL.                                                                
+ 34S B G BE2W=5.7 +17-14                                                        
  34S   L 13460                         40 KEV    LT                             
  34S X L XREF=F                                                                 
  34S   L 13590     10 2-                                                    E   
@@ -2045,4 +2242,4 @@
  34S X L XREF=F                                                                 
  34S   L 23500                         100 KEV   LT                             
  34S X L XREF=F                                                                 
-
+                                                                                
