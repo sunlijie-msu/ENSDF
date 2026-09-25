@@ -209,7 +209,7 @@ Use γ properties in `cL J$` comments to deduce Jπ:
 
 If D(+Q) is firm, the corresponding converted form is M1(+E2). The same logic applies to E1+M2.
 
-Bracketed `[...]` multipolarities are solely deduced from level-scheme Jπ changes between the transition initial and final levels and need no provenance comment.
+Bracketed `[...]` multipolarities `[E1]`, `[M1,E2]`, or `[E2]` are solely deduced from level-scheme Jπ changes between the transition initial and final levels and need no provenance comment.
 
 ---
 

@@ -359,8 +359,8 @@
  34S 2cL 2+, 2127.558 level.                                                    
  34S  cL T$lifetime |t=24 fs {I10} in {+31}P(|a,p|g) from 1970Gr11 with DSAM.   
  34S 2cL Other: |<40 fs in {+31}P(|a,p|g) from 1974Gr06 with DSAM.              
- 34S   G 698.18    13 1.37   19                                                 
- 34S   G 1247.92   6  8.0    10                                                 
+ 34S   G 698.18    13 1.37   19 [E1]                                            
+ 34S   G 1247.92   6  8.0    10 [M1,E2]                                         
  34S   G 3194.74   5  100    11 M1+E2    -0.17   6                              
  34S S G  CC=0.000747 11$KC=4.44E-6 6$LC=3.42E-7 5$MC=2.88E-8 4                 
  34S S G  IPC=0.000742 11                                                       
@@ -512,12 +512,12 @@
  34S 3cL from 3/2+ for 6174 {I8} level in {+33}S(d,p) and L=(3) from 0+ for 6179
  34S 4cL {I14} level in {+32}S(t,p), which could be a different level.          
  34S  cL T$lifetime |t<13 fs in {+31}P(|a,p|g) from 1972Jo10 with DSAM.         
- 34S   G 846.1     13 2.6    17                                                 
+ 34S   G 846.1     13 2.6    17 [M1,E2]                                         
  34S   G 1479.73   15 2.41   30 D+Q      +0.04   +6-3                           
  34S  cG RI$other: 95 {I13} from {+31}P(|a,p|g).                                
  34S  cG M,MR$D+Q, |DJ=0,1 from p|g(|q) in {+31}P(|a,p|g).                      
- 34S   G 1544.41   10 25.9   LT                                             &   
- 34S   G 2053.94   14 5.4    8                                                  
+ 34S   G 1544.41   10 25.9   LT [E1]                                        &   
+ 34S   G 2053.94   14 5.4    8  [M1,E2]                                         
  34S   G 2864.56   4  100    10 M1+E2    -0.23   7                              
  34S S G  CC=0.000619 9$KC=5.23E-6 7$LC=4.03E-7 6$MC=3.40E-8 5                  
  34S S G  IPC=0.000613 9                                                        
@@ -667,8 +667,8 @@
  34S X L XREF=MN(6828)PR(6832*)Wc(6830*)                                        
  34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). L=2 from 0+ in {+32}S(t,p).   
  34S  cL T$lifetime |t<67 fs in {+31}P(|a,p|g) from 1972Jo10 with DSAM.         
- 34S   G 2204.34                                                                
- 34S   G 2713.89                                                                
+ 34S   G 2204.34                [E1]                                            
+ 34S   G 2713.89                [M1,E2]                                         
  34S   G 2753.3    13 100       [M1,E2]                                         
  34S S G  CC=0.00062 6$KC=5.70E-6 19$LC=4.39E-7 14$MC=3.71E-8 12                
  34S S G  IPC=0.00062 6                                                         
@@ -754,9 +754,9 @@
  34S 2cL g.s.                                                                   
  34S  cL T$lifetime |t<18 fs in {+31}P(|a,p|g) from 1972Jo10 with DSAM.         
  34S 2cL |G{-|g0}=1.09 eV {I33} from {+34}S(|g,|g'),(pol |g,|g').               
- 34S   G 2328.8    5  5.2    15                                                 
- 34S   G 2530.25   10 18.8   26                                                 
- 34S   G 5091.31                                                                
+ 34S   G 2328.8    5  5.2    15 [M1,E2]                                         
+ 34S   G 2530.25   10 18.8   26 [E2]                                            
+ 34S   G 5091.31                [M1,E2]                                         
  34S   G 7218.48   13 100    10 E2                                              
  34S S G  IPC=0.001992 28                                                       
  34S  cG M$from |g(|q) and azimuthal asymmetry in {+34}S(|g,|g'),(pol |g,|g').  
@@ -1741,8 +1741,8 @@
  34S  cL $|G{-n}=0.36 keV {I4}, |G{-|g}=1.4 eV {I4}, |G{-|a}=0.27 keV {I6} from 
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
  34S  cL $|G{-|g}=1.0 eV from {+30}Si(|a,|g),(|a,n):resonances.                 
- 34S   G 8240         100                                                   S   
- 34S   G 9416         60                                                    S   
+ 34S   G 8240         100       [E1]                                        S   
+ 34S   G 9416         60        [E1]                                        S   
  34S   G 11543        63        (E1)                                        A   
  34S  cG M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from     
  34S 2cG level scheme.                                                          
