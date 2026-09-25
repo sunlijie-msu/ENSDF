@@ -268,7 +268,7 @@ def extract_quoted_refs(filepath: Path) -> Tuple[List[QuotedRef], List[LevelQuot
 
 _LEVEL_QUOTE = re.compile(
     r'\b(?:to|from)\s+'
-    r'(?P<jpi>[0-9/()+, \-]{1,24}?)\s*,\s*'
+    r'(?P<jpi>(?:\([^()]*\)|[0-9/()+,\- ]){1,24}?)\s*,\s*'
     r'(?P<level>g\.s\.|\d+(?:\.\d+)?)'
     r'(?:-keV)?'
     r'(?P<suffix>\s+(?:level|resonance)\b)?')
@@ -356,9 +356,12 @@ def _parse_j_block(texts: List[str], start_line: int,
             level_str = match.group('level')
             return match.group('jpi').strip(' ,;'), level_str, float(level_str)
 
-        # Pattern 3b: jpi, level (comma-separated)
+        # Pattern 3b: jpi, level (comma-separated). A parenthesised Jpi list
+        # such as "(3,4)" is consumed as one token so its internal comma is not
+        # mistaken for the separator before the level energy.
         match = re.match(
-            r'(?P<jpi>[0-9/()+\-, ]{1,24}?)\s*,\s*(?P<level>\d+(?:\.\d+)?)(?!\.\d)'
+            r'(?P<jpi>(?:\([^()]*\)|[0-9/()+,\- ]){1,24}?)\s*,\s*'
+            r'(?P<level>\d+(?:\.\d+)?)(?!\.\d)'
             r'(?:\s+(?:level|resonance))?',
             text,
         )
