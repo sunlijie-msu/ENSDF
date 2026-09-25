@@ -25,8 +25,8 @@
  34S 3cL assignments here are placed within parentheses if there are no other   
  34S 4cL strong arguments to support these firm assignments.                    
  34S  cL BAND(A)$Ground-state band.                                             
- 34S  cL SEQ(B)$Sequence based on 3-, 5679.5 level.                             
- 34S  cL SEQ(C)$Sequence based on 3-, 4624.6 level.                             
+ 34S  cL BAND(B)$Band based on 4-, 6251.6 level.                                
+ 34S  cL BAND(C)$Band based on 3-, 4624.6 level.                                
  34S  PN                                                                     5  
  34S   L 0.0          0+                                                    A   
  34S   L 2127.7    5  2+                                                    A   
@@ -48,7 +48,8 @@
  34S   L 4877.0    6  3+                                                        
  34S   G 1572.5    5  3.2    7                                                  
  34S   G 2749.6    6  3.6    8                                                  
- 34S   L 5679.6    6  3-                                                    B   
+ 34S   L 5679.6    6  2+                                                    B   
+ 34S  cL J$from the Adopted Levels. 3- was used in 2005Ma03.                    
  34S   G 1055.4    8  0.2    1                                                  
  34S   G 2375.4    7  0.4    2                                                  
  34S   G 3551.2    6  0.6    3                                                  
