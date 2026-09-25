@@ -1,5 +1,5 @@
 Program for consistency check: output for original lines grouped by level and gamma energies (version 09/22/2026)
-Generated at: Thu 09/24/2026 at 01:46:17 AM EDT
+Generated at: Fri 09/25/2026 at 01:17:20 AM EDT
 
 
 Note: 1. possible JPI presented at the end of each record line of each individual dataset is deduced only based on
@@ -50,7 +50,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  34S   Xg208PB(36S,34SG)               g-g 208PB(36S,34SG)
 ################################## new tag show first below ############################################################
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 0.0          0+               STABLE                                    --- possible JPI=0+
+ LEVEL************************************ 34S   L 0.0          0+               STABLE                               Z    --- possible JPI=0+
                      *new XREF new tags    34S X L XREF=UABCDEGHIJKLMNOPRSTVWXYZabcdefg
                      *new XREF old tags    34S X L XREF=ABCDEGHIJKLMNOPRSTUVWXYZabcdefg
                      #old XREF in Adopted  34S X L XREF=UABCDEGHIJKLMNOPRSTVWXYZabcdefg
@@ -115,12 +115,12 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                    35CL(D,3HE)--->c  c     34S  cL S$other: 1.29 (1968Wi20); 1.26 (1962Cu07).
                    35CL(D,3HE)--->c  c     34S  cL $Pickup proton: d{-3/2} (1969Pu03).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 2127.558  15 2+               0.315 PS  12                              --- possible JPI=2+
+ LEVEL************************************ 34S   L 2127.558  15 2+               0.315 PS  12                         Z    --- possible JPI=2+
                      *new XREF new tags    34S X L XREF=UACDEGHIJKLMNPRTVWXYZabcdefg
                      *new XREF old tags    34S X L XREF=ACDEGHIJKLMNPRTUVWXYZabcdefg
                      #old XREF in Adopted  34S X L XREF=UACDEGHIJKLMNPRTVWXYZabcdefg
      34S(PI+,PI+'),(PI-,PI-'),--->U  U     34S   L 2128                                                                   
-        34P B- DECAY (12.43 S)--->A  A     34S   L 2127.3    5  2+                                                         *** possible JPI=0+,1+,2+: logft=5.0(1) from 1+
+        34P B- DECAY (12.43 S)--->A  A     34S   L 2127.3    5  2+               0.315 PS  12                              *** possible JPI=0+,1+,2+: logft=5.0(1) from 1+
     34CL EC+B+ DECAY (31.99 M)--->C  C     34S   L 2128         2+                                                         *** possible JPI=2(+),3(+),4(+): logft=6.0(34) from 3+; 1177g M1+E2 from 3304,2+
                     3H(32S,PG)--->D  D     34S   L 2127                          0.340 PS  21                             
                    3H(35CL,AG)--->E  E     34S   L 2126                                                                   
@@ -272,7 +272,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      *new XREF old tags    34S X L XREF=ACDEGHIJLMNPRTUVWYZabcdg
                      #old XREF in Adopted  34S X L XREF=UACDEGHIJLMNPRTVWYZabcdg
      34S(PI+,PI+'),(PI-,PI-'),--->U  U     34S   L 3304                                                                   
-        34P B- DECAY (12.43 S)--->A  A     34S   L 3303.7                                                                  *** possible JPI=(0,1,2,3,4+)
+        34P B- DECAY (12.43 S)--->A  A     34S   L 3303.7       2+               122 FS    9                               *** possible JPI=0+,1+,2+,3+,4+
     34CL EC+B+ DECAY (31.99 M)--->C  C     34S   L 3304         2+                                                         *** possible JPI=2(+),3(+),4(+): logft=4.8(32) from 3+; 1573g M1+E2 from 4877,3+
                     3H(32S,PG)--->D  D     34S   L 3303                          0.133 PS  9                              
                    3H(35CL,AG)--->E  E     34S   L 3301                                                                   
@@ -357,7 +357,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M     34S 2cG (1972Jo10).                                                            
             33S(N,G) E=THERMAL--->P  P     34S  cG $E|g=1176.61 {I7}, |s=82 mb {I5} (2007ChZX: PGAA database).
  GAMMA------------------------------------ 34S   G 3304.029  29 87.1   9  E2                                               --- EG=3304.029   FL=0.0        JF=0+
-        34P B- DECAY (12.43 S)--->A  A     34S   G 3303.5      100                                                      N  *** EG=3303.5     FL=0.0        JF=0+
+        34P B- DECAY (12.43 S)--->A  A     34S   G 3303.5      100        E2                                            N  *** EG=3303.5     FL=0.0        JF=0+
     34CL EC+B+ DECAY (31.99 M)--->C  C     34S   G 3304        87.2    9  E2                                               *** EG=3304       FL=0          JF=0+
                 12C(24MG,34SG)--->G  G     34S   G 3304                                                                    *** EG=3304       FL=0.0        JF=0+
                 24MG(16O,A2PG)--->H  H     34S   G 3304.6    7 79      8  Q                                                *** EG=3304.6     FL=0.0        JF=0+
@@ -396,7 +396,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      *new XREF new tags    34S X L XREF=AB(?)GLMNPRWYZa
                      *new XREF old tags    34S X L XREF=AB(?)GLMNPRWYZa
                      #old XREF in Adopted  34S X L XREF=AB(3910?)GLMNPRWYZa
-        34P B- DECAY (12.43 S)--->A  A     34S   L 3914.4    11 0+                                                         *** possible JPI=(0+,1+,2+): logft=6.0(2) from 1+
+        34P B- DECAY (12.43 S)--->A  A     34S   L 3914.4    11 0+               1.12 PS   9                               *** possible JPI=(0,1,2): logft=6.0(2) from 1+
    34CL EC+B+ DECAY (1.5266 S)--->B  B(?)  34S   L 3910         0+                                                       ? *** possible JPI=(0,1,2,3,4): logft=4.0(GT) from 0+
                 12C(24MG,34SG)--->G  G     34S   L 3916         0+                                                        
     30SI(A,G),(A,N):RESONANCES--->L  L     34S   L 3916.408  21 0+                                                    A   
@@ -427,7 +427,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M(?)  34S   G 609.8       3       LT                                             M  ? *** EG=609.8      FL=3303.2     JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 612.16    5 0.33    4                                                   *** EG=612.16     FL=3304.213   JF=2+
  GAMMA------------------------------------ 34S   G 1787.3    8  100    10 [E2]                                             --- EG=1787.3     FL=2127.558   JF=2+
-        34P B- DECAY (12.43 S)--->A  A     34S   G 1787      1 100        E2                                               *** EG=1787       FL=2127.3     JF=2+
+        34P B- DECAY (12.43 S)--->A  A     34S   G 1787      1 100        [E2]                                             *** EG=1787       FL=2127.3     JF=2+
                 12C(24MG,34SG)--->G  G     34S   G 1788                                                                    *** EG=1788       FL=2128       JF=2+
                      31P(A,PG)--->M  M     34S   G 1786.0    8 100                                                         *** EG=1786.0     FL=2127.0     JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 1788.794  20 100    10                                                  *** EG=1788.794   FL=2127.564   JF=2+
@@ -442,9 +442,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      *new XREF new tags    34S X L XREF=AB(?)CGLMN(4085)PRWYac(4090*)
                      *new XREF old tags    34S X L XREF=AB(?)CGLMN(4085)PRWYac(4090*)
                      #old XREF in Adopted  34S X L XREF=AB(4070?)CGLMN(4085)PRWYac(4090*)
-        34P B- DECAY (12.43 S)--->A  A     34S   L 4074.1    11 1+                                                         *** possible JPI=0+,1+,2+: logft=5.4(1) from 1+
+        34P B- DECAY (12.43 S)--->A  A     34S   L 4074.1    11 1+               17 FS     LT                              *** possible JPI=0+,1+,2+: logft=5.4(1) from 1+
    34CL EC+B+ DECAY (1.5266 S)--->B  B(?)  34S   L 4070         1+                                                       ? *** possible JPI=(0,1,2,3,4): logft=4.5(GT) from 0+
-    34CL EC+B+ DECAY (31.99 M)--->C  C     34S   L 4074         1+                                                         *** possible JPI=0,1,2,3,4,5,6,7
+    34CL EC+B+ DECAY (31.99 M)--->C  C     34S   L 4074         1+                                                         *** possible JPI=(0+,1+,2+,3+,4+,5+,6+,7+)
                 12C(24MG,34SG)--->G  G     34S   L 4075         1+                                                        
     30SI(A,G),(A,N):RESONANCES--->L  L     34S   L 4074.667  14 1+                                                    A   
                      31P(A,PG)--->M  M     34S   L 4071.8    10 1+               17 FS     LT                             
@@ -480,7 +480,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M     34S  cG M,MR$from p|g(|q) in 1971Mu03.                                         
                      31P(A,PG)--->M  M     34S  cG $A{-2}=+0.28 {I2}, A{-4}=+0.01 {I2} (1971Mu03).
  GAMMA------------------------------------ 34S   G 1947.060  20 95     8  M1+E2    +1.3    +32-9                           --- EG=1947.060   FL=2127.558   JF=2+
-        34P B- DECAY (12.43 S)--->A  A     34S   G 1947.1    15 61     22 M1+E2    +1.3    +9-32                           *** EG=1947.1     FL=2127.3     JF=2+
+        34P B- DECAY (12.43 S)--->A  A     34S   G 1947.1    15 61     22 M1+E2    +1.3    +32-9                           *** EG=1947.1     FL=2127.3     JF=2+
                      31P(A,PG)--->M  M     34S   G 1945.5    13 100    8  M1+E2    +1.3    +32-9                           *** EG=1945.5     FL=2127.0     JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 1947.060  20 93     8                                                   *** EG=1947.060   FL=2127.564   JF=2+
         34P B- DECAY (12.43 S)--->A  A     34S 2 G %IG=0.041 +23-19                                                       
@@ -491,9 +491,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M     34S  cG $A{-2}=+0.03 {I2}, A{-4}=-0.02 {I2} from 4072 level 1948-2127 |g|g(|q) 
                      31P(A,PG)--->M  M     34S 2cG (1971Mu03).                                                            
             33S(N,G) E=THERMAL--->P  P     34S  cG $E|g=1947.0 {I5}, |s=13 mb {I8} (2007ChZX: PGAA database).
- GAMMA------------------------------------ 34S   G 4072.9    11 100    9  (M1)                                             --- EG=4072.9     FL=0.0        JF=0+
-        34P B- DECAY (12.43 S)--->A  A     34S   G 4073.4    15 100    13 D                                             N  *** EG=4073.4     FL=0.0        JF=0+
-    34CL EC+B+ DECAY (31.99 M)--->C  C     34S   G 4074        100        D                                                *** EG=4074       FL=0          JF=0+
+ GAMMA------------------------------------ 34S   G 4072.9    11 100    9  (M1)                   1.06E-3 2                 --- EG=4072.9     FL=0.0        JF=0+
+        34P B- DECAY (12.43 S)--->A  A     34S   G 4073.4    15 100    13 (M1)                                          N  *** EG=4073.4     FL=0.0        JF=0+
+    34CL EC+B+ DECAY (31.99 M)--->C  C     34S   G 4074        100        (M1)                                             *** EG=4074       FL=0          JF=0+
                 12C(24MG,34SG)--->G  G     34S   G 4075                                                                    *** EG=4075       FL=0.0        JF=0+
                      31P(A,PG)--->M  M     34S   G 4070.9    13 98     10 D                                                *** EG=4070.9     FL=0.0        JF=0+
             33S(N,G) E=THERMAL--->P  P     34S   G 4074.418  20 100    9                                                   *** EG=4074.418   FL=0.0        JF=0+
@@ -509,7 +509,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      *new XREF new tags    34S X L XREF=ACGMNPRVWYZac(4090*)
                      *new XREF old tags    34S X L XREF=ACGMNPRVWYZac(4090*)
                      #old XREF in Adopted  34S X L XREF=ACGMNPRVWYZac(4090*)
-        34P B- DECAY (12.43 S)--->A  A     34S   L 4114.5    9  2+                                                         *** possible JPI=0+,1+,2+: logft=4.9(1) from 1+
+        34P B- DECAY (12.43 S)--->A  A     34S   L 4114.5    9  2+               72 FS     7                               *** possible JPI=0+,1+,2+: logft=4.9(1) from 1+
     34CL EC+B+ DECAY (31.99 M)--->C  C     34S   L 4115      2  2+                                                         *** possible JPI=(2+,3+,4+): logft=5.1(10) from 3+
                 12C(24MG,34SG)--->G  G     34S   L 4115         2+                                                        
                      31P(A,PG)--->M  M     34S   L 4114.0    9  2+               72 FS     6                              
@@ -562,7 +562,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M     34S 2cG (1974Gr06).                                                            
                      31P(A,PG)--->M  M     34S  cG $A{-2}=-0.02 {I3}, A{-4}=+0.21 {I3} from 4114 level 1989-2127 |g|g(|q) 
                      31P(A,PG)--->M  M     34S 2cG (1971Mu03).                                                            
- GAMMA------------------------------------ 34S   G 4114.52   4  100.0  22 E2                                               --- EG=4114.52    FL=0.0        JF=0+
+ GAMMA------------------------------------ 34S   G 4114.52   4  100.0  22 E2                     1.21E-3 2                 --- EG=4114.52    FL=0.0        JF=0+
         34P B- DECAY (12.43 S)--->A  A     34S   G 4114.0    15 100    17 E2                                            N  *** EG=4114.0     FL=0.0        JF=0+
     34CL EC+B+ DECAY (31.99 M)--->C  C     34S   G 4115.0    20 100.0  22 E2                                               *** EG=4115.0     FL=0          JF=0+
                 12C(24MG,34SG)--->G  G     34S   G 4115                                                                    *** EG=4115       FL=0.0        JF=0+
@@ -577,11 +577,11 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M     34S  cG M$Q from p|g(|q) in 1971Mu03 and 1974Gr06. M2 ruled out by RUL.        
                      31P(A,PG)--->M  M     34S  cG $A{-2}=+0.60 {I2}, A{-4}=-1.00 {I2} (1971Mu03).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 4624.401  19 3-               85 FS     7                               --- possible JPI=NA: check contradicting data
+ LEVEL************************************ 34S   L 4624.401  19 3-               85 FS     7                          B    --- possible JPI=NA: check contradicting data
                      *new XREF new tags    34S X L XREF=AEGHJMNOPRVWYag
                      *new XREF old tags    34S X L XREF=AEGHJMNOPRVWYag
                      #old XREF in Adopted  34S X L XREF=AEGHJMNOPRVWYag
-        34P B- DECAY (12.43 S)--->A  A     34S   L 4622.2                                                                  *** possible JPI=(0,1,2,3,4,5,6)
+        34P B- DECAY (12.43 S)--->A  A     34S   L 4622.2       3-               85 FS     7                               *** possible JPI=(0-,1-,2-,3-,4-,5-)
                    3H(35CL,AG)--->E  E     34S   L 4622                                                                   
                 12C(24MG,34SG)--->G  G     34S   L 4625         3-                                                        
                 24MG(16O,A2PG)--->H  H     34S   L 4624.6    6  3-                                                    C   
@@ -617,7 +617,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M(?)  34S   G 709         9.2     LT                                             M  ? *** EG=709        FL=3913.0     JF=(0,1,2)
             33S(N,G) E=THERMAL--->P  P     34S   G 708.0       0.29    LT                                             B  ? *** EG=708.0      FL=3916.408   JF=0+
  GAMMA------------------------------------ 34S   G 1320.168  20 100    7  (E1(+M2))-0.03   5                          P    --- EG=1320.168   FL=3304.207   JF=2+
-        34P B- DECAY (12.43 S)--->A  A     34S   G 1318.5      100                                                         *** EG=1318.5     FL=3303.7     JF=
+        34P B- DECAY (12.43 S)--->A  A     34S   G 1318.5      100        (E1(+M2)) -0.03  5                               *** EG=1318.5     FL=3303.7     JF=2+
                    3H(35CL,AG)--->E  E     34S   G 1322                                                                    *** EG=1322       FL=3301       JF=
                 12C(24MG,34SG)--->G  G     34S   G 1320                   D                                                *** EG=1320       FL=3304       JF=2+
                 24MG(16O,A2PG)--->H  H     34S   G 1320.1    5 100     11 D                                                *** EG=1320.1     FL=3304.6     JF=2+
@@ -648,16 +648,16 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M     34S  cG $A{-2}=-0.32 {I2}, A{-4}=-0.04 {I2} (1971Mu03).
                      31P(A,PG)--->M  M     34S  cG $A{-2}=-0.09 {I10}, A{-4}=+0.23 {I12} from 6639 level 2017-2496        
                      31P(A,PG)--->M  M     34S 2cG |g|g(|q) (1972Jo10).                                                   
- GAMMA------------------------------------ 34S   G 4624.2    5  0.55   13 [E3]                                             --- EG=4624.2     FL=0.0        JF=0+
+ GAMMA------------------------------------ 34S   G 4624.2    5  0.55   13 [E3]                   1.08E-3 2                 --- EG=4624.2     FL=0.0        JF=0+
                      31P(A,PG)--->M  M(?)  34S   G 4622        1.3     LT                                                ? *** EG=4622       FL=0.0        JF=0+
             33S(N,G) E=THERMAL--->P  P     34S   G 4624.2    5 0.55    13 [E3]                                             *** EG=4624.2     FL=0.0        JF=0+
                      31P(A,PG)--->M  M(?)  34S  cG RI$<1 (1970Mo09), |<1 (1974Gr06).                                      
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 4688.96   5  4+               88 FS     7                               --- possible JPI=(4+): 2530.25g from 7219.28, 2+
+ LEVEL************************************ 34S   L 4688.96   5  4+               88 FS     7                          Z    --- possible JPI=(4+): 2530.25g from 7219.28, 2+
                      *new XREF new tags    34S X L XREF=ACEGHJMN(4690*)PRV(4688*)W(4689*)YZ(4690*)a(4690*)c(4710*)g
                      *new XREF old tags    34S X L XREF=ACEGHJMN(4690*)PRV(4688*)W(4689*)YZ(4690*)a(4690*)c(4710*)g
                      #old XREF in Adopted  34S X L XREF=ACEGHJMN(4690)PR(4688)V(4688)W(4689)YZ(4690)a(4690)c(4710)g
-        34P B- DECAY (12.43 S)--->A  A     34S   L 4687.5                                                                  *** possible JPI=(0,1,2,3,4+)
+        34P B- DECAY (12.43 S)--->A  A     34S   L 4687.5       4+               88 FS     7                               *** possible JPI=0+,1+,2+,3+,4+
     34CL EC+B+ DECAY (31.99 M)--->C  C     34S   L 4688         4+                                                         *** possible JPI=0(+),1(+),2(+),3(+),4(+),5(+),6(+): logft=5.4(GT) from 3+
                    3H(35CL,AG)--->E  E     34S   L 4685                                                                   
                 12C(24MG,34SG)--->G  G     34S   L 4689         4+                                                        
@@ -695,12 +695,12 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 34S   G 775         7       LT                                             M  ?
                      31P(A,PG)--->M  M     34S   G 775         7       LT                                             M  ? *** EG=775        FL=3913.0     JF=(0,1,2)
  GAMMA------------------------------------ 34S   G 1384.5    14 0.44   30 [E2]                                        M    --- EG=1384.5     FL=3304.207   JF=2+
-    34CL EC+B+ DECAY (31.99 M)--->C  C     34S   G 1384        27      LT                                                  *** EG=1384       FL=3304       JF=2+
+    34CL EC+B+ DECAY (31.99 M)--->C  C     34S   G 1384        27      LT [E2]                                             *** EG=1384       FL=3304       JF=2+
                 24MG(16O,A2PG)--->H  H     34S   G 1384.5    14 0.44   30                                                  *** EG=1384.5     FL=3304.6     JF=2+
                      31P(A,PG)--->M  M(?)  34S   G 1384.4      2       LT                                             M  ? *** EG=1384.4     FL=3303.2     JF=2+
     34CL EC+B+ DECAY (31.99 M)--->C  C     34S 2 G %IG LT 0.0089                                                          
  GAMMA------------------------------------ 34S   G 2561.35   6  100    9  E2                                               --- EG=2561.35    FL=2127.558   JF=2+
-        34P B- DECAY (12.43 S)--->A  A     34S   G 2560.0      100                                                         *** EG=2560.0     FL=2127.3     JF=2+
+        34P B- DECAY (12.43 S)--->A  A     34S   G 2560.0      100        E2                                               *** EG=2560.0     FL=2127.3     JF=2+
     34CL EC+B+ DECAY (31.99 M)--->C  C     34S   G 2561        100     9  E2                                               *** EG=2561       FL=2128       JF=2+
                    3H(35CL,AG)--->E  E     34S   G 2559                                                                    *** EG=2559       FL=2126       JF=
                 12C(24MG,34SG)--->G  G     34S   G 2561                   Q                                                *** EG=2561       FL=2128       JF=2+
@@ -755,7 +755,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      *new XREF new tags    34S X L XREF=ACGHMPW(4882*)a(4880*)c(4900*)g
                      *new XREF old tags    34S X L XREF=ACGHMPW(4882*)a(4880*)c(4900*)g
                      #old XREF in Adopted  34S X L XREF=ACGHMPR(4874)a(4880)g
-        34P B- DECAY (12.43 S)--->A  A     34S   L 4875.2                                                                  *** possible JPI=(0,1,2,3,4,5,6)
+        34P B- DECAY (12.43 S)--->A  A     34S   L 4875.2       3+               40 FS     15                              *** possible JPI=0+,1+,2+,3+,4+,5+
     34CL EC+B+ DECAY (31.99 M)--->C  C     34S   L 4877         3+                                                         *** possible JPI=2(+),3(+),4(+): logft=5.2(1) from 3+
                 12C(24MG,34SG)--->G  G     34S   L 4877         3+                                                        
                 24MG(16O,A2PG)--->H  H     34S   L 4877.0    6  3+                                                        
@@ -792,7 +792,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M(?)  34S   G 962         13      LT                                             M  ? *** EG=962        FL=3913.0     JF=(0,1,2)
             33S(N,G) E=THERMAL--->P  P     34S   G 960.4       1.1     LT                                             B  ? *** EG=960.4      FL=3916.408   JF=0+
  GAMMA------------------------------------ 34S   G 1572.56   5  70     8  M1+E2    -0.09   4                               --- EG=1572.56    FL=3304.207   JF=2+
-        34P B- DECAY (12.43 S)--->A  A     34S   G 1571.5      100                                                         *** EG=1571.5     FL=3303.7     JF=
+        34P B- DECAY (12.43 S)--->A  A     34S   G 1571.5      100        M1+E2    -0.09   4                               *** EG=1571.5     FL=3303.7     JF=2+
     34CL EC+B+ DECAY (31.99 M)--->C  C     34S   G 1573        71      23 M1+E2    -0.09   4                               *** EG=1573       FL=3304       JF=2+
                 12C(24MG,34SG)--->G  G     34S   G 1573                                                                    *** EG=1573       FL=3304       JF=2+
                 24MG(16O,A2PG)--->H  H     34S   G 1572.5    5 89      20                                                  *** EG=1572.5     FL=3304.6     JF=2+
@@ -829,7 +829,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      *new XREF new tags    34S X L XREF=ACGMNPRW(4882*)Z(4890*)ac(4900*)
                      *new XREF old tags    34S X L XREF=ACGMNPRW(4882*)Z(4890*)ac(4900*)
                      #old XREF in Adopted  34S X L XREF=ACGMNPRW(4882)Z(4890)ac(4900)
-        34P B- DECAY (12.43 S)--->A  A     34S   L 4891                                                                    *** possible JPI=(0,1,2,3,4+)
+        34P B- DECAY (12.43 S)--->A  A     34S   L 4891         2+               36 FS     10                              *** possible JPI=0+,1+,2+,3+,4+
     34CL EC+B+ DECAY (31.99 M)--->C  C     34S   L 4890         2+                                                         *** possible JPI=(0+,1+,2+,3+,4+,5+,6+): logft=5.7(GT) from 3+
                 12C(24MG,34SG)--->G  G     34S   L 4890         2+                                                        
                      31P(A,PG)--->M  M     34S   L 4891.1    30 2+               36 FS     10                             
@@ -869,7 +869,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M(?)  34S   G 978         43      LT                                             M  ? *** EG=978        FL=3913.0     JF=(0,1,2)
             33S(N,G) E=THERMAL--->P  P     34S   G 973.3       1.7     LT                                             B  ? *** EG=973.3      FL=3916.408   JF=0+
  GAMMA------------------------------------ 34S   G 1585.510  20 96     24 [M1,E2]                                     P    --- EG=1585.510   FL=3304.207   JF=2+
-    34CL EC+B+ DECAY (31.99 M)--->C  C     34S   G 1586        100     LT                                                  *** EG=1586       FL=3304       JF=2+
+    34CL EC+B+ DECAY (31.99 M)--->C  C     34S   G 1586        100     LT [M1,E2]                                          *** EG=1586       FL=3304       JF=2+
                 12C(24MG,34SG)--->G  G     34S   G 1586                                                                    *** EG=1586       FL=3304       JF=2+
                      31P(A,PG)--->M  M     34S   G 1587.9      96      24                                                  *** EG=1587.9     FL=3303.2     JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 1585.510  20 84     8                                                   *** EG=1585.510   FL=3304.213   JF=2+
@@ -877,13 +877,13 @@ Note: 1. possible JPI presented at the end of each record line of each individua
     34CL EC+B+ DECAY (31.99 M)--->C  C     34S  cG RI$other: <0.015 (1975Va02).                                           
                      31P(A,PG)--->M  M     34S  cG RI$weighted average of 36 {I11} (1970Mo09) and 59 {I10} (1970Gr11).    
  GAMMA------------------------------------ 34S   G 2762.10   8  71     LT [M1,E2]                                     P    --- EG=2762.10    FL=2127.558   JF=2+
-    34CL EC+B+ DECAY (31.99 M)--->C  C     34S   G 2762        61      LT                                                  *** EG=2762       FL=2128       JF=2+
+    34CL EC+B+ DECAY (31.99 M)--->C  C     34S   G 2762        61      LT [M1,E2]                                          *** EG=2762       FL=2128       JF=2+
                 12C(24MG,34SG)--->G  G     34S   G 2762                                                                    *** EG=2762       FL=2128       JF=2+
                      31P(A,PG)--->M  M(?)  34S   G 2764.0      71      LT                                             M  ? *** EG=2764.0     FL=2127.0     JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 2762.10   8 100     10                                                  *** EG=2762.10    FL=2127.564   JF=2+
     34CL EC+B+ DECAY (31.99 M)--->C  C     34S 2 G %IG LT 0.0047                                                          
- GAMMA------------------------------------ 34S   G 4889.30   8  100    24 E2                                          P    --- EG=4889.30    FL=0.0        JF=0+
-        34P B- DECAY (12.43 S)--->A  A     34S   G 4891        100                                                      N  *** EG=4891       FL=0.0        JF=0+
+ GAMMA------------------------------------ 34S   G 4889.30   8  100    24 E2                     1.46E-3 2            P    --- EG=4889.30    FL=0.0        JF=0+
+        34P B- DECAY (12.43 S)--->A  A     34S   G 4891        100        E2                                            N  *** EG=4891       FL=0.0        JF=0+
     34CL EC+B+ DECAY (31.99 M)--->C  C     34S   G 4889        8.3     LT E2                                               *** EG=4889       FL=0          JF=0+
                 12C(24MG,34SG)--->G  G     34S   G 4890                                                                    *** EG=4890       FL=0.0        JF=0+
                      31P(A,PG)--->M  M     34S   G 4890.7      100     24 E2                                               *** EG=4890.7     FL=0.0        JF=0+
@@ -1039,7 +1039,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M     34S  cG RI$from 1971Mu03.                                                      
                      31P(A,PG)--->M  M     34S  cG M,MR$D+Q with -2.1|<|d|<-0.1 (1971Mu03). M2 ruled out by RUL.          
                      31P(A,PG)--->M  M     34S  cG $A{-2}=+0.04 {I3}, A{-4}=+0.02 {I3} (1971Mu03).
- GAMMA------------------------------------ 34S   G 5380.59   9  53     5  (M1)                                             --- EG=5380.59    FL=0.0        JF=0+
+ GAMMA------------------------------------ 34S   G 5380.59   9  53     5  (M1)                   1.44E-3 2                 --- EG=5380.59    FL=0.0        JF=0+
                      31P(A,PG)--->M  M     34S   G 5382        61      13 D                                                *** EG=5382       FL=0.0        JF=0+
             33S(N,G) E=THERMAL--->P  P     34S   G 5380.59   9 52      5                                                   *** EG=5380.59    FL=0.0        JF=0+
                      31P(A,PG)--->M  M     34S  cG RI,M$from 1971Mu03.                                                    
@@ -1107,7 +1107,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(D,P)--->R  R     34S  cL E$other: 5680 (1971Va21).                                              
                       33S(D,P)--->R  R     34S  cL L$1(+3) (1971Va21).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 5690.61   27 5-               36.9 PS   17                              --- possible JPI=(5-)
+ LEVEL************************************ 34S   L 5690.61   27 5-               36.9 PS   17                         B    --- possible JPI=(5-)
                      *new XREF new tags    34S X L XREF=EHJMN(5679)O(5690*)RWZ(5690*)g
                      *new XREF old tags    34S X L XREF=EHJMN(5679)O(5690*)RWZ(5690*)g
                      #old XREF in Adopted  34S X L XREF=EHJMN(5679)O(5690)RWZ(5690)g
@@ -1250,10 +1250,10 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 34S   G 1922.92   22 100    18 [M1,E2]                                          --- EG=1922.92    FL=4074.657   JF=1+
                      31P(A,PG)--->M  M     34S   G 1921        36      15                                                  *** EG=1921       FL=4071.8     JF=1+
             33S(N,G) E=THERMAL--->P  P     34S   G 1922.92   22 100    18                                                  *** EG=1922.92    FL=4074.667   JF=1+
- GAMMA------------------------------------ 34S   G 3870.51   31 92     13 [M1,E2]                                          --- EG=3870.51    FL=2127.558   JF=2+
+ GAMMA------------------------------------ 34S   G 3870.51   31 92     13 [M1,E2]                0.00106 7                 --- EG=3870.51    FL=2127.558   JF=2+
                      31P(A,PG)--->M  M     34S   G 3866        46      15                                                  *** EG=3866       FL=2127.0     JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 3870.51   31 92     13                                                  *** EG=3870.51    FL=2127.564   JF=2+
- GAMMA------------------------------------ 34S   G 5997.30   31 56     10 E2                                               --- EG=5997.30    FL=0.0        JF=0+
+ GAMMA------------------------------------ 34S   G 5997.30   31 56     10 E2                     1.74E-3 2                 --- EG=5997.30    FL=0.0        JF=0+
                      31P(A,PG)--->M  M     34S   G 5992        100     18 E2                                               *** EG=5992       FL=0.0        JF=0+
             33S(N,G) E=THERMAL--->P  P     34S   G 5997.30   31 56     10                                                  *** EG=5997.30    FL=0.0        JF=0+
                      31P(A,PG)--->M  M     34S  cG M$Q from p|g(|q) in 1972Jo10. M2 ruled out by RUL.                     
@@ -1278,7 +1278,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
             33S(N,G) E=THERMAL--->P  P     34S   G 2817.76   25 336    52                                             &    *** EG=2817.76    FL=3304.213   JF=2+
                      31P(A,PG)--->M  M     34S  cG M,MR$-0.09 {I4} for J{-i}=2 (1972Jo10).
                      31P(A,PG)--->M  M     34S  cG $A{-2}=+0.38 {I5}, A{-4}=+0.06 {I6} (1972Jo10).
- GAMMA------------------------------------ 34S   G 3994.8    8  22     9  [M1,E2]                                     P    --- EG=3994.8     FL=2127.558   JF=2+
+ GAMMA------------------------------------ 34S   G 3994.8    8  22     9  [M1,E2]                0.00110 7            P    --- EG=3994.8     FL=2127.558   JF=2+
                      31P(A,PG)--->M  M     34S   G 3993        22      9                                                   *** EG=3993       FL=2127.0     JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 3994.8    8 100     28                                                  *** EG=3994.8     FL=2127.564   JF=2+
                      31P(A,PG)--->M  M     34S  cG $A{-2}=+0.05 {I5}, A{-4}=-0.07 {I6} (1972Jo10).
@@ -1339,23 +1339,23 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(D,P)--->R  R     34S  cL E$weighted average of 6174 {I8} (1972Cr08) and 6173 {I10} (1963Br05).
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34S   L 6251.23   19 4+                                                        
-                     *new XREF new tags    34S X L XREF=H(*)M(6251*)N(6256*)PW(6248*)a(6250*)c(6220)g(*)
-                     *new XREF old tags    34S X L XREF=H(*)M(6251*)N(6256*)PW(6248*)a(6250*)c(6220)g(*)
+                     *new XREF new tags    34S X L XREF=H(*)M(6251*)N(6256*)PW(6248*)a(6250*)c(6220*)g(*)
+                     *new XREF old tags    34S X L XREF=H(*)M(6251*)N(6256*)PW(6248*)a(6250*)c(6220*)g(*)
                 24MG(16O,A2PG)--->H  H(*)  34S   L 6251.6    5  4-                                                    B   
                      31P(A,PG)--->M  M(*)  34S   L 6251      2  4+               0.42 PS   +49-21                     Z   
                       32S(T,P)--->N  N(*)  34S   L 6256      14                                                            *** possible JPI=(0+,1-,2+,3-,4+,5-,6+)
             33S(N,G) E=THERMAL--->P  P     34S   L 6251.23   19 4+                                                        
     34S(P,P),(P,P'),(POL P,P')--->W  W(*)  34S   L 6248      18                                                       M    *** possible JPI=(0,1,2,3,4,5,6,7+)
                      35CL(G,P)--->a  a(*)  34S   L 6250                                                                   
-                   35CL(D,3HE)--->c  c     34S   L 6220      50                                  2        0.24             *** possible JPI=0+,1+,2+,3+,4+
+                   35CL(D,3HE)--->c  c(*)  34S   L 6220      50                                  2        0.24             *** possible JPI=0+,1+,2+,3+,4+
                208PB(36S,34SG)--->g  g(*)  34S   L 6251.7    19 (4-)                                                      
                      31P(A,PG)--->M  M(*)  34S  cL E$other: 6250 (1972Jo10).
                      31P(A,PG)--->M  M(*)  34S  cL J$spin=4 from p|g(|q) in 1972Jo10. Other: 4-,(3-) from 1977GrZH. |p=+  
                      31P(A,PG)--->M  M(*)  34S 2cL from 1376|g, M1+E2 to 3+, 4875.2 level.                                
                      31P(A,PG)--->M  M(*)  34S  cL T$lifetime |t=390 fs {I+70-40} (1972Jo10, DSAM). Other: |t=600 fs      
                      31P(A,PG)--->M  M(*)  34S 2cL {I+700-300} (1977GrZH, DSAM).                                          
-                   35CL(D,3HE)--->c  c     34S  cL L,S$from 1968Wi20. Other: L=(2), S=(0.5) (1969Pu03).
-                   35CL(D,3HE)--->c  c     34S  cL $Pickup proton: d{-5/2} (1969Pu03).
+                   35CL(D,3HE)--->c  c(*)  34S  cL L,S$from 1968Wi20. Other: L=(2), S=(0.5) (1969Pu03).
+                   35CL(D,3HE)--->c  c(*)  34S  cL $Pickup proton: d{-5/2} (1969Pu03).
  GAMMA------------------------------------ 34S   G 1374.34   20 46     10                                                 
                 24MG(16O,A2PG)--->H  H(*)  34S   G 1375.0    5 97      21                                                  *** EG=1375.0     FL=4877.0     JF=3+
                      31P(A,PG)--->M  M(*)  34S   G 1376        100     18 M1+E2    -3.7    +7-26                           *** EG=1376       FL=4875.2     JF=3+
@@ -1368,9 +1368,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
             33S(N,G) E=THERMAL--->P  P     34S   G 1562.3    5 100     25                                                  *** EG=1562.3     FL=4688.97    JF=4+
                208PB(36S,34SG)--->g  g(*)  34S   G 1562      1 100                                                         *** EG=1562       FL=4689.7     JF=(4+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 6251.72   7  4-               0.42 PS   +49-21                          --- possible JPI=NA: check contradicting data
-                     *new XREF new tags    34S X L XREF=H(*)M(6251*)N(6256*)PRW(6248*)a(6250*)g(*)
-                     *new XREF old tags    34S X L XREF=H(*)M(6251*)N(6256*)PRW(6248*)a(6250*)g(*)
+ LEVEL************************************ 34S   L 6251.72   7  (3,4)            0.42 PS   +49-21                     C    --- possible JPI=NA: check contradicting data
+                     *new XREF new tags    34S X L XREF=H(*)M(6251*)N(6256*)PRW(6248*)a(6250*)c(6220*)g(*)
+                     *new XREF old tags    34S X L XREF=H(*)M(6251*)N(6256*)PRW(6248*)a(6250*)c(6220*)g(*)
                      #old XREF in Adopted  34S X L XREF=HM(6251)N(6256)PR(6254)W(6248)a(6250)c(6220)g
                 24MG(16O,A2PG)--->H  H(*)  34S   L 6251.6    5  4-                                                    B   
                      31P(A,PG)--->M  M(*)  34S   L 6251      2  4+               0.42 PS   +49-21                     Z   
@@ -1379,6 +1379,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       33S(D,P)--->R  R     34S   L 6254      8                                   3        2.28             *** possible JPI=1-,2-,3-,4-,5-
     34S(P,P),(P,P'),(POL P,P')--->W  W(*)  34S   L 6248      18                                                       M    *** possible JPI=(0,1,2,3,4,5,6,7+)
                      35CL(G,P)--->a  a(*)  34S   L 6250                                                                   
+                   35CL(D,3HE)--->c  c(*)  34S   L 6220      50                                  2        0.24             *** possible JPI=0+,1+,2+,3+,4+
                208PB(36S,34SG)--->g  g(*)  34S   L 6251.7    19 (4-)                                                      
                      31P(A,PG)--->M  M(*)  34S  cL E$other: 6250 (1972Jo10).
                      31P(A,PG)--->M  M(*)  34S  cL J$spin=4 from p|g(|q) in 1972Jo10. Other: 4-,(3-) from 1977GrZH. |p=+  
@@ -1386,6 +1387,8 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M(*)  34S  cL T$lifetime |t=390 fs {I+70-40} (1972Jo10, DSAM). Other: |t=600 fs      
                      31P(A,PG)--->M  M(*)  34S 2cL {I+700-300} (1977GrZH, DSAM).                                          
                       33S(D,P)--->R  R     34S  cL E$weighted average of 6256 {I8} (1972Cr08) and 6251 {I10} (1963Br05).
+                   35CL(D,3HE)--->c  c(*)  34S  cL L,S$from 1968Wi20. Other: L=(2), S=(0.5) (1969Pu03).
+                   35CL(D,3HE)--->c  c(*)  34S  cL $Pickup proton: d{-5/2} (1969Pu03).
  GAMMA------------------------------------ 34S   G 572.0     1  28     14 D                                           M    --- EG=572.0      FL=5679.925   JF=2+
                 24MG(16O,A2PG)--->H  H(*)  34S   G 572.0     1 28      14 D                                                *** EG=572.0      FL=5679.6     JF=3-
             33S(N,G) E=THERMAL--->P  P     34S   G 571.7     6 42      16                                                  *** EG=571.7      FL=5679.928   JF=3-
@@ -1395,7 +1398,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M(*)  34S   G 1376        100     18 M1+E2    -3.7    +7-26                           *** EG=1376       FL=4875.2     JF=3+
                      31P(A,PG)--->M  M(*)  34S  cG M,MR$D+Q from 1972Jo10. M2 ruled out by RUL.                           
                      31P(A,PG)--->M  M(*)  34S  cG $A{-2}=-0.44 {I6}, A{-4}=+0.63 {I8} (1972Jo10).
- GAMMA------------------------------------ 34S   G 1562.4    5  100    21 [E1,M2]                                     M    --- EG=1562.4     FL=4688.96    JF=4+
+ GAMMA------------------------------------ 34S   G 1562.4    5  100    21                                             M    --- EG=1562.4     FL=4688.96    JF=4+
                 24MG(16O,A2PG)--->H  H(*)  34S   G 1562.5    5 100     21                                                  *** EG=1562.5     FL=4689.2     JF=4+
                      31P(A,PG)--->M  M(*)  34S   G 1563        75      18                                                  *** EG=1563       FL=4687.6     JF=4+
                208PB(36S,34SG)--->g  g(*)  34S   G 1562      1 100                                                         *** EG=1562       FL=4689.7     JF=(4+)
@@ -1416,7 +1419,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M     34S  cL T$lifetime |t<36 fs (1972Jo10, DSAM).                                  
                       32S(T,P)--->N  N     34S  cL $d{-3/2},p{-3/2}. N=6.38, 5.76.                                        
                       33S(D,P)--->R  R     34S  cL E$weighted average of 6346 {I8} (1972Cr08) and 6344 {I10} (1963Br05).
- GAMMA------------------------------------ 34S   G 3038.18   32 100    14 (E1(+M2))-0.55   65                              --- EG=3038.18    FL=3304.207   JF=2+
+ GAMMA------------------------------------ 34S   G 3038.18   32 100    14 (E1(+M2))-0.55   65    0.0010828                 --- EG=3038.18    FL=3304.207   JF=2+
                      31P(A,PG)--->M  M     34S   G 3044        100     14 D(+Q)    -0.55   65                              *** EG=3044       FL=3303.2     JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 3038.18   32 100    14                                                  *** EG=3038.18    FL=3304.213   JF=2+
                      31P(A,PG)--->M  M     34S  cG M,MR$-1.2|<|d|<-0.1 from 1972Jo10.                                     
@@ -1564,7 +1567,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M     34S   G 2043        36      13                                                  *** EG=2043       FL=4687.6     JF=4+
  GAMMA------------------------------------ 34S   G 3438         36     13 [M1,E2]                                     P    --- EG=3438       FL=3304.207   JF=2+
                      31P(A,PG)--->M  M     34S   G 3428        36      13                                                  *** EG=3428       FL=3303.2     JF=2+
- GAMMA------------------------------------ 34S   G 4614         100    9  [M1,E2]                                     P    --- EG=4614       FL=2127.558   JF=2+
+ GAMMA------------------------------------ 34S   G 4614         100    9  [M1,E2]                0.00130 8            P    --- EG=4614       FL=2127.558   JF=2+
                      31P(A,PG)--->M  M     34S   G 4604        100     9                                                   *** EG=4604       FL=2127.0     JF=2+
                      31P(A,PG)--->M  M     34S  cG M,MR$D+Q with |d=+1.8 {I3} for J{-i}=2 or Q(+O) with |d=0.00 {I3} for  
                      31P(A,PG)--->M  M     34S 2cG J{-i}=4 (1972Jo10).                                                    
@@ -1642,7 +1645,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      31P(A,PG)--->M  M     34S  cG M,MR$D+Q with |d=+2.2 {I5} or Q(+O) with |d=0.00 {I4} (1972Jo10).      
                      31P(A,PG)--->M  M     34S  cG $A{-2}=+0.50 {I5}, A{-4}=-0.25 {I7} (1972Jo10).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 6890      1  (3,4)+           14 FS     LT                              --- possible JPI=(0+,2+,4+)
+ LEVEL************************************ 34S   L 6890      1  (3,4)+           14 FS     LT                              --- possible JPI=(0,2,4)+
                      *new XREF new tags    34S X L XREF=MNWc(6910)
                      *new XREF old tags    34S X L XREF=MNWc(6910)
                      #old XREF in Adopted  34S X L XREF=MNWc(6910)
@@ -1698,7 +1701,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
             33S(N,G) E=THERMAL--->P  P     34S   G 281.34    24 0.46   16                                                  *** EG=281.34     FL=6828.83    JF=2+
  GAMMA------------------------------------ 34S   G 941.59    6  8.2    10                                                  --- EG=941.59     FL=6168.857   JF=3+
             33S(N,G) E=THERMAL--->P  P     34S   G 941.59    6 8.2     10                                                  *** EG=941.59     FL=6168.862   JF=3-
- GAMMA------------------------------------ 34S   G 989.1     3  1.6    5                                              &    --- EG=989.1      FL=6121.55    JF=2+
+ GAMMA------------------------------------ 34S   G 989.1     3  2.1    LT                                             &    --- EG=989.1      FL=6121.55    JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 989.1     3 1.6     5                                              &    *** EG=989.1      FL=6121.56    JF=2+
  GAMMA------------------------------------ 34S   G 2233.49   4  100    10                                                  --- EG=2233.49    FL=4876.839   JF=3+
             33S(N,G) E=THERMAL--->P  P     34S   G 2233.49   4 100     10                                                  *** EG=2233.49    FL=4876.842   JF=3+
@@ -1722,9 +1725,9 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       32S(T,P)--->N  N(*)  34S  cL $Possible doublet in 1978Cr01.                                         
                    35CL(D,3HE)--->c  c     34S  cL L,S$from 1968Wi20. E(level) is quoted by 1968Wi20 from 1967En05.       
                    35CL(D,3HE)--->c  c     34S  cL $Pickup proton: d{-5/2} (1968Wi20).
- GAMMA------------------------------------ 34S   G 3807         39     11 [M1,E2]                                     P    --- EG=3807       FL=3304.207   JF=2+
+ GAMMA------------------------------------ 34S   G 3807         39     11 [M1,E2]                0.00104 7            P    --- EG=3807       FL=3304.207   JF=2+
                      31P(A,PG)--->M  M     34S   G 3809        39      11                                                  *** EG=3809       FL=3303.2     JF=2+
- GAMMA------------------------------------ 34S   G 4983         100    11 (M1+E2)  +0.27   +19-15                     P    --- EG=4983       FL=2127.558   JF=2+
+ GAMMA------------------------------------ 34S   G 4983         100    11 (M1+E2)  +0.27   +19-151.34E-3 3            P    --- EG=4983       FL=2127.558   JF=2+
                      31P(A,PG)--->M  M     34S   G 4985        100     11 D+Q      +0.27   +19-15                          *** EG=4985       FL=2127.0     JF=2+
                      31P(A,PG)--->M  M     34S  cG M,MR$or +1.2 {I+7-4} from p|g(|q) in 1972Jo10.                         
                      31P(A,PG)--->M  M     34S  cG $A{-2}=+0.64 {I3}, A{-4}=-0.04 {I3} (1972Jo10).
@@ -1864,7 +1867,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
             33S(N,G) E=THERMAL--->P  P     34S   L 7467.74   10 (0+,1,2)                                                  
     34S(P,P),(P,P'),(POL P,P')--->W  W     34S   L 7479      5                                                             *** possible JPI=(0,1,2,3,4,5,6,7+)
     34S(P,P),(P,P'),(POL P,P')--->W  W     34S  cL E$other: 7479 {I14} (1968Mo22).                                        
- GAMMA------------------------------------ 34S   G 989.1     3  5.0    15                                             &    --- EG=989.1      FL=6478.765   JF=1-
+ GAMMA------------------------------------ 34S   G 989.1     3  6.5    LT                                             &    --- EG=989.1      FL=6478.765   JF=1-
             33S(N,G) E=THERMAL--->P  P     34S   G 989.1     3 5.0     15                                             &    *** EG=989.1      FL=6478.770   JF=1-
  GAMMA------------------------------------ 34S   G 1469.67   24 14.7   26                                                  --- EG=1469.67    FL=5998.10    JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 1469.67   24 14.7   26                                                  *** EG=1469.67    FL=5998.10    JF=2+
@@ -1906,20 +1909,20 @@ Note: 1. possible JPI presented at the end of each record line of each individua
             33S(N,G) E=THERMAL--->P  P     34S   G 2401.7      1.0     LT                                             B  ? *** EG=2401.7     FL=5228.175   JF=0+
  GAMMA------------------------------------ 34S   G 2740.2      1.4     LT                                             B  ?
             33S(N,G) E=THERMAL--->P  P     34S   G 2740.2      1.4     LT                                             B  ? *** EG=2740.2     FL=4889.76    JF=2+
- GAMMA------------------------------------ 34S   G 2940.42   31 8.3    12 [E1]                                             --- EG=2940.42    FL=4688.96    JF=4+
+ GAMMA------------------------------------ 34S   G 2940.42   31 8.3    12 [E1]                   1.22E-3 2                 --- EG=2940.42    FL=4688.96    JF=4+
             33S(N,G) E=THERMAL--->P  P     34S   G 2940.42   31 8.3    12                                                  *** EG=2940.42    FL=4688.97    JF=4+
  GAMMA------------------------------------ 34S   G 3005.39   5  79     8  [M1,E2]                                          --- EG=3005.39    FL=4624.401   JF=3-
             33S(N,G) E=THERMAL--->P  P     34S   G 3005.39   5 79      8                                                   *** EG=3005.39    FL=4624.404   JF=3-
- GAMMA------------------------------------ 34S   G 3515.07   11 11.3   13 [E1]                                             --- EG=3515.07    FL=4114.810   JF=2+
+ GAMMA------------------------------------ 34S   G 3515.07   11 11.3   13 [E1]                   1.49E-3 2                 --- EG=3515.07    FL=4114.810   JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 3515.07   11 11.3   13                                                  *** EG=3515.07    FL=4114.81    JF=2+
  GAMMA------------------------------------ 34S   G 3713.5      1.4     LT                                             B  ?
             33S(N,G) E=THERMAL--->P  P     34S   G 3713.5      1.4     LT                                             B  ? *** EG=3713.5     FL=3916.408   JF=0+
- GAMMA------------------------------------ 34S   G 4325.397  30 100    10 [E1]                                             --- EG=4325.397   FL=3304.207   JF=2+
+ GAMMA------------------------------------ 34S   G 4325.397  30 100    10 [E1]                   1.81E-3 3                 --- EG=4325.397   FL=3304.207   JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 4325.397  30 100    10                                                  *** EG=4325.397   FL=3304.213   JF=2+
  GAMMA------------------------------------ 34S   G 7629.9      2.6     LT                                             B  ?
             33S(N,G) E=THERMAL--->P  P     34S   G 7629.9      2.6     LT                                             B  ? *** EG=7629.9     FL=0.0        JF=0+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 7655      11 (-)                                                        --- possible JPI=3-
+ LEVEL************************************ 34S   L 7655      11 (1-,2-,3-,4-,5-)                                           --- possible JPI=3-
                      *new XREF new tags    34S X L XREF=M(7629*)N(7621*)R(7632*)W(7649*)
                      *new XREF old tags    34S X L XREF=M(7629*)N(7621*)R(7632*)W(7649*)
                      #old XREF in Adopted  34S X L XREF=NRW
@@ -1960,7 +1963,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                       32S(T,P)--->N  N     34S  cL $(f{-7/2}){+2}. N=4.75, 5.15. (p{-3/2}){+2}. N=0.48, 0.39.             
                    35CL(D,3HE)--->c  c(*)  34S  cL $Pickup proton: d{-5/2} (1969Pu03).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 7753      11 0-,1-,2-,3-                                                --- possible JPI=(1-,3-)
+ LEVEL************************************ 34S   L 7753      11 0-,1-,2-,3-                                                --- possible JPI=(1,3)-
                      *new XREF new tags    34S X L XREF=N(7714*)RW(7732*)
                      *new XREF old tags    34S X L XREF=N(7714*)RW(7732*)
                      #old XREF in Adopted  34S X L XREF=R
@@ -1984,7 +1987,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
             33S(N,G) E=THERMAL--->P  P     34S   G 7780.22   10 100    13                                                  *** EG=7780.22    FL=0.0        JF=0+
           34S(G,G'),(POL G,G')--->S  S     34S   G 7780                                                                    *** EG=7780       FL=0.0        JF=0+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 7790.8    4  6-               97 FS     24                              --- possible JPI=(4-,6-)
+ LEVEL************************************ 34S   L 7790.8    4  (6)-             97 FS     24                         C    --- possible JPI=(4-,6-)
                      *new XREF new tags    34S X L XREF=HMW(7779*)g
                      *new XREF old tags    34S X L XREF=HMW(7779*)g
                      #old XREF in Adopted  34S X L XREF=HMg
@@ -1995,7 +1998,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                 24MG(16O,A2PG)--->H  H     34S  cL T$|t=190 fs {I50} (2005Ma03, DSAM).
                      31P(A,PG)--->M  M     34S  cL J$6- from 1977GrZH.                                                    
                      31P(A,PG)--->M  M     34S  cL T$lifetime |t=115 fs {I35} (1977GrZH, DSAM).                           
- GAMMA------------------------------------ 34S   G 1539.7    5  19     4  E2                                          M    --- EG=1539.7     FL=6251.72    JF=4-
+ GAMMA------------------------------------ 34S   G 1539.7    5  19     4  E2                                          M    --- EG=1539.7     FL=6251.72    JF=(3,4)
                 24MG(16O,A2PG)--->H  H     34S   G 1539.6    5 19      4  Q                                                *** EG=1539.6     FL=6251.6     JF=4-
                208PB(36S,34SG)--->g  g     34S   G 1540      1 100                                                         *** EG=1540       FL=6251.7     JF=(4-)
                 24MG(16O,A2PG)--->H  H     34S  cG M$E2 based on RUL. A{-2}=+0.29 {I4}, A{-4}=-0.18 {I6}.                 
@@ -2063,7 +2066,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      #old XREF in Adopted  34S X L XREF=PR(8142)
             33S(N,G) E=THERMAL--->P  P     34S   L 8138.08   7  (1)-                                                      
                       33S(D,P)--->R  R     34S   L 8142      12                                  1        1.04        C    *** possible JPI=0-,1-,2-,3-
- GAMMA------------------------------------ 34S   G 1795.3    3  14     4                                              &    --- EG=1795.3     FL=6342.51    JF=1-
+ GAMMA------------------------------------ 34S   G 1795.3    3  18     LT                                             &    --- EG=1795.3     FL=6342.51    JF=1-
             33S(N,G) E=THERMAL--->P  P     34S   G 1795.3    3 14      4                                              &    *** EG=1795.3     FL=6342.52    JF=1-
  GAMMA------------------------------------ 34S   G 2290.26   15 19     4                                                   --- EG=2290.26    FL=5847.517   JF=0+
             33S(N,G) E=THERMAL--->P  P     34S   G 2290.26   15 19     4                                                   *** EG=2290.26    FL=5847.524   JF=0+
@@ -2077,7 +2080,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      *new XREF old tags    34S X L XREF=P
                      #old XREF in Adopted  34S X L XREF=P
             33S(N,G) E=THERMAL--->P  P     34S   L 8174.9    4  (1,2+)                                                    
- GAMMA------------------------------------ 34S   G 2945.8    10 1.9E2  6                                              &    --- EG=2945.8     FL=5228.166   JF=0+
+ GAMMA------------------------------------ 34S   G 2945.8    10 248    LT                                             &    --- EG=2945.8     FL=5228.166   JF=0+
             33S(N,G) E=THERMAL--->P  P     34S   G 2945.8    10 191    57                                             &    *** EG=2945.8     FL=5228.175   JF=0+
  GAMMA------------------------------------ 34S   G 8173.8    9  100    20                                                  --- EG=8173.8     FL=0.0        JF=0+
             33S(N,G) E=THERMAL--->P  P     34S   G 8173.8    9 100     20                                                  *** EG=8173.8     FL=0.0        JF=0+
@@ -2130,7 +2133,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 34S   G 6166.24   13 100    11 [E2]                                             --- EG=6166.24    FL=2127.558   JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 6166.24   13 100    11                                                  *** EG=6166.24    FL=2127.564   JF=2+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 8371.0    4  7-               83 FS     14                              --- possible JPI=(3-,7-)
+ LEVEL************************************ 34S   L 8371.0    4  (7)-             83 FS     14                         B    --- possible JPI=(3-,7-)
                      *new XREF new tags    34S X L XREF=HMg
                      *new XREF old tags    34S X L XREF=HMg
                      #old XREF in Adopted  34S X L XREF=HMg
@@ -2140,7 +2143,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                 24MG(16O,A2PG)--->H  H     34S  cL T$|t=122 fs {I40} (2005Ma03, DSAM).
                      31P(A,PG)--->M  M     34S  cL J$7-,(5-) from 1977GrZH.
                      31P(A,PG)--->M  M     34S  cL T$lifetime |t=120 fs {I20} (1977GrZH, DSAM).                           
- GAMMA------------------------------------ 34S   G 580.3     6  2.0    10 (M1)                                        M    --- EG=580.3      FL=7790.8     JF=6-
+ GAMMA------------------------------------ 34S   G 580.3     6  2.0    10 (M1)                                        M    --- EG=580.3      FL=7790.8     JF=(6)-
                 24MG(16O,A2PG)--->H  H     34S   G 580.3     6 2       1  D                                                *** EG=580.3      FL=7790.8     JF=6-
                 24MG(16O,A2PG)--->H  H     34S  cG $R{-ADO}=0.88 {I12}.                                                   
  GAMMA------------------------------------ 34S   G 2680.5    6  100    10 E2                                          M    --- EG=2680.5     FL=5690.61    JF=5-
@@ -2170,7 +2173,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
     34S(P,P),(P,P'),(POL P,P')--->W  W     34S   L 8423      5                                                             *** possible JPI=(0,1,2,3,4,5,6,7+)
                       32S(T,P)--->N  N     34S  cL $(f{-7/2}){+2}. N=11.25.                                               
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 8503.7    5  6(+)             28 FS     7                               --- possible JPI=(4+,5+,6+)
+ LEVEL************************************ 34S   L 8503.7    5  (6+)             28 FS     7                          Z    --- possible JPI=(4+,5+,6+)
                      *new XREF new tags    34S X L XREF=HMW(8511*)
                      *new XREF old tags    34S X L XREF=HMW(8511*)
                      #old XREF in Adopted  34S X L XREF=HM
@@ -2179,10 +2182,10 @@ Note: 1. possible JPI presented at the end of each record line of each individua
     34S(P,P),(P,P'),(POL P,P')--->W  W(*)  34S   L 8511      5                                                             *** possible JPI=(0,1,2,3,4,5,6,7+)
                      31P(A,PG)--->M  M     34S  cL J$(4,6+) from 1977GrZH.
                      31P(A,PG)--->M  M     34S  cL T$lifetime |t=40 fs {I10} (1977GrZH, DSAM).                            
- GAMMA------------------------------------ 34S   G 2812.7    9  100    18 (E1)                                        M    --- EG=2812.7     FL=5690.61    JF=5-
+ GAMMA------------------------------------ 34S   G 2812.7    9  100    18 (E1)                   1.15E-3 2            M    --- EG=2812.7     FL=5690.61    JF=5-
                 24MG(16O,A2PG)--->H  H     34S   G 2812.7    9 100     18 D                                                *** EG=2812.7     FL=5690.8     JF=5-
                 24MG(16O,A2PG)--->H  H     34S  cG $R{-ADO}=0.69 {I5}, A{-2}=-0.41 {I21}, A{-4}=-0.03 {I33}.              
- GAMMA------------------------------------ 34S   G 3813.6    7  51     11 [E2]                                        M    --- EG=3813.6     FL=4688.96    JF=4+
+ GAMMA------------------------------------ 34S   G 3813.6    7  51     11 [E2]                   1.11E-3 2            M    --- EG=3813.6     FL=4688.96    JF=4+
                 24MG(16O,A2PG)--->H  H     34S   G 3813.6    7 51      11                                                  *** EG=3813.6     FL=4689.2     JF=4+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34S   L 8506.77   4  1-                                                         --- possible JPI=1-
@@ -2217,7 +2220,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
             33S(N,G) E=THERMAL--->P  P     34S   L 8615.74   4  (2-,3+)                                                   
                       33S(D,P)--->R  R(*)  34S   L 8622      14                                                       B  ? *** possible JPI=(0,1,2,3,4,5,6,7,8+)
     34S(P,P),(P,P'),(POL P,P')--->W  W     34S   L 8623      5                                                             *** possible JPI=(0,1,2,3,4,5,6,7+)
- GAMMA------------------------------------ 34S   G 2363.97   8  58     31                                                  --- EG=2363.97    FL=6251.72    JF=4-
+ GAMMA------------------------------------ 34S   G 2363.97   8  58     31                                                  --- EG=2363.97    FL=6251.72    JF=(3,4)
             33S(N,G) E=THERMAL--->P  P     34S   G 2363.97   8 58      31                                                  *** EG=2363.97    FL=6251.68    JF=4-
  GAMMA------------------------------------ 34S   G 3738.69   17 33     5                                                   --- EG=3738.69    FL=4876.839   JF=3+
             33S(N,G) E=THERMAL--->P  P     34S   G 3738.69   17 33     5                                                   *** EG=3738.69    FL=4876.842   JF=3+
@@ -2255,7 +2258,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
             33S(N,G) E=THERMAL--->P  P     34S   L 8702.35   12 (1-,2)                                                    
  GAMMA------------------------------------ 34S   G 516.86    12 29     5                                                   --- EG=516.86     FL=8185.45    JF=1+
             33S(N,G) E=THERMAL--->P  P     34S   G 516.86    12 29     5                                                   *** EG=516.86     FL=8185.46    JF=(1)+
- GAMMA------------------------------------ 34S   G 2945.8    10 28     8                                              &    --- EG=2945.8     FL=5755.871   JF=1-
+ GAMMA------------------------------------ 34S   G 2945.8    10 36     LT                                             &    --- EG=2945.8     FL=5755.871   JF=1-
             33S(N,G) E=THERMAL--->P  P     34S   G 2945.8    10 28     8                                              &    *** EG=2945.8     FL=5755.876   JF=1-
  GAMMA------------------------------------ 34S   G 3022.0    10 14.7   83                                                  --- EG=3022.0     FL=5679.925   JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 3022.0    10 14.7   83                                                  *** EG=3022.0     FL=5679.928   JF=3-
@@ -2285,7 +2288,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 34S   G 8726.78   24 22.7   31                                                  --- EG=8726.78    FL=0.0        JF=0+
             33S(N,G) E=THERMAL--->P  P     34S   G 8726.78   24 22.7   31                                                  *** EG=8726.78    FL=0.0        JF=0+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 8734.8    6  4,5,6                                                      --- possible JPI=(4,5,6)
+ LEVEL************************************ 34S   L 8734.8    6  (6-)                                                       --- possible JPI=(4,5,6)
                      *new XREF new tags    34S X L XREF=HW
                      *new XREF old tags    34S X L XREF=HW
                      #old XREF in Adopted  34S X L XREF=HW
@@ -2307,7 +2310,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      #old XREF in Adopted  34S X L XREF=PW
             33S(N,G) E=THERMAL--->P  P     34S   L 8805.6    3  (1,2+)                                                    
     34S(P,P),(P,P'),(POL P,P')--->W  W     34S   L 8809      5                                                             *** possible JPI=(0,1,2,3,4,5,6,7+)
- GAMMA------------------------------------ 34S   G 2326.2    10 10.9   87                                             &    --- EG=2326.2     FL=6478.765   JF=1-
+ GAMMA------------------------------------ 34S   G 2326.2    10 20     LT                                             &    --- EG=2326.2     FL=6478.765   JF=1-
             33S(N,G) E=THERMAL--->P  P     34S   G 2326.2    10 10.9   87                                             &    *** EG=2326.2     FL=6478.770   JF=1-
  GAMMA------------------------------------ 34S   G 5501.4    5  100    20                                                  --- EG=5501.4     FL=3304.207   JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 5501.4    5 100     20                                                  *** EG=5501.4     FL=3304.213   JF=2+
@@ -2334,13 +2337,13 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      #old XREF in Adopted  34S X L XREF=W
     34S(P,P),(P,P'),(POL P,P')--->W  W     34S   L 8953      5                                                             *** possible JPI=(0,1,2,3,4,5,6,7+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 8970.6    5  6                                                          --- possible JPI=(3-,4,5,6,7-)
+ LEVEL************************************ 34S   L 8970.6    5  (6)                                                        --- possible JPI=(3-,4,5,6,7-)
                      *new XREF new tags    34S X L XREF=H
                      *new XREF old tags    34S X L XREF=H
                      #old XREF in Adopted  34S X L XREF=H
                 24MG(16O,A2PG)--->H  H     34S   L 8970.7    7  6-                                                        
                 24MG(16O,A2PG)--->H  H     34S  cL J$from 2005Ma03.
- GAMMA------------------------------------ 34S   G 1180      1  5.7    29                                             M    --- EG=1180       FL=7790.8     JF=6-
+ GAMMA------------------------------------ 34S   G 1180      1  5.7    29                                             M    --- EG=1180       FL=7790.8     JF=(6)-
                 24MG(16O,A2PG)--->H  H     34S   G 1180      1 5.7     29                                                  *** EG=1180       FL=7790.8     JF=6-
  GAMMA------------------------------------ 34S   G 3280.0    6  100    20                                             M    --- EG=3280.0     FL=5690.61    JF=5-
                 24MG(16O,A2PG)--->H  H     34S   G 3280.0    6 100     20                                                  *** EG=3280.0     FL=5690.8     JF=5-
@@ -2413,13 +2416,13 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      #old XREF in Adopted  34S X L XREF=W
     34S(P,P),(P,P'),(POL P,P')--->W  W     34S   L 9257      10                                                            *** possible JPI=(0,1,2,3,4,5,6,7+)
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 9413.8    5  5(-),6                                                     --- possible JPI=(4,5,6)
+ LEVEL************************************ 34S   L 9413.8    5  (6-)                                                       --- possible JPI=(4,5,6)
                      *new XREF new tags    34S X L XREF=H
                      *new XREF old tags    34S X L XREF=H
                      #old XREF in Adopted  34S X L XREF=H
-                24MG(16O,A2PG)--->H  H     34S   L 9413.9    7  6                                                         
+                24MG(16O,A2PG)--->H  H     34S   L 9413.9    7  6-                                                        
                 24MG(16O,A2PG)--->H  H     34S  cL J$6- in 2005Ma03.
- GAMMA------------------------------------ 34S   G 1043.8    7  21     12                                                  --- EG=1043.8     FL=8371.0     JF=7-
+ GAMMA------------------------------------ 34S   G 1043.8    7  21     12                                                  --- EG=1043.8     FL=8371.0     JF=(7)-
                 24MG(16O,A2PG)--->H  H     34S   G 1043.8    7 21      12                                                  *** EG=1043.8     FL=8371.1     JF=7-
  GAMMA------------------------------------ 34S   G 3722.6    6  100    21 D+Q                                              --- EG=3722.6     FL=5690.61    JF=5-
                 24MG(16O,A2PG)--->H  H     34S   G 3722.6    6 100     21 D+Q                                              *** EG=3722.6     FL=5690.8     JF=5-
@@ -2458,7 +2461,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
     34S(P,P),(P,P'),(POL P,P')--->W  W(*)  34S   L 9566      10                                                            *** possible JPI=(0,1,2,3,4,5,6,7+)
  GAMMA------------------------------------ 34S   G 672.00    10 34     5                                                   --- EG=672.00     FL=8874.01    JF=(1-,2,3+)
             33S(N,G) E=THERMAL--->P  P     34S   G 672.00    10 34     5                                                   *** EG=672.00     FL=8874.01    JF=(1-,2,3+)
- GAMMA------------------------------------ 34S   G 2326.2    10 11.1   89                                             &    --- EG=2326.2     FL=7219.28    JF=2+
+ GAMMA------------------------------------ 34S   G 2326.2    10 20     LT                                             &    --- EG=2326.2     FL=7219.28    JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 2326.2    10 11.1   89                                             &    *** EG=2326.2     FL=7219.28    JF=(2+)
  GAMMA------------------------------------ 34S   G 6241.0    5  100    16                                                  --- EG=6241.0     FL=3304.207   JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 6241.0    5 100     16                                                  *** EG=6241.0     FL=3304.213   JF=2+
@@ -2495,7 +2498,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      *new XREF old tags    34S X L XREF=P
                      #old XREF in Adopted  34S X L XREF=P
             33S(N,G) E=THERMAL--->P  P     34S   L 9665.74   3                                                            
- GAMMA------------------------------------ 34S   G 2817.76   25 191    30                                             &    --- EG=2817.76    FL=6847.90    JF=(1,2+)
+ GAMMA------------------------------------ 34S   G 2817.76   25 221    LT                                             &    --- EG=2817.76    FL=6847.90    JF=(1,2+)
             33S(N,G) E=THERMAL--->P  P     34S   G 2817.76   25 191    30                                             &    *** EG=2817.76    FL=6847.90    JF=(1,2+)
  GAMMA------------------------------------ 34S   G 7536.2    7  100    23                                                  --- EG=7536.2     FL=2127.558   JF=2+
             33S(N,G) E=THERMAL--->P  P     34S   G 7536.2    7 100     23                                                  *** EG=7536.2     FL=2127.564   JF=2+
@@ -2545,24 +2548,24 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 34S   G 9867         100       M1                                               --- EG=9867       FL=0.0        JF=0+
           34S(G,G'),(POL G,G')--->S  S     34S   G 9858                   M1                                               *** EG=9858       FL=0.0        JF=0+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 9912.8    4  7                184 FS    38                              --- possible JPI=(3,4,5-,6,7+)
+ LEVEL************************************ 34S   L 9912.8    4  (7+)             184 FS    38                              --- possible JPI=(3,4,5-,6,7+)
                      *new XREF new tags    34S X L XREF=HW(9925*)
                      *new XREF old tags    34S X L XREF=HW(9925*)
                      #old XREF in Adopted  34S X L XREF=HW(9925*)
                 24MG(16O,A2PG)--->H  H     34S   L 9912.9    7  7+               184 FS    38                             
     34S(P,P),(P,P'),(POL P,P')--->W  W(*)  34S   L 9925      5                                                             *** possible JPI=(0,1,2,3,4,5,6,7+)
                 24MG(16O,A2PG)--->H  H     34S  cL T$|t=265 fs {I55} (2005Ma03, DSAM).
- GAMMA------------------------------------ 34S   G 942.3     5  29     9  D                                           M    --- EG=942.3      FL=8970.6     JF=6
+ GAMMA------------------------------------ 34S   G 942.3     5  29     9  D                                           M    --- EG=942.3      FL=8970.6     JF=(6)
                 24MG(16O,A2PG)--->H  H     34S   G 942.3     5 29      9  D                                                *** EG=942.3      FL=8970.7     JF=6-
                 24MG(16O,A2PG)--->H  H     34S  cG $A{-2}=-0.24 {I8}, A{-4}=-0.01 {I13}.                                  
- GAMMA------------------------------------ 34S   G 1178      1  14.3   72                                             M    --- EG=1178       FL=8734.8     JF=4,5,6
+ GAMMA------------------------------------ 34S   G 1178      1  14.3   72                                             M    --- EG=1178       FL=8734.8     JF=(6-)
                 24MG(16O,A2PG)--->H  H     34S   G 1178      1 14.3    72                                                  *** EG=1178       FL=8735.0     JF=6-
- GAMMA------------------------------------ 34S   G 1408.6    9  30     9  D                                           M    --- EG=1408.6     FL=8503.7     JF=6(+)
+ GAMMA------------------------------------ 34S   G 1408.6    9  30     9  D                                           M    --- EG=1408.6     FL=8503.7     JF=(6+)
                 24MG(16O,A2PG)--->H  H     34S   G 1408.6    9 30      9  D                                                *** EG=1408.6     FL=8503.8     JF=6+
                 24MG(16O,A2PG)--->H  H     34S  cG $R{-ADO}=0.8 {I1}.                                                     
- GAMMA------------------------------------ 34S   G 1541.5    5  12.9   72                                             M    --- EG=1541.5     FL=8371.0     JF=7-
+ GAMMA------------------------------------ 34S   G 1541.5    5  12.9   72                                             M    --- EG=1541.5     FL=8371.0     JF=(7)-
                 24MG(16O,A2PG)--->H  H     34S   G 1541.5    5 12.9    72                                                  *** EG=1541.5     FL=8371.1     JF=7-
- GAMMA------------------------------------ 34S   G 2122.9    6  100    14                                             M    --- EG=2122.9     FL=7790.8     JF=6-
+ GAMMA------------------------------------ 34S   G 2122.9    6  100    14                                             M    --- EG=2122.9     FL=7790.8     JF=(6)-
                 24MG(16O,A2PG)--->H  H     34S   G 2122.9    6 100     14                                                  *** EG=2122.9     FL=7790.8     JF=6-
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34S   L 9933.36   12 1-                                                         --- possible JPI=(1-)
@@ -2575,7 +2578,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
     30SI(A,G),(A,N):RESONANCES--->L  L     34S  cL $(2J+1)|G{-|g}|G{-|a}/|G=0.14 eV (1964Va08).
  GAMMA------------------------------------ 34S   G 725.25    22 68     11                                                  --- EG=725.25     FL=9208.03    JF=(1,2+)
             33S(N,G) E=THERMAL--->P  P     34S   G 725.25    22 68     11                                                  *** EG=725.25     FL=9208.04    JF=(1,2+)
- GAMMA------------------------------------ 34S   G 1795.3    3  112    30                                             &    --- EG=1795.3     FL=8138.08    JF=(1)-
+ GAMMA------------------------------------ 34S   G 1795.3    3  142    LT                                             &    --- EG=1795.3     FL=8138.08    JF=(1)-
             33S(N,G) E=THERMAL--->P  P     34S   G 1795.3    3 112     30                                             &    *** EG=1795.3     FL=8138.08    JF=(1)-
  GAMMA------------------------------------ 34S   G 2152.41   23 100    53                                                  --- EG=2152.41    FL=7781.21    JF=(1)-
             33S(N,G) E=THERMAL--->P  P     34S   G 2152.41   23 100    53                                                  *** EG=2152.41    FL=7781.22    JF=(1)-
@@ -2749,16 +2752,16 @@ Note: 1. possible JPI presented at the end of each record line of each individua
     30SI(A,G),(A,N):RESONANCES--->L  L     34S   G 4706        100                                                         *** EG=4706       FL=5679.927   JF=2+
     30SI(A,G),(A,N):RESONANCES--->L  L     34S  cG RI$main |g-decay branch: 40% to 5680 level (1975DeZS).
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 10399.8   5  8(-)                                                       --- possible JPI=(2,3,4,5-,6,7,8)
+ LEVEL************************************ 34S   L 10399.8   5  (8-)                                                  C    --- possible JPI=(2,3,4,5-,6,7,8)
                      *new XREF new tags    34S X L XREF=H
                      *new XREF old tags    34S X L XREF=H
                      #old XREF in Adopted  34S X L XREF=H
                 24MG(16O,A2PG)--->H  H     34S   L 10399.9   7  8-                                                    B   
- GAMMA------------------------------------ 34S   G 986.8     9  11.3   56                                             M    --- EG=986.8      FL=9413.8     JF=5(-),6
-                24MG(16O,A2PG)--->H  H     34S   G 986.8     9 11.3    56                                                  *** EG=986.8      FL=9413.9     JF=6
- GAMMA------------------------------------ 34S   G 2028.8    6  47     10                                             M    --- EG=2028.8     FL=8371.0     JF=7-
+ GAMMA------------------------------------ 34S   G 986.8     9  11.3   56                                             M    --- EG=986.8      FL=9413.8     JF=(6-)
+                24MG(16O,A2PG)--->H  H     34S   G 986.8     9 11.3    56                                                  *** EG=986.8      FL=9413.9     JF=6-
+ GAMMA------------------------------------ 34S   G 2028.8    6  47     10                                             M    --- EG=2028.8     FL=8371.0     JF=(7)-
                 24MG(16O,A2PG)--->H  H     34S   G 2028.8    6 47      10                                                  *** EG=2028.8     FL=8371.1     JF=7-
- GAMMA------------------------------------ 34S   G 2608.6    6  100    14 Q                                           M    --- EG=2608.6     FL=7790.8     JF=6-
+ GAMMA------------------------------------ 34S   G 2608.6    6  100    14 Q                                           M    --- EG=2608.6     FL=7790.8     JF=(6)-
                 24MG(16O,A2PG)--->H  H     34S   G 2608.6    6 100     14 Q                                                *** EG=2608.6     FL=7790.8     JF=6-
                 24MG(16O,A2PG)--->H  H     34S  cG $R{-ADO}=1.27 {I6}, A{-2}=+0.45 {I3}, A{-4}=-0.23 {I5}.                
 ------------------------------------------------------------------------------------------------------------------------
@@ -2862,20 +2865,20 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                      34S(E,E')--->T  T(*)  34S  cL $B(M1)|^=0.16 {I5}, R{-tr}=3.40 fm (1994Pe08).                         
  GAMMA------------------------------------ 34S   G 2919.7    5  100    26                                                  --- EG=2919.7     FL=7730.79    JF=(1-,2-,3-)
             33S(N,G) E=THERMAL--->P  P     34S   G 2919.7    5 100     26                                                  *** EG=2919.7     FL=7730.79    JF=(1-,2-,3-)
- GAMMA------------------------------------ 34S   G 5268.9    6  63     16                                             &    --- EG=5268.9     FL=5380.986   JF=1+
+ GAMMA------------------------------------ 34S   G 5268.9    6  79     LT                                             &    --- EG=5268.9     FL=5380.986   JF=1+
             33S(N,G) E=THERMAL--->P  P     34S   G 5268.9    6 63      16                                             &    *** EG=5268.9     FL=5380.99    JF=1+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 10651.5   5  8(+)             35 FS     17                              --- possible JPI=NA: check contradicting data
+ LEVEL************************************ 34S   L 10651.5   5  (8+)             35 FS     17                         Z    --- possible JPI=(2+,3+,4+,6+,7+,8+)
                      *new XREF new tags    34S X L XREF=HL(10663*)
                      *new XREF old tags    34S X L XREF=HL(10663*)
                      #old XREF in Adopted  34S X L XREF=H
                 24MG(16O,A2PG)--->H  H     34S   L 10651.6   7  8+               35 FS     17                         A   
     30SI(A,G),(A,N):RESONANCES--->L  L(*)  34S   L 10663     5                                            3104      5 V   
                 24MG(16O,A2PG)--->H  H     34S  cL T$|t=50 fs {I25} (2005Ma03, DSAM).
- GAMMA------------------------------------ 34S   G 2147.2    6  100    21 E2                                          M    --- EG=2147.2     FL=8503.7     JF=6(+)
+ GAMMA------------------------------------ 34S   G 2147.2    6  100    21 E2                                          M    --- EG=2147.2     FL=8503.7     JF=(6+)
                 24MG(16O,A2PG)--->H  H     34S   G 2147.2    6 100     21 Q                                                *** EG=2147.2     FL=8503.8     JF=6+
                 24MG(16O,A2PG)--->H  H     34S  cG M$E2 based on RUL. R{-ADO}=1.5 {I1}, A{-2}=+0.49 {I6}, A{-4}=-0.29 {I9}
- GAMMA------------------------------------ 34S   G 2280.4    10 100    21 (M1)                                        M    --- EG=2280.4     FL=8371.0     JF=7-
+ GAMMA------------------------------------ 34S   G 2280.4    10 100    21 (E1)                                        M    --- EG=2280.4     FL=8371.0     JF=(7)-
                 24MG(16O,A2PG)--->H  H     34S   G 2280.4    10 100    21 D                                                *** EG=2280.4     FL=8371.1     JF=7-
                 24MG(16O,A2PG)--->H  H     34S  cG $R{-ADO}=0.74 {I4}, A{-2}=-0.11 {I8}, A{-4}=+0.02 {I14}.               
 ------------------------------------------------------------------------------------------------------------------------
@@ -3239,15 +3242,15 @@ Note: 1. possible JPI presented at the end of each record line of each individua
  GAMMA------------------------------------ 34S   G 11370        5.9                                                   S    --- EG=11370      FL=0.0        JF=0+
     30SI(A,G),(A,N):RESONANCES--->L  L     34S   G 11370       5.9                                                         *** EG=11370      FL=0.0        JF=0+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 11374.2   6  (8)                                                        --- possible JPI=(2,3,4,6,7,8)
+ LEVEL************************************ 34S   L 11374.2   6  (8+)                                                       --- possible JPI=(2,3,4,6,7,8)
                      *new XREF new tags    34S X L XREF=H
                      *new XREF old tags    34S X L XREF=H
                      #old XREF in Adopted  34S X L XREF=H
                 24MG(16O,A2PG)--->H  H     34S   L 11374.3   8  8+                                                        
- GAMMA------------------------------------ 34S   G 1461.7    9  90     20 D(+Q)                                            --- EG=1461.7     FL=9912.8     JF=7
+ GAMMA------------------------------------ 34S   G 1461.7    9  90     20 D(+Q)                                            --- EG=1461.7     FL=9912.8     JF=(7+)
                 24MG(16O,A2PG)--->H  H     34S   G 1461.7    9 90      20 D(+Q)                                            *** EG=1461.7     FL=9912.9     JF=7+
                 24MG(16O,A2PG)--->H  H     34S  cG $R{-ADO}=0.87 {I7}.                                                    
- GAMMA------------------------------------ 34S   G 3002.8    6  100    20 D                                                --- EG=3002.8     FL=8371.0     JF=7-
+ GAMMA------------------------------------ 34S   G 3002.8    6  100    20 D                                                --- EG=3002.8     FL=8371.0     JF=(7)-
                 24MG(16O,A2PG)--->H  H     34S   G 3002.8    6 100     20 D                                                *** EG=3002.8     FL=8371.1     JF=7-
                 24MG(16O,A2PG)--->H  H     34S  cG $R{-ADO}=0.65 {I5}, A{-2}=-0.36 {I24}, A{-4}=-0.03 {I33}.              
 ------------------------------------------------------------------------------------------------------------------------
@@ -3290,7 +3293,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
      33S(N,G),(N,N):RESONANCES--->Q  Q(*)  34S 2cL threshold.                                                             
      33S(N,G),(N,N):RESONANCES--->Q  Q(*)  34S  cL $|G{-|g}=1.5 eV.                                                       
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 11417.219 19 1+,2+                                                    S --- possible JPI=(2+)
+ LEVEL************************************ 34S   L 11417.219 19 2+                                                       S --- possible JPI=(2+)
                      *new XREF new tags    34S X L XREF=L(11405*)P
                      *new XREF old tags    34S X L XREF=L(11405*)P
                      #old XREF in Adopted  34S X L XREF=P
@@ -3337,7 +3340,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
             33S(N,G) E=THERMAL--->P  P     34S F G FL=9158.715                                                            
  GAMMA------------------------------------ 34S   G 2390.82   6  2.15   23                                                  --- EG=2390.82    FL=9026.31    JF=(1,2+)
             33S(N,G) E=THERMAL--->P  P     34S   G 2390.82   6 2.15    23                                                  *** EG=2390.82    FL=9026.31    JF=(1,2+)
- GAMMA------------------------------------ 34S   G 2543.13   10 15.5   15                                             &    --- EG=2543.13    FL=8874.01    JF=(1-,2,3+)
+ GAMMA------------------------------------ 34S   G 2543.13   10 17.0   LT                                             &    --- EG=2543.13    FL=8874.01    JF=(1-,2,3+)
             33S(N,G) E=THERMAL--->P  P     34S   G 2543.13   10 15.5   15                                             &    *** EG=2543.13    FL=8874.01    JF=(1-,2,3+)
  GAMMA------------------------------------ 34S   G 2611.7    4  1.9    5                                                   --- EG=2611.7     FL=8805.62    JF=(1,2+)
             33S(N,G) E=THERMAL--->P  P     34S   G 2611.7    4 1.9     5                                                   *** EG=2611.7     FL=8805.6     JF=(1,2+)
@@ -3424,7 +3427,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
             33S(N,G) E=THERMAL--->P  P     34S F G FL=4889.76                                                             
  GAMMA------------------------------------ 34S   G 6539.66   16 1.60   20                                                  --- EG=6539.66    FL=4876.839   JF=3+
             33S(N,G) E=THERMAL--->P  P     34S   G 6539.66   16 1.6    2                                                   *** EG=6539.66    FL=4876.842   JF=3+
- GAMMA------------------------------------ 34S   G 6727.5    9  0.113  65                                                  --- EG=6727.5     FL=4688.96    JF=4+
+ GAMMA------------------------------------ 34S   G 6727.5    9  0.11   7                                                   --- EG=6727.5     FL=4688.96    JF=4+
             33S(N,G) E=THERMAL--->P  P     34S   G 6727.5    9 0.11    7  [E2]                                             *** EG=6727.5     FL=4688.97    JF=4+
  GAMMA------------------------------------ 34S   G 6792.10   3  39     4                                                   --- EG=6792.10    FL=4624.401   JF=3-
             33S(N,G) E=THERMAL--->P  P     34S   G 6792.10   3 39      4                                                   *** EG=6792.10    FL=4624.404   JF=3-
@@ -3910,16 +3913,16 @@ Note: 1. possible JPI presented at the end of each record line of each individua
      33S(N,G),(N,N):RESONANCES--->Q  Q(*)  34S   L 11796                         1.30 KEV  25             391.3           
      33S(N,G),(N,N):RESONANCES--->Q  Q(*)  34S  cL $g|G{-n}|G{-|g}/|G=3.0 {I4}.                                           
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 11807.4   5  8(+)                                                       --- possible JPI=(2,3,4,6,7,8)
+ LEVEL************************************ 34S   L 11807.4   5  (8)                                                        --- possible JPI=(2,3,4,6,7,8)
                      *new XREF new tags    34S X L XREF=HQ(11796*)
                      *new XREF old tags    34S X L XREF=HQ(11796*)
                      #old XREF in Adopted  34S X L XREF=H
                 24MG(16O,A2PG)--->H  H     34S   L 11807.5   7  8+                                                        
      33S(N,G),(N,N):RESONANCES--->Q  Q(*)  34S   L 11796                         1.30 KEV  25             391.3           
      33S(N,G),(N,N):RESONANCES--->Q  Q(*)  34S  cL $g|G{-n}|G{-|g}/|G=3.0 {I4}.                                           
- GAMMA------------------------------------ 34S   G 1894.6    6  100    20                                             M    --- EG=1894.6     FL=9912.8     JF=7
+ GAMMA------------------------------------ 34S   G 1894.6    6  100    20                                             M    --- EG=1894.6     FL=9912.8     JF=(7+)
                 24MG(16O,A2PG)--->H  H     34S   G 1894.6    6 100     20                                                  *** EG=1894.6     FL=9912.9     JF=7+
- GAMMA------------------------------------ 34S   G 3436.1    6  1.0E2  4  D                                           M    --- EG=3436.1     FL=8371.0     JF=7-
+ GAMMA------------------------------------ 34S   G 3436.1    6  100    40 D                                           M    --- EG=3436.1     FL=8371.0     JF=(7)-
                 24MG(16O,A2PG)--->H  H     34S   G 3436.1    6 100     40 D                                                *** EG=3436.1     FL=8371.1     JF=7-
                 24MG(16O,A2PG)--->H  H     34S  cG $R{-ADO}=0.67 {I8}.                                                    
 ------------------------------------------------------------------------------------------------------------------------
@@ -4078,7 +4081,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
         4HE(30SI,A):RESONANCES--->F  F(*)  34S  cL $|G{-|a}/|G=0.40; |g{+2}{-|a}/|g{+2}{-sp}=27.3%.
                      34S(E,E')--->T  T(*)  34S  cL $B(M1)|^=0.25 {I12}, R{-tr}=3.10 fm (1994Pe08).                        
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 12141.3   5  9                173 FS    35                              --- possible JPI=(1,2,3,4,5,6,7,8,9+)
+ LEVEL************************************ 34S   L 12141.3   5  (9+)             173 FS    35                              --- possible JPI=(1,2,3,4,5,6,7,8,9+)
                      *new XREF new tags    34S X L XREF=F(12150*)HL(12137*)
                      *new XREF old tags    34S X L XREF=F(12150*)HL(12137*)
                      #old XREF in Adopted  34S X L XREF=H
@@ -4087,11 +4090,11 @@ Note: 1. possible JPI presented at the end of each record line of each individua
     30SI(A,G),(A,N):RESONANCES--->L  L(*)  34S   L 12137     5                                            4775      5 N   
         4HE(30SI,A):RESONANCES--->F  F(*)  34S  cL $|G{-|a}/|G=0.40; |g{+2}{-|a}/|g{+2}{-sp}=27.3%.
                 24MG(16O,A2PG)--->H  H     34S  cL T$|t=250 fs {I50} (2005Ma03, DSAM).
- GAMMA------------------------------------ 34S   G 1489.2    6  7.4    42 [M1,E2]                                     M    --- EG=1489.2     FL=10651.5    JF=8(+)
+ GAMMA------------------------------------ 34S   G 1489.2    6  7.4    42 [M1,E2]                                     M    --- EG=1489.2     FL=10651.5    JF=(8+)
                 24MG(16O,A2PG)--->H  H     34S   G 1489.2    6 7.4     42                                                  *** EG=1489.2     FL=10651.6    JF=8+
- GAMMA------------------------------------ 34S   G 1741.6    5  12.6   32 [E1]                                        M    --- EG=1741.6     FL=10399.8    JF=8(-)
+ GAMMA------------------------------------ 34S   G 1741.6    5  12.6   32 [E1]                                        M    --- EG=1741.6     FL=10399.8    JF=(8-)
                 24MG(16O,A2PG)--->H  H     34S   G 1741.6    5 12.6    32                                                  *** EG=1741.6     FL=10399.9    JF=8-
- GAMMA------------------------------------ 34S   G 2228.8    6  100    12 E2                                          M    --- EG=2228.8     FL=9912.8     JF=7
+ GAMMA------------------------------------ 34S   G 2228.8    6  100    12 E2                                          M    --- EG=2228.8     FL=9912.8     JF=(7+)
                 24MG(16O,A2PG)--->H  H     34S   G 2228.8    6 100     12 Q                                                *** EG=2228.8     FL=9912.9     JF=7+
                 24MG(16O,A2PG)--->H  H     34S  cG M$E2 based on RUL. R{-ADO}=1.18 {I7}.                                  
 ------------------------------------------------------------------------------------------------------------------------
@@ -4258,30 +4261,30 @@ Note: 1. possible JPI presented at the end of each record line of each individua
         4HE(30SI,A):RESONANCES--->F  F(*)  34S  cL $|G{-|a}/|G=0.40; |g{+2}{-|a}/|g{+2}{-sp}=15.9%.
                      34S(E,E')--->T  T(*)  34S  cL $B(M2)|^=16 {I5}, R{-tr}=4.00 fm (1994Pe08).                           
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 12985.4   6  (9+)                                                       --- possible JPI=(0,1,2,3,4,5,6,7,8,9,10)
+ LEVEL************************************ 34S   L 12985.4   6  (9)                                                        --- possible JPI=(0+,1,2,3,4,5,6,7,8,9,10+)
                      *new XREF new tags    34S X L XREF=F(12970*)H
                      *new XREF old tags    34S X L XREF=F(12970*)H
                      #old XREF in Adopted  34S X L XREF=H
         4HE(30SI,A):RESONANCES--->F  F(*)  34S   L 12970                         50 KEV    LT    2                        
                 24MG(16O,A2PG)--->H  H     34S   L 12985.5   8  (9+)                                                      
         4HE(30SI,A):RESONANCES--->F  F(*)  34S  cL $|G{-|a}/|G=0.40; |g{+2}{-|a}/|g{+2}{-sp}=15.9%.
- GAMMA------------------------------------ 34S   G 1178      1  42     25                                                  --- EG=1178       FL=11807.4    JF=8(+)
+ GAMMA------------------------------------ 34S   G 1178      1  42     25                                                  --- EG=1178       FL=11807.4    JF=(8)
                 24MG(16O,A2PG)--->H  H     34S   G 1178      1 42      25                                                  *** EG=1178       FL=11807.5    JF=8+
- GAMMA------------------------------------ 34S   G 1611.5    7  50     25                                                  --- EG=1611.5     FL=11374.2    JF=(8)
+ GAMMA------------------------------------ 34S   G 1611.5    7  50     25                                                  --- EG=1611.5     FL=11374.2    JF=(8+)
                 24MG(16O,A2PG)--->H  H     34S   G 1611.5    7 50      25                                                  *** EG=1611.5     FL=11374.3    JF=8+
- GAMMA------------------------------------ 34S   G 2333.8    7  1.0E2  4                                                   --- EG=2333.8     FL=10651.5    JF=8(+)
+ GAMMA------------------------------------ 34S   G 2333.8    7  100    40                                                  --- EG=2333.8     FL=10651.5    JF=(8+)
                 24MG(16O,A2PG)--->H  H     34S   G 2333.8    7 100     42                                                  *** EG=2333.8     FL=10651.6    JF=8+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 13320.2   10 (9-)                                                       --- possible JPI=(1-,2,3,4,5-,6,7,8,9-)
+ LEVEL************************************ 34S   L 13320.2   10 (9-)                                                  B    --- possible JPI=(1-,2,3,4,5-,6,7,8,9-)
                      *new XREF new tags    34S X L XREF=F(13340*)H
                      *new XREF old tags    34S X L XREF=F(13340*)H
                      #old XREF in Adopted  34S X L XREF=H
         4HE(30SI,A):RESONANCES--->F  F(*)  34S   L 13340                         50 KEV    LT    2                        
                 24MG(16O,A2PG)--->H  H     34S   L 13320.3   11 (9-)                                                  C   
         4HE(30SI,A):RESONANCES--->F  F(*)  34S  cL $|G{-|a}/|G=0.20; |g{+2}{-|a}/|g{+2}{-sp}=4.6%.
- GAMMA------------------------------------ 34S   G 2920.1    10 26     16                                                  --- EG=2920.1     FL=10399.8    JF=8(-)
+ GAMMA------------------------------------ 34S   G 2920.1    10 26     16                                                  --- EG=2920.1     FL=10399.8    JF=(8-)
                 24MG(16O,A2PG)--->H  H     34S   G 2920.1    10 26     16                                                  *** EG=2920.1     FL=10399.9    JF=8-
- GAMMA------------------------------------ 34S   G 4949.3    18 100    21                                                  --- EG=4949.3     FL=8371.0     JF=7-
+ GAMMA------------------------------------ 34S   G 4949.3    18 100    21                                                  --- EG=4949.3     FL=8371.0     JF=(7)-
                 24MG(16O,A2PG)--->H  H     34S   G 4949.3    18 100    21                                                  *** EG=4949.3     FL=8371.1     JF=7-
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34S   L 13340                         50 KEV    LT                              ---
@@ -4291,7 +4294,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
         4HE(30SI,A):RESONANCES--->F  F(*)  34S   L 13340                         50 KEV    LT    2                        
         4HE(30SI,A):RESONANCES--->F  F(*)  34S  cL $|G{-|a}/|G=0.20; |g{+2}{-|a}/|g{+2}{-sp}=4.6%.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 13341.6   6  10(+)            180 FS    28                              --- possible JPI=(0,1,2,3,4,5,6,7,8,9,10+)
+ LEVEL************************************ 34S   L 13341.6   6  (10+)            180 FS    28                              --- possible JPI=(0,1,2,3,4,5,6,7,8,9,10+)
                      *new XREF new tags    34S X L XREF=F(13340*)H
                      *new XREF old tags    34S X L XREF=F(13340*)H
                      #old XREF in Adopted  34S X L XREF=H
@@ -4299,12 +4302,12 @@ Note: 1. possible JPI presented at the end of each record line of each individua
                 24MG(16O,A2PG)--->H  H     34S   L 13341.7   8  10+              180 FS    28                             
         4HE(30SI,A):RESONANCES--->F  F(*)  34S  cL $|G{-|a}/|G=0.20; |g{+2}{-|a}/|g{+2}{-sp}=4.6%.
                 24MG(16O,A2PG)--->H  H     34S  cL T$|t=260 fs {I40} (2005Ma03, DSAM).
- GAMMA------------------------------------ 34S   G 356.3     6  6.3    31 [M1,E2]                                     M    --- EG=356.3      FL=12985.4    JF=(9+)
+ GAMMA------------------------------------ 34S   G 356.3     6  6.3    31 [M1,E2]                                     M    --- EG=356.3      FL=12985.4    JF=(9)
                 24MG(16O,A2PG)--->H  H     34S   G 356.3     6 6.3     31                                                  *** EG=356.3      FL=12985.5    JF=(9+)
- GAMMA------------------------------------ 34S   G 1200.4    7  100    22 M1+E2                                       M    --- EG=1200.4     FL=12141.3    JF=9
+ GAMMA------------------------------------ 34S   G 1200.4    7  100    22 M1+E2                                       M    --- EG=1200.4     FL=12141.3    JF=(9+)
                 24MG(16O,A2PG)--->H  H     34S   G 1200.4    7 100     22 D+Q                                              *** EG=1200.4     FL=12141.4    JF=9+
                 24MG(16O,A2PG)--->H  H     34S  cG M$M1+E2 based on RUL. R{-ADO}=0.93 {I9}.                               
- GAMMA------------------------------------ 34S   G 1966.8    9  81     19 E2                                          M    --- EG=1966.8     FL=11374.2    JF=(8)
+ GAMMA------------------------------------ 34S   G 1966.8    9  81     19 E2                                          M    --- EG=1966.8     FL=11374.2    JF=(8+)
                 24MG(16O,A2PG)--->H  H     34S   G 1966.8    9 81      19 Q                                                *** EG=1966.8     FL=11374.3    JF=8+
                 24MG(16O,A2PG)--->H  H     34S  cG M$E2 based on RUL. R{-ADO}=1.2 {I1}.                                   
 ------------------------------------------------------------------------------------------------------------------------
@@ -4356,14 +4359,14 @@ Note: 1. possible JPI presented at the end of each record line of each individua
         4HE(30SI,A):RESONANCES--->F  F(*)  34S   L 13920                         50 KEV    LT    3                        
         4HE(30SI,A):RESONANCES--->F  F(*)  34S  cL $|G{-|a}/|G=0.05; |g{+2}{-|a}/|g{+2}{-sp}=1.2%.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 13960.5   10 (10+)                                                      ---
+ LEVEL************************************ 34S   L 13960.5   10 (10+)                                                 Z    --- possible JPI=(0+,1,2,3,4,5,6,7,8,9,10+)
                      *new XREF new tags    34S X L XREF=F(13920*)H
                      *new XREF old tags    34S X L XREF=F(13920*)H
                      #old XREF in Adopted  34S X L XREF=H
         4HE(30SI,A):RESONANCES--->F  F(*)  34S   L 13920                         50 KEV    LT    3                        
                 24MG(16O,A2PG)--->H  H     34S   L 13960.6   11 (10+)                                                 A   
         4HE(30SI,A):RESONANCES--->F  F(*)  34S  cL $|G{-|a}/|G=0.05; |g{+2}{-|a}/|g{+2}{-sp}=1.2%.
- GAMMA------------------------------------ 34S   G 3308.8    8  100                                                   M    --- EG=3308.8     FL=10651.5    JF=8(+)
+ GAMMA------------------------------------ 34S   G 3308.8    8  100                                                   M    --- EG=3308.8     FL=10651.5    JF=(8+)
                 24MG(16O,A2PG)--->H  H     34S   G 3308.8    8 100                                                         *** EG=3308.8     FL=10651.6    JF=8+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34S   L 13990     10 1+                                                    E    ---
@@ -4441,14 +4444,14 @@ Note: 1. possible JPI presented at the end of each record line of each individua
         4HE(30SI,A):RESONANCES--->F  F     34S   L 14520                         50 KEV    LT    3                        
         4HE(30SI,A):RESONANCES--->F  F     34S  cL $|G{-|a}/|G=0.41; |g{+2}{-|a}/|g{+2}{-sp}=5.4%.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 14576.4   11 (10+)                                                      --- possible JPI=(0,1,2,3,4,5,6,7,8,9,10)
+ LEVEL************************************ 34S   L 14576.4   11 (8,9,10+)                                                  --- possible JPI=(0,1,2,3,4,5,6,7,8,9,10)
                      *new XREF new tags    34S X L XREF=F(14600*)H
                      *new XREF old tags    34S X L XREF=F(14600*)H
                      #old XREF in Adopted  34S X L XREF=H
         4HE(30SI,A):RESONANCES--->F  F(*)  34S   L 14600                         50 KEV    LT    3                        
                 24MG(16O,A2PG)--->H  H     34S   L 14576.5   12 (10+)                                                     
         4HE(30SI,A):RESONANCES--->F  F(*)  34S  cL $|G{-|a}/|G=0.25; |g{+2}{-|a}/|g{+2}{-sp}=3.1%.
- GAMMA------------------------------------ 34S   G 2768.9    9  100                                                   M    --- EG=2768.9     FL=11807.4    JF=8(+)
+ GAMMA------------------------------------ 34S   G 2768.9    9  100                                                   M    --- EG=2768.9     FL=11807.4    JF=(8)
                 24MG(16O,A2PG)--->H  H     34S   G 2768.9    9 100                                                         *** EG=2768.9     FL=11807.5    JF=8+
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34S   L 14600                         50 KEV    LT                              ---
@@ -4525,17 +4528,17 @@ Note: 1. possible JPI presented at the end of each record line of each individua
         4HE(30SI,A):RESONANCES--->F  F(*)  34S   L 15220                         50 KEV    LT    3                        
                 24MG(16O,A2PG)--->H  H     34S   L 15244.4   10                                                           
         4HE(30SI,A):RESONANCES--->F  F(*)  34S  cL $|G{-|a}/|G=0.93; |g{+2}{-|a}/|g{+2}{-sp}=7.1%.
- GAMMA------------------------------------ 34S   G 1902.7    6  100                                                   M    --- EG=1902.7     FL=13341.6    JF=10(+)
+ GAMMA------------------------------------ 34S   G 1902.7    6  100                                                   M    --- EG=1902.7     FL=13341.6    JF=(10+)
                 24MG(16O,A2PG)--->H  H     34S   G 1902.7    6 100                                                         *** EG=1902.7     FL=13341.7    JF=10+
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 15281.0   17 (10)                                                       --- possible JPI=(0,1,2,3,4,5,6,7,8,9,10)
+ LEVEL************************************ 34S   L 15281.0   17 (10-)                                                 C    --- possible JPI=(0,1,2,3,4,5,6,7,8,9,10)
                      *new XREF new tags    34S X L XREF=F(15300*)H
                      *new XREF old tags    34S X L XREF=F(15300*)H
                      #old XREF in Adopted  34S X L XREF=H
         4HE(30SI,A):RESONANCES--->F  F(*)  34S   L 15300                         100 KEV   LT    4                        
                 24MG(16O,A2PG)--->H  H     34S   L 15281.0   18 (10)                                                  B   
         4HE(30SI,A):RESONANCES--->F  F(*)  34S  cL $|G{-|a}/|G=0.10; |g{+2}{-|a}/|g{+2}{-sp}=3%.
- GAMMA------------------------------------ 34S   G 4880.8    16 100                                                        --- EG=4880.8     FL=10399.8    JF=8(-)
+ GAMMA------------------------------------ 34S   G 4880.8    16 100                                                        --- EG=4880.8     FL=10399.8    JF=(8-)
                 24MG(16O,A2PG)--->H  H     34S   G 4880.8    16 100                                                        *** EG=4880.8     FL=10399.9    JF=8-
 ------------------------------------------------------------------------------------------------------------------------
  LEVEL************************************ 34S   L 15300                         100 KEV   LT                              ---
@@ -4629,7 +4632,7 @@ Note: 1. possible JPI presented at the end of each record line of each individua
         4HE(30SI,A):RESONANCES--->F  F     34S   L 16600                         50 KEV    LT    4                        
         4HE(30SI,A):RESONANCES--->F  F     34S  cL $|G{-|a}/|G=0.18; |g{+2}{-|a}/|g{+2}{-sp}=1.1%.
 ------------------------------------------------------------------------------------------------------------------------
- LEVEL************************************ 34S   L 16649.0   13 (10,11,12+)                                                ---
+ LEVEL************************************ 34S   L 16649.0   13 (12+)                                                 Z    --- possible JPI=(0,1,2,3,4,5,6,7,8,9,10,11,12+)
                      *new XREF new tags    34S X L XREF=F(16650*)H
                      *new XREF old tags    34S X L XREF=F(16650*)H
                      #old XREF in Adopted  34S X L XREF=H
@@ -5161,12 +5164,12 @@ Statistics of levels and gammas from all datasets of 34S:
 Statistics of all datasets from input ENSDF files:
                 Nuclide     #of Adopted  #of Adopted    #of All      #of All      #of Lines        #of Datasets
                                Levels       Gammas     L Records    G Records                      (non-Adopted)
-                    34S        367          419          1096         1095           5490             33
+                    34S        367          419          1096         1095           5716             33
 
-               IN TOTAL        367          419          1096         1095           5490             33
+               IN TOTAL        367          419          1096         1095           5716             33
 
 Number of nuclides     : 1
 Number of blocks       : 34
-Number of references   : 159
-Number of lines in files: 5524
+Number of references   : 160
+Number of lines in files: 5750
 (from all blocks including abstract, comment, reference)
