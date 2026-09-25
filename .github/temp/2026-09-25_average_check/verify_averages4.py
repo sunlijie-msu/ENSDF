@@ -200,14 +200,16 @@ for u in units:
     match = []
     if q:
         tol = 0.5 * 10.0 ** (-q["dec"]) + 1e-9
-        hits = [nm for nm, c in cands.items()
-                if abs(c["val"] - q["val"]) <= tol and (c["unc"] is None or q["unc"] is None
-                                                        or abs(c["unc"] - q["unc"]) <= tol)]
-        if hits:
-            match.append("quoted->" + ",".join(hits))
-        else:
-            s = cands.get("suggested")
-            issues.append("quoted %s(%.4g) vs suggested %s" % (q["txt"], q["unc"], res["sugg_s"]))
+        all_hits = [nm for nm, c in cands.items()
+                    if abs(c["val"] - q["val"]) <= tol and (c["unc"] is None or q["unc"] is None
+                                                            or abs(c["unc"] - q["unc"]) <= tol)]
+        if all_hits:
+            match.append("quoted->" + ",".join(all_hits))
+        sg = cands.get("suggested")
+        ok_sugg = sg is not None and abs(sg["val"] - q["val"]) <= tol and (
+            sg["unc"] is None or q["unc"] is None or abs(sg["unc"] - q["unc"]) <= tol)
+        if not ok_sugg:
+            issues.append("quoted %s(%.4g) != Suggested Adopted Result %s" % (q["txt"], q["unc"], res["sugg_s"]))
     if rec:
         if ident == "T":
             ratio = 1.0
@@ -255,7 +257,8 @@ for u in units:
     rows.append({"line": u["start"], "ident": ident, "owner": owner["line"] if owner else 0,
                  "field": src, "qN": quoted_n, "pN": res["n"], "sugg": res["sugg_s"],
                  "label": res["label"], "stated": stated, "rec": rec, "match": match,
-                 "issues": issues, "wt": res["wt_s"], "uw": res["uw_s"]})
+                 "issues": issues, "wt": res["wt_s"], "uw": res["uw_s"],
+                 "ref": re.sub(r"\s+", " ", t)[:58]})
 
 emit("average comments checked: %d" % len(rows))
 emit("clean: %d    flagged: %d" % (sum(1 for r in rows if not r["issues"]), sum(1 for r in rows if r["issues"])))
@@ -274,15 +277,21 @@ emit()
 emit("=== FLAGGED (%d) ===" % sum(1 for r in rows if r["issues"]))
 for r in rows:
     if r["issues"]:
-        emit("line %-6d %-5s owner %-6s stated %-11s tool: %-16s %-18s | %s"
-             % (r["line"], r["ident"], r["owner"], r["stated"], r["sugg"], r["label"], "; ".join(r["issues"])))
+        emit("line %-6d %-5s owner %-6s stated %-11s tool: %-16s %-18s"
+             % (r["line"], r["ident"], r["owner"], r["stated"], r["sugg"], r["label"]))
+        emit("        comment: %s" % r["ref"])
+        emit("        issue  : %s" % "; ".join(r["issues"]))
 emit()
 emit("=== weighted vs unweighted candidates for flagged rows ===")
 for r in rows:
     if r["issues"]:
+        rv = "-"
+        if r["rec"]:
+            rv = r["rec"].get("txt") or "%.10g" % r["rec"]["val"]
+            if r["rec"].get("unc") is not None:
+                rv += "(%.3g)" % r["rec"]["unc"]
         emit("line %-6d weighted=%-16s unweighted=%-16s record=%s" % (r["line"], r.get("wt", "-"),
-                                                                      r.get("uw", "-"),
-                                                                      r["rec"]["txt"] if r["rec"] else "-"))
+                                                                      r.get("uw", "-"), rv))
 
 with io.open(OUT, "w", encoding="utf-8") as fh:
     fh.write("\n".join(out) + "\n")
