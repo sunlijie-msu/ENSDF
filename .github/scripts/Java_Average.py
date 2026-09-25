@@ -502,11 +502,11 @@ def parse_comment_data(comment_text: str) -> List[Tuple[float, float, float]]:
     cleaned_lines = []
     for line in lines:
         stripped = re.sub(
-            r'^\s*[0-9]{0,3}[A-Za-z]{1,2}\s*\d?c[Ll]\s*(?:T\$)?\s*',
+            r'^\s*[0-9]{0,3}[A-Za-z]{1,2}\s*\d?c[LlGg]\s*(?:T\$)?\s*',
             '', line, flags=re.IGNORECASE
         )
         stripped = re.sub(
-            r'^\s*\d{1,3}\s*[A-Za-z]{1,2}\s+\d?c[Ll]\s*(?:T\$)?\s*',
+            r'^\s*\d{1,3}\s*[A-Za-z]{1,2}\s+\d?c[LlGg]\s*(?:T\$)?\s*',
             '', stripped, flags=re.IGNORECASE
         )
         cleaned_lines.append(stripped)
