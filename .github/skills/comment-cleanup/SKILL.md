@@ -40,7 +40,10 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 
 Order comment units in each `cL`/`cG` block per `.github/agents/ENSDF-Agent.agent.md`
 (general comment last). Move whole units (first line plus continuations) unchanged — no
-text edits, no renumbering, no data-record changes. Within one `cG M,MR$` unit, list
+text edits, no renumbering, no data-record changes. Swapping two adjacent units exchanges
+their padding because their text lengths differ: replace both whole lines and recompute
+trailing spaces so each stays exactly 80 characters, changing padding only (content bytes
+must be identical to the pre-edit lines). Within one `cG M,MR$` unit, list
 measured bases before the level-scheme/RUL clause, and keep each per-gamma identifier
 scoped to the fields its source supplies. Validate with `.github/scripts/`:
 `ensdf_1line_ruler.py`, `check_gamma_ordering.py`, `column_calibrate.py`; re-check that

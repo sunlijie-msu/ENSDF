@@ -3,7 +3,7 @@
  34S   H TYP=FUL$AUT=NINEL NICA, BALRAJ SINGH$CIT=NDS 113, 1563 (2012)$         
  34S 2 H CUT=28-May-2012$                                                       
  34S  dG $Transition strength is calculated by Java-RULER (version 16-Sep-2026) 
- 34S  DG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
+ 34S  dG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  34S  dL E$Least-squares fitting is done by GLSC (version 08-Jul-2026)          
  34S   Q -5491.60  4 11417.154 10883.3 11-7923.645     2021WA16                 
  34S  cQ $S(2n)=20058.789 {I40}, S(2p)=20431.9 {I3} (2021Wa16)                  
@@ -509,7 +509,7 @@
  34S S G  KC=3.27E-6 7$LC=2.52E-7 5$MC=2.12E-8 5                                
  34S S G  IPC=0.00110 7                                                         
  34S   L 6168.857  29 3+               9.0 FS    LT                             
- 34S X L XREF=MNPRW(6170)Z(6130*)                                               
+ 34S X L XREF=M(6173)NPRW(6170)Z(6130*)                                         
  34S  cL J$spin=3 from p|g(|q) in {+31}P(|a,p|g). |p=+ from the strongest branch
  34S 2cL 2864.56|g, M1+E2 to 2+, 3304.207 level. Discrepancy: |p=- from L=1+3   
  34S 3cL from 3/2+ for 6174 {I8} level in {+33}S(d,p) and L=(3) from 0+ for 6179
@@ -622,20 +622,21 @@
  34S   L 6535      15                                                           
  34S X L XREF=NR(6533?)                                                         
  34S  cL E$from {+32}S(t,p).                                                    
- 34S   L 6639      1  4(-)             42 FS     10                             
+ 34S   L 6639      1  4(+)             42 FS     10                             
  34S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
  34S X L XREF=MNRWZ                                                             
  34S  cL E$weighted average of 6639 {I1} from {+31}P(|a,p|g), 6639 {I15} from   
  34S 2cL {+32}S(t,p), 6640 {I9} from {+33}S(d,p), and 6635 {I14} from           
  34S 3cL {+34}S(p,p),(p,p'),(pol p,p').                                         
- 34S  cL J$spin=4 from p|g(|q) in {+31}P(|a,p|g). 4- is assigned by 1974Gr15 in 
- 34S 2cL {+34}S(|a,|a),(|a,|a'),(|a,|a'|g) without details. L=(3) from 3/2+ in  
- 34S 3cL {+33}S(d,p).                                                           
+ 34S  cL J$spin=4 from p|g(|q) in {+31}P(|a,p|g). |p=(+) from 959|g to 2+,      
+ 34S 2cL 5679.925 level. 4- is assigned by 1974Gr15 in                          
+ 34S 3cL {+34}S(|a,|a),(|a,|a'),(|a,|a'|g) without details. L=(3) from 3/2+ for 
+ 34S 4cL 6640 {I9} level in {+33}S(d,p).                                        
  34S  cL T$lifetime |t=60 fs {I15} in {+31}P(|a,p|g) from 1977GrZH with DSAM.   
- 34S   G 959          28     13 [M2]                                        P   
+ 34S   G 959          28     13 [E2]                                        P   
  34S S G  CC=8.00E-5 11$KC=7.38E-5 10$LC=5.71E-6 8$MC=4.82E-7 7                 
  34S  cG $B(M2)(W.u.)=1.9|*10{+4} {I+9-8} exceeds RUL=3                         
- 34S   G 2015         100    13 [M1,E2]                                     P   
+ 34S   G 2015         100    13 [E1]                                        P   
  34S S G  CC=0.000297 35$KC=9.5E-6 5$LC=7.4E-7 4$MC=6.20E-8 33                  
  34S S G  IPC=0.000287 35                                                       
  34S  cG $B(M1)(W.u.)=0.050 {I+17-11} if M1, B(E2)(W.u.)=48 {I+16-11} if E2     
@@ -823,7 +824,7 @@
  34S S G  IPC=0.001804 25                                                       
  34S B G BE1W=2.9E-4 +25-10                                                     
  34S   L 7655      11 (1-,2-,3-,4-,5-)                                          
- 34S X L XREF=NRW                                                               
+ 34S X L XREF=RW                                                                
  34S  cL E$weighted average of 7659 {I11} from {+33}S(d,p) and 7649 {I14} from  
  34S 2cL {+34}S(p,p)                                                            
  34S  cL J$L=(3) from 3/2+ in {+33}S(d,p).                                      
@@ -1728,7 +1729,7 @@
  34S  cG M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=(yes)   
  34S 2cG from level scheme.                                                     
  34S  cG $B(E1)(W.u.)=0.44 {I+11-7} exceeds RUL=0.1                             
- 34S  cG $B(M2)(W.u.)=8|*10{+1} {I+6-4} exceeds RUL=3
+ 34S  cG $B(M2)(W.u.)=8|*10{+1} {I+6-4} exceeds RUL=3                           
  34S   L 11515.3      2-               1.262 KEV 25                             
  34S X L XREF=Q                                                                 
  34S  cL $|G{-n}=1.260 keV {I25}, |G{-|g}=1.48 eV {I13} from                    
@@ -2247,4 +2248,4 @@
  34S X L XREF=F                                                                 
  34S   L 23500                         100 KEV   LT                             
  34S X L XREF=F                                                                 
-                                                                                
+
