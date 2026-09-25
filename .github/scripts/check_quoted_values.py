@@ -271,6 +271,9 @@ _LEVEL_QUOTE = re.compile(
     r'(?P<jpi>(?:\([^()]*\)|[0-9/()+,\- ]){1,24}?)\s*,\s*'
     r'(?P<level>g\.s\.|\d+(?:\.\d+)?)'
     r'(?:-keV)?'
+    # A token immediately followed by +/- is another J-pi value in a list
+    # (e.g. "to 2+, 3+, 3-, and 4- levels"), not a quoted level energy.
+    r'(?![+-])'
     r'(?P<suffix>\s+(?:level|resonance)\b)?')
 
 

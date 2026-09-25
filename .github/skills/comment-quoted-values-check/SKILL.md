@@ -160,6 +160,7 @@ Re-run the checker after any L-record J-π or level-energy edit: existing commen
 3. **Energy string mismatches:** `1991` ≠ `1991.27` — must match character-for-character
 4. **Ground state notation:** `g.s.` in comments = `0.0` in data records (no error)
 5. **Energy conservation not checked:** Always verify E_initial - E_final ≈ E_gamma
+6. **J-π lists misread as energies:** a comma-separated J-π list (`|g D(+Q) to 2+, 3+, 3-, and 4- levels`) quotes no energies; `_LEVEL_QUOTE` ignores a number immediately followed by `+`/`-` (`(?![+-])`), so never "fix" such a comment to satisfy a parse.
 
 ---
 
