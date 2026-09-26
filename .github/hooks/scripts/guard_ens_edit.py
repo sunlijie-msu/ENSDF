@@ -62,10 +62,44 @@ READ_TOOLS = {"read_file", "readFile", "read/readFile"}
 
 
 def deny(reason):
-    print(json.dumps({"hookSpecificOutput": {"hookEventName": "PreToolUse",
+    payload = json.dumps({"hookSpecificOutput": {"hookEventName": "PreToolUse",
                                              "permissionDecision": "deny",
-                                             "permissionDecisionReason": reason}}))
+                                             "permissionDecisionReason": reason}})
+    write_stdout(payload)
     sys.exit(0)
+
+
+def write_stdout(text):
+    """Emit UTF-8 bytes regardless of the console code page."""
+    data = (text + "\n").encode("utf-8")
+    try:
+        sys.stdout.buffer.write(data)
+        sys.stdout.buffer.flush()
+    except AttributeError:
+        sys.stdout.write(text + "\n")
+
+
+def load_event():
+    """Parse the hook payload from stdin as UTF-8.
+
+    sys.stdin decodes with the console code page (e.g. cp936), which corrupts
+    non-ASCII characters in anchors so they never match the UTF-8 file text.
+    """
+    try:
+        raw = sys.stdin.buffer.read()
+    except AttributeError:
+        raw = sys.stdin.read().encode("utf-8", "replace")
+    if not raw.strip():
+        return {}
+    for enc in ("utf-8-sig", "utf-8"):
+        try:
+            return json.loads(raw.decode(enc))
+        except (UnicodeDecodeError, json.JSONDecodeError):
+            continue
+    try:
+        return json.loads(raw.decode(sys.stdin.encoding or "utf-8", "replace"))
+    except json.JSONDecodeError:
+        return {}
 
 
 def workspace_root(data):
@@ -326,7 +360,7 @@ def guard_terminal(command, state, root):
 
 
 def main():
-    event = json.load(sys.stdin)
+    event = load_event()
     tool = event.get("tool_name", "")
     data = event.get("tool_input") or {}
     root = workspace_root(event)

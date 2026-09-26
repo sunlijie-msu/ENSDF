@@ -50,15 +50,29 @@ PATCH_HEADER_PREFIXES = (
 
 
 def emit(payload):
-    sys.stdout.write(json.dumps(payload))
+    data = json.dumps(payload).encode("utf-8")
+    try:
+        sys.stdout.buffer.write(data)
+        sys.stdout.buffer.flush()
+    except AttributeError:
+        sys.stdout.write(json.dumps(payload))
 
 
 def load_input():
-    raw = sys.stdin.read().strip()
-    if not raw:
-        return {}
+    """Parse the hook payload from stdin as UTF-8 (never the console code page)."""
     try:
-        return json.loads(raw)
+        raw = sys.stdin.buffer.read()
+    except AttributeError:
+        raw = sys.stdin.read().encode("utf-8", "replace")
+    if not raw.strip():
+        return {}
+    for enc in ("utf-8-sig", "utf-8"):
+        try:
+            return json.loads(raw.decode(enc))
+        except (UnicodeDecodeError, json.JSONDecodeError):
+            continue
+    try:
+        return json.loads(raw.decode(sys.stdin.encoding or "utf-8", "replace"))
     except json.JSONDecodeError:
         return {}
 
