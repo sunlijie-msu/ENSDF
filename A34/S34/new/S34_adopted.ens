@@ -487,11 +487,11 @@
  34S   G 1121.33   9  57     8  [M1+E2]  0.33    LT                             
  34S S G  CC=3.3E-5 5$KC=2.9E-5 4$LC=2.26E-6 33$MC=1.91E-7 28                   
  34S S G  IPC=1.51E-6 32                                                        
- 34S   G 1922.92   22 100    18 [M1,E2]  0.33    LT                             
+ 34S   G 1922.92   22 100    18 [M1+E2]  2.1     LT                             
  34S S G  CC=0.000257 32$KC=1.03E-5 6$LC=8.0E-7 5$MC=6.7E-8 4                   
  34S S G  IPC=0.000246 31                                                       
  34S  cG RI$other: 100 {I42} from {+31}P(|a,p|g).                               
- 34S   G 3870.51   31 92     13 [M1,E2]                0.00106 7                
+ 34S   G 3870.51   31 92     13 [M1+E2]                0.00106 7                
  34S S G  KC=3.42E-6 8$LC=2.63E-7 6$MC=2.22E-8 5                                
  34S S G  IPC=0.00105 7                                                         
  34S  cG RI$other: 128 {I42} from {+31}P(|a,p|g).                               
@@ -943,8 +943,8 @@
  34S  cL J$L=2 from 0+ in {+32}S(t,p).                                          
  34S   L 8294.40   9  4(+)             28 FS     LT                             
  34S X L XREF=M(8293)N(8293)PR(8299)W(8296)                                     
- 34S  cL J$spin=4 from p|g(|q) in {+31}P(|a,p|g). 6166.24|g to 2+, 2127.561     
- 34S 2cL level.                                                                 
+ 34S  cL J$spin=4 from p|g(|q) in {+31}P(|a,p|g). Strongest branch 6166.24|g to 
+ 34S 2cL 2+, 2127.561 level.                                                    
  34S  cL T$lifetime |t<40 fs in {+31}P(|a,p|g) from 1977GrZH with DSAM.         
  34S   G 1951.77   19 34     7  [E3]                                            
  34S S G  CC=0.0001731 24$KC=1.700E-5 24$LC=1.312E-6 18$MC=1.106E-7 15          
@@ -1993,7 +1993,7 @@
  34S X L XREF=T                                                                 
  34S   L 12970                         50 KEV    LT                             
  34S X L XREF=F                                                                 
- 34S   L 12985.4   6  (9)                                                       
+ 34S   L 12985.4   6  (9+)                                                      
  34S X L XREF=H                                                                 
  34S  cL J$2333.8|g to (8+), 10651.5 level; 1611.5|g to (8+), 11374.2 level;    
  34S 2cL 356.3|g from (10+), 13341.6 level. Spin increases with excitation      
@@ -2028,8 +2028,7 @@
  34S S G  IPC=7.9E-6 16                                                         
  34S  cG M$D+Q, |DJ=0,1 from |g|g(|q)(ADO) in {+24}Mg({+16}O,|a2p|g). M2 ruled  
  34S 2cG out by RUL.                                                            
- 34S  cG $B(M1)(W.u.)=0.031 {I+9-7} if M1, B(E2)(W.u.)=83 {I+23-18} if E2       
- 34S  cG $B(E2)(W.u.)=83 {I+23-18} upper bound exceeds RUL=100 if E2            
+ 34S  cG $B(M1)(W.u.)=0.031 {I+9-7} if M1, B(E2)(W.u.)=83 {I+23-18} if E2.      
  34S   G 1966.8    9  81     19 E2                                          M   
  34S F G FL=11374.2                                                             
  34S S G  CC=0.000309 4$KC=1.048E-5 15$LC=8.08E-7 11$MC=6.81E-8 10              

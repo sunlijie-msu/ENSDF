@@ -1,17 +1,21 @@
- 34S   L 11545     5  1-               1.4 EV    4                          A   
- 34S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
- 34S X L XREF=LQ(11541)                                                         
- 34S  cL E$other: 11541 from {+33}S(n,|g),(n,n):resonances.                     
- 34S  cL J$1- in both {+30}Si(|a,|g),(|a,n):resonances and                      
- 34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
- 34S  cL $|G{-n}=0.36 keV {I4}, |G{-|g}=1.4 eV {I4}, |G{-|a}=0.27 keV {I6} from 
- 34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
- 34S  cL $|G{-|g}=1.0 eV from {+30}Si(|a,|g),(|a,n):resonances.                 
- 34S   G 8240         100       [E1]                                        S   
- 34S  cG $B(E1)(W.u.)=0.71 {I+11-9} exceeds RUL=0.1                             
- 34S   G 9416         60        [E1]                                        S   
- 34S  cG $B(E1)(W.u.)=0.29 {I6} exceeds RUL=0.1                                 
- 34S   G 11543        63        (E1)                                        A   
- 34S  cG M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from     
- 34S 2cG level scheme.                                                          
- 34S  cG $B(E1)(W.u.)=0.164 {I+33-31} exceeds RUL=0.1                           
+ 34S   L 5998.10   8  2+               6.9 FS    LT                             
+ 34S X L XREF=MN(6008)PRWZ                                                      
+ 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 5997.30|g, E2 to 0+,
+ 34S 2cL g.s. L=2 from 0+ in {+32}S(t,p).                                       
+ 34S  cL T$lifetime |t<10 fs in {+31}P(|a,p|g) from 1972Jo10 with DSAM.         
+ 34S   G 1121.33   9  57     8  [M1+E2]  0.33    LT                             
+ 34S S G  CC=3.3E-5 5$KC=2.9E-5 4$LC=2.26E-6 33$MC=1.91E-7 28                   
+ 34S S G  IPC=1.51E-6 32                                                        
+ 34S   G 1922.92   22 100    18 [M1+E2]  2.1     LT                             
+ 34S S G  CC=0.000257 32$KC=1.03E-5 6$LC=8.0E-7 5$MC=6.7E-8 4                   
+ 34S S G  IPC=0.000246 31                                                       
+ 34S  cG RI$other: 100 {I42} from {+31}P(|a,p|g).                               
+ 34S   G 3870.51   31 92     13 [M1,E2]                0.00106 7                
+ 34S S G  KC=3.42E-6 8$LC=2.63E-7 6$MC=2.22E-8 5                                
+ 34S S G  IPC=0.00105 7                                                         
+ 34S  cG RI$other: 128 {I42} from {+31}P(|a,p|g).                               
+ 34S   G 5997.30   31 56     10 E2                     1.74E-3 2                
+ 34S S G  KC=1.896E-6 27$LC=1.459E-7 20$MC=1.231E-8 17                          
+ 34S S G  IPC=0.001741 24                                                       
+ 34S  cG RI$other: 278 {I50} from {+31}P(|a,p|g).                               
+ 34S  cG M$Q from p|g(|q) in {+31}P(|a,p|g). M2 ruled out by RUL.               
