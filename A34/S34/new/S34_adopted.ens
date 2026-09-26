@@ -637,11 +637,12 @@
  34S  cL E$weighted average of 6639 {I1} from {+31}P(|a,p|g), 6639 {I15} from   
  34S 2cL {+32}S(t,p), 6640 {I9} from {+33}S(d,p), and 6635 {I14} from           
  34S 3cL {+34}S(p,p),(p,p'),(pol p,p').                                         
- 34S  cL J$spin=4 from p|g(|q) in {+31}P(|a,p|g). |p=(+) from 959|g to 2+,      
- 34S 2cL 5679.928 level. Discrepancy: 4- is assigned by 1974Gr15 in             
- 34S 3cL {+34}S(|a,|a),(|a,|a'),(|a,|a'|g) without details. L=(3) from 3/2+ for 
- 34S 4cL 6640 {I9} level in {+33}S(d,p). If |p=-, the 959|g to 2+ would have to 
- 34S 5cL be M2 and B(M2)(W.u.)=1.9|*10{+4} {I+9-8} exceeds RUL=3.               
+ 34S  cL J$spin=4 from p|g(|q) in {+31}P(|a,p|g). Parity has discrepancy: 4- is 
+ 34S 2cL assigned by 1974Gr15 in {+34}S(|a,|a),(|a,|a'),(|a,|a'|g) without      
+ 34S 3cL details. L=(3) from 3/2+ for 6640 {I9} level in {+33}S(d,p). If |p=-,  
+ 34S 4cL the 959|g to 2+ would have to be M2 and B(M2)(W.u.)=1.9|*10{+4} {I+9-8}
+ 34S 5cL exceeds RUL=3. Therefore, |p=(+) is assigned based on 959|g to 2+,     
+ 34S 6cL 5679.928 level.                                                        
  34S  cL T$lifetime |t=60 fs {I15} in {+31}P(|a,p|g) from 1977GrZH with DSAM.   
  34S   G 959          28     13 [E2]                                        P   
  34S S G  CC=5.33E-5 7$KC=4.92E-5 7$LC=3.80E-6 5$MC=3.20E-7 4                   
@@ -1347,6 +1348,8 @@
  34S  cL J$2147.2|g, E2, |DJ=2 to (6+), 8503.7 level; 2280.4|g, D, |DJ=1 to     
  34S 2cL (7)-, 8371.0 level. 8+ from shell model calculation and band           
  34S 3cL assignments (2005Ma03) in {+24}Mg({+16}O,|a2p|g).                      
+ 34S  cL T$lifetime |t=50 fs {I25} in {+24}Mg({+16}O,|a2p|g) from 2005Ma03 with 
+ 34S 2cL DSAM.                                                                  
  34S   G 2147.2    6  100    21 E2                                          M   
  34S S G  CC=0.000396 6$KC=8.95E-6 13$LC=6.90E-7 10$MC=5.82E-8 8                
  34S S G  IPC=0.000386 5                                                        
@@ -1748,8 +1751,6 @@
  34S   G 9377         100       (E1+M2)  -0.058  16                         A   
  34S  cG M,MR$D+Q from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=(yes)   
  34S 2cG from level scheme.                                                     
- 34S  cG $B(E1)(W.u.)=0.44 {I+10-7} exceeds RUL=0.1                             
- 34S  cG $B(M2)(W.u.)=8|*10{+1} {I+6-4} exceeds RUL=3                           
  34S   L 11515.3      2-               1.262 KEV 25                             
  34S X L XREF=Q                                                                 
  34S  cL $|G{-n}=1.260 keV {I25}, |G{-|g}=1.48 eV {I13} from                    
@@ -1766,13 +1767,19 @@
  34S 2cL {+33}S(n,|g),(n,n):resonances.                                         
  34S  cL $|G{-|g}=1.0 eV from {+30}Si(|a,|g),(|a,n):resonances.                 
  34S   G 8240         100       [E1]                                        S   
- 34S  cG $B(E1)(W.u.)=0.71 {I+11-9} exceeds RUL=0.1                             
+ 34S B G BE1W=0.00159 +66-37                                                    
+ 34S  cG BE1W$calculated using |G{-|g}=1.4 eV {I4} from                         
+ 34S 2cG {+33}S(n,|g),(n,n):resonances.                                         
  34S   G 9416         60        [E1]                                        S   
- 34S  cG $B(E1)(W.u.)=0.29 {I6} exceeds RUL=0.1                                 
+ 34S B G BE1W=6.4E-4 +28-17                                                     
+ 34S  cG BE1W$calculated using |G{-|g}=1.4 eV {I4} from                         
+ 34S 2cG {+33}S(n,|g),(n,n):resonances.                                         
  34S   G 11543        63        (E1)                                        A   
  34S  cG M$D from |g(|q) in {+30}Si(|a,|g),(|a,n):resonances. |D|p=yes from     
  34S 2cG level scheme.                                                          
- 34S  cG $B(E1)(W.u.)=0.164 {I+33-31} exceeds RUL=0.1                           
+ 34S B G BE1W=3.6E-4 +16-10                                                     
+ 34S  cG BE1W$calculated using |G{-|g}=1.4 eV {I4} from                         
+ 34S 2cG {+33}S(n,|g),(n,n):resonances.                                         
  34S   L 11546                         0.23 KEV  4                              
  34S X L XREF=Q                                                                 
  34S   L 11551                         0.15 KEV  3                              
@@ -2009,10 +2016,12 @@
  34S X L XREF=H                                                                 
  34S  cL J$1966.8|g, E2, |DJ=2 to (8+), 11374.2 level. 10+ from shell model     
  34S 2cL calculation (2005Ma03) in {+24}Mg({+16}O,|a2p|g).                      
- 34S   G 356.3     6  6.3    31 [M1,E2]                                     M   
+ 34S  cL T$lifetime |t=260 fs {I40} in {+24}Mg({+16}O,|a2p|g) from 2005Ma03 with
+ 34S 2cL DSAM.                                                                  
+ 34S   G 356.3     6  6.3    31 [M1+E2]  0.35    LT                         M   
  34S S G  CC=7.E-4 4$KC=7.E-4 4$LC=5.2E-5 31$MC=4.3E-6 26                       
- 34S  cG $B(M1)(W.u.)=0.09 {I+6-4} if M1                                        
- 34S  cG $B(E2)(W.u.)=2.8|*10{+3} {I+17-13} exceeds RUL=100 if E2               
+ 34S B G BM1W=0.09 +6-4                                        
+ 34S  cG MR$deduced by evaluators assuming RUL=100 for B(E2)(W.u.).             
  34S   G 1200.4    7  100    22 M1+E2                                       M   
  34S F G FL=12141.3                                                             
  34S S G  CC=3.5E-5 5$KC=2.54E-5 33$LC=1.96E-6 26$MC=1.65E-7 22                 
