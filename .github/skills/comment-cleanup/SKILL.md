@@ -71,6 +71,8 @@ their wording and re-wrap the whole paragraph instead of re-padding the single l
 	moving whole units (first line + continuations).
 5. Keep deduced E|g values (no uncertainty) undocumented at per-gamma level unless an explicit exception is required.
 6. For each M/MR assignment, confirm the basis against the raw `.mrg` G-record comments and cite that same source, named by its reaction (e.g. `in {+24}Mg({+16}O,|a2p|g)`) so the basis stays traceable.
+7. Match reaction wording in dataset general comments to the ID-line
+	target(projectile,ejectile) order and prime notation; re-check after any human edit of the ID line.
 
 ## Completion Criteria
 
