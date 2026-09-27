@@ -48,6 +48,9 @@ measured bases before the level-scheme/RUL clause, and keep each per-gamma ident
 scoped to the fields its source supplies. Validate with `.github/scripts/`:
 `ensdf_1line_ruler.py`, `check_gamma_ordering.py`, `column_calibrate.py`; re-check that
 every line stays exactly 80 characters after each edit — editor tooling can strip padding.
+Reload the file before extending a dataset general-comment block: a human may have
+concurrently reworded or prefixed a line, leaving it over or under 80 characters. Keep
+their wording and re-wrap the whole paragraph instead of re-padding the single line.
 
 ### What to Avoid
 
