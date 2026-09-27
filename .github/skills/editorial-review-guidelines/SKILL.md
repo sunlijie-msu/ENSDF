@@ -114,6 +114,7 @@ Missing terminal periods, XREF notation. Valid ENSDF symbols: `|?`, `{+n}`, `{-n
 - After each file's edits, prove the diff is comment-only (changed lines have `c`/`d` in col 7) and no text was lost (word-level compare against `git show HEAD:<file>`).
 - Find the top block by skipping lines whose col 7 is `c`/`d`; `P`/`N` records count as data records, and `cP`/`cN` stay uppercase.
 - Add a recurring class to `scan_editorial_review.py` CHECKS with a `--selftest` case instead of writing ad-hoc sweep scripts; run it one path at a time.
+- Report every edit as a literal before → after pair quoting the exact changed words, so the human user can track each change.
 
 ## Procedure
 1. Run `python .github/scripts/scan_editorial_review.py [folder_or_file] --skip adopted` — automated sweeps (isotope tokens, bare `I`, braced `{I}`, units, chemical formulas, dittography, `$`/`=` space, `10{-n}`, unicode, leaked tags, spelling). Review every flagged line; discard false positives manually. The glob is one level deep: pass the folder that directly holds the `.ens` files, not its parent.
