@@ -2,60 +2,59 @@
  34    H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$                                    
  34  2 H CIT=ENSDF$CUT=30-Sep-2026$                                             
  34    H TYP=FUL$AUT=NINEL NICA AND BALRAJ SINGH$                               
- 34  2 H CIT=NDS 113, 1563 (2012)$CUT=28-May-2012$                               
+ 34  2 H CIT=NDS 113, 1563 (2012)$CUT=28-May-2012$                              
  34   c  TITL$Nuclear Structure and Decay Data for A=34 Isobars                 
  34   c  AUTH$LIJIE SUN AND JUN CHEN                                            
  34   c  INST$Facility for Rare Isotope Beams, Michigan State University, East  
  34  2c  Lansing, MI 48824, USA                                                 
  34   c  ABST$This work presents a comprehensive and critical evaluation of     
  34  2c  experimental nuclear spectroscopic data from reactions and decays for  
- 34  3c  all 11 known nuclides with mass number 34 (Ne, Na, Mg, Al, Si, P, S,   
- 34  4c  Cl, Ar, K, Ca). Recommended values are produced for level energies,    
- 34  5c  spins and parities, half-lives, and radiation properties including     
- 34  6c  energies, branching ratios, and multipolarities of |g rays, as well as 
- 34  7c  characteristics of |b radiation decays, based on a rigorous assessment 
- 34  8c  of all available experimental data. Discrepancies among existing       
- 34  9c  results are carefully addressed. This work supersedes earlier full     
- 34  Ac  evaluations of A=34 published by 2012Ni10, 1990En08 (also 1998En04     
- 34  Bc  update), and 1978En02.                                                 
- 34  #c                                                                         
- 34   c  {+34}Cl and {+34}S remain the most extensively studied nuclides,       
- 34  2c  investigated through more than 20 different reactions and decays,      
- 34  3c  followed by {+34}P, {+34}Si, and {+34}Ar. {+34}Ne has been observed but
- 34  4c  no nuclear structure information is available. Experimental plans for  
- 34  5c  nuclear structure of {+34}Ne and nearby nuclei have been proposed at   
- 34  6c  RIBF, RIKEN. For {+34}Na, no excited states have been confirmed, and no
- 34  7c  |g rays have been placed with certainty. No |b{+-}-decay dataset exists
- 34  8c  on {+34}Na|){+34}Mg. {+34}Ca has not been observed, and an experiment  
- 34  9c  has been conducted at FRIB in 2026 to identify {+34}Ca through         
- 34  ac  {+32}Ar+2p.                                                            
+ 34  3c  all 11 nuclides with mass number 34 (Ne, Na, Mg, Al, Si, P, S, Cl, Ar, 
+ 34  4c  K, Ca). Recommended values are produced for level energies, spins and  
+ 34  5c  parities, half-lives, and radiation properties including energies,     
+ 34  6c  branching ratios, and multipolarities of |g rays, as well as           
+ 34  7c  characteristics of |b decay, based on a rigorous assessment of all     
+ 34  8c  available experimental data. Discrepancies among existing results are  
+ 34  9c  carefully addressed. This work supersedes earlier full evaluations of  
+ 34  Ac  A=34 published by 2012Ni10, 1990En08 (also 1998En04 update), and       
+ 34  Bc  1978En02.
+ 34   c  {+34}Cl and {+34}S remain the most extensively studied c  nuclides,    
+ 34  2c  investigated through more than 20 different reactions and c  decays,   
+ 34  3c  followed by {+34}P, {+34}Si, and {+34}Ar. {+34}Ne has been identified, 
+ 34  4c  but no nuclear structure information is available. Experimental plans  
+ 34  5c  to study the nuclear structure of {+34}Ne have been proposed at RIBF,  
+ 34  6c  RIKEN. For {+34}Na, no excited states have been confirmed and no |g    
+ 34  7c  rays have been placed with certainty. No |b{+-}-decay dataset exists   
+ 34  8c  for {+34}Na|){+34}Mg. {+34}Ca has not been identified, and an          
+ 34  9c  experiment has been conducted at FRIB in 2026 to identify {+34}Ca      
+ 34  Ac  through {+32}Ar+2p.                                                    
  34   c  CUT$Literature available up to September 30, 2026 has been consulted,  
  34  2c  with the help of the primary bibliographic source, the NSR database    
- 34  3c  (2014Pr09) available at Brookhaven National Laboratory web page:       
+ 34  3c  (2014Pr09) available at the Brookhaven National Laboratory web page:   
  34  4c  www.nndc.bnl.gov/nsr/                                                  
  34   c  COMM$The statistical analysis of |g-ray data and deduced level schemes 
- 34  2c  is carried out through a suite of current versions of computer codes   
- 34  3c  available at the IAEA-NDS web page of ENSDF codes                      
- 34  4c  (https://www-nds.iaea.org/public/ensdf_pgm) such as EvaluationToolkit, 
- 34  5c  GLSC, Java-RULER, and ConsistencyCheck. The direct feedings to excited 
- 34  6c  states in |b{+-} and |e decays have generally been computed from       
- 34  7c  I(|g+ce) intensity balances at each level; the associated log {Ift}    
- 34  8c  values are calculated using the BetaShape code. Theoretical total      
- 34  9c  conversion coefficients are calculated using version v2.3e of BrIcc    
- 34  ac  code (2008Ki07) for frozen-orbit option with an implicit uncertainty of
- 34  bc  1.4% when not stated. Q values and particle separation energies have c 
- 34  cc  been adopted from 2021Wa16 (AME2020). Static magnetic dipole moments c 
- 34  dc  are taken from 2019StZV (long-lived states) and 2020StZV (short-lived  
- 34  ec  states) evaluations, and static electric quadrupole moments from       
- 34  fc  2021StZZ evaluation, when available in these publications. Nuclear rms 
- 34  gc  charge radii have been adopted from 2013An02 evaluation. In cases where
- 34  hc  weighted averaging procedures have been used, the assigned uncertainty 
- 34  ic  in the result is generally not lower than the lowest uncertainty in the
- 34  jc  data points used in the procedure. The evaluation workflow is aided by 
- 34  kc  'ENSDF-Agent'. Adopted levels are placed with the assistance of the    
- 34  lc  machine learning tool 'Level-Matcher'.                                 
+ 34  2c  is carried out through a suite of current versions of computer codes,  
+ 34  3c  such as EvaluationToolkit, GLSC, Java-RULER, and ConsistencyCheck,     
+ 34  4c  available at the IAEA-NDS ENSDF codes web page                         
+ 34  5c  (https://www-nds.iaea.org/public/ensdf_pgm). The direct feedings to    
+ 34  6c  excited states in |b{+-} and |e decays have generally been computed    
+ 34  7c  from I(|g+ce) intensity balances at each level; the associated log     
+ 34  8c  {Ift} values are calculated using the BetaShape code. Theoretical total
+ 34  9c  conversion coefficients are calculated using version 2.3e of the BrIcc 
+ 34  Ac  code (2008Ki07) for the frozen-orbit option with an implicit           
+ 34  Bc  uncertainty of 1.4% when not stated. Q values and particle separation  
+ 34  Cc  energies have been adopted from 2021Wa16 (AME2020). Static magnetic    
+ 34  Dc  dipole moments are taken from 2019StZV (long-lived states) and 2020StZV
+ 34  Ec  (short-lived states) evaluations, and static electric quadrupole       
+ 34  Fc  moments from 2021StZZ evaluation, when available in these publications.
+ 34  Gc  Nuclear rms charge radii have been adopted from 2013An02 evaluation. In
+ 34  Hc  cases where weighted averaging has been used, the assigned uncertainty 
+ 34  Ic  in the result is generally at least as large as the smallest           
+ 34  Jc  uncertainty among the contributing data points. The evaluation workflow
+ 34  Kc  is aided by 'ENSDF-Agent'. Adopted levels are placed with the          
+ 34  Lc  assistance of the machine-learning tool 'Level-Matcher'.               
  34   c  ACKN$Earlier evaluations (2012Ni10, 1998En04 update, 1990En08,         
- 34  2c  1978En02, 1973EnVA, 1967En05, 1962En05, 1957En01, 1954En19), and       
+ 34  2c  1978En02, 1973EnVA, 1967En05, 1962En05, 1957En01, 1954En19) and        
  34  3c  compilations available in the XUNDL database provided valuable         
  34  4c  resources for the present work. The evaluators are grateful to the     
  34  5c  reviewers at different stages of this work, and to the personnel at the
@@ -63,8 +62,8 @@
  34  7c  for facilitating this work.                                            
  34   c  PERM$Contact: sunli@frib.msu.edu, chenj@frib.msu.edu                   
  34   c  FUND$Work supported by the Office of Nuclear Physics, Office of        
- 34  2c  Science, U.S. Department of Energy, through DE-SC0016948 grant at      
- 34  3c  Michigan State University                                              
+ 34  2c  Science, U.S. Department of Energy, through grant DE-SC0016948 at      
+ 34  3c  Michigan State University.                                             
                                                                                 
  34NE    ADOPTED LEVELS                                          ENSDF    202609
  34NE  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
@@ -12807,7 +12806,6 @@
  34CL4c  |g|g-coin and |g|g(|q). Deduced levels, J, |p, |g-ray multipolarities, 
  34CL5c  and lifetimes using the Recoil Distance Method (RDM). Also measured the
  34CL6c  {+31}P(|a,n|g){+34}Cl reaction.                                        
- 34CL d                                                                         
  34CL cG E,RI$From 2014Bi03, unless otherwise noted. No uncertainties for E|g   
  34CL2cG are provided in 2014Bi03. Based on the typical uncertainties reported  
  34CL3cG in other work by the authors using the same INGA detector array, the   
@@ -13269,27 +13267,23 @@
  34CL3c  detected using two Si surface-barrier detectors and |g rays were       
  34CL4c  detected using a Ge(Li) detector. Measured p|g-coin. Deduced lifetimes 
  34CL5c  using DSAM.                                                            
- 34CL d                                                                         
  34CL c  1971De27: 8.0-9.0-MeV {+3}He beams from the Notre Dame model FN tandem 
  34CL2c  Van de Graaff accelerator impinged on natural CdS targets. Protons were
  34CL3c  detected using an annular Si surface-barrier detector and |g rays were 
  34CL4c  detected using NaI(Tl) detectors and coaxial Ge(Li) detectors. Measured
  34CL5c  E{-p}, E|g, I|g, and p|g(|q)-coin. Deduced levels, J, |g-ray branching 
  34CL6c  ratios, and mixing ratios.                                             
- 34CL d                                                                         
  34CL c  1971Sn01: 6.8-MeV {+3}He beam from the Brookhaven National Laboratory  
  34CL2c  3.5-MeV Van de Graaff accelerator impinged on a 95% {+32}S target. |g  
  34CL3c  rays were detected using a Ge(Li) detector. Measured E|g, I|g. Deduced 
  34CL4c  levels and lifetimes using DSAM. Also measured {+31}P(|a,n|g){+34}Cl   
  34CL5c  reaction at the Stony Brook tandem Van de Graaff accelerator and       
  34CL6c  deduced lifetimes using RDM.                                           
- 34CL d                                                                         
  34CL c  1970Br11: 7.5-MeV {+3}He beam from the Utrecht 6-MV tandem Van de      
  34CL2c  Graaff generator impinged on a natural ZnS target. Protons were        
  34CL3c  detected using two Si surface-barrier detectors and |g rays were       
  34CL4c  detected using a Ge(Li) detector. Measured p|g-coin. Deduced levels, J,
  34CL5c  |g-ray branching ratios, and lifetimes using DSAM.                     
- 34CL d                                                                         
  34CL c  1970Br10: 5.2-MeV {+3}He beam from the Padova 5.5-MV Van de Graaff     
  34CL2c  generator impinged on a natural CdS target. Protons were detected using
  34CL3c  an annular Si surface-barrier detector and |g rays were detected using 
@@ -13297,18 +13291,15 @@
  34CL5c  p|g(|q)-coin. Deduced levels, J, |g-ray branching ratios, and mixing   
  34CL6c  ratios. Also measured {+31}P(|a,n|g){+34}Cl reaction using a Ge(Li)    
  34CL7c  detector and deduced lifetimes using DSAM.                             
- 34CL d                                                                         
  34CL c  1970Sy01: 5.75-MeV {+3}He beam from the University of Groningen Van de 
  34CL2c  Graaff accelerator impinged on natural ZnS target. Protons were        
  34CL3c  detected using a Si annular detector and |g rays were detected using a 
  34CL4c  NaI(Tl) detector. Measured E{-p}, E|g, I|g, and p|g(|q)-coin. Deduced  
  34CL5c  levels, J, |g-ray branching ratios, and mixing ratios.                 
- 34CL d                                                                         
  34CL c  1970Th10: 9-, 9.5-, 10-MeV {+3}He beams impinged on natural ZnS target 
  34CL2c  at Nuclear Research Institute, Strasbourg, France. Protons were        
  34CL3c  detected using a Si surface-barrier detector and |g rays were detected 
  34CL4c  using a NaI detector. Measured |gp(|q). Deduced levels and J.          
- 34CL d                                                                         
  34CL c  1972AlZT, 1971AlZB: DSAM with 8.5-MeV {+3}He beam at University of     
  34CL2c  Notre Dame.                                                            
  34CL cG E$E|g values without uncertainties are deduced from level-energy       
