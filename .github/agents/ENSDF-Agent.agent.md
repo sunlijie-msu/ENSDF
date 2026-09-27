@@ -278,7 +278,7 @@ Note: Multiple identical gamma energies appearing in multiple level blocks shoul
 
 **Integral Understanding of Continuation Records and Comments (Column 6)**
 - Column 6 contains the continuation identifier: blank for the first record and alphanumeric for continuation records.
-- Common continuation records include `2 L` and `F L` for L-records, and `2 G` and `B G` for G-records.
+- Common continuation records include `2 L` and `F L` for L-records, and `2 G`, `B G`, and `F G` for G-records.
 - Common continuation comments include `2cL` and `3cL` for L-comment lines, and `2cG` and `3cG` for G-comment lines.
 - Continuation records must remain attached to, and apply only to, the immediately preceding record type (L or G).
 - Continuation comments must remain attached to the immediately preceding comment line.
