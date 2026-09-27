@@ -9,25 +9,25 @@
  34  2c  Lansing, MI 48824, USA                                                 
  34   c  ABST$This work presents a comprehensive and critical evaluation of     
  34  2c  experimental nuclear spectroscopic data from reactions and decays for  
- 34  3c  all 11 nuclides with mass number 34 (Ne, Na, Mg, Al, Si, P, S,         
- 34  4c  Cl, Ar, K, Ca). Recommended values are produced for level energies,    
- 34  5c  spins and parities, half-lives, and radiation properties including     
- 34  6c  energies, branching ratios, and multipolarities of |g rays, as well as 
- 34  7c  characteristics of |b decay, based on a rigorous assessment            
- 34  8c  of all available experimental data. Discrepancies among existing       
- 34  9c  results are carefully addressed. This work supersedes earlier full     
- 34  Ac  evaluations of A=34 published by 2012Ni10, 1990En08 (also 1998En04     
- 34  Bc  update), and 1978En02.                                                 
- 34  @c  {+34}Cl and {+34}S remain the most extensively studied nuclides,       
- 34  2c  investigated through more than 20 different reactions and decays,      
+ 34  3c  all 11 nuclides with mass number 34 (Ne, Na, Mg, Al, Si, P, S, Cl, Ar, 
+ 34  4c  K, Ca). Recommended values are produced for level energies, spins and  
+ 34  5c  parities, half-lives, and radiation properties including energies,     
+ 34  6c  branching ratios, and multipolarities of |g rays, as well as           
+ 34  7c  characteristics of |b decay, based on a rigorous assessment of all     
+ 34  8c  available experimental data. Discrepancies among existing results are  
+ 34  9c  carefully addressed. This work supersedes earlier full evaluations of  
+ 34  Ac  A=34 published by 2012Ni10, 1990En08 (also 1998En04 update), and       
+ 34  Bc  1978En02.
+ 34   c  {+34}Cl and {+34}S remain the most extensively studied c  nuclides,    
+ 34  2c  investigated through more than 20 different reactions and c  decays,   
  34  3c  followed by {+34}P, {+34}Si, and {+34}Ar. {+34}Ne has been identified, 
  34  4c  but no nuclear structure information is available. Experimental plans  
  34  5c  to study the nuclear structure of {+34}Ne have been proposed at RIBF,  
- 34  6c  RIKEN. For {+34}Na, no excited states have been confirmed, and no |g   
+ 34  6c  RIKEN. For {+34}Na, no excited states have been confirmed and no |g    
  34  7c  rays have been placed with certainty. No |b{+-}-decay dataset exists   
- 34  8c  for {+34}Na|){+34}Mg. {+34}Ca has not been observed, and an experiment 
- 34  9c  has been conducted at FRIB in 2026 to identify {+34}Ca through         
- 34  Ac  {+32}Ar+2p.                                                            
+ 34  8c  for {+34}Na|){+34}Mg. {+34}Ca has not been identified, and an          
+ 34  9c  experiment has been conducted at FRIB in 2026 to identify {+34}Ca      
+ 34  Ac  through {+32}Ar+2p.                                                    
  34   c  CUT$Literature available up to September 30, 2026 has been consulted,  
  34  2c  with the help of the primary bibliographic source, the NSR database    
  34  3c  (2014Pr09) available at the Brookhaven National Laboratory web page:   
@@ -41,18 +41,18 @@
  34  7c  from I(|g+ce) intensity balances at each level; the associated log     
  34  8c  {Ift} values are calculated using the BetaShape code. Theoretical total
  34  9c  conversion coefficients are calculated using version 2.3e of the BrIcc 
- 34  ac  code (2008Ki07) for the frozen-orbit option with an implicit           
- 34  bc  uncertainty of 1.4% when not stated. Q values and particle separation  
- 34  cc  energies have been adopted from 2021Wa16 (AME2020). Static magnetic    
- 34  dc  dipole moments are taken from 2019StZV (long-lived states) and 2020StZV
- 34  ec  (short-lived states) evaluations, and static electric quadrupole       
- 34  fc  moments from 2021StZZ evaluation, when available in these publications.
- 34  gc  Nuclear rms charge radii have been adopted from 2013An02 evaluation.   
- 34  hc  In cases where weighted averaging has been used, the assigned          
- 34  ic  uncertainty in the result is generally at least as large as the        
- 34  jc  smallest uncertainty among the contributing data points. The evaluation
- 34  kc  workflow is aided by 'ENSDF-Agent'. Adopted levels are placed          
- 34  lc  with the assistance of the machine-learning tool 'Level-Matcher'.      
+ 34  Ac  code (2008Ki07) for the frozen-orbit option with an implicit           
+ 34  Bc  uncertainty of 1.4% when not stated. Q values and particle separation  
+ 34  Cc  energies have been adopted from 2021Wa16 (AME2020). Static magnetic    
+ 34  Dc  dipole moments are taken from 2019StZV (long-lived states) and 2020StZV
+ 34  Ec  (short-lived states) evaluations, and static electric quadrupole       
+ 34  Fc  moments from 2021StZZ evaluation, when available in these publications.
+ 34  Gc  Nuclear rms charge radii have been adopted from 2013An02 evaluation. In
+ 34  Hc  cases where weighted averaging has been used, the assigned uncertainty 
+ 34  Ic  in the result is generally at least as large as the smallest           
+ 34  Jc  uncertainty among the contributing data points. The evaluation workflow
+ 34  Kc  is aided by 'ENSDF-Agent'. Adopted levels are placed with the          
+ 34  Lc  assistance of the machine-learning tool 'Level-Matcher'.               
  34   c  ACKN$Earlier evaluations (2012Ni10, 1998En04 update, 1990En08,         
  34  2c  1978En02, 1973EnVA, 1967En05, 1962En05, 1957En01, 1954En19) and        
  34  3c  compilations available in the XUNDL database provided valuable         
@@ -64,4 +64,4 @@
  34   c  FUND$Work supported by the Office of Nuclear Physics, Office of        
  34  2c  Science, U.S. Department of Energy, through grant DE-SC0016948 at      
  34  3c  Michigan State University.                                             
-                  
+
