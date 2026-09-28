@@ -108,6 +108,8 @@ Missing terminal periods, XREF notation. Valid ENSDF symbols: `|?`, `{+n}`, `{-n
 - Values quoted in comments must name the specific gamma/level/multipolarity record and match it character-for-character — see `comment-quoted-values-check`.
 - A capital that starts a new sentence (including after abbreviations such as `g.s.`, `m.s.`, `r.m.s.`) is not a capitalization error; do not lowercase it.
 - Bare `|<`, `|>`, `|=` in comment should not convert to `<`, `>`, `=`.
+- A "comment flag at column 78/79" report needs the record type checked first: L `MS` (78–79 = `M `/`R `), B/E `UN` (78–79 = `1U`/`2U`), G col-79 `N` (normalization), and DP col-77 flags referenced by `cDP ...$` comments are all legal — never relocate them to column 77.
+- G-record cols 33–76 are deliberately dense (M|MR|DMR|CC|DCC|TI all adjacent); `DCC` (63–64) touching `TI` (65–74) renders glued, e.g. `0.1656 24100` — do not insert a readability space or shift TI.
 
 ## Editing Discipline
 - Use minimal single-line anchors; multi-line anchors spanning wrapped comment text can re-wrap lines and silently drop words.
