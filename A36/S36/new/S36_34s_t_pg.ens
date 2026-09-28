@@ -2,38 +2,50 @@
  36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
  36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
  36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
- 36S  c  E(t)=3.1 MeV; measured E(p), E|g, I|g, |g(|q), lifetimes from DSA      
- 36S  c  1971Ju02: E(t)=3.1 MeV, measured |g linear polarization of 901.5|g     
- 36S 2c  and 1284.2|g                                                           
+ 36S  c  1971Ju02: E=3.1 MeV triton beam with an intensity of |?80 nA was       
+ 36S 2c  provided from the 3-MV Van de Graaff accelerator at the Nuclear        
+ 36S 3c  Research Center in Strasbourg, France. The target was a 500-|mg/cm{+2} 
+ 36S 4c  Sb{-2}S{-3} layer enriched to 85% in {+34}S on a 30-|mm Mo backing.    
+ 36S 5c  Protons from {+34}S(t,p|g){+36}S were detected at 180|' using an       
+ 36S 6c  annular 200-mm{+2}, 1-mm-thick Si detector placed 8 mm behind the      
+ 36S 7c  target and covered by a 30-|mm Al absorber. |g rays were detected using
+ 36S 8c  a Compton polarimeter consisting of a central 3.8-cm-dia, 7.6-cm       
+ 36S 9c  NaI(Tl) detector at 90|' and two 7.6|*7.6-cm NaI(Tl) detectors parallel
+ 36S Ac  and perpendicular to the reaction plane. Measured p-|g-Compton triple  
+ 36S Bc  coincidences and linear polarizations. Deduced levels, J, |p, and      
+ 36S Cc  |g-ray multipolarities.                                                
+
  36S  cG MR$In 1971Ol02 phase convention assumed Rose-Brink, thus reversed here 
  36S  cL T$From DSA (1972Sa09), unless otherwise stated                         
  36S  PN                                                                     6  
  36S   L 0           0+                                                         
  36S   L 3291.0    6 2+                 76 FS    21                             
  36S   G 3290.8    6           E2                                               
- 36S 2 G A2=+0.55 8$ A4=-1.10 11                                                
+ 36S  cG $A{-2}=+0.55 8, A{-4}=-1.10 11                                         
  36S   L 3334        0+                8.8 NS    2                              
  36S  cL T$internal pair detected by e{++} annihilation delay following p       
  36S 2cL detection (1971Ol02)                                                   
  36S   L 4192.5    7 3-                0.8 PS    +4-3                           
  36S   G 901.5     4           E1(+M2)   +0.03   3                              
- 36S 2 G A2=-0.36 4 $ A4=+0.10 4                                                
- 36S  cG $POL=+1.8 {I+7-4} (1971Ju02)                                           
+ 36S  cG $A{-2}=-0.36 4 , A{-4}=+0.10 4                                         
+ 36S  cG $POL=+1.8 {I+7-4} falls on the theoretical E1/M2 (|s=1) curve          
+ 36S 2cG (1971Ju02).                                                            
  36S   L 4523.0    6 1                 0.017 PS  8                              
  36S   G 1232.1    4  33                                                        
  36S   G 4522.2    15 100      D                                                
- 36S 2 G A2=-0.09 6 $ A4=-0.07 7                                                
+ 36S  cG $A{-2}=-0.09 6 , A{-4}=-0.07 7                                         
  36S   L 4575.2    4 2+                0.055 PS  10                             
  36S   G 1284.2                M1(+E2)   +0.06   6                              
- 36S 2 G A2=+0.61 4 $ A4=-0.19 6                                                
- 36S  cG $POL=3.5 {I+23-11} (1971Ju02)                                          
+ 36S  cG $A{-2}=+0.61 4 , A{-4}=-0.19 6                                         
+ 36S  cG $POL=+3.5 {I+23-11} falls on the theoretical M1/E2 (|s=0) curve        
+ 36S 2cG (1971Ju02).                                                            
  36S   L 5251.2    10(1,2,3)           0.07 PS   3                              
  36S   G 680                                                                    
  36S   G 1059.6    4  43     11                                                 
  36S   G 1961.0    4  100    11D+Q       +0.11   GE                             
- 36S  cG MR$|>+0.11 or |<-5 for J=1, |<-0.47 for J=2,                           
- 36S 2cG -0.09 {I9} or -2.4 {I5} for J=3                                        
- 36S 2 G A2=-0.43 10 $ A4=-0.08 10                                              
+ 36S  cG MR$|>+0.11 or |<-5 for J=1, |<-0.47 for J=2, -0.09 {I9} or -2.4 {I5}   
+ 36S 2cG for J=3                                                                
+ 36S  cG $A{-2}=-0.43 10 , A{-4}=-0.08 10                                       
  36S   L 5391.4    9                   0.2 PS    GT                             
  36S   G 816.2     4  18     9                                                  
  36S   G 5391         100    9                                                  
@@ -41,17 +53,17 @@
  36S   G 1316.8    4  52     12                                                 
  36S   G 2217.7    3  100    12 D+Q                                             
  36S  cG M$+2.4 {I5} for J=2, -0.02 {I3} for J=4                                
- 36S 2 G A2=+0.43 10 $ A4=-0.31 10                                              
+ 36S  cG $A{-2}=+0.43 10 , A{-4}=-0.31 10                                       
  36S   L 5573.1    7 (1,3)             0.14 PS   LT                             
  36S   G 2281.1    3                                                            
  36S  cG M,MR$for J=1, +0.17 {I5} for J=3                                       
- 36S 2 G A2=-0.05 7 $ A4=+0.12 8                                                
+ 36S  cG $A{-2}=-0.05 7 , A{-4}=+0.12 8                                         
  36S   L 6186.9    8 (2,3)             0.055 PS  20                             
  36S   G 1994.8    4  33     11 D+Q                                             
  36S  cG M,MR$-0.20 {I8} for J=2, +0.28 {I9} or <-5.6 for J=3                   
  36S   G 2894.8    5  100    11                                                 
  36S  cG M,MR$for J=1, +0.17 {I5} for J=3                                       
- 36S 2 G A2=-0.05 7 $ A4=+0.12 8                                                
+ 36S  cG $A{-2}=-0.05 7 , A{-4}=+0.12 8                                         
  36S   L 6225.2    10                  0.02 PS   LT                             
  36S   G 1649.2    5  100    13                                                 
  36S   G 2933.0    10 32     13                                                 
@@ -61,4 +73,4 @@
  36S   G 2550         28     7                                                  
  36S   G 3830         11     7                                                  
  36S   G 7120         100    7                                                  
-                                                                                
+
