@@ -73,6 +73,9 @@ their wording and re-wrap the whole paragraph instead of re-padding the single l
 6. For each M/MR assignment, confirm the basis against the raw `.mrg` G-record comments and cite that same source, named by its reaction (e.g. `in {+24}Mg({+16}O,|a2p|g)`) so the basis stays traceable.
 7. Match reaction wording in dataset general comments to the ID-line
 	target(projectile,ejectile) order and prime notation; re-check after any human edit of the ID line.
+8. When moving a sentence between dataset-level and record-level scope, re-emit the target
+	prefix with its identifier (`cL $`) and re-place the whole unit so block order and the
+	wrapping of the source block stay intact.
 
 ## Completion Criteria
 
