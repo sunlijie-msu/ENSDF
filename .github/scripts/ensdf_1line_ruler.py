@@ -231,8 +231,14 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
     comment_hint = _describe_comment(line)
     is_comment = comment_hint is not None
     free_text = _is_free_text_record(line)
+    # An all-space line is a legal separator, e.g. the 80-column line that ends an
+    # ENSDF submission. It carries no record type and must be preserved, not flagged.
+    is_blank = line.strip() == ''
 
-    if record_def:
+    if is_blank:
+        print('Blank record: all-space separator line (no record type). '
+              'ENSDF submissions end with an 80-column blank line; keep it.')
+    elif record_def:
         print(f'Format ({record_def.label}):')
         print(record_def.fmt)
         print('Fields (schematic):')
@@ -246,7 +252,7 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
     elif record_def and len(line) > 6 and line[6] in OTHER_COL7_FLAGS:
         print(f'{OTHER_COL7_FLAGS[line[6]].capitalize()} record (flag "{line[6]}"): '
               'free-form text, column-77/80 field checks are not applied.')
-    elif record_key and not record_def:
+    elif record_key and not record_def and not is_blank:
         print(f'Unknown record type "{record_key}" (Column 8).')
 
     if label:
@@ -264,7 +270,7 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
     if '\t' in line:
         errors.append('Tab character present. ENSDF records must use spaces only.')
     
-    if record_key and not record_def and not is_comment:
+    if record_key and not record_def and not is_comment and not is_blank:
         errors.append(f'Unknown/Invalid record type "{record_key}" at Column 8.')
         # Specific heuristic for shifted comments
         if len(line) > 7 and line[7] in {'c', 'C'} and line[6] == ' ':

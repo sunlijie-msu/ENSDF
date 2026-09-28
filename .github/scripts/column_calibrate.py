@@ -162,6 +162,12 @@ def fix_line_lengths(filename, dry_run=False):
     
     lines = get_file_lines(filename)
     
+    # Preserve the file's own line endings: rewriting LF files as CRLF would show up as
+    # a whole-file change in review and mixes conventions inside the submission set.
+    crlf = sum(1 for ln in lines if ln.endswith('\r\n'))
+    bare_lf = sum(1 for ln in lines if ln.endswith('\n') and not ln.endswith('\r\n'))
+    eol = '\r\n' if crlf > bare_lf else '\n'
+    
     fixed_lines = []
     lines_modified = 0
     issues_found = []
@@ -183,22 +189,22 @@ def fix_line_lengths(filename, dry_run=False):
             if is_nucid_shifted_left(line_content):
                 # NUCID shifted left - prepend space, trim last char
                 fixed_line = ' ' + line_content[:79]
-                fixed_lines.append(fixed_line + '\n')
+                fixed_lines.append(fixed_line + eol)
                 lines_modified += 1
                 print(f"Line {line_num}: {line_content[7]} record - Fixed NUCID: prepended leading space (col 1 was '{line_content[0]}')")
             else:
-                fixed_lines.append(line_content + '\n')
+                fixed_lines.append(line_content + eol)
         elif current_length < 80:
             # Too short - check if missing leading space (2-digit-mass NUCID shifted left)
             if is_nucid_shifted_left(line_content):
                 # NUCID shifted left - prepend space, pad to exactly 80
                 fixed_line = (' ' + line_content).ljust(80)[:80]
-                fixed_lines.append(fixed_line + '\n')
+                fixed_lines.append(fixed_line + eol)
                 lines_modified += 1
                 print(f"Line {line_num}: {line_content[7] if len(line_content) > 7 else line_content[6] if len(line_content) > 6 else '?'} record - Fixed NUCID: prepended leading space (col 1 was '{line_content[0]}'), padded to 80")
             else:
                 padded_line = line_content.ljust(80)
-                fixed_lines.append(padded_line + '\n')
+                fixed_lines.append(padded_line + eol)
                 lines_modified += 1
                 issues_found.append((line_num, 'SHORT', current_length, 80 - current_length))
                 if not dry_run:
@@ -206,18 +212,15 @@ def fix_line_lengths(filename, dry_run=False):
         elif current_length > 80:
             # Too long - trim to exactly 80 characters
             trimmed_line = line_content[:80]
-            fixed_lines.append(trimmed_line + '\n')
+            fixed_lines.append(trimmed_line + eol)
             lines_modified += 1
             issues_found.append((line_num, 'LONG', current_length, current_length - 80))
             if not dry_run:
                 print(f"Line {line_num}: {line_content[7]} record - Trimmed {current_length - 80} characters (was {current_length} chars)")
     
-    # Remove any trailing empty lines
-    while fixed_lines and fixed_lines[-1].strip() == '':
-        removed_line = fixed_lines.pop()
-        lines_modified += 1
-        if not dry_run:
-            print(f"Removed trailing empty line")
+    # Trailing lines are preserved as-is. ENSDF submissions end with an 80-column
+    # all-space separator line (required by the ENSDF Java submission format), so
+    # trimming trailing blank/space lines here would corrupt the file.
     
     # Summary
     print(f"\nSummary:")
