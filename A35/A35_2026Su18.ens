@@ -654,7 +654,7 @@
  35AL PN                                                                     6  
  35AL  L 0            (5/2)+           38.1 MS   4                              
  35ALX L XREF=ABDE                                                              
- 35AL2 L %B-=100$ %B-N=37 4 $ %B-2N=?                                           
+ 35AL2 L %B-=100$ %B-N=37 3 $ %B-2N=?                                           
  35AL cL J$From shell-model calculations and L({+36}Si,{+35}Al)=2 from 0+.      
  35AL cL T$weighted average of 38.4 ms {I3} (2017Ha23, implant-|b correlation), 
  35AL2cL 36.8 ms {I5} (2005Ti11,2006AnZW, implant-|b correlation), 38.6 ms {I4} 
@@ -663,17 +663,17 @@
  35AL5cL {I+90-50} (1989Le16,1989MuZU, |b-decay curve), 30 ms {I10} (1988DuZT,  
  35AL6cL beam pulsations), and 130 ms {I+100-50} (1988Mu08,1988BaYZ, |b counting
  35AL7cL rate).                                                                 
- 35AL cL $%|b{+-}n: Unweighted average of 41 {I2} (2005Ti11,2006AnZW), 41 {I13} 
+ 35AL cL $%|b{+-}n: Weighted average of 40 {I2} (2005Ti11,2006AnZW), 41 {I13}   
  35AL2cL (2001Nu01,2002Nu02), 26 {I4} (1995ReZZ,2008ReZZ), and 40 {I10}         
  35AL3cL (1989Le16,1989MuZU). Others: 43 {I9} (1999YoZW, preliminary), 87       
  35AL4cL {I+37-25} (1988Mu08,1988BaYZ) with a non-physical upper bound. Note    
  35AL5cL that the original value reported in 2005Ti11 is 38 {I2} (2006AnZW      
- 35AL6cL report 38 {I3}) and the evaluators have added intensities of |g rays   
- 35AL7cL deexciting the 4379 (0.9% {I2}) and 4255 (2.0% {I8}) levels in {+34}Si 
- 35AL8cL not included in their reported %|b{+-}n value, as the authors state    
- 35AL9cL that these levels are fed by either neutrons with energy below their   
- 35ALAcL detection threshold or by weak transitions that cannot be identified in
- 35ALBcL the neutron spectrum.                                                  
+ 35AL6cL report 38 {I3}) and the evaluators have added the neutron feeding      
+ 35AL7cL intensities of the 4379 (0.9% {I2}) and 4255 (1.1% {I8}) levels deduced
+ 35AL8cL from |g intensities in {+34}Si that were not included in their reported
+ 35AL9cL %|b{+-}n value, as the authors state that these levels are fed by      
+ 35ALAcL either neutrons with energy below their detection threshold or by weak 
+ 35ALBcL transitions that cannot be identified in the neutron spectrum.         
  35AL cL $%|b{+-}2n: No evidence was found for any A=33 activity and 2n emission
  35AL2cL was thus found negligible (2001Nu01).                                  
  35AL cL $Reduced strong absorption radius r{+2}{-0}=1.188 fm{+2} {I14} from the
@@ -1142,7 +1142,7 @@
  35SICc  branching ratios, log {Ift}, B(GT), and |b-delayed neutron emission    
  35SIDc  probability. Comparisons with shell-model calculations.                
  35SI c  2001Nu01,2002Nu02: Exp 1: A {+35}Al secondary beam at 8 pps was        
- 35SI2c  produced via the fragmentation of a UC target with 1.4 GeV protons at  
+ 35SI2c  produced via the fragmentation of a UC target with 1-GeV protons at    
  35SI3c  ISOLDE, CERN with subsequent surface-ionization and mass separation.   
  35SI4c  {+35}Al ions were collected onto a moving tape. |b particles were      
  35SI5c  detected using a thin cylindrical plastic scintillator, |g rays were   
@@ -1186,8 +1186,8 @@
  35AL cP J,T$From the Adopted Levels of {+35}Al                                 
  35AL cP QP$From 2021Wa16                                                       
  35SI  N 0.47                  1.0       1.0                                    
- 35SI cN NR$0.47 {I4} from |S%I(|g+ce to g.s.)=60 {I4}, deduced from            
- 35SI2cN 100-%|b{+-}n-%I|b{+-}(g.s.), where %|b{+-}n=37 {I4} from the Adopted   
+ 35SI cN NR$0.47 {I4} from |S%I(|g+ce to g.s.)=60 {I3}, deduced from            
+ 35SI2cN 100-%|b{+-}n-%I|b{+-}(g.s.), where %|b{+-}n=37 {I3} from the Adopted   
  35SI3cN Levels of {+35}Al and %I|b{+-}(g.s.)=3.0 {I10} from 2001Nu01. The      
  35SI4cN deduced normalization factor should be considered an upper limit due to
  35SI5cN potential missing |g transitions from unobserved levels in the gap to  
@@ -1528,7 +1528,7 @@
  35SI8c  azimuthal angles from 98|' to 180|'. Measured E|g with Doppler         
  35SI9c  corrections, I|g, and ({+35}Si)|g-coin. Deduced levels. Compared with  
  35SIAc  shell-model calculations.                                              
- 35SI cG E,RI$From 2010WaZT. The author report |DE|g=1 keV, but it is very      
+ 35SI cG E,RI$From 2010WaZT. The author reports |DE|g=1 keV, but it is very     
  35SI2cG likely statistical only since 910|g and 974|g are weak with poor       
  35SI3cG statistics in the |g-ray spectrum, and thus is not adopted by the      
  35SI4cG evaluators.                                                            
@@ -1857,7 +1857,7 @@
  35P   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$          
  35P   H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35P 2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35P  DG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
+ 35P  dG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  35P  dB EAV,LOGFT$FROM BetaShape v2.4 (Jun-2024) 2023Mo21.                     
  35P  dL E$Least-squares fitting is done by GLSC (version 17-Jan-2025)          
  35P  c  1988DuZS,1986Du07,1988DuZT,1987DuZU: {+35}Si was produced by the       
@@ -1879,7 +1879,7 @@
  35P 2cB I|b{+-} values are considered upper limits due to the incomplete decay 
  35P 3cB scheme, and the associated log {Ift} values are considered lower       
  35P 4cB limits.                                                                
- 35P  cG M$From the Adopted Levels.                                             
+ 35P  cG M$From the Adopted Gammas.                                             
  35P  cG E,RI$From 1988DuZS, unless otherwise noted.                            
  35P  cG E(A),RI(A)$From 1986Du07. 1988Or01 tentatively suggested that these |g 
  35P 2cG rays deexcite a level at 7450, but this suggestion has not been        
@@ -5368,7 +5368,7 @@
  35CL cL J$For proton-resonance levels populated in (p,p):resonances, J|p       
  35CL2cL assignments are from R-Matrix analysis, unless otherwise noted         
  35CL cL J(Z)$From FRESCO-DWBA analysis of measured |s(|q) of (|a,p) (2019Se09) 
- 35CL cL J(A)$ From angular distributions in {+31}P(|a,p):resonances.           
+ 35CL cL J(A)$From angular distributions in {+31}P(|a,p):resonances.            
  35CL cL T$Sources of T{-1/2} values are listed under comments; |G from         
  35CL2cL {+34}S(p,p),(p,p'|g):resonances, unless otherwise noted                
  35CL cL T$LABEL=T{-1/2} or |G                                                  
@@ -9477,7 +9477,7 @@
  35CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$          
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
- 35CL c  J|p=1/2+ {+31}P ground state.                                          
+ 35CL c  J|p=1/2+ for {+31}P ground state.                                      
  35CL c  1975Sc40: {+31}P(|a,p) with 3.25-5.55-MeV |a beams produced from the   
  35CL2c  5.5-MV Van de Graaff accelerator of the University of Lowell. The      
  35CL3c  target was prepared by evaporating natural {+31}P onto carbon backings.
@@ -9517,7 +9517,7 @@
  35CL2cL (2021Wa16). E{-c.m.}=E{-|a}(lab)|*m({+31}P)/[m{-|a}+m({+31}P)].        
  35CL cL J$From 1975Sc40 by analyzing measured angular distributions, unless    
  35CL2cL otherwise noted.                                                       
- 35CL cL J(K),S(K)$ From 1964Ku12.                                              
+ 35CL cL J(K),S(K)$From 1964Ku12.                                               
  35CL cL J(M)$From 1971Mc23.                                                    
  35CL cL S$From 1971Mc23, unless otherwise noted.                               
  35CL cL S(S)$From 1975Sc40.                                                    
@@ -14102,7 +14102,7 @@
  35CL5c  99.8% enriched {+36}Ar. Deuterons were detected using a time-of-flight 
  35CL6c  counter telescope consisting of two proportional counters and a NaI(Tl)
  35CL7c  crystal. Measured |s(E{-d},|q). Deduced levels, L-transfers,           
- 35CL8c  spectroscopic factors from local zero-range DWUCK-DWBA analysis of the 
+ 35CL8c  spectroscopic factors from finite-range DWUCK-DWBA analysis of the     
  35CL9c  measured |s(|q).                                                       
  35CL cL E$From 1977Pa29                                                        
  35CL cL L,S$From DWBA analysis of the measured |s(|q) in 1977Pa29.             
@@ -14919,7 +14919,7 @@
  35ARS E EAV=1083.0 94$CK=0.00619 22$CL=6.57E-4 24$CM=8.67E-5 32                
  35AR cE TI$0.062 {I26} I(p0+p1+p2) from Table 3 of 1980Ew02.                   
                                                                                 
- 35AR    36CA ECP DECAY (100.9 MS)     1997TR05,2001LO11,2015Su01ENSDF    202509
+ 35AR    36CA ECP DECAY (100.9 MS)     1997TR05,2001LO11,2015SU01ENSDF    202509
  35AR  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2025$          
  35AR  H TYP=ERR$AUT=Balraj Singh$DAT=8-Nov-2013$COM=Fixed NP on N record$      
  35AR  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   

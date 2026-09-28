@@ -101,23 +101,26 @@ def is_data_record_line(line):
     if len(line) < 8:
         return False
 
-    # Exclude comment lines: col 7 (index 6) = lowercase 'c' followed by record-type letter.
-    # Example: ' 34CL cG ...' has line[6]='c', line[7]='G'. Must NOT be padded.
-    if line[6] == 'c' and len(line) > 7 and line[7].isalpha() and line[7].isupper():
+    # Column 7 must be blank on a data record. Lines carrying a column-7 flag are
+    # comment ('c'), hidden-message ('d'), table/plot text ('t') or the dataset
+    # parent/normalization record ('P' in column 7 with 'N' in column 8); their text
+    # is free-form, so it is not length-managed here.
+    # Exception: NUCID-shifted lines ('34S  L ...') keep the record type in column 7.
+    if line[6] != ' ' and not is_nucid_shifted_left(line):
         return False
 
     # Check for record types in column 8 (0-based index 7)
     # H-records have H at column 8 (index 7)
-    # L/G/E/B records have those letters at column 8
-    # DP records have D at column 8 and P at column 9
+    # L/G/E/B/A records have those letters at column 8
+    # Delayed-particle records have D at column 8 and P/N/A/D/T at column 9
     
     record_type = line[7] if len(line) > 7 else ' '
     
     # Include H records (History/Header records) - they must also be 80 columns
-    all_record_types = ['H', 'L', 'G', 'E', 'B']  # All standard record types
+    all_record_types = ['H', 'L', 'G', 'E', 'B', 'A']  # All standard record types
     
-    # Also check for DP records (delayed proton)
-    if len(line) > 8 and line[7:9] == 'DP':
+    # Also check for delayed-particle records (DP, DN, DA, DD, DT)
+    if len(line) > 8 and line[7] == 'D' and line[8] in 'PNADT':
         return True
     
     # NUCID-shift detection: when a 2-digit-mass NUCID is shifted left
@@ -375,6 +378,11 @@ def validate_s_field(filename):
         # Only check L-records for S field validation
         if len(line_content) < 10 or ' L ' not in line_content[6:10]:
             continue
+        
+        # Continuation records ('2 L', 'X L', ...) hold continuation text, not the
+        # primary record's S field
+        if is_continuation_record(line_content):
+            continue
             
         # Extract S field area (columns 65-74)
         if len(line_content) >= 65:
@@ -459,6 +467,11 @@ def validate_s_field(filename):
         
         # Only check L-records for DS field validation
         if len(line_content) < 10 or ' L ' not in line_content[6:10]:
+            continue
+        
+        # Continuation records ('2 L', 'X L', ...) hold continuation text, not the
+        # primary record's S/DS fields
+        if is_continuation_record(line_content):
             continue
         
         # Check if S field has content (indicating L-record with spectroscopic data)
@@ -783,6 +796,46 @@ def validate_mul_field(filename):
         print(f"   Column 32 must be a space separator (not MUL content)")
         return False
 
+# Columns 78-79 hold record-type-specific fields, NEVER comment flags
+# (see .github/agents/ENSDF-Agent.agent.md and the DP/B/E/A format skill):
+#   L     : MS field   - 'M ' isomer, 'M1'/'M2' first/second isomer (as written in
+#                        published datasets and XUNDL), 'R ' resonance, 'C ', or blank
+#   G     : column 78 blank; column 79 may hold 'N' (use for normalization)
+#   E, B  : UN field   - '1U', '2U' (unique forbidden), or blank
+#   A     : blank (the 'C'/'?' coincidence flag belongs in column 77)
+#   DP/DN/DA/DD/DT : blank
+# Comment flags belong in column 77 only; '?' is never a valid flag there.
+COL_78_79_LEGAL = {
+    'L': {'M ', 'M1', 'M2', 'R ', 'C '},
+    'G': {' N'},
+    'E': {'1U', '2U'},
+    'B': {'1U', '2U'},
+    'A': set(),
+}
+COL_78_79_HINTS = {
+    'L': "L-record MS field entries are 'M ', 'M1', 'M2', 'R ', 'C ', or blank",
+    'G': "G-record column 78 must be blank and column 79 may hold 'N' (normalization only)",
+    'E': "E-record UN field entries are '1U', '2U', or blank",
+    'B': "B-record UN field entries are '1U', '2U', or blank",
+    'A': "A-record columns 78-79 must be blank; the comment flag belongs in column 77",
+    'D': "delayed-particle columns 78-79 must be blank; the comment flag belongs in column 77",
+}
+
+
+def columns_78_79_hint(record_type, cols_78_79):
+    """
+    Return a message when columns 78-79 hold invalid content for this record type.
+
+    Columns 78-79 are record-type-specific fields (L: MS, G: 'N' in column 79,
+    E/B: UN) and must never hold a misplaced comment flag. Returns None when the
+    content is legal (including blank).
+    """
+    if cols_78_79 == '  ' or cols_78_79 in COL_78_79_LEGAL.get(record_type, set()):
+        return None
+    return COL_78_79_HINTS.get(record_type,
+                               f"{record_type}-record columns 78-79 must be blank")
+
+
 def validate_comment_flags(filename):
     """
     Validate comment flags in column 77 (C field) for DATA RECORDS ONLY.
@@ -813,6 +866,7 @@ def validate_comment_flags(filename):
     
     flags_analyzed = 0
     flag_summary = {}
+    misplaced_78_79 = []
     
     lines = get_stripped_lines(filename)
     
@@ -822,28 +876,30 @@ def validate_comment_flags(filename):
         if is_comment_line(line_content):
             continue
         
-        # Check if this is a data record line (L, G, E, B, DP records)
+        # Check if this is a data record line (L, G, E, B, A, DP-family records)
         if not is_data_record_line(line_content):
             continue
         
-        # Now we know this is a true data record (not a comment line)
+        # Only primary records carry the C (77), MS/UN (78-79) and Q (80) fields.
+        # Continuation records hold continued field data, and H lines / the dataset
+        # parent-normalization 'PN' record (columns 7-8) hold free-form metadata.
+        if is_continuation_record(line_content) or line_content[6] != ' ':
+            continue
+        record_type = line_content[7]
+        if record_type == 'D' and (len(line_content) < 9 or line_content[8] not in 'PNADT'):
+            continue
+        if record_type not in ('L', 'G', 'E', 'B', 'A', 'D'):
+            continue
         
-        # CRITICAL VALIDATION: Check for misplaced flags in columns 77-80
-        # Comment flags must be EXACTLY at column 77, not at columns 78 or 79
-        if len(line_content) >= 80:
-            col77_char = line_content[76]  # Column 77 (0-based index 76)
-            col78_char = line_content[77]  # Column 78 (0-based index 77)
-            col79_char = line_content[78]  # Column 79 (0-based index 78)
-            
-            # Check for misplaced comment flags in columns 78-79
-            for pos, idx, char in [(78, 77, col78_char), (79, 78, col79_char)]:
-                if char != ' ' and char in 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz*&@':
-                    print(f"[ERROR] Line {line_num}: Comment flag '{char}' at column {pos} - MUST be at column 77!")
-                    print(f"   → Line content: {line_content}")
-                    print(f"   → Position: {' ' * (pos-1)}^")
-                    if char not in flag_summary:
-                        flag_summary[char] = {'correct': 0, 'incorrect': []}
-                    flag_summary[char]['incorrect'].append(line_num)
+        # CRITICAL VALIDATION: columns 78-79 hold record-type-specific fields, never
+        # comment flags (L: MS, G: column-79 'N', E/B: UN). Flags live in column 77.
+        if len(line_content) >= 79:
+            cols_78_79 = line_content[77:79]
+            hint = columns_78_79_hint(record_type, cols_78_79)
+            if hint:
+                misplaced_78_79.append(line_num)
+                print(f"[ERROR] Line {line_num}: columns 78-79 = '{cols_78_79}' - {hint}")
+                print(f"   Position (column 78): {' ' * 77}^")
         
         # Check column 77 for valid comment flags
         if len(line_content) >= 77:
@@ -889,12 +945,15 @@ def validate_comment_flags(filename):
             print(f"    '{flag_type}' {flag_meaning}: {correct_count}")
         print()
     
-    if flags_analyzed == 0:
+    if misplaced_78_79:
+        print(f"  [ERROR] ERRORS: {len(misplaced_78_79)} primary record(s) with invalid columns 78-79 content")
+        print(f"          (columns 78-79 hold MS/UN/normalization fields, not comment flags)")
+    elif flags_analyzed == 0:
         print(f"  Note: No comment flags found in data records (all spaces in column 77)")
     else:
         print(f"  [OK] SUCCESS: All comment flags correctly positioned in column 77")
     
-    return True
+    return not misplaced_78_79
 
 def validate_g_record_flags(filename):
     """
@@ -926,6 +985,7 @@ def validate_g_record_flags(filename):
     g_records_analyzed = 0
     col77_flags = {'valid': 0, 'invalid': 0, 'details': {}}
     col80_indicators = {'valid': 0, 'invalid': 0, 'details': {}}
+    col7879_invalid = 0
     errors_found = False
     
     # Valid flags for each column - NOTE: '?' is explicitly FORBIDDEN in column 77
@@ -958,21 +1018,17 @@ def validate_g_record_flags(filename):
         
         g_records_analyzed += 1
         
-        # CRITICAL VALIDATION: Check for misplaced flags in columns 77-80
-        # Flags must be EXACTLY at column 77, not at 78 or 79
-        if len(line_content) >= 80:
-            col77_char = line_content[76]  # Column 77 (0-based index 76)
-            col78_char = line_content[77]  # Column 78 (0-based index 77)
-            col79_char = line_content[78]  # Column 79 (0-based index 78)
-            
-            # Check for misplaced comment flags in columns 78-79
-            for pos, idx, char in [(78, 77, col78_char), (79, 78, col79_char)]:
-                if char != ' ' and char in 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz*&@':
-                    col77_flags['invalid'] += 1
-                    errors_found = True
-                    print(f"[ERROR] Line {line_num}: Comment flag '{char}' at column {pos} - MUST be at column 77!")
-                    print(f"   → Line content: {line_content}")
-                    print(f"   → Position: {' ' * (pos-1)}^")
+        # CRITICAL VALIDATION: columns 78-79 are NOT comment-flag space.
+        # G-record column 78 must be blank; column 79 may hold 'N' (normalization only).
+        if len(line_content) >= 79:
+            cols_78_79 = line_content[77:79]
+            hint = columns_78_79_hint('G', cols_78_79)
+            if hint:
+                col7879_invalid += 1
+                errors_found = True
+                print(f"[ERROR] Line {line_num}: columns 78-79 = '{cols_78_79}' - {hint}")
+                print(f"   → Line content: {line_content}")
+                print(f"   → Position (column 78): {' ' * 77}^")
         
         # Validate Column 77 (Comment flag)
         if len(line_content) >= 77:
@@ -1020,6 +1076,7 @@ def validate_g_record_flags(filename):
     print(f"G-RECORD FLAG SUMMARY:")
     print(f"  G-records analyzed: {g_records_analyzed}")
     print(f"  Column 77 flags: {col77_flags['valid']} valid, {col77_flags['invalid']} invalid")
+    print(f"  Columns 78-79 content errors: {col7879_invalid}")
     print(f"  Column 80 indicators: {col80_indicators['valid']} valid, {col80_indicators['invalid']} invalid")
     print()
     
@@ -1045,7 +1102,7 @@ def validate_g_record_flags(filename):
     if not errors_found:
         print(f"  [OK] SUCCESS: All G-record flags correctly positioned and valid!")
     else:
-        print(f"  [ERROR] ERRORS: {col77_flags['invalid'] + col80_indicators['invalid']} invalid G-record entries found!")
+        print(f"  [ERROR] ERRORS: {col77_flags['invalid'] + col80_indicators['invalid'] + col7879_invalid} invalid G-record entries found!")
     
     return not errors_found
 
@@ -2042,6 +2099,11 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
     for line_num, line in enumerate(lines, 1):
         # Skip short lines and non-L records for L-field validation
         if len(line) < 10 or ' L ' not in line[6:10]:
+            continue
+        
+        # Continuation records ('2 L', 'X L', ...) hold continuation text, not the
+        # primary record's L-transfer field
+        if is_continuation_record(line):
             continue
             
         # Look for L-transfer field (typically around column 56)

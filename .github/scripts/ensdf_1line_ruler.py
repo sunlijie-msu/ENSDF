@@ -26,6 +26,13 @@ from typing import Callable, Dict, Optional
 COMMENT_FLAGS = {'c': 'comment', 'C': 'comment',
                  'd': 'hidden message', 'D': 'hidden message'}
 
+# Other column-7 flags emitted by processing/plotting tooling. Their lines are free-form
+# text, so the column-77/80 field checks are skipped (the 80-column rule still applies):
+#   't' -> table/plot text
+#   'P' -> dataset parent/normalization record, whose "PN" type occupies columns 7-8
+OTHER_COL7_FLAGS = {'t': 'table/plot text',
+                    'P': 'dataset parent/normalization ("PN" record)'}
+
 
 @dataclass(frozen=True)
 class RecordDefinition:
@@ -44,7 +51,8 @@ def _alpha_or_space(ch: str) -> bool:
     return ch == ' ' or ch.isalpha()
 
 
-def _g_flag(ch: str) -> bool:
+def _comment_flag_field(ch: str) -> bool:
+    """C field (column 77): space, alphabetic comment flag, or multiply-placed marker."""
     return ch == ' ' or ch.isalpha() or ch in {'*', '&', '@'}
 
 
@@ -54,6 +62,32 @@ def _blank_only(ch: str) -> bool:
 
 def _pad_record_example(text: str) -> str:
     return text.ljust(80)
+
+
+# Delayed-particle records share one layout; only the particle letter in column 9 differs.
+DELAYED_PARTICLES = {
+    'P': ('Delayed proton record (DP)', 'proton', 'EP', 'IP'),
+    'N': ('Delayed neutron record (DN)', 'neutron', 'EN', 'IN'),
+    'A': ('Delayed alpha record (DA)', 'alpha', 'EA', 'IA'),
+    'D': ('Delayed deuteron record (DD)', 'deuteron', 'ED', 'ID'),
+    'T': ('Delayed triton record (DT)', 'triton', 'ET', 'IT'),
+}
+
+
+def _delayed_particle_definition(letter: str) -> RecordDefinition:
+    label, particle, e_field, i_field = DELAYED_PARTICLES[letter]
+    return RecordDefinition(
+        label=label,
+        fmt=_pad_record_example(f' 35XX  D{letter} {e_field:<9} DE {i_field:<6} DI EI'),
+        fields=(f'NUCID(1-5)|CONT(6)|BLANK(7)|D(8)|{letter}(9)|BLANK(10)|{e_field}(11-19)'
+                f'|DE(20-21)|BLANK(22)|{i_field}(23-29)|DI(30-31)|BLANK(32)|EI(33-39)'
+                '|BLANK(40-76)|C(77)|BLANK(78-79)|Q(80)'),
+        col77_hint=(f'Column 77: space, alphabetic comment flag, *, &, @ only '
+                    f'(cD{letter} ...$ identifiers name the flag)'),
+        col80_hint='Column 80: space, ?, S only',
+        col77_validator=_comment_flag_field,
+        col80_validator=lambda ch: ch in {' ', '?', 'S'},
+    )
 
 
 RECORD_DEFINITIONS: Dict[str, RecordDefinition] = {
@@ -81,7 +115,7 @@ RECORD_DEFINITIONS: Dict[str, RecordDefinition] = {
         fields='NUCID(1-5)|CONT(6)|BLANK(7)|G(8)|BLANK(9)|E(10-19)|DE(20-21)|SPACE(22)|RI(23-29)|DRI(30-31)|SPACE(32)|M(33-41)|MR(42-49)|DMR(50-55)|CC(56-62)|DCC(63-64)|TI(65-74)|DTI(75-76)|C(77)|BLANK(78-79)|Q(80)',
         col77_hint='Column 77: space, alphabetic, *, &, @ only',
         col80_hint='Column 80: space, ?, S only',
-        col77_validator=_g_flag,
+        col77_validator=_comment_flag_field,
         col80_validator=lambda ch: ch in {' ', '?', 'S'},
     ),
     'E': RecordDefinition(
@@ -102,29 +136,62 @@ RECORD_DEFINITIONS: Dict[str, RecordDefinition] = {
         col77_validator=_alpha_or_space,
         col80_validator=lambda ch: ch in {' ', '?'},
     ),
-    'DP': RecordDefinition(
-        label='Delayed particle record (DP)',
-        fmt=_pad_record_example(' 35XX  DP EP       DE IP     DIP EI'),
-        fields='NUCID(1-5)|CONT(6)|BLANK(7)|D(8)|P(9)|BLANK(10)|EP(11-19)|DE(20-21)|BLANK(22)|IP(23-29)|DIP(30-31)|BLANK(32)|EI(33-39)',
-        col77_hint='Column 77 blank for DP records',
+    'A': RecordDefinition(
+        label='Alpha decay record (A)',
+        fmt=_pad_record_example('235XX  A EEEE.E    DE IA     DI HF     DHF                                  C  Q'),
+        fields='NUCID(1-5)|CONT(6)|BLANK(7)|A(8)|BLANK(9)|E(10-19)|DE(20-21)|SPACE(22)|IA(23-29)|DIA(30-31)|SPACE(32)|HF(33-39)|DHF(40-41)|BLANK(42-76)|C(77)|BLANK(78-79)|Q(80)',
+        col77_hint="Column 77: alphabetic comment flag ('C' = coincidence, '?' = probable coincidence)",
         col80_hint='Column 80: space, ?, S only',
-        col77_validator=_blank_only,
+        col77_validator=lambda ch: ch == ' ' or ch.isalpha() or ch == '?',
         col80_validator=lambda ch: ch in {' ', '?', 'S'},
     ),
+    'PN': RecordDefinition(
+        label='Dataset parent/normalization record (PN - type occupies columns 7-8)',
+        fmt=_pad_record_example(' 35XX PN'),
+        fields='NUCID(1-5)|CONT(6)|P(7)|N(8)|...parent/normalization fields...|C(77)|...|BLANK(80)',
+        col77_hint='Column 77: space, alphabetic comment flag, *, &, @ only',
+        col80_hint='Column 80 must be blank for PN records',
+        col77_validator=_comment_flag_field,
+        col80_validator=_blank_only,
+    ),
 }
+
+# Delayed-particle family: D in column 8 with P/N/A/D/T in column 9.
+for _letter in DELAYED_PARTICLES:
+    RECORD_DEFINITIONS['D' + _letter] = _delayed_particle_definition(_letter)
+del _letter
 
 
 def _record_key(line: str) -> Optional[str]:
     if len(line) < 8:
         return None
+    # Dataset parent/normalization record: type 'PN' occupies columns 7-8.
+    if len(line) >= 9 and line[6] == 'P' and line[7] == 'N':
+        return 'PN'
     base = line[7]
-    if base == 'D' and len(line) >= 9 and line[8] == 'P':
-        return 'DP'
+    # Delayed-particle records: D in column 8 with P/N/A/D/T in column 9.
+    if base == 'D' and len(line) >= 9 and line[8] in DELAYED_PARTICLES:
+        return 'D' + line[8]
     return base
 
 
 def _is_primary_data_record(line: str) -> bool:
-    return len(line) > 6 and line[6] == ' '
+    """Primary data record: column 6 (continuation) and column 7 both blank."""
+    return len(line) > 6 and line[5] == ' ' and line[6] == ' '
+
+
+def _is_continuation_record(line: str) -> bool:
+    """Continuation record: label in column 6, column 7 blank. Its columns 78-79 hold
+    continued field data, so only the 80-column rule applies to it."""
+    return len(line) > 5 and line[5] != ' ' and len(line) > 6 and line[6] == ' '
+
+
+def _nucid_shifted_left(line: str) -> bool:
+    """True when a 2-digit-mass NUCID lost its leading space ('34S  L ...').
+    Three-digit masses (e.g. '204AT') legitimately start with a digit in column 1."""
+    if len(line) < 3:
+        return False
+    return line[0].isdigit() and line[1].isdigit() and not line[2].isdigit()
 
 
 def _is_comment_record(line: str) -> bool:
@@ -176,6 +243,9 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
             print('Hidden message (free-text) record: 80-column length is not enforced.')
         else:
             print('Comment lines must still obey the 80-column rule and inherit the associated record scope.')
+    elif record_def and len(line) > 6 and line[6] in OTHER_COL7_FLAGS:
+        print(f'{OTHER_COL7_FLAGS[line[6]].capitalize()} record (flag "{line[6]}"): '
+              'free-form text, column-77/80 field checks are not applied.')
     elif record_key and not record_def:
         print(f'Unknown record type "{record_key}" (Column 8).')
 
@@ -188,8 +258,9 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
     
     # Quick validation
     errors = []
+    is_primary = record_def is not None and _is_primary_data_record(line)
     if len(line) != 80 and not free_text:
-        errors.append(f'Length {len(line)} ≠ 80')
+        errors.append(f'Length {len(line)} != 80')
     if '\t' in line:
         errors.append('Tab character present. ENSDF records must use spaces only.')
     
@@ -199,19 +270,19 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
         if len(line) > 7 and line[7] in {'c', 'C'} and line[6] == ' ':
             errors.append('HINT: Found "c" in Column 8. Comment flags must be in Column 7.')
         # NUCID shift detection: if col 1 is a digit, the whole line is shifted left
-        if len(line) > 0 and line[0].isdigit() and len(line) < 80:
+        if _nucid_shifted_left(line) and len(line) < 80:
             errors.append('NUCID shifted left: Column 1 is digit "' + line[0] + '" (must be space for A<100). Whole line shifted left by 1 column.')
     elif is_comment and line[7:8].strip() and not line[7].isalpha():
         errors.append(f'Comment record has invalid commented-record-type "{line[7]}" in '
                       'Column 8. Expected blank (dataset-wide comment) or a record-type '
                       'letter such as H, L, G, B, E, A, D, or Q.')
 
-    if record_def and _is_primary_data_record(line):
+    if is_primary:
         col_77 = line[76] if len(line) > 76 else ' '
         col_80 = line[79] if len(line) > 79 else ' '
-        
-        # NUCID column 1 check for all data records
-        if len(line) > 0 and line[0].isdigit():
+
+        # NUCID column 1 check: only 2-digit masses need a leading space in column 1
+        if _nucid_shifted_left(line):
             errors.append('NUCID shifted left: Column 1 is digit "' + line[0] + '" (must be space for A<100).')
 
         # CRITICAL AI FIX: Check for shifted flags in Column 76 (Index 75)
@@ -224,17 +295,25 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
         #   Fields are 75-76. So 75 can be L/G/digit/space. 76 can be T/digit/space.
         #   If 76 has 'X', it is INVALID.
         col_76 = line[75] if len(line) > 75 else ' '
-        valid_col76 = {' ', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'T'} # T for LT/GT
+        col_75 = line[74] if len(line) > 74 else ' '
+        # Column 76 closes the 2-column uncertainty field (75-76): digit, space, or the
+        # second letter of a limit marker (LT, GT, LE, GE).
+        valid_col76 = {' ', 'T', 'E', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'}
         if col_76 not in valid_col76:
-            errors.append(f'Col 76: "{col_76}" invalid. Expected digit, space, or "T" (for LT/GT). Possible shifted flag?')
+            errors.append(f'Col 76: "{col_76}" invalid. Expected digit, space, or "T"/"E" (for LT/GT/LE/GE). Possible shifted flag?')
+        elif col_76 in 'TE' and col_75 not in 'LG':
+            errors.append(f'Col 75-76: "{col_75}{col_76}" invalid. Limit markers are LT, GT, LE, GE.')
 
         if not record_def.col77_validator(col_77):
             errors.append(f'Col 77: "{col_77}" invalid — {record_def.col77_hint}')
         if not record_def.col80_validator(col_80):
             errors.append(f'Col 80: "{col_80}" invalid — {record_def.col80_hint}')
-    elif record_def and len(line) >= 8 and not _is_primary_data_record(line) and not is_comment:
-        errors.append('Column 7 must be blank or hold a flag ("c"/"C" comment, '
-                      f'"d"/"D" hidden message); found "{line[6]}".')
+    elif (record_def and len(line) >= 8 and not is_comment
+          and not _is_continuation_record(line)
+          and not is_primary
+          and line[6] not in OTHER_COL7_FLAGS):
+        errors.append('Column 7 must be blank or hold a known flag ("c"/"C" comment, '
+                      f'"d"/"D" hidden message, "t" table/plot text, "P" PN record); found "{line[6]}".')
     
     if errors:
         print(f'[ERROR] {" | ".join(errors)}')
@@ -268,9 +347,9 @@ def scan_file(filename: str, show_only_wrong: bool = False, line_number: Optiona
         if target_indexes and lineno not in target_indexes:
             continue
         line = raw_line.rstrip('\n')
-        # Check ALL record types (H, L, G, E, B, DP records)
+        # Check ALL record types (H, L, G, E, B, A, delayed-particle and PN records)
         # ENSDF standard: ALL record types must be exactly 80 characters
-        if len(line) >= 8 and line[7] in ['H', 'L', 'G', 'E', 'B', 'D']:
+        if _record_key(line) in RECORD_DEFINITIONS:
             total_checked += 1
             if show_only_wrong:
                 if not print_ruler(line, label=f'{filename}:{lineno}'):
