@@ -14,6 +14,7 @@ USAGE:
 from __future__ import annotations
 
 import argparse
+import io
 import sys
 from dataclasses import dataclass
 from typing import Callable, Dict, Optional
@@ -283,6 +284,17 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
                       'Column 8. Expected blank (dataset-wide comment) or a record-type '
                       'letter such as H, L, G, B, E, A, D, or Q.')
 
+    # Columns 8-9 hold the commented-record-type code (1-2 letters, or blanks), so the
+    # comment text must start at Column 10. Free-text 'd' notes are exempt.
+    if is_comment and not free_text and len(line) > 9:
+        col8, col9 = line[7], line[8]
+        if col8 == ' ' and col9 != ' ':
+            errors.append(f'Comment text starts at Column 9 ("{col9}"). Columns 8-9 hold the '
+                          'record-type code, so Column 9 must be blank and text must start at Column 10.')
+        elif col8 != ' ' and not (col9.isalpha() or col9 == ' '):
+            errors.append(f'Invalid commented-record-type code "{col8}{col9}" in Columns 8-9. '
+                          'Codes are 1-2 letters, left-justified at Column 8.')
+
     if is_primary:
         col_77 = line[76] if len(line) > 76 else ' '
         col_80 = line[79] if len(line) > 79 else ' '
@@ -329,8 +341,19 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
         return True
 
 
+def _quiet_call(fn: Callable, *args, **kwargs):
+    """Run fn with stdout suppressed and return its result."""
+    buffer = io.StringIO()
+    saved_stdout, sys.stdout = sys.stdout, buffer
+    try:
+        return fn(*args, **kwargs)
+    finally:
+        sys.stdout = saved_stdout
+
+
 def scan_file(filename: str, show_only_wrong: bool = False, line_number: Optional[int] = None) -> bool:
     """Scan ENSDF file and check all data record lines."""
+
     try:
         with open(filename, 'r', encoding='utf-8') as f:
             lines = f.readlines()
@@ -358,9 +381,10 @@ def scan_file(filename: str, show_only_wrong: bool = False, line_number: Optiona
         if _record_key(line) in RECORD_DEFINITIONS:
             total_checked += 1
             if show_only_wrong:
-                if not print_ruler(line, label=f'{filename}:{lineno}'):
+                if not _quiet_call(print_ruler, line, f'{filename}:{lineno}'):
                     error_count += 1
-                    print(f'Line {lineno}: {line}')
+                    print(f'\nLine {lineno}:')
+                    print_ruler(line, label=f'{filename}:{lineno}')
                     print('-' * 40)
             else:
                 print(f'\nLine {lineno}:')

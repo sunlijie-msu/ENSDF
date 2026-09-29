@@ -498,6 +498,9 @@ def validate_s_field(filename):
                 if not ds_stripped:
                     # Empty DS is valid if no uncertainty is provided
                     pass
+                elif ds_stripped.upper() in ('GT', 'LT', 'LE', 'GE'):
+                    # Limit markers are legal DS content: value in S, marker in DS
+                    pass
                 elif not ds_field[0].isdigit() and ds_field[0] != ' ':
                     print(f"LINE {line_num}: DS field analysis")
                     print(f"Line:  {line_content}")
@@ -2033,6 +2036,59 @@ def validate_band_flags(filename):
     # Call the enhanced function instead
     return validate_comment_flags(filename)
 
+def validate_comment_columns(filename):
+    """
+    Validate the column layout of comment lines.
+
+    ENSDF comment records: NUCID(1-5), CONT(6), 'c'(7), record-type code
+    (columns 8-9, e.g. 'L ', 'G ', 'B ', 'DP', or two blanks), comment text
+    starting at column 10.  A blank column 8 therefore requires a blank
+    column 9: text must never begin at column 9.
+    """
+    print(f"\nCOMMENT LINE COLUMN VALIDATION: {filename}")
+    print("=" * 60)
+    print("ENSDF Rule: comment text starts at column 10; columns 8-9 hold the")
+    print("record-type code ('L ', 'G ', 'B ', 'DP', ... or two blanks)")
+    print()
+
+    bad_text_col9 = []
+    bad_code = []
+    for line_num, line_content in enumerate(get_stripped_lines(filename), 1):
+        if len(line_content) < 10 or line_content[6] != 'c':
+            continue
+        col8, col9 = line_content[7], line_content[8]
+        if col8 == ' ' and col9 != ' ':
+            bad_text_col9.append((line_num, line_content))
+        elif col8 != ' ' and not (col9.isalpha() or col9 == ' '):
+            bad_code.append((line_num, line_content))
+
+    errors_found = False
+
+    if bad_text_col9:
+        print(f"[ERROR] {len(bad_text_col9)} comment line(s) start their text at column 9:")
+        for line_num, content in bad_text_col9:
+            print(f"  Line {line_num}: column 8 is blank but column 9 holds '{content[8]}'")
+            print(f"    {content.rstrip()}")
+        print("  FIX: insert one space after 'c' so the text begins at column 10")
+        print()
+        errors_found = True
+
+    if bad_code:
+        print(f"[ERROR] {len(bad_code)} comment line(s) have an invalid record-type code:")
+        for line_num, content in bad_code:
+            print(f"  Line {line_num}: columns 8-9 hold {content[7:9]!r}")
+            print(f"    {content.rstrip()}")
+        print("  FIX: record-type codes are 1-2 letters LEFT-JUSTIFIED at column 8")
+        print()
+        errors_found = True
+
+    if not errors_found:
+        print("[OK] SUCCESS: All comment lines start their text at column 10 and")
+        print("     carry a legal record-type code in columns 8-9")
+
+    return not errors_found
+
+
 def validate_ensdf_file(filename, detailed=False, header_only=False):
     """Validate ENSDF file field positions focusing on data record lines."""
     
@@ -2182,6 +2238,7 @@ def validate_ensdf_file(filename, detailed=False, header_only=False):
             ("Transition intensity uncertainty (DTI)", validate_dti_field(filename)),
             ("GT/LT placement", validate_gt_lt_placement(filename)),
             ("Comment flags", validate_comment_flags(filename)),
+            ("Comment line columns", validate_comment_columns(filename)),
             ("G-record flags", validate_g_record_flags(filename)),
         ]
 
