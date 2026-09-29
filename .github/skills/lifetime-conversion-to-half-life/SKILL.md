@@ -1,5 +1,5 @@
 ---
-name: half-life-lifetime-conversion
+name: lifetime-conversion-to-half-life
 description: >
   Update L-record half-life value T and uncertainty DT from adopted cL T$ lifetime values by converting |t to T{-1/2} with ln(2), applying ENSDF uncertainty notation, unit scaling, and validation.
 argument-hint: "[ENSDF file path]"
@@ -13,10 +13,10 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 
 1. Read the adopted lifetime from the first `|t=`, `|t>`, or `|t<` in cL T$.
 2. Decode comment uncertainty (`{In}` or `{I+n-m}`) in value units.
-3. Convert with `T{-1/2}=|t|*ln(2)`; scale uncertainty by `ln(2)`.
+3. Convert to half-life using `T{-1/2}=|t|*ln(2)`; scale uncertainty by `ln(2)`.
 4. Choose a natural unit (`FS`, `PS`, `NS`, ...): keep stored value not `>100`; if converted value is `<0.1`, scale down when the smaller unit gives `<=100`.
 5. Round value/uncertainty together so DT is valid ENSDF data-field content.
-6. Update one L-record at a time, then validate immediately.
+6. Update one L-record, T field at a time, then validate immediately.
 
 ## Core Rule
 
