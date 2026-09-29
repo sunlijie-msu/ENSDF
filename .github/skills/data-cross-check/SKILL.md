@@ -56,6 +56,7 @@ Actively leverage coding, scripts, and programming tools when necessary to effec
 ## Required Matching Rules
 
 - Never match a gamma by Eγ alone; match parent L-record first. For near-equal energies, use both level energy and transition energy for accurate matching.
+- Source of truth is only the designated source. When source and target disagree, the source wins; report the target value as a mismatch instead of justifying it.
 - Numerical Exactness: see `.github/agents/ENSDF-Agent.agent.md` § Numerical Exactness.
 
 ## Adopted E(level) Traceability
