@@ -2053,8 +2053,15 @@ def validate_comment_columns(filename):
 
     bad_text_col9 = []
     bad_code = []
+    misplaced_flag = []
     for line_num, line_content in enumerate(get_stripped_lines(filename), 1):
-        if len(line_content) < 10 or line_content[6] != 'c':
+        if len(line_content) < 10:
+            continue
+        if line_content[6] != 'c':
+            # A shifted comment flag lands in column 8, which would otherwise hide
+            # the whole line from this check.
+            if line_content[6] == ' ' and line_content[7] in {'c', 'C'}:
+                misplaced_flag.append((line_num, line_content))
             continue
         col8, col9 = line_content[7], line_content[8]
         if col8 == ' ' and col9 != ' ':
@@ -2079,6 +2086,15 @@ def validate_comment_columns(filename):
             print(f"  Line {line_num}: columns 8-9 hold {content[7:9]!r}")
             print(f"    {content.rstrip()}")
         print("  FIX: record-type codes are 1-2 letters LEFT-JUSTIFIED at column 8")
+        print()
+        errors_found = True
+
+    if misplaced_flag:
+        print(f"[ERROR] {len(misplaced_flag)} line(s) hold the comment flag in column 8:")
+        for line_num, content in misplaced_flag:
+            print(f"  Line {line_num}: column 7 is blank but column 8 holds '{content[7]}'")
+            print(f"    {content.rstrip()}")
+        print("  FIX: the comment flag belongs in column 7, so the text starts at column 10")
         print()
         errors_found = True
 

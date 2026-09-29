@@ -218,6 +218,12 @@ def _is_free_text_record(line: str) -> bool:
     return len(line) > 6 and line[6] in {'d', 'D'}
 
 
+def _is_misplaced_comment(line: str) -> bool:
+    """True when a comment flag sits in column 8 instead of column 7, which makes the
+    line unrecognizable; without this test a file scan silently skips it."""
+    return len(line) > 7 and line[6] == ' ' and line[7] in {'c', 'C'}
+
+
 def print_ruler(line: str, label: Optional[str] = None) -> bool:
     """Print ENSDF 80-column ruler with format specifications for validation."""
 
@@ -378,7 +384,8 @@ def scan_file(filename: str, show_only_wrong: bool = False, line_number: Optiona
         line = raw_line.rstrip('\n')
         # Check ALL record types (H, L, G, E, B, A, delayed-particle and PN records)
         # ENSDF standard: ALL record types must be exactly 80 characters
-        if _record_key(line) in RECORD_DEFINITIONS:
+        key = _record_key(line)
+        if key in RECORD_DEFINITIONS or _is_misplaced_comment(line):
             total_checked += 1
             if show_only_wrong:
                 if not _quiet_call(print_ruler, line, f'{filename}:{lineno}'):

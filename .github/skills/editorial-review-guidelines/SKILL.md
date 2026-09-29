@@ -114,6 +114,7 @@ Missing terminal periods, XREF notation. Valid ENSDF symbols: `|?`, `{+n}`, `{-n
 
 ## Editing Discipline
 - Use minimal single-line anchors; multi-line anchors spanning wrapped comment text can re-wrap lines and silently drop words.
+- Comment-line layout: `NUCID` + continuation (col 6) + `c` (col 7) + record code (cols 8-9, e.g. `L `, `G `, or two blanks) + text at col 10, i.e. a 9-character prefix. A flag shifted into column 8 makes the line unrecognizable, so assert `line[6]=='c'` and `line[9]!=' '` in any generating script before relying on the validators.
 - After each file's edits, prove the diff is comment-only (changed lines have `c`/`d` in col 7) and no text was lost (word-level compare against `git show HEAD:<file>`).
 - Find the top block by skipping lines whose col 7 is `c`/`d`; `P`/`N` records count as data records, and `cP`/`cN` stay uppercase.
 - Add a recurring class to `scan_editorial_review.py` CHECKS with a `--selftest` case instead of writing ad-hoc sweep scripts; run it one path at a time.
