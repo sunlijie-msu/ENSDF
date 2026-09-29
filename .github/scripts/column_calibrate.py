@@ -2054,14 +2054,17 @@ def validate_comment_columns(filename):
     bad_text_col9 = []
     bad_code = []
     misplaced_flag = []
+    col6_flag = []
     for line_num, line_content in enumerate(get_stripped_lines(filename), 1):
         if len(line_content) < 10:
             continue
         if line_content[6] != 'c':
-            # A shifted comment flag lands in column 8, which would otherwise hide
-            # the whole line from this check.
+            # A shifted comment flag lands in column 8 or in column 6, which would
+            # otherwise hide the whole line from this check.
             if line_content[6] == ' ' and line_content[7] in {'c', 'C'}:
                 misplaced_flag.append((line_num, line_content))
+            elif line_content[5] == 'c':
+                col6_flag.append((line_num, line_content))
             continue
         col8, col9 = line_content[7], line_content[8]
         if col8 == ' ' and col9 != ' ':
@@ -2095,6 +2098,15 @@ def validate_comment_columns(filename):
             print(f"  Line {line_num}: column 7 is blank but column 8 holds '{content[7]}'")
             print(f"    {content.rstrip()}")
         print("  FIX: the comment flag belongs in column 7, so the text starts at column 10")
+        print()
+        errors_found = True
+
+    if col6_flag:
+        print(f"[ERROR] {len(col6_flag)} line(s) hold the comment flag in column 6:")
+        for line_num, content in col6_flag:
+            print(f"  Line {line_num}: column 6 holds 'c' and column 7 holds '{content[6]}'")
+            print(f"    {content.rstrip()}")
+        print("  FIX: column 6 is the continuation field; the flag belongs in column 7")
         print()
         errors_found = True
 

@@ -219,9 +219,13 @@ def _is_free_text_record(line: str) -> bool:
 
 
 def _is_misplaced_comment(line: str) -> bool:
-    """True when a comment flag sits in column 8 instead of column 7, which makes the
+    """True when a comment flag sits in column 8 (or in column 6), which makes the
     line unrecognizable; without this test a file scan silently skips it."""
-    return len(line) > 7 and line[6] == ' ' and line[7] in {'c', 'C'}
+    if not len(line) > 7:
+        return False
+    if line[5] == 'c' and line[6] != 'c':
+        return True
+    return line[6] == ' ' and line[7] in {'c', 'C'}
 
 
 def print_ruler(line: str, label: Optional[str] = None) -> bool:
@@ -282,6 +286,9 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
         # Specific heuristic for shifted comments
         if len(line) > 7 and line[7] in {'c', 'C'} and line[6] == ' ':
             errors.append('HINT: Found "c" in Column 8. Comment flags must be in Column 7.')
+        if len(line) > 6 and line[5] == 'c' and line[6] != 'c':
+            errors.append('HINT: Found "c" in Column 6 (continuation field). Comment flags '
+                          'must be in Column 7 with text starting at Column 10.')
         # NUCID shift detection: if col 1 is a digit, the whole line is shifted left
         if _nucid_shifted_left(line) and len(line) < 80:
             errors.append('NUCID shifted left: Column 1 is digit "' + line[0] + '" (must be space for A<100). Whole line shifted left by 1 column.')
