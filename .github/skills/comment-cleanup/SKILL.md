@@ -58,6 +58,7 @@ their wording and re-wrap the whole paragraph instead of re-padding the single l
 - ❌ Redundant comments restating the default source
 - ❌ Individual cG E,RI$ for gammas that match the general comment default
 - ❌ Comments for deduced energies (no uncertainty = level difference)
+- ❌ Markup pasted from a digest: LaTeX (`$^{37}\text{Cl}(d,^3\text{He})^{36}\text{S}$`), markdown bold/table pipes, or HTML must be rewritten in ENSDF notation (`{+37}Cl(d,{+3}He){+36}S`) before it reaches a comment line
 
 ## Execution Checklist
 

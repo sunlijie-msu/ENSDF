@@ -1,0 +1,64 @@
+Program for ENSDF check: output for Format Error and Warnings (version 09/26/2026)
+Generated at: Wed 09/30/2026 at 01:52:48 AM EDT
+
+****************************************
+     Total 9 errors 0 warning
+****************************************
+
+-----------------------------------------------------------------------------------------
+    In file: D:\X\ND\ENSDF\A36\S36\new\S36_37cl_d_3he.ens
+-----------------------------------------------------------------------------------------
+
+#########################################################################################
+### In dataset <36S: 37CL(D,3HE)>
+
+     10.  36S 5c  surface-barrier detector telescope consisting with FWHM=110 keV). For  
+                                                                                 *         <E> Unbalanced bracket
+     13.  36S 8c  spectrograph with FWHM=25 keV). At at extreme forward angles |q>2.5|', 
+                                               *                                           <E> Unbalanced bracket
+     31.  36S 2c  spectroscopic factors from $^{37}\text{Cl}(d,                          
+                  **************************                                               <E> Comment header unexpected
+                                                                                               or it should be starting comment line
+     32.  36S 3c  ^3\text{He})^{36}\text{S}$ and $^{35}\text{Cl}(d,                      
+                  *************************                                                <E> Comment header unexpected
+                                                                                               or it should be starting comment line
+     33.  36S 4c  ^3\text{He})^{34}\text{S}$ reactions.                                  
+                  *************************                                                <E> Comment header unexpected
+                                                                                               or it should be starting comment line
+
+
+-----------------------------------------------------------------------------------------
+    In file: D:\X\ND\ENSDF\A36\S36\new\S36_adopted.ens
+-----------------------------------------------------------------------------------------
+
+#########################################################################################
+### In dataset <36S: ADOPTED LEVELS, GAMMAS>
+
+     73.  36S  cG Decay takes place by pair formation.                                   
+                  **                                                                       <E> $ missing at line beginning or after record name
+     79.  36S  cL T$ from DSA in Coul. Ex. (2008Sp01). Other: 0.8 ps {I+4-3} (DSA in     
+                                                                             *             <E> Unbalanced bracket
+    158.  36S   G 1485         100                                                       
+                  *****                                                                    <E> No final level found
+                                                                                               Parent level:  6690, JPI=(6+)
+                                                                                               Calculated FL: 5205 
+                                                                                               Closest level:
+                                                                                                              5206.1 3, JPI=5-
+                                                                                                 but excluded by XREF. Check if XREF is missing
+
+-----------------------------------------------------------------------------------------
+    In file: D:\X\ND\ENSDF\A36\S36\new\S36_beta_decay_5.6_s.ens
+-----------------------------------------------------------------------------------------
+
+
+#########################################################################################
+### In dataset <36S: 36P B- DECAY (5.6 S)>
+
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                         **    *****  Composite Data Set Checks *****
+                                                                                         **<E> Sum %I(B-)=106 1 exceeds %BR=100.0 by >11 sigmas
+                                                                                               Check B- intensities
+
+
+
+End of report

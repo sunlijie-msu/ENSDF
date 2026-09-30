@@ -104,6 +104,10 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 Missing terminal periods, XREF notation. Valid ENSDF symbols: `|?`, `{+n}`, `{-n}`, `|a`, `|b`, `|g`, `|d`, `|w`, `|*`, `|+`, `|-`.
 - Never strip a leading `|`: `|<` = ≤, `|>` = ≥, `|*` = ×. A leading `|` is never a stray artifact.
 - Comment lines need not be padded to 80 columns (human wraps later); still confirm the diff is comment-only (col 7 = `c`).
+- Comment-unit order inside one L/G block: identifiers run `E$` → `RI$` → `M$` → `MR$` → general (no identifier before `$`). A general comment sitting ahead of `M$`/`MR$` is a violation that `check_gamma_ordering.py` reports; read its COMMENT ORDERING section, not just the gamma/level ordering.
+- Two datasets reporting the same value must share one clause; never demote an agreeing value to `Other:` (see the lifetime SKILL). Sentence-initial `Other:` is capitalized, identifier-adjacent `$other:` is lowercase.
+- When a fix changes a line's trailing pad count, re-measure that line's length in the same turn: a replacement whose length differs from the matched span can relocate one space to the match boundary and yield 79/81-column lines.
+- LaTeX/HTML leaked from a digest is a per-line repair: convert `$^{37}\text{Cl}(d,^3\text{He})^{36}\text{S}$` to `{+37}Cl(d,{+3}He){+36}S` and re-wrap the block (the replacement is shorter, so pads change).
 - The 80-column all-space line that ends a file is part of the ENSDF submission format: never delete it, and treat a missing one as a repair candidate rather than noise.
 - `d`/`D` (col 7) hidden-message records are free-text notes, not comments: never length-check or reword them.
 - Values quoted in comments must name the specific gamma/level/multipolarity record and match it character-for-character — see `comment-quoted-values-check`.

@@ -1,6 +1,3 @@
-Program for consistency check: output for new dataset of Adopted Levels, Gammas with all data (version 09/26/2026)
-Generated at: Wed 09/30/2026 at 01:53:03 AM EDT                                 
-                                                                                
  36S     ADOPTED LEVELS, GAMMAS                                  ENSDF    202609
  36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
  36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 

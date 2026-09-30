@@ -77,7 +77,7 @@ Each subsection shows the template (uppercase placeholders) followed by a concre
 `T$lifetime |t>a ps in (d,p|g) from 1970Bu18 with DSAM.`
 
 ### Single Limit with Others
-Adopt the **strictest** limit (largest `>`, smallest `<`); move all others to "Others:". Limits cannot be averaged.
+Adopt the **strictest** limit (largest `>`, smallest `<`); move all others to "Others:". Limits cannot be averaged. If two limits are equal, adopt both in the main comment and move any additional limits to "Others:".
 
 `T$lifetime |t>VALUE UNIT in REACTION from NSR with METHOD. Others: >VALUE1 UNIT in REACTION1 from NSR1 with METHOD1, ..., and >VALUEn UNIT in REACTIONn from NSRn with METHODn.`
 `T$lifetime |t>a ps in {+32}S({+3}He,p|g) from 1973Ca15 with DSAM. Others: >1.0 ps in {+33}S(p,|g) from 1973An13 with DSAM, >400 fs in {+33}S(p,|g) from 1977Da02 with DSAM, and >1500 fs in {+33}S(p,|g) from 1985La16 with DSAM.`
