@@ -472,6 +472,11 @@ MEASURED_TO_CHARACTER: Dict[str, Tuple[str, ...]] = {
 }
 
 
+def _dominant_multipolarity(value: str) -> str:
+    """Leading (dominant) multipole of an M field: 'E1(+M2)' -> 'E1'."""
+    return re.split(r'[+(]', value.strip().lstrip('(['))[0].strip()
+
+
 def multipolarity_equivalent(first: str, second: str) -> bool:
     """True when a measured D/Q form and its character form agree.
 
@@ -485,7 +490,9 @@ def multipolarity_equivalent(first: str, second: str) -> bool:
         if ((a == measured and b in characters)
                 or (b == measured and a in characters)):
             return True
-    return False
+    # a comment may quote only the dominant component of a mixed multipolarity
+    # (e.g. "E1" for a G-record whose M field is "E1(+M2)")
+    return a == _dominant_multipolarity(b) or b == _dominant_multipolarity(a)
 
 
 # ---------------------------------------------------------------------------
@@ -551,7 +558,7 @@ def verify(refs: List[QuotedRef], levels: Dict[float, Level],
                 # EXCEPTION: g.s. notation in comments is equivalent to 0.0 in data
                 # (ENSDF convention: ground state written as g.s. in comments)
                 is_ground_state_match = (
-                    ref.level_energy_str == 'g.s.' and lvl.energy_str == '0.0'
+                    ref.level_energy_str == 'g.s.' and lvl.energy == 0.0
                 )
                 if not is_ground_state_match and lvl.energy_str != ref.level_energy_str:
                     findings.append(Finding(

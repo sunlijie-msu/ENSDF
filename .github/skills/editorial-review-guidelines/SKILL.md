@@ -100,7 +100,7 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 - Flag contradictory claims (confirmed and tentative in same sentence).
 - Flag conclusions without citation or method reference.
 
-## Exclusions
+## Cautionary Notes
 Missing terminal periods, XREF notation. Valid ENSDF symbols: `|?`, `{+n}`, `{-n}`, `|a`, `|b`, `|g`, `|d`, `|w`, `|*`, `|+`, `|-`.
 - Never strip a leading `|`: `|<` = ≤, `|>` = ≥, `|*` = ×. A leading `|` is never a stray artifact.
 - Comment lines need not be padded to 80 columns (human wraps later); still confirm the diff is comment-only (col 7 = `c`).
