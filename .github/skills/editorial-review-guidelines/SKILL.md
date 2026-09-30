@@ -114,6 +114,7 @@ Missing terminal periods, XREF notation. Valid ENSDF symbols: `|?`, `{+n}`, `{-n
 
 ## Editing Discipline
 - Use minimal single-line anchors; multi-line anchors spanning wrapped comment text can re-wrap lines and silently drop words.
+- When two comment lines are byte-identical, disambiguate the anchor with the following line's text, and keep the padding arithmetic (insert chars / drop N pad spaces) inside the same edit. After editing, re-check the file's line count and every line's length, because a replacement that begins with a newline can lose it and merge two records.
 - Comment-line layout: `NUCID` + continuation (col 6) + `c` (col 7) + record code (cols 8-9, e.g. `L `, `G `, or two blanks) + text at col 10, i.e. a 9-character prefix. A flag shifted into column 6 or column 8 makes the line unrecognizable (both directions are now reported by the validators), so assert `line[6]=='c'` and `line[9]!=' '` in any generating script instead of trusting a passing scan.
 - After each file's edits, prove the diff is comment-only (changed lines have `c`/`d` in col 7) and no text was lost (word-level compare against `git show HEAD:<file>`).
 - Find the top block by skipping lines whose col 7 is `c`/`d`; `P`/`N` records count as data records, and `cP`/`cN` stay uppercase.
