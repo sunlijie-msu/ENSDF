@@ -18,6 +18,8 @@ ENSDF record/field definitions, column positions, uncertainty notation: `.github
 5. Add `cG RI$other: RI' {Iσ'} from REACTION.`; delete superseded average comments and continuations.
 6. Never average RI values with different references; rescaling exposes the disagreement.
 
+**Attribution check** - to identify which dataset an adopted RI came from, rescale each candidate source by its block factor k and compare value *and* uncertainty: DRI_adopted = k*DRI_src*10^(decimals_adopted-decimals_src). An exact value+DRI match identifies the source; a smaller adopted DRI means the field came from elsewhere (or the reference gamma's DRI was deliberately dropped).
+
 **Safeguards** — verify level/gamma identity and source normalization before arithmetic. After editing, assert adopted fields are unchanged, rescaled comments match the calculation, and old average text is absent.
 
 **Validation** — check RI/DRI columns 23-31 and exact changed-line scope; run `.github/scripts/column_calibrate.py` and `.github/scripts/check_gamma_ordering.py`. Follow `.github/copilot-instructions.md` for full rules.
