@@ -50,27 +50,37 @@
  36S  PN                                                                     7  
  36S   L 0            0+                                                        
  36S   L 3290.9    6  2+               76 FS     21                             
- 36S  cL J$spin=2 from p|g(|q) in 1971Ol02.                                     
+ 36S  cL J$spin=2 from p|g(|q) in 1971Ol02. 3290.9|g, E2 to 0+ g.s.             
  36S  cL T$lifetime |t=0.11 ps {I3} (1972Sa09, DSAM). Other: |t=0.20 ps {I3}    
  36S 2cL (1971Ol02, DSAM).                                                      
  36S   G 3290.8    6  100       E2                                              
  36S  cG E$other: 3287.0 {I15} (1971Ol02).                                      
- 36S  cG M$Q from 1971Ol02.                                                     
+ 36S  cG M$Q from p|g(|q) in 1971Ol02. M2 ruled out by RUL.                     
  36S  cG $A{-2}=+0.51 {I4}, A{-4}=-1.05 {I6} (1971Ol02).                        
  36S   L 3346      4  0+               8.8 NS    2                              
+ 36S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
+ 36S  cL E$1971Ol02 determined E(level)=3342 {I4} from proton spectra. 1972Sa09 
+ 36S 2cL adjusted E(level) to 3346 {I4} from E|g-deduced precise E(level) of    
+ 36S 3cL 3291 with the 55-keV level energy difference from 1971Ol02.            
  36S  cL T$lifetime |t=12.7 ns {I3} from proton-511 delayed coincidence         
  36S 2cL (1971Ol02). This level deexcites by E0 transition to 0+ g.s. via the   
  36S 3cL emission of positron-electron pairs and the 511-keV |g rays arise from 
  36S 4cL the annihilation of positrons.                                         
+ 36S   G 3346         100       E0                                              
+ 36S  cG E$3338 {I16} from internal pair energy (1971Ol02).                     
+ 36S  cG M$from the measured baffle yield ratio (1971Ol02).                     
  36S   L 4192.4    6  3-               0.8 PS    +4-2                           
+ 36S  cL J$spin=3 from p|g(|q) in 1971Ol02. |p=- from 901.5|g, E1 to 2+, 3291.0 
+ 36S 2cL level.                                                                 
  36S  cL T$lifetime |t=1.1 ps {I+6-3} (1972Sa09, DSAM). Other: |t>2 ps          
  36S 2cL (1971Ol02, DSAM).                                                      
  36S   G 901.5     4  100       E1(+M2)  +0.03   3                              
  36S  cG E$other: 902.0 {I15} (1971Ol02).                                       
  36S  cG $A{-2}=+0.55 {I5}, A{-4}=+0.08 {I4} (1971Ol02).                        
- 36S  cG $POL=+1.8 {I+7-4} falls on the theoretical E1/M2 (|s=1) curve          
+ 36S  cG M$POL=+1.8 {I+7-4} falls on the theoretical E1/M2 (|s=1) curve         
  36S 2cG (1971Ju02).                                                            
  36S   L 4523.0    7  1                0.017 PS  8                              
+ 36S  cL J$spin=1 from p|g(|q) in 1971Ol02.                                     
  36S  cL T$lifetime |t=0.025 ps {I12} (1972Sa09, DSAM). Other: |t<40 ns         
  36S 2cL (1971Ol02, coincidence resolving time limit).                          
  36S   G 1232.1    4  25     10                                                 
@@ -79,12 +89,14 @@
  36S  cG RI$from 1972Sa09. Other: |<60 (1971Ol02).                              
  36S  cG $A{-2}=+0.54 {I5}, A{-4}=-0.07 {I7} (1971Ol02).                        
  36S   L 4575.1    7  2+               0.055 PS  10                             
+ 36S  cL J$spin=2 from p|g(|q) in 1971Ol02. |p=+ from 1284.2|g, M1(+E2) to 2+,  
+ 36S 2cL 3291.0 level.                                                          
  36S  cL T$lifetime |t=0.080 ps {I15} (1972Sa09, DSAM). Other: |t<0.1 ps        
  36S 2cL (1971Ol02, DSAM).                                                      
  36S   G 1284.2    4  100       M1(+E2)  +0.06   6                              
  36S  cG E$other: 1284.0 {I15} (1971Ol02).                                      
  36S  cG $A{-2}=+0.50 {I6}, A{-4}=-0.28 {I6} (1971Ol02).                        
- 36S  cG $POL=+3.5 {I+23-11} falls on the theoretical M1/E2 (|s=0) curve        
+ 36S  cG M$POL=+3.5 {I+23-11} falls on the theoretical M1/E2 (|s=0) curve       
  36S 2cG (1971Ju02).                                                            
  36S   L 5251.0    7  (1,2,3)          0.07 PS   3                              
  36S  cL T$lifetime |t=0.10 ps {I4} (1972Sa09, DSAM). Other: |t<0.2 ps          
