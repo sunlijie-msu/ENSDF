@@ -1,109 +1,52 @@
 Program for consistency check: output for Error and Warnings (version 09/26/2026)
-Generated at: Wed 09/30/2026 at 01:52:49 AM EDT
+Generated at: Wed 09/30/2026 at 02:57:23 AM EDT
 
 ################################################################################
 In Adopted dataset of 36S
 
- 36S   L 0            0+               STABLE                                   
- 36S X L XREF=ABCDEFGHIJKLMNOP
-         *                                                                        <W> No input dataset with XREF tag=G for DSID=34S(T,P)
-                                                                                      No input dataset with XREF tag=O for DSID=37CL(36S,36S')
-                                                                                      No input dataset with XREF tag=K for DSID=160GD(36S,36S'G),(34S,36S'G)
-                                                                                      No input dataset with XREF tag=N for DSID=176YB(36S,X):TENTATIVE
- 36S   L 3290.9     3 2+               83 FS     7                              
- 36S X L XREF=ACDEFGH(*)JKLNOP
-         *                                                                        <W> No input dataset with XREF tag=G for DSID=34S(T,P)
-                                                                                      No input dataset with XREF tag=O for DSID=37CL(36S,36S')
-                                                                                      XREF tag=H: level possibly not or inconsistent (E,JPI) in H=40AR(G,A)
-                                                                                        closest level in H=40AR(G,A)
-                                                                                        3500         
-                                                                                      No input dataset with XREF tag=K for DSID=160GD(36S,36S'G),(34S,36S'G)
-                                                                                      No input dataset with XREF tag=N for DSID=176YB(36S,X):TENTATIVE
+ 36S   L 3290.8    5  2+               0.083 PS  7                              
  36S 2 L MOMM1=+2.6 10 (2008Sp01)                                               
          *                                                                        <W> Check if MOMM1 and reference are updated with 2020STZV
- 36S   L 3346       4 0+               8.8 NS    2                              
- 36S X L XREF=CDEFGH(*)
-         *                                                                        <W> No input dataset with XREF tag=G for DSID=34S(T,P)
-                                                                                      XREF tag=H: level possibly not or inconsistent (E,JPI) in H=40AR(G,A)
-                                                                                        closest level in H=40AR(G,A)
-                                                                                        3500         
- 36S   G 3346                   E0                                              
-                     *                                                            <W> Check if RI=100 can be assigned to the single branch
- 36S   G 3346                   E0                                              
+ 36S   L 3345      3  0+               8.8 NS    2                              
+ 36S   G 3346         100       E0                                              
                                *                                                  <W> Check E0 transition.
- 36S   L 4192.7     5 3-               0.62 PS   7                              
- 36S X L XREF=ADEFGJKLNOP
-         *                                                                        <W> No input dataset with XREF tag=G for DSID=34S(T,P)
-                                                                                      No input dataset with XREF tag=O for DSID=37CL(36S,36S')
-                                                                                      No input dataset with XREF tag=K for DSID=160GD(36S,36S'G),(34S,36S'G)
-                                                                                      No input dataset with XREF tag=N for DSID=176YB(36S,X):TENTATIVE
+ 36S   L 4192.8    6  3-               0.62 PS   7                              
  36S 2 L MOMM1=+2.4 15 (2008Sp01)                                               
          *                                                                        <W> Check if MOMM1 and reference are updated with 2020STZV
- 36S   L 4523.0     6 1+               0.017 PS  8                              
- 36S X L XREF=CDEFGH(*)
-         *                                                                        <W> No input dataset with XREF tag=G for DSID=34S(T,P)
-                                                                                      XREF tag=H: level possibly not or inconsistent (E,JPI) in H=40AR(G,A)
-                                                                                        closest level in H=40AR(G,A)
-                                                                                        4700         
- 36S   L 4575.2     7 2+               55 FS     10                             
- 36S X L XREF=ACDEFGH(*)
-         *                                                                        <W> No input dataset with XREF tag=G for DSID=34S(T,P)
-                                                                                      XREF tag=H: level possibly not or inconsistent (E,JPI) in H=40AR(G,A)
-                                                                                        closest level in H=40AR(G,A)
-                                                                                        4700         
- 36S   L 5021.5     3 4-                                                        
- 36S X L XREF=AEJKLN(?)
-         *                                                                        <W> No input dataset with XREF tag=K for DSID=160GD(36S,36S'G),(34S,36S'G)
-                                                                                      No input dataset with XREF tag=N for DSID=176YB(36S,X):TENTATIVE
- 36S   L 5206.1     3 5-                                                        
- 36S X L XREF=AEJLN(?)
-         *                                                                        <W> No input dataset with XREF tag=N for DSID=176YB(36S,X):TENTATIVE
- 36S   L 5251.2    10 3-               70 FS     30                             
- 36S X L XREF=ADEGK
-         *                                                                        <W> No input dataset with XREF tag=G for DSID=34S(T,P)
-                                                                                      No input dataset with XREF tag=K for DSID=160GD(36S,36S'G),(34S,36S'G)
- 36S   L 5391.4     9 2+               0.2 PS    GT                             
- 36S X L XREF=DE(5379)G
-         *                                                                        <W> No input dataset with XREF tag=G for DSID=34S(T,P)
- 36S   L 5509.1     5 (2,4)            0.19 PS   4                              
- 36S X L XREF=DE(5514)G
-         *                                                                        <W> No input dataset with XREF tag=G for DSID=34S(T,P)
- 36S   L 5573.1     7 1-               0.14 PS   LT                             
- 36S X L XREF=DEG
-         *                                                                        <W> No input dataset with XREF tag=G for DSID=34S(T,P)
- 36S   L 6186.9     8 3-               55 FS     20                             
- 36S X L XREF=DE(6180)G
-         *                                                                        <W> No input dataset with XREF tag=G for DSID=34S(T,P)
- 36S   L 6514.4     4 4+               0.2 PS    LT                             
- 36S X L XREF=ACDE(6510)G
-         *                                                                        <W> No input dataset with XREF tag=G for DSID=34S(T,P)
- 36S   L 6690         (6+)                                                      
- 36S X L XREF=K
-         *                                                                        <W> No input dataset with XREF tag=K for DSID=160GD(36S,36S'G),(34S,36S'G)
- 36S   L 7120      14 (1,2)+           0.2 PS    LT                             
- 36S X L XREF=CDG
-         *                                                                        <W> No input dataset with XREF tag=G for DSID=34S(T,P)
+ 36S   L 5831.5    8  3-                                                        
+ 36S   G 579.8     4  1.13   28                                                 
+ 36S   G 812.0     4  15.3   9                                                  
+ 36S   G 1256.8    4  56     44                                                 
+ 36S   G 1638.3    4  59     42                                                 
+ 36S   G 2540.3    5  49.3   23                                                 
+                     *                                                            <W> Gamma intensity not normalized with strongest=100!
+ 36S   L 6690.3    19 (6+)             3.7 PS    18                             
+ 36S   G 1182      1  100    16                                                 
+                     *                                                            <W> check Jf&Ji for deltaJ>2 for gamma=1182
+                                                                                        JI=(6+) JF(5509.1)=(2,4)
 
 ################################################################################
 In dataset of 36S: XA 36P B- DECAY (5.6 S)     XREF Tag=A
 
  36S   L 3290.5    5  2+                                                        
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=83 FS 7 this T1/2=
+                                                                                        Adopted T1/2=0.083 PS 7 this T1/2=
  36S   L 4193.0    6  3-                                                        
                                        *                                          <W> T1/2 commented from Adopted but empty
                                                                                         Adopted T1/2=0.62 PS 7 this T1/2=
  36S   G 902.7     4  70.4   20 E1(+M2)  0.00    5                              
+                               *                                                  <E> Mult commented from Adopted but inconsistent
+                                                                                        Adopted Mult=E1 this Mult=E1(+M2)
                                          *                                        <E> MR commented from Adopted but inconsistent
-                                                                                        Adopted MR=+0.03 3 this MR=0.00 5
+                                                                                        Adopted MR=  this MR=0.00 5
  36S   L 4574.6    6  2+                                                        
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=55 FS 10 this T1/2=
+                                                                                        Adopted T1/2=0.055 PS 10 this T1/2=
  36S   G 1284.3    4  4.1    3  M1+E2    +0.08   5                              
                                *                                                  <E> Mult commented from Adopted but inconsistent
                                                                                         Adopted Mult=M1(+E2) this Mult=M1+E2
                                          *                                        <E> MR commented from Adopted but inconsistent
-                                                                                        Adopted MR=+0.06 6 this MR=+0.08 5
+                                                                                        Adopted MR=+0.07 4 this MR=+0.08 5
  36S   L 5019.5    6  4-                                                        
  36S   G 826.9     4  16.1   3                                                  
                                *                                                  <W> Mult commented from Adopted but not given
@@ -117,21 +60,13 @@ In dataset of 36S: XA 36P B- DECAY (5.6 S)     XREF Tag=A
                                                                                         Adopted Mult=Q this Mult=
  36S   L 5251.6    6  3-                                                        
                                        *                                          <W> T1/2 commented from Adopted but empty
-                                                                                        Adopted T1/2=70 FS 30 this T1/2=
+                                                                                        Adopted T1/2=0.07 PS 3 this T1/2=
  36S   G 1960.9    5  13.5   5                                                  
                                *                                                  <W> Mult commented from Adopted but not given
                                                                                         Adopted Mult=D+Q this Mult=
- 36S   L 5831.3    6  3-                                                        
- 36S   G 812.0     4  5.4    3                                                  
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=812.0      Adopted=809.4
  36S   L 6513.2    7  4+                                                        
                                        *                                          <W> T1/2 commented from Adopted but empty
                                                                                         Adopted T1/2=0.2 PS LT this T1/2=
- 36S   L 7270.8    6  (3-,4-,5-)                                                
- 36S   G 3076.6    5  2.8    10                                                 
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=3076.6      Adopted=3079.1
 
 ################################################################################
 In dataset of 36S: XB 36CL EC DECAY (3.01E+5 Y)     XREF Tag=B
@@ -143,113 +78,51 @@ In dataset of 36S: XB 36CL EC DECAY (3.01E+5 Y)     XREF Tag=B
                                                                                         spin change=2 parity change=no
 
 ################################################################################
-In dataset of 36S: XD 34S(T,PG)     XREF Tag=D
+In dataset of 36S: XC 34S(T,PG)     XREF Tag=C
 
  36S   L 3346      4  0+               8.8 NS    2                              
  36S   G 3346         100       E0                                              
                                *                                                  <W> Check E0 transition.
- 36S   L 5251.0    7  1,2,3            0.07 PS   3                              
- 36S   G 1057.6    4  33     8                                                  
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=1057.6      Adopted=1059.6
- 36S   L 6512      16 4+               0.21 PS   LT                             
- 36S   G 3221      16 100       E2                                              
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=6514.4
-         *                                                                        <W> No matching gamma within 5 keV found in Adopted
 
 ################################################################################
-In dataset of 36S: XP 36S(POL D,D')     XREF Tag=P
+In dataset of 36S: XE 36S(POL D,D')     XREF Tag=E
 
  36S   L 3290         2+                                                        
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=3290.9 3 this E=3290
+                                                                                        Adopted E=3290.8 5 this E=3290
  36S   L 4190         3-                                                        
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=4192.7 5 this E=4190
+                                                                                        Adopted E=4192.8 6 this E=4190
 
 ################################################################################
-In dataset of 36S: X?0 36S(37CL,37CL)     XREF Tag=?0
+In dataset of 36S: XF 36S(37CL,37CL)     XREF Tag=F
 
- 36S   L 0            0+                                                        
-         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=0
  36S   L 3290         2+                                                        
-         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=3290.9
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=3290.9 3 this E=3290
+                                                                                        Adopted E=3290.8 5 this E=3290
  36S   L 4190         3-                                                        
-         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=4192.7
          *                                                                        <E> E(level) commented from Adopted but inconsistent
-                                                                                        Adopted E=4192.7 5 this E=4190
+                                                                                        Adopted E=4192.8 6 this E=4190
 
 ################################################################################
-In dataset of 36S: XH 40AR(G,A)     XREF Tag=H
+In dataset of 36S: X?0 37CL(G,P)     XREF Tag=?0
 
- 36S   L 3500                                                                   
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        3346       4 0+                  XREF=CDEFGH(*)
- 36S   L 4700                                                                   
-         *                                                                        <W> level not placed in Adopted.
-                                                                                        closest level in Adopted:
-                                                                                        4575.2     7 2+                  XREF=ACDEFGH(*)
-
-################################################################################
-In dataset of 36S: XI 40AR(3HE,7BE)     XREF Tag=I
-
- 36S   L 3290         2+                                                        
-         *                                                                        <E> Tag=I of this dataset missing in XREF of matched Adopted Level=3290.9
-
-################################################################################
-In dataset of 36S: X?1 160GD(34S,XG),(36S,XG)     XREF Tag=?1
-
- 36S   L 0            0+                                                        
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=0
- 36S   L 3291         2+                                                        
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=3290.9
- 36S   L 4193         3-                                                        
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=4192.7
- 36S   L 5020         4-                                                        
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=5021.5
- 36S   L 5205         5-                                                        
-         *                                                                        <E> Tag=?1 of this dataset missing in XREF of matched Adopted Level=5206.1
-
-################################################################################
-In dataset of 36S: XL 160GD(37CL,XG)     XREF Tag=L
-
- 36S   L 6690.2    19 (6+)                                                      
-         *                                                                        <E> Tag=L of this dataset missing in XREF of matched Adopted Level=6690
-
-################################################################################
-In dataset of 36S: X?2 208PB(36S,36SG)     XREF Tag=?2
-
- 36S   L 0.0          0+                                                        
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=0
- 36S   L 3291      2  2+               0.69 PS   LT                             
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=3290.9
- 36S   L 4193.3    21 3-               0.58 PS   17                             
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=4192.7
- 36S   L 4575.2    22 2+                                                        
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=4575.2
- 36S   L 5020.5    23 4-                                                        
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=5021.5
- 36S   L 5205.7    22 5-                                                        
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=5206.1
- 36S   L 5251.3    22 3-                                                        
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=5251.2
- 36S   L 5509.0    22 (4+)                                                      
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=5509.1
- 36S   L 5576.2    23 1-                                                        
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=5573.1
- 36S   G 2285      1  3.7    4                                                  
-         *                                                                        <W> Check discrepancy in gamma energies:
-                                                                                          this energy=2285      Adopted=2282.1
- 36S   L 5831.3    22 3-                                                        
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=5830.9
- 36S   L 6690.4    23 (6+)             3.7 PS    18                             
-         *                                                                        <E> Tag=?2 of this dataset missing in XREF of matched Adopted Level=6690
- 36S   G 1182      1  1.9    3                                                  
-         *                                                                        <W> This gamma is missing in Adopted Gammas at level=6690
-         *                                                                        <W> No matching gamma within 5 keV found in Adopted
+ 36S   L 0.0                                                                    
+         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=0.0
+ 36S   L 3290                                                                   
+         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=3290.8
+ 36S   L 4520                                                                   
+         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=4523.0
+ 36S   L 4570                                                                   
+         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=4574.8
+ 36S   L 6510                                                                   
+         *                                                                        <E> 3 possible matches found in Adopted! Check XREF
+                                                                                         6472       3 1-                  XREF=D
+                                                                                      #  6512      16 4+                  XREF=CD(6510*)H(6511*)
+                                                                                      #  6513.2     7 4+                  XREF=AD(6510*)H(6511*)
+                                                                                      But tag=?0 of this dataset is not in XREF of any of them!
+ 36S   L 7120                                                                   
+         *                                                                        <E> Tag=?0 of this dataset missing in XREF of matched Adopted Level=7120
 
 
 End of report
