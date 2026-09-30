@@ -2,6 +2,8 @@
  36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
  36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
  36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  dG $Transition strength is calculated by Java-RULER (version 16-Sep-2026) 
+ 36S  dG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
  36S  dL E$Least-squares fitting is done by GLSC (version 23-Sep-2026)          
  36S   Q -1142.13  19 9889.2519 13095.319 -9011.44     2021WA16                 
  36S  cQ $S(2n)=16875.09 {I19}, S(2p)=25250.4 {I8} (2021Wa16)                   
@@ -79,7 +81,9 @@
  36S 6cL is superseded by 1972Sa09.                                             
  36S  cL MOMM1$from transient field technique in Coulomb excitation (2008Sp01). 
  36S   G 3290.5    5  100       E2                                              
- 36S B G BE2W=2.83 24                                                           
+ 36S B G BE2W=2.50 +22-19                                                       
+ 36S S G  CC=0.000911 13$KC=4.43E-6 6$LC=3.41E-7 5$MC=2.88E-8 4                 
+ 36S S G  IPC=0.000906 13                                                       
  36S  cG E$weighted average of 3290.3 {I5} from {+36}P |b{+-} decay, 3290.8 {I6}
  36S 2cG from {+34}S(t,p|g), and 3291 {I2} from {+208}Pb({+36}S,{+36}S|g)       
  36S  cG M$E2, |DJ=2 from |g|g(|q)(DCO) and |g|g(|q)(POL) in                    
@@ -109,7 +113,8 @@
  36S  cL MOMM1$transient field technique in Coulomb excitation in inverse-      
  36S 2cL kinematic reaction, g factor=+0.8 {I5} (2008Sp01).                     
  36S   G 902.1     4  100       E1(+M2)  +0.03   3                              
- 36S B G BE1W=0.00135 15                                                        
+ 36S S G  CC=2.58E-5 4$KC=2.38E-5 4$LC=1.839E-6 29$MC=1.550E-7 24               
+ 36S B G BE1W=0.00136 +18-14                                                    
  36S  cG E$weighted average of 902.7 {I4} from {+36}P |b{+-} decay, 901.5 {I4}  
  36S 2cG from {+34}S(t,p|g), and 902 {I1} from {+208}Pb({+36}S,{+36}S|g)        
  36S  cG M,MR$from p|g(|q) and p|g(|q)(POL) in {+34}S(t,p|g). E1, |DJ=1 from    
@@ -119,9 +124,15 @@
  36S  cL T$lifetime |t=25 fs {I12} in {+34}S(t,p|g) from 1972Sa09 with DSAM.    
  36S 2cL Other: |t<40 ns in {+34}S(t,p|g) from 1971Ol02 with coincidence        
  36S 3cL resolving-time limit.                                                  
- 36S   G 1232.1    4  33     13 [M1,E2]                                         
- 36S   G 4522.2    15 100    13 [M1]                                            
- 36S B G BM1W=0.010 5                                                           
+ 36S   G 1232.1    4  33     13 [M1+E2]  1.2     LT                             
+ 36S S G  CC=3.8E-5 6$KC=2.41E-5 30$LC=1.86E-6 23$MC=1.57E-7 20                 
+ 36S S G  IPC=1.24E-5 24                                                        
+ 36S  cG MR$deduced by evaluators assuming RUL=100 for B(E2)(W.u.).             
+ 36S  cG $B(M1)(W.u.)=0.17 {I+15-8} if M1                                       
+ 36S   G 4522.2    15 100    13 [M1]                   1.20E-3 2                
+ 36S B G BM1W=0.011 +8-4                                                        
+ 36S S G  KC=2.71E-6 4$LC=2.083E-7 29$MC=1.758E-8 25                            
+ 36S S G  IPC=0.001198 17                                                       
  36S   L 4574.6    6  2+               0.055 PS  10                             
  36S X L XREF=ACDGIJ(4700)OP                                                    
  36S  cL J$spin=2 from p|g(|q) in {+34}S(t,p|g). |p=+ from 1284.2|g, M1(+E2) to 
@@ -129,7 +140,9 @@
  36S  cL T$lifetime |t=0.080 ps {I15} in {+34}S(t,p|g) from 1972Sa09 with DSAM. 
  36S 2cL Other: |t<0.1 ps in {+34}S(t,p|g) from 1971Ol02 with DSAM.             
  36S   G 1284.2    4  100       M1(+E2)  +0.07   4                              
- 36S B G BM1W=0.19 4                                                            
+ 36S B G BM1W=0.188 +42-30 $BE2W=2.0 +32-17                                     
+ 36S S G  CC=3.88E-5 6$KC=1.961E-5 28$LC=1.512E-6 21$MC=1.276E-7 18             
+ 36S S G  IPC=1.752E-5 26                                                       
  36S  cG E$weighted average of 1284.3 {I4} from {+36}P |b{+-} decay, 1284.2 {I4}
  36S 2cG from {+34}S(t,p|g), and 1284 {I1} from {+208}Pb({+36}S,{+36}S|g)       
  36S  cG M,MR$from p|g(|q) and p|g(|q)(POL) in {+34}S(t,p|g).                   
@@ -138,6 +151,7 @@
  36S  cL J$826.9|g, M1, |DJ=1 to 3-, 4192.5 level. Spin increases with          
  36S 2cL excitation energy in {+115}In({+34}S,X|g).                             
  36S   G 826.9     4  100.0  19 M1                                          A   
+ 36S S G  CC=4.86E-5 7$KC=4.48E-5 6$LC=3.46E-6 5$MC=2.92E-7 4                   
  36S  cG E$weighted average of 826.9 {I4} from {+36}P |b{+-} decay and 827 {I1} 
  36S 2cG from {+208}Pb({+36}S,{+36}S|g)                                         
  36S  cG M$M1, |DJ=1 from |g|g(|q)(DCO) and |g|g(|q)(POL) in                    
@@ -167,18 +181,24 @@
  36S X L XREF=ACDO                                                              
  36S  cL T$lifetime |t=0.10 ps {I4} in {+34}S(t,p|g) from 1972Sa09 with DSAM.   
  36S 2cL Other: |t<0.2 ps in {+34}S(t,p|g) from 1971Ol02 with DSAM.             
- 36S   G 1058.2    4  34     10 [M1,E2]                                         
+ 36S   G 1058.2    4  34     10 [M1+E2]  2.8     LT                             
+ 36S S G  CC=3.6E-5 6$KC=3.3E-5 5$LC=2.6E-6 4$MC=2.16E-7 35                     
  36S  cG E$weighted average of 1058.8 {I4} from {+36}P |b{+-} decay, 1057.6 {I4}
  36S 2cG from {+34}S(t,p|g), and 1058 {I1} from {+208}Pb({+36}S,{+36}S|g)       
  36S  cG RI$unweighted average of 39.3 {I22} from {+36}P |b{+-} decay, 49 {I12} 
  36S 2cG from {+34}S(t,p|g), and 15 {I5} from {+208}Pb({+36}S,{+36}S|g)         
+ 36S  cG MR$deduced by evaluators assuming RUL=100 for B(E2)(W.u.).             
+ 36S  cG $B(M1)(W.u.)=0.067 {I+50-25} if M1                                     
  36S   G 1960.9    4  100    4  (E1(+M2))-0.09   9                          A   
+ 36S S G  CC=0.000618 14$KC=6.36E-6 23$LC=4.90E-7 18$MC=4.13E-8 15              
+ 36S S G  IPC=0.000611 14                                                       
  36S  cG E$weighted average of 1960.9 {I5} from {+36}P |b{+-} decay, 1961.0 {I4}
  36S 2cG from {+34}S(t,p|g), and 1960 {I1} from {+208}Pb({+36}S,{+36}S|g)       
- 36S  cG RI$others: 100 {I12} from {+34}S(t,p|g) and  
- 36S 2cG 100 {I6} from {+208}Pb({+36}S,{+36}S|g)                                
+ 36S  cG RI$others: 100 {I12} from {+34}S(t,p|g) and 100 {I6} from              
+ 36S 2cG {+208}Pb({+36}S,{+36}S|g)                                              
  36S  cG M$D+Q from p|g(|q) in {+34}S(t,p|g). |D|p=yes from level scheme.       
  36S  cG MR$or -2.4 {I5} from {+34}S(t,p|g).                                    
+ 36S B G BE1W=9E-4 +8-3                                                         
  36S   L 5338      3                                                            
  36S X L XREF=D                                                                 
  36S   L 5390.8    7  2+               0.21 PS   GT                             
@@ -187,7 +207,10 @@
  36S 2cL |t<40 ns in {+34}S(t,p|g) from 1971Ol02 with coincidence resolving-time
  36S 3cL limit.                                                                 
  36S   G 816.2     4  11.1   89 [M1,E2]                                         
- 36S   G 5390.4       100    9  [E2]                                            
+ 36S S G  CC=6.6E-5 16$KC=6.1E-5 15$LC=4.7E-6 11$MC=3.9E-7 10                   
+ 36S   G 5390.4       100    9  [E2]                   1.60E-3 2                
+ 36S S G  KC=2.185E-6 31$LC=1.682E-7 24$MC=1.419E-8 20                          
+ 36S S G  IPC=0.001598 22                                                       
  36S   L 5462      3  3+                                                        
  36S X L XREF=D                                                                 
  36S   L 5508.7    6  (4)              0.19 PS   4                              
@@ -210,6 +233,8 @@
  36S  cL T$lifetime |t<0.2 ps in {+34}S(t,p|g) from both 1971Ol02 and 1972Sa09  
  36S 2cL with DSAM.                                                             
  36S   G 2283.1    20 100       [E1]                                            
+ 36S S G  CC=0.000839 12$KC=5.07E-6 7$LC=3.90E-7 5$MC=3.29E-8 5                 
+ 36S S G  IPC=0.000834 12                                                       
  36S  cG E$unweighted average of 2281.1 {I3} from {+34}S(t,p|g) and 2285 {I1}   
  36S 2cG from {+208}Pb({+36}S,{+36}S|g)                                         
  36S   L 5781.1    19                                                           
@@ -235,8 +260,14 @@
  36S 2cL Other: |t<0.3 ps for the 6.20-MeV doublet in {+34}S(t,p|g) from        
  36S 3cL 1971Ol02 with DSAM.                                                    
  36S   G 1994.8    4  33     11 (M1+E2)                                         
+ 36S S G  CC=0.000288 35$KC=9.7E-6 5$LC=7.5E-7 4$MC=6.31E-8 34                  
+ 36S S G  IPC=0.000278 34                                                       
  36S  cG M,MR$D+Q from p|g(|q) in {+34}S(t,p|g). |D|p=no from level scheme.     
- 36S   G 2894.8    5  100    11 [E1]                                            
+ 36S  cG $B(M1)(W.u.)=0.013 {I+8-5} if M1, B(E2)(W.u.)=11 {I+8-4} if E2         
+ 36S   G 2894.8    5  100    11 [E1]                   1.19E-3 2                
+ 36S S G  KC=3.69E-6 5$LC=2.84E-7 4$MC=2.396E-8 34                              
+ 36S S G  IPC=0.001190 17                                                       
+ 36S B G BE1W=3.5E-4 +22-10                                                     
  36S   L 6223.8    7  2(+)             0.021 PS  LT                             
  36S X L XREF=CD                                                                
  36S  cL J$spin=2,3 for a 6.20-MeV doublet from p|g(|q) in {+34}S(t,p|g). 6186.7
@@ -245,7 +276,11 @@
  36S 2cL |t<0.3 ps for the 6.20-MeV doublet in {+34}S(t,p|g) from 1971Ol02 with 
  36S 3cL DSAM.                                                                  
  36S   G 1649.2    5  100    13 [M1,E2]                                         
+ 36S S G  CC=0.000146 21$KC=1.36E-5 10$LC=1.05E-6 8$MC=8.9E-8 7                 
+ 36S S G  IPC=0.000131 20                                                       
  36S   G 2933.0    10 32     13 [M1,E2]                                         
+ 36S S G  CC=0.00070 6$KC=5.17E-6 15$LC=3.98E-7 12$MC=3.36E-8 10                
+ 36S S G  IPC=0.00070 6                                                         
  36S   L 6350      3                                                            
  36S X L XREF=D                                                                 
  36S   L 6472      3  1-                                                        
@@ -256,8 +291,12 @@
  36S 2cL 3290.6 level.                                                          
  36S  cL T$lifetime |t<0.3 ps in {+34}S(t,p|g) from 1971Ol02 with DSAM.         
  36S   G 2320.1    5            [E1]                                            
+ 36S S G  CC=0.000863 12$KC=4.96E-6 7$LC=3.82E-7 5$MC=3.22E-8 5                 
+ 36S S G  IPC=0.000857 12                                                       
  36S  cG E$The only |g branch observed in {+36}P |b{+-} decay.                  
  36S   G 3221      16 100       E2                                              
+ 36S S G  CC=0.000883 14$KC=4.58E-6 7$LC=3.53E-7 6$MC=2.98E-8 5                 
+ 36S S G  IPC=0.000878 14                                                       
  36S  cG M$Q from p|g(|q) in {+34}S(t,p|g). M2 ruled out by RUL.                
  36S   L 6553      3                                                            
  36S X L XREF=D                                                                 
@@ -270,7 +309,10 @@
  36S   G 1182      1  100    16                                                 
  36S  cG E,RI$from {+208}Pb({+36}S,{+36}S|g).                                   
  36S   G 1484      1  58     16 [E1]                                            
+ 36S S G  CC=0.000264 4$KC=9.64E-6 14$LC=7.43E-7 10$MC=6.27E-8 9                
+ 36S S G  IPC=0.000254 4                                                        
  36S  cG E,RI$from {+208}Pb({+36}S,{+36}S|g).                                   
+ 36S B G BE1W=1.9E-5 +16-8                                                      
  36S   L 7120      20 (1,2+)           0.21 PS   LT                             
  36S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
  36S X L XREF=CGI                                                               
