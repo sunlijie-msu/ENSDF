@@ -42,7 +42,7 @@
  36S  cL E$From a least-squares fit to |g-ray energies, unless otherwise noted. 
  36S  cL J$From comparison of |s(|q) data in (p,p') and (|a,|a') to DWBA and    
  36S 2cL coupled-channel calculations, unless otherwise noted.                  
- 36S  cG E,RI,M,MR$From 34S(T,PG), unless otherwise noted.                      
+ 36S  cG E,RI,M,MR$From {+34}S(t,p|g), unless otherwise noted.                      
  36S   XA36P B- DECAY (5.6 S)                                                   
  36S   XB36CL EC DECAY (3.01E+5 Y)                                              
  36S   XC34S(T,PG)                                                              
@@ -94,7 +94,7 @@
  36S   L 4192.8    6  3-               0.62 PS   7                              
  36S X L XREF=ACDEFLMNOP                                                        
  36S 2 L MOMM1=+2.4 15 (2008Sp01)                                               
- 36S  cL J$spin=3 from p|g(|q) in 34S(T,PG). |p=- from 902|g, E1(+M2), |DJ=1 to 
+ 36S  cL J$spin=3 from p|g(|q) in {+34}S(t,p|g). |p=- from 902|g, E1(+M2), |DJ=1 to 
  36S 2cL 2+, 3290.8 level.                                                      
  36S  cL T$lifetime |t=0.90 ps {I10}: weighted average of 1.1 ps {I+6-3} in     
  36S 2cL {+34}S(t,p|g) from 1972Sa09 with DSAM, 0.84 ps {I24} in                
@@ -121,7 +121,7 @@
  36S B G BM1W=0.010 5                                                           
  36S   L 4574.8    6  2+               0.055 PS  10                             
  36S X L XREF=ACDGIJ(4700)OP                                                    
- 36S  cL J$spin=2 from p|g(|q) in 34S(T,PG). |p=+ from 1284|g, M1(+E2) to 2+,   
+ 36S  cL J$spin=2 from p|g(|q) in {+34}S(t,p|g). |p=+ from 1284|g, M1(+E2) to 2+,   
  36S 2cL 3290.8 level.                                                          
  36S  cL T$lifetime |t=0.080 ps {I15} in {+34}S(t,p|g) from 1972Sa09 with DSAM. 
  36S 2cL Other: |t<0.1 ps in {+34}S(t,p|g) from 1971Ol02 with DSAM.             
@@ -191,7 +191,7 @@
  36S X L XREF=CDO                                                               
  36S  cL T$lifetime |t=0.27 ps {I6} in {+34}S(t,p|g) from 1972Sa09 with DSAM.   
  36S 2cL Other: |t<0.3 ps in {+34}S(t,p|g) from 1971Ol02 with DSAM.             
- 36S  cL J$spin=2,4 from p|g(|q) in 34S(T,PG).                                  
+ 36S  cL J$spin=2,4 from p|g(|q) in {+34}S(t,p|g).                                  
  36S   G 1316.7    4  45     10                                                 
  36S  cG E$weighted average of 1316.8 {I4} from (t,p|g) and 1316 {I1} from      
  36S 2cG ({+36}S,{+36}S|g)                                                      
@@ -230,11 +230,13 @@
  36S  cL T$lifetime |t=0.08 ps {I3} in {+34}S(t,p|g) from 1972Sa09 with DSAM.   
  36S 2cL Other: |t<0.3 ps for the 6.20-MeV doublet in {+34}S(t,p|g) from        
  36S 3cL 1971Ol02 with DSAM.                                                    
- 36S   G 1994.8    4  33     11 D+Q                                             
+ 36S   G 1994.8    4  33     11 (M1+E2)                                         
  36S  cG M,MR$D+Q from p|g(|q) in (t,p|g). |D|p=no from level scheme.           
  36S   G 2894.8    5  100    11 [E1]                                            
- 36S   L 6224.0    11 2+               0.021 PS  LT                             
+ 36S   L 6224.0    11 2(+)             0.021 PS  LT                             
  36S X L XREF=CD                                                                
+ 36S  cL J$spin=2,3 for a 6.20-MeV doublet from p|g(|q) in {+34}S(t,p|g). 6183.4    
+ 36S 2cL level is assigned 3- based on 36S(P,P'),(A,A').                        
  36S  cL T$lifetime |t<0.03 ps in {+34}S(t,p|g) from 1972Sa09 with DSAM. Other: 
  36S 2cL |t<0.3 ps for the 6.20-MeV doublet in {+34}S(t,p|g) from 1971Ol02 with 
  36S 3cL DSAM.                                                                  
@@ -246,8 +248,10 @@
  36S X L XREF=DG(6510*)                                                         
  36S   L 6512      16 4+               0.21 PS   LT                             
  36S X L XREF=CD(6510*)G(6510*)I(6511*)                                         
+ 36S  cL J$spin=4 from p|g(|q) in {+34}S(t,p|g). |p=+ from 3221|g, E2 to 2+, 3290.8 level.
  36S  cL T$lifetime |t<0.3 ps in {+34}S(t,p|g) from 1971Ol02 with DSAM.         
  36S   G 3221      16 100       E2                                              
+ 36S  cG M$Q from p|g(|q) in {+34}S(t,p|g). M2 ruled out by RUL. 
  36S   L 6513.2    7  4+               0.2 PS    LT                             
  36S X L XREF=AD(6510*)G(6510*)I(6511*)                                         
  36S   G 2320.1    5  100       [E1]                                            
