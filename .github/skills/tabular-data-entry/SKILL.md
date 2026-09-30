@@ -66,7 +66,7 @@ Trace entries to source: verify value, uncertainty, row, column, header, and uni
 - Insert with the diff-aware edit tool in chunks (~85 records), anchoring each chunk on the current last line of the block. Verify the anchor is unique (energy search) before editing.
 - After each chunk, compare the file block byte-for-byte against the expected file; report mismatches with wanted/got lines, then repair by re-editing (never `git restore`/`checkout`).
 - Never let a script write to the `.ens`; a script may only produce the expected block.
-- Classify records by cols 6–8 (continuation char + type; `PN` occupies cols 7–8), not col 8 alone. Check line endings with a binary read (Python text mode masks CRLF).
+- Classify records by cols 6–8 (continuation char + type; `PN` occupies cols 7–8), not col 8 alone. Check line endings with a binary read (Python text mode masks CRLF); `column_calibrate.py --fix` pads/trims data lines but rewrites the file with CRLF, so restore the original EOL afterwards with a byte-level replace.
 
 ### Placement of Unplaced Gammas
 
