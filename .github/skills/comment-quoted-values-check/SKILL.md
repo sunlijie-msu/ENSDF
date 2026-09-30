@@ -7,7 +7,7 @@ description: >
   J-π values, and energy conservation violations. Fixes comment text
   only — never edits data records. Skip ruler and column validation
   (comment-only workflow).
-argument-hint: [adopted.ens]
+argument-hint: [crosscheck comment quoted values]
 ---
 
 # Comment Quoted Values Cross-Check
@@ -80,7 +80,7 @@ Quoted J-π must match the L-record J field character-for-character. Parentheses
 ### 5. Energy Conservation
 
 For transitions quoted as `E_gamma|g to/from E_level`, verify:
-- **E_initial - E_final ≈ E_gamma** (within ±2 keV warning, ±5 keV error)
+- **E_initial - E_final ≈ E_gamma** (within ±3 keV); off by >5 keV is a warning and needs investigation; off by >10 keV is a possible error and needs revision.
 - `to` direction: E_gamma = E_initial - E_final (de-excitation)
 - `from` direction: E_gamma = E_final - E_initial (feeding transition)
 
