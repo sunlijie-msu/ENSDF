@@ -94,6 +94,12 @@ Adopt the **strictest** limit (largest `>`, smallest `<`); move all others to "O
 `T$lifetime |t=ADOPTED UNIT {IUNC}: weighted average of VALUE1 UNIT {IUNC1} in REACTION1 from NSR1 with METHOD1 and VALUE2 UNIT {IUNC2} in REACTION2 from NSR2 with METHOD2. Others: >VALUE3 UNIT in REACTION3 from NSR3 with METHOD3 and >VALUE4 UNIT in REACTION4 from NSR4 with METHOD4.`
 `T$lifetime |t=a ps {Ib}: weighted average of 3.3 ps {I5} in ({+34}S,p|g) from 1973Wa10 with DSAM and 3.5 ps {I2} in {+208}Pb({+36}S,{+35}S|g) from 2022Gr07 with DRDM. Others: >1.8 ps in (d,p|g) from 1970Bu18 with DSAM and >1.6 ps in (d,p|g) from 1972Fr11 with DSAM.`
 
+### Conciseness Refinement
+For adopted weighted averages with many measurements sharing a method, group citations by reaction: list each value and NSR key, name each reaction once, separate reaction groups with semicolons, and end with `all with METHOD`. Use this compact form only when one method applies to every grouped value; otherwise retain the full per-value format. Preserve every value, uncertainty, reference, and evaluator's placement between the weighted average and `Others:`.
+`T$lifetime |t=ADOPTED UNIT {IUNC}: weighted average of VALUE1 UNIT {IUNC1} from NSR1, VALUE2 UNIT {IUNC2} from NSR2, and VALUE3 UNIT {IUNC3} from NSR3 in REACTION1; VALUE4 UNIT {IUNC4} from NSR4 and VALUE5 UNIT {IUNC5} from NSR5 in REACTION2; all with METHOD1.`
+`T$lifetime |t=48 fs {I5}: weighted average of 46 fs {I15} from 1970Br11, 40 fs {I20} from 1972AlZT, and 100 fs {I30} from 1973Ca15 in {+32}S({+3}He,p|g); 36 fs {I15} from 1977Da02, 46 fs {I10} from 1983Wa27, 47 fs {I5} from 1984Ke01, and 49 fs {I5} from 1985La16 in {+33}S(p,|g); all with DSAM.`
+
+
 > **Note:** "Others:" items may be limits or finite values (with {IUNC}), as determined by the human evaluators.
 
 ### Special Case: Converted from Adopted B(E2).
