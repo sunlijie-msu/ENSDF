@@ -47,6 +47,8 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 ## Audit Addendum (Recommended)
 
 - Treat `cL`, `2cL`, `3cL`, ... as one inseparable comment block before extracting lifetimes or averaging inputs.
+- Audit every T-bearing L record, not only those with numeric `|t`: a range statement (e.g. "too short to be measured, range 1-100 ps") must carry its implied limit (`|t<1 ps`) so the `T` limit is traceable.
+- Keep the unit convention already used by the file/mass chain (e.g. `0.055 PS`, `0.021 PS`) instead of re-scaling sub-0.1 values to `FS`; do not churn `T`/`DT` that already reproduce `|t`*ln(2).
 - For comments containing `weighted average of` or `unweighted average of`, verify the adopted lifetime using:
   - `python .github/scripts/Java_Average.py --comment "<full cL T block text>"`
 
