@@ -6,29 +6,31 @@
  36S  cQ $S(2n)=16875.09 {I19}, S(2p)=25250.4 {I8} (2021Wa16)                   
  36S  c  Isotope discovery (2012Th10): {+36}S isotope was identified in a mass  
  36S 2c  spectrometer at Harvard (1938Ni04).                                    
- 
- 36S  c  1971Ar32: production of {+36}S in {+232}Th({+40}Ar,X) at 290 MeV       
- 36S 2c  fragmentation reaction                                                 
- 36S  c  1983Ry04: {+36}S(e,e) E=120, 240, 320 MeV. Measured |s(|q), deduced    
- 36S 2c  charge radius                                                          
- 36S  c  1985Gy02, 1985GyZZ: {+36}S(|p-,|p-) E=48.4 MeV, measured |s(|q)        
- 36S  c  1985Ko43: {+20}Ne({+16}O,{+16}O') E(c.m.)=24.5-35.5 MeV, deduced       
- 36S 2c  resonances                                                             
- 36S  c  1985Sc05: measured muonic atom x rays, deduced rms charge radii.       
- 36S 2c  Observed muonic x-ray energies: 515.985 {I14} (2p -> 1s), 616.28 {I8}  
- 36S 3c  (3p -> 1s), 651.30 {I10} (4p -> 1s), 667.63 {I12} (5p -> 1s).          
- 36S  c  1997Is02: {+37}Cl(|g,p) E|<32 MeV, measured E|g, I|g. GDR features     
- 36S 2c  deduced                                                                
- 36S  c  1999Ai02: Si({+36}S,X) E=46.17 MeV/nucleon, measured energy integrated 
- 36S 2c  cross sections, deduced radius                                         
- 36S  d  2007No13: yield measurement in {+9}Be,{+181}Ta({+40}Ar,X) E=100        
- 36S 2d  MeV/nucleon                                                            
- 36S  d  Cross sections and yield measurement: 2010Wa12, 2007De15, 2007Na31,    
- 36S 2d  2005De42                                                               
- 36S  d  Structure calculations (selected references for levels, spins, etc.):  
- 36S 2d  2009Bo30, 2006In01, 2006St21, 1999Ca17, 1998Co35                       
- 36S  cL E$ From least-squares fit to E|g data, assuming 0.3 keV uncertainty for
- 36S 2cL each E|g                                                               
+ 36S  c  {+36}S production:                                                     
+ 36S  c  2012Zh06: {+9}Be({+40}Ar,X) E=57 MeV/nucleon, measured fragment yields.
+ 36S  c  2008IdZZ: {+24}Mg({+18}O,x|g) E=70 MeV, measured E|g, I|g, |g|g-coin.  
+ 36S  c  2003Wa23: {+36}Cl(n,p){+36}S at E=0.1-350 keV, measured |s.            
+ 36S  c  2002Go28: {+39}Ar(n,|g){+36}S, E=thermal, measured |s upper limit.     
+ 36S  c  2001Go29: {+39}Ar(n,|g){+36}S at E<100 keV, Maxwellian averaged |s.    
+ 36S  c  1985Ko43: {+20}Ne({+16}O,{+16}O') at E(c.m.)=24.5-35.5 MeV; deduced    
+ 36S 2c  resonances.                                                            
+ 36S  c  1985Gy02, 1985GyZZ: {+36}S(|p-,|p-) E=48.4 MeV, measured |s(|q).       
+ 36S  c  1971Ar32: {+232}Th({+40}Ar,X) at E=290 MeV, measured yields.           
+ 36S  c  {+36}S radius measurements:                                            
+ 36S  c  1985Sc05: measured muonic x-ray energies, deduced rms charge radii.    
+ 36S 2c  Observed energies 515.985 {I14} (2p -> 1s), 616.28 {I8} (3p -> 1s),    
+ 36S 3c  651.30 {I10} (4p -> 1s), 667.63 {I12} (5p -> 1s).                      
+ 36S  c  1983Ry04: measured |s(|q) in {+36}S(e,e) at E=120, 240, 320 MeV;       
+ 36S 2c  deduced charge radius.                                                 
+ 36S  c  {+36}S mass measurements:                                              
+ 36S  c  2001Wa50: mass differences and binding energies from {+36}S(p,n) at    
+ 36S 2c  E|?=2 MeV and {+36}Cl(n,p) reactions.                                  
+ 36S  c  Theoretical calculations:                                              
+ 36S  c  2023Dr01: shell model, first 2+ state and B(E2) in {+36}S.             
+ 36S  c  2009Bo30: shell model, negative-parity intruder levels, J and |p.      
+ 36S  c  2006St21: shell model, level energies, g factors and B(E2) in {+36}S.  
+ 36S  c  2006In01: RPA, spins, octupole strengths.
+ 36S  cL E$From a least-squares fit to |g-ray energies, unless otherwise noted. 
  36S  cL J$Mainly from |g|g(|q) and lin pol data in (t,p|g) and from comparison 
  36S 2cL of |s(|q) data in (p,p'),(|a,|a') to DWBA calculations                 
  36S  cL T$ From DSA in (t,p|g), unless otherwise stated                        
@@ -50,12 +52,10 @@
  36S  PN                                                                     6  
  36S   L 0.0          0+               STABLE                                   
  36S X L XREF=ABCDEFGHIJKLMNO                                                   
- 36S  cL J$ spin measurement by microwave spectroscopy (1949Lo21).              
- 36S  cL $Nuclear rms charge radius=3.2982 fm {I21} (2004An14 evaluation);      
- 36S 2cL 3.2985 fm {I24} from 2008 update of 2004An14.                          
- 36S  cL $Mean radius r{-0}{+2}=1.26 fm{+2} {I10} from measured integrated      
- 36S 2cL |s{-R}=2.44 b {I19} at 46.17 MeV/nucleon in Si({+36}S,X) reaction      
- 36S 3cL (1999Ai02).                                                            
+ 36S  cL $Evaluated rms nuclear charge radius R=3.2985 fm {I24} (2013An02).     
+ 36S  cL $Mean radius r{+2}{-0}=1.26 fm{+2} {I10} from measured integrated      
+ 36S 2cL |s{-R}=2.44 b {I19} at a mean energy of 46.17 MeV/nucleon in           
+ 36S 3cL Si({+36}S,X) reaction (1999Ai02).                                      
  36S   L 3290.8    5  2+               0.083 PS  7                              
  36S X L XREF=ACDEFHJKLMNO                                                      
  36S 2 L MOMM1=+2.6 10 (2008Sp01)                                               
@@ -290,4 +290,4 @@
  36S   G 3076.6    5  55     20                                                 
  36S   L 7710      25                                                           
  36S X L XREF=H                                                                 
-                                                                                
+

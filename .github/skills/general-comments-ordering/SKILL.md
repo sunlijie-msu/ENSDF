@@ -21,4 +21,11 @@ Arrange general comments (non-record-specific) at the top of the Adopted Dataset
 
 **Within each section:** Group comments by NSR reference (Reverse-chronological order by key number).
 
+## Style
+
+Write each section as a bare header line ending in a colon (e.g. `{+36}S production:`), followed by
+one line per NSR key as `KEY: concise description.` (period; multiple keys on one line only when one
+work). Continuation lines must start their text at column 10 (`NUCID`+`2c`+two spaces), not column 9.
+Pad every new line to exactly 80 columns: `column_calibrate.py --fix` pads data records only.
+
 ---
