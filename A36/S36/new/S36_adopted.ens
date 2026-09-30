@@ -42,7 +42,7 @@
  36S  cL E$From a least-squares fit to |g-ray energies, unless otherwise noted. 
  36S  cL J$From comparison of |s(|q) data in (p,p') and (|a,|a') to DWBA and    
  36S 2cL coupled-channel calculations, unless otherwise noted.                  
- 36S  cG E,RI$From 34S(T,PG), unless otherwise noted.                           
+ 36S  cG E,RI,M,MR$From 34S(T,PG), unless otherwise noted.                      
  36S   XA36P B- DECAY (5.6 S)                                                   
  36S   XB36CL EC DECAY (3.01E+5 Y)                                              
  36S   XC34S(T,PG)                                                              
@@ -187,11 +187,11 @@
  36S   G 5390.9       100    9  [E2]                                            
  36S   L 5462      3  3+                                                        
  36S X L XREF=D                                                                 
- 36S   L 5509.1    7  (2,4)            0.19 PS   4                              
+ 36S   L 5509.1    7  2,4              0.19 PS   4                              
  36S X L XREF=CDO                                                               
  36S  cL T$lifetime |t=0.27 ps {I6} in {+34}S(t,p|g) from 1972Sa09 with DSAM.   
  36S 2cL Other: |t<0.3 ps in {+34}S(t,p|g) from 1971Ol02 with DSAM.             
- 36S  cL J$4- proposed in (p,p'),(|a,|a').                                      
+ 36S  cL J$spin=2,4 from p|g(|q) in 34S(T,PG).                                  
  36S   G 1316.7    4  45     10                                                 
  36S  cG E$weighted average of 1316.8 {I4} from (t,p|g) and 1316 {I1} from      
  36S 2cG ({+36}S,{+36}S|g)                                                      
@@ -200,13 +200,13 @@
  36S   G 2217.7    3  100    7  D+Q                                             
  36S  cG E$weighted average of 2217.7 {I3} from (t,p|g) and 2218 {I1} from      
  36S 2cG ({+36}S,{+36}S|g)                                                      
- 36S  cG RI$from (t,p|g). Other: 100 {I11} from ({+36}S,{+36}S|g)               
- 36S  cG M$from (t,p|g).                                                        
+ 36S  cG RI$other: 100 {I11} from ({+36}S,{+36}S|g)                             
+ 36S  cG M$from p|g(|q) in (t,p|g).                                             
  36S   L 5572.6    9  1-               0.14 PS   LT                             
  36S X L XREF=CDO                                                               
  36S  cL T$lifetime |t<0.2 ps in {+34}S(t,p|g) from both 1971Ol02 and 1972Sa09  
  36S 2cL with DSAM.                                                             
- 36S   G 2283.1    20 100       [E1]                                            
+ 36S   G 2283.1    20 100       [E1+M2]  -0.07   7                              
  36S  cG E$unweighted average of 2281.1 {I3} from (t,p|g) and 2285 {I1} from    
  36S 2cG ({+36}S,{+36}S|g)                                                      
  36S   L 5781.1    19                                                           
