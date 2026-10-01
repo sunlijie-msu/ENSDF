@@ -94,12 +94,13 @@ class QuotedRef:
     gamma_energy: float
     multipolarity: Optional[str]        # e.g. "M1+E2" or None
     direction: str                      # "from" or "to"
-    level_energy_str: str               # e.g. "1991" or "g.s."
-    level_energy: Optional[float]       # None when "g.s."
+    level_energy_str: str               # energy, "g.s.", or empty if omitted
+    level_energy: Optional[float]       # None for "g.s." or an omitted energy
     jpi: str                            # e.g. "7/2-"
     line_num: int                       # starting line of cL J$ block
     context: str                        # matched text snippet
     block_level: Optional[float] = None  # energy of the owning L-record
+    missing_level_identifier: bool = False
 
 
 @dataclass
@@ -314,6 +315,15 @@ def extract_quoted_refs(
     return refs, level_quotes
 
 
+_MISSING_LEVEL_TARGET = re.compile(
+    r'^\s*(?P<jpi>'
+    r'\(\s*\d+(?:/\d+)?[+-]?(?:\s*,\s*\d+(?:/\d+)?[+-]?)*\s*\)[+-]?'
+    r'|\d+(?:/\d+)?(?:[+-]|\([+-]\))'
+    r'(?:\s*,\s*(?:\(\d+(?:/\d+)?[+-]?\)|\d+(?:/\d+)?(?:[+-]|\([+-]\))))*'
+    r')(?=\s|[,;.]|$)'
+)
+
+
 _LEVEL_QUOTE = re.compile(
     r'\b(?:to|from)\s+'
     r'(?P<jpi>(?:\([^()]*\)|[0-9/()+,\- ]){1,24}?)\s*,\s*'
@@ -346,7 +356,7 @@ def _find_level_quotes(texts: List[str], line_num: int) -> List[LevelQuote]:
 
 def _parse_j_block(texts: List[str], start_line: int,
                   block_level: Optional[float] = None) -> List[QuotedRef]:
-    """Parse a merged cL J$ text block into QuotedRef objects."""
+    """Parse references, retaining J-pi endpoints that omit a level energy."""
     full = ' '.join(text.strip() for text in texts)
     full = re.sub(r'\s+', ' ', full)
     full = full.replace('ground state', 'g.s.')
@@ -435,10 +445,16 @@ def _parse_j_block(texts: List[str], start_line: int,
         after_direction = span[direction_match.end():]
 
         target = parse_target(after_direction)
-        if target is None:
-            continue
-
-        jpi, level_str, level_energy = target
+        missing_level_identifier = target is None
+        if missing_level_identifier:
+            missing_target = _MISSING_LEVEL_TARGET.match(after_direction)
+            if missing_target is None:
+                continue
+            jpi = missing_target.group('jpi').strip(' ,;')
+            level_str = ''
+            level_energy = None
+        else:
+            jpi, level_str, level_energy = target
 
         multipolarity: Optional[str] = None
         cleaned_between = between.replace('(|q)', ' ').strip(' ,;')
@@ -466,6 +482,7 @@ def _parse_j_block(texts: List[str], start_line: int,
             line_num=start_line,
             context=context,
             block_level=block_level,
+            missing_level_identifier=missing_level_identifier,
         ))
 
     return results
@@ -568,8 +585,19 @@ def verify(refs: List[QuotedRef], levels: Dict[float, Level],
     findings: List[Finding] = []
 
     for ref in refs:
+        if ref.missing_level_identifier:
+            findings.append(Finding(
+                code='MISSING_LEVEL_ENERGY', severity='ERROR',
+                line=ref.line_num, context=ref.context,
+                message=(f'Quoted {ref.direction} J-pi "{ref.jpi}" without '
+                         f'a specific level energy or g.s. designation'),
+                quoted=ref.jpi,
+            ))
+
         # --- Gamma energy: identify its parent level before matching E? ---
-        if ref.direction == 'to':
+        if ref.missing_level_identifier and ref.direction == 'from':
+            g = None
+        elif ref.direction == 'to':
             parent_energy = ref.block_level
             g = find_closest_gamma(gammas, ref.gamma_energy, window,
                                    parent_energy)
@@ -585,13 +613,14 @@ def verify(refs: List[QuotedRef], levels: Dict[float, Level],
             g = find_closest_gamma(gammas, ref.gamma_energy, window,
                                    ref.level_energy)
         if g is None:
-            findings.append(Finding(
-                code='GAMMA_NOT_FOUND', severity='ERROR',
-                line=ref.line_num, context=ref.context,
-                message=f'No G-record within {window} keV of '
-                        f'{ref.gamma_energy_str} keV',
-                quoted=ref.gamma_energy_str,
-            ))
+            if not ref.missing_level_identifier:
+                findings.append(Finding(
+                    code='GAMMA_NOT_FOUND', severity='ERROR',
+                    line=ref.line_num, context=ref.context,
+                    message=f'No G-record within {window} keV of '
+                            f'{ref.gamma_energy_str} keV',
+                    quoted=ref.gamma_energy_str,
+                ))
         else:
             # Gamma energy must match EXACTLY character-for-character
             if g.energy_str != ref.gamma_energy_str:
@@ -621,7 +650,8 @@ def verify(refs: List[QuotedRef], levels: Dict[float, Level],
                 ))
 
         # --- Level energy ---
-        if ref.level_energy is not None:
+        if (ref.level_energy is not None
+                and not ref.missing_level_identifier):
             lvl = find_closest_level(levels, ref.level_energy, window)
             if lvl is None:
                 findings.append(Finding(
@@ -658,7 +688,8 @@ def verify(refs: List[QuotedRef], levels: Dict[float, Level],
                         quoted=ref.jpi,
                         actual=lvl.jpi,
                     ))
-        elif ref.level_energy_str == 'g.s.':
+        elif (ref.level_energy_str == 'g.s.'
+              and not ref.missing_level_identifier):
             # Ground state: find level at 0 keV
             lvl = find_closest_level(levels, 0.0, window)
             if lvl is not None and lvl.jpi != ref.jpi:
