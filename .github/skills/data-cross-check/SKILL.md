@@ -68,6 +68,11 @@ Actively leverage coding, scripts, and programming tools when necessary to effec
 - Report only levels a reader cannot resolve from the adopted file: no unique byte-exact plain XREF source, and no fit basis, own `cL E$` note, or col-77 flag note. Flag DE blank/non-blank mismatch with the source level as advisory.
 
 
+## Adopted-Sourced J and T Fields
+
+- When a dataset declares `cL J,T$From the Adopted Levels.` (or a per-level `cL J$From the Adopted Levels`), every L-record J and T must equal the Adopted dataset: an empty J where adopted carries a Jπ is a warning, and a differing Jπ is an inconsistency — fix by copying the adopted string byte-for-byte and keep the dataset's own `cL J$` note that explains the assignment's origin.
+- Jπ not sourced from adopted (own log `{Ift}`, p|g(|q), or shell model) may legitimately be broader than adopted: never narrow it, and never generalise an adopted-sourced value into a wider range.
+
 ## Report Output
 
 | Type | What to report |
