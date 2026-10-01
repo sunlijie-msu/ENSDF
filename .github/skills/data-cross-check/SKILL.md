@@ -72,6 +72,7 @@ Actively leverage coding, scripts, and programming tools when necessary to effec
 
 - When a dataset declares `cL J,T$From the Adopted Levels.` (or a per-level `cL J$From the Adopted Levels`), every L-record J and T must equal the Adopted dataset: an empty J where adopted carries a Jπ is a warning, and a differing Jπ is an inconsistency — fix by copying the adopted string byte-for-byte and keep the dataset's own `cL J$` note that explains the assignment's origin.
 - Jπ not sourced from adopted (own log `{Ift}`, p|g(|q), or shell model) may legitimately be broader than adopted: never narrow it, and never generalise an adopted-sourced value into a wider range.
+- Match a dataset level to its adopted counterpart through the adopted XREF letters, not by nearest energy: counterpart energies may differ well beyond the adopted uncertainty (e.g., 4723 vs 4710.1), and `Letter(?)`/`Letter(*)` bind only to the immediately preceding letter.
 
 ## Report Output
 
