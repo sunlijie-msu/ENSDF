@@ -570,10 +570,6 @@
  34ALX L XREF=ABCDEFGHI                                                         
  34AL2 L %B-=100$ %B-N=22 5 (2019Li41)                                          
  34AL2 L MOMM1=(+)2.157 16 (2025StZZ,2008Hi01)                        
- 34AL cL $%|b{+-}n: from 2019Li41. Others: 26 {I4} (2001Nu01), 27 {I5}          
- 34AL2cL (1989Ba50), 54 {I12} (1988Mu08), 12.5 {I25} (1995ReZZ). The existence  
- 34AL3cL two |b-decaying states in {+34}Al was proven by 2012Ro25.              
- 34AL cL MOMM1$original (+)2.156 {I16} using |b-NMR (2008Hi01).                 
  34AL cL J$4-, 5- from g factor measurement (2008Hi01); strong allowed |b decay 
  34AL2cL to a {+34}Si spin=3, 4254.67 level.                                    
  34AL cL T$weighted average of 53.73 ms {I13} in U(p,{+34}Al) from 2019Li41 by  
@@ -584,6 +580,10 @@
  34AL6cL |b-delayed |g in {+34}Si. Others: 56.3 ms {I5} in U(p,{+34}Al) from    
  34AL7cL 2001Nu01 by |b and |g counting rates, 50 ms {I25} (1986Du07), 70 ms    
  34AL8cL {I25} (1988Mu08), and 42 ms {I6} (1995ReZZ).                           
+ 34AL cL MOMM1$original (+)2.156 {I16} using |b-NMR (2008Hi01).                 
+ 34AL cL $%|b{+-}n: from 2019Li41. Others: 26 {I4} (2001Nu01), 27 {I5}          
+ 34AL2cL (1989Ba50), 54 {I12} (1988Mu08), 12.5 {I25} (1995ReZZ). The existence  
+ 34AL3cL two |b-decaying states in {+34}Al was proven by 2012Ro25.              
  34AL cL $Normal configuration of |p(d{-5/2}){+-1}~#|n(f{-7/2}){+1} from        
  34AL2cL shell-model calculations using the SDPF-U-MIX interaction (2017Li03).  
  34AL cL $Strong absorption r{-0}{+2}=1.187 fm{+2} {I18} from Si({+34}Al,X)     
@@ -1113,13 +1113,13 @@
  34AL7c  detailed balance theorem.                                              
  34AL cG E$From level-energy difference in 2017Ch36.                            
  34AL cL E$From 2017Ch36.                                                       
- 34AL cL $The total measured inclusive differential Coulomb dissociation cross  
- 34AL2cL section is 78 mb {I13}, integrated up to 5.0 MeV relative energy       
- 34AL3cL between the {+34}Al core and the neutron.                              
  34AL cL S$LABEL=|s (mb)                                                        
  34AL cL S${+35}Al|){+34}Al+n Coulomb dissociation cross section.               
  34AL cL S(A)$Sum |s for g.s.+ 46 isomer. Sum relative population=62% {I20} for 
  34AL2cL g.s.+ 46 isomer.                                                       
+ 34AL cL $The total measured inclusive differential Coulomb dissociation cross  
+ 34AL2cL section is 78 mb {I13}, integrated up to 5.0 MeV relative energy       
+ 34AL3cL between the {+34}Al core and the neutron.                              
  34AL  L 0                                                      48        13A   
  34AL  L 46                                                     48        13A   
  34AL  L 487                                                                    
@@ -3127,11 +3127,11 @@
  34P 2cG branching ratios. 2018Lu08 and 2009Be26 report relative intensities    
  34P 3cG with I|g(429)=100. The original intensities in 2018Lu08 and 2009Be26   
  34P 4cG are given under comments.                                              
- 34P  cG M,MR$From 2012Be11 |g(|q) analysis, unless otherwise noted.            
  34P  cG E(B),RI(B)$From 2012Be11 and also verified by 2018Lu08.                
+ 34P  cG M,MR$From 2012Be11 |g(|q) analysis, unless otherwise noted.            
  34P  cL E$From a least-squares fit to |g-ray energies.                         
- 34P  cL J$From 2012Be11 |g(|q) analysis, unless otherwise noted.               
  34P  cL E(B)$Levels from 2012Be11 and also verified by 2018Lu08.               
+ 34P  cL J$From 2012Be11 |g(|q) analysis, unless otherwise noted.               
  34P  PN                                                                     6  
  34P   L 0.0          1+                                                        
  34P  cL J$from the Adopted Levels.                                             
@@ -3602,8 +3602,8 @@
  34P   L 441       20                                                           
  34P  cL $d|s/d|W=0.26 {I5}                                                     
  34P   L 667       40                                                          ?
- 34P  cL $d|s/d|W=0.28 {I6}                                                     
  34P  cL E$1977Pe17 states that this may be due to an impurity.                 
+ 34P  cL $d|s/d|W=0.28 {I6}                                                     
 
  34P     34S(T,3HE)                    1977AJ01                  ENSDF    202609
  34P   H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
@@ -4907,7 +4907,7 @@
  34S S G  IPC=0.001781 25                                                       
  34S   L 8371.0    4  (7)-             83 FS     14                         B   
  34S X L XREF=HMg                                                               
- 34S  cL J$Spin=(5,7) from p|g(|q) in {+31}P(|a,p|g). 2680.5|g, E2, |DJ=2 to 5-,
+ 34S  cL J$spin=(5,7) from p|g(|q) in {+31}P(|a,p|g). 2680.5|g, E2, |DJ=2 to 5-,
  34S 2cL 5690.62 level. 580.3|g, |DJ=1 to (6)-, 7790.8 level. 7- from 2005Ma03  
  34S 3cL shell model calculation and band assignments in {+24}Mg({+16}O,|a2p|g).
  34S  cL T$lifetime |t=120 fs {I20}: weighted average of 122 fs {I40} in        
@@ -6893,10 +6893,10 @@
  34S Ac  |p, lifetimes using the Doppler-shift attenuation method (DSAM)        
  34S Bc  lineshape analysis, band structures, multipolarities, and transition   
  34S Cc  strengths.                                                             
- 34S  cG $Expected R{-ADO} values are 0.75 for stretched dipole (|DJ=1) and 1.25
- 34S 2cG for stretched quadrupole (|DJ=2) transitions.                          
  34S  cG M,MR$From 2005Ma03 measured |g(|q), |g|g(|q)(ADO), and RUL if T{-1/2}  
  34S 2cG is available in this dataset.                                          
+ 34S  cG $Expected R{-ADO} values are 0.75 for stretched dipole (|DJ=1) and 1.25
+ 34S 2cG for stretched quadrupole (|DJ=2) transitions.                          
  34S  cL E$From a least-squares fit to |g-ray energies in 2005Ma03.             
  34S  cL J$As given in 2005Ma03, which assigns J|p based on the measured        
  34S 2cL |g|g(|q)(ADO) ratios. When considered in the Adopted Levels, the firm  
@@ -8706,15 +8706,15 @@
  34S  c  2018MuZY: Atlas of Neutron Resonances. Evaluation of neutron resonance 
  34S 2c  energies, spins, width parameters, and resonance strengths for nuclei  
  34S 3c  of Z=1-60.                                                             
+ 34S  cL E$From E{-c.m.}+S(n)({+34}S) where S(n)({+34}S)=11417.15 {I4}          
+ 34S 2cL (2021Wa16) and E{-c.m.}=E{-n}(lab)|*m({+33}S)/[m{-n}+m({+33}S)]        
+ 34S  cL T$LABEL=|G                                                             
+ 34S  cL S$LABEL=E{-n}(lab)                                                     
  34S  cL $J|p, L, and resonance parameters E{-n}, |G{-n}, |G{-|g}, |G{-|a}, and 
  34S 2cL g|G{-n}|G{-|g}/|G are all from 2018MuZY. Statistical factor            
  34S 3cL g=(2J+1)/[(2J{-n}+1)(2J{-T}+1)], where J is the resonance spin,        
  34S 4cL J{-n}=1/2 is the neutron spin, and J{-T}=3/2 is the {+33}S ground state
  34S 5cL spin.                                                                  
- 34S  cL E$From E{-c.m.}+S(n)({+34}S) where S(n)({+34}S)=11417.15 {I4}          
- 34S 2cL (2021Wa16) and E{-c.m.}=E{-n}(lab)|*m({+33}S)/[m{-n}+m({+33}S)]        
- 34S  cL T$LABEL=|G                                                             
- 34S  cL S$LABEL=E{-n}(lab)                                                     
  34S   L 11411.33     2+                               0        -5.987         ?
  34S  cL E$fictitious level from analysis of resonance spectrum below the S(n)  
  34S 2cL threshold.                                                             
@@ -8979,9 +8979,9 @@
  34S AcL near the ground-state rms charge radius.                               
  34S   L 0.0          0+                                                        
  34S   L 2127         2+               0.337 PS  12                             
+ 34S  cL T$lifetime |t=0.486 ps {I17} from B(E2)|^ in 1985Wo06.                 
  34S  cL $B(E2)|^=0.01928 {I66}, transition radius R{-tr}=4.54 fm {I7}, proton  
  34S 2cL transition matrix elements M{-p}=13.88 fm{+2} {I24} (1985Wo06).        
- 34S  cL T$lifetime |t=0.486 ps {I17} from B(E2)|^ in 1985Wo06.                 
  34S   L 3304         2+                                                        
  34S  cL $B(E2)|^=0.00256 {I29}, R{-tr}=4.71 fm {I19}, M{-p}=5.05 fm{+2} {I29}  
  34S 2cL (1985Wo06).                                                            
@@ -10132,10 +10132,10 @@
  34CL cG RI$other: 12 {I5} from {+32}S({+3}He,p|g).                             
  34CLB G BE1W LT 3.6E-6                                                         
  34CL  G 2055      1  15.4   8  (E1+M2)  -0.05   3                              
- 34CL cG M,MR$D+Q from |g|g(|q)(DCO) in {+27}Al({+12}C,|an|g). Other: D(+Q) with
- 34CL2cG |d=-0.1 {I2} from {+32}S({+3}He,p|g). |D|p=yes from level scheme.      
  34CL cG RI$weighted average of 15.3 {I8} from {+27}Al({+12}C,|an|g) and 15.5   
  34CL2cG {I11} from {+33}S(p,|g). Other: 29 {I5} from {+32}S({+3}He,p|g)        
+ 34CL cG M,MR$D+Q from |g|g(|q)(DCO) in {+27}Al({+12}C,|an|g). Other: D(+Q) with
+ 34CL2cG |d=-0.1 {I2} from {+32}S({+3}He,p|g). |D|p=yes from level scheme.      
  34CLB G BE1W LT 4.4E-6 $BM2W LT 0.030                                          
  34CL  G 2260.6    5  100.0  15 E1+M2    +0.05   2                              
  34CL cG E$weighted average of 2260 {I1} from {+27}Al({+12}C,|an|g) and 2260.7  
@@ -10154,10 +10154,10 @@
  34CL3cG {+32}S({+3}He,p|g).                                                    
  34CLB G BE1W LT 5.1E-6 $BM2W LT 0.51                                           
  34CL  G 2721      1  27.1   32 M2                                              
- 34CL cG M$M2, |DJ=2, from |g|g(|q)(DCO) and |g|g(|q)(POL) in                   
- 34CL2cG {+27}Al({+12}C,|an|g)                                                  
  34CL cG RI$unweighted average of 26.4 {I14} from {+27}Al({+12}C,|an|g), 22 {I5}
  34CL2cG from {+32}S({+3}He,p|g), and 32.8 {I11} from {+33}S(p,|g)              
+ 34CL cG M$M2, |DJ=2, from |g|g(|q)(DCO) and |g|g(|q)(POL) in                   
+ 34CL2cG {+27}Al({+12}C,|an|g)                                                  
  34CLB G BM2W LT 2.1                                                            
  34CL  L 3129.11   12 1+               3 FS      LT                             
  34CLX L XREF=AHIKMNOPQTUV(3146)                                                
@@ -10301,9 +10301,9 @@
  34CL2cL 4371.5 level.                                                          
  34CL cL T$lifetime |t=220 fs {I90} in {+33}S(p,|g) from 1985La16 with DSAM.    
  34CL  G 3500      1  100    7  E2                                              
+ 34CL cG RI$from (p,|g).                                                        
  34CL cG M$E2, |DJ=2, from |g|g(|q)(DCO) and |g|g(|q)(POL) in                   
  34CL2cG {+27}Al({+12}C,|an|g).                                                 
- 34CL cG RI$from (p,|g).                                                        
  34CLB G BE2W=1.08 +71-32                                                       
  34CL  L 3660.0    3  (0+:4+)          3.5 FS    LT                             
  34CLX L XREF=K                                                                 
@@ -12763,12 +12763,12 @@
  34CL cG $R{-DCO}(Q)=1.10 {I16}, POL=+0.15 {I6}, 3+ to 1+ from 2014Bi03 level   
  34CL2cG scheme.                                                                
  34CL  G 2035      1  2.9    2  D+Q      -0.4    1              44        6     
- 34CL cG $R{-DCO}(Q)=0.51 {I8} and POL=+0.04 {I1} indicate E1+M2. 3+ to 3+ from 
- 34CL2cG 2014Bi03 level scheme and B(M1) is calculated in 2014Bi03 Table V. This
- 34CL3cG is a discrepancy. Evaluators adopt a conservative assignment of D+Q.   
  34CL cG RI$2.9 2 Note that the branching ratio of 44.1 {I46} in Table II of    
  34CL2cG 2014Bi03 differs from 4.9 {I2} deduced from the relative intensity in  
  34CL3cG Table I of 2014Bi03.                                                   
+ 34CL cG $R{-DCO}(Q)=0.51 {I8} and POL=+0.04 {I1} indicate E1+M2. 3+ to 3+ from 
+ 34CL2cG 2014Bi03 level scheme and B(M1) is calculated in 2014Bi03 Table V. This
+ 34CL3cG is a discrepancy. Evaluators adopt a conservative assignment of D+Q.   
  34CL  L 2375.8    5  4+                                                        
  34CL  G 2229      1  40.9   21 D+Q      +0.4    1                              
  34CL cG $R{-DCO}(Q)=0.90 {I9} and POL=-0.09 {I3} indicate M2+E3. 4+ to 3+ from 
@@ -13346,13 +13346,13 @@
  34CL2cL DSAM) and 15 fs {I6} (1972AlZT, DSAM).                                 
  34CL  G 2581         100       D                                               
  34CL cG RI$tentative 100 from 1970Sy01 and 1971De27.                           
+ 34CL cG M,MR$D and |d=0 from p|g(|q) in 1970Sy01.                              
  34CL cG $A{-2}=+0.37 {I1}, A{-4}=+0.01 {I2} at E{-p}=8.30 MeV (1971De27).      
  34CL cG $A{-2}=+0.15 {I2}, A{-4}=+0.02 {I4} at E{-p}=8.40 MeV (1971De27).      
  34CL cG $A{-2}=+0.19 {I2}, A{-4}=+0.08 {I2} at E{-p}=8.50 MeV (1971De27).      
  34CL cG $A{-2}=+0.16 {I4}, A{-4}=+0.01 {I6} at E{-p}=8.54 MeV (1971De27).      
  34CL cG $A{-2}=-0.06 {I5}, A{-4}=-0.12 {I9} at E{-p}=8.70 MeV (1971De27).      
  34CL cG $A{-2}=+0.21 {I4}, A{-4}=+0.04 {I7} at E{-p}=8.76 MeV (1971De27).      
- 34CL cG M,MR$D and |d=0 from p|g(|q) in 1970Sy01.                              
  34CL cG $A{-2}=+0.08 {I8}, A{-4}=-0.11 {I15} (1970Sy01)                        
  34CL  L 2610                          0.57 PS   24                             
  34CL dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
@@ -13473,6 +13473,10 @@
  34CL3c  by thick gold foils. Reaction products were detected using a 50-|mm |DE
  34CL4c  surface barrier and 5-mm E lithium drifted detectors. Deduced levels,  
  34CL5c  L-transfers, J, and |p from DWBA analysis.                             
+ 34CL cL E$From 1982De29, unless otherwise noted.                               
+ 34CL cL E(K)$From 1966Ki10.                                                    
+ 34CL cL L$From DWBA analysis of the measured |s(|q) in 1982De29, unless        
+ 34CL2cL otherwise noted.                                                       
  34CL cL $The experimental cross section is described as a sum over             
  34CL2cL contributions from different angular momentum transfers, incorporating 
  34CL3cL the spectroscopic factors A{+2}{-L}: (d|s/d|W){-exp}=|aC|9             
@@ -13480,10 +13484,6 @@
  34CL5cL +A{+2}{-L+2}(d|s/d|W){-macro}{+L+2}|3, where |a=1/3 for (d,|a)         
  34CL6cL reactions and |a=2J+1 for (|a,d) reactions on J{-i}=0 nuclei           
  34CL7cL (1982De29).                                                            
- 34CL cL E$From 1982De29, unless otherwise noted.                               
- 34CL cL E(K)$From 1966Ki10.                                                    
- 34CL cL L$From DWBA analysis of the measured |s(|q) in 1982De29, unless        
- 34CL2cL otherwise noted.                                                       
  34CL  L 165       40                                  2+4                      
  34CL cL E$weighted average of 150 {I40} (1977Na10) and 180 {I40} (1982De29)    
  34CL cL L$other: L=(2) from 1976De24                                           
@@ -16315,8 +16315,8 @@
  34CL cL S$other: 2578 {I4} (1964Va12). |g{+2}=110.0.                           
  34CL2cL (2J+1)|G{-p0}|G{-p1}/|G=460 eV; |G=39 keV {I5} (1964Va12).             
  34CL  L 7652.1    15 2-               0.70 KEV  7     1        2585.6    15    
- 34CL cL $|g{+2}=2.4.                                                           
  34CL cL J$1- also possible (1989Va15)                                          
+ 34CL cL $|g{+2}=2.4.                                                           
  34CL  L 7673.6    15 1-               2.0 KEV   2     1        2607.7    15    
  34CL cL S$other: 2604 {I3} (1964Va12). |g{+2}=6.6. (2J+1)|G{-p0}|G{-p1}/|G=280 
  34CL2cL eV; |G=6 keV {I2} (1964Va12).                                          
@@ -16325,9 +16325,9 @@
  34CL cL $|g{+2}=6.6.                                                           
  34CL  L 7684.7    15 2+,3+                            2        2619.2    15    
  34CL  L 7690.5    15 1+               0.30 KEV  3     0+2      2625.2    15    
+ 34CL cL J$2+ also possible (1989Va15)                                          
  34CL cL S$other: 2625 {I3} (1964Va12). |g{+2}=1.81. (2J+1)|G{-p0}|G{-p1}/|G=60 
  34CL2cL eV (1964Va12).                                                         
- 34CL cL J$2+ also possible (1989Va15)                                          
  34CL  L 7696.8    15 1-               1.30 KEV  13    1        2631.7    15    
  34CL cL $|g{+2}=4.2.                                                           
  34CL  L 7704.6    15 1-,2-,3-,4-,5-                   3        2639.7    15    
@@ -16558,7 +16558,6 @@
  34CL5c  resolution of 17 keV. Measured |s(E{-d},|q). Deduced levels,           
  34CL6c  L-transfers, J, |p, and spectroscopic factors from JULIE-DWBA analysis 
  34CL7c  of the measured |s(|q).                                                
- 34CL cL S$LABEL=[(2J{-f}+1)/(2J{-i}+1)]C{+2}S                                  
  34CL cL E$For levels below 4.64 MeV, from 1971Er03; for levels above 4.64 MeV, 
  34CL2cL from 2014Pa44, unless otherwise noted.                                 
  34CL cL E(A)$E(level) from 2014Pa44 without uncertainties. 2014Pa44 observed   
@@ -16570,6 +16569,7 @@
  34CL4cL C{+2}=1/2 is the isospin coefficient, J{-f} and J{-i}, are the final   
  34CL5cL and initial spins, respectively. J{-i}=3/2 for {+33}S ground state.    
  34CL cL S$LABEL=C{+2}S                                                         
+ 34CL cL S$LABEL=[(2J{-f}+1)/(2J{-i}+1)]C{+2}S                                  
  34CL  L 0                                             2        0.25            
  34CL  L 145.5                                         2        1.42            
  34CL  L 461.0     12                                  0+2      0.04+0.08       
@@ -16669,8 +16669,8 @@
  34CL  L 3380         2+                               2                        
  34CL2 L ISPIN=1                                                                
  34CL  L 4985         1+,2+                            1,2                      
- 34CL cL $|DS=1 (1987Fu11)                                                      
  34CL cL E$unresolved 4971+4996 doublet                                         
+ 34CL cL $|DS=1 (1987Fu11)                                                      
 
  34CL    34S(3HE,T)                    2009PA28,2007FU06         ENSDF    202609
  34CL  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2026$          
@@ -16846,6 +16846,9 @@
  34CL6c  silicon E detector in anti-coincidence (FWHM=85 keV). Measured         
  34CL7c  |s(E{-d},|q). Deduced levels, J, |p, L-transfers, and spectroscopic    
  34CL8c  factors from DWUCK-DWBA analysis of the measured |s(|q).               
+ 34CL cL E$From 1972Vi04.                                                       
+ 34CL cL L,S$From DWBA analysis of the measured |s(|q) in 1972Vi04.             
+ 34CL cL S$LABEL=C{+2}S                                                         
  34CL cL $Spectroscopic factor of is obtained by:                               
  34CL2cL |s(|q){-exp}=1.53[(2s{-d}+1)/(2s{-p}+1)][(2s{-n}+1)/(2(2L+1))]         
  34CL3cL C{+2}S|s(|q){-DWBA}, where s{-d}, s{-p}, and s{-n} are the spins of the
@@ -16853,9 +16856,6 @@
  34CL5cL factor related to the use of Hulthen wavefunction for the deuteron     
  34CL6cL (1966Ba54). The overall uncertainty in C{+2}S is estimated to be about 
  34CL7cL 30% (1972Vi04).                                                        
- 34CL cL E$From 1972Vi04.                                                       
- 34CL cL L,S$From DWBA analysis of the measured |s(|q) in 1972Vi04.             
- 34CL cL S$LABEL=C{+2}S                                                         
  34CL  L 0.0                                           2        0.45            
  34CL  L 140       15                                  2        1.20            
  34CL  L 450       15                                  2        0.28            
@@ -16882,11 +16882,11 @@
  34CL4c  detected using a |DE-E silicon detector telescope with FWHM=140 keV.   
  34CL5c  Measured |s(E{-t},|q). Deduced levels, L-transfers, J, |p, and         
  34CL6c  spectroscopic factors from DWUCK-DWBA analysis.                        
- 34CL cL $Spectroscopic factor C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N, where N=3.33
- 34CL2cL is a normalization factor adopted from 1966Ba54.                       
  34CL cL E$From 1981Bh04, which did not give uncertainties.                     
  34CL cL L,S$From DWBA analysis of the measured |s(|q) in 1981Bh04.             
  34CL cL S$LABEL=C{+2}S                                                         
+ 34CL cL $Spectroscopic factor C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N, where N=3.33
+ 34CL2cL is a normalization factor adopted from 1966Ba54.                       
  34CL  L 0                                             2        0.41            
  34CL  L 150                                           2        1.18            
  34CL  L 450                                           0+2      0.11+0.21       
@@ -16906,13 +16906,13 @@
  34CL5c  magnetic spectrograph. Measured |s(E{-|a},|q). Deduced levels, J, |p,  
  34CL6c  L-transfers, and spectroscopic factors from DWBA analysis. Compared    
  34CL7c  with mirror {+34}S and discussed isospins.                             
- 34CL cL $Spectroscopic factor C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N, where N=23  
- 34CL2cL {I5} is a normalization factor.                                        
  34CL cL E$E(level) values with uncertainties are measured by 1974Va25; E(level)
  34CL2cL values without uncertainties are quoted from 1973EnVA, which are also  
  34CL3cL observed by 1974Va25 but without reporting their own values.           
  34CL cL L,S$From DWBA analysis of the measured |s(|q) in 1974Va25.             
  34CL cL S$LABEL=C{+2}S                                                         
+ 34CL cL $Spectroscopic factor C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N, where N=23  
+ 34CL2cL {I5} is a normalization factor.                                        
  34CL  L 0.0                                           2        0.44            
  34CL  L 146.36                                        2        1.5             
  34CL  L 461.00                                        0+2      0.09+0.26       
@@ -16959,6 +16959,11 @@
  34CL7c  counters to eliminate long-range particles. Measured |s(E({+3}He),|q). 
  34CL8c  Deduced levels, L-transfers, J, |p, and isospin. Also measured         
  34CL9c  {+36}Ar(p,t){+34}Ar and {+36}Ar(d,|a){+34}Cl.                          
+ 34CL cL E(C)$1969Br21 observed these levels in the {+36}Ar(p,{+3}He){+34}Cl    
+ 34CL2cL reaction and quoted E(level) from 1967En05 without reporting their own 
+ 34CL3cL values (1969Br21).                                                     
+ 34CL cL L$From DWBA analysis of the mirror reaction {+36}Ar(p,t){+34}Ar        
+ 34CL2cL (1969Br21). The parentheses are added by evaluators.                   
  34CL cL $Selection rules used by 1969Br21 for direct two-particle transfer     
  34CL2cL reactions: {+36}Ar(p,t){+34}Ar transfers particles with T=1, S=0;      
  34CL3cL {+36}Ar(d,|a){+34}Cl transfers particles with T=0, S=1.                
@@ -16966,11 +16971,6 @@
  34CL5cL transfer is direct two-particle transfer, |s(|q) of                    
  34CL6cL {+36}Ar(p,{+3}He){+34}Cl matches |s(|q) of the mirror state in {+34}Ar 
  34CL7cL populated by {+36}Ar(p,t){+34}Ar, and absent in {+36}Ar(d,|a){+34}Cl.  
- 34CL cL E(C)$1969Br21 observed these levels in the {+36}Ar(p,{+3}He){+34}Cl    
- 34CL2cL reaction and quoted E(level) from 1967En05 without reporting their own 
- 34CL3cL values (1969Br21).                                                     
- 34CL cL L$From DWBA analysis of the mirror reaction {+36}Ar(p,t){+34}Ar        
- 34CL2cL (1969Br21). The parentheses are added by evaluators.                   
  34CL  L 0.0                                           (0)                      
  34CL2 L ISPIN=1                                                                
  34CL  L 460                                                                C   
@@ -16994,17 +16994,17 @@
  34CL  L 4670      40                                  (3)                      
  34CL2 L ISPIN=1                                                                
  34CL  L 4970      40                                  (0)                      
- 34CL cL $Observed in {+36}Ar(p,{+3}He){+34}Cl and in {+36}Ar(d,|a){+34}Cl and  
- 34CL2cL should be a doublet of T=1 and T=0.                                    
  34CL cL J$T=1 component should be populated in {+36}Ar(p,{+3}He){+34}Cl and    
  34CL2cL corresponds to 0+.                                                     
+ 34CL cL $Observed in {+36}Ar(p,{+3}He){+34}Cl and in {+36}Ar(d,|a){+34}Cl and  
+ 34CL2cL should be a doublet of T=1 and T=0.                                    
  34CL  L 5600      40                                                           
  34CL2 L ISPIN=0                                                                
  34CL  L 6160      40                                  (2)                      
- 34CL cL $Observed in {+36}Ar(p,{+3}He){+34}Cl and in {+36}Ar(d,|a){+34}Cl and  
- 34CL2cL should be a doublet of T=1 and T=0.                                    
  34CL cL J$T=1 component should be populated in {+36}Ar(p,{+3}He){+34}Cl and    
  34CL2cL corresponds to 2+.                                                     
+ 34CL cL $Observed in {+36}Ar(p,{+3}He){+34}Cl and in {+36}Ar(d,|a){+34}Cl and  
+ 34CL2cL should be a doublet of T=1 and T=0.                                    
  34CL  L 7070      40                                                           
  34CL2 L ISPIN=0                                                                
 
@@ -17176,6 +17176,7 @@
  34AR  L 0.0          0+               0.84646 S 35                             
  34ARX L XREF=ABCDFGHIJK                                                        
  34AR2 L %EC+%B+=100                                                            
+ 34AR cL J$L=0 from 0+ in (p,t) and ({+3}He,n).                                 
  34AR cL T$from |b(t) using two component fit to the decay of {+34}Ar and       
  34AR2cL {+34}Cl (2020Ia01). Others: 0.8438 s {I4} (2006Ia05), 0.8445 s {I34}   
  34AR3cL (1974Ha26, 1972Ha58), 0.74 s {I11} (1971Mo27), 0.85 s {I10} (1967Ba36),
@@ -17188,7 +17189,6 @@
  34ARAcL and optimally applied all the features that they use here to revisit   
  34ARBcL the {+34}Ar half-life. 2020Ia01 offers the new result as a replacement 
  34ARCcL for their earlier 2006Ia05, which they withdraw.                       
- 34AR cL J$L=0 from 0+ in (p,t) and ({+3}He,n).                                 
  34AR cL $Evaluated rms nuclear charge radius R=3.3654 fm {I40} (2013An02).     
  34AR  L 2091.3    4  2+               0.20 PS   5                              
  34ARX L XREF=ABDFGH(2103)IJK                                                   
