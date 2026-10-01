@@ -61,7 +61,7 @@ CHECKS = [
     ("sym-word",             r"\b(?:gamma|beta|alpha|theta|mu)(?:-|\s)(?:ray|rays|delayed|particle|particles|decay|emission|spectrum)\b"),
     ("dim-compound",         r"\d[\w/{}+\-|.]*?(?:cm|mm)\S*?\s+(?:long|thick|deep|wide|diameter|thickness)\b"),
     ("cite-comma",           r"(?:19|20)\d\d[A-Z][a-z]\w{1,3}\d+,(?=\S)|\w ,"),
-    ("unhyphenated",         r"\bhalf life\b|\bL transfers?\b"),
+    ("unhyphenated",         r"\bhalf life\b|(?<!J=)\bL transfers?\b"),
     ("leaked-tag",           r"\s(cL|cG|cB|cE|cN|cP|cQ)\s"),
 ]
 
@@ -171,6 +171,8 @@ _SELFTEST_CASES = [
     ("10{+-3}", "neg-exp10", False),
     ("with 2I|g = 0.5", "isotope", False),
     ("1500-|mm-thick, 3-cm-long targets", "dim-compound", False),
+    ("L transfer from analyzing power", "unhyphenated", True),
+    ("J=L transfer from analyzing power", "unhyphenated", False),
 ]
 
 
