@@ -32,8 +32,8 @@
  34P  c  2012SrZZ: large-scale shell model. Calculated energy levels, J, |p,    
  34P 2c  B(E2), B(M1).                                                          
  34P  cG E,RI$From {+18}O({+18}O,pn|g) E=24 MeV, unless otherwise noted.        
- 34P  cG M,MR$From |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV, unless otherwise     
- 34P 2cG noted.                                                                 
+ 34P  cG M,MR$From |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV, and RUL if           
+ 34P 2cG applicable, unless otherwise noted.                                    
  34P  cL E$From a least-squares fit to |g-ray energies.                         
  34P   XA34SI B- DECAY (2.77 S)                                                 
  34P   XB18O(18O,PNG) E=20 MEV                                                  
@@ -182,20 +182,20 @@
  34P   G 1067         46     18                                                 
  34P  cG E,RI$from {+36}S(pol d,|a),(pol d,|a|g).                               
  34P   G 2246         100    26                                                 
- 34P  cG E,RI$from {+36}S(pol d,|a),(pol d,|a|g). Other: questionable 2253      
- 34P 2cG {I1} with 100 {I10} and 2682 {I1} with 79 {I10} from                   
+ 34P  cG E,RI$from {+36}S(pol d,|a),(pol d,|a|g). Other: questionable 2253 {I1} 
+ 34P 2cG with 100 {I10} and 2682 {I1} with 79 {I10} from                        
  34P 3cG {+208}Pb({+36}S,{+34}P|g).                                             
  34P   L 3201      16                                                           
  34P X L XREF=K                                                                 
  34P   L 3352.5    7  5(-)             0.28 PS   +10-8                          
  34P X L XREF=BCDEFGI(3345?)LNP                                                 
- 34P  cL J$spin=5 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. Spin=3,5 from    
- 34P 2cL |g(|q) in {+18}O({+18}O,pn|g) (2009Be26). 5- from shell model          
- 34P 3cL (2018Lu08, 2012Be11).                                                  
+ 34P  cL J$spin=5 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. 5- from shell    
+ 34P 2cL model (2018Lu08, 2012Be11).                                            
  34P  cL T$lifetime |t=0.41 ps {I+15-12}: weighted average of 0.30 ps {I15} in  
  34P 2cL {+18}O({+18}O,pn|g) from 2009Be26 with DSAM and 0.52 ps {I+18-12} in   
  34P 3cL {+18}O({+18}O,pn|g) E=24 MeV from 2012Be11 with DSAM.                  
- 34P   G 1031.6    9  3.17   10                                                 
+ 34P   G 1031.6    9  3.17   10 [E2]                                            
+ 34P B G BE2W=8.1 +33-21                                                        
  34P   G 1047.1    8  100.0  5  (M1(+E2))+0.02   9                              
  34P S G  CC=2.53E-5 4$KC=2.339E-5 35$LC=1.742E-6 26$MC=1.323E-7 20             
  34P  cG E$weighted average of 1047 {I2} from {+18}O({+18}O,pn|g) (2009Be26),   
@@ -225,7 +225,7 @@
  34P   L 3951.3    6  5-               0.118 PS  35                             
  34P X L XREF=BCDEFGP                                                           
  34P  cL J$spin=5 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. 678.8|g, M1+E2   
- 34P 2cL from 6-, 4630.1 level. 5- from shell model (2018Lu08, 2012Be11).       
+ 34P 2cL from 6-, 4630.1 level.                                                 
  34P  cL T$lifetime |t=0.17 ps {I5}: weighted average of 0.30 ps {I15} in       
  34P 2cL {+18}O({+18}O,pn|g) from 2009Be26 with DSAM and 0.16 ps {I5} in        
  34P 3cL {+18}O({+18}O,pn|g) E=24 MeV from 2012Be11 with DSAM.                  
@@ -253,14 +253,16 @@
  34P   G 3994.9    27 100                                                       
  34P   L 4454.6    11 (4-)             0.10 PS   LT                             
  34P X L XREF=CJ(4470*)K(4434)                                                  
- 34P  cL J$spin=3,4 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. 2134|g, M1+E2  
- 34P 2cL to 3(-), 2320.5 level. 4- from shell model (2018Lu08).                 
+ 34P  cL J$spin=3,4 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. 4- from shell  
+ 34P 2cL model (2018Lu08).                                                      
  34P  cL T$lifetime |t<0.14 ps in {+18}O({+18}O,pn|g) E=24 MeV from 2012Be11    
  34P 2cL with DSAM.                                                             
- 34P   G 2134         100       M1+E2                                           
+ 34P   G 2134         100      (M1+E2)                                          
  34P S G  CC=0.00035 4$KC=7.2E-6 4$LC=5.32E-7 27$MC=4.04E-8 20                  
  34P S G  IPC=0.00034 4                                                         
- 34P  cG M$D+Q from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. M2 ruled out by RUL.
+ 34P  cG M$D+Q from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. |D|p=(no) from level
+ 34P 2cG scheme                                                                 
+ 34P  cG $B(M1)(W.u.)>0.023 if M1, B(E2)(W.u.)>19 if E2                         
  34P   L 4570.7    21                                                           
  34P X L XREF=C                                                                 
  34P   G 2250.1    20 100                                                       
@@ -301,11 +303,12 @@
  34P 3cG by RUL. Q(+O) with |d=+0.02 {I+11-10} from |g(|q) in ({+18}O,pn|g) E=24
  34P 4cG MeV.                                                                   
  34P B G BE2W=2.4 +6-5                                                          
- 34P   L 4710.1    16 (5,6)                                                     
+ 34P   L 4710.1    16 (5,6-)                                                    
  34P X L XREF=CN(?)                                                             
- 34P  cL J$spin=4,5,6 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. 2018Lu08     
- 34P 2cL adopts spin=(5,6) based on shell model and the tendency of             
- 34P 3cL fusion-evaporation reactions to favor higher-spin states.              
+ 34P  cL J$spin=4,5,6 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV; 2405.5|g to  
+ 34P 2cL 4-, 2305.1 level. 2018Lu08 adopts spin=(5,6) based on shell model and  
+ 34P 3cL the tendency of fusion-evaporation reactions to favor higher-spin      
+ 34P 4cL states.                                                                
  34P   G 1356.9    23 33     11 D+Q                                             
  34P   G 2405.5    20 100    5                                                  
  34P   L 4729.6    30                                                           
@@ -319,21 +322,32 @@
  34P   L 5344.5    29                                                           
  34P X L XREF=C                                                                 
  34P   G 3039.3    28 100                                                       
- 34P   L 5394.1    7  6                0.11 PS   +8-5                           
+ 34P   L 5394.1    7  6-               0.11 PS   +8-5                           
  34P X L XREF=C                                                                 
- 34P  cL J$spin=6 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV.                  
+ 34P  cL J$spin=6 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV; 3090|g to 4-,    
+ 34P 2cL 2305.1 level cannot be M2 based on measured T{-1/2} and RUL            
  34P  cL T$lifetime |t=0.16 ps {I+12-7} in {+18}O({+18}O,pn|g) E=24 MeV from    
  34P 2cL 2012Be11 with DSAM.                                                    
- 34P   G 762.9     8  15     6                                                  
- 34P   G 1442.6    7  100    11 D(+Q)    +0.02   5                              
- 34P   G 2042      1  44     9  D(+Q)    +0.05   14                             
- 34P   G 3090      2  28     9                                                  
+ 34P   G 762.9     8  15     6  [M1+E2]                                         
+ 34P  cG $B(M1)(W.u.)=0.036 {I+35-20} if M1; B(E2)(W.u.)=244 +{I474-169} if E2, 
+ 34P 2cG exceeds RUL=100, indicating M1 component                               
+ 34P   G 1442.6    7  100    11 (M1(+E2))+0.02   5                              
+ 34P B G BM1W=0.036 +43-19 $BE2W LT 0.72                                        
+ 34P  cG M,MR$D(+Q) from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV; |D|p=no from   
+ 34P 2cG level scheme                                                           
+ 34P   G 2042      1  44     9  (M1(+E2))+0.05   14                             
+ 34P B G BM1W=0.0055 +80-33 $BE2W LT 0.44                                       
+ 34P  cG M,MR$D(+Q) from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV; |D|p=no from   
+ 34P 2cG level scheme                                                           
+ 34P   G 3090      2  28     9  [E2]                                            
+ 34P B G BE2W=0.42 +38-21                                                       
  34P   L 5594.5    26                                                           
  34P X L XREF=C                                                                 
  34P   G 3289.2    25 100                                                       
- 34P   L 5726.4    13 4,6                                                       
+ 34P   L 5726.4    13 4,6(-)                                                    
  34P X L XREF=C                                                                 
- 34P  cL J$spin=4,6 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV.                
+ 34P  cL J$spin=4,6 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV; 3421|g to 4-,  
+ 34P 2cL 2305.1 level                                                           
  34P   G 2373.9    15 100    8  D(+Q)                                           
  34P   G 3421      2  28     8                                                  
  34P   L 5788.7    29                                                           
@@ -358,12 +372,16 @@
  34P   L 6237.1    7  7(+)             6.9 PS    GT                             
  34P X L XREF=BCDEFGLN                                                          
  34P  cL J$spin=7 from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. 2884.2|g,        
- 34P 2cL M2(+E3), |DJ=2 to 5(-), 3352.5 level. 7+ from shell model              
- 34P 3cL (2018Lu08, 2012Be11).                                                  
+ 34P 2cL M2(+E3), |DJ=2 to 5(-), 3352.5 level. 7+ from shell model (2018Lu08,   
+ 34P 3cL 2012Be11).                                                             
  34P  cL T$lifetime |t>10 ps in {+18}O({+18}O,pn|g) E=24 MeV from 2012Be11 with 
  34P 2cL DSAM. Other: >3 ps in {+18}O({+18}O,pn|g) from 2009Be26 with DSAM.     
- 34P   G 842.5     6  48     10 D(+Q)    +0.05   14                             
+ 34P   G 842.5     6  48     10 (E1(+M2))+0.05   14                             
+ 34P B G BE1W LT 4.0E-5                                                         
+ 34P  cG M,MR$D(+Q) and |d from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV;         
+ 34P 2cG |D|p=(yes) from level scheme                                           
  34P   G 1607.7    5  100    13 (E1(+M2))+0.05   9                              
+ 34P B G BE1W LT 1.1E-5 $BM2W LT 0.37                                           
  34P S G  CC=0.000358 7$KC=7.09E-6 22$LC=5.27E-7 17$MC=4.01E-8 13               
  34P S G  IPC=0.000351 7                                                        
  34P  cG E$weighted average of 1607 {I2} from {+18}O({+18}O,pn|g) (2009Be26),   
@@ -377,6 +395,7 @@
  34P 2cG |g|g(|q)(POL) in {+18}O({+18}O,pn|g) E=34 MeV (2009Ch43). D(+Q) with   
  34P 3cG |d=+0.05 {I9} from |g(|q) in ({+18}O,pn|g) E=24 MeV.                   
  34P   G 2884.2    7  90     13 M2(+E3)  +0.11   18                             
+ 34P B G BM2W LT 0.95 $BE3W LT 53                                               
  34P S G  CC=0.000425 8$KC=6.19E-6 9$LC=4.60E-7 7$MC=3.50E-8 5                  
  34P S G  IPC=0.000418 8                                                        
  34P  cG E$weighted average of 2883 {I2} from {+18}O({+18}O,pn|g) (2009Be26),   
@@ -390,6 +409,7 @@
  34P 3cG {+18}O({+18}O,pn|g) E=24 MeV. Q, |DJ=2 from |g|g(|q)(DCO) in           
  34P 4cG {+18}O({+18}O,pn|g) E=34 MeV (2009Ch43).                               
  34P   G 3931.7    10 12.5   75 [E3]                                            
+ 34P B G BE3W LT 16                                                             
  34P S G  CC=0.000870 12$KC=3.72E-6 5$LC=2.77E-7 4$MC=2.104E-8 29               
  34P S G  IPC=0.000866 12                                                       
  34P  cG E$from ({+18}O,pn|g) E=34 MeV. Other: 3932 {I3} from ({+18}O,pn|g) E=24
@@ -404,15 +424,19 @@
  34P   G 4011.6    30 100                                                       
  34P   L 6357.2    9  (7)-             0.035 PS  LT                             
  34P X L XREF=C                                                                 
- 34P  cL J$2405.9|g, E2 to 5-, 3951.3 level. Shell-model suggests 7-            
- 34P 2cL (2018Lu08, 2012Be11).                                                  
+ 34P  cL J$2405.9|g, E2 to 5-, 3951.3 level. Shell-model suggests 7- (2018Lu08, 
+ 34P 2cL 2012Be11).                                                             
  34P  cL T$lifetime |t<0.05 ps in {+18}O({+18}O,pn|g) E=24 MeV from 2012Be11    
  34P 2cL with DSAM.                                                             
  34P   G 2405.9    7  75     14 E2                                              
+ 34P B G BE2W GT 11                                                             
  34P S G  CC=0.000519 7$KC=6.09E-6 9$LC=4.53E-7 6$MC=3.44E-8 5                  
  34P S G  IPC=0.000513 7                                                        
  34P  cG M$Q from |g(|q) in {+18}O({+18}O,pn|g) E=24 MeV. M2 ruled out by RUL.  
- 34P   G 3004      2  100    14                                                 
+ 34P   G 3004      2  100    14 [E2]                                            
+ 34P B G BE2W GT 4.9                                                            
+ 34P S G  CC=0.000791 11$KC=4.24E-6 6$LC=3.15E-7 4$MC=2.394E-8 34               
+ 34P S G  IPC=0.000786 11                                                       
  34P   L 6445.2    31                                                           
  34P X L XREF=C                                                                 
  34P   G 4139.8    30 100                                                       

@@ -37,7 +37,11 @@
  34AL4c  levels in the gap.                                                     
  34AL cB IB,LOGFT$From I(|g+ce) intensity balance at each level. Quoted I|b{+-} 
  34AL2cB values are considered upper limits due to the incomplete decay scheme, 
- 34AL3cB and the associated log {Ift} values are considered lower limits.       
+ 34AL3cB and the associated log {Ift} values are considered lower limits. Note  
+ 34AL4cB that possible unobserved transitions due to incomplete decay scheme    
+ 34AL5cB might not have a significant impact on those very strong branches      
+ 34AL6cB (e.g., %I|b{+-}=45 feeding to 46-keV level and %I|b{+-}=28.4 to        
+ 34AL7cB 1462.8-keV level).                                                     
  34AL cG E,RI$From 2017Li03 and 2017LiZZ (e-mail reply from A. Negret and R.    
  34AL2cG Lica). E|g systematic uncertainty of 0.1 keV from calibration added in 
  34AL3cG quadrature to the statistical uncertainties provided in 2017LiZZ.      
@@ -84,7 +88,7 @@
  34AL  L 597.52    10 (3-)                                                      
  34AL  G 597.54    11 0.077  10                                                 
  34AL cG $|DE|g(stat)=0.05 keV                                                  
- 34AL  L 893.23    12                                                           
+ 34AL  L 893.23    12 (0-,1,2,3+)                                               
  34AL  B             0.61    LT          6.2     GT                             
  34ALS B EAV=4935 4                                                             
  34AL  G 405.47    22 0.044  20                                                 
@@ -93,7 +97,7 @@
  34AL cG $|DE|g(stat)=0.09 keV                                                  
  34AL  G 846.63    10 2.27   31                                                 
  34AL cG $|DE|g(stat)=0.01 keV                                                  
- 34AL  L 969.98    12                                                           
+ 34AL  L 969.98    12 (2-,3+)                                                   
  34AL  G 482.19    20 0.07   1                                                  
  34AL cG $|DE|g(stat)=0.17 keV                                                  
  34AL  G 498.14    14 0.19   3                                                  
@@ -106,7 +110,7 @@
  34AL2cG minimum |DI|g in 2017LiZZ.                                             
  34AL  G 970.38    41 0.023  10                                                 
  34AL cG $|DE|g(stat)=0.4 keV                                                   
- 34AL  L 1048.69   11                                                           
+ 34AL  L 1048.69   11 (1-,2,3+)                                                 
  34AL  B             1.1     LT          5.9     GT                             
  34ALS B EAV=4859 4                                                             
  34AL  G 451.20    11 0.10   2                                                  
@@ -140,6 +144,10 @@
  34AL  L 1462.81   11 1+                                                        
  34AL  B             28.4                4.4                                    
  34ALS B EAV=4655 4                                                             
+ 34AL cB IB,LOGFT$Even if the |b{+-} feeding intensity were to be reduced by an 
+ 34AL2cB order of magnitude to account for possible missing feeding |g to this  
+ 34AL3cB level due to the incomplete decay scheme, the log {Ift} value would    
+ 34AL4cB still remain within the range of allowed transitions.                  
  34AL  G 283.85    25 0.40   7                                                  
  34AL cG $|DE|g(stat)=0.23 keV                                                  
  34AL  G 414.16    10 4.29   59                                                 
@@ -156,7 +164,7 @@
  34AL cG $|DE|g(stat)=0.004 keV                                                 
  34AL  G 1416.23   10 2.92   40                                                 
  34AL cG $|DE|g(stat)=0.013 keV                                                 
- 34AL  L 2004.07   12 0(+),1(+)                                                 
+ 34AL  L 2004.07   12 (1+)                                                      
  34AL cL J$2017Li03 tentatively assigned (1+) based on log {Ift}=5.4 {I1}.      
  34AL  B             2.03                5.4                                    
  34ALS B EAV=4389 4                                                             
@@ -170,7 +178,7 @@
  34AL cG $|DE|g(stat)=0.16 keV                                                  
  34AL  G 1957.65   11 0.40   6                                                  
  34AL cG $|DE|g(stat)=0.04 keV                                                  
- 34AL  L 2645.91   14 0(+),1(+)                                                 
+ 34AL  L 2645.91   14 (1+)                                                      
  34AL  B             0.400               6.0                                    
  34ALS B EAV=4074 4                                                             
  34AL  G 2158.08   14 0.11   3                                                  
