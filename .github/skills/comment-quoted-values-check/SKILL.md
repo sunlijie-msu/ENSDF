@@ -101,15 +101,16 @@ For transitions quoted as `E_gamma|g to/from E_level`, verify:
 
 | Code                          | Severity | Description                               |
 | :---------------------------- | :------- | :---------------------------------------- |
-| `GAMMA_NOT_FOUND`             | ERROR    | No G-record matches quoted gamma energy   |
-| `GAMMA_ENERGY_MISMATCH`       | ERROR    | Quoted gamma energy ≠ G-record E field    |
-| `MULTIPOLARITY_MISMATCH`      | ERROR    | Comment multipolarity ≠ G-record M field  |
-| `LEVEL_NOT_FOUND`             | ERROR    | No L-record matches quoted level energy   |
-| `LEVEL_ENERGY_MISMATCH`       | ERROR    | Quoted level energy ≠ L-record E field    |
-| `JPI_MISMATCH`                | ERROR    | Comment J-π ≠ L-record J field            |
-| `MISSING_LEVEL_SUFFIX`        | ERROR    | Quoted level energy not followed by `level` |
-| `ENERGY_CONSERVATION_WARNING` | WARNING  | \|E_initial - E_final - E_gamma\| > 2 keV |
-| `ENERGY_CONSERVATION_ERROR`   | ERROR    | \|E_initial - E_final - E_gamma\| > 5 keV |
+| `GAMMA_NOT_FOUND`             | ERROR   | No G-record matches quoted gamma energy    |
+| `GAMMA_ENERGY_MISMATCH`       | ERROR   | Quoted gamma energy ≠ G-record E field     |
+| `MULTIPOLARITY_MISMATCH`      | ERROR   | Comment multipolarity ≠ G-record M field   |
+| `LEVEL_NOT_FOUND`             | ERROR   | No L-record matches quoted level energy    |
+| `LEVEL_ENERGY_MISMATCH`       | ERROR   | Quoted level energy ≠ L-record E field     |
+| `JPI_MISMATCH`                | ERROR   | Comment J-π ≠ L-record J field             |
+| `MISSING_LEVEL_ENERGY`        | ERROR   | Missing quoted level energy in comment     |
+| `MISSING_LEVEL_SUFFIX`        | ERROR   | Quoted level energy not followed by `level`|
+| `ENERGY_CONSERVATION_WARNING` | WARNING | \|E_initial - E_final - E_gamma\| > 3 keV  |
+| `ENERGY_CONSERVATION_ERROR`   | ERROR   | \|E_initial - E_final - E_gamma\| > 10 keV |
 
 **Exit codes:** `0` = no errors; `1` = one or more errors found; `2` = file not found
 
@@ -161,7 +162,7 @@ Re-run the checker after any L-record J-π or level-energy edit: existing commen
 4. **Ground state notation:** `g.s.` in comments = `0.0` in data records (no error)
 5. **Energy-conservation mismatches:** Check cited endpoints against E_gamma, accounting for stated uncertainties
 6. **J-π lists misread as energies:** a comma-separated J-π list (`|g D(+Q) to 2+, 3+, 3-, and 4- levels`) quotes no energies; `_LEVEL_QUOTE` ignores a number immediately followed by `+`/`-` (`(?![+-])`), so never "fix" such a comment to satisfy a parse.
-7. **Merged datasets and repeated energies:** isolate each dataset; match a quoted gamma using its parent level (and quoted final level for deexcitation), not E|g alone.
+7. **Merged datasets and incomplete endpoints:** isolate each dataset; match by parent level, not E|g alone; each quoted transition followed by J|p must identify exact destination energy or g.s.
 8. **Attributed source values:** preserve a cited paper's rejected multipolarity as historical evidence; distinguish it from the evaluator's adopted G-record value.
 9. **Energy conservation:** use stated level/gamma uncertainties before treating a residual as an error.
 
