@@ -159,8 +159,11 @@ Re-run the checker after any L-record J-π or level-energy edit: existing commen
 2. **Multipolarity order substitution:** `D` ≠ `M1+E2`, `Q` ≠ `D+Q` — measured-to-character pairs (e.g. `D` and `(M1)`) are equivalent, but a different multipole order always is a mismatch
 3. **Energy string mismatches:** `1991` ≠ `1991.27` — must match character-for-character
 4. **Ground state notation:** `g.s.` in comments = `0.0` in data records (no error)
-5. **Energy conservation not checked:** Always verify E_initial - E_final ≈ E_gamma
+5. **Energy-conservation mismatches:** Check cited endpoints against E_gamma, accounting for stated uncertainties
 6. **J-π lists misread as energies:** a comma-separated J-π list (`|g D(+Q) to 2+, 3+, 3-, and 4- levels`) quotes no energies; `_LEVEL_QUOTE` ignores a number immediately followed by `+`/`-` (`(?![+-])`), so never "fix" such a comment to satisfy a parse.
+7. **Merged datasets and repeated energies:** isolate each dataset; match a quoted gamma using its parent level (and quoted final level for deexcitation), not E|g alone.
+8. **Attributed source values:** preserve a cited paper's rejected multipolarity as historical evidence; distinguish it from the evaluator's adopted G-record value.
+9. **Energy conservation:** use stated level/gamma uncertainties before treating a residual as an error.
 
 ---
 
@@ -168,5 +171,5 @@ Re-run the checker after any L-record J-π or level-energy edit: existing commen
 
 - All quoted values match data records character-for-character
 - Every quoted level energy carries the `level` designator (`g.s.` exempt)
-- All transitions satisfy energy conservation (|deviation| ≤ 2 keV)
+- All transitions satisfy energy conservation within 2 keV after accounting for stated energy uncertainties
 - Zero errors returned by `check_quoted_values.py`

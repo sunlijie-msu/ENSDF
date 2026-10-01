@@ -38,9 +38,11 @@ Usage:
 """
 
 import argparse
+import math
 import re
 import sys
 from dataclasses import dataclass
+from decimal import Decimal, InvalidOperation
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -64,6 +66,7 @@ class Level:
     energy_str: str        # original string (preserves trailing zeros)
     jpi: str               # spin-parity as written in cols 23-39
     line_num: int
+    energy_uncertainty: Optional[float] = None
 
     def __repr__(self) -> str:
         return f"Level({self.energy_str}, {self.jpi!r}, line {self.line_num})"
@@ -77,6 +80,7 @@ class Gamma:
     multipolarity: str     # cols 33-41, stripped
     parent_energy: float   # energy of the parent level
     line_num: int
+    energy_uncertainty: Optional[float] = None
 
     def __repr__(self) -> str:
         return (f"Gamma({self.energy_str}, M={self.multipolarity!r}, "
@@ -124,11 +128,44 @@ class Finding:
 # ---------------------------------------------------------------------------
 # Parsers
 # ---------------------------------------------------------------------------
-def parse_levels(filepath: Path) -> Dict[float, Level]:
+def dataset_ranges(filepath: Path) -> List[Tuple[int, int]]:
+    """Return 1-based [start, end) ranges for datasets in an ENSDF file."""
+    with open(filepath, 'r', encoding='utf-8') as fh:
+        lines = fh.readlines()
+
+    starts = [
+        i for i, line in enumerate(lines, start=1)
+        if (len(line) >= 10 and line[5:9] == '    '
+            and line[0:5].strip() and line[9:80].strip())
+    ]
+    if not starts:
+        return [(1, len(lines) + 1)]
+    if starts[0] > 1:
+        starts.insert(0, 1)
+    ends = starts[1:] + [len(lines) + 1]
+    return list(zip(starts, ends))
+
+
+def parse_energy_uncertainty(value_str: str, field: str) -> Optional[float]:
+    """Convert ENSDF DE digits to an absolute energy uncertainty in keV."""
+    digits = field.strip()
+    if not digits.isdigit():
+        return None
+    try:
+        value = Decimal(value_str)
+    except InvalidOperation:
+        return None
+    return float(Decimal(digits).scaleb(value.as_tuple().exponent))
+
+
+def parse_levels(filepath: Path,
+                 line_range: Optional[Tuple[int, int]] = None) -> Dict[float, Level]:
     """Parse all L-records and build {energy: Level} dictionary."""
     levels: Dict[float, Level] = {}
     with open(filepath, 'r', encoding='utf-8') as fh:
         for i, line in enumerate(fh, start=1):
+            if line_range is not None and not line_range[0] <= i < line_range[1]:
+                continue
             if len(line) < 10:
                 continue
             # Data L-record: col 6 blank, col 7 blank, col 8 = 'L'
@@ -148,16 +185,20 @@ def parse_levels(filepath: Path) -> Dict[float, Level]:
             except ValueError:
                 continue
             jpi = line[22:39].strip() if len(line) > 39 else line[22:].strip()
-            levels[energy] = Level(energy, energy_str, jpi, i)
+            levels[energy] = Level(energy, energy_str, jpi, i,
+                                   parse_energy_uncertainty(energy_str, line[19:21]))
     return levels
 
 
-def parse_gammas(filepath: Path, *, debug: bool = False) -> List[Gamma]:
+def parse_gammas(filepath: Path, *, debug: bool = False,
+                 line_range: Optional[Tuple[int, int]] = None) -> List[Gamma]:
     """Parse all G-records and build list of Gamma objects."""
     gammas: List[Gamma] = []
     current_level_energy: Optional[float] = None
     with open(filepath, 'r', encoding='utf-8') as fh:
         for i, line in enumerate(fh, start=1):
+            if line_range is not None and not line_range[0] <= i < line_range[1]:
+                continue
             if len(line) < 10:
                 continue
             col6 = line[5:6]
@@ -192,7 +233,9 @@ def parse_gammas(filepath: Path, *, debug: bool = False) -> List[Gamma]:
                     mul = line[31:41].strip()
                 else:
                     mul = line[32:41].strip() if len(line) > 41 else ''
-                gammas.append(Gamma(energy, e_str, mul, current_level_energy, i))
+                gammas.append(Gamma(
+                    energy, e_str, mul, current_level_energy, i,
+                    parse_energy_uncertainty(e_str, line[19:21])))
                 if debug:
                     print(f"  G-rec line {i}: E={e_str}  M={mul!r}  parent={current_level_energy}")
     return gammas
@@ -201,7 +244,10 @@ def parse_gammas(filepath: Path, *, debug: bool = False) -> List[Gamma]:
 # ---------------------------------------------------------------------------
 # cL J$ comment extraction
 # ---------------------------------------------------------------------------
-def extract_quoted_refs(filepath: Path) -> Tuple[List[QuotedRef], List[LevelQuote]]:
+def extract_quoted_refs(
+        filepath: Path,
+        line_range: Optional[Tuple[int, int]] = None,
+) -> Tuple[List[QuotedRef], List[LevelQuote]]:
     """Extract quoted gamma references and level quotations from cL J$ blocks."""
     refs: List[QuotedRef] = []
     level_quotes: List[LevelQuote] = []
@@ -220,6 +266,8 @@ def extract_quoted_refs(filepath: Path) -> Tuple[List[QuotedRef], List[LevelQuot
                 _find_level_quotes(block_lines, block_start))
 
     for i, line in enumerate(lines, start=1):
+        if line_range is not None and not line_range[0] <= i < line_range[1]:
+            continue
         if len(line) < 10:
             if in_j_block:
                 flush_block()
@@ -271,9 +319,9 @@ _LEVEL_QUOTE = re.compile(
     r'(?P<jpi>(?:\([^()]*\)|[0-9/()+,\- ]){1,24}?)\s*,\s*'
     r'(?P<level>g\.s\.|\d+(?:\.\d+)?)'
     r'(?:-keV)?'
-    # A token immediately followed by +/- is another J-pi value in a list
-    # (e.g. "to 2+, 3+, 3-, and 4- levels"), not a quoted level energy.
-    r'(?![+-])'
+    # A token followed by +/- is another J-pi list item; one followed by |g
+    # is a gamma energy, not a quoted level energy.
+    r'(?![0-9]|\.[0-9]|[+-]|\|g)'
     r'(?P<suffix>\s+(?:level|resonance)\b)?')
 
 
@@ -440,16 +488,32 @@ def find_closest_level(levels: Dict[float, Level], energy: float,
 
 
 def find_closest_gamma(gammas: List[Gamma], energy: float,
-                       window: float) -> Optional[Gamma]:
-    """Return the closest Gamma within *window* keV, or None."""
+                       window: float,
+                       parent_energy: Optional[float] = None) -> Optional[Gamma]:
+    """Return closest Gamma within *window*, scoped to its parent level."""
+    candidates = gammas
+    if parent_energy is not None:
+        candidates = [g for g in gammas
+                      if abs(g.parent_energy - parent_energy) <= window]
     best: Optional[Gamma] = None
     best_diff = float('inf')
-    for g in gammas:
+    for g in candidates:
         d = abs(g.energy - energy)
         if d <= window and d < best_diff:
             best_diff = d
             best = g
     return best
+
+
+def find_gamma_to_level(gammas: List[Gamma], energy: float,
+                        level_energy: float, window: float) -> Optional[Gamma]:
+    """Find an explicitly quoted deexciting Gamma by final level, then E?."""
+    candidates = [
+        g for g in gammas
+        if (abs(g.energy - energy) <= window
+            and abs((g.parent_energy - level_energy) - g.energy) <= window)
+    ]
+    return min(candidates, key=lambda g: abs(g.energy - energy), default=None)
 
 
 # ---------------------------------------------------------------------------
@@ -504,8 +568,22 @@ def verify(refs: List[QuotedRef], levels: Dict[float, Level],
     findings: List[Finding] = []
 
     for ref in refs:
-        # --- Gamma energy ---
-        g = find_closest_gamma(gammas, ref.gamma_energy, window)
+        # --- Gamma energy: identify its parent level before matching E? ---
+        if ref.direction == 'to':
+            parent_energy = ref.block_level
+            g = find_closest_gamma(gammas, ref.gamma_energy, window,
+                                   parent_energy)
+            if ref.level_energy is not None:
+                if (g is not None
+                        and abs((g.parent_energy - ref.level_energy) - g.energy)
+                        <= window):
+                    pass
+                else:
+                    g = find_gamma_to_level(gammas, ref.gamma_energy,
+                                            ref.level_energy, window) or g
+        else:
+            g = find_closest_gamma(gammas, ref.gamma_energy, window,
+                                   ref.level_energy)
         if g is None:
             findings.append(Finding(
                 code='GAMMA_NOT_FOUND', severity='ERROR',
@@ -593,10 +671,37 @@ def verify(refs: List[QuotedRef], levels: Dict[float, Level],
                     actual=lvl.jpi,
                 ))
 
-        # --- Energy conservation: |E_own_level - E_quoted| must equal E_gamma ---
-        if ref.block_level is not None:
-            deviation = abs(abs(ref.block_level - ref.level_energy)
+        # --- Energy conservation uses the matched transition's endpoints ---
+        if g is not None and ref.level_energy is not None:
+            if ref.direction == 'to':
+                initial_level = g.parent_energy
+                final_level = ref.level_energy
+            else:
+                initial_level = ref.level_energy
+                final_level = ref.block_level
+            if final_level is None:
+                continue
+            deviation = abs(abs(initial_level - final_level)
                             - ref.gamma_energy)
+            uncertainty_terms = [g.energy_uncertainty]
+            if ref.direction == 'to':
+                parent = find_closest_level(levels, g.parent_energy, window)
+                if parent is not None:
+                    uncertainty_terms.append(parent.energy_uncertainty)
+                final = find_closest_level(levels, final_level, window)
+                if final is not None:
+                    uncertainty_terms.append(final.energy_uncertainty)
+            else:
+                parent = find_closest_level(levels, initial_level, window)
+                final = find_closest_level(levels, final_level, window)
+                if parent is not None:
+                    uncertainty_terms.append(parent.energy_uncertainty)
+                if final is not None:
+                    uncertainty_terms.append(final.energy_uncertainty)
+            combined_uncertainty = math.sqrt(sum(
+                uncertainty ** 2 for uncertainty in uncertainty_terms
+                if uncertainty is not None))
+            deviation = max(0.0, deviation - combined_uncertainty)
             if deviation > 5.0:
                 findings.append(Finding(
                     code='ENERGY_CONSERVATION_ERROR', severity='ERROR',
@@ -758,23 +863,30 @@ def main() -> None:
         print(f'Error: file not found: {filepath}', file=sys.stderr)
         sys.exit(2)
 
-    # Parse data records
+    # Parse and verify one dataset at a time; merged files reuse energies.
     print(f'Parsing {filepath.name} ...')
-    levels = parse_levels(filepath)
-    gammas = parse_gammas(filepath, debug=args.debug)
-    print(f'  Levels: {len(levels)}    Gammas: {len(gammas)}')
-
-    # Extract quoted references from cL J$ comments
-    refs, level_quotes = extract_quoted_refs(filepath)
-    print(f'  Quoted references: {len(refs)}'
-          f'    Level quotes: {len(level_quotes)}')
-
-    # Verify
-    findings = dedupe(verify(refs, levels, gammas, window)
-                      + verify_level_quotes(level_quotes, levels, window))
+    ranges = dataset_ranges(filepath)
+    findings: List[Finding] = []
+    n_levels = n_gammas = n_refs = n_level_quotes = 0
+    for line_range in ranges:
+        levels = parse_levels(filepath, line_range)
+        gammas = parse_gammas(filepath, debug=args.debug,
+                              line_range=line_range)
+        refs, level_quotes = extract_quoted_refs(filepath, line_range)
+        n_levels += len(levels)
+        n_gammas += len(gammas)
+        n_refs += len(refs)
+        n_level_quotes += len(level_quotes)
+        findings.extend(verify(refs, levels, gammas, window))
+        findings.extend(verify_level_quotes(level_quotes, levels, window))
+    findings = dedupe(findings)
+    print(f'  Dataset sections: {len(ranges)}')
+    print(f'  Levels: {n_levels}    Gammas: {n_gammas}')
+    print(f'  Quoted references: {n_refs}'
+          f'    Level quotes: {n_level_quotes}')
 
     # Report
-    print_report(filepath, findings, len(refs), len(levels), len(gammas))
+    print_report(filepath, findings, n_refs, n_levels, n_gammas)
 
     # Exit code: 1 if errors, 0 otherwise
     has_errors = any(f.severity == 'ERROR' for f in findings)
