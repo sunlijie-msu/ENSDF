@@ -1,0 +1,1149 @@
+ 36S     ADOPTED LEVELS, GAMMAS                                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
+ 36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  dG $Transition strength is calculated by Java-RULER (version 16-Sep-2026) 
+ 36S  dG CC$FROM BrIcc v2.3e (17-Jun-2020) 2008Ki07, "Frozen Orbitals" appr.    
+ 36S  dL E$Least-squares fitting is done by GLSC (version 23-Sep-2026)          
+ 36S   Q -1142.13  19 9889.2519 13095.319 -9011.44     2021WA16                 
+ 36S  cQ $S(2n)=16875.09 {I19}, S(2p)=25250.4 {I8} (2021Wa16)                   
+ 36S  c  Isotope discovery (2012Th10): {+36}S isotope was identified in a mass  
+ 36S 2c  spectrometer at Harvard (1938Ni04).                                    
+ 36S  c  {+36}S production:                                                     
+ 36S  c  2012Zh06: {+9}Be({+40}Ar,X) E=57 MeV/nucleon, measured fragment yields.
+ 36S  c  2008IdZZ: {+24}Mg({+18}O,x|g) E=70 MeV, measured E|g, I|g, |g|g-coin.  
+ 36S  c  2003Wa23: {+36}Cl(n,p){+36}S at E=0.1-350 keV, measured |s.            
+ 36S  c  2002Go28: {+39}Ar(n,|g){+36}S, E=thermal, measured |s upper limit.     
+ 36S  c  2001Go29: {+39}Ar(n,|g){+36}S at E<100 keV, Maxwellian-averaged |s.    
+ 36S  c  1985Ko43: {+20}Ne({+16}O,{+16}O') at E(c.m.)=24.5-35.5 MeV; deduced    
+ 36S 2c  resonances.                                                            
+ 36S  c  1985Gy02, 1985GyZZ: {+36}S(|p-,|p-) E=48.4 MeV, measured |s(|q).       
+ 36S  c  1971Ar32: {+232}Th({+40}Ar,X) at E=290 MeV, measured yields.           
+ 36S  c  {+36}S radius measurements:                                            
+ 36S  c  1985Sc05: measured muonic x-ray energies, deduced rms charge radii.    
+ 36S  c  1983Ry04: measured |s(|q) in {+36}S(e,e) at E=120, 240, 320 MeV;       
+ 36S 2c  deduced charge radius.                                                 
+ 36S  c  {+36}S mass measurements:                                              
+ 36S  c  2001Wa50: mass differences and binding energies from {+36}S(p,n) at    
+ 36S 2c  E|?=2 MeV and {+36}Cl(n,p) reactions.                                  
+ 36S  c  Theoretical calculations:                                              
+ 36S  c  2023Ch34: ab initio interactions, levels, J, |p and moments.           
+ 36S  c  2023Dr01: shell model (ZBM2, USDB, sdpfu-mix, GXPF1A), 2+ level and    
+ 36S 2c  B(E2) in {+36}S.                                                       
+ 36S  c  2023Fo05: shell model, B(E2), B(M1) and transition matrix elements.    
+ 36S  c  2018Va09: shell model (sdpfu-mix), levels, J, |p; mirror energy        
+ 36S 2c  differences in {+36}Ca-{+36}S.                                         
+ 36S  c  2017Bo18: shell model (PSDPF), levels, J, |p, B(E2), and B(E3).        
+ 36S  c  2017Bo20: shell model (PSDPF), 2+ and 3- levels, B(E2) and B(E3).      
+ 36S  c  2017De15: HF+BCS+QRPA (Gogny), 1-, 2+, 3- energies, B(E2), B(M1).      
+ 36S  c  2016Si02: ab initio, first 2+ levels, S(2n), S(2p), uncertainties.     
+ 36S  c  2009Bo30: shell model (PSDPFB), negative-parity intruder levels, J, |p.
+ 36S  c  2006St21: shell model, level energies, g factors, B(E2), deformation.  
+ 36S  c  2006In01: self-consistent RPA, spins, octupole strengths.              
+ 36S  cL E$From a least-squares fit to |g-ray energies, unless otherwise noted. 
+ 36S  cL J$From comparison of |s(|q) data in {+36}S(p,p') and {+36}S(|a,|a') to 
+ 36S 2cL DWBA and coupled-channel calculations, unless otherwise noted.         
+ 36S  cG E,RI,M,MR$From {+34}S(t,p|g), unless otherwise noted. E|g values       
+ 36S 2cG without uncertainties are deduced from the level-energy differences.   
+ 36S  cG E(A),RI(A)$From {+36}P |b{+-} decay (5.6 S), unless otherwise noted.   
+ 36S   XA36P B- DECAY (5.6 S)                                                   
+ 36S   XB36CL EC DECAY (3.01E+5 Y)                                              
+ 36S   XC34S(T,PG)                                                              
+ 36S   XD36S(P,P'),(A,A')                                                       
+ 36S   XE36S(POL D,D')                                                          
+ 36S   XF36S(37CL,37CL)                                                         
+ 36S   XG37CL(G,P)                                                              
+ 36S   XH37CL(N,D)                                                              
+ 36S   XI37CL(D,3HE)                                                            
+ 36S   XJ40AR(G,A)                                                              
+ 36S   XK40AR(3HE,7BE)                                                          
+ 36S   XL115IN(34S,XG)                                                          
+ 36S   XM160GD(34S,XG),(36S,XG)                                                 
+ 36S   XN160GD(37CL,XG)                                                         
+ 36S   XO208PB(36S,36SG)                                                        
+ 36S   XPCOULOMB EXCITATION                                                     
+ 36S  PN                                                                     6  
+ 36S   L 0.0          0+               STABLE                                   
+ 36S X L XREF=ABCDEFGHIJKLMNOP                                                  
+ 36S  cL $Evaluated rms nuclear charge radius R=3.2985 fm {I24} (2013An02).     
+ 36S  cL $Mean radius r{+2}{-0}=1.26 fm{+2} {I10} from measured integrated      
+ 36S 2cL |s{-R}=2.44 b {I19} at a mean energy of 46.17 MeV/nucleon in           
+ 36S 3cL Si({+36}S,X) reaction (1999Ai02).                                      
+ 36S   L 3290.6    5  2+               83 FS     7                              
+ 36S X L XREF=ACDEFGIKLMNOP                                                     
+ 36S 2 L MOMM1=+2.6 10 (2008Sp01)                                               
+ 36S  cL J$3290.5|g, E2, |DJ=2 to 0+, g.s.                                      
+ 36S  cL T$lifetime |t=0.12 ps {I1}: weighted average of 0.11 ps {I3} in        
+ 36S 2cL {+34}S(t,p|g) from 1972Sa09 with DSAM and 0.12 ps {I1} in Coulomb      
+ 36S 3cL excitation from 2008Sp01 with DSAM. Others: 0.20 ps {I3} in            
+ 36S 4cL {+34}S(t,p|g) from 1971Ol02 with DSAM and |t<1 ps in                   
+ 36S 5cL {+208}Pb({+36}S,{+36}S|g) from 2022Gr07 with DRDM. The 1971Ol02 result 
+ 36S 6cL is superseded by 1972Sa09.                                             
+ 36S  cL MOMM1$from transient field technique in Coulomb excitation (2008Sp01). 
+ 36S   G 3290.5    5  100       E2                                              
+ 36S B G BE2W=2.50 +22-19                                                       
+ 36S S G  CC=0.000911 13$KC=4.43E-6 6$LC=3.41E-7 5$MC=2.88E-8 4                 
+ 36S S G  IPC=0.000906 13                                                       
+ 36S  cG E$weighted average of 3290.3 {I5} from {+36}P |b{+-} decay, 3290.8 {I6}
+ 36S 2cG from {+34}S(t,p|g), and 3291 {I2} from {+208}Pb({+36}S,{+36}S|g)       
+ 36S  cG M$E2, |DJ=2 from |g|g(|q)(DCO) and |g|g(|q)(POL) in                    
+ 36S 2cG {+115}In({+34}S,X|g).                                                  
+ 36S   L 3345      3  0+               8.8 NS    2                              
+ 36S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
+ 36S X L XREF=CDI(3360?)J(3500)P                                                
+ 36S  cL E$weighted average of 3346 {I4} from {+34}S(t,p|g) and 3344 {I3} from  
+ 36S 2cL {+36}S(p,p')                                                           
+ 36S  cL J$E0 transition to 0+ via the emission of positron-electron pairs.     
+ 36S  cL T$lifetime |t=12.7 ns {I3} in {+34}S(t,p|g) from 1971Ol02 with         
+ 36S 2cL proton-annihilation 511|g delayed coincidence.                         
+ 36S   G 3345         100       E0                                              
+ 36S  cG M$from the measured baffle yield ratio in {+34}S(t,p|g).               
+ 36S   L 4192.5    5  3-               0.62 PS   7                              
+ 36S X L XREF=ACDEFLMNOP                                                        
+ 36S 2 L MOMM1=+2.4 15 (2008Sp01)                                               
+ 36S  cL J$spin=3 from p|g(|q) in {+34}S(t,p|g). |p=- from 902.1|g, E1(+M2),    
+ 36S 2cL |DJ=1 to 2+, 3290.6 level.                                             
+ 36S  cL T$lifetime |t=0.90 ps {I10}: weighted average of 1.1 ps {I+6-3} in     
+ 36S 2cL {+34}S(t,p|g) from 1972Sa09 with DSAM, 0.84 ps {I24} in                
+ 36S 3cL {+208}Pb({+36}S,{+36}S|g) from 2022Gr07 with DRDM, and 0.9 ps {I1} in  
+ 36S 4cL Coulomb excitation from 2008Sp01 with DSAM. Other: >2 ps in            
+ 36S 5cL {+34}S(t,p|g) from 1971Ol02 with DSAM.                                 
+ 36S  cL $B(E3)=0.008 {I3} (2002Ki06 evaluation), from |b{-3} in {+36}S(p,p')   
+ 36S 2cL (1990Ho19).                                                            
+ 36S  cL MOMM1$transient field technique in Coulomb excitation in inverse-      
+ 36S 2cL kinematic reaction, g factor=+0.8 {I5} (2008Sp01).                     
+ 36S   G 902.1     4  100       E1(+M2)  +0.03   3                              
+ 36S S G  CC=2.58E-5 4$KC=2.38E-5 4$LC=1.839E-6 29$MC=1.550E-7 24               
+ 36S B G BE1W=0.00136 +18-14                                                    
+ 36S  cG E$weighted average of 902.7 {I4} from {+36}P |b{+-} decay, 901.5 {I4}  
+ 36S 2cG from {+34}S(t,p|g), and 902 {I1} from {+208}Pb({+36}S,{+36}S|g)        
+ 36S  cG M,MR$from p|g(|q) and p|g(|q)(POL) in {+34}S(t,p|g). E1, |DJ=1 from    
+ 36S 2cG |g|g(|q)(DCO) and |g|g(|q)(POL) in {+115}In({+34}S,X|g).               
+ 36S   L 4522.7    6  1+               17 FS     8                              
+ 36S X L XREF=CDGIP                                                             
+ 36S  cL T$lifetime |t=25 fs {I12} in {+34}S(t,p|g) from 1972Sa09 with DSAM.    
+ 36S 2cL Other: |t<40 ns in {+34}S(t,p|g) from 1971Ol02 with coincidence        
+ 36S 3cL resolving-time limit.                                                  
+ 36S   G 1232.1    4  33     13 [M1+E2]  1.2     LT                             
+ 36S S G  CC=3.8E-5 6$KC=2.41E-5 30$LC=1.86E-6 23$MC=1.57E-7 20                 
+ 36S S G  IPC=1.24E-5 24                                                        
+ 36S  cG MR$deduced by evaluators assuming RUL=100 for B(E2)(W.u.).             
+ 36S  cG $B(M1)(W.u.)=0.17 {I+15-8} if M1                                       
+ 36S   G 4522.2    15 100    13 [M1]                   1.20E-3 2                
+ 36S B G BM1W=0.011 +8-4                                                        
+ 36S S G  KC=2.71E-6 4$LC=2.083E-7 29$MC=1.758E-8 25                            
+ 36S S G  IPC=0.001198 17                                                       
+ 36S   L 4574.6    6  2+               0.055 PS  10                             
+ 36S X L XREF=ACDGIJ(4700)OP                                                    
+ 36S  cL J$spin=2 from p|g(|q) in {+34}S(t,p|g). |p=+ from 1284.2|g, M1(+E2) to 
+ 36S 2cL 2+, 3290.6 level.                                                      
+ 36S  cL T$lifetime |t=0.080 ps {I15} in {+34}S(t,p|g) from 1972Sa09 with DSAM. 
+ 36S 2cL Other: |t<0.1 ps in {+34}S(t,p|g) from 1971Ol02 with DSAM.             
+ 36S   G 1284.2    4  100       M1(+E2)  +0.07   4                              
+ 36S B G BM1W=0.188 +42-30 $BE2W=2.0 +32-17                                     
+ 36S S G  CC=3.88E-5 6$KC=1.961E-5 28$LC=1.512E-6 21$MC=1.276E-7 18             
+ 36S S G  IPC=1.752E-5 26                                                       
+ 36S  cG E$weighted average of 1284.3 {I4} from {+36}P |b{+-} decay, 1284.2 {I4}
+ 36S 2cG from {+34}S(t,p|g), and 1284 {I1} from {+208}Pb({+36}S,{+36}S|g)       
+ 36S  cG M,MR$from p|g(|q) and p|g(|q)(POL) in {+34}S(t,p|g).                   
+ 36S   L 5019.2    6  (4)-                                                      
+ 36S X L XREF=ADLMNO                                                            
+ 36S  cL J$826.9|g, M1, |DJ=1 to 3-, 4192.5 level. Spin increases with          
+ 36S 2cL excitation energy in {+115}In({+34}S,X|g).                             
+ 36S   G 826.9     4  100.0  19 M1                                          A   
+ 36S S G  CC=4.86E-5 7$KC=4.48E-5 6$LC=3.46E-6 5$MC=2.92E-7 4                   
+ 36S  cG E$weighted average of 826.9 {I4} from {+36}P |b{+-} decay and 827 {I1} 
+ 36S 2cG from {+208}Pb({+36}S,{+36}S|g)                                         
+ 36S  cG M$M1, |DJ=1 from |g|g(|q)(DCO) and |g|g(|q)(POL) in                    
+ 36S 2cG {+115}In({+34}S,X|g).                                                  
+ 36S   G 1729.0    5  3.1    19                                             A   
+ 36S   L 5204.8    6  5(-)                                                      
+ 36S X L XREF=ADLMNO                                                            
+ 36S  cL J$185.7|g, D, |DJ=1 to (4)-, 5019.2 level; 1012.3|g, Q, |DJ=2 to 3-,   
+ 36S 2cL 4192.5 level.                                                          
+ 36S   G 185.7     4  100.0  23 D                                               
+ 36S  cG E$weighted average of 185.8 {I4} from {+36}P |b{+-} decay and 185 {I1} 
+ 36S 2cG from {+208}Pb({+36}S,{+36}S|g)                                         
+ 36S  cG RI$from ({+37}Cl,X|g). Others: 100 {I4} from {+36}P |b{+-} decay, 100  
+ 36S 2cG {I11} from {+115}In({+34}S,X|g), and 100 {I6} from                     
+ 36S 3cG {+208}Pb({+36}S,{+36}S|g)                                              
+ 36S  cG M$D, |DJ=1 from |g|g(|q)(DCO) in {+115}In({+34}S,X|g); M1 is assigned  
+ 36S 2cG in 2006Kr07.                                                           
+ 36S   G 1012.3    4  24.4   26 Q                                               
+ 36S  cG E$weighted average of 1012.3 {I4} from {+36}P |b{+-} decay and 1012    
+ 36S 2cG {I1} from {+208}Pb({+36}S,{+36}S|g)                                    
+ 36S  cG RI$weighted average of 24 {I8} from {+36}P |b{+-} decay, 27 {I5} from  
+ 36S 2cG {+115}In({+34}S,X|g), 26.8 {I18} from ({+37}Cl,X|g), and 15.4 {I33}    
+ 36S 3cG from {+208}Pb({+36}S,{+36}S|g)                                         
+ 36S  cG M$Q, |DJ=2 from |g|g(|q)(DCO) in {+115}In({+34}S,X|g); E2 is assigned  
+ 36S 2cG in 2006Kr07.                                                           
+ 36S   L 5251.2       3-               0.07 PS   3                              
+ 36S X L XREF=ACDO                                                              
+ 36S  cL T$lifetime |t=0.10 ps {I4} in {+34}S(t,p|g) from 1972Sa09 with DSAM.   
+ 36S 2cL Other: |t<0.2 ps in {+34}S(t,p|g) from 1971Ol02 with DSAM.             
+ 36S   G 1058.2    4  34     10 [M1+E2]  2.8     LT                             
+ 36S S G  CC=3.6E-5 6$KC=3.3E-5 5$LC=2.6E-6 4$MC=2.16E-7 35                     
+ 36S  cG E$weighted average of 1058.8 {I4} from {+36}P |b{+-} decay, 1057.6 {I4}
+ 36S 2cG from {+34}S(t,p|g), and 1058 {I1} from {+208}Pb({+36}S,{+36}S|g)       
+ 36S  cG RI$unweighted average of 39.3 {I22} from {+36}P |b{+-} decay, 49 {I12} 
+ 36S 2cG from {+34}S(t,p|g), and 15 {I5} from {+208}Pb({+36}S,{+36}S|g)         
+ 36S  cG MR$deduced by evaluators assuming RUL=100 for B(E2)(W.u.).             
+ 36S  cG $B(M1)(W.u.)=0.067 {I+50-25} if M1                                     
+ 36S   G 1960.9    4  100    4  (E1(+M2))-0.09   9                          A   
+ 36S S G  CC=0.000618 14$KC=6.36E-6 23$LC=4.90E-7 18$MC=4.13E-8 15              
+ 36S S G  IPC=0.000611 14                                                       
+ 36S  cG E$weighted average of 1960.9 {I5} from {+36}P |b{+-} decay, 1961.0 {I4}
+ 36S 2cG from {+34}S(t,p|g), and 1960 {I1} from {+208}Pb({+36}S,{+36}S|g)       
+ 36S  cG RI$others: 100 {I12} from {+34}S(t,p|g) and 100 {I6} from              
+ 36S 2cG {+208}Pb({+36}S,{+36}S|g)                                              
+ 36S  cG M$D+Q from p|g(|q) in {+34}S(t,p|g). |D|p=yes from level scheme.       
+ 36S  cG MR$or -2.4 {I5} from {+34}S(t,p|g).                                    
+ 36S B G BE1W=9E-4 +8-3                                                         
+ 36S   L 5338      3                                                            
+ 36S X L XREF=D                                                                 
+ 36S   L 5390.8    7  2+               0.21 PS   GT                             
+ 36S X L XREF=CD                                                                
+ 36S  cL T$lifetime |t>0.3 ps in {+34}S(t,p|g) from 1972Sa09 with DSAM. Other:  
+ 36S 2cL |t<40 ns in {+34}S(t,p|g) from 1971Ol02 with coincidence resolving-time
+ 36S 3cL limit.                                                                 
+ 36S   G 816.2     4  11.1   89 [M1,E2]                                         
+ 36S S G  CC=6.6E-5 16$KC=6.1E-5 15$LC=4.7E-6 11$MC=3.9E-7 10                   
+ 36S   G 5390.4       100    9  [E2]                   1.60E-3 2                
+ 36S S G  KC=2.185E-6 31$LC=1.682E-7 24$MC=1.419E-8 20                          
+ 36S S G  IPC=0.001598 22                                                       
+ 36S   L 5462      3  3+                                                        
+ 36S X L XREF=D                                                                 
+ 36S   L 5508.7    6  (4)              0.19 PS   4                              
+ 36S X L XREF=CDO                                                               
+ 36S  cL J$spin=2,4 from p|g(|q) in {+34}S(t,p|g). Feeding 1182|g from (6+),    
+ 36S 2cL 6689.8 level.                                                          
+ 36S  cL T$lifetime |t=0.27 ps {I6} in {+34}S(t,p|g) from 1972Sa09 with DSAM.   
+ 36S 2cL Other: |t<0.3 ps in {+34}S(t,p|g) from 1971Ol02 with DSAM.             
+ 36S   G 1316.7    4  45     10                                                 
+ 36S  cG E$weighted average of 1316.8 {I4} from {+34}S(t,p|g) and 1316 {I1} from
+ 36S 2cG {+208}Pb({+36}S,{+36}S|g)                                              
+ 36S  cG RI$weighted average of 39 {I7} from {+34}S(t,p|g) and 61 {I11} from    
+ 36S 2cG {+208}Pb({+36}S,{+36}S|g)                                              
+ 36S   G 2217.7    3  100    7                                                  
+ 36S  cG E$weighted average of 2217.7 {I3} from {+34}S(t,p|g) and 2218 {I1} from
+ 36S 2cG {+208}Pb({+36}S,{+36}S|g)                                              
+ 36S  cG RI$other: 100 {I11} from {+208}Pb({+36}S,{+36}S|g)                     
+ 36S   L 5573.8    21 1-               0.14 PS   LT                             
+ 36S X L XREF=CDO                                                               
+ 36S  cL T$lifetime |t<0.2 ps in {+34}S(t,p|g) from both 1971Ol02 and 1972Sa09  
+ 36S 2cL with DSAM.                                                             
+ 36S   G 2283.1    20 100       [E1]                                            
+ 36S S G  CC=0.000839 12$KC=5.07E-6 7$LC=3.90E-7 5$MC=3.29E-8 5                 
+ 36S S G  IPC=0.000834 12                                                       
+ 36S  cG E$unweighted average of 2281.1 {I3} from {+34}S(t,p|g) and 2285 {I1}   
+ 36S 2cG from {+208}Pb({+36}S,{+36}S|g)                                         
+ 36S   L 5781.1    19                                                           
+ 36S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
+ 36S X L XREF=L                                                                 
+ 36S   G 761.9        100                                                       
+ 36S   L 5831.1       3-                                                        
+ 36S X L XREF=ADO                                                               
+ 36S   G 579.8     4  1.13   28                                             A   
+ 36S   G 812.0     4  15.3   9                                              A   
+ 36S   G 1256.8    4  12.8   9                                              A   
+ 36S  cG E$weighted average of 1256.9 {I4} from {+36}P |b{+-} decay and 1256    
+ 36S 2cG {I1} from {+208}Pb({+36}S,{+36}S|g)                                    
+ 36S  cG RI$other: 588 {I76} from {+208}Pb({+36}S,{+36}S|g).                    
+ 36S   G 1638.3    4  100.0  28                                             A   
+ 36S  cG E$weighted average of 1638.3 {I4} from {+36}P |b{+-} decay and 1638    
+ 36S 2cG {I1} from {+208}Pb({+36}S,{+36}S|g)                                    
+ 36S  cG RI$other: 100 {I29} from {+208}Pb({+36}S,{+36}S|g).                    
+ 36S   G 2540.3    5  49.3   23                                             A   
+ 36S   L 6186.7    6  3-               0.055 PS  21                             
+ 36S X L XREF=CD                                                                
+ 36S  cL T$lifetime |t=0.08 ps {I3} in {+34}S(t,p|g) from 1972Sa09 with DSAM.   
+ 36S 2cL Other: |t<0.3 ps for the 6.20-MeV doublet in {+34}S(t,p|g) from        
+ 36S 3cL 1971Ol02 with DSAM.                                                    
+ 36S   G 1994.8    4  33     11 (M1+E2)                                         
+ 36S S G  CC=0.000288 35$KC=9.7E-6 5$LC=7.5E-7 4$MC=6.31E-8 34                  
+ 36S S G  IPC=0.000278 34                                                       
+ 36S  cG M,MR$D+Q from p|g(|q) in {+34}S(t,p|g). |D|p=no from level scheme.     
+ 36S  cG $B(M1)(W.u.)=0.013 {I+8-5} if M1, B(E2)(W.u.)=11 {I+8-4} if E2         
+ 36S   G 2894.8    5  100    11 [E1]                   1.19E-3 2                
+ 36S S G  KC=3.69E-6 5$LC=2.84E-7 4$MC=2.396E-8 34                              
+ 36S S G  IPC=0.001190 17                                                       
+ 36S B G BE1W=3.5E-4 +22-10                                                     
+ 36S   L 6223.8    7  2(+)             0.021 PS  LT                             
+ 36S X L XREF=CD                                                                
+ 36S  cL J$spin=2,3 for a 6.20-MeV doublet from p|g(|q) in {+34}S(t,p|g). 6186.7
+ 36S 2cL level is assigned 3- based on {+36}S(p,p'),{+36}S(|a,|a').             
+ 36S  cL T$lifetime |t<0.03 ps in {+34}S(t,p|g) from 1972Sa09 with DSAM. Other: 
+ 36S 2cL |t<0.3 ps for the 6.20-MeV doublet in {+34}S(t,p|g) from 1971Ol02 with 
+ 36S 3cL DSAM.                                                                  
+ 36S   G 1649.2    5  100    13 [M1,E2]                                         
+ 36S S G  CC=0.000146 21$KC=1.36E-5 10$LC=1.05E-6 8$MC=8.9E-8 7                 
+ 36S S G  IPC=0.000131 20                                                       
+ 36S   G 2933.0    10 32     13 [M1,E2]                                         
+ 36S S G  CC=0.00070 6$KC=5.17E-6 15$LC=3.98E-7 12$MC=3.36E-8 10                
+ 36S S G  IPC=0.00070 6                                                         
+ 36S   L 6350      3                                                            
+ 36S X L XREF=D                                                                 
+ 36S   L 6472      3  1-                                                        
+ 36S X L XREF=DG(6510*)                                                         
+ 36S   L 6512.8    6  4+               0.21 PS   LT                             
+ 36S X L XREF=ACDG(6510*)I(6511)                                                
+ 36S  cL J$spin=4 from p|g(|q) in {+34}S(t,p|g). |p=+ from 3221|g, E2 to 2+,    
+ 36S 2cL 3290.6 level.                                                          
+ 36S  cL T$lifetime |t<0.3 ps in {+34}S(t,p|g) from 1971Ol02 with DSAM.         
+ 36S   G 2320.1    5            [E1]                                            
+ 36S S G  CC=0.000863 12$KC=4.96E-6 7$LC=3.82E-7 5$MC=3.22E-8 5                 
+ 36S S G  IPC=0.000857 12                                                       
+ 36S  cG E$The only |g branch observed in {+36}P |b{+-} decay.                  
+ 36S   G 3221      16 100       E2                                              
+ 36S S G  CC=0.000883 14$KC=4.58E-6 7$LC=3.53E-7 6$MC=2.98E-8 5                 
+ 36S S G  IPC=0.000878 14                                                       
+ 36S  cG M$Q from p|g(|q) in {+34}S(t,p|g). M2 ruled out by RUL.                
+ 36S   L 6553      3                                                            
+ 36S X L XREF=D                                                                 
+ 36S   L 6689.8    9  (6+)             3.7 PS    18                             
+ 36S X L XREF=NO                                                                
+ 36S  cL J$1484|g to 5(-), 5204.8 level. Spin increases with excitation energy  
+ 36S 2cL in {+160}Gd({+37}Cl,X|g).                                              
+ 36S  cL T$lifetime |t=5.4 ps {I26} in {+208}Pb({+36}S,{+36}S|g) from 2022Gr07  
+ 36S 2cL with DRDM.                                                             
+ 36S   G 1182      1  100    16                                                 
+ 36S  cG E,RI$from {+208}Pb({+36}S,{+36}S|g).                                   
+ 36S   G 1484      1  58     16 [E1]                                            
+ 36S S G  CC=0.000264 4$KC=9.64E-6 14$LC=7.43E-7 10$MC=6.27E-8 9                
+ 36S S G  IPC=0.000254 4                                                        
+ 36S  cG E,RI$from {+208}Pb({+36}S,{+36}S|g).                                   
+ 36S B G BE1W=1.9E-5 +16-8                                                      
+ 36S   L 7120      20 (1,2+)           0.21 PS   LT                             
+ 36S  dL E LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                  
+ 36S X L XREF=CGI                                                               
+ 36S  cL E$from {+34}S(t,p|g).                                                  
+ 36S  cL J$spin=1,2 from p|g(|q) in {+34}S(t,p|g). 7119|g to 0+, g.s.           
+ 36S  cL T$lifetime |t<0.3 ps in {+34}S(t,p|g) from 1971Ol02 with DSAM.         
+ 36S   G 2545         28     7                                                  
+ 36S   G 3829         11.1   70                                                 
+ 36S   G 7119         100    7                                                  
+ 36S   L 7270.4    6  (3,4,5)-                                                  
+ 36S X L XREF=A                                                                 
+ 36S  cL J$allowed |b feeding from (4)- {+36}P g.s.                             
+ 36S   G 757.5     4  33     4                                              A   
+ 36S   G 1439.6    5  12     4                                              A   
+ 36S   G 2019.3    5  100    6                                              A   
+ 36S   G 2066.1    5  16     4                                              A   
+ 36S   G 2251.4    5  31     4                                              A   
+ 36S   G 3076.6    5  55     20                                             A   
+ 36S   L 7710      25                                                           
+ 36S X L XREF=I                                                                 
+                                                                                
+ 36S     36P B- DECAY (5.6 S)          1986DU07                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
+ 36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  dB EAV,LOGFT$From BetaShape v2.4 (Jun-2024) 2023Mo21.                     
+ 36S  dL E$Least-squares fitting is done by GLSC (version 26-Sep-2026)          
+ 36S  c  Data from 1986Du07 and update from private communication to J.P. Dufour
+ 36S 2c  by P.M. Endt.                                                          
+ 36S  c  1986Du07 (also 1986Du11, 1987DuZU): {+36}Si activity was produced by   
+ 36S 2c  Al({+40}Ar,X) with E=60 MeV/nucleon {+40}Ar beam at GANIL. Fragments   
+ 36S 3c  were separated by the LISE spectrometer and implanted into a movable   
+ 36S 4c  thin photocinema foil. |b particles were detected with a plastic       
+ 36S 5c  scintillator and |g rays were detected with intrinsic Ge detectors.    
+ 36S 6c  Measured E|g, I|g, |b|g-coin, |g(t). Deduced parent T{-1/2}. No decay  
+ 36S 7c  scheme is given.                                                       
+ 36S  c  Theoretical calculations of |b decay: 1987Wa10.                        
+ 36S  c  The decay scheme is deduced by the evaluator from |g-ray data in       
+ 36S 2c  1986Du07, based on the adopted level scheme and |g-ray placements.     
+ 36S  c  The decay scheme is considered incomplete by the evaluator, due to a   
+ 36S 2c  large gap of about 4 MeV between the highest possibly populated level  
+ 36S 3c  at E=7272 keV and Q-value=10413 keV and also due to very limited       
+ 36S 4c  information in 1986Du07 about this decay.                              
+ 36S  cB IB,LOGFT$|b{+-} feeding is deduced from |g+ce intensity balance at each
+ 36S 2cB level. Due to incomplete decay scheme, all feeding values should be    
+ 36S 3cB considered upper limits and associated log {Ift} values should be      
+ 36S 4cB considered lower limits. However, possible unobserved transitions might
+ 36S 5cB not have a significant impact on those very strong branches (e.g.,     
+ 36S 6cB %I|b{+-}=62 {I4} to 5831.3 level). Feeding values with uncertainties   
+ 36S 7cB are given under comments for reference only.                           
+ 36S  cG E$From 1986Du07, unless otherwise noted.                               
+ 36S  cG RI$Updated values from private communication by the previous evaluator 
+ 36S 2cG (P.M. Endt) with J.P. Dufour. Original values in 1986Du07 are given    
+ 36S 3cG under comments where available.                                        
+ 36S  cG M,MR$From Adopted Gammas.                                              
+ 36S  cL E$From a least-squares fit to |g-ray energies, assuming |DE|g=0.5 keV  
+ 36S 2cL where not given in the fitting procedure.                              
+ 36S  cL J,T$From Adopted Levels.                                               
+ 36P   P 0             (4)-            5.6 S     3              10413     13    
+ 36P  cP J,T$From Adopted Levels of {+36}P.                                     
+ 36P  cP QP$From 2021Wa16.                                                      
+ 36S   N 1.00                  1.0       1.0                                    
+ 36S  cN NR$From |S%I(|g+ce to g.s.)=100, assuming no missing transitions to    
+ 36S 2cN ground state. However, due to the incomplete scheme, there could be    
+ 36S 3cN missing transitions and therefore the I|g normalization factor (1.00   
+ 36S 4cN {I6}) is considered an upper limit by the evaluator.                   
+ 36S  PN                                                                     4  
+ 36S   G 3681.5    6  0.8    2                                                  
+ 36S 2 G %IG=0.8                                                                
+ 36S  cG RI$original value from 1987Du07.                                       
+ 36S   L 0            0+               STABLE                                   
+ 36S   L 3290.5    5  2+               83 FS     7                              
+ 36S   B             0.84    LT          9.5     GT                          1U 
+ 36S S B EAV=3313 6                                                             
+ 36S   G 3290.3    5  100    6  E2                                              
+ 36S 2 G %IG=100                                                                
+ 36S  cG RI$original value: 100.0 {I30}.                                        
+ 36S   L 4193.0    6  3-               0.62 PS   7                              
+ 36S   B             8.3                 6.1                                    
+ 36S  cB IB$8.3 {I26} from |g intensity balance.                                
+ 36S S B EAV=2865 7                                                             
+ 36S   G 902.7     4  70.4   20 E1(+M2)  +0.03   3                              
+ 36S 2 G %IG=70                                                                 
+ 36S  cG RI$original value: 71.0 {I20}.                                         
+ 36S   L 4574.6    6  2+               0.055 PS  10                             
+ 36S   G 1284.3    4  4.1    3  M1(+E2)  +0.07   4                              
+ 36S 2 G %IG=4.1                                                                
+ 36S  cG RI$original value: 4.1 {I3}.                                           
+ 36S   L 5019.5    6  (4)-                                                      
+ 36S   B             7.1                 5.9                                    
+ 36S  cB IB$7.1 {I7} from |g intensity balance.                                 
+ 36S S B EAV=2460.8 63                                                          
+ 36S   G 826.9     4  16.1   3  M1                                              
+ 36S 2 G %IG=16.1                                                               
+ 36S  cG RI$original value: 15.7 {I3}.                                          
+ 36S   G 1729.0    5  0.5    3                                                  
+ 36S 2 G %IG=0.5                                                                
+ 36S  cG RI$original value: 0.9 {I2}.                                           
+ 36S   L 5205.1    6  5(-)                                                      
+ 36S   B             2.3                 6.3                                    
+ 36S  cB IB$2.3 {I3} from |g intensity balance.                                 
+ 36S S B EAV=2370 6                                                             
+ 36S   G 185.8     4  2.5    1  D                                               
+ 36S 2 G %IG=2.5                                                                
+ 36S  cG RI$original value: 2.1 {I1}.                                           
+ 36S   G 1012.3    4  0.6    2  Q                                               
+ 36S 2 G %IG=0.6                                                                
+ 36S  cG RI$original value: 0.7 {I2}.                                           
+ 36S   L 5251.6    6  3-               0.07 PS   3                              
+ 36S   B             13.3                5.5                                    
+ 36S  cB IB$13.3 {I11} from |g intensity balance.                               
+ 36S S B EAV=2347 6                                                             
+ 36S   G 1058.8    4  5.3    3  [M1+E2]  2.8     LT                             
+ 36S 2 G %IG=5.3                                                                
+ 36S  cG RI$original value: 5.2 {I3}.                                           
+ 36S   G 1960.9    5  13.5   5  (E1(+M2))-0.09   9                              
+ 36S 2 G %IG=13.5                                                               
+ 36S  cG RI$original value: 14.7 {I5}.                                          
+ 36S   L 5831.3    6  3-                                                        
+ 36S   B             62                  4.6                                    
+ 36S  cB IB$62 {I4} from |g intensity balance.                                  
+ 36S S B EAV=2065 6                                                             
+ 36S   G 579.8     4  0.4    1                                                  
+ 36S 2 G %IG=0.4                                                                
+ 36S  cG RI$original value: 0.4 {I1}.                                           
+ 36S   G 812.0     4  5.4    3                                                  
+ 36S 2 G %IG=5.4                                                                
+ 36S  cG RI$original value: 4.9 {I3}.                                           
+ 36S   G 1256.9    4  4.5    3                                                  
+ 36S 2 G %IG=4.5                                                                
+ 36S  cG RI$original value: 4.5 {I3}.                                           
+ 36S   G 1638.3    4  35.3   10                                                 
+ 36S 2 G %IG=35.3                                                               
+ 36S  cG RI$original value: 35.5 {I10}.                                         
+ 36S   G 2540.3    5  17.4   8                                                  
+ 36S 2 G %IG=17.4                                                               
+ 36S  cG RI$original value: 20.0 {I8}.                                          
+ 36S   L 6513.2    7  4+               0.21 PS   LT                             
+ 36S   B             0.66    LT          6.3     GT                             
+ 36S S B EAV=1734 6                                                             
+ 36S   G 2320.1    5  2.0    3  [E1]                                            
+ 36S 2 G %IG=2.0                                                                
+ 36S  cG RI$original value: 1.8 {I3}.                                           
+ 36S   L 7270.8    6  (3,4,5)-                                                  
+ 36S   B             12.6                4.6                                    
+ 36S  cB IB$12.6 {I14} from |g intensity balance.                               
+ 36S S B EAV=1369 6                                                             
+ 36S   G 757.5     4  1.7    2                                                  
+ 36S 2 G %IG=1.7                                                                
+ 36S  cG RI$original value: 1.6 {I2}.                                           
+ 36S   G 1439.6    5  0.6    2                                                  
+ 36S 2 G %IG=0.6                                                                
+ 36S  cG RI$original value: 0.6 {I2}.                                           
+ 36S   G 2019.3    5  5.1    3                                                  
+ 36S 2 G %IG=5.1                                                                
+ 36S  cG RI$original value: 5.0 {I3}.                                           
+ 36S   G 2066.1    5  0.8    2                                                  
+ 36S 2 G %IG=0.8                                                                
+ 36S  cG RI$original value: 0.7 {I2}.                                           
+ 36S   G 2251.4    5  1.6    2                                                  
+ 36S 2 G %IG=1.6                                                                
+ 36S  cG RI$original value: 1.5 {I2}.                                           
+ 36S   G 3076.6    5  2.8    10                                                 
+ 36S 2 G %IG=2.8                                                                
+ 36S  cG RI$original value: 3.0 {I10}.                                          
+                                                                                
+ 36S     36CL EC DECAY (3.01E+5 Y)     2025Ni08                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
+ 36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  c  2025Ni08: absolute intensity of the weak |b{++} branch of {+36}Cl      
+ 36S 2c  measured with a |b|g-coincidence technique. A liquid {+36}Cl sample of 
+ 36S 3c  known activity embedded in scintillation cocktail was measured in a    
+ 36S 4c  4|p|a|b(LS)-|g(HPGe) system comprising a liquid scintillator (LS)      
+ 36S 5c  detector and an HPGe detector, the LS detector including a             
+ 36S 6c  photo-reflector assembly that holds the sample and ensures high        
+ 36S 7c  efficiency for |b particles. Timestamps and energies of the |b and |g  
+ 36S 8c  events filter out events originating outside the sample volume,        
+ 36S 9c  allowing clear observation of the 511-keV |g rays from positron        
+ 36S Ac  emission in a practically background-free environment. The system was  
+ 36S Bc  calibrated for |b and |g detection with radioactive sources in the same
+ 36S Cc  geometry as the {+36}Cl sample. Measured E|b, I|b, E|g, I|g, and       
+ 36S Dc  |b|g-coin. Deduced absolute |b{++} intensity 1.62|*10{+-5} {I15}.      
+ 36CL  P 0            2+               3.01E+5 Y 2              1142.13   19    
+ 36CL cP J,T$from the Adopted Levels of {+36}Cl.                                
+ 36CL cP QP$From 2021Wa16.                                                      
+ 36S   N                       0.019    1 52.6                                  
+ 36S   L 0            0+                                                        
+ 36S   E               0.014  1   1.89 10   13.58 3             1.9       1     
+ 36S S E EAV=  50.24 10$CK=    0.8975 4$CL=    0.08472 4$CM+=    0.010354 5     
+                                                                                
+ 36S     34S(T,PG)                     1972SA09,1971OL02         ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
+ 36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  dL E$Least-squares fitting is done by GLSC (version 23-Sep-2026)          
+ 36S  c  1972Sa09: E=3.1 MeV triton beam with an intensity of |?250 nA was      
+ 36S 2c  provided from the 3.5-MV Van de Graaff accelerator at Brookhaven       
+ 36S 3c  National Laboratory. Targets were 187-|mg/cm{+2} and 400-|mg/cm{+2}    
+ 36S 4c  Sb{-2}S{-3} enriched to 86% in {+34}S on 127-|mm Mo backings. Protons  
+ 36S 5c  from {+34}S(t,p|g){+36}S were detected using a 1-mm-thick annular Si   
+ 36S 6c  detector covering 165|'-175|'. |g rays were detected using a coaxial   
+ 36S 7c  25-cm{+3} Ge(Li) detector, rotatable to 0|', 45|', and 90|'. Measured  
+ 36S 8c  E{-p}, I{-p}, E|g, I|g, p|g-coin, and p|g(|q). Deduced levels, J, |p,  
+ 36S 9c  |g-ray multipolarities, and lifetimes from DSAM lineshape analysis.    
+ 36S  c  1971Ol02: E=3.12, 3.28, and 3.40 MeV triton beams with an intensity of 
+ 36S 2c  |?40 nA were produced from the 3.5-MV Van de Graaff accelerator at     
+ 36S 3c  Brookhaven National Laboratory. Targets were 200-600-|mg/cm{+2}        
+ 36S 4c  Sb{-2}S{-3} enriched to 85.61% in {+34}S on 70-|mg/cm{+2} Mo,          
+ 36S 5c  2-mg/cm{+2} Au, or 1.7-mg/cm{+2} Ni backings. Protons from             
+ 36S 6c  {+34}S(t,p|g){+36}S were detected using a 900-|mm-thick annular Si     
+ 36S 7c  detector covering 165|'-170|', and at 135|' using a Si detector with   
+ 36S 8c  FWHM=30 keV. |g rays were detected using a 5|*6-in. NaI(Tl) detector at
+ 36S 9c  0|'-90|' and a 40-cm{+3} Ge(Li) detector at 0|'-140|' with FWHM=1.9    
+ 36S Ac  keV. Internal pairs were detected using an intermediate-image pair     
+ 36S Bc  spectrometer. 511-keV annihilation |g rays were detected using a       
+ 36S Cc  3|*2-in. plastic scintillator in delayed coincidence. Measured E{-p},  
+ 36S Dc  I{-p}, E|g, I|g, p|g-coin, and |g|g-coin. Deduced levels, J, |p, and   
+ 36S Ec  |g-ray multipolarities. 1971Ol02 and 1972Sa09 were done by the same    
+ 36S Fc  leading author.                                                        
+ 36S  c  1971Ju02: E=3.1 MeV triton beam with an intensity of |?80 nA was       
+ 36S 2c  provided from the 3-MV Van de Graaff accelerator at the Nuclear        
+ 36S 3c  Research Center in Strasbourg, France. The target was a 500-|mg/cm{+2} 
+ 36S 4c  Sb{-2}S{-3} layer enriched to 85% in {+34}S on a 30-|mm Mo backing.    
+ 36S 5c  Protons from {+34}S(t,p|g){+36}S were detected using an annular        
+ 36S 6c  200-mm{+2}, 1-mm-thick Si detector. |g rays were detected using a      
+ 36S 7c  Compton polarimeter consisting of a central 3.8-cm-dia, 7.6-cm NaI(Tl) 
+ 36S 8c  detector at 90|' and two 7.6|*7.6-cm NaI(Tl) detectors parallel and    
+ 36S 9c  perpendicular to the reaction plane. Measured p-|g-Compton triple      
+ 36S Ac  coincidences and linear polarizations. Deduced levels, J, |p, and      
+ 36S Bc  |g-ray multipolarities.                                                
+ 36S  c  1979Fo17: measured |s(|q) for {+34}S(t,p){+36}S g.s. at E=15 MeV.      
+ 36S  cG E$From 1972Sa09, unless otherwise noted. E|g values without            
+ 36S 2cG uncertainties are deduced from level-energy differences.               
+ 36S  cG RI$From 1972Sa09, unless otherwise noted. 1972Sa09 already recommended 
+ 36S 2cG the combined results based on 1971Ol02 and 1972Sa09. The original      
+ 36S 3cG 1971Ol02 and 1972Sa09 results are also listed in the comments.         
+ 36S  cG M,MR$From measured p|g(|q) and/or p|g|g(|q) in 1971Ol02, unless        
+ 36S 2cG otherwise stated.                                                      
+ 36S  cL E$From a least-squares fit to |g-ray energies, unless otherwise noted. 
+ 36S  PN                                                                     7  
+ 36S   L 0            0+                                                        
+ 36S   L 3290.9    6  2+               76 FS     21                             
+ 36S  cL J$spin=2 from p|g(|q) in 1971Ol02. 3290.8|g, E2 to 0+ g.s.             
+ 36S  cL T$lifetime |t=0.11 ps {I3} (1972Sa09, DSAM). Other: |t=0.20 ps {I3}    
+ 36S 2cL (1971Ol02, DSAM).                                                      
+ 36S   G 3290.8    6  100       E2                                              
+ 36S  cG E$other: 3287.0 {I15} (1971Ol02).                                      
+ 36S  cG M$Q from p|g(|q) in 1971Ol02. M2 ruled out by RUL.                     
+ 36S  cG $A{-2}=+0.51 {I4}, A{-4}=-1.05 {I6} (1971Ol02).                        
+ 36S   L 3346      4  0+               8.8 NS    2                              
+ 36S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
+ 36S  cL E$1971Ol02 determined E(level)=3342 {I4} from proton spectra. 1972Sa09 
+ 36S 2cL adjusted E(level) to 3346 {I4} from E|g-deduced precise E(level) of    
+ 36S 3cL 3291 with the 55-keV level-energy difference from 1971Ol02.            
+ 36S  cL T$lifetime |t=12.7 ns {I3} from proton-511 delayed coincidence         
+ 36S 2cL (1971Ol02). This level deexcites by E0 transition to 0+ g.s. via the   
+ 36S 3cL emission of positron-electron pairs and the 511-keV |g rays arise from 
+ 36S 4cL the annihilation of positrons.                                         
+ 36S   G 3346         100       E0                                              
+ 36S  cG E$3338 {I16} from internal pair energy (1971Ol02).                     
+ 36S  cG M$from the measured baffle yield ratio (1971Ol02).                     
+ 36S   L 4192.4    6  3-               0.8 PS    +4-2                           
+ 36S  cL J$spin=3 from p|g(|q) in 1971Ol02. |p=- from 901.5|g, E1 to 2+, 3290.9 
+ 36S 2cL level.                                                                 
+ 36S  cL T$lifetime |t=1.1 ps {I+6-3} (1972Sa09, DSAM). Other: |t>2 ps          
+ 36S 2cL (1971Ol02, DSAM).                                                      
+ 36S   G 901.5     4  100       E1(+M2)  +0.03   3                              
+ 36S  cG E$other: 902.0 {I15} (1971Ol02).                                       
+ 36S  cG M$POL=+1.8 {I+7-4} falls on the theoretical E1/M2 (|s=1) curve         
+ 36S 2cG (1971Ju02).                                                            
+ 36S  cG $A{-2}=+0.55 {I5}, A{-4}=+0.08 {I4} (1971Ol02).                        
+ 36S   L 4523.0    7  1                0.017 PS  8                              
+ 36S  cL J$spin=1 from p|g(|q) in 1971Ol02.                                     
+ 36S  cL T$lifetime |t=0.025 ps {I12} (1972Sa09, DSAM). Other: |t<40 ns         
+ 36S 2cL (1971Ol02, coincidence resolving time limit).                          
+ 36S   G 1232.1    4  25     10                                                 
+ 36S  cG RI$from 1972Sa09. Other: |<40 (1971Ol02).                              
+ 36S   G 4522.2    15 75     10 D                                               
+ 36S  cG RI$from 1972Sa09. Other: |<60 (1971Ol02).                              
+ 36S  cG $A{-2}=+0.54 {I5}, A{-4}=-0.07 {I7} (1971Ol02).                        
+ 36S   L 4575.1    7  2+               0.055 PS  10                             
+ 36S  cL J$spin=2 from p|g(|q) in 1971Ol02. |p=+ from 1284.2|g, M1(+E2) to 2+,  
+ 36S 2cL 3290.9 level.                                                          
+ 36S  cL T$lifetime |t=0.080 ps {I15} (1972Sa09, DSAM). Other: |t<0.1 ps        
+ 36S 2cL (1971Ol02, DSAM).                                                      
+ 36S   G 1284.2    4  100       M1(+E2)  +0.07   4                              
+ 36S  cG E$other: 1284.0 {I15} (1971Ol02).                                      
+ 36S  cG M$POL=+3.5 {I+23-11} falls on the theoretical M1/E2 (|s=0) curve       
+ 36S 2cG (1971Ju02).                                                            
+ 36S  cG MR$weighted average of +0.06 {I6} (1971Ol02) and +0.08 {I4} (1972Sa09).
+ 36S  cG $A{-2}=+0.50 {I6}, A{-4}=-0.28 {I6} (1971Ol02).                        
+ 36S   L 5251.0    7  1,2,3            0.07 PS   3                              
+ 36S  cL J$spin=1,2,3 from p|g(|q) in 1971Ol02.                                 
+ 36S  cL T$lifetime |t=0.10 ps {I4} (1972Sa09, DSAM). Other: |t<0.2 ps          
+ 36S 2cL (1971Ol02, DSAM).                                                      
+ 36S   G 676          5      LT                                                ?
+ 36S  cG RI$from 1972Sa09. Other: 10 {I7} (1971Ol02).                           
+ 36S   G 1057.6    4  33     8                                                  
+ 36S  cG RI$others: 30 {I8} (1972Sa09) and 35 {I7} (1971Ol02).                  
+ 36S   G 1961.0    4  67     8                                                  
+ 36S  cG RI$others: 70 {I8} (1972Sa09) and 55 {I7} (1971Ol02).                  
+ 36S  cG M,MR$D+Q with |d|>+0.11 or |<-5 for J{-i}=1, |<-0.47 for J{-i}=2, -0.09
+ 36S 2cG {I9} or -2.4 {I5} for J{-i}=3 (1971Ol02). J{-i}=3 from the Adopted     
+ 36S 3cG Levels.                                                                
+ 36S  cG $A{-2}=+0.43 {I10}, A{-4}=-0.08 {I10} (1971Ol02).                      
+ 36S   L 5391.3    8  (1,2)            0.21 PS   GT                             
+ 36S  cL J$spin=1,2,3 from p|g(|q) in 1971Ol02. 5390.9|g to 0+ g.s.             
+ 36S  cL T$lifetime |t>0.3 ps (1972Sa09, DSAM). Other: |t<40 ns (1971Ol02,      
+ 36S 2cL coincidence resolving time limit).                                     
+ 36S   G 816.2     4  10     8                                                  
+ 36S  cG RI$others: 15 {I8} (1972Sa09) and |<10 (1971Ol02).                     
+ 36S   G 5390.9       90     8                                                  
+ 36S  cG RI$others: 85 {I8} (1972Sa09) and 100 (1971Ol02).                      
+ 36S   L 5508.9    6  2,4              0.19 PS   4                              
+ 36S  cL J$spin=2,4 from p|g(|q) in 1971Ol02.                                   
+ 36S  cL T$lifetime |t=0.27 ps {I6} (1972Sa09, DSAM). Other: |t<0.3 ps          
+ 36S 2cL (1971Ol02, DSAM).                                                      
+ 36S   G 1316.8    4  28     5                                                  
+ 36S  cG RI$weighted average of 34 {I8} (1972Sa09) and 25 {I5} (1971Ol02).      
+ 36S   G 2217.7    3  72     5  D+Q                                             
+ 36S  cG RI$weighted average of 66 {I8} (1972Sa09) and 75 {I5} (1971Ol02).      
+ 36S  cG M$+2.4 {I5} for J=2, -0.02 {I3} for J=4                                
+ 36S  cG $A{-2}=+0.49 {I6}, A{-4}=-0.31 {I10} (1971Ol02).                       
+ 36S   L 5572.1    7  1,3              0.14 PS   LT                             
+ 36S  cL J$spin=1,3 from p|g(|q) in 1971Ol02.                                   
+ 36S  cL T$lifetime |t<0.2 ps from both 1971Ol02 and 1972Sa09 with DSAM.        
+ 36S   G 2281.1    3  100                -0.07   7                              
+ 36S  cG M,MR$-0.07 {I7} or -4 {I+3-7} for J{-i}=1, +0.17 {I5} for J{-i}=3.     
+ 36S 2cG J{-i}=1 from the Adopted Levels.                                       
+ 36S  cG $A{-2}=+0.12 {I9}, A{-4}=+0.12 {I8} (1971Ol02).                        
+ 36S   L 6186.7    7  (2,3)            0.055 PS  21                             
+ 36S  cL J$spin=2,3 for a 6.20-MeV doublet from p|g(|q) in 1971Ol02.            
+ 36S  cL T$lifetime |t=0.08 ps {I3} (1972Sa09, DSAM). Other: |t<0.3 ps for the  
+ 36S 2cL doublet (1971Ol02, DSAM).                                              
+ 36S   G 1994.8    4  25     8  D+Q      +0.28   9                              
+ 36S  cG RI$from 1972Sa09. Other: 8 {I2} for a doublet sum (1971Ol02).          
+ 36S  cG M,MR$-0.20 {I8} for J{-i}=2 doublet, +0.28 {I9} or <-5.6 for J{-i}=3   
+ 36S 2cG doublet (1971Ol02). J{-i}=3 from the Adopted Levels.                   
+ 36S   G 2894.8    5  75     8           +0.6    1                              
+ 36S  cG RI$from 1972Sa09. Other: 51 {I2} for a doublet sum (1971Ol02).         
+ 36S  cG M,MR$+0.05 {I13} for J{-i}=2 doublet, +0.6 {I1} for J{-i}=3 doublet    
+ 36S 2cG (1971Ol02). J{-i}=3 from the Adopted Levels.                           
+ 36S  cG $A{-2}=+0.29 {I8}, A{-4}=+0.12 {I12} (1971Ol02).                       
+ 36S   L 6224.3    8  (2,3)            0.021 PS  LT                             
+ 36S  cL J$spin=2,3 for a 6.20-MeV doublet from p|g(|q) in 1971Ol02.            
+ 36S  cL T$lifetime |t<0.03 ps (1972Sa09, DSAM). Other: |t<0.3 ps for the       
+ 36S 2cL doublet (1971Ol02, DSAM).                                              
+ 36S   G 1649.2    5  76     10                                                 
+ 36S  cG RI$from 1972Sa09. Other: 41 {I2} for a doublet sum (1971Ol02).         
+ 36S   G 2933.0    10 24     10                                                 
+ 36S  cG RI$from 1972Sa09. Other: 51 {I2} for a doublet sum (1971Ol02).         
+ 36S   L 6512      16 4+               0.21 PS   LT                             
+ 36S  cL J$spin=4 from p|g(|q) in 1971Ol02. |p=+ from 3221|g, E2 to 2+, 3290.9  
+ 36S 2cL level.                                                                 
+ 36S  cL T$lifetime |t<0.3 ps (1971Ol02, DSAM).                                 
+ 36S   G 3221      16 100       E2                                              
+ 36S  cG RI$from 1971Ol02.                                                      
+ 36S  cG M$Q from p|g(|q) in 1971Ol02. M2 ruled out by RUL.                     
+ 36S   L 7120      20 1,2              0.21 PS   LT                             
+ 36S  dL E$ LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT                 
+ 36S  cL E$from 1971Ol02 without reporting E|g with uncertainties.              
+ 36S  cL J$spin=1,2 from p|g(|q) in 1971Ol02.                                   
+ 36S  cL T$lifetime |t<0.3 ps (1971Ol02, DSAM).                                 
+ 36S   G 2545         20     5                                                  
+ 36S  cG RI$from 1971Ol02.                                                      
+ 36S   G 3829         8      5                                                  
+ 36S  cG RI$from 1971Ol02.                                                      
+ 36S   G 7119         72     5                                                  
+ 36S  cG RI$from 1971Ol02.                                                      
+                                                                                
+ 36S     36S(P,P'),(A,A')              1990HO19                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
+ 36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  c  1990Ho19: E=28.0 MeV proton and E=31.6 MeV |a beams were produced from 
+ 36S 2c  the AVF cyclotron of the Vrije Universiteit. Targets were enriched     
+ 36S 3c  sulphur. Reaction products were momentum analyzed with an Enge         
+ 36S 4c  split-pole magnetic spectrograph (FWHM=14 keV for proton and 24 keV for
+ 36S 5c  |a). Measured particle spectra, |s(|q). Deduced levels, J, |p,         
+ 36S 6c  L-transfers, deformation lengths, and transition strengths from        
+ 36S 7c  analysis of measured |s(|q) using DWBA calculations and coupled-channel
+ 36S 8c  calculations. Comparisons with shell-model and extended-RPA            
+ 36S 9c  calculations. See also 1989Ho14 from the same group.                   
+ 36S  c  Mass deformation lengths are deduced from |s(|q) data in 1990Ho19 using
+ 36S 2c  phenomenological and folding analyses.                                 
+ 36S  d  Check beta3(p,p') value for 4193, 3- level from which 2002Ki06 deduce  
+ 36S 2d  BE3(up)=0.008 3 and BE3W=15 5                                          
+ 36S  cL E$From 1990Ho19.                                                       
+ 36S  cL J$From comparison of |s(|q) data in {+36}S(p,p') and {+36}S(|a,|a') to 
+ 36S 2cL DWBA and coupled-channel calculations, and other theoretical           
+ 36S 3cL calculations (1990Ho19). For example, see Fig. 7 of 1990Ho19.          
+ 36S  cL $|d{-L}=mass deformation length, where L is the corresponding          
+ 36S 2cL L-transfer.                                                            
+ 36S   L 0            0+                                                        
+ 36S   L 3291      3  2+                                                        
+ 36S  cL $|d{-2}({+36}S(p,p'))=0.619 fm, 0.649 fm.                              
+ 36S  cL $|d{-2}({+36}S(|a,|a'))=0.684 fm, 0.669 fm.                            
+ 36S   L 3344      3  0+                                                        
+ 36S   L 4193      3  3-                                                        
+ 36S  cL $|d{-3}({+36}S(p,p'))=1.376 fm, 1.424 fm.                              
+ 36S  cL $|d{-3}({+36}S(|a,|a'))=1.386 fm, 1.393 fm.                            
+ 36S   L 4522      3  1+                                                        
+ 36S   L 4573      3  2+                                                        
+ 36S   L 5020      3  4-                                                        
+ 36S  cL $|s(|q) cannot be reproduced by DWBA calculations, suggesting two-step 
+ 36S 2cL effects or contributions from different multipoles; tentative 4- from  
+ 36S 3cL rotation-vibration model calculations (1990Ho19).                      
+ 36S   L 5204      3  5-                                                        
+ 36S  cL $|d{-5}({+36}S(p,p'))=1.015 fm, 0.946 fm.                              
+ 36S  cL $|d{-5}({+36}S(|a,|a'))=0.780 fm, 0.789 fm.                            
+ 36S   L 5250      3  3-                                                        
+ 36S  cL $|d{-3}({+36}S(p,p'))=0.658 fm.                                        
+ 36S  cL $|d{-3}({+36}S(|a,|a'))=0.913 fm.                                      
+ 36S   L 5338      3                                                            
+ 36S   L 5379      3  2+                                                        
+ 36S  cL $|d{-2}({+36}S(p,p'))=0.193 fm.                                        
+ 36S  cL $|d{-2}({+36}S(|a,|a'))=0.172 fm.                                      
+ 36S   L 5462      3                                                            
+ 36S   L 5514      3                                                            
+ 36S   L 5575      3  1-                                                        
+ 36S  cL $|d{-1}({+36}S(p,p'))=0.042 fm.                                        
+ 36S  cL $|d{-1}({+36}S(|a,|a'))=0.032 fm.                                      
+ 36S   L 5837      3  3-                                                        
+ 36S  cL $|d{-3}({+36}S(p,p'))=0.553 fm.                                        
+ 36S  cL $|d{-3}({+36}S(|a,|a'))=0.501 fm.                                      
+ 36S   L 6180      3  3-                                                        
+ 36S  cL $|d{-3}({+36}S(p,p'))=0.283 fm.                                        
+ 36S  cL $|d{-3}({+36}S(|a,|a'))=0.216 fm.                                      
+ 36S   L 6220      3                                                            
+ 36S  cL $|d{-2}({+36}S(p,p'))=0.096 fm, if J|p(6220)=2+.                       
+ 36S   L 6350      3                                                            
+ 36S   L 6472      3  1-                                                        
+ 36S  cL $|d{-1}({+36}S(p,p'))=0.029 fm.                                        
+ 36S  cL $|d{-1}({+36}S(|a,|a'))=0.023 fm.                                      
+ 36S   L 6510      3  4+                                                        
+ 36S  cL $|d{-4}({+36}S(p,p'))=0.592 fm, 0.594 fm.                              
+ 36S  cL $|d{-4}({+36}S(|a,|a'))=0.711 fm, 0.710 fm.                            
+ 36S   L 6553      3                                                            
+                                                                                
+ 36S     36S(POL D,D')                 1989EC01                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
+ 36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  c  1989Ec01: E=23 MeV vector-polarized deuteron beam was provided from the
+ 36S 2c  Munich Lamb-shift polarized ion source and Munich tandem accelerator.  
+ 36S 3c  The target was a cylindrical gas cell (50 mm diameter) filled with     
+ 36S 4c  H{-2}S enriched to 82.2% in {+36}S at a pressure of |?30 mb, with 100- 
+ 36S 5c  and 300-|mg/cm{+2} Ti entrance and exit windows. Scattered deuterons   
+ 36S 6c  were momentum analyzed with the Munich Q3D magnetic spectrograph and   
+ 36S 7c  detected in a 1.2-m-long position-sensitive focal-plane detector       
+ 36S 8c  consisting of two single-wire proportional counters backed by a plastic
+ 36S 9c  scintillator. Measured |s(E{-d},|q) and vector analyzing powers        
+ 36S Ac  A{-y}(|q) at |q=15|'-110|'. Deduced hadronic transition moments from   
+ 36S Bc  ECIS79-coupled-channels analysis. Also measured {+36}S(pol d,p){+37}S  
+ 36S Cc  at E=20 MeV.                                                           
+ 36S  cL J$From the Adopted Levels. J|p values were considered known and        
+ 36S 2cL verified by CCBA analysis of the measured |s(|q) and analyzing powers  
+ 36S 3cL in 1989Ec01.                                                           
+ 36S   L 0            0+                                                        
+ 36S   L 3290         2+                                                        
+ 36S  cL $Isoscalar (mass) transition moments per nucleon = 0.55 fm{+2} {I2}.   
+ 36S   L 4190         3-                                                        
+ 36S  cL $Isoscalar (mass) transition moments per nucleon = 5.5 fm{+3} {I2}.    
+                                                                                
+ 36S     36S(37CL,37CL)                1996VO02                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
+ 36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  c  1996Vo02, 1993Bi01: elastic and inelastic scattering of {+37}Cl on     
+ 36S 2c  {+36}S. E=101.4 MeV {+37}Cl beam was provided from the MP accelerator  
+ 36S 3c  of CRN-Strasbourg and bombarded a {+36}S target of 2-3 |mg/cm{+2} on a 
+ 36S 4c  26-|mg/cm{+2} carbon foil. {+37}Cl ejectiles and {+36}S recoils were   
+ 36S 5c  detected in coincidence using two position-sensitive surface-barrier   
+ 36S 6c  detectors (48|*8 mm{+2}). Measured |s(E({+36}S),|q) and                
+ 36S 7c  |s(E({+37}Cl),|q) with FWHM|?400 keV. Deduced levels, J, and |p from   
+ 36S 8c  FRESCO Coupled-Reaction-Channel (CRC) analysis. Also measured {+37}S   
+ 36S 9c  products from the {+36}S({+37}Cl,{+36}S){+37}S one-proton transfer.    
+ 36S  cL J$From the Adopted Levels. J|p values were considered known and        
+ 36S 2cL verified by CRC analysis of the measured |s(|q) in 1996Vo02.           
+ 36S   L 0            0+                                                        
+ 36S   L 3290         2+                                                        
+ 36S   L 4190         3-                                                        
+                                                                                
+ 36S     37CL(G,P)                     1997IS02                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S  c  1997Is02: E{-max}=32 MeV bremsstrahlung photon beam was produced from  
+ 36S 2c  Moscow State University betatron. The target was 380-g LiCl with       
+ 36S 3c  natural isotopic composition. |g rays were detected using a 100-cm{+3} 
+ 36S 4c  Ge(Li) detector. Measured E|g, I|g. Deduced levels, integrated cross   
+ 36S 5c  sections (|s{-int}), and Giant Dipole Resonance (GDR) features.        
+ 36S  cL E$From 1997Is02.                                                       
+ 36S   L 0.0                                                                    
+ 36S  cL $|s{-int}<12.3 MeV|*mb.                                                
+ 36S   L 3290                                                                   
+ 36S  cL $|s{-int}=51-86.4 MeV|*mb; semidirect component <13.1 MeV|*mb.         
+ 36S   L 4520                                                                   
+ 36S  cL $|s{-int}=16.8 MeV|*mb.                                                
+ 36S   L 4570                                                                   
+ 36S  cL $|s{-int}<2.0 MeV|*mb.                                                 
+ 36S   L 6510                                                                   
+ 36S  cL $|s{-int}=28.2 MeV|*mb.                                                
+ 36S   L 7120                                                                   
+ 36S  cL $|s{-int}<2.0 MeV|*mb.                                                 
+                                                                                
+ 36S     37CL(N,D)                     1977PA29                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
+ 36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  c  J|p=3/2+ for {+37}Cl ground state (2012Ca15).                          
+ 36S  c  1977Pa29: 14.1-MeV neutrons were produced via the {+3}H(d,n){+4}He     
+ 36S 2c  reaction at an average rate of 10{+9} neutrons per second into 4|p sr  
+ 36S 3c  from the Brown University neutron generator and impinged on a          
+ 36S 4c  7.25-mg/cm{+2}, 90.36%-enriched {+37}Cl target. Deuterons were detected
+ 36S 5c  using a time-of-flight counter telescope consisting of two proportional
+ 36S 6c  counters and a NaI(Tl) crystal. Measured |s(E{-d},|q). Deduced levels, 
+ 36S 7c  L-transfers, spectroscopic factors from finite-range DWUCK-DWBA        
+ 36S 8c  analysis of the measured |s(|q). Also measured {+35}Cl(n,d){+34}S and  
+ 36S 9c  {+36}Ar(n,d){+35}Cl reactions.                                         
+ 36S   L 0            0+                               2                        
+ 36S  cL L$from DWBA analysis of the measured |s(|q) in 1977Pa29.               
+ 36S  cL S$1.55 {I35} or 1.73 {I39} from DWBA using two sets of optical         
+ 36S 2cL parameters (1977Pa29).                                                 
+                                                                                
+ 36S     37CL(D,3HE)                   1970GR02                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
+ 36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  c  J|p=3/2+ for {+37}Cl ground state (2012Ca15).                          
+ 36S  c  1970Gr02: E=28.9 MeV deuteron beam was provided from the University of 
+ 36S 2c  Michigan 83-inch cyclotron. Targets were 90-|mg/cm{+2} NaCl enriched to
+ 36S 3c  99.3% in {+37}Cl, vacuum-evaporated onto thin carbon backings.         
+ 36S 4c  Recoiling {+3}He ions were detected using a 100-|mm |DE and 500-|mm E  
+ 36S 5c  surface-barrier detector telescope (FWHM=110 keV). For {+3}He ions     
+ 36S 6c  reaction angles |q>12|', they were detected by Ilford K0 nuclear       
+ 36S 7c  emulsion plates at the image surface of a three-stage magnetic         
+ 36S 8c  spectrograph (FWHM=25 keV). At extreme forward angles |q>2.5|', {+3}He 
+ 36S 9c  ions were detected using a 14|*50 mm position-sensitive detector.      
+ 36S Ac  Measured |s(E({+3}He),|q). Deduced levels, L-transfers, J, |p, and     
+ 36S Bc  C{+2}S from non-local, finite-range DWUCK-DWBA analysis. Also see      
+ 36S Cc  1968Gr04, a short letter by the same group.                            
+ 36S  c  1969Pu03: E=23.35 MeV deuteron beam was provided from the Argonne      
+ 36S 2c  cyclotron. The target was enriched {+35}Cl lead chloride on thin C     
+ 36S 3c  backing. Reaction products were detected using a |DE-E counter covering
+ 36S 4c  the angular domain from 12|' to 30|'. Measured |s(E({+3}He),|q).       
+ 36S 5c  Deduced levels, L-transfers, J, |p, and C{+2}S from the zero-range     
+ 36S 6c  JULIE-DWBA analysis of the angular distributions.                      
+ 36S  c  1962Cu07: E=15 MeV deuteron beam was provided from the University of   
+ 36S 2c  Pittsburgh cyclotron. The target was 2.71-|mg/cm{+2} C{-2}H{-4}Cl{-2}  
+ 36S 3c  (dichloroethane) with evaporated Au. Recoiling {+3}He ions were        
+ 36S 4c  analyzed by a magnetic spectrometer and detected using a CsI           
+ 36S 5c  scintillation crystal at the focal plane. Measured Q value and         
+ 36S 6c  |s(E({+3}He),|q) of the {+36}S g.s.                                    
+ 36S  c  1974Cl09: theoretical discussion on spin-dependent sum rules for       
+ 36S 2c  spectroscopic factors from {+37}Cl(d,{+3}He){+36}S and                 
+ 36S 3c  {+35}Cl(d,{+3}He){+34}S reactions.                                     
+ 36S  cL E,L,S$From 1970Gr02. Spectroscopic factor:                             
+ 36S 2cL (2j+1)C{+2}S=|s(|q){-exp}/|s(|q){-DWBA}/N, where N=29.5 is a           
+ 36S 3cL normalization factor chosen for DWUCK and includes approximation of    
+ 36S 4cL Bassel for the overlap between the d+p and {+3}He systems (1970Gr02).  
+ 36S  cL S$LABEL=C{+2}S                                                         
+ 36S   L 0                                             2        1.06            
+ 36S  cL S$for d{-3/2}. Other: 1.31 (1969Pu03).                                 
+ 36S   L 3295      10                                  0        0.86            
+ 36S  cL E$other: 3310 {I15} (1969Pu03).                                        
+ 36S  cL S$for s{-1/2}. Other: 1.21 (1969Pu03).                                 
+ 36S   L 3360                                                   0.10      LT   ?
+ 36S   L 4523      10                                  0        0.75            
+ 36S  cL E$other: 4580 {I20} (1969Pu03, unresolved 4523+4577 doublet).          
+ 36S  cL S$for s{-1/2}. Other: 1.24 (1969Pu03, unresolved 4523+4577 doublet).   
+ 36S   L 4577      10                                  0        0.25            
+ 36S  cL E$other: 4580 {I20} (1969Pu03, unresolved 4523+4577 doublet).          
+ 36S  cL S$for s{-1/2}.                                                         
+ 36S   L 6511      15                                  2        0.19            
+ 36S  cL E$other: 6600 {I40} (1969Pu03).                                        
+ 36S  cL S$for d{-5/2}. Other: 0.90 for d{-5/2} or 1.4 for d{-3/2} (1969Pu03).  
+ 36S   L 7120      20                                  2        0.44            
+ 36S  cL S$for d{-5/2}.                                                         
+ 36S   L 7710      25                                                           
+                                                                                
+ 36S     40AR(G,A)                     1965RE08                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
+ 36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  c  1965Re08: monochromatic 9.17 and 17.71-MeV |g-ray beams were generated 
+ 36S 2c  by bombarding {+13}C and {+7}Li targets with 1.75-MeV and 441-keV      
+ 36S 3c  proton beams from the University of British Columbia 3-MeV Van de      
+ 36S 4c  Graaff accelerator. The irradiation target was high-purity argon gas   
+ 36S 5c  within an ionization chamber. Measured energy spectra of the charged   
+ 36S 6c  photoparticles. Deduced |s and Q values.                               
+ 36S   L 0                                                                      
+ 36S  cL $|s=0.08 {I5} at E(photon)=17.71 MeV.                                  
+ 36S   L 3500                                                                   
+ 36S  cL $|s=0.35 {I6} at E(photon)=17.71 MeV.                                  
+ 36S   L 4700                                                                   
+ 36S  cL $|s=0.40 {I8} at E(photon)=17.71 MeV.                                  
+                                                                                
+ 36S     40AR(3HE,7BE)                 1971ZA06                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
+ 36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  c  1971Za06: E=41 MeV {+3}He beam was provided by the University of       
+ 36S 2c  Colorado 1.3-m cyclotron and impinged on argon gas targets ({+40}Ar)   
+ 36S 3c  contained in gas cells. {+7}Be ejectile ions were detected using       
+ 36S 4c  standard |DE-E counter telescopes. Measured |s(E({+7}Be),|q). Deduced  
+ 36S 5c  the relative |a spectroscopic factor from DWBA analysis.               
+ 36S  cL J$From the Adopted Levels.                                             
+ 36S   L 0            0+                                                        
+ 36S   L 3290         2+                                                        
+                                                                                
+ 36S     115IN(34S,XG)                 2006KR07                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
+ 36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  dL E$Least-squares fitting is done by GLSC (version 23-Sep-2026)          
+ 36S  c  2006Kr07: E=140 MeV {+34}S beam was produced from the 15-UD Pelletron  
+ 36S 2c  accelerator at the Nuclear Science Centre, New Delhi, India. The target
+ 36S 3c  was 1.29-mg/cm{+2} enriched {+115}In. The deexciting |g rays were      
+ 36S 4c  detected using the Indian National Gamma Array (INGA), consisting of   
+ 36S 5c  eight Compton-suppressed HPGe Clover detectors. Measured E|g, I|g,     
+ 36S 6c  |g|g-coin, |g|g(|q)(DCO), and |g|g(|q)(POL). Deduced levels, J, |p, and
+ 36S 7c  |g-ray multipolarities. Compared with OXBASH shell-model calculations  
+ 36S 8c  with the cross-shell sdpfmw Hamiltonian.                               
+ 36S  cG E,RI$From 2006Kr07. |DE|g=1 keV is assumed by evaluators based on      
+ 36S 2cG typical uncertainties for the INGA array.                              
+ 36S  cG M$From measured |g|g(|q)(DCO) and |g|g(|q)(POL). Expected R{-DCO}      
+ 36S 2cG values in a stretched quadrupole gate are R{-DCO}(Q)|?1.05 for         
+ 36S 3cG stretched quadrupole (|DJ=2) or unstretched dipole (|DJ=0) transitions;
+ 36S 4cG R{-DCO}(Q)|?0.55 for stretched dipole (|DJ=1) transitions. Expected    
+ 36S 5cG R{-DCO} values in a stretched dipole gate are R{-DCO}(D)|?1.1 for      
+ 36S 6cG stretched dipole (|DJ=1) transitions; R{-DCO}(D)|?1.8 for stretched    
+ 36S 7cG quadrupole (|DJ=2) or unstretched dipole (|DJ=0) transitions. A        
+ 36S 8cG positive POL indicates an electric type transition, and a negative POL 
+ 36S 9cG indicates a magnetic type transition.                                  
+ 36S  cL E$From a least-squares fit to the measured |g-ray energies in 2006Kr07,
+ 36S 2cL unless otherwise noted.                                                
+ 36S  cL J$As given in 2006Kr07, unless otherwise noted. When considered in the 
+ 36S 2cL Adopted Levels, the firm assignments here are placed within parentheses
+ 36S 3cL if there are no other strong arguments to support these firm           
+ 36S 4cL assignments.                                                           
+ 36S  PN                                                                     5  
+ 36S   L 0            0+                                                        
+ 36S   L 3291.0    10 2+                                                        
+ 36S   G 3290.8       100    GT E2                                              
+ 36S  cG $R{-DCO}(D)=1.93 {I18}, POL=+0.11 {I13}.                               
+ 36S   L 4193.4    14 3-                                                        
+ 36S   G 902.4        100       E1                                              
+ 36S  cG $R{-DCO}(D)=1.04 {I12}, POL=+0.06 {I8}.                                
+ 36S   L 5020.7    16 4-                                                        
+ 36S   G 827.3        61     6  M1                                              
+ 36S  cG $R{-DCO}(D)=1.08 {I10}, POL=-0.16 {I17}.                               
+ 36S   L 5206.2    16 5-                                                        
+ 36S   G 185.5        54     6  D                                               
+ 36S  cG $R{-DCO}(D)=1.29 {I12}. M1 is assigned in 2006Kr07.                    
+ 36S   G 1012.8       14.4   27 Q                                               
+ 36S  cG $R{-DCO}(Q)=0.94 {I9}. E2 is assigned in 2006Kr07.                     
+ 36S   L 5781.1    19                                                           
+ 36S   G 760.4        14.0   25                                                ?
+ 36S  cG $D is assigned in 2006Kr07.                                            
+                                                                                
+ 36S     160GD(34S,XG),(36S,XG)        1994FO04                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
+ 36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  c  1994Fo04: {+160}Gd({+34}S,X|g), {+160}Gd({+36}S,X|g), and              
+ 36S 2c  {+160}Gd({+37}Cl,X|g) with E=159 MeV {+34}S, 159 MeV {+36}S, and 167   
+ 36S 3c  MeV {+37}Cl beams produced from the Argonne Tandem Linac Accelerator   
+ 36S 4c  System (ATLAS). Targets were 1 mg/cm{+2} 98.1% enriched {+160}Gd backed
+ 36S 5c  by 15 mg/cm{+2} gold. |g rays were detected using the Argonne-Notre    
+ 36S 6c  Dame BGO |g-ray facility consisting of 12 Compton-suppressed Ge        
+ 36S 7c  detectors and a 50-element bismuth germanate (BGO) array. Measured E|g,
+ 36S 8c  I|g, and |g|g-coin. Deduced levels. |g|g-coin gates were placed on     
+ 36S 9c  known |g rays in specific A|?160 products to select individual reaction
+ 36S Ac  channels and identify coincident |g rays in light product partners.    
+ 36S Bc  |g|g-correlation matrices produced with the fold condition 4 |< k |< 9 
+ 36S Cc  were found to include most of the events associated with deep-inelastic
+ 36S Dc  processes.                                                             
+ 36S  cG E$From 1994Fo04, observed in all three {+34}S, {+36}S, and             
+ 36S 2cG {+37}Cl-induced reactions.                                             
+ 36S  cL E$From E|g data in 1994Fo04.                                           
+ 36S  cL J$From the Adopted Levels.                                             
+ 36S   L 0            0+                                                        
+ 36S   L 3291         2+                                                        
+ 36S   G 3291                                                                   
+ 36S   L 4193         3-                                                        
+ 36S   G 902                                                                    
+ 36S   L 5020         (4)-                                                      
+ 36S   G 827                                                                    
+ 36S   L 5205         5(-)                                                      
+ 36S   G 185                                                                    
+                                                                                
+ 36S     160GD(37CL,XG)                2002LI46                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
+ 36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  dL E$Least-squares fitting is done by GLSC (version 23-Sep-2026)          
+ 36S  c  2002Li46: E=234 MeV {+37}Cl beam was provided from the VIVITRON        
+ 36S 2c  accelerator at IReS, Strasbourg. The target was 12-|mg/cm{+2} of       
+ 36S 3c  98.2%-enriched {+160}Gd backed by 40-|mg/cm{+2} of 99.47%-enriched     
+ 36S 4c  {+208}Pb to stop recoiling fragments. Prompt |g rays from              
+ 36S 5c  deep-inelastic products were detected by the EUROBALL IV array of      
+ 36S 6c  Compton-suppressed Ge detectors and an inner BGO ball. Measured E|g,   
+ 36S 7c  I|g, and high-fold |g|g coincidences. Deduced levels and the yrast     
+ 36S 8c  sequence. Compared with shell-model calculations in the sd and sdfp    
+ 36S 9c  spaces.                                                                
+ 36S  cG E,RI$From 2002Li46.                                                    
+ 36S  cL E$From a least-squares fit to |g-ray energies in 2002Li46, assuming    
+ 36S 2cL |DE|g=1 keV.                                                           
+ 36S  cL J$From the Adopted Levels, except for the (6+) assignment for the      
+ 36S 2cL 6690.2 level (2002Li46).                                               
+ 36S  PN                                                                     5  
+ 36S   L 0            0+                                                        
+ 36S   L 3291.2    10 2+                                                        
+ 36S   G 3291                                                                   
+ 36S   L 4193.2    14 3-                                                        
+ 36S   G 902                                                                    
+ 36S   L 5020.2    16 (4)-                                                      
+ 36S   G 827          101.7  33                                                 
+ 36S   L 5205.2    16 5(-)                                                      
+ 36S   G 185          95.5   22                                                 
+ 36S   G 1012         25.6   17                                                 
+ 36S   L 6690.2    19 (6+)                                                      
+ 36S  cL J$assigned in 2002Li46 based on yrast sequence population from         
+ 36S 2cL deep-inelastic reactions and sdfp shell-model calculations.            
+ 36S   G 1485         23.1   19                                                 
+                                                                                
+ 36S     208PB(36S,36SG)               2022GR07                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S  dL E$Least-squares fitting is done by GLSC (version 23-Sep-2026)          
+ 36S  c  2022Gr07: A 215-MeV {+36}S beam was produced from the XTU-Tandem       
+ 36S 2c  ALPI-superconducting linear accelerator complex at the INFN Legnaro    
+ 36S 3c  National Laboratory, Italy. The target was 1-mg/cm{+2} 99.7% enriched  
+ 36S 4c  {+208}Pb with 1 mg/cm{+2} Nb backing and mounted onto the Cologne      
+ 36S 5c  differential plunger. Projectile-like fragments produced in binary     
+ 36S 6c  grazing reactions were separated and identified by the PRISMA          
+ 36S 7c  spectrometer. |g rays were detected using the AGATA demonstrator array 
+ 36S 8c  of five triple cluster modules of 36-fold segmented Ge crystals        
+ 36S 9c  covering backward angles from 135|' to 175|'. Measured E|g with Doppler
+ 36S Ac  corrections, ({+36}S)|g-coin, and level lifetimes using the            
+ 36S Bc  differential recoil-distance method (DRDM). Compared with shell-model  
+ 36S Cc  calculations. Measured E|g, I|g, fragment-|g-coin, recoil distance.    
+ 36S Dc  Deduced levels, lifetimes. Compared with shell-model calculations with 
+ 36S Ec  PSDPF, SDPF-U, and FSU effective interactions. Preliminary results are 
+ 36S Fc  given in 2005Ol04.                                                     
+ 36S  c  2010WaZT: A 215-MeV {+36}S{+9} beam was produced from the XTU-Tandem   
+ 36S 2c  ALPI-superconducting linear accelerator complex at the INFN Legnaro    
+ 36S 3c  National Laboratory, Italy. The target was 300-|mg/cm{+2}, 99.7%       
+ 36S 4c  enriched {+208}Pb with 20-|mg/cm{+2} carbon backing. Projectile-like   
+ 36S 5c  fragments produced in binary grazing reactions were separated and      
+ 36S 6c  identified by the PRISMA spectrometer. |g rays were detected using the 
+ 36S 7c  CLARA array of 22 escape-suppressed Ge clover detectors covering the   
+ 36S 8c  azimuthal angles from 98|' to 180|'. Measured E|g with Doppler         
+ 36S 9c  corrections, I|g, and ({+36}S)|g-coin. Deduced levels. Compared with   
+ 36S Ac  shell-model calculations. Also see 2010Wa12 paper, partial results of  
+ 36S Bc  2010WaZT Thesis.                                                       
+ 36S  cG E,RI$From 2010WaZT, unless otherwise stated.                           
+ 36S  cL E$From a least-squares fit to |g-ray energies.                         
+ 36S  cL J$As given in 2010WaZT.                                                
+ 36S  cL T$From the differential recoil-distance method (2022Gr07).             
+ 36S  PN                                                                     5  
+ 36S   G 2149      1  0.5    2                                                  
+ 36S   G 3041      2  2.3    5                                                  
+ 36S   L 0.0          0+                                                        
+ 36S   L 3291      2  2+               0.69 PS   LT                             
+ 36S  cL T$lifetime |t<1 ps: too short to be measured with the present setup,   
+ 36S 2cL which covers the range 1 ps to 100 ps (2022Gr07, DRDM).                
+ 36S   G 3291      2  100.0  12                                                 
+ 36S   L 4193.3    21 3-               0.58 PS   17                             
+ 36S  cL T$lifetime |t=0.84 ps {I24} (2022Gr07, DRDM).                          
+ 36S   G 902       1  52.7   9                                                  
+ 36S   L 4575.2    22 2+                                                        
+ 36S   G 1284      1  2.7    3                                                  
+ 36S   L 5020.5    23 4-                                                        
+ 36S   G 827       1  14.7   4                                                  
+ 36S   L 5205.7    22 5-                                                        
+ 36S   G 185       1  9.1    5                                                  
+ 36S   G 1012      1  1.4    3                                                  
+ 36S   L 5251.3    22 3-                                                        
+ 36S   G 1058      1  1.0    3                                                  
+ 36S   G 1960      1  6.6    4                                                  
+ 36S   L 5509.0    22 (4+)                                                      
+ 36S   G 1316      1  1.7    3                                                  
+ 36S   G 2218      1  2.8    3                                                  
+ 36S   L 5576.2    23 1-                                                        
+ 36S   G 2285      1  3.7    4                                                  
+ 36S   L 5831.3    22 3-                                                        
+ 36S   G 1256      1  2.3    3                                                  
+ 36S   G 1638      1  0.4    1                                                  
+ 36S   L 6690.4    23 (6+)             3.7 PS    18                             
+ 36S  cL T$lifetime |t=5.4 ps {I26} (2022Gr07, DRDM).                           
+ 36S   G 1182      1  1.9    3                                                  
+ 36S   G 1484      1  1.1    3                                                  
+                                                                                
+ 36S     COULOMB EXCITATION            2008SP01                  ENSDF    202609
+ 36S   H TYP=FUL$AUT=JUN CHEN AND LIJIE SUN$CIT=ENSDF$CUT=30-Sep-2026$          
+ 36S   H TYP=FUL$AUT=NINEL NICA, JOHN CAMERON AND BALRAJ SINGH$                 
+ 36S 2 H CIT=NDS 113, 1 (2012)$CUT=31-Dec-2011$                                 
+ 36S  dL E$Least-squares fitting is done by GLSC (version 23-Sep-2026)          
+ 36S  c  2008Sp01: {+12}C({+36}S,{+36}S'|g) with E=70 MeV {+36}S beam provided  
+ 36S 2c  from the Cologne accelerator facility on a multi-layer target of 0.19  
+ 36S 3c  mg/cm{+2} natural C, 3.03 mg/cm{+2} Gd, 1.0 mg/cm{+2} Ta, and 2.0      
+ 36S 4c  mg/cm{+2} Cu. The Gd layer was cooled to liquid-nitrogen temperature   
+ 36S 5c  and magnetized to saturation by a 0.06-T external field.               
+ 36S 6c  Forward-scattered {+12}C ions from Coulomb excitation and |a particles 
+ 36S 7c  from {+8}Be via |a-transfer reaction {+12}C({+36}S,{+8}Be){+40}Ar were 
+ 36S 8c  detected by a 300-mm{+2} Si counter at 0|'. |g rays were measured by   
+ 36S 9c  four 12.7|*12.7-cm NaI(Tl) scintillators at 65|' and 115|' and by a 40%
+ 36S Ac  Ge detector at 0|'. Measured E|g, I|g, particle-|g coin, counting-rate 
+ 36S Bc  double ratio, and particle-|g angular-correlation slope. Deduced       
+ 36S Cc  precession angles, g factors using the transient field technique, and  
+ 36S Dc  lifetimes from DSAM lineshape analysis. Calculated B(E2)|^ from their  
+ 36S Ec  measured lifetimes. Compared with OXBASH shell-model calculations using
+ 36S Fc  the WBT interaction in the sdfp space.                                 
+ 36S  cG E$From Fig. 1 of 2008Sp01.                                             
+ 36S  cL E$From a least-squares fit to |g-ray energies in 2008Sp01.             
+ 36S  cL J$From the Adopted Levels.                                             
+ 36S   L 0            0+                                                        
+ 36S   L 3291         2+               83 FS     7                              
+ 36S 2 L G=+1.3 5 (2008Sp01)                                                    
+ 36S  cL T$lifetime |t=0.12 ps {I1} (2008Sp01, DSAM).                           
+ 36S  cL $Dominated by the proton (s{-1/2}){+1}(d{-3/2}){+1} configuration,     
+ 36S 2cL confirming the rigidity of the N=20 shell closure.                     
+ 36S   G 3290                                                                   
+ 36S   L 3346         0+                                                        
+ 36S   L 4193         3-               0.62 PS   7                              
+ 36S 2 L G=+0.8 5 (2008Sp01)                                                    
+ 36S  cL T$lifetime |t=0.9 ps {I1} (2008Sp01, DSAM).                            
+ 36S   G 902                                                                    
+ 36S   L 4523         1+                                                        
+ 36S   G 1232                                                                   
+ 36S   G 4523                                                                   
+ 36S   L 4575         2+                                                        
+ 36S   G 1284                                                                   
+                                                                                
