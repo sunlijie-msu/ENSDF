@@ -14,6 +14,9 @@
 			"~/.copilot/skills": false,
 			"~/.agents/skills": false,
 			"~/.claude/skills": false
-		}
+		},
+		"chat.permissions.default": "autopilot",
+		"chat.autopilot.advanced.enabled": true,
+		"chat.newSession.defaultMode": "ENSDF-Agent"
 	}
 }
