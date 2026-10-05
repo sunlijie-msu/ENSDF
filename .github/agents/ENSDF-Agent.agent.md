@@ -259,12 +259,10 @@ Note: Multiple identical gamma energies appearing in multiple level blocks shoul
 
 **Level Blocks or Level Units**
 
-1. Each L-record starts a new level block (physical nuclear state).
-2. All G-records immediately following an L-record belong to that level block.
-3. Any G-records that appear before the next L-record attach to the previous level block, never to the following level block.
-4. A level with no gamma rays consists of a single L-record with no following G-records.
-5. Preserve strict L→G grouping; ENSDF parsers depend on it.
-6. For decay datasets, L→B→G (Level-Beta-Gamma) grouping or L→E→G (Level-ElectronConversion-Gamma) record grouping Relationship should be understood and preserved.
+1. Each L-record starts a level unit representing a nuclear state. The unit includes (G, B, E, etc) records associated with that level up to, but not including, the next L-record.
+2. G-records following an L-record constitute the level block and represent gamma transitions that deexcite the level represented by the L-record above; G-records do not belong to the next or following level block.
+3. A level with no listed gamma transitions has no associated G-records.
+4. In beta-decay datasets, a level may have associated B-record (beta minus) or E-record (electron capture / beta plus) following the L-record to indicate the decay populated level. Understand L→B→G (Level-Beta-Gamma) or L→E→G (Level-ElectronConversion-Gamma) record grouping relationships.
 
 
 #### Comment Record (c-Record) or Comments on Data Records
@@ -273,6 +271,7 @@ Note: Multiple identical gamma energies appearing in multiple level blocks shoul
 - **cL lines:** Apply only to the immediately preceding L-record and are an optional part of that L-record.
 - **cL, 2cL, 3cL lines:** Form a unified comment block for that L-record.
 - When multiple L-comment identifiers are present, order them as follows: `E$ → J$ → T$ → S$ → general (no identifier before $)`.
+- If the L-comment identifier is a continuation data record (BE2, MOME2, MOMM1, etc.), it should appear after regular data record comments (`E$, J$, T$, S$`) but before general comments.
 
 - **cG lines:** Apply only to the immediately preceding G-record and are an optional part of that G-record.
 - **cG, 2cG, 3cG lines:** Form a unified comment block for that G-record.
@@ -280,7 +279,7 @@ Note: Multiple identical gamma energies appearing in multiple level blocks shoul
 
 **Integral Understanding of Continuation Data Records and Continuation Comments (Column 6)**
 - Column 6 contains the continuation identifier: blank for the first record and alphanumeric for continuation data records.
-- Common continuation records include `X L`, `2 L` and `F L` for L-records, `2 G`, `B G`, and `F G` for G-records, `S B` for B-records, `S E` for E-records.
+- Common continuation records include `X L`, `2 L` and `F L` for L-records, `2 G`,  and `F G`, `S G`, `B G` for G-records, `S B` for B-records, `S E` for E-records.
 - Common continuation comments include `2cL`, `3cL`, and `4cL` for L-comment lines, and `2cG`, `3cG`, and `4cG` for G-comment lines.
 - Continuation data records must remain attached to, and apply only to, the immediately preceding record type (L or G).
 - Continuation comments must remain attached to the immediately preceding comment line.
