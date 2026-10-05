@@ -72,7 +72,7 @@ Run all steps before ending your turn:
 - Work until the user's request is fully resolved before ending your turn
 - Do not unnecessarily stop to ask users for input or permission on standard sub-tasks
 - Complete and verify every todo item before ending your turn
-- Follow through on stated actions ("Next I will do X" means actually do X)
+- Follow through on stated actions
 - Avoid premature phrases like "Perfect" or "Task Completed Successfully" while tasks remain
 - Debug and fix issues autonomously
 - On "resume/continue/try again" requests: review conversation history, pick up next open todo, and state which steps you are resuming
@@ -98,7 +98,7 @@ Before creating any new file, script, or performing major operations:
 
 ### ENSDF File Management
 
-**CRITICAL: Edit files in place. Never create versions.**
+**Critical: Edit files in place. Never create versions.**
 
 **Forbidden file suffixes:**
 - `_updated.ens`, `_backup.ens`, `_corrected.ens`, `_fixed.ens`, `_v2.ens`, `_final.ens`, `_backup_20251013.ens`, etc.
@@ -142,7 +142,7 @@ Each field begins at prescribed columns with fixed widths. Content must be left-
 **AI Behavior Rule:** Never claim edit completion without ruler and column validation.
 
 
-### ENSDF Editing Safeguards (hook-enforced)
+### Data File Concurrent Editing Safeguards (hook-enforced)
 - While you are working on the task, agentic reasoning may take some time. Meanwhile, human user may have made changes on dataset files concurrently. Stay focused on the task. Do not get confused or distracted. Preserve the human user's concurrent edits.
 - Reload target immediately before every edit or mutating script/terminal call; never trust line numbers, memory, or cached baseline copies.
 - Guard every edit by ensuring anchors are byte-exact and unique. Never use short, repeated, or cross-record anchors.
@@ -165,13 +165,10 @@ diff-aware repair using `replace_string_in_file` or `multi_replace_string_in_fil
 
 The diff viewer catches AI errors before they corrupt the nuclear data files. Bypassing it eliminates the human safeguard layer entirely.
 
-#### Error Recovery Protocol (Mandatory)
+#### Error Recovery Protocol
 
-When an edit introduces errors:
-1. Identify the root cause through analysis, not reversion.
-2. Fix errors using `replace_string_in_file` or `multi_replace_string_in_file`.
-3. Validate with `column_calibrate.py` and `ensdf_1line_ruler.py`.
-4. Let the user review diffs before accepting changes.
+When an edit introduces errors, identify the root cause through analysis,
+fix the errors, and validate again with `column_calibrate.py` and `ensdf_1line_ruler.py`.
 
 Editing tasks on `.ens` nuclear data files requires high-precision work, not typical software development tasks. Do NOT use `git restore` or `git checkout` to fix `.ens` mistakes. You must identify and fix errors carefully to maintain absolute rigor.
 
@@ -179,14 +176,14 @@ Editing tasks on `.ens` nuclear data files requires high-precision work, not typ
 
 After you have completed the required tasks, carefully reflect on how agent skills have been applied, along with any new insights or lessons learned that could be incorporated into Recommended Operating Procedures.
 
-Update, refine, or revise relevant `SKILL.md` files as needed. Avoid overcomplicating or rewriting the entire document; focus on essential patches. Avoid rewriting the Task Customization & Configuration section.
+Update, refine, or revise relevant `SKILL.md` files as needed. Avoid overcomplicating or overengineering or rewriting the entire document; focus on essential patches. Avoid rewriting the Task Customization & Configuration section.
 
-Make sure that `SKILL.md` remains well-structured and organized, and concise (no more than 5 lines of incremental changes). It should be generalizable for future tasks, avoiding overly specific or detailed content, numbers, or actions.
+Make sure that `SKILL.md` remains well-structured and organized, and concise (no more than 3 lines of incremental changes). It should be generalizable for future tasks, avoiding overly specific or detailed content, numbers, or actions.
 
 Avoid verbose repetition of ENSDF rules and conventions. Refer to `.github\agents\ENSDF-Agent.agent.md` for rules and conventions.
 
 
-## Data Extraction and Entry Quality Assurance
+## Data Extraction and Data Entry Quality Assurance
 
 ### Numerical exactness and character-for-character matching
 
@@ -251,4 +248,4 @@ Both Bidirectional Positional Check and Random Spot Check must pass with 100% ac
 - **File and Script Management** – Tools, pre-action checklist, ENSDF file handling
 - **80-Column Format and Validation** – Formatting rules, edit-validate cycle, diff view requirement
 - **Agentic Learning Loop** – Skills refinement and procedure updates
-- **Data Extraction and Entry Quality Assurance** – Numerical exactness, spot checks, bidirectional verification
+- **Data Extraction and Data Entry Quality Assurance** – Numerical exactness, spot checks, bidirectional verification
