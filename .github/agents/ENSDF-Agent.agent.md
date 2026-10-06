@@ -268,6 +268,7 @@ Note: Multiple identical gamma energies appearing in multiple level blocks shoul
 2. G-records following an L-record constitute the level block and represent gamma transitions that deexcite the level represented by the L-record above; G-records do not belong to the next or following level block.
 3. A level with no listed gamma transitions has no associated G-records.
 4. In beta-decay datasets, a level may have associated B-record (beta minus) or E-record (electron capture / beta plus) following the L-record to indicate the decay populated level. Understand L→B→G (Level-Beta-Gamma) or L→E→G (Level-ElectronConversion-Gamma) record grouping relationships.
+5. In delayed decay datasets, a level may have associated DP-records (delayed proton) or DN-records (delayed neutron) following the L-record to indicate the delayed decay populated level. Understand L→DP→G (Level-DelayedProton-Gamma) or L→DN→G (Level-DelayedNeutron-Gamma) record grouping relationships.
 
 #### Comment Record (c-Record) or Comments on Data Records
 
