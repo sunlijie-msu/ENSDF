@@ -69,7 +69,6 @@ LEVEL: 1175.3 keV
 
 Preserve every decimal place exactly — do not round, omit, alter, or add digits. 10.0 remains 10.0, not 10 or 10.00. For energy matching: allow ≤1.0 keV tolerance when (Ei − Eγ) ≠ canonical Ei due to measurement precision.
 
-
 ## Spot-Check Protocol
 
 Use reproducible random sampling: seed (e.g., 12520260409), sample size ≥15% of rows, verify energy-matching residuals and J-π consistency on each sample.

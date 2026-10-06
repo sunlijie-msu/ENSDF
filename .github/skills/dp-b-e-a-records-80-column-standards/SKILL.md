@@ -24,8 +24,8 @@ Example:
 | NUCID | 1–5     | Nucleus (e.g., " 35P " or " 34Cl")     |
 | CONT  | 6       | Continuation label (blank)             |
 | SPACE | 7       | Must be blank                          |
-| D     | 8       | "D" for delayed particle               |
-| P     | 9       | "P" for proton                         |
+| D     | 8       | `D` for delayed particle               |
+| P     | 9       | `P` for proton                         |
 | SPACE | 10      | Readability space                      |
 | EP    | 11–19   | Proton energy in keV                   |
 | DE    | 20–21   | Energy uncertainty                     |
@@ -36,7 +36,7 @@ Example:
 | EI    | 33–39   | Energy of proton-emitting level in keV |
 
 **Critical DP Format Rules:**
-- Delayed Neutron Emission Record (DN-Record), Delayed Alpha Emission Record (DA-Record), Delayed Deuteron Emission Record (DD-Record), and Delayed Triton Emission Record (DT-Record) follow the same format as DP-Records, with "D" in column 8 and "N", "A", "D", or "T" in column 9, respectively.
+- Delayed Neutron Emission Record (DN-Record), Delayed Alpha Emission Record (DA-Record), Delayed Deuteron Emission Record (DD-Record), and Delayed Triton Emission Record (DT-Record) follow the same format as DP-Records, with `D` in column 8 and `N`, `A`, `D`, or `T` in column 9, respectively.
 - Readable spaces at columns 10, 22, and 32 for human readability.
 - All field positioning follows standard ENSDF left-justification rules.
 
@@ -54,7 +54,7 @@ Example:
 | NUCID | 1–5     | Nucleus (e.g., " 35P " or " 34Cl")                                              |
 | CONT  | 6       | Continuation label                                                              |
 | SPACE | 7       | Must be blank                                                                   |
-| TYPE  | 8       | "B" for beta minus                                                              |
+| TYPE  | 8       | `B` for beta minus                                                              |
 | SPACE | 9       | Must be blank                                                                   |
 | E     | 10–19   | Endpoint energy of β⁻ in keV (no need to edit)                                  |
 | DE    | 20–21   | Energy uncertainty                                                              |
@@ -66,9 +66,9 @@ Example:
 | LOGFT | 43–49   | The log ft for the β⁻ transition                                                |
 | DFT   | 50–55   | Uncertainty in LOGFT                                                            |
 | SPACE | 56–76   | Must be blank                                                                   |
-| C     | 77      | Comment flag ('C' denotes coincidence, '?' denotes probable coincidence)        |
-| UN    | 78–79   | Forbiddenness classification ('1U', '2U' for unique forbidden, blank = allowed) |
-| Q     | 80      | '?' denotes uncertain or questionable beta minus decay                          |
+| C     | 77      | Comment flag (`C` denotes coincidence, `?` denotes probable coincidence)        |
+| UN    | 78–79   | Forbiddenness classification (`1U`, `2U` for unique forbidden, blank = allowed) |
+| Q     | 80      | `?` denotes uncertain or questionable beta minus decay                          |
 
 **Critical B-Record Rules:**
 - Must follow LEVEL record for the level which is fed by the beta minus decay.
@@ -90,7 +90,7 @@ Example:
 | NUCID | 1–5     | Nucleus (e.g., " 35P " or " 34Cl")                                              |
 | CONT  | 6       | Continuation label                                                              |
 | SPACE | 7       | Must be blank                                                                   |
-| TYPE  | 8       | "E" for electron capture                                                        |
+| TYPE  | 8       | `E` for electron capture                                                        |
 | SPACE | 9       | Must be blank                                                                   |
 | E     | 10–19   | Energy for electron capture to level (no need to edit)                          |
 | DE    | 20–21   | Uncertainty in E                                                                |
@@ -105,15 +105,15 @@ Example:
 | SPACE | 56–64   | Must be blank                                                                   |
 | TI    | 65–74   | Total (ε + β⁺) decay intensity                                                  |
 | DTI   | 75–76   | Uncertainty in TI                                                               |
-| C     | 77      | Comment flag ('C' denotes coincidence, '?' denotes probable coincidence)        |
-| UN    | 78–79   | Forbiddenness classification ('1U', '2U' for unique forbidden, blank = allowed) |
-| Q     | 80      | '?' = uncertain branch, 'S' = expected or assumed transition                    |
+| C     | 77      | Comment flag (`C` denotes coincidence, `?` denotes probable coincidence)        |
+| UN    | 78–79   | Forbiddenness classification (`1U`, `2U` for unique forbidden, blank = allowed) |
+| Q     | 80      | `?` = uncertain branch, `S` = expected or assumed transition                    |
 
 **Critical E-Record Rules:**
 - Must follow LEVEL record for the level being populated in the decay.
 - IE, IB and TI must be in same units.
 - TI = IE + IB for total decay intensity to the level.
-- Forbiddenness classification in columns 78-79 ('1U', '2U' for first-, second-unique forbidden).
+- Forbiddenness classification in columns 78-79 (`1U`, `2U` for first-, second-unique forbidden).
 
 ### Alpha Decay Record (A-Record)
 
@@ -126,10 +126,10 @@ MMMXX  A EEEE.E    DE IA     DI HF     DHF                                  C  Q
 
 | Field | Columns | Description                                                                    |
 | :---- | :------ | :----------------------------------------------------------------------------- |
-| NUCID | 1–5     | Nucleus (e.g., "113I " or "204AT")                                             |
+| NUCID | 1–5     | Nucleus (e.g., "113I " or `204AT`)                                             |
 | CONT  | 6       | Continuation label                                                             |
 | SPACE | 7       | Must be blank                                                                  |
-| TYPE  | 8       | "A" for alpha decay                                                            |
+| TYPE  | 8       | `A` for alpha decay                                                            |
 | SPACE | 9       | Must be blank                                                                  |
 | E     | 10–19   | Alpha energy in keV                                                            |
 | DE    | 20–21   | Standard uncertainty in E                                                      |
@@ -140,9 +140,9 @@ MMMXX  A EEEE.E    DE IA     DI HF     DHF                                  C  Q
 | HF    | 33–39   | Hindrance factor for α decay                                                   |
 | DHF   | 40–41   | Standard uncertainty in HF                                                     |
 | SPACE | 42–76   | Must be blank                                                                  |
-| C     | 77      | Comment flag ('C' denotes coincidence, '?' denotes probable coincidence)       |
+| C     | 77      | Comment flag (`C` denotes coincidence, `?` denotes probable coincidence)       |
 | SPACE | 78–79   | Must be blank                                                                  |
-| Q     | 80      | '?' = uncertain or questionable α branch, 'S' = expected or predicted α branch |
+| Q     | 80      | `?` = uncertain or questionable α branch, `S` = expected or predicted α branch |
 
 **Critical A-Record Rules:**
 - Must follow the daughter LEVEL record for the level being populated in the α decay.

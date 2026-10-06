@@ -130,27 +130,34 @@ Run verification:
 ## Special Cases
 
 ### No Original Uncertainty, New % Assigned
+
 If the original value has no `{In}` (e.g., `|w|g=4.8 eV (1976Me12)`) and the task specifies a relative uncertainty, compute and apply it to the scaled value normally.
 
 ### No Uncertainty Added
+
 Some references (e.g., 1973Fa07 in the A=35 dataset) have `|w|g` values scaled with **no uncertainty assigned** in the output. In this case, write only the scaled value with no `{In}` tag: `|w|g=X.XX eV (NSR_REF).`
 
 ### Dual-Threshold Uncertainty
+
 Some references state different relative uncertainties for weak vs strong resonances:
 - Example: 30% for ≥1 eV original (≥0.452 eV scaled), 50% for <1 eV original (<0.452 eV scaled)
 - The threshold applies to the **pre-scaling** value or equivalently to the **post-scaling** value divided back
 
 ### Suffix Text Preservation
+
 Lines with extra text after the NSR reference (e.g., `, possible doublet.`) must preserve that text exactly.
 
 ### Near-Unity Factor / Preserve Existing {In}
+
 When the scaling factor is very close to 1 (e.g., 9.9/9.5 = 1.042), values change only slightly. If the existing {In} values are quoted directly from the paper's measurement uncertainties (not from a normalization convention), preserve the original {In} and update only the numeric value. Round the scaled value to the same number of decimal places as the original. Lines where the value rounds back to the original (no visible change) require NO edit.
 
 ### Parenthetical Value Format
+
 Lines with `|w|g=(X.XX) eV` (parentheses around value, with `=`) appear alongside standard lines. Scale the numeric value inside the parentheses and preserve the parenthetical format. Lines with `|w|g(X.XX) eV` (missing `=`) are likely typos; scale them and flag for a separate formatting correction.
 
 ### Skip Specific Resonances
-User may exclude specific resonances (e.g., "1213 resonance already cleaned"). Verify by checking the parent level's resonance energy in the S-field or via the level energy.
+
+User may exclude specific resonances (e.g., `1213 resonance already cleaned`). Verify by checking the parent level's resonance energy in the S-field or via the level energy.
 
 ## PDG Convention Quick Reference
 

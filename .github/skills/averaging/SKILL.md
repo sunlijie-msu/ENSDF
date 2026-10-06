@@ -13,7 +13,6 @@ argument-hint: [VALUE1 UNC1 VALUE2 UNC2 ...]
 
 ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
-
 ## How
 
 **Numeric mode** — comma after each pair for readability (optional):
@@ -27,12 +26,14 @@ python .github/scripts/Java_Average.py --comment "19.7 ps {I13} (1970Br10) and 2
 ```
 
 ## What to adopt
+
 - Transcribe the printed **Suggested Adopted Result** character-for-character to data fields; never recompute, re-round, or substitute. Comments quote must match the suggestion.
 - Use the method the tool labels (Weighted vs Unweighted).
 - Adopted uncertainty ≥ smallest input uncertainty (min-uncertainty rule); the tool enforces it — do not override.
 - Lifetimes use full precision (limit 99): `197 fs {I50}`. In the record, `T`/`DT` = ln2 × tool τ/unc in the record's unit.
 
 ## Uncertainty digits by destination
+
 | Destination | Digits |
 | --- | --- |
 | Comment line (`cL T$`, `cG RI$`, …) | as printed; 2 digits kept even when >35 |
@@ -40,7 +41,7 @@ python .github/scripts/Java_Average.py --comment "19.7 ps {I13} (1970Br10) and 2
 
 When user requests code `Java_Average.py` for calculating averages, follow these rules with absolute precision and zero tolerance for deviation:
 
-- Always use exact Java code "Suggested Adopted Result" value without recalculation or substitution
+- Always use exact Java code `Suggested Adopted Result` value without recalculation or substitution
 - Use exact uncertainty value provided by Java code (automatically applies rule: adopted uncertainty ≥ any individual input uncertainty)
 - Check whether Java suggests weighted or unweighted average in output comments
 - Use whichever method Java code explicitly recommends
@@ -48,7 +49,6 @@ When user requests code `Java_Average.py` for calculating averages, follow these
 - Never recalculate averages by yourself
 - Never use unrecommended uncertainty results
 - Never substitute weighted/unweighted averages contrary to Java's recommendation
-
 
 ## Minimum Uncertainty Rule
 
@@ -66,4 +66,4 @@ When user requests code `Java_Average.py` for calculating averages, follow these
 - **`[critical=X]` is display-only.** The tool decides Weighted vs. Unweighted using a hardcoded threshold of 3.5, not the displayed chi² critical value.
 - **Prefer `--comment` over numeric mode.** Hand-typing pairs invites mis-scaling: `4074.418 {I20}` is ±0.020 (last digit = 0.001), not ±0.20 — a wrong scale flips the weights and the suggested result. Re-run in comment mode with the real comment text to confirm the suggested result before transcribing.
 - **Lifetimes use full precision** (uncertainty limit 99): write `197 fs {I50}`, not `2.0E2 {I5}`.
-- **One value per paper.** Comment mode skips any value before "average of" (it's the previous result) and stops at "Other:".
+- **One value per paper.** Comment mode skips any value before `average of` (it's the previous result) and stops at `Other:`.

@@ -18,7 +18,6 @@ Arrange general comments (non-record-specific) at the top of the Adopted Dataset
 5. **Mass Measurements** — mass spectrometry, Q-values, binding energy
 6. **Theoretical Calculations** — nuclear structure calculations, shell model, etc. Prioritize works from the most recent years that calculated energy levels or level energies, spins (J), parities (π), and transition probabilities for this specific isotope.
 
-
 **Within each section:** Group comments by NSR reference (Reverse-chronological order by key number).
 
 ## Style

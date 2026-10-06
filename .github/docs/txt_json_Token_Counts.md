@@ -25,9 +25,6 @@ The JSON file is approximately 10-12 times larger than the RAW file due to the h
 | **AI Parsing & Integration** | **High/Native.** Explicit key-value encoding and strict hierarchical node structures natively support AI workflow orchestration and validation. | **Low/Poor.** Implicit 80-column ENSDF record semantics (e.g., `L`, `cL`, `2cL`, `2 L`) and fixed-width field alignment are prone to tokenizer-induced data misalignment, requiring ENSDF-domain specific knowledge base. |
 | **Token Efficiency** | **Low.** Verbose schema architecture necessitates significantly larger context windows, increasing computational overhead. | **High.** For equivalent information, compact data records require fewer tokens, less demand on context-window limits and token-based processing costs. |
 
-
 ## Quality Assurance and Technical Limitations
 
 - **Tokenizer variance:** Sub-word token counts vary significantly across model tokenizers (for example, LLaMA's `SentencePiece` versus OpenAI's `tiktoken`). Data formats with heavy spacing, symbols, and numerics (such as JSON and RAW) typically yield a lower character-to-token ratio (roughly 3.5 chars/token) than standard English prose (roughly 4 chars/token).
-
-

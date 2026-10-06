@@ -83,8 +83,8 @@ Based on the Step 1 classification:
 
 **For Transitions Marked ΔJ=0**
 
-- If δ is not given, assign D in M field and note "consistent with |DJ=0" in the cG comment after the DCO value.
-- If |δ| < 1 is given, assign D+Q in M field and note "consistent with |DJ=0" in the cG comment after the DCO value.
+- If δ is not given, assign D in M field and note `consistent with |DJ=0` in the cG comment after the DCO value.
+- If |δ| < 1 is given, assign D+Q in M field and note `consistent with |DJ=0` in the cG comment after the DCO value.
 
 **For Transitions Marked Mixed**
 
@@ -234,7 +234,7 @@ Bracketed `[...]` multipolarities `[E1]`, `[M1,E2]`, or `[E2]` are solely deduce
 - E2: Final 3/2-, 11/2-
 - Combination: 3/2-, 5/2±, 7/2±, 9/2±, 11/2-
 
-If two γ transitions from 5/2+ and 7/2-, the "AND" intersection of the above two sets:
+If two γ transitions from 5/2+ and 7/2-, the `AND` intersection of the above two sets:
 
 - Jπ of the final level: 3/2-, 5/2±, 7/2±, 9/2+
 

@@ -12,19 +12,23 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 > Fill in before starting task. Update as needed.
 
 ### Files
+
 - Source: `[path to source .mrg/.adp/.ens/.md/.csv file]`
 - Target: `[path to target .ens file]`
 
 ### Field Mapping *(source → ENS)*
+
 - `[Data A]` → `[record type]` `[field name]`
 - `[Data B]` → `[record type]` `[field name]`
 - `[Data C]` → `[record type]` `[comment]`
 
 ### Matching
+
 - L-records: `[ ]` exact E  `[ ]` E within ±[N] keV
 - G-records: `[ ]` exact Eγ  `[ ]` Eγ within ±[N] keV  `[ ]` matching parent Level first, matching then γ
 
 ### Operations
+
 - **Keep** `[field]` already in target (e.g., M, MR, DMR; cG M$ comments)
 - **Replace/Update** `[field]` with source value (e.g., RI, DRI)
 - **Add/Insert** `[field]` from source (e.g., new G-records absent in target)
@@ -33,9 +37,9 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 - **Rescale** `[field]` onto a common normalization reference → `.github/skills/rescale-gamma-ri/SKILL.md`
 
 ### Special Handling
-- `[ ]` [describe non-standard cases]
-- `[ ]` "From the Adopted Levels" pattern: global cG/cL provenance comments referencing adopted dataset — extract data into target record fields according to the provenance comment. If a piece of data is not present in the source, do not create one in the target.
 
+- `[ ]` [describe non-standard cases]
+- `[ ]` `From the Adopted Levels` pattern: global cG/cL provenance comments referencing adopted dataset — extract data into target record fields according to the provenance comment. If a piece of data is not present in the source, do not create one in the target.
 
 ## Recommended Operating Procedure:
 
@@ -75,6 +79,4 @@ Read the target file and cache every field marked KEEP — exact character-for-c
 
 For each matched record, apply the operations from Task Customization & Configuration
 
-
 ---
-

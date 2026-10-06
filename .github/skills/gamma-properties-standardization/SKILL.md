@@ -35,13 +35,11 @@ Extract M, MR, A2/A4/A6, and POL data from source/raw data and create properly f
  `NUCID cG $R{-DCO}=value {Iunc} (NSR_keynumber).`
  `NUCID cG $A{-2}=value {Iunc}, A{-4}=value {Iunc}, A{-6}=value {Iunc} (NSR_keynumber).`
 
-
 ## Formatting Rules
 
 - Subscripts: `A{-2}`, `A{-4}`, `A{-6}` — never `A2`, `A4`, `A6`
 - Uncertainties: `{Iunc}` integer format — never parentheses
 - End statements with period
-
 
 ## Workflow
 
@@ -69,4 +67,3 @@ Read the target file. Identify levels with M, MR, A2/A4, or POL data in comments
 - Add `$POL=...` line if polarization data exists
 
 ## Gotchas
-

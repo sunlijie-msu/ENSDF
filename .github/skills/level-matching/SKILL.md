@@ -44,7 +44,7 @@ Report match **confidence** based on energy difference:
 
 ### 3. Resolve One-to-One Conflicts
 
-Two source levels → same adopted: keep the closer; demote the other to "new in source." Process in one pass.
+Two source levels → same adopted: keep the closer; demote the other to `new in source.` Process in one pass.
 
 ### 4. Jπ Compatibility
 

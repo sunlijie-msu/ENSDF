@@ -27,6 +27,7 @@ Cross-check all quoted values in `cL J$` comments against corresponding L-record
 ---
 
 ## ENSDF Record Reference
+
 Be sure to follow the **Integral Understanding of Continuation Records and Comments (Column 6)** specified in `.github/agents/ENSDF-Agent.agent.md`.
 
 ### L-Record Fields Used
@@ -52,23 +53,27 @@ Column 32 may be part of M field (some evaluators do not use readability space a
 ## Value Types Checked
 
 ### 1. Gamma Energy
+
 Quoted gamma energy must match G-record energy character-for-character.
 - **Pattern:** `energy|g` (e.g., `1824.7|g`)
 - **Requirement:** Exact string match
 
 ### 2. Multipolarity
+
 Quoted multipolarity must match the G-record M field character-for-character.
 - **Pattern:** `energy|g MULT` (e.g., `1824.7|g M1+E2`)
 - **Equivalence:** a measured `D`/`Q`/`D+Q`/`D(+Q)` form and the electromagnetic character derived from it describe the same transition, so quoting the measured form for a record whose M field holds the character form is accepted, e.g. `D, |DJ=1` quoted for an `(E1)` record. The character derived from the level scheme must not be quoted back as evidence for that same level's Jπ (circular); see `.github/skills/gamma-selection-rules/SKILL.md`.
 - **Zero tolerance** on multipole order — quoted `D` against an `M1+E2` record, or quoted `E2` against a `D` record, is a mismatch
 
 ### 3. Level Energy
+
 Quoted level energy must match L-record energy character-for-character.
 - **Pattern:** `to J-π, ENERGY level` or `from J-π, ENERGY level`; the designator may also be `resonance`
 - **Coverage:** Every quoted level energy in a `cL J$` block is checked, including comments that quote no γ energy
 - **Special Convention:** Comments use `g.s.` for ground state; data records show `0.0` — these are semantically equivalent (no error flagged)
 
 ### 4. J-π Notation
+
 Quoted J-π must match the L-record J field character-for-character. Parentheses encode distinct physical meaning:
 - `1/2+` — definite J and π
 - `1/2(+)` — definite J, tentative π
@@ -119,6 +124,7 @@ For transitions quoted as `E_gamma|g to/from E_level`, verify:
 ## Workflow
 
 ### Step 1: Run Detection
+
 ```bash
 python .github/scripts/check_quoted_values.py "path/to/adopted.ens"
 ```
@@ -145,6 +151,7 @@ Fix ONLY comment text (`cL`, `2cL`, `3cL` lines) using `replace_string_in_file`.
 - Verify every touched line is exactly 80 columns (the checker ignores trailing padding, so it never reports these defects); retry with a corrected pad count where off.
 
 ### Step 4: Re-verify
+
 ```bash
 python .github/scripts/check_quoted_values.py "path/to/adopted.ens"
 ```
@@ -161,7 +168,7 @@ Re-run the checker after any L-record J-π or level-energy edit: existing commen
 3. **Energy string mismatches:** `1991` ≠ `1991.27` — must match character-for-character
 4. **Ground state notation:** `g.s.` in comments = `0.0` in data records (no error)
 5. **Energy-conservation mismatches:** Check cited endpoints against E_gamma, accounting for stated uncertainties
-6. **J-π lists misread as energies:** a comma-separated J-π list (`|g D(+Q) to 2+, 3+, 3-, and 4- levels`) quotes no energies; `_LEVEL_QUOTE` ignores a number immediately followed by `+`/`-` (`(?![+-])`), so never "fix" such a comment to satisfy a parse.
+6. **J-π lists misread as energies:** a comma-separated J-π list (`|g D(+Q) to 2+, 3+, 3-, and 4- levels`) quotes no energies; `_LEVEL_QUOTE` ignores a number immediately followed by `+`/`-` (`(?![+-])`), so never `fix` such a comment to satisfy a parse.
 7. **Merged datasets and incomplete endpoints:** isolate each dataset; match by parent level, not E|g alone; each quoted transition followed by J|p must identify exact destination energy or g.s.
 8. **Attributed source values:** preserve a cited paper's rejected multipolarity as historical evidence; distinguish it from the evaluator's adopted G-record value.
 9. **Energy conservation:** use stated level/gamma uncertainties before treating a residual as an error.

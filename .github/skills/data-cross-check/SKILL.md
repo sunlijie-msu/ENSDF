@@ -16,19 +16,23 @@ Actively leverage coding, scripts, and programming tools when necessary to effec
 > Fill in before starting task. Update as needed.
 
 ### Files
+
 - Source: `[path to source .mrg/.adp/.ens/.md/.csv file]`
 - Target: `[path to target .ens file]`
 
 ### Field Mapping *(source → ENS)*
+
 - `[Data A]` → `[record type]` `[field name]`
 - `[Data B]` → `[record type]` `[field name]`
 - `[Data C]` → `[record type]` `[comment]`
 
 ### Matching
+
 - L-records: `[ ]` exact E  `[ ]` E within ±[N] keV
 - G-records: `[ ]` exact Eγ  `[ ]` Eγ within ±[N] keV  `[ ]` matching parent Level first, matching then γ
 
 ### Checks
+
   [ ] value and sign
   [ ] uncertainty and format
   [ ] decimal places and trailing zeros
@@ -38,6 +42,7 @@ Actively leverage coding, scripts, and programming tools when necessary to effec
   [ ] completeness (missing/extra)
 
 ### Special Handling
+
 - `[ ]` [describe non-standard cases]
 
 ## Recommended Operating Procedure:
@@ -66,7 +71,6 @@ Actively leverage coding, scripts, and programming tools when necessary to effec
 - The XREF notation itself pins the source: a plain unparenthesised letter means that dataset's E agrees with the adopted value, while `Letter(value)` deliberately records a dataset energy that was **not** adopted. If exactly one plain letter's dataset L-record matches adopted E and DE byte-exact, the level is traceable by reading the adopted file alone — never report it as undocumented; reserve the note/flag check for levels with no unique byte-exact plain source.
 - A plain L-record has columns 6–7 blank and `L` in column 8; `X` or another letter in column 6 marks an XREF/continuation record and must not start a new level block when attaching comments.
 - Report only levels a reader cannot resolve from the adopted file: no unique byte-exact plain XREF source, and no fit basis, own `cL E$` note, or col-77 flag note. Flag DE blank/non-blank mismatch with the source level as advisory.
-
 
 ## Adopted-Sourced J and T Fields
 

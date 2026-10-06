@@ -8,23 +8,28 @@ argument-hint: [ENSDF file or level energy]
 # ENSDF L-Transfer Comments Standardization
 
 ENSDF rules and column positions: `.github/agents/ENSDF-Agent.agent.md`.
+
 ## Task Customization & Configuration
 
 > Fill in before starting task. Update as needed.
 
 ### Files
+
 - Source: `[path to reaction dataset .ens file(s)]`
 - Target: `[path to adopted .ens file]`
 
 ### Matching
+
 - L-records: `[ ]` exact E  `[ ]` E within ±[N] keV  `[ ]` XREF letter → dataset
   If an XREF letter is followed by asterisk (*) or (energy*), it is usually not considered for Jπ assignment.
 
 ### Operations
+
 - **Write/Update** cL J$ L-transfer phrase in adopted target
 - **Keep** all non-L-transfer J$ arguments unchanged
 
 ## Purpose
+
 Standardize only the L-transfer portion of cL J$ comments. Preserve all other J$ arguments exactly. Preserve all other existing comments.
 
 ## Workflow
@@ -45,16 +50,16 @@ L=<L1> from <Jπ_target1> in <reaction1> gives <Jπ_results1>. L=<L2> from <Jπ_
 Append `for <E_level> {I<Unc>} level` after <Jπ_results> for possible doublets/multiplets that are indicated by aterisk in its XREF.
 
 ### Multiple L values in one reaction (colon, semicolons between sub-clauses, final period)
+
 L=L1,L2 or L=L1+L2 or L=L1,L2+L3 is an inseparable list.
 L in parentheses indicates less firm L assignment due to data quality or less certain transfer reaction mechanism, e.g., (p,3He), (3He,p).
-
 
 cL J$L=<L1,L2> from <Jπ_target> in <reaction>: L=<L1> gives <Jπ_results1>; L=<L2> gives <Jπ_results2>.
 
 <Jπ_results> is the OR of {<Jπ_results1>; <Jπ_results2>}.
 
 cL J$L=<L1+L2> from <Jπ_target> in <reaction> gives <Jπ_results>.
-<Jπ_results> = AND intersection only. Never show individual sub-clauses for '+' simultaneous transfers.
+<Jπ_results> = AND intersection only. Never show individual sub-clauses for `+` simultaneous transfers.
 
 cL J$L=<L1+L2,L3> from <Jπ_target> in <reaction>: L=<L1+L2> gives <Jπ_results1AND2>; L=<L3> gives <Jπ_results3>.
 
@@ -66,8 +71,8 @@ cL J$L=<L1+L2,L3+L4> from <Jπ_target> in <reaction>: L=<L1+L2> gives <Jπ_resul
 
 Usually, take the AND of each <Jπ_results> from different datasets to deduce the final Jπ that goes to the Level-record Jπ field.
 
-
 ### Analyzing power constraint
+
 From polarized-beam data: `L=<L> from <Jπ> in <pol reaction> with <L±1> transfer from analyzing power gives <Jπ_results>.`
 
 *Comment-only edits: skip ruler, column, and ordering validation.*

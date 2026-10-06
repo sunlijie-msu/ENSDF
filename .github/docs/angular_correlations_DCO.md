@@ -1,4 +1,5 @@
 ﻿# Guidelines on Directional Correlations of γ-rays from Oriented States (DCO) and Angular Distribution of Oriented nuclei (ADO)
+
 DCO and ADO are experimental observables commonly measured in in-beam γ spectroscopy to determine the spin changes of excited nuclear states and the multipolarity of γ-ray transitions.
 
 ## 1. General Selection Rules for Gamma Transitions
@@ -44,7 +45,6 @@ Initial state spin: $J_i = 9/2$
 
 ## 4. DCO Ratios
 
-
 The ratio is defined as:
 
 $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\theta_2 \text{ gated at } \theta_1)} $$
@@ -80,4 +80,3 @@ $$ R_{DCO} = \frac{I_{\gamma}(\theta_1 \text{ gated at } \theta_2)}{I_{\gamma}(\
 
 *   **Overlap:** An unstretched dipole transition ($\Delta J = 0$) exhibits similar $R_{DCO}$ values to a stretched quadrupole transition ($\Delta J = 2$) in both gating configurations ($1.0$ in Quad gate; $1.8$ in Dipole gate).
 *   **Character:** DCO alone cannot distinguish between electric and magnetic transitions. Linear polarization measurements are required to assign the electromagnetic character.
-

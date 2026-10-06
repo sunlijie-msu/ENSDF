@@ -31,10 +31,9 @@ This avoids stale duplicates and preserves the single source of truth in the ins
 
 SKILL.md shares the context window with conversation history, system prompts, and all loaded skills.
 
-- "Does Claude already know this?" → Remove it.
-- "Is this already in `.github/copilot-instructions.md` or `.github/agents/ENSDF-Agent.agent.md`?" → Reference it.
+- `Does Claude already know this?` → Remove it.
+- `Is this already in `.github/copilot-instructions.md` or `.github/agents/ENSDF-Agent.agent.md`?` → Reference it.
 - Body under 90 lines.
-
 
 ### 2. Set Appropriate Freedom
 
@@ -113,7 +112,6 @@ For any skill that processes source data into ENSDF records, place a user-fillab
 
 ### Recommended Operating Procedures
 
-
 ---
 
 ## Anti-Patterns
@@ -121,9 +119,9 @@ For any skill that processes source data into ENSDF records, place a user-fillab
 - **Windows paths** — always use forward slashes: `scripts/helper.py` not `scripts\helper.py`
 - **Too many options** — one default with escape hatch, not a menu
 - **Assumed installs** — list required packages explicitly
-- **Unqualified MCP tool names** — always use `ServerName:tool_name` format; bare names cause "tool not found" errors
+- **Unqualified MCP tool names** — always use `ServerName:tool_name` format; bare names cause `tool not found` errors
 - **Chained references** — one level deep only
-- **Time-sensitive conditionals** — use "Legacy/Current" sections instead
+- **Time-sensitive conditionals** — use `Legacy/Current` sections instead
 
 ---
 

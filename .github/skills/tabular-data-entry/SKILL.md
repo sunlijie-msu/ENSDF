@@ -40,6 +40,7 @@ SPECIAL HANDLING
 ```
 
 ## Recommended Operating Procedures
+
 1. [ ] **Map:** Enumerate all source columns (including blanks) for precise source-to-field mapping.
 2. [ ] **Extract:** Extract required data via codes or scripts; verify numeric exactness, including values, uncertainties, signs, limits, decimal digits, units, parentheses, and completeness.
 3. [ ] **Generate:** Generate ENSDF records and/or comments via code or scripts, ensuring correct column placement without shifting other fields.
@@ -56,8 +57,8 @@ Verify the column map in both directions before entering data, counting blank ce
 3. Confirm each cell by counting from top-left and again from bottom-right.
 4. When fixing a quantity's position, adjust only field spacing — never move other field data to wrong columns.
 
-
 ### Random Spot Check
+
 Trace entries to source: verify value, uncertainty, row, column, header, and units. (Protocol: `.github/copilot-instructions.md` § Random Spot Check)
 
 ### Bulk Insertion into `.ens` (diff-safe)

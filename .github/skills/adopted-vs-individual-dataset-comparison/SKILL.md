@@ -206,7 +206,7 @@ Error type distribution:
 
 ## Common Pitfalls
 
-1. **Numerical tolerance matching:** Do not accept "close enough" values — require exact string match
+1. **Numerical tolerance matching:** Do not accept `close enough` values — require exact string match
 2. **Ignoring parentheses:** `4+` ≠ `(4)+` encodes different physical meaning (definite vs tentative)
 3. **Energy window too wide:** 20 keV tolerance for matching levels, but flag if difference >5 keV
 4. **Assuming equivalence:** `3+,4+` and `(3,4)+` are different notations with distinct interpretations

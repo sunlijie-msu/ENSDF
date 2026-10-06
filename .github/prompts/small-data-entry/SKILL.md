@@ -12,9 +12,11 @@ argument-hint: [SOURCE_TABLE TARGET_FILE]
 ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 ## When
+
 Use this skill for a single resonance table from 1964Gl04 or an equivalent small one-table data entry pass.
 
 ## Goal
+
 - Read the source table and match by `E_p(lab)` in the `S` field.
 - Enter only direct resonance transitions labeled `(r) -> final level`.
 - Exclude secondary decays unless explicitly requested.
@@ -50,6 +52,7 @@ cG E,RI$from 1964Gl04, but not observed in later work.
 ```
 
 ## Safeguards
+
 - Never shift unrelated fields.
 - Never move the `T1/2` field or subsequent columns when editing `L` records.
 - Keep all data records exactly 80 characters.
@@ -57,6 +60,7 @@ cG E,RI$from 1964Gl04, but not observed in later work.
 - Preserve ascending gamma order within the level block.
 
 ## Validation
+
 For each new or changed data record:
 
 ```powershell
@@ -81,6 +85,7 @@ For multi-row data-entry passes, also do both QA checks before closing:
    - Verify source value, uncertainty, and target ENSDF entry for every sampled item.
 
 ## Done when
+
 - Only `(r) -> final level` transitions were entered.
 - Every 1964Gl04 intensity for an existing `G` record appears in `cG RI$other:`.
 - Every 1964Gl04 energy with an explicit uncertainty for an existing `G` record appears in `cG E$other:`.

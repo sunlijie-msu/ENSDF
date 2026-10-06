@@ -94,7 +94,7 @@ You are an Agent specializing in Evaluated Nuclear Structure Data File (ENSDF) 8
 - `{+nat}Ni` means natural nickel
 - `|s(E({+3}He),|q)` → σ(E(³He),θ) angular distribution
 - `Zn{-3}P{-2}` → Zn₃P₂
-- `log {Ift}` → log <i>ft</i> (italicize "ft")
+- `log {Ift}` → log <i>ft</i> (italicize `ft`)
 - `|t|>10 fs` → τ≥10 fs (lifetime ≥ 10 fs)
 - `|t>10 fs` → τ>10 fs (lifetime > 10 fs)
 - `|b{+-}n`, `%|b{+-}n` → β⁻-delayed-neutron emission and branching ratio
@@ -110,7 +110,7 @@ Use telegraphic phrasing in comment text.
 
 ### Nuclear Science References (NSR)
 
--   Each article in NSR has a unique 8-character key number (the "key number").
+-   Each article in NSR has a unique 8-character key number (the `key number`).
 -   ENSDF uses this key number to reference published articles.
 
 **Format:** `YYYYAA##` (e.g., `2026Bu08`, `2013StZY`).
@@ -183,12 +183,12 @@ Example:
 | NUCID | 1–5     | Nucleus (e.g., " 35P " or " 35Cl").                           |
 | CONT  | 6       | Continuation label.                                           |
 | Space | 7       | Must be blank.                                                |
-| TYPE  | 8       | "L" (Level).                                                  |
+| TYPE  | 8       | `L` (Level).                                                  |
 | Space | 9       | Must be blank.                                                |
 | E     | 10–19   | Level energy.                                                 |
 | DE    | 20–21   | Energy uncertainty.                                           |
 | Space | 22      | Readability space.                                            |
-| J     | 23–39   | Spin 'J' and parity 'π'                                       |
+| J     | 23–39   | Spin `J` and parity `π`                                       |
 | T     | 40–49   | Half-life with units (e.g., MEV, FS, PS, S, H, D).            |
 | DT    | 50–55   | Half-life uncertainty.                                        |
 | L     | 56–64   | Angular momentum transfer (L-transfer).                       |
@@ -196,10 +196,10 @@ Example:
 | DS    | 75–76   | Uncertainty in S.                                             |
 | C     | 77      | Comment flag.                                                 |
 | MS    | 78–79   | 'M ' isomer; 'R ' resonance; 'C ' PN comments (uncommon)      |
-| Q     | 80      | '?' questionable/uncertain; 'S' assumed/at separation energy. |
+| Q     | 80      | `?` questionable/uncertain; `S` assumed/at separation energy. |
 
 J field: For multiple J-π values separated by commas, no spaces after commas.
-Critical: Be sure to distinguish comment flags (col 77), MS labels (col 78–79), and '?' (col 80).
+Critical: Be sure to distinguish comment flags (col 77), MS labels (col 78–79), and `?` (col 80).
 
 **CRITICAL: Comment Line Association**
 - `cL` comment lines apply **only** to the immediately preceding L-record.
@@ -220,7 +220,7 @@ Example:
 | NUCID | 1–5     | Nucleus (e.g., " 35P " or " 35Cl")                                |
 | CONT  | 6       | Continuation label                                                |
 | SPACE | 7       | Must be blank                                                     |
-| TYPE  | 8       | "G"                                                               |
+| TYPE  | 8       | `G`                                                               |
 | SPACE | 9       | Must be blank                                                     |
 | E     | 10–19   | Gamma energy                                                      |
 | DE    | 20–21   | Energy uncertainty                                                |
@@ -240,8 +240,8 @@ Example:
 | SPACE | 79      | Usually blank; may be N to indicate use for normalization         |
 | Q     | 80      | Additional indicator (space, ?, S) - See G-Record Indicator Rules |
 
-
 #### G-Record Flag Rules
+
 **Column 77 (C Field, Comment Flag):**
 -   `A-Z`, `a-z`: Any single letter used to refer to a specific comment record (cannot be a number).
 -   `*` (asterisk): Denotes a multiply-placed gamma ray.
@@ -253,12 +253,12 @@ Note: Multiple identical gamma energies appearing in multiple level blocks shoul
 -   Flag definition letters are human-controlled: parenthesized letters in an identifier (`cL J(A)$`, `cL E(B)$`, `cG E(D),RI(D)$`) name the col-77 flag of the records the comment applies to.
 
 #### G-Record Indicator Rules
+
 **Column 80 (Q Field, Additional Indicator):**
 -   `Space`: Normal, well-established gamma transition.
 -   `?`: Denotes uncertain placement of the transition in the level scheme.
 -   `S`: Denotes expected or assumed, but as yet unobserved, gamma transition.
 -   **CRITICAL:** Only space, `?`, or `S` allowed in column 80.
-
 
 ### Critical ENSDF Structural Relationships
 
@@ -269,8 +269,8 @@ Note: Multiple identical gamma energies appearing in multiple level blocks shoul
 3. A level with no listed gamma transitions has no associated G-records.
 4. In beta-decay datasets, a level may have associated B-record (beta minus) or E-record (electron capture / beta plus) following the L-record to indicate the decay populated level. Understand L→B→G (Level-Beta-Gamma) or L→E→G (Level-ElectronConversion-Gamma) record grouping relationships.
 
-
 #### Comment Record (c-Record) or Comments on Data Records
+
 - Column 7 contains the comment identifier: `c`.
 
 - **cL lines:** Apply only to the immediately preceding L-record and are an optional part of that L-record.
@@ -295,7 +295,6 @@ Note: Multiple identical gamma energies appearing in multiple level blocks shoul
 - Continuation records are usually placed before comment lines. Example: `2 L` and `F L` records appear before any ` cL` lines for that level, and `2 G` and `B G` records appear before any ` cG` lines for that gamma.
 - Less common: FLAG markers (for example, `FLAG=A`) are placed in `F L` or `F G`continuation records following the record (L or G) that they describe.
 
-
 #### Left-Justification Requirement
 
 **MANDATORY:** All values and uncertainties in all fields MUST be left-justified (NEVER right-justified or centered).
@@ -303,6 +302,7 @@ Note: Multiple identical gamma energies appearing in multiple level blocks shoul
 -   **Formatting:** Values start at the leftmost column of the field, padded with trailing spaces to fill field width.
 
 #### Energy Ordering Requirement
+
 **Requirement:**
 
 -   L-records MUST be in ascending energy order.
@@ -310,8 +310,7 @@ Note: Multiple identical gamma energies appearing in multiple level blocks shoul
 -   **Consequence:** Violations break automated ENSDF parsers and database ingestion.
 -   **Common error:** Inserting new levels or gammas without reordering by energy.
 
-
-### Cross-Reference Record (XREF-Record) 
+### Cross-Reference Record (XREF-Record)
 
 Only in the Adopted Datasets: XREF (cross-reference) labels in continuation records immediately follow an L-record indicate which datasets observe this level. XREF labels use capital letters and can be followed by notations such as (energy), (*), (?), or combinations thereof.
 
@@ -326,6 +325,7 @@ Only in the Adopted Datasets: XREF (cross-reference) labels in continuation reco
 - `Letter(?)`: questionable or uncertain match. Example: `XREF=ADIJ(?)OP` means dataset J reports a questionable level that possibly matches the Adopted level. `Letter(energy?)` is allowed for questionable matching with energy information.
 
 ### Other Record Format Standards
+
 Delayed Particle (DP-Record), Beta Minus Decay (B-Record), Electron Capture/Beta Plus Decay (E-Record), and Alpha Decay (A-Record) Format Standards refer to the skill `.github/skills/dp-b-e-a-records-80-column-standards/SKILL.md`.
 
 ---
@@ -376,7 +376,6 @@ Examples:
 - `100.00(333) -> 100.0(33)`: discarded `3` rounds down; uncertainty stays `33`.
 - `100.00(334) -> 100.0(34)`: discarded `4` rounds up; uncertainty becomes `34`.
 
-
 **Examples by Decimal Places:**
 
 | Value Decimals | Field Notation | Comment Notation | Meaning (± format) |
@@ -408,7 +407,6 @@ Format: Plain integers only (NO `{I}` notation, NO parentheses).
     - Double digits: `"15"` (two digits).
     - Limit markers: `"GT"`, `"LT"` (two letters).
 
-
 #### Extended 6-Column Uncertainty Fields (DT, DMR)
 
 - **Field** (cols 50–55): 6 characters, left-justified, with space padding if fewer than 6 characters.
@@ -417,19 +415,17 @@ Format: Plain integers only (NO `{I}` notation, NO parentheses).
     - Limit markers: `"GT    "`, `"LT    "` (two letters + 4 spaces).
 - For source data using the Rose and Brink (1967) sign convention, reverse the sign of the mixing ratio value before entering it into ENSDF. Reverse the asymmetric uncertainty order at the same time so the ENSDF value keeps the correct upper and lower bounds. Example: -0.27$_{-0.04}^{+0.03}$ becomes +0.27$_{+0.04}^{-0.03}$ in ENSDF.
 
-
 **Critical Formatting Rules:**
 - Single digits in 2-column fields: MUST be padded with trailing space.
 - Double digits in 2-column fields: Fill both columns completely.
 - Asymmetric uncertainties: Use +X-Y format in 6-character fields (DT, DMR).
 - **FORBIDDEN:** `123` is not allowed in either 2-column fields (corrupts adjacent data) or in 6-column fields.
 
-
 #### Scientific Notation Format
 
 For intensities and other values in scientific notation:
 - **Standard format:** `(5.6±1.0)×10^-4` becomes `5.6E-4 10` in ENSDF data records.
-- **Value field:** Use `E-n` notation (e.g., `5.6E-4`) and ``En` for positive exponents (e.g., `1.1E6`).
+- **Value field:** Use `E-n` notation (e.g., `5.6E-4`) and `En` for positive exponents (e.g., `1.1E6`).
 - **Uncertainty field:** Use digits representing the last significant digit (e.g., `10` for ±1.0 if the value has one decimal place).
 - **Examples:**
     - `(1.1±0.3)×10^-6` → Value: `1.1E-6`, Uncertainty: `3`.
@@ -439,9 +435,9 @@ For intensities and other values in scientific notation:
 
 #### GT and LT Markers in Uncertainty Fields
 
-- **LT** = "Less Than" (e.g., `<1.6 ps` becomes `1.6 PS    LT` in T and DT fields).
-- **GT** = "Greater Than" (e.g., `>5.2 fs` becomes `5.2 FS   GT` in T and DT fields).
-- LE = "Less or equal to" (≤) and GE = "Greater or equal to" (≥) are also allowed.
+- **LT** = `Less Than` (e.g., `<1.6 ps` becomes `1.6 PS    LT` in T and DT fields).
+- **GT** = `Greater Than` (e.g., `>5.2 fs` becomes `5.2 FS   GT` in T and DT fields).
+- LE = `Less or equal to` (≤) and GE = `Greater or equal to` (≥) are also allowed.
 - **Format:** Place the value in the main field and the GT/LT marker in the uncertainty field.
 - **Examples for RI and DRI:**
     - `<1.6` → RI=`1.6    ` (cols 23–29), DRI=`LT` (cols 30–31).
@@ -549,8 +545,6 @@ When fixed-width alignment requires it, reconstruct the complete record line rat
 
 Validate each edited line and the complete file afterward.
 
-
-
 ## Data Extraction and Entry Quality Assurance
 
 **CRITICAL REQUIREMENT:** For ALL numerical data extraction/entry tasks, you MUST execute BOTH quality assurance checks before claiming task completion: Bidirectional Positional Check and Random Spot Check.
@@ -566,10 +560,10 @@ Validate each edited line and the complete file afterward.
 ### Professional English Grammar
 
 **Common corrections:**
--   **Spelling:** "other" (not "ohter"), "stopped" (not "stoped"), "using" (not "usign"), "coefficients" (not "coeffcients"), "deexciting" (not "deexiting"), "multipolarities" (not "multiporities"), "parentheses" (not "paretheses").
--   **Dittography:** Remove duplicated words (e.g., "the the", "is is", "and and").
--   **Hyphenation Rule:** [Number]-[Unit]-[Descriptor] [Noun]. Hyphenate compound adjectives occurring before a noun (e.g., "x-ray diffraction," "4-mm-long gas cell," "R-matrix theory"). Do not hyphenate when they are not adjectives before nouns (e.g., "emitted by x rays," "was 4 mm long").
--   **Consistency:** Always hyphenate "L-transfers" and "half-life."
+-   **Spelling:** `other` (not `ohter`), `stopped` (not `stoped`), `using` (not `usign`), `coefficients` (not `coeffcients`), `deexciting` (not `deexiting`), `multipolarities` (not `multiporities`), `parentheses` (not `paretheses`).
+-   **Dittography:** Remove duplicated words (e.g., `the the`, `is is`, `and and`).
+-   **Hyphenation Rule:** [Number]-[Unit]-[Descriptor] [Noun]. Hyphenate compound adjectives occurring before a noun (e.g., `x-ray diffraction,` `4-mm-long gas cell,` `R-matrix theory`). Do not hyphenate when they are not adjectives before nouns (e.g., `emitted by x rays,` `was 4 mm long`).
+-   **Consistency:** Always hyphenate `L-transfers` and `half-life.`
 
 ---
 

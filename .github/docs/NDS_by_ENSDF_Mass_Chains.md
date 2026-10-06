@@ -300,4 +300,3 @@
 | 297 | Not evaluated |  |  |
 | 298 | Nucl. Data Sheets 156, 70 (2019) | https://doi.org/10.1016/j.nds.2019.02.004 | Balraj Singh |
 | 299 | Not evaluated |  |  |
-

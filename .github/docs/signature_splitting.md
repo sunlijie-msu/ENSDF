@@ -1,17 +1,20 @@
 ### Signature Quantum Number and Splitting
 
 #### 1. Definitions
+
 **Signature ($\alpha$)** defines the wave function symmetry of an axially deformed nucleus under a $180^\circ$ rotation ($R_x$) about an axis perpendicular to the symmetry axis.
 *   **Operator:** $R_x(\pi) = e^{-i\pi J_x}$
 *   **Eigenvalue:** $r = e^{-i\pi \alpha}$
 
 #### 2. Signature Splitting
+
 The **Coriolis interaction** acts on high-$j$ valence particles (intruder orbitals), splitting the rotational band ($\Delta I = 1$) into two branches ($\Delta I = 2$) with different energies.
 *   **Observation:** Energy level staggering (odd-even shift).
 *   **Mechanism:** An energy term $\propto (-1)^{I+K}$ shifts the **favored branch** lower and the **unfavored branch** higher.
 *   **Signature Inversion:** Anomaly where the theoretically unfavored branch is lower in energy at low spins.
 
 #### 3. Allowed Values and Favored Rules
+
 The table below maps signature values to spin sequences and defines the favored branch rule.
 
 | Nucleus Type | Signature ($\alpha$) | Spin Sequence ($I$) | Favored Signature Rule ($\alpha_f$) | Favored Branch |
@@ -28,6 +31,7 @@ The table below maps signature values to spin sequences and defines the favored 
 *   **Spin Sequence:** Allowed spins satisfy $I \equiv \alpha \pmod 2$.
 
 #### 4. Application Example
+
 **Scenario:** Odd-Odd nucleus with configuration $\pi h_{11/2} \otimes \nu i_{13/2}$.
 *   **Parameters:** $j_p = 11/2$, $j_n = 13/2$.
 *   **Calculation:**

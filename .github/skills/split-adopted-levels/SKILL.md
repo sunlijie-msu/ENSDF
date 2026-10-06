@@ -2,7 +2,9 @@
 name: split-adopted-levels
 description: Splits one adopted ENSDF L-record that wrongly groups two or more datasets' distinct levels.
 ---
+
 # Split Adopted Levels
+
 ENSDF 80-column record/field definitions, structural rules, column positions, uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 *Fill in:* adopted file; dataset letters and source files; the shared L-record.
 1. Read each cited dataset; tabulate its E, DE, Jπ, T, DT, L, S, DS, G-records, continuations, comments; confirm the levels are distinct. Grepping each source for the energy is decisive: a dataset lacking that level owns nothing there and must not keep its `(energy)`/`(*)` label.

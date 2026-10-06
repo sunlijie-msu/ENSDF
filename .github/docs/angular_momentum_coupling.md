@@ -50,11 +50,11 @@ The code performs the vector addition in two steps (Channel Spin representation)
 
    Possible values: $|\ell - S| \le J_{final} \le \ell + S$
 
-**Important**: The "Particle" input to this tool represents the **intrinsic properties of the transferred particle**: spin $s_{particle}$, parity $\pi_{particle}$, and isospin $T_{particle}$.
+**Important**: The `Particle` input to this tool represents the **intrinsic properties of the transferred particle**: spin $s_{particle}$, parity $\pi_{particle}$, and isospin $T_{particle}$.
 
 ## 2. Application to Different Reaction Types
 
-To use the code correctly, you must identify the correct "Transferred Particle" input based on the reaction mechanism.
+To use the code correctly, you must identify the correct `Transferred Particle` input based on the reaction mechanism.
 
 ### A. Resonant Capture Reactions
 
@@ -71,7 +71,6 @@ Examples: $(d, p)$, $(p, d)$, $(^3\text{He}, d)$, $(d, ^3\text{He})$, $(n, d)$, 
 In these reactions, a single nucleon is transferred between the projectile and the target. You need to input the properties of the **transferred nucleon**.
 
 * **Particle Input**: $1/2^+$
-
 
 ### C. Two-Nucleon Transfer Reactions
 
@@ -124,7 +123,7 @@ An alpha particle is transferred.
 
 * **$(p,p)$**: For proton scattering on nonzero spin targets, the compound states generally have several formation
 and decay channels. The proton ($s=1/2$) can undergo spin-flip. It allows both Isoscalar ($T=0$) and Isovector ($T=1$) transitions.
-  * **Particle Input**: $1/2^+$ 
+  * **Particle Input**: $1/2^+$
   * **Particle Input**: $0^+$ for non spin-flip
   * **Particle Input**: $1^+$ for spin-flip
 
@@ -150,7 +149,6 @@ These reactions exchange nucleon type (n ↔ p), governed by the transferred ang
 * **$(p, n)$ and $(^3\text{He}, t)$**: Mixed (Fermi + Gamow-Teller).
   * **Particle Input**: $0^+$ (Fermi)
   * **Particle Input**: $1^+$ (Gamow-Teller)
-
 
 ## 3. Interpreting the Output
 
@@ -222,7 +220,6 @@ For transfer reactions, isospin ($T$) provides additional selection rules.
 $$\vec{T}_{final} = \vec{T}_{target} + \vec{T}_{particle}$$
 
 *Note: This tool calculates angular momentum ($J^\pi$) only. Isospin selection rules must be applied separately.*
-
 
 ## 5. Caveats and Limitations
 

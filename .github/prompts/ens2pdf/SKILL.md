@@ -23,11 +23,13 @@ python .github/scripts/ens2pdf.py Si35_adopted --open --system
 ```
 
 ## Options
+
 - No flag: convert and save PDF without opening it.
 - `--open`: open the result in VS Code after conversion.
 - `--open --system`: open the result in the system default PDF viewer.
 
 ## Notes
+
 - The script resolves partial names and glob patterns against the workspace tree.
 - Multiple matches are converted sequentially.
 - The Java tool must be present at `D:\X\ND\McMaster-MSU-Java-NDS\`.

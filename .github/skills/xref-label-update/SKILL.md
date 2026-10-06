@@ -6,6 +6,7 @@ description: >
   parenthetical notations such as (energy), (*), and (?).
 argument-hint: [adopted.ens] [add|remove] [dataset-label]
 ---
+
 # Update ENSDF Cross-Reference (XREF) Labels
 
 ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
@@ -17,9 +18,11 @@ Before editing, compare complete old/new X-record lists. Build one `old label �
 ### Steps
 
 #### 1. Update X-Records
+
 Replace index with final X-record list. Pad each record to 80 characters.
 
 #### 2. Alphabetically Shift Existing XREF Labels
+
 Apply mapping — notations `(energy)`, `(*)`, `(?)` travel with their labels:
 - `XREF=BFGH` → `XREF=BGHI`
 - `XREF=BFG(2103)HIJ` → `XREF=BGH(2103)IJK`
@@ -27,6 +30,7 @@ Apply mapping — notations `(energy)`, `(*)`, `(?)` travel with their labels:
 - `XREF=H(7300*)J` → `XREF=I(7300*)K`
 
 #### 3. Insert New XREF Labels
+
 Match each new dataset L-record to adopted levels before insertion. Insert labels alphabetically; use `Label(source-energy)` when source/adopted energies differ, and retain source `?`/`*` only when present in the source record:
 - `XREF=ABCDGHIJK` → `XREF=ABCDFGHIJK`
 - `XREF=ABCDFG` → `XREF=ABCDE(3326)FG`
@@ -38,9 +42,11 @@ Determine shift mapping (e.g., removed `B`: C→B, D→C, E→D, and so on; A un
 ### Steps
 
 #### 1. Update X-Records
+
 Remove dataset line, shift subsequent labels up, pad spaces to 80 characters.
 
 #### 2. Shift XREF Labels
+
 Apply mapping; delete removed label if present:
 - `XREF=ABC` → `XREF=AB` (B removed; C→B)
 - `XREF=ACD` → `XREF=ABC` (no B; C→B, D→C)
@@ -53,14 +59,17 @@ Apply mapping; delete removed label if present:
 ### Steps
 
 #### 1. Update X-Records
+
 Swap the dataset descriptions on the two X-record lines (labels XG/XH stay; only the text content swaps).
 
 #### 2. Identify XREF Lines That Actually Change
+
 - **Both labels present** (e.g., `XREF=...GH...`): **no change needed** — sorted result is identical.
 - **Only one label present** (e.g., `XREF=...G...` without H): change that label to its swap partner.
 - Parenthetical notations `(energy)`, `(*)`, `(?)` travel with their label.
 
 #### 3. Apply Changes
+
 Example (swapping G↔H):
 - `XREF=ACDEFGHIJK` → unchanged (both present)
 - `XREF=ACDEF(2420)GIK` → `XREF=ACDEF(2420)HIK` (G→H, H absent)
@@ -70,6 +79,7 @@ Example (swapping G↔H):
 **NEVER** apply G→H then H→G in two passes — this creates double-shifting. Identify all changes first, then apply atomically.
 
 ## Validation
+
 Skip column calibrate and line ruler checks. Pad XREF line to 80 chars only.
 
 **CRITICAL:** This task ONLY updates XREF labels. Do NOT modify data records. Human evaluators handle data editing separately.

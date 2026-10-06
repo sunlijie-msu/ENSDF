@@ -49,8 +49,6 @@ L-Transfer values and corresponding J-π assignments:
 - **Parentheses indicate uncertainty in the assignment confidence, not the measurement precision**
 - **With/without parentheses and the placement of parentheses are critical for conveying the confidence level of the assignment**
 
-
-
 #### Basic Single Assignments
 
 | Notation | Spin | Parity | Other Spin? | Other Parity? | Expands To |
@@ -103,8 +101,6 @@ L-Transfer values and corresponding J-π assignments:
 | `1/2(+),3/2(+),5/2(+),7/2(+)` | Firm | Tentative | Impossible | Possible | 1/2+ or 3/2+ or 5/2+ or 7/2+ or low-probability other 1/2-, 3/2-, 5/2-, 7/2- |
 
 *Note: The last entry is too long for the J field (cols 23-39) and should be placed in the 2 L continuation record.*
-
-
 
 #### Mixed Confidence Patterns
 

@@ -81,5 +81,5 @@ Match the formatting of any pre-existing entries in the file. After editing, rea
 | Crossref rate limiting / silent drops | Use sequential fallback limits; handle `HTTP Error 400`; avoid aggressive multithreading. |
 | `filter=container-title:` in Crossref URL | Causes HTTP 400. Use `filter=issn:0090-3752` instead. |
 | URL encoding errors | Carefully encode citation strings in `query.bibliographic` requests. |
-| Non-NDS journals | Light mass chains often resolve to "Nuclear Physics A" (`NP A`) rather than "Nuclear Data Sheets" (`NDS`). |
+| Non-NDS journals | Light mass chains often resolve to `Nuclear Physics A` (`NP A`) rather than `Nuclear Data Sheets` (`NDS`). |
 | Grouped evaluations (one paper covers multiple A) | One DOI may serve multiple A values (e.g., NDS 209, 499 covers A=261 and A=265). Both rows get the same DOI. |
