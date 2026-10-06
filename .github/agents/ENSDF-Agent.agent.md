@@ -215,30 +215,30 @@ Example:
  34Cl  G 2572.0    5  5.0    2  D+Q      +0.85   23    0.05   5  5.1      6 B  S
 ```
 
-| Field | Columns | Description                                                           |
-| :---- | :------ | :-------------------------------------------------------------------- |
-| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 35Cl")                                    |
-| CONT  | 6       | Continuation label                                                    |
-| SPACE | 7       | Must be blank                                                         |
-| TYPE  | 8       | "G"                                                                   |
-| SPACE | 9       | Must be blank                                                         |
-| E     | 10–19   | Gamma energy                                                          |
-| DE    | 20–21   | Energy uncertainty                                                    |
-| SPACE | 22      | Readability space                                                     |
-| RI    | 23–29   | Relative photon intensity (starts at col 23)                          |
-| DRI   | 30–31   | Uncertainty in RI (including GT, LT markers)                          |
-| SPACE | 32      | Readability space                                                     |
-| M     | 33–41   | Multipolarity                                                         |
-| MR    | 42–49   | Mixing ratio                                                          |
-| DMR   | 50–55   | Uncertainty in MR                                                     |
-| CC    | 56–62   | Conversion coefficient                                                |
-| DCC   | 63–64   | Uncertainty in CC                                                     |
-| TI    | 65–74   | Total transition intensity                                            |
-| DTI   | 75–76   | Uncertainty in TI                                                     |
-| C     | 77      | **Comment flag** (A-Z, a-z, *, &, @) - See G-Record Flag Rules        |
-| SPACE | 78      | Usually blank; may be C to indicate coincidence (rarely used)         |
-| SPACE | 79      | Usually blank; may be N to indicate use for normalization             |
-| Q     | 80      | **Additional indicator** (space, ?, S) - See G-Record Indicator Rules |
+| Field | Columns | Description                                                       |
+| :---- | :------ | :---------------------------------------------------------------- |
+| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 35Cl")                                |
+| CONT  | 6       | Continuation label                                                |
+| SPACE | 7       | Must be blank                                                     |
+| TYPE  | 8       | "G"                                                               |
+| SPACE | 9       | Must be blank                                                     |
+| E     | 10–19   | Gamma energy                                                      |
+| DE    | 20–21   | Energy uncertainty                                                |
+| SPACE | 22      | Readability space                                                 |
+| RI    | 23–29   | Relative photon intensity (starts at col 23)                      |
+| DRI   | 30–31   | Uncertainty in RI (including GT, LT markers)                      |
+| SPACE | 32      | Readability space                                                 |
+| M     | 33–41   | Multipolarity                                                     |
+| MR    | 42–49   | Mixing ratio                                                      |
+| DMR   | 50–55   | Uncertainty in MR                                                 |
+| CC    | 56–62   | Conversion coefficient                                            |
+| DCC   | 63–64   | Uncertainty in CC                                                 |
+| TI    | 65–74   | Total transition intensity                                        |
+| DTI   | 75–76   | Uncertainty in TI                                                 |
+| C     | 77      | Comment flag (A-Z, a-z, *, &, @) - See G-Record Flag Rules        |
+| SPACE | 78      | Usually blank; may be C to indicate coincidence (rarely used)     |
+| SPACE | 79      | Usually blank; may be N to indicate use for normalization         |
+| Q     | 80      | Additional indicator (space, ?, S) - See G-Record Indicator Rules |
 
 
 #### G-Record Flag Rules

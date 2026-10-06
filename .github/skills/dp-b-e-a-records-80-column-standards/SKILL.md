@@ -15,13 +15,13 @@ Note that readability spaces may be absent in many ENSDF files, which are not ne
 ```text
 Example:
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
- 35XX  DP EP       DE IP     DI EI                                              
+ MMXX  DP EP       DE IP     DI EI                                              
  35CL  DP 501      10 3.5    12 9022                                            
 ```
 
 | Field | Columns | Description                            |
 | :---- | :------ | :------------------------------------- |
-| NUCID | 1–5     | Nucleus (e.g., " 35Cl" or " 35P ")     |
+| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 34Cl")     |
 | CONT  | 6       | Continuation label (blank)             |
 | SPACE | 7       | Must be blank                          |
 | D     | 8       | "D" for delayed particle               |
@@ -45,13 +45,13 @@ Example:
 ```text
 Example:
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
- 35XX  B EEEE.E    DE IB     DI           LOGFT  DFT                        CUNQ
+ MMXX  B EEEE.E    DE IB     DI           LOGFT  DFT                        CUNQ
  35P   B 1572.0    1  100.0  4            5.23   12                         C1U 
 ```
 
 | Field | Columns | Description                                                                     |
 | :---- | :------ | :------------------------------------------------------------------------------ |
-| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 35Cl")                                              |
+| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 34Cl")                                              |
 | CONT  | 6       | Continuation label                                                              |
 | SPACE | 7       | Must be blank                                                                   |
 | TYPE  | 8       | "B" for beta minus                                                              |
@@ -81,13 +81,13 @@ Example:
 ```text
 Example:
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
- 35XX  E EEEE.E    DE IB     DI IE     DI LOGFT  DFT            TI        DICUNQ
+ MMXX  E EEEE.E    DE IB     DI IE     DI LOGFT  DFT            TI        DICUNQ
  35CL  E 1750.0    5  65.0   8  35.0   5  4.85   15             100.0     8 C1US
 ```
 
 | Field | Columns | Description                                                                     |
 | :---- | :------ | :------------------------------------------------------------------------------ |
-| NUCID | 1–5     | Nucleus (e.g., " 35Cl" or " 35P ")                                              |
+| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 34Cl")                                              |
 | CONT  | 6       | Continuation label                                                              |
 | SPACE | 7       | Must be blank                                                                   |
 | TYPE  | 8       | "E" for electron capture                                                        |
@@ -120,13 +120,13 @@ Example:
 ```text
 Example:
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
-235XX  A EEEE.E    DE IA     DI HF     DHF                                  C  Q
+MMMXX  A EEEE.E    DE IA     DI HF     DHF                                  C  Q
 204AT  A 6632      6  100    5  1.5    3                                    C  ?
 ```
 
 | Field | Columns | Description                                                                    |
 | :---- | :------ | :----------------------------------------------------------------------------- |
-| NUCID | 1–5     | Nucleus (e.g., " 35P " or "204AT")                                             |
+| NUCID | 1–5     | Nucleus (e.g., "113I " or "204AT")                                             |
 | CONT  | 6       | Continuation label                                                             |
 | SPACE | 7       | Must be blank                                                                  |
 | TYPE  | 8       | "A" for alpha decay                                                            |
