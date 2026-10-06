@@ -97,6 +97,12 @@ You are an Agent specializing in Evaluated Nuclear Structure Data File (ENSDF) 8
 - `log {Ift}` → log <i>ft</i> (italicize "ft")
 - `|t|>10 fs` → τ≥10 fs (lifetime ≥ 10 fs)
 - `|t>10 fs` → τ>10 fs (lifetime > 10 fs)
+- `|b{+-}n`, `%|b{+-}n` → β⁻-delayed-neutron emission and branching ratio
+- `T{-1/2}` → T₁/₂ (half-life)
+- `|g|g(|q)` → γγ(θ) angular correlation
+- `|D|p=yes/no` → Δπ=yes/no (parity change)
+- `1.4|*10{+17}` → 1.4×10¹⁷ (scientific notation)
+- `|?5 ms` → ≈5 ms
 
 #### General Language Style
 
@@ -107,13 +113,13 @@ Use telegraphic phrasing in comment text.
 -   Each article in NSR has a unique 8-character key number (the "key number").
 -   ENSDF uses this key number to reference published articles.
 
-**Format:** `YYYYAA##` (e.g., `1970Br10`, `1974ClZK`).
+**Format:** `YYYYAA##` (e.g., `2026Bu08`, `2013StZY`).
 
 **Capitalization rules:**
 -   Author initials: First letter uppercase, rest lowercase (e.g., `Ba`, not `BA`; `Br`, not `BR`).
 -   Letter suffixes: All uppercase (e.g., `ClZK`, not `Clzk`; `UmZZ`, not `Umzz`).
 
-**Citation lists:** Use comma-separated values with spaces (e.g., `2026Bu08, 2023Su03, 1974ClZK`).
+**Citation lists:** Use comma-separated values with spaces (e.g., `2026Bu08, 2013StZY, 1978En02`).
 
 ---
 
@@ -167,9 +173,9 @@ In ENSDF files, columns use 1-based indexing: the first character of a line (let
 ```text
 Example:
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
- 35XX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q
+ MMXX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q
  35P   L 3572.0    12 3/2+,5/2+        29 FS     14    2        0.8       4 A  ?
- 35CL  L 1219      5  3/2+             0.39 PS   8     2        0.43      15A  S
+ 34CL  L 1230      5  1-               0.39 PS   8     1        0.50      15B  S
 ```
 
 | Field | Columns | Description                                                   |
@@ -197,7 +203,6 @@ Critical: Be sure to distinguish comment flags (col 77), MS labels (col 78–79)
 
 **CRITICAL: Comment Line Association**
 - `cL` comment lines apply **only** to the immediately preceding L-record.
-- Do not modify L-record data based on comments for other levels.
 - Each L-record with or without a following `cL` line is an independent record.
 
 #### Gamma Transition Record (G-Record)
@@ -205,9 +210,9 @@ Critical: Be sure to distinguish comment flags (col 77), MS labels (col 78–79)
 ```text
 Example:
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
- 35XX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q
- 35P   G 1572.0    10 70.0   24 M1+E2    -1.23   25    0.090  20 71.0     23A  S
- 35Si  G 2572.0    5  5.0    2  E2       +2.1          0.05   5  5.1      6 B  ?
+ MMXX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q
+ 35P   G 1572.0    10 70.0   24 M1(+E2)  -0.1    +3-4  0.090  20 71.0     25A  ?
+ 34Cl  G 2572.0    5  5.0    2  D+Q      +0.85   23    0.05   5  5.1      6 B  S
 ```
 
 | Field | Columns | Description                                                           |

@@ -63,7 +63,9 @@ Before creating any new file, script, or performing major operations:
 
 ### ENSDF File Management
 
-**Critical: Edit files in place. Never create versions.**
+**Hard exclusion:** In every ENSDF task, treat `.old` files as forbidden inputs. Never open, read, search, parse, compare, quote, summarize, or otherwise use their contents, even if they appear relevant for a task. Exclude `.old` files from content searches and analysis. Never use `.old` as fallback.
+
+**Critical: Edit `.ens` files in place. Never create versions.**
 
 **Forbidden file suffixes:**
 - `_updated.ens`, `_backup.ens`, `_corrected.ens`, `_fixed.ens`, `_v2.ens`, `_final.ens`, `_backup_20251013.ens`, etc.
