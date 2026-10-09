@@ -162,16 +162,15 @@ Physics publications typically report data in `uncertainty-in-last-digits` notat
 
 #### Examples
 
-| Data        |        Meaning |
-| ----------- | -------------: |
-| `123(12)`   |       123 ± 12 |
-| `123.4(12)` |    123.4 ± 1.2 |
+| Data        | Meaning        |
+| ----------- | -------------- |
+| `123(12)`   | 123 ± 12       |
+| `123.4(23)` | 123.4 ± 2.3    |
 | `0.123(4)`  | 0.123 ± 0.0004 |
 
-**Rules:**
-- Refer to `.github\ENSDF-Agent.agent.md` for ENSDF uncertainty notation rules.
-- Do not over-round the uncertainty (e.g., 123.892 ± 0.233 → 123.89(23) is correct, not 123.9(2)).
-- Do not report more decimal places than justified by the uncertainty.
+**Basics:**
+- Refer to `.github\ENSDF-Agent.agent.md` for full uncertainty notation rules.
+- Do not report more or fewer decimal places than justified by the uncertainty.
 - Do not mix decimal places between the value and its uncertainty.
 
 ### Bidirectional Positional Check

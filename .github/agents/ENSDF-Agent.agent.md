@@ -140,12 +140,12 @@ In ENSDF files, columns use 1-based indexing: the first character of a line (let
 - **Column 5:** Space.
 - **Results:** ` 35S `, ` 51V `, ` 12C `.
 
-**Two-digit mass number + two-letter element** (e.g., 35Cl, 74Ge, 32Si):
+**Two-digit mass number + two-letter element** (e.g., 35Cl, 74Ge, 91Zr):
 - **Format:** ` MMEl` (space, mass, element).
 - **Column 1:** Space.
-- **Columns 2–3:** Mass number (35, 74, 32).
-- **Columns 4–5:** Two-letter element symbol (Cl, Ge, Si).
-- **Results:** ` 35Cl`, ` 74Ge`, ` 32Si`.
+- **Columns 2–3:** Mass number (35, 74, 91).
+- **Columns 4–5:** Two-letter element symbol (Cl, Ge, Zr).
+- **Results:** ` 35CL`, ` 74GE`, ` 91ZR`.
 
 **Three-digit mass number + single-letter element** (e.g., 127I, 232U):
 - **Format:** `MMME ` (mass, element, space).
@@ -158,11 +158,11 @@ In ENSDF files, columns use 1-based indexing: the first character of a line (let
 - **Format:** `MMMEl` (mass, two-letter element).
 - **Columns 1–3:** Mass number (120, 208, 252).
 - **Columns 4–5:** Two-letter element symbol (Sn, Pb, Cf).
-- **Results:** `120Sn`, `208Pb`, `252Cf`.
+- **Results:** `120SN`, `208PB`, `252CF`.
 
 **CRITICAL NUCID RULES:**
 - Column positioning is **EXACT**; being one column off will break the ENSDF parser.
-- Element symbols are case-sensitive and must follow the official ENSDF style (e.g., antimony is `SB`, not `Sb`).
+- Element symbols are all caps (e.g., antimony is `SB`, not `Sb`).
 - Spaces are mandatory where specified to maintain field boundaries.
 - Mass numbers must be numeric only.
 
@@ -270,8 +270,24 @@ Note: Multiple identical gamma energies appearing in multiple level blocks shoul
 4. In beta-decay datasets, a level may have associated B-record (beta minus) or E-record (electron capture / beta plus) following the L-record to indicate the decay populated level. Understand L→B→G (Level-Beta-Gamma) or L→E→G (Level-ElectronConversion-Gamma) record grouping relationships.
 5. In delayed decay datasets, a level may have associated DP-records (delayed proton) or DN-records (delayed neutron) following the L-record to indicate the delayed decay populated level. Understand L→DP→G (Level-DelayedProton-Gamma) or L→DN→G (Level-DelayedNeutron-Gamma) record grouping relationships.
 
-**Integral Understanding of Continuation Data Records and Continuation Comments (Column 6)**
+#### Integral Understanding of Continuation Records (Column 6)
+
+| Combination | Col 6 | Col 7 | Col 8 | Col 9 |
+| ----- | ----- | ----- | ----- | ----- |
+| Combination | Continuation Identifier | Comment Identifier | Record Type      | Particle Symbol  |
+| ----- | ----- | ----- | ----- | ----- |
+| Level-record | Space | Space | `L` | Space |
+| Gamma-record | Space | Space | `G` | Space |
+| Beta-record | Space | Space | `B` | Space |
+| Electron-capture-record | Space | Space | `E` | Space |
+| Delayed-proton-record | Space | Space | `D` | `P` |
+| Delayed-neutron-record | Space | Space | `D` | `N` |
+| Continuation-record | Alphanumeric | Space | Same as preceding record | Space |
+| General Comment | Space | `c` | Space | Space |
+| Record Comment | Space | `c` | Same as preceding record | Space |
+
 - Column 6 contains the continuation identifier: blank for the first record and alphanumeric for continuation data records.
+
 - Common continuation records include `X L`, `2 L` and `F L` for L-records, `2 G`,  and `F G`, `S G`, `B G` for G-records, `S B` for B-records, `S E` for E-records.
 - Common continuation comments include `2cL`, `3cL`, and `4cL` for L-comment lines, and `2cG`, `3cG`, and `4cG` for G-comment lines.
 - Continuation data records must remain attached to, and apply only to, the immediately preceding record type (L or G).
@@ -487,7 +503,7 @@ Units or percent signs are placed after the value before the uncertainty:
 ### File Protection Rules
 
 -   **NEVER** edit `.old` files (reference files from previous evaluation rounds).
--   **NEVER** modify first line indentation or spacing in `.ens` files.
+-   **NEVER** modify first line `Identification Record` indentation or spacing in `.ens` files.
 -   **NEVER** modify XREF lists (XREF entries with pattern `NUCID X` have their own specific formatting rules).
 
 ### Debugging Technique
