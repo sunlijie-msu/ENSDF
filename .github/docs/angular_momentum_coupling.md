@@ -150,6 +150,28 @@ These reactions exchange nucleon type (n ↔ p), governed by the transferred ang
   * **Particle Input**: $0^+$ (Fermi)
   * **Particle Input**: $1^+$ (Gamow-Teller)
 
+### G. Beta Decay Selection Rules
+
+For $\beta^-$ decay, $\beta^+$ decay, and electron capture, apply the rules to the parent and daughter nuclear states. Define $\Delta J = |J_f-J_i|$. The electron or positron and neutrino (or antineutrino) each have spin $1/2$. Couple their spins to $S_\ell=0$ or $1$, then couple $S_\ell$ to their relative orbital angular momentum $L$: $J_\ell=|L-S_\ell|,\ldots,L+S_\ell$. The nuclear transition must have a rank $J_\ell$ allowed by angular-momentum addition between $J_i$ and $J_f$.
+
+#### Allowed Transitions
+
+Allowed transitions use $L=0$ for the leptons at the nucleus (leading s-wave approximation), so parity is unchanged. Angular-momentum coupling then gives $J_\ell=0$ for $S_\ell=0$ and $J_\ell=1$ for $S_\ell=1$.
+
+* **Fermi** (rank 0): $S_\ell=0$, $J_\ell=0$, and $\Delta J=0$, including $0\to0$.
+* **Gamow-Teller** (rank 1): $S_\ell=1$, $J_\ell=1$, and $\Delta J=0$ or $1$, except $0\to0$. Thus, a Gamow-Teller transition from a $0^+$ state populates a $1^+$ state; an allowed $0^+\to0^+$ transition is Fermi.
+
+#### Forbidden Transitions
+
+For a transition of forbiddenness order $K\ge1$, take the leading lepton orbital angular momentum as $L=K$. Coupling $L$ with $S_\ell=0$ gives $J_\ell=K$; coupling with $S_\ell=1$ gives $J_\ell=K-1,K,K+1$ (omitting negative values). Thus, non-unique transitions can have $\Delta J=K-1$, $K$, or $K+1$, while the unique transition selects $J_\ell=K+1$. Parity changes for odd $K$ and is unchanged for even $K$.
+
+* **First-forbidden** ($K=1$): opposite parity and $\Delta J=0,1,2$; unique first-forbidden transitions have $\Delta J=2$.
+* **Second-forbidden** ($K=2$): same parity and $\Delta J=1,2,3$; unique second-forbidden transitions have $\Delta J=3$.
+
+These parity patterns describe the leading beta-decay operators, not exact parity conservation: the weak interaction violates parity. See [Cappellaro, *Introduction to Applied Nuclear Physics*, Section 7.2, Beta Decay](https://phys.libretexts.org/Bookshelves/Nuclear_and_Particle_Physics/Introduction_to_Applied_Nuclear_Physics_(Cappellaro)/07%3A_Radioactive_Decay_Part_II/7.02%3A_Beta_Decay) for beta-decay context, including lepton angular momentum and parity violation.
+
+The `angular_momentum_coupling.py` utility models reaction-channel coupling; it does not implement weak-decay Fermi/Gamow-Teller operators or forbiddenness. Do not model beta decay by entering an effective `Particle` spin-parity in that utility.
+
 ## 3. Interpreting the Output
 
 When you run the code:
