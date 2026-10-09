@@ -118,11 +118,11 @@ An alpha particle is transferred.
 
 *Examples:* $(\alpha, \alpha)$, $(p, p)$
 
-* **$(\alpha, \alpha)$**: The alpha particle has spin 0. Since the projectile spin cannot flip, the angular momentum transfer is purely orbital ($\vec{\ell}$). This selectively excites **Natural Parity** resonances ($\pi = (-1)^\ell$) in the compound nucleus.
+* **$(\alpha, \alpha)$**: The alpha particle has spin $s_{\alpha}=0$. Since the projectile spin cannot flip ($S=0$), the angular momentum transfer is purely orbital ($\vec{\ell}$). This selectively excites **Natural Parity** resonances ($\pi = (-1)^\ell$) in the compound nucleus.
   * **Particle Input**: $0^+$
 
 * **$(p,p)$**: For proton scattering on nonzero spin targets, the compound states generally have several formation
-and decay channels. The proton ($s=1/2$) can undergo spin-flip. It allows both Isoscalar ($T=0$) and Isovector ($T=1$) transitions.
+and decay channels. The proton ($s_{p}=1/2$) can undergo spin-flip ($S=1$). It allows both Isoscalar ($T=0$) and Isovector ($T=1$) transitions.
   * **Particle Input**: $1/2^+$
   * **Particle Input**: $0^+$ for non spin-flip
   * **Particle Input**: $1^+$ for spin-flip
@@ -135,9 +135,9 @@ These reactions exchange nucleon type (n ↔ p), governed by the transferred ang
 
 #### Transition Types
 
-* **Fermi** ($\Delta L = 0, \Delta S = 0, \Delta J = 0, \Delta T = 0$): The emitted electron and antineutrino (or positron and neutrino) have antiparallel spins, and hence, no spin-flip, no parity change. Excites the Isobaric Analog State with $J_f = J_i$ and $\pi_f = \pi_i$.
+* **Fermi** ($\Delta L = 0, \Delta S = 0, \Delta J = 0, \Delta T = 0$): The emitted electron and antineutrino ($s_e = 1/2$, $s_{\bar{\nu}} = 1/2$) or positron and neutrino ($s_{e^+} = 1/2$, $s_{\nu} = 1/2$) have antiparallel spins, and hence, no spin-flip ($\Delta S = 0$), no parity change. Excites the Isobaric Analog State with $J_f = J_i$ and $\pi_f = \pi_i$.
 
-* **Gamow-Teller** ($\Delta L = 0, \Delta S = 1, \Delta J = 1, \Delta T = 0, \pm1$): The emitted leptons have parallel spins, and hence, spin-flip. Selection rule: $J_f = J_i, J_i \pm 1$ but except $J_i = 0 \to J_f = 0$. Therefore, from $0^+$ targets, GT transitions selectively populate $1^+$ states. Except $T_i = 0 \to T_f = 0$.
+* **Gamow-Teller** ($\Delta L = 0, \Delta S = 1, \Delta J = 1, \Delta T = 0, \pm1$): The emitted leptons have parallel spins, and hence, spin-flip ($\Delta S = 1$). Selection rule: $J_f = J_i, J_i \pm 1$ but except $J_i = 0 \to J_f = 0$. Therefore, from $0^+$ targets, GT transitions selectively populate $1^+$ states. Except $T_i = 0 \to T_f = 0$.
 
 * **Spin-Dipole** ($\Delta L = 1, \Delta S = 1$): Parity change ($\pi_f = -\pi_i$), with $\Delta J = 0, 1, 2$.
 

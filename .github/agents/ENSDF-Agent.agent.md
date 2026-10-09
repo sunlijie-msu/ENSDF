@@ -180,7 +180,7 @@ Example:
 
 | Field | Columns | Description                                                   |
 | :---- | :------ | :------------------------------------------------------------ |
-| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 35Cl").                           |
+| NUCID | 1–5     | Nucleus (e.g., " 35P ", " 76AS").                             |
 | CONT  | 6       | Continuation label.                                           |
 | Space | 7       | Must be blank.                                                |
 | TYPE  | 8       | `L` (Level).                                                  |
@@ -189,7 +189,7 @@ Example:
 | DE    | 20–21   | Energy uncertainty.                                           |
 | Space | 22      | Readability space.                                            |
 | J     | 23–39   | Spin `J` and parity `π`                                       |
-| T     | 40–49   | Half-life with units (e.g., MEV, FS, PS, S, H, D).            |
+| T     | 40–49   | Half-life with units (e.g., MEV, KEV, FS, PS, NS, S, H, D).   |
 | DT    | 50–55   | Half-life uncertainty.                                        |
 | L     | 56–64   | Angular momentum transfer (L-transfer).                       |
 | S     | 65–74   | Spectroscopic strength.                                       |
@@ -217,7 +217,7 @@ Example:
 
 | Field | Columns | Description                                                       |
 | :---- | :------ | :---------------------------------------------------------------- |
-| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 35Cl")                                |
+| NUCID | 1–5     | Nucleus (e.g., " 35P ", " 76AS")                                  |
 | CONT  | 6       | Continuation label                                                |
 | SPACE | 7       | Must be blank                                                     |
 | TYPE  | 8       | `G`                                                               |
