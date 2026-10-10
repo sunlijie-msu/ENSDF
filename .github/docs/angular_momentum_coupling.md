@@ -58,7 +58,7 @@ To use the code correctly, you must identify the correct `Transferred Particle` 
 
 ### A. Resonant Capture Reactions
 
-Examples: $(p, \gamma)$, $(n, \gamma)$
+Examples: $(p,\gamma)$, $(n,\gamma)$
 
 In these reactions, a projectile fuses with the target to form a compound nucleus (resonance).
 
@@ -66,7 +66,7 @@ In these reactions, a projectile fuses with the target to form a compound nucleu
 
 ### B. Single-Nucleon Transfer Reactions
 
-Examples: $(d, p)$, $(p, d)$, $(^3\text{He}, d)$, $(d, ^3\text{He})$, $(n, d)$, $(d, n)$, $(d, t)$, $(t, d)$, $(\alpha, t)$, $(t, \alpha)$, $(^3\text{He}, \alpha)$, $(\alpha, ^3\text{He})$
+Examples: $(d,p)$, $(p,d)$, $(^3\text{He},d)$, $(d,^3\text{He})$, $(n,d)$, $(d,n)$, $(d,t)$, $(t,d)$, $(\alpha,t)$, $(t,\alpha)$, $(^3\text{He},\alpha)$, $(\alpha,^3\text{He})$
 
 In these reactions, a single nucleon is transferred between the projectile and the target. You need to input the properties of the **transferred nucleon**.
 
@@ -78,7 +78,7 @@ In these reactions, a pair of nucleons is transferred. The total spin of this pa
 
 #### 1. Identical Nucleon Transfer (2n or 2p)
 
-*Reactions:* $(p, t)$, $(t, p)$ (2n transfer); $(^3\text{He}, n)$ (2p transfer)
+*Reactions:* $(p,t)$, $(t,p)$ (2n transfer); $(^3\text{He},n)$ (2p transfer)
 
 For the transfer of two identical nucleons (2n or 2p) in the same shell model orbit, the **Pauli Exclusion Principle** dictates that their total wavefunction must be antisymmetric.
 
@@ -89,11 +89,11 @@ For the transfer of two identical nucleons (2n or 2p) in the same shell model or
 
 #### 2. Neutron-Proton Transfer (1n1p)
 
-*Reactions:* $(\alpha, d)$, $(d, \alpha)$, $(^3\text{He}, p)$, $(p, ^3\text{He})$
+*Reactions:* $(\alpha,d)$, $(d,\alpha)$, $(^3\text{He},p)$, $(p,^3\text{He})$
 
 For the transfer of a neutron-proton pair, the selection rules depend on the projectile/ejectile properties.
 
-* **$(\alpha, d)$ and $(d, \alpha)$**:
+* **$(\alpha,d)$ and $(d,\alpha)$**:
   * Both $d$ and $\alpha$ have $T=0$. Thus, only **$T=0$** transfer is allowed.
   * Antisymmetry requires $s_{particle}+T$ to be odd (for $L=0$). Since $T=0$, the transferred pair must be spin triplet, i.e., **$s_{particle}=1$**.
   * **Particle Input**: $1^+$ for transferring $s_{particle}=1, T_{particle}=0$ particle pair
@@ -116,9 +116,9 @@ An alpha particle is transferred.
 
 ### E. Elastic Scattering
 
-*Examples:* $(\alpha, \alpha)$, $(p, p)$
+*Examples:* $(\alpha,\alpha)$, $(p,p)$
 
-* **$(\alpha, \alpha)$**: The alpha particle has spin $s_{\alpha}=0$. Since the projectile spin cannot flip ($S=0$), the angular momentum transfer is purely orbital ($\vec{\ell}$). This selectively excites **Natural Parity** resonances ($\pi = (-1)^\ell$) in the compound nucleus.
+* **$(\alpha,\alpha)$**: The alpha particle has spin $s_{\alpha}=0$. Since the projectile spin cannot flip ($S=0$), the angular momentum transfer is purely orbital ($\vec{\ell}$). This selectively excites **Natural Parity** resonances ($\pi = (-1)^\ell$) in the compound nucleus.
   * **Particle Input**: $0^+$
 
 * **$(p,p)$**: For proton scattering on nonzero spin targets, the compound states generally have several formation
@@ -131,44 +131,41 @@ and decay channels. The proton ($s_{p}=1/2$) can undergo spin-flip ($S=1$). It a
 
 *Examples:* $(p,n)$, $(^3\text{He}, t)$, $(^6\text{Li},^6\text{He})$
 
-These reactions exchange nucleon type (n ↔ p), governed by the transferred angular momentum ($\Delta L$), spin ($\Delta S$), and total angular momentum ($\Delta J = \Delta L + \Delta S$). Parity change follows $\pi_f = \pi_i (-1)^{\Delta L}$.
+These reactions exchange nucleon type (n ↔ p), governed by the transferred angular momentum ($\Delta L$), spin ($\Delta S$), and total angular momentum ($\Delta J = \Delta L + \Delta S$, vector sum). Parity change follows $\Delta\pi = (-1)^{\Delta L}$.
 
 #### Transition Types
 
-* **Fermi** ($\Delta L = 0, \Delta S = 0, \Delta J = 0, \Delta T = 0$): The emitted electron and antineutrino ($s_e = 1/2$, $s_{\bar{\nu}} = 1/2$) or positron and neutrino ($s_{e^+} = 1/2$, $s_{\nu} = 1/2$) have antiparallel spins, and hence, no spin-flip ($\Delta S = 0$), no parity change. Excites the Isobaric Analog State with $J_f = J_i$ and $\pi_f = \pi_i$.
+* **Allowed Fermi** ($\Delta L = 0, \Delta S = 0, \Delta J = 0, \Delta T = 0, \Delta \pi = no$): The emitted electron and antineutrino ($s_e = 1/2$, $s_{\bar{\nu}} = 1/2$) or positron and neutrino ($s_{e^+} = 1/2$, $s_{\nu} = 1/2$) have antiparallel spins, and hence, no spin-flip ($\Delta S = 0$), no parity change. Excites the Isobaric Analog State with $J_f = J_i$ and $\pi_f = \pi_i$.
 
-* **Gamow-Teller** ($\Delta L = 0, \Delta S = 1, \Delta J = 1, \Delta T = 0, \pm1$): The emitted leptons have parallel spins, and hence, spin-flip ($\Delta S = 1$). Selection rule: $J_f = J_i, J_i \pm 1$ but except $J_i = 0 \to J_f = 0$. Therefore, from $0^+$ targets, GT transitions selectively populate $1^+$ states. Except $T_i = 0 \to T_f = 0$.
+* **Allowed Gamow-Teller** ($\Delta L = 0, \Delta S = 1, \Delta J = 1, \Delta T = 0, \pm1, \Delta \pi = no$): The emitted leptons have parallel spins, and hence, spin-flip ($\Delta S = 1$). Selection rule: $J_f = J_i, J_i \pm 1$ but except $J_i = 0 \to J_f = 0$. Therefore, from $0^+$ targets, GT transitions selectively populate $1^+$ states. Except $T_i = 0 \to T_f = 0$.
 
 * **Spin-Dipole** ($\Delta L = 1, \Delta S = 1$): Parity change ($\pi_f = -\pi_i$), with $\Delta J = 0, 1, 2$.
 
 #### Particle Input
 
-* **$(^6\text{Li}, ^6\text{He})$**: Pure Gamow-Teller ($1^+$ $^6\text{Li}$ to $0^+$ $^6\text{He}$ projectile).
+* **$(^6\text{Li},^6\text{He})$**: Pure Gamow-Teller ($1^+$ $^6\text{Li}$ to $0^+$ $^6\text{He}$ projectile).
   * **Particle Input**: $1^+$
 
-* **$(p, n)$ and $(^3\text{He}, t)$**: Mixed (Fermi + Gamow-Teller).
+* **$(p,n)$ and $(^3\text{He},t)$**: Mixed (Fermi + Gamow-Teller).
   * **Particle Input**: $0^+$ (Fermi)
   * **Particle Input**: $1^+$ (Gamow-Teller)
 
 ### G. Beta Decay Selection Rules
 
-For $\beta^-$ decay, $\beta^+$ decay, and electron capture, apply the rules to the parent and daughter nuclear states. Define $\Delta J = |J_f-J_i|$. The electron or positron and neutrino (or antineutrino) each have spin $1/2$. Couple their spins to $S_\ell=0$ or $1$, then couple $S_\ell$ to their relative orbital angular momentum $L$: $J_\ell=|L-S_\ell|,\ldots,L+S_\ell$. The nuclear transition must have a rank $J_\ell$ allowed by angular-momentum addition between $J_i$ and $J_f$.
+For $\beta^-$ decay, $\beta^+$ decay, and electron capture, the electron or positron and neutrino (or antineutrino) each have spin $1/2$.
+Couple order slightly different from above. First, the leptons are coupled spins, which give $S=0$ (antiparallel) or $1$ (parallel), then instead of couple $S$ to decay parent $J_\text{initial}$ and their carry off orbital angular momentum $\ell$ to give final spin $J_{final}$, one typically considers Delta J=|L-S|,...,L+S.
 
-#### Allowed Transitions
+Designation:
+Leptons coupled spins s: 0 (Fermi, antiparallel) or 1 (Gamow-Teller, parallel)
+ell=0 (Allowed), ell=1 (First-forbidden), ell=2 (Second-forbidden), etc
 
-Allowed transitions use $L=0$ for the leptons at the nucleus (leading s-wave approximation), so parity is unchanged. Angular-momentum coupling then gives $J_\ell=0$ for $S_\ell=0$ and $J_\ell=1$ for $S_\ell=1$.
-
-* **Fermi** (rank 0): $S_\ell=0$, $J_\ell=0$, and $\Delta J=0$, including $0\to0$.
-* **Gamow-Teller** (rank 1): $S_\ell=1$, $J_\ell=1$, and $\Delta J=0$ or $1$, except $0\to0$. Thus, a Gamow-Teller transition from a $0^+$ state populates a $1^+$ state; an allowed $0^+\to0^+$ transition is Fermi.
-
-#### Forbidden Transitions
-
-For a transition of forbiddenness order $K\ge1$, take the leading lepton orbital angular momentum as $L=K$. Coupling $L$ with $S_\ell=0$ gives $J_\ell=K$; coupling with $S_\ell=1$ gives $J_\ell=K-1,K,K+1$ (omitting negative values). Thus, non-unique transitions can have $\Delta J=K-1$, $K$, or $K+1$, while the unique transition selects $J_\ell=K+1$. Parity changes for odd $K$ and is unchanged for even $K$.
-
-* **First-forbidden** ($K=1$): opposite parity and $\Delta J=0,1,2$; unique first-forbidden transitions have $\Delta J=2$.
-* **Second-forbidden** ($K=2$): same parity and $\Delta J=1,2,3$; unique second-forbidden transitions have $\Delta J=3$.
-
-These parity patterns describe the leading beta-decay operators, not exact parity conservation: the weak interaction violates parity. See [Cappellaro, *Introduction to Applied Nuclear Physics*, Section 7.2, Beta Decay](https://phys.libretexts.org/Bookshelves/Nuclear_and_Particle_Physics/Introduction_to_Applied_Nuclear_Physics_(Cappellaro)/07%3A_Radioactive_Decay_Part_II/7.02%3A_Beta_Decay) for beta-decay context, including lepton angular momentum and parity violation.
+L; S=0,1; Delta J=L+S; Delta π=(-1)^L; Delta T
+L=0; S=0; Delta J=0; Delta π=no; Delta T=0: Allowed Fermi transition
+L=0; S=1; Delta J=0,1; Delta π=no; Delta T=0,1: Allowed Gamow-Teller transition
+L=1; S=0; Delta J=1; Delta π=yes; Delta T=0,1,2: First-forbidden Fermi transition
+L=1; S=1; Delta J=0,1,2; Delta π=yes; Delta T=0,1,2: First-forbidden Gamow-Teller transition
+L=2; S=0; Delta J=2; Delta π=no: Second-forbidden Fermi transition
+L=2; S=1; Delta J=1,2,3; Delta π=no: Second-forbidden Gamow-Teller transition
 
 The `angular_momentum_coupling.py` utility models reaction-channel coupling; it does not implement weak-decay Fermi/Gamow-Teller operators or forbiddenness. Do not model beta decay by entering an effective `Particle` spin-parity in that utility.
 
