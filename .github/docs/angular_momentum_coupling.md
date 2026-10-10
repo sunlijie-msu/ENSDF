@@ -9,7 +9,7 @@ The code implements the **Channel Spin Coupling Scheme**, which is a standard me
 ### Notation
 
 | Symbol | Meaning |
-|--------|---------|
+| :--- | :--- |
 | $J_{target}$ | Spin of target nucleus (Python target input) |
 | $\pi_{target}$ | Parity of target nucleus (Python target input) |
 | $s_{particle}$ | Spin of transferred particle (Python particle input) |
@@ -24,15 +24,19 @@ The code implements the **Channel Spin Coupling Scheme**, which is a standard me
 
 ### Conservation Laws
 
-In any nuclear reaction Target + Transferred Particle -> Final State, the following quantities are conserved:
+In any nuclear reaction $\text{Target} + \text{Transferred Particle} \to \text{Final State}$, the following quantities are conserved:
 
 1. **Total Angular Momentum** ($\vec{J}$):
 
-   $$\vec{J}_{final} = \vec{J}_{target} + \vec{s}_{particle} + \vec{\ell}$$
+   $$
+   \vec{J}_{final} = \vec{J}_{target} + \vec{s}_{particle} + \vec{\ell}
+   $$
 
 2. **Parity** ($\pi$):
 
-   $$\pi_{final} = \pi_{target} \times \pi_{particle} \times (-1)^{\ell}$$
+   $$
+   \pi_{final} = \pi_{target} \times \pi_{particle} \times (-1)^{\ell}
+   $$
 
 ### Coupling Scheme Used in Code
 
@@ -40,13 +44,17 @@ The code performs the vector addition in two steps (Channel Spin representation)
 
 1. **Calculate Channel Spin** ($\vec{S}$): Couples the target spin and particle spin.
 
-   $$\vec{S} = \vec{J}_{target} + \vec{s}_{particle}$$
+   $$
+   \vec{S} = \vec{J}_{target} + \vec{s}_{particle}
+   $$
 
    Possible values: $|J_{target} - s_{particle}| \le S \le J_{target} + s_{particle}$
 
 2. **Calculate Final Spin** ($\vec{J}_{final}$): Couples the channel spin with the orbital angular momentum.
 
-   $$\vec{J}_{final} = \vec{\ell} + \vec{S}$$
+   $$
+   \vec{J}_{final} = \vec{\ell} + \vec{S}
+   $$
 
    Possible values: $|\ell - S| \le J_{final} \le \ell + S$
 
@@ -152,11 +160,17 @@ These reactions exchange nucleon type (n ↔ p), governed by the transferred ang
 
 ### G. Beta Decay Selection Rules
 
-For $\beta^-$ decay, $\beta^+$ decay, and electron capture, the electron or positron and neutrino (or antineutrino) each have spin $s=1/2$. Couple their spins to $S=0$ (Fermi, antiparallel) or $S=1$ (Gamow-Teller, parallel), then couple $S$ with lepton orbital angular momentum $\ell$. $\Delta\pi=(-1)^\ell$
+For $\beta^-$ decay, $\beta^+$ decay, and electron capture, the electron or positron and neutrino (or antineutrino) each have spin $s=1/2$. Couple their spins to $S=0$ (Fermi, antiparallel) or $S=1$ (Gamow-Teller, parallel), then couple $S$ with lepton orbital angular momentum $\ell$.
 
-Here, $\Delta J$ lists the possible nuclear angular-momentum ranks $J_\ell$ from this vector coupling:
+$$
+\Delta\pi=(-1)^\ell
+$$
 
-$$\Delta J=|\ell-S|,\ldots,\ell+S.$$
+Here, $\Delta J$ lists the possible total angular momentum changes from this vector coupling:
+
+$$
+\Delta J=|\ell-S|,\ldots,\ell+S.
+$$
 
 **Designation:**
 
@@ -164,7 +178,7 @@ $$\Delta J=|\ell-S|,\ldots,\ell+S.$$
 * Leptons carry off orbital angular momentum $\ell=0$ (Allowed), $\ell=1$ (First-forbidden), $\ell=2$ (Second-forbidden), etc.
 
 | $\ell$ | $S$ | $\Delta J$ | $\Delta\pi$ | $\Delta T$ | Transition |
-|---:|---:|:---|:---:|:---:|:---|
+| ---: | ---: | :--- | :---: | :---: | :--- |
 | 0 | 0 | 0 | no | 0 | Allowed Fermi |
 | 0 | 1 | 0, 1 | no | 0, 1 | Allowed Gamow-Teller |
 | 1 | 0 | 1 | yes | 0, 1, 2* | First-forbidden Fermi |
@@ -176,9 +190,9 @@ $$\Delta J=|\ell-S|,\ldots,\ell+S.$$
 
 A unique first-forbidden transition is defined specifically by the maximum possible angular momentum change for a first-forbidden decay, which is $\Delta J = 2$. Because achieving an angular momentum change of $\Delta J = 2$ strictly requires the $S = 1$ state, unique first-forbidden transitions are purely Gamow-Teller. They cannot be Fermi transitions.
 
+$J_i = 0$ to $J_f = 0$ cannot be coupled via an $S=1$ (Gamow-Teller) transition; only $S=0$ (Fermi) is possible.
+
 The table follows the requested $\Delta T$ classification. For standard one-body beta decay, the Fermi and Gamow-Teller isospin operator has rank 1, so the physical nuclear transition generally satisfies $\Delta T=0$ or $1$ (with the usual triangle-rule and endpoint restrictions); $\Delta T=2$ requires a higher-rank or nonstandard charge-exchange operator and is marked with an asterisk rather than presented as a standard beta-decay selection rule.
-
-
 
 The `angular_momentum_coupling.py` utility models reaction-channel coupling; it does not implement weak-decay Fermi/Gamow-Teller operators or forbiddenness. Do not model beta decay by entering an effective `Particle` spin-parity in that utility.
 
@@ -249,7 +263,9 @@ For transfer reactions, isospin ($T$) provides additional selection rules.
 
 **Selection Rule**: The final isospin is determined by vector addition:
 
-$$\vec{T}_{final} = \vec{T}_{target} + \vec{T}_{particle}$$
+$$
+\vec{T}_{final} = \vec{T}_{target} + \vec{T}_{particle}
+$$
 
 *Note: This tool calculates angular momentum ($J^\pi$) only. Isospin selection rules must be applied separately.*
 
