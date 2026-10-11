@@ -271,6 +271,8 @@ Use the individual 80-column record standards:
 - B-record: `.github/skills/ensdf-beta-minus-record-80-column-standard/SKILL.md`
 - E-record: `.github/skills/ensdf-electron-capture-beta-plus-record-80-column-standard/SKILL.md`
 - A-record: `.github/skills/ensdf-alpha-record-80-column-standard/SKILL.md`
+- General comment: `.github/skills/ensdf-general-comment-record-80-column-standard/SKILL.md`
+- Record comment: `.github/skills/ensdf-record-comment-80-column-standard/SKILL.md`
 
 ---
 
