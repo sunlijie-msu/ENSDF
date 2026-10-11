@@ -12,7 +12,7 @@ description: "Defines ENSDF record-comment fields, SYM$ identifiers, continuatio
 | C     | 7       | Comment identifier: `c`                                           |
 | RTYPE | 8       | Blank, or Record type being commented on                          |
 | PSYM  | 9       | Blank, or Particle symbol `N` or `P`                              |
-| SYM   | 10–80   | `$`, `SYM$`, or comma-separated `SYM`s ending in `$`              |
+| SYM   | 10–80   | `$`, `SYM$`, `SYM,SYM$`, `SYM,SYM,SYM$`                           |
 | CTEXT | 10–80   | Comment text follows the `$`delimiter                             |
 
 ## Notes
@@ -20,9 +20,12 @@ description: "Defines ENSDF record-comment fields, SYM$ identifiers, continuatio
 1. A record comment following a record of the same RTYPE applies only to that record. For example, `cL` with `J$` following an L record comments only on that level's spin / parity.
 2. Specified field symbol `SYM` must be followed by `$` delimiter. `SYM` can be any data field of the L, G, B, E, A, or DP record (e.g., `E`, `J`, `T`, `S`, `RI`, `M`, `MR`, etc).
 3. On continuation comment records, `CTEXT` may start in column 10, and `SYM` or `SYM`s are not repeated.
+
 Example:
 ```
- 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 3194.74|g, M1+E2 to 
- 34S 2cL 2+, 2127.561 level. Discrepancy: L=3 from 3/2+ for 5326 {I6} in        
- 34S 3cL {+33}S(d,p).                                                           
+ 34S   L 2127.561  15 2+               0.315 PS  12                         Z   
+ 34S  cL J$spin=2 from p|g(|q) in {+31}P(|a,p|g). |p=+ from 2127.498|g, E2 to   
+ 34S 2cL 0+, g.s.                                                               
+ 34S  cL $|b{-2}(p,p')=0.28 {I1} (1985Al03).                                    
+
 ```
