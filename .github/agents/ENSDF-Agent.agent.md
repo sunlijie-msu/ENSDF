@@ -263,7 +263,14 @@ Only in the Adopted Datasets: XREF (cross-reference) labels in continuation reco
 
 ### Other Record Format Standards
 
-Delayed Particle (DP-Record), Beta Minus Decay (B-Record), Electron Capture/Beta Plus Decay (E-Record), and Alpha Decay (A-Record) Format Standards refer to the skill `.github/skills/dp-b-e-a-records-80-column-standards/SKILL.md`.
+Use the individual 80-column record standards:
+
+- L-record: `.github/skills/ensdf-level-record-80-column-standard/SKILL.md`
+- G-record: `.github/skills/ensdf-gamma-record-80-column-standard/SKILL.md`
+- DP-record: `.github/skills/ensdf-delayed-particle-record-80-column-standard/SKILL.md`
+- B-record: `.github/skills/ensdf-beta-minus-record-80-column-standard/SKILL.md`
+- E-record: `.github/skills/ensdf-electron-capture-beta-plus-record-80-column-standard/SKILL.md`
+- A-record: `.github/skills/ensdf-alpha-record-80-column-standard/SKILL.md`
 
 ---
 
