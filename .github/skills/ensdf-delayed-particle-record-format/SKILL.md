@@ -5,8 +5,6 @@ description: "Defines ENSDF delayed-particle (DP-record) 80-column fields and sh
 
 # Delayed Proton Emission Record (DP-Record)
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
-
 ```text
 Example:
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
@@ -14,23 +12,21 @@ Example:
  35CL  DP 501      10 3.5    12 9022                                            
 ```
 
-| Field | Columns | Description                                               |
-| :---- | :------ | :-------------------------------------------------------- |
-| NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS `, `152Gd`) |
-| CONT  | 6       | Continuation identifier (blank or alphanumeric character) | 
-| SPACE | 7       | Must be blank                                             |
-| RTYPE | 8       | Record type `D` for delayed particle                      |
-| PSYM  | 9       | Particle symbol `P` for proton                            |
-| SPACE | 10      | Readability space                                         |
-| EP    | 11–19   | Proton energy in keV                                      |
-| DE    | 20–21   | Energy uncertainty                                        |
-| SPACE | 22      | Readability space                                         |
-| IP    | 23–29   | Proton intensity in percent                               |
-| DIP   | 30–31   | Uncertainty in IP                                         |
-| SPACE | 32      | Readability space                                         |
-| EI    | 33–39   | Energy of proton-emitting level in keV                    |
+| Field | Columns | Description                                                       |
+| :---- | :------ | :---------------------------------------------------------------- |
+| NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS`, `127I `, `152GD`) |
+| CONT  | 6       | Blank, or an alphanumeric continuation identifier other than `1`  |
+| SPACE | 7       | Must be blank                                                     |
+| RTYPE | 8       | Record type `D` for delayed particle                              |
+| PSYM  | 9       | Particle symbol `P` for proton                                    |
+| SPACE | 10      | Readability space                                                 |
+| EP    | 11–19   | Proton energy in keV                                              |
+| DE    | 20–21   | Energy uncertainty                                                |
+| SPACE | 22      | Readability space                                                 |
+| IP    | 23–29   | Proton intensity in percent                                       |
+| DIP   | 30–31   | Uncertainty in IP                                                 |
+| SPACE | 32      | Readability space                                                 |
+| EI    | 33–39   | Energy of proton-emitting level in keV                            |
 
-**Critical DP Format Rules:**
-- Delayed Neutron Emission Record (DN-Record), Delayed Alpha Emission Record (DA-Record), Delayed Deuteron Emission Record (DD-Record), and Delayed Triton Emission Record (DT-Record) follow the same format as DP-Records, with `D` in column 8 and `N`, `A`, `D`, or `T` in column 9, respectively.
-- Readable spaces at columns 10, 22, and 32 for human readability.
-- All field positioning follows standard ENSDF left-justification rules.
+## Related Delayed-Particle Records
+- Delayed-neutron (DN), delayed-alpha (DA), delayed-deuteron (DD), and delayed-triton (DT) records use the same field layout. Column 8 contains `D`; column 9 contains `N`, `A`, `D`, or `T`, respectively.

@@ -13,29 +13,25 @@ Example:
  34CL  L 1230      5  1-               0.39 PS   8     1        0.50      15B  S
 ```
 
-| Field | Columns | Description                                                   |
-| :---- | :------ | :------------------------------------------------------------ |
-| NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS `, `152Gd`)     |
-| CONT  | 6       | Continuation identifier (blank or any alphanumeric character) |
-| SPACE | 7       | Must be blank.                                                |
-| RTYPE | 8       | Record type: `L` (Level).                                     |
-| PSYM  | 9       | Particle symbol must be blank.                                |
-| E     | 10–19   | Level energy.                                                 |
-| DE    | 20–21   | Energy uncertainty.                                           |
-| SPACE | 22      | Readability space.                                            |
-| J     | 23–39   | Spin `J` and parity `π`                                       |
-| T     | 40–49   | Half-life with units (e.g., MEV, KEV, FS, PS, NS, S, H, D).   |
-| DT    | 50–55   | Half-life uncertainty.                                        |
-| L     | 56–64   | Angular momentum transfer (L-transfer).                       |
-| S     | 65–74   | Spectroscopic strength.                                       |
-| DS    | 75–76   | Uncertainty in S.                                             |
-| C     | 77      | Comment flag.                                                 |
-| MS    | 78–79   | 'M ' isomer; 'R ' resonance; 'C ' PN comments (uncommon)      |
-| Q     | 80      | `?` questionable/uncertain; `S` assumed/at separation energy. |
+| Field | Columns | Description                                                                 |
+| :---- | :------ | :-------------------------------------------------------------------------- |
+| NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS`, `127I `, `152GD`)           |
+| CONT  | 6       | Blank, or an alphanumeric continuation identifier other than `1`            |
+| SPACE | 7       | Must be blank.                                                              |
+| RTYPE | 8       | Record type: `L` (Level).                                                   |
+| PSYM  | 9       | Particle symbol must be blank.                                              |
+| E     | 10–19   | Level energy.                                                               |
+| DE    | 20–21   | Energy uncertainty.                                                         |
+| SPACE | 22      | Readability space.                                                          |
+| J     | 23–39   | Spin `J` and parity `π`                                                     |
+| T     | 40–49   | Half-life or level width, with units (e.g., FS, PS, NS, S, H, D, KEV, MEV). |
+| DT    | 50–55   | Half-life uncertainty.                                                      |
+| L     | 56–64   | Angular momentum transfer (L-transfer).                                     |
+| S     | 65–74   | Spectroscopic strength.                                                     |
+| DS    | 75–76   | Uncertainty in S.                                                           |
+| C     | 77      | Comment flag.                                                               |
+| MS    | 78–79   | `M` isomer; `R` resonance; `C` PN comment (uncommon)                        |
+| Q     | 80      | `?` questionable/uncertain; `S` assumed/at separation energy.               |
 
 J field: For multiple J-π values separated by commas, no spaces after commas.
 Critical: Be sure to distinguish comment flags (col 77), MS labels (col 78–79), and `?` (col 80).
-
-**CRITICAL: Comment Line Association**
-- `cL` comment lines apply **only** to the immediately preceding L-record.
-- Each L-record with or without a following `cL` line is an independent record.

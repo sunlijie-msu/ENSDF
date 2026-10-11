@@ -3,9 +3,7 @@ name: ensdf-beta-minus-record-format
 description: "Defines ENSDF beta-minus (B-record) 80-column fields and record-specific rules. Use when checking, interpreting, or formatting an ENSDF B-record."
 ---
 
-# Beta Minus Decay Record (B-Record)
-
-ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
+# Beta-Minus Decay Record (B-Record)
 
 ```text
 Example:
@@ -16,12 +14,12 @@ Example:
 
 | Field | Columns | Description                                                                     |
 | :---- | :------ | :------------------------------------------------------------------------------ |
-| NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS `, `152Gd`)                       |
-| CONT  | 6       | Continuation identifier (blank or any alphanumeric character)                   |
+| NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS`, `127I `, `152GD`)               |
+| CONT  | 6       | Blank, or an alphanumeric continuation identifier other than `1`                |
 | SPACE | 7       | Must be blank                                                                   |
 | RTYPE | 8       | Record type `B` for beta minus                                                  |
 | PSYM  | 9       | Particle symbol must be blank                                                   |
-| E     | 10–19   | Endpoint energy of beta in keV (no need to edit)                                |
+| E     | 10–19   | Beta-decay endpoint energy in keV                                               |
 | DE    | 20–21   | Energy uncertainty                                                              |
 | SPACE | 22      | Readability space                                                               |
 | IB    | 23–29   | Intensity of beta minus decay branch                                            |
@@ -36,7 +34,7 @@ Example:
 | Q     | 80      | `?` denotes uncertain or questionable beta minus decay                          |
 
 **Critical B-Record Rules:**
-- Must follow LEVEL record for the level which is fed by the beta minus decay.
-- IB intensity in same units as other intensity fields in file.
-- LOGFT for uniqueness classification (col 78-79).
-- Blank signifies allowed transition for forbiddenness field.
+- Must follow the L record populated by beta-minus decay.
+- `IB` uses the same units as the other intensity fields in the dataset.
+- `LOGFT` is the log of the comparative half-life, log ft.
+- `UN` (columns 78–79) gives the forbiddenness classification; blank denotes an allowed transition.
