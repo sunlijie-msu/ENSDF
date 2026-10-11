@@ -129,9 +129,9 @@ Use telegraphic phrasing in comment text.
 
 ## ENSDF Organization and Structure
 
-A line represents a record or part of a record containing 80 characters.
+A **line** represents a **record** or part of a record containing 80 characters.
 
-A column represents a field or part of a field of records.
+A **column** represents a **field** or part of a field of records.
 
 In ENSDF files, columns use 1-based indexing: the first character of a line (letter, number, or space) occupies column 1.
 
@@ -206,7 +206,7 @@ Critical: ENSDF files require exact byte/character positioning. One column off l
 - Continuation comments must remain attached to the immediately preceding comment.
 - `2cL` must follow `cL`, and `3cL` must follow `2cL`, etc.
 - `2cG` must follow `cG`, and `3cG` must follow `2cG`, etc.
-- Continuation records have their own text-format standards. Do not use comment text format in continuation records. Example: `35CA2 L %EC+%B+=100$%ECP=95.8 3$%EC2P=4.2 3`.
+- Continuation records have their own text-format standards. Do not use comment text format in continuation records. Example: ` 35CA2 L %EC+%B+=100$%ECP=95.8 3$%EC2P=4.2 3`.
 
 #### Integral Understanding of Comment Records
 
@@ -429,14 +429,14 @@ In comment lines, scientific notation uses `{In}` for uncertainties:
 Units or percent signs are placed after the value before the uncertainty:
 
 ```text
- 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)
- 34S   cL $ratio=54% {I+18-11} (1980Be15)
+ 35CL cL $|w|g=3.6 eV {I11} (1972Hu10)
+ 34S  cL $ratio=54% {I+18-11} (1980Be15)
 ```
 
 **Examples in Context:**
 
 - Data record: ` 35P   L 1572.0    12 3/2+             2.29 PS   14` (uncertainties are plain numbers).
-- Comment line: ` 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)` (uncertainty uses `{I11}` notation).
+- Comment line: ` 35CL cL $|w|g=3.6 eV {I11} (1972Hu10)` (uncertainty uses `{I11}` notation).
 
 ---
 
@@ -536,10 +536,11 @@ Validate each edited line and the complete file afterward.
 
 ## Document Structure
 
-1. **Primary Role** — ENSDF 80-column fixed format expertise
-2. **Comment Text Format Standards** — Superscripts, Greek letters, NSR references
-3. **80-Column Format Standards** — NUCID, L/G-records, XREF notation
-4. **Uncertainty Notation Rules** — Rounding, field formats, notation styles
-5. **File Editing Workflow** — Edit-validate cycle, validation tools, methodology
-6. **Data Extraction & Quality Assurance** — Spot-check validation protocol
-7. **Academic Standards** — Grammar, hyphenation, consistency
+1. **Primary Role** — ENSDF expertise and scope
+2. **ENSDF Comment Text Format Dictionary** — Superscripts, subscripts, Greek letters, mathematical symbols, and examples
+3. **Nuclear Science References (NSR)** — Key-number format and citations
+4. **ENSDF Organization and Structure** — Field positions, record relationships, XREFs, and record-format skills
+5. **ENSDF Uncertainty Notation Rules** — Rounding and uncertainty formats for data and comment records
+6. **ENSDF File Editing Protocols** — File protection, validation tools, and editing methodology
+7. **Data Extraction and Entry Quality Assurance** — Positional checks and spot-check protocol
+8. **Academic Standards** — Grammar and hyphenation
