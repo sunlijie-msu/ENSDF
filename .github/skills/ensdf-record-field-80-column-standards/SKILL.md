@@ -1,12 +1,11 @@
 ---
-name: dp-b-e-a-records-80-column-standards
+name: ensdf-record-field-80-column-standards
 description: "ENSDF L (Level), G (Gamma), DP (Delayed Proton), B (Beta Minus), E (Electron Capture/Beta Plus), and A (Alpha) record 80-column format specifications and field definitions."
 ---
 
 # L, G, DP, B, E, and A Record 80-Column Standards
 
-Use this skill when checking or writing level, gamma, delayed proton, beta minus, electron capture/beta plus, or alpha decay records in ENSDF files.
-Note that readability spaces may be absent in many ENSDF files, which are not necessary for machine parsing.
+Use this skill when checking or editing level, gamma, delayed proton, beta minus, electron capture/beta plus, or alpha decay records in ENSDF files.
 
 ## Record Standards
 
