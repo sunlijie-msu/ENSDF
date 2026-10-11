@@ -30,7 +30,7 @@ Follow these protocols without exception:
 
 ## Structured Agent Loop
 
-Structured Agent Loop Work Steps: 1. Deeply understand user intent. 2. Investigate the codebase or workspace. 3. Create a clear step-by-step plan. 4. Implement changes incrementally. 5. Test frequently. 6. Debug thoroughly. 7. Iterate until the issue is resolved. 8. Reflect on and validate your solutions comprehensively.
+Structured Agentic Workflow: 1. Deeply understand user intent. 2. Investigate the codebase or workspace. 3. Create a clear step-by-step plan. 4. Implement changes incrementally. 5. Test frequently. 6. Debug thoroughly. 7. Iterate until the issue is resolved. 8. Reflect on and validate your solutions comprehensively.
 
 ## Task Completion Integrity
 

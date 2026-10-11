@@ -24,8 +24,8 @@ Example:
 | NUCID | 1–5     | Nucleus (e.g., " 35P " or " 34Cl")     |
 | CONT  | 6       | Continuation label (blank)             |
 | SPACE | 7       | Must be blank                          |
-| D     | 8       | `D` for delayed particle               |
-| P     | 9       | `P` for proton                         |
+| RTYPE | 8       | Record type `D` for delayed particle   |
+| PSYM  | 9       | Particle symbol `P` for proton         |
 | SPACE | 10      | Readability space                      |
 | EP    | 11–19   | Proton energy in keV                   |
 | DE    | 20–21   | Energy uncertainty                     |
@@ -54,16 +54,16 @@ Example:
 | NUCID | 1–5     | Nucleus (e.g., " 35P " or " 34Cl")                                              |
 | CONT  | 6       | Continuation label                                                              |
 | SPACE | 7       | Must be blank                                                                   |
-| TYPE  | 8       | `B` for beta minus                                                              |
-| SPACE | 9       | Must be blank                                                                   |
-| E     | 10–19   | Endpoint energy of β⁻ in keV (no need to edit)                                  |
+| RTYPE | 8       | Record type `B` for beta minus                                                  |
+| PSYM  | 9       | Particle symbol must be blank                                                   |
+| E     | 10–19   | Endpoint energy of beta in keV (no need to edit)                                |
 | DE    | 20–21   | Energy uncertainty                                                              |
 | SPACE | 22      | Readability space                                                               |
-| IB    | 23–29   | Intensity of β⁻-decay branch                                                    |
+| IB    | 23–29   | Intensity of beta minus decay branch                                            |
 | DIB   | 30–31   | Uncertainty in IB                                                               |
 | SPACE | 32–41   | Must be blank                                                                   |
 | SPACE | 42      | Readability space                                                               |
-| LOGFT | 43–49   | The log ft for the β⁻ transition                                                |
+| LOGFT | 43–49   | The log ft for the beta minus transition                                        |
 | DFT   | 50–55   | Uncertainty in LOGFT                                                            |
 | SPACE | 56–76   | Must be blank                                                                   |
 | C     | 77      | Comment flag (`C` denotes coincidence, `?` denotes probable coincidence)        |
@@ -90,20 +90,20 @@ Example:
 | NUCID | 1–5     | Nucleus (e.g., " 35P " or " 34Cl")                                              |
 | CONT  | 6       | Continuation label                                                              |
 | SPACE | 7       | Must be blank                                                                   |
-| TYPE  | 8       | `E` for electron capture                                                        |
-| SPACE | 9       | Must be blank                                                                   |
+| RTYPE | 8       | Record type `E` for electron capture and beta-plus decay                        |
+| PSYM  | 9       | Particle symbol must be blank                                                   |
 | E     | 10–19   | Energy for electron capture to level (no need to edit)                          |
 | DE    | 20–21   | Uncertainty in E                                                                |
 | SPACE | 22      | Readability space                                                               |
-| IB    | 23–29   | Intensity of β⁺-decay branch                                                    |
+| IB    | 23–29   | Intensity of beta-plus-decay branch                                             |
 | DIB   | 30–31   | Uncertainty in IB                                                               |
 | IE    | 32–39   | Intensity of electron capture branch                                            |
 | DIE   | 40–41   | Uncertainty in IE                                                               |
 | SPACE | 42      | Readability space                                                               |
-| LOGFT | 43–49   | The log ft for (ε + β⁺) transition                                              |
+| LOGFT | 43–49   | The log ft for (electron capture + beta-plus) transition                        |
 | DFT   | 50–55   | Uncertainty in LOGFT                                                            |
 | SPACE | 56–64   | Must be blank                                                                   |
-| TI    | 65–74   | Total (ε + β⁺) decay intensity                                                  |
+| TI    | 65–74   | Total (electron capture + beta-plus) decay intensity                            |
 | DTI   | 75–76   | Uncertainty in TI                                                               |
 | C     | 77      | Comment flag (`C` denotes coincidence, `?` denotes probable coincidence)        |
 | UN    | 78–79   | Forbiddenness classification (`1U`, `2U` for unique forbidden, blank = allowed) |
@@ -129,8 +129,8 @@ MMMXX  A EEEE.E    DE IA     DI HF     DHF                                  C  Q
 | NUCID | 1–5     | Nucleus (e.g., "113I " or `204AT`)                                             |
 | CONT  | 6       | Continuation label                                                             |
 | SPACE | 7       | Must be blank                                                                  |
-| TYPE  | 8       | `A` for alpha decay                                                            |
-| SPACE | 9       | Must be blank                                                                  |
+| RTYPE | 8       | Record type: `A` for alpha decay                                               |
+| PSYM  | 9       | Particle symbol must be blank                                                  |
 | E     | 10–19   | Alpha energy in keV                                                            |
 | DE    | 20–21   | Standard uncertainty in E                                                      |
 | SPACE | 22      | Readability space                                                              |
