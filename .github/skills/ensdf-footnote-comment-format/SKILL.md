@@ -5,7 +5,6 @@ description: "Defines ENSDF footnote comment 80-column fields, SYM(FLAG)$ identi
 
 # Footnote Comment
 
-Footnote comments must precede L, G, B, E, A, and DP records. Columns 1–9 are the same as in record comments: `.github/skills/ensdf-record-comment-format/SKILL.md`.
 | Field | Columns | Description                                                            |
 | :---- | :------ | :--------------------------------------------------------------------- |
 | NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS `, `152Gd`)              |
@@ -16,21 +15,14 @@ Footnote comments must precede L, G, B, E, A, and DP records. Columns 1–9 are 
 | SYM   | 10–80   | `SYM$`, `SYM,SYM$`, `SYM(FLAG)$`, `SYM(FLAG),SYM(FLAG)$`               |
 | CTEXT | 10–80   | Text of comment follows the `$`delimiter                               |
 
-
 ## Notes
 
-1. SYM can only be one of the following:
-   - The fields defined in formatted L, G, B, E, A, DP records.
-   - `BAND`. This SYM must be accompanied by a FLAG. Text following the `$` delimiter, or in columns 20–80 in the old format, appears as the band label in some drawings. Give any other information on that band on continuation records.
-2. Footnote types:
-   - Footnote without FLAG:
-     - Refers to all records of the specified RTYPE in the data set.
+Footnote comments must precede all L, G, B, E, A, and DP data records.
 
-   - Footnote with FLAG:
-     - Only those records are footnoted for which footnote flags are given; see Note 3.
-     - Only those data values of data types specified by SYM that are associated with a given FLAG are footnoted.
-3. Footnote FLAG is usually a single character in column 77 of the record, or a string of characters assigned to a special data type `FLAG` on the following continuation record. Examples of flags on a continuation record:
-
-   ```text
-    34S F L FLAG=ABC$
-   ```
+1. `SYM` can be any data field of the L, G, B, E, A, or DP record (e.g., `E`, `J`, `T`, `S`, `RI`, `M`, `MR`, etc), or `BAND`: requires a FLAG. Text after `$` is the band label in drawings.
+2. Without `(FLAG)`: applies to that `SYM` field of all records of the `RTYPE` in the dataset.
+   1. Example: ` 34S  cL E$From a least-squares fit to |g-ray energies.` applies to all `E` fields of `L` records in the dataset.
+3. With `(FLAG)`: applies only to that `SYM` field of records carrying the `FLAG`.
+4. Example: ` 34S  cL E(A),J(A)$From {+30}Si(|a,|g):resonances.` applies only to `E` and `J` fields of `L` records carrying the `A` flag.
+4. `FLAG` is placed in column 77 of the record (single character), or assigned in a `FLAG=` continuation record (character string).
+5. `LABEL=name` replaces the standard heading of a field in the output table. Keep `name` short.
