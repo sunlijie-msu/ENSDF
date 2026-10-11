@@ -1,14 +1,109 @@
 ---
 name: dp-b-e-a-records-80-column-standards
-description: "ENSDF DP (Delayed Proton), B (Beta Minus), E (Electron Capture/Beta Plus), and A (Alpha) record 80-column format specifications and field definitions."
+description: "ENSDF L (Level), G (Gamma), DP (Delayed Proton), B (Beta Minus), E (Electron Capture/Beta Plus), and A (Alpha) record 80-column format specifications and field definitions."
 ---
 
-# DP, B, E, and A Record 80-Column Standards
+# L, G, DP, B, E, and A Record 80-Column Standards
 
-Use this skill when checking or writing delayed proton, beta minus, electron capture/beta plus, or alpha decay records in ENSDF files.
+Use this skill when checking or writing level, gamma, delayed proton, beta minus, electron capture/beta plus, or alpha decay records in ENSDF files.
 Note that readability spaces may be absent in many ENSDF files, which are not necessary for machine parsing.
 
 ## Record Standards
+
+### ENSDF Record Format Specifications
+
+#### Energy Level Record (L-Record)
+
+```text
+Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ MMXX  L EEEE.E    DE JP               T         DT    L        S         DSC  Q
+ 35P   L 3572.0    12 3/2+,5/2+        29 FS     14    2        0.8       4 A  ?
+ 34CL  L 1230      5  1-               0.39 PS   8     1        0.50      15B  S
+```
+
+| Field | Columns | Description                                                   |
+| :---- | :------ | :------------------------------------------------------------ |
+| NUCID | 1–5     | Nucleus (e.g., " 35P ", " 76AS").                             |
+| CONT  | 6       | Continuation label.                                           |
+| SPACE | 7       | Must be blank.                                                |
+| RTYPE | 8       | Record type: `L` (Level).                                     |
+| PSYM  | 9       | Particle symbol must be blank.                                |
+| E     | 10–19   | Level energy.                                                 |
+| DE    | 20–21   | Energy uncertainty.                                           |
+| SPACE | 22      | Readability space.                                            |
+| J     | 23–39   | Spin `J` and parity `π`                                       |
+| T     | 40–49   | Half-life with units (e.g., MEV, KEV, FS, PS, NS, S, H, D).   |
+| DT    | 50–55   | Half-life uncertainty.                                        |
+| L     | 56–64   | Angular momentum transfer (L-transfer).                       |
+| S     | 65–74   | Spectroscopic strength.                                       |
+| DS    | 75–76   | Uncertainty in S.                                             |
+| C     | 77      | Comment flag.                                                 |
+| MS    | 78–79   | 'M ' isomer; 'R ' resonance; 'C ' PN comments (uncommon)      |
+| Q     | 80      | `?` questionable/uncertain; `S` assumed/at separation energy. |
+
+J field: For multiple J-π values separated by commas, no spaces after commas.
+Critical: Be sure to distinguish comment flags (col 77), MS labels (col 78–79), and `?` (col 80).
+
+**CRITICAL: Comment Line Association**
+- `cL` comment lines apply **only** to the immediately preceding L-record.
+- Each L-record with or without a following `cL` line is an independent record.
+
+#### Gamma Transition Record (G-Record)
+
+```text
+Example:
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ MMXX  G EEEE.E    DE II.I   DI MUL      MR      DMR   CC     DC TI       DTC  Q
+ 35P   G 1572.0    10 70.0   24 M1(+E2)  -0.1    +3-4  0.090  20 71.0     25A  ?
+ 34Cl  G 2572.0    5  5.0    2  D+Q      +0.85   23    0.05   5  5.1      6 B  S
+```
+
+| Field | Columns | Description                                                       |
+| :---- | :------ | :---------------------------------------------------------------- |
+| NUCID | 1–5     | Nucleus (e.g., " 35P ", " 76AS")                                  |
+| CONT  | 6       | Continuation label                                                |
+| SPACE | 7       | Must be blank                                                     |
+| RTYPE | 8       | Record type: `G` (Gamma Transition).                              |
+| PSYM  | 9       | Particle symbol must be blank                                     |
+| E     | 10–19   | Gamma energy                                                      |
+| DE    | 20–21   | Energy uncertainty                                                |
+| SPACE | 22      | Readability space                                                 |
+| RI    | 23–29   | Relative photon intensity (starts at col 23)                      |
+| DRI   | 30–31   | Uncertainty in RI (including GT, LT markers)                      |
+| SPACE | 32      | Readability space                                                 |
+| M     | 33–41   | Multipolarity                                                     |
+| MR    | 42–49   | Mixing ratio                                                      |
+| DMR   | 50–55   | Uncertainty in MR                                                 |
+| CC    | 56–62   | Conversion coefficient                                            |
+| DCC   | 63–64   | Uncertainty in CC                                                 |
+| TI    | 65–74   | Total transition intensity                                        |
+| DTI   | 75–76   | Uncertainty in TI                                                 |
+| C     | 77      | Comment flag (A-Z, a-z, *, &, @) - See G-Record Flag Rules        |
+| SPACE | 78      | Usually blank; may be C to indicate coincidence (rarely used)     |
+| SPACE | 79      | Usually blank; may be N to indicate use for normalization         |
+| Q     | 80      | Additional indicator (space, ?, S) - See G-Record Indicator Rules |
+
+#### G-Record Flag Rules
+
+**Column 77 (C Field, Comment Flag):**
+-   `A-Z`, `a-z`: Any single letter used to refer to a specific comment record (cannot be a number).
+-   `*` (asterisk): Denotes a multiply-placed gamma ray.
+-   `&` (ampersand): Denotes a multiply-placed gamma transition with intensity not divided.
+-   `@` (at symbol): Denotes a multiply-placed gamma transition with intensity suitably divided.
+Note: Multiple identical gamma energies appearing in multiple level blocks should be flagged with either `*`, `&`, or `@`.
+-   `Space`: No comment flag.
+-   **FORBIDDEN:** Question mark (`?`) is NOT allowed in column 77.
+-   Flag definition letters are human-controlled: parenthesized letters in an identifier (`cL J(A)$`, `cL E(B)$`, `cG E(D),RI(D)$`) name the col-77 flag of the records the comment applies to.
+
+#### G-Record Indicator Rules
+
+**Column 80 (Q Field, Additional Indicator):**
+-   `Space`: Normal, well-established gamma transition.
+-   `?`: Denotes uncertain placement of the transition in the level scheme.
+-   `S`: Denotes expected or assumed, but as yet unobserved, gamma transition.
+-   **CRITICAL:** Only space, `?`, or `S` allowed in column 80.
+
 
 ### Delayed Proton Emission Record (DP-Record)
 
