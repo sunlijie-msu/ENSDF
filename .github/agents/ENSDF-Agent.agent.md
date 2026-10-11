@@ -62,6 +62,7 @@ Interpret each entry below as a Translation into true-type character set: the le
 - `|W` → $\Omega$ (Omega), `|X` → $\Xi$ (Xi), `|Y` → $\Psi$ (Psi)
 
 **Horizontal Bars:**
+
 - `~h` → $\hbar$ (h-bar)
 
 **Mathematical Symbols:**
@@ -112,14 +113,15 @@ Use telegraphic phrasing in comment text.
 
 ### Nuclear Science References (NSR)
 
--   Each article in NSR has a unique 8-alphanumeric-character key number (the `key number`).
--   ENSDF uses this key number to reference published articles.
+- Each article in NSR has a unique 8-alphanumeric-character key number (the `key number`).
+- ENSDF uses this key number to reference published articles.
 
 **Format:** `YYYYAABB` (e.g., `2026Bu08`, `1978En02`, `2013StZY`).
 
 **Capitalization rules:**
--   Author initials `AA`: First letter uppercase, rest lowercase (e.g., `Bu`, `En`, `St`);
--   Letter suffixes `BB`: All uppercase (e.g., `ZY`)
+
+- Author initials `AA`: First letter uppercase, rest lowercase (e.g., `Bu`, `En`, `St`);
+- Letter suffixes `BB`: All uppercase (e.g., `ZY`)
 
 **Citation lists:** Use comma-separated values with spaces (e.g., `2026Bu08, 1978En02, 2013StZY`).
 
@@ -135,12 +137,12 @@ In ENSDF files, columns use 1-based indexing: the first character of a line (let
 
 Critical: ENSDF files require exact byte/character positioning. One column off lead data parsing errors or rejection.
 
-
 ### ENSDF Field Description (NUCID: Columns 1–5)
 
 **Critical: Exact Column Positioning Required**
 
 **Two-digit mass number + single-letter element** (e.g., 35S, 51V, 12C):
+
 - **Format:** ` MME ` (space, mass, element, space).
 - **Column 1:** Space.
 - **Columns 2–3:** Mass number (35, 51, 12).
@@ -149,6 +151,7 @@ Critical: ENSDF files require exact byte/character positioning. One column off l
 - **Results:** ` 35S `, ` 51V `, ` 12C `.
 
 **Two-digit mass number + two-letter element** (e.g., 35Cl, 74Ge, 91Zr):
+
 - **Format:** ` MMEl` (space, mass, element).
 - **Column 1:** Space.
 - **Columns 2–3:** Mass number (35, 74, 91).
@@ -156,6 +159,7 @@ Critical: ENSDF files require exact byte/character positioning. One column off l
 - **Results:** ` 35CL`, ` 74GE`, ` 91ZR`.
 
 **Three-digit mass number + single-letter element** (e.g., 127I, 232U):
+
 - **Format:** `MMME ` (mass, element, space).
 - **Columns 1–3:** Mass number (127, 232).
 - **Column 4:** One-letter element symbol (I, W, U).
@@ -163,12 +167,14 @@ Critical: ENSDF files require exact byte/character positioning. One column off l
 - **Results:** `127I `, `184W `.
 
 **Three-digit mass number + two-letter element** (e.g., 120Sn, 208Pb, 252Cf):
+
 - **Format:** `MMMEl` (mass, two-letter element).
 - **Columns 1–3:** Mass number (120, 208, 252).
 - **Columns 4–5:** Two-letter element symbol (Sn, Pb, Cf).
 - **Results:** `120SN`, `208PB`, `252CF`.
 
 **CRITICAL NUCID RULES:**
+
 - Column positioning is **EXACT**; being one column off will break the ENSDF parser.
 - Element symbols are all caps (e.g., antimony is `SB`, not `Sb`).
 - Spaces are mandatory where specified to maintain field boundaries.
@@ -190,8 +196,8 @@ Critical: ENSDF files require exact byte/character positioning. One column off l
 | Space | `c` | Space | Space | General Comment |
 | Space | `c` | Same as preceding record | Space | Record Comment |
 
-
 #### Integral Understanding of Continuation Records
+
 - Column 6 contains the continuation identifier: blank for the first line of a record and alphanumeric for continuation of the preceding record.
 
 - Common continuation records are `X L`, `2 L` and `F L` for L-records, `2 G`,  and `F G`, `S G`, `B G` for G-records, `S B` for B-records, `S E` for E-records.
@@ -214,7 +220,6 @@ Critical: ENSDF files require exact byte/character positioning. One column off l
 - **cG, 2cG, 3cG lines:** Form a unified comment block for that G-record.
 - When multiple G-comment identifiers are present, order them as follows: `E$ → RI$ → M$ → MR$ → general (no identifier before $)`.
 
-
 ### Critical ENSDF Structural Relationships
 
 **Level Blocks or Level Units**
@@ -227,21 +232,20 @@ Critical: ENSDF files require exact byte/character positioning. One column off l
 - Continuation records are usually placed before comment lines. Example: `2 L` and `F L` records appear before any ` cL` lines for that level, and `2 G` and `B G` records appear before any ` cG` lines for that gamma.
 - Less common: FLAG markers (for example, `FLAG=A`) are placed in `F L` or `F G`continuation records following the record (L or G) that they describe.
 
-
 #### Left-Justification Requirement
 
 **MANDATORY:** All values and uncertainties in all fields MUST be left-justified (NEVER right-justified or centered).
 
--   **Formatting:** Values start at the leftmost column of the field, padded with trailing spaces to fill field width.
+- **Formatting:** Values start at the leftmost column of the field, padded with trailing spaces to fill field width.
 
 #### Energy Ordering Requirement
 
 **Requirement:**
 
--   L-records MUST be in ascending energy order.
--   G-records (following a given L-record) MUST also be in ascending energy order.
--   **Consequence:** Violations break automated ENSDF parsers and database ingestion.
--   **Common error:** Inserting new levels or gammas without reordering by energy.
+- L-records MUST be in ascending energy order.
+- G-records (following a given L-record) MUST also be in ascending energy order.
+- **Consequence:** Violations break automated ENSDF parsers and database ingestion.
+- **Common error:** Inserting new levels or gammas without reordering by energy.
 
 ### Cross-Reference Record (XREF-Record)
 
@@ -273,8 +277,10 @@ Delayed Particle (DP-Record), Beta Minus Decay (B-Record), Electron Capture/Beta
 - The uncertainty applies to the least significant reported digit of the value.
 - Use 1 significant figure when the leading two uncertainty digits are `35-99`.
     Example: `1.2333±0.3680 -> 1.2(4)`.
+
 - Use 2 significant figures when the leading two uncertainty digits are `10-34`.
     Example: `1.2333±0.3220 -> 1.23(32)`.
+
 - Special case: for half-lives and lifetimes, 2 significant figures may be used even when the leading two uncertainty digits are `35-99`.
 
 ### ENSDF Rounding and Uncertainty Convention
@@ -329,6 +335,7 @@ Examples:
 Format: Plain integers only (NO `{I}` notation, NO parentheses).
 
 **Examples:**
+
 - Energy: `1572.0` with uncertainty `12` in DE field means 1572.0(12).
 - RI: `70.0` with uncertainty `24` in DRI field means 70.0(24).
 - T1/2: `2.29 PS` with uncertainty `14` in DT field means 2.29(14) PS.
@@ -336,6 +343,7 @@ Format: Plain integers only (NO `{I}` notation, NO parentheses).
 #### Standard 2-Column Uncertainty Fields (DE, DRI, DIP, DCC, DTI, DS)
 
 - **Field:** 1–2 digits with space padding.
+
     - Single digit: `"5 "` (digit + space).
     - Double digits: `"15"` (two digits).
     - Limit markers: `"GT"`, `"LT"` (two letters).
@@ -343,12 +351,14 @@ Format: Plain integers only (NO `{I}` notation, NO parentheses).
 #### Extended 6-Column Uncertainty Fields (DT, DMR)
 
 - **Field** (cols 50–55): 6 characters, left-justified, with space padding if fewer than 6 characters.
+
     - Symmetric: `"14    "` (1 or 2 digits + 5 or 4 spaces).
     - Asymmetric: `"+3-4  "` (2 spaces), `"+19-8 "` (1 space), `"+13-28"` (no spaces).
     - Limit markers: `"GT    "`, `"LT    "` (two letters + 4 spaces).
 - For source data using the Rose and Brink (1967) sign convention, reverse the sign of the mixing ratio value before entering it into ENSDF. Reverse the asymmetric uncertainty order at the same time so the ENSDF value keeps the correct upper and lower bounds. Example: -0.27$_{-0.04}^{+0.03}$ becomes +0.27$_{+0.04}^{-0.03}$ in ENSDF.
 
 **Critical Formatting Rules:**
+
 - Single digits in 2-column fields: MUST be padded with trailing space.
 - Double digits in 2-column fields: Fill both columns completely.
 - Asymmetric uncertainties: Use +X-Y format in 6-character fields (DT, DMR).
@@ -357,10 +367,12 @@ Format: Plain integers only (NO `{I}` notation, NO parentheses).
 #### Scientific Notation Format
 
 For intensities and other values in scientific notation:
+
 - **Standard format:** `(5.6±1.0)×10^-4` becomes `5.6E-4 10` in ENSDF data records.
 - **Value field:** Use `E-n` notation (e.g., `5.6E-4`) and `En` for positive exponents (e.g., `1.1E6`).
 - **Uncertainty field:** Use digits representing the last significant digit (e.g., `10` for ±1.0 if the value has one decimal place).
 - **Examples:**
+
     - `(1.1±0.3)×10^-6` → Value: `1.1E-6`, Uncertainty: `3`.
     - `(76±20)×10^-6` → Value: `76E-6`, Uncertainty: `20`.
     - `(3.3±1.2)×10^-4` → Value: `3.3E-4`, Uncertainty: `12`.
@@ -373,6 +385,7 @@ For intensities and other values in scientific notation:
 - LE = `Less or equal to` (≤) and GE = `Greater or equal to` (≥) are also allowed.
 - **Format:** Place the value in the main field and the GT/LT marker in the uncertainty field.
 - **Examples for RI and DRI:**
+
     - `<1.6` → RI=`1.6    ` (cols 23–29), DRI=`LT` (cols 30–31).
     - `>5.2` → RI=`5.2    ` (cols 23–29), DRI=`GT` (cols 30–31).
 
@@ -383,6 +396,7 @@ For intensities and other values in scientific notation:
 Format: Use integers in `{In}` or `{I+n-m}` notation with braces.
 
 **Critical Formatting Rules:**
+
 - n must be integer ONLY (NEVER decimals like `{I0.1}` or `{I1.1}`).
 - **Symmetric:** `{In}` (e.g., `{I7}`, `{I11}`) without plus/minus signs.
 - **Asymmetric:** `{I+n-m}` (e.g., `{I+10-11}`, `{I+7-9}`) with plus/minus signs.
@@ -392,9 +406,11 @@ Format: Use integers in `{In}` or `{I+n-m}` notation with braces.
 In comment lines, scientific notation uses `{In}` for uncertainties:
 
 - **Example 1:** `(5.6±1.0)×10^-4` becomes `5.6|*10{+-4} {I10}` in comments.
+
     - **Value:** `5.6E-4`
     - **Uncertainty:** `{I10}` (±1.0 in last digit).
 - **Example 2:** `(1.1±0.3)×10^6` becomes `1.1|*10{+6} {I3}` in comments.
+
     - **Value:** `1.1E6`
     - **Uncertainty:** `{I3}` (±0.3 in last digit).
 
@@ -408,6 +424,7 @@ Units or percent signs are placed after the value before the uncertainty:
 ```
 
 **Examples in Context:**
+
 - Data record: ` 35P   L 1572.0    12 3/2+             2.29 PS   14` (uncertainties are plain numbers).
 - Comment line: ` 35CL  cL $|w|g=3.6 eV {I11} (1972Hu10)` (uncertainty uses `{I11}` notation).
 
@@ -417,9 +434,9 @@ Units or percent signs are placed after the value before the uncertainty:
 
 ### File Protection Rules
 
--   **NEVER** edit `.old` files (reference files from previous evaluation rounds).
--   **NEVER** modify first line `Identification Record` indentation or spacing in `.ens` files.
--   **NEVER** modify XREF lists (XREF entries with pattern `NUCID X` have their own specific formatting rules).
+- **NEVER** edit `.old` files (reference files from previous evaluation rounds).
+- **NEVER** modify first line `Identification Record` indentation or spacing in `.ens` files.
+- **NEVER** modify XREF lists (XREF entries with pattern `NUCID X` have their own specific formatting rules).
 
 ### Debugging Technique
 
@@ -439,17 +456,20 @@ print(line)
 print('Length:', len(line))
 "
 ```
+
 **Process**:
-1.  Display 80-char ruler.
-2.  Extract L/G/E/B records.
-3.  Validate against ENSDF Manual.
-4.  Report issues.
+
+1. Display 80-char ruler.
+2. Extract L/G/E/B records.
+3. Validate against ENSDF Manual.
+4. Report issues.
 
 ### Edit-Validate-Repeat Agent Loop
 
 ONE field per edit. Validate each changed line before proceeding.
 
 **Mandatory sequence:**
+
 1. **Before editing:** run `column_calibrate.py` and `check_gamma_ordering.py` on the file.
 2. **Each changed line:** run `ensdf_1line_ruler.py --line "exact 80-char line"`.
 3. **After all edits:** repeat step 1.
@@ -459,13 +479,16 @@ Exit code 0 = pass; exit code 1 = errors. Fix all errors before proceeding.
 ### Validation Scripts
 
 **`ensdf_1line_ruler.py`** — line-level field layout and length check (L/G/E/B/DP records):
+
 - `--line "…"` → single line; `--file f.ens [--show-only-wrong] [--line-number N]` → file scan
 
 **`column_calibrate.py`** — file-level field positioning, flag placement, and line-length check:
+
 - `"file.ens"` → full validation; `--fix` → pad/trim lines to 80 chars by adding/removing spaces (field content unchanged); `--fix --dry-run` → preview without modifying
 - Does NOT validate DP, B, or E record field content; use `ensdf_1line_ruler.py` for those.
 
 **`check_gamma_ordering.py`** — ascending energy order for L- and G-records (check-only, no fixes):
+
 - `"file.ens" [--verbose] [--summary]`; `--summary` auto-enables for multiple files; glob patterns accepted
 
 ### Editing Methodology
@@ -493,10 +516,11 @@ Validate each edited line and the complete file afterward.
 ### Professional English Grammar
 
 **Common corrections:**
--   **Spelling:** `other` (not `ohter`), `stopped` (not `stoped`), `using` (not `usign`), `coefficients` (not `coeffcients`), `deexciting` (not `deexiting`), `multipolarities` (not `multiporities`), `parentheses` (not `paretheses`).
--   **Dittography:** Remove duplicated words (e.g., `the the`, `is is`, `and and`).
--   **Hyphenation Rule:** [Number]-[Unit]-[Descriptor] [Noun]. Hyphenate compound adjectives occurring before a noun (e.g., `x-ray diffraction,` `4-mm-long gas cell,` `R-matrix theory`). Do not hyphenate when they are not adjectives before nouns (e.g., `emitted by x rays,` `was 4 mm long`).
--   **Consistency:** Always hyphenate `L-transfers` and `half-life.`
+
+- **Spelling:** `other` (not `ohter`), `stopped` (not `stoped`), `using` (not `usign`), `coefficients` (not `coeffcients`), `deexciting` (not `deexiting`), `multipolarities` (not `multiporities`), `parentheses` (not `paretheses`).
+- **Dittography:** Remove duplicated words (e.g., `the the`, `is is`, `and and`).
+- **Hyphenation Rule:** [Number]-[Unit]-[Descriptor] [Noun]. Hyphenate compound adjectives occurring before a noun (e.g., `x-ray diffraction,` `4-mm-long gas cell,` `R-matrix theory`). Do not hyphenate when they are not adjectives before nouns (e.g., `emitted by x rays,` `was 4 mm long`).
+- **Consistency:** Always hyphenate `L-transfers` and `half-life.`
 
 ---
 
