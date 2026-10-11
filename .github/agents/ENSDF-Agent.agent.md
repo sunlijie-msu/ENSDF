@@ -273,6 +273,7 @@ Use the individual 80-column record standards:
 - A-record: `.github/skills/ensdf-alpha-record-format/SKILL.md`
 - General comment: `.github/skills/ensdf-general-comment-format/SKILL.md`
 - Record comment: `.github/skills/ensdf-record-comment-format/SKILL.md`
+- Footnote comment: `.github/skills/ensdf-footnote-comment-format/SKILL.md`
 
 ---
 

@@ -18,7 +18,7 @@ Example:
 | Field | Columns | Description                                                       |
 | :---- | :------ | :---------------------------------------------------------------- |
 | NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS `, `152Gd`)         |
-| CONT  | 6       | Continuation label                                                |
+| CONT  | 6       | Continuation identifier (blank or any alphanumeric character)     |
 | SPACE | 7       | Must be blank                                                     |
 | RTYPE | 8       | Record type: `G` (Gamma Transition).                              |
 | PSYM  | 9       | Particle symbol must be blank                                     |

@@ -5,7 +5,6 @@ description: "Defines ENSDF record comment 80-column fields, SYM$ identifiers, a
 
 # Record Comment
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
 
 | Field | Columns | Description                                                                                                                                                 | Reference |
 | :---- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------- |

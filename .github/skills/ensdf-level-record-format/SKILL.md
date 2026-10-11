@@ -5,8 +5,6 @@ description: "Defines ENSDF level (L-record) 80-column fields and record-specifi
 
 # Energy Level Record (L-Record)
 
-ENSDF 80-column data record and field definitions, structural rules, column positions, and uncertainty notation: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.github/copilot-instructions.md`.
-
 ```text
 Example:
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
@@ -18,7 +16,7 @@ Example:
 | Field | Columns | Description                                                   |
 | :---- | :------ | :------------------------------------------------------------ |
 | NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS `, `152Gd`)     |
-| CONT  | 6       | Continuation label.                                           |
+| CONT  | 6       | Continuation identifier (blank or any alphanumeric character) |
 | SPACE | 7       | Must be blank.                                                |
 | RTYPE | 8       | Record type: `L` (Level).                                     |
 | PSYM  | 9       | Particle symbol must be blank.                                |

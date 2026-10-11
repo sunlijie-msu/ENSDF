@@ -17,7 +17,7 @@ Example:
 | Field | Columns | Description                                               |
 | :---- | :------ | :-------------------------------------------------------- |
 | NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS `, `152Gd`) |
-| CONT  | 6       | Continuation label (blank)                                |
+| CONT  | 6       | Continuation identifier (blank or alphanumeric character) | 
 | SPACE | 7       | Must be blank                                             |
 | RTYPE | 8       | Record type `D` for delayed particle                      |
 | PSYM  | 9       | Particle symbol `P` for proton                            |
