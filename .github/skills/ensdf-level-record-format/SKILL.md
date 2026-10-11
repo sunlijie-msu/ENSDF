@@ -1,5 +1,5 @@
 ---
-name: ensdf-level-record-80-column-standard
+name: ensdf-level-record-format
 description: "Defines ENSDF level (L-record) 80-column fields and record-specific rules. Use when checking, interpreting, or formatting an ENSDF L-record."
 ---
 
@@ -17,7 +17,7 @@ Example:
 
 | Field | Columns | Description                                                   |
 | :---- | :------ | :------------------------------------------------------------ |
-| NUCID | 1–5     | Nucleus (e.g., " 35P ", " 76AS").                             |
+| NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS `, `152Gd`)     |
 | CONT  | 6       | Continuation label.                                           |
 | SPACE | 7       | Must be blank.                                                |
 | RTYPE | 8       | Record type: `L` (Level).                                     |

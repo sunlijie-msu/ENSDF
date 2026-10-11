@@ -11,7 +11,7 @@ General comments must precede all L, G, B, E, A, and DP records.
 
 | Field | Columns | Description                                                                   |
 | :---- | :------ | :---------------------------------------------------------------------------- |
-| NUCID | 1–5     | Nucleus (e.g., " 35P ", " 76AS")                                  |
+| NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS `, `152Gd`)                                  |
 | CONT  | 6       | Blank, or any alphanumeric character other than `1` for continuation records  |
 | C     | 7       | Letter `C`, `D`, or `T` is required. See Notes 3–5 below                      |
 | RTYPE | 8       | Blank, or record type of records to which the comment pertains                |

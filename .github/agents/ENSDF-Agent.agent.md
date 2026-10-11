@@ -265,14 +265,14 @@ Only in the Adopted Datasets: XREF (cross-reference) labels in continuation reco
 
 Use the individual 80-column record standards:
 
-- L-record: `.github/skills/ensdf-level-record-80-column-standard/SKILL.md`
-- G-record: `.github/skills/ensdf-gamma-record-80-column-standard/SKILL.md`
-- DP-record: `.github/skills/ensdf-delayed-particle-record-80-column-standard/SKILL.md`
-- B-record: `.github/skills/ensdf-beta-minus-record-80-column-standard/SKILL.md`
-- E-record: `.github/skills/ensdf-electron-capture-beta-plus-record-80-column-standard/SKILL.md`
-- A-record: `.github/skills/ensdf-alpha-record-80-column-standard/SKILL.md`
-- General comment: `.github/skills/ensdf-general-comment-record-80-column-standard/SKILL.md`
-- Record comment: `.github/skills/ensdf-record-comment-80-column-standard/SKILL.md`
+- L-record: `.github/skills/ensdf-level-record-format/SKILL.md`
+- G-record: `.github/skills/ensdf-gamma-record-format/SKILL.md`
+- DP-record: `.github/skills/ensdf-delayed-particle-record-format/SKILL.md`
+- B-record: `.github/skills/ensdf-beta-minus-record-format/SKILL.md`
+- E-record: `.github/skills/ensdf-electron-capture-beta-plus-record-format/SKILL.md`
+- A-record: `.github/skills/ensdf-alpha-record-format/SKILL.md`
+- General comment: `.github/skills/ensdf-general-comment-format/SKILL.md`
+- Record comment: `.github/skills/ensdf-record-comment-format/SKILL.md`
 
 ---
 

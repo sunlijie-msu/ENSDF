@@ -1,5 +1,5 @@
 ---
-name: ensdf-gamma-record-80-column-standard
+name: ensdf-gamma-record-format
 description: "Defines ENSDF gamma (G-record) 80-column fields, flags, and indicators. Use when checking, interpreting, or formatting an ENSDF G-record."
 ---
 

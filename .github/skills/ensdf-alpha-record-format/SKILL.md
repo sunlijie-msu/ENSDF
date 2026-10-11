@@ -1,5 +1,5 @@
 ---
-name: ensdf-alpha-record-80-column-standard
+name: ensdf-alpha-record-format
 description: "Defines ENSDF alpha-decay (A-record) 80-column fields and record-specific rules. Use when checking, interpreting, or formatting an ENSDF A-record."
 ---
 
@@ -16,7 +16,7 @@ MMMXX  A EEEE.E    DE IA     DI HF     DHF                                  C  Q
 
 | Field | Columns | Description                                                                    |
 | :---- | :------ | :----------------------------------------------------------------------------- |
-| NUCID | 1–5     | Nucleus (e.g., "113I " or `204AT`)                                             |
+| NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS `, `152Gd`)                      |
 | CONT  | 6       | Continuation label                                                             |
 | SPACE | 7       | Must be blank                                                                  |
 | RTYPE | 8       | Record type: `A` for alpha decay                                               |

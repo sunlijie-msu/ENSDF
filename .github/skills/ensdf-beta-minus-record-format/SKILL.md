@@ -1,5 +1,5 @@
 ---
-name: ensdf-beta-minus-record-80-column-standard
+name: ensdf-beta-minus-record-format
 description: "Defines ENSDF beta-minus (B-record) 80-column fields and record-specific rules. Use when checking, interpreting, or formatting an ENSDF B-record."
 ---
 
@@ -16,7 +16,7 @@ Example:
 
 | Field | Columns | Description                                                                     |
 | :---- | :------ | :------------------------------------------------------------------------------ |
-| NUCID | 1–5     | Nucleus (e.g., " 35P " or " 34Cl")                                              |
+| NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS `, `152Gd`)                       |
 | CONT  | 6       | Continuation label                                                              |
 | SPACE | 7       | Must be blank                                                                   |
 | RTYPE | 8       | Record type `B` for beta minus                                                  |
