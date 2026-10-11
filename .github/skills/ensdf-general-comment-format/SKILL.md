@@ -19,13 +19,13 @@ description: "Defines ENSDF general comment 80-column fields, c identifiers, and
 
 1. General comments must precede all L, G, B, E, A, and DP data records.
 2. A general comment with a specified `RTYPE` applies all records of that `RTYPE` in the dataset.
-Example:
+- Example:
 ```
  34S  cL Comment for all L records.
  34CL cG Comment for all G records.
 ```
 3. If columns 8 and 9 are blank, the general comment applies to the entire dataset.
-Example:
+- Example:
 ```
  34AL c  Comment for the entire dataset.
 ```
