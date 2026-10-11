@@ -1,16 +1,16 @@
 ---
 name: ensdf-footnote-comment-format
-description: "Defines ENSDF footnote comment 80-column fields, SYM(FLAG)$ identifiers, FLAG rules, BAND, and field relabeling. Use when checking, interpreting, or formatting footnote comments that precede L, G, B, E, A, and DP records."
+description: "Defines ENSDF footnote-comment fields, SYM(FLAG)$ syntax, FLAG rules, BAND labels, and field relabeling. Use when checking or formatting footnote comments for L, G, B, E, A, and DP records."
 ---
 
 # Footnote Comment
 
-| Field | Columns | Description                                                            |
-| :---- | :------ | :--------------------------------------------------------------------- |
-| NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS `, `152Gd`)              |
-| CONT  | 6       | Continuation identifier: Blank or any alphanumeric character (not `1`) |
-| C     | 7       | Comment Identifier: `c`                                                |
-| RTYPE | 8       | Blank or record type of records to which the comment pertains          |
+| Field | Columns | Description                                                           |
+| :---- | :------ | :-------------------------------------------------------------------- |
+| NUCID | 1–5     | Nuclide identification (e.g., ` 35P `, ` 76AS`, `127I `, `152GD`)     |
+| CONT  | 6       | Blank, or an alphanumeric continuation identifier other than `1`      |
+| C     | 7       | Comment identifier: `c`                                               |
+| RTYPE | 8       | Blank, or the record type to which the comment applies                |
 | PSYM  | 9       | Blank or particle symbol: `N`/`P`                                      |
 | SYM   | 10–80   | `SYM$`, `SYM,SYM$`, `SYM(FLAG)$`, `SYM(FLAG),SYM(FLAG)$`               |
 | CTEXT | 10–80   | Text of comment follows the `$`delimiter                               |
