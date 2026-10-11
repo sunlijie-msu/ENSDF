@@ -134,7 +134,7 @@ In ENSDF files, columns use 1-based indexing: the first character of a line (let
 A line represents a record or part of a record.
 A column represents a field or part of a field within a record.
 
-### ENSDF NUCID Field Format (Columns 1–5)
+### ENSDF Field Description (NUCID: Columns 1–5)
 
 **Critical: Exact Column Positioning Required**
 
@@ -171,16 +171,7 @@ A column represents a field or part of a field within a record.
 - Element symbols are all caps (e.g., antimony is `SB`, not `Sb`).
 - Spaces are mandatory where specified to maintain field boundaries.
 
-
-### Critical ENSDF Structural Relationships
-
-**Level Blocks or Level Units**
-
-1. Each L-record starts a level unit representing a nuclear state. The G, E, B, DP, DN, etc records following the L-record are associated with that level only.
-2. G-records following an L-record constitute the level block and represent gamma transitions that deexcite the level represented by the L-record above; G-records do not belong to the next or following level block.
-3. A level with no listed gamma transitions has no associated G-records.
-4. In beta-decay datasets, a level may have associated B-record (beta minus) or E-record (electron capture / beta plus) following the L-record to indicate the decay populated level. Understand L→B→G (Level-Beta-Gamma) or L→E→G (Level-ElectronConversion-Gamma) record grouping relationships.
-5. In delayed decay datasets, a level may have associated DP-records (delayed proton) or DN-records (delayed neutron) following the L-record to indicate the delayed decay populated level. Understand L→DP→G (Level-DelayedProton-Gamma) or L→DN→G (Level-DelayedNeutron-Gamma) record grouping relationships.
+### ENSDF Field Description (Continuation, Comment, Record Type, Particle Symbol: Columns 6-9)
 
 #### Integral Understanding of Continuation Records (Column 6)
 
@@ -223,6 +214,17 @@ A column represents a field or part of a field within a record.
 - **cG lines:** Apply only to the immediately preceding G-record and are an optional part of that G-record.
 - **cG, 2cG, 3cG lines:** Form a unified comment block for that G-record.
 - When multiple G-comment identifiers are present, order them as follows: `E$ → RI$ → M$ → MR$ → general (no identifier before $)`.
+
+
+### Critical ENSDF Structural Relationships
+
+**Level Blocks or Level Units**
+
+1. Each L-record starts a level unit representing a nuclear state. The G, E, B, DP, DN, etc records following the L-record are associated with that level only.
+2. G-records following an L-record constitute the level block and represent gamma transitions that deexcite the level represented by the L-record above; G-records do not belong to the next or following level block.
+3. A level with no listed gamma transitions has no associated G-records.
+4. In beta-decay datasets, a level may have associated B-record (beta minus) or E-record (electron capture / beta plus) following the L-record to indicate the decay populated level. Understand L→B→G (Level-Beta-Gamma) or L→E→G (Level-ElectronConversion-Gamma) record grouping relationships.
+5. In delayed decay datasets, a level may have associated DP-records (delayed proton) or DN-records (delayed neutron) following the L-record to indicate the delayed decay populated level. Understand L→DP→G (Level-DelayedProton-Gamma) or L→DN→G (Level-DelayedNeutron-Gamma) record grouping relationships.
 
 
 #### Left-Justification Requirement
