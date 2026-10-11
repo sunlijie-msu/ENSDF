@@ -173,21 +173,19 @@ A column represents a field or part of a field within a record.
 
 ### ENSDF Field Description (Continuation, Comment, Record Type, Particle Symbol: Columns 6-9)
 
-#### Integral Understanding of Continuation Records (Column 6)
+#### Integral Understanding of Records and Fields
 
-| Combination | Col 6 | Col 7 | Col 8 | Col 9 |
+| Col 6: Continuation Identifier | Col 7: Comment Identifier | Col 8: Record Type | Col 9: Particle Symbol | Combination |
 | ----- | ----- | ----- | ----- | ----- |
-| Combination | Continuation Identifier | Comment Identifier | Record Type      | Particle Symbol  |
-| ----- | ----- | ----- | ----- | ----- |
-| Level-record | Space | Space | `L` | Space |
-| Gamma-record | Space | Space | `G` | Space |
-| Beta-record | Space | Space | `B` | Space |
-| Electron-capture-record | Space | Space | `E` | Space |
-| Delayed-proton-record | Space | Space | `D` | `P` |
-| Delayed-neutron-record | Space | Space | `D` | `N` |
-| Continuation-record | Alphanumeric | Space | Same as preceding record | Space |
-| General Comment | Space | `c` | Space | Space |
-| Record Comment | Space | `c` | Same as preceding record | Space |
+| Space | Space | `L` | Space | Level-record |
+| Space | Space | `G` | Space | Gamma-record |
+| Space | Space | `B` | Space | Beta-record |
+| Space | Space | `E` | Space | Electron-capture-record |
+| Space | Space | `D` | `P` | Delayed-proton-record |
+| Space | Space | `D` | `N` | Delayed-neutron-record |
+| Alphanumeric | Space | Same as preceding record | Space | Continuation-record |
+| Space | `c` | Space | Space | General Comment |
+| Space | `c` | Same as preceding record | Space | Record Comment |
 
 - Column 6 contains the continuation identifier: blank for the first record and alphanumeric for continuation data records.
 
