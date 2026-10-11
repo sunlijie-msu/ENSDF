@@ -190,28 +190,26 @@ Critical: ENSDF files require exact byte/character positioning. One column off l
 | Space | `c` | Space | Space | General Comment |
 | Space | `c` | Same as preceding record | Space | Record Comment |
 
+
+#### Integral Understanding of Continuation Records
 - Column 6 contains the continuation identifier: blank for the first line of a record and alphanumeric for continuation of the preceding record.
 
-- Common continuation records include `X L`, `2 L` and `F L` for L-records, `2 G`,  and `F G`, `S G`, `B G` for G-records, `S B` for B-records, `S E` for E-records.
-- Common continuation comments include `2cL`, `3cL`, and `4cL` for L-comment lines, and `2cG`, `3cG`, and `4cG` for G-comment lines.
-- Continuation data records must remain attached to, and apply only to, the immediately preceding record type (L or G).
-- Continuation comments must remain attached to the immediately preceding comment line.
-- Multi-line `c` comments (with `2c`, `3c` continuation and comment identifiers in columns 6 and 7 respectively) must be fully concatenated as an **Inseparable Whole** during data editing and parsing.
+- Common continuation records are `X L`, `2 L` and `F L` for L-records, `2 G`,  and `F G`, `S G`, `B G` for G-records, `S B` for B-records, `S E` for E-records.
+- Common continuation comments are `2c `, `3c `, and `4c ` for general comment lines, `2cL`, `3cL`, and `4cL` for L-comment lines, and `2cG`, `3cG`, and `4cG` for G-comment lines.
+- Continuation data records must remain attached to, and apply only to, the immediately preceding record (L or G or other types).
+- Continuation comments must remain attached to the immediately preceding comment.
 - `2cL` must follow `cL`, and `3cL` must follow `2cL`, etc.
 - `2cG` must follow `cG`, and `3cG` must follow `2cG`, etc.
 - Continuation records have their own text-format standards. Do not use comment text format in continuation records. Example: `35CA2 L %EC+%B+=100$%ECP=95.8 3$%EC2P=4.2 3`.
-- Continuation records are usually placed before comment lines. Example: `2 L` and `F L` records appear before any ` cL` lines for that level, and `2 G` and `B G` records appear before any ` cG` lines for that gamma.
-- Less common: FLAG markers (for example, `FLAG=A`) are placed in `F L` or `F G`continuation records following the record (L or G) that they describe.
 
-#### Comment Record (c-Record) or Comments on Data Records
+#### Integral Understanding of Comment Records
 
 - Column 7 contains the comment identifier: `c`.
-
+- Multi-line `c` comments (with `2c`, `3c` continuation and comment identifiers in columns 6 and 7 respectively) must be fully concatenated as an **Inseparable Whole** during data editing and parsing.
 - **cL lines:** Apply only to the immediately preceding L-record and are an optional part of that L-record.
 - **cL, 2cL, 3cL lines:** Form a unified comment block for that L-record.
 - When multiple L-comment identifiers are present, order them as follows: `E$ → J$ → T$ → S$ → general (no identifier before $)`.
 - If the L-comment identifier is a continuation data record (BE2, MOME2, MOMM1, etc.), it should appear after regular data record comments (`E$, J$, T$, S$`) but before general comments.
-
 - **cG lines:** Apply only to the immediately preceding G-record and are an optional part of that G-record.
 - **cG, 2cG, 3cG lines:** Form a unified comment block for that G-record.
 - When multiple G-comment identifiers are present, order them as follows: `E$ → RI$ → M$ → MR$ → general (no identifier before $)`.
@@ -223,9 +221,11 @@ Critical: ENSDF files require exact byte/character positioning. One column off l
 
 1. Each L-record starts a level unit representing a nuclear state. The G, E, B, DP, DN, etc records following the L-record are associated with that level only.
 2. G-records following an L-record constitute the level block and represent gamma transitions that deexcite the level represented by the L-record above; G-records do not belong to the next or following level block.
-3. A level with no listed gamma transitions has no associated G-records.
+3. A level with no gamma transitions has no associated G-records.
 4. In beta-decay datasets, a level may have associated B-record (beta minus) or E-record (electron capture / beta plus) following the L-record to indicate the decay populated level. Understand L→B→G (Level-Beta-Gamma) or L→E→G (Level-ElectronConversion-Gamma) record grouping relationships.
-5. In delayed decay datasets, a level may have associated DP-records (delayed proton) or DN-records (delayed neutron) following the L-record to indicate the delayed decay populated level. Understand L→DP→G (Level-DelayedProton-Gamma) or L→DN→G (Level-DelayedNeutron-Gamma) record grouping relationships.
+5. In delayed-particle decay datasets, a level may have associated DP-records (delayed proton) or DN-records (delayed neutron) following the L-record to indicate the delayed decay populated level. Understand L→DP→G (Level-DelayedProton-Gamma) or L→DN→G (Level-DelayedNeutron-Gamma) record grouping relationships.
+- Continuation records are usually placed before comment lines. Example: `2 L` and `F L` records appear before any ` cL` lines for that level, and `2 G` and `B G` records appear before any ` cG` lines for that gamma.
+- Less common: FLAG markers (for example, `FLAG=A`) are placed in `F L` or `F G`continuation records following the record (L or G) that they describe.
 
 
 #### Left-Justification Requirement
