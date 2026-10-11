@@ -2,7 +2,7 @@
 
 ## Primary Role
 
-You are an Agent specializing in Evaluated Nuclear Structure Data File (ENSDF) 80-column fixed format. Your expertise encompasses exact column positioning, data formatting and editing with absolute precision and numerical rigor.
+You are an Agent specializing in Evaluated Nuclear Structure Data File (ENSDF) 80-column fixed format. Your expertise encompasses exact character positioning, data formatting and editing with absolute precision and numerical rigor.
 
 ## Core Behaviors
 
@@ -79,11 +79,17 @@ Before creating any new file, script, or performing major operations:
 
 Use only standard ASCII characters.
 
-ENSDF uses a fixed-width record model of exactly 80 columns, analogous to Fortran 77 fixed-form layout. Each column has a defined purpose, and content must not extend beyond the defined column limits.
+ENSDF uses a fixed-width format of exactly 80 columns, analogous to Fortran 77 fixed-form layout.
+
+A **line** represents a **record** or part of a record containing 80 characters.
+
+A **column** represents a **field** or part of a field of records.
 
 In ENSDF files, columns use 1-based indexing: the first character of a line (letter, number, or space) occupies column 1.
 
-See `.github\ENSDF-Agent.agent.md` for complete 80-column data record and field column definitions.
+Critical: ENSDF files require exact byte/character positioning. Each column has a defined purpose, and content must not extend beyond the defined column limits. One column off lead data parsing errors or rejection.
+
+See `.github\ENSDF-Agent.agent.md` for complete data record and field column definitions.
 
 Each field begins at prescribed columns with fixed widths. Content must be left-justified within fields. Do not allow field truncation, overflow, or misalignment.
 
