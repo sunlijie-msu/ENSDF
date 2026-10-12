@@ -1,0 +1,730 @@
+ 60NI    28SI(36AR,4PG):XUNDL-3        2008TO15                           200812
+ 60NI c  Compiled (unevaluated) dataset from 2008To15:                          
+ 60NI2c  Phys. Rev. C 78, 054318 (2008)                                         
+ 60NI c  Compiled by S. Geraedts and B. Singh (McMaster); Dec 16, 2008          
+ 60NI c  Following three experiments were performed:                            
+ 60NI c  1. E({+36}Ar)=134 MeV at Argonne National lab, Gammasphere array       
+ 60NI2c  for |g-rays, 3|p |DE-E silicon strip telescope LUWUSIA for particle    
+ 60NI3c  detection and liquid scintillator neutron detector array NEUTRON SHELL 
+ 60NI4c  for neutrons.                                                          
+ 60NI c  2. E({+36}Ar)=148 MeV at Argonne National lab, Gammasphere array       
+ 60NI2c  for |g-rays, Microball and Silicon Wall for charged-particle           
+ 60NI3c  detection and 20 liquid scintillator neutron detectors                 
+ 60NI4c  for neutrons.                                                          
+ 60NI c  3. E({+36}Ar)=143 MeV at LBNL, Gammasphere array for |g-rays, Microball
+ 60NI2c  for charged-particle detection and scintillator detectors for neutrons.
+ 60NI3c  Measured E|g, I|g, |g|g, |g|g(|q)(DCO), (particle)|g coin              
+ 60NI c  One of the above experiments also used Fragment Mass Analyzer.         
+ 60NI c  Comparisons with spherical shell-model calculations for low-spin       
+ 60NI2c  states and cranked Nilsson-Strutinsky calculations for high-spin       
+ 60NI3c  rotational states.                                                     
+ 60NI cG $ The DCO values correspond to angles of 30|' and 83|', with gate      
+ 60NI2cG on |DJ=2, quadrupole (E2) transition, unless otherwise stated.         
+ 60NI3cG DCO values for selected transitions were also obtained in 30|',53|'    
+ 60NI4cG and 53|',83|' geometries. For 30|', 83|' geometry following values     
+ 60NI5cG are expected:                                                          
+ 60NI cG $ For gates on |DJ=2 transitions, the expected values of DCO's are:    
+ 60NI2cG 1.0 for a |DJ=2, quadrupole transition, |?1.0 for a |DJ=0, dipole      
+ 60NI3cG transition and |?0.6 for a |DJ=1, dipole transition.                   
+ 60NI4cG For gates on |DJ=1, dipole transitions, expected values of DCO's are:  
+ 60NI5cG 1.0 for a |DJ=1, dipole transition and |<1.7 for |DJ=2, quadrupole     
+ 60NI6cG or for a |DJ=0, dipole transition. Deviations from above values are    
+ 60NI7cG indicative of mixed dipole+quadrupole (mainly M1+E2, rather than       
+ 60NI8cG unlikely E1+M2) transitions.                                           
+ 60NI cG E(X)$ Poor fit in the level scheme, deviates by more than 3|s's.       
+ 60NI2cG Possibly the energy uncertainty is underestimated. Doubling the        
+ 60NI3cG uncertainty of this |g ray gives a better overall fit.                 
+ 60NI cG E(Y)$ DCO value corresponds to gate on |DJ=1, dipole transition        
+ 60NI cG M(Z)$ |DJ=0, |D|p=no transition, expected to be mainly M1              
+ 60NI cG MR$ 2008To15 state that Rose-Brink convention was used for mixing      
+ 60NI2cG ratios. To be consistent with ENSDF policy of using Krane-Steffen      
+ 60NI3cG convention, all the signs of mixing ratios in 2008To15 have been       
+ 60NI4cG reversed                                                               
+ 60NI cL E$From least-squares fit to E|g's (by compilers). Normalized           
+ 60NI2cL |h{+2}=3.6 as compared to critical |h{+2}=1.3. 18 |g-ray energies      
+ 60NI3cL deviate from the fitted values by more than 3|s's: two by more than    
+ 60NI4cL 5|s's, six by 4 to 5|s's, and ten by 3 to 4|s's. Doubling the          
+ 60NI5cL uncertainties of these 16 |g rays gives a normalized |h{+2}=2.2        
+ 60NI CL BAND(A)$ |g cascade based on GS                                        
+ 60NI CL BAND(B)$ |DJ=1 structure based on 3671, 4+                             
+ 60NI CL BAND(C)$ |DJ=1 structure based on 3187, 3+                             
+ 60NI CL BAND(D)$Magnetic-dipole rotational band-1.                             
+ 60NI2cL Band based on 8044, 9- state.                                          
+ 60NI3cL Configuration=|p[(1f{-7/2}{+-1}(fp){+1}]~#|n[1g{-9/2}{+1}(fp){+3}]     
+ 60NI CL BAND(E)$Magnetic-dipole rotational band-2.                             
+ 60NI2cL Band based on 11255, 12+ state.                                        
+ 60NI3cL Configuration=|p[(1f{-7/2}{+-1}(fp){+1}]~#|n[1g{-9/2}{+2}(fp){+2}] or  
+ 60NI4cL |p[(1f{-7/2}{+-1}1g{-9/2}{+1}]~#|n[1g{-9/2}{+1}(fp){+3}]               
+ 60NI CL BAND(F)$Magnetic-dipole rotational band-3.                             
+ 60NI2cL Band based on 11225, (11+) state.                                      
+ 60NI3cL Configuration=|p[(1f{-7/2}{+-1}(fp){+1}]~#|n[1g{-9/2}{+2}(fp){+2}] or  
+ 60NI4cL |p[(1f{-7/2}{+-1}1g{-9/2}{+1}]~#|n[1g{-9/2}{+1}(fp){+3}]               
+ 60NI CL BAND(G)$Magnetic-dipole rotational band-4.                             
+ 60NI2cL Band based on 8485, 9- state.                                          
+ 60NI3cL Configuration=|p[(1f{-7/2}{+-1}(fp){+1}]~#|n[1g{-9/2}{+1}(fp){+3}]     
+ 60NI CL BAND(H)$ |DJ=2 band based on 11443, 13-.                               
+ 60NI2cL Configuration=|p[(1f{-7/2}{+-2}(fp){+2}]~#|n[1g{-9/2}{+1}(fp){+3}]     
+ 60NI CL BAND(h)$ |DJ=2 band based on 11120, 12-.                               
+ 60NI2cL Configuration=|p[(1f{-7/2}{+-2}(fp){+2}]~#|n[1g{-9/2}{+1}(fp){+3}]     
+ 60NI CL BAND(I)$ |DJ=2 band based on 13246, 13+                                
+ 60NI2cL Configuration=|p[(1f{-7/2}{+-3}(1g{-9/2}{+1}(fp){+2}]~#                
+ 60NI3cL |n[1g{-9/2}{+1}(fp){+3}]                                               
+ 60NI CL BAND(J)$ |DJ=2 band based on 9665, 10+.                                
+ 60NI2cL Two forked spin sequences, one based on 9665, 10+ and the              
+ 60NI3cL other 13282, (14+).                                                    
+ 60NI4cL Configuration=|p[(1f{-7/2}{+-2}(1g{-9/2}{+1}(fp){+1}]~#                
+ 60NI5cL |n[1g{-9/2}{+1}(fp){+3}]                                               
+ 60NI CL BAND(j)$ |DJ=2 band based on 13282, (14+).                             
+ 60NI2cL Two forked spin sequences, one based on 9665, 10+ and the              
+ 60NI3cL other 13282, (14+).                                                    
+ 60NI4cL Configuration=|p[(1f{-7/2}{+-2}(1g{-9/2}{+1}(fp){+1}]~#                
+ 60NI5cL |n[1g{-9/2}{+1}(fp){+3}]                                               
+ 60NI PN                                                                     5  
+ 60NI  L 0.0          0+                                                    A   
+ 60NI  L 1332.59   17 2+                                                    A   
+ 60NI  G 1332.5    2  100    3  E2                                              
+ 60NI2 G DCO=1.00 4                                                             
+ 60NI  L 2158.87   19 2+                                                    A   
+ 60NI  G 826.1     2  5.8    3  M1(+E2)  -0.2    2                          Z   
+ 60NI2 G DCO=1.07 8                                                             
+ 60NI cG $DCO=1.04 {I8} for 30|', 53|'                                          
+ 60NI cG $DCO=1.00 {I6} for 53|', 83|'                                          
+ 60NI  G 2159.0    3  0.9    1  E2                                              
+ 60NI  L 2506.15   19 4+                                                    A   
+ 60NI  G 346.8     4  0.2    1  E2                                              
+ 60NI  G 1173.2    2  82.0   25 E2                                              
+ 60NI2 G DCO=1.03 4                                                             
+ 60NI  L 2626.16   19 3+                                                    A   
+ 60NI  G 119.6     1  1.2    2  M1+E2                                       X   
+ 60NI cG E$ level-energy difference=120.0                                       
+ 60NI  G 467.1     1  3.6    2  M1+E2    +0.38   18                             
+ 60NI cG MR$ also +3 to +15 (or +9 {I6})                                        
+ 60NI2 G DCO=1.02 8                                                             
+ 60NI cG $ DCO=1.09 {I8} for 30|', 53|'                                         
+ 60NI cG $ DCO=1.02 {I7} for 53|', 83|'                                         
+ 60NI  G 1293.7    2  1.6    2  M1(+E2)  +0.11   15                             
+ 60NI2 G DCO=0.56 2                                                             
+ 60NI cG $ DCO=0.73 {I3} for 30|', 53|'                                         
+ 60NI cG $ DCO=0.74 {I3} for 53|', 83|'                                         
+ 60NI  L 3120.07   20 4+                                                    A   
+ 60NI  G 493.4     1  1.2    2  M1(+E2)  +0.25   40                         X   
+ 60NI cG MR$ -0.14 to +0.65 (2008To15)                                          
+ 60NI cG E$ level-energy difference=493.9                                       
+ 60NI2 G DCO=0.64 9                                                             
+ 60NI cG $ DCO=0.99 {I4} for gate on |DJ=1 transition                           
+ 60NI cG $ DCO=0.88 {I4} for 30|', 53|', gated on |DJ=1 transition              
+ 60NI cG $ DCO=1.43 {I6} for 53|', 83|', gated on |DJ=1 transition              
+ 60NI  G 613.7     3  0.4    1  D                                           Z   
+ 60NI  G 1787.3    3  9.1    4  E2                                              
+ 60NI2 G DCO=1.10 5                                                             
+ 60NI  L 3186.25   19 3+                                                    C   
+ 60NI  G 680.0     1  0.3    1  M1+E2                                           
+ 60NI  G 1028.2    2  0.5    1  M1+E2                                       X   
+ 60NI cG E$ level-energy difference=1027.4                                      
+ 60NI2 G DCO=0.63 8                                                             
+ 60NI  G 1854.0    2  0.3    1  M1+E2                                           
+ 60NI  L 3619.9     4 3+                                                        
+ 60NI  G 993.7     3  0.3    1  D                                           Z   
+ 60NI  L 3671.37   21 4+                                                    B   
+ 60NI  G 1165.2    2  6.2    3  D+Q                                         Z   
+ 60NI cG MR$-0.10 {I8} or +1.4 {I5}                                             
+ 60NI2 G DCO=0.95 4                                                             
+ 60NI cG $ DCO=1.02 {I4} for 30|', 53|'                                         
+ 60NI cG $ DCO=0.97 {I4} for 53|', 83|'                                         
+ 60NI  G 1512.1    6  0.1    1  E2                                              
+ 60NI  L 3731.06   20 4+                                                    C   
+ 60NI  G 545.0     1  0.3    1  M1+E2                                       Y   
+ 60NI2 G DCO=1.12 24                                                            
+ 60NI  G 610.9     3  0.3    1  D                                           Z   
+ 60NI  G 1105.0    4  0.5    1  M1+E2                                           
+ 60NI  G 1224.9    2  0.7    2  D                                           Y   
+ 60NIF G FLAG=Z                                                                 
+ 60NI2 G DCO=1.05 9                                                             
+ 60NI  G 2398.4    3  1.1    2  E2                                              
+ 60NI2 G DCO=1.04 5                                                             
+ 60NI  L 4165.69   20 5+                                                    B   
+ 60NI  G 494.4     2  0.5    1  M1+E2                                           
+ 60NI2 G DCO=0.72 11                                                            
+ 60NI  G 1044.4    2  0.8    2  M1+E2                                       X   
+ 60NI cG E$ level-energy difference=1045.6                                      
+ 60NI  G 1539.0    3  0.8    2  E2                                              
+ 60NI  G 1659.6    3  5.7    5  M1+E2    -1.1    +8-9                           
+ 60NI cG MR$ -0.3 to -2.0 (2008To15)                                            
+ 60NI2 G DCO=0.32 3                                                             
+ 60NI cG $ DCO=0.44 {I5} for 30|', 53|'                                         
+ 60NI cG $ DCO=0.54 {I4} for 53|', 83|'                                         
+ 60NI  L 4186.4     3 (4+)                                                      
+ 60NI  G 515       1  0.2    1  (D)                                         Z   
+ 60NI  G 1560.2    4  0.3    1  (M1+E2)                                         
+ 60NI  L 4265.11   20 6+                                                    A   
+ 60NI  G 1145.2    2  3.7    3  E2                                              
+ 60NI2 G DCO=1.00 8                                                             
+ 60NI  G 1759.2    3  49.6   16 E2                                              
+ 60NI2 G DCO=1.04 5                                                             
+ 60NI  L 4407.66   20 5+                                                    C   
+ 60NI  G 241.8     1  1.4    2  D                                           Z   
+ 60NI2 G DCO=0.86 10                                                            
+ 60NI  G 676.6     2  3.1    3  M1+E2                                           
+ 60NI  G 736.4     2  1.9    3  M1+E2                                           
+ 60NI  G 1288.3    4  0.4    1  M1+E2                                           
+ 60NI  G 1781.3    3  0.9    1  E2                                              
+ 60NI  G 1901.7    3  1.5    2  M1+E2                                           
+ 60NI  L 4579.1     6 (4+)                                                      
+ 60NI  G 1952.9    5  0.7    1  M1+E2                                           
+ 60NI  L 4986.19   20 6+                                                    B   
+ 60NI  G 578.3     3  0.9    2  M1+E2                                           
+ 60NI  G 720.9     2  2.7    2  D                                           Z   
+ 60NI2 G DCO=0.98 4                                                             
+ 60NI  G 820.5     2  0.7    1  M1+E2                                       Y   
+ 60NI2 G DCO=0.60 5                                                             
+ 60NI  G 1255.8    2  0.5    1  E2                                          X   
+ 60NI cG E$ level-energy difference=1255.1                                      
+ 60NI  G 1314.5    2  1.8    2  E2                                              
+ 60NI2 G DCO=1.03 8                                                             
+ 60NI cG $ DCO=1.34 {I11}for gate on |DJ=1 transition                           
+ 60NI  G 1867.0    3  0.6    1  E2                                          X   
+ 60NI2 G DCO=1.4 3                                                              
+ 60NI cG E$ level-energy difference=1866.1                                      
+ 60NI  G 2480.6    3  5.3    3  E2                                              
+ 60NI2 G DCO=0.91 7                                                             
+ 60NI  L 5014.65   20 5-                                                        
+ 60NI  G 749.5     3  0.1    1  E1                                              
+ 60NI  G 828.3     3  0.2    1  (E1)                                            
+ 60NI  G 848.9     1  0.1    1  E1                                              
+ 60NI  G 1283.8    4  0.3    1  E1                                              
+ 60NI  G 1343.3    2  1.7    2  E1                                              
+ 60NI2 G DCO=0.74 6                                                             
+ 60NI  G 1894.7    3  3.1    3  E1                                              
+ 60NI2 G DCO=0.74 6                                                             
+ 60NI  G 2508.7    4  2.7    3  E1                                              
+ 60NI2 G DCO=0.72 8                                                             
+ 60NI  L 5148.67   20 6+                                                    C   
+ 60NI  G 740.9     2  4.2    4  M1+E2    +0.4    1                              
+ 60NI2 G DCO=0.81 6                                                             
+ 60NI cG $ DCO=1.05 {I7} for 30|', 53|'                                         
+ 60NI cG $ DCO=1.03 {I7} for 53|', 83|'                                         
+ 60NI  G 883.5     1  1.2    1  D                                           Z   
+ 60NI2 G DCO=1.08 5                                                             
+ 60NI  G 982.9     3  0.5    1  M1+E2                                           
+ 60NI  G 1477.3    4  0.2    1  E2                                              
+ 60NI  G 2029.0    5  0.3    1  E2                                              
+ 60NI2 G DCO=1.1 4                                                              
+ 60NI  G 2643.0    4  2.5    3  E2                                              
+ 60NI2 G DCO=0.95 9                                                             
+ 60NI  L 5236.57   21 5(+)                                                      
+ 60NI  G 2116.0    1  1.0    1  D+Q                                         X   
+ 60NI cG E$ level-energy difference=2116.5                                      
+ 60NI cG MR$ |DJ=1 TRANSITION                                                   
+ 60NI2 G DCO=0.56 10                                                            
+ 60NI  L 5348.98   20 7-                                                        
+ 60NI  G 200.2     1  2.6    2  E1                                              
+ 60NI2 G DCO=0.54 5                                                             
+ 60NI cG $ DCO=0.82 {I7} for gate on |DJ=1 transition                           
+ 60NI  G 334.2     1  8.3    4  E2                                              
+ 60NI2 G DCO=0.98 5                                                             
+ 60NI  G 362.8     1  3.7    3  E1                                              
+ 60NI2 G DCO=0.53 5                                                             
+ 60NI  G 1083.6    2  49.0   2  E1                                              
+ 60NI2 G DCO=0.60 3                                                             
+ 60NI  G 2843.0    1  1.8    2  E3                                              
+ 60NI2 G DCO=0.86 7                                                             
+ 60NI  L 5449.7     4 6+                                                        
+ 60NI  G 2944.4    7  0.3    1  E2                                              
+ 60NI  L 5663.18   22 7+                                                    B   
+ 60NI  G 514.4     2  0.6    1  M1+E2                                           
+ 60NI  G 677.7     2  5.4    4  M1+E2    +0.18   +17-16                     X   
+ 60NI cG MR$ +0.02 to +0.35 (2008To15)                                          
+ 60NI2 G DCO=0.84 4                                                             
+ 60NI cG E$ level-energy difference=677.0                                       
+ 60NI cG $ DCO=0.83 {I4} for 30|', 53|'                                         
+ 60NI cG $ DCO=0.85 {I4} for 53|', 83|'                                         
+ 60NI  G 1255.1    3  1.2    1  E2                                              
+ 60NI  G 1397.7    2  3.7    3  M1(+E2)  -0.12   13                             
+ 60NI2 G DCO=0.56 4                                                             
+ 60NI cG $ DCO=0.65 {I5} for 30|', 53|'                                         
+ 60NI cG $ DCO=0.63 {I5} for 53|', 83|'                                         
+ 60NI  G 1498.0    4  0.2    1  E2                                              
+ 60NI  L 5901.82   21 6-                                                        
+ 60NI  G 1637.0    1  0.5    1  E1                                          X   
+ 60NI cG E$ level-energy difference=1636.7                                      
+ 60NI  G 1736.0    1  1.3    1  E1                                              
+ 60NI  L 6112.58   24 7+                                                    C   
+ 60NI  G 963.7     3  2.8    2  M1+E2    +0.3    2                              
+ 60NI2 G DCO=0.78 6                                                             
+ 60NI cG $ DCO=1.07 {I8} for gate on |DJ=1 transition                           
+ 60NI cG $ DCO=0.88 {I6} for 30|', 53|'                                         
+ 60NI cG $ DCO=0.95 {I6} for 53|', 83|'                                         
+ 60NI  G 1847.2    5  1.7    2  M1+E2                                           
+ 60NI  G 1946.6    5  0.8    1  E2                                              
+ 60NI  L 6278.56   21 (6-)                                                      
+ 60NI  G 1042.0    1  0.2    1  (E1)                                            
+ 60NI  G 1264.0    1  0.3    1  (M1+E2)                                         
+ 60NI  L 6461.24   23 8+                                                    B   
+ 60NI  G 348.7     2  0.7    2  M1+E2                                       Y   
+ 60NI2 G DCO=0.74 10                                                            
+ 60NI  G 798.1     2  7.7    4  M1+E2    +0.45   5                              
+ 60NI2 G DCO=0.98 6                                                             
+ 60NI cG $ DCO=1.16 {I6} for gate on |DJ=1 transition                           
+ 60NI cG $ DCO=1.08 {I5} for 30|', 53|'                                         
+ 60NI cG $ DCO=1.03 {I5} for 53|', 83|'                                         
+ 60NI  G 1312.4    4  2.1    2  E2                                          Y   
+ 60NI2 G DCO=1.37 10                                                            
+ 60NI  G 1475.0    4  1.2    1  E2                                              
+ 60NI2 G DCO=0.89 17                                                            
+ 60NI  G 2195.9    5  0.5    1  E2                                              
+ 60NI2 G DCO=0.93 4                                                             
+ 60NI  L 6762.05   22 7(+)                                                      
+ 60NI  G 861.4     4  0.3    1  (E1)                                            
+ 60NI  G 1525.0    1  0.3    1  E2                                          X   
+ 60NI cG E$ level-energy difference=1525.5                                      
+ 60NI  G 2498.5    6  1.0    1  D+Q                                             
+ 60NI2 G DCO=0.63 11                                                            
+ 60NI cG MR$ |DJ=1 TRANSITION                                                   
+ 60NI  L 6811.3     3 9-                                                        
+ 60NI  G 1462.3    4  39.1   17 E2                                          Y   
+ 60NI2 G DCO=1.66 8                                                             
+ 60NI  L 6837.2     3 8-                                                        
+ 60NI  G 1487.8    4  8.2    5  M1+E2                                           
+ 60NI2 G DCO=1.63 8                                                             
+ 60NI cG $ DCO=2.15 {I10} for gate on |DJ=1 transition                          
+ 60NI  L 7027.99   24 8+                                                    C   
+ 60NI  G 914.8     3  0.7    1  M1+E2                                       Y   
+ 60NI2 G DCO=1.05 21                                                            
+ 60NI  G 1365.0    2  1.0    1  M1+E2                                       Y   
+ 60NI2 G DCO=1.11 9                                                             
+ 60NI  G 1578.6    4  0.6    1  E2                                              
+ 60NI  G 1880.9    5  1.0    2  E2                                          X   
+ 60NIF G FLAG=Y                                                                 
+ 60NI cG E$ level-energy difference=1879.3                                      
+ 60NI2 G DCO=1.18 12                                                            
+ 60NI  G 2041.9    5  0.4    2  E2                                              
+ 60NI2 G DCO=0.81 17                                                            
+ 60NI  L 7250.1     5 8+                                                        
+ 60NI  G 2986.5    7  1.6    1  E2                                              
+ 60NI2 G DCO=0.94 10                                                            
+ 60NI  L 7360.9     3 (8)                                                       
+ 60NI  G 2012.2    5  0.1    1  (D+Q)                                           
+ 60NI cG M$ (E2/M1) in table I of 2008To15                                      
+ 60NI  L 7380.5     5 8+                                                        
+ 60NI  G 3114.7    7  1.0    1  E2                                              
+ 60NI2 G DCO=0.94 17                                                            
+ 60NI  L 7433.60   24 9+                                                    B   
+ 60NI  G 405.7     2  0.5    1  M1+E2                                           
+ 60NI  G 972.3     2  5.0    5  M1+E2    +0.4    2                              
+ 60NI2 G DCO=1.07 8                                                             
+ 60NI cG $ DCO=1.05 {I6} for gate on |DJ=1 transition                           
+ 60NI cG $ DCO=0.99 {I8} for 30|', 53|'                                         
+ 60NI cG $ DCO=0.94 {I10} for 53|', 83|'                                        
+ 60NI  G 1321.1    4  1.6    4  E2                                              
+ 60NI  G 1770.6    5  0.2    1  E2                                              
+ 60NI  L 7465.8     3 (7-)                                                      
+ 60NI  G 2451.5    6  0.1    1  E2                                              
+ 60NI  L 7531.5     4 8+                                                        
+ 60NI  G 1418.9    4  0.3    1  M1+E2                                           
+ 60NI  G 3266.9    8  0.4    1  E2                                              
+ 60NI2 G DCO=1.25 23                                                            
+ 60NI  L 7690.61   23 8-                                                        
+ 60NI  G 928.2     1  0.5    1  (E1)                                        X   
+ 60NI cG E$ level-energy difference=928.6                                       
+ 60NI  G 1413.9    4  0.3    1  (E2)                                        X   
+ 60NI cG E$ level-energy difference=1412.0                                      
+ 60NI  G 1790.2    5  0.5    1  E2                                          Y   
+ 60NI2 G DCO=1.40 8                                                             
+ 60NI  L 7732.7     4 8+                                                        
+ 60NI  G 2586.2    6  0.3    1  E2                                          X   
+ 60NI cG E$ level-energy difference=2584.0                                      
+ 60NI  G 3465.8    8  0.4    1  E2                                              
+ 60NI2 G DCO=1.0 3                                                              
+ 60NI  L 7760.4     3 8-                                                        
+ 60NI  G 294.7     2  0.2    1  (M1+E2)                                         
+ 60NI  G 948.5     3  0.2    1  M1+E2                                           
+ 60NI  G 1648.0    4  0.4    1  E1                                              
+ 60NI  G 1860.4    5  0.1    1  E2                                          X   
+ 60NI cG E$ level-energy difference=1858.6                                      
+ 60NI  G 2411.4    6  1.0    1  M1+E2                                       Y   
+ 60NI2 G DCO=1.30 10                                                            
+ 60NI  L 7981.0     3 9+                                                        
+ 60NI  G 547.2     4  0.1    1  D                                           Z   
+ 60NI  G 1519.9    4  1.4    5  M1+E2                                           
+ 60NI2 G DCO=0.76 13                                                            
+ 60NI  G 2317.5    3  1.0    3  E2                                              
+ 60NI2 G DCO=1.3 3                                                              
+ 60NI cG $ DCO=1.8 {I3} for gate on |DJ=1 transition                            
+ 60NI  L 8044.21   24 9-                                                    D   
+ 60NI  G 283.9     2  1.3    2  M1+E2                                       Y   
+ 60NI2 G DCO=0.89 6                                                             
+ 60NI  G 352.9     2  2.1    3  M1+E2                                       X   
+ 60NI cG E$ level-energy difference=353.6                                       
+ 60NIF G FLAG=Y                                                                 
+ 60NI2 G DCO=0.93 5                                                             
+ 60NI  G 683.3     2  0.1    1  (D+Q)                                           
+ 60NI cG MR$ |DJ=(1) TRANSITION                                                 
+ 60NI  G 1207.0    3  4.8    5  M1+E2    +0.37   4                              
+ 60NI2 G DCO=1.08 9                                                             
+ 60NI cG $ DCO=1.70 {I8} for gate on |DJ=1 transition                           
+ 60NI cG $ DCO=1.33 {I5} for 30|', 53|', gate on |DJ=1 transition               
+ 60NI cG $ DCO=1.30 {I5} for 53|', 83|', gate on |DJ=1 transition               
+ 60NI  G 1233.0    3  1.1    2  D                                           Y   
+ 60NIF G FLAG=Z                                                                 
+ 60NI2 G DCO=1.15 16                                                            
+ 60NI  G 1583.3    4  0.6    1  E1                                          Y   
+ 60NI2 G DCO=1.09 14                                                            
+ 60NI  G 2696.1    6  2.9    2  E2                                              
+ 60NI2 G DCO=1.03 4                                                             
+ 60NI cG $ DCO=1.70 {I9} for gate on |DJ=1 transition                           
+ 60NI  L 8074.6     5 8+                                                        
+ 60NI  G 3807.8    9  0.1    1  E2                                              
+ 60NI  L 8272.2     3 10-                                                       
+ 60NI  G 1435.0    4  0.8    1  E2                                          Y   
+ 60NI2 G DCO=1.6 4                                                              
+ 60NI  G 1461.6    4  4.5    7  M1+E2                                           
+ 60NI  L 8390.0     4 9-                                                        
+ 60NI  G 3039.2    7  0.8    1  E2                                              
+ 60NI  L 8426.88   22 9-                                                        
+ 60NI  G 3077.8    1  0.9    1  E2                                              
+ 60NI2 G DCO=1.3 3                                                              
+ 60NI cG $ DCO=2.3 {I4} for gate on |DJ=1 transition                            
+ 60NI  L 8485.7     3 9-                                                    G   
+ 60NI  G 1648.2    4  0.6    1  M1+E2                                       Y   
+ 60NI2 G DCO=0.94 11                                                            
+ 60NI  G 1674.5    4  0.2    1  D                                           Z   
+ 60NI  G 3136.9    7  0.7    1  E2                                              
+ 60NI2 G DCO=1.0 3                                                              
+ 60NI cG $ DCO=1.30 {I19} for gate on |DJ=1 transition                          
+ 60NI  L 8521.23   25 10-                                                   D   
+ 60NI  G 249.0     1  0.4    1  D                                           Y   
+ 60NIF G FLAG=Z                                                                 
+ 60NI2 G DCO=1.05 12                                                            
+ 60NI  G 476.7     2  17.3   5  M1(+E2)  0.00    5                              
+ 60NI2 G DCO=0.48 7                                                             
+ 60NI cG $ DCO=0.98 {I4} for gate on |DJ=1 transition                           
+ 60NI cG $ DCO=1.03 {I4} for 30|', 53|', gate on |DJ=1 transition               
+ 60NI cG $ DCO=1.07 {I5} for 53|', 83|', gate on |DJ=1 transition               
+ 60NI  G 1710.1    4  10.4   6  M1+E2    +0.34   5                              
+ 60NI2 G DCO=1.07 5                                                             
+ 60NI cG $ DCO=1.33 {I6} for gate on |DJ=1 transition                           
+ 60NI cG $ DCO=1.75 {I7} for 30|', 53|', gate on |DJ=1 transition               
+ 60NI cG $ DCO=1.25 {I5} for 53|', 83|', gate on |DJ=1 transition               
+ 60NI  L 8689.1     3 10+                                                   B   
+ 60NI  G 1255.4    4  1.7    3  M1+E2    +0.5    3                              
+ 60NI2 G DCO=1.06 9                                                             
+ 60NI cG $ DCO=0.93 {I7} for gate on |DJ=1 transition                           
+ 60NI cG $ DCO=0.89 {I7} for 30|', 53|'                                         
+ 60NI cG $ DCO=1.07 {I8} for 53|', 83|'                                         
+ 60NI  G 1661.9    4  0.6    1  E2                                              
+ 60NI  G 2227.2    5  0.8    2  E2                                              
+ 60NI  L 9123.2     3 10-                                                   G   
+ 60NI  G 601.6     2  0.2    1  D                                           Z   
+ 60NI  G 637.5     2  1.8    1  M1+E2                                       Y   
+ 60NI2 G DCO=0.93 11                                                            
+ 60NI  G 2311.8    6  0.5    1  M1+E2                                           
+ 60NI2 G DCO=0.88 12                                                            
+ 60NI cG $ DCO=1.05 {I16} for gate on |DJ=1 transition                          
+ 60NI  L 9132.4     3 11-                                                   D   
+ 60NI  G 611.5     2  25.1   8  M1+E2    +0.08   7                              
+ 60NI2 G DCO=0.61 3                                                             
+ 60NI cG $ DCO=1.06 {I5} for gate on |DJ=1 transition                           
+ 60NI cG $ DCO=0.77 {I4} for 30|', 53|'                                         
+ 60NI cG $ DCO=0.80 {I4} for 53|', 83|'                                         
+ 60NI  G 1088.2    3  0.7    1  E2                                              
+ 60NI  L 9264.5     3 11-                                                       
+ 60NI  G 874.1     3  0.1    1  E2                                              
+ 60NI  G 2452.2    6  1.1    1  E2                                              
+ 60NI2 G DCO=1.20 17                                                            
+ 60NI  L 9426.3     4 10+                                                       
+ 60NI  G 1992.9    5  0.3    1  M1+E2                                       Y   
+ 60NI2 G DCO=1.12 13                                                            
+ 60NI  L 9622.4     8 10-                                                   h   
+ 60NI  G 2785.2    7  0.3    1  E2                                          Y   
+ 60NI2 G DCO=1.8 3                                                              
+ 60NI  L 9665.8     3 10+                                                   J   
+ 60NI  G 1590.9    4  0.5    1  E2                                              
+ 60NI2 G DCO=0.98 10                                                            
+ 60NI  G 1934.0    5  0.4    1  E2                                              
+ 60NI2 G DCO=0.98 17                                                            
+ 60NI  G 2134.4    5  0.4    1  E2                                              
+ 60NI2 G DCO=1.1 3                                                              
+ 60NI  G 2233.0    5  0.3    1  M1+E2                                           
+ 60NI2 G DCO=0.54 8                                                             
+ 60NI  G 2284.9    6  0.3    1  E2                                              
+ 60NI2 G DCO=1.19 20                                                            
+ 60NI  G 2416.3    6  0.7    1  E2                                              
+ 60NI2 G DCO=0.93 10                                                            
+ 60NI  G 2854.4    7  1.5    2  E1                                              
+ 60NI2 G DCO=0.49 4                                                             
+ 60NI  G 3204.6    7  0.2    1  E2                                              
+ 60NI  L 9715.0     4 (10+)                                                     
+ 60NI  G 1287.9    4  0.2    1  (E1)                                            
+ 60NI  L 9718.4     3 11-                                                       
+ 60NI  G 454.0     2  0.1    1  D                                           Z   
+ 60NI  G 1196.8    3  1.1    1  M1+E2                                       Y   
+ 60NI2 G DCO=1.18 16                                                            
+ 60NI  G 1447.1    4  0.7    1  M1+E2                                           
+ 60NI  G 2905.9    7  1.7    1  E2                                              
+ 60NI2 G DCO=0.88 11                                                            
+ 60NI  L 9760.6     3 11-                                                       
+ 60NI  G 1239.0    3  1.0    1  M1+E2                                       Y   
+ 60NI2 G DCO=0.88 12                                                            
+ 60NI  G 2948.8    7  2.3    2  E2                                              
+ 60NI2 G DCO=1.09 12                                                            
+ 60NI  L 9888.1     4 10+                                                       
+ 60NI  G 2638.4    6  0.2    1  E2                                              
+ 60NI  G 3079.0    7  0.2    1  E1                                          X   
+ 60NI cG E$ level-energy difference=3076.6                                      
+ 60NI  L 9960.3     3 11-                                                   G   
+ 60NI  G 827.8     6  0.2    1  D                                           Z   
+ 60NI  G 836.4     3  1.3    1  M1+E2                                       Y   
+ 60NI2 G DCO=1.10 5                                                             
+ 60NI  G 1438.6    4  0.5    1  M1+E2                                           
+ 60NI  L 9989.4     3 12-                                                   D   
+ 60NI  G 856.9     3  12.0   6  M1(+E2)  +0.13   15                             
+ 60NI2 G DCO=0.65 4                                                             
+ 60NI cG $ DCO=1.07 {I5} for gate on |DJ=1 transition                           
+ 60NI cG $ DCO=0.85 {I5} for 30|', 53|'                                         
+ 60NI cG $ DCO=0.81 {I4} for 53|', 83|'                                         
+ 60NI  G 1468.3    4  0.5    1  E2                                              
+ 60NI  L 10054.4    3 (11-)                                                     
+ 60NI  G 789.4     3  0.1    1  D                                           Z   
+ 60NI  G 3243.4    7  0.3    1  (E2)                                            
+ 60NI  L 10158.7    4 (12-)                                                     
+ 60NI  G 894.1     3  0.3    1  (M1+E2)                                         
+ 60NI  L 10242.0    5 (11-)                                                     
+ 60NI  G 3428.9    8  0.5    1  (E2)                                            
+ 60NI  L 10697.4    4 12-                                                       
+ 60NI  G 936.7     3  0.4    1  M1+E2                                           
+ 60NI2 G DCO=0.62 12                                                            
+ 60NI  G 979.1     3  0.3    1  M1+E2                                           
+ 60NI2 G DCO=0.48 11                                                            
+ 60NI  L 10788.8    3 12-                                                   G   
+ 60NI  G 734.1     2  0.2    1  M1+E2                                           
+ 60NI  G 828.5     3  0.5    1  M1+E2                                       Y   
+ 60NI2 G DCO=0.99 4                                                             
+ 60NI  G 1028.0    9  0.4    1  M1+E2                                           
+ 60NI  G 1657.5    4  0.3    1  M1+E2                                           
+ 60NI  L 10825.4    3 11+                                                       
+ 60NI  G 1398.8    9  0.1    1  M1+E2                                           
+ 60NI  G 2135.8    5  0.3    1  M1+E2                                           
+ 60NI  G 2844.8    7  0.3    1  E2                                          Y   
+ 60NI2 G DCO=1.35 16                                                            
+ 60NI  G 3390.8    8  0.1    1  E2                                              
+ 60NI  L 10872.8    3 11+                                                       
+ 60NI  G 1446.6    4  0.1    1  M1+E2                                           
+ 60NI  G 2184.4    5  0.2    1  M1+E2                                           
+ 60NI  G 2891.7    7  0.2    1  E2                                              
+ 60NI  G 3439.2    8  0.3    1  E2                                              
+ 60NI  L 10977.8    3 11+                                                   E   
+ 60NI  G 2289.1    6  0.1    LT M1+E2                                           
+ 60NI  G 2705.8    6  0.1    1  E1                                              
+ 60NI  G 2996.6    7  0.6    3  E2                                              
+ 60NI2 G DCO=1.1 5                                                              
+ 60NI cG $ DCO=1.90 {I22} for gate on |DJ=1 transition                          
+ 60NI  G 3544.2    8  0.5    1  E2                                              
+ 60NI  L 11030.7    3 11+                                                       
+ 60NI  G 2341.7    6  0.2    1  M1+E2                                           
+ 60NI  G 3048.4    7  0.1    1  E2                                              
+ 60NI  G 3596.7    8  0.1    1  E2                                              
+ 60NI  L 11044.3    3 12+                                                   J   
+ 60NI  G 1156.8    3  0.8    1  E2                                              
+ 60NI2 G DCO=1.01 17                                                            
+ 60NI  G 1283.0    4  0.2    1  E1                                              
+ 60NI  G 1329.0    4  0.1    1  (E2)                                            
+ 60NI  G 1378.7    4  6.9    2  E2                                              
+ 60NI2 G DCO=1.05 6                                                             
+ 60NI  G 1911.4    5  0.2    1  E1                                          Y   
+ 60NI2 G DCO=1.10 12                                                            
+ 60NI  L 11079.3    4 (12-)                                                     
+ 60NI  G 837.1     3  0.2    1  (M1+E2)                                         
+ 60NI  G 1025.1    3  0.2    1  (M1+E2)                                         
+ 60NI  L 11112.9    4 13-                                                   D   
+ 60NI  G 954.1     3  0.1    1  (M1+E2)                                         
+ 60NI  G 1123.4    3  5.8    4  M1+E2    +0.13   7                              
+ 60NI2 G DCO=0.59 4                                                             
+ 60NI cG $ DCO=1.10 {I5} for gate on |DJ=1 transition                           
+ 60NI cG $ DCO=0.91 {I6} for 30|', 53|'                                         
+ 60NI cG $ DCO=0.79 {I5} for 53|', 83|'                                         
+ 60NI  G 1981.1    5  0.4    1  E2                                          Y   
+ 60NI2 G DCO=1.48 16                                                            
+ 60NI  L 11120.6    9 12-                                                   h   
+ 60NI  G 1498.1    4  0.2    1  E2                                              
+ 60NI2 G DCO=0.95 4                                                             
+ 60NI  L 11225.0    5 (11+)                                                 F   
+ 60NI  G 2705      2  0.1    1  (E1)                                            
+ 60NI  G 3792.5    9  0.2    1  (E2)                                            
+ 60NI  L 11255.4    3 12+                                                   E   
+ 60NI  G 224.6     1  0.3    1  M1+E2    -0.12   10                         Y   
+ 60NI2 G DCO=0.96 16                                                            
+ 60NI cG $ DCO=0.77 {I11} for 30|', 53|', gate on |DJ=1 transition              
+ 60NI cG $ DCO=0.92 {I11} for 53|', 83|', gate on |DJ=1 transition              
+ 60NI  G 278.0     2  2.1    1  M1(+E2)  -0.03   5                              
+ 60NI2 G DCO=0.90 11                                                            
+ 60NI cG $ DCO=0.90 {I4} for gate on |DJ=1 transition                           
+ 60NI cG $ DCO=0.89 {I5} for 30|', 53|', gate on |DJ=1 transition               
+ 60NI cG $ DCO=1.02 {I5} for 53|', 83|', gate on |DJ=1 transition               
+ 60NI  G 382.8     2  0.7    1  M1+E2    -0.05   4                          Y   
+ 60NI2 G DCO=0.88 8                                                             
+ 60NI cG $ DCO=0.95 {I8} for 30|', 53|', gate on |DJ=1 transition               
+ 60NI cG $ DCO=0.98 {I7} for 53|', 83|', gate on |DJ=1 transition               
+ 60NI  G 429.9     2  0.9    1  M1(+E2)  -0.04   4                          Y   
+ 60NI2 G DCO=0.92 7                                                             
+ 60NI cG $ DCO=0.89 {I7} for 30|', 53|', gate on |DJ=1 transition               
+ 60NI cG $ DCO=1.03 {I7} for 53|', 83|', gate on |DJ=1 transition               
+ 60NI  G 1293.4    4  0.6    1  E1                                          X   
+ 60NIF G FLAG=Y                                                                 
+ 60NI cG E$ level-energy difference=1295.1                                      
+ 60NI2 G DCO=0.88 10                                                            
+ 60NI  G 1590.3    4  0.7    1  E2                                          Y   
+ 60NI2 G DCO=2.5 4                                                              
+ 60NI  G 2123.4    5  1.0    1  E1                                          Y   
+ 60NI2 G DCO=0.78 7                                                             
+ 60NI  L 11443.6    3 13-                                                   H   
+ 60NI  G 654.9     2  0.4    1  M1+E2                                           
+ 60NI2 G DCO=0.63 12                                                            
+ 60NI  G 1683.2    4  1.4    1  E2                                              
+ 60NI2 G DCO=0.98 14                                                            
+ 60NI  G 1724.9    4  1.1    1  E2                                              
+ 60NI2 G DCO=0.99 17                                                            
+ 60NI  L 11493.8    5 (12+)                                                     
+ 60NI  G 2361.4    9  0.1    1  (E1)                                            
+ 60NI  L 11553.4    4 13-                                                   G   
+ 60NI  G 764.2     3  0.5    1  M1+E2                                       Y   
+ 60NI2 G DCO=0.96 4                                                             
+ 60NI  L 11785.7    5 (12+)                                                 F   
+ 60NI  G 560.8     2  0.2    1  M1+E2                                       Y   
+ 60NI2 G DCO=0.94 11                                                            
+ 60NI  G 2654.2    6  0.4    1  (E1)                                            
+ 60NI  L 11851.3    3 13+                                                   E   
+ 60NI  G 596.0     2  6.6    3  M1(+E2)  -0.03   4                              
+ 60NI2 G DCO=0.75 8                                                             
+ 60NI cG $ DCO=1.04 {I4} for gate on |DJ=1 transition                           
+ 60NI cG $ DCO=0.97 {I5} for 30|' 53|', gate on |DJ=1 transition                
+ 60NI cG $ DCO=1.03 {I5} for 53|' 83|', gate on |DJ=1 transition                
+ 60NI  G 872.6     3  0.3    1  E2                                              
+ 60NI  G 1862.9    5  0.3    1  E1                                              
+ 60NI  L 11878.1    5 (13)                                                      
+ 60NI  G 1180.7    3  0.3    1  (D+Q)                                           
+ 60NI cG M$|DJ=(1) transition                                                   
+ 60NI  L 12273.8    4 14-                                                   D   
+ 60NI  G 1160.8    3  2.6    3  M1+E2    +0.11   6                              
+ 60NI2 G DCO=0.57 5                                                             
+ 60NI cG $ DCO=0.98 {I7} for gate on |DJ=1 transition                           
+ 60NI cG $ DCO=0.87 {I6} for 30|', 53|'                                         
+ 60NI cG $ DCO=0.77 {I5} for 53|', 83|'                                         
+ 60NI  G 2284.6    6  0.4    1  E2                                          Y   
+ 60NI2 G DCO=1.30 12                                                            
+ 60NI  L 12486.3    5 (13+)                                                 F   
+ 60NI  G 700.8     2  0.4    1  M1+E2                                       Y   
+ 60NI2 G DCO=0.83 9                                                             
+ 60NI  G 2495.3    6  0.3    1  (E1)                                            
+ 60NI  L 12578.6    4 14+                                                   E   
+ 60NI  G 727.1     2  4.7    3  M1(+E2)  +0.03   5                              
+ 60NI2 G DCO=0.64 12                                                            
+ 60NI cG $ DCO=1.00 {I4} for gate on |DJ=1 transition                           
+ 60NI cG $ DCO=1.05 {I6} for 30|', 53|', gate on |DJ=1 transition               
+ 60NI cG $ DCO=1.04 {I5} for 53|', 83|', gate on |DJ=1 transition               
+ 60NI  G 1025.1    3  0.2    1  E1                                              
+ 60NI  G 1323.9    4  0.3    1  E2                                              
+ 60NI  L 12742.2    5 13+                                                       
+ 60NI  G 1956.0    12 0.2    1  E1                                              
+ 60NI  G 2753.2    7  0.1    1  E1                                              
+ 60NI  L 12774.9    4 14+                                                   J   
+ 60NI  G 1281.1    4  0.1    1  (E2)                                            
+ 60NI  G 1730.4    4  11.3   6  E2                                              
+ 60NI2 G DCO=1.21 6                                                             
+ 60NI  L 12859.5    6 13+                                                       
+ 60NI cL $No information about |g decay of this level                           
+ 60NI  L 13037.5   10 14-                                                   H   
+ 60NI  G 1916.9    5  0.4    1  E2                                              
+ 60NI2 G DCO=1.10 5                                                             
+ 60NI  L 13246.5    4 13+                                                   I   
+ 60NI  G 2202.3    5  0.2    1  M1+E2                                           
+ 60NI  G 2456.4    6  0.2    1  E1                                              
+ 60NI2 G DCO=0.63 12                                                            
+ 60NI  L 13282.5    5 (14+)                                                 j   
+ 60NI  G 1839.1    5  0.5    1  (E1)                                            
+ 60NI  G 2238.1    9  0.2    1  (E2)                                            
+ 60NI  L 13353.1    6 (14+)                                                 F   
+ 60NI  G 866.8     3  0.6    1  M1+E2                                       Y   
+ 60NI2 G DCO=1.13 12                                                            
+ 60NI  L 13615.6    5 15-                                                   H   
+ 60NI  G 2061.2    5  0.2    1  E2                                              
+ 60NI  G 2172.9    5  1.5    1  E2                                              
+ 60NI2 G DCO=1.05 25                                                            
+ 60NI  L 13662.4    4 15+                                                   E   
+ 60NI  G 1083.9    3  3.6    3  M1+E2                                           
+ 60NI  G 1811.0    5  0.4    1  E2                                          Y   
+ 60NI2 G DCO=1.60 22                                                            
+ 60NI  L 13810.1    5 (15-)                                                 D   
+ 60NI  G 1536.2    4  0.3    1  (M1+E2)                                         
+ 60NI  G 2697.2    6  0.2    1  (E2)                                            
+ 60NI  L 14201.2    7 (15+)                                                 F   
+ 60NI  G 848.0     3  0.3    1  M1+E2                                       Y   
+ 60NI2 G DCO=0.97 12                                                            
+ 60NI  L 14463.8    4 15+                                                   I   
+ 60NI  G 1217.1    3  0.9    2  E2                                              
+ 60NI2 G DCO=0.96 8                                                             
+ 60NI  G 1604.3    4  0.6    1  E2                                              
+ 60NI2 G DCO=0.90 14                                                            
+ 60NI  G 1688.8    4  0.8    1  M1(+E2)  0.0     2                              
+ 60NI2 G DCO=0.45 4                                                             
+ 60NI cG $ DCO=1.01 {I4} for 30|', 53|'                                         
+ 60NI cG $ DCO=0.61 {I7} for 53|', 83|'                                         
+ 60NI  G 1722.0    4  1.6    1  E2                                              
+ 60NI2 G DCO=1.02 11                                                            
+ 60NI  G 2189.9    5  0.2    1  E1                                              
+ 60NI  L 14645.6    6 16+                                                   J   
+ 60NI  G 1870.8    5  5.5    5  E2                                              
+ 60NI2 G DCO=0.98 6                                                             
+ 60NI  L 14803.4    5 16+                                                   E   
+ 60NI  G 1141.1    3  1.4    1  M1(+E2)  -0.01   10                         Y   
+ 60NI2 G DCO=0.89 9                                                             
+ 60NI cG $ DCO=0.92 {I12} for 30|', 53|', gate on |DJ=1 transition              
+ 60NI cG $ DCO=1.08 {I7} for 53|', 83|', gate on |DJ=1 transition               
+ 60NI  G 2224.5    5  0.4    1  E2                                          Y   
+ 60NI2 G DCO=1.29 14                                                            
+ 60NI  L 14934.1    5 16+                                                   j   
+ 60NI  G 1651.7    4  0.4    1  (E2)                                            
+ 60NI  G 2158.9    5  1.5    2  E2                                              
+ 60NI2 G DCO=1.02 8                                                             
+ 60NI  L 15165.0    7 (16+)                                                 F   
+ 60NI  G 963.8     3  0.2    1  (M1+E2)                                         
+ 60NI  L 15281.4   11 (16-)                                                 h   
+ 60NI  G 2243.9    5  0.3    1  (E2)                                            
+ 60NI  L 16026.8    5 17+                                                   I   
+ 60NI  G 1381.2    4  0.2    1  M1+E2                                           
+ 60NI  G 1562.9    4  6.4    3  E2                                              
+ 60NI2 G DCO=1.13 10                                                            
+ 60NI  L 16098.2    5 (17+)                                                 E   
+ 60NI  G 1294.8    1  0.1    1  (M1+E2)                                         
+ 60NI  L 16194.5    8 17-                                                   H   
+ 60NI  G 2578.9    6  0.6    1  E2                                              
+ 60NI2 G DCO=1.05 17                                                            
+ 60NI  L 16242.0   13 (17+)                                                 F   
+ 60NI  G 1077      1  0.1    1  (M1+E2)                                         
+ 60NI  L 16842.6    8 18+                                                   J   
+ 60NI  G 2196.9    5  2.3    3  E2                                              
+ 60NI2 G DCO=0.87 7                                                             
+ 60NI  L 17236.0    8 18+                                                   j   
+ 60NI  G 2301.9    6  0.6    1  E2                                              
+ 60NI2 G DCO=1.16 13                                                            
+ 60NI  L 17911.7    7 19+                                                   I   
+ 60NI  G 1884.9    5  4.2    3  E2                                              
+ 60NI2 G DCO=1.13 10                                                            
+ 60NI  L 18131.4   14 (18-)                                                 h   
+ 60NI cL J$ positive parity in table I of 2008To15 is a misprint                
+ 60NI  G 2849.9    7  0.2    1  (E2)                                            
+ 60NI  L 19238.5   11 (19-)                                                 H   
+ 60NI  G 3043.9    7  0.1    1  (E2)                                            
+ 60NI  L 19504.5   10 20+                                                   J   
+ 60NI  G 2661.9    6  0.5    1  E2                                              
+ 60NI2 G DCO=1.05 13                                                            
+ 60NI  L 20018.1   11 (20+)                                                 j   
+ 60NI  G 2782.0    7  0.2    1  (E2)                                            
+ 60NI  L 20177.7   10 21+                                                   I   
+ 60NI  G 2265.9    6  1.0    1  E2                                              
+ 60NI2 G DCO=1.21 14                                                            
+ 60NI  L 22863.6   13 (22+)                                                 J   
+ 60NI  G 3359.0    8  0.1    1  (E2)                                            
+ 60NI  L 22996.6   12 23+                                                   I   
+ 60NI  G 2818.9    7  0.2    1  E2                                              
+ 60NI2 G DCO=0.95 15                                                            
+                                                                                

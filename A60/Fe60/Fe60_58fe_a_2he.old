@@ -4,12 +4,12 @@
  60FE c  E=55.7 MeV. FWHM=200-300 keV. |s(|q) from 17.5|' to                    
  60FE2c  40|' (lab). DWBA calculations for two-neutron configurations.          
  60FE cL L$From comparison of |s(|q) with DWBA calculations.                    
- 60FE cL S$The normalization factor N=(d|s/d|W)(expt)/(d|s/d|W)(DWBA)           
+ 60FE cL $N: The normalization factor N=(d|s/d|W)(expt)/(d|s/d|W)(DWBA)         
  60FE  L 0.0                                           0                        
- 60FE cL $S=260 {I10}                                                           
+ 60FE cL $N=260 {I10}                                                           
  60FE cL $Configuration=(p3/2){+2}(0+)                                          
  60FE  L 3080      50                                  4                        
- 60FE cL $S=60 {I20}                                                            
+ 60FE cL $N=60 {I20}                                                            
  60FE cL           Configuration ((p3/2)(f5/2))4+                               
  60FE  L 3520      50                                  4,5                      
  60FE cL S         N=60 {I30} for L=4; N=40 {I20} for L=5.                      
@@ -18,7 +18,7 @@
  60FE3cL configuration results in a more reasonable normalization constant.     
  60FE cL           Configuration ((p3/2)(f5/2))4+, ((p1/2)(g9/2))5-             
  60FE  L 4350      50                                  7                        
- 60FE cL $S=70 {I10}                                                            
+ 60FE cL $N=70 {I10}                                                            
  60FE cL           Configuration ((f5/2)(g9/2))7-                               
  60FE  L 5310      50                                  5,7                      
  60FE cL S         N=60 {I20} for L=5; N=30 {I15} for L=7.                      
@@ -31,7 +31,7 @@
  60FE cL S         N=20 {I5} for L=7; N=40 {I10} for L=5.                       
  60FE cL           Configuration ((f5/2)(g9/2))7-, ((f5/2)(d5/2))5-             
  60FE  L 6620      50                                  8+6                      
- 60FE cL $S=70 {I20}                                                            
+ 60FE cL $N=70 {I20}                                                            
  60FE cL           Unresolved doublet, can be fitted with a pure L=6            
  60FExcL configuration.                                                         
  60FE cL           N=70 {I20} for configuration (g9/2){+2}8+ +                  
