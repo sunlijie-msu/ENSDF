@@ -1,0 +1,505 @@
+ 75KR    40CA(40CA,4PNG):XUNDL-3       2012ST19                           201212
+ 75KR c  Compiled (unevaluated) dataset from 2012St19:                          
+ 75KR2c  Phys Rev C 86, 064310 (2012)                                           
+ 75KR c  Compiled by E. Thiagalingam and B. Singh (McMaster); Dec 20, 2012      
+ 75KR c  {+40}Ca beam at E=180, 185 MeV provided by the XTU tandem accelerator  
+ 75KR2c  of the Laboratori Nazionali di Legnaro. Target=1 and 0.9 mg/cm{+2}     
+ 75KR3c  {+40}Ca. Gamma rays detected by the |g-spectrometer EUROBALL. Charged  
+ 75KR4c  particles detected by the Italian Silicon Sphere (ISIS). Neutrons      
+ 75KR6c  detected by the Neutron Wall (NWALL). Measured E|g, I|g, (neutron)|g-, 
+ 75KR7c  |g|g-coin, DCO. Deduced levels, J, |p, branching ratios, bands,        
+ 75KR8c  multipolarity, configurations. Comparison with configuration-dependent 
+ 75KR9c  cranked Nilsson-Strutinsky approach.                                   
+ 75KR cG $ DCO values correspond to gates on |DJ=2, quadrupole (E2) transition. 
+ 75KR2cG Expected DCO values are 1.00 {I3} for |DJ=2, quadrupole and 0.55 {I2}  
+ 75KR3cG |DJ=1, dipole transitions. However, the values listed in table I of    
+ 75KR4cG 2012St19 follow an opposite trend.                                     
+ 75KR cG $ 2012St19 give branching ratios also deduced from their relative      
+ 75KR2cG intensity data. These values are not listed here                       
+ 75KR cG RI(X)$ Branching ratio of 0.26 {I2} for 171.3|g and 0.74 {I6} for      
+ 75KR2cG 358.5|g listed in table I of 2012St19 are incorrect since intensity    
+ 75KR3cG of 179.0|g is not considered. See 1998Sk01: Nucl. Phys. A633, 565 for  
+ 75KR4cG correct branching ratios. (Compilers' note).                           
+ 75KR cL E$From least-squares fit (by compilers) to E|g data                    
+ 75KR CL BAND(A)$ Ground-state band,|a=+1/2                                     
+ 75KR CL BAND(a)$ Ground-state band,|a=-1/2                                     
+ 75KR CL BAND(B)$ Band based on 3/2-,|a=+1/2                                    
+ 75KR CL BAND(b)$ Band based on 3/2-,|a=-1/2                                    
+ 75KR CL BAND(C)$ Band based on 5/2-,|a=+1/2                                    
+ 75KR CL BAND(c)$ Band based on 5/2-,|a=-1/2                                    
+ 75KR CL BAND(D)$ Band based on 15/2-,|a=+1/2                                   
+ 75KR CL BAND(d)$ Band basd on 15/2-,|a=-1/2                                    
+ 75KR CL BAND(E)$ Band based on 9/2+,|a=+1/2                                    
+ 75KR CL BAND(F)$ Band based on 21/2(+),|a=+1/2                                 
+ 75KR CL BAND(G)$ Band based on 41/2(+),|a=+1/2                                 
+ 75KR CL BAND(H)$ Band based on 45/2(+),|a=+1/2                                 
+ 75KR CL BAND(I)$ Band based on 13/2+,|a=+1/2                                   
+ 75KR CL BAND(J)$ Band based on 672-keV level                                   
+ 75KR PN                                                                     5  
+ 75KR  L 0.0          5/2+                                                  A   
+ 75KR  L 179.47    15 3/2-                                                  b   
+ 75KR  G 179.3     2                                                            
+ 75KR  L 187.27    15 7/2+                                                  a   
+ 75KR  G 187.4     2  200    10                                                 
+ 75KR2 G DCO=0.98 7                                                             
+ 75KR  L 358.53    15 5/2-                                                  B   
+ 75KR  G 171.3     2  5.1    3                                              X   
+ 75KR  G 179.0     1                                                            
+ 75KR cG RI$ not given in 2012St19, but based on earlier measurements (1998Sk01:
+ 75KR2cG Nucl. Phys. A633, 565) it is expected to be a strong transition        
+ 75KR  G 358.5     3  15     1                                              X   
+ 75KR2 G DCO=0.53 22                                                            
+ 75KR  L 378.18    17 9/2+                                                  A   
+ 75KR  G 191.0     2                                                            
+ 75KR2 G DCO=1.01 9                                                             
+ 75KR  G 378.3     3  71     4                                                  
+ 75KR2 G DCO=0.59 5                                                             
+ 75KR  L 612.36    18 7/2-                                                  b   
+ 75KR  G 234.3     2  1.4    2                                                  
+ 75KR  G 253.7     2  181    9                                                  
+ 75KR2 G DCO=0.96 5                                                             
+ 75KR  G 433.0     3  65     4                                                  
+ 75KR2 G DCO=0.63 8                                                             
+ 75KR  L 672.4      3                                                       J   
+ 75KR  G 313.9     3  1.4    3                                                  
+ 75KR2 G DCO=0.62 16                                                            
+ 75KR  G 493       1                                                            
+ 75KR  L 727.5      4 9/2+                                                  E   
+ 75KR  G 349.0     4  10     2                                                  
+ 75KR  G 540.1     7  10.7   6                                                  
+ 75KR2 G DCO=1.16 16                                                            
+ 75KR  L 770.75    23 11/2+                                                 a   
+ 75KR  G 392.8     3  107    5                                                  
+ 75KR2 G DCO=1.09 7                                                             
+ 75KR  G 583.5     3  65     3                                                  
+ 75KR2 G DCO=0.35 19                                                            
+ 75KR  L 787.6      4 5/2-                                                  C   
+ 75KR  G 428.7     5                                                            
+ 75KR  G 608.4     7                                                            
+ 75KR  L 906.06    22 9/2-                                                  B   
+ 75KR  G 293.8     2  102    5                                                  
+ 75KR2 G DCO=1.01 6                                                             
+ 75KR  G 547.4     3  98     6                                                  
+ 75KR2 G DCO=0.56 8                                                             
+ 75KR  L 1068.5     3 13/2+                                                 A   
+ 75KR  G 297.9     2  74     4                                                  
+ 75KR2 G DCO=1.01 6                                                             
+ 75KR  G 690.3     4  184    9                                                  
+ 75KR2 G DCO=0.55 5                                                             
+ 75KR  L 1100.3     3 7/2-                                                  J   
+ 75KR  G 427.9     3  5      1                                                  
+ 75KR  G 741.8     4  17     4                                                  
+ 75KR  L 1266.9    3  11/2-                                                 b   
+ 75KR  G 360.9     2  74     4                                                  
+ 75KR2 G DCO=0.98 7                                                             
+ 75KR  G 654.4     4  112    6                                                  
+ 75KR2 G DCO=0.56 4                                                             
+ 75KR  L 1365.2     4 9/2-                                                  C   
+ 75KR  G 577.2     6  19     2                                                  
+ 75KR  G 752.7     5  24     2                                                  
+ 75KR cG RI$ deduced from the backed-target (1 mg/cm{+2)} experiment            
+ 75KR2 G DCO=0.85 22                                                            
+ 75KR  L 1530.0     6 13/2+                                                 E   
+ 75KR  G 802.2     7  5.2    8                                                  
+ 75KR2 G DCO=0.76 46                                                            
+ 75KR  G 1151.9    9  16     3                                                  
+ 75KR2 G DCO=0.60 15                                                            
+ 75KR  L 1595.7     4 15/2+                                                 a   
+ 75KR  G 527.3     3  57     3                                                  
+ 75KR2 G DCO=1.1 1                                                              
+ 75KR  G 824.8     4  77     5                                                  
+ 75KR2 G DCO=0.50 5                                                             
+ 75KR  L 1648.1     3 13/2-                                                 B   
+ 75KR  G 381.4     3  42     3                                                  
+ 75KR2 G DCO=1.03 9                                                             
+ 75KR  G 741.9     4  102    5                                                  
+ 75KR2 G DCO=0.55 4                                                             
+ 75KR  L 1757.5     5 13/2+                                                 I   
+ 75KR  G 689.2     5  9      1                                                  
+ 75KR  G 987.0     7  7.3    8                                                  
+ 75KR2 G DCO=1.3 4                                                              
+ 75KR  G 1029.5    7  11     3                                                  
+ 75KR2 G DCO=0.57 9                                                             
+ 75KR  L 1760.7     4 11/2-                                                 J   
+ 75KR  G 660.5     4  20     3                                                  
+ 75KR2 G DCO=0.52 5                                                             
+ 75KR  G 854.7     8  13     1                                                  
+ 75KR  L 1966.1     4 17/2+                                                 A   
+ 75KR  G 370.5     2  34     2                                                  
+ 75KR2 G DCO=0.98 8                                                             
+ 75KR  G 897.5     5  176    11                                                 
+ 75KR2 G DCO=0.51 4                                                             
+ 75KR  L 2111.4    4  15/2-                                                 b   
+ 75KR  G 463.5     3  35     3                                                  
+ 75KR2 G DCO=1.02 11                                                            
+ 75KR  G 844.2     4  112    10                                                 
+ 75KR2 G DCO=0.51 4                                                             
+ 75KR  L 2115.4     4 13/2-                                                 C   
+ 75KR  G 749.7     6  39     4                                                  
+ 75KR2 G DCO=0.54 18                                                            
+ 75KR  G 848.4     8  30     3                                                  
+ 75KR2 G DCO=1.1 5                                                              
+ 75KR  L 2320.2     6                                                           
+ 75KR  G 1251.7    7  10     1                                                  
+ 75KR2 G DCO=0.58 6                                                             
+ 75KR  L 2564.9     4 17/2-                                                 B   
+ 75KR  G 453.7     3  21     2                                                  
+ 75KR2 G DCO=1.02 10                                                            
+ 75KR  G 916.7     5  102    6                                                  
+ 75KR2 G DCO=0.56 5                                                             
+ 75KR  L 2581.0     7 17/2+                                                 E   
+ 75KR  G 1050.7    7  20     4                                                  
+ 75KR2 G DCO=0.51 6                                                             
+ 75KR  G 1513      1  8.0    9                                                  
+ 75KR2 G DCO=0.58 14                                                            
+ 75KR  L 2612.9     6 15/2-                                                 J   
+ 75KR  G 852.3     7  21     4                                                  
+ 75KR2 G DCO=0.54 9                                                             
+ 75KR  L 2631.6     5 19/2+                                                 a   
+ 75KR  G 665.7     4  32     2                                                  
+ 75KR2 G DCO=1.10 9                                                             
+ 75KR  G 1035.6    5  81     6                                                  
+ 75KR2 G DCO=0.46 4                                                             
+ 75KR  L 2657.7     4 15/2-                                                 c   
+ 75KR  G 897.2     7  12     2                                                  
+ 75KR  L 2819.6     9 17/2+                                                 I   
+ 75KR  G 1062.0    8  15     2                                                  
+ 75KR2 G DCO=0.53 7                                                             
+ 75KR  L 2820.7     5 15/2-                                                 d   
+ 75KR  G 500.6     7  3.0    6                                                  
+ 75KR2 G DCO=0.8 5                                                              
+ 75KR  G 854.9     8  7.0    9                                                  
+ 75KR2 G DCO=0.49 4                                                             
+ 75KR cG $2012St19 state that DCO ratio is incompatible                         
+ 75KR  G 1554      1  5      2                                                  
+ 75KR  L 2960.2     4 17/2-                                                 C   
+ 75KR  G 302.7     3  4      1                                                  
+ 75KR2 G DCO=1.27 13                                                            
+ 75KR  G 844.5     4  27     7                                                  
+ 75KR2 G DCO=0.55 7                                                             
+ 75KR  L 3042.8     5 17/2-                                                 D   
+ 75KR  G 927.2     5  13     4                                                  
+ 75KR2 G DCO=0.52 7                                                             
+ 75KR  L 3052.6     5 21/2+                                                 A   
+ 75KR  G 421.1     3  18     2                                                  
+ 75KR2 G DCO=1.13 19                                                            
+ 75KR  G 1086.2    5  144    9                                                  
+ 75KR2 G DCO=0.51 3                                                             
+ 75KR  L 3113.4     4 19/2-                                                 b   
+ 75KR  G 549.0     3  20     1                                                  
+ 75KR2 G DCO=1.06 13                                                            
+ 75KR  G 1002.0    5  91     9                                                  
+ 75KR2 G DCO=0.51 4                                                             
+ 75KR  L 3345.4     4 19/2-                                                 c   
+ 75KR  G 385.2     3  8      1                                                  
+ 75KR2 G DCO=1.27 10                                                            
+ 75KR  G 687.5     4  8      1                                                  
+ 75KR2 G DCO=0.47 15                                                            
+ 75KR  G 732.7     8  5.3    9                                                  
+ 75KR2 G DCO=0.62 6                                                             
+ 75KR  G 1233.5    7  9      1                                                  
+ 75KR  L 3515.9     5 19/2-                                                 d   
+ 75KR  G 473.2     6  1.5    4                                                  
+ 75KR2 G DCO=0.86 29                                                            
+ 75KR  G 695.5     5  11     2                                                  
+ 75KRF G FL=2820.7                                                              
+ 75KR2 G DCO=0.54 15                                                            
+ 75KR  G 858       1                                                            
+ 75KR cG E$ from level-energy difference                                        
+ 75KR  G 902.9     7  6      2                                                  
+ 75KR  L 3590.0    10 21/2+                                                 E   
+ 75KR  G 1009.0    7  25     5                                                  
+ 75KR2 G DCO=0.40 6                                                             
+ 75KR  L 3626.8     4 21/2-                                                 B   
+ 75KR  G 513.8     3  10     1                                                  
+ 75KR2 G DCO=1.10 11                                                            
+ 75KR  G 1061.8    5  73     5                                                  
+ 75KR2 G DCO=0.52 3                                                             
+ 75KR  L 3646.8    10                                                       J  ?
+ 75KR  G 1033.9    8                                                            
+ 75KR  L 3769.3     4 21/2-                                                 C   
+ 75KR  G 423.6     3  6      2                                                  
+ 75KR2 G DCO=1.0 3                                                              
+ 75KR  G 809.3     4  21     5                                                  
+ 75KR2 G DCO=0.56 6                                                             
+ 75KR  G 1202.6    7  7      1                                                  
+ 75KR  L 3781.3     9 21/2(+)                                               F   
+ 75KR  G 1816      1                                                            
+ 75KR  L 3828.0     6 23/2+                                                 a   
+ 75KR  G 775.8     4  22     2                                                  
+ 75KR2 G DCO=1.17 15                                                            
+ 75KR  G 1196.0    6  81     6                                                  
+ 75KR2 G DCO=0.51 7                                                             
+ 75KR  L 3945.7     6 21/2-                                                 D   
+ 75KR  G 429.8     5  3.6    9                                                  
+ 75KR  G 902.8     5  6      2                                                  
+ 75KR2 G DCO=0.48 10                                                            
+ 75KR  L 4032.0    13 (21/2+)                                               I   
+ 75KR  G 1212.4    9  10     2                                                  
+ 75KRF G FL=2819.6                                                              
+ 75KR  L 4132.9     4 23/2-                                                 c   
+ 75KR  G 363.5     3  7.3    9                                                  
+ 75KR2 G DCO=1.02 20                                                            
+ 75KR  G 506.0     3  9      1                                                  
+ 75KR2 G DCO=1.22 24                                                            
+ 75KR  G 787.8     5  17     2                                                  
+ 75KR2 G DCO=0.47 10                                                            
+ 75KR  G 1019.7    5  54     5                                                  
+ 75KR2 G DCO=0.52 7                                                             
+ 75KR  L 4281.6     6 25/2+                                                 A   
+ 75KR  G 453.7     3  11.4   9                                                  
+ 75KR2 G DCO=0.90 12                                                            
+ 75KR  G 1228.7    6  110    8                                                  
+ 75KR2 G DCO=0.53 3                                                             
+ 75KR  L 4293.9     5 23/2-                                                 b   
+ 75KR  G 523.9     5  3.9    6                                                  
+ 75KR  G 667.5     4  5.6    5                                                  
+ 75KR2 G DCO=0.91 23                                                            
+ 75KR  G 948.5     6  10     2                                                  
+ 75KR2 G DCO=0.47 25                                                            
+ 75KR  G 1180.3    7  51     5                                                  
+ 75KR2 G DCO=0.55 7                                                             
+ 75KR  L 4431.8     7 23/2-                                                 d   
+ 75KR  G 486.3     4  3      1                                                  
+ 75KR2 G DCO=0.99 16                                                            
+ 75KR  G 916       1  16     3                                                  
+ 75KR2 G DCO=0.51 8                                                             
+ 75KR  L 4684.9    13 25/2+                                                 E   
+ 75KR  G 1094.9    8  17     6                                                  
+ 75KR2 G DCO=0.41 7                                                             
+ 75KR  L 4726.5     8 25/2(+)                                               F   
+ 75KR  G 946       1  5.2    9                                                  
+ 75KR2 G DCO=0.69 12                                                            
+ 75KR  G 1673      1  15     2                                                  
+ 75KR2 G DCO=0.37 8                                                             
+ 75KR  L 4728.6    14                                                           
+ 75KR  G 1138.6    9  12     4                                                  
+ 75KR  L 4741.2     5 25/2-                                                 B   
+ 75KR  G 608.3     4  14     1                                                  
+ 75KR2 G DCO=1.07 18                                                            
+ 75KR  G 971.7     5  23     2                                                  
+ 75KR2 G DCO=0.55 6                                                             
+ 75KR  G 1114.6    6  28     3                                                  
+ 75KR2 G DCO=0.54 5                                                             
+ 75KR  L 4779.8    14                                                       J  ?
+ 75KR  G 1133      1                                                            
+ 75KR  L 4821.4     5 25/2-                                                 C   
+ 75KR  G 527.4     4  6.5    7                                                  
+ 75KR  G 1051.7    5  12     1                                                  
+ 75KR2 G DCO=0.59 8                                                             
+ 75KR  G 1195.1    6  29     3                                                  
+ 75KR2 G DCO=0.50 11                                                            
+ 75KR  L 4961.6    7  25/2-                                                 D   
+ 75KR  G 529.9     3  3.4    8                                                  
+ 75KR2 G DCO=1.5 4                                                              
+ 75KR  G 1015.6    5  7      1                                                  
+ 75KR2 G DCO=0.72 9                                                             
+ 75KR  L 5031.2     7 27/2+                                                 a   
+ 75KR  G 750.1     5  31     3                                                  
+ 75KR2 G DCO=0.96 15                                                            
+ 75KR  G 1203.0    6  61     7                                                  
+ 75KR2 G DCO=0.48 5                                                             
+ 75KR  L 5163.0    6  27/2-                                                 c   
+ 75KR  G 421.9     5  6.1    9                                                  
+ 75KR2 G DCO=0.97 19                                                            
+ 75KR  G 1029.9    5  64     5                                                  
+ 75KR2 G DCO=0.47 5                                                             
+ 75KR  L 5467.4     6 27/2-                                                 b   
+ 75KR  G 646.1     5  10     1                                                  
+ 75KR  G 1173.8    6  45     5                                                  
+ 75KR2 G DCO=0.51 6                                                             
+ 75KR  L 5539.8     7 27/2-                                                 d   
+ 75KR  G 578.1     4  1.6    4                                                  
+ 75KR  G 1108.2    6  14     3                                                  
+ 75KR2 G DCO=0.56 6                                                             
+ 75KR  L 5563.1     7 29/2+                                                 A   
+ 75KR  G 532.5     4  17     1                                                  
+ 75KR cG E$ 32.5 in Table I of 2012St19 is a misprint                           
+ 75KR2 G DCO=0.78 14                                                            
+ 75KR  G 1281.3    7  71     5                                                  
+ 75KR2 G DCO=0.55 5                                                             
+ 75KR  L 5798.7    14 29/2+                                                 E   
+ 75KR  G 1113.8    6  12     4                                                  
+ 75KR2 G DCO=0.39 6                                                             
+ 75KR  L 5923.9     6 29/2-                                                 B   
+ 75KR  G 760.9     6  9      1                                                  
+ 75KR  G 1182.8    6  36     4                                                  
+ 75KR2 G DCO=0.56 9                                                             
+ 75KR  L 5942.8     8 29/2(+)                                               F   
+ 75KR  G 1216.2    7  12     2                                                  
+ 75KRF G FL=4726.5                                                              
+ 75KR2 G DCO=0.53 6                                                             
+ 75KR  G 1660      1  17     6                                                  
+ 75KR2 G DCO=0.50 6                                                             
+ 75KR  L 6046.9     7 29/2-                                                 C   
+ 75KR  G 579.7     7  6      1                                                  
+ 75KR  G 1225.2    7  31     3                                                  
+ 75KR2 G DCO=0.66 8                                                             
+ 75KR  L 6139.8     9 29/2-                                                 D   
+ 75KR  G 600.0     7  1.0    6                                                  
+ 75KR  G 1178.2    7  6      1                                                  
+ 75KR2 G DCO=0.65 14                                                            
+ 75KR  L 6316.7     8 31/2+                                                 a   
+ 75KR  G 754.4     5  8      2                                                  
+ 75KR2 G DCO=0.88 26                                                            
+ 75KR  G 1284.7    6  32     6                                                  
+ 75KR2 G DCO=0.56 10                                                            
+ 75KR  L 6359.4     7 31/2-                                                 c   
+ 75KR  G 435.7     7  3.2    5                                                  
+ 75KR  G 1196.2    6  58     5                                                  
+ 75KR2 G DCO=0.58 10                                                            
+ 75KR  L 6688.7     7 31/2-                                                 b   
+ 75KR  G 641.5     6  5      1                                                  
+ 75KR  G 1221.5    6  33     5                                                  
+ 75KR2 G DCO=0.63 17                                                            
+ 75KR  L 6830.6    10 31/2-                                                 d   
+ 75KR  G 1290.8    7  9      3                                                  
+ 75KR2 G DCO=0.53 8                                                             
+ 75KR  L 6897.3     8 33/2+                                                 A   
+ 75KR  G 580.7     3  12     2                                                  
+ 75KR2 G DCO=0.86 23                                                            
+ 75KR  G 1333.7    7  50     4                                                  
+ 75KR2 G DCO=0.50 5                                                             
+ 75KR  L 7036.7    18 33/2+                                                 E   
+ 75KR  G 1238      1  10     4                                                  
+ 75KR2 G DCO=0.42 7                                                             
+ 75KR  L 7245.6     9 33/2-                                                 B   
+ 75KR  G 1321.7    6  31     3                                                  
+ 75KR2 G DCO=0.48 11                                                            
+ 75KR  L 7366.9     9 33/2-                                                 C   
+ 75KR  G 678       1  2.9    6                                                  
+ 75KR  G 1320.0    7  21     3                                                  
+ 75KR2 G DCO=0.55 8                                                             
+ 75KR  L 7438.8     9 (33/2+)                                               F   
+ 75KR  G 1495.1    8  23     6                                                  
+ 75KR  G 1877      1  9      1                                                  
+ 75KR  L 7499.8    13 (33/2-)                                               D   
+ 75KR  G 1360      1  5      1                                                  
+ 75KR  L 7598       4                                                           
+ 75KR  G 1655      3                                                            
+ 75KR  L 7728.1    10 35/2-                                                 c   
+ 75KR  G 1368.5    7  45     6                                                  
+ 75KR2 G DCO=0.54 4                                                             
+ 75KR  L 7848.7     9 35/2+                                                 a   
+ 75KR  G 951.7     9  5      2                                                  
+ 75KR  G 1531.9    7  30     4                                                  
+ 75KR2 G DCO=0.46 4                                                             
+ 75KR  L 8039.4    10 35/2-                                                 b   
+ 75KR  G 1350.9    8  34     5                                                  
+ 75KR2 G DCO=0.56 4                                                             
+ 75KR  L 8303.6    14 35/2-                                                 d   
+ 75KR  G 1473      1  7      2                                                  
+ 75KR2 G DCO=0.46 19                                                            
+ 75KR  L 8395.9     9 37/2+                                                 A   
+ 75KR  G 547.2     3  7      2                                                  
+ 75KR2 G DCO=0.80 17                                                            
+ 75KR  G 1498.6    7  42     5                                                  
+ 75KR2 G DCO=0.58 7                                                             
+ 75KR  L 8403.7    20 37/2+                                                 E   
+ 75KR  G 1367      1  8      3                                                  
+ 75KR2 G DCO=0.42 11                                                            
+ 75KR  L 8699.3    12 37/2-                                                 B   
+ 75KR  G 1453.7    8  20     2                                                  
+ 75KR2 G DCO=0.57 6                                                             
+ 75KR  L 8841.6    13 37/2-                                                 C   
+ 75KR  G 1474.7    9  14     2                                                  
+ 75KR2 G DCO=0.65 9                                                             
+ 75KR  L 9071.8    17 (37/2-)                                               D   
+ 75KR  G 1572      1  3.5    8                                                  
+ 75KR  L 9138.8    14 (37/2+)                                               F   
+ 75KR  G 1700      1  22     5                                                  
+ 75KR  L 9277.9    11 39/2-                                                 c   
+ 75KR  G 1549.7    7  32     5                                                  
+ 75KR2 G DCO=0.55 18                                                            
+ 75KR  L 9528.9    12 39/2-                                                 b   
+ 75KR  G 1489.6    8  19     3                                                  
+ 75KR2 G DCO=0.53 7                                                             
+ 75KR  L 9649.7    14 39/2+                                                 a   
+ 75KR  G 1801      1  16     3                                                  
+ 75KR2 G DCO=0.48 17                                                            
+ 75KR  L 9905.0    22 (41/2+)                                               E   
+ 75KR  G 1501.3    9  6      3                                                  
+ 75KR  L 9965.0    12 41/2+                                                 A   
+ 75KR  G 1569.1    8  22     3                                                  
+ 75KR2 G DCO=0.51 5                                                             
+ 75KR  L 9973.7    17 (39/2-)                                               d   
+ 75KR  G 1670.0    9  3      1                                                  
+ 75KR  L 10188.2   13 41/2(+)                                               G   
+ 75KR  G 1792.3    9  19     5                                                  
+ 75KR2 G DCO=0.47 13                                                            
+ 75KR  L 10283.0   15 41/2-                                                 B   
+ 75KR  G 1583.7    9  15     2                                                  
+ 75KR2 G DCO=0.63 8                                                             
+ 75KR  L 10503.6   16 (41/2-)                                               C   
+ 75KR  G 1662      1  8      2                                                  
+ 75KR  L 10857.9   20 (41/2-)                                               D   
+ 75KR  G 1786      1  2.2    7                                                  
+ 75KR  L 11029.3   13 43/2-                                                 c   
+ 75KR  G 1751.2    9  22     4                                                  
+ 75KR2 G DCO=0.51 10                                                            
+ 75KR  L 11149.7   13 43/2-                                                 b   
+ 75KR  G 1621.0    8  11     2                                                  
+ 75KR2 G DCO=0.50 13                                                            
+ 75KR  L 11428.8   24                                                           
+ 75KR  G 1779      2  3.2    7                                                  
+ 75KR  L 11547.1   24 (45/2+)                                               E   
+ 75KR  G 1642      1  6      3                                                  
+ 75KR  L 11685.8   17 (43/2+)                                               a   
+ 75KR  G 2036      1  5      1                                                  
+ 75KR  L 11779.3   15 45/2+                                                 A   
+ 75KR  G 1814.2    9  19     3                                                  
+ 75KR2 G DCO=0.51 10                                                            
+ 75KR  L 11834.7   20 (43/2-)                                               d   
+ 75KR  G 1861      1  1.1    5                                                  
+ 75KR  L 12023.6   18 45/2-                                                 B   
+ 75KR  G 1740.6    9  9      2                                                  
+ 75KR2 G DCO=0.52 9                                                             
+ 75KR  L 12080.3   16 45/2(+)                                               H   
+ 75KR  G 1892      1  8      2                                                  
+ 75KR2 G DCO=0.40 14                                                            
+ 75KR  L 12133.9   16 (45/2+)                                               G   
+ 75KR  G 1945.6    9  6      2                                                  
+ 75KR  L 12381.6   19 (45/2-)                                               C   
+ 75KR  G 1878      1  6      2                                                  
+ 75KR  L 12864     3  (45/2-)                                               D   
+ 75KR  G 2006      2  0.9    4                                                  
+ 75KR  L 12992.5   15 47/2-                                                 b   
+ 75KR  G 1843      3  2.0    9                                                  
+ 75KR  G 1963      1  8      1                                                  
+ 75KR2 G DCO=0.6 2                                                              
+ 75KR  L 13019.5   14 47/2-                                                 c   
+ 75KR  G 1870      1  3      2                                                  
+ 75KR  G 1990      1  8      2                                                  
+ 75KR2 G DCO=0.4 3                                                              
+ 75KR  L 13367      3 (49/2+)                                               E   
+ 75KR  G 1820      1  4      2                                                  
+ 75KR  L 13990.3   18 49/2+                                                 A   
+ 75KR  G 2211      1  11     2                                                  
+ 75KR2 G DCO=0.41 15                                                            
+ 75KR  L 14015.7   20 49/2-                                                 B   
+ 75KR  G 1992      1  5      1                                                  
+ 75KR2 G DCO=0.68 13                                                            
+ 75KR  L 14167.3   19 (49/2+)                                               H   
+ 75KR  G 2087      1  5      2                                                  
+ 75KR  L 14324      3 (49/2+)                                               G   
+ 75KR  G 2190      2  3.1    9                                                  
+ 75KR  L 14408      3 (49/2-)                                               C   
+ 75KR  G 2026      2  2.4    8                                                  
+ 75KR  L 15020     4  (49/2-)                                               D   
+ 75KR  G 2156      3  0.5    3                                                  
+ 75KR  L 15218.4   17 (51/2-)                                               c   
+ 75KR  G 2199      1  5.0    9                                                  
+ 75KR  G 2224      4  1.0    7                                                  
+ 75KR  L 15361      3 (53/2+)                                               E   
+ 75KR  G 1994      1  2      1                                                  
+ 75KR  L 16355.7   23 (53/2-)                                               B   
+ 75KR  G 2340      1  2.1    6                                                  
+ 75KR  L 16661     3  (53/2+)                                               A   
+ 75KR  G 2671      2  2.8    6                                                  
+ 75KR  L 17604      3 (57/2+)                                               E   
+ 75KR  G 2243      1  1.1    7                                                  
+ 75KR  L 17644      4 (55/2-)                                               c   
+ 75KR  G 2426      3  3      1                                                  
+ 75KR  L 19139      3 (57/2-)                                               B   
+ 75KR  G 2783      2  0.8    2                                                  
+                                                                                

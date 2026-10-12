@@ -1,0 +1,171 @@
+ 75AS    74GE(A,P2NG):XUNDL-6          2025LI59                           202602
+ 75AS c  Compiled (unevaluated) dataset from 2025Li59:                          
+ 75AS2c  Phys Rev C 112, 034337 (2025)                                          
+ 75AS c  Compiled by J. Chen (FRIB, MSU), December 17, 2025                     
+ 75AS c  2025Li59: E=58.6 and 62.6 MeV |a beam was produced from the Separated  
+ 75AS2c  Sector Cyclotron at iThemba LABS, South Africa. Target was 2.85        
+ 75AS3c  mg/cm{+2} {+74}Ge on a 10.8 mg/cm{+2} carbon backing. |g rays were     
+ 75AS4c  detected with the AFRODITE array of eight Compton-suppressed Clover    
+ 75AS5c  HPGe detectors and two low-energy photon spectrometer (LEPS). Measured 
+ 75AS6c  E|g, I|g, |g|g-coin, |g|g(|q)(ADO), |g(lin pol). Deduced levels, J, |p,
+ 75AS7c  band structures, |g-ray multipolarities. Comparisons with theoretical  
+ 75AS8c  calculations.                                                          
+ 75AS cG E,RI$From 2025Li59                                                     
+ 75AS cG M$Expected R{-ADO} ratios are about 0.8 for pure dipole transitions and
+ 75AS2cG about 1.2 for stretched quadrupole transitions; positive POL value     
+ 75AS3cG indicates electric nature and negative value indicates magnetic nature 
+ 75AS4cG of a transition (2025Li59).                                            
+ 75AS cG E(X)$Newly observed transitions in 2025Li59                            
+ 75AS CL BAND(A)$Band based on 1573, 13/2+ level. Probably a |g vibrational     
+ 75AS2cL band on the band based on 303, 9/2+ level (2025Li59)                   
+ 75AS CL BAND(b)$Band based on 303, 9/2+ level; |a=-1/2. Configuration=|pg{-9/2}
+ 75AS CL BAND(B)$Band based on 303, 9/2+ level; |a=+1/2. Configuration=|pg{-9/2}
+ 75AS CL BAND(D)$Band based on 2525, 13/2- level.                               
+ 75AS2cL Configuration=|p[(p{-3/2},f{-5/2})g{-9/2}{+2}]                         
+ 75AS CL BAND(e)$Band based on 3/2- ground state; |a=-1/2.                      
+ 75AS2cL Configuration=|pp{-3/2}                                                
+ 75AS CL BAND(E)$Band based on 3/2- ground state; |a=+1/2.                      
+ 75AS2cL Configuration=|pp{-3/2}                                                
+ 75AS CL BAND(F)$Band based on 279, 5/2- level; |a=+1/2. Configuration=|pf{-5/2}
+ 75AS CL BAND(f)$Band based on 279, 5/2- level; |a=-1/2. Configuration=|pf{-5/2}
+ 75AS cL E$From a least-squares fit to |g-ray energies (by compiler)            
+ 75AS cL J$As given in 2025Li59, based on measured |g|g(DCO), |g(lin pol) and   
+ 75AS2cL band assignments.                                                      
+ 75AS cL E(Y)$Newly proposed levels in 2025Li59                                 
+ 75AS PN                                                                     5  
+ 75AS  L 0.0          3/2-                                                  e   
+ 75AS  L 264.6     5  3/2-                                                      
+ 75AS  G 264.6     5  1.4    4  M1+E2                                           
+ 75AS cG RI$deduced from intensity balance                                      
+ 75AS  L 279.0     4  5/2-                                                  F   
+ 75AS  G 279.0     5  37     7  M1+E2                                           
+ 75AS cG $R{-ADO}=0.67 {I7}, POL=-0.04 {I1}                                     
+ 75AS  L 302.8     6  9/2+                                                  B   
+ 75AS  L 571.9     4  5/2-                                                  E   
+ 75AS  G 571.9     5  6.4    18 M1+E2                                           
+ 75AS cG $R{-ADO}=0.93 {I8}, POL=-0.17 {I15}                                    
+ 75AS  L 821.3     4  7/2-                                                  e   
+ 75AS  G 821.3     5  6.6    18 E2                                              
+ 75AS cG $R{-ADO}=1.39 {I16}, POL=+0.14 {I12}                                   
+ 75AS  L 866.7     6  13/2+                                                 B   
+ 75AS  G 563.9     5  100    5  E2                                              
+ 75AS cG $R{-ADO}=1.24 {I4}, POL=+0.11 {I2}                                     
+ 75AS  L 884.9     5  7/2-                                                  f   
+ 75AS  G 313.0     5  1.7    6                                                  
+ 75AS  G 605.9     5  3.9    7  M1+E2                                           
+ 75AS cG $R{-ADO}=0.96 {I6}                                                     
+ 75AS  L 1094.4    5  9/2-                                                  F   
+ 75AS  G 815.4     5  16.7   30 E2                                              
+ 75AS cG $R{-ADO}=1.25 {I3}, POL=+0.06 {I2}                                     
+ 75AS  L 1101.1    5  11/2+                                                 b   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  G 798.0     5  14     4  M1+E2                                       X   
+ 75AS cG $R{-ADO}=0.57 {I4}, POL=-0.24 {I9}                                     
+ 75AS  L 1573.1    6  13/2+                                                 A   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  G 471.8     5  8.3    34 M1+E2                                       X   
+ 75AS cG $R{-ADO}=0.73 {I4}, POL=-0.04 {I3}                                     
+ 75AS  G 1270.5    5  5.9    22 E2                                          X   
+ 75AS cG $R{-ADO}=1.25 {I36}                                                    
+ 75AS  L 1602.2    4  9/2-                                                  E   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  G 780.8     5  2.3    13 M1+E2                                       X   
+ 75AS cG $R{-ADO}=0.98 {I5}                                                     
+ 75AS  G 1030.3    5  4.2    19 E2                                          X   
+ 75AS cG $R{-ADO}=1.27 {I7}                                                     
+ 75AS  L 1767.7    5  11/2-                                                 f   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  G 673.3     5  2.0    4  M1+E2                                       X   
+ 75AS cG $R{-ADO}=0.93 {I6}                                                     
+ 75AS  G 882.8     5  3.3    7  E2                                          X   
+ 75AS cG $R{-ADO}=1.28 {I11}                                                    
+ 75AS  L 1776.9    6  15/2+                                                 b   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  G 675.9     5  2.9    10 E2                                          X   
+ 75AS cG $R{-ADO}=1.36 {I17}                                                    
+ 75AS  G 909.9     5  36.3   24 M1+E2                                           
+ 75AS cG $R{-ADO}=0.52 {I1}, POL=-0.02 {I2}                                     
+ 75AS  L 1802.2    7  17/2+                                                 B   
+ 75AS  G 935.4     5  52.0   34 E2                                              
+ 75AS cG $R{-ADO}=1.36 {I3}, POL=+0.07 {I2}                                     
+ 75AS  L 1887.6    5  11/2(-)                                               e   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  G 1066.2    5  4.3    13 E2                                          X   
+ 75AS cG $R{-ADO}=1.10 {I6}                                                     
+ 75AS  L 2150.0    6  13/2-                                                 F   
+ 75AS  G 1055.6    5  11.5   21 E2                                              
+ 75AS cG $R{-ADO}=1.25 {I5}, POL=+0.11 {I9}                                     
+ 75AS  L 2360.1    6  17/2+                                                 A   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  G 583.0     5  5.2    18 M1+E2                                           
+ 75AS cG $R{-ADO}=0.51 {I4}, POL=-0.13 {I9}                                     
+ 75AS  G 787.0     5  5.1    16 E2                                          X   
+ 75AS cG $R{-ADO}=1.21 {I9}, POL=+0.09 {I6}                                     
+ 75AS  G 1493.6    5  3.5    3  E2                                          X   
+ 75AS cG $R{-ADO}=1.25 {I16}                                                    
+ 75AS  L 2524.5    5  13/2-                                                 D   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  G 922.3     5  4.0    8  E2                                          X   
+ 75AS cG $R{-ADO}=1.25 {I14}                                                    
+ 75AS  G 1423.4    5  1.2    4                                              X   
+ 75AS  L 2636.6    5  13/2(-)                                               E   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  G 749.0     5  1.1    5                                              X   
+ 75AS  G 1034.4    5  2.3    5  E2                                          X   
+ 75AS cG $R{-ADO}=1.36 {I10}                                                    
+ 75AS  G 1535.5    5  1.2    4                                              X   
+ 75AS  L 2763.1    5  15/2-                                                 D   
+ 75AS  G 126.5     5  5.3    4  M1+E2                                       X   
+ 75AS cG $R{-ADO}=0.90 {I19}                                                    
+ 75AS  G 238.5     5  4.6    3  M1+E2                                       X   
+ 75AS cG $R{-ADO}=0.71 {I9}                                                     
+ 75AS  G 613.0     5  1.6    1                                                  
+ 75AS  G 995.5     5  2.1    2  E2                                          X   
+ 75AS cG $R{-ADO}=1.20 {I12}                                                    
+ 75AS  G 1189.9    5  3.6    3  E1                                          X   
+ 75AS cG $R{-ADO}=0.89 {I14}                                                    
+ 75AS  G 1896.3    5  4.4    3  E1                                              
+ 75AS cG $R{-ADO}=0.74 {I6}, POL=+0.11 {I7}                                     
+ 75AS  L 2784.8    7  19/2+                                                 b   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  G 982.5     5  10.7   17 M1+E2                                           
+ 75AS cG $R{-ADO}=0.66 {I8}, POL=-0.12 {I4}                                     
+ 75AS  G 1008.0    5  4.0    3  E2                                          X   
+ 75AS cG $R{-ADO}=1.30 {I5}                                                     
+ 75AS  L 2984.9    7  (15/2-)                                               e   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  G 1097.3    5  1.7    9                                              X   
+ 75AS  L 3002.5    8  21/2+                                                 B   
+ 75AS  G 1200.3    5  24     4  E2                                              
+ 75AS cG $R{-ADO}=1.28 {I5}, POL=+0.04 {I4}                                     
+ 75AS  L 3005.6    6  17/2-                                                 D   
+ 75AS  G 242.4     5  14.1   13 M1+E2                                           
+ 75AS cG $R{-ADO}=0.82 {I11}, POL=-0.06 {I4}                                    
+ 75AS  G 1228.8    5  1.9    2                                                  
+ 75AS  L 3090.3    8  (17/2-)                                               F   
+ 75AS  G 940.3     5  2.6    5  E2                                              
+ 75AS cG $R{-ADO}=1.24 {I13}                                                    
+ 75AS  L 3270.5    7  19/2-                                                 D   
+ 75AS  G 264.8     5  14.9   11 M1+E2                                           
+ 75AS cG $R{-ADO}=0.77 {I8}, POL=-0.07 {I3}                                     
+ 75AS  G 1468.4    5  3.3    5  E1                                          X   
+ 75AS cG $R{-ADO}=0.76 {I14}                                                    
+ 75AS  L 3564.2    8  (21/2+)                                               A   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  G 1204.1    5  1.9    7                                              X   
+ 75AS  L 3701.9    9  21/2-                                                 D   
+ 75AS  G 431.4     5  7.6    5  M1+E2                                           
+ 75AS cG $R{-ADO}=0.71 {I4}, POL=-0.05 {I5}                                     
+ 75AS  L 4173.4    9  (21/2-)                                               F   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  G 1083.0    5  0.9    4                                              X   
+ 75AS  L 4209.1    10 (23/2-)                                               D   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  G 507.2     5  2.7    9                                              X   
+ 75AS  L 4359.9    10 25/2+                                                 B   
+ 75AS  G 1357.4    5  7.7    28 E2                                              
+ 75AS cG $R{-ADO}=1.41 {I17}, POL=+0.11 {I7}                                    
+ 75AS  L 4756.6    11 (25/2-)                                               D   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  G 547.5     5  1.8    3                                              X   
+                                                                                

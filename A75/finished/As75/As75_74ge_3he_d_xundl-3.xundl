@@ -1,0 +1,122 @@
+ 75AS    74GE(3HE,D):XUNDL-3           2009KA06,2008KAZT                  200905
+ 75AS c  Compiled (unevaluated) dataset from 2009Ka06:                          
+ 75AS2c  Phys Rev C 79, 021301(R) (2009); and 2008KaZT: private communication   
+ 75AS3c  received from B.P. Kay et al., Argonne National Lab, Dec 2, 2008       
+ 75AS c  2008KaZT contains data details for eight different reactions.          
+ 75AS c  Compiled by B. Singh (McMaster): Dec 11, 2008.                         
+ 75AS c  Edited by B. Singh, April 28, 2009 to include 2009Ka06 reference       
+ 75AS c  E=73 MeV beam provided by the AVF cyclotron at RCNP, Osaka. Enriched   
+ 75AS2c  target. The outgoing deuterons were detected and analyzed with         
+ 75AS3c   Grand Raiden magnetic spectrograph, with an angular aperture of       
+ 75AS4c  |+1.1|'. FWHM=18 keV                                                   
+ 75AS c  Measured precise absolute cross sections and relative cross sections   
+ 75AS2c  where these are maximum for the relevant L transfer, angular           
+ 75AS3c  distributions.                                                         
+ 75AS4c  Spectroscopic factors were deduced from analysis of cross              
+ 75AS5c  section data by DWBA calculations using PTOLEMY code and six           
+ 75AS6c  different sets of optical-model potential parameters and two           
+ 75AS7c  bound-state potential parameters.                                      
+ 75AS c  Single-particle transfer reactions studied in 2008KaZT:                
+ 75AS2c  {+74}Ge(d,{+3}He){+73}Ga; {+76}Ge(d,{+3}He){+75}Ga;                    
+ 75AS3c  {+76}Se(d,{+3}He){+75}As; {+78}Se(d,{+3}He){+77}As;                    
+ 75AS4c  {+74}Ge({+3}He,d){+75}As; {+76}Ge({+3}He,d){+77}As;                    
+ 75AS5c  {+76}Se({+3}He,d){+77}Br; {+78}Se({+3}He,d){+79}Br.                    
+ 75AS6c  For (d,{+3}He) reactions, polarized deuteron beam is also used to      
+ 75AS7c  obtain asymmetries and subsequent information about parities of levels.
+ 75AS8c  See relevant dataset in XUNDL database for each reaction.              
+ 75AS c  The experiments were designed to map out the occupancies of valence    
+ 75AS2c  proton orbitals in the ground states of {+74}Ge, {+76}Ge, {+76}Se and  
+ 75AS3c  {+78}Se by precise measurements of absolute cross sections and relative
+ 75AS4c  cross sections at the angles where these are maximum in angular        
+ 75AS5c  distributions in single-particle transfer reactions.                   
+ 75AS c  Uncertainty in cross sections: statistical uncertainty of 1%           
+ 75AS2c  for strong peaks; systematic uncertainties of 5% in absolute values    
+ 75AS3c  and 3% in relative values. Multiplets have larger uncertainties        
+ 75AS c  ENSDF database available at: http://www.nndc.bnl.gov/ensdf/            
+ 75AS c  All data are from 2008KaZT unless otherwise stated                     
+ 75AS cL E,J$ Unless otherwise noted, 2008KaZT take values from 'adopted levels,
+ 75AS2cL gammas' dataset for {+75}As in the ENSDF database                      
+ 75AS cL E(X)$ 265, 280 and 304 groups are unresolved, angle-to-angle ratios of 
+ 75AS2cL cross sections used to assign separate cross sections. The 304 peak    
+ 75AS3cL was probably analyzed by line-shape fitting procedure. See details     
+ 75AS4cL of the fitting procedures for unresolved peaks in 2008KaZT             
+ 75AS cL E(Y)$ 1297 and 1309 groups are unresolved, angle-to-angle ratios of    
+ 75AS2cL cross sections used to assign separate cross sections. See details     
+ 75AS3cL of the fitting procedure for unresolved peaks in 2008KaZT              
+ 75AS cL E(Z)$ 2528 group corresponds to L=0+1 doublet, angle-to-angle ratios of
+ 75AS4cL cross sections used to assign separate cross sections. See details     
+ 75AS5cL of the fitting procedure for unresolved peaks in 2008KaZT              
+ 75AS cL E(U)$ 1431 group corresponds to L=1+4 doublet as in earlier            
+ 75AS2cL literature (although L=1 was also proposed in another study, albeit    
+ 75AS3cL with a poor fit to angular distribution). In 2008KaZT this group is    
+ 75AS4cL assumed to be dominantly L=4                                           
+ 75AS cL E(V)$ This group corresponds to previously known 1063+1075 doublet,    
+ 75AS2cL both with L=1. In 2008KaZT, it is analyzed as a single L=1 state       
+ 75AS cL L$ 2008KaZT relied on the assignment of L transfers                    
+ 75AS2cL in previous studies (see ENSDF database for {+75}As). These assignments
+ 75AS3cL were, nevertheless, confirmed in 2008KaZT from their measured          
+ 75AS4cL angle-to-angle ratios                                                  
+ 75AS cL J(B)$ From measured polarization asymmetry in (pol d,{+3}He) reaction  
+ 75AS2cL in 2008KaZT                                                            
+ 75AS CL S$LABEL=(2J+1)C2S                                                      
+ 75AS cL S$ From 2008KaZT. The spectroscopic factors were deduced for different 
+ 75AS2cL L transfers as follows: 4.5|' data for L=1, 8|' data for L=3, and 12|' 
+ 75AS3cL data for L=4. The values are the ratios of experimental cross sections 
+ 75AS4cL and calculated DWBA cross sections using the finite-range PTOLEMY code.
+ 75AS5cL The normalization procedure is described in 2008KaZT. Six different    
+ 75AS6cL sets of optical-model potential parameters and two different           
+ 75AS7cL bound-state potential parameters were used for the calculations. See   
+ 75AS8cL 2008KaZT for listing of these parameters. Differences in (2J+1)C{+2}S  
+ 75AS9cL values were less than 10% for different sets of optical parameters     
+ 75ASAcL used. The effects of the bound-state parameters were also within the   
+ 75ASBcL uncertainties.                                                         
+ 75AS t  ---------------------------------------------------------------------- 
+ 75AS t                        Measured cross sections                          
+ 75AS t  Level      d|s/d|W(4.5|')      d|s/d|W(8|')       d|s/d|W(12|')        
+ 75AS t   keV       mb/sr            mb/sr            mb/sr                     
+ 75AS t  ---------------------------------------------------------------------- 
+ 75AS2t  0          4.73 a           1.49             0.73                      
+ 75AS3t  199        0.87 a           0.24             0.17                      
+ 75AS4t  265        2.83 {I30} a        0.76             0.48                   
+ 75AS5t  280        3.44             3.37 {I37} a        1.91                   
+ 75AS6t  304        2.98             3.28             2.43 {24} a               
+ 75AS7t  469        3.35 a           0.89             0.59                      
+ 75AS8t  572        0.070            0.085 a          0.055                     
+ 75AS9t  822        0.26             0.26 a           0.22                      
+ 75ASAt  1075       1.37 a           0.77             0.36                      
+ 75ASBt  1297       0.32             0.13             0.070                     
+ 75ASCt  1309       0.24             0.27             0.066                     
+ 75ASDt  1349       0.39 a           0.15             0.095                     
+ 75ASEt  1431         b               b                 b                       
+ 75ASFt  1431       0.34 b           0.21 b           0.12 {I2} ab              
+ 75ASGt  1808       1.21             1.14             0.87 a                    
+ 75ASHt  2111       0.15 a           0.047            0.024                     
+ 75ASIt  2240       0.20 a           0.061            0.046                     
+ 75ASJt  2380       0.22 a           0.062            0.041                     
+ 75ASKt  2528       0.059            0.080            0.006                     
+ 75ASLt  2528       0.53             0.16             0.12 {I3} a               
+ 75ASMt     a: cross section used to deduce the spectroscopic factors.          
+ 75ASNt     b: total cross section is given with L=4, 1431 group                
+ 75ASOt   --------------------------------------------------------------------- 
+ 75AS  L 0            3/2-                             1        1.00            
+ 75AS  L 199          1/2-                             1        0.18            
+ 75AS  L 265          3/2-                             1        0.60        X   
+ 75AS  L 280          5/2-                             3        2.54        X   
+ 75AS  L 304          9/2+                             4        2.73        X   
+ 75AS  L 469          1/2-                             1        0.71        B   
+ 75AS  L 572          5/2-                             3        0.062           
+ 75AS  L 822          7/2-                             3                        
+ 75AS  L 1075      10 3/2-                             1        0.29        V   
+ 75AS  L 1297         5/2+                             2                    Y   
+ 75AS  L 1309         7/2-                             3                    B   
+ 75ASF L FLAG=Y                                                                 
+ 75AS  L 1349         3/2-                             1        0.084           
+ 75AS  L 1431                                          1                    U   
+ 75AS  L 1431                                          4        0.12        U   
+ 75AS  L 1808         9/2+                             4        0.85            
+ 75AS  L 2111                                          1        0.032           
+ 75AS  L 2240                                          1        0.044           
+ 75AS  L 2380                                          1        0.049           
+ 75AS  L 2528         1/2+                             0                    Z   
+ 75AS  L 2528                                          1        0.12        Z   
+                                                                                

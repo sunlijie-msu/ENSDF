@@ -1,0 +1,287 @@
+ 75SE    74SE(N,G) E=THERMAL:PLACED G  1984TO11,1982TOZS,1981EN0713NDS    201309
+ 75SE  H TYP=FUL$AUT=ALEXANDRU NEGRET, BALRAJ SINGH$CIT=NDS 114, 841 (2013)$    
+ 75SE2 H CUT=30-Jun-2013$                                                       
+ 75SE c  Dataset for placed |g rays. See a separate dataset for a large number  
+ 75SE2c  of unplaced |g rays                                                    
+ 75SE c  1984To11,1982ToZS: both references (1982ToZT is a thesis) are from     
+ 75SE2c  the same lab; measured |g, ce; enriched target. Curved-crystal         
+ 75SE3c  spectrometers were used for |g rays below 2 MeV and pair spectrometer  
+ 75SE4c  was used for |g rays above 2 MeV.                                      
+ 75SE c  1981En07: three-crystal-pair spectrometer was used, measured primary   
+ 75SE2c  and secondary |g rays                                                  
+ 75SE c  2007ChZX: PGAA-database. In measurements of elemental cross sections   
+ 75SE2c  at Budapest, 18 secondary and 2 primary gamma rays were identified     
+ 75SE3c  for {+75}Se. These are listed under document records                   
+ 75SE c  Others: 1984NeZR, 1983Ah01, 1973Ak02, 1970Ru06, 1967Dr03               
+ 75SE c  The level scheme is from 1984To11 and primary |g data of 1981En07,     
+ 75SE2c  1984To11, 1973Ak02                                                     
+ 75SE cG E$From 1982ToZS. For E|g<2 MeV, a systematic uncertainty               
+ 75SE2cG of (5|*10{+-6})E|g quoted by 1984To11 has been included by the         
+ 75SE3cG evaluators for assigned gammas only                                    
+ 75SE cG M,MR$From ce data (1984To11). I|g and I(ce) scales were normalized     
+ 75SE2cG to each other by assuming mult=E1 for the 287|g and 428|g              
+ 75SE DG CC$ FROM BrIcc v2.2b (20-Jan-2009) 2008Ki07, "Frozen Orbitals" appr.   
+ 75SE cG E(F)$Poor fit in the level scheme                                      
+ 75SE cG E(H)$ |g From 2007ChZX                                                 
+ 75SE cL J$See Adopted Levels                                                   
+ 75SE cL J(J)$For s-wave capture                                                
+ 75SE cL E(E)$Defined by a primary transition (1981En07,1984To11,1973Ak02)      
+ 75SE cL E(A)$S(n)=8027.60 {I7} (2012Wa38)                                      
+ 75SE  N 1.0                                                                    
+ 75SE PN                                                                    C3  
+ 75SE2PN           PER 100 N-CAPTURES                                           
+ 75SE  L   0.0         5/2+                                                     
+ 75SE  L   112.387512  7/2+                                                     
+ 75SE  G 112.3880  12  6.0   5 M1+E2     0.336   27    0.121  8                 
+ 75SE DG $ EG=112.44 5, |s=0.0318 b 15 (2007ChZX)                               
+ 75SES G KC=0.106 7$LC=0.0127 9$MC=0.00198 13$NC=0.000160 10                    
+ 75SE  L 133.040   3   9/2+                                                     
+ 75SE  G 133.0405  29  0.089 13E2                      0.288                    
+ 75SES G KC=0.251 4$LC=0.0318 5$MC=0.00492 7$NC=0.000385 6                      
+ 75SE cG           |a(K)exp=0.35 {I6}                                           
+ 75SE  L   286.571021 3/2-                                                      
+ 75SE  G 286.572   5   54    6 E1                                               
+ 75SE DG $ EG=286.62 3, |s=0.280 b 6 (2007ChZX)                                 
+ 75SES G CC=0.00362 5$KC=0.00323 5$LC=0.000337 5$MC=5.24E-5 8$NC=4.43E-6 7      
+ 75SE cG           |a(K)exp=0.0034 {I4}, |a(L1)exp=0.00033 {I4},                
+ 75SExcG |a(M)exp=5.7|*10{+-5} {I12}                                            
+ 75SE  L    293.105 3 1/2-                                                      
+ 75SE  L   427.884921 5/2-                                                      
+ 75SE  G 141.3147  22  4.0   4 M1+E2     0.26    5     0.052  5                 
+ 75SE DG $ EG=141.31 5, |s=0.0257 b 22 (2007ChZX)                               
+ 75SES G KC=0.046 4$LC=0.0052 6$MC=0.00081 8$NC=6.7E-5 7                        
+ 75SE cG           |a(K)exp=0.045 {I4}, |a(L1)exp=0.0049 {I5}                   
+ 75SE  G 315.498   5   0.53  4                                                  
+ 75SE  G 427.883   4   2.88  16E1                                               
+ 75SE DG $ EG=428.02 9, |s=0.0153 b 14 (2007ChZX)                               
+ 75SES G CC=0.001230 18$KC=0.001096 16$LC=0.0001142 16$MC=1.774E-5 25           
+ 75SE cG           |a(K)exp=0.00083 {I11}                                       
+ 75SE  L   585.950723 3/2-                                                      
+ 75SE  G 292.844   4   5.8   3 M1                                               
+ 75SE DG $ EG=292.90 6, |s=0.0281 b 20 (2007ChZX)                               
+ 75SES G CC=0.00620 9$KC=0.00552 8$LC=0.000587 9$MC=9.14E-5 13$NC=7.79E-6 11    
+ 75SE cG           |a(K)exp=0.0053 {I5}                                         
+ 75SE  G 299.377   3   0.64  5 M1                                               
+ 75SE DG $ EG=299.0 3, |s=0.0057 b 17 (2007ChZX)                                
+ 75SES G CC=0.00587 9$KC=0.00522 8$LC=0.000556 8$MC=8.66E-5 13$NC=7.37E-6 11    
+ 75SE cG           |a(K)exp=0.0051 {I9}                                         
+ 75SE  G 585.944   6   0.368 28                                                 
+ 75SE  L    610.715 3 1/2+                                                      
+ 75SE  G 317.6101  28  0.614 29                                                 
+ 75SE  G 324.134   12  0.015 2                                                  
+ 75SE  G 610.712   6   6.0   4  (E2)                                            
+ 75SE cG           |a(K)exp=0.00119 {I17}                                       
+ 75SE  L   628.430822 5/2+                                                      
+ 75SE  G 341.862   4   0.090 6                                                  
+ 75SE  G 495.390   5   0.227 17                                                 
+ 75SE  G 516.042   5   2.8   3  M1(+E2)                                         
+ 75SE DG $ EG=516.02 17, |s=0.014 b 3 (2007ChZX)                                
+ 75SE cG           |a(K)exp=0.0016 {I3}                                         
+ 75SE  G 628.428   6   0.56  4                                                  
+ 75SE  L   663.956523 5/2-                                                      
+ 75SE  G 236.075   4   0.44  5  M1(+E2)  0.32    17    0.012  3                 
+ 75SE DG $ EG=236.06 20, |s=0.0063 b 16 (2007ChZX)                              
+ 75SES G KC=0.0114 22$LC=0.0012 3$MC=0.00019 4$NC=1.6E-5 4                      
+ 75SE cG           |a(K)exp=0.0114 {I21}                                        
+ 75SE  G 370.852   15  0.010 3                                                  
+ 75SE  G 377.385   4   2.41  13M1                                               
+ 75SE DG $ EG=377.57 19, |s=0.0097 b 21 (2007ChZX)                              
+ 75SE cG           |a(K)exp=0.0028 {I4}                                         
+ 75SE  G 551.568   6   0.167 14                                                 
+ 75SE  G 663.98    6   0.034 3                                                  
+ 75SE  L   747.649225 7/2-                                                      
+ 75SE  G 83.6914   26  0.012 4                                                  
+ 75SE  G 319.765   3   0.53  3 M1(+E2)   0.37    20                             
+ 75SES G CC=0.0058 9$KC=0.0052 8$LC=0.00056 9$MC=8.7E-5 14$NC=7.3E-6 11         
+ 75SE  G 461.081   5   0.205 26                                                 
+ 75SE  G 635.274   11  0.101 14                                                 
+ 75SE  G 747.63    3   0.056 11                                                 
+ 75SE  L   777.322825 5/2-                                                      
+ 75SE  G 113.375   4   0.026 7                                                  
+ 75SE  G 191.3710  21  0.197 12                                                 
+ 75SE  G 349.434   4   0.73  4                                                  
+ 75SE  G 484.212   5   0.58  3  E2                                              
+ 75SE cG           |a(K)exp=0.0037 {I8}                                         
+ 75SE  G 490.748   4   0.75  4                                                  
+ 75SE  G 777.350   24  0.047 6                                                  
+ 75SE  L    789.990 6 7/2(+)                                                    
+ 75SE  G 161.561   10  0.012 3                                                  
+ 75SE  G 656.04    14  0.026 7                                              F   
+ 75SEF G FL=133.040                                                             
+ 75SE  G 677.597   8   0.328 18                                                 
+ 75SE DG $ EG=676.1 4, |s=0.0073 b 25 (2007ChZX)                                
+ 75SE  G 789.995   14  0.413 21                                                 
+ 75SE  L 839.893   3   3/2+                                                     
+ 75SE  G 211.4614  20  0.72  5 M1                      0.01403                  
+ 75SES G KC=0.01246 18$LC=0.001338 19$MC=0.000208 3$NC=1.771E-5 25              
+ 75SE cG           |a(K)exp=0.0120 {I11}                                        
+ 75SE  G 229.178   4   0.38  5 M1                      0.01143                  
+ 75SES G KC=0.01016 15$LC=0.001088 16$MC=0.0001696 24$NC=1.442E-5 21            
+ 75SE cG           |a(K)exp=0.0109 {I27}                                        
+ 75SE  G 727.516   12  0.132 12                                                 
+ 75SE  G 839.882   11  3.66  18 M1                                              
+ 75SE DG $ EG=839.76 16, |s=0.0086 b 20 (2007ChZX)                              
+ 75SE cG           |a(K)exp=0.00043 {I6}                                        
+ 75SE  L    859.537 3 3/2-                                                      
+ 75SE  G 195.5812  24  0.78  4                                                  
+ 75SE  G 231.109   5   0.032 4                                                  
+ 75SE  G 431.652   4   1.90  9  M1                                              
+ 75SE cG           |a(K)exp=0.0021 {I3}                                         
+ 75SE  G 566.437   8   0.236 18                                                 
+ 75SE  G 572.968   12  1.14  13                                                 
+ 75SE DG $ EG=573.13 19, |s=0.012 b 3 (2007ChZX)                                
+ 75SE  G 859.472   24  0.149 10                                                 
+ 75SE  L    895.274 3  1/2-,3/2-                                                
+ 75SE  G 284.557   5   0.145 14                                                 
+ 75SE  G 309.323   3   0.183 14                                                 
+ 75SE  G 467.389   6   0.075 16                                                 
+ 75SE  G 608.698   5   2.05  15 (M1+E2)                                         
+ 75SE cG           |a(K)exp=0.00096 {I267}                                      
+ 75SE  L    953.29710  5/2+,7/2                                                 
+ 75SE  G 175.973   9   0.011 2                                                  
+ 75SE  G 819.9     5   0.021 7                                                  
+ 75SE  G 841.14    23  0.038 21                                                 
+ 75SE  G 953.38    9   0.063 11                                                 
+ 75SE  L    962.643 3 3/2-                                                      
+ 75SE  G 298.6843  29  0.213 15                                                 
+ 75SE  G 334.215   5   0.053 4                                                  
+ 75SE  G 376.696   8   0.062 9                                                  
+ 75SE  G 534.758   7   0.25  4                                                  
+ 75SE  G 669.535   11  0.205 11                                                 
+ 75SE  G 676.071   6   1.75  9                                                  
+ 75SE  G 962.633   14  1.56  17                                                 
+ 75SE DG $ EG=962.79 20, |s=0.0181 b 25 (2007ChZX)                              
+ 75SE  L 1003.846  6   5/2+                                                     
+ 75SE  G 375.418   6   0.032 5                                                  
+ 75SE  G 870.89    8   0.044 11                                                 
+ 75SE  G 891.462   15  0.98  18                                                 
+ 75SE  G 1003.806  14  0.88  5                                                  
+ 75SE  L 1020.470  9   1/2-,3/2-                                                
+ 75SE  G 733.895   8   3.82  17 (M1)                                            
+ 75SE DG $ EG=733.59 14, |s=0.020 b 3 (2007ChZX)                                
+ 75SE cG           |a(K)exp=0.00044 {I6}                                        
+ 75SE  L   1047.185 8  5/2-,7/2-                                                
+ 75SE  G 619.297   7   0.189 22                                                 
+ 75SE  G 760.63    3   0.055 7                                                  
+ 75SE cG E$assigned by the evaluators on the basis of (p,n|g) and (|a,n|g)      
+ 75SE  L   1073.825 3 5/2-                                                      
+ 75SE  G 326.1748  22  0.166 9                                                  
+ 75SE  G 487.873   5   0.175 17                                                 
+ 75SE  G 645.925   10  0.197 14                                                 
+ 75SE  G 780.707   14  0.112 10                                                 
+ 75SE  G 961.439   20  0.56  5                                                  
+ 75SE  G 1073.87   4   0.077 7                                                  
+ 75SE  L   1144.45918  3/2+,5/2+                                                
+ 75SE  G 1144.449  18  2.52  15                                                 
+ 75SE  L   1184.188 5 1/2,3/2,5/2                                               
+ 75SE  G 324.650   4   0.154 9                                                  
+ 75SE  G 598.246   9   0.37  3                                                  
+ 75SE  G 897.603   11  1.06  5                                                  
+ 75SE  L   1198.535 4 5/2+                                                      
+ 75SE  G 534.577   4   0.197 22                                                 
+ 75SE  G 770.644   9   0.82  5                                                  
+ 75SE  G 911.953   14  1.77  14                                                 
+ 75SE DG $ EG=912.04 21, |s=0.0123 b 23 (2007ChZX)                              
+ 75SE  L   1245.244 7 3/2-                                                      
+ 75SE  G 659.295   8   0.241 12                                                 
+ 75SE  G 952.123   12  1.20  7                                                  
+ 75SE  G 958.62    4   0.123 16                                                 
+ 75SE  G 1245.256  30  0.46  4                                                  
+ 75SE  L 1301.707  17 5/2,7/2                                                   
+ 75SE  G 873.818   17  0.292 16                                                 
+ 75SE  G 1189.29   6   0.170 19                                                 
+ 75SE  L   1374.51318 1/2,3/2,5/2                                               
+ 75SE  G 788.558   17  0.310 16                                                 
+ 75SE DG $ EG=788.84 12, |s=0.0076 b 15 (2007ChZX)                              
+ 75SE  L 1431.96   6                                                            
+ 75SE  G 684.27    6   0.020 2                                                  
+ 75SE  G 768.36    21  0.029 13                                                 
+ 75SE  L 1454.676  18                                                           
+ 75SE  G 868.720   17  0.179 15                                                 
+ 75SE  L   1560.88914 (5/2,7/2-)                                                
+ 75SE  G 701.487   16  0.70  5                                              F   
+ 75SEF G FL=859.537                                                             
+ 75SE  G 974.610   24  0.257 18                                             F   
+ 75SEF G FL=585.9507                                                            
+ 75SE  G 1448.74   10  0.188 19                                                 
+ 75SE  G 1560.74   15  0.131 14                                                 
+ 75SE  L   1589.53413  5/2+                                                     
+ 75SE  G 978.813   12  1.73  11                                                 
+ 75SE DG $ EG=978.64 20, |s=0.013 b 4 (2007ChZX)                                
+ 75SE  L    1652.78 9  5/2+                                                 E   
+ 75SE  L 1673.37   8  (1/2-,3/2-)                                               
+ 75SE  G 1380.25   8   0.41  3                                                  
+ 75SE  L    1802.03 8 3/2+,5/2+                                             E   
+ 75SE  L    1810.70 9 1/2-,3/2-                                                 
+ 75SE  G 1811.4    10  0.12  5                                                  
+ 75SE  L    1894.97 8                                                       E   
+ 75SE  L    1943.3410                                                       E   
+ 75SE  L    1958.3415                                                       E   
+ 75SE  L    1986.03 8 1/2,3/2,5/2+                                          E   
+ 75SE  L    2030.3612 3/2+,5/2+                                             E   
+ 75SE  L    2166.6910 1/2,3/2,5/2+                                          E   
+ 75SE  L    2242.0916                                                       E   
+ 75SE  L    2271.2216                                                       E   
+ 75SE  G    2270.6 6                                                        H   
+ 75SE DG $ |s=0.007 b 3 (2007ChZX)                                              
+ 75SE  L    2456.43 7 3/2+,5/2+                                             E   
+ 75SE  L    2565.39 7 1/2+                                                  E   
+ 75SE  L    2597.78 9 1/2,3/2,5/2+                                          E   
+ 75SE  L    2631.81 9 1/2+                                                  E   
+ 75SE  L    2737.41 8 1/2,3/2,5/2+                                          E   
+ 75SE  L    2782.0810                                                       E   
+ 75SE  L    2887.18 7                                                       E   
+ 75SE  L    2940.9212 3/2+,5/2+                                             E   
+ 75SE  L    3152.60 8 3/2+,5/2+                                             E   
+ 75SE  L    3182.31 9                                                       E   
+ 75SE  L    3210.4315                                                       E   
+ 75SE  L    3333.0923 3/2+,5/2+                                             E   
+ 75SE  L    3340.1025                                                       E   
+ 75SE  L    3619.3615 1/2+                                                  E   
+ 75SE  L    8027.58 4  1/2+                                                 J  S
+ 75SEF L FLAG=A                                                                 
+ 75SE  G 4408.08   14  0.365 28                                                 
+ 75SE  G 4687.32   24  0.34  4                                                  
+ 75SE  G 4694.33   22  0.34  4                                                  
+ 75SE  G 4816.99   14  0.165 12                                                 
+ 75SE  G 4845.10   8   0.69  4                                                  
+ 75SE  G 4874.81   7   0.79  4                                                  
+ 75SE  G 5086.48   11  0.356 24                                                 
+ 75SE  G 5140.21   6   0.575 28                                                 
+ 75SE  G 5245.30   9   0.392 20                                                 
+ 75SE  G 5289.97   7   0.62  3                                                  
+ 75SE  G 5395.56   8   0.509 26                                                 
+ 75SE  G 5429.59   8   0.406 23                                                 
+ 75SE  G 5461.98   5   0.83  4                                                  
+ 75SE  G 5570.93   5   1.21  6                                                  
+ 75SE  G 5756.12   15  0.124 7                                                  
+ 75SE  G 5785.25   15  0.103 6                                                  
+ 75SE  G 5860.64   9   0.465 23                                                 
+ 75SE  G 5996.96   11  0.252 14                                                 
+ 75SE  G 6041.29   7   0.352 9                                                  
+ 75SE  G 6068.98   14  0.127 7                                                  
+ 75SE  G 6083.98   9   0.447 22                                                 
+ 75SE  G 6132.34   7   0.389 19                                                 
+ 75SE  G 6216.61   8   0.450 23                                                 
+ 75SE  G 6225.27   7   1.27  6                                                  
+ 75SE  G 6374.51   8   0.235 27                                                 
+ 75SE  G 6437.80   7   2.73  14                                                 
+ 75SE DG $ EG=6438.1 4, |s=0.017 b 4 (2007ChZX)                                 
+ 75SE  G 6594.8    7   0.043 7                                                  
+ 75SE  G 6782.0    8   0.019 5                                                  
+ 75SE  G 6828.72   9   0.80  4                                                  
+ 75SE  G 6843.11   11  0.254 13                                                 
+ 75SE  G 6882.65   20  0.063 5                                                  
+ 75SE  G 7006.74   11  1.38  7                                                  
+ 75SE  G 7064.64   11  0.78  4                                                  
+ 75SE  G 7131.98   14  0.224 11                                                 
+ 75SE  G 7167.58   19  0.357 22                                                 
+ 75SE  G 7187.5    5   0.037 22                                                 
+ 75SE  G 7398.64   16  0.231 12                                                 
+ 75SE  G 7417      2   0.71  22                                                 
+ 75SE  G 7441.24   16  0.502 25                                                 
+ 75SE  G 7734.12   28  25.0  13                                                 
+ 75SE DG $ EG=7733.92 24, |s=0.090 b 7 (2007ChZX)                               
+ 75SE  G 7740.6    11  0.91  29                                                 
+ 75SE  G 8027.2    3   0.070 4                                                  
+                                                                                

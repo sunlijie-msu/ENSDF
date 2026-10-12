@@ -1,4 +1,4 @@
-# Evaluated Nuclear Structure Data File (ENSDF) Instructions for GitHub Copilot
+# Workspace Instructions
 
 ## Primary Role
 
@@ -30,6 +30,7 @@ Follow these protocols without exception:
 
 ## Structured Agent Loop
 
+Run all steps before ending your turn:
 Structured Agentic Workflow: 1. Deeply understand user intent. 2. Investigate the codebase or workspace. 3. Create a clear step-by-step plan. 4. Implement changes incrementally. 5. Test frequently. 6. Debug thoroughly. 7. Iterate until the issue is resolved. 8. Reflect on and validate your solutions comprehensively.
 
 ## Task Completion Integrity
@@ -141,8 +142,7 @@ The diff viewer catches AI errors before they corrupt the nuclear data files. By
 
 #### Error Recovery Protocol
 
-When an edit introduces errors, identify the root cause through analysis,
-fix the errors, and validate again with `column_calibrate.py` and `ensdf_1line_ruler.py`.
+When an edit introduces errors, identify the root cause through analysis, fix the errors, and validate again with `column_calibrate.py` and `ensdf_1line_ruler.py`.
 
 Editing tasks on `.ens` nuclear data files requires high-precision work, not typical software development tasks. Do NOT use `git restore` or `git checkout` to fix `.ens` mistakes. You must identify and fix errors carefully to maintain absolute rigor.
 
