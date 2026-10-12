@@ -1,6 +1,6 @@
 ---
 name: data-cross-check
-description: "Checks target data in ENS files against source data for exact consistency after data entry. Use when validating target data in ENS files against source data from CSV, Markdown, MRG, ENS, or ADP files, including values, uncertainties, signs, limits, decimal digits, units, provenance comments, strings, XREFs, and completeness."
+description: "Checks target data in ENS files against source data for exact consistency. Use when validating target data in ENS files against source data from CSV, Markdown, MRG, ENS, or ADP files, including values, uncertainties, signs, limits, decimal digits, units, provenance comments, strings, XREFs, and completeness."
 ---
 
 # Data Cross-Check

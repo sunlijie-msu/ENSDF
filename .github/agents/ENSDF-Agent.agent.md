@@ -135,7 +135,7 @@ A **column** represents a **field** or part of a field of records.
 
 In ENSDF files, columns use 1-based indexing: the first character of a line (letter, number, or space) occupies column 1.
 
-Critical: ENSDF files require exact byte/character positioning. One column off lead data parsing errors or rejection.
+Critical: ENSDF data require exact byte/character positioning. One column off lead data parsing errors or rejection.
 
 ### ENSDF Field Description (NUCID: Columns 1–5)
 

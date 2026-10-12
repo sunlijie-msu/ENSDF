@@ -1,5 +1,5 @@
 ---
-name: spin-parity-notation-instructions
+name: spin-parity-field-notation
 description: >
   Use this skill as a reference guide for ENSDF spin-parity (Jπ) notation
   rules. Covers L-transfer field positioning at column 56, J-π assignment

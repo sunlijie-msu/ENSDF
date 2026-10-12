@@ -1,13 +1,11 @@
 ---
 name: adopted-vs-individual-dataset-comparison
-description: >
-  Use this skill when comparing quantities (J-π, energies, half-lives,
+description: Use this skill when comparing quantities (J-π, energies, half-lives,
   branching ratios) between Adopted ENSDF files and their source individual
   reaction datasets. Uses XREF notation to identify which datasets observe
   each level. Performs character-by-character verification and generates
   mismatch reports with error categorization. CHECK-ONLY — reports
   findings without editing files.
-argument-hint: [adopted.ens] [individual.ens] [xref-identifier]
 ---
 
 # Adopted vs Individual Dataset Comparison
