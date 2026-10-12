@@ -1,3 +1,694 @@
+ 60      COMMENTS                                                13NDS    201312
+ 60    H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1849 (2013)$            
+ 60  2 H CUT=31-Dec-2012$                                                       
+ 60   C  TITL$NUCLEAR DATA SHEETS FOR A=60                                      
+ 60   c  AUTH$E. BROWNE                                                         
+ 60   c  INST$Guest appointment at                                              
+ 60  #c       Lawrence Berkeley National Laboratory                             
+ 60  #c       under subcontract with National Nuclear Data Center,              
+ 60  #c       Brookhaven National Laboratory                                    
+ 60  #c       Upton, New York 11973-5000, USA                                   
+ 60   c  AUTH$J. K. TULI                                                        
+ 60   c  INST$National Nuclear Data Center                                      
+ 60  #c       Brookhaven National Laboratory                                    
+ 60  #c       Upton, New York 11973-5000, USA                                   
+ 60   c  ABST$The 2003 evaluation of A=60 (2003Tu08) has been revised and       
+ 60  2c  brought up-to-date with references received by the cutoff date noted   
+ 60  3c  below.                                                                 
+ 60   c  COMM$Highlights and new data in this evaluation include: eight levels  
+ 60  2c  with energies up to 4861 keV (2006Zh42) in {+60}Cr, forty-four levels  
+ 60  3c  up to 9235 keV (2010St01) in {+60}Mn, and up to 17955 keV in {+60}Fe.  
+ 60  4c  These levels are from nuclear reactions with {+48}Ca projectiles on    
+ 60  5c  {+14}C targets, observed from |g-ray measurements using the            
+ 60  6c  GAMMASPHERE array of 101 germanium detectors.  Also, many new nuclear  
+ 60  7c  levels have been observed in {+60}Fe from {+14}C({+48}Ca,2n|g)         
+ 60  8c  (2007De56), and in {+60}Ni from {+59}Ni(n,|g) (2004Ra23),              
+ 60  9c  {+28}Si({+36}Ar,4p|g) (2008To15), and {+60}Ni(n,n'|g)                  
+ 60  Ac  (2002KoZT,2008Or02).                                                   
+ 60   c  The theoretical conversion coefficients for |g rays given in this      
+ 60  2c  evaluation are from 2002Ba85 and have been interpolated using the      
+ 60  3c  computer code BRICC (Band Raman Internal Conversion Coefficients)      
+ 60  4c  (2005KiZT).                                                            
+ 60   c  References 2011Me01, 2010Sh05 deal with production, and discovery of   
+ 60  2c  some nuclides.                                                         
+ 60   c  CUT$All data received by December 2012 have been evaluated.            
+ 60   c  ACKN$Thanks are due to Elizabeth (Libby) McCutchan for her thorough    
+ 60  2c  review of the mass chain. Thanks are also due to B. Singh for his      
+ 60  3c  compilation of many experimental works into the Experimental           
+ 60  2c  Unevaluated Nuclear Data List (XUNDL), maintained and disseminated by  
+ 60  3c  the National Nuclear Data Center (NNDC) at the Brookhaven National     
+ 60  4c  Laboratory (BNL).                                                      
+ 60   c  FUND$Research sponsored by Office of Nuclear Physics, Office of        
+ 60  xc  Science, US Department of Energy, under contract DE-AC02-98CH10946.    
+ 60   C  CIT$NDS 114, 1849 (2013)                                               
+
+ 60      REFERENCES                                              13NDS    201312
+ 60    R 1940LI01 JOUR RMPHA 12 30                                              
+ 60    R 1947LE07 JOUR PHRVA 72 732                                             
+ 60    R 1949SE20 JOUR PHRVA 75 39                                              
+ 60    R 1950BR76 JOUR PHRVA 80 1102                                            
+ 60    R 1951SI25 JOUR NATUA 167 365                                            
+ 60    R 1951TO25 JOUR COREA 233 1360                                           
+ 60    R 1953KA21 JOUR PHRVA 91 332                                             
+ 60    R 1953LO09 JOUR NUCLA 11 14                                              
+ 60    R 1954KE04 JOUR PHRVA 93 140                                             
+ 60    R 1954NU26 JOUR PHYSA 20 555                                             
+ 60    R 1955LI39 JOUR PHYSA 21 747                                             
+ 60    R 1955WO44 JOUR CJPHA 33 886                                             
+ 60    R 1956WO09 JOUR CJPHA 34 256                                             
+ 60    R 1957BU64 JOUR PHRVA 108 1473                                           
+ 60    R 1957GE07 JOUR PHRVA 105 1539                                           
+ 60    R 1957RO54 JOUR CJPHA 35 649                                             
+ 60    R 1957SP90 JOUR PHRVA 108 69                                             
+ 60    R 1958KE26 JOUR PHMBA 2 360                                              
+ 60    R 1960AN07 JOUR NUPHA 19 400                                             
+ 60    R 1960EN05 JOUR PHRVA 119 735                                            
+ 60    R 1960ME09 REPT TID-6322,P42                                             
+ 60    R 1961CA05 JOUR PHRVA 123 241                                            
+ 60    R 1961CR01 JOUR PHRVA 123 923                                            
+ 60    R 1961PA10 REPT TID-13418,P14,Parkinson                                  
+ 60    R 1962HA46 JOUR NUPHA 39 286                                             
+ 60    R 1962MA20 JOUR NUPHA 33 536                                             
+ 60    R 1962ST02 JOUR NUPHA 32 652                                             
+ 60    R 1962VA32 JOUR IANFA 26 1143                                            
+ 60    R 1963GO03 JOUR NUCLA 21 63                                              
+ 60    R 1963SC14 JOUR ZEPYA 174 206                                            
+ 60    R 1963SE02 JOUR PHLTA 3 355                                              
+ 60    R 1964BJ01 JOUR NUPHA 51 641                                             
+ 60    R 1965AN07 REPT NP-15663                                                 
+ 60    R 1965DI09 JOUR NUPHA 73 529                                             
+ 60    R 1965JO11 JOUR PHRVA 139 B318                                           
+ 60    R 1965MO12 JOUR PHRVA 139 B274                                           
+ 60    R 1966BA23 JOUR PHLTA 21 708                                             
+ 60    R 1966SH12 JOUR PHRVA 149 827                                            
+ 60    R 1966SH15 JOUR PHRVA 150 894                                            
+ 60    R 1967AR01 JOUR PYLBB 24 84                                              
+ 60    R 1967AR05 JOUR PHRVA 155 1254                                           
+ 60    R 1967BI04 JOUR NUPAB A97 203                                            
+ 60    R 1967DU07 JOUR PHRVA 163 1259                                           
+ 60    R 1967MI02 JOUR NUPAB A94 261                                            
+ 60    R 1967TE02 JOUR NUPAB A98 417                                            
+ 60    R 1968BA01 JOUR NUPAB A106 497                                           
+ 60    R 1968BA14 JOUR NUPAB A111 147                                           
+ 60    R 1968HA03 JOUR ZEPYA 209 111                                            
+ 60    R 1968IN03 JOUR NUPAB A119 449                                           
+ 60    R 1968LA10 JOUR IJARA 19 475                                             
+ 60    R 1968PH04 JOUR PHRVA 169 917                                            
+ 60    R 1968RU01 JOUR PHRVA 168 1287                                           
+ 60    R 1968RU02 JOUR PHRVA 168 1296                                           
+ 60    R 1968WA20 JOUR PHRVA 176 1314                                           
+ 60    R 1968WO02 JOUR NUPAB A112 156                                           
+ 60    R 1968YO01 JOUR PYLBB 26 143                                             
+ 60    R 1969AF01 JOUR YAFIA 10 33                                              
+ 60    R 1969AR10 JOUR YAFIA 9 266                                              
+ 60    R 1969CL05 JOUR NUPAB A133 445                                           
+ 60    R 1969EI01 JOUR ZEPYA 219 114                                            
+ 60    R 1969HO01 JOUR PHRVA 177 1640                                           
+ 60    R 1969HO22 JOUR PHRVA 181 1597                                           
+ 60    R 1969HO33 JOUR PHRVA 185 1470                                           
+ 60    R 1969HUZY CONF Montreal(Nuclear States) P91                             
+ 60    R 1969JE03 JOUR PHRVA 185 1508                                           
+ 60    R 1969JO01 JOUR NUPAB A123 54                                            
+ 60    R 1969JO04 JOUR PYLBB 28B 546                                            
+ 60    R 1969KH11 JOUR NCLEA 6 206                                              
+ 60    R 1969KO05 JOUR NUPAB A127 385                                           
+ 60    R 1969LU03 JOUR PHRVA 180 1023                                           
+ 60    R 1969LU07 JOUR PHRVA 186 1086                                           
+ 60    R 1969ME05 JOUR NUPAB A130 161                                           
+ 60    R 1969RA07 JOUR NUPAB A124 145                                           
+ 60    R 1969RA23 JOUR ZEPYA 228 387                                            
+ 60    R 1969SA10 JOUR NUPAB A130 353                                           
+ 60    R 1969SM05 JOUR IANFA 33 1270                                            
+ 60    R 1969TO08 JOUR PHRVA 185 1499                                           
+ 60    R 1969VA20 JOUR PRLTA 23 1248                                            
+ 60    R 1970AH03 JOUR NUPAB A147 273                                           
+ 60    R 1970BR07 JOUR NUPAB A146 597                                           
+ 60    R 1970BR40 JOUR YAFIA 12 253                                             
+ 60    R 1970CA19 JOUR NUPAB A152 631                                           
+ 60    R 1970DI01 JOUR CJPHA 48 483                                             
+ 60    R 1970LI20 JOUR PRVCA C2 1329                                            
+ 60    R 1970ME08 JOUR NUPAB A148 362                                           
+ 60    R 1970ME18 JOUR NUPAB A158 88                                            
+ 60    R 1970PE09 JOUR PRVCA C2 468                                             
+ 60    R 1970RI20 JOUR ZEPYA 240 392                                            
+ 60    R 1970WA19 JOUR ZENAA 25 921                                             
+ 60    R 1971BE06 JOUR NUPAB A161 529                                           
+ 60    R 1971BE29 JOUR NUPAB A168 151                                           
+ 60    R 1971CA19 JOUR PRVCA C4 130                                             
+ 60    R 1971DA16 JOUR NUPAB A170 253                                           
+ 60    R 1971DE25 JOUR APAHA 30 1                                               
+ 60    R 1971DI04 JOUR PRVCA C3 2303                                            
+ 60    R 1971KA32 JOUR IANFA 35 1736                                            
+ 60    R 1971MA52 JOUR NUPAB A176 178                                           
+ 60    R 1971MA58 JOUR NUPAB A177 205                                           
+ 60    R 1971MO22 JOUR NUPAB A169 651                                           
+ 60    R 1971PL02 JOUR NUPAB A163 425                                           
+ 60    R 1972BE38 JOUR NUPAB A190 437                                           
+ 60    R 1972DU09 JOUR ZEPYA 251 416                                            
+ 60    R 1972EV02 JOUR NUPAB A198 268                                           
+ 60    R 1972GR39 JOUR PRVCA C6 1756                                            
+ 60    R 1972LE14 JOUR IJARA 23 225                                             
+ 60    R 1972LI12 JOUR PYLBB 38B 475                                            
+ 60    R 1972LI26 JOUR YAFIA 15 1104                                            
+ 60    R 1972LU03 JOUR NUPAB A190 229                                           
+ 60    R 1972NI01 JOUR PHYSA 57 1                                               
+ 60    R 1972PO10 JOUR NUPAB A193 305                                           
+ 60    R 1972RE15 JOUR ZEPYA 256 258                                            
+ 60    R 1972SE05 JOUR NUPAB A184 599                                           
+ 60    R 1972ST05 JOUR NUPAB A181 241                                           
+ 60    R 1972VA01 JOUR NUPAB A178 355                                           
+ 60    R 1972VA19 JOUR NUPAB A191 245                                           
+ 60    R 1972WI06 JOUR NUPAB A182 481                                           
+ 60    R 1973AU02 JOUR PRLTA 30 1078                                            
+ 60    R 1973CA07 JOUR NUPAB A202 225                                           
+ 60    R 1973CE02 JOUR NUPAB A208 617                                           
+ 60    R 1973FI15 JOUR PANUA 6 119                                              
+ 60    R 1973FU15 JOUR NSENA 52 474                                             
+ 60    R 1973GU22 JOUR YAFIA 18 519                                             
+ 60    R 1973HA60 JOUR RSINA 44 55                                              
+ 60    R 1973HA69 JOUR AERVA 11 576                                             
+ 60    R 1973HO24 JOUR NUPAB A209 245                                           
+ 60    R 1973MA38 JOUR NCLTA 8 396                                              
+ 60    R 1973RA10 JOUR PRVCA C7 1995                                            
+ 60    R 1973RE06 JOUR NUPAB A206 145                                           
+ 60    R 1973RO20 JOUR NUPAB A207 577                                           
+ 60    R 1973RU03 JOUR PRVCA C8 247                                             
+ 60    R 1974BA03 JOUR PRVCA C9 607                                             
+ 60    R 1974BA74 JOUR NUPAB A233 409                                           
+ 60    R 1974BA78 JOUR NUPAB A235 428                                           
+ 60    R 1974CO28 JOUR NUPAB A229 256                                           
+ 60    R 1974EV02 JOUR NUPAB A230 109                                           
+ 60    R 1974FO03 JOUR NUPAB A220 505                                           
+ 60    R 1974GU16 JOUR YAFIA 20 17                                              
+ 60    R 1974GU29 JOUR IANFA 38 2642                                            
+ 60    R 1974KA24 JOUR PRVCA C10 620                                            
+ 60    R 1974KO08 JOUR NUPAB A221 45                                            
+ 60    R 1974KO32 JOUR PYLBB 52B 175                                            
+ 60    R 1974LE13 JOUR NUPAB A223 563                                           
+ 60    R 1974LE28 JOUR PRVCA C10 2441                                           
+ 60    R 1974LI13 JOUR ZEPYA 269 163                                            
+ 60    R 1974SI01 JOUR NUPAB A218 189                                           
+ 60    R 1974TR04 JOUR PRVCA C9 1813                                            
+ 60    R 1974YE01 JOUR NUPAB A235 135                                           
+ 60    R 1975AL05 JOUR NUPAB A243 269                                           
+ 60    R 1975AN13 JOUR PRLTA 35 1131                                            
+ 60    R 1975AR16 JOUR NUPAB A247 238                                           
+ 60    R 1975DU14 JOUR IANFA 39 2168                                            
+ 60    R 1975ER05 JOUR ZEPYA A272 67                                            
+ 60    R 1975GI10 JOUR ZEPYA A274 259                                           
+ 60    R 1975IV04 JOUR IANFA 39 1695                                            
+ 60    R 1975JO08 JOUR PRVCA C12 2121                                           
+ 60    R 1975KI16 JOUR NUPAB A250 211                                           
+ 60    R 1975KI19 JOUR NDSBA 16 317                                             
+ 60    R 1975PR02 JOUR CJPHA 53 351                                             
+ 60    R 1975RE17 JOUR PRVCA C12 1945                                           
+ 60    R 1975RO25 JOUR ZEPYA A275 45                                            
+ 60    R 1975UE01 JOUR JUPSA 38 936                                             
+ 60    R 1975WI06 JOUR PRVCA C11 1477                                           
+ 60    R 1976AH08 JOUR NCIAA 33A 592                                            
+ 60    R 1976BA63 JOUR ADNDA 18 433                                             
+ 60    R 1976BO16 JOUR ZENAA 31 387                                             
+ 60    R 1976BU10 JOUR IANFA 40 181                                             
+ 60    R 1976CA18 JOUR PRVCA C14 261                                            
+ 60    R 1976FU06 JOUR JPCRB 5 835                                              
+ 60    R 1976HU09 JOUR PRVCA C14 1162                                           
+ 60    R 1976KL04 JOUR NUIMA 134 525                                            
+ 60    R 1976KO06 JOUR PRVCA C13 1470                                           
+ 60    R 1976LI23 JOUR PRVCA C14 1789                                           
+ 60    R 1976SC21 JOUR PYLBB 63B 129                                            
+ 60    R 1976ST11 JOUR NUPAB A266 424                                           
+ 60    R 1976VA30 JOUR IJARA 27 727                                             
+ 60    R 1976YO02 JOUR PRVCA C13 994                                            
+ 60    R 1977BA50 JOUR PRVCA C16 928                                            
+ 60    R 1977BO11 JOUR PRVCA C15 1160                                           
+ 60    R 1977FU03 JOUR NUPAB A284 329                                           
+ 60    R 1977HA47 JOUR NUPAB A292 253                                           
+ 60    R 1977HAXC REPT KFK-2470,Hanser                                          
+ 60    R 1977KH04 JOUR YAFIA 25 921                                             
+ 60    R 1977LO01 JOUR CJPHA 55 142                                             
+ 60    R 1977ST05 JOUR PRLTA 38 587                                             
+ 60    R 1977TH05 JOUR NUPAB A283 475                                           
+ 60    R 1977TO10 JOUR YAFIA 25 473                                             
+ 60    R 1977WA10 JOUR PRVCA C16 1027                                           
+ 60    R 1977WE05 JOUR PRVCA C15 2052                                           
+ 60    R 1978BO08 JOUR NUIMA 148 331                                            
+ 60    R 1978BO27 JOUR PRLTA 41 1095                                            
+ 60    R 1978BU07 JOUR NUPAB A299 117                                           
+ 60    R 1978CA18 JOUR PRVCA C18 1388                                           
+ 60    R 1978FA03 JOUR JPHGB G4 247                                             
+ 60    R 1978FU05 JOUR JNSTA 15 237                                             
+ 60    R 1978HA13 JOUR PRVCA C17 997                                            
+ 60    R 1978KEZQ REPT UM-P-88,p20,Kennett                                      
+ 60    R 1978LE08 JOUR NUPAB A298 206                                           
+ 60    R 1978NO03 JOUR PRVCA C17 2176                                           
+ 60    R 1978NO05 JOUR PRVCA C18 102                                            
+ 60    R 1978RO12 JOUR NUPAB A301 36                                            
+ 60    R 1978RO18 JOUR JPHGB G4 1469                                            
+ 60    R 1978SA06 JOUR NUPAB A298 313                                           
+ 60    R 1978SH05 JOUR YAFIA 27 293                                             
+ 60    R 1978SW03 JOUR AUJPA 31 253                                             
+ 60    R 1978TA02 JOUR NUPAB A295 61                                            
+ 60    R 1978TA03 JOUR NUPAB A295 77                                            
+ 60    R 1978TU02 JOUR PRVCA C17 1853                                           
+ 60    R 1978YO01 JOUR PRLTA 40 164                                             
+ 60    R 1978ZI01 JOUR NUPAB A297 263                                           
+ 60    R 1979ALYW CONF Riga,P332,Aleksandrov                                    
+ 60    R 1979BI08 JOUR YAFIA 30 26                                              
+ 60    R 1979BU07 JOUR NUPAB A321 445                                           
+ 60    R 1979ES04 JOUR PRVCA C19 2224                                           
+ 60    R 1979HA23 JOUR NUPAB A321 471                                           
+ 60    R 1979MO06 JOUR NUPAB A318 236                                           
+ 60    R 1979SC31 JOUR ADNDA 24 509                                             
+ 60    R 1979SM10 JOUR NSENA 72 293                                             
+ 60    R 1979TR09 JOUR NSENA 72 191                                             
+ 60    R 1979WE02 JOUR NUPAB A313 385                                           
+ 60    R 1980AL11 JOUR PRVCA C21 1203                                           
+ 60    R 1980CH14 JOUR PYLBB 94 127                                             
+ 60    R 1980HA08 JOUR PRVCA C21 906                                            
+ 60    R 1980HA09 JOUR NUPAB A336 290                                           
+ 60    R 1980HA14 JOUR NUPAB A340 93                                            
+ 60    R 1980HO17 JOUR IJARA 31 153                                             
+ 60    R 1980KE06 JOUR JPHGB 6 1131                                             
+ 60    R 1980KO05 JOUR YAFIA 31 13                                              
+ 60    R 1980KR05 JOUR NUIMA 169 573                                            
+ 60    R 1980LE25 JOUR PYLBB 97 358                                             
+ 60    R 1980OR04 JOUR JUPSA 49 1                                               
+ 60    R 1980PI02 JOUR PRVCA C21 147                                            
+ 60    R 1980VA17 JOUR NUPAB 350 109                                            
+ 60    R 1981BE40 JOUR PRVCA 24 756                                             
+ 60    R 1981BO35 JOUR PRVCA 24 1940                                            
+ 60    R 1981BU26 JOUR IANFA 45 2176                                            
+ 60    R 1981FU04 JOUR NUPAB 356 235                                            
+ 60    R 1981HA23 JOUR NUPAB 364 144                                            
+ 60    R 1981IN01 JOUR NUPAB 365 426                                            
+ 60    R 1981KO35 JOUR AENGA 50 398                                             
+ 60    R 1981LI19 JOUR PRLTA 47 1266                                            
+ 60    R 1981MUZQ BOOK Neutron Cross Sections, Vol1,Part A, Academic Press      
+ 60    R 1981PA10 JOUR NUPAB 363 399                                            
+ 60    R 1982BO09 JOUR PRLTA 48 986                                             
+ 60    R 1982BO25 JOUR PYLBB 114 423                                            
+ 60    R 1982ER10 JOUR HYIND 12 227                                             
+ 60    R 1982GR10 JOUR IJARA 33 533                                             
+ 60    R 1982GU02 JOUR PRVCA 25 2854                                            
+ 60    R 1982HOZJ REPT NBS-SP-626,P85,Hoppes                                    
+ 60    R 1982KU18 JOUR BICRA 60 106                                             
+ 60    R 1982RYZX REPT NBS-SP-626,P32,Rytz                                      
+ 60    R 1982SA37 JOUR MFKPA 36 305                                             
+ 60    R 1982SH28 JOUR YTHLD 4 120                                              
+ 60    R 1982TOZW REPT UTTAC-45,P45,Toba                                        
+ 60    R 1982TS04 JOUR PRVCA 26 424                                             
+ 60    R 1983BE24 JOUR YAFIA 37 891                                             
+ 60    R 1983CH20 JOUR PRVCA 28 159                                             
+ 60    R 1983EL03 JOUR IANFA 47 56                                              
+ 60    R 1983HA08 JOUR NUPAB 398 325                                            
+ 60    R 1983KI04 JOUR PRVCA 27 804                                             
+ 60    R 1983LA06 JOUR IJARA 34 521                                             
+ 60    R 1983MA09 JOUR NUPAB 396 145c                                           
+ 60    R 1983MA37 JOUR NUPAB 403 1                                              
+ 60    R 1983NA12 JOUR NUPAB 406 81                                             
+ 60    R 1983OKZY REPT RCNP Osaka,1982 Ann,P88,Okuma                            
+ 60    R 1983RA30 JOUR NUPAB 410 371                                            
+ 60    R 1983RU04 JOUR NUIMA 206 211                                            
+ 60    R 1983WA26 JOUR IJARA 34 1191                                            
+ 60    R 1984AL02 JOUR PYLBB 137 37                                             
+ 60    R 1984II01 JOUR PRVCA 29 328                                             
+ 60    R 1984KA07 JOUR PYLBB 137 150                                            
+ 60    R 1984KO29 JOUR NUPAB 427 413                                            
+ 60    R 1984KU28 JOUR NIMBE 5 430                                              
+ 60    R 1984TS02 JOUR PRVCA 29 441                                             
+ 60    R 1985AL24 JOUR NUPAB 445 477                                            
+ 60    R 1985BL11 JOUR NUPAB 440 511                                            
+ 60    R 1985BL12 JOUR PRVCA 32 411                                             
+ 60    R 1985EL02 JOUR NUPAB 438 525                                            
+ 60    R 1985EL06 JOUR NUPAB 441 157                                            
+ 60    R 1985FR05 JOUR PYLBB 154 24                                             
+ 60    R 1985FU12 JOUR PYLBB 162 55                                             
+ 60    R 1985GU09 JOUR NUPAB 438 187                                            
+ 60    R 1985HAZA REPT European Appl Res Rept Nucl Sci Tech 6 777,EUR 9478 EN   
+ 60    R 1985JA02 JOUR PYLBB 150 331                                            
+ 60    R 1985MI06 JOUR NUPAB 436 221                                            
+ 60    R 1985MO07 JOUR NUPAB 438 461                                            
+ 60    R 1985RU05 JOUR NUPAB 441 237                                            
+ 60    R 1985VI01 JOUR NUPAB 433 441                                            
+ 60    R 1986CH20 JOUR NUPAB 455 169                                            
+ 60    R 1986CH38 JOUR NUPAB 459 417                                            
+ 60    R 1986DA17 JOUR NUPAB 459 134                                            
+ 60    R 1986ER09 JOUR PRVCA 34 1822                                            
+ 60    R 1986FI12 JOUR PRVCA 34 643                                             
+ 60    R 1986HO15 JOUR NUPAB 454 237                                            
+ 60    R 1986IR02 JOUR PRVCA 34 2231                                            
+ 60    R 1986KA38 JOUR JUPSA 55 3014                                            
+ 60    R 1986KR16 JOUR PRVCA 34 2103                                            
+ 60    R 1986LI05 JOUR PYLBB 174 1                                              
+ 60    R 1986PA23 JOUR PHSTB 34 634                                             
+ 60    R 1986SU09 JOUR PYLBB 176 302                                            
+ 60    R 1986VI06 JOUR ZPAAD 324 161                                            
+ 60    R 1986WA03 JOUR NUPAB 448 221                                            
+ 60    R 1987AH01 JOUR NSENA 95 296                                             
+ 60    R 1987BA78 JOUR JPHGB 13 1541                                            
+ 60    R 1987BO43 JOUR CJPHA 65 654                                             
+ 60    R 1987CO29 JOUR NUPAB 473 458                                            
+ 60    R 1987DR11 JOUR ZPAAD 328 61                                             
+ 60    R 1987HO01 JOUR PRVCA 35 315                                             
+ 60    R 1987NA12 JOUR NIMAE 256 505                                            
+ 60    R 1987NU03 JOUR NUPAB 474 285                                            
+ 60    R 1987PE03 JOUR PRVCA 35 495                                             
+ 60    R 1987TA15 JOUR NUPAB 472 41                                             
+ 60    R 1987TR01 JOUR NUPAB 462 333                                            
+ 60    R 1987VA01 JOUR PYLBB 185 6                                              
+ 60    R 1987WR04 JOUR PRVCA 36 1472                                            
+ 60    R 1988BO06 JOUR NUPAB 477 89                                             
+ 60    R 1988CL03 JOUR PRVCA 38 589                                             
+ 60    R 1988DO08 JOUR PRLTA 60 2254                                            
+ 60    R 1988FR10 JOUR PYLBB 207 381                                            
+ 60    R 1988MI14 JOUR PRVCA 38 1316                                            
+ 60    R 1988NA01 JOUR PRVCA 37 85                                              
+ 60    R 1988NA12 JOUR NUPAB 486 77                                             
+ 60    R 1988PE20 JOUR PRVCA 38 2052                                            
+ 60    R 1988RA27 JOUR NCIAA 100 419                                            
+ 60    R 1988RO03 JOUR PYLBB 202 35                                             
+ 60    R 1988SE09 JOUR NIMAE 272 814                                            
+ 60    R 1988UD01 JOUR PRVCA 37 429                                             
+ 60    R 1989AI02 JOUR IANFA 53 37                                              
+ 60    R 1989GE08 JOUR ANEND 16 293                                             
+ 60    R 1989GE09 JOUR FECAA 20 930                                             
+ 60    R 1989KO54 JOUR IANFA 53 2130                                            
+ 60    R 1989LO12 JOUR PRVCA 40 2710                                            
+ 60    R 1989MU15 JOUR JPGPE 15 1769                                            
+ 60    R 1989OA01 JOUR PRVCA 40 859                                             
+ 60    R 1989OS02 JOUR JPGPE 15 871                                             
+ 60    R 1989PE06 JOUR PRVCA 40 553                                             
+ 60    R 1989RA17 JOUR ADNDA 42 189                                             
+ 60    R 1989SC28 JOUR PRVCA 40 2310                                            
+ 60    R 1989VA02 JOUR JPGPE 15 199                                             
+ 60    R 1989WA05 JOUR JPGPE 15 181                                             
+ 60    R 1990AB02 JOUR JRNCD 144 359                                            
+ 60    R 1990BO27 JOUR PRVCA 42 1297                                            
+ 60    R 1990BO37 JOUR YAFIA 52 52                                              
+ 60    R 1990CL02 JOUR PRVCA 41 2246                                            
+ 60    R 1990FI07 JOUR PRVCA 42 2375                                            
+ 60    R 1990HA20 JOUR PRVCA 41 2737                                            
+ 60    R 1990KU08 JOUR NUPAB 514 589                                            
+ 60    R 1991BAZS REPT IAEA-TECDOC-619,Bambynek                                 
+ 60    R 1992CUZY REPT JYFL 1991 Annual,P58,Cutoiu                              
+ 60    R 1992JA06 JOUR NIMAE 313 277                                            
+ 60    R 1992KE07 JOUR PRVCA 46 1811                                            
+ 60    R 1992RA08 JOUR NIMAE 312 289                                            
+ 60    R 1992UN01 JOUR NIMAE 312 349                                            
+ 60    R 1992YO01 JOUR PRVCA 45 2172                                            
+ 60    R 1993BE19 JOUR NUPAB 555 455                                            
+ 60    R 1993KI10 JOUR NDSBA 69 1                                               
+ 60    R 1993LI24 JOUR NUPAB 560 733                                            
+ 60    R 1993PLZW CONF Dubna,P208,Plavko                                        
+ 60    R 1993SCZS CONF Bernkastel-Kues(Nuclei Far from Stability) Proc,P627,Schm
+ 60    R 1993SH11 JOUR PRVCA 48 192                                             
+ 60    R 1994FI01 JOUR NUPAB 569 421                                            
+ 60    R 1994GRZW CONF Kharkov,P369,Grigorev                                    
+ 60    R 1994SA33 JOUR NCIAA 107 511                                            
+ 60    R 1995AMZX REPT GSI-Nachrichten 11-95,P.19,Ameil                         
+ 60    R 1995BL06 JOUR PRLTA 74 4611                                            
+ 60    R 1995WI09 JOUR PRVCA 51 1144                                            
+ 60    R 1996DO23 JOUR PRVCA 54 2894                                            
+ 60    R 1997AMZZ REPT IPNO-T 97-02,Ameil                                       
+ 60    R 1997BE77 JOUR APHPF 6 295                                              
+ 60    R 1997MO25 JOUR ADNDA 66 131                                             
+ 60    R 1998AM04 JOUR ZAANE 1 275                                              
+ 60    R 1998DE14 JOUR NUPAB 630 426c                                           
+ 60    R 1998GO18 JOUR PRVCA 58 1767                                            
+ 60    R 1998KU24 JOUR BRSPE 62 69                                              
+ 60    R 1998SI17 JOUR NDSBA 84 487                                             
+ 60    R 1998SVZY THESIS C E Svensson,McMaster Univ                             
+ 60    R 1998SVZZ CONF Gatlinburg(Nuclear Structure '98) Contrib,P130,Svensson  
+ 60    R 1999BEZQ REPT CEA-ISBN 2-7272-0200-8,Be                                
+ 60    R 1999BEZS REPT CEA-ISBN 2-7272-0211-3,Be                                
+ 60    R 1999DAZQ REPT GANIL-T 99 05,Daugas                                     
+ 60    R 1999LE67 JOUR NUPAB 654 683c                                           
+ 60    R 1999NA23 JOUR PRLTA 83 690                                             
+ 60    R 1999SO20 JOUR NUPAB 660 3                                              
+ 60    R 1999SV01 JOUR PRLTA 82 3400                                            
+ 60    R 2000HE14 JOUR NIMAE 450 35                                             
+ 60    R 2000SO02 JOUR YAFIA 63,No 1,36                                         
+ 60    R 2000WI18 JOUR ZAANE 9 183                                              
+ 60    R 2001IC01 JOUR PYLBB 500 37                                             
+ 60    R 2001KE02 JOUR PRVCA 63 021302                                          
+ 60    R 2001KE08 JOUR PRVCA 63 064306                                          
+ 60    R 2001MA96 JOUR ZAANE 12 269                                             
+ 60    R 2001NA18 JOUR NUPAB 687 84c                                            
+ 60    R 2001SO07 JOUR NUPAB 682 183c                                           
+ 60    R 2001SU02 JOUR NIMAE 457 180                                            
+ 60    R 2002AL01 JOUR PRVCA 65 014602                                          
+ 60    R 2002BA85 JOUR ADNDA 81 1                                               
+ 60    R 2002BE59 JOUR PHSTB 66 22                                              
+ 60    R 2002BE89 JOUR PRVCA 66 064307                                          
+ 60    R 2002BL17 JOUR ZAANE 15 121                                             
+ 60    R 2002CA48 JOUR ZAANE 15 145                                             
+ 60    R 2002DE27 JOUR YAFIA 65 847                                             
+ 60    R 2002IC01 JOUR PRLTA 89 142501                                          
+ 60    R 2002KOZT CONF Moscow,P73,Kosyak                                        
+ 60    R 2002LO13 JOUR PRVCA 66 025803                                          
+ 60    R 2002MA64 JOUR CPHCB 150 43                                             
+ 60    R 2002NO08 JOUR NUPAB 704 223c                                           
+ 60    R 2002RE13 JOUR ADNDA 80 1                                               
+ 60    R 2002RO29 JOUR NUPAB 707 325                                            
+ 60    R 2002SA49 JOUR IMPEE 11 403                                             
+ 60    R 2002SZ01 JOUR NIMBE 187 153                                            
+ 60    R 2002UN02 JOUR ARISE 56 125                                             
+ 60    R 2003AU02 JOUR NUPAB 729 3                                              
+ 60    R 2003IS17 JOUR NUPAB 722 308c                                           
+ 60    R 2003KN01 JOUR NUPAB 723 343                                            
+ 60    R 2003LU04 JOUR ARISE 58 365                                             
+ 60    R 2003NA24 JOUR NUPAB 718 691c                                           
+ 60    R 2003PE07 JOUR NUPAB 717 21                                             
+ 60    R 2003SA08 JOUR NUPAB 716 230                                            
+ 60    R 2003SO02 JOUR ZAANE 16 55                                              
+ 60    R 2003SO21 JOUR NUPAB 719 193c                                           
+ 60    R 2003SU36 JOUR BRSPE 67 796                                             
+ 60    R 2003TU08 JOUR NDSBA 100 347                                            
+ 60    R 2003YA20 JOUR RAACA 91 689                                             
+ 60    R 2003ZH30 JOUR FECAA 34 908                                             
+ 60    R 2004AG02 JOUR PRVCA 69 034602                                          
+ 60    R 2004DE41 JOUR YAFIA 67 1443                                            
+ 60    R 2004FA02 JOUR NIMBE 215 16                                             
+ 60    R 2004FE04 JOUR NIMBE 222 355                                            
+ 60    R 2004GE20 JOUR BJPHE 34 722                                             
+ 60    R 2004HE32 JOUR NUPAB 746 487c                                           
+ 60    R 2004HO08 JOUR PRVCA 69 034335                                          
+ 60    R 2004IZ01 JOUR PRVCA 69 037303                                          
+ 60    R 2004KA07 JOUR ARISE 60 357                                             
+ 60    R 2004KO34 JOUR PRVCA 69 064316                                          
+ 60    R 2004MA76 JOUR JRNCD 262 49                                             
+ 60    R 2004MI54 JOUR IMPEE 13 1209                                            
+ 60    R 2004PA04 JOUR PRVCA 69 024312                                          
+ 60    R 2004RA23 JOUR PRVCA 70 044318                                          
+ 60    R 2004SA40 JOUR PRVCA 70 024311                                          
+ 60    R 2004SE01 JOUR NUPAB 730 255                                            
+ 60    R 2004SZ06 JOUR NIMBE 222 364                                            
+ 60    R 2004VA38 JOUR BJPHE 34 837                                             
+ 60    R 2004WO02 JOUR ARISE 60 257                                             
+ 60    R 2005AL03 JOUR NUPAB 748 59                                             
+ 60    R 2005AL47 JOUR PRVCA 72 064326                                          
+ 60    R 2005BA49 JOUR IMPEE 14 445                                             
+ 60    R 2005BO10 JOUR JRNCD 264 101                                            
+ 60    R 2005CH12 JOUR PRVCA 71 024310                                          
+ 60    R 2005FR29 JOUR JPGPE 31 S1465                                           
+ 60    R 2005GA01 JOUR ZAANE 23 41                                              
+ 60    R 2005GA44 JOUR JPGPE 31 S1443                                           
+ 60    R 2005GA56 JOUR ZAANE 25 s01 421                                         
+ 60    R 2005GU36 JOUR ZAANE 25 s01 33                                          
+ 60    R 2005HA54 JOUR NIMBE 239 314                                            
+ 60    R 2005HO32 JOUR ZAANE 25 s01 499                                         
+ 60    R 2005JU02 JOUR NUPAB 747 87                                             
+ 60    R 2005KIZT REPT ANU-P/1684,Kibedi                                        
+ 60    R 2005NA24 JOUR NUPAB 755 423c                                           
+ 60    R 2005NO04 JOUR NPBSE 143 508                                            
+ 60    R 2005PU04 JOUR ZAANE 25 165                                             
+ 60    R 2005SI32 JOUR NIMBE 240 617                                            
+ 60    R 2005ST24 JOUR ADNDA 90 75                                              
+ 60    R 2005ST29 JOUR PYLBB 627 32                                             
+ 60    R 2005ST34 JOUR ZAANE 25 s01 335                                         
+ 60    R 2005SU21 JOUR YAFIA 68 1568                                            
+ 60    R 2005TA01 JOUR ARISE 62 73                                              
+ 60    R 2006AN27 JOUR PRVCA 74 054313                                          
+ 60    R 2006CH28 JOUR NUPAB 773 56                                             
+ 60    R 2006HA54 JOUR PPNLA 3 405                                              
+ 60    R 2006HI10 JOUR NUPAB 779 63                                             
+ 60    R 2006HU14 JOUR NIMBE 252 249                                            
+ 60    R 2006LI15 JOUR PRVCA 73 044322                                          
+ 60    R 2006LU01 JOUR PRVCA 73 014314                                          
+ 60    R 2006LU08 JOUR PANUE 69 1033                                            
+ 60    R 2006MA11 JOUR PYLBB 633 696                                            
+ 60    R 2006PA20 JOUR NIMAE 562 222                                            
+ 60    R 2006PE02 JOUR PRVCA 73 014601                                          
+ 60    R 2006SC16 JOUR NIMAE 562 1057                                           
+ 60    R 2006SI27 JOUR NIMBE 251 1                                              
+ 60    R 2006SU20 JOUR PPNUE 37 899                                             
+ 60    R 2006SZ03 JOUR ARISE 64 789                                             
+ 60    R 2006TA21 JOUR NIMBE 251 56                                             
+ 60    R 2006WO04 JOUR APOBB 37 207                                             
+ 60    R 2006ZH42 JOUR PRVCA 74 064315                                          
+ 60    R 2007AL01 JOUR ARISE 65 104                                             
+ 60    R 2007AL45 JOUR NUPAB 788 357c                                           
+ 60    R 2007AL51 JOUR PRLTA 99 162504                                          
+ 60    R 2007BL09 JOUR ZAANE 31 267                                             
+ 60    R 2007DE56 JOUR PRVCA 76 054303                                          
+ 60    R 2007FR23 JOUR PRVCA 76 057301                                          
+ 60    R 2007GU09 JOUR PRVCA 75 044303                                          
+ 60    R 2007LI42 JOUR NUPAB 787 219c                                           
+ 60    R 2007LI49 JOUR CHPHD 16 2671                                            
+ 60    R 2007LI72 JOUR CHPHD 16 3624                                            
+ 60    R 2007MO15 JOUR PRVCA 75 045805                                          
+ 60    R 2007NA31 JOUR PRVCA 76 064609                                          
+ 60    R 2007PO09 JOUR NUPAB 787 206c                                           
+ 60    R 2007TA14 JOUR NIMBE 260 495                                            
+ 60    R 2007TE10 JOUR PRVCA 76 044320                                          
+ 60    R 2007VO08 JOUR PRVCA 76 044602                                          
+ 60    R 2007WO02 JOUR APOBB 38 1469                                            
+ 60    R 2007ZE06 JOUR PRLTA 99 202501                                          
+ 60    R 2007ZH16 JOUR JTPLA 85 136                                             
+ 60    R 2007ZH34 JOUR NSENA 157 354                                            
+ 60    R 2008AD08 JOUR PRVCA 78 024613                                          
+ 60    R 2008AN15 JOUR PRVCA 78 065803                                          
+ 60    R 2008AO01 JOUR NUPAB 805 400c                                           
+ 60    R 2008AV03 JOUR NUPAB 806 15                                             
+ 60    R 2008BR05 JOUR RAACA 96 387                                             
+ 60    R 2008DA08 JOUR ZAANE 36 101                                             
+ 60    R 2008GU03 JOUR IMPEE 17 539                                             
+ 60    R 2008HE01 JOUR PRVCA 77 015808                                          
+ 60    R 2008KA41 JOUR PRVCA 78 064312                                          
+ 60    R 2008KIZZ CONF Crete(FINUSTAR 2),Proc.P371,Kicinska-Habior              
+ 60    R 2008LI05 JOUR NUPAB 801 43                                             
+ 60    R 2008MA17 JOUR PRVCA 77 054309                                          
+ 60    R 2008OB01 JOUR PTPKA 120 143                                            
+ 60    R 2008OR02 JOUR PRVCA 77 064301                                          
+ 60    R 2008PO05 JOUR JRNCD 276 771                                            
+ 60    R 2008SU11 JOUR PANUE 71 982                                             
+ 60    R 2008SY01 JOUR JRNCD 276 779                                            
+ 60    R 2008TO15 JOUR PRVCA 78 054318                                          
+ 60    R 2008VA08 JOUR PRVCA 78 024302                                          
+ 60    R 2008VO12 JOUR PRVCA 78 044615                                          
+ 60    R 2008YA14 JOUR PRVCA 77 064319                                          
+ 60    R 2008YA21 JOUR PRVCA 78 044606                                          
+ 60    R 2009AO01 JOUR PRLTA 102 012502                                         
+ 60    R 2009CR02 JOUR PRVCA 79 054320                                          
+ 60    R 2009FO05 JOUR PRVCA 79 064318                                          
+ 60    R 2009KU13 JOUR JNSTA 46 914                                             
+ 60    R 2009LA04 JOUR ANEND 36 458                                             
+ 60    R 2009LE14 JOUR PRVCA 79 054611                                          
+ 60    R 2009OG06 JOUR PRVCA 80 034305                                          
+ 60    R 2009PE14 JOUR NUPAB 826 211                                            
+ 60    R 2009RO06 JOUR PRVCA 79 054308                                          
+ 60    R 2009RU08 JOUR PRLTA 103 072502                                         
+ 60    R 2009SU20 JOUR PRVCA 80 054306                                          
+ 60    R 2009TA05 JOUR PRLTA 102 142501                                         
+ 60    R 2009TA24 JOUR PRVCA 80 034609                                          
+ 60    R 2009TI09 JOUR AENGA 107 48                                             
+ 60    R 2009VO02 JOUR PRVCA 79 031301                                          
+ 60    R 2009ZH02 JOUR NSENA 161 331                                            
+ 60    R 2010AL19 JOUR JPGPE 37 115101                                          
+ 60    R 2010BA16 JOUR PANUE 73 1106                                            
+ 60    R 2010BE11 JOUR BRSPE 74 542                                             
+ 60    R 2010DA06 JOUR PRVCA 81 034304                                          
+ 60    R 2010EL02 JOUR JRNCD 284 321                                            
+ 60    R 2010EL09 JOUR PRVCA 82 054610                                          
+ 60    R 2010GA06 JOUR PRVCA 81 051304                                          
+ 60    R 2010GU03 JOUR PRVCA 81 044617                                          
+ 60    R 2010GU13 JOUR PRVCA 82 024319                                          
+ 60    R 2010HA19 JOUR NUPAB 834 495c                                           
+ 60    R 2010HO13 JOUR PRVCA 82 044305                                          
+ 60    R 2010KA26 JOUR PRVCA 82 034311                                          
+ 60    R 2010KR02 JOUR NIMAE 615 70                                             
+ 60    R 2010KR06 JOUR PRVCA 81 044612                                          
+ 60    R 2010LE01 JOUR ARISE 68 432                                             
+ 60    R 2010LE20 JOUR PRVCA 82 054301                                          
+ 60    R 2010LJ01 JOUR PRVCA 81 061301                                          
+ 60    R 2010LO03 JOUR PRVCA 81 031302                                          
+ 60    R 2010PR07 JOUR ADNDA 96 645                                             
+ 60    R 2010SA34 JOUR IMPEE 19 2167                                            
+ 60    R 2010SH05 JOUR ADNDA 96 351                                             
+ 60    R 2010SO04 JOUR PRVCA 81 034914                                          
+ 60    R 2010SR03 JOUR ZAANE 45 185                                             
+ 60    R 2010ST01 JOUR PRVCA 81 014305                                          
+ 60    R 2010SU17 JOUR PANUE 73 1507                                            
+ 60    R 2010SZ02 JOUR ADNDA 96 848                                             
+ 60    R 2010VO01 JOUR PRVCA 81 024319                                          
+ 60    R 2010WA40 JOUR PRVCA 82 055502                                          
+ 60    R 2010YA17 JOUR PRVCA 82 031304                                          
+ 60    R 2011BA39 JOUR CPCHC 35 925                                             
+ 60    R 2011BE41 JOUR PANUE 74 1521                                            
+ 60    R 2011BH06 JOUR IMPEE 20 1663                                            
+ 60    R 2011CH51 JOUR KPSJA 59 1495s                                           
+ 60    R 2011CH57 JOUR NDSBA 112 2887                                           
+ 60    R 2011CH65 JOUR PANUE 74 1713                                            
+ 60    R 2011DA08 JOUR PRVCA 83 054312                                          
+ 60    R 2011DI16 JOUR KPSJA 59 1697s                                           
+ 60    R 2011ES06 JOUR PRLTA 107 172503                                         
+ 60    R 2011GU15 JOUR PRVCA 83 064618                                          
+ 60    R 2011GU20 JOUR NUPAB 866 37                                             
+ 60    R 2011HI13 JOUR KPSJA 59 803s                                            
+ 60    R 2011KH10 JOUR PRVCA 84 051301                                          
+ 60    R 2011ME01 JOUR ADNDA 97 134                                             
+ 60    R 2011MI12 JOUR JNSTA 48 984                                             
+ 60    R 2011MU10 JOUR PRVCA 83 064605                                          
+ 60    R 2011NA02 JOUR APOBB 42 505                                             
+ 60    R 2011NI21 JOUR JPCSD 312 042017                                         
+ 60    R 2011PA01 JOUR ANEND 38 853                                             
+ 60    R 2011PA03 JOUR ANEND 38 1084                                            
+ 60    R 2011PRZZ PREPRINT arXiv:1102.3365v1 [nucl-th],2/16/2011                
+ 60    R 2011QU04 JOUR PRVCA 84 054324                                          
+ 60    R 2011STZZ REPT INDC(NDS)-0594,Stone                                     
+ 60    R 2011SU04 JOUR PPNPD 66 385                                             
+ 60    R 2011TI04 JOUR PANUE 74 537                                             
+ 60    R 2011TI05 JOUR PANUE 74 551                                             
+ 60    R 2011UT01 JOUR PRVCA 83 021301                                          
+ 60    R 2011VI03 JOUR PYLBB 703 34                                             
+ 60    R 2011YO04 JOUR PRVCA 83 061302                                          
+ 60    R 2011ZH04 JOUR NIMBE 269 642                                            
+ 60    R 2012AU07 JOUR CPCHC 36 1157                                            
+ 60    R 2012BA31 JOUR PRVCA 86 011305                                          
+ 60    R 2012BH08 JOUR IMPEE 21 1250069                                         
+ 60    R 2012CA27 JOUR PRVCA 86 014307                                          
+ 60    R 2012CA30 JOUR JPGPE 39 105108                                          
+ 60    R 2012CH48 JOUR JPGPE 39 125105                                          
+ 60    R 2012CO16 JOUR PRVCA 86 015809                                          
+ 60    R 2012DO04 JOUR IMPEE 21 1250046                                         
+ 60    R 2012FI12 JOUR JRNBA 117 80                                             
+ 60    R 2012FU04 JOUR PRVCA 85 044607                                          
+ 60    R 2012GA06 JOUR ADNDA 98 356                                             
+ 60    R 2012GO17 JOUR PHSTB T150 014016                                        
+ 60    R 2012GR19 JOUR ADNDA 98 983                                             
+ 60    R 2012GU16 JOUR PRVCA 86 024313                                          
+ 60    R 2012HE13 JOUR ZAANE 48 97                                              
+ 60    R 2012JA04 JOUR APOBB 43 193                                             
+ 60    R 2012KA06 JOUR PRVCA 85 034606                                          
+ 60    R 2012KA36 JOUR PRVCA 86 054319                                          
+ 60    R 2012KU21 JOUR PANUE 75 832                                             
+ 60    R 2012LO04 JOUR ZAANE 48 34                                              
+ 60    R 2012MU09 JOUR PRLTA 109 032503                                         
+ 60    R 2012NA15 JOUR PRVCA 86 014325                                          
+ 60    R 2012NI03 JOUR PRVCA 85 034314                                          
+ 60    R 2012PR08 JOUR ADNDA 98 798                                             
+ 60    R 2012SA33 JOUR PRVCA 86 024316                                          
+ 60    R 2012SC01 JOUR PRLTA 108 022501                                         
+ 60    R 2012SH06 JOUR ANEND 43 106                                             
+ 60    R 2012SU07 JOUR PRVCA 85 054307                                          
+ 60    R 2012WA38 JOUR CPCHC 36 1603                                            
+ 60    R 2013SC08 JOUR PRVCA 87 051304                                          
+ 60    R 2013SC20 JOUR PRVCA 88 044304                                          
+ 60    R 2013XU01 JOUR PRVCA 87 014335                                          
+
+ 60CA    COMMENTS                                                ENSDF    202312
+ 60CA  H TYP=FUL$AUT=Balraj Singh$CIT=ENSDF$CUT=15-Sep-2023$                    
+ 60CA C  TITL$NUCLEAR DATA SHEETS FOR 60CA                                      
+ 60CA c  AUTH$BALRAJ SINGH                                                      
+ 60CA c  INST$Department of Physics and Astronomy,                              
+ 60CA#c       McMaster University, Hamilton, Ontario,                           
+ 60CA#c       Canada, L8S 4M1                                                   
+ 60CA c  ABST$Information for the production and identification of {+60}Ca is   
+ 60CA2c  presented, based on experimental results from 2018Ta17.                
+ 60CA c  CUT$Literature available up to September 15, 2023 has been consulted.  
+ 60CA C  CIT$ENSDF                                                              
+ 60CA c  FUND$                                                                  
+
  60CA    ADOPTED LEVELS                                          ENSDF    202312
  60CA  H TYP=FUL$AUT=Balraj Singh$CIT=ENSDF$CUT=15-Sep-2023$                    
  60CA  Q 15550     SY   2880 SY 25040  SY -17900 CA    2021Wa16,2019Mo01        
@@ -181,6 +872,21 @@
  60SC cL E$ activity observed by 2009Ta05 is assumed to correspond to the       
  60SC2cL ground state of {+60}Sc.                                               
 
+ 60TI    COMMENTS                                                ENSDF    201406
+ 60TI C  TITL$NUCLEAR DATA SHEETS FOR 60TI                                      
+ 60TI c  AUTH$BALRAJ SINGH                                                      
+ 60TI c  INST$Department of Physics and Astronomy,                              
+ 60TI#c       McMaster University, Hamilton, Ontario,                           
+ 60TI#c       Canada, L8S 4M1                                                   
+ 60TI c  ABST$Nuclear structure data for excited states and associated gamma    
+ 60TI2c  transitions in {+60}Ti, explored in an experimental work by 2014Ga07,  
+ 60TI3c  have been incorporated in the current revision of previous data        
+ 60TI4c  presented in Nuclear Data Sheets (2013Br15), where information was     
+ 60TI5c  available for only the ground state of {+60}Ti                         
+ 60TI c  CUT$Literature available up to May 27, 2014 has been consulted.        
+ 60TI C  CIT$ENSDF                                                              
+ 60TI c  FUND$                                                                  
+
  60TI    ADOPTED LEVELS, GAMMAS                                  ENSDF    201406
  60TI  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=27-MAY-2014$                    
  60TI  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1849 (2013)$            
@@ -254,10 +960,10 @@
  60TIAc  in {+60}Ti with shell-model calculations                               
  60TI cG RI$Deduced by the evaluator from relative level populations given      
  60TI2cG by 2014Ga07                                                            
- 60TI cL S$Level population in percent. If a single |g ray of 860 keV is        
- 60TI2cL considered, then based on GEANT4 simulation of GRETINA array,          
- 60TI3cL 111% {I12} of the knockout intensity is depopulated through this one   
- 60TI4cL |g ray, with no population of any level higher than first 2+ state,    
+ 60TI cL $Percent population:Level population in percent. If a single |g ray of 
+ 60TI2cL 860 keV is considered, then based on GEANT4 simulation of GRETINA      
+ 60TI3cL array, 111% {I12} of the knockout intensity is depopulated through this
+ 60TI4cL one |g ray, with no population of any level higher than first 2+ state,
  60TI5cL which is considered unlikely. From the asymmetric peak shape of the    
  60TI6cL 860|g peak in spectrum, and |g|g-coincidences, this peak is split in   
  60TI7cL 850|g from first 2+ state and 866|g from first 4+ state, with          
@@ -270,14 +976,14 @@
  60TI2cL shell-model calculations                                               
  60TI PN                                                                     5  
  60TI  L  0            0+                                                       
- 60TI cL $Percent=29 {I12}                                                      
+ 60TI cL $Percent population=29 {I12}                                           
  60TI cL $Percent population includes contribution from unobserved levels       
  60TI2cL which do not feed the first 2+ and 4+ states                           
  60TI  L  850      5   (2+)                                                 A   
- 60TI cL $Percent=30 {I11}                                                      
+ 60TI cL $Percent population=30 {I11}                                           
  60TI  G  850      5   70    15                                              C  
  60TI  L  1716     7   (4+)                                                 A   
- 60TI cL $Percent=40 {I10}                                                      
+ 60TI cL $Percent population=40 {I10}                                           
  60TI  G  866      5   40    11                                              C  
 
  60TI    181TA(86KR,X)                 2008DA08                  13NDS    201312
@@ -2104,12 +2810,12 @@
  60FE c  E=55.7 MeV. FWHM=200-300 keV. |s(|q) from 17.5|' to                    
  60FE2c  40|' (lab). DWBA calculations for two-neutron configurations.          
  60FE cL L$From comparison of |s(|q) with DWBA calculations.                    
- 60FE cL S$The normalization factor N=(d|s/d|W)(expt)/(d|s/d|W)(DWBA)           
+ 60FE cL $N: The normalization factor N=(d|s/d|W)(expt)/(d|s/d|W)(DWBA)         
  60FE  L 0.0                                           0                        
- 60FE cL $S=260 {I10}                                                           
+ 60FE cL $N=260 {I10}                                                           
  60FE cL $Configuration=(p3/2){+2}(0+)                                          
  60FE  L 3080      50                                  4                        
- 60FE cL $S=60 {I20}                                                            
+ 60FE cL $N=60 {I20}                                                            
  60FE cL           Configuration ((p3/2)(f5/2))4+                               
  60FE  L 3520      50                                  4,5                      
  60FE cL S         N=60 {I30} for L=4; N=40 {I20} for L=5.                      
@@ -2118,7 +2824,7 @@
  60FE3cL configuration results in a more reasonable normalization constant.     
  60FE cL           Configuration ((p3/2)(f5/2))4+, ((p1/2)(g9/2))5-             
  60FE  L 4350      50                                  7                        
- 60FE cL $S=70 {I10}                                                            
+ 60FE cL $N=70 {I10}                                                            
  60FE cL           Configuration ((f5/2)(g9/2))7-                               
  60FE  L 5310      50                                  5,7                      
  60FE cL S         N=60 {I20} for L=5; N=30 {I15} for L=7.                      
@@ -2131,7 +2837,7 @@
  60FE cL S         N=20 {I5} for L=7; N=40 {I10} for L=5.                       
  60FE cL           Configuration ((f5/2)(g9/2))7-, ((f5/2)(d5/2))5-             
  60FE  L 6620      50                                  8+6                      
- 60FE cL $S=70 {I20}                                                            
+ 60FE cL $N=70 {I20}                                                            
  60FE cL           Unresolved doublet, can be fitted with a pure L=6            
  60FExcL configuration.                                                         
  60FE cL           N=70 {I20} for configuration (g9/2){+2}8+ +                  
@@ -5487,7 +6193,7 @@
  60NI  G 2703      5 100                                                    E   
  60NI  G 4035      5 100                                                    E   
  60NI  L 4039.89    6 3-               22 FS     10                             
- 60NIX L XREF=DEFGHIJNOPQSTUVYABCGZ                                             
+ 60NIX L XREF=DEFGHIJNOPQSTUVYABCZ                                              
  60NI cL T$33 fs {I+15-12} from (p,p'|g), 38 fs {I11} in (n,n'|g)               
  60NI  G 853.8     4 10      2                                              U   
  60NI  G 1881.15   1251      4 [E1]                                         U   
@@ -9575,23 +10281,23 @@
  60NI cL L         From comparison of |s(|q) with DWBA calculations             
  60NI2cL (1990Fi07), except as noted.                                           
  60NI cL E(A),L(A) From 1980Va17                                                
- 60NI cL S         The normalization constant N=(d|s/d|W)(expt)/(d|s/d|W)(DWBA) 
+ 60NI cL $N: The normalization constant N=(d|s/d|W)(expt)/(d|s/d|W)(DWBA)       
  60NI  L 0.0                                           0                        
- 60NI cL $S=5.9E2 {I25}                                                         
+ 60NI cL $N=5.9E2 {I25}                                                         
  60NI cL           Configuration=(|n p{-3/2}){+2}                               
  60NI  L 1330      50                                                           
  60NI  L 2510      50                                  4                        
- 60NI cL $S=130 {I25}                                                           
+ 60NI cL $N=130 {I25}                                                           
  60NI cL           Configuration ((p3/2)(f5/2))4+                               
  60NI  L 4030      50                                                           
  60NI  L 5270      50                                  7+5                      
- 60NI cL $S=130 {I25}                                                           
+ 60NI cL $N=130 {I25}                                                           
  60NI cL           Unresolved doublet at 5.00 MeV (5-) and 5.31 MeV (7-)        
  60NI cL           Configuration ((f5/2)(g9/2))7- + ((p1/2)(g9/2))5             
  60NI cL           N=190 {I40} for pure L=7; N=440 {I80} for pure L=5           
  60NI  L 5.52E3    10                                                       A   
  60NI  L 6560      50                                  5                        
- 60NI cL $S=110 {I20}                                                           
+ 60NI cL $N=110 {I20}                                                           
  60NI cL           Configuration((f5/2)(d5/2))5-                                
  60NI  L 7770      50                                                           
  60NI  L 8150      50                                                           
@@ -11907,8 +12613,7 @@
  60NI cL E(D)      Complex level (1967Te02).                                    
  60NI cL L         From |s(|q) and analyzing power fits to DWBA and             
  60NI2cL coupled-channels calculations (1989Va02).                              
- 60NI CL S$LABEL=BL                                                             
- 60NI cL S         Deformation parameter from 1989Va02.                         
+ 60NI cL $Deformation parameter from 1989Va02.                                  
  60NI cL E(F)      configuration (f7/2){+-1}(f5/2)                              
  60NI cL           Tentative J|p and configuration from comparison of |s(|q)    
  60NI2cL and A(|q) to DWBA calculation (1986Ho15).                              
@@ -11920,26 +12625,32 @@
  60NI cL E(I)      configuration (f7/2){+-1}(f5/2)                              
  60NI cL E(J)      configuration (p3/2)(f5/2)                                   
  60NI  L 0                                                                      
- 60NI  L 1331       7                                  2        0.26      3     
- 60NI  L 2156       7                                  2        0.030     3     
+ 60NI  L 1331       7                                  2                        
+ 60NI cL $|b{-L}=0.26 {I3}                                                      
+ 60NI  L 2156       7                                  2                        
+ 60NI cL $|b{-L}=0.030 {I3}                                                     
  60NI  L 2284       7                                                           
- 60NI  L 2502       7                                  4        0.127     13    
+ 60NI  L 2502       7                                  4                        
+ 60NI cL $|b{-L}=0.127 {I13}                                                    
  60NI  L 2621       7                                                           
- 60NI  L 3119       7                                  2        0.051     5     
+ 60NI  L 3119       7                                  2                        
+ 60NI cL $|b{-L}=0.051 {I5}                                                     
  60NI  L 3187       7                                                       D   
  60NI  L 3271       7                                                           
  60NI  L 3316       7                                                           
  60NI  L 3390       7                                                           
  60NI  L 3589       7                                                           
  60NI  L 3619       7                                                           
- 60NI  L 3671       7                                  4        0.066     7     
+ 60NI  L 3671       7                                  4                        
+ 60NI cL $|b{-L}=0.066 {I7}                                                     
  60NI  L 3732       7                                                           
  60NI  L 3864       7                                                           
  60NI  L 3891       7                                                           
  60NI  L 3927       7                                                           
  60NI  L 4011       7                                                           
  60NI  L 4021       7                                                           
- 60NI  L 4042       7                                  3        0.21      2     
+ 60NI  L 4042       7                                  3                        
+ 60NI cL $|b{-L}=0.21 {I2}                                                      
  60NI  L 4082       7                                                           
  60NI  L 4116       7                                                           
  60NI  L 4169       7                                                           
@@ -12280,35 +12991,37 @@
  60NI c  For optical-model parameters from analyzing power(|q), see 1980Ha14,   
  60NI2c  and 1987Nu03.                                                          
  60NI c  Others: 1965Di09, 1971Ka32, 1974Ba78.                                  
- 60NI CL S$LABEL=BL                                                             
- 60NI cL E,L,S$From 1965Jo11, except as noted.                                  
+ 60NI cL E,L$(also |b{-L}) From 1965Jo11, except as noted.                      
  60NI cL E(A)      Probable multiplet.                                          
- 60NI cL S(B)      From 1969Jo01.                                               
- 60NI cL S(C)      From 1974Ba74.                                               
  60NI  L 0                                                                      
- 60NI  L 1330      5                                   2        0.254       B   
- 60NI cL S         others: 0.24 (1974Ba74), 0.30 (1965Jo11).                    
+ 60NI  L 1330      5                                   2                        
+ 60NI cL $|b{-L}=0.254 (1969Jo01). Others: 0.24 (1974Ba74), 0.30 (1965Jo11).    
  60NI  L 2160      10                                                           
  60NI  L 2290      10                                                           
- 60NI  L 2510      15                                  4        0.11        C   
+ 60NI  L 2510      15                                  4                        
+ 60NI cL $|b{-L}=0.11 (1974Ba74)                                                
  60NI  L 2630      15                                                           
- 60NI  L 3130      15                                  3        0.09            
+ 60NI  L 3130      15                                  3                        
+ 60NI cL $|b{-L}=0.09                                                           
  60NI cL L         there is no adopted 3- level in this energy region.          
  60NI2cL In particular, L(|a,|a')=2 for a level at 3110 keV which implies       
  60NIxcL J|p=2+                                                                 
- 60NI  L 3310      15                                  (2)      0.05            
+ 60NI  L 3310      15                                  (2)                      
+ 60NI cL $|b{-L}=0.05                                                           
  60NI  L 3380      15                                                           
  60NI  L 3700      20                                                       A   
  60NI  L 3910      20                                                           
- 60NI  L 4050      20                                  3        0.176       B   
- 60NI cL S         others: 0.17 (1974Ba74), 0.19 (1965Jo11).                    
+ 60NI  L 4050      20                                  3                        
+ 60NI cL $|b{-L}=0.176 (1969Jo01). Others: 0.17 (1974Ba74), 0.19 (1965Jo11).    
  60NI  L 4350      20                                                       A   
- 60NI  L 4530      25                                  (3)      0.06            
+ 60NI  L 4530      25                                  (3)                      
+ 60NI cL $|b{-L}=0.06                                                           
  60NI  L 4630      25                                                           
  60NI  L 4850      25                                                           
  60NI  L 5020      25                                                           
  60NI  L 5140      25                                                           
- 60NI  L 5260      25                                  (2)      0.10            
+ 60NI  L 5260      25                                  (2)                      
+ 60NI cL $|b{-L}=0.10                                                           
  60NI  L 5460      30                                                           
  60NI  L 5680      30                                                           
  60NI  L 5820      30                                                           
@@ -12331,10 +13044,11 @@
  60NI t  ({+3}He,{+3}He)   E=29.5, 35.1 MeV. Measured |s(|q) (1969Lu03).        
  60NI c  For theoretical analysis of the elastic scattering data, see 1987Tr01  
  60NI cL L         From comparison with DWBA.                                   
- 60NI CL S$LABEL=BL                                                             
  60NI  L 0                                                                      
- 60NI  L 1330                                          2        0.16            
- 60NI  L 4040                                          3        0.10            
+ 60NI  L 1330                                          2                        
+ 60NI cL $|b{-L}=0.16                                                           
+ 60NI  L 4040                                          3                        
+ 60NI cL $|b{-L}=0.10                                                           
 
  60NI    60NI(A,A')                    1982KU18,1987BA78,1985AL2413NDS    201312
  60NI  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1849 (2013)$            
@@ -12359,38 +13073,53 @@
  60NI cL L         From comparison with DWBA (1982Ku18). For E(level)>3 MeV     
  60NI2cL the peaks contain more than one level and the L-value                  
  60NI3cL given is for the dominating one.                                       
- 60NI CL S$LABEL=BL                                                             
- 60NI cL S$Determined by normalizing d|s/d|W(DWBA) to d|s/d|W(expt)             
+ 60NI cL $|b{-L} determined by normalizing d|s/d|W(DWBA) to d|s/d|W(expt)       
  60NI2cL (1982Ku18). See also other values in comments.                         
  60NI  L 0                                                                      
- 60NI  L 1330                                          2        0.200           
+ 60NI  L 1330                                          2                        
+ 60NI cL $|b{-L}=0.200                                                          
  60NI cL           |b{-2}=0.153 (1987Ba78); 0.140 {I3} or 0.171 {I3}            
  60NIxcL (1985Al24)                                                             
  60NI  L 2160                                                               A   
  60NI  L 2290                                                               A   
  60NI  L 2500                                                               A   
  60NI cL           |b{-4}=0.057 (1987Ba78); 0.05 (1985Al24)                     
- 60NI  L 3110                                          2        0.061           
+ 60NI  L 3110                                          2                        
+ 60NI cL $|b{-L}=0.061                                                          
  60NI cL           |b{-2}=0.070 (1987Ba78)                                      
- 60NI  L 3350                                          2        0.035           
- 60NI  L 3700                                          4        0.042           
- 60NI  L 4040                                          3        0.160           
+ 60NI  L 3350                                          2                        
+ 60NI cL $|b{-L}=0.035                                                          
+ 60NI  L 3700                                          4                        
+ 60NI cL $|b{-L}=0.042                                                          
+ 60NI  L 4040                                          3                        
+ 60NI cL $|b{-L}=0.160                                                          
  60NI cL           |b{-3}=0.121 (1987Ba78); 0.103 {I2} or 0.116 {I2}            
  60NIxcL (1985Al24)                                                             
  60NI cL E$1992Yo01: E=4010, |bR=0.73                                           
  60NI  L 4300                                          2+4                      
- 60NI  L 4500                                          2        0.038           
- 60NI  L 5010                                          5        0.080           
+ 60NI  L 4500                                          2                        
+ 60NI cL $|b{-L}=0.038                                                          
+ 60NI  L 5010                                          5                        
+ 60NI cL $|b{-L}=0.080                                                          
  60NI cL           |b{-5}=0.139 (1987Ba78)                                      
- 60NI  L 5110                                          4        0.072           
- 60NI  L 5250                                          2        0.047           
- 60NI  L 5390                                          3        0.049           
- 60NI  L 5600                                          3        0.062           
- 60NI  L 5800                                          2        0.041           
- 60NI  L 5980                                          5        0.035           
- 60NI  L 6160                                          3        0.072           
- 60NI  L 6340                                          2        0.046           
- 60NI  L 6530                                          3        0.038           
+ 60NI  L 5110                                          4                        
+ 60NI cL $|b{-L}=0.072                                                          
+ 60NI  L 5250                                          2                        
+ 60NI cL $|b{-L}=0.047                                                          
+ 60NI  L 5390                                          3                        
+ 60NI cL $|b{-L}=0.049                                                          
+ 60NI  L 5600                                          3                        
+ 60NI cL $|b{-L}=0.062                                                          
+ 60NI  L 5800                                          2                        
+ 60NI cL $|b{-L}=0.041                                                          
+ 60NI  L 5980                                          5                        
+ 60NI cL $|b{-L}=0.035                                                          
+ 60NI  L 6160                                          3                        
+ 60NI cL $|b{-L}=0.072                                                          
+ 60NI  L 6340                                          2                        
+ 60NI cL $|b{-L}=0.046                                                          
+ 60NI  L 6530                                          3                        
+ 60NI cL $|b{-L}=0.038                                                          
  60NI  L 7000                                                                   
  60NI cL L         L=(3,4), |b{-3}=0.063, |b{-4}=0.063 (1968In03)               
 
