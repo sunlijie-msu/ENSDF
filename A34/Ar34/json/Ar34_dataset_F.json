@@ -1,0 +1,80 @@
+{
+    "levelsTable": {
+        "levels": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 0.0,
+                    "uncertainty": {
+                        "type": "none"
+                    },
+                    "evaluatorInput": "0"
+                },
+                "feedingGammas": [
+                    0
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 2098.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 4.0
+                    },
+                    "evaluatorInput": "2098 4"
+                },
+                "emittedGammas": [
+                    0
+                ],
+                "feedingGammas": [
+                    1
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3291.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "3291 5"
+                },
+                "emittedGammas": [
+                    1
+                ]
+            }
+        ]
+    },
+    "gammasTable": {
+        "gammas": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 2098.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 4.0
+                    },
+                    "evaluatorInput": "2098 4"
+                },
+                "initialLevel": 1,
+                "finalLevel": 0
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 1193.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 2.0
+                    },
+                    "evaluatorInput": "1193 2"
+                },
+                "initialLevel": 2,
+                "finalLevel": 1
+            }
+        ]
+    }
+}

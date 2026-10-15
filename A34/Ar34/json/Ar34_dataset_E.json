@@ -1,0 +1,78 @@
+{
+    "levelsTable": {
+        "levels": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 11092.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 85.0
+                    },
+                    "evaluatorInput": "11092 85"
+                },
+                "spinParity": {
+                    "stringRepresentation": "(2+,4+)",
+                    "values": [
+                        {
+                            "twoTimesSpin": 4,
+                            "isTentativeSpin": true,
+                            "parity": "+",
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "isTentativeSpin": true,
+                            "parity": "+",
+                            "isTentativeParity": true
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 11518.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 89.0
+                    },
+                    "evaluatorInput": "11518 89"
+                },
+                "spinParity": {
+                    "stringRepresentation": "(2+)",
+                    "values": [
+                        {
+                            "twoTimesSpin": 4,
+                            "isTentativeSpin": true,
+                            "parity": "+",
+                            "isTentativeParity": true
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 12079.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 95.0
+                    },
+                    "evaluatorInput": "12079 95"
+                },
+                "spinParity": {
+                    "stringRepresentation": "(2+)",
+                    "values": [
+                        {
+                            "twoTimesSpin": 4,
+                            "isTentativeSpin": true,
+                            "parity": "+",
+                            "isTentativeParity": true
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
