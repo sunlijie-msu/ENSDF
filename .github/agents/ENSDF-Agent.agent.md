@@ -444,7 +444,7 @@ Units or percent signs are placed after the value before the uncertainty:
 
 ### File Protection Rules
 
-- **NEVER** edit `.old` files (reference files from previous evaluation rounds).
+- **NEVER** edit `.old` files (files from previous evaluation rounds).
 - **NEVER** modify first line `Identification Record` indentation or spacing in `.ens` files.
 - **NEVER** modify XREF lists (XREF entries with pattern `NUCID X` have their own specific formatting rules).
 

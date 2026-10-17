@@ -47,13 +47,6 @@ Structured Agentic Workflow: 1. Deeply understand user intent. 2. Investigate th
 
 Leverage coding, scripts, and programming tools when necessary to effectively deliver your data tasks.
 
-### Pre-Action Checklist
-
-Before creating any new file, script, or performing major operations:
-1. Check if existing tools or scripts can accomplish the task
-2. If YES: Adapt existing tool, do NOT create new script
-3. If NO: Create new script in `.github\temp` (never in ENSDF root or new/old/raw folders)
-
 ### Script Management
 
 - Always use existing ENSDF 80-column validation tools: `.github\scripts\column_calibrate.py`, `.github\scripts\ensdf_1line_ruler.py`, `.github\scripts\check_gamma_ordering.py`
