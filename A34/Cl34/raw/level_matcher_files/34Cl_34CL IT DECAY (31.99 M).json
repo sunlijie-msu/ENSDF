@@ -1,0 +1,75 @@
+{
+    "levelsTable": {
+        "levels": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 0.0,
+                    "uncertainty": {
+                        "type": "none"
+                    },
+                    "evaluatorInput": "0.0"
+                },
+                "spinParity": {
+                    "stringRepresentation": "0+",
+                    "values": [
+                        {
+                            "twoTimesSpin": 0,
+                            "parity": "+"
+                        }
+                    ]
+                },
+                "feedingGammas": [
+                    0
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 146.36,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.03
+                    },
+                    "evaluatorInput": "146.36 3"
+                },
+                "spinParity": {
+                    "stringRepresentation": "3+",
+                    "values": [
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "+"
+                        }
+                    ]
+                },
+                "emittedGammas": [
+                    0
+                ]
+            }
+        ]
+    },
+    "gammasTable": {
+        "gammas": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 146.36,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 0.03
+                    },
+                    "evaluatorInput": "146.36 3"
+                },
+                "initialLevel": 1,
+                "finalLevel": 0,
+                "intensity": {
+                    "value": 100.0,
+                    "uncertainty": {
+                        "type": "none"
+                    },
+                    "evaluatorInput": "85.79"
+                }
+            }
+        ]
+    }
+}

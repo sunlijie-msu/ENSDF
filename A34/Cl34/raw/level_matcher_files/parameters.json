@@ -1,0 +1,39 @@
+{
+    "Scoring_Config": {
+        "Energy": {
+            "Sigma_Scale": 0.6
+        },
+        "Spin": {
+            "Match_Firm": 1.0,
+            "Match_Strong": 0.8,
+            "Mismatch_Weak": 0.2,
+            "Mismatch_Strong": 0.05,
+            "Mismatch_Firm": 0.0
+        },
+        "Parity": {
+            "Match_Firm": 1.0,
+            "Match_Strong": 0.8,
+            "Mismatch_Weak": 0.05,
+            "Mismatch_Firm": 0.0
+        },
+        "Specificity": {
+            "Formula": "sqrt",
+            "Alpha": 0.5
+        },
+        "General": {
+            "Neutral_Remap_Factor": 0.85
+        },
+        "Label": {
+            "Spin_Veto_Max": 0.04,
+            "Parity_Veto_Max": 0.04
+        },
+        "Feature_Correlation": {
+            "Enabled": true,
+            "Rescue_Threshold": 0.86,
+            "Rescue_Exponent": 0.5
+        }
+    },
+    "pairwise_output_threshold": 0.01,
+    "clustering_merge_threshold": 0.15,
+    "generate_figures": true
+}

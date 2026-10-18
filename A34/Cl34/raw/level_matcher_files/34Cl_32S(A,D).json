@@ -1,0 +1,874 @@
+{
+    "levelsTable": {
+        "levels": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 165.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 40.0
+                    },
+                    "evaluatorInput": "165 40"
+                },
+                "spinParity": {
+                    "stringRepresentation": "3+",
+                    "values": [
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "+"
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 479.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 30.0
+                    },
+                    "evaluatorInput": "479 30"
+                },
+                "spinParity": {
+                    "stringRepresentation": "1+",
+                    "values": [
+                        {
+                            "twoTimesSpin": 2,
+                            "parity": "+"
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 1230.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 40.0
+                    },
+                    "evaluatorInput": "1230 40"
+                },
+                "spinParity": {
+                    "stringRepresentation": "1+,2+,3+",
+                    "values": [
+                        {
+                            "twoTimesSpin": 2,
+                            "parity": "+"
+                        },
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "+"
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "+"
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 1896.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 40.0
+                    },
+                    "evaluatorInput": "1896 40"
+                },
+                "spinParity": {
+                    "stringRepresentation": "(0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6-)",
+                    "values": [
+                        {
+                            "twoTimesSpin": 0,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 2,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 2,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 12,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 2175.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 7.0
+                    },
+                    "evaluatorInput": "2175 7"
+                },
+                "spinParity": {
+                    "stringRepresentation": "3+",
+                    "values": [
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "+"
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 2710.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 20.0
+                    },
+                    "evaluatorInput": "2710 20"
+                },
+                "spinParity": {
+                    "stringRepresentation": "2-",
+                    "values": [
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "-"
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3603.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 14.0
+                    },
+                    "evaluatorInput": "3603 14"
+                },
+                "spinParity": {
+                    "stringRepresentation": "4-",
+                    "values": [
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "-"
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4060.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 18.0
+                    },
+                    "evaluatorInput": "4060 18"
+                },
+                "spinParity": {
+                    "stringRepresentation": "4-",
+                    "values": [
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "-"
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4417.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 17.0
+                    },
+                    "evaluatorInput": "4417 17"
+                },
+                "spinParity": {
+                    "stringRepresentation": "0-,1-,2-",
+                    "values": [
+                        {
+                            "twoTimesSpin": 0,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 2,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "-"
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4665.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 40.0
+                    },
+                    "evaluatorInput": "4665 40"
+                },
+                "spinParity": {
+                    "stringRepresentation": "2-",
+                    "values": [
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "-"
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4786.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 10.0
+                    },
+                    "evaluatorInput": "4786 10"
+                },
+                "spinParity": {
+                    "stringRepresentation": "2-,3+,3-,4+,4-,5+",
+                    "values": [
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "+"
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "+"
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "+"
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4930.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 20.0
+                    },
+                    "evaluatorInput": "4930 20"
+                },
+                "spinParity": {
+                    "stringRepresentation": "1+,2+,3+",
+                    "values": [
+                        {
+                            "twoTimesSpin": 2,
+                            "parity": "+"
+                        },
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "+"
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "+"
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 5277.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 10.0
+                    },
+                    "evaluatorInput": "5277 10"
+                },
+                "spinParity": {
+                    "stringRepresentation": "5+,6+,7+",
+                    "values": [
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "+"
+                        },
+                        {
+                            "twoTimesSpin": 12,
+                            "parity": "+"
+                        },
+                        {
+                            "twoTimesSpin": 14,
+                            "parity": "+"
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 5850.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 150.0
+                    },
+                    "evaluatorInput": "5.85E3 15"
+                },
+                "spinParity": {
+                    "stringRepresentation": "(0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6-)",
+                    "values": [
+                        {
+                            "twoTimesSpin": 0,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 2,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 2,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 12,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 6300.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "6300"
+                },
+                "spinParity": {
+                    "stringRepresentation": "(0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6-)",
+                    "values": [
+                        {
+                            "twoTimesSpin": 0,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 2,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 2,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 12,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 6540.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "6540"
+                },
+                "spinParity": {
+                    "stringRepresentation": "(0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6-)",
+                    "values": [
+                        {
+                            "twoTimesSpin": 0,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 2,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 2,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 12,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 6950.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "6950"
+                },
+                "spinParity": {
+                    "stringRepresentation": "(0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6-)",
+                    "values": [
+                        {
+                            "twoTimesSpin": 0,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 2,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 2,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "+",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        },
+                        {
+                            "twoTimesSpin": 12,
+                            "parity": "-",
+                            "isTentativeSpin": true,
+                            "isTentativeParity": true
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 7350.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 20.0
+                    },
+                    "evaluatorInput": "7350 20"
+                },
+                "spinParity": {
+                    "stringRepresentation": "2-,3-,4-,5+,6+,7+",
+                    "values": [
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "+"
+                        },
+                        {
+                            "twoTimesSpin": 12,
+                            "parity": "+"
+                        },
+                        {
+                            "twoTimesSpin": 14,
+                            "parity": "+"
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 7840.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 30.0
+                    },
+                    "evaluatorInput": "7840 30"
+                },
+                "spinParity": {
+                    "stringRepresentation": "2-,3-,4-,5+,5-,6+,6-,7+",
+                    "values": [
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "+"
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 12,
+                            "parity": "+"
+                        },
+                        {
+                            "twoTimesSpin": 12,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 14,
+                            "parity": "+"
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 8390.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 20.0
+                    },
+                    "evaluatorInput": "8390 20"
+                },
+                "spinParity": {
+                    "stringRepresentation": "2-,3-,4-,5+,5-,6+,6-,7+",
+                    "values": [
+                        {
+                            "twoTimesSpin": 4,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 6,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 8,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "+"
+                        },
+                        {
+                            "twoTimesSpin": 10,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 12,
+                            "parity": "+"
+                        },
+                        {
+                            "twoTimesSpin": 12,
+                            "parity": "-"
+                        },
+                        {
+                            "twoTimesSpin": 14,
+                            "parity": "+"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
