@@ -346,7 +346,7 @@ Adopted: (1/2,3/2)
 
 *Note: When initial level has multiple Jπ values (e.g., 1/2+,3/2+), calculate allowed final states for EACH initial value separately, then take OR (union) before applying AND with other constraints.*
 
-#### `cL J$` Comment Style Rules
+#### `cL J$` Comment Rules
 
 When writing primary transition lists in `cL J$` comments:
 
@@ -354,4 +354,4 @@ When writing primary transition lists in `cL J$` comments:
 2. List transitions in descending order of intensity, with the strongest first, to reflect the most probable deexcitation paths. If there are γ transitions to final levels with the same Jπ, include only the strongest one for that Jπ, as this is sufficient for Jπ deduction.
 3. Example for one γ transition: `cL J$<E_gamma1>|g to <Jπ1> g.s.` Wrap between words, but keep a level energy with its `level` designator.
 4. Example for multiple γ transitions: `cL J$<E_gamma1>|g to <Jπ1> g.s.; <E_gamma2>|g to <Jπ2>, <E_level2>; <E_gamma3>|g to <Jπ3>, <E_level3>.` One list, `;` between transitions, one final period: no `,` or `and` between transitions, and no period before the last one. Or, with specified intensities: `cL J$transitions with I|g>10: <E_gamma1>|g to <Jπ1> <E_level1>; <E_gamma2>|g to <Jπ2>, <E_level2>.` Or, with specified multipolarities: `cL J$<E_gamma1>|g, D(+Q), to <Jπ1>, <E_level1>; <E_gamma2>|g, D(+Q), to <Jπ2>, <E_level2>.`
-5. List the γ transitions separately from other existing Jπ arguments with periods. Example: `cL J$spin=<J1:J2> from |g(|q) in <dataset>. <E_gamma1>|g to <Jπ1>, <E_level1>; <E_gamma2>|g to <Jπ2> g.s.; <E_gamma3>|g to <Jπ3>, <E_level3>.`
+5. List the γ transitions separately from other existing Jπ arguments with periods. Example: `cL J$<E_gamma1>|g to <Jπ1>, <E_level1>; <E_gamma2>|g to <Jπ2> g.s.; <E_gamma3>|g to <Jπ3>, <E_level3>. spin=<J1:J2> from |g(|q) in <dataset>. L=<L-transfer> from <Jπ_target> in <dataset>.`

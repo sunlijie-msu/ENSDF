@@ -13,4 +13,5 @@ ENSDF 80-column record/field definitions, structural rules, column positions, un
 4. Give each record `XREF=<letter>` plus its comments in `E$`, `J$`, `T$`, `S$`, general order. When a dataset matches exactly one record, keep `Letter(energy)` there and delete that label from all siblings - no `(*)` residue; retain `(energy*)`/`(?)` only where ambiguity truly survives.
 5. Re-label every sibling that shared the old label, not just the record being split.
 6. Validate each edited line, then column calibration and gamma ordering; edit in place, never scripts.
-**Pitfall** - verify ownership against the source datasets themselves; merge files and predicted match lists are only secondary hints - a match list covers only the datasets submitted to it, so its silence about another dataset is not evidence either way. Col-77 flags declared in the top general-comment section are global, not orphans. Reload anchors before editing (partners share XREF text); re-measure every edited line's length after each edit, since padding may be lost; ` 34S  d` delimiter lines trigger a spurious type error in the one-line ruler. Inverse: `.github/skills/group-adopted-levels/SKILL.md`.
+
+Inverse: `.github/skills/group-adopted-levels/SKILL.md`.
