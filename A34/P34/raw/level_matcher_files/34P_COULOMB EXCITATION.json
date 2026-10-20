@@ -1,0 +1,91 @@
+{
+    "levelsTable": {
+        "levels": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 0.0,
+                    "uncertainty": {
+                        "type": "none"
+                    },
+                    "evaluatorInput": "0"
+                },
+                "feedingGammas": [
+                    0
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 422.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 7.0
+                    },
+                    "evaluatorInput": "422 7"
+                },
+                "emittedGammas": [
+                    0
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 1608.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "1608"
+                },
+                "feedingGammas": [
+                    1
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 2235.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 9.0
+                    },
+                    "evaluatorInput": "2235 9"
+                },
+                "emittedGammas": [
+                    1
+                ]
+            }
+        ]
+    },
+    "gammasTable": {
+        "gammas": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 422.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 7.0
+                    },
+                    "evaluatorInput": "422 7"
+                },
+                "initialLevel": 1,
+                "finalLevel": 0
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 627.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 9.0
+                    },
+                    "evaluatorInput": "627 9"
+                },
+                "initialLevel": 3,
+                "finalLevel": 2
+            }
+        ]
+    }
+}

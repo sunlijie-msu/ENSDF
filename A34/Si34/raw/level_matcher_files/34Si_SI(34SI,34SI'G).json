@@ -1,0 +1,80 @@
+{
+    "levelsTable": {
+        "levels": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 0.0,
+                    "uncertainty": {
+                        "type": "none"
+                    },
+                    "evaluatorInput": "0"
+                },
+                "feedingGammas": [
+                    0
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3330.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 50.0
+                    },
+                    "evaluatorInput": "3330 50"
+                },
+                "emittedGammas": [
+                    0
+                ],
+                "feedingGammas": [
+                    1
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4270.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 71.0
+                    },
+                    "evaluatorInput": "4270 71"
+                },
+                "emittedGammas": [
+                    1
+                ]
+            }
+        ]
+    },
+    "gammasTable": {
+        "gammas": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3330.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 50.0
+                    },
+                    "evaluatorInput": "3330 50"
+                },
+                "initialLevel": 1,
+                "finalLevel": 0
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 940.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 50.0
+                    },
+                    "evaluatorInput": "940 50"
+                },
+                "initialLevel": 2,
+                "finalLevel": 1
+            }
+        ]
+    }
+}

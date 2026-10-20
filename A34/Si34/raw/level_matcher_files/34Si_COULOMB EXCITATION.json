@@ -1,0 +1,50 @@
+{
+    "levelsTable": {
+        "levels": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 0.0,
+                    "uncertainty": {
+                        "type": "none"
+                    },
+                    "evaluatorInput": "0"
+                },
+                "feedingGammas": [
+                    0
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3305.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 55.0
+                    },
+                    "evaluatorInput": "3305 55"
+                },
+                "emittedGammas": [
+                    0
+                ]
+            }
+        ]
+    },
+    "gammasTable": {
+        "gammas": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3305.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 55.0
+                    },
+                    "evaluatorInput": "3305 55"
+                },
+                "initialLevel": 1,
+                "finalLevel": 0
+            }
+        ]
+    }
+}

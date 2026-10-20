@@ -1,0 +1,307 @@
+{
+    "levelsTable": {
+        "levels": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 0.0,
+                    "uncertainty": {
+                        "type": "none"
+                    },
+                    "evaluatorInput": "0"
+                },
+                "feedingGammas": [
+                    0,
+                    2,
+                    8
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3326.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "3326"
+                },
+                "emittedGammas": [
+                    0
+                ],
+                "feedingGammas": [
+                    1,
+                    4,
+                    6,
+                    7,
+                    9
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4256.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "4256"
+                },
+                "emittedGammas": [
+                    1,
+                    2
+                ],
+                "feedingGammas": [
+                    3
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4379.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "4379"
+                },
+                "emittedGammas": [
+                    3
+                ],
+                "feedingGammas": [
+                    5
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4519.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "4519"
+                },
+                "emittedGammas": [
+                    4
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4970.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "4970"
+                },
+                "emittedGammas": [
+                    5
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 5041.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "5041"
+                },
+                "emittedGammas": [
+                    6
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 5330.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "5330"
+                },
+                "spinParity": {
+                    "stringRepresentation": "(2)+",
+                    "values": [
+                        {
+                            "twoTimesSpin": 4,
+                            "isTentativeSpin": true,
+                            "parity": "+"
+                        }
+                    ]
+                },
+                "emittedGammas": [
+                    7,
+                    8
+                ]
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 6022.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "6022"
+                },
+                "emittedGammas": [
+                    9
+                ]
+            }
+        ]
+    },
+    "gammasTable": {
+        "gammas": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 3326.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "3326"
+                },
+                "initialLevel": 1,
+                "finalLevel": 0
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 929.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "929"
+                },
+                "initialLevel": 2,
+                "finalLevel": 1
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 4255.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "4255"
+                },
+                "initialLevel": 2,
+                "finalLevel": 0
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 125.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "125"
+                },
+                "initialLevel": 3,
+                "finalLevel": 2
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 1193.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "1193"
+                },
+                "initialLevel": 4,
+                "finalLevel": 1
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 591.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "591"
+                },
+                "initialLevel": 5,
+                "finalLevel": 3
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 1715.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "1715"
+                },
+                "initialLevel": 6,
+                "finalLevel": 1
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 2000.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 20.0
+                    },
+                    "evaluatorInput": "2000"
+                },
+                "initialLevel": 7,
+                "finalLevel": 1,
+                "intensity": {
+                    "value": 59.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 9.0
+                    },
+                    "evaluatorInput": "59 9"
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 5330.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 20.0
+                    },
+                    "evaluatorInput": "5330"
+                },
+                "initialLevel": 7,
+                "finalLevel": 0,
+                "intensity": {
+                    "value": 100.0,
+                    "uncertainty": {
+                        "type": "none"
+                    },
+                    "evaluatorInput": "100"
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 2696.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 5.0
+                    },
+                    "evaluatorInput": "2696"
+                },
+                "initialLevel": 8,
+                "finalLevel": 1
+            }
+        ]
+    }
+}

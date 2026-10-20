@@ -1,0 +1,47 @@
+{
+    "levelsTable": {
+        "levels": [
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 0.0,
+                    "uncertainty": {
+                        "type": "none"
+                    },
+                    "evaluatorInput": "0"
+                },
+                "spinParity": {
+                    "stringRepresentation": "0+",
+                    "values": [
+                        {
+                            "twoTimesSpin": 0,
+                            "parity": "+"
+                        }
+                    ]
+                }
+            },
+            {
+                "energy": {
+                    "unit": "keV",
+                    "value": 5330.0,
+                    "uncertainty": {
+                        "type": "symmetric",
+                        "value": 50.0
+                    },
+                    "evaluatorInput": "5330 50"
+                },
+                "spinParity": {
+                    "stringRepresentation": "(2+)",
+                    "values": [
+                        {
+                            "twoTimesSpin": 4,
+                            "isTentativeSpin": true,
+                            "parity": "+",
+                            "isTentativeParity": true
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
