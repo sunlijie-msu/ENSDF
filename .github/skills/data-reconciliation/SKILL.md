@@ -38,8 +38,6 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 
 ### Special Handling
 
-- `[ ]` [describe non-standard cases]
-- `[ ]` `From the Adopted Levels` pattern: global cG/cL provenance comments referencing adopted dataset — extract data into target record fields according to the provenance comment. If a piece of data is not present in the source, do not create one in the target.
 - `[ ]` Revision/errata source (referee response, corrected table): apply only revisions that land in an existing target field; source columns with no target counterpart (e.g., a gamma's final-state spin) confirm, but never alter, the matched level's own Jπ.
 
 ## Recommended Operating Procedure:
