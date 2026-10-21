@@ -21,7 +21,7 @@ Actively leverage coding, scripts, and programming tools when necessary to effec
 - Target: `[path to target .ens file]`
 
 ### Field Mapping *(source → ENS)*
-
+- Scope: which data records / comments
 - `[Data A]` → `[record type]` `[field name]`
 - `[Data B]` → `[record type]` `[field name]`
 - `[Data C]` → `[record type]` `[comment]`

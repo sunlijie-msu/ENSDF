@@ -23,7 +23,7 @@ ENSDF 80-column data record and field definitions, structural rules, column posi
 - `[Data C]` → `[record type]` `[comment]`
 
 ### Matching
-
+- Scope: which data records / comments
 - L-records: `[ ]` exact E  `[ ]` E within ±[N] keV
 - G-records: `[ ]` exact Eγ  `[ ]` Eγ within ±[N] keV  `[ ]` matching parent Level first, matching then γ
 
