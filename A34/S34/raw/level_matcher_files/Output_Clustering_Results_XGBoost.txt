@@ -1,6 +1,5 @@
 === FINAL CLUSTERING RESULTS: XGBoost (Merge Threshold: >=15%) ===
-Total Clusters: 130
-=== FINAL CLUSTERING RESULTS (XGBoost) ===
+Total Clusters: 127
 
 Cluster 1:
   Anchor: L_0 | E=0.0±0.0 keV | Spin-Parity=0+
@@ -285,7 +284,7 @@ Cluster 56:
 Cluster 57:
   Anchor: Q_11411 | E=11411.3±0.1 keV | Spin-Parity=2+
   Members:
-    [L] L_11405: E=11405.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 23.9%)
+    [L] L_11405: E=11405.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 21.0%)
     [Q] Q_11411: E=11411.3±0.1 keV, Spin-Parity=2+ (Anchor)
 
 Cluster 58:
@@ -296,7 +295,7 @@ Cluster 58:
 Cluster 59:
   Anchor: Q_11430 | E=11430.3±0.5 keV | Spin-Parity=2+
   Members:
-    [L] L_11435: E=11435.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 29.0%)
+    [L] L_11435: E=11435.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 25.8%)
     [Q] Q_11430: E=11430.3±0.5 keV, Spin-Parity=2+ (Anchor)
 
 Cluster 60:
@@ -308,391 +307,372 @@ Cluster 60:
 Cluster 61:
   Anchor: Q_11440 | E=11440.4±0.5 keV | Spin-Parity=3-
   Members:
-    [L] L_11435: E=11435.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 25.8%)
+    [L] L_11435: E=11435.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 23.9%)
     [Q] Q_11440: E=11440.4±0.5 keV, Spin-Parity=3- (Anchor)
 
 Cluster 62:
-  Anchor: Q_11434 | E=11434.3±0.5 keV | Spin-Parity=2-
-  Members:
-    [L] L_11444: E=11444.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 17.3%)
-    [Q] Q_11434: E=11434.3±0.5 keV, Spin-Parity=2- (Anchor)
-
-Cluster 63:
   Anchor: Q_11440 | E=11440.4±0.5 keV | Spin-Parity=3-
   Members:
-    [L] L_11444: E=11444.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 31.7%)
+    [L] L_11444: E=11444.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 29.7%)
     [Q] Q_11440: E=11440.4±0.5 keV, Spin-Parity=3- (Anchor)
 
+Cluster 63:
+  Anchor: Q_11448 | E=11448.1±0.5 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
+  Members:
+    [L] L_11444: E=11444.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 28.3%)
+    [Q] Q_11448: E=11448.1±0.5 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
+
 Cluster 64:
-  Anchor: Q_11448 | E=11448.1±0.5 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
-  Members:
-    [L] L_11444: E=11444.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 30.6%)
-    [Q] Q_11448: E=11448.1±0.5 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
-
-Cluster 65:
-  Anchor: Q_11448 | E=11448.1±0.5 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
-  Members:
-    [L] L_11458: E=11458.0±5.0 keV, Spin-Parity=3- (Match Probability: 15.3%)
-    [Q] Q_11448: E=11448.1±0.5 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
-
-Cluster 66:
   Anchor: Q_11469 | E=11469.2±0.5 keV | Spin-Parity=3-
   Members:
-    [L] L_11458: E=11458.0±5.0 keV, Spin-Parity=3- (Match Probability: 46.5%)
+    [L] L_11458: E=11458.0±5.0 keV, Spin-Parity=3- (Match Probability: 27.2%)
     [Q] Q_11469: E=11469.2±0.5 keV, Spin-Parity=3- (Anchor)
 
-Cluster 67:
+Cluster 65:
   Anchor: Q_11467 | E=11467.8±0.5 keV | Spin-Parity=2+
   Members:
     [Q] Q_11467: E=11467.8±0.5 keV, Spin-Parity=2+ (Anchor)
 
-Cluster 68:
+Cluster 66:
   Anchor: Q_11474 | E=11474.6±0.5 keV | Spin-Parity=2-
   Members:
-    [L] L_11473: E=11473.0±5.0 keV, Spin-Parity=1- (Match Probability: 17.4%)
+    [L] L_11473: E=11473.0±5.0 keV, Spin-Parity=1- (Match Probability: 17.2%)
     [Q] Q_11474: E=11474.6±0.5 keV, Spin-Parity=2- (Anchor)
 
+Cluster 67:
+  Anchor: Q_11486 | E=11486.0±0.5 keV | Spin-Parity=1-
+  Members:
+    [L] L_11473: E=11473.0±5.0 keV, Spin-Parity=1- (Match Probability: 18.4%)
+    [Q] Q_11486: E=11486.0±0.5 keV, Spin-Parity=1- (Anchor)
+
+Cluster 68:
+  Anchor: Q_11486 | E=11486.0±0.5 keV | Spin-Parity=1-
+  Members:
+    [L] L_11490: E=11490.0±5.0 keV, Spin-Parity=1- (Match Probability: 83.4%)
+    [Q] Q_11486: E=11486.0±0.5 keV, Spin-Parity=1- (Anchor)
+
 Cluster 69:
-  Anchor: Q_11486 | E=11486.0±0.5 keV | Spin-Parity=1-
-  Members:
-    [L] L_11473: E=11473.0±5.0 keV, Spin-Parity=1- (Match Probability: 32.1%)
-    [Q] Q_11486: E=11486.0±0.5 keV, Spin-Parity=1- (Anchor)
-
-Cluster 70:
-  Anchor: Q_11486 | E=11486.0±0.5 keV | Spin-Parity=1-
-  Members:
-    [L] L_11490: E=11490.0±5.0 keV, Spin-Parity=1- (Match Probability: 85.3%)
-    [Q] Q_11486: E=11486.0±0.5 keV, Spin-Parity=1- (Anchor)
-
-Cluster 71:
   Anchor: Q_11492 | E=11492.7±0.5 keV | Spin-Parity=2-
   Members:
-    [L] L_11490: E=11490.0±5.0 keV, Spin-Parity=1- (Match Probability: 15.9%)
+    [L] L_11490: E=11490.0±5.0 keV, Spin-Parity=1- (Match Probability: 15.4%)
     [Q] Q_11492: E=11492.7±0.5 keV, Spin-Parity=2- (Anchor)
 
-Cluster 72:
+Cluster 70:
   Anchor: Q_11499 | E=11499.6±0.5 keV | Spin-Parity=1-
   Members:
-    [L] L_11490: E=11490.0±5.0 keV, Spin-Parity=1- (Match Probability: 62.6%)
+    [L] L_11490: E=11490.0±5.0 keV, Spin-Parity=1- (Match Probability: 39.6%)
     [Q] Q_11499: E=11499.6±0.5 keV, Spin-Parity=1- (Anchor)
 
-Cluster 73:
+Cluster 71:
   Anchor: Q_11496 | E=11496.2±0.5 keV | Spin-Parity=2+
   Members:
     [Q] Q_11496: E=11496.2±0.5 keV, Spin-Parity=2+ (Anchor)
 
+Cluster 72:
+  Anchor: Q_11502 | E=11502.9±0.5 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
+  Members:
+    [L] L_11490: E=11490.0±5.0 keV, Spin-Parity=1- (Match Probability: 6.0%)
+    [Q] Q_11502: E=11502.9±0.5 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
+
+Cluster 73:
+  Anchor: Q_11499 | E=11499.6±0.5 keV | Spin-Parity=1-
+  Members:
+    [L] L_11506: E=11506.0±5.0 keV, Spin-Parity=(1-) (Match Probability: 45.3%)
+    [Q] Q_11499: E=11499.6±0.5 keV, Spin-Parity=1- (Anchor)
+
 Cluster 74:
   Anchor: Q_11502 | E=11502.9±0.5 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
   Members:
-    [L] L_11490: E=11490.0±5.0 keV, Spin-Parity=1- (Match Probability: 10.1%)
+    [L] L_11506: E=11506.0±5.0 keV, Spin-Parity=(1-) (Match Probability: 31.1%)
     [Q] Q_11502: E=11502.9±0.5 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
 
 Cluster 75:
-  Anchor: Q_11499 | E=11499.6±0.5 keV | Spin-Parity=1-
-  Members:
-    [L] L_11506: E=11506.0±5.0 keV, Spin-Parity=(1-) (Match Probability: 55.7%)
-    [Q] Q_11499: E=11499.6±0.5 keV, Spin-Parity=1- (Anchor)
-
-Cluster 76:
-  Anchor: Q_11502 | E=11502.9±0.5 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
-  Members:
-    [L] L_11506: E=11506.0±5.0 keV, Spin-Parity=(1-) (Match Probability: 32.8%)
-    [Q] Q_11502: E=11502.9±0.5 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
-
-Cluster 77:
   Anchor: Q_11515 | E=11515.3±0.5 keV | Spin-Parity=2-
   Members:
-    [L] L_11506: E=11506.0±5.0 keV, Spin-Parity=(1-) (Match Probability: 15.6%)
     [Q] Q_11515: E=11515.3±0.5 keV, Spin-Parity=2- (Anchor)
 
-Cluster 78:
+Cluster 76:
   Anchor: L_11545 | E=11545.0±5.0 keV | Spin-Parity=1-
   Members:
     [L] L_11545: E=11545.0±5.0 keV, Spin-Parity=1- (Anchor)
-    [Q] Q_11541: E=11541.0±5.0 keV, Spin-Parity=1- (Match Probability: 88.9%)
+    [Q] Q_11541: E=11541.0±5.0 keV, Spin-Parity=1- (Match Probability: 87.3%)
 
-Cluster 79:
+Cluster 77:
   Anchor: Q_11544 | E=11544.0±5.0 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
   Members:
     [L] L_11545: E=11545.0±5.0 keV, Spin-Parity=1- (Match Probability: 34.6%)
     [Q] Q_11544: E=11544.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
 
-Cluster 80:
+Cluster 78:
   Anchor: Q_11546 | E=11546.0±5.0 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
   Members:
     [L] L_11545: E=11545.0±5.0 keV, Spin-Parity=1- (Match Probability: 34.6%)
     [Q] Q_11546: E=11546.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
 
-Cluster 81:
+Cluster 79:
   Anchor: Q_11551 | E=11551.0±5.0 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
   Members:
-    [L] L_11545: E=11545.0±5.0 keV, Spin-Parity=1- (Match Probability: 30.4%)
+    [L] L_11545: E=11545.0±5.0 keV, Spin-Parity=1- (Match Probability: 27.7%)
     [Q] Q_11551: E=11551.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
 
-Cluster 82:
+Cluster 80:
   Anchor: Q_11564 | E=11564.0±5.0 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
   Members:
     [Q] Q_11564: E=11564.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
 
-Cluster 83:
+Cluster 81:
   Anchor: Q_11575 | E=11575.0±5.0 keV | Spin-Parity=(0-)
   Members:
     [Q] Q_11575: E=11575.0±5.0 keV, Spin-Parity=(0-) (Anchor)
 
-Cluster 84:
+Cluster 82:
   Anchor: Q_11581 | E=11581.0±5.0 keV | Spin-Parity=2-
   Members:
     [Q] Q_11581: E=11581.0±5.0 keV, Spin-Parity=2- (Anchor)
 
-Cluster 85:
+Cluster 83:
   Anchor: Q_11590 | E=11590.0±5.0 keV | Spin-Parity=2-
   Members:
     [Q] Q_11590: E=11590.0±5.0 keV, Spin-Parity=2- (Anchor)
 
-Cluster 86:
+Cluster 84:
   Anchor: Q_11608 | E=11608.0±5.0 keV | Spin-Parity=3-
   Members:
-    [L] L_11619: E=11619.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 21.0%)
+    [L] L_11619: E=11619.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 18.2%)
     [Q] Q_11608: E=11608.0±5.0 keV, Spin-Parity=3- (Anchor)
 
-Cluster 87:
+Cluster 85:
   Anchor: Q_11610 | E=11610.0±5.0 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
   Members:
-    [L] L_11619: E=11619.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 23.9%)
+    [L] L_11619: E=11619.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 21.0%)
     [Q] Q_11610: E=11610.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
 
-Cluster 88:
+Cluster 86:
   Anchor: Q_11614 | E=11614.0±5.0 keV | Spin-Parity=3-
   Members:
-    [L] L_11619: E=11619.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 31.7%)
+    [L] L_11619: E=11619.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 29.7%)
     [Q] Q_11614: E=11614.0±5.0 keV, Spin-Parity=3- (Anchor)
 
-Cluster 89:
+Cluster 87:
   Anchor: L_11619 | E=11619.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_11619: E=11619.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
-    [Q] Q_11622: E=11622.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 33.8%)
+    [Q] Q_11622: E=11622.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 33.3%)
 
-Cluster 90:
+Cluster 88:
   Anchor: Q_11626 | E=11626.0±5.0 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
   Members:
-    [L] L_11619: E=11619.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 28.6%)
+    [L] L_11619: E=11619.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 25.8%)
     [Q] Q_11626: E=11626.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
 
-Cluster 91:
-  Anchor: L_11619 | E=11619.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
+Cluster 89:
+  Anchor: L_11637 | E=11637.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
-    [L] L_11619: E=11619.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
-    [Q] Q_11632: E=11632.0±5.0 keV, Spin-Parity=2+ (Match Probability: 18.2%)
+    [L] L_11637: E=11637.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
+    [Q] Q_11626: E=11626.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 18.2%)
+
+Cluster 90:
+  Anchor: Q_11632 | E=11632.0±5.0 keV | Spin-Parity=2+
+  Members:
+    [L] L_11637: E=11637.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 29.7%)
+    [Q] Q_11632: E=11632.0±5.0 keV, Spin-Parity=2+ (Anchor)
+
+Cluster 91:
+  Anchor: Q_11634 | E=11634.0±5.0 keV | Spin-Parity=0+
+  Members:
+    [L] L_11637: E=11637.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 33.3%)
+    [Q] Q_11634: E=11634.0±5.0 keV, Spin-Parity=0+ (Anchor)
 
 Cluster 92:
   Anchor: L_11637 | E=11637.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_11637: E=11637.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
-    [Q] Q_11626: E=11626.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 21.0%)
+    [Q] Q_11639: E=11639.0±5.0 keV, Spin-Parity=3- (Match Probability: 34.0%)
 
 Cluster 93:
-  Anchor: Q_11632 | E=11632.0±5.0 keV | Spin-Parity=2+
-  Members:
-    [L] L_11637: E=11637.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 31.7%)
-    [Q] Q_11632: E=11632.0±5.0 keV, Spin-Parity=2+ (Anchor)
-
-Cluster 94:
-  Anchor: Q_11634 | E=11634.0±5.0 keV | Spin-Parity=0+
-  Members:
-    [L] L_11637: E=11637.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 33.8%)
-    [Q] Q_11634: E=11634.0±5.0 keV, Spin-Parity=0+ (Anchor)
-
-Cluster 95:
-  Anchor: L_11637 | E=11637.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
-  Members:
-    [L] L_11637: E=11637.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
-    [Q] Q_11639: E=11639.0±5.0 keV, Spin-Parity=3- (Match Probability: 34.3%)
-
-Cluster 96:
   Anchor: Q_11649 | E=11649.0±5.0 keV | Spin-Parity=3-
   Members:
-    [L] L_11637: E=11637.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 19.2%)
+    [L] L_11637: E=11637.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 15.3%)
     [Q] Q_11649: E=11649.0±5.0 keV, Spin-Parity=3- (Anchor)
 
-Cluster 97:
+Cluster 94:
   Anchor: L_11643 | E=11643.0±5.0 keV | Spin-Parity=1-
   Members:
     [L] L_11643: E=11643.0±5.0 keV, Spin-Parity=1- (Anchor)
 
-Cluster 98:
+Cluster 95:
   Anchor: Q_11669 | E=11669.0±5.0 keV | Spin-Parity=2-
   Members:
     [L] L_11670: E=11670.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 34.6%)
     [Q] Q_11669: E=11669.0±5.0 keV, Spin-Parity=2- (Anchor)
 
-Cluster 99:
+Cluster 96:
   Anchor: L_11670 | E=11670.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_11670: E=11670.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
     [Q] Q_11670: E=11670.0±5.0 keV, Spin-Parity=1+ (Match Probability: 34.8%)
 
-Cluster 100:
+Cluster 97:
   Anchor: Q_11704 | E=11704.0±5.0 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
   Members:
-    [L] L_11712: E=11712.0±5.0 keV, Spin-Parity=1- (Match Probability: 25.8%)
+    [L] L_11712: E=11712.0±5.0 keV, Spin-Parity=1- (Match Probability: 22.5%)
     [Q] Q_11704: E=11704.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
 
-Cluster 101:
+Cluster 98:
   Anchor: Q_11706 | E=11706.0±5.0 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
   Members:
-    [L] L_11712: E=11712.0±5.0 keV, Spin-Parity=1- (Match Probability: 30.4%)
+    [L] L_11712: E=11712.0±5.0 keV, Spin-Parity=1- (Match Probability: 27.7%)
     [Q] Q_11706: E=11706.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
 
-Cluster 102:
+Cluster 99:
   Anchor: L_11712 | E=11712.0±5.0 keV | Spin-Parity=1-
   Members:
     [L] L_11712: E=11712.0±5.0 keV, Spin-Parity=1- (Anchor)
-    [Q] Q_11717: E=11717.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 31.7%)
+    [Q] Q_11717: E=11717.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 29.7%)
 
-Cluster 103:
+Cluster 100:
   Anchor: L_11751 | E=11751.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_11751: E=11751.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
-    [Q] Q_11744: E=11744.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 28.6%)
+    [Q] Q_11744: E=11744.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 25.8%)
 
-Cluster 104:
+Cluster 101:
   Anchor: Q_11773 | E=11773.0±5.0 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
   Members:
     [Q] Q_11773: E=11773.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
 
-Cluster 105:
+Cluster 102:
   Anchor: L_11790 | E=11790.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_11790: E=11790.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
-    [Q] Q_11785: E=11785.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 31.7%)
+    [Q] Q_11785: E=11785.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 29.7%)
 
-Cluster 106:
+Cluster 103:
   Anchor: Q_11796 | E=11796.0±5.0 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
   Members:
-    [L] L_11790: E=11790.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 30.4%)
+    [L] L_11790: E=11790.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Match Probability: 27.7%)
     [Q] Q_11796: E=11796.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
 
-Cluster 107:
+Cluster 104:
   Anchor: Q_11829 | E=11829.0±5.0 keV | Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-)
   Members:
     [Q] Q_11829: E=11829.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Anchor)
 
-Cluster 108:
+Cluster 105:
   Anchor: L_11850 | E=11850.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_11850: E=11850.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
 
-Cluster 109:
+Cluster 106:
   Anchor: L_11859 | E=11859.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_11859: E=11859.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
-    [Q] Q_11870: E=11870.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 21.0%)
+    [Q] Q_11870: E=11870.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 18.2%)
 
-Cluster 110:
+Cluster 107:
   Anchor: L_11867 | E=11867.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_11867: E=11867.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
-    [Q] Q_11870: E=11870.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 33.8%)
+    [Q] Q_11870: E=11870.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 33.3%)
 
-Cluster 111:
+Cluster 108:
   Anchor: L_11878 | E=11878.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_11878: E=11878.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
-    [Q] Q_11870: E=11870.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 25.8%)
+    [Q] Q_11870: E=11870.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 22.5%)
 
-Cluster 112:
+Cluster 109:
   Anchor: L_11908 | E=11908.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_11908: E=11908.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
 
-Cluster 113:
+Cluster 110:
   Anchor: L_11922 | E=11922.0±5.0 keV | Spin-Parity=(3-)
   Members:
     [L] L_11922: E=11922.0±5.0 keV, Spin-Parity=(3-) (Anchor)
 
-Cluster 114:
+Cluster 111:
   Anchor: L_11932 | E=11932.0±5.0 keV | Spin-Parity=1-
   Members:
     [L] L_11932: E=11932.0±5.0 keV, Spin-Parity=1- (Anchor)
 
-Cluster 115:
+Cluster 112:
   Anchor: L_11957 | E=11957.0±5.0 keV | Spin-Parity=3-
   Members:
     [L] L_11957: E=11957.0±5.0 keV, Spin-Parity=3- (Anchor)
-    [Q] Q_11949: E=11949.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 25.8%)
+    [Q] Q_11949: E=11949.0±5.0 keV, Spin-Parity=(0+,0-,1+,1-,2+,2-,3+,3-,4+,4-,5+,5-,6+,6-,7-) (Match Probability: 22.5%)
 
-Cluster 116:
+Cluster 113:
   Anchor: L_11979 | E=11979.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_11979: E=11979.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
 
-Cluster 117:
+Cluster 114:
   Anchor: L_12034 | E=12034.0±5.0 keV | Spin-Parity=1-
   Members:
     [L] L_12034: E=12034.0±5.0 keV, Spin-Parity=1- (Anchor)
 
-Cluster 118:
+Cluster 115:
   Anchor: L_12063 | E=12063.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_12063: E=12063.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
 
-Cluster 119:
+Cluster 116:
   Anchor: L_12077 | E=12077.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_12077: E=12077.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
 
-Cluster 120:
+Cluster 117:
   Anchor: L_12100 | E=12100.0±5.0 keV | Spin-Parity=1-
   Members:
     [L] L_12100: E=12100.0±5.0 keV, Spin-Parity=1- (Anchor)
 
-Cluster 121:
+Cluster 118:
   Anchor: L_12137 | E=12137.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_12137: E=12137.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
 
-Cluster 122:
+Cluster 119:
   Anchor: L_12151 | E=12151.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_12151: E=12151.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
 
-Cluster 123:
+Cluster 120:
   Anchor: L_12165 | E=12165.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_12165: E=12165.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
 
-Cluster 124:
+Cluster 121:
   Anchor: L_12173 | E=12173.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_12173: E=12173.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
 
-Cluster 125:
+Cluster 122:
   Anchor: L_12194 | E=12194.0±5.0 keV | Spin-Parity=1-
   Members:
     [L] L_12194: E=12194.0±5.0 keV, Spin-Parity=1- (Anchor)
 
-Cluster 126:
+Cluster 123:
   Anchor: L_12224 | E=12224.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_12224: E=12224.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
 
-Cluster 127:
+Cluster 124:
   Anchor: L_12243 | E=12243.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_12243: E=12243.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
 
-Cluster 128:
+Cluster 125:
   Anchor: L_12256 | E=12256.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_12256: E=12256.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
 
-Cluster 129:
+Cluster 126:
   Anchor: L_12271 | E=12271.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_12271: E=12271.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
 
-Cluster 130:
+Cluster 127:
   Anchor: L_12281 | E=12281.0±5.0 keV | Spin-Parity=(0+,1-,2+,3-,4+,5-)
   Members:
     [L] L_12281: E=12281.0±5.0 keV, Spin-Parity=(0+,1-,2+,3-,4+,5-) (Anchor)
