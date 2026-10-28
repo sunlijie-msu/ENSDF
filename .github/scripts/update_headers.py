@@ -20,7 +20,7 @@ import os
 import re
 import sys
 
-DEFAULTS = {"version": "202609", "author": "LIJIE SUN AND JUN CHEN", "cut": "30-Sep-2026"}
+DEFAULTS = {"version": "202709", "author": "LIJIE SUN AND JUN CHEN", "cut": "30-Sep-2027"}
 NUCID_RE = re.compile(r"^ ?\d{1,3}[A-Z][A-Za-z]? ?$")
 SOURCE_EXTS = (".old", ".xundl")
 
