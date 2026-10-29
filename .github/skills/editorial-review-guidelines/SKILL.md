@@ -21,7 +21,8 @@ Column/field rules: `.github/agents/ENSDF-Agent.agent.md`. Spot-check policy: `.
 
 ### 1. ENSDF Notation
 
-- **Superscript/subscript:** Symbol outside braces. Wrong: `{+13C}` → Correct: `{+13}C`. Detection regex (correct form): `{+[0-9]+}[A-Z][a-z]?`
+- **Superscript/subscript:** Symbol outside braces. Wrong: `{+13C}` → Correct: `{+13}C`. Detection regex (correct form): `{+[0-9]+}[A-Z][a-z]?`. Also scan `\{\d{1,3}\}[A-Za-z]` for a braced isotope missing `+` (`{14}C` → `{+14}C`).
+- **Identifier terminator:** Identifier must end with `$`; padded identifiers (`cG RI        weak |g`) are a defect → `cG RI$weak |g`.
 - **Plain isotope tokens:** Wrong: `3He`, `36S(d,3He)` → Correct: `{+3}He`, `{+36}S(d,{+3}He)`. Scan: `(?<!\{\+)\b\d{1,3}[A-Z][a-z]?\b`; keep valid element symbols; exclude tokens followed by `|` (e.g., `2I|g`). **Mandatory:** after the regex scan, manually review every remaining candidate — regex misses tokens in dense prose.
 - **Missing `{I}` on uncertainty:** Comment uncertainties require `{In}` or `{I+n-m}`. Three patterns:
   - Parentheses: `124(5) ps` → `124 ps {I5}`.
@@ -119,6 +120,7 @@ Missing terminal periods, XREF notation. Valid ENSDF symbols: `|?`, `{+n}`, `{-n
 - The 80-column all-space line that ends a file is part of the ENSDF submission format: never delete it, and treat a missing one as a repair candidate rather than noise.
 - `d`/`D` (col 7) hidden-message records are free-text notes, not comments: never length-check or reword them.
 - Values quoted in comments must name the specific gamma/level/multipolarity record and match it character-for-character — see `comment-quoted-values-check`.
+- Resolve a `|DJ`/multipolarity claim's gamma destination from that G-record's own `FL=` continuation when present, else by nearest level energy; when several levels share the quoted Jπ, accept the claim if any candidate matches, and report only true failures.
 - A capital that starts a new sentence (including after abbreviations such as `g.s.`, `m.s.`, `r.m.s.`) is not a capitalization error; do not lowercase it.
 - Bare `|<`, `|>`, `|=` in comment should not convert to `<`, `>`, `=`.
 - Column 78–79 findings are data errors, never `misplaced flags`: legal content there is L `MS` (`M `, `M1`/`M2`, `R `, `C `), G col-79 `N` (normalization), B/E `UN` (`1U`/`2U`), blank elsewhere. Never relocate these to column 77; `column_calibrate.py` and the ruler are record-type aware.
