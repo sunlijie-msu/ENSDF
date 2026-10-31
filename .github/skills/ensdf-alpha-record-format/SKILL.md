@@ -20,7 +20,7 @@ MMMXX  A EEEE.E    DE IA     DI HF     DHF                                  C  Q
 | RTYPE | 8       | Record type: `A` for alpha decay                                               |
 | PSYM  | 9       | Particle symbol must be blank                                                  |
 | E     | 10–19   | Alpha energy in keV                                                            |
-| DE    | 20–21   | Standard uncertainty in E                                                      |
+| DE    | 20–21   | Uncertainty in energy (or markers)                                             |
 | SPACE | 22      | Readability space                                                              |
 | IA    | 23–29   | Alpha intensity as a percentage of the total alpha-decay intensity             |
 | DIA   | 30–31   | Standard uncertainty in IA                                                     |

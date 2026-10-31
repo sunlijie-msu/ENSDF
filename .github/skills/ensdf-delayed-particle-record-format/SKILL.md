@@ -21,7 +21,7 @@ Example:
 | PSYM  | 9       | Particle symbol `P` for proton                                    |
 | SPACE | 10      | Readability space                                                 |
 | EP    | 11–19   | Proton energy in keV                                              |
-| DE    | 20–21   | Energy uncertainty                                                |
+| DE    | 20–21   | Uncertainty in energy (or markers)                                |
 | SPACE | 22      | Readability space                                                 |
 | IP    | 23–29   | Proton intensity in percent                                       |
 | DIP   | 30–31   | Uncertainty in IP                                                 |

@@ -20,7 +20,7 @@ Example:
 | RTYPE | 8       | Record type `B` for beta minus                                                  |
 | PSYM  | 9       | Particle symbol must be blank                                                   |
 | E     | 10–19   | Beta-decay endpoint energy in keV                                               |
-| DE    | 20–21   | Energy uncertainty                                                              |
+| DE    | 20–21   | Uncertainty in energy                                                           |
 | SPACE | 22      | Readability space                                                               |
 | IB    | 23–29   | Intensity of beta minus decay branch                                            |
 | DIB   | 30–31   | Uncertainty in IB                                                               |

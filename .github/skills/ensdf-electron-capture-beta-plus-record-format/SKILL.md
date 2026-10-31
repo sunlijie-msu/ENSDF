@@ -20,7 +20,7 @@ Example:
 | RTYPE | 8       | Record type `E` for electron capture and beta-plus decay                 |
 | PSYM  | 9       | Particle symbol must be blank                                            |
 | E     | 10–19   | Energy for electron capture to the level                                 |
-| DE    | 20–21   | Uncertainty in E                                                         |
+| DE    | 20–21   | Uncertainty in energy                                                    |
 | SPACE | 22      | Readability space                                                        |
 | IB    | 23–29   | Intensity of beta-plus-decay branch                                      |
 | DIB   | 30–31   | Uncertainty in IB                                                        |

@@ -21,10 +21,10 @@ Example:
 | RTYPE | 8       | Record type: `G` (gamma transition).                              |
 | PSYM  | 9       | Particle symbol must be blank                                     |
 | E     | 10–19   | Gamma energy                                                      |
-| DE    | 20–21   | Energy uncertainty                                                |
+| DE    | 20–21   | Uncertainty in energy (or markers)                                |
 | SPACE | 22      | Readability space                                                 |
 | RI    | 23–29   | Relative photon intensity (starts at col 23)                      |
-| DRI   | 30–31   | Uncertainty in RI (including GT, LT markers)                      |
+| DRI   | 30–31   | Uncertainty in RI (or GT, LT, GE, LE, AP, CA, SY markers)         |
 | SPACE | 32      | Readability space                                                 |
 | M     | 33–41   | Multipolarity                                                     |
 | MR    | 42–49   | Mixing ratio                                                      |
@@ -54,7 +54,7 @@ Identical gamma rays multiplaced in multiple level blocks may carry `*`, `&`, or
 ## G-Record Indicator Rules
 
 **Column 80 (Q Field, Additional Indicator):**
-- `Space`: Normal, well-established gamma transition.
-- `?`: Denotes uncertain placement of the transition in the level scheme.
+- `Space`: Normal, valid gamma transition.
+- `?`: Denotes uncertain placement of gamma transition in the level scheme.
 - `S`: Denotes expected or assumed, but as yet unobserved, gamma transition.
 - Only a space, `?`, or `S` is allowed in column 80.

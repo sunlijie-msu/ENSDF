@@ -388,11 +388,12 @@ For intensities and other values in scientific notation:
     - `(3.3±1.2)×10^-4` → Value: `3.3E-4`, Uncertainty: `12`.
 - **NEVER use:** `×10^-n` notation directly in ENSDF data records.
 
-#### GT and LT Markers in Uncertainty Fields
+#### Markers in Uncertainty Fields
 
 - **LT** = `Less Than` (e.g., `<1.6 ps` becomes `1.6 PS    LT` in T and DT fields).
 - **GT** = `Greater Than` (e.g., `>5.2 fs` becomes `5.2 FS   GT` in T and DT fields).
-- LE = `Less or equal to` (≤) and GE = `Greater or equal to` (≥) are also allowed.
+- LE = `Less or equal to` (≤) and GE = `Greater or equal to` (≥) are also allowed markers.
+- AP = `Approximate` (≈), CA = `Calculated`, and SY = `Systematic` are markers that may be put in uncertainty fields to indicate the nature of the value.
 - **Format:** Place the value in the main field and the GT/LT marker in the uncertainty field.
 - **Examples for RI and DRI:**
 

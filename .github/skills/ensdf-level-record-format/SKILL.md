@@ -21,7 +21,7 @@ Example:
 | RTYPE | 8       | Record type: `L` (Level).                                          |
 | PSYM  | 9       | Particle symbol must be blank.                                     |
 | E     | 10–19   | Level energy.                                                      |
-| DE    | 20–21   | Energy uncertainty.                                                |
+| DE    | 20–21   | Uncertainty in energy (or markers).                                |
 | SPACE | 22      | Readability space.                                                 |
 | J     | 23–39   | Spin `J` and parity `π`                                            |
 | T     | 40–49   | Half-life (FS, PS, NS, MS, S, H, D) or level width (EV, KEV, MEV). |
