@@ -127,6 +127,7 @@ For any skill that processes source data into ENSDF records, place a user-fillab
 
 **Content**
 - [ ] No rules already in `copilot-instructions.md` or `ENSDF-Agent.agent.md` — referenced instead
+- [ ] No same-topic skill in `.github/skills/` — extend it instead of creating a duplicate
 - [ ] Every line justifies its token cost; nothing Claude already knows
 - [ ] One default per task; alternatives only for genuine edge cases
 - [ ] Consistent terminology (one term per concept)
