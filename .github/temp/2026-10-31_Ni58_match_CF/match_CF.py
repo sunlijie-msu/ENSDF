@@ -4,10 +4,12 @@ from collections import Counter, defaultdict
 import numpy as np
 from scipy.optimize import linear_sum_assignment
 
-BASE = "XUNDL/A58/Ni58/new/"
-ADOPTED = "Ni58_adopted.ens"
-SET = ["C", "F"]
-OUT = ".github/temp/2026-10-31_Ni58_match_CF/"
+NUC = os.environ.get("NUC", "Ni58")
+BASE = "XUNDL/A58/%s/new/" % NUC
+ADOPTED = "%s_adopted.ens" % NUC
+SET = os.environ.get("SETS", "C,F").split(",")
+OUT = os.environ.get("OUT", ".github/temp/2026-10-31_Ni58_match_CF/")
+CMRX = {"C": r"\((?:pol )?p,p'", "F": r"\(e,e'", "H": r"\(p,\|?g\)", "S": r"\(pol d,\|a\)|\(d,\|a\)", "N": r"\(pol d,p\)|\(d,p\)", "M": r"resonances|\(n,g\)"}
 KEYCH = set("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz#")
 WMIN, WSIG, JPEN, WRONG_MARGIN = 3.0, 3.0, 2.0, 1.0
 norm = lambda s: re.sub(r"\s+", " ", s.upper().strip())
@@ -136,7 +138,7 @@ for ai, a in enumerate(ADL):
 
 sc = lambda a, d: max(math.hypot(a["sa"], d["se"]), 0.5)
 win = lambda a, d: max(WMIN, WSIG * sc(a, d))
-RX = {"C": r"\((?:pol )?p,p'", "F": r"\(e,e'"}
+RX = CMRX
 DOC = {X: {ai for ai, a in enumerate(ADL) if re.search(RX[X], a["cm"]) and "disagree" in a["cm"]} for X in SET}
 same = lambda a, b: jtok(a) is not None and jtok(a) == jtok(b)
 
@@ -149,7 +151,11 @@ def jcost(X, ai, a, d):
 RES = {}
 for X in SET:
     P = DS[X]["rows"]; n = len(P)
-    items = [(ai, lab) for ai in LAB for lab in LAB[ai] if lab["letter"] == X]
+    items, _seen = [], set()
+    for ai in LAB:
+        for lab in LAB[ai]:
+            if lab["letter"] == X and (ai not in _seen):
+                items.append((ai, lab)); _seen.add(ai)
     pair, owners = {}, defaultdict(list)
     located = set()
     for ai, lab in items:                                    # 1) (energy) locates the dataset level
@@ -208,7 +214,7 @@ for X in SET:
                 u = min(alt, key=lambda u: abs(P[u]["val"] - a["val"]))
                 pr["flags"].append("wrong match: closer compatible level %s %s stays unpaired" % (P[u]["shown"], P[u]["jraw"] or "-"))
         if jbad(a["jraw"], P[d]["jraw"]):
-            doc = re.search(r"\((?:pol )?p,p'" if X == "C" else r"\(e,e'", a["cm"]) and re.search(r"disagree", a["cm"])
+            doc = re.search(RX[X], a["cm"]) and re.search(r"disagree", a["cm"])
             pr["flags"].append("mismatch: J\u03c0 incompatible (%s)" % ("noted in adopted comment" if doc else "not noted in adopted comment"))
         if (not pr["star"]) and dE > WSIG * s_:
             pr["flags"].append("mismatch: energy differs by %.1f keV (%.1f\u03c3)" % (dE, dE / s_))
@@ -290,7 +296,9 @@ for X in SET:
 
 # ---------- write ----------
 os.makedirs(OUT, exist_ok=True)
-H = ["\u26a0", "adopted E(DE)", "adopted J\u03c0", "XREF (C, F)", "C level E(DE)", "C J\u03c0", "C class", "F level E(DE)", "F J\u03c0", "F class"]
+H = ["\u26a0", "adopted E(DE)", "adopted J\u03c0", "XREF (%s)" % ", ".join(SET)]
+for _X in SET:
+    H += ["%s level E(DE)" % _X, "%s J\u03c0" % _X, "%s class" % _X]
 
 
 def line(r):
@@ -301,10 +309,10 @@ def line(r):
     return "| " + " | ".join(x.replace("|", "\\|") for x in out) + " |"
 
 
-with io.open(OUT + "Ni58_adopted_vs_C_F_level_matching.md", "w", encoding="utf-8") as f:
-    f.write("# Ni-58 adopted levels vs. dataset C (58Ni(p,p')) and dataset F (58Ni(e,e'))\n\n")
-    f.write("Parameters: candidate window max(%g keV, %g sigma_combined); J-pi-incompatible pairs penalised by %g sigma; blank dataset DE replaced by the dataset median (C %g keV, F %g keV); wrong-match margin %g keV.\n\n"
-            % (WMIN, WSIG, JPEN, DS["C"]["med"], DS["F"]["med"], WRONG_MARGIN))
+with io.open(OUT + NUC + "_adopted_vs_" + "_".join(SET) + "_level_matching.md", "w", encoding="utf-8") as f:
+    f.write("# %s adopted levels vs. datasets %s\n\n" % (NUC, ", ".join(SET + [])))
+    f.write("Parameters: candidate window max(%g keV, %g sigma_combined); J-pi-incompatible pairs penalised by %g sigma; wrong-match margin %g keV; blank dataset DE replaced by dataset median (%s).\n\n"
+            % (WMIN, WSIG, JPEN, WRONG_MARGIN, ", ".join("%s %g keV" % (X, DS[X]["med"]) for X in SET)))
     f.write("| " + " | ".join(H) + " |\n|" + "---|" * len(H) + "\n")
     for r in rows:
         f.write(line(r) + "\n")
