@@ -42,13 +42,16 @@ This repository contains the datasets being evaluated by the FRIB Nuclear Data G
 ├── .github/                # AI-Native Development Infrastructure
 │   ├── agents/             # Custom Agents (ENSDF-Agent.agent.md)
 │   ├── docs/               # Context Engineering (Theory & Manuals)
-│   ├── prompts/            # Agentic Workflows (.prompt.md)
+│   ├── skill-dormant/      # Rare workflows, not auto-discovered by Copilot
 │   ├── scripts/            # Tooling Infrastructure (Python validators)
 │   ├── skills/             # Specialized Agent Skills
 │   └── copilot-instructions.md   # Global Instructions & ENSDF Standards
 └── .gitmodules             # Git submodule configuration
 ```
 
+Skills in `.github/skill-dormant/` are excluded from Copilot discovery. To invoke one as a skill, move its folder into `.github/skills/`; `disable-model-invocation: true` keeps it manual-only.
+
+The dormant `relative-gamma-intensity-scaling` workflow scales γ-ray RI comments; `resonance-strength-scaling` scales resonance ωγ values. Active `rescale-gamma-ri` reconciles adopted RI normalization within a level block.
 
 ## Evaluation Status
 
@@ -141,5 +144,3 @@ Overview of mass-chain evaluation progress across four baseline evaluations (201
 **Presentations**:
 - LECM2025 (Low Energy Community Meeting 2025)
 - USNDP2025 (U.S. Nuclear Data Program Meeting 2025)
-
-

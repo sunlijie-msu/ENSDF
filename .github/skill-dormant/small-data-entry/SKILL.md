@@ -1,5 +1,6 @@
 ---
 name: small-data-entry
+disable-model-invocation: true
 description: >
   Use this skill for one 1964Gl04 resonance table at a time, matching direct
   resonance decays to an ENSDF adopted file by Ep(lab) and validating the

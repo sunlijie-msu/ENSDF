@@ -1,5 +1,6 @@
 ---
 name: reaction-equations
+disable-model-invocation: true
 description: >
   Use this skill when adding nuclear reaction equation comments to transfer
   reaction dataset headers in ENSDF files. Covers stripping, pickup, charge

@@ -1,5 +1,6 @@
 ---
 name: value-occurrence-check
+disable-model-invocation: true
 description: >
   Use this skill when checking consistency of nuclear level energies across
   multiple occurrences in a gamma-ray transition CSV, Markdown, or table. Verifies that energy, uncertainty, and J-π are identical wherever

@@ -1,5 +1,6 @@
 ---
 name: image-data-extraction
+disable-model-invocation: true
 description: >
   Use this skill when extracting nuclear level scheme or gamma transition data
   from images, PDF figures, or level-scheme diagrams for ENSDF entry. Handles
@@ -7,7 +8,7 @@ description: >
   energy calculation from gamma cascades, ascending energy ordering, and ENSDF
   uncertainty notation. Mandatory 15% random spot-check validation against the
   source image before claiming completion.
-argument-hint: [image or PDF file] [target ENSDF file]
+argument-hint: "[image or PDF file] [target ENSDF file]"
 ---
 
 # Image and PDF Data Extraction

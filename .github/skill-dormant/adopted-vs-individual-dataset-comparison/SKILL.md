@@ -1,5 +1,6 @@
 ---
 name: adopted-vs-individual-dataset-comparison
+disable-model-invocation: true
 description: Use this skill when comparing quantities (J-π, energies, half-lives,
   branching ratios) between Adopted ENSDF files and their source individual
   reaction datasets. Uses XREF notation to identify which datasets observe

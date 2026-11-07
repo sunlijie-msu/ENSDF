@@ -1,5 +1,6 @@
 ---
 name: nds-doi-lookup
+disable-model-invocation: true
 description: >
   Use this skill when looking up and verifying DOIs for the most recent
   Nuclear Data Sheets (NDS) evaluation articles by mass number A. Uses the

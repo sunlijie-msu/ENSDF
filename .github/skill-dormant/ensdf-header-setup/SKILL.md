@@ -1,5 +1,6 @@
 ---
 name: ensdf-header-setup
+disable-model-invocation: true
 description: "Use when setting up or updating ENSDF headers for a new mass-chain evaluation cycle: sorting .ens/.old/.xundl sources into new/ and old/, stamping the IDENTIFICATION record cols 66-80, and inserting the new History (H) record. Triggers: header update, mass chain setup, ENSDF 202709, H record, unconverted XUNDL file."
 argument-hint: [mass number | element symbol | file path]
 ---

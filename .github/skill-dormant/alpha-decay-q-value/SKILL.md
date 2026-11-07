@@ -1,5 +1,6 @@
 ---
 name: alpha-decay-q-value
+disable-model-invocation: true
 description: >
   Use this skill when calculating Q-alpha values from measured alpha energies
   and updating the Q field (cols 65-74) and DQ field (cols 75-76) in ENSDF

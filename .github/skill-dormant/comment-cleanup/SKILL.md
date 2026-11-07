@@ -1,5 +1,6 @@
 ---
 name: comment-cleanup
+disable-model-invocation: true
 description: >
   Use this skill when reviewing, writing, or reordering comments for an ENSDF
   dataset. Establishes a single default-source general cG E,RI$ comment and adds

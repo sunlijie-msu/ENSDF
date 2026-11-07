@@ -1,5 +1,6 @@
 ---
 name: flag-expansion
+disable-model-invocation: true
 description: >
   Use this skill when expanding flags in column 77 or flags in FLAG= continuation records in ENSDF files into individual cG or cL comment lines. Maps each flag character to its defined description in the dataset header. Clears column 77 flag characters from data records or deletes original FLAG= continuation lines after expansion.
 argument-hint: [ENSDF file]

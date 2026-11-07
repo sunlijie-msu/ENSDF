@@ -1,5 +1,6 @@
 ---
 name: ens2pdf
+disable-model-invocation: true
 description: >
   Run the ens2pdf.py Python wrapper to convert ENSDF .ens files to PDF using
   the McMaster-MSU Java NDS tool. Supports single files, element-level batches,

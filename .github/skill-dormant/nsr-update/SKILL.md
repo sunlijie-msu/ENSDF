@@ -1,5 +1,6 @@
 ---
 name: nsr-update
+disable-model-invocation: true
 description: >
   Update NSR key numbers consistently across ENS content, filenames, and
   tracking docs while preserving exact case conventions and validating the

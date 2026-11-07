@@ -1,5 +1,6 @@
 ---
 name: resonance-strength-scaling
+disable-model-invocation: true
 description: >
   Use this skill when scaling resonance strengths (ωγ) in ENSDF cL comment
   lines by a given factor and applying specified relative uncertainties.
