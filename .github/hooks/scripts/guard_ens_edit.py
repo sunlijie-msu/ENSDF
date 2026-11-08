@@ -52,6 +52,7 @@ import json
 import os
 import re
 import sys
+from typing import NoReturn
 from urllib.parse import unquote, urlparse
 
 SPAN = 8  # max lines in one oldString
@@ -59,20 +60,17 @@ ENS_PATH_RE = re.compile(r"[^\s\"']+\.ens", re.IGNORECASE)
 MUTATING_RE = re.compile(r"--fix\b|>>?\s|Set-Content|Out-File|Add-Content|\.write_text\(|WriteAllText", re.IGNORECASE)
 EDIT_TOOLS = {
     "replace_string_in_file", "multi_replace_string_in_file", "editFiles", "edit/editFiles",
+    "create", "createFile", "create_file", "edit/createFile", "writeFile",
     "Edit", "edit", "Write", "write", "str_replace", "str_replace_editor",
 }
 READ_TOOLS = {"read_file", "readFile", "read/readFile", "Read", "read", "view"}
+PATCH_TOOLS = {"apply_patch", "applyPatch", "edit/applyPatch", "functions.apply_patch"}
 
 
-def deny(reason):
+def deny(reason: str) -> NoReturn:
     payload = json.dumps({
         "permissionDecision": "deny",
         "permissionDecisionReason": reason,
-        "hookSpecificOutput": {
-            "hookEventName": "PreToolUse",
-            "permissionDecision": "deny",
-            "permissionDecisionReason": reason,
-        },
     })
     write_stdout(payload)
     sys.exit(0)
@@ -99,16 +97,16 @@ def load_event():
     except AttributeError:
         raw = sys.stdin.read().encode("utf-8", "replace")
     if not raw.strip():
-        return {}
+        raise ValueError("Hook input was empty.")
     for enc in ("utf-8-sig", "utf-8"):
         try:
-            return json.loads(raw.decode(enc))
+            payload = json.loads(raw.decode(enc))
+            if not isinstance(payload, dict):
+                raise ValueError("Hook input was not a JSON object.")
+            return payload
         except (UnicodeDecodeError, json.JSONDecodeError):
             continue
-    try:
-        return json.loads(raw.decode(sys.stdin.encoding or "utf-8", "replace"))
-    except json.JSONDecodeError:
-        return {}
+    raise ValueError("Hook input was not valid UTF-8 JSON.")
 
 
 def workspace_root(data):
@@ -156,7 +154,7 @@ def state_save(state, state_path):
 
 
 def path_value(item):
-    for field in ("filePath", "file_path", "path", "uri"):
+    for field in ("filePath", "file_path", "fileName", "file_name", "path", "uri"):
         value = item.get(field)
         if isinstance(value, str) and value:
             return value
@@ -372,12 +370,19 @@ def main():
     event = load_event()
     tool = event.get("tool_name") or event.get("toolName", "")
     data = event.get("tool_input") or event.get("toolArgs") or {}
+    if isinstance(data, str):
+        data = {"input": data}
+    elif not isinstance(data, dict):
+        deny("Hook tool input must be a JSON object or patch string.")
     root = workspace_root(event)
     state_path = os.path.join(root, ".github", "temp", "ens_guard", "state.json")
     state = state_load(state_path)
 
     if tool in READ_TOOLS:  # a read refreshes freshness; verify skips reads so it is not consumed
-        path = data.get("filePath") or data.get("file_path") or data.get("path") or ""
+        path = (
+            data.get("filePath") or data.get("file_path") or data.get("fileName")
+            or data.get("file_name") or data.get("path") or data.get("uri") or ""
+        )
         if isinstance(path, str) and path.lower().endswith(".ens"):
             text = read(key_of(path, root))
             if text is not None:
@@ -385,15 +390,21 @@ def main():
                 state_save(state, state_path)
         return
 
-    if tool == "apply_patch":
-        patch_text = data.get("input") or data.get("patch", "") or ""
+    patch_text = data.get("input") or data.get("patch", "") or ""
+    is_patch = tool in PATCH_TOOLS or (
+        isinstance(patch_text, str) and patch_text.startswith("*** Begin Patch")
+    )
+    if is_patch:
         if re.search(r"^\*\*\* (?:Update|Add|Delete) File: .*\.ens", patch_text, re.IGNORECASE | re.MULTILINE):
             operations = comment_patch_operations(patch_text, root)
             if guard_comment_operations(operations, state, root):
                 state_save(state, state_path)
         return
 
-    if tool in ("run_in_terminal", "send_to_terminal", "Bash", "bash", "PowerShell", "powershell"):
+    if tool in (
+        "run_in_terminal", "runInTerminal", "execute/runInTerminal", "send_to_terminal",
+        "Bash", "bash", "PowerShell", "powershell",
+    ):
         if guard_terminal(data.get("command", "") or "", state, root):
             state_save(state, state_path)
         return

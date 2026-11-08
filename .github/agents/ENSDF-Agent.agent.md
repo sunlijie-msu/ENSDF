@@ -5,23 +5,23 @@ target: github-copilot
 tools: [read, search, agent, execute, edit, web, todo]
 model: ['claude-sonnet-5.5']
 hooks:
-  PreToolUse:
+  preToolUse:
     - type: command
       command: "python .github/hooks/scripts/block-root-file-creation.py"
-      windows: "python .github/hooks/scripts/block-root-file-creation.py"
-      timeoutSec: 10
+      timeoutSec: 30
     - type: command
       command: "python .github/hooks/scripts/block-git-revert.py"
-      windows: "powershell -ExecutionPolicy Bypass -File .github/hooks/scripts/block-git-revert.ps1"
-      timeoutSec: 10
+      timeoutSec: 30
     - type: command
       command: "python .github/hooks/scripts/guard_ens_edit.py"
-      windows: "python .github/hooks/scripts/guard_ens_edit.py"
-      timeoutSec: 20
-  PostToolUse:
+      timeoutSec: 30
+  postToolUse:
     - type: command
       command: "python .github/hooks/scripts/verify_ens_edit.py"
-      windows: "python .github/hooks/scripts/verify_ens_edit.py"
+      timeoutSec: 30
+  postToolUseFailure:
+    - type: command
+      command: "python .github/hooks/scripts/verify_ens_edit.py"
       timeoutSec: 30
 ---
 
@@ -448,6 +448,8 @@ Units or percent signs are placed after the value before the uncertainty:
 - **NEVER** edit `.old` files (files from previous evaluation rounds).
 - **NEVER** modify first line `Identification Record` indentation or spacing in `.ens` files.
 - **NEVER** modify XREF lists (XREF entries with pattern `NUCID X` have their own specific formatting rules).
+- Agent-scoped PreToolUse hooks deny unsafe writes; PostToolUse hooks report validation failures after a tool runs and cannot undo its changes.
+- Hook timeouts may allow a tool to proceed; hooks are workflow safeguards, not hard security boundaries.
 
 ### Debugging Technique
 

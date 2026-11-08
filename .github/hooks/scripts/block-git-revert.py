@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-ENSDF-Agent Hook: Block git restore/checkout for error recovery (cross-platform)
+ENSDF-Agent Hook: Block git restore/checkout for error recovery
 -----------------------------------------------------------------------
-Python port of block-git-revert.ps1 for Linux/macOS compatibility.
+Cross-platform Copilot command hook.
 
 Enforces the Error Recovery Protocol in ENSDF-Agent.agent.md:
   "Do NOT use 'git restore' or 'git checkout' on critical .ens files."
@@ -28,13 +28,21 @@ import sys
 
 
 def load_input():
-    raw = sys.stdin.read().strip()
-    if not raw:
-        return {}
     try:
-        return json.loads(raw)
-    except json.JSONDecodeError:
-        return {}
+        raw = sys.stdin.buffer.read()
+    except AttributeError:
+        raw = sys.stdin.read().encode("utf-8", "replace")
+    if not raw:
+        raise ValueError("Hook input was empty.")
+    for encoding in ("utf-8-sig", "utf-8"):
+        try:
+            payload = json.loads(raw.decode(encoding))
+            if not isinstance(payload, dict):
+                raise ValueError("Hook input was not a JSON object.")
+            return payload
+        except (UnicodeDecodeError, json.JSONDecodeError):
+            continue
+    raise ValueError("Hook input was not valid UTF-8 JSON.")
 
 
 def unquote_token(token):
@@ -299,20 +307,25 @@ def build_denial_output(blocked_info, cmd):
     ])
 
     return {
-        'continue': False,
-        'stopReason': reason,
-        'systemMessage': reason,
-        'hookSpecificOutput': {
-            'hookEventName': 'PreToolUse',
-            'permissionDecision': 'deny',
-            'permissionDecisionReason': reason,
-        },
+        'permissionDecision': 'deny',
+        'permissionDecisionReason': reason,
     }
 
 
 def main():
-    hook_input = load_input()
+    try:
+        hook_input = load_input()
+    except ValueError as exc:
+        sys.stdout.write(json.dumps({
+            'permissionDecision': 'deny',
+            'permissionDecisionReason': f'Cannot verify terminal command: {exc}',
+        }))
+        sys.exit(0)
     if not hook_input:
+        sys.stdout.write(json.dumps({
+            'permissionDecision': 'deny',
+            'permissionDecisionReason': 'Cannot verify terminal command: hook input was empty.',
+        }))
         sys.exit(0)
 
     # Only act on terminal execution tools
@@ -331,8 +344,18 @@ def main():
 
     # Extract the command string
     tool_input = hook_input.get('tool_input') or hook_input.get('toolArgs') or {}
+    if not isinstance(tool_input, dict):
+        sys.stdout.write(json.dumps({
+            'permissionDecision': 'deny',
+            'permissionDecisionReason': 'Cannot verify terminal command: tool arguments are not a JSON object.',
+        }))
+        sys.exit(0)
     command = tool_input.get('command', '')
-    if not command:
+    if not isinstance(command, str) or not command:
+        sys.stdout.write(json.dumps({
+            'permissionDecision': 'deny',
+            'permissionDecisionReason': 'Cannot verify terminal command: command argument is missing.',
+        }))
         sys.exit(0)
 
     # Normalize: collapse whitespace
@@ -349,4 +372,10 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as exc:
+        sys.stdout.write(json.dumps({
+            'permissionDecision': 'deny',
+            'permissionDecisionReason': f'Cannot verify terminal command because the hook failed: {exc}',
+        }))

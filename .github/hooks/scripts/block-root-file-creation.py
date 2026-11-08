@@ -2,7 +2,7 @@
 """
 ENSDF Workspace Hook: Block file creation in protected directories (cross-platform)
 -----------------------------------------------------------------------
-Python port of block-root-file-creation.ps1 for Linux/macOS compatibility.
+Cross-platform Copilot command hook.
 
 Hook event : PreToolUse
 Blocks     : create_file / edit/createFile and apply_patch add-file operations when
@@ -25,8 +25,10 @@ import sys
 
 
 CREATE_TOOL_NAMES = {
+    "create",
     "create_file",
     "createFile",
+    "writeFile",
     "edit/createFile",
     "functions.create_file",
     "vscode.createFile",
@@ -40,9 +42,10 @@ DIRECTORY_TOOL_NAMES = {
     "functions.create_directory",
     "vscode.createDirectory",
 }
-PATCH_TOOL_NAMES = {"apply_patch", "edit/applyPatch", "functions.apply_patch"}
+PATCH_TOOL_NAMES = {"apply_patch", "applyPatch", "edit/applyPatch", "functions.apply_patch"}
 TERMINAL_TOOL_NAMES = {
     "run_in_terminal",
+    "runInTerminal",
     "execute/runInTerminal",
     "functions.run_in_terminal",
     "Bash",
@@ -84,13 +87,21 @@ OPTIONS_WITH_VALUES = PATH_OPTIONS | {
 
 
 def load_input():
-    raw = sys.stdin.read().strip()
-    if not raw:
-        return {}, ""
     try:
-        payload = json.loads(raw)
-    except json.JSONDecodeError:
-        return {}, "Hook input was not valid JSON; file creation was blocked."
+        raw = sys.stdin.buffer.read()
+    except AttributeError:
+        raw = sys.stdin.read().encode("utf-8", "replace")
+    if not raw:
+        return {}, "Hook input was empty; file creation was blocked."
+    payload = None
+    for encoding in ("utf-8-sig", "utf-8"):
+        try:
+            payload = json.loads(raw.decode(encoding))
+            break
+        except (UnicodeDecodeError, json.JSONDecodeError):
+            continue
+    if payload is None:
+        return {}, "Hook input was not valid UTF-8 JSON; file creation was blocked."
     if not isinstance(payload, dict):
         return {}, "Hook input was not a JSON object; file creation was blocked."
     return payload, ""
@@ -100,11 +111,6 @@ def emit_denial(reason):
     output = {
         "permissionDecision": "deny",
         "permissionDecisionReason": reason,
-        "hookSpecificOutput": {
-            "hookEventName": "PreToolUse",
-            "permissionDecision": "deny",
-            "permissionDecisionReason": reason,
-        }
     }
     print(json.dumps(output))
 
@@ -157,21 +163,30 @@ def classify_path(file_path, workspace_root):
 def extract_target_paths(hook_input):
     tool_name = hook_input.get("tool_name") or hook_input.get("toolName", "")
     tool_input = hook_input.get("tool_input") or hook_input.get("toolArgs") or {}
+    if isinstance(tool_input, str) and tool_name in PATCH_TOOL_NAMES:
+        tool_input = {"input": tool_input}
     if not isinstance(tool_input, dict):
+        if tool_name in CREATE_TOOL_NAMES:
+            return [("", "create_file")]
+        if tool_name in DIRECTORY_TOOL_NAMES:
+            return [("", "create_directory")]
+        if tool_name in PATCH_TOOL_NAMES:
+            return [("", "apply_patch")]
         return []
 
     if tool_name in CREATE_TOOL_NAMES or tool_name in DIRECTORY_TOOL_NAMES:
-        for key in ("filePath", "file_path", "path"):
+        for key in ("filePath", "file_path", "fileName", "file_name", "path", "uri"):
             value = tool_input.get(key)
             if isinstance(value, str) and value.strip():
                 operation = "create_directory" if tool_name in DIRECTORY_TOOL_NAMES else "create_file"
                 return [(value, operation)]
-        return []
+        operation = "create_directory" if tool_name in DIRECTORY_TOOL_NAMES else "create_file"
+        return [("", operation)]
 
     if tool_name in PATCH_TOOL_NAMES:
         patch_text = tool_input.get("input") or tool_input.get("patch", "")
         if not isinstance(patch_text, str):
-            return []
+            return [("", "apply_patch")]
         paths = []
         for match in re.finditer(r"^\*\*\* Add File:\s*(.+?)\s*$", patch_text, re.MULTILINE):
             paths.append((match.group(1), "apply_patch add-file"))
@@ -282,6 +297,10 @@ def main():
         )
         sys.exit(0)
     if not hook_input:
+        emit_denial(
+            "BLOCKED by workspace security hook (block-root-file-creation).\n\n"
+            "Hook input was empty; file creation cannot be verified safely."
+        )
         sys.exit(0)
 
     target_paths = extract_target_paths(hook_input)
@@ -336,4 +355,10 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as exc:
+        emit_denial(
+            "BLOCKED by workspace security hook (block-root-file-creation).\n\n"
+            f"Hook error; file creation could not be verified safely: {exc}"
+        )

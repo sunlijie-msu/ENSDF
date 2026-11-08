@@ -9,15 +9,17 @@ import difflib
 MUTATING_RE = re.compile(r"--fix\b|>>?\s|Set-Content|Out-File|Add-Content|\.write_text\(|WriteAllText", re.IGNORECASE)
 EDIT_TOOLS = {
     "replace_string_in_file", "multi_replace_string_in_file", "editFiles", "edit/editFiles",
+    "create", "createFile", "create_file", "edit/createFile", "writeFile",
     "Edit", "edit", "Write", "write", "str_replace", "str_replace_editor",
 }
+PATCH_TOOLS = {"apply_patch", "applyPatch", "edit/applyPatch", "functions.apply_patch"}
 
 # ENSDF-Agent Hook: Validate .ens files after edits
 # --------------------------------------------------------
 # PostToolUse event — runs two validation passes on any .ens file that was
 # just created or edited by ENSDF-Agent:
 #
-#   PASS 1 (always): ASCII-only check — blocks if any non-ASCII character
+#   PASS 1 (always): ASCII-only check — reports any non-ASCII character
 #     found in the .ens file. Applies to ALL edits (data records AND comments).
 #
 #   PASS 2 (always when guard supplied an expectation): actual content must match
@@ -35,10 +37,10 @@ EDIT_TOOLS = {
 #   - Handles all VS Code file-editing tool input shapes
 #   - Validates ALL .ens files touched by a single tool call (multi-file)
 #   - Uses hook-provided cwd for robust script path resolution
-#   - Returns Sacred Workflow guidance on failure
+#   - Returns Sacred Workflow guidance on failure; cannot undo completed tool calls
 #
 # Hook event : PostToolUse
-# On failure : decision "block" + fix instructions in reason
+# On failure : additionalContext with fix instructions
 # On success : exit 0  (silent)
 
 
@@ -68,16 +70,16 @@ def load_input():
     except AttributeError:
         raw = sys.stdin.read().encode("utf-8", "replace")
     if not raw.strip():
-        return {}
+        raise ValueError("Hook input was empty.")
     for enc in ("utf-8-sig", "utf-8"):
         try:
-            return json.loads(raw.decode(enc))
+            payload = json.loads(raw.decode(enc))
+            if not isinstance(payload, dict):
+                raise ValueError("Hook input was not a JSON object.")
+            return payload
         except (UnicodeDecodeError, json.JSONDecodeError):
             continue
-    try:
-        return json.loads(raw.decode(sys.stdin.encoding or "utf-8", "replace"))
-    except json.JSONDecodeError:
-        return {}
+    raise ValueError("Hook input was not valid UTF-8 JSON.")
 
 
 def file_digest(path):
@@ -119,7 +121,7 @@ def pop_expected_hashes(paths, cwd):
 
 
 def path_value(item):
-    for field in ("filePath", "file_path", "path", "uri"):
+    for field in ("filePath", "file_path", "fileName", "file_name", "path", "uri"):
         value = item.get(field)
         if isinstance(value, str) and value:
             return value
@@ -187,6 +189,11 @@ def find_all_ens_paths(payload):
     """
     paths = set()
     tool_input = payload.get("tool_input") or payload.get("toolArgs") or {}
+    tool_name = payload.get("tool_name") or payload.get("toolName", "")
+    if isinstance(tool_input, str) and tool_name in PATCH_TOOLS:
+        tool_input = {"input": tool_input}
+    if not isinstance(tool_input, dict):
+        return []
 
     # Environment variable override (used by some Claude Code integrations)
     env_path = os.environ.get("TOOL_INPUT_FILE_PATH", "")
@@ -194,7 +201,7 @@ def find_all_ens_paths(payload):
         paths.add(env_path)
 
     # Direct and workspace-edit payloads
-    for key in ("filePath", "file_path", "path", "uri"):
+    for key in ("filePath", "file_path", "fileName", "file_name", "path", "uri"):
         value = tool_input.get(key)
         if isinstance(value, str) and value.lower().endswith(".ens"):
             paths.add(value)
@@ -223,9 +230,9 @@ def find_all_ens_paths(payload):
                     paths.add(value)
 
     # apply_patch → parse file paths from patch header lines
-    patch_text = tool_input.get("input") or tool_input.get("patch")
+    patch_text = tool_input.get("input") or tool_input.get("patch") or tool_input.get("patchText")
     if isinstance(patch_text, str):
-        for match in re.finditer(r"\*\*\* (?:Update|Add) File: (.+)", patch_text):
+        for match in re.finditer(r"\*\*\* (?:Update|Add|Delete) File: (.+)", patch_text):
             path = match.group(1).strip()
             if path.lower().endswith(".ens"):
                 paths.add(path)
@@ -266,10 +273,18 @@ def extract_all_changed_lines(payload):
     tool_name = payload.get("tool_name") or payload.get("toolName", "")
     tool_input = payload.get("tool_input") or payload.get("toolArgs") or {}
 
-    if tool_name == "apply_patch":
-        patch_text = tool_input.get("input", "")
+    if tool_name in PATCH_TOOLS:
+        if isinstance(tool_input, str):
+            patch_text = tool_input
+        elif isinstance(tool_input, dict):
+            patch_text = tool_input.get("input") or tool_input.get("patch") or tool_input.get("patchText", "")
+        else:
+            patch_text = ""
         if isinstance(patch_text, str):
             return extract_changed_lines_from_patch(patch_text)
+
+    if not isinstance(tool_input, dict):
+        return []
 
     changed = []
 
@@ -344,14 +359,17 @@ def check_ascii_only(abs_path):
                 non_ascii = [c for c in line if ord(c) > 127]
                 if non_ascii:
                     violations.append((lineno, line.rstrip("\n"), non_ascii))
-    except Exception:
-        pass
+    except OSError as exc:
+        raise OSError(f"Cannot read ENSDF file {abs_path}: {exc}") from exc
     return violations
 
 
 def validate_ens_ascii(abs_path):
     """Check file for non-ASCII characters. Return (is_clean, error_text)."""
-    vios = check_ascii_only(abs_path)
+    try:
+        vios = check_ascii_only(abs_path)
+    except OSError as exc:
+        return False, str(exc)
     if not vios:
         return True, ""
     lines = []
@@ -383,18 +401,25 @@ def is_mutating_call(payload):
     "changed since your last read/edit (concurrent edit)" denials.
     """
     tool = payload.get("tool_name") or payload.get("toolName", "")
-    if tool in EDIT_TOOLS or tool in ("apply_patch", "create_file", "Write", "write"):
+    if tool in EDIT_TOOLS or tool in PATCH_TOOLS:
         return True
-    command = (payload.get("tool_input") or payload.get("toolArgs") or {}).get("command")
+    tool_input = payload.get("tool_input") or payload.get("toolArgs") or {}
+    if not isinstance(tool_input, dict):
+        return False
+    command = tool_input.get("command")
     return isinstance(command, str) and "--dry-run" not in command and bool(MUTATING_RE.search(command))
 
 
 def main():
-    payload = load_input()
+    try:
+        payload = load_input()
+    except ValueError as exc:
+        emit({"additionalContext": f"ENSDF post-tool hook could not parse event input: {exc}"})
+        return
     tool = payload.get("tool_name") or payload.get("toolName", "")
 
     # Read-only calls: nothing to validate; the guard token must survive.
-    if tool in ("read_file", "readFile", "read/readFile"):
+    if tool in ("read_file", "readFile", "read/readFile", "Read", "read", "view"):
         emit({})
         return
 
@@ -409,19 +434,11 @@ def main():
     if mismatches:
         files = "\n".join(f"  {path}" for path, _, _ in mismatches)
         emit({
-            "decision": "block",
-            "reason": (
-                "ENSDF post-edit content differs from the PreToolUse prediction. "
-                "The edit may have collapsed, expanded, or otherwise rewritten an unintended block.\n"
-                f"Affected file(s):\n{files}\n"
-                "Re-read the affected block, inspect the diff, and rebuild a smaller exact edit."
-            ),
-            "hookSpecificOutput": {
-                "hookEventName": "PostToolUse",
-                "additionalContext": "Predicted post-edit hash did not match actual file content.",
-            },
             "additionalContext": (
                 "ENSDF post-edit content differs from the PreToolUse prediction. "
+                "The completed tool action was not undone. "
+                "The edit may have collapsed, expanded, or otherwise rewritten an unintended block.\n"
+                f"Affected file(s):\n{files}\n"
                 "Re-read the affected block, inspect the diff, and rebuild a smaller exact edit."
             ),
         })
@@ -433,6 +450,7 @@ def main():
     for path in ens_paths:
         abs_path = resolve_path(path, cwd)
         if not os.path.isfile(abs_path):
+            ascii_errors.append(f"ENSDF file is missing after the tool action: {abs_path}")
             continue
         clean, err = validate_ens_ascii(abs_path)
         if not clean:
@@ -441,17 +459,9 @@ def main():
     if ascii_errors:
         error_text = "\n\n".join(ascii_errors)
         emit({
-            "decision": "block",
-            "reason": (
-                "ENSDF ASCII-only violation. .ens files must use standard ASCII.\n\n"
-                f"{error_text}"
-            ),
-            "hookSpecificOutput": {
-                "hookEventName": "PostToolUse",
-                "additionalContext": f"ASCII validation FAILED:\n{error_text}",
-            },
             "additionalContext": (
-                "ENSDF ASCII-only validation failed after the edit. Fix the listed lines before proceeding.\n"
+                "ENSDF ASCII validation failed. The completed tool action was not undone. "
+                ".ens files must be readable and use standard ASCII.\n\n"
                 f"{error_text}"
             ),
         })
@@ -470,7 +480,11 @@ def main():
         abs_path = resolve_path(path, cwd)
         if not os.path.isfile(abs_path):
             continue
-        result = run_ruler(ruler_script, abs_path)
+        try:
+            result = run_ruler(ruler_script, abs_path)
+        except OSError as exc:
+            all_errors.append(f"Could not run ENSDF ruler for {abs_path}: {exc}")
+            continue
         if result.returncode != 0:
             output = (result.stdout + result.stderr).strip()
             all_errors.append(f"FILE: {abs_path}\n{output}")
@@ -481,9 +495,9 @@ def main():
 
     error_text = "\n\n".join(all_errors)
     emit({
-        "decision": "block",
-        "reason": (
-            "ENSDF 80-column validation failed. Fix the data-record edit before continuing.\n\n"
+        "additionalContext": (
+            "ENSDF 80-column validation failed. The completed tool action was not undone. "
+            "Fix the data-record edit before continuing.\n\n"
             "Sacred Workflow (ENSDF-Agent.agent.md — MANDATORY):\n"
             "  EDIT -> VALIDATE -> CONFIRM -> REPEAT\n\n"
             "Required steps:\n"
@@ -494,16 +508,16 @@ def main():
             "Do NOT make multiple edits before validating each one.\n\n"
             f"Validation errors:\n{error_text}"
         ),
-        "hookSpecificOutput": {
-            "hookEventName": "PostToolUse",
-            "additionalContext": f"ensdf_1line_ruler.py FAILED:\n{error_text}",
-        },
-        "additionalContext": (
-            "ENSDF 80-column validation failed after the edit. Fix the listed records before proceeding.\n"
-            f"{error_text}"
-        ),
     })
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as exc:
+        emit({
+            "additionalContext": (
+                "ENSDF post-tool validation hook failed after the tool action completed; "
+                f"the action was not undone: {exc}"
+            ),
+        })
