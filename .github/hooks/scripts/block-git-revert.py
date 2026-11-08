@@ -285,7 +285,7 @@ def build_denial_output(blocked_info, cmd):
         '  1. If the target is a temp script/code file, use an explicit temp path only.',
         '  2. If the target is an .ens or other working file, identify the root cause'
         ' through analysis, not reversion.',
-        '  3. Fix errors using replace_string_in_file or multi_replace_string_in_file.',
+        '  3. Fix errors using edit tools, not reversion.',
         '  4. Validate .ens fixes with column_calibrate.py and ensdf_1line_ruler.py.',
         '  5. Use diff-aware edits so that users can review diffs in VS Code diff'
         ' viewer before accepting changes.',
