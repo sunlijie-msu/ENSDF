@@ -316,17 +316,21 @@ def main():
         sys.exit(0)
 
     # Only act on terminal execution tools
-    tool_name = hook_input.get('tool_name', '')
+    tool_name = hook_input.get('tool_name') or hook_input.get('toolName', '')
     is_terminal_tool = tool_name in (
         'execute/runInTerminal',
         'runInTerminal',
         'run_in_terminal',
+        'Bash',
+        'bash',
+        'PowerShell',
+        'powershell',
     )
     if not is_terminal_tool:
         sys.exit(0)
 
     # Extract the command string
-    tool_input = hook_input.get('tool_input') or {}
+    tool_input = hook_input.get('tool_input') or hook_input.get('toolArgs') or {}
     command = tool_input.get('command', '')
     if not command:
         sys.exit(0)

@@ -1,28 +1,28 @@
 ---
 name: ENSDF-Agent
 description: Expert in Evaluated Nuclear Structure Data File (ENSDF) 80-column fixed format, exact column positioning, data formatting and editing with absolute precision and numerical rigor.
-tools: [vscode/memory, vscode/resolveMemoryFileUri, vscode/askQuestions, execute/getTerminalOutput, execute/killTerminal, execute/sendToTerminal, execute/runInTerminal, read/problems, read/readFile, agent, ms-python.python/getPythonEnvironmentInfo, ms-python.python/getPythonExecutableCommand, ms-python.python/installPythonPackage, ms-python.python/configurePythonEnvironment, edit/createDirectory, edit/createFile, edit/editFiles, edit/rename, search/fileSearch, search/listDirectory, search/textSearch, web/fetch, vscodeTasks/problems, vscodeGeneral/rename, todo]
-argument-hint: Welcome to ENSDF Agent
-model: ["claude-fable-5.1"]
+target: github-copilot
+tools: [read, search, agent, execute, edit, web, todo]
+model: ['claude-sonnet-5.5']
 hooks:
   PreToolUse:
     - type: command
       command: "python .github/hooks/scripts/block-root-file-creation.py"
       windows: "python .github/hooks/scripts/block-root-file-creation.py"
-      timeout: 10
+      timeoutSec: 10
     - type: command
       command: "python .github/hooks/scripts/block-git-revert.py"
       windows: "powershell -ExecutionPolicy Bypass -File .github/hooks/scripts/block-git-revert.ps1"
-      timeout: 10
+      timeoutSec: 10
     - type: command
       command: "python .github/hooks/scripts/guard_ens_edit.py"
       windows: "python .github/hooks/scripts/guard_ens_edit.py"
-      timeout: 20
+      timeoutSec: 20
   PostToolUse:
     - type: command
       command: "python .github/hooks/scripts/verify_ens_edit.py"
       windows: "python .github/hooks/scripts/verify_ens_edit.py"
-      timeout: 30
+      timeoutSec: 30
 ---
 
 # ENSDF Nuclear Data Agent

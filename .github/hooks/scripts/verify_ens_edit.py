@@ -7,7 +7,10 @@ import sys
 import difflib
 
 MUTATING_RE = re.compile(r"--fix\b|>>?\s|Set-Content|Out-File|Add-Content|\.write_text\(|WriteAllText", re.IGNORECASE)
-EDIT_TOOLS = {"replace_string_in_file", "multi_replace_string_in_file", "editFiles", "edit/editFiles"}
+EDIT_TOOLS = {
+    "replace_string_in_file", "multi_replace_string_in_file", "editFiles", "edit/editFiles",
+    "Edit", "edit", "Write", "write", "str_replace", "str_replace_editor",
+}
 
 # ENSDF-Agent Hook: Validate .ens files after edits
 # --------------------------------------------------------
@@ -183,7 +186,7 @@ def find_all_ens_paths(payload):
       - TOOL_INPUT_FILE_PATH env var          → set by some integrations
     """
     paths = set()
-    tool_input = payload.get("tool_input") or {}
+    tool_input = payload.get("tool_input") or payload.get("toolArgs") or {}
 
     # Environment variable override (used by some Claude Code integrations)
     env_path = os.environ.get("TOOL_INPUT_FILE_PATH", "")
@@ -191,7 +194,7 @@ def find_all_ens_paths(payload):
         paths.add(env_path)
 
     # Direct and workspace-edit payloads
-    for key in ("filePath", "file_path"):
+    for key in ("filePath", "file_path", "path", "uri"):
         value = tool_input.get(key)
         if isinstance(value, str) and value.lower().endswith(".ens"):
             paths.add(value)
@@ -220,7 +223,7 @@ def find_all_ens_paths(payload):
                     paths.add(value)
 
     # apply_patch → parse file paths from patch header lines
-    patch_text = tool_input.get("input")
+    patch_text = tool_input.get("input") or tool_input.get("patch")
     if isinstance(patch_text, str):
         for match in re.finditer(r"\*\*\* (?:Update|Add) File: (.+)", patch_text):
             path = match.group(1).strip()
@@ -229,7 +232,7 @@ def find_all_ens_paths(payload):
 
     # run_in_terminal / send_to_terminal → only when the command looks mutating
     # (avoids re-validating on every read-only script call)
-    command_text = tool_input.get("command")
+    command_text = tool_input.get("command") or tool_input.get("input")
     if isinstance(command_text, str) and "--dry-run" not in command_text and MUTATING_RE.search(command_text):
         for match in re.finditer(r"[^\s\"']+\.ens", command_text, re.IGNORECASE):
             paths.add(match.group(0).strip("\"'"))
@@ -260,8 +263,8 @@ def extract_changed_lines_from_pair(old_text, new_text):
 
 def extract_all_changed_lines(payload):
     """Collect all changed ENSDF lines across all replacements in this tool call."""
-    tool_name = payload.get("tool_name", "")
-    tool_input = payload.get("tool_input") or {}
+    tool_name = payload.get("tool_name") or payload.get("toolName", "")
+    tool_input = payload.get("tool_input") or payload.get("toolArgs") or {}
 
     if tool_name == "apply_patch":
         patch_text = tool_input.get("input", "")
@@ -379,16 +382,16 @@ def is_mutating_call(payload):
     Popping tokens for read calls caused false
     "changed since your last read/edit (concurrent edit)" denials.
     """
-    tool = payload.get("tool_name", "")
-    if tool in EDIT_TOOLS or tool in ("apply_patch", "create_file"):
+    tool = payload.get("tool_name") or payload.get("toolName", "")
+    if tool in EDIT_TOOLS or tool in ("apply_patch", "create_file", "Write", "write"):
         return True
-    command = (payload.get("tool_input") or {}).get("command")
+    command = (payload.get("tool_input") or payload.get("toolArgs") or {}).get("command")
     return isinstance(command, str) and "--dry-run" not in command and bool(MUTATING_RE.search(command))
 
 
 def main():
     payload = load_input()
-    tool = payload.get("tool_name", "")
+    tool = payload.get("tool_name") or payload.get("toolName", "")
 
     # Read-only calls: nothing to validate; the guard token must survive.
     if tool in ("read_file", "readFile", "read/readFile"):
@@ -417,6 +420,10 @@ def main():
                 "hookEventName": "PostToolUse",
                 "additionalContext": "Predicted post-edit hash did not match actual file content.",
             },
+            "additionalContext": (
+                "ENSDF post-edit content differs from the PreToolUse prediction. "
+                "Re-read the affected block, inspect the diff, and rebuild a smaller exact edit."
+            ),
         })
         return
 
@@ -443,6 +450,10 @@ def main():
                 "hookEventName": "PostToolUse",
                 "additionalContext": f"ASCII validation FAILED:\n{error_text}",
             },
+            "additionalContext": (
+                "ENSDF ASCII-only validation failed after the edit. Fix the listed lines before proceeding.\n"
+                f"{error_text}"
+            ),
         })
         return
 
@@ -487,6 +498,10 @@ def main():
             "hookEventName": "PostToolUse",
             "additionalContext": f"ensdf_1line_ruler.py FAILED:\n{error_text}",
         },
+        "additionalContext": (
+            "ENSDF 80-column validation failed after the edit. Fix the listed records before proceeding.\n"
+            f"{error_text}"
+        ),
     })
 
 

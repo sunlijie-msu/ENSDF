@@ -31,15 +31,22 @@ try {
 
 # --- Only act on terminal execution tools ---
 $tool_name = $hook_input.tool_name
+if (-not $tool_name) { $tool_name = $hook_input.toolName }
 $is_terminal_tool = $tool_name -in @(
     "execute/runInTerminal",
     "runInTerminal",
-    "run_in_terminal"
+    "run_in_terminal",
+    "Bash",
+    "bash",
+    "PowerShell",
+    "powershell"
 )
 if (-not $is_terminal_tool) { exit 0 }
 
 # --- Extract the command string ---
-$command = $hook_input.tool_input.command
+$tool_input = $hook_input.tool_input
+if (-not $tool_input) { $tool_input = $hook_input.toolArgs }
+$command = $tool_input.command
 if ([string]::IsNullOrEmpty($command)) { exit 0 }
 
 # Normalize: collapse whitespace but preserve separators so chained commands can
@@ -364,6 +371,8 @@ $output = [ordered]@{
     continue = $false
     stopReason = $reason
     systemMessage = $reason
+    permissionDecision       = "deny"
+    permissionDecisionReason = $reason
     hookSpecificOutput = [ordered]@{
         hookEventName            = "PreToolUse"
         permissionDecision       = "deny"

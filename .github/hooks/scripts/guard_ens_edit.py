@@ -57,14 +57,23 @@ from urllib.parse import unquote, urlparse
 SPAN = 8  # max lines in one oldString
 ENS_PATH_RE = re.compile(r"[^\s\"']+\.ens", re.IGNORECASE)
 MUTATING_RE = re.compile(r"--fix\b|>>?\s|Set-Content|Out-File|Add-Content|\.write_text\(|WriteAllText", re.IGNORECASE)
-EDIT_TOOLS = {"replace_string_in_file", "multi_replace_string_in_file", "editFiles", "edit/editFiles"}
-READ_TOOLS = {"read_file", "readFile", "read/readFile"}
+EDIT_TOOLS = {
+    "replace_string_in_file", "multi_replace_string_in_file", "editFiles", "edit/editFiles",
+    "Edit", "edit", "Write", "write", "str_replace", "str_replace_editor",
+}
+READ_TOOLS = {"read_file", "readFile", "read/readFile", "Read", "read", "view"}
 
 
 def deny(reason):
-    payload = json.dumps({"hookSpecificOutput": {"hookEventName": "PreToolUse",
-                                             "permissionDecision": "deny",
-                                             "permissionDecisionReason": reason}})
+    payload = json.dumps({
+        "permissionDecision": "deny",
+        "permissionDecisionReason": reason,
+        "hookSpecificOutput": {
+            "hookEventName": "PreToolUse",
+            "permissionDecision": "deny",
+            "permissionDecisionReason": reason,
+        },
+    })
     write_stdout(payload)
     sys.exit(0)
 
@@ -361,15 +370,15 @@ def guard_terminal(command, state, root):
 
 def main():
     event = load_event()
-    tool = event.get("tool_name", "")
-    data = event.get("tool_input") or {}
+    tool = event.get("tool_name") or event.get("toolName", "")
+    data = event.get("tool_input") or event.get("toolArgs") or {}
     root = workspace_root(event)
     state_path = os.path.join(root, ".github", "temp", "ens_guard", "state.json")
     state = state_load(state_path)
 
     if tool in READ_TOOLS:  # a read refreshes freshness; verify skips reads so it is not consumed
-        path = data.get("filePath", "")
-        if path.lower().endswith(".ens"):
+        path = data.get("filePath") or data.get("file_path") or data.get("path") or ""
+        if isinstance(path, str) and path.lower().endswith(".ens"):
             text = read(key_of(path, root))
             if text is not None:
                 state[key_of(path, root)] = digest(text)
@@ -377,14 +386,14 @@ def main():
         return
 
     if tool == "apply_patch":
-        patch_text = data.get("input", "") or ""
+        patch_text = data.get("input") or data.get("patch", "") or ""
         if re.search(r"^\*\*\* (?:Update|Add|Delete) File: .*\.ens", patch_text, re.IGNORECASE | re.MULTILINE):
             operations = comment_patch_operations(patch_text, root)
             if guard_comment_operations(operations, state, root):
                 state_save(state, state_path)
         return
 
-    if tool in ("run_in_terminal", "send_to_terminal"):
+    if tool in ("run_in_terminal", "send_to_terminal", "Bash", "bash", "PowerShell", "powershell"):
         if guard_terminal(data.get("command", "") or "", state, root):
             state_save(state, state_path)
         return

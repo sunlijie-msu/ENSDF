@@ -30,6 +30,8 @@ CREATE_TOOL_NAMES = {
     "edit/createFile",
     "functions.create_file",
     "vscode.createFile",
+    "Write",
+    "write",
 }
 DIRECTORY_TOOL_NAMES = {
     "create_directory",
@@ -43,6 +45,10 @@ TERMINAL_TOOL_NAMES = {
     "run_in_terminal",
     "execute/runInTerminal",
     "functions.run_in_terminal",
+    "Bash",
+    "bash",
+    "PowerShell",
+    "powershell",
 }
 WRITE_COMMANDS = {
     "new-item",
@@ -92,6 +98,8 @@ def load_input():
 
 def emit_denial(reason):
     output = {
+        "permissionDecision": "deny",
+        "permissionDecisionReason": reason,
         "hookSpecificOutput": {
             "hookEventName": "PreToolUse",
             "permissionDecision": "deny",
@@ -147,8 +155,8 @@ def classify_path(file_path, workspace_root):
 
 
 def extract_target_paths(hook_input):
-    tool_name = hook_input.get("tool_name", "")
-    tool_input = hook_input.get("tool_input") or {}
+    tool_name = hook_input.get("tool_name") or hook_input.get("toolName", "")
+    tool_input = hook_input.get("tool_input") or hook_input.get("toolArgs") or {}
     if not isinstance(tool_input, dict):
         return []
 
@@ -161,7 +169,7 @@ def extract_target_paths(hook_input):
         return []
 
     if tool_name in PATCH_TOOL_NAMES:
-        patch_text = tool_input.get("input", "")
+        patch_text = tool_input.get("input") or tool_input.get("patch", "")
         if not isinstance(patch_text, str):
             return []
         paths = []
