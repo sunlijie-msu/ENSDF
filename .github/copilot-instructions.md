@@ -112,10 +112,9 @@ Each field begins at prescribed columns with fixed widths. Content must be left-
 ### Data File Concurrent Editing Safeguards (hook-enforced)
 
 - While you are working on the task, agentic reasoning may take some time. Meanwhile, human user may have made changes on dataset files concurrently. Stay focused on the task. Do not get confused or distracted. Preserve the human user's concurrent edits.
-- Reload target immediately before every edit or mutating script/terminal call; never trust line numbers, memory, or cached baseline copies.
-- Guard every edit by ensuring anchors are byte-exact and unique. Never use short, repeated, or cross-record anchors.
-- If ambiguous match, differing content, or a hook denial → STOP, re-read, rebuild; never bypass or overwrite a concurrent edit.
-- After each edit, reload and verify changed text, neighbors, diff, and post-edit prediction.
+- Reload the current target ens file before every edit if the file has been modified by human user.
+- Build a unique, byte-exact replacement anchor for each edit. Never trust line numbers, memory, or cached copies.
+- After each edit, reload and verify changed text, neighbors, diff.
 
 #### VS Code Diff View Requirement: Mandatory Human Review Layer
 
