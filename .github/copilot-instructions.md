@@ -50,17 +50,17 @@ Leverage coding, scripts, and programming tools when necessary to effectively de
 ### Script Management
 
 - Always use existing ENSDF 80-column validation tools: `.github\scripts\column_calibrate.py`, `.github\scripts\ensdf_1line_ruler.py`, `.github\scripts\check_gamma_ordering.py`
-- Avoid creating redundant scripts; check existing functionality first (verify_*, check_*, analyze_*, compare_*)
-- Consolidate functionality into existing scripts rather than creating duplicates
-- Create new scripts in `.github\temp` folder only
+- Avoid creating redundant scripts
+- Try to consolidate repeatedly needed functionalities into existing scripts rather than creating redundancies
 - Never create scripts, temporary text files, markdown files, report files, or .ens files in ENSDF root directory or in new/old/raw folders
-- Move misplaced files to `.github\temp\YYYY-MM-DD_description\` immediately when discovered
+- Create new files in `.github\temp` folder only
+- Move misplaced files to `.github\temp\YYYY-MM-DD_description\` immediately once discovered
 
 ### ENSDF File Management
 
 **Hard exclusion:** In every ENSDF task, treat `.old` files as forbidden inputs. Never open, read, search, parse, compare, quote, summarize, or otherwise use their contents, even if they appear relevant for a task. Exclude `.old` files from content searches and analysis. Never use `.old` as fallback.
 
-**Critical: Edit `.ens` files in place. Never create versions.**
+Critical: Edit `.ens` files in place. Never create versions.
 
 **Forbidden file suffixes:**
 - `_updated.ens`, `_backup.ens`, `_corrected.ens`, `_fixed.ens`, `_v2.ens`, `_final.ens`, `_backup_20251013.ens`, etc.
@@ -107,7 +107,7 @@ Each field begins at prescribed columns with fixed widths. Content must be left-
 - Comment editing tasks should prioritize content accuracy and completeness. Wrapping to 80 characters is not required for comments. Human user will wrap comments to 80-char lines using other tools.
 - If the task is purely editing comments, you must ensure no accidental changes are made to data records via git diff.
 
-**AI Behavior Rule:** Never claim edit completion without ruler and column validation.
+**AI Behavior Rule:** Never claim data edits completion without ruler and column validation.
 
 ### Data File Concurrent Editing Safeguards (hook-enforced)
 
