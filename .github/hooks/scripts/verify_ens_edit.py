@@ -242,7 +242,7 @@ def find_all_ens_paths(payload):
     # apply_patch → parse file paths from patch header lines
     patch_text = tool_input.get("input") or tool_input.get("patch") or tool_input.get("patchText")
     if isinstance(patch_text, str):
-        for match in re.finditer(r"\*\*\* (?:Update|Add|Delete) File: (.+)", patch_text):
+        for match in re.finditer(r"^\*\*\* (?:Update|Add|Delete) File: (.+)$", patch_text, re.MULTILINE):
             path = match.group(1).strip()
             if path.lower().endswith(".ens"):
                 paths.add(path)

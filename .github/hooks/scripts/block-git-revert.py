@@ -11,10 +11,10 @@ Hook event : PreToolUse
 Blocks     : git restore/checkout that can affect .ens files
            : git restore/checkout that target non-temp paths
            : broad or ambiguous git restore/checkout forms
-           : git -C <path> restore/checkout and similar option-prefixed forms
+           : unsafe git -C <path> restore/checkout forms
            : common wrapped shell forms such as cmd /c, powershell -Command,
              bash -c, and pwsh -Command when they invoke git restore/checkout
-Allows     : explicit temp script/code paths that do not touch .ens files
+Allows     : explicit existing temp script/code files with unambiguous paths
            : unrelated terminal commands that merely mention those words as text
 
 Output     : JSON with permissionDecision "deny" - blocks the single tool
@@ -22,7 +22,10 @@ Output     : JSON with permissionDecision "deny" - blocks the single tool
 -----------------------------------------------------------------------
 """
 
+import base64
+import binascii
 import json
+import os
 import posixpath
 import re
 import sys
@@ -78,31 +81,54 @@ def is_ens_path_spec(token):
     return bool(re.search(r'(?i)(^|/)[^/]*\.ens$', normalized))
 
 
-def is_temp_path_spec(token):
-    normalized = normalize_path_token(token)
-    if not normalized:
-        return False
-    if normalized in ('.', '*'):
-        return False
-    return bool(re.search(r'(?i)(^|/)(temp|tmp)(/|$)', normalized))
+CODE_EXTENSIONS = {
+    '.py', '.pyi', '.js', '.mjs', '.cjs', '.jsx', '.ts', '.tsx',
+    '.sh', '.bash', '.ps1', '.psm1', '.bat', '.cmd', '.c', '.h',
+    '.cc', '.cpp', '.cxx', '.hpp', '.go', '.rs', '.java', '.sql',
+}
 
 
-def is_strong_temp_file_path(token):
-    normalized = normalize_path_token(token)
-    if not is_temp_path_spec(normalized):
+def has_dynamic_path_syntax(path):
+    return any(char in path for char in '*?[]$%`~\n\r') or path.startswith(':')
+
+
+def resolve_path(path, cwd, follow_links=True):
+    if not path or has_dynamic_path_syntax(path):
+        return None
+    drive, tail = os.path.splitdrive(path)
+    if drive and not os.path.isabs(path):
+        return None
+    if os.name == 'nt' and os.path.isabs(path) and not drive:
+        return None
+    if ':' in tail:
+        return None
+    if not os.path.isabs(path):
+        path = os.path.join(cwd, path)
+    path = os.path.abspath(path)
+    return os.path.realpath(path) if follow_links else path
+
+
+def is_safe_temp_file(path, cwd):
+    lexical = resolve_path(path, cwd, follow_links=False)
+    resolved = resolve_path(path, cwd)
+    if not lexical or not resolved:
         return False
-    return bool(re.search(r'(?i)(^|/)[^/]+\.[A-Za-z0-9_*?-]+$', normalized))
+    for candidate in (lexical, resolved):
+        parts = os.path.normcase(candidate).replace('\\', '/').split('/')
+        if (not any(part.lower() in ('temp', 'tmp') for part in parts[:-1])
+                or os.path.splitext(candidate)[1].lower() not in CODE_EXTENSIONS):
+            return False
+    return os.path.isfile(resolved)
 
 
 def get_subcommand_option_value_count(subcommand, option_token):
-    option = option_token.lower()
     if subcommand == 'restore':
-        if option in ('-s', '--source', '-u', '--unified',
-                      '--inter-hunk-context', '--pathspec-from-file'):
+        if option_token in ('-s', '--source', '-u', '--unified',
+                            '--inter-hunk-context', '--pathspec-from-file'):
             return 1
     elif subcommand == 'checkout':
-        if option in ('-b', '-B', '--orphan', '--conflict',
-                      '--pathspec-from-file'):
+        if option_token in ('-b', '-B', '--orphan', '--conflict',
+                            '--pathspec-from-file'):
             return 1
     return 0
 
@@ -124,11 +150,29 @@ def get_git_path_specs(segment, subcommand_index, subcommand):
 
         if not saw_double_dash:
             if token.startswith('-'):
+                if token == '--pathspec-from-file' or token.startswith('--pathspec-from-file='):
+                    return {'path_specs': [], 'is_ambiguous': True}
+                if subcommand == 'checkout' and token in ('-b', '-B', '--orphan'):
+                    return {'path_specs': [], 'is_ambiguous': True}
                 skip_count = get_subcommand_option_value_count(subcommand, token)
+                known_flag = token in (
+                    '-p', '--patch', '-W', '--worktree', '-S', '--staged',
+                    '-q', '--quiet', '--progress', '--no-progress', '--ours',
+                    '--theirs', '--merge', '--ignore-unmerged', '--overlay',
+                    '--no-overlay', '-f', '--force', '--ignore-skip-worktree-bits',
+                )
+                known_value = (token.startswith('--source=') or
+                               token.startswith('--conflict=') or
+                               token.startswith('--unified=') or
+                               token.startswith('--inter-hunk-context='))
+                if not skip_count and not known_flag and not known_value:
+                    return {'path_specs': [], 'is_ambiguous': True}
+                if skip_count and i + skip_count >= len(segment):
+                    return {'path_specs': [], 'is_ambiguous': True}
                 i += 1 + skip_count
                 continue
 
-            if subcommand == 'checkout' and not is_strong_temp_file_path(token):
+            if subcommand == 'checkout':
                 return {'path_specs': [], 'is_ambiguous': True}
 
         path_specs.append(token)
@@ -137,10 +181,11 @@ def get_git_path_specs(segment, subcommand_index, subcommand):
     return {'path_specs': path_specs, 'is_ambiguous': False}
 
 
-def get_blocked_git_command(text, depth=0):
+def get_blocked_git_command(text, cwd, depth=0, cwd_uncertain=False):
     if not text or not text.strip() or depth > 2:
         return None
 
+    text = re.sub(r'[\r\n]+', ';', text)
     tokens = get_command_tokens(text)
     if not tokens:
         return None
@@ -159,15 +204,43 @@ def get_blocked_git_command(text, depth=0):
         segments.append(current_segment)
 
     for segment in segments:
+        if segment and unquote_token(segment[0]).lower() in (
+                'cd', 'chdir', 'set-location', 'push-location', 'pop-location'):
+            cwd_uncertain = True
         # Check for shell wrappers (powershell, pwsh, cmd, bash, sh, zsh)
         for i, token in enumerate(segment):
             raw_token = unquote_token(token)
-            if re.match(r'(?i)^(powershell|pwsh|cmd|bash|sh|zsh)$', raw_token):
+            executable = raw_token.replace('\\', '/').rsplit('/', 1)[-1].lower()
+            if executable.endswith('.exe'):
+                executable = executable[:-4]
+            if executable in ('powershell', 'pwsh', 'cmd', 'bash', 'sh', 'zsh'):
                 for j in range(i + 1, len(segment) - 1):
                     wrapper_arg = unquote_token(segment[j])
-                    if re.match(r'(?i)^(-command|-c|/c)$', wrapper_arg):
+                    lower_arg = wrapper_arg.lower()
+                    encoded = (
+                        executable in ('powershell', 'pwsh')
+                        and len(lower_arg) >= 2
+                        and '-encodedcommand'.startswith(lower_arg)
+                    )
+                    is_command = (
+                        lower_arg in ('-command', '-c', '/c')
+                        or (executable in ('bash', 'sh', 'zsh')
+                            and bool(re.fullmatch(r'-[a-z]*c[a-z]*', wrapper_arg)))
+                    )
+                    if encoded or is_command:
                         nested_text = unquote_token(segment[j + 1])
-                        nested_match = get_blocked_git_command(nested_text, depth + 1)
+                        if encoded:
+                            try:
+                                nested_text = base64.b64decode(
+                                    nested_text, validate=True).decode('utf-16-le')
+                            except (binascii.Error, UnicodeDecodeError, ValueError):
+                                return {
+                                    'subcommand': '',
+                                    'path_specs': [],
+                                    'reason_code': 'opaque',
+                                }
+                        nested_match = get_blocked_git_command(
+                            nested_text, cwd, depth + 1, cwd_uncertain)
                         if nested_match:
                             return nested_match
                         break
@@ -179,21 +252,47 @@ def get_blocked_git_command(text, depth=0):
                 continue
 
             j = i + 1
+            git_cwd = cwd
+            git_context_uncertain = cwd_uncertain
             while j < len(segment):
                 next_token = unquote_token(segment[j])
                 if not next_token or not next_token.strip():
                     j += 1
                     continue
 
-                if re.match(r'(?i)^(-c|-C|--config-env)$', next_token):
+                if next_token == '-C' or next_token.startswith('-C'):
+                    if next_token == '-C':
+                        if j + 1 >= len(segment):
+                            break
+                        directory = unquote_token(segment[j + 1])
+                        j += 2
+                    else:
+                        directory = next_token[2:]
+                        j += 1
+                    resolved = resolve_path(directory, git_cwd)
+                    if resolved is None:
+                        git_context_uncertain = True
+                    else:
+                        git_cwd = resolved
+                    continue
+
+                if next_token in ('-c', '--config-env'):
+                    if j + 1 >= len(segment):
+                        break
+                    config = unquote_token(segment[j + 1]).lower()
+                    if config.startswith(('core.worktree=', 'core.bare=')):
+                        git_context_uncertain = True
                     j += 2
                     continue
 
-                if re.match(r'(?i)^(--git-dir|--work-tree|--namespace|--super-prefix)$', next_token):
+                if next_token in ('--git-dir', '--work-tree', '--namespace', '--super-prefix'):
+                    git_context_uncertain = True
                     j += 2
                     continue
 
                 if next_token.startswith('-'):
+                    if next_token not in ('--no-pager', '--paginate', '--no-optional-locks'):
+                        git_context_uncertain = True
                     j += 1
                     continue
 
@@ -202,7 +301,7 @@ def get_blocked_git_command(text, depth=0):
                     path_info = get_git_path_specs(segment, j, subcommand)
                     path_specs = path_info['path_specs']
 
-                    if path_info['is_ambiguous']:
+                    if path_info['is_ambiguous'] or git_context_uncertain:
                         return {
                             'subcommand': subcommand,
                             'path_specs': [],
@@ -223,7 +322,7 @@ def get_blocked_git_command(text, depth=0):
                             'reason_code': 'ens',
                         }
 
-                    if any(not is_temp_path_spec(p) for p in path_specs):
+                    if any(not is_safe_temp_file(p, git_cwd) for p in path_specs):
                         return {
                             'subcommand': subcommand,
                             'path_specs': path_specs,
@@ -239,7 +338,8 @@ def get_blocked_git_command(text, depth=0):
 
 
 def build_denial_output(blocked_info, cmd):
-    blocked_command = f"git {blocked_info['subcommand']}"
+    blocked_command = (f"git {blocked_info['subcommand']}"
+                       if blocked_info['subcommand'] else 'PowerShell encoded command')
     command_excerpt = (cmd[:220] + '...') if len(cmd) > 220 else cmd
 
     if blocked_info['path_specs']:
@@ -254,13 +354,16 @@ def build_denial_output(blocked_info, cmd):
             ' .ens nuclear dataset files.'
         ),
         'non-temp': (
-            'This command is blocked because at least one target path'
-            ' is outside a temp folder.'
+            'This command is blocked because at least one target is not an'
+            ' explicit existing temp script/code file, or is a wildcard or directory.'
         ),
         'ambiguous': (
-            'This command is blocked because `git checkout` without an explicit'
-            ' temp file path is ambiguous and could switch branches or affect'
-            ' critical files.'
+            'This command is blocked because its Git options, working directory,'
+            ' or pathspec are ambiguous and could affect critical files.'
+        ),
+        'opaque': (
+            'This command is blocked because its encoded PowerShell command'
+            ' cannot be decoded for inspection.'
         ),
     }
     why_blocked = why_blocked_map.get(
@@ -359,11 +462,15 @@ def main():
         }))
         sys.exit(0)
 
-    # Normalize: collapse whitespace
-    cmd = re.sub(r'[\r\n]+', ' ', command)
-    cmd = re.sub(r'\s+', ' ', cmd).strip()
+    cmd = re.sub(r'[\r\n]+', ';', command).strip()
 
-    blocked_info = get_blocked_git_command(cmd)
+    cwd = hook_input.get('cwd')
+    cwd_uncertain = cwd is not None and (
+        not isinstance(cwd, str) or not os.path.isabs(cwd))
+    if cwd_uncertain or cwd is None:
+        cwd = os.getcwd()
+    blocked_info = get_blocked_git_command(
+        cmd, os.path.realpath(cwd), cwd_uncertain=cwd_uncertain)
     if not blocked_info:
         sys.exit(0)
 

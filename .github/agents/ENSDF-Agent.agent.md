@@ -11,6 +11,7 @@ hooks:
       timeoutSec: 30
     - type: command
       command: "python .github/hooks/scripts/block-git-revert.py"
+      cwd: "."
       timeoutSec: 30
     - type: command
       command: "python .github/hooks/scripts/guard_ens_edit.py"
