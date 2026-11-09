@@ -447,9 +447,6 @@ Units or percent signs are placed after the value before the uncertainty:
 
 - **NEVER** edit `.old` files (files from previous evaluation rounds).
 - **NEVER** modify first line `Identification Record` indentation or spacing in `.ens` files.
-- **NEVER** modify XREF lists (XREF entries with pattern `NUCID X` have their own specific formatting rules).
-- Agent-scoped PreToolUse hooks deny unsafe writes; PostToolUse hooks report validation failures after a tool runs and cannot undo its changes.
-- Hook timeouts may allow a tool to proceed; hooks are workflow safeguards, not hard security boundaries.
 
 ### Debugging Technique
 
