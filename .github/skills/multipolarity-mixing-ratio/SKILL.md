@@ -4,7 +4,7 @@ description: >
   Use this skill as a reference guide for ENSDF multipolarity (M) and mixing ratio (MR)
   field notation. Suitable for writing or reviewing G-record multipolarity and mixing
   ratio fields.
-argument-hint: [multipolarity (M) and mixing ratio (MR) of gamma (G-record)]
+argument-hint: "[multipolarity (M) and mixing ratio (MR) of gamma (G-record)]"
 ---
 
 # ENSDF Multipolarity and Mixing Ratio Reference

@@ -1,4 +1,4 @@
-﻿---
+---
 name: editorial-review-guidelines
 description: >
   Use this skill when performing editorial review of ENSDF comment lines.

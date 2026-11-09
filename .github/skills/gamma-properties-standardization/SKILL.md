@@ -6,7 +6,7 @@ description: >
   ENSDF G-records. Extracts data from messy raw comment text, populates
   G-record fields, and adds standardized cG comment lines with proper
   subscript notation and {I} uncertainties.
-argument-hint: [ENSDF file path]
+argument-hint: "[ENSDF file path]"
 ---
 
 # ENSDF Gamma Properties Standardization

@@ -6,7 +6,7 @@ description: >
   Suggested Adopted Result, minimum-uncertainty rule, and lifetime
   uncertainty limit 99. Suitable for adopting measured values from multiple
   publications.
-argument-hint: [VALUE1 UNC1 VALUE2 UNC2 ...]
+argument-hint: "[VALUE1 UNC1 VALUE2 UNC2 ...]"
 ---
 
 # ENSDF Averaging

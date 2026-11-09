@@ -2,7 +2,7 @@
 name: xref-level-matching
 description: >
   Use this skill to generate the level-by-level matching table between an ENSDF adopted dataset and the individual datasets referenced by its XREF labels, and to identify possible mismatches in level matching. CHECK-ONLY — reports findings without editing files.
-argument-hint: [adopted.ens] [dataset.ens ...]
+argument-hint: "[adopted.ens] [dataset.ens ...]"
 ---
 
 # XREF Level Matching: Adopted vs. Dataset Levels

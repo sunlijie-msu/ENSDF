@@ -7,7 +7,7 @@ description: >
   J-π values, and energy conservation violations. Fixes comment text
   only — never edits data records. Skip ruler and column validation
   (comment-only workflow).
-argument-hint: [crosscheck comment quoted values]
+argument-hint: "[crosscheck comment quoted values]"
 ---
 
 # Comment Quoted Values Cross-Check

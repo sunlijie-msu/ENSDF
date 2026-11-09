@@ -1,4 +1,4 @@
-﻿---
+---
 name: lifetime-comments-standardization
 description: >
   Standardize cL T$ lifetime comments in ENSDF files. Use (NSR, METHOD) format for individual datasets 

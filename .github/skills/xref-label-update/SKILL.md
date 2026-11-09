@@ -4,7 +4,7 @@ description: >
   Use this skill when updating XREF labels in ENSDF adopted files after
   datasets are added or removed. Handles systematic label shifting and
   parenthetical notations such as (energy), (*), and (?).
-argument-hint: [adopted.ens] [add|remove] [dataset-label]
+argument-hint: "[adopted.ens] [add|remove] [dataset-label]"
 ---
 
 # Update ENSDF Cross-Reference (XREF) Labels

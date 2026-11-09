@@ -5,7 +5,7 @@ description: >
   and the adopted dataset (adopted.ens) to identify which levels are shared and which
   are newly observed. Produces matched/unmatched/adopted-only tables.
   CHECK-ONLY — reports findings without editing files.
-argument-hint: [source.ens] [adopted.ens]
+argument-hint: "[source.ens] [adopted.ens]"
 ---
 
 # Level Matching: Individual Dataset vs. Adopted

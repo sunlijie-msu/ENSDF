@@ -6,7 +6,7 @@ description: >
   confidence levels using parentheses, single/multiple/range spin
   assignments, and critical parentheses placement rules. Suitable for
   writing J-π values in L-records or J$ comment lines.
-argument-hint: [spin-parity expression or L-record line]
+argument-hint: "[spin-parity expression or L-record line]"
 ---
 
 # ENSDF Spin-Parity Interpretation Reference

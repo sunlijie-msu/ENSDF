@@ -2,7 +2,7 @@
 name: rounding
 description: >
   Use this skill when applying rounding and uncertainty conventions in nuclear data evaluation.
-argument-hint: [source.ens] [adopted.ens]
+argument-hint: "[source.ens] [adopted.ens]"
 ---
 
 # Rounding and Uncertainty Conventions
