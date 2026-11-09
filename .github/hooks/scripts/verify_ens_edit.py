@@ -94,14 +94,14 @@ def workspace_root():
     return os.path.realpath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 
 
-def pop_expected_hashes(paths, cwd):
-    """Return post-edit hash mismatches, then consume one-shot expectations."""
+def pop_expected_hashes(paths, cwd, is_failure=False):
+    """Return post-edit mismatches and whether any path changed, then consume tokens."""
     state_path = os.path.join(workspace_root(), ".github", "temp", "ens_guard", "state.json")
     try:
         with open(state_path, encoding="utf-8") as fh:
             state = json.load(fh)
     except FileNotFoundError:
-        return []
+        return [], True
     except (OSError, ValueError) as exc:
         raise ValueError(f"Cannot read ENSDF guard state {state_path}: {exc}") from exc
     if not isinstance(state, dict):
@@ -109,17 +109,32 @@ def pop_expected_hashes(paths, cwd):
 
     mismatches = []
     consumed = False
+    changed = False
+    untracked = False
     for path in paths:
         absolute = os.path.realpath(resolve_path(path, cwd))
-        expected = state.get(absolute)
-        if not expected:
+        token = state.get(absolute)
+        if not token:
+            untracked = True
             continue
         consumed = True
+        if isinstance(token, dict):
+            before = token.get("before")
+            expected = token.get("expected")
+        else:
+            before = token
+            expected = token
         try:
             actual = file_digest(absolute)
         except OSError:
             actual = None
-        if actual != expected:
+        if actual != before:
+            changed = True
+        unchanged_failure = is_failure and before is not None and actual == before
+        if expected is None:
+            if is_failure and before is not None and actual != before:
+                mismatches.append((absolute, expected, actual))
+        elif actual != expected and not unchanged_failure:
             mismatches.append((absolute, expected, actual))
         state.pop(absolute, None)
 
@@ -127,7 +142,7 @@ def pop_expected_hashes(paths, cwd):
         os.makedirs(os.path.dirname(state_path), exist_ok=True)
         with open(state_path, "w", encoding="utf-8") as fh:
             json.dump(state, fh)
-    return mismatches
+    return mismatches, changed or untracked
 
 
 def path_value(item):
@@ -449,13 +464,17 @@ def main():
         return
 
     cwd = payload.get("cwd", "") or os.getcwd()
-    mismatches = pop_expected_hashes(ens_paths, cwd) if is_mutating_call(payload) else []
+    is_failure = payload.get("hook_event_name") == "PostToolUseFailure" or "error" in payload
+    if is_mutating_call(payload):
+        mismatches, changed_or_untracked = pop_expected_hashes(ens_paths, cwd, is_failure)
+    else:
+        mismatches, changed_or_untracked = [], True
     if mismatches:
         files = "\n".join(f"  {path}" for path, _, _ in mismatches)
-        if "error" in payload or payload.get("hook_event_name") == "PostToolUseFailure":
+        if is_failure:
             context = (
-                "The ENSDF tool action failed and the file content differs from the "
-                "PreToolUse prediction. The failure may have left partial changes; "
+                "The ENSDF tool action failed and changed the file from its pre-tool content "
+                "to an unexpected or unverifiable result. It may have left partial changes; "
                 "the action was not undone.\n"
             )
         else:
@@ -471,6 +490,10 @@ def main():
                 "Re-read the affected block, inspect the diff, and rebuild a smaller exact edit."
             ),
         })
+        return
+
+    if is_failure and not changed_or_untracked:
+        emit({})
         return
 
     # ===== PASS 1: ASCII-only validation (ALWAYS — data records AND comments) =====

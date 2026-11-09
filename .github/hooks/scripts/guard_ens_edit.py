@@ -161,6 +161,18 @@ def state_save(state, state_path):
         json.dump(state, fh)
 
 
+def state_expected_hash(token):
+    if isinstance(token, dict):
+        return token.get("expected", token.get("before"))
+    return token
+
+
+def state_before_hash(token, current_hash):
+    if isinstance(token, dict):
+        return token.get("before", current_hash)
+    return current_hash
+
+
 def path_value(item):
     for field in ("filePath", "file_path", "fileName", "file_name", "path", "uri"):
         value = item.get(field)
@@ -240,14 +252,17 @@ def guard_operations(operations, state, root):
         text = read(key)
         if text is None:
             deny(f"Cannot read {os.path.basename(key)}.")
-        expected = state.get(key)
+        token = state.get(key)
+        expected = state_expected_hash(token)
         if expected is None:
             deny(f"No fresh-read token for {os.path.basename(key)} (tokens are one-shot: issued by read_file, "
                  f"consumed by each verified edit) — this is not a concurrent-edit warning. "
                  f"Re-read the file, then retry the edit.")
-        if expected != digest(text):
+        current_hash = digest(text)
+        if expected != current_hash:
             deny(f"{os.path.basename(key)} changed on disk since your last read/edit (concurrent edit). "
                  f"Re-read the surrounding block, rebuild the anchor, retry. Never overwrite a concurrent edit.")
+        before_hash = state_before_hash(token, current_hash)
         for old, new in ops:
             hits = text.count(old)
             if hits != 1:
@@ -256,7 +271,7 @@ def guard_operations(operations, state, root):
             if len(old.split("\n")) > SPAN:
                 deny(f"Edit spans more than {SPAN} lines. Split it into record-group edits.")
             text = text.replace(old, new, 1)
-        state[key] = digest(text)
+        state[key] = {"before": before_hash, "expected": digest(text)}
         touched = True
     return touched
 
@@ -334,19 +349,22 @@ def guard_comment_operations(operations, state, root):
         text = read(key)
         if text is None:
             deny(f"Cannot read {os.path.basename(key)}.")
-        expected = state.get(key)
+        token = state.get(key)
+        expected = state_expected_hash(token)
         if expected is None:
             deny(f"No fresh-read token for {os.path.basename(key)} (tokens are one-shot: issued by read_file, "
                  f"consumed by each verified edit) — this is not a concurrent-edit warning. "
                  f"Re-read the file, then retry the edit.")
-        if expected != digest(text):
+        current_hash = digest(text)
+        if expected != current_hash:
             deny(f"{os.path.basename(key)} changed on disk since your last read/edit (concurrent edit). "
                  f"Re-read the surrounding block, rebuild the anchor, retry. Never overwrite a concurrent edit.")
+        before_hash = state_before_hash(token, current_hash)
         lines = text.split("\n")
         if comment_index >= len(lines) or lines[comment_index][6:7] != "c":
             deny("Comment anchor no longer identifies a cL/cG record; reread and rebuild the edit.")
         lines[comment_index] = new_line
-        state[key] = digest("\n".join(lines))
+        state[key] = {"before": before_hash, "expected": digest("\n".join(lines))}
         touched = True
     return touched
 
@@ -362,7 +380,8 @@ def guard_edits(data, state, root):
 def guard_terminal(command, state, root):
     """run_in_terminal / send_to_terminal: a command that rewrites a whole .ens
     file (e.g. column_calibrate.py --fix) bypasses anchor matching entirely, so
-    it gets the same freshness gate, then invalidates state for that file."""
+    it gets the same freshness gate, records its pre-write hash, and invalidates
+    the edit token until the file is read again."""
     if "--dry-run" in command or not MUTATING_RE.search(command):
         return False
     touched = False
@@ -371,14 +390,16 @@ def guard_terminal(command, state, root):
         text = read(key)
         if text is None:
             continue
-        expected = state.get(key)
+        token = state.get(key)
+        expected = state_expected_hash(token)
         if expected is None:
             deny(f"No fresh-read token for {os.path.basename(key)} — re-read the file before running "
                  f"a command that rewrites it (this is not a concurrent-edit warning).")
-        if expected != digest(text):
+        current_hash = digest(text)
+        if expected != current_hash:
             deny(f"{os.path.basename(key)} changed on disk since your last read (concurrent edit). "
                  f"Re-read before running a command that rewrites this file.")
-        state.pop(key, None)
+        state[key] = {"before": current_hash, "expected": None}
         touched = True
     return touched
 
