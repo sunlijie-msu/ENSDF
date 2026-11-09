@@ -22,6 +22,8 @@ import json
 import os
 import re
 import sys
+from urllib.parse import urlsplit
+from urllib.request import url2pathname
 
 
 CREATE_TOOL_NAMES = {
@@ -93,18 +95,15 @@ def load_input():
         raw = sys.stdin.read().encode("utf-8", "replace")
     if not raw:
         return {}, "Hook input was empty; file creation was blocked."
-    payload = None
     for encoding in ("utf-8-sig", "utf-8"):
         try:
             payload = json.loads(raw.decode(encoding))
-            break
+            if not isinstance(payload, dict):
+                return {}, "Hook input was not a JSON object; file creation was blocked."
+            return payload, ""
         except (UnicodeDecodeError, json.JSONDecodeError):
             continue
-    if payload is None:
-        return {}, "Hook input was not valid UTF-8 JSON; file creation was blocked."
-    if not isinstance(payload, dict):
-        return {}, "Hook input was not a JSON object; file creation was blocked."
-    return payload, ""
+    return {}, "Hook input was not valid UTF-8 JSON; file creation was blocked."
 
 
 def emit_denial(reason):
@@ -115,12 +114,15 @@ def emit_denial(reason):
     print(json.dumps(output))
 
 
-def default_workspace_root(hook_input):
-    # Installed plugins live outside the workspace; use the hook event's cwd.
+def working_directory(hook_input):
     cwd = hook_input.get("cwd")
     if isinstance(cwd, str) and cwd.strip():
         return os.path.realpath(os.path.normpath(cwd))
     return os.path.realpath(os.getcwd())
+
+
+def workspace_root():
+    return os.path.realpath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 
 
 def unquote_token(token):
@@ -129,15 +131,23 @@ def unquote_token(token):
     return token
 
 
-def resolve_path(file_path, workspace_root):
+def resolve_path(file_path, cwd):
+    if file_path.lower().startswith("file:"):
+        parsed = urlsplit(file_path)
+        if parsed.query or parsed.fragment:
+            raise ValueError("File URI must not contain a query or fragment.")
+        uri_path = parsed.path
+        if parsed.netloc and parsed.netloc.lower() != "localhost":
+            uri_path = "//" + parsed.netloc + uri_path
+        file_path = url2pathname(uri_path)
     if not os.path.isabs(file_path):
-        file_path = os.path.join(workspace_root, file_path)
+        file_path = os.path.join(cwd, file_path)
     return os.path.realpath(os.path.normpath(file_path))
 
 
-def classify_path(file_path, workspace_root):
+def classify_path(file_path, workspace_root, cwd):
     """Return (violation_kind, matched_directory, absolute_path)."""
-    absolute_path = resolve_path(file_path, workspace_root)
+    absolute_path = resolve_path(file_path, cwd)
     root = os.path.realpath(os.path.normpath(workspace_root))
     parent_dir = os.path.dirname(absolute_path)
 
@@ -247,17 +257,28 @@ def extract_terminal_targets(command):
     ambiguous write operations instead of allowing them silently.
     """
     command = neutralize_stream_redirections(command)
-    tokens = re.findall(r'"[^"]*"|\'[^\']*\'|[^\s|;&]+', command)
-    normalized_tokens = [unquote_token(token) for token in tokens]
+    tokens = re.findall(r'"[^"]*"|\'[^\']*\'|&&|\|\||[|;&]|[^\s|;&]+', command)
     targets = []
     write_seen = False
+    segment_has_target = False
     pending_option = None
-    for token in normalized_tokens:
+    for raw_token in tokens:
+        if raw_token in (";", "|", "||", "&", "&&"):
+            if pending_option in ("path", "redirection") or (write_seen and not segment_has_target):
+                operation = "terminal redirection" if pending_option == "redirection" else "terminal write"
+                targets.append(("", operation))
+            write_seen = False
+            segment_has_target = False
+            pending_option = None
+            continue
+        token = unquote_token(raw_token)
         if pending_option:
             if pending_option == "path":
                 targets.append((token, "terminal write"))
+                segment_has_target = True
             elif pending_option == "redirection":
                 targets.append((token, "terminal redirection"))
+                segment_has_target = True
             pending_option = None
             continue
         lower = token.lower()
@@ -271,6 +292,7 @@ def extract_terminal_targets(command):
                 continue
             if target:
                 targets.append((target, "terminal redirection"))
+                segment_has_target = True
             else:
                 pending_option = "redirection"
             continue
@@ -282,7 +304,8 @@ def extract_terminal_targets(command):
             continue
         if write_seen and not token.startswith("-") and lower not in ("file", "directory"):
             targets.append((token, "terminal write"))
-    if pending_option in ("path", "redirection") or (write_seen and not targets):
+            segment_has_target = True
+    if pending_option in ("path", "redirection") or (write_seen and not segment_has_target):
         operation = "terminal redirection" if pending_option == "redirection" else "terminal write"
         targets.append(("", operation))
     return targets
@@ -296,10 +319,11 @@ def main():
             + parse_error
         )
         sys.exit(0)
-    if not hook_input:
+    tool_name = hook_input.get("tool_name") or hook_input.get("toolName")
+    if not isinstance(tool_name, str) or not tool_name.strip():
         emit_denial(
             "BLOCKED by workspace security hook (block-root-file-creation).\n\n"
-            "Hook input was empty; file creation cannot be verified safely."
+            "Hook input has no valid tool name; file creation cannot be verified safely."
         )
         sys.exit(0)
 
@@ -307,7 +331,8 @@ def main():
     if not target_paths:
         sys.exit(0)
 
-    workspace_root = default_workspace_root(hook_input)
+    root = workspace_root()
+    cwd = working_directory(hook_input)
 
     for file_path, operation in target_paths:
         if not file_path:
@@ -317,7 +342,7 @@ def main():
                 "Use an explicit path under .github/temp/ for AI-generated files."
             )
             break
-        violation, matched_dir, absolute_path = classify_path(file_path, workspace_root)
+        violation, matched_dir, absolute_path = classify_path(file_path, root, cwd)
         if not violation:
             continue
 
@@ -328,7 +353,7 @@ def main():
                 f"Reason: Creating files directly in the workspace root is not allowed.\n"
                 f"Operation: {operation}\n"
                 f"Target: {file_name}\n"
-                f"Root:   {workspace_root}"
+                f"Root:   {root}"
             )
         else:
             violation_detail = (

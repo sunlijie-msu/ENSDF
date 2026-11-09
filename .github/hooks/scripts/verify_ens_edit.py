@@ -5,6 +5,8 @@ import re
 import subprocess
 import sys
 import difflib
+from urllib.parse import urlsplit
+from urllib.request import url2pathname
 
 MUTATING_RE = re.compile(r"--fix\b|>>?\s|Set-Content|Out-File|Add-Content|\.write_text\(|WriteAllText", re.IGNORECASE)
 EDIT_TOOLS = {
@@ -88,14 +90,22 @@ def file_digest(path):
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
+def workspace_root():
+    return os.path.realpath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+
+
 def pop_expected_hashes(paths, cwd):
     """Return post-edit hash mismatches, then consume one-shot expectations."""
-    state_path = os.path.join(cwd, ".github", "temp", "ens_guard", "state.json")
+    state_path = os.path.join(workspace_root(), ".github", "temp", "ens_guard", "state.json")
     try:
         with open(state_path, encoding="utf-8") as fh:
             state = json.load(fh)
-    except (OSError, ValueError):
+    except FileNotFoundError:
         return []
+    except (OSError, ValueError) as exc:
+        raise ValueError(f"Cannot read ENSDF guard state {state_path}: {exc}") from exc
+    if not isinstance(state, dict):
+        raise ValueError(f"ENSDF guard state is not a JSON object: {state_path}")
 
     mismatches = []
     consumed = False
@@ -321,17 +331,15 @@ def comment_only_edit(payload):
 
 def find_ruler_script(payload):
     """Locate bundled ruler first, then the workspace copy."""
-    cwd = payload.get("cwd", "") or os.getcwd()
     plugin_root = os.environ.get("PLUGIN_ROOT", "")
     if plugin_root:
         candidate = os.path.join(plugin_root, "scripts", "ensdf_1line_ruler.py")
         if os.path.isfile(candidate):
             return candidate
-    candidate = os.path.join(cwd, ".github", "scripts", "ensdf_1line_ruler.py")
+    candidate = os.path.join(workspace_root(), ".github", "scripts", "ensdf_1line_ruler.py")
     if os.path.isfile(candidate):
         return candidate
-    # Fallback to relative path (works when subprocess cwd is workspace root)
-    return os.path.join(".github", "scripts", "ensdf_1line_ruler.py")
+    return candidate
 
 
 def run_ruler(ruler_script, file_path):
@@ -345,6 +353,14 @@ def run_ruler(ruler_script, file_path):
 
 def resolve_path(path, cwd):
     """Resolve a potentially relative path against a base directory."""
+    if path.lower().startswith("file:"):
+        parsed = urlsplit(path)
+        if parsed.query or parsed.fragment:
+            raise ValueError("File URI must not contain a query or fragment.")
+        uri_path = parsed.path
+        if parsed.netloc and parsed.netloc.lower() != "localhost":
+            uri_path = "//" + parsed.netloc + uri_path
+        path = url2pathname(uri_path)
     if os.path.isabs(path):
         return path
     return os.path.normpath(os.path.join(cwd, path))
@@ -417,6 +433,9 @@ def main():
         emit({"additionalContext": f"ENSDF post-tool hook could not parse event input: {exc}"})
         return
     tool = payload.get("tool_name") or payload.get("toolName", "")
+    if not isinstance(tool, str) or not tool.strip():
+        emit({"additionalContext": "ENSDF post-tool hook could not parse event input: no valid tool name."})
+        return
 
     # Read-only calls: nothing to validate; the guard token must survive.
     if tool in ("read_file", "readFile", "read/readFile", "Read", "read", "view"):
@@ -433,11 +452,21 @@ def main():
     mismatches = pop_expected_hashes(ens_paths, cwd) if is_mutating_call(payload) else []
     if mismatches:
         files = "\n".join(f"  {path}" for path, _, _ in mismatches)
-        emit({
-            "additionalContext": (
+        if "error" in payload or payload.get("hook_event_name") == "PostToolUseFailure":
+            context = (
+                "The ENSDF tool action failed and the file content differs from the "
+                "PreToolUse prediction. The failure may have left partial changes; "
+                "the action was not undone.\n"
+            )
+        else:
+            context = (
                 "ENSDF post-edit content differs from the PreToolUse prediction. "
                 "The completed tool action was not undone. "
                 "The edit may have collapsed, expanded, or otherwise rewritten an unintended block.\n"
+            )
+        emit({
+            "additionalContext": (
+                context +
                 f"Affected file(s):\n{files}\n"
                 "Re-read the affected block, inspect the diff, and rebuild a smaller exact edit."
             ),
@@ -460,7 +489,7 @@ def main():
         error_text = "\n\n".join(ascii_errors)
         emit({
             "additionalContext": (
-                "ENSDF ASCII validation failed. The completed tool action was not undone. "
+                "ENSDF ASCII validation failed after the tool action, which was not undone. "
                 ".ens files must be readable and use standard ASCII.\n\n"
                 f"{error_text}"
             ),
@@ -496,7 +525,7 @@ def main():
     error_text = "\n\n".join(all_errors)
     emit({
         "additionalContext": (
-            "ENSDF 80-column validation failed. The completed tool action was not undone. "
+            "ENSDF 80-column validation failed after the tool action, which was not undone. "
             "Fix the data-record edit before continuing.\n\n"
             "Sacred Workflow (ENSDF-Agent.agent.md — MANDATORY):\n"
             "  EDIT -> VALIDATE -> CONFIRM -> REPEAT\n\n"
@@ -517,7 +546,7 @@ if __name__ == "__main__":
     except Exception as exc:
         emit({
             "additionalContext": (
-                "ENSDF post-tool validation hook failed after the tool action completed; "
+                "ENSDF post-tool validation hook failed after the tool action; "
                 f"the action was not undone: {exc}"
             ),
         })

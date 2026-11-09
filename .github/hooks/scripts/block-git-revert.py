@@ -23,6 +23,7 @@ Output     : JSON with permissionDecision "deny" - blocks the single tool
 """
 
 import json
+import posixpath
 import re
 import sys
 
@@ -67,7 +68,7 @@ def normalize_path_token(token):
     if normalized.startswith('./'):
         normalized = normalized[2:]
     normalized = normalized.replace('\\', '/')
-    return normalized.strip()
+    return posixpath.normpath(normalized.strip())
 
 
 def is_ens_path_spec(token):
@@ -321,15 +322,15 @@ def main():
             'permissionDecisionReason': f'Cannot verify terminal command: {exc}',
         }))
         sys.exit(0)
-    if not hook_input:
+    tool_name = hook_input.get('tool_name') or hook_input.get('toolName')
+    if not isinstance(tool_name, str) or not tool_name.strip():
         sys.stdout.write(json.dumps({
             'permissionDecision': 'deny',
-            'permissionDecisionReason': 'Cannot verify terminal command: hook input was empty.',
+            'permissionDecisionReason': 'Cannot verify terminal command: hook input has no valid tool name.',
         }))
         sys.exit(0)
 
     # Only act on terminal execution tools
-    tool_name = hook_input.get('tool_name') or hook_input.get('toolName', '')
     is_terminal_tool = tool_name in (
         'execute/runInTerminal',
         'runInTerminal',

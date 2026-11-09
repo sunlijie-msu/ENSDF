@@ -53,7 +53,8 @@ import os
 import re
 import sys
 from typing import NoReturn
-from urllib.parse import unquote, urlparse
+from urllib.parse import urlsplit
+from urllib.request import url2pathname
 
 SPAN = 8  # max lines in one oldString
 ENS_PATH_RE = re.compile(r"[^\s\"']+\.ens", re.IGNORECASE)
@@ -109,19 +110,26 @@ def load_event():
     raise ValueError("Hook input was not valid UTF-8 JSON.")
 
 
-def workspace_root(data):
+def working_directory(data):
     cwd = data.get("cwd")
     if isinstance(cwd, str) and cwd.strip():
         return os.path.realpath(os.path.normpath(cwd))
     return os.path.realpath(os.getcwd())
 
 
+def workspace_root():
+    return os.path.realpath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+
+
 def key_of(path, root):
-    if path.startswith("file://"):
-        parsed = urlparse(path)
-        path = unquote(parsed.path)
-        if re.match(r"^/[A-Za-z]:/", path):
-            path = path[1:]
+    if path.lower().startswith("file:"):
+        parsed = urlsplit(path)
+        if parsed.query or parsed.fragment:
+            raise ValueError("File URI must not contain a query or fragment.")
+        uri_path = parsed.path
+        if parsed.netloc and parsed.netloc.lower() != "localhost":
+            uri_path = "//" + parsed.netloc + uri_path
+        path = url2pathname(uri_path)
     if os.path.isabs(path):
         return os.path.realpath(path)
     return os.path.realpath(os.path.join(root, path))
@@ -180,12 +188,21 @@ def edit_operations(data):
         paths.add(path)
         old = text_value(item, "oldString", "old_string", "oldText", "old_text")
         new = text_value(item, "newString", "new_string", "newText", "new_text")
-        if old is not None and new is not None:
-            operations.append((path, old.replace("\r\n", "\n"), new.replace("\r\n", "\n")))
+        if old is None or new is None:
+            deny(".ens edit has no exact old/new text anchor. Use editFiles with files[].edits[].oldText/newText.")
+        operations.append((path, old.replace("\r\n", "\n"), new.replace("\r\n", "\n")))
 
     direct_path = path_value(data)
     if direct_path:
-        add(direct_path, data)
+        nested = any(data.get(field) for field in ("replacements", "files", "edits", "operations"))
+        has_direct_text = any(field in data for field in (
+            "oldString", "old_string", "oldText", "old_text",
+            "newString", "new_string", "newText", "new_text",
+        ))
+        if not nested or has_direct_text:
+            add(direct_path, data)
+        elif direct_path.lower().endswith(".ens"):
+            paths.add(direct_path)
 
     for item in data.get("replacements") or []:
         if isinstance(item, dict):
@@ -337,8 +354,8 @@ def guard_comment_operations(operations, state, root):
 def guard_edits(data, state, root):
     """Check exact anchors for all supported edit payload shapes."""
     operations, paths = edit_operations(data)
-    if paths and not operations:
-            deny(".ens edit has no exact old/new text anchor. Use editFiles with files[].edits[].oldText/newText.")
+    if paths - {path for path, _, _ in operations}:
+        deny(".ens edit has no exact old/new text anchor. Use editFiles with files[].edits[].oldText/newText.")
     return guard_operations(operations, state, root)
 
 
@@ -369,13 +386,15 @@ def guard_terminal(command, state, root):
 def main():
     event = load_event()
     tool = event.get("tool_name") or event.get("toolName", "")
+    if not isinstance(tool, str) or not tool.strip():
+        deny("Hook input has no valid tool name.")
     data = event.get("tool_input") or event.get("toolArgs") or {}
     if isinstance(data, str):
         data = {"input": data}
     elif not isinstance(data, dict):
         deny("Hook tool input must be a JSON object or patch string.")
-    root = workspace_root(event)
-    state_path = os.path.join(root, ".github", "temp", "ens_guard", "state.json")
+    root = working_directory(event)
+    state_path = os.path.join(workspace_root(), ".github", "temp", "ens_guard", "state.json")
     state = state_load(state_path)
 
     if tool in READ_TOOLS:  # a read refreshes freshness; verify skips reads so it is not consumed
