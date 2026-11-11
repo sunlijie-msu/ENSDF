@@ -58,7 +58,8 @@ from urllib.request import url2pathname
 
 SPAN = 8  # max lines in one oldString
 ENS_PATH_RE = re.compile(r"[^\s\"']+\.ens", re.IGNORECASE)
-MUTATING_RE = re.compile(r"--fix\b|>>?\s|Set-Content|Out-File|Add-Content|\.write_text\(|WriteAllText", re.IGNORECASE)
+MUTATING_RE = re.compile(r"--fix\b|Set-Content|Out-File|Add-Content|\.write_text\(|WriteAllText", re.IGNORECASE)
+HERE_STRING_RE = re.compile(r"(?ms)(?<!\w)@(['\"])[ \t]*\r?\n.*?^\1@[ \t]*(?=\r?$|[|;])")
 EDIT_TOOLS = {
     "replace_string_in_file", "multi_replace_string_in_file", "editFiles", "edit/editFiles",
     "create", "createFile", "create_file", "edit/createFile", "writeFile",
@@ -66,6 +67,43 @@ EDIT_TOOLS = {
 }
 READ_TOOLS = {"read_file", "readFile", "read/readFile", "Read", "read", "view"}
 PATCH_TOOLS = {"apply_patch", "applyPatch", "edit/applyPatch", "functions.apply_patch"}
+
+
+def mask_here_strings(command):
+    """Keep PowerShell here-string contents out of shell syntax detection."""
+    return HERE_STRING_RE.sub("''", command)
+
+
+def has_executable_here_string(command):
+    """Detect here-strings that PowerShell or a shell interpreter can execute."""
+    matches = list(HERE_STRING_RE.finditer(command))
+    if any(match.group(1) == '"' and '$(' in match.group() for match in matches):
+        return True
+    shell_command = mask_here_strings(command)
+    return bool(matches and re.search(
+        r"\|\s*(?:powershell|pwsh|cmd|bash|sh)(?:\.exe)?(?:\s|$)"
+        r"|\b(?:Invoke-Expression|iex)\b", shell_command, re.IGNORECASE))
+
+
+def is_mutating_command(command):
+    """Classify known ENSDF writes without treating quoted comparisons as redirects."""
+    shell_command = mask_here_strings(command)
+    if has_executable_here_string(command):
+        return True
+    inline_python_write = (
+        re.search(r"\|\s*(?:python(?:\.exe)?|py)(?:\s|$)", shell_command, re.IGNORECASE)
+        and re.search(r"\.write_text\(|WriteAllText", command, re.IGNORECASE)
+    )
+    if (MUTATING_RE.search(shell_command) or inline_python_write) and not (
+        "--dry-run" in shell_command and "--fix" in shell_command
+        and not re.search(r"Set-Content|Out-File|Add-Content|\.write_text\(|WriteAllText",
+                          shell_command, re.IGNORECASE)
+        and not inline_python_write
+        and not re.search(r"[;|&]", shell_command)
+    ):
+        return True
+    unquoted = re.sub(r'"[^"]*"|\'[^\']*\'', "''", shell_command)
+    return bool(re.search(r">>?\s*(?!&)\S", unquoted))
 
 
 def deny(reason: str) -> NoReturn:
@@ -382,7 +420,7 @@ def guard_terminal(command, state, root):
     file (e.g. column_calibrate.py --fix) bypasses anchor matching entirely, so
     it gets the same freshness gate, records its pre-write hash, and invalidates
     the edit token until the file is read again."""
-    if "--dry-run" in command or not MUTATING_RE.search(command):
+    if not is_mutating_command(command):
         return False
     touched = False
     for match in ENS_PATH_RE.finditer(command):

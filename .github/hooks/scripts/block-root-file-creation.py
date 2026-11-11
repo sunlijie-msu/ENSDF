@@ -25,6 +25,9 @@ import sys
 from urllib.parse import urlsplit
 from urllib.request import url2pathname
 
+sys.dont_write_bytecode = True
+from guard_ens_edit import has_executable_here_string, mask_here_strings
+
 
 CREATE_TOOL_NAMES = {
     "create",
@@ -256,7 +259,9 @@ def extract_terminal_targets(command):
     A missing target is represented by an empty path so the caller can deny
     ambiguous write operations instead of allowing them silently.
     """
-    command = neutralize_stream_redirections(command)
+    if has_executable_here_string(command):
+        return [("", "terminal write")]
+    command = neutralize_stream_redirections(mask_here_strings(command))
     tokens = re.findall(r'"[^"]*"|\'[^\']*\'|&&|\|\||[|;&]|[^\s|;&]+', command)
     targets = []
     write_seen = False
@@ -283,7 +288,7 @@ def extract_terminal_targets(command):
             continue
         lower = token.lower()
         # Also match PowerShell's "*>" all-streams file redirect.
-        redirection = re.match(r"^\d*(\*)?(>>|>)(.*)$", token)
+        redirection = None if raw_token != token else re.match(r"^\d*(\*)?(>>|>)(.*)$", token)
         if redirection:
             target = redirection.group(3)
             # A target beginning with '&' is a stream descriptor (e.g. a quoted
@@ -344,6 +349,8 @@ def main():
             break
         violation, matched_dir, absolute_path = classify_path(file_path, root, cwd)
         if not violation:
+            continue
+        if operation in ("terminal write", "terminal redirection") and os.path.isfile(absolute_path):
             continue
 
         parent_dir = os.path.dirname(absolute_path)

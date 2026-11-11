@@ -8,7 +8,9 @@ import difflib
 from urllib.parse import urlsplit
 from urllib.request import url2pathname
 
-MUTATING_RE = re.compile(r"--fix\b|>>?\s|Set-Content|Out-File|Add-Content|\.write_text\(|WriteAllText", re.IGNORECASE)
+sys.dont_write_bytecode = True
+from guard_ens_edit import is_mutating_command
+
 EDIT_TOOLS = {
     "replace_string_in_file", "multi_replace_string_in_file", "editFiles", "edit/editFiles",
     "create", "createFile", "create_file", "edit/createFile", "writeFile",
@@ -265,7 +267,7 @@ def find_all_ens_paths(payload):
     # run_in_terminal / send_to_terminal → only when the command looks mutating
     # (avoids re-validating on every read-only script call)
     command_text = tool_input.get("command") or tool_input.get("input")
-    if isinstance(command_text, str) and "--dry-run" not in command_text and MUTATING_RE.search(command_text):
+    if isinstance(command_text, str) and is_mutating_command(command_text):
         for match in re.finditer(r"[^\s\"']+\.ens", command_text, re.IGNORECASE):
             paths.add(match.group(0).strip("\"'"))
 
@@ -438,7 +440,7 @@ def is_mutating_call(payload):
     if not isinstance(tool_input, dict):
         return False
     command = tool_input.get("command")
-    return isinstance(command, str) and "--dry-run" not in command and bool(MUTATING_RE.search(command))
+    return isinstance(command, str) and is_mutating_command(command)
 
 
 def main():
