@@ -33,6 +33,7 @@ COMMENT_FLAGS = {'c': 'comment', 'C': 'comment',
 #   'P' -> dataset parent/normalization record, whose "PN" type occupies columns 7-8
 OTHER_COL7_FLAGS = {'t': 'table/plot text',
                     'P': 'dataset parent/normalization ("PN" record)'}
+RECORDS_WITHOUT_TRAILING_FIELD_CHECKS = {'H', 'P', 'N', 'PN'}
 
 
 @dataclass(frozen=True)
@@ -59,6 +60,10 @@ def _comment_flag_field(ch: str) -> bool:
 
 def _blank_only(ch: str) -> bool:
     return ch == ' '
+
+
+def _any_character(_ch: str) -> bool:
+    return True
 
 
 def _pad_record_example(text: str) -> str:
@@ -146,14 +151,32 @@ RECORD_DEFINITIONS: Dict[str, RecordDefinition] = {
         col77_validator=lambda ch: ch == ' ' or ch.isalpha() or ch == '?',
         col80_validator=lambda ch: ch in {' ', '?', 'S'},
     ),
+    'P': RecordDefinition(
+        label='Parent record (P)',
+        fmt=_pad_record_example(' 35XX  P ...'),
+        fields='NUCID(1-5)|CONT(6)|BLANK(7)|P(8)|...record-specific fields...',
+        col77_hint='Record-specific field; only line length is checked',
+        col80_hint='Record-specific field; only line length is checked',
+        col77_validator=_any_character,
+        col80_validator=_any_character,
+    ),
+    'N': RecordDefinition(
+        label='Normalization record (N)',
+        fmt=_pad_record_example(' 35XX  N ...'),
+        fields='NUCID(1-5)|CONT(6)|BLANK(7)|N(8)|...record-specific fields...',
+        col77_hint='Record-specific field; only line length is checked',
+        col80_hint='Record-specific field; only line length is checked',
+        col77_validator=_any_character,
+        col80_validator=_any_character,
+    ),
     'PN': RecordDefinition(
         label='Dataset parent/normalization record (PN - type occupies columns 7-8)',
         fmt=_pad_record_example(' 35XX PN'),
         fields='NUCID(1-5)|CONT(6)|P(7)|N(8)|...parent/normalization fields...|C(77)|...|BLANK(80)',
-        col77_hint='Column 77: space, alphabetic comment flag, *, &, @ only',
-        col80_hint='Column 80 must be blank for PN records',
-        col77_validator=_comment_flag_field,
-        col80_validator=_blank_only,
+        col77_hint='Record-specific field; only line length is checked',
+        col80_hint='Record-specific field; only line length is checked',
+        col77_validator=_any_character,
+        col80_validator=_any_character,
     ),
 }
 
@@ -261,7 +284,8 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
             print('Hidden message (free-text) record: 80-column length is not enforced.')
         else:
             print('Comment lines must still obey the 80-column rule and inherit the associated record scope.')
-    elif record_def and len(line) > 6 and line[6] in OTHER_COL7_FLAGS:
+    elif (record_def and record_key not in {'PN'}
+          and len(line) > 6 and line[6] in OTHER_COL7_FLAGS):
         print(f'{OTHER_COL7_FLAGS[line[6]].capitalize()} record (flag "{line[6]}"): '
               'free-form text, column-77/80 field checks are not applied.')
     elif record_key and not record_def and not is_blank:
@@ -309,7 +333,8 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
             errors.append(f'Invalid commented-record-type code "{col8}{col9}" in Columns 8-9. '
                           'Codes are 1-2 letters, left-justified at Column 8.')
 
-    if is_primary and record_def is not None:
+    if (is_primary and record_def is not None
+            and record_key not in RECORDS_WITHOUT_TRAILING_FIELD_CHECKS):
         col_77 = line[76] if len(line) > 76 else ' '
         col_80 = line[79] if len(line) > 79 else ' '
 

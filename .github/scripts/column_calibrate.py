@@ -101,23 +101,24 @@ def is_data_record_line(line):
     if len(line) < 8:
         return False
 
-    # Column 7 must be blank on a data record. Lines carrying a column-7 flag are
-    # comment ('c'), hidden-message ('d'), table/plot text ('t') or the dataset
-    # parent/normalization record ('P' in column 7 with 'N' in column 8); their text
-    # is free-form, so it is not length-managed here.
+    # Column 7 must be blank on a data record, except for the fixed-width PN record.
+    # Other column-7 flags identify free-form comment, hidden-message, or table text.
     # Exception: NUCID-shifted lines ('34S  L ...') keep the record type in column 7.
-    if line[6] != ' ' and not is_nucid_shifted_left(line):
+    is_pn_record = line[6:8] == 'PN'
+    if line[6] != ' ' and not is_nucid_shifted_left(line) and not is_pn_record:
         return False
 
     # Check for record types in column 8 (0-based index 7)
     # H-records have H at column 8 (index 7)
-    # L/G/E/B/A records have those letters at column 8
+    # L/G/E/B/A/P/N records have those letters at column 8
     # Delayed-particle records have D at column 8 and P/N/A/D/T at column 9
     
     record_type = line[7] if len(line) > 7 else ' '
+    if is_pn_record:
+        return True
     
     # Include H records (History/Header records) - they must also be 80 columns
-    all_record_types = ['H', 'L', 'G', 'E', 'B', 'A']  # All standard record types
+    all_record_types = ['H', 'L', 'G', 'E', 'B', 'A', 'P', 'N']
     
     # Also check for delayed-particle records (DP, DN, DA, DD, DT)
     if len(line) > 8 and line[7] == 'D' and line[8] in 'PNADT':
@@ -155,7 +156,7 @@ def fix_line_lengths(filename, dry_run=False):
         
     print(f"{'DRY RUN - ' if dry_run else ''}Fixing record line lengths in: {filename}")
     print("=" * 70)
-    print("Note: Checking and fixing ALL record lines (H, L, G, E, B, DP)")
+    print("Note: Checking and fixing ALL record lines (H, L, G, E, B, A, P, N, PN, DP)")
     print("      ENSDF standard: ALL records must be exactly 80 characters")
     print("      Comment lines (c at column 6) are NOT modified")
     print()
