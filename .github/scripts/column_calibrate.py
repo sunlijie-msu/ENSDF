@@ -39,7 +39,7 @@ from typing import List
 @lru_cache(maxsize=16)
 def _read_file_cached(filename: str) -> tuple:
     """Return raw file lines with simple LRU caching to avoid repeated disk reads."""
-    with open(filename, 'r', encoding='utf-8') as handle:
+    with open(filename, 'r', encoding='utf-8', newline='') as handle:
         return tuple(handle.readlines())
 
 
@@ -239,7 +239,7 @@ def fix_line_lengths(filename, dry_run=False):
     
     # Write fixed file if not dry run
     if not dry_run and lines_modified > 0:
-        with open(filename, 'w', encoding='utf-8') as f:
+        with open(filename, 'w', encoding='utf-8', newline='') as f:
             f.writelines(fixed_lines)
         invalidate_file_cache(filename)
         print(f"\nSUCCESS: File updated: {filename}")
@@ -1180,6 +1180,8 @@ def validate_dri_field(filename):
             # CRITICAL CHECK 2: Detect partial markers (single letters from limit markers)
             # If RI field ends with 'L', 'G' and DRI starts with 'T', 'E', it's likely split marker
             has_suspicious_letter = False
+            last_char_ri = ''
+            first_char_dri = ''
             if ri_field_stripped and len(line_content) >= 31:
                 last_char_ri = ri_field_stripped[-1] if ri_field_stripped else ''
                 dri_field = line_content[29:31]  # Columns 30-31

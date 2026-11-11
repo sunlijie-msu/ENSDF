@@ -158,9 +158,10 @@ RECORD_DEFINITIONS: Dict[str, RecordDefinition] = {
 }
 
 # Delayed-particle family: D in column 8 with P/N/A/D/T in column 9.
-for _letter in DELAYED_PARTICLES:
-    RECORD_DEFINITIONS['D' + _letter] = _delayed_particle_definition(_letter)
-del _letter
+RECORD_DEFINITIONS.update({
+    'D' + letter: _delayed_particle_definition(letter)
+    for letter in DELAYED_PARTICLES
+})
 
 
 def _record_key(line: str) -> Optional[str]:
@@ -238,7 +239,7 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
     print('12345678901234567890123456789012345678901234567890123456789012345678901234567890')
     
     record_key = _record_key(line)
-    record_def = RECORD_DEFINITIONS.get(record_key)
+    record_def = RECORD_DEFINITIONS.get(record_key) if record_key is not None else None
     comment_hint = _describe_comment(line)
     is_comment = comment_hint is not None
     free_text = _is_free_text_record(line)
@@ -281,7 +282,10 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
     if '\t' in line:
         errors.append('Tab character present. ENSDF records must use spaces only.')
     
-    if record_key and not record_def and not is_comment and not is_blank:
+    if _nucid_shifted_left(line):
+        errors.append('NUCID shifted left: Column 1 is digit "' + line[0]
+                      + '" (must be space for A<100).')
+    elif record_key and not record_def and not is_comment and not is_blank:
         errors.append(f'Unknown/Invalid record type "{record_key}" at Column 8.')
         # Specific heuristic for shifted comments
         if len(line) > 7 and line[7] in {'c', 'C'} and line[6] == ' ':
@@ -289,9 +293,6 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
         if len(line) > 6 and line[5] == 'c' and line[6] != 'c':
             errors.append('HINT: Found "c" in Column 6 (continuation field). Comment flags '
                           'must be in Column 7 with text starting at Column 10.')
-        # NUCID shift detection: if col 1 is a digit, the whole line is shifted left
-        if _nucid_shifted_left(line) and len(line) < 80:
-            errors.append('NUCID shifted left: Column 1 is digit "' + line[0] + '" (must be space for A<100). Whole line shifted left by 1 column.')
     elif is_comment and line[7:8].strip() and not line[7].isalpha():
         errors.append(f'Comment record has invalid commented-record-type "{line[7]}" in '
                       'Column 8. Expected blank (dataset-wide comment) or a record-type '
@@ -308,7 +309,7 @@ def print_ruler(line: str, label: Optional[str] = None) -> bool:
             errors.append(f'Invalid commented-record-type code "{col8}{col9}" in Columns 8-9. '
                           'Codes are 1-2 letters, left-justified at Column 8.')
 
-    if is_primary:
+    if is_primary and record_def is not None:
         col_77 = line[76] if len(line) > 76 else ' '
         col_80 = line[79] if len(line) > 79 else ' '
 
@@ -392,7 +393,8 @@ def scan_file(filename: str, show_only_wrong: bool = False, line_number: Optiona
         # Check ALL record types (H, L, G, E, B, A, delayed-particle and PN records)
         # ENSDF standard: ALL record types must be exactly 80 characters
         key = _record_key(line)
-        if key in RECORD_DEFINITIONS or _is_misplaced_comment(line):
+        if (key in RECORD_DEFINITIONS or _is_misplaced_comment(line)
+                or _nucid_shifted_left(line)):
             total_checked += 1
             if show_only_wrong:
                 if not _quiet_call(print_ruler, line, f'{filename}:{lineno}'):
