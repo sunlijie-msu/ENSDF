@@ -1,5 +1,5 @@
 % !Mode:: "TeX:UTF-8"
-\documentclass[aps,UTF8,prc,twocolumn,preprintnumbers,amsmath,amssymb]{revtex4-2}
+\documentclass[aps,UTF8,prc,twocolumn,preprintnumbers,amsmath,amssymb,floatfix]{revtex4-2}
 %\documentclass[]{ctexart}
 \usepackage{tipa}
 \usepackage{graphicx}% Include figure files
@@ -198,7 +198,7 @@ X-ray-energy Gate & 59.0$-$60.1 & 59.0$-$60.1 & 59.0$-$60.1 \\
 
 Fig.~\ref{Alpha_spec_MSD_241Am} shows the $\alpha$ spectra acquired using the Si detectors for the three runs, where the energy scale represents energy deposited in the active volumes (Table~\ref{Energy_loss}). The spectra for Runs 1 and 3 represent the sum of the energy deposited in the two Si detectors, whereas the spectrum for Run 2 is simply the energy spectrum for MSD26 alone. The energy resolution for Run 2 is better because dead-layer effects are minimized and there is no need to sum the signals from both detectors. This makes it possible to resolve various $^{241}$Am $\alpha$-decay transitions. The four strongest $\alpha$ branches shown in Fig.~\ref{Scheme_241Am} are observed in Run 2, including the one to the $^{237}$Np M\"{o}ssbauer state. 
 
-Fig.~\ref{Xray_spec_LEGe_241Am} shows the photon spectra acquired using the LEGe detector. All seven $\gamma$-ray peaks shown in Fig.~\ref{Scheme_241Am} are observed, including the prominent 59.5-keV peak from de-excitation of the $^{237}$Np M\"{o}ssbauer state and its escape peaks. The $^{241}$Am source substrate attenuates most of the low-energy photons emitted towards the LEGe detector. The sources of the main peaks are labeled in Fig.~\ref{Xray_spec_LEGe_241Am}.
+Fig.~\ref{Xray_spec_LEGe_241Am} shows the photon spectra acquired using the LEGe detector. All seven $\gamma$-ray peaks shown in Fig.~\ref{Scheme_241Am} are observed, including the prominent 59.5-keV peak from de-excitation of the $^{237}$Np M\"{o}ssbauer state and its escape peaks. The $^{241}$Am source substrate attenuates most of the low-energy photons emitted towards the LEGe detector.
 
 Fig.~\ref{AlphaGamma_PID_241Am} shows the $\alpha$-$\gamma$ coincidence spectrum between MSD and LEGe for each run. Evident is the intense coincidence between $\alpha$ particles populating the $^{237}$Np M\"{o}ssbauer state and $\gamma$-rays de-exciting it. 
 
@@ -212,7 +212,7 @@ Fig.~\ref{AlphaGamma_PID_241Am} shows the $\alpha$-$\gamma$ coincidence spectrum
 \begin{figure}[htbp!]
 \begin{center}
 \includegraphics[width=8.6cm]{Fig_237Np_Xray_241Am_LEGe_RunAll.eps}
-\caption{\label{Xray_spec_LEGe_241Am} $^{241}$Am X-ray and $\gamma$-ray energy spectra measured using the LEGe detector. X-ray energy values are adopted from Ref.~\cite{Newville_XrayDB2023} rounded to the nearest 0.1~keV. $\gamma$-ray energy values are adopted from Ref.~\cite{Basunia_NDS2006_A237} rounded to the nearest 0.1~keV.}
+\caption{\label{Xray_spec_LEGe_241Am} $^{241}$Am X-ray and $\gamma$-ray energy spectra measured using the LEGe detector. The main peaks are labeled by their sources and energies. X-ray energy values are adopted from Ref.~\cite{Newville_XrayDB2023} rounded to the nearest 0.1~keV. $\gamma$-ray energy values are adopted from Ref.~\cite{Basunia_NDS2006_A237} rounded to the nearest 0.1~keV.}
 \end{center}
 \end{figure}
 
@@ -241,9 +241,9 @@ f_{\text{direct}}(t;N_{59},T_{59},B) = \frac{N_{59} \ln(2)}{T_{59}} \exp\left[-\
 \label{eq:Direct}
 \end{equation}
 
-\noindent composed of the total number of decay coincidence events ($N_{59}$), the exponential decay half-life ($T_{59}$), and a constant background ($B$) accounting for random coincidences. A maximum likelihood (statistically weighted least squares) method was used to find the optimal fit using these three free parameters (Fig.~\ref{Timing_spec_241Am_alpha5486gamma59}). Considering that the shape of the time-difference curve turns over to negative slopes becoming exponential, the minimum time difference in the range was selected by increasing its value until the goodness-of-fit was minimized and the fit parameters converged. To optimize sampling of the background level, the maximum time difference in the fit range was constrained by the event-build window set during data acquisition. Using this fit, we obtained the half-life of the 59.5-keV excited state in $^{237}$Np for Run 2.  
+\noindent where $t$ is the $\alpha$-$\gamma$ time difference, $N_{59}$ is the total number of $\alpha$-59.5$\gamma$ coincidence events, $T_{59}$ is the half-life of the 59.5-keV state, and $B$ is the constant random-coincidence background level. A maximum likelihood (statistically weighted least squares) method was used to find the optimal fit using these three free parameters (Fig.~\ref{Timing_spec_241Am_alpha5486gamma59}). Considering that the shape of the time-difference curve turns over to negative slopes becoming exponential, the minimum time difference in the range was selected by increasing its value until the goodness-of-fit was minimized and the fit parameters converged. To optimize sampling of the background level, the maximum time difference in the fit range was constrained by the event-build window set during data acquisition. Using this fit, we obtained the half-life of the 59.5-keV excited state in $^{237}$Np for Run 2.
 
-The 5443-keV $\alpha$ decay populates the 103-keV excited state in $^{237}$Np, which predominantly decays to the 59-keV state by internal conversion. Approximately 12\% of the population of the 59.5-keV state of interest proceeds through this cascade~(Fig.~\ref{Scheme_241Am}). As the $\alpha$ gate for the 5486-keV peak for Run 1 and Run 3 also contains the 5443-keV peak, both 5486$\alpha$-59$\gamma$ direct feeding and 5443$\alpha$-43ce-59$\gamma$ cascade feeding are taken into account in the fitting using the following equation: 
+The 5443-keV $\alpha$ decay populates the 103.0-keV excited state in $^{237}$Np, which predominantly decays to the 59.5-keV state by internal conversion. Approximately 12\% of the population of the 59.5-keV state of interest proceeds through this cascade~(Fig.~\ref{Scheme_241Am}). As the $\alpha$ gate for the 5486-keV peak for Run 1 and Run 3 also contains the 5443-keV peak, both 5486$\alpha$-59.5$\gamma$ direct feeding and 5443$\alpha$-43.4ce-59.5$\gamma$ cascade feeding are taken into account in the fitting using the following equation: 
 
 \begin{equation}
 \begin{split}
@@ -255,7 +255,7 @@ The 5443-keV $\alpha$ decay populates the 103-keV excited state in $^{237}$Np, w
 \end{split}
 \end{equation}
 
-Besides the fit function used, other aspects of the analysis for Runs 1 and 3 were similar to those from Run 2. Using these fits (Fig.~\ref{Timing_spec_241Am_alpha5486gamma59}), we obtained the half-life of the 59.5-keV excited state in $^{237}$Np for Runs 1 and 3. Due to the relatively short half-life of the 103-keV state ($T_{103}=80(40)$~ps~\cite{Basunia_NDS2006_A237}) and its low feeding intensity, the difference between including it or not in the fit is marginal at this level of precision. 
+Here, two new parameters are introduced: $T_{103}$ is the half-life of the 103.0-keV state, and $k$ is the ratio of the cascade-fed to direct-fed. Besides the fit function used, other aspects of the analysis for Runs 1 and 3 were similar to those from Run 2. Using these fits (Fig.~\ref{Timing_spec_241Am_alpha5486gamma59}), we obtained the half-life of the 59.5-keV excited state in $^{237}$Np for Runs 1 and 3. Due to the relatively short half-life of the 103-keV state ($T_{103}=80(40)$~ps~\cite{Basunia_NDS2006_A237}) and its low feeding intensity, the difference between including it or not in the fit is marginal at this level of precision. 
 
 %To test the sensitivity of the results to the fitting method, another fit was conducted on a small portion of the data using the Bayesian method with the affine-invariant ensemble sampler for Markov chain Monte Carlo (MCMC) in the emcee package~\cite{Foreman_PASP2013}. The MCMC was run with 100 walkers taking 10,000 steps, giving a total of $10^6$ samples. The posterior results obtained from the MCMC sampling are demonstrated in Fig.~\ref{Posterior2D_241Am_alpha5486gamma59}. The half-life value and its 1$\sigma$ uncertainties were determined by extracting the 16th, 50th, and 84th percentile values from the marginalized posterior distribution. The results obtained were identical to those obtained using the maximum likelihood method, providing a consistency check. 
 
@@ -282,7 +282,6 @@ Besides the fit function used, other aspects of the analysis for Runs 1 and 3 we
 %\end{figure}
 
 
-%\FloatBarrier
 
 \section{Results and Discussion}
 
