@@ -1,9 +1,8 @@
 % !Mode:: "TeX:UTF-8"
-\documentclass[UTF8,prc,twocolumn,preprintnumbers,amsmath,amssymb]{revtex4-2}
+\documentclass[aps,UTF8,prc,twocolumn,preprintnumbers,amsmath,amssymb]{revtex4-2}
 %\documentclass[]{ctexart}
 \usepackage{tipa}
 \usepackage{graphicx}% Include figure files
-\usepackage{float}
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
 \usepackage{multirow}
@@ -13,7 +12,7 @@
 \usepackage{color,xcolor}
 \usepackage{comment}
 
-\usepackage[dvipdfm,  %pdflatex,pdftex
+\usepackage[%dvipdfm,  %pdflatex,pdftex
             pdfstartview=FitH,
             %CJKbookmarks=true,
             bookmarks=true,
@@ -21,7 +20,7 @@
             bookmarksopen=true,
             bookmarksopenlevel=2,
             colorlinks=true,
-            pdfborder=001,
+            pdfborder={0 0 1},
             linkcolor=blue,
             anchorcolor=green,
             urlcolor=blue,
@@ -88,7 +87,7 @@ $^2$Department of Physics and Astronomy, Michigan State University, East Lansing
 \textbf{Purpose}: Measure the natural linewidth of the $^{237}$Np M\"{o}ssbauer state with high precision and accuracy. \newline
 \textbf{Methods}: A $^{241}$Am $\alpha$-particle source was used to populate the 59.5-keV M\"{o}ssbauer state in $^{237}$Np. Coincidence timing between $\alpha$ particles and 59.5-keV $\gamma$ rays has been acquired using Si and Ge detectors of the Lifetimes and Branching Ratios Apparatus (LIBRA). %Bayesian analysis with rigorous uncertainty quantification has been applied to extract the half-life from the exponential decay curve. 
 \newline
-\textbf{Results}: The half-life value for the 59.5-keV isomeric state in $^{237}$Np has been determined to be 68.03(7)~ns. A comprehensive reevaluation of all available data has been performed, leading to a new recommended value of 67.90(7)~ns for the half-life. \newline
+\textbf{Results}: The half-life value for the 59.5-keV isomeric state in $^{237}$Np has been measured to be 68.03(7)~ns. A comprehensive reevaluation of all available data has been performed, leading to a new recommended value of 67.90(7)~ns for the half-life. \newline
 \textbf{Conclusions}: Based on the measured half-life, the natural linewidth of the 59.5-keV M\"{o}ssbauer state has been determined to be $6.706(7)\times10^{-9}$~eV. This value represents the most precise single experimental determination of the linewidth for this state. Including other measurements, the evaluated and recommended value for M\"{o}ssbauer spectroscopy becomes $6.720(7)\times10^{-9}$~eV. 
 \end{abstract}
 \maketitle
@@ -99,15 +98,13 @@ In the M\"{o}ssbauer effect, radiation is emitted from the atomic nucleus withou
 
 Within the actinides, the best M\"{o}ssbauer transition is the $E1$ $\gamma$-ray transition from the 59.54~keV excited state of $^{237}$Np to the ground state~\cite{Kalvius_JNM1989}. The natural linewidth, based on the relatively long half-life of $\sim$68~ns, is one of the sharpest available for M\"{o}ssbauer spectroscopy at approximately $7\times10^{-9}$~eV, providing the potential for extremely sensitive M\"{o}ssbauer spectroscopy to determine the local electronic, magnetic, and chemical environment of neptunium in a wide variety of materials~\cite{Pillinger_Stone_1968}. However, uncertainties remain in the lifetime and, hence, the natural linewidth. Thorough interpretations of $^{237}$Np M\"{o}ssbauer spectra require a precisely fixed value of the natural linewidth to disentangle other broadening effects such as instrumental resolution, thermal Doppler broadening, and those of scientific interest.  
 
-The latest full mass number $A=237$ Evaluated Nuclear Structure Data File (ENSDF) in 2006, adopted a half-life of 67(2)~ns~\cite{Basunia_NDS2006_A237} for the $^{237}$Np M\"{o}ssbauer state, which was based on five measurements of coincidence timing between $\alpha$ particles and $\gamma$ rays emitted in $^{241}$Am decay: %The adopted half-life in the $^{241}$Am $\alpha$ decay dataset of Ref.~\cite{Basunia_NDS2006_A237} is 68.1(2)~ns, obtained as a weighted average of five measurements that populated it via the $\alpha$ decay of $^{241}$Am: 
-63(5)~ns~\cite{Beling_PR1952}, 64.2(20)~ns~\cite{Oberhofer_Thesis1968}, 66.7(7)~ns~\cite{Garg_ZP1971}, 66.9(10)~ns~\cite{McBeth_NIM1972}, and 68.3(2)~\cite{Miller_NIM1972} (Fig.~\ref{Scheme_241Am}).
-%However, we recalculated the weighted average using the five values and obtained 68.1(3)~ns. In 2012, a modified ENSDF reassigned a larger uncertainty to the result of 68.3(7)~ns~\cite{Miller_NIM1972} and took the weighted average with the revised values. The updated adopted half-life is 67.2(7)~ns~\cite{Basunia_ENSDF2012}. 
-Less precise measurements 62(3)~ns~\cite{Vartapetian_AP1958}, 63(5)~ns~\cite{Unik_Thesis1960}, and 70(4)~ns~\cite{Finck_NIMA1985} were omitted from the ENSDF averaging. Ref.~\cite{McBeth_NIM1972} reports two half-lives measured with different detectors, and one of them, 67.8(10)~ns, was omitted from ENSDF. A measurement by Bishop of 68.5(4)~ns published in 1974~\cite{Bishop_NIM1974}, omitted from ENSDF, is notable for its relatively high individual precision for that era. Four more recent half-life measurements of the $^{237}$Np M\"{o}ssbauer state have been reported, all of which used a $^{241}$Am source and timing coincidence methods with scintillator detectors (liquid scintillators in two cases) to improve the precision. Vretenar~\textit{et al.} measured a half-life of 67.7(1)~ns~\cite{Vretenar_AJP2019}, Dutsov~\textit{et al.} measured 67.60(25)~ns~\cite{Dutsov_ARI2021}, Tak\'{a}cs and Kossert measured 67.86(9)~ns~\cite{Takacs_ARI2021}, and Santos \textit{et al.} measured 67.60(20)~ns~\cite{Santos_NPA2023}. All of these experiments also employed digital data acquisition, which was not fully developed or commonly available during the period of the older measurements.
+A simplified $^{241}$Am decay scheme is shown in Fig.~\ref{Scheme_241Am}. The latest full mass number $A=237$ Evaluated Nuclear Structure Data File (ENSDF) in 2006, adopted a half-life of 67(2)~ns~\cite{Basunia_NDS2006_A237} for the $^{237}$Np M\"{o}ssbauer state, which was based on five measurements of coincidence timing between $\alpha$ particles and $\gamma$ rays emitted in $^{241}$Am decay: 
+63(5)~ns~\cite{Beling_PR1952}, 64.2(20)~ns~\cite{Oberhofer_Thesis1968}, 66.7(7)~ns~\cite{Garg_ZP1971}, 66.9(10)~ns~\cite{McBeth_NIM1972}, and 68.3(2)~\cite{Miller_NIM1972}. In 2012, a modified ENSDF~\cite{Basunia_ENSDF2012} reassigned a larger uncertainty to the result of 68.3(7)~ns~\cite{Miller_NIM1972} and took the weighted average of all five results. The updated adopted half-life is 67.2(7)~ns~\cite{Basunia_ENSDF2012}. Less precise measurements 62(3)~ns~\cite{Vartapetian_AP1958}, 63(5)~ns~\cite{Unik_Thesis1960}, and 70(4)~ns~\cite{Finck_NIMA1985} were omitted from the ENSDF averaging. Ref.~\cite{McBeth_NIM1972} reports two half-lives measured with different detectors, and one of them, 67.8(10)~ns, was omitted from ENSDF. A measurement by Bishop of 68.5(4)~ns published in 1974~\cite{Bishop_NIM1974}, omitted from ENSDF, is notable for its relatively high individual precision for that era. Four more recent half-life measurements of the $^{237}$Np M\"{o}ssbauer state have been reported, all of which used a $^{241}$Am source and timing coincidence methods with scintillator detectors (liquid scintillators in two cases) to improve the precision. Vretenar~\textit{et al.} measured a half-life of 67.7(1)~ns~\cite{Vretenar_AJP2019}, Dutsov~\textit{et al.} measured 67.60(25)~ns~\cite{Dutsov_ARI2021}, Tak\'{a}cs and Kossert measured 67.86(9)~ns~\cite{Takacs_ARI2021}, and Santos \textit{et al.} measured 67.60(20)~ns~\cite{Santos_NPA2023}. All of these experiments also employed digital data acquisition, which was not fully developed or commonly available during the period of the older measurements.
 
 \begin{figure}[htbp!]
 \begin{center}
 \includegraphics[width=8.5cm]{Fig_237Np_Decay_Scheme_241Am.eps}
-\caption{\label{Scheme_241Am} Simplified decay scheme of $^{241}$Am. All energy, half-life, spin, and parity values are adopted from ENSDF~\cite{Basunia_NDS2006_A237,Basunia_ENSDF2012}. The $\alpha$-decay transitions are labeled with their kinetic energies in keV and absolute intensities per $^{241}$Am decay (red). The de-excitations of $^{237}$Np states are labeled with their $\gamma$-ray energies and absolute intensities of emitted photons (blue), followed by total transition intensities (green) taking into account internal conversion coefficients~\cite{Basunia_NDS2006_A237,Basunia_ENSDF2012}.}
+\caption{\label{Scheme_241Am} Simplified decay scheme of $^{241}$Am. The five strongest $\alpha$-decay transitions and the seven strongest $\gamma$-ray transitions are included. All energies are given in units of keV. The energy, half-life, spin, and parity values are adopted from ENSDF~\cite{Basunia_NDS2006_A237,Basunia_ENSDF2012,Nesaraja_NDS2015_A241}. The $Q$ values are adopted from AME2020~\cite{Wang_CPC2021}. The $\alpha$-decay transitions are labeled with their kinetic energies rounded to the nearest 1 keV and absolute intensities per $^{241}$Am decay (red). The $^{237}$Np excitation energies and the $\gamma$-ray energies are rounded to the nearest 0.1 keV. The de-excitations of $^{237}$Np states are labeled with the absolute intensities of emitted photons (blue), followed by total transition intensities (green) taking into account internal conversion coefficients~\cite{Basunia_NDS2006_A237,Basunia_ENSDF2012}.}
 \end{center}
 \end{figure}
 
@@ -123,7 +120,7 @@ A schematic of the setup is shown in Fig.~\ref{setup_schematic}.
 
 \begin{figure}[htbp!]
 \begin{center}
-\includegraphics[width=8.5cm]{LIBRA_For_237NP.jpg}
+\includegraphics[width=8.5cm]{LIBRA_For_237NP_v3.jpg}
 \caption{\label{setup_schematic} Schematic of the experimental setup including the $^{241}$Am source (red) and holder (yellow), LEGe detector (blue), MSD12 and MSD26 detectors (green), and collimating aperture (grey).}
 \end{center}
 \end{figure}
@@ -132,7 +129,7 @@ The signals from each preamplifier were digitized by LIBRA's 16-bit, 250~MHz XIA
 
 \section{Experimental Procedure}
 
-A $^{241}$Am source of $3.44\times10^3$~Bq with an active area of 3~mm in diameter on a 127-$\mu$m-thick Pt substrate was installed roughly at the center of the chamber. The source faced the Si detectors with an Al aperture installed in between to collimate the $\alpha$ particles.
+A $^{241}$Am source of $3.44\times10^3$~Bq with an active area of 3~mm in diameter on a 127-$\mu$m-thick Pt substrate was installed roughly at the center of the vacuum chamber. The source faced the Si detectors with an Al aperture installed in between to collimate the $\alpha$ particles.
 
 The $\Delta E$-$E$ telescope was used to detect $\alpha$ particles from the decay of $^{241}$Am using a nominally 5-mm collimator. The LEGe detector was used to detect 59.5-keV $\gamma$-rays from the de-excitation of the $^{237}$Np M\"{o}ssbauer state. Both detector sub-systems have efficiencies on the order of 10\% leading to a coincidence efficiency on the order of 1\%. 
 
@@ -198,23 +195,23 @@ X-ray-energy Gate & 59.0$-$60.1 & 59.0$-$60.1 & 59.0$-$60.1 \\
 
 \section{Data Analysis}
 
-Fig.~\ref{Alpha_spec_MSD_241Am} shows the $\alpha$ spectra acquired using the Si detectors for the three runs, where the energy scale represents energy deposited in the active volumes (Table~\ref{Energy_loss}). The spectra for Runs 1 and 3 represent the sum of the energy deposited in the two Si detectors, whereas the spectrum for Run 2 is simply the energy spectrum for MSD26 alone. The energy resolution for Run 2 is better because dead-layer effects are minimized and there is no need to sum the signals from both detectors. This makes it possible to resolve various $^{241}$Am $\alpha$-decay transitions (Fig.~\ref{Scheme_241Am}), including the strongest one to the $^{237}$Np M\"{o}ssbauer state. 
+Fig.~\ref{Alpha_spec_MSD_241Am} shows the $\alpha$ spectra acquired using the Si detectors for the three runs, where the energy scale represents energy deposited in the active volumes (Table~\ref{Energy_loss}). The spectra for Runs 1 and 3 represent the sum of the energy deposited in the two Si detectors, whereas the spectrum for Run 2 is simply the energy spectrum for MSD26 alone. The energy resolution for Run 2 is better because dead-layer effects are minimized and there is no need to sum the signals from both detectors. This makes it possible to resolve various $^{241}$Am $\alpha$-decay transitions. The four strongest $\alpha$ branches shown in Fig.~\ref{Scheme_241Am} are observed in Run 2, including the one to the $^{237}$Np M\"{o}ssbauer state. 
 
-Fig.~\ref{Xray_spec_LEGe_241Am} shows the photon spectra acquired using the LEGe detector, including the prominent 59.5-keV peak from de-excitation of the $^{237}$Np M\"{o}ssbauer state and its escape peaks. The $^{241}$Am source substrate attenuates most of the low-energy photons emitted towards the LEGe detector. The sources of the main peaks are labeled in Fig.~\ref{Xray_spec_LEGe_241Am}.
+Fig.~\ref{Xray_spec_LEGe_241Am} shows the photon spectra acquired using the LEGe detector. All seven $\gamma$-ray peaks shown in Fig.~\ref{Scheme_241Am} are observed, including the prominent 59.5-keV peak from de-excitation of the $^{237}$Np M\"{o}ssbauer state and its escape peaks. The $^{241}$Am source substrate attenuates most of the low-energy photons emitted towards the LEGe detector. The sources of the main peaks are labeled in Fig.~\ref{Xray_spec_LEGe_241Am}.
 
 Fig.~\ref{AlphaGamma_PID_241Am} shows the $\alpha$-$\gamma$ coincidence spectrum between MSD and LEGe for each run. Evident is the intense coincidence between $\alpha$ particles populating the $^{237}$Np M\"{o}ssbauer state and $\gamma$-rays de-exciting it. 
 
 \begin{figure}[htbp!]
 \begin{center}
 \includegraphics[width=8.6cm]{Fig_237Np_Alpha_241Am_MSD_RunAll.eps}
-\caption{\label{Alpha_spec_MSD_241Am} Red/Green: $^{241}$Am $\alpha$-particle energy spectra measured by summing the energy loss in the MSD12 detector and residual energy in the MSD26 detector. The energy scale represents energy deposited in the active volumes (Table~\ref{Energy_loss}). The primary peak is at 5417~keV with the minor peak at 5374~keV submerged in the low-energy tail. Blue: $^{241}$Am $\alpha$-particle energy spectrum measured by MSD26 alone. The primary peak is at 5479~keV and the minor peak is at 5436~keV.}
+\caption{\label{Alpha_spec_MSD_241Am} Red/Green: $^{241}$Am $\alpha$-particle energies measured by summing the energy loss in the MSD12 detector and residual energy in the MSD26 detector. The energy scale represents energy deposited in the active volumes (Table~\ref{Energy_loss}). The primary peak is at 5417~keV with the minor peak at 5374~keV submerged in the low-energy tail. Blue: $^{241}$Am $\alpha$-particle energies measured by MSD26 alone. The primary peak in this case is at 5479~keV and the minor peak is at 5436~keV.}
 \end{center}
 \end{figure}
 
 \begin{figure}[htbp!]
 \begin{center}
 \includegraphics[width=8.6cm]{Fig_237Np_Xray_241Am_LEGe_RunAll.eps}
-\caption{\label{Xray_spec_LEGe_241Am} $^{241}$Am X-ray and $\gamma$-ray energy spectra measured using the LEGe detector. X-ray energy values are adopted from Ref.~\cite{Newville_XrayDB2023} rounded to the nearest 0.01~keV. $\gamma$-ray energy values are adopted from Ref.~\cite{Basunia_NDS2006_A237} rounded to the nearest 0.01~keV.}
+\caption{\label{Xray_spec_LEGe_241Am} $^{241}$Am X-ray and $\gamma$-ray energy spectra measured using the LEGe detector. X-ray energy values are adopted from Ref.~\cite{Newville_XrayDB2023} rounded to the nearest 0.1~keV. $\gamma$-ray energy values are adopted from Ref.~\cite{Basunia_NDS2006_A237} rounded to the nearest 0.1~keV.}
 \end{center}
 \end{figure}
 
@@ -234,7 +231,7 @@ Fig.~\ref{AlphaGamma_PID_241Am} shows the $\alpha$-$\gamma$ coincidence spectrum
 \end{center}
 \end{figure}
 
-Fig.~\ref{Timing_RunAll_241Am} shows the $\alpha$-$\gamma$ time difference distributions constructed using the start timestamps from 5486-keV $\alpha$ particles measured by the MSD detectors and the stop timestamps from the 59.5-keV $\gamma$ ray de-exciting the 59.5-keV state in $^{237}$Np measured by the LEGe detector. The energy windows are selected based on the energy resolution shown in Figs.~\ref{Alpha_spec_MSD_241Am} and \ref{Xray_spec_LEGe_241Am}. For Runs 1 and 3, an $\alpha$-particle energy gate of $5417\pm60$~keV was set on the MSD sum energy. For Run 2, an $\alpha$-particle energy gate of $5479\pm20$~keV was set on the energy measured by MSD26 alone. In all runs, a $\gamma$-ray energy gate ranging from 59.0 to 60.1 keV was used for the LEGe detector. 
+Fig.~\ref{Timing_RunAll_241Am} shows the $\alpha$-$\gamma$ time difference distributions constructed using the start timestamps from $\alpha$ particles measured by the MSD detectors and the stop timestamps from the 59.5-keV $\gamma$ ray de-exciting the 59.5-keV state in $^{237}$Np measured by the LEGe detector. The energy windows are selected based on the energy resolution shown in Figs.~\ref{Alpha_spec_MSD_241Am} and \ref{Xray_spec_LEGe_241Am}. For Runs 1 and 3, an $\alpha$-particle energy gate of $5417\pm60$~keV was set on the MSD sum energy. For Run 2, an $\alpha$-particle energy gate of $5479\pm20$~keV was set on the energy measured by MSD26 alone. In all runs, a $\gamma$-ray energy gate ranging from 59.0 to 60.1 keV was used for the LEGe detector. 
 
 The time spectrum in Run 2 was fit with a function,
 
@@ -413,7 +410,13 @@ G. W. McBeth and R. A. Winyard, \href{https://doi.org/10.1016/0029-554X(72)90815
 G. H. Miller, P. Dillard, M. Eckhause, and R. E. Welsh, \href{https://doi.org/10.1016/0029-554X(72)90290-X}{Nucl. Instrum. Methods \textbf{104}, 11 (1972).}
 
 \bibitem{Basunia_ENSDF2012}
-M. S. Basunia, Evaluated Nuclear Structure Data File (ENSDF) A=237, 2012 update, \href{https://www.nndc.bnl.gov/ensnds/237/Np/adopted.pdf}{Adopted Dataset} and \href{https://www.nndc.bnl.gov/ensnds/237/Np/a_decay.pdf}{$\alpha$ Decay Dataset}.
+M. S. Basunia, \href{https://www.nndc.bnl.gov/ensdfarchivals/}{Evaluated Nuclear Structure Data File (ENSDF) archival}, accessed Nov 11, 2026.
+
+\bibitem{Vartapetian_AP1958}
+H. Vartapetian, \href{https://doi.org/10.1051/anphys/195811030569}{Ann. Phys. (Paris) \textbf{13}, 569 (1958).}
+
+\bibitem{Unik_Thesis1960}
+J.~P. Unik, \textit{Coincidence Measurements in Nuclear Decay Scheme Studies}, Ph.D. thesis, University of California, 1960.
 
 \bibitem{Finck_NIMA1985}
 K. Finck and W. Jitschin, \href{https://doi.org/10.1016/0168-9002(85)90488-7}{Nucl. Instrum. Methods \textbf{238}, 479 (1985).}
@@ -440,6 +443,12 @@ Marcell P. Tak\'acs, Karsten Kossert,
 
 \bibitem{Santos_NPA2023}
 O. C. B. Santos, J. R. B. Oliveira, E. Macchione, R. Lichtenth\"{a}ler, K. C. C. Pires, A. L\'{e}pine-Szily, \href{https://doi.org/10.1016/j.nuclphysa.2023.122745}{Nucl. Phys. A \textbf{1040}, 122745 (2023).}
+
+\bibitem{Nesaraja_NDS2015_A241}
+C.D. Nesaraja, \href{https://doi.org/10.1016/j.nds.2015.11.004}{Nucl. Data Sheets \textbf{130}, 183 (2015).}
+
+\bibitem{Wang_CPC2021}
+M. Wang, W. J. Huang, F. G. Kondev, G. Audi, S. Naimi, \href{https://doi.org/10.1088/1674-1137/abddaf}{Chin. Phys. C \textbf{45}, 030003 (2021).}
 
 \bibitem{Sun_PRC2025}
 L. J. Sun, J. Dopfer, A. Adams, C. Wrede, A. Banerjee, B. A. Brown, J. Chen, E. A. M. Jensen, R. Mahajan, T. Rauscher, C. Sumithrarachchi, L. E. Weghorn, D. Weisshaar, and T. Wheeler, \href{https://doi.org/10.1103/PhysRevC.111.055806}{Phys. Rev. C \textbf{111}, 055806 (2025).}
@@ -476,12 +485,6 @@ Matt Newville, easyXAFS, Matteo Levantino, Christian Schlepuetz, Damian G\"{u}nz
 
 \bibitem{Foreman_PASP2013}
 D. Foreman-Mackey, D. W. Hogg, D. Lang, and J. Goodman, \href{https://doi.org/10.1086/670067}{Publ. Astron. Soc. Pac. \textbf{125}, 306 (2013).}
-
-\bibitem{Vartapetian_AP1958}
-H. Vartapetian, \href{https://doi.org/10.1051/anphys/195811030569}{Ann. Phys. (Paris) \textbf{13}, 569 (1958).}
-
-\bibitem{Unik_Thesis1960}
-J.~P. Unik, \textit{Coincidence Measurements in Nuclear Decay Scheme Studies}, Ph.D. thesis, University of California, 1960.
 
 \bibitem{ENSDF_Codes}
 \href{https://www-nds.iaea.org/public/ensdf_pgm}{ENSDF Analysis and Utility Programs.}
