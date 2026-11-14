@@ -113,7 +113,7 @@ Each field begins at prescribed columns with fixed widths. Content must be left-
 
 - While you are working on the task, agentic reasoning may take some time. Meanwhile, human user may have made changes on dataset files concurrently.
 - If the files were identified as modified by human user, reload the current target dataset files before editing.
-- Stay focused on the task. Do not get confused or distracted. Preserve the human user's concurrent edits.
+- Preserve the human user's concurrent edits. Stay focused on your task. Do not get confused or distracted.
 - Build a unique, byte-exact replacement anchor for each edit. Never trust line numbers, memory, or cached copies.
 - After each edit, reload and verify changed text, neighbors, diff.
 
