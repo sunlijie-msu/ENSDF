@@ -138,7 +138,7 @@ Missing terminal periods, XREF notation. Valid ENSDF symbols: `|?`, `{+n}`, `{-n
 
 ## Procedure
 
-1. Run `python .github/scripts/scan_editorial_review.py [folder_or_file] --skip adopted` — automated sweeps (isotope tokens, bare `I`, braced `{I}`, units, chemical formulas, dittography, `$`/`=` space, `10{-n}`, unicode, leaked tags, spelling). Review every flagged line; discard false positives manually. The glob is one level deep: pass the folder that directly holds the `.ens` files, not its parent.
+1. Run `python .github/scripts/scan_editorial_review.py [folder_or_file]` — automated sweeps (isotope tokens, bare `I`, braced `{I}`, units, chemical formulas, dittography, `$`/`=` space, `10{-n}`, unicode, leaked tags, spelling). Review every flagged line; discard false positives manually. The glob is one level deep: pass the folder that directly holds the `.ens` files, not its parent.
 2. Apply error classes in order: notation → grammar → punctuation → hyphenation → terminology → integrity → clarity.
 3. Manually scan the remaining lines for regex-missed issues (dense prose, capitalization, subject-verb, hyphenation) per the Error Classes above.
 4. Final symbol sweep on all flagged lines: verify no raw Unicode glyphs, plain isotope tokens, mixed symbol-text compounds, or un-subscripted chemical formulas were missed.

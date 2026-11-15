@@ -236,8 +236,8 @@ def edit_operations(data):
         if not isinstance(path, str) or not path.lower().endswith(".ens"):
             return
         paths.add(path)
-        old = text_value(item, "oldString", "old_string", "oldText", "old_text")
-        new = text_value(item, "newString", "new_string", "newText", "new_text")
+        old = text_value(item, "oldString", "old_string", "oldText", "old_text", "old_str")
+        new = text_value(item, "newString", "new_string", "newText", "new_text", "new_str")
         if old is None or new is None:
             deny(".ens edit has no exact old/new text anchor. Use editFiles with files[].edits[].oldText/newText.")
         operations.append((path, old.replace("\r\n", "\n"), new.replace("\r\n", "\n")))
@@ -246,8 +246,8 @@ def edit_operations(data):
     if direct_path:
         nested = any(data.get(field) for field in ("replacements", "files", "edits", "operations"))
         has_direct_text = any(field in data for field in (
-            "oldString", "old_string", "oldText", "old_text",
-            "newString", "new_string", "newText", "new_text",
+            "oldString", "old_string", "oldText", "old_text", "old_str",
+            "newString", "new_string", "newText", "new_text", "new_str",
         ))
         if not nested or has_direct_text:
             add(direct_path, data)
