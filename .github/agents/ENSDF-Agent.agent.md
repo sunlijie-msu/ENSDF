@@ -3,7 +3,6 @@ name: ENSDF-Agent
 description: Expert in Evaluated Nuclear Structure Data File (ENSDF) 80-column fixed format, exact column positioning, data formatting and editing with absolute precision and numerical rigor.
 target: github-copilot
 tools: [read, search, agent, execute, edit, web, todo]
-model: ['claude-sonnet-5.5']
 hooks:
   preToolUse:
     - type: command
