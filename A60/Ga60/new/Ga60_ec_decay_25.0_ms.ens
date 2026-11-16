@@ -1,32 +1,30 @@
- 60GA    60GE EC DECAY:XUNDL-2         2021Or01                  ENSDF    202709
+ 60GA    60GE EC DECAY (25.0 MS)       2021Or01,2016CI01         ENSDF    202709
  60GA  H TYP=FUL$AUT=LIJIE SUN AND JUN CHEN$CIT=ENSDF$CUT=30-Sep-2027$          
- 60GA c  Compiled (unevaluated) dataset from 2021Or01:                          
- 60GA2c  Phys Rev C 103, 014324 (2021)                                          
- 60GA c  Compiled by J. Chen (NSCL, MSU), March 1, 2020                         
- 60GA c  2021Or01: {+60}Ge activity was produced via {+9}Be({+78}Kr,X) with 345 
- 60GA2c  MeV/nucleon {+78}Kr from the RIBF at RIKEN on a 5 mm {+9}Be target.    
- 60GA3c  Fragments were separated, selected and identified by the BigRIPS       
- 60GA4c  separator according to B|r-|DE-tof, and transported and implanted into 
- 60GA5c  the WAS3ABi array consisting of three DSSSDs at the exit of the        
- 60GA6c  ZeroDegree spectrometer. |g rays were detected with the EURICA array of
- 60GA7c  HPGe detectors. Measured E|g, I|g, E(p), I(p), E|b, I|b,               
- 60GA8c  implant-decay correlations, implant-|g correlations, implant-proton(t),
- 60GA9c  implant-|b(t). Deduced levels, T{-1/2}, |b decay branching ratios,     
- 60GAAc  B(>), B(F).                                                            
+
+ 60GA c  2021Or01: {+60}Ga was produced via the projectile fragmentation of a   
+ 60GA2c  345-MeV/u {+78}Kr primary beam impinging on a 5-mm thick {+9}Be target,
+ 60GA3c  identified in the RIKEN BigRIPS separator by B|r-|DE-ToF, transported  
+ 60GA4c  to the exit of the ZeroDegree spectrometer, and implanted into the     
+ 60GA5c  Wide-range Active Silicon Strip Stopper Array for Beta and ion         
+ 60GA6c  detection (WAS3ABi) consisting of three 1-mm-thick DSSDs. |g rays were 
+ 60GA7c  detected using the EUroball-RIKEN Cluster Array (EURICA) of 12         
+ 60GA8c  cluster-type Ge detectors. Measured E{-p}(>0.9 MeV), E|g, I|g,         
+ 60GA9c  p|g-coin, |b|g-coin, |g|g-coin, and implant-decay correlations. Deduced
+ 60GAAc  decay scheme, decay branching ratios, {+60}Ge T{-1/2}, and {+60}Ge mass
+ 60GABc  using A=60 IMME.                                                       
  60GA cE TI$From 2021Or01, based on measured %I(p) and %I|g balance from each   
  60GA2cE level                                                                  
  60GA cE IB,IE,LOGFT$From the log| {Ift} code (by the compiler)                 
  60GA cG E,RI$From 2021Or01                                                     
- 60GA cL $S(p)({+60}Ca)=90 {I15}, deduced by 2021Or01. Other: -340 {I200}       
- 60GA2cL (syst,2017Wa10)                                                        
- 60GA cL $B(>) and B(F) under comments are from 2021Or01                        
+
  60GA cL E$Deduced from measured E(p) of proton decay and S(p) (2021Or01),      
  60GA2cL unless otherwise noted.                                                
  60GA cL E(A)$From measured |g-ray energies (2021Or01).                         
  60GA cL J$As given in 2021Or01.                                                
- 60GE  P  0           0+                25.0 MS  3              12338     27    
- 60GE cP T$From time correlation between implant and |b-delayed protons         
- 60GE2cP (2021Or01)                                                             
+ 60GE  P 0            0+               25.0 MS   3              12338     27    
+ 60GE cP T$From the Adopted Levels of {+60}Ge, originally from                  
+ 60GE2cP implantation-decay time correlation in 2021Or01. Other: 20 ms {I+7-5}  
+ 60GE3cP from implantation-decay time distribution in 2016Ci01.                 
  60GE cP QP$From 2021Or01. Other: 12500 {I360} (syst,2017Wa10)                  
  60GA  N 1.0                   1.0                                              
  60GA cN BR$From 2021Or01                                                       
@@ -77,4 +75,4 @@
  60GA cL $E(p)(c.m.)=3490 {I22}, %I(p)=1.9 {I2}                                 
  60GA  E                1.9  2  0.0033 3   4.43   5             1.9       2     
  60GAS E EAV=3655 19$CK=0.001515 23$CL=0.0001678 2$CM+=3.04E-5 5                
-                                                                                
+
